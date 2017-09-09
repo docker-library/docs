@@ -16,13 +16,36 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`10.1.22`, `10.1`, `10`, `latest` (*10.1/Dockerfile*)](https://github.com/docker-library/mariadb/blob/58422728079b38cfd883d11fa1ec0252fa6779fe/10.1/Dockerfile)
--	[`10.0.30`, `10.0` (*10.0/Dockerfile*)](https://github.com/docker-library/mariadb/blob/76bf9d41fc187f83da5819601d6f964722759ebb/10.0/Dockerfile)
--	[`5.5.54`, `5.5`, `5` (*5.5/Dockerfile*)](https://github.com/docker-library/mariadb/blob/b26cb74f2c213b4b852067937198d924517e387f/5.5/Dockerfile)
+-	[`10.3.1`, `10.3` (*10.3/Dockerfile*)](https://github.com/docker-library/mariadb/blob/8bbe483d5fc132b87063db9d22132b571a778fd4/10.3/Dockerfile)
+-	[`10.2.8`, `10.2`, `10`, `latest` (*10.2/Dockerfile*)](https://github.com/docker-library/mariadb/blob/e841926a0c09fb1d1d7dd79131f9d8e3a09619ec/10.2/Dockerfile)
+-	[`10.1.26`, `10.1` (*10.1/Dockerfile*)](https://github.com/docker-library/mariadb/blob/b43b9ec1eac3f8fc6ad6ad5ea85fb301b2a0c95b/10.1/Dockerfile)
+-	[`10.0.32`, `10.0` (*10.0/Dockerfile*)](https://github.com/docker-library/mariadb/blob/48182d4da0a078eb05c118a39c28b8b832c1f60b/10.0/Dockerfile)
+-	[`5.5.57`, `5.5`, `5` (*5.5/Dockerfile*)](https://github.com/docker-library/mariadb/blob/198f04b24ca6f668357106355b03d38d1f3234bc/5.5/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/mariadb`)](https://github.com/docker-library/official-images/blob/master/library/mariadb). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmariadb).
+# Quick reference
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/mariadb/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/mariadb/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+-	**Where to file issues**:  
+	[https://github.com/docker-library/mariadb/issues](https://github.com/docker-library/mariadb/issues)
+
+-	**Maintained by**:  
+	[the Docker Community](https://github.com/docker-library/mariadb)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/mariadb/` directory](https://github.com/docker-library/repo-info/blob/master/repos/mariadb) ([history](https://github.com/docker-library/repo-info/commits/master/repos/mariadb))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images PRs with label `library/mariadb`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmariadb)  
+	[official-images repo's `library/mariadb` file](https://github.com/docker-library/official-images/blob/master/library/mariadb) ([history](https://github.com/docker-library/official-images/commits/master/library/mariadb))
+
+-	**Source of this description**:  
+	[docs repo's `mariadb/` directory](https://github.com/docker-library/docs/tree/master/mariadb) ([history](https://github.com/docker-library/docs/commits/master/mariadb))
+
+-	**Supported Docker versions**:  
+	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is MariaDB?
 
@@ -144,10 +167,6 @@ This is an optional variable. Set to `yes` to allow the container to be started 
 
 This is an optional variable. Set to `yes` to generate a random initial password for the root user (using `pwgen`). The generated root password will be printed to stdout (`GENERATED ROOT PASSWORD: .....`).
 
-### `MYSQL_ONETIME_PASSWORD`
-
-Sets root (*not* the user specified in `MYSQL_USER`!) user as expired once init is complete, forcing a password change on first login. *NOTE*: This feature is supported on MySQL 5.6+ only. Using this option on MySQL 5.5 will throw an appropriate error during initialization.
-
 # Initializing a fresh instance
 
 When a container is started for the first time, a new database with the specified name will be created and initialized with the provided configuration variables. Furthermore, it will execute files with extensions `.sh`, `.sql` and `.sql.gz` that are found in `/docker-entrypoint-initdb.d`. Files will be executed in alphabetical order. You can easily populate your mariadb services by [mounting a SQL dump into that directory](https://docs.docker.com/engine/tutorials/dockervolumes/#mount-a-host-file-as-a-data-volume) and provide [custom images](https://docs.docker.com/reference/builder/) with contributed data. SQL files will be imported by default to the database specified by the `MYSQL_DATABASE` variable.
@@ -193,29 +212,3 @@ Most of the normal tools will work, although their usage might be a little convo
 ```console
 $ docker exec some-mariadb sh -c 'exec mysqldump --all-databases -uroot -p"$MYSQL_ROOT_PASSWORD"' > /some/path/on/your/host/all-databases.sql
 ```
-
-# Supported Docker versions
-
-This image is officially supported on Docker version 17.03.1-ce.
-
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/mariadb/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/docker-library/mariadb/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`mariadb/` directory](https://github.com/docker-library/docs/tree/master/mariadb) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

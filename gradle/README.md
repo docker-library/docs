@@ -16,20 +16,41 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.4.1-jdk7`, `3.4-jdk7`, `jdk7` (*jdk7/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/7318ecf2463dfb408c3a313a9755b932d5fb8376/jdk7/Dockerfile)
--	[`3.4.1-jre7`, `3.4-jre7`, `jre7` (*jre7/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/7318ecf2463dfb408c3a313a9755b932d5fb8376/jre7/Dockerfile)
--	[`3.4.1-jdk7-alpine`, `3.4-jdk7-alpine`, `jdk7-alpine` (*jdk7-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/7318ecf2463dfb408c3a313a9755b932d5fb8376/jdk7-alpine/Dockerfile)
--	[`3.4.1-jre7-alpine`, `3.4-jre7-alpine`, `jre7-alpine` (*jre7-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/7318ecf2463dfb408c3a313a9755b932d5fb8376/jre7-alpine/Dockerfile)
--	[`3.4.1-jdk8`, `3.4-jdk8`, `jdk8`, `3.4.1-jdk`, `3.4-jdk`, `jdk`, `3.4.1`, `3.4`, `latest` (*jdk8/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/7318ecf2463dfb408c3a313a9755b932d5fb8376/jdk8/Dockerfile)
--	[`3.4.1-jre8`, `3.4-jre8`, `jre8`, `3.4.1-jre`, `3.4-jre`, `jre` (*jre8/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/7318ecf2463dfb408c3a313a9755b932d5fb8376/jre8/Dockerfile)
--	[`3.4.1-jdk8-alpine`, `3.4-jdk8-alpine`, `jdk8-alpine`, `3.4.1-jdk-alpine`, `3.4-jdk-alpine`, `jdk-alpine`, `3.4.1-alpine`, `3.4-alpine`, `alpine` (*jdk8-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/7318ecf2463dfb408c3a313a9755b932d5fb8376/jdk8-alpine/Dockerfile)
--	[`3.4.1-jre8-alpine`, `3.4-jre8-alpine`, `jre8-alpine`, `3.4.1-jre-alpine`, `3.4-jre-alpine`, `jre-alpine` (*jre8-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/7318ecf2463dfb408c3a313a9755b932d5fb8376/jre8-alpine/Dockerfile)
--	[`3.4.1-jdk9`, `3.4-jdk9`, `jdk9` (*jdk9/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/7318ecf2463dfb408c3a313a9755b932d5fb8376/jdk9/Dockerfile)
--	[`3.4.1-jre9`, `3.4-jre9`, `jre9` (*jre9/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/7318ecf2463dfb408c3a313a9755b932d5fb8376/jre9/Dockerfile)
+-	[`4.0.1-jdk7`, `4.0-jdk7`, `jdk7` (*jdk7/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/2ec2b3d1208cf8a54f3ecae900e927e8a1d4a6b7/jdk7/Dockerfile)
+-	[`4.0.1-jre7`, `4.0-jre7`, `jre7` (*jre7/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/2ec2b3d1208cf8a54f3ecae900e927e8a1d4a6b7/jre7/Dockerfile)
+-	[`4.0.1-jdk7-alpine`, `4.0-jdk7-alpine`, `jdk7-alpine` (*jdk7-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/2ec2b3d1208cf8a54f3ecae900e927e8a1d4a6b7/jdk7-alpine/Dockerfile)
+-	[`4.0.1-jre7-alpine`, `4.0-jre7-alpine`, `jre7-alpine` (*jre7-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/2ec2b3d1208cf8a54f3ecae900e927e8a1d4a6b7/jre7-alpine/Dockerfile)
+-	[`4.0.1-jdk8`, `4.0-jdk8`, `jdk8`, `4.0.1-jdk`, `4.0-jdk`, `jdk`, `4.0.1`, `4.0`, `latest` (*jdk8/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/2ec2b3d1208cf8a54f3ecae900e927e8a1d4a6b7/jdk8/Dockerfile)
+-	[`4.0.1-jre8`, `4.0-jre8`, `jre8`, `4.0.1-jre`, `4.0-jre`, `jre` (*jre8/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/2ec2b3d1208cf8a54f3ecae900e927e8a1d4a6b7/jre8/Dockerfile)
+-	[`4.0.1-jdk8-alpine`, `4.0-jdk8-alpine`, `jdk8-alpine`, `4.0.1-jdk-alpine`, `4.0-jdk-alpine`, `jdk-alpine`, `4.0.1-alpine`, `4.0-alpine`, `alpine` (*jdk8-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/2ec2b3d1208cf8a54f3ecae900e927e8a1d4a6b7/jdk8-alpine/Dockerfile)
+-	[`4.0.1-jre8-alpine`, `4.0-jre8-alpine`, `jre8-alpine`, `4.0.1-jre-alpine`, `4.0-jre-alpine`, `jre-alpine` (*jre8-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/2ec2b3d1208cf8a54f3ecae900e927e8a1d4a6b7/jre8-alpine/Dockerfile)
+-	[`4.0.1-jdk9`, `4.0-jdk9`, `jdk9` (*jdk9/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/2ec2b3d1208cf8a54f3ecae900e927e8a1d4a6b7/jdk9/Dockerfile)
+-	[`4.0.1-jre9`, `4.0-jre9`, `jre9` (*jre9/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/2ec2b3d1208cf8a54f3ecae900e927e8a1d4a6b7/jre9/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/gradle`)](https://github.com/docker-library/official-images/blob/master/library/gradle). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fgradle).
+# Quick reference
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/gradle/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/gradle/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+-	**Where to file issues**:  
+	[https://github.com/keeganwitt/docker-gradle/issues](https://github.com/keeganwitt/docker-gradle/issues)
+
+-	**Maintained by**:  
+	[Keegan Witt (of the Groovy Project)](https://github.com/keeganwitt/docker-gradle), [with the Gradle Project's approval](https://discuss.gradle.org/t/official-docker-images/21159/8)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/gradle/` directory](https://github.com/docker-library/repo-info/blob/master/repos/gradle) ([history](https://github.com/docker-library/repo-info/commits/master/repos/gradle))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images PRs with label `library/gradle`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fgradle)  
+	[official-images repo's `library/gradle` file](https://github.com/docker-library/official-images/blob/master/library/gradle) ([history](https://github.com/docker-library/official-images/commits/master/library/gradle))
+
+-	**Source of this description**:  
+	[docs repo's `gradle/` directory](https://github.com/docker-library/docs/tree/master/gradle) ([history](https://github.com/docker-library/docs/commits/master/gradle))
+
+-	**Supported Docker versions**:  
+	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Gradle?
 
@@ -45,14 +66,7 @@ Run this from the directory of the Gradle project you want to build.
 
 `docker run --rm -v "$PWD":/project -w /project --name gradle gradle:alpine gradle <gradle-task>`
 
-## Reusing the Gradle cache
-
-The local Gradle cache can be reused across containers by creating a volume and mounting it in */home/gradle/.gradle*.
-
-```console
-docker volume create --name gradle-cache
-docker run -it -v gradle-cache:/home/gradle/.gradle gradle:alpine gradle build
-```
+**Note: Java 9 support is experimental**
 
 # Image Variants
 
@@ -73,29 +87,3 @@ To minimize image size, it's uncommon for additional related tools (such as `git
 # License
 
 View [license information](https://gradle.org/license/) for the software contained in this image.
-
-# Supported Docker versions
-
-This image is officially supported on Docker version 17.03.1-ce.
-
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/keeganwitt/docker-gradle/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/keeganwitt/docker-gradle/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`gradle/` directory](https://github.com/docker-library/docs/tree/master/gradle) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

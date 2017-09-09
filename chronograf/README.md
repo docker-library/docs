@@ -16,86 +16,116 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`0.13`, `0.13.0`, `latest` (*chronograf/0.13/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/22b661b4c141d237669f94e4740f234b7be43a7b/chronograf/0.13/Dockerfile)
--	[`1.0.0-rc1` (*chronograf/1.0/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/22b661b4c141d237669f94e4740f234b7be43a7b/chronograf/1.0/Dockerfile)
+-	[`1.3`, `1.3.8`, `1.3.8.0`, `latest` (*chronograf/1.3/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/cad715ae95fc940f7d8cf2ff1b6322ba7407d9ee/chronograf/1.3/Dockerfile)
+-	[`1.3-alpine`, `1.3.8-alpine`, `1.3.8.0-alpine`, `alpine` (*chronograf/1.3/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/cad715ae95fc940f7d8cf2ff1b6322ba7407d9ee/chronograf/1.3/alpine/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/chronograf`)](https://github.com/docker-library/official-images/blob/master/library/chronograf). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fchronograf).
+# Quick reference
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/chronograf/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/chronograf/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+-	**Where to file issues**:  
+	[https://github.com/influxdata/influxdata-docker/issues](https://github.com/influxdata/influxdata-docker/issues)
+
+-	**Maintained by**:  
+	[InfluxData](https://github.com/influxdata/influxdata-docker)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/chronograf/` directory](https://github.com/docker-library/repo-info/blob/master/repos/chronograf) ([history](https://github.com/docker-library/repo-info/commits/master/repos/chronograf))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images PRs with label `library/chronograf`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fchronograf)  
+	[official-images repo's `library/chronograf` file](https://github.com/docker-library/official-images/blob/master/library/chronograf) ([history](https://github.com/docker-library/official-images/commits/master/library/chronograf))
+
+-	**Source of this description**:  
+	[docs repo's `chronograf/` directory](https://github.com/docker-library/docs/tree/master/chronograf) ([history](https://github.com/docker-library/docs/commits/master/chronograf))
+
+-	**Supported Docker versions**:  
+	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
 
 # Chronograf
 
-Chronograf is a simple to install graphing and visualization application that you deploy behind your firewall to perform ad-hoc exploration of your InfluxDB data. It includes support for templates and a library of intelligent, pre-configured dashboards for common data sets.
+Chronograf is InfluxData’s open source web application. Use Chronograf with the other components of the [TICK](https://www.influxdata.com/products/) stack for infrastructure monitoring, alert management, data visualization, and database management.
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/43d87118415bb75d7bb107683e79cd6d69186f67/chronograf/logo.png)
 
 ## Using this image
 
-By default, Chronograf listens on port `10000` and stores its data in a volume at `/var/lib/chronograf`. You can start an instance with:
+### Running the container
+
+Chronograf runs on port 8888. It can be run and accessed by exposing that port:
 
 ```console
-$ docker run -p 10000:10000 chronograf
+$ docker run -p 8888:8888 chronograf
 ```
 
-You can also use a custom configuration file or environment variables to modify Chronograf settings.
+### Mounting a volume
 
-### Using a custom config file
-
-A sample configuration file can be obtained by:
+The Chronograf image exposes a shared volume under `/var/lib/chronograf`, so you can mount a host directory to that point to access persisted container data. A typical invocation of the container might be:
 
 ```console
-$ docker run --rm chronograf -sample-config > chronograf.conf
+$ docker run -p 8888:8888 \
+      -v $PWD:/var/lib/chronograf \
+      chronograf
 ```
 
-Once you've customized `chronograf.conf`, you can run the Chronograf container with it mounted in the expected location (note the name change!):
+Modify `$PWD` to the directory where you want to store data associated with the InfluxDB container.
+
+You can also have Docker control the volume mountpoint by using a named volume.
 
 ```console
-$ docker run -p 10000:10000 \
-      -v $PWD/chronograf.conf:/etc/chronograf/chronograf.conf:ro
+$ docker run -p 8888:8888 \
+      -v chronograf:/var/lib/chronograf \
+      chronograf
 ```
 
-Modify `$PWD` to the directory where you want to store the configuration file.
+### Using the container with InfluxDB
 
-### Using environment variables (preferred)
+The instructions here are very similar to the instructions when using `telegraf` with `influxdb`. These examples assume you are using Docker's built-in service discovery capability. In order to do so, we'll first create a new network:
 
-You may have noticed that the default `Bind` value in the configuration is set to `127.0.0.1:10000`, though the container will listen on `0.0.0.0:10000` instead. This is due to a default configuration file being provided inside of the image. You can override values inside of the configuration file using environment variables following the `CamelCase` to `CHRONOGRAF_CAMEL_CASE` pattern:
+```console
+$ docker network create influxdb
+```
 
-| SETTING                 | ENV VAR                               |
-|-------------------------|---------------------------------------|
-| Bind                    | CHRONOGRAF_BIND                       |
-| LocalDatabase           | CHRONOGRAF_LOCAL_DATABASE             |
-| QueryResponseBytesLimit | CHRONOGRAF_QUERY_RESPONSE_BYTES_LIMIT |
+Next, we'll start our InfluxDB container named `influxdb`:
+
+```console
+$ docker run -d --name=influxdb \
+      --net=influxdb \
+      influxdb
+```
+
+We can now start a Chronograf container that references this database.
+
+```console
+$ docker run -p 8888:8888 \
+      --net=influxdb
+      chronograf --influxdb-url=http://influxdb:8086
+```
+
+Try combining this with Telegraf to get dashboards for your infrastructure within minutes!
 
 ## Official Documentation
 
-See the [official docs](https://docs.influxdata.com/chronograf/latest/introduction/getting_started/) for information on creating visualizations.
+See the [official docs](https://docs.influxdata.com/chronograf/latest/) for information on creating visualizations.
+
+# Image Variants
+
+The `chronograf` images come in many flavors, each designed for a specific use case.
+
+## `chronograf:<version>`
+
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+## `chronograf:alpine`
+
+This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+
+This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+
+To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 # License
 
 View [license information](https://github.com/influxdata/chronograf/blob/master/LICENSE) for the software contained in this image.
-
-# Supported Docker versions
-
-This image is officially supported on Docker version 17.03.1-ce.
-
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/influxdata/influxdata-docker/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/influxdata/influxdata-docker/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`chronograf/` directory](https://github.com/docker-library/docs/tree/master/chronograf) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

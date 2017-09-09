@@ -16,20 +16,43 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`9.6.2`, `9.6`, `9`, `latest` (*9.6/Dockerfile*)](https://github.com/docker-library/postgres/blob/913bc48bfdccab58c6c15f11841da5146e7bf968/9.6/Dockerfile)
--	[`9.6.2-alpine`, `9.6-alpine`, `9-alpine`, `alpine` (*9.6/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/123aedc09bc067740fb28921c500ded83c018bd4/9.6/alpine/Dockerfile)
--	[`9.5.6`, `9.5` (*9.5/Dockerfile*)](https://github.com/docker-library/postgres/blob/913bc48bfdccab58c6c15f11841da5146e7bf968/9.5/Dockerfile)
--	[`9.5.6-alpine`, `9.5-alpine` (*9.5/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/123aedc09bc067740fb28921c500ded83c018bd4/9.5/alpine/Dockerfile)
--	[`9.4.11`, `9.4` (*9.4/Dockerfile*)](https://github.com/docker-library/postgres/blob/913bc48bfdccab58c6c15f11841da5146e7bf968/9.4/Dockerfile)
--	[`9.4.11-alpine`, `9.4-alpine` (*9.4/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/123aedc09bc067740fb28921c500ded83c018bd4/9.4/alpine/Dockerfile)
--	[`9.3.16`, `9.3` (*9.3/Dockerfile*)](https://github.com/docker-library/postgres/blob/913bc48bfdccab58c6c15f11841da5146e7bf968/9.3/Dockerfile)
--	[`9.3.16-alpine`, `9.3-alpine` (*9.3/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/123aedc09bc067740fb28921c500ded83c018bd4/9.3/alpine/Dockerfile)
--	[`9.2.20`, `9.2` (*9.2/Dockerfile*)](https://github.com/docker-library/postgres/blob/913bc48bfdccab58c6c15f11841da5146e7bf968/9.2/Dockerfile)
--	[`9.2.20-alpine`, `9.2-alpine` (*9.2/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/123aedc09bc067740fb28921c500ded83c018bd4/9.2/alpine/Dockerfile)
+-	[`10-beta4`, `10` (*10/Dockerfile*)](https://github.com/docker-library/postgres/blob/bef8f02d1fe2bb4547280ba609f19abd20230180/10/Dockerfile)
+-	[`10-beta4-alpine`, `10-alpine` (*10/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/ee1bb1f51c9bae5be684a4797f934dbb943e3267/10/alpine/Dockerfile)
+-	[`9.6.5`, `9.6`, `9`, `latest` (*9.6/Dockerfile*)](https://github.com/docker-library/postgres/blob/bef8f02d1fe2bb4547280ba609f19abd20230180/9.6/Dockerfile)
+-	[`9.6.5-alpine`, `9.6-alpine`, `9-alpine`, `alpine` (*9.6/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/d1725ffa8ba29ed7649bd453065eb392f63a3113/9.6/alpine/Dockerfile)
+-	[`9.5.9`, `9.5` (*9.5/Dockerfile*)](https://github.com/docker-library/postgres/blob/bef8f02d1fe2bb4547280ba609f19abd20230180/9.5/Dockerfile)
+-	[`9.5.9-alpine`, `9.5-alpine` (*9.5/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/9e862fa9b1d510c618d51e5d2c63f439d15381ff/9.5/alpine/Dockerfile)
+-	[`9.4.14`, `9.4` (*9.4/Dockerfile*)](https://github.com/docker-library/postgres/blob/bef8f02d1fe2bb4547280ba609f19abd20230180/9.4/Dockerfile)
+-	[`9.4.14-alpine`, `9.4-alpine` (*9.4/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/b2649f97aee8bca9f4e65a2c050f66fe255ec9f3/9.4/alpine/Dockerfile)
+-	[`9.3.19`, `9.3` (*9.3/Dockerfile*)](https://github.com/docker-library/postgres/blob/bef8f02d1fe2bb4547280ba609f19abd20230180/9.3/Dockerfile)
+-	[`9.3.19-alpine`, `9.3-alpine` (*9.3/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/b1fc9b6f7506ea7357f48fb0125e8b7a3c1d96e9/9.3/alpine/Dockerfile)
+-	[`9.2.23`, `9.2` (*9.2/Dockerfile*)](https://github.com/docker-library/postgres/blob/bef8f02d1fe2bb4547280ba609f19abd20230180/9.2/Dockerfile)
+-	[`9.2.23-alpine`, `9.2-alpine` (*9.2/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/b3cb99032a600a27dcb8f3c52f14c72fd22d477f/9.2/alpine/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/postgres`)](https://github.com/docker-library/official-images/blob/master/library/postgres). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fpostgres).
+# Quick reference
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/postgres/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/postgres/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+-	**Where to file issues**:  
+	[https://github.com/docker-library/postgres/issues](https://github.com/docker-library/postgres/issues)
+
+-	**Maintained by**:  
+	[the PostgreSQL Docker Community](https://github.com/docker-library/postgres)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/postgres/` directory](https://github.com/docker-library/repo-info/blob/master/repos/postgres) ([history](https://github.com/docker-library/repo-info/commits/master/repos/postgres))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images PRs with label `library/postgres`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fpostgres)  
+	[official-images repo's `library/postgres` file](https://github.com/docker-library/official-images/blob/master/library/postgres) ([history](https://github.com/docker-library/official-images/commits/master/library/postgres))
+
+-	**Source of this description**:  
+	[docs repo's `postgres/` directory](https://github.com/docker-library/docs/tree/master/postgres) ([history](https://github.com/docker-library/docs/commits/master/postgres))
+
+-	**Supported Docker versions**:  
+	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is PostgreSQL?
 
@@ -75,6 +98,31 @@ postgres=# SELECT 1;
 
 ```
 
+## ... via [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/) or [`docker-compose`](https://github.com/docker/compose)
+
+Example `stack.yml` for `postgres`:
+
+```yaml
+# Use postgres/example user/password credentials
+version: '3.1'
+
+services:
+
+    db:
+        image: postgres
+        environment:
+            POSTGRES_PASSWORD: example
+
+    adminer:
+        image: adminer
+        ports:
+            - 8080:8080
+```
+
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/96c08fac215f64844b9db61038a571b86534a12b/postgres/stack.yml)
+
+Run `docker stack deploy -c stack.yml postgres` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
+
 ## Environment Variables
 
 The PostgreSQL image uses several environment variables which are easy to miss. While none of the variables are required, they may significantly aid you in using the image.
@@ -82,6 +130,8 @@ The PostgreSQL image uses several environment variables which are easy to miss. 
 ### `POSTGRES_PASSWORD`
 
 This environment variable is recommended for you to use the PostgreSQL image. This environment variable sets the superuser password for PostgreSQL. The default superuser is defined by the `POSTGRES_USER` environment variable. In the above example, it is being set to "mysecretpassword".
+
+Note: The PostgreSQL image sets up `trust` authentication locally so you may notice a password is not required when connecting from `localhost` (inside the same container). However, a password will be required if connecting from a different host/container.
 
 ### `POSTGRES_USER`
 
@@ -98,6 +148,10 @@ This optional environment variable can be used to define a different name for th
 ### `POSTGRES_INITDB_ARGS`
 
 This optional environment variable can be used to send arguments to `postgres initdb`. The value is a space separated string of arguments as `postgres initdb` would expect them. This is useful for adding functionality like data page checksums: `-e POSTGRES_INITDB_ARGS="--data-checksums"`.
+
+### `POSTGRES_INITDB_XLOGDIR`
+
+This optional environment variable can be used to define another location for the Postgres transaction log. By default the transaction log is stored in a subdirectory of the main Postgres data folder (`PGDATA`). Sometimes it can be desireable to store the transaction log in a different directory which may be backed by storage with different performance or reliability characteristics.
 
 ## Arbitrary `--user` Notes
 
@@ -142,7 +196,7 @@ The two easiest ways to get around this:
 
 # How to extend this image
 
-If you would like to do additional initialization in an image derived from this one, add one or more `*.sql` or `*.sh` scripts under `/docker-entrypoint-initdb.d` (creating the directory if necessary). After the entrypoint calls `initdb` to create the default `postgres` user and database, it will run any `*.sql` files and source any `*.sh` scripts found in that directory to do further initialization before starting the service.
+If you would like to do additional initialization in an image derived from this one, add one or more `*.sql`, `*.sql.gz`, or `*.sh` scripts under `/docker-entrypoint-initdb.d` (creating the directory if necessary). After the entrypoint calls `initdb` to create the default `postgres` user and database, it will run any `*.sql` files and source any `*.sh` scripts found in that directory to do further initialization before starting the service.
 
 For example, to add an additional user and database, add the following to `/docker-entrypoint-initdb.d/init-user-db.sh`:
 
@@ -190,29 +244,3 @@ This image is based on the popular [Alpine Linux project](http://alpinelinux.org
 This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
 
 To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
-
-# Supported Docker versions
-
-This image is officially supported on Docker version 17.03.1-ce.
-
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us on the [mailing list](http://www.postgresql.org/community/lists/subscribe/) or through a [GitHub issue](https://github.com/docker-library/postgres/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans on the [mailing list](http://www.postgresql.org/community/lists/subscribe/) or through a [GitHub issue](https://github.com/docker-library/postgres/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`postgres/` directory](https://github.com/docker-library/docs/tree/master/postgres) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

@@ -16,20 +16,37 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.0.16-apache`, `8.0-apache`, `8.0.16`, `8.0` (*8.0/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/2c9fddfe6a17a2c1d631dd7a6f1c7f87763f7d10/8.0/apache/Dockerfile)
--	[`8.0.16-fpm`, `8.0-fpm` (*8.0/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/2c9fddfe6a17a2c1d631dd7a6f1c7f87763f7d10/8.0/fpm/Dockerfile)
--	[`8.1.12-apache`, `8.1-apache`, `8.1.12`, `8.1` (*8.1/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/2e581bdb03a2961e5dad7764f59ff363da94e6fb/8.1/apache/Dockerfile)
--	[`8.1.12-fpm`, `8.1-fpm` (*8.1/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/2e581bdb03a2961e5dad7764f59ff363da94e6fb/8.1/fpm/Dockerfile)
--	[`8.2.10-apache`, `8.2-apache`, `8-apache`, `8.2.10`, `8.2`, `8` (*8.2/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/d7fbed06a3ff66601d5940cf865d920672a9fadf/8.2/apache/Dockerfile)
--	[`8.2.10-fpm`, `8.2-fpm`, `8-fpm` (*8.2/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/d7fbed06a3ff66601d5940cf865d920672a9fadf/8.2/fpm/Dockerfile)
--	[`9.0.8-apache`, `9.0-apache`, `9.0.8`, `9.0` (*9.0/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/d68839fc9d471e9776d1f51f273303e863db9e2b/9.0/apache/Dockerfile)
--	[`9.0.8-fpm`, `9.0-fpm` (*9.0/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/d68839fc9d471e9776d1f51f273303e863db9e2b/9.0/fpm/Dockerfile)
--	[`9.1.4-apache`, `9.1-apache`, `9-apache`, `apache`, `9.1.4`, `9.1`, `9`, `latest` (*9.1/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/61f63930e743211540df45e0c32165ec043dd6f5/9.1/apache/Dockerfile)
--	[`9.1.4-fpm`, `9.1-fpm`, `9-fpm`, `fpm` (*9.1/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/61f63930e743211540df45e0c32165ec043dd6f5/9.1/fpm/Dockerfile)
+-	[`10.0.2-apache`, `10.0-apache`, `10-apache`, `apache`, `10.0.2`, `10.0`, `10`, `latest` (*10.0/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/aad7b27a8d2dab3e417a94071d1acf6a795a2aed/10.0/apache/Dockerfile)
+-	[`10.0.2-fpm`, `10.0-fpm`, `10-fpm`, `fpm` (*10.0/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/aad7b27a8d2dab3e417a94071d1acf6a795a2aed/10.0/fpm/Dockerfile)
+-	[`9.1.6-apache`, `9.1-apache`, `9-apache`, `9.1.6`, `9.1`, `9` (*9.1/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/aad7b27a8d2dab3e417a94071d1acf6a795a2aed/9.1/apache/Dockerfile)
+-	[`9.1.6-fpm`, `9.1-fpm`, `9-fpm` (*9.1/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/aad7b27a8d2dab3e417a94071d1acf6a795a2aed/9.1/fpm/Dockerfile)
+-	[`9.0.10-apache`, `9.0-apache`, `9.0.10`, `9.0` (*9.0/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/aad7b27a8d2dab3e417a94071d1acf6a795a2aed/9.0/apache/Dockerfile)
+-	[`9.0.10-fpm`, `9.0-fpm` (*9.0/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/aad7b27a8d2dab3e417a94071d1acf6a795a2aed/9.0/fpm/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/owncloud`)](https://github.com/docker-library/official-images/blob/master/library/owncloud). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fowncloud).
+# Quick reference
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/owncloud/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/owncloud/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+-	**Where to file issues**:  
+	[https://github.com/docker-library/owncloud/issues](https://github.com/docker-library/owncloud/issues)
+
+-	**Maintained by**:  
+	[the Docker Community](https://github.com/docker-library/owncloud)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/owncloud/` directory](https://github.com/docker-library/repo-info/blob/master/repos/owncloud) ([history](https://github.com/docker-library/repo-info/commits/master/repos/owncloud))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images PRs with label `library/owncloud`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fowncloud)  
+	[official-images repo's `library/owncloud` file](https://github.com/docker-library/official-images/blob/master/library/owncloud) ([history](https://github.com/docker-library/official-images/commits/master/library/owncloud))
+
+-	**Source of this description**:  
+	[docs repo's `owncloud/` directory](https://github.com/docker-library/docs/tree/master/owncloud) ([history](https://github.com/docker-library/docs/commits/master/owncloud))
+
+-	**Supported Docker versions**:  
+	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is ownCloud?
 
@@ -69,9 +86,17 @@ For fine grained data persistence, you can use 3 volumes, as shown below.
 
 When using the 6.0 image, you need to map the host port to the container port that apache listens on when going through the installation wizard. By default, this is port 80.
 
-## ... via [`docker-compose`](https://github.com/docker/compose)
+## Using `occ`
 
-Example `docker-compose.yml` for `owncloud`:
+The [`occ` tool from upstream](https://doc.owncloud.org/server/9.0/admin_manual/configuration_server/occ_command.html) is simplest to use via `docker exec`, similar to the example provided there:
+
+```console
+$ docker exec -u www-data some-owncloud php occ status
+```
+
+## ... via [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/) or [`docker-compose`](https://github.com/docker/compose)
+
+Example `stack.yml` for `owncloud`:
 
 ```yaml
 # ownCloud with MariaDB/MySQL
@@ -84,7 +109,7 @@ Example `docker-compose.yml` for `owncloud`:
 # Database name: pick any name
 # Database host: replace "localhost" with "mysql"
 
-version: '2'
+version: '3.1'
 
 services:
 
@@ -99,32 +124,10 @@ services:
       MYSQL_ROOT_PASSWORD: example
 ```
 
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/54359bd26c41e63c6e50ccd338b5a18d8b572c60/owncloud/stack.yml)
+
+Run `docker stack deploy -c stack.yml owncloud` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080/`, `http://localhost:8080/`, or `http://host-ip:8080` (as appropriate).
+
 # License
 
 View [license information](https://owncloud.org/contribute/agreement/) for the software contained in this image.
-
-# Supported Docker versions
-
-This image is officially supported on Docker version 17.03.1-ce.
-
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/owncloud/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/docker-library/owncloud/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`owncloud/` directory](https://github.com/docker-library/docs/tree/master/owncloud) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

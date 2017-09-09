@@ -49,9 +49,16 @@ n=$'\n'
 t=$'\t'
 
 travisImage="https://img.shields.io/travis/$travisRepo/master.svg"
-if wget -q --spider "$travisImage" &> /dev/null; then
+if svg="$(wget -qO- "$travisImage" 2>/dev/null)" && [[ "$svg" != *unknown* ]]; then
 	travisLink="https://travis-ci.org/$travisRepo/branches"
 	badges+=( "-${t}[Travis CI:  ${n}${t}![build status badge]($travisImage)]($travisLink)" )
+fi
+
+# https://www.appveyor.com/docs/status-badges/#badges-for-projects-with-public-repositories-on-github-and-bitbucket
+appveyorImage="https://ci.appveyor.com/api/projects/status/github/docker-library/$repo?branch=master&svg=true"
+if svg="$(wget -qO- "$appveyorImage" 2>/dev/null)" && [[ "$svg" != *unknown* ]]; then
+	appveyorLink="https://ci.appveyor.com/project/docker-library/$repo"
+	badges+=( "-${t}[AppVeyor (Windows):  ${n}${t}![build status badge]($appveyorImage)]($appveyorLink)" )
 fi
 
 jenkinsImage="https://doi-janky.infosiftr.net/job/update.sh/job/$repo/badge/icon"

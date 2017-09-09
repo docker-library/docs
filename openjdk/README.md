@@ -16,24 +16,55 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6b38-jdk`, `6b38`, `6-jdk`, `6` (*6-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/89851f0abc3a83cfad5248102f379d6a0bd3951a/6-jdk/Dockerfile)
--	[`6b38-jre`, `6-jre` (*6-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/89851f0abc3a83cfad5248102f379d6a0bd3951a/6-jre/Dockerfile)
--	[`7u121-jdk`, `7u121`, `7-jdk`, `7` (*7-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/e3386b5a2b4004da498e145cf840561d50acd7fb/7-jdk/Dockerfile)
--	[`7u121-jdk-alpine`, `7u121-alpine`, `7-jdk-alpine`, `7-alpine` (*7-jdk/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/0476812eabd178c77534f3c03bd0a2673822d7b9/7-jdk/alpine/Dockerfile)
--	[`7u121-jre`, `7-jre` (*7-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/e3386b5a2b4004da498e145cf840561d50acd7fb/7-jre/Dockerfile)
--	[`7u121-jre-alpine`, `7-jre-alpine` (*7-jre/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/0476812eabd178c77534f3c03bd0a2673822d7b9/7-jre/alpine/Dockerfile)
--	[`8u121-jdk`, `8u121`, `8-jdk`, `8`, `jdk`, `latest` (*8-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/445f8b8d18d7c61e2ae7fda76d8883b5d51ae0a5/8-jdk/Dockerfile)
--	[`8u121-jdk-alpine`, `8u121-alpine`, `8-jdk-alpine`, `8-alpine`, `jdk-alpine`, `alpine` (*8-jdk/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/4e39684901490c13eaef7892c44e39043d7c4bed/8-jdk/alpine/Dockerfile)
--	[`8u121-jdk-windowsservercore`, `8u121-windowsservercore`, `8-jdk-windowsservercore`, `8-windowsservercore`, `jdk-windowsservercore`, `windowsservercore` (*8-jdk/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/openjdk/blob/4815a7dc43f0fb212c40f357624fb4ec943992bf/8-jdk/windows/windowsservercore/Dockerfile)
--	[`8u121-jdk-nanoserver`, `8u121-nanoserver`, `8-jdk-nanoserver`, `8-nanoserver`, `jdk-nanoserver`, `nanoserver` (*8-jdk/windows/nanoserver/Dockerfile*)](https://github.com/docker-library/openjdk/blob/4815a7dc43f0fb212c40f357624fb4ec943992bf/8-jdk/windows/nanoserver/Dockerfile)
--	[`8u121-jre`, `8-jre`, `jre` (*8-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/445f8b8d18d7c61e2ae7fda76d8883b5d51ae0a5/8-jre/Dockerfile)
--	[`8u121-jre-alpine`, `8-jre-alpine`, `jre-alpine` (*8-jre/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/4e39684901490c13eaef7892c44e39043d7c4bed/8-jre/alpine/Dockerfile)
--	[`9-b161-jdk`, `9-b161`, `9-jdk`, `9` (*9-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/50c491c7c2378182866d89e857eb1f0c77985507/9-jdk/Dockerfile)
--	[`9-b161-jre`, `9-jre` (*9-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/50c491c7c2378182866d89e857eb1f0c77985507/9-jre/Dockerfile)
+-	[`6b38-jdk`, `6b38`, `6-jdk`, `6` (*6-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/b4f29ba829765552239bd18f272fcdaf09eca259/6-jdk/Dockerfile)
+-	[`6b38-jdk-slim`, `6b38-slim`, `6-jdk-slim`, `6-slim` (*6-jdk/slim/Dockerfile*)](https://github.com/docker-library/openjdk/blob/b4f29ba829765552239bd18f272fcdaf09eca259/6-jdk/slim/Dockerfile)
+-	[`6b38-jre`, `6-jre` (*6-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/80490366d49e6781e9dcb5dad8ebf0fb6ec04000/6-jre/Dockerfile)
+-	[`6b38-jre-slim`, `6-jre-slim` (*6-jre/slim/Dockerfile*)](https://github.com/docker-library/openjdk/blob/b4f29ba829765552239bd18f272fcdaf09eca259/6-jre/slim/Dockerfile)
+-	[`7u151-jdk`, `7u151`, `7-jdk`, `7` (*7-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/c68ebcca06c8740939866575cfe39ee4ad84c782/7-jdk/Dockerfile)
+-	[`7u151-jdk-slim`, `7u151-slim`, `7-jdk-slim`, `7-slim` (*7-jdk/slim/Dockerfile*)](https://github.com/docker-library/openjdk/blob/c68ebcca06c8740939866575cfe39ee4ad84c782/7-jdk/slim/Dockerfile)
+-	[`7u131-jdk-alpine`, `7u131-alpine`, `7-jdk-alpine`, `7-alpine` (*7-jdk/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/b4f29ba829765552239bd18f272fcdaf09eca259/7-jdk/alpine/Dockerfile)
+-	[`7u151-jre`, `7-jre` (*7-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/80490366d49e6781e9dcb5dad8ebf0fb6ec04000/7-jre/Dockerfile)
+-	[`7u151-jre-slim`, `7-jre-slim` (*7-jre/slim/Dockerfile*)](https://github.com/docker-library/openjdk/blob/c68ebcca06c8740939866575cfe39ee4ad84c782/7-jre/slim/Dockerfile)
+-	[`7u131-jre-alpine`, `7-jre-alpine` (*7-jre/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/b4f29ba829765552239bd18f272fcdaf09eca259/7-jre/alpine/Dockerfile)
+-	[`8u141-jdk`, `8u141`, `8-jdk`, `8`, `jdk`, `latest` (*8-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/8a23a228bda7d2edeb4132fffd2d08c1e1fcf4ac/8-jdk/Dockerfile)
+-	[`8u141-jdk-slim`, `8u141-slim`, `8-jdk-slim`, `8-slim`, `jdk-slim`, `slim` (*8-jdk/slim/Dockerfile*)](https://github.com/docker-library/openjdk/blob/8a23a228bda7d2edeb4132fffd2d08c1e1fcf4ac/8-jdk/slim/Dockerfile)
+-	[`8u131-jdk-alpine`, `8u131-alpine`, `8-jdk-alpine`, `8-alpine`, `jdk-alpine`, `alpine` (*8-jdk/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/b4f29ba829765552239bd18f272fcdaf09eca259/8-jdk/alpine/Dockerfile)
+-	[`8u141-jdk-windowsservercore`, `8u141-windowsservercore`, `8-jdk-windowsservercore`, `8-windowsservercore`, `jdk-windowsservercore`, `windowsservercore` (*8-jdk/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/openjdk/blob/5fb0ba0b6f08e6647a1ba4fbdf8263895b1cf61f/8-jdk/windows/windowsservercore/Dockerfile)
+-	[`8u141-jdk-nanoserver`, `8u141-nanoserver`, `8-jdk-nanoserver`, `8-nanoserver`, `jdk-nanoserver`, `nanoserver` (*8-jdk/windows/nanoserver/Dockerfile*)](https://github.com/docker-library/openjdk/blob/5fb0ba0b6f08e6647a1ba4fbdf8263895b1cf61f/8-jdk/windows/nanoserver/Dockerfile)
+-	[`8u141-jre`, `8-jre`, `jre` (*8-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/80490366d49e6781e9dcb5dad8ebf0fb6ec04000/8-jre/Dockerfile)
+-	[`8u141-jre-slim`, `8-jre-slim`, `jre-slim` (*8-jre/slim/Dockerfile*)](https://github.com/docker-library/openjdk/blob/8a23a228bda7d2edeb4132fffd2d08c1e1fcf4ac/8-jre/slim/Dockerfile)
+-	[`8u131-jre-alpine`, `8-jre-alpine`, `jre-alpine` (*8-jre/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/b4f29ba829765552239bd18f272fcdaf09eca259/8-jre/alpine/Dockerfile)
+-	[`9-b181-jdk`, `9-b181`, `9-jdk`, `9` (*9-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/80490366d49e6781e9dcb5dad8ebf0fb6ec04000/9-jdk/Dockerfile)
+-	[`9-b181-jdk-slim`, `9-b181-slim`, `9-jdk-slim`, `9-slim` (*9-jdk/slim/Dockerfile*)](https://github.com/docker-library/openjdk/blob/9865ab7ac7d26a1ba05d5eadde059c01873bc12d/9-jdk/slim/Dockerfile)
+-	[`9-b154-jdk-windowsservercore`, `9-b154-windowsservercore`, `9-jdk-windowsservercore`, `9-windowsservercore` (*9-jdk/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/openjdk/blob/2493b1043e8581e2c22db2ce4ff0e217457a37ca/9-jdk/windows/windowsservercore/Dockerfile)
+-	[`9-b154-jdk-nanoserver`, `9-b154-nanoserver`, `9-jdk-nanoserver`, `9-nanoserver` (*9-jdk/windows/nanoserver/Dockerfile*)](https://github.com/docker-library/openjdk/blob/2493b1043e8581e2c22db2ce4ff0e217457a37ca/9-jdk/windows/nanoserver/Dockerfile)
+-	[`9-b181-jre`, `9-jre` (*9-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/80490366d49e6781e9dcb5dad8ebf0fb6ec04000/9-jre/Dockerfile)
+-	[`9-b181-jre-slim`, `9-jre-slim` (*9-jre/slim/Dockerfile*)](https://github.com/docker-library/openjdk/blob/9865ab7ac7d26a1ba05d5eadde059c01873bc12d/9-jre/slim/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/openjdk`)](https://github.com/docker-library/official-images/blob/master/library/openjdk). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fopenjdk).
+# Quick reference
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/openjdk/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/openjdk/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+-	**Where to file issues**:  
+	[https://github.com/docker-library/openjdk/issues](https://github.com/docker-library/openjdk/issues)
+
+-	**Maintained by**:  
+	[the Docker Community](https://github.com/docker-library/openjdk)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/openjdk/` directory](https://github.com/docker-library/repo-info/blob/master/repos/openjdk) ([history](https://github.com/docker-library/repo-info/commits/master/repos/openjdk))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images PRs with label `library/openjdk`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fopenjdk)  
+	[official-images repo's `library/openjdk` file](https://github.com/docker-library/official-images/blob/master/library/openjdk) ([history](https://github.com/docker-library/official-images/commits/master/library/openjdk))
+
+-	**Source of this description**:  
+	[docs repo's `openjdk/` directory](https://github.com/docker-library/docs/tree/master/openjdk) ([history](https://github.com/docker-library/docs/commits/master/openjdk))
+
+-	**Supported Docker versions**:  
+	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is OpenJDK?
 
@@ -76,6 +107,26 @@ $ docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp openjdk:7 javac Mai
 
 This will add your current directory as a volume to the container, set the working directory to the volume, and run the command `javac Main.java` which will tell Java to compile the code in `Main.java` and output the Java class file to `Main.class`.
 
+## Make JVM respect CPU and RAM limits
+
+On startup JVM tries to detect the number of available CPU cores and the amount of RAM to adjust its internal parameters (like the number of garbage collector threads to spawn) accordingly. When container is run with limited CPU/RAM, standard system API, used by JVM for probing, will return host-wide values. This can cause excessive CPU usage and memory allocation errors with older versions of JVM.
+
+Inside Linux containers, recent versions of OpenJDK 8 can correctly detect container-limited number of CPU cores by default. To enable the detection of container-limited amount of RAM the following options can be used:
+
+```console
+$ java -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap ...
+```
+
+Inside Windows Server (non-Hyper-V) containers, limit for number of available CPU cores does not work (is ignored by Host Compute Service). To set such limit manually, JVM can be started the following way:
+
+```console
+$ start /b /wait /affinity 0x3 path/to/java.exe ...
+```
+
+In this example CPU affinity hex mask `0x3` will limit JVM to 2 CPU cores.
+
+RAM limit is supported by Windows Server containers, but currently JVM cannot detect it. To prevent excessive memory allocations, `-XX:MaxRAM=...` option must be specified with the value that is not bigger than a containers RAM limit.
+
 # Image Variants
 
 The `openjdk` images come in many flavors, each designed for a specific use case.
@@ -83,6 +134,10 @@ The `openjdk` images come in many flavors, each designed for a specific use case
 ## `openjdk:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of. This tag is based off of [`buildpack-deps`](https://registry.hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
+
+## `openjdk:slim`
+
+This image installs the `-headless` package of OpenJDK and so is missing many of the UI-related Java libraries and some common packages contained in the default tag. It only contains the minimal packages needed to run Java. Unless you are working in an environment where *only* the `openjdk` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
 
 ## `openjdk:alpine`
 
@@ -104,29 +159,3 @@ For information about how to get Docker running on Windows, please see the relev
 # License
 
 View [license information](http://openjdk.java.net/legal/gplv2+ce.html) for the software contained in this image.
-
-# Supported Docker versions
-
-This image is officially supported on Docker version 17.03.1-ce.
-
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/openjdk/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/docker-library/openjdk/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`openjdk/` directory](https://github.com/docker-library/docs/tree/master/openjdk) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

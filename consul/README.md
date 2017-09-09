@@ -16,11 +16,32 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `0.7.5` (*0.X/Dockerfile*)](https://github.com/hashicorp/docker-consul/blob/22839eee5174a56f31f7ad29005e19c8d5cc25a9/0.X/Dockerfile)
+-	[`latest`, `0.9.3` (*0.X/Dockerfile*)](https://github.com/hashicorp/docker-consul/blob/20ea5d641cf0c7e61e695f373b648a45a3ebe151/0.X/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/consul`)](https://github.com/docker-library/official-images/blob/master/library/consul). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fconsul).
+# Quick reference
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/consul/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/consul/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+-	**Where to file issues**:  
+	[https://github.com/hashicorp/docker-consul/issues](https://github.com/hashicorp/docker-consul/issues)
+
+-	**Maintained by**:  
+	[HashiCorp](https://github.com/hashicorp/docker-consul)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/consul/` directory](https://github.com/docker-library/repo-info/blob/master/repos/consul) ([history](https://github.com/docker-library/repo-info/commits/master/repos/consul))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images PRs with label `library/consul`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fconsul)  
+	[official-images repo's `library/consul` file](https://github.com/docker-library/official-images/blob/master/library/consul) ([history](https://github.com/docker-library/official-images/commits/master/library/consul))
+
+-	**Source of this description**:  
+	[docs repo's `consul/` directory](https://github.com/docker-library/docs/tree/master/consul) ([history](https://github.com/docker-library/docs/commits/master/consul))
+
+-	**Supported Docker versions**:  
+	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
 
 # Consul
 
@@ -29,7 +50,7 @@ Consul is a distributed, highly-available, and multi-datacenter aware tool for s
 -	[Consul documentation](https://www.consul.io/)
 -	[Consul on GitHub](https://github.com/hashicorp/consul)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/27b03f6f9076e05839961530006185998660f321/consul/logo.png)
+![logo](https://cdn.rawgit.com/docker-library/docs/8adb88e1e328c244711742f65319ed4064cff9a2/consul/logo.svg)
 
 # Consul and Docker
 
@@ -223,29 +244,3 @@ Consul has the ability to execute health checks inside containers. If the Docker
 # License
 
 View [license information](https://raw.githubusercontent.com/hashicorp/consul/master/LICENSE) for the software contained in this image.
-
-# Supported Docker versions
-
-This image is officially supported on Docker version 17.03.1-ce.
-
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/hashicorp/docker-consul/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/hashicorp/docker-consul/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`consul/` directory](https://github.com/docker-library/docs/tree/master/consul) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

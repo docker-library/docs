@@ -8,30 +8,55 @@ Ghost is a free and open source blogging platform written in JavaScript and dist
 
 # How to use this image
 
+This will start a Ghost instance listening on the default Ghost port of 2368.
+
 ```console
-$ docker run --name some-ghost -d ghost
+$ docker run -d --name some-ghost ghost
 ```
 
-This will start a Ghost instance listening on the default Ghost port of 2368.
+### Custom port
 
 If you'd like to be able to access the instance from the host without the container's IP, standard port mappings can be used:
 
 ```console
-$ docker run --name some-ghost -p 8080:2368 -d ghost
+$ docker run -d --name some-ghost -p 3001:2368 ghost
 ```
 
-Then, access it via `http://localhost:8080` or `http://host-ip:8080` in a browser.
+Then, access it via `http://localhost:3001` or `http://host-ip:3001` in a browser.
 
-You can also point the image to your existing content on your host:
+# Stateful
+
+Mount your existing content. In this example we also use the Alpine base image.
+
+### Ghost 1.x.x
 
 ```console
-$ docker run --name some-ghost -v /path/to/ghost/blog:/var/lib/ghost ghost
+$ docker run -d --name some-ghost -p 3001:2368 -v /path/to/ghost/blog:/var/lib/ghost/content ghost:1-alpine
 ```
 
-Alternatively you can use a [data container](http://docs.docker.com/engine/tutorials/dockervolumes/) that has a volume that points to `/var/lib/ghost` and then reference it:
+### Ghost 0.11.xx
 
 ```console
-$ docker run --name some-ghost --volumes-from some-ghost-data ghost
+$ docker run -d --name some-ghost -p 3001:2368 -v /path/to/ghost/blog:/var/lib/ghost ghost:0.11-alpine
+```
+
+### Breaking change
+
+If you want to run Ghost 0.11.xx, be aware of the container's path difference:
+
+-	Ghost 1.x.x is: `/var/lib/ghost/content`
+-	Ghost 0.11.x is: `/var/lib/ghost`
+
+# SQLite Database
+
+This Docker image for Ghost uses SQLite. There is nothing special to configure.
+
+# Docker Volume
+
+Alternatively you can use a [data container](http://docs.docker.com/engine/tutorials/dockervolumes/) that has a volume that points to `/var/lib/ghost/content` (or /var/lib/ghost for 0.11.x) and then reference it:
+
+```console
+$ docker run -d --name some-ghost --volumes-from some-ghost-data ghost
 ```
 
 # What is the Node.js version?
@@ -40,5 +65,5 @@ When opening a ticket at https://github.com/TryGhost/Ghost/issues it becomes nec
 
 ```console
 $ docker exec <container-id> node --version
-v4.4.7
+v6.11.2
 ```

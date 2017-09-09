@@ -16,11 +16,33 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.0.2`, `3.0`, `3`, `latest` (*Dockerfile*)](https://github.com/piwik/docker-piwik/blob/ddc78a24c43759a671d27054f20b15644a36af45/Dockerfile)
+-	[`3.0.4-apache`, `3.0-apache`, `3-apache`, `apache`, `3.0.4`, `3.0`, `3`, `latest` (*apache/Dockerfile*)](https://github.com/piwik/docker-piwik/blob/4d9eadce21a4900442b16a3ef4c8ab7582cc7c83/apache/Dockerfile)
+-	[`3.0.4-fpm`, `3.0-fpm`, `3-fpm`, `fpm` (*fpm/Dockerfile*)](https://github.com/piwik/docker-piwik/blob/4d9eadce21a4900442b16a3ef4c8ab7582cc7c83/fpm/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/piwik`)](https://github.com/docker-library/official-images/blob/master/library/piwik). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fpiwik).
+# Quick reference
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/piwik/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/piwik/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+-	**Where to file issues**:  
+	[https://github.com/piwik/docker-piwik/issues](https://github.com/piwik/docker-piwik/issues)
+
+-	**Maintained by**:  
+	[Piwik Analytics](https://github.com/piwik/docker-piwik)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/piwik/` directory](https://github.com/docker-library/repo-info/blob/master/repos/piwik) ([history](https://github.com/docker-library/repo-info/commits/master/repos/piwik))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images PRs with label `library/piwik`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fpiwik)  
+	[official-images repo's `library/piwik` file](https://github.com/docker-library/official-images/blob/master/library/piwik) ([history](https://github.com/docker-library/official-images/commits/master/library/piwik))
+
+-	**Source of this description**:  
+	[docs repo's `piwik/` directory](https://github.com/docker-library/docs/tree/master/piwik) ([history](https://github.com/docker-library/docs/commits/master/piwik))
+
+-	**Supported Docker versions**:  
+	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
 
 # Piwik
 
@@ -34,7 +56,7 @@ Piwik is the leading open-source analytics platform that gives you more than jus
 -	User-centric insights
 -	Customisable and extensible
 
-![logo](https://rawgit.com/docker-library/docs/db93419075dcb0e24c48bba055582180df9438ea/piwik/logo.svg)
+![logo](https://cdn.rawgit.com/docker-library/docs/db93419075dcb0e24c48bba055582180df9438ea/piwik/logo.svg)
 
 # How to use this image
 
@@ -74,29 +96,3 @@ This product includes GeoLite data created by MaxMind, available from [http://ww
 # License
 
 View [license information](https://github.com/piwik/piwik/blob/master/LEGALNOTICE) for the software contained in this image.
-
-# Supported Docker versions
-
-This image is officially supported on Docker version 17.03.1-ce.
-
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/piwik/docker-piwik/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/piwik/docker-piwik/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`piwik/` directory](https://github.com/docker-library/docs/tree/master/piwik) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

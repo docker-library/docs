@@ -16,22 +16,55 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`indigo-ros-core` (*ros/indigo/indigo-ros-core/Dockerfile*)](https://github.com/osrf/docker_images/blob/d9efe4367b9d376fd97a154bdaba896ca0382645/ros/indigo/indigo-ros-core/Dockerfile)
--	[`indigo-ros-base`, `indigo` (*ros/indigo/indigo-ros-base/Dockerfile*)](https://github.com/osrf/docker_images/blob/d9efe4367b9d376fd97a154bdaba896ca0382645/ros/indigo/indigo-ros-base/Dockerfile)
--	[`indigo-robot` (*ros/indigo/indigo-robot/Dockerfile*)](https://github.com/osrf/docker_images/blob/d9efe4367b9d376fd97a154bdaba896ca0382645/ros/indigo/indigo-robot/Dockerfile)
--	[`indigo-perception` (*ros/indigo/indigo-perception/Dockerfile*)](https://github.com/osrf/docker_images/blob/d9efe4367b9d376fd97a154bdaba896ca0382645/ros/indigo/indigo-perception/Dockerfile)
--	[`jade-ros-core` (*ros/jade/jade-ros-core/Dockerfile*)](https://github.com/osrf/docker_images/blob/d9efe4367b9d376fd97a154bdaba896ca0382645/ros/jade/jade-ros-core/Dockerfile)
--	[`jade-ros-base`, `jade` (*ros/jade/jade-ros-base/Dockerfile*)](https://github.com/osrf/docker_images/blob/d9efe4367b9d376fd97a154bdaba896ca0382645/ros/jade/jade-ros-base/Dockerfile)
--	[`jade-robot` (*ros/jade/jade-robot/Dockerfile*)](https://github.com/osrf/docker_images/blob/d9efe4367b9d376fd97a154bdaba896ca0382645/ros/jade/jade-robot/Dockerfile)
--	[`jade-perception` (*ros/jade/jade-perception/Dockerfile*)](https://github.com/osrf/docker_images/blob/d9efe4367b9d376fd97a154bdaba896ca0382645/ros/jade/jade-perception/Dockerfile)
--	[`kinetic-ros-core` (*ros/kinetic/kinetic-ros-core/Dockerfile*)](https://github.com/osrf/docker_images/blob/d9efe4367b9d376fd97a154bdaba896ca0382645/ros/kinetic/kinetic-ros-core/Dockerfile)
--	[`kinetic-ros-base`, `kinetic`, `latest` (*ros/kinetic/kinetic-ros-base/Dockerfile*)](https://github.com/osrf/docker_images/blob/d9efe4367b9d376fd97a154bdaba896ca0382645/ros/kinetic/kinetic-ros-base/Dockerfile)
--	[`kinetic-robot` (*ros/kinetic/kinetic-robot/Dockerfile*)](https://github.com/osrf/docker_images/blob/d9efe4367b9d376fd97a154bdaba896ca0382645/ros/kinetic/kinetic-robot/Dockerfile)
--	[`kinetic-perception` (*ros/kinetic/kinetic-perception/Dockerfile*)](https://github.com/osrf/docker_images/blob/d9efe4367b9d376fd97a154bdaba896ca0382645/ros/kinetic/kinetic-perception/Dockerfile)
+-	[`indigo-ros-core`, `indigo-ros-core-trusty` (*ros/indigo/ubuntu/trusty/ros-core/Dockerfile*)](https://github.com/osrf/docker_images/blob/7ba58fc107b368d6409c22161070eb93e562f240/ros/indigo/ubuntu/trusty/ros-core/Dockerfile)
+-	[`indigo-ros-base`, `indigo-ros-base-trusty`, `indigo` (*ros/indigo/ubuntu/trusty/ros-base/Dockerfile*)](https://github.com/osrf/docker_images/blob/7ba58fc107b368d6409c22161070eb93e562f240/ros/indigo/ubuntu/trusty/ros-base/Dockerfile)
+-	[`indigo-robot`, `indigo-robot-trusty` (*ros/indigo/ubuntu/trusty/robot/Dockerfile*)](https://github.com/osrf/docker_images/blob/7ba58fc107b368d6409c22161070eb93e562f240/ros/indigo/ubuntu/trusty/robot/Dockerfile)
+-	[`indigo-perception`, `indigo-perception-trusty` (*ros/indigo/ubuntu/trusty/perception/Dockerfile*)](https://github.com/osrf/docker_images/blob/7ba58fc107b368d6409c22161070eb93e562f240/ros/indigo/ubuntu/trusty/perception/Dockerfile)
+-	[`jade-ros-core`, `jade-ros-core-trusty` (*ros/jade/ubuntu/trusty/ros-core/Dockerfile*)](https://github.com/osrf/docker_images/blob/7ba58fc107b368d6409c22161070eb93e562f240/ros/jade/ubuntu/trusty/ros-core/Dockerfile)
+-	[`jade-ros-base`, `jade-ros-base-trusty`, `jade` (*ros/jade/ubuntu/trusty/ros-base/Dockerfile*)](https://github.com/osrf/docker_images/blob/7ba58fc107b368d6409c22161070eb93e562f240/ros/jade/ubuntu/trusty/ros-base/Dockerfile)
+-	[`jade-robot`, `jade-robot-trusty` (*ros/jade/ubuntu/trusty/robot/Dockerfile*)](https://github.com/osrf/docker_images/blob/7ba58fc107b368d6409c22161070eb93e562f240/ros/jade/ubuntu/trusty/robot/Dockerfile)
+-	[`jade-perception`, `jade-perception-trusty` (*ros/jade/ubuntu/trusty/perception/Dockerfile*)](https://github.com/osrf/docker_images/blob/7ba58fc107b368d6409c22161070eb93e562f240/ros/jade/ubuntu/trusty/perception/Dockerfile)
+-	[`kinetic-ros-core`, `kinetic-ros-core-xenial` (*ros/kinetic/ubuntu/xenial/ros-core/Dockerfile*)](https://github.com/osrf/docker_images/blob/7ba58fc107b368d6409c22161070eb93e562f240/ros/kinetic/ubuntu/xenial/ros-core/Dockerfile)
+-	[`kinetic-ros-base`, `kinetic-ros-base-xenial`, `kinetic`, `latest` (*ros/kinetic/ubuntu/xenial/ros-base/Dockerfile*)](https://github.com/osrf/docker_images/blob/7ba58fc107b368d6409c22161070eb93e562f240/ros/kinetic/ubuntu/xenial/ros-base/Dockerfile)
+-	[`kinetic-robot`, `kinetic-robot-xenial` (*ros/kinetic/ubuntu/xenial/robot/Dockerfile*)](https://github.com/osrf/docker_images/blob/7ba58fc107b368d6409c22161070eb93e562f240/ros/kinetic/ubuntu/xenial/robot/Dockerfile)
+-	[`kinetic-perception`, `kinetic-perception-xenial` (*ros/kinetic/ubuntu/xenial/perception/Dockerfile*)](https://github.com/osrf/docker_images/blob/7ba58fc107b368d6409c22161070eb93e562f240/ros/kinetic/ubuntu/xenial/perception/Dockerfile)
+-	[`kinetic-ros-core-jessie` (*ros/kinetic/debian/jessie/ros-core/Dockerfile*)](https://github.com/osrf/docker_images/blob/7ba58fc107b368d6409c22161070eb93e562f240/ros/kinetic/debian/jessie/ros-core/Dockerfile)
+-	[`kinetic-ros-base-jessie` (*ros/kinetic/debian/jessie/ros-base/Dockerfile*)](https://github.com/osrf/docker_images/blob/7ba58fc107b368d6409c22161070eb93e562f240/ros/kinetic/debian/jessie/ros-base/Dockerfile)
+-	[`kinetic-robot-jessie` (*ros/kinetic/debian/jessie/robot/Dockerfile*)](https://github.com/osrf/docker_images/blob/7ba58fc107b368d6409c22161070eb93e562f240/ros/kinetic/debian/jessie/robot/Dockerfile)
+-	[`kinetic-perception-jessie` (*ros/kinetic/debian/jessie/perception/Dockerfile*)](https://github.com/osrf/docker_images/blob/7ba58fc107b368d6409c22161070eb93e562f240/ros/kinetic/debian/jessie/perception/Dockerfile)
+-	[`lunar-ros-core`, `lunar-ros-core-xenial` (*ros/lunar/ubuntu/xenial/ros-core/Dockerfile*)](https://github.com/osrf/docker_images/blob/7ba58fc107b368d6409c22161070eb93e562f240/ros/lunar/ubuntu/xenial/ros-core/Dockerfile)
+-	[`lunar-ros-base`, `lunar-ros-base-xenial`, `lunar` (*ros/lunar/ubuntu/xenial/ros-base/Dockerfile*)](https://github.com/osrf/docker_images/blob/7ba58fc107b368d6409c22161070eb93e562f240/ros/lunar/ubuntu/xenial/ros-base/Dockerfile)
+-	[`lunar-robot`, `lunar-robot-xenial` (*ros/lunar/ubuntu/xenial/robot/Dockerfile*)](https://github.com/osrf/docker_images/blob/7ba58fc107b368d6409c22161070eb93e562f240/ros/lunar/ubuntu/xenial/robot/Dockerfile)
+-	[`lunar-perception`, `lunar-perception-xenial` (*ros/lunar/ubuntu/xenial/perception/Dockerfile*)](https://github.com/osrf/docker_images/blob/7ba58fc107b368d6409c22161070eb93e562f240/ros/lunar/ubuntu/xenial/perception/Dockerfile)
+-	[`lunar-ros-core-stretch` (*ros/lunar/debian/stretch/ros-core/Dockerfile*)](https://github.com/osrf/docker_images/blob/7ba58fc107b368d6409c22161070eb93e562f240/ros/lunar/debian/stretch/ros-core/Dockerfile)
+-	[`lunar-ros-base-stretch` (*ros/lunar/debian/stretch/ros-base/Dockerfile*)](https://github.com/osrf/docker_images/blob/7ba58fc107b368d6409c22161070eb93e562f240/ros/lunar/debian/stretch/ros-base/Dockerfile)
+-	[`lunar-robot-stretch` (*ros/lunar/debian/stretch/robot/Dockerfile*)](https://github.com/osrf/docker_images/blob/7ba58fc107b368d6409c22161070eb93e562f240/ros/lunar/debian/stretch/robot/Dockerfile)
+-	[`lunar-perception-stretch` (*ros/lunar/debian/stretch/perception/Dockerfile*)](https://github.com/osrf/docker_images/blob/7ba58fc107b368d6409c22161070eb93e562f240/ros/lunar/debian/stretch/perception/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/ros`)](https://github.com/docker-library/official-images/blob/master/library/ros). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fros).
+# Quick reference
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/ros/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/ros/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+-	**Where to file issues**:  
+	[https://github.com/osrf/docker_images/issues](https://github.com/osrf/docker_images/issues)
+
+-	**Maintained by**:  
+	[the Open Source Robotics Foundation](https://github.com/osrf/docker_images)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/ros/` directory](https://github.com/docker-library/repo-info/blob/master/repos/ros) ([history](https://github.com/docker-library/repo-info/commits/master/repos/ros))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images PRs with label `library/ros`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fros)  
+	[official-images repo's `library/ros` file](https://github.com/docker-library/official-images/blob/master/library/ros) ([history](https://github.com/docker-library/official-images/commits/master/library/ros))
+
+-	**Source of this description**:  
+	[docs repo's `ros/` directory](https://github.com/docker-library/docs/tree/master/ros) ([history](https://github.com/docker-library/docs/commits/master/ros))
+
+-	**Supported Docker versions**:  
+	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is [ROS](http://www.ros.org/)?
 
@@ -68,11 +101,12 @@ With the advancements and standardization of software containers, roboticists ar
 
 ## Deployment suggestions
 
-The available tags include supported distros along with a hierarchy tags based off the most common meta-package dependencies, designed to have a small footprint and simple configuration:  
-- `ros-core`: barebone ROS install  
-- `ros-base`: basic tools and libraries (also tagged with distro name with LTS version as `latest`)  
-- `robot`: basic install for robots  
-- `perception`: basic install for perception tasks
+The available tags include supported distros along with a hierarchy tags based off the most common meta-package dependencies, designed to have a small footprint and simple configuration:
+
+-	`ros-core`: barebone ROS install
+-	`ros-base`: basic tools and libraries (also tagged with distro name with LTS version as `latest`)
+-	`robot`: basic install for robots
+-	`perception`: basic install for perception tasks
 
 The rest of the common meta-packages such as `desktop` and `desktop-full` are hosted on automatic build repos under OSRF's Docker Hub profile [here](https://hub.docker.com/r/osrf/ros/). These meta-packages include graphical dependencies and hook a host of other large packages such as X11, X server, etc. So in the interest of keep the official images lean and secure, the desktop packages are just be hosted with OSRF's profile.
 
@@ -280,29 +314,3 @@ $ docker-compose rm
 The core of ROS is licensed under the standard three-clause BSD license. This is a very permissive open license that allows for reuse in commercial and closed source products. You can find more about the BSD license from the Opensource.org [BSD 3-Clause](http://opensource.org/licenses/BSD-3-Clause) page and Wikipedia's [BSD Licenses](http://en.wikipedia.org/wiki/BSD_licenses) entry.
 
 While the core parts of ROS are licensed under the BSD license, other licenses are commonly used in the community packages, such as the [Apache 2.0](http://opensource.org/licenses/Apache-2.0) license, the [GPL](http://opensource.org/licenses/gpl-license) license, the [MIT](http://opensource.org/licenses/MIT) license, and even proprietary licenses. Each package in the ROS ecosystem is required to specify a license, so that it is easy for you to quickly identify if a package will meet your licensing needs.
-
-# Supported Docker versions
-
-This image is officially supported on Docker version 17.03.1-ce.
-
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/osrf/docker_images/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/osrf/docker_images/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`ros/` directory](https://github.com/docker-library/docs/tree/master/ros) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

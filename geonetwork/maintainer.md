@@ -1,0 +1,1 @@
+[GeoNetwork opensource](%%GITHUB-REPO%%)

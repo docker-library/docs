@@ -10,26 +10,53 @@ fi
 
 dir="$(dirname "$(readlink -f "$BASH_SOURCE")")"
 repoDir="$dir/../$repo"
-url='https://raw.githubusercontent.com/docker-library/official-images/master/library/'"$repo"
+
+# if we haven't set BASHBREW_LIBRARY explicitly (like Jenkins does, for example), don't trust the local library
+if [ -z "${BASHBREW_LIBRARY:-}" ]; then
+	repo="https://github.com/docker-library/official-images/raw/master/library/$repo"
+fi
 
 IFS=$'\n'
-tags=( $(bashbrew cat -f '{{ range .Entries }}{{ join "\n" .Tags }}{{ "\n" }}{{ end }}' "$url") )
+tags=( $(bashbrew cat -f '
+	{{- $archSpecific := getenv "ARCH_SPECIFIC_DOCS" -}}
+
+	{{- range .Entries -}}
+		{{- $arch := $archSpecific | ternary arch (.HasArchitecture arch | ternary arch (.Architectures | first)) -}}
+
+		{{- if .HasArchitecture $arch -}}
+			{{- join "\n" .Tags -}}
+			{{- "\n" -}}
+		{{- end -}}
+	{{- end -}}
+' "$repo") )
 unset IFS
 
 text=
+declare -A includedFiles=()
 for tag in "${tags[@]}"; do
-	for f in "$repoDir/variant-$tag.md" "$dir/variant-$tag.md"; do
+	for f in \
+		"$repoDir/variant-$tag.md" "$repoDir/variant-${tag##*-}.md" \
+		"$dir/variant-$tag.md" "$dir/variant-${tag##*-}.md" \
+	; do
+		if [ -n "${includedFiles[$f]}" ]; then
+			# make sure we don't duplicate variant sections
+			break
+		fi
 		if [ -f "$f" ]; then
-			text+=$'\n' # give a little space
-			text+="$(< "$f")"
-			text+=$'\n' # parameter expansion eats the trailing newline
+			includedFiles[$f]=1
+			if [ -s "$f" ]; then
+				# an empty file can be used to disable a specific "variant" section for an image
+				text+=$'\n' # give a little space
+				text+="$(< "$f")"
+				text+=$'\n' # parameter expansion eats the trailing newline
+			fi
 			break
 		fi
 	done
 done
 
 if [ "$text" ]; then
-	baseImage="$(bashbrew cat -f '{{ .DockerFrom .TagEntry }}' "$url":latest)"
+	baseImage="$(bashbrew cat -f '{{ .DockerFrom .TagEntry }}' "$repo":latest)"
 	baseImage="${baseImage%:*}"
 
 	echo

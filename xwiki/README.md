@@ -16,14 +16,35 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8`, `8.4`, `8.4.4`, `8-mysql-tomcat`, `mysql-tomcat`, `lts-mysql-tomcat`, `lts-mysql`, `lts`, `latest` (*8/mysql-tomcat/Dockerfile*)](https://github.com/xwiki-contrib/docker-xwiki/blob/478f413940c46b325ad8d2b99e430273966b3981/8/mysql-tomcat/Dockerfile)
--	[`9`, `9.0`, `9-mysql-tomcat`, `stable-mysql-tomcat`, `stable-mysql`, `stable` (*9/mysql-tomcat/Dockerfile*)](https://github.com/xwiki-contrib/docker-xwiki/blob/478f413940c46b325ad8d2b99e430273966b3981/9/mysql-tomcat/Dockerfile)
--	[`8-postgres-tomcat`, `8.4-postgres-tomcat`, `8.4.4-postgres-tomcat`, `postgres-tomcat`, `lts-postgres-tomcat`, `lts-postgres` (*8/postgres-tomcat/Dockerfile*)](https://github.com/xwiki-contrib/docker-xwiki/blob/478f413940c46b325ad8d2b99e430273966b3981/8/postgres-tomcat/Dockerfile)
--	[`9-postgres-tomcat`, `9.1-postgres-tomcat`, `stable-postgres-tomcat`, `stable-postgres` (*9/postgres-tomcat/Dockerfile*)](https://github.com/xwiki-contrib/docker-xwiki/blob/478f413940c46b325ad8d2b99e430273966b3981/9/postgres-tomcat/Dockerfile)
+-	[`8`, `8.4`, `8.4.5`, `8-mysql-tomcat`, `mysql-tomcat`, `lts-mysql-tomcat`, `lts-mysql`, `lts`, `latest` (*8/mysql-tomcat/Dockerfile*)](https://github.com/xwiki-contrib/docker-xwiki/blob/50b6fe1af4b98337bc7d6053f840169e457f21a6/8/mysql-tomcat/Dockerfile)
+-	[`9`, `9.7`, `9-mysql-tomcat`, `stable-mysql-tomcat`, `stable-mysql`, `stable` (*9/mysql-tomcat/Dockerfile*)](https://github.com/xwiki-contrib/docker-xwiki/blob/2f789b4c4f1ca614094c4de632635c3aeef144b1/9/mysql-tomcat/Dockerfile)
+-	[`8-postgres-tomcat`, `8.4-postgres-tomcat`, `8.4.5-postgres-tomcat`, `postgres-tomcat`, `lts-postgres-tomcat`, `lts-postgres` (*8/postgres-tomcat/Dockerfile*)](https://github.com/xwiki-contrib/docker-xwiki/blob/50b6fe1af4b98337bc7d6053f840169e457f21a6/8/postgres-tomcat/Dockerfile)
+-	[`9-postgres-tomcat`, `9.7-postgres-tomcat`, `stable-postgres-tomcat`, `stable-postgres` (*9/postgres-tomcat/Dockerfile*)](https://github.com/xwiki-contrib/docker-xwiki/blob/2f789b4c4f1ca614094c4de632635c3aeef144b1/9/postgres-tomcat/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/xwiki`)](https://github.com/docker-library/official-images/blob/master/library/xwiki). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fxwiki).
+# Quick reference
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/xwiki/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/xwiki/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+-	**Where to get help**:  
+	[the XWiki Users Mailing List/Forum](http://dev.xwiki.org/xwiki/bin/view/Community/MailingLists) or [the XWiki IRC channel](http://dev.xwiki.org/xwiki/bin/view/Community/IRC)
+
+-	**Where to file issues**:  
+	[the XWiki Docker JIRA project](http://jira.xwiki.org/browse/XDOCKER)
+
+-	**Maintained by**:  
+	[the XWiki Community](https://github.com/xwiki-contrib/docker-xwiki)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/xwiki/` directory](https://github.com/docker-library/repo-info/blob/master/repos/xwiki) ([history](https://github.com/docker-library/repo-info/commits/master/repos/xwiki))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images PRs with label `library/xwiki`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fxwiki)  
+	[official-images repo's `library/xwiki` file](https://github.com/docker-library/official-images/blob/master/library/xwiki) ([history](https://github.com/docker-library/official-images/commits/master/library/xwiki))
+
+-	**Source of this description**:  
+	[docs repo's `xwiki/` directory](https://github.com/docker-library/docs/tree/master/xwiki) ([history](https://github.com/docker-library/docs/commits/master/xwiki))
+
+-	**Supported Docker versions**:  
+	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is XWiki
 
@@ -233,6 +254,20 @@ Note that if you want to set a custom version of XWiki you can edit the `.env` f
 
 Note that `docker-compose up` will automatically build the XWiki image on the first run. If you need to rebuild it you can issue `docker-compose up --build`. You can also build the image with `docker build . -t xwiki-mysql-tomcat:latest` for example.
 
+# Upgrading XWiki
+
+You've installed an XWiki docker image and used it and now comes the time when you'd like to upgrade XWiki to a newer version.
+
+If you've followed the instructions above you've mapped the XWiki permanent directory to a local directory on your host.
+
+Thus all you need to do is to execute the installation instructions above as if you were installing a new version of the XWiki docker image.
+
+Then you need to stop your running XWiki container. You should keep your DB container running. Then all you have to do is start a new container as described above, using the new XWiki docker image.
+
+Caveats:
+
+-	Right now we have an [outstanding issue](https://jira.xwiki.org/browse/XDOCKER-20) and thus if you've had to modify `xwiki.properties` or `xwiki.cfg` inside the XWiki container, you'll need to port your changes inside the new container (see the section below).
+
 # Details for the xwiki image
 
 ## Configuration Options
@@ -243,6 +278,14 @@ The first time you create a container out of the xwiki image, a shell script (`/
 -	`DB_PASSWORD`: The user password used by XWiki to read/write to the DB.
 -	`DB_DATABASE`: The name of the XWiki database to use/create.
 -	`DB_HOST`: The name of the host (or docker container) containing the database. Default is "db".
+
+If you need to configure XWiki (e.g. modify `xwiki.properties` or `xwiki.cfg`) or perform some additional configuration, you can execute another container and attach to the running XWiki container by issuing:
+
+```console
+docker exec -it <xwiki container id> bash -l
+```
+
+Note that we plan to [lift this limitation in the future](https://jira.xwiki.org/browse/XDOCKER-20).
 
 ## Passing JVM options
 
@@ -281,26 +324,3 @@ MySQL:
 XWiki is licensed under the [LGPL 2.1](https://github.com/xwiki-contrib/docker-xwiki/blob/master/LICENSE).
 
 The Dockerfile repository is also licensed under the [LGPL 2.1](https://github.com/xwiki-contrib/docker-xwiki/blob/master/LICENSE).
-
-# Supported Docker versions
-
-This image is officially supported on Docker version 17.03.1-ce.
-
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Support
-
--	If you wish to raise an issue or an idea of improvement use [XWiki Docker JIRA project](http://jira.xwiki.org/browse/XDOCKER)
--	If you have questions, use the [XWiki Users Mailing List/Forum](http://dev.xwiki.org/xwiki/bin/view/Community/MailingLists) or use the [XWiki IRC channel](http://dev.xwiki.org/xwiki/bin/view/Community/IRC)
-
-## Contributing
-
--	If you wish to help out on the code, please send Pull Requests on [XWiki Docker GitHub project](https://github.com/xwiki-contrib/docker-xwiki)
-
-## Documentation
-
-Documentation for this image is stored in the [`xwiki/` directory](https://github.com/docker-library/docs/tree/master/xwiki) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

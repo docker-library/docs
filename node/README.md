@@ -16,25 +16,49 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.8.0`, `7.8`, `7`, `latest` (*7.8/Dockerfile*)](https://github.com/nodejs/docker-node/blob/189588b1b52f80f8b3cec7f432ac60c0e884116e/7.8/Dockerfile)
--	[`7.8.0-alpine`, `7.8-alpine`, `7-alpine`, `alpine` (*7.8/alpine/Dockerfile*)](https://github.com/nodejs/docker-node/blob/189588b1b52f80f8b3cec7f432ac60c0e884116e/7.8/alpine/Dockerfile)
--	[`7.8.0-onbuild`, `7.8-onbuild`, `7-onbuild`, `onbuild` (*7.8/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/189588b1b52f80f8b3cec7f432ac60c0e884116e/7.8/onbuild/Dockerfile)
--	[`7.8.0-slim`, `7.8-slim`, `7-slim`, `slim` (*7.8/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/189588b1b52f80f8b3cec7f432ac60c0e884116e/7.8/slim/Dockerfile)
--	[`7.8.0-wheezy`, `7.8-wheezy`, `7-wheezy`, `wheezy` (*7.8/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/189588b1b52f80f8b3cec7f432ac60c0e884116e/7.8/wheezy/Dockerfile)
--	[`6.10.1`, `6.10`, `6`, `boron` (*6.10/Dockerfile*)](https://github.com/nodejs/docker-node/blob/a5141d841167d109bcad542c9fb636607dabc8b1/6.10/Dockerfile)
--	[`6.10.1-alpine`, `6.10-alpine`, `6-alpine`, `boron-alpine` (*6.10/alpine/Dockerfile*)](https://github.com/nodejs/docker-node/blob/a5141d841167d109bcad542c9fb636607dabc8b1/6.10/alpine/Dockerfile)
--	[`6.10.1-onbuild`, `6.10-onbuild`, `6-onbuild`, `boron-onbuild` (*6.10/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/14681db8e89c0493e8af20657883fa21488a7766/6.10/onbuild/Dockerfile)
--	[`6.10.1-slim`, `6.10-slim`, `6-slim`, `boron-slim` (*6.10/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/14681db8e89c0493e8af20657883fa21488a7766/6.10/slim/Dockerfile)
--	[`6.10.1-wheezy`, `6.10-wheezy`, `6-wheezy`, `boron-wheezy` (*6.10/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/14681db8e89c0493e8af20657883fa21488a7766/6.10/wheezy/Dockerfile)
--	[`4.8.1`, `4.8`, `4`, `argon` (*4.8/Dockerfile*)](https://github.com/nodejs/docker-node/blob/a5141d841167d109bcad542c9fb636607dabc8b1/4.8/Dockerfile)
--	[`4.8.1-alpine`, `4.8-alpine`, `4-alpine`, `argon-alpine` (*4.8/alpine/Dockerfile*)](https://github.com/nodejs/docker-node/blob/a5141d841167d109bcad542c9fb636607dabc8b1/4.8/alpine/Dockerfile)
--	[`4.8.1-onbuild`, `4.8-onbuild`, `4-onbuild`, `argon-onbuild` (*4.8/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/14681db8e89c0493e8af20657883fa21488a7766/4.8/onbuild/Dockerfile)
--	[`4.8.1-slim`, `4.8-slim`, `4-slim`, `argon-slim` (*4.8/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/14681db8e89c0493e8af20657883fa21488a7766/4.8/slim/Dockerfile)
--	[`4.8.1-wheezy`, `4.8-wheezy`, `4-wheezy`, `argon-wheezy` (*4.8/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/14681db8e89c0493e8af20657883fa21488a7766/4.8/wheezy/Dockerfile)
+-	[`8.4.0`, `8.4`, `8`, `latest` (*8.4/Dockerfile*)](https://github.com/nodejs/docker-node/blob/b502aa016335c81a586b430328d8fee4897ee440/8.4/Dockerfile)
+-	[`8.4.0-alpine`, `8.4-alpine`, `8-alpine`, `alpine` (*8.4/alpine/Dockerfile*)](https://github.com/nodejs/docker-node/blob/c044d61e6d02756bb8ed1557b2f0c7a0d7fead6f/8.4/alpine/Dockerfile)
+-	[`8.4.0-onbuild`, `8.4-onbuild`, `8-onbuild`, `onbuild` (*8.4/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/c044d61e6d02756bb8ed1557b2f0c7a0d7fead6f/8.4/onbuild/Dockerfile)
+-	[`8.4.0-slim`, `8.4-slim`, `8-slim`, `slim` (*8.4/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/b502aa016335c81a586b430328d8fee4897ee440/8.4/slim/Dockerfile)
+-	[`8.4.0-stretch`, `8.4-stretch`, `8-stretch`, `stretch` (*8.4/stretch/Dockerfile*)](https://github.com/nodejs/docker-node/blob/b502aa016335c81a586b430328d8fee4897ee440/8.4/stretch/Dockerfile)
+-	[`8.4.0-wheezy`, `8.4-wheezy`, `8-wheezy`, `wheezy` (*8.4/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/c044d61e6d02756bb8ed1557b2f0c7a0d7fead6f/8.4/wheezy/Dockerfile)
+-	[`6.11.3`, `6.11`, `6`, `boron` (*6.11/Dockerfile*)](https://github.com/nodejs/docker-node/blob/17c50cb300581280805a4183524fbf57840f3a7e/6.11/Dockerfile)
+-	[`6.11.3-alpine`, `6.11-alpine`, `6-alpine`, `boron-alpine` (*6.11/alpine/Dockerfile*)](https://github.com/nodejs/docker-node/blob/17c50cb300581280805a4183524fbf57840f3a7e/6.11/alpine/Dockerfile)
+-	[`6.11.3-onbuild`, `6.11-onbuild`, `6-onbuild`, `boron-onbuild` (*6.11/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/17c50cb300581280805a4183524fbf57840f3a7e/6.11/onbuild/Dockerfile)
+-	[`6.11.3-slim`, `6.11-slim`, `6-slim`, `boron-slim` (*6.11/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/17c50cb300581280805a4183524fbf57840f3a7e/6.11/slim/Dockerfile)
+-	[`6.11.3-stretch`, `6.11-stretch`, `6-stretch`, `boron-stretch` (*6.11/stretch/Dockerfile*)](https://github.com/nodejs/docker-node/blob/17c50cb300581280805a4183524fbf57840f3a7e/6.11/stretch/Dockerfile)
+-	[`6.11.3-wheezy`, `6.11-wheezy`, `6-wheezy`, `boron-wheezy` (*6.11/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/17c50cb300581280805a4183524fbf57840f3a7e/6.11/wheezy/Dockerfile)
+-	[`4.8.4`, `4.8`, `4`, `argon` (*4.8/Dockerfile*)](https://github.com/nodejs/docker-node/blob/b502aa016335c81a586b430328d8fee4897ee440/4.8/Dockerfile)
+-	[`4.8.4-alpine`, `4.8-alpine`, `4-alpine`, `argon-alpine` (*4.8/alpine/Dockerfile*)](https://github.com/nodejs/docker-node/blob/3ffba881ad5a78d33b8edf888d5406222b60686e/4.8/alpine/Dockerfile)
+-	[`4.8.4-onbuild`, `4.8-onbuild`, `4-onbuild`, `argon-onbuild` (*4.8/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/3ffba881ad5a78d33b8edf888d5406222b60686e/4.8/onbuild/Dockerfile)
+-	[`4.8.4-slim`, `4.8-slim`, `4-slim`, `argon-slim` (*4.8/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/b502aa016335c81a586b430328d8fee4897ee440/4.8/slim/Dockerfile)
+-	[`4.8.4-stretch`, `4.8-stretch`, `4-stretch`, `argon-stretch` (*4.8/stretch/Dockerfile*)](https://github.com/nodejs/docker-node/blob/b502aa016335c81a586b430328d8fee4897ee440/4.8/stretch/Dockerfile)
+-	[`4.8.4-wheezy`, `4.8-wheezy`, `4-wheezy`, `argon-wheezy` (*4.8/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/9c25cbe93f9108fd1e506d14228afe4a3d04108f/4.8/wheezy/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/node`)](https://github.com/docker-library/official-images/blob/master/library/node). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fnode).
+# Quick reference
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/node/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/node/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+-	**Where to file issues**:  
+	[https://github.com/nodejs/docker-node/issues](https://github.com/nodejs/docker-node/issues)
+
+-	**Maintained by**:  
+	[The Node.js Docker Team](https://github.com/nodejs/docker-node)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/node/` directory](https://github.com/docker-library/repo-info/blob/master/repos/node) ([history](https://github.com/docker-library/repo-info/commits/master/repos/node))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images PRs with label `library/node`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fnode)  
+	[official-images repo's `library/node` file](https://github.com/docker-library/official-images/blob/master/library/node) ([history](https://github.com/docker-library/official-images/commits/master/library/node))
+
+-	**Source of this description**:  
+	[docs repo's `node/` directory](https://github.com/docker-library/docs/tree/master/node) ([history](https://github.com/docker-library/docs/commits/master/node))
+
+-	**Supported Docker versions**:  
+	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Node.js?
 
@@ -50,32 +74,7 @@ Node.js internally uses the Google V8 JavaScript engine to execute code; a large
 
 # How to use this image
 
-## Create a `Dockerfile` in your Node.js app project
-
-```dockerfile
-FROM node:4-onbuild
-# replace this with your application's default port
-EXPOSE 8888
-```
-
-You can then build and run the Docker image:
-
-```console
-$ docker build -t my-nodejs-app .
-$ docker run -it --rm --name my-running-app my-nodejs-app
-```
-
-### Notes
-
-The image assumes that your application has a file named [`package.json`](https://docs.npmjs.com/files/package.json) listing its dependencies and defining its [start script](https://docs.npmjs.com/misc/scripts#default-values).
-
-## Run a single Node.js script
-
-For many simple, single file projects, you may find it inconvenient to write a complete `Dockerfile`. In such cases, you can run a Node.js script by using the Node.js Docker image directly:
-
-```console
-$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/app -w /usr/src/app node:4 node your-daemon-or-script.js
-```
+See [How To Use This Image](https://github.com/nodejs/docker-node/blob/master/README.md#how-to-use-this-image) on GitHub for up-to-date documentation.
 
 # Image Variants
 
@@ -95,7 +94,7 @@ To minimize image size, it's uncommon for additional related tools (such as `git
 
 ## `node:onbuild`
 
-This image makes building derivative images easier. For most use cases, creating a `Dockerfile` in the base of your project directory with the line `FROM node:onbuild` will be enough to create a stand-alone image for your project.
+The `ONBUILD` image variants are deprecated, and their usage is discouraged. For more details, see [docker-library/official-images#2076](https://github.com/docker-library/official-images/issues/2076).
 
 While the `onbuild` variant is really useful for "getting off the ground running" (zero to Dockerized in a short period of time), it's not recommended for long-term usage within a project due to the lack of control over *when* the `ONBUILD` triggers fire (see also [`docker/docker#5714`](https://github.com/docker/docker/issues/5714), [`docker/docker#8240`](https://github.com/docker/docker/issues/8240), [`docker/docker#11917`](https://github.com/docker/docker/issues/11917)).
 
@@ -103,34 +102,8 @@ Once you've got a handle on how your project functions within Docker, you'll pro
 
 ## `node:slim`
 
-This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `node`. Unless you are working in an environment where *only* the node image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
+This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `node`. Unless you are working in an environment where *only* the `node` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
 
 # License
 
-View [license information](https://github.com/joyent/node/blob/master/LICENSE) for the software contained in this image.
-
-# Supported Docker versions
-
-This image is officially supported on Docker version 17.03.1-ce.
-
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/nodejs/docker-node/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/nodejs/docker-node/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`node/` directory](https://github.com/docker-library/docs/tree/master/node) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
+View [license information](https://github.com/nodejs/node/blob/master/LICENSE) for Node.js or [license information](https://github.com/nodejs/docker-node/blob/master/LICENSE) for the Node.js Docker project.

@@ -16,18 +16,41 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.5.4`, `5.5`, `5` (*5.5/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/1ccf51aaeef0636445f670d9fd083730d4a6e9c1/5.5/Dockerfile)
--	[`5.5.4-alpine`, `5.5-alpine`, `5-alpine` (*5.5/alpine/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/1ccf51aaeef0636445f670d9fd083730d4a6e9c1/5.5/alpine/Dockerfile)
--	[`6.3.0`, `6.3` (*6.3/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/1ccf51aaeef0636445f670d9fd083730d4a6e9c1/6.3/Dockerfile)
--	[`6.3.0-alpine`, `6.3-alpine` (*6.3/alpine/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/1ccf51aaeef0636445f670d9fd083730d4a6e9c1/6.3/alpine/Dockerfile)
--	[`6.4.2`, `6.4`, `6`, `latest` (*6.4/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/1ccf51aaeef0636445f670d9fd083730d4a6e9c1/6.4/Dockerfile)
--	[`6.4.2-alpine`, `6.4-alpine`, `6-alpine`, `alpine` (*6.4/alpine/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/1ccf51aaeef0636445f670d9fd083730d4a6e9c1/6.4/alpine/Dockerfile)
--	[`6.5.0`, `6.5` (*6.5/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/1738f9a3cbad82e46c5ccebfb44707da13d05479/6.5/Dockerfile)
--	[`6.5.0-alpine`, `6.5-alpine` (*6.5/alpine/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/1738f9a3cbad82e46c5ccebfb44707da13d05479/6.5/alpine/Dockerfile)
+-	[`5.5.4`, `5.5`, `5` (*5.5/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/600fd5c682b63cca400ef87fe7738d752f6ca0ed/5.5/Dockerfile)
+-	[`5.5.4-alpine`, `5.5-alpine`, `5-alpine` (*5.5/alpine/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/f02cef1654e7c5cdd46411b6dbe351e7fcb6422c/5.5/alpine/Dockerfile)
+-	[`6.3.0`, `6.3` (*6.3/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/600fd5c682b63cca400ef87fe7738d752f6ca0ed/6.3/Dockerfile)
+-	[`6.3.0-alpine`, `6.3-alpine` (*6.3/alpine/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/f02cef1654e7c5cdd46411b6dbe351e7fcb6422c/6.3/alpine/Dockerfile)
+-	[`6.4.2`, `6.4` (*6.4/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/600fd5c682b63cca400ef87fe7738d752f6ca0ed/6.4/Dockerfile)
+-	[`6.4.2-alpine`, `6.4-alpine` (*6.4/alpine/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/f02cef1654e7c5cdd46411b6dbe351e7fcb6422c/6.4/alpine/Dockerfile)
+-	[`6.5.1`, `6.5` (*6.5/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/600fd5c682b63cca400ef87fe7738d752f6ca0ed/6.5/Dockerfile)
+-	[`6.5.1-alpine`, `6.5-alpine` (*6.5/alpine/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/f02cef1654e7c5cdd46411b6dbe351e7fcb6422c/6.5/alpine/Dockerfile)
+-	[`6.6.0`, `6.6`, `6`, `latest` (*6.6/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/600fd5c682b63cca400ef87fe7738d752f6ca0ed/6.6/Dockerfile)
+-	[`6.6.0-alpine`, `6.6-alpine`, `6-alpine`, `alpine` (*6.6/alpine/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/c61a0c9b012c7313c2b5d0d97ddc06693270b734/6.6/alpine/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/solr`)](https://github.com/docker-library/official-images/blob/master/library/solr). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fsolr).
+# Quick reference
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/solr/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/solr/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+-	**Where to get help**:  
+	[the Solr Community](https://lucene.apache.org/solr/community.html)
+
+-	**Where to file issues**:  
+	[https://github.com/docker-solr/docker-solr/issues](https://github.com/docker-solr/docker-solr/issues)
+
+-	**Maintained by**:  
+	[the Solr Community](https://github.com/docker-solr/docker-solr)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/solr/` directory](https://github.com/docker-library/repo-info/blob/master/repos/solr) ([history](https://github.com/docker-library/repo-info/commits/master/repos/solr))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images PRs with label `library/solr`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fsolr)  
+	[official-images repo's `library/solr` file](https://github.com/docker-library/official-images/blob/master/library/solr) ([history](https://github.com/docker-library/official-images/commits/master/library/solr))
+
+-	**Source of this description**:  
+	[docs repo's `solr/` directory](https://github.com/docker-library/docs/tree/master/solr) ([history](https://github.com/docker-library/docs/commits/master/solr))
+
+-	**Supported Docker versions**:  
+	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Solr?
 
@@ -236,23 +259,3 @@ Licensed under the Apache License, Version 2.0 (the "License"); you may not use 
 	      http://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
-
-# Supported Docker versions
-
-This image is officially supported on Docker version 17.03.1-ce.
-
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Issues
-
-Please report issues with this docker image on this [Github project](https://github.com/docker-solr/docker-solr).
-
-For general questions about Solr, see the [Community information](http://lucene.apache.org/solr/resources.html#community), in particular the solr-user mailing list.
-
-## Contributing
-
-If you want to contribute to Solr, see the [Solr Resources](http://lucene.apache.org/solr/resources.html#community).

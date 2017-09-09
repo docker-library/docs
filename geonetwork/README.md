@@ -21,9 +21,30 @@ WARNING:
 -	[`3.2.1`, `3.2`, `latest` (*3.2.1/Dockerfile*)](https://github.com/geonetwork/docker-geonetwork/blob/507a1d8b02f15615566f7ac45662dbf3bc4d3649/3.2.1/Dockerfile)
 -	[`3.2.1-postgres`, `3.2-postgres`, `postgres` (*3.2.1/postgres/Dockerfile*)](https://github.com/geonetwork/docker-geonetwork/blob/507a1d8b02f15615566f7ac45662dbf3bc4d3649/3.2.1/postgres/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/geonetwork`)](https://github.com/docker-library/official-images/blob/master/library/geonetwork). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fgeonetwork).
+# Quick reference
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/geonetwork/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/geonetwork/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+-	**Where to file issues**:  
+	[https://github.com/geonetwork/docker-geonetwork/issues](https://github.com/geonetwork/docker-geonetwork/issues)
+
+-	**Maintained by**:  
+	[GeoNetwork opensource](https://github.com/geonetwork/docker-geonetwork)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/geonetwork/` directory](https://github.com/docker-library/repo-info/blob/master/repos/geonetwork) ([history](https://github.com/docker-library/repo-info/commits/master/repos/geonetwork))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images PRs with label `library/geonetwork`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fgeonetwork)  
+	[official-images repo's `library/geonetwork` file](https://github.com/docker-library/official-images/blob/master/library/geonetwork) ([history](https://github.com/docker-library/official-images/commits/master/library/geonetwork))
+
+-	**Source of this description**:  
+	[docs repo's `geonetwork/` directory](https://github.com/docker-library/docs/tree/master/geonetwork) ([history](https://github.com/docker-library/docs/commits/master/geonetwork))
+
+-	**Supported Docker versions**:  
+	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is GeoNetwork?
 
@@ -79,9 +100,9 @@ If you want the data directory to live beyond restarts, or even destruction of t
 $ docker run --name some-geonetwork -d -p 8080:8080 -e DATA_DIR=/var/lib/geonetwork_data -v /host/geonetwork-docker:/var/lib/geonetwork_data geonetwork
 ```
 
-## ... via [`docker-compose`](https://github.com/docker/compose)
+## ... via [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/) or [`docker-compose`](https://github.com/docker/compose)
 
-Example `docker-compose.yml` for `geonetwork`:
+Example `stack.yml` for `geonetwork`:
 
 ```yaml
 # GeoNetwork
@@ -91,7 +112,7 @@ Example `docker-compose.yml` for `geonetwork`:
 # Default user: admin
 # Default password: admin
 
-version: '2'
+version: '3.1'
 services:
 
     geonetwork:
@@ -101,10 +122,15 @@ services:
       environment:
           DATA_DIR: /var/lib/geonetwork_data
       volumes:
-         - "/host/geonetwork-docker:/var/lib/geonetwork_data"
+         - geonetwork:/var/lib/geonetwork_data
+
+volumes:
+    geonetwork:
 ```
 
-Run `docker-compose up`, wait for it to initialize completely, and visit `http://localhost:8080/geonetwork` or `http://host-ip:8080/geonetwork`.
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/54359bd26c41e63c6e50ccd338b5a18d8b572c60/geonetwork/stack.yml)
+
+Run `docker stack deploy -c stack.yml geonetwork` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080/geonetwork`, `http://localhost:8080/geonetwork`, or `http://host-ip:8080/geonetwork` (as appropriate).
 
 ## Default credentials
 
@@ -159,29 +185,3 @@ $ docker run --name geonetwork -d -p 8080:8080 -e POSTGRES_DB_HOST=192.168.1.10 
 # License
 
 View [license information](http://www.geonetwork-opensource.org/manuals/trunk/eng/users/overview/license.html) for the software contained in this image.
-
-# Supported Docker versions
-
-This image is officially supported on Docker version 17.03.1-ce.
-
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/geonetwork/docker-geonetwork/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/geonetwork/docker-geonetwork/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`geonetwork/` directory](https://github.com/docker-library/docs/tree/master/geonetwork) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

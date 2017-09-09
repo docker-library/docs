@@ -1,0 +1,1 @@
+[Odoo](%%GITHUB-REPO%%)

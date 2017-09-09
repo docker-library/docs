@@ -16,19 +16,40 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`17.04.0-ce-rc2`, `17.04.0-ce`, `17.04.0`, `17.04-rc`, `rc` (*17.04-rc/Dockerfile*)](https://github.com/docker-library/docker/blob/47df35c317a61dfea5394b6edb4a44576fc91a6d/17.04-rc/Dockerfile)
--	[`17.04.0-ce-rc2-dind`, `17.04.0-ce-dind`, `17.04.0-dind`, `17.04-rc-dind`, `rc-dind` (*17.04-rc/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/e9c09260bfaea5199c6c053a83fc46564aa14990/17.04-rc/dind/Dockerfile)
--	[`17.04.0-ce-rc2-git`, `17.04.0-ce-git`, `17.04.0-git`, `17.04-rc-git`, `rc-git` (*17.04-rc/git/Dockerfile*)](https://github.com/docker-library/docker/blob/e9c09260bfaea5199c6c053a83fc46564aa14990/17.04-rc/git/Dockerfile)
--	[`17.03.1-ce`, `17.03.1`, `17.03`, `17`, `latest`, `stable` (*17.03/Dockerfile*)](https://github.com/docker-library/docker/blob/91d454d113abfb2328c88bbd48b81e495605e809/17.03/Dockerfile)
--	[`17.03.1-ce-dind`, `17.03.1-dind`, `17.03-dind`, `17-dind`, `dind`, `stable-dind` (*17.03/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/bf822e2b9b4f755156b825444562c9865f22557f/17.03/dind/Dockerfile)
--	[`17.03.1-ce-git`, `17.03.1-git`, `17.03-git`, `17-git`, `git`, `stable-git` (*17.03/git/Dockerfile*)](https://github.com/docker-library/docker/blob/bf822e2b9b4f755156b825444562c9865f22557f/17.03/git/Dockerfile)
--	[`1.13.1`, `1.13` (*1.13/Dockerfile*)](https://github.com/docker-library/docker/blob/50ec917e1b7601d655daee8893567e8cfd213248/1.13/Dockerfile)
--	[`1.13.1-dind`, `1.13-dind` (*1.13/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/b202ec7e529f5426e2ad7e8c0a8b82cacd406573/1.13/dind/Dockerfile)
--	[`1.13.1-git`, `1.13-git` (*1.13/git/Dockerfile*)](https://github.com/docker-library/docker/blob/b202ec7e529f5426e2ad7e8c0a8b82cacd406573/1.13/git/Dockerfile)
+-	[`17.09.0-ce-rc1`, `17.09.0-ce`, `17.09.0`, `17.09-rc`, `rc`, `test` (*17.09-rc/Dockerfile*)](https://github.com/docker-library/docker/blob/ce8784112e81f724c96dae8272dd7367d712f3e9/17.09-rc/Dockerfile)
+-	[`17.09.0-ce-rc1-dind`, `17.09.0-ce-dind`, `17.09.0-dind`, `17.09-rc-dind`, `rc-dind`, `test-dind` (*17.09-rc/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/ce8784112e81f724c96dae8272dd7367d712f3e9/17.09-rc/dind/Dockerfile)
+-	[`17.09.0-ce-rc1-git`, `17.09.0-ce-git`, `17.09.0-git`, `17.09-rc-git`, `rc-git`, `test-git` (*17.09-rc/git/Dockerfile*)](https://github.com/docker-library/docker/blob/ce8784112e81f724c96dae8272dd7367d712f3e9/17.09-rc/git/Dockerfile)
+-	[`17.07.0-ce`, `17.07.0`, `17.07`, `17`, `edge`, `latest` (*17.07/Dockerfile*)](https://github.com/docker-library/docker/blob/a8f8fa1b57349cc22c80e7d6cbbdb512ffee2bd2/17.07/Dockerfile)
+-	[`17.07.0-ce-dind`, `17.07.0-dind`, `17.07-dind`, `17-dind`, `edge-dind`, `dind` (*17.07/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/a8f8fa1b57349cc22c80e7d6cbbdb512ffee2bd2/17.07/dind/Dockerfile)
+-	[`17.07.0-ce-git`, `17.07.0-git`, `17.07-git`, `17-git`, `edge-git`, `git` (*17.07/git/Dockerfile*)](https://github.com/docker-library/docker/blob/a8f8fa1b57349cc22c80e7d6cbbdb512ffee2bd2/17.07/git/Dockerfile)
+-	[`17.06.2-ce`, `17.06.2`, `17.06`, `stable` (*17.06/Dockerfile*)](https://github.com/docker-library/docker/blob/b33b5bffb560d4e4148506860d7c6b393315e339/17.06/Dockerfile)
+-	[`17.06.2-ce-dind`, `17.06.2-dind`, `17.06-dind`, `stable-dind` (*17.06/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/e68e4e6ec06c055a95d441144b0e34d0872f2665/17.06/dind/Dockerfile)
+-	[`17.06.2-ce-git`, `17.06.2-git`, `17.06-git`, `stable-git` (*17.06/git/Dockerfile*)](https://github.com/docker-library/docker/blob/e68e4e6ec06c055a95d441144b0e34d0872f2665/17.06/git/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/docker`)](https://github.com/docker-library/official-images/blob/master/library/docker). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fdocker).
+# Quick reference
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/docker/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/docker/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+-	**Where to file issues**:  
+	[https://github.com/docker-library/docker/issues](https://github.com/docker-library/docker/issues)
+
+-	**Maintained by**:  
+	[Tianon (of the Docker Project)](https://github.com/docker-library/docker)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/docker/` directory](https://github.com/docker-library/repo-info/blob/master/repos/docker) ([history](https://github.com/docker-library/repo-info/commits/master/repos/docker))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images PRs with label `library/docker`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fdocker)  
+	[official-images repo's `library/docker` file](https://github.com/docker-library/official-images/blob/master/library/docker) ([history](https://github.com/docker-library/official-images/commits/master/library/docker))
+
+-	**Source of this description**:  
+	[docs repo's `docker/` directory](https://github.com/docker-library/docs/tree/master/docker) ([history](https://github.com/docker-library/docs/commits/master/docker))
+
+-	**Supported Docker versions**:  
+	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Docker in Docker?
 
@@ -53,7 +74,7 @@ If you are still convinced that you need Docker-in-Docker and not just access to
 **IMPORTANT:** this image defaults to `--storage-driver=vfs`, which will be very slow and inefficient (but is the only driver which is guaranteed to work regardless of your underlying filesystem). Which driver you should use varies depending on your needs, but a good rule of thumb is that your DinD instance should be using the same driver as your host (which can be seen under `Storage Driver` in the output of `docker info`). See the "Custom daemon flags" section below for how to specify your storage driver.
 
 ```console
-$ docker run --privileged --name some-docker -d docker:1.8-dind
+$ docker run --privileged --name some-docker -d docker:stable-dind
 ```
 
 **Note:** `--privileged` is required for Docker-in-Docker to function properly, but it should be used with care as it provides full access to the host environment, as explained [in the relevant section of the Docker documentation](https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities).
@@ -63,88 +84,108 @@ This image includes `EXPOSE 2375` (the Docker port), so standard container linki
 ## Connect to it from a second container
 
 ```console
-$ docker run --rm --link some-docker:docker docker:1.7 version
-Client version: 1.7.1
-Client API version: 1.19
-Go version (client): go1.4.2
-Git commit (client): 786b29d
-OS/Arch (client): linux/amd64
-Server version: 1.8.1
-Server API version: 1.20
-Go version (server): go1.4.2
-Git commit (server): d12ea79
-OS/Arch (server): linux/amd64
-```
-
-```console
-$ docker run -it --rm --link some-docker:docker docker:1.8 sh
-/ # docker version
+$ docker run --rm --link some-docker:docker docker:edge version
 Client:
- Version:      1.8.1
- API version:  1.20
- Go version:   go1.4.2
- Git commit:   d12ea79
- Built:        Thu Aug 13 02:49:29 UTC 2015
+ Version:      17.05.0-ce
+ API version:  1.27 (downgraded from 1.29)
+ Go version:   go1.7.5
+ Git commit:   89658be
+ Built:        Fri May  5 15:36:11 2017
  OS/Arch:      linux/amd64
 
 Server:
- Version:      1.8.1
- API version:  1.20
- Go version:   go1.4.2
- Git commit:   d12ea79
- Built:        Thu Aug 13 02:49:29 UTC 2015
+ Version:      17.03.1-ce
+ API version:  1.27 (minimum version 1.12)
+ Go version:   go1.7.5
+ Git commit:   c6d412e
+ Built:        Tue Mar 28 00:40:02 2017
  OS/Arch:      linux/amd64
+ Experimental: false
+```
+
+```console
+$ docker run -it --rm --link some-docker:docker docker:edge sh
+/ # docker version
+Client:
+ Version:      17.05.0-ce
+ API version:  1.27 (downgraded from 1.29)
+ Go version:   go1.7.5
+ Git commit:   89658be
+ Built:        Fri May  5 15:36:11 2017
+ OS/Arch:      linux/amd64
+
+Server:
+ Version:      17.03.1-ce
+ API version:  1.27 (minimum version 1.12)
+ Go version:   go1.7.5
+ Git commit:   c6d412e
+ Built:        Tue Mar 28 00:40:02 2017
+ OS/Arch:      linux/amd64
+ Experimental: false
 ```
 
 ```console
 $ docker run --rm --link some-docker:docker docker info
 Containers: 0
+ Running: 0
+ Paused: 0
+ Stopped: 0
 Images: 0
+Server Version: 17.03.1-ce
 Storage Driver: vfs
-Execution Driver: native-0.2
 Logging Driver: json-file
-Kernel Version: 4.0.9-gentoo
-Operating System: Alpine Linux v3.2 (containerized)
+Cgroup Driver: cgroupfs
+Plugins: 
+ Volume: local
+ Network: bridge host macvlan null overlay
+Swarm: inactive
+Runtimes: runc
+Default Runtime: runc
+Init Binary: docker-init
+containerd version: 4ab9917febca54791c5f071a9d1f404867857fcc
+runc version: 54296cf40ad8143b62dbcaa1d90e520a2136ddfe
+init version: 949e6fa
+Security Options:
+ seccomp
+  Profile: default
+Kernel Version: 4.4.63-gentoo
+Operating System: Alpine Linux v3.5 (containerized)
+OSType: linux
+Architecture: x86_64
 CPUs: 8
 Total Memory: 31.4 GiB
-Name: 4f19ef15a373
-ID: 3GTC:FH6T:4G5U:7NF4:GM77:JGYU:BOKS:XFCY:H3IQ:JDJ5:X73Z:2K2K
+Name: 393376fdc461
+ID: FDP3:4GDT:L2WP:D4CC:UAW5:RHNA:4Z4G:WQYY:YWBE:7RER:LV7E:USY5
+Docker Root Dir: /var/lib/docker
+Debug Mode (client): false
+Debug Mode (server): false
+Registry: https://index.docker.io/v1/
 WARNING: bridge-nf-call-iptables is disabled
 WARNING: bridge-nf-call-ip6tables is disabled
-```
-
-```console
-$ docker run --rm --link some-docker:docker docker:git build https://github.com/docker-library/hello-world.git
-Sending build context to Docker daemon 132.1 kB
-Step 0 : FROM scratch
- ---> 
-Step 1 : COPY hello /
- ---> 29bef505052d
-Removing intermediate container f98aab888906
-Step 2 : CMD /hello
- ---> Running in a735b4037032
- ---> 3c2b1350a3c4
-Removing intermediate container a735b4037032
-Successfully built 3c2b1350a3c4
+Experimental: false
+Insecure Registries:
+ 127.0.0.0/8
+Live Restore Enabled: false
 ```
 
 ```console
 $ docker run --rm -v /var/run/docker.sock:/var/run/docker.sock docker version
 Client:
- Version:      1.8.1
- API version:  1.20
- Go version:   go1.4.2
- Git commit:   d12ea79
- Built:        Thu Aug 13 02:49:29 UTC 2015
+ Version:      17.05.0-ce
+ API version:  1.28 (downgraded from 1.29)
+ Go version:   go1.7.5
+ Git commit:   89658be
+ Built:        Fri May  5 15:36:11 2017
  OS/Arch:      linux/amd64
 
 Server:
- Version:      1.9.0-dev
- API version:  1.21
- Go version:   go1.4.2
- Git commit:   7e3088c-dirty
- Built:        Tue Aug 18 19:53:53 UTC 2015
+ Version:      17.04.0-ce
+ API version:  1.28 (minimum version 1.12)
+ Go version:   go1.8
+ Git commit:   4845c56
+ Built:        Thu Apr 27 07:51:43 2017
  OS/Arch:      linux/amd64
+ Experimental: false
 ```
 
 ## Custom daemon flags
@@ -174,29 +215,3 @@ The `-v /my/own/var-lib-docker:/var/lib/docker` part of the command mounts the `
 # License
 
 View [license information](https://github.com/docker/docker/blob/eb7b2ed6bbe3fbef588116d362ce595d6e35fc43/LICENSE) for the software contained in this image.
-
-# Supported Docker versions
-
-This image is officially supported on Docker version 17.03.1-ce.
-
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/docker/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/docker-library/docker/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`docker/` directory](https://github.com/docker-library/docs/tree/master/docker) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

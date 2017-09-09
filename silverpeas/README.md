@@ -16,11 +16,32 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.0-alpha2`, `latest` (*Dockerfile*)](https://github.com/Silverpeas/docker-silverpeas-prod/blob/77c7c86d82aeee270cf23ef1272cfd95767df3c4/Dockerfile)
+-	[`6.0-beta1`, `latest` (*Dockerfile*)](https://github.com/Silverpeas/docker-silverpeas-prod/blob/03bd2800e83bf262d07b53f067758115fa6f05fc/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/silverpeas`)](https://github.com/docker-library/official-images/blob/master/library/silverpeas). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fsilverpeas).
+# Quick reference
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/silverpeas/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/silverpeas/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+-	**Where to get help**:  
+	[the Silverpeas user mailing list](https://groups.google.com/forum/#!forum/silverpeas-users)
+
+-	**Where to file issues**:  
+	[https://github.com/Silverpeas/docker-silverpeas-prod/issues](https://github.com/Silverpeas/docker-silverpeas-prod/issues)
+
+-	**Maintained by**:  
+	[Silverpeas](https://github.com/Silverpeas/docker-silverpeas-prod)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/silverpeas/` directory](https://github.com/docker-library/repo-info/blob/master/repos/silverpeas) ([history](https://github.com/docker-library/repo-info/commits/master/repos/silverpeas))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images PRs with label `library/silverpeas`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fsilverpeas)  
+	[official-images repo's `library/silverpeas` file](https://github.com/docker-library/official-images/blob/master/library/silverpeas) ([history](https://github.com/docker-library/official-images/commits/master/library/silverpeas))
+
+-	**Source of this description**:  
+	[docs repo's `silverpeas/` directory](https://github.com/docker-library/docs/tree/master/silverpeas) ([history](https://github.com/docker-library/docs/commits/master/silverpeas))
+
+-	**Supported Docker versions**:  
+	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Silverpeas
 
@@ -42,7 +63,7 @@ Docker images of Silverpeas require one of the following database system in orde
 
 The Silverpeas images support actually only the two first database systems; because of the non-free licensing issues with the Oracle JDBC drivers, Silverpeas cannot include these drivers by default and consequently it cannot use transparently an Oracle database system as a persistence backend.
 
-For the same reasons, the Docker images of Silverpeas aren't shipped with the Oracle JVM but with the default OpenJDK. Silverpeas uses the Wildfly application server as runtime.
+For the same reasons, the Docker images of Silverpeas aren't shipped with the Oracle JVM but with OpenJDK. Silverpeas uses the Wildfly application server as runtime.
 
 The Silverpeas images use the following environment variables to set the database access parameters:
 
@@ -58,12 +79,14 @@ These environment variables can be also defined as properties into the Silverpea
 
 In [Docker Hub](https://hub.docker.com/), no Docker images of Microsoft SQLServer are currently available, but you will find a lot of images of PostgreSQL. For example, with an [official PostgreSQL docker image](https://hub.docker.com/_/postgres/), you can start a PostgreSQL instance initialized with a superuser `postgres` with as password `mysecretpassword`:
 
-	$ docker run --name postgresql -d \
-	    -e POSTGRES_PASSWORD="mysecretpassword" \
-	    -v postgresql-data:/var/lib/postgresql/data \
-	    postgres:9.6
+```console
+$ docker run --name postgresql -d \
+    -e POSTGRES_PASSWORD="mysecretpassword" \
+    -v postgresql-data:/var/lib/postgresql/data \
+    postgres:9.6
+```
 
-We recommend strongly to mount the directory with the database file on the host so the data won't be lost when upgrading PostgreSQL to a newer version (a Data Volume Container can be used instead). For any information how to start a PostgreSQL container, you can refer its [documentation]((https://hub.docker.com/_/postgres/).
+We recommend strongly to mount the directory with the database file on the host so the data won't be lost when upgrading PostgreSQL to a newer version (a Data Volume Container can be used instead). For any information how to start a PostgreSQL container, you can refer its [documentation](https://hub.docker.com/_/postgres/).
 
 Once the database system is running, a database for Silverpeas has to be created and a user with administrative rights on this database (and only on this database) should be added; it is recommended for a security reason to create a dedicated user account in the database for each application and therefore for Silverpeas. In this document, and by default, a database `Silverpeas` and a user `silverpeas` for that database are created.
 
@@ -71,42 +94,73 @@ Once the database system is running, a database for Silverpeas has to be created
 
 Finally, a Silverpeas instance can be started by specifying the required database access parameters with the environment variables. In the example, the database is named `Silverpeas` and the priviledged user is `silverpeas` with as password `thesilverpeaspassword`:
 
-	$ docker run --name silverpeas -p 8080:8000 -d \
-	    -e DB_NAME="Silverpeas" \
-	    -e DB_USER="silverpeas" \
-	    -e DB_PASSWORD="thesilverpeaspassword" \
-	    -v silverpeas-log:/opt/silverpeas/log \
-	    -v silverpeas-data:/opt/silverpeas/data \
-	    --link postgresql:database \
-	    silverpeas
+```console
+$ docker run --name silverpeas -p 8080:8000 -d \
+    -e DB_NAME="Silverpeas" \
+    -e DB_USER="silverpeas" \
+    -e DB_PASSWORD="thesilverpeaspassword" \
+    -v silverpeas-log:/opt/silverpeas/log \
+    -v silverpeas-data:/opt/silverpeas/data \
+    --link postgresql:database \
+    silverpeas
+```
 
-Here, as the PostgreSQL database is linked under the alias `database`, we don't have to explicitly indicate its hostname with the `DB_SERVER` environment variable. The Silverpeas images expose the 8000 port and here this port is mapped to the 8080 port of the host; Silverpeas is then accessible at `http://localhost:8080/silverpeas`. You can sign in Silverpeas with the administrator account `SilverAdmin` and with as password `SilverAdmin`.
+By default, `database` is the default hostname used by Silverpeas for its persistence backend. So, as the PostgreSQL database is linked here under the alias `database`, we don't have to explicitly indicate its hostname with the `DB_SERVER` environment variable. The Silverpeas images expose the 8000 port and here this port is mapped to the 8080 port of the host; Silverpeas is then accessible at `http://localhost:8080/silverpeas`. You can sign in Silverpeas with the administrator account `SilverAdmin` and with as password `SilverAdmin`.
 
-By default, some volumes are created inside the container, so that we can access them in the host.(Refers the [Docker Documentation](https://docs.docker.com/engine/tutorials/dockervolumes/#locating-a-volume) to locate them.) Among them `/opt/silverpeas/log` and `/opt/silverpeas/data`: the first volume contains the logs produced by Silverpeas whereas the second volume contains all the data that are created and managed by the users in Silverpeas. Because the latter has already a directories structure created at image creation, a host directory cannot be mounted into the container at `opt/silverpeas/data` without losing the volume's content (the mount point overlays the pre-existing content of the volume). In our example, in order to easily locate the two volumes, we label them explicitly with respectively the labels `silverpeas-log` and `silverpeas-data`. (Using a [Data Volume Container](https://docs.docker.com/engine/userguide/containers/dockervolumes/) to map `/opt/silverpeas/log` and `/opt/silverpeas/data` is a better solution.)
+By default, some volumes are created inside the container, so that we can access them in the host. (Refers the [Docker Documentation](https://docs.docker.com/engine/tutorials/dockervolumes/#locating-a-volume) to locate them.) Among them `/opt/silverpeas/log` and `/opt/silverpeas/data`: the first volume contains the logs produced by Silverpeas whereas the second volume contains all the data that are created and managed by the users in Silverpeas. Because the latter has already a directories structure created at image creation, a host directory cannot be mounted into the container at `opt/silverpeas/data` without losing the volume's content (the mount point overlays the pre-existing content of the volume). In our example, in order to easily locate the two volumes, we label them explicitly with respectively the labels `silverpeas-log` and `silverpeas-data`. (Using a [Data Volume Container](https://docs.docker.com/engine/userguide/containers/dockervolumes/) to map `/opt/silverpeas/log` and `/opt/silverpeas/data` is a better solution.)
+
+Silverpeas takes some time to start, so we recommend you to glance at the logs the complete starting of Silverpeas (see the section about the logs).
 
 ### Start a Silverpeas instance with a finer configuration
 
-The Silverpeas global configuration is defined in the `/opt/silverpeas/configuration/config.properties` file whose a sample can be found [here](https://raw.githubusercontent.com/Silverpeas/Silverpeas-Distribution/master/src/main/dist/configuration/sample_config.properties) or in the container directory `/opt/silverpeas/configuration/`. You can explicitly create the `config.properties` file with, additionally to the database access parameters, your peculiar configuration parameters and then start a Silverpeas instance with this configuration file:
+The Silverpeas global configuration is defined in the `/opt/silverpeas/configuration/config.properties` file whose a sample can be found [here](https://raw.githubusercontent.com/Silverpeas/Silverpeas-Distribution/master/src/main/dist/configuration/sample_config.properties) or in the container directory `/opt/silverpeas/configuration/`. You can explicitly create the `config.properties` file with, additionally to the database access parameters (don't forget in that case to specify the `DB_SERVER` property with as value `database`), your peculiar configuration parameters and then start a Silverpeas instance with this configuration file:
 
-	$ docker run --name silverpeas -p 8080:8000 -d \
-	    -v /etc/silverpeas/config.properties:/opt/silverpeas/configuration/config.properties
-	    -v silverpeas-log:/opt/silverpeas/log \
-	    -v silverpeas-data:/opt/silverpeas/data \
-	    --link postgresql:database \
-	    silverpeas
+```console
+$ docker run --name silverpeas -p 8080:8000 -d \
+    -v /etc/silverpeas/config.properties:/opt/silverpeas/configuration/config.properties
+    -v silverpeas-log:/opt/silverpeas/log \
+    -v silverpeas-data:/opt/silverpeas/data \
+    --link postgresql:database \
+    silverpeas
+```
 
 where `/etc/silverpeas/config.properties` is your own configuration file on the host. For security reason, we strongly recommend to set explicitly the administrator's credentials with the properties `SILVERPEAS_ADMIN_LOGIN` and `SILVERPEAS_ADMIN_PASSWORD` in the `config.properties` file. (Don't forget to set also the administrator email address with the property `SILVERPEAS_ADMIN_EMAIL`.)
+
+Below an example of such a configuration file:
+
+	SILVERPEAS_ADMIN_LOGIN=SilverAdmin
+	SILVERPEAS_ADMIN_PASSWORD=theadministratorpassword
+	SILVERPEAS_ADMIN_EMAIM=admin@foo.com
+	
+	DB_SERVERTYPE=POSTGRESQL
+	DB_SERVER=database
+	DB_NAME=Silverpeas
+	DB_USER=silverpeas
+	DB_PASSWORD=thesilverpeaspassword
+	
+	CONVERTER_HOST=libreoffice
+	CONVERTER_PORT=8997
+	
+	SMTP_SERVER=smtp.foo.com
+	SMTP_AUTHENTICATION=true
+	SMTP_DEBUG=false
+	SMTP_PORT=465
+	SMTP_USER=silverpeas
+	SMTP_PASSWORD=thesmtpsilverpeaspassword
+	SMTP_SECURE=true
 
 ## Start a Silverpeas instance with a database on the host
 
 For a database system running on the host (or on a remote host) with 192.168.1.14 as IP address, you have to specify this host both to the container at starting and to Silverpeas by defining it into its global configuration file:
 
-	$ docker run --name silverpeas -p 8080:8000 -d \
-	    --add-host=database:192.168.1.14 \
-	    -v /etc/silverpeas/config.properties:/opt/silverpeas/configuration/config.properties \
-	    -v silverpeas-log:/opt/silverpeas/log \
-	    -v silverpeas-data:/opt/silverpeas/data \
-	    silverpeas
+```console
+$ docker run --name silverpeas -p 8080:8000 -d \
+    --add-host=database:192.168.1.14 \
+    -v /etc/silverpeas/config.properties:/opt/silverpeas/configuration/config.properties \
+    -v silverpeas-log:/opt/silverpeas/log \
+    -v silverpeas-data:/opt/silverpeas/data \
+    silverpeas
+```
 
 where `database` is the hostname referred by the `DB_SERVER` parameter in your `/etc/silverpeas/config.properties` file as the host running the database system and that is mapped here to the actual IP address of this host. The hostname is added in the `/etc/hosts` file in the container.
 
@@ -136,36 +190,42 @@ Beside these directories, according to your specific needs, custom configuration
 
 The directories `/opt/silverpeas/log`, `/opt/silverpeas/data`, and `/opt/silverpeas/xmlcomponents/workflows` are all defined as volumes in the Docker image.
 
-All these different kind of data have to be consistent for a given state of Silverpeas; they form a coherent whole. Then, defining a Data Volume Container to gather all of these volumes is a better solution over multiple shared-storage volume definitions. You can, with a such Data Volume Container, backup, restore or migrate more easily the full set of the data of Silverpeas.
+All these different kind of data have to be consistent for a given state of Silverpeas; they form a coherent whole set. Then, defining a Data Volume Container to gather all of these volumes is a better solution over multiple shared-storage volume definitions. You can, with a such Data Volume Container, backup, restore or migrate more easily the full set of the data of Silverpeas.
 
 To define a Data Volume Container for Silverpeas, for example:
 
-	$ docker create --name silverpeas-store \
-	    -v silverpeas-data:/opt/silverpeas/data \
-	    -v silverpeas-log:/opt/silverpeas/log \
-	    -v silverpeas-workflows:/opt/silverpeas/xmlcomponents/workflows \
-	    -v /etc/silverpeas/config.properties:/opt/silverpeas/configuration/properties \
-	    silverpeas \
-	    /bin/true
+```console
+$ docker create --name silverpeas-store \
+    -v silverpeas-data:/opt/silverpeas/data \
+    -v silverpeas-log:/opt/silverpeas/log \
+    -v silverpeas-workflows:/opt/silverpeas/xmlcomponents/workflows \
+    -v /etc/silverpeas/config.properties:/opt/silverpeas/configuration/config.properties \
+    silverpeas \
+    /bin/true
+```
 
 Then to mount the volumes in the Silverpeas container:
 
-	$ docker run --name silverpeas -p 8080:8000 -d \
-	    --link postgresql:database \
-	    --volumes-from silverpeas-store \
-	    silverpeas
+```console
+$ docker run --name silverpeas -p 8080:8000 -d \
+    --link postgresql:database \
+    --volumes-from silverpeas-store \
+    silverpeas
+```
 
 If you have to customize the settings of Silverpeas or add, for example, a new database definition, then specify these settings with the Data Volume Container, so that they will be available to the next versions of Silverpeas which will be then configured correctly like your previous Silverpeas installation:
 
-	$ docker create --name silverpeas-store \
-	    -v silverpeas-data:/opt/silverpeas/data \
-	    -v silverpeas-log:/opt/silverpeas/log \
-	    -v silverpeas-properties:/opt/silverpeas/properties \
-	    -v /etc/silverpeas/config.properties:/opt/silverpeas/configuration/properties \
-	    -v /etc/silverpeas/CustomerSettings.xml:/opt/silverpeas/configuration/silverpeas/CustomerSettings.xml \
-	    -v /etc/silverpeas/my-datasource.cli:/opt/silverpeas/configuration/jboss/my-datasource.cli \
-	    silverpeas \
-	    /bin/true
+```console
+$ docker create --name silverpeas-store \
+    -v silverpeas-data:/opt/silverpeas/data \
+    -v silverpeas-log:/opt/silverpeas/log \
+    -v silverpeas-properties:/opt/silverpeas/properties \
+    -v /etc/silverpeas/config.properties:/opt/silverpeas/configuration/config.properties \
+    -v /etc/silverpeas/CustomerSettings.xml:/opt/silverpeas/configuration/silverpeas/CustomerSettings.xml \
+    -v /etc/silverpeas/my-datasource.cli:/opt/silverpeas/configuration/jboss/my-datasource.cli \
+    silverpeas \
+    /bin/true
+```
 
 # Document conversion
 
@@ -173,9 +233,11 @@ Some features in Silverpeas (export, preview, content visualization, ...) requir
 
 Once a Data Volume Container is created for Silverpeas as explained in the section above, you have to link it with the Docker image running LibreOffice as a daemon in order the program have access the documents to convert:
 
-	$ docker run --name libreoffice -d \
-	    --volumes-from silverpeas-store \
-	    xcgd/libreoffice
+```console
+$ docker run --name libreoffice -d \
+    --volumes-from silverpeas-store \
+    xcgd/libreoffice
+```
 
 Check the port at which the LibreOffice image is listening and then defines it in the Silverpeas configuration. In our example, `xcgd/libreoffice` listens by default the port 8997. The configuration parameters to communicate with LibreOffice are defined by the two following properties:
 
@@ -189,11 +251,13 @@ These properties have to be defined in the Silverpeas global configuration file 
 
 Then the Docker image of Silverpeas can be ran:
 
-	$ docker run --name silverpeas -p 8080:8000 -d \
-	    --link postgresql:database \
-	    --link libreoffice:libreoffice \
-	    --volumes-from silverpeas-store \
-	    silverpeas
+```console
+$ docker run --name silverpeas -p 8080:8000 -d \
+    --link postgresql:database \
+    --link libreoffice:libreoffice \
+    --volumes-from silverpeas-store \
+    silverpeas
+```
 
 # Logs
 
@@ -201,7 +265,11 @@ You can follow the activity of Silverpeas by watching the logs generated in the 
 
 The output of Wildfly is redirected into the container standard output and so it can be watched as following:
 
-	$ docker logs -f silverpeas
+```console
+$ docker logs -f silverpeas
+```
+
+Silverpeas takes some time to start, so we recommend you to glance at the logs for the complete starting of Silverpeas.
 
 # License
 
@@ -212,31 +280,3 @@ Silverpeas uses FLOSS softwares. These are (in a non exhaustive list):
 -	Libraries under the MIT license like JQuery and Angular JS.
 -	Libraries and applications under the Apache 2.0 license like the Apache Commons libraries and the Image Magick tool.
 -	Libraries and applications under the GPL/LGPL license like SWFTools, FlexPaper Flash GPL, LibreOffice, OpenJDK.
-
-# Supported Docker versions
-
-This image is officially supported on Docker version 17.03.1-ce.
-
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/Silverpeas/docker-silverpeas-prod/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-For general questions about Silverpeas, see our [user mailing list](https://groups.google.com/forum/#!forum/silverpeas-users).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/Silverpeas/docker-silverpeas-prod/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`silverpeas/` directory](https://github.com/docker-library/docs/tree/master/silverpeas) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

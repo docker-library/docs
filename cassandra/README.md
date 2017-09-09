@@ -16,14 +16,35 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.1.17`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/cassandra/blob/d83b850cd17bc9198876f8686197c730e29c7448/2.1/Dockerfile)
--	[`2.2.9`, `2.2`, `2` (*2.2/Dockerfile*)](https://github.com/docker-library/cassandra/blob/d83b850cd17bc9198876f8686197c730e29c7448/2.2/Dockerfile)
--	[`3.0.12`, `3.0` (*3.0/Dockerfile*)](https://github.com/docker-library/cassandra/blob/7ba44ab0fe6d8afdcad2ffe101303f13da20fff6/3.0/Dockerfile)
--	[`3.10`, `3`, `latest` (*3.10/Dockerfile*)](https://github.com/docker-library/cassandra/blob/d83b850cd17bc9198876f8686197c730e29c7448/3.10/Dockerfile)
+-	[`2.1.18`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/cassandra/blob/ca3c9df03cab318d34377bba0610c741253b0466/2.1/Dockerfile)
+-	[`2.2.10`, `2.2`, `2` (*2.2/Dockerfile*)](https://github.com/docker-library/cassandra/blob/ca3c9df03cab318d34377bba0610c741253b0466/2.2/Dockerfile)
+-	[`3.0.14`, `3.0` (*3.0/Dockerfile*)](https://github.com/docker-library/cassandra/blob/ca3c9df03cab318d34377bba0610c741253b0466/3.0/Dockerfile)
+-	[`3.11.0`, `3.11`, `3`, `latest` (*3.11/Dockerfile*)](https://github.com/docker-library/cassandra/blob/ca3c9df03cab318d34377bba0610c741253b0466/3.11/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/cassandra`)](https://github.com/docker-library/official-images/blob/master/library/cassandra). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fcassandra).
+# Quick reference
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/cassandra/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/cassandra/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+-	**Where to file issues**:  
+	[https://github.com/docker-library/cassandra/issues](https://github.com/docker-library/cassandra/issues)
+
+-	**Maintained by**:  
+	[the Docker Community](https://github.com/docker-library/cassandra)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/cassandra/` directory](https://github.com/docker-library/repo-info/blob/master/repos/cassandra) ([history](https://github.com/docker-library/repo-info/commits/master/repos/cassandra))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images PRs with label `library/cassandra`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fcassandra)  
+	[official-images repo's `library/cassandra` file](https://github.com/docker-library/official-images/blob/master/library/cassandra) ([history](https://github.com/docker-library/official-images/commits/master/library/cassandra))
+
+-	**Source of this description**:  
+	[docs repo's `cassandra/` directory](https://github.com/docker-library/docs/tree/master/cassandra) ([history](https://github.com/docker-library/docs/commits/master/cassandra))
+
+-	**Supported Docker versions**:  
+	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Cassandra?
 
@@ -99,7 +120,7 @@ $ docker run -it --link some-cassandra:cassandra --rm cassandra cqlsh cassandra
 
 ... where `some-cassandra` is the name of your original Cassandra Server container.
 
-More information about the CQL can be found in the [Cassandra documentation](https://cassandra.apache.org/doc/cql3/CQL.html).
+More information about the CQL can be found in the [Cassandra documentation](https://cassandra.apache.org/doc/latest/cql/index.html).
 
 ## Container shell access and viewing Cassandra logs
 
@@ -188,29 +209,3 @@ $ chcon -Rt svirt_sandbox_file_t /my/own/datadir
 ## No connections until Cassandra init completes
 
 If there is no database initialized when the container starts, then a default database will be created. While this is the expected behavior, this means that it will not accept incoming connections until such initialization completes. This may cause issues when using automation tools, such as `docker-compose`, which start several containers simultaneously.
-
-# Supported Docker versions
-
-This image is officially supported on Docker version 17.03.1-ce.
-
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/cassandra/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/docker-library/cassandra/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`cassandra/` directory](https://github.com/docker-library/docs/tree/master/cassandra) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

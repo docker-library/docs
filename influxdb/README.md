@@ -16,14 +16,35 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.1`, `1.1.4` (*influxdb/1.1/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/fcc2a1db0bcc7061b78bfd58b1da6df33bad2d30/influxdb/1.1/Dockerfile)
--	[`1.1-alpine`, `1.1.4-alpine` (*influxdb/1.1/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/fcc2a1db0bcc7061b78bfd58b1da6df33bad2d30/influxdb/1.1/alpine/Dockerfile)
--	[`1.2`, `1.2.2`, `latest` (*influxdb/1.2/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/97165ea663d6bf5fb06ceaeae5d7a179eb6855e7/influxdb/1.2/Dockerfile)
--	[`1.2-alpine`, `1.2.2-alpine`, `alpine` (*influxdb/1.2/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/97165ea663d6bf5fb06ceaeae5d7a179eb6855e7/influxdb/1.2/alpine/Dockerfile)
+-	[`1.2`, `1.2.4` (*influxdb/1.2/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/75787dfb82c3bc5f7ee04ffe7cb5acd3b26cc0e7/influxdb/1.2/Dockerfile)
+-	[`1.2-alpine`, `1.2.4-alpine` (*influxdb/1.2/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/75787dfb82c3bc5f7ee04ffe7cb5acd3b26cc0e7/influxdb/1.2/alpine/Dockerfile)
+-	[`1.3`, `1.3.5`, `latest` (*influxdb/1.3/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/75787dfb82c3bc5f7ee04ffe7cb5acd3b26cc0e7/influxdb/1.3/Dockerfile)
+-	[`1.3-alpine`, `1.3.5-alpine`, `alpine` (*influxdb/1.3/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/75787dfb82c3bc5f7ee04ffe7cb5acd3b26cc0e7/influxdb/1.3/alpine/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/influxdb`)](https://github.com/docker-library/official-images/blob/master/library/influxdb). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Finfluxdb).
+# Quick reference
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/influxdb/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/influxdb/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+-	**Where to file issues**:  
+	[https://github.com/influxdata/influxdata-docker/issues](https://github.com/influxdata/influxdata-docker/issues)
+
+-	**Maintained by**:  
+	[InfluxData](https://github.com/influxdata/influxdata-docker)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/influxdb/` directory](https://github.com/docker-library/repo-info/blob/master/repos/influxdb) ([history](https://github.com/docker-library/repo-info/commits/master/repos/influxdb))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images PRs with label `library/influxdb`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Finfluxdb)  
+	[official-images repo's `library/influxdb` file](https://github.com/docker-library/official-images/blob/master/library/influxdb) ([history](https://github.com/docker-library/official-images/commits/master/library/influxdb))
+
+-	**Source of this description**:  
+	[docs repo's `influxdb/` directory](https://github.com/docker-library/docs/tree/master/influxdb) ([history](https://github.com/docker-library/docs/commits/master/influxdb))
+
+-	**Supported Docker versions**:  
+	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
 
 # InfluxDB
 
@@ -40,7 +61,7 @@ InfluxDB is a time series database built from the ground up to handle high write
 The InfluxDB image exposes a shared volume under `/var/lib/influxdb`, so you can mount a host directory to that point to access persisted container data. A typical invocation of the container might be:
 
 ```console
-$ docker run -p 8083:8083 -p 8086:8086 \
+$ docker run -p 8086:8086 \
       -v $PWD:/var/lib/influxdb \
       influxdb
 ```
@@ -50,7 +71,7 @@ Modify `$PWD` to the directory where you want to store data associated with the 
 You can also have Docker control the volume mountpoint by using a named volume.
 
 ```console
-$ docker run -p 8083:8083 -p 8086:8086 \
+$ docker run -p 8086:8086 \
       -v influxdb:/var/lib/influxdb \
       influxdb
 ```
@@ -60,14 +81,14 @@ $ docker run -p 8083:8083 -p 8086:8086 \
 The following ports are important and are used by InfluxDB.
 
 -	8086 HTTP API port
--	8083 Administrator interface port
+-	8083 Administrator interface port, if it is enabled
 -	2003 Graphite support, if it is enabled
 
 The HTTP API port will be automatically exposed when using `docker run -P`.
 
 The administrator interface is not automatically exposed when using `docker run -P` and is disabled by default. The adminstrator interface requires that the web browser have access to InfluxDB on the same port in the container as from the web browser. Since `-P` exposes the HTTP port to the host on a random port, the administrator interface is not compatible with this setting.
 
-The administrator interface is deprecated as of 1.1.0 and will be removed in the future.
+The administrator interface is deprecated as of 1.1.0 and will be removed in 1.3.0.
 
 Find more about API Endpoints & Ports [here](https://docs.influxdata.com/influxdb/latest/concepts/api/).
 
@@ -114,6 +135,18 @@ docker run -p 8086:8086 -p 2003:2003 \
 ```
 
 See the [README on GitHub](https://github.com/influxdata/influxdb/blob/master/services/graphite/README.md) for more detailed documentation to set up the Graphite service. In order to take advantage of graphite templates, you should use a configuration file by outputting a default configuration file using the steps above and modifying the `[[graphite]]` section.
+
+### Administrator Interface
+
+The administrator interface is deprecated as of 1.1.0 and will be removed in 1.3.0. It is disabled by default. If needed, it can still be enabled by setting an environment variable like below:
+
+```console
+docker run -p 8086:8086 -p 8083:8083 \
+    -e INFLUXDB_ADMIN_ENABLED=true \
+    influxdb
+```
+
+To use the administrator interface, both the HTTP API and the administrator interface API's must be forwarded to the same port.
 
 ### HTTP API
 
@@ -166,29 +199,3 @@ To minimize image size, it's uncommon for additional related tools (such as `git
 # License
 
 View [license information](https://github.com/influxdata/influxdb/blob/master/LICENSE) for the software contained in this image.
-
-# Supported Docker versions
-
-This image is officially supported on Docker version 17.03.1-ce.
-
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/influxdata/influxdata-docker/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/influxdata/influxdata-docker/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`influxdb/` directory](https://github.com/docker-library/docs/tree/master/influxdb) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

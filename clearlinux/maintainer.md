@@ -1,0 +1,1 @@
+[Intel Corporation](%%GITHUB-REPO%%)

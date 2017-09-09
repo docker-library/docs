@@ -16,14 +16,35 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`v1.2.1`, `1.2.1`, `v1.2`, `1.2`, `morbier`, `latest` (*Dockerfile*)](https://github.com/containous/traefik-library-image/blob/5444b825df0cd3884956e5a5bf19d7d240ccb056/Dockerfile)
--	[`v1.2.1-alpine`, `1.2.1-alpine`, `v1.2-alpine`, `1.2-alpine`, `morbier-alpine` (*alpine/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/5444b825df0cd3884956e5a5bf19d7d240ccb056/alpine/Dockerfile)
--	[`v1.1.2`, `1.1.2`, `camembert` (*Dockerfile*)](https://github.com/containous/traefik-library-image/blob/3645f9dfbd417ee8dad608257c7aeec3a407711f/Dockerfile)
--	[`v1.1.2-alpine`, `1.1.2-alpine`, `camembert-alpine` (*alpine/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/3645f9dfbd417ee8dad608257c7aeec3a407711f/alpine/Dockerfile)
+-	[`v1.4.0-rc2`, `1.4.0-rc2`, `v1.4`, `1.4`, `roquefort` (*scratch/amd64/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/57f83af9d2719e5f25e6c769fd2640f973b519dc/scratch/amd64/Dockerfile)
+-	[`v1.4.0-rc2-alpine`, `1.4.0-rc2-alpine`, `v1.4-alpine`, `1.4-alpine`, `roquefort-alpine` (*alpine/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/57f83af9d2719e5f25e6c769fd2640f973b519dc/alpine/Dockerfile)
+-	[`v1.3.8`, `1.3.8`, `v1.3`, `1.3`, `raclette`, `latest` (*scratch/amd64/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/cfa3fa48bed342b86b143006e61d9bdf7db07901/scratch/amd64/Dockerfile)
+-	[`v1.3.8-alpine`, `1.3.8-alpine`, `v1.3-alpine`, `1.3-alpine`, `raclette-alpine`, `alpine` (*alpine/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/cfa3fa48bed342b86b143006e61d9bdf7db07901/alpine/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/traefik`)](https://github.com/docker-library/official-images/blob/master/library/traefik). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Ftraefik).
+# Quick reference
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/traefik/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/traefik/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+-	**Where to file issues**:  
+	[https://github.com/containous/traefik-library-image/issues](https://github.com/containous/traefik-library-image/issues)
+
+-	**Maintained by**:  
+	[the Træfik Project](https://github.com/containous/traefik-library-image)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/traefik/` directory](https://github.com/docker-library/repo-info/blob/master/repos/traefik) ([history](https://github.com/docker-library/repo-info/commits/master/repos/traefik))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images PRs with label `library/traefik`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Ftraefik)  
+	[official-images repo's `library/traefik` file](https://github.com/docker-library/official-images/blob/master/library/traefik) ([history](https://github.com/docker-library/official-images/commits/master/library/traefik))
+
+-	**Source of this description**:  
+	[docs repo's `traefik/` directory](https://github.com/docker-library/docs/tree/master/traefik) ([history](https://github.com/docker-library/docs/commits/master/traefik))
+
+-	**Supported Docker versions**:  
+	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/a6cc2c5f4bc6658168f2a0abbb0307acaefff80e/traefik/logo.png)
 
@@ -94,29 +115,3 @@ You can find the complete documentation [here](https://docs.traefik.io).
 # License
 
 View [license information](https://github.com/containous/traefik/blob/master/LICENSE.md) for the software contained in this image.
-
-# Supported Docker versions
-
-This image is officially supported on Docker version 17.03.1-ce.
-
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/containous/traefik-library-image/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/containous/traefik-library-image/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`traefik/` directory](https://github.com/docker-library/docs/tree/master/traefik) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

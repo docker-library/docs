@@ -18,11 +18,37 @@ WARNING:
 
 -	[`0.6.4` (*0.6.4/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/c087a27b5ec93445e89dc46f25af973f114f1399/0.6.4/Dockerfile)
 -	[`0.6.5` (*0.6.5/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/c087a27b5ec93445e89dc46f25af973f114f1399/0.6.5/Dockerfile)
--	[`0.7.0`, `latest` (*0.7.0/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/e0a91ac0bc931fca599d14c0593cc8e28c56a30d/0.7.0/Dockerfile)
+-	[`0.7.0` (*0.7.0/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/02af9417ae42bf6290b4b36c2188b1836f1017a8/0.7.0/Dockerfile)
+-	[`0.7.2` (*0.7.2/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/02af9417ae42bf6290b4b36c2188b1836f1017a8/0.7.2/Dockerfile)
+-	[`0.7.3` (*0.7.3/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/02af9417ae42bf6290b4b36c2188b1836f1017a8/0.7.3/Dockerfile)
+-	[`0.8.0` (*0.8.0/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/d1cbdce2b531e9223356efb14e828afa556e1f70/0.8.0/Dockerfile)
+-	[`0.8.1` (*0.8.1/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/9ddc187d94f68f2572e4d3b1e733c98c661d628b/0.8.1/Dockerfile)
+-	[`0.8.2`, `latest` (*0.8.2/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/0cbe9598ea742e5227a20012332400b0f96a0327/0.8.2/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/vault`)](https://github.com/docker-library/official-images/blob/master/library/vault). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fvault).
+# Quick reference
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/vault/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/vault/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+-	**Where to file issues**:  
+	[https://github.com/hashicorp/docker-vault/issues](https://github.com/hashicorp/docker-vault/issues)
+
+-	**Maintained by**:  
+	[HashiCorp](https://github.com/hashicorp/docker-vault)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/vault/` directory](https://github.com/docker-library/repo-info/blob/master/repos/vault) ([history](https://github.com/docker-library/repo-info/commits/master/repos/vault))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images PRs with label `library/vault`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fvault)  
+	[official-images repo's `library/vault` file](https://github.com/docker-library/official-images/blob/master/library/vault) ([history](https://github.com/docker-library/official-images/commits/master/library/vault))
+
+-	**Source of this description**:  
+	[docs repo's `vault/` directory](https://github.com/docker-library/docs/tree/master/vault) ([history](https://github.com/docker-library/docs/commits/master/vault))
+
+-	**Supported Docker versions**:  
+	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
 
 # Vault
 
@@ -31,7 +57,7 @@ Vault is a tool for securely accessing secrets. A secret is anything that you wa
 -	[Vault documentation](https://www.vaultproject.io/)
 -	[Vault on GitHub](https://github.com/hashicorp/vault)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/726714ced14b1e14b6dd99fc82f20f14f1d3cfb1/vault/logo.png)
+![logo](https://cdn.rawgit.com/docker-library/docs/fab4b16599d1424cee888d47af850e0ba07e6a37/vault/logo.svg)
 
 # Using the Container
 
@@ -88,29 +114,3 @@ Since 0.6.3 this container also supports the `VAULT_REDIRECT_INTERFACE` and `VAU
 # License
 
 View [license information](https://raw.githubusercontent.com/hashicorp/vault/master/LICENSE) for the software contained in this image.
-
-# Supported Docker versions
-
-This image is officially supported on Docker version 17.03.1-ce.
-
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/hashicorp/docker-vault/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/hashicorp/docker-vault/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`vault/` directory](https://github.com/docker-library/docs/tree/master/vault) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

@@ -16,14 +16,37 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `5`, `5.24`, `5.24.1` (*5.024.001-64bit/Dockerfile*)](https://github.com/perl/docker-perl/blob/8b57a74dbc745fb2723bc60ba98768846dae37f6/5.024.001-64bit/Dockerfile)
--	[`threaded`, `5-threaded`, `5.24-threaded`, `5.24.1-threaded` (*5.024.001-64bit,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/8b57a74dbc745fb2723bc60ba98768846dae37f6/5.024.001-64bit,threaded/Dockerfile)
--	[`5.22`, `5.22.3` (*5.022.003-64bit/Dockerfile*)](https://github.com/perl/docker-perl/blob/8b57a74dbc745fb2723bc60ba98768846dae37f6/5.022.003-64bit/Dockerfile)
--	[`5.22-threaded`, `5.22.3-threaded` (*5.022.003-64bit,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/8b57a74dbc745fb2723bc60ba98768846dae37f6/5.022.003-64bit,threaded/Dockerfile)
+-	[`latest`, `5`, `5.26`, `5.26.0` (*5.026.000-64bit/Dockerfile*)](https://github.com/perl/docker-perl/blob/8044d4ba7627712b6fbed84e544d2d78ca805f96/5.026.000-64bit/Dockerfile)
+-	[`threaded`, `5-threaded`, `5.26-threaded`, `5.26.0-threaded` (*5.026.000-64bit,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/8044d4ba7627712b6fbed84e544d2d78ca805f96/5.026.000-64bit,threaded/Dockerfile)
+-	[`5.24`, `5.24.2` (*5.024.002-64bit/Dockerfile*)](https://github.com/perl/docker-perl/blob/8044d4ba7627712b6fbed84e544d2d78ca805f96/5.024.002-64bit/Dockerfile)
+-	[`5.24-threaded`, `5.24.2-threaded` (*5.024.002-64bit,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/8044d4ba7627712b6fbed84e544d2d78ca805f96/5.024.002-64bit,threaded/Dockerfile)
+-	[`5.22`, `5.22.4` (*5.022.004-64bit/Dockerfile*)](https://github.com/perl/docker-perl/blob/8044d4ba7627712b6fbed84e544d2d78ca805f96/5.022.004-64bit/Dockerfile)
+-	[`5.22-threaded`, `5.22.4-threaded` (*5.022.004-64bit,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/8044d4ba7627712b6fbed84e544d2d78ca805f96/5.022.004-64bit,threaded/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/perl`)](https://github.com/docker-library/official-images/blob/master/library/perl). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fperl).
+# Quick reference
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/perl/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/perl/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+-	**Where to file issues**:  
+	[https://github.com/Perl/docker-perl/issues](https://github.com/Perl/docker-perl/issues)
+
+-	**Maintained by**:  
+	[the Perl Community](https://github.com/Perl/docker-perl)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/perl/` directory](https://github.com/docker-library/repo-info/blob/master/repos/perl) ([history](https://github.com/docker-library/repo-info/commits/master/repos/perl))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images PRs with label `library/perl`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fperl)  
+	[official-images repo's `library/perl` file](https://github.com/docker-library/official-images/blob/master/library/perl) ([history](https://github.com/docker-library/official-images/commits/master/library/perl))
+
+-	**Source of this description**:  
+	[docs repo's `perl/` directory](https://github.com/docker-library/docs/tree/master/perl) ([history](https://github.com/docker-library/docs/commits/master/perl))
+
+-	**Supported Docker versions**:  
+	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Perl?
 
@@ -59,32 +82,30 @@ For many simple, single file projects, you may find it inconvenient to write a c
 $ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp perl:5.20 perl your-daemon-or-script.pl
 ```
 
+## Example: Creating a reusable Carton image for Perl projects
+
+Suppose you have a project that uses [Carton](https://metacpan.org/pod/Carton) to manage Perl dependencies. You can create a `perl:carton` image that makes use of the [ONBUILD](https://docs.docker.com/engine/reference/builder/#onbuild) instruction in its `Dockerfile`, like this:
+
+```dockerfile
+FROM perl:5.26
+
+RUN cpanm Carton \
+    && mkdir -p /usr/src/app
+WORKDIR /usr/src/app
+
+ONBUILD COPY cpanfile* /usr/src/myapp
+ONBUILD RUN carton install
+
+ONBUILD COPY . /usr/src/app
+```
+
+Then, in your Carton project, you can now reduce your project's `Dockerfile` into a single line of `FROM perl:carton`, which may be enough to build a stand-alone image.
+
+Having a single `perl:carton` base image is useful especially if you have multiple Carton-based projects in development, to avoid "boilerplate" coding of installing Carton and/or copying the project source files into the derived image. Keep in mind, though, about certain things to consider when using the Perl image in this way:
+
+-	This kind of base image will hide the useful bits (such as the`COPY`/`RUN` above) in the image, separating it from more specific Dockerfiles using the base image. This might lead to confusion when creating further derived images, so be aware of how [ONBUILD triggers](https://docs.docker.com/engine/reference/builder/#onbuild) work and plan appropriately.
+-	There is the cost of maintaining an extra base image build, so if you're working on a single Carton project and/or plan to publish it, then it may be more preferable to derive directly from a versioned `perl` image instead.
+
 # License
 
 View [license information](http://dev.perl.org/licenses/) for the software contained in this image.
-
-# Supported Docker versions
-
-This image is officially supported on Docker version 17.03.1-ce.
-
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/Perl/docker-perl/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/Perl/docker-perl/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`perl/` directory](https://github.com/docker-library/docs/tree/master/perl) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
