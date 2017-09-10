@@ -147,6 +147,19 @@ RUN curl -fsSL 'https://xcache.lighttpd.net/pub/Releases/3.2.0/xcache-3.2.0.tar.
 	&& rm -r /tmp/xcache
 ```
 
+#### Changing the docroot
+
+Some applications may wish to change the default docroot from Apache. The following Dockerfile demonstrates how you can use an environment variable to make that change:
+
+```
+FROM php:7.1-apache
+
+ENV APACHE_DOCUMENT_ROOT /path/to/new/root
+
+RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf
+RUN sed -ri -e 's!/var/www/!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/apache2.conf /etc/apache2/conf-available/*.conf
+```
+
 ### Without a `Dockerfile`
 
 If you don't want to include a `Dockerfile` in your project, it is sufficient to do the following:
