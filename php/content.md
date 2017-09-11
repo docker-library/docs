@@ -64,6 +64,14 @@ COPY src/ /var/www/html/
 
 Where `src/` is the directory containing all your PHP code and `config/` contains your `php.ini` file.
 
+### Without a `Dockerfile`
+
+If you don't want to include a `Dockerfile` in your project, it is sufficient to do the following:
+
+```console
+$ docker run -d -p 80:80 --name my-apache-php-app -v "$PWD":/var/www/html php:7.0-apache
+```
+
 ### How to install more PHP extensions
 
 We provide the helper scripts `docker-php-ext-configure`, `docker-php-ext-install`, and `docker-php-ext-enable` to more easily install PHP extensions.
@@ -158,12 +166,4 @@ ENV APACHE_DOCUMENT_ROOT /path/to/new/root
 
 RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf
 RUN sed -ri -e 's!/var/www/!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/apache2.conf /etc/apache2/conf-available/*.conf
-```
-
-### Without a `Dockerfile`
-
-If you don't want to include a `Dockerfile` in your project, it is sufficient to do the following:
-
-```console
-$ docker run -d -p 80:80 --name my-apache-php-app -v "$PWD":/var/www/html php:7.0-apache
 ```
