@@ -16,15 +16,18 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
+-	[`3.5.0-jdk-7-alpine`, `3.5-jdk-7-alpine`, `3-jdk-7-alpine` (*jdk-7-alpine/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/bdcedecba28295e7fc91256c9e58b0cc1f69ed57/jdk-7-alpine/Dockerfile)
+-	[`3.5.0-jdk-7-slim`, `3.5-jdk-7-slim`, `3-jdk-7-slim` (*jdk-7-slim/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/afebe58fedee70782887d8bce0fdf808851593fd/jdk-7-slim/Dockerfile)
 -	[`3.5.0-jdk-7`, `3.5-jdk-7`, `3-jdk-7` (*jdk-7/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/4b6cf057428dec330e39af811b54a6abd000402a/jdk-7/Dockerfile)
--	[`3.5.0-jdk-7-alpine`, `3.5-jdk-7-alpine`, `3-jdk-7-alpine` (*jdk-7/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/e8657f03def7f1d776a5348fcc71737d7cfe0f07/jdk-7/Dockerfile)
+-	[`3.5.0-jdk-8-alpine`, `3.5.0-alpine`, `3.5-jdk-8-alpine`, `3.5-alpine`, `3-jdk-8-alpine`, `alpine` (*jdk-8-alpine/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/bdcedecba28295e7fc91256c9e58b0cc1f69ed57/jdk-8-alpine/Dockerfile)
+-	[`3.5.0-jdk-8-slim`, `3.5.0-slim`, `3.5-jdk-8-slim`, `3.5-slim`, `3-jdk-8-slim`, `slim` (*jdk-8-slim/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/afebe58fedee70782887d8bce0fdf808851593fd/jdk-8-slim/Dockerfile)
 -	[`3.5.0-jdk-8`, `3.5.0`, `3.5-jdk-8`, `3.5`, `3-jdk-8`, `3`, `latest` (*jdk-8/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/7fe1595b23769f777515ae3beca30003349a5ebb/jdk-8/Dockerfile)
--	[`3.5.0-jdk-8-alpine`, `3.5.0-alpine`, `3.5-jdk-8-alpine`, `3.5-alpine`, `3-jdk-8-alpine`, `3-alpine`, `alpine` (*jdk-8/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/96b679900a847054148e88a0a8648cc52e3a997b/jdk-8/Dockerfile)
+-	[`3.5.0-jdk-9-slim`, `3.5-jdk-9-slim`, `3-jdk-9-slim` (*jdk-9-slim/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/afebe58fedee70782887d8bce0fdf808851593fd/jdk-9-slim/Dockerfile)
 -	[`3.5.0-jdk-9`, `3.5-jdk-9`, `3-jdk-9` (*jdk-9/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/4b6cf057428dec330e39af811b54a6abd000402a/jdk-9/Dockerfile)
--	[`3.5.0-ibmjava-8`, `3.5-ibmjava-8`, `3-ibmjava-8` (*ibmjava-8/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/4b6cf057428dec330e39af811b54a6abd000402a/ibmjava-8/Dockerfile)
--	[`3.5.0-ibmjava-8-alpine`, `3.5-ibmjava-8-alpine`, `3-ibmjava-8-alpine` (*ibmjava-8/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/a94270226e472908655fcaf0cd826d7ffb3d37ad/ibmjava-8/Dockerfile)
+-	[`3.5.0-ibmjava-8-alpine`, `3.5.0-ibmjava-alpine`, `3.5-ibmjava-8-alpine`, `3.5-ibmjava-alpine`, `3-ibmjava-8-alpine`, `ibmjava-alpine` (*ibmjava-8-alpine/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/bdcedecba28295e7fc91256c9e58b0cc1f69ed57/ibmjava-8-alpine/Dockerfile)
+-	[`3.5.0-ibmjava-8`, `3.5.0-ibmjava`, `3.5-ibmjava-8`, `3.5-ibmjava`, `3-ibmjava-8`, `3-ibmjava`, `ibmjava` (*ibmjava-8/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/4b6cf057428dec330e39af811b54a6abd000402a/ibmjava-8/Dockerfile)
+-	[`3.5.0-ibmjava-9-alpine`, `3.5-ibmjava-9-alpine`, `3-ibmjava-9-alpine` (*ibmjava-9-alpine/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/bdcedecba28295e7fc91256c9e58b0cc1f69ed57/ibmjava-9-alpine/Dockerfile)
 -	[`3.5.0-ibmjava-9`, `3.5-ibmjava-9`, `3-ibmjava-9` (*ibmjava-9/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/4b6cf057428dec330e39af811b54a6abd000402a/ibmjava-9/Dockerfile)
--	[`3.5.0-ibmjava-9-alpine`, `3.5-ibmjava-9-alpine`, `3-ibmjava-9-alpine` (*ibmjava-9/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/a94270226e472908655fcaf0cd826d7ffb3d37ad/ibmjava-9/Dockerfile)
 
 # Quick reference
 
@@ -100,6 +103,10 @@ This image is based on the popular [Alpine Linux project](http://alpinelinux.org
 This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
 
 To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
+
+## `maven:slim`
+
+This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `maven`. Unless you are working in an environment where *only* the `maven` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
 
 # License
 

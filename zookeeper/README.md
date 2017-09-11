@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.3.6`, `3.3` (*3.3.6/Dockerfile*)](https://github.com/31z4/zookeeper-docker/blob/7e7eac6d6c11428849ec13bb7d240e4cfa21b2e7/3.3.6/Dockerfile)
--	[`3.4.10`, `3.4`, `latest` (*3.4.10/Dockerfile*)](https://github.com/31z4/zookeeper-docker/blob/f12428ab7c6ea263ef037cf258129b83276c009c/3.4.10/Dockerfile)
+-	[`3.3.6`, `3.3` (*3.3.6/Dockerfile*)](https://github.com/31z4/zookeeper-docker/blob/9f00dd78dcd67baa9b57449329fcbd4744948326/3.3.6/Dockerfile)
+-	[`3.4.10`, `3.4`, `latest` (*3.4.10/Dockerfile*)](https://github.com/31z4/zookeeper-docker/blob/9f00dd78dcd67baa9b57449329fcbd4744948326/3.4.10/Dockerfile)
 
 # Quick reference
 
