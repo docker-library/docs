@@ -20,8 +20,8 @@ This image has been deprecated in favor of the [`jenkins/jenkins:lts`](https://h
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `2.60.2` (*Dockerfile*)](https://github.com/jenkinsci/docker/blob/15dc59d7dbd47da5259a50a9ebfa8895d594444f/Dockerfile)
--	[`alpine`, `2.60.2-alpine` (*Dockerfile*)](https://github.com/jenkinsci/docker/blob/c24687d11870e6a408678a394c1298008773bf03/Dockerfile)
+-	[`latest`, `2.60.3` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/587b2856cd225bb152c4abeeaaa24934c75aa460/Dockerfile)
+-	[`alpine`, `2.60.3-alpine` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/c2d6f2122fa03c437e139a317b7fe5b9547fe49e/Dockerfile)
 
 # Quick reference
 
