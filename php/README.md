@@ -136,6 +136,14 @@ COPY src/ /var/www/html/
 
 Where `src/` is the directory containing all your PHP code and `config/` contains your `php.ini` file.
 
+### Without a `Dockerfile`
+
+If you don't want to include a `Dockerfile` in your project, it is sufficient to do the following:
+
+```console
+$ docker run -d -p 80:80 --name my-apache-php-app -v "$PWD":/var/www/html php:7.0-apache
+```
+
 ### How to install more PHP extensions
 
 We provide the helper scripts `docker-php-ext-configure`, `docker-php-ext-install`, and `docker-php-ext-enable` to more easily install PHP extensions.
@@ -219,12 +227,17 @@ RUN curl -fsSL 'https://xcache.lighttpd.net/pub/Releases/3.2.0/xcache-3.2.0.tar.
 	&& rm -r /tmp/xcache
 ```
 
-### Without a `Dockerfile`
+### Changing `DocumentRoot`
 
-If you don't want to include a `Dockerfile` in your project, it is sufficient to do the following:
+Some applications may wish to change the default `DocumentRoot` in Apache (away from `/var/www/html`). The following demonstrates one way to do so using an environment variable (which can then be modified at container runtime as well):
 
-```console
-$ docker run -d -p 80:80 --name my-apache-php-app -v "$PWD":/var/www/html php:7.0-apache
+```dockerfile
+FROM php:7.1-apache
+
+ENV APACHE_DOCUMENT_ROOT /path/to/new/root
+
+RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf
+RUN sed -ri -e 's!/var/www/!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/apache2.conf /etc/apache2/conf-available/*.conf
 ```
 
 # Image Variants
