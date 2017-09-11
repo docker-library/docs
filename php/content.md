@@ -147,11 +147,11 @@ RUN curl -fsSL 'https://xcache.lighttpd.net/pub/Releases/3.2.0/xcache-3.2.0.tar.
 	&& rm -r /tmp/xcache
 ```
 
-#### Changing the docroot
+### Changing `DocumentRoot`
 
-Some applications may wish to change the default docroot from Apache. The following Dockerfile demonstrates how you can use an environment variable to make that change:
+Some applications may wish to change the default `DocumentRoot` in Apache (away from `/var/www/html`). The following demonstrates one way to do so using an environment variable (which can then be modified at container runtime as well):
 
-```
+```dockerfile
 FROM php:7.1-apache
 
 ENV APACHE_DOCUMENT_ROOT /path/to/new/root
