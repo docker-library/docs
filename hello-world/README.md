@@ -16,7 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest` (*amd64/hello-world/Dockerfile*)](https://github.com/docker-library/hello-world/blob/7d0ee592e4ed60e2da9d59331e16ecdcadc1ed87/amd64/hello-world/Dockerfile)
+-	[`linux` (*amd64/hello-world/Dockerfile*)](https://github.com/docker-library/hello-world/blob/7d0ee592e4ed60e2da9d59331e16ecdcadc1ed87/amd64/hello-world/Dockerfile)
 -	[`nanoserver` (*amd64/hello-world/nanoserver/Dockerfile*)](https://github.com/docker-library/hello-world/blob/7d0ee592e4ed60e2da9d59331e16ecdcadc1ed87/amd64/hello-world/nanoserver/Dockerfile)
 
 # Quick reference
@@ -72,7 +72,7 @@ For more examples and ideas, visit:
 
 $ docker images hello-world
 REPOSITORY   TAG     IMAGE ID      SIZE
-hello-world  latest  48b5124b2768  1.84 kB
+hello-world  latest  05a3bd381fc2  1.84 kB
 ```
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/01c12653951b2fe592c1f93a13b4e289ada0e3a1/hello-world/logo.png)
