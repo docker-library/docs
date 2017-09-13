@@ -16,6 +16,14 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
+## Shared Tags
+
+-	`latest`:
+	-	[`linux` (*amd64/hola-mundo/Dockerfile*)](https://github.com/docker-library/hello-world/blob/7d0ee592e4ed60e2da9d59331e16ecdcadc1ed87/amd64/hola-mundo/Dockerfile)
+	-	[`nanoserver` (*amd64/hola-mundo/nanoserver/Dockerfile*)](https://github.com/docker-library/hello-world/blob/7d0ee592e4ed60e2da9d59331e16ecdcadc1ed87/amd64/hola-mundo/nanoserver/Dockerfile)
+
+## Simple Tags
+
 -	[`linux` (*amd64/hola-mundo/Dockerfile*)](https://github.com/docker-library/hello-world/blob/7d0ee592e4ed60e2da9d59331e16ecdcadc1ed87/amd64/hola-mundo/Dockerfile)
 -	[`nanoserver` (*amd64/hola-mundo/nanoserver/Dockerfile*)](https://github.com/docker-library/hello-world/blob/7d0ee592e4ed60e2da9d59331e16ecdcadc1ed87/amd64/hola-mundo/nanoserver/Dockerfile)
 
