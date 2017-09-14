@@ -16,9 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`11.0.4-apache`, `11.0-apache`, `11-apache`, `11.0.4`, `11.0`, `11` (*11.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/d87b840646635ba5b8fb92f19f72fe9e6486251e/11.0/apache/Dockerfile)
+-	[`11.0.4-apache`, `11.0-apache`, `11-apache`, `11.0.4`, `11.0`, `11` (*11.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/fd0cc806c8fe779c3f26fc41b0386f1d4ca9a2af/11.0/apache/Dockerfile)
 -	[`11.0.4-fpm`, `11.0-fpm`, `11-fpm` (*11.0/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/d87b840646635ba5b8fb92f19f72fe9e6486251e/11.0/fpm/Dockerfile)
--	[`12.0.2-apache`, `12.0-apache`, `12-apache`, `apache`, `12.0.2`, `12.0`, `12`, `latest` (*12.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/d87b840646635ba5b8fb92f19f72fe9e6486251e/12.0/apache/Dockerfile)
+-	[`12.0.2-apache`, `12.0-apache`, `12-apache`, `apache`, `12.0.2`, `12.0`, `12`, `latest` (*12.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/fd0cc806c8fe779c3f26fc41b0386f1d4ca9a2af/12.0/apache/Dockerfile)
 -	[`12.0.2-fpm`, `12.0-fpm`, `12-fpm`, `fpm` (*12.0/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/d87b840646635ba5b8fb92f19f72fe9e6486251e/12.0/fpm/Dockerfile)
 
 # Quick reference
