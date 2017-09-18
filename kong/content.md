@@ -43,7 +43,7 @@ docker run -d --name kong-database \
 Run the database migrations with an ephemeral Kong container:
 
 ```shell
-docker run -it --rm \
+docker run --rm \
     --link kong-database:kong-database \
     -e "KONG_DATABASE=postgres" \
     -e "KONG_PG_HOST=kong-database" \
