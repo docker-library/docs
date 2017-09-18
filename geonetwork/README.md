@@ -18,8 +18,8 @@ WARNING:
 
 -	[`3.0.5`, `3.0` (*3.0.5/Dockerfile*)](https://github.com/geonetwork/docker-geonetwork/blob/c2af30125f631f6357d3af3837ec4b80f04b5917/3.0.5/Dockerfile)
 -	[`3.0.5-postgres`, `3.0-postgres` (*3.0.5/postgres/Dockerfile*)](https://github.com/geonetwork/docker-geonetwork/blob/e5cf5da76f557481c35b4a4d3e3cac77768a1302/3.0.5/postgres/Dockerfile)
--	[`3.2.1`, `3.2`, `latest` (*3.2.1/Dockerfile*)](https://github.com/geonetwork/docker-geonetwork/blob/507a1d8b02f15615566f7ac45662dbf3bc4d3649/3.2.1/Dockerfile)
--	[`3.2.1-postgres`, `3.2-postgres`, `postgres` (*3.2.1/postgres/Dockerfile*)](https://github.com/geonetwork/docker-geonetwork/blob/507a1d8b02f15615566f7ac45662dbf3bc4d3649/3.2.1/postgres/Dockerfile)
+-	[`3.2.2`, `3.2`, `latest` (*3.2.2/Dockerfile*)](https://github.com/geonetwork/docker-geonetwork/blob/7ba5f533d9ee31cf1a22d4d6a1a84fbb74f86466/3.2.2/Dockerfile)
+-	[`3.2.2-postgres`, `3.2-postgres`, `postgres` (*3.2.2/postgres/Dockerfile*)](https://github.com/geonetwork/docker-geonetwork/blob/7ba5f533d9ee31cf1a22d4d6a1a84fbb74f86466/3.2.2/postgres/Dockerfile)
 
 # Quick reference
 
