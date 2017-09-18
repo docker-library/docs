@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`17.10`, `artful-20170826`, `artful`, `devel` (*artful/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/fa1bfe443b3431269b71b27244a3c2bab9c2a019/artful/Dockerfile)
--	[`14.04`, `trusty-20170817`, `trusty` (*trusty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/fa1bfe443b3431269b71b27244a3c2bab9c2a019/trusty/Dockerfile)
--	[`16.04`, `xenial-20170802`, `xenial`, `latest` (*xenial/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/fa1bfe443b3431269b71b27244a3c2bab9c2a019/xenial/Dockerfile)
--	[`17.04`, `zesty-20170913`, `zesty`, `rolling` (*zesty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/fa1bfe443b3431269b71b27244a3c2bab9c2a019/zesty/Dockerfile)
+-	[`17.10`, `artful-20170916`, `artful`, `devel` (*artful/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/31ebd22e9e83185d69d50b3492911aedf519dd4a/artful/Dockerfile)
+-	[`14.04`, `trusty-20170817`, `trusty` (*trusty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/31ebd22e9e83185d69d50b3492911aedf519dd4a/trusty/Dockerfile)
+-	[`16.04`, `xenial-20170915`, `xenial`, `latest` (*xenial/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/31ebd22e9e83185d69d50b3492911aedf519dd4a/xenial/Dockerfile)
+-	[`17.04`, `zesty-20170915`, `zesty`, `rolling` (*zesty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/31ebd22e9e83185d69d50b3492911aedf519dd4a/zesty/Dockerfile)
 
 # Quick reference
 
