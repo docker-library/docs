@@ -43,14 +43,14 @@ WARNING:
 -	[`3.3.6-onbuild`, `3.3-onbuild` (*3.3/jessie/onbuild/Dockerfile*)](https://github.com/docker-library/python/blob/d3c5f47b788adb96e69477dadfb0baca1d97f764/3.3/jessie/onbuild/Dockerfile)
 -	[`3.3.6-wheezy`, `3.3-wheezy` (*3.3/wheezy/Dockerfile*)](https://github.com/docker-library/python/blob/5d86c858d58f84b8dd1274ac61ac1c9c9ebc7739/3.3/wheezy/Dockerfile)
 -	[`3.3.6-alpine3.4`, `3.3-alpine3.4`, `3.3.6-alpine`, `3.3-alpine` (*3.3/alpine3.4/Dockerfile*)](https://github.com/docker-library/python/blob/d3c5f47b788adb96e69477dadfb0baca1d97f764/3.3/alpine3.4/Dockerfile)
--	[`2.7.13-stretch`, `2.7-stretch`, `2-stretch` (*2.7/stretch/Dockerfile*)](https://github.com/docker-library/python/blob/c9954b06c8b178d7888bc1626bed5a14e43a9203/2.7/stretch/Dockerfile)
--	[`2.7.13-jessie`, `2.7-jessie`, `2-jessie`, `2.7.13`, `2.7`, `2` (*2.7/jessie/Dockerfile*)](https://github.com/docker-library/python/blob/d3c5f47b788adb96e69477dadfb0baca1d97f764/2.7/jessie/Dockerfile)
--	[`2.7.13-slim`, `2.7-slim`, `2-slim` (*2.7/jessie/slim/Dockerfile*)](https://github.com/docker-library/python/blob/d3c5f47b788adb96e69477dadfb0baca1d97f764/2.7/jessie/slim/Dockerfile)
+-	[`2.7.14-stretch`, `2.7-stretch`, `2-stretch` (*2.7/stretch/Dockerfile*)](https://github.com/docker-library/python/blob/b1512ead24c6b111506a8d4229134a29da240597/2.7/stretch/Dockerfile)
+-	[`2.7.14-jessie`, `2.7-jessie`, `2-jessie`, `2.7.14`, `2.7`, `2` (*2.7/jessie/Dockerfile*)](https://github.com/docker-library/python/blob/b1512ead24c6b111506a8d4229134a29da240597/2.7/jessie/Dockerfile)
+-	[`2.7.14-slim`, `2.7-slim`, `2-slim` (*2.7/jessie/slim/Dockerfile*)](https://github.com/docker-library/python/blob/b1512ead24c6b111506a8d4229134a29da240597/2.7/jessie/slim/Dockerfile)
 -	[`2.7.13-onbuild`, `2.7-onbuild`, `2-onbuild` (*2.7/jessie/onbuild/Dockerfile*)](https://github.com/docker-library/python/blob/d3c5f47b788adb96e69477dadfb0baca1d97f764/2.7/jessie/onbuild/Dockerfile)
--	[`2.7.13-wheezy`, `2.7-wheezy`, `2-wheezy` (*2.7/wheezy/Dockerfile*)](https://github.com/docker-library/python/blob/5d86c858d58f84b8dd1274ac61ac1c9c9ebc7739/2.7/wheezy/Dockerfile)
--	[`2.7.13-alpine3.6`, `2.7-alpine3.6`, `2-alpine3.6` (*2.7/alpine3.6/Dockerfile*)](https://github.com/docker-library/python/blob/5d86c858d58f84b8dd1274ac61ac1c9c9ebc7739/2.7/alpine3.6/Dockerfile)
--	[`2.7.13-alpine3.4`, `2.7-alpine3.4`, `2-alpine3.4`, `2.7.13-alpine`, `2.7-alpine`, `2-alpine` (*2.7/alpine3.4/Dockerfile*)](https://github.com/docker-library/python/blob/d3c5f47b788adb96e69477dadfb0baca1d97f764/2.7/alpine3.4/Dockerfile)
--	[`2.7.13-windowsservercore`, `2.7-windowsservercore`, `2-windowsservercore` (*2.7/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/python/blob/db2d58d73043c85ceecc8e675372b4dc6a77d136/2.7/windows/windowsservercore/Dockerfile)
+-	[`2.7.14-wheezy`, `2.7-wheezy`, `2-wheezy` (*2.7/wheezy/Dockerfile*)](https://github.com/docker-library/python/blob/b1512ead24c6b111506a8d4229134a29da240597/2.7/wheezy/Dockerfile)
+-	[`2.7.14-alpine3.6`, `2.7-alpine3.6`, `2-alpine3.6` (*2.7/alpine3.6/Dockerfile*)](https://github.com/docker-library/python/blob/b1512ead24c6b111506a8d4229134a29da240597/2.7/alpine3.6/Dockerfile)
+-	[`2.7.14-alpine3.4`, `2.7-alpine3.4`, `2-alpine3.4`, `2.7.14-alpine`, `2.7-alpine`, `2-alpine` (*2.7/alpine3.4/Dockerfile*)](https://github.com/docker-library/python/blob/b1512ead24c6b111506a8d4229134a29da240597/2.7/alpine3.4/Dockerfile)
+-	[`2.7.14-windowsservercore`, `2.7-windowsservercore`, `2-windowsservercore` (*2.7/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/python/blob/b1512ead24c6b111506a8d4229134a29da240597/2.7/windows/windowsservercore/Dockerfile)
 
 # Quick reference
 
