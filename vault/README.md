@@ -23,7 +23,8 @@ WARNING:
 -	[`0.7.3` (*0.7.3/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/02af9417ae42bf6290b4b36c2188b1836f1017a8/0.7.3/Dockerfile)
 -	[`0.8.0` (*0.8.0/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/d1cbdce2b531e9223356efb14e828afa556e1f70/0.8.0/Dockerfile)
 -	[`0.8.1` (*0.8.1/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/9ddc187d94f68f2572e4d3b1e733c98c661d628b/0.8.1/Dockerfile)
--	[`0.8.2`, `latest` (*0.8.2/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/0cbe9598ea742e5227a20012332400b0f96a0327/0.8.2/Dockerfile)
+-	[`0.8.2` (*0.8.2/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/0cbe9598ea742e5227a20012332400b0f96a0327/0.8.2/Dockerfile)
+-	[`0.8.3`, `latest` (*0.8.3/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/8d7d53f701331936ae654fff0249ccf872e5de44/0.8.3/Dockerfile)
 
 # Quick reference
 
