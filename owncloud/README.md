@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`10.0.2-apache`, `10.0-apache`, `10-apache`, `apache`, `10.0.2`, `10.0`, `10`, `latest` (*10.0/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/aad7b27a8d2dab3e417a94071d1acf6a795a2aed/10.0/apache/Dockerfile)
--	[`10.0.2-fpm`, `10.0-fpm`, `10-fpm`, `fpm` (*10.0/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/aad7b27a8d2dab3e417a94071d1acf6a795a2aed/10.0/fpm/Dockerfile)
+-	[`10.0.3-apache`, `10.0-apache`, `10-apache`, `apache`, `10.0.3`, `10.0`, `10`, `latest` (*10.0/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/5c0f5a270e565410cc47046b29b04e4a5ec9e828/10.0/apache/Dockerfile)
+-	[`10.0.3-fpm`, `10.0-fpm`, `10-fpm`, `fpm` (*10.0/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/5c0f5a270e565410cc47046b29b04e4a5ec9e828/10.0/fpm/Dockerfile)
 -	[`9.1.6-apache`, `9.1-apache`, `9-apache`, `9.1.6`, `9.1`, `9` (*9.1/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/aad7b27a8d2dab3e417a94071d1acf6a795a2aed/9.1/apache/Dockerfile)
 -	[`9.1.6-fpm`, `9.1-fpm`, `9-fpm` (*9.1/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/aad7b27a8d2dab3e417a94071d1acf6a795a2aed/9.1/fpm/Dockerfile)
 -	[`9.0.10-apache`, `9.0-apache`, `9.0.10`, `9.0` (*9.0/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/aad7b27a8d2dab3e417a94071d1acf6a795a2aed/9.0/apache/Dockerfile)
