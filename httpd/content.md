@@ -29,8 +29,9 @@ $ docker run -dit --name my-running-app my-apache2
 If you don't want to include a `Dockerfile` in your project, it is sufficient to do the following:
 
 ```console
-$ docker run -dit --name my-apache-app -p 80:80 -v "$PWD":/usr/local/apache2/htdocs/ httpd:2.4
+$ docker run -dit --name my-apache-app -p 8080:80 -v "$PWD":/usr/local/apache2/htdocs/ httpd:2.4
 ```
+Please be aware that exposing a port may require root priviliges on your host, depanding your configuration.
 
 ### Configuration
 
