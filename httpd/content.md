@@ -32,8 +32,6 @@ If you don't want to include a `Dockerfile` in your project, it is sufficient to
 $ docker run -dit --name my-apache-app -p 8080:80 -v "$PWD":/usr/local/apache2/htdocs/ httpd:2.4
 ```
 
-Please be aware that exposing a port may require root priviliges on your host, depanding your configuration.
-
 ### Configuration
 
 To customize the configuration of the httpd server, just `COPY` your custom configuration in as `/usr/local/apache2/conf/httpd.conf`.
