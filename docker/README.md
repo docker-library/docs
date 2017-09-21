@@ -16,9 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`17.09.0-ce-rc2`, `17.09.0-ce`, `17.09.0`, `17.09-rc`, `rc`, `test` (*17.09-rc/Dockerfile*)](https://github.com/docker-library/docker/blob/e90d458a6147f66630e7ad9877d7aa3c6d541414/17.09-rc/Dockerfile)
--	[`17.09.0-ce-rc2-dind`, `17.09.0-ce-dind`, `17.09.0-dind`, `17.09-rc-dind`, `rc-dind`, `test-dind` (*17.09-rc/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/ce8784112e81f724c96dae8272dd7367d712f3e9/17.09-rc/dind/Dockerfile)
--	[`17.09.0-ce-rc2-git`, `17.09.0-ce-git`, `17.09.0-git`, `17.09-rc-git`, `rc-git`, `test-git` (*17.09-rc/git/Dockerfile*)](https://github.com/docker-library/docker/blob/ce8784112e81f724c96dae8272dd7367d712f3e9/17.09-rc/git/Dockerfile)
+-	[`17.09.0-ce-rc3`, `17.09.0-ce`, `17.09.0`, `17.09-rc`, `rc`, `test` (*17.09-rc/Dockerfile*)](https://github.com/docker-library/docker/blob/f7363cacd357b4bf6a550fb4abfa9faf911d1d71/17.09-rc/Dockerfile)
+-	[`17.09.0-ce-rc3-dind`, `17.09.0-ce-dind`, `17.09.0-dind`, `17.09-rc-dind`, `rc-dind`, `test-dind` (*17.09-rc/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/ce8784112e81f724c96dae8272dd7367d712f3e9/17.09-rc/dind/Dockerfile)
+-	[`17.09.0-ce-rc3-git`, `17.09.0-ce-git`, `17.09.0-git`, `17.09-rc-git`, `rc-git`, `test-git` (*17.09-rc/git/Dockerfile*)](https://github.com/docker-library/docker/blob/ce8784112e81f724c96dae8272dd7367d712f3e9/17.09-rc/git/Dockerfile)
 -	[`17.07.0-ce`, `17.07.0`, `17.07`, `17`, `edge`, `latest` (*17.07/Dockerfile*)](https://github.com/docker-library/docker/blob/a8f8fa1b57349cc22c80e7d6cbbdb512ffee2bd2/17.07/Dockerfile)
 -	[`17.07.0-ce-dind`, `17.07.0-dind`, `17.07-dind`, `17-dind`, `edge-dind`, `dind` (*17.07/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/a8f8fa1b57349cc22c80e7d6cbbdb512ffee2bd2/17.07/dind/Dockerfile)
 -	[`17.07.0-ce-git`, `17.07.0-git`, `17.07-git`, `17-git`, `edge-git`, `git` (*17.07/git/Dockerfile*)](https://github.com/docker-library/docker/blob/a8f8fa1b57349cc22c80e7d6cbbdb512ffee2bd2/17.07/git/Dockerfile)
