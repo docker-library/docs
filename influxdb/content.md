@@ -124,10 +124,14 @@ Start the container:
 $ docker run --name=influxdb -d -p 8086:8086 influxdb
 ```
 
-Run the influx client in another container:
+Run the influx client in this container:
+
+```console
+$ docker exec -it influxdb influx
+```
+
+(With a Docker version < 17.06.0 you have to use a workaround which runs the influx client in another container. See  [docker/docker#8755](https://github.com/docker/docker/issues/8755) for details:)
 
 ```console
 $ docker run --rm --link=influxdb -it influxdb influx -host influxdb
 ```
-
-At the moment, you cannot use `docker exec` to run the influx client since `docker exec` will not properly allocate a TTY. This is due to a current bug in Docker that is detailed in [docker/docker#8755](https://github.com/docker/docker/issues/8755).
