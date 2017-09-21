@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8`, `8.4`, `8.4.5`, `8-mysql-tomcat`, `mysql-tomcat`, `lts-mysql-tomcat`, `lts-mysql`, `lts`, `latest` (*8/mysql-tomcat/Dockerfile*)](https://github.com/xwiki-contrib/docker-xwiki/blob/e7f6dae8174da2961731076e500f9388176cf791/8/mysql-tomcat/Dockerfile)
--	[`9`, `9.7`, `9-mysql-tomcat`, `stable-mysql-tomcat`, `stable-mysql`, `stable` (*9/mysql-tomcat/Dockerfile*)](https://github.com/xwiki-contrib/docker-xwiki/blob/e7f6dae8174da2961731076e500f9388176cf791/9/mysql-tomcat/Dockerfile)
--	[`8-postgres-tomcat`, `8.4-postgres-tomcat`, `8.4.5-postgres-tomcat`, `postgres-tomcat`, `lts-postgres-tomcat`, `lts-postgres` (*8/postgres-tomcat/Dockerfile*)](https://github.com/xwiki-contrib/docker-xwiki/blob/e7f6dae8174da2961731076e500f9388176cf791/8/postgres-tomcat/Dockerfile)
--	[`9-postgres-tomcat`, `9.7-postgres-tomcat`, `stable-postgres-tomcat`, `stable-postgres` (*9/postgres-tomcat/Dockerfile*)](https://github.com/xwiki-contrib/docker-xwiki/blob/e7f6dae8174da2961731076e500f9388176cf791/9/postgres-tomcat/Dockerfile)
+-	[`8`, `8.4`, `8.4.5`, `8-mysql-tomcat`, `mysql-tomcat`, `lts-mysql-tomcat`, `lts-mysql`, `lts`, `latest` (*8/mysql-tomcat/Dockerfile*)](https://github.com/xwiki-contrib/docker-xwiki/blob/fbc0fe3cbc07119c45ae8ea97c7e021d41e89b0a/8/mysql-tomcat/Dockerfile)
+-	[`9`, `9.7`, `9-mysql-tomcat`, `stable-mysql-tomcat`, `stable-mysql`, `stable` (*9/mysql-tomcat/Dockerfile*)](https://github.com/xwiki-contrib/docker-xwiki/blob/fbc0fe3cbc07119c45ae8ea97c7e021d41e89b0a/9/mysql-tomcat/Dockerfile)
+-	[`8-postgres-tomcat`, `8.4-postgres-tomcat`, `8.4.5-postgres-tomcat`, `postgres-tomcat`, `lts-postgres-tomcat`, `lts-postgres` (*8/postgres-tomcat/Dockerfile*)](https://github.com/xwiki-contrib/docker-xwiki/blob/fbc0fe3cbc07119c45ae8ea97c7e021d41e89b0a/8/postgres-tomcat/Dockerfile)
+-	[`9-postgres-tomcat`, `9.7-postgres-tomcat`, `stable-postgres-tomcat`, `stable-postgres` (*9/postgres-tomcat/Dockerfile*)](https://github.com/xwiki-contrib/docker-xwiki/blob/fbc0fe3cbc07119c45ae8ea97c7e021d41e89b0a/9/postgres-tomcat/Dockerfile)
 
 # Quick reference
 
@@ -264,9 +264,7 @@ Thus all you need to do is to execute the installation instructions above as if 
 
 Then you need to stop your running XWiki container. You should keep your DB container running. Then all you have to do is start a new container as described above, using the new XWiki docker image.
 
-Caveats:
-
--	Right now we have an [outstanding issue](https://jira.xwiki.org/browse/XDOCKER-20) and thus if you've had to modify `xwiki.properties` or `xwiki.cfg` inside the XWiki container, you'll need to port your changes inside the new container (see the section below).
+Note that your current XWiki configuration files (`xwiki.cfg`, `xwiki.properties` and `hibernate.cfg.xml`) will be preserved.
 
 # Details for the xwiki image
 
@@ -279,13 +277,13 @@ The first time you create a container out of the xwiki image, a shell script (`/
 -	`DB_DATABASE`: The name of the XWiki database to use/create.
 -	`DB_HOST`: The name of the host (or docker container) containing the database. Default is "db".
 
-If you need to configure XWiki (e.g. modify `xwiki.properties` or `xwiki.cfg`) or perform some additional configuration, you can execute another container and attach to the running XWiki container by issuing:
+The main XWiki configuration files (`xwiki.cfg`, `xwiki.properties` and `hibernate.cfg.xml`) are available in the mapped local directory for the permanent directory on your host.
+
+If you need to perform some advanced configuration, you can execute another container and attach to the running XWiki container by issuing (but note that these won't be saved if you remove the container):
 
 ```console
 docker exec -it <xwiki container id> bash -l
 ```
-
-Note that we plan to [lift this limitation in the future](https://jira.xwiki.org/browse/XDOCKER-20).
 
 ## Passing JVM options
 
