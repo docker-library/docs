@@ -18,8 +18,6 @@ WARNING:
 
 -	[`2.1.7`, `2.1`, `latest` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/1c775563b01e830f265f0210ce8a68c81903c8cc/Dockerfile)
 -	[`2.0.7`, `2.0` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/79d51bb263104ccd2d3c57a5d74c16d6f0466d21/Dockerfile)
--	[`1.1.6`, `1.1` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/019830ed59c4b110f8c93f30430d282818ad95ec/Dockerfile)
--	[`1.0.6`, `1.0` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/89e1557944b257c9e56b0e93a458eb6f0238ece3/Dockerfile)
 
 # Quick reference
 
