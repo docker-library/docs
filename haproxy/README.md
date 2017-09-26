@@ -17,13 +17,13 @@ WARNING:
 # Supported tags and respective `Dockerfile` links
 
 -	[`1.4.27`, `1.4` (*1.4/Dockerfile*)](https://github.com/docker-library/haproxy/blob/a11db1597f9be5365028673df4d05b2ea854b3ed/1.4/Dockerfile)
--	[`1.4.27-alpine`, `1.4-alpine` (*1.4/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/dbf5702c136a1de7046a935b1d79516d6f82c861/1.4/alpine/Dockerfile)
+-	[`1.4.27-alpine`, `1.4-alpine` (*1.4/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/2d393f2b59824bf5c7f692a503c18e2dac43fae7/1.4/alpine/Dockerfile)
 -	[`1.5.19`, `1.5` (*1.5/Dockerfile*)](https://github.com/docker-library/haproxy/blob/67667912113013d9dfd14b503c14e120ceab9899/1.5/Dockerfile)
--	[`1.5.19-alpine`, `1.5-alpine` (*1.5/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/dbf5702c136a1de7046a935b1d79516d6f82c861/1.5/alpine/Dockerfile)
+-	[`1.5.19-alpine`, `1.5-alpine` (*1.5/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/2d393f2b59824bf5c7f692a503c18e2dac43fae7/1.5/alpine/Dockerfile)
 -	[`1.6.13`, `1.6` (*1.6/Dockerfile*)](https://github.com/docker-library/haproxy/blob/900676649347a83b314fd7b33e0a52265e168577/1.6/Dockerfile)
--	[`1.6.13-alpine`, `1.6-alpine` (*1.6/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/900676649347a83b314fd7b33e0a52265e168577/1.6/alpine/Dockerfile)
+-	[`1.6.13-alpine`, `1.6-alpine` (*1.6/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/2d393f2b59824bf5c7f692a503c18e2dac43fae7/1.6/alpine/Dockerfile)
 -	[`1.7.9`, `1.7`, `1`, `latest` (*1.7/Dockerfile*)](https://github.com/docker-library/haproxy/blob/394255fbe76c57a9f2e0775e3e69df714e801b46/1.7/Dockerfile)
--	[`1.7.9-alpine`, `1.7-alpine`, `1-alpine`, `alpine` (*1.7/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/394255fbe76c57a9f2e0775e3e69df714e801b46/1.7/alpine/Dockerfile)
+-	[`1.7.9-alpine`, `1.7-alpine`, `1-alpine`, `alpine` (*1.7/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/2d393f2b59824bf5c7f692a503c18e2dac43fae7/1.7/alpine/Dockerfile)
 
 # Quick reference
 
