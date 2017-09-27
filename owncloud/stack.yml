@@ -14,10 +14,12 @@ services:
 
   owncloud:
     image: owncloud
+    restart: always
     ports:
       - 8080:80
 
   mysql:
     image: mariadb
+    restart: always
     environment:
       MYSQL_ROOT_PASSWORD: example

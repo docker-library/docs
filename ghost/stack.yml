@@ -7,6 +7,7 @@ services:
 
   ghost:
     image: ghost:1-alpine
+    restart: always
     ports:
       - 8080:2368
     environment:
@@ -19,5 +20,6 @@ services:
 
   db:
     image: mysql:5.7
+    restart: always
     environment:
       MYSQL_ROOT_PASSWORD: example

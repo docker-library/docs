@@ -6,6 +6,7 @@ version: '3'
 services:
   mediawiki:
     image: mediawiki
+    restart: always
     ports:
       - 8080:80
     links:
@@ -18,6 +19,7 @@ services:
       # - ./LocalSettings.php:/var/www/html/LocalSettings.php
   database:
     image: mariadb
+    restart: always
     environment:
       # @see https://phabricator.wikimedia.org/source/mediawiki/browse/master/includes/DefaultSettings.php
       MYSQL_DATABASE: 'my_wiki'
