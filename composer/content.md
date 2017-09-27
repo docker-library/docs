@@ -81,7 +81,7 @@ Sometimes dependencies or Composer [scripts](https://getcomposer.org/doc/article
 
 -	Create your own image, and copy Composer from the official image into it:
 
-	```
+	```dockerfile
 	COPY --from=composer:1.5 /usr/bin/composer /usr/bin/composer
 	```
 
