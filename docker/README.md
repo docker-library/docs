@@ -22,6 +22,9 @@ WARNING:
 -	[`17.07.0-ce`, `17.07.0`, `17.07` (*17.07/Dockerfile*)](https://github.com/docker-library/docker/blob/a8f8fa1b57349cc22c80e7d6cbbdb512ffee2bd2/17.07/Dockerfile)
 -	[`17.07.0-ce-dind`, `17.07.0-dind`, `17.07-dind` (*17.07/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/a8f8fa1b57349cc22c80e7d6cbbdb512ffee2bd2/17.07/dind/Dockerfile)
 -	[`17.07.0-ce-git`, `17.07.0-git`, `17.07-git` (*17.07/git/Dockerfile*)](https://github.com/docker-library/docker/blob/a8f8fa1b57349cc22c80e7d6cbbdb512ffee2bd2/17.07/git/Dockerfile)
+-	[`17.06.2-ce`, `17.06.2`, `17.06` (*17.06/Dockerfile*)](https://github.com/docker-library/docker/blob/168a6d227d021c6d38c3986b7c668702ec172fa7/17.06/Dockerfile)
+-	[`17.06.2-ce-dind`, `17.06.2-dind`, `17.06-dind` (*17.06/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/168a6d227d021c6d38c3986b7c668702ec172fa7/17.06/dind/Dockerfile)
+-	[`17.06.2-ce-git`, `17.06.2-git`, `17.06-git` (*17.06/git/Dockerfile*)](https://github.com/docker-library/docker/blob/168a6d227d021c6d38c3986b7c668702ec172fa7/17.06/git/Dockerfile)
 
 # Quick reference
 
