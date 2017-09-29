@@ -8,6 +8,37 @@ ClefOS Linux is a community-supported distribution for IBM Z (aka "mainframe") d
 
 The `clefos:latest` tag is always the most recent version currently available.
 
+## Building the Base Image
+
+The image is built via the make command against the following Makefile:
+```
+VERSION=$(shell cat VERSION)
+
+all:    base
+
+base:   clefos-7-docker.tar.xz Dockerfile
+        docker build --rm --tag clefos/clefos --label VERSION=$(VERSION) . 
+
+clefos-7-docker.tar.xz: createBase.sh
+        ./createBase.sh
+
+push:
+        docker tag clefos/clefos:latest clefos/clefos:clefos7
+        docker tag clefos/clefos:latest clefos/clefos:$(VERSION)
+        docker tag clefos/clefos:latest clefos:clefos7
+        docker push clefos/clefos:latest
+        docker push clefos/clefos:clefos7
+        docker push clefos/clefos:$(VERSION)
+
+clean:
+        rm -f clefos-7-docker.tar.xz
+        docker rmi clefos/clefos:latest || true
+        docker rmi clefos/clefos:clefos7 || true
+        docker rmi clefos/clefos:$(VERSION) || true
+```
+The createBase.sh script is used to create the tarball for the docker build command. The script uses the yum command with the `tsflags=nodocs` option set to reduce the size of the image. In addition a lot of the locale files are eliminated from the image. 
+
+The VERSION file contains the id of the current ClefOS version and will be added as a label within the image.
 ## Rolling builds
 
 The ClefOS Project offers regularly updated images for all active releases. These images will be updated monthly or as needed for emergency fixes. These rolling updates are tagged with the major version number only. For example: `docker pull clefos:7`
