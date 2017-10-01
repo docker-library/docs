@@ -52,3 +52,53 @@ The following Docker Hub features can help with the task of keeping your depende
 
 -	[Automated Builds](https://docs.docker.com/docker-hub/builds/) let Docker Hub automatically build your Dockerfile each time you push changes to it.
 -	[Repository Links](https://docs.docker.com/docker-hub/builds/#repository-links) can ensure that your image is also rebuilt any time `%%REPO%%` is updated.
+
+# wordpress:cli
+
+wordpress:cli containers provide a means of manipulating wordpress in wordpress:alpine containers using [wp-cli](http://wp-cli.org/). Both containers must have read-write access to the files of the WordPress site. For example, run `docker-compose up` with the following docker-compose.yml:
+
+```console
+	version: '3.1'
+	
+	services:
+	
+	  wordpress:
+	    image: wordpress:fpm-alpine
+	    container_name: wordpress
+	    domainname: docker
+	    ports:
+	      - 8080:80
+	    environment:
+	      WORDPRESS_DB_PASSWORD: example
+	    volumes:
+	      - "mysite:/var/www/html"
+	
+	
+	  mysql:
+	    image: mysql:5.7
+	    environment:
+	      MYSQL_ROOT_PASSWORD: example
+	
+	  wp-cli:
+	    image: wordpress:cli
+	    container_name: wp-cli
+	    volumes: 
+	      - "mysite:/var/www/html"
+	
+	volumes:
+	  mysite:
+```
+
+Create the following `wp` alias:
+
+```console
+alias wp="docker-compose run --rm wp-cli"
+```
+
+Then the `wp` alias can be used to run [wp-cli](http://wp-cli.org/) commands e.g.
+
+```console
+wp core install --url="wordpress.docker"  --title="A Test Blog" --admin_user="admin" --admin_password="password" --admin_email="admin@example.org"
+```
+
+N.B. This will not work with the vanilla wordpress image, as www-data will have a different id in each container.
