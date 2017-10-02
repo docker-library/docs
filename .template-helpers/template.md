@@ -13,6 +13,9 @@
 -	**Maintained by**:  
 	%%MAINTAINER%%
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	%%ARCHES%%
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/%%REPO%%/` directory](https://github.com/docker-library/repo-info/blob/master/repos/%%REPO%%) ([history](https://github.com/docker-library/repo-info/commits/master/repos/%%REPO%%))  
 	(image metadata, transfer size, etc)

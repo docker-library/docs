@@ -105,6 +105,11 @@ for image in "${images[@]}"; do
 		[ "$partial" ]
 		replace_field "$targetFile" 'TAGS' "$partial"
 
+		echo '  ARCHES => arches.sh "'"$repo"'"'
+		arches="$("$helperDir/arches.sh" "$repo")"
+		[ "$arches" ]
+		replace_field "$targetFile" 'ARCHES' "$arches"
+
 		echo '  CONTENT => '"$repo"'/content.md'
 		replace_field "$targetFile" 'CONTENT' "$(cat "$repo/content.md")"
 
