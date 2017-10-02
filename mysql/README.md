@@ -32,6 +32,9 @@ WARNING:
 -	**Maintained by**:  
 	[the Docker Community and the MySQL Team](https://github.com/docker-library/mysql)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/mysql/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/mysql/` directory](https://github.com/docker-library/repo-info/blob/master/repos/mysql) ([history](https://github.com/docker-library/repo-info/commits/master/repos/mysql))  
 	(image metadata, transfer size, etc)

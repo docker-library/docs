@@ -32,6 +32,9 @@ WARNING:
 -	**Maintained by**:  
 	[GeoNetwork opensource](https://github.com/geonetwork/docker-geonetwork)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/geonetwork/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/geonetwork/` directory](https://github.com/docker-library/repo-info/blob/master/repos/geonetwork) ([history](https://github.com/docker-library/repo-info/commits/master/repos/geonetwork))  
 	(image metadata, transfer size, etc)

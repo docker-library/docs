@@ -30,6 +30,9 @@ WARNING:
 -	**Maintained by**:  
 	[Convertigo](https://github.com/convertigo/docker)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/convertigo/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/convertigo/` directory](https://github.com/docker-library/repo-info/blob/master/repos/convertigo) ([history](https://github.com/docker-library/repo-info/commits/master/repos/convertigo))  
 	(image metadata, transfer size, etc)

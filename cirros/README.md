@@ -30,6 +30,9 @@ WARNING:
 -	**Maintained by**:  
 	[the Docker Community](https://github.com/ewindisch/docker-cirros)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/cirros/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/cirros/` directory](https://github.com/docker-library/repo-info/blob/master/repos/cirros) ([history](https://github.com/docker-library/repo-info/commits/master/repos/cirros))  
 	(image metadata, transfer size, etc)

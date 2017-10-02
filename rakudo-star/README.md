@@ -29,6 +29,9 @@ WARNING:
 -	**Maintained by**:  
 	[the Perl 6 Community](https://github.com/perl6/docker)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/rakudo-star/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/rakudo-star/` directory](https://github.com/docker-library/repo-info/blob/master/repos/rakudo-star) ([history](https://github.com/docker-library/repo-info/commits/master/repos/rakudo-star))  
 	(image metadata, transfer size, etc)

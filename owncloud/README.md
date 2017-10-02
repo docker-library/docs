@@ -34,6 +34,9 @@ WARNING:
 -	**Maintained by**:  
 	[the Docker Community](https://github.com/docker-library/owncloud)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/owncloud/), [`arm32v5`](https://hub.docker.com/r/arm32v5/owncloud/), [`arm32v7`](https://hub.docker.com/r/arm32v7/owncloud/), [`arm64v8`](https://hub.docker.com/r/arm64v8/owncloud/), [`i386`](https://hub.docker.com/r/i386/owncloud/), [`ppc64le`](https://hub.docker.com/r/ppc64le/owncloud/), [`s390x`](https://hub.docker.com/r/s390x/owncloud/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/owncloud/` directory](https://github.com/docker-library/repo-info/blob/master/repos/owncloud) ([history](https://github.com/docker-library/repo-info/commits/master/repos/owncloud))  
 	(image metadata, transfer size, etc)

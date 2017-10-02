@@ -32,6 +32,9 @@ WARNING:
 -	**Maintained by**:  
 	[SonarSource](https://github.com/SonarSource/docker-sonarqube)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/sonarqube/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/sonarqube/` directory](https://github.com/docker-library/repo-info/blob/master/repos/sonarqube) ([history](https://github.com/docker-library/repo-info/commits/master/repos/sonarqube))  
 	(image metadata, transfer size, etc)

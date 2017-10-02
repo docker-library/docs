@@ -46,6 +46,9 @@ WARNING:
 -	**Maintained by**:  
 	[NeuroDebian](https://github.com/neurodebian/dockerfiles)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/neurodebian/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/neurodebian/` directory](https://github.com/docker-library/repo-info/blob/master/repos/neurodebian) ([history](https://github.com/docker-library/repo-info/commits/master/repos/neurodebian))  
 	(image metadata, transfer size, etc)

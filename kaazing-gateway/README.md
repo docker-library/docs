@@ -29,6 +29,9 @@ WARNING:
 -	**Maintained by**:  
 	[the Kaazing Docker Maintainers](https://github.com/kaazing/gateway.docker)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/kaazing-gateway/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/kaazing-gateway/` directory](https://github.com/docker-library/repo-info/blob/master/repos/kaazing-gateway) ([history](https://github.com/docker-library/repo-info/commits/master/repos/kaazing-gateway))  
 	(image metadata, transfer size, etc)

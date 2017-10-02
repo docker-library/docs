@@ -30,6 +30,9 @@ WARNING:
 -	**Maintained by**:  
 	[Haris and Thomas (of the Docker Community)](https://github.com/swiftdocker/docker-swift), [with the approval of the Swift Project](https://lists.swift.org/pipermail/swift-dev/Week-of-Mon-20160118/000908.html)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/swift/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/swift/` directory](https://github.com/docker-library/repo-info/blob/master/repos/swift) ([history](https://github.com/docker-library/repo-info/commits/master/repos/swift))  
 	(image metadata, transfer size, etc)

@@ -36,6 +36,9 @@ WARNING:
 -	**Maintained by**:  
 	[IBM Runtime Technologies](https://github.com/ibmruntimes/ci.docker)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/ibmjava/), [`i386`](https://hub.docker.com/r/i386/ibmjava/), [`ppc64le`](https://hub.docker.com/r/ppc64le/ibmjava/), [`s390x`](https://hub.docker.com/r/s390x/ibmjava/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/ibmjava/` directory](https://github.com/docker-library/repo-info/blob/master/repos/ibmjava) ([history](https://github.com/docker-library/repo-info/commits/master/repos/ibmjava))  
 	(image metadata, transfer size, etc)

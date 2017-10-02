@@ -30,6 +30,9 @@ WARNING:
 -	**Maintained by**:  
 	[Apache CouchDB](https://github.com/klaemo/docker-couchdb)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/couchdb/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/couchdb/` directory](https://github.com/docker-library/repo-info/blob/master/repos/couchdb) ([history](https://github.com/docker-library/repo-info/commits/master/repos/couchdb))  
 	(image metadata, transfer size, etc)

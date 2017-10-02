@@ -29,6 +29,9 @@ WARNING:
 -	**Maintained by**:  
 	[the Docker Community](https://github.com/docker-library/julia)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/julia/), [`arm32v7`](https://hub.docker.com/r/arm32v7/julia/), [`i386`](https://hub.docker.com/r/i386/julia/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/julia/` directory](https://github.com/docker-library/repo-info/blob/master/repos/julia) ([history](https://github.com/docker-library/repo-info/commits/master/repos/julia))  
 	(image metadata, transfer size, etc)

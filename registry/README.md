@@ -30,6 +30,9 @@ WARNING:
 -	**Maintained by**:  
 	[Docker, Inc.](https://github.com/docker/distribution-library-image)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/registry/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/registry/` directory](https://github.com/docker-library/repo-info/blob/master/repos/registry) ([history](https://github.com/docker-library/repo-info/commits/master/repos/registry))  
 	(image metadata, transfer size, etc)

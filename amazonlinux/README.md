@@ -32,6 +32,9 @@ WARNING:
 -	**Maintained by**:  
 	[the Amazon Linux Team](https://github.com/aws/amazon-linux-docker-images)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/amazonlinux/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/amazonlinux/` directory](https://github.com/docker-library/repo-info/blob/master/repos/amazonlinux) ([history](https://github.com/docker-library/repo-info/commits/master/repos/amazonlinux))  
 	(image metadata, transfer size, etc)

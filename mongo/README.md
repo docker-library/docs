@@ -53,6 +53,9 @@ WARNING:
 -	**Maintained by**:  
 	[the Docker Community](https://github.com/docker-library/mongo)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/mongo/), [`windows-amd64`](https://hub.docker.com/r/winamd64/mongo/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/mongo/` directory](https://github.com/docker-library/repo-info/blob/master/repos/mongo) ([history](https://github.com/docker-library/repo-info/commits/master/repos/mongo))  
 	(image metadata, transfer size, etc)

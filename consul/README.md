@@ -29,6 +29,9 @@ WARNING:
 -	**Maintained by**:  
 	[HashiCorp](https://github.com/hashicorp/docker-consul)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/consul/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/consul/` directory](https://github.com/docker-library/repo-info/blob/master/repos/consul) ([history](https://github.com/docker-library/repo-info/commits/master/repos/consul))  
 	(image metadata, transfer size, etc)

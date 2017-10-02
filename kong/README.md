@@ -32,6 +32,9 @@ WARNING:
 -	**Maintained by**:  
 	[the Mashape Docker Maintainers](https://github.com/Mashape/kong)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/kong/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/kong/` directory](https://github.com/docker-library/repo-info/blob/master/repos/kong) ([history](https://github.com/docker-library/repo-info/commits/master/repos/kong))  
 	(image metadata, transfer size, etc)

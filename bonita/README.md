@@ -30,6 +30,9 @@ WARNING:
 -	**Maintained by**:  
 	[Bonitasoft Community](https://github.com/Bonitasoft-Community/docker_bonita)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/bonita/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/bonita/` directory](https://github.com/docker-library/repo-info/blob/master/repos/bonita) ([history](https://github.com/docker-library/repo-info/commits/master/repos/bonita))  
 	(image metadata, transfer size, etc)

@@ -29,6 +29,9 @@ WARNING:
 -	**Maintained by**:  
 	[Rocket.Chat](https://github.com/RocketChat/Docker.Official.Image)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/rocket.chat/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/rocket.chat/` directory](https://github.com/docker-library/repo-info/blob/master/repos/rocket.chat) ([history](https://github.com/docker-library/repo-info/commits/master/repos/rocket.chat))  
 	(image metadata, transfer size, etc)

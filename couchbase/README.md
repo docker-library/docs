@@ -32,6 +32,9 @@ WARNING:
 -	**Maintained by**:  
 	[the Couchbase Docker Team](https://github.com/couchbase/docker)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/couchbase/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/couchbase/` directory](https://github.com/docker-library/repo-info/blob/master/repos/couchbase) ([history](https://github.com/docker-library/repo-info/commits/master/repos/couchbase))  
 	(image metadata, transfer size, etc)

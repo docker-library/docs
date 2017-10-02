@@ -30,6 +30,9 @@ WARNING:
 -	**Maintained by**:  
 	[Piwik Analytics](https://github.com/piwik/docker-piwik)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/piwik/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/piwik/` directory](https://github.com/docker-library/repo-info/blob/master/repos/piwik) ([history](https://github.com/docker-library/repo-info/commits/master/repos/piwik))  
 	(image metadata, transfer size, etc)

@@ -36,6 +36,9 @@ WARNING:
 -	**Maintained by**:  
 	[Docker, Inc.](https://github.com/docker/notary-official-images)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/notary/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/notary/` directory](https://github.com/docker-library/repo-info/blob/master/repos/notary) ([history](https://github.com/docker-library/repo-info/commits/master/repos/notary))  
 	(image metadata, transfer size, etc)

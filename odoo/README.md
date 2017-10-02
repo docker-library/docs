@@ -31,6 +31,9 @@ WARNING:
 -	**Maintained by**:  
 	[Odoo](https://github.com/odoo/docker)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/odoo/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/odoo/` directory](https://github.com/docker-library/repo-info/blob/master/repos/odoo) ([history](https://github.com/docker-library/repo-info/commits/master/repos/odoo))  
 	(image metadata, transfer size, etc)

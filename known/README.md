@@ -29,6 +29,9 @@ WARNING:
 -	**Maintained by**:  
 	[Known](https://github.com/idno/Known-Docker)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/known/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/known/` directory](https://github.com/docker-library/repo-info/blob/master/repos/known) ([history](https://github.com/docker-library/repo-info/commits/master/repos/known))  
 	(image metadata, transfer size, etc)

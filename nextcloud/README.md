@@ -32,6 +32,9 @@ WARNING:
 -	**Maintained by**:  
 	[Nextcloud](https://github.com/nextcloud/docker)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/nextcloud/), [`arm32v7`](https://hub.docker.com/r/arm32v7/nextcloud/), [`arm64v8`](https://hub.docker.com/r/arm64v8/nextcloud/), [`i386`](https://hub.docker.com/r/i386/nextcloud/), [`ppc64le`](https://hub.docker.com/r/ppc64le/nextcloud/), [`s390x`](https://hub.docker.com/r/s390x/nextcloud/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/nextcloud/` directory](https://github.com/docker-library/repo-info/blob/master/repos/nextcloud) ([history](https://github.com/docker-library/repo-info/commits/master/repos/nextcloud))  
 	(image metadata, transfer size, etc)

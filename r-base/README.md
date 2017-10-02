@@ -29,6 +29,9 @@ WARNING:
 -	**Maintained by**:  
 	[the Rocker Community](https://github.com/rocker-org/rocker)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/r-base/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/r-base/` directory](https://github.com/docker-library/repo-info/blob/master/repos/r-base) ([history](https://github.com/docker-library/repo-info/commits/master/repos/r-base))  
 	(image metadata, transfer size, etc)

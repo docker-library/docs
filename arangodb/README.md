@@ -30,6 +30,9 @@ WARNING:
 -	**Maintained by**:  
 	[ArangoDB](https://github.com/arangodb/arangodb-docker)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/arangodb/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/arangodb/` directory](https://github.com/docker-library/repo-info/blob/master/repos/arangodb) ([history](https://github.com/docker-library/repo-info/commits/master/repos/arangodb))  
 	(image metadata, transfer size, etc)

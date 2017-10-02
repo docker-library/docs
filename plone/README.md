@@ -30,6 +30,9 @@ WARNING:
 -	**Maintained by**:  
 	[the Plone Foundation](https://github.com/plone/plone.docker)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/plone/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/plone/` directory](https://github.com/docker-library/repo-info/blob/master/repos/plone) ([history](https://github.com/docker-library/repo-info/commits/master/repos/plone))  
 	(image metadata, transfer size, etc)

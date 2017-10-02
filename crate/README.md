@@ -30,6 +30,9 @@ WARNING:
 -	**Maintained by**:  
 	[Crate.io](https://github.com/crate/docker-crate)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/crate/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/crate/` directory](https://github.com/docker-library/repo-info/blob/master/repos/crate) ([history](https://github.com/docker-library/repo-info/commits/master/repos/crate))  
 	(image metadata, transfer size, etc)

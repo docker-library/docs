@@ -34,6 +34,9 @@ WARNING:
 -	**Maintained by**:  
 	[the Perl Community](https://github.com/Perl/docker-perl)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/perl/), [`arm64v8`](https://hub.docker.com/r/arm64v8/perl/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/perl/` directory](https://github.com/docker-library/repo-info/blob/master/repos/perl) ([history](https://github.com/docker-library/repo-info/commits/master/repos/perl))  
 	(image metadata, transfer size, etc)

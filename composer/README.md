@@ -30,6 +30,9 @@ WARNING:
 -	**Maintained by**:  
 	[Composer](https://github.com/composer/docker)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/composer/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/composer/` directory](https://github.com/docker-library/repo-info/blob/master/repos/composer) ([history](https://github.com/docker-library/repo-info/commits/master/repos/composer))  
 	(image metadata, transfer size, etc)

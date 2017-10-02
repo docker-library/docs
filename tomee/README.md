@@ -52,6 +52,9 @@ WARNING:
 -	**Maintained by**:  
 	[the Docker Community](https://github.com/tomitribe/docker-tomee)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/tomee/), [`arm32v5`](https://hub.docker.com/r/arm32v5/tomee/), [`arm32v7`](https://hub.docker.com/r/arm32v7/tomee/), [`arm64v8`](https://hub.docker.com/r/arm64v8/tomee/), [`i386`](https://hub.docker.com/r/i386/tomee/), [`ppc64le`](https://hub.docker.com/r/ppc64le/tomee/), [`s390x`](https://hub.docker.com/r/s390x/tomee/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/tomee/` directory](https://github.com/docker-library/repo-info/blob/master/repos/tomee) ([history](https://github.com/docker-library/repo-info/commits/master/repos/tomee))  
 	(image metadata, transfer size, etc)

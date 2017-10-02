@@ -46,6 +46,9 @@ WARNING:
 -	**Maintained by**:  
 	[the Solr Community](https://github.com/docker-solr/docker-solr)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/solr/), [`arm32v5`](https://hub.docker.com/r/arm32v5/solr/), [`arm32v7`](https://hub.docker.com/r/arm32v7/solr/), [`arm64v8`](https://hub.docker.com/r/arm64v8/solr/), [`i386`](https://hub.docker.com/r/i386/solr/), [`ppc64le`](https://hub.docker.com/r/ppc64le/solr/), [`s390x`](https://hub.docker.com/r/s390x/solr/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/solr/` directory](https://github.com/docker-library/repo-info/blob/master/repos/solr) ([history](https://github.com/docker-library/repo-info/commits/master/repos/solr))  
 	(image metadata, transfer size, etc)

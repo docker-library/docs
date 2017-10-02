@@ -32,6 +32,9 @@ WARNING:
 -	**Maintained by**:  
 	[the Docker Community](https://github.com/31z4/storm-docker)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/storm/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/storm/` directory](https://github.com/docker-library/repo-info/blob/master/repos/storm) ([history](https://github.com/docker-library/repo-info/commits/master/repos/storm))  
 	(image metadata, transfer size, etc)

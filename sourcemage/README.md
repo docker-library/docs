@@ -29,6 +29,9 @@ WARNING:
 -	**Maintained by**:  
 	[the Source Mage Community](https://github.com/vaygr/docker-sourcemage)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/sourcemage/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/sourcemage/` directory](https://github.com/docker-library/repo-info/blob/master/repos/sourcemage) ([history](https://github.com/docker-library/repo-info/commits/master/repos/sourcemage))  
 	(image metadata, transfer size, etc)

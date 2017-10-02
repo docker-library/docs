@@ -38,6 +38,9 @@ WARNING:
 -	**Maintained by**:  
 	[the Open Source Robotics Foundation](https://github.com/osrf/docker_images)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/gazebo/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/gazebo/` directory](https://github.com/docker-library/repo-info/blob/master/repos/gazebo) ([history](https://github.com/docker-library/repo-info/commits/master/repos/gazebo))  
 	(image metadata, transfer size, etc)

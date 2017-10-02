@@ -32,6 +32,9 @@ WARNING:
 -	**Maintained by**:  
 	[Joomla!](https://github.com/joomla/docker-joomla)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/joomla/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/joomla/` directory](https://github.com/docker-library/repo-info/blob/master/repos/joomla) ([history](https://github.com/docker-library/repo-info/commits/master/repos/joomla))  
 	(image metadata, transfer size, etc)

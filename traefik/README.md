@@ -32,6 +32,9 @@ WARNING:
 -	**Maintained by**:  
 	[the Træfik Project](https://github.com/containous/traefik-library-image)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/traefik/), [`arm32v6`](https://hub.docker.com/r/arm32v6/traefik/), [`arm64v8`](https://hub.docker.com/r/arm64v8/traefik/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/traefik/` directory](https://github.com/docker-library/repo-info/blob/master/repos/traefik) ([history](https://github.com/docker-library/repo-info/commits/master/repos/traefik))  
 	(image metadata, transfer size, etc)

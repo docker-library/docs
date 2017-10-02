@@ -29,6 +29,9 @@ WARNING:
 -	**Maintained by**:  
 	[mongo-express](https://github.com/mongo-express/mongo-express-docker)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/mongo-express/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/mongo-express/` directory](https://github.com/docker-library/repo-info/blob/master/repos/mongo-express) ([history](https://github.com/docker-library/repo-info/commits/master/repos/mongo-express))  
 	(image metadata, transfer size, etc)

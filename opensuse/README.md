@@ -33,6 +33,9 @@ WARNING:
 -	**Maintained by**:  
 	[the SUSE containers team](https://github.com/openSUSE/docker-containers-build)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/opensuse/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/opensuse/` directory](https://github.com/docker-library/repo-info/blob/master/repos/opensuse) ([history](https://github.com/docker-library/repo-info/commits/master/repos/opensuse))  
 	(image metadata, transfer size, etc)

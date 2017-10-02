@@ -30,6 +30,9 @@ WARNING:
 -	**Maintained by**:  
 	[Mageia Developers](https://github.com/juanluisbaptiste/docker-brew-mageia)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/mageia/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/mageia/` directory](https://github.com/docker-library/repo-info/blob/master/repos/mageia) ([history](https://github.com/docker-library/repo-info/commits/master/repos/mageia))  
 	(image metadata, transfer size, etc)

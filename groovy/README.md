@@ -58,6 +58,9 @@ WARNING:
 -	**Maintained by**:  
 	[the Apache Groovy project](https://github.com/groovy/docker-groovy)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/groovy/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/groovy/` directory](https://github.com/docker-library/repo-info/blob/master/repos/groovy) ([history](https://github.com/docker-library/repo-info/commits/master/repos/groovy))  
 	(image metadata, transfer size, etc)

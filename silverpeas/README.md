@@ -29,6 +29,9 @@ WARNING:
 -	**Maintained by**:  
 	[Silverpeas](https://github.com/Silverpeas/docker-silverpeas-prod)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/silverpeas/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/silverpeas/` directory](https://github.com/docker-library/repo-info/blob/master/repos/silverpeas) ([history](https://github.com/docker-library/repo-info/commits/master/repos/silverpeas))  
 	(image metadata, transfer size, etc)

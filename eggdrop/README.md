@@ -31,6 +31,9 @@ WARNING:
 -	**Maintained by**:  
 	[Eggheads (the Eggdrop community)](https://github.com/eggheads/eggdrop-docker)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/eggdrop/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/eggdrop/` directory](https://github.com/docker-library/repo-info/blob/master/repos/eggdrop) ([history](https://github.com/docker-library/repo-info/commits/master/repos/eggdrop))  
 	(image metadata, transfer size, etc)

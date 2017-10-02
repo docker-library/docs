@@ -30,6 +30,9 @@ WARNING:
 -	**Maintained by**:  
 	[the Docker Community](https://github.com/ahawkins/docker-thrift)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/thrift/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/thrift/` directory](https://github.com/docker-library/repo-info/blob/master/repos/thrift) ([history](https://github.com/docker-library/repo-info/commits/master/repos/thrift))  
 	(image metadata, transfer size, etc)

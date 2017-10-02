@@ -100,6 +100,9 @@ WARNING:
 -	**Maintained by**:  
 	[Neo4j](https://github.com/neo4j/docker-neo4j)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/neo4j/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/neo4j/` directory](https://github.com/docker-library/repo-info/blob/master/repos/neo4j) ([history](https://github.com/docker-library/repo-info/commits/master/repos/neo4j))  
 	(image metadata, transfer size, etc)

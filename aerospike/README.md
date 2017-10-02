@@ -31,6 +31,9 @@ WARNING:
 -	**Maintained by**:  
 	[Aerospike, Inc.](https://github.com/aerospike/aerospike-server.docker)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/aerospike/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/aerospike/` directory](https://github.com/docker-library/repo-info/blob/master/repos/aerospike) ([history](https://github.com/docker-library/repo-info/commits/master/repos/aerospike))  
 	(image metadata, transfer size, etc)

@@ -35,6 +35,9 @@ If a representative of the CRUX community would like to step up and continue mai
 -	**Maintained by**:  
 	currently unmainainted (see deprecation notice)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/crux/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/crux/` directory](https://github.com/docker-library/repo-info/blob/master/repos/crux) ([history](https://github.com/docker-library/repo-info/commits/master/repos/crux))  
 	(image metadata, transfer size, etc)

@@ -29,6 +29,9 @@ WARNING:
 -	**Maintained by**:  
 	[Intel Corporation](https://github.com/clearlinux/docker-brew-clearlinux)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/clearlinux/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/clearlinux/` directory](https://github.com/docker-library/repo-info/blob/master/repos/clearlinux) ([history](https://github.com/docker-library/repo-info/commits/master/repos/clearlinux))  
 	(image metadata, transfer size, etc)

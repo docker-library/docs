@@ -34,6 +34,9 @@ This image has been deprecated in favor of the [`jenkins/jenkins:lts`](https://h
 -	**Maintained by**:  
 	[the Jenkins Project](https://github.com/cloudbees/jenkins-ci.org-docker)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/jenkins/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/jenkins/` directory](https://github.com/docker-library/repo-info/blob/master/repos/jenkins) ([history](https://github.com/docker-library/repo-info/commits/master/repos/jenkins))  
 	(image metadata, transfer size, etc)

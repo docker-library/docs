@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.3`, `1.3.8`, `1.3.8.2`, `latest` (*chronograf/1.3/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/adce88d7db5a51ba0be77af481780964db39e110/chronograf/1.3/Dockerfile)
--	[`1.3-alpine`, `1.3.8-alpine`, `1.3.8.2-alpine`, `alpine` (*chronograf/1.3/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/adce88d7db5a51ba0be77af481780964db39e110/chronograf/1.3/alpine/Dockerfile)
+-	[`1.3`, `1.3.8`, `1.3.8.3`, `latest` (*chronograf/1.3/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/acbcd5dacee618f24a2c60c3505e49323ac1f676/chronograf/1.3/Dockerfile)
+-	[`1.3-alpine`, `1.3.8-alpine`, `1.3.8.3-alpine`, `alpine` (*chronograf/1.3/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/acbcd5dacee618f24a2c60c3505e49323ac1f676/chronograf/1.3/alpine/Dockerfile)
 
 # Quick reference
 
@@ -29,6 +29,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[InfluxData](https://github.com/influxdata/influxdata-docker)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/chronograf/), [`arm32v7`](https://hub.docker.com/r/arm32v7/chronograf/), [`arm64v8`](https://hub.docker.com/r/arm64v8/chronograf/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/chronograf/` directory](https://github.com/docker-library/repo-info/blob/master/repos/chronograf) ([history](https://github.com/docker-library/repo-info/commits/master/repos/chronograf))  

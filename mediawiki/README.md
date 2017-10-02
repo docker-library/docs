@@ -31,6 +31,9 @@ WARNING:
 -	**Maintained by**:  
 	[Wikimedia Foundation & Docker Community](https://github.com/wikimedia/mediawiki-docker)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/mediawiki/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/mediawiki/` directory](https://github.com/docker-library/repo-info/blob/master/repos/mediawiki) ([history](https://github.com/docker-library/repo-info/commits/master/repos/mediawiki))  
 	(image metadata, transfer size, etc)

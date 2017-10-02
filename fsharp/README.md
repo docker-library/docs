@@ -33,6 +33,9 @@ WARNING:
 -	**Maintained by**:  
 	[the F# Community](https://github.com/fsprojects/docker-fsharp)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/fsharp/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/fsharp/` directory](https://github.com/docker-library/repo-info/blob/master/repos/fsharp) ([history](https://github.com/docker-library/repo-info/commits/master/repos/fsharp))  
 	(image metadata, transfer size, etc)

@@ -39,6 +39,9 @@ WARNING:
 -	**Maintained by**:  
 	[the Oracle Linux Product Team](https://github.com/oracle/docker-images)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/oraclelinux/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/oraclelinux/` directory](https://github.com/docker-library/repo-info/blob/master/repos/oraclelinux) ([history](https://github.com/docker-library/repo-info/commits/master/repos/oraclelinux))  
 	(image metadata, transfer size, etc)

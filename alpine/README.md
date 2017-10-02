@@ -35,6 +35,9 @@ WARNING:
 -	**Maintained by**:  
 	[Glider Labs](https://github.com/gliderlabs/docker-alpine) (an Alpine community contributor)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/alpine/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/alpine/` directory](https://github.com/docker-library/repo-info/blob/master/repos/alpine) ([history](https://github.com/docker-library/repo-info/commits/master/repos/alpine))  
 	(image metadata, transfer size, etc)

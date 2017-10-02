@@ -29,6 +29,9 @@ WARNING:
 -	**Maintained by**:  
 	[the Eclipse Foundation](https://github.com/eclipse/mosquitto)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/eclipse-mosquitto/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/eclipse-mosquitto/` directory](https://github.com/docker-library/repo-info/blob/master/repos/eclipse-mosquitto) ([history](https://github.com/docker-library/repo-info/commits/master/repos/eclipse-mosquitto))  
 	(image metadata, transfer size, etc)

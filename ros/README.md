@@ -52,6 +52,9 @@ WARNING:
 -	**Maintained by**:  
 	[the Open Source Robotics Foundation](https://github.com/osrf/docker_images)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/ros/), [`arm32v7`](https://hub.docker.com/r/arm32v7/ros/), [`arm64v8`](https://hub.docker.com/r/arm64v8/ros/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/ros/` directory](https://github.com/docker-library/repo-info/blob/master/repos/ros) ([history](https://github.com/docker-library/repo-info/commits/master/repos/ros))  
 	(image metadata, transfer size, etc)

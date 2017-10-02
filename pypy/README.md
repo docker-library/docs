@@ -34,6 +34,9 @@ WARNING:
 -	**Maintained by**:  
 	[the Docker Community](https://github.com/docker-library/pypy)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/pypy/), [`arm32v5`](https://hub.docker.com/r/arm32v5/pypy/), [`arm32v7`](https://hub.docker.com/r/arm32v7/pypy/), [`i386`](https://hub.docker.com/r/i386/pypy/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/pypy/` directory](https://github.com/docker-library/repo-info/blob/master/repos/pypy) ([history](https://github.com/docker-library/repo-info/commits/master/repos/pypy))  
 	(image metadata, transfer size, etc)

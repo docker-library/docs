@@ -29,6 +29,9 @@ WARNING:
 -	**Maintained by**:  
 	[Docker, Inc.](https://github.com/docker/swarm-library-image)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/swarm/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/swarm/` directory](https://github.com/docker-library/repo-info/blob/master/repos/swarm) ([history](https://github.com/docker-library/repo-info/commits/master/repos/swarm))  
 	(image metadata, transfer size, etc)

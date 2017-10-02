@@ -32,6 +32,9 @@ WARNING:
 -	**Maintained by**:  
 	[the Docker Community](https://github.com/docker-library/cassandra)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/cassandra/), [`arm64v8`](https://hub.docker.com/r/arm64v8/cassandra/), [`i386`](https://hub.docker.com/r/i386/cassandra/), [`ppc64le`](https://hub.docker.com/r/ppc64le/cassandra/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/cassandra/` directory](https://github.com/docker-library/repo-info/blob/master/repos/cassandra) ([history](https://github.com/docker-library/repo-info/commits/master/repos/cassandra))  
 	(image metadata, transfer size, etc)

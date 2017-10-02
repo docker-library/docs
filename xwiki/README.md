@@ -32,6 +32,9 @@ WARNING:
 -	**Maintained by**:  
 	[the XWiki Community](https://github.com/xwiki-contrib/docker-xwiki)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/xwiki/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/xwiki/` directory](https://github.com/docker-library/repo-info/blob/master/repos/xwiki) ([history](https://github.com/docker-library/repo-info/commits/master/repos/xwiki))  
 	(image metadata, transfer size, etc)
