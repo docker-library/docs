@@ -16,8 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2017.03.0.20170812`, `2017.03`, `latest` (*Dockerfile*)](https://github.com/aws/amazon-linux-docker-images/blob/577139a6f2571e3adb59cfd34d61bc07e2fba238/Dockerfile)
--	[`2017.03.0.20170812-with-sources`, `2017.03-with-sources`, `with-sources` (*Dockerfile*)](https://github.com/aws/amazon-linux-docker-images/blob/47f91aec4a189232a7feb1ec544a3a6af0347113/Dockerfile)
+-	[`2017.09.0.20170930`, `2017.09`, `latest` (*Dockerfile*)](https://github.com/aws/amazon-linux-docker-images/blob/eb819d6b91ada2f0304d2a24ab9ce2ced0f166ea/Dockerfile)
+-	[`2017.09.0.20170930-with-sources`, `2017.09-with-sources`, `with-sources` (*Dockerfile*)](https://github.com/aws/amazon-linux-docker-images/blob/f13ce885778e5cf48275986b7cf8c321a60b6693/Dockerfile)
+-	[`2017.03.1.20170812`, `2017.03` (*Dockerfile*)](https://github.com/aws/amazon-linux-docker-images/blob/577139a6f2571e3adb59cfd34d61bc07e2fba238/Dockerfile)
+-	[`2017.03.1.20170812-with-sources`, `2017.03-with-sources` (*Dockerfile*)](https://github.com/aws/amazon-linux-docker-images/blob/47f91aec4a189232a7feb1ec544a3a6af0347113/Dockerfile)
 -	[`2016.09.1.20161221`, `2016.09` (*Dockerfile*)](https://github.com/aws/amazon-linux-docker-images/blob/e1b56e68ebd2b274c64e0a0a18ae0a9a8122822d/Dockerfile)
 -	[`2016.09.1.20161221-with-sources`, `2016.09-with-sources` (*Dockerfile*)](https://github.com/aws/amazon-linux-docker-images/blob/2de60e8c98421694c293639659a88ed81ce29298/Dockerfile)
 
@@ -55,7 +57,7 @@ WARNING:
 
 Since 2011, Amazon Linux has been offered in the Amazon Machine Image (AMI) format. The Amazon Linux AMI is a supported and maintained image of Amazon Linux provided by AWS for use on EC2 instances.
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/5ec266624ef52e0d559f7dc5e185bac7938b7e91/amazonlinux/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/9ca9202567ccc25ce110f98bbeb6c929844e05d0/amazonlinux/logo.png)
 
 ## Why should I use Amazon Linux container images?
 
