@@ -32,7 +32,7 @@ Environment vairables are passed to the `run` command for configuring a mongo-ex
 	ME_CONFIG_MONGODB_ADMINUSERNAME | ''              | MongoDB admin username
 	ME_CONFIG_MONGODB_ADMINPASSWORD | ''              | MongoDB admin password
 	ME_CONFIG_MONGODB_PORT          | 27017           | MongoDB port
-	ME_CONFIG_MONGODB_SERVER        | 'mongo'         | MongoDB container name
+	ME_CONFIG_MONGODB_SERVER        | 'mongo'         | MongoDB container name. Use comma delimited list of host names for replica sets.
 	ME_CONFIG_OPTIONS_EDITORTHEME   | 'default'       | mongo-express editor color theme, [more here](http://codemirror.net/demo/theme.html)
 	ME_CONFIG_REQUEST_SIZE          | '100kb'         | Maximum payload size. CRUD operations above this size will fail in [body-parser](https://www.npmjs.com/package/body-parser).
 	ME_CONFIG_SITE_BASEURL          | '/'             | Set the baseUrl to ease mounting at a subdirectory. Remember to include a leading and trailing slash.
@@ -52,13 +52,15 @@ The following are only needed if `ME_CONFIG_MONGODB_ENABLE_ADMIN` is **"false"**
 
 ## Example
 
-	docker run -it --rm \
-	    --name mongo-express \
-	    --link web_db_1:mongo \
-	    -p 8081:8081 \
-	    -e ME_CONFIG_OPTIONS_EDITORTHEME="ambiance" \
-	    -e ME_CONFIG_BASICAUTH_USERNAME="user" \
-	    -e ME_CONFIG_BASICAUTH_PASSWORD="fairly long password" \
-	    mongo-express
+```console
+$ docker run -it --rm \
+    --name mongo-express \
+    --link web_db_1:mongo \
+    -p 8081:8081 \
+    -e ME_CONFIG_OPTIONS_EDITORTHEME="ambiance" \
+    -e ME_CONFIG_BASICAUTH_USERNAME="user" \
+    -e ME_CONFIG_BASICAUTH_PASSWORD="fairly long password" \
+    mongo-express
+```
 
 This example links to a container name typical of `docker-compose`, changes the editor's color theme, and enables basic authentication.

@@ -10,38 +10,71 @@ fi
 
 dir="$(dirname "$(readlink -f "$BASH_SOURCE")")"
 repoDir="$dir/../$repo"
-url='https://raw.githubusercontent.com/docker-library/official-images/master/library/'"$repo"
+
+# if we haven't set BASHBREW_LIBRARY explicitly (like Jenkins does, for example), don't trust the local library
+if [ -z "${BASHBREW_LIBRARY:-}" ]; then
+	repo="https://github.com/docker-library/official-images/raw/master/library/$repo"
+fi
 
 IFS=$'\n'
-tags=( $(curl -fsSL "$url" | grep -vE '^$|^#' | cut -d':' -f1 | sort -u) )
+tags=( $(bashbrew cat -f '
+	{{- $archSpecific := getenv "ARCH_SPECIFIC_DOCS" -}}
+
+	{{- range .Entries -}}
+		{{- $arch := $archSpecific | ternary arch (.HasArchitecture arch | ternary arch (.Architectures | first)) -}}
+
+		{{- if .HasArchitecture $arch -}}
+			{{- join "\n" .Tags -}}
+			{{- "\n" -}}
+		{{- end -}}
+	{{- end -}}
+' "$repo") )
 unset IFS
 
 text=
+declare -A includedFiles=()
 for tag in "${tags[@]}"; do
-	for f in "$repoDir/variant-$tag.md" "$dir/variant-$tag.md"; do
+	for f in \
+		"$repoDir/variant-$tag.md" "$repoDir/variant-${tag##*-}.md" \
+		"$dir/variant-$tag.md" "$dir/variant-${tag##*-}.md" \
+	; do
+		if [ -n "${includedFiles[$f]}" ]; then
+			# make sure we don't duplicate variant sections
+			break
+		fi
 		if [ -f "$f" ]; then
-			text+=$'\n' # give a little space
-			# because parameter expansion eats the trailing newline
-			text+="$(<"$f")"$'\n'
+			includedFiles[$f]=1
+			if [ -s "$f" ]; then
+				# an empty file can be used to disable a specific "variant" section for an image
+				text+=$'\n' # give a little space
+				text+="$(< "$f")"
+				text+=$'\n' # parameter expansion eats the trailing newline
+			fi
 			break
 		fi
 	done
 done
+
 if [ "$text" ]; then
-	latest=($(curl -fsSL "$url" | grep "latest.*github.com" | sed -e 's!git://github.com/!!' -e 's/@/ /' -))
-	if [ -z "latest" ]; then
-		exit 0 # If not github or no latest tag, we are done here
-	fi
-	dockerfile='https://raw.githubusercontent.com/'"${latest[1]}"'/'"${latest[2]}"'/'"${latest[3]}"'/Dockerfile'
-	baseImage=$(curl -fsSL "$dockerfile" | awk -F '[: \t]+' '$1 == "FROM" { print $2 }')
-	# give a little space
+	buildpacks=
+	potentialTags="$(bashbrew list --uniq "$repo" | cut -d: -f2)"
+	for tag in $potentialTags; do
+		baseImage="$(bashbrew cat -f '{{ .ArchDockerFrom (.TagEntry.Architectures | first) .TagEntry }}' "$repo:$tag")"
+		case "$baseImage" in
+			buildpack-deps:*-*) ;; # "scm", "curl" -- not large images
+			buildpack-deps:*) buildpacks=1; break ;;
+		esac
+	done
+
 	echo
 	echo
-	if [ "$baseImage" = 'buildpack-deps' ]; then
+
+	if [ -n "$buildpacks" ]; then
 		f='variant-buildpacks.md'
 	else
 		f='variant.md'
 	fi
 	[ -f "$repoDir/$f" ] && cat "$repoDir/$f" || cat "$dir/$f"
+
 	echo "$text"
 fi

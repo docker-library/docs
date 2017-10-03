@@ -1,12 +1,51 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "piwik/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "piwik/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
--	[`2.16.0`, `2.16`, `2`, `latest` (*Dockerfile*)](https://github.com/piwik/docker-piwik/blob/ed86be5a1fedc8b6826240c653be2fb13114843b/Dockerfile)
+-	[`3.1.1-apache`, `3.1-apache`, `3-apache`, `apache`, `3.1.1`, `3.1`, `3`, `latest` (*apache/Dockerfile*)](https://github.com/piwik/docker-piwik/blob/dddf0af92dc1a1e5c6bfd4ac26b884aaaad56dd7/apache/Dockerfile)
+-	[`3.1.1-fpm`, `3.1-fpm`, `3-fpm`, `fpm` (*fpm/Dockerfile*)](https://github.com/piwik/docker-piwik/blob/dddf0af92dc1a1e5c6bfd4ac26b884aaaad56dd7/fpm/Dockerfile)
 
-[![](https://badge.imagelayers.io/piwik:latest.svg)](https://imagelayers.io/?images=piwik:2.16.0)
+# Quick reference
 
-For more information about this image and its history, please see [the relevant manifest file (`library/piwik`)](https://github.com/docker-library/official-images/blob/master/library/piwik). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fpiwik).
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `piwik/tag-details.md` file](https://github.com/docker-library/docs/blob/master/piwik/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+-	**Where to file issues**:  
+	[https://github.com/piwik/docker-piwik/issues](https://github.com/piwik/docker-piwik/issues)
+
+-	**Maintained by**:  
+	[Piwik Analytics](https://github.com/piwik/docker-piwik)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/piwik/)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/piwik/` directory](https://github.com/docker-library/repo-info/blob/master/repos/piwik) ([history](https://github.com/docker-library/repo-info/commits/master/repos/piwik))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images PRs with label `library/piwik`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fpiwik)  
+	[official-images repo's `library/piwik` file](https://github.com/docker-library/official-images/blob/master/library/piwik) ([history](https://github.com/docker-library/official-images/commits/master/library/piwik))
+
+-	**Source of this description**:  
+	[docs repo's `piwik/` directory](https://github.com/docker-library/docs/tree/master/piwik) ([history](https://github.com/docker-library/docs/commits/master/piwik))
+
+-	**Supported Docker versions**:  
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # Piwik
 
@@ -20,7 +59,7 @@ Piwik is the leading open-source analytics platform that gives you more than jus
 -	User-centric insights
 -	Customisable and extensible
 
-![logo](https://rawgit.com/docker-library/docs/db93419075dcb0e24c48bba055582180df9438ea/piwik/logo.svg)
+![logo](https://cdn.rawgit.com/docker-library/docs/db93419075dcb0e24c48bba055582180df9438ea/piwik/logo.svg)
 
 # How to use this image
 
@@ -60,29 +99,3 @@ This product includes GeoLite data created by MaxMind, available from [http://ww
 # License
 
 View [license information](https://github.com/piwik/piwik/blob/master/LEGALNOTICE) for the software contained in this image.
-
-# Supported Docker versions
-
-This image is officially supported on Docker version 1.11.0.
-
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Documentation
-
-Documentation for this image is stored in the [`piwik/` directory](https://github.com/docker-library/docs/tree/master/piwik) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/piwik/docker-piwik/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/piwik/docker-piwik/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.

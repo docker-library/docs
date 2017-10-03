@@ -1,25 +1,53 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "mono/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "mono/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
--	[`3.10.0`, `3.10` (*3.10.0/Dockerfile*)](https://github.com/mono/docker/blob/adc7a3ec47f7d590f75a4dec0203a2103daf8db0/3.10.0/Dockerfile)
--	[`3.10.0-onbuild`, `3.10-onbuild` (*3.10.0/onbuild/Dockerfile*)](https://github.com/mono/docker/blob/66226b17125b72685c2022e4fecaee2716b0fb3a/3.10.0/onbuild/Dockerfile)
--	[`3.12.1`, `3.12.0`, `3.12`, `3` (*3.12.1/Dockerfile*)](https://github.com/mono/docker/blob/810b0cd85839b4b62706935a804fee63d2eb3285/3.12.1/Dockerfile)
--	[`3.12.1-onbuild`, `3.12.0-onbuild`, `3.12-onbuild`, `3-onbuild` (*3.12.1/onbuild/Dockerfile*)](https://github.com/mono/docker/blob/39c80bc024a4797c119c895fda70024fbc14d5b9/3.12.1/onbuild/Dockerfile)
--	[`3.8.0`, `3.8` (*3.8.0/Dockerfile*)](https://github.com/mono/docker/blob/adc7a3ec47f7d590f75a4dec0203a2103daf8db0/3.8.0/Dockerfile)
--	[`3.8.0-onbuild`, `3.8-onbuild` (*3.8.0/onbuild/Dockerfile*)](https://github.com/mono/docker/blob/66226b17125b72685c2022e4fecaee2716b0fb3a/3.8.0/onbuild/Dockerfile)
--	[`4.0.5.1`, `4.0.5`, `4.0` (*4.0.5.1/Dockerfile*)](https://github.com/mono/docker/blob/810b0cd85839b4b62706935a804fee63d2eb3285/4.0.5.1/Dockerfile)
--	[`4.0.5.1-onbuild`, `4.0.5-onbuild`, `4.0-onbuild` (*4.0.5.1/onbuild/Dockerfile*)](https://github.com/mono/docker/blob/39c80bc024a4797c119c895fda70024fbc14d5b9/4.0.5.1/onbuild/Dockerfile)
--	[`4.2.1.102`, `4.2.1` (*4.2.1.102/Dockerfile*)](https://github.com/mono/docker/blob/39c80bc024a4797c119c895fda70024fbc14d5b9/4.2.1.102/Dockerfile)
--	[`4.2.1.102-onbuild`, `4.2.1-onbuild` (*4.2.1.102/onbuild/Dockerfile*)](https://github.com/mono/docker/blob/39c80bc024a4797c119c895fda70024fbc14d5b9/4.2.1.102/onbuild/Dockerfile)
--	[`4.2.2.30`, `4.2.2` (*4.2.2.30/Dockerfile*)](https://github.com/mono/docker/blob/d1aafcdae56ae9ceaf013294d3c74c4183a80281/4.2.2.30/Dockerfile)
--	[`4.2.2.30-onbuild`, `4.2.2-onbuild` (*4.2.2.30/onbuild/Dockerfile*)](https://github.com/mono/docker/blob/d1aafcdae56ae9ceaf013294d3c74c4183a80281/4.2.2.30/onbuild/Dockerfile)
--	[`4.2.3.4`, `4.2.3`, `4.2`, `4`, `latest` (*4.2.3.4/Dockerfile*)](https://github.com/mono/docker/blob/38858eb4bcdfc45e448ce8aae8b38148578f0f94/4.2.3.4/Dockerfile)
--	[`4.2.3.4-onbuild`, `4.2.3-onbuild`, `4.2-onbuild`, `4-onbuild`, `onbuild` (*4.2.3.4/onbuild/Dockerfile*)](https://github.com/mono/docker/blob/38858eb4bcdfc45e448ce8aae8b38148578f0f94/4.2.3.4/onbuild/Dockerfile)
+-	[`5.2.0.224`, `5.2.0`, `5.2`, `5`, `latest` (*5.2.0.224/Dockerfile*)](https://github.com/mono/docker/blob/55b93b6b6b06a2708bf2bdefe8dc2726e28db861/5.2.0.224/Dockerfile)
+-	[`5.2.0.224-slim`, `5.2.0-slim`, `5.2-slim`, `5-slim`, `slim` (*5.2.0.224/slim/Dockerfile*)](https://github.com/mono/docker/blob/55b93b6b6b06a2708bf2bdefe8dc2726e28db861/5.2.0.224/slim/Dockerfile)
+-	[`5.0.1.1`, `5.0.1`, `5.0` (*5.0.1.1/Dockerfile*)](https://github.com/mono/docker/blob/39b989ea0ef3e787fb75410521217cb7cb7df05e/5.0.1.1/Dockerfile)
+-	[`4.8.0.524`, `4.8.0`, `4.8`, `4` (*4.8.0.524/Dockerfile*)](https://github.com/mono/docker/blob/0d987d93235630e05a14983c7f87500ab33c90da/4.8.0.524/Dockerfile)
 
-[![](https://badge.imagelayers.io/mono:latest.svg)](https://imagelayers.io/?images=mono:3.10.0,mono:3.10.0-onbuild,mono:3.12.1,mono:3.12.1-onbuild,mono:3.8.0,mono:3.8.0-onbuild,mono:4.0.5.1,mono:4.0.5.1-onbuild,mono:4.2.1.102,mono:4.2.1.102-onbuild,mono:4.2.2.30,mono:4.2.2.30-onbuild,mono:4.2.3.4,mono:4.2.3.4-onbuild)
+# Quick reference
 
-For more information about this image and its history, please see [the relevant manifest file (`library/mono`)](https://github.com/docker-library/official-images/blob/master/library/mono). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmono).
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `mono/tag-details.md` file](https://github.com/docker-library/docs/blob/master/mono/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+-	**Where to file issues**:  
+	[https://github.com/mono/docker/issues](https://github.com/mono/docker/issues)
+
+-	**Maintained by**:  
+	[the Mono Project](https://github.com/mono/docker)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/mono/), [`arm32v7`](https://hub.docker.com/r/arm32v7/mono/), [`arm64v8`](https://hub.docker.com/r/arm64v8/mono/), [`i386`](https://hub.docker.com/r/i386/mono/)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/mono/` directory](https://github.com/docker-library/repo-info/blob/master/repos/mono) ([history](https://github.com/docker-library/repo-info/commits/master/repos/mono))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images PRs with label `library/mono`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmono)  
+	[official-images repo's `library/mono` file](https://github.com/docker-library/official-images/blob/master/library/mono) ([history](https://github.com/docker-library/official-images/commits/master/library/mono))
+
+-	**Source of this description**:  
+	[docs repo's `mono/` directory](https://github.com/docker-library/docs/tree/master/mono) ([history](https://github.com/docker-library/docs/commits/master/mono))
+
+-	**Supported Docker versions**:  
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Mono
 
@@ -70,26 +98,10 @@ The `mono` images come in many flavors, each designed for a specific use case.
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `mono:onbuild`
+## `mono:slim`
 
-This image makes building derivative images easier. For most use cases, creating a `Dockerfile` in the base of your project directory with the line `FROM mono:onbuild` will be enough to create a stand-alone image for your project.
-
-While the `onbuild` variant is really useful for "getting off the ground running" (zero to Dockerized in a short period of time), it's not recommended for long-term usage within a project due to the lack of control over *when* the `ONBUILD` triggers fire (see also [`docker/docker#5714`](https://github.com/docker/docker/issues/5714), [`docker/docker#8240`](https://github.com/docker/docker/issues/8240), [`docker/docker#11917`](https://github.com/docker/docker/issues/11917)).
-
-Once you've got a handle on how your project functions within Docker, you'll probably want to adjust your `Dockerfile` to inherit from a non-`onbuild` variant and copy the commands from the `onbuild` variant `Dockerfile` (moving the `ONBUILD` lines to the end and removing the `ONBUILD` keywords) into your own file so that you have tighter control over them and more transparency for yourself and others looking at your `Dockerfile` as to what it does. This also makes it easier to add additional requirements as time goes on (such as installing more packages before performing the previously-`ONBUILD` steps).
+This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `mono`. Unless you are working in an environment where *only* the `mono` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
 
 # License
 
 This Docker Image is licensed with the Expat License. See the [Mono Project licensing FAQ](http://www.mono-project.com/docs/faq/licensing/) for details on how Mono and associated libraries are licensed.
-
-# Supported Docker versions
-
-This image is officially supported on Docker version 1.11.0.
-
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-Please report issues on the [GitHub project](https://github.com/mono/docker).

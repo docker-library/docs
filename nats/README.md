@@ -1,12 +1,60 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "nats/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "nats/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
--	[`0.7.2`, `latest` (*Dockerfile*)](https://github.com/nats-io/nats-docker/blob/1b4a8d5b0e99f3983a71d54ddb70cecc1e8228a1/Dockerfile)
+## Shared Tags
 
-[![](https://badge.imagelayers.io/nats:latest.svg)](https://imagelayers.io/?images=nats:0.7.2)
+-	`1.0.4`, `latest`:
+	-	[`1.0.4-linux` (*amd64/Dockerfile*)](https://github.com/nats-io/nats-docker/blob/4e0129ffe9d12beec981238c6cb54f5faa0fbe57/amd64/Dockerfile)
+	-	[`1.0.4-nanoserver` (*windows/nanoserver/Dockerfile*)](https://github.com/nats-io/nats-docker/blob/4e0129ffe9d12beec981238c6cb54f5faa0fbe57/windows/nanoserver/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/nats`)](https://github.com/docker-library/official-images/blob/master/library/nats). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fnats).
+## Simple Tags
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `nats/tag-details.md` file](https://github.com/docker-library/docs/blob/master/nats/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+-	[`1.0.4-linux`, `linux` (*amd64/Dockerfile*)](https://github.com/nats-io/nats-docker/blob/4e0129ffe9d12beec981238c6cb54f5faa0fbe57/amd64/Dockerfile)
+-	[`1.0.4-nanoserver`, `nanoserver` (*windows/nanoserver/Dockerfile*)](https://github.com/nats-io/nats-docker/blob/4e0129ffe9d12beec981238c6cb54f5faa0fbe57/windows/nanoserver/Dockerfile)
+-	[`1.0.4-windowsservercore`, `windowsservercore` (*windows/windowsservercore/Dockerfile*)](https://github.com/nats-io/nats-docker/blob/4e0129ffe9d12beec981238c6cb54f5faa0fbe57/windows/windowsservercore/Dockerfile)
+
+# Quick reference
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+-	**Where to file issues**:  
+	[https://github.com/nats-io/nats-docker/issues](https://github.com/nats-io/nats-docker/issues)
+
+-	**Maintained by**:  
+	[the NATS Project](https://github.com/nats-io/nats-docker)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/nats/), [`arm32v7`](https://hub.docker.com/r/arm32v7/nats/), [`arm64v8`](https://hub.docker.com/r/arm64v8/nats/), [`windows-amd64`](https://hub.docker.com/r/winamd64/nats/)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/nats/` directory](https://github.com/docker-library/repo-info/blob/master/repos/nats) ([history](https://github.com/docker-library/repo-info/commits/master/repos/nats))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images PRs with label `library/nats`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fnats)  
+	[official-images repo's `library/nats` file](https://github.com/docker-library/official-images/blob/master/library/nats) ([history](https://github.com/docker-library/official-images/commits/master/library/nats))
+
+-	**Source of this description**:  
+	[docs repo's `nats/` directory](https://github.com/docker-library/docs/tree/master/nats) ([history](https://github.com/docker-library/docs/commits/master/nats))
+
+-	**Supported Docker versions**:  
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # [NATS](https://nats.io): A high-performance cloud native messaging system.
 
@@ -25,29 +73,34 @@ For detailed information about the virtual/transfer sizes and individual layers 
 # use -p or -P as needed.
 
 $ docker run -d --name nats-main nats
-[INF] Starting gnatsd version 0.7.2
-[INF] Starting http monitor on port 8222
-[INF] Listening for route connections on 0.0.0.0:6222
+[INF] Starting nats-server version 1.0.4
+[INF] Starting http monitor on 0.0.0.0:8222
 [INF] Listening for client connections on 0.0.0.0:4222
-[INF] gnatsd is ready
+[INF] Server is ready
+[INF] Listening for route connections on 0.0.0.0:6222
 
 ...
 
 # To run a second server and cluster them together..
-$ docker run -d --name=nats-2 --link nats-main nats --routes=nats-route://ruser:T0pS3cr3t@nats-main:6222
+# Note that since you are passing arguments, this overrides the CMD section
+# of the Dockerfile, so you need to pass all arguments, including the
+# config file.
+$ docker run -d --name=nats-2 --link nats-main nats -c gnatsd.conf --routes=nats-route://ruser:T0pS3cr3t@nats-main:6222
 
-# If you want to verify the routes are connected, try
-$ docker run -d --name=nats-2 --link nats-main nats --routes=nats-route://ruser:T0pS3cr3t@nats-main:6222 -DV
-[INF] Starting gnatsd version 0.7.2
-[INF] Starting http monitor on port 8222
-[INF] Listening for route connections on :6222
+# If you want to verify the routes are connected, try this instead:
+$ docker run -d --name=nats-2 --link nats-main nats -c gnatsd.conf --routes=nats-route://ruser:T0pS3cr3t@nats-main:6222 -DV
+[INF] Starting nats-server version 1.0.4
+[DBG] Go build version go1.8.3
+[INF] Starting http monitor on 0.0.0.0:8222
 [INF] Listening for client connections on 0.0.0.0:4222
-[INF] gnatsd is ready
+[DBG] Server id is BEfslG6VOmnIbMQcXTVaVJ
+[INF] Server is ready
+[INF] Listening for route connections on 0.0.0.0:6222
 [DBG] Trying to connect to route on nats-main:6222
-[DBG] 172.17.0.52:6222 - rid:1 - Route connection created
-[DBG] 172.17.0.52:6222 - rid:1 - Route connect msg sent
-[DBG] 172.17.0.52:6222 - rid:1 - Registering remote route "ee35d227433a738c729f9422a59667bb"
-[DBG] 172.17.0.52:6222 - rid:1 - Route sent local subscriptions
+[DBG] 172.17.0.2:6222 - rid:1 - Route connection created
+[DBG] 172.17.0.2:6222 - rid:1 - Route connect msg sent
+[DBG] 172.17.0.2:6222 - rid:1 - Registering remote route "vay01L4cPxqy75GIDcqKq7"
+[DBG] 172.17.0.2:6222 - rid:1 - Route sent local subscriptions
 ```
 
 The server will load the configuration file below. Any command line flags can override these values.
@@ -86,68 +139,65 @@ cluster {
 
 ```bash
 Server Options:
-    -a, --addr HOST                  Bind to HOST address (default: 0.0.0.0)
-    -p, --port PORT                  Use PORT for clients (default: 4222)
-    -P, --pid FILE                   File to store PID
-    -m, --http_port PORT             Use HTTP PORT for monitoring
-    -ms,--https_port PORT            Use HTTPS PORT for monitoring
-    -c, --config FILE                Configuration File
+    -a, --addr <host>                Bind to host address (default: 0.0.0.0)
+    -p, --port <port>                Use port for clients (default: 4222)
+    -P, --pid <file>                 File to store PID
+    -m, --http_port <port>           Use port for http monitoring
+    -ms,--https_port <port>          Use port for https monitoring
+    -c, --config <file>              Configuration file
+    -sl,--signal <signal>[=<pid>]    Send signal to gnatsd process (stop, quit, reopen, reload)
 
 Logging Options:
-    -l, --log FILE                   File to redirect log output
+    -l, --log <file>                 File to redirect log output
     -T, --logtime                    Timestamp log entries (default: true)
-    -s, --syslog                     Enable syslog as log method
-    -r, --remote_syslog              Syslog server addr (udp://localhost:514)
+    -s, --syslog                     Log to syslog or windows event log
+    -r, --remote_syslog <addr>       Syslog server addr (udp://localhost:514)
     -D, --debug                      Enable debugging output
     -V, --trace                      Trace the raw protocol
-    -DV                              Debug and Trace
+    -DV                              Debug and trace
 
 Authorization Options:
-        --user user                  User required for connections
-        --pass password              Password required for connections
+        --user <user>                User required for connections
+        --pass <password>            Password required for connections
+        --auth <token>               Authorization token required for connections
 
 TLS Options:
         --tls                        Enable TLS, do not verify clients (default: false)
-        --tlscert FILE               Server certificate file
-        --tlskey FILE                Private key for server certificate
-        --tlsverify                  Enable TLS, very client certificates
-        --tlscacert FILE             Client certificate CA for verification
+        --tlscert <file>             Server certificate file
+        --tlskey <file>              Private key for server certificate
+        --tlsverify                  Enable TLS, verify client certificates
+        --tlscacert <file>           Client certificate CA for verification
 
 Cluster Options:
-        --routes [rurl-1, rurl-2]    Routes to solicit and connect
+        --routes <rurl-1, rurl-2>    Routes to solicit and connect
+        --cluster <cluster-url>      Cluster URL for solicited routes
+        --no_advertise <bool>        Advertise known cluster IPs to clients
+        --connect_retries <number>   For implicit routes, number of connect retries
+
 
 Common Options:
     -h, --help                       Show this message
     -v, --version                    Show version
-        --help_tls                   TLS help.
+        --help_tls                   TLS help
 ```
+
+# Image Variants
+
+The `nats` images come in many flavors, each designed for a specific use case.
+
+## `nats:<version>`
+
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+## `nats:windowsservercore`
+
+This image is based on [Windows Server Core (`microsoft/windowsservercore`)](https://hub.docker.com/r/microsoft/windowsservercore/). As such, it only works in places which that image does, such as Windows 10 Professional/Enterprise (Anniversary Edition) or Windows Server 2016.
+
+For information about how to get Docker running on Windows, please see the relevant "Quick Start" guide provided by Microsoft:
+
+-	[Windows Server Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_server)
+-	[Windows 10 Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)
 
 # License
 
 View [license information](https://github.com/nats-io/gnatsd/blob/master/LICENSE) for the software contained in this image.
-
-# Supported Docker versions
-
-This image is officially supported on Docker version 1.11.0.
-
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Documentation
-
-Documentation for this image is stored in the [`nats/` directory](https://github.com/docker-library/docs/tree/master/nats) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/nats/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/docker-library/nats/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.

@@ -14,13 +14,11 @@ COPY server.xml /config/
 RUN installUtility install --acceptLicense defaultServer
 ```
 
-The `common` image adds a set of features that are expected to be of use for a typical production scenario. These features are: `appSecurity-2.0`, `collectiveMember-1.0`, `localConnector-1.0`, `ldapRegistry-3.0`, `monitor-1.0`, `requestTiming-1.0`, `restConnector-1.0`, `sessionDatabase-1.0`, `ssl-1.0`, and `webCache-1.0`. This image is the basis for the `webProfile6` and `webProfile7` images.
-
 The `webProfile6` image contains the features required for Java EE6 Web Profile compliance. It also pulls in additional features to bring the contents in to line with the features available for download by using the runtime JAR, most notably the features required for OSGi applications.
 
 The `webProfile7` image contains the features required for Java EE7 Web Profile compliance. The `javaee7` image extends this image and adds the features required for Java EE7 Full Platform compliance. The `javaee7` image is also tagged with `latest`.
 
-There are also corresponding image tags that contain the version number of the Liberty release contained within the image. These are primarily to signpost the current version in use and will be updated when a subsequent release becomes available. Consequently, use these tags only if you explicitly want your build to break when a new release becomes available. The Liberty zero migration policy means that you can use the non-version specific tags knowing that your application will continue to work when a new release becomes available.
+The `webProfile6`, `webProfile7` and `javaee7` images all also contain a common set of features that are expected to be of use for a typical production scenario. These features are: `appSecurity-2.0`, `collectiveMember-1.0`, `localConnector-1.0`, `ldapRegistry-3.0`, `monitor-1.0`, `requestTiming-1.0`, `restConnector-1.0`, `sessionDatabase-1.0`, `ssl-1.0`, and `webCache-1.0`.
 
 # Usage
 
@@ -108,4 +106,26 @@ Then, run the WebSphere Liberty image with the volumes from the data volume cont
 
 ```console
 docker run -d -p 80:9080 -p 443:9443 --volumes-from classcache app
+```
+
+# Running WebSphere Liberty in read-only mode
+
+Liberty writes to two different directories when running: `/opt/ibm/wlp/output` and `/logs`. In order to run the Liberty image in read-only mode these may be mounted as temporary file systems. If using the provided image, the keystore will be generated on initial start up in the server configuration. This means that the server configuration directory either needs to be read-write or the keystore will need to be built into the image. In the example command `/config` is mounted as a read-write volume.
+
+```console
+docker run -d -p 80:9080 -p 443:9443 \
+    --tmpfs /opt/ibm/wlp/output --tmpfs /logs -v /config --read-only \
+    websphere-liberty:javaee7
+```
+
+# Changing locale
+
+The base Ubuntu image does not include additional language packs. To use an alternative locale, build your own image that installs the required language pack and then sets the `LANG` environment variable. For example, the following Dockerfile starts with the `websphere-liberty:webProfile7` image, installs the Portuguese language pack, and sets Brazilian Portuguese as the default locale:
+
+```dockerfile
+FROM websphere-liberty:webProfile7
+RUN apt-get update \
+  && apt-get install -y language-pack-pt-base \
+  && rm -rf /var/lib/apt/lists/*
+ENV LANG pt_BR.UTF-8
 ```

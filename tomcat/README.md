@@ -1,19 +1,61 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "tomcat/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "tomcat/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
--	[`6.0.45-jre7`, `6.0-jre7`, `6-jre7`, `6.0.45`, `6.0`, `6` (*6/jre7/Dockerfile*)](https://github.com/docker-library/tomcat/blob/74b0911f36d776672bc943f9efb05868d1d5d79a/6/jre7/Dockerfile)
--	[`6.0.45-jre8`, `6.0-jre8`, `6-jre8` (*6/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/74b0911f36d776672bc943f9efb05868d1d5d79a/6/jre8/Dockerfile)
--	[`7.0.69-jre7`, `7.0-jre7`, `7-jre7`, `7.0.69`, `7.0`, `7` (*7/jre7/Dockerfile*)](https://github.com/docker-library/tomcat/blob/984d958106aebab3f124f616277a2512da4d4a9f/7/jre7/Dockerfile)
--	[`7.0.69-jre8`, `7.0-jre8`, `7-jre8` (*7/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/984d958106aebab3f124f616277a2512da4d4a9f/7/jre8/Dockerfile)
--	[`8.0.33-jre7`, `8.0-jre7`, `8-jre7`, `8.0.33`, `8.0`, `8`, `latest` (*8.0/jre7/Dockerfile*)](https://github.com/docker-library/tomcat/blob/74b0911f36d776672bc943f9efb05868d1d5d79a/8.0/jre7/Dockerfile)
--	[`8.0.33-jre8`, `8.0-jre8`, `8-jre8` (*8.0/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/74b0911f36d776672bc943f9efb05868d1d5d79a/8.0/jre8/Dockerfile)
--	[`8.5.0-jre8`, `8.5-jre8`, `8.5.0`, `8.5` (*8.5/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/82551c9d60c48d35a68b8eb2cc069913be9078ae/8.5/jre8/Dockerfile)
--	[`9.0.0.M4-jre8`, `9.0.0-jre8`, `9.0-jre8`, `9-jre8`, `9.0.0.M4`, `9.0.0`, `9.0`, `9` (*9.0/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/92b97a945a2241f868a91d2919e0e7e3f5c84216/9.0/jre8/Dockerfile)
+-	[`7.0.81-jre7`, `7.0-jre7`, `7-jre7`, `7.0.81`, `7.0`, `7` (*7/jre7/Dockerfile*)](https://github.com/docker-library/tomcat/blob/ab435d680d56084ebe0419adfb31cc58df3624dd/7/jre7/Dockerfile)
+-	[`7.0.81-jre7-alpine`, `7.0-jre7-alpine`, `7-jre7-alpine`, `7.0.81-alpine`, `7.0-alpine`, `7-alpine` (*7/jre7-alpine/Dockerfile*)](https://github.com/docker-library/tomcat/blob/9532e6813b3a64a058af3d21526a9c02b59ab2b7/7/jre7-alpine/Dockerfile)
+-	[`7.0.81-jre8`, `7.0-jre8`, `7-jre8` (*7/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/ab435d680d56084ebe0419adfb31cc58df3624dd/7/jre8/Dockerfile)
+-	[`7.0.81-jre8-alpine`, `7.0-jre8-alpine`, `7-jre8-alpine` (*7/jre8-alpine/Dockerfile*)](https://github.com/docker-library/tomcat/blob/9532e6813b3a64a058af3d21526a9c02b59ab2b7/7/jre8-alpine/Dockerfile)
+-	[`8.0.46-jre7`, `8.0-jre7`, `8.0.46`, `8.0` (*8.0/jre7/Dockerfile*)](https://github.com/docker-library/tomcat/blob/5c8b74e495a1b63116b524407941b15eef58a7fe/8.0/jre7/Dockerfile)
+-	[`8.0.46-jre7-alpine`, `8.0-jre7-alpine`, `8.0.46-alpine`, `8.0-alpine` (*8.0/jre7-alpine/Dockerfile*)](https://github.com/docker-library/tomcat/blob/9532e6813b3a64a058af3d21526a9c02b59ab2b7/8.0/jre7-alpine/Dockerfile)
+-	[`8.0.46-jre8`, `8.0-jre8` (*8.0/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/5c8b74e495a1b63116b524407941b15eef58a7fe/8.0/jre8/Dockerfile)
+-	[`8.0.46-jre8-alpine`, `8.0-jre8-alpine` (*8.0/jre8-alpine/Dockerfile*)](https://github.com/docker-library/tomcat/blob/9532e6813b3a64a058af3d21526a9c02b59ab2b7/8.0/jre8-alpine/Dockerfile)
+-	[`8.5.23-jre8`, `8.5-jre8`, `8-jre8`, `jre8`, `8.5.23`, `8.5`, `8`, `latest` (*8.5/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/dcb6ba09fa6e8f396f38106ca1086a6078799393/8.5/jre8/Dockerfile)
+-	[`8.5.23-jre8-alpine`, `8.5-jre8-alpine`, `8-jre8-alpine`, `jre8-alpine`, `8.5.23-alpine`, `8.5-alpine`, `8-alpine`, `alpine` (*8.5/jre8-alpine/Dockerfile*)](https://github.com/docker-library/tomcat/blob/637e4b66a8b8b077f6aca548d369c9fbcbbfe522/8.5/jre8-alpine/Dockerfile)
+-	[`9.0.1-jre8`, `9.0-jre8`, `9-jre8`, `9.0.1`, `9.0`, `9` (*9.0/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/124c504d29896db286570ad835d7746e0d3ebca9/9.0/jre8/Dockerfile)
+-	[`9.0.1-jre8-alpine`, `9.0-jre8-alpine`, `9-jre8-alpine`, `9.0.1-alpine`, `9.0-alpine`, `9-alpine` (*9.0/jre8-alpine/Dockerfile*)](https://github.com/docker-library/tomcat/blob/ba45c4da39f4705edefbf685d410eb6064f5f151/9.0/jre8-alpine/Dockerfile)
 
-[![](https://badge.imagelayers.io/tomcat:latest.svg)](https://imagelayers.io/?images=tomcat:6.0.45-jre7,tomcat:6.0.45-jre8,tomcat:7.0.69-jre7,tomcat:7.0.69-jre8,tomcat:8.0.33-jre7,tomcat:8.0.33-jre8,tomcat:8.5.0-jre8,tomcat:9.0.0.M4-jre8)
+# Quick reference
 
-For more information about this image and its history, please see [the relevant manifest file (`library/tomcat`)](https://github.com/docker-library/official-images/blob/master/library/tomcat). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Ftomcat).
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `tomcat/tag-details.md` file](https://github.com/docker-library/docs/blob/master/tomcat/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+-	**Where to file issues**:  
+	[https://github.com/docker-library/tomcat/issues](https://github.com/docker-library/tomcat/issues)
+
+-	**Maintained by**:  
+	[the Docker Community](https://github.com/docker-library/tomcat)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/tomcat/), [`arm32v5`](https://hub.docker.com/r/arm32v5/tomcat/), [`arm32v7`](https://hub.docker.com/r/arm32v7/tomcat/), [`arm64v8`](https://hub.docker.com/r/arm64v8/tomcat/), [`i386`](https://hub.docker.com/r/i386/tomcat/), [`ppc64le`](https://hub.docker.com/r/ppc64le/tomcat/), [`s390x`](https://hub.docker.com/r/s390x/tomcat/)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/tomcat/` directory](https://github.com/docker-library/repo-info/blob/master/repos/tomcat) ([history](https://github.com/docker-library/repo-info/commits/master/repos/tomcat))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images PRs with label `library/tomcat`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Ftomcat)  
+	[official-images repo's `library/tomcat` file](https://github.com/docker-library/official-images/blob/master/library/tomcat) ([history](https://github.com/docker-library/official-images/commits/master/library/tomcat))
+
+-	**Source of this description**:  
+	[docs repo's `tomcat/` directory](https://github.com/docker-library/docs/tree/master/tomcat) ([history](https://github.com/docker-library/docs/commits/master/tomcat))
+
+-	**Supported Docker versions**:  
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Tomcat?
 
@@ -57,32 +99,22 @@ The default Tomcat environment in the image for version 6 is:
 
 The configuration files are available in `/usr/local/tomcat/conf/`. By default, no user is included in the "manager-gui" role required to operate the "/manager/html" web application. If you wish to use this app, you must define such a user in `tomcat-users.xml`.
 
+# Image Variants
+
+The `tomcat` images come in many flavors, each designed for a specific use case.
+
+## `tomcat:<version>`
+
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+## `tomcat:alpine`
+
+This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+
+This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+
+To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
+
 # License
 
 View [license information](https://www.apache.org/licenses/LICENSE-2.0) for the software contained in this image.
-
-# Supported Docker versions
-
-This image is officially supported on Docker version 1.11.0.
-
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Documentation
-
-Documentation for this image is stored in the [`tomcat/` directory](https://github.com/docker-library/docs/tree/master/tomcat) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/tomcat/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/docker-library/tomcat/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.

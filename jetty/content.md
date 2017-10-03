@@ -60,6 +60,14 @@ RUN java -jar "$JETTY_HOME/start.jar" --add-to-startd=jmx,stats
 
 Modules may be configured in a `Dockerfile` by editing the properties in the corresponding `/var/lib/jetty/start.d/*.mod` file or the module can be deactivated by removing that file.
 
+### JVM Configuration
+
+JVM options can be set by passing the `JAVA_OPTIONS` environment variable to the container. For example, to set the maximum heap size to 1 gigabyte, you can run the container as follows:
+
+```console
+$ docker run -e JAVA_OPTIONS="-Xmx1g" -d %%REPO%%
+```
+
 ## Read-only container
 
 To run `%%REPO%%` as a read-only container, have Docker create the `/tmp/jetty` and `/run/jetty` directories as volumes:

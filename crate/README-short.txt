@@ -1,1 +1,1 @@
-Crate is a shared nothing, fully searchable, SQL database with the NoSQL goodies.
+CrateDB is a distributed SQL database handles massive amounts of machine data in real-time.

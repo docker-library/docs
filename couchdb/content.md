@@ -42,8 +42,8 @@ CouchDB listens on port 5984 for requests and the image includes `EXPOSE 5984`. 
 
 There are several ways to store data used by applications that run in Docker containers. We encourage users of the `%%REPO%%` images to familiarize themselves with the options available, including:
 
--	Let Docker manage the storage of your database data [by writing the database files to disk on the host system using its own internal volume management](https://docs.docker.com/userguide/dockervolumes/#adding-a-data-volume). This is the default and is easy and fairly transparent to the user. The downside is that the files may be hard to locate for tools and applications that run directly on the host system, i.e. outside containers.
--	Create a data directory on the host system (outside the container) and [mount this to a directory visible from inside the container](https://docs.docker.com/userguide/dockervolumes/#mount-a-host-directory-as-a-data-volume). This places the database files in a known location on the host system, and makes it easy for tools and applications on the host system to access the files. The downside is that the user needs to make sure that the directory exists, and that e.g. directory permissions and other security mechanisms on the host system are set up correctly.
+-	Let Docker manage the storage of your database data [by writing the database files to disk on the host system using its own internal volume management](https://docs.docker.com/engine/tutorials/dockervolumes/#adding-a-data-volume). This is the default and is easy and fairly transparent to the user. The downside is that the files may be hard to locate for tools and applications that run directly on the host system, i.e. outside containers.
+-	Create a data directory on the host system (outside the container) and [mount this to a directory visible from inside the container](https://docs.docker.com/engine/tutorials/dockervolumes/#mount-a-host-directory-as-a-data-volume). This places the database files in a known location on the host system, and makes it easy for tools and applications on the host system to access the files. The downside is that the user needs to make sure that the directory exists, and that e.g. directory permissions and other security mechanisms on the host system are set up correctly.
 
 CouchDB uses `/usr/local/var/lib/couchdb` to store its data. This directory is marked as a docker volume.
 
@@ -53,6 +53,14 @@ You can map the container's volumes to a directory on the host, so that the data
 
 ```console
 $ docker run -d -v $(pwd):/usr/local/var/lib/couchdb --name my-couchdb %%REPO%%
+```
+
+## Specifying the admin user in the environment
+
+You can use the two environment variables `COUCHDB_USER` and `COUCHDB_PASSWORD` to set up the admin user.
+
+```console
+$ docker run -e COUCHDB_USER=admin -e COUCHDB_PASSWORD=password -d %%REPO%%
 ```
 
 ## Using your own CouchDB configuration file
@@ -70,7 +78,7 @@ You can also use `couchdb` as the base image for your own couchdb instance and p
 Example Dockerfile:
 
 ```dockerfile
-FROM %%REPO%%:latest
+FROM %%REPO%%
 
 COPY local.ini /usr/local/etc/couchdb/
 ```
@@ -92,3 +100,7 @@ For example in `local.ini`:
 [log]
 file = /usr/local/var/log/couchdb/couch.log
 ```
+
+## Erlang Version
+
+This image uses Erlang `17.3` from Debian Jessie's repository. Debian's version patches a critical bug in Erlang `17.3` and is good to use with CouchDB ([confirmed by Jan Lehnardt](https://github.com/klaemo/docker-couchdb/issues/50#issuecomment-190832786)).

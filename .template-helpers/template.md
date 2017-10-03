@@ -2,16 +2,32 @@
 
 %%TAGS%%
 
-For more information about this image and its history, please see [the relevant manifest file (`library/%%REPO%%`)](https://github.com/docker-library/official-images/blob/master/library/%%REPO%%). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2F%%REPO%%).
+# Quick reference
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `%%REPO%%/tag-details.md` file](https://github.com/docker-library/docs/blob/master/%%REPO%%/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+-	**Where to get help**:  
+	%%GET-HELP%%
+
+-	**Where to file issues**:  
+	%%ISSUES%%
+
+-	**Maintained by**:  
+	%%MAINTAINER%%
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	%%ARCHES%%
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/%%REPO%%/` directory](https://github.com/docker-library/repo-info/blob/master/repos/%%REPO%%) ([history](https://github.com/docker-library/repo-info/commits/master/repos/%%REPO%%))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images PRs with label `library/%%REPO%%`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2F%%REPO%%)  
+	[official-images repo's `library/%%REPO%%` file](https://github.com/docker-library/official-images/blob/master/library/%%REPO%%) ([history](https://github.com/docker-library/official-images/commits/master/library/%%REPO%%))
+
+-	**Source of this description**:  
+	[docs repo's `%%REPO%%/` directory](https://github.com/docker-library/docs/tree/master/%%REPO%%) ([history](https://github.com/docker-library/docs/commits/master/%%REPO%%))
+
+-	**Supported Docker versions**:  
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 %%CONTENT%%%%VARIANT%%%%LICENSE%%
-
-# Supported Docker versions
-
-%%DOCKER-VERSIONS%%
-
-# User Feedback
-
-%%USER-FEEDBACK%%

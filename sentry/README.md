@@ -1,15 +1,53 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "sentry/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "sentry/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
--	[`8.2.4`, `8.2` (*8.2/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/3ec1dafe76069627d9a1f2fe2bca149026ce9576/8.2/Dockerfile)
--	[`8.2.4-onbuild`, `8.2-onbuild` (*8.2/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/1ef759405e541ac9552fb92f2f293c8496e10d07/8.2/onbuild/Dockerfile)
--	[`8.3.2`, `8.3`, `8`, `latest` (*8.3/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/77bf86e359f312ed8925a6cafdddb6a33f4d8758/8.3/Dockerfile)
--	[`8.3.2-onbuild`, `8.3-onbuild`, `8-onbuild`, `onbuild` (*8.3/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/c05ef824c01a4f2b010c2acd24031b4d22f88944/8.3/onbuild/Dockerfile)
+-	[`8.19.0`, `8.19` (*8.19/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/f7edbbec370da95fe2a2d96e708e732fa74e4900/8.19/Dockerfile)
+-	[`8.19.0-onbuild`, `8.19-onbuild` (*8.19/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/f7edbbec370da95fe2a2d96e708e732fa74e4900/8.19/onbuild/Dockerfile)
+-	[`8.20.0`, `8.20`, `8`, `latest` (*8.20/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/5b3a524591bddce5393a574175439171cdcde5e8/8.20/Dockerfile)
+-	[`8.20.0-onbuild`, `8.20-onbuild`, `8-onbuild`, `onbuild` (*8.20/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/5b3a524591bddce5393a574175439171cdcde5e8/8.20/onbuild/Dockerfile)
 
-[![](https://badge.imagelayers.io/sentry:latest.svg)](https://imagelayers.io/?images=sentry:8.2.4,sentry:8.2.4-onbuild,sentry:8.3.2,sentry:8.3.2-onbuild)
+# Quick reference
 
-For more information about this image and its history, please see [the relevant manifest file (`library/sentry`)](https://github.com/docker-library/official-images/blob/master/library/sentry). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fsentry).
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `sentry/tag-details.md` file](https://github.com/docker-library/docs/blob/master/sentry/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+-	**Where to file issues**:  
+	[https://github.com/getsentry/docker-sentry/issues](https://github.com/getsentry/docker-sentry/issues)
+
+-	**Maintained by**:  
+	[Sentry](https://github.com/getsentry/docker-sentry)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/sentry/)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/sentry/` directory](https://github.com/docker-library/repo-info/blob/master/repos/sentry) ([history](https://github.com/docker-library/repo-info/commits/master/repos/sentry))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images PRs with label `library/sentry`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fsentry)  
+	[official-images repo's `library/sentry` file](https://github.com/docker-library/official-images/blob/master/library/sentry) ([history](https://github.com/docker-library/official-images/commits/master/library/sentry))
+
+-	**Source of this description**:  
+	[docs repo's `sentry/` directory](https://github.com/docker-library/docs/tree/master/sentry) ([history](https://github.com/docker-library/docs/commits/master/sentry))
+
+-	**Supported Docker versions**:  
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Sentry?
 
@@ -38,7 +76,7 @@ Sentry is a realtime event logging and aggregation platform. It specializes in m
 3.	Generate a new secret key to be shared by all `sentry` containers. This value will then be used as the `SENTRY_SECRET_KEY` environment variable.
 
 	```console
-	$ docker run --rm sentry generate-secret-key
+	$ docker run --rm sentry config generate-secret-key
 	```
 
 4.	If this is a new database, you'll need to run `upgrade`
@@ -58,8 +96,8 @@ Sentry is a realtime event logging and aggregation platform. It specializes in m
 6.	The default config needs a celery beat and celery workers, start as many workers as you need (each with a unique name)
 
 	```console
-	$ docker run -d --name sentry-celery-beat -e SENTRY_SECRET_KEY='<secret-key>' --link sentry-postgres:postgres --link sentry-redis:redis sentry celery beat
-	$ docker run -d --name sentry-celery1 -e SENTRY_SECRET_KEY='<secret-key>' --link sentry-postgres:postgres --link sentry-redis:redis sentry celery worker
+	$ docker run -d --name sentry-cron -e SENTRY_SECRET_KEY='<secret-key>' --link sentry-postgres:postgres --link sentry-redis:redis sentry run cron
+	$ docker run -d --name sentry-worker-1 -e SENTRY_SECRET_KEY='<secret-key>' --link sentry-postgres:postgres --link sentry-redis:redis sentry run worker
 	```
 
 ### Port mapping
@@ -83,7 +121,7 @@ When you start the `sentry` image, you can adjust the configuration of the Sentr
 A secret key used for cryptographic functions within Sentry. This key should be unique and consistent across all running instances. You can generate a new secret key doing something like:
 
 ```console
-$ docker run --rm sentry generate-secret-key
+$ docker run --rm sentry config generate-secret-key
 ```
 
 ### `SENTRY_POSTGRES_HOST`, `SENTRY_POSTGRES_PORT`, `SENTRY_DB_NAME`, `SENTRY_DB_USER`, `SENTRY_DB_PASSWORD`
@@ -130,32 +168,14 @@ It's also possible to develop custom extensions within your `onbuild` package. I
 
 See the [official Sentry documentation](https://docs.getsentry.com/on-premise/server/installation/) for more information.
 
+To create your custom `sentry:onbuild` package, simply do the following:
+
+1.	Create a Dockerfile containing `FROM sentry:onbuild`
+2.	In the same directory, add your custom configuration files.
+3.	You can get copies of those files to use as templates from the [docker-sentry GitHub repo](https://github.com/getsentry/docker-sentry/).
+4.	Build your image: `docker build -t mysentry .`
+5.	Run your custom image using `mysentry` instead of `sentry`.
+
 # License
 
 View [license information](https://github.com/getsentry/sentry/blob/master/LICENSE) for the software contained in this image.
-
-# Supported Docker versions
-
-This image is officially supported on Docker version 1.11.0.
-
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Documentation
-
-Documentation for this image is stored in the [`sentry/` directory](https://github.com/docker-library/docs/tree/master/sentry) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/getsentry/docker-sentry/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/getsentry/docker-sentry/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.

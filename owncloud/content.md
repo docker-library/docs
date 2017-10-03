@@ -22,7 +22,7 @@ For a MySQL database you can link an database container, e.g. `--link my-mysql:m
 
 ## Persistent data
 
-All data is stored within the default volume `/var/www/html`. With this volume, ownCloud will only be updated when the file `version.php` is not present.
+All data beyond what lives in the database (file uploads, etc) is stored within the default volume `/var/www/html`. With this volume, ownCloud will only be updated when the file `version.php` is not present.
 
 -	`-v /<mydatalocation>:/var/www/html`
 
@@ -35,3 +35,15 @@ For fine grained data persistence, you can use 3 volumes, as shown below.
 ### Caveat
 
 When using the 6.0 image, you need to map the host port to the container port that apache listens on when going through the installation wizard. By default, this is port 80.
+
+## Using `occ`
+
+The [`occ` tool from upstream](https://doc.owncloud.org/server/9.0/admin_manual/configuration_server/occ_command.html) is simplest to use via `docker exec`, similar to the example provided there:
+
+```console
+$ docker exec -u www-data some-owncloud php occ status
+```
+
+## %%STACK%%
+
+Run `docker stack deploy -c stack.yml %%REPO%%` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080/`, `http://localhost:8080/`, or `http://host-ip:8080` (as appropriate).

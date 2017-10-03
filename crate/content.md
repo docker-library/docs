@@ -1,90 +1,41 @@
-# What is Crate?
-
-Crate allows to query and compute data with SQL in real time by providing a distributed aggregation engine, native search and super simple scalability. It offers auto-sharding and replication, super-fast multi index queries, distributed aggregations and sort, superfast full-text search, and super simple cluster management.
-
-[Crate](https://crate.io/)
-
 %%LOGO%%
 
-## Crate on Docker
+# What Is CrateDB?
 
-Learn more about Crate and Docker and visit our [Docker page](https://crate.io/c/docker) at [crate.io](https://crate.io). You can also contact us on [Slack](https://crate.io/docs/support/slackin/).
+[CrateDB](http://github.com/crate/crate) is a distributed SQL database that makes it simple to store and analyze massive amounts of machine data in real-time.
 
-## How to use this image
+Features of CrateDB:
 
-Simply run the latest Crate version in a Docker container with the following command. Crate ships with an [Admin UI](https://crate.io/docs/connect/admin_ui/) that provides an overview of your cluster, nodes, tables and much more. With the above command it is accessible via port `4200`.
+-	Standard SQL plus dynamic schemas, queryable objects, geospatial features, time series data, first-class BLOB support, and realtime full-text search.
+-	Horizontally scalable, highly available, and fault tolerant clusters that run very well in virtualized and containerised environments.
+-	Extremely fast distributed query execution.
+-	Auto-partitioning, auto-sharding, and auto-replication.
+-	Self-healing and auto-rebalancing.
+-	CrateDB offers the scalability and flexibility typically associated with a NoSQL database and is designed to run on inexpensive commodity servers and can be deployed and run across any sort of network. From personal computers to multi-region hybrid clouds.
 
-```console
-$ docker run -d -p 4200:4200 -p 4300:4300 crate:latest
-```
+The smallest CrateDB clusters can easily ingest tens of thousands of records per second. And this data can be queried, ad-hoc, in parallel across the whole cluster in real time.
 
-### Attach persistent data directory
+# How to Use This Image
 
-If you want to attach a persistent data directory, add the following parameter.
+Spin up this Docker image like so:
 
-```console
-$ docker run -d -p 4200:4200 -p 4300:4300 -v <data-dir>:/data crate
-```
+	$ docker run -p 4200:4200 crate
 
-### Use custom Crate configuration
+Once you're up and running, head on over to [the introductory docs](https://crate.io/docs/stable/hello.html).
 
-Use the following parameter to provide your custom [Crate configuration file](https://crate.io/docs/reference/configuration.html).
+Read more:
 
-```console
-$ docker run -d -p 4200:4200 -p 4300:4300 crate -Des.config=/path/to/crate.yml
-```
+-	[Getting Started With CrateDB on Docker](https://crate.io/docs/install/containers/docker/)
+-	[CrateDB Docker Best Practices](https://crate.io/docs/reference/best_practice/docker.html)
 
-Any configuration settings may be specified upon startup using the `-D` option prefix. For example, configuring the cluster name by using system properties will work this way:
+## Issues
 
-```console
-$ docker run -d -p 4200:4200 -p 4300:4300 crate crate -Des.cluster.name=cluster
-```
+For issue specific to the CrateDB Docker image, report issues via [the `docker-crate` GitHub issue tracker](https://github.com/crate/docker-crate/issues)
 
-### Environment
+For issues with CrateDB itself, report issues via [the `crate` GitHub issue tracker](https://github.com/crate/crate/issues)
 
-To set environment variables for Crate Data you need to use the `--env` option when starting the docker image.
+## Contributing
 
-For example, setting the heap size:
+This image is primarily maintained by [Crate.io](http://crate.io/), but we welcome community contributions!
 
-```console
-$ docker run -d -p 4200:4200 -p 4300:4300 --env CRATE_HEAP_SIZE=32g crate
-```
-
-## Multicast
-
-Crate uses multicast for node discovery by default. However, Docker does only support multicast on the same host. This means that nodes that are started on the same host will discover each other automatically, but nodes that are started on different hosts need unicast enabled.
-
-You can enable unicast in your custom `crate.yml`. See also: [Crate Multi Node Setup](https://crate.io/docs/en/latest/best_practice/multi_node_setup.html).
-
-Due to its architecture, Crate publishes the host it runs on for discovery within the cluster. Since the address of the host inside the docker container differs from the actual host the docker image is running on, you need to tell Crate to publish the address of the docker host for discovery.
-
-```console
-$ docker run -d -p 4200:4200 -p 4300:4300 crate crate -Des.network.publish_host=host1.example.com:
-```
-
-If you change the transport port from the default `4300` to something else, you also need to pass the publish port to Crate.
-
-```console
-$ docker run -d -p 4200:4200 -p 4321:4300 crate crate -Des.transport.publish_port=4321
-```
-
-### Example Usage in a Multinode Setup
-
-```console
-$ HOSTS='crate1.example.com:4300,crate2.example.com:4300,crate3.example.com:4300'
-$ HOST=crate1.example.com
-$ docker run -d \
-	-p 4200:4200 \
-	-p 4300:4300 \
-	--name node1 \
-	--volume /mnt/data:/data \
-	--env CRATE_HEAP_SIZE=8g \
-	crate:latest \
-	crate -Des.cluster.name=cratecluster \
-		  -Des.node.name=crate1 \
-		  -Des.transport.publish_port=4300 \
-		  -Des.network.publish_host=$HOST \
-		  -Des.multicast.enabled=false \
-		  -Des.discovery.zen.ping.unicast.hosts=$HOSTS \
-		  -Des.discovery.zen.minimum_master_nodes=2
-```
+See the [developer docs](https://github.com/crate/docker-crateblob/master/DEVELOP.rst) and the [contribution docs](https://github.com/crate/docker-crate/blob/master/CONTRIBUTING.rst) for more information.

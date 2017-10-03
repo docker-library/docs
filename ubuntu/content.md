@@ -10,7 +10,48 @@ Development of Ubuntu is led by UK-based Canonical Ltd., a company owned by Sout
 
 # What's in this image?
 
+This image is built from official rootfs tarballs provided by Canonical (specifically, https://partner-images.canonical.com/core/).
+
+The `ubuntu:latest` tag points to the "latest LTS", since that's the version recommended for general use. The `ubuntu:rolling` tag points to the latest release (regardless of LTS status).
+
+Along a similar vein, the `ubuntu:devel` tag is an alias for whichever release the "devel" suite on the mirrors currently points to, as determined by the following one-liner: `wget -qO- http://archive.ubuntu.com/ubuntu/dists/devel/Release | awk -F ': ' '$1 == "Codename" { print $2; exit }'`
+
+## Locales
+
+Given that it is a minimal install of Ubuntu, this image only includes the `C`, `C.UTF-8`, and `POSIX` locales by default. For most uses requiring a UTF-8 locale, `C.UTF-8` is likely sufficient (`-e LANG=C.UTF-8` or `ENV LANG C.UTF-8`).
+
+For uses where that is not sufficient, other locales can be installed/generated via the `locales` package. [PostgreSQL has a good example of doing so](https://github.com/docker-library/postgres/blob/69bc540ecfffecce72d49fa7e4a46680350037f9/9.6/Dockerfile#L21-L24), copied below:
+
+```dockerfile
+RUN apt-get update && apt-get install -y locales && rm -rf /var/lib/apt/lists/* \
+	&& localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
+ENV LANG en_US.utf8
+```
+
 ## `/etc/apt/sources.list`
+
+### `ubuntu:16.04`
+
+```console
+$ docker run ubuntu:16.04 grep -v '^#' /etc/apt/sources.list
+
+deb http://archive.ubuntu.com/ubuntu/ xenial main restricted
+deb-src http://archive.ubuntu.com/ubuntu/ xenial main restricted
+
+deb http://archive.ubuntu.com/ubuntu/ xenial-updates main restricted
+deb-src http://archive.ubuntu.com/ubuntu/ xenial-updates main restricted
+
+deb http://archive.ubuntu.com/ubuntu/ xenial universe
+deb-src http://archive.ubuntu.com/ubuntu/ xenial universe
+deb http://archive.ubuntu.com/ubuntu/ xenial-updates universe
+deb-src http://archive.ubuntu.com/ubuntu/ xenial-updates universe
+
+
+deb http://archive.ubuntu.com/ubuntu/ xenial-security main restricted
+deb-src http://archive.ubuntu.com/ubuntu/ xenial-security main restricted
+deb http://archive.ubuntu.com/ubuntu/ xenial-security universe
+deb-src http://archive.ubuntu.com/ubuntu/ xenial-security universe
+```
 
 ### `ubuntu:14.04`
 
@@ -33,27 +74,4 @@ deb http://archive.ubuntu.com/ubuntu/ trusty-security main restricted
 deb-src http://archive.ubuntu.com/ubuntu/ trusty-security main restricted
 deb http://archive.ubuntu.com/ubuntu/ trusty-security universe
 deb-src http://archive.ubuntu.com/ubuntu/ trusty-security universe
-```
-
-### `ubuntu:12.04`
-
-```console
-$ docker run ubuntu:12.04 cat /etc/apt/sources.list
-
-deb http://archive.ubuntu.com/ubuntu/ precise main restricted
-deb-src http://archive.ubuntu.com/ubuntu/ precise main restricted
-
-deb http://archive.ubuntu.com/ubuntu/ precise-updates main restricted
-deb-src http://archive.ubuntu.com/ubuntu/ precise-updates main restricted
-
-deb http://archive.ubuntu.com/ubuntu/ precise universe
-deb-src http://archive.ubuntu.com/ubuntu/ precise universe
-deb http://archive.ubuntu.com/ubuntu/ precise-updates universe
-deb-src http://archive.ubuntu.com/ubuntu/ precise-updates universe
-
-
-deb http://archive.ubuntu.com/ubuntu/ precise-security main restricted
-deb-src http://archive.ubuntu.com/ubuntu/ precise-security main restricted
-deb http://archive.ubuntu.com/ubuntu/ precise-security universe
-deb-src http://archive.ubuntu.com/ubuntu/ precise-security universe
 ```

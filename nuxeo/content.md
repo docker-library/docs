@@ -25,6 +25,8 @@ nuxeo
 
 This will install the same image as above but comes with some demo Nuxeo packages to demonstrate its various usage (DAM, DM, search etc...)
 
+You can find additional informations on how to use this image in [Nuxeo documentation](https://doc.nuxeo.com/nxdoc/setting-up-your-nuxeo-environment/)
+
 ## Environment Variables
 
 The Nuxeo image uses several environment variable that allow to specify a more specific setup.
@@ -69,7 +71,9 @@ If Redis is setup, you can ovewrite the default port configuration (default to 6
 
 ### `NUXEO_CLID`
 
-Allow to setup a CLID for Nuxeo Connect registration.
+Allow to setup a CLID for Nuxeo Connect registration. This parameter is in the form `part1\npart2`, so depending on the environment you may have to escape the `\` character.
+
+You can find additional informations the registration process in the [Nuxeo documentation](https://doc.nuxeo.com/nxdoc/setting-up-your-nuxeo-environment/)
 
 ### `NUXEO_INSTALL_HOTFIX`
 
@@ -99,6 +103,24 @@ If set to "true", this will enable the [automation trace mode](https://doc.nuxeo
 
 If set to "true", this will enable the development mode that will allow [hot reload](https://doc.nuxeo.com/display/CORG/Supporting+Hot+Reload) when developing with [Nuxeo Studio](http://www.nuxeo.com/products/studio/).
 
+### `NUXEO_BINARY_STORE`
+
+Tells the location of the binary store which configure the [binary storage](https://doc.nuxeo.com/x/fYYZAQ)
+
+### `NUXEO_TRANSIENT_STORE`
+
+Tells the location of [the transient storage](http://doc.nuxeo.com/display/NXDOC/Transient+Store)
+
+### `NUXEO_DDL_MODE`
+
+Allows to setup [Database creation option](https://doc.nuxeo.com/x/hwQz#RepositoryConfiguration-DatabaseCreationOption) by fixing the `ddlMode` value.
+
+### `NUXEO_CUSTOM_PARAM`
+
+Allows to add custom parameters to `nuxeo.conf`. Multiple parameters can be splitted by a `\n`. For instance:
+
+	NUXEO_CUSTOM_PARAM="repository.clustering.enabled=false\nrepository.clustering.delay=1000"
+
 # How to extend this image
 
 ## Adding additional configuration
@@ -110,15 +132,30 @@ FROM nuxeo:7.10
 ADD nuxeo.conf /nuxeo.conf
 ```
 
+If you need a root account to run some installation steps in your `Dockerfile`, then you need to put those steps between two `USER` command as the image is run with the user `1000` (nuxeo). For instance:
+
+```dockerfile
+FROM nuxeo:LTS
+USER root
+RUN apt-get update && apt-get install -y --no-install-recommends vim
+USER 1000
+```
+
+## Launching custom shell scripts
+
+You can add your own shell scripts in a special `/docker-entrypoint-initnuxeo.d` directory. When ending in `.sh`, they will be run on default entrypoint startup.
+
 ## ffmpeg
 
-As it contains some non-free Codecs, we dont't ship a binary version of `ffmpeg` as part of this image. However, you can simply add the compilation in a derived images by adding these lines to your Dockerfile
+As it contains some non-free Codecs, we dont't ship a binary version of `ffmpeg` as part of this image. However, you can simply add the compilation in a derived images by adding these lines to your Dockerfile.
 
 ```dockerfile
 FROM nuxeo:7.10
 
+USER root
+
 RUN echo "deb http://httpredir.debian.org/debian jessie non-free" >> /etc/apt/sources.list
-RUN apt-get update && apt-get install -y --no-install-recommends libfaac-dev
+RUN apt-get update && apt-get install -y --no-install-recommends libfaac-dev git
 
 WORKDIR /tmp
 # Build ffmpeg
@@ -134,6 +171,8 @@ RUN ./prepare-packages.sh \
  && cd /tmp \
  && rm -Rf ffmpeg-nuxeo \
  && rm -rf /var/lib/apt/lists/*
+
+USER 1000
 ```
 
 ## Using Oracle JVM

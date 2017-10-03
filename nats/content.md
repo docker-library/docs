@@ -15,29 +15,34 @@
 # use -p or -P as needed.
 
 $ docker run -d --name nats-main nats
-[INF] Starting gnatsd version 0.7.2
-[INF] Starting http monitor on port 8222
-[INF] Listening for route connections on 0.0.0.0:6222
+[INF] Starting nats-server version 1.0.4
+[INF] Starting http monitor on 0.0.0.0:8222
 [INF] Listening for client connections on 0.0.0.0:4222
-[INF] gnatsd is ready
+[INF] Server is ready
+[INF] Listening for route connections on 0.0.0.0:6222
 
 ...
 
 # To run a second server and cluster them together..
-$ docker run -d --name=nats-2 --link nats-main nats --routes=nats-route://ruser:T0pS3cr3t@nats-main:6222
+# Note that since you are passing arguments, this overrides the CMD section
+# of the Dockerfile, so you need to pass all arguments, including the
+# config file.
+$ docker run -d --name=nats-2 --link nats-main nats -c gnatsd.conf --routes=nats-route://ruser:T0pS3cr3t@nats-main:6222
 
-# If you want to verify the routes are connected, try
-$ docker run -d --name=nats-2 --link nats-main nats --routes=nats-route://ruser:T0pS3cr3t@nats-main:6222 -DV
-[INF] Starting gnatsd version 0.7.2
-[INF] Starting http monitor on port 8222
-[INF] Listening for route connections on :6222
+# If you want to verify the routes are connected, try this instead:
+$ docker run -d --name=nats-2 --link nats-main nats -c gnatsd.conf --routes=nats-route://ruser:T0pS3cr3t@nats-main:6222 -DV
+[INF] Starting nats-server version 1.0.4
+[DBG] Go build version go1.8.3
+[INF] Starting http monitor on 0.0.0.0:8222
 [INF] Listening for client connections on 0.0.0.0:4222
-[INF] gnatsd is ready
+[DBG] Server id is BEfslG6VOmnIbMQcXTVaVJ
+[INF] Server is ready
+[INF] Listening for route connections on 0.0.0.0:6222
 [DBG] Trying to connect to route on nats-main:6222
-[DBG] 172.17.0.52:6222 - rid:1 - Route connection created
-[DBG] 172.17.0.52:6222 - rid:1 - Route connect msg sent
-[DBG] 172.17.0.52:6222 - rid:1 - Registering remote route "ee35d227433a738c729f9422a59667bb"
-[DBG] 172.17.0.52:6222 - rid:1 - Route sent local subscriptions
+[DBG] 172.17.0.2:6222 - rid:1 - Route connection created
+[DBG] 172.17.0.2:6222 - rid:1 - Route connect msg sent
+[DBG] 172.17.0.2:6222 - rid:1 - Registering remote route "vay01L4cPxqy75GIDcqKq7"
+[DBG] 172.17.0.2:6222 - rid:1 - Route sent local subscriptions
 ```
 
 The server will load the configuration file below. Any command line flags can override these values.
@@ -76,38 +81,44 @@ cluster {
 
 ```bash
 Server Options:
-    -a, --addr HOST                  Bind to HOST address (default: 0.0.0.0)
-    -p, --port PORT                  Use PORT for clients (default: 4222)
-    -P, --pid FILE                   File to store PID
-    -m, --http_port PORT             Use HTTP PORT for monitoring
-    -ms,--https_port PORT            Use HTTPS PORT for monitoring
-    -c, --config FILE                Configuration File
+    -a, --addr <host>                Bind to host address (default: 0.0.0.0)
+    -p, --port <port>                Use port for clients (default: 4222)
+    -P, --pid <file>                 File to store PID
+    -m, --http_port <port>           Use port for http monitoring
+    -ms,--https_port <port>          Use port for https monitoring
+    -c, --config <file>              Configuration file
+    -sl,--signal <signal>[=<pid>]    Send signal to gnatsd process (stop, quit, reopen, reload)
 
 Logging Options:
-    -l, --log FILE                   File to redirect log output
+    -l, --log <file>                 File to redirect log output
     -T, --logtime                    Timestamp log entries (default: true)
-    -s, --syslog                     Enable syslog as log method
-    -r, --remote_syslog              Syslog server addr (udp://localhost:514)
+    -s, --syslog                     Log to syslog or windows event log
+    -r, --remote_syslog <addr>       Syslog server addr (udp://localhost:514)
     -D, --debug                      Enable debugging output
     -V, --trace                      Trace the raw protocol
-    -DV                              Debug and Trace
+    -DV                              Debug and trace
 
 Authorization Options:
-        --user user                  User required for connections
-        --pass password              Password required for connections
+        --user <user>                User required for connections
+        --pass <password>            Password required for connections
+        --auth <token>               Authorization token required for connections
 
 TLS Options:
         --tls                        Enable TLS, do not verify clients (default: false)
-        --tlscert FILE               Server certificate file
-        --tlskey FILE                Private key for server certificate
-        --tlsverify                  Enable TLS, very client certificates
-        --tlscacert FILE             Client certificate CA for verification
+        --tlscert <file>             Server certificate file
+        --tlskey <file>              Private key for server certificate
+        --tlsverify                  Enable TLS, verify client certificates
+        --tlscacert <file>           Client certificate CA for verification
 
 Cluster Options:
-        --routes [rurl-1, rurl-2]    Routes to solicit and connect
+        --routes <rurl-1, rurl-2>    Routes to solicit and connect
+        --cluster <cluster-url>      Cluster URL for solicited routes
+        --no_advertise <bool>        Advertise known cluster IPs to clients
+        --connect_retries <number>   For implicit routes, number of connect retries
+
 
 Common Options:
     -h, --help                       Show this message
     -v, --version                    Show version
-        --help_tls                   TLS help.
+        --help_tls                   TLS help
 ```

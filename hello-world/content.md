@@ -3,7 +3,7 @@
 ```console
 $ docker run hello-world
 
-Hello from Docker.
+Hello from Docker!
 This message shows that your installation appears to be working correctly.
 
 To generate this message, Docker took the following steps:
@@ -17,20 +17,20 @@ To generate this message, Docker took the following steps:
 To try something more ambitious, you can run an Ubuntu container with:
  $ docker run -it ubuntu bash
 
-Share images, automate workflows, and more with a free Docker Hub account:
- https://hub.docker.com
+Share images, automate workflows, and more with a free Docker ID:
+ https://cloud.docker.com/
 
 For more examples and ideas, visit:
- https://docs.docker.com/userguide/
+ https://docs.docker.com/engine/userguide/
 
 
 $ docker images hello-world
 REPOSITORY   TAG     IMAGE ID      SIZE
-hello-world  latest  690ed74de00f  960 B
+hello-world  latest  05a3bd381fc2  1.84kB
 ```
 
 %%LOGO%%
 
 # How is this image created?
 
-This image is a prime example of using the [`scratch`](https://registry.hub.docker.com/_/scratch/) image effectively. See [`hello.asm`](%%GITHUB-REPO%%/blob/master/hello.asm) in %%GITHUB-REPO%% for the source code of the `hello` binary included in this image.
+This image is a prime example of using the [`scratch`](https://hub.docker.com/_/scratch/) image effectively. See [`hello.c`](%%GITHUB-REPO%%/blob/master/hello.c) in %%GITHUB-REPO%% for the source code of the `hello` binary included in this image.

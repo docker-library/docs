@@ -1,20 +1,67 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "neurodebian/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "neurodebian/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
 # Supported tags and respective `Dockerfile` links
 
--	[`precise`, `nd12.04` (*dockerfiles/precise/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/dc947232d6c7bf67d1dba642fdb1234fbaa95ab7/dockerfiles/precise/Dockerfile)
--	[`trusty`, `nd14.04` (*dockerfiles/trusty/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/dc947232d6c7bf67d1dba642fdb1234fbaa95ab7/dockerfiles/trusty/Dockerfile)
--	[`vivid`, `nd15.04` (*dockerfiles/vivid/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/dc947232d6c7bf67d1dba642fdb1234fbaa95ab7/dockerfiles/vivid/Dockerfile)
--	[`wily`, `nd15.10` (*dockerfiles/wily/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/dc947232d6c7bf67d1dba642fdb1234fbaa95ab7/dockerfiles/wily/Dockerfile)
--	[`squeeze`, `nd60` (*dockerfiles/squeeze/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/dc947232d6c7bf67d1dba642fdb1234fbaa95ab7/dockerfiles/squeeze/Dockerfile)
--	[`wheezy`, `nd70` (*dockerfiles/wheezy/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/dc947232d6c7bf67d1dba642fdb1234fbaa95ab7/dockerfiles/wheezy/Dockerfile)
--	[`jessie`, `nd80`, `latest` (*dockerfiles/jessie/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/dc947232d6c7bf67d1dba642fdb1234fbaa95ab7/dockerfiles/jessie/Dockerfile)
--	[`stretch`, `nd90` (*dockerfiles/stretch/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/dc947232d6c7bf67d1dba642fdb1234fbaa95ab7/dockerfiles/stretch/Dockerfile)
--	[`sid`, `nd` (*dockerfiles/sid/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/dc947232d6c7bf67d1dba642fdb1234fbaa95ab7/dockerfiles/sid/Dockerfile)
+-	[`trusty`, `nd14.04` (*dockerfiles/trusty/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/ff9c3b42146d774585d860000e580ba7367d8101/dockerfiles/trusty/Dockerfile)
+-	[`trusty-non-free`, `nd14.04-non-free` (*dockerfiles/trusty-non-free/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/ff9c3b42146d774585d860000e580ba7367d8101/dockerfiles/trusty-non-free/Dockerfile)
+-	[`xenial`, `nd16.04` (*dockerfiles/xenial/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/ff9c3b42146d774585d860000e580ba7367d8101/dockerfiles/xenial/Dockerfile)
+-	[`xenial-non-free`, `nd16.04-non-free` (*dockerfiles/xenial-non-free/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/ff9c3b42146d774585d860000e580ba7367d8101/dockerfiles/xenial-non-free/Dockerfile)
+-	[`zesty`, `nd17.04` (*dockerfiles/zesty/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/ff9c3b42146d774585d860000e580ba7367d8101/dockerfiles/zesty/Dockerfile)
+-	[`zesty-non-free`, `nd17.04-non-free` (*dockerfiles/zesty-non-free/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/ff9c3b42146d774585d860000e580ba7367d8101/dockerfiles/zesty-non-free/Dockerfile)
+-	[`artful`, `nd17.10` (*dockerfiles/artful/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/ff9c3b42146d774585d860000e580ba7367d8101/dockerfiles/artful/Dockerfile)
+-	[`artful-non-free`, `nd17.10-non-free` (*dockerfiles/artful-non-free/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/ff9c3b42146d774585d860000e580ba7367d8101/dockerfiles/artful-non-free/Dockerfile)
+-	[`wheezy`, `nd70` (*dockerfiles/wheezy/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/ff9c3b42146d774585d860000e580ba7367d8101/dockerfiles/wheezy/Dockerfile)
+-	[`wheezy-non-free`, `nd70-non-free` (*dockerfiles/wheezy-non-free/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/ff9c3b42146d774585d860000e580ba7367d8101/dockerfiles/wheezy-non-free/Dockerfile)
+-	[`jessie`, `nd80` (*dockerfiles/jessie/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/ff9c3b42146d774585d860000e580ba7367d8101/dockerfiles/jessie/Dockerfile)
+-	[`jessie-non-free`, `nd80-non-free` (*dockerfiles/jessie-non-free/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/ff9c3b42146d774585d860000e580ba7367d8101/dockerfiles/jessie-non-free/Dockerfile)
+-	[`stretch`, `nd90` (*dockerfiles/stretch/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/ff9c3b42146d774585d860000e580ba7367d8101/dockerfiles/stretch/Dockerfile)
+-	[`stretch-non-free`, `nd90-non-free` (*dockerfiles/stretch-non-free/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/ff9c3b42146d774585d860000e580ba7367d8101/dockerfiles/stretch-non-free/Dockerfile)
+-	[`buster`, `nd100` (*dockerfiles/buster/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/ff9c3b42146d774585d860000e580ba7367d8101/dockerfiles/buster/Dockerfile)
+-	[`buster-non-free`, `nd100-non-free` (*dockerfiles/buster-non-free/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/ff9c3b42146d774585d860000e580ba7367d8101/dockerfiles/buster-non-free/Dockerfile)
+-	[`sid`, `nd` (*dockerfiles/sid/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/ff9c3b42146d774585d860000e580ba7367d8101/dockerfiles/sid/Dockerfile)
+-	[`sid-non-free`, `nd-non-free` (*dockerfiles/sid-non-free/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/ff9c3b42146d774585d860000e580ba7367d8101/dockerfiles/sid-non-free/Dockerfile)
 
-[![](https://badge.imagelayers.io/neurodebian:latest.svg)](https://imagelayers.io/?images=neurodebian:precise,neurodebian:trusty,neurodebian:vivid,neurodebian:wily,neurodebian:squeeze,neurodebian:wheezy,neurodebian:jessie,neurodebian:stretch,neurodebian:sid)
+# Quick reference
 
-For more information about this image and its history, please see [the relevant manifest file (`library/neurodebian`)](https://github.com/docker-library/official-images/blob/master/library/neurodebian). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fneurodebian).
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `neurodebian/tag-details.md` file](https://github.com/docker-library/docs/blob/master/neurodebian/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+-	**Where to file issues**:  
+	[https://github.com/neurodebian/dockerfiles/issues](https://github.com/neurodebian/dockerfiles/issues)
+
+-	**Maintained by**:  
+	[NeuroDebian](https://github.com/neurodebian/dockerfiles)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/neurodebian/)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/neurodebian/` directory](https://github.com/docker-library/repo-info/blob/master/repos/neurodebian) ([history](https://github.com/docker-library/repo-info/commits/master/repos/neurodebian))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images PRs with label `library/neurodebian`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fneurodebian)  
+	[official-images repo's `library/neurodebian` file](https://github.com/docker-library/official-images/blob/master/library/neurodebian) ([history](https://github.com/docker-library/official-images/commits/master/library/neurodebian))
+
+-	**Source of this description**:  
+	[docs repo's `neurodebian/` directory](https://github.com/docker-library/docs/tree/master/neurodebian) ([history](https://github.com/docker-library/docs/commits/master/neurodebian))
+
+-	**Supported Docker versions**:  
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is NeuroDebian?
 
@@ -42,29 +89,3 @@ deb http://neuro.debian.net/debian wheezy main
 deb http://neuro.debian.net/debian data main
 #deb-src http://neuro.debian.net/debian-devel wheezy main
 ```
-
-# Supported Docker versions
-
-This image is officially supported on Docker version 1.11.0.
-
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Documentation
-
-Documentation for this image is stored in the [`neurodebian/` directory](https://github.com/docker-library/docs/tree/master/neurodebian) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/neurodebian/dockerfiles/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/neurodebian/dockerfiles/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.

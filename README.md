@@ -4,7 +4,10 @@ This repository contains the docs for each of the Docker official images. See [d
 
 All Markdown files here are run through [tianon's fork of `markdownfmt`](https://github.com/tianon/markdownfmt) (only forked to add some smaller-diff preference and minor DockerHub-compatibility changes), and verified as formatted correctly via Travis-CI.
 
-[![Build Status](https://travis-ci.org/docker-library/docs.svg?branch=master)](https://travis-ci.org/docker-library/docs)
+-	[Travis CI:  
+	![build status badge](https://travis-ci.org/docker-library/docs.svg?branch=master)](https://travis-ci.org/docker-library/docs)
+-	[Automated `update.sh` and `push.sh`:  
+	![build status badge](https://doi-janky.infosiftr.net/job/docs/job/update/badge/icon)](https://doi-janky.infosiftr.net/job/docs/job/update/)
 
 # How do I add a new image's docs
 
@@ -12,16 +15,26 @@ All Markdown files here are run through [tianon's fork of `markdownfmt`](https:/
 -	create a `README-short.txt` (required, 100 char max)
 -	create a `content.md` (required)
 -	create a `license.md` (required)
+-	create a `github-repo` (required)
 -	add a `logo.png` (recommended)
--	edit `update.sh` as needed (see below)
--	run `./markdownfmt.sh -l myimage` to verify that the format of your markdown files is compliant with `tianon/markdownfmt`. In case you see any file names, markdownfmt detected some issues, which might result in a failed build during continuous integration.
--	optionally run `./update.sh myimage` to generate `myimage/README.md` for review. **Note:** do not actually commit the `README.md` file; it is automatically generated/committed before being uploaded to DockerHub.
+
+Optionally:
+
+-	run `./markdownfmt.sh -l myimage` to verify whether format of your markdown files is compliant to `tianon/markdownfmt`. In case you see any file names, markdownfmt detected some issues, which might result in a failed build during continuous integration. run `./markdownfmt.sh -d myimage` to see a diff of changes required to pass.
+-	run `./update.sh myimage` to generate `myimage/README.md` for manual review of the generated copy.  
+	**Note:** do not actually commit the `README.md` file; it is automatically generated/committed before being uploaded to Docker Hub.
+
+# How do I update an image's docs
+
+To update `README.md` for a specific image do not edit `README.md` directly. Please edit `content.md` or another appropriate file within the folder. To see the changes, run `./update.sh myimage` from the repo root, but do not add the `README.md` changes to your pull request. See also `markdownfmt.sh` point [above](#how-do-i-add-a-new-images-docs).
 
 # What are all these files?
 
 ## `update.sh`
 
-This is the main script used to generate the `README.md` files for each image. When a new image is added that is not under the `docker-library` namespace on GitHub, a new entry must be added to the `otherRepos` array in this script. Accepted arguments are which image(s) you want to update and no arguments to update all of them.
+This is the main script used to generate the `README.md` files for each image. The generated file is committed along with the files used to generate it (see below on what customizations are available). Accepted arguments are which image(s) you want to update or no arguments to update all of them.
+
+This script assumes [`bashbrew`](https://github.com/docker-library/official-images/tree/81e90ca8dcec892ade7eb348cba5a4a5d6851e17/bashbrew) is in your `PATH` (for scraping relevant tag information from the library manifest file for each repository).
 
 ## `generate-repo-stub-readme.sh`
 
@@ -82,20 +95,20 @@ This file should contain a link to the license for the main software in the imag
 View [license information](http://golang.org/LICENSE) for the software contained in this image.
 ```
 
+## `<image name>/github-repo`
+
+This file should contain the URL to the GitHub repository for the Dockerfiles that become the images. The file should be in a single line ending in a newline with no extraneous whitespace. Only one GitHub repo per image repository is supported. It is used in generating links. Here is an example for `golang`:
+
+```text
+https://github.com/docker-library/golang
+```
+
 ## `<image name>/user-feedback.md`
 
 This file is an optional override of the default `user-feedback.md` for those repositories with different issue and contributing policies.
 
-## `<image name>/mailing-list.md`
-
-This file is snippet that gets inserted into the user feedback section to provide and extra way to get help, like a mailing list. Here is an example from the Postgres image:
-
-```markdown
-on the [mailing list](http://www.postgresql.org/community/lists/subscribe/) or
-```
-
 # Issues and Contributing
 
-If you would like to make a new Official Image, be sure to follow the [guidelines](https://docs.docker.com/docker-hub/official_repos/) and optionally talk to officialrepos@docker.com.
+If you would like to make a new Official Image, be sure to follow the [guidelines](https://docs.docker.com/docker-hub/official_repos/).
 
 Feel free to make a pull request for fixes and improvements to current documentation. For questions or problems on this repo come talk to us via the `#docker-library` IRC channel on [Freenode](https://freenode.net) or open up an issue.
