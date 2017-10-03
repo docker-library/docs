@@ -20,4 +20,3 @@ services:
 
 volumes:
     geonetwork:
-
