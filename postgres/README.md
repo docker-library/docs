@@ -26,8 +26,6 @@ WARNING:
 -	[`9.4.14-alpine`, `9.4-alpine` (*9.4/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/1089a8971b43a675109ad886bf1f3b327c067fa1/9.4/alpine/Dockerfile)
 -	[`9.3.19`, `9.3` (*9.3/Dockerfile*)](https://github.com/docker-library/postgres/blob/bef8f02d1fe2bb4547280ba609f19abd20230180/9.3/Dockerfile)
 -	[`9.3.19-alpine`, `9.3-alpine` (*9.3/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/1089a8971b43a675109ad886bf1f3b327c067fa1/9.3/alpine/Dockerfile)
--	[`9.2.23`, `9.2` (*9.2/Dockerfile*)](https://github.com/docker-library/postgres/blob/bef8f02d1fe2bb4547280ba609f19abd20230180/9.2/Dockerfile)
--	[`9.2.23-alpine`, `9.2-alpine` (*9.2/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/1089a8971b43a675109ad886bf1f3b327c067fa1/9.2/alpine/Dockerfile)
 
 # Quick reference
 
