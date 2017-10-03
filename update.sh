@@ -86,7 +86,7 @@ for image in "${images[@]}"; do
 
 		deprecated=
 		if [ -f "$repo/deprecated.md" ]; then
-			deprecated=$'# **DEPRECATED**\n\n'
+			deprecated=$'# **DEPRECATION NOTICE**\n\n'
 			deprecated+="$(cat "$repo/deprecated.md")"
 			deprecated+=$'\n\n'
 		fi
