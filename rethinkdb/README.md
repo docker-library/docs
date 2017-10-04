@@ -16,11 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.0.4`, `2.0` (*jessie/2.0.4/Dockerfile*)](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/da98484fc73485fe7780546903d01dcbcd931673/jessie/2.0.4/Dockerfile)
--	[`2.1.6`, `2.1` (*jessie/2.1.6/Dockerfile*)](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/da98484fc73485fe7780546903d01dcbcd931673/jessie/2.1.6/Dockerfile)
--	[`2.2.6`, `2.2` (*jessie/2.2.6/Dockerfile*)](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/da98484fc73485fe7780546903d01dcbcd931673/jessie/2.2.6/Dockerfile)
--	[`2.3.4` (*jessie/2.3.4/Dockerfile*)](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/da98484fc73485fe7780546903d01dcbcd931673/jessie/2.3.4/Dockerfile)
--	[`2.3.5`, `2.3`, `2`, `latest` (*jessie/2.3.5/Dockerfile*)](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/da98484fc73485fe7780546903d01dcbcd931673/jessie/2.3.5/Dockerfile)
+-	[`2.3.6`, `2.3`, `2`, `latest` (*jessie/2.3.6/Dockerfile*)](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/05946c0dbe3c7fa9338d3827428b2c32074a1447/jessie/2.3.6/Dockerfile)
 
 # Quick reference
 
