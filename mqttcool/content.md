@@ -65,7 +65,7 @@ To get more detailed information on how to configure the MQTT.Cool server, pleas
 
 ## Deployment of web server pages
 
-There might be some circumstances where you would like provide custom pages for the internal web server of the MQTT.Cool server. Even in this case, it is possible to customize the container by employing the same techniques as above.
+There might be some circumstances where you would like to provide custom pages for the internal web server of the MQTT.Cool server. Even in this case, it is possible to customize the container by employing the same techniques as above.
 
 For example, with the following command you will be able to fully replace the factory `pages` folder:
 
