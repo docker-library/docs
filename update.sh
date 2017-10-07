@@ -86,7 +86,7 @@ for image in "${images[@]}"; do
 
 		deprecated=
 		if [ -f "$repo/deprecated.md" ]; then
-			deprecated=$'# **DEPRECATED**\n\n'
+			deprecated=$'# **DEPRECATION NOTICE**\n\n'
 			deprecated+="$(cat "$repo/deprecated.md")"
 			deprecated+=$'\n\n'
 		fi
@@ -104,6 +104,11 @@ for image in "${images[@]}"; do
 		partial="$("$helperDir/generate-dockerfile-links-partial.sh" "$repo")"
 		[ "$partial" ]
 		replace_field "$targetFile" 'TAGS' "$partial"
+
+		echo '  ARCHES => arches.sh "'"$repo"'"'
+		arches="$("$helperDir/arches.sh" "$repo")"
+		[ "$arches" ]
+		replace_field "$targetFile" 'ARCHES' "$arches"
 
 		echo '  CONTENT => '"$repo"'/content.md'
 		replace_field "$targetFile" 'CONTENT' "$(cat "$repo/content.md")"

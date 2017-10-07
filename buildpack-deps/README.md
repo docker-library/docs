@@ -20,13 +20,13 @@ WARNING:
 -	[`artful-scm` (*artful/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/36018aca7e9637c9c04ff623625e59de12d7f161/artful/scm/Dockerfile)
 -	[`artful` (*artful/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/5d86449454958f224035b5b200bfd3be9c088ff3/artful/Dockerfile)
 -	[`buster-curl` (*buster/curl/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/72021102be2a05177d2c01e466495ba1c9d0b4f5/buster/curl/Dockerfile)
--	[`buster-scm` (*buster/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/1449b1e7ba5a389167893e6edb6245ca94cd4fd6/buster/scm/Dockerfile)
+-	[`buster-scm` (*buster/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/99a1c33fda559272e9322b02a5d778bbd04154e7/buster/scm/Dockerfile)
 -	[`buster` (*buster/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/5d86449454958f224035b5b200bfd3be9c088ff3/buster/Dockerfile)
 -	[`jessie-curl` (*jessie/curl/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/9f60e19008458220114f1a0b6cd3710f1015d402/jessie/curl/Dockerfile)
 -	[`jessie-scm` (*jessie/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/1845b3f918f69b4c97912b0d4d68a5658458e84f/jessie/scm/Dockerfile)
 -	[`jessie` (*jessie/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/5d86449454958f224035b5b200bfd3be9c088ff3/jessie/Dockerfile)
 -	[`sid-curl` (*sid/curl/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/9f60e19008458220114f1a0b6cd3710f1015d402/sid/curl/Dockerfile)
--	[`sid-scm` (*sid/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/1845b3f918f69b4c97912b0d4d68a5658458e84f/sid/scm/Dockerfile)
+-	[`sid-scm` (*sid/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/99a1c33fda559272e9322b02a5d778bbd04154e7/sid/scm/Dockerfile)
 -	[`sid` (*sid/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/5d86449454958f224035b5b200bfd3be9c088ff3/sid/Dockerfile)
 -	[`stretch-curl`, `curl` (*stretch/curl/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/9f60e19008458220114f1a0b6cd3710f1015d402/stretch/curl/Dockerfile)
 -	[`stretch-scm`, `scm` (*stretch/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/1845b3f918f69b4c97912b0d4d68a5658458e84f/stretch/scm/Dockerfile)
@@ -55,6 +55,9 @@ WARNING:
 -	**Maintained by**:  
 	[the Docker Community](https://github.com/docker-library/buildpack-deps)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/buildpack-deps/), [`arm32v5`](https://hub.docker.com/r/arm32v5/buildpack-deps/), [`arm32v7`](https://hub.docker.com/r/arm32v7/buildpack-deps/), [`arm64v8`](https://hub.docker.com/r/arm64v8/buildpack-deps/), [`i386`](https://hub.docker.com/r/i386/buildpack-deps/), [`ppc64le`](https://hub.docker.com/r/ppc64le/buildpack-deps/), [`s390x`](https://hub.docker.com/r/s390x/buildpack-deps/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/buildpack-deps/` directory](https://github.com/docker-library/repo-info/blob/master/repos/buildpack-deps) ([history](https://github.com/docker-library/repo-info/commits/master/repos/buildpack-deps))  
 	(image metadata, transfer size, etc)
@@ -67,7 +70,7 @@ WARNING:
 	[docs repo's `buildpack-deps/` directory](https://github.com/docker-library/docs/tree/master/buildpack-deps) ([history](https://github.com/docker-library/docs/commits/master/buildpack-deps))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is `buildpack-deps`?
 

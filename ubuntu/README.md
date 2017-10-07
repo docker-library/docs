@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`17.10`, `artful-20170728`, `artful`, `devel` (*artful/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/a2573609340194bf33712c1fa2dc4de8f9b70ca2/artful/Dockerfile)
--	[`14.04`, `trusty-20170728`, `trusty` (*trusty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/a2573609340194bf33712c1fa2dc4de8f9b70ca2/trusty/Dockerfile)
--	[`16.04`, `xenial-20170802`, `xenial`, `latest` (*xenial/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/a2573609340194bf33712c1fa2dc4de8f9b70ca2/xenial/Dockerfile)
--	[`17.04`, `zesty-20170703`, `zesty`, `rolling` (*zesty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/a2573609340194bf33712c1fa2dc4de8f9b70ca2/zesty/Dockerfile)
+-	[`17.10`, `artful-20170916`, `artful`, `devel` (*artful/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/31ebd22e9e83185d69d50b3492911aedf519dd4a/artful/Dockerfile)
+-	[`14.04`, `trusty-20170817`, `trusty` (*trusty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/31ebd22e9e83185d69d50b3492911aedf519dd4a/trusty/Dockerfile)
+-	[`16.04`, `xenial-20170915`, `xenial`, `latest` (*xenial/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/31ebd22e9e83185d69d50b3492911aedf519dd4a/xenial/Dockerfile)
+-	[`17.04`, `zesty-20170915`, `zesty`, `rolling` (*zesty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/31ebd22e9e83185d69d50b3492911aedf519dd4a/zesty/Dockerfile)
 
 # Quick reference
 
@@ -31,6 +31,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[Canonical](https://partner-images.canonical.com/core/) and [Tianon (Debian Developer)](https://github.com/tianon/docker-brew-ubuntu-core)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/ubuntu/), [`arm32v7`](https://hub.docker.com/r/arm32v7/ubuntu/), [`arm64v8`](https://hub.docker.com/r/arm64v8/ubuntu/), [`i386`](https://hub.docker.com/r/i386/ubuntu/), [`ppc64le`](https://hub.docker.com/r/ppc64le/ubuntu/), [`s390x`](https://hub.docker.com/r/s390x/ubuntu/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/ubuntu/` directory](https://github.com/docker-library/repo-info/blob/master/repos/ubuntu) ([history](https://github.com/docker-library/repo-info/commits/master/repos/ubuntu))  
@@ -44,7 +47,7 @@ WARNING:
 	[docs repo's `ubuntu/` directory](https://github.com/docker-library/docs/tree/master/ubuntu) ([history](https://github.com/docker-library/docs/commits/master/ubuntu))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Ubuntu?
 

@@ -17,8 +17,8 @@ WARNING:
 # Supported tags and respective `Dockerfile` links
 
 -	[`10.3.1`, `10.3` (*10.3/Dockerfile*)](https://github.com/docker-library/mariadb/blob/8bbe483d5fc132b87063db9d22132b571a778fd4/10.3/Dockerfile)
--	[`10.2.8`, `10.2`, `10`, `latest` (*10.2/Dockerfile*)](https://github.com/docker-library/mariadb/blob/e841926a0c09fb1d1d7dd79131f9d8e3a09619ec/10.2/Dockerfile)
--	[`10.1.26`, `10.1` (*10.1/Dockerfile*)](https://github.com/docker-library/mariadb/blob/b43b9ec1eac3f8fc6ad6ad5ea85fb301b2a0c95b/10.1/Dockerfile)
+-	[`10.2.9`, `10.2`, `10`, `latest` (*10.2/Dockerfile*)](https://github.com/docker-library/mariadb/blob/8d8f803e38b374fa7c5a524bdbf014365000d319/10.2/Dockerfile)
+-	[`10.1.28`, `10.1` (*10.1/Dockerfile*)](https://github.com/docker-library/mariadb/blob/6d8fbc8e417ed8f50be812d1e941a164ec3e32f2/10.1/Dockerfile)
 -	[`10.0.32`, `10.0` (*10.0/Dockerfile*)](https://github.com/docker-library/mariadb/blob/48182d4da0a078eb05c118a39c28b8b832c1f60b/10.0/Dockerfile)
 -	[`5.5.57`, `5.5`, `5` (*5.5/Dockerfile*)](https://github.com/docker-library/mariadb/blob/198f04b24ca6f668357106355b03d38d1f3234bc/5.5/Dockerfile)
 
@@ -33,6 +33,9 @@ WARNING:
 -	**Maintained by**:  
 	[the Docker Community](https://github.com/docker-library/mariadb)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/mariadb/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/mariadb/` directory](https://github.com/docker-library/repo-info/blob/master/repos/mariadb) ([history](https://github.com/docker-library/repo-info/commits/master/repos/mariadb))  
 	(image metadata, transfer size, etc)
@@ -45,7 +48,7 @@ WARNING:
 	[docs repo's `mariadb/` directory](https://github.com/docker-library/docs/tree/master/mariadb) ([history](https://github.com/docker-library/docs/commits/master/mariadb))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is MariaDB?
 
@@ -71,7 +74,9 @@ $ docker run --name some-mariadb -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mariadb:
 
 ## Connect to MySQL from an application in another Docker container
 
-Since MariaDB is intended as a drop-in replacement for MySQL, it can be used with many applications. This image exposes the standard MySQL port (3306), so container linking makes the MySQL instance available to other application containers. Start your application container like this in order to link it to the MySQL container:
+Since MariaDB is intended as a drop-in replacement for MySQL, it can be used with many applications.
+
+This image exposes the standard MySQL port (3306), so container linking makes the MySQL instance available to other application containers. Start your application container like this in order to link it to the MySQL container:
 
 ```console
 $ docker run --name some-app --link some-mariadb:mysql -d application-that-uses-mysql
@@ -94,6 +99,33 @@ $ docker run -it --rm mariadb mysql -hsome.mysql.host -usome-mysql-user -p
 ```
 
 More information about the MySQL command line client can be found in the [MySQL documentation](http://dev.mysql.com/doc/en/mysql.html)
+
+## ... via [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/) or [`docker-compose`](https://github.com/docker/compose)
+
+Example `stack.yml` for `mariadb`:
+
+```yaml
+# Use root/example as user/password credentials
+version: '3.1'
+
+services:
+
+    db:
+        image: mariadb
+        restart: always
+        environment:
+            MYSQL_ROOT_PASSWORD: example
+
+    adminer:
+        image: adminer
+        restart: always
+        ports:
+            - 8080:8080
+```
+
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/cbcaf41b2520070c59e864eeea3bec95d5424c5e/mariadb/stack.yml)
+
+Run `docker stack deploy -c stack.yml mariadb` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
 
 ## Container shell access and viewing MySQL logs
 
@@ -166,6 +198,16 @@ This is an optional variable. Set to `yes` to allow the container to be started 
 ### `MYSQL_RANDOM_ROOT_PASSWORD`
 
 This is an optional variable. Set to `yes` to generate a random initial password for the root user (using `pwgen`). The generated root password will be printed to stdout (`GENERATED ROOT PASSWORD: .....`).
+
+## Docker Secrets
+
+As an alternative to passing sensitive information via environment variables, `_FILE` may be appended to the previously listed environment variables, causing the initialization script to load the values for those variables from files present in the container. In particular, this can be used to load passwords from Docker secrets stored in `/run/secrets/<secret_name>` files. For example:
+
+```console
+$ docker run --name some-mysql -e MYSQL_ROOT_PASSWORD_FILE=/run/secrets/mysql-root -d mariadb:tag
+```
+
+Currently, this is only supported for `MYSQL_ROOT_PASSWORD`, `MYSQL_ROOT_HOST`, `MYSQL_DATABASE`, `MYSQL_USER`, and `MYSQL_PASSWORD`.
 
 # Initializing a fresh instance
 

@@ -16,8 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.2.3`, `3.2`, `latest` (*3.2.3/community/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/1f97c5b18ad907d83128e858ae188d4be5203c61/3.2.3/community/Dockerfile)
--	[`3.2.3-enterprise`, `3.2-enterprise`, `enterprise` (*3.2.3/enterprise/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/1f97c5b18ad907d83128e858ae188d4be5203c61/3.2.3/enterprise/Dockerfile)
+-	[`3.2.5`, `3.2`, `latest` (*3.2.5/community/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/a20b39574373d3e7c0d36d96c70872fcf5325237/3.2.5/community/Dockerfile)
+-	[`3.2.5-enterprise`, `3.2-enterprise`, `enterprise` (*3.2.5/enterprise/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/a20b39574373d3e7c0d36d96c70872fcf5325237/3.2.5/enterprise/Dockerfile)
+-	[`3.2.3` (*3.2.3/community/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/1f97c5b18ad907d83128e858ae188d4be5203c61/3.2.3/community/Dockerfile)
+-	[`3.2.3-enterprise` (*3.2.3/enterprise/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/1f97c5b18ad907d83128e858ae188d4be5203c61/3.2.3/enterprise/Dockerfile)
 -	[`3.2.2` (*3.2.2/community/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/6b6d7bc20c6c3faec4336055f56f2dab5b0b2e4f/3.2.2/community/Dockerfile)
 -	[`3.2.2-enterprise` (*3.2.2/enterprise/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/6b6d7bc20c6c3faec4336055f56f2dab5b0b2e4f/3.2.2/enterprise/Dockerfile)
 -	[`3.2.1` (*3.2.1/community/Dockerfile*)](https://github.com/neo4j/docker-neo4j-publish/blob/ae826519a7acf389396ab6c388fe299c21b41107/3.2.1/community/Dockerfile)
@@ -98,6 +100,9 @@ WARNING:
 -	**Maintained by**:  
 	[Neo4j](https://github.com/neo4j/docker-neo4j)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/neo4j/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/neo4j/` directory](https://github.com/docker-library/repo-info/blob/master/repos/neo4j) ([history](https://github.com/docker-library/repo-info/commits/master/repos/neo4j))  
 	(image metadata, transfer size, etc)
@@ -110,7 +115,7 @@ WARNING:
 	[docs repo's `neo4j/` directory](https://github.com/docker-library/docs/tree/master/neo4j) ([history](https://github.com/docker-library/docs/commits/master/neo4j))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Neo4j?
 

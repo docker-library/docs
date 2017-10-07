@@ -16,9 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`develop` (*develop/Dockerfile*)](https://github.com/eggheads/eggdrop-docker/blob/39fc15007ed450be1355b8ea39c6bf9a22343004/develop/Dockerfile)
--	[`1.8`, `1.8.2`, `stable`, `latest` (*1.8/Dockerfile*)](https://github.com/eggheads/eggdrop-docker/blob/b351e05e1040a1bbd446df3753d9b8a1d0a54673/1.8/Dockerfile)
--	[`1.6`, `1.6.21` (*1.6/Dockerfile*)](https://github.com/eggheads/eggdrop-docker/blob/954bb0048b93945aa7fcd98eda0a27b8526f9eaa/1.6/Dockerfile)
+-	[`develop` (*develop/Dockerfile*)](https://github.com/eggheads/eggdrop-docker/blob/e50da857a808ea6593fc4bfd56997d92a0461193/develop/Dockerfile)
+-	[`1.8`, `1.8.2`, `stable`, `latest` (*1.8/Dockerfile*)](https://github.com/eggheads/eggdrop-docker/blob/e50da857a808ea6593fc4bfd56997d92a0461193/1.8/Dockerfile)
+-	[`1.6`, `1.6.21` (*1.6/Dockerfile*)](https://github.com/eggheads/eggdrop-docker/blob/e50da857a808ea6593fc4bfd56997d92a0461193/1.6/Dockerfile)
 
 # Quick reference
 
@@ -30,6 +30,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[Eggheads (the Eggdrop community)](https://github.com/eggheads/eggdrop-docker)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/eggdrop/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/eggdrop/` directory](https://github.com/docker-library/repo-info/blob/master/repos/eggdrop) ([history](https://github.com/docker-library/repo-info/commits/master/repos/eggdrop))  
@@ -43,7 +46,7 @@ WARNING:
 	[docs repo's `eggdrop/` directory](https://github.com/docker-library/docs/tree/master/eggdrop) ([history](https://github.com/docker-library/docs/commits/master/eggdrop))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Eggdrop?
 

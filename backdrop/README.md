@@ -30,6 +30,9 @@ WARNING:
 -	**Maintained by**:  
 	[Backdrop Ops](https://github.com/backdrop-ops/backdrop-docker)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/backdrop/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/backdrop/` directory](https://github.com/docker-library/repo-info/blob/master/repos/backdrop) ([history](https://github.com/docker-library/repo-info/commits/master/repos/backdrop))  
 	(image metadata, transfer size, etc)
@@ -42,7 +45,7 @@ WARNING:
 	[docs repo's `backdrop/` directory](https://github.com/docker-library/docs/tree/master/backdrop) ([history](https://github.com/docker-library/docs/commits/master/backdrop))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Backdrop CMS?
 

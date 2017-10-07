@@ -36,6 +36,9 @@ WARNING:
 -	**Maintained by**:  
 	[Docker, Inc.](https://github.com/docker/notary-official-images)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/notary/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/notary/` directory](https://github.com/docker-library/repo-info/blob/master/repos/notary) ([history](https://github.com/docker-library/repo-info/commits/master/repos/notary))  
 	(image metadata, transfer size, etc)
@@ -48,7 +51,7 @@ WARNING:
 	[docs repo's `notary/` directory](https://github.com/docker-library/docs/tree/master/notary) ([history](https://github.com/docker-library/docs/commits/master/notary))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # How to use this repository
 

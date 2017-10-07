@@ -18,7 +18,7 @@ WARNING:
 
 -	[`0.9.7`, `0.9` (*0.9.7/Dockerfile*)](https://github.com/31z4/storm-docker/blob/6e94e11977556f0f4a99633b1f835f13d20c1e30/0.9.7/Dockerfile)
 -	[`0.10.2`, `0.10` (*0.10.2/Dockerfile*)](https://github.com/31z4/storm-docker/blob/6e94e11977556f0f4a99633b1f835f13d20c1e30/0.10.2/Dockerfile)
--	[`1.0.3`, `1.0` (*1.0.3/Dockerfile*)](https://github.com/31z4/storm-docker/blob/35207c57594856c661adcea5063584eb22534ddb/1.0.3/Dockerfile)
+-	[`1.0.5`, `1.0` (*1.0.5/Dockerfile*)](https://github.com/31z4/storm-docker/blob/60316c9351be7dedd39cbcc308dc1fe5c00e44a5/1.0.5/Dockerfile)
 -	[`1.1.1`, `1.1`, `latest` (*1.1.1/Dockerfile*)](https://github.com/31z4/storm-docker/blob/35207c57594856c661adcea5063584eb22534ddb/1.1.1/Dockerfile)
 
 # Quick reference
@@ -32,6 +32,9 @@ WARNING:
 -	**Maintained by**:  
 	[the Docker Community](https://github.com/31z4/storm-docker)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/storm/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/storm/` directory](https://github.com/docker-library/repo-info/blob/master/repos/storm) ([history](https://github.com/docker-library/repo-info/commits/master/repos/storm))  
 	(image metadata, transfer size, etc)
@@ -44,7 +47,7 @@ WARNING:
 	[docs repo's `storm/` directory](https://github.com/docker-library/docs/tree/master/storm) ([history](https://github.com/docker-library/docs/commits/master/storm))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Apache Storm?
 

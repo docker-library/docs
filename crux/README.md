@@ -14,7 +14,7 @@ WARNING:
 
 -->
 
-# **DEPRECATED**
+# **DEPRECATION NOTICE**
 
 This image is deprecated due to maintainer inactivity (last updated Aug 2015; [docker-library/official-images#1012](https://github.com/docker-library/official-images/pull/1012)).
 
@@ -35,6 +35,9 @@ If a representative of the CRUX community would like to step up and continue mai
 -	**Maintained by**:  
 	currently unmainainted (see deprecation notice)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/crux/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/crux/` directory](https://github.com/docker-library/repo-info/blob/master/repos/crux) ([history](https://github.com/docker-library/repo-info/commits/master/repos/crux))  
 	(image metadata, transfer size, etc)
@@ -47,7 +50,7 @@ If a representative of the CRUX community would like to step up and continue mai
 	[docs repo's `crux/` directory](https://github.com/docker-library/docs/tree/master/crux) ([history](https://github.com/docker-library/docs/commits/master/crux))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is CRUX?
 

@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.2`, `1.2.1` (*kapacitor/1.2/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/3a8019600cefcb4ffc85c3e3a155980d2dc3f5ff/kapacitor/1.2/Dockerfile)
--	[`1.2-alpine`, `1.2.1-alpine` (*kapacitor/1.2/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/3a8019600cefcb4ffc85c3e3a155980d2dc3f5ff/kapacitor/1.2/alpine/Dockerfile)
--	[`1.3`, `1.3.3`, `latest` (*kapacitor/1.3/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/15a2aa9346dab8becc70e79fe693053d560a9e32/kapacitor/1.3/Dockerfile)
--	[`1.3-alpine`, `1.3.3-alpine`, `alpine` (*kapacitor/1.3/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/15a2aa9346dab8becc70e79fe693053d560a9e32/kapacitor/1.3/alpine/Dockerfile)
+-	[`1.2`, `1.2.1` (*kapacitor/1.2/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/dc4f0480be886393041acf1c3f739f197d45b9c3/kapacitor/1.2/Dockerfile)
+-	[`1.2-alpine`, `1.2.1-alpine` (*kapacitor/1.2/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/dc4f0480be886393041acf1c3f739f197d45b9c3/kapacitor/1.2/alpine/Dockerfile)
+-	[`1.3`, `1.3.3`, `latest` (*kapacitor/1.3/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/dc4f0480be886393041acf1c3f739f197d45b9c3/kapacitor/1.3/Dockerfile)
+-	[`1.3-alpine`, `1.3.3-alpine`, `alpine` (*kapacitor/1.3/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/dc4f0480be886393041acf1c3f739f197d45b9c3/kapacitor/1.3/alpine/Dockerfile)
 
 # Quick reference
 
@@ -31,6 +31,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[InfluxData](https://github.com/influxdata/influxdata-docker)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/kapacitor/), [`arm32v7`](https://hub.docker.com/r/arm32v7/kapacitor/), [`arm64v8`](https://hub.docker.com/r/arm64v8/kapacitor/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/kapacitor/` directory](https://github.com/docker-library/repo-info/blob/master/repos/kapacitor) ([history](https://github.com/docker-library/repo-info/commits/master/repos/kapacitor))  
@@ -44,7 +47,7 @@ WARNING:
 	[docs repo's `kapacitor/` directory](https://github.com/docker-library/docs/tree/master/kapacitor) ([history](https://github.com/docker-library/docs/commits/master/kapacitor))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # Kapacitor
 
@@ -185,7 +188,7 @@ The `kapacitor` images come in many flavors, each designed for a specific use ca
 
 ## `kapacitor:<version>`
 
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of. This tag is based off of [`buildpack-deps`](https://registry.hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
 ## `kapacitor:alpine`
 

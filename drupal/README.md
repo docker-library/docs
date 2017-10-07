@@ -16,15 +16,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.4.0-rc1-apache`, `8.4-rc-apache`, `rc-apache`, `8.4.0-rc1`, `8.4-rc`, `rc` (*8.4-rc/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/c561323f3add389efbb3826593f3a45fede5d14b/8.4-rc/apache/Dockerfile)
--	[`8.4.0-rc1-fpm`, `8.4-rc-fpm`, `rc-fpm` (*8.4-rc/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/c561323f3add389efbb3826593f3a45fede5d14b/8.4-rc/fpm/Dockerfile)
--	[`8.4.0-rc1-fpm-alpine`, `8.4-rc-fpm-alpine`, `rc-fpm-alpine` (*8.4-rc/fpm-alpine/Dockerfile*)](https://github.com/docker-library/drupal/blob/c561323f3add389efbb3826593f3a45fede5d14b/8.4-rc/fpm-alpine/Dockerfile)
--	[`8.3.7-apache`, `8.3-apache`, `8-apache`, `apache`, `8.3.7`, `8.3`, `8`, `latest` (*8.3/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/6eb80c71ff39e076633362adf0dc67dd252f1753/8.3/apache/Dockerfile)
--	[`8.3.7-fpm`, `8.3-fpm`, `8-fpm`, `fpm` (*8.3/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/6eb80c71ff39e076633362adf0dc67dd252f1753/8.3/fpm/Dockerfile)
--	[`8.3.7-fpm-alpine`, `8.3-fpm-alpine`, `8-fpm-alpine`, `fpm-alpine` (*8.3/fpm-alpine/Dockerfile*)](https://github.com/docker-library/drupal/blob/6eb80c71ff39e076633362adf0dc67dd252f1753/8.3/fpm-alpine/Dockerfile)
+-	[`8.4.0-apache`, `8.4-apache`, `8-apache`, `apache`, `8.4.0`, `8.4`, `8`, `latest` (*8.4/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/4adc72d34dc250cde5329dff32989b5aa8090324/8.4/apache/Dockerfile)
+-	[`8.4.0-fpm`, `8.4-fpm`, `8-fpm`, `fpm` (*8.4/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/4adc72d34dc250cde5329dff32989b5aa8090324/8.4/fpm/Dockerfile)
+-	[`8.4.0-fpm-alpine`, `8.4-fpm-alpine`, `8-fpm-alpine`, `fpm-alpine` (*8.4/fpm-alpine/Dockerfile*)](https://github.com/docker-library/drupal/blob/4adc72d34dc250cde5329dff32989b5aa8090324/8.4/fpm-alpine/Dockerfile)
+-	[`8.3.7-apache`, `8.3-apache`, `8.3.7`, `8.3` (*8.3/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/6eb80c71ff39e076633362adf0dc67dd252f1753/8.3/apache/Dockerfile)
+-	[`8.3.7-fpm`, `8.3-fpm` (*8.3/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/6eb80c71ff39e076633362adf0dc67dd252f1753/8.3/fpm/Dockerfile)
+-	[`8.3.7-fpm-alpine`, `8.3-fpm-alpine` (*8.3/fpm-alpine/Dockerfile*)](https://github.com/docker-library/drupal/blob/30b3f40a64a8f128f0bff32f7e76eb9bc041cba5/8.3/fpm-alpine/Dockerfile)
 -	[`7.56-apache`, `7-apache`, `7.56`, `7` (*7/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/a8e09f524b89b61534f376e45b885d433d867c88/7/apache/Dockerfile)
 -	[`7.56-fpm`, `7-fpm` (*7/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/a8e09f524b89b61534f376e45b885d433d867c88/7/fpm/Dockerfile)
--	[`7.56-fpm-alpine`, `7-fpm-alpine` (*7/fpm-alpine/Dockerfile*)](https://github.com/docker-library/drupal/blob/a8e09f524b89b61534f376e45b885d433d867c88/7/fpm-alpine/Dockerfile)
+-	[`7.56-fpm-alpine`, `7-fpm-alpine` (*7/fpm-alpine/Dockerfile*)](https://github.com/docker-library/drupal/blob/30b3f40a64a8f128f0bff32f7e76eb9bc041cba5/7/fpm-alpine/Dockerfile)
 
 # Quick reference
 
@@ -36,6 +36,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[the Docker Community](https://github.com/docker-library/drupal) (*not* the Drupal Community or the Drupal Security Team)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/drupal/), [`arm32v5`](https://hub.docker.com/r/arm32v5/drupal/), [`arm32v7`](https://hub.docker.com/r/arm32v7/drupal/), [`arm64v8`](https://hub.docker.com/r/arm64v8/drupal/), [`i386`](https://hub.docker.com/r/i386/drupal/), [`ppc64le`](https://hub.docker.com/r/ppc64le/drupal/), [`s390x`](https://hub.docker.com/r/s390x/drupal/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/drupal/` directory](https://github.com/docker-library/repo-info/blob/master/repos/drupal) ([history](https://github.com/docker-library/repo-info/commits/master/repos/drupal))  
@@ -49,7 +52,7 @@ WARNING:
 	[docs repo's `drupal/` directory](https://github.com/docker-library/docs/tree/master/drupal) ([history](https://github.com/docker-library/docs/commits/master/drupal))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Drupal?
 

@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.3.6`, `3.3` (*3.3.6/Dockerfile*)](https://github.com/31z4/zookeeper-docker/blob/7e7eac6d6c11428849ec13bb7d240e4cfa21b2e7/3.3.6/Dockerfile)
--	[`3.4.10`, `3.4`, `latest` (*3.4.10/Dockerfile*)](https://github.com/31z4/zookeeper-docker/blob/f12428ab7c6ea263ef037cf258129b83276c009c/3.4.10/Dockerfile)
+-	[`3.3.6`, `3.3` (*3.3.6/Dockerfile*)](https://github.com/31z4/zookeeper-docker/blob/9f00dd78dcd67baa9b57449329fcbd4744948326/3.3.6/Dockerfile)
+-	[`3.4.10`, `3.4`, `latest` (*3.4.10/Dockerfile*)](https://github.com/31z4/zookeeper-docker/blob/9f00dd78dcd67baa9b57449329fcbd4744948326/3.4.10/Dockerfile)
 
 # Quick reference
 
@@ -29,6 +29,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[the Docker Community](https://github.com/31z4/zookeeper-docker)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/zookeeper/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/zookeeper/` directory](https://github.com/docker-library/repo-info/blob/master/repos/zookeeper) ([history](https://github.com/docker-library/repo-info/commits/master/repos/zookeeper))  
@@ -42,7 +45,7 @@ WARNING:
 	[docs repo's `zookeeper/` directory](https://github.com/docker-library/docs/tree/master/zookeeper) ([history](https://github.com/docker-library/docs/commits/master/zookeeper))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Apache Zookeeper?
 
@@ -148,6 +151,12 @@ Defaults to `5`. ZooKeeper's `initLimit`
 Defaults to `2`. ZooKeeper's `syncLimit`
 
 > Amount of time, in ticks (see tickTime), to allow followers to sync with ZooKeeper. If followers fall too far behind a leader, they will be dropped.
+
+### `ZOO_MAX_CLIENT_CNXNS`
+
+Defaults to `60`. ZooKeeper's `maxClientCnxns`
+
+> Limits the number of concurrent connections (at the socket level) that a single client, identified by IP address, may make to a single member of the ZooKeeper ensemble.
 
 ## Replicated mode
 

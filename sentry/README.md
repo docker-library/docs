@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.18.0`, `8.18` (*8.18/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/7451b44273e5847a0ff261be45603693a21d162e/8.18/Dockerfile)
--	[`8.18.0-onbuild`, `8.18-onbuild` (*8.18/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/7451b44273e5847a0ff261be45603693a21d162e/8.18/onbuild/Dockerfile)
--	[`8.19.0`, `8.19`, `8`, `latest` (*8.19/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/f7edbbec370da95fe2a2d96e708e732fa74e4900/8.19/Dockerfile)
--	[`8.19.0-onbuild`, `8.19-onbuild`, `8-onbuild`, `onbuild` (*8.19/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/f7edbbec370da95fe2a2d96e708e732fa74e4900/8.19/onbuild/Dockerfile)
+-	[`8.19.0`, `8.19` (*8.19/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/f7edbbec370da95fe2a2d96e708e732fa74e4900/8.19/Dockerfile)
+-	[`8.19.0-onbuild`, `8.19-onbuild` (*8.19/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/f7edbbec370da95fe2a2d96e708e732fa74e4900/8.19/onbuild/Dockerfile)
+-	[`8.20.0`, `8.20`, `8`, `latest` (*8.20/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/5b3a524591bddce5393a574175439171cdcde5e8/8.20/Dockerfile)
+-	[`8.20.0-onbuild`, `8.20-onbuild`, `8-onbuild`, `onbuild` (*8.20/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/5b3a524591bddce5393a574175439171cdcde5e8/8.20/onbuild/Dockerfile)
 
 # Quick reference
 
@@ -31,6 +31,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[Sentry](https://github.com/getsentry/docker-sentry)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/sentry/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/sentry/` directory](https://github.com/docker-library/repo-info/blob/master/repos/sentry) ([history](https://github.com/docker-library/repo-info/commits/master/repos/sentry))  
@@ -44,7 +47,7 @@ WARNING:
 	[docs repo's `sentry/` directory](https://github.com/docker-library/docs/tree/master/sentry) ([history](https://github.com/docker-library/docs/commits/master/sentry))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Sentry?
 

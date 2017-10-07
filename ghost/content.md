@@ -14,7 +14,7 @@ This will start a Ghost instance listening on the default Ghost port of 2368.
 $ docker run -d --name some-ghost ghost
 ```
 
-### Custom port
+## Custom port
 
 If you'd like to be able to access the instance from the host without the container's IP, standard port mappings can be used:
 
@@ -24,7 +24,7 @@ $ docker run -d --name some-ghost -p 3001:2368 ghost
 
 Then, access it via `http://localhost:3001` or `http://host-ip:3001` in a browser.
 
-# Stateful
+## Stateful
 
 Mount your existing content. In this example we also use the Alpine base image.
 
@@ -47,11 +47,11 @@ If you want to run Ghost 0.11.xx, be aware of the container's path difference:
 -	Ghost 1.x.x is: `/var/lib/ghost/content`
 -	Ghost 0.11.x is: `/var/lib/ghost`
 
-# SQLite Database
+### SQLite Database
 
 This Docker image for Ghost uses SQLite. There is nothing special to configure.
 
-# Docker Volume
+### Docker Volume
 
 Alternatively you can use a [data container](http://docs.docker.com/engine/tutorials/dockervolumes/) that has a volume that points to `/var/lib/ghost/content` (or /var/lib/ghost for 0.11.x) and then reference it:
 
@@ -59,7 +59,7 @@ Alternatively you can use a [data container](http://docs.docker.com/engine/tutor
 $ docker run -d --name some-ghost --volumes-from some-ghost-data ghost
 ```
 
-# What is the Node.js version?
+## What is the Node.js version?
 
 When opening a ticket at https://github.com/TryGhost/Ghost/issues it becomes necessary to know the version of Node.js in use:
 
@@ -67,3 +67,7 @@ When opening a ticket at https://github.com/TryGhost/Ghost/issues it becomes nec
 $ docker exec <container-id> node --version
 v6.11.2
 ```
+
+## %%STACK%%
+
+Run `docker stack deploy -c stack.yml %%REPO%%` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).

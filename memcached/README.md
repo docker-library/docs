@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.5.1`, `1.5`, `1`, `latest` (*debian/Dockerfile*)](https://github.com/docker-library/memcached/blob/47577ad04041d83146439243e35f809b88236466/debian/Dockerfile)
--	[`1.5.1-alpine`, `1.5-alpine`, `1-alpine`, `alpine` (*alpine/Dockerfile*)](https://github.com/docker-library/memcached/blob/47577ad04041d83146439243e35f809b88236466/alpine/Dockerfile)
+-	[`1.5.2`, `1.5`, `1`, `latest` (*debian/Dockerfile*)](https://github.com/docker-library/memcached/blob/4054fdd2b7e0744078806abec9aa507d0df0815c/debian/Dockerfile)
+-	[`1.5.2-alpine`, `1.5-alpine`, `1-alpine`, `alpine` (*alpine/Dockerfile*)](https://github.com/docker-library/memcached/blob/4054fdd2b7e0744078806abec9aa507d0df0815c/alpine/Dockerfile)
 
 # Quick reference
 
@@ -29,6 +29,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[the Docker Community](https://github.com/docker-library/memcached)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/memcached/), [`arm32v5`](https://hub.docker.com/r/arm32v5/memcached/), [`arm32v7`](https://hub.docker.com/r/arm32v7/memcached/), [`arm64v8`](https://hub.docker.com/r/arm64v8/memcached/), [`i386`](https://hub.docker.com/r/i386/memcached/), [`ppc64le`](https://hub.docker.com/r/ppc64le/memcached/), [`s390x`](https://hub.docker.com/r/s390x/memcached/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/memcached/` directory](https://github.com/docker-library/repo-info/blob/master/repos/memcached) ([history](https://github.com/docker-library/repo-info/commits/master/repos/memcached))  
@@ -42,7 +45,7 @@ WARNING:
 	[docs repo's `memcached/` directory](https://github.com/docker-library/docs/tree/master/memcached) ([history](https://github.com/docker-library/docs/commits/master/memcached))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Memcached?
 

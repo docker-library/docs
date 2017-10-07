@@ -16,7 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`0.58.2`, `0.58`, `0`, `latest` (*Dockerfile*)](https://github.com/RocketChat/Docker.Official.Image/blob/29af83db6144476190ecdd29d0dea902167cd9f8/Dockerfile)
+-	[`0.58.4`, `0.58`, `0`, `latest` (*Dockerfile*)](https://github.com/RocketChat/Docker.Official.Image/blob/5b8ac5413b368022ea3a3fc455fefa875941058e/Dockerfile)
 
 # Quick reference
 
@@ -28,6 +28,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[Rocket.Chat](https://github.com/RocketChat/Docker.Official.Image)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/rocket.chat/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/rocket.chat/` directory](https://github.com/docker-library/repo-info/blob/master/repos/rocket.chat) ([history](https://github.com/docker-library/repo-info/commits/master/repos/rocket.chat))  
@@ -41,7 +44,7 @@ WARNING:
 	[docs repo's `rocket.chat/` directory](https://github.com/docker-library/docs/tree/master/rocket.chat) ([history](https://github.com/docker-library/docs/commits/master/rocket.chat))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # Rocket.Chat
 

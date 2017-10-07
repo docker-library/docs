@@ -56,13 +56,20 @@ for tag in "${tags[@]}"; do
 done
 
 if [ "$text" ]; then
-	baseImage="$(bashbrew cat -f '{{ .DockerFrom .TagEntry }}' "$repo":latest)"
-	baseImage="${baseImage%:*}"
+	buildpacks=
+	potentialTags="$(bashbrew list --uniq "$repo" | cut -d: -f2)"
+	for tag in $potentialTags; do
+		baseImage="$(bashbrew cat -f '{{ .ArchDockerFrom (.TagEntry.Architectures | first) .TagEntry }}' "$repo:$tag")"
+		case "$baseImage" in
+			buildpack-deps:*-*) ;; # "scm", "curl" -- not large images
+			buildpack-deps:*) buildpacks=1; break ;;
+		esac
+	done
 
 	echo
 	echo
 
-	if [ "$baseImage" = 'buildpack-deps' ]; then
+	if [ -n "$buildpacks" ]; then
 		f='variant-buildpacks.md'
 	else
 		f='variant.md'

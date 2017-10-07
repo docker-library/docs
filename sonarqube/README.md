@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `6.5` (*6.5/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/c6aa0bbe967999f37cfa64522b3ae6ff0fda04de/6.5/Dockerfile)
--	[`lts`, `5.6.6` (*5.6.6/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/c6aa0bbe967999f37cfa64522b3ae6ff0fda04de/5.6.6/Dockerfile)
--	[`alpine`, `6.5-alpine` (*6.5-alpine/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/c6aa0bbe967999f37cfa64522b3ae6ff0fda04de/6.5-alpine/Dockerfile)
--	[`lts-alpine`, `5.6.6-alpine` (*5.6.6-alpine/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/c6aa0bbe967999f37cfa64522b3ae6ff0fda04de/5.6.6-alpine/Dockerfile)
+-	[`latest`, `6.5` (*6.5/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/65090c41e5e8157e656e6a7fd3853f5e09f6eae6/6.5/Dockerfile)
+-	[`lts`, `5.6.7` (*5.6.7/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/65090c41e5e8157e656e6a7fd3853f5e09f6eae6/5.6.7/Dockerfile)
+-	[`alpine`, `6.5-alpine` (*6.5-alpine/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/65090c41e5e8157e656e6a7fd3853f5e09f6eae6/6.5-alpine/Dockerfile)
+-	[`lts-alpine`, `5.6.7-alpine` (*5.6.7-alpine/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/65090c41e5e8157e656e6a7fd3853f5e09f6eae6/5.6.7-alpine/Dockerfile)
 
 # Quick reference
 
@@ -31,6 +31,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[SonarSource](https://github.com/SonarSource/docker-sonarqube)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/sonarqube/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/sonarqube/` directory](https://github.com/docker-library/repo-info/blob/master/repos/sonarqube) ([history](https://github.com/docker-library/repo-info/commits/master/repos/sonarqube))  
@@ -44,7 +47,7 @@ WARNING:
 	[docs repo's `sonarqube/` directory](https://github.com/docker-library/docs/tree/master/sonarqube) ([history](https://github.com/docker-library/docs/commits/master/sonarqube))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is SonarQube?
 

@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.1.18`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/cassandra/blob/ca3c9df03cab318d34377bba0610c741253b0466/2.1/Dockerfile)
--	[`2.2.10`, `2.2`, `2` (*2.2/Dockerfile*)](https://github.com/docker-library/cassandra/blob/ca3c9df03cab318d34377bba0610c741253b0466/2.2/Dockerfile)
+-	[`2.1.19`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/cassandra/blob/8fa6a2876a831c1bab6e846cb27af475ecafceb7/2.1/Dockerfile)
+-	[`2.2.11`, `2.2`, `2` (*2.2/Dockerfile*)](https://github.com/docker-library/cassandra/blob/e5698d3847ed4c4378b1171ae77b5c5ee0e58125/2.2/Dockerfile)
 -	[`3.0.14`, `3.0` (*3.0/Dockerfile*)](https://github.com/docker-library/cassandra/blob/ca3c9df03cab318d34377bba0610c741253b0466/3.0/Dockerfile)
 -	[`3.11.0`, `3.11`, `3`, `latest` (*3.11/Dockerfile*)](https://github.com/docker-library/cassandra/blob/ca3c9df03cab318d34377bba0610c741253b0466/3.11/Dockerfile)
 
@@ -32,6 +32,9 @@ WARNING:
 -	**Maintained by**:  
 	[the Docker Community](https://github.com/docker-library/cassandra)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/cassandra/), [`arm64v8`](https://hub.docker.com/r/arm64v8/cassandra/), [`i386`](https://hub.docker.com/r/i386/cassandra/), [`ppc64le`](https://hub.docker.com/r/ppc64le/cassandra/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/cassandra/` directory](https://github.com/docker-library/repo-info/blob/master/repos/cassandra) ([history](https://github.com/docker-library/repo-info/commits/master/repos/cassandra))  
 	(image metadata, transfer size, etc)
@@ -44,7 +47,7 @@ WARNING:
 	[docs repo's `cassandra/` directory](https://github.com/docker-library/docs/tree/master/cassandra) ([history](https://github.com/docker-library/docs/commits/master/cassandra))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Cassandra?
 
@@ -170,11 +173,11 @@ This variable sets number of tokens for this node. It will set the [`num_tokens`
 
 ### `CASSANDRA_DC`
 
-This variable sets the datacenter name of this node. It will set the [`dc`](http://docs.datastax.com/en/cassandra/3.0/cassandra/architecture/archsnitchGossipPF.html) option of `cassandra-rackdc.properties`.
+This variable sets the datacenter name of this node. It will set the [`dc`](http://docs.datastax.com/en/cassandra/3.0/cassandra/architecture/archsnitchGossipPF.html) option of `cassandra-rackdc.properties`. You must set `CASSANDRA_ENDPOINT_SNITCH` to use the ["GossipingPropertyFileSnitch"](https://docs.datastax.com/en/cassandra/3.0/cassandra/architecture/archsnitchGossipPF.html) in order for Cassandra to apply `cassandra-rackdc.properties`, otherwise this variable will have no effect.
 
 ### `CASSANDRA_RACK`
 
-This variable sets the rack name of this node. It will set the [`rack`](http://docs.datastax.com/en/cassandra/3.0/cassandra/architecture/archsnitchGossipPF.html) option of `cassandra-rackdc.properties`.
+This variable sets the rack name of this node. It will set the [`rack`](http://docs.datastax.com/en/cassandra/3.0/cassandra/architecture/archsnitchGossipPF.html) option of `cassandra-rackdc.properties`. You must set `CASSANDRA_ENDPOINT_SNITCH` to use the ["GossipingPropertyFileSnitch"](https://docs.datastax.com/en/cassandra/3.0/cassandra/architecture/archsnitchGossipPF.html) in order for Cassandra to apply `cassandra-rackdc.properties`, otherwise this variable will have no effect.
 
 ### `CASSANDRA_ENDPOINT_SNITCH`
 

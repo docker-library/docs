@@ -16,10 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.9.4`, `4.9`, `4` (*4.9/Dockerfile*)](https://github.com/docker-library/gcc/blob/3b33871fe9558262cb5ed6253d358f76710e9ccb/4.9/Dockerfile)
--	[`5.4.0`, `5.4`, `5` (*5/Dockerfile*)](https://github.com/docker-library/gcc/blob/3b33871fe9558262cb5ed6253d358f76710e9ccb/5/Dockerfile)
--	[`6.4.0`, `6.4`, `6` (*6/Dockerfile*)](https://github.com/docker-library/gcc/blob/c1fe37de30fbe69e83f042b4a9426b11cb624bca/6/Dockerfile)
--	[`7.2.0`, `7.2`, `7`, `latest` (*7/Dockerfile*)](https://github.com/docker-library/gcc/blob/3ccb804e330766ba05abe7fe990512f152a08254/7/Dockerfile)
+-	[`6.4.0`, `6.4`, `6` (*6/Dockerfile*)](https://github.com/docker-library/gcc/blob/1539ed62d45cbd1e2a4d0c3e94c07ca2acdb914a/6/Dockerfile)
+-	[`7.2.0`, `7.2`, `7`, `latest` (*7/Dockerfile*)](https://github.com/docker-library/gcc/blob/1539ed62d45cbd1e2a4d0c3e94c07ca2acdb914a/7/Dockerfile)
 
 # Quick reference
 
@@ -31,6 +29,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[the Docker Community](https://github.com/docker-library/gcc)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/gcc/), [`arm32v5`](https://hub.docker.com/r/arm32v5/gcc/), [`arm32v7`](https://hub.docker.com/r/arm32v7/gcc/), [`arm64v8`](https://hub.docker.com/r/arm64v8/gcc/), [`ppc64le`](https://hub.docker.com/r/ppc64le/gcc/), [`s390x`](https://hub.docker.com/r/s390x/gcc/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/gcc/` directory](https://github.com/docker-library/repo-info/blob/master/repos/gcc) ([history](https://github.com/docker-library/repo-info/commits/master/repos/gcc))  
@@ -44,7 +45,7 @@ WARNING:
 	[docs repo's `gcc/` directory](https://github.com/docker-library/docs/tree/master/gcc) ([history](https://github.com/docker-library/docs/commits/master/gcc))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is GCC?
 

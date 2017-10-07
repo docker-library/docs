@@ -17,8 +17,8 @@ WARNING:
 # Supported tags and respective `Dockerfile` links
 
 -	[`3.12.1.3` (*Dockerfile*)](https://github.com/aerospike/aerospike-server.docker/blob/eb4758c8bcb30158cef593383ac0aab119b066c1/Dockerfile)
--	[`3.13.0.4` (*Dockerfile*)](https://github.com/aerospike/aerospike-server.docker/blob/b15fcaa6058d95efb27f3e08256215b5bde9180d/Dockerfile)
--	[`3.14.1.2`, `latest` (*Dockerfile*)](https://github.com/aerospike/aerospike-server.docker/blob/21b823c72214a79f1d6c79ba3243c38823282314/Dockerfile)
+-	[`3.13.0.7` (*Dockerfile*)](https://github.com/aerospike/aerospike-server.docker/blob/0b1246af2674c7668b332964b27dfef6773935fe/Dockerfile)
+-	[`3.14.1.4`, `latest` (*Dockerfile*)](https://github.com/aerospike/aerospike-server.docker/blob/a4a15147e1e3b782fe365cd8d2d3e686426f0a03/Dockerfile)
 
 # Quick reference
 
@@ -30,6 +30,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[Aerospike, Inc.](https://github.com/aerospike/aerospike-server.docker)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/aerospike/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/aerospike/` directory](https://github.com/docker-library/repo-info/blob/master/repos/aerospike) ([history](https://github.com/docker-library/repo-info/commits/master/repos/aerospike))  
@@ -43,7 +46,7 @@ WARNING:
 	[docs repo's `aerospike/` directory](https://github.com/docker-library/docs/tree/master/aerospike) ([history](https://github.com/docker-library/docs/commits/master/aerospike))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # Aerospike
 

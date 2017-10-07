@@ -16,12 +16,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.2.10`, `3.2`, `3` (*3.2/Dockerfile*)](https://github.com/docker-library/redis/blob/ebde981d2737c5a618481f766d253afff13aeb9f/3.2/Dockerfile)
--	[`3.2.10-32bit`, `3.2-32bit`, `3-32bit` (*3.2/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/ebde981d2737c5a618481f766d253afff13aeb9f/3.2/32bit/Dockerfile)
--	[`3.2.10-alpine`, `3.2-alpine`, `3-alpine` (*3.2/alpine/Dockerfile*)](https://github.com/docker-library/redis/blob/ebde981d2737c5a618481f766d253afff13aeb9f/3.2/alpine/Dockerfile)
--	[`4.0.1`, `4.0`, `4`, `latest` (*4.0/Dockerfile*)](https://github.com/docker-library/redis/blob/1d6d5acf99aedd42aa0195ad5f22b8ffa6841f96/4.0/Dockerfile)
--	[`4.0.1-32bit`, `4.0-32bit`, `4-32bit`, `32bit` (*4.0/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/1d6d5acf99aedd42aa0195ad5f22b8ffa6841f96/4.0/32bit/Dockerfile)
--	[`4.0.1-alpine`, `4.0-alpine`, `4-alpine`, `alpine` (*4.0/alpine/Dockerfile*)](https://github.com/docker-library/redis/blob/1d6d5acf99aedd42aa0195ad5f22b8ffa6841f96/4.0/alpine/Dockerfile)
+-	[`3.2.11`, `3.2`, `3` (*3.2/Dockerfile*)](https://github.com/docker-library/redis/blob/99a06c057297421f9ea46934c342a2fc00644c4f/3.2/Dockerfile)
+-	[`3.2.11-32bit`, `3.2-32bit`, `3-32bit` (*3.2/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/99a06c057297421f9ea46934c342a2fc00644c4f/3.2/32bit/Dockerfile)
+-	[`3.2.11-alpine`, `3.2-alpine`, `3-alpine` (*3.2/alpine/Dockerfile*)](https://github.com/docker-library/redis/blob/99a06c057297421f9ea46934c342a2fc00644c4f/3.2/alpine/Dockerfile)
+-	[`4.0.2`, `4.0`, `4`, `latest` (*4.0/Dockerfile*)](https://github.com/docker-library/redis/blob/29b44c477011c5450dd89fd41af4c04e0c71e5b2/4.0/Dockerfile)
+-	[`4.0.2-32bit`, `4.0-32bit`, `4-32bit`, `32bit` (*4.0/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/29b44c477011c5450dd89fd41af4c04e0c71e5b2/4.0/32bit/Dockerfile)
+-	[`4.0.2-alpine`, `4.0-alpine`, `4-alpine`, `alpine` (*4.0/alpine/Dockerfile*)](https://github.com/docker-library/redis/blob/29b44c477011c5450dd89fd41af4c04e0c71e5b2/4.0/alpine/Dockerfile)
 
 # Quick reference
 
@@ -33,6 +33,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[the Docker Community](https://github.com/docker-library/redis)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/redis/), [`arm32v5`](https://hub.docker.com/r/arm32v5/redis/), [`arm32v7`](https://hub.docker.com/r/arm32v7/redis/), [`arm64v8`](https://hub.docker.com/r/arm64v8/redis/), [`i386`](https://hub.docker.com/r/i386/redis/), [`ppc64le`](https://hub.docker.com/r/ppc64le/redis/), [`s390x`](https://hub.docker.com/r/s390x/redis/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/redis/` directory](https://github.com/docker-library/repo-info/blob/master/repos/redis) ([history](https://github.com/docker-library/repo-info/commits/master/repos/redis))  
@@ -46,7 +49,7 @@ WARNING:
 	[docs repo's `redis/` directory](https://github.com/docker-library/docs/tree/master/redis) ([history](https://github.com/docker-library/docs/commits/master/redis))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Redis?
 

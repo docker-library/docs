@@ -16,11 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `26` (*x86_64//Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/1cea10502253a1a5b913eb1e59a7dc7482cbc0fa/x86_64//Dockerfile)
+-	[`latest`, `26` (*x86_64//Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/065231a8dbc04882df54afdd749be16931aecd5a/x86_64//Dockerfile)
 -	[`26-modular` (*x86_64//Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/d5dd6eb44f0651788edb6f81a5537c09b07022c4/x86_64//Dockerfile)
--	[`25` (*Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/0603cc1536e4f62b77d1c34e39df55908f56aa48/Dockerfile)
--	[`24` (*Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/f3726622b5012c1f374bf9f596616eab3cd4988c/Dockerfile)
--	[`rawhide` (*x86_64//Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/068835147960bde07171f320e1d2a037d62c07eb/x86_64//Dockerfile)
+-	[`25` (*x86_64//Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/2dc7762f57aac299ea93a58eb386bf1a9b31356f/x86_64//Dockerfile)
+-	[`rawhide` (*x86_64//Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/3a5e26b6df79c1c649d231cd745d9360ee308041/x86_64//Dockerfile)
 
 # Quick reference
 
@@ -32,6 +31,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[Fedora Release Engineering](https://github.com/fedora-cloud/docker-brew-fedora)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/fedora/), [`arm32v7`](https://hub.docker.com/r/arm32v7/fedora/), [`arm64v8`](https://hub.docker.com/r/arm64v8/fedora/), [`ppc64le`](https://hub.docker.com/r/ppc64le/fedora/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/fedora/` directory](https://github.com/docker-library/repo-info/blob/master/repos/fedora) ([history](https://github.com/docker-library/repo-info/commits/master/repos/fedora))  
@@ -45,7 +47,7 @@ WARNING:
 	[docs repo's `fedora/` directory](https://github.com/docker-library/docs/tree/master/fedora) ([history](https://github.com/docker-library/docs/commits/master/fedora))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # Fedora
 

@@ -34,6 +34,9 @@ WARNING:
 -	**Maintained by**:  
 	[the Perl Community](https://github.com/Perl/docker-perl)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/perl/), [`arm64v8`](https://hub.docker.com/r/arm64v8/perl/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/perl/` directory](https://github.com/docker-library/repo-info/blob/master/repos/perl) ([history](https://github.com/docker-library/repo-info/commits/master/repos/perl))  
 	(image metadata, transfer size, etc)
@@ -46,7 +49,7 @@ WARNING:
 	[docs repo's `perl/` directory](https://github.com/docker-library/docs/tree/master/perl) ([history](https://github.com/docker-library/docs/commits/master/perl))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Perl?
 

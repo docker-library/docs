@@ -16,18 +16,16 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`10-beta4`, `10` (*10/Dockerfile*)](https://github.com/docker-library/postgres/blob/bef8f02d1fe2bb4547280ba609f19abd20230180/10/Dockerfile)
--	[`10-beta4-alpine`, `10-alpine` (*10/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/ee1bb1f51c9bae5be684a4797f934dbb943e3267/10/alpine/Dockerfile)
--	[`9.6.5`, `9.6`, `9`, `latest` (*9.6/Dockerfile*)](https://github.com/docker-library/postgres/blob/bef8f02d1fe2bb4547280ba609f19abd20230180/9.6/Dockerfile)
--	[`9.6.5-alpine`, `9.6-alpine`, `9-alpine`, `alpine` (*9.6/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/d1725ffa8ba29ed7649bd453065eb392f63a3113/9.6/alpine/Dockerfile)
+-	[`10.0`, `10`, `latest` (*10/Dockerfile*)](https://github.com/docker-library/postgres/blob/f34b7cb79c4209a67b573f3bc4bc7827d69800e1/10/Dockerfile)
+-	[`10.0-alpine`, `10-alpine`, `alpine` (*10/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/0b0ca18dda787003f567e7e1a51efaf2348d34d7/10/alpine/Dockerfile)
+-	[`9.6.5`, `9.6`, `9` (*9.6/Dockerfile*)](https://github.com/docker-library/postgres/blob/b7cb3c6eacea93be2259381033be3cc435649369/9.6/Dockerfile)
+-	[`9.6.5-alpine`, `9.6-alpine`, `9-alpine` (*9.6/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/1089a8971b43a675109ad886bf1f3b327c067fa1/9.6/alpine/Dockerfile)
 -	[`9.5.9`, `9.5` (*9.5/Dockerfile*)](https://github.com/docker-library/postgres/blob/bef8f02d1fe2bb4547280ba609f19abd20230180/9.5/Dockerfile)
--	[`9.5.9-alpine`, `9.5-alpine` (*9.5/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/9e862fa9b1d510c618d51e5d2c63f439d15381ff/9.5/alpine/Dockerfile)
+-	[`9.5.9-alpine`, `9.5-alpine` (*9.5/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/1089a8971b43a675109ad886bf1f3b327c067fa1/9.5/alpine/Dockerfile)
 -	[`9.4.14`, `9.4` (*9.4/Dockerfile*)](https://github.com/docker-library/postgres/blob/bef8f02d1fe2bb4547280ba609f19abd20230180/9.4/Dockerfile)
--	[`9.4.14-alpine`, `9.4-alpine` (*9.4/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/b2649f97aee8bca9f4e65a2c050f66fe255ec9f3/9.4/alpine/Dockerfile)
+-	[`9.4.14-alpine`, `9.4-alpine` (*9.4/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/1089a8971b43a675109ad886bf1f3b327c067fa1/9.4/alpine/Dockerfile)
 -	[`9.3.19`, `9.3` (*9.3/Dockerfile*)](https://github.com/docker-library/postgres/blob/bef8f02d1fe2bb4547280ba609f19abd20230180/9.3/Dockerfile)
--	[`9.3.19-alpine`, `9.3-alpine` (*9.3/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/b1fc9b6f7506ea7357f48fb0125e8b7a3c1d96e9/9.3/alpine/Dockerfile)
--	[`9.2.23`, `9.2` (*9.2/Dockerfile*)](https://github.com/docker-library/postgres/blob/bef8f02d1fe2bb4547280ba609f19abd20230180/9.2/Dockerfile)
--	[`9.2.23-alpine`, `9.2-alpine` (*9.2/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/b3cb99032a600a27dcb8f3c52f14c72fd22d477f/9.2/alpine/Dockerfile)
+-	[`9.3.19-alpine`, `9.3-alpine` (*9.3/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/1089a8971b43a675109ad886bf1f3b327c067fa1/9.3/alpine/Dockerfile)
 
 # Quick reference
 
@@ -39,6 +37,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[the PostgreSQL Docker Community](https://github.com/docker-library/postgres)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/postgres/), [`arm32v5`](https://hub.docker.com/r/arm32v5/postgres/), [`arm32v7`](https://hub.docker.com/r/arm32v7/postgres/), [`arm64v8`](https://hub.docker.com/r/arm64v8/postgres/), [`i386`](https://hub.docker.com/r/i386/postgres/), [`ppc64le`](https://hub.docker.com/r/ppc64le/postgres/), [`s390x`](https://hub.docker.com/r/s390x/postgres/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/postgres/` directory](https://github.com/docker-library/repo-info/blob/master/repos/postgres) ([history](https://github.com/docker-library/repo-info/commits/master/repos/postgres))  
@@ -52,7 +53,7 @@ WARNING:
 	[docs repo's `postgres/` directory](https://github.com/docker-library/docs/tree/master/postgres) ([history](https://github.com/docker-library/docs/commits/master/postgres))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is PostgreSQL?
 
@@ -110,16 +111,18 @@ services:
 
     db:
         image: postgres
+        restart: always
         environment:
             POSTGRES_PASSWORD: example
 
     adminer:
         image: adminer
+        restart: always
         ports:
             - 8080:8080
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/96c08fac215f64844b9db61038a571b86534a12b/postgres/stack.yml)
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/e24f39cddf21560cf0a24f149059ff23640b0f16/postgres/stack.yml)
 
 Run `docker stack deploy -c stack.yml postgres` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
 
@@ -152,6 +155,16 @@ This optional environment variable can be used to send arguments to `postgres in
 ### `POSTGRES_INITDB_XLOGDIR`
 
 This optional environment variable can be used to define another location for the Postgres transaction log. By default the transaction log is stored in a subdirectory of the main Postgres data folder (`PGDATA`). Sometimes it can be desireable to store the transaction log in a different directory which may be backed by storage with different performance or reliability characteristics.
+
+## Docker Secrets
+
+As an alternative to passing sensitive information via environment variables, `_FILE` may be appended to the previously listed environment variables, causing the initialization script to load the values for those variables from files present in the container. In particular, this can be used to load passwords from Docker secrets stored in `/run/secrets/<secret_name>` files. For example:
+
+```console
+$ docker run --name some-postgres -e POSTGRES_PASSWORD_FILE=/run/secrets/postgres-passwd -d postgres
+```
+
+Currently, this is only supported for `POSTGRES_INITDB_ARGS`, `POSTGRES_PASSWORD`, `POSTGRES_USER`, and `POSTGRES_DB`.
 
 ## Arbitrary `--user` Notes
 

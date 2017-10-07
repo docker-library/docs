@@ -14,14 +14,14 @@ WARNING:
 
 -->
 
-# **DEPRECATED**
+# **DEPRECATION NOTICE**
 
 This image has been deprecated in favor of the [`jenkins/jenkins:lts`](https://hub.docker.com/r/jenkins/jenkins) image provided and maintained by [Jenkins Community](https://jenkins.io/) as part of project's release process. The images found here will receive no further updates after LTS 2.60.x. Please adjust your usage accordingly.
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `2.60.2` (*Dockerfile*)](https://github.com/jenkinsci/docker/blob/15dc59d7dbd47da5259a50a9ebfa8895d594444f/Dockerfile)
--	[`alpine`, `2.60.2-alpine` (*Dockerfile*)](https://github.com/jenkinsci/docker/blob/c24687d11870e6a408678a394c1298008773bf03/Dockerfile)
+-	[`latest`, `2.60.3` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/587b2856cd225bb152c4abeeaaa24934c75aa460/Dockerfile)
+-	[`alpine`, `2.60.3-alpine` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/c2d6f2122fa03c437e139a317b7fe5b9547fe49e/Dockerfile)
 
 # Quick reference
 
@@ -33,6 +33,9 @@ This image has been deprecated in favor of the [`jenkins/jenkins:lts`](https://h
 
 -	**Maintained by**:  
 	[the Jenkins Project](https://github.com/cloudbees/jenkins-ci.org-docker)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/jenkins/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/jenkins/` directory](https://github.com/docker-library/repo-info/blob/master/repos/jenkins) ([history](https://github.com/docker-library/repo-info/commits/master/repos/jenkins))  
@@ -46,7 +49,7 @@ This image has been deprecated in favor of the [`jenkins/jenkins:lts`](https://h
 	[docs repo's `jenkins/` directory](https://github.com/docker-library/docs/tree/master/jenkins) ([history](https://github.com/docker-library/docs/commits/master/jenkins))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # Jenkins
 

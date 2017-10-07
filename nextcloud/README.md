@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`11.0.4-apache`, `11.0-apache`, `11-apache`, `11.0.4`, `11.0`, `11` (*11.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/d87b840646635ba5b8fb92f19f72fe9e6486251e/11.0/apache/Dockerfile)
--	[`11.0.4-fpm`, `11.0-fpm`, `11-fpm` (*11.0/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/d87b840646635ba5b8fb92f19f72fe9e6486251e/11.0/fpm/Dockerfile)
--	[`12.0.2-apache`, `12.0-apache`, `12-apache`, `apache`, `12.0.2`, `12.0`, `12`, `latest` (*12.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/d87b840646635ba5b8fb92f19f72fe9e6486251e/12.0/apache/Dockerfile)
--	[`12.0.2-fpm`, `12.0-fpm`, `12-fpm`, `fpm` (*12.0/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/d87b840646635ba5b8fb92f19f72fe9e6486251e/12.0/fpm/Dockerfile)
+-	[`11.0.5-apache`, `11.0-apache`, `11-apache`, `11.0.5`, `11.0`, `11` (*11.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/57edb879dc79524a8df9f48ee553abb6117054e1/11.0/apache/Dockerfile)
+-	[`11.0.5-fpm`, `11.0-fpm`, `11-fpm` (*11.0/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/57edb879dc79524a8df9f48ee553abb6117054e1/11.0/fpm/Dockerfile)
+-	[`12.0.3-apache`, `12.0-apache`, `12-apache`, `apache`, `12.0.3`, `12.0`, `12`, `latest` (*12.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/57edb879dc79524a8df9f48ee553abb6117054e1/12.0/apache/Dockerfile)
+-	[`12.0.3-fpm`, `12.0-fpm`, `12-fpm`, `fpm` (*12.0/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/57edb879dc79524a8df9f48ee553abb6117054e1/12.0/fpm/Dockerfile)
 
 # Quick reference
 
@@ -31,6 +31,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[Nextcloud](https://github.com/nextcloud/docker)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/nextcloud/), [`arm32v5`](https://hub.docker.com/r/arm32v5/nextcloud/), [`arm32v7`](https://hub.docker.com/r/arm32v7/nextcloud/), [`arm64v8`](https://hub.docker.com/r/arm64v8/nextcloud/), [`i386`](https://hub.docker.com/r/i386/nextcloud/), [`ppc64le`](https://hub.docker.com/r/ppc64le/nextcloud/), [`s390x`](https://hub.docker.com/r/s390x/nextcloud/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/nextcloud/` directory](https://github.com/docker-library/repo-info/blob/master/repos/nextcloud) ([history](https://github.com/docker-library/repo-info/commits/master/repos/nextcloud))  
@@ -44,7 +47,7 @@ WARNING:
 	[docs repo's `nextcloud/` directory](https://github.com/docker-library/docs/tree/master/nextcloud) ([history](https://github.com/docker-library/docs/commits/master/nextcloud))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Nextcloud?
 
@@ -141,6 +144,38 @@ or for docker-compose:
 ```console
 $ docker-compose exec --user www-data app php occ
 ```
+
+## Auto configuration via environment variables
+
+The nextcloud image supports auto configuration via environment variables. You can preconfigure everything that is asked on the install page on first run. To enable auto configuration, set your database connection via the following environment variables. ONLY use one database type!
+
+**SQLITE_DATABASE**:
+
+-	`SQLITE_DATABASE` Name of the database using sqlite
+
+**MYSQL/MariaDB**:
+
+-	`MYSQL_DATABASE` Name of the database using mysql / mariadb.
+-	`MYSQL_USER` Username for the database using mysql / mariadb.
+-	`MYSQL_PASSWORD` Password for the database user using mysql / mariadb.
+-	`MYSQL_HOST` Hostname of the database server using mysql / mariadb.
+
+**PostgreSQL**:
+
+-	`POSTGRES_DB` Name of the database using postgres.
+-	`POSTGRES_USER` Username for the database using postgres.
+-	`POSTGRES_PASSWORD` Password for the database user using postgres.
+-	`POSTGRES_HOST` Hostname of the database server using postgres.
+
+If you set any values, they will not be asked in the install page on first run. With a complete configuration by using all variables for your database type, you can additionally configure your Nextcloud instance by setting admin user and password (only works if you set both):
+
+-	`NEXTCLOUD_ADMIN_USER` Name of the Nextcloud admin user.
+-	`NEXTCLOUD_ADMIN_PASSWORD` Password for the Nextcloud admin user.
+
+If you want you can set the data directory and table prefix, otherwise default values will be used.
+
+-	`NEXTCLOUD_DATA_DIR` (default: */var/www/html/data*) Configures the data directory where nextcloud stores all files from the users.
+-	`NEXTCLOUD_TABLE_PREFIX` (default: *""*) Optional prefix for the tables. Used to be `oc_` in the past
 
 # Running this image with docker-compose
 

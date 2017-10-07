@@ -32,6 +32,9 @@ WARNING:
 -	**Maintained by**:  
 	[Zend Technologies](https://github.com/zendtech/php-zendserver-docker)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/php-zendserver/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/php-zendserver/` directory](https://github.com/docker-library/repo-info/blob/master/repos/php-zendserver) ([history](https://github.com/docker-library/repo-info/commits/master/repos/php-zendserver))  
 	(image metadata, transfer size, etc)
@@ -44,7 +47,7 @@ WARNING:
 	[docs repo's `php-zendserver/` directory](https://github.com/docker-library/docs/tree/master/php-zendserver) ([history](https://github.com/docker-library/docs/commits/master/php-zendserver))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Zend Server?
 

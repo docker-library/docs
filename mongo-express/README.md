@@ -29,6 +29,9 @@ WARNING:
 -	**Maintained by**:  
 	[mongo-express](https://github.com/mongo-express/mongo-express-docker)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/mongo-express/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/mongo-express/` directory](https://github.com/docker-library/repo-info/blob/master/repos/mongo-express) ([history](https://github.com/docker-library/repo-info/commits/master/repos/mongo-express))  
 	(image metadata, transfer size, etc)
@@ -41,7 +44,7 @@ WARNING:
 	[docs repo's `mongo-express/` directory](https://github.com/docker-library/docs/tree/master/mongo-express) ([history](https://github.com/docker-library/docs/commits/master/mongo-express))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is mongo-express?
 

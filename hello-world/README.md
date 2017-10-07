@@ -16,8 +16,16 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest` (*amd64/hello-world/Dockerfile*)](https://github.com/docker-library/hello-world/blob/7d0ee592e4ed60e2da9d59331e16ecdcadc1ed87/amd64/hello-world/Dockerfile)
--	[`nanoserver` (*amd64/hello-world/nanoserver/Dockerfile*)](https://github.com/docker-library/hello-world/blob/7d0ee592e4ed60e2da9d59331e16ecdcadc1ed87/amd64/hello-world/nanoserver/Dockerfile)
+## Shared Tags
+
+-	`latest`:
+	-	[`linux` (*amd64/hello-world/Dockerfile*)](https://github.com/docker-library/hello-world/blob/7d0ee592e4ed60e2da9d59331e16ecdcadc1ed87/amd64/hello-world/Dockerfile)
+	-	[`nanoserver` (*amd64/hello-world/nanoserver/Dockerfile*)](https://github.com/docker-library/hello-world/blob/b63893caa6ec64d8159f8bd45b3745ed4f12f605/amd64/hello-world/nanoserver/Dockerfile)
+
+## Simple Tags
+
+-	[`linux` (*amd64/hello-world/Dockerfile*)](https://github.com/docker-library/hello-world/blob/7d0ee592e4ed60e2da9d59331e16ecdcadc1ed87/amd64/hello-world/Dockerfile)
+-	[`nanoserver` (*amd64/hello-world/nanoserver/Dockerfile*)](https://github.com/docker-library/hello-world/blob/b63893caa6ec64d8159f8bd45b3745ed4f12f605/amd64/hello-world/nanoserver/Dockerfile)
 
 # Quick reference
 
@@ -29,6 +37,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[the Docker Community](https://github.com/docker-library/hello-world)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/hello-world/), [`arm32v5`](https://hub.docker.com/r/arm32v5/hello-world/), [`arm32v7`](https://hub.docker.com/r/arm32v7/hello-world/), [`arm64v8`](https://hub.docker.com/r/arm64v8/hello-world/), [`i386`](https://hub.docker.com/r/i386/hello-world/), [`ppc64le`](https://hub.docker.com/r/ppc64le/hello-world/), [`s390x`](https://hub.docker.com/r/s390x/hello-world/), [`windows-amd64`](https://hub.docker.com/r/winamd64/hello-world/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/hello-world/` directory](https://github.com/docker-library/repo-info/blob/master/repos/hello-world) ([history](https://github.com/docker-library/repo-info/commits/master/repos/hello-world))  
@@ -42,7 +53,7 @@ WARNING:
 	[docs repo's `hello-world/` directory](https://github.com/docker-library/docs/tree/master/hello-world) ([history](https://github.com/docker-library/docs/commits/master/hello-world))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # Example output
 
@@ -72,7 +83,7 @@ For more examples and ideas, visit:
 
 $ docker images hello-world
 REPOSITORY   TAG     IMAGE ID      SIZE
-hello-world  latest  1815c82652c0  1.84 kB
+hello-world  latest  05a3bd381fc2  1.84kB
 ```
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/01c12653951b2fe592c1f93a13b4e289ada0e3a1/hello-world/logo.png)

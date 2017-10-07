@@ -10,6 +10,7 @@ services:
 
     geonetwork:
       image: geonetwork
+      restart: always
       ports:
           - 8080:8080
       environment:
@@ -19,4 +20,3 @@ services:
 
 volumes:
     geonetwork:
-

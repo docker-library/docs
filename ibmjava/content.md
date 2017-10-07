@@ -1,6 +1,6 @@
 ### Overview
 
-The images in this repository contain IBM® SDK, Java™ Technology Edition, version 1.8.0\_sr4fp11 (8.0-4.11) and 1.9.0\_ea2 (9.0 early access). For Java 8 images, see [what's new](http://www.ibm.com/support/knowledgecenter/en/SSYKE2_8.0.0/com.ibm.java.lnx.80.doc/diag/preface/changes_80/changes.html). See the license section for restrictions that relate to the use of this image. For more information about IBM® SDK, Java™ Technology Edition and API documentation, see the [IBM Knowledge Center](http://www.ibm.com/support/knowledgecenter/SSYKE2/welcome_javasdk_family.html). For tutorials, recipes, and Java usage in Bluemix, see [IBM developerWorks](http://www.ibm.com/developerworks/java).
+The images in this repository contain IBM® SDK, Java™ Technology Edition, version 1.8.0\_sr5 (8.0-5.0) and 1.9.0\_ea2 (9.0 early access). For Java 8 images, see [what's new](http://www.ibm.com/support/knowledgecenter/en/SSYKE2_8.0.0/com.ibm.java.lnx.80.doc/diag/preface/changes_80/changes.html). See the license section for restrictions that relate to the use of this image. For more information about IBM® SDK, Java™ Technology Edition and API documentation, see the [IBM Knowledge Center](http://www.ibm.com/support/knowledgecenter/SSYKE2/welcome_javasdk_family.html). For tutorials, recipes, and Java usage in Bluemix, see [IBM developerWorks](http://www.ibm.com/developerworks/java).
 
 Java and all Java-based trademarks and logos are trademarks or registered trademarks of Oracle and/or its affiliates.
 
@@ -27,13 +27,16 @@ Consider using [Alpine Linux](http://alpinelinux.org/) if you are concerned abou
 
 **Note: Alpine Linux is not an officially supported operating system for IBM® SDK, Java™ Technology Edition.**
 
-##### Architectures Supported
+##### Multi-Arch Image
 
 Docker Images for the following architectures are now available:
 
 -	[x86\_64](https://hub.docker.com/_/ibmjava/)
+-	[i386](https://hub.docker.com/r/i386/ibmjava/)
 -	[ppc64le](https://hub.docker.com/r/ppc64le/ibmjava/)
 -	[s390x](https://hub.docker.com/r/s390x/ibmjava/)
+
+ibmjava now has multi-arch support and so the exact same commands as below works on all supported architectures. This also means that it is no longer necessary to prefix the arch with the image name as that happens auto-magically.
 
 ### How to use this Image
 

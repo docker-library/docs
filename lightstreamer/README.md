@@ -30,6 +30,9 @@ WARNING:
 -	**Maintained by**:  
 	[the Lightstreamer Server Development Team](https://github.com/Lightstreamer/Docker)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/lightstreamer/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/lightstreamer/` directory](https://github.com/docker-library/repo-info/blob/master/repos/lightstreamer) ([history](https://github.com/docker-library/repo-info/commits/master/repos/lightstreamer))  
 	(image metadata, transfer size, etc)
@@ -42,7 +45,7 @@ WARNING:
 	[docs repo's `lightstreamer/` directory](https://github.com/docker-library/docs/tree/master/lightstreamer) ([history](https://github.com/docker-library/docs/commits/master/lightstreamer))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Lightstreamer Server?
 
@@ -62,11 +65,11 @@ Launch the container with the default configuration:
 $ docker run --name ls-server -d -p 80:8080 lightstreamer
 ```
 
-This will map port 8080 inside the container to port 80 on local host. Then point your browser to `http://localhost` and watch the Welcome page showing real time data flowing in from the locally deployed demo application, which is a first overview of the unique features offered by the Lightstreamer technology. More examples are available online at the [demo site](http://demos.lightstreamer.com).
+This will map port 8080 inside the container to port 80 on local host. Then point your browser to `http://localhost` and watch the Welcome page showing real-time data flowing in from the locally deployed demo application, which is a first overview of the unique features offered by the Lightstreamer technology. More examples are available online at the [demo site](http://demos.lightstreamer.com).
 
 ## Custom settings
 
-It is possibile to customize each aspect of the Lightstreamer instance running into the container. For example, a specific configuration file may be supplied as follows:
+It is possible to customize each aspect of the Lightstreamer instance running into the container. For example, a specific configuration file may be supplied as follows:
 
 ```console
 $ docker run --name ls-server -v /path/to/my-lightstreamer_conf.xml:/lightstreamer/conf/lightstreamer_conf.xml -d -p 80:8080 lightstreamer
@@ -138,7 +141,7 @@ In this case, the `/path/to/my-adapters` folder has to be structured with the re
                     +my_adapter_set_2
                     ...
                     +my_adapter_set_N
-                     
+
 ```
 
 ### Building a new image
@@ -160,7 +163,7 @@ Then, just build and start the container as already explained.
 
 ## Deployment of web server pages
 
-There might be some circumstances where you would like provide custom pages for the internal web server of the Lightstreamer Server. Even in this case, it is possible to customize the container by employing the same techniques as above.
+There might be some circumstances where you would like to provide custom pages for the internal web server of the Lightstreamer Server. Even in this case, it is possible to customize the container by employing the same techniques as above.
 
 For example, with the following command you will be able to fully replace the factory `pages` folder:
 

@@ -18,8 +18,8 @@ WARNING:
 
 -	[`2.0.18` (*2.0/Dockerfile*)](https://github.com/orientechnologies/orientdb-docker/blob/8a9633c19fa9c53a5446b9b62997ff389813e785/2.0/Dockerfile)
 -	[`2.1.25` (*2.1/Dockerfile*)](https://github.com/orientechnologies/orientdb-docker/blob/8a9633c19fa9c53a5446b9b62997ff389813e785/2.1/Dockerfile)
--	[`2.2.26`, `latest` (*2.2/x86_64/alpine/Dockerfile*)](https://github.com/orientechnologies/orientdb-docker/blob/67e884d7db8e00b7e22365e48c87edbeb7a2fc6c/2.2/x86_64/alpine/Dockerfile)
--	[`2.2.26-spatial` (*2.2-spatial/x86_64/alpine/Dockerfile*)](https://github.com/orientechnologies/orientdb-docker/blob/67e884d7db8e00b7e22365e48c87edbeb7a2fc6c/2.2-spatial/x86_64/alpine/Dockerfile)
+-	[`2.2.29`, `latest` (*2.2/x86_64/alpine/Dockerfile*)](https://github.com/orientechnologies/orientdb-docker/blob/c022461a621be5230b9734b1dde17ca38ef482d0/2.2/x86_64/alpine/Dockerfile)
+-	[`2.2.29-spatial` (*2.2-spatial/x86_64/alpine/Dockerfile*)](https://github.com/orientechnologies/orientdb-docker/blob/c022461a621be5230b9734b1dde17ca38ef482d0/2.2-spatial/x86_64/alpine/Dockerfile)
 -	[`3.0.0m2` (*3.0/x86_64/alpine/Dockerfile*)](https://github.com/orientechnologies/orientdb-docker/blob/222b64299884eeb4b324e2822873f69e8a7c006e/3.0/x86_64/alpine/Dockerfile)
 -	[`3.0.0m2-spatial` (*3.0-spatial/x86_64/alpine/Dockerfile*)](https://github.com/orientechnologies/orientdb-docker/blob/63df9efb84b44535fd99145b00fb5e2dda6beaa3/3.0-spatial/x86_64/alpine/Dockerfile)
 
@@ -34,6 +34,9 @@ WARNING:
 -	**Maintained by**:  
 	[OrientDB](https://github.com/orientechnologies/orientdb-docker)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/orientdb/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/orientdb/` directory](https://github.com/docker-library/repo-info/blob/master/repos/orientdb) ([history](https://github.com/docker-library/repo-info/commits/master/repos/orientdb))  
 	(image metadata, transfer size, etc)
@@ -46,7 +49,7 @@ WARNING:
 	[docs repo's `orientdb/` directory](https://github.com/docker-library/docs/tree/master/orientdb) ([history](https://github.com/docker-library/docs/commits/master/orientdb))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is OrientDB?
 

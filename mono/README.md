@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.2.0.215`, `5.2.0`, `5.2`, `5`, `latest` (*5.2.0.215/Dockerfile*)](https://github.com/mono/docker/blob/c895836e0e8cb7ee0d8124f360d2febcf376019d/5.2.0.215/Dockerfile)
--	[`5.2.0.215-slim`, `5.2.0-slim`, `5.2-slim`, `5-slim`, `slim` (*5.2.0.215/slim/Dockerfile*)](https://github.com/mono/docker/blob/c895836e0e8cb7ee0d8124f360d2febcf376019d/5.2.0.215/slim/Dockerfile)
+-	[`5.2.0.224`, `5.2.0`, `5.2`, `5`, `latest` (*5.2.0.224/Dockerfile*)](https://github.com/mono/docker/blob/55b93b6b6b06a2708bf2bdefe8dc2726e28db861/5.2.0.224/Dockerfile)
+-	[`5.2.0.224-slim`, `5.2.0-slim`, `5.2-slim`, `5-slim`, `slim` (*5.2.0.224/slim/Dockerfile*)](https://github.com/mono/docker/blob/55b93b6b6b06a2708bf2bdefe8dc2726e28db861/5.2.0.224/slim/Dockerfile)
 -	[`5.0.1.1`, `5.0.1`, `5.0` (*5.0.1.1/Dockerfile*)](https://github.com/mono/docker/blob/39b989ea0ef3e787fb75410521217cb7cb7df05e/5.0.1.1/Dockerfile)
 -	[`4.8.0.524`, `4.8.0`, `4.8`, `4` (*4.8.0.524/Dockerfile*)](https://github.com/mono/docker/blob/0d987d93235630e05a14983c7f87500ab33c90da/4.8.0.524/Dockerfile)
 
@@ -32,6 +32,9 @@ WARNING:
 -	**Maintained by**:  
 	[the Mono Project](https://github.com/mono/docker)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/mono/), [`arm32v7`](https://hub.docker.com/r/arm32v7/mono/), [`arm64v8`](https://hub.docker.com/r/arm64v8/mono/), [`i386`](https://hub.docker.com/r/i386/mono/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/mono/` directory](https://github.com/docker-library/repo-info/blob/master/repos/mono) ([history](https://github.com/docker-library/repo-info/commits/master/repos/mono))  
 	(image metadata, transfer size, etc)
@@ -44,7 +47,7 @@ WARNING:
 	[docs repo's `mono/` directory](https://github.com/docker-library/docs/tree/master/mono) ([history](https://github.com/docker-library/docs/commits/master/mono))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Mono
 

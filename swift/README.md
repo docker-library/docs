@@ -16,7 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.1.0`, `3.1`, `3`, `latest` (*Dockerfile*)](https://github.com/swiftdocker/docker-swift/blob/ef9aa534705fc8ab4258c539f6304072ebae9613/Dockerfile)
+-	[`4.0`, `4`, `latest` (*Dockerfile*)](https://github.com/swiftdocker/docker-swift/blob/84d2f69c035204bc2dc077f330deb7a393255a18/Dockerfile)
+-	[`3.1.0`, `3.1`, `3` (*Dockerfile*)](https://github.com/swiftdocker/docker-swift/blob/ef9aa534705fc8ab4258c539f6304072ebae9613/Dockerfile)
 -	[`3.0.2`, `3.0` (*Dockerfile*)](https://github.com/swiftdocker/docker-swift/blob/94a43272fe6411c12045414cfc797d3c0bcf2823/Dockerfile)
 
 # Quick reference
@@ -30,6 +31,9 @@ WARNING:
 -	**Maintained by**:  
 	[Haris and Thomas (of the Docker Community)](https://github.com/swiftdocker/docker-swift), [with the approval of the Swift Project](https://lists.swift.org/pipermail/swift-dev/Week-of-Mon-20160118/000908.html)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/swift/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/swift/` directory](https://github.com/docker-library/repo-info/blob/master/repos/swift) ([history](https://github.com/docker-library/repo-info/commits/master/repos/swift))  
 	(image metadata, transfer size, etc)
@@ -42,7 +46,7 @@ WARNING:
 	[docs repo's `swift/` directory](https://github.com/docker-library/docs/tree/master/swift) ([history](https://github.com/docker-library/docs/commits/master/swift))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Swift?
 

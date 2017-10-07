@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.4.2-stretch`, `3.4-stretch`, `3.4.2`, `3.4`, `latest` (*3.4/stretch/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/718e80d01e38b9e40b4f221c2ed54d7d134d80f7/3.4/stretch/Dockerfile)
--	[`3.4.2-jessie`, `3.4-jessie` (*3.4/jessie/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/718e80d01e38b9e40b4f221c2ed54d7d134d80f7/3.4/jessie/Dockerfile)
--	[`3.4.2-onbuild`, `3.4-onbuild` (*3.4/onbuild/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/8e6c65a2d72c239e8ddaf5af9157bb146d71016d/3.4/onbuild/Dockerfile)
--	[`3.4.2-windowsservercore`, `3.4-windowsservercore` (*3.4/windowsservercore/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/ba6ec51ec4db8248066b9a294b22bcbfd83a20f4/3.4/windowsservercore/Dockerfile)
+-	[`3.4.3-stretch`, `3.4-stretch`, `3.4.3`, `3.4`, `latest` (*3.4/stretch/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/55b42a6d36178f4ffe3ff6240c7cf9d3d4bacb92/3.4/stretch/Dockerfile)
+-	[`3.4.3-jessie`, `3.4-jessie` (*3.4/jessie/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/55b42a6d36178f4ffe3ff6240c7cf9d3d4bacb92/3.4/jessie/Dockerfile)
+-	[`3.4.3-onbuild`, `3.4-onbuild` (*3.4/onbuild/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/55b42a6d36178f4ffe3ff6240c7cf9d3d4bacb92/3.4/onbuild/Dockerfile)
+-	[`3.4.3-windowsservercore`, `3.4-windowsservercore` (*3.4/windowsservercore/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/55b42a6d36178f4ffe3ff6240c7cf9d3d4bacb92/3.4/windowsservercore/Dockerfile)
 -	[`3.3.0-rc.1-stretch`, `3.3.0-stretch`, `3.3-stretch`, `3.3.0-rc.1`, `3.3.0`, `3.3` (*3.3/stretch/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/718e80d01e38b9e40b4f221c2ed54d7d134d80f7/3.3/stretch/Dockerfile)
 -	[`3.3.0-rc.1-jessie`, `3.3.0-jessie`, `3.3-jessie` (*3.3/jessie/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/718e80d01e38b9e40b4f221c2ed54d7d134d80f7/3.3/jessie/Dockerfile)
 -	[`3.3.0-rc.1-onbuild`, `3.3.0-onbuild`, `3.3-onbuild` (*3.3/onbuild/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/e0f9cb5a3cc190acd42565113e3380b5853f5746/3.3/onbuild/Dockerfile)
@@ -44,6 +44,9 @@ WARNING:
 -	**Maintained by**:  
 	[the Haxe Foundation](https://github.com/HaxeFoundation/docker-library-haxe)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/haxe/), [`windows-amd64`](https://hub.docker.com/r/winamd64/haxe/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/haxe/` directory](https://github.com/docker-library/repo-info/blob/master/repos/haxe) ([history](https://github.com/docker-library/repo-info/commits/master/repos/haxe))  
 	(image metadata, transfer size, etc)
@@ -56,7 +59,7 @@ WARNING:
 	[docs repo's `haxe/` directory](https://github.com/docker-library/docs/tree/master/haxe) ([history](https://github.com/docker-library/docs/commits/master/haxe))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Haxe?
 
@@ -128,7 +131,7 @@ The `haxe` images come in many flavors, each designed for a specific use case.
 
 ## `haxe:<version>`
 
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of. This tag is based off of [`buildpack-deps`](https://registry.hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
 ## `haxe:onbuild`
 

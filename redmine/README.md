@@ -22,8 +22,6 @@ WARNING:
 -	[`3.3.4-passenger`, `3.3-passenger` (*3.3/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/0bb559650d42409350dba74c9ee982049a61117a/3.3/passenger/Dockerfile)
 -	[`3.2.7`, `3.2` (*3.2/Dockerfile*)](https://github.com/docker-library/redmine/blob/288c332e8e13d8fad52d37133dcd29421b369d17/3.2/Dockerfile)
 -	[`3.2.7-passenger`, `3.2-passenger` (*3.2/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/0bb559650d42409350dba74c9ee982049a61117a/3.2/passenger/Dockerfile)
--	[`3.1.7`, `3.1` (*3.1/Dockerfile*)](https://github.com/docker-library/redmine/blob/288c332e8e13d8fad52d37133dcd29421b369d17/3.1/Dockerfile)
--	[`3.1.7-passenger`, `3.1-passenger` (*3.1/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/0bb559650d42409350dba74c9ee982049a61117a/3.1/passenger/Dockerfile)
 
 # Quick reference
 
@@ -35,6 +33,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[the Docker Community](https://github.com/docker-library/redmine)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/redmine/), [`arm32v5`](https://hub.docker.com/r/arm32v5/redmine/), [`arm32v7`](https://hub.docker.com/r/arm32v7/redmine/), [`arm64v8`](https://hub.docker.com/r/arm64v8/redmine/), [`i386`](https://hub.docker.com/r/i386/redmine/), [`ppc64le`](https://hub.docker.com/r/ppc64le/redmine/), [`s390x`](https://hub.docker.com/r/s390x/redmine/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/redmine/` directory](https://github.com/docker-library/repo-info/blob/master/repos/redmine) ([history](https://github.com/docker-library/repo-info/commits/master/repos/redmine))  
@@ -48,7 +49,7 @@ WARNING:
 	[docs repo's `redmine/` directory](https://github.com/docker-library/docs/tree/master/redmine) ([history](https://github.com/docker-library/docs/commits/master/redmine))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Redmine?
 
@@ -105,6 +106,7 @@ services:
 
   redmine:
     image: redmine
+    restart: always
     ports:
       - 8080:3000
     environment:
@@ -113,12 +115,13 @@ services:
 
   db:
     image: mysql:5.7
+    restart: always
     environment:
       MYSQL_ROOT_PASSWORD: example
       MYSQL_DATABASE: redmine
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/9cb58e0970fb4cad06a7787418ceb3e39ca1b853/redmine/stack.yml)
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/e24f39cddf21560cf0a24f149059ff23640b0f16/redmine/stack.yml)
 
 Run `docker stack deploy -c stack.yml redmine` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
 

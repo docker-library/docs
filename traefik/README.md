@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`v1.4.0-rc2`, `1.4.0-rc2`, `v1.4`, `1.4`, `roquefort` (*scratch/amd64/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/57f83af9d2719e5f25e6c769fd2640f973b519dc/scratch/amd64/Dockerfile)
--	[`v1.4.0-rc2-alpine`, `1.4.0-rc2-alpine`, `v1.4-alpine`, `1.4-alpine`, `roquefort-alpine` (*alpine/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/57f83af9d2719e5f25e6c769fd2640f973b519dc/alpine/Dockerfile)
+-	[`v1.4.0-rc4`, `1.4.0-rc4`, `v1.4`, `1.4`, `roquefort` (*scratch/amd64/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/d807e0f3692209f960bb2567e7890453a190c899/scratch/amd64/Dockerfile)
+-	[`v1.4.0-rc4-alpine`, `1.4.0-rc4-alpine`, `v1.4-alpine`, `1.4-alpine`, `roquefort-alpine` (*alpine/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/d807e0f3692209f960bb2567e7890453a190c899/alpine/Dockerfile)
 -	[`v1.3.8`, `1.3.8`, `v1.3`, `1.3`, `raclette`, `latest` (*scratch/amd64/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/cfa3fa48bed342b86b143006e61d9bdf7db07901/scratch/amd64/Dockerfile)
 -	[`v1.3.8-alpine`, `1.3.8-alpine`, `v1.3-alpine`, `1.3-alpine`, `raclette-alpine`, `alpine` (*alpine/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/cfa3fa48bed342b86b143006e61d9bdf7db07901/alpine/Dockerfile)
 
@@ -32,6 +32,9 @@ WARNING:
 -	**Maintained by**:  
 	[the Træfik Project](https://github.com/containous/traefik-library-image)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/traefik/), [`arm32v6`](https://hub.docker.com/r/arm32v6/traefik/), [`arm64v8`](https://hub.docker.com/r/arm64v8/traefik/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/traefik/` directory](https://github.com/docker-library/repo-info/blob/master/repos/traefik) ([history](https://github.com/docker-library/repo-info/commits/master/repos/traefik))  
 	(image metadata, transfer size, etc)
@@ -44,7 +47,7 @@ WARNING:
 	[docs repo's `traefik/` directory](https://github.com/docker-library/docs/tree/master/traefik) ([history](https://github.com/docker-library/docs/commits/master/traefik))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/a6cc2c5f4bc6658168f2a0abbb0307acaefff80e/traefik/logo.png)
 

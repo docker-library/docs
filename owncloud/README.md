@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`10.0.2-apache`, `10.0-apache`, `10-apache`, `apache`, `10.0.2`, `10.0`, `10`, `latest` (*10.0/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/aad7b27a8d2dab3e417a94071d1acf6a795a2aed/10.0/apache/Dockerfile)
--	[`10.0.2-fpm`, `10.0-fpm`, `10-fpm`, `fpm` (*10.0/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/aad7b27a8d2dab3e417a94071d1acf6a795a2aed/10.0/fpm/Dockerfile)
+-	[`10.0.3-apache`, `10.0-apache`, `10-apache`, `apache`, `10.0.3`, `10.0`, `10`, `latest` (*10.0/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/5c0f5a270e565410cc47046b29b04e4a5ec9e828/10.0/apache/Dockerfile)
+-	[`10.0.3-fpm`, `10.0-fpm`, `10-fpm`, `fpm` (*10.0/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/5c0f5a270e565410cc47046b29b04e4a5ec9e828/10.0/fpm/Dockerfile)
 -	[`9.1.6-apache`, `9.1-apache`, `9-apache`, `9.1.6`, `9.1`, `9` (*9.1/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/aad7b27a8d2dab3e417a94071d1acf6a795a2aed/9.1/apache/Dockerfile)
 -	[`9.1.6-fpm`, `9.1-fpm`, `9-fpm` (*9.1/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/aad7b27a8d2dab3e417a94071d1acf6a795a2aed/9.1/fpm/Dockerfile)
 -	[`9.0.10-apache`, `9.0-apache`, `9.0.10`, `9.0` (*9.0/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/aad7b27a8d2dab3e417a94071d1acf6a795a2aed/9.0/apache/Dockerfile)
@@ -34,6 +34,9 @@ WARNING:
 -	**Maintained by**:  
 	[the Docker Community](https://github.com/docker-library/owncloud)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/owncloud/), [`arm32v5`](https://hub.docker.com/r/arm32v5/owncloud/), [`arm32v7`](https://hub.docker.com/r/arm32v7/owncloud/), [`arm64v8`](https://hub.docker.com/r/arm64v8/owncloud/), [`i386`](https://hub.docker.com/r/i386/owncloud/), [`ppc64le`](https://hub.docker.com/r/ppc64le/owncloud/), [`s390x`](https://hub.docker.com/r/s390x/owncloud/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/owncloud/` directory](https://github.com/docker-library/repo-info/blob/master/repos/owncloud) ([history](https://github.com/docker-library/repo-info/commits/master/repos/owncloud))  
 	(image metadata, transfer size, etc)
@@ -46,7 +49,7 @@ WARNING:
 	[docs repo's `owncloud/` directory](https://github.com/docker-library/docs/tree/master/owncloud) ([history](https://github.com/docker-library/docs/commits/master/owncloud))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is ownCloud?
 
@@ -115,16 +118,18 @@ services:
 
   owncloud:
     image: owncloud
+    restart: always
     ports:
       - 8080:80
 
   mysql:
     image: mariadb
+    restart: always
     environment:
       MYSQL_ROOT_PASSWORD: example
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/54359bd26c41e63c6e50ccd338b5a18d8b572c60/owncloud/stack.yml)
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/e24f39cddf21560cf0a24f149059ff23640b0f16/owncloud/stack.yml)
 
 Run `docker stack deploy -c stack.yml owncloud` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080/`, `http://localhost:8080/`, or `http://host-ip:8080` (as appropriate).
 

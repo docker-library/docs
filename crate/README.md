@@ -16,10 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `2.1`, `2.1.6` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/e8924e1bd476311cadc92a50ea06b992e0672eb3/Dockerfile)
--	[`1.0`, `1.0.6` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/89e1557944b257c9e56b0e93a458eb6f0238ece3/Dockerfile)
--	[`1.1`, `1.1.6` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/019830ed59c4b110f8c93f30430d282818ad95ec/Dockerfile)
--	[`2.0`, `2.0.7` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/79d51bb263104ccd2d3c57a5d74c16d6f0466d21/Dockerfile)
+-	[`2.1.7`, `2.1`, `latest` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/1c775563b01e830f265f0210ce8a68c81903c8cc/Dockerfile)
+-	[`2.0.7`, `2.0` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/79d51bb263104ccd2d3c57a5d74c16d6f0466d21/Dockerfile)
 
 # Quick reference
 
@@ -31,6 +29,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[Crate.io](https://github.com/crate/docker-crate)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/crate/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/crate/` directory](https://github.com/docker-library/repo-info/blob/master/repos/crate) ([history](https://github.com/docker-library/repo-info/commits/master/repos/crate))  
@@ -44,7 +45,7 @@ WARNING:
 	[docs repo's `crate/` directory](https://github.com/docker-library/docs/tree/master/crate) ([history](https://github.com/docker-library/docs/commits/master/crate))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/0d4ccc1c0a00a99c3302ffeb17831225cbba7863/crate/logo.png)
 

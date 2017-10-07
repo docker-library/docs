@@ -16,7 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `7.5.14` (*7.5.14/stretch/Dockerfile*)](https://github.com/SWI-Prolog/docker-swipl/blob/b76acfff26b916351287a562d98b29c199c188ab/7.5.14/stretch/Dockerfile)
+-	[`latest`, `7.7.0` (*7.7.0/stretch/Dockerfile*)](https://github.com/SWI-Prolog/docker-swipl/blob/a90c231a9bc888705b72f0fca1f0774897dfba54/7.7.0/stretch/Dockerfile)
+-	[`7.5.15` (*7.5.15/stretch/Dockerfile*)](https://github.com/SWI-Prolog/docker-swipl/blob/31e2158e7ba2bb2fa9ebff7c0717c476244506bb/7.5.15/stretch/Dockerfile)
 
 # Quick reference
 
@@ -28,6 +29,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[the SWI-Prolog community](https://github.com/SWI-Prolog/swipl-devel)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/swipl/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/swipl/` directory](https://github.com/docker-library/repo-info/blob/master/repos/swipl) ([history](https://github.com/docker-library/repo-info/commits/master/repos/swipl))  
@@ -41,7 +45,7 @@ WARNING:
 	[docs repo's `swipl/` directory](https://github.com/docker-library/docs/tree/master/swipl) ([history](https://github.com/docker-library/docs/commits/master/swipl))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is SWI-Prolog?
 

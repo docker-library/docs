@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.6.11`, `3.6`, `3`, `latest` (*3.6/debian/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/7d76799247764423a69438f72961ef0581788e07/3.6/debian/Dockerfile)
--	[`3.6.11-management`, `3.6-management`, `3-management`, `management` (*3.6/debian/management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/79277042564875d55e4b05a60c65b6eb46651a94/3.6/debian/management/Dockerfile)
--	[`3.6.11-alpine`, `3.6-alpine`, `3-alpine`, `alpine` (*3.6/alpine/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/8047bd34685f27bea47dcd646d3b6332b0ec22d3/3.6/alpine/Dockerfile)
--	[`3.6.11-management-alpine`, `3.6-management-alpine`, `3-management-alpine`, `management-alpine` (*3.6/alpine/management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/79277042564875d55e4b05a60c65b6eb46651a94/3.6/alpine/management/Dockerfile)
+-	[`3.6.12`, `3.6`, `3`, `latest` (*3.6/debian/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/ed9a656804f0f14a6b6b99fc7d71ba1a043854f5/3.6/debian/Dockerfile)
+-	[`3.6.12-management`, `3.6-management`, `3-management`, `management` (*3.6/debian/management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/79277042564875d55e4b05a60c65b6eb46651a94/3.6/debian/management/Dockerfile)
+-	[`3.6.12-alpine`, `3.6-alpine`, `3-alpine`, `alpine` (*3.6/alpine/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/ed9a656804f0f14a6b6b99fc7d71ba1a043854f5/3.6/alpine/Dockerfile)
+-	[`3.6.12-management-alpine`, `3.6-management-alpine`, `3-management-alpine`, `management-alpine` (*3.6/alpine/management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/79277042564875d55e4b05a60c65b6eb46651a94/3.6/alpine/management/Dockerfile)
 
 # Quick reference
 
@@ -31,6 +31,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[the Docker Community](https://github.com/docker-library/rabbitmq)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/rabbitmq/), [`arm32v5`](https://hub.docker.com/r/arm32v5/rabbitmq/), [`arm32v7`](https://hub.docker.com/r/arm32v7/rabbitmq/), [`arm64v8`](https://hub.docker.com/r/arm64v8/rabbitmq/), [`i386`](https://hub.docker.com/r/i386/rabbitmq/), [`ppc64le`](https://hub.docker.com/r/ppc64le/rabbitmq/), [`s390x`](https://hub.docker.com/r/s390x/rabbitmq/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/rabbitmq/` directory](https://github.com/docker-library/repo-info/blob/master/repos/rabbitmq) ([history](https://github.com/docker-library/repo-info/commits/master/repos/rabbitmq))  
@@ -44,7 +47,7 @@ WARNING:
 	[docs repo's `rabbitmq/` directory](https://github.com/docker-library/docs/tree/master/rabbitmq) ([history](https://github.com/docker-library/docs/commits/master/rabbitmq))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is RabbitMQ?
 

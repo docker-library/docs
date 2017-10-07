@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.7.5-apache`, `3.7-apache`, `3-apache`, `apache`, `3.7.5`, `3.7`, `3`, `latest` (*apache/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/b1988bf493baee9f09e3cd345c594ebd6b0c0dd6/apache/Dockerfile)
--	[`3.7.5-apache-php7`, `3.7-apache-php7`, `3-apache-php7`, `apache-php7` (*apache-php7/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/b1988bf493baee9f09e3cd345c594ebd6b0c0dd6/apache-php7/Dockerfile)
--	[`3.7.5-fpm`, `3.7-fpm`, `3-fpm`, `fpm` (*fpm/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/b1988bf493baee9f09e3cd345c594ebd6b0c0dd6/fpm/Dockerfile)
--	[`3.7.5-fpm-php7`, `3.7-fpm-php7`, `3-fpm-php7`, `fpm-php7` (*fpm-php7/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/b1988bf493baee9f09e3cd345c594ebd6b0c0dd6/fpm-php7/Dockerfile)
+-	[`3.8.0-apache`, `3.8-apache`, `3-apache`, `apache`, `3.8.0`, `3.8`, `3`, `latest` (*apache/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/7f460a60ab1d239f55a38934abe530294d4fab62/apache/Dockerfile)
+-	[`3.8.0-apache-php7`, `3.8-apache-php7`, `3-apache-php7`, `apache-php7` (*apache-php7/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/7f460a60ab1d239f55a38934abe530294d4fab62/apache-php7/Dockerfile)
+-	[`3.8.0-fpm`, `3.8-fpm`, `3-fpm`, `fpm` (*fpm/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/7f460a60ab1d239f55a38934abe530294d4fab62/fpm/Dockerfile)
+-	[`3.8.0-fpm-php7`, `3.8-fpm-php7`, `3-fpm-php7`, `fpm-php7` (*fpm-php7/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/7f460a60ab1d239f55a38934abe530294d4fab62/fpm-php7/Dockerfile)
 
 # Quick reference
 
@@ -31,6 +31,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[Joomla!](https://github.com/joomla/docker-joomla)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/joomla/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/joomla/` directory](https://github.com/docker-library/repo-info/blob/master/repos/joomla) ([history](https://github.com/docker-library/repo-info/commits/master/repos/joomla))  
@@ -44,7 +47,7 @@ WARNING:
 	[docs repo's `joomla/` directory](https://github.com/docker-library/docs/tree/master/joomla) ([history](https://github.com/docker-library/docs/commits/master/joomla))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Joomla?
 
@@ -94,6 +97,7 @@ version: '3.1'
 services:
     joomla:
         image: joomla
+        restart: always
         links:
             - joomladb:mysql
         ports:
@@ -104,11 +108,12 @@ services:
 
     joomladb:
         image: mysql:5.6
+        restart: always
         environment:
             MYSQL_ROOT_PASSWORD: example
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/54359bd26c41e63c6e50ccd338b5a18d8b572c60/joomla/stack.yml)
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/e24f39cddf21560cf0a24f149059ff23640b0f16/joomla/stack.yml)
 
 Run `docker stack deploy -c stack.yml joomla` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
 

@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.0.4-apache`, `3.0-apache`, `3-apache`, `apache`, `3.0.4`, `3.0`, `3`, `latest` (*apache/Dockerfile*)](https://github.com/piwik/docker-piwik/blob/4d9eadce21a4900442b16a3ef4c8ab7582cc7c83/apache/Dockerfile)
--	[`3.0.4-fpm`, `3.0-fpm`, `3-fpm`, `fpm` (*fpm/Dockerfile*)](https://github.com/piwik/docker-piwik/blob/4d9eadce21a4900442b16a3ef4c8ab7582cc7c83/fpm/Dockerfile)
+-	[`3.1.1-apache`, `3.1-apache`, `3-apache`, `apache`, `3.1.1`, `3.1`, `3`, `latest` (*apache/Dockerfile*)](https://github.com/piwik/docker-piwik/blob/dddf0af92dc1a1e5c6bfd4ac26b884aaaad56dd7/apache/Dockerfile)
+-	[`3.1.1-fpm`, `3.1-fpm`, `3-fpm`, `fpm` (*fpm/Dockerfile*)](https://github.com/piwik/docker-piwik/blob/dddf0af92dc1a1e5c6bfd4ac26b884aaaad56dd7/fpm/Dockerfile)
 
 # Quick reference
 
@@ -29,6 +29,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[Piwik Analytics](https://github.com/piwik/docker-piwik)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/piwik/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/piwik/` directory](https://github.com/docker-library/repo-info/blob/master/repos/piwik) ([history](https://github.com/docker-library/repo-info/commits/master/repos/piwik))  
@@ -42,7 +45,7 @@ WARNING:
 	[docs repo's `piwik/` directory](https://github.com/docker-library/docs/tree/master/piwik) ([history](https://github.com/docker-library/docs/commits/master/piwik))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # Piwik
 

@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.2`, `1.2.4` (*influxdb/1.2/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/75787dfb82c3bc5f7ee04ffe7cb5acd3b26cc0e7/influxdb/1.2/Dockerfile)
--	[`1.2-alpine`, `1.2.4-alpine` (*influxdb/1.2/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/75787dfb82c3bc5f7ee04ffe7cb5acd3b26cc0e7/influxdb/1.2/alpine/Dockerfile)
--	[`1.3`, `1.3.5`, `latest` (*influxdb/1.3/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/75787dfb82c3bc5f7ee04ffe7cb5acd3b26cc0e7/influxdb/1.3/Dockerfile)
--	[`1.3-alpine`, `1.3.5-alpine`, `alpine` (*influxdb/1.3/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/75787dfb82c3bc5f7ee04ffe7cb5acd3b26cc0e7/influxdb/1.3/alpine/Dockerfile)
+-	[`1.2`, `1.2.4` (*influxdb/1.2/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/dc4f0480be886393041acf1c3f739f197d45b9c3/influxdb/1.2/Dockerfile)
+-	[`1.2-alpine`, `1.2.4-alpine` (*influxdb/1.2/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/dc4f0480be886393041acf1c3f739f197d45b9c3/influxdb/1.2/alpine/Dockerfile)
+-	[`1.3`, `1.3.6`, `latest` (*influxdb/1.3/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/007a07b94e87bfc66d62a937cd2a6073f92f81dc/influxdb/1.3/Dockerfile)
+-	[`1.3-alpine`, `1.3.6-alpine`, `alpine` (*influxdb/1.3/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/007a07b94e87bfc66d62a937cd2a6073f92f81dc/influxdb/1.3/alpine/Dockerfile)
 
 # Quick reference
 
@@ -31,6 +31,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[InfluxData](https://github.com/influxdata/influxdata-docker)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/influxdb/), [`arm32v7`](https://hub.docker.com/r/arm32v7/influxdb/), [`arm64v8`](https://hub.docker.com/r/arm64v8/influxdb/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/influxdb/` directory](https://github.com/docker-library/repo-info/blob/master/repos/influxdb) ([history](https://github.com/docker-library/repo-info/commits/master/repos/influxdb))  
@@ -44,7 +47,7 @@ WARNING:
 	[docs repo's `influxdb/` directory](https://github.com/docker-library/docs/tree/master/influxdb) ([history](https://github.com/docker-library/docs/commits/master/influxdb))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # InfluxDB
 
@@ -180,13 +183,82 @@ $ docker run --rm --link=influxdb -it influxdb influx -host influxdb
 
 At the moment, you cannot use `docker exec` to run the influx client since `docker exec` will not properly allocate a TTY. This is due to a current bug in Docker that is detailed in [docker/docker#8755](https://github.com/docker/docker/issues/8755).
 
+### Database Initialization
+
+The InfluxDB image contains some extra functionality for initializing a database. These options are not suggested for production, but are quite useful when running standalone instances for testing.
+
+The database initialization script will only be called when running `influxd`. It will not be executed when running any other program.
+
+#### Environment Variables
+
+The InfluxDB image uses several environment variables to automatically configure certain parts of the server. They may significantly aid you in using this image.
+
+##### INFLUXDB_DB
+
+Automatically initializes a database with the name of this environment variable.
+
+##### INFLUXDB_HTTP_AUTH_ENABLED
+
+Enables authentication. Either this must be set or `auth-enabled = true` must be set within the configuration file for any authentication related options below to work.
+
+##### INFLUXDB_ADMIN_USER
+
+The name of the admin user to be created. If this is unset, no admin user is created.
+
+##### INFLUXDB_ADMIN_PASSWORD
+
+The password for the admin user configured with `INFLUXDB_ADMIN_USER`. If this is unset, a random password is generated and printed to standard out.
+
+##### INFLUXDB_USER
+
+The name of a user to be created with no privileges. If `INFLUXDB_DB` is set, this user will be granted read and write permissions for that database.
+
+##### INFLUXDB_USER_PASSWORD
+
+The password for the user configured with `INFLUXDB_USER`. If this is unset, a random password is generated and printed to standard out.
+
+##### INFLUXDB_READ_USER
+
+The name of a user to be created with read privileges on `INFLUXDB_DB`. If `INFLUXDB_DB` is not set, this user will have no granted permissions.
+
+##### INFLUXDB_READ_USER_PASSWORD
+
+The password for the user configured with `INFLUXDB_READ_USER`. If this is unset, a random password is generated and printed to standard out.
+
+##### INFLUXDB_WRITE_USER
+
+The name of a user to be created with write privileges on `INFLUXDB_DB`. If `INFLUXDB_DB` is not set, this user will have no granted permissions.
+
+##### INFLUXDB_WRITE_USER_PASSWORD
+
+The password for the user configured with `INFLUXDB_WRITE_USER`. If this is unset, a random password is generated and printed to standard out.
+
+#### Initialization Files
+
+If the Docker image finds any files with the extensions `.sh` or `.iql` inside of the `/docker-entrypoint-initdb.d` folder, it will execute them. The order they are executed in is determined by the shell. This is usually alphabetical order.
+
+#### Manually Initializing the Database
+
+To manually initialize the database and exit, the `/init-influxdb.sh` script can be used directly. It takes the same parameters as the `influxd run` command. As an example:
+
+```console
+$ docker run --rm \
+      -e INFLUXDB_DB=db0 -e INFLUXDB_ADMIN_ENABLED=true
+      -e INFLUXDB_ADMIN_USER=admin -e INFLUXDB_ADMIN_USER=supersecretpassword
+      -e INFLUXDB_USER=telegraf -e INFLUXDB_USER_PASSWORD=secretpassword
+      -v $PWD:/var/lib/influxdb \
+      /init-influxdb.sh
+```
+
+The above would create the database `db0`, create an admin user with the password `supersecretpassword`, then create the `telegraf` user with your telegraf's secret password. It would then exit and leave behind any files it created in the volume that you mounted.
+
 # Image Variants
 
 The `influxdb` images come in many flavors, each designed for a specific use case.
 
 ## `influxdb:<version>`
 
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of. This tag is based off of [`buildpack-deps`](https://registry.hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
 ## `influxdb:alpine`
 

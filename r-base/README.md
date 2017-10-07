@@ -16,7 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.4.1`, `latest` (*r-base/Dockerfile*)](https://github.com/rocker-org/rocker/blob/541002c788eff3ffce85c16072365bf2bc8bdf67/r-base/Dockerfile)
+-	[`3.4.2`, `latest` (*r-base/Dockerfile*)](https://github.com/rocker-org/rocker/blob/eeeeac041f639377acb9320e6cb1c3154f160dfe/r-base/Dockerfile)
 
 # Quick reference
 
@@ -28,6 +28,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[the Rocker Community](https://github.com/rocker-org/rocker)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/r-base/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/r-base/` directory](https://github.com/docker-library/repo-info/blob/master/repos/r-base) ([history](https://github.com/docker-library/repo-info/commits/master/repos/r-base))  
@@ -41,7 +44,7 @@ WARNING:
 	[docs repo's `r-base/` directory](https://github.com/docker-library/docs/tree/master/r-base) ([history](https://github.com/docker-library/docs/commits/master/r-base))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is R?
 
