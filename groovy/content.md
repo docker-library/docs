@@ -6,21 +6,23 @@
 
 # How to use this image
 
+Note that if you are mounting a volume and the uid running Docker is not `1000`, you should run as user `root` (`-u root`).
+
 ## Starting Groovysh
 
-`docker run -it --rm --name groovy groovy:alpine`
+`docker run -it --rm groovy`
 
 ## Running a Groovy script
 
-`docker run --rm -v "$PWD":/scripts -w /scripts --name groovy groovy:alpine groovy <script> <script-args>`
+`docker run --rm -v "$PWD":/home/groovy/scripts -w /home/groovy/scripts groovy groovy <script> <script-args>`
 
 ## Reusing the Grapes cache
 
-The local Grapes cache can be reused across containers by creating a volume and mounting it in */home/groovy/.groovy/grapes*.
+The local Grapes cache can be reused across containers by creating a volume and mounting it in `/home/groovy/.groovy/grapes`.
 
 ```console
 docker volume create --name grapes-cache
-docker run -it -v grapes-cache:/home/groovy/.groovy/grapes groovy:alpine
+docker run --rm -it -v grapes-cache:/home/groovy/.groovy/grapes groovy
 ```
 
 **Note: Java 9 support is experimental**
