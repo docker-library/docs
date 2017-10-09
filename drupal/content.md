@@ -11,13 +11,13 @@ Drupal is a free and open-source content-management framework written in PHP and
 The basic pattern for starting a `%%REPO%%` instance is:
 
 ```console
-$ docker run --name some-%%REPO%% -d %%REPO%%
+$ docker run --name some-%%REPO%% -d %%IMAGE%%
 ```
 
 If you'd like to be able to access the instance from the host without the container's IP, standard port mappings can be used:
 
 ```console
-$ docker run --name some-%%REPO%% -p 8080:80 -d %%REPO%%
+$ docker run --name some-%%REPO%% -p 8080:80 -d %%IMAGE%%
 ```
 
 Then, access it via `http://localhost:8080` or `http://host-ip:8080` in a browser.
@@ -29,7 +29,7 @@ When first accessing the webserver provided by this image, it will go through a 
 ## MySQL
 
 ```console
-$ docker run --name some-%%REPO%% --link some-mysql:mysql -d %%REPO%%
+$ docker run --name some-%%REPO%% --link some-mysql:mysql -d %%IMAGE%%
 ```
 
 -	Database type: `MySQL, MariaDB, or equivalent`
@@ -39,7 +39,7 @@ $ docker run --name some-%%REPO%% --link some-mysql:mysql -d %%REPO%%
 ## PostgreSQL
 
 ```console
-$ docker run --name some-%%REPO%% --link some-postgres:postgres -d %%REPO%%
+$ docker run --name some-%%REPO%% --link some-postgres:postgres -d %%IMAGE%%
 ```
 
 -	Database type: `PostgreSQL`
@@ -55,7 +55,7 @@ There is consensus that `/var/www/html/modules`, `/var/www/html/profiles`, and `
 If using bind-mounts, one way to accomplish pre-seeding your local `sites` directory would be something like the following:
 
 ```console
-$ docker run --rm %%REPO%% tar -cC /var/www/html/sites . | tar -xC /path/on/host/sites
+$ docker run --rm %%IMAGE%% tar -cC /var/www/html/sites . | tar -xC /path/on/host/sites
 ```
 
 This can then be bind-mounted into a new container:
@@ -66,19 +66,20 @@ $ docker run --name some-%%REPO%% --link some-postgres:postgres -d \
 	-v /path/on/host/profiles:/var/www/html/profiles \
 	-v /path/on/host/sites:/var/www/html/sites \
 	-v /path/on/host/themes:/var/www/html/themes \
-	%%REPO%%
+	%%IMAGE%%
 ```
 
 Another solution using Docker Volumes:
 
 ```console
 $ docker volume create %%REPO%%-sites
-$ docker run --rm -v %%REPO%%-sites:/temporary/sites %%REPO%% cp -aRT /var/www/html/sites /temporary/sites
+$ docker run --rm -v %%REPO%%-sites:/temporary/sites %%IMAGE%% cp -aRT /var/www/html/sites /temporary/sites
 $ docker run --name some-%%REPO%% --link some-postgres:postgres -d \
 	-v %%REPO%%-modules:/var/www/html/modules \
 	-v %%REPO%%-profiles:/var/www/html/profiles \
 	-v %%REPO%%-sites:/var/www/html/sites \
 	-v %%REPO%%-themes:/var/www/html/themes \
+	%%IMAGE%%
 ```
 
 ## %%STACK%%

@@ -9,7 +9,7 @@ WordPress is a free and open source blogging tool and a content management syste
 # How to use this image
 
 ```console
-$ docker run --name some-%%REPO%% --link some-mysql:mysql -d %%REPO%%
+$ docker run --name some-%%REPO%% --link some-mysql:mysql -d %%IMAGE%%
 ```
 
 The following environment variables are also honored for configuring your WordPress instance:
@@ -26,7 +26,7 @@ If the `WORDPRESS_DB_NAME` specified does not already exist on the given MySQL s
 If you'd like to be able to access the instance from the host without the container's IP, standard port mappings can be used:
 
 ```console
-$ docker run --name some-%%REPO%% --link some-mysql:mysql -p 8080:80 -d %%REPO%%
+$ docker run --name some-%%REPO%% --link some-mysql:mysql -p 8080:80 -d %%IMAGE%%
 ```
 
 Then, access it via `http://localhost:8080` or `http://host-ip:8080` in a browser.

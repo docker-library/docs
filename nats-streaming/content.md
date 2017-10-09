@@ -13,7 +13,7 @@
 # 8222 is an HTTP management port for information reporting.
 # use -p or -P as needed.
 
-$ docker run -d nats-streaming
+$ docker run -d %%IMAGE%%
 ```
 
 Output that you would get if you had started with `-ti` instead of `d` (for daemon):
@@ -40,7 +40,7 @@ Output that you would get if you had started with `-ti` instead of `d` (for daem
 To use a file based store instead, you would run:
 
 ```bash
-$ docker run -d nats-streaming -store file -dir datastore
+$ docker run -d %%IMAGE%% -store file -dir datastore
 
 [1] 2017/06/27 19:14:06.643200 [INF] STREAM: Starting nats-streaming-server[test-cluster] version 0.5.0
 [1] 2017/06/27 19:14:06.643242 [INF] STREAM: ServerID: aaAI5uJPRimoNwl6TIznom
@@ -69,7 +69,7 @@ $ docker run -d --name=nats-main nats
 Now, start the Streaming server and link it to the above docker image:
 
 ```bash
-$ docker run -d --link nats-main nats-streaming -store file -dir datastore -ns nats://nats-main:4222
+$ docker run -d --link nats-main %%IMAGE%% -store file -dir datastore -ns nats://nats-main:4222
 
 [1] 2017/06/27 19:16:53.628397 [INF] STREAM: Starting nats-streaming-server[test-cluster] version 0.5.0
 [1] 2017/06/27 19:16:53.628426 [INF] STREAM: ServerID: PNXiWzcYitFesmdKyOwBIE

@@ -9,13 +9,13 @@ ZNC is an IRC network bouncer (BNC). It can detach the client from the actual IR
 ZNC in this image stores its configuration in `/znc-data`. If you have existing configuration, you can reuse it with `-v $HOME/.znc:/znc-data`. Alternatively, you can create a new config in a volume or in a local dir. The examples below assumes a volume named `znc-cfg`.
 
 ```console
-$ docker run -it -v znc-cfg:/znc-data znc --makeconf
+$ docker run -it -v znc-cfg:/znc-data %%IMAGE%% --makeconf
 ```
 
 To run ZNC:
 
 ```console
-$ docker run -p 6697:6697 -v znc-cfg:/znc-data znc
+$ docker run -p 6697:6697 -v znc-cfg:/znc-data %%IMAGE%%
 ```
 
 The port should match the port you used during `--makeconf`. Note that 6667 is often blocked by web browsers, and therefore is not recommended.

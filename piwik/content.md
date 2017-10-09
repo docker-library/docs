@@ -15,7 +15,7 @@ Piwik is the leading open-source analytics platform that gives you more than jus
 # How to use this image
 
 ```console
-$ docker run --name some-%%REPO%% --link some-mysql:db -d %%REPO%%
+$ docker run --name some-%%REPO%% --link some-mysql:db -d %%IMAGE%%
 ```
 
 Now you can get access to fpm running on port 9000 inside the container. If you want to access it from the Internets, we recommend using a reverse proxy in front. You can find more information on that on the [docker-compose](#docker-compose) section.

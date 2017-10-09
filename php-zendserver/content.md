@@ -33,12 +33,12 @@ Zend Server is shared on [Docker-Hub] as **php-zendserver**.
 
 To start a single Zend Server instance, execute:
 
-	    $ docker run php-zendserver
+	    $ docker run %%IMAGE%%
 
 -	You can specify the PHP and Zend Server version by adding ':<php-version>' or ':&lt;ZS-version&gt;-php&lt;version&gt;' to the 'docker run' command.
 
 		for example: 
-		$docker run php-zendserver:8.0-php5.6
+		$docker run %%IMAGE%%:8.0-php5.6
 
 #### Availible versions:
 
@@ -50,11 +50,11 @@ To start a single Zend Server instance, execute:
 
 To start a Zend Server cluster, execute the following command for each cluster node:
 
-	    $ docker run -e MYSQL_HOSTNAME=<db-ip> -e MYSQL_PORT=3306 -e MYSQL_USERNAME=<username> -e MYSQL_PASSWORD=<password> -e MYSQL_DBNAME=zend php-zendserver
+	    $ docker run -e MYSQL_HOSTNAME=<db-ip> -e MYSQL_PORT=3306 -e MYSQL_USERNAME=<username> -e MYSQL_PASSWORD=<password> -e MYSQL_DBNAME=zend %%IMAGE%%
 
 #### Bring your own license
 
-To use your own Zend Server license: $ docker run php-zendserver -e ZEND_LICENSE_KEY=<license-key> -e ZEND_LICENSE_ORDER=<order-number>
+To use your own Zend Server license: $ docker run %%IMAGE%% -e ZEND_LICENSE_KEY=<license-key> -e ZEND_LICENSE_ORDER=<order-number>
 
 #### Launching the Container from Dockerfile
 
@@ -82,7 +82,7 @@ Once started, the container will output the information required to access the P
 
 To access the container **remotely**, port forwarding must be configured, either manually or using docker. For example, this command redirects port 80 to port 88, and port 10081 (Zend Server UI port) to port 10088:
 
-	    $ docker run -p 88:80 -p 10088:10081 php-zendserver
+	    $ docker run -p 88:80 -p 10088:10081 %%IMAGE%%
 
 ##### For clustered instances:
 

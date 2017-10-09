@@ -19,7 +19,7 @@ This image ships a minimal Haxe toolkit:
 The most straightforward way to use this image is to use a Haxe container as both the build and runtime environment. In your `Dockerfile`, writing something along the lines of the following will compile and run your project:
 
 ```dockerfile
-FROM haxe:3.4
+FROM %%IMAGE%%:3.4
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
@@ -47,10 +47,10 @@ $ docker run -it --rm --name my-running-app my-haxe-app
 
 There are `onbuild` variants that include multiple `ONBUILD` triggers to perform all of the steps in the above Dockerfile, except there is no `CMD` instruction for running the compilation output.
 
-Rewriting the above Dockerfile with `haxe:3.4-onbuild`, we will get:
+Rewriting the above Dockerfile with `%%IMAGE%%:3.4-onbuild`, we will get:
 
 ```dockerfile
-FROM haxe:3.4-onbuild
+FROM %%IMAGE%%:3.4-onbuild
 
 # run the output when the container starts
 CMD ["neko", "Main.n"]

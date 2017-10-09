@@ -6,7 +6,7 @@ Oracle Linux is an open-source operating system available under the GNU General 
 
 ## How to use these images
 
-The Oracle Linux images are intended for use in the **FROM** field of an application's `Dockerfile`. For example, to use Oracle Linux 6 as the base of an image, specify `FROM oraclelinux:6`.
+The Oracle Linux images are intended for use in the **FROM** field of an application's `Dockerfile`. For example, to use Oracle Linux 6 as the base of an image, specify `FROM %%IMAGE%%:6`.
 
 ## Official Resources
 

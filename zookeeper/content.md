@@ -11,7 +11,7 @@ Apache ZooKeeper is a software project of the Apache Software Foundation, provid
 ## Start a Zookeeper server instance
 
 ```console
-$ docker run --name some-zookeeper --restart always -d zookeeper
+$ docker run --name some-zookeeper --restart always -d %%IMAGE%%
 ```
 
 This image includes `EXPOSE 2181 2888 3888` (the zookeeper client port, follower port, election port respectively), so standard container linking will make it automatically available to the linked containers. Since the Zookeeper "fails fast" it's better to always restart it.
@@ -41,7 +41,7 @@ Consider using [Docker Swarm](https://www.docker.com/products/docker-swarm) when
 Zookeeper configuration is located in `/conf`. One way to change it is mounting your config file as a volume:
 
 ```console
-$ docker run --name some-zookeeper --restart always -d -v $(pwd)/zoo.cfg:/conf/zoo.cfg zookeeper
+$ docker run --name some-zookeeper --restart always -d -v $(pwd)/zoo.cfg:/conf/zoo.cfg %%IMAGE%%
 ```
 
 ## Environment variables

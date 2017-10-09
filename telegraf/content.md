@@ -27,7 +27,7 @@ $ docker run -d --name influxdb -p 8083:8083 -p 8086:8086 influxdb
 Starting Telegraf using the default config, which connects to InfluxDB at `http://localhost:8086/`:
 
 ```console
-$ docker run --net=container:influxdb telegraf
+$ docker run --net=container:influxdb %%IMAGE%%
 ```
 
 ### Using a custom config file
@@ -35,13 +35,13 @@ $ docker run --net=container:influxdb telegraf
 First, generate a sample configuration and save it as `telegraf.conf` on the host:
 
 ```console
-$ docker run --rm telegraf telegraf config > telegraf.conf
+$ docker run --rm %%IMAGE%% telegraf config > telegraf.conf
 ```
 
 Once you've customized `telegraf.conf`, you can run the Telegraf container with it mounted in the expected location:
 
 ```console
-$ docker run -v $PWD/telegraf.conf:/etc/telegraf/telegraf.conf:ro telegraf
+$ docker run -v $PWD/telegraf.conf:/etc/telegraf/telegraf.conf:ro %%IMAGE%%
 ```
 
 Modify `$PWD` to the directory where you want to store the configuration file.
@@ -77,7 +77,7 @@ Finally, we start our Telegraf container and verify functionality:
 $ docker run -d --name=telegraf \
       --net=influxdb \
       -v $PWD/telegraf.conf:/etc/telegraf/telegraf.conf:ro \
-      telegraf
+      %%IMAGE%%
 $ docker logs -f telegraf
 ```
 
@@ -155,7 +155,7 @@ $ docker run -d --name=telegraf \
       --net=influxdb \
       -p 8125:8125/udp \
       -v $PWD/telegraf.conf:/etc/telegraf/telegraf.conf:ro \
-      telegraf
+      %%IMAGE%%
 ```
 
 Send Mock StatsD data:

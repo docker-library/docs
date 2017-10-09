@@ -12,9 +12,9 @@ Development of Ubuntu is led by UK-based Canonical Ltd., a company owned by Sout
 
 This image is built from official rootfs tarballs provided by Canonical (specifically, https://partner-images.canonical.com/core/).
 
-The `ubuntu:latest` tag points to the "latest LTS", since that's the version recommended for general use. The `ubuntu:rolling` tag points to the latest release (regardless of LTS status).
+The `%%IMAGE%%:latest` tag points to the "latest LTS", since that's the version recommended for general use. The `%%IMAGE%%:rolling` tag points to the latest release (regardless of LTS status).
 
-Along a similar vein, the `ubuntu:devel` tag is an alias for whichever release the "devel" suite on the mirrors currently points to, as determined by the following one-liner: `wget -qO- http://archive.ubuntu.com/ubuntu/dists/devel/Release | awk -F ': ' '$1 == "Codename" { print $2; exit }'`
+Along a similar vein, the `%%IMAGE%%:devel` tag is an alias for whichever release the "devel" suite on the mirrors currently points to, as determined by the following one-liner: `wget -qO- http://archive.ubuntu.com/ubuntu/dists/devel/Release | awk -F ': ' '$1 == "Codename" { print $2; exit }'`
 
 ## Locales
 
@@ -30,10 +30,10 @@ ENV LANG en_US.utf8
 
 ## `/etc/apt/sources.list`
 
-### `ubuntu:16.04`
+### `%%IMAGE%%:16.04`
 
 ```console
-$ docker run ubuntu:16.04 grep -v '^#' /etc/apt/sources.list
+$ docker run %%IMAGE%%:16.04 grep -v '^#' /etc/apt/sources.list
 
 deb http://archive.ubuntu.com/ubuntu/ xenial main restricted
 deb-src http://archive.ubuntu.com/ubuntu/ xenial main restricted
@@ -53,10 +53,10 @@ deb http://archive.ubuntu.com/ubuntu/ xenial-security universe
 deb-src http://archive.ubuntu.com/ubuntu/ xenial-security universe
 ```
 
-### `ubuntu:14.04`
+### `%%IMAGE%%:14.04`
 
 ```console
-$ docker run ubuntu:14.04 grep -v '^#' /etc/apt/sources.list
+$ docker run %%IMAGE%%:14.04 grep -v '^#' /etc/apt/sources.list
 
 deb http://archive.ubuntu.com/ubuntu/ trusty main restricted
 deb-src http://archive.ubuntu.com/ubuntu/ trusty main restricted

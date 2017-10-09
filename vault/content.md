@@ -29,7 +29,7 @@ The container will attempt to lock memory to prevent sensitive values from being
 ## Running Vault for Development
 
 ```console
-$ docker run --cap-add=IPC_LOCK -d --name=dev-vault vault
+$ docker run --cap-add=IPC_LOCK -d --name=dev-vault %%IMAGE%%
 ```
 
 This runs a completely in-memory Vault server, which is useful for development but should not be used in production.
@@ -42,13 +42,13 @@ When running in development mode, two additional options can be set via environm
 As an example:
 
 ```console
-$ docker run --cap-add=IPC_LOCK -e 'VAULT_DEV_ROOT_TOKEN_ID=myroot' -e 'VAULT_DEV_LISTEN_ADDRESS=0.0.0.0:1234' vault
+$ docker run --cap-add=IPC_LOCK -e 'VAULT_DEV_ROOT_TOKEN_ID=myroot' -e 'VAULT_DEV_LISTEN_ADDRESS=0.0.0.0:1234' %%IMAGE%%
 ```
 
 ## Running Vault in Server Mode
 
 ```console
-$ docker run --cap-add=IPC_LOCK -e 'VAULT_LOCAL_CONFIG={"backend": {"file": {"path": "/vault/file"}}, "default_lease_ttl": "168h", "max_lease_ttl": "720h"}' vault server
+$ docker run --cap-add=IPC_LOCK -e 'VAULT_LOCAL_CONFIG={"backend": {"file": {"path": "/vault/file"}}, "default_lease_ttl": "168h", "max_lease_ttl": "720h"}' %%IMAGE%% server
 ```
 
 This runs a Vault server using the `file` storage backend at path `/vault/file`, with a default secret lease duration of one week and a maximum of 30 days.
