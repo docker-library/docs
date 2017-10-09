@@ -13,7 +13,7 @@ Redmine is a free and open source, web-based project management and issue tracki
 This is the simplest setup; just run redmine.
 
 ```console
-$ docker run -d --name some-redmine redmine
+$ docker run -d --name some-redmine %%IMAGE%%
 ```
 
 > not for multi-user production use ([redmine wiki](http://www.redmine.org/projects/redmine/wiki/RedmineInstall#Supported-database-back-ends))
@@ -39,7 +39,7 @@ Running Redmine with a database server is the recommened way.
 2.	start redmine
 
 	```console
-	$ docker run -d --name some-%%REPO%% --link some-postgres:postgres %%REPO%%
+	$ docker run -d --name some-%%REPO%% --link some-postgres:postgres %%IMAGE%%
 	```
 
 ## %%STACK%%
@@ -67,7 +67,7 @@ The Docker documentation is a good starting point for understanding the differen
 2.	Start your `%%REPO%%` container like this:
 
 	```console
-	$ docker run -d --name some-%%REPO%% -v /my/own/datadir:/usr/src/redmine/files --link some-postgres:postgres %%REPO%%
+	$ docker run -d --name some-%%REPO%% -v /my/own/datadir:/usr/src/redmine/files --link some-postgres:postgres %%IMAGE%%
 	```
 
 The `-v /my/own/datadir:/usr/src/redmine/files` part of the command mounts the `/my/own/datadir` directory from the underlying host system as `/usr/src/redmine/files` inside the container, where Redmine will store uploaded files.
@@ -131,7 +131,7 @@ This variable is used to create an initial `config/secrets.yml` and set the `sec
 As an alternative to passing sensitive information via environment variables, `_FILE` may be appended to the previously listed environment variables, causing the initialization script to load the values for those variables from files present in the container. In particular, this can be used to load passwords from Docker secrets stored in `/run/secrets/<secret_name>` files. For example:
 
 ```console
-$ docker run -d --name some-%%REPO%% -e REDMINE_DB_MYSQL_FILE=/run/secrets/mysql-host -e REDMINE_DB_PASSWORD_FILE=/run/secrets/mysql-root %%REPO%%:tag
+$ docker run -d --name some-%%REPO%% -e REDMINE_DB_MYSQL_FILE=/run/secrets/mysql-host -e REDMINE_DB_PASSWORD_FILE=/run/secrets/mysql-root %%IMAGE%%:tag
 ```
 
 Currently, this is only supported for `REDMINE_DB_MYSQL`, `REDMINE_DB_POSTGRES`, `REDMINE_DB_PORT`, `REDMINE_DB_USERNAME`, `REDMINE_DB_PASSWORD`, `REDMINE_DB_DATABASE`, `REDMINE_DB_ENCODING`, and `REDMINE_SECRET_KEY_BASE`.

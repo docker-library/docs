@@ -11,7 +11,7 @@
 Use like you would any other base image:
 
 ```dockerfile
-FROM alpine:3.5
+FROM %%IMAGE%%:3.5
 RUN apk add --no-cache mysql-client
 ENTRYPOINT ["mysql"]
 ```

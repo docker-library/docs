@@ -13,7 +13,7 @@ Clojure is a dialect of the Lisp programming language. It is a general-purpose p
 Since the most common way to use Clojure is in conjunction with [Leiningen (`lein`)](http://leiningen.org/), this image assumes that's how you'll be working. The most straightforward way to use this image is to add a `Dockerfile` to an existing Leiningen/Clojure project:
 
 ```dockerfile
-FROM clojure
+FROM %%IMAGE%%
 COPY . /usr/src/app
 WORKDIR /usr/src/app
 CMD ["lein", "run"]
@@ -29,7 +29,7 @@ $ docker run -it --rm --name my-running-app my-clojure-app
 While the above is the most straightforward example of a `Dockerfile`, it does have some drawbacks. The `lein run` command will download your dependencies, compile the project, and then run it. That's a lot of work, all of which you may not want done every time you run the image. To get around this, you can download the dependencies and compile the project ahead of time. This will significantly reduce startup time when you run your image.
 
 ```dockerfile
-FROM clojure
+FROM %%IMAGE%%
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 COPY project.clj /usr/src/app/
@@ -48,7 +48,7 @@ You can then build and run the image as above.
 If you have an existing Lein/Clojure project, it's fairly straightforward to compile your project into a jar from a container:
 
 ```console
-$ docker run -it --rm -v "$PWD":/usr/src/app -w /usr/src/app clojure lein uberjar
+$ docker run -it --rm -v "$PWD":/usr/src/app -w /usr/src/app %%IMAGE%% lein uberjar
 ```
 
 This will build your project into a jar file located in your project's `target/uberjar` directory.

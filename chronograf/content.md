@@ -11,7 +11,7 @@ Chronograf is InfluxData’s open source web application. Use Chronograf with th
 Chronograf runs on port 8888. It can be run and accessed by exposing that port:
 
 ```console
-$ docker run -p 8888:8888 chronograf
+$ docker run -p 8888:8888 %%IMAGE%%
 ```
 
 ### Mounting a volume
@@ -21,7 +21,7 @@ The Chronograf image exposes a shared volume under `/var/lib/chronograf`, so you
 ```console
 $ docker run -p 8888:8888 \
       -v $PWD:/var/lib/chronograf \
-      chronograf
+      %%IMAGE%%
 ```
 
 Modify `$PWD` to the directory where you want to store data associated with the InfluxDB container.
@@ -31,7 +31,7 @@ You can also have Docker control the volume mountpoint by using a named volume.
 ```console
 $ docker run -p 8888:8888 \
       -v chronograf:/var/lib/chronograf \
-      chronograf
+      %%IMAGE%%
 ```
 
 ### Using the container with InfluxDB
@@ -55,7 +55,7 @@ We can now start a Chronograf container that references this database.
 ```console
 $ docker run -p 8888:8888 \
       --net=influxdb
-      chronograf --influxdb-url=http://influxdb:8086
+      %%IMAGE%% --influxdb-url=http://influxdb:8086
 ```
 
 Try combining this with Telegraf to get dashboards for your infrastructure within minutes!

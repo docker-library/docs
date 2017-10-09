@@ -43,7 +43,7 @@ ibmjava now has multi-arch support and so the exact same commands as below works
 To run a pre-built jar file with the JRE image, use the following commands:
 
 ```dockerfile
-FROM ibmjava:jre
+FROM %%IMAGE%%:jre
 RUN mkdir /opt/app
 COPY japp.jar /opt/app
 CMD ["java", "-jar", "/opt/app/japp.jar"]
@@ -52,11 +52,11 @@ CMD ["java", "-jar", "/opt/app/japp.jar"]
 To download the latest Java 9 Beta (Early Access) Image:
 
 ```console
-docker pull ibmjava:9-ea2-sdk
+docker pull %%IMAGE%%:9-ea2-sdk
 ```
 
 ```dockerfile
-FROM ibmjava:jre
+FROM %%IMAGE%%:jre
 RUN mkdir /opt/app
 COPY japp.jar /opt/app
 CMD ["java", "-jar", "/opt/app/japp.jar"]
@@ -72,7 +72,7 @@ docker run -it --rm japp
 If you want to place the jar file on the host file system instead of inside the container, you can mount the host path onto the container by using the following commands:
 
 ```dockerfile
-FROM ibmjava:jre
+FROM %%IMAGE%%:jre
 CMD ["java", "-jar", "/opt/app/japp.jar"]
 ```
 
@@ -88,7 +88,7 @@ IBM SDK, Java Technology Edition provides a feature called [Class data sharing](
 To enable class data sharing between JVMs that are running in different containers on the same host, a common location must be shared between containers. This requirement can be satisfied through the host or a data volume container. When enabled, class data sharing creates a named "class cache", which is a memory-mapped file, at the common location. This feature is enabled by passing the `-Xshareclasses` option to the JVM as shown in the following Dockerfile example:
 
 ```dockerfile
-FROM ibmjava:jre
+FROM %%IMAGE%%:jre
 RUN mkdir /opt/shareclasses
 RUN mkdir /opt/app
 COPY japp.jar /opt/app

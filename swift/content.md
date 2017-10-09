@@ -23,19 +23,19 @@ The goal of the Swift project is to create the best available language for uses 
 Swift requires [a little bit of extra security privilege](https://github.com/swiftdocker/docker-swift/issues/9#issuecomment-272527182) to run the REPL. The following command creates an ephemeral container, attaches your terminal to it and starts the Swift REPL. A great way to try out pre-release builds!
 
 ```bash
-docker run --cap-add sys_ptrace -it --rm swift swift
+docker run --cap-add sys_ptrace -it --rm %%IMAGE%% swift
 ```
 
 ##### Pull the Docker Image From Docker Hub:
 
 ```bash
-docker pull swift
+docker pull %%IMAGE%%
 ```
 
 ##### Create a Container from the Image and Attach It:
 
 ```bash
-docker run  -it --name swiftfun swift:latest /bin/bash
+docker run  -it --name swiftfun %%IMAGE%% /bin/bash
 ```
 
 ##### To Start and Attach Your Image Later:

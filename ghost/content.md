@@ -11,7 +11,7 @@ Ghost is a free and open source blogging platform written in JavaScript and dist
 This will start a Ghost instance listening on the default Ghost port of 2368.
 
 ```console
-$ docker run -d --name some-ghost ghost
+$ docker run -d --name some-ghost %%IMAGE%%
 ```
 
 ## Custom port
@@ -19,7 +19,7 @@ $ docker run -d --name some-ghost ghost
 If you'd like to be able to access the instance from the host without the container's IP, standard port mappings can be used:
 
 ```console
-$ docker run -d --name some-ghost -p 3001:2368 ghost
+$ docker run -d --name some-ghost -p 3001:2368 %%IMAGE%%
 ```
 
 Then, access it via `http://localhost:3001` or `http://host-ip:3001` in a browser.
@@ -31,13 +31,13 @@ Mount your existing content. In this example we also use the Alpine base image.
 ### Ghost 1.x.x
 
 ```console
-$ docker run -d --name some-ghost -p 3001:2368 -v /path/to/ghost/blog:/var/lib/ghost/content ghost:1-alpine
+$ docker run -d --name some-ghost -p 3001:2368 -v /path/to/ghost/blog:/var/lib/ghost/content %%IMAGE%%:1-alpine
 ```
 
 ### Ghost 0.11.xx
 
 ```console
-$ docker run -d --name some-ghost -p 3001:2368 -v /path/to/ghost/blog:/var/lib/ghost ghost:0.11-alpine
+$ docker run -d --name some-ghost -p 3001:2368 -v /path/to/ghost/blog:/var/lib/ghost %%IMAGE%%:0.11-alpine
 ```
 
 ### Breaking change
@@ -56,7 +56,7 @@ This Docker image for Ghost uses SQLite. There is nothing special to configure.
 Alternatively you can use a [data container](http://docs.docker.com/engine/tutorials/dockervolumes/) that has a volume that points to `/var/lib/ghost/content` (or /var/lib/ghost for 0.11.x) and then reference it:
 
 ```console
-$ docker run -d --name some-ghost --volumes-from some-ghost-data ghost
+$ docker run -d --name some-ghost --volumes-from some-ghost-data %%IMAGE%%
 ```
 
 ## What is the Node.js version?

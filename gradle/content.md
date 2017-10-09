@@ -12,6 +12,6 @@ Note that if you are mounting a volume and the uid running Docker is not `1000`,
 
 Run this from the directory of the Gradle project you want to build.
 
-`docker run --rm -v "$PWD":/home/gradle/project -w /home/gradle/project gradle:latest gradle <gradle-task>`
+`docker run --rm -v "$PWD":/home/gradle/project -w /home/gradle/project %%IMAGE%% gradle <gradle-task>`
 
 **Note: Java 9 support is experimental**

@@ -13,14 +13,14 @@ PyPy started out as a Python interpreter written in the Python language itself. 
 ## Create a `Dockerfile` in your Python app project
 
 ```dockerfile
-FROM pypy:3-onbuild
+FROM %%IMAGE%%:3-onbuild
 CMD [ "pypy3", "./your-daemon-or-script.py" ]
 ```
 
 or (if you need to use PyPy 2):
 
 ```dockerfile
-FROM pypy:2-onbuild
+FROM %%IMAGE%%:2-onbuild
 CMD [ "pypy", "./your-daemon-or-script.py" ]
 ```
 
@@ -38,11 +38,11 @@ $ docker run -it --rm --name my-running-app my-python-app
 For many simple, single file projects, you may find it inconvenient to write a complete `Dockerfile`. In such cases, you can run a Python script by using the Python Docker image directly:
 
 ```console
-$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp pypy:3 pypy3 your-daemon-or-script.py
+$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp %%IMAGE%%:3 pypy3 your-daemon-or-script.py
 ```
 
 or (again, if you need to use Python 2):
 
 ```console
-$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp pypy:2 pypy your-daemon-or-script.py
+$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp %%IMAGE%%:2 pypy your-daemon-or-script.py
 ```

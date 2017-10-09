@@ -48,7 +48,7 @@ docker run --rm \
     -e "KONG_DATABASE=postgres" \
     -e "KONG_PG_HOST=kong-database" \
     -e "KONG_CASSANDRA_CONTACT_POINTS=kong-database" \
-    kong:latest kong migrations up
+    %%IMAGE%% kong migrations up
 ```
 
 In the above example, both Cassandra and PostgreSQL are configured, but you should update the `KONG_DATABASE` environment variable with either `cassandra` or `postgres`.
@@ -69,7 +69,7 @@ $ docker run -d --name kong \
     -p 8443:8443 \
     -p 8001:8001 \
     -p 8444:8444 \
-    kong
+    %%IMAGE%%
 ```
 
 If everything went well, and if you created your container with the default ports, Kong should be listening on your host's `8000` ([Proxy][http://getkong.org/docs/latest/configuration/#proxy_port]), `8443` ([Proxy SSL](http://getkong.org/docs/latest/configuration/#proxy_listen_ssl)), `8001` ([Admin API](http://getkong.org/docs/latest/configuration/#admin_listen)) and `8444` ([Admin API SSL](http://getkong.org/docs/latest/configuration/#admin_listen_ssl)) ports.
@@ -90,7 +90,7 @@ $ docker run -d --name kong \
     -p 8001:8001 \
     -p 7946:7946 \
     -p 7946:7946/udp \
-    kong
+    %%IMAGE%%
 ```
 
 ## Reload Kong in a running container

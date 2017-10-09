@@ -15,7 +15,7 @@ Learn more on [Apache Solr homepage](http://lucene.apache.org/solr/) and in the 
 To run a single Solr server:
 
 ```console
-$ docker run --name my_solr -d -p 8983:8983 -t solr
+$ docker run --name my_solr -d -p 8983:8983 -t %%IMAGE%%
 ```
 
 Then with a web browser go to `http://localhost:8983/` to see the Admin Console (adjust the hostname for your docker host).
@@ -41,7 +41,7 @@ In the UI, find the "Core selector" popup menu and select the "gettingstarted" c
 For convenience, there is a single command that starts Solr, creates a collection called "demo", and loads sample data into it:
 
 ```console
-$ docker run --name solr_demo -d -P solr solr-demo
+$ docker run --name solr_demo -d -P %%IMAGE%% solr-demo
 ```
 
 ## Loading your own data
@@ -56,7 +56,7 @@ $ docker exec -it --user=solr my_solr bin/post -c gettingstarted mydata.xml
 or by using Docker host volumes:
 
 ```console
-$ docker run --name my_solr -d -p 8983:8983 -t -v $HOME/mydata:/opt/solr/mydata solr
+$ docker run --name my_solr -d -p 8983:8983 -t -v $HOME/mydata:/opt/solr/mydata %%IMAGE%%
 $ docker exec -it --user=solr my_solr bin/solr create_core -c gettingstarted
 $ docker exec -it --user=solr my_solr bin/post -c gettingstarted mydata/mydata.xml
 ```
@@ -70,7 +70,7 @@ In addition to the `docker exec` method explained above, you can create a core a
 If you run:
 
 ```console
-$ docker run -d -P solr solr-create -c mycore
+$ docker run -d -P %%IMAGE%% solr-create -c mycore
 ```
 
 the container will:
@@ -84,7 +84,7 @@ the container will:
 You can combine this with mounted volumes to pass in core configuration from your host:
 
 ```console
-$ docker run -d -P -v $PWD/myconfig:/myconfig solr solr-create -c mycore -d /myconfig
+$ docker run -d -P -v $PWD/myconfig:/myconfig %%IMAGE%% solr-create -c mycore -d /myconfig
 ```
 
 When using the `solr-create` command, Solr will log to the standard docker log (inspect with `docker logs`), and the collection creation will happen in the background and log to `/opt/docker-solr/init.log`.
@@ -94,8 +94,8 @@ This first way closely mirrors the manual core creation steps and uses Solr's ow
 The second way of creating a core at start time is using the `solr-precreate` command. This will create the core in the filesystem before running Solr. You should pass it the core name, and optionally the directory to copy the config from (this defaults to Solr's built-in "basic_configs"). For example:
 
 ```console
-$ docker run -d -P solr solr-precreate mycore
-$ docker run -d -P -v $PWD/myconfig:/myconfig solr solr-precreate mycore /myconfig
+$ docker run -d -P %%IMAGE%% solr-precreate mycore
+$ docker run -d -P -v $PWD/myconfig:/myconfig %%IMAGE%% solr-precreate mycore /myconfig
 ```
 
 This method stores the core in an intermediate subdirectory called "mycores". This allows you to use mounted volumes:
@@ -103,7 +103,7 @@ This method stores the core in an intermediate subdirectory called "mycores". Th
 ```console
 $ mkdir mycores
 $ sudo chown 8983:8983 mycores
-$ docker run -d -P -v $PWD/mycores:/opt/solr/server/solr/mycores solr solr-precreate mycore
+$ docker run -d -P -v $PWD/mycores:/opt/solr/server/solr/mycores %%IMAGE%% solr-precreate mycore
 ```
 
 This second way is quicker, easier to monitor because it logs to the docker log, and can fail immediately if something is wrong. But, because it makes assumptions about Solr's "basic_configs", future upstream changes could break that.
@@ -118,7 +118,7 @@ With Docker Compose you can create a Solr container with the index stored in a n
 version: '2'
 services:
   solr:
-    image: solr
+    image: %%IMAGE%%
     ports:
      - "8983:8983"
     volumes:
@@ -150,7 +150,7 @@ grep '^SOLR_HEAP=' /opt/solr/bin/solr.in.sh
 you can run:
 
 ```console
-$ docker run --name solr_heap1 -d -P -v $PWD/docs/set-heap.sh:/docker-entrypoint-initdb.d/set-heap.sh solr
+$ docker run --name solr_heap1 -d -P -v $PWD/docs/set-heap.sh:/docker-entrypoint-initdb.d/set-heap.sh %%IMAGE%%
 $ sleep 5
 $ docker logs solr_heap1 | head
 /opt/docker-solr/scripts/docker-entrypoint.sh: running /docker-entrypoint-initdb.d/set-heap.sh

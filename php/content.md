@@ -15,7 +15,7 @@ For PHP projects run through the command line interface (CLI), you can do the fo
 ### Create a `Dockerfile` in your PHP project
 
 ```dockerfile
-FROM php:7.0-cli
+FROM %%IMAGE%%:7.0-cli
 COPY . /usr/src/myapp
 WORKDIR /usr/src/myapp
 CMD [ "php", "./your-script.php" ]
@@ -33,7 +33,7 @@ $ docker run -it --rm --name my-running-app my-php-app
 For many simple, single file projects, you may find it inconvenient to write a complete `Dockerfile`. In such cases, you can run a PHP script by using the PHP Docker image directly:
 
 ```console
-$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp php:7.0-cli php your-script.php
+$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp %%IMAGE%%:7.0-cli php your-script.php
 ```
 
 ## With Apache
@@ -43,7 +43,7 @@ More commonly, you will probably want to run PHP in conjunction with Apache http
 ### Create a `Dockerfile` in your PHP project
 
 ```dockerfile
-FROM php:7.0-apache
+FROM %%IMAGE%%:7.0-apache
 COPY src/ /var/www/html/
 ```
 
@@ -57,7 +57,7 @@ $ docker run -d --name my-running-app my-php-app
 We recommend that you add a custom `php.ini` configuration. `COPY` it into `/usr/local/etc/php` by adding one more line to the Dockerfile above and running the same commands to build and run:
 
 ```dockerfile
-FROM php:7.0-apache
+FROM %%IMAGE%%:7.0-apache
 COPY config/php.ini /usr/local/etc/php/
 COPY src/ /var/www/html/
 ```
@@ -69,7 +69,7 @@ Where `src/` is the directory containing all your PHP code and `config/` contain
 If you don't want to include a `Dockerfile` in your project, it is sufficient to do the following:
 
 ```console
-$ docker run -d -p 80:80 --name my-apache-php-app -v "$PWD":/var/www/html php:7.0-apache
+$ docker run -d -p 80:80 --name my-apache-php-app -v "$PWD":/var/www/html %%IMAGE%%:7.0-apache
 ```
 
 ### How to install more PHP extensions
@@ -79,7 +79,7 @@ We provide the helper scripts `docker-php-ext-configure`, `docker-php-ext-instal
 In order to keep the images smaller, PHP's source is kept in a compressed tar file. To facilitate linking of PHP's source with any extension, we also provide the helper script `docker-php-source` to easily extract the tar or delete the extracted source. Note: if you do use `docker-php-source` to extract the source, be sure to delete it in the same layer of the docker image.
 
 ```Dockerfile
-FROM php:7.0-apache
+FROM %%IMAGE%%:7.0-apache
 RUN docker-php-source extract \
 	# do important things \
 	&& docker-php-source delete
@@ -90,7 +90,7 @@ RUN docker-php-source extract \
 For example, if you want to have a PHP-FPM image with `iconv`, `mcrypt` and `gd` extensions, you can inherit the base image that you like, and write your own `Dockerfile` like this:
 
 ```dockerfile
-FROM php:7.0-fpm
+FROM %%IMAGE%%:7.0-fpm
 RUN apt-get update && apt-get install -y \
 		libfreetype6-dev \
 		libjpeg62-turbo-dev \
@@ -108,14 +108,14 @@ Remember, you must install dependencies for your extensions manually. If an exte
 Some extensions are not provided with the PHP source, but are instead available through [PECL](https://pecl.php.net/). To install a PECL extension, use `pecl install` to download and compile it, then use `docker-php-ext-enable` to enable it:
 
 ```dockerfile
-FROM php:7.1-fpm
+FROM %%IMAGE%%:7.1-fpm
 RUN pecl install redis-3.1.0 \
 	&& pecl install xdebug-2.5.0 \
 	&& docker-php-ext-enable redis xdebug
 ```
 
 ```dockerfile
-FROM php:5.6-fpm
+FROM %%IMAGE%%:5.6-fpm
 RUN apt-get update && apt-get install -y libmemcached-dev zlib1g-dev \
 	&& pecl install memcached-2.2.0 \
 	&& docker-php-ext-enable memcached
@@ -126,7 +126,7 @@ RUN apt-get update && apt-get install -y libmemcached-dev zlib1g-dev \
 Some extensions are not provided via either Core or PECL; these can be installed too, although the process is less automated:
 
 ```dockerfile
-FROM php:5.6-apache
+FROM %%IMAGE%%:5.6-apache
 RUN curl -fsSL 'https://xcache.lighttpd.net/pub/Releases/3.2.0/xcache-3.2.0.tar.gz' -o xcache.tar.gz \
 	&& mkdir -p xcache \
 	&& tar -xf xcache.tar.gz -C xcache --strip-components=1 \
@@ -145,7 +145,7 @@ RUN curl -fsSL 'https://xcache.lighttpd.net/pub/Releases/3.2.0/xcache-3.2.0.tar.
 The `docker-php-ext-*` scripts *can* accept an arbitrary path, but it must be absolute (to disambiguate from built-in extension names), so the above example could also be written as the following:
 
 ```dockerfile
-FROM php:5.6-apache
+FROM %%IMAGE%%:5.6-apache
 RUN curl -fsSL 'https://xcache.lighttpd.net/pub/Releases/3.2.0/xcache-3.2.0.tar.gz' -o xcache.tar.gz \
 	&& mkdir -p /tmp/xcache \
 	&& tar -xf xcache.tar.gz -C /tmp/xcache --strip-components=1 \
@@ -160,7 +160,7 @@ RUN curl -fsSL 'https://xcache.lighttpd.net/pub/Releases/3.2.0/xcache-3.2.0.tar.
 Some applications may wish to change the default `DocumentRoot` in Apache (away from `/var/www/html`). The following demonstrates one way to do so using an environment variable (which can then be modified at container runtime as well):
 
 ```dockerfile
-FROM php:7.1-apache
+FROM %%IMAGE%%:7.1-apache
 
 ENV APACHE_DOCUMENT_ROOT /path/to/new/root
 

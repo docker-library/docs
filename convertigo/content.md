@@ -18,7 +18,7 @@ Convertigo Community edition brought to you by Convertigo SA (Paris & San Franci
 ## Quick start
 
 ```console
-$ docker run --name C8O -d -p 28080:28080 convertigo
+$ docker run --name C8O -d -p 28080:28080 %%IMAGE%%
 ```
 
 This will start a container running the minimum Convertigo MBaaS server. Convertigo MBaaS uses images' **/workspace** directory to store configuration file and deployed projects as an Docker volume.
@@ -38,7 +38,7 @@ $ docker run -d --name fullsync couchdb:1.6.1
 Then launch Convertigo and link it to the running 'fullsync' container. Convertigo MBaaS sever will automatically use it as its fullsync repository.
 
 ```console
-$ docker run -d --name C8O-MBAAS --link fullsync:couchdb -p 28080:28080 convertigo
+$ docker run -d --name C8O-MBAAS --link fullsync:couchdb -p 28080:28080 %%IMAGE%%
 ```
 
 ## Link Convertigo to a Billing & Analytics database
@@ -61,7 +61,7 @@ convertigo
 Projects are deployed in the Convertigo workspace, a simple file system directory. You can map the docker container **/workspace** to your physical system by using :
 
 ```console
-$ docker run --name C8O-MBAAS -v $(pwd):/workspace -d -p 28080:28080 convertigo
+$ docker run --name C8O-MBAAS -v $(pwd):/workspace -d -p 28080:28080 %%IMAGE%%
 ```
 
 You can share the same workspace by all Convertigo containers. This this case, when you deploy a project on a Convertigo container, it will be seen by others. This is the best way to build multi-instance load balanced Convertigo server farms.
@@ -83,7 +83,7 @@ These accounts can be configured through the *administration console* and saved 
 You can change the default administration account :
 
 ```console
-$ docker run -d --name C8O-MBAAS -e CONVERTIGO_ADMIN_USER=administrator -e CONVERTIGO_ADMIN_PASSWORD=s3cret -p 28080:28080 convertigo
+$ docker run -d --name C8O-MBAAS -e CONVERTIGO_ADMIN_USER=administrator -e CONVERTIGO_ADMIN_PASSWORD=s3cret -p 28080:28080 %%IMAGE%%
 ```
 
 ### `CONVERTIGO_TESTPLATFORM_USER` and `CONVERTIGO_TESTPLATFORM_PASSWORD` variables
@@ -91,7 +91,7 @@ $ docker run -d --name C8O-MBAAS -e CONVERTIGO_ADMIN_USER=administrator -e CONVE
 You can lock the **testplatform** by setting the account :
 
 ```console
-$ docker run -d --name C8O-MBAAS -e CONVERTIGO_TESTPLATFORM_USER=tp_user -e CONVERTIGO_TESTPLATFORM_PASSWORD=s3cret -p 28080:28080 convertigo
+$ docker run -d --name C8O-MBAAS -e CONVERTIGO_TESTPLATFORM_USER=tp_user -e CONVERTIGO_TESTPLATFORM_PASSWORD=s3cret -p 28080:28080 %%IMAGE%%
 ```
 
 ## `JAVA_OPTS` Environment variable
@@ -101,7 +101,7 @@ Convertigo is based on a *Java* process with some defaults *JVM* options. You ca
 Add any *Java JVM* options such as -Xmx or -D[something]
 
 ```console
-$ docker run -d --name C8O-MBAAS -e JAVA_OPTS="-Xmx4096m -DjvmRoute=server1" -p 28080:28080 convertigo
+$ docker run -d --name C8O-MBAAS -e JAVA_OPTS="-Xmx4096m -DjvmRoute=server1" -p 28080:28080 %%IMAGE%%
 ```
 
 ## Pre configurated Docker compose stack
