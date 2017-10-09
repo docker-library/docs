@@ -6,7 +6,7 @@
 
 # How to use this image
 
-Note that if you are mounting a volume and the uid running Docker is not _1000_, you should run as user _root_ (`-u root`).
+Note that if you are mounting a volume and the uid running Docker is not `1000`, you should run as user `root` (`-u root`).
 
 ## Building a Gradle project
 
