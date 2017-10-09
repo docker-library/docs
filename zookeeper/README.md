@@ -77,16 +77,18 @@ $ docker run --name some-app --link some-zookeeper:zookeeper -d application-that
 $ docker run -it --rm --link some-zookeeper:zookeeper zookeeper zkCli.sh -server zookeeper
 ```
 
-## ... via [`docker-compose`](https://github.com/docker/compose)
+## ... via [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/) or [`docker-compose`](https://github.com/docker/compose)
 
-Example `docker-compose.yml` for `zookeeper`:
+Example `stack.yml` for `zookeeper`:
 
 ```yaml
-version: '2'
+version: '3.1'
+
 services:
     zoo1:
         image: zookeeper
         restart: always
+        hostname: zoo1
         ports:
             - 2181:2181
         environment:
@@ -96,6 +98,7 @@ services:
     zoo2:
         image: zookeeper
         restart: always
+        hostname: zoo2
         ports:
             - 2182:2181
         environment:
@@ -105,6 +108,7 @@ services:
     zoo3:
         image: zookeeper
         restart: always
+        hostname: zoo3
         ports:
             - 2183:2181
         environment:
@@ -112,7 +116,9 @@ services:
             ZOO_SERVERS: server.1=zoo1:2888:3888 server.2=zoo2:2888:3888 server.3=zoo3:2888:3888
 ```
 
-This will start Zookeeper in [replicated mode](http://zookeeper.apache.org/doc/current/zookeeperStarted.html#sc_RunningReplicatedZooKeeper). Run `docker-compose up` and wait for it to initialize completely. Ports `2181-2183` will be exposed.
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/7ae8e1da42b8dde839a624712aee2c188412e846/zookeeper/stack.yml)
+
+This will start Zookeeper in [replicated mode](http://zookeeper.apache.org/doc/current/zookeeperStarted.html#sc_RunningReplicatedZooKeeper). Run `docker stack deploy -c stack.yml zookeeper` (or `docker-compose -f stack.yml up`) and wait for it to initialize completely. Ports `2181-2183` will be exposed.
 
 > Please be aware that setting up multiple servers on a single machine will not create any redundancy. If something were to happen which caused the machine to die, all of the zookeeper servers would be offline. Full redundancy requires that each server have its own machine. It must be a completely separate physical server. Multiple virtual machines on the same physical host are still vulnerable to the complete failure of that host.
 
