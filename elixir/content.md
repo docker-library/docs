@@ -34,5 +34,5 @@ iex(snode@elixir)2> :c.uptime
 ## Run a single Elixir exs script
 
 ```console
-$ docker run -it --rm --name elixir-inst1 -v "$PWD":/usr/src/myapp -w /usr/src/myapp %%IMAGE%% elixir your-escript.exs
+$ docker run -it --rm --name %%REPO%%-inst1 -v "$PWD":/usr/src/myapp -w /usr/src/myapp %%IMAGE%% elixir your-escript.exs
 ```

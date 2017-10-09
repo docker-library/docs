@@ -332,10 +332,11 @@ You're already using Nextcloud and want to switch to docker? Great! Here are som
 		```php
 		"apps_paths" => array (
 		    0 => array (
-		    "path" => OC::$SERVERROOT."/apps",
-		    "url" => "/apps",
-		    "writable" => true,
-		)
+		        "path" => OC::$SERVERROOT."/apps",
+		        "url" => "/apps",
+		        "writable" => true,
+		    ),
+		),
 		```
 
 	3.	Make sure your data directory is set to /var/www/html/data
