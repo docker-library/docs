@@ -112,14 +112,20 @@ services:
     ports:
       - 8080:80
     environment:
-      WORDPRESS_DB_PASSWORD: example
+      WORDPRESS_DB_PASSWORD=example
+    networks:
+      - web
 
   mysql:
     image: mysql:5.7
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: example
-```
+      MYSQL_ROOT_PASSWORD=example
+    networks:
+      - web
+networks:
+   web:
+     driver: bridge
 
 [![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/e24f39cddf21560cf0a24f149059ff23640b0f16/wordpress/stack.yml)
 
