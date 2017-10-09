@@ -97,18 +97,24 @@ To make your data persistent to upgrading and get access for backups is using na
 
 Nextcloud:
 
--	`/var/www/html/` folder where all nextcloud data lives`console
-	$ docker run -d nextcloud \
-	-v nextcloud:/var/www/html
-	`
+-	`/var/www/html/` folder where all Nextcloud data lives
+
+	```console
+	$ docker run -d \
+	-v nextcloud:/var/www/html \
+	nextcloud
+	```
 
 Database:
 
 -	`/var/lib/mysql` MySQL / MariaDB Data
--	`/var/lib/postresql/data` PostegreSQL Data`console
-	$ docker run -d mariadb \
-	-v db:/var/lib/mysql
-	`
+-	`/var/lib/postresql/data` PostegreSQL Data
+
+	```console
+	$ docker run -d \
+	-v db:/var/lib/mysql \
+	mariadb
+	```
 
 If you want to get fine grained access to your individual files, you can mount additional volumes for data, config, your theme and custom apps. The `data`, `config` are stored in respective subfolders inside `/var/www/html/`. The apps are split into core `apps` (which are shipped with Nextcloud and you don't need to take care of) and a `custom_apps` folder. If you use a custom theme it would go into the `themes` subfolder.
 
@@ -123,12 +129,13 @@ Overview of the folders that can be mounted as volumes:
 If you want to use named volumes for all of these it would look like this
 
 ```console
-$ docker run -d nextcloud \
--v nextcloud:/var/www/html \
--v apps:/var/www/html/custom_apps \
--v config:/var/www/html/config \
--v data:/var/www/html/data \
--v theme:/var/www/html/themes/<YOUR_CUSTOM_THEME>
+$ docker run -d \
+	-v nextcloud:/var/www/html \
+	-v apps:/var/www/html/custom_apps \
+	-v config:/var/www/html/config \
+	-v data:/var/www/html/data \
+	-v theme:/var/www/html/themes/<YOUR_CUSTOM_THEME> \
+	nextcloud
 ```
 
 ## Using the Nextcloud command-line interface
@@ -208,7 +215,7 @@ services:
       - MYSQL_DATABASE=nextcloud
       - MYSQL_USER=nextcloud
 
-  app:  
+  app:
     image: nextcloud
     ports:
       - 8080:80
@@ -217,7 +224,6 @@ services:
     volumes:
       - nextcloud:/var/www/html
     restart: always
-
 ```
 
 Then run `docker-compose up -d`, now you can access Nextcloud at http://localhost:8080/ from your host system.
@@ -338,7 +344,7 @@ If you use your own Dockerfile you need to configure your docker-compose file ac
 **Updating** your own derived image is also very simple. When a new version of the Nextcloud image is available run:
 
 ```console
-docker build -t your-name --pull . 
+docker build -t your-name --pull .
 docker run -d your-name
 ```
 
@@ -356,26 +362,39 @@ The `--pull` option tells docker to look for new versions of the base image. The
 You're already using Nextcloud and want to switch to docker? Great! Here are some things to look out for:
 
 1.	Define your whole Nextcloud infrastructure in a `docker-compose` file and run it with `docker-compose up -d` to get the base installation, volumes and database. Work from there.
-2.	Restore your database from a mysqldump (nextcloud\_db\_1 is the name of your db container)`console
+2.	Restore your database from a mysqldump (nextcloud\_db\_1 is the name of your db container)
+
+	```console
 	docker cp ./database.dmp nextcloud_db_1:/dmp
 	docker-compose exec db sh -c "mysql -u USER -pPASSWORD nextcloud < /dmp"
 	docker-compose exec db rm /dmp
-	`
+	```
+
 3.	Edit your config.php
 
-	1.	Set database connection`php
+	1.	Set database connection
+
+		```php
 		'dbhost' => 'db:3306',
-		`
-	2.	Make sure you have no configuration for the `apps_paths`. Delete lines like these\`\``diff
-	3.	"apps_paths" => array (
-	4.	0 => array (
-	5.	"path" => OC::$SERVERROOT."/apps",
-	6.	"url" => "/apps",
-	7.	"writable" => true,
-	8.	),\`\`\`
-	9.	Make sure your data directory is set to /var/www/html/data`php
+		```
+
+	2.	Make sure you have no configuration for the `apps_paths`. Delete lines like these
+
+		```php
+		"apps_paths" => array (
+		    0 => array (
+		        "path" => OC::$SERVERROOT."/apps",
+		        "url" => "/apps",
+		        "writable" => true,
+		    ),
+		),
+		```
+
+	3.	Make sure your data directory is set to /var/www/html/data
+
+		```php
 		'datadirectory' => '/var/www/html/data',
-		`
+		```
 
 4.	Copy your data (nextcloud_app_1 is the name of your Nextcloud container):
 

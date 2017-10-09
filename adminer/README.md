@@ -69,7 +69,7 @@ Then you can hit `http://localhost:8080` or `http://host-ip:8080` in your browse
 
 ### FastCGI
 
-If you are already running a FastCGI capable web server you might prefer running adminer via FastCGI:
+If you are already running a FastCGI capable web server you might prefer running Adminer via FastCGI:
 
 ```console
 $ docker run --link some_database:db -p 9000:9000 adminer:fastcgi
@@ -109,7 +109,7 @@ Run `docker stack deploy -c stack.yml adminer` (or `docker-compose -f stack.yml 
 
 ### Loading plugins
 
-This image bundles all official adminer plugins. You can find the list of plugins on GitHub: https://github.com/vrana/adminer/tree/master/plugins.
+This image bundles all official Adminer plugins. You can find the list of plugins on GitHub: https://github.com/vrana/adminer/tree/master/plugins.
 
 To load plugins you can pass a list of filenames in `ADMINER_PLUGINS`:
 
