@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.4.3-stretch`, `3.4-stretch`, `3.4.3`, `3.4`, `latest` (*3.4/stretch/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/55b42a6d36178f4ffe3ff6240c7cf9d3d4bacb92/3.4/stretch/Dockerfile)
--	[`3.4.3-jessie`, `3.4-jessie` (*3.4/jessie/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/55b42a6d36178f4ffe3ff6240c7cf9d3d4bacb92/3.4/jessie/Dockerfile)
--	[`3.4.3-onbuild`, `3.4-onbuild` (*3.4/onbuild/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/55b42a6d36178f4ffe3ff6240c7cf9d3d4bacb92/3.4/onbuild/Dockerfile)
--	[`3.4.3-windowsservercore`, `3.4-windowsservercore` (*3.4/windowsservercore/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/55b42a6d36178f4ffe3ff6240c7cf9d3d4bacb92/3.4/windowsservercore/Dockerfile)
+-	[`3.4.4-stretch`, `3.4-stretch`, `3.4.4`, `3.4`, `latest` (*3.4/stretch/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/4d1efc06f99732c3530a9550adaef330e4896eda/3.4/stretch/Dockerfile)
+-	[`3.4.4-jessie`, `3.4-jessie` (*3.4/jessie/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/4d1efc06f99732c3530a9550adaef330e4896eda/3.4/jessie/Dockerfile)
+-	[`3.4.4-onbuild`, `3.4-onbuild` (*3.4/onbuild/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/4d1efc06f99732c3530a9550adaef330e4896eda/3.4/onbuild/Dockerfile)
+-	[`3.4.4-windowsservercore`, `3.4-windowsservercore` (*3.4/windowsservercore/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/4d1efc06f99732c3530a9550adaef330e4896eda/3.4/windowsservercore/Dockerfile)
 -	[`3.3.0-rc.1-stretch`, `3.3.0-stretch`, `3.3-stretch`, `3.3.0-rc.1`, `3.3.0`, `3.3` (*3.3/stretch/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/718e80d01e38b9e40b4f221c2ed54d7d134d80f7/3.3/stretch/Dockerfile)
 -	[`3.3.0-rc.1-jessie`, `3.3.0-jessie`, `3.3-jessie` (*3.3/jessie/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/718e80d01e38b9e40b4f221c2ed54d7d134d80f7/3.3/jessie/Dockerfile)
 -	[`3.3.0-rc.1-onbuild`, `3.3.0-onbuild`, `3.3-onbuild` (*3.3/onbuild/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/e0f9cb5a3cc190acd42565113e3380b5853f5746/3.3/onbuild/Dockerfile)
