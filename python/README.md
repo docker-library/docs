@@ -23,7 +23,7 @@ WARNING:
 	-	[`3.7.0a1-windowsservercore` (*3.7-rc/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/python/blob/9524a26b67ebc8ea48ceaaf6750f5f6caf89478e/3.7-rc/windows/windowsservercore/Dockerfile)
 -	`3.6.3`, `3.6`, `3`, `latest`:
 	-	[`3.6.3-jessie` (*3.6/jessie/Dockerfile*)](https://github.com/docker-library/python/blob/cf179e4a7b442b29d85f521c2b172b89ef04beef/3.6/jessie/Dockerfile)
-	-	[`3.6.3-windowsservercore` (*3.6/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/python/blob/9524a26b67ebc8ea48ceaaf6750f5f6caf89478e/3.6/windows/windowsservercore/Dockerfile)
+	-	[`3.6.3-windowsservercore` (*3.6/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/python/blob/e01eb54f3c70555cf661dd756d529c85fd2cc04f/3.6/windows/windowsservercore/Dockerfile)
 -	`3.5.4`, `3.5`:
 	-	[`3.5.4-jessie` (*3.5/jessie/Dockerfile*)](https://github.com/docker-library/python/blob/6ebbaa8a56cdf4021c78e87b3872be3861ac072a/3.5/jessie/Dockerfile)
 	-	[`3.5.4-windowsservercore` (*3.5/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/python/blob/9524a26b67ebc8ea48ceaaf6750f5f6caf89478e/3.5/windows/windowsservercore/Dockerfile)
@@ -45,7 +45,7 @@ WARNING:
 -	[`3.6.2-onbuild`, `3.6-onbuild`, `3-onbuild`, `onbuild` (*3.6/jessie/onbuild/Dockerfile*)](https://github.com/docker-library/python/blob/f12c2df135aef8c3f645d90aae582b2c65dbc3b5/3.6/jessie/onbuild/Dockerfile)
 -	[`3.6.3-alpine3.6`, `3.6-alpine3.6`, `3-alpine3.6`, `alpine3.6` (*3.6/alpine3.6/Dockerfile*)](https://github.com/docker-library/python/blob/cf179e4a7b442b29d85f521c2b172b89ef04beef/3.6/alpine3.6/Dockerfile)
 -	[`3.6.3-alpine3.4`, `3.6-alpine3.4`, `3-alpine3.4`, `alpine3.4`, `3.6.3-alpine`, `3.6-alpine`, `3-alpine`, `alpine` (*3.6/alpine3.4/Dockerfile*)](https://github.com/docker-library/python/blob/cf179e4a7b442b29d85f521c2b172b89ef04beef/3.6/alpine3.4/Dockerfile)
--	[`3.6.3-windowsservercore`, `3.6-windowsservercore`, `3-windowsservercore`, `windowsservercore` (*3.6/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/python/blob/9524a26b67ebc8ea48ceaaf6750f5f6caf89478e/3.6/windows/windowsservercore/Dockerfile)
+-	[`3.6.3-windowsservercore`, `3.6-windowsservercore`, `3-windowsservercore`, `windowsservercore` (*3.6/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/python/blob/e01eb54f3c70555cf661dd756d529c85fd2cc04f/3.6/windows/windowsservercore/Dockerfile)
 -	[`3.5.4-jessie`, `3.5-jessie` (*3.5/jessie/Dockerfile*)](https://github.com/docker-library/python/blob/6ebbaa8a56cdf4021c78e87b3872be3861ac072a/3.5/jessie/Dockerfile)
 -	[`3.5.4-slim`, `3.5-slim` (*3.5/jessie/slim/Dockerfile*)](https://github.com/docker-library/python/blob/45685613e1189227b91affba86dfcb2c764d7fa4/3.5/jessie/slim/Dockerfile)
 -	[`3.5.4-onbuild`, `3.5-onbuild` (*3.5/jessie/onbuild/Dockerfile*)](https://github.com/docker-library/python/blob/f12c2df135aef8c3f645d90aae582b2c65dbc3b5/3.5/jessie/onbuild/Dockerfile)
