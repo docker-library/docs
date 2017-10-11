@@ -102,7 +102,7 @@ unix> docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 %%IMAGE%% arangod --help
 
 ## Persistent Data
 
-ArangoDB supports two different storage engines as of ArangoDB 3.2. You can choose them while instanciating the container with the environment variable `ARANGO_STORAGE_ENGINE`. With `mmfiles` you choose the classic storage engine, `rocksdb` will choose the newly introduced storage engine based on [rocksdb](http://rocksdb.org/). The default choice is `mmfiles`.
+ArangoDB supports two different storage engines as of ArangoDB 3.2. You can choose them while instantiating the container with the environment variable `ARANGO_STORAGE_ENGINE`. With `mmfiles` you choose the classic storage engine, `rocksdb` will choose the newly introduced storage engine based on [rocksdb](http://rocksdb.org/). The default choice is `mmfiles`.
 
 ArangoDB use the volume `/var/lib/arangodb3` as database directory to store the collection data and the volume `/var/lib/arangodb3-apps` as apps directory to store any extensions. These directories are marked as docker volumes.
 
@@ -149,10 +149,8 @@ unix> docker run -d --name arangodb-persist -v /var/lib/arangodb3 busybox true
 
 If you are using the image as a base image please make sure to wrap any CMD in the [exec](https://docs.docker.com/engine/reference/builder/#cmd) form. Otherwise the default entrypoint will not do its bootstrapping work.
 
-When deriving the image, you can control the instanciation via putting files into `/docker-entrypoint-initdb.d/`.
+When deriving the image, you can control the instantiation via putting files into `/docker-entrypoint-initdb.d/`.
 
-- *.sh - files ending with .sh will be run as a bash shellscript.
-- *.js - files will be executed with arangosh. You can specify additional arangosh arguments via the `ARANGOSH_ARGS` environment variable.
-- dumps/ - in this directory you can place subdirectories containing database dumps generated using 
-  [arangodump](https://docs.arangodb.com/latest/Manual/Administration/Arangodump.html).
-  They will be restored using [arangorestore](https://docs.arangodb.com/latest/Manual/Administration/Arangorestore.html).
+-	`*.sh` - files ending with .sh will be run as a bash shellscript.
+-	`*.js` - files will be executed with arangosh. You can specify additional arangosh arguments via the `ARANGOSH_ARGS` environment variable.
+-	`dumps/` - in this directory you can place subdirectories containing database dumps generated using [arangodump](https://docs.arangodb.com/latest/Manual/Administration/Arangodump.html). They will be restored using [arangorestore](https://docs.arangodb.com/latest/Manual/Administration/Arangorestore.html).
