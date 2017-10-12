@@ -16,16 +16,16 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`17.10.0-ce-rc1`, `17.10-rc`, `rc` (*17.10-rc/Dockerfile*)](https://github.com/docker-library/docker/blob/8ada62f762b30d09fd54664710c0ef3b64038f07/17.10-rc/Dockerfile)
--	[`17.10.0-ce-rc1-dind`, `17.10-rc-dind`, `rc-dind` (*17.10-rc/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/8ada62f762b30d09fd54664710c0ef3b64038f07/17.10-rc/dind/Dockerfile)
--	[`17.10.0-ce-rc1-git`, `17.10-rc-git`, `rc-git` (*17.10-rc/git/Dockerfile*)](https://github.com/docker-library/docker/blob/8ada62f762b30d09fd54664710c0ef3b64038f07/17.10-rc/git/Dockerfile)
--	[`17.09.0-ce`, `17.09.0`, `17.09`, `17`, `stable`, `test`, `edge`, `latest` (*17.09/Dockerfile*)](https://github.com/docker-library/docker/blob/a6b52c73daa8283cd861f41f55e53426008708ac/17.09/Dockerfile)
+-	[`17.10.0-ce-rc2`, `17.10-rc`, `rc` (*17.10-rc/Dockerfile*)](https://github.com/docker-library/docker/blob/5a539ed6ab5d91c5d8ccf0ccbc583500740199a2/17.10-rc/Dockerfile)
+-	[`17.10.0-ce-rc2-dind`, `17.10-rc-dind`, `rc-dind` (*17.10-rc/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/8ada62f762b30d09fd54664710c0ef3b64038f07/17.10-rc/dind/Dockerfile)
+-	[`17.10.0-ce-rc2-git`, `17.10-rc-git`, `rc-git` (*17.10-rc/git/Dockerfile*)](https://github.com/docker-library/docker/blob/8ada62f762b30d09fd54664710c0ef3b64038f07/17.10-rc/git/Dockerfile)
+-	[`17.09.0-ce`, `17.09.0`, `17.09`, `17`, `stable`, `test`, `edge`, `latest` (*17.09/Dockerfile*)](https://github.com/docker-library/docker/blob/454a0ff9e99d4fde7112b25d64d25f940ab28a99/17.09/Dockerfile)
 -	[`17.09.0-ce-dind`, `17.09.0-dind`, `17.09-dind`, `17-dind`, `stable-dind`, `test-dind`, `edge-dind`, `dind` (*17.09/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/a6b52c73daa8283cd861f41f55e53426008708ac/17.09/dind/Dockerfile)
 -	[`17.09.0-ce-git`, `17.09.0-git`, `17.09-git`, `17-git`, `stable-git`, `test-git`, `edge-git`, `git` (*17.09/git/Dockerfile*)](https://github.com/docker-library/docker/blob/a6b52c73daa8283cd861f41f55e53426008708ac/17.09/git/Dockerfile)
--	[`17.07.0-ce`, `17.07.0`, `17.07` (*17.07/Dockerfile*)](https://github.com/docker-library/docker/blob/a8f8fa1b57349cc22c80e7d6cbbdb512ffee2bd2/17.07/Dockerfile)
+-	[`17.07.0-ce`, `17.07.0`, `17.07` (*17.07/Dockerfile*)](https://github.com/docker-library/docker/blob/454a0ff9e99d4fde7112b25d64d25f940ab28a99/17.07/Dockerfile)
 -	[`17.07.0-ce-dind`, `17.07.0-dind`, `17.07-dind` (*17.07/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/a8f8fa1b57349cc22c80e7d6cbbdb512ffee2bd2/17.07/dind/Dockerfile)
 -	[`17.07.0-ce-git`, `17.07.0-git`, `17.07-git` (*17.07/git/Dockerfile*)](https://github.com/docker-library/docker/blob/a8f8fa1b57349cc22c80e7d6cbbdb512ffee2bd2/17.07/git/Dockerfile)
--	[`17.06.2-ce`, `17.06.2`, `17.06` (*17.06/Dockerfile*)](https://github.com/docker-library/docker/blob/168a6d227d021c6d38c3986b7c668702ec172fa7/17.06/Dockerfile)
+-	[`17.06.2-ce`, `17.06.2`, `17.06` (*17.06/Dockerfile*)](https://github.com/docker-library/docker/blob/454a0ff9e99d4fde7112b25d64d25f940ab28a99/17.06/Dockerfile)
 -	[`17.06.2-ce-dind`, `17.06.2-dind`, `17.06-dind` (*17.06/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/168a6d227d021c6d38c3986b7c668702ec172fa7/17.06/dind/Dockerfile)
 -	[`17.06.2-ce-git`, `17.06.2-git`, `17.06-git` (*17.06/git/Dockerfile*)](https://github.com/docker-library/docker/blob/168a6d227d021c6d38c3986b7c668702ec172fa7/17.06/git/Dockerfile)
 
