@@ -18,8 +18,8 @@ WARNING:
 
 -	[`1.13.0`, `1.13`, `1`, `latest` (*1/debian/Dockerfile*)](https://github.com/docker-library/ghost/blob/6ebc6712a201c82c039e81c55ca58b67aa1f2033/1/debian/Dockerfile)
 -	[`1.13.0-alpine`, `1.13-alpine`, `1-alpine`, `alpine` (*1/alpine/Dockerfile*)](https://github.com/docker-library/ghost/blob/6ebc6712a201c82c039e81c55ca58b67aa1f2033/1/alpine/Dockerfile)
--	[`0.11.11`, `0.11`, `0` (*0/debian/Dockerfile*)](https://github.com/docker-library/ghost/blob/0a3f9385d624bc3511b4f702671dcc27ae96de66/0/debian/Dockerfile)
--	[`0.11.11-alpine`, `0.11-alpine`, `0-alpine` (*0/alpine/Dockerfile*)](https://github.com/docker-library/ghost/blob/fabb247507dc8b2d20c5795d688c4167b98caf4a/0/alpine/Dockerfile)
+-	[`0.11.12`, `0.11`, `0` (*0/debian/Dockerfile*)](https://github.com/docker-library/ghost/blob/44dc27d05debece6a738ccbddd85d2ed4adc2eac/0/debian/Dockerfile)
+-	[`0.11.12-alpine`, `0.11-alpine`, `0-alpine` (*0/alpine/Dockerfile*)](https://github.com/docker-library/ghost/blob/44dc27d05debece6a738ccbddd85d2ed4adc2eac/0/alpine/Dockerfile)
 
 # Quick reference
 
