@@ -20,14 +20,17 @@ WARNING:
 -	[`3.4.4-jessie`, `3.4-jessie` (*3.4/jessie/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/4d1efc06f99732c3530a9550adaef330e4896eda/3.4/jessie/Dockerfile)
 -	[`3.4.4-onbuild`, `3.4-onbuild` (*3.4/onbuild/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/4d1efc06f99732c3530a9550adaef330e4896eda/3.4/onbuild/Dockerfile)
 -	[`3.4.4-windowsservercore`, `3.4-windowsservercore` (*3.4/windowsservercore/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/4d1efc06f99732c3530a9550adaef330e4896eda/3.4/windowsservercore/Dockerfile)
+-	[`3.4.4-alpine3.6`, `3.4-alpine3.6`, `3.4.4-alpine`, `3.4-alpine` (*3.4/alpine3.6/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/417db03257ac556fffd130003c80be7dbe89ef1c/3.4/alpine3.6/Dockerfile)
 -	[`3.3.0-rc.1-stretch`, `3.3.0-stretch`, `3.3-stretch`, `3.3.0-rc.1`, `3.3.0`, `3.3` (*3.3/stretch/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/718e80d01e38b9e40b4f221c2ed54d7d134d80f7/3.3/stretch/Dockerfile)
 -	[`3.3.0-rc.1-jessie`, `3.3.0-jessie`, `3.3-jessie` (*3.3/jessie/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/718e80d01e38b9e40b4f221c2ed54d7d134d80f7/3.3/jessie/Dockerfile)
 -	[`3.3.0-rc.1-onbuild`, `3.3.0-onbuild`, `3.3-onbuild` (*3.3/onbuild/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/e0f9cb5a3cc190acd42565113e3380b5853f5746/3.3/onbuild/Dockerfile)
 -	[`3.3.0-rc.1-windowsservercore`, `3.3.0-windowsservercore`, `3.3-windowsservercore` (*3.3/windowsservercore/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/ba6ec51ec4db8248066b9a294b22bcbfd83a20f4/3.3/windowsservercore/Dockerfile)
+-	[`3.3.0-rc.1-alpine3.6`, `3.3.0-rc.1-alpine`, `3.3.0-alpine3.6`, `3.3-alpine3.6`, `3.3.0-alpine`, `3.3-alpine` (*3.3/alpine3.6/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/417db03257ac556fffd130003c80be7dbe89ef1c/3.3/alpine3.6/Dockerfile)
 -	[`3.2.1-stretch`, `3.2-stretch`, `3.2.1`, `3.2` (*3.2/stretch/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/718e80d01e38b9e40b4f221c2ed54d7d134d80f7/3.2/stretch/Dockerfile)
 -	[`3.2.1-jessie`, `3.2-jessie` (*3.2/jessie/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/718e80d01e38b9e40b4f221c2ed54d7d134d80f7/3.2/jessie/Dockerfile)
 -	[`3.2.1-onbuild`, `3.2-onbuild` (*3.2/onbuild/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/e0f9cb5a3cc190acd42565113e3380b5853f5746/3.2/onbuild/Dockerfile)
 -	[`3.2.1-windowsservercore`, `3.2-windowsservercore` (*3.2/windowsservercore/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/ba6ec51ec4db8248066b9a294b22bcbfd83a20f4/3.2/windowsservercore/Dockerfile)
+-	[`3.2.1-alpine3.6`, `3.2-alpine3.6`, `3.2.1-alpine`, `3.2-alpine` (*3.2/alpine3.6/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/417db03257ac556fffd130003c80be7dbe89ef1c/3.2/alpine3.6/Dockerfile)
 -	[`3.1.3-stretch`, `3.1-stretch`, `3.1.3`, `3.1` (*3.1/stretch/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/718e80d01e38b9e40b4f221c2ed54d7d134d80f7/3.1/stretch/Dockerfile)
 -	[`3.1.3-jessie`, `3.1-jessie` (*3.1/jessie/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/718e80d01e38b9e40b4f221c2ed54d7d134d80f7/3.1/jessie/Dockerfile)
 -	[`3.1.3-onbuild`, `3.1-onbuild` (*3.1/onbuild/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/e0f9cb5a3cc190acd42565113e3380b5853f5746/3.1/onbuild/Dockerfile)
@@ -149,6 +152,14 @@ For information about how to get Docker running on Windows, please see the relev
 
 -	[Windows Server Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_server)
 -	[Windows 10 Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)
+
+## `haxe:alpine`
+
+This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+
+This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+
+To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 # License
 
