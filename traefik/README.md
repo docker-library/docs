@@ -16,10 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`v1.4.0-rc5`, `1.4.0-rc5`, `v1.4`, `1.4`, `roquefort` (*scratch/amd64/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/f77e470fe4e3e4135aeaeeac49ba5c21846fb04a/scratch/amd64/Dockerfile)
--	[`v1.4.0-rc5-alpine`, `1.4.0-rc5-alpine`, `v1.4-alpine`, `1.4-alpine`, `roquefort-alpine` (*alpine/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/f77e470fe4e3e4135aeaeeac49ba5c21846fb04a/alpine/Dockerfile)
--	[`v1.3.8`, `1.3.8`, `v1.3`, `1.3`, `raclette`, `latest` (*scratch/amd64/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/cfa3fa48bed342b86b143006e61d9bdf7db07901/scratch/amd64/Dockerfile)
--	[`v1.3.8-alpine`, `1.3.8-alpine`, `v1.3-alpine`, `1.3-alpine`, `raclette-alpine`, `alpine` (*alpine/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/cfa3fa48bed342b86b143006e61d9bdf7db07901/alpine/Dockerfile)
+-	[`v1.4.0`, `1.4.0`, `v1.4`, `1.4`, `roquefort`, `latest` (*scratch/amd64/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/f24cd6a1a31933c76ab397868b5da84d43f5d2ff/scratch/amd64/Dockerfile)
+-	[`v1.4.0-alpine`, `1.4.0-alpine`, `v1.4-alpine`, `1.4-alpine`, `roquefort-alpine`, `alpine` (*alpine/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/f24cd6a1a31933c76ab397868b5da84d43f5d2ff/alpine/Dockerfile)
 
 # Quick reference
 
