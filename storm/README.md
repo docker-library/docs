@@ -99,12 +99,13 @@ $ docker run -it -v $(pwd)/topology.jar:/topology.jar storm storm jar /topology.
 	$ docker run -d -p 8080:8080 --restart always --name ui --link some-nimbus:nimbus storm storm ui
 	```
 
-## ... via [`docker-compose`](https://github.com/docker/compose)
+## ... via [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/) or [`docker-compose`](https://github.com/docker/compose)
 
-Example `docker-compose.yml` for `storm`:
+Example `stack.yml` for `storm`:
 
 ```yaml
-version: '2'
+version: '3.1'
+
 services:
     zookeeper:
         image: zookeeper
@@ -136,7 +137,9 @@ services:
         restart: always
 ```
 
-Run `docker-compose up` and wait for it to initialize completely. The Nimbus will be available at your host and port `6627`.
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/3992d8e6589cc104c8a1431781faec2804d45f2a/storm/stack.yml)
+
+Run `docker stack deploy -c stack.yml storm` (or `docker-compose -f stack.yml up`) and wait for it to initialize completely. The Nimbus will be available at `http://swarm-ip:6627`, `http://localhost:6627`, or `http://host-ip:6627` (as appropriate).
 
 ## Configuration
 
