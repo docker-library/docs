@@ -16,6 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
+-	[`7.1.0`, `7.1` (*7.1/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/1c47a6d6a1796706aaea6ff75358aa5ab691f5a5/7.1/Dockerfile)
+-	[`7.1.0-alpine`, `7.1-alpine` (*7.1/alpine/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/1c47a6d6a1796706aaea6ff75358aa5ab691f5a5/7.1/alpine/Dockerfile)
+-	[`7.1.0-slim`, `7.1-slim` (*7.1/slim/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/1c47a6d6a1796706aaea6ff75358aa5ab691f5a5/7.1/slim/Dockerfile)
 -	[`7.0.1`, `7.0`, `7`, `latest` (*7.0/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/e459dbee3bedba0535f3c1b3be97f14dbabaf3bb/7.0/Dockerfile)
 -	[`7.0.1-alpine`, `7.0-alpine`, `7-alpine`, `alpine` (*7.0/alpine/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/e459dbee3bedba0535f3c1b3be97f14dbabaf3bb/7.0/alpine/Dockerfile)
 -	[`7.0.1-slim`, `7.0-slim`, `7-slim`, `slim` (*7.0/slim/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/e459dbee3bedba0535f3c1b3be97f14dbabaf3bb/7.0/slim/Dockerfile)
