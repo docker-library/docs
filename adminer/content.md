@@ -90,7 +90,10 @@ While Adminer supports a wide range of database drivers this image only supports
 
 To add support for the other drivers you will need to install the following PHP extensions on top of this image:
 
--	sqlsrv (MS SQL)
--	oci8 (Oracle)
--	interbase (Firebird)
--	mongo (MongoDB)
+-	`pdo_dblib` (MS SQL)
+-	`oci8` (Oracle)
+-	`interbase` (Firebird)
+
+The following drivers are not supported by this image:
+
+-	MongoDB (The driver is not supported by PHP 7)
