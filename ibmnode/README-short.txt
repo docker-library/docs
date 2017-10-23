@@ -1,1 +1,1 @@
-This is the short description for the docker hub, limited to 100 characters in a single line.
+IBM® SDK for Node.js is an extended implementation of the Node.js open source project.
