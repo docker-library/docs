@@ -1,6 +1,8 @@
 # What is IBM SDK for Node.js?
 
-The IBM® SDK for Node.js is an extended implementation of the Node.js open source project. Node.js is a JavaScript runtime that is built on the V8 JavaScript engine used by Google Chrome. The IBM SDK extends Node.js by adding support for IBM platforms and extra features such as the diagnostic tool Node Application Metrics (also known as appmetrics).
+The IBM® SDK for Node.js™ provides a stand-alone JavaScript® runtime and server-side JavaScript solution for IBM platforms. It provides a high-performance, highly scalable, event-driven environment with non-blocking I/O that is programmed with the familiar JavaScript programming language.
+
+The IBM SDK for Node.js is based on the Node.js™ open source project. It provides a compatible solution for IBM Power™, Intel® and z Systems™ products that require Node.js functionality and package management. It also packages additional features including the diagnostic tools Node Application Metrics (also known as appmetrics) and node-report.
 
 For more information about the IBM SDK for Node.js, see http://developer.ibm.com/node/sdk. For more information about Node.js, see http://nodejs.org.
 
