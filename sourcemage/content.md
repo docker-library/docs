@@ -11,13 +11,13 @@ All of our scripts are [GPL](https://www.gnu.org/licenses/gpl.html)'d and our pa
 These images are based on our [chroot images](https://sourcemage.org/Install/Chroot). To use them, simply do the following:
 
 ```shell
-$ docker run -it sourcemage
+$ docker run -it %%IMAGE%%
 ```
 
 or
 
 ```shell
-$ docker run -it sourcemage:0.62
+$ docker run -it %%IMAGE%%:0.62
 ```
 
 ---

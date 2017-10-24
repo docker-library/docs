@@ -18,7 +18,7 @@ The supported data models can be mixed in queries and allow ArangoDB to be the a
 
 Joins and Transactions are key features for flexible, secure data designs, widely used in RDBMSs that you won't want to miss in NoSQL products. You decide how and when to use Joins and strong consistency guarantees, keeping all the power for scaling and performance as choice.
 
-Furthermore, ArangoDB offers a microservice framework called [Foxx](https://www.arangodb.com/foxx) to build your own Rest API with a few lines of code.
+Furthermore, ArangoDB offers a microservice framework called [Foxx](https://www.arangodb.com/why-arangodb/foxx) to build your own Rest API with a few lines of code.
 
 #### ArangoDB Documentation
 
@@ -32,10 +32,10 @@ Furthermore, ArangoDB offers a microservice framework called [Foxx](https://www.
 In order to start an ArangoDB instance run
 
 ```console
-unix> docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 -d --name arangodb-instance arangodb
+unix> docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 -d --name arangodb-instance %%IMAGE%%
 ```
 
-Will create and launch the arangodb docker instance as background process. The Identifier of the process is printed. By default ArangoDB listen on port 8529 for request and the image includes `EXPOSE 8529`. If you link an application container it is automatically available in the linked container. See the following examples.
+Will create and launch the %%IMAGE%% docker instance as background process. The Identifier of the process is printed. By default ArangoDB listen on port 8529 for request and the image includes `EXPOSE 8529`. If you link an application container it is automatically available in the linked container. See the following examples.
 
 In order to get the IP arango listens on run:
 
@@ -48,7 +48,7 @@ unix> docker inspect --format '{{ .NetworkSettings.IPAddress }}' arangodb-instan
 In order to use the running instance from an application, link the container
 
 ```console
-unix> docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 --name my-app --link arangodb-instance:db-link arangodb
+unix> docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 --name my-app --link arangodb-instance:db-link %%IMAGE%%
 ```
 
 This will use the instance with the name `arangodb-instance` and link it into the application container. The application container will contain environment variables
@@ -66,7 +66,7 @@ These can be used to access the database.
 If you want to expose the port to the outside world, run
 
 ```console
-unix> docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 -p 8529:8529 -d arangodb
+unix> docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 -p 8529:8529 -d %%IMAGE%%
 ```
 
 ArangoDB listen on port 8529 for request and the image includes `EXPOSE
@@ -90,15 +90,19 @@ The ArangoDB image provides several authentication methods which can be specifie
 
 	Specify your own root password.
 
+Note: this way of specifying logins only applies to single server installations. With clusters you have to provision the users via the root user with empty password once the system is up.
+
 ### Command line options
 
 In order to get a list of supported options, run
 
 ```console
-unix> docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 arangodb arangod --help
+unix> docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 %%IMAGE%% arangod --help
 ```
 
 ## Persistent Data
+
+ArangoDB supports two different storage engines as of ArangoDB 3.2. You can choose them while instantiating the container with the environment variable `ARANGO_STORAGE_ENGINE`. With `mmfiles` you choose the classic storage engine, `rocksdb` will choose the newly introduced storage engine based on [rocksdb](http://rocksdb.org/). The default choice is `mmfiles`.
 
 ArangoDB use the volume `/var/lib/arangodb3` as database directory to store the collection data and the volume `/var/lib/arangodb3-apps` as apps directory to store any extensions. These directories are marked as docker volumes.
 
@@ -116,7 +120,7 @@ You can map the container's volumes to a directory on the host, so that the data
 unix> mkdir /tmp/arangodb
 unix> docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 -p 8529:8529 -d \
           -v /tmp/arangodb:/var/lib/arangodb3 \
-          arangodb
+          %%IMAGE%%
 ```
 
 This will use the `/tmp/arangodb` directory of the host as database directory for ArangoDB inside the container.
@@ -126,13 +130,13 @@ This will use the `/tmp/arangodb` directory of the host as database directory fo
 Alternatively you can create a container holding the data.
 
 ```console
-unix> docker create --name arangodb-persist arangodb true
+unix> docker create --name arangodb-persist %%IMAGE%% true
 ```
 
 And use this data container in your ArangoDB container.
 
 ```console
-unix> docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 --volumes-from arangodb-persist -p 8529:8529 arangodb
+unix> docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 --volumes-from arangodb-persist -p 8529:8529 %%IMAGE%%
 ```
 
 If want to save a few bytes you can alternatively use [busybox](https://registry.hub.docker.com/_/busybox) or [alpine](https://registry.hub.docker.com/_/alpine) for creating the volume only containers. Please note that you need to provide the used volumes in this case. For example
@@ -144,3 +148,9 @@ unix> docker run -d --name arangodb-persist -v /var/lib/arangodb3 busybox true
 ### Using as a base image
 
 If you are using the image as a base image please make sure to wrap any CMD in the [exec](https://docs.docker.com/engine/reference/builder/#cmd) form. Otherwise the default entrypoint will not do its bootstrapping work.
+
+When deriving the image, you can control the instantiation via putting files into `/docker-entrypoint-initdb.d/`.
+
+-	`*.sh` - files ending with .sh will be run as a bash shellscript.
+-	`*.js` - files will be executed with arangosh. You can specify additional arangosh arguments via the `ARANGOSH_ARGS` environment variable.
+-	`dumps/` - in this directory you can place subdirectories containing database dumps generated using [arangodump](https://docs.arangodb.com/latest/Manual/Administration/Arangodump.html). They will be restored using [arangorestore](https://docs.arangodb.com/latest/Manual/Administration/Arangorestore.html).

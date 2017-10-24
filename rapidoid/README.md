@@ -16,7 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.4.4`, `5.4`, `5`, `latest` (*Dockerfile*)](https://github.com/rapidoid/docker-rapidoid/blob/21292dfd8933021b1e8be562f428d031cf3a1f31/Dockerfile)
+-	[`5.4.5`, `5.4`, `5`, `latest` (*Dockerfile*)](https://github.com/rapidoid/docker-rapidoid/blob/079ea9dc69b966493e33eccbf0c06a5605d4f8ec/Dockerfile)
 
 # Quick reference
 

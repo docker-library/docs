@@ -21,7 +21,7 @@ $ docker run -it --name my-running-irssi -e TERM -u $(id -u):$(id -g) \
     --log-driver=none \
     -v $HOME/.irssi:/home/user/.irssi:ro \
     -v /etc/localtime:/etc/localtime:ro \
-    irssi
+    %%IMAGE%%
 ```
 
 We specify `--log-driver=none` to avoid storing useless interactive terminal data.
@@ -32,7 +32,7 @@ On a Mac OS X system, run the same image using:
 $ docker run -it --name my-running-irssi -e TERM -u $(id -u):$(id -g) \
     --log-driver=none \
     -v $HOME/.irssi:/home/user/.irssi:ro \
-    irssi
+    %%IMAGE%%
 ```
 
 You omit `/etc/localtime` on Mac OS X because `boot2docker` doesn't use this file.

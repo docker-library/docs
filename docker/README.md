@@ -16,18 +16,18 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`17.10.0-ce-rc1`, `17.10-rc`, `rc` (*17.10-rc/Dockerfile*)](https://github.com/docker-library/docker/blob/8ada62f762b30d09fd54664710c0ef3b64038f07/17.10-rc/Dockerfile)
--	[`17.10.0-ce-rc1-dind`, `17.10-rc-dind`, `rc-dind` (*17.10-rc/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/8ada62f762b30d09fd54664710c0ef3b64038f07/17.10-rc/dind/Dockerfile)
--	[`17.10.0-ce-rc1-git`, `17.10-rc-git`, `rc-git` (*17.10-rc/git/Dockerfile*)](https://github.com/docker-library/docker/blob/8ada62f762b30d09fd54664710c0ef3b64038f07/17.10-rc/git/Dockerfile)
--	[`17.09.0-ce`, `17.09.0`, `17.09`, `17`, `stable`, `test`, `edge`, `latest` (*17.09/Dockerfile*)](https://github.com/docker-library/docker/blob/a6b52c73daa8283cd861f41f55e53426008708ac/17.09/Dockerfile)
--	[`17.09.0-ce-dind`, `17.09.0-dind`, `17.09-dind`, `17-dind`, `stable-dind`, `test-dind`, `edge-dind`, `dind` (*17.09/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/a6b52c73daa8283cd861f41f55e53426008708ac/17.09/dind/Dockerfile)
--	[`17.09.0-ce-git`, `17.09.0-git`, `17.09-git`, `17-git`, `stable-git`, `test-git`, `edge-git`, `git` (*17.09/git/Dockerfile*)](https://github.com/docker-library/docker/blob/a6b52c73daa8283cd861f41f55e53426008708ac/17.09/git/Dockerfile)
--	[`17.07.0-ce`, `17.07.0`, `17.07` (*17.07/Dockerfile*)](https://github.com/docker-library/docker/blob/a8f8fa1b57349cc22c80e7d6cbbdb512ffee2bd2/17.07/Dockerfile)
--	[`17.07.0-ce-dind`, `17.07.0-dind`, `17.07-dind` (*17.07/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/a8f8fa1b57349cc22c80e7d6cbbdb512ffee2bd2/17.07/dind/Dockerfile)
--	[`17.07.0-ce-git`, `17.07.0-git`, `17.07-git` (*17.07/git/Dockerfile*)](https://github.com/docker-library/docker/blob/a8f8fa1b57349cc22c80e7d6cbbdb512ffee2bd2/17.07/git/Dockerfile)
--	[`17.06.2-ce`, `17.06.2`, `17.06` (*17.06/Dockerfile*)](https://github.com/docker-library/docker/blob/168a6d227d021c6d38c3986b7c668702ec172fa7/17.06/Dockerfile)
+-	[`17.10.0-ce`, `17.10.0`, `17.10`, `17`, `edge`, `test`, `latest` (*17.10/Dockerfile*)](https://github.com/docker-library/docker/blob/62a456489acfe7443d426cd502ccf22130d1ccf9/17.10/Dockerfile)
+-	[`17.10.0-ce-dind`, `17.10.0-dind`, `17.10-dind`, `17-dind`, `edge-dind`, `test-dind`, `dind` (*17.10/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/62a456489acfe7443d426cd502ccf22130d1ccf9/17.10/dind/Dockerfile)
+-	[`17.10.0-ce-git`, `17.10.0-git`, `17.10-git`, `17-git`, `edge-git`, `test-git`, `git` (*17.10/git/Dockerfile*)](https://github.com/docker-library/docker/blob/62a456489acfe7443d426cd502ccf22130d1ccf9/17.10/git/Dockerfile)
+-	[`17.10.0-ce-windowsservercore`, `17.10.0-windowsservercore`, `17.10-windowsservercore`, `17-windowsservercore`, `edge-windowsservercore`, `test-windowsservercore`, `windowsservercore` (*17.10/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/docker/blob/62a456489acfe7443d426cd502ccf22130d1ccf9/17.10/windows/windowsservercore/Dockerfile)
+-	[`17.09.0-ce`, `17.09.0`, `17.09`, `stable` (*17.09/Dockerfile*)](https://github.com/docker-library/docker/blob/454a0ff9e99d4fde7112b25d64d25f940ab28a99/17.09/Dockerfile)
+-	[`17.09.0-ce-dind`, `17.09.0-dind`, `17.09-dind`, `stable-dind` (*17.09/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/a6b52c73daa8283cd861f41f55e53426008708ac/17.09/dind/Dockerfile)
+-	[`17.09.0-ce-git`, `17.09.0-git`, `17.09-git`, `stable-git` (*17.09/git/Dockerfile*)](https://github.com/docker-library/docker/blob/a6b52c73daa8283cd861f41f55e53426008708ac/17.09/git/Dockerfile)
+-	[`17.09.0-ce-windowsservercore`, `17.09.0-windowsservercore`, `17.09-windowsservercore`, `stable-windowsservercore` (*17.09/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/docker/blob/2f6926c4fb37274b90fae3ba6c3320619a8d0289/17.09/windows/windowsservercore/Dockerfile)
+-	[`17.06.2-ce`, `17.06.2`, `17.06` (*17.06/Dockerfile*)](https://github.com/docker-library/docker/blob/454a0ff9e99d4fde7112b25d64d25f940ab28a99/17.06/Dockerfile)
 -	[`17.06.2-ce-dind`, `17.06.2-dind`, `17.06-dind` (*17.06/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/168a6d227d021c6d38c3986b7c668702ec172fa7/17.06/dind/Dockerfile)
 -	[`17.06.2-ce-git`, `17.06.2-git`, `17.06-git` (*17.06/git/Dockerfile*)](https://github.com/docker-library/docker/blob/168a6d227d021c6d38c3986b7c668702ec172fa7/17.06/git/Dockerfile)
+-	[`17.06.2-ce-windowsservercore`, `17.06.2-windowsservercore`, `17.06-windowsservercore` (*17.06/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/docker/blob/2f6926c4fb37274b90fae3ba6c3320619a8d0289/17.06/windows/windowsservercore/Dockerfile)
 
 # Quick reference
 
@@ -41,7 +41,7 @@ WARNING:
 	[Tianon (of the Docker Project)](https://github.com/docker-library/docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/docker/)
+	[`amd64`](https://hub.docker.com/r/amd64/docker/), [`windows-amd64`](https://hub.docker.com/r/winamd64/docker/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/docker/` directory](https://github.com/docker-library/repo-info/blob/master/repos/docker) ([history](https://github.com/docker-library/repo-info/commits/master/repos/docker))  
@@ -217,6 +217,23 @@ The Docker documentation is a good starting point for understanding the differen
 	```
 
 The `-v /my/own/var-lib-docker:/var/lib/docker` part of the command mounts the `/my/own/var-lib-docker` directory from the underlying host system as `/var/lib/docker` inside the container, where Docker by default will write its data files.
+
+# Image Variants
+
+The `docker` images come in many flavors, each designed for a specific use case.
+
+## `docker:<version>`
+
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+## `docker:windowsservercore`
+
+This image is based on [Windows Server Core (`microsoft/windowsservercore`)](https://hub.docker.com/r/microsoft/windowsservercore/). As such, it only works in places which that image does, such as Windows 10 Professional/Enterprise (Anniversary Edition) or Windows Server 2016.
+
+For information about how to get Docker running on Windows, please see the relevant "Quick Start" guide provided by Microsoft:
+
+-	[Windows Server Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_server)
+-	[Windows 10 Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)
 
 # License
 

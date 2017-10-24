@@ -15,7 +15,7 @@ The InfluxDB image exposes a shared volume under `/var/lib/influxdb`, so you can
 ```console
 $ docker run -p 8086:8086 \
       -v $PWD:/var/lib/influxdb \
-      influxdb
+      %%IMAGE%%
 ```
 
 Modify `$PWD` to the directory where you want to store data associated with the InfluxDB container.
@@ -25,7 +25,7 @@ You can also have Docker control the volume mountpoint by using a named volume.
 ```console
 $ docker run -p 8086:8086 \
       -v influxdb:/var/lib/influxdb \
-      influxdb
+      %%IMAGE%%
 ```
 
 ### Exposed Ports
@@ -51,7 +51,7 @@ InfluxDB can be either configured from a config file or using environment variab
 Generate the default configuration file:
 
 ```console
-$ docker run --rm influxdb influxd config > influxdb.conf
+$ docker run --rm %%IMAGE%% influxd config > influxdb.conf
 ```
 
 Modify the default configuration, which will now be available under `$PWD`. Then start the InfluxDB container.
@@ -59,7 +59,7 @@ Modify the default configuration, which will now be available under `$PWD`. Then
 ```console
 $ docker run -p 8086:8086 \
       -v $PWD/influxdb.conf:/etc/influxdb/influxdb.conf:ro \
-      influxdb -config /etc/influxdb/influxdb.conf
+      %%IMAGE%% -config /etc/influxdb/influxdb.conf
 ```
 
 Modify `$PWD` to the directory where you want to store the configuration file.
@@ -83,7 +83,7 @@ InfluxDB supports the Graphite line protocol, but the service and ports are not 
 ```console
 docker run -p 8086:8086 -p 2003:2003 \
     -e INFLUXDB_GRAPHITE_ENABLED=true \
-    influxdb
+    %%IMAGE%%
 ```
 
 See the [README on GitHub](https://github.com/influxdata/influxdb/blob/master/services/graphite/README.md) for more detailed documentation to set up the Graphite service. In order to take advantage of graphite templates, you should use a configuration file by outputting a default configuration file using the steps above and modifying the `[[graphite]]` section.
@@ -95,7 +95,7 @@ The administrator interface is deprecated as of 1.1.0 and will be removed in 1.3
 ```console
 docker run -p 8086:8086 -p 8083:8083 \
     -e INFLUXDB_ADMIN_ENABLED=true \
-    influxdb
+    %%IMAGE%%
 ```
 
 To use the administrator interface, both the HTTP API and the administrator interface API's must be forwarded to the same port.
@@ -121,13 +121,13 @@ Read more about this in the [official documentation](https://docs.influxdata.com
 Start the container:
 
 ```console
-$ docker run --name=influxdb -d -p 8086:8086 influxdb
+$ docker run --name=influxdb -d -p 8086:8086 %%IMAGE%%
 ```
 
 Run the influx client in another container:
 
 ```console
-$ docker run --rm --link=influxdb -it influxdb influx -host influxdb
+$ docker run --rm --link=influxdb -it %%IMAGE%% influx -host influxdb
 ```
 
 At the moment, you cannot use `docker exec` to run the influx client since `docker exec` will not properly allocate a TTY. This is due to a current bug in Docker that is detailed in [docker/docker#8755](https://github.com/docker/docker/issues/8755).

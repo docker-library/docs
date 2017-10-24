@@ -1,7 +1,7 @@
 # Example output
 
 ```console
-$ docker run hello-world
+$ docker run %%IMAGE%%
 
 Hello from Docker!
 This message shows that your installation appears to be working correctly.
@@ -24,7 +24,7 @@ For more examples and ideas, visit:
  https://docs.docker.com/engine/userguide/
 
 
-$ docker images hello-world
+$ docker images %%IMAGE%%
 REPOSITORY   TAG     IMAGE ID      SIZE
 hello-world  latest  05a3bd381fc2  1.84kB
 ```

@@ -13,11 +13,11 @@ Julia is a high-level, high-performance dynamic programming language for technic
 Starting the Julia REPL is as easy as the following:
 
 ```console
-$ docker run -it --rm julia
+$ docker run -it --rm %%IMAGE%%
 ```
 
 ## Run Julia script from your local directory inside container
 
 ```console
-$ docker run -it --rm -v "$PWD":/usr/myapp -w /usr/myapp julia julia script.jl arg1 arg2
+$ docker run -it --rm -v "$PWD":/usr/myapp -w /usr/myapp %%IMAGE%% julia script.jl arg1 arg2
 ```

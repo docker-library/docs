@@ -26,7 +26,7 @@ Note: The GHC developers do not support legacy release branches (i.e. `7.8.x`). 
 Start an interactive interpreter session with `ghci`:
 
 ```console
-$ docker run -it --rm haskell:8
+$ docker run -it --rm %%IMAGE%%:8
 GHCi, version 8.0.2: http://www.haskell.org/ghc/  :? for help
 Prelude>
 ```
@@ -34,7 +34,7 @@ Prelude>
 Dockerize an application from Hackage with a `Dockerfile`:
 
 ```dockerfile
-FROM haskell:8
+FROM %%IMAGE%%:8
 RUN stack install pandoc pandoc-citeproc
 ENTRYPOINT ["pandoc"]
 ```
@@ -42,7 +42,7 @@ ENTRYPOINT ["pandoc"]
 Alternatively, using `cabal`:
 
 ```dockerfile
-FROM haskell:8
+FROM %%IMAGE%%:8
 RUN cabal update && cabal install pandoc pandoc-citeproc
 ENTRYPOINT ["pandoc"]
 ```
@@ -50,7 +50,7 @@ ENTRYPOINT ["pandoc"]
 Iteratively develop a Haskell application with a `Dockerfile` utilizing the build cache:
 
 ```dockerfile
-FROM haskell:7.10
+FROM %%IMAGE%%:7.10
 
 WORKDIR /opt/server
 

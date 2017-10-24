@@ -17,9 +17,9 @@ WARNING:
 # Supported tags and respective `Dockerfile` links
 
 -	[`8`, `8.4`, `8.4.5`, `8-mysql-tomcat`, `mysql-tomcat`, `lts-mysql-tomcat`, `lts-mysql`, `lts`, `latest` (*8/mysql-tomcat/Dockerfile*)](https://github.com/xwiki-contrib/docker-xwiki/blob/fbc0fe3cbc07119c45ae8ea97c7e021d41e89b0a/8/mysql-tomcat/Dockerfile)
--	[`9`, `9.8`, `9-mysql-tomcat`, `stable-mysql-tomcat`, `stable-mysql`, `stable` (*9/mysql-tomcat/Dockerfile*)](https://github.com/xwiki-contrib/docker-xwiki/blob/02e12b746e3029ab4edf0ecedb2d4a1fe3f623c8/9/mysql-tomcat/Dockerfile)
+-	[`9`, `9.8`, `9.8.1`, `9-mysql-tomcat`, `stable-mysql-tomcat`, `stable-mysql`, `stable` (*9/mysql-tomcat/Dockerfile*)](https://github.com/xwiki-contrib/docker-xwiki/blob/088aaf39de290ece849eabace996b21f3b99d954/9/mysql-tomcat/Dockerfile)
 -	[`8-postgres-tomcat`, `8.4-postgres-tomcat`, `8.4.5-postgres-tomcat`, `postgres-tomcat`, `lts-postgres-tomcat`, `lts-postgres` (*8/postgres-tomcat/Dockerfile*)](https://github.com/xwiki-contrib/docker-xwiki/blob/fbc0fe3cbc07119c45ae8ea97c7e021d41e89b0a/8/postgres-tomcat/Dockerfile)
--	[`9-postgres-tomcat`, `9.8-postgres-tomcat`, `stable-postgres-tomcat`, `stable-postgres` (*9/postgres-tomcat/Dockerfile*)](https://github.com/xwiki-contrib/docker-xwiki/blob/02e12b746e3029ab4edf0ecedb2d4a1fe3f623c8/9/postgres-tomcat/Dockerfile)
+-	[`9-postgres-tomcat`, `9.8-postgres-tomcat`, `9.8.1-postgres-tomcat`, `stable-postgres-tomcat`, `stable-postgres` (*9/postgres-tomcat/Dockerfile*)](https://github.com/xwiki-contrib/docker-xwiki/blob/088aaf39de290ece849eabace996b21f3b99d954/9/postgres-tomcat/Dockerfile)
 
 # Quick reference
 
@@ -255,7 +255,7 @@ This allows you to rebuild the XWiki docker image locally. Here are the steps:
 
 Note that if you want to set a custom version of XWiki you can edit the `.env` file and set the values you need in there. It's also possible to override them on the command line with `docker-compose run -e "XWIKI_VERSION=8.4.4"`.
 
-Note that `docker-compose up` will automatically build the XWiki image on the first run. If you need to rebuild it you can issue `docker-compose up --build`. You can also build the image with `docker build . -t xwiki-mysql-tomcat:latest` for example.
+Note that `docker-compose up` will automatically build the XWiki image on the first run. If you need to rebuild it you can issue `docker-compose up --build`. You can also build the image with `docker build . -t xwiki-mysql-tomcat` for example.
 
 # Upgrading XWiki
 

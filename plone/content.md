@@ -16,7 +16,7 @@
 This will download and start the latest Plone 5 container, based on [Debian](https://www.debian.org/).
 
 ```console
-$ docker run -p 8080:8080 plone
+$ docker run -p 8080:8080 %%IMAGE%%
 ```
 
 This image includes `EXPOSE 8080` (the Plone port), so standard container linking will make it automatically available to the linked containers. Now you can add a Plone Site at http://localhost:8080 - default Zope user and password are `admin/admin`.
@@ -26,14 +26,14 @@ This image includes `EXPOSE 8080` (the Plone port), so standard container linkin
 Start ZEO server
 
 ```console
-$ docker run --name=zeo plone zeoserver
+$ docker run --name=zeo %%IMAGE%% zeoserver
 ```
 
 Start 2 Plone clients
 
 ```console
-$ docker run --link=zeo -e ZEO_ADDRESS=zeo:8100 -p 8081:8080 plone
-$ docker run --link=zeo -e ZEO_ADDRESS=zeo:8100 -p 8082:8080 plone
+$ docker run --link=zeo -e ZEO_ADDRESS=zeo:8100 -p 8081:8080 %%IMAGE%%
+$ docker run --link=zeo -e ZEO_ADDRESS=zeo:8100 -p 8082:8080 %%IMAGE%%
 ```
 
 ### Start Plone in debug mode
@@ -41,7 +41,7 @@ $ docker run --link=zeo -e ZEO_ADDRESS=zeo:8100 -p 8082:8080 plone
 You can also start Plone in debug mode (`fg`) by running
 
 ```console
-$ docker run -p 8080:8080 plone fg
+$ docker run -p 8080:8080 %%IMAGE%% fg
 ```
 
 ### Add-ons
@@ -49,7 +49,7 @@ $ docker run -p 8080:8080 plone fg
 You can enable Plone add-ons via the `PLONE_ADDONS` environment variable
 
 ```console
-$ docker run -p 8080:8080 -e PLONE_ADDONS="eea.facetednavigation Products.PloneFormGen" plone
+$ docker run -p 8080:8080 -e PLONE_ADDONS="eea.facetednavigation Products.PloneFormGen" %%IMAGE%%
 ```
 
 For more information on how to extend this image with your own custom settings, adding more add-ons, building it or mounting volumes, please refer to our [documentation](https://github.com/plone/plone.docker/blob/master/docs/usage.rst).

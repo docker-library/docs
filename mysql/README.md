@@ -17,9 +17,9 @@ WARNING:
 # Supported tags and respective `Dockerfile` links
 
 -	[`8.0.3`, `8.0`, `8` (*8.0/Dockerfile*)](https://github.com/docker-library/mysql/blob/86431f073b3d2f963d21e33cb8943f0bdcdf143d/8.0/Dockerfile)
--	[`5.7.19`, `5.7`, `5`, `latest` (*5.7/Dockerfile*)](https://github.com/docker-library/mysql/blob/0590e4efd2b31ec794383f084d419dea9bc752c4/5.7/Dockerfile)
--	[`5.6.37`, `5.6` (*5.6/Dockerfile*)](https://github.com/docker-library/mysql/blob/7ee927986b8c0cbfa6cdbb073a0e662bdb62c18a/5.6/Dockerfile)
--	[`5.5.57`, `5.5` (*5.5/Dockerfile*)](https://github.com/docker-library/mysql/blob/08b08d88066bc27f82212631e1d3415b61097afe/5.5/Dockerfile)
+-	[`5.7.20`, `5.7`, `5`, `latest` (*5.7/Dockerfile*)](https://github.com/docker-library/mysql/blob/429047ac5e28d59d40a2ac84a189c9d25310f060/5.7/Dockerfile)
+-	[`5.6.38`, `5.6` (*5.6/Dockerfile*)](https://github.com/docker-library/mysql/blob/d8e7c8b6c0ba854fd5ea8257b79a2b3377f668ae/5.6/Dockerfile)
+-	[`5.5.58`, `5.5` (*5.5/Dockerfile*)](https://github.com/docker-library/mysql/blob/41cfbdd89323a1230342038757b5b8f7f2f36b74/5.5/Dockerfile)
 
 # Quick reference
 
@@ -79,13 +79,13 @@ $ docker run --name some-app --link some-mysql:mysql -d application-that-uses-my
 
 ## Connect to MySQL from the MySQL command line client
 
-The following command starts another mysql container instance and runs the `mysql` command line client against your original mysql container, allowing you to execute SQL statements against your database instance:
+The following command starts another `mysql` container instance and runs the `mysql` command line client against your original `mysql` container, allowing you to execute SQL statements against your database instance:
 
 ```console
 $ docker run -it --link some-mysql:mysql --rm mysql sh -c 'exec mysql -h"$MYSQL_PORT_3306_TCP_ADDR" -P"$MYSQL_PORT_3306_TCP_PORT" -uroot -p"$MYSQL_ENV_MYSQL_ROOT_PASSWORD"'
 ```
 
-... where `some-mysql` is the name of your original mysql container.
+... where `some-mysql` is the name of your original `mysql` container.
 
 This image can also be used as a client for non-Docker or remote MySQL instances:
 
@@ -210,7 +210,7 @@ Currently, this is only supported for `MYSQL_ROOT_PASSWORD`, `MYSQL_ROOT_HOST`, 
 
 # Initializing a fresh instance
 
-When a container is started for the first time, a new database with the specified name will be created and initialized with the provided configuration variables. Furthermore, it will execute files with extensions `.sh`, `.sql` and `.sql.gz` that are found in `/docker-entrypoint-initdb.d`. Files will be executed in alphabetical order. You can easily populate your mysql services by [mounting a SQL dump into that directory](https://docs.docker.com/engine/tutorials/dockervolumes/#mount-a-host-file-as-a-data-volume) and provide [custom images](https://docs.docker.com/reference/builder/) with contributed data. SQL files will be imported by default to the database specified by the `MYSQL_DATABASE` variable.
+When a container is started for the first time, a new database with the specified name will be created and initialized with the provided configuration variables. Furthermore, it will execute files with extensions `.sh`, `.sql` and `.sql.gz` that are found in `/docker-entrypoint-initdb.d`. Files will be executed in alphabetical order. You can easily populate your `mysql` services by [mounting a SQL dump into that directory](https://docs.docker.com/engine/tutorials/dockervolumes/#mount-a-host-file-as-a-data-volume) and provide [custom images](https://docs.docker.com/reference/builder/) with contributed data. SQL files will be imported by default to the database specified by the `MYSQL_DATABASE` variable.
 
 # Caveats
 

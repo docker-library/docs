@@ -9,7 +9,7 @@
 ## Create a Dockerfile in your Maven project
 
 ```dockerfile
-FROM maven:3.2-jdk-7-onbuild
+FROM %%IMAGE%%:3.2-jdk-7-onbuild
 CMD ["do-something-with-built-packages"]
 ```
 
@@ -29,5 +29,5 @@ $ docker run -it --name my-maven-script my-maven
 For many simple projects, you may find it inconvenient to write a complete `Dockerfile`. In such cases, you can run a Maven project by using the Maven Docker image directly, passing a Maven command to `docker run`:
 
 ```console
-$ docker run -it --rm --name my-maven-project -v "$PWD":/usr/src/mymaven -w /usr/src/mymaven maven:3.2-jdk-7 mvn clean install
+$ docker run -it --rm --name my-maven-project -v "$PWD":/usr/src/mymaven -w /usr/src/mymaven %%IMAGE%%:3.2-jdk-7 mvn clean install
 ```

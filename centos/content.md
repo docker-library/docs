@@ -8,21 +8,21 @@ CentOS Linux is a community-supported distribution derived from sources freely p
 
 # CentOS image documentation
 
-The `centos:latest` tag is always the most recent version currently available.
+The `%%IMAGE%%:latest` tag is always the most recent version currently available.
 
 ## Rolling builds
 
-The CentOS Project offers regularly updated images for all active releases. These images will be updated monthly or as needed for emergency fixes. These rolling updates are tagged with the major version number only. For example: `docker pull centos:6` or `docker pull centos:7`
+The CentOS Project offers regularly updated images for all active releases. These images will be updated monthly or as needed for emergency fixes. These rolling updates are tagged with the major version number only. For example: `docker pull %%IMAGE%%:6` or `docker pull %%IMAGE%%:7`
 
 ## Minor tags
 
 Additionally, images with minor version tags that correspond to install media are also offered. **These images DO NOT recieve updates** as they are intended to match installation iso contents. If you choose to use these images it is highly recommended that you include `RUN yum -y update && yum clean all` in your Dockerfile, or otherwise address any potential security concerns. To use these images, please specify the minor version tag:
 
-For example: `docker pull centos:5.11` or `docker pull centos:6.6`
+For example: `docker pull %%IMAGE%%:5.11` or `docker pull %%IMAGE%%:6.6`
 
 ## Overlayfs and yum
 
-Recent Docker versions support the [overlayfs](https://docs.docker.com/engine/userguide/storagedriver/overlayfs-driver/) backend, which is enabled by default on most distros supporting it from Docker 1.13 onwards. On Centos 6 and 7, **that backend requires yum-plugin-ovl to be installed and enabled**; while it is installed by default in recent centos images, make it sure you retain the `plugins=1` option in `/etc/yum.conf` if you update that file; otherwise, you may encounter errors related to rpmdb checksum failure - see [Docker ticket 10180](https://github.com/docker/docker/issues/10180) for more details.
+Recent Docker versions support the [overlayfs](https://docs.docker.com/engine/userguide/storagedriver/overlayfs-driver/) backend, which is enabled by default on most distros supporting it from Docker 1.13 onwards. On Centos 6 and 7, **that backend requires yum-plugin-ovl to be installed and enabled**; while it is installed by default in recent %%IMAGE%% images, make it sure you retain the `plugins=1` option in `/etc/yum.conf` if you update that file; otherwise, you may encounter errors related to rpmdb checksum failure - see [Docker ticket 10180](https://github.com/docker/docker/issues/10180) for more details.
 
 # Package documentation
 
@@ -30,12 +30,12 @@ By default, the CentOS containers are built using yum's `nodocs` option, which h
 
 # Systemd integration
 
-Systemd is now included in both the centos:7 and centos:latest base containers, but it is not active by default. In order to use systemd, you will need to include text similar to the example Dockerfile below:
+Systemd is now included in both the %%IMAGE%%:7 and %%IMAGE%%:latest base containers, but it is not active by default. In order to use systemd, you will need to include text similar to the example Dockerfile below:
 
 ## Dockerfile for systemd base image
 
 ```dockerfile
-FROM centos:7
+FROM %%IMAGE%%:7
 ENV container docker
 RUN (cd /lib/systemd/system/sysinit.target.wants/; for i in *; do [ $i == \
 systemd-tmpfiles-setup.service ] || rm -f $i; done); \

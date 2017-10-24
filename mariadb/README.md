@@ -16,11 +16,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`10.3.1`, `10.3` (*10.3/Dockerfile*)](https://github.com/docker-library/mariadb/blob/8bbe483d5fc132b87063db9d22132b571a778fd4/10.3/Dockerfile)
+-	[`10.3.2`, `10.3` (*10.3/Dockerfile*)](https://github.com/docker-library/mariadb/blob/adb3a3a5d9e3a3a7da8f4676e577ccb621731159/10.3/Dockerfile)
 -	[`10.2.9`, `10.2`, `10`, `latest` (*10.2/Dockerfile*)](https://github.com/docker-library/mariadb/blob/8d8f803e38b374fa7c5a524bdbf014365000d319/10.2/Dockerfile)
 -	[`10.1.28`, `10.1` (*10.1/Dockerfile*)](https://github.com/docker-library/mariadb/blob/6d8fbc8e417ed8f50be812d1e941a164ec3e32f2/10.1/Dockerfile)
 -	[`10.0.32`, `10.0` (*10.0/Dockerfile*)](https://github.com/docker-library/mariadb/blob/48182d4da0a078eb05c118a39c28b8b832c1f60b/10.0/Dockerfile)
--	[`5.5.57`, `5.5`, `5` (*5.5/Dockerfile*)](https://github.com/docker-library/mariadb/blob/198f04b24ca6f668357106355b03d38d1f3234bc/5.5/Dockerfile)
+-	[`5.5.58`, `5.5`, `5` (*5.5/Dockerfile*)](https://github.com/docker-library/mariadb/blob/9ea1296c9855bb11e5b1b59781872e85dad9d898/5.5/Dockerfile)
 
 # Quick reference
 
@@ -84,13 +84,13 @@ $ docker run --name some-app --link some-mariadb:mysql -d application-that-uses-
 
 ## Connect to MariaDB from the MySQL command line client
 
-The following command starts another mariadb container instance and runs the `mysql` command line client against your original mariadb container, allowing you to execute SQL statements against your database instance:
+The following command starts another `mariadb` container instance and runs the `mysql` command line client against your original `mariadb` container, allowing you to execute SQL statements against your database instance:
 
 ```console
 $ docker run -it --link some-mariadb:mysql --rm mariadb sh -c 'exec mysql -h"$MYSQL_PORT_3306_TCP_ADDR" -P"$MYSQL_PORT_3306_TCP_PORT" -uroot -p"$MYSQL_ENV_MYSQL_ROOT_PASSWORD"'
 ```
 
-... where `some-mariadb` is the name of your original mariadb container.
+... where `some-mariadb` is the name of your original `mariadb` container.
 
 This image can also be used as a client for non-Docker or remote MariaDB instances:
 
@@ -211,7 +211,7 @@ Currently, this is only supported for `MYSQL_ROOT_PASSWORD`, `MYSQL_ROOT_HOST`, 
 
 # Initializing a fresh instance
 
-When a container is started for the first time, a new database with the specified name will be created and initialized with the provided configuration variables. Furthermore, it will execute files with extensions `.sh`, `.sql` and `.sql.gz` that are found in `/docker-entrypoint-initdb.d`. Files will be executed in alphabetical order. You can easily populate your mariadb services by [mounting a SQL dump into that directory](https://docs.docker.com/engine/tutorials/dockervolumes/#mount-a-host-file-as-a-data-volume) and provide [custom images](https://docs.docker.com/reference/builder/) with contributed data. SQL files will be imported by default to the database specified by the `MYSQL_DATABASE` variable.
+When a container is started for the first time, a new database with the specified name will be created and initialized with the provided configuration variables. Furthermore, it will execute files with extensions `.sh`, `.sql` and `.sql.gz` that are found in `/docker-entrypoint-initdb.d`. Files will be executed in alphabetical order. You can easily populate your `mariadb` services by [mounting a SQL dump into that directory](https://docs.docker.com/engine/tutorials/dockervolumes/#mount-a-host-file-as-a-data-volume) and provide [custom images](https://docs.docker.com/reference/builder/) with contributed data. SQL files will be imported by default to the database specified by the `MYSQL_DATABASE` variable.
 
 # Caveats
 

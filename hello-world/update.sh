@@ -12,10 +12,10 @@ echo '# Example output'
 echo
 
 echo '```console'
-echo '$ docker run' "$image"
+echo '$ docker run %%IMAGE%%'
 docker run --rm hello-world
 echo
-echo '$ docker images' "$image"
+echo '$ docker images %%IMAGE%%'
 docker images "$image" | awk -F'  +' 'NR == 1 || $2 == "latest" { print $1"\t"$2"\t"$3"\t"$5 }' | column -t -s$'\t'
 echo '```'
 
