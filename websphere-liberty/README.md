@@ -16,12 +16,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`kernel` (*ga/developer/kernel/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/e6a1e1bc6a9afd206ca361a13c22b25219c7e9b1/ga/developer/kernel/Dockerfile)
--	[`microProfile` (*ga/developer/microProfile/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/e6a1e1bc6a9afd206ca361a13c22b25219c7e9b1/ga/developer/microProfile/Dockerfile)
--	[`webProfile6` (*ga/developer/webProfile6/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/e6a1e1bc6a9afd206ca361a13c22b25219c7e9b1/ga/developer/webProfile6/Dockerfile)
--	[`webProfile7` (*ga/developer/webProfile7/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/e6a1e1bc6a9afd206ca361a13c22b25219c7e9b1/ga/developer/webProfile7/Dockerfile)
--	[`javaee7`, `latest` (*ga/developer/javaee7/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/e6a1e1bc6a9afd206ca361a13c22b25219c7e9b1/ga/developer/javaee7/Dockerfile)
--	[`beta` (*beta/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/e6a1e1bc6a9afd206ca361a13c22b25219c7e9b1/beta/Dockerfile)
+-	[`kernel` (*ga/developer/kernel/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/39e2271ea2b0d104195e9694345faaae1dccb6d2/ga/developer/kernel/Dockerfile)
+-	[`microProfile` (*ga/developer/microProfile/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/39e2271ea2b0d104195e9694345faaae1dccb6d2/ga/developer/microProfile/Dockerfile)
+-	[`webProfile6` (*ga/developer/webProfile6/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/39e2271ea2b0d104195e9694345faaae1dccb6d2/ga/developer/webProfile6/Dockerfile)
+-	[`webProfile7` (*ga/developer/webProfile7/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/39e2271ea2b0d104195e9694345faaae1dccb6d2/ga/developer/webProfile7/Dockerfile)
+-	[`javaee7`, `latest` (*ga/developer/javaee7/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/39e2271ea2b0d104195e9694345faaae1dccb6d2/ga/developer/javaee7/Dockerfile)
+-	[`beta` (*beta/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/39e2271ea2b0d104195e9694345faaae1dccb6d2/beta/Dockerfile)
 
 # Quick reference
 
