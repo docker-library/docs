@@ -88,7 +88,7 @@ $ docker run -d --hostname my-rabbit --name some-rabbit -p 8080:15672 %%IMAGE%%:
 
 You can then go to `http://localhost:8080` or `http://host-ip:8080` in a browser.
 
-## Setting default user and password
+### Setting default user and password
 
 If you wish to change the default username and password of `guest` / `guest`, you can do so with the `RABBITMQ_DEFAULT_USER` and `RABBITMQ_DEFAULT_PASS` environmental variables:
 
@@ -98,7 +98,7 @@ $ docker run -d --hostname my-rabbit --name some-rabbit -e RABBITMQ_DEFAULT_USER
 
 You can then go to `http://localhost:8080` or `http://host-ip:8080` in a browser and use `user`/`password` to gain access to the management console
 
-## Setting default vhost
+### Setting default vhost
 
 If you wish to change the default vhost, you can do so with the `RABBITMQ_DEFAULT_VHOST` environmental variables:
 
@@ -106,7 +106,7 @@ If you wish to change the default vhost, you can do so with the `RABBITMQ_DEFAUL
 $ docker run -d --hostname my-rabbit --name some-rabbit -e RABBITMQ_DEFAULT_VHOST=my_vhost %%IMAGE%%:3-management
 ```
 
-## Enabling HiPE
+### Enabling HiPE
 
 **Warning:** if you're using the Alpine variant, there is currently [an outstanding bug (Alpine Linux bug #5700) with the `erlang-hipe` package](https://bugs.alpinelinux.org/issues/5700) which prevents HiPE from working in Alpine Linux. See [docker-library/rabbitmq#151](https://github.com/docker-library/rabbitmq/issues/151) for more discussion.
 
@@ -117,6 +117,14 @@ For enabling the HiPE compiler on startup use `RABBITMQ_HIPE_COMPILE` set to `1`
 > Set to true to precompile parts of RabbitMQ with HiPE, a just-in-time compiler for Erlang. This will increase server throughput at the cost of increased startup time. You might see 20-50% better performance at the cost of a few minutes delay at startup.
 
 It is therefore important to take that startup delay into consideration when configuring health checks, automated clustering etc.
+
+### Additional Configuration
+
+If additional configuration is required, it is recommended to use the `RABBITMQ_SERVER_ADDITIONAL_ERL_ARGS` environment variable, whose syntax is described [in section 7.8 ("Configuring an Application") of the Erlang OTP Design Principles User's Guide](http://erlang.org/doc/design_principles/applications.html#id81887) (the appropriate value for `-ApplName` is `-rabbit`).
+
+For example, configuring [`log_levels`](https://www.rabbitmq.com/configure.html#config-items) would look something like `-e RABBITMQ_SERVER_ADDITIONAL_ERL_ARGS="-rabbit log_levels [{connection,error}]"`.
+
+Additional configuration keys would be specified as a list. For example, configuring both [`log_levels`](https://www.rabbitmq.com/configure.html#config-items) and [`auth_backends`](https://www.rabbitmq.com/ldap.html#overview) would look something like `-e RABBITMQ_SERVER_ADDITIONAL_ERL_ARGS="-rabbit log_levels [{connection,error}] auth_backends [rabbit_auth_backend_ldap]"`.
 
 ## Connecting to the daemon
 
