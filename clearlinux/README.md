@@ -64,3 +64,7 @@ RUN swupd bundle-add editors dev-utils
 ```
 
 Where editors contains the usual suspects for command line editors and dev-utils contains some handy development tools like strace, gdb and valgrind.
+
+# License
+
+View [Clear Linux OS for Intel Architecture](https://download.clearlinux.org/current/licenses) for the licenses of the software contained in this image.
