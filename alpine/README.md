@@ -16,13 +16,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.1` (*versions/library-3.1/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/6b5697882749ae8fb8a1c5ad6ba87d3b59ab0a2a/versions/library-3.1/Dockerfile)
--	[`3.2` (*versions/library-3.2/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/3fbbd4c387d2934b13ea2526ce82f80e20301278/versions/library-3.2/Dockerfile)
--	[`3.3` (*versions/library-3.3/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/12b2d14e105813a3ff0f4bf7c6a61058c83debad/versions/library-3.3/Dockerfile)
--	[`3.4` (*versions/library-3.4/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/7f558cc0542cf47b28686385cc0a2cc41fe10325/versions/library-3.4/Dockerfile)
--	[`3.5` (*versions/library-3.5/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/9b354b8bb3cc7b343e72ef4ec34ef38ec525728d/versions/library-3.5/Dockerfile)
--	[`3.6`, `latest` (*versions/library-3.6/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/c6cb2bbffbc92d4c35cdaf584dd1c43a860104ea/versions/library-3.6/Dockerfile)
--	[`edge` (*versions/library-edge/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/c0f432b0e678c1096e041e7e63a089444ad544c9/versions/library-edge/Dockerfile)
+-	[`3.6`, `latest` (*versions/library-3.6/x86_64/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/0450fe826ccdedf63dd70da1ad953f1aaf932225/versions/library-3.6/x86_64/Dockerfile)
+-	[`edge` (*versions/library-edge/x86_64/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/1aa169fe8d573c0b6d8fe0d446f61be0700c8008/versions/library-edge/x86_64/Dockerfile)
+-	[`3.1` (*versions/library-3.1/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/956c360824ed3629d8e132e1c13299be73120f88/versions/library-3.1/Dockerfile)
+-	[`3.2` (*versions/library-3.2/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/8708779d075ac943b5d57b60cf17a6d2dacfbf1b/versions/library-3.2/Dockerfile)
+-	[`3.3` (*versions/library-3.3/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/b8e69ac308464f18e5fc8fb2da827f7e97c890ff/versions/library-3.3/Dockerfile)
+-	[`3.4` (*versions/library-3.4/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/c32ca6c6c399fe7d2ba857635ea15d0b08ac6dc5/versions/library-3.4/Dockerfile)
+-	[`3.5` (*versions/library-3.5/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/849c93d4bd1c5490dfd146f24291a40aa430d0ed/versions/library-3.5/Dockerfile)
 
 # Quick reference
 
@@ -36,7 +36,7 @@ WARNING:
 	[Glider Labs](https://github.com/gliderlabs/docker-alpine) (an Alpine community contributor)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/alpine/)
+	[`amd64`](https://hub.docker.com/r/amd64/alpine/), [`arm32v6`](https://hub.docker.com/r/arm32v6/alpine/), [`arm64v8`](https://hub.docker.com/r/arm64v8/alpine/), [`i386`](https://hub.docker.com/r/i386/alpine/), [`ppc64le`](https://hub.docker.com/r/ppc64le/alpine/), [`s390x`](https://hub.docker.com/r/s390x/alpine/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/alpine/` directory](https://github.com/docker-library/repo-info/blob/master/repos/alpine) ([history](https://github.com/docker-library/repo-info/commits/master/repos/alpine))  
