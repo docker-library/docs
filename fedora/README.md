@@ -60,3 +60,7 @@ The `fedora:latest` tag will always point to the latest stable release.
 This image is a relatively small footprint in comparison to a standard Fedora installation. This image is generated in the [Fedora Build System](http://koji.fedoraproject.org/koji/) and is built from [this kickstart file](https://git.fedorahosted.org/cgit/spin-kickstarts.git/tree/fedora-docker-base.ks).
 
 [Fedora Rawhide](https://fedoraproject.org/wiki/Releases/Rawhide) is available via `fedora:rawhide` and any specific version of Fedora as `fedora:$version` (example: `fedora:23`).
+
+# License
+
+View [licensing information](https://fedoraproject.org/wiki/Licensing:Main) for the software contained in this image.
