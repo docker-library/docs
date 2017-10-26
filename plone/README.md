@@ -51,7 +51,7 @@ WARNING:
 
 [Plone](https://plone.org) is a free and open source content management system built on top of the Zope application server.
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/9902f062d48cc58d9d5036b5f2e9641d610bbb7c/plone/logo.png)
+![logo](https://cdn.rawgit.com/docker-library/docs/888adfc80adb42b47fa6d446d472ec3f44274be8/plone/logo.svg)
 
 ## Features
 
