@@ -4,6 +4,14 @@
 
 `nats-streaming` is a high performance streaming server for the NATS Messaging System.
 
+# Windows Docker image
+
+Due to restrictions on how the Windows Docker Image is built, running the image without argument will run the NATS Streaming server with memory based store on port 4222 and the monitoring port 8222. If you need to specify any additional argument, or modify these options, you need to specify the executable name as this:
+
+```bash
+$ docker run nats-streaming-server nats-streaming-server -p 4223 -m 8223
+```
+
 # Example usage
 
 ```bash
