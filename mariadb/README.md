@@ -254,3 +254,7 @@ Most of the normal tools will work, although their usage might be a little convo
 ```console
 $ docker exec some-mariadb sh -c 'exec mysqldump --all-databases -uroot -p"$MYSQL_ROOT_PASSWORD"' > /some/path/on/your/host/all-databases.sql
 ```
+
+# License
+
+View [license information](https://mariadb.com/kb/en/library/licensing-faq/) for the software contained in this image.

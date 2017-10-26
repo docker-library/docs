@@ -166,3 +166,7 @@ $ docker run -it --rm \
 ```
 
 Generally speaking, for WP-CLI to interact with a WordPress install, it needs access to the on-disk files of the WordPress install, and access to the database (and the easiest way to accomplish that such that `wp-config.php` does not require changes is to simply join the networking context of the existing and presumably working WordPress container, but there are many other ways to accomplish that which will be left as an exercise for the reader).
+
+# License
+
+View [license information](https://wordpress.org/about/license/) for the software contained in this image.

@@ -67,3 +67,7 @@ Finally, it strives to use new features as they become available, as long as the
 -	A somewhat experienced Linux user who wants a clean and solid Linux distribution as the foundation of your installation.
 -	A person who prefers editing configuration files with an editor to using a GUI.
 -	Someone who does not hesitate to download and compile programs from the source.
+
+# License
+
+View [license information](https://crux.nu/Main/Handbook3-3-Intro) for the software contained in this image (scroll to the "License" section at the end of the linked document).

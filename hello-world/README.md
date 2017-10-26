@@ -91,3 +91,7 @@ hello-world  latest  05a3bd381fc2  1.84kB
 # How is this image created?
 
 This image is a prime example of using the [`scratch`](https://hub.docker.com/_/scratch/) image effectively. See [`hello.c`](https://github.com/docker-library/hello-world/blob/master/hello.c) in https://github.com/docker-library/hello-world for the source code of the `hello` binary included in this image.
+
+# License
+
+View [license information](https://github.com/docker-library/hello-world/blob/master/LICENSE) for the software contained in this image.

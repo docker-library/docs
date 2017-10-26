@@ -256,3 +256,7 @@ Most of the normal tools will work, although their usage might be a little convo
 ```console
 $ docker exec some-percona sh -c 'exec mysqldump --all-databases -uroot -p"$MYSQL_ROOT_PASSWORD"' > /some/path/on/your/host/all-databases.sql
 ```
+
+# License
+
+View [license information](https://www.percona.com/doc/percona-server/LATEST/copyright.html) for the software contained in this image.

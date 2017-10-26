@@ -72,3 +72,7 @@ However the following repositories are already part of the image:
 -	OSS Updates
 -	Non-OSS
 -	Non-OSS Updates
+
+# License
+
+View the [license information](https://en.opensuse.org/openSUSE:License) for the software contained in this image. Please note that individual packages installed may have their own licenses, which you also must follow. License information is available through the built-in package manager.

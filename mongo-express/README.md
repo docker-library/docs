@@ -112,3 +112,7 @@ $ docker run -it --rm \
 ```
 
 This example links to a container name typical of `docker-compose`, changes the editor's color theme, and enables basic authentication.
+
+# License
+
+View [license information](https://github.com/mongo-express/mongo-express#license) for the software contained in this image.

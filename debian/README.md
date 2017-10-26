@@ -116,3 +116,7 @@ Additionally, the scripts in [https://github.com/debuerreotype/docker-debian-art
 These tags are an experiment in providing a slimmer base (removing some extra files that are normally not necessary within containers, such as man pages and documentation), and are definitely subject to change.
 
 See the `debuerreotype-slimify` script (`debuerreotype` linked above) for more details about what gets removed during the "slimification" process.
+
+# License
+
+View [license information](https://www.debian.org/social_contract#guidelines) for the software contained in this image.

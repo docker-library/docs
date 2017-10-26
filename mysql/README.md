@@ -253,3 +253,7 @@ Most of the normal tools will work, although their usage might be a little convo
 ```console
 $ docker exec some-mysql sh -c 'exec mysqldump --all-databases -uroot -p"$MYSQL_ROOT_PASSWORD"' > /some/path/on/your/host/all-databases.sql
 ```
+
+# License
+
+View [license information](https://www.mysql.com/about/legal/) for the software contained in this image.

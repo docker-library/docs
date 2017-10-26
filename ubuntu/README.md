@@ -126,3 +126,7 @@ deb-src http://archive.ubuntu.com/ubuntu/ trusty-security main restricted
 deb http://archive.ubuntu.com/ubuntu/ trusty-security universe
 deb-src http://archive.ubuntu.com/ubuntu/ trusty-security universe
 ```
+
+# License
+
+View [license information](https://www.ubuntu.com/about/about-ubuntu/licensing) for the software contained in this image.

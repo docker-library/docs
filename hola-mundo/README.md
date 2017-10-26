@@ -85,3 +85,7 @@ For more examples and ideas, visit:
 ```
 
 See [the `hello-world` image description](https://hub.docker.com/_/hello-world/) for more information about this image (and its construction).
+
+# License
+
+View [license information](https://github.com/docker-library/hello-world/blob/master/LICENSE) for the software contained in this image.
