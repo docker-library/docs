@@ -40,7 +40,7 @@ The components you *must* provide are the certificates and keys, and the links f
 
 If you require a different configuration, you should wrap this image with your own Dockerfile.
 
-For more details on how to configure your Notary server, please read the [docs](https://github.com/docker/notary/blob/master/docs/reference/server-config.md).
+For more details on how to configure your Notary server, please read the [docs](https://github.com/theupdateframework/notary/blob/master/docs/reference/server-config.md).
 
 # Notary Signer
 
@@ -71,10 +71,10 @@ The components you *must* provide are the certificates and keys, and the link fo
 
 If you require a different configuration, you should wrap this image with your own Dockerfile.
 
-For more details on how to configure your Notary signer, please read the [docs](https://github.com/docker/notary/blob/master/docs/reference/signer-config.md).
+For more details on how to configure your Notary signer, please read the [docs](https://github.com/theupdateframework/notary/blob/master/docs/reference/signer-config.md).
 
 ## Database Migrations
 
-Notary server and signer both use the [migrate tool](https://github.com/mattes/migrate) to manage database updates. The migration files can be found [here](https://github.com/docker/notary/tree/master/migrations/) and are an ordered list of plain SQL files. The migrate tool manages schema versions to ensure that migrations start and end at the correct point.
+Notary server and signer both use the [migrate tool](https://github.com/mattes/migrate) to manage database updates. The migration files can be found [here](https://github.com/theupdateframework/notary/tree/master/migrations/) and are an ordered list of plain SQL files. The migrate tool manages schema versions to ensure that migrations start and end at the correct point.
 
 We strongly recommend you create separate databases and users with restricted permissions such that the server cannot access the signer's database and vice versa.
