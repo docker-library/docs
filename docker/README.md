@@ -41,7 +41,7 @@ WARNING:
 	[Tianon (of the Docker Project)](https://github.com/docker-library/docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/docker/), [`windows-amd64`](https://hub.docker.com/r/winamd64/docker/)
+	[`amd64`](https://hub.docker.com/r/amd64/docker/), [`arm64v8`](https://hub.docker.com/r/arm64v8/docker/), [`ppc64le`](https://hub.docker.com/r/ppc64le/docker/), [`s390x`](https://hub.docker.com/r/s390x/docker/), [`windows-amd64`](https://hub.docker.com/r/winamd64/docker/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/docker/` directory](https://github.com/docker-library/repo-info/blob/master/repos/docker) ([history](https://github.com/docker-library/repo-info/commits/master/repos/docker))  

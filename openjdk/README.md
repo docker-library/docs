@@ -53,7 +53,7 @@ WARNING:
 	[the Docker Community](https://github.com/docker-library/openjdk)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/openjdk/), [`arm32v5`](https://hub.docker.com/r/arm32v5/openjdk/), [`arm32v7`](https://hub.docker.com/r/arm32v7/openjdk/), [`arm64v8`](https://hub.docker.com/r/arm64v8/openjdk/), [`i386`](https://hub.docker.com/r/i386/openjdk/), [`ppc64le`](https://hub.docker.com/r/ppc64le/openjdk/), [`s390x`](https://hub.docker.com/r/s390x/openjdk/), [`windows-amd64`](https://hub.docker.com/r/winamd64/openjdk/)
+	[`amd64`](https://hub.docker.com/r/amd64/openjdk/), [`arm32v5`](https://hub.docker.com/r/arm32v5/openjdk/), [`arm32v6`](https://hub.docker.com/r/arm32v6/openjdk/), [`arm32v7`](https://hub.docker.com/r/arm32v7/openjdk/), [`arm64v8`](https://hub.docker.com/r/arm64v8/openjdk/), [`i386`](https://hub.docker.com/r/i386/openjdk/), [`ppc64le`](https://hub.docker.com/r/ppc64le/openjdk/), [`s390x`](https://hub.docker.com/r/s390x/openjdk/), [`windows-amd64`](https://hub.docker.com/r/winamd64/openjdk/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/openjdk/` directory](https://github.com/docker-library/repo-info/blob/master/repos/openjdk) ([history](https://github.com/docker-library/repo-info/commits/master/repos/openjdk))  
