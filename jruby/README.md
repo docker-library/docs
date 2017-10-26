@@ -37,7 +37,7 @@ WARNING:
 	[the Docker Community](https://github.com/cpuguy83/docker-jruby)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/jruby/)
+	[`amd64`](https://hub.docker.com/r/amd64/jruby/), [`arm32v5`](https://hub.docker.com/r/arm32v5/jruby/), [`arm32v7`](https://hub.docker.com/r/arm32v7/jruby/), [`i386`](https://hub.docker.com/r/i386/jruby/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/jruby/` directory](https://github.com/docker-library/repo-info/blob/master/repos/jruby) ([history](https://github.com/docker-library/repo-info/commits/master/repos/jruby))  
