@@ -124,6 +124,61 @@ $ docker run --name=bonita -e "TENANT_LOGIN=tech_user" -e "TENANT_PASSWORD=secre
 
 Now you can access the Bonita BPM Portal on localhost:8080/bonita and login using: tech_user / secret
 
+## ... via [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/) or [`docker-compose`](https://github.com/docker/compose)
+
+Example `stack.yml` for `bonita`:
+
+```yaml
+# Use tech_user/secret as user/password credentials
+version: '3'
+
+services:
+    db:
+        image: postgres:9.3
+        environment:
+            POSTGRES_PASSWORD: example
+        restart: always
+        command:
+            - -c
+            - max_prepared_transactions=100
+    bonita:
+        image: bonita
+        ports:
+            - 8080:8080
+        environment:
+            - POSTGRES_ENV_POSTGRES_PASSWORD=example
+            - DB_VENDOR=postgres
+            - DB_HOST=db
+            - TENANT_LOGIN=tech_user
+            - TENANT_PASSWORD=secret
+            - PLATFORM_LOGIN=pfadmin
+            - PLATFORM_PASSWORD=pfsecret
+        restart: always
+        depends_on:
+            - db
+        entrypoint:
+            - bash
+            - -c
+            - |
+              set -e
+              echo 'Waiting for Postgres to be available'
+              export PGPASSWORD="$$POSTGRES_ENV_POSTGRES_PASSWORD"
+              maxTries=10
+              while [ "$$maxTries" -gt 0 ] && ! psql -h "$$DB_HOST" -U 'postgres' -c '\l'; do
+                  sleep 1
+              done
+              echo
+              if [ "$$maxTries" -le 0 ]; then
+                  echo >&2 'error: unable to contact Postgres after 10 tries'
+                  exit 1
+              fi
+              exec /opt/files/startup.sh
+```
+
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/911024a3d9f3d3695a748103c7b94cd60ed18805/bonita/stack.yml)
+
+Run `docker stack deploy -c stack.yml bonita` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
+
 ## Where to store data
 
 Most of the data are stored in a database and can be stored outside the Bonita container as described above using the PostgreSQL or MySQL container. However, some data remains inside the Bonita bundle. Bonita Home is a folder, called `bonita`, which contains configuration, working, and temporary folders and files. There are also log files inside the `logs` folder.
