@@ -44,8 +44,9 @@ for image in "${images[@]}"; do
 		getHelp="$(cat "$repo/get-help.md" 2>/dev/null || cat "$helperDir/get-help.md")"
 
 		license="$(cat "$repo/license.md" 2>/dev/null || true)"
+		licenseCommon="$(cat "$repo/license-common.md" 2>/dev/null || cat "$helperDir/license-common.md")"
 		if [ "$license" ]; then
-			license=$'\n\n''# License'$'\n\n'"$license"
+			license=$'\n\n''# License'$'\n\n'"$license"$'\n\n'"$licenseCommon"
 		fi
 
 		logo=
