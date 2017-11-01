@@ -28,7 +28,7 @@ WARNING:
 -	[`8.9.0-slim`, `8.9-slim`, `8-slim`, `carbon-slim` (*8.9/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/39a5c8a3be7fff2ddc67a2e72919d0a3841b235f/8.9/slim/Dockerfile)
 -	[`8.9.0-stretch`, `8.9-stretch`, `8-stretch`, `carbon-stretch` (*8.9/stretch/Dockerfile*)](https://github.com/nodejs/docker-node/blob/39a5c8a3be7fff2ddc67a2e72919d0a3841b235f/8.9/stretch/Dockerfile)
 -	[`8.9.0-wheezy`, `8.9-wheezy`, `8-wheezy`, `carbon-wheezy` (*8.9/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/39a5c8a3be7fff2ddc67a2e72919d0a3841b235f/8.9/wheezy/Dockerfile)
--	[`6.11.5`, `6.11`, `6`, `boron` (*6.11/Dockerfile*)](https://github.com/nodejs/docker-node/blob/94a739297fcd60ef969b478d4e581a6d8299a94d/6.11/Dockerfile)
+-	[`6.11.5`, `6.11`, `6`, `boron` (*6.11/Dockerfile*)](https://github.com/nodejs/docker-node/blob/222c645bfa57e415d57fc4ac2088262c8c3cef70/6.11/Dockerfile)
 -	[`6.11.5-alpine`, `6.11-alpine`, `6-alpine`, `boron-alpine` (*6.11/alpine/Dockerfile*)](https://github.com/nodejs/docker-node/blob/94a739297fcd60ef969b478d4e581a6d8299a94d/6.11/alpine/Dockerfile)
 -	[`6.11.5-onbuild`, `6.11-onbuild`, `6-onbuild`, `boron-onbuild` (*6.11/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/7701eea6fe125530894b3e83f1e9d385e9ee509f/6.11/onbuild/Dockerfile)
 -	[`6.11.5-slim`, `6.11-slim`, `6-slim`, `boron-slim` (*6.11/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/94a739297fcd60ef969b478d4e581a6d8299a94d/6.11/slim/Dockerfile)
@@ -53,7 +53,7 @@ WARNING:
 	[The Node.js Docker Team](https://github.com/nodejs/docker-node)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/node/), [`arm32v7`](https://hub.docker.com/r/arm32v7/node/), [`arm64v8`](https://hub.docker.com/r/arm64v8/node/), [`ppc64le`](https://hub.docker.com/r/ppc64le/node/), [`s390x`](https://hub.docker.com/r/s390x/node/)
+	[`amd64`](https://hub.docker.com/r/amd64/node/), [`arm32v6`](https://hub.docker.com/r/arm32v6/node/), [`arm32v7`](https://hub.docker.com/r/arm32v7/node/), [`arm64v8`](https://hub.docker.com/r/arm64v8/node/), [`ppc64le`](https://hub.docker.com/r/ppc64le/node/), [`s390x`](https://hub.docker.com/r/s390x/node/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/node/` directory](https://github.com/docker-library/repo-info/blob/master/repos/node) ([history](https://github.com/docker-library/repo-info/commits/master/repos/node))  
