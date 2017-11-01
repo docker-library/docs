@@ -2,21 +2,14 @@
 version: '3'
 
 services:
-
     db:
         image: postgres:9.3
         environment:
             POSTGRES_PASSWORD: example
-        entrypoint: &postgres-script
-           - sh
-           - -c
-           - |
-             set -e
-             echo '#!/bin/bash' > /docker-entrypoint-initdb.d/bonita.sh
-             echo 'sed -i "s/^.*max_prepared_transactions\s*=\s*\(.*\)$$/max_prepared_transactions = 100/" "$$PGDATA"/postgresql.conf' >> /docker-entrypoint-initdb.d/bonita.sh
-             chmod +x /docker-entrypoint-initdb.d/bonita.sh
-             /docker-entrypoint.sh postgres
-
+        restart: always
+        command:
+            - -c
+            - max_prepared_transactions=100
     bonita:
         image: bonita
         ports:
@@ -29,28 +22,23 @@ services:
             - TENANT_PASSWORD=secret
             - PLATFORM_LOGIN=pfadmin
             - PLATFORM_PASSWORD=pfsecret
+        restart: always
         depends_on:
             - db
-        entrypoint: &bonita-script
-           - sh
-           - -c
-           - |
-             set -e
-             cat > /wait-for-postgres.sh <<- EOM
-             #!/bin/bash
-             # wait-for-postgres.sh
-             set -e
-             host="\$$1"
-             shift
-             cmd="\$$@"
-             PGPASSWORD=\$$POSTGRES_ENV_POSTGRES_PASSWORD
-             export PGPASSWORD
-             until psql -h "\$$host" -U "postgres" -c '\l'; do
-               >&2 echo "Postgres is unavailable - sleeping"
-               sleep 1
-             done
-             >&2 echo "Postgres is up - executing command"
-             exec \$$cmd
-             EOM
-             chmod +x /wait-for-postgres.sh
-             /wait-for-postgres.sh $$DB_HOST /opt/files/startup.sh
+        entrypoint:
+            - bash
+            - -c
+            - |
+              set -e
+              echo 'Waiting for Postgres to be available'
+              export PGPASSWORD="$$POSTGRES_ENV_POSTGRES_PASSWORD"
+              maxTries=10
+              while [ "$$maxTries" -gt 0 ] && ! psql -h "$$DB_HOST" -U 'postgres' -c '\l'; do
+                  sleep 1
+              done
+              echo
+              if [ "$$maxTries" -le 0 ]; then
+                  echo >&2 'error: unable to contact Postgres after 10 tries'
+                  exit 1
+              fi
+              exec /opt/files/startup.sh
