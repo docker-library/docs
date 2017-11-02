@@ -218,3 +218,9 @@ Currently, this is only supported for `REDMINE_DB_MYSQL`, `REDMINE_DB_POSTGRES`,
 # License
 
 [Redmine](https://www.redmine.org/projects/redmine/wiki) is open source and released under the terms of the [GNU General Public License v2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html) (GPL).
+
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
+
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `redmine/` directory](https://github.com/docker-library/repo-info/tree/master/repos/redmine).
+
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

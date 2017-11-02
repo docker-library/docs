@@ -126,3 +126,9 @@ See the application snippet above in more detail in the [example snap applicatio
 # License
 
 This image is licensed under the MIT License (see [LICENSE](https://github.com/darinmorrison/docker-haskell/blob/master/LICENSE)), and includes software licensed under the [Glasgow Haskell Compiler License](https://www.haskell.org/ghc/license) (BSD-style).
+
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
+
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `haskell/` directory](https://github.com/docker-library/repo-info/tree/master/repos/haskell).
+
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.
