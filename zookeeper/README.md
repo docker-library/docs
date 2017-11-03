@@ -32,7 +32,7 @@ WARNING:
 	[the Docker Community](https://github.com/31z4/zookeeper-docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/zookeeper/)
+	[`amd64`](https://hub.docker.com/r/amd64/zookeeper/), [`arm32v6`](https://hub.docker.com/r/arm32v6/zookeeper/), [`arm64v8`](https://hub.docker.com/r/arm64v8/zookeeper/), [`i386`](https://hub.docker.com/r/i386/zookeeper/), [`ppc64le`](https://hub.docker.com/r/ppc64le/zookeeper/), [`s390x`](https://hub.docker.com/r/s390x/zookeeper/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/zookeeper/` directory](https://github.com/docker-library/repo-info/blob/master/repos/zookeeper) ([history](https://github.com/docker-library/repo-info/commits/master/repos/zookeeper))  
