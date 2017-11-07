@@ -16,8 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `1.6.1`, `1.6`, `1` (*1.6.1/Dockerfile*)](https://github.com/klaemo/docker-couchdb/blob/29ed69965ed616a9d0df9a6ffa081773d86c78bc/1.6.1/Dockerfile)
--	[`1.6.1-couchperuser`, `1.6-couchperuser`, `1-couchperuser` (*1.6.1-couchperuser/Dockerfile*)](https://github.com/klaemo/docker-couchdb/blob/29ed69965ed616a9d0df9a6ffa081773d86c78bc/1.6.1-couchperuser/Dockerfile)
+-	[`latest`, `2.1.1`, `2.1`, `2` (*2.1.1/Dockerfile*)](https://github.com/apache/couchdb-docker/blob/1a7c4254c158a194ff195da6ebfed910d24a95b7/2.1.1/Dockerfile)
+-	[`1.7.0`, `1.7`, `1` (*1.7.0/Dockerfile*)](https://github.com/apache/couchdb-docker/blob/1a7c4254c158a194ff195da6ebfed910d24a95b7/1.7.0/Dockerfile)
+-	[`1.7.0-couchperuser`, `1.7-couchperuser`, `1-couchperuser` (*1.7.0-couchperuser/Dockerfile*)](https://github.com/apache/couchdb-docker/blob/1a7c4254c158a194ff195da6ebfed910d24a95b7/1.7.0-couchperuser/Dockerfile)
 
 # Quick reference
 
