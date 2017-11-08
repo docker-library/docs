@@ -86,3 +86,13 @@ Comments on Docker Hub are not actively monitored by the Amazon Linux team.
 Repository URLs for the Amazon Linux container image on the EC2 Container Registry are available at http://docs.aws.amazon.com/AmazonECR/latest/userguide/amazon_linux_container_image.html
 
 Visit the [EC2 Container Registry Getting Started](https://aws.amazon.com/ecr/getting-started/) page for more information on how to start.
+
+# License
+
+Amazon Linux is available under the [GNU General Public License, version 2.0](https://github.com/aws/amazon-linux-docker-images/blob/master/LICENSE). Individual software packages are available under their own licenses; run `rpm -qi [package name]` or check `/usr/share/doc/[package name]-*` and `/usr/share/licenses/[package name]-*` for details.
+
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
+
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `amazonlinux/` directory](https://github.com/docker-library/repo-info/tree/master/repos/amazonlinux).
+
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.
