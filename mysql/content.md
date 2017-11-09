@@ -28,7 +28,7 @@ $ docker run --name some-%%REPO%% --network %%REPO%%-nw -e MYSQL_ROOT_PASSWORD=m
 
 ## Connect to MySQL from an application in another Docker container
 
-This image exposes the standard MySQL port (3306), so the MySQL instance is available to other application containers in the same docker network. To use the MySQL contaier in other containers, specify the its name as hostname. Start your application container like this in order to start it in the same docker network:
+This image exposes the standard MySQL port (3306), so the MySQL instance is available to other application containers in the same docker network. To use the MySQL contaier in other containers, specify the name as hostname. Start your application container like this in order to start it in the same docker network:
 
 ```console
 $ docker run --name some-app --network %%REPO%%-nw -d application-that-uses-mysql
