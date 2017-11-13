@@ -17,8 +17,8 @@ WARNING:
 # Supported tags and respective `Dockerfile` links
 
 -	[`latest`, `2.1.1`, `2.1`, `2` (*2.1.1/Dockerfile*)](https://github.com/apache/couchdb-docker/blob/1a7c4254c158a194ff195da6ebfed910d24a95b7/2.1.1/Dockerfile)
--	[`1.7.0`, `1.7`, `1` (*1.7.0/Dockerfile*)](https://github.com/apache/couchdb-docker/blob/1a7c4254c158a194ff195da6ebfed910d24a95b7/1.7.0/Dockerfile)
--	[`1.7.0-couchperuser`, `1.7-couchperuser`, `1-couchperuser` (*1.7.0-couchperuser/Dockerfile*)](https://github.com/apache/couchdb-docker/blob/1a7c4254c158a194ff195da6ebfed910d24a95b7/1.7.0-couchperuser/Dockerfile)
+-	[`1.7.1`, `1.7`, `1` (*1.7.1/Dockerfile*)](https://github.com/apache/couchdb-docker/blob/029760550b8af66f49bf439ddbabfbd040e9727c/1.7.1/Dockerfile)
+-	[`1.7.1-couchperuser`, `1.7-couchperuser`, `1-couchperuser` (*1.7.1-couchperuser/Dockerfile*)](https://github.com/apache/couchdb-docker/blob/029760550b8af66f49bf439ddbabfbd040e9727c/1.7.1-couchperuser/Dockerfile)
 
 # Quick reference
 

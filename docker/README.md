@@ -16,7 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`17.11.0-ce-rc2`, `17.11-rc`, `rc`, `test` (*17.11-rc/Dockerfile*)](https://github.com/docker-library/docker/blob/6e7677bec19c214ef5445c0d2b96c56e42098ca1/17.11-rc/Dockerfile)
+-	[`17.11.0-ce-rc2`, `17.11-rc`, `rc`, `test` (*17.11-rc/Dockerfile*)](https://github.com/docker-library/docker/blob/146b0d04de69f9aaace6a5a3c22ac4e8e9744fd3/17.11-rc/Dockerfile)
 -	[`17.11.0-ce-rc2-dind`, `17.11-rc-dind`, `rc-dind`, `test-dind` (*17.11-rc/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/6e7677bec19c214ef5445c0d2b96c56e42098ca1/17.11-rc/dind/Dockerfile)
 -	[`17.11.0-ce-rc2-git`, `17.11-rc-git`, `rc-git`, `test-git` (*17.11-rc/git/Dockerfile*)](https://github.com/docker-library/docker/blob/6e7677bec19c214ef5445c0d2b96c56e42098ca1/17.11-rc/git/Dockerfile)
 -	[`17.11.0-ce-rc2-windowsservercore`, `17.11-rc-windowsservercore`, `rc-windowsservercore`, `test-windowsservercore` (*17.11-rc/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/docker/blob/6e7677bec19c214ef5445c0d2b96c56e42098ca1/17.11-rc/windows/windowsservercore/Dockerfile)
@@ -28,10 +28,6 @@ WARNING:
 -	[`17.09.0-ce-dind`, `17.09.0-dind`, `17.09-dind`, `stable-dind` (*17.09/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/00de5231b507c989ce900df2ef3f1abf4ce7e19c/17.09/dind/Dockerfile)
 -	[`17.09.0-ce-git`, `17.09.0-git`, `17.09-git`, `stable-git` (*17.09/git/Dockerfile*)](https://github.com/docker-library/docker/blob/a6b52c73daa8283cd861f41f55e53426008708ac/17.09/git/Dockerfile)
 -	[`17.09.0-ce-windowsservercore`, `17.09.0-windowsservercore`, `17.09-windowsservercore`, `stable-windowsservercore` (*17.09/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/docker/blob/2f6926c4fb37274b90fae3ba6c3320619a8d0289/17.09/windows/windowsservercore/Dockerfile)
--	[`17.06.2-ce`, `17.06.2`, `17.06` (*17.06/Dockerfile*)](https://github.com/docker-library/docker/blob/af5b6cd45b8d1aeb534589d99f92b5a4dc886f5d/17.06/Dockerfile)
--	[`17.06.2-ce-dind`, `17.06.2-dind`, `17.06-dind` (*17.06/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/00de5231b507c989ce900df2ef3f1abf4ce7e19c/17.06/dind/Dockerfile)
--	[`17.06.2-ce-git`, `17.06.2-git`, `17.06-git` (*17.06/git/Dockerfile*)](https://github.com/docker-library/docker/blob/168a6d227d021c6d38c3986b7c668702ec172fa7/17.06/git/Dockerfile)
--	[`17.06.2-ce-windowsservercore`, `17.06.2-windowsservercore`, `17.06-windowsservercore` (*17.06/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/docker/blob/2f6926c4fb37274b90fae3ba6c3320619a8d0289/17.06/windows/windowsservercore/Dockerfile)
 
 # Quick reference
 
