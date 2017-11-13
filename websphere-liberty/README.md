@@ -137,6 +137,10 @@ The images are designed to support a number of different usage patterns. The fol
 	  --volumes-from app websphere-liberty:webProfile7
 	```
 
+# Providing your own keystore/truststore
+
+By default, when a `websphere-liberty` image starts, a Liberty server XML snippet is generated in `/config/configDropins/defaults/keystore.xml` that specifies a `keyStore` stanza with a generated password. This causes Liberty to generate a default keystore and truststore with a self-signed certificate when it starts (see the [Knowledge Center](https://www.ibm.com/support/knowledgecenter/SSEQTP_liberty/com.ibm.websphere.wlp.doc/ae/rwlp_liberty_ssl_defaults.html) for more information). When providing your own keystore/truststore, this default behavior can be disabled by ensuring that a file already exists at `/config/configDropins/defaults/keystore.xml` (for example, added as part of your Docker build). This file can contain your keystore configuration or could just contain an empty `<server></server>` stanza.
+
 # Using IBM JRE Class data sharing
 
 The IBM JRE provides a feature [Class data sharing](http://www-01.ibm.com/support/knowledgecenter/SSYKE2_8.0.0/com.ibm.java.lnx.80.doc/diag/understanding/shared_classes.html) which offers transparent and dynamic sharing of data between multiple Java Virtual Machines running on the same host by using shared memory backed by a file. When running the Liberty Docker image, it looks for the file at `/opt/ibm/wlp/output/.classCache`. To benefit from Class data sharing, this location needs to be shared between containers either through the host or a data volume container.
