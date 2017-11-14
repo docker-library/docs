@@ -25,9 +25,9 @@ WARNING:
 -	[`4.8.3-php7.1-apache`, `4.8-php7.1-apache`, `4-php7.1-apache`, `php7.1-apache`, `4.8.3-php7.1`, `4.8-php7.1`, `4-php7.1`, `php7.1` (*php7.1/apache/Dockerfile*)](https://github.com/docker-library/wordpress/blob/f7acf35a2b49b7a45d71b4c5fc8797042f34d4bd/php7.1/apache/Dockerfile)
 -	[`4.8.3-php7.1-fpm`, `4.8-php7.1-fpm`, `4-php7.1-fpm`, `php7.1-fpm` (*php7.1/fpm/Dockerfile*)](https://github.com/docker-library/wordpress/blob/f7acf35a2b49b7a45d71b4c5fc8797042f34d4bd/php7.1/fpm/Dockerfile)
 -	[`4.8.3-php7.1-fpm-alpine`, `4.8-php7.1-fpm-alpine`, `4-php7.1-fpm-alpine`, `php7.1-fpm-alpine` (*php7.1/fpm-alpine/Dockerfile*)](https://github.com/docker-library/wordpress/blob/f7acf35a2b49b7a45d71b4c5fc8797042f34d4bd/php7.1/fpm-alpine/Dockerfile)
--	[`cli-1.4.0`, `cli-1.4`, `cli-1`, `cli`, `cli-1.4.0-php5.6`, `cli-1.4-php5.6`, `cli-1-php5.6`, `cli-php5.6` (*php5.6/cli/Dockerfile*)](https://github.com/docker-library/wordpress/blob/10f3c09d94d8e8d147f5ab76c538dc2356032d46/php5.6/cli/Dockerfile)
--	[`cli-1.4.0-php7.0`, `cli-1.4-php7.0`, `cli-1-php7.0`, `cli-php7.0` (*php7.0/cli/Dockerfile*)](https://github.com/docker-library/wordpress/blob/10f3c09d94d8e8d147f5ab76c538dc2356032d46/php7.0/cli/Dockerfile)
--	[`cli-1.4.0-php7.1`, `cli-1.4-php7.1`, `cli-1-php7.1`, `cli-php7.1` (*php7.1/cli/Dockerfile*)](https://github.com/docker-library/wordpress/blob/10f3c09d94d8e8d147f5ab76c538dc2356032d46/php7.1/cli/Dockerfile)
+-	[`cli-1.4.1`, `cli-1.4`, `cli-1`, `cli`, `cli-1.4.1-php5.6`, `cli-1.4-php5.6`, `cli-1-php5.6`, `cli-php5.6` (*php5.6/cli/Dockerfile*)](https://github.com/docker-library/wordpress/blob/e3c8cccbe1bec9e59fc82f7e743e4c1665a9e22d/php5.6/cli/Dockerfile)
+-	[`cli-1.4.1-php7.0`, `cli-1.4-php7.0`, `cli-1-php7.0`, `cli-php7.0` (*php7.0/cli/Dockerfile*)](https://github.com/docker-library/wordpress/blob/e3c8cccbe1bec9e59fc82f7e743e4c1665a9e22d/php7.0/cli/Dockerfile)
+-	[`cli-1.4.1-php7.1`, `cli-1.4-php7.1`, `cli-1-php7.1`, `cli-php7.1` (*php7.1/cli/Dockerfile*)](https://github.com/docker-library/wordpress/blob/e3c8cccbe1bec9e59fc82f7e743e4c1665a9e22d/php7.1/cli/Dockerfile)
 
 # Quick reference
 
