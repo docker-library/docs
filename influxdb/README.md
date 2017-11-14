@@ -18,8 +18,8 @@ WARNING:
 
 -	[`1.3`, `1.3.7` (*influxdb/1.3/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/9ee53b2d2e224da5cd4debb3b7d4e934c882fdc4/influxdb/1.3/Dockerfile)
 -	[`1.3-alpine`, `1.3.7-alpine` (*influxdb/1.3/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/9ee53b2d2e224da5cd4debb3b7d4e934c882fdc4/influxdb/1.3/alpine/Dockerfile)
--	[`1.4`, `1.4.0`, `latest` (*influxdb/1.4/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/9ee53b2d2e224da5cd4debb3b7d4e934c882fdc4/influxdb/1.4/Dockerfile)
--	[`1.4-alpine`, `1.4.0-alpine`, `alpine` (*influxdb/1.4/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/9ee53b2d2e224da5cd4debb3b7d4e934c882fdc4/influxdb/1.4/alpine/Dockerfile)
+-	[`1.4`, `1.4.1`, `latest` (*influxdb/1.4/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/3cda121bba1f69a6408f1110d69b0933e9a8335f/influxdb/1.4/Dockerfile)
+-	[`1.4-alpine`, `1.4.1-alpine`, `alpine` (*influxdb/1.4/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/3cda121bba1f69a6408f1110d69b0933e9a8335f/influxdb/1.4/alpine/Dockerfile)
 
 # Quick reference
 
