@@ -1,1 +1,1 @@
-Vaibhav Sood <vaibhavs@us.ibm.com> (@vaibhavsood)
+[Apache Geode](%%GITHUB-REPO%%)
