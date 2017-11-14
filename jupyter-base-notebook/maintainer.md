@@ -1,1 +1,1 @@
-Vaibhav Sood <vaibhavs@us.ibm.com> (@vaibhavsood)
+[Jupyter Base Notebook](%%GITHUB-REPO%%)
