@@ -1,0 +1,1 @@
+View [license information](https://github.com/euleros/euleros-docker-images/blob/master/LICENSE) for the software contained in this image and [EULA](http://developer.huawei.com/ict/en/site-euleros/article/privacy-policy) for the end user license agreement.
