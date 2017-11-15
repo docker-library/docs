@@ -64,7 +64,7 @@ Linux/Unix, Other V2.0
 
 ## Resources
 
-[Administrators Guide]http://developer.huawei.com/ict/en/doc/site-euleros-administrators-guide-en/index.html/en-us)
+[Administrators Guide](http://developer.huawei.com/ict/en/doc/site-euleros-administrators-guide-en/index.html/en-us)
 
 # License
 

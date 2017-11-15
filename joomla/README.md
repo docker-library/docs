@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.8.0-apache`, `3.8-apache`, `3-apache`, `apache`, `3.8.0`, `3.8`, `3`, `latest` (*apache/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/7f460a60ab1d239f55a38934abe530294d4fab62/apache/Dockerfile)
--	[`3.8.0-apache-php7`, `3.8-apache-php7`, `3-apache-php7`, `apache-php7` (*apache-php7/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/7f460a60ab1d239f55a38934abe530294d4fab62/apache-php7/Dockerfile)
--	[`3.8.0-fpm`, `3.8-fpm`, `3-fpm`, `fpm` (*fpm/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/7f460a60ab1d239f55a38934abe530294d4fab62/fpm/Dockerfile)
--	[`3.8.0-fpm-php7`, `3.8-fpm-php7`, `3-fpm-php7`, `fpm-php7` (*fpm-php7/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/7f460a60ab1d239f55a38934abe530294d4fab62/fpm-php7/Dockerfile)
+-	[`3.8.2-apache`, `3.8-apache`, `3-apache`, `apache`, `3.8.2`, `3.8`, `3`, `latest` (*apache/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/9cc09b86340bd4eabce331807e6f9ec5adbfcd1a/apache/Dockerfile)
+-	[`3.8.2-apache-php7`, `3.8-apache-php7`, `3-apache-php7`, `apache-php7` (*apache-php7/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/9cc09b86340bd4eabce331807e6f9ec5adbfcd1a/apache-php7/Dockerfile)
+-	[`3.8.2-fpm`, `3.8-fpm`, `3-fpm`, `fpm` (*fpm/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/9cc09b86340bd4eabce331807e6f9ec5adbfcd1a/fpm/Dockerfile)
+-	[`3.8.2-fpm-php7`, `3.8-fpm-php7`, `3-fpm-php7`, `fpm-php7` (*fpm-php7/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/9cc09b86340bd4eabce331807e6f9ec5adbfcd1a/fpm-php7/Dockerfile)
 
 # Quick reference
 
