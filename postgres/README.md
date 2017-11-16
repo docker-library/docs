@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`10.1`, `10`, `latest` (*10/Dockerfile*)](https://github.com/docker-library/postgres/blob/3d0487a6caf77a2f0a66262158ff2719d1c22c94/10/Dockerfile)
--	[`10.1-alpine`, `10-alpine`, `alpine` (*10/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/60db3b9da9c3a83057daee618d47864ac271bebf/10/alpine/Dockerfile)
+-	[`10.1`, `10`, `latest` (*10/Dockerfile*)](https://github.com/docker-library/postgres/blob/1805adb0693d9602bfb19b6bf2583b311c43b749/10/Dockerfile)
+-	[`10.1-alpine`, `10-alpine`, `alpine` (*10/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/1805adb0693d9602bfb19b6bf2583b311c43b749/10/alpine/Dockerfile)
 -	[`9.6.6`, `9.6`, `9` (*9.6/Dockerfile*)](https://github.com/docker-library/postgres/blob/82e8101ff612b492507f4efc2120963b29f4188d/9.6/Dockerfile)
 -	[`9.6.6-alpine`, `9.6-alpine`, `9-alpine` (*9.6/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/3d152d1a0d08cf52a1392b58243ff3c423588ccc/9.6/alpine/Dockerfile)
 -	[`9.5.10`, `9.5` (*9.5/Dockerfile*)](https://github.com/docker-library/postgres/blob/b84ddd1619ee3a7f6e318bb9ac33f39818b3b548/9.5/Dockerfile)
@@ -152,9 +152,11 @@ This optional environment variable can be used to define a different name for th
 
 This optional environment variable can be used to send arguments to `postgres initdb`. The value is a space separated string of arguments as `postgres initdb` would expect them. This is useful for adding functionality like data page checksums: `-e POSTGRES_INITDB_ARGS="--data-checksums"`.
 
-### `POSTGRES_INITDB_XLOGDIR`
+### `POSTGRES_INITDB_WALDIR`
 
 This optional environment variable can be used to define another location for the Postgres transaction log. By default the transaction log is stored in a subdirectory of the main Postgres data folder (`PGDATA`). Sometimes it can be desireable to store the transaction log in a different directory which may be backed by storage with different performance or reliability characteristics.
+
+**Note:** on PostgreSQL 9.x, this variable is `POSTGRES_INITDB_XLOGDIR` (reflecting [the changed name of the `--xlogdir` flag to `--waldir` in PostgreSQL 10+](https://wiki.postgresql.org/wiki/New_in_postgres_10#Renaming_of_.22xlog.22_to_.22wal.22_Globally_.28and_location.2Flsn.29)).
 
 ## Docker Secrets
 
