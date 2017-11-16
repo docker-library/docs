@@ -4,11 +4,29 @@ set -Eeuo pipefail
 cd "$(dirname "$(readlink -f "$BASH_SOURCE")")"
 helperDir='.template-helpers'
 
+# usage: ./update.sh [--namespace NAMESPACE] [[NAMESPACE/]IMAGE ...]
+#    ie: ./update.sh
+#        ./update.sh debian golang
+#        ./update.sh --namespace tianontesting debian golang
+#        ./update.sh tianontesting/debian tianontestingmore/golang
+#        BASHBREW_ARCH=windows-amd64 BASHBREW_ARCH_NAMESPACES='...' ./update.sh --namespace winamd64
+
+forceNamespace=
+if [ "${1:-}" = '--namespace' ]; then
+	shift
+	forceNamespace="$1"
+	shift
+fi
+
 images=( "$@" )
 if [ ${#images[@]} -eq 0 ]; then
 	images=( */ )
 fi
 images=( "${images[@]%/}" )
+
+if [ -n "$forceNamespace" ]; then
+	images=( "${images[@]/#/"$forceNamespace/"}" )
+fi
 
 replace_field() {
 	targetFile="$1"
