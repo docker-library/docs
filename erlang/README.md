@@ -21,8 +21,8 @@ WARNING:
 -	[`20.1.5-alpine`, `20.1-alpine`, `20-alpine`, `alpine` (*20/alpine/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/1b5d14663cffa24c255eb19902f6bc3b7f546b49/20/alpine/Dockerfile)
 -	[`19.3.6.3`, `19.3.6`, `19.3`, `19` (*19/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/a9d7a0c3cc129f0e3d2f4ec0cf957a432b7d652e/19/Dockerfile)
 -	[`19.3.6.3-slim`, `19.3.6-slim`, `19.3-slim`, `19-slim` (*19/slim/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/a9d7a0c3cc129f0e3d2f4ec0cf957a432b7d652e/19/slim/Dockerfile)
--	[`18.3.4.5`, `18.3.4`, `18.3`, `18` (*18/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/a75738f344af1f177f828cbaa6e8a44d15749d5a/18/Dockerfile)
--	[`18.3.4.5-slim`, `18.3.4-slim`, `18.3-slim`, `18-slim` (*18/slim/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/a75738f344af1f177f828cbaa6e8a44d15749d5a/18/slim/Dockerfile)
+-	[`18.3.4.6`, `18.3.4`, `18.3`, `18` (*18/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/edf38952cc361ff409f0117ea91581180a80a221/18/Dockerfile)
+-	[`18.3.4.6-slim`, `18.3.4-slim`, `18.3-slim`, `18-slim` (*18/slim/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/edf38952cc361ff409f0117ea91581180a80a221/18/slim/Dockerfile)
 -	[`17.5.6.9`, `17.5.6`, `17.5`, `17` (*17/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/a75738f344af1f177f828cbaa6e8a44d15749d5a/17/Dockerfile)
 -	[`17.5.6.9-slim`, `17.5.6-slim`, `17.5-slim`, `17-slim` (*17/slim/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/a75738f344af1f177f828cbaa6e8a44d15749d5a/17/slim/Dockerfile)
 
