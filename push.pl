@@ -118,7 +118,7 @@ while (my $repo = shift) { # '/library/hylang', '/tianon/perl', etc
 	
 	my $repoUrl = 'https://hub.docker.com/v2/repositories' . $repo . '/';
 	my $repoTx = $ua->get($repoUrl => $authorizationHeader);
-	warn 'failed to get: ' . $repoUrl and next unless $repoTx->success;
+	warn 'warning: failed to get: ' . $repoUrl . ' (skipping)' and next unless $repoTx->success;
 	
 	my $repoDetails = $repoTx->res->json;
 	$repoDetails->{description} //= '';
