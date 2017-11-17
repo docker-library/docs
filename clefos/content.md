@@ -18,13 +18,7 @@ The `VERSION` file contains the id of the current ClefOS version and will be add
 
 ### Rolling builds
 
-The ClefOS Project offers regularly updated images for all active releases. These images will be updated monthly or as needed for emergency fixes. These rolling updates are tagged with the major version number only. For example: `docker pull clefos:7`
-
-### Minor tags
-
-Additionally, images with minor version tags that correspond to install media are also offered. **These images DO NOT recieve updates** as they are intended to match installation iso contents. If you choose to use these images it is highly recommended that you include `RUN yum -y update && yum clean all` in your Dockerfile, or otherwise address any potential security concerns. To use these images, please specify the minor version tag:
-
-For example: `docker pull clefos:7.3.1611`
+The ClefOS Project offers regularly updated images for all active releases. These images will be updated monthly or as needed for emergency fixes. These rolling updates are tagged with the major version number and minor tags as well. For example, if 7.4.1708 is the most current then the build will result in `clefos:7` and `clefos:7.4.1708`. When the next minor level is available then `clefos:7` and `clefos:7.x.yymm` will be identical.
 
 ### Overlayfs and yum
 
@@ -36,7 +30,7 @@ By default, the ClefOS containers are built using yum's `nodocs` option, which h
 
 ## Systemd integration
 
-Systemd is now included in both the clefos:7 and clefos:latest base containers, but it is not active by default. In order to use systemd, you will need to include text similar to the example Dockerfile below:
+Systemd is not included in both the clefos:7 and clefos:latest base containers, but can be created from these bases:
 
 ### Dockerfile for systemd base image
 
