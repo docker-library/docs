@@ -31,7 +31,7 @@ $ docker run --name some-app --add-host mysql:$(docker exec some-%%REPO%% hostna
 The following command starts another `%%IMAGE%%` container instance and runs the `mysql` command line client against your original `%%IMAGE%%` container, allowing you to execute SQL statements against your database instance:
 
 ```console
-$ docker run -it --add-host mysql:$(docker exec some-%%REPO%% hostname -I) --rm %%IMAGE%% sh -c 'exec mysql -hmysql -uroot -pmy-secret-pw'
+$ docker run -it --add-host mysql:$(docker exec some-%%REPO%% hostname -I) --rm %%IMAGE%% mysql -hmysql -uroot -pmy-secret-pw
 ```
 
 ... where `some-%%REPO%%` is the name of your original `%%IMAGE%%` container.
