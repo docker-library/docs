@@ -128,6 +128,9 @@ for image in "${images[@]}"; do
 				echo >&2 'error: missing TAGS for '"$repo"'!'
 				exit 1
 			fi
+		elif [ -n "$ARCH_SPECIFIC_DOCS" ]; then
+			jenkinsJobUrl="https://doi-janky.infosiftr.net/job/multiarch/job/$BASHBREW_ARCH/job/$repo/"
+			partial+=$'\n\n''[![Build Status]('"${jenkinsJobUrl%/}"'/badge/icon) (`%%IMAGE%%` build job)]('"$jenkinsJobUrl"')'
 		fi
 		replace_field "$targetFile" 'TAGS' "$partial"
 
