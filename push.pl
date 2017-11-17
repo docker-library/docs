@@ -19,10 +19,12 @@ my $githubBase = 'https://github.com/docker-library/docs/tree/master';
 my $username;
 my $password;
 my $batchmode;
+my $namespace;
 GetOptions(
 	'u|username=s' => \$username,
 	'p|password=s' => \$password,
 	'batchmode!' => \$batchmode,
+	'namespace=s' => \$namespace,
 ) or die 'bad args';
 
 die 'no repos specified' unless @ARGV;
@@ -108,15 +110,15 @@ sub prompt_for_edit {
 	return $currentText;
 }
 
-while (my $repo = shift) { # '/library/hylang', '/tianon/perl', etc
-	$repo =~ s!/+$!!;
-	$repo = '/library/' . $repo unless $repo =~ m!/!;
-	$repo = '/' . $repo unless $repo =~ m!^/!;
+while (my $repo = shift) { # 'library/hylang', 'tianon/perl', etc
+	$repo =~ s!^/+|/+$!!; # trim extra slashes (from "*/" globbing, for example)
+	$repo = $namespace . '/' . $repo if $namespace; # ./push.pl --namespace xxx ...
+	$repo = 'library/' . $repo unless $repo =~ m!/!; # "hylang" -> "library/hylang"
 	
 	my $repoName = $repo;
 	$repoName =~ s!^.*/!!; # 'hylang', 'perl', etc
 	
-	my $repoUrl = 'https://hub.docker.com/v2/repositories' . $repo . '/';
+	my $repoUrl = 'https://hub.docker.com/v2/repositories/' . $repo . '/';
 	my $repoTx = $ua->get($repoUrl => $authorizationHeader);
 	warn 'warning: failed to get: ' . $repoUrl . ' (skipping)' and next unless $repoTx->success;
 	
