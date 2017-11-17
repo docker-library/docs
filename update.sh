@@ -121,7 +121,14 @@ for image in "${images[@]}"; do
 
 		echo '  TAGS => generate-dockerfile-links-partial.sh "'"$repo"'"'
 		partial="$("$helperDir/generate-dockerfile-links-partial.sh" "$repo")"
-		[ "$partial" ]
+		if [ -z "$partial" ]; then
+			if [ -n "$ARCH_SPECIFIC_DOCS" ]; then
+				partial='**No supported tags found!**'$'\n\n''It is very likely that `%%REPO%%` does not support the currently selected architecture (`'"$BASHBREW_ARCH"'`).'
+			else
+				echo >&2 'error: missing TAGS for '"$repo"'!'
+				exit 1
+			fi
+		fi
 		replace_field "$targetFile" 'TAGS' "$partial"
 
 		echo '  ARCHES => arches.sh "'"$repo"'"'
