@@ -16,7 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`0.42.2`, `0.42`, `latest` (*Dockerfile*)](https://github.com/mongo-express/mongo-express-docker/blob/c65871c94790ca0446ec222c5961a2d01c701cc0/Dockerfile)
+**No supported tags found!**
+
+It is very likely that `mongo-express` does not support the currently selected architecture (`s390x`).
 
 # Quick reference
 
@@ -57,7 +59,7 @@ mongo-express is a web-based MongoDB admin interface written in Node.js, Express
 # How to use this image
 
 ```console
-$ docker run --link some_mongo_container:mongo -p 8081:8081 mongo-express
+$ docker run --link some_mongo_container:mongo -p 8081:8081 s390x/mongo-express
 ```
 
 Then you can hit `http://localhost:8081` or `http://host-ip:8081` in your browser.
@@ -108,7 +110,7 @@ $ docker run -it --rm \
     -e ME_CONFIG_OPTIONS_EDITORTHEME="ambiance" \
     -e ME_CONFIG_BASICAUTH_USERNAME="user" \
     -e ME_CONFIG_BASICAUTH_PASSWORD="fairly long password" \
-    mongo-express
+    s390x/mongo-express
 ```
 
 This example links to a container name typical of `docker-compose`, changes the editor's color theme, and enables basic authentication.

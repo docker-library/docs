@@ -16,8 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.3.1-standalone`, `4.3-standalone`, `4-standalone`, `standalone`, `4.3.1`, `4.3`, `4`, `latest` (*4.3/Dockerfile*)](https://github.com/TimWolla/docker-adminer/blob/73de6b9a7979ded5d2289fe015fffe81fa32e0a4/4.3/Dockerfile)
--	[`4.3.1-fastcgi`, `4.3-fastcgi`, `4-fastcgi`, `fastcgi` (*4.3/fastcgi/Dockerfile*)](https://github.com/TimWolla/docker-adminer/blob/e7677ec95176973e991b063d8782876207738ce1/4.3/fastcgi/Dockerfile)
+**No supported tags found!**
+
+It is very likely that `adminer` does not support the currently selected architecture (`s390x`).
 
 # Quick reference
 
@@ -62,7 +63,7 @@ Adminer (formerly phpMinAdmin) is a full-featured database management tool writt
 ### Standalone
 
 ```console
-$ docker run --link some_database:db -p 8080:8080 adminer
+$ docker run --link some_database:db -p 8080:8080 s390x/adminer
 ```
 
 Then you can hit `http://localhost:8080` or `http://host-ip:8080` in your browser.
@@ -72,7 +73,7 @@ Then you can hit `http://localhost:8080` or `http://host-ip:8080` in your browse
 If you are already running a FastCGI capable web server you might prefer running Adminer via FastCGI:
 
 ```console
-$ docker run --link some_database:db -p 9000:9000 adminer:fastcgi
+$ docker run --link some_database:db -p 9000:9000 s390x/adminer:fastcgi
 ```
 
 Then point your web server to port 9000 of the container.
@@ -114,13 +115,13 @@ This image bundles all official Adminer plugins. You can find the list of plugin
 To load plugins you can pass a list of filenames in `ADMINER_PLUGINS`:
 
 ```console
-$ docker run --link some_database:db -p 8080:8080 -e ADMINER_PLUGINS='tables-filter tinymce' adminer
+$ docker run --link some_database:db -p 8080:8080 -e ADMINER_PLUGINS='tables-filter tinymce' s390x/adminer
 ```
 
 If a plugin *requires* parameters to work correctly you will need to add a custom file to the container:
 
 ```console
-$ docker run --link some_database:db -p 8080:8080 -e ADMINER_PLUGINS='login-servers' adminer
+$ docker run --link some_database:db -p 8080:8080 -e ADMINER_PLUGINS='login-servers' s390x/adminer
 Unable to load plugin file "login-servers", because it has required parameters: servers
 Create a file "/var/www/html/plugins-enabled/login-servers.php" with the following contents to load the plugin:
 
@@ -146,7 +147,7 @@ The image bundles all the designs that are available in the source package of ad
 To use a bundled design you can pass its name in `ADMINER_DESIGN`:
 
 ```console
-$ docker run --link some_database:db -p 8080:8080 -e ADMINER_DESIGN='nette' adminer
+$ docker run --link some_database:db -p 8080:8080 -e ADMINER_DESIGN='nette' s390x/adminer
 ```
 
 To use a custom design you can add a file called `/var/www/html/adminer.css`.

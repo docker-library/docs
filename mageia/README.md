@@ -16,8 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6`, `latest` (*6/Dockerfile*)](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/d94167fc4cf0dcca9dfed717de5a38a505349f08/6/Dockerfile)
--	[`5`, `5.1` (*5/Dockerfile*)](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/d94167fc4cf0dcca9dfed717de5a38a505349f08/5/Dockerfile)
+**No supported tags found!**
+
+It is very likely that `mageia` does not support the currently selected architecture (`s390x`).
 
 # Quick reference
 
@@ -68,7 +69,7 @@ To date, Mageia:
 ## Create a Dockerfile for your container
 
 ```dockerfile
-FROM mageia:6
+FROM s390x/mageia:6
 MAINTAINER  "Foo Bar" <foo@bar.com>
 CMD [ "bash" ]
 ```

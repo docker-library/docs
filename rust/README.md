@@ -16,8 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.21.0-stretch`, `1-stretch`, `1.21-stretch`, `stretch`, `1.21.0`, `1`, `1.21`, `latest` (*1.21.0/stretch/Dockerfile*)](https://github.com/rust-lang-nursery/docker-rust/blob/6424dba66086036a0cedde6c86c281d892305f95/1.21.0/stretch/Dockerfile)
--	[`1.21.0-jessie`, `1-jessie`, `1.21-jessie`, `jessie` (*1.21.0/jessie/Dockerfile*)](https://github.com/rust-lang-nursery/docker-rust/blob/6424dba66086036a0cedde6c86c281d892305f95/1.21.0/jessie/Dockerfile)
+**No supported tags found!**
+
+It is very likely that `rust` does not support the currently selected architecture (`s390x`).
 
 # Quick reference
 
@@ -62,7 +63,7 @@ Rust is a systems programming language sponsored by Mozilla Research. It is desi
 The most straightforward way to use this image is to use a Rust container as both the build and runtime environment. In your `Dockerfile`, writing something along the lines of the following will compile and run your project:
 
 ```dockerfile
-FROM rust:1.19.0
+FROM s390x/rust:1.19.0
 
 WORKDIR /usr/src/myapp
 COPY . .
@@ -84,7 +85,7 @@ $ docker run -it --rm --name my-running-app my-rust-app
 There may be occasions where it is not appropriate to run your app inside a container. To compiler, but not run your app inside the Docker instance, you can write something like:
 
 ```console
-$ docker run --rm --user "$(id -u)":"$(id -g)" -v "$PWD":/usr/src/myapp -w /usr/src/myapp rust:1.19.0 cargo build --release
+$ docker run --rm --user "$(id -u)":"$(id -g)" -v "$PWD":/usr/src/myapp -w /usr/src/myapp s390x/rust:1.19.0 cargo build --release
 ```
 
 This will add your current directory, as a volume, to the container, set the working directory to the volume, and run the command `cargo build --release`. This tells Cargo, Rust's build system, to compile the crate in `myapp` and output the executable to `target/release/myapp`.

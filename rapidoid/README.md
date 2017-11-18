@@ -16,7 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.4.6`, `5.4`, `5`, `latest` (*Dockerfile*)](https://github.com/rapidoid/docker-rapidoid/blob/8fbb45c706fec5b0a015a37c24862127180ae9e9/Dockerfile)
+**No supported tags found!**
+
+It is very likely that `rapidoid` does not support the currently selected architecture (`s390x`).
 
 # Quick reference
 
@@ -59,7 +61,7 @@ Rapidoid is an extremely fast HTTP server and modern Java web framework / applic
 To quickly start Rapidoid and display some basic usage help, run:
 
 ```console
-$ docker run --rm rapidoid --help
+$ docker run --rm s390x/rapidoid --help
 ```
 
 Rapidoid can be used in different ways:

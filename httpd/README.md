@@ -17,9 +17,10 @@ WARNING:
 # Supported tags and respective `Dockerfile` links
 
 -	[`2.2.34`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/httpd/blob/c14a031c014aa2219aea2e73786f577300756f0b/2.2/Dockerfile)
--	[`2.2.34-alpine`, `2.2-alpine` (*2.2/alpine/Dockerfile*)](https://github.com/docker-library/httpd/blob/c14a031c014aa2219aea2e73786f577300756f0b/2.2/alpine/Dockerfile)
 -	[`2.4.29`, `2.4`, `2`, `latest` (*2.4/Dockerfile*)](https://github.com/docker-library/httpd/blob/6d50d7f89f4d8bc6a6a3f86d892e254f4d6bfd8b/2.4/Dockerfile)
 -	[`2.4.29-alpine`, `2.4-alpine`, `2-alpine`, `alpine` (*2.4/alpine/Dockerfile*)](https://github.com/docker-library/httpd/blob/7976cabe162268bd5ad2d233d61e340447bfc371/2.4/alpine/Dockerfile)
+
+[![Build Status](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/httpd/badge/icon) (`s390x/httpd` build job)](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/httpd/)
 
 # Quick reference
 
@@ -64,7 +65,7 @@ This image only contains Apache httpd with the defaults from upstream. There is 
 ### Create a `Dockerfile` in your project
 
 ```dockerfile
-FROM httpd:2.4
+FROM s390x/httpd:2.4
 COPY ./public-html/ /usr/local/apache2/htdocs/
 ```
 
@@ -80,7 +81,7 @@ $ docker run -dit --name my-running-app my-apache2
 If you don't want to include a `Dockerfile` in your project, it is sufficient to do the following:
 
 ```console
-$ docker run -dit --name my-apache-app -p 8080:80 -v "$PWD":/usr/local/apache2/htdocs/ httpd:2.4
+$ docker run -dit --name my-apache-app -p 8080:80 -v "$PWD":/usr/local/apache2/htdocs/ s390x/httpd:2.4
 ```
 
 ### Configuration
@@ -88,7 +89,7 @@ $ docker run -dit --name my-apache-app -p 8080:80 -v "$PWD":/usr/local/apache2/h
 To customize the configuration of the httpd server, just `COPY` your custom configuration in as `/usr/local/apache2/conf/httpd.conf`.
 
 ```dockerfile
-FROM httpd:2.4
+FROM s390x/httpd:2.4
 COPY ./my-httpd.conf /usr/local/apache2/conf/httpd.conf
 ```
 
@@ -100,13 +101,13 @@ The previous steps should work well for development, but we recommend customizin
 
 # Image Variants
 
-The `httpd` images come in many flavors, each designed for a specific use case.
+The `s390x/httpd` images come in many flavors, each designed for a specific use case.
 
-## `httpd:<version>`
+## `s390x/httpd:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `httpd:alpine`
+## `s390x/httpd:alpine`
 
 This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 

@@ -16,11 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.0`, `6`, `LTS-2014` (*6.0/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/4da3ff891d3d6911304cbbe0895333ae4c84ffa7/6.0/Dockerfile)
--	[`7.10`, `7`, `LTS-2015` (*7.10/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/4da3ff891d3d6911304cbbe0895333ae4c84ffa7/7.10/Dockerfile)
--	[`8.10`, `8`, `LTS-2016`, `LTS` (*8.10/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/20df98ce84f12cd3cfdcfd08ab8c9e029f7f01ab/8.10/Dockerfile)
--	[`9.1` (*9.1/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/20df98ce84f12cd3cfdcfd08ab8c9e029f7f01ab/9.1/Dockerfile)
--	[`9.2`, `9`, `FT`, `latest` (*9.2/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/cd9f63db5f75de35873531d02c3cbc680407d5c8/9.2/Dockerfile)
+**No supported tags found!**
+
+It is very likely that `nuxeo` does not support the currently selected architecture (`s390x`).
 
 # Quick reference
 
@@ -61,7 +59,7 @@ The Nuxeo Platform is a highly customizable and extensible content management pl
 ## Start a bare nuxeo instance
 
 ```console
-$ docker run --name mynuxeo -p 8080:8080 -d nuxeo
+$ docker run --name mynuxeo -p 8080:8080 -d s390x/nuxeo
 ```
 
 This image includes `EXPOSE 8080` (the nuxeo port). The default Nuxeo configuration is applied which feature an embedded database (H2), and an embedded Elasticsearch instance. This setup is not suitable for production. See below to know how to setup a production ready container by specifying environment variables.
@@ -180,14 +178,14 @@ Allows to add custom parameters to `nuxeo.conf`. Multiple parameters can be spli
 If you would like to do additional setup in an image derived from this one, you can add a `/nuxeo.conf` file that will be appended to the end of the regular `nuxeo.conf` file.
 
 ```dockerfile
-FROM nuxeo:7.10
+FROM s390x/nuxeo:7.10
 ADD nuxeo.conf /nuxeo.conf
 ```
 
 If you need a root account to run some installation steps in your `Dockerfile`, then you need to put those steps between two `USER` command as the image is run with the user `1000` (nuxeo). For instance:
 
 ```dockerfile
-FROM nuxeo:LTS
+FROM s390x/nuxeo:LTS
 USER root
 RUN apt-get update && apt-get install -y --no-install-recommends vim
 USER 1000
@@ -202,7 +200,7 @@ You can add your own shell scripts in a special `/docker-entrypoint-initnuxeo.d`
 As it contains some non-free Codecs, we dont't ship a binary version of `ffmpeg` as part of this image. However, you can simply add the compilation in a derived images by adding these lines to your Dockerfile.
 
 ```dockerfile
-FROM nuxeo:7.10
+FROM s390x/nuxeo:7.10
 
 USER root
 

@@ -16,12 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `5`, `5.26`, `5.26.0` (*5.026.000-64bit/Dockerfile*)](https://github.com/perl/docker-perl/blob/8044d4ba7627712b6fbed84e544d2d78ca805f96/5.026.000-64bit/Dockerfile)
--	[`threaded`, `5-threaded`, `5.26-threaded`, `5.26.0-threaded` (*5.026.000-64bit,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/8044d4ba7627712b6fbed84e544d2d78ca805f96/5.026.000-64bit,threaded/Dockerfile)
--	[`5.24`, `5.24.2` (*5.024.002-64bit/Dockerfile*)](https://github.com/perl/docker-perl/blob/8044d4ba7627712b6fbed84e544d2d78ca805f96/5.024.002-64bit/Dockerfile)
--	[`5.24-threaded`, `5.24.2-threaded` (*5.024.002-64bit,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/8044d4ba7627712b6fbed84e544d2d78ca805f96/5.024.002-64bit,threaded/Dockerfile)
--	[`5.22`, `5.22.4` (*5.022.004-64bit/Dockerfile*)](https://github.com/perl/docker-perl/blob/8044d4ba7627712b6fbed84e544d2d78ca805f96/5.022.004-64bit/Dockerfile)
--	[`5.22-threaded`, `5.22.4-threaded` (*5.022.004-64bit,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/8044d4ba7627712b6fbed84e544d2d78ca805f96/5.022.004-64bit,threaded/Dockerfile)
+**No supported tags found!**
+
+It is very likely that `perl` does not support the currently selected architecture (`s390x`).
 
 # Quick reference
 
@@ -64,7 +61,7 @@ Perl is a high-level, general-purpose, interpreted, dynamic programming language
 ## Create a `Dockerfile` in your Perl app project
 
 ```dockerfile
-FROM perl:5.20
+FROM s390x/perl:5.20
 COPY . /usr/src/myapp
 WORKDIR /usr/src/myapp
 CMD [ "perl", "./your-daemon-or-script.pl" ]
@@ -82,15 +79,15 @@ $ docker run -it --rm --name my-running-app my-perl-app
 For many simple, single file projects, you may find it inconvenient to write a complete `Dockerfile`. In such cases, you can run a Perl script by using the Perl Docker image directly:
 
 ```console
-$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp perl:5.20 perl your-daemon-or-script.pl
+$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp s390x/perl:5.20 perl your-daemon-or-script.pl
 ```
 
 ## Example: Creating a reusable Carton image for Perl projects
 
-Suppose you have a project that uses [Carton](https://metacpan.org/pod/Carton) to manage Perl dependencies. You can create a `perl:carton` image that makes use of the [ONBUILD](https://docs.docker.com/engine/reference/builder/#onbuild) instruction in its `Dockerfile`, like this:
+Suppose you have a project that uses [Carton](https://metacpan.org/pod/Carton) to manage Perl dependencies. You can create a `s390x/perl:carton` image that makes use of the [ONBUILD](https://docs.docker.com/engine/reference/builder/#onbuild) instruction in its `Dockerfile`, like this:
 
 ```dockerfile
-FROM perl:5.26
+FROM s390x/perl:5.26
 
 RUN cpanm Carton \
     && mkdir -p /usr/src/app
@@ -102,9 +99,9 @@ ONBUILD RUN carton install
 ONBUILD COPY . /usr/src/app
 ```
 
-Then, in your Carton project, you can now reduce your project's `Dockerfile` into a single line of `FROM perl:carton`, which may be enough to build a stand-alone image.
+Then, in your Carton project, you can now reduce your project's `Dockerfile` into a single line of `FROM s390x/perl:carton`, which may be enough to build a stand-alone image.
 
-Having a single `perl:carton` base image is useful especially if you have multiple Carton-based projects in development, to avoid "boilerplate" coding of installing Carton and/or copying the project source files into the derived image. Keep in mind, though, about certain things to consider when using the Perl image in this way:
+Having a single `s390x/perl:carton` base image is useful especially if you have multiple Carton-based projects in development, to avoid "boilerplate" coding of installing Carton and/or copying the project source files into the derived image. Keep in mind, though, about certain things to consider when using the Perl image in this way:
 
 -	This kind of base image will hide the useful bits (such as the`COPY`/`RUN` above) in the image, separating it from more specific Dockerfiles using the base image. This might lead to confusion when creating further derived images, so be aware of how [ONBUILD triggers](https://docs.docker.com/engine/reference/builder/#onbuild) work and plan appropriately.
 -	There is the cost of maintaining an extra base image build, so if you're working on a single Carton project and/or plan to publish it, then it may be more preferable to derive directly from a versioned `perl` image instead.

@@ -20,8 +20,9 @@ This image has been deprecated in favor of the [`jenkins/jenkins:lts`](https://h
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `2.60.3` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/587b2856cd225bb152c4abeeaaa24934c75aa460/Dockerfile)
--	[`alpine`, `2.60.3-alpine` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/c2d6f2122fa03c437e139a317b7fe5b9547fe49e/Dockerfile)
+**No supported tags found!**
+
+It is very likely that `jenkins` does not support the currently selected architecture (`s390x`).
 
 # Quick reference
 
@@ -64,13 +65,13 @@ For weekly releases check out [`jenkinsci/jenkins`](https://hub.docker.com/r/jen
 # How to use this image
 
 ```console
-docker run -p 8080:8080 -p 50000:50000 jenkins
+docker run -p 8080:8080 -p 50000:50000 s390x/jenkins
 ```
 
 This will store the workspace in /var/jenkins_home. All Jenkins data lives in there - including plugins and configuration. You will probably want to make that a persistent volume (recommended):
 
 ```console
-docker run -p 8080:8080 -p 50000:50000 -v /your/home:/var/jenkins_home jenkins
+docker run -p 8080:8080 -p 50000:50000 -v /your/home:/var/jenkins_home s390x/jenkins
 ```
 
 This will store the jenkins data in `/your/home` on the host. Ensure that `/your/home` is accessible by the jenkins user in container (jenkins user - uid 1000) or use `-u some_other_user` parameter with `docker run`.
@@ -78,7 +79,7 @@ This will store the jenkins data in `/your/home` on the host. Ensure that `/your
 You can also use a volume container:
 
 ```console
-docker run --name myjenkins -p 8080:8080 -p 50000:50000 -v /var/jenkins_home jenkins
+docker run --name myjenkins -p 8080:8080 -p 50000:50000 -v /var/jenkins_home s390x/jenkins
 ```
 
 Then myjenkins container has the volume (please do read about docker volume handling to find out more).
@@ -105,7 +106,7 @@ You can specify and set the number of executors of your Jenkins master instance 
 and `Dockerfile`
 
 ```console
-FROM jenkins
+FROM s390x/jenkins
 COPY executors.groovy /usr/share/jenkins/ref/init.groovy.d/executors.groovy
 ```
 
@@ -118,7 +119,7 @@ You can run builds on the master (out of the box) but if you want to attach buil
 You might need to customize the JVM running Jenkins, typically to pass system properties or tweak heap memory settings. Use JAVA_OPTS environment variable for this purpose :
 
 ```console
-docker run --name myjenkins -p 8080:8080 -p 50000:50000 --env JAVA_OPTS=-Dhudson.footerURL=http://mycompany.com jenkins
+docker run --name myjenkins -p 8080:8080 -p 50000:50000 --env JAVA_OPTS=-Dhudson.footerURL=http://mycompany.com s390x/jenkins
 ```
 
 # Configuring logging
@@ -132,7 +133,7 @@ handlers=java.util.logging.ConsoleHandler
 jenkins.level=FINEST
 java.util.logging.ConsoleHandler.level=FINEST
 EOF
-docker run --name myjenkins -p 8080:8080 -p 50000:50000 --env JAVA_OPTS="-Djava.util.logging.config.file=/var/jenkins_home/log.properties" -v `pwd`/data:/var/jenkins_home jenkins
+docker run --name myjenkins -p 8080:8080 -p 50000:50000 --env JAVA_OPTS="-Djava.util.logging.config.file=/var/jenkins_home/log.properties" -v `pwd`/data:/var/jenkins_home s390x/jenkins
 ```
 
 # Passing Jenkins launcher parameters
@@ -140,7 +141,7 @@ docker run --name myjenkins -p 8080:8080 -p 50000:50000 --env JAVA_OPTS="-Djava.
 Arguments you pass to docker running the jenkins image are passed to jenkins launcher, so you can run for example :
 
 ```console
-$ docker run jenkins --version
+$ docker run s390x/jenkins --version
 ```
 
 This will dump Jenkins version, just like when you run jenkins as an executable war.
@@ -148,7 +149,7 @@ This will dump Jenkins version, just like when you run jenkins as an executable 
 You also can define jenkins arguments as `JENKINS_OPTS`. This is useful to define a set of arguments to pass to jenkins launcher as you define a derived jenkins image based on the official one with some customized settings. The following sample Dockerfile uses this option to force use of HTTPS with a certificate included in the image
 
 ```console
-FROM jenkins:1.565.3
+FROM s390x/jenkins:1.565.3
 
 COPY https.pem /var/lib/jenkins/cert
 COPY https.key /var/lib/jenkins/pk
@@ -159,14 +160,14 @@ EXPOSE 8083
 You can also change the default slave agent port for jenkins by defining `JENKINS_SLAVE_AGENT_PORT` in a sample Dockerfile.
 
 ```console
-FROM jenkins:1.565.3
+FROM s390x/jenkins:1.565.3
 ENV JENKINS_SLAVE_AGENT_PORT 50001
 ```
 
 or as a parameter to docker,
 
 ```console
-$ docker run --name myjenkins -p 8080:8080 -p 50001:50001 --env JENKINS_SLAVE_AGENT_PORT=50001 jenkins
+$ docker run --name myjenkins -p 8080:8080 -p 50001:50001 --env JENKINS_SLAVE_AGENT_PORT=50001 s390x/jenkins
 ```
 
 # Installing more tools
@@ -174,7 +175,7 @@ $ docker run --name myjenkins -p 8080:8080 -p 50001:50001 --env JENKINS_SLAVE_AG
 You can run your container as root - and install via apt-get, install as part of build steps via jenkins tool installers, or you can create your own Dockerfile to customise, for example:
 
 ```console
-FROM jenkins
+FROM s390x/jenkins
 # if we want to install via apt
 USER root
 RUN apt-get update && apt-get install -y ruby make more-thing-here
@@ -184,7 +185,7 @@ USER jenkins # drop back to the regular jenkins user - good practice
 In such a derived image, you can customize your jenkins instance with hook scripts or additional plugins. For this purpose, use `/usr/share/jenkins/ref` as a place to define the default JENKINS_HOME content you wish the target installation to look like :
 
 ```console
-FROM jenkins
+FROM s390x/jenkins
 COPY plugins.txt /usr/share/jenkins/ref/
 COPY custom.groovy /usr/share/jenkins/ref/init.groovy.d/custom.groovy
 RUN /usr/local/bin/plugins.sh /usr/share/jenkins/ref/plugins.txt
@@ -206,7 +207,7 @@ maven-plugin:2.7.1
 And in derived Dockerfile just invoke the utility plugin.sh script
 
 ```console
-FROM jenkins
+FROM s390x/jenkins
 COPY plugins.txt /usr/share/jenkins/plugins.txt
 RUN /usr/local/bin/plugins.sh /usr/share/jenkins/plugins.txt
 ```
@@ -216,22 +217,6 @@ RUN /usr/local/bin/plugins.sh /usr/share/jenkins/plugins.txt
 All the data needed is in the /var/jenkins_home directory - so depending on how you manage that - depends on how you upgrade. Generally - you can copy it out - and then "docker pull" the image again - and you will have the latest LTS - you can then start up with -v pointing to that data (/var/jenkins_home) and everything will be as you left it.
 
 As always - please ensure that you know how to drive docker - especially volume handling!
-
-# Image Variants
-
-The `jenkins` images come in many flavors, each designed for a specific use case.
-
-## `jenkins:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-## `jenkins:alpine`
-
-This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
-
-This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
-
-To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 # License
 

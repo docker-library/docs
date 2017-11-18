@@ -19,15 +19,14 @@ WARNING:
 -	[`17.11.0-ce-rc3`, `17.11-rc`, `rc`, `test` (*17.11-rc/Dockerfile*)](https://github.com/docker-library/docker/blob/4e1f14f433ef9b800a19fe1907a54b09d8f42a15/17.11-rc/Dockerfile)
 -	[`17.11.0-ce-rc3-dind`, `17.11-rc-dind`, `rc-dind`, `test-dind` (*17.11-rc/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/6e7677bec19c214ef5445c0d2b96c56e42098ca1/17.11-rc/dind/Dockerfile)
 -	[`17.11.0-ce-rc3-git`, `17.11-rc-git`, `rc-git`, `test-git` (*17.11-rc/git/Dockerfile*)](https://github.com/docker-library/docker/blob/6e7677bec19c214ef5445c0d2b96c56e42098ca1/17.11-rc/git/Dockerfile)
--	[`17.11.0-ce-rc3-windowsservercore`, `17.11-rc-windowsservercore`, `rc-windowsservercore`, `test-windowsservercore` (*17.11-rc/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/docker/blob/4e1f14f433ef9b800a19fe1907a54b09d8f42a15/17.11-rc/windows/windowsservercore/Dockerfile)
 -	[`17.10.0-ce`, `17.10.0`, `17.10`, `17`, `edge`, `latest` (*17.10/Dockerfile*)](https://github.com/docker-library/docker/blob/af5b6cd45b8d1aeb534589d99f92b5a4dc886f5d/17.10/Dockerfile)
 -	[`17.10.0-ce-dind`, `17.10.0-dind`, `17.10-dind`, `17-dind`, `edge-dind`, `dind` (*17.10/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/00de5231b507c989ce900df2ef3f1abf4ce7e19c/17.10/dind/Dockerfile)
 -	[`17.10.0-ce-git`, `17.10.0-git`, `17.10-git`, `17-git`, `edge-git`, `git` (*17.10/git/Dockerfile*)](https://github.com/docker-library/docker/blob/62a456489acfe7443d426cd502ccf22130d1ccf9/17.10/git/Dockerfile)
--	[`17.10.0-ce-windowsservercore`, `17.10.0-windowsservercore`, `17.10-windowsservercore`, `17-windowsservercore`, `edge-windowsservercore`, `windowsservercore` (*17.10/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/docker/blob/62a456489acfe7443d426cd502ccf22130d1ccf9/17.10/windows/windowsservercore/Dockerfile)
 -	[`17.09.0-ce`, `17.09.0`, `17.09`, `stable` (*17.09/Dockerfile*)](https://github.com/docker-library/docker/blob/af5b6cd45b8d1aeb534589d99f92b5a4dc886f5d/17.09/Dockerfile)
 -	[`17.09.0-ce-dind`, `17.09.0-dind`, `17.09-dind`, `stable-dind` (*17.09/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/00de5231b507c989ce900df2ef3f1abf4ce7e19c/17.09/dind/Dockerfile)
 -	[`17.09.0-ce-git`, `17.09.0-git`, `17.09-git`, `stable-git` (*17.09/git/Dockerfile*)](https://github.com/docker-library/docker/blob/a6b52c73daa8283cd861f41f55e53426008708ac/17.09/git/Dockerfile)
--	[`17.09.0-ce-windowsservercore`, `17.09.0-windowsservercore`, `17.09-windowsservercore`, `stable-windowsservercore` (*17.09/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/docker/blob/2f6926c4fb37274b90fae3ba6c3320619a8d0289/17.09/windows/windowsservercore/Dockerfile)
+
+[![Build Status](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/docker/badge/icon) (`s390x/docker` build job)](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/docker/)
 
 # Quick reference
 
@@ -80,7 +79,7 @@ If you are still convinced that you need Docker-in-Docker and not just access to
 **IMPORTANT:** this image defaults to `--storage-driver=vfs`, which will be very slow and inefficient (but is the only driver which is guaranteed to work regardless of your underlying filesystem). Which driver you should use varies depending on your needs, but a good rule of thumb is that your DinD instance should be using the same driver as your host (which can be seen under `Storage Driver` in the output of `docker info`). See the "Custom daemon flags" section below for how to specify your storage driver.
 
 ```console
-$ docker run --privileged --name some-docker -d docker:stable-dind
+$ docker run --privileged --name some-docker -d s390x/docker:stable-dind
 ```
 
 **Note:** `--privileged` is required for Docker-in-Docker to function properly, but it should be used with care as it provides full access to the host environment, as explained [in the relevant section of the Docker documentation](https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities).
@@ -90,7 +89,7 @@ This image includes `EXPOSE 2375` (the Docker port), so standard container linki
 ## Connect to it from a second container
 
 ```console
-$ docker run --rm --link some-docker:docker docker:edge version
+$ docker run --rm --link some-docker:docker s390x/docker:edge version
 Client:
  Version:      17.05.0-ce
  API version:  1.27 (downgraded from 1.29)
@@ -110,7 +109,7 @@ Server:
 ```
 
 ```console
-$ docker run -it --rm --link some-docker:docker docker:edge sh
+$ docker run -it --rm --link some-docker:docker s390x/docker:edge sh
 / # docker version
 Client:
  Version:      17.05.0-ce
@@ -131,7 +130,7 @@ Server:
 ```
 
 ```console
-$ docker run --rm --link some-docker:docker docker info
+$ docker run --rm --link some-docker:docker s390x/docker info
 Containers: 0
  Running: 0
  Paused: 0
@@ -175,7 +174,7 @@ Live Restore Enabled: false
 ```
 
 ```console
-$ docker run --rm -v /var/run/docker.sock:/var/run/docker.sock docker version
+$ docker run --rm -v /var/run/docker.sock:/var/run/docker.sock s390x/docker version
 Client:
  Version:      17.05.0-ce
  API version:  1.28 (downgraded from 1.29)
@@ -197,7 +196,7 @@ Server:
 ## Custom daemon flags
 
 ```console
-$ docker run --privileged --name some-overlay-docker -d docker:dind --storage-driver=overlay
+$ docker run --privileged --name some-overlay-docker -d s390x/docker:dind --storage-driver=overlay
 ```
 
 ## Where to Store Data
@@ -213,27 +212,10 @@ The Docker documentation is a good starting point for understanding the differen
 2.	Start your `docker` container like this:
 
 	```console
-	$ docker run --privileged --name some-docker -v /my/own/var-lib-docker:/var/lib/docker -d docker:dind
+	$ docker run --privileged --name some-docker -v /my/own/var-lib-docker:/var/lib/docker -d s390x/docker:dind
 	```
 
 The `-v /my/own/var-lib-docker:/var/lib/docker` part of the command mounts the `/my/own/var-lib-docker` directory from the underlying host system as `/var/lib/docker` inside the container, where Docker by default will write its data files.
-
-# Image Variants
-
-The `docker` images come in many flavors, each designed for a specific use case.
-
-## `docker:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-## `docker:windowsservercore`
-
-This image is based on [Windows Server Core (`microsoft/windowsservercore`)](https://hub.docker.com/r/microsoft/windowsservercore/). As such, it only works in places which that image does, such as Windows 10 Professional/Enterprise (Anniversary Edition) or Windows Server 2016.
-
-For information about how to get Docker running on Windows, please see the relevant "Quick Start" guide provided by Microsoft:
-
--	[Windows Server Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_server)
--	[Windows 10 Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)
 
 # License
 

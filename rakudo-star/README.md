@@ -16,7 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2017.10`, `latest` (*Dockerfile*)](https://github.com/perl6/docker/blob/1be22e4dea6aefa7d0712a1cb13b2b4d9541f600/Dockerfile)
+**No supported tags found!**
+
+It is very likely that `rakudo-star` does not support the currently selected architecture (`s390x`).
 
 # Quick reference
 
@@ -67,7 +69,7 @@ Perl 6 Language Documentation: [http://doc.perl6.org/](http://doc.perl6.org/)
 Simply running a container with the image will launch a Perl 6 REPL:
 
 ```console
-$ docker run -it rakudo-star
+$ docker run -it s390x/rakudo-star
 > say 'Hello, Perl!'
 Hello, Perl!
 ```
@@ -75,7 +77,7 @@ Hello, Perl!
 You can also provide perl6 command line switches to `docker run`:
 
 ```console
-$ docker run -it rakudo-star -e 'say "Hello!"'
+$ docker run -it s390x/rakudo-star -e 'say "Hello!"'
 ```
 
 # Contributing/Getting Help

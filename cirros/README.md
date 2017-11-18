@@ -16,8 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `0.3.4` (*Dockerfile*)](https://github.com/ewindisch/docker-cirros/blob/fd9aa114c465237518535d3545d4f9c4bc1d0aa5/Dockerfile)
--	[`0.3.3` (*Dockerfile*)](https://github.com/ewindisch/docker-cirros/blob/5ef3f5024b0aa80553cc34be9eff6685cb31b458/Dockerfile)
+**No supported tags found!**
+
+It is very likely that `cirros` does not support the currently selected architecture (`s390x`).
 
 # Quick reference
 

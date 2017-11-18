@@ -16,7 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`0.6.1`, `0.6`, `0`, `latest` (*Dockerfile*)](https://github.com/docker-library/julia/blob/06148bd09222645c2996f50094d76aeeb9ed4556/Dockerfile)
+**No supported tags found!**
+
+It is very likely that `julia` does not support the currently selected architecture (`s390x`).
 
 # Quick reference
 
@@ -61,13 +63,13 @@ Julia is a high-level, high-performance dynamic programming language for technic
 Starting the Julia REPL is as easy as the following:
 
 ```console
-$ docker run -it --rm julia
+$ docker run -it --rm s390x/julia
 ```
 
 ## Run Julia script from your local directory inside container
 
 ```console
-$ docker run -it --rm -v "$PWD":/usr/myapp -w /usr/myapp julia julia script.jl arg1 arg2
+$ docker run -it --rm -v "$PWD":/usr/myapp -w /usr/myapp s390x/julia julia script.jl arg1 arg2
 ```
 
 # License

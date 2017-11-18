@@ -18,16 +18,12 @@ WARNING:
 
 -	[`4.8.3-apache`, `4.8-apache`, `4-apache`, `apache`, `4.8.3`, `4.8`, `4`, `latest`, `4.8.3-php5.6-apache`, `4.8-php5.6-apache`, `4-php5.6-apache`, `php5.6-apache`, `4.8.3-php5.6`, `4.8-php5.6`, `4-php5.6`, `php5.6` (*php5.6/apache/Dockerfile*)](https://github.com/docker-library/wordpress/blob/f7acf35a2b49b7a45d71b4c5fc8797042f34d4bd/php5.6/apache/Dockerfile)
 -	[`4.8.3-fpm`, `4.8-fpm`, `4-fpm`, `fpm`, `4.8.3-php5.6-fpm`, `4.8-php5.6-fpm`, `4-php5.6-fpm`, `php5.6-fpm` (*php5.6/fpm/Dockerfile*)](https://github.com/docker-library/wordpress/blob/f7acf35a2b49b7a45d71b4c5fc8797042f34d4bd/php5.6/fpm/Dockerfile)
--	[`4.8.3-fpm-alpine`, `4.8-fpm-alpine`, `4-fpm-alpine`, `fpm-alpine`, `4.8.3-php5.6-fpm-alpine`, `4.8-php5.6-fpm-alpine`, `4-php5.6-fpm-alpine`, `php5.6-fpm-alpine` (*php5.6/fpm-alpine/Dockerfile*)](https://github.com/docker-library/wordpress/blob/f7acf35a2b49b7a45d71b4c5fc8797042f34d4bd/php5.6/fpm-alpine/Dockerfile)
 -	[`4.8.3-php7.0-apache`, `4.8-php7.0-apache`, `4-php7.0-apache`, `php7.0-apache`, `4.8.3-php7.0`, `4.8-php7.0`, `4-php7.0`, `php7.0` (*php7.0/apache/Dockerfile*)](https://github.com/docker-library/wordpress/blob/f7acf35a2b49b7a45d71b4c5fc8797042f34d4bd/php7.0/apache/Dockerfile)
 -	[`4.8.3-php7.0-fpm`, `4.8-php7.0-fpm`, `4-php7.0-fpm`, `php7.0-fpm` (*php7.0/fpm/Dockerfile*)](https://github.com/docker-library/wordpress/blob/f7acf35a2b49b7a45d71b4c5fc8797042f34d4bd/php7.0/fpm/Dockerfile)
--	[`4.8.3-php7.0-fpm-alpine`, `4.8-php7.0-fpm-alpine`, `4-php7.0-fpm-alpine`, `php7.0-fpm-alpine` (*php7.0/fpm-alpine/Dockerfile*)](https://github.com/docker-library/wordpress/blob/f7acf35a2b49b7a45d71b4c5fc8797042f34d4bd/php7.0/fpm-alpine/Dockerfile)
 -	[`4.8.3-php7.1-apache`, `4.8-php7.1-apache`, `4-php7.1-apache`, `php7.1-apache`, `4.8.3-php7.1`, `4.8-php7.1`, `4-php7.1`, `php7.1` (*php7.1/apache/Dockerfile*)](https://github.com/docker-library/wordpress/blob/f7acf35a2b49b7a45d71b4c5fc8797042f34d4bd/php7.1/apache/Dockerfile)
 -	[`4.8.3-php7.1-fpm`, `4.8-php7.1-fpm`, `4-php7.1-fpm`, `php7.1-fpm` (*php7.1/fpm/Dockerfile*)](https://github.com/docker-library/wordpress/blob/f7acf35a2b49b7a45d71b4c5fc8797042f34d4bd/php7.1/fpm/Dockerfile)
--	[`4.8.3-php7.1-fpm-alpine`, `4.8-php7.1-fpm-alpine`, `4-php7.1-fpm-alpine`, `php7.1-fpm-alpine` (*php7.1/fpm-alpine/Dockerfile*)](https://github.com/docker-library/wordpress/blob/f7acf35a2b49b7a45d71b4c5fc8797042f34d4bd/php7.1/fpm-alpine/Dockerfile)
--	[`cli-1.4.1`, `cli-1.4`, `cli-1`, `cli`, `cli-1.4.1-php5.6`, `cli-1.4-php5.6`, `cli-1-php5.6`, `cli-php5.6` (*php5.6/cli/Dockerfile*)](https://github.com/docker-library/wordpress/blob/e3c8cccbe1bec9e59fc82f7e743e4c1665a9e22d/php5.6/cli/Dockerfile)
--	[`cli-1.4.1-php7.0`, `cli-1.4-php7.0`, `cli-1-php7.0`, `cli-php7.0` (*php7.0/cli/Dockerfile*)](https://github.com/docker-library/wordpress/blob/e3c8cccbe1bec9e59fc82f7e743e4c1665a9e22d/php7.0/cli/Dockerfile)
--	[`cli-1.4.1-php7.1`, `cli-1.4-php7.1`, `cli-1-php7.1`, `cli-php7.1` (*php7.1/cli/Dockerfile*)](https://github.com/docker-library/wordpress/blob/e3c8cccbe1bec9e59fc82f7e743e4c1665a9e22d/php7.1/cli/Dockerfile)
+
+[![Build Status](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/wordpress/badge/icon) (`s390x/wordpress` build job)](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/wordpress/)
 
 # Quick reference
 
@@ -68,7 +64,7 @@ WordPress is a free and open source blogging tool and a content management syste
 # How to use this image
 
 ```console
-$ docker run --name some-wordpress --link some-mysql:mysql -d wordpress
+$ docker run --name some-wordpress --link some-mysql:mysql -d s390x/wordpress
 ```
 
 The following environment variables are also honored for configuring your WordPress instance:
@@ -85,7 +81,7 @@ If the `WORDPRESS_DB_NAME` specified does not already exist on the given MySQL s
 If you'd like to be able to access the instance from the host without the container's IP, standard port mappings can be used:
 
 ```console
-$ docker run --name some-wordpress --link some-mysql:mysql -p 8080:80 -d wordpress
+$ docker run --name some-wordpress --link some-mysql:mysql -p 8080:80 -d s390x/wordpress
 ```
 
 Then, access it via `http://localhost:8080` or `http://host-ip:8080` in a browser.
@@ -135,37 +131,6 @@ The following Docker Hub features can help with the task of keeping your depende
 
 -	[Automated Builds](https://docs.docker.com/docker-hub/builds/) let Docker Hub automatically build your Dockerfile each time you push changes to it.
 -	[Repository Links](https://docs.docker.com/docker-hub/builds/#repository-links) can ensure that your image is also rebuilt any time `wordpress` is updated.
-
-# Image Variants
-
-The `wordpress` images come in many flavors, each designed for a specific use case.
-
-## `wordpress:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-## `wordpress:alpine`
-
-This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
-
-This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
-
-To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
-
-## `wordpress:cli`
-
-This image variant does not contain WordPress itself, but instead contains [WP-CLI](https://wp-cli.org).
-
-The simplest way to use it with an existing WordPress container would be something similar to the following:
-
-```console
-$ docker run -it --rm \
-	--volumes-from some-wordpress \
-	--network container:some-wordpress \
-	wordpress:cli user list
-```
-
-Generally speaking, for WP-CLI to interact with a WordPress install, it needs access to the on-disk files of the WordPress install, and access to the database (and the easiest way to accomplish that such that `wp-config.php` does not require changes is to simply join the networking context of the existing and presumably working WordPress container, but there are many other ways to accomplish that which will be left as an exercise for the reader).
 
 # License
 

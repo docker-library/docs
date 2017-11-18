@@ -16,16 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`gzserver4` (*gazebo/4/ubuntu/trusty/gzserver4/Dockerfile*)](https://github.com/osrf/docker_images/blob/1154349c9f81a11ce50d73fd2e07020f4eb7c0b9/gazebo/4/ubuntu/trusty/gzserver4/Dockerfile)
--	[`libgazebo4` (*gazebo/4/ubuntu/trusty/libgazebo4/Dockerfile*)](https://github.com/osrf/docker_images/blob/1154349c9f81a11ce50d73fd2e07020f4eb7c0b9/gazebo/4/ubuntu/trusty/libgazebo4/Dockerfile)
--	[`gzserver5` (*gazebo/5/ubuntu/trusty/gzserver5/Dockerfile*)](https://github.com/osrf/docker_images/blob/1154349c9f81a11ce50d73fd2e07020f4eb7c0b9/gazebo/5/ubuntu/trusty/gzserver5/Dockerfile)
--	[`libgazebo5` (*gazebo/5/ubuntu/trusty/libgazebo5/Dockerfile*)](https://github.com/osrf/docker_images/blob/1154349c9f81a11ce50d73fd2e07020f4eb7c0b9/gazebo/5/ubuntu/trusty/libgazebo5/Dockerfile)
--	[`gzserver6` (*gazebo/6/ubuntu/trusty/gzserver6/Dockerfile*)](https://github.com/osrf/docker_images/blob/1154349c9f81a11ce50d73fd2e07020f4eb7c0b9/gazebo/6/ubuntu/trusty/gzserver6/Dockerfile)
--	[`libgazebo6` (*gazebo/6/ubuntu/trusty/libgazebo6/Dockerfile*)](https://github.com/osrf/docker_images/blob/1154349c9f81a11ce50d73fd2e07020f4eb7c0b9/gazebo/6/ubuntu/trusty/libgazebo6/Dockerfile)
--	[`gzserver7` (*gazebo/7/ubuntu/xenial/gzserver7/Dockerfile*)](https://github.com/osrf/docker_images/blob/72c476d68274d62762ffdd553bf57d8ae6a92d07/gazebo/7/ubuntu/xenial/gzserver7/Dockerfile)
--	[`libgazebo7` (*gazebo/7/ubuntu/xenial/libgazebo7/Dockerfile*)](https://github.com/osrf/docker_images/blob/72c476d68274d62762ffdd553bf57d8ae6a92d07/gazebo/7/ubuntu/xenial/libgazebo7/Dockerfile)
--	[`gzserver8` (*gazebo/8/ubuntu/xenial/gzserver8/Dockerfile*)](https://github.com/osrf/docker_images/blob/1154349c9f81a11ce50d73fd2e07020f4eb7c0b9/gazebo/8/ubuntu/xenial/gzserver8/Dockerfile)
--	[`libgazebo8`, `latest` (*gazebo/8/ubuntu/xenial/libgazebo8/Dockerfile*)](https://github.com/osrf/docker_images/blob/1154349c9f81a11ce50d73fd2e07020f4eb7c0b9/gazebo/8/ubuntu/xenial/libgazebo8/Dockerfile)
+**No supported tags found!**
+
+It is very likely that `gazebo` does not support the currently selected architecture (`s390x`).
 
 # Quick reference
 
@@ -68,7 +61,7 @@ Robot simulation is an essential tool in every roboticist's toolbox. A well-desi
 ## Create a `Dockerfile` in your Gazebo project
 
 ```dockerfile
-FROM gazebo:gzserver8
+FROM s390x/gazebo:gzserver8
 # place here your application's setup specifics
 CMD [ "gzserver", "my-gazebo-app-args" ]
 ```
@@ -99,7 +92,7 @@ Gazebo uses the `~/.gazebo/` directory for storing logs, models and scene info. 
 For example, if one wishes to use their own `.gazebo` folder that already resides in their local home directory, with a username of `ubuntu`, we can simple launch the container with an additional volume argument:
 
 ```console
-$ docker run -v "/home/ubuntu/.gazebo/:/root/.gazebo/" gazebo
+$ docker run -v "/home/ubuntu/.gazebo/:/root/.gazebo/" s390x/gazebo
 ```
 
 One thing to be careful about is that gzserver logs to files named `/root/.gazebo/server-<port>/*.log`, where `<port>` is the port number that server is listening on (11345 by default). If you run and mount multiple containers using the same default port and same host side directory, then they will collide and attempt writing to the same file. If you want to run multiple gzservers on the same docker host, then a bit more clever volume mounting of `~/.gazebo/` subfolders would be required.
@@ -119,13 +112,13 @@ In this short example, we'll spin up a new container running gazebo server, conn
 > First launch a gazebo server with a mounted volume for logging and name the container gazebo:
 
 ```console
-$ docker run -d -v="/tmp/.gazebo/:/root/.gazebo/" --name=gazebo gazebo
+$ docker run -d -v="/tmp/.gazebo/:/root/.gazebo/" --name=gazebo s390x/gazebo
 ```
 
 > Now open a new bash session in the container using the same entrypoint to configure the environment. Then download the double_pendulum model and load it into the simulation.
 
 ```console
-$ docker exec -it gazebo bash
+$ docker exec -it s390x/gazebo bash
 $ apt-get update && apt-get install -y curl
 $ curl -o double_pendulum.sdf http://models.gazebosim.org/double_pendulum_with_base/model-1_4.sdf
 $ gz model --model-name double_pendulum --spawn-file double_pendulum.sdf

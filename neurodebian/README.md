@@ -16,24 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`trusty`, `nd14.04` (*dockerfiles/trusty/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/16393dd2b676c6128a4b9742cb51b9ce9ab7d436/dockerfiles/trusty/Dockerfile)
--	[`trusty-non-free`, `nd14.04-non-free` (*dockerfiles/trusty-non-free/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/16393dd2b676c6128a4b9742cb51b9ce9ab7d436/dockerfiles/trusty-non-free/Dockerfile)
--	[`xenial`, `nd16.04` (*dockerfiles/xenial/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/16393dd2b676c6128a4b9742cb51b9ce9ab7d436/dockerfiles/xenial/Dockerfile)
--	[`xenial-non-free`, `nd16.04-non-free` (*dockerfiles/xenial-non-free/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/16393dd2b676c6128a4b9742cb51b9ce9ab7d436/dockerfiles/xenial-non-free/Dockerfile)
--	[`zesty`, `nd17.04` (*dockerfiles/zesty/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/16393dd2b676c6128a4b9742cb51b9ce9ab7d436/dockerfiles/zesty/Dockerfile)
--	[`zesty-non-free`, `nd17.04-non-free` (*dockerfiles/zesty-non-free/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/16393dd2b676c6128a4b9742cb51b9ce9ab7d436/dockerfiles/zesty-non-free/Dockerfile)
--	[`artful`, `nd17.10` (*dockerfiles/artful/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/16393dd2b676c6128a4b9742cb51b9ce9ab7d436/dockerfiles/artful/Dockerfile)
--	[`artful-non-free`, `nd17.10-non-free` (*dockerfiles/artful-non-free/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/16393dd2b676c6128a4b9742cb51b9ce9ab7d436/dockerfiles/artful-non-free/Dockerfile)
--	[`wheezy`, `nd70` (*dockerfiles/wheezy/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/16393dd2b676c6128a4b9742cb51b9ce9ab7d436/dockerfiles/wheezy/Dockerfile)
--	[`wheezy-non-free`, `nd70-non-free` (*dockerfiles/wheezy-non-free/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/16393dd2b676c6128a4b9742cb51b9ce9ab7d436/dockerfiles/wheezy-non-free/Dockerfile)
--	[`jessie`, `nd80` (*dockerfiles/jessie/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/16393dd2b676c6128a4b9742cb51b9ce9ab7d436/dockerfiles/jessie/Dockerfile)
--	[`jessie-non-free`, `nd80-non-free` (*dockerfiles/jessie-non-free/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/16393dd2b676c6128a4b9742cb51b9ce9ab7d436/dockerfiles/jessie-non-free/Dockerfile)
--	[`stretch`, `nd90`, `latest` (*dockerfiles/stretch/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/16393dd2b676c6128a4b9742cb51b9ce9ab7d436/dockerfiles/stretch/Dockerfile)
--	[`stretch-non-free`, `nd90-non-free`, `non-free` (*dockerfiles/stretch-non-free/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/16393dd2b676c6128a4b9742cb51b9ce9ab7d436/dockerfiles/stretch-non-free/Dockerfile)
--	[`buster`, `nd100` (*dockerfiles/buster/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/16393dd2b676c6128a4b9742cb51b9ce9ab7d436/dockerfiles/buster/Dockerfile)
--	[`buster-non-free`, `nd100-non-free` (*dockerfiles/buster-non-free/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/16393dd2b676c6128a4b9742cb51b9ce9ab7d436/dockerfiles/buster-non-free/Dockerfile)
--	[`sid`, `nd` (*dockerfiles/sid/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/16393dd2b676c6128a4b9742cb51b9ce9ab7d436/dockerfiles/sid/Dockerfile)
--	[`sid-non-free`, `nd-non-free` (*dockerfiles/sid-non-free/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/16393dd2b676c6128a4b9742cb51b9ce9ab7d436/dockerfiles/sid-non-free/Dockerfile)
+**No supported tags found!**
+
+It is very likely that `neurodebian` does not support the currently selected architecture (`s390x`).
 
 # Quick reference
 
@@ -77,14 +62,14 @@ NeuroDebian images only add NeuroDebian repository and repository's GPG key. No 
 
 `nd` tags are used to reflect suffixes used in versions of packages available from NeuroDebian.
 
-The `neurodebian:latest` tag will always point the Neurodebian-enabled latest stable release of Debian (which is, at the time of this writing, `debian:wheezy`).
+The `s390x/neurodebian:latest` tag will always point the Neurodebian-enabled latest stable release of Debian (which is, at the time of this writing, `debian:wheezy`).
 
 ## sources.list
 
 NeuroDebian APT file is installed under `/etc/apt/sources.list.d/neurodebian.sources.list` and currently enables only `main` (DFSG-compliant) area of the archive:
 
 ```console
-$ docker run neurodebian cat /etc/apt/sources.list.d/neurodebian.sources.list
+$ docker run s390x/neurodebian cat /etc/apt/sources.list.d/neurodebian.sources.list
 deb http://neuro.debian.net/debian wheezy main
 deb http://neuro.debian.net/debian data main
 #deb-src http://neuro.debian.net/debian-devel wheezy main

@@ -16,10 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.3`, `1.3.7` (*influxdb/1.3/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/9ee53b2d2e224da5cd4debb3b7d4e934c882fdc4/influxdb/1.3/Dockerfile)
--	[`1.3-alpine`, `1.3.7-alpine` (*influxdb/1.3/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/9ee53b2d2e224da5cd4debb3b7d4e934c882fdc4/influxdb/1.3/alpine/Dockerfile)
--	[`1.4`, `1.4.2`, `latest` (*influxdb/1.4/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/cd2681315705459a3bfc1bf52b5dd0f92ee78b86/influxdb/1.4/Dockerfile)
--	[`1.4-alpine`, `1.4.2-alpine`, `alpine` (*influxdb/1.4/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/cd2681315705459a3bfc1bf52b5dd0f92ee78b86/influxdb/1.4/alpine/Dockerfile)
+**No supported tags found!**
+
+It is very likely that `influxdb` does not support the currently selected architecture (`s390x`).
 
 # Quick reference
 
@@ -66,7 +65,7 @@ The InfluxDB image exposes a shared volume under `/var/lib/influxdb`, so you can
 ```console
 $ docker run -p 8086:8086 \
       -v $PWD:/var/lib/influxdb \
-      influxdb
+      s390x/influxdb
 ```
 
 Modify `$PWD` to the directory where you want to store data associated with the InfluxDB container.
@@ -76,7 +75,7 @@ You can also have Docker control the volume mountpoint by using a named volume.
 ```console
 $ docker run -p 8086:8086 \
       -v influxdb:/var/lib/influxdb \
-      influxdb
+      s390x/influxdb
 ```
 
 ### Exposed Ports
@@ -102,7 +101,7 @@ InfluxDB can be either configured from a config file or using environment variab
 Generate the default configuration file:
 
 ```console
-$ docker run --rm influxdb influxd config > influxdb.conf
+$ docker run --rm s390x/influxdb influxd config > influxdb.conf
 ```
 
 Modify the default configuration, which will now be available under `$PWD`. Then start the InfluxDB container.
@@ -110,7 +109,7 @@ Modify the default configuration, which will now be available under `$PWD`. Then
 ```console
 $ docker run -p 8086:8086 \
       -v $PWD/influxdb.conf:/etc/influxdb/influxdb.conf:ro \
-      influxdb -config /etc/influxdb/influxdb.conf
+      s390x/influxdb -config /etc/influxdb/influxdb.conf
 ```
 
 Modify `$PWD` to the directory where you want to store the configuration file.
@@ -134,7 +133,7 @@ InfluxDB supports the Graphite line protocol, but the service and ports are not 
 ```console
 docker run -p 8086:8086 -p 2003:2003 \
     -e INFLUXDB_GRAPHITE_ENABLED=true \
-    influxdb
+    s390x/influxdb
 ```
 
 See the [README on GitHub](https://github.com/influxdata/influxdb/blob/master/services/graphite/README.md) for more detailed documentation to set up the Graphite service. In order to take advantage of graphite templates, you should use a configuration file by outputting a default configuration file using the steps above and modifying the `[[graphite]]` section.
@@ -146,7 +145,7 @@ The administrator interface is deprecated as of 1.1.0 and will be removed in 1.3
 ```console
 docker run -p 8086:8086 -p 8083:8083 \
     -e INFLUXDB_ADMIN_ENABLED=true \
-    influxdb
+    s390x/influxdb
 ```
 
 To use the administrator interface, both the HTTP API and the administrator interface API's must be forwarded to the same port.
@@ -172,13 +171,13 @@ Read more about this in the [official documentation](https://docs.influxdata.com
 Start the container:
 
 ```console
-$ docker run --name=influxdb -d -p 8086:8086 influxdb
+$ docker run --name=influxdb -d -p 8086:8086 s390x/influxdb
 ```
 
 Run the influx client in another container:
 
 ```console
-$ docker run --rm --link=influxdb -it influxdb influx -host influxdb
+$ docker run --rm --link=influxdb -it s390x/influxdb influx -host influxdb
 ```
 
 At the moment, you cannot use `docker exec` to run the influx client since `docker exec` will not properly allocate a TTY. This is due to a current bug in Docker that is detailed in [docker/docker#8755](https://github.com/docker/docker/issues/8755).
@@ -251,22 +250,6 @@ $ docker run --rm \
 ```
 
 The above would create the database `db0`, create an admin user with the password `supersecretpassword`, then create the `telegraf` user with your telegraf's secret password. It would then exit and leave behind any files it created in the volume that you mounted.
-
-# Image Variants
-
-The `influxdb` images come in many flavors, each designed for a specific use case.
-
-## `influxdb:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-## `influxdb:alpine`
-
-This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
-
-This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
-
-To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 # License
 

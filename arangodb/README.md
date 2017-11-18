@@ -16,8 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.8`, `2.8.11` (*jessie/2.8.11/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/d6fca9a137cd21345b1d380fc0e72daacb6130ce/jessie/2.8.11/Dockerfile)
--	[`3.2`, `3.2.7`, `latest` (*stretch/3.2.7/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/21cc4f3443f58a669e394ccb9a9fa7ef2a324ed3/stretch/3.2.7/Dockerfile)
+**No supported tags found!**
+
+It is very likely that `arangodb` does not support the currently selected architecture (`s390x`).
 
 # Quick reference
 
@@ -81,10 +82,10 @@ Furthermore, ArangoDB offers a microservice framework called [Foxx](https://www.
 In order to start an ArangoDB instance run
 
 ```console
-unix> docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 -d --name arangodb-instance arangodb
+unix> docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 -d --name arangodb-instance s390x/arangodb
 ```
 
-Will create and launch the arangodb docker instance as background process. The Identifier of the process is printed. By default ArangoDB listen on port 8529 for request and the image includes `EXPOSE 8529`. If you link an application container it is automatically available in the linked container. See the following examples.
+Will create and launch the s390x/arangodb docker instance as background process. The Identifier of the process is printed. By default ArangoDB listen on port 8529 for request and the image includes `EXPOSE 8529`. If you link an application container it is automatically available in the linked container. See the following examples.
 
 In order to get the IP arango listens on run:
 
@@ -97,7 +98,7 @@ unix> docker inspect --format '{{ .NetworkSettings.IPAddress }}' arangodb-instan
 In order to use the running instance from an application, link the container
 
 ```console
-unix> docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 --name my-app --link arangodb-instance:db-link arangodb
+unix> docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 --name my-app --link arangodb-instance:db-link s390x/arangodb
 ```
 
 This will use the instance with the name `arangodb-instance` and link it into the application container. The application container will contain environment variables
@@ -115,7 +116,7 @@ These can be used to access the database.
 If you want to expose the port to the outside world, run
 
 ```console
-unix> docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 -p 8529:8529 -d arangodb
+unix> docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 -p 8529:8529 -d s390x/arangodb
 ```
 
 ArangoDB listen on port 8529 for request and the image includes `EXPOSE
@@ -146,7 +147,7 @@ Note: this way of specifying logins only applies to single server installations.
 In order to get a list of supported options, run
 
 ```console
-unix> docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 arangodb arangod --help
+unix> docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 s390x/arangodb arangod --help
 ```
 
 ## Persistent Data
@@ -169,7 +170,7 @@ You can map the container's volumes to a directory on the host, so that the data
 unix> mkdir /tmp/arangodb
 unix> docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 -p 8529:8529 -d \
           -v /tmp/arangodb:/var/lib/arangodb3 \
-          arangodb
+          s390x/arangodb
 ```
 
 This will use the `/tmp/arangodb` directory of the host as database directory for ArangoDB inside the container.
@@ -179,13 +180,13 @@ This will use the `/tmp/arangodb` directory of the host as database directory fo
 Alternatively you can create a container holding the data.
 
 ```console
-unix> docker create --name arangodb-persist arangodb true
+unix> docker create --name arangodb-persist s390x/arangodb true
 ```
 
 And use this data container in your ArangoDB container.
 
 ```console
-unix> docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 --volumes-from arangodb-persist -p 8529:8529 arangodb
+unix> docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 --volumes-from arangodb-persist -p 8529:8529 s390x/arangodb
 ```
 
 If want to save a few bytes you can alternatively use [busybox](https://registry.hub.docker.com/_/busybox) or [alpine](https://registry.hub.docker.com/_/alpine) for creating the volume only containers. Please note that you need to provide the used volumes in this case. For example

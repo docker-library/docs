@@ -16,13 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.6`, `latest` (*versions/library-3.6/x86_64/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/0450fe826ccdedf63dd70da1ad953f1aaf932225/versions/library-3.6/x86_64/Dockerfile)
--	[`edge` (*versions/library-edge/x86_64/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/1aa169fe8d573c0b6d8fe0d446f61be0700c8008/versions/library-edge/x86_64/Dockerfile)
--	[`3.1` (*versions/library-3.1/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/956c360824ed3629d8e132e1c13299be73120f88/versions/library-3.1/Dockerfile)
--	[`3.2` (*versions/library-3.2/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/8708779d075ac943b5d57b60cf17a6d2dacfbf1b/versions/library-3.2/Dockerfile)
--	[`3.3` (*versions/library-3.3/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/b8e69ac308464f18e5fc8fb2da827f7e97c890ff/versions/library-3.3/Dockerfile)
--	[`3.4` (*versions/library-3.4/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/c32ca6c6c399fe7d2ba857635ea15d0b08ac6dc5/versions/library-3.4/Dockerfile)
--	[`3.5` (*versions/library-3.5/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/849c93d4bd1c5490dfd146f24291a40aa430d0ed/versions/library-3.5/Dockerfile)
+-	[`3.6`, `latest` (*versions/library-3.6/s390x/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/f2596f5e54c2eee1b37dc42b83422a9a4a09e16d/versions/library-3.6/s390x/Dockerfile)
+-	[`edge` (*versions/library-edge/s390x/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/b9345dae00ffa7a7061f9b7c4cb64a7ee7a90a3c/versions/library-edge/s390x/Dockerfile)
+
+[![Build Status](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/alpine/badge/icon) (`s390x/alpine` build job)](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/alpine/)
 
 # Quick reference
 
@@ -65,7 +62,7 @@ WARNING:
 Use like you would any other base image:
 
 ```dockerfile
-FROM alpine:3.5
+FROM s390x/alpine:3.5
 RUN apk add --no-cache mysql-client
 ENTRYPOINT ["mysql"]
 ```

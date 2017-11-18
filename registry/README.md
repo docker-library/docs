@@ -16,8 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2`, `2.6`, `2.6.2`, `latest` (*Dockerfile*)](https://github.com/docker/distribution-library-image/blob/bc5d4f15a7e8d12ed6e5174ac4edab4b6032d09f/Dockerfile)
--	[`2.5`, `2.5.2` (*Dockerfile*)](https://github.com/docker/distribution-library-image/blob/a878b04f22c48dd2fd49581bc74363ab8213b15b/Dockerfile)
+**No supported tags found!**
+
+It is very likely that `registry` does not support the currently selected architecture (`s390x`).
 
 # Quick reference
 
@@ -54,7 +55,7 @@ This image contains an implementation of the Docker Registry HTTP API V2 for use
 ## Run a local registry: Quick Version
 
 ```console
-$ docker run -d -p 5000:5000 --restart always --name registry registry:2
+$ docker run -d -p 5000:5000 --restart always --name registry s390x/registry:2
 ```
 
 Now, use it from within Docker:

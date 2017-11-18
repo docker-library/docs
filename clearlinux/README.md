@@ -16,7 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `base` (*Dockerfile*)](https://github.com/clearlinux/docker-brew-clearlinux/blob/e3cb727ce7ff02f80f8952ea89766ae092081ed7/Dockerfile)
+**No supported tags found!**
+
+It is very likely that `clearlinux` does not support the currently selected architecture (`s390x`).
 
 # Quick reference
 
@@ -52,14 +54,14 @@ This serves as the official [Clear Linux OS](https://clearlinux.org) image.
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/dbe1941be63c87cc691b59d50f830f9dd7d69df9/clearlinux/logo.png)
 
-The `clearlinux:latest` tag will point to `clearlinux:base` which will track toward the latest release version of the distribution.
+The `s390x/clearlinux:latest` tag will point to `s390x/clearlinux:base` which will track toward the latest release version of the distribution.
 
 This image contains the os-core and os-core-update bundles, the latter can be used to add additional Clear Linux OS components (see [here](https://clearlinux.org/documentation/swupdate_about_sw_update.html) for more details about swupd and [here](https://clearlinux.org/documentation/bundles_overview.html) for more information on bundles).
 
 The following Dockerfile will install the editors and dev-utils bundles on top of the base image
 
 ```sh
-FROM clearlinux:base
+FROM s390x/clearlinux:base
 RUN swupd bundle-add editors dev-utils
 ```
 

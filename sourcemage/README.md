@@ -16,7 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `0.62` (*stable/Dockerfile*)](https://github.com/vaygr/docker-sourcemage/blob/a03bbe3ae7bbb839c3c69afd4504ca336f7b9cb9/stable/Dockerfile)
+**No supported tags found!**
+
+It is very likely that `sourcemage` does not support the currently selected architecture (`s390x`).
 
 # Quick reference
 
@@ -59,13 +61,13 @@ All of our scripts are [GPL](https://www.gnu.org/licenses/gpl.html)'d and our pa
 These images are based on our [chroot images](https://sourcemage.org/Install/Chroot). To use them, simply do the following:
 
 ```shell
-$ docker run -it sourcemage
+$ docker run -it s390x/sourcemage
 ```
 
 or
 
 ```shell
-$ docker run -it sourcemage:0.62
+$ docker run -it s390x/sourcemage:0.62
 ```
 
 ---

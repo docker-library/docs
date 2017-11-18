@@ -16,8 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.5.2`, `1.5`, `1`, `latest` (*1.5/Dockerfile*)](https://github.com/composer/docker/blob/cbfc849e710828ff5b0cf7c0b69b79126c4d5b26/1.5/Dockerfile)
--	[`1.4.3`, `1.4` (*1.4/Dockerfile*)](https://github.com/composer/docker/blob/ea0ec1efa4b15f4ad7b809793eecbb76633dcbb8/1.4/Dockerfile)
+**No supported tags found!**
+
+It is very likely that `composer` does not support the currently selected architecture (`s390x`).
 
 # Quick reference
 
@@ -62,7 +63,7 @@ Run the `composer` image:
 ```sh
 docker run --rm --interactive --tty \
     --volume $PWD:/app \
-    composer install
+    s390x/composer install
 ```
 
 You can mount the Composer home directory from your host inside the Container to share caching and configuration files:
@@ -71,7 +72,7 @@ You can mount the Composer home directory from your host inside the Container to
 docker run --rm --interactive --tty \
     --volume $PWD:/app \
     --volume $COMPOSER_HOME:/tmp \
-    composer install
+    s390x/composer install
 ```
 
 By default, Composer runs as root inside the container. This can lead to permission issues on your host filesystem. You can run Composer as your local user:
@@ -80,7 +81,7 @@ By default, Composer runs as root inside the container. This can lead to permiss
 docker run --rm --interactive --tty \
     --volume $PWD:/app \
     --user $(id -u):$(id -g) \
-    composer install
+    s390x/composer install
 ```
 
 When you need to access private repositories, you will either need to share your configured credentials, or mount your `ssh-agent` socket inside the running container:
@@ -92,7 +93,7 @@ docker run --rm --interactive --tty \
     --volume $PWD:/app \
     --volume $SSH_AUTH_SOCK:/ssh-auth.sock \
     --env SSH_AUTH_SOCK=/ssh-auth.sock \
-    composer install
+    s390x/composer install
 ```
 
 When combining the use of private repositories with running Composer as another (local) user, you might run into non-existant user errors (thrown by ssh). To work around this, simply mount the host passwd and group files (read-only) into the container:
@@ -105,7 +106,7 @@ docker run --rm --interactive --tty \
     --volume /etc/group:/etc/group:ro \
     --user $(id -u):$(id -g) \
     --env SSH_AUTH_SOCK=/ssh-auth.sock \
-    composer install
+    s390x/composer install
 ```
 
 ## Suggestions
@@ -121,7 +122,7 @@ Sometimes dependencies or Composer [scripts](https://getcomposer.org/doc/article
 	```sh
 	docker run --rm --interactive --tty \
 	    --volume $PWD:/app \
-	    composer install --ignore-platform-reqs --no-scripts
+	    s390x/composer install --ignore-platform-reqs --no-scripts
 	```
 
 -	Create your own image (possibly by extending `FROM composer`).
@@ -131,7 +132,7 @@ Sometimes dependencies or Composer [scripts](https://getcomposer.org/doc/article
 -	Create your own image, and copy Composer from the official image into it:
 
 	```dockerfile
-	COPY --from=composer:1.5 /usr/bin/composer /usr/bin/composer
+	COPY --from=s390x/composer:1.5 /usr/bin/composer /usr/bin/composer
 	```
 
 It is highly recommended that you create a "build" image that extends from your baseline production image. Binaries such as Composer should not end up in your production environment.
@@ -152,7 +153,7 @@ composer () {
         --volume /etc/passwd:/etc/passwd:ro \
         --volume /etc/group:/etc/group:ro \
         --volume $(pwd):/app \
-        composer "$@"
+        s390x/composer "$@"
 }
 ```
 

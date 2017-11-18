@@ -31,18 +31,14 @@ WARNING:
 -	[`stretch-curl`, `curl` (*stretch/curl/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/d662dc69f910feb241f6d0c9d2cd6cc2fb6c5e6c/stretch/curl/Dockerfile)
 -	[`stretch-scm`, `scm` (*stretch/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/1845b3f918f69b4c97912b0d4d68a5658458e84f/stretch/scm/Dockerfile)
 -	[`stretch`, `latest` (*stretch/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/d7da72aaf3bb93fecf5fcb7c6ff154cb0c55d1d1/stretch/Dockerfile)
--	[`trusty-curl` (*trusty/curl/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/d662dc69f910feb241f6d0c9d2cd6cc2fb6c5e6c/trusty/curl/Dockerfile)
--	[`trusty-scm` (*trusty/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/1845b3f918f69b4c97912b0d4d68a5658458e84f/trusty/scm/Dockerfile)
--	[`trusty` (*trusty/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/d7da72aaf3bb93fecf5fcb7c6ff154cb0c55d1d1/trusty/Dockerfile)
--	[`wheezy-curl` (*wheezy/curl/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/d662dc69f910feb241f6d0c9d2cd6cc2fb6c5e6c/wheezy/curl/Dockerfile)
--	[`wheezy-scm` (*wheezy/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/1845b3f918f69b4c97912b0d4d68a5658458e84f/wheezy/scm/Dockerfile)
--	[`wheezy` (*wheezy/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/d7da72aaf3bb93fecf5fcb7c6ff154cb0c55d1d1/wheezy/Dockerfile)
 -	[`xenial-curl` (*xenial/curl/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/d662dc69f910feb241f6d0c9d2cd6cc2fb6c5e6c/xenial/curl/Dockerfile)
 -	[`xenial-scm` (*xenial/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/2da658b9a1b91fa61d63ffad2ea52685cac6c702/xenial/scm/Dockerfile)
 -	[`xenial` (*xenial/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/d7da72aaf3bb93fecf5fcb7c6ff154cb0c55d1d1/xenial/Dockerfile)
 -	[`zesty-curl` (*zesty/curl/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/d662dc69f910feb241f6d0c9d2cd6cc2fb6c5e6c/zesty/curl/Dockerfile)
 -	[`zesty-scm` (*zesty/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/9aa327dcc582d5384affbc5a19672e3077489e97/zesty/scm/Dockerfile)
 -	[`zesty` (*zesty/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/d7da72aaf3bb93fecf5fcb7c6ff154cb0c55d1d1/zesty/Dockerfile)
+
+[![Build Status](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/buildpack-deps/badge/icon) (`s390x/buildpack-deps` build job)](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/buildpack-deps/)
 
 # Quick reference
 
