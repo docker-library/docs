@@ -16,10 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`0.9.7`, `0.9` (*0.9.7/Dockerfile*)](https://github.com/31z4/storm-docker/blob/6e94e11977556f0f4a99633b1f835f13d20c1e30/0.9.7/Dockerfile)
--	[`0.10.2`, `0.10` (*0.10.2/Dockerfile*)](https://github.com/31z4/storm-docker/blob/6e94e11977556f0f4a99633b1f835f13d20c1e30/0.10.2/Dockerfile)
--	[`1.0.5`, `1.0` (*1.0.5/Dockerfile*)](https://github.com/31z4/storm-docker/blob/60316c9351be7dedd39cbcc308dc1fe5c00e44a5/1.0.5/Dockerfile)
--	[`1.1.1`, `1.1`, `latest` (*1.1.1/Dockerfile*)](https://github.com/31z4/storm-docker/blob/35207c57594856c661adcea5063584eb22534ddb/1.1.1/Dockerfile)
+**No supported tags found!**
+
+It is very likely that `storm` does not support the currently selected architecture (`s390x`).
 
 # Quick reference
 
@@ -64,7 +63,7 @@ Apache Storm is a distributed computation framework written predominantly in the
 Assuming you have `topology.jar` in the current directory.
 
 ```console
-$ docker run -it -v $(pwd)/topology.jar:/topology.jar storm storm jar /topology.jar org.apache.storm.starter.ExclamationTopology
+$ docker run -it -v $(pwd)/topology.jar:/topology.jar s390x/storm storm jar /topology.jar org.apache.storm.starter.ExclamationTopology
 ```
 
 ## Setting up a minimal Storm cluster
@@ -78,25 +77,25 @@ $ docker run -it -v $(pwd)/topology.jar:/topology.jar storm storm jar /topology.
 2.	The Nimbus daemon has to be connected with the Zookeeper. It's also a "fail fast" system.
 
 	```console
-	$ docker run -d --restart always --name some-nimbus --link some-zookeeper:zookeeper storm storm nimbus
+	$ docker run -d --restart always --name some-nimbus --link some-zookeeper:zookeeper s390x/storm storm nimbus
 	```
 
 3.	Finally start a single Supervisor node. It will talk to the Nimbus and Zookeeper.
 
 	```console
-	$ docker run -d --restart always --name supervisor --link some-zookeeper:zookeeper --link some-nimbus:nimbus storm storm supervisor
+	$ docker run -d --restart always --name supervisor --link some-zookeeper:zookeeper --link some-nimbus:nimbus s390x/storm storm supervisor
 	```
 
 4.	Now you can submit a topology to our cluster.
 
 	```console
-	$ docker run --link some-nimbus:nimbus -it --rm -v $(pwd)/topology.jar:/topology.jar storm storm jar /topology.jar org.apache.storm.starter.WordCountTopology topology
+	$ docker run --link some-nimbus:nimbus -it --rm -v $(pwd)/topology.jar:/topology.jar s390x/storm storm jar /topology.jar org.apache.storm.starter.WordCountTopology topology
 	```
 
 5.	Optionally, you can start the Storm UI.
 
 	```console
-	$ docker run -d -p 8080:8080 --restart always --name ui --link some-nimbus:nimbus storm storm ui
+	$ docker run -d -p 8080:8080 --restart always --name ui --link some-nimbus:nimbus s390x/storm storm ui
 	```
 
 ## ... via [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/) or [`docker-compose`](https://github.com/docker/compose)
@@ -148,13 +147,13 @@ This image uses [default configuration](https://github.com/apache/storm/blob/v1.
 1.	Using command line arguments.
 
 	```console
-	$ docker run -d --restart always --name nimbus storm storm nimbus -c storm.zookeeper.servers='["zookeeper"]'
+	$ docker run -d --restart always --name nimbus s390x/storm storm nimbus -c storm.zookeeper.servers='["zookeeper"]'
 	```
 
 2.	Assuming you have `storm.yaml` in the current directory you can mount it as a volume.
 
 	```console
-	$ docker run -it -v $(pwd)/storm.yaml:/conf/storm.yaml storm storm nimbus
+	$ docker run -it -v $(pwd)/storm.yaml:/conf/storm.yaml s390x/storm storm nimbus
 	```
 
 ## Logging
@@ -166,7 +165,7 @@ This image uses [default logging configuration](https://github.com/apache/storm/
 No data are persisted by default. For convenience there are `/data` and `/logs` directories in the image owned by `storm` user. Use them accordingly to persist data and logs using volumes.
 
 ```console
-$ docker run -it -v /logs -v /data storm storm nimbus
+$ docker run -it -v /logs -v /data s390x/storm storm nimbus
 ```
 
 *Please be noticed that using paths other than those predefined is likely to cause permission denied errors. It's because for [security reasons](https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/#user) the Storm is running under the non-root `storm` user.*

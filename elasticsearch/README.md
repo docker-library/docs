@@ -22,10 +22,9 @@ Elastic provides open-source support for Elasticsearch via the [elastic/elastics
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.6.4`, `5.6`, `5`, `latest` (*5/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/0e42c8b41dbbbf4158f03f2af61812729c52662b/5/Dockerfile)
--	[`5.6.4-alpine`, `5.6-alpine`, `5-alpine`, `alpine` (*5/alpine/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/0e42c8b41dbbbf4158f03f2af61812729c52662b/5/alpine/Dockerfile)
--	[`2.4.6`, `2.4`, `2` (*2.4/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/8e87587ac5d6b44a8382a229162c88e65618c30a/2.4/Dockerfile)
--	[`2.4.6-alpine`, `2.4-alpine`, `2-alpine` (*2.4/alpine/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/8e87587ac5d6b44a8382a229162c88e65618c30a/2.4/alpine/Dockerfile)
+**No supported tags found!**
+
+It is very likely that `elasticsearch` does not support the currently selected architecture (`s390x`).
 
 # Quick reference
 
@@ -139,22 +138,6 @@ services:
 [![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/c6273ffde77b55cad5d8bedcd522f55e10a539dd/elasticsearch/stack.yml)
 
 Run `docker stack deploy -c stack.yml elasticsearch` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:5601`, `http://localhost:5601`, or `http://host-ip:5601` (as appropriate).
-
-# Image Variants
-
-The `elasticsearch` images come in many flavors, each designed for a specific use case.
-
-## `elasticsearch:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-## `elasticsearch:alpine`
-
-This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
-
-This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
-
-To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 # License
 

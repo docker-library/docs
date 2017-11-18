@@ -16,10 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6b38-jdk`, `6b38`, `6-jdk`, `6` (*6-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/b4f29ba829765552239bd18f272fcdaf09eca259/6-jdk/Dockerfile)
--	[`6b38-jdk-slim`, `6b38-slim`, `6-jdk-slim`, `6-slim` (*6-jdk/slim/Dockerfile*)](https://github.com/docker-library/openjdk/blob/b4f29ba829765552239bd18f272fcdaf09eca259/6-jdk/slim/Dockerfile)
--	[`6b38-jre`, `6-jre` (*6-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/80490366d49e6781e9dcb5dad8ebf0fb6ec04000/6-jre/Dockerfile)
--	[`6b38-jre-slim`, `6-jre-slim` (*6-jre/slim/Dockerfile*)](https://github.com/docker-library/openjdk/blob/b4f29ba829765552239bd18f272fcdaf09eca259/6-jre/slim/Dockerfile)
+
 -	[`7u151-jdk`, `7u151`, `7-jdk`, `7` (*7-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/c68ebcca06c8740939866575cfe39ee4ad84c782/7-jdk/Dockerfile)
 -	[`7u151-jdk-slim`, `7u151-slim`, `7-jdk-slim`, `7-slim` (*7-jdk/slim/Dockerfile*)](https://github.com/docker-library/openjdk/blob/c68ebcca06c8740939866575cfe39ee4ad84c782/7-jdk/slim/Dockerfile)
 -	[`7u131-jdk-alpine`, `7u131-alpine`, `7-jdk-alpine`, `7-alpine` (*7-jdk/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/b4f29ba829765552239bd18f272fcdaf09eca259/7-jdk/alpine/Dockerfile)
@@ -29,17 +26,15 @@ WARNING:
 -	[`8u151-jdk`, `8u151`, `8-jdk`, `8`, `jdk`, `latest` (*8-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/a893fe3cd82757e7bccc0948c88bfee09bd916c3/8-jdk/Dockerfile)
 -	[`8u151-jdk-slim`, `8u151-slim`, `8-jdk-slim`, `8-slim`, `jdk-slim`, `slim` (*8-jdk/slim/Dockerfile*)](https://github.com/docker-library/openjdk/blob/a893fe3cd82757e7bccc0948c88bfee09bd916c3/8-jdk/slim/Dockerfile)
 -	[`8u131-jdk-alpine`, `8u131-alpine`, `8-jdk-alpine`, `8-alpine`, `jdk-alpine`, `alpine` (*8-jdk/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/b4f29ba829765552239bd18f272fcdaf09eca259/8-jdk/alpine/Dockerfile)
--	[`8u151-jdk-windowsservercore`, `8u151-windowsservercore`, `8-jdk-windowsservercore`, `8-windowsservercore`, `jdk-windowsservercore`, `windowsservercore` (*8-jdk/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/openjdk/blob/a893fe3cd82757e7bccc0948c88bfee09bd916c3/8-jdk/windows/windowsservercore/Dockerfile)
--	[`8u151-jdk-nanoserver`, `8u151-nanoserver`, `8-jdk-nanoserver`, `8-nanoserver`, `jdk-nanoserver`, `nanoserver` (*8-jdk/windows/nanoserver/Dockerfile*)](https://github.com/docker-library/openjdk/blob/a893fe3cd82757e7bccc0948c88bfee09bd916c3/8-jdk/windows/nanoserver/Dockerfile)
 -	[`8u151-jre`, `8-jre`, `jre` (*8-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/a893fe3cd82757e7bccc0948c88bfee09bd916c3/8-jre/Dockerfile)
 -	[`8u151-jre-slim`, `8-jre-slim`, `jre-slim` (*8-jre/slim/Dockerfile*)](https://github.com/docker-library/openjdk/blob/a893fe3cd82757e7bccc0948c88bfee09bd916c3/8-jre/slim/Dockerfile)
 -	[`8u131-jre-alpine`, `8-jre-alpine`, `jre-alpine` (*8-jre/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/b4f29ba829765552239bd18f272fcdaf09eca259/8-jre/alpine/Dockerfile)
 -	[`9.0.1-11-jdk`, `9.0.1-11`, `9.0.1-jdk`, `9.0.1`, `9.0-jdk`, `9.0`, `9-jdk`, `9` (*9-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/a893fe3cd82757e7bccc0948c88bfee09bd916c3/9-jdk/Dockerfile)
 -	[`9.0.1-11-jdk-slim`, `9.0.1-11-slim`, `9.0.1-jdk-slim`, `9.0.1-slim`, `9.0-jdk-slim`, `9.0-slim`, `9-jdk-slim`, `9-slim` (*9-jdk/slim/Dockerfile*)](https://github.com/docker-library/openjdk/blob/a893fe3cd82757e7bccc0948c88bfee09bd916c3/9-jdk/slim/Dockerfile)
--	[`9.0.1-jdk-windowsservercore`, `9.0.1-windowsservercore`, `9.0-jdk-windowsservercore`, `9.0-windowsservercore`, `9-jdk-windowsservercore`, `9-windowsservercore` (*9-jdk/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/openjdk/blob/a893fe3cd82757e7bccc0948c88bfee09bd916c3/9-jdk/windows/windowsservercore/Dockerfile)
--	[`9.0.1-jdk-nanoserver`, `9.0.1-nanoserver`, `9.0-jdk-nanoserver`, `9.0-nanoserver`, `9-jdk-nanoserver`, `9-nanoserver` (*9-jdk/windows/nanoserver/Dockerfile*)](https://github.com/docker-library/openjdk/blob/a893fe3cd82757e7bccc0948c88bfee09bd916c3/9-jdk/windows/nanoserver/Dockerfile)
 -	[`9.0.1-11-jre`, `9.0.1-jre`, `9.0-jre`, `9-jre` (*9-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/a893fe3cd82757e7bccc0948c88bfee09bd916c3/9-jre/Dockerfile)
 -	[`9.0.1-11-jre-slim`, `9.0.1-jre-slim`, `9.0-jre-slim`, `9-jre-slim` (*9-jre/slim/Dockerfile*)](https://github.com/docker-library/openjdk/blob/a893fe3cd82757e7bccc0948c88bfee09bd916c3/9-jre/slim/Dockerfile)
+
+[![Build Status](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/openjdk/badge/icon) (`s390x/openjdk` build job)](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/openjdk/)
 
 # Quick reference
 
@@ -86,7 +81,7 @@ Java is a registered trademark of Oracle and/or its affiliates.
 The most straightforward way to use this image is to use a Java container as both the build and runtime environment. In your `Dockerfile`, writing something along the lines of the following will compile and run your project:
 
 ```dockerfile
-FROM openjdk:7
+FROM s390x/openjdk:7
 COPY . /usr/src/myapp
 WORKDIR /usr/src/myapp
 RUN javac Main.java
@@ -105,7 +100,7 @@ $ docker run -it --rm --name my-running-app my-java-app
 There may be occasions where it is not appropriate to run your app inside a container. To compile, but not run your app inside the Docker instance, you can write something like:
 
 ```console
-$ docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp openjdk:7 javac Main.java
+$ docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp s390x/openjdk:7 javac Main.java
 ```
 
 This will add your current directory as a volume to the container, set the working directory to the volume, and run the command `javac Main.java` which will tell Java to compile the code in `Main.java` and output the Java class file to `Main.class`.
@@ -132,32 +127,23 @@ RAM limit is supported by Windows Server containers, but currently JVM cannot de
 
 # Image Variants
 
-The `openjdk` images come in many flavors, each designed for a specific use case.
+The `s390x/openjdk` images come in many flavors, each designed for a specific use case.
 
-## `openjdk:<version>`
+## `s390x/openjdk:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `openjdk:slim`
+## `s390x/openjdk:slim`
 
-This image installs the `-headless` package of OpenJDK and so is missing many of the UI-related Java libraries and some common packages contained in the default tag. It only contains the minimal packages needed to run Java. Unless you are working in an environment where *only* the `openjdk` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
+This image installs the `-headless` package of OpenJDK and so is missing many of the UI-related Java libraries and some common packages contained in the default tag. It only contains the minimal packages needed to run Java. Unless you are working in an environment where *only* the `s390x/openjdk` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
 
-## `openjdk:alpine`
+## `s390x/openjdk:alpine`
 
 This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
 This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
 
 To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
-
-## `openjdk:windowsservercore`
-
-This image is based on [Windows Server Core (`microsoft/windowsservercore`)](https://hub.docker.com/r/microsoft/windowsservercore/). As such, it only works in places which that image does, such as Windows 10 Professional/Enterprise (Anniversary Edition) or Windows Server 2016.
-
-For information about how to get Docker running on Windows, please see the relevant "Quick Start" guide provided by Microsoft:
-
--	[Windows Server Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_server)
--	[Windows 10 Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)
 
 # License
 

@@ -16,7 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.2`, `latest` (*2.2/Dockerfile*)](https://github.com/euleros/euleros-docker-images/blob/e1e5020fe9fd5030c9e5d34d5e86a74b379eff36/2.2/Dockerfile)
+**No supported tags found!**
+
+It is very likely that `euleros` does not support the currently selected architecture (`s390x`).
 
 # Quick reference
 

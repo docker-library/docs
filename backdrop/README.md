@@ -16,8 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.7.2`, `1.7`, `1`, `1.7.2-apache`, `1.7-apache`, `1-apache`, `apache`, `latest` (*1/apache/Dockerfile*)](https://github.com/backdrop-ops/backdrop-docker/blob/bb4107d27e7e4c4968826c1e26a5c504d3e03276/1/apache/Dockerfile)
--	[`1.7.2-fpm`, `1.7-fpm`, `1-fpm`, `fpm` (*1/fpm/Dockerfile*)](https://github.com/backdrop-ops/backdrop-docker/blob/bb4107d27e7e4c4968826c1e26a5c504d3e03276/1/fpm/Dockerfile)
+**No supported tags found!**
+
+It is very likely that `backdrop` does not support the currently selected architecture (`s390x`).
 
 # Quick reference
 
@@ -60,7 +61,7 @@ Backdrop CMS enables people to build highly customized websites, affordably, thr
 The basic pattern for starting a `backdrop` instance is:
 
 ```console
-$ docker run --name some-backdrop --link some-mysql:mysql -d backdrop
+$ docker run --name some-backdrop --link some-mysql:mysql -d s390x/backdrop
 ```
 
 The following environment variables are also honored for configuring your Backdrop CMS instance:
@@ -77,7 +78,7 @@ The `BACKDROP_DB_NAME` **must already exist** on the given MySQL server. Check o
 If you'd like to be able to access the instance from the host without the container's IP, standard port mappings can be used:
 
 ```console
-$ docker run --name some-backdrop --link some-mysql:mysql -p 8080:80 -d backdrop
+$ docker run --name some-backdrop --link some-mysql:mysql -p 8080:80 -d s390x/backdrop
 ```
 
 Then, access it via `http://localhost:8080` or `http://host-ip:8080` in a browser.

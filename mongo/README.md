@@ -19,28 +19,13 @@ WARNING:
 ## Shared Tags
 
 -	`3.0.15`, `3.0`:
-	-	[`3.0.15-wheezy` (*3.0/Dockerfile*)](https://github.com/docker-library/mongo/blob/00a8519463e776e797c227681a595986d8f9dbe1/3.0/Dockerfile)
-	-	[`3.0.15-windowsservercore` (*3.0/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/mongo/blob/40d62a73bbd4e20d90ec859a8af483f70b1e5fd4/3.0/windows/windowsservercore/Dockerfile)
 -	`3.2.17`, `3.2`:
-	-	[`3.2.17-jessie` (*3.2/Dockerfile*)](https://github.com/docker-library/mongo/blob/3eb1f6df20e04ea8f03ce8ba5893e21bb63073f5/3.2/Dockerfile)
-	-	[`3.2.17-windowsservercore` (*3.2/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/mongo/blob/7b2fe2cd853161fdb6d28d318e9e7968e51d0ee3/3.2/windows/windowsservercore/Dockerfile)
 -	`3.4.10`, `3.4`, `3`, `latest`:
-	-	[`3.4.10-jessie` (*3.4/Dockerfile*)](https://github.com/docker-library/mongo/blob/c501968a9c330a773a2bc2c9b67dcd4ebbb58651/3.4/Dockerfile)
-	-	[`3.4.10-windowsservercore` (*3.4/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/mongo/blob/c501968a9c330a773a2bc2c9b67dcd4ebbb58651/3.4/windows/windowsservercore/Dockerfile)
 -	`3.5.13`, `3.5`, `unstable`:
-	-	[`3.5.13-jessie` (*3.5/Dockerfile*)](https://github.com/docker-library/mongo/blob/532f0dce1488540fb486d58407aff00301203e47/3.5/Dockerfile)
-	-	[`3.5.13-windowsservercore` (*3.5/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/mongo/blob/532f0dce1488540fb486d58407aff00301203e47/3.5/windows/windowsservercore/Dockerfile)
 
 ## Simple Tags
 
--	[`3.0.15-wheezy`, `3.0-wheezy` (*3.0/Dockerfile*)](https://github.com/docker-library/mongo/blob/00a8519463e776e797c227681a595986d8f9dbe1/3.0/Dockerfile)
--	[`3.0.15-windowsservercore`, `3.0-windowsservercore` (*3.0/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/mongo/blob/40d62a73bbd4e20d90ec859a8af483f70b1e5fd4/3.0/windows/windowsservercore/Dockerfile)
--	[`3.2.17-jessie`, `3.2-jessie` (*3.2/Dockerfile*)](https://github.com/docker-library/mongo/blob/3eb1f6df20e04ea8f03ce8ba5893e21bb63073f5/3.2/Dockerfile)
--	[`3.2.17-windowsservercore`, `3.2-windowsservercore` (*3.2/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/mongo/blob/7b2fe2cd853161fdb6d28d318e9e7968e51d0ee3/3.2/windows/windowsservercore/Dockerfile)
--	[`3.4.10-jessie`, `3.4-jessie`, `3-jessie`, `jessie` (*3.4/Dockerfile*)](https://github.com/docker-library/mongo/blob/c501968a9c330a773a2bc2c9b67dcd4ebbb58651/3.4/Dockerfile)
--	[`3.4.10-windowsservercore`, `3.4-windowsservercore`, `3-windowsservercore`, `windowsservercore` (*3.4/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/mongo/blob/c501968a9c330a773a2bc2c9b67dcd4ebbb58651/3.4/windows/windowsservercore/Dockerfile)
--	[`3.5.13-jessie`, `3.5-jessie`, `unstable-jessie` (*3.5/Dockerfile*)](https://github.com/docker-library/mongo/blob/532f0dce1488540fb486d58407aff00301203e47/3.5/Dockerfile)
--	[`3.5.13-windowsservercore`, `3.5-windowsservercore`, `unstable-windowsservercore` (*3.5/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/mongo/blob/532f0dce1488540fb486d58407aff00301203e47/3.5/windows/windowsservercore/Dockerfile)
+[![Build Status](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/mongo/badge/icon) (`s390x/mongo` build job)](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/mongo/)
 
 # Quick reference
 
@@ -85,7 +70,7 @@ First developed by the software company 10gen (now MongoDB Inc.) in October 2007
 ## start a mongo instance
 
 ```console
-$ docker run --name some-mongo -d mongo
+$ docker run --name some-mongo -d s390x/mongo
 ```
 
 This image includes `EXPOSE 27017` (the mongo port), so standard container linking will make it automatically available to the linked containers (as the following examples illustrate).
@@ -99,7 +84,7 @@ $ docker run --name some-app --link some-mongo:mongo -d application-that-uses-mo
 ## ... or via `mongo`
 
 ```console
-$ docker run -it --link some-mongo:mongo --rm mongo sh -c 'exec mongo "$MONGO_PORT_27017_TCP_ADDR:$MONGO_PORT_27017_TCP_PORT/test"'
+$ docker run -it --link some-mongo:mongo --rm s390x/mongo sh -c 'exec mongo "$MONGO_PORT_27017_TCP_ADDR:$MONGO_PORT_27017_TCP_PORT/test"'
 ```
 
 ## Configuration
@@ -109,7 +94,7 @@ See the [official docs](https://docs.mongodb.com/manual/) for infomation on usin
 Just add the `--storageEngine` argument if you want to use the WiredTiger storage engine in MongoDB 3.0 and above without making a config file. WiredTiger is the default storage engine in MongoDB 3.2 and above. Be sure to check the [docs](https://docs.mongodb.com/manual/release-notes/3.0-upgrade/#change-storage-engine-for-standalone-to-wiredtiger) on how to upgrade from older versions.
 
 ```console
-$ docker run --name some-mongo -d mongo --storageEngine wiredTiger
+$ docker run --name some-mongo -d s390x/mongo --storageEngine wiredTiger
 ```
 
 ### Authentication and Authorization
@@ -142,7 +127,7 @@ Successfully added user: {
 #### Connect Externally
 
 ```console
-$ docker run -it --rm --link some-mongo:mongo mongo mongo -u jsmith -p some-initial-password --authenticationDatabase admin some-mongo/some-db
+$ docker run -it --rm --link some-mongo:mongo s390x/mongo mongo -u jsmith -p some-initial-password --authenticationDatabase admin some-mongo/some-db
 > db.getName();
 some-db
 ```
@@ -162,7 +147,7 @@ The Docker documentation is a good starting point for understanding the differen
 2.	Start your `mongo` container like this:
 
 	```console
-	$ docker run --name some-mongo -v /my/own/datadir:/data/db -d mongo:tag
+	$ docker run --name some-mongo -v /my/own/datadir:/data/db -d s390x/mongo:tag
 	```
 
 The `-v /my/own/datadir:/data/db` part of the command mounts the `/my/own/datadir` directory from the underlying host system as `/data/db` inside the container, where MongoDB by default will write its data files.
@@ -174,23 +159,6 @@ Note that users on host systems with SELinux enabled may see issues with this. T
 ```console
 $ chcon -Rt svirt_sandbox_file_t /my/own/datadir
 ```
-
-# Image Variants
-
-The `mongo` images come in many flavors, each designed for a specific use case.
-
-## `mongo:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-## `mongo:windowsservercore`
-
-This image is based on [Windows Server Core (`microsoft/windowsservercore`)](https://hub.docker.com/r/microsoft/windowsservercore/). As such, it only works in places which that image does, such as Windows 10 Professional/Enterprise (Anniversary Edition) or Windows Server 2016.
-
-For information about how to get Docker running on Windows, please see the relevant "Quick Start" guide provided by Microsoft:
-
--	[Windows Server Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_server)
--	[Windows 10 Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)
 
 # License
 

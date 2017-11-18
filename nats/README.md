@@ -19,14 +19,10 @@ WARNING:
 ## Shared Tags
 
 -	`1.0.4`, `latest`:
-	-	[`1.0.4-linux` (*amd64/Dockerfile*)](https://github.com/nats-io/nats-docker/blob/4e0129ffe9d12beec981238c6cb54f5faa0fbe57/amd64/Dockerfile)
-	-	[`1.0.4-nanoserver` (*windows/nanoserver/Dockerfile*)](https://github.com/nats-io/nats-docker/blob/4e0129ffe9d12beec981238c6cb54f5faa0fbe57/windows/nanoserver/Dockerfile)
 
 ## Simple Tags
 
--	[`1.0.4-linux`, `linux` (*amd64/Dockerfile*)](https://github.com/nats-io/nats-docker/blob/4e0129ffe9d12beec981238c6cb54f5faa0fbe57/amd64/Dockerfile)
--	[`1.0.4-nanoserver`, `nanoserver` (*windows/nanoserver/Dockerfile*)](https://github.com/nats-io/nats-docker/blob/4e0129ffe9d12beec981238c6cb54f5faa0fbe57/windows/nanoserver/Dockerfile)
--	[`1.0.4-windowsservercore`, `windowsservercore` (*windows/windowsservercore/Dockerfile*)](https://github.com/nats-io/nats-docker/blob/4e0129ffe9d12beec981238c6cb54f5faa0fbe57/windows/windowsservercore/Dockerfile)
+[![Build Status](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/nats/badge/icon) (`s390x/nats` build job)](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/nats/)
 
 # Quick reference
 
@@ -72,7 +68,7 @@ WARNING:
 # 6222 is a routing port for clustering.
 # use -p or -P as needed.
 
-$ docker run -d --name nats-main nats
+$ docker run -d --name nats-main s390x/nats
 [INF] Starting nats-server version 1.0.4
 [INF] Starting http monitor on 0.0.0.0:8222
 [INF] Listening for client connections on 0.0.0.0:4222
@@ -85,10 +81,10 @@ $ docker run -d --name nats-main nats
 # Note that since you are passing arguments, this overrides the CMD section
 # of the Dockerfile, so you need to pass all arguments, including the
 # config file.
-$ docker run -d --name=nats-2 --link nats-main nats -c gnatsd.conf --routes=nats-route://ruser:T0pS3cr3t@nats-main:6222
+$ docker run -d --name=nats-2 --link nats-main s390x/nats -c gnatsd.conf --routes=nats-route://ruser:T0pS3cr3t@nats-main:6222
 
 # If you want to verify the routes are connected, try this instead:
-$ docker run -d --name=nats-2 --link nats-main nats -c gnatsd.conf --routes=nats-route://ruser:T0pS3cr3t@nats-main:6222 -DV
+$ docker run -d --name=nats-2 --link nats-main s390x/nats -c gnatsd.conf --routes=nats-route://ruser:T0pS3cr3t@nats-main:6222 -DV
 [INF] Starting nats-server version 1.0.4
 [DBG] Go build version go1.8.3
 [INF] Starting http monitor on 0.0.0.0:8222
@@ -180,23 +176,6 @@ Common Options:
     -v, --version                    Show version
         --help_tls                   TLS help
 ```
-
-# Image Variants
-
-The `nats` images come in many flavors, each designed for a specific use case.
-
-## `nats:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-## `nats:windowsservercore`
-
-This image is based on [Windows Server Core (`microsoft/windowsservercore`)](https://hub.docker.com/r/microsoft/windowsservercore/). As such, it only works in places which that image does, such as Windows 10 Professional/Enterprise (Anniversary Edition) or Windows Server 2016.
-
-For information about how to get Docker running on Windows, please see the relevant "Quick Start" guide provided by Microsoft:
-
--	[Windows Server Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_server)
--	[Windows 10 Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)
 
 # License
 

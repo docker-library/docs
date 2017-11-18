@@ -18,10 +18,9 @@ WARNING:
 
 -	[`lein-2.8.1`, `lein`, `latest` (*debian/lein/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/b4e548bbaab978eaa8e0f4b31705c43526202d3c/debian/lein/Dockerfile)
 -	[`lein-2.8.1-onbuild`, `lein-onbuild`, `onbuild` (*debian/lein/onbuild/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/b4e548bbaab978eaa8e0f4b31705c43526202d3c/debian/lein/onbuild/Dockerfile)
--	[`lein-2.8.1-alpine`, `lein-alpine`, `alpine` (*alpine/lein/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/b4e548bbaab978eaa8e0f4b31705c43526202d3c/alpine/lein/Dockerfile)
--	[`lein-2.8.1-alpine-onbuild`, `lein-alpine-onbuild`, `alpine-onbuild` (*alpine/lein/onbuild/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/b4e548bbaab978eaa8e0f4b31705c43526202d3c/alpine/lein/onbuild/Dockerfile)
 -	[`boot-2.7.2`, `boot` (*debian/boot/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/b4e548bbaab978eaa8e0f4b31705c43526202d3c/debian/boot/Dockerfile)
--	[`boot-2.7.2-alpine`, `boot-alpine` (*alpine/boot/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/b4e548bbaab978eaa8e0f4b31705c43526202d3c/alpine/boot/Dockerfile)
+
+[![Build Status](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/clojure/badge/icon) (`s390x/clojure` build job)](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/clojure/)
 
 # Quick reference
 
@@ -66,7 +65,7 @@ Clojure is a dialect of the Lisp programming language. It is a general-purpose p
 Since the most common way to use Clojure is in conjunction with [Leiningen (`lein`)](http://leiningen.org/), this image assumes that's how you'll be working. The most straightforward way to use this image is to add a `Dockerfile` to an existing Leiningen/Clojure project:
 
 ```dockerfile
-FROM clojure
+FROM s390x/clojure
 COPY . /usr/src/app
 WORKDIR /usr/src/app
 CMD ["lein", "run"]
@@ -82,7 +81,7 @@ $ docker run -it --rm --name my-running-app my-clojure-app
 While the above is the most straightforward example of a `Dockerfile`, it does have some drawbacks. The `lein run` command will download your dependencies, compile the project, and then run it. That's a lot of work, all of which you may not want done every time you run the image. To get around this, you can download the dependencies and compile the project ahead of time. This will significantly reduce startup time when you run your image.
 
 ```dockerfile
-FROM clojure
+FROM s390x/clojure
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 COPY project.clj /usr/src/app/
@@ -101,34 +100,26 @@ You can then build and run the image as above.
 If you have an existing Lein/Clojure project, it's fairly straightforward to compile your project into a jar from a container:
 
 ```console
-$ docker run -it --rm -v "$PWD":/usr/src/app -w /usr/src/app clojure lein uberjar
+$ docker run -it --rm -v "$PWD":/usr/src/app -w /usr/src/app s390x/clojure lein uberjar
 ```
 
 This will build your project into a jar file located in your project's `target/uberjar` directory.
 
 # Image Variants
 
-The `clojure` images come in many flavors, each designed for a specific use case.
+The `s390x/clojure` images come in many flavors, each designed for a specific use case.
 
-## `clojure:<version>`
+## `s390x/clojure:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `clojure:onbuild`
+## `s390x/clojure:onbuild`
 
 The `ONBUILD` image variants are deprecated, and their usage is discouraged. For more details, see [docker-library/official-images#2076](https://github.com/docker-library/official-images/issues/2076).
 
 While the `onbuild` variant is really useful for "getting off the ground running" (zero to Dockerized in a short period of time), it's not recommended for long-term usage within a project due to the lack of control over *when* the `ONBUILD` triggers fire (see also [`docker/docker#5714`](https://github.com/docker/docker/issues/5714), [`docker/docker#8240`](https://github.com/docker/docker/issues/8240), [`docker/docker#11917`](https://github.com/docker/docker/issues/11917)).
 
 Once you've got a handle on how your project functions within Docker, you'll probably want to adjust your `Dockerfile` to inherit from a non-`onbuild` variant and copy the commands from the `onbuild` variant `Dockerfile` (moving the `ONBUILD` lines to the end and removing the `ONBUILD` keywords) into your own file so that you have tighter control over them and more transparency for yourself and others looking at your `Dockerfile` as to what it does. This also makes it easier to add additional requirements as time goes on (such as installing more packages before performing the previously-`ONBUILD` steps).
-
-## `clojure:alpine`
-
-This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
-
-This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
-
-To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 # License
 

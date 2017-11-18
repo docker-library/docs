@@ -22,7 +22,9 @@ If a representative of the CRUX community would like to step up and continue mai
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `3.1` (*Dockerfile*)](https://github.com/prologic/docker-crux/blob/c614d61c53c05c02a43a34187fa1370db2c61524/Dockerfile)
+**No supported tags found!**
+
+It is very likely that `crux` does not support the currently selected architecture (`s390x`).
 
 # Quick reference
 

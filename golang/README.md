@@ -20,24 +20,19 @@ WARNING:
 
 -	`1.9.2`, `1.9`, `1`, `latest`:
 	-	[`1.9.2-stretch` (*1.9/stretch/Dockerfile*)](https://github.com/docker-library/golang/blob/cffcff7fce7f6b6b5c82fc8f7b3331a10590a661/1.9/stretch/Dockerfile)
-	-	[`1.9.2-windowsservercore` (*1.9/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/golang/blob/cffcff7fce7f6b6b5c82fc8f7b3331a10590a661/1.9/windows/windowsservercore/Dockerfile)
 -	`1.8.5`, `1.8`:
 	-	[`1.8.5-jessie` (*1.8/jessie/Dockerfile*)](https://github.com/docker-library/golang/blob/87aaffce8f74bc5bee1306539030ee413c32aee4/1.8/jessie/Dockerfile)
-	-	[`1.8.5-windowsservercore` (*1.8/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/golang/blob/cffcff7fce7f6b6b5c82fc8f7b3331a10590a661/1.8/windows/windowsservercore/Dockerfile)
 
 ## Simple Tags
 
 -	[`1.9.2-stretch`, `1.9-stretch`, `1-stretch`, `stretch` (*1.9/stretch/Dockerfile*)](https://github.com/docker-library/golang/blob/cffcff7fce7f6b6b5c82fc8f7b3331a10590a661/1.9/stretch/Dockerfile)
 -	[`1.9.2-alpine3.6`, `1.9-alpine3.6`, `1-alpine3.6`, `alpine3.6`, `1.9.2-alpine`, `1.9-alpine`, `1-alpine`, `alpine` (*1.9/alpine3.6/Dockerfile*)](https://github.com/docker-library/golang/blob/bb5a9205c84b1af7daea647e144f2517497cc7ef/1.9/alpine3.6/Dockerfile)
--	[`1.9.2-windowsservercore`, `1.9-windowsservercore`, `1-windowsservercore`, `windowsservercore` (*1.9/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/golang/blob/cffcff7fce7f6b6b5c82fc8f7b3331a10590a661/1.9/windows/windowsservercore/Dockerfile)
--	[`1.9.2-nanoserver`, `1.9-nanoserver`, `1-nanoserver`, `nanoserver` (*1.9/windows/nanoserver/Dockerfile*)](https://github.com/docker-library/golang/blob/cffcff7fce7f6b6b5c82fc8f7b3331a10590a661/1.9/windows/nanoserver/Dockerfile)
 -	[`1.8.5-stretch`, `1.8-stretch` (*1.8/stretch/Dockerfile*)](https://github.com/docker-library/golang/blob/87aaffce8f74bc5bee1306539030ee413c32aee4/1.8/stretch/Dockerfile)
 -	[`1.8.5-jessie`, `1.8-jessie` (*1.8/jessie/Dockerfile*)](https://github.com/docker-library/golang/blob/87aaffce8f74bc5bee1306539030ee413c32aee4/1.8/jessie/Dockerfile)
 -	[`1.8.5-alpine3.6`, `1.8-alpine3.6` (*1.8/alpine3.6/Dockerfile*)](https://github.com/docker-library/golang/blob/cffcff7fce7f6b6b5c82fc8f7b3331a10590a661/1.8/alpine3.6/Dockerfile)
--	[`1.8.5-alpine3.5`, `1.8-alpine3.5`, `1.8.5-alpine`, `1.8-alpine` (*1.8/alpine3.5/Dockerfile*)](https://github.com/docker-library/golang/blob/cffcff7fce7f6b6b5c82fc8f7b3331a10590a661/1.8/alpine3.5/Dockerfile)
 -	[`1.8.5-onbuild`, `1.8-onbuild` (*1.8/onbuild/Dockerfile*)](https://github.com/docker-library/golang/blob/132cd70768e3bc269902e4c7b579203f66dc9f64/1.8/onbuild/Dockerfile)
--	[`1.8.5-windowsservercore`, `1.8-windowsservercore` (*1.8/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/golang/blob/cffcff7fce7f6b6b5c82fc8f7b3331a10590a661/1.8/windows/windowsservercore/Dockerfile)
--	[`1.8.5-nanoserver`, `1.8-nanoserver` (*1.8/windows/nanoserver/Dockerfile*)](https://github.com/docker-library/golang/blob/cffcff7fce7f6b6b5c82fc8f7b3331a10590a661/1.8/windows/nanoserver/Dockerfile)
+
+[![Build Status](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/golang/badge/icon) (`s390x/golang` build job)](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/golang/)
 
 # Quick reference
 
@@ -82,7 +77,7 @@ Go (a.k.a., Golang) is a programming language first developed at Google. It is a
 The most straightforward way to use this image is to use a Go container as both the build and runtime environment. In your `Dockerfile`, writing something along the lines of the following will compile and run your project:
 
 ```dockerfile
-FROM golang:1.8
+FROM s390x/golang:1.8
 
 WORKDIR /go/src/app
 COPY . .
@@ -107,13 +102,13 @@ $ docker run -it --rm --name my-running-app my-golang-app
 There may be occasions where it is not appropriate to run your app inside a container. To compile, but not run your app inside the Docker instance, you can write something like:
 
 ```console
-$ docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp golang:1.8 go build -v
+$ docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp s390x/golang:1.8 go build -v
 ```
 
 This will add your current directory as a volume to the container, set the working directory to the volume, and run the command `go build` which will tell go to compile the project in the working directory and output the executable to `myapp`. Alternatively, if you have a `Makefile`, you can run the `make` command inside your container.
 
 ```console
-$ docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp golang:1.8 make
+$ docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp s390x/golang:1.8 make
 ```
 
 ## Cross-compile your app inside the Docker container
@@ -121,13 +116,13 @@ $ docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp golang:1.8 make
 If you need to compile your application for a platform other than `linux/amd64` (such as `windows/386`):
 
 ```console
-$ docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp -e GOOS=windows -e GOARCH=386 golang:1.8 go build -v
+$ docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp -e GOOS=windows -e GOARCH=386 s390x/golang:1.8 go build -v
 ```
 
 Alternatively, you can build for multiple platforms at once:
 
 ```console
-$ docker run --rm -it -v "$PWD":/usr/src/myapp -w /usr/src/myapp golang:1.8 bash
+$ docker run --rm -it -v "$PWD":/usr/src/myapp -w /usr/src/myapp s390x/golang:1.8 bash
 $ for GOOS in darwin linux; do
 >   for GOARCH in 386 amd64; do
 >     go build -v -o myapp-$GOOS-$GOARCH
@@ -137,13 +132,13 @@ $ for GOOS in darwin linux; do
 
 # Image Variants
 
-The `golang` images come in many flavors, each designed for a specific use case.
+The `s390x/golang` images come in many flavors, each designed for a specific use case.
 
-## `golang:<version>`
+## `s390x/golang:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `golang:alpine`
+## `s390x/golang:alpine`
 
 This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
@@ -151,16 +146,7 @@ This variant is highly recommended when final image size being as small as possi
 
 To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
-## `golang:windowsservercore`
-
-This image is based on [Windows Server Core (`microsoft/windowsservercore`)](https://hub.docker.com/r/microsoft/windowsservercore/). As such, it only works in places which that image does, such as Windows 10 Professional/Enterprise (Anniversary Edition) or Windows Server 2016.
-
-For information about how to get Docker running on Windows, please see the relevant "Quick Start" guide provided by Microsoft:
-
--	[Windows Server Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_server)
--	[Windows 10 Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)
-
-## `golang:onbuild`
+## `s390x/golang:onbuild`
 
 The `ONBUILD` image variants are deprecated, and their usage is discouraged. For more details, see [docker-library/official-images#2076](https://github.com/docker-library/official-images/issues/2076).
 

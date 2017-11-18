@@ -16,8 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.6.5`, `1.6`, `latest` (*full/Dockerfile*)](https://github.com/znc/znc-docker/blob/e8e0af1baebd3b4b43558c365ff67ea7c6116bb6/full/Dockerfile)
--	[`1.6.5-slim`, `1.6-slim`, `slim` (*slim/Dockerfile*)](https://github.com/znc/znc-docker/blob/e8e0af1baebd3b4b43558c365ff67ea7c6116bb6/slim/Dockerfile)
+**No supported tags found!**
+
+It is very likely that `znc` does not support the currently selected architecture (`s390x`).
 
 # Quick reference
 
@@ -58,13 +59,13 @@ ZNC is an IRC network bouncer (BNC). It can detach the client from the actual IR
 ZNC in this image stores its configuration in `/znc-data`. If you have existing configuration, you can reuse it with `-v $HOME/.znc:/znc-data`. Alternatively, you can create a new config in a volume or in a local dir. The examples below assumes a volume named `znc-cfg`.
 
 ```console
-$ docker run -it -v znc-cfg:/znc-data znc --makeconf
+$ docker run -it -v znc-cfg:/znc-data s390x/znc --makeconf
 ```
 
 To run ZNC:
 
 ```console
-$ docker run -p 6697:6697 -v znc-cfg:/znc-data znc
+$ docker run -p 6697:6697 -v znc-cfg:/znc-data s390x/znc
 ```
 
 The port should match the port you used during `--makeconf`. Note that 6667 is often blocked by web browsers, and therefore is not recommended.
@@ -72,18 +73,6 @@ The port should match the port you used during `--makeconf`. Note that 6667 is o
 If you use any external module, put the .cpp, .py or .pm file to `/znc-data/modules` (you may need to create that directory).
 
 Musl silently doesn't support `AI_ADDRCONFIG` yet, and ZNC doesn't support [Happy Eyeballs](https://en.wikipedia.org/wiki/Happy_Eyeballs) yet. Together they cause very slow connection. So for now IPv6 is disabled here.
-
-# Image Variants
-
-The `znc` images come in many flavors, each designed for a specific use case.
-
-## `znc:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-## `znc:slim`
-
-This image is smaller, but it doesn't support external modules. If you need any external C++, Perl or Python module, use `latest` instead of `slim`.
 
 # License
 

@@ -16,10 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.3`, `1.3.5` (*telegraf/1.3/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/a4d3ba497d902919317f6cf2269384f0dbdafc61/telegraf/1.3/Dockerfile)
--	[`1.3-alpine`, `1.3.5-alpine` (*telegraf/1.3/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/a4d3ba497d902919317f6cf2269384f0dbdafc61/telegraf/1.3/alpine/Dockerfile)
--	[`1.4`, `1.4.4`, `latest` (*telegraf/1.4/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/a4d3ba497d902919317f6cf2269384f0dbdafc61/telegraf/1.4/Dockerfile)
--	[`1.4-alpine`, `1.4.4-alpine`, `alpine` (*telegraf/1.4/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/a4d3ba497d902919317f6cf2269384f0dbdafc61/telegraf/1.4/alpine/Dockerfile)
+**No supported tags found!**
+
+It is very likely that `telegraf` does not support the currently selected architecture (`s390x`).
 
 # Quick reference
 
@@ -78,7 +77,7 @@ $ docker run -d --name influxdb -p 8083:8083 -p 8086:8086 influxdb
 Starting Telegraf using the default config, which connects to InfluxDB at `http://localhost:8086/`:
 
 ```console
-$ docker run --net=container:influxdb telegraf
+$ docker run --net=container:influxdb s390x/telegraf
 ```
 
 ### Using a custom config file
@@ -86,13 +85,13 @@ $ docker run --net=container:influxdb telegraf
 First, generate a sample configuration and save it as `telegraf.conf` on the host:
 
 ```console
-$ docker run --rm telegraf telegraf config > telegraf.conf
+$ docker run --rm s390x/telegraf telegraf config > telegraf.conf
 ```
 
 Once you've customized `telegraf.conf`, you can run the Telegraf container with it mounted in the expected location:
 
 ```console
-$ docker run -v $PWD/telegraf.conf:/etc/telegraf/telegraf.conf:ro telegraf
+$ docker run -v $PWD/telegraf.conf:/etc/telegraf/telegraf.conf:ro s390x/telegraf
 ```
 
 Modify `$PWD` to the directory where you want to store the configuration file.
@@ -128,7 +127,7 @@ Finally, we start our Telegraf container and verify functionality:
 $ docker run -d --name=telegraf \
       --net=influxdb \
       -v $PWD/telegraf.conf:/etc/telegraf/telegraf.conf:ro \
-      telegraf
+      s390x/telegraf
 $ docker logs -f telegraf
 ```
 
@@ -206,7 +205,7 @@ $ docker run -d --name=telegraf \
       --net=influxdb \
       -p 8125:8125/udp \
       -v $PWD/telegraf.conf:/etc/telegraf/telegraf.conf:ro \
-      telegraf
+      s390x/telegraf
 ```
 
 Send Mock StatsD data:
@@ -222,22 +221,6 @@ Check that the measurement `foo` is added in the DB.
 -	[Input Plugins](https://docs.influxdata.com/telegraf/latest/inputs/)
 
 -	[Output Plugins](https://docs.influxdata.com/telegraf/latest/outputs/)
-
-# Image Variants
-
-The `telegraf` images come in many flavors, each designed for a specific use case.
-
-## `telegraf:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-## `telegraf:alpine`
-
-This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
-
-This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
-
-To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 # License
 

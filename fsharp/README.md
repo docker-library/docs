@@ -16,11 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `4`, `4.1`, `4.1.28` (*4.1.28/mono/Dockerfile*)](https://github.com/fsprojects/docker-fsharp/blob/58be3b5a99a5170b8277c60c77cf163ce66a733f/4.1.28/mono/Dockerfile)
--	[`4.1.18` (*4.1.18/mono/Dockerfile*)](https://github.com/fsprojects/docker-fsharp/blob/ad4c4d67a1975b2b0ff0acc49dc46b3271836831/4.1.18/mono/Dockerfile)
--	[`4.1.0.1` (*4.1.0.1/mono/Dockerfile*)](https://github.com/fsprojects/docker-fsharp/blob/a28196740e38035beea04c41d5862136413281e3/4.1.0.1/mono/Dockerfile)
--	[`4.0`, `4.0.1`, `4.0.1.1` (*4.0.1.1/Dockerfile*)](https://github.com/fsprojects/docker-fsharp/blob/a28196740e38035beea04c41d5862136413281e3/4.0.1.1/Dockerfile)
--	[`4.0.0.4` (*4.0.0.4/Dockerfile*)](https://github.com/fsprojects/docker-fsharp/blob/a28196740e38035beea04c41d5862136413281e3/4.0.0.4/Dockerfile)
+**No supported tags found!**
+
+It is very likely that `fsharp` does not support the currently selected architecture (`s390x`).
 
 # Quick reference
 
@@ -65,7 +63,7 @@ F# (pronounced F sharp) is a strongly typed, multi-paradigm programming language
 The most straightforward way to use this image is to use it both as the build and runtime environment. In your `Dockerfile`, you can write something similar to the following:
 
 ```dockerfile
-FROM fsharp
+FROM s390x/fsharp
 COPY . /app
 RUN xbuild /app/myproject.sln
 ```

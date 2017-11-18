@@ -16,7 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.2.1`, `8.2`, `8`, `latest` (*8.2/Dockerfile*)](https://github.com/freebroccolo/docker-haskell/blob/ea501abb24273d6dab3121bb6373f6903f1a3c71/8.2/Dockerfile)
+**No supported tags found!**
+
+It is very likely that `haskell` does not support the currently selected architecture (`s390x`).
 
 # Quick reference
 
@@ -74,7 +76,7 @@ Note: The GHC developers do not support legacy release branches (i.e. `7.8.x`). 
 Start an interactive interpreter session with `ghci`:
 
 ```console
-$ docker run -it --rm haskell:8
+$ docker run -it --rm s390x/haskell:8
 GHCi, version 8.0.2: http://www.haskell.org/ghc/  :? for help
 Prelude>
 ```
@@ -82,7 +84,7 @@ Prelude>
 Dockerize an application from Hackage with a `Dockerfile`:
 
 ```dockerfile
-FROM haskell:8
+FROM s390x/haskell:8
 RUN stack install pandoc pandoc-citeproc
 ENTRYPOINT ["pandoc"]
 ```
@@ -90,7 +92,7 @@ ENTRYPOINT ["pandoc"]
 Alternatively, using `cabal`:
 
 ```dockerfile
-FROM haskell:8
+FROM s390x/haskell:8
 RUN cabal update && cabal install pandoc pandoc-citeproc
 ENTRYPOINT ["pandoc"]
 ```
@@ -98,7 +100,7 @@ ENTRYPOINT ["pandoc"]
 Iteratively develop a Haskell application with a `Dockerfile` utilizing the build cache:
 
 ```dockerfile
-FROM haskell:7.10
+FROM s390x/haskell:7.10
 
 WORKDIR /opt/server
 

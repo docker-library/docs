@@ -16,16 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.3.0-jdk7`, `4.3-jdk7`, `jdk7` (*jdk7/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/bb744a56314f1621f3f4bd596d058f93fd3c1a9b/jdk7/Dockerfile)
--	[`4.3.0-jre7`, `4.3-jre7`, `jre7` (*jre7/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/bb744a56314f1621f3f4bd596d058f93fd3c1a9b/jre7/Dockerfile)
--	[`4.3.0-jdk7-alpine`, `4.3-jdk7-alpine`, `jdk7-alpine` (*jdk7-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/bb744a56314f1621f3f4bd596d058f93fd3c1a9b/jdk7-alpine/Dockerfile)
--	[`4.3.0-jre7-alpine`, `4.3-jre7-alpine`, `jre7-alpine` (*jre7-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/bb744a56314f1621f3f4bd596d058f93fd3c1a9b/jre7-alpine/Dockerfile)
--	[`4.3.0-jdk8`, `4.3-jdk8`, `jdk8`, `4.3.0-jdk`, `4.3-jdk`, `jdk`, `4.3.0`, `4.3`, `latest` (*jdk8/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/bb744a56314f1621f3f4bd596d058f93fd3c1a9b/jdk8/Dockerfile)
--	[`4.3.0-jre8`, `4.3-jre8`, `jre8`, `4.3.0-jre`, `4.3-jre`, `jre` (*jre8/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/bb744a56314f1621f3f4bd596d058f93fd3c1a9b/jre8/Dockerfile)
--	[`4.3.0-jdk8-alpine`, `4.3-jdk8-alpine`, `jdk8-alpine`, `4.3.0-jdk-alpine`, `4.3-jdk-alpine`, `jdk-alpine`, `4.3.0-alpine`, `4.3-alpine`, `alpine` (*jdk8-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/bb744a56314f1621f3f4bd596d058f93fd3c1a9b/jdk8-alpine/Dockerfile)
--	[`4.3.0-jre8-alpine`, `4.3-jre8-alpine`, `jre8-alpine`, `4.3.0-jre-alpine`, `4.3-jre-alpine`, `jre-alpine` (*jre8-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/bb744a56314f1621f3f4bd596d058f93fd3c1a9b/jre8-alpine/Dockerfile)
--	[`4.3.0-jdk9`, `4.3-jdk9`, `jdk9` (*jdk9/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/bb744a56314f1621f3f4bd596d058f93fd3c1a9b/jdk9/Dockerfile)
--	[`4.3.0-jre9`, `4.3-jre9`, `jre9` (*jre9/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/bb744a56314f1621f3f4bd596d058f93fd3c1a9b/jre9/Dockerfile)
+**No supported tags found!**
+
+It is very likely that `gradle` does not support the currently selected architecture (`s390x`).
 
 # Quick reference
 
@@ -69,25 +62,9 @@ Note that if you are mounting a volume and the uid running Docker is not `1000`,
 
 Run this from the directory of the Gradle project you want to build.
 
-`docker run --rm -v "$PWD":/home/gradle/project -w /home/gradle/project gradle gradle <gradle-task>`
+`docker run --rm -v "$PWD":/home/gradle/project -w /home/gradle/project s390x/gradle gradle <gradle-task>`
 
 **Note: Java 9 support is experimental**
-
-# Image Variants
-
-The `gradle` images come in many flavors, each designed for a specific use case.
-
-## `gradle:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-## `gradle:alpine`
-
-This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
-
-This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
-
-To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 # License
 

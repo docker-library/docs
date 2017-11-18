@@ -23,6 +23,8 @@ WARNING:
 -	[`9.0.10-apache`, `9.0-apache`, `9.0.10`, `9.0` (*9.0/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/aad7b27a8d2dab3e417a94071d1acf6a795a2aed/9.0/apache/Dockerfile)
 -	[`9.0.10-fpm`, `9.0-fpm` (*9.0/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/aad7b27a8d2dab3e417a94071d1acf6a795a2aed/9.0/fpm/Dockerfile)
 
+[![Build Status](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/owncloud/badge/icon) (`s390x/owncloud` build job)](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/owncloud/)
+
 # Quick reference
 
 -	**Where to get help**:  
@@ -66,7 +68,7 @@ ownCloud is a self-hosted file sync and share server. It provides access to your
 Starting the ownCloud 8.1 instance listening on port 80 is as easy as the following:
 
 ```console
-$ docker run -d -p 80:80 owncloud:8.1
+$ docker run -d -p 80:80 s390x/owncloud:8.1
 ```
 
 Then go to http://localhost/ and go through the wizard. By default this container uses SQLite for data storage, but the wizard should allow for connecting to an existing database. Additionally, tags for 6.0, 7.0, or 8.0 are available.

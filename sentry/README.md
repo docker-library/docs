@@ -16,10 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.20.0`, `8.20` (*8.20/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/5b3a524591bddce5393a574175439171cdcde5e8/8.20/Dockerfile)
--	[`8.20.0-onbuild`, `8.20-onbuild` (*8.20/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/5b3a524591bddce5393a574175439171cdcde5e8/8.20/onbuild/Dockerfile)
--	[`8.21.0`, `8.21`, `8`, `latest` (*8.21/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/dbfbdb991427d3e2a0d8f1d2698276846176ec40/8.21/Dockerfile)
--	[`8.21.0-onbuild`, `8.21-onbuild`, `8-onbuild`, `onbuild` (*8.21/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/dbfbdb991427d3e2a0d8f1d2698276846176ec40/8.21/onbuild/Dockerfile)
+**No supported tags found!**
+
+It is very likely that `sentry` does not support the currently selected architecture (`s390x`).
 
 # Quick reference
 
@@ -76,13 +75,13 @@ Sentry is a realtime event logging and aggregation platform. It specializes in m
 3.	Generate a new secret key to be shared by all `sentry` containers. This value will then be used as the `SENTRY_SECRET_KEY` environment variable.
 
 	```console
-	$ docker run --rm sentry config generate-secret-key
+	$ docker run --rm s390x/sentry config generate-secret-key
 	```
 
 4.	If this is a new database, you'll need to run `upgrade`
 
 	```console
-	$ docker run -it --rm -e SENTRY_SECRET_KEY='<secret-key>' --link sentry-postgres:postgres --link sentry-redis:redis sentry upgrade
+	$ docker run -it --rm -e SENTRY_SECRET_KEY='<secret-key>' --link sentry-postgres:postgres --link sentry-redis:redis s390x/sentry upgrade
 	```
 
 	**Note: the `-it` is important as the initial upgrade will prompt to create an initial user and will fail without it**
@@ -90,14 +89,14 @@ Sentry is a realtime event logging and aggregation platform. It specializes in m
 5.	Now start up Sentry server
 
 	```console
-	$ docker run -d --name my-sentry -e SENTRY_SECRET_KEY='<secret-key>' --link sentry-redis:redis --link sentry-postgres:postgres sentry
+	$ docker run -d --name my-sentry -e SENTRY_SECRET_KEY='<secret-key>' --link sentry-redis:redis --link sentry-postgres:postgres s390x/sentry
 	```
 
 6.	The default config needs a celery beat and celery workers, start as many workers as you need (each with a unique name)
 
 	```console
-	$ docker run -d --name sentry-cron -e SENTRY_SECRET_KEY='<secret-key>' --link sentry-postgres:postgres --link sentry-redis:redis sentry run cron
-	$ docker run -d --name sentry-worker-1 -e SENTRY_SECRET_KEY='<secret-key>' --link sentry-postgres:postgres --link sentry-redis:redis sentry run worker
+	$ docker run -d --name sentry-cron -e SENTRY_SECRET_KEY='<secret-key>' --link sentry-postgres:postgres --link sentry-redis:redis s390x/sentry run cron
+	$ docker run -d --name sentry-worker-1 -e SENTRY_SECRET_KEY='<secret-key>' --link sentry-postgres:postgres --link sentry-redis:redis s390x/sentry run worker
 	```
 
 ### Port mapping
@@ -109,7 +108,7 @@ If you'd like to be able to access the instance from the host without the contai
 If you did not create a superuser during `upgrade`, use the following to create one:
 
 ```console
-$ docker run -it --rm -e SENTRY_SECRET_KEY='<secret-key>' --link sentry-redis:redis --link sentry-postgres:postgres sentry createuser
+$ docker run -it --rm -e SENTRY_SECRET_KEY='<secret-key>' --link sentry-redis:redis --link sentry-postgres:postgres s390x/sentry createuser
 ```
 
 ## Environment variables
@@ -121,7 +120,7 @@ When you start the `sentry` image, you can adjust the configuration of the Sentr
 A secret key used for cryptographic functions within Sentry. This key should be unique and consistent across all running instances. You can generate a new secret key doing something like:
 
 ```console
-$ docker run --rm sentry config generate-secret-key
+$ docker run --rm s390x/sentry config generate-secret-key
 ```
 
 ### `SENTRY_POSTGRES_HOST`, `SENTRY_POSTGRES_PORT`, `SENTRY_DB_NAME`, `SENTRY_DB_USER`, `SENTRY_DB_PASSWORD`
@@ -151,30 +150,6 @@ Connection information for an outbound smtp server. These values aren't needed i
 ### `SENTRY_MAILGUN_API_KEY`
 
 If you're using Mailgun for inbound mail, set your API key and configure a route to forward to `/api/hooks/mailgun/inbound/`.
-
-# Image Variants
-
-The `sentry` images come in many flavors, each designed for a specific use case.
-
-## `sentry:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-## `sentry:onbuild`
-
-This image makes it easy to custom build your own Sentry instance by copying in a custom `config.yml` and/or `sentry.conf.py` file and installing plugins from `requirements.txt`.
-
-It's also possible to develop custom extensions within your `onbuild` package. If the build directory contains a `setup.py` file, this will also get installed.
-
-See the [official Sentry documentation](https://docs.getsentry.com/on-premise/server/installation/) for more information.
-
-To create your custom `sentry:onbuild` package, simply do the following:
-
-1.	Create a Dockerfile containing `FROM sentry:onbuild`
-2.	In the same directory, add your custom configuration files.
-3.	You can get copies of those files to use as templates from the [docker-sentry GitHub repo](https://github.com/getsentry/docker-sentry/).
-4.	Build your image: `docker build -t mysentry .`
-5.	Run your custom image using `mysentry` instead of `sentry`.
 
 # License
 

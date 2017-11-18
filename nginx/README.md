@@ -18,12 +18,10 @@ WARNING:
 
 -	[`1.13.6`, `mainline`, `1`, `1.13`, `latest` (*mainline/stretch/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/3ba04e37d8f9ed7709fd30bf4dc6c36554e578ac/mainline/stretch/Dockerfile)
 -	[`1.13.6-perl`, `mainline-perl`, `1-perl`, `1.13-perl`, `perl` (*mainline/stretch-perl/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/3ba04e37d8f9ed7709fd30bf4dc6c36554e578ac/mainline/stretch-perl/Dockerfile)
--	[`1.13.6-alpine`, `mainline-alpine`, `1-alpine`, `1.13-alpine`, `alpine` (*mainline/alpine/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/3ba04e37d8f9ed7709fd30bf4dc6c36554e578ac/mainline/alpine/Dockerfile)
--	[`1.13.6-alpine-perl`, `mainline-alpine-perl`, `1-alpine-perl`, `1.13-alpine-perl`, `alpine-perl` (*mainline/alpine-perl/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/3ba04e37d8f9ed7709fd30bf4dc6c36554e578ac/mainline/alpine-perl/Dockerfile)
 -	[`1.12.2`, `stable`, `1.12` (*stable/stretch/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/72ac2226580ee73c170163dbe6e4436373b6ece9/stable/stretch/Dockerfile)
 -	[`1.12.2-perl`, `stable-perl`, `1.12-perl` (*stable/stretch-perl/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/72ac2226580ee73c170163dbe6e4436373b6ece9/stable/stretch-perl/Dockerfile)
--	[`1.12.2-alpine`, `stable-alpine`, `1.12-alpine` (*stable/alpine/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/72ac2226580ee73c170163dbe6e4436373b6ece9/stable/alpine/Dockerfile)
--	[`1.12.2-alpine-perl`, `stable-alpine-perl`, `1.12-alpine-perl` (*stable/alpine-perl/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/72ac2226580ee73c170163dbe6e4436373b6ece9/stable/alpine-perl/Dockerfile)
+
+[![Build Status](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/nginx/badge/icon) (`s390x/nginx` build job)](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/nginx/)
 
 # Quick reference
 
@@ -66,13 +64,13 @@ Nginx (pronounced "engine-x") is an open source reverse proxy server for HTTP, H
 ## Hosting some simple static content
 
 ```console
-$ docker run --name some-nginx -v /some/content:/usr/share/nginx/html:ro -d nginx
+$ docker run --name some-nginx -v /some/content:/usr/share/nginx/html:ro -d s390x/nginx
 ```
 
 Alternatively, a simple `Dockerfile` can be used to generate a new image that includes the necessary content (which is a much cleaner solution than the bind mount above):
 
 ```dockerfile
-FROM nginx
+FROM s390x/nginx
 COPY static-html-directory /usr/share/nginx/html
 ```
 
@@ -93,7 +91,7 @@ Then you can hit `http://localhost:8080` or `http://host-ip:8080` in your browse
 ## Complex configuration
 
 ```console
-$ docker run --name my-custom-nginx-container -v /host/path/nginx.conf:/etc/nginx/nginx.conf:ro -d nginx
+$ docker run --name my-custom-nginx-container -v /host/path/nginx.conf:/etc/nginx/nginx.conf:ro -d s390x/nginx
 ```
 
 For information on the syntax of the nginx configuration files, see [the official documentation](http://nginx.org/en/docs/) (specifically the [Beginner's Guide](http://nginx.org/en/docs/beginners_guide.html#conf_structure)).
@@ -101,7 +99,7 @@ For information on the syntax of the nginx configuration files, see [the officia
 If you wish to adapt the default configuration, use something like the following to copy it from a running nginx container:
 
 ```console
-$ docker run --name tmp-nginx-container -d nginx
+$ docker run --name tmp-nginx-container -d s390x/nginx
 $ docker cp tmp-nginx-container:/etc/nginx/nginx.conf /host/path/nginx.conf
 $ docker rm -f tmp-nginx-container
 ```
@@ -109,7 +107,7 @@ $ docker rm -f tmp-nginx-container
 This can also be accomplished more cleanly using a simple `Dockerfile` (in `/host/path/`):
 
 ```dockerfile
-FROM nginx
+FROM s390x/nginx
 COPY nginx.conf /etc/nginx/nginx.conf
 ```
 
@@ -121,15 +119,15 @@ Then build the image with `docker build -t custom-nginx .` and run it as follows
 $ docker run --name my-custom-nginx-container -d custom-nginx
 ```
 
-### Using environment variables in nginx configuration
+### Using environment variables in s390x/nginx configuration
 
-Out-of-the-box, nginx doesn't support environment variables inside most configuration blocks. But `envsubst` may be used as a workaround if you need to generate your nginx configuration dynamically before nginx starts.
+Out-of-the-box, s390x/nginx doesn't support environment variables inside most configuration blocks. But `envsubst` may be used as a workaround if you need to generate your s390x/nginx configuration dynamically before s390x/nginx starts.
 
 Here is an example using docker-compose.yml:
 
 ```yaml
 web:
-  image: nginx
+  image: s390x/nginx
   volumes:
    - ./mysite.template:/etc/nginx/conf.d/mysite.template
   ports:
@@ -150,14 +148,14 @@ The `mysite.template` file may then contain variable references like this:
 Images since version 1.9.8 come with `nginx-debug` binary that produces verbose output when using higher log levels. It can be used with simple CMD substitution:
 
 ```console
-$ docker run --name my-nginx -v /host/path/nginx.conf:/etc/nginx/nginx.conf:ro -d nginx nginx-debug -g 'daemon off;'
+$ docker run --name my-nginx -v /host/path/nginx.conf:/etc/nginx/nginx.conf:ro -d s390x/nginx nginx-debug -g 'daemon off;'
 ```
 
 Similar configuration in docker-compose.yml may look like this:
 
 ```yaml
 web:
-  image: nginx
+  image: s390x/nginx
   volumes:
     - ./nginx.conf:/etc/nginx/nginx.conf:ro
   command: [nginx-debug, '-g', 'daemon off;']
@@ -172,22 +170,6 @@ With Amplify it is possible to collect and aggregate metrics across containers, 
 In order to use Amplify, a small Python-based agent software (Amplify Agent) should be [installed](https://github.com/nginxinc/docker-nginx-amplify) inside the container.
 
 For more information about Amplify, please check the official documentation [here](https://github.com/nginxinc/nginx-amplify-doc).
-
-# Image Variants
-
-The `nginx` images come in many flavors, each designed for a specific use case.
-
-## `nginx:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-## `nginx:alpine`
-
-This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
-
-This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
-
-To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 # License
 

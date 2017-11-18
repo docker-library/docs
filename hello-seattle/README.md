@@ -19,15 +19,13 @@ WARNING:
 ## Shared Tags
 
 -	`latest`:
-	-	[`linux` (*amd64/hello-seattle/Dockerfile*)](https://github.com/docker-library/hello-world/blob/7d0ee592e4ed60e2da9d59331e16ecdcadc1ed87/amd64/hello-seattle/Dockerfile)
-	-	[`nanoserver` (*amd64/hello-seattle/nanoserver/Dockerfile*)](https://github.com/docker-library/hello-world/blob/b63893caa6ec64d8159f8bd45b3745ed4f12f605/amd64/hello-seattle/nanoserver/Dockerfile)
-	-	[`nanoserver1709` (*amd64/hello-seattle/nanoserver1709/Dockerfile*)](https://github.com/docker-library/hello-world/blob/b9c8214f529b04e37683fddba4a4244308f046e8/amd64/hello-seattle/nanoserver1709/Dockerfile)
+	-	[`linux` (*s390x/hello-seattle/Dockerfile*)](https://github.com/docker-library/hello-world/blob/7d0ee592e4ed60e2da9d59331e16ecdcadc1ed87/s390x/hello-seattle/Dockerfile)
 
 ## Simple Tags
 
--	[`linux` (*amd64/hello-seattle/Dockerfile*)](https://github.com/docker-library/hello-world/blob/7d0ee592e4ed60e2da9d59331e16ecdcadc1ed87/amd64/hello-seattle/Dockerfile)
--	[`nanoserver` (*amd64/hello-seattle/nanoserver/Dockerfile*)](https://github.com/docker-library/hello-world/blob/b63893caa6ec64d8159f8bd45b3745ed4f12f605/amd64/hello-seattle/nanoserver/Dockerfile)
--	[`nanoserver1709` (*amd64/hello-seattle/nanoserver1709/Dockerfile*)](https://github.com/docker-library/hello-world/blob/b9c8214f529b04e37683fddba4a4244308f046e8/amd64/hello-seattle/nanoserver1709/Dockerfile)
+-	[`linux` (*s390x/hello-seattle/Dockerfile*)](https://github.com/docker-library/hello-world/blob/7d0ee592e4ed60e2da9d59331e16ecdcadc1ed87/s390x/hello-seattle/Dockerfile)
+
+[![Build Status](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/hello-seattle/badge/icon) (`s390x/hello-seattle` build job)](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/hello-seattle/)
 
 # Quick reference
 
@@ -62,7 +60,7 @@ WARNING:
 This image is a vanity variant of [the `hello-world` image](https://hub.docker.com/_/hello-world/) created specifically for [DockerCon 2016](http://2016.dockercon.com/). Its use is discouraged.
 
 ```console
-$ docker run hello-seattle
+$ docker run s390x/hello-seattle
 
 Hello from DockerCon 2016 (Seattle)!
 This message shows that your installation appears to be working correctly.

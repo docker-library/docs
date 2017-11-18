@@ -16,11 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `27` (*x86_64//Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/f429bf1590cc45d9912c5a7f75e85ceba8057798/x86_64//Dockerfile)
--	[`26` (*x86_64//Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/5433f211a72f52b360751a63e3155d8fd12ab828/x86_64//Dockerfile)
--	[`modular`, `26-modular` (*x86_64//Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/d5dd6eb44f0651788edb6f81a5537c09b07022c4/x86_64//Dockerfile)
--	[`25` (*x86_64//Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/2dc7762f57aac299ea93a58eb386bf1a9b31356f/x86_64//Dockerfile)
--	[`rawhide` (*x86_64//Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/47465fa682b33cea69102229b7e895151a408b8f/x86_64//Dockerfile)
+**No supported tags found!**
+
+It is very likely that `fedora` does not support the currently selected architecture (`s390x`).
 
 # Quick reference
 
@@ -56,11 +54,11 @@ This image serves as the `official Fedora image` for the [Fedora Distribution](h
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/b449be7df57e9ed9086bb5821bfb5d6cdc5d67a4/fedora/logo.png)
 
-The `fedora:latest` tag will always point to the latest stable release.
+The `s390x/fedora:latest` tag will always point to the latest stable release.
 
 This image is a relatively small footprint in comparison to a standard Fedora installation. This image is generated in the [Fedora Build System](http://koji.fedoraproject.org/koji/) and is built from [this kickstart file](https://git.fedorahosted.org/cgit/spin-kickstarts.git/tree/fedora-docker-base.ks).
 
-[Fedora Rawhide](https://fedoraproject.org/wiki/Releases/Rawhide) is available via `fedora:rawhide` and any specific version of Fedora as `fedora:$version` (example: `fedora:23`).
+[Fedora Rawhide](https://fedoraproject.org/wiki/Releases/Rawhide) is available via `s390x/fedora:rawhide` and any specific version of Fedora as `s390x/fedora:$version` (example: `s390x/fedora:23`).
 
 # License
 

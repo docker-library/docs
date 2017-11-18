@@ -24,10 +24,10 @@ WARNING:
 -	[`3.5.2-jdk-8`, `3.5.2`, `3.5-jdk-8`, `3.5`, `3-jdk-8`, `3`, `latest` (*jdk-8/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/93d297ed2fc952af8c3638eae78c3d5e7526033f/jdk-8/Dockerfile)
 -	[`3.5.2-jdk-9-slim`, `3.5-jdk-9-slim`, `3-jdk-9-slim` (*jdk-9-slim/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/93d297ed2fc952af8c3638eae78c3d5e7526033f/jdk-9-slim/Dockerfile)
 -	[`3.5.2-jdk-9`, `3.5-jdk-9`, `3-jdk-9` (*jdk-9/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/93d297ed2fc952af8c3638eae78c3d5e7526033f/jdk-9/Dockerfile)
--	[`3.5.2-ibmjava-8-alpine`, `3.5.2-ibmjava-alpine`, `3.5-ibmjava-8-alpine`, `3.5-ibmjava-alpine`, `3-ibmjava-8-alpine`, `ibmjava-alpine` (*ibmjava-8-alpine/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/93d297ed2fc952af8c3638eae78c3d5e7526033f/ibmjava-8-alpine/Dockerfile)
 -	[`3.5.2-ibmjava-8`, `3.5.2-ibmjava`, `3.5-ibmjava-8`, `3.5-ibmjava`, `3-ibmjava-8`, `3-ibmjava`, `ibmjava` (*ibmjava-8/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/93d297ed2fc952af8c3638eae78c3d5e7526033f/ibmjava-8/Dockerfile)
--	[`3.5.2-ibmjava-9-alpine`, `3.5-ibmjava-9-alpine`, `3-ibmjava-9-alpine` (*ibmjava-9-alpine/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/93d297ed2fc952af8c3638eae78c3d5e7526033f/ibmjava-9-alpine/Dockerfile)
 -	[`3.5.2-ibmjava-9`, `3.5-ibmjava-9`, `3-ibmjava-9` (*ibmjava-9/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/93d297ed2fc952af8c3638eae78c3d5e7526033f/ibmjava-9/Dockerfile)
+
+[![Build Status](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/maven/badge/icon) (`s390x/maven` build job)](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/maven/)
 
 # Quick reference
 
@@ -68,7 +68,7 @@ WARNING:
 ## Create a Dockerfile in your Maven project
 
 ```dockerfile
-FROM maven:3.2-jdk-7-onbuild
+FROM s390x/maven:3.2-jdk-7-onbuild
 CMD ["do-something-with-built-packages"]
 ```
 
@@ -88,18 +88,18 @@ $ docker run -it --name my-maven-script my-maven
 For many simple projects, you may find it inconvenient to write a complete `Dockerfile`. In such cases, you can run a Maven project by using the Maven Docker image directly, passing a Maven command to `docker run`:
 
 ```console
-$ docker run -it --rm --name my-maven-project -v "$PWD":/usr/src/mymaven -w /usr/src/mymaven maven:3.2-jdk-7 mvn clean install
+$ docker run -it --rm --name my-maven-project -v "$PWD":/usr/src/mymaven -w /usr/src/mymaven s390x/maven:3.2-jdk-7 mvn clean install
 ```
 
 # Image Variants
 
-The `maven` images come in many flavors, each designed for a specific use case.
+The `s390x/maven` images come in many flavors, each designed for a specific use case.
 
-## `maven:<version>`
+## `s390x/maven:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `maven:alpine`
+## `s390x/maven:alpine`
 
 This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
@@ -107,9 +107,9 @@ This variant is highly recommended when final image size being as small as possi
 
 To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
-## `maven:slim`
+## `s390x/maven:slim`
 
-This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `maven`. Unless you are working in an environment where *only* the `maven` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
+This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `s390x/maven`. Unless you are working in an environment where *only* the `s390x/maven` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
 
 # License
 

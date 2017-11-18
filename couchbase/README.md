@@ -16,10 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `enterprise`, `5.0.0`, `enterprise-5.0.0` (*enterprise/couchbase-server/5.0.0/Dockerfile*)](https://github.com/couchbase/docker/blob/521055d5a670dc84811a137b8ad687a36e3333d5/enterprise/couchbase-server/5.0.0/Dockerfile)
--	[`4.6.3`, `enterprise-4.6.3` (*enterprise/couchbase-server/4.6.3/Dockerfile*)](https://github.com/couchbase/docker/blob/521055d5a670dc84811a137b8ad687a36e3333d5/enterprise/couchbase-server/4.6.3/Dockerfile)
--	[`community`, `community-5.0.0` (*community/couchbase-server/5.0.0/Dockerfile*)](https://github.com/couchbase/docker/blob/521055d5a670dc84811a137b8ad687a36e3333d5/community/couchbase-server/5.0.0/Dockerfile)
--	[`community-4.5.1` (*community/couchbase-server/4.5.1/Dockerfile*)](https://github.com/couchbase/docker/blob/521055d5a670dc84811a137b8ad687a36e3333d5/community/couchbase-server/4.5.1/Dockerfile)
+**No supported tags found!**
+
+It is very likely that `couchbase` does not support the currently selected architecture (`s390x`).
 
 # Quick reference
 
