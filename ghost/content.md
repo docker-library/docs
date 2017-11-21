@@ -14,6 +14,8 @@ This will start a Ghost instance listening on the default Ghost port of 2368.
 $ docker run -d --name some-ghost %%IMAGE%%
 ```
 
+Once it is up, you can navigate to `/admin` to create your user account.
+
 ## Custom port
 
 If you'd like to be able to access the instance from the host without the container's IP, standard port mappings can be used:
