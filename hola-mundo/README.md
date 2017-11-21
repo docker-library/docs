@@ -19,15 +19,15 @@ WARNING:
 ## Shared Tags
 
 -	`latest`:
-	-	[`linux` (*amd64/hola-mundo/Dockerfile*)](https://github.com/docker-library/hello-world/blob/7d0ee592e4ed60e2da9d59331e16ecdcadc1ed87/amd64/hola-mundo/Dockerfile)
-	-	[`nanoserver` (*amd64/hola-mundo/nanoserver/Dockerfile*)](https://github.com/docker-library/hello-world/blob/b63893caa6ec64d8159f8bd45b3745ed4f12f605/amd64/hola-mundo/nanoserver/Dockerfile)
-	-	[`nanoserver1709` (*amd64/hola-mundo/nanoserver1709/Dockerfile*)](https://github.com/docker-library/hello-world/blob/b9c8214f529b04e37683fddba4a4244308f046e8/amd64/hola-mundo/nanoserver1709/Dockerfile)
+	-	[`linux` (*amd64/hola-mundo/Dockerfile*)](https://github.com/docker-library/hello-world/blob/c83a065a24e94e635ddd518c2a3cffc91accf30d/amd64/hola-mundo/Dockerfile)
+	-	[`nanoserver` (*amd64/hola-mundo/nanoserver/Dockerfile*)](https://github.com/docker-library/hello-world/blob/c83a065a24e94e635ddd518c2a3cffc91accf30d/amd64/hola-mundo/nanoserver/Dockerfile)
+	-	[`nanoserver1709` (*amd64/hola-mundo/nanoserver1709/Dockerfile*)](https://github.com/docker-library/hello-world/blob/c83a065a24e94e635ddd518c2a3cffc91accf30d/amd64/hola-mundo/nanoserver1709/Dockerfile)
 
 ## Simple Tags
 
--	[`linux` (*amd64/hola-mundo/Dockerfile*)](https://github.com/docker-library/hello-world/blob/7d0ee592e4ed60e2da9d59331e16ecdcadc1ed87/amd64/hola-mundo/Dockerfile)
--	[`nanoserver` (*amd64/hola-mundo/nanoserver/Dockerfile*)](https://github.com/docker-library/hello-world/blob/b63893caa6ec64d8159f8bd45b3745ed4f12f605/amd64/hola-mundo/nanoserver/Dockerfile)
--	[`nanoserver1709` (*amd64/hola-mundo/nanoserver1709/Dockerfile*)](https://github.com/docker-library/hello-world/blob/b9c8214f529b04e37683fddba4a4244308f046e8/amd64/hola-mundo/nanoserver1709/Dockerfile)
+-	[`linux` (*amd64/hola-mundo/Dockerfile*)](https://github.com/docker-library/hello-world/blob/c83a065a24e94e635ddd518c2a3cffc91accf30d/amd64/hola-mundo/Dockerfile)
+-	[`nanoserver` (*amd64/hola-mundo/nanoserver/Dockerfile*)](https://github.com/docker-library/hello-world/blob/c83a065a24e94e635ddd518c2a3cffc91accf30d/amd64/hola-mundo/nanoserver/Dockerfile)
+-	[`nanoserver1709` (*amd64/hola-mundo/nanoserver1709/Dockerfile*)](https://github.com/docker-library/hello-world/blob/c83a065a24e94e635ddd518c2a3cffc91accf30d/amd64/hola-mundo/nanoserver1709/Dockerfile)
 
 # Quick reference
 
