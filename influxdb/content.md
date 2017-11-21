@@ -192,11 +192,11 @@ To manually initialize the database and exit, the `/init-influxdb.sh` script can
 
 ```console
 $ docker run --rm \
-      -e INFLUXDB_DB=db0 -e INFLUXDB_ADMIN_ENABLED=true
-      -e INFLUXDB_ADMIN_USER=admin -e INFLUXDB_ADMIN_USER=supersecretpassword
-      -e INFLUXDB_USER=telegraf -e INFLUXDB_USER_PASSWORD=secretpassword
+      -e INFLUXDB_DB=db0 -e INFLUXDB_ADMIN_ENABLED=true \
+      -e INFLUXDB_ADMIN_USER=admin -e INFLUXDB_ADMIN_USER=supersecretpassword \
+      -e INFLUXDB_USER=telegraf -e INFLUXDB_USER_PASSWORD=secretpassword \
       -v $PWD:/var/lib/influxdb \
-      /init-influxdb.sh
+      influxdb /init-influxdb.sh
 ```
 
 The above would create the database `db0`, create an admin user with the password `supersecretpassword`, then create the `telegraf` user with your telegraf's secret password. It would then exit and leave behind any files it created in the volume that you mounted.
