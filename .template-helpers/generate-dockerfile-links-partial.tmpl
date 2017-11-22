@@ -8,6 +8,37 @@ This template defines the "Supported tags and Dockerfile links" portion of an im
 
 {{- $sharedTagGroups := .Manifest.GetSharedTagGroups -}}
 {{- if (len $sharedTagGroups) -}}
+	{{- "## Simple Tags\n\n" -}}
+{{- end -}}
+
+{{- range $i, $e := $.Entries -}}
+	{{- $arch := $archSpecific | ternary arch ($e.HasArchitecture arch | ternary arch ($e.Architectures | first)) -}}
+
+	{{- if $e.HasArchitecture $arch -}}
+		{{- /* force bashbrew to "fetch" the GitCommit so that it is fully resolved */ -}}
+		{{- $from := $.ArchDockerFrom $arch $e -}}
+
+		{{- $gitRepo := $e.ArchGitRepo $arch -}}
+		{{- $repoUrlBase := $gitRepo | replace "git://" "https://" | trimSuffixes ".git" -}}
+		{{- $isGitHub := hasPrefix "https://github.com/" $repoUrlBase -}}
+
+		{{- if $i -}}
+			{{- "\n" -}}
+		{{- end -}}
+
+		- {{- "\t" -}}
+		{{- if $isGitHub -}} [ {{- end -}}
+		{{- $dir := .ArchDirectory $arch -}}
+		{{- $dockerfilePath := ternary "Dockerfile" (join "/" $dir "Dockerfile") (eq $dir ".") -}}
+		` {{- $e.Tags | join "`, `" -}} ` (* {{- $dockerfilePath -}} *)
+		{{- $gitCommit := $e.ArchGitCommit $arch -}}
+		{{- if $isGitHub -}} ]( {{- $repoUrlBase -}} /blob/ {{- $gitCommit -}} / {{- $dockerfilePath -}} ) {{- end -}}
+		{{- /* TODO decide what to do (if anything) about non-GitHub repos with respect to URL */ -}}
+	{{- end -}}
+{{- end -}}
+{{- "\n\n" -}}
+
+{{- if (len $sharedTagGroups) -}}
 	{{- "## Shared Tags\n\n" -}}
 
 	{{- range $sharedTagGroups -}}
@@ -38,34 +69,5 @@ This template defines the "Supported tags and Dockerfile links" portion of an im
 			{{- end -}}
 		{{- end -}}
 	{{- end -}}
-
-	{{- "\n## Simple Tags\n\n" -}}
+	{{- "\n" -}}
 {{- end -}}
-
-{{- range $i, $e := $.Entries -}}
-	{{- $arch := $archSpecific | ternary arch ($e.HasArchitecture arch | ternary arch ($e.Architectures | first)) -}}
-
-	{{- if $e.HasArchitecture $arch -}}
-		{{- /* force bashbrew to "fetch" the GitCommit so that it is fully resolved */ -}}
-		{{- $from := $.ArchDockerFrom $arch $e -}}
-
-		{{- $gitRepo := $e.ArchGitRepo $arch -}}
-		{{- $repoUrlBase := $gitRepo | replace "git://" "https://" | trimSuffixes ".git" -}}
-		{{- $isGitHub := hasPrefix "https://github.com/" $repoUrlBase -}}
-
-		{{- if $i -}}
-			{{- "\n" -}}
-		{{- end -}}
-
-		- {{- "\t" -}}
-		{{- if $isGitHub -}} [ {{- end -}}
-		{{- $dir := .ArchDirectory $arch -}}
-		{{- $dockerfilePath := ternary "Dockerfile" (join "/" $dir "Dockerfile") (eq $dir ".") -}}
-		` {{- $e.Tags | join "`, `" -}} ` (* {{- $dockerfilePath -}} *)
-		{{- $gitCommit := $e.ArchGitCommit $arch -}}
-		{{- if $isGitHub -}} ]( {{- $repoUrlBase -}} /blob/ {{- $gitCommit -}} / {{- $dockerfilePath -}} ) {{- end -}}
-		{{- /* TODO decide what to do (if anything) about non-GitHub repos with respect to URL */ -}}
-	{{- end -}}
-{{- end -}}
-
-{{- "\n\n" -}}
