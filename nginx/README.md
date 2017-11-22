@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.13.6`, `mainline`, `1`, `1.13`, `latest` (*mainline/stretch/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/3ba04e37d8f9ed7709fd30bf4dc6c36554e578ac/mainline/stretch/Dockerfile)
--	[`1.13.6-perl`, `mainline-perl`, `1-perl`, `1.13-perl`, `perl` (*mainline/stretch-perl/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/3ba04e37d8f9ed7709fd30bf4dc6c36554e578ac/mainline/stretch-perl/Dockerfile)
--	[`1.13.6-alpine`, `mainline-alpine`, `1-alpine`, `1.13-alpine`, `alpine` (*mainline/alpine/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/3ba04e37d8f9ed7709fd30bf4dc6c36554e578ac/mainline/alpine/Dockerfile)
--	[`1.13.6-alpine-perl`, `mainline-alpine-perl`, `1-alpine-perl`, `1.13-alpine-perl`, `alpine-perl` (*mainline/alpine-perl/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/3ba04e37d8f9ed7709fd30bf4dc6c36554e578ac/mainline/alpine-perl/Dockerfile)
+-	[`1.13.7`, `mainline`, `1`, `1.13`, `latest` (*mainline/stretch/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/c8bfb9b5260d4ad308deac5343b73b027f684375/mainline/stretch/Dockerfile)
+-	[`1.13.7-perl`, `mainline-perl`, `1-perl`, `1.13-perl`, `perl` (*mainline/stretch-perl/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/c8bfb9b5260d4ad308deac5343b73b027f684375/mainline/stretch-perl/Dockerfile)
+-	[`1.13.7-alpine`, `mainline-alpine`, `1-alpine`, `1.13-alpine`, `alpine` (*mainline/alpine/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/c8bfb9b5260d4ad308deac5343b73b027f684375/mainline/alpine/Dockerfile)
+-	[`1.13.7-alpine-perl`, `mainline-alpine-perl`, `1-alpine-perl`, `1.13-alpine-perl`, `alpine-perl` (*mainline/alpine-perl/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/c8bfb9b5260d4ad308deac5343b73b027f684375/mainline/alpine-perl/Dockerfile)
 -	[`1.12.2`, `stable`, `1.12` (*stable/stretch/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/72ac2226580ee73c170163dbe6e4436373b6ece9/stable/stretch/Dockerfile)
 -	[`1.12.2-perl`, `stable-perl`, `1.12-perl` (*stable/stretch-perl/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/72ac2226580ee73c170163dbe6e4436373b6ece9/stable/stretch-perl/Dockerfile)
 -	[`1.12.2-alpine`, `stable-alpine`, `1.12-alpine` (*stable/alpine/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/72ac2226580ee73c170163dbe6e4436373b6ece9/stable/alpine/Dockerfile)
