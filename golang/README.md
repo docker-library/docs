@@ -16,15 +16,6 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
-## Shared Tags
-
--	`1.9.2`, `1.9`, `1`, `latest`:
-	-	[`1.9.2-stretch` (*1.9/stretch/Dockerfile*)](https://github.com/docker-library/golang/blob/cffcff7fce7f6b6b5c82fc8f7b3331a10590a661/1.9/stretch/Dockerfile)
-	-	[`1.9.2-windowsservercore` (*1.9/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/golang/blob/cffcff7fce7f6b6b5c82fc8f7b3331a10590a661/1.9/windows/windowsservercore/Dockerfile)
--	`1.8.5`, `1.8`:
-	-	[`1.8.5-jessie` (*1.8/jessie/Dockerfile*)](https://github.com/docker-library/golang/blob/87aaffce8f74bc5bee1306539030ee413c32aee4/1.8/jessie/Dockerfile)
-	-	[`1.8.5-windowsservercore` (*1.8/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/golang/blob/cffcff7fce7f6b6b5c82fc8f7b3331a10590a661/1.8/windows/windowsservercore/Dockerfile)
-
 ## Simple Tags
 
 -	[`1.9.2-stretch`, `1.9-stretch`, `1-stretch`, `stretch` (*1.9/stretch/Dockerfile*)](https://github.com/docker-library/golang/blob/cffcff7fce7f6b6b5c82fc8f7b3331a10590a661/1.9/stretch/Dockerfile)
@@ -38,6 +29,15 @@ WARNING:
 -	[`1.8.5-onbuild`, `1.8-onbuild` (*1.8/onbuild/Dockerfile*)](https://github.com/docker-library/golang/blob/132cd70768e3bc269902e4c7b579203f66dc9f64/1.8/onbuild/Dockerfile)
 -	[`1.8.5-windowsservercore`, `1.8-windowsservercore` (*1.8/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/golang/blob/cffcff7fce7f6b6b5c82fc8f7b3331a10590a661/1.8/windows/windowsservercore/Dockerfile)
 -	[`1.8.5-nanoserver`, `1.8-nanoserver` (*1.8/windows/nanoserver/Dockerfile*)](https://github.com/docker-library/golang/blob/cffcff7fce7f6b6b5c82fc8f7b3331a10590a661/1.8/windows/nanoserver/Dockerfile)
+
+## Shared Tags
+
+-	`1.9.2`, `1.9`, `1`, `latest`:
+	-	[`1.9.2-stretch` (*1.9/stretch/Dockerfile*)](https://github.com/docker-library/golang/blob/cffcff7fce7f6b6b5c82fc8f7b3331a10590a661/1.9/stretch/Dockerfile)
+	-	[`1.9.2-windowsservercore` (*1.9/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/golang/blob/cffcff7fce7f6b6b5c82fc8f7b3331a10590a661/1.9/windows/windowsservercore/Dockerfile)
+-	`1.8.5`, `1.8`:
+	-	[`1.8.5-jessie` (*1.8/jessie/Dockerfile*)](https://github.com/docker-library/golang/blob/87aaffce8f74bc5bee1306539030ee413c32aee4/1.8/jessie/Dockerfile)
+	-	[`1.8.5-windowsservercore` (*1.8/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/golang/blob/cffcff7fce7f6b6b5c82fc8f7b3331a10590a661/1.8/windows/windowsservercore/Dockerfile)
 
 # Quick reference
 

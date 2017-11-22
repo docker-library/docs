@@ -16,17 +16,17 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
-## Shared Tags
-
--	`0.6.0`, `latest`:
-	-	[`0.6.0-linux` (*amd64/Dockerfile*)](https://github.com/nats-io/nats-streaming-docker/blob/2f9abaf0830c64e40d22e3a8d4da47b96c666aef/amd64/Dockerfile)
-	-	[`0.6.0-nanoserver` (*windows/nanoserver/Dockerfile*)](https://github.com/nats-io/nats-streaming-docker/blob/9596dfac61688686a6f4955624c559cf101301a9/windows/nanoserver/Dockerfile)
-
 ## Simple Tags
 
 -	[`0.6.0-linux`, `linux` (*amd64/Dockerfile*)](https://github.com/nats-io/nats-streaming-docker/blob/2f9abaf0830c64e40d22e3a8d4da47b96c666aef/amd64/Dockerfile)
 -	[`0.6.0-nanoserver`, `nanoserver` (*windows/nanoserver/Dockerfile*)](https://github.com/nats-io/nats-streaming-docker/blob/9596dfac61688686a6f4955624c559cf101301a9/windows/nanoserver/Dockerfile)
 -	[`0.6.0-windowsservercore`, `windowsservercore` (*windows/windowsservercore/Dockerfile*)](https://github.com/nats-io/nats-streaming-docker/blob/9596dfac61688686a6f4955624c559cf101301a9/windows/windowsservercore/Dockerfile)
+
+## Shared Tags
+
+-	`0.6.0`, `latest`:
+	-	[`0.6.0-linux` (*amd64/Dockerfile*)](https://github.com/nats-io/nats-streaming-docker/blob/2f9abaf0830c64e40d22e3a8d4da47b96c666aef/amd64/Dockerfile)
+	-	[`0.6.0-nanoserver` (*windows/nanoserver/Dockerfile*)](https://github.com/nats-io/nats-streaming-docker/blob/9596dfac61688686a6f4955624c559cf101301a9/windows/nanoserver/Dockerfile)
 
 # Quick reference
 

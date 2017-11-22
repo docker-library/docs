@@ -16,18 +16,18 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
+## Simple Tags
+
+-	[`linux` (*amd64/hello-world/Dockerfile*)](https://github.com/docker-library/hello-world/blob/c83a065a24e94e635ddd518c2a3cffc91accf30d/amd64/hello-world/Dockerfile)
+-	[`nanoserver` (*amd64/hello-world/nanoserver/Dockerfile*)](https://github.com/docker-library/hello-world/blob/c83a065a24e94e635ddd518c2a3cffc91accf30d/amd64/hello-world/nanoserver/Dockerfile)
+-	[`nanoserver1709` (*amd64/hello-world/nanoserver1709/Dockerfile*)](https://github.com/docker-library/hello-world/blob/c83a065a24e94e635ddd518c2a3cffc91accf30d/amd64/hello-world/nanoserver1709/Dockerfile)
+
 ## Shared Tags
 
 -	`latest`:
 	-	[`linux` (*amd64/hello-world/Dockerfile*)](https://github.com/docker-library/hello-world/blob/c83a065a24e94e635ddd518c2a3cffc91accf30d/amd64/hello-world/Dockerfile)
 	-	[`nanoserver` (*amd64/hello-world/nanoserver/Dockerfile*)](https://github.com/docker-library/hello-world/blob/c83a065a24e94e635ddd518c2a3cffc91accf30d/amd64/hello-world/nanoserver/Dockerfile)
 	-	[`nanoserver1709` (*amd64/hello-world/nanoserver1709/Dockerfile*)](https://github.com/docker-library/hello-world/blob/c83a065a24e94e635ddd518c2a3cffc91accf30d/amd64/hello-world/nanoserver1709/Dockerfile)
-
-## Simple Tags
-
--	[`linux` (*amd64/hello-world/Dockerfile*)](https://github.com/docker-library/hello-world/blob/c83a065a24e94e635ddd518c2a3cffc91accf30d/amd64/hello-world/Dockerfile)
--	[`nanoserver` (*amd64/hello-world/nanoserver/Dockerfile*)](https://github.com/docker-library/hello-world/blob/c83a065a24e94e635ddd518c2a3cffc91accf30d/amd64/hello-world/nanoserver/Dockerfile)
--	[`nanoserver1709` (*amd64/hello-world/nanoserver1709/Dockerfile*)](https://github.com/docker-library/hello-world/blob/c83a065a24e94e635ddd518c2a3cffc91accf30d/amd64/hello-world/nanoserver1709/Dockerfile)
 
 # Quick reference
 

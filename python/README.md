@@ -16,23 +16,6 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
-## Shared Tags
-
--	`3.7.0a2`, `3.7-rc`, `rc`:
-	-	[`3.7.0a2-stretch` (*3.7-rc/stretch/Dockerfile*)](https://github.com/docker-library/python/blob/3f12f511910098f45951111aa5642fd935133afc/3.7-rc/stretch/Dockerfile)
-	-	[`3.7.0a2-windowsservercore` (*3.7-rc/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/python/blob/3f12f511910098f45951111aa5642fd935133afc/3.7-rc/windows/windowsservercore/Dockerfile)
--	`3.6.3`, `3.6`, `3`, `latest`:
-	-	[`3.6.3-jessie` (*3.6/jessie/Dockerfile*)](https://github.com/docker-library/python/blob/cf179e4a7b442b29d85f521c2b172b89ef04beef/3.6/jessie/Dockerfile)
-	-	[`3.6.3-windowsservercore` (*3.6/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/python/blob/e01eb54f3c70555cf661dd756d529c85fd2cc04f/3.6/windows/windowsservercore/Dockerfile)
--	`3.5.4`, `3.5`:
-	-	[`3.5.4-jessie` (*3.5/jessie/Dockerfile*)](https://github.com/docker-library/python/blob/6ebbaa8a56cdf4021c78e87b3872be3861ac072a/3.5/jessie/Dockerfile)
-	-	[`3.5.4-windowsservercore` (*3.5/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/python/blob/9524a26b67ebc8ea48ceaaf6750f5f6caf89478e/3.5/windows/windowsservercore/Dockerfile)
--	`3.4.7`, `3.4`:
-	-	[`3.4.7-jessie` (*3.4/jessie/Dockerfile*)](https://github.com/docker-library/python/blob/27516b7347b3236a3accd4b2e1242a53fb54d04c/3.4/jessie/Dockerfile)
--	`2.7.14`, `2.7`, `2`:
-	-	[`2.7.14-jessie` (*2.7/jessie/Dockerfile*)](https://github.com/docker-library/python/blob/b1512ead24c6b111506a8d4229134a29da240597/2.7/jessie/Dockerfile)
-	-	[`2.7.14-windowsservercore` (*2.7/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/python/blob/9524a26b67ebc8ea48ceaaf6750f5f6caf89478e/2.7/windows/windowsservercore/Dockerfile)
-
 ## Simple Tags
 
 -	[`3.7.0a2-stretch`, `3.7-rc-stretch`, `rc-stretch` (*3.7-rc/stretch/Dockerfile*)](https://github.com/docker-library/python/blob/3f12f511910098f45951111aa5642fd935133afc/3.7-rc/stretch/Dockerfile)
@@ -66,6 +49,23 @@ WARNING:
 -	[`2.7.14-alpine3.6`, `2.7-alpine3.6`, `2-alpine3.6` (*2.7/alpine3.6/Dockerfile*)](https://github.com/docker-library/python/blob/1d59eb2dd813c64891bf554a8ea01754aba25816/2.7/alpine3.6/Dockerfile)
 -	[`2.7.14-alpine3.4`, `2.7-alpine3.4`, `2-alpine3.4`, `2.7.14-alpine`, `2.7-alpine`, `2-alpine` (*2.7/alpine3.4/Dockerfile*)](https://github.com/docker-library/python/blob/1d59eb2dd813c64891bf554a8ea01754aba25816/2.7/alpine3.4/Dockerfile)
 -	[`2.7.14-windowsservercore`, `2.7-windowsservercore`, `2-windowsservercore` (*2.7/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/python/blob/9524a26b67ebc8ea48ceaaf6750f5f6caf89478e/2.7/windows/windowsservercore/Dockerfile)
+
+## Shared Tags
+
+-	`3.7.0a2`, `3.7-rc`, `rc`:
+	-	[`3.7.0a2-stretch` (*3.7-rc/stretch/Dockerfile*)](https://github.com/docker-library/python/blob/3f12f511910098f45951111aa5642fd935133afc/3.7-rc/stretch/Dockerfile)
+	-	[`3.7.0a2-windowsservercore` (*3.7-rc/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/python/blob/3f12f511910098f45951111aa5642fd935133afc/3.7-rc/windows/windowsservercore/Dockerfile)
+-	`3.6.3`, `3.6`, `3`, `latest`:
+	-	[`3.6.3-jessie` (*3.6/jessie/Dockerfile*)](https://github.com/docker-library/python/blob/cf179e4a7b442b29d85f521c2b172b89ef04beef/3.6/jessie/Dockerfile)
+	-	[`3.6.3-windowsservercore` (*3.6/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/python/blob/e01eb54f3c70555cf661dd756d529c85fd2cc04f/3.6/windows/windowsservercore/Dockerfile)
+-	`3.5.4`, `3.5`:
+	-	[`3.5.4-jessie` (*3.5/jessie/Dockerfile*)](https://github.com/docker-library/python/blob/6ebbaa8a56cdf4021c78e87b3872be3861ac072a/3.5/jessie/Dockerfile)
+	-	[`3.5.4-windowsservercore` (*3.5/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/python/blob/9524a26b67ebc8ea48ceaaf6750f5f6caf89478e/3.5/windows/windowsservercore/Dockerfile)
+-	`3.4.7`, `3.4`:
+	-	[`3.4.7-jessie` (*3.4/jessie/Dockerfile*)](https://github.com/docker-library/python/blob/27516b7347b3236a3accd4b2e1242a53fb54d04c/3.4/jessie/Dockerfile)
+-	`2.7.14`, `2.7`, `2`:
+	-	[`2.7.14-jessie` (*2.7/jessie/Dockerfile*)](https://github.com/docker-library/python/blob/b1512ead24c6b111506a8d4229134a29da240597/2.7/jessie/Dockerfile)
+	-	[`2.7.14-windowsservercore` (*2.7/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/python/blob/9524a26b67ebc8ea48ceaaf6750f5f6caf89478e/2.7/windows/windowsservercore/Dockerfile)
 
 # Quick reference
 
