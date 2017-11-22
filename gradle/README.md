@@ -16,16 +16,16 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.3.0-jdk7`, `4.3-jdk7`, `jdk7` (*jdk7/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/bb744a56314f1621f3f4bd596d058f93fd3c1a9b/jdk7/Dockerfile)
--	[`4.3.0-jre7`, `4.3-jre7`, `jre7` (*jre7/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/bb744a56314f1621f3f4bd596d058f93fd3c1a9b/jre7/Dockerfile)
--	[`4.3.0-jdk7-alpine`, `4.3-jdk7-alpine`, `jdk7-alpine` (*jdk7-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/bb744a56314f1621f3f4bd596d058f93fd3c1a9b/jdk7-alpine/Dockerfile)
--	[`4.3.0-jre7-alpine`, `4.3-jre7-alpine`, `jre7-alpine` (*jre7-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/bb744a56314f1621f3f4bd596d058f93fd3c1a9b/jre7-alpine/Dockerfile)
--	[`4.3.0-jdk8`, `4.3-jdk8`, `jdk8`, `4.3.0-jdk`, `4.3-jdk`, `jdk`, `4.3.0`, `4.3`, `latest` (*jdk8/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/bb744a56314f1621f3f4bd596d058f93fd3c1a9b/jdk8/Dockerfile)
--	[`4.3.0-jre8`, `4.3-jre8`, `jre8`, `4.3.0-jre`, `4.3-jre`, `jre` (*jre8/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/bb744a56314f1621f3f4bd596d058f93fd3c1a9b/jre8/Dockerfile)
--	[`4.3.0-jdk8-alpine`, `4.3-jdk8-alpine`, `jdk8-alpine`, `4.3.0-jdk-alpine`, `4.3-jdk-alpine`, `jdk-alpine`, `4.3.0-alpine`, `4.3-alpine`, `alpine` (*jdk8-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/bb744a56314f1621f3f4bd596d058f93fd3c1a9b/jdk8-alpine/Dockerfile)
--	[`4.3.0-jre8-alpine`, `4.3-jre8-alpine`, `jre8-alpine`, `4.3.0-jre-alpine`, `4.3-jre-alpine`, `jre-alpine` (*jre8-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/bb744a56314f1621f3f4bd596d058f93fd3c1a9b/jre8-alpine/Dockerfile)
--	[`4.3.0-jdk9`, `4.3-jdk9`, `jdk9` (*jdk9/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/bb744a56314f1621f3f4bd596d058f93fd3c1a9b/jdk9/Dockerfile)
--	[`4.3.0-jre9`, `4.3-jre9`, `jre9` (*jre9/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/bb744a56314f1621f3f4bd596d058f93fd3c1a9b/jre9/Dockerfile)
+-	[`4.3.1-jdk7`, `4.3-jdk7`, `jdk7` (*jdk7/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/1d0a9b199274b66cbb247279bb50ceaacdfb2e31/jdk7/Dockerfile)
+-	[`4.3.1-jre7`, `4.3-jre7`, `jre7` (*jre7/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/1d0a9b199274b66cbb247279bb50ceaacdfb2e31/jre7/Dockerfile)
+-	[`4.3.1-jdk7-alpine`, `4.3-jdk7-alpine`, `jdk7-alpine` (*jdk7-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/1d0a9b199274b66cbb247279bb50ceaacdfb2e31/jdk7-alpine/Dockerfile)
+-	[`4.3.1-jre7-alpine`, `4.3-jre7-alpine`, `jre7-alpine` (*jre7-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/1d0a9b199274b66cbb247279bb50ceaacdfb2e31/jre7-alpine/Dockerfile)
+-	[`4.3.1-jdk8`, `4.3-jdk8`, `jdk8`, `4.3.1-jdk`, `4.3-jdk`, `jdk`, `4.3.1`, `4.3`, `latest` (*jdk8/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/1d0a9b199274b66cbb247279bb50ceaacdfb2e31/jdk8/Dockerfile)
+-	[`4.3.1-jre8`, `4.3-jre8`, `jre8`, `4.3.1-jre`, `4.3-jre`, `jre` (*jre8/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/1d0a9b199274b66cbb247279bb50ceaacdfb2e31/jre8/Dockerfile)
+-	[`4.3.1-jdk8-alpine`, `4.3-jdk8-alpine`, `jdk8-alpine`, `4.3.1-jdk-alpine`, `4.3-jdk-alpine`, `jdk-alpine`, `4.3.1-alpine`, `4.3-alpine`, `alpine` (*jdk8-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/1d0a9b199274b66cbb247279bb50ceaacdfb2e31/jdk8-alpine/Dockerfile)
+-	[`4.3.1-jre8-alpine`, `4.3-jre8-alpine`, `jre8-alpine`, `4.3.1-jre-alpine`, `4.3-jre-alpine`, `jre-alpine` (*jre8-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/1d0a9b199274b66cbb247279bb50ceaacdfb2e31/jre8-alpine/Dockerfile)
+-	[`4.3.1-jdk9`, `4.3-jdk9`, `jdk9` (*jdk9/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/1d0a9b199274b66cbb247279bb50ceaacdfb2e31/jdk9/Dockerfile)
+-	[`4.3.1-jre9`, `4.3-jre9`, `jre9` (*jre9/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/1d0a9b199274b66cbb247279bb50ceaacdfb2e31/jre9/Dockerfile)
 
 # Quick reference
 
