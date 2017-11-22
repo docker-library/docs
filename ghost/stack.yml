@@ -17,7 +17,7 @@ services:
       database__connection__user: root
       database__connection__password: example
       database__connection__database: ghost
-      url: example.org
+      url: https://example.org
 
   db:
     image: mysql:5.7
