@@ -12,9 +12,9 @@ services:
       image: geonetwork
       restart: always
       ports:
-          - 8080:8080
+         - 8080:8080
       environment:
-          DATA_DIR: /var/lib/geonetwork_data
+         - DATA_DIR=/var/lib/geonetwork_data
       volumes:
          - geonetwork:/var/lib/geonetwork_data
 
