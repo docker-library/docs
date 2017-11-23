@@ -16,14 +16,16 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.4.27`, `1.4` (*1.4/Dockerfile*)](https://github.com/docker-library/haproxy/blob/a11db1597f9be5365028673df4d05b2ea854b3ed/1.4/Dockerfile)
--	[`1.4.27-alpine`, `1.4-alpine` (*1.4/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/2d393f2b59824bf5c7f692a503c18e2dac43fae7/1.4/alpine/Dockerfile)
--	[`1.5.19`, `1.5` (*1.5/Dockerfile*)](https://github.com/docker-library/haproxy/blob/67667912113013d9dfd14b503c14e120ceab9899/1.5/Dockerfile)
--	[`1.5.19-alpine`, `1.5-alpine` (*1.5/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/2d393f2b59824bf5c7f692a503c18e2dac43fae7/1.5/alpine/Dockerfile)
--	[`1.6.13`, `1.6` (*1.6/Dockerfile*)](https://github.com/docker-library/haproxy/blob/900676649347a83b314fd7b33e0a52265e168577/1.6/Dockerfile)
--	[`1.6.13-alpine`, `1.6-alpine` (*1.6/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/2d393f2b59824bf5c7f692a503c18e2dac43fae7/1.6/alpine/Dockerfile)
--	[`1.7.9`, `1.7`, `1`, `latest` (*1.7/Dockerfile*)](https://github.com/docker-library/haproxy/blob/394255fbe76c57a9f2e0775e3e69df714e801b46/1.7/Dockerfile)
--	[`1.7.9-alpine`, `1.7-alpine`, `1-alpine`, `alpine` (*1.7/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/2d393f2b59824bf5c7f692a503c18e2dac43fae7/1.7/alpine/Dockerfile)
+-	[`1.4.27`, `1.4` (*1.4/Dockerfile*)](https://github.com/docker-library/haproxy/blob/c4e5aad8e303cdf6911e944b667ee2ef69caaa25/1.4/Dockerfile)
+-	[`1.4.27-alpine`, `1.4-alpine` (*1.4/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/c4e5aad8e303cdf6911e944b667ee2ef69caaa25/1.4/alpine/Dockerfile)
+-	[`1.5.19`, `1.5` (*1.5/Dockerfile*)](https://github.com/docker-library/haproxy/blob/c4e5aad8e303cdf6911e944b667ee2ef69caaa25/1.5/Dockerfile)
+-	[`1.5.19-alpine`, `1.5-alpine` (*1.5/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/c4e5aad8e303cdf6911e944b667ee2ef69caaa25/1.5/alpine/Dockerfile)
+-	[`1.6.13`, `1.6` (*1.6/Dockerfile*)](https://github.com/docker-library/haproxy/blob/c4e5aad8e303cdf6911e944b667ee2ef69caaa25/1.6/Dockerfile)
+-	[`1.6.13-alpine`, `1.6-alpine` (*1.6/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/56a8d73e8f835d736544676a30cfe1b445f84836/1.6/alpine/Dockerfile)
+-	[`1.7.9`, `1.7`, `1`, `latest` (*1.7/Dockerfile*)](https://github.com/docker-library/haproxy/blob/c4e5aad8e303cdf6911e944b667ee2ef69caaa25/1.7/Dockerfile)
+-	[`1.7.9-alpine`, `1.7-alpine`, `1-alpine`, `alpine` (*1.7/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/56a8d73e8f835d736544676a30cfe1b445f84836/1.7/alpine/Dockerfile)
+-	[`1.8-rc4`, `1.8-rc`, `rc` (*1.8-rc/Dockerfile*)](https://github.com/docker-library/haproxy/blob/0c9c27713bfca8505331e0da2664a9454755c7b9/1.8-rc/Dockerfile)
+-	[`1.8-rc4-alpine`, `1.8-rc-alpine`, `rc-alpine` (*1.8-rc/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/0c9c27713bfca8505331e0da2664a9454755c7b9/1.8-rc/alpine/Dockerfile)
 
 # Quick reference
 
@@ -37,7 +39,7 @@ WARNING:
 	[the Docker Community](https://github.com/docker-library/haproxy)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/haproxy/), [`arm32v5`](https://hub.docker.com/r/arm32v5/haproxy/), [`arm32v7`](https://hub.docker.com/r/arm32v7/haproxy/), [`arm64v8`](https://hub.docker.com/r/arm64v8/haproxy/), [`i386`](https://hub.docker.com/r/i386/haproxy/), [`ppc64le`](https://hub.docker.com/r/ppc64le/haproxy/), [`s390x`](https://hub.docker.com/r/s390x/haproxy/)
+	[`amd64`](https://hub.docker.com/r/amd64/haproxy/), [`arm32v5`](https://hub.docker.com/r/arm32v5/haproxy/), [`arm32v6`](https://hub.docker.com/r/arm32v6/haproxy/), [`arm32v7`](https://hub.docker.com/r/arm32v7/haproxy/), [`arm64v8`](https://hub.docker.com/r/arm64v8/haproxy/), [`i386`](https://hub.docker.com/r/i386/haproxy/), [`ppc64le`](https://hub.docker.com/r/ppc64le/haproxy/), [`s390x`](https://hub.docker.com/r/s390x/haproxy/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/haproxy/` directory](https://github.com/docker-library/repo-info/blob/master/repos/haproxy) ([history](https://github.com/docker-library/repo-info/commits/master/repos/haproxy))  
