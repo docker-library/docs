@@ -14,8 +14,6 @@ Please refer to [upstream's excellent (and comprehensive) documentation](https:/
 
 It is also worth checking out the [`examples/` directory from upstream](http://www.haproxy.org/git?p=haproxy-1.7.git;a=tree;f=examples).
 
-Note: Many configuration examples propose to put `daemon` into the `global` section to run HAProxy as daemon. Do **not** configure this or the Docker container will exit immediately after launching because the HAProxy process would go into the background.
-
 ## Create a `Dockerfile`
 
 ```dockerfile
