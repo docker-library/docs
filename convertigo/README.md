@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.4.6`, `7.4`, `latest` (*7.4/7.4.6/Dockerfile*)](https://github.com/convertigo/docker/blob/fb5ac90d57ebb78b00fe1bdb306bef7ad268cce5/7.4/7.4.6/Dockerfile)
--	[`web-connector-7.4.6`, `web-connector-7.4`, `web-connector` (*7.4/7.4.6/web-connector/Dockerfile*)](https://github.com/convertigo/docker/blob/fb5ac90d57ebb78b00fe1bdb306bef7ad268cce5/7.4/7.4.6/web-connector/Dockerfile)
+-	[`7.4.7`, `7.4`, `latest` (*7.4/7.4.7/Dockerfile*)](https://github.com/convertigo/docker/blob/dc3d5543b5de1813bf05c5abc937164a662bb491/7.4/7.4.7/Dockerfile)
+-	[`web-connector-7.4.7`, `web-connector-7.4`, `web-connector` (*7.4/7.4.7/web-connector/Dockerfile*)](https://github.com/convertigo/docker/blob/dc3d5543b5de1813bf05c5abc937164a662bb491/7.4/7.4.7/web-connector/Dockerfile)
 
 # Quick reference
 
