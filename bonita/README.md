@@ -133,49 +133,49 @@ Example `stack.yml` for `bonita`:
 version: '3'
 
 services:
-    db:
-        image: postgres:9.3
-        environment:
-            POSTGRES_PASSWORD: example
-        restart: always
-        command:
-            - -c
-            - max_prepared_transactions=100
-    bonita:
-        image: bonita
-        ports:
-            - 8080:8080
-        environment:
-            - POSTGRES_ENV_POSTGRES_PASSWORD=example
-            - DB_VENDOR=postgres
-            - DB_HOST=db
-            - TENANT_LOGIN=tech_user
-            - TENANT_PASSWORD=secret
-            - PLATFORM_LOGIN=pfadmin
-            - PLATFORM_PASSWORD=pfsecret
-        restart: always
-        depends_on:
-            - db
-        entrypoint:
-            - bash
-            - -c
-            - |
-              set -e
-              echo 'Waiting for Postgres to be available'
-              export PGPASSWORD="$$POSTGRES_ENV_POSTGRES_PASSWORD"
-              maxTries=10
-              while [ "$$maxTries" -gt 0 ] && ! psql -h "$$DB_HOST" -U 'postgres' -c '\l'; do
-                  sleep 1
-              done
-              echo
-              if [ "$$maxTries" -le 0 ]; then
-                  echo >&2 'error: unable to contact Postgres after 10 tries'
-                  exit 1
-              fi
-              exec /opt/files/startup.sh
+  db:
+    image: postgres:9.3
+    environment:
+      POSTGRES_PASSWORD: example
+    restart: always
+    command:
+      - -c
+      - max_prepared_transactions=100
+  bonita:
+    image: bonita
+    ports:
+      - 8080:8080
+    environment:
+      - POSTGRES_ENV_POSTGRES_PASSWORD=example
+      - DB_VENDOR=postgres
+      - DB_HOST=db
+      - TENANT_LOGIN=tech_user
+      - TENANT_PASSWORD=secret
+      - PLATFORM_LOGIN=pfadmin
+      - PLATFORM_PASSWORD=pfsecret
+    restart: always
+    depends_on:
+      - db
+    entrypoint:
+      - bash
+      - -c
+      - |
+        set -e
+        echo 'Waiting for Postgres to be available'
+        export PGPASSWORD="$$POSTGRES_ENV_POSTGRES_PASSWORD"
+        maxTries=10
+        while [ "$$maxTries" -gt 0 ] && ! psql -h "$$DB_HOST" -U 'postgres' -c '\l'; do
+            sleep 1
+        done
+        echo
+        if [ "$$maxTries" -le 0 ]; then
+            echo >&2 'error: unable to contact Postgres after 10 tries'
+            exit 1
+        fi
+        exec /opt/files/startup.sh
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/911024a3d9f3d3695a748103c7b94cd60ed18805/bonita/stack.yml)
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/9efeec18b6b2ed232cf0fbd3914b6211e16e242c/bonita/stack.yml)
 
 Run `docker stack deploy -c stack.yml bonita` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
 

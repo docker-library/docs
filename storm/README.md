@@ -107,37 +107,37 @@ Example `stack.yml` for `storm`:
 version: '3.1'
 
 services:
-    zookeeper:
-        image: zookeeper
-        container_name: zookeeper
-        restart: always
+  zookeeper:
+    image: zookeeper
+    container_name: zookeeper
+    restart: always
 
-    nimbus:
-        image: storm
-        container_name: nimbus
-        command: storm nimbus
-        depends_on:
-            - zookeeper
-        links:
-            - zookeeper
-        restart: always
-        ports:
-            - 6627:6627
+  nimbus:
+    image: storm
+    container_name: nimbus
+    command: storm nimbus
+    depends_on:
+      - zookeeper
+    links:
+      - zookeeper
+    restart: always
+    ports:
+      - 6627:6627
 
-    supervisor:
-        image: storm
-        container_name: supervisor
-        command: storm supervisor
-        depends_on:
-            - nimbus
-            - zookeeper
-        links:
-            - nimbus
-            - zookeeper
-        restart: always
+  supervisor:
+    image: storm
+    container_name: supervisor
+    command: storm supervisor
+    depends_on:
+      - nimbus
+      - zookeeper
+    links:
+      - nimbus
+      - zookeeper
+    restart: always
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/3992d8e6589cc104c8a1431781faec2804d45f2a/storm/stack.yml)
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/9efeec18b6b2ed232cf0fbd3914b6211e16e242c/storm/stack.yml)
 
 Run `docker stack deploy -c stack.yml storm` (or `docker-compose -f stack.yml up`) and wait for it to initialize completely. The Nimbus will be available at `http://swarm-ip:6627`, `http://localhost:6627`, or `http://host-ip:6627` (as appropriate).
 

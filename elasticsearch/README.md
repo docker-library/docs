@@ -127,16 +127,16 @@ version: '3.1'
 
 services:
 
-    elasticsearch:
-        image: elasticsearch
+  elasticsearch:
+    image: elasticsearch
 
-    kibana:
-        image: kibana
-        ports:
-            - 5601:5601
+  kibana:
+    image: kibana
+    ports:
+      - 5601:5601
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/c6273ffde77b55cad5d8bedcd522f55e10a539dd/elasticsearch/stack.yml)
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/9efeec18b6b2ed232cf0fbd3914b6211e16e242c/elasticsearch/stack.yml)
 
 Run `docker stack deploy -c stack.yml elasticsearch` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:5601`, `http://localhost:5601`, or `http://host-ip:5601` (as appropriate).
 
