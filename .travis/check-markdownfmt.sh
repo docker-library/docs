@@ -8,11 +8,11 @@ files="$(
 			-name '*.md' \
 			-not -name 'README.md' \
 		\) -exec test -s '{}' ';' -print0 \
-		| xargs -0 markdownfmt -l)"
+		| xargs -0 ./markdownfmt.sh -l)"
 if [ "$files" ]; then
 	echo >&2 'Need markdownfmt:'
 	echo >&2 "$files"
 	echo >&2
-	echo "$files" | xargs markdownfmt -d >&2
+	echo "$files" | xargs ./markdownfmt.sh -d >&2
 	exit 1
 fi
