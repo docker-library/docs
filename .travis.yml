@@ -1,12 +1,13 @@
-language: go
-
-sudo: false
+language: bash
+services: docker
 
 install:
-  - .travis/get-markdownfmt.sh
+  - docker pull tianon/markdownfmt
+  - docker pull tianon/ymlfmt
 
 script:
   - .travis/check-markdownfmt.sh
+  - .travis/check-ymlfmt.sh
   - .travis/check-short.sh
   - .travis/check-required-files.sh
   - .travis/check-pr-no-readme.sh
