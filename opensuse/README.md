@@ -16,11 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`42.3`, `leap`, `latest` (*docker/Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/344cc6c2ec6613be982a3c7e74a4ac2d57554d2a/docker/Dockerfile)
--	[`42.2` (*docker/Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/9592a29cf1eb62f7e8ece6bde435203ad5040fa5/docker/Dockerfile)
--	[`42.1` (*docker/Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/28ae2ecb12d4ec628bd0ca561ae5ed6b64c1eecd/docker/Dockerfile)
--	[`13.2`, `harlequin` (*docker/Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/f1cf8438c9d72afa0d4022c27fd6ee3e47b70e4c/docker/Dockerfile)
--	[`tumbleweed` (*docker/Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/5fb97e9dd32bad7be37ae4ffb32fd1d796f30d80/docker/Dockerfile)
+-	[`42.2` (*x86_64//Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/23cd8974723e434dffc96bcc34156bc6527a4d05/x86_64//Dockerfile)
+-	[`42.3`, `latest`, `leap` (*x86_64//Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/484dbcd4d2c4157ce26e2a6b0ae99839ee161edd/x86_64//Dockerfile)
+-	[`tumbleweed` (*x86_64//Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/30b44ff345bca8ec322495adfd967998c049fd39/x86_64//Dockerfile)
 
 # Quick reference
 
@@ -34,7 +32,7 @@ WARNING:
 	[the SUSE containers team](https://github.com/openSUSE/docker-containers-build)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/opensuse/)
+	[`amd64`](https://hub.docker.com/r/amd64/opensuse/), [`arm64v8`](https://hub.docker.com/r/arm64v8/opensuse/), [`ppc64le`](https://hub.docker.com/r/ppc64le/opensuse/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/opensuse/` directory](https://github.com/docker-library/repo-info/blob/master/repos/opensuse) ([history](https://github.com/docker-library/repo-info/commits/master/repos/opensuse))  
