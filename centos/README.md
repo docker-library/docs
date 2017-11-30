@@ -40,7 +40,7 @@ WARNING:
 	[The CentOS Project](https://github.com/CentOS/sig-cloud-instance-images)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/centos/), [`arm64v8`](https://hub.docker.com/r/arm64v8/centos/), [`ppc64le`](https://hub.docker.com/r/ppc64le/centos/)
+	[`amd64`](https://hub.docker.com/r/amd64/centos/), [`arm64v8`](https://hub.docker.com/r/arm64v8/centos/), [`i386`](https://hub.docker.com/r/i386/centos/), [`ppc64le`](https://hub.docker.com/r/ppc64le/centos/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/centos/` directory](https://github.com/docker-library/repo-info/blob/master/repos/centos) ([history](https://github.com/docker-library/repo-info/commits/master/repos/centos))  
