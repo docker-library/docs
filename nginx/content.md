@@ -117,3 +117,7 @@ With Amplify it is possible to collect and aggregate metrics across containers, 
 In order to use Amplify, a small Python-based agent software (Amplify Agent) should be [installed](https://github.com/nginxinc/docker-nginx-amplify) inside the container.
 
 For more information about Amplify, please check the official documentation [here](https://github.com/nginxinc/nginx-amplify-doc).
+
+## HTTP/2
+
+HTTP/2 has a requirement of `OpenSSL 1.0.2` and some of the image variants may not meet this requirement. If you would like to use HTTP2, use the `nginx:alpine` image.
