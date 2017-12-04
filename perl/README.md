@@ -16,12 +16,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `5`, `5.26`, `5.26.0` (*5.026.000-64bit/Dockerfile*)](https://github.com/perl/docker-perl/blob/8044d4ba7627712b6fbed84e544d2d78ca805f96/5.026.000-64bit/Dockerfile)
--	[`threaded`, `5-threaded`, `5.26-threaded`, `5.26.0-threaded` (*5.026.000-64bit,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/8044d4ba7627712b6fbed84e544d2d78ca805f96/5.026.000-64bit,threaded/Dockerfile)
--	[`5.24`, `5.24.2` (*5.024.002-64bit/Dockerfile*)](https://github.com/perl/docker-perl/blob/8044d4ba7627712b6fbed84e544d2d78ca805f96/5.024.002-64bit/Dockerfile)
--	[`5.24-threaded`, `5.24.2-threaded` (*5.024.002-64bit,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/8044d4ba7627712b6fbed84e544d2d78ca805f96/5.024.002-64bit,threaded/Dockerfile)
--	[`5.22`, `5.22.4` (*5.022.004-64bit/Dockerfile*)](https://github.com/perl/docker-perl/blob/8044d4ba7627712b6fbed84e544d2d78ca805f96/5.022.004-64bit/Dockerfile)
--	[`5.22-threaded`, `5.22.4-threaded` (*5.022.004-64bit,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/8044d4ba7627712b6fbed84e544d2d78ca805f96/5.022.004-64bit,threaded/Dockerfile)
+-	[`latest`, `5`, `5.26`, `5.26.1` (*5.026.001-64bit/Dockerfile*)](https://github.com/perl/docker-perl/blob/a5c2d6c896807e9c1beec4ebac01c7f30c075bf0/5.026.001-64bit/Dockerfile)
+-	[`threaded`, `5-threaded`, `5.26-threaded`, `5.26.1-threaded` (*5.026.001-64bit,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/a5c2d6c896807e9c1beec4ebac01c7f30c075bf0/5.026.001-64bit,threaded/Dockerfile)
+-	[`5.24`, `5.24.3` (*5.024.003-64bit/Dockerfile*)](https://github.com/perl/docker-perl/blob/a5c2d6c896807e9c1beec4ebac01c7f30c075bf0/5.024.003-64bit/Dockerfile)
+-	[`5.24-threaded`, `5.24.3-threaded` (*5.024.003-64bit,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/a5c2d6c896807e9c1beec4ebac01c7f30c075bf0/5.024.003-64bit,threaded/Dockerfile)
+-	[`5.22`, `5.22.4` (*5.022.004-64bit/Dockerfile*)](https://github.com/perl/docker-perl/blob/a5c2d6c896807e9c1beec4ebac01c7f30c075bf0/5.022.004-64bit/Dockerfile)
+-	[`5.22-threaded`, `5.22.4-threaded` (*5.022.004-64bit,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/a5c2d6c896807e9c1beec4ebac01c7f30c075bf0/5.022.004-64bit,threaded/Dockerfile)
 
 # Quick reference
 
@@ -35,7 +35,7 @@ WARNING:
 	[the Perl Community](https://github.com/Perl/docker-perl)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/perl/), [`arm64v8`](https://hub.docker.com/r/arm64v8/perl/)
+	[`amd64`](https://hub.docker.com/r/amd64/perl/), [`arm32v7`](https://hub.docker.com/r/arm32v7/perl/), [`arm64v8`](https://hub.docker.com/r/arm64v8/perl/), [`i386`](https://hub.docker.com/r/i386/perl/), [`ppc64le`](https://hub.docker.com/r/ppc64le/perl/), [`s390x`](https://hub.docker.com/r/s390x/perl/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/perl/` directory](https://github.com/docker-library/repo-info/blob/master/repos/perl) ([history](https://github.com/docker-library/repo-info/commits/master/repos/perl))  
