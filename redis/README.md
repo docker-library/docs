@@ -19,9 +19,9 @@ WARNING:
 -	[`3.2.11`, `3.2`, `3` (*3.2/Dockerfile*)](https://github.com/docker-library/redis/blob/99a06c057297421f9ea46934c342a2fc00644c4f/3.2/Dockerfile)
 -	[`3.2.11-32bit`, `3.2-32bit`, `3-32bit` (*3.2/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/99a06c057297421f9ea46934c342a2fc00644c4f/3.2/32bit/Dockerfile)
 -	[`3.2.11-alpine`, `3.2-alpine`, `3-alpine` (*3.2/alpine/Dockerfile*)](https://github.com/docker-library/redis/blob/99a06c057297421f9ea46934c342a2fc00644c4f/3.2/alpine/Dockerfile)
--	[`4.0.5`, `4.0`, `4`, `latest` (*4.0/Dockerfile*)](https://github.com/docker-library/redis/blob/c7e67d8f47b12755f58f3f26282de31a46f16130/4.0/Dockerfile)
--	[`4.0.5-32bit`, `4.0-32bit`, `4-32bit`, `32bit` (*4.0/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/c7e67d8f47b12755f58f3f26282de31a46f16130/4.0/32bit/Dockerfile)
--	[`4.0.5-alpine`, `4.0-alpine`, `4-alpine`, `alpine` (*4.0/alpine/Dockerfile*)](https://github.com/docker-library/redis/blob/c7e67d8f47b12755f58f3f26282de31a46f16130/4.0/alpine/Dockerfile)
+-	[`4.0.6`, `4.0`, `4`, `latest` (*4.0/Dockerfile*)](https://github.com/docker-library/redis/blob/9c63bd5fc7b52cc3d8f3441a660a593028a0ed15/4.0/Dockerfile)
+-	[`4.0.6-32bit`, `4.0-32bit`, `4-32bit`, `32bit` (*4.0/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/9c63bd5fc7b52cc3d8f3441a660a593028a0ed15/4.0/32bit/Dockerfile)
+-	[`4.0.6-alpine`, `4.0-alpine`, `4-alpine`, `alpine` (*4.0/alpine/Dockerfile*)](https://github.com/docker-library/redis/blob/9c63bd5fc7b52cc3d8f3441a660a593028a0ed15/4.0/alpine/Dockerfile)
 
 # Quick reference
 
