@@ -17,7 +17,7 @@ WARNING:
 # Supported tags and respective `Dockerfile` links
 
 -	[`5.7.19`, `5.7`, `5`, `latest` (*5.7/Dockerfile*)](https://github.com/docker-library/percona/blob/52abf70205354001f24432c0c677be4a0264ef47/5.7/Dockerfile)
--	[`5.6.37`, `5.6` (*5.6/Dockerfile*)](https://github.com/docker-library/percona/blob/52abf70205354001f24432c0c677be4a0264ef47/5.6/Dockerfile)
+-	[`5.6.38`, `5.6` (*5.6/Dockerfile*)](https://github.com/docker-library/percona/blob/d05195d80f65146ba72189947097fefd1bcf694c/5.6/Dockerfile)
 -	[`5.5.58`, `5.5` (*5.5/Dockerfile*)](https://github.com/docker-library/percona/blob/7b5f657baecb23a2638658e05ce9f466b181812c/5.5/Dockerfile)
 
 # Quick reference

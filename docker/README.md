@@ -16,25 +16,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
-## Simple Tags
-
--	[`17.11.0-ce`, `17.11.0`, `17.11`, `17`, `edge`, `test`, `latest` (*17.11/Dockerfile*)](https://github.com/docker-library/docker/blob/64f6d5eba928dd79b9ca1e7e879021a2baf4c705/17.11/Dockerfile)
--	[`17.11.0-ce-dind`, `17.11.0-dind`, `17.11-dind`, `17-dind`, `edge-dind`, `test-dind`, `dind` (*17.11/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/64f6d5eba928dd79b9ca1e7e879021a2baf4c705/17.11/dind/Dockerfile)
--	[`17.11.0-ce-git`, `17.11.0-git`, `17.11-git`, `17-git`, `edge-git`, `test-git`, `git` (*17.11/git/Dockerfile*)](https://github.com/docker-library/docker/blob/64f6d5eba928dd79b9ca1e7e879021a2baf4c705/17.11/git/Dockerfile)
--	[`17.09.1-ce-rc1`, `17.09-rc`, `rc` (*17.09-rc/Dockerfile*)](https://github.com/docker-library/docker/blob/f522868d85d70569fb3e90bd913efa1c3394a264/17.09-rc/Dockerfile)
--	[`17.09.1-ce-rc1-dind`, `17.09-rc-dind`, `rc-dind` (*17.09-rc/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/f522868d85d70569fb3e90bd913efa1c3394a264/17.09-rc/dind/Dockerfile)
--	[`17.09.1-ce-rc1-git`, `17.09-rc-git`, `rc-git` (*17.09-rc/git/Dockerfile*)](https://github.com/docker-library/docker/blob/f522868d85d70569fb3e90bd913efa1c3394a264/17.09-rc/git/Dockerfile)
--	[`17.09.0-ce`, `17.09.0`, `17.09`, `stable` (*17.09/Dockerfile*)](https://github.com/docker-library/docker/blob/af5b6cd45b8d1aeb534589d99f92b5a4dc886f5d/17.09/Dockerfile)
--	[`17.09.0-ce-dind`, `17.09.0-dind`, `17.09-dind`, `stable-dind` (*17.09/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/00de5231b507c989ce900df2ef3f1abf4ce7e19c/17.09/dind/Dockerfile)
--	[`17.09.0-ce-git`, `17.09.0-git`, `17.09-git`, `stable-git` (*17.09/git/Dockerfile*)](https://github.com/docker-library/docker/blob/a6b52c73daa8283cd861f41f55e53426008708ac/17.09/git/Dockerfile)
--	[`17.09.0-ce-windowsservercore-ltsc2016`, `17.09.0-windowsservercore-ltsc2016`, `17.09-windowsservercore-ltsc2016`, `stable-windowsservercore-ltsc2016` (*17.09/windows/windowsservercore-ltsc2016/Dockerfile*)](https://github.com/docker-library/docker/blob/2aa6d388f205fc20ad22402bfed4ece715c7cb48/17.09/windows/windowsservercore-ltsc2016/Dockerfile)
--	[`17.09.0-ce-windowsservercore-1709`, `17.09.0-windowsservercore-1709`, `17.09-windowsservercore-1709`, `stable-windowsservercore-1709` (*17.09/windows/windowsservercore-1709/Dockerfile*)](https://github.com/docker-library/docker/blob/2aa6d388f205fc20ad22402bfed4ece715c7cb48/17.09/windows/windowsservercore-1709/Dockerfile)
-
-## Shared Tags
-
--	`windowsservercore`:
-	-	[`17.09.0-ce-windowsservercore-ltsc2016` (*17.09/windows/windowsservercore-ltsc2016/Dockerfile*)](https://github.com/docker-library/docker/blob/2aa6d388f205fc20ad22402bfed4ece715c7cb48/17.09/windows/windowsservercore-ltsc2016/Dockerfile)
-	-	[`17.09.0-ce-windowsservercore-1709` (*17.09/windows/windowsservercore-1709/Dockerfile*)](https://github.com/docker-library/docker/blob/2aa6d388f205fc20ad22402bfed4ece715c7cb48/17.09/windows/windowsservercore-1709/Dockerfile)
+-	[`17.12.0-ce-rc1`, `17.12-rc`, `rc`, `test` (*17.12-rc/Dockerfile*)](https://github.com/docker-library/docker/blob/bbfb50a21b358554c1621cfe19378158d9155694/17.12-rc/Dockerfile)
+-	[`17.12.0-ce-rc1-dind`, `17.12-rc-dind`, `rc-dind`, `test-dind` (*17.12-rc/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/bbfb50a21b358554c1621cfe19378158d9155694/17.12-rc/dind/Dockerfile)
+-	[`17.12.0-ce-rc1-git`, `17.12-rc-git`, `rc-git`, `test-git` (*17.12-rc/git/Dockerfile*)](https://github.com/docker-library/docker/blob/bbfb50a21b358554c1621cfe19378158d9155694/17.12-rc/git/Dockerfile)
+-	[`17.11.0-ce`, `17.11.0`, `17.11`, `17`, `edge`, `latest` (*17.11/Dockerfile*)](https://github.com/docker-library/docker/blob/64f6d5eba928dd79b9ca1e7e879021a2baf4c705/17.11/Dockerfile)
+-	[`17.11.0-ce-dind`, `17.11.0-dind`, `17.11-dind`, `17-dind`, `edge-dind`, `dind` (*17.11/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/64f6d5eba928dd79b9ca1e7e879021a2baf4c705/17.11/dind/Dockerfile)
+-	[`17.11.0-ce-git`, `17.11.0-git`, `17.11-git`, `17-git`, `edge-git`, `git` (*17.11/git/Dockerfile*)](https://github.com/docker-library/docker/blob/64f6d5eba928dd79b9ca1e7e879021a2baf4c705/17.11/git/Dockerfile)
+-	[`17.09.1-ce`, `17.09.1`, `17.09`, `stable` (*17.09/Dockerfile*)](https://github.com/docker-library/docker/blob/4e80fad160cf70fac2ad8920528b43870426a00c/17.09/Dockerfile)
+-	[`17.09.1-ce-dind`, `17.09.1-dind`, `17.09-dind`, `stable-dind` (*17.09/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/00de5231b507c989ce900df2ef3f1abf4ce7e19c/17.09/dind/Dockerfile)
+-	[`17.09.1-ce-git`, `17.09.1-git`, `17.09-git`, `stable-git` (*17.09/git/Dockerfile*)](https://github.com/docker-library/docker/blob/a6b52c73daa8283cd861f41f55e53426008708ac/17.09/git/Dockerfile)
 
 # Quick reference
 
@@ -48,7 +38,7 @@ WARNING:
 	[Tianon (of the Docker Project)](https://github.com/docker-library/docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/docker/), [`arm64v8`](https://hub.docker.com/r/arm64v8/docker/), [`ppc64le`](https://hub.docker.com/r/ppc64le/docker/), [`s390x`](https://hub.docker.com/r/s390x/docker/), [`windows-amd64`](https://hub.docker.com/r/winamd64/docker/)
+	[`amd64`](https://hub.docker.com/r/amd64/docker/), [`arm64v8`](https://hub.docker.com/r/arm64v8/docker/), [`ppc64le`](https://hub.docker.com/r/ppc64le/docker/), [`s390x`](https://hub.docker.com/r/s390x/docker/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/docker/` directory](https://github.com/docker-library/repo-info/blob/master/repos/docker) ([history](https://github.com/docker-library/repo-info/commits/master/repos/docker))  
