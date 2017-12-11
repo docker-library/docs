@@ -8,28 +8,30 @@ In order to setup the connection from geonetwork, you **must** inject the follow
 
 If your postgres instance is listening on a non-standard port, you must also set that variable: - `POSTGRES_DB_PORT`: postgres port on your database server (defaults to `5432`)
 
-### Linking to a postgres container
+### Connecting to a postgres database
 
-Linking to a postgres container, is pretty straightforward: - `--link <some-postgres-container>:postgres`
-
-For instance, if you want to run the official image for postgres, you could launch it like this:
-
-```console
-$ docker run --name some-postgres -p 5432:5432 -d postgres
-```
-
-And then you could launch geonetwork, linking to this container, and setting the required environment variables:
-
-```console
-$ docker run --name geonetwork -d -p 8080:8080 --link some-postgres:postgres -e POSTGRES_DB_USERNAME=postgres -e POSTGRES_DB_PASSWORD=mysecretpassword geonetwork:postgres
-```
-
-### Connecting to a postgres instance
-
-If you want to connect to a postgres server running somewhere, you need to pass an extra environment variable, containing the IP address for this server (which could be localhost, if you are running it locally). - `POSTGRES_DB_HOST`: IP address of your database server
+If you want to connect to a postgres server, you need to pass an extra environment variable, containing the IP address for this server (which could be localhost, if you are running it locally). - `POSTGRES_DB_HOST`: IP address of your database server
 
 For instance, if the server is running on `192.168.1.10`, on port `5434`, the username is `postgres` and the password is `mysecretpassword`:
 
 ```console
 $ docker run --name geonetwork -d -p 8080:8080 -e POSTGRES_DB_HOST=192.168.1.10 -e POSTGRES_DB_PORT=5434 -e POSTGRES_DB_USERNAME=postgres -e POSTGRES_DB_PASSWORD=mysecretpassword geonetwork:postgres
+```
+
+If you want to use the container name as `POSTGRES_DB_HOST`, just make sure that containers can discover each other, by **running them in the same user-defined network**. For instance, you can create a bridge network:
+
+```console
+$ docker network create --driver bridge mynet
+```
+
+Then if you want to run the official image of postgres, using `$POSTGRES_DB_HOST` as container name, you could launch it like this:
+
+```console
+$ docker run --name $POSTGRES_DB_HOST --network=mynet -d postgres
+```
+
+And then you could launch geonetwork, making sure you join the same network, and setting the required environment variables, including the `POSTGRES_DB_HOST`:
+
+```console
+$ docker run --name geonetwork -d -p 8080:8080 --network=mynet -e POSTGRES_DB_HOST=$POSTGRES_DB_HOST -e POSTGRES_DB_PORT=5432 -e POSTGRES_DB_USERNAME=postgres -e POSTGRES_DB_PASSWORD=mysecretpassword geonetwork:postgres
 ```
