@@ -25,14 +25,14 @@ If are want to **run postgres on a container**, you can use the container name a
 $ docker network create --driver bridge mynet
 ```
 
-Then if you want to run the official image of postgres, using `$POSTGRES_DB_HOST` as container name, you could launch it like this:
+Then if you want to run the official image of postgres, using `some-postgres` as container name, you could launch it like this:
 
 ```console
-$ docker run --name $POSTGRES_DB_HOST --network=mynet -d postgres
+$ docker run --name some-postgres --network=mynet -d postgres
 ```
 
 And then you could launch geonetwork, making sure you join the same network, and setting the required environment variables, including the `POSTGRES_DB_HOST`:
 
 ```console
-$ docker run --name geonetwork -d -p 8080:8080 --network=mynet -e POSTGRES_DB_HOST=$POSTGRES_DB_HOST -e POSTGRES_DB_PORT=5432 -e POSTGRES_DB_USERNAME=postgres -e POSTGRES_DB_PASSWORD=mysecretpassword geonetwork:postgres
+$ docker run --name geonetwork -d -p 8080:8080 --network=mynet -e POSTGRES_DB_HOST=some-postgres -e POSTGRES_DB_PORT=5432 -e POSTGRES_DB_USERNAME=postgres -e POSTGRES_DB_PASSWORD=mysecretpassword geonetwork:postgres
 ```
