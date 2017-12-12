@@ -7,6 +7,7 @@ exitCode=0
 for requiredFile in \
 	content.md \
 	github-repo \
+	license.md \
 	maintainer.md \
 ; do
 	failed=''
@@ -14,7 +15,7 @@ for requiredFile in \
 		case "${repo%/}" in
 			scratch) continue ;;
 		esac
-		if [ ! -e "$repo/$requiredFile" ]; then
+		if [ ! -s "$repo/$requiredFile" ]; then
 			failed+=" $repo"
 		fi
 	done
