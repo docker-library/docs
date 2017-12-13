@@ -1,1 +1,1 @@
-Amazon Linux is an execution environment for running applications on Amazon EC2.
+Amazon Linux provides a stable, secure, and high-performance execution environment for applications.
