@@ -10,8 +10,7 @@ If your postgres instance is listening on a non-standard port, you must also set
 
 ### Connecting to a postgres database
 
-If you want to connect to a postgres server, you need to pass an extra environment variable, `POSTGRES_DB_HOST`,
-containing the address of this server.
+If you want to connect to a postgres server, you need to pass an extra environment variable, `POSTGRES_DB_HOST`, containing the address of this server.
 
 If you want to connect to an **external database server**, you can use either the IP address or the DNS as `POSTGRES_DB_HOST`. For instance, if the server is running on `mydns.net`, on port `5434`, the username is `postgres` and the password is `mysecretpassword`:
 
