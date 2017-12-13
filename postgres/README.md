@@ -75,7 +75,8 @@ $ docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -d postg
 
 This image includes `EXPOSE 5432` (the postgres port), so standard container linking will make it automatically available to the linked containers. The default `postgres` user and database are created in the entrypoint with `initdb`.
 
-> The postgres database is a default database meant for use by users, utilities and third party applications.  
+> The postgres database is a default database meant for use by users, utilities and third party applications.
+>
 > [postgresql.org/docs](http://www.postgresql.org/docs/9.5/interactive/app-initdb.html)
 
 ## connect to it from an application
@@ -239,6 +240,30 @@ ENV LANG de_DE.utf8
 ```
 
 Since database initialization only happens on container startup, this allows us to set the language before it is created.
+
+## Database Configuration
+
+There are many ways to set PostgreSQL server configuration. For information on what is available to configure, see the postgresql.org [docs](https://www.postgresql.org/docs/current/static/runtime-config.html) for the specific version of PostgreSQL that you are running. Here are a few options for setting configuration:
+
+-	Use a custom config file. Create a config file and get it into the container. If you need a starting place for your config file you can use the sample provided by PostgreSQL which is available in the container at `/usr/share/postgresql/postgresql.conf.sample`.
+
+	-	**Important note:** you must set `listen_addresses = '*'`so that other containers will be able to access postgres.
+
+	```console
+	$ # get the default config
+	$ docker run -i --rm postgres cat /usr/share/postgresql/postgresql.conf.sample > my-postgres.conf
+
+	$ # customize the config
+
+	$ # run postgres with custom config
+	$ docker run -d --name some-postgres -v "$PWD/my-postgres.conf":/etc/postgresql/postgresql.conf postgres -c 'config_file=/etc/postgresql/postgresql.conf'
+	```
+
+-	Set options directly on the run line. The entrypoint script is made so that any options passed to the docker command will be passed along to the `postgres` server daemon. From the [docs](https://www.postgresql.org/docs/current/static/app-postgres.html) we see that any option available in a `.conf` file can be set via `-c`.
+
+	```console
+	$ docker run -d --name some-postgres postgres -c 'shared_buffers=256MB' -c 'max_connections=200'
+	```
 
 # Caveats
 
