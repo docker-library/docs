@@ -113,6 +113,14 @@ Where `/myredis/conf/` is a local directory containing your `redis.conf` file. U
 
 This variant is *not* a 32bit image (and will not run on 32bit hardware), but includes Redis compiled as a 32bit binary, especially for users who need the decreased memory requirements associated with that. See ["Using 32 bit instances"](http://redis.io/topics/memory-optimization#using-32-bit-instances) in the Redis documentation for more information.
 
+# Redis Modules
+
+You can find the list of modules for Redis on [redis.io](https://redis.io/modules) or on [redismodules.com](http://redismodules.com). A few of the standard modules can be found here:
+
+-	[RediSearch](https://hub.docker.com/r/redislabs/redisearch/): Search and Query with Indexing on Redis
+-	[ReJSON](https://hub.docker.com/r/redislabs/rejson/): Extended JSON processing for Redis
+-	[ReBloom](https://hub.docker.com/r/redislabs/rebloom/): Bloom Filters data type for membership/existence search on Redis
+
 # Image Variants
 
 The `redis` images come in many flavors, each designed for a specific use case.
