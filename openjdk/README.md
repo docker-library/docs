@@ -47,13 +47,15 @@ WARNING:
 
 ## Shared Tags
 
--	`windowsservercore`:
+-	`8u151-jdk-windowsservercore`, `8u151-windowsservercore`, `8-jdk-windowsservercore`, `8-windowsservercore`, `jdk-windowsservercore`, `windowsservercore`:
 	-	[`8u151-jdk-windowsservercore-ltsc2016` (*8-jdk/windows/windowsservercore-ltsc2016/Dockerfile*)](https://github.com/docker-library/openjdk/blob/873fb56728befef8ecaf8436c3a27fd239cba301/8-jdk/windows/windowsservercore-ltsc2016/Dockerfile)
 	-	[`8u151-jdk-windowsservercore-1709` (*8-jdk/windows/windowsservercore-1709/Dockerfile*)](https://github.com/docker-library/openjdk/blob/873fb56728befef8ecaf8436c3a27fd239cba301/8-jdk/windows/windowsservercore-1709/Dockerfile)
+-	`8u151-jdk-nanoserver`, `8u151-nanoserver`, `8-jdk-nanoserver`, `8-nanoserver`, `jdk-nanoserver`, `nanoserver`:
+	-	[`8u151-jdk-nanoserver-sac2016` (*8-jdk/windows/nanoserver-sac2016/Dockerfile*)](https://github.com/docker-library/openjdk/blob/873fb56728befef8ecaf8436c3a27fd239cba301/8-jdk/windows/nanoserver-sac2016/Dockerfile)
+-	`9.0.1-jdk-windowsservercore`, `9.0.1-windowsservercore`, `9.0-jdk-windowsservercore`, `9.0-windowsservercore`, `9-jdk-windowsservercore`, `9-windowsservercore`:
 	-	[`9.0.1-jdk-windowsservercore-ltsc2016` (*9-jdk/windows/windowsservercore-ltsc2016/Dockerfile*)](https://github.com/docker-library/openjdk/blob/873fb56728befef8ecaf8436c3a27fd239cba301/9-jdk/windows/windowsservercore-ltsc2016/Dockerfile)
 	-	[`9.0.1-jdk-windowsservercore-1709` (*9-jdk/windows/windowsservercore-1709/Dockerfile*)](https://github.com/docker-library/openjdk/blob/873fb56728befef8ecaf8436c3a27fd239cba301/9-jdk/windows/windowsservercore-1709/Dockerfile)
--	`nanoserver`:
-	-	[`8u151-jdk-nanoserver-sac2016` (*8-jdk/windows/nanoserver-sac2016/Dockerfile*)](https://github.com/docker-library/openjdk/blob/873fb56728befef8ecaf8436c3a27fd239cba301/8-jdk/windows/nanoserver-sac2016/Dockerfile)
+-	`9.0.1-jdk-nanoserver`, `9.0.1-nanoserver`, `9.0-jdk-nanoserver`, `9.0-nanoserver`, `9-jdk-nanoserver`, `9-nanoserver`:
 	-	[`9.0.1-jdk-nanoserver-sac2016` (*9-jdk/windows/nanoserver-sac2016/Dockerfile*)](https://github.com/docker-library/openjdk/blob/873fb56728befef8ecaf8436c3a27fd239cba301/9-jdk/windows/nanoserver-sac2016/Dockerfile)
 
 # Quick reference
