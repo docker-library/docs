@@ -1,4 +1,4 @@
-## `%%REPO%%:data`
+## `%%IMAGE%%:data`
 
 *This image requires a valid license key from InfluxData.* Please visit our [products page](https://www.influxdata.com/products/) to learn more.
 

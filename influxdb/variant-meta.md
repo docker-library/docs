@@ -1,4 +1,4 @@
-## `%%REPO%%:meta`
+## `%%IMAGE%%:meta`
 
 *This image requires a valid license key from InfluxData.* Please visit our [products page](https://www.influxdata.com/products/) to learn more.
 
@@ -13,7 +13,7 @@ The license key can be specified using either an environment variable or by over
 ```console
 $ docker run -p 8089:8089 -p 8091:8091 \
       -e INFLUXDB_ENTERPRISE_LICENSE_KEY=<license-key>
-      influxdb-meta
+      %%IMAGE%%:meta
 ```
 
 #### Running the container
@@ -32,15 +32,15 @@ Start three meta nodes. This is the suggested number of meta nodes. We do not re
 $ docker run -d --name=influxdb-meta-0 --network=influxdb \
       -h influxdb-meta-0 \
       -e INFLUXDB_ENTERPRISE_LICENSE_KEY=<license-key> \
-      influxdb-meta
+      %%IMAGE%%:meta
 $ docker run -d --name=influxdb-meta-1 --network=influxdb \
       -h influxdb-meta-1 \
       -e INFLUXDB_ENTERPRISE_LICENSE_KEY=<license-key> \
-      influxdb-meta
+      %%IMAGE%%:meta
 $ docker run -d --name=influxdb-meta-2 --network=influxdb \
       -h influxdb-meta-2 \
       -e INFLUXDB_ENTERPRISE_LICENSE_KEY=<license-key> \
-      influxdb-meta
+      %%IMAGE%%:meta
 ```
 
 When setting the hostname, you can use `-h <hostname>` or you can directly set the environment variable using `-e INFLUXDB_HOSTNAME=<hostname>`.
@@ -60,18 +60,18 @@ Or you can just start a single meta node. If you setup a single meta node, you d
 $ docker run -d --name=influxdb-meta --network=influxdb \
       -h influxdb-meta \
       -e INFLUXDB_ENTERPRISE_LICENSE_KEY=<license-key> \
-      influxdb-meta -single-server
+      %%IMAGE%%:meta -single-server
 ```
 
 #### Connecting the data nodes
 
-Start the data nodes using `influxdb:enterprise` with similar command line arguments to the meta nodes. You can start as many data nodes as are allowed by your license.
+Start the data nodes using `%%IMAGE%%:data` with similar command line arguments to the meta nodes. You can start as many data nodes as are allowed by your license.
 
 ```console
 $ docker run -d --name=influxdb-data-0 --network=influxdb \
       -h influxdb-data-0 \
       -e INFLUXDB_LICENSE_KEY=<license-key> \
-      influxdb:enterprise
+      %%IMAGE%%:data
 ```
 
 You can add `-p 8086:8086` to expose the http port to the host machine. After starting the container, choose one of the meta nodes and add the data node to it.
@@ -94,7 +94,7 @@ InfluxDB Meta can be either configured from a config file or using environment v
 Generate the default configuration file:
 
 ```console
-$ docker run --rm influxdb:meta influxd-meta config > influxdb-meta.conf
+$ docker run --rm %%IMAGE%%:meta influxd-meta config > influxdb-meta.conf
 ```
 
 Modify the default configuration, which will now be available under `$PWD`. Then start the InfluxDB Meta container.
