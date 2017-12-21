@@ -45,14 +45,18 @@ There are several ways to store data used by applications that run in Docker con
 -	Let Docker manage the storage of your database data [by writing the database files to disk on the host system using its own internal volume management](https://docs.docker.com/engine/tutorials/dockervolumes/#adding-a-data-volume). This is the default and is easy and fairly transparent to the user. The downside is that the files may be hard to locate for tools and applications that run directly on the host system, i.e. outside containers.
 -	Create a data directory on the host system (outside the container) and [mount this to a directory visible from inside the container](https://docs.docker.com/engine/tutorials/dockervolumes/#mount-a-host-directory-as-a-data-volume). This places the database files in a known location on the host system, and makes it easy for tools and applications on the host system to access the files. The downside is that the user needs to make sure that the directory exists, and that e.g. directory permissions and other security mechanisms on the host system are set up correctly.
 
-CouchDB uses `/usr/local/var/lib/couchdb` to store its data. This directory is marked as a docker volume.
+CouchDB uses `/opt/couchdb/data` (`/usr/local/var/lib/couchdb` in version 1.7) to store its data. This directory is marked as a docker volume.
 
 ### Using host directories
 
 You can map the container's volumes to a directory on the host, so that the data is kept between runs of the container. This example uses your current directory, but that is in general not the correct place to store your persistent data!
 
 ```console
+# 1.7
 $ docker run -d -v $(pwd):/usr/local/var/lib/couchdb --name my-couchdb %%IMAGE%%
+
+# 2.0+
+$ docker run -d -v $(pwd):/opt/couchdb/data --name my-couchdb %%IMAGE%%
 ```
 
 ## Specifying the admin user in the environment
