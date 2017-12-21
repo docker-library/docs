@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.7.0`, `3.7`, `3`, `latest` (*3.7/debian/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/c282d486e67439a8192b01a85ce4ce2679c27e1e/3.7/debian/Dockerfile)
--	[`3.7.0-management`, `3.7-management`, `3-management`, `management` (*3.7/debian/management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/4b2b11c59ee65c2a09616b163d4572559a86bb7b/3.7/debian/management/Dockerfile)
--	[`3.7.0-alpine`, `3.7-alpine`, `3-alpine`, `alpine` (*3.7/alpine/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/c282d486e67439a8192b01a85ce4ce2679c27e1e/3.7/alpine/Dockerfile)
--	[`3.7.0-management-alpine`, `3.7-management-alpine`, `3-management-alpine`, `management-alpine` (*3.7/alpine/management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/4b2b11c59ee65c2a09616b163d4572559a86bb7b/3.7/alpine/management/Dockerfile)
+-	[`3.7.1`, `3.7`, `3`, `latest` (*3.7/debian/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/dc9451b8f990b9578327d14ee3c68556d2533c5f/3.7/debian/Dockerfile)
+-	[`3.7.1-management`, `3.7-management`, `3-management`, `management` (*3.7/debian/management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/4b2b11c59ee65c2a09616b163d4572559a86bb7b/3.7/debian/management/Dockerfile)
+-	[`3.7.1-alpine`, `3.7-alpine`, `3-alpine`, `alpine` (*3.7/alpine/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/dc9451b8f990b9578327d14ee3c68556d2533c5f/3.7/alpine/Dockerfile)
+-	[`3.7.1-management-alpine`, `3.7-management-alpine`, `3-management-alpine`, `management-alpine` (*3.7/alpine/management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/4b2b11c59ee65c2a09616b163d4572559a86bb7b/3.7/alpine/management/Dockerfile)
 -	[`3.6.14`, `3.6` (*3.6/debian/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/4b2b11c59ee65c2a09616b163d4572559a86bb7b/3.6/debian/Dockerfile)
 -	[`3.6.14-management`, `3.6-management` (*3.6/debian/management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/b9eda3e4665c24db70a9a290fddf33bc5c567b10/3.6/debian/management/Dockerfile)
 -	[`3.6.14-alpine`, `3.6-alpine` (*3.6/alpine/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/2558d958a0ab9c38f58ad616e387063b33bb229c/3.6/alpine/Dockerfile)

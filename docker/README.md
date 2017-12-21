@@ -16,9 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`17.12.0-ce-rc3`, `17.12-rc`, `rc`, `test` (*17.12-rc/Dockerfile*)](https://github.com/docker-library/docker/blob/29a9a02e3dbbc77cbd4783fc87c73f762fb8ac90/17.12-rc/Dockerfile)
--	[`17.12.0-ce-rc3-dind`, `17.12-rc-dind`, `rc-dind`, `test-dind` (*17.12-rc/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/bbfb50a21b358554c1621cfe19378158d9155694/17.12-rc/dind/Dockerfile)
--	[`17.12.0-ce-rc3-git`, `17.12-rc-git`, `rc-git`, `test-git` (*17.12-rc/git/Dockerfile*)](https://github.com/docker-library/docker/blob/bbfb50a21b358554c1621cfe19378158d9155694/17.12-rc/git/Dockerfile)
+-	[`17.12.0-ce-rc4`, `17.12-rc`, `rc`, `test` (*17.12-rc/Dockerfile*)](https://github.com/docker-library/docker/blob/1f5c55a69955147c50bd9c6ace5ccbc63772ccdc/17.12-rc/Dockerfile)
+-	[`17.12.0-ce-rc4-dind`, `17.12-rc-dind`, `rc-dind`, `test-dind` (*17.12-rc/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/bbfb50a21b358554c1621cfe19378158d9155694/17.12-rc/dind/Dockerfile)
+-	[`17.12.0-ce-rc4-git`, `17.12-rc-git`, `rc-git`, `test-git` (*17.12-rc/git/Dockerfile*)](https://github.com/docker-library/docker/blob/bbfb50a21b358554c1621cfe19378158d9155694/17.12-rc/git/Dockerfile)
 -	[`17.11.0-ce`, `17.11.0`, `17.11`, `17`, `edge`, `latest` (*17.11/Dockerfile*)](https://github.com/docker-library/docker/blob/64f6d5eba928dd79b9ca1e7e879021a2baf4c705/17.11/Dockerfile)
 -	[`17.11.0-ce-dind`, `17.11.0-dind`, `17.11-dind`, `17-dind`, `edge-dind`, `dind` (*17.11/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/64f6d5eba928dd79b9ca1e7e879021a2baf4c705/17.11/dind/Dockerfile)
 -	[`17.11.0-ce-git`, `17.11.0-git`, `17.11-git`, `17-git`, `edge-git`, `git` (*17.11/git/Dockerfile*)](https://github.com/docker-library/docker/blob/64f6d5eba928dd79b9ca1e7e879021a2baf4c705/17.11/git/Dockerfile)
