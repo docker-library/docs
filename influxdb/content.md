@@ -74,7 +74,7 @@ INFLUXDB_META_DIR=/path/to/metadir
 INFLUXDB_DATA_QUERY_LOG_ENABLED=false
 ```
 
-Find more about configuring InfluxDB [here](https://docs.influxdata.com/influxdb/latest/introduction/installation/)
+Find more about configuring InfluxDB [here](https://docs.influxdata.com/influxdb/latest/introduction/installation/).
 
 ### Graphite
 
