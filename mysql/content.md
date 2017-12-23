@@ -20,10 +20,10 @@ $ docker run --name some-%%REPO%% -e MYSQL_ROOT_PASSWORD=my-secret-pw -d %%IMAGE
 
 ## Connect to MySQL from an application in another Docker container
 
-This image exposes the standard MySQL port (3306), so container linking makes the MySQL instance available to other application containers. Start your application container like this in order to link it to the MySQL container:
+This image exposes the standard MySQL port (3306), so the MySQL instance is available to other application containers. Start your application container like this in order to access the MySQL container as a host named `mysql`:
 
 ```console
-$ docker run --name some-app --link some-%%REPO%%:mysql -d application-that-uses-mysql
+$ docker run --name some-app --add-host mysql:$(docker exec some-%%REPO%% hostname -I) -d application-that-uses-mysql
 ```
 
 ## Connect to MySQL from the MySQL command line client
@@ -31,7 +31,7 @@ $ docker run --name some-app --link some-%%REPO%%:mysql -d application-that-uses
 The following command starts another `%%IMAGE%%` container instance and runs the `mysql` command line client against your original `%%IMAGE%%` container, allowing you to execute SQL statements against your database instance:
 
 ```console
-$ docker run -it --link some-%%REPO%%:mysql --rm %%IMAGE%% sh -c 'exec mysql -h"$MYSQL_PORT_3306_TCP_ADDR" -P"$MYSQL_PORT_3306_TCP_PORT" -uroot -p"$MYSQL_ENV_MYSQL_ROOT_PASSWORD"'
+$ docker run -it --add-host mysql:$(docker exec some-%%REPO%% hostname -I) --rm %%IMAGE%% mysql -hmysql -uroot -pmy-secret-pw
 ```
 
 ... where `some-%%REPO%%` is the name of your original `%%IMAGE%%` container.
