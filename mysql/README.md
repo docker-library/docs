@@ -18,8 +18,8 @@ WARNING:
 
 -	[`8.0.3`, `8.0`, `8` (*8.0/Dockerfile*)](https://github.com/docker-library/mysql/blob/6c414e7f38c2079c7193beae5dc7c34ee46cd6e7/8.0/Dockerfile)
 -	[`5.7.20`, `5.7`, `5`, `latest` (*5.7/Dockerfile*)](https://github.com/docker-library/mysql/blob/6c414e7f38c2079c7193beae5dc7c34ee46cd6e7/5.7/Dockerfile)
--	[`5.6.38`, `5.6` (*5.6/Dockerfile*)](https://github.com/docker-library/mysql/blob/883703dfb30d9c197e0059a669c4bb64d55f6e0d/5.6/Dockerfile)
--	[`5.5.58`, `5.5` (*5.5/Dockerfile*)](https://github.com/docker-library/mysql/blob/41cfbdd89323a1230342038757b5b8f7f2f36b74/5.5/Dockerfile)
+-	[`5.6.38`, `5.6` (*5.6/Dockerfile*)](https://github.com/docker-library/mysql/blob/36f2030de879bea73e808183302d27c3b670ce7a/5.6/Dockerfile)
+-	[`5.5.58`, `5.5` (*5.5/Dockerfile*)](https://github.com/docker-library/mysql/blob/36f2030de879bea73e808183302d27c3b670ce7a/5.5/Dockerfile)
 
 # Quick reference
 
