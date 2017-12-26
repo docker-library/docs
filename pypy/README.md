@@ -18,10 +18,8 @@ WARNING:
 
 -	[`2-5.10.0`, `2-5.10`, `2-5`, `2` (*2/Dockerfile*)](https://github.com/docker-library/pypy/blob/2b2b28c8d47683df043de22ddd11cb1bc6c5d151/2/Dockerfile)
 -	[`2-5.10.0-slim`, `2-5.10-slim`, `2-5-slim`, `2-slim` (*2/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/2b2b28c8d47683df043de22ddd11cb1bc6c5d151/2/slim/Dockerfile)
--	[`2-5.10.0-onbuild`, `2-5.10-onbuild`, `2-5-onbuild`, `2-onbuild` (*2/onbuild/Dockerfile*)](https://github.com/docker-library/pypy/blob/b48e8489ab794a2bacfd396c2f8e1a5b06d6ae48/2/onbuild/Dockerfile)
 -	[`3-5.10.0`, `3-5.10`, `3-5`, `3`, `latest` (*3/Dockerfile*)](https://github.com/docker-library/pypy/blob/2b2b28c8d47683df043de22ddd11cb1bc6c5d151/3/Dockerfile)
 -	[`3-5.10.0-slim`, `3-5.10-slim`, `3-5-slim`, `3-slim`, `slim` (*3/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/2b2b28c8d47683df043de22ddd11cb1bc6c5d151/3/slim/Dockerfile)
--	[`3-5.10.0-onbuild`, `3-5.10-onbuild`, `3-5-onbuild`, `3-onbuild`, `onbuild` (*3/onbuild/Dockerfile*)](https://github.com/docker-library/pypy/blob/b48e8489ab794a2bacfd396c2f8e1a5b06d6ae48/3/onbuild/Dockerfile)
 
 # Quick reference
 
@@ -111,14 +109,6 @@ This is the defacto image. If you are unsure about what your needs are, you prob
 ## `pypy:slim`
 
 This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `pypy`. Unless you are working in an environment where *only* the `pypy` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
-
-## `pypy:onbuild`
-
-The `ONBUILD` image variants are deprecated, and their usage is discouraged. For more details, see [docker-library/official-images#2076](https://github.com/docker-library/official-images/issues/2076).
-
-While the `onbuild` variant is really useful for "getting off the ground running" (zero to Dockerized in a short period of time), it's not recommended for long-term usage within a project due to the lack of control over *when* the `ONBUILD` triggers fire (see also [`docker/docker#5714`](https://github.com/docker/docker/issues/5714), [`docker/docker#8240`](https://github.com/docker/docker/issues/8240), [`docker/docker#11917`](https://github.com/docker/docker/issues/11917)).
-
-Once you've got a handle on how your project functions within Docker, you'll probably want to adjust your `Dockerfile` to inherit from a non-`onbuild` variant and copy the commands from the `onbuild` variant `Dockerfile` (moving the `ONBUILD` lines to the end and removing the `ONBUILD` keywords) into your own file so that you have tighter control over them and more transparency for yourself and others looking at your `Dockerfile` as to what it does. This also makes it easier to add additional requirements as time goes on (such as installing more packages before performing the previously-`ONBUILD` steps).
 
 # License
 
