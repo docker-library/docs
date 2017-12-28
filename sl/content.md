@@ -38,14 +38,6 @@ The root filesystem for these docker images is built on our internal build syste
 
 Recent Docker versions support the [overlayfs](https://docs.docker.com/engine/userguide/storagedriver/overlayfs-driver/) backend, which is enabled by default on most distros supporting it from Docker 1.13 onwards. On SL 6 and 7, that backend requires `yum-plugin-ovl` to be installed and enabled, which it is in our containers. Make it sure you retain the `plugins=1` option in `/etc/yum.conf` if you update that file; otherwise, you may encounter errors related to rpmdb checksum failure - see [Docker ticket 10180](https://github.com/docker/docker/issues/10180) for more details.
 
-## Package docs and licence files
-
-By default the SL docker images do not include these files. If you require them, please remove `tsflags=nodocs` from `/etc/yum.conf` and run `yum reinstall mypackage` to recieve the documentation.
-
----
-
-# Quick Reference
-
 ## Example Usage
 
 You can try out the containers via:
