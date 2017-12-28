@@ -28,12 +28,6 @@ Updated images will be released roughly once per month.
 
 The root filesystem for these docker images is built on our internal build system.
 
-## Getting Help
-
--	[SL Faq](https://www.scientificlinux.org/documentation/faq)
-
--	[Email Lists](https://www.scientificlinux.org/community)
-
 ## Docker, overlayfs, and yum
 
 Recent Docker versions support the [overlayfs](https://docs.docker.com/engine/userguide/storagedriver/overlayfs-driver/) backend, which is enabled by default on most distros supporting it from Docker 1.13 onwards. On SL 6 and 7, that backend requires `yum-plugin-ovl` to be installed and enabled, which it is in our containers. Make it sure you retain the `plugins=1` option in `/etc/yum.conf` if you update that file; otherwise, you may encounter errors related to rpmdb checksum failure - see [Docker ticket 10180](https://github.com/docker/docker/issues/10180) for more details.
