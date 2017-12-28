@@ -46,6 +46,12 @@ WARNING:
 -	[`2.6.0-alpha-2-jre8-alpine`, `2.6-jre8-alpine`, `2.6.0-alpha-2-jre-alpine`, `2.6-jre-alpine`, `2.6.0-alpha-2-alpine`, `2.6-alpine` (*jre8-alpine/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/1af782d50826f6856f5578331279ad9cbad91168/jre8-alpine/Dockerfile)
 -	[`2.6.0-alpha-2-jdk9`, `2.6-jdk9` (*jdk9/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/1af782d50826f6856f5578331279ad9cbad91168/jdk9/Dockerfile)
 -	[`2.6.0-alpha-2-jre9`, `2.6-jre9` (*jre9/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/1af782d50826f6856f5578331279ad9cbad91168/jre9/Dockerfile)
+-	[`3.0.0-alpha-1-jdk8`, `3.0-jdk8`, `3.0.0-alpha-1-jdk`, `3.0-jdk` (*jdk8/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/946d295e39ffce9da17f87184b8c552793a80115/jdk8/Dockerfile)
+-	[`3.0.0-alpha-1-jre8`, `3.0-jre8`, `3.0.0-alpha-1-jre`, `3.0-jre`, `3.0.0-alpha-1`, `3.0` (*jre8/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/946d295e39ffce9da17f87184b8c552793a80115/jre8/Dockerfile)
+-	[`3.0.0-alpha-1-jdk8-alpine`, `3.0-jdk8-alpine`, `3.0.0-alpha-1-jdk-alpine`, `3.0-jdk-alpine` (*jdk8-alpine/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/946d295e39ffce9da17f87184b8c552793a80115/jdk8-alpine/Dockerfile)
+-	[`3.0.0-alpha-1-jre8-alpine`, `3.0-jre8-alpine`, `3.0.0-alpha-1-jre-alpine`, `3.0-jre-alpine`, `3.0.0-alpha-1-alpine`, `3.0-alpine` (*jre8-alpine/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/946d295e39ffce9da17f87184b8c552793a80115/jre8-alpine/Dockerfile)
+-	[`3.0.0-alpha-1-jdk9`, `3.0-jdk9` (*jdk9/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/946d295e39ffce9da17f87184b8c552793a80115/jdk9/Dockerfile)
+-	[`3.0.0-alpha-1-jre9`, `3.0-jre9` (*jre9/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/946d295e39ffce9da17f87184b8c552793a80115/jre9/Dockerfile)
 
 # Quick reference
 
