@@ -8,6 +8,10 @@ RabbitMQ is open source message broker software (sometimes called message-orient
 
 # How to use this image
 
+## Default Port
+
+The AMQP protocol runs on port `5672` by default.
+
 ## Running the daemon
 
 One of the important things to note about RabbitMQ is that it stores data based on what it calls the "Node Name", which defaults to the hostname. What this means for usage in Docker is that we should specify `-h`/`--hostname` explicitly for each daemon so that we don't get a random hostname and can keep track of our data:
