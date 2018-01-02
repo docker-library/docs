@@ -16,7 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`0.13.0`, `0.13`, `0`, `latest` (*Dockerfile*)](https://github.com/hylang/hy/blob/49fd49e7ee9fbb9dc8fdc785bc022ca26dd6ff16/Dockerfile)
+-	[`0.13.1`, `0.13`, `0`, `latest` (*Dockerfile*)](https://github.com/hylang/hy/blob/324a9046be36c4e5e7b2697077b17e3aaaa108af/Dockerfile)
 
 # Quick reference
 
