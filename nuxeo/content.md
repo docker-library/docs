@@ -125,11 +125,11 @@ Allows to add custom parameters to `nuxeo.conf`. Multiple parameters can be spli
 
 ## Adding additional configuration
 
-If you would like to do additional setup in an image derived from this one, you can add a `/nuxeo.conf` file that will be appended to the end of the regular `nuxeo.conf` file.
+If you would like to do additional setup in an image derived from this one, you can add a `/docker-entrypoint-initnuxeo.d/nuxeo.conf` file that will be appended to the end of the regular `nuxeo.conf` file.
 
 ```dockerfile
 FROM %%IMAGE%%:7.10
-ADD nuxeo.conf /nuxeo.conf
+ADD nuxeo.conf /docker-entrypoint-initnuxeo.d/nuxeo.conf
 ```
 
 If you need a root account to run some installation steps in your `Dockerfile`, then you need to put those steps between two `USER` command as the image is run with the user `1000` (nuxeo). For instance:
