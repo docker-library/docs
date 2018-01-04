@@ -163,9 +163,9 @@ $ chcon -Rt svirt_sandbox_file_t /my/own/datadir
 
 		```console
 		cd bonita_migration
-		wget https://download.forge.ow2.org/bonita/bonita-migration-distrib-2.26.0.zip
+		wget https://download.forge.ow2.org/bonita/bonita-migration-distrib-2.27.0.zip
 		wget https://download.forge.ow2.org/bonita/BonitaBPMCommunity-7.2.4-Tomcat-7.0.67.zip
-		unzip bonita-migration-distrib-2.26.0.zip
+		unzip bonita-migration-distrib-2.27.0.zip
 		unzip BonitaBPMCommunity-7.2.4-Tomcat-7.0.67.zip
 		```
 
@@ -180,13 +180,13 @@ $ chcon -Rt svirt_sandbox_file_t /my/own/datadir
 
 		```console
 		cd bonita_migration
-		wget https://download.forge.ow2.org/bonita/bonita-migration-distrib-2.26.0.zip
-		unzip bonita-migration-distrib-2.26.0.zip
+		wget https://download.forge.ow2.org/bonita/bonita-migration-distrib-2.27.0.zip
+		unzip bonita-migration-distrib-2.27.0.zip
 		```
 
 -	Configure the migration tool
 
-		cd bonita-migration-distrib-2.26.0
+		cd bonita-migration-distrib-2.27.0
 
 	edit the migration tool config to point towards the copy of bonita home and db
 
@@ -228,7 +228,7 @@ $ chcon -Rt svirt_sandbox_file_t /my/own/datadir
 	```
 
 	```console
-	$ cd /opt/bonita/BonitaCommunity-7.6.0-Tomcat-8.5.23/setup
+	$ cd /opt/bonita/BonitaCommunity-7.6.1-Tomcat-8.5.23/setup
 	$ ./setup.sh pull
 	$ TENANT_LOGIN=tech_user
 	$ TENANT_PASSWORD=secret
@@ -359,7 +359,7 @@ For example, you can increase the log level :
 
 	mkdir -p custom_bonita
 	echo '#!/bin/bash' > custom_bonita/bonita.sh
-	echo 'sed -i "s/^org.bonitasoft.level = WARNING$/org.bonitasoft.level = FINEST/" /opt/bonita/BonitaCommunity-7.6.0-Tomcat-8.5.23/server/conf/logging.properties' >> custom_bonita/bonita.sh
+	echo 'sed -i "s/^org.bonitasoft.level = WARNING$/org.bonitasoft.level = FINEST/" /opt/bonita/BonitaCommunity-7.6.1-Tomcat-8.5.23/server/conf/logging.properties' >> custom_bonita/bonita.sh
 	chmod +x custom_bonita/bonita.sh
 	
 	docker run --name bonita_custom -v "$PWD"/custom_bonita/:/opt/custom-init.d -d -p 8080:8080 %%IMAGE%%
@@ -368,5 +368,5 @@ Note: There are several ways to check the `bonita` logs. One of them is
 
 ```console
 $ docker exec -ti bonita_custom /bin/bash
-tail -f /opt/bonita/BonitaCommunity-7.6.0-Tomcat-8.5.23/server/logs/bonita.`date +%Y-%m-%d`.log
+tail -f /opt/bonita/BonitaCommunity-7.6.1-Tomcat-8.5.23/server/logs/bonita.`date +%Y-%m-%d`.log
 ```
