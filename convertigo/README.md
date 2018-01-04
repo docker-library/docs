@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.4.7`, `7.4`, `latest` (*7.4/7.4.7/Dockerfile*)](https://github.com/convertigo/docker/blob/dc3d5543b5de1813bf05c5abc937164a662bb491/7.4/7.4.7/Dockerfile)
--	[`web-connector-7.4.7`, `web-connector-7.4`, `web-connector` (*7.4/7.4.7/web-connector/Dockerfile*)](https://github.com/convertigo/docker/blob/dc3d5543b5de1813bf05c5abc937164a662bb491/7.4/7.4.7/web-connector/Dockerfile)
+-	[`7.5.0`, `7.5`, `latest` (*7.5/7.5.0/Dockerfile*)](https://github.com/convertigo/docker/blob/c143ecb5aa888581cb128b7ac487aebf1418f3b3/7.5/7.5.0/Dockerfile)
+-	[`7.4.7`, `7.4` (*7.4/7.4.7/Dockerfile*)](https://github.com/convertigo/docker/blob/c143ecb5aa888581cb128b7ac487aebf1418f3b3/7.4/7.4.7/Dockerfile)
 
 # Quick reference
 
@@ -31,7 +31,7 @@ WARNING:
 	[Convertigo](https://github.com/convertigo/docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/convertigo/)
+	[`amd64`](https://hub.docker.com/r/amd64/convertigo/), [`arm32v7`](https://hub.docker.com/r/arm32v7/convertigo/), [`arm64v8`](https://hub.docker.com/r/arm64v8/convertigo/), [`i386`](https://hub.docker.com/r/i386/convertigo/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/convertigo/` directory](https://github.com/docker-library/repo-info/blob/master/repos/convertigo) ([history](https://github.com/docker-library/repo-info/commits/master/repos/convertigo))  
@@ -51,8 +51,8 @@ WARNING:
 
 Convertigo Community edition is an open source MBaaS (Mobile Back end as a Service) combined with a MADP (Mobile application development platform). The platform is used to build complex Cross-platform Enterprise Mobile apps in a few days. Convertigo platform is composed of several components:
 
-1.	**Convertigo MBaaS**: The back-end MBaaS server part. Handles back-end connectors, micro-services execution, offline data device synchronization and serves Mobile Web apps. Runs as a Docker container with the **convertigo** image
-2.	**Convertigo Web Connector**: An optional HTML web Connector server able to connect to any HTML based legacy app. Runs as a Docker container with a **web-connector** tag
+1.	**Convertigo MBaaS**: The back-end MBaaS server part. Handles back-end connectors, micro-services execution, offline data device synchronization and serves Mobile Web apps. Runs as a Docker container with the `convertigo` image
+2.	**Convertigo Web Connector**: An optional HTML web Connector server able to connect to any HTML based legacy app. Runs as a Docker container with the `i386/convertigo` image
 3.	**Convertigo Studio**: Runs on a Windows or a MacOS workstation, Eclipse based IDE, used to program MBaaS micro-services workflows and optionaly use the "Mobile Builder" edition to build Mobile apps UIs in a MRAD (Mobile Rapid Application Development) Low code mode. Can be directly downloaded from [Sourceforge.net](https://sourceforge.net/projects/convertigo/files/latest/download)
 4.	**Convertigo SDKs**: Can be used with third party Mobile development tools such as Xcode (iOS) Android Studio (Android) and Visual Studio (Windows Mobile, Windows UWP and Xamarin). SDKS are available on each platform standard repository (Bintray for Android, Cocoapods for iOS and Nuget for .NET)
 
