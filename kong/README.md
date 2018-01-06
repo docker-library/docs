@@ -16,6 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
+-	[`0.12.0rc2-alpine` (*alpine/Dockerfile*)](https://github.com/Kong/docker-kong/blob/9f2d6a104dbf8b38cb8188429c17daef72f24196/alpine/Dockerfile)
+-	[`0.12.0rc2` (*centos/Dockerfile*)](https://github.com/Kong/docker-kong/blob/9f2d6a104dbf8b38cb8188429c17daef72f24196/centos/Dockerfile)
 -	[`0.11-alpine`, `0.11.2-alpine` (*alpine/Dockerfile*)](https://github.com/Kong/docker-kong/blob/2ed0fad88ed81623ea4afb2111033a9d87f3c03c/alpine/Dockerfile)
 -	[`0.11`, `0.11.2`, `latest` (*centos/Dockerfile*)](https://github.com/Kong/docker-kong/blob/2ed0fad88ed81623ea4afb2111033a9d87f3c03c/centos/Dockerfile)
 -	[`0.10`, `0.10.4` (*legacy/Dockerfile*)](https://github.com/Kong/docker-kong/blob/206d0a077068e191454c260ee772d2e5bbb4d050/legacy/Dockerfile)
