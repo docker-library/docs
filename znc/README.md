@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.6.5`, `1.6`, `latest` (*full/Dockerfile*)](https://github.com/znc/znc-docker/blob/642a0520caaf080f665c77c6abd8bc72d8223db6/full/Dockerfile)
--	[`1.6.5-slim`, `1.6-slim`, `slim` (*slim/Dockerfile*)](https://github.com/znc/znc-docker/blob/642a0520caaf080f665c77c6abd8bc72d8223db6/slim/Dockerfile)
+-	[`1.6.5`, `1.6`, `latest` (*full/Dockerfile*)](https://github.com/znc/znc-docker/blob/7f4f14214b67e540892a281d69f855aefcef35ce/full/Dockerfile)
+-	[`1.6.5-slim`, `1.6-slim`, `slim` (*slim/Dockerfile*)](https://github.com/znc/znc-docker/blob/7f4f14214b67e540892a281d69f855aefcef35ce/slim/Dockerfile)
 
 # Quick reference
 
@@ -31,7 +31,7 @@ WARNING:
 	[the ZNC Community](https://github.com/znc/znc-docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/znc/)
+	[`amd64`](https://hub.docker.com/r/amd64/znc/), [`arm32v6`](https://hub.docker.com/r/arm32v6/znc/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/znc/` directory](https://github.com/docker-library/repo-info/blob/master/repos/znc) ([history](https://github.com/docker-library/repo-info/commits/master/repos/znc))  

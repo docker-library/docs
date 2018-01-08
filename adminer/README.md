@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.3.1-standalone`, `4.3-standalone`, `4-standalone`, `standalone`, `4.3.1`, `4.3`, `4`, `latest` (*4.3/Dockerfile*)](https://github.com/TimWolla/docker-adminer/blob/73de6b9a7979ded5d2289fe015fffe81fa32e0a4/4.3/Dockerfile)
--	[`4.3.1-fastcgi`, `4.3-fastcgi`, `4-fastcgi`, `fastcgi` (*4.3/fastcgi/Dockerfile*)](https://github.com/TimWolla/docker-adminer/blob/e7677ec95176973e991b063d8782876207738ce1/4.3/fastcgi/Dockerfile)
+-	[`4.3.1-standalone`, `4.3-standalone`, `4-standalone`, `standalone`, `4.3.1`, `4.3`, `4`, `latest` (*4.3/Dockerfile*)](https://github.com/TimWolla/docker-adminer/blob/58a494d7add8975552d5ab03c16560f1961bae79/4.3/Dockerfile)
+-	[`4.3.1-fastcgi`, `4.3-fastcgi`, `4-fastcgi`, `fastcgi` (*4.3/fastcgi/Dockerfile*)](https://github.com/TimWolla/docker-adminer/blob/58a494d7add8975552d5ab03c16560f1961bae79/4.3/fastcgi/Dockerfile)
 
 # Quick reference
 
@@ -31,7 +31,7 @@ WARNING:
 	[Tim Düsterhus (of the Docker Community)](https://github.com/TimWolla/docker-adminer)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/adminer/)
+	[`amd64`](https://hub.docker.com/r/amd64/adminer/), [`arm32v6`](https://hub.docker.com/r/arm32v6/adminer/), [`arm64v8`](https://hub.docker.com/r/arm64v8/adminer/), [`i386`](https://hub.docker.com/r/i386/adminer/), [`ppc64le`](https://hub.docker.com/r/ppc64le/adminer/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/adminer/` directory](https://github.com/docker-library/repo-info/blob/master/repos/adminer) ([history](https://github.com/docker-library/repo-info/commits/master/repos/adminer))  
