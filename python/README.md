@@ -18,11 +18,11 @@ WARNING:
 
 ## Simple Tags
 
--	[`3.7.0a3-stretch`, `3.7-rc-stretch`, `rc-stretch` (*3.7-rc/stretch/Dockerfile*)](https://github.com/docker-library/python/blob/ba34cdcf7860a9fb6a272f8e1b13b753b11d912b/3.7-rc/stretch/Dockerfile)
--	[`3.7.0a3-slim-stretch`, `3.7-rc-slim-stretch`, `rc-slim-stretch`, `3.7.0a3-slim`, `3.7-rc-slim`, `rc-slim` (*3.7-rc/stretch/slim/Dockerfile*)](https://github.com/docker-library/python/blob/ba34cdcf7860a9fb6a272f8e1b13b753b11d912b/3.7-rc/stretch/slim/Dockerfile)
--	[`3.7.0a3-alpine3.7`, `3.7-rc-alpine3.7`, `rc-alpine3.7`, `3.7.0a3-alpine`, `3.7-rc-alpine`, `rc-alpine` (*3.7-rc/alpine3.7/Dockerfile*)](https://github.com/docker-library/python/blob/8717dc2523c8093990cb958bb8c47ade6f851c05/3.7-rc/alpine3.7/Dockerfile)
--	[`3.7.0a3-windowsservercore-ltsc2016`, `3.7-rc-windowsservercore-ltsc2016`, `rc-windowsservercore-ltsc2016` (*3.7-rc/windows/windowsservercore-ltsc2016/Dockerfile*)](https://github.com/docker-library/python/blob/ba34cdcf7860a9fb6a272f8e1b13b753b11d912b/3.7-rc/windows/windowsservercore-ltsc2016/Dockerfile)
--	[`3.7.0a3-windowsservercore-1709`, `3.7-rc-windowsservercore-1709`, `rc-windowsservercore-1709` (*3.7-rc/windows/windowsservercore-1709/Dockerfile*)](https://github.com/docker-library/python/blob/ba34cdcf7860a9fb6a272f8e1b13b753b11d912b/3.7-rc/windows/windowsservercore-1709/Dockerfile)
+-	[`3.7.0a4-stretch`, `3.7-rc-stretch`, `rc-stretch` (*3.7-rc/stretch/Dockerfile*)](https://github.com/docker-library/python/blob/2f73f58fb5ad731616109e0b8ed6367a0d474c52/3.7-rc/stretch/Dockerfile)
+-	[`3.7.0a4-slim-stretch`, `3.7-rc-slim-stretch`, `rc-slim-stretch`, `3.7.0a4-slim`, `3.7-rc-slim`, `rc-slim` (*3.7-rc/stretch/slim/Dockerfile*)](https://github.com/docker-library/python/blob/2f73f58fb5ad731616109e0b8ed6367a0d474c52/3.7-rc/stretch/slim/Dockerfile)
+-	[`3.7.0a4-alpine3.7`, `3.7-rc-alpine3.7`, `rc-alpine3.7`, `3.7.0a4-alpine`, `3.7-rc-alpine`, `rc-alpine` (*3.7-rc/alpine3.7/Dockerfile*)](https://github.com/docker-library/python/blob/2f73f58fb5ad731616109e0b8ed6367a0d474c52/3.7-rc/alpine3.7/Dockerfile)
+-	[`3.7.0a4-windowsservercore-ltsc2016`, `3.7-rc-windowsservercore-ltsc2016`, `rc-windowsservercore-ltsc2016` (*3.7-rc/windows/windowsservercore-ltsc2016/Dockerfile*)](https://github.com/docker-library/python/blob/2f73f58fb5ad731616109e0b8ed6367a0d474c52/3.7-rc/windows/windowsservercore-ltsc2016/Dockerfile)
+-	[`3.7.0a4-windowsservercore-1709`, `3.7-rc-windowsservercore-1709`, `rc-windowsservercore-1709` (*3.7-rc/windows/windowsservercore-1709/Dockerfile*)](https://github.com/docker-library/python/blob/2f73f58fb5ad731616109e0b8ed6367a0d474c52/3.7-rc/windows/windowsservercore-1709/Dockerfile)
 -	[`3.6.4-stretch`, `3.6-stretch`, `3-stretch`, `stretch` (*3.6/stretch/Dockerfile*)](https://github.com/docker-library/python/blob/a1aa406bfd8c7b129e6e0ee0ba972b863624ac0d/3.6/stretch/Dockerfile)
 -	[`3.6.4-slim-stretch`, `3.6-slim-stretch`, `3-slim-stretch`, `slim-stretch` (*3.6/stretch/slim/Dockerfile*)](https://github.com/docker-library/python/blob/a1aa406bfd8c7b129e6e0ee0ba972b863624ac0d/3.6/stretch/slim/Dockerfile)
 -	[`3.6.4-jessie`, `3.6-jessie`, `3-jessie`, `jessie` (*3.6/jessie/Dockerfile*)](https://github.com/docker-library/python/blob/a1aa406bfd8c7b129e6e0ee0ba972b863624ac0d/3.6/jessie/Dockerfile)
@@ -58,13 +58,13 @@ WARNING:
 
 ## Shared Tags
 
--	`3.7.0a3`, `3.7-rc`, `rc`:
-	-	[`3.7.0a3-stretch` (*3.7-rc/stretch/Dockerfile*)](https://github.com/docker-library/python/blob/ba34cdcf7860a9fb6a272f8e1b13b753b11d912b/3.7-rc/stretch/Dockerfile)
-	-	[`3.7.0a3-windowsservercore-ltsc2016` (*3.7-rc/windows/windowsservercore-ltsc2016/Dockerfile*)](https://github.com/docker-library/python/blob/ba34cdcf7860a9fb6a272f8e1b13b753b11d912b/3.7-rc/windows/windowsservercore-ltsc2016/Dockerfile)
-	-	[`3.7.0a3-windowsservercore-1709` (*3.7-rc/windows/windowsservercore-1709/Dockerfile*)](https://github.com/docker-library/python/blob/ba34cdcf7860a9fb6a272f8e1b13b753b11d912b/3.7-rc/windows/windowsservercore-1709/Dockerfile)
--	`3.7.0a3-windowsservercore`, `3.7-rc-windowsservercore`, `rc-windowsservercore`:
-	-	[`3.7.0a3-windowsservercore-ltsc2016` (*3.7-rc/windows/windowsservercore-ltsc2016/Dockerfile*)](https://github.com/docker-library/python/blob/ba34cdcf7860a9fb6a272f8e1b13b753b11d912b/3.7-rc/windows/windowsservercore-ltsc2016/Dockerfile)
-	-	[`3.7.0a3-windowsservercore-1709` (*3.7-rc/windows/windowsservercore-1709/Dockerfile*)](https://github.com/docker-library/python/blob/ba34cdcf7860a9fb6a272f8e1b13b753b11d912b/3.7-rc/windows/windowsservercore-1709/Dockerfile)
+-	`3.7.0a4`, `3.7-rc`, `rc`:
+	-	[`3.7.0a4-stretch` (*3.7-rc/stretch/Dockerfile*)](https://github.com/docker-library/python/blob/2f73f58fb5ad731616109e0b8ed6367a0d474c52/3.7-rc/stretch/Dockerfile)
+	-	[`3.7.0a4-windowsservercore-ltsc2016` (*3.7-rc/windows/windowsservercore-ltsc2016/Dockerfile*)](https://github.com/docker-library/python/blob/2f73f58fb5ad731616109e0b8ed6367a0d474c52/3.7-rc/windows/windowsservercore-ltsc2016/Dockerfile)
+	-	[`3.7.0a4-windowsservercore-1709` (*3.7-rc/windows/windowsservercore-1709/Dockerfile*)](https://github.com/docker-library/python/blob/2f73f58fb5ad731616109e0b8ed6367a0d474c52/3.7-rc/windows/windowsservercore-1709/Dockerfile)
+-	`3.7.0a4-windowsservercore`, `3.7-rc-windowsservercore`, `rc-windowsservercore`:
+	-	[`3.7.0a4-windowsservercore-ltsc2016` (*3.7-rc/windows/windowsservercore-ltsc2016/Dockerfile*)](https://github.com/docker-library/python/blob/2f73f58fb5ad731616109e0b8ed6367a0d474c52/3.7-rc/windows/windowsservercore-ltsc2016/Dockerfile)
+	-	[`3.7.0a4-windowsservercore-1709` (*3.7-rc/windows/windowsservercore-1709/Dockerfile*)](https://github.com/docker-library/python/blob/2f73f58fb5ad731616109e0b8ed6367a0d474c52/3.7-rc/windows/windowsservercore-1709/Dockerfile)
 -	`3.6.4`, `3.6`, `3`, `latest`:
 	-	[`3.6.4-jessie` (*3.6/jessie/Dockerfile*)](https://github.com/docker-library/python/blob/a1aa406bfd8c7b129e6e0ee0ba972b863624ac0d/3.6/jessie/Dockerfile)
 	-	[`3.6.4-windowsservercore-ltsc2016` (*3.6/windows/windowsservercore-ltsc2016/Dockerfile*)](https://github.com/docker-library/python/blob/a1aa406bfd8c7b129e6e0ee0ba972b863624ac0d/3.6/windows/windowsservercore-ltsc2016/Dockerfile)
