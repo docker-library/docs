@@ -16,12 +16,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.4.3`, `3.4`, `3`, `latest` (*3.4/Dockerfile*)](https://github.com/docker-library/redmine/blob/cb871da497d6825f6a3fcbdd00adc8cc087d147c/3.4/Dockerfile)
--	[`3.4.3-passenger`, `3.4-passenger`, `3-passenger`, `passenger` (*3.4/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/1c1b50f263969b2214ba772bca3a72d3a403b517/3.4/passenger/Dockerfile)
--	[`3.3.5`, `3.3` (*3.3/Dockerfile*)](https://github.com/docker-library/redmine/blob/cb871da497d6825f6a3fcbdd00adc8cc087d147c/3.3/Dockerfile)
--	[`3.3.5-passenger`, `3.3-passenger` (*3.3/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/1c1b50f263969b2214ba772bca3a72d3a403b517/3.3/passenger/Dockerfile)
--	[`3.2.8`, `3.2` (*3.2/Dockerfile*)](https://github.com/docker-library/redmine/blob/cb871da497d6825f6a3fcbdd00adc8cc087d147c/3.2/Dockerfile)
--	[`3.2.8-passenger`, `3.2-passenger` (*3.2/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/1c1b50f263969b2214ba772bca3a72d3a403b517/3.2/passenger/Dockerfile)
+-	[`3.4.4`, `3.4`, `3`, `latest` (*3.4/Dockerfile*)](https://github.com/docker-library/redmine/blob/86a208cc744d9743a219973ba2ab675f6718bec4/3.4/Dockerfile)
+-	[`3.4.4-passenger`, `3.4-passenger`, `3-passenger`, `passenger` (*3.4/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/1c1b50f263969b2214ba772bca3a72d3a403b517/3.4/passenger/Dockerfile)
+-	[`3.3.6`, `3.3` (*3.3/Dockerfile*)](https://github.com/docker-library/redmine/blob/1a66905d6ed69f74e74e6b48fedb39f8e3bff949/3.3/Dockerfile)
+-	[`3.3.6-passenger`, `3.3-passenger` (*3.3/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/1c1b50f263969b2214ba772bca3a72d3a403b517/3.3/passenger/Dockerfile)
+-	[`3.2.9`, `3.2` (*3.2/Dockerfile*)](https://github.com/docker-library/redmine/blob/71453c2e7a7a0736a669a67c668f4abd59857605/3.2/Dockerfile)
+-	[`3.2.9-passenger`, `3.2-passenger` (*3.2/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/1c1b50f263969b2214ba772bca3a72d3a403b517/3.2/passenger/Dockerfile)
 
 # Quick reference
 
