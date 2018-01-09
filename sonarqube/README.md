@@ -65,6 +65,8 @@ The server is started this way:
 $ docker run -d --name sonarqube -p 9000:9000 -p 9092:9092 sonarqube
 ```
 
+By default you can login as `admin` with password `admin`, see [authentication](https://docs.sonarqube.org/display/SONAR/Authentication).
+
 To analyse a project:
 
 ```console
