@@ -75,7 +75,7 @@ One of the important things to note about RabbitMQ is that it stores data based 
 $ docker run -d --hostname my-rabbit --name some-rabbit rabbitmq:3
 ```
 
-If you give that a minute, then do `docker logs some-rabbit`, you'll see in the output a block similar to:
+This will start a RabbitMQ container listening on the default port of 5672. If you give that a minute, then do `docker logs some-rabbit`, you'll see in the output a block similar to:
 
 	=INFO REPORT==== 6-Jul-2015::20:47:02 ===
 	node           : rabbit@my-rabbit
