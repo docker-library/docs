@@ -17,18 +17,11 @@ The following environment variables are also honored for configuring your WordPr
 -	`-e WORDPRESS_DB_HOST=...` (defaults to the IP and port of the linked `mysql` container)
 -	`-e WORDPRESS_DB_USER=...` (defaults to "root")
 -	`-e WORDPRESS_DB_PASSWORD=...` (defaults to the value of the `MYSQL_ROOT_PASSWORD` environment variable from the linked `mysql` container)
--	`-e WORDPRESS_DB_PASSWORD_FILE=...` (for use with Docker secrets, see below)
 -	`-e WORDPRESS_DB_NAME=...` (defaults to "wordpress")
 -	`-e WORDPRESS_TABLE_PREFIX=...` (defaults to "", only set this when you need to override the default table prefix in wp-config.php)
 -	`-e WORDPRESS_AUTH_KEY=...`, `-e WORDPRESS_SECURE_AUTH_KEY=...`, `-e WORDPRESS_LOGGED_IN_KEY=...`, `-e WORDPRESS_NONCE_KEY=...`, `-e WORDPRESS_AUTH_SALT=...`, `-e WORDPRESS_SECURE_AUTH_SALT=...`, `-e WORDPRESS_LOGGED_IN_SALT=...`, `-e WORDPRESS_NONCE_SALT=...` (default to unique random SHA1s)
 
 If the `WORDPRESS_DB_NAME` specified does not already exist on the given MySQL server, it will be created automatically upon startup of the `%%REPO%%` container, provided that the `WORDPRESS_DB_USER` specified has the necessary permissions to create it.
-
-As an alternative to passing the database password via environment variables, `WORDPRESS_DB_PASSWORD_FILE` may be used instead of `WORDPRESS_DB_PASSWORD`, causing the initialization script to load the password from a file present in the container. In particular, this can be used to load passwords from Docker secrets stored in `/run/secrets/<secret_name>` files. For example:
-
-```console
-$ docker run --name some-%%REPO%% -e WORDPRESS_DB_PASSWORD_FILE=/run/secrets/db_password -d %%REPO%%
-```
 
 If you'd like to be able to access the instance from the host without the container's IP, standard port mappings can be used:
 
@@ -44,6 +37,16 @@ If you'd like to use an external database instead of a linked `mysql` container,
 $ docker run --name some-%%REPO%% -e WORDPRESS_DB_HOST=10.1.2.3:3306 \
     -e WORDPRESS_DB_USER=... -e WORDPRESS_DB_PASSWORD=... -d %%REPO%%
 ```
+
+## Docker Secrets
+
+As an alternative to passing sensitive information via environment variables, `_FILE` may be appended to the previously listed environment variables, causing the initialization script to load the values for those variables from files present in the container. In particular, this can be used to load passwords from Docker secrets stored in `/run/secrets/<secret_name>` files. For example:
+
+```console
+$ docker run --name some-wordpress -e WORDPRESS_DB_PASSWORD_FILE=/run/secrets/mysql-root ... -d %%IMAGE%%:tag
+```
+
+Currently, this is supported for `WORDPRESS_DB_HOST`, `WORDPRESS_DB_USER`, `WORDPRESS_DB_PASSWORD`, `WORDPRESS_DB_NAME`, `WORDPRESS_AUTH_KEY`, `WORDPRESS_SECURE_AUTH_KEY`, `WORDPRESS_LOGGED_IN_KEY`, `WORDPRESS_NONCE_KEY`, `WORDPRESS_AUTH_SALT`, `WORDPRESS_SECURE_AUTH_SALT`, `WORDPRESS_LOGGED_IN_SALT`, `WORDPRESS_NONCE_SALT`, `WORDPRESS_TABLE_PREFIX`, and `WORDPRESS_DEBUG`.
 
 ## %%STACK%%
 
