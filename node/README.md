@@ -16,12 +16,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`9.3.0`, `9.3`, `9`, `latest` (*9/Dockerfile*)](https://github.com/nodejs/docker-node/blob/a7e88f1dd2102689180f485c51133212f45fa064/9/Dockerfile)
--	[`9.3.0-alpine`, `9.3-alpine`, `9-alpine`, `alpine` (*9/alpine/Dockerfile*)](https://github.com/nodejs/docker-node/blob/a7e88f1dd2102689180f485c51133212f45fa064/9/alpine/Dockerfile)
--	[`9.3.0-onbuild`, `9.3-onbuild`, `9-onbuild`, `onbuild` (*9/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/a7e88f1dd2102689180f485c51133212f45fa064/9/onbuild/Dockerfile)
--	[`9.3.0-slim`, `9.3-slim`, `9-slim`, `slim` (*9/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/a7e88f1dd2102689180f485c51133212f45fa064/9/slim/Dockerfile)
--	[`9.3.0-stretch`, `9.3-stretch`, `9-stretch`, `stretch` (*9/stretch/Dockerfile*)](https://github.com/nodejs/docker-node/blob/a7e88f1dd2102689180f485c51133212f45fa064/9/stretch/Dockerfile)
--	[`9.3.0-wheezy`, `9.3-wheezy`, `9-wheezy`, `wheezy` (*9/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/a7e88f1dd2102689180f485c51133212f45fa064/9/wheezy/Dockerfile)
+-	[`9.4.0`, `9.4`, `9`, `latest` (*9/Dockerfile*)](https://github.com/nodejs/docker-node/blob/df8782dfddf8c70663f0a7d19942120b1d6977a5/9/Dockerfile)
+-	[`9.4.0-alpine`, `9.4-alpine`, `9-alpine`, `alpine` (*9/alpine/Dockerfile*)](https://github.com/nodejs/docker-node/blob/df8782dfddf8c70663f0a7d19942120b1d6977a5/9/alpine/Dockerfile)
+-	[`9.4.0-onbuild`, `9.4-onbuild`, `9-onbuild`, `onbuild` (*9/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/df8782dfddf8c70663f0a7d19942120b1d6977a5/9/onbuild/Dockerfile)
+-	[`9.4.0-slim`, `9.4-slim`, `9-slim`, `slim` (*9/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/df8782dfddf8c70663f0a7d19942120b1d6977a5/9/slim/Dockerfile)
+-	[`9.4.0-stretch`, `9.4-stretch`, `9-stretch`, `stretch` (*9/stretch/Dockerfile*)](https://github.com/nodejs/docker-node/blob/df8782dfddf8c70663f0a7d19942120b1d6977a5/9/stretch/Dockerfile)
+-	[`9.4.0-wheezy`, `9.4-wheezy`, `9-wheezy`, `wheezy` (*9/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/df8782dfddf8c70663f0a7d19942120b1d6977a5/9/wheezy/Dockerfile)
 -	[`8.9.4`, `8.9`, `8`, `carbon` (*8/Dockerfile*)](https://github.com/nodejs/docker-node/blob/994f8286cb0efc92578902d5fd11182f63a59869/8/Dockerfile)
 -	[`8.9.4-alpine`, `8.9-alpine`, `8-alpine`, `carbon-alpine` (*8/alpine/Dockerfile*)](https://github.com/nodejs/docker-node/blob/994f8286cb0efc92578902d5fd11182f63a59869/8/alpine/Dockerfile)
 -	[`8.9.4-onbuild`, `8.9-onbuild`, `8-onbuild`, `carbon-onbuild` (*8/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/994f8286cb0efc92578902d5fd11182f63a59869/8/onbuild/Dockerfile)
