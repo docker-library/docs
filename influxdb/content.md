@@ -197,7 +197,7 @@ To manually initialize the database and exit, the `/init-influxdb.sh` script can
 ```console
 $ docker run --rm \
       -e INFLUXDB_DB=db0 -e INFLUXDB_ADMIN_ENABLED=true \
-      -e INFLUXDB_ADMIN_USER=admin -e INFLUXDB_ADMIN_USER=supersecretpassword \
+      -e INFLUXDB_ADMIN_USER=admin -e INFLUXDB_ADMIN_PASSWORD=supersecretpassword \
       -e INFLUXDB_USER=telegraf -e INFLUXDB_USER_PASSWORD=secretpassword \
       -v $PWD:/var/lib/influxdb \
       influxdb /init-influxdb.sh
