@@ -97,9 +97,6 @@ version: '3.1'
 services:
   joomla:
     image: joomla
-    restart: always
-    links:
-      - joomladb:mysql
     ports:
       - 8080:80
     environment:
@@ -108,7 +105,6 @@ services:
 
   joomladb:
     image: mysql:5.6
-    restart: always
     environment:
       MYSQL_ROOT_PASSWORD: example
 ```
