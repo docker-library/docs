@@ -13,22 +13,11 @@ FROM %%IMAGE%%:kernel
 COPY server.xml /config/
 ```
 
-The `microProfile1` image contains the features required to implement Eclipse MicroProfile 1.2. The `webProfile7` image contains the features required for Java EE7 Web Profile compliance. The `javaee7` image adds the features required for Java EE7 Full Platform compliance. The `javaee7` image is also tagged with `latest`.
-
-There are also additional images for different JVM combinations. Currently there are tags for java8 only, but there are two variants one based on IBM Java and Ubuntu and the other based on the IBM small footprint Java which is based on alpine linux. The naming structure for the variants is tag-javaversion-vandor/variant. This leads to webProfile7-java8-ibmsfj as one. At this time the full list of images are:
+There are also additional images for different JVM combinations. Currently there are tags for java8 only, but there are two variants one based on IBM Java and Ubuntu and the other based on the IBM small footprint Java which is based on alpine linux. The naming structure for the variants is tag-javaversion-vandor/variant. This leads to kernel-java8-ibmsfj as one. At this time the full list of images are:
 
 	kernel
 	kernel-java8-ibm
 	kernel-java8-ibmsfj
-	microProfile1
-	microProfile1-java8-ibm
-	microProfile1-java8-ibmsfj
-	webProfile7
-	webProfile7-java8-ibm
-	webProfile7-java8-ibmsfj
-	javaee7
-	javaee7-java8-ibm
-	javaee7-java8-ibmsfj
 
 # Usage
 
@@ -39,7 +28,7 @@ The images are designed to support a number of different usage patterns. The fol
 	```console
 	$ docker run -d -p 80:9080 -p 443:9443 \
 	    -v /tmp/DefaultServletEngine/dropins/Sample1.war:/config/dropins/Sample1.war \
-	    %%IMAGE%%:webProfile7
+	    %%IMAGE%%:kernel
 	```
 
 	When the server is started, you can browse to http://localhost/Sample1/SimpleServlet on the Docker host.
@@ -49,13 +38,13 @@ The images are designed to support a number of different usage patterns. The fol
 	```console
 	$ docker run -d -p 80:9080 \
 	  -v /tmp/DefaultServletEngine:/config \
-	  %%IMAGE%%:webProfile7
+	  %%IMAGE%%:kernel-sfj
 	```
 
 3.	You can also build an application layer on top of this image by using either the default server configuration or a new server configuration. In this example, we have copied the `Sample1.war` from `/tmp/DefaultServletEngine/dropins` to the same directory as the following Dockerfile.
 
 	```dockerfile
-	FROM %%IMAGE%%:webProfile7
+	FROM %%IMAGE%%:kernel
 	ADD Sample1.war /config/dropins/
 	```
 
@@ -71,7 +60,7 @@ The images are designed to support a number of different usage patterns. The fol
 	Build and run the data volume container:
 
 	```dockerfile
-	FROM %%IMAGE%%:webProfile7
+	FROM %%IMAGE%%:kernel
 	ADD DefaultServletEngine /config
 	```
 
@@ -85,12 +74,12 @@ The images are designed to support a number of different usage patterns. The fol
 
 	```console
 	$ docker run -d -p 80:9080 \
-	  --volumes-from app %%IMAGE%%:webProfile7
+	  --volumes-from app %%IMAGE%%:kernel
 	```
 
 # Providing your own keystore/truststore
 
-When an `open-liberty` image starts, it can generate a Liberty server XML snippet in `/config/configDropins/defaults/keystore.xml` that specifies a `keyStore` stanza with a generated password. This causes Open Liberty to generate a default keystore and truststore with a self-signed certificate when it starts. The `javaee7` image does this automatically, but other images can request this by setting:
+When an `open-liberty` image starts, it can generate a Liberty server XML snippet in `/config/configDropins/defaults/keystore.xml` that specifies a `keyStore` stanza with a generated password. This causes Open Liberty to generate a default keystore and truststore with a self-signed certificate when it starts. Images can request this by setting:
 
 ```console
 ENV KEYSTORE_REQUIRED "true"
@@ -112,13 +101,13 @@ Taking the application image from example 3 above, containers can share the host
 
 ```console
 docker run -d -p 80:9080 -p 443:9443 \
-    -v /tmp/open-liberty/classCache:/opt/ol/wlp//output/.classCache app
+    -v /tmp/open-liberty/classCache:/opt/ol/wlp/output/.classCache app
 ```
 
 Or, create a named data volume container that exposes a volume at the location of the shared file:
 
 ```console
-docker run -e LICENSE=accept -v /opt/ol/wlp//output/.classCache \
+docker run -v /opt/ol/wlp//output/.classCache \
     --name classcache %%IMAGE%% true
 ```
 
@@ -135,7 +124,7 @@ Liberty writes to two different directories when running: `/opt/ol/wlp//output` 
 ```console
 docker run -d -p 80:9080 -p 443:9443 \
     --tmpfs /opt/ol/wlp//output --tmpfs /logs -v /config --read-only \
-    %%IMAGE%%:javaee7
+    %%IMAGE%%:kernel
 ```
 
 # Relationship between Open Liberty and WebSphere Liberty
