@@ -1,0 +1,1 @@
+Official Open Liberty image.
