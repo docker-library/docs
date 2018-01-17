@@ -32,7 +32,7 @@ $ docker run -it --rm --name my-running-app my-rust-app
 
 ## Compile your app inside the Docker container
 
-There may be occasions where it is not appropriate to run your app inside a container. To compiler, but not run your app inside the Docker instance, you can write something like:
+There may be occasions where it is not appropriate to run your app inside a container. To compile, but not run your app inside the Docker instance, you can write something like:
 
 ```console
 $ docker run --rm --user "$(id -u)":"$(id -g)" -v "$PWD":/usr/src/myapp -w /usr/src/myapp %%IMAGE%%:1.19.0 cargo build --release
