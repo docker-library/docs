@@ -10,7 +10,7 @@ Kong's documentation can be found at [getkong.org/docs](http://getkong.org/docs)
 
 # How to use this image
 
-First, Kong requires a running Cassandra 2.2.x/3.x or PostgreSQL 9.4/9.5 cluster before it starts. You can either use the official Cassandra/PostgreSQL containers, or use your own.
+First, Kong requires a running Cassandra cluster (3.x+) or PostgreSQL instance (9.5+) before it starts. You can either use the official Cassandra/PostgreSQL containers, or use your own.
 
 ## 1. Link Kong to either a Cassandra or PostgreSQL container
 
@@ -35,7 +35,7 @@ docker run -d --name kong-database \
                 -p 5432:5432 \
                 -e "POSTGRES_USER=kong" \
                 -e "POSTGRES_DB=kong" \
-                postgres:9.4
+                postgres:9.5
 ```
 
 ## 2. Prepare your database
@@ -77,7 +77,7 @@ $ docker run -d --name kong \
     %%IMAGE%%
 ```
 
-If everything went well, and if you created your container with the default ports, Kong should be listening on your host's `8000` ([Proxy][http://getkong.org/docs/latest/configuration/#proxy_port]), `8443` ([Proxy SSL](http://getkong.org/docs/latest/configuration/#proxy_listen_ssl)), `8001` ([Admin API](http://getkong.org/docs/latest/configuration/#admin_listen)) and `8444` ([Admin API SSL](http://getkong.org/docs/latest/configuration/#admin_listen_ssl)) ports.
+If everything went well, and if you created your container with the default ports, Kong should be listening on your host's `8000` ([Proxy](http://getkong.org/docs/latest/configuration/#proxy_port)), `8443` ([Proxy SSL](http://getkong.org/docs/latest/configuration/#proxy_listen_ssl)), `8001` ([Admin API](http://getkong.org/docs/latest/configuration/#admin_listen)) and `8444` ([Admin API SSL](http://getkong.org/docs/latest/configuration/#admin_listen_ssl)) ports.
 
 You can now read the docs at [getkong.org/docs](http://getkong.org/docs) to learn more about Kong.
 
