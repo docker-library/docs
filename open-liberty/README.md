@@ -16,8 +16,14 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`kernel`, `kernel-java8-ibm` (*release/kernel/java8/ibmjava/Dockerfile*)](https://github.com/OpenLiberty/ci.docker/blob/a9576a73b3a554c6b27345c2dcd4ca77c394e953/release/kernel/java8/ibmjava/Dockerfile)
--	[`kernel-java8-ibmsfj` (*release/kernel/java8/ibmsfj/Dockerfile*)](https://github.com/OpenLiberty/ci.docker/blob/a9576a73b3a554c6b27345c2dcd4ca77c394e953/release/kernel/java8/ibmsfj/Dockerfile)
+-	[`kernel`, `kernel-java8-ibm` (*release/kernel/java8/ibmjava/Dockerfile*)](https://github.com/OpenLiberty/ci.docker/blob/99e1bbdc8b98b4afd80b01dea78ca923091d46d4/release/kernel/java8/ibmjava/Dockerfile)
+-	[`kernel-java8-ibmsfj` (*release/kernel/java8/ibmsfj/Dockerfile*)](https://github.com/OpenLiberty/ci.docker/blob/99e1bbdc8b98b4afd80b01dea78ca923091d46d4/release/kernel/java8/ibmsfj/Dockerfile)
+-	[`webProfile7`, `webProfile7-java8-ibm` (*release/webProfile7/java8/ibmjava/Dockerfile*)](https://github.com/OpenLiberty/ci.docker/blob/99e1bbdc8b98b4afd80b01dea78ca923091d46d4/release/webProfile7/java8/ibmjava/Dockerfile)
+-	[`webProfile7-java8-ibmsfj` (*release/webProfile7/java8/ibmsfj/Dockerfile*)](https://github.com/OpenLiberty/ci.docker/blob/99e1bbdc8b98b4afd80b01dea78ca923091d46d4/release/webProfile7/java8/ibmsfj/Dockerfile)
+-	[`javaee7`, `javaee7-java8-ibm`, `latest` (*release/javaee7/java8/ibmjava/Dockerfile*)](https://github.com/OpenLiberty/ci.docker/blob/99e1bbdc8b98b4afd80b01dea78ca923091d46d4/release/javaee7/java8/ibmjava/Dockerfile)
+-	[`javaee7-java8-ibmsfj` (*release/javaee7/java8/ibmsfj/Dockerfile*)](https://github.com/OpenLiberty/ci.docker/blob/99e1bbdc8b98b4afd80b01dea78ca923091d46d4/release/javaee7/java8/ibmsfj/Dockerfile)
+-	[`microProfile1`, `microProfile1-java8-ibm` (*release/microProfile1/java8/ibmjava/Dockerfile*)](https://github.com/OpenLiberty/ci.docker/blob/99e1bbdc8b98b4afd80b01dea78ca923091d46d4/release/microProfile1/java8/ibmjava/Dockerfile)
+-	[`microProfile1-java8-ibmsfj` (*release/microProfile1/java8/ibmsfj/Dockerfile*)](https://github.com/OpenLiberty/ci.docker/blob/99e1bbdc8b98b4afd80b01dea78ca923091d46d4/release/microProfile1/java8/ibmsfj/Dockerfile)
 
 # Quick reference
 
@@ -62,11 +68,22 @@ FROM open-liberty:kernel
 COPY server.xml /config/
 ```
 
+The `microProfile1` image contains the features required to implement Eclipse MicroProfile 1.2. The `webProfile7` image contains the features required for Java EE7 Web Profile compliance. The `javaee7` image adds the features required for Java EE7 Full Platform compliance. The `javaee7` image is also tagged with `latest`.
+
 There are also additional images for different JVM combinations. Currently there are tags for java8 only, but there are two variants one based on IBM Java and Ubuntu and the other based on the IBM small footprint Java which is based on alpine linux. The naming structure for the variants is tag-javaversion-vandor/variant. This leads to kernel-java8-ibmsfj as one. At this time the full list of images are:
 
 	kernel
 	kernel-java8-ibm
 	kernel-java8-ibmsfj
+	microProfile1
+	microProfile1-java8-ibm
+	microProfile1-java8-ibmsfj
+	webProfile7
+	webProfile7-java8-ibm
+	webProfile7-java8-ibmsfj
+	javaee7
+	javaee7-java8-ibm
+	javaee7-java8-ibmsfj
 
 # Usage
 
@@ -77,7 +94,7 @@ The images are designed to support a number of different usage patterns. The fol
 	```console
 	$ docker run -d -p 80:9080 -p 443:9443 \
 	    -v /tmp/DefaultServletEngine/dropins/Sample1.war:/config/dropins/Sample1.war \
-	    open-liberty:kernel
+	    open-liberty:webProfile7
 	```
 
 	When the server is started, you can browse to http://localhost/Sample1/SimpleServlet on the Docker host.
@@ -87,13 +104,13 @@ The images are designed to support a number of different usage patterns. The fol
 	```console
 	$ docker run -d -p 80:9080 \
 	  -v /tmp/DefaultServletEngine:/config \
-	  open-liberty:kernel-sfj
+	  open-liberty:webProfile7-sfj
 	```
 
 3.	You can also build an application layer on top of this image by using either the default server configuration or a new server configuration. In this example, we have copied the `Sample1.war` from `/tmp/DefaultServletEngine/dropins` to the same directory as the following Dockerfile.
 
 	```dockerfile
-	FROM open-liberty:kernel
+	FROM open-liberty:webProfile7
 	ADD Sample1.war /config/dropins/
 	```
 
@@ -109,7 +126,7 @@ The images are designed to support a number of different usage patterns. The fol
 	Build and run the data volume container:
 
 	```dockerfile
-	FROM open-liberty:kernel
+	FROM open-liberty:webProfile7
 	ADD DefaultServletEngine /config
 	```
 
@@ -123,7 +140,7 @@ The images are designed to support a number of different usage patterns. The fol
 
 	```console
 	$ docker run -d -p 80:9080 \
-	  --volumes-from app open-liberty:kernel
+	  --volumes-from app open-liberty:webProfile7
 	```
 
 # Providing your own keystore/truststore
@@ -173,7 +190,7 @@ Liberty writes to two different directories when running: `/opt/ol/wlp//output` 
 ```console
 docker run -d -p 80:9080 -p 443:9443 \
     --tmpfs /opt/ol/wlp//output --tmpfs /logs -v /config --read-only \
-    open-liberty:kernel
+    open-liberty:webProfile7
 ```
 
 # Relationship between Open Liberty and WebSphere Liberty
