@@ -29,10 +29,10 @@ WARNING:
 	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
 -	**Where to file issues**:  
-	[https://github.com/Mashape/kong/issues](https://github.com/Mashape/kong/issues)
+	[https://github.com/kong/kong/issues](https://github.com/kong/kong/issues)
 
 -	**Maintained by**:  
-	[the Mashape Docker Maintainers](https://github.com/Mashape/kong)
+	[the Kong Docker Maintainers](https://github.com/kong/kong)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/kong/)
@@ -53,13 +53,13 @@ WARNING:
 
 # What is Kong?
 
-Kong is a scalable, open source API Layer (also known as an API Gateway, or API Middleware). Kong was originally built at Mashape to secure, manage and extend over 15,000 Microservices for its API Marketplace, which generates billions of requests per month.
+Kong is a scalable, open source API Layer (also known as an API Gateway, or API Middleware). Kong was originally built by [Kong Inc.](https://konghq.com) (formerly known as Mashape) to secure, manage and extend over 15,000 Microservices for its API Marketplace, which generates billions of requests per month.
 
-Backed by the battle-tested NGINX with a focus on high performance, Kong was made available as an open-source platform in 2015. Under active development, Kong is now used in production at hundreds of organizations from startups, to large enterprises and government departments including: The New York Times, Expedia, Healthcare.gov, The Guardian, Condè Nast and The University of Auckland.
+Backed by the battle-tested NGINX with a focus on high performance, Kong was made available as an open-source platform in 2015. Under active development, Kong is now used in production at hundreds of organizations from startups, to large enterprises and government departments including: The New York Times, Expedia, Healthcare.gov, The Guardian, Condè Nast, The University of Auckland, Ferrari, and Giphy.
 
 Kong's documentation can be found at [getkong.org/docs](http://getkong.org/docs).
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/ffb3145bf430e8e1138921d80722d2e7354d2e81/kong/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/b07e98d17e225f17228bcb9ad418ac64bbe0db52/kong/logo.png)
 
 # How to use this image
 
@@ -117,7 +117,12 @@ $ docker run -d --name kong \
     --link kong-database:kong-database \
     -e "KONG_DATABASE=cassandra" \
     -e "KONG_CASSANDRA_CONTACT_POINTS=kong-database" \
-    -e "KONG_PG_HOST=kong-database" \
+    -e "KONG_PROXY_ACCESS_LOG=/dev/stdout" \
+    -e "KONG_ADMIN_ACCESS_LOG=/dev/stdout" \
+    -e "KONG_PROXY_ERROR_LOG=/dev/stderr" \
+    -e "KONG_ADMIN_ERROR_LOG=/dev/stderr" \
+    -e "KONG_ADMIN_LISTEN=0.0.0.0:8001" \
+    -e "KONG_ADMIN_LISTEN_SSL=0.0.0.0:8444" \
     -p 8000:8000 \
     -p 8443:8443 \
     -p 8001:8001 \
@@ -135,14 +140,17 @@ You can override any property of the [Kong configuration file](http://getkong.or
 
 ```shell
 $ docker run -d --name kong \
+    -e "KONG_DATABASE=postgres"
+    -e "KONG_PG_HOST=kong-database" \
     -e "KONG_LOG_LEVEL=info" \
     -e "KONG_CUSTOM_PLUGINS=helloworld" \
     -e "KONG_PG_HOST=1.1.1.1" \
+    -e "KONG_ADMIN_LISTEN=0.0.0.0:8001" \
+    -e "KONG_ADMIN_LISTEN_SSL=0.0.0.0:8444" \
     -p 8000:8000 \
     -p 8443:8443 \
     -p 8001:8001 \
-    -p 7946:7946 \
-    -p 7946:7946/udp \
+    -p 8444:8444 \
     kong
 ```
 
