@@ -1,1 +1,1 @@
-[the Mashape Docker Maintainers](%%GITHUB-REPO%%)
+[the Kong Docker Maintainers](%%GITHUB-REPO%%)
