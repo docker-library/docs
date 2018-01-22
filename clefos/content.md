@@ -6,11 +6,11 @@ ClefOS Linux is a community-supported distribution for IBM Z (aka "mainframe") d
 
 ## ClefOS image documentation
 
-The `clefos:latest` tag is always the most recent version currently available.
+The `%%IMAGE%%:latest` tag is always the most recent version currently available.
 
 ### Building the Base Image
 
-The image is built via the `make` command which will create the tarball, build the image, and push the image to the repository.
+The image is built via the `make` command which will create the tarball and build the image.
 
 The `createBase.sh` script is used to create the tarball for the docker build command. The script uses the yum command with the `tsflags=nodocs` option set to reduce the size of the image. In addition a lot of the locale files are eliminated from the image.
 
@@ -18,7 +18,7 @@ The `VERSION` file contains the id of the current ClefOS version and will be add
 
 ### Rolling builds
 
-The ClefOS Project offers regularly updated images for all active releases. These images will be updated monthly or as needed for emergency fixes. These rolling updates are tagged with the major version number and minor tags as well. For example, if 7.4.1708 is the most current then the build will result in `clefos:7` and `clefos:7.4.1708`. When the next minor level is available then `clefos:7` and `clefos:7.x.yymm` will be identical.
+The ClefOS Project offers regularly updated images for all active releases. These images will be updated monthly or as needed for emergency fixes. These rolling updates are tagged with the major version number and minor tags as well. For example, if 7.4.1708 is the most current then the build will result in `%%IMAGE%%:7` and `%%IMAGE%%:7.4.1708`. When the next minor level is available then `%%IMAGE%%:7` and `%%IMAGE%%:7.x.yymm` will be identical.
 
 ### Overlayfs and yum
 
@@ -30,15 +30,14 @@ By default, the ClefOS containers are built using yum's `nodocs` option, which h
 
 ## Systemd integration
 
-Systemd is not included in both the clefos:7 and clefos:latest base containers, but can be created from these bases:
+Systemd is not included in both the `%%IMAGE%%:7` and `%%IMAGE%%:latest` base containers, but can be created from these bases:
 
 ### Dockerfile for systemd base image
 
 ```dockerfile
-FROM 		clefos:clefos7
+FROM 		%%IMAGE%%:7
 
 ENV 		container docker
-MAINTAINER 	The ClefOS Project <neale@sinenomine.net>
 
 RUN		yum install -y --setopt=tsflags=nodocs systemd && \
 		yum clean all && \
@@ -58,7 +57,7 @@ VOLUME 		["/sys/fs/cgroup"]
 CMD 		["/usr/sbin/init"]
 ```
 
-This Dockerfile deletes a number of unit files which might cause issues. From here, you are ready to build your base image.
+This `Dockerfile` deletes a number of unit files which might cause issues. From here, you are ready to build your base image.
 
 ```console
 $ docker build --rm -t local/c7-systemd .
