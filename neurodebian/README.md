@@ -20,8 +20,6 @@ WARNING:
 -	[`trusty-non-free`, `nd14.04-non-free` (*dockerfiles/trusty-non-free/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/16393dd2b676c6128a4b9742cb51b9ce9ab7d436/dockerfiles/trusty-non-free/Dockerfile)
 -	[`xenial`, `nd16.04` (*dockerfiles/xenial/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/16393dd2b676c6128a4b9742cb51b9ce9ab7d436/dockerfiles/xenial/Dockerfile)
 -	[`xenial-non-free`, `nd16.04-non-free` (*dockerfiles/xenial-non-free/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/16393dd2b676c6128a4b9742cb51b9ce9ab7d436/dockerfiles/xenial-non-free/Dockerfile)
--	[`zesty`, `nd17.04` (*dockerfiles/zesty/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/16393dd2b676c6128a4b9742cb51b9ce9ab7d436/dockerfiles/zesty/Dockerfile)
--	[`zesty-non-free`, `nd17.04-non-free` (*dockerfiles/zesty-non-free/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/16393dd2b676c6128a4b9742cb51b9ce9ab7d436/dockerfiles/zesty-non-free/Dockerfile)
 -	[`artful`, `nd17.10` (*dockerfiles/artful/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/16393dd2b676c6128a4b9742cb51b9ce9ab7d436/dockerfiles/artful/Dockerfile)
 -	[`artful-non-free`, `nd17.10-non-free` (*dockerfiles/artful-non-free/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/16393dd2b676c6128a4b9742cb51b9ce9ab7d436/dockerfiles/artful-non-free/Dockerfile)
 -	[`wheezy`, `nd70` (*dockerfiles/wheezy/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/16393dd2b676c6128a4b9742cb51b9ce9ab7d436/dockerfiles/wheezy/Dockerfile)
