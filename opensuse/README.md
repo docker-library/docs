@@ -16,9 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`42.2` (*x86_64//Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/bc0b54b2fb7348797feed1e462fabb4ccfb91e2e/x86_64//Dockerfile)
--	[`42.3`, `latest`, `leap` (*x86_64//Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/1bab895f6d556a12f450590eed385bac17965599/x86_64//Dockerfile)
--	[`tumbleweed` (*x86_64//Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/9f38c533d3dc71f57106364d5e4055fdbf268649/x86_64//Dockerfile)
+-	[`42.2` (*x86_64//Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/fd39ce9631c3b6a110b6c1e8e5756a20d0863a77/x86_64//Dockerfile)
+-	[`42.3`, `latest`, `leap` (*x86_64//Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/6252e7bc2a411b3c5cfd5ed3b74e5839f7f7615b/x86_64//Dockerfile)
+-	[`tumbleweed` (*x86_64//Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/63f8c38ea523302fa8918fa0265f949075516a03/x86_64//Dockerfile)
 
 # Quick reference
 
@@ -32,7 +32,7 @@ WARNING:
 	[the SUSE containers team](https://github.com/openSUSE/docker-containers-build)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/opensuse/), [`arm64v8`](https://hub.docker.com/r/arm64v8/opensuse/), [`ppc64le`](https://hub.docker.com/r/ppc64le/opensuse/)
+	[`amd64`](https://hub.docker.com/r/amd64/opensuse/), [`arm64v8`](https://hub.docker.com/r/arm64v8/opensuse/), [`ppc64le`](https://hub.docker.com/r/ppc64le/opensuse/), [`s390x`](https://hub.docker.com/r/s390x/opensuse/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/opensuse/` directory](https://github.com/docker-library/repo-info/blob/master/repos/opensuse) ([history](https://github.com/docker-library/repo-info/commits/master/repos/opensuse))  
