@@ -55,7 +55,9 @@ The PostgreSQL image uses several environment variables which are easy to miss. 
 
 This environment variable is recommended for you to use the PostgreSQL image. This environment variable sets the superuser password for PostgreSQL. The default superuser is defined by the `POSTGRES_USER` environment variable. In the above example, it is being set to "mysecretpassword".
 
-Note: The PostgreSQL image sets up `trust` authentication locally so you may notice a password is not required when connecting from `localhost` (inside the same container). However, a password will be required if connecting from a different host/container.
+Note 1: The PostgreSQL image sets up `trust` authentication locally so you may notice a password is not required when connecting from `localhost` (inside the same container). However, a password will be required if connecting from a different host/container.
+
+Note 2: This variable sets the superuser password in the PostgreSQL instance, and has no effect on the PGPASSWORD variable that may be used by the psql client.  PGPASSWORD, if used, will be specified as a separate environment variable.
 
 ### `POSTGRES_USER`
 
