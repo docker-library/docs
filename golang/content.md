@@ -18,10 +18,10 @@ FROM %%IMAGE%%:1.8
 WORKDIR /go/src/app
 COPY . .
 
-RUN go-wrapper download   # "go get -d -v ./..."
-RUN go-wrapper install    # "go install -v ./..."
+RUN go get -d -v ./...
+RUN go install -v ./...
 
-CMD ["go-wrapper", "run"] # ["app"]
+CMD ["app"]
 ```
 
 You can then build and run the Docker image:
@@ -30,8 +30,6 @@ You can then build and run the Docker image:
 $ docker build -t my-golang-app .
 $ docker run -it --rm --name my-running-app my-golang-app
 ```
-
-*Note:* `go-wrapper run` includes `set -x` so the binary name is printed to stderr on application startup. If this behavior is undesirable, then switching to `CMD ["app"]` (or `CMD ["myapp"]` if a [Go custom import path](https://golang.org/s/go14customimport) is in use) will silence it by running the built binary directly.
 
 ## Compile your app inside the Docker container
 
