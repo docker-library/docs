@@ -24,18 +24,34 @@ $ docker run --name some-%%REPO%% -e MYSQL_ROOT_PASSWORD=my-secret-pw -d %%IMAGE
 
 Since MariaDB is intended as a drop-in replacement for MySQL, it can be used with many applications.
 
-This image exposes the standard MySQL port (3306), so container linking makes the MySQL instance available to other application containers. Start your application container like this in order to link it to the MySQL container:
+This image exposes the standard MySQL port (3306), so containers on the same network can access the MySQL instance available to other application containers.
+
+Create a user-defined network:
 
 ```console
-$ docker run --name some-app --link some-%%REPO%%:mysql -d application-that-uses-mysql
+$ docker network create some-network
+```
+
+If you already have a running database container, attach the running database instance to the network. Otherwise, you can use `--network=some-network` when running the database container.
+
+```console
+$ docker network connect some-network some-%%REPO%%
+```
+
+Start your application container like this in order to connect it to the network. You can now access the MySQL container by container name as a hostname:
+
+```console
+$ docker run --name some-app --network=some-network -d application-that-uses-mariadb
 ```
 
 ## Connect to MariaDB from the MySQL command line client
 
+First, create a user-defined network as specified in the previous section, e.g. `docker network create some-network`. Ensure that the database container is connected to this network, e.g. `docker network connect some-network some-%%REPO%%`.
+
 The following command starts another `%%IMAGE%%` container instance and runs the `mysql` command line client against your original `%%IMAGE%%` container, allowing you to execute SQL statements against your database instance:
 
 ```console
-$ docker run -it --link some-%%REPO%%:mysql --rm %%IMAGE%% sh -c 'exec mysql -h"$MYSQL_PORT_3306_TCP_ADDR" -P"$MYSQL_PORT_3306_TCP_PORT" -uroot -p"$MYSQL_ENV_MYSQL_ROOT_PASSWORD"'
+$ docker run -it --network=some-network --rm %%IMAGE%% mysql -h some-%%REPO%% -uroot -p
 ```
 
 ... where `some-%%REPO%%` is the name of your original `%%IMAGE%%` container.

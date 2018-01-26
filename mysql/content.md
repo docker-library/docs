@@ -42,12 +42,12 @@ $ docker run --name some-app --network=some-network -d application-that-uses-mys
 
 ## Connect to MySQL from the MySQL command line client
 
-First, create a user-defined network as specified in the previous section, e.g. `docker network create some-network`. Ensure that the database container is connected to this network.
+First, create a user-defined network as specified in the previous section, e.g. `docker network create some-network`. Ensure that the database container is connected to this network, e.g. `docker network connect some-network some-%%REPO%%`.
 
 The following command starts another `%%IMAGE%%` container instance and runs the `mysql` command line client against your original `%%IMAGE%%` container, allowing you to execute SQL statements against your database instance:
 
 ```console
-$ docker run -it --network=some-network --rm %%IMAGE%% mysql -h some-%%REPO%%
+$ docker run -it --network=some-network --rm %%IMAGE%% mysql -h some-%%REPO%% -uroot -p
 ```
 
 ... where `some-%%REPO%%` is the name of your original `%%IMAGE%%` container.
