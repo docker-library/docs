@@ -16,16 +16,18 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.4.1-jdk7`, `4.4-jdk7`, `jdk7` (*jdk7/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/b0419babd3271f6c8e554fbc8bbd8dc909936763/jdk7/Dockerfile)
--	[`4.4.1-jre7`, `4.4-jre7`, `jre7` (*jre7/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/b0419babd3271f6c8e554fbc8bbd8dc909936763/jre7/Dockerfile)
--	[`4.4.1-jdk7-alpine`, `4.4-jdk7-alpine`, `jdk7-alpine` (*jdk7-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/b0419babd3271f6c8e554fbc8bbd8dc909936763/jdk7-alpine/Dockerfile)
--	[`4.4.1-jre7-alpine`, `4.4-jre7-alpine`, `jre7-alpine` (*jre7-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/b0419babd3271f6c8e554fbc8bbd8dc909936763/jre7-alpine/Dockerfile)
--	[`4.4.1-jdk8`, `4.4-jdk8`, `jdk8`, `4.4.1-jdk`, `4.4-jdk`, `jdk`, `4.4.1`, `4.4`, `latest` (*jdk8/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/b0419babd3271f6c8e554fbc8bbd8dc909936763/jdk8/Dockerfile)
--	[`4.4.1-jre8`, `4.4-jre8`, `jre8`, `4.4.1-jre`, `4.4-jre`, `jre` (*jre8/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/b0419babd3271f6c8e554fbc8bbd8dc909936763/jre8/Dockerfile)
--	[`4.4.1-jdk8-alpine`, `4.4-jdk8-alpine`, `jdk8-alpine`, `4.4.1-jdk-alpine`, `4.4-jdk-alpine`, `jdk-alpine`, `4.4.1-alpine`, `4.4-alpine`, `alpine` (*jdk8-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/b0419babd3271f6c8e554fbc8bbd8dc909936763/jdk8-alpine/Dockerfile)
--	[`4.4.1-jre8-alpine`, `4.4-jre8-alpine`, `jre8-alpine`, `4.4.1-jre-alpine`, `4.4-jre-alpine`, `jre-alpine` (*jre8-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/b0419babd3271f6c8e554fbc8bbd8dc909936763/jre8-alpine/Dockerfile)
--	[`4.4.1-jdk9`, `4.4-jdk9`, `jdk9` (*jdk9/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/b0419babd3271f6c8e554fbc8bbd8dc909936763/jdk9/Dockerfile)
--	[`4.4.1-jre9`, `4.4-jre9`, `jre9` (*jre9/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/b0419babd3271f6c8e554fbc8bbd8dc909936763/jre9/Dockerfile)
+-	[`4.5.0-jdk7`, `4.5-jdk7`, `jdk7` (*jdk7/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/baa15d43de55bec37dcd5648ed1ef07f3e27f9aa/jdk7/Dockerfile)
+-	[`4.5.0-jre7`, `4.5-jre7`, `jre7` (*jre7/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/baa15d43de55bec37dcd5648ed1ef07f3e27f9aa/jre7/Dockerfile)
+-	[`4.5.0-jdk7-alpine`, `4.5-jdk7-alpine`, `jdk7-alpine` (*jdk7-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/baa15d43de55bec37dcd5648ed1ef07f3e27f9aa/jdk7-alpine/Dockerfile)
+-	[`4.5.0-jre7-alpine`, `4.5-jre7-alpine`, `jre7-alpine` (*jre7-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/baa15d43de55bec37dcd5648ed1ef07f3e27f9aa/jre7-alpine/Dockerfile)
+-	[`4.5.0-jdk8`, `4.5-jdk8`, `jdk8`, `4.5.0-jdk`, `4.5-jdk`, `jdk`, `4.5.0`, `4.5`, `latest` (*jdk8/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/baa15d43de55bec37dcd5648ed1ef07f3e27f9aa/jdk8/Dockerfile)
+-	[`4.5.0-jre8`, `4.5-jre8`, `jre8`, `4.5.0-jre`, `4.5-jre`, `jre` (*jre8/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/baa15d43de55bec37dcd5648ed1ef07f3e27f9aa/jre8/Dockerfile)
+-	[`4.5.0-jdk8-alpine`, `4.5-jdk8-alpine`, `jdk8-alpine`, `4.5.0-jdk-alpine`, `4.5-jdk-alpine`, `jdk-alpine`, `4.5.0-alpine`, `4.5-alpine`, `alpine` (*jdk8-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/baa15d43de55bec37dcd5648ed1ef07f3e27f9aa/jdk8-alpine/Dockerfile)
+-	[`4.5.0-jre8-alpine`, `4.5-jre8-alpine`, `jre8-alpine`, `4.5.0-jre-alpine`, `4.5-jre-alpine`, `jre-alpine` (*jre8-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/baa15d43de55bec37dcd5648ed1ef07f3e27f9aa/jre8-alpine/Dockerfile)
+-	[`4.5.0-jdk9`, `4.5-jdk9`, `jdk9` (*jdk9/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/baa15d43de55bec37dcd5648ed1ef07f3e27f9aa/jdk9/Dockerfile)
+-	[`4.5.0-jre9`, `4.5-jre9`, `jre9` (*jre9/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/baa15d43de55bec37dcd5648ed1ef07f3e27f9aa/jre9/Dockerfile)
+-	[`4.5.0-jdk10`, `4.5-jdk10`, `jdk10` (*jdk10/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/baa15d43de55bec37dcd5648ed1ef07f3e27f9aa/jdk10/Dockerfile)
+-	[`4.5.0-jre10`, `4.5-jre10`, `jre10` (*jre10/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/baa15d43de55bec37dcd5648ed1ef07f3e27f9aa/jre10/Dockerfile)
 
 # Quick reference
 
