@@ -18,7 +18,7 @@ WARNING:
 
 -	[`5.5.0`, `5.5`, `5` (*5/Dockerfile*)](https://github.com/docker-library/gcc/blob/0423cc3f79023c2ab821d2377f73105217c46892/5/Dockerfile)
 -	[`6.4.0`, `6.4`, `6` (*6/Dockerfile*)](https://github.com/docker-library/gcc/blob/0423cc3f79023c2ab821d2377f73105217c46892/6/Dockerfile)
--	[`7.2.0`, `7.2`, `7`, `latest` (*7/Dockerfile*)](https://github.com/docker-library/gcc/blob/0423cc3f79023c2ab821d2377f73105217c46892/7/Dockerfile)
+-	[`7.3.0`, `7.3`, `7`, `latest` (*7/Dockerfile*)](https://github.com/docker-library/gcc/blob/0f2605b8a300a1cbd70d244330400e8baf1dde33/7/Dockerfile)
 
 # Quick reference
 
