@@ -34,29 +34,9 @@ $ docker run -it --link some-%%REPO%%:mongo --rm %%IMAGE%% sh -c 'exec mongo "$M
 ```
 ... where `some-mongo` is the name of your original `mongo` container.
 
-## ... via `docker-compose`
+## %%STACK%%
 
-Example `docker-compose.yml` for `mongo`:
-
-```
-version: '2.1'
-
-services:
-
-  db:
-    image: %%IMAGE%%
-    restart: always
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: MongoRootUser
-      MONGO_INITDB_ROOT_PASSWORD: AMuchStrongerPassword
-      
-  app:
-    build: ./app
-    ports:
-      - 80:80
-    links:
-      - db
-```
+Run `docker stack deploy -c stack.yml %%REPO%%` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8081`, `http://localhost:8081`, or `http://host-ip:8081` (as appropriate).
 
 ## Container shell access and viewing Mongo logs
 
