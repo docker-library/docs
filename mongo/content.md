@@ -15,6 +15,7 @@ First developed by the software company 10gen (now MongoDB Inc.) in October 2007
 ```console
 $ docker run --name some-%%REPO%% -d %%IMAGE%%:tag
 ```
+
 ... where `some-%%REPO%%` is the name you want to assign to your container and tag is the tag specifying the Mongo version you want. See the list above for relevant tags.
 
 ## Connect to Mongo from an application in another Docker container
@@ -32,6 +33,7 @@ The following command starts another `%%IMAGE%%` container instance and runs the
 ```console
 $ docker run -it --link some-%%REPO%%:mongo --rm %%IMAGE%% sh -c 'exec mongo "$MONGO_PORT_27017_TCP_ADDR:$MONGO_PORT_27017_TCP_PORT/test"'
 ```
+
 ... where `some-mongo` is the name of your original `mongo` container.
 
 ## %%STACK%%
@@ -80,11 +82,12 @@ When you start the `%%IMAGE%%` image, you can adjust the configuration of the Mo
 
 ### `MONGO_INITDB_ROOT_USERNAME`, `MONGO_INITDB_ROOT_PASSWORD`
 
-These variables are optional, used in conjunction to create a new user and to set that user's password. This user will be created in the `admin` authentication database and given the role of `root`. superuser permissions (see above) for the database specified by the `MYSQL_DATABASE` variable. Both variables are required for a user to be created. If both are present then Mongo will start with authentication enabled: `mongod --auth`. Authentication in MongoDB is fairly complex, so more complex user setup is explicitly left to the user via `/docker-entrypoint-initdb.d/` (see _Initializing a fresh instance_ below).
+These variables are optional, used in conjunction to create a new user and to set that user's password. This user will be created in the `admin` authentication database and given the role of `root`. superuser permissions (see above) for the database specified by the `MYSQL_DATABASE` variable. Both variables are required for a user to be created. If both are present then Mongo will start with authentication enabled: `mongod --auth`. Authentication in MongoDB is fairly complex, so more complex user setup is explicitly left to the user via `/docker-entrypoint-initdb.d/` (see *Initializing a fresh instance* below).
 
 Do note that MongoDB does not require authentication by default, but it can be configured to do so. For more details about the functionality described here, please see the sections in the official documentation which describe [authentication](https://docs.mongodb.com/manual/core/authentication/) and [authorization](https://docs.mongodb.com/manual/core/authorization/) in more detail.
 
 If you do create a root user, you will need to connect against the `admin` authentication database:
+
 ```console
 $ docker run -it --rm --link some-%%REPO%%:mongo %%IMAGE%% mongo -u jsmith -p some-initial-password --authenticationDatabase admin some-%%REPO%%/some-db
 > db.getName();
@@ -93,7 +96,7 @@ some-db
 
 ### `MONGO_INITDB_DATABASE`
 
-This variable is optional and allows you to specify the name of a database to be used for creation scripts in `/docker-entrypoint-initdb.d/*.js` (see _Initializing a fresh instance_ below). MongoDB is fundamentally designed for "create on first use" so automating database creation does not make much sense.
+This variable is optional and allows you to specify the name of a database to be used for creation scripts in `/docker-entrypoint-initdb.d/*.js` (see *Initializing a fresh instance* below). MongoDB is fundamentally designed for "create on first use" so automating database creation does not make much sense.
 
 ## Docker Secrets
 
