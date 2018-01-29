@@ -57,7 +57,7 @@ Nextcloud:
 Database:
 
 -	`/var/lib/mysql` MySQL / MariaDB Data
--	`/var/lib/postresql/data` PostegreSQL Data
+-	`/var/lib/postgresql/data` PostgreSQL Data
 
 	```console
 	$ docker run -d \
