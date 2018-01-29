@@ -108,7 +108,7 @@ docker volume create --name grapes-cache
 docker run --rm -it -v grapes-cache:/home/groovy/.groovy/grapes groovy
 ```
 
-**Note: Java 9 support is experimental**
+**Note: Java 9 and Java 10 support is experimental**
 
 # Image Variants
 
