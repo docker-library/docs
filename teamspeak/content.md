@@ -8,6 +8,14 @@ TeamSpeak 3 offers the ideal voice communication for online gaming, education an
 
 # How to use this image
 
+To view the license agreement:
+
+```console
+$ docker run -e TS3SERVER_LICENSE=view %%IMAGE%%
+```
+
+To start a TeamSpeak server, accept the license agreement, and map the ports to the host:
+
 ```console
 $ docker run -p 9987:9987/udp -p 10011:10011 -p 30033:30033 -e TS3SERVER_LICENSE=accept %%IMAGE%%
 ```
@@ -83,16 +91,6 @@ If this variable is set to 1, every query command that is sent to the server wil
 ### `TEAMSPEAK_LOG_APPEND`
 
 If this variable is set to 1, all new log entries are written into a single file per virtual server. We suggest setting this variable to 0 as it will make life easier when looking at the logs.
-
-# Accept License
-
-In order to use the TeamSpeak server you must accept the license first. You can view the license using:
-
-```console
-$ docker run -e TS3SERVER_LICENSE=view %%IMAGE%%
-```
-
-The license can be accepted by setting `TS3SERVER_LICENSE` to `accept`.
 
 # Caveats
 
