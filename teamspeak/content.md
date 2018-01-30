@@ -1,6 +1,6 @@
 # What is TeamSpeak?
 
-TeamSpeak 3 offers the ideal voice communication for online gaming, education and training, internal business communication, and staying in touch with friends and family. Our primary focus is delivering a solution that is easy to use, with high security standards, excellent voice quality, and low system and bandwidth usage.
+TeamSpeak offers the ideal voice communication for online gaming, education and training, internal business communication, and staying in touch with friends and family. Our primary focus is delivering a solution that is easy to use, with high security standards, excellent voice quality, and low system and bandwidth usage.
 
 > [teamspeak.com](https://teamspeak.com/)
 
@@ -20,7 +20,7 @@ To start a TeamSpeak server, accept the license agreement, and map the ports to 
 $ docker run -p 9987:9987/udp -p 10011:10011 -p 30033:30033 -e TS3SERVER_LICENSE=accept %%IMAGE%%
 ```
 
-Then you can connect to `localhost` in your TeamSpeak3 client. Please write down the server query password, and server admin privilege key that were generated. There are needed to administrate the TeamSpeak 3 server.
+Then you can connect to `localhost` in your TeamSpeak client. Please write down the server query password, and server admin privilege key that were generated. These are needed to administrate the TeamSpeak server.
 
 ## Container shell access
 
@@ -120,7 +120,7 @@ The Docker documentation is a good starting point for understanding the differen
 $ docker run --name some-%%REPO%% -v /my/own/datadir:/var/ts3server/ -d %%IMAGE%%:tag
 ```
 
-The `-v /my/own/datadir:/var/ts3server/` part of the command mounts the `/my/own/datadir` directory from the underlying host system as `/var/ts3server` inside the container, where Cassandra by default will write its data files.
+The `-v /my/own/datadir:/var/ts3server/` part of the command mounts the `/my/own/datadir` directory from the underlying host system as `/var/ts3server` inside the container, where TeamSpeak by default will write its data files.
 
 Note that users on host systems with SELinux enabled may see issues with this. The current workaround is to assign the relevant SELinux policy type to the new data directory so that the container will be allowed to access it:
 
