@@ -44,51 +44,51 @@ Run `docker stack deploy -c stack.yml %%REPO%%` (or `docker-compose -f stack.yml
 
 When you start the `%%REPO%%` image, you can adjust the configuration of the TeamSpeak server instance by passing one or more environment variables on the `docker run` command line.
 
-### `TEAMSPEAK_LICENSEPATH`
+### `TS3SERVER_LICENSEPATH`
 
 Sets the path where the TeamSpeak server is looking for the `licensekey.dat`. This variable is the path to the directory where the `licensekey.dat` is supposed to be located. Defaults to /var/ts3server/.
 
-### `TEAMSPEAK_DB_PLUGIN`
+### `TS3SERVER_DB_PLUGIN`
 
 This variable controls what kind of database the TeamSpeak server is using.
 
-### `TEAMSPEAK_DB_PLUGINPARAMETER`
+### `TS3SERVER_DB_PLUGINPARAMETER`
 
 The content of the this variable is send as `parameter` to the db plugin.
 
-### `TEAMSPEAK_DB_SQLPATH`
+### `TS3SERVER_DB_SQLPATH`
 
-This variable controls where the TeamSpeak 3 server looks for sql files. Defaults to /opt/ts3server/sql/.
+This variable controls where the TeamSpeak server looks for sql files. Defaults to /opt/ts3server/sql/.
 
-### `TEAMSPEAK_DB_SQLCREATEPATH`
+### `TS3SERVER_DB_SQLCREATEPATH`
 
-This variable is the path to the sql scripts used to initialize the database. The path is relative to `TEAMSPEAK_DB_SQLPATH`
+This variable is the path to the sql scripts used to initialize the database. The path is relative to `TS3SERVER_DB_SQLPATH`
 
-### `TEAMSPEAK_DB_CONNECTIONS`
+### `TS3SERVER_DB_CONNECTIONS`
 
 This variable controls how many concurrent connections to the database are being used. Must be at least 2 and at most 100. Defaults to 10.
 
-### `TEAMSPEAK_DB_CLIENTKEEPDAYS`
+### `TS3SERVER_DB_CLIENTKEEPDAYS`
 
 This variable is the amount of days that the TeamSpeak server will keep unused user identities. Users that have been added to a group will not be pruned, but guests will be.
 
-### `TEAMSPEAK_IP_WHITELIST`
+### `TS3SERVER_IP_WHITELIST`
 
 This variable controls where the whitelist is found. The file contains a list of IP addresses which are exempt from the flood protection system. Warning: Do not add any IP addresses that you don't trust, as it will allow them to flood the server.
 
-### `TEAMSPEAK_IP_BLACKLIST`
+### `TS3SERVER_IP_BLACKLIST`
 
 This variable controls where the blacklist is found. The file contains a list of IP addresses that, no matter what, can't connect to the server query interface, even after a server restart.
 
-### `TEAMSPEAK_LOG_PATH`
+### `TS3SERVER_LOG_PATH`
 
 This variable controls the folder where the server stores its log files. Defaults to /var/ts3server/logs/.
 
-### `TEAMSPEAK_LOG_QUERY_COMMANDS`
+### `TS3SERVER_LOG_QUERY_COMMANDS`
 
 If this variable is set to 1, every query command that is sent to the server will be logged.<br><br>**Warning:** While this can help if you are running into issues with your server, it should be noted that this can cause your log files to become extremely large. Unless you absolutely want all commands to be logged, we recommend this variable to be set to 0 most of the time.
 
-### `TEAMSPEAK_LOG_APPEND`
+### `TS3SERVER_LOG_APPEND`
 
 If this variable is set to 1, all new log entries are written into a single file per virtual server. We suggest setting this variable to 0 as it will make life easier when looking at the logs.
 
