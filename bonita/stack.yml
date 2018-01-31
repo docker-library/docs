@@ -22,7 +22,7 @@ services:
       - TENANT_PASSWORD=secret
       - PLATFORM_LOGIN=pfadmin
       - PLATFORM_PASSWORD=pfsecret
-    restart: always
+    restart: on-failure:2
     depends_on:
       - db
     entrypoint:
@@ -34,6 +34,7 @@ services:
         export PGPASSWORD="$$POSTGRES_ENV_POSTGRES_PASSWORD"
         maxTries=10
         while [ "$$maxTries" -gt 0 ] && ! psql -h "$$DB_HOST" -U 'postgres' -c '\l'; do
+            let maxTries--
             sleep 1
         done
         echo
