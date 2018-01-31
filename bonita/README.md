@@ -153,7 +153,7 @@ services:
       - TENANT_PASSWORD=secret
       - PLATFORM_LOGIN=pfadmin
       - PLATFORM_PASSWORD=pfsecret
-    restart: always
+    restart: on-failure:2
     depends_on:
       - db
     entrypoint:
@@ -165,6 +165,7 @@ services:
         export PGPASSWORD="$$POSTGRES_ENV_POSTGRES_PASSWORD"
         maxTries=10
         while [ "$$maxTries" -gt 0 ] && ! psql -h "$$DB_HOST" -U 'postgres' -c '\l'; do
+            let maxTries--
             sleep 1
         done
         echo
@@ -175,7 +176,7 @@ services:
         exec /opt/files/startup.sh
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/9efeec18b6b2ed232cf0fbd3914b6211e16e242c/bonita/stack.yml)
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/d7f952b15103e355727ad55d428e55c84383aca9/bonita/stack.yml)
 
 Run `docker stack deploy -c stack.yml bonita` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
 
