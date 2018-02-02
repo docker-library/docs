@@ -2,7 +2,7 @@
 
 Telegraf is an open source agent written in Go for collecting metrics and data on the system it's running on or from other services. Telegraf writes data it collects to InfluxDB in the correct format.
 
-[Telegraf Official Docs](https://docs.influxdata.com/telegraf/latest/introduction/getting-started-telegraf/)
+[Telegraf Official Docs](https://docs.influxdata.com/telegraf/latest/introduction/getting_started/)
 
 %%LOGO%%
 
@@ -46,7 +46,7 @@ $ docker run -v $PWD/telegraf.conf:/etc/telegraf/telegraf.conf:ro %%IMAGE%%
 
 Modify `$PWD` to the directory where you want to store the configuration file.
 
-Read more about the Telegraf configuration [here](https://docs.influxdata.com/telegraf/latest/introduction/configuration/).
+Read more about the Telegraf configuration [here](https://docs.influxdata.com/telegraf/latest/administration/configuration/).
 
 ### Using the container with input plugins
 
@@ -168,6 +168,6 @@ Check that the measurement `foo` is added in the DB.
 
 ### Supported Plugins Reference
 
--	[Input Plugins](https://docs.influxdata.com/telegraf/latest/inputs/)
+-	[Input Plugins](https://docs.influxdata.com/telegraf/latest/plugins/inputs/)
 
--	[Output Plugins](https://docs.influxdata.com/telegraf/latest/outputs/)
+-	[Output Plugins](https://docs.influxdata.com/telegraf/latest/plugins/outputs/)
