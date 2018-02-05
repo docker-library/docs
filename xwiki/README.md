@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8`, `8.4`, `8.4.5`, `8-mysql-tomcat`, `mysql-tomcat`, `lts-mysql-tomcat`, `lts-mysql`, `lts`, `latest` (*8/mysql-tomcat/Dockerfile*)](https://github.com/xwiki-contrib/docker-xwiki/blob/fbc0fe3cbc07119c45ae8ea97c7e021d41e89b0a/8/mysql-tomcat/Dockerfile)
--	[`9`, `9.11`, `9.11.1`, `9-mysql-tomcat`, `stable-mysql-tomcat`, `stable-mysql`, `stable` (*9/mysql-tomcat/Dockerfile*)](https://github.com/xwiki-contrib/docker-xwiki/blob/29d9ee57a105d2cef55ba57a7f25d31b4873f7d9/9/mysql-tomcat/Dockerfile)
--	[`8-postgres-tomcat`, `8.4-postgres-tomcat`, `8.4.5-postgres-tomcat`, `postgres-tomcat`, `lts-postgres-tomcat`, `lts-postgres` (*8/postgres-tomcat/Dockerfile*)](https://github.com/xwiki-contrib/docker-xwiki/blob/fbc0fe3cbc07119c45ae8ea97c7e021d41e89b0a/8/postgres-tomcat/Dockerfile)
--	[`9-postgres-tomcat`, `9.11-postgres-tomcat`, `9.11.1-postgres-tomcat`, `stable-postgres-tomcat`, `stable-postgres` (*9/postgres-tomcat/Dockerfile*)](https://github.com/xwiki-contrib/docker-xwiki/blob/29d9ee57a105d2cef55ba57a7f25d31b4873f7d9/9/postgres-tomcat/Dockerfile)
+-	[`9`, `9.11`, `9.11.2`, `9-mysql-tomcat`, `mysql-tomcat`, `lts-mysql-tomcat`, `lts-mysql`, `lts`, `latest` (*9/mysql-tomcat/Dockerfile*)](https://github.com/xwiki-contrib/docker-xwiki/blob/384b12237a5f2ef7dc7e137327d80695e58491ba/9/mysql-tomcat/Dockerfile)
+-	[`9-postgres-tomcat`, `9.11-postgres-tomcat`, `9.11.2-postgres-tomcat`, `postgres-tomcat`, `lts-postgres-tomcat`, `lts-postgres` (*9/postgres-tomcat/Dockerfile*)](https://github.com/xwiki-contrib/docker-xwiki/blob/384b12237a5f2ef7dc7e137327d80695e58491ba/9/postgres-tomcat/Dockerfile)
+-	[`10`, `10.0`, `10-mysql-tomcat`, `stable-mysql-tomcat`, `stable-mysql`, `stable` (*10/mysql-tomcat/Dockerfile*)](https://github.com/xwiki-contrib/docker-xwiki/blob/384b12237a5f2ef7dc7e137327d80695e58491ba/10/mysql-tomcat/Dockerfile)
+-	[`10-postgres-tomcat`, `10.0-postgres-tomcat`, `stable-postgres-tomcat`, `stable-postgres` (*10/postgres-tomcat/Dockerfile*)](https://github.com/xwiki-contrib/docker-xwiki/blob/384b12237a5f2ef7dc7e137327d80695e58491ba/10/postgres-tomcat/Dockerfile)
 
 # Quick reference
 
