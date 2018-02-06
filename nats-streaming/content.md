@@ -9,13 +9,33 @@
 Due to restrictions on how the Windows Docker Image is built, running the image without argument will run the NATS Streaming server with memory based store on port 4222 and the monitoring port 8222. If you need to specify any additional argument, or modify these options, you need to specify the executable name as this:
 
 ```bash
-$ docker run nats-streaming-server nats-streaming-server -p 4223 -m 8223
+$ docker run %%IMAGE%% nats-streaming-server -p 4223 -m 8223
+```
+
+If you need to specify the entrypoint:
+
+```bash
+$ docker run --entrypoint c:/nats-streaming-server/nats-streaming-server %%IMAGE%%
+```
+
+# Othe platforms Docker image
+
+If you need to provide arguments to the NATS Streaming server, just pass them to the command line. For instance, to change the listen and monitoring port to 4223 and 8223 respectively:
+
+```bash
+$ docker run %%IMAGE%% -p 4223 -m 8223
+```
+
+If you need to specify the entrypoint:
+
+```bash
+$ docker run --entrypoint /nats-streaming-server %%IMAGE%%
 ```
 
 # Example usage
 
 ```bash
-# Run a NATS Streaning server
+# Run a NATS Streaming server
 # Each server exposes multiple ports
 # 4222 is for clients.
 # 8222 is an HTTP management port for information reporting.
