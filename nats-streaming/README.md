@@ -18,15 +18,15 @@ WARNING:
 
 ## Simple Tags
 
--	[`0.8.0-beta-linux`, `linux` (*amd64/Dockerfile*)](https://github.com/nats-io/nats-streaming-docker/blob/48f1a5bd7bc869f50d1379035fa65505196abc28/amd64/Dockerfile)
--	[`0.8.0-beta-nanoserver`, `nanoserver` (*windows/nanoserver/Dockerfile*)](https://github.com/nats-io/nats-streaming-docker/blob/48f1a5bd7bc869f50d1379035fa65505196abc28/windows/nanoserver/Dockerfile)
--	[`0.8.0-beta-windowsservercore`, `windowsservercore` (*windows/windowsservercore/Dockerfile*)](https://github.com/nats-io/nats-streaming-docker/blob/48f1a5bd7bc869f50d1379035fa65505196abc28/windows/windowsservercore/Dockerfile)
+-	[`0.8.0-beta-linux`, `linux` (*amd64/Dockerfile*)](https://github.com/nats-io/nats-streaming-docker/blob/241ef65433ca7fa0042d6015b3d1ffd191a185ec/amd64/Dockerfile)
+-	[`0.8.0-beta-nanoserver`, `nanoserver` (*windows/nanoserver/Dockerfile*)](https://github.com/nats-io/nats-streaming-docker/blob/241ef65433ca7fa0042d6015b3d1ffd191a185ec/windows/nanoserver/Dockerfile)
+-	[`0.8.0-beta-windowsservercore`, `windowsservercore` (*windows/windowsservercore/Dockerfile*)](https://github.com/nats-io/nats-streaming-docker/blob/241ef65433ca7fa0042d6015b3d1ffd191a185ec/windows/windowsservercore/Dockerfile)
 
 ## Shared Tags
 
 -	`0.8.0-beta`, `latest`:
-	-	[`0.8.0-beta-linux` (*amd64/Dockerfile*)](https://github.com/nats-io/nats-streaming-docker/blob/48f1a5bd7bc869f50d1379035fa65505196abc28/amd64/Dockerfile)
-	-	[`0.8.0-beta-nanoserver` (*windows/nanoserver/Dockerfile*)](https://github.com/nats-io/nats-streaming-docker/blob/48f1a5bd7bc869f50d1379035fa65505196abc28/windows/nanoserver/Dockerfile)
+	-	[`0.8.0-beta-linux` (*amd64/Dockerfile*)](https://github.com/nats-io/nats-streaming-docker/blob/241ef65433ca7fa0042d6015b3d1ffd191a185ec/amd64/Dockerfile)
+	-	[`0.8.0-beta-nanoserver` (*windows/nanoserver/Dockerfile*)](https://github.com/nats-io/nats-streaming-docker/blob/241ef65433ca7fa0042d6015b3d1ffd191a185ec/windows/nanoserver/Dockerfile)
 
 # Quick reference
 
@@ -40,7 +40,7 @@ WARNING:
 	[the NATS Project](https://github.com/nats-io/nats-streaming-docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/nats-streaming/), [`arm32v7`](https://hub.docker.com/r/arm32v7/nats-streaming/), [`arm64v8`](https://hub.docker.com/r/arm64v8/nats-streaming/), [`windows-amd64`](https://hub.docker.com/r/winamd64/nats-streaming/)
+	[`amd64`](https://hub.docker.com/r/amd64/nats-streaming/), [`arm32v6`](https://hub.docker.com/r/arm32v6/nats-streaming/), [`arm32v7`](https://hub.docker.com/r/arm32v7/nats-streaming/), [`arm64v8`](https://hub.docker.com/r/arm64v8/nats-streaming/), [`windows-amd64`](https://hub.docker.com/r/winamd64/nats-streaming/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/nats-streaming/` directory](https://github.com/docker-library/repo-info/blob/master/repos/nats-streaming) ([history](https://github.com/docker-library/repo-info/commits/master/repos/nats-streaming))  
