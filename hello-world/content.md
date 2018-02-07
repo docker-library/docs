@@ -9,6 +9,7 @@ This message shows that your installation appears to be working correctly.
 To generate this message, Docker took the following steps:
  1. The Docker client contacted the Docker daemon.
  2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
  3. The Docker daemon created a new container from that image which runs the
     executable that produces the output you are currently reading.
  4. The Docker daemon streamed that output to the Docker client, which sent it
@@ -26,7 +27,7 @@ For more examples and ideas, visit:
 
 $ docker images %%IMAGE%%
 REPOSITORY   TAG     IMAGE ID      SIZE
-hello-world  latest  05a3bd381fc2  1.84kB
+hello-world  latest  f2a91732366c  1.85kB
 ```
 
 %%LOGO%%
