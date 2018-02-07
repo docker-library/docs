@@ -44,10 +44,6 @@ WARNING:
 -	[`7u151-jdk-jessie`, `7u151-jessie`, `7-jdk-jessie`, `7-jessie`, `7u151-jdk`, `7u151`, `7-jdk`, `7` (*7-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/ceae8e7dba4eb818279cc7f6947f3dc6003ae535/7-jdk/Dockerfile)
 -	[`7u151-jdk-slim-jessie`, `7u151-slim-jessie`, `7-jdk-slim-jessie`, `7-slim-jessie`, `7u151-jdk-slim`, `7u151-slim`, `7-jdk-slim`, `7-slim` (*7-jdk/slim/Dockerfile*)](https://github.com/docker-library/openjdk/blob/ceae8e7dba4eb818279cc7f6947f3dc6003ae535/7-jdk/slim/Dockerfile)
 -	[`7u151-jdk-alpine3.7`, `7u151-alpine3.7`, `7-jdk-alpine3.7`, `7-alpine3.7`, `7u151-jdk-alpine`, `7u151-alpine`, `7-jdk-alpine`, `7-alpine` (*7-jdk/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/17d0f9f3411d82622c762163d85cc4a6ba69af95/7-jdk/alpine/Dockerfile)
--	[`6b38-jre-wheezy`, `6-jre-wheezy`, `6b38-jre`, `6-jre` (*6-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/80490366d49e6781e9dcb5dad8ebf0fb6ec04000/6-jre/Dockerfile)
--	[`6b38-jre-slim-wheezy`, `6-jre-slim-wheezy`, `6b38-jre-slim`, `6-jre-slim` (*6-jre/slim/Dockerfile*)](https://github.com/docker-library/openjdk/blob/b4f29ba829765552239bd18f272fcdaf09eca259/6-jre/slim/Dockerfile)
--	[`6b38-jdk-wheezy`, `6b38-wheezy`, `6-jdk-wheezy`, `6-wheezy`, `6b38-jdk`, `6b38`, `6-jdk`, `6` (*6-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/b4f29ba829765552239bd18f272fcdaf09eca259/6-jdk/Dockerfile)
--	[`6b38-jdk-slim-wheezy`, `6b38-slim-wheezy`, `6-jdk-slim-wheezy`, `6-slim-wheezy`, `6b38-jdk-slim`, `6b38-slim`, `6-jdk-slim`, `6-slim` (*6-jdk/slim/Dockerfile*)](https://github.com/docker-library/openjdk/blob/b4f29ba829765552239bd18f272fcdaf09eca259/6-jdk/slim/Dockerfile)
 
 ## Shared Tags
 
