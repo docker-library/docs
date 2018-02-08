@@ -15,6 +15,7 @@ All Markdown files here are run through [tianon's fork of `markdownfmt`](https:/
 -	create a `README-short.txt` (required, 100 char max)
 -	create a `content.md` (required)
 -	create a `license.md` (required)
+-	create a `maintainer.md` (required)
 -	create a `github-repo` (required)
 -	add a `logo.png` (recommended)
 
@@ -94,6 +95,10 @@ This file should contain a link to the license for the main software in the imag
 ```markdown
 View [license information](http://golang.org/LICENSE) for the software contained in this image.
 ```
+
+## `<image name>/maintainer.md`
+
+This file should contain a link to the maintainers of the Dockerfile.
 
 ## `<image name>/github-repo`
 
