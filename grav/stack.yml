@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+
+  grav:
+    image: grav:apache
+    ports:
+      - 8080:80
+    volumes:
+      - /var/www/html/
+    restart: always
