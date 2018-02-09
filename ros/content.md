@@ -71,7 +71,7 @@ If we want our all ROS nodes to easily talk to each other, we'll can use a virtu
 ```dockerfile
 FROM %%IMAGE%%:indigo-ros-base
 # install ros tutorials packages
-RUN apt-get update && apt-get install -y
+RUN apt-get update && apt-get install -y \
     ros-indigo-ros-tutorials \
     ros-indigo-common-tutorials \
     && rm -rf /var/lib/apt/lists/
