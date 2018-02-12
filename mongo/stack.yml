@@ -4,7 +4,7 @@ version: '3.1'
 services:
 
   mongo:
-    image: %%IMAGE%%
+    image: mongo
     restart: always
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
