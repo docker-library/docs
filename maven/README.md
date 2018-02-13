@@ -36,6 +36,8 @@ WARNING:
 -	[`3.5-jdk-8`, `3.5`, `3-jdk-8`, `3`, `latest` (*jdk-8/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/d2e41bb4b98f827e7929eb01578538854a61726b/jdk-8/Dockerfile)
 -	[`3.5-jdk-9-slim`, `3-jdk-9-slim` (*jdk-9-slim/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/d2e41bb4b98f827e7929eb01578538854a61726b/jdk-9-slim/Dockerfile)
 -	[`3.5-jdk-9`, `3-jdk-9` (*jdk-9/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/d2e41bb4b98f827e7929eb01578538854a61726b/jdk-9/Dockerfile)
+-	[`3.5-jdk-10-slim`, `3-jdk-10-slim` (*jdk-10-slim/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/2df8a77137133ec3b0071e3cdc4e7793118555a5/jdk-10-slim/Dockerfile)
+-	[`3.5-jdk-10`, `3-jdk-10` (*jdk-10/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/2df8a77137133ec3b0071e3cdc4e7793118555a5/jdk-10/Dockerfile)
 -	[`3.5-ibmjava-8-alpine`, `3.5-ibmjava-alpine`, `3-ibmjava-8-alpine`, `ibmjava-alpine` (*ibmjava-8-alpine/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/d2e41bb4b98f827e7929eb01578538854a61726b/ibmjava-8-alpine/Dockerfile)
 -	[`3.5-ibmjava-8`, `3.5-ibmjava`, `3-ibmjava-8`, `3-ibmjava`, `ibmjava` (*ibmjava-8/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/d2e41bb4b98f827e7929eb01578538854a61726b/ibmjava-8/Dockerfile)
 -	[`3.5-ibmjava-9-alpine`, `3-ibmjava-9-alpine` (*ibmjava-9-alpine/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/d2e41bb4b98f827e7929eb01578538854a61726b/ibmjava-9-alpine/Dockerfile)
