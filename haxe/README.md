@@ -16,12 +16,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.4.5-stretch`, `3.4-stretch`, `3.4.5`, `3.4`, `latest` (*3.4/stretch/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/b53c8f548757e9c9ef2fa6895762ddc538d94a7e/3.4/stretch/Dockerfile)
--	[`3.4.5-jessie`, `3.4-jessie` (*3.4/jessie/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/b53c8f548757e9c9ef2fa6895762ddc538d94a7e/3.4/jessie/Dockerfile)
--	[`3.4.5-onbuild`, `3.4-onbuild` (*3.4/onbuild/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/d175be53dd807e4a03e8cb7081f0c7ca1652a43c/3.4/onbuild/Dockerfile)
--	[`3.4.5-windowsservercore`, `3.4-windowsservercore` (*3.4/windowsservercore/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/d175be53dd807e4a03e8cb7081f0c7ca1652a43c/3.4/windowsservercore/Dockerfile)
--	[`3.4.5-alpine3.7`, `3.4-alpine3.7`, `3.4.5-alpine`, `3.4-alpine` (*3.4/alpine3.7/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/e2190dbe03fc74eff8abbf70ec029ab585462f23/3.4/alpine3.7/Dockerfile)
--	[`3.4.5-alpine3.6`, `3.4-alpine3.6` (*3.4/alpine3.6/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/e2190dbe03fc74eff8abbf70ec029ab585462f23/3.4/alpine3.6/Dockerfile)
+-	[`3.4.6-stretch`, `3.4-stretch`, `3.4.6`, `3.4`, `latest` (*3.4/stretch/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/56798419dd0d31f361cb5a92b8235fa454d9320d/3.4/stretch/Dockerfile)
+-	[`3.4.6-jessie`, `3.4-jessie` (*3.4/jessie/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/56798419dd0d31f361cb5a92b8235fa454d9320d/3.4/jessie/Dockerfile)
+-	[`3.4.6-onbuild`, `3.4-onbuild` (*3.4/onbuild/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/56798419dd0d31f361cb5a92b8235fa454d9320d/3.4/onbuild/Dockerfile)
+-	[`3.4.6-windowsservercore`, `3.4-windowsservercore` (*3.4/windowsservercore/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/56798419dd0d31f361cb5a92b8235fa454d9320d/3.4/windowsservercore/Dockerfile)
+-	[`3.4.6-alpine3.7`, `3.4-alpine3.7`, `3.4.6-alpine`, `3.4-alpine` (*3.4/alpine3.7/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/56798419dd0d31f361cb5a92b8235fa454d9320d/3.4/alpine3.7/Dockerfile)
+-	[`3.4.6-alpine3.6`, `3.4-alpine3.6` (*3.4/alpine3.6/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/56798419dd0d31f361cb5a92b8235fa454d9320d/3.4/alpine3.6/Dockerfile)
 -	[`3.3.0-rc.1-stretch`, `3.3.0-stretch`, `3.3-stretch`, `3.3.0-rc.1`, `3.3.0`, `3.3` (*3.3/stretch/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/b53c8f548757e9c9ef2fa6895762ddc538d94a7e/3.3/stretch/Dockerfile)
 -	[`3.3.0-rc.1-jessie`, `3.3.0-jessie`, `3.3-jessie` (*3.3/jessie/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/b53c8f548757e9c9ef2fa6895762ddc538d94a7e/3.3/jessie/Dockerfile)
 -	[`3.3.0-rc.1-onbuild`, `3.3.0-onbuild`, `3.3-onbuild` (*3.3/onbuild/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/e0f9cb5a3cc190acd42565113e3380b5853f5746/3.3/onbuild/Dockerfile)
