@@ -16,12 +16,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`20.2.2`, `20.2`, `20`, `latest` (*20/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/f6606389b995d24dce8933e4ca4d6d46fce8612b/20/Dockerfile)
--	[`20.2.2-slim`, `20.2-slim`, `20-slim`, `slim` (*20/slim/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/91f55f9a69925e7fc16b467c155897bbe8646f12/20/slim/Dockerfile)
--	[`20.2.2-alpine`, `20.2-alpine`, `20-alpine`, `alpine` (*20/alpine/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/7bed62e30a4e6557c146b2865413c9ce924366be/20/alpine/Dockerfile)
--	[`19.3.6.5`, `19.3.6`, `19.3`, `19` (*19/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/6e2088d493e6f50b82c0e416c72a2dd914e84fd2/19/Dockerfile)
+-	[`20.2.3`, `20.2`, `20`, `latest` (*20/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/3945f4cf68ff4b9124835089c1c8470e8dec3b7d/20/Dockerfile)
+-	[`20.2.3-slim`, `20.2-slim`, `20-slim`, `slim` (*20/slim/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/3945f4cf68ff4b9124835089c1c8470e8dec3b7d/20/slim/Dockerfile)
+-	[`20.2.3-alpine`, `20.2-alpine`, `20-alpine`, `alpine` (*20/alpine/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/6739afaa4743595511734bd132aa8abdbf307c8c/20/alpine/Dockerfile)
+-	[`19.3.6.5`, `19.3.6`, `19.3`, `19` (*19/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/f6606389b995d24dce8933e4ca4d6d46fce8612b/19/Dockerfile)
 -	[`19.3.6.5-slim`, `19.3.6-slim`, `19.3-slim`, `19-slim` (*19/slim/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/6e2088d493e6f50b82c0e416c72a2dd914e84fd2/19/slim/Dockerfile)
--	[`18.3.4.7`, `18.3.4`, `18.3`, `18` (*18/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/572df91d94de857de661df30f33508e472c300a9/18/Dockerfile)
+-	[`18.3.4.7`, `18.3.4`, `18.3`, `18` (*18/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/f6606389b995d24dce8933e4ca4d6d46fce8612b/18/Dockerfile)
 -	[`18.3.4.7-slim`, `18.3.4-slim`, `18.3-slim`, `18-slim` (*18/slim/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/572df91d94de857de661df30f33508e472c300a9/18/slim/Dockerfile)
 -	[`17.5.6.9`, `17.5.6`, `17.5`, `17` (*17/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/a75738f344af1f177f828cbaa6e8a44d15749d5a/17/Dockerfile)
 -	[`17.5.6.9-slim`, `17.5.6-slim`, `17.5-slim`, `17-slim` (*17/slim/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/a75738f344af1f177f828cbaa6e8a44d15749d5a/17/slim/Dockerfile)
