@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.13.8`, `mainline`, `1`, `1.13`, `latest` (*mainline/stretch/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/f8fad321cf58d5cbcafa3d9fa15314b8a77b5e65/mainline/stretch/Dockerfile)
--	[`1.13.8-perl`, `mainline-perl`, `1-perl`, `1.13-perl`, `perl` (*mainline/stretch-perl/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/f8fad321cf58d5cbcafa3d9fa15314b8a77b5e65/mainline/stretch-perl/Dockerfile)
--	[`1.13.8-alpine`, `mainline-alpine`, `1-alpine`, `1.13-alpine`, `alpine` (*mainline/alpine/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/f8fad321cf58d5cbcafa3d9fa15314b8a77b5e65/mainline/alpine/Dockerfile)
--	[`1.13.8-alpine-perl`, `mainline-alpine-perl`, `1-alpine-perl`, `1.13-alpine-perl`, `alpine-perl` (*mainline/alpine-perl/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/f8fad321cf58d5cbcafa3d9fa15314b8a77b5e65/mainline/alpine-perl/Dockerfile)
+-	[`1.13.9`, `mainline`, `1`, `1.13`, `latest` (*mainline/stretch/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/dbd053d52727bc8db0fec704caa22b8e0d5f6c84/mainline/stretch/Dockerfile)
+-	[`1.13.9-perl`, `mainline-perl`, `1-perl`, `1.13-perl`, `perl` (*mainline/stretch-perl/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/dbd053d52727bc8db0fec704caa22b8e0d5f6c84/mainline/stretch-perl/Dockerfile)
+-	[`1.13.9-alpine`, `mainline-alpine`, `1-alpine`, `1.13-alpine`, `alpine` (*mainline/alpine/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/dbd053d52727bc8db0fec704caa22b8e0d5f6c84/mainline/alpine/Dockerfile)
+-	[`1.13.9-alpine-perl`, `mainline-alpine-perl`, `1-alpine-perl`, `1.13-alpine-perl`, `alpine-perl` (*mainline/alpine-perl/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/dbd053d52727bc8db0fec704caa22b8e0d5f6c84/mainline/alpine-perl/Dockerfile)
 -	[`1.12.2`, `stable`, `1.12` (*stable/stretch/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/72ac2226580ee73c170163dbe6e4436373b6ece9/stable/stretch/Dockerfile)
 -	[`1.12.2-perl`, `stable-perl`, `1.12-perl` (*stable/stretch-perl/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/72ac2226580ee73c170163dbe6e4436373b6ece9/stable/stretch-perl/Dockerfile)
 -	[`1.12.2-alpine`, `stable-alpine`, `1.12-alpine` (*stable/alpine/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/72ac2226580ee73c170163dbe6e4436373b6ece9/stable/alpine/Dockerfile)
@@ -37,7 +37,7 @@ WARNING:
 	[the NGINX Docker Maintainers](https://github.com/nginxinc/docker-nginx)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/nginx/), [`arm32v7`](https://hub.docker.com/r/arm32v7/nginx/), [`arm64v8`](https://hub.docker.com/r/arm64v8/nginx/), [`i386`](https://hub.docker.com/r/i386/nginx/), [`ppc64le`](https://hub.docker.com/r/ppc64le/nginx/), [`s390x`](https://hub.docker.com/r/s390x/nginx/)
+	[`amd64`](https://hub.docker.com/r/amd64/nginx/), [`arm32v6`](https://hub.docker.com/r/arm32v6/nginx/), [`arm32v7`](https://hub.docker.com/r/arm32v7/nginx/), [`arm64v8`](https://hub.docker.com/r/arm64v8/nginx/), [`i386`](https://hub.docker.com/r/i386/nginx/), [`ppc64le`](https://hub.docker.com/r/ppc64le/nginx/), [`s390x`](https://hub.docker.com/r/s390x/nginx/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/nginx/` directory](https://github.com/docker-library/repo-info/blob/master/repos/nginx) ([history](https://github.com/docker-library/repo-info/commits/master/repos/nginx))  

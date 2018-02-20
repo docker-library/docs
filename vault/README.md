@@ -16,7 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`0.9.3`, `latest` (*0.X/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/00d387db577abc178e2b0740ed11955d1e0aa860/0.X/Dockerfile)
+-	[`0.9.4`, `latest` (*0.X/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/7692491ba27502f7c05c89aa97766ce9e0114044/0.X/Dockerfile)
 
 # Quick reference
 
@@ -30,7 +30,7 @@ WARNING:
 	[HashiCorp](https://github.com/hashicorp/docker-vault)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/vault/)
+	[`amd64`](https://hub.docker.com/r/amd64/vault/), [`arm32v6`](https://hub.docker.com/r/arm32v6/vault/), [`arm64v8`](https://hub.docker.com/r/arm64v8/vault/), [`i386`](https://hub.docker.com/r/i386/vault/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/vault/` directory](https://github.com/docker-library/repo-info/blob/master/repos/vault) ([history](https://github.com/docker-library/repo-info/commits/master/repos/vault))  
