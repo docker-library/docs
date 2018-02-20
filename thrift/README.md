@@ -17,7 +17,8 @@ WARNING:
 # Supported tags and respective `Dockerfile` links
 
 -	[`0.9`, `0.9.3` (*0.9/Dockerfile*)](https://github.com/ahawkins/docker-thrift/blob/d322572f7dd6ea468a14a4d832fbec26f152c71e/0.9/Dockerfile)
--	[`0.10`, `0.10.0`, `latest` (*0.10/Dockerfile*)](https://github.com/ahawkins/docker-thrift/blob/e1f81dfe3e8fac5588e12d2b880166d1743dbecd/0.10/Dockerfile)
+-	[`0.10`, `0.10.0` (*0.10/Dockerfile*)](https://github.com/ahawkins/docker-thrift/blob/e1f81dfe3e8fac5588e12d2b880166d1743dbecd/0.10/Dockerfile)
+-	[`0.11`, `0.11.0`, `latest` (*0.11/Dockerfile*)](https://github.com/ahawkins/docker-thrift/blob/00e197d889426695446baec4e034b5ddbb15bcb3/0.11/Dockerfile)
 
 # Quick reference
 
