@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2017.12.0.20171212.2`, `2017.12`, `2` (*Dockerfile*)](https://github.com/aws/amazon-linux-docker-images/blob/10641478ad16c6f44b691dc41acfc221c7a7594f/Dockerfile)
--	[`2017.12.0.20171212.2-with-sources`, `2017.12-with-sources`, `2-with-sources` (*Dockerfile*)](https://github.com/aws/amazon-linux-docker-images/blob/25ee203e5625961ed6c0b8baad3e7b8bda829b52/Dockerfile)
--	[`2017.09.0.20170930`, `2017.09`, `1`, `latest` (*Dockerfile*)](https://github.com/aws/amazon-linux-docker-images/blob/eb819d6b91ada2f0304d2a24ab9ce2ced0f166ea/Dockerfile)
--	[`2017.09.0.20170930-with-sources`, `2017.09-with-sources`, `1-with-sources`, `with-sources` (*Dockerfile*)](https://github.com/aws/amazon-linux-docker-images/blob/f13ce885778e5cf48275986b7cf8c321a60b6693/Dockerfile)
+-	[`2017.12.0.20180222`, `2017.12`, `2` (*Dockerfile*)](https://github.com/aws/amazon-linux-docker-images/blob/819c2dd76fc67389f64824387f2524dc223d7fae/Dockerfile)
+-	[`2017.12.0.20180222-with-sources`, `2017.12-with-sources`, `2-with-sources` (*Dockerfile*)](https://github.com/aws/amazon-linux-docker-images/blob/4c23db56e1dcf948028604ee96a83d792fad246f/Dockerfile)
+-	[`2017.09.1.20180222`, `2017.09`, `1`, `latest` (*Dockerfile*)](https://github.com/aws/amazon-linux-docker-images/blob/737251bbaf7757c87fd5de4bb313fbdaba0c8337/Dockerfile)
+-	[`2017.09.1.20180222-with-sources`, `2017.09-with-sources`, `1-with-sources`, `with-sources` (*Dockerfile*)](https://github.com/aws/amazon-linux-docker-images/blob/023d9b47f82200560123485480a0dfe9f376158f/Dockerfile)
 -	[`2017.03.1.20170812`, `2017.03` (*Dockerfile*)](https://github.com/aws/amazon-linux-docker-images/blob/577139a6f2571e3adb59cfd34d61bc07e2fba238/Dockerfile)
 -	[`2017.03.1.20170812-with-sources`, `2017.03-with-sources` (*Dockerfile*)](https://github.com/aws/amazon-linux-docker-images/blob/47f91aec4a189232a7feb1ec544a3a6af0347113/Dockerfile)
 -	[`2016.09.1.20161221`, `2016.09` (*Dockerfile*)](https://github.com/aws/amazon-linux-docker-images/blob/e1b56e68ebd2b274c64e0a0a18ae0a9a8122822d/Dockerfile)
