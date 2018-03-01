@@ -18,15 +18,15 @@ WARNING:
 
 ## Simple Tags
 
--	[`1.0.4-linux`, `linux` (*amd64/Dockerfile*)](https://github.com/nats-io/nats-docker/blob/4e0129ffe9d12beec981238c6cb54f5faa0fbe57/amd64/Dockerfile)
--	[`1.0.4-nanoserver`, `nanoserver` (*windows/nanoserver/Dockerfile*)](https://github.com/nats-io/nats-docker/blob/4e0129ffe9d12beec981238c6cb54f5faa0fbe57/windows/nanoserver/Dockerfile)
--	[`1.0.4-windowsservercore`, `windowsservercore` (*windows/windowsservercore/Dockerfile*)](https://github.com/nats-io/nats-docker/blob/4e0129ffe9d12beec981238c6cb54f5faa0fbe57/windows/windowsservercore/Dockerfile)
+-	[`1.0.6-linux`, `linux` (*amd64/Dockerfile*)](https://github.com/nats-io/nats-docker/blob/ca1b570199ae0bb6434e600b6ee4c768e5f81f31/amd64/Dockerfile)
+-	[`1.0.6-nanoserver`, `nanoserver` (*windows/nanoserver/Dockerfile*)](https://github.com/nats-io/nats-docker/blob/ca1b570199ae0bb6434e600b6ee4c768e5f81f31/windows/nanoserver/Dockerfile)
+-	[`1.0.6-windowsservercore`, `windowsservercore` (*windows/windowsservercore/Dockerfile*)](https://github.com/nats-io/nats-docker/blob/ca1b570199ae0bb6434e600b6ee4c768e5f81f31/windows/windowsservercore/Dockerfile)
 
 ## Shared Tags
 
--	`1.0.4`, `latest`:
-	-	[`1.0.4-linux` (*amd64/Dockerfile*)](https://github.com/nats-io/nats-docker/blob/4e0129ffe9d12beec981238c6cb54f5faa0fbe57/amd64/Dockerfile)
-	-	[`1.0.4-nanoserver` (*windows/nanoserver/Dockerfile*)](https://github.com/nats-io/nats-docker/blob/4e0129ffe9d12beec981238c6cb54f5faa0fbe57/windows/nanoserver/Dockerfile)
+-	`1.0.6`, `latest`:
+	-	[`1.0.6-linux` (*amd64/Dockerfile*)](https://github.com/nats-io/nats-docker/blob/ca1b570199ae0bb6434e600b6ee4c768e5f81f31/amd64/Dockerfile)
+	-	[`1.0.6-nanoserver` (*windows/nanoserver/Dockerfile*)](https://github.com/nats-io/nats-docker/blob/ca1b570199ae0bb6434e600b6ee4c768e5f81f31/windows/nanoserver/Dockerfile)
 
 # Quick reference
 
@@ -40,7 +40,7 @@ WARNING:
 	[the NATS Project](https://github.com/nats-io/nats-docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/nats/), [`arm32v7`](https://hub.docker.com/r/arm32v7/nats/), [`arm64v8`](https://hub.docker.com/r/arm64v8/nats/), [`windows-amd64`](https://hub.docker.com/r/winamd64/nats/)
+	[`amd64`](https://hub.docker.com/r/amd64/nats/), [`arm32v6`](https://hub.docker.com/r/arm32v6/nats/), [`arm32v7`](https://hub.docker.com/r/arm32v7/nats/), [`arm64v8`](https://hub.docker.com/r/arm64v8/nats/), [`windows-amd64`](https://hub.docker.com/r/winamd64/nats/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/nats/` directory](https://github.com/docker-library/repo-info/blob/master/repos/nats) ([history](https://github.com/docker-library/repo-info/commits/master/repos/nats))  
@@ -73,7 +73,8 @@ WARNING:
 # use -p or -P as needed.
 
 $ docker run -d --name nats-main nats
-[INF] Starting nats-server version 1.0.4
+[INF] Starting nats-server version 1.0.6
+[INF] Git commit [02dd205]
 [INF] Starting http monitor on 0.0.0.0:8222
 [INF] Listening for client connections on 0.0.0.0:4222
 [INF] Server is ready
@@ -89,17 +90,18 @@ $ docker run -d --name=nats-2 --link nats-main nats -c gnatsd.conf --routes=nats
 
 # If you want to verify the routes are connected, try this instead:
 $ docker run -d --name=nats-2 --link nats-main nats -c gnatsd.conf --routes=nats-route://ruser:T0pS3cr3t@nats-main:6222 -DV
-[INF] Starting nats-server version 1.0.4
-[DBG] Go build version go1.8.3
+[INF] Starting nats-server version 1.0.6
+[DBG] Go build version go1.9.4
+[INF] Git commit [02dd205]
 [INF] Starting http monitor on 0.0.0.0:8222
 [INF] Listening for client connections on 0.0.0.0:4222
-[DBG] Server id is BEfslG6VOmnIbMQcXTVaVJ
+[DBG] Server id is TH1MRk9Mug4fgIDdcXIo6R
 [INF] Server is ready
 [INF] Listening for route connections on 0.0.0.0:6222
 [DBG] Trying to connect to route on nats-main:6222
 [DBG] 172.17.0.2:6222 - rid:1 - Route connection created
 [DBG] 172.17.0.2:6222 - rid:1 - Route connect msg sent
-[DBG] 172.17.0.2:6222 - rid:1 - Registering remote route "vay01L4cPxqy75GIDcqKq7"
+[DBG] 172.17.0.2:6222 - rid:1 - Registering remote route "kxi2il81mIY4TsgwdGl9Fb"
 [DBG] 172.17.0.2:6222 - rid:1 - Route sent local subscriptions
 ```
 
@@ -146,6 +148,7 @@ Server Options:
     -ms,--https_port <port>          Use port for https monitoring
     -c, --config <file>              Configuration file
     -sl,--signal <signal>[=<pid>]    Send signal to gnatsd process (stop, quit, reopen, reload)
+        --client_advertise <string>  Client URL to advertise to other servers
 
 Logging Options:
     -l, --log <file>                 File to redirect log output
@@ -172,6 +175,7 @@ Cluster Options:
         --routes <rurl-1, rurl-2>    Routes to solicit and connect
         --cluster <cluster-url>      Cluster URL for solicited routes
         --no_advertise <bool>        Advertise known cluster IPs to clients
+        --cluster_advertise <string> Cluster URL to advertise to other servers
         --connect_retries <number>   For implicit routes, number of connect retries
 
 

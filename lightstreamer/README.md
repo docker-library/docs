@@ -17,7 +17,9 @@ WARNING:
 # Supported tags and respective `Dockerfile` links
 
 -	[`6.0.3`, `6.0` (*6.0/Dockerfile*)](https://github.com/Lightstreamer/Docker/blob/ca600ed95f9fa8ec632ef2ad0526c15d917a52b7/6.0/Dockerfile)
--	[`6.1.0`, `6.1`, `6`, `latest` (*6.1/Dockerfile*)](https://github.com/Lightstreamer/Docker/blob/22d6045bab9625ea9f8b3e1e53c4c34383335ed3/6.1/Dockerfile)
+-	[`6.1.0`, `6.1`, `6` (*6.1/Dockerfile*)](https://github.com/Lightstreamer/Docker/blob/22d6045bab9625ea9f8b3e1e53c4c34383335ed3/6.1/Dockerfile)
+-	[`7.0.0-jre8`, `7.0-jre8`, `7.0.0`, `7.0`, `7`, `latest` (*7.0/jre8/Dockerfile*)](https://github.com/Lightstreamer/Docker/blob/141622b57c5697b2a00a71274a3c1c27e0708e50/7.0/jre8/Dockerfile)
+-	[`7.0.0-jre8-alpine`, `7.0-jre8-alpine`, `7.0.0-alpine`, `7.0-alpine` (*7.0/jre8-alpine/Dockerfile*)](https://github.com/Lightstreamer/Docker/blob/141622b57c5697b2a00a71274a3c1c27e0708e50/7.0/jre8-alpine/Dockerfile)
 
 # Quick reference
 
@@ -172,6 +174,22 @@ $ docker run --name ls-server -v /path/to/custom/pages:/lightstreamer/pages -d -
 ```
 
 where `/path/to/custom/pages` is the path in your host machine containing the replacing web content files.
+
+# Image Variants
+
+The `lightstreamer` images come in many flavors, each designed for a specific use case.
+
+## `lightstreamer:<version>`
+
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+## `lightstreamer:alpine`
+
+This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+
+This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+
+To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 # License
 
