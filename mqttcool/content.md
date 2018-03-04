@@ -20,8 +20,6 @@ This will map port 8080 inside the container to port 80 on local host. Then poin
 
 Furthermore, you can be redirected to the source code examples available on [GitHub](http://github.com/MQTTCool).
 
-* Launch the Monitoring Dashboard,
-
 ## Custom settings
 
 It is possible to customize each aspect of the MQTT.Cool instance running into the container. For example, a specific configuration file may be supplied as follows:
