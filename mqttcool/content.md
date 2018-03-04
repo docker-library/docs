@@ -64,7 +64,6 @@ $ docker run --name mc-server -d -p 80:8080 my-mqttcool
 
 To get more detailed information on how to configure the MQTT.Cool server, please see the inline documentation in the `mqtt_master_connector_conf.xml` and `mqtt_master_connector_log_conf.xml` files you can find under the `mqtt_connectors` folder of the installation directory.
 
-
 ## Deployment of web server pages
 
 There might be some circumstances where you would like to provide custom pages for the internal web server of the MQTT.Cool server. Even in this case, it is possible to customize the container by employing the same techniques as above.
