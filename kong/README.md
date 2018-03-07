@@ -21,7 +21,7 @@ WARNING:
 -	[`0.12-alpine`, `0.12.2-alpine` (*alpine/Dockerfile*)](https://github.com/Kong/docker-kong/blob/40f42075c1078fd5997ddf0aa7ae5dd31cbc11dd/alpine/Dockerfile)
 -	[`0.12-centos`, `0.12.2-centos`, `0.12`, `0.12.2`, `latest` (*centos/Dockerfile*)](https://github.com/Kong/docker-kong/blob/40f42075c1078fd5997ddf0aa7ae5dd31cbc11dd/centos/Dockerfile)
 -	[`0.11-alpine`, `0.11.2-alpine` (*alpine/Dockerfile*)](https://github.com/Kong/docker-kong/blob/2ed0fad88ed81623ea4afb2111033a9d87f3c03c/alpine/Dockerfile)
--	[`0.11`, `0.11.2` (*centos/Dockerfile*)](https://github.com/Kong/docker-kong/blob/2ed0fad88ed81623ea4afb2111033a9d87f3c03c/centos/Dockerfile)
+-	[`0.11`, `0.11.2` (*centos/Dockerfile*)](https://github.com/Kong/docker-kong/blob/aa9ab06921a36079eb362229c9241ef9b3cf894e/centos/Dockerfile)
 
 # Quick reference
 
