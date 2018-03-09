@@ -47,7 +47,7 @@ $ docker run -d %%IMAGE%% --list-config
 Configuration such as parameters and additional modules may also be passed in via the command line. For example:
 
 ```console
-$ docker run -d %%IMAGE%% --modules=jmx jetty.threadPool.maxThreads=500
+$ docker run -d %%IMAGE%% --module=jmx jetty.threadPool.maxThreads=500
 ```
 
 To update the server configuration in a derived Docker image, the `Dockerfile` may enable additional modules with `RUN` commands like:
