@@ -16,9 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.6.2`, `1.6`, `latest` (*1.6/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/299891c2b3431205113db87c7cb970a529a4e3dc/1.6/Dockerfile)
--	[`1.6.2-slim`, `1.6-slim`, `slim` (*1.6/slim/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/299891c2b3431205113db87c7cb970a529a4e3dc/1.6/slim/Dockerfile)
--	[`1.6.2-alpine`, `1.6-alpine`, `alpine` (*1.6/alpine/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/299891c2b3431205113db87c7cb970a529a4e3dc/1.6/alpine/Dockerfile)
+-	[`1.6.3`, `1.6`, `latest` (*1.6/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/bf09944c0d0a573f3dde01d864e25db80b3236a2/1.6/Dockerfile)
+-	[`1.6.3-slim`, `1.6-slim`, `slim` (*1.6/slim/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/bf09944c0d0a573f3dde01d864e25db80b3236a2/1.6/slim/Dockerfile)
+-	[`1.6.3-alpine`, `1.6-alpine`, `alpine` (*1.6/alpine/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/bf09944c0d0a573f3dde01d864e25db80b3236a2/1.6/alpine/Dockerfile)
 -	[`1.5.3`, `1.5` (*1.5/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/f2528c0158d465f96f311faa19aff3cffb4e7f25/1.5/Dockerfile)
 -	[`1.5.3-slim`, `1.5-slim` (*1.5/slim/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/f2528c0158d465f96f311faa19aff3cffb4e7f25/1.5/slim/Dockerfile)
 -	[`1.5.3-alpine`, `1.5-alpine` (*1.5/alpine/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/f2528c0158d465f96f311faa19aff3cffb4e7f25/1.5/alpine/Dockerfile)
@@ -26,8 +26,6 @@ WARNING:
 -	[`1.4.5-slim`, `1.4-slim` (*1.4/slim/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/8f1888ae05506b9ad12e1b97f084a15e7588f442/1.4/slim/Dockerfile)
 -	[`1.3.4`, `1.3` (*1.3/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/d8d656d7c0dc9dd2956a22276c93cb97568ea6d4/1.3/Dockerfile)
 -	[`1.3.4-slim`, `1.3-slim` (*1.3/slim/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/d8d656d7c0dc9dd2956a22276c93cb97568ea6d4/1.3/slim/Dockerfile)
--	[`1.2.6`, `1.2` (*1.2/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/77b9a3da43ce035327ae29083e567191d60a6ac8/1.2/Dockerfile)
--	[`1.2.6-slim`, `1.2-slim` (*1.2/slim/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/77b9a3da43ce035327ae29083e567191d60a6ac8/1.2/slim/Dockerfile)
 
 # Quick reference
 
