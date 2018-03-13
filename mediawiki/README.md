@@ -26,7 +26,7 @@ WARNING:
 	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
 -	**Where to file issues**:  
-	[https://github.com/wikimedia/mediawiki-docker/issues](https://github.com/wikimedia/mediawiki-docker/issues)
+	[https://phabricator.wikimedia.org/project/view/3094/](https://phabricator.wikimedia.org/project/view/3094/)
 
 -	**Maintained by**:  
 	[Wikimedia Foundation & Docker Community](https://github.com/wikimedia/mediawiki-docker)
