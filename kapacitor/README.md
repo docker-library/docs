@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.3`, `1.3.3` (*kapacitor/1.3/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/af49c68bbb555d67be4470104c35e16f42f3e0fb/kapacitor/1.3/Dockerfile)
--	[`1.3-alpine`, `1.3.3-alpine` (*kapacitor/1.3/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/af49c68bbb555d67be4470104c35e16f42f3e0fb/kapacitor/1.3/alpine/Dockerfile)
--	[`1.4`, `1.4.0`, `latest` (*kapacitor/1.4/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/af49c68bbb555d67be4470104c35e16f42f3e0fb/kapacitor/1.4/Dockerfile)
--	[`1.4-alpine`, `1.4.0-alpine`, `alpine` (*kapacitor/1.4/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/af49c68bbb555d67be4470104c35e16f42f3e0fb/kapacitor/1.4/alpine/Dockerfile)
+-	[`1.3`, `1.3.3` (*kapacitor/1.3/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/14a13d25665e9991d6f7aa6a3927c3c6bf897805/kapacitor/1.3/Dockerfile)
+-	[`1.3-alpine`, `1.3.3-alpine` (*kapacitor/1.3/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/14a13d25665e9991d6f7aa6a3927c3c6bf897805/kapacitor/1.3/alpine/Dockerfile)
+-	[`1.4`, `1.4.1`, `latest` (*kapacitor/1.4/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/14a13d25665e9991d6f7aa6a3927c3c6bf897805/kapacitor/1.4/Dockerfile)
+-	[`1.4-alpine`, `1.4.1-alpine`, `alpine` (*kapacitor/1.4/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/14a13d25665e9991d6f7aa6a3927c3c6bf897805/kapacitor/1.4/alpine/Dockerfile)
 
 # Quick reference
 

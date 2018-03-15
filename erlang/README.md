@@ -16,9 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`20.2.4`, `20.2`, `20`, `latest` (*20/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/83a747afba739592bb4d3f8a01b5d535c1f2c8dd/20/Dockerfile)
--	[`20.2.4-slim`, `20.2-slim`, `20-slim`, `slim` (*20/slim/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/83a747afba739592bb4d3f8a01b5d535c1f2c8dd/20/slim/Dockerfile)
--	[`20.2.4-alpine`, `20.2-alpine`, `20-alpine`, `alpine` (*20/alpine/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/83a747afba739592bb4d3f8a01b5d535c1f2c8dd/20/alpine/Dockerfile)
+-	[`20.3`, `20`, `latest` (*20/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/c8b13d360cdd98070abc9041903ceefb94955963/20/Dockerfile)
+-	[`20.3-slim`, `20-slim`, `slim` (*20/slim/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/c8b13d360cdd98070abc9041903ceefb94955963/20/slim/Dockerfile)
+-	[`20.3-alpine`, `20-alpine`, `alpine` (*20/alpine/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/c8b13d360cdd98070abc9041903ceefb94955963/20/alpine/Dockerfile)
 -	[`19.3.6.6`, `19.3.6`, `19.3`, `19` (*19/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/bede8199e3263e936687542a0492774b3512296a/19/Dockerfile)
 -	[`19.3.6.6-slim`, `19.3.6-slim`, `19.3-slim`, `19-slim` (*19/slim/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/bede8199e3263e936687542a0492774b3512296a/19/slim/Dockerfile)
 -	[`18.3.4.8`, `18.3.4`, `18.3`, `18` (*18/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/354f85db09d403e3d970d0731b811c774086ef26/18/Dockerfile)
