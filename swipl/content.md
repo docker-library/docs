@@ -31,16 +31,16 @@ This will extract and copy your source files to the image and then set the defau
 ## Differences from the SWI-Prolog source distribution
 
 ### Excluded packages
-- jpl - interop with Java is excluded, as Java isn't included on the image
-- xpce - XPCE is excluded, as it's used only for the GUI platform 
+-	jpl - interop with Java is excluded, as Java isn't included on the image
+-	xpce - XPCE is excluded, as it's used only for the GUI platform 
 
 ### Included addins
 This image includes several SWI-Prolog addins that are commonly used, complex to build, and require little additional space.
 
-- space
-- prosqlite
-- rocksdb*
-- hdt*
-- rserve_client
+-	space
+-	prosqlite
+-	rocksdb*
+-	hdt*
+-	rserve_client
 
-_* excluded from ARM architecture images due to platform constraints_
+**	excluded from ARM architecture images due to platform constraints*
