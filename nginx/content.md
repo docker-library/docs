@@ -37,7 +37,7 @@ Then you can hit `http://localhost:8080` or `http://host-ip:8080` in your browse
 
 ## Included modules
 
-This build does not include any external modules such as Geo, Perl, or Lua.
+This build includes the Geo and Perl modules, but not third party modules such as Lua.
 
 ## Complex configuration
 
