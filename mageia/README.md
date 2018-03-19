@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6`, `latest` (*6/Dockerfile*)](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/d94167fc4cf0dcca9dfed717de5a38a505349f08/6/Dockerfile)
--	[`5`, `5.1` (*5/Dockerfile*)](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/d94167fc4cf0dcca9dfed717de5a38a505349f08/5/Dockerfile)
+-	[`6`, `latest` (*6/Dockerfile*)](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/6230a3fc5dd30e5419a391f4613eb3ca5d81f46a/6/Dockerfile)
+-	[`5`, `5.1` (*5/Dockerfile*)](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/6230a3fc5dd30e5419a391f4613eb3ca5d81f46a/5/Dockerfile)
 
 # Quick reference
 
