@@ -22,8 +22,8 @@ WARNING:
 -	[`1.6.14-alpine`, `1.6-alpine` (*1.6/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/fbf8924b471f678bbc7a4866a2beb0db37d7e9d0/1.6/alpine/Dockerfile)
 -	[`1.7.10`, `1.7` (*1.7/Dockerfile*)](https://github.com/docker-library/haproxy/blob/7c772b810df3afe6884d0fb8b83720f992c3951b/1.7/Dockerfile)
 -	[`1.7.10-alpine`, `1.7-alpine` (*1.7/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/fbf8924b471f678bbc7a4866a2beb0db37d7e9d0/1.7/alpine/Dockerfile)
--	[`1.8.4`, `1.8`, `1`, `latest` (*1.8/Dockerfile*)](https://github.com/docker-library/haproxy/blob/c0c933487b09b205ad9a2a33a70987d86fa12c23/1.8/Dockerfile)
--	[`1.8.4-alpine`, `1.8-alpine`, `1-alpine`, `alpine` (*1.8/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/c0c933487b09b205ad9a2a33a70987d86fa12c23/1.8/alpine/Dockerfile)
+-	[`1.8.5`, `1.8`, `1`, `latest` (*1.8/Dockerfile*)](https://github.com/docker-library/haproxy/blob/4123afaeaca50fe88317b6f4313e309700318b41/1.8/Dockerfile)
+-	[`1.8.5-alpine`, `1.8-alpine`, `1-alpine`, `alpine` (*1.8/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/4123afaeaca50fe88317b6f4313e309700318b41/1.8/alpine/Dockerfile)
 
 # Quick reference
 
