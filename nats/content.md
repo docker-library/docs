@@ -15,8 +15,8 @@
 # use -p or -P as needed.
 
 $ docker run -d --name nats-main %%IMAGE%%
-[INF] Starting nats-server version 1.0.6
-[INF] Git commit [02dd205]
+[INF] Starting nats-server version 1.1.0
+[INF] Git commit [add6d79]
 [INF] Starting http monitor on 0.0.0.0:8222
 [INF] Listening for client connections on 0.0.0.0:4222
 [INF] Server is ready
@@ -32,9 +32,9 @@ $ docker run -d --name=nats-2 --link nats-main %%IMAGE%% -c gnatsd.conf --routes
 
 # If you want to verify the routes are connected, try this instead:
 $ docker run -d --name=nats-2 --link nats-main %%IMAGE%% -c gnatsd.conf --routes=nats-route://ruser:T0pS3cr3t@nats-main:6222 -DV
-[INF] Starting nats-server version 1.0.6
+[INF] Starting nats-server version 1.1.0
 [DBG] Go build version go1.9.4
-[INF] Git commit [02dd205]
+[INF] Git commit [add6d79]
 [INF] Starting http monitor on 0.0.0.0:8222
 [INF] Listening for client connections on 0.0.0.0:4222
 [DBG] Server id is TH1MRk9Mug4fgIDdcXIo6R
