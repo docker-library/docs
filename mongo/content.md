@@ -82,7 +82,7 @@ When you start the `%%IMAGE%%` image, you can adjust the configuration of the Mo
 
 ### `MONGO_INITDB_ROOT_USERNAME`, `MONGO_INITDB_ROOT_PASSWORD`
 
-These variables are optional, used in conjunction to create a new user and to set that user's password. This user will be created in the `admin` authentication database and given the role of `root`. superuser permissions (see above) for the database specified by the `MYSQL_DATABASE` variable. Both variables are required for a user to be created. If both are present then Mongo will start with authentication enabled: `mongod --auth`. Authentication in MongoDB is fairly complex, so more complex user setup is explicitly left to the user via `/docker-entrypoint-initdb.d/` (see *Initializing a fresh instance* below).
+These variables are optional, used in conjunction to create a new user and to set that user's password. This user will be created in the `admin` authentication database and given the role of `root`. Both variables are required for a user to be created. If both are present then Mongo will start with authentication enabled: `mongod --auth`. Authentication in MongoDB is fairly complex, so more complex user setup is explicitly left to the user via `/docker-entrypoint-initdb.d/` (see *Initializing a fresh instance* below).
 
 Do note that MongoDB does not require authentication by default, but it can be configured to do so. For more details about the functionality described here, please see the sections in the official documentation which describe [authentication](https://docs.mongodb.com/manual/core/authentication/) and [authorization](https://docs.mongodb.com/manual/core/authorization/) in more detail.
 
