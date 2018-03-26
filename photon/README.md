@@ -16,7 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.0`, `latest` (*1.0/Dockerfile*)](https://github.com/vmware/photon-docker-image/blob/39c3c62cd649b1d64178b24cd23d9196461dc818/1.0/Dockerfile)
+-	[`2.0-20180227`, `2.0`, `latest` (*docker/Dockerfile*)](https://github.com/vmware/photon-docker-image/blob/d63ad9aa1564fe842a65f98f538ab97af1839d92/docker/Dockerfile)
+-	[`1.0-20180226`, `1.0` (*docker/Dockerfile*)](https://github.com/vmware/photon-docker-image/blob/cb3c0d51e18aa36d1aa26e4c4beec563a83af8d8/docker/Dockerfile)
+-	[`1.0GA` (*docker/Dockerfile*)](https://github.com/vmware/photon-docker-image/blob/2043d10673cdb19ef656cbe0686e62345f4517b2/docker/Dockerfile)
 
 # Quick reference
 
@@ -50,7 +52,7 @@ WARNING:
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/de9a58372c9e1e58ccb08186ab6ebed278b86521/photon/logo.png)
 
-Photon OS is a technology preview of a minimal Linux container host. It is designed to have a small footprint and boot extremely quickly on VMware platforms. Photon OS is intended to invite collaboration around running containerized applications in a virtualized environment.
+Photon OS is an open source minimal Linux container host optimized for cloud-native applications, cloud platforms, and VMware infrastructure. It is designed to have a small footprint and boot extremely quickly on VMware platforms. Photon OS is intended to invite collaboration around running containerized applications in a virtualized environment.
 
 Photon contains `tdnf`, a new, open-source, yum-compatible package manager that will help make the system as small as possible, but preserve the robust yum package management capabilities.
 
@@ -58,7 +60,7 @@ See the [FAQ](http://vmware.github.io/photon/assets/files/photon_faqs.pdf) for m
 
 ## How to use these images
 
-Photon OS images are intended for use in the **FROM** field of an application's `Dockerfile`. For example, to use VMware Photon 1.0RC as the base of an image, specify `FROM photon:1.0RC`.
+Photon OS images are intended for use in the **FROM** field of an application's `Dockerfile`. For example, to use VMware Photon 1.0GA as the base of an image, specify `FROM photon:1.0GA`.
 
 ## Support
 
