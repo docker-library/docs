@@ -70,8 +70,7 @@ The Nuxeo platform is accesible at http://${DOCKER_HOST}:8080/ and default User 
 ## Start a nuxeo with some additional packages
 
 ```console
-$ docker run --name mynuxeo -p 8080:8080 -e NUXEO_PACKAGES="nuxeo-web-mobile nuxeo-drive nuxeo-diff nuxeo-spreadsheet nuxeo-dam nuxeo-template-rendering nuxeo-template-rendering-samples nuxeo-showcase-content"
-nuxeo
+$ docker run --name mynuxeo --rm -ti -p 8080:8080 -e NUXEO_PACKAGES="nuxeo-web-ui nuxeo-dam nuxeo-drive nuxeo-showcase-content nuxeo-template-rendering nuxeo-template-rendering-samples nuxeo-spreadsheet" nuxeo
 ```
 
 This will install the same image as above but comes with some demo Nuxeo packages to demonstrate its various usage (DAM, DM, search etc...)
