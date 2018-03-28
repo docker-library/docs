@@ -209,7 +209,7 @@ You can create these secrets and configs with the following:
 -	`echo ${MY_XWIKI_USER:-xwiki} | docker secret create xwiki-db-username -`
 -	`echo $(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 16 | head -n 1) | docker secret create xwiki-db-password -`
 -	`echo $(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 16 | head -n 1) | docker secret create xwiki-db-root-password -`
-- 	`docker config create xwiki-mysql-config /path/to/mysql/xwiki.cnf`
+-	`docker config create xwiki-mysql-config /path/to/mysql/xwiki.cnf`
 
 To deploy this example, save the following YAML as `xwiki-stack.yaml`, then run:
 
