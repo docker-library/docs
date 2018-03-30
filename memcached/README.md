@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.5.6`, `1.5`, `1`, `latest` (*debian/Dockerfile*)](https://github.com/docker-library/memcached/blob/a7c39f381206b994072a48b590f5b3fc7a2e7ca6/debian/Dockerfile)
--	[`1.5.6-alpine`, `1.5-alpine`, `1-alpine`, `alpine` (*alpine/Dockerfile*)](https://github.com/docker-library/memcached/blob/a7c39f381206b994072a48b590f5b3fc7a2e7ca6/alpine/Dockerfile)
+-	[`1.5.7`, `1.5`, `1`, `latest` (*debian/Dockerfile*)](https://github.com/docker-library/memcached/blob/d738ff7a7867423c9232adc7d9b418ce0f7597f0/debian/Dockerfile)
+-	[`1.5.7-alpine`, `1.5-alpine`, `1-alpine`, `alpine` (*alpine/Dockerfile*)](https://github.com/docker-library/memcached/blob/d738ff7a7867423c9232adc7d9b418ce0f7597f0/alpine/Dockerfile)
 
 # Quick reference
 
