@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.24.1-stretch`, `1-stretch`, `1.24-stretch`, `stretch`, `1.24.1`, `1`, `1.24`, `latest` (*1.24.1/stretch/Dockerfile*)](https://github.com/rust-lang-nursery/docker-rust/blob/d35c26c4749ed882be0118eb725eeb3a91e0968b/1.24.1/stretch/Dockerfile)
--	[`1.24.1-jessie`, `1-jessie`, `1.24-jessie`, `jessie` (*1.24.1/jessie/Dockerfile*)](https://github.com/rust-lang-nursery/docker-rust/blob/d35c26c4749ed882be0118eb725eeb3a91e0968b/1.24.1/jessie/Dockerfile)
+-	[`1.25.0-stretch`, `1-stretch`, `1.25-stretch`, `stretch`, `1.25.0`, `1`, `1.25`, `latest` (*1.25.0/stretch/Dockerfile*)](https://github.com/rust-lang-nursery/docker-rust/blob/f18cebe3699016a654da86212fa90afaea7431a1/1.25.0/stretch/Dockerfile)
+-	[`1.25.0-jessie`, `1-jessie`, `1.25-jessie`, `jessie` (*1.25.0/jessie/Dockerfile*)](https://github.com/rust-lang-nursery/docker-rust/blob/f18cebe3699016a654da86212fa90afaea7431a1/1.25.0/jessie/Dockerfile)
 
 # Quick reference
 
