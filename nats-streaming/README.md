@@ -18,15 +18,15 @@ WARNING:
 
 ## Simple Tags
 
--	[`0.9.0-linux`, `linux` (*amd64/Dockerfile*)](https://github.com/nats-io/nats-streaming-docker/blob/bb0111a856389f8ecabc3e1459159fc6c35e6132/amd64/Dockerfile)
--	[`0.9.0-nanoserver`, `nanoserver` (*windows/nanoserver/Dockerfile*)](https://github.com/nats-io/nats-streaming-docker/blob/bb0111a856389f8ecabc3e1459159fc6c35e6132/windows/nanoserver/Dockerfile)
--	[`0.9.0-windowsservercore`, `windowsservercore` (*windows/windowsservercore/Dockerfile*)](https://github.com/nats-io/nats-streaming-docker/blob/bb0111a856389f8ecabc3e1459159fc6c35e6132/windows/windowsservercore/Dockerfile)
+-	[`0.9.2-linux`, `linux` (*amd64/Dockerfile*)](https://github.com/nats-io/nats-streaming-docker/blob/eaff03b1e4f88d0eb0eb476a8d1b36cac6fdf8df/amd64/Dockerfile)
+-	[`0.9.2-nanoserver`, `nanoserver` (*windows/nanoserver/Dockerfile*)](https://github.com/nats-io/nats-streaming-docker/blob/eaff03b1e4f88d0eb0eb476a8d1b36cac6fdf8df/windows/nanoserver/Dockerfile)
+-	[`0.9.2-windowsservercore`, `windowsservercore` (*windows/windowsservercore/Dockerfile*)](https://github.com/nats-io/nats-streaming-docker/blob/eaff03b1e4f88d0eb0eb476a8d1b36cac6fdf8df/windows/windowsservercore/Dockerfile)
 
 ## Shared Tags
 
--	`0.9.0`, `latest`:
-	-	[`0.9.0-linux` (*amd64/Dockerfile*)](https://github.com/nats-io/nats-streaming-docker/blob/bb0111a856389f8ecabc3e1459159fc6c35e6132/amd64/Dockerfile)
-	-	[`0.9.0-nanoserver` (*windows/nanoserver/Dockerfile*)](https://github.com/nats-io/nats-streaming-docker/blob/bb0111a856389f8ecabc3e1459159fc6c35e6132/windows/nanoserver/Dockerfile)
+-	`0.9.2`, `latest`:
+	-	[`0.9.2-linux` (*amd64/Dockerfile*)](https://github.com/nats-io/nats-streaming-docker/blob/eaff03b1e4f88d0eb0eb476a8d1b36cac6fdf8df/amd64/Dockerfile)
+	-	[`0.9.2-nanoserver` (*windows/nanoserver/Dockerfile*)](https://github.com/nats-io/nats-streaming-docker/blob/eaff03b1e4f88d0eb0eb476a8d1b36cac6fdf8df/windows/nanoserver/Dockerfile)
 
 # Quick reference
 
