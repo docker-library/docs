@@ -194,7 +194,7 @@ The Docker documentation is a good starting point for understanding the differen
 1.	Create a data directory on a suitable volume on your host system, e.g. `/my/own/datadir`.
 2.	Start your `bonita` container like this:
 
-	docker run --name some-bonita -v /my/own/datadir:/opt/bonita -d bonita:tag
+	docker run --name some-bonita -v /my/own/datadir:/opt/bonita -d -p 8080:8080 bonita:tag
 
 The `-v /my/own/datadir:/opt/bonita` part of the command mounts the `/my/own/datadir` directory from the underlying host system as `/opt/bonita` inside the container, where Bonita will deploy the bundle and write data files by default.
 
