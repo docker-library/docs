@@ -1,6 +1,6 @@
 ### Overview
 
-The images in this repository contain IBM® SDK, Java™ Technology Edition, version 1.8.0\_sr5fp10 (8.0-5.10). See [what's new](https://developer.ibm.com/javasdk/blog). See the license section for restrictions that relate to the use of this image. For more information about IBM® SDK, Java™ Technology Edition and API documentation as well as tutorials, recipes, and Java usage in IBM Cloud, see [IBM developerWorks](https://developer.ibm.com/javasdk/).
+The images in this repository contain IBM® SDK, Java™ Technology Edition, version 1.8.0\_sr5fp11 (8.0-5.11). See [what's new](https://developer.ibm.com/javasdk/blog). See the license section for restrictions that relate to the use of this image. For more information about IBM® SDK, Java™ Technology Edition and API documentation as well as tutorials, recipes, and Java usage in IBM Cloud, see [IBM developerWorks](https://developer.ibm.com/javasdk/).
 
 Java and all Java-based trademarks and logos are trademarks or registered trademarks of Oracle and/or its affiliates.
 
@@ -41,19 +41,6 @@ ibmjava now has multi-arch support and so the exact same commands as below works
 ### How to use this Image
 
 To run a pre-built jar file with the JRE image, use the following commands:
-
-```dockerfile
-FROM %%IMAGE%%:jre
-RUN mkdir /opt/app
-COPY japp.jar /opt/app
-CMD ["java", "-jar", "/opt/app/japp.jar"]
-```
-
-To download the latest Java 9 Beta (Early Access) Image:
-
-```console
-docker pull %%IMAGE%%:9-ea2-sdk
-```
 
 ```dockerfile
 FROM %%IMAGE%%:jre
