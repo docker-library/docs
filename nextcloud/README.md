@@ -16,9 +16,6 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`11.0.8-apache`, `11.0-apache`, `11-apache`, `11.0.8`, `11.0`, `11` (*11.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/e01caa961ff579ba753e7e55a4ef987c199938fa/11.0/apache/Dockerfile)
--	[`11.0.8-fpm`, `11.0-fpm`, `11-fpm` (*11.0/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/18db7e679fd92e2d36d6113b1e174e6f1afda2d6/11.0/fpm/Dockerfile)
--	[`11.0.8-fpm-alpine`, `11.0-fpm-alpine`, `11-fpm-alpine` (*11.0/fpm-alpine/Dockerfile*)](https://github.com/nextcloud/docker/blob/18db7e679fd92e2d36d6113b1e174e6f1afda2d6/11.0/fpm-alpine/Dockerfile)
 -	[`12.0.6-apache`, `12.0-apache`, `12-apache`, `production-apache`, `12.0.6`, `12.0`, `12`, `production` (*12.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/e01caa961ff579ba753e7e55a4ef987c199938fa/12.0/apache/Dockerfile)
 -	[`12.0.6-fpm`, `12.0-fpm`, `12-fpm`, `production-fpm` (*12.0/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/18db7e679fd92e2d36d6113b1e174e6f1afda2d6/12.0/fpm/Dockerfile)
 -	[`12.0.6-fpm-alpine`, `12.0-fpm-alpine`, `12-fpm-alpine`, `production-fpm-alpine` (*12.0/fpm-alpine/Dockerfile*)](https://github.com/nextcloud/docker/blob/18db7e679fd92e2d36d6113b1e174e6f1afda2d6/12.0/fpm-alpine/Dockerfile)

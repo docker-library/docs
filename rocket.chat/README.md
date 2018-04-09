@@ -16,7 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`0.62.2`, `0.62`, `0`, `latest` (*Dockerfile*)](https://github.com/RocketChat/Docker.Official.Image/blob/9a408ff66d899f71d595cc8bbffbd03081ef8c2e/Dockerfile)
+-	[`0.63.0`, `0.63`, `0`, `latest` (*Dockerfile*)](https://github.com/RocketChat/Docker.Official.Image/blob/c76db6d89aff8ec3624be938d408950c00b4fdee/Dockerfile)
 
 # Quick reference
 
