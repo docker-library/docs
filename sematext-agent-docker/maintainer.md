@@ -1,0 +1,1 @@
+[sematext](%%GITHUB-REPO%%)

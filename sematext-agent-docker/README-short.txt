@@ -1,0 +1,1 @@
+Sematext Docker Agent - host + container metrics, logs & event collector https://sematext.com/docker
