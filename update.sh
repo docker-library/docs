@@ -110,6 +110,9 @@ for image in "${images[@]}"; do
 			deprecated+=$'\n\n'
 		fi
 
+		echo '  GIT PREFETCH => "'"$repo"'"'
+		"$helperDir/git-prefetch.sh" "$repo"
+
 		targetFile="$repo/README.md"
 
 		{
