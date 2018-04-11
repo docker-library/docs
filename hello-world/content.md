@@ -19,7 +19,7 @@ To try something more ambitious, you can run an Ubuntu container with:
  $ docker run -it ubuntu bash
 
 Share images, automate workflows, and more with a free Docker ID:
- https://cloud.docker.com/
+ https://hub.docker.com/
 
 For more examples and ideas, visit:
  https://docs.docker.com/engine/userguide/
@@ -27,7 +27,7 @@ For more examples and ideas, visit:
 
 $ docker images %%IMAGE%%
 REPOSITORY   TAG     IMAGE ID      SIZE
-hello-world  latest  f2a91732366c  1.85kB
+hello-world  latest  e38bc07ac18e  1.85kB
 ```
 
 %%LOGO%%
