@@ -36,9 +36,11 @@ if [ -f "$repo/deprecated.md" ]; then
 fi
 
 cat <<EOREADME
-# About this Repo
+# $canonicalRepo
 
-This is the Git repo of the [Docker "Official Image"](https://docs.docker.com/docker-hub/official_repos/) for [$repo]($hubPage) (maintained by: $maintainer). See [the Docker Hub page]($hubPage) for the full readme on how to use this Docker image and for information regarding contributing and issues.
+## Maintained by: $maintainer
+
+This is the Git repo of the [Docker "Official Image"](https://docs.docker.com/docker-hub/official_repos/) for [$repo]($hubPage) (not to be confused with any official $repo image provided by $repo upstream). See [the Docker Hub page]($hubPage) for the full readme on how to use this Docker image and for information regarding contributing and issues.
 
 The [full description from Docker Hub]($hubPage) is generated over in [docker-library/docs]($gitRepo), specifically in [docker-library/docs/$repo]($gitRepo/tree/master/$repo).
 
