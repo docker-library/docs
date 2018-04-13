@@ -75,6 +75,26 @@ if wget -q --spider "$jenkinsImage" &> /dev/null; then
 	badges+=( "-${t}[Automated \`update.sh\`:  ${n}${t}![build status badge]($jenkinsImage)]($jenkinsLink)" )
 fi
 
+arches="$(bashbrew cat --format '{{ range .Entries }}{{ join "\n" .Architectures }}{{ "\n" }}{{ end }}' "https://github.com/docker-library/official-images/raw/master/library/$repo" | sort -u)"
+if [ -n "$arches" ]; then
+	archTable=
+	i=0
+	for arch in $arches; do
+		jenkinsLink="https://doi-janky.infosiftr.net/job/multiarch/job/$arch/job/$repo"
+		jenkinsImage="$jenkinsLink/badge/icon"
+		if wget -q --spider "$jenkinsImage" &> /dev/null; then
+			archTable="${archTable:-|} [\`$arch\`<br />![build status badge]($jenkinsImage)]($jenkinsLink) |"
+			(( i = (i + 1) % 4 )) || : # modulo here needs to match the number of colums used below
+			if [ "$i" = 0 ]; then
+				archTable+="${n}|"
+			fi
+		fi
+	done
+	if [ -n "$archTable" ]; then
+		badges+=( "${n}| Build | Status | Badges | (per-arch) |${n}|:-:|:-:|:-:|:-:|${n}${archTable%${n}|}" )
+	fi
+fi
+
 if [ "${#badges[@]}" -gt 0 ]; then
 	IFS=$'\n'
 	cat <<-EOREADME
