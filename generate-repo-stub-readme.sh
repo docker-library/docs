@@ -44,7 +44,11 @@ This is the Git repo of the [Docker "Official Image"](https://docs.docker.com/do
 
 The [full description from Docker Hub]($hubPage) is generated over in [docker-library/docs]($gitRepo), specifically in [docker-library/docs/$repo]($gitRepo/tree/master/$repo).
 
-See a change merged here that doesn't show up on Docker Hub yet? Check [the "library/$repo" manifest file in the docker-library/official-images repo](https://github.com/docker-library/official-images/blob/master/library/$repo), especially [PRs with the "library/$repo" label on that repo](https://github.com/docker-library/official-images/labels/library%2F$repo). For more information about the official images process, see the [docker-library/official-images readme](https://github.com/docker-library/official-images/blob/master/README.md).
+## See a change merged here that doesn't show up on Docker Hub yet?
+
+Check [the "library/$repo" manifest file in the docker-library/official-images repo](https://github.com/docker-library/official-images/blob/master/library/$repo), especially [PRs with the "library/$repo" label on that repo](https://github.com/docker-library/official-images/labels/library%2F$repo).
+
+For more information about the official images process, see the [docker-library/official-images readme](https://github.com/docker-library/official-images/blob/master/README.md).
 EOREADME
 
 badges=()
