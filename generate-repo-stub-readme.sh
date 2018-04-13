@@ -26,6 +26,8 @@ fi
 canonicalRepo="$(curl -fsSLI -o /dev/null -w '%{url_effective}\n' "$canonicalRepo")" # follow redirects (http://stackoverflow.com/a/3077316/433558)
 travisRepo="${canonicalRepo#*://github.com/}"
 
+maintainer="$(sed -e 's!%%GITHUB-REPO%%!'"$canonicalRepo"'!g' "$repo/maintainer.md")"
+
 if [ -f "$repo/deprecated.md" ]; then
 	echo '# DEPRECATED'
 	echo
@@ -36,7 +38,7 @@ fi
 cat <<EOREADME
 # About this Repo
 
-This is the Git repo of the [Docker "Official Image"](https://docs.docker.com/docker-hub/official_repos/) for [$repo]($hubPage) (which does not necessarily mean it is "official" according to $repo upstream). See [the Docker Hub page]($hubPage) for the full readme on how to use this Docker image and for information regarding contributing and issues.
+This is the Git repo of the [Docker "Official Image"](https://docs.docker.com/docker-hub/official_repos/) for [$repo]($hubPage) (maintained by: $maintainer). See [the Docker Hub page]($hubPage) for the full readme on how to use this Docker image and for information regarding contributing and issues.
 
 The [full description from Docker Hub]($hubPage) is generated over in [docker-library/docs]($gitRepo), specifically in [docker-library/docs/$repo]($gitRepo/tree/master/$repo).
 
