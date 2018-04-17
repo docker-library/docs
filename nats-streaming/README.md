@@ -58,7 +58,7 @@ WARNING:
 
 # [NATS Streaming](https://nats.io): A high-performance cloud native messaging streaming system.
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/4a2d30cdf4ff4bc6ae915ada7a058db0c908659d/nats-streaming/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/ad703934a62fabf54452755c8486698ff6fc5cc2/nats-streaming/logo.png)
 
 `nats-streaming` is a high performance streaming server for the NATS Messaging System.
 

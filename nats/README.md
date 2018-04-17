@@ -58,7 +58,7 @@ WARNING:
 
 # [NATS](https://nats.io): A high-performance cloud native messaging system.
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/45d33e1726fed03a2a40363a9699e0587e713c55/nats/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/ad703934a62fabf54452755c8486698ff6fc5cc2/nats/logo.png)
 
 `nats` is a high performance server for the NATS Messaging System.
 
