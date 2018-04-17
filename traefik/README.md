@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`v1.6.0-rc5`, `1.6.0-rc5`, `v1.6`, `1.6`, `tetedemoine` (*scratch/amd64/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/abcff7fa7c11547d8834b835b9ecedce49c3a441/scratch/amd64/Dockerfile)
--	[`v1.6.0-rc5-alpine`, `1.6.0-rc5-alpine`, `v1.6-alpine`, `1.6-alpine`, `tetedemoine-alpine` (*alpine/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/abcff7fa7c11547d8834b835b9ecedce49c3a441/alpine/Dockerfile)
+-	[`v1.6.0-rc6`, `1.6.0-rc6`, `v1.6`, `1.6`, `tetedemoine` (*scratch/amd64/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/7f4ebf3c24e795fda65836dadd94af4403447a7f/scratch/amd64/Dockerfile)
+-	[`v1.6.0-rc6-alpine`, `1.6.0-rc6-alpine`, `v1.6-alpine`, `1.6-alpine`, `tetedemoine-alpine` (*alpine/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/7f4ebf3c24e795fda65836dadd94af4403447a7f/alpine/Dockerfile)
 -	[`v1.5.4`, `1.5.4`, `v1.5`, `1.5`, `cancoillotte`, `latest` (*scratch/amd64/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/a0b61256a1c3df401f43cf01b940f3a69fb77883/scratch/amd64/Dockerfile)
 -	[`v1.5.4-alpine`, `1.5.4-alpine`, `v1.5-alpine`, `1.5-alpine`, `cancoillotte-alpine`, `alpine` (*alpine/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/a0b61256a1c3df401f43cf01b940f3a69fb77883/alpine/Dockerfile)
 
@@ -51,7 +51,11 @@ WARNING:
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/a6cc2c5f4bc6658168f2a0abbb0307acaefff80e/traefik/logo.png)
 
-[Træfɪk](https://github.com/containous/traefik) is a modern HTTP reverse proxy and load balancer made to deploy microservices with ease. It supports several backends ([Docker :whale:](https://www.docker.com/), [Swarm :whale::whale:](https://github.com/docker/swarm), [Mesos/Marathon](https://mesosphere.github.io/marathon/), [Consul](https://www.consul.io/), [Etcd](https://coreos.com/etcd/), [Zookeeper](https://zookeeper.apache.org), [BoltDB](https://github.com/boltdb/bolt), Rest API, file...) to manage its configuration automatically and dynamically.
+[Træfɪk](https://github.com/containous/traefik) is a modern HTTP reverse proxy and load balancer that makes deploying microservices easy.
+
+Træfik integrates with your existing infrastructure components ([Docker](https://www.docker.com/), [Swarm mode](https://docs.docker.com/engine/swarm/), [Kubernetes](https://kubernetes.io), [Marathon](https://mesosphere.github.io/marathon/), [Consul](https://www.consul.io/), [Etcd](https://coreos.com/etcd/), [Rancher](https://rancher.com), [Amazon ECS](https://aws.amazon.com/ecs), ...) and configures itself automatically and dynamically.
+
+Telling Træfik where your orchestrator is could be the *only* configuration step you need to do.
 
 # Example usage
 
@@ -59,10 +63,9 @@ Grab a [sample configuration file](https://raw.githubusercontent.com/containous/
 
 ```toml
 ################################################################
-# Web configuration backend
+# API and dashboard configuration
 ################################################################
-[web]
-address = ":8080"
+[api]
 ################################################################
 # Docker configuration backend
 ################################################################
@@ -109,11 +112,13 @@ X-Forwarded-Server: f2e05c433120
 
 The web UI [http://localhost:8080](http://localhost:8080) will give you an overview of the frontends/backends and also a health dashboard.
 
-![Web UI Providers](https://traefik.io/web.frontend.png)
+![Web UI Providers](https://github.com/containous/traefik/blob/master/docs/img/web.frontend.png)
 
 # Documentation
 
-You can find the complete documentation [here](https://docs.traefik.io).
+You can find the complete documentation at [https://docs.traefik.io](https://docs.traefik.io).
+
+A collection of contributions around Træfik can be found at [https://awesome.traefik.io](https://awesome.traefik.io).
 
 # License
 
