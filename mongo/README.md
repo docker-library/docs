@@ -21,8 +21,8 @@ WARNING:
 -	[`3.0.15-wheezy`, `3.0-wheezy` (*3.0/Dockerfile*)](https://github.com/docker-library/mongo/blob/58bdba62b65b1d1e1ea5cbde54c1682f120e0676/3.0/Dockerfile)
 -	[`3.2.19-jessie`, `3.2-jessie` (*3.2/Dockerfile*)](https://github.com/docker-library/mongo/blob/22dd36a9194de8797f3c558857c0120a794daf25/3.2/Dockerfile)
 -	[`3.4.14-jessie`, `3.4-jessie` (*3.4/Dockerfile*)](https://github.com/docker-library/mongo/blob/b96fddd1e1a100c01f0ea6d28e1c7ccc750fd5c0/3.4/Dockerfile)
--	[`3.6.3-jessie`, `3.6-jessie`, `3-jessie`, `jessie` (*3.6/Dockerfile*)](https://github.com/docker-library/mongo/blob/2e3e1bdbb31389c8bc8d43f5a3cc439134b7956b/3.6/Dockerfile)
--	[`3.7.3-jessie`, `3.7-jessie`, `unstable-jessie` (*3.7/Dockerfile*)](https://github.com/docker-library/mongo/blob/621a206bca04c06ad3e0d8459c9d23223ea11a01/3.7/Dockerfile)
+-	[`3.6.4-jessie`, `3.6-jessie`, `3-jessie`, `jessie` (*3.6/Dockerfile*)](https://github.com/docker-library/mongo/blob/dd8ceb3b3552d11c901a603d0b8b303e2fe4bc2e/3.6/Dockerfile)
+-	[`3.7.5-jessie`, `3.7-jessie`, `unstable-jessie` (*3.7/Dockerfile*)](https://github.com/docker-library/mongo/blob/5d91c7654eea29e6ff03933331e3ae85a3b32734/3.7/Dockerfile)
 
 ## Shared Tags
 
@@ -32,10 +32,10 @@ WARNING:
 	-	[`3.2.19-jessie` (*3.2/Dockerfile*)](https://github.com/docker-library/mongo/blob/22dd36a9194de8797f3c558857c0120a794daf25/3.2/Dockerfile)
 -	`3.4.14`, `3.4`:
 	-	[`3.4.14-jessie` (*3.4/Dockerfile*)](https://github.com/docker-library/mongo/blob/b96fddd1e1a100c01f0ea6d28e1c7ccc750fd5c0/3.4/Dockerfile)
--	`3.6.3`, `3.6`, `3`, `latest`:
-	-	[`3.6.3-jessie` (*3.6/Dockerfile*)](https://github.com/docker-library/mongo/blob/2e3e1bdbb31389c8bc8d43f5a3cc439134b7956b/3.6/Dockerfile)
--	`3.7.3`, `3.7`, `unstable`:
-	-	[`3.7.3-jessie` (*3.7/Dockerfile*)](https://github.com/docker-library/mongo/blob/621a206bca04c06ad3e0d8459c9d23223ea11a01/3.7/Dockerfile)
+-	`3.6.4`, `3.6`, `3`, `latest`:
+	-	[`3.6.4-jessie` (*3.6/Dockerfile*)](https://github.com/docker-library/mongo/blob/dd8ceb3b3552d11c901a603d0b8b303e2fe4bc2e/3.6/Dockerfile)
+-	`3.7.5`, `3.7`, `unstable`:
+	-	[`3.7.5-jessie` (*3.7/Dockerfile*)](https://github.com/docker-library/mongo/blob/5d91c7654eea29e6ff03933331e3ae85a3b32734/3.7/Dockerfile)
 
 # Quick reference
 
