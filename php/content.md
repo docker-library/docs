@@ -112,9 +112,9 @@ See ["Dockerizing Compiled Software"](https://tianon.xyz/post/2017/12/26/dockeri
 Some extensions are not provided with the PHP source, but are instead available through [PECL](https://pecl.php.net/). To install a PECL extension, use `pecl install` to download and compile it, then use `docker-php-ext-enable` to enable it:
 
 ```dockerfile
-FROM %%IMAGE%%:7.1-fpm
-RUN pecl install redis-3.1.0 \
-	&& pecl install xdebug-2.5.0 \
+FROM %%IMAGE%%:7.2-fpm
+RUN pecl install redis-4.0.1 \
+	&& pecl install xdebug-2.6.0 \
 	&& docker-php-ext-enable redis xdebug
 ```
 
@@ -124,6 +124,12 @@ RUN apt-get update && apt-get install -y libmemcached-dev zlib1g-dev \
 	&& pecl install memcached-2.2.0 \
 	&& docker-php-ext-enable memcached
 ```
+
+It is *strongly* recommended that users use an explicit version number in their `pecl install` invocations to ensure proper PHP version compatibility (PECL does not check the PHP version compatiblity when choosing a version of the extension to install, but does when trying to install it).
+
+For example, `memcached-2.2.0` has no PHP version constraints (https://pecl.php.net/package/memcached/2.2.0), but `memcached-3.0.4` requires PHP 7.0.0 or newer (https://pecl.php.net/package/memcached/3.0.4). When doing `pecl install memcached` (no specific version) on PHP 5.6, PECL will try to install the latest release and fail.
+
+Beyond the compatibility issue, it's also a good practice to ensure you know when your dependencies receive updates and can control those updates directly.
 
 #### Other extensions
 
