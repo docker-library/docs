@@ -16,12 +16,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `5`, `5.26`, `5.26.1` (*5.026.001-64bit/Dockerfile*)](https://github.com/perl/docker-perl/blob/a5c2d6c896807e9c1beec4ebac01c7f30c075bf0/5.026.001-64bit/Dockerfile)
--	[`threaded`, `5-threaded`, `5.26-threaded`, `5.26.1-threaded` (*5.026.001-64bit,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/a5c2d6c896807e9c1beec4ebac01c7f30c075bf0/5.026.001-64bit,threaded/Dockerfile)
--	[`5.24`, `5.24.3` (*5.024.003-64bit/Dockerfile*)](https://github.com/perl/docker-perl/blob/a5c2d6c896807e9c1beec4ebac01c7f30c075bf0/5.024.003-64bit/Dockerfile)
--	[`5.24-threaded`, `5.24.3-threaded` (*5.024.003-64bit,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/a5c2d6c896807e9c1beec4ebac01c7f30c075bf0/5.024.003-64bit,threaded/Dockerfile)
--	[`5.22`, `5.22.4` (*5.022.004-64bit/Dockerfile*)](https://github.com/perl/docker-perl/blob/a5c2d6c896807e9c1beec4ebac01c7f30c075bf0/5.022.004-64bit/Dockerfile)
--	[`5.22-threaded`, `5.22.4-threaded` (*5.022.004-64bit,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/a5c2d6c896807e9c1beec4ebac01c7f30c075bf0/5.022.004-64bit,threaded/Dockerfile)
+-	[`latest`, `5`, `5.26`, `5.26.2` (*5.026.002-64bit/Dockerfile*)](https://github.com/perl/docker-perl/blob/1c201e950ebe90f35c449f69df6ca7151cb0068d/5.026.002-64bit/Dockerfile)
+-	[`threaded`, `5-threaded`, `5.26-threaded`, `5.26.2-threaded` (*5.026.002-64bit,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/1c201e950ebe90f35c449f69df6ca7151cb0068d/5.026.002-64bit,threaded/Dockerfile)
+-	[`5.24`, `5.24.4` (*5.024.004-64bit/Dockerfile*)](https://github.com/perl/docker-perl/blob/1c201e950ebe90f35c449f69df6ca7151cb0068d/5.024.004-64bit/Dockerfile)
+-	[`5.24-threaded`, `5.24.4-threaded` (*5.024.004-64bit,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/1c201e950ebe90f35c449f69df6ca7151cb0068d/5.024.004-64bit,threaded/Dockerfile)
+-	[`5.22`, `5.22.4` (*5.022.004-64bit/Dockerfile*)](https://github.com/perl/docker-perl/blob/1c201e950ebe90f35c449f69df6ca7151cb0068d/5.022.004-64bit/Dockerfile)
+-	[`5.22-threaded`, `5.22.4-threaded` (*5.022.004-64bit,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/1c201e950ebe90f35c449f69df6ca7151cb0068d/5.022.004-64bit,threaded/Dockerfile)
 
 # Quick reference
 
