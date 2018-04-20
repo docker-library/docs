@@ -16,9 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`42.2` (*x86_64//Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/fd39ce9631c3b6a110b6c1e8e5756a20d0863a77/x86_64//Dockerfile)
--	[`42.3`, `latest`, `leap` (*x86_64//Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/6252e7bc2a411b3c5cfd5ed3b74e5839f7f7615b/x86_64//Dockerfile)
--	[`tumbleweed` (*x86_64//Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/63f8c38ea523302fa8918fa0265f949075516a03/x86_64//Dockerfile)
+-	[`42.3`, `latest`, `leap` (*x86_64//Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/0611a04c49ad2d19cf4765455549e028f8a8015d/x86_64//Dockerfile)
+-	[`tumbleweed` (*x86_64//Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/2b8e47140b2a964ac827d17d4b5edd52ee22997d/x86_64//Dockerfile)
 
 # Quick reference
 
