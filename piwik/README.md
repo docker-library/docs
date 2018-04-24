@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.3.0-apache`, `3.3-apache`, `3-apache`, `apache`, `3.3.0`, `3.3`, `3`, `latest` (*apache/Dockerfile*)](https://github.com/piwik/docker-piwik/blob/f2d71a5128a243c2791d1626b10d6637a5a40ced/apache/Dockerfile)
--	[`3.3.0-fpm`, `3.3-fpm`, `3-fpm`, `fpm` (*fpm/Dockerfile*)](https://github.com/piwik/docker-piwik/blob/f2d71a5128a243c2791d1626b10d6637a5a40ced/fpm/Dockerfile)
+-	[`3.4.0-apache`, `3.4-apache`, `3-apache`, `3.4.0`, `3.4`, `3` (*apache/Dockerfile*)](https://github.com/matomo-org/docker/blob/c985c710bcd7ff07a79efd60433bc7f0d1674c28/apache/Dockerfile)
+-	[`3.4.0-fpm`, `3.4-fpm`, `3-fpm` (*fpm/Dockerfile*)](https://github.com/matomo-org/docker/blob/c985c710bcd7ff07a79efd60433bc7f0d1674c28/fpm/Dockerfile)
 
 # Quick reference
 
@@ -31,7 +31,7 @@ WARNING:
 	[Piwik Analytics](https://github.com/piwik/docker-piwik)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/piwik/)
+	[`amd64`](https://hub.docker.com/r/amd64/piwik/), [`arm32v5`](https://hub.docker.com/r/arm32v5/piwik/), [`arm32v7`](https://hub.docker.com/r/arm32v7/piwik/), [`arm64v8`](https://hub.docker.com/r/arm64v8/piwik/), [`i386`](https://hub.docker.com/r/i386/piwik/), [`ppc64le`](https://hub.docker.com/r/ppc64le/piwik/), [`s390x`](https://hub.docker.com/r/s390x/piwik/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/piwik/` directory](https://github.com/docker-library/repo-info/blob/master/repos/piwik) ([history](https://github.com/docker-library/repo-info/commits/master/repos/piwik))  

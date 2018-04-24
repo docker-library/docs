@@ -28,10 +28,10 @@ WARNING:
 -	[`4.9.5-apache`, `4.9-apache`, `4-apache`, `apache`, `4.9.5`, `4.9`, `4`, `latest`, `4.9.5-php7.2-apache`, `4.9-php7.2-apache`, `4-php7.2-apache`, `php7.2-apache`, `4.9.5-php7.2`, `4.9-php7.2`, `4-php7.2`, `php7.2` (*php7.2/apache/Dockerfile*)](https://github.com/docker-library/wordpress/blob/1caade96b306d0ed12f5637196e8f0b1883330f5/php7.2/apache/Dockerfile)
 -	[`4.9.5-fpm`, `4.9-fpm`, `4-fpm`, `fpm`, `4.9.5-php7.2-fpm`, `4.9-php7.2-fpm`, `4-php7.2-fpm`, `php7.2-fpm` (*php7.2/fpm/Dockerfile*)](https://github.com/docker-library/wordpress/blob/1caade96b306d0ed12f5637196e8f0b1883330f5/php7.2/fpm/Dockerfile)
 -	[`4.9.5-fpm-alpine`, `4.9-fpm-alpine`, `4-fpm-alpine`, `fpm-alpine`, `4.9.5-php7.2-fpm-alpine`, `4.9-php7.2-fpm-alpine`, `4-php7.2-fpm-alpine`, `php7.2-fpm-alpine` (*php7.2/fpm-alpine/Dockerfile*)](https://github.com/docker-library/wordpress/blob/1caade96b306d0ed12f5637196e8f0b1883330f5/php7.2/fpm-alpine/Dockerfile)
--	[`cli-1.5.0-php5.6`, `cli-1.5-php5.6`, `cli-1-php5.6`, `cli-php5.6` (*php5.6/cli/Dockerfile*)](https://github.com/docker-library/wordpress/blob/6fb1a99b550441edb5d1e554703f9f26afa73305/php5.6/cli/Dockerfile)
--	[`cli-1.5.0-php7.0`, `cli-1.5-php7.0`, `cli-1-php7.0`, `cli-php7.0` (*php7.0/cli/Dockerfile*)](https://github.com/docker-library/wordpress/blob/6fb1a99b550441edb5d1e554703f9f26afa73305/php7.0/cli/Dockerfile)
--	[`cli-1.5.0-php7.1`, `cli-1.5-php7.1`, `cli-1-php7.1`, `cli-php7.1` (*php7.1/cli/Dockerfile*)](https://github.com/docker-library/wordpress/blob/6fb1a99b550441edb5d1e554703f9f26afa73305/php7.1/cli/Dockerfile)
--	[`cli-1.5.0`, `cli-1.5`, `cli-1`, `cli`, `cli-1.5.0-php7.2`, `cli-1.5-php7.2`, `cli-1-php7.2`, `cli-php7.2` (*php7.2/cli/Dockerfile*)](https://github.com/docker-library/wordpress/blob/6fb1a99b550441edb5d1e554703f9f26afa73305/php7.2/cli/Dockerfile)
+-	[`cli-1.5.1-php5.6`, `cli-1.5-php5.6`, `cli-1-php5.6`, `cli-php5.6` (*php5.6/cli/Dockerfile*)](https://github.com/docker-library/wordpress/blob/912d76560ec9e350e24aedd3a30268026082557a/php5.6/cli/Dockerfile)
+-	[`cli-1.5.1-php7.0`, `cli-1.5-php7.0`, `cli-1-php7.0`, `cli-php7.0` (*php7.0/cli/Dockerfile*)](https://github.com/docker-library/wordpress/blob/912d76560ec9e350e24aedd3a30268026082557a/php7.0/cli/Dockerfile)
+-	[`cli-1.5.1-php7.1`, `cli-1.5-php7.1`, `cli-1-php7.1`, `cli-php7.1` (*php7.1/cli/Dockerfile*)](https://github.com/docker-library/wordpress/blob/912d76560ec9e350e24aedd3a30268026082557a/php7.1/cli/Dockerfile)
+-	[`cli-1.5.1`, `cli-1.5`, `cli-1`, `cli`, `cli-1.5.1-php7.2`, `cli-1.5-php7.2`, `cli-1-php7.2`, `cli-php7.2` (*php7.2/cli/Dockerfile*)](https://github.com/docker-library/wordpress/blob/912d76560ec9e350e24aedd3a30268026082557a/php7.2/cli/Dockerfile)
 
 # Quick reference
 
