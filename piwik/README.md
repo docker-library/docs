@@ -14,6 +14,10 @@ WARNING:
 
 -->
 
+# **DEPRECATION NOTICE**
+
+This image is officially deprecated in favor of [the `matomo` image](https://hub.docker.com/_/matomo/), and will receive no further updates after 2018-09-30 (Sep 30, 2018). Please adjust your usage accordingly.
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`3.4.0-apache`, `3.4-apache`, `3-apache`, `3.4.0`, `3.4`, `3` (*apache/Dockerfile*)](https://github.com/matomo-org/docker/blob/c985c710bcd7ff07a79efd60433bc7f0d1674c28/apache/Dockerfile)
