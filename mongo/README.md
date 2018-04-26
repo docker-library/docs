@@ -22,7 +22,7 @@ WARNING:
 -	[`3.2.19-jessie`, `3.2-jessie` (*3.2/Dockerfile*)](https://github.com/docker-library/mongo/blob/22dd36a9194de8797f3c558857c0120a794daf25/3.2/Dockerfile)
 -	[`3.4.14-jessie`, `3.4-jessie` (*3.4/Dockerfile*)](https://github.com/docker-library/mongo/blob/b96fddd1e1a100c01f0ea6d28e1c7ccc750fd5c0/3.4/Dockerfile)
 -	[`3.6.4-jessie`, `3.6-jessie`, `3-jessie`, `jessie` (*3.6/Dockerfile*)](https://github.com/docker-library/mongo/blob/dd8ceb3b3552d11c901a603d0b8b303e2fe4bc2e/3.6/Dockerfile)
--	[`3.7.5-jessie`, `3.7-jessie`, `unstable-jessie` (*3.7/Dockerfile*)](https://github.com/docker-library/mongo/blob/5d91c7654eea29e6ff03933331e3ae85a3b32734/3.7/Dockerfile)
+-	[`3.7.7-jessie`, `3.7-jessie`, `unstable-jessie` (*3.7/Dockerfile*)](https://github.com/docker-library/mongo/blob/cf68e393c63ba47451bc5d6d11f992147828a6ff/3.7/Dockerfile)
 
 ## Shared Tags
 
@@ -34,8 +34,8 @@ WARNING:
 	-	[`3.4.14-jessie` (*3.4/Dockerfile*)](https://github.com/docker-library/mongo/blob/b96fddd1e1a100c01f0ea6d28e1c7ccc750fd5c0/3.4/Dockerfile)
 -	`3.6.4`, `3.6`, `3`, `latest`:
 	-	[`3.6.4-jessie` (*3.6/Dockerfile*)](https://github.com/docker-library/mongo/blob/dd8ceb3b3552d11c901a603d0b8b303e2fe4bc2e/3.6/Dockerfile)
--	`3.7.5`, `3.7`, `unstable`:
-	-	[`3.7.5-jessie` (*3.7/Dockerfile*)](https://github.com/docker-library/mongo/blob/5d91c7654eea29e6ff03933331e3ae85a3b32734/3.7/Dockerfile)
+-	`3.7.7`, `3.7`, `unstable`:
+	-	[`3.7.7-jessie` (*3.7/Dockerfile*)](https://github.com/docker-library/mongo/blob/cf68e393c63ba47451bc5d6d11f992147828a6ff/3.7/Dockerfile)
 
 # Quick reference
 

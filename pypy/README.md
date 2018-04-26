@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2-5.10.0`, `2-5.10`, `2-5`, `2` (*2/Dockerfile*)](https://github.com/docker-library/pypy/blob/2b2b28c8d47683df043de22ddd11cb1bc6c5d151/2/Dockerfile)
--	[`2-5.10.0-slim`, `2-5.10-slim`, `2-5-slim`, `2-slim` (*2/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/2b2b28c8d47683df043de22ddd11cb1bc6c5d151/2/slim/Dockerfile)
--	[`3-5.10.1`, `3-5.10`, `3-5`, `3`, `latest` (*3/Dockerfile*)](https://github.com/docker-library/pypy/blob/90d6f08b46c99c7cccae534f4ba003c132cc1afe/3/Dockerfile)
--	[`3-5.10.1-slim`, `3-5.10-slim`, `3-5-slim`, `3-slim`, `slim` (*3/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/90d6f08b46c99c7cccae534f4ba003c132cc1afe/3/slim/Dockerfile)
+-	[`2-6.0.0`, `2-6.0`, `2-6`, `2` (*2/Dockerfile*)](https://github.com/docker-library/pypy/blob/a332c672d4977ae33548254d4dc9dffd46618d12/2/Dockerfile)
+-	[`2-6.0.0-slim`, `2-6.0-slim`, `2-6-slim`, `2-slim` (*2/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/a332c672d4977ae33548254d4dc9dffd46618d12/2/slim/Dockerfile)
+-	[`3-6.0.0`, `3-6.0`, `3-6`, `3`, `latest` (*3/Dockerfile*)](https://github.com/docker-library/pypy/blob/a332c672d4977ae33548254d4dc9dffd46618d12/3/Dockerfile)
+-	[`3-6.0.0-slim`, `3-6.0-slim`, `3-6-slim`, `3-slim`, `slim` (*3/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/a332c672d4977ae33548254d4dc9dffd46618d12/3/slim/Dockerfile)
 
 # Quick reference
 
