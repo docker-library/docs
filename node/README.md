@@ -40,7 +40,13 @@ WARNING:
 -	[`4.9.1-slim`, `4.9-slim`, `4-slim`, `argon-slim` (*4/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/f56c21260109ad432ec3ea5ba96dbd3b9daa4ea7/4/slim/Dockerfile)
 -	[`4.9.1-stretch`, `4.9-stretch`, `4-stretch`, `argon-stretch` (*4/stretch/Dockerfile*)](https://github.com/nodejs/docker-node/blob/f56c21260109ad432ec3ea5ba96dbd3b9daa4ea7/4/stretch/Dockerfile)
 -	[`4.9.1-wheezy`, `4.9-wheezy`, `4-wheezy`, `argon-wheezy` (*4/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/f56c21260109ad432ec3ea5ba96dbd3b9daa4ea7/4/wheezy/Dockerfile)
--	[`chakracore-8.10.0`, `chakracore-8.10`, `chakracore-8`, `chakracore` (*chakracore/8/Dockerfile*)](https://github.com/nodejs/docker-node/blob/fb8c0910205944cb81b8bae291f72a4a54eb2426/chakracore/8/Dockerfile)
+-	[`10.0.0`, `10.0` (*10/Dockerfile*)](https://github.com/nodejs/docker-node/blob/80814e984e9faa5e9195f9a61632e1898f6633d9/10/Dockerfile)
+-	[`10.0.0-alpine`, `10.0-alpine` (*10/alpine/Dockerfile*)](https://github.com/nodejs/docker-node/blob/80814e984e9faa5e9195f9a61632e1898f6633d9/10/alpine/Dockerfile)
+-	[`10.0.0-slim`, `10.0-slim` (*10/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/80814e984e9faa5e9195f9a61632e1898f6633d9/10/slim/Dockerfile)
+-	[`10.0.0-stretch`, `10.0-stretch` (*10/stretch/Dockerfile*)](https://github.com/nodejs/docker-node/blob/80814e984e9faa5e9195f9a61632e1898f6633d9/10/stretch/Dockerfile)
+-	[`10.0.0-wheezy`, `10.0-wheezy` (*10/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/80814e984e9faa5e9195f9a61632e1898f6633d9/10/wheezy/Dockerfile)
+-	[`chakracore-8.11.1`, `chakracore-8.11`, `chakracore-8`, `chakracore` (*chakracore/8/Dockerfile*)](https://github.com/nodejs/docker-node/blob/eca9e8f34ca78bdba691e1d5ead82840e2673705/chakracore/8/Dockerfile)
+-	[`chakracore-10.0.0`, `chakracore-10.0` (*chakracore/10/Dockerfile*)](https://github.com/nodejs/docker-node/blob/f713f15abe3ff05635326ba9716b7755c9d5f1aa/chakracore/10/Dockerfile)
 
 # Quick reference
 
