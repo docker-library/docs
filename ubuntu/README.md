@@ -81,6 +81,32 @@ ENV LANG en_US.utf8
 
 ## `/etc/apt/sources.list`
 
+### `ubuntu:18.04`
+
+```console
+$ docker run ubuntu:18.04 grep -v '^#' /etc/apt/sources.list
+
+deb http://archive.ubuntu.com/ubuntu/ bionic main restricted
+
+deb http://archive.ubuntu.com/ubuntu/ bionic-updates main restricted
+
+deb http://archive.ubuntu.com/ubuntu/ bionic universe
+deb-src http://archive.ubuntu.com/ubuntu/ bionic universe
+deb http://archive.ubuntu.com/ubuntu/ bionic-updates universe
+deb-src http://archive.ubuntu.com/ubuntu/ bionic-updates universe
+
+deb http://archive.ubuntu.com/ubuntu/ bionic multiverse
+deb http://archive.ubuntu.com/ubuntu/ bionic-updates multiverse
+
+deb http://archive.ubuntu.com/ubuntu/ bionic-backports main restricted universe multiverse
+
+
+deb http://security.ubuntu.com/ubuntu/ bionic-security main restricted
+deb http://security.ubuntu.com/ubuntu/ bionic-security universe
+deb-src http://security.ubuntu.com/ubuntu/ bionic-security universe
+deb http://security.ubuntu.com/ubuntu/ bionic-security multiverse
+```
+
 ### `ubuntu:16.04`
 
 ```console
