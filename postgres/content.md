@@ -22,7 +22,13 @@ This image includes `EXPOSE 5432` (the postgres port), so standard container lin
 >
 > [postgresql.org/docs](http://www.postgresql.org/docs/9.5/interactive/app-initdb.html)
 
+## %%STACK%%
+
+Run `docker stack deploy -c stack.yml %%REPO%%` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
+
 ## connect to it from an application
+
+> Note: the usage of `--link` is [deprecated](https://docs.docker.com/network/links/).
 
 ```console
 $ docker run --name some-app --link some-postgres:postgres -d application-that-uses-postgres
@@ -30,22 +36,19 @@ $ docker run --name some-app --link some-postgres:postgres -d application-that-u
 
 ## ... or via `psql`
 
+> Note: the usage of `--link` is [deprecated](https://docs.docker.com/network/links/).
+
 ```console
 $ docker run -it --rm --link some-postgres:postgres %%IMAGE%% psql -h postgres -U postgres
 psql (9.5.0)
 Type "help" for help.
 
 postgres=# SELECT 1;
- ?column? 
+ ?column?
 ----------
         1
 (1 row)
-
 ```
-
-## %%STACK%%
-
-Run `docker stack deploy -c stack.yml %%REPO%%` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
 
 ## Environment Variables
 
