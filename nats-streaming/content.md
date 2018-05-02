@@ -9,13 +9,13 @@
 Due to restrictions on how the Windows Docker Image is built, running the image without argument will run the NATS Streaming server with memory based store on port 4222 and the monitoring port 8222. If you need to specify any additional argument, or modify these options, you need to specify the executable name as this:
 
 ```bash
-$ docker run %%IMAGE%% nats-streaming-server -p 4223 -m 8223
+$ docker run -p 4223:4223 -p 8223:8223 %%IMAGE%% nats-streaming-server -p 4223 -m 8223
 ```
 
 If you need to specify the entrypoint:
 
 ```bash
-$ docker run --entrypoint c:/nats-streaming-server/nats-streaming-server %%IMAGE%%
+$ docker run --entrypoint c:/nats-streaming-server/nats-streaming-server -p 4222:4222 -p 8222:8222 %%IMAGE%%
 ```
 
 # Non Windows Docker images
@@ -23,13 +23,13 @@ $ docker run --entrypoint c:/nats-streaming-server/nats-streaming-server %%IMAGE
 If you need to provide arguments to the NATS Streaming server, just pass them to the command line. For instance, to change the listen and monitoring port to 4223 and 8223 respectively:
 
 ```bash
-$ docker run %%IMAGE%% -p 4223 -m 8223
+$ docker run -p 4223:4223 -p 8223:8223 %%IMAGE%% -p 4223 -m 8223
 ```
 
 If you need to specify the entrypoint:
 
 ```bash
-$ docker run --entrypoint /nats-streaming-server %%IMAGE%%
+$ docker run --entrypoint /nats-streaming-server -p 4222:4222 -p 8222:8222 %%IMAGE%%
 ```
 
 # Example usage
@@ -39,9 +39,24 @@ $ docker run --entrypoint /nats-streaming-server %%IMAGE%%
 # Each server exposes multiple ports
 # 4222 is for clients.
 # 8222 is an HTTP management port for information reporting.
-# use -p or -P as needed.
+#
+# To actually publish the ports when running the container, use the Docker port mapping
+# flag "docker run -p <hostport>:<containerport>" to publish and map one or more ports,
+# or the -P flag to publish all exposed ports and map them to high-order ports.
+#
+# This should not be confused with the NATS Streaming Server own -p parameter.
+# For instance, to run the NATS Streaming Server and have it listen on port 4444,
+# you would have to run like this:
+#
+#   docker run -p 4444:4444 %%IMAGE%% -p 4444
+#
+# Or, if you want to publish the port 4444 as a different port, for example 5555:
+#
+#   docker run -p 5555:4444 %%IMAGE%% -p 4444
+#
+# Check "docker run" for more information.
 
-$ docker run -d %%IMAGE%%
+$ docker run -d -p 4222:4222 -p 8222:8222 %%IMAGE%%
 ```
 
 Output that you would get if you had started with `-ti` instead of `d` (for daemon):
@@ -72,7 +87,7 @@ Output that you would get if you had started with `-ti` instead of `d` (for daem
 To use a file based store instead, you would run:
 
 ```bash
-$ docker run -d %%IMAGE%% -store file -dir datastore
+$ docker run -d -p 4222:4222 -p 8222:8222 %%IMAGE%% -store file -dir datastore
 
 [1] 2018/04/03 16:26:07.446889 [INF] STREAM: Starting nats-streaming-server[test-cluster] version 0.9.2
 [1] 2018/04/03 16:26:07.446920 [INF] STREAM: ServerID: uwjVeW7PWDuI1mpoA1nDZa
@@ -99,7 +114,7 @@ $ docker run -d %%IMAGE%% -store file -dir datastore
 You can also connect to a remote NATS Server running in a docker image. First, run NATS Server:
 
 ```bash
-$ docker run -d --name=nats-main nats
+$ docker run -d --name=nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 nats
 ```
 
 Now, start the Streaming server and link it to the above docker image:

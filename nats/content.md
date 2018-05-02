@@ -12,9 +12,24 @@
 # 4222 is for clients.
 # 8222 is an HTTP management port for information reporting.
 # 6222 is a routing port for clustering.
-# use -p or -P as needed.
+#
+# To actually publish the ports when running the container, use the Docker port mapping
+# flag "docker run -p <hostport>:<containerport>" to publish and map one or more ports,
+# or the -P flag to publish all exposed ports and map them to high-order ports.
+#
+# This should not be confused with the NATS Server own -p parameter.
+# For instance, to run the NATS Server and have it listen on port 4444,
+# you would have to run like this:
+#
+#   docker run -p 4444:4444 %%IMAGE%% -p 4444
+#
+# Or, if you want to publish the port 4444 as a different port, for example 5555:
+#
+#   docker run -p 5555:4444 %%IMAGE%% -p 4444
+#
+# Check "docker run" for more information.
 
-$ docker run -d --name nats-main %%IMAGE%%
+$ docker run -d --name nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 %%IMAGE%%
 [INF] Starting nats-server version 1.1.0
 [INF] Git commit [add6d79]
 [INF] Starting http monitor on 0.0.0.0:8222
@@ -28,10 +43,10 @@ $ docker run -d --name nats-main %%IMAGE%%
 # Note that since you are passing arguments, this overrides the CMD section
 # of the Dockerfile, so you need to pass all arguments, including the
 # config file.
-$ docker run -d --name=nats-2 --link nats-main %%IMAGE%% -c gnatsd.conf --routes=nats-route://ruser:T0pS3cr3t@nats-main:6222
+$ docker run -d --name=nats-2 --link nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 %%IMAGE%% -c gnatsd.conf --routes=nats-route://ruser:T0pS3cr3t@nats-main:6222
 
 # If you want to verify the routes are connected, try this instead:
-$ docker run -d --name=nats-2 --link nats-main %%IMAGE%% -c gnatsd.conf --routes=nats-route://ruser:T0pS3cr3t@nats-main:6222 -DV
+$ docker run -d --name=nats-2 --link nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 %%IMAGE%% -c gnatsd.conf --routes=nats-route://ruser:T0pS3cr3t@nats-main:6222 -DV
 [INF] Starting nats-server version 1.1.0
 [DBG] Go build version go1.9.4
 [INF] Git commit [add6d79]
