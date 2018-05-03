@@ -89,14 +89,15 @@ CentOS 6 binaries and/or libraries are built to expect some system calls to be a
 
 If running `docker run --rm -it centos:centos6.7 bash` immediately exits with status code `139`, check to see if your system has disabled vsyscall:
 
-```
+```console
 $ cat /proc/self/maps | egrep 'vdso|vsyscall'
 7fffccfcc000-7fffccfce000 r-xp 00000000 00:00 0                          [vdso]
 $
 ```
 
 vs
-```
+
+```console
 $ cat /proc/self/maps | egrep 'vdso|vsyscall'
 7fffe03fe000-7fffe0400000 r-xp 00000000 00:00 0                          [vdso]
 ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
