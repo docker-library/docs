@@ -85,7 +85,7 @@ This container is running with systemd in a limited context, with the cgroups fi
 
 ## A note about vsyscall
 
-CentOS 6 binaries and/or libraries are built to expect some system calls to be accessed via `vsyscall` mappings.  Some linux distributions have opted to disable `vsyscall` entirely (opting exclusively for more secure `vdso` mappings), causing segmentation faults.
+CentOS 6 binaries and/or libraries are built to expect some system calls to be accessed via `vsyscall` mappings. Some linux distributions have opted to disable `vsyscall` entirely (opting exclusively for more secure `vdso` mappings), causing segmentation faults.
 
 If running `docker run --rm -it centos:centos6.7 bash` immediately exits with status code `139`, check to see if your system has disabled vsyscall:
 
