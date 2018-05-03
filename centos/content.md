@@ -82,3 +82,26 @@ $ docker run -ti -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 80:80 local/c7-systemd-h
 ```
 
 This container is running with systemd in a limited context, with the cgroups filesystem mounted. There have been reports that if you're using an Ubuntu host, you will need to add `-v /tmp/$(mktemp -d):/run` in addition to the cgroups mount.
+
+## A note about vsyscall
+
+Legacy CentOS binaries and/or libraries are built to expect some system calls to be accessed via `vsyscall` mappings.  Some linux distributions have opted to disable `vsyscall` entirely (opting exclusively for more secure `vdso` mappings), causing segmentation faults.
+
+If running `docker run --rm -it centos:centos6.7 bash` immediately exits with status code `139`, check to see if your system has disabled vsyscall:
+
+```
+$ cat /proc/self/maps | egrep 'vdso|vsyscall'
+7fffccfcc000-7fffccfce000 r-xp 00000000 00:00 0                          [vdso]
+$
+```
+
+vs
+```
+$ cat /proc/self/maps | egrep 'vdso|vsyscall'
+7fffe03fe000-7fffe0400000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+```
+
+If you do not see a `vsyscall` mapping, and you need to run a legacy CentOS container, try adding `vsyscall=emulated` to the kernel options in your bootloader
+
+Further reading : [lwn.net](https://lwn.net/Articles/446528/)
