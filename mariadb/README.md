@@ -19,7 +19,7 @@ WARNING:
 -	[`10.3.6`, `10.3` (*10.3/Dockerfile*)](https://github.com/docker-library/mariadb/blob/a8f8451c2fa537cf57a32eadf474019546721b42/10.3/Dockerfile)
 -	[`10.2.14`, `10.2`, `10`, `latest` (*10.2/Dockerfile*)](https://github.com/docker-library/mariadb/blob/a7c0715098bad9097e7ffa892ef0f67dbc74c5ea/10.2/Dockerfile)
 -	[`10.1.32`, `10.1` (*10.1/Dockerfile*)](https://github.com/docker-library/mariadb/blob/fb4c759d82536dc67b04a947bf44517236603e8b/10.1/Dockerfile)
--	[`10.0.34`, `10.0` (*10.0/Dockerfile*)](https://github.com/docker-library/mariadb/blob/ef09e6e573d40aa512dee1309437fc6a9553b7c2/10.0/Dockerfile)
+-	[`10.0.35`, `10.0` (*10.0/Dockerfile*)](https://github.com/docker-library/mariadb/blob/c2ac79887ca8ac50d846cbf28ef1d98cf318d857/10.0/Dockerfile)
 -	[`5.5.60`, `5.5`, `5` (*5.5/Dockerfile*)](https://github.com/docker-library/mariadb/blob/478097ba183fabfcbbdc94ce7591bce9277546f1/5.5/Dockerfile)
 
 # Quick reference

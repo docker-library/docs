@@ -16,9 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.5.0`, `5.5`, `5` (*5/Dockerfile*)](https://github.com/docker-library/gcc/blob/0423cc3f79023c2ab821d2377f73105217c46892/5/Dockerfile)
--	[`6.4.0`, `6.4`, `6` (*6/Dockerfile*)](https://github.com/docker-library/gcc/blob/0423cc3f79023c2ab821d2377f73105217c46892/6/Dockerfile)
--	[`7.3.0`, `7.3`, `7`, `latest` (*7/Dockerfile*)](https://github.com/docker-library/gcc/blob/0f2605b8a300a1cbd70d244330400e8baf1dde33/7/Dockerfile)
+-	[`5.5.0`, `5.5`, `5` (*5/Dockerfile*)](https://github.com/docker-library/gcc/blob/0a7f7464baaa3a24cdd35e1173d84ab94e32a14d/5/Dockerfile)
+-	[`6.4.0`, `6.4`, `6` (*6/Dockerfile*)](https://github.com/docker-library/gcc/blob/0a7f7464baaa3a24cdd35e1173d84ab94e32a14d/6/Dockerfile)
+-	[`7.3.0`, `7.3`, `7` (*7/Dockerfile*)](https://github.com/docker-library/gcc/blob/0a7f7464baaa3a24cdd35e1173d84ab94e32a14d/7/Dockerfile)
+-	[`8.1.0`, `8.1`, `8`, `latest` (*8/Dockerfile*)](https://github.com/docker-library/gcc/blob/0a7f7464baaa3a24cdd35e1173d84ab94e32a14d/8/Dockerfile)
 
 # Quick reference
 

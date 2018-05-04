@@ -16,9 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `4`, `4.1`, `4.1.34` (*4.1.34/mono/Dockerfile*)](https://github.com/fsprojects/docker-fsharp/blob/b01e499916b2784b94a4b1bbf2094413e3d8e999/4.1.34/mono/Dockerfile)
--	[`4.0`, `4.0.1`, `4.0.1.1` (*4.0.1.1/Dockerfile*)](https://github.com/fsprojects/docker-fsharp/blob/b01e499916b2784b94a4b1bbf2094413e3d8e999/4.0.1.1/Dockerfile)
--	[`netcore`, `4-netcore`, `4.1-netcore`, `4.1.34-netcore` (*4.1.34/netcore/Dockerfile*)](https://github.com/fsprojects/docker-fsharp/blob/b01e499916b2784b94a4b1bbf2094413e3d8e999/4.1.34/netcore/Dockerfile)
+-	[`latest`, `10`, `10.0`, `10.0.2` (*10.0.2/mono/Dockerfile*)](https://github.com/fsprojects/docker-fsharp/blob/6992fd0b5e1c6875ccb3955ee3ab0fbc90908e27/10.0.2/mono/Dockerfile)
+-	[`4`, `4.1`, `4.1.34` (*4.1.34/mono/Dockerfile*)](https://github.com/fsprojects/docker-fsharp/blob/6992fd0b5e1c6875ccb3955ee3ab0fbc90908e27/4.1.34/mono/Dockerfile)
+-	[`4.0`, `4.0.1`, `4.0.1.1` (*4.0.1.1/Dockerfile*)](https://github.com/fsprojects/docker-fsharp/blob/6992fd0b5e1c6875ccb3955ee3ab0fbc90908e27/4.0.1.1/Dockerfile)
+-	[`netcore`, `10-netcore`, `10.0-netcore`, `10.0.2-netcore` (*10.0.2/netcore/Dockerfile*)](https://github.com/fsprojects/docker-fsharp/blob/6992fd0b5e1c6875ccb3955ee3ab0fbc90908e27/10.0.2/netcore/Dockerfile)
 
 # Quick reference
 
