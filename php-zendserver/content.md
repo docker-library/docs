@@ -13,15 +13,15 @@ Zend Server is the platform that enables Continuous Delivery, which provides con
 ### Additional Resources
 
 -	[http://www.zend.com/](http://www.zend.com/)
--	[http://kb.zend.com/](http://kb.zend.com/)
+-	[http://support.roguewave.com/](http://support.roguewave.com/)
 -	[http://files.zend.com/help/Zend-Server/zend-server.htm#faqs.htm](http://files.zend.com/help/Zend-Server/zend-server.htm#faqs.htm)
 -	[http://files.zend.com/help/Zend-Server/zend-server.htm#getting\_started.htm](http://files.zend.com/help/Zend-Server/zend-server.htm#getting_started.htm)
 
 # PHP-ZendServer
 
-This is a cluster-enabled version of a Dockerized Zend Server 8.0 container. With Zend Server on Docker, you'll get your PHP applications up and running on a highly available PHP production environment which includes, amongst other features, a highly reliable PHP stack, application monitoring, troubleshooting, and the new and innovative new technology - Z-Ray. Z-Ray gives developers unprecedented visibility into their code by tracking and displaying in a toolbar live and detailed info on how the various elements constructing their page are performing.
+This is a cluster-enabled version of a Dockerized Zend Server container. With Zend Server on Docker, you'll get your PHP applications up and running on a highly available PHP production environment which includes, amongst other features, a highly reliable PHP stack, application monitoring, troubleshooting, and the new and innovative new technology - Z-Ray. Z-Ray gives developers unprecedented visibility into their code by tracking and displaying in a toolbar live and detailed info on how the various elements constructing their page are performing.
 
-For development purposes we provide you with a trial license that is valid until July-31st-2016. For production use you must provide a valid Zend Server license using the instructions below in the Usage section.
+For development purposes we provide you with a time limited trial license. For production use you must provide a valid Zend Server license using the instructions below in the Usage section.
 
 ## Usage
 
@@ -38,11 +38,10 @@ To start a single Zend Server instance, execute:
 -	You can specify the PHP and Zend Server version by adding ':<php-version>' or ':&lt;ZS-version&gt;-php&lt;version&gt;' to the 'docker run' command.
 
 		for example: 
-		$docker run %%IMAGE%%:8.0-php5.6
+		$docker run %%IMAGE%%:8.5-php5.6
 
 #### Availible versions:
 
--	Zend Server 7
 -	Zend Server 8
 -	Zend Server 9 (With PHP 7 GA)(Default version)
 
