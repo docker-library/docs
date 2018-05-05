@@ -78,6 +78,14 @@ $ docker run --link some_database:db -p 8080:8080 -e ADMINER_DESIGN='nette' %%IM
 
 To use a custom design you can add a file called `/var/www/html/adminer.css`.
 
+### Usage with external server
+
+You can specify the default host with the `ADMINER_DEFAULT_SERVER` environment variable. This is useful if you are connecting to an external server or a docker container named something other than the default `db`.
+
+```console
+docker run -p 8080:8080 -e ADMINER_DEFAULT_SERVER=mysql %%IMAGE%%
+```
+
 ## Supported Drivers
 
 While Adminer supports a wide range of database drivers this image only supports the following out of the box:
