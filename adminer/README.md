@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.6.2-standalone`, `4.6-standalone`, `4-standalone`, `standalone`, `4.6.2`, `4.6`, `4`, `latest` (*4/Dockerfile*)](https://github.com/TimWolla/docker-adminer/blob/5865d355d3187839ea6883fcb0d03e3104546102/4/Dockerfile)
--	[`4.6.2-fastcgi`, `4.6-fastcgi`, `4-fastcgi`, `fastcgi` (*4/fastcgi/Dockerfile*)](https://github.com/TimWolla/docker-adminer/blob/5865d355d3187839ea6883fcb0d03e3104546102/4/fastcgi/Dockerfile)
+-	[`4.6.2-standalone`, `4.6-standalone`, `4-standalone`, `standalone`, `4.6.2`, `4.6`, `4`, `latest` (*4/Dockerfile*)](https://github.com/TimWolla/docker-adminer/blob/2f4a4c3e9a1c4741d5685836e4782a2c211087cc/4/Dockerfile)
+-	[`4.6.2-fastcgi`, `4.6-fastcgi`, `4-fastcgi`, `fastcgi` (*4/fastcgi/Dockerfile*)](https://github.com/TimWolla/docker-adminer/blob/2f4a4c3e9a1c4741d5685836e4782a2c211087cc/4/fastcgi/Dockerfile)
 
 # Quick reference
 
@@ -150,6 +150,14 @@ $ docker run --link some_database:db -p 8080:8080 -e ADMINER_DESIGN='nette' admi
 ```
 
 To use a custom design you can add a file called `/var/www/html/adminer.css`.
+
+### Usage with external server
+
+You can specify the default host with the `ADMINER_DEFAULT_SERVER` environment variable. This is useful if you are connecting to an external server or a docker container named something other than the default `db`.
+
+```console
+docker run -p 8080:8080 -e ADMINER_DEFAULT_SERVER=mysql adminer
+```
 
 ## Supported Drivers
 
