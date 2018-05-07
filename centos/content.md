@@ -103,6 +103,6 @@ $ cat /proc/self/maps | egrep 'vdso|vsyscall'
 ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
 ```
 
-If you do not see a `vsyscall` mapping, and you need to run a legacy CentOS container, try adding `vsyscall=emulated` to the kernel options in your bootloader
+If you do not see a `vsyscall` mapping, and you need to run a CentOS 6 container, try adding `vsyscall=emulated` to the kernel options in your bootloader
 
 Further reading : [lwn.net](https://lwn.net/Articles/446528/)
