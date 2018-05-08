@@ -10,70 +10,117 @@ First developed by the software company 10gen (now MongoDB Inc.) in October 2007
 
 # How to use this image
 
-## start a mongo instance
+## Start a `%%REPO%%` server instance
 
 ```console
-$ docker run --name some-mongo -d %%IMAGE%%
+$ docker run --name some-%%REPO%% -d %%IMAGE%%:tag
 ```
 
-This image includes `EXPOSE 27017` (the mongo port), so standard container linking will make it automatically available to the linked containers (as the following examples illustrate).
+... where `some-%%REPO%%` is the name you want to assign to your container and tag is the tag specifying the MongoDB version you want. See the list above for relevant tags.
 
-## connect to it from an application
+## Connect to MongoDB from another Docker container
+
+The MongoDB server in the image listens on the standard MongoDB port, `27017`, so connecting via container linking or Docker networks will be the be the same as connecting to a remote `mongod`. The following example starts another MongoDB container instance and runs the `mongo` command line client against the original MongoDB container from the example above, allowing you to execute MongoDB statements against your database instance:
 
 ```console
-$ docker run --name some-app --link some-mongo:mongo -d application-that-uses-mongo
+$ docker run -it --link some-%%REPO%%:mongo --rm %%IMAGE%% mongo --host mongo test
 ```
 
-## ... or via `mongo`
+... where `some-%%REPO%%` is the name of your original `mongo` container.
+
+## %%STACK%%
+
+Run `docker stack deploy -c stack.yml %%REPO%%` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8081`, `http://localhost:8081`, or `http://host-ip:8081` (as appropriate).
+
+## Container shell access and viewing MongoDB logs
+
+The `docker exec` command allows you to run commands inside a Docker container. The following command line will give you a bash shell inside your `%%IMAGE%%` container:
 
 ```console
-$ docker run -it --link some-mongo:mongo --rm %%IMAGE%% sh -c 'exec mongo "$MONGO_PORT_27017_TCP_ADDR:$MONGO_PORT_27017_TCP_PORT/test"'
+$ docker exec -it some-%%REPO%% bash
+```
+
+The MongoDB Server log is available through Docker's container log:
+
+```console
+$ docker logs some-%%REPO%%
 ```
 
 ## Configuration
 
-See the [official docs](https://docs.mongodb.com/manual/) for infomation on using and configuring MongoDB for things like replica sets and sharding.
+See the [MongoDB manual](https://docs.mongodb.com/manual/) for information on using and configuring MongoDB for things like replica sets and sharding.
 
-Just add the `--storageEngine` argument if you want to use the WiredTiger storage engine in MongoDB 3.0 and above without making a config file. WiredTiger is the default storage engine in MongoDB 3.2 and above. Be sure to check the [docs](https://docs.mongodb.com/manual/release-notes/3.0-upgrade/#change-storage-engine-for-standalone-to-wiredtiger) on how to upgrade from older versions.
+## Customize configuration without configuration file
+
+Most MongoDB configuration can be set through flags to `mongod`. The entrypoint of the image is created to pass its arguments along to `mongod`. See below an example of setting MongoDB to use a [smaller default file size](https://docs.mongodb.com/manual/reference/program/mongod/#cmdoption-mongod-smallfiles) via `docker run`.
 
 ```console
-$ docker run --name some-mongo -d %%IMAGE%% --storageEngine wiredTiger
+$ docker run --name some-%%REPO%% -d %%IMAGE%% --smallfiles
 ```
 
-### Authentication and Authorization
+And here is the same with a `docker-compose.yml` file
 
-MongoDB does not require authentication by default, but it can be configured to do so. For more details about the functionality described here, please see the sections in the official documentation which describe [authentication](https://docs.mongodb.com/manual/core/authentication/) and [authorization](https://docs.mongodb.com/manual/core/authorization/) in more detail.
-
-#### Start the Database
-
-```console
-$ docker run --name some-mongo -d mongo --auth
+```yaml
+version: '3.1'
+services:
+  mongo:
+    image: %%IMAGE%%
+    command: --smallfiles
 ```
 
-#### Add the Initial Admin User
+To see the full list of possible options, check the MonogDB manual on [`mongod`](https://docs.mongodb.com/manual/reference/program/mongod/) or check the `--help` output of `mongod`:
 
 ```console
-$ docker exec -it some-mongo mongo admin
-connecting to: admin
-> db.createUser({ user: 'jsmith', pwd: 'some-initial-password', roles: [ { role: "userAdminAnyDatabase", db: "admin" } ] });
-Successfully added user: {
-	"user" : "jsmith",
-	"roles" : [
-		{
-			"role" : "userAdminAnyDatabase",
-			"db" : "admin"
-		}
-	]
-}
+$ docker run -it --rm %%IMAGE%% --help
 ```
 
-#### Connect Externally
+## Using a custom MongoDB configuration file
+
+For a more complicated configuration setup, you can still use the MongoDB configuration file. `mongod` does not read a configuration file by default, so the `--config` option with the path to the configuration file needs to be specified. Create a custom configuration file and put it in the container by either creating a custom Dockerfile `FROM %%IMAGE%%` or mounting it from the host machine to the container. See the MongoDB manual for a full list of [configuration file](https://docs.mongodb.com/manual/reference/configuration-options/) options.
+
+For example, `/my/custom/mongod.conf` is the path to the custom configuration file. Then start the MongoDB container like the following:
 
 ```console
-$ docker run -it --rm --link some-mongo:mongo %%IMAGE%% mongo -u jsmith -p some-initial-password --authenticationDatabase admin some-mongo/some-db
+$ docker run --name some-%%REPO%% -v /my/custom:/etc/mongo -d %%IMAGE%% --config /etc/mongo/mongod.conf
+```
+
+## Environment Variables
+
+When you start the `%%REPO%%` image, you can adjust the initialization of the MongoDB instance by passing one or more environment variables on the `docker run` command line. Do note that none of the variables below will have any effect if you start the container with a data directory that already contains a database: any pre-existing database will always be left untouched on container startup.
+
+### `MONGO_INITDB_ROOT_USERNAME`, `MONGO_INITDB_ROOT_PASSWORD`
+
+These variables, used in conjunction, create a new user and set that user's password. This user is created in the `admin` authentication database and given the role of `root`. Both variables are required for a user to be created. If both are present then MongoDB will start with authentication enabled: `mongod --auth`. Authentication in MongoDB is fairly complex, so more complex user setup is explicitly left to the user via `/docker-entrypoint-initdb.d/` (see *Initializing a fresh instance* below). The following is an example of using these two variables to create a MongoDB instance and then using the `mongo` cli to connect against the `admin` authentication database.
+
+```console
+$ docker run -d --name some-%%REPO%% -e MONGO_INITDB_ROOT_USERNAME=mongoadmin -e MONGO_INITDB_ROOT_PASSWORD=secret %%IMAGE%%
+
+$ docker run -it --rm --link some-%%REPO%%:mongo %%IMAGE%% mongo --host mongo -u mongoadmin -p secret --authenticationDatabase some-db
 > db.getName();
 some-db
 ```
+
+If you do not provide these two variables or do not set the `--auth` flag with your own custom user setup, then MongoDB will not require authentication. For more details about the functionality described here, please see the sections in the official documentation which describe [authentication](https://docs.mongodb.com/manual/core/authentication/) and [authorization](https://docs.mongodb.com/manual/core/authorization/) in more detail.
+
+### `MONGO_INITDB_DATABASE`
+
+This variable allows you to specify the name of a database to be used for creation scripts in `/docker-entrypoint-initdb.d/*.js` (see *Initializing a fresh instance* below). MongoDB is fundamentally designed for "create on first use", so if you do not insert data with your JavaScript files, then no database is created.
+
+## Docker Secrets
+
+As an alternative to passing sensitive information via environment variables, `_FILE` may be appended to the previously listed environment variables, causing the initialization script to load the values for those variables from files present in the container. In particular, this can be used to load passwords from Docker secrets stored in `/run/secrets/<secret_name>` files. For example:
+
+```console
+$ docker run --name some-%%REPO%% -e MONGO_INITDB_ROOT_PASSWORD_FILE=/run/secrets/mongo-root -d %%IMAGE%%
+```
+
+Currently, this is only supported for `MONGO_INITDB_ROOT_USERNAME` and `MONGO_INITDB_ROOT_PASSWORD`.
+
+# Initializing a fresh instance
+
+When a container is started for the first time it will execute files with extensions `.sh` and `.js` that are found in `/docker-entrypoint-initdb.d`. Files will be executed in alphabetical order. `.js` files will be executed by `mongo` using the database specified by the `MONGO_INITDB_DATABASE` variable, if it is present, or `test` otherwise. You may also switch databases within the `.js` script.
+
+# Caveats
 
 ## Where to Store Data
 
@@ -90,7 +137,7 @@ The Docker documentation is a good starting point for understanding the differen
 2.	Start your `%%REPO%%` container like this:
 
 	```console
-	$ docker run --name some-%%REPO%% -v /my/own/datadir:/data/db -d %%IMAGE%%:tag
+	$ docker run --name some-%%REPO%% -v /my/own/datadir:/data/db -d %%IMAGE%%
 	```
 
 The `-v /my/own/datadir:/data/db` part of the command mounts the `/my/own/datadir` directory from the underlying host system as `/data/db` inside the container, where MongoDB by default will write its data files.
@@ -101,4 +148,12 @@ Note that users on host systems with SELinux enabled may see issues with this. T
 
 ```console
 $ chcon -Rt svirt_sandbox_file_t /my/own/datadir
+```
+
+## Creating database dumps
+
+Most of the normal tools will work, although their usage might be a little convoluted in some cases to ensure they have access to the `mongod` server. A simple way to ensure this is to use `docker exec` and run the tool from the same container, similar to the following:
+
+```console
+$ docker exec some-%%REPO%% sh -c 'exec mongodump -d <database_name> --archive' > /some/path/on/your/host/all-collections.archive
 ```
