@@ -171,3 +171,39 @@ Check that the measurement `foo` is added in the DB.
 -	[Input Plugins](https://docs.influxdata.com/telegraf/latest/plugins/inputs/)
 
 -	[Output Plugins](https://docs.influxdata.com/telegraf/latest/plugins/outputs/)
+
+### Monitoring the host filesystem
+
+One of the more common use cases for Telegraf is running it in a container to monitor the host filesystem using the inputs that take information from the `/proc` filesystem. This section only applies to monitoring a Linux host.
+
+To do this, you can mount the host's `/proc` filesystem inside of the container and set the location of `/proc` to an alternate location by using the `HOST_PROC` environment variable to change the location of where `/proc` is located. As an example:
+
+```console
+$ docker run -d --name=telegraf \
+      --net=influxdb \
+      -e HOST_PROC=/host/proc \
+      -v /proc:/host/proc:ro \
+      -v $PWD/telegraf.conf:/etc/telegraf/telegraf.conf:ro \
+      %%IMAGE%%
+```
+
+### Monitoring docker containers
+
+To monitor other docker containers, you can use the docker plugin and mount the docker socket into the container. An example configuration is below:
+
+```toml
+[[inputs.docker]]
+  endpoint = "unix:///var/run/docker.sock"
+```
+
+Then you can start the telegraf container.
+
+```console
+$ docker run -d --name=telegraf \
+      --net=influxdb \
+      -v /var/run/docker.sock:/var/run/docker.sock \
+      -v $PWD/telegraf.conf:/etc/telegraf/telegraf.conf:ro \
+      %%IMAGE%%
+```
+
+Refer to the docker [plugin documentation](https://github.com/influxdata/telegraf/blob/master/plugins/inputs/docker/README.md) for more information.
