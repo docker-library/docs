@@ -178,6 +178,16 @@ RUN curl -fsSL 'https://xcache.lighttpd.net/pub/Releases/3.2.0/xcache-3.2.0.tar.
 	&& rm -r /tmp/xcache
 ```
 
+## Running as an arbitrary user
+
+For running the FPM variants as an arbitrary user, the `--user` flag to `docker run` should be used (which can accept both a username/group in the container's `/etc/passwd` file like `--user daemon` or a specific UID/GID like `--user 1000:1000`).
+
+For running the Apache variants as an arbitrary user, there are several choices:
+
+-	If your kernel [is version 4.11 or newer](https://github.com/moby/moby/issues/8460#issuecomment-312459310), you can add `--sysctl net.ipv4.ip_unprivileged_port_start=0` and then `--user` should work as it does for FPM.
+-	If you adjust the Apache configuration to use an "unprivileged" port (greater than 1024 by default), then `--user` should work as it does for FPM regardless of kernel version.
+-	Otherwise, setting `APACHE_RUN_USER` and/or `APACHE_RUN_GROUP` should have the desired effect (for example, `-e APACHE_RUN_USER=daemon` or `-e APACHE_RUN_USER=#1000` -- see [the Apache `User` directive documentation for details on the expected syntax](https://httpd.apache.org/docs/2.4/mod/mod_unixd.html#user)).
+
 ## "`E: Package 'php-XXX' has no installation candidate`"
 
 As of [docker-library/php#542](https://github.com/docker-library/php/pull/542), this image blocks the installation of Debian's PHP packages. There is some additional discussion of this change in [docker-library/php#551 (comment)](https://github.com/docker-library/php/issues/551#issuecomment-354849074), but the gist is that installing Debian's PHP packages in this image leads to two conflicting installations of PHP in a single image, which is almost certainly not the intended outcome.
