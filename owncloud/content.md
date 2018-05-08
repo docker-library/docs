@@ -47,3 +47,7 @@ $ docker exec -u www-data some-owncloud php occ status
 ## %%STACK%%
 
 Run `docker stack deploy -c stack.yml %%REPO%%` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080/`, `http://localhost:8080/`, or `http://host-ip:8080` (as appropriate).
+
+## Running as an arbitrary user
+
+See [the "Running as an arbitrary user" section of the `php` image documentation](https://hub.docker.com/_/php/).

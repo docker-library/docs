@@ -74,7 +74,20 @@ If you don't want to include a `Dockerfile` in your project, it is sufficient to
 $ docker run -d -p 80:80 --name my-apache-php-app -v "$PWD":/var/www/html %%IMAGE%%:7.0-apache
 ```
 
-### How to install more PHP extensions
+### Changing `DocumentRoot`
+
+Some applications may wish to change the default `DocumentRoot` in Apache (away from `/var/www/html`). The following demonstrates one way to do so using an environment variable (which can then be modified at container runtime as well):
+
+```dockerfile
+FROM %%IMAGE%%:7.1-apache
+
+ENV APACHE_DOCUMENT_ROOT /path/to/new/root
+
+RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf
+RUN sed -ri -e 's!/var/www/!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/apache2.conf /etc/apache2/conf-available/*.conf
+```
+
+## How to install more PHP extensions
 
 We provide the helper scripts `docker-php-ext-configure`, `docker-php-ext-install`, and `docker-php-ext-enable` to more easily install PHP extensions.
 
@@ -87,7 +100,7 @@ RUN docker-php-source extract \
 	&& docker-php-source delete
 ```
 
-#### PHP Core Extensions
+### PHP Core Extensions
 
 For example, if you want to have a PHP-FPM image with `iconv`, `mcrypt` and `gd` extensions, you can inherit the base image that you like, and write your own `Dockerfile` like this:
 
@@ -107,7 +120,7 @@ Remember, you must install dependencies for your extensions manually. If an exte
 
 See ["Dockerizing Compiled Software"](https://tianon.xyz/post/2017/12/26/dockerize-compiled-software.html) for a description of the technique Tianon uses for determining the necessary build-time dependencies for any bit of software (which applies directly to compiling PHP extensions).
 
-#### PECL extensions
+### PECL extensions
 
 Some extensions are not provided with the PHP source, but are instead available through [PECL](https://pecl.php.net/). To install a PECL extension, use `pecl install` to download and compile it, then use `docker-php-ext-enable` to enable it:
 
@@ -131,7 +144,7 @@ For example, `memcached-2.2.0` has no PHP version constraints (https://pecl.php.
 
 Beyond the compatibility issue, it's also a good practice to ensure you know when your dependencies receive updates and can control those updates directly.
 
-#### Other extensions
+### Other extensions
 
 Some extensions are not provided via either Core or PECL; these can be installed too, although the process is less automated:
 
@@ -165,7 +178,17 @@ RUN curl -fsSL 'https://xcache.lighttpd.net/pub/Releases/3.2.0/xcache-3.2.0.tar.
 	&& rm -r /tmp/xcache
 ```
 
-#### "`E: Package 'php-XXX' has no installation candidate`"
+## Running as an arbitrary user
+
+For running the FPM variants as an arbitrary user, the `--user` flag to `docker run` should be used (which can accept both a username/group in the container's `/etc/passwd` file like `--user daemon` or a specific UID/GID like `--user 1000:1000`).
+
+For running the Apache variants as an arbitrary user, there are several choices:
+
+-	If your kernel [is version 4.11 or newer](https://github.com/moby/moby/issues/8460#issuecomment-312459310), you can add `--sysctl net.ipv4.ip_unprivileged_port_start=0` and then `--user` should work as it does for FPM.
+-	If you adjust the Apache configuration to use an "unprivileged" port (greater than 1024 by default), then `--user` should work as it does for FPM regardless of kernel version.
+-	Otherwise, setting `APACHE_RUN_USER` and/or `APACHE_RUN_GROUP` should have the desired effect (for example, `-e APACHE_RUN_USER=daemon` or `-e APACHE_RUN_USER=#1000` -- see [the Apache `User` directive documentation for details on the expected syntax](https://httpd.apache.org/docs/2.4/mod/mod_unixd.html#user)).
+
+## "`E: Package 'php-XXX' has no installation candidate`"
 
 As of [docker-library/php#542](https://github.com/docker-library/php/pull/542), this image blocks the installation of Debian's PHP packages. There is some additional discussion of this change in [docker-library/php#551 (comment)](https://github.com/docker-library/php/issues/551#issuecomment-354849074), but the gist is that installing Debian's PHP packages in this image leads to two conflicting installations of PHP in a single image, which is almost certainly not the intended outcome.
 
@@ -176,16 +199,3 @@ RUN rm /etc/apt/preferences.d/no-debian-php
 ```
 
 The *proper* solution to this error is to either use `FROM debian:XXX` and install Debian's PHP packages directly, or to use `docker-php-ext-install`, `pecl`, and/or `phpize` to install the necessary additional extensions and utilities.
-
-### Changing `DocumentRoot`
-
-Some applications may wish to change the default `DocumentRoot` in Apache (away from `/var/www/html`). The following demonstrates one way to do so using an environment variable (which can then be modified at container runtime as well):
-
-```dockerfile
-FROM %%IMAGE%%:7.1-apache
-
-ENV APACHE_DOCUMENT_ROOT /path/to/new/root
-
-RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf
-RUN sed -ri -e 's!/var/www/!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/apache2.conf /etc/apache2/conf-available/*.conf
-```
