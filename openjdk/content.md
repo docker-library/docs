@@ -58,3 +58,7 @@ $ start /b /wait /affinity 0x3 path/to/java.exe ...
 In this example CPU affinity hex mask `0x3` will limit JVM to 2 CPU cores.
 
 RAM limit is supported by Windows Server containers, but currently JVM cannot detect it. To prevent excessive memory allocations, `-XX:MaxRAM=...` option must be specified with the value that is not bigger than a containers RAM limit.
+
+## Environment variables with periods in their names
+
+Some shells (notably, [the BusyBox `/bin/sh` included in Alpine Linux](https://github.com/docker-library/openjdk/issues/135)) do not support environment variables with periods in the names (which are technically not POSIX compliant), and thus *strip* them instead of passing them through (as Bash does). If your application requires environment variables of this form, either use `CMD ["java", ...]` directly (no shell), or (install and) use Bash explicitly instead of `/bin/sh`.
