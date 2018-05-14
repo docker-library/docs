@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.4.0-apache`, `3.4-apache`, `3-apache`, `apache`, `3.4.0`, `3.4`, `3`, `latest` (*apache/Dockerfile*)](https://github.com/matomo-org/docker/blob/c985c710bcd7ff07a79efd60433bc7f0d1674c28/apache/Dockerfile)
--	[`3.4.0-fpm`, `3.4-fpm`, `3-fpm`, `fpm` (*fpm/Dockerfile*)](https://github.com/matomo-org/docker/blob/c985c710bcd7ff07a79efd60433bc7f0d1674c28/fpm/Dockerfile)
+-	[`3.5.0-apache`, `3.5-apache`, `3-apache`, `apache`, `3.5.0`, `3.5`, `3`, `latest` (*apache/Dockerfile*)](https://github.com/matomo-org/docker/blob/edd76a3640e34e8318f7dbb08b4875838cb83e0c/apache/Dockerfile)
+-	[`3.5.0-fpm`, `3.5-fpm`, `3-fpm`, `fpm` (*fpm/Dockerfile*)](https://github.com/matomo-org/docker/blob/edd76a3640e34e8318f7dbb08b4875838cb83e0c/fpm/Dockerfile)
 
 # Quick reference
 
