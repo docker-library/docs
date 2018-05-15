@@ -36,6 +36,14 @@ WARNING:
 -	[`lunar-ros-base-stretch` (*ros/lunar/debian/stretch/ros-base/Dockerfile*)](https://github.com/osrf/docker_images/blob/4d697291568d826da713ef8b20be58fa8e86e4f5/ros/lunar/debian/stretch/ros-base/Dockerfile)
 -	[`lunar-robot-stretch` (*ros/lunar/debian/stretch/robot/Dockerfile*)](https://github.com/osrf/docker_images/blob/4d697291568d826da713ef8b20be58fa8e86e4f5/ros/lunar/debian/stretch/robot/Dockerfile)
 -	[`lunar-perception-stretch` (*ros/lunar/debian/stretch/perception/Dockerfile*)](https://github.com/osrf/docker_images/blob/4d697291568d826da713ef8b20be58fa8e86e4f5/ros/lunar/debian/stretch/perception/Dockerfile)
+-	[`melodic-ros-core`, `melodic-ros-core-bionic` (*ros/melodic/ubuntu/bionic/ros-core/Dockerfile*)](https://github.com/osrf/docker_images/blob/e6270376fb39433897275b76910ed42436681efe/ros/melodic/ubuntu/bionic/ros-core/Dockerfile)
+-	[`melodic-ros-base`, `melodic-ros-base-bionic`, `melodic` (*ros/melodic/ubuntu/bionic/ros-base/Dockerfile*)](https://github.com/osrf/docker_images/blob/e6270376fb39433897275b76910ed42436681efe/ros/melodic/ubuntu/bionic/ros-base/Dockerfile)
+-	[`melodic-robot`, `melodic-robot-bionic` (*ros/melodic/ubuntu/bionic/robot/Dockerfile*)](https://github.com/osrf/docker_images/blob/e6270376fb39433897275b76910ed42436681efe/ros/melodic/ubuntu/bionic/robot/Dockerfile)
+-	[`melodic-perception`, `melodic-perception-bionic` (*ros/melodic/ubuntu/bionic/perception/Dockerfile*)](https://github.com/osrf/docker_images/blob/e6270376fb39433897275b76910ed42436681efe/ros/melodic/ubuntu/bionic/perception/Dockerfile)
+-	[`melodic-ros-core-stretch` (*ros/melodic/debian/stretch/ros-core/Dockerfile*)](https://github.com/osrf/docker_images/blob/e6270376fb39433897275b76910ed42436681efe/ros/melodic/debian/stretch/ros-core/Dockerfile)
+-	[`melodic-ros-base-stretch` (*ros/melodic/debian/stretch/ros-base/Dockerfile*)](https://github.com/osrf/docker_images/blob/e6270376fb39433897275b76910ed42436681efe/ros/melodic/debian/stretch/ros-base/Dockerfile)
+-	[`melodic-robot-stretch` (*ros/melodic/debian/stretch/robot/Dockerfile*)](https://github.com/osrf/docker_images/blob/e6270376fb39433897275b76910ed42436681efe/ros/melodic/debian/stretch/robot/Dockerfile)
+-	[`melodic-perception-stretch` (*ros/melodic/debian/stretch/perception/Dockerfile*)](https://github.com/osrf/docker_images/blob/e6270376fb39433897275b76910ed42436681efe/ros/melodic/debian/stretch/perception/Dockerfile)
 
 # Quick reference
 
