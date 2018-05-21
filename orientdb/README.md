@@ -20,8 +20,8 @@ WARNING:
 -	[`2.1.25` (*2.1/Dockerfile*)](https://github.com/orientechnologies/orientdb-docker/blob/8a9633c19fa9c53a5446b9b62997ff389813e785/2.1/Dockerfile)
 -	[`2.2.35` (*2.2/x86_64/alpine/Dockerfile*)](https://github.com/orientechnologies/orientdb-docker/blob/c3fd68002d9bc3e4a810dca9d74104a998e624d8/2.2/x86_64/alpine/Dockerfile)
 -	[`2.2.35-spatial` (*2.2-spatial/x86_64/alpine/Dockerfile*)](https://github.com/orientechnologies/orientdb-docker/blob/c3fd68002d9bc3e4a810dca9d74104a998e624d8/2.2-spatial/x86_64/alpine/Dockerfile)
--	[`3.0.0`, `latest` (*3.0/x86_64/alpine/Dockerfile*)](https://github.com/orientechnologies/orientdb-docker/blob/c3fd68002d9bc3e4a810dca9d74104a998e624d8/3.0/x86_64/alpine/Dockerfile)
--	[`3.0.0-spatial` (*3.0-spatial/x86_64/alpine/Dockerfile*)](https://github.com/orientechnologies/orientdb-docker/blob/c3fd68002d9bc3e4a810dca9d74104a998e624d8/3.0-spatial/x86_64/alpine/Dockerfile)
+-	[`3.0.1`, `latest` (*3.0/x86_64/alpine/Dockerfile*)](https://github.com/orientechnologies/orientdb-docker/blob/a6eac5cbd18b5979a8078f5dd7ce46c69441fb17/3.0/x86_64/alpine/Dockerfile)
+-	[`3.0.1-spatial` (*3.0-spatial/x86_64/alpine/Dockerfile*)](https://github.com/orientechnologies/orientdb-docker/blob/a6eac5cbd18b5979a8078f5dd7ce46c69441fb17/3.0-spatial/x86_64/alpine/Dockerfile)
 
 # Quick reference
 
