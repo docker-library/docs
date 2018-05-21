@@ -17,7 +17,7 @@ WARNING:
 # Supported tags and respective `Dockerfile` links
 
 -	[`10.3.6`, `10.3` (*10.3/Dockerfile*)](https://github.com/docker-library/mariadb/blob/27b1b68e3bd68f114609090ccb54318fe48d7e7e/10.3/Dockerfile)
--	[`10.2.14`, `10.2`, `10`, `latest` (*10.2/Dockerfile*)](https://github.com/docker-library/mariadb/blob/27b1b68e3bd68f114609090ccb54318fe48d7e7e/10.2/Dockerfile)
+-	[`10.2.15`, `10.2`, `10`, `latest` (*10.2/Dockerfile*)](https://github.com/docker-library/mariadb/blob/c10d7ea8573bc40dd6a6ba851e86c292b7fc78eb/10.2/Dockerfile)
 -	[`10.1.33`, `10.1` (*10.1/Dockerfile*)](https://github.com/docker-library/mariadb/blob/662b59f5d1418a93ba0f10982338514b376a5ed0/10.1/Dockerfile)
 -	[`10.0.35`, `10.0` (*10.0/Dockerfile*)](https://github.com/docker-library/mariadb/blob/27b1b68e3bd68f114609090ccb54318fe48d7e7e/10.0/Dockerfile)
 -	[`5.5.60`, `5.5`, `5` (*5.5/Dockerfile*)](https://github.com/docker-library/mariadb/blob/27b1b68e3bd68f114609090ccb54318fe48d7e7e/5.5/Dockerfile)
