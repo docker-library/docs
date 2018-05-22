@@ -16,12 +16,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`9.4.9`, `9.4`, `9`, `9.4.9-jre8`, `9.4-jre8`, `9-jre8`, `latest`, `jre8` (*9.4-jre8/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/8690c638b36f2d3ad79b82ff27a6bfadb0332890/9.4-jre8/Dockerfile)
--	[`9.4.9-alpine`, `9.4-alpine`, `9-alpine`, `9.4.9-jre8-alpine`, `9.4-jre8-alpine`, `9-jre8-alpine`, `alpine`, `jre8-alpine` (*9.4-jre8/alpine/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/8690c638b36f2d3ad79b82ff27a6bfadb0332890/9.4-jre8/alpine/Dockerfile)
--	[`9.3.23`, `9.3`, `9.3.23-jre8`, `9.3-jre8` (*9.3-jre8/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/9c6d9655906fd62fbef0692b7faf01fb2404fd59/9.3-jre8/Dockerfile)
--	[`9.3.23-alpine`, `9.3-alpine`, `9.3.23-jre8-alpine`, `9.3-jre8-alpine` (*9.3-jre8/alpine/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/9c6d9655906fd62fbef0692b7faf01fb2404fd59/9.3-jre8/alpine/Dockerfile)
--	[`9.2.24`, `9.2`, `9.2.24-jre8`, `9.2-jre8` (*9.2-jre8/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/75fd6775daec3aa38f995e4a8de40f00d8ed17f9/9.2-jre8/Dockerfile)
--	[`9.2.24-jre7`, `9.2-jre7`, `9-jre7`, `jre7` (*9.2-jre7/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/75fd6775daec3aa38f995e4a8de40f00d8ed17f9/9.2-jre7/Dockerfile)
+-	[`9.4.9`, `9.4`, `9`, `9.4.9-jre8`, `9.4-jre8`, `9-jre8`, `latest`, `jre8` (*9.4-jre8/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/ed9a02bd73f7056d32ef011039b2c5b2480fc82e/9.4-jre8/Dockerfile)
+-	[`9.4.9-alpine`, `9.4-alpine`, `9-alpine`, `9.4.9-jre8-alpine`, `9.4-jre8-alpine`, `9-jre8-alpine`, `alpine`, `jre8-alpine` (*9.4-jre8/alpine/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/ed9a02bd73f7056d32ef011039b2c5b2480fc82e/9.4-jre8/alpine/Dockerfile)
+-	[`9.3.23`, `9.3`, `9.3.23-jre8`, `9.3-jre8` (*9.3-jre8/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/ed9a02bd73f7056d32ef011039b2c5b2480fc82e/9.3-jre8/Dockerfile)
+-	[`9.3.23-alpine`, `9.3-alpine`, `9.3.23-jre8-alpine`, `9.3-jre8-alpine` (*9.3-jre8/alpine/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/ed9a02bd73f7056d32ef011039b2c5b2480fc82e/9.3-jre8/alpine/Dockerfile)
+-	[`9.2.24`, `9.2`, `9.2.24-jre8`, `9.2-jre8` (*9.2-jre8/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/ed9a02bd73f7056d32ef011039b2c5b2480fc82e/9.2-jre8/Dockerfile)
+-	[`9.2.24-jre7`, `9.2-jre7`, `9-jre7`, `jre7` (*9.2-jre7/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/ed9a02bd73f7056d32ef011039b2c5b2480fc82e/9.2-jre7/Dockerfile)
 
 # Quick reference
 
@@ -35,7 +35,7 @@ WARNING:
 	[the Docker Community](https://github.com/appropriate/docker-jetty)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/jetty/)
+	[`amd64`](https://hub.docker.com/r/amd64/jetty/), [`arm32v5`](https://hub.docker.com/r/arm32v5/jetty/), [`arm32v6`](https://hub.docker.com/r/arm32v6/jetty/), [`arm32v7`](https://hub.docker.com/r/arm32v7/jetty/), [`arm64v8`](https://hub.docker.com/r/arm64v8/jetty/), [`i386`](https://hub.docker.com/r/i386/jetty/), [`ppc64le`](https://hub.docker.com/r/ppc64le/jetty/), [`s390x`](https://hub.docker.com/r/s390x/jetty/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/jetty/` directory](https://github.com/docker-library/repo-info/blob/master/repos/jetty) ([history](https://github.com/docker-library/repo-info/commits/master/repos/jetty))  
