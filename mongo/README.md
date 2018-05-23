@@ -20,8 +20,9 @@ WARNING:
 
 -	[`3.2.20-jessie`, `3.2-jessie` (*3.2/Dockerfile*)](https://github.com/docker-library/mongo/blob/753d566a83a4e9734227f186e554c87b4f08be51/3.2/Dockerfile)
 -	[`3.4.15-jessie`, `3.4-jessie` (*3.4/Dockerfile*)](https://github.com/docker-library/mongo/blob/f77d645e749bdda0740a35c00213baae8859edf2/3.4/Dockerfile)
--	[`3.6.4-jessie`, `3.6-jessie`, `3-jessie`, `jessie` (*3.6/Dockerfile*)](https://github.com/docker-library/mongo/blob/dd8ceb3b3552d11c901a603d0b8b303e2fe4bc2e/3.6/Dockerfile)
--	[`3.7.9-jessie`, `3.7-jessie`, `unstable-jessie` (*3.7/Dockerfile*)](https://github.com/docker-library/mongo/blob/25295e42263584fff5f88dcbe196c0e36f2abcc5/3.7/Dockerfile)
+-	[`3.6.5-jessie`, `3.6-jessie`, `3-jessie`, `jessie` (*3.6/Dockerfile*)](https://github.com/docker-library/mongo/blob/4e9a69f44326f034efa79ded2275ec856673bee1/3.6/Dockerfile)
+-	[`3.7.9-xenial`, `3.7-xenial`, `unstable-xenial` (*3.7/Dockerfile*)](https://github.com/docker-library/mongo/blob/de4376792e103d35e9b16a023c4046d17cf15f22/3.7/Dockerfile)
+-	[`4.0.0-rc0-xenial`, `4.0-rc-xenial`, `rc-xenial` (*4.0-rc/Dockerfile*)](https://github.com/docker-library/mongo/blob/de4376792e103d35e9b16a023c4046d17cf15f22/4.0-rc/Dockerfile)
 
 ## Shared Tags
 
@@ -29,10 +30,12 @@ WARNING:
 	-	[`3.2.20-jessie` (*3.2/Dockerfile*)](https://github.com/docker-library/mongo/blob/753d566a83a4e9734227f186e554c87b4f08be51/3.2/Dockerfile)
 -	`3.4.15`, `3.4`:
 	-	[`3.4.15-jessie` (*3.4/Dockerfile*)](https://github.com/docker-library/mongo/blob/f77d645e749bdda0740a35c00213baae8859edf2/3.4/Dockerfile)
--	`3.6.4`, `3.6`, `3`, `latest`:
-	-	[`3.6.4-jessie` (*3.6/Dockerfile*)](https://github.com/docker-library/mongo/blob/dd8ceb3b3552d11c901a603d0b8b303e2fe4bc2e/3.6/Dockerfile)
+-	`3.6.5`, `3.6`, `3`, `latest`:
+	-	[`3.6.5-jessie` (*3.6/Dockerfile*)](https://github.com/docker-library/mongo/blob/4e9a69f44326f034efa79ded2275ec856673bee1/3.6/Dockerfile)
 -	`3.7.9`, `3.7`, `unstable`:
-	-	[`3.7.9-jessie` (*3.7/Dockerfile*)](https://github.com/docker-library/mongo/blob/25295e42263584fff5f88dcbe196c0e36f2abcc5/3.7/Dockerfile)
+	-	[`3.7.9-xenial` (*3.7/Dockerfile*)](https://github.com/docker-library/mongo/blob/de4376792e103d35e9b16a023c4046d17cf15f22/3.7/Dockerfile)
+-	`4.0.0-rc0`, `4.0-rc`, `rc`:
+	-	[`4.0.0-rc0-xenial` (*4.0-rc/Dockerfile*)](https://github.com/docker-library/mongo/blob/de4376792e103d35e9b16a023c4046d17cf15f22/4.0-rc/Dockerfile)
 
 # Quick reference
 
@@ -46,7 +49,7 @@ WARNING:
 	[the Docker Community](https://github.com/docker-library/mongo)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/mongo/)
+	[`amd64`](https://hub.docker.com/r/amd64/mongo/), [`arm64v8`](https://hub.docker.com/r/arm64v8/mongo/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/mongo/` directory](https://github.com/docker-library/repo-info/blob/master/repos/mongo) ([history](https://github.com/docker-library/repo-info/commits/master/repos/mongo))  
