@@ -186,9 +186,11 @@ $ docker run -it --rm --user 1000:1000 postgres
 initdb: could not look up effective user ID 1000: user does not exist
 ```
 
-The two easiest ways to get around this:
+The three easiest ways to get around this:
 
-1.	bind-mount `/etc/passwd` read-only from the host (if the UID you desire is a valid user on your host):
+1.	use the Debian variants (not the Alpine variants) and thus allow the image to use [the `nss_wrapper` library](https://cwrap.org/nss_wrapper.html) to "fake" `/etc/passwd` contents for you (see [docker-library/postgres#448](https://github.com/docker-library/postgres/pull/448) for more details)
+
+2.	bind-mount `/etc/passwd` read-only from the host (if the UID you desire is a valid user on your host):
 
 	```console
 	$ docker run -it --rm --user "$(id -u):$(id -g)" -v /etc/passwd:/etc/passwd:ro postgres
@@ -196,7 +198,7 @@ The two easiest ways to get around this:
 	...
 	```
 
-2.	initialize the target directory separately from the final runtime (with a `chown` in between):
+3.	initialize the target directory separately from the final runtime (with a `chown` in between):
 
 	```console
 	$ docker volume create pgdata
