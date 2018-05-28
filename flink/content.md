@@ -8,6 +8,10 @@ Learn more about Flink at [https://flink.apache.org/](https://flink.apache.org/)
 
 %%LOGO%%
 
+# Flink Docker image tags
+
+Starting with Flink 1.5, images without "hadoop" in the tag are the "Hadoop-free" variant of Flink. If you require Hadoop support (such as its HDFS filesystem implementation), you should reference an image whose tag includes the Hadoop version you need.
+
 # How to use this Docker image
 
 ## Run a Flink local cluster
