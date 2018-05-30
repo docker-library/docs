@@ -57,7 +57,7 @@ A safe home for all your data. Access & share your files, calendars, contacts, m
 
 > [Nextcloud.com](https://nextcloud.com/)
 
-![logo](https://cdn.rawgit.com/docker-library/docs/defa5ffc7123177acd60ddef6e16bddf694cc35f/nextcloud/logo.svg)
+![logo](https://cdn.rawgit.com/docker-library/docs/e563b6cd3d797e2b3695576d20041227d1fb7536/nextcloud/logo.svg)
 
 # How to use this image
 
