@@ -93,6 +93,7 @@ You can then go to `http://localhost:8080` or `http://host-ip:8080` in a browser
 A small selection of the possible environment variables are defined in the Dockerfile to be passed through the docker engine (listed below). For the full comprehensive list of possible variables (which are implemented through the rabbitmq.conf) see: https://www.rabbitmq.com/configure.html
 
 For SSL configuration without the management plugin:
+
 ```bash
 RABBITMQ_SSL_CACERTFILE
 RABBITMQ_SSL_CERTFILE
@@ -103,6 +104,7 @@ RABBITMQ_SSL_VERIFY
 ```
 
 For SSL configuration using the rabbitmq:management plugin:
+
 ```bash
 RABBITMQ_MANAGEMENT_SSL_CACERTFILE
 RABBITMQ_MANAGEMENT_SSL_CERTFILE
