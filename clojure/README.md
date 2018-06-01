@@ -16,14 +16,14 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`lein-2.8.1`, `lein`, `latest` (*debian/lein/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/1befe11d6cf54581247c002c6f9793d12c2f337f/debian/lein/Dockerfile)
--	[`lein-2.8.1-onbuild`, `lein-onbuild`, `onbuild` (*debian/lein/onbuild/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/1befe11d6cf54581247c002c6f9793d12c2f337f/debian/lein/onbuild/Dockerfile)
--	[`lein-2.8.1-alpine`, `lein-alpine`, `alpine` (*alpine/lein/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/1befe11d6cf54581247c002c6f9793d12c2f337f/alpine/lein/Dockerfile)
--	[`lein-2.8.1-alpine-onbuild`, `lein-alpine-onbuild`, `alpine-onbuild` (*alpine/lein/onbuild/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/1befe11d6cf54581247c002c6f9793d12c2f337f/alpine/lein/onbuild/Dockerfile)
--	[`boot-2.7.2`, `boot` (*debian/boot/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/1befe11d6cf54581247c002c6f9793d12c2f337f/debian/boot/Dockerfile)
--	[`boot-2.7.2-alpine`, `boot-alpine` (*alpine/boot/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/1befe11d6cf54581247c002c6f9793d12c2f337f/alpine/boot/Dockerfile)
--	[`tools-deps-1.9.0.375`, `tools-deps` (*debian/tools-deps/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/1befe11d6cf54581247c002c6f9793d12c2f337f/debian/tools-deps/Dockerfile)
--	[`tools-deps-1.9.0.375-alpine`, `tools-deps-alpine` (*alpine/tools-deps/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/1befe11d6cf54581247c002c6f9793d12c2f337f/alpine/tools-deps/Dockerfile)
+-	[`lein-2.8.1`, `lein`, `latest` (*debian/lein/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/a1a07c465810f309e0bb410e9707f235b3c8d3c4/debian/lein/Dockerfile)
+-	[`lein-2.8.1-onbuild`, `lein-onbuild`, `onbuild` (*debian/lein/onbuild/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/a1a07c465810f309e0bb410e9707f235b3c8d3c4/debian/lein/onbuild/Dockerfile)
+-	[`lein-2.8.1-alpine`, `lein-alpine`, `alpine` (*alpine/lein/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/a1a07c465810f309e0bb410e9707f235b3c8d3c4/alpine/lein/Dockerfile)
+-	[`lein-2.8.1-alpine-onbuild`, `lein-alpine-onbuild`, `alpine-onbuild` (*alpine/lein/onbuild/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/a1a07c465810f309e0bb410e9707f235b3c8d3c4/alpine/lein/onbuild/Dockerfile)
+-	[`boot-2.7.2`, `boot` (*debian/boot/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/a1a07c465810f309e0bb410e9707f235b3c8d3c4/debian/boot/Dockerfile)
+-	[`boot-2.7.2-alpine`, `boot-alpine` (*alpine/boot/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/a1a07c465810f309e0bb410e9707f235b3c8d3c4/alpine/boot/Dockerfile)
+-	[`tools-deps-1.9.0.381`, `tools-deps` (*debian/tools-deps/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/a1a07c465810f309e0bb410e9707f235b3c8d3c4/debian/tools-deps/Dockerfile)
+-	[`tools-deps-1.9.0.381-alpine`, `tools-deps-alpine` (*alpine/tools-deps/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/a1a07c465810f309e0bb410e9707f235b3c8d3c4/alpine/tools-deps/Dockerfile)
 
 # Quick reference
 
