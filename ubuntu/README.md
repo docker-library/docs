@@ -16,10 +16,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`17.10`, `artful-20180417`, `artful` (*artful/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/404d80486fada09bff68a210b7eddf78f3235156/artful/Dockerfile)
--	[`18.04`, `bionic-20180426`, `bionic`, `latest`, `rolling`, `devel` (*bionic/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/404d80486fada09bff68a210b7eddf78f3235156/bionic/Dockerfile)
--	[`14.04`, `trusty-20180420`, `trusty` (*trusty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/404d80486fada09bff68a210b7eddf78f3235156/trusty/Dockerfile)
--	[`16.04`, `xenial-20180417`, `xenial` (*xenial/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/404d80486fada09bff68a210b7eddf78f3235156/xenial/Dockerfile)
+-	[`17.10`, `artful-20180524`, `artful` (*artful/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/58cc180042b7ebec2b683576faa00c04d5d011e2/artful/Dockerfile)
+-	[`18.04`, `bionic-20180526`, `bionic`, `latest`, `rolling` (*bionic/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/58cc180042b7ebec2b683576faa00c04d5d011e2/bionic/Dockerfile)
+-	[`18.10`, `cosmic-20180605`, `cosmic`, `devel` (*cosmic/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/58cc180042b7ebec2b683576faa00c04d5d011e2/cosmic/Dockerfile)
+-	[`14.04`, `trusty-20180531`, `trusty` (*trusty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/58cc180042b7ebec2b683576faa00c04d5d011e2/trusty/Dockerfile)
+-	[`16.04`, `xenial-20180525`, `xenial` (*xenial/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/58cc180042b7ebec2b683576faa00c04d5d011e2/xenial/Dockerfile)
 
 # Quick reference
 
