@@ -236,6 +236,10 @@ For example, `memcached-2.2.0` has no PHP version constraints (https://pecl.php.
 
 Beyond the compatibility issue, it's also a good practice to ensure you know when your dependencies receive updates and can control those updates directly.
 
+Unlike PHP core extensions, PECL extensions should be installed in series to fail properly if something went wrong. Otherwise errors are just skipped by PECL.
+
+For example, `pecl install memcached-2.2.0 && pecl install redis-2.2.8` instead of `pecl install memcached-2.2.0 redis-2.2.8`. However, `docker-php-ext-enable memcached redis` is fine to be all in one command.
+
 ### Other extensions
 
 Some extensions are not provided via either Core or PECL; these can be installed too, although the process is less automated:
