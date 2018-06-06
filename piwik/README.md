@@ -20,9 +20,9 @@ This image is officially deprecated in favor of [the `matomo` image](https://hub
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.5.1-apache`, `3.5-apache`, `3-apache`, `apache`, `3.5.1`, `3.5`, `3`, `latest` (*apache/Dockerfile*)](https://github.com/matomo-org/docker/blob/72bf7cd7dbe96b7caf38330e8e6f80d8596ab749/apache/Dockerfile)
--	[`3.5.1-fpm`, `3.5-fpm`, `3-fpm`, `fpm` (*fpm/Dockerfile*)](https://github.com/matomo-org/docker/blob/72bf7cd7dbe96b7caf38330e8e6f80d8596ab749/fpm/Dockerfile)
--	[`3.5.1-fpm-alpine`, `3.5-fpm-alpine`, `3-fpm-alpine`, `fpm-alpine` (*fpm-alpine/Dockerfile*)](https://github.com/matomo-org/docker/blob/88a8be3c7f386b2c21c8ef93f32aa092c5603ea1/fpm-alpine/Dockerfile)
+-	[`3.5.1-apache`, `3.5-apache`, `3-apache`, `apache`, `3.5.1`, `3.5`, `3`, `latest` (*apache/Dockerfile*)](https://github.com/matomo-org/docker/blob/89d38796efe1063e84d8dee3e7c74d04cb240abc/apache/Dockerfile)
+-	[`3.5.1-fpm`, `3.5-fpm`, `3-fpm`, `fpm` (*fpm/Dockerfile*)](https://github.com/matomo-org/docker/blob/89d38796efe1063e84d8dee3e7c74d04cb240abc/fpm/Dockerfile)
+-	[`3.5.1-fpm-alpine`, `3.5-fpm-alpine`, `3-fpm-alpine`, `fpm-alpine` (*fpm-alpine/Dockerfile*)](https://github.com/matomo-org/docker/blob/89d38796efe1063e84d8dee3e7c74d04cb240abc/fpm-alpine/Dockerfile)
 
 # Quick reference
 
