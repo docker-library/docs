@@ -190,6 +190,142 @@ volumes:
   xwiki-data: {}
 ```
 
+### Using Docker Swarm
+
+Here are some examples of using this image with Docker Swarm. These examples leverage additional features of Docker Swarm such as Docker secrets, and Docker configs. As such, these examples require Docker to be in swarm mode.
+
+You can read more about these features and Docker swarm mode here:
+
+-	[Docker swarm mode](https://docs.docker.com/engine/swarm/)
+-	[Creating Docker secrets](https://docs.docker.com/engine/reference/commandline/secret_create/)
+-	[Creating Docker configs](https://docs.docker.com/engine/reference/commandline/config_create/)
+
+#### MySQL Example
+
+This example presupposes the existence of the Docker secrets `xwiki-db-username`, `xwiki-db-password` and `xwiki-db-root-password`, and the Docker config `xwiki-mysql-config`.
+
+You can create these secrets and configs with the following:
+
+-	`echo ${MY_XWIKI_USER:-xwiki} | docker secret create xwiki-db-username -`
+-	`echo $(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 16 | head -n 1) | docker secret create xwiki-db-password -`
+-	`echo $(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 16 | head -n 1) | docker secret create xwiki-db-root-password -`
+-	`docker config create xwiki-mysql-config /path/to/mysql/xwiki.cnf`
+
+To deploy this example, save the following YAML as `xwiki-stack.yaml`, then run:
+
+-	`docker stack deploy -c xwiki-stack.yaml xwiki`
+
+```yaml
+version: '3.3'
+services:
+  web:
+    image: "xwiki:mysql-tomcat"
+    ports:
+      - "8080:8080"
+    environment:
+      - DB_USER_FILE=/run/secrets/xwiki-db-username
+      - DB_PASSWORD_FILE=/run/secrets/xwiki-db-password
+      - DB_DATABASE=xwiki
+      - DB_HOST=db
+    volumes:
+      - xwiki-data:/usr/local/xwiki
+    secrets:
+      - xwiki-db-username
+      - xwiki-db-password
+  db:
+    image: "mysql:5.7"
+    volumes:
+      - mysql-data:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=/run/secrets/xwiki-db-root-password
+      - MYSQL_USER_FILE=/run/secrets/xwiki-db-username
+      - MYSQL_PASSWORD_FILE=/run/secrets/xwiki-db-password
+      - MYSQL_DATABASE=xwiki
+    secrets:
+      - xwiki-db-username
+      - xwiki-db-password
+      - xwiki-db-root-password
+    configs: 
+      - source: mysql-config
+        target: /etc/mysql/conf.d/xwiki.cnf
+volumes:
+  mysql-data:
+  xwiki-data:
+secrets:
+  xwiki-db-username:
+    external:
+      name: xwiki-db-username
+  xwiki-db-password:
+    external:
+      name: xwiki-db-password
+  xwiki-db-root-password:
+    external:
+      name: xwiki-db-root-password
+configs:
+  mysql-config:
+    external:
+      name: xwiki-mysql-config
+```
+
+#### PostgreSQL Example
+
+This example presupposes the existence of the Docker secrets `xwiki-db-username`, `xwiki-db-password`, and `xwiki-db-root-password`.
+
+You can create these secrets with the following:
+
+-	`echo ${MY_XWIKI_USER:-xwiki} | docker secret create xwiki-db-username -`
+-	`echo $(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 16 | head -n 1) | docker secret create xwiki-db-password -`
+-	`echo $(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 16 | head -n 1) | docker secret create xwiki-db-root-password -`
+
+To deploy this example, save the following YAML as `xwiki-stack.yaml` then run:
+
+-	`docker stack deploy -c xwiki-stack.yaml xwiki`
+
+```yaml
+version: '3.3'
+services:
+  web:
+    image: "xwiki:mysql-postgres"
+    ports:
+      - "8080:8080"
+    environment:
+      - DB_USER_FILE=/run/secrets/xwiki-db-username
+      - DB_PASSWORD_FILE=/run/secrets/xwiki-db-password
+      - DB_DATABASE=xwiki
+      - DB_HOST=db
+    volumes:
+      - xwiki-data:/usr/local/xwiki
+    secrets:
+      - xwiki-db-username
+      - xwiki-db-password
+  db:
+    image: "postgres:9.5"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_ROOT_PASSWORD_FILE=/run/secrets/xwiki-db-root-password
+      - POSTGRES_USER_FILE=/run/secrets/xwiki-db-username
+      - POSTGRES_PASSWORD_FILE=/run/secrets/xwiki-db-password
+      - POSTGRES_DB=xwiki
+    secrets:
+      - xwiki-db-username
+      - xwiki-db-password
+      - xwiki-db-root-password
+volumes:
+  postgres-data:
+  xwiki-data:
+secrets:
+  xwiki-db-username:
+    external:
+      name: xwiki-db-username
+  xwiki-db-password:
+    external:
+      name: xwiki-db-password
+  xwiki-db-root-password:
+    external:
+      name: xwiki-db-root-password
+```
+
 ## Building
 
 This allows you to rebuild the XWiki docker image locally. Here are the steps:
@@ -228,6 +364,15 @@ The first time you create a container out of the %%IMAGE%% image, a shell script
 -	`DB_PASSWORD`: The user password used by XWiki to read/write to the DB.
 -	`DB_DATABASE`: The name of the XWiki database to use/create.
 -	`DB_HOST`: The name of the host (or docker container) containing the database. Default is "db".
+
+In order to support [Docker secrets](https://docs.docker.com/engine/swarm/secrets/), the configuration values can also be given to the container as files containing that value.
+
+-	`DB_USER_FILE`: The location, inside the container, of a file containing the value for `DB_USER`
+-	`DB_PASSWORD_FILE`: The location, inside the container, of a file containing the value for `DB_PASSWORD`
+-	`DB_DATABASE_FILE`: The location, inside the container, of a file containing the value for `DB_DATABASE`
+-	`DB_HOST_FILE`: The location, inside the container, of a file containing the value for `DB_HOST`
+
+*Note:* For each configuration value, the normal environment variable and \_FILE environment variable are mutually exclusive. Providing values for both variables will result in an error.
 
 The main XWiki configuration files (`xwiki.cfg`, `xwiki.properties` and `hibernate.cfg.xml`) are available in the mapped local directory for the permanent directory on your host.
 
