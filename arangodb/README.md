@@ -18,7 +18,7 @@ WARNING:
 
 -	[`2.8`, `2.8.11` (*jessie/2.8.11/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/d6fca9a137cd21345b1d380fc0e72daacb6130ce/jessie/2.8.11/Dockerfile)
 -	[`3.2`, `3.2.15` (*stretch/3.2.15/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/cc4106a5a7cdb75c1ab9798cd2b75248f7745204/stretch/3.2.15/Dockerfile)
--	[`3.3`, `3.3.9`, `latest` (*stretch/3.3.9/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/94a860d2591120a674b964e840a4bea1d4b1f36b/stretch/3.3.9/Dockerfile)
+-	[`3.3`, `3.3.10`, `latest` (*stretch/3.3.10/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/3776052b3bc5dafe50fd247c49760d028778fd71/stretch/3.3.10/Dockerfile)
 
 # Quick reference
 
