@@ -82,7 +82,7 @@ web:
   environment:
    - NGINX_HOST=foobar.com
    - NGINX_PORT=80
-  command: /bin/bash -c "envsubst < /etc/nginx/conf.d/mysite.template > /etc/nginx/conf.d/default.conf && nginx -g 'daemon off;'"
+  command: /bin/bash -c "envsubst < /etc/nginx/conf.d/mysite.template > /etc/nginx/conf.d/default.conf && exec nginx -g 'daemon off;'"
 ```
 
 The `mysite.template` file may then contain variable references like this:
