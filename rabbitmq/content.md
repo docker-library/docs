@@ -88,6 +88,32 @@ $ docker run -d --hostname my-rabbit --name some-rabbit -p 8080:15672 %%IMAGE%%:
 
 You can then go to `http://localhost:8080` or `http://host-ip:8080` in a browser.
 
+### Environment Variables
+
+A small selection of the possible environment variables are defined in the Dockerfile to be passed through the docker engine (listed below). For a list of environment variables supported by RabbitMQ itself, see: https://www.rabbitmq.com/configure.html
+
+For SSL configuration without the management plugin:
+
+```bash
+RABBITMQ_SSL_CACERTFILE
+RABBITMQ_SSL_CERTFILE
+RABBITMQ_SSL_DEPTH
+RABBITMQ_SSL_FAIL_IF_NO_PEER_CERT
+RABBITMQ_SSL_KEYFILE
+RABBITMQ_SSL_VERIFY
+```
+
+For SSL configuration using the management plugin:
+
+```bash
+RABBITMQ_MANAGEMENT_SSL_CACERTFILE
+RABBITMQ_MANAGEMENT_SSL_CERTFILE
+RABBITMQ_MANAGEMENT_SSL_DEPTH
+RABBITMQ_MANAGEMENT_SSL_FAIL_IF_NO_PEER_CERT
+RABBITMQ_MANAGEMENT_SSL_KEYFILE
+RABBITMQ_MANAGEMENT_SSL_VERIFY
+```
+
 ### Setting default user and password
 
 If you wish to change the default username and password of `guest` / `guest`, you can do so with the `RABBITMQ_DEFAULT_USER` and `RABBITMQ_DEFAULT_PASS` environmental variables:
@@ -117,6 +143,23 @@ For enabling the HiPE compiler on startup use `RABBITMQ_HIPE_COMPILE` set to `1`
 > Set to true to precompile parts of RabbitMQ with HiPE, a just-in-time compiler for Erlang. This will increase server throughput at the cost of increased startup time. You might see 20-50% better performance at the cost of a few minutes delay at startup.
 
 It is therefore important to take that startup delay into consideration when configuring health checks, automated clustering etc.
+
+### Enabling Plugins
+
+Creating a Dockerfile will have them enabled at runtime. To see the full list of plugins present on the image `rabbitmq-plugins list`
+
+```Dockerfile
+FROM rabbitmq:3.7-management
+RUN rabbitmq-plugins enable --offline rabbitmq_mqtt rabbitmq_federation_management rabbitmq_stomp
+```
+
+You can also mount a file at `/etc/rabbitmq/enabled_plugins` with contents as an erlang list of atoms ending with a period.
+
+Example `enabled_plugins`
+
+```bash
+[rabbitmq_federation_management,rabbitmq_management,rabbitmq_mqtt,rabbitmq_stomp].
+```
 
 ### Additional Configuration
 
