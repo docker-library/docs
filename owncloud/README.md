@@ -14,6 +14,10 @@ WARNING:
 
 -->
 
+# **DEPRECATION NOTICE**
+
+This image has been deprecated in favor of the [official `owncloud/server` image](https://hub.docker.com/r/owncloud/server/) provided, maintained, and supported by [ownCloud upstream](https://owncloud.org/download/#owncloud-server-docker). The images found here will receive no further updates after 2018-12-31 (Dec 31, 2018). Please adjust your usage accordingly.
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`10.0.8-apache`, `10.0-apache`, `10-apache`, `apache`, `10.0.8`, `10.0`, `10`, `latest` (*10.0/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/a4e69c45fa3910d5e7f2f090cae185b58c6523dc/10.0/apache/Dockerfile)
