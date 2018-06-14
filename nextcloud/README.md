@@ -19,9 +19,9 @@ WARNING:
 -	[`12.0.9-apache`, `12.0-apache`, `12-apache`, `12.0.9`, `12.0`, `12` (*12.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/12c61283e01c7946f4e533db7dcedd7259329b0b/12.0/apache/Dockerfile)
 -	[`12.0.9-fpm`, `12.0-fpm`, `12-fpm` (*12.0/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/12c61283e01c7946f4e533db7dcedd7259329b0b/12.0/fpm/Dockerfile)
 -	[`12.0.9-fpm-alpine`, `12.0-fpm-alpine`, `12-fpm-alpine` (*12.0/fpm-alpine/Dockerfile*)](https://github.com/nextcloud/docker/blob/12c61283e01c7946f4e533db7dcedd7259329b0b/12.0/fpm-alpine/Dockerfile)
--	[`13.0.4-apache`, `13.0-apache`, `13-apache`, `apache`, `stable-apache`, `13.0.4`, `13.0`, `13`, `latest`, `stable` (*13.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/2e1ea3384e335b6dd92b0b60576ce8117114806f/13.0/apache/Dockerfile)
--	[`13.0.4-fpm`, `13.0-fpm`, `13-fpm`, `fpm`, `stable-fpm` (*13.0/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/2e1ea3384e335b6dd92b0b60576ce8117114806f/13.0/fpm/Dockerfile)
--	[`13.0.4-fpm-alpine`, `13.0-fpm-alpine`, `13-fpm-alpine`, `fpm-alpine`, `stable-fpm-alpine` (*13.0/fpm-alpine/Dockerfile*)](https://github.com/nextcloud/docker/blob/2e1ea3384e335b6dd92b0b60576ce8117114806f/13.0/fpm-alpine/Dockerfile)
+-	[`13.0.4-apache`, `13.0-apache`, `13-apache`, `apache`, `stable-apache`, `production-apache`, `13.0.4`, `13.0`, `13`, `latest`, `stable`, `production` (*13.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/2e1ea3384e335b6dd92b0b60576ce8117114806f/13.0/apache/Dockerfile)
+-	[`13.0.4-fpm`, `13.0-fpm`, `13-fpm`, `fpm`, `stable-fpm`, `production-fpm` (*13.0/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/2e1ea3384e335b6dd92b0b60576ce8117114806f/13.0/fpm/Dockerfile)
+-	[`13.0.4-fpm-alpine`, `13.0-fpm-alpine`, `13-fpm-alpine`, `fpm-alpine`, `stable-fpm-alpine`, `production-fpm-alpine` (*13.0/fpm-alpine/Dockerfile*)](https://github.com/nextcloud/docker/blob/2e1ea3384e335b6dd92b0b60576ce8117114806f/13.0/fpm-alpine/Dockerfile)
 
 # Quick reference
 
