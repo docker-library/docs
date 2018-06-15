@@ -38,12 +38,12 @@ WARNING:
 -	[`3.1.3-jessie`, `3.1-jessie` (*3.1/jessie/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/b53c8f548757e9c9ef2fa6895762ddc538d94a7e/3.1/jessie/Dockerfile)
 -	[`3.1.3-onbuild`, `3.1-onbuild` (*3.1/onbuild/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/e0f9cb5a3cc190acd42565113e3380b5853f5746/3.1/onbuild/Dockerfile)
 -	[`3.1.3-windowsservercore`, `3.1-windowsservercore` (*3.1/windowsservercore/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/b4440856db08d09ee96b6ab5a763cd5556f504e2/3.1/windowsservercore/Dockerfile)
--	[`4.0.0-preview.3-stretch`, `4.0.0-preview.3`, `4.0.0-stretch`, `4.0-stretch`, `4.0.0`, `4.0` (*4.0/stretch/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/9664958d5779504a0625b411d958e77acc730a82/4.0/stretch/Dockerfile)
--	[`4.0.0-preview.3-jessie`, `4.0.0-jessie`, `4.0-jessie` (*4.0/jessie/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/9664958d5779504a0625b411d958e77acc730a82/4.0/jessie/Dockerfile)
--	[`4.0.0-preview.3-onbuild`, `4.0.0-onbuild`, `4.0-onbuild` (*4.0/onbuild/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/9664958d5779504a0625b411d958e77acc730a82/4.0/onbuild/Dockerfile)
--	[`4.0.0-preview.3-windowsservercore`, `4.0.0-windowsservercore`, `4.0-windowsservercore` (*4.0/windowsservercore/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/9664958d5779504a0625b411d958e77acc730a82/4.0/windowsservercore/Dockerfile)
--	[`4.0.0-preview.3-alpine3.7`, `4.0.0-preview.3-alpine`, `4.0.0-alpine3.7`, `4.0-alpine3.7`, `4.0.0-alpine`, `4.0-alpine` (*4.0/alpine3.7/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/9664958d5779504a0625b411d958e77acc730a82/4.0/alpine3.7/Dockerfile)
--	[`4.0.0-preview.3-alpine3.6`, `4.0.0-alpine3.6`, `4.0-alpine3.6` (*4.0/alpine3.6/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/9664958d5779504a0625b411d958e77acc730a82/4.0/alpine3.6/Dockerfile)
+-	[`4.0.0-preview.4-stretch`, `4.0.0-preview.4`, `4.0.0-stretch`, `4.0-stretch`, `4.0.0`, `4.0` (*4.0/stretch/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/2fab1f21333e6472f398b9c08dd1d5117e5539c2/4.0/stretch/Dockerfile)
+-	[`4.0.0-preview.4-jessie`, `4.0.0-jessie`, `4.0-jessie` (*4.0/jessie/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/2fab1f21333e6472f398b9c08dd1d5117e5539c2/4.0/jessie/Dockerfile)
+-	[`4.0.0-preview.4-onbuild`, `4.0.0-onbuild`, `4.0-onbuild` (*4.0/onbuild/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/2fab1f21333e6472f398b9c08dd1d5117e5539c2/4.0/onbuild/Dockerfile)
+-	[`4.0.0-preview.4-windowsservercore`, `4.0.0-windowsservercore`, `4.0-windowsservercore` (*4.0/windowsservercore/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/2fab1f21333e6472f398b9c08dd1d5117e5539c2/4.0/windowsservercore/Dockerfile)
+-	[`4.0.0-preview.4-alpine3.7`, `4.0.0-preview.4-alpine`, `4.0.0-alpine3.7`, `4.0-alpine3.7`, `4.0.0-alpine`, `4.0-alpine` (*4.0/alpine3.7/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/2fab1f21333e6472f398b9c08dd1d5117e5539c2/4.0/alpine3.7/Dockerfile)
+-	[`4.0.0-preview.4-alpine3.6`, `4.0.0-alpine3.6`, `4.0-alpine3.6` (*4.0/alpine3.6/Dockerfile*)](https://github.com/HaxeFoundation/docker-library-haxe/blob/2fab1f21333e6472f398b9c08dd1d5117e5539c2/4.0/alpine3.6/Dockerfile)
 
 # Quick reference
 
