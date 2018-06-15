@@ -57,12 +57,12 @@ If you not only wish to run Gazebo, but develop for it too, i.e. compile custom 
 
 ## Deployment example
 
-In this short example, we'll spin up a new container running gazebo server, connect to it using a local gazebo client, then spawn a double inverted pendulum and record the simulation for later playback.
+In this short example, we'll spin up a new container running gazebo server, connect to it using a local gazebo client, then spawn a double inverted pendulum and record the simulation for later playback. To ensure compatible Gazebo versions, use the latest Gazebo version provided by the OSRF repos, not from the Ubuntu Universe.
 
 > First launch a gazebo server with a mounted volume for logging and name the container gazebo:
 
 ```console
-$ docker run -d -v="/tmp/.gazebo/:/root/.gazebo/" --name=gazebo %%IMAGE%%
+$ docker run -d -v="/tmp/.gazebo/:/root/.gazebo/" --name=gazebo %%IMAGE%%:latest
 ```
 
 > Now open a new bash session in the container using the same entrypoint to configure the environment. Then download the double_pendulum model and load it into the simulation.
