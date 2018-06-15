@@ -121,7 +121,7 @@ In this short example, we'll spin up a new container running gazebo server, conn
 > First launch a gazebo server with a mounted volume for logging and name the container gazebo:
 
 ```console
-$ docker run -d -v="/tmp/.gazebo/:/root/.gazebo/" --name=gazebo gazebo
+$ docker run -d -v="/tmp/.gazebo/:/root/.gazebo/" --name=gazebo gazebo:latest
 ```
 
 > Now open a new bash session in the container using the same entrypoint to configure the environment. Then download the double_pendulum model and load it into the simulation.
