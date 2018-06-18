@@ -16,18 +16,14 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.7.5`, `3.7`, `3`, `latest` (*3.7/debian/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/75bbd3f7ae9c106a23b0f10809d45690045f805a/3.7/debian/Dockerfile)
--	[`3.7.5-management`, `3.7-management`, `3-management`, `management` (*3.7/debian/management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/4b2b11c59ee65c2a09616b163d4572559a86bb7b/3.7/debian/management/Dockerfile)
--	[`3.7.5-alpine`, `3.7-alpine`, `3-alpine`, `alpine` (*3.7/alpine/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/d7096266dfb047fce1eff89bd759e3ab55d779f3/3.7/alpine/Dockerfile)
--	[`3.7.5-management-alpine`, `3.7-management-alpine`, `3-management-alpine`, `management-alpine` (*3.7/alpine/management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/4b2b11c59ee65c2a09616b163d4572559a86bb7b/3.7/alpine/management/Dockerfile)
--	[`3.6.16-rc.1`, `3.6-rc` (*3.6-rc/debian/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/087a9cf6059d4a71962819cb808ee8b71929790f/3.6-rc/debian/Dockerfile)
--	[`3.6.16-rc.1-management`, `3.6-rc-management` (*3.6-rc/debian/management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/087a9cf6059d4a71962819cb808ee8b71929790f/3.6-rc/debian/management/Dockerfile)
--	[`3.6.16-rc.1-alpine`, `3.6-rc-alpine` (*3.6-rc/alpine/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/d7096266dfb047fce1eff89bd759e3ab55d779f3/3.6-rc/alpine/Dockerfile)
--	[`3.6.16-rc.1-management-alpine`, `3.6-rc-management-alpine` (*3.6-rc/alpine/management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/087a9cf6059d4a71962819cb808ee8b71929790f/3.6-rc/alpine/management/Dockerfile)
--	[`3.6.15`, `3.6` (*3.6/debian/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/da82eb0f68ed89a876fc44e915f20fc1e6e6bd8d/3.6/debian/Dockerfile)
--	[`3.6.15-management`, `3.6-management` (*3.6/debian/management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/b9eda3e4665c24db70a9a290fddf33bc5c567b10/3.6/debian/management/Dockerfile)
--	[`3.6.15-alpine`, `3.6-alpine` (*3.6/alpine/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/d7096266dfb047fce1eff89bd759e3ab55d779f3/3.6/alpine/Dockerfile)
--	[`3.6.15-management-alpine`, `3.6-management-alpine` (*3.6/alpine/management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/b9eda3e4665c24db70a9a290fddf33bc5c567b10/3.6/alpine/management/Dockerfile)
+-	[`3.7.6`, `3.7`, `3`, `latest` (*3.7/debian/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/fec4ea13595dba46c66efcb3a010e827bee5cbd4/3.7/debian/Dockerfile)
+-	[`3.7.6-management`, `3.7-management`, `3-management`, `management` (*3.7/debian/management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/4b2b11c59ee65c2a09616b163d4572559a86bb7b/3.7/debian/management/Dockerfile)
+-	[`3.7.6-alpine`, `3.7-alpine`, `3-alpine`, `alpine` (*3.7/alpine/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/fa1276bb5252c429d38fded8995aa3bbcac029ff/3.7/alpine/Dockerfile)
+-	[`3.7.6-management-alpine`, `3.7-management-alpine`, `3-management-alpine`, `management-alpine` (*3.7/alpine/management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/4b2b11c59ee65c2a09616b163d4572559a86bb7b/3.7/alpine/management/Dockerfile)
+-	[`3.6.16`, `3.6` (*3.6/debian/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/17eebc8b38df47b8a45a46d3afb306a359f1e0d4/3.6/debian/Dockerfile)
+-	[`3.6.16-management`, `3.6-management` (*3.6/debian/management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/b9eda3e4665c24db70a9a290fddf33bc5c567b10/3.6/debian/management/Dockerfile)
+-	[`3.6.16-alpine`, `3.6-alpine` (*3.6/alpine/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/46319b542643d1ad0c5380bb2a1f362d7064d2c1/3.6/alpine/Dockerfile)
+-	[`3.6.16-management-alpine`, `3.6-management-alpine` (*3.6/alpine/management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/b9eda3e4665c24db70a9a290fddf33bc5c567b10/3.6/alpine/management/Dockerfile)
 
 # Quick reference
 
