@@ -16,11 +16,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.2.12`, `3.2`, `3` (*3.2/Dockerfile*)](https://github.com/docker-library/redis/blob/3f137878f40e40f87a63813821d49464d2710acf/3.2/Dockerfile)
--	[`3.2.12-32bit`, `3.2-32bit`, `3-32bit` (*3.2/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/3f137878f40e40f87a63813821d49464d2710acf/3.2/32bit/Dockerfile)
+-	[`3.2.12`, `3.2`, `3` (*3.2/Dockerfile*)](https://github.com/docker-library/redis/blob/53f86805506b103b503fd392e029929290fe5346/3.2/Dockerfile)
+-	[`3.2.12-32bit`, `3.2-32bit`, `3-32bit` (*3.2/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/53f86805506b103b503fd392e029929290fe5346/3.2/32bit/Dockerfile)
 -	[`3.2.12-alpine`, `3.2-alpine`, `3-alpine` (*3.2/alpine/Dockerfile*)](https://github.com/docker-library/redis/blob/3f137878f40e40f87a63813821d49464d2710acf/3.2/alpine/Dockerfile)
--	[`4.0.10`, `4.0`, `4`, `latest` (*4.0/Dockerfile*)](https://github.com/docker-library/redis/blob/87e80558fb828de53399e341af4c8a05c3e2d631/4.0/Dockerfile)
--	[`4.0.10-32bit`, `4.0-32bit`, `4-32bit`, `32bit` (*4.0/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/87e80558fb828de53399e341af4c8a05c3e2d631/4.0/32bit/Dockerfile)
+-	[`4.0.10`, `4.0`, `4`, `latest` (*4.0/Dockerfile*)](https://github.com/docker-library/redis/blob/53f86805506b103b503fd392e029929290fe5346/4.0/Dockerfile)
+-	[`4.0.10-32bit`, `4.0-32bit`, `4-32bit`, `32bit` (*4.0/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/53f86805506b103b503fd392e029929290fe5346/4.0/32bit/Dockerfile)
 -	[`4.0.10-alpine`, `4.0-alpine`, `4-alpine`, `alpine` (*4.0/alpine/Dockerfile*)](https://github.com/docker-library/redis/blob/87e80558fb828de53399e341af4c8a05c3e2d631/4.0/alpine/Dockerfile)
 
 # Quick reference
