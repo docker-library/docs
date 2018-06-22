@@ -39,10 +39,6 @@ Default user name and password is admin Abc1234!
 	-H 'Authorization: Basic YWRtaW46QWJjMTIzNCE=' \
 	-H 'Cache-Control: no-cache' \
 	-H 'Content-Type: application/json' \
-	-d '{
-	"operation":"alter_user",
-	"username":"admin","password":"theone"
-	}'
-	
+	-d '{ "operation":"alter_user","username":"admin","password":"theone"}'
 
-After you change the account settings, you’ll need to updated the Basic authentication token by encoding the new credentials in the format username:password into base64. [This makes it easy](https://www.base64decode.org/)
+After you change the account settings, you’ll need to updated the Basic authentication token by encoding the new credentials in the format username:password into base64. This site https://www.base64decode.org/ makes it easy.
