@@ -90,6 +90,16 @@ The `mysite.template` file may then contain variable references like this:
 `listen       ${NGINX_PORT};
 `
 
+## Running %%IMAGE%% in read-only mode
+
+To run %%IMAGE%% in read-only mode, you will need to mount a Docker volume to every location where %%IMAGE%% writes information. The default %%IMAGE%% configuration requires write access to `/var/cache` and `/var/run`. This can be easily accomplished by running %%IMAGE%% as follows:
+
+```console
+$ docker run -d -p 80:80 --read-only -v $(pwd)/nginx-cache:/var/cache/nginx -v $(pwd)/nginx-pid:/var/run nginx
+```
+
+If you have a more advanced configuration that requires %%IMAGE%% to write to other locations, simply add more volume mounts to those locations.
+
 ## Running nginx in debug mode
 
 Images since version 1.9.8 come with `nginx-debug` binary that produces verbose output when using higher log levels. It can be used with simple CMD substitution:
