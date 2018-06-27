@@ -20,9 +20,8 @@ WARNING:
 
 -	[`3.2.20-jessie`, `3.2-jessie` (*3.2/Dockerfile*)](https://github.com/docker-library/mongo/blob/753d566a83a4e9734227f186e554c87b4f08be51/3.2/Dockerfile)
 -	[`3.4.15-jessie`, `3.4-jessie` (*3.4/Dockerfile*)](https://github.com/docker-library/mongo/blob/f77d645e749bdda0740a35c00213baae8859edf2/3.4/Dockerfile)
--	[`3.6.5-jessie`, `3.6-jessie`, `3-jessie`, `jessie` (*3.6/Dockerfile*)](https://github.com/docker-library/mongo/blob/4e9a69f44326f034efa79ded2275ec856673bee1/3.6/Dockerfile)
--	[`3.7.9-xenial`, `3.7-xenial`, `unstable-xenial` (*3.7/Dockerfile*)](https://github.com/docker-library/mongo/blob/de4376792e103d35e9b16a023c4046d17cf15f22/3.7/Dockerfile)
--	[`4.0.0-rc6-xenial`, `4.0-rc-xenial`, `rc-xenial` (*4.0-rc/Dockerfile*)](https://github.com/docker-library/mongo/blob/11ded25561b1657f25d903f3374593257343b825/4.0-rc/Dockerfile)
+-	[`3.6.5-jessie`, `3.6-jessie`, `3-jessie` (*3.6/Dockerfile*)](https://github.com/docker-library/mongo/blob/4e9a69f44326f034efa79ded2275ec856673bee1/3.6/Dockerfile)
+-	[`4.0.0-xenial`, `4.0-xenial`, `4-xenial`, `xenial` (*4.0/Dockerfile*)](https://github.com/docker-library/mongo/blob/274966255b326b17a4a351867ece4eaa0eefef28/4.0/Dockerfile)
 
 ## Shared Tags
 
@@ -30,12 +29,10 @@ WARNING:
 	-	[`3.2.20-jessie` (*3.2/Dockerfile*)](https://github.com/docker-library/mongo/blob/753d566a83a4e9734227f186e554c87b4f08be51/3.2/Dockerfile)
 -	`3.4.15`, `3.4`:
 	-	[`3.4.15-jessie` (*3.4/Dockerfile*)](https://github.com/docker-library/mongo/blob/f77d645e749bdda0740a35c00213baae8859edf2/3.4/Dockerfile)
--	`3.6.5`, `3.6`, `3`, `latest`:
+-	`3.6.5`, `3.6`, `3`:
 	-	[`3.6.5-jessie` (*3.6/Dockerfile*)](https://github.com/docker-library/mongo/blob/4e9a69f44326f034efa79ded2275ec856673bee1/3.6/Dockerfile)
--	`3.7.9`, `3.7`, `unstable`:
-	-	[`3.7.9-xenial` (*3.7/Dockerfile*)](https://github.com/docker-library/mongo/blob/de4376792e103d35e9b16a023c4046d17cf15f22/3.7/Dockerfile)
--	`4.0.0-rc6`, `4.0-rc`, `rc`:
-	-	[`4.0.0-rc6-xenial` (*4.0-rc/Dockerfile*)](https://github.com/docker-library/mongo/blob/11ded25561b1657f25d903f3374593257343b825/4.0-rc/Dockerfile)
+-	`4.0.0`, `4.0`, `4`, `latest`:
+	-	[`4.0.0-xenial` (*4.0/Dockerfile*)](https://github.com/docker-library/mongo/blob/274966255b326b17a4a351867ece4eaa0eefef28/4.0/Dockerfile)
 
 # Quick reference
 
