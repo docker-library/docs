@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`0.14.0rc1-alpine`, `0.14.0rc1` (*alpine/Dockerfile*)](https://github.com/Kong/docker-kong/blob/ca951523bab8c96b60986f503b2412e9e92e8389/alpine/Dockerfile)
--	[`0.14.0rc1-centos` (*centos/Dockerfile*)](https://github.com/Kong/docker-kong/blob/ca951523bab8c96b60986f503b2412e9e92e8389/centos/Dockerfile)
+-	[`0.14.0rc2-alpine`, `0.14.0rc2` (*alpine/Dockerfile*)](https://github.com/Kong/docker-kong/blob/315c3d23380c426e885aab8aab4ea8752b621f41/alpine/Dockerfile)
+-	[`0.14.0rc2-centos` (*centos/Dockerfile*)](https://github.com/Kong/docker-kong/blob/315c3d23380c426e885aab8aab4ea8752b621f41/centos/Dockerfile)
 -	[`0.13.1-alpine`, `0.13.1`, `0.13`, `latest` (*alpine/Dockerfile*)](https://github.com/Kong/docker-kong/blob/6e2035c5739482f0616021a7eda04ec6809d9f3e/alpine/Dockerfile)
 -	[`0.13.1-centos`, `0.13-centos` (*centos/Dockerfile*)](https://github.com/Kong/docker-kong/blob/6e2035c5739482f0616021a7eda04ec6809d9f3e/centos/Dockerfile)
 -	[`0.12-alpine`, `0.12.3-alpine` (*alpine/Dockerfile*)](https://github.com/Kong/docker-kong/blob/95f9e8ebfd735f4ab09af71bf060d200a9a7a981/alpine/Dockerfile)
