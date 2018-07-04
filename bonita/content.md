@@ -163,7 +163,7 @@ $ chcon -Rt svirt_sandbox_file_t /my/own/datadir
 
 		```console
 		cd bonita_migration
-		wget https://download.forge.ow2.org/bonita/bonita-migration-distrib-2.31.1.zip
+		wget https://release.ow2.org/bonita/bonita-migration-distrib-2.31.1.zip
 		wget https://download.forge.ow2.org/bonita/BonitaBPMCommunity-7.2.4-Tomcat-7.0.67.zip
 		unzip bonita-migration-distrib-2.31.1.zip
 		unzip BonitaBPMCommunity-7.2.4-Tomcat-7.0.67.zip
@@ -180,7 +180,7 @@ $ chcon -Rt svirt_sandbox_file_t /my/own/datadir
 
 		```console
 		cd bonita_migration
-		wget https://download.forge.ow2.org/bonita/bonita-migration-distrib-2.31.1.zip
+		wget https://release.ow2.org/bonita/bonita-migration-distrib-2.31.1.zip
 		unzip bonita-migration-distrib-2.31.1.zip
 		```
 
