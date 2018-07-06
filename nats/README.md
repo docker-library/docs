@@ -18,15 +18,15 @@ WARNING:
 
 ## Simple Tags
 
--	[`1.1.0-linux`, `linux` (*amd64/Dockerfile*)](https://github.com/nats-io/nats-docker/blob/738f7e2cd879f0a2642eb07a12b8303b2b99e68b/amd64/Dockerfile)
--	[`1.1.0-nanoserver`, `nanoserver` (*windows/nanoserver/Dockerfile*)](https://github.com/nats-io/nats-docker/blob/738f7e2cd879f0a2642eb07a12b8303b2b99e68b/windows/nanoserver/Dockerfile)
--	[`1.1.0-windowsservercore`, `windowsservercore` (*windows/windowsservercore/Dockerfile*)](https://github.com/nats-io/nats-docker/blob/738f7e2cd879f0a2642eb07a12b8303b2b99e68b/windows/windowsservercore/Dockerfile)
+-	[`1.2.0-linux`, `linux` (*amd64/Dockerfile*)](https://github.com/nats-io/nats-docker/blob/f959825502854f43c88186c584c05ba4bf1fd0f7/amd64/Dockerfile)
+-	[`1.2.0-nanoserver`, `nanoserver` (*windows/nanoserver/Dockerfile*)](https://github.com/nats-io/nats-docker/blob/f959825502854f43c88186c584c05ba4bf1fd0f7/windows/nanoserver/Dockerfile)
+-	[`1.2.0-windowsservercore`, `windowsservercore` (*windows/windowsservercore/Dockerfile*)](https://github.com/nats-io/nats-docker/blob/f959825502854f43c88186c584c05ba4bf1fd0f7/windows/windowsservercore/Dockerfile)
 
 ## Shared Tags
 
--	`1.1.0`, `latest`:
-	-	[`1.1.0-linux` (*amd64/Dockerfile*)](https://github.com/nats-io/nats-docker/blob/738f7e2cd879f0a2642eb07a12b8303b2b99e68b/amd64/Dockerfile)
-	-	[`1.1.0-nanoserver` (*windows/nanoserver/Dockerfile*)](https://github.com/nats-io/nats-docker/blob/738f7e2cd879f0a2642eb07a12b8303b2b99e68b/windows/nanoserver/Dockerfile)
+-	`1.2.0`, `latest`:
+	-	[`1.2.0-linux` (*amd64/Dockerfile*)](https://github.com/nats-io/nats-docker/blob/f959825502854f43c88186c584c05ba4bf1fd0f7/amd64/Dockerfile)
+	-	[`1.2.0-nanoserver` (*windows/nanoserver/Dockerfile*)](https://github.com/nats-io/nats-docker/blob/f959825502854f43c88186c584c05ba4bf1fd0f7/windows/nanoserver/Dockerfile)
 
 # Quick reference
 
@@ -88,8 +88,8 @@ WARNING:
 # Check "docker run" for more information.
 
 $ docker run -d --name nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 nats
-[INF] Starting nats-server version 1.1.0
-[INF] Git commit [add6d79]
+[INF] Starting nats-server version 1.2.0
+[INF] Git commit [6608e9a]
 [INF] Starting http monitor on 0.0.0.0:8222
 [INF] Listening for client connections on 0.0.0.0:4222
 [INF] Server is ready
@@ -105,9 +105,9 @@ $ docker run -d --name=nats-2 --link nats-main -p 4222:4222 -p 6222:6222 -p 8222
 
 # If you want to verify the routes are connected, try this instead:
 $ docker run -d --name=nats-2 --link nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 nats -c gnatsd.conf --routes=nats-route://ruser:T0pS3cr3t@nats-main:6222 -DV
-[INF] Starting nats-server version 1.1.0
-[DBG] Go build version go1.9.4
-[INF] Git commit [add6d79]
+[INF] Starting nats-server version 1.2.0
+[DBG] Go build version go1.10.3
+[INF] Git commit [6608e9a]
 [INF] Starting http monitor on 0.0.0.0:8222
 [INF] Listening for client connections on 0.0.0.0:4222
 [DBG] Server id is TH1MRk9Mug4fgIDdcXIo6R
