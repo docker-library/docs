@@ -16,14 +16,18 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.4`, `1.4.3` (*influxdb/1.4/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/f94f0e410b5d7f80324839a7d957c662a9d54f7d/influxdb/1.4/Dockerfile)
--	[`1.4-alpine`, `1.4.3-alpine` (*influxdb/1.4/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/f94f0e410b5d7f80324839a7d957c662a9d54f7d/influxdb/1.4/alpine/Dockerfile)
--	[`1.5`, `1.5.4`, `latest` (*influxdb/1.5/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/f94f0e410b5d7f80324839a7d957c662a9d54f7d/influxdb/1.5/Dockerfile)
--	[`1.5-alpine`, `1.5.4-alpine`, `alpine` (*influxdb/1.5/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/f94f0e410b5d7f80324839a7d957c662a9d54f7d/influxdb/1.5/alpine/Dockerfile)
--	[`1.5-data`, `1.5.4-data`, `data` (*influxdb/1.5/data/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/f94f0e410b5d7f80324839a7d957c662a9d54f7d/influxdb/1.5/data/Dockerfile)
--	[`1.5-data-alpine`, `1.5.4-data-alpine`, `data-alpine` (*influxdb/1.5/data/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/f94f0e410b5d7f80324839a7d957c662a9d54f7d/influxdb/1.5/data/alpine/Dockerfile)
--	[`1.5-meta`, `1.5.4-meta`, `meta` (*influxdb/1.5/meta/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/f94f0e410b5d7f80324839a7d957c662a9d54f7d/influxdb/1.5/meta/Dockerfile)
--	[`1.5-meta-alpine`, `1.5.4-meta-alpine`, `meta-alpine` (*influxdb/1.5/meta/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/f94f0e410b5d7f80324839a7d957c662a9d54f7d/influxdb/1.5/meta/alpine/Dockerfile)
+-	[`1.5`, `1.5.4` (*influxdb/1.5/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/72e15b5f58404aa027d1e66809f2380ef8fe13d5/influxdb/1.5/Dockerfile)
+-	[`1.5-alpine`, `1.5.4-alpine` (*influxdb/1.5/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/72e15b5f58404aa027d1e66809f2380ef8fe13d5/influxdb/1.5/alpine/Dockerfile)
+-	[`1.5-data`, `1.5.4-data` (*influxdb/1.5/data/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/72e15b5f58404aa027d1e66809f2380ef8fe13d5/influxdb/1.5/data/Dockerfile)
+-	[`1.5-data-alpine`, `1.5.4-data-alpine` (*influxdb/1.5/data/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/72e15b5f58404aa027d1e66809f2380ef8fe13d5/influxdb/1.5/data/alpine/Dockerfile)
+-	[`1.5-meta`, `1.5.4-meta` (*influxdb/1.5/meta/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/72e15b5f58404aa027d1e66809f2380ef8fe13d5/influxdb/1.5/meta/Dockerfile)
+-	[`1.5-meta-alpine`, `1.5.4-meta-alpine` (*influxdb/1.5/meta/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/72e15b5f58404aa027d1e66809f2380ef8fe13d5/influxdb/1.5/meta/alpine/Dockerfile)
+-	[`1.6`, `1.6.0`, `latest` (*influxdb/1.6/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/72e15b5f58404aa027d1e66809f2380ef8fe13d5/influxdb/1.6/Dockerfile)
+-	[`1.6-alpine`, `1.6.0-alpine`, `alpine` (*influxdb/1.6/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/72e15b5f58404aa027d1e66809f2380ef8fe13d5/influxdb/1.6/alpine/Dockerfile)
+-	[`1.6-data`, `1.6.0-data`, `data` (*influxdb/1.6/data/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/72e15b5f58404aa027d1e66809f2380ef8fe13d5/influxdb/1.6/data/Dockerfile)
+-	[`1.6-data-alpine`, `1.6.0-data-alpine`, `data-alpine` (*influxdb/1.6/data/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/72e15b5f58404aa027d1e66809f2380ef8fe13d5/influxdb/1.6/data/alpine/Dockerfile)
+-	[`1.6-meta`, `1.6.0-meta`, `meta` (*influxdb/1.6/meta/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/72e15b5f58404aa027d1e66809f2380ef8fe13d5/influxdb/1.6/meta/Dockerfile)
+-	[`1.6-meta-alpine`, `1.6.0-meta-alpine`, `meta-alpine` (*influxdb/1.6/meta/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/72e15b5f58404aa027d1e66809f2380ef8fe13d5/influxdb/1.6/meta/alpine/Dockerfile)
 
 # Quick reference
 
