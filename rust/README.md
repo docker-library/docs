@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.27.0-stretch`, `1-stretch`, `1.27-stretch`, `stretch`, `1.27.0`, `1`, `1.27`, `latest` (*1.27.0/stretch/Dockerfile*)](https://github.com/rust-lang-nursery/docker-rust/blob/25ec4cbb26341bd30a7afa31da2e259d96c1fbc9/1.27.0/stretch/Dockerfile)
--	[`1.27.0-slim-stretch`, `1-slim-stretch`, `1.27-slim-stretch`, `slim-stretch`, `1.27.0-slim`, `1-slim`, `1.27-slim`, `slim` (*1.27.0/stretch/slim/Dockerfile*)](https://github.com/rust-lang-nursery/docker-rust/blob/25ec4cbb26341bd30a7afa31da2e259d96c1fbc9/1.27.0/stretch/slim/Dockerfile)
--	[`1.27.0-jessie`, `1-jessie`, `1.27-jessie`, `jessie` (*1.27.0/jessie/Dockerfile*)](https://github.com/rust-lang-nursery/docker-rust/blob/25ec4cbb26341bd30a7afa31da2e259d96c1fbc9/1.27.0/jessie/Dockerfile)
--	[`1.27.0-slim-jessie`, `1-slim-jessie`, `1.27-slim-jessie`, `slim-jessie` (*1.27.0/jessie/slim/Dockerfile*)](https://github.com/rust-lang-nursery/docker-rust/blob/25ec4cbb26341bd30a7afa31da2e259d96c1fbc9/1.27.0/jessie/slim/Dockerfile)
+-	[`1.27.1-stretch`, `1-stretch`, `1.27-stretch`, `stretch`, `1.27.1`, `1`, `1.27`, `latest` (*1.27.1/stretch/Dockerfile*)](https://github.com/rust-lang-nursery/docker-rust/blob/ced83778ec6fea7f63091a484946f95eac0ee611/1.27.1/stretch/Dockerfile)
+-	[`1.27.1-slim-stretch`, `1-slim-stretch`, `1.27-slim-stretch`, `slim-stretch`, `1.27.1-slim`, `1-slim`, `1.27-slim`, `slim` (*1.27.1/stretch/slim/Dockerfile*)](https://github.com/rust-lang-nursery/docker-rust/blob/ced83778ec6fea7f63091a484946f95eac0ee611/1.27.1/stretch/slim/Dockerfile)
+-	[`1.27.1-jessie`, `1-jessie`, `1.27-jessie`, `jessie` (*1.27.1/jessie/Dockerfile*)](https://github.com/rust-lang-nursery/docker-rust/blob/ced83778ec6fea7f63091a484946f95eac0ee611/1.27.1/jessie/Dockerfile)
+-	[`1.27.1-slim-jessie`, `1-slim-jessie`, `1.27-slim-jessie`, `slim-jessie` (*1.27.1/jessie/slim/Dockerfile*)](https://github.com/rust-lang-nursery/docker-rust/blob/ced83778ec6fea7f63091a484946f95eac0ee611/1.27.1/jessie/slim/Dockerfile)
 
 # Quick reference
 
