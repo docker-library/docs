@@ -61,7 +61,7 @@ X-Forwarded-Server: f2e05c433120
 
 The web UI [http://localhost:8080](http://localhost:8080) will give you an overview of the frontends/backends and also a health dashboard.
 
-![Web UI Providers](https://github.com/containous/traefik/blob/master/docs/img/web.frontend.png)
+![Web UI Providers](https://raw.githubusercontent.com/containous/traefik/master/docs/img/web.frontend.png)
 
 # Documentation
 
