@@ -16,9 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `2.1.1`, `2.1`, `2` (*2.1.1/Dockerfile*)](https://github.com/apache/couchdb-docker/blob/1a7c4254c158a194ff195da6ebfed910d24a95b7/2.1.1/Dockerfile)
--	[`1.7.1`, `1.7`, `1` (*1.7.1/Dockerfile*)](https://github.com/apache/couchdb-docker/blob/029760550b8af66f49bf439ddbabfbd040e9727c/1.7.1/Dockerfile)
--	[`1.7.1-couchperuser`, `1.7-couchperuser`, `1-couchperuser` (*1.7.1-couchperuser/Dockerfile*)](https://github.com/apache/couchdb-docker/blob/029760550b8af66f49bf439ddbabfbd040e9727c/1.7.1-couchperuser/Dockerfile)
+-	[`latest`, `2.1.2`, `2.1`, `2` (*2.1.2/Dockerfile*)](https://github.com/apache/couchdb-docker/blob/ca9b039d036d1482fd1e5ce67176f05cf959beed/2.1.2/Dockerfile)
+-	[`1.7.2`, `1.7`, `1` (*1.7.2/Dockerfile*)](https://github.com/apache/couchdb-docker/blob/ca9b039d036d1482fd1e5ce67176f05cf959beed/1.7.2/Dockerfile)
+-	[`1.7.2-couchperuser`, `1.7-couchperuser`, `1-couchperuser` (*1.7.2-couchperuser/Dockerfile*)](https://github.com/apache/couchdb-docker/blob/ca9b039d036d1482fd1e5ce67176f05cf959beed/1.7.2-couchperuser/Dockerfile)
 
 # Quick reference
 
