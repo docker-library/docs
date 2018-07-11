@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.6.3` (*7.6/Dockerfile*)](https://github.com/Bonitasoft-Community/docker_bonita/blob/267f7f8d47b44a0184ecfbfaa072b47ecef1bc7b/7.6/Dockerfile)
--	[`7.7.1`, `latest` (*7.7/Dockerfile*)](https://github.com/Bonitasoft-Community/docker_bonita/blob/3b529d760ea1e65c11c0a831c654f3d395b41d42/7.7/Dockerfile)
+-	[`7.6.3` (*7.6/Dockerfile*)](https://github.com/Bonitasoft-Community/docker_bonita/blob/8522be35ac190ae72b1a6989ce1eb4685bca2429/7.6/Dockerfile)
+-	[`7.7.1`, `latest` (*7.7/Dockerfile*)](https://github.com/Bonitasoft-Community/docker_bonita/blob/8522be35ac190ae72b1a6989ce1eb4685bca2429/7.7/Dockerfile)
 
 # Quick reference
 
