@@ -47,7 +47,7 @@ WARNING:
 	[members of the Apache Flink community](https://github.com/docker-flink/docker-flink)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/flink/)
+	[`amd64`](https://hub.docker.com/r/amd64/flink/), [`arm64v8`](https://hub.docker.com/r/arm64v8/flink/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/flink/` directory](https://github.com/docker-library/repo-info/blob/master/repos/flink) ([history](https://github.com/docker-library/repo-info/commits/master/repos/flink))  
