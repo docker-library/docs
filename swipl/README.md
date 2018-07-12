@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `7.7.17` (*7.7.17/stretch/Dockerfile*)](https://github.com/SWI-Prolog/docker-swipl/blob/f8541e1a854320134936a20532a83b8179c02e66/7.7.17/stretch/Dockerfile)
--	[`stable`, `7.6.4` (*7.6.4/stretch/Dockerfile*)](https://github.com/SWI-Prolog/docker-swipl/blob/f8541e1a854320134936a20532a83b8179c02e66/7.6.4/stretch/Dockerfile)
+-	[`latest`, `7.7.18` (*7.7.18/stretch/Dockerfile*)](https://github.com/SWI-Prolog/docker-swipl/blob/23bb74f08a23927ec15908fe374c6b098ee12f42/7.7.18/stretch/Dockerfile)
+-	[`stable`, `7.6.4` (*7.6.4/stretch/Dockerfile*)](https://github.com/SWI-Prolog/docker-swipl/blob/23bb74f08a23927ec15908fe374c6b098ee12f42/7.6.4/stretch/Dockerfile)
 
 # Quick reference
 
@@ -25,10 +25,10 @@ WARNING:
 	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
 -	**Where to file issues**:  
-	[https://github.com/SWI-Prolog/swipl-devel/issues](https://github.com/SWI-Prolog/swipl-devel/issues)
+	[https://github.com/SWI-Prolog/docker-swipl/issues](https://github.com/SWI-Prolog/docker-swipl/issues)
 
 -	**Maintained by**:  
-	[the SWI-Prolog community](https://github.com/SWI-Prolog/swipl-devel)
+	[the SWI-Prolog community](https://github.com/SWI-Prolog/docker-swipl)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/swipl/), [`arm32v7`](https://hub.docker.com/r/arm32v7/swipl/), [`arm64v8`](https://hub.docker.com/r/arm64v8/swipl/)

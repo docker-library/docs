@@ -16,7 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `5.6.0` (*Dockerfile*)](https://github.com/kaazing/gateway.docker/blob/a40c8da9d2c2925bdd78b9a6d1b6da3fe89322d1/Dockerfile)
+-	[`5.6.0`, `5.6`, `5`, `latest` (*Dockerfile*)](https://github.com/kaazing/gateway.docker/blob/a40c8da9d2c2925bdd78b9a6d1b6da3fe89322d1/Dockerfile)
 
 # Quick reference
 
@@ -30,7 +30,7 @@ WARNING:
 	[the Kaazing Docker Maintainers](https://github.com/kaazing/gateway.docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/kaazing-gateway/)
+	[`amd64`](https://hub.docker.com/r/amd64/kaazing-gateway/), [`arm64v8`](https://hub.docker.com/r/arm64v8/kaazing-gateway/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/kaazing-gateway/` directory](https://github.com/docker-library/repo-info/blob/master/repos/kaazing-gateway) ([history](https://github.com/docker-library/repo-info/commits/master/repos/kaazing-gateway))  
