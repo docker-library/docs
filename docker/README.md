@@ -16,9 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`18.06.0-ce-rc2`, `18.06-rc`, `rc`, `test` (*18.06-rc/Dockerfile*)](https://github.com/docker-library/docker/blob/441b13e5f1de3cf3a9afc27f99adf0e247bfba35/18.06-rc/Dockerfile)
--	[`18.06.0-ce-rc2-dind`, `18.06-rc-dind`, `rc-dind`, `test-dind` (*18.06-rc/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/9ecb1c3a6bd766b69eb1858ef721f62fbd930a2b/18.06-rc/dind/Dockerfile)
--	[`18.06.0-ce-rc2-git`, `18.06-rc-git`, `rc-git`, `test-git` (*18.06-rc/git/Dockerfile*)](https://github.com/docker-library/docker/blob/84fbcfc4cbef254dce2e7ecd7fcff788da4690df/18.06-rc/git/Dockerfile)
+-	[`18.06.0-ce-rc3`, `18.06-rc`, `rc`, `test` (*18.06-rc/Dockerfile*)](https://github.com/docker-library/docker/blob/8e5a928fef7ac182890bd9d3be7a36736ac1497b/18.06-rc/Dockerfile)
+-	[`18.06.0-ce-rc3-dind`, `18.06-rc-dind`, `rc-dind`, `test-dind` (*18.06-rc/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/9ecb1c3a6bd766b69eb1858ef721f62fbd930a2b/18.06-rc/dind/Dockerfile)
+-	[`18.06.0-ce-rc3-git`, `18.06-rc-git`, `rc-git`, `test-git` (*18.06-rc/git/Dockerfile*)](https://github.com/docker-library/docker/blob/84fbcfc4cbef254dce2e7ecd7fcff788da4690df/18.06-rc/git/Dockerfile)
 -	[`18.05.0-ce`, `18.05.0`, `18.05`, `18`, `edge`, `latest` (*18.05/Dockerfile*)](https://github.com/docker-library/docker/blob/cf3d3343f291146f9b79ccafa725a9bb28257ea0/18.05/Dockerfile)
 -	[`18.05.0-ce-dind`, `18.05.0-dind`, `18.05-dind`, `18-dind`, `edge-dind`, `dind` (*18.05/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/9ecb1c3a6bd766b69eb1858ef721f62fbd930a2b/18.05/dind/Dockerfile)
 -	[`18.05.0-ce-git`, `18.05.0-git`, `18.05-git`, `18-git`, `edge-git`, `git` (*18.05/git/Dockerfile*)](https://github.com/docker-library/docker/blob/cf3d3343f291146f9b79ccafa725a9bb28257ea0/18.05/git/Dockerfile)
