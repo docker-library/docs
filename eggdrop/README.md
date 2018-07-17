@@ -18,7 +18,6 @@ WARNING:
 
 -	[`develop` (*develop/Dockerfile*)](https://github.com/eggheads/eggdrop-docker/blob/68e421d4e8f87301d921c84548407ec340f0b8ed/develop/Dockerfile)
 -	[`1.8`, `1.8.3`, `stable`, `latest` (*1.8/Dockerfile*)](https://github.com/eggheads/eggdrop-docker/blob/68e421d4e8f87301d921c84548407ec340f0b8ed/1.8/Dockerfile)
--	[`1.6`, `1.6.21` (*1.6/Dockerfile*)](https://github.com/eggheads/eggdrop-docker/blob/e50da857a808ea6593fc4bfd56997d92a0461193/1.6/Dockerfile)
 
 # Quick reference
 
