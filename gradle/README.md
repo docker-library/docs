@@ -16,22 +16,22 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.8.1-jdk7`, `4.8-jdk7`, `jdk7` (*jdk7/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/efa575ae69e3f0fe82c46e64bcd50e433d12cde8/jdk7/Dockerfile)
--	[`4.8.1-jre7`, `4.8-jre7`, `jre7` (*jre7/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/efa575ae69e3f0fe82c46e64bcd50e433d12cde8/jre7/Dockerfile)
--	[`4.8.1-jdk7-alpine`, `4.8-jdk7-alpine`, `jdk7-alpine` (*jdk7-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/efa575ae69e3f0fe82c46e64bcd50e433d12cde8/jdk7-alpine/Dockerfile)
--	[`4.8.1-jdk7-slim`, `4.8-jdk7-slim`, `jdk7-slim` (*jdk7-slim/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/efa575ae69e3f0fe82c46e64bcd50e433d12cde8/jdk7-slim/Dockerfile)
--	[`4.8.1-jre7-alpine`, `4.8-jre7-alpine`, `jre7-alpine` (*jre7-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/efa575ae69e3f0fe82c46e64bcd50e433d12cde8/jre7-alpine/Dockerfile)
--	[`4.8.1-jre7-slim`, `4.8-jre7-slim`, `jre7-slim` (*jre7-slim/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/efa575ae69e3f0fe82c46e64bcd50e433d12cde8/jre7-slim/Dockerfile)
--	[`4.8.1-jdk8`, `4.8-jdk8`, `jdk8`, `4.8.1-jdk`, `4.8-jdk`, `jdk`, `4.8.1`, `4.8`, `latest` (*jdk8/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/efa575ae69e3f0fe82c46e64bcd50e433d12cde8/jdk8/Dockerfile)
--	[`4.8.1-jre8`, `4.8-jre8`, `jre8`, `4.8.1-jre`, `4.8-jre`, `jre` (*jre8/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/efa575ae69e3f0fe82c46e64bcd50e433d12cde8/jre8/Dockerfile)
--	[`4.8.1-jdk8-alpine`, `4.8-jdk8-alpine`, `jdk8-alpine`, `4.8.1-jdk-alpine`, `4.8-jdk-alpine`, `jdk-alpine`, `4.8.1-alpine`, `4.8-alpine`, `alpine` (*jdk8-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/efa575ae69e3f0fe82c46e64bcd50e433d12cde8/jdk8-alpine/Dockerfile)
--	[`4.8.1-jdk8-slim`, `4.8-jdk8-slim`, `jdk8-slim`, `4.8.1-jdk-slim`, `4.8-jdk-slim`, `jdk-slim`, `4.8.1-slim`, `4.8-slim`, `slim` (*jdk8-slim/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/efa575ae69e3f0fe82c46e64bcd50e433d12cde8/jdk8-slim/Dockerfile)
--	[`4.8.1-jre8-alpine`, `4.8-jre8-alpine`, `jre8-alpine`, `4.8.1-jre-alpine`, `4.8-jre-alpine`, `jre-alpine` (*jre8-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/efa575ae69e3f0fe82c46e64bcd50e433d12cde8/jre8-alpine/Dockerfile)
--	[`4.8.1-jre8-slim`, `4.8-jre8-slim`, `jre8-slim`, `4.8.1-jre-slim`, `4.8-jre-slim`, `jre-slim` (*jre8-slim/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/efa575ae69e3f0fe82c46e64bcd50e433d12cde8/jre8-slim/Dockerfile)
--	[`4.8.1-jdk10`, `4.8-jdk10`, `jdk10` (*jdk10/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/efa575ae69e3f0fe82c46e64bcd50e433d12cde8/jdk10/Dockerfile)
--	[`4.8.1-jdk10-slim`, `4.8-jdk10-slim`, `jdk10-slim` (*jdk10-slim/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/efa575ae69e3f0fe82c46e64bcd50e433d12cde8/jdk10-slim/Dockerfile)
--	[`4.8.1-jre10`, `4.8-jre10`, `jre10` (*jre10/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/efa575ae69e3f0fe82c46e64bcd50e433d12cde8/jre10/Dockerfile)
--	[`4.8.1-jre10-slim`, `4.8-jre10-slim`, `jre10-slim` (*jre10-slim/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/efa575ae69e3f0fe82c46e64bcd50e433d12cde8/jre10-slim/Dockerfile)
+-	[`4.9.0-jdk7`, `4.9-jdk7`, `jdk7` (*jdk7/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/dce2d0cea0b0e60435919b7c7faa686b6cccf2f1/jdk7/Dockerfile)
+-	[`4.9.0-jre7`, `4.9-jre7`, `jre7` (*jre7/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/dce2d0cea0b0e60435919b7c7faa686b6cccf2f1/jre7/Dockerfile)
+-	[`4.9.0-jdk7-alpine`, `4.9-jdk7-alpine`, `jdk7-alpine` (*jdk7-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/dce2d0cea0b0e60435919b7c7faa686b6cccf2f1/jdk7-alpine/Dockerfile)
+-	[`4.9.0-jdk7-slim`, `4.9-jdk7-slim`, `jdk7-slim` (*jdk7-slim/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/dce2d0cea0b0e60435919b7c7faa686b6cccf2f1/jdk7-slim/Dockerfile)
+-	[`4.9.0-jre7-alpine`, `4.9-jre7-alpine`, `jre7-alpine` (*jre7-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/dce2d0cea0b0e60435919b7c7faa686b6cccf2f1/jre7-alpine/Dockerfile)
+-	[`4.9.0-jre7-slim`, `4.9-jre7-slim`, `jre7-slim` (*jre7-slim/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/dce2d0cea0b0e60435919b7c7faa686b6cccf2f1/jre7-slim/Dockerfile)
+-	[`4.9.0-jdk8`, `4.9-jdk8`, `jdk8`, `4.9.0-jdk`, `4.9-jdk`, `jdk`, `4.9.0`, `4.9`, `latest` (*jdk8/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/dce2d0cea0b0e60435919b7c7faa686b6cccf2f1/jdk8/Dockerfile)
+-	[`4.9.0-jre8`, `4.9-jre8`, `jre8`, `4.9.0-jre`, `4.9-jre`, `jre` (*jre8/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/dce2d0cea0b0e60435919b7c7faa686b6cccf2f1/jre8/Dockerfile)
+-	[`4.9.0-jdk8-alpine`, `4.9-jdk8-alpine`, `jdk8-alpine`, `4.9.0-jdk-alpine`, `4.9-jdk-alpine`, `jdk-alpine`, `4.9.0-alpine`, `4.9-alpine`, `alpine` (*jdk8-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/dce2d0cea0b0e60435919b7c7faa686b6cccf2f1/jdk8-alpine/Dockerfile)
+-	[`4.9.0-jdk8-slim`, `4.9-jdk8-slim`, `jdk8-slim`, `4.9.0-jdk-slim`, `4.9-jdk-slim`, `jdk-slim`, `4.9.0-slim`, `4.9-slim`, `slim` (*jdk8-slim/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/dce2d0cea0b0e60435919b7c7faa686b6cccf2f1/jdk8-slim/Dockerfile)
+-	[`4.9.0-jre8-alpine`, `4.9-jre8-alpine`, `jre8-alpine`, `4.9.0-jre-alpine`, `4.9-jre-alpine`, `jre-alpine` (*jre8-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/dce2d0cea0b0e60435919b7c7faa686b6cccf2f1/jre8-alpine/Dockerfile)
+-	[`4.9.0-jre8-slim`, `4.9-jre8-slim`, `jre8-slim`, `4.9.0-jre-slim`, `4.9-jre-slim`, `jre-slim` (*jre8-slim/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/dce2d0cea0b0e60435919b7c7faa686b6cccf2f1/jre8-slim/Dockerfile)
+-	[`4.9.0-jdk10`, `4.9-jdk10`, `jdk10` (*jdk10/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/dce2d0cea0b0e60435919b7c7faa686b6cccf2f1/jdk10/Dockerfile)
+-	[`4.9.0-jdk10-slim`, `4.9-jdk10-slim`, `jdk10-slim` (*jdk10-slim/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/dce2d0cea0b0e60435919b7c7faa686b6cccf2f1/jdk10-slim/Dockerfile)
+-	[`4.9.0-jre10`, `4.9-jre10`, `jre10` (*jre10/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/dce2d0cea0b0e60435919b7c7faa686b6cccf2f1/jre10/Dockerfile)
+-	[`4.9.0-jre10-slim`, `4.9-jre10-slim`, `jre10-slim` (*jre10-slim/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/dce2d0cea0b0e60435919b7c7faa686b6cccf2f1/jre10-slim/Dockerfile)
 
 # Quick reference
 

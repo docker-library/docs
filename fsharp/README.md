@@ -33,7 +33,7 @@ WARNING:
 	[the F# Community](https://github.com/fsprojects/docker-fsharp)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/fsharp/), [`arm32v7`](https://hub.docker.com/r/arm32v7/fsharp/), [`arm64v8`](https://hub.docker.com/r/arm64v8/fsharp/)
+	[`amd64`](https://hub.docker.com/r/amd64/fsharp/), [`arm64v8`](https://hub.docker.com/r/arm64v8/fsharp/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/fsharp/` directory](https://github.com/docker-library/repo-info/blob/master/repos/fsharp) ([history](https://github.com/docker-library/repo-info/commits/master/repos/fsharp))  
