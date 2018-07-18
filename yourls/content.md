@@ -9,8 +9,9 @@ YOURLS is a set of PHP scripts that will allow you to run Your Own URL Shortener
 # How to use this image
 
 ```console
-$ docker run --name some-%%REPO%% --link some-mysql:mysql -d %%IMAGE%% \
-    -e YOURLS_SITE="https://example.com"
+$ docker run --name some-%%REPO%% --link some-mysql:mysql \
+    -e YOURLS_SITE="https://example.com" \
+    -d %%IMAGE%%
 ```
 
 The following environment variables are also honored for configuring your YOURLS instance:
@@ -37,7 +38,7 @@ If you'd like to use an external database instead of a linked `mysql` container,
 
 ```console
 $ docker run --name some-%%REPO%%s -e YOURLS_DB_HOST=10.1.2.3:3306 \
-    -e YOURLS_DB_USER=... -e YOURLS_DB_PASS=... -d %%REPO%%
+    -e YOURLS_DB_USER=... -e YOURLS_DB_PASS=... -d %%IMAGE%%
 ```
 
 ## %%STACK%%
