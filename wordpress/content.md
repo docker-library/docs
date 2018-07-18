@@ -36,7 +36,7 @@ If you'd like to use an external database instead of a linked `mysql` container,
 
 ```console
 $ docker run --name some-%%REPO%% -e WORDPRESS_DB_HOST=10.1.2.3:3306 \
-    -e WORDPRESS_DB_USER=... -e WORDPRESS_DB_PASSWORD=... -d %%REPO%%
+    -e WORDPRESS_DB_USER=... -e WORDPRESS_DB_PASSWORD=... -d %%IMAGE%%
 ```
 
 ## Docker Secrets
