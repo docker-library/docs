@@ -113,6 +113,15 @@ for image in "${images[@]}"; do
 		echo '  GIT PREFETCH => "'"$repo"'"'
 		"$helperDir/git-prefetch.sh" "$repo"
 
+		if ! partial="$("$helperDir/generate-dockerfile-links-partial.sh" "$repo")"; then
+			{
+				echo
+				echo "WARNING: failed to fetch tags for '$repo'; skipping!"
+				echo
+			} >&2
+			continue
+		fi
+
 		targetFile="$repo/README.md"
 
 		{
@@ -123,14 +132,6 @@ for image in "${images[@]}"; do
 		} > "$targetFile"
 
 		echo '  TAGS => generate-dockerfile-links-partial.sh "'"$repo"'"'
-		if ! partial="$("$helperDir/generate-dockerfile-links-partial.sh" "$repo")"; then
-			{
-				echo
-				echo "WARNING: failed to fetch tags for '$repo'; skipping!"
-				echo
-			} >&2
-			continue
-		fi
 		if [ -z "$partial" ]; then
 			if [ -n "$ARCH_SPECIFIC_DOCS" ]; then
 				partial='**No supported tags found!**'$'\n\n''It is very likely that `%%REPO%%` does not support the currently selected architecture (`'"$BASHBREW_ARCH"'`).'
