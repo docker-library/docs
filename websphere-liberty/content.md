@@ -20,6 +20,8 @@ The `webProfile7` image contains the features required for Java EE7 Web Profile 
 
 The `webProfile8`, `javaee8`, `webProfile7` and `javaee7` images also contain a common set of features that are expected to be of use for a typical production scenario. These features are: `appSecurity-2.0`, `collectiveMember-1.0`, `localConnector-1.0`, `ldapRegistry-3.0`, `monitor-1.0`, `requestTiming-1.0`, `restConnector-2.0`, `sessionDatabase-1.0`, `ssl-1.0`, `transportSecurity-1.0` and `webCache-1.0`.
 
+The `springBoot1` and `springBoot2` images contain all features required for running Spring Boot 1.5 and 2.0 applications; including `springBoot-1.5` or `springBoot-2.0`, respectively, plus `servlet-4.0`, `jsp-2.3`, `webSocket-1.1`, and `transportSecurity-1.0`.
+
 # Usage
 
 The images are designed to support a number of different usage patterns. The following examples are based on the Java EE8 Liberty [application deployment sample](https://developer.ibm.com/wasdev/docs/article_appdeployment/) and assume that [DefaultServletEngine.zip](https://github.com/WASdev/sample.servlet/releases/download/V1/DefaultServletEngine.zip) has been extracted to `/tmp` and the `server.xml` updated to accept HTTP connections from outside of the container by adding the following element inside the `server` stanza:
@@ -83,6 +85,68 @@ The images are designed to support a number of different usage patterns. The fol
 	$ docker run -d -p 80:9080 \
 	  --volumes-from app %%IMAGE%%:webProfile8
 	```
+
+# Using `springBoot` images
+
+The `springBoot` images introduce capabilities specific to the support of Spring Boot applications, including the `springBootUtility` used to separate Spring Boot applications into thin applications and dependency library caches. To elaborate these capabilities this section assumes the standalone Spring Boot 2.0.x application `hellospringboot.jar` exists in the `/tmp` directory.
+
+1.	A Spring Boot application JAR deploys to the `dropins/spring` directory within the default server configuration, not the `dropins` directory. Liberty allows one Spring Boot application per server configuration. The following example starts a container running a Spring Boot application.
+
+	```console
+	$ docker run -d -p 8080:9080 \
+	    -v /tmp/hellospringboot.jar:/config/dropins/spring/hellospringboot.jar \
+	    %%IMAGE%%:springBoot2
+	```
+
+	Similarly, you can create a Spring Boot application layer over this image by adding the application JAR to the `dropins/spring` directory. In this example we copied `hellospringboot.jar` from `/tmp` to the same directory containing the following Dockerfile.
+
+	```dockerfile
+	FROM %%IMAGE%%:springBoot2
+	COPY hellospringboot.jar /config/dropins/spring/
+	```
+
+	The custom image can be built and run as follows.
+
+	```console
+	$ docker build -t app .
+	$ docker run -d -p 8080:9080 app
+	```
+
+2.	The `springBoot` images provide the library cache directory, `lib.index.cache`, which contains an indexed library cache created by the `springBootUtility` command. Use `lib.index.cache` to provide the library cache for a thin application.
+
+	For example, run the following command to thin the `hellospringboot.jar` application.
+
+	```console
+	$ <wlp>/bin/springBootUtility thin \
+	   --sourceAppPath=/tmp/hellospringboot.jar \
+	   --targetLibCachePath=/tmp/lib.index.cache \
+	   --targetThinAppPath=/tmp/thinhellospringboot.jar
+	```
+
+	You can run the thin application by mounting both the target application JAR and library cache when starting the container.
+
+	```console
+	$ docker run -d -p 8080:9080 \
+	    -v /tmp/thinhellospringboot.jar:/config/dropins/spring/thinhellospringboot.jar \
+	    -v /tmp/lib.index.cache:/lib.index.cache \
+	    %%IMAGE%%:springBoot2
+	```
+
+	Similarly, you can use the `springBootUtility` command to create thin application and library cache layers over a `springBoot` image. The following example uses docker staging to efficiently build an image that deploys a fat Spring Boot application as two layers containing a thin application and a library cache.
+
+	```dockerfile
+	FROM %%IMAGE%%:springBoot2 as staging
+	COPY hellospringboot.jar /staging/myFatApp.jar
+	RUN springBootUtility thin \
+	   --sourceAppPath=/staging/myFatApp.jar \
+	   --targetThinAppPath=/staging/myThinApp.jar \
+	   --targetLibCachePath=/staging/lib.index.cache
+	FROM %%IMAGE%%:springBoot2
+	COPY --from=staging /staging/lib.index.cache /lib.index.cache
+	COPY --from=staging /staging/myThinApp.jar /config/dropins/spring/myThinApp.jar
+	```
+
+	For Spring Boot applications packaged with library dependencies that rarely change across continuous application updates, you can use the capabilities mentioned above to to share library caches across containers and to create even more efficient docker layers that leverage the docker build cache.
 
 # Providing your own keystore/truststore
 
