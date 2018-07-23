@@ -16,11 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `enterprise`, `5.1.1`, `enterprise-5.1.1` (*enterprise/couchbase-server/5.1.1/Dockerfile*)](https://github.com/couchbase/docker/blob/d6d3d0c104d699d9310b15af5acd3b3b134e28da/enterprise/couchbase-server/5.1.1/Dockerfile)
--	[`5.5.0-beta` (*enterprise/couchbase-server/5.5.0-beta/Dockerfile*)](https://github.com/couchbase/docker/blob/d6d3d0c104d699d9310b15af5acd3b3b134e28da/enterprise/couchbase-server/5.5.0-beta/Dockerfile)
--	[`4.6.5`, `enterprise-4.6.5` (*enterprise/couchbase-server/4.6.5/Dockerfile*)](https://github.com/couchbase/docker/blob/d6d3d0c104d699d9310b15af5acd3b3b134e28da/enterprise/couchbase-server/4.6.5/Dockerfile)
--	[`community`, `community-5.1.1` (*community/couchbase-server/5.1.1/Dockerfile*)](https://github.com/couchbase/docker/blob/d6d3d0c104d699d9310b15af5acd3b3b134e28da/community/couchbase-server/5.1.1/Dockerfile)
--	[`community-4.5.1` (*community/couchbase-server/4.5.1/Dockerfile*)](https://github.com/couchbase/docker/blob/d6d3d0c104d699d9310b15af5acd3b3b134e28da/community/couchbase-server/4.5.1/Dockerfile)
+-	[`latest`, `enterprise`, `5.5.0`, `enterprise-5.5.0` (*enterprise/couchbase-server/5.5.0/Dockerfile*)](https://github.com/couchbase/docker/blob/fc55b9efd80129ab73373f94f9066186932e563e/enterprise/couchbase-server/5.5.0/Dockerfile)
+-	[`4.6.5`, `enterprise-4.6.5` (*enterprise/couchbase-server/4.6.5/Dockerfile*)](https://github.com/couchbase/docker/blob/fc55b9efd80129ab73373f94f9066186932e563e/enterprise/couchbase-server/4.6.5/Dockerfile)
+-	[`community`, `community-5.1.1` (*community/couchbase-server/5.1.1/Dockerfile*)](https://github.com/couchbase/docker/blob/fc55b9efd80129ab73373f94f9066186932e563e/community/couchbase-server/5.1.1/Dockerfile)
+-	[`community-4.5.1` (*community/couchbase-server/4.5.1/Dockerfile*)](https://github.com/couchbase/docker/blob/fc55b9efd80129ab73373f94f9066186932e563e/community/couchbase-server/4.5.1/Dockerfile)
 
 # Quick reference
 
