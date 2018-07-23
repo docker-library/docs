@@ -23,9 +23,9 @@ There are also additional images for different JVM combinations. Currently there
 	microProfile1
 	microProfile1-java8-ibm
 	microProfile1-java8-ibmsfj
- 	webProfile8
- 	webProfile8-java8-ibm
- 	webProfile8-java8-ibmsfj
+	webProfile8
+	webProfile8-java8-ibm
+	webProfile8-java8-ibmsfj
 	javaee8
 	javaee8-java8-ibm
 	javaee8-java8-ibmsfj
