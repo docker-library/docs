@@ -76,7 +76,7 @@ FROM open-liberty:kernel
 COPY server.xml /config/
 ```
 
-The `microProfile1` image contains the features required to implement Eclipse MicroProfile 1.3. The `webProfile8` image contains the features required for Java EE8 Web Profile compliance. The `javaee8` image adds the features required for Java EE8 Full Platform compliance. The `javaee8` image is also tagged with `latest`. The `webProfile7` image contains the features required for Java EE7 Web Profile compliance. The `javaee7` image adds the features required for Java EE7 Full Platform compliance.
+The `microProfile1` image contains the features required to implement Eclipse MicroProfile 1.3. The `webProfile8` image contains the features required for Java EE8 Web Profile compliance. The `javaee8` image adds the features required for Java EE8 Full Platform compliance. The `javaee8` image is also tagged with `latest`. The `webProfile7` image contains the features required for Java EE7 Web Profile compliance. The `javaee7` image adds the features required for Java EE7 Full Platform compliance. The `springBoot1` and `springBoot2` images contain the features required for running Spring Boot 1.5 and 2.0 applications.
 
 There are also additional images for different JVM combinations. Currently there are tags for java8 only, but there are two variants one based on IBM Java and Ubuntu and the other based on the IBM small footprint Java which is based on alpine linux. The naming structure for the variants is tag-javaversion-vandor/variant. This leads to webProfile8-java8-ibmsfj as one. At this time the full list of images are:
 
@@ -86,6 +86,12 @@ There are also additional images for different JVM combinations. Currently there
 	microProfile1
 	microProfile1-java8-ibm
 	microProfile1-java8-ibmsfj
+	springBoot1
+	springBoot1-java8-ibm
+	springBoot1-java8-ibmsfj
+	springBoot2
+	springBoot2-java8-ibm
+	springBoot2-java8-ibmsfj
 	webProfile8
 	webProfile8-java8-ibm
 	webProfile8-java8-ibmsfj
@@ -125,7 +131,7 @@ The images are designed to support a number of different usage patterns. The fol
 
 	```dockerfile
 	FROM open-liberty:webProfile8
-	ADD Sample1.war /config/dropins/
+	COPY Sample1.war /config/dropins/
 	```
 
 	This can then be built and run as follows:
@@ -141,7 +147,7 @@ The images are designed to support a number of different usage patterns. The fol
 
 	```dockerfile
 	FROM open-liberty:webProfile8
-	ADD DefaultServletEngine /config
+	COPY DefaultServletEngine /config
 	```
 
 	```console
@@ -156,6 +162,68 @@ The images are designed to support a number of different usage patterns. The fol
 	$ docker run -d -p 80:9080 \
 	  --volumes-from app open-liberty:webProfile8
 	```
+
+# Using `springBoot` images
+
+The `springBoot` images introduce capabilities specific to the support of Spring Boot applications, including the `springBootUtility` used to separate Spring Boot applications into thin applications and dependency library caches. To elaborate these capabilities this section assumes the standalone Spring Boot 2.0.x application `hellospringboot.jar` exists in the `/tmp` directory.
+
+1.	A Spring Boot application JAR deploys to the `dropins/spring` directory within the default server configuration, not the `dropins` directory. Liberty allows one Spring Boot application per server configuration. The following example starts a container running a Spring Boot application.
+
+	```console
+	$ docker run -d -p 8080:9080 \
+	    -v /tmp/hellospringboot.jar:/config/dropins/spring/hellospringboot.jar \
+	    open-liberty:springBoot2
+	```
+
+	Similarly, you can create a Spring Boot application layer over this image by adding the application JAR to the `dropins/spring` directory. In this example we copied `hellospringboot.jar` from `/tmp` to the same directory containing the following Dockerfile.
+
+	```dockerfile
+	FROM open-liberty:springBoot2
+	COPY hellospringboot.jar /config/dropins/spring/
+	```
+
+	The custom image can be built and run as follows.
+
+	```console
+	$ docker build -t app .
+	$ docker run -d -p 8080:9080 app
+	```
+
+2.	The `springBoot` images provide the library cache directory, `lib.index.cache`, which contains an indexed library cache created by the `springBootUtility` command. Use `lib.index.cache` to provide the library cache for a thin application.
+
+	For example, run the following command to thin the `hellospringboot.jar` application.
+
+	```console
+	$ <wlp>/bin/springBootUtility thin \
+	   --sourceAppPath=/tmp/hellospringboot.jar \
+	   --targetLibCachePath=/tmp/lib.index.cache \
+	   --targetThinAppPath=/tmp/thinhellospringboot.jar
+	```
+
+	You can run the thin application by mounting both the target application JAR and library cache when starting the container.
+
+	```console
+	$ docker run -d -p 8080:9080 \
+	    -v /tmp/thinhellospringboot.jar:/config/dropins/spring/thinhellospringboot.jar \
+	    -v /tmp/lib.index.cache:/lib.index.cache \
+	    open-liberty:springBoot2
+	```
+
+	Similarly, you can use the `springBootUtility` command to create thin application and library cache layers over a `springBoot` image. The following example uses docker staging to efficiently build an image that deploys a fat Spring Boot application as two layers containing a thin application and a library cache.
+
+	```dockerfile
+	FROM open-liberty:springBoot2 as staging
+	COPY hellospringboot.jar /staging/myFatApp.jar
+	RUN springBootUtility thin \
+	   --sourceAppPath=/staging/myFatApp.jar \
+	   --targetThinAppPath=/staging/myThinApp.jar \
+	   --targetLibCachePath=/staging/lib.index.cache
+	FROM open-liberty:springBoot2
+	COPY --from=staging /staging/lib.index.cache /lib.index.cache
+	COPY --from=staging /staging/myThinApp.jar /config/dropins/spring/myThinApp.jar
+	```
+
+	For Spring Boot applications packaged with library dependencies that rarely change across continuous application updates, you can use the capabilities mentioned above to to share library caches across containers and to create even more efficient docker layers that leverage the docker build cache.
 
 # Providing your own keystore/truststore
 
