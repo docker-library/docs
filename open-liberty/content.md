@@ -68,7 +68,7 @@ The images are designed to support a number of different usage patterns. The fol
 
 	```dockerfile
 	FROM %%IMAGE%%:webProfile8
-	ADD Sample1.war /config/dropins/
+	COPY Sample1.war /config/dropins/
 	```
 
 	This can then be built and run as follows:
@@ -84,7 +84,7 @@ The images are designed to support a number of different usage patterns. The fol
 
 	```dockerfile
 	FROM %%IMAGE%%:webProfile8
-	ADD DefaultServletEngine /config
+	COPY DefaultServletEngine /config
 	```
 
 	```console

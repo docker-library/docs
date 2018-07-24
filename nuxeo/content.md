@@ -128,7 +128,7 @@ If you would like to do additional setup in an image derived from this one, you 
 
 ```dockerfile
 FROM %%IMAGE%%:7.10
-ADD nuxeo.conf /docker-entrypoint-initnuxeo.d/nuxeo.conf
+COPY nuxeo.conf /docker-entrypoint-initnuxeo.d/nuxeo.conf
 ```
 
 If you need a root account to run some installation steps in your `Dockerfile`, then you need to put those steps between two `USER` command as the image is run with the user `1000` (nuxeo). For instance:
