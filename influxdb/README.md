@@ -164,7 +164,7 @@ To use the administrator interface, both the HTTP API and the administrator inte
 Creating a DB named mydb:
 
 ```console
-$ curl -G http://localhost:8086/query --data-urlencode "q=CREATE DATABASE mydb"
+$ curl -i -XPOST http://localhost:8086/query --data-urlencode "q=CREATE DATABASE mydb"
 ```
 
 Inserting into the DB:
