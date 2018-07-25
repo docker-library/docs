@@ -16,11 +16,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`10.3.8-jessie`, `10.3-jessie`, `10-jessie`, `jessie`, `10.3.8`, `10.3`, `10`, `latest` (*10.3/Dockerfile*)](https://github.com/docker-library/mariadb/blob/a7d1a184913c009c473baeb8f72385d12ae0de61/10.3/Dockerfile)
--	[`10.2.16-jessie`, `10.2-jessie`, `10.2.16`, `10.2` (*10.2/Dockerfile*)](https://github.com/docker-library/mariadb/blob/1e7c5c9bb2bfde0453fb52175343a360ed346104/10.2/Dockerfile)
--	[`10.1.34-jessie`, `10.1-jessie`, `10.1.34`, `10.1` (*10.1/Dockerfile*)](https://github.com/docker-library/mariadb/blob/12a0273332a3a0ed007ece2ae5886f7ac9c15d1b/10.1/Dockerfile)
--	[`10.0.35-jessie`, `10.0-jessie`, `10.0.35`, `10.0` (*10.0/Dockerfile*)](https://github.com/docker-library/mariadb/blob/20b1413b646df9a45df2d4dcc5c5c89ecb42c0b1/10.0/Dockerfile)
--	[`5.5.60-wheezy`, `5.5-wheezy`, `5-wheezy`, `5.5.60`, `5.5`, `5` (*5.5/Dockerfile*)](https://github.com/docker-library/mariadb/blob/20b1413b646df9a45df2d4dcc5c5c89ecb42c0b1/5.5/Dockerfile)
+-	[`10.3.8-bionic`, `10.3-bionic`, `10-bionic`, `bionic`, `10.3.8`, `10.3`, `10`, `latest` (*10.3/Dockerfile*)](https://github.com/docker-library/mariadb/blob/195c8432d2f434a50416dbb5ab2dec4b1978d89f/10.3/Dockerfile)
+-	[`10.2.16-bionic`, `10.2-bionic`, `10.2.16`, `10.2` (*10.2/Dockerfile*)](https://github.com/docker-library/mariadb/blob/195c8432d2f434a50416dbb5ab2dec4b1978d89f/10.2/Dockerfile)
+-	[`10.1.34-bionic`, `10.1-bionic`, `10.1.34`, `10.1` (*10.1/Dockerfile*)](https://github.com/docker-library/mariadb/blob/195c8432d2f434a50416dbb5ab2dec4b1978d89f/10.1/Dockerfile)
+-	[`10.0.35-xenial`, `10.0-xenial`, `10.0.35`, `10.0` (*10.0/Dockerfile*)](https://github.com/docker-library/mariadb/blob/f8437ada7c617d2a6bb1c30bb30d0367b93e0ed2/10.0/Dockerfile)
+-	[`5.5.60-trusty`, `5.5-trusty`, `5-trusty`, `5.5.60`, `5.5`, `5` (*5.5/Dockerfile*)](https://github.com/docker-library/mariadb/blob/f8437ada7c617d2a6bb1c30bb30d0367b93e0ed2/5.5/Dockerfile)
 
 # Quick reference
 
@@ -34,7 +34,7 @@ WARNING:
 	[the Docker Community](https://github.com/docker-library/mariadb)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/mariadb/)
+	[`amd64`](https://hub.docker.com/r/amd64/mariadb/), [`arm64v8`](https://hub.docker.com/r/arm64v8/mariadb/), [`i386`](https://hub.docker.com/r/i386/mariadb/), [`ppc64le`](https://hub.docker.com/r/ppc64le/mariadb/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/mariadb/` directory](https://github.com/docker-library/repo-info/blob/master/repos/mariadb) ([history](https://github.com/docker-library/repo-info/commits/master/repos/mariadb))  

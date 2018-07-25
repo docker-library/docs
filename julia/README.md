@@ -18,17 +18,17 @@ WARNING:
 
 ## Simple Tags
 
--	[`0.6.3-stretch`, `0.6-stretch`, `0-stretch`, `stretch` (*stretch/Dockerfile*)](https://github.com/docker-library/julia/blob/3854279e1ffb49d9e34080d476ffdb7c00035455/stretch/Dockerfile)
--	[`0.6.3-jessie`, `0.6-jessie`, `0-jessie`, `jessie` (*jessie/Dockerfile*)](https://github.com/docker-library/julia/blob/3854279e1ffb49d9e34080d476ffdb7c00035455/jessie/Dockerfile)
--	[`0.6.3-windowsservercore-ltsc2016`, `0.6-windowsservercore-ltsc2016`, `0-windowsservercore-ltsc2016`, `windowsservercore-ltsc2016` (*windows/windowsservercore-ltsc2016/Dockerfile*)](https://github.com/docker-library/julia/blob/d4f2c502f4604b25de33e6d4e2db23c8d5971c12/windows/windowsservercore-ltsc2016/Dockerfile)
--	[`0.6.3-windowsservercore-1709`, `0.6-windowsservercore-1709`, `0-windowsservercore-1709`, `windowsservercore-1709` (*windows/windowsservercore-1709/Dockerfile*)](https://github.com/docker-library/julia/blob/d4f2c502f4604b25de33e6d4e2db23c8d5971c12/windows/windowsservercore-1709/Dockerfile)
+-	[`0.6.4-stretch`, `0.6-stretch`, `0-stretch`, `stretch` (*stretch/Dockerfile*)](https://github.com/docker-library/julia/blob/d3bfa97a8dba3fd1085c017798d8d02f376f29e1/stretch/Dockerfile)
+-	[`0.6.4-jessie`, `0.6-jessie`, `0-jessie`, `jessie` (*jessie/Dockerfile*)](https://github.com/docker-library/julia/blob/d3bfa97a8dba3fd1085c017798d8d02f376f29e1/jessie/Dockerfile)
+-	[`0.6.4-windowsservercore-ltsc2016`, `0.6-windowsservercore-ltsc2016`, `0-windowsservercore-ltsc2016`, `windowsservercore-ltsc2016` (*windows/windowsservercore-ltsc2016/Dockerfile*)](https://github.com/docker-library/julia/blob/d3bfa97a8dba3fd1085c017798d8d02f376f29e1/windows/windowsservercore-ltsc2016/Dockerfile)
+-	[`0.6.4-windowsservercore-1709`, `0.6-windowsservercore-1709`, `0-windowsservercore-1709`, `windowsservercore-1709` (*windows/windowsservercore-1709/Dockerfile*)](https://github.com/docker-library/julia/blob/d3bfa97a8dba3fd1085c017798d8d02f376f29e1/windows/windowsservercore-1709/Dockerfile)
 
 ## Shared Tags
 
--	`0.6.3`, `0.6`, `0`, `latest`:
-	-	[`0.6.3-stretch` (*stretch/Dockerfile*)](https://github.com/docker-library/julia/blob/3854279e1ffb49d9e34080d476ffdb7c00035455/stretch/Dockerfile)
-	-	[`0.6.3-windowsservercore-ltsc2016` (*windows/windowsservercore-ltsc2016/Dockerfile*)](https://github.com/docker-library/julia/blob/d4f2c502f4604b25de33e6d4e2db23c8d5971c12/windows/windowsservercore-ltsc2016/Dockerfile)
-	-	[`0.6.3-windowsservercore-1709` (*windows/windowsservercore-1709/Dockerfile*)](https://github.com/docker-library/julia/blob/d4f2c502f4604b25de33e6d4e2db23c8d5971c12/windows/windowsservercore-1709/Dockerfile)
+-	`0.6.4`, `0.6`, `0`, `latest`:
+	-	[`0.6.4-stretch` (*stretch/Dockerfile*)](https://github.com/docker-library/julia/blob/d3bfa97a8dba3fd1085c017798d8d02f376f29e1/stretch/Dockerfile)
+	-	[`0.6.4-windowsservercore-ltsc2016` (*windows/windowsservercore-ltsc2016/Dockerfile*)](https://github.com/docker-library/julia/blob/d3bfa97a8dba3fd1085c017798d8d02f376f29e1/windows/windowsservercore-ltsc2016/Dockerfile)
+	-	[`0.6.4-windowsservercore-1709` (*windows/windowsservercore-1709/Dockerfile*)](https://github.com/docker-library/julia/blob/d3bfa97a8dba3fd1085c017798d8d02f376f29e1/windows/windowsservercore-1709/Dockerfile)
 
 # Quick reference
 
@@ -42,7 +42,7 @@ WARNING:
 	[the Docker Community](https://github.com/docker-library/julia)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/julia/), [`arm32v7`](https://hub.docker.com/r/arm32v7/julia/), [`arm64v8`](https://hub.docker.com/r/arm64v8/julia/), [`i386`](https://hub.docker.com/r/i386/julia/), [`windows-amd64`](https://hub.docker.com/r/winamd64/julia/)
+	[`amd64`](https://hub.docker.com/r/amd64/julia/), [`i386`](https://hub.docker.com/r/i386/julia/), [`windows-amd64`](https://hub.docker.com/r/winamd64/julia/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/julia/` directory](https://github.com/docker-library/repo-info/blob/master/repos/julia) ([history](https://github.com/docker-library/repo-info/commits/master/repos/julia))  
