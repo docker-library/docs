@@ -29,7 +29,7 @@ This template defines the "Supported tags and Dockerfile links" portion of an im
 		- {{- "\t" -}}
 		{{- if $isGitHub -}} [ {{- end -}}
 		{{- $dir := .ArchDirectory $arch -}}
-		{{- $dockerfilePath := ternary "Dockerfile" (join "/" $dir "Dockerfile") (eq $dir ".") -}}
+		{{- $dockerfilePath := eq $dir "." | ternary "Dockerfile" (join "/" $dir "Dockerfile") -}}
 		` {{- $e.Tags | join "`, `" -}} ` (* {{- $dockerfilePath -}} *)
 		{{- $gitCommit := $e.ArchGitCommit $arch -}}
 		{{- if $isGitHub -}} ]( {{- $repoUrlBase -}} /blob/ {{- $gitCommit -}} / {{- $dockerfilePath -}} ) {{- end -}}
