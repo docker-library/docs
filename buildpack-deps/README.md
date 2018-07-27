@@ -16,9 +16,6 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`artful-curl`, `17.10-curl` (*artful/curl/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/b0fc01aa5e3aed6820d8fed6f3301e0542fbeb36/artful/curl/Dockerfile)
--	[`artful-scm`, `17.10-scm` (*artful/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/36018aca7e9637c9c04ff623625e59de12d7f161/artful/scm/Dockerfile)
--	[`artful`, `17.10` (*artful/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/d7da72aaf3bb93fecf5fcb7c6ff154cb0c55d1d1/artful/Dockerfile)
 -	[`bionic-curl`, `18.04-curl` (*bionic/curl/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/b0fc01aa5e3aed6820d8fed6f3301e0542fbeb36/bionic/curl/Dockerfile)
 -	[`bionic-scm`, `18.04-scm` (*bionic/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/0db0cf15f1c507b17e7edc6dfbe301b8e357568f/bionic/scm/Dockerfile)
 -	[`bionic`, `18.04` (*bionic/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/0db0cf15f1c507b17e7edc6dfbe301b8e357568f/bionic/Dockerfile)

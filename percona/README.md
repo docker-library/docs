@@ -16,9 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.7.22`, `5.7`, `5`, `latest` (*5.7/Dockerfile*)](https://github.com/docker-library/percona/blob/01c136a28e68649b02fc2e00a580067e97f763c7/5.7/Dockerfile)
--	[`5.6.40`, `5.6` (*5.6/Dockerfile*)](https://github.com/docker-library/percona/blob/24e0d02a91dd7880e2ac7991818887fd7df1303a/5.6/Dockerfile)
--	[`5.5.60`, `5.5` (*5.5/Dockerfile*)](https://github.com/docker-library/percona/blob/12afad5976f769f545bb9f85583e40e84109b80c/5.5/Dockerfile)
+-	[`5.7.22-jessie`, `5.7-jessie`, `5-jessie`, `jessie`, `5.7.22`, `5.7`, `5`, `latest` (*5.7/Dockerfile*)](https://github.com/docker-library/percona/blob/2bc351a6c89c243851efc828d7ec19a21663df80/5.7/Dockerfile)
+-	[`5.6.40-jessie`, `5.6-jessie`, `5.6.40`, `5.6` (*5.6/Dockerfile*)](https://github.com/docker-library/percona/blob/2bc351a6c89c243851efc828d7ec19a21663df80/5.6/Dockerfile)
+-	[`5.5.60-jessie`, `5.5-jessie`, `5.5.60`, `5.5` (*5.5/Dockerfile*)](https://github.com/docker-library/percona/blob/2bc351a6c89c243851efc828d7ec19a21663df80/5.5/Dockerfile)
 
 # Quick reference
 
@@ -32,7 +32,7 @@ WARNING:
 	[the Docker Community](https://github.com/docker-library/percona)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/percona/)
+	[`amd64`](https://hub.docker.com/r/amd64/percona/), [`i386`](https://hub.docker.com/r/i386/percona/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/percona/` directory](https://github.com/docker-library/repo-info/blob/master/repos/percona) ([history](https://github.com/docker-library/repo-info/commits/master/repos/percona))  

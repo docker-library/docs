@@ -17,9 +17,9 @@ WARNING:
 # Supported tags and respective `Dockerfile` links
 
 -	[`11-beta2`, `11` (*11/Dockerfile*)](https://github.com/docker-library/postgres/blob/635fd0bcb3ababc96871c9da52f10743fbae4742/11/Dockerfile)
--	[`11-beta2-alpine`, `11-alpine` (*11/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/34689e2a5ba1841fb09fd5a9c29ef47a022d48dc/11/alpine/Dockerfile)
+-	[`11-beta2-alpine`, `11-alpine` (*11/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/6b2d9f0d5dde36d634d1bbcbd27a0b2ed7054f3c/11/alpine/Dockerfile)
 -	[`10.4`, `10`, `latest` (*10/Dockerfile*)](https://github.com/docker-library/postgres/blob/635fd0bcb3ababc96871c9da52f10743fbae4742/10/Dockerfile)
--	[`10.4-alpine`, `10-alpine`, `alpine` (*10/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/34689e2a5ba1841fb09fd5a9c29ef47a022d48dc/10/alpine/Dockerfile)
+-	[`10.4-alpine`, `10-alpine`, `alpine` (*10/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/6b2d9f0d5dde36d634d1bbcbd27a0b2ed7054f3c/10/alpine/Dockerfile)
 -	[`9.6.9`, `9.6`, `9` (*9.6/Dockerfile*)](https://github.com/docker-library/postgres/blob/635fd0bcb3ababc96871c9da52f10743fbae4742/9.6/Dockerfile)
 -	[`9.6.9-alpine`, `9.6-alpine`, `9-alpine` (*9.6/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/34689e2a5ba1841fb09fd5a9c29ef47a022d48dc/9.6/alpine/Dockerfile)
 -	[`9.5.13`, `9.5` (*9.5/Dockerfile*)](https://github.com/docker-library/postgres/blob/635fd0bcb3ababc96871c9da52f10743fbae4742/9.5/Dockerfile)
