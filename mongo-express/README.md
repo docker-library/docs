@@ -16,7 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`0.45.0`, `0.45`, `latest` (*Dockerfile*)](https://github.com/mongo-express/mongo-express-docker/blob/e297febcf7ee27858c70505e1ba2db13d93730e0/Dockerfile)
+-	[`0.49.0`, `0.49`, `latest` (*Dockerfile*)](https://github.com/mongo-express/mongo-express-docker/blob/bca900d7c6ce0fe0112c41709723b7cbc9198037/Dockerfile)
 
 # Quick reference
 
