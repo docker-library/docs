@@ -16,7 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.2.1`, `latest` (*0.X/Dockerfile*)](https://github.com/hashicorp/docker-consul/blob/309af05c86e7787ef6b668c7e5f173e92b00aaa3/0.X/Dockerfile)
+-	[`1.2.2`, `latest` (*0.X/Dockerfile*)](https://github.com/hashicorp/docker-consul/blob/75d3ac383a8401b41a5f80bb1713ff6924584c5f/0.X/Dockerfile)
 
 # Quick reference
 
