@@ -22,6 +22,9 @@ WARNING:
 -	[`13.0.5-apache`, `13.0-apache`, `13-apache`, `apache`, `stable-apache`, `13.0.5`, `13.0`, `13`, `latest`, `stable` (*13.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/b0c5b58f5866442904d73063ef3dc4bf18ecf1f2/13.0/apache/Dockerfile)
 -	[`13.0.5-fpm`, `13.0-fpm`, `13-fpm`, `fpm`, `stable-fpm` (*13.0/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/b0c5b58f5866442904d73063ef3dc4bf18ecf1f2/13.0/fpm/Dockerfile)
 -	[`13.0.5-fpm-alpine`, `13.0-fpm-alpine`, `13-fpm-alpine`, `fpm-alpine`, `stable-fpm-alpine` (*13.0/fpm-alpine/Dockerfile*)](https://github.com/nextcloud/docker/blob/b0c5b58f5866442904d73063ef3dc4bf18ecf1f2/13.0/fpm-alpine/Dockerfile)
+-	[`14.0.0beta1-apache`, `14.0.0-beta-apache`, `14.0-beta-apache`, `14-beta-apache`, `beta-apache`, `14.0.0beta1`, `14.0.0-beta`, `14.0-beta`, `14-beta`, `beta` (*14.0-beta/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/7f91a3a23306510dea7ee8e970be6fe1df5ddad7/14.0-beta/apache/Dockerfile)
+-	[`14.0.0beta1-fpm`, `14.0.0-beta-fpm`, `14.0-beta-fpm`, `14-beta-fpm`, `beta-fpm` (*14.0-beta/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/7f91a3a23306510dea7ee8e970be6fe1df5ddad7/14.0-beta/fpm/Dockerfile)
+-	[`14.0.0beta1-fpm-alpine`, `14.0.0-beta-fpm-alpine`, `14.0-beta-fpm-alpine`, `14-beta-fpm-alpine`, `beta-fpm-alpine` (*14.0-beta/fpm-alpine/Dockerfile*)](https://github.com/nextcloud/docker/blob/7f91a3a23306510dea7ee8e970be6fe1df5ddad7/14.0-beta/fpm-alpine/Dockerfile)
 
 # Quick reference
 
