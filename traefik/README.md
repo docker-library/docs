@@ -16,8 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`v1.7.0-rc2`, `1.7.0-rc2`, `v1.7`, `1.7`, `maroilles` (*scratch/amd64/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/7dec7b825ca16d0524626fbbca35284adfe3ef58/scratch/amd64/Dockerfile)
--	[`v1.7.0-rc2-alpine`, `1.7.0-rc2-alpine`, `v1.7-alpine`, `1.7-alpine`, `maroilles-alpine` (*alpine/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/7dec7b825ca16d0524626fbbca35284adfe3ef58/alpine/Dockerfile)
+-	[`v1.7.0-rc3`, `1.7.0-rc3`, `v1.7`, `1.7`, `maroilles` (*scratch/amd64/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/6dadcaf64497da64d2283f2e86302798554f1539/scratch/amd64/Dockerfile)
+-	[`v1.7.0-rc3-alpine`, `1.7.0-rc3-alpine`, `v1.7-alpine`, `1.7-alpine`, `maroilles-alpine` (*alpine/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/6dadcaf64497da64d2283f2e86302798554f1539/alpine/Dockerfile)
+-	[`v1.7.0-rc3-nanoserver`, `1.7.0-rc3-nanoserver`, `v1.7-nanoserver`, `1.7-nanoserver`, `maroilles-nanoserver`, `v1.7.0-rc3-nanoserver-sac2016`, `1.7.0-rc3-nanoserver-sac2016`, `v1.7-nanoserver-sac2016`, `1.7-nanoserver-sac2016`, `maroilles-nanoserver-sac2016` (*windows/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/6dadcaf64497da64d2283f2e86302798554f1539/windows/Dockerfile)
 -	[`v1.6.5`, `1.6.5`, `v1.6`, `1.6`, `tetedemoine`, `latest` (*scratch/amd64/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/3ec5ce5d64e79eeafbe082c4690b9ca40cda013a/scratch/amd64/Dockerfile)
 -	[`v1.6.5-alpine`, `1.6.5-alpine`, `v1.6-alpine`, `1.6-alpine`, `tetedemoine-alpine`, `alpine` (*alpine/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/3ec5ce5d64e79eeafbe082c4690b9ca40cda013a/alpine/Dockerfile)
 
@@ -33,7 +34,7 @@ WARNING:
 	[the Træfik Project](https://github.com/containous/traefik-library-image)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/traefik/), [`arm32v6`](https://hub.docker.com/r/arm32v6/traefik/), [`arm64v8`](https://hub.docker.com/r/arm64v8/traefik/)
+	[`amd64`](https://hub.docker.com/r/amd64/traefik/), [`arm32v6`](https://hub.docker.com/r/arm32v6/traefik/), [`arm64v8`](https://hub.docker.com/r/arm64v8/traefik/), [`windows-amd64`](https://hub.docker.com/r/winamd64/traefik/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/traefik/` directory](https://github.com/docker-library/repo-info/blob/master/repos/traefik) ([history](https://github.com/docker-library/repo-info/commits/master/repos/traefik))  
