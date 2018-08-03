@@ -16,15 +16,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`kernel` (*ga/developer/kernel/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/18197ebb67c98992535b0dd7ce992f9596d51b62/ga/developer/kernel/Dockerfile)
--	[`microProfile` (*ga/developer/microProfile/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/18197ebb67c98992535b0dd7ce992f9596d51b62/ga/developer/microProfile/Dockerfile)
--	[`springBoot1` (*ga/developer/springBoot1/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/18197ebb67c98992535b0dd7ce992f9596d51b62/ga/developer/springBoot1/Dockerfile)
--	[`springBoot2` (*ga/developer/springBoot2/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/18197ebb67c98992535b0dd7ce992f9596d51b62/ga/developer/springBoot2/Dockerfile)
--	[`webProfile7` (*ga/developer/webProfile7/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/18197ebb67c98992535b0dd7ce992f9596d51b62/ga/developer/webProfile7/Dockerfile)
--	[`javaee7` (*ga/developer/javaee7/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/18197ebb67c98992535b0dd7ce992f9596d51b62/ga/developer/javaee7/Dockerfile)
--	[`webProfile8` (*ga/developer/webProfile8/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/18197ebb67c98992535b0dd7ce992f9596d51b62/ga/developer/webProfile8/Dockerfile)
--	[`javaee8`, `latest` (*ga/developer/javaee8/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/18197ebb67c98992535b0dd7ce992f9596d51b62/ga/developer/javaee8/Dockerfile)
--	[`beta` (*beta/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/18197ebb67c98992535b0dd7ce992f9596d51b62/beta/Dockerfile)
+-	[`kernel` (*ga/developer/kernel/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/de3f7503a0fbc27595bfe215d18f23117b5fb00b/ga/developer/kernel/Dockerfile)
+-	[`microProfile` (*ga/developer/microProfile/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/de3f7503a0fbc27595bfe215d18f23117b5fb00b/ga/developer/microProfile/Dockerfile)
+-	[`springBoot1` (*ga/developer/springBoot1/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/de3f7503a0fbc27595bfe215d18f23117b5fb00b/ga/developer/springBoot1/Dockerfile)
+-	[`springBoot2` (*ga/developer/springBoot2/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/de3f7503a0fbc27595bfe215d18f23117b5fb00b/ga/developer/springBoot2/Dockerfile)
+-	[`webProfile7` (*ga/developer/webProfile7/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/de3f7503a0fbc27595bfe215d18f23117b5fb00b/ga/developer/webProfile7/Dockerfile)
+-	[`javaee7` (*ga/developer/javaee7/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/de3f7503a0fbc27595bfe215d18f23117b5fb00b/ga/developer/javaee7/Dockerfile)
+-	[`webProfile8` (*ga/developer/webProfile8/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/de3f7503a0fbc27595bfe215d18f23117b5fb00b/ga/developer/webProfile8/Dockerfile)
+-	[`javaee8`, `latest` (*ga/developer/javaee8/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/de3f7503a0fbc27595bfe215d18f23117b5fb00b/ga/developer/javaee8/Dockerfile)
+-	[`beta` (*beta/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/de3f7503a0fbc27595bfe215d18f23117b5fb00b/beta/Dockerfile)
 
 # Quick reference
 
