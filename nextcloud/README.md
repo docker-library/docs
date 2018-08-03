@@ -16,15 +16,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`12.0.10-apache`, `12.0-apache`, `12-apache`, `12.0.10`, `12.0`, `12` (*12.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/66fcf0ba1f7e644093b025d85ada1a9ad0dc9b68/12.0/apache/Dockerfile)
--	[`12.0.10-fpm`, `12.0-fpm`, `12-fpm` (*12.0/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/66fcf0ba1f7e644093b025d85ada1a9ad0dc9b68/12.0/fpm/Dockerfile)
--	[`12.0.10-fpm-alpine`, `12.0-fpm-alpine`, `12-fpm-alpine` (*12.0/fpm-alpine/Dockerfile*)](https://github.com/nextcloud/docker/blob/66fcf0ba1f7e644093b025d85ada1a9ad0dc9b68/12.0/fpm-alpine/Dockerfile)
--	[`13.0.5-apache`, `13.0-apache`, `13-apache`, `apache`, `stable-apache`, `13.0.5`, `13.0`, `13`, `latest`, `stable` (*13.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/b0c5b58f5866442904d73063ef3dc4bf18ecf1f2/13.0/apache/Dockerfile)
--	[`13.0.5-fpm`, `13.0-fpm`, `13-fpm`, `fpm`, `stable-fpm` (*13.0/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/b0c5b58f5866442904d73063ef3dc4bf18ecf1f2/13.0/fpm/Dockerfile)
--	[`13.0.5-fpm-alpine`, `13.0-fpm-alpine`, `13-fpm-alpine`, `fpm-alpine`, `stable-fpm-alpine` (*13.0/fpm-alpine/Dockerfile*)](https://github.com/nextcloud/docker/blob/b0c5b58f5866442904d73063ef3dc4bf18ecf1f2/13.0/fpm-alpine/Dockerfile)
--	[`14.0.0beta1-apache`, `14.0.0-beta-apache`, `14.0-beta-apache`, `14-beta-apache`, `beta-apache`, `14.0.0beta1`, `14.0.0-beta`, `14.0-beta`, `14-beta`, `beta` (*14.0-beta/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/7f91a3a23306510dea7ee8e970be6fe1df5ddad7/14.0-beta/apache/Dockerfile)
--	[`14.0.0beta1-fpm`, `14.0.0-beta-fpm`, `14.0-beta-fpm`, `14-beta-fpm`, `beta-fpm` (*14.0-beta/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/7f91a3a23306510dea7ee8e970be6fe1df5ddad7/14.0-beta/fpm/Dockerfile)
--	[`14.0.0beta1-fpm-alpine`, `14.0.0-beta-fpm-alpine`, `14.0-beta-fpm-alpine`, `14-beta-fpm-alpine`, `beta-fpm-alpine` (*14.0-beta/fpm-alpine/Dockerfile*)](https://github.com/nextcloud/docker/blob/7f91a3a23306510dea7ee8e970be6fe1df5ddad7/14.0-beta/fpm-alpine/Dockerfile)
+-	[`12.0.10-apache`, `12.0-apache`, `12-apache`, `12.0.10`, `12.0`, `12` (*12.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/328b7f334fdfec69f4985e609386613470af87fa/12.0/apache/Dockerfile)
+-	[`12.0.10-fpm-alpine`, `12.0-fpm-alpine`, `12-fpm-alpine` (*12.0/fpm-alpine/Dockerfile*)](https://github.com/nextcloud/docker/blob/328b7f334fdfec69f4985e609386613470af87fa/12.0/fpm-alpine/Dockerfile)
+-	[`12.0.10-fpm`, `12.0-fpm`, `12-fpm` (*12.0/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/328b7f334fdfec69f4985e609386613470af87fa/12.0/fpm/Dockerfile)
+-	[`13.0.5-apache`, `13.0-apache`, `13-apache`, `apache`, `stable-apache`, `13.0.5`, `13.0`, `13`, `latest`, `stable` (*13.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/328b7f334fdfec69f4985e609386613470af87fa/13.0/apache/Dockerfile)
+-	[`13.0.5-fpm-alpine`, `13.0-fpm-alpine`, `13-fpm-alpine`, `fpm-alpine`, `stable-fpm-alpine` (*13.0/fpm-alpine/Dockerfile*)](https://github.com/nextcloud/docker/blob/328b7f334fdfec69f4985e609386613470af87fa/13.0/fpm-alpine/Dockerfile)
+-	[`13.0.5-fpm`, `13.0-fpm`, `13-fpm`, `fpm`, `stable-fpm` (*13.0/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/328b7f334fdfec69f4985e609386613470af87fa/13.0/fpm/Dockerfile)
+-	[`14.0.0beta2-apache`, `14.0.0-beta-apache`, `14.0-beta-apache`, `14-beta-apache`, `beta-apache`, `14.0.0beta2`, `14.0.0-beta`, `14.0-beta`, `14-beta`, `beta` (*14.0-beta/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/31878f1f57a09e1603d62ddfc5b47ba4c7fb0d99/14.0-beta/apache/Dockerfile)
+-	[`14.0.0beta2-fpm-alpine`, `14.0.0-beta-fpm-alpine`, `14.0-beta-fpm-alpine`, `14-beta-fpm-alpine`, `beta-fpm-alpine` (*14.0-beta/fpm-alpine/Dockerfile*)](https://github.com/nextcloud/docker/blob/31878f1f57a09e1603d62ddfc5b47ba4c7fb0d99/14.0-beta/fpm-alpine/Dockerfile)
+-	[`14.0.0beta2-fpm`, `14.0.0-beta-fpm`, `14.0-beta-fpm`, `14-beta-fpm`, `beta-fpm` (*14.0-beta/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/31878f1f57a09e1603d62ddfc5b47ba4c7fb0d99/14.0-beta/fpm/Dockerfile)
 
 # Quick reference
 
