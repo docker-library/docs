@@ -16,12 +16,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.0-rc3`, `5.0-rc`, `5.0-rc3-stretch`, `5.0-rc-stretch` (*5.0-rc/Dockerfile*)](https://github.com/docker-library/redis/blob/403f00a0ba7556f33850a88e27e70509aa2814dd/5.0-rc/Dockerfile)
--	[`5.0-rc3-32bit`, `5.0-rc-32bit`, `5.0-rc3-32bit-stretch`, `5.0-rc-32bit-stretch` (*5.0-rc/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/403f00a0ba7556f33850a88e27e70509aa2814dd/5.0-rc/32bit/Dockerfile)
--	[`5.0-rc3-alpine`, `5.0-rc-alpine`, `5.0-rc3-alpine3.8`, `5.0-rc-alpine3.8` (*5.0-rc/alpine/Dockerfile*)](https://github.com/docker-library/redis/blob/7f5671ebdc563464f5570a1d081a78c26b5e6ad3/5.0-rc/alpine/Dockerfile)
--	[`4.0.10`, `4.0`, `4`, `latest`, `4.0.10-stretch`, `4.0-stretch`, `4-stretch`, `stretch` (*4.0/Dockerfile*)](https://github.com/docker-library/redis/blob/53f86805506b103b503fd392e029929290fe5346/4.0/Dockerfile)
--	[`4.0.10-32bit`, `4.0-32bit`, `4-32bit`, `32bit`, `4.0.10-32bit-stretch`, `4.0-32bit-stretch`, `4-32bit-stretch`, `32bit-stretch` (*4.0/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/53f86805506b103b503fd392e029929290fe5346/4.0/32bit/Dockerfile)
--	[`4.0.10-alpine`, `4.0-alpine`, `4-alpine`, `alpine`, `4.0.10-alpine3.8`, `4.0-alpine3.8`, `4-alpine3.8`, `alpine3.8` (*4.0/alpine/Dockerfile*)](https://github.com/docker-library/redis/blob/cd19a816a89c3ec00586e6d02da28802af11a958/4.0/alpine/Dockerfile)
+-	[`5.0-rc4`, `5.0-rc`, `5.0-rc4-stretch`, `5.0-rc-stretch` (*5.0-rc/Dockerfile*)](https://github.com/docker-library/redis/blob/e95c0cf4ffd9a52aa48d05b93fe3b42069c05032/5.0-rc/Dockerfile)
+-	[`5.0-rc4-32bit`, `5.0-rc-32bit`, `5.0-rc4-32bit-stretch`, `5.0-rc-32bit-stretch` (*5.0-rc/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/e95c0cf4ffd9a52aa48d05b93fe3b42069c05032/5.0-rc/32bit/Dockerfile)
+-	[`5.0-rc4-alpine`, `5.0-rc-alpine`, `5.0-rc4-alpine3.8`, `5.0-rc-alpine3.8` (*5.0-rc/alpine/Dockerfile*)](https://github.com/docker-library/redis/blob/e95c0cf4ffd9a52aa48d05b93fe3b42069c05032/5.0-rc/alpine/Dockerfile)
+-	[`4.0.11`, `4.0`, `4`, `latest`, `4.0.11-stretch`, `4.0-stretch`, `4-stretch`, `stretch` (*4.0/Dockerfile*)](https://github.com/docker-library/redis/blob/7900c5d31e0b3a4c463c57a8d69cc497d58fbe70/4.0/Dockerfile)
+-	[`4.0.11-32bit`, `4.0-32bit`, `4-32bit`, `32bit`, `4.0.11-32bit-stretch`, `4.0-32bit-stretch`, `4-32bit-stretch`, `32bit-stretch` (*4.0/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/7900c5d31e0b3a4c463c57a8d69cc497d58fbe70/4.0/32bit/Dockerfile)
+-	[`4.0.11-alpine`, `4.0-alpine`, `4-alpine`, `alpine`, `4.0.11-alpine3.8`, `4.0-alpine3.8`, `4-alpine3.8`, `alpine3.8` (*4.0/alpine/Dockerfile*)](https://github.com/docker-library/redis/blob/7900c5d31e0b3a4c463c57a8d69cc497d58fbe70/4.0/alpine/Dockerfile)
 -	[`3.2.12`, `3.2`, `3`, `3.2.12-stretch`, `3.2-stretch`, `3-stretch` (*3.2/Dockerfile*)](https://github.com/docker-library/redis/blob/53f86805506b103b503fd392e029929290fe5346/3.2/Dockerfile)
 -	[`3.2.12-32bit`, `3.2-32bit`, `3-32bit`, `3.2.12-32bit-stretch`, `3.2-32bit-stretch`, `3-32bit-stretch` (*3.2/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/53f86805506b103b503fd392e029929290fe5346/3.2/32bit/Dockerfile)
 -	[`3.2.12-alpine`, `3.2-alpine`, `3-alpine`, `3.2.12-alpine3.8`, `3.2-alpine3.8`, `3-alpine3.8` (*3.2/alpine/Dockerfile*)](https://github.com/docker-library/redis/blob/cd19a816a89c3ec00586e6d02da28802af11a958/3.2/alpine/Dockerfile)
