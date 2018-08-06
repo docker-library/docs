@@ -30,7 +30,7 @@ WARNING:
 	[Rapidoid](https://github.com/rapidoid/docker-rapidoid)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/rapidoid/)
+	[`amd64`](https://hub.docker.com/r/amd64/rapidoid/), [`arm64v8`](https://hub.docker.com/r/arm64v8/rapidoid/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/rapidoid/` directory](https://github.com/docker-library/repo-info/blob/master/repos/rapidoid) ([history](https://github.com/docker-library/repo-info/commits/master/repos/rapidoid))  
