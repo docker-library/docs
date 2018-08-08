@@ -16,14 +16,14 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.7.1`, `1.7`, `latest` (*1.7/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/634d315a5c6051a5858c25fbfdb37d0e655b971e/1.7/Dockerfile)
--	[`1.7.1-slim`, `1.7-slim`, `slim` (*1.7/slim/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/634d315a5c6051a5858c25fbfdb37d0e655b971e/1.7/slim/Dockerfile)
--	[`1.7.1-alpine`, `1.7-alpine`, `alpine` (*1.7/alpine/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/634d315a5c6051a5858c25fbfdb37d0e655b971e/1.7/alpine/Dockerfile)
+-	[`1.7.2`, `1.7`, `latest` (*1.7/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/a502dfaf78efdf61ec82419c190741df293c0b29/1.7/Dockerfile)
+-	[`1.7.2-slim`, `1.7-slim`, `slim` (*1.7/slim/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/a502dfaf78efdf61ec82419c190741df293c0b29/1.7/slim/Dockerfile)
+-	[`1.7.2-alpine`, `1.7-alpine`, `alpine` (*1.7/alpine/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/a502dfaf78efdf61ec82419c190741df293c0b29/1.7/alpine/Dockerfile)
 -	[`1.6.6`, `1.6` (*1.6/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/0936291249c7e11d4618a17a2b452045c9e6233a/1.6/Dockerfile)
 -	[`1.6.6-slim`, `1.6-slim` (*1.6/slim/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/0936291249c7e11d4618a17a2b452045c9e6233a/1.6/slim/Dockerfile)
 -	[`1.6.6-alpine`, `1.6-alpine` (*1.6/alpine/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/0936291249c7e11d4618a17a2b452045c9e6233a/1.6/alpine/Dockerfile)
 -	[`1.6.6-otp-21`, `1.6-otp-21` (*1.6/otp-21/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/b57a72d04ddd1f1b4e2e3f5b70e44e37def4db31/1.6/otp-21/Dockerfile)
--	[`1.6.6-otp-21-alpine`, `1.6-otp-21-alpine` (*1.6/otp-21-alpine/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/b57a72d04ddd1f1b4e2e3f5b70e44e37def4db31/1.6/otp-21-alpine/Dockerfile)
+-	[`1.6.6-otp-21-alpine`, `1.6-otp-21-alpine` (*1.6/otp-21-alpine/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/71f26c0a37a3d928f24021b14e23b88643c06280/1.6/otp-21-alpine/Dockerfile)
 -	[`1.5.3`, `1.5` (*1.5/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/f2528c0158d465f96f311faa19aff3cffb4e7f25/1.5/Dockerfile)
 -	[`1.5.3-slim`, `1.5-slim` (*1.5/slim/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/f2528c0158d465f96f311faa19aff3cffb4e7f25/1.5/slim/Dockerfile)
 -	[`1.5.3-alpine`, `1.5-alpine` (*1.5/alpine/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/f2528c0158d465f96f311faa19aff3cffb4e7f25/1.5/alpine/Dockerfile)
