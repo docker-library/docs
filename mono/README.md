@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.12.0.226`, `latest`, `5.12.0`, `5.12`, `5` (*5.12.0.226/Dockerfile*)](https://github.com/mono/docker/blob/f78944a3b27b9f155bd38210571eb05d348f2973/5.12.0.226/Dockerfile)
--	[`5.12.0.226-slim`, `slim`, `5.12.0-slim`, `5.12-slim`, `5-slim` (*5.12.0.226/slim/Dockerfile*)](https://github.com/mono/docker/blob/f78944a3b27b9f155bd38210571eb05d348f2973/5.12.0.226/slim/Dockerfile)
--	[`5.10.1.47`, `5.10.1`, `5.10` (*5.10.1.47/Dockerfile*)](https://github.com/mono/docker/blob/f78944a3b27b9f155bd38210571eb05d348f2973/5.10.1.47/Dockerfile)
--	[`5.10.1.47-slim`, `5.10.1-slim`, `5.10-slim` (*5.10.1.47/slim/Dockerfile*)](https://github.com/mono/docker/blob/f78944a3b27b9f155bd38210571eb05d348f2973/5.10.1.47/slim/Dockerfile)
+-	[`5.14.0.177`, `latest`, `5.14.0`, `5.14`, `5` (*5.14.0.177/Dockerfile*)](https://github.com/mono/docker/blob/6d9b65ee9c9fe73b5fed6674e8ebe8e0d6f5abaf/5.14.0.177/Dockerfile)
+-	[`5.14.0.177-slim`, `slim`, `5.14.0-slim`, `5.14-slim`, `5-slim` (*5.14.0.177/slim/Dockerfile*)](https://github.com/mono/docker/blob/6d9b65ee9c9fe73b5fed6674e8ebe8e0d6f5abaf/5.14.0.177/slim/Dockerfile)
+-	[`5.12.0.226`, `5.12.0`, `5.12` (*5.12.0.226/Dockerfile*)](https://github.com/mono/docker/blob/f78944a3b27b9f155bd38210571eb05d348f2973/5.12.0.226/Dockerfile)
+-	[`5.12.0.226-slim`, `5.12.0-slim`, `5.12-slim` (*5.12.0.226/slim/Dockerfile*)](https://github.com/mono/docker/blob/f78944a3b27b9f155bd38210571eb05d348f2973/5.12.0.226/slim/Dockerfile)
 -	[`4.8.0.524`, `4.8.0`, `4.8`, `4` (*4.8.0.524/Dockerfile*)](https://github.com/mono/docker/blob/0d987d93235630e05a14983c7f87500ab33c90da/4.8.0.524/Dockerfile)
 
 # Quick reference
