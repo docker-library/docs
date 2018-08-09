@@ -119,6 +119,8 @@ $ docker run -d --name kong \
     --link kong-database:kong-database \
     -e "KONG_DATABASE=cassandra" \
     -e "KONG_CASSANDRA_CONTACT_POINTS=kong-database" \
+    -e "KONG_CASSANDRA_USERNAME=cassandra" \
+    -e "KONG_CASSANDRA_PASSWORD=cassandra" \
     -e "KONG_PROXY_ACCESS_LOG=/dev/stdout" \
     -e "KONG_ADMIN_ACCESS_LOG=/dev/stdout" \
     -e "KONG_PROXY_ERROR_LOG=/dev/stderr" \
