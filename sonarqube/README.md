@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.7.4`, `lts` (*6.7.4/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/5d695dae7e2c5565e6dd09991a719fae5f5cefec/6.7.4/Dockerfile)
--	[`6.7.4-alpine`, `lts-alpine` (*6.7.4-alpine/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/5d695dae7e2c5565e6dd09991a719fae5f5cefec/6.7.4-alpine/Dockerfile)
--	[`7.1`, `latest` (*7.1/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/5d695dae7e2c5565e6dd09991a719fae5f5cefec/7.1/Dockerfile)
--	[`7.1-alpine`, `alpine` (*7.1-alpine/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/5d695dae7e2c5565e6dd09991a719fae5f5cefec/7.1-alpine/Dockerfile)
+-	[`6.7.5`, `lts` (*6.7.5/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/4d76dfe9fb4c5d41ba1852cd5072dbff15ca5a20/6.7.5/Dockerfile)
+-	[`6.7.5-alpine`, `lts-alpine` (*6.7.5-alpine/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/4d76dfe9fb4c5d41ba1852cd5072dbff15ca5a20/6.7.5-alpine/Dockerfile)
+-	[`7.1`, `latest` (*7.1/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/4d76dfe9fb4c5d41ba1852cd5072dbff15ca5a20/7.1/Dockerfile)
+-	[`7.1-alpine`, `alpine` (*7.1-alpine/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/4d76dfe9fb4c5d41ba1852cd5072dbff15ca5a20/7.1-alpine/Dockerfile)
 
 # Quick reference
 
