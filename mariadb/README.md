@@ -18,7 +18,7 @@ WARNING:
 
 -	[`10.3.8-bionic`, `10.3-bionic`, `10-bionic`, `bionic`, `10.3.8`, `10.3`, `10`, `latest` (*10.3/Dockerfile*)](https://github.com/docker-library/mariadb/blob/195c8432d2f434a50416dbb5ab2dec4b1978d89f/10.3/Dockerfile)
 -	[`10.2.16-bionic`, `10.2-bionic`, `10.2.16`, `10.2` (*10.2/Dockerfile*)](https://github.com/docker-library/mariadb/blob/350bb5974b3cb5ee71805d2b29812a76d7c6d393/10.2/Dockerfile)
--	[`10.1.34-bionic`, `10.1-bionic`, `10.1.34`, `10.1` (*10.1/Dockerfile*)](https://github.com/docker-library/mariadb/blob/195c8432d2f434a50416dbb5ab2dec4b1978d89f/10.1/Dockerfile)
+-	[`10.1.35-bionic`, `10.1-bionic`, `10.1.35`, `10.1` (*10.1/Dockerfile*)](https://github.com/docker-library/mariadb/blob/8a25691df08c6b6dede86a50411074f4f30e495d/10.1/Dockerfile)
 -	[`10.0.36-xenial`, `10.0-xenial`, `10.0.36`, `10.0` (*10.0/Dockerfile*)](https://github.com/docker-library/mariadb/blob/350bb5974b3cb5ee71805d2b29812a76d7c6d393/10.0/Dockerfile)
 -	[`5.5.61-trusty`, `5.5-trusty`, `5-trusty`, `5.5.61`, `5.5`, `5` (*5.5/Dockerfile*)](https://github.com/docker-library/mariadb/blob/350bb5974b3cb5ee71805d2b29812a76d7c6d393/5.5/Dockerfile)
 
