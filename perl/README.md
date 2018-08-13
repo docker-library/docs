@@ -16,12 +16,18 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `5`, `5.28`, `5.28.0` (*5.028.000-64bit/Dockerfile*)](https://github.com/perl/docker-perl/blob/c3e4a229b3423f7db683fb53882473689d9f6112/5.028.000-64bit/Dockerfile)
--	[`threaded`, `5-threaded`, `5.28-threaded`, `5.28.0-threaded` (*5.028.000-64bit,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/c3e4a229b3423f7db683fb53882473689d9f6112/5.028.000-64bit,threaded/Dockerfile)
--	[`5.26`, `5.26.2` (*5.026.002-64bit/Dockerfile*)](https://github.com/perl/docker-perl/blob/c3e4a229b3423f7db683fb53882473689d9f6112/5.026.002-64bit/Dockerfile)
--	[`5.26-threaded`, `5.26.2-threaded` (*5.026.002-64bit,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/c3e4a229b3423f7db683fb53882473689d9f6112/5.026.002-64bit,threaded/Dockerfile)
--	[`5.24`, `5.24.4` (*5.024.004-64bit/Dockerfile*)](https://github.com/perl/docker-perl/blob/c3e4a229b3423f7db683fb53882473689d9f6112/5.024.004-64bit/Dockerfile)
--	[`5.24-threaded`, `5.24.4-threaded` (*5.024.004-64bit,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/c3e4a229b3423f7db683fb53882473689d9f6112/5.024.004-64bit,threaded/Dockerfile)
+-	[`latest`, `5`, `5.28`, `5.28.0` (*5.028.000-main/Dockerfile*)](https://github.com/perl/docker-perl/blob/892e2b4fbb58c48ee802cd13b34017300c630f18/5.028.000-main/Dockerfile)
+-	[`slim`, `5-slim`, `5.28-slim`, `5.28.0-slim` (*5.028.000-slim/Dockerfile*)](https://github.com/perl/docker-perl/blob/892e2b4fbb58c48ee802cd13b34017300c630f18/5.028.000-slim/Dockerfile)
+-	[`threaded`, `5-threaded`, `5.28-threaded`, `5.28.0-threaded` (*5.028.000-main,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/892e2b4fbb58c48ee802cd13b34017300c630f18/5.028.000-main,threaded/Dockerfile)
+-	[`slim-threaded`, `5-slim-threaded`, `5.28-slim-threaded`, `5.28.0-slim-threaded` (*5.028.000-slim,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/892e2b4fbb58c48ee802cd13b34017300c630f18/5.028.000-slim,threaded/Dockerfile)
+-	[`5.26`, `5.26.2` (*5.026.002-main/Dockerfile*)](https://github.com/perl/docker-perl/blob/892e2b4fbb58c48ee802cd13b34017300c630f18/5.026.002-main/Dockerfile)
+-	[`5.26-slim`, `5.26.2-slim` (*5.026.002-slim/Dockerfile*)](https://github.com/perl/docker-perl/blob/892e2b4fbb58c48ee802cd13b34017300c630f18/5.026.002-slim/Dockerfile)
+-	[`5.26-threaded`, `5.26.2-threaded` (*5.026.002-main,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/892e2b4fbb58c48ee802cd13b34017300c630f18/5.026.002-main,threaded/Dockerfile)
+-	[`5.26-slim-threaded`, `5.26.2-slim-threaded` (*5.026.002-slim,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/892e2b4fbb58c48ee802cd13b34017300c630f18/5.026.002-slim,threaded/Dockerfile)
+-	[`5.24`, `5.24.4` (*5.024.004-main/Dockerfile*)](https://github.com/perl/docker-perl/blob/892e2b4fbb58c48ee802cd13b34017300c630f18/5.024.004-main/Dockerfile)
+-	[`5.24-slim`, `5.24.4-slim` (*5.024.004-slim/Dockerfile*)](https://github.com/perl/docker-perl/blob/892e2b4fbb58c48ee802cd13b34017300c630f18/5.024.004-slim/Dockerfile)
+-	[`5.24-threaded`, `5.24.4-threaded` (*5.024.004-main,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/892e2b4fbb58c48ee802cd13b34017300c630f18/5.024.004-main,threaded/Dockerfile)
+-	[`5.24-slim-threaded`, `5.24.4-slim-threaded` (*5.024.004-slim,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/892e2b4fbb58c48ee802cd13b34017300c630f18/5.024.004-slim,threaded/Dockerfile)
 
 # Quick reference
 
@@ -108,6 +114,18 @@ Having a single `perl:carton` base image is useful especially if you have multip
 
 -	This kind of base image will hide the useful bits (such as the`COPY`/`RUN` above) in the image, separating it from more specific Dockerfiles using the base image. This might lead to confusion when creating further derived images, so be aware of how [ONBUILD triggers](https://docs.docker.com/engine/reference/builder/#onbuild) work and plan appropriately.
 -	There is the cost of maintaining an extra base image build, so if you're working on a single Carton project and/or plan to publish it, then it may be more preferable to derive directly from a versioned `perl` image instead.
+
+# Image Variants
+
+The `perl` images come in many flavors, each designed for a specific use case.
+
+## `perl:<version>`
+
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of. This tag is based off of [`buildpack-deps`](https://registry.hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
+
+## `perl:slim`
+
+This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `perl`. Unless you are working in an environment where *only* the `perl` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
 
 # License
 
