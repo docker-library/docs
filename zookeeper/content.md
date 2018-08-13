@@ -82,6 +82,18 @@ Defaults to `false`. Zookeeper's [`standaloneEnabled`](http://zookeeper.apache.o
 
 > Prior to 3.5.0, one could run ZooKeeper in Standalone mode or in a Distributed mode. These are separate implementation stacks, and switching between them during run time is not possible. By default (for backward compatibility) standaloneEnabled is set to true. The consequence of using this default is that if started with a single server the ensemble will not be allowed to grow, and if started with more than one server it will not be allowed to shrink to contain fewer than two participants.
 
+### `ZOO_AUTOPURGE_PURGEINTERVAL`
+
+Defaults to `0`. Zookeeper's [`autoPurge.purgeInterval`](https://zookeeper.apache.org/doc/current/zookeeperAdmin.html#sc_advancedConfiguration)
+
+> New in 3.4.0: The time interval in hours for which the purge task has to be triggered. Set to a positive integer (1 and above) to enable the auto purging. Defaults to 0.
+
+### `ZOO_AUTOPURGE_SNAPRETAINCOUNT`
+
+Defaults to `3`. Zookeeper's [`autoPurge.snapRetainCount`](https://zookeeper.apache.org/doc/current/zookeeperAdmin.html#sc_advancedConfiguration)
+
+> New in 3.4.0: When enabled, ZooKeeper auto purge feature retains the autopurge.snapRetainCount most recent snapshots and the corresponding transaction logs in the dataDir and dataLogDir respectively and deletes the rest. Defaults to 3. Minimum value is 3.
+
 ## Replicated mode
 
 Environment variables below are mandatory if you want to run Zookeeper in replicated mode.
