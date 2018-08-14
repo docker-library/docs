@@ -155,6 +155,8 @@ The following Docker Hub features can help with the task of keeping your depende
 
 See [the "Running as an arbitrary user" section of the `php` image documentation](https://hub.docker.com/_/php/).
 
+When running WP-CLI via the `cli` variants of this image, it is important to note that they're based on Alpine, and have a default `USER` of Alpine's `www-data`, whose UID is `82` (compared to the Debian-based WordPress variants whose default effective UID is `33`), so when running `wordpress:cli` against an existing Debian-based WordPress install, something like `--user 33:33` is likely going to be necessary. See [docker-library/wordpress#256](https://github.com/docker-library/wordpress/issues/256) for more discussion around this.
+
 # Image Variants
 
 The `wordpress` images come in many flavors, each designed for a specific use case.
