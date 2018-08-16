@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`18.06.1-ce-rc1`, `18.06-rc`, `rc`, `test` (*18.06-rc/Dockerfile*)](https://github.com/docker-library/docker/blob/fe9ffca05a3e29de69d7b2e8dd6c3d505e83412b/18.06-rc/Dockerfile)
--	[`18.06.1-ce-rc1-dind`, `18.06-rc-dind`, `rc-dind`, `test-dind` (*18.06-rc/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/fe9ffca05a3e29de69d7b2e8dd6c3d505e83412b/18.06-rc/dind/Dockerfile)
--	[`18.06.1-ce-rc1-git`, `18.06-rc-git`, `rc-git`, `test-git` (*18.06-rc/git/Dockerfile*)](https://github.com/docker-library/docker/blob/fe9ffca05a3e29de69d7b2e8dd6c3d505e83412b/18.06-rc/git/Dockerfile)
--	[`18.06.0-ce`, `18.06.0`, `18.06`, `18`, `edge`, `stable`, `latest` (*18.06/Dockerfile*)](https://github.com/docker-library/docker/blob/595ad0c92090937dcb7c200900fb97e36d36c412/18.06/Dockerfile)
+-	[`18.06.1-ce-rc2`, `18.06-rc`, `rc`, `test` (*18.06-rc/Dockerfile*)](https://github.com/docker-library/docker/blob/5ca0a1b18ec5de602a668c760723e5ed27fc3382/18.06-rc/Dockerfile)
+-	[`18.06.1-ce-rc2-dind`, `18.06-rc-dind`, `rc-dind`, `test-dind` (*18.06-rc/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/fe9ffca05a3e29de69d7b2e8dd6c3d505e83412b/18.06-rc/dind/Dockerfile)
+-	[`18.06.1-ce-rc2-git`, `18.06-rc-git`, `rc-git`, `test-git` (*18.06-rc/git/Dockerfile*)](https://github.com/docker-library/docker/blob/fe9ffca05a3e29de69d7b2e8dd6c3d505e83412b/18.06-rc/git/Dockerfile)
+-	[`18.06.0-ce`, `18.06.0`, `18.06`, `18`, `edge`, `stable`, `latest` (*18.06/Dockerfile*)](https://github.com/docker-library/docker/blob/5ca0a1b18ec5de602a668c760723e5ed27fc3382/18.06/Dockerfile)
 -	[`18.06.0-ce-dind`, `18.06.0-dind`, `18.06-dind`, `18-dind`, `edge-dind`, `stable-dind`, `dind` (*18.06/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/595ad0c92090937dcb7c200900fb97e36d36c412/18.06/dind/Dockerfile)
 -	[`18.06.0-ce-git`, `18.06.0-git`, `18.06-git`, `18-git`, `edge-git`, `stable-git`, `git` (*18.06/git/Dockerfile*)](https://github.com/docker-library/docker/blob/595ad0c92090937dcb7c200900fb97e36d36c412/18.06/git/Dockerfile)
 
