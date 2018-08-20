@@ -19,8 +19,9 @@ WARNING:
 -	[`v1.7.0-rc3`, `1.7.0-rc3`, `v1.7`, `1.7`, `maroilles` (*scratch/amd64/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/6dadcaf64497da64d2283f2e86302798554f1539/scratch/amd64/Dockerfile)
 -	[`v1.7.0-rc3-alpine`, `1.7.0-rc3-alpine`, `v1.7-alpine`, `1.7-alpine`, `maroilles-alpine` (*alpine/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/6dadcaf64497da64d2283f2e86302798554f1539/alpine/Dockerfile)
 -	[`v1.7.0-rc3-nanoserver`, `1.7.0-rc3-nanoserver`, `v1.7-nanoserver`, `1.7-nanoserver`, `maroilles-nanoserver`, `v1.7.0-rc3-nanoserver-sac2016`, `1.7.0-rc3-nanoserver-sac2016`, `v1.7-nanoserver-sac2016`, `1.7-nanoserver-sac2016`, `maroilles-nanoserver-sac2016` (*windows/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/6dadcaf64497da64d2283f2e86302798554f1539/windows/Dockerfile)
--	[`v1.6.5`, `1.6.5`, `v1.6`, `1.6`, `tetedemoine`, `latest` (*scratch/amd64/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/3ec5ce5d64e79eeafbe082c4690b9ca40cda013a/scratch/amd64/Dockerfile)
--	[`v1.6.5-alpine`, `1.6.5-alpine`, `v1.6-alpine`, `1.6-alpine`, `tetedemoine-alpine`, `alpine` (*alpine/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/3ec5ce5d64e79eeafbe082c4690b9ca40cda013a/alpine/Dockerfile)
+-	[`v1.6.6`, `1.6.6`, `v1.6`, `1.6`, `tetedemoine`, `latest` (*scratch/amd64/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/d95245ee706fbe031fe4d62564015cb4fb1f076d/scratch/amd64/Dockerfile)
+-	[`v1.6.6-alpine`, `1.6.6-alpine`, `v1.6-alpine`, `1.6-alpine`, `tetedemoine-alpine`, `alpine` (*alpine/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/d95245ee706fbe031fe4d62564015cb4fb1f076d/alpine/Dockerfile)
+-	[`v1.6.6-nanoserver`, `1.6.6-nanoserver`, `v1.6-nanoserver`, `1.6-nanoserver`, `tetedemoine-nanoserver`, `v1.6.6-nanoserver-sac2016`, `1.6.6-nanoserver-sac2016`, `v1.6-nanoserver-sac2016`, `1.6-nanoserver-sac2016`, `tetedemoine-nanoserver-sac2016`, `nanoserver`, `nanoserver-sac2016` (*windows/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/d95245ee706fbe031fe4d62564015cb4fb1f076d/windows/Dockerfile)
 
 # Quick reference
 
