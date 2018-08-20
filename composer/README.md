@@ -16,10 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.7.1`, `1.7`, `1`, `latest` (*1.7/Dockerfile*)](https://github.com/composer/docker/blob/1a90a09f7ca31795e8ae264336747ed59f5e4e69/1.7/Dockerfile)
+-	[`1.7.2`, `1.7`, `1`, `latest` (*1.7/Dockerfile*)](https://github.com/composer/docker/blob/edf4f0abf50da5d967408849434b9053a195b65f/1.7/Dockerfile)
 -	[`1.6.5`, `1.6` (*1.6/Dockerfile*)](https://github.com/composer/docker/blob/615ac2f7541ce6fc9538e513326e3aa6a2bff749/1.6/Dockerfile)
 -	[`1.5.6`, `1.5` (*1.5/Dockerfile*)](https://github.com/composer/docker/blob/615ac2f7541ce6fc9538e513326e3aa6a2bff749/1.5/Dockerfile)
--	[`1.4.3`, `1.4` (*1.4/Dockerfile*)](https://github.com/composer/docker/blob/615ac2f7541ce6fc9538e513326e3aa6a2bff749/1.4/Dockerfile)
 
 # Quick reference
 
