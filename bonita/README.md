@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.6.3`, `7.6` (*7.6/Dockerfile*)](https://github.com/Bonitasoft-Community/docker_bonita/blob/167aba6908885f22fcfe275668e490992807b915/7.6/Dockerfile)
--	[`7.7.3`, `7.7`, `latest` (*7.7/Dockerfile*)](https://github.com/Bonitasoft-Community/docker_bonita/blob/167aba6908885f22fcfe275668e490992807b915/7.7/Dockerfile)
+-	[`7.6.3`, `7.6` (*7.6/Dockerfile*)](https://github.com/Bonitasoft-Community/docker_bonita/blob/0c4ee4c11217e3a78d336b735cc50310d5064c61/7.6/Dockerfile)
+-	[`7.7.3`, `7.7`, `latest` (*7.7/Dockerfile*)](https://github.com/Bonitasoft-Community/docker_bonita/blob/0c4ee4c11217e3a78d336b735cc50310d5064c61/7.7/Dockerfile)
 
 # Quick reference
 
@@ -31,7 +31,7 @@ WARNING:
 	[Bonitasoft Community](https://github.com/Bonitasoft-Community/docker_bonita)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/bonita/), [`arm64v8`](https://hub.docker.com/r/arm64v8/bonita/)
+	[`amd64`](https://hub.docker.com/r/amd64/bonita/), [`arm64v8`](https://hub.docker.com/r/arm64v8/bonita/), [`ppc64le`](https://hub.docker.com/r/ppc64le/bonita/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/bonita/` directory](https://github.com/docker-library/repo-info/blob/master/repos/bonita) ([history](https://github.com/docker-library/repo-info/commits/master/repos/bonita))  
