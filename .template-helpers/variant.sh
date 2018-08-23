@@ -20,13 +20,9 @@ IFS=$'\n'
 tags=( $(bashbrew cat -f '
 	{{- $archSpecific := getenv "ARCH_SPECIFIC_DOCS" -}}
 
-	{{- range .Entries -}}
-		{{- $arch := $archSpecific | ternary arch (.HasArchitecture arch | ternary arch (.Architectures | first)) -}}
-
-		{{- if .HasArchitecture $arch -}}
-			{{- join "\n" .Tags -}}
-			{{- "\n" -}}
-		{{- end -}}
+	{{- range ($archSpecific | ternary (archFilter arch .Entries) .Entries) -}}
+		{{- join "\n" .Tags -}}
+		{{- "\n" -}}
 	{{- end -}}
 ' "$repo") )
 unset IFS

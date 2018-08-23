@@ -42,13 +42,11 @@ fi
 
 bashbrewFetchTemplate='
 	'"$templateHeader"'
-	{{- range $i, $e := $.Entries -}}
+	{{- range $i, $e := ($archSpecific | ternary (archFilter arch $.Entries) $.Entries) -}}
 		'"$templateArchVar"'
-		{{- if $e.HasArchitecture $arch -}}
-			{{- join "/" "refs/tags" $arch $.RepoName ($e.Tags | first) -}}
-			{{- ":" -}}
-			{{- "\n" -}}
-		{{- end -}}
+		{{- join "/" "refs/tags" $arch $.RepoName ($e.Tags | first) -}}
+		{{- ":" -}}
+		{{- "\n" -}}
 	{{- end -}}
 '
 
