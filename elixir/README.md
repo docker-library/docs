@@ -16,9 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.7.2`, `1.7`, `latest` (*1.7/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/a502dfaf78efdf61ec82419c190741df293c0b29/1.7/Dockerfile)
--	[`1.7.2-slim`, `1.7-slim`, `slim` (*1.7/slim/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/a502dfaf78efdf61ec82419c190741df293c0b29/1.7/slim/Dockerfile)
--	[`1.7.2-alpine`, `1.7-alpine`, `alpine` (*1.7/alpine/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/a502dfaf78efdf61ec82419c190741df293c0b29/1.7/alpine/Dockerfile)
+-	[`1.7.3`, `1.7`, `latest` (*1.7/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/84a28091330648bdc0e97349fd74c643eec58de9/1.7/Dockerfile)
+-	[`1.7.3-slim`, `1.7-slim`, `slim` (*1.7/slim/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/84a28091330648bdc0e97349fd74c643eec58de9/1.7/slim/Dockerfile)
+-	[`1.7.3-alpine`, `1.7-alpine`, `alpine` (*1.7/alpine/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/84a28091330648bdc0e97349fd74c643eec58de9/1.7/alpine/Dockerfile)
 -	[`1.6.6`, `1.6` (*1.6/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/0936291249c7e11d4618a17a2b452045c9e6233a/1.6/Dockerfile)
 -	[`1.6.6-slim`, `1.6-slim` (*1.6/slim/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/0936291249c7e11d4618a17a2b452045c9e6233a/1.6/slim/Dockerfile)
 -	[`1.6.6-alpine`, `1.6-alpine` (*1.6/alpine/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/0936291249c7e11d4618a17a2b452045c9e6233a/1.6/alpine/Dockerfile)
