@@ -6,7 +6,7 @@ PHP is a server-side scripting language designed for web development, but which 
 
 %%LOGO%%
 
-# How to use this image.
+# How to use this image
 
 ## With Command Line
 
@@ -56,15 +56,7 @@ $ docker build -t my-php-app .
 $ docker run -d --name my-running-app my-php-app
 ```
 
-We recommend that you add a custom `php.ini` configuration. `COPY` it into `/usr/local/etc/php` by adding one more line to the Dockerfile above and running the same commands to build and run:
-
-```dockerfile
-FROM %%IMAGE%%:7.2-apache
-COPY config/php.ini /usr/local/etc/php/
-COPY src/ /var/www/html/
-```
-
-Where `src/` is the directory containing all your PHP code and `config/` contains your `php.ini` file.
+We recommend that you add a `php.ini` configuration file, see the "Configuration" section for details.
 
 ### Without a `Dockerfile`
 
@@ -204,3 +196,25 @@ RUN rm /etc/apt/preferences.d/no-debian-php
 ```
 
 The *proper* solution to this error is to either use `FROM debian:XXX` and install Debian's PHP packages directly, or to use `docker-php-ext-install`, `pecl`, and/or `phpize` to install the necessary additional extensions and utilities.
+
+## Configuration
+
+This image ships with the default [`php.ini-development`](https://github.com/php/php-src/blob/master/php.ini-development) and [`php.ini-production`](https://github.com/php/php-src/blob/master/php.ini-production) configuration files.
+
+It is *strongly* recommended to use the production config for images used in production environments!
+
+The default config can be customized by copying configuration files into the `$PHP_INI_DIR/conf.d/` directory.
+
+### Example
+
+```dockerfile
+FROM %%IMAGE%%:7.2-fpm-alpine
+
+# Use the default production configuration
+RUN mv $PHP_INI_DIR/php.ini-production $PHP_INI_DIR/php.ini
+
+# Override with custom opcache settings
+COPY config/opcache.ini $PHP_INI_DIR/conf.d/
+```
+
+Where `config/` contains your custom configuration files.
