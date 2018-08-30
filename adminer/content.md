@@ -101,7 +101,4 @@ To add support for the other drivers you will need to install the following PHP 
 -	`pdo_dblib` (MS SQL)
 -	`oci8` (Oracle)
 -	`interbase` (Firebird)
-
-The following drivers are not supported by this image:
-
--	MongoDB (The driver is not supported by PHP 7)
+-	`mongodb` (MongoDB)
