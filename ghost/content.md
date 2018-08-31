@@ -40,7 +40,13 @@ $ docker run -d --name some-ghost -p 3001:2368 -v /path/to/ghost/blog:/var/lib/g
 $ docker run -d --name some-ghost -p 3001:2368 -v /path/to/ghost/blog:/var/lib/ghost %%IMAGE%%:0.11-alpine
 ```
 
-### Breaking change
+### Breaking changes
+
+#### Ghost 1.x.x => Ghost 2.x.x
+
+When upgrading from Ghost 1.x to Ghost 2.x, you must make sure you are already running the latest version of Ghost 1.x *before* upgrading to 2.x. Otherwise, you may run into database errors.
+
+#### Ghost 0.11.x => Ghost 1.x.x
 
 If you want to run Ghost 0.11.xx, be aware of the container's path difference:
 
