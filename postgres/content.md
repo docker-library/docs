@@ -126,8 +126,8 @@ The three easiest ways to get around this:
 	The files belonging to this database system will be owned by user "postgres".
 	...
 	( once it's finished initializing successfully and is waiting for connections, stop it )
-	$ docker run -it --rm -v pgdata:/var/lib/postgresql/data bash chown -R 1000:1000 /var/lib/postgresql/data
-	$ docker run -it --rm --user 1000:1000 -v pgdata:/var/lib/postgresql/data %%IMAGE%%
+	$ docker run -it --rm -v pgdata:/var/lib/postgresql/data postgres chown -R postgres:postgres /var/lib/postgresql/data
+	$ docker run -it --rm --user postgres:postgres -v pgdata:/var/lib/postgresql/data %%IMAGE%%
 	LOG:  database system was shut down at 2017-01-20 00:03:23 UTC
 	LOG:  MultiXact member wraparound protections are now enabled
 	LOG:  autovacuum launcher started
