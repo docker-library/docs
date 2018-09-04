@@ -22,9 +22,9 @@ WARNING:
 -	[`13.0.6-apache`, `13.0-apache`, `13-apache`, `apache`, `stable-apache`, `production-apache`, `13.0.6`, `13.0`, `13`, `latest`, `stable`, `production` (*13.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/9435421b508fb813e5afb07107bde873059b70f3/13.0/apache/Dockerfile)
 -	[`13.0.6-fpm-alpine`, `13.0-fpm-alpine`, `13-fpm-alpine`, `fpm-alpine`, `stable-fpm-alpine`, `production-fpm-alpine` (*13.0/fpm-alpine/Dockerfile*)](https://github.com/nextcloud/docker/blob/9435421b508fb813e5afb07107bde873059b70f3/13.0/fpm-alpine/Dockerfile)
 -	[`13.0.6-fpm`, `13.0-fpm`, `13-fpm`, `fpm`, `stable-fpm`, `production-fpm` (*13.0/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/9435421b508fb813e5afb07107bde873059b70f3/13.0/fpm/Dockerfile)
--	[`14.0.0RC1-apache`, `14.0.0-rc-apache`, `14.0-rc-apache`, `14-rc-apache`, `rc-apache`, `14.0.0RC1`, `14.0.0-rc`, `14.0-rc`, `14-rc`, `rc` (*14.0-rc/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/d75368bbbd7e715e910e55052efd9f94a17aad97/14.0-rc/apache/Dockerfile)
--	[`14.0.0RC1-fpm-alpine`, `14.0.0-rc-fpm-alpine`, `14.0-rc-fpm-alpine`, `14-rc-fpm-alpine`, `rc-fpm-alpine` (*14.0-rc/fpm-alpine/Dockerfile*)](https://github.com/nextcloud/docker/blob/e1b371d460d1346a68c0545b797110b4630ebaeb/14.0-rc/fpm-alpine/Dockerfile)
--	[`14.0.0RC1-fpm`, `14.0.0-rc-fpm`, `14.0-rc-fpm`, `14-rc-fpm`, `rc-fpm` (*14.0-rc/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/d75368bbbd7e715e910e55052efd9f94a17aad97/14.0-rc/fpm/Dockerfile)
+-	[`14.0.0RC2-apache`, `14.0.0-rc-apache`, `14.0-rc-apache`, `14-rc-apache`, `rc-apache`, `14.0.0RC2`, `14.0.0-rc`, `14.0-rc`, `14-rc`, `rc` (*14.0-rc/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/b72fbcfb04e8813b21eb3ed3864f3a3a4efdf959/14.0-rc/apache/Dockerfile)
+-	[`14.0.0RC2-fpm-alpine`, `14.0.0-rc-fpm-alpine`, `14.0-rc-fpm-alpine`, `14-rc-fpm-alpine`, `rc-fpm-alpine` (*14.0-rc/fpm-alpine/Dockerfile*)](https://github.com/nextcloud/docker/blob/b72fbcfb04e8813b21eb3ed3864f3a3a4efdf959/14.0-rc/fpm-alpine/Dockerfile)
+-	[`14.0.0RC2-fpm`, `14.0.0-rc-fpm`, `14.0-rc-fpm`, `14-rc-fpm`, `rc-fpm` (*14.0-rc/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/b72fbcfb04e8813b21eb3ed3864f3a3a4efdf959/14.0-rc/fpm/Dockerfile)
 
 # Quick reference
 
