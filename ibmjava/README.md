@@ -16,12 +16,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8-jre`, `jre`, `8`, `latest` (*ibmjava/8/jre/ubuntu/Dockerfile*)](https://github.com/ibmruntimes/ci.docker/blob/eaf30b181a5c309d7f3ed27795d9996dce0583f6/ibmjava/8/jre/ubuntu/Dockerfile)
--	[`8-jre-alpine`, `jre-alpine` (*ibmjava/8/jre/alpine/Dockerfile*)](https://github.com/ibmruntimes/ci.docker/blob/eaf30b181a5c309d7f3ed27795d9996dce0583f6/ibmjava/8/jre/alpine/Dockerfile)
--	[`8-sfj`, `sfj` (*ibmjava/8/sfj/ubuntu/Dockerfile*)](https://github.com/ibmruntimes/ci.docker/blob/eaf30b181a5c309d7f3ed27795d9996dce0583f6/ibmjava/8/sfj/ubuntu/Dockerfile)
--	[`8-sfj-alpine`, `sfj-alpine` (*ibmjava/8/sfj/alpine/Dockerfile*)](https://github.com/ibmruntimes/ci.docker/blob/eaf30b181a5c309d7f3ed27795d9996dce0583f6/ibmjava/8/sfj/alpine/Dockerfile)
--	[`8-sdk`, `sdk` (*ibmjava/8/sdk/ubuntu/Dockerfile*)](https://github.com/ibmruntimes/ci.docker/blob/eaf30b181a5c309d7f3ed27795d9996dce0583f6/ibmjava/8/sdk/ubuntu/Dockerfile)
--	[`8-sdk-alpine`, `sdk-alpine` (*ibmjava/8/sdk/alpine/Dockerfile*)](https://github.com/ibmruntimes/ci.docker/blob/eaf30b181a5c309d7f3ed27795d9996dce0583f6/ibmjava/8/sdk/alpine/Dockerfile)
+-	[`8-jre`, `jre`, `8`, `latest` (*ibmjava/8/jre/ubuntu/Dockerfile*)](https://github.com/ibmruntimes/ci.docker/blob/32ae50c1fec2e1e556b1bebd8174c24cfd951257/ibmjava/8/jre/ubuntu/Dockerfile)
+-	[`8-jre-alpine`, `jre-alpine` (*ibmjava/8/jre/alpine/Dockerfile*)](https://github.com/ibmruntimes/ci.docker/blob/32ae50c1fec2e1e556b1bebd8174c24cfd951257/ibmjava/8/jre/alpine/Dockerfile)
+-	[`8-sfj`, `sfj` (*ibmjava/8/sfj/ubuntu/Dockerfile*)](https://github.com/ibmruntimes/ci.docker/blob/32ae50c1fec2e1e556b1bebd8174c24cfd951257/ibmjava/8/sfj/ubuntu/Dockerfile)
+-	[`8-sfj-alpine`, `sfj-alpine` (*ibmjava/8/sfj/alpine/Dockerfile*)](https://github.com/ibmruntimes/ci.docker/blob/32ae50c1fec2e1e556b1bebd8174c24cfd951257/ibmjava/8/sfj/alpine/Dockerfile)
+-	[`8-sdk`, `sdk` (*ibmjava/8/sdk/ubuntu/Dockerfile*)](https://github.com/ibmruntimes/ci.docker/blob/32ae50c1fec2e1e556b1bebd8174c24cfd951257/ibmjava/8/sdk/ubuntu/Dockerfile)
+-	[`8-sdk-alpine`, `sdk-alpine` (*ibmjava/8/sdk/alpine/Dockerfile*)](https://github.com/ibmruntimes/ci.docker/blob/32ae50c1fec2e1e556b1bebd8174c24cfd951257/ibmjava/8/sdk/alpine/Dockerfile)
 
 # Quick reference
 
@@ -53,7 +53,7 @@ WARNING:
 
 ### Overview
 
-The images in this repository contain IBM® SDK, Java™ Technology Edition, version 1.8.0\_sr5fp20 (8.0-5.20). See [what's new](https://developer.ibm.com/javasdk/blog). See the license section for restrictions that relate to the use of this image. For more information about IBM® SDK, Java™ Technology Edition and API documentation as well as tutorials, recipes, and Java usage in IBM Cloud, see [IBM developerWorks](https://developer.ibm.com/javasdk/).
+The images in this repository contain IBM® SDK, Java™ Technology Edition, version 1.8.0\_sr5fp21 (8.0.5.21). See [what's new](https://developer.ibm.com/javasdk/blog). See the license section for restrictions that relate to the use of this image. For more information about IBM® SDK, Java™ Technology Edition and API documentation as well as tutorials, recipes, and Java usage in IBM Cloud, see [IBM developerWorks](https://developer.ibm.com/javasdk/).
 
 Java and all Java-based trademarks and logos are trademarks or registered trademarks of Oracle and/or its affiliates.
 
