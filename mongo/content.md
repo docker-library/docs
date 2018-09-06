@@ -20,7 +20,7 @@ $ docker run --name some-%%REPO%% -d %%IMAGE%%:tag
 
 ## Connect to MongoDB from another Docker container
 
-The MongoDB server in the image listens on the standard MongoDB port, `27017`, so connecting via container linking or Docker networks will be the be the same as connecting to a remote `mongod`. The following example starts another MongoDB container instance and runs the `mongo` command line client against the original MongoDB container from the example above, allowing you to execute MongoDB statements against your database instance:
+The MongoDB server in the image listens on the standard MongoDB port, `27017`, so connecting via container linking or Docker networks will be the same as connecting to a remote `mongod`. The following example starts another MongoDB container instance and runs the `mongo` command line client against the original MongoDB container from the example above, allowing you to execute MongoDB statements against your database instance:
 
 ```console
 $ docker run -it --link some-%%REPO%%:mongo --rm %%IMAGE%% mongo --host mongo test
