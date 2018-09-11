@@ -16,11 +16,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.11.4-jessie`, `8.11-jessie`, `8-jessie`, `carbon-jessie`, `8.11.4`, `8.11`, `8`, `carbon` (*8/jessie/Dockerfile*)](https://github.com/nodejs/docker-node/blob/72dd945d29dee5afa73956ebc971bf3a472442f7/8/jessie/Dockerfile)
--	[`8.11.4-alpine`, `8.11-alpine`, `8-alpine`, `carbon-alpine` (*8/alpine/Dockerfile*)](https://github.com/nodejs/docker-node/blob/72dd945d29dee5afa73956ebc971bf3a472442f7/8/alpine/Dockerfile)
--	[`8.11.4-onbuild`, `8.11-onbuild`, `8-onbuild`, `carbon-onbuild` (*8/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/72dd945d29dee5afa73956ebc971bf3a472442f7/8/onbuild/Dockerfile)
--	[`8.11.4-slim`, `8.11-slim`, `8-slim`, `carbon-slim` (*8/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/72dd945d29dee5afa73956ebc971bf3a472442f7/8/slim/Dockerfile)
--	[`8.11.4-stretch`, `8.11-stretch`, `8-stretch`, `carbon-stretch` (*8/stretch/Dockerfile*)](https://github.com/nodejs/docker-node/blob/72dd945d29dee5afa73956ebc971bf3a472442f7/8/stretch/Dockerfile)
+-	[`8.12.0-jessie`, `8.12-jessie`, `8-jessie`, `carbon-jessie`, `8.12.0`, `8.12`, `8`, `carbon` (*8/jessie/Dockerfile*)](https://github.com/nodejs/docker-node/blob/526c6e618300bdda0da4b3159df682cae83e14aa/8/jessie/Dockerfile)
+-	[`8.12.0-alpine`, `8.12-alpine`, `8-alpine`, `carbon-alpine` (*8/alpine/Dockerfile*)](https://github.com/nodejs/docker-node/blob/526c6e618300bdda0da4b3159df682cae83e14aa/8/alpine/Dockerfile)
+-	[`8.12.0-onbuild`, `8.12-onbuild`, `8-onbuild`, `carbon-onbuild` (*8/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/526c6e618300bdda0da4b3159df682cae83e14aa/8/onbuild/Dockerfile)
+-	[`8.12.0-slim`, `8.12-slim`, `8-slim`, `carbon-slim` (*8/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/526c6e618300bdda0da4b3159df682cae83e14aa/8/slim/Dockerfile)
+-	[`8.12.0-stretch`, `8.12-stretch`, `8-stretch`, `carbon-stretch` (*8/stretch/Dockerfile*)](https://github.com/nodejs/docker-node/blob/526c6e618300bdda0da4b3159df682cae83e14aa/8/stretch/Dockerfile)
 -	[`6.14.4-jessie`, `6.14-jessie`, `6-jessie`, `boron-jessie`, `6.14.4`, `6.14`, `6`, `boron` (*6/jessie/Dockerfile*)](https://github.com/nodejs/docker-node/blob/72dd945d29dee5afa73956ebc971bf3a472442f7/6/jessie/Dockerfile)
 -	[`6.14.4-alpine`, `6.14-alpine`, `6-alpine`, `boron-alpine` (*6/alpine/Dockerfile*)](https://github.com/nodejs/docker-node/blob/72dd945d29dee5afa73956ebc971bf3a472442f7/6/alpine/Dockerfile)
 -	[`6.14.4-onbuild`, `6.14-onbuild`, `6-onbuild`, `boron-onbuild` (*6/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/72dd945d29dee5afa73956ebc971bf3a472442f7/6/onbuild/Dockerfile)
