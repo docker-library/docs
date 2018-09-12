@@ -38,13 +38,13 @@ Extras introduces the notion of topics to select software bundles. Each topic co
 
 ## How are Amazon Linux 2 Extras topics different from the packages available in yum repositories?
 
-`yum` is a utility for package management of RPM packages. The base image of Amazon Linux 2 (LTS) includes access to repositories that already contain stable versions of popular packages that can be installed with yum. These packages are part of the long term support for Amazon Linux 2.
+`yum` is a utility for package management of RPM packages. The base image of Amazon Linux 2 (LTS) includes access to repositories that already contain stable versions of popular packages that can be installed with `yum`. These packages are part of the long term support for Amazon Linux 2.
 
 However, if you need a new software package or a newer version of an existing software package that is not included in the base Amazon Linux 2 image, Extras provide a way to install those packages in a supported manner. Extras is essentially a simplified mechanism to point yum to AWS curated sets of packages for a selected topic.
 
 ## How do I install a software package from Extras repository in Amazon Linux 2?
 
-Available packages can be listed with the `amazon-linux-extras` command. Packages can be installed with the `sudo amazon-linux-extras install <package>` command. Example: sudo amazon-linux-extras install rust1
+Available packages can be listed with the `amazon-linux-extras` command. Packages can be installed with the `amazon-linux-extras install <package>` command. Example: `amazon-linux-extras install rust1`
 
 ## Will updates be available for Amazon Linux containers?
 
