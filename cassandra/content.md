@@ -152,12 +152,6 @@ The Docker documentation is a good starting point for understanding the differen
 
 The `-v /my/own/datadir:/var/lib/cassandra` part of the command mounts the `/my/own/datadir` directory from the underlying host system as `/var/lib/cassandra` inside the container, where Cassandra by default will write its data files.
 
-Note that users on host systems with SELinux enabled may see issues with this. The current workaround is to assign the relevant SELinux policy type to the new data directory so that the container will be allowed to access it:
-
-```console
-$ chcon -Rt svirt_sandbox_file_t /my/own/datadir
-```
-
 ## No connections until Cassandra init completes
 
 If there is no database initialized when the container starts, then a default database will be created. While this is the expected behavior, this means that it will not accept incoming connections until such initialization completes. This may cause issues when using automation tools, such as `docker-compose`, which start several containers simultaneously.

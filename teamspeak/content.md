@@ -133,9 +133,3 @@ $ docker run --name some-%%REPO%% -v /my/own/datadir:/var/ts3server/ -d %%IMAGE%
 ```
 
 The `-v /my/own/datadir:/var/ts3server/` part of the command mounts the `/my/own/datadir` directory from the underlying host system as `/var/ts3server` inside the container, where TeamSpeak by default will write its data files.
-
-Note that users on host systems with SELinux enabled may see issues with this. The current workaround is to assign the relevant SELinux policy type to the new data directory so that the container will be allowed to access it:
-
-```console
-$ chcon -Rt svirt_sandbox_file_t /my/own/datadir
-```
