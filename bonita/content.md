@@ -97,12 +97,6 @@ The Docker documentation is a good starting point for understanding the differen
 
 The `-v /my/own/datadir:/opt/bonita` part of the command mounts the `/my/own/datadir` directory from the underlying host system as `/opt/bonita` inside the container, where Bonita will deploy the bundle and write data files by default.
 
-Note that users on host systems with SELinux enabled may see issues with this. The current workaround is to assign the relevant SELinux policy type to the new data directory so that the container will be allowed to access it:
-
-```console
-$ chcon -Rt svirt_sandbox_file_t /my/own/datadir
-```
-
 ## Migrate from an earlier version of Bonita
 
 -	Stop the container to perform a backup

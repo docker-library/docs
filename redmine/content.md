@@ -72,12 +72,6 @@ The Docker documentation is a good starting point for understanding the differen
 
 The `-v /my/own/datadir:/usr/src/redmine/files` part of the command mounts the `/my/own/datadir` directory from the underlying host system as `/usr/src/redmine/files` inside the container, where Redmine will store uploaded files.
 
-Note that users on host systems with SELinux enabled may see issues with this. The current workaround is to assign the relevant SELinux policy type to the new data directory so that the container will be allowed to access it:
-
-```console
-$ chcon -Rt svirt_sandbox_file_t /my/own/datadir
-```
-
 ## Port Mapping
 
 If you'd like to be able to access the instance from the host without the container's IP, standard port mappings can be used. Just add `-p 3000:3000` to the `docker run` arguments and then access either `http://localhost:3000` or `http://host-ip:3000` in a browser.
