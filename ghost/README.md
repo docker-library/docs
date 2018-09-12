@@ -118,6 +118,16 @@ Alternatively you can use a [data container](http://docs.docker.com/engine/tutor
 $ docker run -d --name some-ghost --volumes-from some-ghost-data ghost
 ```
 
+## Configuration
+
+All Ghost configuration parameters (such as `url`) can be specified via environment variables. See [the Ghost documentation](https://docs.ghost.org/docs/config#section-running-ghost-with-config-env-variables) for details about what configuration is allowed and how to convert a nested configuration key into the appropriate environment variable name:
+
+```console
+$ docker run -d --name some-ghost -e url=http://some-ghost.example.com ghost
+```
+
+(There are further configuration examples in the `stack.yml` listed below.)
+
 ## What is the Node.js version?
 
 When opening a ticket at https://github.com/TryGhost/Ghost/issues it becomes necessary to know the version of Node.js in use:
