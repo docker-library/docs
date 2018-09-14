@@ -16,10 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.28.0-stretch`, `1-stretch`, `1.28-stretch`, `stretch`, `1.28.0`, `1`, `1.28`, `latest` (*1.28.0/stretch/Dockerfile*)](https://github.com/rust-lang-nursery/docker-rust/blob/da8bc5716ede5f18748e4daa92f85e9a9d9c1454/1.28.0/stretch/Dockerfile)
--	[`1.28.0-slim-stretch`, `1-slim-stretch`, `1.28-slim-stretch`, `slim-stretch`, `1.28.0-slim`, `1-slim`, `1.28-slim`, `slim` (*1.28.0/stretch/slim/Dockerfile*)](https://github.com/rust-lang-nursery/docker-rust/blob/da8bc5716ede5f18748e4daa92f85e9a9d9c1454/1.28.0/stretch/slim/Dockerfile)
--	[`1.28.0-jessie`, `1-jessie`, `1.28-jessie`, `jessie` (*1.28.0/jessie/Dockerfile*)](https://github.com/rust-lang-nursery/docker-rust/blob/da8bc5716ede5f18748e4daa92f85e9a9d9c1454/1.28.0/jessie/Dockerfile)
--	[`1.28.0-slim-jessie`, `1-slim-jessie`, `1.28-slim-jessie`, `slim-jessie` (*1.28.0/jessie/slim/Dockerfile*)](https://github.com/rust-lang-nursery/docker-rust/blob/da8bc5716ede5f18748e4daa92f85e9a9d9c1454/1.28.0/jessie/slim/Dockerfile)
+-	[`1.29.0-stretch`, `1-stretch`, `1.28-stretch`, `stretch`, `1.29.0`, `1`, `1.28`, `latest` (*1.29.0/stretch/Dockerfile*)](https://github.com/rust-lang-nursery/docker-rust/blob/46d75fee52b77161355ce8a4623d6afbfec0e63f/1.29.0/stretch/Dockerfile)
+-	[`1.29.0-slim-stretch`, `1-slim-stretch`, `1.28-slim-stretch`, `slim-stretch`, `1.29.0-slim`, `1-slim`, `1.28-slim`, `slim` (*1.29.0/stretch/slim/Dockerfile*)](https://github.com/rust-lang-nursery/docker-rust/blob/46d75fee52b77161355ce8a4623d6afbfec0e63f/1.29.0/stretch/slim/Dockerfile)
 
 # Quick reference
 
