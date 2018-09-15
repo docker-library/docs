@@ -16,9 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.0-rc4`, `5.0-rc`, `5.0-rc4-stretch`, `5.0-rc-stretch` (*5.0-rc/Dockerfile*)](https://github.com/docker-library/redis/blob/e95c0cf4ffd9a52aa48d05b93fe3b42069c05032/5.0-rc/Dockerfile)
--	[`5.0-rc4-32bit`, `5.0-rc-32bit`, `5.0-rc4-32bit-stretch`, `5.0-rc-32bit-stretch` (*5.0-rc/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/e95c0cf4ffd9a52aa48d05b93fe3b42069c05032/5.0-rc/32bit/Dockerfile)
--	[`5.0-rc4-alpine`, `5.0-rc-alpine`, `5.0-rc4-alpine3.8`, `5.0-rc-alpine3.8` (*5.0-rc/alpine/Dockerfile*)](https://github.com/docker-library/redis/blob/f71b77c76b524260b9edd2397cacec51e87c4d33/5.0-rc/alpine/Dockerfile)
+-	[`5.0-rc5`, `5.0-rc`, `5.0-rc5-stretch`, `5.0-rc-stretch` (*5.0-rc/Dockerfile*)](https://github.com/docker-library/redis/blob/10a0d470b8debe15540437e2395ad7c0525886f0/5.0-rc/Dockerfile)
+-	[`5.0-rc5-32bit`, `5.0-rc-32bit`, `5.0-rc5-32bit-stretch`, `5.0-rc-32bit-stretch` (*5.0-rc/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/10a0d470b8debe15540437e2395ad7c0525886f0/5.0-rc/32bit/Dockerfile)
+-	[`5.0-rc5-alpine`, `5.0-rc-alpine`, `5.0-rc5-alpine3.8`, `5.0-rc-alpine3.8` (*5.0-rc/alpine/Dockerfile*)](https://github.com/docker-library/redis/blob/10a0d470b8debe15540437e2395ad7c0525886f0/5.0-rc/alpine/Dockerfile)
 -	[`4.0.11`, `4.0`, `4`, `latest`, `4.0.11-stretch`, `4.0-stretch`, `4-stretch`, `stretch` (*4.0/Dockerfile*)](https://github.com/docker-library/redis/blob/7900c5d31e0b3a4c463c57a8d69cc497d58fbe70/4.0/Dockerfile)
 -	[`4.0.11-32bit`, `4.0-32bit`, `4-32bit`, `32bit`, `4.0.11-32bit-stretch`, `4.0-32bit-stretch`, `4-32bit-stretch`, `32bit-stretch` (*4.0/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/7900c5d31e0b3a4c463c57a8d69cc497d58fbe70/4.0/32bit/Dockerfile)
 -	[`4.0.11-alpine`, `4.0-alpine`, `4-alpine`, `alpine`, `4.0.11-alpine3.8`, `4.0-alpine3.8`, `4-alpine3.8`, `alpine3.8` (*4.0/alpine/Dockerfile*)](https://github.com/docker-library/redis/blob/f71b77c76b524260b9edd2397cacec51e87c4d33/4.0/alpine/Dockerfile)
