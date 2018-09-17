@@ -116,7 +116,7 @@ services:
     image: postgres
     restart: always
     environment:
-      POSTGRES_PASSWORD: example
+      POSTGRES_PASSWORD: mysecretpassword
 
   adminer:
     image: adminer
