@@ -179,6 +179,8 @@ $ docker run -d --hostname my-rabbit --name some-rabbit -e RABBITMQ_DEFAULT_USER
 
 You can then go to `http://localhost:8080` or `http://host-ip:8080` in a browser and use `user`/`password` to gain access to the management console
 
+To source the username and password from files instead of environment variables, add a `_FILE` suffix to the environment variable names (for example, `RABBITMQ_DEFAULT_USER_FILE=/run/secrets/xxx` to use [Docker Secrets](https://docs.docker.com/engine/swarm/secrets/)).
+
 ### Setting default vhost
 
 If you wish to change the default vhost, you can do so with the `RABBITMQ_DEFAULT_VHOST` environmental variables:
