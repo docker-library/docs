@@ -16,7 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7`, `7.4.1708`, `latest` (*Dockerfile*)](https://github.com/nealef/clefos/blob/002827d6daa02a1c26d53c2571cc9024968f21d2/Dockerfile)
+-	[`7`, `7.5.1804`, `latest` (*Dockerfile*)](https://github.com/nealef/clefos/blob/a13384382290c7aef7012d1353fee4f84ce8548c/Dockerfile)
 
 # Quick reference
 
