@@ -20,8 +20,8 @@ This image has been deprecated in favor of the [official `owncloud/server` image
 
 # Supported tags and respective `Dockerfile` links
 
--	[`10.0.9-apache`, `10.0-apache`, `10-apache`, `apache`, `10.0.9`, `10.0`, `10`, `latest` (*10.0/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/97f7e38b9b8cc2cc22ddaec513f8a9b08f8e4578/10.0/apache/Dockerfile)
--	[`10.0.9-fpm`, `10.0-fpm`, `10-fpm`, `fpm` (*10.0/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/97f7e38b9b8cc2cc22ddaec513f8a9b08f8e4578/10.0/fpm/Dockerfile)
+-	[`10.0.10-apache`, `10.0-apache`, `10-apache`, `apache`, `10.0.10`, `10.0`, `10`, `latest` (*10.0/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/b70c794c5b9f437c14331772873cf49e668c7042/10.0/apache/Dockerfile)
+-	[`10.0.10-fpm`, `10.0-fpm`, `10-fpm`, `fpm` (*10.0/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/b70c794c5b9f437c14331772873cf49e668c7042/10.0/fpm/Dockerfile)
 -	[`9.1.8-apache`, `9.1-apache`, `9-apache`, `9.1.8`, `9.1`, `9` (*9.1/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/97f7e38b9b8cc2cc22ddaec513f8a9b08f8e4578/9.1/apache/Dockerfile)
 -	[`9.1.8-fpm`, `9.1-fpm`, `9-fpm` (*9.1/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/97f7e38b9b8cc2cc22ddaec513f8a9b08f8e4578/9.1/fpm/Dockerfile)
 
