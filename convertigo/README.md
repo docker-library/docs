@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.5.2`, `7.5`, `latest` (*7.5/7.5.2/Dockerfile*)](https://github.com/convertigo/docker/blob/9b85b87284dafb51a040903d81aea9e5f6c1a9db/7.5/7.5.2/Dockerfile)
--	[`7.5.2-alpine`, `7.5-alpine`, `alpine` (*7.5/7.5.2/alpine/Dockerfile*)](https://github.com/convertigo/docker/blob/9b85b87284dafb51a040903d81aea9e5f6c1a9db/7.5/7.5.2/alpine/Dockerfile)
--	[`7.4.8`, `7.4` (*7.4/7.4.8/Dockerfile*)](https://github.com/convertigo/docker/blob/9b85b87284dafb51a040903d81aea9e5f6c1a9db/7.4/7.4.8/Dockerfile)
--	[`7.4.8-alpine`, `7.4-alpine` (*7.4/7.4.8/alpine/Dockerfile*)](https://github.com/convertigo/docker/blob/9b85b87284dafb51a040903d81aea9e5f6c1a9db/7.4/7.4.8/alpine/Dockerfile)
+-	[`7.5.3`, `7.5`, `latest` (*7.5/7.5.3/Dockerfile*)](https://github.com/convertigo/docker/blob/ebb9eb9b8601726ad1314c915eb4b42b033c5c98/7.5/7.5.3/Dockerfile)
+-	[`7.5.3-alpine`, `7.5-alpine`, `alpine` (*7.5/7.5.3/alpine/Dockerfile*)](https://github.com/convertigo/docker/blob/ebb9eb9b8601726ad1314c915eb4b42b033c5c98/7.5/7.5.3/alpine/Dockerfile)
+-	[`7.4.8`, `7.4` (*7.4/7.4.8/Dockerfile*)](https://github.com/convertigo/docker/blob/ebb9eb9b8601726ad1314c915eb4b42b033c5c98/7.4/7.4.8/Dockerfile)
+-	[`7.4.8-alpine`, `7.4-alpine` (*7.4/7.4.8/alpine/Dockerfile*)](https://github.com/convertigo/docker/blob/ebb9eb9b8601726ad1314c915eb4b42b033c5c98/7.4/7.4.8/alpine/Dockerfile)
 
 # Quick reference
 
