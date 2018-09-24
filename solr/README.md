@@ -16,9 +16,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.4.0`, `7.4`, `7`, `latest` (*7.4/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/dc31c84b54a469091a08de7c5b6c73b397e48162/7.4/Dockerfile)
--	[`7.4.0-alpine`, `7.4-alpine`, `7-alpine`, `alpine` (*7.4/alpine/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/c2db03b35db11ebd6b9ca95d17108c3e7d721cda/7.4/alpine/Dockerfile)
--	[`7.4.0-slim`, `7.4-slim`, `7-slim`, `slim` (*7.4/slim/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/dc31c84b54a469091a08de7c5b6c73b397e48162/7.4/slim/Dockerfile)
+-	[`7.5.0`, `7.5`, `7`, `latest` (*7.5/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/30a795fb7b30dded4dd10748efa947f39a476252/7.5/Dockerfile)
+-	[`7.5.0-alpine`, `7.5-alpine`, `7-alpine`, `alpine` (*7.5/alpine/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/30a795fb7b30dded4dd10748efa947f39a476252/7.5/alpine/Dockerfile)
+-	[`7.5.0-slim`, `7.5-slim`, `7-slim`, `slim` (*7.5/slim/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/30a795fb7b30dded4dd10748efa947f39a476252/7.5/slim/Dockerfile)
+-	[`7.4.0`, `7.4` (*7.4/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/6dbc447c76a5ef9467ed1f2e3dd896500139bf23/7.4/Dockerfile)
+-	[`7.4.0-alpine`, `7.4-alpine` (*7.4/alpine/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/6dbc447c76a5ef9467ed1f2e3dd896500139bf23/7.4/alpine/Dockerfile)
+-	[`7.4.0-slim`, `7.4-slim` (*7.4/slim/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/6dbc447c76a5ef9467ed1f2e3dd896500139bf23/7.4/slim/Dockerfile)
 -	[`7.3.1`, `7.3` (*7.3/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/dc31c84b54a469091a08de7c5b6c73b397e48162/7.3/Dockerfile)
 -	[`7.3.1-alpine`, `7.3-alpine` (*7.3/alpine/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/48c50a7b2746470baa9b3e3573033e600dac75e9/7.3/alpine/Dockerfile)
 -	[`7.3.1-slim`, `7.3-slim` (*7.3/slim/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/dc31c84b54a469091a08de7c5b6c73b397e48162/7.3/slim/Dockerfile)
