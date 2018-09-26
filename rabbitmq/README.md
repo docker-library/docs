@@ -127,6 +127,14 @@ Listing users ...
 guest   [administrator]
 ```
 
+If you wish to provide the cookie via a file (such as with [Docker Secrets](https://docs.docker.com/engine/swarm/secrets/)), it needs to be mounted at `/var/lib/rabbitmq/.erlang.cookie`:
+
+```console
+docker service create ... --secret source=my-erlang-cookie,target=/var/lib/rabbitmq/.erlang.cookie ... rabbitmq
+```
+
+(Note that it will likely also be necessary to specify `uid=XXX,gid=XXX,mode=0600` in order for Erlang in the container to be able to read the cookie file properly. See [Docker's `--secret` documentation for more details](https://docs.docker.com/engine/reference/commandline/service_create/#create-a-service-with-secrets).)
+
 ### Management Plugin
 
 There is a second set of tags provided with the [management plugin](https://www.rabbitmq.com/management.html) installed and enabled by default, which is available on the standard management port of 15672, with the default username and password of `guest` / `guest`:
