@@ -17,9 +17,9 @@ WARNING:
 # Supported tags and respective `Dockerfile` links
 
 -	[`10.3.9-bionic`, `10.3-bionic`, `10-bionic`, `bionic`, `10.3.9`, `10.3`, `10`, `latest` (*10.3/Dockerfile*)](https://github.com/docker-library/mariadb/blob/4891ee2e3bd2dc6b07db634a39433ad579764a4b/10.3/Dockerfile)
--	[`10.2.17-bionic`, `10.2-bionic`, `10.2.17`, `10.2` (*10.2/Dockerfile*)](https://github.com/docker-library/mariadb/blob/f5c3481f84205d7601cde45777f0c939c01eb7d6/10.2/Dockerfile)
+-	[`10.2.18-bionic`, `10.2-bionic`, `10.2.18`, `10.2` (*10.2/Dockerfile*)](https://github.com/docker-library/mariadb/blob/d42959d5f5772f70f71d433f843836a7401a07fd/10.2/Dockerfile)
 -	[`10.1.36-bionic`, `10.1-bionic`, `10.1.36`, `10.1` (*10.1/Dockerfile*)](https://github.com/docker-library/mariadb/blob/b678346ca1c832c93ecf0969f2738268d065dd8f/10.1/Dockerfile)
--	[`10.0.36-xenial`, `10.0-xenial`, `10.0.36`, `10.0` (*10.0/Dockerfile*)](https://github.com/docker-library/mariadb/blob/350bb5974b3cb5ee71805d2b29812a76d7c6d393/10.0/Dockerfile)
+-	[`10.0.36-xenial`, `10.0-xenial`, `10.0.36`, `10.0` (*10.0/Dockerfile*)](https://github.com/docker-library/mariadb/blob/cf769b4ec7ce7b343bd3b04225ab2a9bdd6bdc6e/10.0/Dockerfile)
 -	[`5.5.61-trusty`, `5.5-trusty`, `5-trusty`, `5.5.61`, `5.5`, `5` (*5.5/Dockerfile*)](https://github.com/docker-library/mariadb/blob/350bb5974b3cb5ee71805d2b29812a76d7c6d393/5.5/Dockerfile)
 
 # Quick reference
