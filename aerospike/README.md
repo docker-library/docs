@@ -18,7 +18,7 @@ WARNING:
 
 -	[`3.13.0.11` (*Dockerfile*)](https://github.com/aerospike/aerospike-server.docker/blob/29be954f3d764ae15f0666c39fc14b55f13f1033/Dockerfile)
 -	[`4.1.0.6` (*Dockerfile*)](https://github.com/aerospike/aerospike-server.docker/blob/a81b7f4213525aae9028b6904b51cc636102290e/Dockerfile)
--	[`4.3.0.7`, `latest` (*Dockerfile*)](https://github.com/aerospike/aerospike-server.docker/blob/d2fa950e7cb5c10ccc39d778b2aef233440a855a/Dockerfile)
+-	[`4.3.0.8`, `latest` (*Dockerfile*)](https://github.com/aerospike/aerospike-server.docker/blob/34a861e240707bfe73a9d18b6b0832c392ec5b4c/Dockerfile)
 
 # Quick reference
 
