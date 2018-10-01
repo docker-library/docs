@@ -16,9 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`v1.7.0`, `1.7.0`, `v1.7`, `1.7`, `maroilles`, `latest` (*scratch/amd64/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/cd926d586b87791aca0cebe2eb51889b678a84e0/scratch/amd64/Dockerfile)
--	[`v1.7.0-alpine`, `1.7.0-alpine`, `v1.7-alpine`, `1.7-alpine`, `maroilles-alpine`, `alpine` (*alpine/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/cd926d586b87791aca0cebe2eb51889b678a84e0/alpine/Dockerfile)
--	[`v1.7.0-nanoserver`, `1.7.0-nanoserver`, `v1.7-nanoserver`, `1.7-nanoserver`, `maroilles-nanoserver`, `v1.7.0-nanoserver-sac2016`, `1.7.0-nanoserver-sac2016`, `v1.7-nanoserver-sac2016`, `1.7-nanoserver-sac2016`, `maroilles-nanoserver-sac2016`, `nanoserver`, `nanoserver-sac2016` (*windows/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/cd926d586b87791aca0cebe2eb51889b678a84e0/windows/Dockerfile)
+-	[`v1.7.1`, `1.7.1`, `v1.7`, `1.7`, `maroilles`, `latest` (*scratch/amd64/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/07ab7c83a0bb04537a73a33ea09df2cdf660f5eb/scratch/amd64/Dockerfile)
+-	[`v1.7.1-alpine`, `1.7.1-alpine`, `v1.7-alpine`, `1.7-alpine`, `maroilles-alpine`, `alpine` (*alpine/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/07ab7c83a0bb04537a73a33ea09df2cdf660f5eb/alpine/Dockerfile)
+-	[`v1.7.1-nanoserver`, `1.7.1-nanoserver`, `v1.7-nanoserver`, `1.7-nanoserver`, `maroilles-nanoserver`, `v1.7.1-nanoserver-sac2016`, `1.7.1-nanoserver-sac2016`, `v1.7-nanoserver-sac2016`, `1.7-nanoserver-sac2016`, `maroilles-nanoserver-sac2016`, `nanoserver`, `nanoserver-sac2016` (*windows/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/07ab7c83a0bb04537a73a33ea09df2cdf660f5eb/windows/Dockerfile)
 
 # Quick reference
 
