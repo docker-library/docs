@@ -203,7 +203,7 @@ services:
     command: --smallfiles
 ```
 
-To see the full list of possible options, check the MonogDB manual on [`mongod`](https://docs.mongodb.com/manual/reference/program/mongod/) or check the `--help` output of `mongod`:
+To see the full list of possible options, check the MongoDB manual on [`mongod`](https://docs.mongodb.com/manual/reference/program/mongod/) or check the `--help` output of `mongod`:
 
 ```console
 $ docker run -it --rm mongo --help
