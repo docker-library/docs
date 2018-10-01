@@ -55,7 +55,7 @@ Sentry is a realtime event logging and aggregation platform. It specializes in m
 
 > [github.com/getsentry/sentry](https://github.com/getsentry/sentry)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/831b07a52f9ff6577c915afc41af8158725829f4/sentry/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/7d1c6fff37893bcefc186de7b978f5bdb2f801f6/sentry/logo.png)
 
 # How to use this image
 
