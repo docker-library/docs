@@ -16,12 +16,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.1.4`, `2.1`, `2`, `latest` (*2/debian/Dockerfile*)](https://github.com/docker-library/ghost/blob/b55768081c3382215bc6a7c166ae217abaecd636/2/debian/Dockerfile)
--	[`2.1.4-alpine`, `2.1-alpine`, `2-alpine`, `alpine` (*2/alpine/Dockerfile*)](https://github.com/docker-library/ghost/blob/b55768081c3382215bc6a7c166ae217abaecd636/2/alpine/Dockerfile)
--	[`1.25.5`, `1.25`, `1` (*1/debian/Dockerfile*)](https://github.com/docker-library/ghost/blob/7b323446256b8d18a09233c83001cb1c2b4046bb/1/debian/Dockerfile)
--	[`1.25.5-alpine`, `1.25-alpine`, `1-alpine` (*1/alpine/Dockerfile*)](https://github.com/docker-library/ghost/blob/7b323446256b8d18a09233c83001cb1c2b4046bb/1/alpine/Dockerfile)
--	[`0.11.13`, `0.11`, `0` (*0/debian/Dockerfile*)](https://github.com/docker-library/ghost/blob/f4e1e58723ab0c2aac695aacf08a6fd54b4d2eee/0/debian/Dockerfile)
--	[`0.11.13-alpine`, `0.11-alpine`, `0-alpine` (*0/alpine/Dockerfile*)](https://github.com/docker-library/ghost/blob/f0cfbd2cd2bdbaea10a4f15cd05746397e84dd18/0/alpine/Dockerfile)
+-	[`2.1.4`, `2.1`, `2`, `latest` (*2/debian/Dockerfile*)](https://github.com/docker-library/ghost/blob/fe5b8950bbb0127df35421b8d801fff3f7a94ca1/2/debian/Dockerfile)
+-	[`2.1.4-alpine`, `2.1-alpine`, `2-alpine`, `alpine` (*2/alpine/Dockerfile*)](https://github.com/docker-library/ghost/blob/fe5b8950bbb0127df35421b8d801fff3f7a94ca1/2/alpine/Dockerfile)
+-	[`1.25.5`, `1.25`, `1` (*1/debian/Dockerfile*)](https://github.com/docker-library/ghost/blob/9fc9c0a2009ab4302a80c88618a0e3640b2b78c6/1/debian/Dockerfile)
+-	[`1.25.5-alpine`, `1.25-alpine`, `1-alpine` (*1/alpine/Dockerfile*)](https://github.com/docker-library/ghost/blob/9fc9c0a2009ab4302a80c88618a0e3640b2b78c6/1/alpine/Dockerfile)
+-	[`0.11.13`, `0.11`, `0` (*0/debian/Dockerfile*)](https://github.com/docker-library/ghost/blob/d14e83ced34cd574b9473023e2765683f4e99e65/0/debian/Dockerfile)
+-	[`0.11.13-alpine`, `0.11-alpine`, `0-alpine` (*0/alpine/Dockerfile*)](https://github.com/docker-library/ghost/blob/9fc9c0a2009ab4302a80c88618a0e3640b2b78c6/0/alpine/Dockerfile)
 
 # Quick reference
 
