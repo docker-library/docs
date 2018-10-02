@@ -16,11 +16,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `enterprise`, `5.5.1`, `enterprise-5.5.1` (*enterprise/couchbase-server/5.5.1/Dockerfile*)](https://github.com/couchbase/docker/blob/8f038528a450a5ec540beff43388ff8fbf685b89/enterprise/couchbase-server/5.5.1/Dockerfile)
--	[`6.0.0-beta` (*enterprise/couchbase-server/6.0.0-beta/Dockerfile*)](https://github.com/couchbase/docker/blob/8f038528a450a5ec540beff43388ff8fbf685b89/enterprise/couchbase-server/6.0.0-beta/Dockerfile)
--	[`4.6.5`, `enterprise-4.6.5` (*enterprise/couchbase-server/4.6.5/Dockerfile*)](https://github.com/couchbase/docker/blob/8f038528a450a5ec540beff43388ff8fbf685b89/enterprise/couchbase-server/4.6.5/Dockerfile)
--	[`community`, `community-5.1.1` (*community/couchbase-server/5.1.1/Dockerfile*)](https://github.com/couchbase/docker/blob/8f038528a450a5ec540beff43388ff8fbf685b89/community/couchbase-server/5.1.1/Dockerfile)
--	[`community-4.5.1` (*community/couchbase-server/4.5.1/Dockerfile*)](https://github.com/couchbase/docker/blob/8f038528a450a5ec540beff43388ff8fbf685b89/community/couchbase-server/4.5.1/Dockerfile)
+-	[`latest`, `enterprise`, `5.5.2`, `enterprise-5.5.2` (*enterprise/couchbase-server/5.5.2/Dockerfile*)](https://github.com/couchbase/docker/blob/eabb9688a1e60b4407c36fde230dd20e5e5af4fd/enterprise/couchbase-server/5.5.2/Dockerfile)
+-	[`6.0.0-beta` (*enterprise/couchbase-server/6.0.0-beta/Dockerfile*)](https://github.com/couchbase/docker/blob/eabb9688a1e60b4407c36fde230dd20e5e5af4fd/enterprise/couchbase-server/6.0.0-beta/Dockerfile)
+-	[`4.6.5`, `enterprise-4.6.5` (*enterprise/couchbase-server/4.6.5/Dockerfile*)](https://github.com/couchbase/docker/blob/eabb9688a1e60b4407c36fde230dd20e5e5af4fd/enterprise/couchbase-server/4.6.5/Dockerfile)
+-	[`community`, `community-5.1.1` (*community/couchbase-server/5.1.1/Dockerfile*)](https://github.com/couchbase/docker/blob/eabb9688a1e60b4407c36fde230dd20e5e5af4fd/community/couchbase-server/5.1.1/Dockerfile)
+-	[`community-4.5.1` (*community/couchbase-server/4.5.1/Dockerfile*)](https://github.com/couchbase/docker/blob/eabb9688a1e60b4407c36fde230dd20e5e5af4fd/community/couchbase-server/4.5.1/Dockerfile)
 
 # Quick reference
 
