@@ -16,9 +16,9 @@ Not the version you're looking for? View all supported [past releases](https://w
 
 # How to use this image
 
-**Note:** Pulling an images requires using a specific version number tag. The `latest` tag is not supported. 
+**Note:** Pulling an images requires using a specific version number tag. The `latest` tag is not supported.
 
-For Kibana versions prior to 6.4.0 a full list of images, tags, and documentation can be found at [docker.elastic.co](https://www.docker.elastic.co/). 
+For Kibana versions prior to 6.4.0 a full list of images, tags, and documentation can be found at [docker.elastic.co](https://www.docker.elastic.co/).
 
 For full Kibana documentation see [here](https://www.elastic.co/guide/en/kibana/index.html).
 
@@ -28,7 +28,8 @@ In the given example, Kibana will a attach to a user defined network (useful for
 
 ```console
 $ docker network create somenetwork
-``` 
+```
+
 *Note: In this example, Kibana is using the default configuration and expects to connect to a running Elasticsearch instance at http://localhost:9200*
 
 Run Kibana
@@ -38,7 +39,6 @@ $ docker run -d --name kibana --net somenetwork -p 5601:5601 kibana:tag
 ```
 
 Kibana can be accessed by browser via `http://localhost:5601` or `http://host-ip:5601`
-
 
 ## Running in Production Mode
 
