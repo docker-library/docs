@@ -16,9 +16,9 @@ Not the version you're looking for? View all supported [past releases](https://w
 
 # How to use this image
 
-**Note:** Pulling an images requires using a specific version number tag. The `latest` tag is not supported. 
+**Note:** Pulling an images requires using a specific version number tag. The `latest` tag is not supported.
 
-For Elasticsearch versions prior to 6.4.0 a full list of images, tags, and documentation can be found at [docker.elastic.co](https://www.docker.elastic.co/). 
+For Elasticsearch versions prior to 6.4.0 a full list of images, tags, and documentation can be found at [docker.elastic.co](https://www.docker.elastic.co/).
 
 For full Elasticsearch documentation see [here](https://www.elastic.co/guide/en/elasticsearch/reference/index.html).
 
@@ -37,7 +37,7 @@ Run Elasticsearch:
 ```console
 $ docker run -d --name elasticsearch --net somenetwork -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" elasticsearch:tag
 ```
+
 ## Running in Production Mode
 
 See [Install Elasticsearch with Docker](https://www.elastic.co/guide/en/elasticsearch/reference/6.x/docker.html)
-
