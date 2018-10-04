@@ -1,1 +1,1 @@
-[the Elastic Product Team](%%GITHUB-REPO%%)
+../.common-templates/maintainer-community.md
