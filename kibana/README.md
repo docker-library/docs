@@ -14,27 +14,25 @@ WARNING:
 
 -->
 
-# **DEPRECATION NOTICE**
-
-This image has been deprecated in favor of the [official `kibana` image](https://www.elastic.co/guide/en/kibana/current/_pulling_the_image.html) provided and maintained by [elastic.co](https://www.elastic.co/). The list of images available from Elastic can be found at [www.docker.elastic.co](https://www.docker.elastic.co/). The images found here will receive no further updates once the `6.0.0` release is available upstream. Please adjust your usage accordingly.
-
-Elastic provides open-source support for Kibana via the [elastic/kibana GitHub repository](https://github.com/elastic/kibana) and the Docker image via the [elastic/kibana-docker GitHub repository](https://github.com/elastic/kibana-docker), as well as community support via its [forums](https://discuss.elastic.co/c/kibana).
-
 # Supported tags and respective `Dockerfile` links
 
+-	[`6.4.1` (*6.4.1/Dockerfile*)](https://github.com/docker-library/kibana/blob/b6711c0af6435630493ac92be1de5c319ae835cf/6.4.1/Dockerfile)
+-	[`6.4.0` (*6.4.0/Dockerfile*)](https://github.com/docker-library/kibana/blob/b6711c0af6435630493ac92be1de5c319ae835cf/6.4.0/Dockerfile)
+-	[`6.4.2` (*6/Dockerfile*)](https://github.com/docker-library/kibana/blob/b6711c0af6435630493ac92be1de5c319ae835cf/6/Dockerfile)
 -	[`5.6.12`, `5.6`, `5`, `latest` (*5/Dockerfile*)](https://github.com/docker-library/kibana/blob/958ce4b1abe560d2cbbe6a74168d13031cb1e106/5/Dockerfile)
--	[`4.6.6`, `4.6`, `4` (*4.6/Dockerfile*)](https://github.com/docker-library/kibana/blob/febc4b766dabfc5a30f04373337cd0a0ec997bb2/4.6/Dockerfile)
 
 # Quick reference
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	the [Kibana Discuss Forums](https://discuss.elastic.co/c/kibana), the [Elastic community](https://www.elastic.co/community)
 
 -	**Where to file issues**:  
-	[https://github.com/docker-library/kibana/issues](https://github.com/docker-library/kibana/issues)
+	For issues with the Kibana Docker image: https://github.com/elastic/kibana-docker/issues
+
+For issues with Kibana: [https://github.com/elastic/kibana/issues](https://github.com/elastic/kibana/issues)
 
 -	**Maintained by**:  
-	[the Docker Community](https://github.com/docker-library/kibana)
+	[the Elastic Team](https://github.com/elastic/kibana-docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/kibana/)
@@ -55,67 +53,53 @@ Elastic provides open-source support for Kibana via the [elastic/kibana GitHub r
 
 # What is Kibana?
 
-Kibana is an open source data visualization plugin for Elasticsearch. It provides visualization capabilities on top of the content indexed on an Elasticsearch cluster. Users can create bar, line and scatter plots, or pie charts and maps on top of large volumes of data.
+Kibana is an open source analytics and visualization platform designed to work with Elasticsearch. You use Kibana to search, view, and interact with data stored in Elasticsearch indices. You can easily perform advanced data analysis and visualize your data in a variety of charts, tables, and maps.
 
-Kibana is a registered trademark of Elasticsearch BV.
-
-> [wikipedia.org/wiki/Kibana](https://en.wikipedia.org/wiki/Kibana)
+> For more information about Kibana, please visit [www.elastic.co/products/kibana](https://www.elastic.co/products/kibana)
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/8bb704930619acddf6f5705e7d1cf54defdd3388/kibana/logo.png)
 
+# About This Image
+
+This default distribution is governed by the Elastic License, and includes the [full set of free features](https://www.elastic.co/subscriptions).
+
+View the detailed release notes [here](https://www.elastic.co/guide/en/kibana/current/release-notes.html).
+
+Not the version you're looking for? View all supported [past releases](https://www.docker.elastic.co).
+
 # How to use this image
 
-You can run the default `kibana` command simply:
+**Note:** Pulling an images requires using a specific version number tag. The `latest` tag is not supported.
+
+For Kibana versions prior to 6.4.0 a full list of images, tags, and documentation can be found at [docker.elastic.co](https://www.docker.elastic.co/).
+
+For full Kibana documentation see [here](https://www.elastic.co/guide/en/kibana/index.html).
+
+## Running in Development Mode
+
+In the given example, Kibana will a attach to a user defined network (useful for connecting to other services (e.g. Elasticsearch)). If network has not yet been created, this can be done with the following command:
 
 ```console
-$ docker run --link some-elasticsearch:elasticsearch -d kibana
+$ docker network create somenetwork
 ```
 
-You can also pass in additional flags to `kibana`:
+*Note: In this example, Kibana is using the default configuration and expects to connect to a running Elasticsearch instance at http://localhost:9200*
+
+Run Kibana
 
 ```console
-$ docker run --link some-elasticsearch:elasticsearch -d kibana --plugins /somewhere/else
+$ docker run -d --name kibana --net somenetwork -p 5601:5601 kibana:tag
 ```
 
-This image includes `EXPOSE 5601` ([default `port`](https://www.elastic.co/guide/en/kibana/5.2/settings.html)). If you'd like to be able to access the instance from the host without the container's IP, standard port mappings can be used:
+Kibana can be accessed by browser via `http://localhost:5601` or `http://host-ip:5601`
 
-```console
-$ docker run --name some-kibana --link some-elasticsearch:elasticsearch -p 5601:5601 -d kibana
-```
+## Running in Production Mode
 
-You can also provide the address of elasticsearch via `ELASTICSEARCH_URL` environnement variable:
-
-```console
-$ docker run --name some-kibana -e ELASTICSEARCH_URL=http://some-elasticsearch:9200 -p 5601:5601 -d kibana
-```
-
-Then, access it via `http://localhost:5601` or `http://host-ip:5601` in a browser.
-
-## ... via [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/) or [`docker-compose`](https://github.com/docker/compose)
-
-Example `stack.yml` for `kibana`:
-
-```yaml
-version: '3.1'
-
-services:
-
-  kibana:
-    image: kibana
-    ports:
-      - 5601:5601
-
-  elasticsearch:
-    image: elasticsearch
-```
-
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/9efeec18b6b2ed232cf0fbd3914b6211e16e242c/kibana/stack.yml)
-
-Run `docker stack deploy -c stack.yml kibana` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:5601`, `http://localhost:5601`, or `http://host-ip:5601` (as appropriate).
+For additional information on running and configuring Kibana on Docker, see [Running Kibana on Docker](https://www.elastic.co/guide/en/kibana/current/docker.html)
 
 # License
 
-View [license information](https://github.com/elastic/kibana/blob/4557a6fc0ba08c5e7ac813a180179e5e2631c90a/LICENSE.md) for the software contained in this image.
+View [license information](https://github.com/elastic/kibana/blob/master/licenses/ELASTIC-LICENSE.txt) for the software contained in this image.
 
 As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 
