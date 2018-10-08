@@ -18,8 +18,10 @@ WARNING:
 
 -	[`6.0.3`, `6.0` (*6.0/Dockerfile*)](https://github.com/Lightstreamer/Docker/blob/ca600ed95f9fa8ec632ef2ad0526c15d917a52b7/6.0/Dockerfile)
 -	[`6.1.0`, `6.1`, `6` (*6.1/Dockerfile*)](https://github.com/Lightstreamer/Docker/blob/22d6045bab9625ea9f8b3e1e53c4c34383335ed3/6.1/Dockerfile)
--	[`7.0.1-jre8`, `7.0-jre8`, `7.0.1`, `7.0`, `7`, `latest` (*7.0/jre8/Dockerfile*)](https://github.com/Lightstreamer/Docker/blob/74135bdf4ac57d3c6a23d402ee847577d5db7ea5/7.0/jre8/Dockerfile)
--	[`7.0.1-jre8-alpine`, `7.0-jre8-alpine`, `7.0.1-alpine`, `7.0-alpine` (*7.0/jre8-alpine/Dockerfile*)](https://github.com/Lightstreamer/Docker/blob/74135bdf4ac57d3c6a23d402ee847577d5db7ea5/7.0/jre8-alpine/Dockerfile)
+-	[`7.0.2-jre8`, `7.0-jre8`, `7-jre8` (*7.0/jre8/Dockerfile*)](https://github.com/Lightstreamer/Docker/blob/db18f37e9da49a859943e5a1156a19b01e441dc5/7.0/jre8/Dockerfile)
+-	[`7.0.2-jre8-alpine`, `7.0-jre8-alpine`, `7-jre8-alpine`, `7.0.2-alpine`, `7.0-alpine`, `7-alpine` (*7.0/jre8-alpine/Dockerfile*)](https://github.com/Lightstreamer/Docker/blob/db18f37e9da49a859943e5a1156a19b01e441dc5/7.0/jre8-alpine/Dockerfile)
+-	[`7.0.2-jre10`, `7.0-jre10`, `7-jre10` (*7.0/jre10/Dockerfile*)](https://github.com/Lightstreamer/Docker/blob/db18f37e9da49a859943e5a1156a19b01e441dc5/7.0/jre10/Dockerfile)
+-	[`7.0.2-jre11`, `7.0-jre11`, `7-jre11`, `7.0.2`, `7.0`, `7`, `latest` (*7.0/jre11/Dockerfile*)](https://github.com/Lightstreamer/Docker/blob/db18f37e9da49a859943e5a1156a19b01e441dc5/7.0/jre11/Dockerfile)
 
 # Quick reference
 
