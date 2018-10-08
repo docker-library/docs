@@ -113,8 +113,8 @@ Create an `nginx_status.conf` configuration file to expose metric data:
 server {
     listen 8090;
     location /nginx_status {
-        stub_status on;
-        access_log on;
+        stub_status;
+        access_log off;
     }
 }
 ```
