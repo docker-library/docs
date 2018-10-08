@@ -19,8 +19,8 @@ WARNING:
 -	[`6.4.1` (*6.4.1/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/41ec004d537b2d5d1a4bdd5664fbee018f8cb98e/6.4.1/Dockerfile)
 -	[`6.4.0` (*6.4.0/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/936f5c437c1509a8ee090868b030ca2f89cc0021/6.4.0/Dockerfile)
 -	[`6.4.2` (*6/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/41ec004d537b2d5d1a4bdd5664fbee018f8cb98e/6/Dockerfile)
--	[`5.6.12`, `5.6`, `5`, `latest` (*5/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/b30b4e51e77c6289be522b1d5c3d64918b9d77d9/5/Dockerfile)
--	[`5.6.12-alpine`, `5.6-alpine`, `5-alpine`, `alpine` (*5/alpine/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/b30b4e51e77c6289be522b1d5c3d64918b9d77d9/5/alpine/Dockerfile)
+-	[`5.6.12`, `5.6`, `5` (*5/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/b30b4e51e77c6289be522b1d5c3d64918b9d77d9/5/Dockerfile)
+-	[`5.6.12-alpine`, `5.6-alpine`, `5-alpine` (*5/alpine/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/b30b4e51e77c6289be522b1d5c3d64918b9d77d9/5/alpine/Dockerfile)
 
 # Quick reference
 
