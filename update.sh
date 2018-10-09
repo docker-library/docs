@@ -78,11 +78,12 @@ for image in "${images[@]}"; do
 		if [ "$logoFile" ]; then
 			logoCommit="$(git log -1 --format='format:%H' -- "$logoFile" 2>/dev/null || true)"
 			[ "$logoCommit" ] || logoCommit='master'
+			logoUrl="https://raw.githubusercontent.com/docker-library/docs/$logoCommit/$logoFile"
 			if [ "${logoFile##*.}" = 'svg' ]; then
-				logo="![logo](https://cdn.rawgit.com/docker-library/docs/$logoCommit/$logoFile)"
-			else
-				logo="![logo](https://raw.githubusercontent.com/docker-library/docs/$logoCommit/$logoFile)"
+				# https://stackoverflow.com/a/16462143/433558
+				logoUrl+='?sanitize=true'
 			fi
+			logo="![logo]($logoUrl)"
 		fi
 
 		stack=
