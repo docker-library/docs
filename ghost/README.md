@@ -189,6 +189,11 @@ This variant is highly recommended when final image size being as small as possi
 
 To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
+# Note about ghost-cli
+
+While the docker images do have ghost-cli available and do use some of its commands to set up the base Ghost image, many of the other ghost-cli commands won't work correctly, and really aren't designed/intended to.
+For more info see [Why sudo is not packed and ghost-cli wont work out of the box](https://github.com/docker-library/ghost/issues/156#issuecomment-428159861)
+
 # License
 
 View [license information](https://ghost.org/license/) for the software contained in this image.
