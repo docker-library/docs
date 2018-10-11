@@ -1,0 +1,1 @@
+Some of these tags may have names like %%DEB-SUITES%% in them. These are the suite code names for releases of [Ubuntu](https://wiki.ubuntu.com/Releases) and indicate which release the image is based on.
