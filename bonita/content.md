@@ -37,7 +37,7 @@ Mount that directory location as /docker-entrypoint-initdb.d inside the PostgreS
 $ docker run --name mydbpostgres -v "$PWD"/custom_postgres/:/docker-entrypoint-initdb.d -e POSTGRES_PASSWORD=mysecretpassword -d postgres:9.3
 ```
 
-See the [official PostgreSQL documentation](https://registry.hub.docker.com/_/postgres/) for more details.
+See the [official PostgreSQL documentation](https://hub.docker.com/_/postgres/) for more details.
 
 ```console
 $ docker run --name bonita_postgres --link mydbpostgres:postgres -d -p 8080:8080 %%IMAGE%%
@@ -59,7 +59,7 @@ Mount that directory location as /etc/mysql/conf.d inside the MySQL container:
 $ docker run --name mydbmysql -v "$PWD"/custom_mysql/:/etc/mysql/conf.d -e MYSQL_ROOT_PASSWORD=mysecretpassword -d mysql:5.5
 ```
 
-See the [official MySQL documentation](https://registry.hub.docker.com/_/mysql/) for more details.
+See the [official MySQL documentation](https://hub.docker.com/_/mysql/) for more details.
 
 Start your application container to link it to the MySQL container:
 

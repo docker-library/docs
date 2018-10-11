@@ -33,7 +33,7 @@ $ docker run --name some-%%REPO%% --link some-mysql:mysql -d %%IMAGE%%
 ```
 
 -	Database type: `MySQL, MariaDB, or equivalent`
--	Database name/username/password: `<details for accessing your MySQL instance>` (`MYSQL_USER`, `MYSQL_PASSWORD`, `MYSQL_DATABASE`; see environment variables in the description for [`mysql`](https://registry.hub.docker.com/_/mysql/))
+-	Database name/username/password: `<details for accessing your MySQL instance>` (`MYSQL_USER`, `MYSQL_PASSWORD`, `MYSQL_DATABASE`; see environment variables in the description for [`mysql`](https://hub.docker.com/_/mysql/))
 -	ADVANCED OPTIONS; Database host: `mysql` (for using the `/etc/hosts` entry added by `--link` to access the linked container's MySQL instance)
 
 ## PostgreSQL
@@ -43,7 +43,7 @@ $ docker run --name some-%%REPO%% --link some-postgres:postgres -d %%IMAGE%%
 ```
 
 -	Database type: `PostgreSQL`
--	Database name/username/password: `<details for accessing your PostgreSQL instance>` (`POSTGRES_USER`, `POSTGRES_PASSWORD`; see environment variables in the description for [`postgres`](https://registry.hub.docker.com/_/postgres/))
+-	Database name/username/password: `<details for accessing your PostgreSQL instance>` (`POSTGRES_USER`, `POSTGRES_PASSWORD`; see environment variables in the description for [`postgres`](https://hub.docker.com/_/postgres/))
 -	ADVANCED OPTIONS; Database host: `postgres` (for using the `/etc/hosts` entry added by `--link` to access the linked container's PostgreSQL instance)
 
 ## Volumes

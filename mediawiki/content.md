@@ -33,7 +33,7 @@ $ docker run --name some-%%REPO%% --link some-mysql:mysql -d %%IMAGE%%
 ```
 
 -	Database type: `MySQL, MariaDB, or equivalent`
--	Database name/username/password: `<details for accessing your MySQL instance>` (`MYSQL_USER`, `MYSQL_PASSWORD`, `MYSQL_DATABASE`; see environment variables in the description for [`mariadb`](https://registry.hub.docker.com/_/mariadb/))
+-	Database name/username/password: `<details for accessing your MySQL instance>` (`MYSQL_USER`, `MYSQL_PASSWORD`, `MYSQL_DATABASE`; see environment variables in the description for [`mariadb`](https://hub.docker.com/_/mariadb/))
 -	ADVANCED OPTIONS; Database host: `some-mysql` (for using the `/etc/hosts` entry added by `--link` to access the linked container's MySQL instance)
 
 ## Volumes
