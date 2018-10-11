@@ -118,7 +118,7 @@ if [ "$text" ]; then
 	if [ "$repo" != 'debian' ] && [ "$repo" != 'ubuntu' ]; then
 		# what is 'jessie', 'stretch' and 'sid'
 		# https://github.com/docker-library/python/issues/343
-		debian=( $(bashbrew list --uniq "$(_repo 'debian')" | grep -vE 'stable|slim|backports|experimental' | cut -d: -f2) )
+		debian=( $(bashbrew list --uniq "$(_repo 'debian')" | grep -vE 'stable|slim|backports|experimental|testing' | cut -d: -f2) )
 		ubuntu=( $(bashbrew list "$(_repo 'ubuntu')" | grep -vE 'devel|latest|[0-9]' | cut -d: -f2) )
 		foundDebianTags=
 		foundUbuntuTags=
