@@ -18,11 +18,11 @@ WARNING:
 
 ## Simple Tags
 
--	[`12-ea-14-jdk-oraclelinux7`, `12-ea-14-oraclelinux7`, `12-ea-jdk-oraclelinux7`, `12-ea-oraclelinux7`, `12-jdk-oraclelinux7`, `12-oraclelinux7`, `12-ea-14-jdk-oracle`, `12-ea-14-oracle`, `12-ea-jdk-oracle`, `12-ea-oracle`, `12-jdk-oracle`, `12-oracle` (*12/jdk/oracle/Dockerfile*)](https://github.com/docker-library/openjdk/blob/1c341f869e22b2db077c4f36f9f5d4c407d33c84/12/jdk/oracle/Dockerfile)
+-	[`12-ea-15-jdk-oraclelinux7`, `12-ea-15-oraclelinux7`, `12-ea-jdk-oraclelinux7`, `12-ea-oraclelinux7`, `12-jdk-oraclelinux7`, `12-oraclelinux7`, `12-ea-15-jdk-oracle`, `12-ea-15-oracle`, `12-ea-jdk-oracle`, `12-ea-oracle`, `12-jdk-oracle`, `12-oracle` (*12/jdk/oracle/Dockerfile*)](https://github.com/docker-library/openjdk/blob/8502712f6e80904b766505805c894c2008afa700/12/jdk/oracle/Dockerfile)
 -	[`12-ea-14-jdk-alpine3.8`, `12-ea-14-alpine3.8`, `12-ea-jdk-alpine3.8`, `12-ea-alpine3.8`, `12-jdk-alpine3.8`, `12-alpine3.8`, `12-ea-14-jdk-alpine`, `12-ea-14-alpine`, `12-ea-jdk-alpine`, `12-ea-alpine`, `12-jdk-alpine`, `12-alpine` (*12/jdk/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/57de518e280c26fa8a9f602e76c3f3ea95f8296c/12/jdk/alpine/Dockerfile)
--	[`12-ea-14-jdk-windowsservercore-ltsc2016`, `12-ea-14-windowsservercore-ltsc2016`, `12-ea-jdk-windowsservercore-ltsc2016`, `12-ea-windowsservercore-ltsc2016`, `12-jdk-windowsservercore-ltsc2016`, `12-windowsservercore-ltsc2016` (*12/jdk/windows/windowsservercore-ltsc2016/Dockerfile*)](https://github.com/docker-library/openjdk/blob/1c341f869e22b2db077c4f36f9f5d4c407d33c84/12/jdk/windows/windowsservercore-ltsc2016/Dockerfile)
--	[`12-ea-14-jdk-windowsservercore-1709`, `12-ea-14-windowsservercore-1709`, `12-ea-jdk-windowsservercore-1709`, `12-ea-windowsservercore-1709`, `12-jdk-windowsservercore-1709`, `12-windowsservercore-1709` (*12/jdk/windows/windowsservercore-1709/Dockerfile*)](https://github.com/docker-library/openjdk/blob/1c341f869e22b2db077c4f36f9f5d4c407d33c84/12/jdk/windows/windowsservercore-1709/Dockerfile)
--	[`12-ea-14-jdk-windowsservercore-1803`, `12-ea-14-windowsservercore-1803`, `12-ea-jdk-windowsservercore-1803`, `12-ea-windowsservercore-1803`, `12-jdk-windowsservercore-1803`, `12-windowsservercore-1803` (*12/jdk/windows/windowsservercore-1803/Dockerfile*)](https://github.com/docker-library/openjdk/blob/1c341f869e22b2db077c4f36f9f5d4c407d33c84/12/jdk/windows/windowsservercore-1803/Dockerfile)
+-	[`12-ea-15-jdk-windowsservercore-ltsc2016`, `12-ea-15-windowsservercore-ltsc2016`, `12-ea-jdk-windowsservercore-ltsc2016`, `12-ea-windowsservercore-ltsc2016`, `12-jdk-windowsservercore-ltsc2016`, `12-windowsservercore-ltsc2016` (*12/jdk/windows/windowsservercore-ltsc2016/Dockerfile*)](https://github.com/docker-library/openjdk/blob/8502712f6e80904b766505805c894c2008afa700/12/jdk/windows/windowsservercore-ltsc2016/Dockerfile)
+-	[`12-ea-15-jdk-windowsservercore-1709`, `12-ea-15-windowsservercore-1709`, `12-ea-jdk-windowsservercore-1709`, `12-ea-windowsservercore-1709`, `12-jdk-windowsservercore-1709`, `12-windowsservercore-1709` (*12/jdk/windows/windowsservercore-1709/Dockerfile*)](https://github.com/docker-library/openjdk/blob/8502712f6e80904b766505805c894c2008afa700/12/jdk/windows/windowsservercore-1709/Dockerfile)
+-	[`12-ea-15-jdk-windowsservercore-1803`, `12-ea-15-windowsservercore-1803`, `12-ea-jdk-windowsservercore-1803`, `12-ea-windowsservercore-1803`, `12-jdk-windowsservercore-1803`, `12-windowsservercore-1803` (*12/jdk/windows/windowsservercore-1803/Dockerfile*)](https://github.com/docker-library/openjdk/blob/8502712f6e80904b766505805c894c2008afa700/12/jdk/windows/windowsservercore-1803/Dockerfile)
 -	[`11-jdk-oraclelinux7`, `11-oraclelinux7`, `11-jdk-oracle`, `11-oracle` (*11/jdk/oracle/Dockerfile*)](https://github.com/docker-library/openjdk/blob/7d6b0528da55c7b74feff4f565c9dbb8907b8c9a/11/jdk/oracle/Dockerfile)
 -	[`11-jdk-sid`, `11-sid`, `11-jdk`, `11` (*11/jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/2e23069b35737d02166d86d25088a02330a7ac96/11/jdk/Dockerfile)
 -	[`11-jdk-slim-sid`, `11-slim-sid`, `11-jdk-slim`, `11-slim` (*11/jdk/slim/Dockerfile*)](https://github.com/docker-library/openjdk/blob/2e23069b35737d02166d86d25088a02330a7ac96/11/jdk/slim/Dockerfile)
@@ -57,10 +57,10 @@ WARNING:
 
 ## Shared Tags
 
--	`12-ea-14-jdk-windowsservercore`, `12-ea-14-windowsservercore`, `12-ea-jdk-windowsservercore`, `12-ea-windowsservercore`, `12-jdk-windowsservercore`, `12-windowsservercore`:
-	-	[`12-ea-14-jdk-windowsservercore-ltsc2016` (*12/jdk/windows/windowsservercore-ltsc2016/Dockerfile*)](https://github.com/docker-library/openjdk/blob/1c341f869e22b2db077c4f36f9f5d4c407d33c84/12/jdk/windows/windowsservercore-ltsc2016/Dockerfile)
-	-	[`12-ea-14-jdk-windowsservercore-1709` (*12/jdk/windows/windowsservercore-1709/Dockerfile*)](https://github.com/docker-library/openjdk/blob/1c341f869e22b2db077c4f36f9f5d4c407d33c84/12/jdk/windows/windowsservercore-1709/Dockerfile)
-	-	[`12-ea-14-jdk-windowsservercore-1803` (*12/jdk/windows/windowsservercore-1803/Dockerfile*)](https://github.com/docker-library/openjdk/blob/1c341f869e22b2db077c4f36f9f5d4c407d33c84/12/jdk/windows/windowsservercore-1803/Dockerfile)
+-	`12-ea-15-jdk-windowsservercore`, `12-ea-15-windowsservercore`, `12-ea-jdk-windowsservercore`, `12-ea-windowsservercore`, `12-jdk-windowsservercore`, `12-windowsservercore`:
+	-	[`12-ea-15-jdk-windowsservercore-ltsc2016` (*12/jdk/windows/windowsservercore-ltsc2016/Dockerfile*)](https://github.com/docker-library/openjdk/blob/8502712f6e80904b766505805c894c2008afa700/12/jdk/windows/windowsservercore-ltsc2016/Dockerfile)
+	-	[`12-ea-15-jdk-windowsservercore-1709` (*12/jdk/windows/windowsservercore-1709/Dockerfile*)](https://github.com/docker-library/openjdk/blob/8502712f6e80904b766505805c894c2008afa700/12/jdk/windows/windowsservercore-1709/Dockerfile)
+	-	[`12-ea-15-jdk-windowsservercore-1803` (*12/jdk/windows/windowsservercore-1803/Dockerfile*)](https://github.com/docker-library/openjdk/blob/8502712f6e80904b766505805c894c2008afa700/12/jdk/windows/windowsservercore-1803/Dockerfile)
 -	`11-jdk-windowsservercore`, `11-windowsservercore`:
 	-	[`11-jdk-windowsservercore-ltsc2016` (*11/jdk/windows/windowsservercore-ltsc2016/Dockerfile*)](https://github.com/docker-library/openjdk/blob/7d6b0528da55c7b74feff4f565c9dbb8907b8c9a/11/jdk/windows/windowsservercore-ltsc2016/Dockerfile)
 	-	[`11-jdk-windowsservercore-1709` (*11/jdk/windows/windowsservercore-1709/Dockerfile*)](https://github.com/docker-library/openjdk/blob/7d6b0528da55c7b74feff4f565c9dbb8907b8c9a/11/jdk/windows/windowsservercore-1709/Dockerfile)
@@ -177,6 +177,8 @@ The `openjdk` images come in many flavors, each designed for a specific use case
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
+Some of these tags may have names like jessie, sid, or stretch in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on.
+
 ## `openjdk:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
@@ -184,6 +186,15 @@ This image is based on the popular [Alpine Linux project](http://alpinelinux.org
 This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
 
 To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
+
+## `openjdk:<version>-windowsservercore`
+
+This image is based on [Windows Server Core (`microsoft/windowsservercore`)](https://hub.docker.com/r/microsoft/windowsservercore/). As such, it only works in places which that image does, such as Windows 10 Professional/Enterprise (Anniversary Edition) or Windows Server 2016.
+
+For information about how to get Docker running on Windows, please see the relevant "Quick Start" guide provided by Microsoft:
+
+-	[Windows Server Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_server)
+-	[Windows 10 Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)
 
 ## `openjdk:<version>-slim`
 

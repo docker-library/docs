@@ -16,9 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.0-rc5`, `5.0-rc`, `5.0-rc5-stretch`, `5.0-rc-stretch` (*5.0-rc/Dockerfile*)](https://github.com/docker-library/redis/blob/53348c1c52c3d2e8666fbf748bc9e2297c35b452/5.0-rc/Dockerfile)
--	[`5.0-rc5-32bit`, `5.0-rc-32bit`, `5.0-rc5-32bit-stretch`, `5.0-rc-32bit-stretch` (*5.0-rc/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/53348c1c52c3d2e8666fbf748bc9e2297c35b452/5.0-rc/32bit/Dockerfile)
--	[`5.0-rc5-alpine`, `5.0-rc-alpine`, `5.0-rc5-alpine3.8`, `5.0-rc-alpine3.8` (*5.0-rc/alpine/Dockerfile*)](https://github.com/docker-library/redis/blob/53348c1c52c3d2e8666fbf748bc9e2297c35b452/5.0-rc/alpine/Dockerfile)
+-	[`5.0-rc6`, `5.0-rc`, `5.0-rc6-stretch`, `5.0-rc-stretch` (*5.0-rc/Dockerfile*)](https://github.com/docker-library/redis/blob/792574dfa561c5c9e8b6bcc48aad76637b49e96c/5.0-rc/Dockerfile)
+-	[`5.0-rc6-32bit`, `5.0-rc-32bit`, `5.0-rc6-32bit-stretch`, `5.0-rc-32bit-stretch` (*5.0-rc/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/792574dfa561c5c9e8b6bcc48aad76637b49e96c/5.0-rc/32bit/Dockerfile)
+-	[`5.0-rc6-alpine`, `5.0-rc-alpine`, `5.0-rc6-alpine3.8`, `5.0-rc-alpine3.8` (*5.0-rc/alpine/Dockerfile*)](https://github.com/docker-library/redis/blob/792574dfa561c5c9e8b6bcc48aad76637b49e96c/5.0-rc/alpine/Dockerfile)
 -	[`4.0.11`, `4.0`, `4`, `latest`, `4.0.11-stretch`, `4.0-stretch`, `4-stretch`, `stretch` (*4.0/Dockerfile*)](https://github.com/docker-library/redis/blob/53348c1c52c3d2e8666fbf748bc9e2297c35b452/4.0/Dockerfile)
 -	[`4.0.11-32bit`, `4.0-32bit`, `4-32bit`, `32bit`, `4.0.11-32bit-stretch`, `4.0-32bit-stretch`, `4-32bit-stretch`, `32bit-stretch` (*4.0/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/53348c1c52c3d2e8666fbf748bc9e2297c35b452/4.0/32bit/Dockerfile)
 -	[`4.0.11-alpine`, `4.0-alpine`, `4-alpine`, `alpine`, `4.0.11-alpine3.8`, `4.0-alpine3.8`, `4-alpine3.8`, `alpine3.8` (*4.0/alpine/Dockerfile*)](https://github.com/docker-library/redis/blob/53348c1c52c3d2e8666fbf748bc9e2297c35b452/4.0/alpine/Dockerfile)
@@ -131,6 +131,8 @@ The `redis` images come in many flavors, each designed for a specific use case.
 ## `redis:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+Some of these tags may have names like stretch in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on.
 
 ## `redis:<version>-alpine`
 
