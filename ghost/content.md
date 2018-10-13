@@ -84,9 +84,9 @@ $ docker exec <container-id> node --version
 v6.11.2
 ```
 
-## Note about ghost-cli
+## Note about Ghost-CLI
 
-While the docker images do have ghost-cli available and do use some of its commands to set up the base Ghost image, many of the other ghost-cli commands won't work correctly, and really aren't designed/intended to. For more info see [Why sudo is not packed and ghost-cli wont work out of the box](https://github.com/docker-library/ghost/issues/156#issuecomment-428159861)
+While the Docker images do have Ghost-CLI available and do use some of its commands to set up the base Ghost image, many of the other Ghost-CLI commands won't work correctly, and really aren't designed/intended to. For more info see [docker-library/ghost#156 (comment)](https://github.com/docker-library/ghost/issues/156#issuecomment-428159861)
 
 ## %%STACK%%
 
