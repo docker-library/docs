@@ -137,6 +137,10 @@ $ docker exec <container-id> node --version
 v6.11.2
 ```
 
+## Note about Ghost-CLI
+
+While the Docker images do have Ghost-CLI available and do use some of its commands to set up the base Ghost image, many of the other Ghost-CLI commands won't work correctly, and really aren't designed/intended to. For more info see [docker-library/ghost#156 (comment)](https://github.com/docker-library/ghost/issues/156#issuecomment-428159861)
+
 ## ... via [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/) or [`docker-compose`](https://github.com/docker/compose)
 
 Example `stack.yml` for `ghost`:
