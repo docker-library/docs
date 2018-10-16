@@ -81,22 +81,6 @@ Starting with Flink 1.5, images without "hadoop" in the tag are the "Hadoop-free
 
 # How to use this Docker image
 
-## Run a Flink local cluster
-
-To run a single Flink local cluster:
-
-```console
-$ docker run --name flink_local -p 8081:8081 -t flink local
-```
-
-Then with a web browser go to `http://localhost:8081/` to see the Flink Web Dashboard (adjust the hostname for your Docker host).
-
-To use Flink, you can submit a job to the cluster using the Web UI or you can also do it from a different Flink container, for example:
-
-```console
-$ docker run --rm -t flink flink run -m <jobmanager:port> -c <your_class> <your_jar> <your_params>
-```
-
 ## Running a JobManager or a TaskManager
 
 You can run a JobManager (master).
