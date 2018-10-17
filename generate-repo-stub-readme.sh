@@ -26,6 +26,11 @@ fi
 canonicalRepo="$(curl -fsSLI -o /dev/null -w '%{url_effective}\n' "$canonicalRepo")" # follow redirects (http://stackoverflow.com/a/3077316/433558)
 travisRepo="${canonicalRepo#*://github.com/}"
 
+if [[ "$travisRepo" = elastic/* ]]; then
+	# Elastic points "github-repo" at their upstream elastic/xyz-docker repos, but we want our README stubs to still point at our integration repos
+	travisRepo="docker-library/$repo"
+fi
+
 maintainer="$(sed -e 's!%%GITHUB-REPO%%!'"$canonicalRepo"'!g' "$repo/maintainer.md")"
 
 if [ -f "$repo/deprecated.md" ]; then
