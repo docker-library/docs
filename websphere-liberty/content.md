@@ -4,7 +4,7 @@ The images in this repository contain IBM WebSphere Application Server Liberty f
 
 ## Image User
 
-This image runs by default with `USER 1001` (non-root), as part of `group 0`.   All of the folders accessed by WebSphere Liberty been given the appropriate permission, but if your extending Dockerfile needs permission to another location you can simply temporarily switch into root and provide the needed permissions, example:
+This image runs by default with `USER 1001` (non-root), as part of `group 0`. All of the folders accessed by WebSphere Liberty been given the appropriate permission, but if your extending Dockerfile needs permission to another location you can simply temporarily switch into root and provide the needed permissions, example:
 
 ```dockerfile
 USER root
