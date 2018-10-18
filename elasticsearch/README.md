@@ -96,14 +96,6 @@ $ docker run -d --name elasticsearch --net somenetwork -p 9200:9200 -p 9300:9300
 
 See [Install Elasticsearch with Docker](https://www.elastic.co/guide/en/elasticsearch/reference/6.x/docker.html)
 
-# Image Variants
-
-The `elasticsearch` images come in many flavors, each designed for a specific use case.
-
-## `elasticsearch:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
 # License
 
 View [license information](https://github.com/elastic/elasticsearch/blob/6.4/licenses/ELASTIC-LICENSE.txt) for the software contained in this image.
