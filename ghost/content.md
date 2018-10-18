@@ -24,6 +24,12 @@ $ docker run -d --name some-ghost -p 3001:2368 %%IMAGE%%
 
 Then, access it via `http://localhost:3001` or `http://host-ip:3001` in a browser.
 
+### Upgrading Ghost
+
+You will want to ensure you are running the latest minor version (1.25.5 or 0.11.9) of Ghost before upgrading major versions. Otherwise, you may run into database errors.
+
+For upgrading your Ghost container you will want to mount your data to the appropriate path in the predecessor container (see below): import your content from the admin panel, stop the container, and then re-mount your content to the successor container you are upgrading into; you can then export your content from the admin panel.
+
 ## Stateful
 
 Mount your existing content. In this example we also use the Alpine base image.
@@ -40,23 +46,6 @@ $ docker run -d --name some-ghost -p 3001:2368 -v /path/to/ghost/blog:/var/lib/g
 $ docker run -d --name some-ghost -p 3001:2368 -v /path/to/ghost/blog:/var/lib/ghost %%IMAGE%%:0.11-alpine
 ```
 
-### Breaking changes
-
-#### Ghost 1.x.x => Ghost 2.x.x
-
-When upgrading from Ghost 1.x to Ghost 2.x, you must make sure you are already running the latest version of Ghost 1.x *before* upgrading to 2.x. Otherwise, you may run into database errors.
-
-#### Ghost 0.11.x => Ghost 1.x.x
-
-If you want to run Ghost 0.11.xx, be aware of the container's path difference:
-
--	Ghost 1.x.x is: `/var/lib/ghost/content`
--	Ghost 0.11.x is: `/var/lib/ghost`
-
-### SQLite Database
-
-This Docker image for Ghost uses SQLite. There is nothing special to configure.
-
 ### Docker Volume
 
 Alternatively you can use a [data container](http://docs.docker.com/engine/tutorials/dockervolumes/) that has a volume that points to `/var/lib/ghost/content` (or /var/lib/ghost for 0.11.x) and then reference it:
@@ -64,6 +53,10 @@ Alternatively you can use a [data container](http://docs.docker.com/engine/tutor
 ```console
 $ docker run -d --name some-ghost --volumes-from some-ghost-data %%IMAGE%%
 ```
+
+### SQLite Database
+
+This Docker image for Ghost uses SQLite. There is nothing special to configure.
 
 ## Configuration
 
