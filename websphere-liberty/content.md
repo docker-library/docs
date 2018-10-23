@@ -2,7 +2,7 @@
 
 The images in this repository contain IBM WebSphere Application Server Liberty for Developers and the IBM Java Runtime Environment. See the license section below for restrictions relating to the use of this image. For more information about WebSphere Application Server Liberty, see the [WASdev](https://developer.ibm.com/wasdev/docs/category/getting-started/) site.
 
-## Image User
+# Image User
 
 This image runs by default with `USER 1001` (non-root), as part of `group 0`. All of the folders accessed by WebSphere Liberty been given the appropriate permission, but if your extending Dockerfile needs permission to another location you can simply temporarily switch into root and provide the needed permissions, example:
 
