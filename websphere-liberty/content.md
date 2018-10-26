@@ -12,7 +12,7 @@ RUN mkdir -p /myFolder && chown -R 1001:0 /myFolder
 USER 1001
 ```
 
-Also, you have to make sure that the artifacts you are copying into the image (via `COPY`) have the correct permission to be `read` by user `1001` or group `0`.  For example, you can do `chmod 744 server.xml` to ensure your `server.xml` can be read by user `1001`. 
+Also, you have to make sure that the artifacts you are copying into the image (via `COPY`) have the correct permission to be `read` by user `1001` or group `0`. For example, you can do `chmod 744 server.xml` to ensure your `server.xml` can be read by user `1001`.
 
 # Tags
 
