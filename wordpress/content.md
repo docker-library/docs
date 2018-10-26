@@ -73,8 +73,8 @@ The following Docker Hub features can help with the task of keeping your depende
 
 Mount the volume containing your themes or plugins to the proper directory; and then apply them through the wp-admin webui. Ensure read/write/execute permissions are in place for the user.
 
--       Themes go in a subdirectory in `/var/www/html/wp-content/themes/`
--       Plugins go in a subdirectory in `/var/www/html/wp-content/plugins/`
+-	Themes go in a subdirectory in `/var/www/html/wp-content/themes/`
+-	Plugins go in a subdirectory in `/var/www/html/wp-content/plugins/`
 
 ## Running as an arbitrary user
 
