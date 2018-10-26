@@ -17,7 +17,7 @@ WARNING:
 # Supported tags and respective `Dockerfile` links
 
 -	[`2.4.37`, `2.4`, `2`, `latest` (*2.4/Dockerfile*)](https://github.com/docker-library/httpd/blob/2d90aa98c2f7e4dea3374490788681a1f69635c1/2.4/Dockerfile)
--	[`2.4.37-alpine`, `2.4-alpine`, `2-alpine`, `alpine` (*2.4/alpine/Dockerfile*)](https://github.com/docker-library/httpd/blob/2d90aa98c2f7e4dea3374490788681a1f69635c1/2.4/alpine/Dockerfile)
+-	[`2.4.37-alpine`, `2.4-alpine`, `2-alpine`, `alpine` (*2.4/alpine/Dockerfile*)](https://github.com/docker-library/httpd/blob/b2e7d2868e2f92660469ac66187f8f83fe449c65/2.4/alpine/Dockerfile)
 
 # Quick reference
 
