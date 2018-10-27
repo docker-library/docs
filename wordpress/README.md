@@ -156,6 +156,13 @@ The following Docker Hub features can help with the task of keeping your depende
 -	[Automated Builds](https://docs.docker.com/docker-hub/builds/) let Docker Hub automatically build your Dockerfile each time you push changes to it.
 -	[Repository Links](https://docs.docker.com/docker-hub/builds/#repository-links) can ensure that your image is also rebuilt any time `wordpress` is updated.
 
+## Include pre-installed themes / plugins
+
+Mount the volume containing your themes or plugins to the proper directory; and then apply them through the wp-admin webui. Ensure read/write/execute permissions are in place for the user.
+
+-	Themes go in a subdirectory in `/var/www/html/wp-content/themes/`
+-	Plugins go in a subdirectory in `/var/www/html/wp-content/plugins/`
+
 ## Running as an arbitrary user
 
 See [the "Running as an arbitrary user" section of the `php` image documentation](https://hub.docker.com/_/php/).
