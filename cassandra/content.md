@@ -31,7 +31,7 @@ $ docker run --name some-app --link some-%%REPO%%:%%REPO%% -d app-that-uses-cass
 Using the environment variables documented below, there are two cluster scenarios: instances on the same machine and instances on separate machines. For the same machine, start the instance as described above. To start other instances, just tell each new node where the first is.
 
 ```console
-$ docker run --name some-%%REPO%%2 -d -e CASSANDRA_SEEDS="$(docker inspect --format='{{ .NetworkSettings.IPAddress }}' some-%%REPO%%)" %%IMAGE%%:tag
+$ docker run --name some-%%REPO%%2 -d -e CASSANDRA_SEEDS="$(docker inspect --format='{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' some-%%REPO%%)" %%IMAGE%%:tag
 ```
 
 ... where `some-%%REPO%%` is the name of your original Cassandra Server container, taking advantage of `docker inspect` to get the IP address of the other container.
