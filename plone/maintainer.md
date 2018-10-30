@@ -1,1 +1,1 @@
-[the Plone Foundation](%%GITHUB-REPO%%)
+[Plone Community](%%GITHUB-REPO%%)
