@@ -69,7 +69,7 @@ The Plone image uses several environment variable that allow to specify a more s
 Run Plone with ZEO and install two addons (PloneFormGen and collective.roster)
 
 ```console
-docker run --name=instance1 --link=zeo -e ZEO_ADDRESS=zeo:8080 -p 8080:8080 \
+$ docker run --name=instance1 --link=zeo -e ZEO_ADDRESS=zeo:8080 -p 8080:8080 \
 -e ADDONS="Products.PloneFormGen collective.roster" plone
 ```
 
