@@ -30,7 +30,7 @@ WARNING:
 	[https://github.com/plone/plone.docker/issues](https://github.com/plone/plone.docker/issues)
 
 -	**Maintained by**:  
-	[the Plone Foundation](https://github.com/plone/plone.docker)
+	[Plone Community](https://github.com/plone/plone.docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/plone/), [`arm32v5`](https://hub.docker.com/r/arm32v5/plone/), [`arm32v6`](https://hub.docker.com/r/arm32v6/plone/), [`arm32v7`](https://hub.docker.com/r/arm32v7/plone/), [`arm64v8`](https://hub.docker.com/r/arm64v8/plone/), [`i386`](https://hub.docker.com/r/i386/plone/), [`ppc64le`](https://hub.docker.com/r/ppc64le/plone/), [`s390x`](https://hub.docker.com/r/s390x/plone/)
@@ -53,12 +53,13 @@ WARNING:
 
 [Plone](https://plone.org) is a free and open source content management system built on top of the Zope application server.
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/888adfc80adb42b47fa6d446d472ec3f44274be8/plone/logo.svg?sanitize=true)
+![logo](https://raw.githubusercontent.com/docker-library/docs/57d4b2b366f7243810393fa6018bd8b62926b78d/plone/logo.svg?sanitize=true)
 
 ## Features
 
--	Images for Plone 5 and Plone 4
+-	Images for Plone 5.x and Plone 4.x
 -	Enable add-ons via environment variables
+-	Choose between [Debian](https://www.debian.org/) or [Alpine](http://www.alpinelinux.org/) based images.
 
 ## Usage
 
@@ -74,17 +75,19 @@ This image includes `EXPOSE 8080` (the Plone port), so standard container linkin
 
 ### Start Plone within a ZEO cluster
 
-Start ZEO server
+ZEO cluster are best suited for production setups, you will **need** a loadbalancer.
+
+Start ZEO server in the background
 
 ```console
-$ docker run --name=zeo plone zeoserver
+$ docker run --name=zeo plone zeo
 ```
 
-Start 2 Plone clients
+Start 2 Plone clients (also in the background)
 
 ```console
-$ docker run --link=zeo -e ZEO_ADDRESS=zeo:8100 -p 8081:8080 plone
-$ docker run --link=zeo -e ZEO_ADDRESS=zeo:8100 -p 8082:8080 plone
+$ docker run --link=zeo -e ZEO_ADDRESS=zeo:8080 -p 8081:8080 plone
+$ docker run --link=zeo -e ZEO_ADDRESS=zeo:8080 -p 8082:8080 plone
 ```
 
 ### Start Plone in debug mode
@@ -97,22 +100,40 @@ $ docker run -p 8080:8080 plone fg
 
 ### Add-ons
 
-You can enable Plone add-ons via the `PLONE_ADDONS` environment variable
+You can enable Plone add-ons via the `ADDONS` environment variable
 
 ```console
 $ docker run -p 8080:8080 -e PLONE_ADDONS="eea.facetednavigation Products.PloneFormGen" plone
 ```
 
-For more information on how to extend this image with your own custom settings, adding more add-ons, building it or mounting volumes, please refer to our [documentation](https://github.com/plone/plone.docker/blob/master/docs/usage.rst).
+For more information on how to extend this image with your own custom settings, adding more add-ons, building it or mounting volumes, please refer to our [documentation](https://docs.plone.org/manage/docker/docs/index.html)
 
-### Supported Environment Variables
+## Supported Environment Variables
 
 The Plone image uses several environment variable that allow to specify a more specific setup.
 
--	`PLONE_ADDONS`, `ADDONS` - Customize Plone via Plone add-ons using this environment variable
--	`PLONE_ZCML`, `ZCML` - Include custom Plone add-ons ZCML files
--	`PLONE_DEVELOP`, `DEVELOP` - Develop new or existing Plone add-ons
+### For Basic Usage
+
+-	`ADDONS` - Customize Plone via Plone add-ons using this environment variable
 -	`ZEO_ADDRESS` - This environment variable allows you to run Plone image as a ZEO client.
+
+Run Plone with ZEO and install two addons (PloneFormGen and collective.roster)
+
+```console
+$ docker run --name=instance1 --link=zeo -e ZEO_ADDRESS=zeo:8080 -p 8080:8080 \
+-e ADDONS="Products.PloneFormGen collective.roster" plone
+```
+
+To use specific add-ons versions:
+
+```console
+ -e ADDONS="Products.PloneFormGen==1.8.5 collective.roster==2.3.1"
+```
+
+### For Advanced Usage
+
+-	`PLONE_ZCML`, `ZCML` - Include custom Plone add-ons ZCML files (former `BUILDOUT_ZCML`)
+-	`PLONE_DEVELOP`, `DEVELOP` - Develop new or existing Plone add-ons (former `BUILDOUT_DEVELOP`)
 -	`ZEO_READ_ONLY` - Run Plone as a read-only ZEO client. Defaults to `off`.
 -	`ZEO_CLIENT_READ_ONLY_FALLBACK` - A flag indicating whether a read-only remote storage should be acceptable as a fallback when no writable storages are available. Defaults to `false`.
 -	`ZEO_SHARED_BLOB_DIR` - Set this to on if the ZEO server and the instance have access to the same directory. Defaults to `off`.
@@ -124,7 +145,7 @@ The Plone image uses several environment variable that allow to specify a more s
 
 ## Documentation
 
-Full documentation for end users can be found in the ["docs"](https://github.com/plone/plone.docker/tree/master/docs) folder. It is also available online at http://docs.plone.org/
+Full documentation for end users can be found online at [docs.plone.org](https://docs.plone.org/manage/docker/docs/usage/index.html)
 
 ## Credits
 
@@ -150,7 +171,7 @@ To minimize image size, it's uncommon for additional related tools (such as `git
 
 # License
 
-View [license information](https://plone.org/foundation/copyrights/license-faq) for the software contained in this image.
+View [license information](https://plone.org/foundation/copyright-licensing-logo/license-faq) for the software contained in this image.
 
 As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 
