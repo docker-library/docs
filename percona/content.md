@@ -68,7 +68,7 @@ $ docker logs some-%%REPO%%
 
 ## Using a custom MySQL configuration file
 
-The startup configuration is specified in the file `/etc/mysql/my.cnf`, and that file in turn includes any files found in the `/etc/mysql/conf.d` directory that end with `.cnf`. Settings in files in this directory will augment and/or override settings in `/etc/mysql/my.cnf`. If you want to use a customized MySQL configuration, you can create your alternative configuration file in a directory on the host machine and then mount that directory location as `/etc/mysql/conf.d` inside the `%%IMAGE%%` container.
+The startup configuration is specified in the file `/etc/my.cnf`, and that file in turn includes any files found in the `/etc/my.cnf.d` directory that end with `.cnf`. Settings in files in this directory will augment and/or override settings in `/etc/my.cnf`. If you want to use a customized MySQL configuration, you can create your alternative configuration file in a directory on the host machine and then mount that directory location as `/etc/my.cnf.d` inside the `%%IMAGE%%` container.
 
 If `/my/custom/config-file.cnf` is the path and name of your custom configuration file, you can start your `%%IMAGE%%` container like this (note that only the directory path of the custom config file is used in this command):
 
@@ -76,7 +76,7 @@ If `/my/custom/config-file.cnf` is the path and name of your custom configuratio
 $ docker run --name some-%%REPO%% -v /my/custom:/etc/mysql/conf.d -e MYSQL_ROOT_PASSWORD=my-secret-pw -d %%IMAGE%%:tag
 ```
 
-This will start a new container `some-%%REPO%%` where the Percona Server for MySQL instance uses the combined startup settings from `/etc/mysql/my.cnf` and `/etc/mysql/conf.d/config-file.cnf`, with settings from the latter taking precedence.
+This will start a new container `some-%%REPO%%` where the Percona Server for MySQL instance uses the combined startup settings from `/etc/my.cnf` and `/etc/my.cnf.d/config-file.cnf`, with settings from the latter taking precedence.
 
 ### Configuration without a `cnf` file
 
