@@ -16,20 +16,20 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.5.4-jdk-10-slim`, `3.5-jdk-10-slim`, `3-jdk-10-slim` (*jdk-10-slim/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/f581ea002e5d067deb6213c00a4d217297cad469/jdk-10-slim/Dockerfile)
--	[`3.5.4-jdk-10`, `3.5-jdk-10`, `3-jdk-10` (*jdk-10/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/f581ea002e5d067deb6213c00a4d217297cad469/jdk-10/Dockerfile)
--	[`3.5.4-jdk-11-slim`, `3.5-jdk-11-slim`, `3-jdk-11-slim` (*jdk-11-slim/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/f581ea002e5d067deb6213c00a4d217297cad469/jdk-11-slim/Dockerfile)
--	[`3.5.4-jdk-11`, `3.5-jdk-11`, `3-jdk-11` (*jdk-11/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/f581ea002e5d067deb6213c00a4d217297cad469/jdk-11/Dockerfile)
--	[`3.5.4-jdk-7-alpine`, `3.5-jdk-7-alpine`, `3-jdk-7-alpine` (*jdk-7-alpine/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/f581ea002e5d067deb6213c00a4d217297cad469/jdk-7-alpine/Dockerfile)
--	[`3.5.4-jdk-7-slim`, `3.5-jdk-7-slim`, `3-jdk-7-slim` (*jdk-7-slim/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/f581ea002e5d067deb6213c00a4d217297cad469/jdk-7-slim/Dockerfile)
--	[`3.5.4-jdk-7`, `3.5-jdk-7`, `3-jdk-7` (*jdk-7/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/f581ea002e5d067deb6213c00a4d217297cad469/jdk-7/Dockerfile)
--	[`3.5.4-jdk-8-alpine`, `3.5.4-alpine`, `3.5-jdk-8-alpine`, `3.5-alpine`, `3-jdk-8-alpine`, `alpine` (*jdk-8-alpine/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/f581ea002e5d067deb6213c00a4d217297cad469/jdk-8-alpine/Dockerfile)
--	[`3.5.4-jdk-8-slim`, `3.5.4-slim`, `3.5-jdk-8-slim`, `3.5-slim`, `3-jdk-8-slim`, `slim` (*jdk-8-slim/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/f581ea002e5d067deb6213c00a4d217297cad469/jdk-8-slim/Dockerfile)
--	[`3.5.4-jdk-8`, `3.5.4`, `3.5-jdk-8`, `3.5`, `3-jdk-8`, `3`, `latest` (*jdk-8/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/f581ea002e5d067deb6213c00a4d217297cad469/jdk-8/Dockerfile)
--	[`3.5.4-jdk-9-slim`, `3.5-jdk-9-slim`, `3-jdk-9-slim` (*jdk-9-slim/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/f581ea002e5d067deb6213c00a4d217297cad469/jdk-9-slim/Dockerfile)
--	[`3.5.4-jdk-9`, `3.5-jdk-9`, `3-jdk-9` (*jdk-9/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/f581ea002e5d067deb6213c00a4d217297cad469/jdk-9/Dockerfile)
--	[`3.5.4-ibmjava-8-alpine`, `3.5.4-ibmjava-alpine`, `3.5-ibmjava-8-alpine`, `3.5-ibmjava-alpine`, `3-ibmjava-8-alpine`, `ibmjava-alpine` (*ibmjava-8-alpine/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/f581ea002e5d067deb6213c00a4d217297cad469/ibmjava-8-alpine/Dockerfile)
--	[`3.5.4-ibmjava-8`, `3.5.4-ibmjava`, `3.5-ibmjava-8`, `3.5-ibmjava`, `3-ibmjava-8`, `3-ibmjava`, `ibmjava` (*ibmjava-8/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/f581ea002e5d067deb6213c00a4d217297cad469/ibmjava-8/Dockerfile)
+-	[`3.6.0-jdk-10-slim`, `3.6-jdk-10-slim`, `3-jdk-10-slim` (*jdk-10-slim/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/05f4802aa5c253dcf75fe967c6f45b3fb1e2f26e/jdk-10-slim/Dockerfile)
+-	[`3.6.0-jdk-10`, `3.6-jdk-10`, `3-jdk-10` (*jdk-10/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/05f4802aa5c253dcf75fe967c6f45b3fb1e2f26e/jdk-10/Dockerfile)
+-	[`3.6.0-jdk-11-slim`, `3.6-jdk-11-slim`, `3-jdk-11-slim` (*jdk-11-slim/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/05f4802aa5c253dcf75fe967c6f45b3fb1e2f26e/jdk-11-slim/Dockerfile)
+-	[`3.6.0-jdk-11`, `3.6-jdk-11`, `3-jdk-11` (*jdk-11/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/05f4802aa5c253dcf75fe967c6f45b3fb1e2f26e/jdk-11/Dockerfile)
+-	[`3.6.0-jdk-12-alpine`, `3.6-jdk-12-alpine`, `3-jdk-12-alpine` (*jdk-12-alpine/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/0607c2d00e31df3d2166bb0ab4f5097bdf2ede0e/jdk-12-alpine/Dockerfile)
+-	[`3.6.0-jdk-12`, `3.6-jdk-12`, `3-jdk-12` (*jdk-12/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/0607c2d00e31df3d2166bb0ab4f5097bdf2ede0e/jdk-12/Dockerfile)
+-	[`3.6.0-jdk-7-alpine`, `3.6-jdk-7-alpine`, `3-jdk-7-alpine` (*jdk-7-alpine/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/05f4802aa5c253dcf75fe967c6f45b3fb1e2f26e/jdk-7-alpine/Dockerfile)
+-	[`3.6.0-jdk-7-slim`, `3.6-jdk-7-slim`, `3-jdk-7-slim` (*jdk-7-slim/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/05f4802aa5c253dcf75fe967c6f45b3fb1e2f26e/jdk-7-slim/Dockerfile)
+-	[`3.6.0-jdk-7`, `3.6-jdk-7`, `3-jdk-7` (*jdk-7/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/05f4802aa5c253dcf75fe967c6f45b3fb1e2f26e/jdk-7/Dockerfile)
+-	[`3.6.0-jdk-8-alpine`, `3.6.0-alpine`, `3.6-jdk-8-alpine`, `3.6-alpine`, `3-jdk-8-alpine`, `alpine` (*jdk-8-alpine/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/05f4802aa5c253dcf75fe967c6f45b3fb1e2f26e/jdk-8-alpine/Dockerfile)
+-	[`3.6.0-jdk-8-slim`, `3.6.0-slim`, `3.6-jdk-8-slim`, `3.6-slim`, `3-jdk-8-slim`, `slim` (*jdk-8-slim/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/05f4802aa5c253dcf75fe967c6f45b3fb1e2f26e/jdk-8-slim/Dockerfile)
+-	[`3.6.0-jdk-8`, `3.6.0`, `3.6-jdk-8`, `3.6`, `3-jdk-8`, `3`, `latest` (*jdk-8/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/05f4802aa5c253dcf75fe967c6f45b3fb1e2f26e/jdk-8/Dockerfile)
+-	[`3.6.0-ibmjava-8-alpine`, `3.6.0-ibmjava-alpine`, `3.6-ibmjava-8-alpine`, `3.6-ibmjava-alpine`, `3-ibmjava-8-alpine`, `ibmjava-alpine` (*ibmjava-8-alpine/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/05f4802aa5c253dcf75fe967c6f45b3fb1e2f26e/ibmjava-8-alpine/Dockerfile)
+-	[`3.6.0-ibmjava-8`, `3.6.0-ibmjava`, `3.6-ibmjava-8`, `3.6-ibmjava`, `3-ibmjava-8`, `3-ibmjava`, `ibmjava` (*ibmjava-8/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/05f4802aa5c253dcf75fe967c6f45b3fb1e2f26e/ibmjava-8/Dockerfile)
 
 # Quick reference
 
