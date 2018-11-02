@@ -100,6 +100,10 @@ When you start the `%%IMAGE%%` image, you can adjust the configuration of the Pe
 
 This variable is mandatory and specifies the password that will be set for the Percona `root` superuser account. In the above example, it was set to `my-secret-pw`.
 
+### `MYSQL_ROOT_HOST`
+
+By default, `root` can connect from anywhere. This option restricts root connections to be from the specified host only. Also `localhost` can be used here for the local-only root access.
+
 ### `MYSQL_DATABASE`
 
 This variable is optional and allows you to specify the name of a database to be created on image startup. If a user/password was supplied (see below) then that user will be granted superuser access ([corresponding to `GRANT ALL`](http://dev.mysql.com/doc/en/adding-users.html)) to this database.
@@ -121,6 +125,18 @@ This is an optional variable. Set to `yes` to generate a random initial password
 ### `MYSQL_ONETIME_PASSWORD`
 
 Sets root (*not* the user specified in `MYSQL_USER`!) user as expired once init is complete, forcing a password change on first login. *NOTE*: This feature is supported on MySQL 5.6+ only. Using this option on MySQL 5.5 will throw an appropriate error during initialization.
+
+### `MYSQL_INITDB_SKIP_TZINFO`
+
+At first run MySQL automatically loads from the local system the timezone information needed for the `CONVERT_TZ()` function. If it's is not what is intended, this option disables timezone loading.
+
+### `INIT_TOKUDB`
+
+Tuns on TokuDB Engine. It can be activated only when *transparent huge pages* (THP) are disabled.
+
+### `INIT_ROCKSDB`
+
+Tuns on RocksDB Engine.
 
 ## Docker Secrets
 
