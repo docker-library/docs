@@ -8,9 +8,31 @@ Clojure is a dialect of the Lisp programming language. It is a general-purpose p
 
 # How to use this image
 
-## Start a Lein/Clojure instance in your app
+## Build tools
 
-Since the most common way to use Clojure is in conjunction with [Leiningen (`lein`)](http://leiningen.org/), this image assumes that's how you'll be working. The most straightforward way to use this image is to add a `Dockerfile` to an existing Leiningen/Clojure project:
+Clojure has three major approaches to building and running projects:
+
+1. [leiningen](https://leiningen.org)
+    1. The oldest and probably most common tool
+1. [boot](http://boot-clj.com)
+    1. An alternative approach that solves similar problems as leiningen
+1. [tools-deps](https://clojure.org/guides/deps_and_cli)
+    1. A more recent official tool for some of the lein/boot use cases
+
+There are variants of this image for all three of these tools and their
+respective releases. The most basic form of these tags is:
+
+1. `clojure:lein`
+1. `clojure:boot`
+1. `clojure:tools-deps`
+
+But you can also append a hyphen and the version of that tool you'd like to
+use. For example, for lein 2.8.1 you can use this image: `clojure:lein-2.8.1`.
+
+## Run your app with leiningen
+
+Add a `Dockerfile` to an existing Leiningen/Clojure project with the following
+contents:
 
 ```dockerfile
 FROM %%IMAGE%%
@@ -26,7 +48,12 @@ $ docker build -t my-clojure-app .
 $ docker run -it --rm --name my-running-app my-clojure-app
 ```
 
-While the above is the most straightforward example of a `Dockerfile`, it does have some drawbacks. The `lein run` command will download your dependencies, compile the project, and then run it. That's a lot of work, all of which you may not want done every time you run the image. To get around this, you can download the dependencies and compile the project ahead of time. This will significantly reduce startup time when you run your image.
+While the above is the most straightforward example of a `Dockerfile`, it does
+have some drawbacks. The `lein run` command will download your dependencies,
+compile the project, and then run it. That's a lot of work, all of which you
+may not want done every time you run the image. To get around this, you can
+download the dependencies and compile the project ahead of time. This will
+significantly reduce startup time when you run your image.
 
 ```dockerfile
 FROM %%IMAGE%%
@@ -52,3 +79,8 @@ $ docker run -it --rm -v "$PWD":/usr/src/app -w /usr/src/app %%IMAGE%% lein uber
 ```
 
 This will build your project into a jar file located in your project's `target/uberjar` directory.
+
+## More details
+
+See [the official image README](https://github.com/Quantisan/docker-clojure/blob/master/README.md)
+for more details about using this image with boot and tools-deps.
