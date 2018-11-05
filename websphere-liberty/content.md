@@ -4,7 +4,11 @@ The images in this repository contain IBM WebSphere Application Server Liberty f
 
 # Image User
 
-This image runs by default with `USER 1001` (non-root), as part of group `0`. All of the folders accessed by WebSphere Liberty have been given the appropriate permissions, but if your extending Dockerfile needs permission to another location you can simply temporarily switch into root and provide the needed permissions, example:
+This image runs by default with `USER 1001` (non-root), as part of group `0`. Please make sure you read below to set the appropriate folder and file permissions.
+
+## Updating folder permissions
+
+All of the folders accessed by WebSphere Liberty have been given the appropriate permissions, but if your extending Dockerfile needs permission to another location you can simply temporarily switch into root and provide the needed permissions, example:
 
 ```dockerfile
 USER root
@@ -12,7 +16,32 @@ RUN mkdir -p /myFolder && chown -R 1001:0 /myFolder
 USER 1001
 ```
 
-Also, you have to make sure that the artifacts you are copying into the image (via `COPY`) have the correct permission to be `read` and `executed` by user `1001` or group `0`. For example, you can do `chmod 777 server.xml` to ensure your `server.xml` can be `read` and `executed` by user `1001`, as well as any artifacts such as the application's `EAR` or `WAR` file, JDBC driver, or other files that are placed on the image via `COPY`.
+## Updating file permissions
+
+You have to make sure that **all** the artifacts you are copying into the image (via `COPY` or `ADD`) have the correct permissions to be `read` and `executed` by user `1001` or group `0`, because the ownership of the file is changed to be `root:0` when transferring into the docker image.
+
+You have a few options for doing this: before copying the file, during copy, or after copy.
+
+### Updating permissions before coyping
+
+Since the ownership of the file will change to `root:0`, you can simply set the permissions for the owner's group to be able to read/execute the artifact (i.e. the middle digit of a `chmod` command). For example, you can do `chmod g+rx server.xml` to ensure your `server.xml` can be `read` and `executed` by group `0`, as well as any artifacts such as the application's `EAR` or `WAR` file, JDBC driver, or other files that are placed on the image via `COPY` or `ADD`.
+
+### Updating permissions during copy
+
+If you're using Docker v17.09.0-ce and newer you can take advantage of the flag `--chown=<user>:<group>` during either `ADD` or `COPY`. For example: `COPY --chown=1001:0 jvm.options /config/jvm.options`
+
+### Updating permissions after copy
+
+If you need your Dockerfile to work with older versions of Docker CE and don't want to pre-process the permissions of the files you can temporarily switch into root to change the permissions of the needed files. For example:
+
+```dockerfile
+USER root
+RUN chown 1001:0 /config/jvm.options
+RUN chown 1001:0 /output/resources/security/ltpa.keys
+USER 1001
+```
+
+Please note that this pattern will duplicate the docker layers for those artifacts, which can heavily bloat your resulting docker image (depending on the size of the artifact). So it is recommended to set the permissions before or during copy.
 
 # Tags
 
@@ -22,8 +51,8 @@ The `kernel` image contains just the Liberty kernel and no additional runtime fe
 
 ```dockerfile
 FROM %%IMAGE%%:kernel
-COPY Sample1.war /config/dropins/
-COPY server.xml /config/
+COPY --chown=1001:0  Sample1.war /config/dropins/
+COPY --chown=1001:0  server.xml /config/
 RUN installUtility install --acceptLicense defaultServer
 ```
 
@@ -39,66 +68,54 @@ The `springBoot1` and `springBoot2` images contain all features required for run
 
 # Usage
 
-The images are designed to support a number of different usage patterns. The following examples are based on the Java EE8 Liberty [application deployment sample](https://developer.ibm.com/wasdev/docs/article_appdeployment/) and assume that [DefaultServletEngine.zip](https://github.com/WASdev/sample.servlet/releases/download/V1/DefaultServletEngine.zip) has been extracted to `/tmp` and the `server.xml` updated to accept HTTP connections from outside of the container by adding the following element inside the `server` stanza:
+The images are designed to support a number of different usage patterns. The following examples are based on the Java EE8 Liberty [application deployment sample](https://developer.ibm.com/wasdev/docs/article_appdeployment/) and assume that [DefaultServletEngine.zip](https://github.com/WASdev/sample.servlet/releases/download/V1/DefaultServletEngine.zip) has been extracted to `/tmp` and the `server.xml` updated to accept HTTP connections from outside of the container by adding the following element inside the `server` stanza (if not using one of the pre-packaged `server.xml` files with our tags):
 
 ```xml
 <httpEndpoint host="*" httpPort="9080" httpsPort="-1"/>
 ```
 
-1.	Each image contains a default server configuration that specifies the corresponding features and exposes ports 9080 and 9443 for HTTP and HTTPS respectively. A .WAR file can therefore be mounted in the `dropins` directory of this server and run. The following example starts a container in the background running a .WAR file from the host file system with the HTTP and HTTPS ports mapped to 80 and 443 respectively.
+## Application Image
 
-	```console
-	$ docker run -d -p 80:9080 -p 443:9443 \
+It is a very strong best practice to create an extending Docker image, we called it the `application image`, that encapsulates an application and its configuration. This creates a robust, self-contained and predictable Docker image that can span new containers upon request, without relying on volumes or other external runtime artifacts that may behave different over time.
+
+If you want to build the smallest possible WebSphere Liberty application image you can start with our `kernel` tag, add your artifacts, and run `installUtility` to grow the set of features to be fit-for-purpose. Scroll up to the `Tags` section for an example.
+
+If you want to start with one of the pre-packaged tags you do not need to run `installUtility` if the tag contains all the features you required, and you may not even need to copy a `server.xml` - unless you have updates you want to make. So one example of building an application image that runs a MicroProfile 2.0 application is:
+
+```dockerfile
+FROM %%IMAGE%%:microprofile2
+COPY --chown=1001:0  Sample1.war /config/dropins/
+```
+
+You can then build and run this image:
+
+```console
+$ docker build -t app .
+$ docker run -d -p 80:9080 -p 443:9443 app
+```
+
+## Using volumes for configuration
+
+This pattern can be useful for quick experiments / early development (i.e. `I just want to run the application as I iterate over it`), can should not be used for development scenarios that involve different teams and environments - for these cases the `Application Image` pattern described above is the way to go.
+
+When using `volumes`, an application file can be mounted in the `dropins` directory of this server and run. The following example starts a container in the background running a .WAR file from the host file system with the HTTP and HTTPS ports mapped to 80 and 443 respectively.
+
+```console
+$ docker run -d -p 80:9080 -p 443:9443 \
 	    -v /tmp/DefaultServletEngine/dropins/Sample1.war:/config/dropins/Sample1.war \
 	    %%IMAGE%%:webProfile8
-	```
+```
 
-	When the server is started, you can browse to http://localhost/Sample1/SimpleServlet on the Docker host.
+When the server is started, you can browse to http://localhost/Sample1/SimpleServlet on the Docker host.
 
-	Note: If you are using the boot2docker virtual machine on OS X or Windows, you need to get the IP of the virtual host by using the command `boot2docker ip` instead of by using localhost.
+Note: If you are using the boot2docker virtual machine on OS X or Windows, you need to get the IP of the virtual host by using the command `boot2docker ip` instead of by using localhost.
 
-2.	For greater flexibility over configuration, it is possible to mount an entire server configuration directory from the host and then specify the server name as a parameter to the run command. Note: This particular example server configuration provides only HTTP access.
+For greater flexibility over configuration, it is possible to mount an entire server configuration directory from the host and then specify the server name as a parameter to the run command. Note: This particular example server configuration provides only HTTP access.
 
 	```console
 	$ docker run -d -p 80:9080 \
 	  -v /tmp/DefaultServletEngine:/config \
 	  %%IMAGE%%:webProfile8
-	```
-
-3.	You can also build an application layer on top of this image by using either the default server configuration or a new server configuration. In this example, we have copied the `Sample1.war` from `/tmp/DefaultServletEngine/dropins` to the same directory as the following Dockerfile.
-
-	```dockerfile
-	FROM %%IMAGE%%:webProfile8
-	COPY Sample1.war /config/dropins/
-	```
-
-	This can then be built and run as follows:
-
-	```console
-	$ docker build -t app .
-	$ docker run -d -p 80:9080 -p 443:9443 app
-	```
-
-4.	You can mount a data volume container that contains the application and the server configuration on to the image. This has the benefit that it has no dependency on files from the host but still allows the application container to be easily re-mounted on a newer version of the application server image. This example assumes that you have copied the `/tmp/DefaultServletEngine` directory in to the same directory as the Dockerfile.
-
-	Build and run the data volume container:
-
-	```dockerfile
-	FROM %%IMAGE%%:webProfile8
-	COPY DefaultServletEngine /config
-	```
-
-	```console
-	$ docker build -t app-image .
-	$ docker run -d -v /config \
-	    --name app app-image true
-	```
-
-	Run the WebSphere Liberty image with the volumes from the data volume container mounted:
-
-	```console
-	$ docker run -d -p 80:9080 \
-	  --volumes-from app %%IMAGE%%:webProfile8
 	```
 
 # Using `springBoot` images
