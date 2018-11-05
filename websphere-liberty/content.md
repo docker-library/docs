@@ -41,6 +41,8 @@ RUN chown 1001:0 /output/resources/security/ltpa.keys
 USER 1001
 ```
 
+Please note that this pattern will duplicate the docker layers for those artifacts, which can heavily bloat your resulting docker image (depending on the size of the artifact). So it is recommended to set the permissions before or during copy.
+
 # Tags
 
 There are multiple tags available in this repository. The image with the tag `beta` contains the contents of the install archive for the latest monthly beta. The other images are all based on the latest generally available fix pack.
