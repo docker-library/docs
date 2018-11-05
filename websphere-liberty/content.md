@@ -4,7 +4,7 @@ The images in this repository contain IBM WebSphere Application Server Liberty f
 
 # Image User
 
-This image runs by default with `USER 1001` (non-root), as part of group `0`.  Please make sure you read below to set the appropriate folder and file permissions.
+This image runs by default with `USER 1001` (non-root), as part of group `0`. Please make sure you read below to set the appropriate folder and file permissions.
 
 ## Updating folder permissions
 
@@ -18,21 +18,21 @@ USER 1001
 
 ## Updating file permissions
 
-You have to make sure that **all** the artifacts you are copying into the image (via `COPY` or `ADD`) have the correct permissions to be `read` and `executed` by user `1001` or group `0`, because the ownership of the file is changed to be `root:0` when transferring into the docker image. 
+You have to make sure that **all** the artifacts you are copying into the image (via `COPY` or `ADD`) have the correct permissions to be `read` and `executed` by user `1001` or group `0`, because the ownership of the file is changed to be `root:0` when transferring into the docker image.
 
-You have a few options for doing this:  before copying the file, during copy, or after copy.
+You have a few options for doing this: before copying the file, during copy, or after copy.
 
 ### Updating permissions before coyping
 
-Since the ownership of the file will change to `root:0`, you can simply set the permissions for the owner's group to be able to read/execute the artifact (i.e. the middle digit of a `chmod` command).  For example, you can do `chmod g+rx server.xml` to ensure your `server.xml` can be `read` and `executed` by group `0`, as well as any artifacts such as the application's `EAR` or `WAR` file, JDBC driver, or other files that are placed on the image via `COPY` or `ADD`.
+Since the ownership of the file will change to `root:0`, you can simply set the permissions for the owner's group to be able to read/execute the artifact (i.e. the middle digit of a `chmod` command). For example, you can do `chmod g+rx server.xml` to ensure your `server.xml` can be `read` and `executed` by group `0`, as well as any artifacts such as the application's `EAR` or `WAR` file, JDBC driver, or other files that are placed on the image via `COPY` or `ADD`.
 
 ### Updating permissions during copy
 
-If you're using Docker v17.09.0-ce and newer you can take advantage of the flag `--chown=<user>:<group>` during either `ADD` or `COPY`.  For example:  `COPY --chown=1001:0 jvm.options /config/jvm.options`
+If you're using Docker v17.09.0-ce and newer you can take advantage of the flag `--chown=<user>:<group>` during either `ADD` or `COPY`. For example: `COPY --chown=1001:0 jvm.options /config/jvm.options`
 
 ### Updating permissions after copy
 
-If you need your Dockerfile to work with older versions of Docker CE and don't want to pre-process the permissions of the files you can temporarily switch into root to change the permissions of the needed files.  For example:
+If you need your Dockerfile to work with older versions of Docker CE and don't want to pre-process the permissions of the files you can temporarily switch into root to change the permissions of the needed files. For example:
 
 ```dockerfile
 USER root
@@ -74,16 +74,17 @@ The images are designed to support a number of different usage patterns. The fol
 
 ## Application Image
 
-It is a very strong best practice to create an extending Docker image, we called it the `application image`, that encapsulates an application and its configuration.  This creates a robust, self-contained and predictable Docker image that can span new containers upon request, without relying on volumes or other external runtime artifacts that may behave different over time.
+It is a very strong best practice to create an extending Docker image, we called it the `application image`, that encapsulates an application and its configuration. This creates a robust, self-contained and predictable Docker image that can span new containers upon request, without relying on volumes or other external runtime artifacts that may behave different over time.
 
-If you want to build the smallest possible WebSphere Liberty application image you can start with our `kernel` tag, add your artifacts, and run `installUtility` to grow the set of features to be fit-for-purpose.  Scroll up to the `Tags` section for an example.
+If you want to build the smallest possible WebSphere Liberty application image you can start with our `kernel` tag, add your artifacts, and run `installUtility` to grow the set of features to be fit-for-purpose. Scroll up to the `Tags` section for an example.
 
-If you want to start with one of the pre-packaged tags you do not need to run `installUtility` if the tag contains all the features you required, and you may not even need to copy a `server.xml` - unless you have updates you want to make.  So one example of building an application image that runs a MicroProfile 2.0 application is:
+If you want to start with one of the pre-packaged tags you do not need to run `installUtility` if the tag contains all the features you required, and you may not even need to copy a `server.xml` - unless you have updates you want to make. So one example of building an application image that runs a MicroProfile 2.0 application is:
 
 ```dockerfile
 FROM %%IMAGE%%:microprofile2
 COPY --chown=1001:0  Sample1.war /config/dropins/
 ```
+
 You can then build and run this image:
 
 ```console
@@ -114,7 +115,7 @@ For greater flexibility over configuration, it is possible to mount an entire se
 	  -v /tmp/DefaultServletEngine:/config \
 	  %%IMAGE%%:webProfile8
 	```
-	
+
 # Using `springBoot` images
 
 The `springBoot` images introduce capabilities specific to the support of Spring Boot applications, including the `springBootUtility` used to separate Spring Boot applications into thin applications and dependency library caches. To elaborate these capabilities this section assumes the standalone Spring Boot 2.0.x application `hellospringboot.jar` exists in the `/tmp` directory.
