@@ -18,9 +18,9 @@ WARNING:
 
 -	[`27` (*x86_64//Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/e1796b2753d5a5731de5915661e4639c4342b950/x86_64//Dockerfile)
 -	[`26` (*x86_64//Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/035aa2a3970e4e10a9a6ae0b79322b882bfe50d3/x86_64//Dockerfile)
--	[`rawhide` (*x86_64//Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/3638c329a8590f71b2922b24494f66b6c932d8d2/x86_64//Dockerfile)
--	[`latest`, `28` (*x86_64//Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/a2989101fc8d09ab90689421791e6d05217cfb30/x86_64//Dockerfile)
--	[`29` (*x86_64//Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/d20fa6039181db29255fcf9bcbc908ccf624e864/x86_64//Dockerfile)
+-	[`rawhide`, `30` (*x86_64//Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/f65a23bf343b7bb6b1e32e46ba8e1157f23761fa/x86_64//Dockerfile)
+-	[`28` (*x86_64//Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/5b1abab687c875971ba462626ea49dc58f53f8a1/x86_64//Dockerfile)
+-	[`latest`, `29` (*x86_64//Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/4cdb4cf9fd9b2a569a3f90c0ac28e76fe6d3e9e1/x86_64//Dockerfile)
 
 # Quick reference
 
@@ -34,7 +34,7 @@ WARNING:
 	[Fedora Release Engineering](https://github.com/fedora-cloud/docker-brew-fedora)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/fedora/), [`arm32v7`](https://hub.docker.com/r/arm32v7/fedora/), [`arm64v8`](https://hub.docker.com/r/arm64v8/fedora/), [`ppc64le`](https://hub.docker.com/r/ppc64le/fedora/)
+	[`amd64`](https://hub.docker.com/r/amd64/fedora/), [`arm32v7`](https://hub.docker.com/r/arm32v7/fedora/), [`arm64v8`](https://hub.docker.com/r/arm64v8/fedora/), [`ppc64le`](https://hub.docker.com/r/ppc64le/fedora/), [`s390x`](https://hub.docker.com/r/s390x/fedora/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/fedora/` directory](https://github.com/docker-library/repo-info/blob/master/repos/fedora) ([history](https://github.com/docker-library/repo-info/commits/master/repos/fedora))  
