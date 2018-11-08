@@ -16,7 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.2`, `4`, `latest` (*4.2/Dockerfile*)](https://github.com/swiftdocker/docker-swift/blob/7fbe6bf4018c6853e4996c4f28a8da331ae0de2c/4.2/Dockerfile)
+-	[`4.2.1`, `4.2`, `4`, `latest` (*4.2/Dockerfile*)](https://github.com/swiftdocker/docker-swift/blob/963f282c4dd242a5f90c909532692dd102420a04/4.2/Dockerfile)
 -	[`4.1.3`, `4.1` (*4.1/Dockerfile*)](https://github.com/swiftdocker/docker-swift/blob/3fa417a500b6dc45f2588a2e1cf7d24c147a4581/4.1/Dockerfile)
 -	[`4.0.3`, `4.0` (*4.0/Dockerfile*)](https://github.com/swiftdocker/docker-swift/blob/bc8cb3032ffd6a05d3eddf9cf885139277c11642/4.0/Dockerfile)
 -	[`3.1.1`, `3.1`, `3` (*3.1/Dockerfile*)](https://github.com/swiftdocker/docker-swift/blob/bc8cb3032ffd6a05d3eddf9cf885139277c11642/3.1/Dockerfile)
