@@ -147,7 +147,7 @@ Where `src/` is the directory containing all your PHP code. Then, run the comman
 
 ```console
 $ docker build -t my-php-app .
-$ docker run -d --name my-running-app my-php-app
+$ docker run -d -p 80:80 --name my-running-app my-php-app
 ```
 
 We recommend that you add a `php.ini` configuration file, see the "Configuration" section for details.
