@@ -55,7 +55,7 @@ Kibana is an open source analytics and visualization platform designed to work w
 
 > For more information about Kibana, please visit [www.elastic.co/products/kibana](https://www.elastic.co/products/kibana)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/8bb704930619acddf6f5705e7d1cf54defdd3388/kibana/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/7baeec9386c1d3960fc9021a5973694b2e0e1af9/kibana/logo.png)
 
 # About This Image
 

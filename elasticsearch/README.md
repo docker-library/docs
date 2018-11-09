@@ -56,7 +56,7 @@ Elasticsearch is a distributed, RESTful search and analytics engine capable of s
 
 > For more information about Elasticsearch, please visit [www.elastic.co/products/elasticsearch](https://www.elastic.co/products/elasticsearch)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/8bb704930619acddf6f5705e7d1cf54defdd3388/elasticsearch/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/7baeec9386c1d3960fc9021a5973694b2e0e1af9/elasticsearch/logo.png)
 
 # About This Image
 
