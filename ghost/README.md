@@ -32,7 +32,7 @@ WARNING:
 	[https://github.com/docker-library/ghost/issues](https://github.com/docker-library/ghost/issues)
 
 -	**Maintained by**:  
-	[the Docker Community](https://github.com/docker-library/ghost)
+	[the Elastic Team](https://github.com/docker-library/ghost)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/ghost/), [`arm32v6`](https://hub.docker.com/r/arm32v6/ghost/), [`arm32v7`](https://hub.docker.com/r/arm32v7/ghost/), [`arm64v8`](https://hub.docker.com/r/arm64v8/ghost/), [`i386`](https://hub.docker.com/r/i386/ghost/), [`ppc64le`](https://hub.docker.com/r/ppc64le/ghost/), [`s390x`](https://hub.docker.com/r/s390x/ghost/)

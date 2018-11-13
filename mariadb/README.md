@@ -31,7 +31,7 @@ WARNING:
 	[https://github.com/docker-library/mariadb/issues](https://github.com/docker-library/mariadb/issues)
 
 -	**Maintained by**:  
-	[the Docker Community](https://github.com/docker-library/mariadb)
+	[the Elastic Team](https://github.com/docker-library/mariadb)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/mariadb/), [`arm64v8`](https://hub.docker.com/r/arm64v8/mariadb/), [`i386`](https://hub.docker.com/r/i386/mariadb/), [`ppc64le`](https://hub.docker.com/r/ppc64le/mariadb/)

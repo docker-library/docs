@@ -29,7 +29,7 @@ WARNING:
 	[https://github.com/31z4/storm-docker/issues](https://github.com/31z4/storm-docker/issues)
 
 -	**Maintained by**:  
-	[the Docker Community](https://github.com/31z4/storm-docker)
+	[the Elastic Team](https://github.com/31z4/storm-docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/storm/), [`arm32v6`](https://hub.docker.com/r/arm32v6/storm/), [`arm64v8`](https://hub.docker.com/r/arm64v8/storm/), [`i386`](https://hub.docker.com/r/i386/storm/), [`ppc64le`](https://hub.docker.com/r/ppc64le/storm/), [`s390x`](https://hub.docker.com/r/s390x/storm/)

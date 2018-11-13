@@ -44,7 +44,7 @@ WARNING:
 	[https://github.com/docker-library/hello-world/issues](https://github.com/docker-library/hello-world/issues)
 
 -	**Maintained by**:  
-	[the Docker Community](https://github.com/docker-library/hello-world)
+	[the Elastic Team](https://github.com/docker-library/hello-world)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/hello-world/), [`arm32v5`](https://hub.docker.com/r/arm32v5/hello-world/), [`arm32v7`](https://hub.docker.com/r/arm32v7/hello-world/), [`arm64v8`](https://hub.docker.com/r/arm64v8/hello-world/), [`i386`](https://hub.docker.com/r/i386/hello-world/), [`ppc64le`](https://hub.docker.com/r/ppc64le/hello-world/), [`s390x`](https://hub.docker.com/r/s390x/hello-world/), [`windows-amd64`](https://hub.docker.com/r/winamd64/hello-world/)

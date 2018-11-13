@@ -87,7 +87,7 @@ WARNING:
 	[https://github.com/docker-library/mongo/issues](https://github.com/docker-library/mongo/issues)
 
 -	**Maintained by**:  
-	[the Docker Community](https://github.com/docker-library/mongo)
+	[the Elastic Team](https://github.com/docker-library/mongo)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/mongo/), [`arm64v8`](https://hub.docker.com/r/arm64v8/mongo/), [`windows-amd64`](https://hub.docker.com/r/winamd64/mongo/)

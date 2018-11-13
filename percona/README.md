@@ -29,7 +29,7 @@ WARNING:
 	[https://github.com/docker-library/percona/issues](https://github.com/docker-library/percona/issues)
 
 -	**Maintained by**:  
-	[the Docker Community](https://github.com/docker-library/percona)
+	[the Elastic Team](https://github.com/docker-library/percona)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/percona/)

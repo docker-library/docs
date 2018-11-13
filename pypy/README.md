@@ -30,7 +30,7 @@ WARNING:
 	[https://github.com/docker-library/pypy/issues](https://github.com/docker-library/pypy/issues)
 
 -	**Maintained by**:  
-	[the Docker Community](https://github.com/docker-library/pypy)
+	[the Elastic Team](https://github.com/docker-library/pypy)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/pypy/), [`arm32v5`](https://hub.docker.com/r/arm32v5/pypy/), [`i386`](https://hub.docker.com/r/i386/pypy/)

@@ -34,7 +34,7 @@ This image has been deprecated in favor of the [official `owncloud/server` image
 	[https://github.com/docker-library/owncloud/issues](https://github.com/docker-library/owncloud/issues)
 
 -	**Maintained by**:  
-	[the Docker Community](https://github.com/docker-library/owncloud)
+	[the Elastic Team](https://github.com/docker-library/owncloud)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/owncloud/), [`arm32v5`](https://hub.docker.com/r/arm32v5/owncloud/), [`arm32v7`](https://hub.docker.com/r/arm32v7/owncloud/), [`arm64v8`](https://hub.docker.com/r/arm64v8/owncloud/), [`i386`](https://hub.docker.com/r/i386/owncloud/), [`ppc64le`](https://hub.docker.com/r/ppc64le/owncloud/), [`s390x`](https://hub.docker.com/r/s390x/owncloud/)
