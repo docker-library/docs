@@ -194,6 +194,7 @@ services:
       - POSTGRES_PASSWORD=odoo
       - POSTGRES_USER=odoo
       - PGDATA=/var/lib/postgresql/data/pgdata
+      - POSTGRES_DB=postgres
     volumes:
       - odoo-db-data:/var/lib/postgresql/data/pgdata
 volumes:
