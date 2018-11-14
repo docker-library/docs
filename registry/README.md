@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2`, `2.6`, `2.6.2`, `latest` (*Dockerfile*)](https://github.com/docker/distribution-library-image/blob/bc5d4f15a7e8d12ed6e5174ac4edab4b6032d09f/Dockerfile)
--	[`2.5`, `2.5.2` (*Dockerfile*)](https://github.com/docker/distribution-library-image/blob/a878b04f22c48dd2fd49581bc74363ab8213b15b/Dockerfile)
+-	[`2.6.2`, `2.6`, `2`, `latest` (*Dockerfile*)](https://github.com/docker/distribution-library-image/blob/15dbd1a011dbda8da055d6cea8bc1e7705c32ead/Dockerfile)
+-	[`2.5.2`, `2.5` (*Dockerfile*)](https://github.com/docker/distribution-library-image/blob/f96d9029112d8da459312fb8249802bc4ec6ac21/Dockerfile)
 
 # Quick reference
 
