@@ -16,11 +16,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `9`, `9.2`, `9.2.3`, `9.2-jre`, `9.2.3-jre`, `9.2.3.0`, `9.2.3.0-jre` (*9000/jre/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/f0fae66b05b0782b8409487b4b8fd2eb824fb7b0/9000/jre/Dockerfile)
--	[`9-alpine`, `9.2-alpine`, `9.2.3-alpine`, `9.2-jre-alpine`, `9.2.3-jre-alpine`, `9.2.3.0-alpine`, `9.2.3.0-jre-alpine` (*9000/alpine-jre/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/f0fae66b05b0782b8409487b4b8fd2eb824fb7b0/9000/alpine-jre/Dockerfile)
--	[`9-jdk`, `9.2-jdk`, `9.2.3-jdk`, `9.2.3.0-jdk` (*9000/jdk/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/f0fae66b05b0782b8409487b4b8fd2eb824fb7b0/9000/jdk/Dockerfile)
--	[`9-jdk-alpine`, `9.2-jdk-alpine`, `9.2.3-jdk-alpine`, `9.2.3.0-jdk-alpine` (*9000/alpine-jdk/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/f0fae66b05b0782b8409487b4b8fd2eb824fb7b0/9000/alpine-jdk/Dockerfile)
--	[`9-onbuild`, `9.2-onbuild`, `9.2.3-onbuild`, `9.2.3.0-onbuild` (*9000/onbuild/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/f0fae66b05b0782b8409487b4b8fd2eb824fb7b0/9000/onbuild/Dockerfile)
+-	[`latest`, `9`, `9.2`, `9.2.4`, `9.2-jre`, `9.2.4-jre`, `9.2.4.0`, `9.2.4.0-jre` (*9000/jre/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/e80a6392db2062ef268fa7ef65c655b60219224b/9000/jre/Dockerfile)
+-	[`9-alpine`, `9.2-alpine`, `9.2.4-alpine`, `9.2-jre-alpine`, `9.2.4-jre-alpine`, `9.2.4.0-alpine`, `9.2.4.0-jre-alpine` (*9000/alpine-jre/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/e80a6392db2062ef268fa7ef65c655b60219224b/9000/alpine-jre/Dockerfile)
+-	[`9-jdk`, `9.2-jdk`, `9.2.4-jdk`, `9.2.4.0-jdk` (*9000/jdk/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/e80a6392db2062ef268fa7ef65c655b60219224b/9000/jdk/Dockerfile)
+-	[`9-jdk-alpine`, `9.2-jdk-alpine`, `9.2.4-jdk-alpine`, `9.2.4.0-jdk-alpine` (*9000/alpine-jdk/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/e80a6392db2062ef268fa7ef65c655b60219224b/9000/alpine-jdk/Dockerfile)
+-	[`9-onbuild`, `9.2-onbuild`, `9.2.4-onbuild`, `9.2.4.0-onbuild` (*9000/onbuild/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/e80a6392db2062ef268fa7ef65c655b60219224b/9000/onbuild/Dockerfile)
 -	[`9.1`, `9.1.17`, `9.1.17.0`, `9.1-jre`, `9.1.17-jre`, `9.1.17.0-jre` (*9000/jre/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/8bc3fe27670a851953345182fe12f14f5e708383/9000/jre/Dockerfile)
 -	[`9.1-alpine`, `9.1.17-alpine`, `9.1.17.0-alpine`, `9.1-jre-alpine`, `9.1.17-jre-alpine`, `9.1.17.0-jre-alpine` (*9000/alpine-jre/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/8bc3fe27670a851953345182fe12f14f5e708383/9000/alpine-jre/Dockerfile)
 -	[`9.1-jdk-alpine`, `9.1.17-jdk-alpine`, `9.1.17.0-jdk-alpine` (*9000/alpine-jdk/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/8bc3fe27670a851953345182fe12f14f5e708383/9000/alpine-jdk/Dockerfile)
