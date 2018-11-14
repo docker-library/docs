@@ -28,7 +28,7 @@ Since the ownership of the file will change to `root:0`, you can simply set the 
 
 ### Updating permissions during copy
 
-If you're using Docker v17.09.0-ce and newer you can take advantage of the flag `--chown=<user>:<group>` during either `ADD` or `COPY`. For example: `COPY --chown=1001:0 jvm.options /config/jvm.options`.  This is the preferred approach as you don't need to worry about changing permissions before calling `docker build` and you also do not duplicate layers in the resulting image.
+If you're using Docker v17.09.0-ce and newer you can take advantage of the flag `--chown=<user>:<group>` during either `ADD` or `COPY`. For example: `COPY --chown=1001:0 jvm.options /config/jvm.options`. This is the preferred approach as you don't need to worry about changing permissions before calling `docker build` and you also do not duplicate layers in the resulting image.
 
 ### Updating permissions after copy
 
