@@ -16,11 +16,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`10.3.10-bionic`, `10.3-bionic`, `10-bionic`, `bionic`, `10.3.10`, `10.3`, `10`, `latest` (*10.3/Dockerfile*)](https://github.com/docker-library/mariadb/blob/44cfe68144976ce0ec135593ffe15c4bcca0dc6f/10.3/Dockerfile)
--	[`10.2.18-bionic`, `10.2-bionic`, `10.2.18`, `10.2` (*10.2/Dockerfile*)](https://github.com/docker-library/mariadb/blob/81ad56cf6bdf82666da60d828247684fda142c03/10.2/Dockerfile)
--	[`10.1.37-bionic`, `10.1-bionic`, `10.1.37`, `10.1` (*10.1/Dockerfile*)](https://github.com/docker-library/mariadb/blob/36024883027e6ec5ff0d2fb43c0ce4f6f77ea4cc/10.1/Dockerfile)
--	[`10.0.37-xenial`, `10.0-xenial`, `10.0.37`, `10.0` (*10.0/Dockerfile*)](https://github.com/docker-library/mariadb/blob/63a00c827dd02c5ede7957d96d0ffc0d020ef03e/10.0/Dockerfile)
--	[`5.5.62-trusty`, `5.5-trusty`, `5-trusty`, `5.5.62`, `5.5`, `5` (*5.5/Dockerfile*)](https://github.com/docker-library/mariadb/blob/4ffbde76c75a49456d1729bb142d1c0c9c51f574/5.5/Dockerfile)
+-	[`10.4.0-bionic`, `10.4-bionic`, `10.4.0`, `10.4` (*10.4/Dockerfile*)](https://github.com/docker-library/mariadb/blob/7384b25a0196d8a7e62173781df5a5bed1eb88d2/10.4/Dockerfile)
+-	[`10.3.10-bionic`, `10.3-bionic`, `10-bionic`, `bionic`, `10.3.10`, `10.3`, `10`, `latest` (*10.3/Dockerfile*)](https://github.com/docker-library/mariadb/blob/eac38f7d1478b2570203bf8c1ca68bea74637d9c/10.3/Dockerfile)
+-	[`10.2.19-bionic`, `10.2-bionic`, `10.2.19`, `10.2` (*10.2/Dockerfile*)](https://github.com/docker-library/mariadb/blob/eac38f7d1478b2570203bf8c1ca68bea74637d9c/10.2/Dockerfile)
+-	[`10.1.37-bionic`, `10.1-bionic`, `10.1.37`, `10.1` (*10.1/Dockerfile*)](https://github.com/docker-library/mariadb/blob/eac38f7d1478b2570203bf8c1ca68bea74637d9c/10.1/Dockerfile)
+-	[`10.0.37-xenial`, `10.0-xenial`, `10.0.37`, `10.0` (*10.0/Dockerfile*)](https://github.com/docker-library/mariadb/blob/eac38f7d1478b2570203bf8c1ca68bea74637d9c/10.0/Dockerfile)
+-	[`5.5.62-trusty`, `5.5-trusty`, `5-trusty`, `5.5.62`, `5.5`, `5` (*5.5/Dockerfile*)](https://github.com/docker-library/mariadb/blob/eac38f7d1478b2570203bf8c1ca68bea74637d9c/5.5/Dockerfile)
 
 # Quick reference
 
