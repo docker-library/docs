@@ -16,18 +16,16 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`21.1.1`, `21.1`, `21`, `latest` (*21/Dockerfile*)](https://github.com/erlang/docker-erlang-otp/blob/de48e7c91b8a293770c6fcccdd30d2329fcc0414/21/Dockerfile)
--	[`21.1.1-slim`, `21.1-slim`, `21-slim`, `slim` (*21/slim/Dockerfile*)](https://github.com/erlang/docker-erlang-otp/blob/de48e7c91b8a293770c6fcccdd30d2329fcc0414/21/slim/Dockerfile)
--	[`21.1.1-alpine`, `21.1-alpine`, `21-alpine`, `alpine` (*21/alpine/Dockerfile*)](https://github.com/erlang/docker-erlang-otp/blob/de48e7c91b8a293770c6fcccdd30d2329fcc0414/21/alpine/Dockerfile)
--	[`20.3.8.13`, `20.3.8`, `20.3`, `20` (*20/Dockerfile*)](https://github.com/erlang/docker-erlang-otp/blob/d299e24c934b01a46af119ca2b139eb4dc648237/20/Dockerfile)
--	[`20.3.8.13-slim`, `20.3.8-slim`, `20.3-slim`, `20-slim` (*20/slim/Dockerfile*)](https://github.com/erlang/docker-erlang-otp/blob/d299e24c934b01a46af119ca2b139eb4dc648237/20/slim/Dockerfile)
--	[`20.3.8.13-alpine`, `20.3.8-alpine`, `20.3-alpine`, `20-alpine` (*20/alpine/Dockerfile*)](https://github.com/erlang/docker-erlang-otp/blob/d299e24c934b01a46af119ca2b139eb4dc648237/20/alpine/Dockerfile)
--	[`19.3.6.12`, `19.3.6`, `19.3`, `19` (*19/Dockerfile*)](https://github.com/erlang/docker-erlang-otp/blob/dc54fb8d1737f493748176df10c4af1b42e1e7b5/19/Dockerfile)
--	[`19.3.6.12-slim`, `19.3.6-slim`, `19.3-slim`, `19-slim` (*19/slim/Dockerfile*)](https://github.com/erlang/docker-erlang-otp/blob/dc54fb8d1737f493748176df10c4af1b42e1e7b5/19/slim/Dockerfile)
--	[`18.3.4.10`, `18.3.4`, `18.3`, `18` (*18/Dockerfile*)](https://github.com/erlang/docker-erlang-otp/blob/4fe4caa8ebd01748b50bac745f5e96d872e1db4c/18/Dockerfile)
--	[`18.3.4.10-slim`, `18.3.4-slim`, `18.3-slim`, `18-slim` (*18/slim/Dockerfile*)](https://github.com/erlang/docker-erlang-otp/blob/4fe4caa8ebd01748b50bac745f5e96d872e1db4c/18/slim/Dockerfile)
--	[`17.5.6.9`, `17.5.6`, `17.5`, `17` (*17/Dockerfile*)](https://github.com/erlang/docker-erlang-otp/blob/a75738f344af1f177f828cbaa6e8a44d15749d5a/17/Dockerfile)
--	[`17.5.6.9-slim`, `17.5.6-slim`, `17.5-slim`, `17-slim` (*17/slim/Dockerfile*)](https://github.com/erlang/docker-erlang-otp/blob/a75738f344af1f177f828cbaa6e8a44d15749d5a/17/slim/Dockerfile)
+-	[`21.1.2`, `21.1`, `21`, `latest` (*21/Dockerfile*)](https://github.com/erlang/docker-erlang-otp/blob/7e059488ae8eaaffd3a98ee1816796f445a19721/21/Dockerfile)
+-	[`21.1.2-slim`, `21.1-slim`, `21-slim`, `slim` (*21/slim/Dockerfile*)](https://github.com/erlang/docker-erlang-otp/blob/7e059488ae8eaaffd3a98ee1816796f445a19721/21/slim/Dockerfile)
+-	[`21.1.2-alpine`, `21.1-alpine`, `21-alpine`, `alpine` (*21/alpine/Dockerfile*)](https://github.com/erlang/docker-erlang-otp/blob/7e059488ae8eaaffd3a98ee1816796f445a19721/21/alpine/Dockerfile)
+-	[`20.3.8.14`, `20.3.8`, `20.3`, `20` (*20/Dockerfile*)](https://github.com/erlang/docker-erlang-otp/blob/1ab28c7de349f59cdf03ad3303d50eee0a039c1f/20/Dockerfile)
+-	[`20.3.8.14-slim`, `20.3.8-slim`, `20.3-slim`, `20-slim` (*20/slim/Dockerfile*)](https://github.com/erlang/docker-erlang-otp/blob/1ab28c7de349f59cdf03ad3303d50eee0a039c1f/20/slim/Dockerfile)
+-	[`20.3.8.14-alpine`, `20.3.8-alpine`, `20.3-alpine`, `20-alpine` (*20/alpine/Dockerfile*)](https://github.com/erlang/docker-erlang-otp/blob/1ab28c7de349f59cdf03ad3303d50eee0a039c1f/20/alpine/Dockerfile)
+-	[`19.3.6.12`, `19.3.6`, `19.3`, `19` (*19/Dockerfile*)](https://github.com/erlang/docker-erlang-otp/blob/ba81527544daf50d27a85b1a6001cc541b742089/19/Dockerfile)
+-	[`19.3.6.12-slim`, `19.3.6-slim`, `19.3-slim`, `19-slim` (*19/slim/Dockerfile*)](https://github.com/erlang/docker-erlang-otp/blob/ba81527544daf50d27a85b1a6001cc541b742089/19/slim/Dockerfile)
+-	[`18.3.4.11`, `18.3.4`, `18.3`, `18` (*18/Dockerfile*)](https://github.com/erlang/docker-erlang-otp/blob/06d4d38a4fc360a8718d78d163e36d6777cd2528/18/Dockerfile)
+-	[`18.3.4.11-slim`, `18.3.4-slim`, `18.3-slim`, `18-slim` (*18/slim/Dockerfile*)](https://github.com/erlang/docker-erlang-otp/blob/06d4d38a4fc360a8718d78d163e36d6777cd2528/18/slim/Dockerfile)
 
 # Quick reference
 
