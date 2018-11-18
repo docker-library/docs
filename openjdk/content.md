@@ -43,11 +43,12 @@ This will add your current directory as a volume to the container, set the worki
 
 On startup JVM tries to detect the number of available CPU cores and the amount of RAM to adjust its internal parameters (like the number of garbage collector threads to spawn) accordingly. When container is run with limited CPU/RAM, standard system API, used by JVM for probing, will return host-wide values. This can cause excessive CPU usage and memory allocation errors with older versions of JVM.
 
-Inside Linux containers, recent versions of OpenJDK 8 can correctly detect container-limited number of CPU cores by default. To enable the detection of container-limited amount of RAM the following options can be used:
+Inside Linux containers, OpenJDK versions 8 and later can correctly detect container-limited number of CPU cores and available RAM. In OpenJDK 11 this is turned on by default. In versions 8, 9, and 10 you have to enable the detection of container-limited amount of RAM using following the following options:
 
 ```console
 $ java -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap ...
 ```
+
 
 Inside Windows Server (non-Hyper-V) containers, limit for number of available CPU cores does not work (is ignored by Host Compute Service). To set such limit manually, JVM can be started the following way:
 
