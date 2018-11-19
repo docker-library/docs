@@ -49,7 +49,6 @@ Inside Linux containers, OpenJDK versions 8 and later can correctly detect conta
 $ java -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap ...
 ```
 
-
 Inside Windows Server (non-Hyper-V) containers, limit for number of available CPU cores does not work (is ignored by Host Compute Service). To set such limit manually, JVM can be started the following way:
 
 ```console
