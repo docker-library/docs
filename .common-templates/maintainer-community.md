@@ -1,1 +1,1 @@
-[the Elastic Team](%%GITHUB-REPO%%)
+[the Docker Community](%%GITHUB-REPO%%)
