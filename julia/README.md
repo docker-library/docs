@@ -48,7 +48,7 @@ WARNING:
 	[https://github.com/docker-library/julia/issues](https://github.com/docker-library/julia/issues)
 
 -	**Maintained by**:  
-	[the Elastic Team](https://github.com/docker-library/julia)
+	[the Docker Community](https://github.com/docker-library/julia)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/julia/), [`i386`](https://hub.docker.com/r/i386/julia/), [`windows-amd64`](https://hub.docker.com/r/winamd64/julia/)

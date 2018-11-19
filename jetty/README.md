@@ -32,7 +32,7 @@ WARNING:
 	[https://github.com/appropriate/docker-jetty/issues](https://github.com/appropriate/docker-jetty/issues)
 
 -	**Maintained by**:  
-	[the Elastic Team](https://github.com/appropriate/docker-jetty)
+	[the Docker Community](https://github.com/appropriate/docker-jetty)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/jetty/), [`arm32v5`](https://hub.docker.com/r/arm32v5/jetty/), [`arm32v6`](https://hub.docker.com/r/arm32v6/jetty/), [`arm32v7`](https://hub.docker.com/r/arm32v7/jetty/), [`arm64v8`](https://hub.docker.com/r/arm64v8/jetty/), [`i386`](https://hub.docker.com/r/i386/jetty/), [`ppc64le`](https://hub.docker.com/r/ppc64le/jetty/), [`s390x`](https://hub.docker.com/r/s390x/jetty/)

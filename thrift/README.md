@@ -29,7 +29,7 @@ WARNING:
 	[https://github.com/ahawkins/docker-thrift/issues](https://github.com/ahawkins/docker-thrift/issues)
 
 -	**Maintained by**:  
-	[the Elastic Team](https://github.com/ahawkins/docker-thrift)
+	[the Docker Community](https://github.com/ahawkins/docker-thrift)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/thrift/)

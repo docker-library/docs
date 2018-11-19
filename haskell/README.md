@@ -28,7 +28,7 @@ WARNING:
 	[https://github.com/freebroccolo/docker-haskell/issues](https://github.com/freebroccolo/docker-haskell/issues)
 
 -	**Maintained by**:  
-	[the Elastic Team](https://github.com/freebroccolo/docker-haskell)
+	[the Docker Community](https://github.com/freebroccolo/docker-haskell)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/haskell/)

@@ -34,7 +34,7 @@ WARNING:
 	[https://github.com/Quantisan/docker-clojure/issues](https://github.com/Quantisan/docker-clojure/issues)
 
 -	**Maintained by**:  
-	[the Elastic Team](https://github.com/Quantisan/docker-clojure)
+	[the Docker Community](https://github.com/Quantisan/docker-clojure)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/clojure/), [`arm32v5`](https://hub.docker.com/r/arm32v5/clojure/), [`arm32v7`](https://hub.docker.com/r/arm32v7/clojure/), [`arm64v8`](https://hub.docker.com/r/arm64v8/clojure/), [`i386`](https://hub.docker.com/r/i386/clojure/), [`ppc64le`](https://hub.docker.com/r/ppc64le/clojure/), [`s390x`](https://hub.docker.com/r/s390x/clojure/)
@@ -63,9 +63,28 @@ Clojure is a dialect of the Lisp programming language. It is a general-purpose p
 
 # How to use this image
 
-## Start a Lein/Clojure instance in your app
+## Build tools
 
-Since the most common way to use Clojure is in conjunction with [Leiningen (`lein`)](http://leiningen.org/), this image assumes that's how you'll be working. The most straightforward way to use this image is to add a `Dockerfile` to an existing Leiningen/Clojure project:
+Clojure has three major approaches to building and running projects:
+
+1.	[leiningen](https://leiningen.org)
+	1.	The oldest and probably most common tool
+2.	[boot](http://boot-clj.com)
+	1.	An alternative approach that solves similar problems as leiningen
+3.	[tools-deps](https://clojure.org/guides/deps_and_cli)
+	1.	A more recent official tool for some of the lein/boot use cases
+
+There are variants of this image for all three of these tools and their respective releases. The most basic form of these tags is:
+
+1.	`clojure:lein`
+2.	`clojure:boot`
+3.	`clojure:tools-deps`
+
+But you can also append a hyphen and the version of that tool you'd like to use. For example, for lein 2.8.1 you can use this image: `clojure:lein-2.8.1`.
+
+## Run your app with leiningen
+
+Add a `Dockerfile` to an existing Leiningen/Clojure project with the following contents:
 
 ```dockerfile
 FROM clojure
@@ -107,6 +126,10 @@ $ docker run -it --rm -v "$PWD":/usr/src/app -w /usr/src/app clojure lein uberja
 ```
 
 This will build your project into a jar file located in your project's `target/uberjar` directory.
+
+## More details
+
+See [the official image README](https://github.com/Quantisan/docker-clojure/blob/master/README.md) for more details about using this image with boot and tools-deps.
 
 # Image Variants
 

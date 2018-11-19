@@ -32,7 +32,7 @@ WARNING:
 	[https://github.com/docker-library/redis/issues](https://github.com/docker-library/redis/issues)
 
 -	**Maintained by**:  
-	[the Elastic Team](https://github.com/docker-library/redis)
+	[the Docker Community](https://github.com/docker-library/redis)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/redis/), [`arm32v5`](https://hub.docker.com/r/arm32v5/redis/), [`arm32v6`](https://hub.docker.com/r/arm32v6/redis/), [`arm32v7`](https://hub.docker.com/r/arm32v7/redis/), [`arm64v8`](https://hub.docker.com/r/arm64v8/redis/), [`i386`](https://hub.docker.com/r/i386/redis/), [`ppc64le`](https://hub.docker.com/r/ppc64le/redis/), [`s390x`](https://hub.docker.com/r/s390x/redis/)

@@ -34,7 +34,7 @@ WARNING:
 	[https://github.com/docker-library/rabbitmq/issues](https://github.com/docker-library/rabbitmq/issues)
 
 -	**Maintained by**:  
-	[the Elastic Team](https://github.com/docker-library/rabbitmq)
+	[the Docker Community](https://github.com/docker-library/rabbitmq)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/rabbitmq/), [`arm32v5`](https://hub.docker.com/r/arm32v5/rabbitmq/), [`arm32v6`](https://hub.docker.com/r/arm32v6/rabbitmq/), [`arm32v7`](https://hub.docker.com/r/arm32v7/rabbitmq/), [`arm64v8`](https://hub.docker.com/r/arm64v8/rabbitmq/), [`i386`](https://hub.docker.com/r/i386/rabbitmq/), [`ppc64le`](https://hub.docker.com/r/ppc64le/rabbitmq/), [`s390x`](https://hub.docker.com/r/s390x/rabbitmq/)

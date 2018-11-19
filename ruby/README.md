@@ -46,7 +46,7 @@ WARNING:
 	[https://github.com/docker-library/ruby/issues](https://github.com/docker-library/ruby/issues)
 
 -	**Maintained by**:  
-	[the Elastic Team](https://github.com/docker-library/ruby)
+	[the Docker Community](https://github.com/docker-library/ruby)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/ruby/), [`arm32v5`](https://hub.docker.com/r/arm32v5/ruby/), [`arm32v6`](https://hub.docker.com/r/arm32v6/ruby/), [`arm32v7`](https://hub.docker.com/r/arm32v7/ruby/), [`arm64v8`](https://hub.docker.com/r/arm64v8/ruby/), [`i386`](https://hub.docker.com/r/i386/ruby/), [`ppc64le`](https://hub.docker.com/r/ppc64le/ruby/), [`s390x`](https://hub.docker.com/r/s390x/ruby/)

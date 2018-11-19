@@ -79,13 +79,13 @@ You have to make sure that **all** the artifacts you are copying into the image 
 
 You have a few options for doing this: before copying the file, during copy, or after copy.
 
-### Updating permissions before coyping
+### Updating permissions before copying
 
 Since the ownership of the file will change to `root:0`, you can simply set the permissions for the owner's group to be able to read/execute the artifact (i.e. the middle digit of a `chmod` command). For example, you can do `chmod g+rx server.xml` to ensure your `server.xml` can be `read` and `executed` by group `0`, as well as any artifacts such as the application's `EAR` or `WAR` file, JDBC driver, or other files that are placed on the image via `COPY` or `ADD`.
 
 ### Updating permissions during copy
 
-If you're using Docker v17.09.0-ce and newer you can take advantage of the flag `--chown=<user>:<group>` during either `ADD` or `COPY`. For example: `COPY --chown=1001:0 jvm.options /config/jvm.options`
+If you're using Docker v17.09.0-ce and newer you can take advantage of the flag `--chown=<user>:<group>` during either `ADD` or `COPY`. For example: `COPY --chown=1001:0 jvm.options /config/jvm.options`. This is the preferred approach as you don't need to worry about changing permissions before calling `docker build` and you also do not duplicate layers in the resulting image.
 
 ### Updating permissions after copy
 
