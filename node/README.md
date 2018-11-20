@@ -34,7 +34,7 @@ WARNING:
 -	[`10.13.0-slim`, `10.13-slim`, `10-slim`, `dubnium-slim` (*10/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/336fb229392876a5f0d893436aeccf8c80011eeb/10/slim/Dockerfile)
 -	[`10.13.0-stretch`, `10.13-stretch`, `10-stretch`, `dubnium-stretch` (*10/stretch/Dockerfile*)](https://github.com/nodejs/docker-node/blob/336fb229392876a5f0d893436aeccf8c80011eeb/10/stretch/Dockerfile)
 -	[`chakracore-8.11.1`, `chakracore-8.11`, `chakracore-8` (*chakracore/8/Dockerfile*)](https://github.com/nodejs/docker-node/blob/947280600648b70e067d35415d6812fd03127def/chakracore/8/Dockerfile)
--	[`chakracore-10.6.0`, `chakracore-10.6`, `chakracore-10`, `chakracore` (*chakracore/10/Dockerfile*)](https://github.com/nodejs/docker-node/blob/ea61a26000dbc3b90708f4f024614dc41c94346e/chakracore/10/Dockerfile)
+-	[`chakracore-10.13.0`, `chakracore-10.13`, `chakracore-10`, `chakracore` (*chakracore/10/Dockerfile*)](https://github.com/nodejs/docker-node/blob/69c8a5f448f46f9e34d7fb577eca79ba01f6864d/chakracore/10/Dockerfile)
 
 # Quick reference
 
