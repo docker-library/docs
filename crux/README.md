@@ -14,15 +14,10 @@ WARNING:
 
 -->
 
-# **DEPRECATION NOTICE**
-
-This image is deprecated due to maintainer inactivity (last updated Aug 2015; [docker-library/official-images#1012](https://github.com/docker-library/official-images/pull/1012)).
-
-If a representative of the CRUX community would like to step up and continue maintenance, [the contribution guidelines](https://github.com/docker-library/official-images/blob/master/README.md#contributing-to-the-standard-library) are the best place to start.
-
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `3.1` (*Dockerfile*)](https://github.com/prologic/docker-crux/blob/c614d61c53c05c02a43a34187fa1370db2c61524/Dockerfile)
+-	[`3.4`, `latest` (*Dockerfile*)](https://github.com/cruxlinux/docker-crux/blob/da081a9004c5559cd77a1e2c2521193ccb2afdd2/Dockerfile)
+-	[`3.2` (*Dockerfile*)](https://github.com/cruxlinux/docker-crux/blob/07e966125ba3d6d48a12489830917e8a9bc983a7/Dockerfile)
 
 # Quick reference
 
@@ -33,10 +28,10 @@ If a representative of the CRUX community would like to step up and continue mai
 	[https://github.com/therealprologic/docker-crux/issues](https://github.com/therealprologic/docker-crux/issues)
 
 -	**Maintained by**:  
-	currently unmainainted (see deprecation notice)
+	[Docker Crux](https://github.com/cruxlinux/docker-crux)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/crux/)
+	[`amd64`](https://hub.docker.com/r/amd64/crux/), [`arm64v8`](https://hub.docker.com/r/arm64v8/crux/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/crux/` directory](https://github.com/docker-library/repo-info/blob/master/repos/crux) ([history](https://github.com/docker-library/repo-info/commits/master/repos/crux))  
