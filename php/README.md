@@ -102,10 +102,6 @@ PHP is a server-side scripting language designed for web development, but which 
 
 # How to use this image
 
-## With Command Line
-
-For PHP projects run through the command line interface (CLI), you can do the following.
-
 ### Create a `Dockerfile` in your PHP project
 
 ```dockerfile
@@ -130,49 +126,6 @@ For many simple, single file projects, you may find it inconvenient to write a c
 $ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp php:7.2-cli php your-script.php
 ```
 
-Note that all variants of the `php` image contain the PHP cli.
-
-## With Apache
-
-More commonly, you will probably want to run PHP in conjunction with Apache httpd. Conveniently, there's a version of the PHP container that's packaged with the Apache web server.
-
-### Create a `Dockerfile` in your PHP project
-
-```dockerfile
-FROM php:7.2-apache
-COPY src/ /var/www/html/
-```
-
-Where `src/` is the directory containing all your PHP code. Then, run the commands to build and run the Docker image:
-
-```console
-$ docker build -t my-php-app .
-$ docker run -d --name my-running-app my-php-app
-```
-
-We recommend that you add a `php.ini` configuration file, see the "Configuration" section for details.
-
-### Without a `Dockerfile`
-
-If you don't want to include a `Dockerfile` in your project, it is sufficient to do the following:
-
-```console
-$ docker run -d -p 80:80 --name my-apache-php-app -v "$PWD":/var/www/html php:7.2-apache
-```
-
-### Changing `DocumentRoot`
-
-Some applications may wish to change the default `DocumentRoot` in Apache (away from `/var/www/html`). The following demonstrates one way to do so using an environment variable (which can then be modified at container runtime as well):
-
-```dockerfile
-FROM php:7.1-apache
-
-ENV APACHE_DOCUMENT_ROOT /path/to/new/root
-
-RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf
-RUN sed -ri -e 's!/var/www/!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/apache2.conf /etc/apache2/conf-available/*.conf
-```
-
 ## How to install more PHP extensions
 
 Many extensions are already compiled into the image, so it's worth checking the output of `php -m` or `php -i` before going through the effort of compiling more.
@@ -182,7 +135,7 @@ We provide the helper scripts `docker-php-ext-configure`, `docker-php-ext-instal
 In order to keep the images smaller, PHP's source is kept in a compressed tar file. To facilitate linking of PHP's source with any extension, we also provide the helper script `docker-php-source` to easily extract the tar or delete the extracted source. Note: if you do use `docker-php-source` to extract the source, be sure to delete it in the same layer of the docker image.
 
 ```Dockerfile
-FROM php:7.2-apache
+FROM php:7.2-cli
 RUN docker-php-source extract \
 	# do important things \
 	&& docker-php-source delete
@@ -212,14 +165,14 @@ See ["Dockerizing Compiled Software"](https://tianon.xyz/post/2017/12/26/dockeri
 Some extensions are not provided with the PHP source, but are instead available through [PECL](https://pecl.php.net/). To install a PECL extension, use `pecl install` to download and compile it, then use `docker-php-ext-enable` to enable it:
 
 ```dockerfile
-FROM php:7.2-fpm
+FROM php:7.2-cli
 RUN pecl install redis-4.0.1 \
 	&& pecl install xdebug-2.6.0 \
 	&& docker-php-ext-enable redis xdebug
 ```
 
 ```dockerfile
-FROM php:5.6-fpm
+FROM php:5.6-cli
 RUN apt-get update && apt-get install -y libmemcached-dev zlib1g-dev \
 	&& pecl install memcached-2.2.0 \
 	&& docker-php-ext-enable memcached
@@ -231,16 +184,14 @@ For example, `memcached-2.2.0` has no PHP version constraints (https://pecl.php.
 
 Beyond the compatibility issue, it's also a good practice to ensure you know when your dependencies receive updates and can control those updates directly.
 
-Unlike PHP core extensions, PECL extensions should be installed in series to fail properly if something went wrong. Otherwise errors are just skipped by PECL.
-
-For example, `pecl install memcached-2.2.0 && pecl install redis-2.2.8` instead of `pecl install memcached-2.2.0 redis-2.2.8`. However, `docker-php-ext-enable memcached redis` is fine to be all in one command.
+Unlike PHP core extensions, PECL extensions should be installed in series to fail properly if something went wrong. Otherwise errors are just skipped by PECL. For example, `pecl install memcached-2.2.0 && pecl install redis-2.2.8` instead of `pecl install memcached-2.2.0 redis-2.2.8`. However, `docker-php-ext-enable memcached redis` is fine to be all in one command.
 
 ### Other extensions
 
 Some extensions are not provided via either Core or PECL; these can be installed too, although the process is less automated:
 
 ```dockerfile
-FROM php:5.6-apache
+FROM php:5.6-cli
 RUN curl -fsSL 'https://xcache.lighttpd.net/pub/Releases/3.2.0/xcache-3.2.0.tar.gz' -o xcache.tar.gz \
 	&& mkdir -p xcache \
 	&& tar -xf xcache.tar.gz -C xcache --strip-components=1 \
@@ -249,7 +200,7 @@ RUN curl -fsSL 'https://xcache.lighttpd.net/pub/Releases/3.2.0/xcache-3.2.0.tar.
 		cd xcache \
 		&& phpize \
 		&& ./configure --enable-xcache \
-		&& make -j$(nproc) \
+		&& make -j "$(nproc)" \
 		&& make install \
 	) \
 	&& rm -r xcache \
@@ -259,7 +210,7 @@ RUN curl -fsSL 'https://xcache.lighttpd.net/pub/Releases/3.2.0/xcache-3.2.0.tar.
 The `docker-php-ext-*` scripts *can* accept an arbitrary path, but it must be absolute (to disambiguate from built-in extension names), so the above example could also be written as the following:
 
 ```dockerfile
-FROM php:5.6-apache
+FROM php:5.6-cli
 RUN curl -fsSL 'https://xcache.lighttpd.net/pub/Releases/3.2.0/xcache-3.2.0.tar.gz' -o xcache.tar.gz \
 	&& mkdir -p /tmp/xcache \
 	&& tar -xf xcache.tar.gz -C /tmp/xcache --strip-components=1 \
@@ -271,13 +222,13 @@ RUN curl -fsSL 'https://xcache.lighttpd.net/pub/Releases/3.2.0/xcache-3.2.0.tar.
 
 ## Running as an arbitrary user
 
-For running the FPM variants as an arbitrary user, the `--user` flag to `docker run` should be used (which can accept both a username/group in the container's `/etc/passwd` file like `--user daemon` or a specific UID/GID like `--user 1000:1000`).
-
 For running the Apache variants as an arbitrary user, there are several choices:
 
 -	If your kernel [is version 4.11 or newer](https://github.com/moby/moby/issues/8460#issuecomment-312459310), you can add `--sysctl net.ipv4.ip_unprivileged_port_start=0` and then `--user` should work as it does for FPM.
 -	If you adjust the Apache configuration to use an "unprivileged" port (greater than 1024 by default), then `--user` should work as it does for FPM regardless of kernel version.
 -	Otherwise, setting `APACHE_RUN_USER` and/or `APACHE_RUN_GROUP` should have the desired effect (for example, `-e APACHE_RUN_USER=daemon` or `-e APACHE_RUN_USER=#1000` -- see [the Apache `User` directive documentation for details on the expected syntax](https://httpd.apache.org/docs/2.4/mod/mod_unixd.html#user)).
+
+For running the FPM variants as an arbitrary user, the `--user` flag to `docker run` should be used (which can accept both a username/group in the container's `/etc/passwd` file like `--user daemon` or a specific UID/GID like `--user 1000:1000`).
 
 ## "`E: Package 'php-XXX' has no installation candidate`"
 
@@ -305,23 +256,80 @@ The default config can be customized by copying configuration files into the `$P
 FROM php:7.2-fpm-alpine
 
 # Use the default production configuration
-RUN mv $PHP_INI_DIR/php.ini-production $PHP_INI_DIR/php.ini
+RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
 
 # Override with custom opcache settings
 COPY config/opcache.ini $PHP_INI_DIR/conf.d/
 ```
 
-Where `config/` contains your custom configuration files.
-
 # Image Variants
 
 The `php` images come in many flavors, each designed for a specific use case.
 
-## `php:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
 Some of these tags may have names like jessie or stretch in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on.
+
+## `php:<version>-cli`
+
+This variant contains the [PHP CLI](https://secure.php.net/manual/en/features.commandline.php) tool with default mods. If you need a web server, this is probably not the image you are looking for. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as a base from which to build other images.
+
+It also is the only variant which contains the (not recommended) `php-cgi` binary, which is likely necessary for some things like [PPM](https://github.com/php-pm/php-pm).
+
+Note that *all* variants of `php` contain the PHP CLI (`/usr/local/bin/php`).
+
+## `php:<version>-apache`
+
+This image contains Debian's Apache httpd in conjunction with PHP (as `mod_php`) and uses `mpm_prefork` by default.
+
+### Apache with a `Dockerfile`
+
+```dockerfile
+FROM php:7.2-apache
+COPY src/ /var/www/html/
+```
+
+Where `src/` is the directory containing all your PHP code. Then, run the commands to build and run the Docker image:
+
+```console
+$ docker build -t my-php-app .
+$ docker run -d --name my-running-app my-php-app
+```
+
+We recommend that you add a `php.ini` configuration file; see the "Configuration" section for details.
+
+### Apache without a `Dockerfile`
+
+```console
+$ docker run -d -p 80:80 --name my-apache-php-app -v "$PWD":/var/www/html php:7.2-apache
+```
+
+### Changing `DocumentRoot` (or other Apache configuration)
+
+Some applications may wish to change the default `DocumentRoot` in Apache (away from `/var/www/html`). The following demonstrates one way to do so using an environment variable (which can then be modified at container runtime as well):
+
+```dockerfile
+FROM php:7.1-apache
+
+ENV APACHE_DOCUMENT_ROOT /path/to/new/root
+
+RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf
+RUN sed -ri -e 's!/var/www/!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/apache2.conf /etc/apache2/conf-available/*.conf
+```
+
+A similar technique could be employed for other Apache configuration options.
+
+## `php:<version>-fpm`
+
+This variant contains PHP-FPM, which is a FastCGI implementation for PHP. See [the PHP-FPM website](https://php-fpm.org/) for more information about PHP-FPM.
+
+In order to use this image variant, some kind of reverse proxy (such as NGINX, Apache, or other tool which speaks the FastCGI protocol) will be required.
+
+Some potentially helpful resources:
+
+-	[PHP-FPM.org](https://php-fpm.org/)
+-	[simplified example by @md5](https://gist.github.com/md5/d9206eacb5a0ff5d6be0)
+-	[very detailed article by Pascal Landau](https://www.pascallandau.com/blog/php-php-fpm-and-nginx-on-docker-in-windows-10/)
+-	[Stack Overflow discussion](https://stackoverflow.com/q/29905953/433558)
+-	[Apache httpd Wiki example](https://wiki.apache.org/httpd/PHPFPMWordpress)
 
 ## `php:<version>-alpine`
 
