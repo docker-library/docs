@@ -1,6 +1,6 @@
-# Percona Server
+# Percona Server for MySQL
 
-Percona Server is a fork of the MySQL relational database management system created by Percona.
+Percona Server for MySQL is a fork of the MySQL relational database management system created by Percona.
 
 It aims to retain close compatibility to the official MySQL releases, while focusing on performance and increased visibility into server operations. Also included in Percona Server is XtraDB, Percona's fork of the InnoDB Storage Engine.
 
@@ -12,7 +12,7 @@ It aims to retain close compatibility to the official MySQL releases, while focu
 
 ## Start a `%%IMAGE%%` server instance
 
-Starting a Percona instance is simple:
+Starting a Percona Server for MySQL instance is simple:
 
 ```console
 $ docker run --name some-%%REPO%% -e MYSQL_ROOT_PASSWORD=my-secret-pw -d %%IMAGE%%:tag
@@ -22,7 +22,7 @@ $ docker run --name some-%%REPO%% -e MYSQL_ROOT_PASSWORD=my-secret-pw -d %%IMAGE
 
 ## Connect to MySQL from an application in another Docker container
 
-Since Percona is intended as a drop-in replacement for MySQL, it can be used with many applications.
+Since Percona Server for MySQL is intended as a drop-in replacement for MySQL, it can be used with many applications.
 
 This image exposes the standard MySQL port (3306), so container linking makes the MySQL instance available to other application containers. Start your application container like this in order to link it to the MySQL container:
 
@@ -30,7 +30,7 @@ This image exposes the standard MySQL port (3306), so container linking makes th
 $ docker run --name some-app --link some-%%REPO%%:mysql -d application-that-uses-mysql
 ```
 
-## Connect to Percona from the MySQL command line client
+## Connect to Percona Server for MySQL from the command line client
 
 The following command starts another `%%IMAGE%%` container instance and runs the `mysql` command line client against your original `%%IMAGE%%` container, allowing you to execute SQL statements against your database instance:
 
@@ -40,7 +40,7 @@ $ docker run -it --link some-%%REPO%%:mysql --rm %%IMAGE%% sh -c 'exec mysql -h"
 
 ... where `some-%%REPO%%` is the name of your original `%%IMAGE%%` container.
 
-This image can also be used as a client for non-Docker or remote Percona instances:
+This image can also be used as a client for non-Docker or remote instances:
 
 ```console
 $ docker run -it --rm %%IMAGE%% mysql -hsome.mysql.host -usome-mysql-user -p
@@ -60,7 +60,7 @@ The `docker exec` command allows you to run commands inside a Docker container. 
 $ docker exec -it some-%%REPO%% bash
 ```
 
-The Percona Server log is available through Docker's container log:
+The log is available through Docker's container log:
 
 ```console
 $ docker logs some-%%REPO%%
@@ -68,7 +68,7 @@ $ docker logs some-%%REPO%%
 
 ## Using a custom MySQL configuration file
 
-The Percona startup configuration is specified in the file `/etc/mysql/my.cnf`, and that file in turn includes any files found in the `/etc/mysql/conf.d` directory that end with `.cnf`. Settings in files in this directory will augment and/or override settings in `/etc/mysql/my.cnf`. If you want to use a customized MySQL configuration, you can create your alternative configuration file in a directory on the host machine and then mount that directory location as `/etc/mysql/conf.d` inside the `%%IMAGE%%` container.
+The startup configuration is specified in the file `/etc/my.cnf`, and that file in turn includes any files found in the `/etc/my.cnf.d` directory that end with `.cnf`. Settings in files in this directory will augment and/or override settings in `/etc/my.cnf`. If you want to use a customized MySQL configuration, you can create your alternative configuration file in a directory on the host machine and then mount that directory location as `/etc/my.cnf.d` inside the `%%IMAGE%%` container.
 
 If `/my/custom/config-file.cnf` is the path and name of your custom configuration file, you can start your `%%IMAGE%%` container like this (note that only the directory path of the custom config file is used in this command):
 
@@ -76,7 +76,7 @@ If `/my/custom/config-file.cnf` is the path and name of your custom configuratio
 $ docker run --name some-%%REPO%% -v /my/custom:/etc/mysql/conf.d -e MYSQL_ROOT_PASSWORD=my-secret-pw -d %%IMAGE%%:tag
 ```
 
-This will start a new container `some-%%REPO%%` where the Percona instance uses the combined startup settings from `/etc/mysql/my.cnf` and `/etc/mysql/conf.d/config-file.cnf`, with settings from the latter taking precedence.
+This will start a new container `some-%%REPO%%` where the Percona Server for MySQL instance uses the combined startup settings from `/etc/my.cnf` and `/etc/my.cnf.d/config-file.cnf`, with settings from the latter taking precedence.
 
 ### Configuration without a `cnf` file
 
@@ -94,11 +94,15 @@ $ docker run -it --rm %%IMAGE%%:tag --verbose --help
 
 ## Environment Variables
 
-When you start the `%%IMAGE%%` image, you can adjust the configuration of the Percona instance by passing one or more environment variables on the `docker run` command line. Do note that none of the variables below will have any effect if you start the container with a data directory that already contains a database: any pre-existing database will always be left untouched on container startup.
+When you start the `%%IMAGE%%` image, you can adjust the configuration of the instance by passing one or more environment variables on the `docker run` command line. Do note that none of the variables below will have any effect if you start the container with a data directory that already contains a database: any pre-existing database will always be left untouched on container startup.
 
 ### `MYSQL_ROOT_PASSWORD`
 
-This variable is mandatory and specifies the password that will be set for the Percona `root` superuser account. In the above example, it was set to `my-secret-pw`.
+This variable is mandatory and specifies the password that will be set for the `root` superuser account. In the above example, it was set to `my-secret-pw`.
+
+### `MYSQL_ROOT_HOST`
+
+By default, `root` can connect from anywhere. This option restricts root connections to be from the specified host only. Also `localhost` can be used here for the local-only root access.
 
 ### `MYSQL_DATABASE`
 
@@ -112,7 +116,7 @@ Do note that there is no need to use this mechanism to create the root superuser
 
 ### `MYSQL_ALLOW_EMPTY_PASSWORD`
 
-This is an optional variable. Set to `yes` to allow the container to be started with a blank password for the root user. *NOTE*: Setting this variable to `yes` is not recommended unless you really know what you are doing, since this will leave your Percona instance completely unprotected, allowing anyone to gain complete superuser access.
+This is an optional variable. Set to `yes` to allow the container to be started with a blank password for the root user. *NOTE*: Setting this variable to `yes` is not recommended unless you really know what you are doing, since this will leave your instance completely unprotected, allowing anyone to gain complete superuser access.
 
 ### `MYSQL_RANDOM_ROOT_PASSWORD`
 
@@ -121,6 +125,18 @@ This is an optional variable. Set to `yes` to generate a random initial password
 ### `MYSQL_ONETIME_PASSWORD`
 
 Sets root (*not* the user specified in `MYSQL_USER`!) user as expired once init is complete, forcing a password change on first login. *NOTE*: This feature is supported on MySQL 5.6+ only. Using this option on MySQL 5.5 will throw an appropriate error during initialization.
+
+### `MYSQL_INITDB_SKIP_TZINFO`
+
+At first run MySQL automatically loads from the local system the timezone information needed for the `CONVERT_TZ()` function. If it's is not what is intended, this option disables timezone loading.
+
+### `INIT_TOKUDB`
+
+Tuns on TokuDB Engine. It can be activated only when *transparent huge pages* (THP) are disabled.
+
+### `INIT_ROCKSDB`
+
+Tuns on RocksDB Engine.
 
 ## Docker Secrets
 
@@ -159,6 +175,8 @@ The `-v /my/own/datadir:/var/lib/mysql` part of the command mounts the `/my/own/
 ## No connections until MySQL init completes
 
 If there is no database initialized when the container starts, then a default database will be created. While this is the expected behavior, this means that it will not accept incoming connections until such initialization completes. This may cause issues when using automation tools, such as `docker-compose`, which start several containers simultaneously.
+
+If the application you're trying to connect to MySQL does not handle MySQL downtime or waiting for MySQL to start gracefully, then a putting a connect-retry loop before the service starts might be necessary. For an example of such an implementation in the official images, see [WordPress](https://github.com/docker-library/wordpress/blob/1b48b4bccd7adb0f7ea1431c7b470a40e186f3da/docker-entrypoint.sh#L195-L235) or [Bonita](https://github.com/docker-library/docs/blob/9660a0cccb87d8db842f33bc0578d769caaf3ba9/bonita/stack.yml#L28-L44).
 
 ## Usage against an existing database
 
