@@ -18,7 +18,7 @@ WARNING:
 
 -	[`8.0.12-2rc1-centos`, `8.0-centos`, `8-centos`, `8.0.12-2rc1`, `8.0`, `8` (*percona-server.80/Dockerfile*)](https://github.com/percona/percona-docker/blob/9f4a229bf338497d47b7216929a53f715fdade17/percona-server.80/Dockerfile)
 -	[`5.7.23-centos`, `5.7-centos`, `5-centos`, `centos`, `5.7.23`, `5.7`, `5`, `latest` (*percona-server.57/Dockerfile-dockerhub*)](https://github.com/percona/percona-docker/blob/9f4a229bf338497d47b7216929a53f715fdade17/percona-server.57/Dockerfile-dockerhub)
--	[`5.6.41-centos`, `5.6-centos`, `5.6.41`, `5.6` (*percona-server.56/Dockerfile-dockerhub*)](https://github.com/percona/percona-docker/blob/9f4a229bf338497d47b7216929a53f715fdade17/percona-server.56/Dockerfile-dockerhub)
+-	[`5.6.41-centos`, `5.6-centos`, `5.6.41`, `5.6` (*percona-server.56/Dockerfile-dockerhub*)](https://github.com/percona/percona-docker/blob/bd9111fa72764033b89e4beaaa71e0523231069b/percona-server.56/Dockerfile-dockerhub)
 
 # Quick reference
 

@@ -28,10 +28,6 @@ WARNING:
 -	[`4.10.2-jdk8-slim`, `4.10-jdk8-slim`, `jdk8-slim`, `4.10.2-jdk-slim`, `4.10-jdk-slim`, `jdk-slim`, `4.10.2-slim`, `4.10-slim`, `slim` (*jdk8-slim/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/1718fa65873e24d1e003dcd3828755e9fd39fa9d/jdk8-slim/Dockerfile)
 -	[`4.10.2-jre8-alpine`, `4.10-jre8-alpine`, `jre8-alpine`, `4.10.2-jre-alpine`, `4.10-jre-alpine`, `jre-alpine` (*jre8-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/1718fa65873e24d1e003dcd3828755e9fd39fa9d/jre8-alpine/Dockerfile)
 -	[`4.10.2-jre8-slim`, `4.10-jre8-slim`, `jre8-slim`, `4.10.2-jre-slim`, `4.10-jre-slim`, `jre-slim` (*jre8-slim/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/1718fa65873e24d1e003dcd3828755e9fd39fa9d/jre8-slim/Dockerfile)
--	[`4.10.2-jdk10`, `4.10-jdk10`, `jdk10` (*jdk10/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/1718fa65873e24d1e003dcd3828755e9fd39fa9d/jdk10/Dockerfile)
--	[`4.10.2-jdk10-slim`, `4.10-jdk10-slim`, `jdk10-slim` (*jdk10-slim/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/1718fa65873e24d1e003dcd3828755e9fd39fa9d/jdk10-slim/Dockerfile)
--	[`4.10.2-jre10`, `4.10-jre10`, `jre10` (*jre10/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/1718fa65873e24d1e003dcd3828755e9fd39fa9d/jre10/Dockerfile)
--	[`4.10.2-jre10-slim`, `4.10-jre10-slim`, `jre10-slim` (*jre10-slim/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/1718fa65873e24d1e003dcd3828755e9fd39fa9d/jre10-slim/Dockerfile)
 -	[`4.10.2-jdk11`, `4.10-jdk11`, `jdk11` (*jdk11/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/1718fa65873e24d1e003dcd3828755e9fd39fa9d/jdk11/Dockerfile)
 -	[`4.10.2-jdk11-slim`, `4.10-jdk11-slim`, `jdk11-slim` (*jdk11-slim/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/1718fa65873e24d1e003dcd3828755e9fd39fa9d/jdk11-slim/Dockerfile)
 -	[`4.10.2-jre11`, `4.10-jre11`, `jre11` (*jre11/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/1718fa65873e24d1e003dcd3828755e9fd39fa9d/jre11/Dockerfile)
@@ -80,8 +76,6 @@ Note that if you are mounting a volume and the uid running Docker is not `1000`,
 Run this from the directory of the Gradle project you want to build.
 
 `docker run --rm -v "$PWD":/home/gradle/project -w /home/gradle/project gradle gradle <gradle-task>`
-
-**Note: Java 9 support is experimental**
 
 # Image Variants
 
