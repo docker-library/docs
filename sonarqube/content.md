@@ -8,8 +8,6 @@
 
 This Docker image contains the Community Edition of SonarQube.
 
-The image is based on `openjdk:8`. We don't provide a build based on `openjdk:8-alpine`, because it seems [broken in Linux](https://github.com/docker-library/openjdk/issues/250).
-
 ## Run SonarQube
 
 The server is started this way:
