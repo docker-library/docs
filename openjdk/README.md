@@ -49,11 +49,11 @@ WARNING:
 -	[`8u181-jre-stretch`, `8-jre-stretch`, `8u181-jre`, `8-jre` (*8/jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/7a33416016b60c045cf0ba99e82617ed6c130595/8/jre/Dockerfile)
 -	[`8u181-jre-slim-stretch`, `8-jre-slim-stretch`, `8u181-jre-slim`, `8-jre-slim` (*8/jre/slim/Dockerfile*)](https://github.com/docker-library/openjdk/blob/7a33416016b60c045cf0ba99e82617ed6c130595/8/jre/slim/Dockerfile)
 -	[`8u181-jre-alpine3.8`, `8-jre-alpine3.8`, `8u181-jre-alpine`, `8-jre-alpine` (*8/jre/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/47a6539cd18023dafb45db9013455136cc0bca07/8/jre/alpine/Dockerfile)
--	[`7u181-jdk-jessie`, `7u181-jessie`, `7-jdk-jessie`, `7-jessie`, `7u181-jdk`, `7u181`, `7-jdk`, `7` (*7/jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/2057305e0474ebf6461daea607ff02874d690914/7/jdk/Dockerfile)
--	[`7u181-jdk-slim-jessie`, `7u181-slim-jessie`, `7-jdk-slim-jessie`, `7-slim-jessie`, `7u181-jdk-slim`, `7u181-slim`, `7-jdk-slim`, `7-slim` (*7/jdk/slim/Dockerfile*)](https://github.com/docker-library/openjdk/blob/2057305e0474ebf6461daea607ff02874d690914/7/jdk/slim/Dockerfile)
+-	[`7u181-jdk-jessie`, `7u181-jessie`, `7-jdk-jessie`, `7-jessie`, `7u181-jdk`, `7u181`, `7-jdk`, `7` (*7/jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/5a23ec5ab11beacb71f89ec9f9935c52ab7e44bb/7/jdk/Dockerfile)
+-	[`7u181-jdk-slim-jessie`, `7u181-slim-jessie`, `7-jdk-slim-jessie`, `7-slim-jessie`, `7u181-jdk-slim`, `7u181-slim`, `7-jdk-slim`, `7-slim` (*7/jdk/slim/Dockerfile*)](https://github.com/docker-library/openjdk/blob/5a23ec5ab11beacb71f89ec9f9935c52ab7e44bb/7/jdk/slim/Dockerfile)
 -	[`7u181-jdk-alpine3.8`, `7u181-alpine3.8`, `7-jdk-alpine3.8`, `7-alpine3.8`, `7u181-jdk-alpine`, `7u181-alpine`, `7-jdk-alpine`, `7-alpine` (*7/jdk/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/1778c73b834d04d5b5c61baee4cce8c127031f9c/7/jdk/alpine/Dockerfile)
--	[`7u181-jre-jessie`, `7-jre-jessie`, `7u181-jre`, `7-jre` (*7/jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/2057305e0474ebf6461daea607ff02874d690914/7/jre/Dockerfile)
--	[`7u181-jre-slim-jessie`, `7-jre-slim-jessie`, `7u181-jre-slim`, `7-jre-slim` (*7/jre/slim/Dockerfile*)](https://github.com/docker-library/openjdk/blob/2057305e0474ebf6461daea607ff02874d690914/7/jre/slim/Dockerfile)
+-	[`7u181-jre-jessie`, `7-jre-jessie`, `7u181-jre`, `7-jre` (*7/jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/5a23ec5ab11beacb71f89ec9f9935c52ab7e44bb/7/jre/Dockerfile)
+-	[`7u181-jre-slim-jessie`, `7-jre-slim-jessie`, `7u181-jre-slim`, `7-jre-slim` (*7/jre/slim/Dockerfile*)](https://github.com/docker-library/openjdk/blob/5a23ec5ab11beacb71f89ec9f9935c52ab7e44bb/7/jre/slim/Dockerfile)
 -	[`7u181-jre-alpine3.8`, `7-jre-alpine3.8`, `7u181-jre-alpine`, `7-jre-alpine` (*7/jre/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/1778c73b834d04d5b5c61baee4cce8c127031f9c/7/jre/alpine/Dockerfile)
 
 ## Shared Tags
