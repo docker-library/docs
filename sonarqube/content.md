@@ -12,7 +12,9 @@ This Docker image contains the Community Edition of SonarQube.
 
 The server is started this way:
 
-	docker run -d --name sonarqube -p 9000:9000 %%IMAGE%%
+```console
+$ docker run -d --name sonarqube -p 9000:9000 %%IMAGE%%
+```
 
 By default you can login as `admin` with password `admin`, see [authentication documentation](https://docs.sonarqube.org/latest/instance-administration/security/).
 
@@ -34,12 +36,14 @@ By default, the image will use an embedded H2 database that is not suited for pr
 
 The production database is configured with the following SonarQube properties used as environment variables: `sonar.jdbc.username`, `sonar.jdbc.password` and `sonar.jdbc.url`.
 
-	docker run -d --name sonarqube \
-	    -p 9000:9000 \
-	    -e sonar.jdbc.username=sonar \
-	    -e sonar.jdbc.password=sonar \
-	    -e sonar.jdbc.url=jdbc:postgresql://localhost/sonar \
-	    sonarqube
+```console
+$ docker run -d --name sonarqube \
+    -p 9000:9000 \
+    -e sonar.jdbc.username=sonar \
+    -e sonar.jdbc.password=sonar \
+    -e sonar.jdbc.url=jdbc:postgresql://localhost/sonar \
+    sonarqube
+```
 
 Use of the environment variables `SONARQUBE_JDBC_USERNAME`, `SONARQUBE_JDBC_PASSWORD` and `SONARQUBE_JDBC_URL` is deprecated, and will stop working in future releases.
 
@@ -60,25 +64,31 @@ The images contain the SonarQube installation at `/opt/sonarqube`. You can use b
 
 You could also use bind-mounted configurations specified on the command line, for example:
 
-	docker run -d --name sonarqube \
-	    -p 9000:9000 \
-	    -v /path/to/conf:/opt/sonarqube/conf \
-	    -v /path/to/data:/opt/sonarqube/data \
-	    -v /path/to/logs:/opt/sonarqube/logs \
-	    -v /path/to/extensions:/opt/sonarqube/extensions \
-	    sonarqube
+```console
+$ docker run -d --name sonarqube \
+    -p 9000:9000 \
+    -v /path/to/conf:/opt/sonarqube/conf \
+    -v /path/to/data:/opt/sonarqube/data \
+    -v /path/to/logs:/opt/sonarqube/logs \
+    -v /path/to/extensions:/opt/sonarqube/extensions \
+    sonarqube
+```
 
 ### Option 4: Customized image
 
 In some environments, it may make more sense to prepare a custom image containing your configuration. A `Dockerfile` to achieve this may be as simple as:
 
-	FROM sonarqube:7.4-community
-	COPY sonar.properties /opt/sonarqube/conf/
+```dockerfile
+FROM sonarqube:7.4-community
+COPY sonar.properties /opt/sonarqube/conf/
+```
 
 You could then build and try the image with something like:
 
-	docker build --tag=sonarqube-custom .
-	docker run -ti sonarqube-custom
+```console
+$ docker build --tag=sonarqube-custom .
+$ docker run -ti sonarqube-custom
+```
 
 ## Administration
 

@@ -19,7 +19,9 @@ The smallest CrateDB clusters can easily ingest tens of thousands of records per
 
 Spin up this Docker image like so:
 
-	$ docker run -p 4200:4200 %%IMAGE%%
+```console
+$ docker run -p 4200:4200 %%IMAGE%%
+```
 
 Once you're up and running, head on over to [the introductory docs](https://crate.io/docs/stable/hello.html).
 
