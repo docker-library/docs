@@ -8,19 +8,61 @@ The Robot Operating System (ROS) is a set of software libraries and tools that h
 
 # How to use this image
 
-## Create a `Dockerfile` in your ROS app project
+## Creating a `Dockerfile` to build your ROS 2 packages
 
 ```dockerfile
-FROM %%IMAGE%%:indigo
-# place here your application's setup specifics
-CMD [ "roslaunch", "my-ros-app my-ros-app.launch" ]
+FROM %%IMAGE%%
+
+# install ros build tools
+RUN apt-get update && apt-get install -y --no-install-recommends \
+      git \
+      python3-colcon-common-extensions \
+      python3-rosdep \
+      python3-vcstool && \
+    rm -rf /var/lib/apt/lists/*
+
+# clone ros package repo
+ENV ROS2_WS /opt/ros2_ws
+RUN mkdir -p $ROS2_WS/src
+WORKDIR $ROS2_WS
+RUN git -C src clone \
+      -b $ROS_DISTRO \
+      https://github.com/ros2/demos.git
+
+# install ros package dependencies
+ENV ROSDISTRO_INDEX_URL https://raw.githubusercontent.com/ros2/rosdistro/ros2/index.yaml
+RUN apt-get update && \
+    rosdep init && \
+    rosdep update && \
+    rosdep install -y \
+      --from-paths \
+        src/demos/demo_nodes_cpp \
+      --ignore-src && \
+    rm -rf /var/lib/apt/lists/*
+
+# build ros package source
+RUN . /opt/ros/$ROS_DISTRO/setup.sh && \
+    colcon build \
+      --symlink-install \
+      --packages-select \
+        demo_nodes_cpp \
+      --cmake-args \
+        -DCMAKE_BUILD_TYPE=Release
+
+# source ros package install
+RUN sed --in-place --expression \
+      '$isource "$ROS2_WS/install/setup.bash"' \
+      /ros2_entrypoint.sh
+
+# run ros packge launch file
+CMD [ "ros2", "launch", "demo_nodes_cpp", "talker_listener.launch.py" ]
 ```
 
 You can then build and run the Docker image:
 
 ```console
-$ docker build -t my-ros-app .
-$ docker run -it --rm --name my-running-app my-ros-app
+$ docker build -t my/ros2:app .
+$ docker run -it --rm my/ros2:app
 ```
 
 ## Deployment use cases
@@ -64,14 +106,14 @@ If we want our all ROS nodes to easily talk to each other, we'll can use a virtu
 
 ### Build image
 
-> Build a ROS image that includes ROS tutorials using this `Dockerfile:`
+> Create a `Dockerfile` that installs ROS 2 demos:
 
 ```dockerfile
-FROM %%IMAGE%%:indigo-ros-base
-# install ros tutorials packages
+FROM %%IMAGE%%
+# install ros 2 demo packages
 RUN apt-get update && apt-get install -y \
-    ros-indigo-ros-tutorials \
-    ros-indigo-common-tutorials \
+      ros-${ROS_DISTRO}-demo-nodes-cpp \
+      ros-${ROS_DISTRO}-demo-nodes-py \
     && rm -rf /var/lib/apt/lists/
 ```
 
@@ -179,29 +221,36 @@ Now that you have an appreciation for bootstrapping a distributed ROS example ma
 > Start by making a folder named `rostutorials` and moving the Dockerfile we used earlier inside this directory. Then create a yaml file named `docker-compose.yml` in the same directory and paste the following inside:
 
 ```yaml
-version: '2'
+version: '3'
+
 services:
-  master:
-    build: .
-    container_name: master
-    command:
-      - roscore
-  
   talker:
-    build: .
-    container_name: talker
+    image: ros2:my_demo
     environment:
-      - "ROS_HOSTNAME=talker"
-      - "ROS_MASTER_URI=http://master:11311"
-    command: rosrun roscpp_tutorials talker
-  
+      - "ROS_DOMAIN_ID=0"
+      - "ROS_SECURITY_ROOT_DIRECTORY=/keystore"
+      - "ROS_SECURITY_ENABLE=true"
+      - "ROS_SECURITY_STRATEGY=Enforce"
+    volumes:
+      - talker_keystore:/keystore:ro
+    command: ros2 run demo_nodes_cpp talker
+
   listener:
-    build: .
-    container_name: listener
+    image: ros2:my_demo
     environment:
-      - "ROS_HOSTNAME=listener"
-      - "ROS_MASTER_URI=http://master:11311"
-    command: rosrun roscpp_tutorials listener
+      - "ROS_DOMAIN_ID=0"
+      - "ROS_SECURITY_ROOT_DIRECTORY=/keystore"
+      - "ROS_SECURITY_ENABLE=true"
+      - "ROS_SECURITY_STRATEGY=Enforce"
+    volumes:
+      - listener_keystore:/keystore:ro
+    command: ros2 run demo_nodes_py listener
+
+volumes:
+  talker_keystore:
+    external: true
+  listener_keystore:
+    external: true
 ```
 
 > Now from inside the same folder, use docker-copose to launch our ROS nodes and specify that they coexist on their own network:
