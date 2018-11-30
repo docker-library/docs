@@ -15,10 +15,7 @@ FROM %%IMAGE%%
 
 # install ros build tools
 RUN apt-get update && apt-get install -y --no-install-recommends \
-      git \
-      python3-colcon-common-extensions \
-      python3-rosdep \
-      python3-vcstool && \
+      python3-colcon-common-extensions && \
     rm -rf /var/lib/apt/lists/*
 
 # clone ros package repo
@@ -30,9 +27,7 @@ RUN git -C src clone \
       https://github.com/ros2/demos.git
 
 # install ros package dependencies
-ENV ROSDISTRO_INDEX_URL https://raw.githubusercontent.com/ros2/rosdistro/ros2/index.yaml
 RUN apt-get update && \
-    rosdep init && \
     rosdep update && \
     rosdep install -y \
       --from-paths \
@@ -55,7 +50,7 @@ RUN sed --in-place --expression \
       /ros2_entrypoint.sh
 
 # run ros packge launch file
-CMD [ "ros2", "launch", "demo_nodes_cpp", "talker_listener.launch.py" ]
+CMD ["ros2", "launch", "demo_nodes_cpp", "talker_listener.launch.py"]
 ```
 
 You can then build and run the Docker image:
@@ -63,6 +58,13 @@ You can then build and run the Docker image:
 ```console
 $ docker build -t my/ros2:app .
 $ docker run -it --rm my/ros2:app
+[INFO] [launch]: process[talker-1]: started with pid [813]
+[INFO] [launch]: process[listener-2]: started with pid [814]
+[INFO] [talker]: Publishing: 'Hello World: 1'
+[INFO] [listener]: I heard: [Hello World: 1]
+[INFO] [talker]: Publishing: 'Hello World: 2'
+[INFO] [listener]: I heard: [Hello World: 2]
+...
 ```
 
 ## Deployment use cases
