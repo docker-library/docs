@@ -11,7 +11,7 @@ The Robot Operating System (ROS) is a set of software libraries and tools that h
 ## Creating a `Dockerfile` to build your ROS 2 packages
 
 ```dockerfile
-FROM %%IMAGE%%
+FROM %%IMAGE%%:ros-base
 
 # install ros build tools
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -38,11 +38,14 @@ RUN apt-get update && \
 # build ros package source
 RUN . /opt/ros/$ROS_DISTRO/setup.sh && \
     colcon build \
-      --symlink-install \
       --packages-select \
         demo_nodes_cpp \
       --cmake-args \
         -DCMAKE_BUILD_TYPE=Release
+
+FROM %%IMAGE%%:ros-core
+ENV ROS2_WS /opt/ros2_ws
+COPY --from=0  $ROS2_WS/install $ROS2_WS/install
 
 # source ros package install
 RUN sed --in-place --expression \
@@ -65,6 +68,12 @@ $ docker run -it --rm my/ros2:app
 [INFO] [talker]: Publishing: 'Hello World: 2'
 [INFO] [listener]: I heard: [Hello World: 2]
 ...
+```
+
+```
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+my/ros2             app-multi-stage     66c8112b2fb6        4 seconds ago       775MB
+my/ros2             app-single-stage    6b500239d0d6        2 minutes ago       797MB
 ```
 
 ## Deployment use cases
