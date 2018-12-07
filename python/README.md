@@ -51,9 +51,9 @@ WARNING:
 -	[`2.7.15-jessie`, `2.7-jessie`, `2-jessie` (*2.7/jessie/Dockerfile*)](https://github.com/docker-library/python/blob/39c500cc8aefcb67a76d518d789441ef85fc771f/2.7/jessie/Dockerfile)
 -	[`2.7.15-slim-jessie`, `2.7-slim-jessie`, `2-slim-jessie` (*2.7/jessie/slim/Dockerfile*)](https://github.com/docker-library/python/blob/39c500cc8aefcb67a76d518d789441ef85fc771f/2.7/jessie/slim/Dockerfile)
 -	[`2.7.15-wheezy`, `2.7-wheezy`, `2-wheezy` (*2.7/wheezy/Dockerfile*)](https://github.com/docker-library/python/blob/39c500cc8aefcb67a76d518d789441ef85fc771f/2.7/wheezy/Dockerfile)
--	[`2.7.15-alpine3.8`, `2.7-alpine3.8`, `2-alpine3.8`, `2.7.15-alpine`, `2.7-alpine`, `2-alpine` (*2.7/alpine3.8/Dockerfile*)](https://github.com/docker-library/python/blob/39c500cc8aefcb67a76d518d789441ef85fc771f/2.7/alpine3.8/Dockerfile)
--	[`2.7.15-alpine3.7`, `2.7-alpine3.7`, `2-alpine3.7` (*2.7/alpine3.7/Dockerfile*)](https://github.com/docker-library/python/blob/39c500cc8aefcb67a76d518d789441ef85fc771f/2.7/alpine3.7/Dockerfile)
--	[`2.7.15-alpine3.6`, `2.7-alpine3.6`, `2-alpine3.6` (*2.7/alpine3.6/Dockerfile*)](https://github.com/docker-library/python/blob/39c500cc8aefcb67a76d518d789441ef85fc771f/2.7/alpine3.6/Dockerfile)
+-	[`2.7.15-alpine3.8`, `2.7-alpine3.8`, `2-alpine3.8`, `2.7.15-alpine`, `2.7-alpine`, `2-alpine` (*2.7/alpine3.8/Dockerfile*)](https://github.com/docker-library/python/blob/abcc6175b7a36558f3f805b318a8dd68ce1d18ce/2.7/alpine3.8/Dockerfile)
+-	[`2.7.15-alpine3.7`, `2.7-alpine3.7`, `2-alpine3.7` (*2.7/alpine3.7/Dockerfile*)](https://github.com/docker-library/python/blob/abcc6175b7a36558f3f805b318a8dd68ce1d18ce/2.7/alpine3.7/Dockerfile)
+-	[`2.7.15-alpine3.6`, `2.7-alpine3.6`, `2-alpine3.6` (*2.7/alpine3.6/Dockerfile*)](https://github.com/docker-library/python/blob/abcc6175b7a36558f3f805b318a8dd68ce1d18ce/2.7/alpine3.6/Dockerfile)
 -	[`2.7.15-windowsservercore-ltsc2016`, `2.7-windowsservercore-ltsc2016`, `2-windowsservercore-ltsc2016` (*2.7/windows/windowsservercore-ltsc2016/Dockerfile*)](https://github.com/docker-library/python/blob/ac49e0bb09aafe4100fe5662636c24fce7206008/2.7/windows/windowsservercore-ltsc2016/Dockerfile)
 -	[`2.7.15-windowsservercore-1709`, `2.7-windowsservercore-1709`, `2-windowsservercore-1709` (*2.7/windows/windowsservercore-1709/Dockerfile*)](https://github.com/docker-library/python/blob/ac49e0bb09aafe4100fe5662636c24fce7206008/2.7/windows/windowsservercore-1709/Dockerfile)
 
