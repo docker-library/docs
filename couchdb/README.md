@@ -16,7 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `2.2.0`, `2.2`, `2` (*2.2.0/Dockerfile*)](https://github.com/apache/couchdb-docker/blob/f429c1ccf22fe8cf7717383462fbf2f56e6d0301/2.2.0/Dockerfile)
+-	[`latest`, `2.3.0`, `2.3`, `2` (*2.3.0/Dockerfile*)](https://github.com/apache/couchdb-docker/blob/ce1679b4c1312203df2af8936c367c7027d2e888/2.3.0/Dockerfile)
 
 # Quick reference
 

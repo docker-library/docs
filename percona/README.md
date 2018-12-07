@@ -26,7 +26,9 @@ WARNING:
 	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
 -	**Where to file issues**:  
-	[https://github.com/percona/percona-docker/issues](https://github.com/percona/percona-docker/issues)
+	For issues with Percona Server: [Percona Server JIRA](https://jira.percona.com/issues/?jql=project+%3D+PS)
+
+	You will need to create an account if you do not have one.
 
 -	**Maintained by**:  
 	[Percona](https://github.com/percona/percona-docker)
