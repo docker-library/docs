@@ -8,6 +8,22 @@ As an application wiki, XWiki allows for the storing of structured data and the 
 
 %%LOGO%%
 
+# Table of contents
+<!-- generated with pandoc -f gfm --toc -s content.md -t markdown | sed '/^$/,$d' -->
+
+-   [Introduction](#introduction)
+-   [How to use this image](#how-to-use-this-image)
+    -   [Pulling existing image](#pulling-existing-image)
+        -   [Using docker run](#using-docker-run)
+        -   [Using docker-compose](#using-docker-compose)
+        -   [Using Docker Swarm](#using-docker-swarm)
+    -   [Building](#building)
+-   [Upgrading XWiki](#upgrading-xwiki)
+-   [Details for the %%IMAGE%% image](#details-for-the-image-image)
+    -   [Configuration Options](#configuration-options)
+    -   [Passing JVM options](#passing-jvm-options)
+    -   [Miscellaneous](#miscellaneous)
+
 # Introduction
 
 The goal is to provide a production-ready XWiki system running in Docker. This is why:
