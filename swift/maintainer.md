@@ -1,1 +1,1 @@
-[the Swift Community](%%GITHUB-REPO%%))
+[the Swift Community](%%GITHUB-REPO%%)
