@@ -27,11 +27,11 @@ WARNING:
 -	[`8.5.35-jre8-alpine`, `8.5-jre8-alpine`, `8-jre8-alpine`, `jre8-alpine`, `8.5.35-alpine`, `8.5-alpine`, `8-alpine`, `alpine` (*8.5/jre8-alpine/Dockerfile*)](https://github.com/docker-library/tomcat/blob/c0df3d5463944671fefe200bdadd95c69a616ab4/8.5/jre8-alpine/Dockerfile)
 -	[`8.5.35-jre11`, `8.5-jre11`, `8-jre11`, `jre11` (*8.5/jre11/Dockerfile*)](https://github.com/docker-library/tomcat/blob/113253d06d1cbd4b7d6ad7a505b02e3180c3f7ee/8.5/jre11/Dockerfile)
 -	[`8.5.35-jre11-slim`, `8.5-jre11-slim`, `8-jre11-slim`, `jre11-slim` (*8.5/jre11-slim/Dockerfile*)](https://github.com/docker-library/tomcat/blob/113253d06d1cbd4b7d6ad7a505b02e3180c3f7ee/8.5/jre11-slim/Dockerfile)
--	[`9.0.13-jre8`, `9.0-jre8`, `9-jre8` (*9.0/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/f7ecea4335598d1313f261269aeee81be0ff8ec7/9.0/jre8/Dockerfile)
--	[`9.0.13-jre8-slim`, `9.0-jre8-slim`, `9-jre8-slim` (*9.0/jre8-slim/Dockerfile*)](https://github.com/docker-library/tomcat/blob/f7ecea4335598d1313f261269aeee81be0ff8ec7/9.0/jre8-slim/Dockerfile)
--	[`9.0.13-jre8-alpine`, `9.0-jre8-alpine`, `9-jre8-alpine` (*9.0/jre8-alpine/Dockerfile*)](https://github.com/docker-library/tomcat/blob/c0df3d5463944671fefe200bdadd95c69a616ab4/9.0/jre8-alpine/Dockerfile)
--	[`9.0.13-jre11`, `9.0-jre11`, `9-jre11` (*9.0/jre11/Dockerfile*)](https://github.com/docker-library/tomcat/blob/f7ecea4335598d1313f261269aeee81be0ff8ec7/9.0/jre11/Dockerfile)
--	[`9.0.13-jre11-slim`, `9.0-jre11-slim`, `9-jre11-slim` (*9.0/jre11-slim/Dockerfile*)](https://github.com/docker-library/tomcat/blob/f7ecea4335598d1313f261269aeee81be0ff8ec7/9.0/jre11-slim/Dockerfile)
+-	[`9.0.14-jre8`, `9.0-jre8`, `9-jre8` (*9.0/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/f58a6b4236cfe10672c9505aab5024100c9e084d/9.0/jre8/Dockerfile)
+-	[`9.0.14-jre8-slim`, `9.0-jre8-slim`, `9-jre8-slim` (*9.0/jre8-slim/Dockerfile*)](https://github.com/docker-library/tomcat/blob/f58a6b4236cfe10672c9505aab5024100c9e084d/9.0/jre8-slim/Dockerfile)
+-	[`9.0.14-jre8-alpine`, `9.0-jre8-alpine`, `9-jre8-alpine` (*9.0/jre8-alpine/Dockerfile*)](https://github.com/docker-library/tomcat/blob/a3690c7d71d468e51f0c01ded83f79c7686a2a35/9.0/jre8-alpine/Dockerfile)
+-	[`9.0.14-jre11`, `9.0-jre11`, `9-jre11` (*9.0/jre11/Dockerfile*)](https://github.com/docker-library/tomcat/blob/f58a6b4236cfe10672c9505aab5024100c9e084d/9.0/jre11/Dockerfile)
+-	[`9.0.14-jre11-slim`, `9.0-jre11-slim`, `9-jre11-slim` (*9.0/jre11-slim/Dockerfile*)](https://github.com/docker-library/tomcat/blob/f58a6b4236cfe10672c9505aab5024100c9e084d/9.0/jre11-slim/Dockerfile)
 
 # Quick reference
 

@@ -16,9 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.5.2` (*6/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/621b02788fba0220b7c47a21a24d360f99fd8555/6/Dockerfile)
--	[`5.6.13`, `5.6`, `5` (*5/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/a912899428b3c0854a463a30a3d7c5d52a088759/5/Dockerfile)
--	[`5.6.13-alpine`, `5.6-alpine`, `5-alpine` (*5/alpine/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/a912899428b3c0854a463a30a3d7c5d52a088759/5/alpine/Dockerfile)
+-	[`6.5.3` (*6/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/ea4c976edb44a00de9ef45f1a4bff50d6aa31e4a/6/Dockerfile)
+-	[`5.6.14`, `5.6`, `5` (*5/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/367769da361526411ffac12dae5fa19bb87c3f6c/5/Dockerfile)
+-	[`5.6.14-alpine`, `5.6-alpine`, `5-alpine` (*5/alpine/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/367769da361526411ffac12dae5fa19bb87c3f6c/5/alpine/Dockerfile)
 
 # Quick reference
 

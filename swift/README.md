@@ -27,10 +27,10 @@ WARNING:
 	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
 -	**Where to file issues**:  
-	[https://github.com/swiftdocker/docker-swift/issues](https://github.com/swiftdocker/docker-swift/issues)
+	[https://github.com/apple/swift-docker/issues](https://github.com/apple/swift-docker/issues)
 
 -	**Maintained by**:  
-	[Haris and Thomas (of the Docker Community)](https://github.com/swiftdocker/docker-swift), [with the approval of the Swift Project](https://lists.swift.org/pipermail/swift-dev/Week-of-Mon-20160118/000908.html)
+	[the Swift Community](https://github.com/apple/swift-docker))
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/swift/)
@@ -51,27 +51,22 @@ WARNING:
 
 # What is Swift?
 
-Swift is a general-purpose programming language built using a modern approach to safety, performance, and software design patterns.
+Swift is a high-performance system programming language. It has a clean and modern syntax, offers seamless access to existing C and Objective-C code and frameworks, and is memory safe by default.
 
-The goal of the Swift project is to create the best available language for uses ranging from systems programming, to mobile and desktop apps, scaling up to cloud services. Most importantly, Swift is designed to make writing and maintaining correct programs easier for the developer. To achieve this goal, we believe that the most obvious way to write Swift code must also be:
+Although inspired by Objective-C and many other languages, Swift is not itself a C-derived language. As a complete and independent language, Swift packages core features like flow control, data structures, and functions, with high-level constructs like objects, protocols, closures, and generics. Swift embraces modules, eliminating the need for headers and the code duplication they entail.
 
-**Safe**. The most obvious way to write code should also behave in a safe manner. Undefined behavior is the enemy of safety, and developer mistakes should be caught before software is in production. Opting for safety sometimes means Swift will feel strict, but we believe that clarity saves time in the long run.
+To learn more about the programming language, visit [swift.org](https://swift.org).
 
-**Fast**. Swift is intended as a replacement for C-based languages (C, C++, and Objective-C). As such, Swift must be comparable to those languages in performance for most tasks. Performance must also be predictable and consistent, not just fast in short bursts that require clean-up later. There are lots of languages with novel features — being fast is rare.
-
-**Expressive**. Swift benefits from decades of advancement in computer science to offer syntax that is a joy to use, with modern features developers expect. But Swift is never done. We will monitor language advancements and embrace what works, continually evolving to make Swift even better.
-
-> [wikipedia.org/wiki/Swift_(programming_language)](https://en.wikipedia.org/wiki/Swift_(programming_language))  
 > [swift.org](https://swift.org/about/)  
 > [Swift on Github](https://github.com/apple/swift)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/0ae8e1438b3eb5d942ae5f04dee8768911f46b01/swift/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/0e2d9afd4e84369a43b810a5cfb5a131cfaac779/swift/logo.png)
 
 # How to use this image
 
 ##### Start a REPL
 
-Swift requires [a little bit of extra security privilege](https://github.com/swiftdocker/docker-swift/issues/9#issuecomment-272527182) to run the REPL. The following command creates an ephemeral container, attaches your terminal to it and starts the Swift REPL. A great way to try out pre-release builds!
+Swift requires [a little bit of extra security privilege](https://github.com/apple/swift-docker/issues/9#issuecomment-272527182) to run the REPL. The following command creates an ephemeral container, attaches your terminal to it and starts the Swift REPL. A great way to try out pre-release builds!
 
 ```bash
 docker run --cap-add sys_ptrace -it --rm swift swift
