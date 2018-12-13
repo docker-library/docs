@@ -132,7 +132,7 @@ Some application may require device access for acquiring images from connected c
 
 ### Networks
 
-The ROS runtime "graph" is a peer-to-peer network of processes (potentially distributed across machines) that are loosely coupled using the ROS communication infrastructure. ROS implements several different styles of communication, including synchronous RPC-style communication over services, asynchronous streaming of data over topics, and storage of data on a Parameter Server. To abide by the best practice of [one process per container](https://docs.docker.com/articles/dockerfile_best-practices/), Docker networks can be used to string together several running ROS processes. For further details about [ROS NetworkSetup](http://wiki.ros.org/ROS/NetworkSetup) wik article, or see the Deployment example below.
+The ROS runtime "graph" is a peer-to-peer network of processes (potentially distributed across machines) that are loosely coupled using the ROS communication infrastructure. ROS implements several different styles of communication, including synchronous RPC-style communication over services, asynchronous streaming of data over topics, combinations of both prior via request/reply and status/feedback over actions, and run-time settings via configuration over parameters. To abide by the best practice of [one process per container](https://docs.docker.com/articles/dockerfile_best-practices/), Docker networks can be used to string together several running ROS processes. For further details see the Deployment example below.
 
 ## Deployment example
 
@@ -238,7 +238,10 @@ $ docker-compose rm
 # More Resources
 
 [ROS.org](http://www.ros.org/): Main ROS website  
-[Wiki](http://wiki.ros.org/): Find tutorials and learn more  
-[ROS Answers](http://answers.ros.org/questions/): Ask questions. Get answers  
+[Docs](https://docs.ros2.org/): Core Documentation  
+[Index](https://index.ros.org/doc/ros2/): Package Index  
+[Design](https://design.ros2.org/): Design Articles  
+[ROS Answers](https://answers.ros.org/questions/): Ask questions. Get answers  
+[Forums](https://discourse.ros.org/): Hear the latest discussions  
 [Blog](http://www.ros.org/news/): Stay up-to-date  
-[OSRF](http://www.osrfoundation.org/): Open Source Robotics Foundation
+[OSRF](https://www.osrfoundation.org/): Open Source Robotics Foundation
