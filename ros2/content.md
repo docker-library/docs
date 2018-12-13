@@ -8,13 +8,45 @@ The Robot Operating System (ROS) is a set of software libraries and tools that h
 
 # How to use this image
 
-## Creating a `Dockerfile` to build your ROS 2 packages
+## Creating a `Dockerfile` to install ROS 2 packages
+
+To create your own ROS 2 docker images and install custom  packages, here's a simple example of installing the C++ client library demos using the official released Debian packages via apt-get.
+
+```dockerfile
+FROM %%IMAGE%%:ros-core
+
+# install ros packages for installed release
+RUN apt-get update && apt-get install -y \
+      ros-${ROS_DISTRO}-demo-nodes-cpp && \
+    rm -rf /var/lib/apt/lists/*
+
+# run ros packge launch file
+CMD ["ros2", "launch", "demo_nodes_cpp", "talker_listener.launch.py"]
+```
+
+Note: all ROS 2 images include a default entrypoint that sources the ROS environment setup before exiting the configured command, in this case the demo packages launch file. You can then build and run the Docker image like so:
+
+```console
+$ docker build -t my/ros2:app .
+$ docker run -it --rm my/ros2:app
+[INFO] [launch]: process[talker-1]: started with pid [813]
+[INFO] [launch]: process[listener-2]: started with pid [814]
+[INFO] [talker]: Publishing: 'Hello World: 1'
+[INFO] [listener]: I heard: [Hello World: 1]
+[INFO] [talker]: Publishing: 'Hello World: 2'
+[INFO] [listener]: I heard: [Hello World: 2]
+...
+```
+
+## Creating a `Dockerfile` to build ROS 2 packages
+
+To create your own ROS 2 docker images and build custom  packages, here's a simple example of installing a package's build dependencies, compiling it from source, and installing the resulting build artifacts into a final multi-stage image layer.
 
 ```dockerfile
 FROM %%IMAGE%%:ros-base
 
 # install ros build tools
-RUN apt-get update && apt-get install -y --no-install-recommends \
+RUN apt-get update && apt-get install -y \
       python3-colcon-common-extensions && \
     rm -rf /var/lib/apt/lists/*
 
@@ -43,11 +75,12 @@ RUN . /opt/ros/$ROS_DISTRO/setup.sh && \
       --cmake-args \
         -DCMAKE_BUILD_TYPE=Release
 
+# copy ros package install via multi-stage
 FROM %%IMAGE%%:ros-core
 ENV ROS2_WS /opt/ros2_ws
 COPY --from=0  $ROS2_WS/install $ROS2_WS/install
 
-# source ros package install
+# source ros package from entrypoint
 RUN sed --in-place --expression \
       '$isource "$ROS2_WS/install/setup.bash"' \
       /ros2_entrypoint.sh
@@ -56,25 +89,15 @@ RUN sed --in-place --expression \
 CMD ["ros2", "launch", "demo_nodes_cpp", "talker_listener.launch.py"]
 ```
 
-You can then build and run the Docker image:
-
-```console
-$ docker build -t my/ros2:app .
-$ docker run -it --rm my/ros2:app
-[INFO] [launch]: process[talker-1]: started with pid [813]
-[INFO] [launch]: process[listener-2]: started with pid [814]
-[INFO] [talker]: Publishing: 'Hello World: 1'
-[INFO] [listener]: I heard: [Hello World: 1]
-[INFO] [talker]: Publishing: 'Hello World: 2'
-[INFO] [listener]: I heard: [Hello World: 2]
-...
-```
+Note: `--from-paths` and `--packages-select` are set here as so to only install the dependencies and build for the `demo_nodes_cpp` package, one among many in the demo git repo that was cloned. To install the dependencies and build all the packages in the source workspace, merely change the scope by setting `--from-paths src/` and dropping the `--packages-select` arguments.
 
 ```
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
 my/ros2             app-multi-stage     66c8112b2fb6        4 seconds ago       775MB
 my/ros2             app-single-stage    6b500239d0d6        2 minutes ago       797MB
 ```
+
+For this particular package, using a multi-stage build didn't shrink the final image by much, but for more complex applications, segmenting build setup from the runtime can help keep image sizes down. Additionally, doing so can also prepare you for releasing your package to the community, helping to reconcile dependency discrepancies you may have otherwise forgotten to declare in your `package.xml` manifest.
 
 ## Deployment use cases
 
