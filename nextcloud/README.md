@@ -16,15 +16,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`13.0.8-apache`, `13.0-apache`, `13-apache`, `production-apache`, `13.0.8`, `13.0`, `13`, `production` (*13.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/de2f3c57eee28d09dd165b3e4f9541bbb8bf2883/13.0/apache/Dockerfile)
--	[`13.0.8-fpm-alpine`, `13.0-fpm-alpine`, `13-fpm-alpine`, `production-fpm-alpine` (*13.0/fpm-alpine/Dockerfile*)](https://github.com/nextcloud/docker/blob/de2f3c57eee28d09dd165b3e4f9541bbb8bf2883/13.0/fpm-alpine/Dockerfile)
--	[`13.0.8-fpm`, `13.0-fpm`, `13-fpm`, `production-fpm` (*13.0/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/de2f3c57eee28d09dd165b3e4f9541bbb8bf2883/13.0/fpm/Dockerfile)
--	[`14.0.4-apache`, `14.0-apache`, `14-apache`, `stable-apache`, `14.0.4`, `14.0`, `14`, `stable` (*14.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/de2f3c57eee28d09dd165b3e4f9541bbb8bf2883/14.0/apache/Dockerfile)
--	[`14.0.4-fpm-alpine`, `14.0-fpm-alpine`, `14-fpm-alpine`, `stable-fpm-alpine` (*14.0/fpm-alpine/Dockerfile*)](https://github.com/nextcloud/docker/blob/de2f3c57eee28d09dd165b3e4f9541bbb8bf2883/14.0/fpm-alpine/Dockerfile)
--	[`14.0.4-fpm`, `14.0-fpm`, `14-fpm`, `stable-fpm` (*14.0/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/de2f3c57eee28d09dd165b3e4f9541bbb8bf2883/14.0/fpm/Dockerfile)
--	[`15.0.0-apache`, `15.0-apache`, `15-apache`, `apache`, `15.0.0`, `15.0`, `15`, `latest` (*15.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/de2f3c57eee28d09dd165b3e4f9541bbb8bf2883/15.0/apache/Dockerfile)
--	[`15.0.0-fpm-alpine`, `15.0-fpm-alpine`, `15-fpm-alpine`, `fpm-alpine` (*15.0/fpm-alpine/Dockerfile*)](https://github.com/nextcloud/docker/blob/de2f3c57eee28d09dd165b3e4f9541bbb8bf2883/15.0/fpm-alpine/Dockerfile)
--	[`15.0.0-fpm`, `15.0-fpm`, `15-fpm`, `fpm` (*15.0/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/de2f3c57eee28d09dd165b3e4f9541bbb8bf2883/15.0/fpm/Dockerfile)
+-	[`13.0.8-apache`, `13.0-apache`, `13-apache`, `production-apache`, `13.0.8`, `13.0`, `13`, `production` (*13.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/31d7dedda906de8c4f387e17be7e16b55cb41031/13.0/apache/Dockerfile)
+-	[`13.0.8-fpm-alpine`, `13.0-fpm-alpine`, `13-fpm-alpine`, `production-fpm-alpine` (*13.0/fpm-alpine/Dockerfile*)](https://github.com/nextcloud/docker/blob/31d7dedda906de8c4f387e17be7e16b55cb41031/13.0/fpm-alpine/Dockerfile)
+-	[`13.0.8-fpm`, `13.0-fpm`, `13-fpm`, `production-fpm` (*13.0/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/31d7dedda906de8c4f387e17be7e16b55cb41031/13.0/fpm/Dockerfile)
+-	[`14.0.4-apache`, `14.0-apache`, `14-apache`, `stable-apache`, `14.0.4`, `14.0`, `14`, `stable` (*14.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/31d7dedda906de8c4f387e17be7e16b55cb41031/14.0/apache/Dockerfile)
+-	[`14.0.4-fpm-alpine`, `14.0-fpm-alpine`, `14-fpm-alpine`, `stable-fpm-alpine` (*14.0/fpm-alpine/Dockerfile*)](https://github.com/nextcloud/docker/blob/31d7dedda906de8c4f387e17be7e16b55cb41031/14.0/fpm-alpine/Dockerfile)
+-	[`14.0.4-fpm`, `14.0-fpm`, `14-fpm`, `stable-fpm` (*14.0/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/31d7dedda906de8c4f387e17be7e16b55cb41031/14.0/fpm/Dockerfile)
+-	[`15.0.0-apache`, `15.0-apache`, `15-apache`, `apache`, `15.0.0`, `15.0`, `15`, `latest` (*15.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/31d7dedda906de8c4f387e17be7e16b55cb41031/15.0/apache/Dockerfile)
+-	[`15.0.0-fpm-alpine`, `15.0-fpm-alpine`, `15-fpm-alpine`, `fpm-alpine` (*15.0/fpm-alpine/Dockerfile*)](https://github.com/nextcloud/docker/blob/31d7dedda906de8c4f387e17be7e16b55cb41031/15.0/fpm-alpine/Dockerfile)
+-	[`15.0.0-fpm`, `15.0-fpm`, `15-fpm`, `fpm` (*15.0/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/31d7dedda906de8c4f387e17be7e16b55cb41031/15.0/fpm/Dockerfile)
 
 # Quick reference
 
