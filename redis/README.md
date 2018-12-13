@@ -16,9 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.0.2`, `5.0`, `5`, `latest`, `5.0.2-stretch`, `5.0-stretch`, `5-stretch`, `stretch` (*5.0/Dockerfile*)](https://github.com/docker-library/redis/blob/f1a8498333ae3ab340b5b39fbac1d7e1dc0d628c/5.0/Dockerfile)
--	[`5.0.2-32bit`, `5.0-32bit`, `5-32bit`, `32bit`, `5.0.2-32bit-stretch`, `5.0-32bit-stretch`, `5-32bit-stretch`, `32bit-stretch` (*5.0/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/f1a8498333ae3ab340b5b39fbac1d7e1dc0d628c/5.0/32bit/Dockerfile)
--	[`5.0.2-alpine`, `5.0-alpine`, `5-alpine`, `alpine`, `5.0.2-alpine3.8`, `5.0-alpine3.8`, `5-alpine3.8`, `alpine3.8` (*5.0/alpine/Dockerfile*)](https://github.com/docker-library/redis/blob/f1a8498333ae3ab340b5b39fbac1d7e1dc0d628c/5.0/alpine/Dockerfile)
+-	[`5.0.3`, `5.0`, `5`, `latest`, `5.0.3-stretch`, `5.0-stretch`, `5-stretch`, `stretch` (*5.0/Dockerfile*)](https://github.com/docker-library/redis/blob/7be79f51e29a009fefdc218c8479d340b8c4a5e1/5.0/Dockerfile)
+-	[`5.0.3-32bit`, `5.0-32bit`, `5-32bit`, `32bit`, `5.0.3-32bit-stretch`, `5.0-32bit-stretch`, `5-32bit-stretch`, `32bit-stretch` (*5.0/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/7be79f51e29a009fefdc218c8479d340b8c4a5e1/5.0/32bit/Dockerfile)
+-	[`5.0.3-alpine`, `5.0-alpine`, `5-alpine`, `alpine`, `5.0.3-alpine3.8`, `5.0-alpine3.8`, `5-alpine3.8`, `alpine3.8` (*5.0/alpine/Dockerfile*)](https://github.com/docker-library/redis/blob/7be79f51e29a009fefdc218c8479d340b8c4a5e1/5.0/alpine/Dockerfile)
 -	[`4.0.12`, `4.0`, `4`, `4.0.12-stretch`, `4.0-stretch`, `4-stretch` (*4.0/Dockerfile*)](https://github.com/docker-library/redis/blob/e964e2975dabf8169edcbf89a72d4163191de02e/4.0/Dockerfile)
 -	[`4.0.12-32bit`, `4.0-32bit`, `4-32bit`, `4.0.12-32bit-stretch`, `4.0-32bit-stretch`, `4-32bit-stretch` (*4.0/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/e964e2975dabf8169edcbf89a72d4163191de02e/4.0/32bit/Dockerfile)
 -	[`4.0.12-alpine`, `4.0-alpine`, `4-alpine`, `4.0.12-alpine3.8`, `4.0-alpine3.8`, `4-alpine3.8` (*4.0/alpine/Dockerfile*)](https://github.com/docker-library/redis/blob/e964e2975dabf8169edcbf89a72d4163191de02e/4.0/alpine/Dockerfile)
