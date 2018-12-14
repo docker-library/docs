@@ -133,9 +133,9 @@ Some application may require device access for acquiring images from connected c
 
 ### Networks
 
-The ROS runtime "graph" is a peer-to-peer network of processes (potentially distributed across machines) that are loosely coupled using the ROS communication infrastructure. ROS implements several different styles of communication, including synchronous RPC-style communication over services, asynchronous streaming of data over topics, combinations of both prior via request/reply and status/feedback over actions, and run-time settings via configuration over parameters. To abide by the best practice of [one process per container](https://docs.docker.com/articles/dockerfile_best-practices/), Docker networks can be used to string together several running ROS processes. For further details see the Deployment example further below.
+ROS 2 allows for peer-to-peer networking of processes (potentially distributed across machines) that are loosely coupled using the ROS communication infrastructure. ROS implements several different styles of communication, including synchronous RPC-style communication over services, asynchronous streaming of typed data over topics, combinations of both prior via request/reply and status/feedback over actions, and run-time settings via configuration over parameters. To abide by the best practice of [one process per container](https://docs.docker.com/articles/dockerfile_best-practices/), Docker networks can be used to string together several running ROS processes. For further details see the Deployment example further below.
 
-Alternatively, more permissive network setting can be use to share all host network interfaces with the container, such as `host` network driver, simplifying connectivity with external network participants. Be aware however that this removes the networking namespace separation between containers, and can affect the ability of DDS participants communicate between containers, as documented [here](https://community.rti.com/kb/how-use-rti-connext-dds-communicate-across-docker-containers-using-host-driver).
+Alternatively, more permissive network setting can be use to share all host network interfaces with the container, such as [`host` network driver](https://docs.docker.com/network/host/), simplifying connectivity with external network participants. Be aware however that this removes the networking namespace separation between containers, and can affect the ability of DDS participants communicate between containers, as documented [here](https://community.rti.com/kb/how-use-rti-connext-dds-communicate-across-docker-containers-using-host-driver).
 
 ## Deployment example
 
@@ -230,14 +230,16 @@ version: '3'
 services:
   talker:
     build: ./Dockerfile
-    environment: ./config.env
+    environment:
+      - ./config.env
     volumes:
       - ./keystore/talker:/keystore:ro
     command: ros2 run demo_nodes_cpp talker
 
   listener:
     build: ./Dockerfile
-    environment: ./config.env
+    environment:
+      - ./config.env
     volumes:
       - ./keystore/listener:/keystore:ro
     command: ros2 run demo_nodes_py listener
