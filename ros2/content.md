@@ -10,14 +10,15 @@ The Robot Operating System (ROS) is a set of software libraries and tools that h
 
 ## Creating a `Dockerfile` to install ROS 2 packages
 
-To create your own ROS 2 docker images and install custom  packages, here's a simple example of installing the C++ client library demos using the official released Debian packages via apt-get.
+To create your own ROS 2 docker images and install custom  packages, here's a simple example of installing the C++ and Python client library demos using the official released Debian packages via apt-get.
 
 ```dockerfile
 FROM %%IMAGE%%:ros-core
 
 # install ros packages for installed release
 RUN apt-get update && apt-get install -y \
-      ros-${ROS_DISTRO}-demo-nodes-cpp && \
+      ros-${ROS_DISTRO}-demo-nodes-cpp \
+      ros-${ROS_DISTRO}-demo-nodes-py && \
     rm -rf /var/lib/apt/lists/*
 
 # run ros packge launch file
@@ -136,104 +137,117 @@ The ROS runtime "graph" is a peer-to-peer network of processes (potentially dist
 
 ## Deployment example
 
-If we want our all ROS nodes to easily talk to each other, we'll can use a virtual network to connect the separate containers. In this short example, we'll create a virtual network, spin up a new container running `roscore` advertised as the `master` service on the new network, then spawn a message publisher and subscriber process as services on the same network.
+### Docker Compose
 
-### Build image
+In this example we'll demonstrate using [`docker-compose`](https://docs.docker.com/compose/) to spawn a pair of message publisher and subscriber nodes in seperate containers connected through shared software defined network.
 
-> Create a `Dockerfile` that installs ROS 2 demos:
-
-```dockerfile
-FROM %%IMAGE%%
-# install ros 2 demo packages
-RUN apt-get update && apt-get install -y \
-      ros-${ROS_DISTRO}-demo-nodes-cpp \
-      ros-${ROS_DISTRO}-demo-nodes-py \
-    && rm -rf /var/lib/apt/lists/
-```
-
-> Then to build the image from within the same directory:
-
-```console
-$ docker build --tag %%IMAGE%%:my_demo .
-```
-
-
-```console
-$ docker
-```
-
-
-
-
-
-
-
-
-
-
-Now that you have an appreciation for bootstrapping a distributed ROS example manually, lets try and automate it using [`docker-compose`](https://docs.docker.com/compose/)\.
-
-> Start by making a folder named `rostutorials` and moving the Dockerfile we used earlier inside this directory. Then create a yaml file named `docker-compose.yml` in the same directory and paste the following inside:
+> Create the directory `~/ros2_demos` and add the first `Dockerfile` example from above. In the same directory, also create file `docker-compose.yml` with the following that runs a C++ publisher with a Python subscriber:
 
 ```yaml
 version: '3'
 
 services:
   talker:
-    image: ros2:my_demo
-    environment:
-      - "ROS_DOMAIN_ID=0"
-      - "ROS_SECURITY_ROOT_DIRECTORY=/keystore"
-      - "ROS_SECURITY_ENABLE=true"
-      - "ROS_SECURITY_STRATEGY=Enforce"
-    volumes:
-      - talker_keystore:/keystore:ro
+    build: ./Dockerfile
     command: ros2 run demo_nodes_cpp talker
 
   listener:
-    image: ros2:my_demo
-    environment:
-      - "ROS_DOMAIN_ID=0"
-      - "ROS_SECURITY_ROOT_DIRECTORY=/keystore"
-      - "ROS_SECURITY_ENABLE=true"
-      - "ROS_SECURITY_STRATEGY=Enforce"
-    volumes:
-      - listener_keystore:/keystore:ro
+    build: ./Dockerfile
     command: ros2 run demo_nodes_py listener
-
-volumes:
-  talker_keystore:
-    external: true
-  listener_keystore:
-    external: true
 ```
 
-> Now from inside the same folder, use docker-copose to launch our ROS nodes and specify that they coexist on their own network:
+> Use docker-copose inside the same directory to launch our ROS nodes. Given the containers created derive from the same docker compose project, they will coexist on shared project network:
 
 ```console
 $ docker-compose up -d
 ```
 
-> Notice that a new network named `rostutorials_default` has now been created, you can inspect it further with:
+> Notice that a new network named `ros2_demos` has been created, as can be shown further with:
 
 ```console
-$ docker network inspect rostutorials_default
+$ docker network inspect ros2_demos
 ```
 
-> We can monitor the logged output of each service, such as the listener node like so:
+> We can monitor the logged output of each container, such as the listener node like so:
 
 ```console
 $ docker-compose logs listener
 ```
 
-> Finally, we can stop and remove all the relevant containers using docker-copose from the same directory:
+> Finally, we can stop and remove all the relevant containers using docker-compose from the same directory:
 
 ```console
 $ docker-compose stop
 $ docker-compose rm
 ```
 
-> Note: the auto-generated network, `rostutorials_default`, will persist over the life of the docker engine or until you explicitly remove it using [`docker network rm`](https://docs.docker.com/engine/reference/commandline/network_rm/)\.
+> Note: the auto-generated network, `ros2_demos`, will persist until you explicitly remove it using `docker-compose down`.
+
+
+### Securing ROS 2
+
+Lets build upon the example above by adding authenticated encryption to the message transport. This is done by leveraging [Secure DDS](https://www.omg.org/spec/DDS-SECURITY). We'll use the same ROS 2 docker image to bootstrap the PKI, CAs, and Digitally Signed files.
+
+> Create a script at `~/ros2_demos/keystore/bootstrap_keystore.bash` to bootstrap a keystore and add entries for each node:
+
+``` shell
+#!/usr/bin/env bash
+# Bootstrap ROS 2 keystore
+ros2 security create_keystore ./
+ros2 security create_key ./ talker
+ros2 security create_key ./ listener
+```
+
+> Create a enforcement file at `~/ros2_demos/config.env` to configure ROS 2 Security:
+
+
+``` shell
+# Configure ROS 2 Security
+ROS_SECURITY_NODE_DIRECTORY=/keystore
+ROS_SECURITY_STRATEGY=Enforce
+ROS_SECURITY_ENABLE=true
+ROS_DOMAIN_ID=0
+```
+
+> Use a temporary container to run the keystore bootstraping script in the keystore directory:
+
+
+```console
+$ docker run -it --rm \
+    --env-file ./config.env \
+    --volume ./keystore:/keystore:rw \
+    --workdir /keystore \
+    ros2 bash bootstrap_keystore.bash
+```
+
+> Now modify the original `docker-compose.yml` to use the configured environment and respective keystore entries:
+
+```yaml
+version: '3'
+
+services:
+  talker:
+    build: ./Dockerfile
+    environment: ./config.env
+    volumes:
+      - ./keystore/talker:/keystore:ro
+    command: ros2 run demo_nodes_cpp talker
+
+  listener:
+    build: ./Dockerfile
+    environment: ./config.env
+    volumes:
+      - ./keystore/listener:/keystore:ro
+    command: ros2 run demo_nodes_py listener
+```
+
+> Now simply startup docker-compose as before:
+
+``` command
+$ docker-compose up
+```
+
+Note: So far this has only added authenticated encryption, i.e. only  participants with public certificates signed by a trusted CA may join the domain. To enable access control within the secure domain, i.e. restrict which and how topics may be used by participants, more such details can be found [here](https://github.com/ros2/sros2/).
 
 # More Resources
 
