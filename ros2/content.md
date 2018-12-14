@@ -21,7 +21,7 @@ RUN apt-get update && apt-get install -y \
       ros-${ROS_DISTRO}-demo-nodes-py && \
     rm -rf /var/lib/apt/lists/*
 
-# run ros packge launch file
+# run ros package launch file
 CMD ["ros2", "launch", "demo_nodes_cpp", "talker_listener.launch.py"]
 ```
 
@@ -86,7 +86,7 @@ RUN sed --in-place --expression \
       '$isource "$ROS2_WS/install/setup.bash"' \
       /ros2_entrypoint.sh
 
-# run ros packge launch file
+# run ros package launch file
 CMD ["ros2", "launch", "demo_nodes_cpp", "talker_listener.launch.py"]
 ```
 
@@ -141,7 +141,7 @@ Alternatively, more permissive network setting can be use to share all host netw
 
 ### Docker Compose
 
-In this example we'll demonstrate using [`docker-compose`](https://docs.docker.com/compose/) to spawn a pair of message publisher and subscriber nodes in seperate containers connected through shared software defined network.
+In this example we'll demonstrate using [`docker-compose`](https://docs.docker.com/compose/) to spawn a pair of message publisher and subscriber nodes in separate containers connected through shared software defined network.
 
 > Create the directory `~/ros2_demos` and add the first `Dockerfile` example from above. In the same directory, also create file `docker-compose.yml` with the following that runs a C++ publisher with a Python subscriber:
 
@@ -158,7 +158,7 @@ services:
     command: ros2 run demo_nodes_py listener
 ```
 
-> Use docker-copose inside the same directory to launch our ROS nodes. Given the containers created derive from the same docker compose project, they will coexist on shared project network:
+> Use docker-compose inside the same directory to launch our ROS nodes. Given the containers created derive from the same docker compose project, they will coexist on shared project network:
 
 ```console
 $ docker-compose up -d
@@ -211,7 +211,7 @@ ROS_SECURITY_ENABLE=true
 ROS_DOMAIN_ID=0
 ```
 
-> Use a temporary container to run the keystore bootstraping script in the keystore directory:
+> Use a temporary container to run the keystore bootstrapping script in the keystore directory:
 
 
 ```console
