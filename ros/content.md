@@ -1,6 +1,6 @@
-# What is [ROS 2](https://index.ros.org/doc/ros2)?
+# What is [ROS](https://index.ros.org/doc/ros2)?
 
-The Robot Operating System (ROS) is a set of software libraries and tools that help you build robot applications. From drivers to state-of-the-art algorithms, and with powerful developer tools, ROS has what you need for your next robotics project. And it's all open source. ROS 2 is the next-generation ROS: building upon modern middleware for decentralized discovery, message serialization, and secure transport with quality of service enabling high performance, low latency, language agnostic distributed computing for robotic systems.
+The Robot Operating System (ROS) is a set of software libraries and tools that help you build robot applications. From drivers to state-of-the-art algorithms, and with powerful developer tools, ROS has what you need for your next robotics project. And it's all open source.
 
 > [wikipedia.org/wiki/Robot_Operating_System](https://en.wikipedia.org/wiki/Robot_Operating_System)
 
@@ -8,12 +8,12 @@ The Robot Operating System (ROS) is a set of software libraries and tools that h
 
 # How to use this image
 
-## Creating a `Dockerfile` to install ROS 2 packages
+## Creating a `Dockerfile` to install ROS packages
 
-To create your own ROS 2 docker images and install custom  packages, here's a simple example of installing the C++ and Python client library demos using the official released Debian packages via apt-get.
+To create your own ROS docker images and install custom  packages, here's a simple example of installing the C++ and Python client library demos using the official released Debian packages via apt-get.
 
 ```dockerfile
-FROM %%IMAGE%%:ros-core
+FROM %%IMAGE%%:crystal
 
 # install ros packages for installed release
 RUN apt-get update && apt-get install -y \
@@ -25,11 +25,11 @@ RUN apt-get update && apt-get install -y \
 CMD ["ros2", "launch", "demo_nodes_cpp", "talker_listener.launch.py"]
 ```
 
-Note: all ROS 2 images include a default entrypoint that sources the ROS environment setup before exiting the configured command, in this case the demo packages launch file. You can then build and run the Docker image like so:
+Note: all ROS images include a default entrypoint that sources the ROS environment setup before exiting the configured command, in this case the demo packages launch file. You can then build and run the Docker image like so:
 
 ```console
-$ docker build -t my/ros2:app .
-$ docker run -it --rm my/ros2:app
+$ docker build -t my/ros:app .
+$ docker run -it --rm my/ros:app
 [INFO] [launch]: process[talker-1]: started with pid [813]
 [INFO] [launch]: process[listener-2]: started with pid [814]
 [INFO] [talker]: Publishing: 'Hello World: 1'
@@ -39,12 +39,12 @@ $ docker run -it --rm my/ros2:app
 ...
 ```
 
-## Creating a `Dockerfile` to build ROS 2 packages
+## Creating a `Dockerfile` to build ROS packages
 
-To create your own ROS 2 docker images and build custom  packages, here's a simple example of installing a package's build dependencies, compiling it from source, and installing the resulting build artifacts into a final multi-stage image layer.
+To create your own ROS docker images and build custom  packages, here's a simple example of installing a package's build dependencies, compiling it from source, and installing the resulting build artifacts into a final multi-stage image layer.
 
 ```dockerfile
-FROM %%IMAGE%%:ros-base
+FROM %%IMAGE%%:crystal-ros-base
 
 # install ros build tools
 RUN apt-get update && apt-get install -y \
@@ -52,9 +52,9 @@ RUN apt-get update && apt-get install -y \
     rm -rf /var/lib/apt/lists/*
 
 # clone ros package repo
-ENV ROS2_WS /opt/ros2_ws
-RUN mkdir -p $ROS2_WS/src
-WORKDIR $ROS2_WS
+ENV ROS_WS /opt/ros_ws
+RUN mkdir -p $ROS_WS/src
+WORKDIR $ROS_WS
 RUN git -C src clone \
       -b $ROS_DISTRO \
       https://github.com/ros2/demos.git
@@ -77,14 +77,14 @@ RUN . /opt/ros/$ROS_DISTRO/setup.sh && \
         -DCMAKE_BUILD_TYPE=Release
 
 # copy ros package install via multi-stage
-FROM %%IMAGE%%:ros-core
-ENV ROS2_WS /opt/ros2_ws
-COPY --from=0  $ROS2_WS/install $ROS2_WS/install
+FROM %%IMAGE%%:crystal-ros-core
+ENV ROS_WS /opt/ros_ws
+COPY --from=0  $ROS_WS/install $ROS_WS/install
 
 # source ros package from entrypoint
 RUN sed --in-place --expression \
-      '$isource "$ROS2_WS/install/setup.bash"' \
-      /ros2_entrypoint.sh
+      '$isource "$ROS_WS/install/setup.bash"' \
+      /ros_entrypoint.sh
 
 # run ros package launch file
 CMD ["ros2", "launch", "demo_nodes_cpp", "talker_listener.launch.py"]
@@ -94,15 +94,15 @@ Note: `--from-paths` and `--packages-select` are set here as so to only install 
 
 ```
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
-my/ros2             app-multi-stage     66c8112b2fb6        4 seconds ago       775MB
-my/ros2             app-single-stage    6b500239d0d6        2 minutes ago       797MB
+my/ros             app-multi-stage     66c8112b2fb6        4 seconds ago       775MB
+my/ros             app-single-stage    6b500239d0d6        2 minutes ago       797MB
 ```
 
 For this particular package, using a multi-stage build didn't shrink the final image by much, but for more complex applications, segmenting build setup from the runtime can help keep image sizes down. Additionally, doing so can also prepare you for releasing your package to the community, helping to reconcile dependency discrepancies you may have otherwise forgotten to declare in your `package.xml` manifest.
 
 ## Deployment use cases
 
-This dockerized image of ROS 2 is intended to provide a simplified and consistent platform to build and deploy distributed robotic applications. Built from the [official Ubuntu image](https://hub.docker.com/_/ubuntu/) and ROS's official Debian packages, it includes recent supported releases for quick access and download. This provides roboticists in research and industry with an easy way to develop, reuse and ship software for autonomous actions and task planning, control dynamics, localization and mapping, swarm behavior, as well as general system integration.
+This dockerized image of ROS is intended to provide a simplified and consistent platform to build and deploy distributed robotic applications. Built from the [official Ubuntu image](https://hub.docker.com/_/ubuntu/) and ROS's official Debian packages, it includes recent supported releases for quick access and download. This provides roboticists in research and industry with an easy way to develop, reuse and ship software for autonomous actions and task planning, control dynamics, localization and mapping, swarm behavior, as well as general system integration.
 
 Developing such complex systems with cutting edge implementations of newly published algorithms remains challenging, as repeatability and reproducibility of robotic software can fall to the wayside in the race to innovate. With the added difficulty in coding, tuning and deploying multiple software components that span across many engineering disciplines, a more collaborative approach becomes attractive. However, the technical difficulties in sharing and maintaining a collection of software over multiple robots and platforms has for a while exceeded time and effort than many smaller labs and businesses could afford.
 
@@ -115,7 +115,7 @@ The available tags include supported distros along with a hierarchy tags based o
 -	`ros-core`: barebone ROS 2 install
 -	`ros-base`: basic tools and libraries (also tagged with distro name with LTS version as `latest`)
 
-The rest of the common meta-packages such as `desktop` and `ros1-bridge` are hosted on automatic build repos under OSRF's Docker Hub profile [here](https://hub.docker.com/r/osrf/ros2/). These meta-packages include graphical dependencies and hook a host of other large packages such as X11, X server, etc. So in the interest of keep the official images lean and secure, the desktop packages are just be hosted with OSRF's profile.
+The rest of the common meta-packages such as `desktop` and `ros1-bridge` are hosted on automatic build repos under OSRF's Docker Hub profile [here](https://hub.docker.com/r/osrf/ros/). These meta-packages include graphical dependencies and hook a host of other large packages such as X11, X server, etc. So in the interest of keep the official images lean and secure, the desktop packages are just be hosted with OSRF's profile.
 
 ### Volumes
 
@@ -133,7 +133,7 @@ Some application may require device access for acquiring images from connected c
 
 ### Networks
 
-ROS 2 allows for peer-to-peer networking of processes (potentially distributed across machines) that are loosely coupled using the ROS communication infrastructure. ROS implements several different styles of communication, including synchronous RPC-style communication over services, asynchronous streaming of typed data over topics, combinations of both prior via request/reply and status/feedback over actions, and run-time settings via configuration over parameters. To abide by the best practice of [one process per container](https://docs.docker.com/articles/dockerfile_best-practices/), Docker networks can be used to string together several running ROS processes. For further details see the Deployment example further below.
+ROS allows for peer-to-peer networking of processes (potentially distributed across machines) that are loosely coupled using the ROS communication infrastructure. ROS implements several different styles of communication, including synchronous RPC-style communication over services, asynchronous streaming of typed data over topics, combinations of both prior via request/reply and status/feedback over actions, and run-time settings via configuration over parameters. To abide by the best practice of [one process per container](https://docs.docker.com/articles/dockerfile_best-practices/), Docker networks can be used to string together several running ROS processes. For further details see the Deployment example further below.
 
 Alternatively, more permissive network setting can be use to share all host network interfaces with the container, such as [`host` network driver](https://docs.docker.com/network/host/), simplifying connectivity with external network participants. Be aware however that this removes the networking namespace separation between containers, and can affect the ability of DDS participants communicate between containers, as documented [here](https://community.rti.com/kb/how-use-rti-connext-dds-communicate-across-docker-containers-using-host-driver).
 
@@ -143,7 +143,7 @@ Alternatively, more permissive network setting can be use to share all host netw
 
 In this example we'll demonstrate using [`docker-compose`](https://docs.docker.com/compose/) to spawn a pair of message publisher and subscriber nodes in separate containers connected through shared software defined network.
 
-> Create the directory `~/ros2_demos` and add the first `Dockerfile` example from above. In the same directory, also create file `docker-compose.yml` with the following that runs a C++ publisher with a Python subscriber:
+> Create the directory `~/ros_demos` and add the first `Dockerfile` example from above. In the same directory, also create file `docker-compose.yml` with the following that runs a C++ publisher with a Python subscriber:
 
 ```yaml
 version: '3'
@@ -164,10 +164,10 @@ services:
 $ docker-compose up -d
 ```
 
-> Notice that a new network named `ros2_demos` has been created, as can be shown further with:
+> Notice that a new network named `ros_demos` has been created, as can be shown further with:
 
 ```console
-$ docker network inspect ros2_demos
+$ docker network inspect ros_demos
 ```
 
 > We can monitor the logged output of each container, such as the listener node like so:
@@ -183,28 +183,28 @@ $ docker-compose stop
 $ docker-compose rm
 ```
 
-> Note: the auto-generated network, `ros2_demos`, will persist until you explicitly remove it using `docker-compose down`.
+> Note: the auto-generated network, `ros_demos`, will persist until you explicitly remove it using `docker-compose down`.
 
 
-### Securing ROS 2
+### Securing ROS
 
-Lets build upon the example above by adding authenticated encryption to the message transport. This is done by leveraging [Secure DDS](https://www.omg.org/spec/DDS-SECURITY). We'll use the same ROS 2 docker image to bootstrap the PKI, CAs, and Digitally Signed files.
+Lets build upon the example above by adding authenticated encryption to the message transport. This is done by leveraging [Secure DDS](https://www.omg.org/spec/DDS-SECURITY). We'll use the same ROS docker image to bootstrap the PKI, CAs, and Digitally Signed files.
 
-> Create a script at `~/ros2_demos/keystore/bootstrap_keystore.bash` to bootstrap a keystore and add entries for each node:
+> Create a script at `~/ros_demos/keystore/bootstrap_keystore.bash` to bootstrap a keystore and add entries for each node:
 
 ``` shell
 #!/usr/bin/env bash
-# Bootstrap ROS 2 keystore
+# Bootstrap ROS keystore
 ros2 security create_keystore ./
 ros2 security create_key ./ talker
 ros2 security create_key ./ listener
 ```
 
-> Create a enforcement file at `~/ros2_demos/config.env` to configure ROS 2 Security:
+> Create a enforcement file at `~/ros_demos/config.env` to configure ROS Security:
 
 
 ``` shell
-# Configure ROS 2 Security
+# Configure ROS Security
 ROS_SECURITY_NODE_DIRECTORY=/keystore
 ROS_SECURITY_STRATEGY=Enforce
 ROS_SECURITY_ENABLE=true
