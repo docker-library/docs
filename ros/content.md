@@ -10,7 +10,7 @@ The Robot Operating System (ROS) is a set of software libraries and tools that h
 
 ## Creating a `Dockerfile` to install ROS packages
 
-To create your own ROS docker images and install custom  packages, here's a simple example of installing the C++ and Python client library demos using the official released Debian packages via apt-get.
+To create your own ROS docker images and install custom packages, here's a simple example of installing the C++ and Python client library demos using the official released Debian packages via apt-get.
 
 ```dockerfile
 FROM %%IMAGE%%:crystal
@@ -41,7 +41,7 @@ $ docker run -it --rm my/ros:app
 
 ## Creating a `Dockerfile` to build ROS packages
 
-To create your own ROS docker images and build custom  packages, here's a simple example of installing a package's build dependencies, compiling it from source, and installing the resulting build artifacts into a final multi-stage image layer.
+To create your own ROS docker images and build custom packages, here's a simple example of installing a package's build dependencies, compiling it from source, and installing the resulting build artifacts into a final multi-stage image layer.
 
 ```dockerfile
 FROM %%IMAGE%%:crystal-ros-base
@@ -92,11 +92,9 @@ CMD ["ros2", "launch", "demo_nodes_cpp", "talker_listener.launch.py"]
 
 Note: `--from-paths` and `--packages-select` are set here as so to only install the dependencies and build for the `demo_nodes_cpp` package, one among many in the demo git repo that was cloned. To install the dependencies and build all the packages in the source workspace, merely change the scope by setting `--from-paths src/` and dropping the `--packages-select` arguments.
 
-```
-REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
-my/ros             app-multi-stage     66c8112b2fb6        4 seconds ago       775MB
-my/ros             app-single-stage    6b500239d0d6        2 minutes ago       797MB
-```
+	REPOSITORY    TAG                 IMAGE ID        CREATED         SIZE
+	my/ros        app-multi-stage     66c8112b2fb6    4 seconds ago   775MB
+	my/ros        app-single-stage    6b500239d0d6    2 minutes ago   797MB
 
 For this particular package, using a multi-stage build didn't shrink the final image by much, but for more complex applications, segmenting build setup from the runtime can help keep image sizes down. Additionally, doing so can also prepare you for releasing your package to the community, helping to reconcile dependency discrepancies you may have otherwise forgotten to declare in your `package.xml` manifest.
 
@@ -185,14 +183,13 @@ $ docker-compose rm
 
 > Note: the auto-generated network, `ros_demos`, will persist until you explicitly remove it using `docker-compose down`.
 
-
 ### Securing ROS
 
 Lets build upon the example above by adding authenticated encryption to the message transport. This is done by leveraging [Secure DDS](https://www.omg.org/spec/DDS-SECURITY). We'll use the same ROS docker image to bootstrap the PKI, CAs, and Digitally Signed files.
 
 > Create a script at `~/ros_demos/keystore/bootstrap_keystore.bash` to bootstrap a keystore and add entries for each node:
 
-``` shell
+```shell
 #!/usr/bin/env bash
 # Bootstrap ROS keystore
 ros2 security create_keystore ./
@@ -202,8 +199,7 @@ ros2 security create_key ./ listener
 
 > Create a enforcement file at `~/ros_demos/config.env` to configure ROS Security:
 
-
-``` shell
+```shell
 # Configure ROS Security
 ROS_SECURITY_NODE_DIRECTORY=/keystore
 ROS_SECURITY_STRATEGY=Enforce
@@ -212,7 +208,6 @@ ROS_DOMAIN_ID=0
 ```
 
 > Use a temporary container to run the keystore bootstrapping script in the keystore directory:
-
 
 ```console
 $ docker run -it --rm \
@@ -247,11 +242,11 @@ services:
 
 > Now simply startup docker-compose as before:
 
-``` command
+```console
 $ docker-compose up
 ```
 
-Note: So far this has only added authenticated encryption, i.e. only  participants with public certificates signed by a trusted CA may join the domain. To enable access control within the secure domain, i.e. restrict which and how topics may be used by participants, more such details can be found [here](https://github.com/ros2/sros2/).
+Note: So far this has only added authenticated encryption, i.e. only participants with public certificates signed by a trusted CA may join the domain. To enable access control within the secure domain, i.e. restrict which and how topics may be used by participants, more such details can be found [here](https://github.com/ros2/sros2/).
 
 # More Resources
 
