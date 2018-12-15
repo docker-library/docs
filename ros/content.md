@@ -10,7 +10,7 @@ The Robot Operating System (ROS) is a set of software libraries and tools that h
 
 ## Creating a `Dockerfile` to install ROS packages
 
-To create your own ROS docker images and install custom packages, here's a simple example of installing the C++ and Python client library demos using the official released Debian packages via apt-get.
+To create your own ROS docker images and install custom packages, here's a simple example of installing the C++, Python client library demos and security CLI using the official released Debian packages via apt-get.
 
 ```dockerfile
 FROM %%IMAGE%%:crystal
@@ -18,7 +18,8 @@ FROM %%IMAGE%%:crystal
 # install ros packages for installed release
 RUN apt-get update && apt-get install -y \
       ros-${ROS_DISTRO}-demo-nodes-cpp \
-      ros-${ROS_DISTRO}-demo-nodes-py && \
+      ros-${ROS_DISTRO}-demo-nodes-py \
+      ros-${ROS_DISTRO}-sros2 && \
     rm -rf /var/lib/apt/lists/*
 
 # run ros package launch file
@@ -195,6 +196,7 @@ Lets build upon the example above by adding authenticated encryption to the mess
 ros2 security create_keystore ./
 ros2 security create_key ./ talker
 ros2 security create_key ./ listener
+chown -R $(stat -c '%u:%g' ./) ./
 ```
 
 > Create a enforcement file at `~/ros_demos/config.env` to configure ROS Security:
