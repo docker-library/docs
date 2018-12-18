@@ -30,6 +30,14 @@ WARNING:
 -	[`3.0.0-alpha-3-jre8`, `3.0-jre8`, `3.0.0-alpha-3-jre`, `3.0-jre`, `3.0.0-alpha-3`, `3.0` (*jre8/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/9a6a4fe1552a72d89833a01ee2ab150005c174e0/jre8/Dockerfile)
 -	[`3.0.0-alpha-3-jdk8-alpine`, `3.0-jdk8-alpine`, `3.0.0-alpha-3-jdk-alpine`, `3.0-jdk-alpine` (*jdk8-alpine/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/9a6a4fe1552a72d89833a01ee2ab150005c174e0/jdk8-alpine/Dockerfile)
 -	[`3.0.0-alpha-3-jre8-alpine`, `3.0-jre8-alpine`, `3.0.0-alpha-3-jre-alpine`, `3.0-jre-alpine`, `3.0.0-alpha-3-alpine`, `3.0-alpine` (*jre8-alpine/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/9a6a4fe1552a72d89833a01ee2ab150005c174e0/jre8-alpine/Dockerfile)
+-	[`2.4.16-jdk7`, `2.4-jdk7` (*jdk7/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/0fcacaba483ae3c210542723d20654ce1a4b7d20/jdk7/Dockerfile)
+-	[`2.4.16-jre7`, `2.4-jre7` (*jre7/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/0fcacaba483ae3c210542723d20654ce1a4b7d20/jre7/Dockerfile)
+-	[`2.4.16-jdk7-alpine`, `2.4-jdk7-alpine` (*jdk7-alpine/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/0fcacaba483ae3c210542723d20654ce1a4b7d20/jdk7-alpine/Dockerfile)
+-	[`2.4.16-jre7-alpine`, `2.4-jre7-alpine` (*jre7-alpine/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/0fcacaba483ae3c210542723d20654ce1a4b7d20/jre7-alpine/Dockerfile)
+-	[`2.4.16-jdk8`, `2.4-jdk8`, `2.4.16-jdk`, `2.4-jdk` (*jdk8/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/0fcacaba483ae3c210542723d20654ce1a4b7d20/jdk8/Dockerfile)
+-	[`2.4.16-jre8`, `2.4-jre8`, `2.4.16-jre`, `2.4-jre`, `2.4.16`, `2.4` (*jre8/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/0fcacaba483ae3c210542723d20654ce1a4b7d20/jre8/Dockerfile)
+-	[`2.4.16-jdk8-alpine`, `2.4-jdk8-alpine`, `2.4.16-jdk-alpine`, `2.4-jdk-alpine` (*jdk8-alpine/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/0fcacaba483ae3c210542723d20654ce1a4b7d20/jdk8-alpine/Dockerfile)
+-	[`2.4.16-jre8-alpine`, `2.4-jre8-alpine`, `2.4.16-jre-alpine`, `2.4-jre-alpine`, `2.4.16-alpine`, `2.4-alpine` (*jre8-alpine/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/0fcacaba483ae3c210542723d20654ce1a4b7d20/jre8-alpine/Dockerfile)
 
 # Quick reference
 

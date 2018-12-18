@@ -19,8 +19,9 @@ WARNING:
 -	[`7.10`, `7`, `LTS-2015` (*7.10/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/b5c1f07464530ef23f78671547cfbe94bc027848/7.10/Dockerfile)
 -	[`8.10`, `8`, `LTS-2016` (*8.10/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/410650daecfa5d8bc79dea54a875d16f47b80eda/8.10/Dockerfile)
 -	[`9.10`, `9`, `LTS-2017`, `LTS` (*9.10/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/5c0031a6e7ac1f52a9ce80b26fd8e764d319a8b0/9.10/Dockerfile)
--	[`10.1` (*10.1/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/410650daecfa5d8bc79dea54a875d16f47b80eda/10.1/Dockerfile)
--	[`10.2`, `10`, `FT`, `latest` (*10.2/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/5c0031a6e7ac1f52a9ce80b26fd8e764d319a8b0/10.2/Dockerfile)
+-	[`10.1` (*10.1/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/25b599a0a9a26412d00915506b080ec85e1dc56d/10.1/Dockerfile)
+-	[`10.2` (*10.2/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/5c0031a6e7ac1f52a9ce80b26fd8e764d319a8b0/10.2/Dockerfile)
+-	[`10.3`, `10`, `FT`, `latest` (*10.3/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/7be68c0016f9697792dfe01129e9ab12f47bfe3e/10.3/Dockerfile)
 
 # Quick reference
 
