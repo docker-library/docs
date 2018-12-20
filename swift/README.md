@@ -24,13 +24,13 @@ WARNING:
 # Quick reference
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[Swift Docker Community Forums](https://forums.swift.org/c/server/docker)
 
 -	**Where to file issues**:  
-	[https://github.com/apple/swift-docker/issues](https://github.com/apple/swift-docker/issues)
+	[https://bugs.swift.org](https://bugs.swift.org) Component: Docker
 
 -	**Maintained by**:  
-	[the Swift Community](https://github.com/apple/swift-docker))
+	[the Swift Community](https://github.com/apple/swift-docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/swift/)
