@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.9-dev11`, `1.9-rc`, `rc` (*1.9-rc/Dockerfile*)](https://github.com/docker-library/haproxy/blob/2683fad346bd01ae25e65176116e090eeb561133/1.9-rc/Dockerfile)
--	[`1.9-dev11-alpine`, `1.9-rc-alpine`, `rc-alpine` (*1.9-rc/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/2683fad346bd01ae25e65176116e090eeb561133/1.9-rc/alpine/Dockerfile)
--	[`1.8.15`, `1.8`, `1`, `latest` (*1.8/Dockerfile*)](https://github.com/docker-library/haproxy/blob/85706f5fd4243468bbcfe7afb3ee852b6b35cdba/1.8/Dockerfile)
--	[`1.8.15-alpine`, `1.8-alpine`, `1-alpine`, `alpine` (*1.8/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/85706f5fd4243468bbcfe7afb3ee852b6b35cdba/1.8/alpine/Dockerfile)
+-	[`1.9.0`, `1.9`, `1`, `latest` (*1.9/Dockerfile*)](https://github.com/docker-library/haproxy/blob/7a79c7cdad7e2b1e81bd342b7bc0204027b8f326/1.9/Dockerfile)
+-	[`1.9.0-alpine`, `1.9-alpine`, `1-alpine`, `alpine` (*1.9/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/7a79c7cdad7e2b1e81bd342b7bc0204027b8f326/1.9/alpine/Dockerfile)
+-	[`1.8.15`, `1.8` (*1.8/Dockerfile*)](https://github.com/docker-library/haproxy/blob/85706f5fd4243468bbcfe7afb3ee852b6b35cdba/1.8/Dockerfile)
+-	[`1.8.15-alpine`, `1.8-alpine` (*1.8/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/85706f5fd4243468bbcfe7afb3ee852b6b35cdba/1.8/alpine/Dockerfile)
 -	[`1.7.11`, `1.7` (*1.7/Dockerfile*)](https://github.com/docker-library/haproxy/blob/4a2d233b1a42e255b8e4097d50d2241b97bd446e/1.7/Dockerfile)
 -	[`1.7.11-alpine`, `1.7-alpine` (*1.7/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/4a2d233b1a42e255b8e4097d50d2241b97bd446e/1.7/alpine/Dockerfile)
 -	[`1.6.14`, `1.6` (*1.6/Dockerfile*)](https://github.com/docker-library/haproxy/blob/4a2d233b1a42e255b8e4097d50d2241b97bd446e/1.6/Dockerfile)
