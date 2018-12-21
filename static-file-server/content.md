@@ -52,10 +52,7 @@ TLS_KEY=
 
 ### YAML Configuration File
 
-YAML settings are individually overridden by the corresponding environment
-variable. The following is an example configuration file with defaults. Pass in
-the path to the configuration file using the command line option
-('-c', '-config', '--config').
+YAML settings are individually overridden by the corresponding environment variable. The following is an example configuration file with defaults. Pass in the path to the configuration file using the command line option ('-c', '-config', '--config').
 
 ```yaml
 debug: false
