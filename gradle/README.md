@@ -26,16 +26,6 @@ WARNING:
 -	[`5.0.0-jdk11-slim`, `5.0-jdk11-slim`, `jdk11-slim` (*jdk11-slim/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/4c98d5f394f8d3f9b448ff6fa9ad6c2de8983757/jdk11-slim/Dockerfile)
 -	[`5.0.0-jre11`, `5.0-jre11`, `jre11` (*jre11/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/4c98d5f394f8d3f9b448ff6fa9ad6c2de8983757/jre11/Dockerfile)
 -	[`5.0.0-jre11-slim`, `5.0-jre11-slim`, `jre11-slim` (*jre11-slim/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/4c98d5f394f8d3f9b448ff6fa9ad6c2de8983757/jre11-slim/Dockerfile)
--	[`4.10.3-jdk8`, `4.10-jdk8`, `4.10.3-jdk`, `4.10-jdk`, `4.10.3`, `4.10` (*jdk8/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/3be49746087177d455995271b6eeeba1d59b003e/jdk8/Dockerfile)
--	[`4.10.3-jre8`, `4.10-jre8`, `4.10.3-jre`, `4.10-jre` (*jre8/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/3be49746087177d455995271b6eeeba1d59b003e/jre8/Dockerfile)
--	[`4.10.3-jdk8-alpine`, `4.10-jdk8-alpine`, `4.10.3-jdk-alpine`, `4.10-jdk-alpine`, `4.10.3-alpine`, `4.10-alpine` (*jdk8-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/3be49746087177d455995271b6eeeba1d59b003e/jdk8-alpine/Dockerfile)
--	[`4.10.3-jdk8-slim`, `4.10-jdk8-slim`, `4.10.3-jdk-slim`, `4.10-jdk-slim`, `4.10.3-slim`, `4.10-slim` (*jdk8-slim/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/3be49746087177d455995271b6eeeba1d59b003e/jdk8-slim/Dockerfile)
--	[`4.10.3-jre8-alpine`, `4.10-jre8-alpine`, `4.10.3-jre-alpine`, `4.10-jre-alpine` (*jre8-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/3be49746087177d455995271b6eeeba1d59b003e/jre8-alpine/Dockerfile)
--	[`4.10.3-jre8-slim`, `4.10-jre8-slim`, `4.10.3-jre-slim`, `4.10-jre-slim` (*jre8-slim/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/3be49746087177d455995271b6eeeba1d59b003e/jre8-slim/Dockerfile)
--	[`4.10.3-jdk11`, `4.10-jdk11` (*jdk11/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/3be49746087177d455995271b6eeeba1d59b003e/jdk11/Dockerfile)
--	[`4.10.3-jdk11-slim`, `4.10-jdk11-slim` (*jdk11-slim/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/3be49746087177d455995271b6eeeba1d59b003e/jdk11-slim/Dockerfile)
--	[`4.10.3-jre11`, `4.10-jre11` (*jre11/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/3be49746087177d455995271b6eeeba1d59b003e/jre11/Dockerfile)
--	[`4.10.3-jre11-slim`, `4.10-jre11-slim` (*jre11-slim/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/3be49746087177d455995271b6eeeba1d59b003e/jre11-slim/Dockerfile)
 
 # Quick reference
 
