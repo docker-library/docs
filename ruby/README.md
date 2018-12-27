@@ -16,14 +16,14 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.6.0-rc2-stretch`, `2.6-rc-stretch`, `rc-stretch`, `2.6.0-rc2`, `2.6-rc`, `rc` (*2.6-rc/stretch/Dockerfile*)](https://github.com/docker-library/ruby/blob/9f560c29e7d37e9b3e646c73bb829c56eb70d763/2.6-rc/stretch/Dockerfile)
--	[`2.6.0-rc2-slim-stretch`, `2.6-rc-slim-stretch`, `rc-slim-stretch`, `2.6.0-rc2-slim`, `2.6-rc-slim`, `rc-slim` (*2.6-rc/stretch/slim/Dockerfile*)](https://github.com/docker-library/ruby/blob/9f560c29e7d37e9b3e646c73bb829c56eb70d763/2.6-rc/stretch/slim/Dockerfile)
--	[`2.6.0-rc2-alpine3.8`, `2.6-rc-alpine3.8`, `rc-alpine3.8`, `2.6.0-rc2-alpine`, `2.6-rc-alpine`, `rc-alpine` (*2.6-rc/alpine3.8/Dockerfile*)](https://github.com/docker-library/ruby/blob/9f560c29e7d37e9b3e646c73bb829c56eb70d763/2.6-rc/alpine3.8/Dockerfile)
--	[`2.6.0-rc2-alpine3.7`, `2.6-rc-alpine3.7`, `rc-alpine3.7` (*2.6-rc/alpine3.7/Dockerfile*)](https://github.com/docker-library/ruby/blob/9f560c29e7d37e9b3e646c73bb829c56eb70d763/2.6-rc/alpine3.7/Dockerfile)
--	[`2.5.3-stretch`, `2.5-stretch`, `2-stretch`, `stretch`, `2.5.3`, `2.5`, `2`, `latest` (*2.5/stretch/Dockerfile*)](https://github.com/docker-library/ruby/blob/0ad99abb2b6d2df55d7b9b38440dacfe436fe0c3/2.5/stretch/Dockerfile)
--	[`2.5.3-slim-stretch`, `2.5-slim-stretch`, `2-slim-stretch`, `slim-stretch`, `2.5.3-slim`, `2.5-slim`, `2-slim`, `slim` (*2.5/stretch/slim/Dockerfile*)](https://github.com/docker-library/ruby/blob/0ad99abb2b6d2df55d7b9b38440dacfe436fe0c3/2.5/stretch/slim/Dockerfile)
--	[`2.5.3-alpine3.8`, `2.5-alpine3.8`, `2-alpine3.8`, `alpine3.8`, `2.5.3-alpine`, `2.5-alpine`, `2-alpine`, `alpine` (*2.5/alpine3.8/Dockerfile*)](https://github.com/docker-library/ruby/blob/0ad99abb2b6d2df55d7b9b38440dacfe436fe0c3/2.5/alpine3.8/Dockerfile)
--	[`2.5.3-alpine3.7`, `2.5-alpine3.7`, `2-alpine3.7`, `alpine3.7` (*2.5/alpine3.7/Dockerfile*)](https://github.com/docker-library/ruby/blob/0ad99abb2b6d2df55d7b9b38440dacfe436fe0c3/2.5/alpine3.7/Dockerfile)
+-	[`2.6.0-stretch`, `2.6-stretch`, `2-stretch`, `stretch`, `2.6.0`, `2.6`, `2`, `latest` (*2.6/stretch/Dockerfile*)](https://github.com/docker-library/ruby/blob/d4be0c416c61f1de327badb94e629aa993c2e2b4/2.6/stretch/Dockerfile)
+-	[`2.6.0-slim-stretch`, `2.6-slim-stretch`, `2-slim-stretch`, `slim-stretch`, `2.6.0-slim`, `2.6-slim`, `2-slim`, `slim` (*2.6/stretch/slim/Dockerfile*)](https://github.com/docker-library/ruby/blob/d4be0c416c61f1de327badb94e629aa993c2e2b4/2.6/stretch/slim/Dockerfile)
+-	[`2.6.0-alpine3.8`, `2.6-alpine3.8`, `2-alpine3.8`, `alpine3.8`, `2.6.0-alpine`, `2.6-alpine`, `2-alpine`, `alpine` (*2.6/alpine3.8/Dockerfile*)](https://github.com/docker-library/ruby/blob/d4be0c416c61f1de327badb94e629aa993c2e2b4/2.6/alpine3.8/Dockerfile)
+-	[`2.6.0-alpine3.7`, `2.6-alpine3.7`, `2-alpine3.7`, `alpine3.7` (*2.6/alpine3.7/Dockerfile*)](https://github.com/docker-library/ruby/blob/d4be0c416c61f1de327badb94e629aa993c2e2b4/2.6/alpine3.7/Dockerfile)
+-	[`2.5.3-stretch`, `2.5-stretch`, `2.5.3`, `2.5` (*2.5/stretch/Dockerfile*)](https://github.com/docker-library/ruby/blob/0ad99abb2b6d2df55d7b9b38440dacfe436fe0c3/2.5/stretch/Dockerfile)
+-	[`2.5.3-slim-stretch`, `2.5-slim-stretch`, `2.5.3-slim`, `2.5-slim` (*2.5/stretch/slim/Dockerfile*)](https://github.com/docker-library/ruby/blob/0ad99abb2b6d2df55d7b9b38440dacfe436fe0c3/2.5/stretch/slim/Dockerfile)
+-	[`2.5.3-alpine3.8`, `2.5-alpine3.8`, `2.5.3-alpine`, `2.5-alpine` (*2.5/alpine3.8/Dockerfile*)](https://github.com/docker-library/ruby/blob/0ad99abb2b6d2df55d7b9b38440dacfe436fe0c3/2.5/alpine3.8/Dockerfile)
+-	[`2.5.3-alpine3.7`, `2.5-alpine3.7` (*2.5/alpine3.7/Dockerfile*)](https://github.com/docker-library/ruby/blob/0ad99abb2b6d2df55d7b9b38440dacfe436fe0c3/2.5/alpine3.7/Dockerfile)
 -	[`2.4.5-stretch`, `2.4-stretch`, `2.4.5`, `2.4` (*2.4/stretch/Dockerfile*)](https://github.com/docker-library/ruby/blob/fec6089b541d8de9abc8646781785293f8e051d3/2.4/stretch/Dockerfile)
 -	[`2.4.5-slim-stretch`, `2.4-slim-stretch`, `2.4.5-slim`, `2.4-slim` (*2.4/stretch/slim/Dockerfile*)](https://github.com/docker-library/ruby/blob/fec6089b541d8de9abc8646781785293f8e051d3/2.4/stretch/slim/Dockerfile)
 -	[`2.4.5-jessie`, `2.4-jessie` (*2.4/jessie/Dockerfile*)](https://github.com/docker-library/ruby/blob/fec6089b541d8de9abc8646781785293f8e051d3/2.4/jessie/Dockerfile)
