@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.16.0.179`, `latest`, `5.16.0`, `5.16`, `5` (*5.16.0.179/Dockerfile*)](https://github.com/mono/docker/blob/3cb13514d4bfb239a4836b58fc137c7d9dda4da0/5.16.0.179/Dockerfile)
--	[`5.16.0.179-slim`, `slim`, `5.16.0-slim`, `5.16-slim`, `5-slim` (*5.16.0.179/slim/Dockerfile*)](https://github.com/mono/docker/blob/3cb13514d4bfb239a4836b58fc137c7d9dda4da0/5.16.0.179/slim/Dockerfile)
--	[`5.14.0.177`, `5.14.0`, `5.14` (*5.14.0.177/Dockerfile*)](https://github.com/mono/docker/blob/6d9b65ee9c9fe73b5fed6674e8ebe8e0d6f5abaf/5.14.0.177/Dockerfile)
--	[`5.14.0.177-slim`, `5.14.0-slim`, `5.14-slim` (*5.14.0.177/slim/Dockerfile*)](https://github.com/mono/docker/blob/6d9b65ee9c9fe73b5fed6674e8ebe8e0d6f5abaf/5.14.0.177/slim/Dockerfile)
+-	[`5.18.0.225`, `latest`, `5.18.0`, `5.18`, `5` (*5.18.0.225/Dockerfile*)](https://github.com/mono/docker/blob/d68573b0640b3e191bf41b64745a6f0683a9c17a/5.18.0.225/Dockerfile)
+-	[`5.18.0.225-slim`, `slim`, `5.18.0-slim`, `5.18-slim`, `5-slim` (*5.18.0.225/slim/Dockerfile*)](https://github.com/mono/docker/blob/d68573b0640b3e191bf41b64745a6f0683a9c17a/5.18.0.225/slim/Dockerfile)
+-	[`5.16.0.220`, `5.16.0`, `5.16` (*5.16.0.220/Dockerfile*)](https://github.com/mono/docker/blob/d68573b0640b3e191bf41b64745a6f0683a9c17a/5.16.0.220/Dockerfile)
+-	[`5.16.0.220-slim`, `5.16.0-slim`, `5.16-slim` (*5.16.0.220/slim/Dockerfile*)](https://github.com/mono/docker/blob/d68573b0640b3e191bf41b64745a6f0683a9c17a/5.16.0.220/slim/Dockerfile)
 -	[`4.8.0.524`, `4.8.0`, `4.8`, `4` (*4.8.0.524/Dockerfile*)](https://github.com/mono/docker/blob/0d987d93235630e05a14983c7f87500ab33c90da/4.8.0.524/Dockerfile)
 
 # Quick reference
@@ -34,7 +34,7 @@ WARNING:
 	[the Mono Project](https://github.com/mono/docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/mono/), [`arm32v7`](https://hub.docker.com/r/arm32v7/mono/), [`arm64v8`](https://hub.docker.com/r/arm64v8/mono/), [`i386`](https://hub.docker.com/r/i386/mono/)
+	[`amd64`](https://hub.docker.com/r/amd64/mono/), [`arm32v5`](https://hub.docker.com/r/arm32v5/mono/), [`arm32v7`](https://hub.docker.com/r/arm32v7/mono/), [`arm64v8`](https://hub.docker.com/r/arm64v8/mono/), [`i386`](https://hub.docker.com/r/i386/mono/), [`ppc64le`](https://hub.docker.com/r/ppc64le/mono/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/mono/` directory](https://github.com/docker-library/repo-info/blob/master/repos/mono) ([history](https://github.com/docker-library/repo-info/commits/master/repos/mono))  
