@@ -16,9 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.12.1.3` (*Dockerfile*)](https://github.com/aerospike/aerospike-server.docker/blob/eb4758c8bcb30158cef593383ac0aab119b066c1/Dockerfile)
--	[`3.13.0.4` (*Dockerfile*)](https://github.com/aerospike/aerospike-server.docker/blob/b15fcaa6058d95efb27f3e08256215b5bde9180d/Dockerfile)
--	[`3.14.1.2`, `latest` (*Dockerfile*)](https://github.com/aerospike/aerospike-server.docker/blob/21b823c72214a79f1d6c79ba3243c38823282314/Dockerfile)
+-	[`4.4.0.6`, `latest` (*Dockerfile*)](https://github.com/aerospike/aerospike-server.docker/blob/026024b1d24866a0860afd72e2300151e026e872/Dockerfile)
+-	[`3.13.0.11` (*Dockerfile*)](https://github.com/aerospike/aerospike-server.docker/blob/29be954f3d764ae15f0666c39fc14b55f13f1033/Dockerfile)
 
 # Quick reference
 
@@ -30,6 +29,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[Aerospike, Inc.](https://github.com/aerospike/aerospike-server.docker)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/aerospike/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/aerospike/` directory](https://github.com/docker-library/repo-info/blob/master/repos/aerospike) ([history](https://github.com/docker-library/repo-info/commits/master/repos/aerospike))  
@@ -43,7 +45,7 @@ WARNING:
 	[docs repo's `aerospike/` directory](https://github.com/docker-library/docs/tree/master/aerospike) ([history](https://github.com/docker-library/docs/commits/master/aerospike))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # Aerospike
 
@@ -58,7 +60,7 @@ Documentation for Aerospike is available at [http://aerospike.com/docs](https://
 The following will run `asd` with all the exposed ports forwarded to the host machine.
 
 ```console
-$ docker run -d --name aerospike -p 3000:3000 -p 3001:3001 -p 3002:3002 -p 3003:3003 aerospike/aerospike-server
+$ docker run -d --name aerospike -p 3000:3000 -p 3001:3001 -p 3002:3002 -p 3003:3003 aerospike
 ```
 
 **NOTE** Although this is the simplest method to getting Aerospike up and running, but it is not the preferred method. To properly run the container, please specify a **custom configuration** with the **access-address** defined.
@@ -69,7 +71,7 @@ By default, `asd` will use the configuration file at `/etc/aerospike/aerospike.c
 
 	-v <DIRECTORY>:/opt/aerospike/etc
 
-Where `<DIRECTORY>` is the path to a directory containing your custom aerospike.conf file. Next, you will want to tell `asd` to use the configuration file that was just mounted by using the `--config-file` option for `aerospike/aerospike-server`:
+Where `<DIRECTORY>` is the path to a directory containing your custom aerospike.conf file. Next, you will want to tell `asd` to use the configuration file that was just mounted by using the `--config-file` option for `aerospike`:
 
 	--config-file /opt/aerospike/etc/aerospike.conf
 
@@ -78,7 +80,7 @@ This will tell `asd` to use the config file at `/opt/aerospike/etc/aerospike.con
 A full example:
 
 ```console
-$ docker run -d -v <DIRECTORY>:/opt/aerospike/etc --name aerospike -p 3000:3000 -p 3001:3001 -p 3002:3002 -p 3003:3003 aerospike/aerospike-server asd --foreground --config-file /opt/aerospike/etc/aerospike.conf
+$ docker run -d -v <DIRECTORY>:/opt/aerospike/etc --name aerospike -p 3000:3000 -p 3001:3001 -p 3002:3002 -p 3003:3003 aerospike asd --foreground --config-file /opt/aerospike/etc/aerospike.conf
 ```
 
 ### access-address Configuration
@@ -106,7 +108,7 @@ Where `<DIRECTORY>` is the path to a directory containing your data files.
 A full example:
 
 ```console
-$ docker run -d -v <DIRECTORY>:/opt/aerospike/data --name aerospike -p 3000:3000 -p 3001:3001 -p 3002:3002 -p 3003:3003 aerospike/aerospike-server
+$ docker run -d -v <DIRECTORY>:/opt/aerospike/data --name aerospike -p 3000:3000 -p 3001:3001 -p 3002:3002 -p 3003:3003 aerospike
 ```
 
 ## Clustering
@@ -133,3 +135,9 @@ Copyright 2014-2015 Aerospike, Inc.
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at [http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0).
 
 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
+
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `aerospike/` directory](https://github.com/docker-library/repo-info/tree/master/repos/aerospike).
+
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

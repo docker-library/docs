@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.18.0`, `8.18` (*8.18/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/7451b44273e5847a0ff261be45603693a21d162e/8.18/Dockerfile)
--	[`8.18.0-onbuild`, `8.18-onbuild` (*8.18/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/7451b44273e5847a0ff261be45603693a21d162e/8.18/onbuild/Dockerfile)
--	[`8.19.0`, `8.19`, `8`, `latest` (*8.19/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/f7edbbec370da95fe2a2d96e708e732fa74e4900/8.19/Dockerfile)
--	[`8.19.0-onbuild`, `8.19-onbuild`, `8-onbuild`, `onbuild` (*8.19/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/f7edbbec370da95fe2a2d96e708e732fa74e4900/8.19/onbuild/Dockerfile)
+-	[`8.22.0`, `8.22`, `8` (*8.22/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/b7d55c572e0b23c5c537432211823a8677727e1c/8.22/Dockerfile)
+-	[`8.22.0-onbuild`, `8.22-onbuild`, `8-onbuild` (*8.22/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/b7d55c572e0b23c5c537432211823a8677727e1c/8.22/onbuild/Dockerfile)
+-	[`9.0.0`, `9.0`, `9`, `latest` (*9.0/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/f648178adf33bec68be47550a82850e18deb0cd8/9.0/Dockerfile)
+-	[`9.0.0-onbuild`, `9.0-onbuild`, `9-onbuild`, `onbuild` (*9.0/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/ec474d97d968afdf78f4e489b58c68a2fbc46ee2/9.0/onbuild/Dockerfile)
 
 # Quick reference
 
@@ -31,6 +31,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[Sentry](https://github.com/getsentry/docker-sentry)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/sentry/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/sentry/` directory](https://github.com/docker-library/repo-info/blob/master/repos/sentry) ([history](https://github.com/docker-library/repo-info/commits/master/repos/sentry))  
@@ -44,7 +47,7 @@ WARNING:
 	[docs repo's `sentry/` directory](https://github.com/docker-library/docs/tree/master/sentry) ([history](https://github.com/docker-library/docs/commits/master/sentry))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Sentry?
 
@@ -52,7 +55,7 @@ Sentry is a realtime event logging and aggregation platform. It specializes in m
 
 > [github.com/getsentry/sentry](https://github.com/getsentry/sentry)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/831b07a52f9ff6577c915afc41af8158725829f4/sentry/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/7d1c6fff37893bcefc186de7b978f5bdb2f801f6/sentry/logo.png)
 
 # How to use this image
 
@@ -176,3 +179,9 @@ To create your custom `sentry:onbuild` package, simply do the following:
 # License
 
 View [license information](https://github.com/getsentry/sentry/blob/master/LICENSE) for the software contained in this image.
+
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
+
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `sentry/` directory](https://github.com/docker-library/repo-info/tree/master/repos/sentry).
+
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

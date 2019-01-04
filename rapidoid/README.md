@@ -16,7 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.4.2`, `5.4`, `5`, `latest` (*Dockerfile*)](https://github.com/rapidoid/docker-rapidoid/blob/190f9b8d256768808e0e0aa320c41ea4e0f79421/Dockerfile)
+-	[`5.4.6`, `5.4`, `5`, `latest` (*Dockerfile*)](https://github.com/rapidoid/docker-rapidoid/blob/8fbb45c706fec5b0a015a37c24862127180ae9e9/Dockerfile)
 
 # Quick reference
 
@@ -28,6 +28,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[Rapidoid](https://github.com/rapidoid/docker-rapidoid)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/rapidoid/), [`arm64v8`](https://hub.docker.com/r/arm64v8/rapidoid/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/rapidoid/` directory](https://github.com/docker-library/repo-info/blob/master/repos/rapidoid) ([history](https://github.com/docker-library/repo-info/commits/master/repos/rapidoid))  
@@ -41,7 +44,7 @@ WARNING:
 	[docs repo's `rapidoid/` directory](https://github.com/docker-library/docs/tree/master/rapidoid) ([history](https://github.com/docker-library/docs/commits/master/rapidoid))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Rapidoid?
 
@@ -183,3 +186,9 @@ COPY <location/of/your/webapp.jar> /app/app.jar
 # License
 
 View [license information](https://www.apache.org/licenses/LICENSE-2.0) for the software contained in this image.
+
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
+
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `rapidoid/` directory](https://github.com/docker-library/repo-info/tree/master/repos/rapidoid).
+
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

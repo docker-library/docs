@@ -16,9 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`develop` (*develop/Dockerfile*)](https://github.com/eggheads/eggdrop-docker/blob/39fc15007ed450be1355b8ea39c6bf9a22343004/develop/Dockerfile)
--	[`1.8`, `1.8.2`, `stable`, `latest` (*1.8/Dockerfile*)](https://github.com/eggheads/eggdrop-docker/blob/b351e05e1040a1bbd446df3753d9b8a1d0a54673/1.8/Dockerfile)
--	[`1.6`, `1.6.21` (*1.6/Dockerfile*)](https://github.com/eggheads/eggdrop-docker/blob/954bb0048b93945aa7fcd98eda0a27b8526f9eaa/1.6/Dockerfile)
+-	[`develop` (*develop/Dockerfile*)](https://github.com/eggheads/eggdrop-docker/blob/d79ef3f24d61f3245605fad393b696cb4749ca73/develop/Dockerfile)
+-	[`1.8`, `1.8.4`, `stable`, `latest` (*1.8/Dockerfile*)](https://github.com/eggheads/eggdrop-docker/blob/4c6baefe13bd7ec3e22c4329114c38bde0e8f9c5/1.8/Dockerfile)
 
 # Quick reference
 
@@ -30,6 +29,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[Eggheads (the Eggdrop community)](https://github.com/eggheads/eggdrop-docker)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/eggdrop/), [`arm32v6`](https://hub.docker.com/r/arm32v6/eggdrop/), [`arm64v8`](https://hub.docker.com/r/arm64v8/eggdrop/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/eggdrop/` directory](https://github.com/docker-library/repo-info/blob/master/repos/eggdrop) ([history](https://github.com/docker-library/repo-info/commits/master/repos/eggdrop))  
@@ -43,7 +45,7 @@ WARNING:
 	[docs repo's `eggdrop/` directory](https://github.com/docker-library/docs/tree/master/eggdrop) ([history](https://github.com/docker-library/docs/commits/master/eggdrop))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Eggdrop?
 
@@ -128,3 +130,9 @@ The git repository for the Dockerfile is maintained at https://github.com/egghea
 # License
 
 View [license information](https://www.gnu.org/licenses/gpl-3.0.en.html) for the software contained in this image.
+
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
+
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `eggdrop/` directory](https://github.com/docker-library/repo-info/tree/master/repos/eggdrop).
+
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

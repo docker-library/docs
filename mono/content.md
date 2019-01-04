@@ -16,7 +16,7 @@ This image will run stand-alone Mono console apps.
 This example Dockerfile will run an executable called `TestingConsoleApp.exe`.
 
 ```dockerfile
-FROM mono:3.10-onbuild
+FROM %%IMAGE%%:3.10-onbuild
 CMD [ "mono",  "./TestingConsoleApp.exe" ]
 ```
 

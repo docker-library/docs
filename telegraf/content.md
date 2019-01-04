@@ -2,7 +2,7 @@
 
 Telegraf is an open source agent written in Go for collecting metrics and data on the system it's running on or from other services. Telegraf writes data it collects to InfluxDB in the correct format.
 
-[Telegraf Official Docs](https://docs.influxdata.com/telegraf/latest/introduction/getting-started-telegraf/)
+[Telegraf Official Docs](https://docs.influxdata.com/telegraf/latest/introduction/getting_started/)
 
 %%LOGO%%
 
@@ -27,7 +27,7 @@ $ docker run -d --name influxdb -p 8083:8083 -p 8086:8086 influxdb
 Starting Telegraf using the default config, which connects to InfluxDB at `http://localhost:8086/`:
 
 ```console
-$ docker run --net=container:influxdb telegraf
+$ docker run --net=container:influxdb %%IMAGE%%
 ```
 
 ### Using a custom config file
@@ -35,18 +35,18 @@ $ docker run --net=container:influxdb telegraf
 First, generate a sample configuration and save it as `telegraf.conf` on the host:
 
 ```console
-$ docker run --rm telegraf -sample-config > telegraf.conf
+$ docker run --rm %%IMAGE%% telegraf config > telegraf.conf
 ```
 
 Once you've customized `telegraf.conf`, you can run the Telegraf container with it mounted in the expected location:
 
 ```console
-$ docker run -v $PWD/telegraf.conf:/etc/telegraf/telegraf.conf:ro telegraf
+$ docker run -v $PWD/telegraf.conf:/etc/telegraf/telegraf.conf:ro %%IMAGE%%
 ```
 
 Modify `$PWD` to the directory where you want to store the configuration file.
 
-Read more about the Telegraf configuration [here](https://docs.influxdata.com/telegraf/latest/introduction/configuration/).
+Read more about the Telegraf configuration [here](https://docs.influxdata.com/telegraf/latest/administration/configuration/).
 
 ### Using the container with input plugins
 
@@ -77,7 +77,7 @@ Finally, we start our Telegraf container and verify functionality:
 $ docker run -d --name=telegraf \
       --net=influxdb \
       -v $PWD/telegraf.conf:/etc/telegraf/telegraf.conf:ro \
-      telegraf
+      %%IMAGE%%
 $ docker logs -f telegraf
 ```
 
@@ -113,8 +113,8 @@ Create an `nginx_status.conf` configuration file to expose metric data:
 server {
     listen 8090;
     location /nginx_status {
-        stub_status on;
-        access_log on;
+        stub_status;
+        access_log off;
     }
 }
 ```
@@ -155,7 +155,7 @@ $ docker run -d --name=telegraf \
       --net=influxdb \
       -p 8125:8125/udp \
       -v $PWD/telegraf.conf:/etc/telegraf/telegraf.conf:ro \
-      telegraf
+      %%IMAGE%%
 ```
 
 Send Mock StatsD data:
@@ -168,6 +168,42 @@ Check that the measurement `foo` is added in the DB.
 
 ### Supported Plugins Reference
 
--	[Input Plugins](https://docs.influxdata.com/telegraf/latest/inputs/)
+-	[Input Plugins](https://docs.influxdata.com/telegraf/latest/plugins/inputs/)
 
--	[Output Plugins](https://docs.influxdata.com/telegraf/latest/outputs/)
+-	[Output Plugins](https://docs.influxdata.com/telegraf/latest/plugins/outputs/)
+
+### Monitoring the host filesystem
+
+One of the more common use cases for Telegraf is running it in a container to monitor the host filesystem using the inputs that take information from the `/proc` filesystem. This section only applies to monitoring a Linux host.
+
+To do this, you can mount the host's `/proc` filesystem inside of the container and set the location of `/proc` to an alternate location by using the `HOST_PROC` environment variable to change the location of where `/proc` is located. As an example:
+
+```console
+$ docker run -d --name=telegraf \
+      --net=influxdb \
+      -e HOST_PROC=/host/proc \
+      -v /proc:/host/proc:ro \
+      -v $PWD/telegraf.conf:/etc/telegraf/telegraf.conf:ro \
+      %%IMAGE%%
+```
+
+### Monitoring docker containers
+
+To monitor other docker containers, you can use the docker plugin and mount the docker socket into the container. An example configuration is below:
+
+```toml
+[[inputs.docker]]
+  endpoint = "unix:///var/run/docker.sock"
+```
+
+Then you can start the telegraf container.
+
+```console
+$ docker run -d --name=telegraf \
+      --net=influxdb \
+      -v /var/run/docker.sock:/var/run/docker.sock \
+      -v $PWD/telegraf.conf:/etc/telegraf/telegraf.conf:ro \
+      %%IMAGE%%
+```
+
+Refer to the docker [plugin documentation](https://github.com/influxdata/telegraf/blob/master/plugins/inputs/docker/README.md) for more information.

@@ -13,7 +13,7 @@ Run the `composer` image:
 ```sh
 docker run --rm --interactive --tty \
     --volume $PWD:/app \
-    composer install
+    %%IMAGE%% install
 ```
 
 You can mount the Composer home directory from your host inside the Container to share caching and configuration files:
@@ -22,7 +22,7 @@ You can mount the Composer home directory from your host inside the Container to
 docker run --rm --interactive --tty \
     --volume $PWD:/app \
     --volume $COMPOSER_HOME:/tmp \
-    composer install
+    %%IMAGE%% install
 ```
 
 By default, Composer runs as root inside the container. This can lead to permission issues on your host filesystem. You can run Composer as your local user:
@@ -31,20 +31,22 @@ By default, Composer runs as root inside the container. This can lead to permiss
 docker run --rm --interactive --tty \
     --volume $PWD:/app \
     --user $(id -u):$(id -g) \
-    composer install
+    %%IMAGE%% install
 ```
 
 When you need to access private repositories, you will either need to share your configured credentials, or mount your `ssh-agent` socket inside the running container:
+
+**Note:** This currently does not work on OSX, see [docker/for-mac#410](https://github.com/docker/for-mac/issues/410).
 
 ```sh
 docker run --rm --interactive --tty \
     --volume $PWD:/app \
     --volume $SSH_AUTH_SOCK:/ssh-auth.sock \
     --env SSH_AUTH_SOCK=/ssh-auth.sock \
-    composer install
+    %%IMAGE%% install
 ```
 
-When combining the use of private repositories with running Composer as another (local) user, you might run into non-existant user errors. To work around this, simply mount the host passwd and group files (read-only) into the container:
+When combining the use of private repositories with running Composer as another (local) user, you might run into non-existant user errors (thrown by ssh). To work around this, simply mount the host passwd and group files (read-only) into the container:
 
 ```sh
 docker run --rm --interactive --tty \
@@ -54,7 +56,7 @@ docker run --rm --interactive --tty \
     --volume /etc/group:/etc/group:ro \
     --user $(id -u):$(id -g) \
     --env SSH_AUTH_SOCK=/ssh-auth.sock \
-    composer install
+    %%IMAGE%% install
 ```
 
 ## Suggestions
@@ -63,17 +65,27 @@ docker run --rm --interactive --tty \
 
 We aim to deliver an image that is as lean as possible, built for running Composer only.
 
-Sometimes dependencies or Composer [scripts](https://getcomposer.org/doc/articles/scripts.md) require the availability of certain PHP extensions. In this scenario, you have two options:
+Sometimes dependencies or Composer [scripts](https://getcomposer.org/doc/articles/scripts.md) require the availability of certain PHP extensions. You can work around this as follows:
 
 -	Pass the `--ignore-platform-reqs` and `--no-scripts` flags to `install` or `update`:
 
 	```sh
 	docker run --rm --interactive --tty \
 	    --volume $PWD:/app \
-	    composer install --ignore-platform-reqs --no-scripts
+	    %%IMAGE%% install --ignore-platform-reqs --no-scripts
 	```
 
 -	Create your own image (possibly by extending `FROM composer`).
+
+**Note:** Docker introduced [multi-stage](https://docs.docker.com/engine/userguide/eng-image/multistage-build/) builds in 17.05:
+
+-	Create your own image, and copy Composer from the official image into it:
+
+	```dockerfile
+	COPY --from=%%IMAGE%%:1.5 /usr/bin/composer /usr/bin/composer
+	```
+
+It is highly recommended that you create a "build" image that extends from your baseline production image. Binaries such as Composer should not end up in your production environment.
 
 ### Local runtime/binary
 
@@ -91,6 +103,6 @@ composer () {
         --volume /etc/passwd:/etc/passwd:ro \
         --volume /etc/group:/etc/group:ro \
         --volume $(pwd):/app \
-        composer "$@"
+        %%IMAGE%% "$@"
 }
 ```

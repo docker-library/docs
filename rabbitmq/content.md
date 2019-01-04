@@ -13,10 +13,10 @@ RabbitMQ is open source message broker software (sometimes called message-orient
 One of the important things to note about RabbitMQ is that it stores data based on what it calls the "Node Name", which defaults to the hostname. What this means for usage in Docker is that we should specify `-h`/`--hostname` explicitly for each daemon so that we don't get a random hostname and can keep track of our data:
 
 ```console
-$ docker run -d --hostname my-rabbit --name some-rabbit rabbitmq:3
+$ docker run -d --hostname my-rabbit --name some-rabbit %%IMAGE%%:3
 ```
 
-If you give that a minute, then do `docker logs some-rabbit`, you'll see in the output a block similar to:
+This will start a RabbitMQ container listening on the default port of 5672. If you give that a minute, then do `docker logs some-rabbit`, you'll see in the output a block similar to:
 
 	=INFO REPORT==== 6-Jul-2015::20:47:02 ===
 	node           : rabbit@my-rabbit
@@ -51,13 +51,13 @@ See the [RabbitMQ "Clustering Guide"](https://www.rabbitmq.com/clustering.html#e
 For setting a consistent cookie (especially useful for clustering but also for remote/cross-container administration via `rabbitmqctl`), use `RABBITMQ_ERLANG_COOKIE`:
 
 ```console
-$ docker run -d --hostname my-rabbit --name some-rabbit -e RABBITMQ_ERLANG_COOKIE='secret cookie here' rabbitmq:3
+$ docker run -d --hostname my-rabbit --name some-rabbit -e RABBITMQ_ERLANG_COOKIE='secret cookie here' %%IMAGE%%:3
 ```
 
 This can then be used from a separate instance to connect:
 
 ```console
-$ docker run -it --rm --link some-rabbit:my-rabbit -e RABBITMQ_ERLANG_COOKIE='secret cookie here' rabbitmq:3 bash
+$ docker run -it --rm --link some-rabbit:my-rabbit -e RABBITMQ_ERLANG_COOKIE='secret cookie here' %%IMAGE%%:3 bash
 root@f2a2d3d27c75:/# rabbitmqctl -n rabbit@my-rabbit list_users
 Listing users ...
 guest   [administrator]
@@ -66,49 +66,83 @@ guest   [administrator]
 Alternatively, one can also use `RABBITMQ_NODENAME` to make repeated `rabbitmqctl` invocations simpler:
 
 ```console
-$ docker run -it --rm --link some-rabbit:my-rabbit -e RABBITMQ_ERLANG_COOKIE='secret cookie here' -e RABBITMQ_NODENAME=rabbit@my-rabbit rabbitmq:3 bash
+$ docker run -it --rm --link some-rabbit:my-rabbit -e RABBITMQ_ERLANG_COOKIE='secret cookie here' -e RABBITMQ_NODENAME=rabbit@my-rabbit %%IMAGE%%:3 bash
 root@f2a2d3d27c75:/# rabbitmqctl list_users
 Listing users ...
 guest   [administrator]
 ```
+
+If you wish to provide the cookie via a file (such as with [Docker Secrets](https://docs.docker.com/engine/swarm/secrets/)), it needs to be mounted at `/var/lib/rabbitmq/.erlang.cookie`:
+
+```console
+docker service create ... --secret source=my-erlang-cookie,target=/var/lib/rabbitmq/.erlang.cookie ... %%IMAGE%%
+```
+
+(Note that it will likely also be necessary to specify `uid=XXX,gid=XXX,mode=0600` in order for Erlang in the container to be able to read the cookie file properly. See [Docker's `--secret` documentation for more details](https://docs.docker.com/engine/reference/commandline/service_create/#create-a-service-with-secrets).)
 
 ### Management Plugin
 
 There is a second set of tags provided with the [management plugin](https://www.rabbitmq.com/management.html) installed and enabled by default, which is available on the standard management port of 15672, with the default username and password of `guest` / `guest`:
 
 ```console
-$ docker run -d --hostname my-rabbit --name some-rabbit rabbitmq:3-management
+$ docker run -d --hostname my-rabbit --name some-rabbit %%IMAGE%%:3-management
 ```
 
 You can access it by visiting `http://container-ip:15672` in a browser or, if you need access outside the host, on port 8080:
 
 ```console
-$ docker run -d --hostname my-rabbit --name some-rabbit -p 8080:15672 rabbitmq:3-management
+$ docker run -d --hostname my-rabbit --name some-rabbit -p 8080:15672 %%IMAGE%%:3-management
 ```
 
 You can then go to `http://localhost:8080` or `http://host-ip:8080` in a browser.
 
-## Setting default user and password
+### Environment Variables
+
+A small selection of the possible environment variables are defined in the Dockerfile to be passed through the docker engine (listed below). For a list of environment variables supported by RabbitMQ itself, see: https://www.rabbitmq.com/configure.html
+
+For SSL configuration without the management plugin:
+
+```bash
+RABBITMQ_SSL_CACERTFILE
+RABBITMQ_SSL_CERTFILE
+RABBITMQ_SSL_DEPTH
+RABBITMQ_SSL_FAIL_IF_NO_PEER_CERT
+RABBITMQ_SSL_KEYFILE
+RABBITMQ_SSL_VERIFY
+```
+
+For SSL configuration using the management plugin:
+
+```bash
+RABBITMQ_MANAGEMENT_SSL_CACERTFILE
+RABBITMQ_MANAGEMENT_SSL_CERTFILE
+RABBITMQ_MANAGEMENT_SSL_DEPTH
+RABBITMQ_MANAGEMENT_SSL_FAIL_IF_NO_PEER_CERT
+RABBITMQ_MANAGEMENT_SSL_KEYFILE
+RABBITMQ_MANAGEMENT_SSL_VERIFY
+```
+
+### Setting default user and password
 
 If you wish to change the default username and password of `guest` / `guest`, you can do so with the `RABBITMQ_DEFAULT_USER` and `RABBITMQ_DEFAULT_PASS` environmental variables:
 
 ```console
-$ docker run -d --hostname my-rabbit --name some-rabbit -e RABBITMQ_DEFAULT_USER=user -e RABBITMQ_DEFAULT_PASS=password rabbitmq:3-management
+$ docker run -d --hostname my-rabbit --name some-rabbit -e RABBITMQ_DEFAULT_USER=user -e RABBITMQ_DEFAULT_PASS=password %%IMAGE%%:3-management
 ```
 
 You can then go to `http://localhost:8080` or `http://host-ip:8080` in a browser and use `user`/`password` to gain access to the management console
 
-## Setting default vhost
+To source the username and password from files instead of environment variables, add a `_FILE` suffix to the environment variable names (for example, `RABBITMQ_DEFAULT_USER_FILE=/run/secrets/xxx` to use [Docker Secrets](https://docs.docker.com/engine/swarm/secrets/)).
+
+### Setting default vhost
 
 If you wish to change the default vhost, you can do so with the `RABBITMQ_DEFAULT_VHOST` environmental variables:
 
 ```console
-$ docker run -d --hostname my-rabbit --name some-rabbit -e RABBITMQ_DEFAULT_VHOST=my_vhost rabbitmq:3-management
+$ docker run -d --hostname my-rabbit --name some-rabbit -e RABBITMQ_DEFAULT_VHOST=my_vhost %%IMAGE%%:3-management
 ```
 
-## Enabling HiPE
-
-**Warning:** if you're using the Alpine variant, there is currently [an outstanding bug (Alpine Linux bug #5700) with the `erlang-hipe` package](https://bugs.alpinelinux.org/issues/5700) which prevents HiPE from working in Alpine Linux. See [docker-library/rabbitmq#151](https://github.com/docker-library/rabbitmq/issues/151) for more discussion.
+### Enabling HiPE
 
 See the [RabbitMQ "Configuration"](http://www.rabbitmq.com/configure.html#config-items) for more information about various configuration options.
 
@@ -117,6 +151,31 @@ For enabling the HiPE compiler on startup use `RABBITMQ_HIPE_COMPILE` set to `1`
 > Set to true to precompile parts of RabbitMQ with HiPE, a just-in-time compiler for Erlang. This will increase server throughput at the cost of increased startup time. You might see 20-50% better performance at the cost of a few minutes delay at startup.
 
 It is therefore important to take that startup delay into consideration when configuring health checks, automated clustering etc.
+
+### Enabling Plugins
+
+Creating a Dockerfile will have them enabled at runtime. To see the full list of plugins present on the image `rabbitmq-plugins list`
+
+```Dockerfile
+FROM rabbitmq:3.7-management
+RUN rabbitmq-plugins enable --offline rabbitmq_mqtt rabbitmq_federation_management rabbitmq_stomp
+```
+
+You can also mount a file at `/etc/rabbitmq/enabled_plugins` with contents as an erlang list of atoms ending with a period.
+
+Example `enabled_plugins`
+
+```bash
+[rabbitmq_federation_management,rabbitmq_management,rabbitmq_mqtt,rabbitmq_stomp].
+```
+
+### Additional Configuration
+
+If additional configuration is required, it is recommended to supply an appropriate `/etc/rabbitmq/rabbitmq.conf` file (see [the "Configuration File(s)" section of the RabbitMQ documentation for more details](https://www.rabbitmq.com/configure.html#configuration-files)), for example via bind-mount, [Docker Configs](https://docs.docker.com/engine/swarm/configs/), or a short `Dockerfile` with a `COPY` instruction.
+
+Alternatively, it is possible to use the `RABBITMQ_SERVER_ADDITIONAL_ERL_ARGS` environment variable, whose syntax is described [in section 7.8 ("Configuring an Application") of the Erlang OTP Design Principles User's Guide](http://erlang.org/doc/design_principles/applications.html#id81887) (the appropriate value for `-ApplName` is `-rabbit`), this method requires a slightly different reproduction of its equivalent entry in `rabbitmq.conf`. For example, configuring [`channel_max`](https://www.rabbitmq.com/configure.html#config-items) would look something like `-e RABBITMQ_SERVER_ADDITIONAL_ERL_ARGS="-rabbit channel_max 4007"`. Where the space between the variable `channel_max` and its value `4007` correctly becomes a comma when translated in the environment.
+
+Additional configuration keys would be specified as a list. For example, configuring both [`channel_max`](https://www.rabbitmq.com/configure.html#config-items) and [`auth_backends`](https://www.rabbitmq.com/ldap.html#overview) would look something like `-e RABBITMQ_SERVER_ADDITIONAL_ERL_ARGS="-rabbit channel_max 4007 auth_backends [rabbit_auth_backend_ldap,rabbit_auth_backend_internal]"`. Note that some variables such as for `auth_backends` require their value(s) to be enclosed in brackets, and for multiple values explicitly including the comma as a delimiter.
 
 ## Connecting to the daemon
 

@@ -11,7 +11,7 @@ Rapidoid is an extremely fast HTTP server and modern Java web framework / applic
 To quickly start Rapidoid and display some basic usage help, run:
 
 ```console
-$ docker run --rm %%REPO%% --help
+$ docker run --rm %%IMAGE%% --help
 ```
 
 Rapidoid can be used in different ways:

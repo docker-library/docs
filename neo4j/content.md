@@ -14,7 +14,7 @@ You can start a Neo4j container like this:
 docker run \
     --publish=7474:7474 --publish=7687:7687 \
     --volume=$HOME/neo4j/data:/data \
-    neo4j
+    %%IMAGE%%
 ```
 
 which allows you to access neo4j through your browser at [http://localhost:7474](http://localhost:7474).
@@ -33,7 +33,7 @@ You can start an instance of Neo4j 2.3 like this:
 docker run \
     --publish=7474:7474 \
     --volume=$HOME/neo4j/data:/data \
-    neo4j:2.3
+    %%IMAGE%%:2.3
 ```
 
 # Documentation

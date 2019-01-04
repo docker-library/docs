@@ -16,16 +16,16 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.0.1-jdk7`, `4.0-jdk7`, `jdk7` (*jdk7/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/2ec2b3d1208cf8a54f3ecae900e927e8a1d4a6b7/jdk7/Dockerfile)
--	[`4.0.1-jre7`, `4.0-jre7`, `jre7` (*jre7/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/2ec2b3d1208cf8a54f3ecae900e927e8a1d4a6b7/jre7/Dockerfile)
--	[`4.0.1-jdk7-alpine`, `4.0-jdk7-alpine`, `jdk7-alpine` (*jdk7-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/2ec2b3d1208cf8a54f3ecae900e927e8a1d4a6b7/jdk7-alpine/Dockerfile)
--	[`4.0.1-jre7-alpine`, `4.0-jre7-alpine`, `jre7-alpine` (*jre7-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/2ec2b3d1208cf8a54f3ecae900e927e8a1d4a6b7/jre7-alpine/Dockerfile)
--	[`4.0.1-jdk8`, `4.0-jdk8`, `jdk8`, `4.0.1-jdk`, `4.0-jdk`, `jdk`, `4.0.1`, `4.0`, `latest` (*jdk8/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/2ec2b3d1208cf8a54f3ecae900e927e8a1d4a6b7/jdk8/Dockerfile)
--	[`4.0.1-jre8`, `4.0-jre8`, `jre8`, `4.0.1-jre`, `4.0-jre`, `jre` (*jre8/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/2ec2b3d1208cf8a54f3ecae900e927e8a1d4a6b7/jre8/Dockerfile)
--	[`4.0.1-jdk8-alpine`, `4.0-jdk8-alpine`, `jdk8-alpine`, `4.0.1-jdk-alpine`, `4.0-jdk-alpine`, `jdk-alpine`, `4.0.1-alpine`, `4.0-alpine`, `alpine` (*jdk8-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/2ec2b3d1208cf8a54f3ecae900e927e8a1d4a6b7/jdk8-alpine/Dockerfile)
--	[`4.0.1-jre8-alpine`, `4.0-jre8-alpine`, `jre8-alpine`, `4.0.1-jre-alpine`, `4.0-jre-alpine`, `jre-alpine` (*jre8-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/2ec2b3d1208cf8a54f3ecae900e927e8a1d4a6b7/jre8-alpine/Dockerfile)
--	[`4.0.1-jdk9`, `4.0-jdk9`, `jdk9` (*jdk9/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/2ec2b3d1208cf8a54f3ecae900e927e8a1d4a6b7/jdk9/Dockerfile)
--	[`4.0.1-jre9`, `4.0-jre9`, `jre9` (*jre9/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/2ec2b3d1208cf8a54f3ecae900e927e8a1d4a6b7/jre9/Dockerfile)
+-	[`5.1.0-jdk8`, `5.1-jdk8`, `jdk8`, `5.1.0-jdk`, `5.1-jdk`, `jdk`, `5.1.0`, `5.1`, `latest` (*jdk8/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/4e03b2b500ab655f5731817ea070c10843ff57e2/jdk8/Dockerfile)
+-	[`5.1.0-jre8`, `5.1-jre8`, `jre8`, `5.1.0-jre`, `5.1-jre`, `jre` (*jre8/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/4e03b2b500ab655f5731817ea070c10843ff57e2/jre8/Dockerfile)
+-	[`5.1.0-jdk8-alpine`, `5.1-jdk8-alpine`, `jdk8-alpine`, `5.1.0-jdk-alpine`, `5.1-jdk-alpine`, `jdk-alpine`, `5.1.0-alpine`, `5.1-alpine`, `alpine` (*jdk8-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/4e03b2b500ab655f5731817ea070c10843ff57e2/jdk8-alpine/Dockerfile)
+-	[`5.1.0-jdk8-slim`, `5.1-jdk8-slim`, `jdk8-slim`, `5.1.0-jdk-slim`, `5.1-jdk-slim`, `jdk-slim`, `5.1.0-slim`, `5.1-slim`, `slim` (*jdk8-slim/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/4e03b2b500ab655f5731817ea070c10843ff57e2/jdk8-slim/Dockerfile)
+-	[`5.1.0-jre8-alpine`, `5.1-jre8-alpine`, `jre8-alpine`, `5.1.0-jre-alpine`, `5.1-jre-alpine`, `jre-alpine` (*jre8-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/4e03b2b500ab655f5731817ea070c10843ff57e2/jre8-alpine/Dockerfile)
+-	[`5.1.0-jre8-slim`, `5.1-jre8-slim`, `jre8-slim`, `5.1.0-jre-slim`, `5.1-jre-slim`, `jre-slim` (*jre8-slim/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/4e03b2b500ab655f5731817ea070c10843ff57e2/jre8-slim/Dockerfile)
+-	[`5.1.0-jdk11`, `5.1-jdk11`, `jdk11` (*jdk11/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/4e03b2b500ab655f5731817ea070c10843ff57e2/jdk11/Dockerfile)
+-	[`5.1.0-jdk11-slim`, `5.1-jdk11-slim`, `jdk11-slim` (*jdk11-slim/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/4e03b2b500ab655f5731817ea070c10843ff57e2/jdk11-slim/Dockerfile)
+-	[`5.1.0-jre11`, `5.1-jre11`, `jre11` (*jre11/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/4e03b2b500ab655f5731817ea070c10843ff57e2/jre11/Dockerfile)
+-	[`5.1.0-jre11-slim`, `5.1-jre11-slim`, `jre11-slim` (*jre11-slim/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/4e03b2b500ab655f5731817ea070c10843ff57e2/jre11-slim/Dockerfile)
 
 # Quick reference
 
@@ -37,6 +37,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[Keegan Witt (of the Groovy Project)](https://github.com/keeganwitt/docker-gradle), [with the Gradle Project's approval](https://discuss.gradle.org/t/official-docker-images/21159/8)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/gradle/), [`arm32v5`](https://hub.docker.com/r/arm32v5/gradle/), [`arm32v6`](https://hub.docker.com/r/arm32v6/gradle/), [`arm32v7`](https://hub.docker.com/r/arm32v7/gradle/), [`arm64v8`](https://hub.docker.com/r/arm64v8/gradle/), [`i386`](https://hub.docker.com/r/i386/gradle/), [`ppc64le`](https://hub.docker.com/r/ppc64le/gradle/), [`s390x`](https://hub.docker.com/r/s390x/gradle/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/gradle/` directory](https://github.com/docker-library/repo-info/blob/master/repos/gradle) ([history](https://github.com/docker-library/repo-info/commits/master/repos/gradle))  
@@ -50,7 +53,7 @@ WARNING:
 	[docs repo's `gradle/` directory](https://github.com/docker-library/docs/tree/master/gradle) ([history](https://github.com/docker-library/docs/commits/master/gradle))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Gradle?
 
@@ -60,13 +63,13 @@ WARNING:
 
 # How to use this image
 
+Note that if you are mounting a volume and the uid running Docker is not `1000`, you should run as user `root` (`-u root`).
+
 ## Building a Gradle project
 
 Run this from the directory of the Gradle project you want to build.
 
-`docker run --rm -v "$PWD":/project -w /project --name gradle gradle:alpine gradle <gradle-task>`
-
-**Note: Java 9 support is experimental**
+`docker run --rm -v "$PWD":/home/gradle/project -w /home/gradle/project gradle gradle <gradle-task>`
 
 # Image Variants
 
@@ -76,7 +79,7 @@ The `gradle` images come in many flavors, each designed for a specific use case.
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `gradle:alpine`
+## `gradle:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
@@ -84,6 +87,16 @@ This variant is highly recommended when final image size being as small as possi
 
 To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
+## `gradle:<version>-slim`
+
+This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `gradle`. Unless you are working in an environment where *only* the `gradle` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
+
 # License
 
 View [license information](https://gradle.org/license/) for the software contained in this image.
+
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
+
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `gradle/` directory](https://github.com/docker-library/repo-info/tree/master/repos/gradle).
+
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

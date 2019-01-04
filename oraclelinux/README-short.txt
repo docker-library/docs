@@ -1,1 +1,1 @@
-Oracle Linux is an open-source operating system suitable for general purpose or Oracle workloads.
+Official Docker builds of Oracle Linux.

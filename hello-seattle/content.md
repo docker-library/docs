@@ -3,7 +3,7 @@
 This image is a vanity variant of [the `hello-world` image](https://hub.docker.com/_/hello-world/) created specifically for [DockerCon 2016](http://2016.dockercon.com/). Its use is discouraged.
 
 ```console
-$ docker run hello-seattle
+$ docker run %%IMAGE%%
 
 Hello from DockerCon 2016 (Seattle)!
 This message shows that your installation appears to be working correctly.

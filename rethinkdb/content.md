@@ -11,7 +11,7 @@ RethinkDB is an open-source, distributed database built to store JSON documents 
 The default CMD of the image is `rethinkdb --bind all`, so the RethinkDB daemon will bind to all network interfaces available to the container (by default, RethinkDB only accepts connections from `localhost`).
 
 ```bash
-docker run --name some-rethink -v "$PWD:/data" -d rethinkdb
+docker run --name some-rethink -v "$PWD:/data" -d %%IMAGE%%
 ```
 
 ## Connect the instance to an application

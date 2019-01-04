@@ -16,8 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.8`, `2.8.11` (*jessie/2.8.11/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/05366cb4c6a6aab8e1ff9ca74c81b09d9a57b5b5/jessie/2.8.11/Dockerfile)
--	[`3.2`, `3.2.1`, `latest` (*jessie/3.2.1/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/3ea3da8c42b8d6204c5e2fdddcbeb042b86464c2/jessie/3.2.1/Dockerfile)
+-	[`2.8`, `2.8.11` (*jessie/2.8.11/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/d6fca9a137cd21345b1d380fc0e72daacb6130ce/jessie/2.8.11/Dockerfile)
+-	[`3.2`, `3.2.17` (*stretch/3.2.17/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/b4c22ad8bf4facbbc7c3b24e985251a09fcdbcec/stretch/3.2.17/Dockerfile)
+-	[`3.3`, `3.3.20` (*stretch/3.3.20/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/9bd89a782c6e814d4529403d66fbce59758e95a2/stretch/3.3.20/Dockerfile)
+-	[`3.4`, `3.4.1`, `latest` (*alpine/3.4.1/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/c98889cf79d8cdeaf56cdedb0c8748ca434f1094/alpine/3.4.1/Dockerfile)
 
 # Quick reference
 
@@ -29,6 +31,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[ArangoDB](https://github.com/arangodb/arangodb-docker)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/arangodb/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/arangodb/` directory](https://github.com/docker-library/repo-info/blob/master/repos/arangodb) ([history](https://github.com/docker-library/repo-info/commits/master/repos/arangodb))  
@@ -42,7 +47,7 @@ WARNING:
 	[docs repo's `arangodb/` directory](https://github.com/docker-library/docs/tree/master/arangodb) ([history](https://github.com/docker-library/docs/commits/master/arangodb))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is ArangoDB?
 
@@ -64,7 +69,7 @@ The supported data models can be mixed in queries and allow ArangoDB to be the a
 
 Joins and Transactions are key features for flexible, secure data designs, widely used in RDBMSs that you won't want to miss in NoSQL products. You decide how and when to use Joins and strong consistency guarantees, keeping all the power for scaling and performance as choice.
 
-Furthermore, ArangoDB offers a microservice framework called [Foxx](https://www.arangodb.com/foxx) to build your own Rest API with a few lines of code.
+Furthermore, ArangoDB offers a microservice framework called [Foxx](https://www.arangodb.com/why-arangodb/foxx) to build your own Rest API with a few lines of code.
 
 #### ArangoDB Documentation
 
@@ -136,6 +141,8 @@ The ArangoDB image provides several authentication methods which can be specifie
 
 	Specify your own root password.
 
+Note: this way of specifying logins only applies to single server installations. With clusters you have to provision the users via the root user with empty password once the system is up.
+
 ### Command line options
 
 In order to get a list of supported options, run
@@ -145,6 +152,8 @@ unix> docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 arangodb arangod --help
 ```
 
 ## Persistent Data
+
+ArangoDB supports two different storage engines as of ArangoDB 3.2. You can choose them while instantiating the container with the environment variable `ARANGO_STORAGE_ENGINE`. With `mmfiles` you choose the classic storage engine, `rocksdb` will choose the newly introduced storage engine based on [rocksdb](http://rocksdb.org/). The default choice is `mmfiles`.
 
 ArangoDB use the volume `/var/lib/arangodb3` as database directory to store the collection data and the volume `/var/lib/arangodb3-apps` as apps directory to store any extensions. These directories are marked as docker volumes.
 
@@ -181,7 +190,7 @@ And use this data container in your ArangoDB container.
 unix> docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 --volumes-from arangodb-persist -p 8529:8529 arangodb
 ```
 
-If want to save a few bytes you can alternatively use [busybox](https://registry.hub.docker.com/_/busybox) or [alpine](https://registry.hub.docker.com/_/alpine) for creating the volume only containers. Please note that you need to provide the used volumes in this case. For example
+If want to save a few bytes you can alternatively use [busybox](https://hub.docker.com/_/busybox) or [alpine](https://hub.docker.com/_/alpine) for creating the volume only containers. Please note that you need to provide the used volumes in this case. For example
 
 ```console
 unix> docker run -d --name arangodb-persist -v /var/lib/arangodb3 busybox true
@@ -191,6 +200,18 @@ unix> docker run -d --name arangodb-persist -v /var/lib/arangodb3 busybox true
 
 If you are using the image as a base image please make sure to wrap any CMD in the [exec](https://docs.docker.com/engine/reference/builder/#cmd) form. Otherwise the default entrypoint will not do its bootstrapping work.
 
+When deriving the image, you can control the instantiation via putting files into `/docker-entrypoint-initdb.d/`.
+
+-	`*.sh` - files ending with .sh will be run as a bash shellscript.
+-	`*.js` - files will be executed with arangosh. You can specify additional arangosh arguments via the `ARANGOSH_ARGS` environment variable.
+-	`dumps/` - in this directory you can place subdirectories containing database dumps generated using [arangodump](https://docs.arangodb.com/latest/Manual/Administration/Arangodump.html). They will be restored using [arangorestore](https://docs.arangodb.com/latest/Manual/Administration/Arangorestore.html).
+
 # License
 
 [Arangodb itself is licensed under the Apache License](https://github.com/arangodb/arangodb/blob/devel/LICENSE), but it contains [software of third parties under their respective licenses](https://github.com/arangodb/arangodb/blob/devel/LICENSES-OTHER-COMPONENTS.md).
+
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
+
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `arangodb/` directory](https://github.com/docker-library/repo-info/tree/master/repos/arangodb).
+
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

@@ -16,11 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.0.4`, `2.0` (*jessie/2.0.4/Dockerfile*)](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/da98484fc73485fe7780546903d01dcbcd931673/jessie/2.0.4/Dockerfile)
--	[`2.1.6`, `2.1` (*jessie/2.1.6/Dockerfile*)](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/da98484fc73485fe7780546903d01dcbcd931673/jessie/2.1.6/Dockerfile)
--	[`2.2.6`, `2.2` (*jessie/2.2.6/Dockerfile*)](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/da98484fc73485fe7780546903d01dcbcd931673/jessie/2.2.6/Dockerfile)
--	[`2.3.4` (*jessie/2.3.4/Dockerfile*)](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/da98484fc73485fe7780546903d01dcbcd931673/jessie/2.3.4/Dockerfile)
--	[`2.3.5`, `2.3`, `2`, `latest` (*jessie/2.3.5/Dockerfile*)](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/da98484fc73485fe7780546903d01dcbcd931673/jessie/2.3.5/Dockerfile)
+-	[`2.3.6`, `2.3`, `2`, `latest` (*jessie/2.3.6/Dockerfile*)](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/05946c0dbe3c7fa9338d3827428b2c32074a1447/jessie/2.3.6/Dockerfile)
 
 # Quick reference
 
@@ -32,6 +28,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[RethinkDB](https://github.com/rethinkdb/rethinkdb-dockerfiles)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/rethinkdb/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/rethinkdb/` directory](https://github.com/docker-library/repo-info/blob/master/repos/rethinkdb) ([history](https://github.com/docker-library/repo-info/commits/master/repos/rethinkdb))  
@@ -45,7 +44,7 @@ WARNING:
 	[docs repo's `rethinkdb/` directory](https://github.com/docker-library/docs/tree/master/rethinkdb) ([history](https://github.com/docker-library/docs/commits/master/rethinkdb))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is RethinkDB?
 
@@ -99,3 +98,9 @@ See the [official docs](http://www.rethinkdb.com/docs/) for infomation on using 
 # License
 
 View [license information](http://www.gnu.org/licenses/agpl-3.0.html) for the software contained in this image.
+
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
+
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `rethinkdb/` directory](https://github.com/docker-library/repo-info/tree/master/repos/rethinkdb).
+
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

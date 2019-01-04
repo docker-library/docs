@@ -16,12 +16,25 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`kernel` (*ga/developer/kernel/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/8008b344085e4e49d7d702fdb0db1fa5363c0899/ga/developer/kernel/Dockerfile)
--	[`microProfile` (*ga/developer/microProfile/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/8008b344085e4e49d7d702fdb0db1fa5363c0899/ga/developer/microProfile/Dockerfile)
--	[`webProfile6` (*ga/developer/webProfile6/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/8008b344085e4e49d7d702fdb0db1fa5363c0899/ga/developer/webProfile6/Dockerfile)
--	[`webProfile7` (*ga/developer/webProfile7/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/8008b344085e4e49d7d702fdb0db1fa5363c0899/ga/developer/webProfile7/Dockerfile)
--	[`javaee7`, `latest` (*ga/developer/javaee7/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/8008b344085e4e49d7d702fdb0db1fa5363c0899/ga/developer/javaee7/Dockerfile)
--	[`beta` (*beta/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/164a9dfac2368e328ec8ac033277c61ebc467d2b/beta/Dockerfile)
+-	[`beta` (*beta/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/1f420974a387fddfe980659f8536473b398143c9/beta/Dockerfile)
+-	[`18.0.0.4-javaee8`, `javaee8`, `latest` (*ga/18.0.0.4/javaee8/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/1f420974a387fddfe980659f8536473b398143c9/ga/18.0.0.4/javaee8/Dockerfile)
+-	[`18.0.0.4-webProfile8`, `webProfile8` (*ga/18.0.0.4/webProfile8/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/1f420974a387fddfe980659f8536473b398143c9/ga/18.0.0.4/webProfile8/Dockerfile)
+-	[`18.0.0.4-microProfile1`, `microProfile1` (*ga/18.0.0.4/microProfile1/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/1f420974a387fddfe980659f8536473b398143c9/ga/18.0.0.4/microProfile1/Dockerfile)
+-	[`18.0.0.4-microProfile2`, `microProfile2` (*ga/18.0.0.4/microProfile2/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/1f420974a387fddfe980659f8536473b398143c9/ga/18.0.0.4/microProfile2/Dockerfile)
+-	[`18.0.0.4-springBoot2`, `springBoot2` (*ga/18.0.0.4/springBoot2/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/1f420974a387fddfe980659f8536473b398143c9/ga/18.0.0.4/springBoot2/Dockerfile)
+-	[`18.0.0.4-kernel`, `kernel` (*ga/18.0.0.4/kernel/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/1f420974a387fddfe980659f8536473b398143c9/ga/18.0.0.4/kernel/Dockerfile)
+-	[`18.0.0.4-springBoot1`, `springBoot1` (*ga/18.0.0.4/springBoot1/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/1f420974a387fddfe980659f8536473b398143c9/ga/18.0.0.4/springBoot1/Dockerfile)
+-	[`18.0.0.4-webProfile7`, `webProfile7` (*ga/18.0.0.4/webProfile7/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/1f420974a387fddfe980659f8536473b398143c9/ga/18.0.0.4/webProfile7/Dockerfile)
+-	[`18.0.0.4-javaee7`, `javaee7` (*ga/18.0.0.4/javaee7/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/1f420974a387fddfe980659f8536473b398143c9/ga/18.0.0.4/javaee7/Dockerfile)
+-	[`18.0.0.3-javaee8` (*ga/18.0.0.3/javaee8/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/1f420974a387fddfe980659f8536473b398143c9/ga/18.0.0.3/javaee8/Dockerfile)
+-	[`18.0.0.3-webProfile8` (*ga/18.0.0.3/webProfile8/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/1f420974a387fddfe980659f8536473b398143c9/ga/18.0.0.3/webProfile8/Dockerfile)
+-	[`18.0.0.3-microProfile1` (*ga/18.0.0.3/microProfile1/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/1f420974a387fddfe980659f8536473b398143c9/ga/18.0.0.3/microProfile1/Dockerfile)
+-	[`18.0.0.3-microProfile2` (*ga/18.0.0.3/microProfile2/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/1f420974a387fddfe980659f8536473b398143c9/ga/18.0.0.3/microProfile2/Dockerfile)
+-	[`18.0.0.3-springBoot2` (*ga/18.0.0.3/springBoot2/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/1f420974a387fddfe980659f8536473b398143c9/ga/18.0.0.3/springBoot2/Dockerfile)
+-	[`18.0.0.3-kernel` (*ga/18.0.0.3/kernel/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/1f420974a387fddfe980659f8536473b398143c9/ga/18.0.0.3/kernel/Dockerfile)
+-	[`18.0.0.3-springBoot1` (*ga/18.0.0.3/springBoot1/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/1f420974a387fddfe980659f8536473b398143c9/ga/18.0.0.3/springBoot1/Dockerfile)
+-	[`18.0.0.3-webProfile7` (*ga/18.0.0.3/webProfile7/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/1f420974a387fddfe980659f8536473b398143c9/ga/18.0.0.3/webProfile7/Dockerfile)
+-	[`18.0.0.3-javaee7` (*ga/18.0.0.3/javaee7/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/1f420974a387fddfe980659f8536473b398143c9/ga/18.0.0.3/javaee7/Dockerfile)
 
 # Quick reference
 
@@ -33,6 +46,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[the IBM WASdev Community](https://github.com/WASdev/ci.docker)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/websphere-liberty/), [`i386`](https://hub.docker.com/r/i386/websphere-liberty/), [`ppc64le`](https://hub.docker.com/r/ppc64le/websphere-liberty/), [`s390x`](https://hub.docker.com/r/s390x/websphere-liberty/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/websphere-liberty/` directory](https://github.com/docker-library/repo-info/blob/master/repos/websphere-liberty) ([history](https://github.com/docker-library/repo-info/commits/master/repos/websphere-liberty))  
@@ -46,93 +62,193 @@ WARNING:
 	[docs repo's `websphere-liberty/` directory](https://github.com/docker-library/docs/tree/master/websphere-liberty) ([history](https://github.com/docker-library/docs/commits/master/websphere-liberty))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # Overview
 
 The images in this repository contain IBM WebSphere Application Server Liberty for Developers and the IBM Java Runtime Environment. See the license section below for restrictions relating to the use of this image. For more information about WebSphere Application Server Liberty, see the [WASdev](https://developer.ibm.com/wasdev/docs/category/getting-started/) site.
 
-# Images
+# Image User
 
-There are multiple images available in this repository. The image with the tag `beta` contains the contents of the install archive for the latest monthly beta. The other images are all based on the latest generally available fix pack.
+This image runs by default with `USER 1001` (non-root), as part of group `0`. Please make sure you read below to set the appropriate folder and file permissions.
+
+## Updating folder permissions
+
+All of the folders accessed by WebSphere Liberty have been given the appropriate permissions, but if your extending Dockerfile needs permission to another location you can simply temporarily switch into root and provide the needed permissions, example:
+
+```dockerfile
+USER root
+RUN mkdir -p /myFolder && chown -R 1001:0 /myFolder
+USER 1001
+```
+
+## Updating file permissions
+
+You have to make sure that **all** the artifacts you are copying into the image (via `COPY` or `ADD`) have the correct permissions to be `read` and `executed` by user `1001` or group `0`, because the ownership of the file is changed to be `root:0` when transferring into the docker image.
+
+You have a few options for doing this: before copying the file, during copy, or after copy.
+
+### Updating permissions before copying
+
+Since the ownership of the file will change to `root:0`, you can simply set the permissions for the owner's group to be able to read/execute the artifact (i.e. the middle digit of a `chmod` command). For example, you can do `chmod g+rx server.xml` to ensure your `server.xml` can be `read` and `executed` by group `0`, as well as any artifacts such as the application's `EAR` or `WAR` file, JDBC driver, or other files that are placed on the image via `COPY` or `ADD`.
+
+### Updating permissions during copy
+
+If you're using Docker v17.09.0-ce and newer you can take advantage of the flag `--chown=<user>:<group>` during either `ADD` or `COPY`. For example: `COPY --chown=1001:0 jvm.options /config/jvm.options`. This is the preferred approach as you don't need to worry about changing permissions before calling `docker build` and you also do not duplicate layers in the resulting image.
+
+### Updating permissions after copy
+
+If you need your Dockerfile to work with older versions of Docker CE and don't want to pre-process the permissions of the files you can temporarily switch into root to change the permissions of the needed files. For example:
+
+```dockerfile
+USER root
+RUN chown 1001:0 /config/jvm.options
+RUN chown 1001:0 /output/resources/security/ltpa.keys
+USER 1001
+```
+
+Please note that this pattern will duplicate the docker layers for those artifacts, which can heavily bloat your resulting docker image (depending on the size of the artifact). So it is recommended to set the permissions before or during copy.
+
+# Tags
+
+There are multiple tags available in this repository. The image with the tag `beta` contains the contents of the install archive for the latest monthly beta. The other images are all based on the latest generally available fix pack.
 
 The `kernel` image contains just the Liberty kernel and no additional runtime features. This image can be used as the basis for custom built images that contain only the features required for a specific application. For example, the following Dockerfile starts with this image, copies in the `server.xml` that lists the features required by the application, and then uses the `installUtility` command to download those features from the online repository.
 
 ```dockerfile
 FROM websphere-liberty:kernel
-COPY server.xml /config/
+COPY --chown=1001:0  Sample1.war /config/dropins/
+COPY --chown=1001:0  server.xml /config/
 RUN installUtility install --acceptLicense defaultServer
 ```
 
-The `webProfile6` image contains the features required for Java EE6 Web Profile compliance. It also pulls in additional features to bring the contents in to line with the features available for download by using the runtime JAR, most notably the features required for OSGi applications.
+The `webProfile8` image contains the features required for Java EE8 Web Profile compliance. The `javaee8` image extends this image and adds the features required for Java EE8 Full Platform compliance. The `javaee8` image is also tagged with `latest`.
 
-The `webProfile7` image contains the features required for Java EE7 Web Profile compliance. The `javaee7` image extends this image and adds the features required for Java EE7 Full Platform compliance. The `javaee7` image is also tagged with `latest`.
+The `webProfile7` image contains the features required for Java EE7 Web Profile compliance. The `javaee7` image extends this image and adds the features required for Java EE7 Full Platform compliance.
 
-The `webProfile6`, `webProfile7` and `javaee7` images all also contain a common set of features that are expected to be of use for a typical production scenario. These features are: `appSecurity-2.0`, `collectiveMember-1.0`, `localConnector-1.0`, `ldapRegistry-3.0`, `monitor-1.0`, `requestTiming-1.0`, `restConnector-1.0`, `sessionDatabase-1.0`, `ssl-1.0`, and `webCache-1.0`.
+The `webProfile8`, `javaee8`, `webProfile7` and `javaee7` images also contain a common set of features that are expected to be of use for a typical production scenario. These features are: `appSecurity-2.0`, `collectiveMember-1.0`, `localConnector-1.0`, `ldapRegistry-3.0`, `monitor-1.0`, `requestTiming-1.0`, `restConnector-2.0`, `sessionDatabase-1.0`, `ssl-1.0`, `transportSecurity-1.0` and `webCache-1.0`.
+
+The `microProfile1` and `microProfile2` images contains the features required to support MicroProfile 1.4 and MicroProfile 2.0 (respectively).
+
+The `springBoot1` and `springBoot2` images contain all features required for running Spring Boot 1.5 and 2.0 applications; including `springBoot-1.5` or `springBoot-2.0`, respectively, plus `servlet-4.0`, `jsp-2.3`, `webSocket-1.1`, and `transportSecurity-1.0`.
 
 # Usage
 
-The images are designed to support a number of different usage patterns. The following examples are based on the Java EE7 Liberty [application deployment sample](https://developer.ibm.com/wasdev/docs/article_appdeployment/) and assume that [DefaultServletEngine.zip](https://github.com/WASdev/sample.servlet/releases/download/V1/DefaultServletEngine.zip) has been extracted to `/tmp` and the `server.xml` updated to accept HTTP connections from outside of the container by adding the following element inside the `server` stanza:
+The images are designed to support a number of different usage patterns. The following examples are based on the Java EE8 Liberty [application deployment sample](https://developer.ibm.com/wasdev/docs/article_appdeployment/) and assume that [DefaultServletEngine.zip](https://github.com/WASdev/sample.servlet/releases/download/V1/DefaultServletEngine.zip) has been extracted to `/tmp` and the `server.xml` updated to accept HTTP connections from outside of the container by adding the following element inside the `server` stanza (if not using one of the pre-packaged `server.xml` files with our tags):
 
 ```xml
 <httpEndpoint host="*" httpPort="9080" httpsPort="-1"/>
 ```
 
-1.	Each image contains a default server configuration that specifies the corresponding features and exposes ports 9080 and 9443 for HTTP and HTTPS respectively. A .WAR file can therefore be mounted in the `dropins` directory of this server and run. The following example starts a container in the background running a .WAR file from the host file system with the HTTP and HTTPS ports mapped to 80 and 443 respectively.
+## Application Image
 
-	```console
-	$ docker run -d -p 80:9080 -p 443:9443 \
+It is a very strong best practice to create an extending Docker image, we called it the `application image`, that encapsulates an application and its configuration. This creates a robust, self-contained and predictable Docker image that can span new containers upon request, without relying on volumes or other external runtime artifacts that may behave different over time.
+
+If you want to build the smallest possible WebSphere Liberty application image you can start with our `kernel` tag, add your artifacts, and run `installUtility` to grow the set of features to be fit-for-purpose. Scroll up to the `Tags` section for an example.
+
+If you want to start with one of the pre-packaged tags you do not need to run `installUtility` if the tag contains all the features you required, and you may not even need to copy a `server.xml` - unless you have updates you want to make. So one example of building an application image that runs a MicroProfile 2.0 application is:
+
+```dockerfile
+FROM websphere-liberty:microprofile2
+COPY --chown=1001:0  Sample1.war /config/dropins/
+```
+
+You can then build and run this image:
+
+```console
+$ docker build -t app .
+$ docker run -d -p 80:9080 -p 443:9443 app
+```
+
+## Using volumes for configuration
+
+This pattern can be useful for quick experiments / early development (i.e. `I just want to run the application as I iterate over it`), can should not be used for development scenarios that involve different teams and environments - for these cases the `Application Image` pattern described above is the way to go.
+
+When using `volumes`, an application file can be mounted in the `dropins` directory of this server and run. The following example starts a container in the background running a .WAR file from the host file system with the HTTP and HTTPS ports mapped to 80 and 443 respectively.
+
+```console
+$ docker run -d -p 80:9080 -p 443:9443 \
 	    -v /tmp/DefaultServletEngine/dropins/Sample1.war:/config/dropins/Sample1.war \
-	    websphere-liberty:webProfile7
-	```
+	    websphere-liberty:webProfile8
+```
 
-	When the server is started, you can browse to http://localhost/Sample1/SimpleServlet on the Docker host.
+When the server is started, you can browse to http://localhost/Sample1/SimpleServlet on the Docker host.
 
-	Note: If you are using the boot2docker virtual machine on OS X or Windows, you need to get the IP of the virtual host by using the command `boot2docker ip` instead of by using localhost.
+Note: If you are using the boot2docker virtual machine on OS X or Windows, you need to get the IP of the virtual host by using the command `boot2docker ip` instead of by using localhost.
 
-2.	For greater flexibility over configuration, it is possible to mount an entire server configuration directory from the host and then specify the server name as a parameter to the run command. Note: This particular example server configuration provides only HTTP access.
+For greater flexibility over configuration, it is possible to mount an entire server configuration directory from the host and then specify the server name as a parameter to the run command. Note: This particular example server configuration provides only HTTP access.
 
 	```console
 	$ docker run -d -p 80:9080 \
 	  -v /tmp/DefaultServletEngine:/config \
-	  websphere-liberty:webProfile7
+	  websphere-liberty:webProfile8
 	```
 
-3.	You can also build an application layer on top of this image by using either the default server configuration or a new server configuration. In this example, we have copied the `Sample1.war` from `/tmp/DefaultServletEngine/dropins` to the same directory as the following Dockerfile.
+# Using `springBoot` images
+
+The `springBoot` images introduce capabilities specific to the support of Spring Boot applications, including the `springBootUtility` used to separate Spring Boot applications into thin applications and dependency library caches. To elaborate these capabilities this section assumes the standalone Spring Boot 2.0.x application `hellospringboot.jar` exists in the `/tmp` directory.
+
+1.	A Spring Boot application JAR deploys to the `dropins/spring` directory within the default server configuration, not the `dropins` directory. Liberty allows one Spring Boot application per server configuration. The following example starts a container running a Spring Boot application.
+
+	```console
+	$ docker run -d -p 8080:9080 \
+	    -v /tmp/hellospringboot.jar:/config/dropins/spring/hellospringboot.jar \
+	    websphere-liberty:springBoot2
+	```
+
+	Similarly, you can create a Spring Boot application layer over this image by adding the application JAR to the `dropins/spring` directory. In this example we copied `hellospringboot.jar` from `/tmp` to the same directory containing the following Dockerfile.
 
 	```dockerfile
-	FROM websphere-liberty:webProfile7
-	ADD Sample1.war /config/dropins/
+	FROM websphere-liberty:springBoot2
+	COPY hellospringboot.jar /config/dropins/spring/
 	```
 
-	This can then be built and run as follows:
+	The custom image can be built and run as follows.
 
 	```console
 	$ docker build -t app .
-	$ docker run -d -p 80:9080 -p 443:9443 app
+	$ docker run -d -p 8080:9080 app
 	```
 
-4.	You can mount a data volume container that contains the application and the server configuration on to the image. This has the benefit that it has no dependency on files from the host but still allows the application container to be easily re-mounted on a newer version of the application server image. This example assumes that you have copied the `/tmp/DefaultServletEngine` directory in to the same directory as the Dockerfile.
+2.	The `springBoot` images provide the library cache directory, `lib.index.cache`, which contains an indexed library cache created by the `springBootUtility` command. Use `lib.index.cache` to provide the library cache for a thin application.
 
-	Build and run the data volume container:
+	For example, run the following command to thin the `hellospringboot.jar` application.
+
+	```console
+	$ <wlp>/bin/springBootUtility thin \
+	   --sourceAppPath=/tmp/hellospringboot.jar \
+	   --targetLibCachePath=/tmp/lib.index.cache \
+	   --targetThinAppPath=/tmp/thinhellospringboot.jar
+	```
+
+	You can run the thin application by mounting both the target application JAR and library cache when starting the container.
+
+	```console
+	$ docker run -d -p 8080:9080 \
+	    -v /tmp/thinhellospringboot.jar:/config/dropins/spring/thinhellospringboot.jar \
+	    -v /tmp/lib.index.cache:/lib.index.cache \
+	    websphere-liberty:springBoot2
+	```
+
+	Similarly, you can use the `springBootUtility` command to create thin application and library cache layers over a `springBoot` image. The following example uses docker staging to efficiently build an image that deploys a fat Spring Boot application as two layers containing a thin application and a library cache.
 
 	```dockerfile
-	FROM websphere-liberty:webProfile7
-	ADD DefaultServletEngine /config
+	FROM websphere-liberty:springBoot2 as staging
+	COPY hellospringboot.jar /staging/myFatApp.jar
+	RUN springBootUtility thin \
+	   --sourceAppPath=/staging/myFatApp.jar \
+	   --targetThinAppPath=/staging/myThinApp.jar \
+	   --targetLibCachePath=/staging/lib.index.cache
+	FROM websphere-liberty:springBoot2
+	COPY --from=staging /staging/lib.index.cache /lib.index.cache
+	COPY --from=staging /staging/myThinApp.jar /config/dropins/spring/myThinApp.jar
 	```
 
-	```console
-	$ docker build -t app-image .
-	$ docker run -d -v /config \
-	    --name app app-image true
-	```
+	For Spring Boot applications packaged with library dependencies that rarely change across continuous application updates, you can use the capabilities mentioned above to to share library caches across containers and to create even more efficient docker layers that leverage the docker build cache.
 
-	Run the WebSphere Liberty image with the volumes from the data volume container mounted:
+# Providing your own keystore/truststore
 
-	```console
-	$ docker run -d -p 80:9080 \
-	  --volumes-from app websphere-liberty:webProfile7
-	```
+By default, when a `websphere-liberty` image starts, a Liberty server XML snippet is generated in `/config/configDropins/defaults/keystore.xml` that specifies a `keyStore` stanza with a generated password. This causes Liberty to generate a default keystore and truststore with a self-signed certificate when it starts (see the [Knowledge Center](https://www.ibm.com/support/knowledgecenter/SSEQTP_liberty/com.ibm.websphere.wlp.doc/ae/rwlp_liberty_ssl_defaults.html) for more information). When providing your own keystore/truststore, this default behavior can be disabled by ensuring that a file already exists at `/config/configDropins/defaults/keystore.xml` (for example, added as part of your Docker build). This file can contain your keystore configuration or could just contain an empty `<server></server>` stanza.
 
 # Using IBM JRE Class data sharing
 
@@ -165,15 +281,15 @@ Liberty writes to two different directories when running: `/opt/ibm/wlp/output` 
 ```console
 docker run -d -p 80:9080 -p 443:9443 \
     --tmpfs /opt/ibm/wlp/output --tmpfs /logs -v /config --read-only \
-    websphere-liberty:javaee7
+    websphere-liberty:javaee8
 ```
 
 # Changing locale
 
-The base Ubuntu image does not include additional language packs. To use an alternative locale, build your own image that installs the required language pack and then sets the `LANG` environment variable. For example, the following Dockerfile starts with the `websphere-liberty:webProfile7` image, installs the Portuguese language pack, and sets Brazilian Portuguese as the default locale:
+The base Ubuntu image does not include additional language packs. To use an alternative locale, build your own image that installs the required language pack and then sets the `LANG` environment variable. For example, the following Dockerfile starts with the `websphere-liberty:webProfile8` image, installs the Portuguese language pack, and sets Brazilian Portuguese as the default locale:
 
 ```dockerfile
-FROM websphere-liberty:webProfile7
+FROM websphere-liberty:webProfile8
 RUN apt-get update \
   && apt-get install -y language-pack-pt-base \
   && rm -rf /var/lib/apt/lists/*
@@ -187,7 +303,14 @@ The Dockerfiles and associated scripts are licensed under the [Apache License 2.
 Licenses for the products installed within the images are as follows:
 
 -	[IBM JRE](http://www14.software.ibm.com/cgi-bin/weblap/lap.pl?la_formnum=&li_formnum=L-JWOD-9SYNCP&title=IBM%C2%AE+SDK%2C+Java+Technology+Edition%2C+Version+8.0&l=en) (International License Agreement for Non-Warranted Programs)
--	[IBM WebSphere Application Server](https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/downloads/wlp/16.0.0.2/lafiles/runtime/en.html) in the non-beta images (International License Agreement for Non-Warranted Programs)
+-	[IBM WebSphere Application Server](https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/license/base_ilan/ilan/18.0.0.3/lafiles/en.html) in the non-beta images ILAN (International License Agreement for Non-Warranted Programs).
 -	[IBM WebSphere Application Server Liberty Beta](https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/downloads/wlp/beta/lafiles/en.html) in the `beta` image (International License Agreement for Early Release of Programs)
+-	[Non IBM License](https://github.com/WASdev/ci.docker/blob/master/ga/developer/kernel/non_ibm_license.html)
 
 Note: These licenses do not permit further distribution and that the terms for WebSphere Application Server in the non-beta images restrict usage to a developer machine or build server only, or subject to a maximum 2 gigabyte heap usage across all instances. Instructions are available to enable entitled customers to [upgrade](https://github.com/WASdev/ci.docker/tree/master/ga/production-upgrade) the Docker Hub image for production use or [build](https://github.com/WASdev/ci.docker/tree/master/ga/production-install) their own production licensed image.
+
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
+
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `websphere-liberty/` directory](https://github.com/docker-library/repo-info/tree/master/repos/websphere-liberty).
+
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

@@ -9,7 +9,7 @@ mongo-express is a web-based MongoDB admin interface written in Node.js, Express
 # How to use this image
 
 ```console
-$ docker run --link some_mongo_container:mongo -p 8081:8081 mongo-express
+$ docker run --link some_mongo_container:mongo -p 8081:8081 %%IMAGE%%
 ```
 
 Then you can hit `http://localhost:8081` or `http://host-ip:8081` in your browser.
@@ -60,7 +60,7 @@ $ docker run -it --rm \
     -e ME_CONFIG_OPTIONS_EDITORTHEME="ambiance" \
     -e ME_CONFIG_BASICAUTH_USERNAME="user" \
     -e ME_CONFIG_BASICAUTH_PASSWORD="fairly long password" \
-    mongo-express
+    %%IMAGE%%
 ```
 
 This example links to a container name typical of `docker-compose`, changes the editor's color theme, and enables basic authentication.

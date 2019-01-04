@@ -1,0 +1,45 @@
+# Use tech_user/secret as user/password credentials
+version: '3'
+
+services:
+  db:
+    image: postgres:9.3
+    environment:
+      POSTGRES_PASSWORD: example
+    restart: always
+    command:
+      - -c
+      - max_prepared_transactions=100
+  bonita:
+    image: bonita
+    ports:
+      - 8080:8080
+    environment:
+      - POSTGRES_ENV_POSTGRES_PASSWORD=example
+      - DB_VENDOR=postgres
+      - DB_HOST=db
+      - TENANT_LOGIN=tech_user
+      - TENANT_PASSWORD=secret
+      - PLATFORM_LOGIN=pfadmin
+      - PLATFORM_PASSWORD=pfsecret
+    restart: on-failure:2
+    depends_on:
+      - db
+    entrypoint:
+      - bash
+      - -c
+      - |
+        set -e
+        echo 'Waiting for Postgres to be available'
+        export PGPASSWORD="$$POSTGRES_ENV_POSTGRES_PASSWORD"
+        maxTries=10
+        while [ "$$maxTries" -gt 0 ] && ! psql -h "$$DB_HOST" -U 'postgres' -c '\l'; do
+            let maxTries--
+            sleep 1
+        done
+        echo
+        if [ "$$maxTries" -le 0 ]; then
+            echo >&2 'error: unable to contact Postgres after 10 tries'
+            exit 1
+        fi
+        exec /opt/files/startup.sh

@@ -16,7 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `7.5.12` (*7.5.12/stretch/Dockerfile*)](https://github.com/SWI-Prolog/docker-swipl/blob/c62441347c7984269ab315fbf042850cbe3407fa/7.5.12/stretch/Dockerfile)
+-	[`latest`, `7.7.25` (*7.7.25/stretch/Dockerfile*)](https://github.com/SWI-Prolog/docker-swipl/blob/f06a5ab71fcca1676a79a4baa8d6ccb091f03b6a/7.7.25/stretch/Dockerfile)
+-	[`stable`, `7.6.4` (*7.6.4/stretch/Dockerfile*)](https://github.com/SWI-Prolog/docker-swipl/blob/f06a5ab71fcca1676a79a4baa8d6ccb091f03b6a/7.6.4/stretch/Dockerfile)
 
 # Quick reference
 
@@ -24,10 +25,13 @@ WARNING:
 	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
 -	**Where to file issues**:  
-	[https://github.com/SWI-Prolog/swipl-devel/issues](https://github.com/SWI-Prolog/swipl-devel/issues)
+	[https://github.com/SWI-Prolog/docker-swipl/issues](https://github.com/SWI-Prolog/docker-swipl/issues)
 
 -	**Maintained by**:  
-	[the SWI-Prolog community](https://github.com/SWI-Prolog/swipl-devel)
+	[the SWI-Prolog community](https://github.com/SWI-Prolog/docker-swipl)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/swipl/), [`arm32v7`](https://hub.docker.com/r/arm32v7/swipl/), [`arm64v8`](https://hub.docker.com/r/arm64v8/swipl/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/swipl/` directory](https://github.com/docker-library/repo-info/blob/master/repos/swipl) ([history](https://github.com/docker-library/repo-info/commits/master/repos/swipl))  
@@ -41,7 +45,7 @@ WARNING:
 	[docs repo's `swipl/` directory](https://github.com/docker-library/docs/tree/master/swipl) ([history](https://github.com/docker-library/docs/commits/master/swipl))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is SWI-Prolog?
 
@@ -73,6 +77,31 @@ CMD ["swipl", "/app/start.pl"]
 
 This will extract and copy your source files to the image and then set the default command to run your application.
 
+## Differences from the SWI-Prolog source distribution
+
+### Excluded packages
+
+-	jpl - interop with Java is excluded, as Java isn't included on the image
+-	xpce - XPCE is excluded, as it's used only for the GUI platform
+
+### Included addins
+
+This image includes several SWI-Prolog addins that are commonly used, complex to build, and require little additional space.
+
+-	space
+-	prosqlite
+-	rocksdb\*
+-	hdt\*
+-	rserve_client
+
+\*excluded from ARM architecture images due to platform constraints
+
 # License
 
 View the [Simplified BSD license](http://www.swi-prolog.org/license.html) for the software contained in this image.
+
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
+
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `swipl/` directory](https://github.com/docker-library/repo-info/tree/master/repos/swipl).
+
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

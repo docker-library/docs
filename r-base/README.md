@@ -16,7 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.4.1`, `latest` (*r-base/Dockerfile*)](https://github.com/rocker-org/rocker/blob/541002c788eff3ffce85c16072365bf2bc8bdf67/r-base/Dockerfile)
+-	[`3.5.2`, `latest` (*r-base/Dockerfile*)](https://github.com/rocker-org/rocker/blob/a7ecee9111f3b5dde35555d338a0e30401f5c095/r-base/Dockerfile)
 
 # Quick reference
 
@@ -28,6 +28,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[the Rocker Community](https://github.com/rocker-org/rocker)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/r-base/), [`arm64v8`](https://hub.docker.com/r/arm64v8/r-base/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/r-base/` directory](https://github.com/docker-library/repo-info/blob/master/repos/r-base) ([history](https://github.com/docker-library/repo-info/commits/master/repos/r-base))  
@@ -41,7 +44,7 @@ WARNING:
 	[docs repo's `r-base/` directory](https://github.com/docker-library/docs/tree/master/r-base) ([history](https://github.com/docker-library/docs/commits/master/r-base))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is R?
 
@@ -112,3 +115,9 @@ Further documentation and example use cases can be found at the [rocker-org](htt
 # License
 
 View [R-project license information](http://www.r-project.org/Licenses/) for the software contained in this image.
+
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
+
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `r-base/` directory](https://github.com/docker-library/repo-info/tree/master/repos/r-base).
+
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

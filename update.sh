@@ -4,11 +4,29 @@ set -Eeuo pipefail
 cd "$(dirname "$(readlink -f "$BASH_SOURCE")")"
 helperDir='.template-helpers'
 
+# usage: ./update.sh [--namespace NAMESPACE] [[NAMESPACE/]IMAGE ...]
+#    ie: ./update.sh
+#        ./update.sh debian golang
+#        ./update.sh --namespace tianontesting debian golang
+#        ./update.sh tianontesting/debian tianontestingmore/golang
+#        BASHBREW_ARCH=windows-amd64 BASHBREW_ARCH_NAMESPACES='...' ./update.sh --namespace winamd64
+
+forceNamespace=
+if [ "${1:-}" = '--namespace' ]; then
+	shift
+	forceNamespace="$1"
+	shift
+fi
+
 images=( "$@" )
 if [ ${#images[@]} -eq 0 ]; then
 	images=( */ )
 fi
 images=( "${images[@]%/}" )
+
+if [ -n "$forceNamespace" ]; then
+	images=( "${images[@]/#/"$forceNamespace/"}" )
+fi
 
 replace_field() {
 	targetFile="$1"
@@ -44,8 +62,9 @@ for image in "${images[@]}"; do
 		getHelp="$(cat "$repo/get-help.md" 2>/dev/null || cat "$helperDir/get-help.md")"
 
 		license="$(cat "$repo/license.md" 2>/dev/null || true)"
+		licenseCommon="$(cat "$repo/license-common.md" 2>/dev/null || cat "$helperDir/license-common.md")"
 		if [ "$license" ]; then
-			license=$'\n\n''# License'$'\n\n'"$license"
+			license=$'\n\n''# License'$'\n\n'"$license"$'\n\n'"$licenseCommon"
 		fi
 
 		logo=
@@ -59,11 +78,12 @@ for image in "${images[@]}"; do
 		if [ "$logoFile" ]; then
 			logoCommit="$(git log -1 --format='format:%H' -- "$logoFile" 2>/dev/null || true)"
 			[ "$logoCommit" ] || logoCommit='master'
+			logoUrl="https://raw.githubusercontent.com/docker-library/docs/$logoCommit/$logoFile"
 			if [ "${logoFile##*.}" = 'svg' ]; then
-				logo="![logo](https://cdn.rawgit.com/docker-library/docs/$logoCommit/$logoFile)"
-			else
-				logo="![logo](https://raw.githubusercontent.com/docker-library/docs/$logoCommit/$logoFile)"
+				# https://stackoverflow.com/a/16462143/433558
+				logoUrl+='?sanitize=true'
 			fi
+			logo="![logo]($logoUrl)"
 		fi
 
 		stack=
@@ -86,9 +106,21 @@ for image in "${images[@]}"; do
 
 		deprecated=
 		if [ -f "$repo/deprecated.md" ]; then
-			deprecated=$'# **DEPRECATED**\n\n'
+			deprecated=$'# **DEPRECATION NOTICE**\n\n'
 			deprecated+="$(cat "$repo/deprecated.md")"
 			deprecated+=$'\n\n'
+		fi
+
+		echo '  GIT PREFETCH => "'"$repo"'"'
+		"$helperDir/git-prefetch.sh" "$repo"
+
+		if ! partial="$("$helperDir/generate-dockerfile-links-partial.sh" "$repo")"; then
+			{
+				echo
+				echo "WARNING: failed to fetch tags for '$repo'; skipping!"
+				echo
+			} >&2
+			continue
 		fi
 
 		targetFile="$repo/README.md"
@@ -101,9 +133,23 @@ for image in "${images[@]}"; do
 		} > "$targetFile"
 
 		echo '  TAGS => generate-dockerfile-links-partial.sh "'"$repo"'"'
-		partial="$("$helperDir/generate-dockerfile-links-partial.sh" "$repo")"
-		[ "$partial" ]
+		if [ -z "$partial" ]; then
+			if [ -n "$ARCH_SPECIFIC_DOCS" ]; then
+				partial='**No supported tags found!**'$'\n\n''It is very likely that `%%REPO%%` does not support the currently selected architecture (`'"$BASHBREW_ARCH"'`).'
+			else
+				echo >&2 'error: missing TAGS for '"$repo"'!'
+				exit 1
+			fi
+		elif [ -n "$ARCH_SPECIFIC_DOCS" ]; then
+			jenkinsJobUrl="https://doi-janky.infosiftr.net/job/multiarch/job/$BASHBREW_ARCH/job/$repo/"
+			partial+=$'\n\n''[![Build Status]('"${jenkinsJobUrl%/}"'/badge/icon) (`%%IMAGE%%` build job)]('"$jenkinsJobUrl"')'
+		fi
 		replace_field "$targetFile" 'TAGS' "$partial"
+
+		echo '  ARCHES => arches.sh "'"$repo"'"'
+		arches="$("$helperDir/arches.sh" "$repo")"
+		[ "$arches" ]
+		replace_field "$targetFile" 'ARCHES' "$arches"
 
 		echo '  CONTENT => '"$repo"'/content.md'
 		replace_field "$targetFile" 'CONTENT' "$(cat "$repo/content.md")"
@@ -117,9 +163,9 @@ for image in "${images[@]}"; do
 
 		echo '  STACK => '"$repo"'/stack.md'
 		replace_field "$targetFile" 'STACK' "$stack"
-		echo '  STACK-YML => '"$repo"'/docker-stack.yml'
+		echo '  STACK-YML => '"$repo"'/stack.yml'
 		replace_field "$targetFile" 'STACK-YML' "$stackYml"
-		echo '  STACK-URL => '"$repo"'/docker-stack.yml'
+		echo '  STACK-URL => '"$repo"'/stack.yml'
 		replace_field "$targetFile" 'STACK-URL' "$stackUrl"
 
 		echo '  COMPOSE => '"$repo"'/compose.md'

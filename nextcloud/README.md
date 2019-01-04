@@ -16,12 +16,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`10.0.6-apache`, `10.0-apache`, `10-apache`, `10.0.6`, `10.0`, `10` (*10.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/e714562be972718c33d06d875e4d53ac63a9aeec/10.0/apache/Dockerfile)
--	[`10.0.6-fpm`, `10.0-fpm`, `10-fpm` (*10.0/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/e714562be972718c33d06d875e4d53ac63a9aeec/10.0/fpm/Dockerfile)
--	[`11.0.4-apache`, `11.0-apache`, `11-apache`, `11.0.4`, `11.0`, `11` (*11.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/444cd43edfdeef05744a5641c913b03583de7894/11.0/apache/Dockerfile)
--	[`11.0.4-fpm`, `11.0-fpm`, `11-fpm` (*11.0/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/444cd43edfdeef05744a5641c913b03583de7894/11.0/fpm/Dockerfile)
--	[`12.0.2-apache`, `12.0-apache`, `12-apache`, `apache`, `12.0.2`, `12.0`, `12`, `latest` (*12.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/2220249a20b6b92e25f51eb7c1f39a77b7838c49/12.0/apache/Dockerfile)
--	[`12.0.2-fpm`, `12.0-fpm`, `12-fpm`, `fpm` (*12.0/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/2220249a20b6b92e25f51eb7c1f39a77b7838c49/12.0/fpm/Dockerfile)
+-	[`13.0.8-apache`, `13.0-apache`, `13-apache`, `production-apache`, `13.0.8`, `13.0`, `13`, `production` (*13.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/31d7dedda906de8c4f387e17be7e16b55cb41031/13.0/apache/Dockerfile)
+-	[`13.0.8-fpm-alpine`, `13.0-fpm-alpine`, `13-fpm-alpine`, `production-fpm-alpine` (*13.0/fpm-alpine/Dockerfile*)](https://github.com/nextcloud/docker/blob/31d7dedda906de8c4f387e17be7e16b55cb41031/13.0/fpm-alpine/Dockerfile)
+-	[`13.0.8-fpm`, `13.0-fpm`, `13-fpm`, `production-fpm` (*13.0/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/31d7dedda906de8c4f387e17be7e16b55cb41031/13.0/fpm/Dockerfile)
+-	[`14.0.4-apache`, `14.0-apache`, `14-apache`, `stable-apache`, `14.0.4`, `14.0`, `14`, `stable` (*14.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/31d7dedda906de8c4f387e17be7e16b55cb41031/14.0/apache/Dockerfile)
+-	[`14.0.4-fpm-alpine`, `14.0-fpm-alpine`, `14-fpm-alpine`, `stable-fpm-alpine` (*14.0/fpm-alpine/Dockerfile*)](https://github.com/nextcloud/docker/blob/31d7dedda906de8c4f387e17be7e16b55cb41031/14.0/fpm-alpine/Dockerfile)
+-	[`14.0.4-fpm`, `14.0-fpm`, `14-fpm`, `stable-fpm` (*14.0/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/31d7dedda906de8c4f387e17be7e16b55cb41031/14.0/fpm/Dockerfile)
+-	[`15.0.0-apache`, `15.0-apache`, `15-apache`, `apache`, `15.0.0`, `15.0`, `15`, `latest` (*15.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/31d7dedda906de8c4f387e17be7e16b55cb41031/15.0/apache/Dockerfile)
+-	[`15.0.0-fpm-alpine`, `15.0-fpm-alpine`, `15-fpm-alpine`, `fpm-alpine` (*15.0/fpm-alpine/Dockerfile*)](https://github.com/nextcloud/docker/blob/31d7dedda906de8c4f387e17be7e16b55cb41031/15.0/fpm-alpine/Dockerfile)
+-	[`15.0.0-fpm`, `15.0-fpm`, `15-fpm`, `fpm` (*15.0/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/31d7dedda906de8c4f387e17be7e16b55cb41031/15.0/fpm/Dockerfile)
 
 # Quick reference
 
@@ -33,6 +36,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[Nextcloud](https://github.com/nextcloud/docker)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/nextcloud/), [`arm32v5`](https://hub.docker.com/r/arm32v5/nextcloud/), [`arm32v6`](https://hub.docker.com/r/arm32v6/nextcloud/), [`arm32v7`](https://hub.docker.com/r/arm32v7/nextcloud/), [`arm64v8`](https://hub.docker.com/r/arm64v8/nextcloud/), [`i386`](https://hub.docker.com/r/i386/nextcloud/), [`ppc64le`](https://hub.docker.com/r/ppc64le/nextcloud/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/nextcloud/` directory](https://github.com/docker-library/repo-info/blob/master/repos/nextcloud) ([history](https://github.com/docker-library/repo-info/commits/master/repos/nextcloud))  
@@ -46,7 +52,7 @@ WARNING:
 	[docs repo's `nextcloud/` directory](https://github.com/docker-library/docs/tree/master/nextcloud) ([history](https://github.com/docker-library/docs/commits/master/nextcloud))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Nextcloud?
 
@@ -54,13 +60,13 @@ A safe home for all your data. Access & share your files, calendars, contacts, m
 
 > [Nextcloud.com](https://nextcloud.com/)
 
-![logo](https://cdn.rawgit.com/docker-library/docs/defa5ffc7123177acd60ddef6e16bddf694cc35f/nextcloud/logo.svg)
+![logo](https://raw.githubusercontent.com/docker-library/docs/e563b6cd3d797e2b3695576d20041227d1fb7536/nextcloud/logo.svg?sanitize=true)
 
 # How to use this image
 
 This image is designed to be used in a micro-service environment. There are two versions of the image you can choose from.
 
-The `apache` tag contains a full Nextcloud installation including an apache web server. It is designed to be easy to use and get's you running pretty fast. This is also the default for the `latest` tag and version tags that are not further specified.
+The `apache` tag contains a full Nextcloud installation including an apache web server. It is designed to be easy to use and gets you running pretty fast. This is also the default for the `latest` tag and version tags that are not further specified.
 
 The second option is a `fpm` container. It is based on the [php-fpm](https://hub.docker.com/_/php/) image and runs a fastCGI-Process that serves your Nextcloud page. To use this image it must be combined with any webserver that can proxy the http requests to the FastCGI-port of the container.
 
@@ -96,18 +102,24 @@ To make your data persistent to upgrading and get access for backups is using na
 
 Nextcloud:
 
--	`/var/www/html/` folder where all nextcloud data lives`console
-	$ docker run -d nextcloud \
-	-v nextcloud:/var/www/html
-	`
+-	`/var/www/html/` folder where all Nextcloud data lives
+
+	```console
+	$ docker run -d \
+	-v nextcloud:/var/www/html \
+	nextcloud
+	```
 
 Database:
 
 -	`/var/lib/mysql` MySQL / MariaDB Data
--	`/var/lib/postresql/data` PostegreSQL Data`console
-	$ docker run -d mariadb \
-	-v db:/var/lib/mysql
-	`
+-	`/var/lib/postgresql/data` PostgreSQL Data
+
+	```console
+	$ docker run -d \
+	-v db:/var/lib/mysql \
+	mariadb
+	```
 
 If you want to get fine grained access to your individual files, you can mount additional volumes for data, config, your theme and custom apps. The `data`, `config` are stored in respective subfolders inside `/var/www/html/`. The apps are split into core `apps` (which are shipped with Nextcloud and you don't need to take care of) and a `custom_apps` folder. If you use a custom theme it would go into the `themes` subfolder.
 
@@ -122,12 +134,13 @@ Overview of the folders that can be mounted as volumes:
 If you want to use named volumes for all of these it would look like this
 
 ```console
-$ docker run -d nextcloud \
--v nextcloud:/var/www/html \
--v apps:/var/www/html/custom_apps \
--v config:/var/www/html/config \
--v data:/var/www/html/data \
--v theme:/var/www/html/themes/<YOUR_CUSTOM_THEME>
+$ docker run -d \
+	-v nextcloud:/var/www/html \
+	-v apps:/var/www/html/custom_apps \
+	-v config:/var/www/html/config \
+	-v data:/var/www/html/data \
+	-v theme:/var/www/html/themes/<YOUR_CUSTOM_THEME> \
+	nextcloud
 ```
 
 ## Using the Nextcloud command-line interface
@@ -143,6 +156,38 @@ or for docker-compose:
 ```console
 $ docker-compose exec --user www-data app php occ
 ```
+
+## Auto configuration via environment variables
+
+The nextcloud image supports auto configuration via environment variables. You can preconfigure everything that is asked on the install page on first run. To enable auto configuration, set your database connection via the following environment variables. ONLY use one database type!
+
+**SQLITE_DATABASE**:
+
+-	`SQLITE_DATABASE` Name of the database using sqlite
+
+**MYSQL/MariaDB**:
+
+-	`MYSQL_DATABASE` Name of the database using mysql / mariadb.
+-	`MYSQL_USER` Username for the database using mysql / mariadb.
+-	`MYSQL_PASSWORD` Password for the database user using mysql / mariadb.
+-	`MYSQL_HOST` Hostname of the database server using mysql / mariadb.
+
+**PostgreSQL**:
+
+-	`POSTGRES_DB` Name of the database using postgres.
+-	`POSTGRES_USER` Username for the database using postgres.
+-	`POSTGRES_PASSWORD` Password for the database user using postgres.
+-	`POSTGRES_HOST` Hostname of the database server using postgres.
+
+If you set any values, they will not be asked in the install page on first run. With a complete configuration by using all variables for your database type, you can additionally configure your Nextcloud instance by setting admin user and password (only works if you set both):
+
+-	`NEXTCLOUD_ADMIN_USER` Name of the Nextcloud admin user.
+-	`NEXTCLOUD_ADMIN_PASSWORD` Password for the Nextcloud admin user.
+
+If you want you can set the data directory and table prefix, otherwise default values will be used.
+
+-	`NEXTCLOUD_DATA_DIR` (default: */var/www/html/data*) Configures the data directory where nextcloud stores all files from the users.
+-	`NEXTCLOUD_TABLE_PREFIX` (default: *""*) Optional prefix for the tables. Used to be `oc_` in the past
 
 # Running this image with docker-compose
 
@@ -175,7 +220,7 @@ services:
       - MYSQL_DATABASE=nextcloud
       - MYSQL_USER=nextcloud
 
-  app:  
+  app:
     image: nextcloud
     ports:
       - 8080:80
@@ -184,7 +229,6 @@ services:
     volumes:
       - nextcloud:/var/www/html
     restart: always
-
 ```
 
 Then run `docker-compose up -d`, now you can access Nextcloud at http://localhost:8080/ from your host system.
@@ -305,7 +349,7 @@ If you use your own Dockerfile you need to configure your docker-compose file ac
 **Updating** your own derived image is also very simple. When a new version of the Nextcloud image is available run:
 
 ```console
-docker build -t your-name --pull . 
+docker build -t your-name --pull .
 docker run -d your-name
 ```
 
@@ -323,49 +367,84 @@ The `--pull` option tells docker to look for new versions of the base image. The
 You're already using Nextcloud and want to switch to docker? Great! Here are some things to look out for:
 
 1.	Define your whole Nextcloud infrastructure in a `docker-compose` file and run it with `docker-compose up -d` to get the base installation, volumes and database. Work from there.
-2.	Restore your database from a mysqldump (nextcloud\_db\_1 is the name of your db container)`console
+2.	Restore your database from a mysqldump (nextcloud\_db\_1 is the name of your db container)
+
+	```console
 	docker cp ./database.dmp nextcloud_db_1:/dmp
 	docker-compose exec db sh -c "mysql -u USER -pPASSWORD nextcloud < /dmp"
 	docker-compose exec db rm /dmp
-	`
+	```
+
 3.	Edit your config.php
 
-	1.	Set database connection`php
+	1.	Set database connection
+
+		```php
 		'dbhost' => 'db:3306',
-		`
-	2.	Make sure you have no configuration for the `apps_paths`. Delete lines like these\`\``diff
-	3.	"apps_paths" => array (
-	4.	0 => array (
-	5.	"path" => OC::$SERVERROOT."/apps",
-	6.	"url" => "/apps",
-	7.	"writable" => true,
-	8.	),\`\`\`
-	9.	Make sure your data directory is set to /var/www/html/data`php
+		```
+
+	2.	Make sure you have no configuration for the `apps_paths`. Delete lines like these
+
+		```php
+		"apps_paths" => array (
+		    0 => array (
+		        "path" => OC::$SERVERROOT."/apps",
+		        "url" => "/apps",
+		        "writable" => true,
+		    ),
+		),
+		```
+
+	3.	Make sure your data directory is set to /var/www/html/data
+
+		```php
 		'datadirectory' => '/var/www/html/data',
-		`
+		```
 
 4.	Copy your data (nextcloud_app_1 is the name of your Nextcloud container):
 
 	```console
 	docker cp ./data/ nextcloud_app_1:/var/www/html/data
-	docker-compose exec app chown www-data:www-data /var/www/html/data
+	docker-compose exec app chown -R www-data:www-data /var/www/html/data
 	docker cp ./theming/ nextcloud_app_1:/var/www/html/theming
-	docker-compose exec app chown www-data:www-data /var/www/html/theming
+	docker-compose exec app chown -R www-data:www-data /var/www/html/theming
 	docker cp ./config/config.php nextcloud_app_1:/var/www/html/config
-	docker-compose exec app chown www-data:www-data /var/www/html/config
+	docker-compose exec app chown -R www-data:www-data /var/www/html/config
 	```
 
 5.	Copy only the custom apps you use (or simply redownload them from the web interface):
 
 	```console
 	docker cp ./apps/ nextcloud_data:/var/www/html/custom_apps
-	docker-compose exec app chown www-data:www-data /var/www/html/custom_apps
+	docker-compose exec app chown -R www-data:www-data /var/www/html/custom_apps
 	```
 
 # Questions / Issues
 
 If you got any questions or problems using the image, please visit our [Github Repository](https://github.com/nextcloud/docker) and write an issue.
 
+# Image Variants
+
+The `nextcloud` images come in many flavors, each designed for a specific use case.
+
+## `nextcloud:<version>`
+
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+## `nextcloud:<version>-alpine`
+
+This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+
+This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+
+To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
+
 # License
 
 View [license information](https://github.com/nextcloud/server/blob/master/COPYING-README) for the software contained in this image.
+
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
+
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `nextcloud/` directory](https://github.com/docker-library/repo-info/tree/master/repos/nextcloud).
+
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

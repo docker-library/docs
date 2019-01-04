@@ -9,7 +9,7 @@ Memcached's APIs provide a very large hash table distributed across multiple mac
 # How to use this image
 
 ```console
-$ docker run --name my-memcache -d memcached
+$ docker run --name my-memcache -d %%IMAGE%%
 ```
 
 Start your memcached container with the above command and then you can connect you app to it with standard linking:
@@ -23,7 +23,7 @@ The memcached server information would then be available through the ENV variabl
 How to set the memory usage for memcached
 
 ```console
-$ docker run --name my-memcache -d memcached memcached -m 64
+$ docker run --name my-memcache -d %%IMAGE%% memcached -m 64
 ```
 
 This would set the memcache server to use 64 megabytes for storage.

@@ -16,7 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.2.8`, `latest` (*Dockerfile*)](https://github.com/docker/swarm-library-image/blob/741c78fb0287dc0850f5f131e099610a7acc2bf9/Dockerfile)
+-	[`1.2.9`, `latest` (*Dockerfile*)](https://github.com/docker/swarm-library-image/blob/a2a08d733833327354b5d3336ffbd19e4f369a2d/Dockerfile)
 
 # Quick reference
 
@@ -28,6 +28,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[Docker, Inc.](https://github.com/docker/swarm-library-image)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/swarm/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/swarm/` directory](https://github.com/docker-library/repo-info/blob/master/repos/swarm) ([history](https://github.com/docker-library/repo-info/commits/master/repos/swarm))  
@@ -41,7 +44,7 @@ WARNING:
 	[docs repo's `swarm/` directory](https://github.com/docker-library/docs/tree/master/swarm) ([history](https://github.com/docker-library/docs/commits/master/swarm))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # Swarm: a Docker-native clustering system
 
@@ -101,3 +104,9 @@ Note that Swarm certificates must be generated with `extendedKeyUsage = clientAu
 # License
 
 View [license information](https://github.com/docker/swarm/blob/master/LICENSE.code) for the software contained in this image.
+
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
+
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `swarm/` directory](https://github.com/docker-library/repo-info/tree/master/repos/swarm).
+
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

@@ -16,12 +16,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`9.4.6`, `9.4`, `9`, `9.4.6-jre8`, `9.4-jre8`, `9-jre8`, `latest`, `jre8` (*9.4-jre8/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/cafead33ad5c46a0226bff9713719579828ace15/9.4-jre8/Dockerfile)
--	[`9.4.6-alpine`, `9.4-alpine`, `9-alpine`, `9.4.6-jre8-alpine`, `9.4-jre8-alpine`, `9-jre8-alpine`, `alpine`, `jre8-alpine` (*9.4-jre8/alpine/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/cafead33ad5c46a0226bff9713719579828ace15/9.4-jre8/alpine/Dockerfile)
--	[`9.3.20`, `9.3`, `9.3.20-jre8`, `9.3-jre8` (*9.3-jre8/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/cafead33ad5c46a0226bff9713719579828ace15/9.3-jre8/Dockerfile)
--	[`9.3.20-alpine`, `9.3-alpine`, `9.3.20-jre8-alpine`, `9.3-jre8-alpine` (*9.3-jre8/alpine/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/cafead33ad5c46a0226bff9713719579828ace15/9.3-jre8/alpine/Dockerfile)
--	[`9.2.22`, `9.2`, `9.2.22-jre8`, `9.2-jre8` (*9.2-jre8/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/cafead33ad5c46a0226bff9713719579828ace15/9.2-jre8/Dockerfile)
--	[`9.2.22-jre7`, `9.2-jre7`, `9-jre7`, `jre7` (*9.2-jre7/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/cafead33ad5c46a0226bff9713719579828ace15/9.2-jre7/Dockerfile)
+-	[`9.4.12`, `9.4`, `9`, `9.4.12-jre8`, `9.4-jre8`, `9-jre8`, `latest`, `jre8` (*9.4-jre8/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/29d5dacf52294fbc46fab5ad5e234bb31db9354b/9.4-jre8/Dockerfile)
+-	[`9.4.12-alpine`, `9.4-alpine`, `9-alpine`, `9.4.12-jre8-alpine`, `9.4-jre8-alpine`, `9-jre8-alpine`, `alpine`, `jre8-alpine` (*9.4-jre8/alpine/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/29d5dacf52294fbc46fab5ad5e234bb31db9354b/9.4-jre8/alpine/Dockerfile)
+-	[`9.3.24`, `9.3`, `9.3.24-jre8`, `9.3-jre8` (*9.3-jre8/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/8f839f5c0c24d90f7f6c6de707096e70b50b49be/9.3-jre8/Dockerfile)
+-	[`9.3.24-alpine`, `9.3-alpine`, `9.3.24-jre8-alpine`, `9.3-jre8-alpine` (*9.3-jre8/alpine/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/8f839f5c0c24d90f7f6c6de707096e70b50b49be/9.3-jre8/alpine/Dockerfile)
+-	[`9.2.26`, `9.2`, `9.2.26-jre8`, `9.2-jre8` (*9.2-jre8/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/25b573d129be2a0e5384e3fdf746e6e64aa1be1d/9.2-jre8/Dockerfile)
+-	[`9.2.26-jre7`, `9.2-jre7`, `9-jre7`, `jre7` (*9.2-jre7/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/25b573d129be2a0e5384e3fdf746e6e64aa1be1d/9.2-jre7/Dockerfile)
 
 # Quick reference
 
@@ -33,6 +33,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[the Docker Community](https://github.com/appropriate/docker-jetty)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/jetty/), [`arm32v5`](https://hub.docker.com/r/arm32v5/jetty/), [`arm32v6`](https://hub.docker.com/r/arm32v6/jetty/), [`arm32v7`](https://hub.docker.com/r/arm32v7/jetty/), [`arm64v8`](https://hub.docker.com/r/arm64v8/jetty/), [`i386`](https://hub.docker.com/r/i386/jetty/), [`ppc64le`](https://hub.docker.com/r/ppc64le/jetty/), [`s390x`](https://hub.docker.com/r/s390x/jetty/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/jetty/` directory](https://github.com/docker-library/repo-info/blob/master/repos/jetty) ([history](https://github.com/docker-library/repo-info/commits/master/repos/jetty))  
@@ -46,7 +49,7 @@ WARNING:
 	[docs repo's `jetty/` directory](https://github.com/docker-library/docs/tree/master/jetty) ([history](https://github.com/docker-library/docs/commits/master/jetty))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Jetty?
 
@@ -97,7 +100,7 @@ $ docker run -d jetty --list-config
 Configuration such as parameters and additional modules may also be passed in via the command line. For example:
 
 ```console
-$ docker run -d jetty --modules=jmx jetty.threadPool.maxThreads=500
+$ docker run -d jetty --module=jmx jetty.threadPool.maxThreads=500
 ```
 
 To update the server configuration in a derived Docker image, the `Dockerfile` may enable additional modules with `RUN` commands like:
@@ -108,7 +111,7 @@ FROM jetty
 RUN java -jar "$JETTY_HOME/start.jar" --add-to-startd=jmx,stats
 ```
 
-Modules may be configured in a `Dockerfile` by editing the properties in the corresponding `/var/lib/jetty/start.d/*.mod` file or the module can be deactivated by removing that file.
+Modules may be configured in a `Dockerfile` by editing the properties in the corresponding `/var/lib/jetty/start.d/*.ini` file or the module can be deactivated by removing that file.
 
 ### JVM Configuration
 
@@ -160,7 +163,7 @@ The `jetty` images come in many flavors, each designed for a specific use case.
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `jetty:alpine`
+## `jetty:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
@@ -171,3 +174,9 @@ To minimize image size, it's uncommon for additional related tools (such as `git
 # License
 
 View [license information](http://eclipse.org/jetty/licenses.php) for the software contained in this image.
+
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
+
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `jetty/` directory](https://github.com/docker-library/repo-info/tree/master/repos/jetty).
+
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

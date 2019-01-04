@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.5.1`, `1.5`, `1`, `latest` (*1.5/Dockerfile*)](https://github.com/composer/docker/blob/ea0ec1efa4b15f4ad7b809793eecbb76633dcbb8/1.5/Dockerfile)
--	[`1.4.3`, `1.4` (*1.4/Dockerfile*)](https://github.com/composer/docker/blob/ea0ec1efa4b15f4ad7b809793eecbb76633dcbb8/1.4/Dockerfile)
+-	[`1.8.0`, `1.8`, `1`, `latest` (*1.8/Dockerfile*)](https://github.com/composer/docker/blob/942dac53831e7b4ca4419a135304e177b9d29dbd/1.8/Dockerfile)
+-	[`1.7.3`, `1.7` (*1.7/Dockerfile*)](https://github.com/composer/docker/blob/5f82e6f3af987a33ed53fd90f93452d64f9e16b1/1.7/Dockerfile)
 
 # Quick reference
 
@@ -29,6 +29,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[Composer](https://github.com/composer/docker)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/composer/), [`arm32v6`](https://hub.docker.com/r/arm32v6/composer/), [`arm64v8`](https://hub.docker.com/r/arm64v8/composer/), [`i386`](https://hub.docker.com/r/i386/composer/), [`ppc64le`](https://hub.docker.com/r/ppc64le/composer/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/composer/` directory](https://github.com/docker-library/repo-info/blob/master/repos/composer) ([history](https://github.com/docker-library/repo-info/commits/master/repos/composer))  
@@ -42,7 +45,7 @@ WARNING:
 	[docs repo's `composer/` directory](https://github.com/docker-library/docs/tree/master/composer) ([history](https://github.com/docker-library/docs/commits/master/composer))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Composer?
 
@@ -82,6 +85,8 @@ docker run --rm --interactive --tty \
 
 When you need to access private repositories, you will either need to share your configured credentials, or mount your `ssh-agent` socket inside the running container:
 
+**Note:** This currently does not work on OSX, see [docker/for-mac#410](https://github.com/docker/for-mac/issues/410).
+
 ```sh
 docker run --rm --interactive --tty \
     --volume $PWD:/app \
@@ -90,7 +95,7 @@ docker run --rm --interactive --tty \
     composer install
 ```
 
-When combining the use of private repositories with running Composer as another (local) user, you might run into non-existant user errors. To work around this, simply mount the host passwd and group files (read-only) into the container:
+When combining the use of private repositories with running Composer as another (local) user, you might run into non-existant user errors (thrown by ssh). To work around this, simply mount the host passwd and group files (read-only) into the container:
 
 ```sh
 docker run --rm --interactive --tty \
@@ -109,7 +114,7 @@ docker run --rm --interactive --tty \
 
 We aim to deliver an image that is as lean as possible, built for running Composer only.
 
-Sometimes dependencies or Composer [scripts](https://getcomposer.org/doc/articles/scripts.md) require the availability of certain PHP extensions. In this scenario, you have two options:
+Sometimes dependencies or Composer [scripts](https://getcomposer.org/doc/articles/scripts.md) require the availability of certain PHP extensions. You can work around this as follows:
 
 -	Pass the `--ignore-platform-reqs` and `--no-scripts` flags to `install` or `update`:
 
@@ -120,6 +125,16 @@ Sometimes dependencies or Composer [scripts](https://getcomposer.org/doc/article
 	```
 
 -	Create your own image (possibly by extending `FROM composer`).
+
+**Note:** Docker introduced [multi-stage](https://docs.docker.com/engine/userguide/eng-image/multistage-build/) builds in 17.05:
+
+-	Create your own image, and copy Composer from the official image into it:
+
+	```dockerfile
+	COPY --from=composer:1.5 /usr/bin/composer /usr/bin/composer
+	```
+
+It is highly recommended that you create a "build" image that extends from your baseline production image. Binaries such as Composer should not end up in your production environment.
 
 ### Local runtime/binary
 
@@ -144,3 +159,9 @@ composer () {
 # License
 
 View [license information](https://github.com/composer/composer/blob/master/LICENSE) for the software contained in this image.
+
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
+
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `composer/` directory](https://github.com/docker-library/repo-info/tree/master/repos/composer).
+
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

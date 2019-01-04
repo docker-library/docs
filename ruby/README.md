@@ -16,21 +16,26 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.4.1-stretch`, `2.4-stretch`, `2-stretch`, `stretch` (*2.4/stretch/Dockerfile*)](https://github.com/docker-library/ruby/blob/98d971fb71e696bf6783388d0e2c4171c97f0459/2.4/stretch/Dockerfile)
--	[`2.4.1-slim-stretch`, `2.4-slim-stretch`, `2-slim-stretch`, `slim-stretch` (*2.4/stretch/slim/Dockerfile*)](https://github.com/docker-library/ruby/blob/445b7e4b78763ae70ef2951dbd78d777edb68358/2.4/stretch/slim/Dockerfile)
--	[`2.4.1-jessie`, `2.4-jessie`, `2-jessie`, `jessie`, `2.4.1`, `2.4`, `2`, `latest` (*2.4/jessie/Dockerfile*)](https://github.com/docker-library/ruby/blob/a6918175fd506b46bf2d8f899f4faa40e72296fb/2.4/jessie/Dockerfile)
--	[`2.4.1-slim-jessie`, `2.4-slim-jessie`, `2-slim-jessie`, `slim-jessie`, `2.4.1-slim`, `2.4-slim`, `2-slim`, `slim` (*2.4/jessie/slim/Dockerfile*)](https://github.com/docker-library/ruby/blob/445b7e4b78763ae70ef2951dbd78d777edb68358/2.4/jessie/slim/Dockerfile)
--	[`2.4.1-onbuild`, `2.4-onbuild`, `2-onbuild`, `onbuild` (*2.4/jessie/onbuild/Dockerfile*)](https://github.com/docker-library/ruby/blob/a6918175fd506b46bf2d8f899f4faa40e72296fb/2.4/jessie/onbuild/Dockerfile)
--	[`2.4.1-alpine3.6`, `2.4-alpine3.6`, `2-alpine3.6`, `alpine3.6` (*2.4/alpine3.6/Dockerfile*)](https://github.com/docker-library/ruby/blob/ecbfdeb2b71e155222b1d3df0a33685247f00616/2.4/alpine3.6/Dockerfile)
--	[`2.4.1-alpine3.4`, `2.4-alpine3.4`, `2-alpine3.4`, `alpine3.4`, `2.4.1-alpine`, `2.4-alpine`, `2-alpine`, `alpine` (*2.4/alpine3.4/Dockerfile*)](https://github.com/docker-library/ruby/blob/ecbfdeb2b71e155222b1d3df0a33685247f00616/2.4/alpine3.4/Dockerfile)
--	[`2.3.4-jessie`, `2.3-jessie`, `2.3.4`, `2.3` (*2.3/jessie/Dockerfile*)](https://github.com/docker-library/ruby/blob/a6918175fd506b46bf2d8f899f4faa40e72296fb/2.3/jessie/Dockerfile)
--	[`2.3.4-slim-jessie`, `2.3-slim-jessie`, `2.3.4-slim`, `2.3-slim` (*2.3/jessie/slim/Dockerfile*)](https://github.com/docker-library/ruby/blob/445b7e4b78763ae70ef2951dbd78d777edb68358/2.3/jessie/slim/Dockerfile)
--	[`2.3.4-onbuild`, `2.3-onbuild` (*2.3/jessie/onbuild/Dockerfile*)](https://github.com/docker-library/ruby/blob/a6918175fd506b46bf2d8f899f4faa40e72296fb/2.3/jessie/onbuild/Dockerfile)
--	[`2.3.4-alpine3.4`, `2.3-alpine3.4`, `2.3.4-alpine`, `2.3-alpine` (*2.3/alpine3.4/Dockerfile*)](https://github.com/docker-library/ruby/blob/ecbfdeb2b71e155222b1d3df0a33685247f00616/2.3/alpine3.4/Dockerfile)
--	[`2.2.7-jessie`, `2.2-jessie`, `2.2.7`, `2.2` (*2.2/jessie/Dockerfile*)](https://github.com/docker-library/ruby/blob/a6918175fd506b46bf2d8f899f4faa40e72296fb/2.2/jessie/Dockerfile)
--	[`2.2.7-slim-jessie`, `2.2-slim-jessie`, `2.2.7-slim`, `2.2-slim` (*2.2/jessie/slim/Dockerfile*)](https://github.com/docker-library/ruby/blob/445b7e4b78763ae70ef2951dbd78d777edb68358/2.2/jessie/slim/Dockerfile)
--	[`2.2.7-onbuild`, `2.2-onbuild` (*2.2/jessie/onbuild/Dockerfile*)](https://github.com/docker-library/ruby/blob/a6918175fd506b46bf2d8f899f4faa40e72296fb/2.2/jessie/onbuild/Dockerfile)
--	[`2.2.7-alpine3.4`, `2.2-alpine3.4`, `2.2.7-alpine`, `2.2-alpine` (*2.2/alpine3.4/Dockerfile*)](https://github.com/docker-library/ruby/blob/ecbfdeb2b71e155222b1d3df0a33685247f00616/2.2/alpine3.4/Dockerfile)
+-	[`2.6.0-stretch`, `2.6-stretch`, `2-stretch`, `stretch`, `2.6.0`, `2.6`, `2`, `latest` (*2.6/stretch/Dockerfile*)](https://github.com/docker-library/ruby/blob/3c52e456a323e12f76639993ae2bcf0429193cdd/2.6/stretch/Dockerfile)
+-	[`2.6.0-slim-stretch`, `2.6-slim-stretch`, `2-slim-stretch`, `slim-stretch`, `2.6.0-slim`, `2.6-slim`, `2-slim`, `slim` (*2.6/stretch/slim/Dockerfile*)](https://github.com/docker-library/ruby/blob/3c52e456a323e12f76639993ae2bcf0429193cdd/2.6/stretch/slim/Dockerfile)
+-	[`2.6.0-alpine3.8`, `2.6-alpine3.8`, `2-alpine3.8`, `alpine3.8`, `2.6.0-alpine`, `2.6-alpine`, `2-alpine`, `alpine` (*2.6/alpine3.8/Dockerfile*)](https://github.com/docker-library/ruby/blob/3c52e456a323e12f76639993ae2bcf0429193cdd/2.6/alpine3.8/Dockerfile)
+-	[`2.6.0-alpine3.7`, `2.6-alpine3.7`, `2-alpine3.7`, `alpine3.7` (*2.6/alpine3.7/Dockerfile*)](https://github.com/docker-library/ruby/blob/3c52e456a323e12f76639993ae2bcf0429193cdd/2.6/alpine3.7/Dockerfile)
+-	[`2.5.3-stretch`, `2.5-stretch`, `2.5.3`, `2.5` (*2.5/stretch/Dockerfile*)](https://github.com/docker-library/ruby/blob/9a8e858e5d031266333cf79593b8581d32dd1b73/2.5/stretch/Dockerfile)
+-	[`2.5.3-slim-stretch`, `2.5-slim-stretch`, `2.5.3-slim`, `2.5-slim` (*2.5/stretch/slim/Dockerfile*)](https://github.com/docker-library/ruby/blob/9a8e858e5d031266333cf79593b8581d32dd1b73/2.5/stretch/slim/Dockerfile)
+-	[`2.5.3-alpine3.8`, `2.5-alpine3.8`, `2.5.3-alpine`, `2.5-alpine` (*2.5/alpine3.8/Dockerfile*)](https://github.com/docker-library/ruby/blob/9a8e858e5d031266333cf79593b8581d32dd1b73/2.5/alpine3.8/Dockerfile)
+-	[`2.5.3-alpine3.7`, `2.5-alpine3.7` (*2.5/alpine3.7/Dockerfile*)](https://github.com/docker-library/ruby/blob/9a8e858e5d031266333cf79593b8581d32dd1b73/2.5/alpine3.7/Dockerfile)
+-	[`2.4.5-stretch`, `2.4-stretch`, `2.4.5`, `2.4` (*2.4/stretch/Dockerfile*)](https://github.com/docker-library/ruby/blob/ba8328861cb53f2ad6fbaff788d5e2b904ab9c6d/2.4/stretch/Dockerfile)
+-	[`2.4.5-slim-stretch`, `2.4-slim-stretch`, `2.4.5-slim`, `2.4-slim` (*2.4/stretch/slim/Dockerfile*)](https://github.com/docker-library/ruby/blob/ba8328861cb53f2ad6fbaff788d5e2b904ab9c6d/2.4/stretch/slim/Dockerfile)
+-	[`2.4.5-jessie`, `2.4-jessie` (*2.4/jessie/Dockerfile*)](https://github.com/docker-library/ruby/blob/ba8328861cb53f2ad6fbaff788d5e2b904ab9c6d/2.4/jessie/Dockerfile)
+-	[`2.4.5-slim-jessie`, `2.4-slim-jessie` (*2.4/jessie/slim/Dockerfile*)](https://github.com/docker-library/ruby/blob/ba8328861cb53f2ad6fbaff788d5e2b904ab9c6d/2.4/jessie/slim/Dockerfile)
+-	[`2.4.5-alpine3.8`, `2.4-alpine3.8`, `2.4.5-alpine`, `2.4-alpine` (*2.4/alpine3.8/Dockerfile*)](https://github.com/docker-library/ruby/blob/ba8328861cb53f2ad6fbaff788d5e2b904ab9c6d/2.4/alpine3.8/Dockerfile)
+-	[`2.4.5-alpine3.7`, `2.4-alpine3.7` (*2.4/alpine3.7/Dockerfile*)](https://github.com/docker-library/ruby/blob/ba8328861cb53f2ad6fbaff788d5e2b904ab9c6d/2.4/alpine3.7/Dockerfile)
+-	[`2.3.8-stretch`, `2.3-stretch`, `2.3.8`, `2.3` (*2.3/stretch/Dockerfile*)](https://github.com/docker-library/ruby/blob/3e08dc45ad0386783e757d91347c6a61bc21744e/2.3/stretch/Dockerfile)
+-	[`2.3.8-slim-stretch`, `2.3-slim-stretch`, `2.3.8-slim`, `2.3-slim` (*2.3/stretch/slim/Dockerfile*)](https://github.com/docker-library/ruby/blob/3e08dc45ad0386783e757d91347c6a61bc21744e/2.3/stretch/slim/Dockerfile)
+-	[`2.3.8-jessie`, `2.3-jessie` (*2.3/jessie/Dockerfile*)](https://github.com/docker-library/ruby/blob/3e08dc45ad0386783e757d91347c6a61bc21744e/2.3/jessie/Dockerfile)
+-	[`2.3.8-slim-jessie`, `2.3-slim-jessie` (*2.3/jessie/slim/Dockerfile*)](https://github.com/docker-library/ruby/blob/3e08dc45ad0386783e757d91347c6a61bc21744e/2.3/jessie/slim/Dockerfile)
+-	[`2.3.8-alpine3.8`, `2.3-alpine3.8`, `2.3.8-alpine`, `2.3-alpine` (*2.3/alpine3.8/Dockerfile*)](https://github.com/docker-library/ruby/blob/3e08dc45ad0386783e757d91347c6a61bc21744e/2.3/alpine3.8/Dockerfile)
+-	[`2.3.8-alpine3.7`, `2.3-alpine3.7` (*2.3/alpine3.7/Dockerfile*)](https://github.com/docker-library/ruby/blob/3e08dc45ad0386783e757d91347c6a61bc21744e/2.3/alpine3.7/Dockerfile)
 
 # Quick reference
 
@@ -42,6 +47,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[the Docker Community](https://github.com/docker-library/ruby)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/ruby/), [`arm32v5`](https://hub.docker.com/r/arm32v5/ruby/), [`arm32v6`](https://hub.docker.com/r/arm32v6/ruby/), [`arm32v7`](https://hub.docker.com/r/arm32v7/ruby/), [`arm64v8`](https://hub.docker.com/r/arm64v8/ruby/), [`i386`](https://hub.docker.com/r/i386/ruby/), [`ppc64le`](https://hub.docker.com/r/ppc64le/ruby/), [`s390x`](https://hub.docker.com/r/s390x/ruby/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/ruby/` directory](https://github.com/docker-library/repo-info/blob/master/repos/ruby) ([history](https://github.com/docker-library/repo-info/commits/master/repos/ruby))  
@@ -55,7 +63,7 @@ WARNING:
 	[docs repo's `ruby/` directory](https://github.com/docker-library/docs/tree/master/ruby) ([history](https://github.com/docker-library/docs/commits/master/ruby))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Ruby?
 
@@ -70,14 +78,22 @@ Ruby is a dynamic, reflective, object-oriented, general-purpose, open-source pro
 ## Create a `Dockerfile` in your Ruby app project
 
 ```dockerfile
-FROM ruby:2.1-onbuild
+FROM ruby:2.5
+
+# throw errors if Gemfile has been modified since Gemfile.lock
+RUN bundle config --global frozen 1
+
+WORKDIR /usr/src/app
+
+COPY Gemfile Gemfile.lock ./
+RUN bundle install
+
+COPY . .
+
 CMD ["./your-daemon-or-script.rb"]
 ```
 
 Put this file in the root of your app, next to the `Gemfile`.
-
-This image includes multiple `ONBUILD` triggers which should be all you need to bootstrap most applications. The build will `COPY . /usr/src/app` and `RUN
-bundle install`.
 
 You can then build and run the Ruby image:
 
@@ -88,10 +104,10 @@ $ docker run -it --name my-running-script my-ruby-app
 
 ### Generate a `Gemfile.lock`
 
-The `onbuild` tag expects a `Gemfile.lock` in your app directory. This `docker run` will help you generate one. Run it in the root of your app, next to the `Gemfile`:
+The above example `Dockerfile` expects a `Gemfile.lock` in your app directory. This `docker run` will help you generate one. Run it in the root of your app, next to the `Gemfile`:
 
 ```console
-$ docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app ruby:2.1 bundle install
+$ docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app ruby:2.5 bundle install
 ```
 
 ## Run a single Ruby script
@@ -99,12 +115,20 @@ $ docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app ruby:2.1 bundle install
 For many simple, single file projects, you may find it inconvenient to write a complete `Dockerfile`. In such cases, you can run a Ruby script by using the Ruby Docker image directly:
 
 ```console
-$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp ruby:2.1 ruby your-daemon-or-script.rb
+$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp ruby:2.5 ruby your-daemon-or-script.rb
 ```
 
 ## Encoding
 
 By default, Ruby inherits the locale of the environment in which it is run. For most users running Ruby on their desktop systems, that means it's likely using some variation of `*.UTF-8` (`en_US.UTF-8`, etc). In Docker however, the default locale is `C`, which can have unexpected results. If your application needs to interact with UTF-8, it is recommended that you explicitly adjust the locale of your image/container via `-e LANG=C.UTF-8` or `ENV LANG C.UTF-8`.
+
+## Image assumptions
+
+This image sets several environment variables which change the behavior of Bundler and Gem for running a single application within a container (especially in such a way that the development sources of the application can be bind-mounted inside a container and not have `.bundle` from the host interfere with the proper functionality of the container).
+
+The environment variables we set are canonically listed in the above-linked `Dockerfiles`, but some of them include `GEM_HOME`, `BUNDLE_PATH`, `BUNDLE_BIN`, `BUNDLE_SILENCE_ROOT_WARNING`, and `BUNDLE_APP_CONFIG`.
+
+If these cause issues for your use case (running multiple Ruby applications in a single container, for example), setting them to the empty string *should* be sufficient for undoing their behavior.
 
 # Image Variants
 
@@ -112,21 +136,17 @@ The `ruby` images come in many flavors, each designed for a specific use case.
 
 ## `ruby:<version>`
 
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of. This tag is based off of [`buildpack-deps`](https://registry.hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `ruby:slim`
+This tag is based off of [`buildpack-deps`](https://hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of Docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
+
+Some of these tags may have names like jessie or stretch in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on.
+
+## `ruby:<version>-slim`
 
 This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `ruby`. Unless you are working in an environment where *only* the `ruby` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
 
-## `ruby:onbuild`
-
-The `ONBUILD` image variants are deprecated, and their usage is discouraged. For more details, see [docker-library/official-images#2076](https://github.com/docker-library/official-images/issues/2076).
-
-While the `onbuild` variant is really useful for "getting off the ground running" (zero to Dockerized in a short period of time), it's not recommended for long-term usage within a project due to the lack of control over *when* the `ONBUILD` triggers fire (see also [`docker/docker#5714`](https://github.com/docker/docker/issues/5714), [`docker/docker#8240`](https://github.com/docker/docker/issues/8240), [`docker/docker#11917`](https://github.com/docker/docker/issues/11917)).
-
-Once you've got a handle on how your project functions within Docker, you'll probably want to adjust your `Dockerfile` to inherit from a non-`onbuild` variant and copy the commands from the `onbuild` variant `Dockerfile` (moving the `ONBUILD` lines to the end and removing the `ONBUILD` keywords) into your own file so that you have tighter control over them and more transparency for yourself and others looking at your `Dockerfile` as to what it does. This also makes it easier to add additional requirements as time goes on (such as installing more packages before performing the previously-`ONBUILD` steps).
-
-## `ruby:alpine`
+## `ruby:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
@@ -137,3 +157,9 @@ To minimize image size, it's uncommon for additional related tools (such as `git
 # License
 
 View [license information](https://www.ruby-lang.org/en/about/license.txt) for the software contained in this image.
+
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
+
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `ruby/` directory](https://github.com/docker-library/repo-info/tree/master/repos/ruby).
+
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

@@ -13,14 +13,14 @@ Elixir leverages the Erlang VM, known for running low-latency, distributed and f
 ## Run it as the REPL
 
 ```console
-➸ docker run -it --rm elixir
+➸ docker run -it --rm %%IMAGE%%
 Erlang/OTP 18 [erts-7.2.1] [source] [64-bit] [smp:8:8] [async-threads:10] [hipe] [kernel-poll:false]
 
 Interactive Elixir (1.2.1) - press Ctrl+C to exit (type h() ENTER for help)
 iex(1)> System.version
 "1.2.1"
 iex(2)>
-➸ docker run -it --rm -h elixir.local elixir iex --sname snode
+➸ docker run -it --rm -h elixir.local %%IMAGE%% iex --sname snode
 Erlang/OTP 18 [erts-7.2.1] [source] [64-bit] [smp:8:8] [async-threads:10] [hipe] [kernel-poll:false]
 
 Interactive Elixir (1.2.1) - press Ctrl+C to exit (type h() ENTER for help)
@@ -34,5 +34,5 @@ iex(snode@elixir)2> :c.uptime
 ## Run a single Elixir exs script
 
 ```console
-$ docker run -it --rm --name %%REPO%%-inst1 -v "$PWD":/usr/src/myapp -w /usr/src/myapp %%REPO%% elixir your-escript.exs
+$ docker run -it --rm --name %%REPO%%-inst1 -v "$PWD":/usr/src/myapp -w /usr/src/myapp %%IMAGE%% elixir your-escript.exs
 ```

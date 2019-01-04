@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.7.1`, `1.7`, `1`, `1.7.1-apache`, `1.7-apache`, `1-apache`, `apache`, `latest` (*1/apache/Dockerfile*)](https://github.com/backdrop-ops/backdrop-docker/blob/5243e66274cdbb1308021e440459f5ff2528a853/1/apache/Dockerfile)
--	[`1.7.1-fpm`, `1.7-fpm`, `1-fpm`, `fpm` (*1/fpm/Dockerfile*)](https://github.com/backdrop-ops/backdrop-docker/blob/5243e66274cdbb1308021e440459f5ff2528a853/1/fpm/Dockerfile)
+-	[`1.10.1`, `1.10`, `1`, `1.10.1-apache`, `1.10-apache`, `1-apache`, `apache`, `latest` (*1/apache/Dockerfile*)](https://github.com/backdrop-ops/backdrop-docker/blob/6e10ccf33adf2b59c8197336e510688a49e342f8/1/apache/Dockerfile)
+-	[`1.10.1-fpm`, `1.10-fpm`, `1-fpm`, `fpm` (*1/fpm/Dockerfile*)](https://github.com/backdrop-ops/backdrop-docker/blob/6e10ccf33adf2b59c8197336e510688a49e342f8/1/fpm/Dockerfile)
 
 # Quick reference
 
@@ -29,6 +29,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[Backdrop Ops](https://github.com/backdrop-ops/backdrop-docker)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/backdrop/), [`arm64v8`](https://hub.docker.com/r/arm64v8/backdrop/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/backdrop/` directory](https://github.com/docker-library/repo-info/blob/master/repos/backdrop) ([history](https://github.com/docker-library/repo-info/commits/master/repos/backdrop))  
@@ -42,7 +45,7 @@ WARNING:
 	[docs repo's `backdrop/` directory](https://github.com/docker-library/docs/tree/master/backdrop) ([history](https://github.com/docker-library/docs/commits/master/backdrop))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Backdrop CMS?
 
@@ -128,3 +131,9 @@ The following Docker Hub features can help with the task of keeping your depende
 # License
 
 View [license information](https://backdropcms.org/license) for the software contained in this image.
+
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
+
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `backdrop/` directory](https://github.com/docker-library/repo-info/tree/master/repos/backdrop).
+
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

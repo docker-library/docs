@@ -4,12 +4,14 @@ version: '3.1'
 
 services:
 
-    adminer:
-        image: adminer
-        ports:
-            - 8080:8080
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
 
-    db:
-        image: mysql:5.6
-        environment:
-            MYSQL_ROOT_PASSWORD: example
+  db:
+    image: mysql:5.6
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: example

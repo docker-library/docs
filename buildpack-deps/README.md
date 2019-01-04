@@ -16,33 +16,36 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`artful-curl` (*artful/curl/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/36018aca7e9637c9c04ff623625e59de12d7f161/artful/curl/Dockerfile)
--	[`artful-scm` (*artful/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/36018aca7e9637c9c04ff623625e59de12d7f161/artful/scm/Dockerfile)
--	[`artful` (*artful/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/36018aca7e9637c9c04ff623625e59de12d7f161/artful/Dockerfile)
--	[`buster-curl` (*buster/curl/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/72021102be2a05177d2c01e466495ba1c9d0b4f5/buster/curl/Dockerfile)
--	[`buster-scm` (*buster/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/1449b1e7ba5a389167893e6edb6245ca94cd4fd6/buster/scm/Dockerfile)
--	[`buster` (*buster/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/1449b1e7ba5a389167893e6edb6245ca94cd4fd6/buster/Dockerfile)
--	[`jessie-curl` (*jessie/curl/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/9f60e19008458220114f1a0b6cd3710f1015d402/jessie/curl/Dockerfile)
--	[`jessie-scm` (*jessie/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/1845b3f918f69b4c97912b0d4d68a5658458e84f/jessie/scm/Dockerfile)
--	[`jessie` (*jessie/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/587934fb063d770d0611e94b57c9dd7a38edf928/jessie/Dockerfile)
--	[`sid-curl` (*sid/curl/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/9f60e19008458220114f1a0b6cd3710f1015d402/sid/curl/Dockerfile)
--	[`sid-scm` (*sid/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/1845b3f918f69b4c97912b0d4d68a5658458e84f/sid/scm/Dockerfile)
--	[`sid` (*sid/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/587934fb063d770d0611e94b57c9dd7a38edf928/sid/Dockerfile)
--	[`stretch-curl`, `curl` (*stretch/curl/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/9f60e19008458220114f1a0b6cd3710f1015d402/stretch/curl/Dockerfile)
--	[`stretch-scm`, `scm` (*stretch/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/1845b3f918f69b4c97912b0d4d68a5658458e84f/stretch/scm/Dockerfile)
--	[`stretch`, `latest` (*stretch/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/587934fb063d770d0611e94b57c9dd7a38edf928/stretch/Dockerfile)
--	[`trusty-curl` (*trusty/curl/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/9f60e19008458220114f1a0b6cd3710f1015d402/trusty/curl/Dockerfile)
--	[`trusty-scm` (*trusty/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/1845b3f918f69b4c97912b0d4d68a5658458e84f/trusty/scm/Dockerfile)
--	[`trusty` (*trusty/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/587934fb063d770d0611e94b57c9dd7a38edf928/trusty/Dockerfile)
--	[`wheezy-curl` (*wheezy/curl/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/9f60e19008458220114f1a0b6cd3710f1015d402/wheezy/curl/Dockerfile)
--	[`wheezy-scm` (*wheezy/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/1845b3f918f69b4c97912b0d4d68a5658458e84f/wheezy/scm/Dockerfile)
--	[`wheezy` (*wheezy/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/587934fb063d770d0611e94b57c9dd7a38edf928/wheezy/Dockerfile)
--	[`xenial-curl` (*xenial/curl/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/9f60e19008458220114f1a0b6cd3710f1015d402/xenial/curl/Dockerfile)
--	[`xenial-scm` (*xenial/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/2da658b9a1b91fa61d63ffad2ea52685cac6c702/xenial/scm/Dockerfile)
--	[`xenial` (*xenial/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/587934fb063d770d0611e94b57c9dd7a38edf928/xenial/Dockerfile)
--	[`zesty-curl` (*zesty/curl/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/9f60e19008458220114f1a0b6cd3710f1015d402/zesty/curl/Dockerfile)
--	[`zesty-scm` (*zesty/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/9aa327dcc582d5384affbc5a19672e3077489e97/zesty/scm/Dockerfile)
--	[`zesty` (*zesty/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/587934fb063d770d0611e94b57c9dd7a38edf928/zesty/Dockerfile)
+-	[`bionic-curl`, `18.04-curl` (*bionic/curl/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/b0fc01aa5e3aed6820d8fed6f3301e0542fbeb36/bionic/curl/Dockerfile)
+-	[`bionic-scm`, `18.04-scm` (*bionic/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/0db0cf15f1c507b17e7edc6dfbe301b8e357568f/bionic/scm/Dockerfile)
+-	[`bionic`, `18.04` (*bionic/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/0db0cf15f1c507b17e7edc6dfbe301b8e357568f/bionic/Dockerfile)
+-	[`buster-curl`, `testing-curl` (*buster/curl/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/b0fc01aa5e3aed6820d8fed6f3301e0542fbeb36/buster/curl/Dockerfile)
+-	[`buster-scm`, `testing-scm` (*buster/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/99a1c33fda559272e9322b02a5d778bbd04154e7/buster/scm/Dockerfile)
+-	[`buster`, `testing` (*buster/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/d7da72aaf3bb93fecf5fcb7c6ff154cb0c55d1d1/buster/Dockerfile)
+-	[`cosmic-curl`, `18.10-curl` (*cosmic/curl/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/a3bdba8b3675c0f820f2ce7bd88e79e4aac2fb8c/cosmic/curl/Dockerfile)
+-	[`cosmic-scm`, `18.10-scm` (*cosmic/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/a3bdba8b3675c0f820f2ce7bd88e79e4aac2fb8c/cosmic/scm/Dockerfile)
+-	[`cosmic`, `18.10` (*cosmic/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/a3bdba8b3675c0f820f2ce7bd88e79e4aac2fb8c/cosmic/Dockerfile)
+-	[`disco-curl`, `19.04-curl` (*disco/curl/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/dad73efaa10245757e58d28742cb7ed35fcd31f2/disco/curl/Dockerfile)
+-	[`disco-scm`, `19.04-scm` (*disco/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/dad73efaa10245757e58d28742cb7ed35fcd31f2/disco/scm/Dockerfile)
+-	[`disco`, `19.04` (*disco/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/dad73efaa10245757e58d28742cb7ed35fcd31f2/disco/Dockerfile)
+-	[`jessie-curl`, `oldstable-curl` (*jessie/curl/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/b0fc01aa5e3aed6820d8fed6f3301e0542fbeb36/jessie/curl/Dockerfile)
+-	[`jessie-scm`, `oldstable-scm` (*jessie/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/1845b3f918f69b4c97912b0d4d68a5658458e84f/jessie/scm/Dockerfile)
+-	[`jessie`, `oldstable` (*jessie/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/d7da72aaf3bb93fecf5fcb7c6ff154cb0c55d1d1/jessie/Dockerfile)
+-	[`sid-curl`, `unstable-curl` (*sid/curl/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/b0fc01aa5e3aed6820d8fed6f3301e0542fbeb36/sid/curl/Dockerfile)
+-	[`sid-scm`, `unstable-scm` (*sid/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/99a1c33fda559272e9322b02a5d778bbd04154e7/sid/scm/Dockerfile)
+-	[`sid`, `unstable` (*sid/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/d7da72aaf3bb93fecf5fcb7c6ff154cb0c55d1d1/sid/Dockerfile)
+-	[`stretch-curl`, `stable-curl`, `curl` (*stretch/curl/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/b0fc01aa5e3aed6820d8fed6f3301e0542fbeb36/stretch/curl/Dockerfile)
+-	[`stretch-scm`, `stable-scm`, `scm` (*stretch/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/1845b3f918f69b4c97912b0d4d68a5658458e84f/stretch/scm/Dockerfile)
+-	[`stretch`, `stable`, `latest` (*stretch/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/d7da72aaf3bb93fecf5fcb7c6ff154cb0c55d1d1/stretch/Dockerfile)
+-	[`trusty-curl`, `14.04-curl` (*trusty/curl/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/b0fc01aa5e3aed6820d8fed6f3301e0542fbeb36/trusty/curl/Dockerfile)
+-	[`trusty-scm`, `14.04-scm` (*trusty/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/1845b3f918f69b4c97912b0d4d68a5658458e84f/trusty/scm/Dockerfile)
+-	[`trusty`, `14.04` (*trusty/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/d7da72aaf3bb93fecf5fcb7c6ff154cb0c55d1d1/trusty/Dockerfile)
+-	[`wheezy-curl`, `oldoldstable-curl` (*wheezy/curl/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/b0fc01aa5e3aed6820d8fed6f3301e0542fbeb36/wheezy/curl/Dockerfile)
+-	[`wheezy-scm`, `oldoldstable-scm` (*wheezy/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/1845b3f918f69b4c97912b0d4d68a5658458e84f/wheezy/scm/Dockerfile)
+-	[`wheezy`, `oldoldstable` (*wheezy/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/d7da72aaf3bb93fecf5fcb7c6ff154cb0c55d1d1/wheezy/Dockerfile)
+-	[`xenial-curl`, `16.04-curl` (*xenial/curl/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/b0fc01aa5e3aed6820d8fed6f3301e0542fbeb36/xenial/curl/Dockerfile)
+-	[`xenial-scm`, `16.04-scm` (*xenial/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/2da658b9a1b91fa61d63ffad2ea52685cac6c702/xenial/scm/Dockerfile)
+-	[`xenial`, `16.04` (*xenial/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/d7da72aaf3bb93fecf5fcb7c6ff154cb0c55d1d1/xenial/Dockerfile)
 
 # Quick reference
 
@@ -54,6 +57,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[the Docker Community](https://github.com/docker-library/buildpack-deps)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/buildpack-deps/), [`arm32v5`](https://hub.docker.com/r/arm32v5/buildpack-deps/), [`arm32v7`](https://hub.docker.com/r/arm32v7/buildpack-deps/), [`arm64v8`](https://hub.docker.com/r/arm64v8/buildpack-deps/), [`i386`](https://hub.docker.com/r/i386/buildpack-deps/), [`ppc64le`](https://hub.docker.com/r/ppc64le/buildpack-deps/), [`s390x`](https://hub.docker.com/r/s390x/buildpack-deps/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/buildpack-deps/` directory](https://github.com/docker-library/repo-info/blob/master/repos/buildpack-deps) ([history](https://github.com/docker-library/repo-info/commits/master/repos/buildpack-deps))  
@@ -67,7 +73,7 @@ WARNING:
 	[docs repo's `buildpack-deps/` directory](https://github.com/docker-library/docs/tree/master/buildpack-deps) ([history](https://github.com/docker-library/docs/commits/master/buildpack-deps))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is `buildpack-deps`?
 
@@ -96,3 +102,9 @@ This variant is based on `curl`, but also adds various source control management
 # License
 
 View [license information](https://www.debian.org/social_contract#guidelines) for the software contained in this image.
+
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
+
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `buildpack-deps/` directory](https://github.com/docker-library/repo-info/tree/master/repos/buildpack-deps).
+
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

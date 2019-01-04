@@ -15,7 +15,7 @@ version: '3.1'
 services:
 
   drupal:
-    image: drupal:8.2-apache
+    image: drupal:8-apache
     ports:
       - 8080:80
     volumes:
@@ -29,7 +29,7 @@ services:
     restart: always
 
   postgres:
-    image: postgres:9.6
+    image: postgres:10
     environment:
       POSTGRES_PASSWORD: example
     restart: always

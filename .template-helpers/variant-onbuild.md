@@ -1,4 +1,4 @@
-## `%%IMAGE%%:onbuild`
+## `%%IMAGE%%:<version>-onbuild`
 
 The `ONBUILD` image variants are deprecated, and their usage is discouraged. For more details, see [docker-library/official-images#2076](https://github.com/docker-library/official-images/issues/2076).
 

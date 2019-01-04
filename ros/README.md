@@ -16,30 +16,30 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`indigo-ros-core`, `indigo-ros-core-trusty` (*ros/indigo/ubuntu/trusty/ros-core/Dockerfile*)](https://github.com/osrf/docker_images/blob/7ba58fc107b368d6409c22161070eb93e562f240/ros/indigo/ubuntu/trusty/ros-core/Dockerfile)
--	[`indigo-ros-base`, `indigo-ros-base-trusty`, `indigo` (*ros/indigo/ubuntu/trusty/ros-base/Dockerfile*)](https://github.com/osrf/docker_images/blob/7ba58fc107b368d6409c22161070eb93e562f240/ros/indigo/ubuntu/trusty/ros-base/Dockerfile)
--	[`indigo-robot`, `indigo-robot-trusty` (*ros/indigo/ubuntu/trusty/robot/Dockerfile*)](https://github.com/osrf/docker_images/blob/7ba58fc107b368d6409c22161070eb93e562f240/ros/indigo/ubuntu/trusty/robot/Dockerfile)
--	[`indigo-perception`, `indigo-perception-trusty` (*ros/indigo/ubuntu/trusty/perception/Dockerfile*)](https://github.com/osrf/docker_images/blob/7ba58fc107b368d6409c22161070eb93e562f240/ros/indigo/ubuntu/trusty/perception/Dockerfile)
--	[`jade-ros-core`, `jade-ros-core-trusty` (*ros/jade/ubuntu/trusty/ros-core/Dockerfile*)](https://github.com/osrf/docker_images/blob/7ba58fc107b368d6409c22161070eb93e562f240/ros/jade/ubuntu/trusty/ros-core/Dockerfile)
--	[`jade-ros-base`, `jade-ros-base-trusty`, `jade` (*ros/jade/ubuntu/trusty/ros-base/Dockerfile*)](https://github.com/osrf/docker_images/blob/7ba58fc107b368d6409c22161070eb93e562f240/ros/jade/ubuntu/trusty/ros-base/Dockerfile)
--	[`jade-robot`, `jade-robot-trusty` (*ros/jade/ubuntu/trusty/robot/Dockerfile*)](https://github.com/osrf/docker_images/blob/7ba58fc107b368d6409c22161070eb93e562f240/ros/jade/ubuntu/trusty/robot/Dockerfile)
--	[`jade-perception`, `jade-perception-trusty` (*ros/jade/ubuntu/trusty/perception/Dockerfile*)](https://github.com/osrf/docker_images/blob/7ba58fc107b368d6409c22161070eb93e562f240/ros/jade/ubuntu/trusty/perception/Dockerfile)
--	[`kinetic-ros-core`, `kinetic-ros-core-xenial` (*ros/kinetic/ubuntu/xenial/ros-core/Dockerfile*)](https://github.com/osrf/docker_images/blob/7ba58fc107b368d6409c22161070eb93e562f240/ros/kinetic/ubuntu/xenial/ros-core/Dockerfile)
--	[`kinetic-ros-base`, `kinetic-ros-base-xenial`, `kinetic`, `latest` (*ros/kinetic/ubuntu/xenial/ros-base/Dockerfile*)](https://github.com/osrf/docker_images/blob/7ba58fc107b368d6409c22161070eb93e562f240/ros/kinetic/ubuntu/xenial/ros-base/Dockerfile)
--	[`kinetic-robot`, `kinetic-robot-xenial` (*ros/kinetic/ubuntu/xenial/robot/Dockerfile*)](https://github.com/osrf/docker_images/blob/7ba58fc107b368d6409c22161070eb93e562f240/ros/kinetic/ubuntu/xenial/robot/Dockerfile)
--	[`kinetic-perception`, `kinetic-perception-xenial` (*ros/kinetic/ubuntu/xenial/perception/Dockerfile*)](https://github.com/osrf/docker_images/blob/7ba58fc107b368d6409c22161070eb93e562f240/ros/kinetic/ubuntu/xenial/perception/Dockerfile)
--	[`kinetic-ros-core-jessie` (*ros/kinetic/debian/jessie/ros-core/Dockerfile*)](https://github.com/osrf/docker_images/blob/7ba58fc107b368d6409c22161070eb93e562f240/ros/kinetic/debian/jessie/ros-core/Dockerfile)
--	[`kinetic-ros-base-jessie` (*ros/kinetic/debian/jessie/ros-base/Dockerfile*)](https://github.com/osrf/docker_images/blob/7ba58fc107b368d6409c22161070eb93e562f240/ros/kinetic/debian/jessie/ros-base/Dockerfile)
--	[`kinetic-robot-jessie` (*ros/kinetic/debian/jessie/robot/Dockerfile*)](https://github.com/osrf/docker_images/blob/7ba58fc107b368d6409c22161070eb93e562f240/ros/kinetic/debian/jessie/robot/Dockerfile)
--	[`kinetic-perception-jessie` (*ros/kinetic/debian/jessie/perception/Dockerfile*)](https://github.com/osrf/docker_images/blob/7ba58fc107b368d6409c22161070eb93e562f240/ros/kinetic/debian/jessie/perception/Dockerfile)
--	[`lunar-ros-core`, `lunar-ros-core-xenial` (*ros/lunar/ubuntu/xenial/ros-core/Dockerfile*)](https://github.com/osrf/docker_images/blob/7ba58fc107b368d6409c22161070eb93e562f240/ros/lunar/ubuntu/xenial/ros-core/Dockerfile)
--	[`lunar-ros-base`, `lunar-ros-base-xenial`, `lunar` (*ros/lunar/ubuntu/xenial/ros-base/Dockerfile*)](https://github.com/osrf/docker_images/blob/7ba58fc107b368d6409c22161070eb93e562f240/ros/lunar/ubuntu/xenial/ros-base/Dockerfile)
--	[`lunar-robot`, `lunar-robot-xenial` (*ros/lunar/ubuntu/xenial/robot/Dockerfile*)](https://github.com/osrf/docker_images/blob/7ba58fc107b368d6409c22161070eb93e562f240/ros/lunar/ubuntu/xenial/robot/Dockerfile)
--	[`lunar-perception`, `lunar-perception-xenial` (*ros/lunar/ubuntu/xenial/perception/Dockerfile*)](https://github.com/osrf/docker_images/blob/7ba58fc107b368d6409c22161070eb93e562f240/ros/lunar/ubuntu/xenial/perception/Dockerfile)
--	[`lunar-ros-core-stretch` (*ros/lunar/debian/stretch/ros-core/Dockerfile*)](https://github.com/osrf/docker_images/blob/7ba58fc107b368d6409c22161070eb93e562f240/ros/lunar/debian/stretch/ros-core/Dockerfile)
--	[`lunar-ros-base-stretch` (*ros/lunar/debian/stretch/ros-base/Dockerfile*)](https://github.com/osrf/docker_images/blob/7ba58fc107b368d6409c22161070eb93e562f240/ros/lunar/debian/stretch/ros-base/Dockerfile)
--	[`lunar-robot-stretch` (*ros/lunar/debian/stretch/robot/Dockerfile*)](https://github.com/osrf/docker_images/blob/7ba58fc107b368d6409c22161070eb93e562f240/ros/lunar/debian/stretch/robot/Dockerfile)
--	[`lunar-perception-stretch` (*ros/lunar/debian/stretch/perception/Dockerfile*)](https://github.com/osrf/docker_images/blob/7ba58fc107b368d6409c22161070eb93e562f240/ros/lunar/debian/stretch/perception/Dockerfile)
+-	[`indigo-ros-core`, `indigo-ros-core-trusty` (*ros/indigo/ubuntu/trusty/ros-core/Dockerfile*)](https://github.com/osrf/docker_images/blob/49d22242e02e9c541a9e85b657e1785617b6f470/ros/indigo/ubuntu/trusty/ros-core/Dockerfile)
+-	[`indigo-ros-base`, `indigo-ros-base-trusty`, `indigo` (*ros/indigo/ubuntu/trusty/ros-base/Dockerfile*)](https://github.com/osrf/docker_images/blob/49d22242e02e9c541a9e85b657e1785617b6f470/ros/indigo/ubuntu/trusty/ros-base/Dockerfile)
+-	[`indigo-robot`, `indigo-robot-trusty` (*ros/indigo/ubuntu/trusty/robot/Dockerfile*)](https://github.com/osrf/docker_images/blob/49d22242e02e9c541a9e85b657e1785617b6f470/ros/indigo/ubuntu/trusty/robot/Dockerfile)
+-	[`indigo-perception`, `indigo-perception-trusty` (*ros/indigo/ubuntu/trusty/perception/Dockerfile*)](https://github.com/osrf/docker_images/blob/49d22242e02e9c541a9e85b657e1785617b6f470/ros/indigo/ubuntu/trusty/perception/Dockerfile)
+-	[`kinetic-ros-core`, `kinetic-ros-core-xenial` (*ros/kinetic/ubuntu/xenial/ros-core/Dockerfile*)](https://github.com/osrf/docker_images/blob/49d22242e02e9c541a9e85b657e1785617b6f470/ros/kinetic/ubuntu/xenial/ros-core/Dockerfile)
+-	[`kinetic-ros-base`, `kinetic-ros-base-xenial`, `kinetic` (*ros/kinetic/ubuntu/xenial/ros-base/Dockerfile*)](https://github.com/osrf/docker_images/blob/49d22242e02e9c541a9e85b657e1785617b6f470/ros/kinetic/ubuntu/xenial/ros-base/Dockerfile)
+-	[`kinetic-robot`, `kinetic-robot-xenial` (*ros/kinetic/ubuntu/xenial/robot/Dockerfile*)](https://github.com/osrf/docker_images/blob/49d22242e02e9c541a9e85b657e1785617b6f470/ros/kinetic/ubuntu/xenial/robot/Dockerfile)
+-	[`kinetic-perception`, `kinetic-perception-xenial` (*ros/kinetic/ubuntu/xenial/perception/Dockerfile*)](https://github.com/osrf/docker_images/blob/49d22242e02e9c541a9e85b657e1785617b6f470/ros/kinetic/ubuntu/xenial/perception/Dockerfile)
+-	[`lunar-ros-core`, `lunar-ros-core-xenial` (*ros/lunar/ubuntu/xenial/ros-core/Dockerfile*)](https://github.com/osrf/docker_images/blob/49d22242e02e9c541a9e85b657e1785617b6f470/ros/lunar/ubuntu/xenial/ros-core/Dockerfile)
+-	[`lunar-ros-base`, `lunar-ros-base-xenial`, `lunar` (*ros/lunar/ubuntu/xenial/ros-base/Dockerfile*)](https://github.com/osrf/docker_images/blob/49d22242e02e9c541a9e85b657e1785617b6f470/ros/lunar/ubuntu/xenial/ros-base/Dockerfile)
+-	[`lunar-robot`, `lunar-robot-xenial` (*ros/lunar/ubuntu/xenial/robot/Dockerfile*)](https://github.com/osrf/docker_images/blob/49d22242e02e9c541a9e85b657e1785617b6f470/ros/lunar/ubuntu/xenial/robot/Dockerfile)
+-	[`lunar-perception`, `lunar-perception-xenial` (*ros/lunar/ubuntu/xenial/perception/Dockerfile*)](https://github.com/osrf/docker_images/blob/49d22242e02e9c541a9e85b657e1785617b6f470/ros/lunar/ubuntu/xenial/perception/Dockerfile)
+-	[`lunar-ros-core-stretch` (*ros/lunar/debian/stretch/ros-core/Dockerfile*)](https://github.com/osrf/docker_images/blob/49d22242e02e9c541a9e85b657e1785617b6f470/ros/lunar/debian/stretch/ros-core/Dockerfile)
+-	[`lunar-ros-base-stretch` (*ros/lunar/debian/stretch/ros-base/Dockerfile*)](https://github.com/osrf/docker_images/blob/49d22242e02e9c541a9e85b657e1785617b6f470/ros/lunar/debian/stretch/ros-base/Dockerfile)
+-	[`lunar-robot-stretch` (*ros/lunar/debian/stretch/robot/Dockerfile*)](https://github.com/osrf/docker_images/blob/49d22242e02e9c541a9e85b657e1785617b6f470/ros/lunar/debian/stretch/robot/Dockerfile)
+-	[`lunar-perception-stretch` (*ros/lunar/debian/stretch/perception/Dockerfile*)](https://github.com/osrf/docker_images/blob/49d22242e02e9c541a9e85b657e1785617b6f470/ros/lunar/debian/stretch/perception/Dockerfile)
+-	[`melodic-ros-core`, `melodic-ros-core-bionic` (*ros/melodic/ubuntu/bionic/ros-core/Dockerfile*)](https://github.com/osrf/docker_images/blob/49d22242e02e9c541a9e85b657e1785617b6f470/ros/melodic/ubuntu/bionic/ros-core/Dockerfile)
+-	[`melodic-ros-base`, `melodic-ros-base-bionic`, `melodic`, `latest` (*ros/melodic/ubuntu/bionic/ros-base/Dockerfile*)](https://github.com/osrf/docker_images/blob/49d22242e02e9c541a9e85b657e1785617b6f470/ros/melodic/ubuntu/bionic/ros-base/Dockerfile)
+-	[`melodic-robot`, `melodic-robot-bionic` (*ros/melodic/ubuntu/bionic/robot/Dockerfile*)](https://github.com/osrf/docker_images/blob/49d22242e02e9c541a9e85b657e1785617b6f470/ros/melodic/ubuntu/bionic/robot/Dockerfile)
+-	[`melodic-perception`, `melodic-perception-bionic` (*ros/melodic/ubuntu/bionic/perception/Dockerfile*)](https://github.com/osrf/docker_images/blob/49d22242e02e9c541a9e85b657e1785617b6f470/ros/melodic/ubuntu/bionic/perception/Dockerfile)
+-	[`melodic-ros-core-stretch` (*ros/melodic/debian/stretch/ros-core/Dockerfile*)](https://github.com/osrf/docker_images/blob/49d22242e02e9c541a9e85b657e1785617b6f470/ros/melodic/debian/stretch/ros-core/Dockerfile)
+-	[`melodic-ros-base-stretch` (*ros/melodic/debian/stretch/ros-base/Dockerfile*)](https://github.com/osrf/docker_images/blob/49d22242e02e9c541a9e85b657e1785617b6f470/ros/melodic/debian/stretch/ros-base/Dockerfile)
+-	[`melodic-robot-stretch` (*ros/melodic/debian/stretch/robot/Dockerfile*)](https://github.com/osrf/docker_images/blob/49d22242e02e9c541a9e85b657e1785617b6f470/ros/melodic/debian/stretch/robot/Dockerfile)
+-	[`melodic-perception-stretch` (*ros/melodic/debian/stretch/perception/Dockerfile*)](https://github.com/osrf/docker_images/blob/49d22242e02e9c541a9e85b657e1785617b6f470/ros/melodic/debian/stretch/perception/Dockerfile)
 
 # Quick reference
 
@@ -51,6 +51,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[the Open Source Robotics Foundation](https://github.com/osrf/docker_images)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/ros/), [`arm32v7`](https://hub.docker.com/r/arm32v7/ros/), [`arm64v8`](https://hub.docker.com/r/arm64v8/ros/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/ros/` directory](https://github.com/docker-library/repo-info/blob/master/repos/ros) ([history](https://github.com/docker-library/repo-info/commits/master/repos/ros))  
@@ -64,7 +67,7 @@ WARNING:
 	[docs repo's `ros/` directory](https://github.com/docker-library/docs/tree/master/ros) ([history](https://github.com/docker-library/docs/commits/master/ros))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is [ROS](http://www.ros.org/)?
 
@@ -93,7 +96,7 @@ $ docker run -it --rm --name my-running-app my-ros-app
 
 ## Deployment use cases
 
-This dockerized image of ROS is intended to provide a simplified and consistent platform to build and deploy distributed robotic applications. Built from the [official Ubuntu image](https://registry.hub.docker.com/_/ubuntu/) and ROS's official Debian packages, it includes recent supported releases for quick access and download. This provides roboticists in research and industry with an easy way to develop, reuse and ship software for autonomous actions and task planning, control dynamics, localization and mapping, swarm behavior, as well as general system integration.
+This dockerized image of ROS is intended to provide a simplified and consistent platform to build and deploy distributed robotic applications. Built from the [official Ubuntu image](https://hub.docker.com/_/ubuntu/) and ROS's official Debian packages, it includes recent supported releases for quick access and download. This provides roboticists in research and industry with an easy way to develop, reuse and ship software for autonomous actions and task planning, control dynamics, localization and mapping, swarm behavior, as well as general system integration.
 
 Developing such complex systems with cutting edge implementations of newly published algorithms remains challenging, as repeatability and reproducibility of robotic software can fall to the wayside in the race to innovate. With the added difficulty in coding, tuning and deploying multiple software components that span across many engineering disciplines, a more collaborative approach becomes attractive. However, the technical difficulties in sharing and maintaining a collection of software over multiple robots and platforms has for a while exceeded time and effort than many smaller labs and businesses could afford.
 
@@ -139,7 +142,7 @@ If we want our all ROS nodes to easily talk to each other, we'll can use a virtu
 ```dockerfile
 FROM ros:indigo-ros-base
 # install ros tutorials packages
-RUN apt-get update && apt-get install -y
+RUN apt-get update && apt-get install -y \
     ros-indigo-ros-tutorials \
     ros-indigo-common-tutorials \
     && rm -rf /var/lib/apt/lists/
@@ -314,3 +317,9 @@ $ docker-compose rm
 The core of ROS is licensed under the standard three-clause BSD license. This is a very permissive open license that allows for reuse in commercial and closed source products. You can find more about the BSD license from the Opensource.org [BSD 3-Clause](http://opensource.org/licenses/BSD-3-Clause) page and Wikipedia's [BSD Licenses](http://en.wikipedia.org/wiki/BSD_licenses) entry.
 
 While the core parts of ROS are licensed under the BSD license, other licenses are commonly used in the community packages, such as the [Apache 2.0](http://opensource.org/licenses/Apache-2.0) license, the [GPL](http://opensource.org/licenses/gpl-license) license, the [MIT](http://opensource.org/licenses/MIT) license, and even proprietary licenses. Each package in the ROS ecosystem is required to specify a license, so that it is easy for you to quickly identify if a package will meet your licensing needs.
+
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
+
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `ros/` directory](https://github.com/docker-library/repo-info/tree/master/repos/ros).
+
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

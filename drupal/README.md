@@ -16,15 +16,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.4.0-beta1-apache`, `8.4-rc-apache`, `rc-apache`, `8.4.0-beta1`, `8.4-rc`, `rc` (*8.4-rc/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/2cbb3819480ebfa62053c75de2710659cbb8f66e/8.4-rc/apache/Dockerfile)
--	[`8.4.0-beta1-fpm`, `8.4-rc-fpm`, `rc-fpm` (*8.4-rc/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/2cbb3819480ebfa62053c75de2710659cbb8f66e/8.4-rc/fpm/Dockerfile)
--	[`8.4.0-beta1-fpm-alpine`, `8.4-rc-fpm-alpine`, `rc-fpm-alpine` (*8.4-rc/fpm-alpine/Dockerfile*)](https://github.com/docker-library/drupal/blob/2cbb3819480ebfa62053c75de2710659cbb8f66e/8.4-rc/fpm-alpine/Dockerfile)
--	[`8.3.7-apache`, `8.3-apache`, `8-apache`, `apache`, `8.3.7`, `8.3`, `8`, `latest` (*8.3/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/6eb80c71ff39e076633362adf0dc67dd252f1753/8.3/apache/Dockerfile)
--	[`8.3.7-fpm`, `8.3-fpm`, `8-fpm`, `fpm` (*8.3/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/6eb80c71ff39e076633362adf0dc67dd252f1753/8.3/fpm/Dockerfile)
--	[`8.3.7-fpm-alpine`, `8.3-fpm-alpine`, `8-fpm-alpine`, `fpm-alpine` (*8.3/fpm-alpine/Dockerfile*)](https://github.com/docker-library/drupal/blob/6eb80c71ff39e076633362adf0dc67dd252f1753/8.3/fpm-alpine/Dockerfile)
--	[`7.56-apache`, `7-apache`, `7.56`, `7` (*7/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/a8e09f524b89b61534f376e45b885d433d867c88/7/apache/Dockerfile)
--	[`7.56-fpm`, `7-fpm` (*7/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/a8e09f524b89b61534f376e45b885d433d867c88/7/fpm/Dockerfile)
--	[`7.56-fpm-alpine`, `7-fpm-alpine` (*7/fpm-alpine/Dockerfile*)](https://github.com/docker-library/drupal/blob/a8e09f524b89b61534f376e45b885d433d867c88/7/fpm-alpine/Dockerfile)
+-	[`8.6.5-apache`, `8.6-apache`, `8-apache`, `apache`, `8.6.5`, `8.6`, `8`, `latest` (*8.6/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/48f55a71e0286f2d65c5c7a594e6f10aa8ecf430/8.6/apache/Dockerfile)
+-	[`8.6.5-fpm`, `8.6-fpm`, `8-fpm`, `fpm` (*8.6/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/48f55a71e0286f2d65c5c7a594e6f10aa8ecf430/8.6/fpm/Dockerfile)
+-	[`8.6.5-fpm-alpine`, `8.6-fpm-alpine`, `8-fpm-alpine`, `fpm-alpine` (*8.6/fpm-alpine/Dockerfile*)](https://github.com/docker-library/drupal/blob/48f55a71e0286f2d65c5c7a594e6f10aa8ecf430/8.6/fpm-alpine/Dockerfile)
+-	[`8.5.8-apache`, `8.5-apache`, `8.5.8`, `8.5` (*8.5/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/8a9569a2d2e9ded138454b34ae043afd0bdb2660/8.5/apache/Dockerfile)
+-	[`8.5.8-fpm`, `8.5-fpm` (*8.5/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/8a9569a2d2e9ded138454b34ae043afd0bdb2660/8.5/fpm/Dockerfile)
+-	[`8.5.8-fpm-alpine`, `8.5-fpm-alpine` (*8.5/fpm-alpine/Dockerfile*)](https://github.com/docker-library/drupal/blob/8a9569a2d2e9ded138454b34ae043afd0bdb2660/8.5/fpm-alpine/Dockerfile)
+-	[`7.61-apache`, `7-apache`, `7.61`, `7` (*7/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/3f6716f12feaa1e3b3a78d2748941342073f4b32/7/apache/Dockerfile)
+-	[`7.61-fpm`, `7-fpm` (*7/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/3f6716f12feaa1e3b3a78d2748941342073f4b32/7/fpm/Dockerfile)
+-	[`7.61-fpm-alpine`, `7-fpm-alpine` (*7/fpm-alpine/Dockerfile*)](https://github.com/docker-library/drupal/blob/3f6716f12feaa1e3b3a78d2748941342073f4b32/7/fpm-alpine/Dockerfile)
 
 # Quick reference
 
@@ -36,6 +36,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[the Docker Community](https://github.com/docker-library/drupal) (*not* the Drupal Community or the Drupal Security Team)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/drupal/), [`arm32v5`](https://hub.docker.com/r/arm32v5/drupal/), [`arm32v6`](https://hub.docker.com/r/arm32v6/drupal/), [`arm32v7`](https://hub.docker.com/r/arm32v7/drupal/), [`arm64v8`](https://hub.docker.com/r/arm64v8/drupal/), [`i386`](https://hub.docker.com/r/i386/drupal/), [`ppc64le`](https://hub.docker.com/r/ppc64le/drupal/), [`s390x`](https://hub.docker.com/r/s390x/drupal/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/drupal/` directory](https://github.com/docker-library/repo-info/blob/master/repos/drupal) ([history](https://github.com/docker-library/repo-info/commits/master/repos/drupal))  
@@ -49,7 +52,7 @@ WARNING:
 	[docs repo's `drupal/` directory](https://github.com/docker-library/docs/tree/master/drupal) ([history](https://github.com/docker-library/docs/commits/master/drupal))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Drupal?
 
@@ -86,7 +89,7 @@ $ docker run --name some-drupal --link some-mysql:mysql -d drupal
 ```
 
 -	Database type: `MySQL, MariaDB, or equivalent`
--	Database name/username/password: `<details for accessing your MySQL instance>` (`MYSQL_USER`, `MYSQL_PASSWORD`, `MYSQL_DATABASE`; see environment variables in the description for [`mysql`](https://registry.hub.docker.com/_/mysql/))
+-	Database name/username/password: `<details for accessing your MySQL instance>` (`MYSQL_USER`, `MYSQL_PASSWORD`, `MYSQL_DATABASE`; see environment variables in the description for [`mysql`](https://hub.docker.com/_/mysql/))
 -	ADVANCED OPTIONS; Database host: `mysql` (for using the `/etc/hosts` entry added by `--link` to access the linked container's MySQL instance)
 
 ## PostgreSQL
@@ -96,7 +99,7 @@ $ docker run --name some-drupal --link some-postgres:postgres -d drupal
 ```
 
 -	Database type: `PostgreSQL`
--	Database name/username/password: `<details for accessing your PostgreSQL instance>` (`POSTGRES_USER`, `POSTGRES_PASSWORD`; see environment variables in the description for [`postgres`](https://registry.hub.docker.com/_/postgres/))
+-	Database name/username/password: `<details for accessing your PostgreSQL instance>` (`POSTGRES_USER`, `POSTGRES_PASSWORD`; see environment variables in the description for [`postgres`](https://hub.docker.com/_/postgres/))
 -	ADVANCED OPTIONS; Database host: `postgres` (for using the `/etc/hosts` entry added by `--link` to access the linked container's PostgreSQL instance)
 
 ## Volumes
@@ -132,6 +135,7 @@ $ docker run --name some-drupal --link some-postgres:postgres -d \
 	-v drupal-profiles:/var/www/html/profiles \
 	-v drupal-sites:/var/www/html/sites \
 	-v drupal-themes:/var/www/html/themes \
+	drupal
 ```
 
 ## ... via [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/) or [`docker-compose`](https://github.com/docker/compose)
@@ -156,7 +160,7 @@ version: '3.1'
 services:
 
   drupal:
-    image: drupal:8.2-apache
+    image: drupal:8-apache
     ports:
       - 8080:80
     volumes:
@@ -170,13 +174,13 @@ services:
     restart: always
 
   postgres:
-    image: postgres:9.6
+    image: postgres:10
     environment:
       POSTGRES_PASSWORD: example
     restart: always
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/54359bd26c41e63c6e50ccd338b5a18d8b572c60/drupal/stack.yml)
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/f81077b92e4522999836b8c5d098a103f568a431/drupal/stack.yml)
 
 Run `docker stack deploy -c stack.yml drupal` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate). When installing select `postgres` as database with the following parameters: `dbname=postgres` `user=postgres` `pass=example` `hostname=postgres`
 
@@ -191,6 +195,32 @@ The following Docker Hub features can help with the task of keeping your depende
 -	[Automated Builds](https://docs.docker.com/docker-hub/builds/) let Docker Hub automatically build your Dockerfile each time you push changes to it.
 -	[Repository Links](https://docs.docker.com/docker-hub/builds/#repository-links) can ensure that your image is also rebuilt any time `drupal` is updated.
 
+## Running as an arbitrary user
+
+See [the "Running as an arbitrary user" section of the `php` image documentation](https://hub.docker.com/_/php/).
+
+# Image Variants
+
+The `drupal` images come in many flavors, each designed for a specific use case.
+
+## `drupal:<version>`
+
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+## `drupal:<version>-alpine`
+
+This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+
+This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+
+To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
+
 # License
 
 View [license information](https://www.drupal.org/licensing/faq) for the software contained in this image.
+
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
+
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `drupal/` directory](https://github.com/docker-library/repo-info/tree/master/repos/drupal).
+
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

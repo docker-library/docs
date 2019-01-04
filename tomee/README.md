@@ -16,30 +16,24 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6-jre-1.7.4-jaxrs` (*6-jre-1.7.4-jaxrs/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/2a6fed6d93248bb53e8d81bee2e7259c42480137/6-jre-1.7.4-jaxrs/Dockerfile)
--	[`6-jre-1.7.4-plume` (*6-jre-1.7.4-plume/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/2a6fed6d93248bb53e8d81bee2e7259c42480137/6-jre-1.7.4-plume/Dockerfile)
--	[`6-jre-1.7.4-plus` (*6-jre-1.7.4-plus/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/2a6fed6d93248bb53e8d81bee2e7259c42480137/6-jre-1.7.4-plus/Dockerfile)
--	[`6-jre-1.7.4-webprofile` (*6-jre-1.7.4-webprofile/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/2a6fed6d93248bb53e8d81bee2e7259c42480137/6-jre-1.7.4-webprofile/Dockerfile)
--	[`7-jre-1.7.4-jaxrs` (*7-jre-1.7.4-jaxrs/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/2a6fed6d93248bb53e8d81bee2e7259c42480137/7-jre-1.7.4-jaxrs/Dockerfile)
--	[`7-jre-1.7.4-plume` (*7-jre-1.7.4-plume/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/2a6fed6d93248bb53e8d81bee2e7259c42480137/7-jre-1.7.4-plume/Dockerfile)
--	[`7-jre-1.7.4-plus` (*7-jre-1.7.4-plus/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/2a6fed6d93248bb53e8d81bee2e7259c42480137/7-jre-1.7.4-plus/Dockerfile)
--	[`7-jre-1.7.4-webprofile` (*7-jre-1.7.4-webprofile/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/2a6fed6d93248bb53e8d81bee2e7259c42480137/7-jre-1.7.4-webprofile/Dockerfile)
--	[`8-jre-1.7.4-jaxrs` (*8-jre-1.7.4-jaxrs/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/2a6fed6d93248bb53e8d81bee2e7259c42480137/8-jre-1.7.4-jaxrs/Dockerfile)
--	[`8-jre-1.7.4-plume` (*8-jre-1.7.4-plume/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/2a6fed6d93248bb53e8d81bee2e7259c42480137/8-jre-1.7.4-plume/Dockerfile)
--	[`8-jre-1.7.4-plus` (*8-jre-1.7.4-plus/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/2a6fed6d93248bb53e8d81bee2e7259c42480137/8-jre-1.7.4-plus/Dockerfile)
--	[`8-jre-1.7.4-webprofile` (*8-jre-1.7.4-webprofile/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/2a6fed6d93248bb53e8d81bee2e7259c42480137/8-jre-1.7.4-webprofile/Dockerfile)
--	[`8-jre-7.0.0-plume` (*8-jre-7.0.0-plume/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/2a6fed6d93248bb53e8d81bee2e7259c42480137/8-jre-7.0.0-plume/Dockerfile)
--	[`8-jre-7.0.0-plus` (*8-jre-7.0.0-plus/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/2a6fed6d93248bb53e8d81bee2e7259c42480137/8-jre-7.0.0-plus/Dockerfile)
--	[`8-jre-7.0.0-webprofile` (*8-jre-7.0.0-webprofile/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/2a6fed6d93248bb53e8d81bee2e7259c42480137/8-jre-7.0.0-webprofile/Dockerfile)
--	[`8-jre-7.0.1-plume` (*8-jre-7.0.1-plume/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/2a6fed6d93248bb53e8d81bee2e7259c42480137/8-jre-7.0.1-plume/Dockerfile)
--	[`8-jre-7.0.1-plus` (*8-jre-7.0.1-plus/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/2a6fed6d93248bb53e8d81bee2e7259c42480137/8-jre-7.0.1-plus/Dockerfile)
--	[`8-jre-7.0.1-webprofile` (*8-jre-7.0.1-webprofile/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/2a6fed6d93248bb53e8d81bee2e7259c42480137/8-jre-7.0.1-webprofile/Dockerfile)
--	[`8-jre-7.0.2-plume` (*8-jre-7.0.2-plume/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/2a6fed6d93248bb53e8d81bee2e7259c42480137/8-jre-7.0.2-plume/Dockerfile)
--	[`8-jre-7.0.2-plus` (*8-jre-7.0.2-plus/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/2a6fed6d93248bb53e8d81bee2e7259c42480137/8-jre-7.0.2-plus/Dockerfile)
--	[`8-jre-7.0.2-webprofile` (*8-jre-7.0.2-webprofile/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/2a6fed6d93248bb53e8d81bee2e7259c42480137/8-jre-7.0.2-webprofile/Dockerfile)
--	[`8-jre-7.0.3-plume` (*8-jre-7.0.3-plume/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/2a6fed6d93248bb53e8d81bee2e7259c42480137/8-jre-7.0.3-plume/Dockerfile)
--	[`8-jre-7.0.3-plus` (*8-jre-7.0.3-plus/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/2a6fed6d93248bb53e8d81bee2e7259c42480137/8-jre-7.0.3-plus/Dockerfile)
--	[`8-jre-7.0.3-webprofile`, `latest` (*8-jre-7.0.3-webprofile/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/2a6fed6d93248bb53e8d81bee2e7259c42480137/8-jre-7.0.3-webprofile/Dockerfile)
+-	[`8-jre-1.7.5-jaxrs` (*8-jre-1.7.5-jaxrs/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/654f74c68d07c36d3ca72475423c0db65245673e/8-jre-1.7.5-jaxrs/Dockerfile)
+-	[`8-jre-1.7.5-plume` (*8-jre-1.7.5-plume/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/654f74c68d07c36d3ca72475423c0db65245673e/8-jre-1.7.5-plume/Dockerfile)
+-	[`8-jre-1.7.5-plus` (*8-jre-1.7.5-plus/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/654f74c68d07c36d3ca72475423c0db65245673e/8-jre-1.7.5-plus/Dockerfile)
+-	[`8-jre-1.7.5-webprofile` (*8-jre-1.7.5-webprofile/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/654f74c68d07c36d3ca72475423c0db65245673e/8-jre-1.7.5-webprofile/Dockerfile)
+-	[`8-jre-7.0.4-plume` (*8-jre-7.0.4-plume/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/654f74c68d07c36d3ca72475423c0db65245673e/8-jre-7.0.4-plume/Dockerfile)
+-	[`8-jre-7.0.4-plus` (*8-jre-7.0.4-plus/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/654f74c68d07c36d3ca72475423c0db65245673e/8-jre-7.0.4-plus/Dockerfile)
+-	[`8-jre-7.0.4-webprofile` (*8-jre-7.0.4-webprofile/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/654f74c68d07c36d3ca72475423c0db65245673e/8-jre-7.0.4-webprofile/Dockerfile)
+-	[`8-jre-7.0.5-plume` (*8-jre-7.0.5-plume/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/654f74c68d07c36d3ca72475423c0db65245673e/8-jre-7.0.5-plume/Dockerfile)
+-	[`8-jre-7.0.5-plus` (*8-jre-7.0.5-plus/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/654f74c68d07c36d3ca72475423c0db65245673e/8-jre-7.0.5-plus/Dockerfile)
+-	[`8-jre-7.0.5-webprofile` (*8-jre-7.0.5-webprofile/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/654f74c68d07c36d3ca72475423c0db65245673e/8-jre-7.0.5-webprofile/Dockerfile)
+-	[`8-jre-7.1.0-plume` (*8-jre-7.1.0-plume/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/654f74c68d07c36d3ca72475423c0db65245673e/8-jre-7.1.0-plume/Dockerfile)
+-	[`8-jre-7.1.0-plus` (*8-jre-7.1.0-plus/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/654f74c68d07c36d3ca72475423c0db65245673e/8-jre-7.1.0-plus/Dockerfile)
+-	[`8-jre-7.1.0-microprofile` (*8-jre-7.1.0-microprofile/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/654f74c68d07c36d3ca72475423c0db65245673e/8-jre-7.1.0-microprofile/Dockerfile)
+-	[`8-jre-7.1.0-webprofile` (*8-jre-7.1.0-webprofile/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/654f74c68d07c36d3ca72475423c0db65245673e/8-jre-7.1.0-webprofile/Dockerfile)
+-	[`8-jre-8.0.0-M1-plume` (*8-jre-8.0.0-M1-plume/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/654f74c68d07c36d3ca72475423c0db65245673e/8-jre-8.0.0-M1-plume/Dockerfile)
+-	[`8-jre-8.0.0-M1-plus` (*8-jre-8.0.0-M1-plus/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/654f74c68d07c36d3ca72475423c0db65245673e/8-jre-8.0.0-M1-plus/Dockerfile)
+-	[`8-jre-8.0.0-M1-microprofile` (*8-jre-8.0.0-M1-microprofile/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/654f74c68d07c36d3ca72475423c0db65245673e/8-jre-8.0.0-M1-microprofile/Dockerfile)
+-	[`8-jre-8.0.0-M1-webprofile`, `latest` (*8-jre-8.0.0-M1-webprofile/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/654f74c68d07c36d3ca72475423c0db65245673e/8-jre-8.0.0-M1-webprofile/Dockerfile)
 
 # Quick reference
 
@@ -51,6 +45,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[the Docker Community](https://github.com/tomitribe/docker-tomee)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/tomee/), [`arm32v5`](https://hub.docker.com/r/arm32v5/tomee/), [`arm32v7`](https://hub.docker.com/r/arm32v7/tomee/), [`arm64v8`](https://hub.docker.com/r/arm64v8/tomee/), [`i386`](https://hub.docker.com/r/i386/tomee/), [`ppc64le`](https://hub.docker.com/r/ppc64le/tomee/), [`s390x`](https://hub.docker.com/r/s390x/tomee/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/tomee/` directory](https://github.com/docker-library/repo-info/blob/master/repos/tomee) ([history](https://github.com/docker-library/repo-info/commits/master/repos/tomee))  
@@ -64,7 +61,7 @@ WARNING:
 	[docs repo's `tomee/` directory](https://github.com/docker-library/docs/tree/master/tomee) ([history](https://github.com/docker-library/docs/commits/master/tomee))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is TomEE?
 
@@ -126,8 +123,16 @@ The configuration files are available in `/usr/local/tomee/conf/`. By default, n
 
 You can also use this image as base image for deploying your war application. To do it you need to create a Dockerfile based on Tomee Docker image and add the war file in `webapps` directory:
 
-	ADD <locationofapplication>/<warfile> /usr/local/tomee/webapps/<warfile>
+```dockerfile
+COPY <locationofapplication>/<warfile> /usr/local/tomee/webapps/<warfile>
+```
 
 # License
 
 View [license information](http://www.apache.org/licenses/LICENSE-2.0) for the software contained in this image.
+
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
+
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `tomee/` directory](https://github.com/docker-library/repo-info/tree/master/repos/tomee).
+
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

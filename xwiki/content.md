@@ -21,7 +21,7 @@ You should first install [Docker](https://www.docker.com/) on your machine.
 
 Then there are several options:
 
-1.	Pull the xwiki image from DockerHub.
+1.	Pull the %%IMAGE%% image from DockerHub.
 2.	Get the [sources of this project](https://github.com/xwiki-contrib/docker-xwiki) and build them.
 
 ## Pulling existing image
@@ -71,13 +71,13 @@ Then run XWiki in another container by issuing one of the following command.
 For MySQL:
 
 ```console
-docker run --net=xwiki-nw --name xwiki -p 8080:8080 -v /my/own/xwiki:/usr/local/xwiki -e DB_USER=xwiki -e DB_PASSWORD=xwiki -e DB_DATABASE=xwiki -e DB_HOST=mysql-xwiki xwiki:mysql-tomcat
+docker run --net=xwiki-nw --name xwiki -p 8080:8080 -v /my/own/xwiki:/usr/local/xwiki -e DB_USER=xwiki -e DB_PASSWORD=xwiki -e DB_DATABASE=xwiki -e DB_HOST=mysql-xwiki %%IMAGE%%:mysql-tomcat
 ```
 
 For PostgreSQL:
 
 ```console
-docker run --net=xwiki-nw --name xwiki -p 8080:8080 -v /my/own/xwiki:/usr/local/xwiki -e DB_USER=xwiki -e DB_PASSWORD=xwiki -e DB_DATABASE=xwiki -e DB_HOST=postgres-xwiki xwiki:postgres-tomcat
+docker run --net=xwiki-nw --name xwiki -p 8080:8080 -v /my/own/xwiki:/usr/local/xwiki -e DB_USER=xwiki -e DB_PASSWORD=xwiki -e DB_DATABASE=xwiki -e DB_HOST=postgres-xwiki %%IMAGE%%:postgres-tomcat
 ```
 
 Be careful to use the same DB username, password and database names that you've used on the first command to start the DB container. Also, please don't forget to add a `-e DB_HOST=` environment variable with the name of the previously created DB container so that XWiki knows where its database is.
@@ -110,7 +110,7 @@ networks:
     driver: bridge
 services:
   web:
-    image: "xwiki:mysql-tomcat"
+    image: "%%IMAGE%%:mysql-tomcat"
     container_name: xwiki-mysql-tomcat-web
     depends_on:
       - db
@@ -158,7 +158,7 @@ networks:
     driver: bridge
 services:
   web:
-    image: "xwiki:postgres-tomcat"
+    image: "%%IMAGE%%:postgres-tomcat"
     container_name: xwiki-postgres-tomcat-web
     depends_on:
       - db
@@ -190,6 +190,142 @@ volumes:
   xwiki-data: {}
 ```
 
+### Using Docker Swarm
+
+Here are some examples of using this image with Docker Swarm. These examples leverage additional features of Docker Swarm such as Docker secrets, and Docker configs. As such, these examples require Docker to be in swarm mode.
+
+You can read more about these features and Docker swarm mode here:
+
+-	[Docker swarm mode](https://docs.docker.com/engine/swarm/)
+-	[Creating Docker secrets](https://docs.docker.com/engine/reference/commandline/secret_create/)
+-	[Creating Docker configs](https://docs.docker.com/engine/reference/commandline/config_create/)
+
+#### MySQL Example
+
+This example presupposes the existence of the Docker secrets `xwiki-db-username`, `xwiki-db-password` and `xwiki-db-root-password`, and the Docker config `xwiki-mysql-config`.
+
+You can create these secrets and configs with the following:
+
+-	`echo ${MY_XWIKI_USER:-xwiki} | docker secret create xwiki-db-username -`
+-	`echo $(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 16 | head -n 1) | docker secret create xwiki-db-password -`
+-	`echo $(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 16 | head -n 1) | docker secret create xwiki-db-root-password -`
+-	`docker config create xwiki-mysql-config /path/to/mysql/xwiki.cnf`
+
+To deploy this example, save the following YAML as `xwiki-stack.yaml`, then run:
+
+-	`docker stack deploy -c xwiki-stack.yaml xwiki`
+
+```yaml
+version: '3.3'
+services:
+  web:
+    image: "xwiki:mysql-tomcat"
+    ports:
+      - "8080:8080"
+    environment:
+      - DB_USER_FILE=/run/secrets/xwiki-db-username
+      - DB_PASSWORD_FILE=/run/secrets/xwiki-db-password
+      - DB_DATABASE=xwiki
+      - DB_HOST=db
+    volumes:
+      - xwiki-data:/usr/local/xwiki
+    secrets:
+      - xwiki-db-username
+      - xwiki-db-password
+  db:
+    image: "mysql:5.7"
+    volumes:
+      - mysql-data:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=/run/secrets/xwiki-db-root-password
+      - MYSQL_USER_FILE=/run/secrets/xwiki-db-username
+      - MYSQL_PASSWORD_FILE=/run/secrets/xwiki-db-password
+      - MYSQL_DATABASE=xwiki
+    secrets:
+      - xwiki-db-username
+      - xwiki-db-password
+      - xwiki-db-root-password
+    configs: 
+      - source: mysql-config
+        target: /etc/mysql/conf.d/xwiki.cnf
+volumes:
+  mysql-data:
+  xwiki-data:
+secrets:
+  xwiki-db-username:
+    external:
+      name: xwiki-db-username
+  xwiki-db-password:
+    external:
+      name: xwiki-db-password
+  xwiki-db-root-password:
+    external:
+      name: xwiki-db-root-password
+configs:
+  mysql-config:
+    external:
+      name: xwiki-mysql-config
+```
+
+#### PostgreSQL Example
+
+This example presupposes the existence of the Docker secrets `xwiki-db-username`, `xwiki-db-password`, and `xwiki-db-root-password`.
+
+You can create these secrets with the following:
+
+-	`echo ${MY_XWIKI_USER:-xwiki} | docker secret create xwiki-db-username -`
+-	`echo $(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 16 | head -n 1) | docker secret create xwiki-db-password -`
+-	`echo $(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 16 | head -n 1) | docker secret create xwiki-db-root-password -`
+
+To deploy this example, save the following YAML as `xwiki-stack.yaml` then run:
+
+-	`docker stack deploy -c xwiki-stack.yaml xwiki`
+
+```yaml
+version: '3.3'
+services:
+  web:
+    image: "xwiki:mysql-postgres"
+    ports:
+      - "8080:8080"
+    environment:
+      - DB_USER_FILE=/run/secrets/xwiki-db-username
+      - DB_PASSWORD_FILE=/run/secrets/xwiki-db-password
+      - DB_DATABASE=xwiki
+      - DB_HOST=db
+    volumes:
+      - xwiki-data:/usr/local/xwiki
+    secrets:
+      - xwiki-db-username
+      - xwiki-db-password
+  db:
+    image: "postgres:9.5"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_ROOT_PASSWORD_FILE=/run/secrets/xwiki-db-root-password
+      - POSTGRES_USER_FILE=/run/secrets/xwiki-db-username
+      - POSTGRES_PASSWORD_FILE=/run/secrets/xwiki-db-password
+      - POSTGRES_DB=xwiki
+    secrets:
+      - xwiki-db-username
+      - xwiki-db-password
+      - xwiki-db-root-password
+volumes:
+  postgres-data:
+  xwiki-data:
+secrets:
+  xwiki-db-username:
+    external:
+      name: xwiki-db-username
+  xwiki-db-password:
+    external:
+      name: xwiki-db-password
+  xwiki-db-root-password:
+    external:
+      name: xwiki-db-root-password
+```
+
 ## Building
 
 This allows you to rebuild the XWiki docker image locally. Here are the steps:
@@ -204,7 +340,7 @@ This allows you to rebuild the XWiki docker image locally. Here are the steps:
 
 Note that if you want to set a custom version of XWiki you can edit the `.env` file and set the values you need in there. It's also possible to override them on the command line with `docker-compose run -e "XWIKI_VERSION=8.4.4"`.
 
-Note that `docker-compose up` will automatically build the XWiki image on the first run. If you need to rebuild it you can issue `docker-compose up --build`. You can also build the image with `docker build . -t xwiki-mysql-tomcat:latest` for example.
+Note that `docker-compose up` will automatically build the XWiki image on the first run. If you need to rebuild it you can issue `docker-compose up --build`. You can also build the image with `docker build . -t xwiki-mysql-tomcat` for example.
 
 # Upgrading XWiki
 
@@ -216,28 +352,35 @@ Thus all you need to do is to execute the installation instructions above as if 
 
 Then you need to stop your running XWiki container. You should keep your DB container running. Then all you have to do is start a new container as described above, using the new XWiki docker image.
 
-Caveats:
+Note that your current XWiki configuration files (`xwiki.cfg`, `xwiki.properties` and `hibernate.cfg.xml`) will be preserved.
 
--	Right now we have an [outstanding issue](https://jira.xwiki.org/browse/XDOCKER-20) and thus if you've had to modify `xwiki.properties` or `xwiki.cfg` inside the XWiki container, you'll need to port your changes inside the new container (see the section below).
-
-# Details for the xwiki image
+# Details for the %%IMAGE%% image
 
 ## Configuration Options
 
-The first time you create a container out of the xwiki image, a shell script (`/usr/local/bin/docker-entrypoint.sh`) is executed in the container to setup some configuration. The following environment variables can be passed:
+The first time you create a container out of the %%IMAGE%% image, a shell script (`/usr/local/bin/docker-entrypoint.sh`) is executed in the container to setup some configuration. The following environment variables can be passed:
 
 -	`DB_USER`: The user name used by XWiki to read/write to the DB.
 -	`DB_PASSWORD`: The user password used by XWiki to read/write to the DB.
 -	`DB_DATABASE`: The name of the XWiki database to use/create.
 -	`DB_HOST`: The name of the host (or docker container) containing the database. Default is "db".
 
-If you need to configure XWiki (e.g. modify `xwiki.properties` or `xwiki.cfg`) or perform some additional configuration, you can execute another container and attach to the running XWiki container by issuing:
+In order to support [Docker secrets](https://docs.docker.com/engine/swarm/secrets/), the configuration values can also be given to the container as files containing that value.
+
+-	`DB_USER_FILE`: The location, inside the container, of a file containing the value for `DB_USER`
+-	`DB_PASSWORD_FILE`: The location, inside the container, of a file containing the value for `DB_PASSWORD`
+-	`DB_DATABASE_FILE`: The location, inside the container, of a file containing the value for `DB_DATABASE`
+-	`DB_HOST_FILE`: The location, inside the container, of a file containing the value for `DB_HOST`
+
+*Note:* For each configuration value, the normal environment variable and \_FILE environment variable are mutually exclusive. Providing values for both variables will result in an error.
+
+The main XWiki configuration files (`xwiki.cfg`, `xwiki.properties` and `hibernate.cfg.xml`) are available in the mapped local directory for the permanent directory on your host.
+
+If you need to perform some advanced configuration, you can execute another container and attach to the running XWiki container by issuing (but note that these won't be saved if you remove the container):
 
 ```console
 docker exec -it <xwiki container id> bash -l
 ```
-
-Note that we plan to [lift this limitation in the future](https://jira.xwiki.org/browse/XDOCKER-20).
 
 ## Passing JVM options
 
@@ -246,7 +389,7 @@ It's possible to pass JVM options to Tomcat by defining the `JAVA_OPTS` environm
 For example to debug XWiki, you could use:
 
 ```console
-docker run --net=xwiki-nw --name xwiki -p 8080:8080 -v xwiki:/usr/local/xwiki -e DB_USER=xwiki -e DB_PASSWORD=xwiki -e DB_DATABASE=xwiki -e DB_HOST=mysql-xwiki -e JAVA_OPTS="-Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5005" -p 5005:5005 xwiki
+docker run --net=xwiki-nw --name xwiki -p 8080:8080 -v xwiki:/usr/local/xwiki -e DB_USER=xwiki -e DB_PASSWORD=xwiki -e DB_DATABASE=xwiki -e DB_HOST=mysql-xwiki -e JAVA_OPTS="-Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5005" -p 5005:5005 %%IMAGE%%
 ```
 
 Notice the mapping of the port with `p 5005:5005` which expose the port and thus allows you to debug XWiki from within your IDE for example.

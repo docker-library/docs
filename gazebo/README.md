@@ -16,16 +16,16 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`gzserver4` (*gazebo/gazebo4/gzserver4/Dockerfile*)](https://github.com/osrf/docker_images/blob/113c7241bac8ca94c238b1a5bf5ce71ee2a7f219/gazebo/gazebo4/gzserver4/Dockerfile)
--	[`libgazebo4` (*gazebo/gazebo4/libgazebo4/Dockerfile*)](https://github.com/osrf/docker_images/blob/113c7241bac8ca94c238b1a5bf5ce71ee2a7f219/gazebo/gazebo4/libgazebo4/Dockerfile)
--	[`gzserver5` (*gazebo/gazebo5/gzserver5/Dockerfile*)](https://github.com/osrf/docker_images/blob/113c7241bac8ca94c238b1a5bf5ce71ee2a7f219/gazebo/gazebo5/gzserver5/Dockerfile)
--	[`libgazebo5` (*gazebo/gazebo5/libgazebo5/Dockerfile*)](https://github.com/osrf/docker_images/blob/113c7241bac8ca94c238b1a5bf5ce71ee2a7f219/gazebo/gazebo5/libgazebo5/Dockerfile)
--	[`gzserver6` (*gazebo/gazebo6/gzserver6/Dockerfile*)](https://github.com/osrf/docker_images/blob/113c7241bac8ca94c238b1a5bf5ce71ee2a7f219/gazebo/gazebo6/gzserver6/Dockerfile)
--	[`libgazebo6` (*gazebo/gazebo6/libgazebo6/Dockerfile*)](https://github.com/osrf/docker_images/blob/113c7241bac8ca94c238b1a5bf5ce71ee2a7f219/gazebo/gazebo6/libgazebo6/Dockerfile)
--	[`gzserver7` (*gazebo/gazebo7/gzserver7/Dockerfile*)](https://github.com/osrf/docker_images/blob/113c7241bac8ca94c238b1a5bf5ce71ee2a7f219/gazebo/gazebo7/gzserver7/Dockerfile)
--	[`libgazebo7` (*gazebo/gazebo7/libgazebo7/Dockerfile*)](https://github.com/osrf/docker_images/blob/113c7241bac8ca94c238b1a5bf5ce71ee2a7f219/gazebo/gazebo7/libgazebo7/Dockerfile)
--	[`gzserver8` (*gazebo/gazebo8/gzserver8/Dockerfile*)](https://github.com/osrf/docker_images/blob/113c7241bac8ca94c238b1a5bf5ce71ee2a7f219/gazebo/gazebo8/gzserver8/Dockerfile)
--	[`libgazebo8`, `latest` (*gazebo/gazebo8/libgazebo8/Dockerfile*)](https://github.com/osrf/docker_images/blob/113c7241bac8ca94c238b1a5bf5ce71ee2a7f219/gazebo/gazebo8/libgazebo8/Dockerfile)
+-	[`gzserver7`, `gzserver7-xenial` (*gazebo/7/ubuntu/xenial/gzserver7/Dockerfile*)](https://github.com/osrf/docker_images/blob/ed75e08b51ca57c98fad49705091ceb89a96814c/gazebo/7/ubuntu/xenial/gzserver7/Dockerfile)
+-	[`libgazebo7`, `libgazebo7-xenial` (*gazebo/7/ubuntu/xenial/libgazebo7/Dockerfile*)](https://github.com/osrf/docker_images/blob/ed75e08b51ca57c98fad49705091ceb89a96814c/gazebo/7/ubuntu/xenial/libgazebo7/Dockerfile)
+-	[`gzserver8`, `gzserver8-xenial` (*gazebo/8/ubuntu/xenial/gzserver8/Dockerfile*)](https://github.com/osrf/docker_images/blob/ed75e08b51ca57c98fad49705091ceb89a96814c/gazebo/8/ubuntu/xenial/gzserver8/Dockerfile)
+-	[`libgazebo8`, `libgazebo8-xenial` (*gazebo/8/ubuntu/xenial/libgazebo8/Dockerfile*)](https://github.com/osrf/docker_images/blob/ed75e08b51ca57c98fad49705091ceb89a96814c/gazebo/8/ubuntu/xenial/libgazebo8/Dockerfile)
+-	[`gzserver9-xenial` (*gazebo/9/ubuntu/xenial/gzserver9/Dockerfile*)](https://github.com/osrf/docker_images/blob/cd5b4f73717df2559f021947d8bf195ee86dc3c9/gazebo/9/ubuntu/xenial/gzserver9/Dockerfile)
+-	[`libgazebo9-xenial` (*gazebo/9/ubuntu/xenial/libgazebo9/Dockerfile*)](https://github.com/osrf/docker_images/blob/cd5b4f73717df2559f021947d8bf195ee86dc3c9/gazebo/9/ubuntu/xenial/libgazebo9/Dockerfile)
+-	[`gzserver9`, `gzserver9-bionic` (*gazebo/9/ubuntu/bionic/gzserver9/Dockerfile*)](https://github.com/osrf/docker_images/blob/86b1aa7c454f66639dbeead651b416a57c71e72b/gazebo/9/ubuntu/bionic/gzserver9/Dockerfile)
+-	[`libgazebo9`, `libgazebo9-bionic`, `latest` (*gazebo/9/ubuntu/bionic/libgazebo9/Dockerfile*)](https://github.com/osrf/docker_images/blob/86b1aa7c454f66639dbeead651b416a57c71e72b/gazebo/9/ubuntu/bionic/libgazebo9/Dockerfile)
+-	[`gzserver9-stretch` (*gazebo/9/debian/stretch/gzserver9/Dockerfile*)](https://github.com/osrf/docker_images/blob/dbc80c8d10ef0e8259df1b9b23a5bfff26bdd5cc/gazebo/9/debian/stretch/gzserver9/Dockerfile)
+-	[`libgazebo9-stretch` (*gazebo/9/debian/stretch/libgazebo9/Dockerfile*)](https://github.com/osrf/docker_images/blob/dbc80c8d10ef0e8259df1b9b23a5bfff26bdd5cc/gazebo/9/debian/stretch/libgazebo9/Dockerfile)
 
 # Quick reference
 
@@ -37,6 +37,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[the Open Source Robotics Foundation](https://github.com/osrf/docker_images)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/gazebo/), [`arm32v7`](https://hub.docker.com/r/arm32v7/gazebo/), [`arm64v8`](https://hub.docker.com/r/arm64v8/gazebo/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/gazebo/` directory](https://github.com/docker-library/repo-info/blob/master/repos/gazebo) ([history](https://github.com/docker-library/repo-info/commits/master/repos/gazebo))  
@@ -50,7 +53,7 @@ WARNING:
 	[docs repo's `gazebo/` directory](https://github.com/docker-library/docs/tree/master/gazebo) ([history](https://github.com/docker-library/docs/commits/master/gazebo))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is [Gazebo](http://www.gazebosim.org/)?
 
@@ -79,7 +82,7 @@ $ docker run -it -v="/tmp/.gazebo/:/root/.gazebo/" --name my-running-app my-gaze
 
 ## Deployment use cases
 
-This dockerized image of Gazebo is intended to provide a simplified and consistent platform to build and deploy cloud based robotic simulations. Built from the [official Ubuntu image](https://registry.hub.docker.com/_/ubuntu/) and Gazebo's official Debian packages, it includes recent supported releases for quick access and download. This provides roboticists in research and industry with an easy way to develop continuous integration and testing on training for autonomous actions and task planning, control dynamics and regions of stability, kinematic modeling and prototype characterization, localization and mapping algorithms, swarm behavior and networking, as well as general system integration and validation.
+This dockerized image of Gazebo is intended to provide a simplified and consistent platform to build and deploy cloud based robotic simulations. Built from the [official Ubuntu image](https://hub.docker.com/_/ubuntu/) and Gazebo's official Debian packages, it includes recent supported releases for quick access and download. This provides roboticists in research and industry with an easy way to develop continuous integration and testing on training for autonomous actions and task planning, control dynamics and regions of stability, kinematic modeling and prototype characterization, localization and mapping algorithms, swarm behavior and networking, as well as general system integration and validation.
 
 Conducting such complex simulations with high validity remains computationally demanding, and oftentimes outside the capacity of a modest local workstation. With the added complexity of the algorithms being benchmarked, we can soon exceed the capacity of even the most formidable servers. This is why a more distributed approach remains attractive for those who begin to encounter limitations of a centralized computing host. However, the added complication of building and maintaining a distributed testbed over a set of clusters has for a while required more time and effort than many smaller labs and businesses would have deemed appropriate to implement.
 
@@ -103,7 +106,7 @@ One thing to be careful about is that gzserver logs to files named `/root/.gazeb
 
 ### Devices
 
-As of Gazebo version 5.0, physics simulation under a headless instances of gzserver works fine. However some application may require image rendering camera views and ray traces for other sensor modalities. For Gazebo, this requires a running X server for rendering and capturing scenes. In addition, graphical hardware acceleration is also needed for reasonable realtime framerates. To this extent, mounting additional graphic devices into the container and linking to a running X server is required. In the interest of maintaining a general purpose and minimalistic image which is not tightly coupled to host system software and hardware, we do not include tags here with these additional requirements and instructions. You can however use this repo to build and customize your own images to fit your software/hardware configuration. The OSRF's Docker Hub organization profile contains a Gazebo repo at [osrf/gazebo](https://registry.hub.docker.com/u/osrf/gazebo/) which is based on this repo but includes additional tags for these advanced use cases.
+As of Gazebo version 5.0, physics simulation under a headless instances of gzserver works fine. However some application may require image rendering camera views and ray traces for other sensor modalities. For Gazebo, this requires a running X server for rendering and capturing scenes. In addition, graphical hardware acceleration is also needed for reasonable realtime framerates. To this extent, mounting additional graphic devices into the container and linking to a running X server is required. In the interest of maintaining a general purpose and minimalistic image which is not tightly coupled to host system software and hardware, we do not include tags here with these additional requirements and instructions. You can however use this repo to build and customize your own images to fit your software/hardware configuration. The OSRF's Docker Hub organization profile contains a Gazebo repo at [osrf/gazebo](https://hub.docker.com/u/osrf/gazebo/) which is based on this repo but includes additional tags for these advanced use cases.
 
 ### Development
 
@@ -197,3 +200,9 @@ $ gazebo --verbose --play state.log
 # License
 
 Gazebo is open-source licensed under [Apache 2.0](http://opensource.org/licenses/Apache-2.0).
+
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
+
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `gazebo/` directory](https://github.com/docker-library/repo-info/tree/master/repos/gazebo).
+
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

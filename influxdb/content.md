@@ -15,7 +15,7 @@ The InfluxDB image exposes a shared volume under `/var/lib/influxdb`, so you can
 ```console
 $ docker run -p 8086:8086 \
       -v $PWD:/var/lib/influxdb \
-      influxdb
+      %%IMAGE%%
 ```
 
 Modify `$PWD` to the directory where you want to store data associated with the InfluxDB container.
@@ -25,7 +25,7 @@ You can also have Docker control the volume mountpoint by using a named volume.
 ```console
 $ docker run -p 8086:8086 \
       -v influxdb:/var/lib/influxdb \
-      influxdb
+      %%IMAGE%%
 ```
 
 ### Exposed Ports
@@ -51,7 +51,7 @@ InfluxDB can be either configured from a config file or using environment variab
 Generate the default configuration file:
 
 ```console
-$ docker run --rm influxdb influxd config > influxdb.conf
+$ docker run --rm %%IMAGE%% influxd config > influxdb.conf
 ```
 
 Modify the default configuration, which will now be available under `$PWD`. Then start the InfluxDB container.
@@ -59,7 +59,7 @@ Modify the default configuration, which will now be available under `$PWD`. Then
 ```console
 $ docker run -p 8086:8086 \
       -v $PWD/influxdb.conf:/etc/influxdb/influxdb.conf:ro \
-      influxdb -config /etc/influxdb/influxdb.conf
+      %%IMAGE%% -config /etc/influxdb/influxdb.conf
 ```
 
 Modify `$PWD` to the directory where you want to store the configuration file.
@@ -74,7 +74,7 @@ INFLUXDB_META_DIR=/path/to/metadir
 INFLUXDB_DATA_QUERY_LOG_ENABLED=false
 ```
 
-Find more about configuring InfluxDB [here](https://docs.influxdata.com/influxdb/latest/introduction/installation/)
+Find more about configuring InfluxDB [here](https://docs.influxdata.com/influxdb/latest/introduction/installation/).
 
 ### Graphite
 
@@ -83,7 +83,7 @@ InfluxDB supports the Graphite line protocol, but the service and ports are not 
 ```console
 docker run -p 8086:8086 -p 2003:2003 \
     -e INFLUXDB_GRAPHITE_ENABLED=true \
-    influxdb
+    %%IMAGE%%
 ```
 
 See the [README on GitHub](https://github.com/influxdata/influxdb/blob/master/services/graphite/README.md) for more detailed documentation to set up the Graphite service. In order to take advantage of graphite templates, you should use a configuration file by outputting a default configuration file using the steps above and modifying the `[[graphite]]` section.
@@ -95,7 +95,7 @@ The administrator interface is deprecated as of 1.1.0 and will be removed in 1.3
 ```console
 docker run -p 8086:8086 -p 8083:8083 \
     -e INFLUXDB_ADMIN_ENABLED=true \
-    influxdb
+    %%IMAGE%%
 ```
 
 To use the administrator interface, both the HTTP API and the administrator interface API's must be forwarded to the same port.
@@ -121,7 +121,7 @@ Read more about this in the [official documentation](https://docs.influxdata.com
 Start the container:
 
 ```console
-$ docker run --name=influxdb -d -p 8086:8086 influxdb
+$ docker run --name=influxdb -d -p 8086:8086 %%IMAGE%%
 ```
 
 Run the influx client in this container:
@@ -129,9 +129,78 @@ Run the influx client in this container:
 ```console
 $ docker exec -it influxdb influx
 ```
-
-(With a Docker version < 17.06.0 you have to use a workaround which runs the influx client in another container. See  [docker/docker#8755](https://github.com/docker/docker/issues/8755) for details:)
+Or run the influx client in a separate container:
 
 ```console
-$ docker run --rm --link=influxdb -it influxdb influx -host influxdb
+$ docker run --rm --link=influxdb -it %%IMAGE%% influx -host influxdb
 ```
+
+### Database Initialization
+
+The InfluxDB image contains some extra functionality for initializing a database. These options are not suggested for production, but are quite useful when running standalone instances for testing.
+
+The database initialization script will only be called when running `influxd`. It will not be executed when running any other program.
+
+#### Environment Variables
+
+The InfluxDB image uses several environment variables to automatically configure certain parts of the server. They may significantly aid you in using this image.
+
+##### INFLUXDB_DB
+
+Automatically initializes a database with the name of this environment variable.
+
+##### INFLUXDB_HTTP_AUTH_ENABLED
+
+Enables authentication. Either this must be set or `auth-enabled = true` must be set within the configuration file for any authentication related options below to work.
+
+##### INFLUXDB_ADMIN_USER
+
+The name of the admin user to be created. If this is unset, no admin user is created.
+
+##### INFLUXDB_ADMIN_PASSWORD
+
+The password for the admin user configured with `INFLUXDB_ADMIN_USER`. If this is unset, a random password is generated and printed to standard out.
+
+##### INFLUXDB_USER
+
+The name of a user to be created with no privileges. If `INFLUXDB_DB` is set, this user will be granted read and write permissions for that database.
+
+##### INFLUXDB_USER_PASSWORD
+
+The password for the user configured with `INFLUXDB_USER`. If this is unset, a random password is generated and printed to standard out.
+
+##### INFLUXDB_READ_USER
+
+The name of a user to be created with read privileges on `INFLUXDB_DB`. If `INFLUXDB_DB` is not set, this user will have no granted permissions.
+
+##### INFLUXDB_READ_USER_PASSWORD
+
+The password for the user configured with `INFLUXDB_READ_USER`. If this is unset, a random password is generated and printed to standard out.
+
+##### INFLUXDB_WRITE_USER
+
+The name of a user to be created with write privileges on `INFLUXDB_DB`. If `INFLUXDB_DB` is not set, this user will have no granted permissions.
+
+##### INFLUXDB_WRITE_USER_PASSWORD
+
+The password for the user configured with `INFLUXDB_WRITE_USER`. If this is unset, a random password is generated and printed to standard out.
+
+#### Initialization Files
+
+If the Docker image finds any files with the extensions `.sh` or `.iql` inside of the `/docker-entrypoint-initdb.d` folder, it will execute them. The order they are executed in is determined by the shell. This is usually alphabetical order.
+
+#### Manually Initializing the Database
+
+To manually initialize the database and exit, the `/init-influxdb.sh` script can be used directly. It takes the same parameters as the `influxd run` command. As an example:
+
+```console
+$ docker run --rm \
+      -e INFLUXDB_DB=db0 -e INFLUXDB_ADMIN_ENABLED=true \
+      -e INFLUXDB_ADMIN_USER=admin -e INFLUXDB_ADMIN_PASSWORD=supersecretpassword \
+      -e INFLUXDB_USER=telegraf -e INFLUXDB_USER_PASSWORD=secretpassword \
+      -v $PWD:/var/lib/influxdb \
+      influxdb /init-influxdb.sh
+```
+
+The above would create the database `db0`, create an admin user with the password `supersecretpassword`, then create the `telegraf` user with your telegraf's secret password. It would then exit and leave behind any files it created in the volume that you mounted.
+>>>>>>> 0ae2dfcd0df23423f769d7bd9a27675df0ed190d
