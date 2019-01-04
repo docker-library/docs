@@ -3,7 +3,7 @@
 This image is a vanity variant of [the `hello-world` image](https://hub.docker.com/_/hello-world/) created specifically for [DockerCon EU 2015](http://europe-2015.dockercon.com/). Its use is discouraged.
 
 ```console
-$ docker run hola-mundo
+$ docker run %%IMAGE%%
 
 ¡Hola de DockerCon EU 2015 (Barcelona)!
 This message shows that your installation appears to be working correctly.

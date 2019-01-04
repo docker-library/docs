@@ -1,1 +1,1 @@
-Swift is a general-purpose programming language using a modern approach to safety and performance.
+Swift is a high-performance system programming language, to learn more about Swift visit swift.org.

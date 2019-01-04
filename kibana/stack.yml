@@ -2,11 +2,11 @@ version: '3.1'
 
 services:
 
-    kibana:
-        image: kibana
-        ports:
-            - 5601:5601
+  kibana:
+    image: kibana
+    ports:
+      - 5601:5601
 
-    elasticsearch:
-        image: elasticsearch
+  elasticsearch:
+    image: elasticsearch
 

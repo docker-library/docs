@@ -16,14 +16,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.4.2`, `3.4`, `3`, `latest` (*3.4/Dockerfile*)](https://github.com/docker-library/redmine/blob/bcaee7ff541b6ff01b7593e44444b3d561f67472/3.4/Dockerfile)
--	[`3.4.2-passenger`, `3.4-passenger`, `3-passenger`, `passenger` (*3.4/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/ded105e314a3b60130573e300931b149daf8fd8c/3.4/passenger/Dockerfile)
--	[`3.3.4`, `3.3` (*3.3/Dockerfile*)](https://github.com/docker-library/redmine/blob/bcaee7ff541b6ff01b7593e44444b3d561f67472/3.3/Dockerfile)
--	[`3.3.4-passenger`, `3.3-passenger` (*3.3/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/ded105e314a3b60130573e300931b149daf8fd8c/3.3/passenger/Dockerfile)
--	[`3.2.7`, `3.2` (*3.2/Dockerfile*)](https://github.com/docker-library/redmine/blob/bcaee7ff541b6ff01b7593e44444b3d561f67472/3.2/Dockerfile)
--	[`3.2.7-passenger`, `3.2-passenger` (*3.2/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/ded105e314a3b60130573e300931b149daf8fd8c/3.2/passenger/Dockerfile)
--	[`3.1.7`, `3.1` (*3.1/Dockerfile*)](https://github.com/docker-library/redmine/blob/bcaee7ff541b6ff01b7593e44444b3d561f67472/3.1/Dockerfile)
--	[`3.1.7-passenger`, `3.1-passenger` (*3.1/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/ded105e314a3b60130573e300931b149daf8fd8c/3.1/passenger/Dockerfile)
+-	[`4.0.0`, `4.0`, `4`, `latest` (*4.0/Dockerfile*)](https://github.com/docker-library/redmine/blob/5875d577cada0d1fb3cb8093f6b15b586b20f65e/4.0/Dockerfile)
+-	[`4.0.0-passenger`, `4.0-passenger`, `4-passenger`, `passenger` (*4.0/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/5875d577cada0d1fb3cb8093f6b15b586b20f65e/4.0/passenger/Dockerfile)
+-	[`3.4.7`, `3.4`, `3` (*3.4/Dockerfile*)](https://github.com/docker-library/redmine/blob/8e9f5fc59b6fa899e07a0c2dfca0d46425e6c088/3.4/Dockerfile)
+-	[`3.4.7-passenger`, `3.4-passenger`, `3-passenger` (*3.4/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/d823080d113fd574adedaa94855e5e102e1b6390/3.4/passenger/Dockerfile)
+-	[`3.3.9`, `3.3` (*3.3/Dockerfile*)](https://github.com/docker-library/redmine/blob/8e9f5fc59b6fa899e07a0c2dfca0d46425e6c088/3.3/Dockerfile)
+-	[`3.3.9-passenger`, `3.3-passenger` (*3.3/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/d823080d113fd574adedaa94855e5e102e1b6390/3.3/passenger/Dockerfile)
 
 # Quick reference
 
@@ -35,6 +33,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[the Docker Community](https://github.com/docker-library/redmine)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/redmine/), [`arm32v5`](https://hub.docker.com/r/arm32v5/redmine/), [`arm32v7`](https://hub.docker.com/r/arm32v7/redmine/), [`arm64v8`](https://hub.docker.com/r/arm64v8/redmine/), [`i386`](https://hub.docker.com/r/i386/redmine/), [`ppc64le`](https://hub.docker.com/r/ppc64le/redmine/), [`s390x`](https://hub.docker.com/r/s390x/redmine/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/redmine/` directory](https://github.com/docker-library/repo-info/blob/master/repos/redmine) ([history](https://github.com/docker-library/repo-info/commits/master/repos/redmine))  
@@ -48,7 +49,7 @@ WARNING:
 	[docs repo's `redmine/` directory](https://github.com/docker-library/docs/tree/master/redmine) ([history](https://github.com/docker-library/docs/commits/master/redmine))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Redmine?
 
@@ -105,6 +106,7 @@ services:
 
   redmine:
     image: redmine
+    restart: always
     ports:
       - 8080:3000
     environment:
@@ -113,12 +115,13 @@ services:
 
   db:
     image: mysql:5.7
+    restart: always
     environment:
       MYSQL_ROOT_PASSWORD: example
       MYSQL_DATABASE: redmine
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/9cb58e0970fb4cad06a7787418ceb3e39ca1b853/redmine/stack.yml)
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/e24f39cddf21560cf0a24f149059ff23640b0f16/redmine/stack.yml)
 
 Run `docker stack deploy -c stack.yml redmine` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
 
@@ -147,12 +150,6 @@ The Docker documentation is a good starting point for understanding the differen
 	```
 
 The `-v /my/own/datadir:/usr/src/redmine/files` part of the command mounts the `/my/own/datadir` directory from the underlying host system as `/usr/src/redmine/files` inside the container, where Redmine will store uploaded files.
-
-Note that users on host systems with SELinux enabled may see issues with this. The current workaround is to assign the relevant SELinux policy type to the new data directory so that the container will be allowed to access it:
-
-```console
-$ chcon -Rt svirt_sandbox_file_t /my/own/datadir
-```
 
 ## Port Mapping
 
@@ -215,3 +212,9 @@ Currently, this is only supported for `REDMINE_DB_MYSQL`, `REDMINE_DB_POSTGRES`,
 # License
 
 [Redmine](https://www.redmine.org/projects/redmine/wiki) is open source and released under the terms of the [GNU General Public License v2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html) (GPL).
+
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
+
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `redmine/` directory](https://github.com/docker-library/repo-info/tree/master/repos/redmine).
+
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

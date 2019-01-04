@@ -19,7 +19,7 @@ R is a GNU project. The source code for the R software environment is written pr
 Launch R directly for interactive work:
 
 ```console
-$ docker run -ti --rm r-base
+$ docker run -ti --rm %%IMAGE%%
 ```
 
 ## Batch mode
@@ -27,13 +27,13 @@ $ docker run -ti --rm r-base
 Link the working directory to run R batch commands. We recommend specifying a non-root user when linking a volume to the container to avoid permission changes, as illustrated here:
 
 ```console
-$ docker run -ti --rm -v "$PWD":/home/docker -w /home/docker -u docker r-base R CMD check .
+$ docker run -ti --rm -v "$PWD":/home/docker -w /home/docker -u docker %%IMAGE%% R CMD check .
 ```
 
 Alternatively, just run a bash session on the container first. This allows a user to run batch commands and also edit and run scripts:
 
 ```console
-$ docker run -ti --rm r-base /usr/bin/bash
+$ docker run -ti --rm %%IMAGE%% /usr/bin/bash
 $ vim.tiny myscript.R
 ```
 
@@ -48,7 +48,7 @@ $ Rscript myscript.R
 Use `r-base` as a base for your own Dockerfiles. For instance, something along the lines of the following will compile and run your project:
 
 ```dockerfile
-FROM r-base
+FROM %%IMAGE%%
 COPY . /usr/local/src/myscripts
 WORKDIR /usr/local/src/myscripts
 CMD ["Rscript", "myscript.R"]

@@ -16,7 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`0.40.0`, `0.40`, `latest` (*Dockerfile*)](https://github.com/mongo-express/mongo-express-docker/blob/bbe8d015485c29b3bea01b7eb88ac56349fc17ae/Dockerfile)
+-	[`0.49.0`, `0.49`, `latest` (*Dockerfile*)](https://github.com/mongo-express/mongo-express-docker/blob/b089fe7708d9dd619d648a6ec226fe0175b27740/Dockerfile)
 
 # Quick reference
 
@@ -28,6 +28,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[mongo-express](https://github.com/mongo-express/mongo-express-docker)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/mongo-express/), [`arm64v8`](https://hub.docker.com/r/arm64v8/mongo-express/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/mongo-express/` directory](https://github.com/docker-library/repo-info/blob/master/repos/mongo-express) ([history](https://github.com/docker-library/repo-info/commits/master/repos/mongo-express))  
@@ -41,7 +44,7 @@ WARNING:
 	[docs repo's `mongo-express/` directory](https://github.com/docker-library/docs/tree/master/mongo-express) ([history](https://github.com/docker-library/docs/commits/master/mongo-express))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is mongo-express?
 
@@ -109,3 +112,13 @@ $ docker run -it --rm \
 ```
 
 This example links to a container name typical of `docker-compose`, changes the editor's color theme, and enables basic authentication.
+
+# License
+
+View [license information](https://github.com/mongo-express/mongo-express#license) for the software contained in this image.
+
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
+
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `mongo-express/` directory](https://github.com/docker-library/repo-info/tree/master/repos/mongo-express).
+
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

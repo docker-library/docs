@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.27.1-uclibc`, `1.27-uclibc`, `1-uclibc`, `uclibc` (*uclibc/Dockerfile*)](https://github.com/docker-library/busybox/blob/6f879028dcaa53ccebaecc1af26432c217f1d95f/uclibc/Dockerfile)
--	[`1.27.1-glibc`, `1.27-glibc`, `1-glibc`, `glibc` (*glibc/Dockerfile*)](https://github.com/docker-library/busybox/blob/6f879028dcaa53ccebaecc1af26432c217f1d95f/glibc/Dockerfile)
--	[`1.27.1-musl`, `1.27-musl`, `1-musl`, `musl` (*musl/Dockerfile*)](https://github.com/docker-library/busybox/blob/6f879028dcaa53ccebaecc1af26432c217f1d95f/musl/Dockerfile)
--	[`1.27.1`, `1.27`, `1`, `latest` (*uclibc/Dockerfile*)](https://github.com/docker-library/busybox/blob/6f879028dcaa53ccebaecc1af26432c217f1d95f/uclibc/Dockerfile)
+-	[`1.30.0-uclibc`, `1.30-uclibc`, `1-uclibc`, `uclibc` (*uclibc/Dockerfile*)](https://github.com/docker-library/busybox/blob/b1495be7b9777efe53b3ead0325fa7d7984723f8/uclibc/Dockerfile)
+-	[`1.30.0-glibc`, `1.30-glibc`, `1-glibc`, `glibc` (*glibc/Dockerfile*)](https://github.com/docker-library/busybox/blob/b1495be7b9777efe53b3ead0325fa7d7984723f8/glibc/Dockerfile)
+-	[`1.30.0-musl`, `1.30-musl`, `1-musl`, `musl` (*musl/Dockerfile*)](https://github.com/docker-library/busybox/blob/b1495be7b9777efe53b3ead0325fa7d7984723f8/musl/Dockerfile)
+-	[`1.30.0`, `1.30`, `1`, `latest` (*uclibc/Dockerfile*)](https://github.com/docker-library/busybox/blob/b1495be7b9777efe53b3ead0325fa7d7984723f8/uclibc/Dockerfile)
 
 # Quick reference
 
@@ -31,6 +31,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[the Docker Community](https://github.com/docker-library/busybox)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/busybox/), [`arm32v5`](https://hub.docker.com/r/arm32v5/busybox/), [`arm32v6`](https://hub.docker.com/r/arm32v6/busybox/), [`arm32v7`](https://hub.docker.com/r/arm32v7/busybox/), [`arm64v8`](https://hub.docker.com/r/arm64v8/busybox/), [`i386`](https://hub.docker.com/r/i386/busybox/), [`ppc64le`](https://hub.docker.com/r/ppc64le/busybox/), [`s390x`](https://hub.docker.com/r/s390x/busybox/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/busybox/` directory](https://github.com/docker-library/repo-info/blob/master/repos/busybox) ([history](https://github.com/docker-library/repo-info/commits/master/repos/busybox))  
@@ -44,7 +47,7 @@ WARNING:
 	[docs repo's `busybox/` directory](https://github.com/docker-library/docs/tree/master/busybox) ([history](https://github.com/docker-library/docs/commits/master/busybox))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is BusyBox? The Swiss Army Knife of Embedded Linux
 
@@ -97,3 +100,9 @@ For more information about the specific particulars of the build process for eac
 # License
 
 View [license information](http://www.busybox.net/license.html) for the software contained in this image.
+
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
+
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `busybox/` directory](https://github.com/docker-library/repo-info/tree/master/repos/busybox).
+
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

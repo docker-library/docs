@@ -19,7 +19,7 @@ The project is part of the Open Source Geospatial Foundation ( [OSGeo](http://ww
 This command will start a debian-based container, running a Tomcat web server, with a geonetwork war deployed on the server:
 
 ```console
-$ docker run --name some-%%REPO%% -d %%REPO%%
+$ docker run --name some-%%REPO%% -d %%IMAGE%%
 ```
 
 ## Publish port
@@ -27,7 +27,7 @@ $ docker run --name some-%%REPO%% -d %%REPO%%
 Geonetwork listens on port `8080`. If you want to access the container at the host, **you must publish this port**. For instance, this, will redirect all the container traffic on port 8080, to the same port on the host:
 
 ```console
-$ docker run --name some-%%REPO%% -d -p 8080:8080 %%REPO%%
+$ docker run --name some-%%REPO%% -d -p 8080:8080 %%IMAGE%%
 ```
 
 Then, if you are running docker on Linux, you may access geonetwork at http://localhost:8080/geonetwork. Otherwise, replace `localhost` by the address of your docker machine.
@@ -41,7 +41,7 @@ By default, geonetwork sets the data directory on `/usr/local/tomcat/webapps/geo
 For instance, to set the data directory to `/var/lib/geonetwork_data`:
 
 ```console
-$ docker run --name some-%%REPO%% -d -p 8080:8080 -e DATA_DIR=/var/lib/geonetwork_data %%REPO%%
+$ docker run --name some-%%REPO%% -d -p 8080:8080 -e DATA_DIR=/var/lib/geonetwork_data %%IMAGE%%
 ```
 
 ## Persist data
@@ -49,7 +49,7 @@ $ docker run --name some-%%REPO%% -d -p 8080:8080 -e DATA_DIR=/var/lib/geonetwor
 If you want the data directory to live beyond restarts, or even destruction of the container, you can mount a directory from the docker engine's host into the container. - `-v <host path>:<data directory>`. For instance this, will mount the host directory `/host/geonetwork-docker` into `/var/lib/geonetwork_data` on the container:
 
 ```console
-$ docker run --name some-%%REPO%% -d -p 8080:8080 -e DATA_DIR=/var/lib/geonetwork_data -v /host/geonetwork-docker:/var/lib/geonetwork_data %%REPO%%
+$ docker run --name some-%%REPO%% -d -p 8080:8080 -e DATA_DIR=/var/lib/geonetwork_data -v /host/geonetwork-docker:/var/lib/geonetwork_data %%IMAGE%%
 ```
 
 ## %%STACK%%

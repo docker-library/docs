@@ -11,7 +11,7 @@ Spiped (pronounced "ess-pipe-dee") is a utility for creating symmetrically encry
 This image automatically takes the key from the `/spiped/key` file (`-k`) and runs spiped in foreground (`-F`). Other than that it takes the same options *spiped* itself does. You can list the available flags by running the image without arguments:
 
 ```console
-$ docker run -it --rm spiped
+$ docker run -it --rm %%IMAGE%%
 usage: spiped {-e | -d} -s <source socket> -t <target socket> -k <key file>
     [-DFj] [-f | -g] [-n <max # connections>] [-o <connection timeout>]
     [-p <pidfile>] [-r <rtime> | -R]
@@ -20,19 +20,19 @@ usage: spiped {-e | -d} -s <source socket> -t <target socket> -k <key file>
 For example running spiped to take encrypted connections on port 8025 and forward them to port 25 on localhost would look like this:
 
 ```console
-$ docker run -d -v /path/to/keyfile:/spiped/key:ro -p 8025:8025 --init spiped -d -s '[0.0.0.0]:8025' -t '[127.0.0.1]:25'
+$ docker run -d -v /path/to/keyfile:/spiped/key:ro -p 8025:8025 --init %%IMAGE%% -d -s '[0.0.0.0]:8025' -t '[127.0.0.1]:25'
 ```
 
 Usually you would combine this image with another linked container. The following example would take encrypted connections on port 9200 and forward them to port 9200 in the container with the name `elasticsearch`:
 
 ```console
-$ docker run -d -v /path/to/keyfile:/spiped/key:ro -p 9200:9200 --link elasticsearch:elasticsearch --init spiped -d -s '[0.0.0.0]:9200' -t 'elasticsearch:9200'
+$ docker run -d -v /path/to/keyfile:/spiped/key:ro -p 9200:9200 --link elasticsearch:elasticsearch --init %%IMAGE%% -d -s '[0.0.0.0]:9200' -t 'elasticsearch:9200'
 ```
 
 If you don’t need any to bind to a privileged port you can pass `--user spiped` to make *spiped* run as an unprivileged user:
 
 ```console
-$ docker run -d -v /path/to/keyfile:/spiped/key:ro --user spiped -p 9200:9200 --link elasticsearch:elasticsearch --init spiped -d -s '[0.0.0.0]:9200' -t 'elasticsearch:9200'
+$ docker run -d -v /path/to/keyfile:/spiped/key:ro --user spiped -p 9200:9200 --link elasticsearch:elasticsearch --init %%IMAGE%% -d -s '[0.0.0.0]:9200' -t 'elasticsearch:9200'
 ```
 
 ### Generating a key
@@ -40,7 +40,7 @@ $ docker run -d -v /path/to/keyfile:/spiped/key:ro --user spiped -p 9200:9200 --
 You can save a new keyfile named `spiped-keyfile` to the folder `/path/to/keyfile/` by running:
 
 ```console
-$ docker run -it --rm -v /path/to/keyfile:/spiped/key spiped spiped-generate-key.sh
+$ docker run -it --rm -v /path/to/keyfile:/spiped/key %%IMAGE%% spiped-generate-key.sh
 ```
 
 Afterwards transmit `spiped-keyfile` securely to another host (e.g. by using scp).

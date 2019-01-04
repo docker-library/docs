@@ -16,11 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `4`, `4.1`, `4.1.25` (*4.1.25/mono/Dockerfile*)](https://github.com/fsprojects/docker-fsharp/blob/96cd7752113e7b4e32fbd6437600816f4b361994/4.1.25/mono/Dockerfile)
--	[`4.1.18` (*4.1.18/mono/Dockerfile*)](https://github.com/fsprojects/docker-fsharp/blob/ad4c4d67a1975b2b0ff0acc49dc46b3271836831/4.1.18/mono/Dockerfile)
--	[`4.1.0.1` (*4.1.0.1/mono/Dockerfile*)](https://github.com/fsprojects/docker-fsharp/blob/a28196740e38035beea04c41d5862136413281e3/4.1.0.1/mono/Dockerfile)
--	[`4.0`, `4.0.1`, `4.0.1.1` (*4.0.1.1/Dockerfile*)](https://github.com/fsprojects/docker-fsharp/blob/a28196740e38035beea04c41d5862136413281e3/4.0.1.1/Dockerfile)
--	[`4.0.0.4` (*4.0.0.4/Dockerfile*)](https://github.com/fsprojects/docker-fsharp/blob/a28196740e38035beea04c41d5862136413281e3/4.0.0.4/Dockerfile)
+-	[`latest`, `10`, `10.2`, `10.2.1` (*10.2.1/mono/Dockerfile*)](https://github.com/fsprojects/docker-fsharp/blob/0bd603ff30ab83fb25eb777cfe0cc46e91cb3462/10.2.1/mono/Dockerfile)
+-	[`4`, `4.1`, `4.1.34` (*4.1.34/mono/Dockerfile*)](https://github.com/fsprojects/docker-fsharp/blob/0bd603ff30ab83fb25eb777cfe0cc46e91cb3462/4.1.34/mono/Dockerfile)
+-	[`4.0`, `4.0.1`, `4.0.1.1` (*4.0.1.1/Dockerfile*)](https://github.com/fsprojects/docker-fsharp/blob/0bd603ff30ab83fb25eb777cfe0cc46e91cb3462/4.0.1.1/Dockerfile)
+-	[`netcore`, `10-netcore`, `10.2-netcore`, `10.2.1-netcore` (*10.2.1/netcore/Dockerfile*)](https://github.com/fsprojects/docker-fsharp/blob/0bd603ff30ab83fb25eb777cfe0cc46e91cb3462/10.2.1/netcore/Dockerfile)
 
 # Quick reference
 
@@ -32,6 +31,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[the F# Community](https://github.com/fsprojects/docker-fsharp)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/fsharp/), [`arm64v8`](https://hub.docker.com/r/arm64v8/fsharp/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/fsharp/` directory](https://github.com/docker-library/repo-info/blob/master/repos/fsharp) ([history](https://github.com/docker-library/repo-info/commits/master/repos/fsharp))  
@@ -45,7 +47,7 @@ WARNING:
 	[docs repo's `fsharp/` directory](https://github.com/docker-library/docs/tree/master/fsharp) ([history](https://github.com/docker-library/docs/commits/master/fsharp))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is F#?
 
@@ -72,3 +74,9 @@ This will copy your application source code into the image and use `xbuild` to b
 # License
 
 View [the Apache 2.0 license](https://github.com/fsharp/fsharp/blob/d518f91418ef43a61875a5d932147b97fd0f47f3/LICENSE) for the software contained in this image.
+
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
+
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `fsharp/` directory](https://github.com/docker-library/repo-info/tree/master/repos/fsharp).
+
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

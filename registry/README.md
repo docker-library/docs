@@ -16,8 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2`, `2.6`, `2.6.2`, `latest` (*Dockerfile*)](https://github.com/docker/distribution-library-image/blob/bc5d4f15a7e8d12ed6e5174ac4edab4b6032d09f/Dockerfile)
--	[`2.5`, `2.5.2` (*Dockerfile*)](https://github.com/docker/distribution-library-image/blob/a878b04f22c48dd2fd49581bc74363ab8213b15b/Dockerfile)
+-	[`2.7.0`, `2.7`, `2`, `latest` (*amd64/Dockerfile*)](https://github.com/docker/distribution-library-image/blob/8f5dd752a05240b275d46e7fe527959d10004e93/amd64/Dockerfile)
+-	[`2.6.2`, `2.6` (*amd64/Dockerfile*)](https://github.com/docker/distribution-library-image/blob/fc40f1f1051bb4a42ee4661ccaa190c1bd6c6be9/amd64/Dockerfile)
+-	[`2.5.2`, `2.5` (*Dockerfile*)](https://github.com/docker/distribution-library-image/blob/f96d9029112d8da459312fb8249802bc4ec6ac21/Dockerfile)
 
 # Quick reference
 
@@ -29,6 +30,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[Docker, Inc.](https://github.com/docker/distribution-library-image)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/registry/), [`arm32v6`](https://hub.docker.com/r/arm32v6/registry/), [`arm64v8`](https://hub.docker.com/r/arm64v8/registry/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/registry/` directory](https://github.com/docker-library/repo-info/blob/master/repos/registry) ([history](https://github.com/docker-library/repo-info/commits/master/repos/registry))  
@@ -42,7 +46,7 @@ WARNING:
 	[docs repo's `registry/` directory](https://github.com/docker-library/docs/tree/master/registry) ([history](https://github.com/docker-library/docs/commits/master/registry))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # Docker Registry
 
@@ -71,3 +75,13 @@ Specifically, [the section regarding deployment](https://docs.docker.com/registr
 # Support
 
 If you are interested in commercial support, the [Docker Trusted Registry](https://www.docker.com/docker-trusted-registry) provides an image registry, LDAP/Active Directory integration, security certificates, and more in a solution that includes commercial support.
+
+# License
+
+View [license information](https://github.com/docker/distribution/blob/master/LICENSE) for the software contained in this image.
+
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
+
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `registry/` directory](https://github.com/docker-library/repo-info/tree/master/repos/registry).
+
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

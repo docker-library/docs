@@ -29,6 +29,9 @@ WARNING:
 -	**Maintained by**:  
 	[the Source Mage Community](https://github.com/vaygr/docker-sourcemage)
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/sourcemage/)
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/sourcemage/` directory](https://github.com/docker-library/repo-info/blob/master/repos/sourcemage) ([history](https://github.com/docker-library/repo-info/commits/master/repos/sourcemage))  
 	(image metadata, transfer size, etc)
@@ -41,7 +44,7 @@ WARNING:
 	[docs repo's `sourcemage/` directory](https://github.com/docker-library/docs/tree/master/sourcemage) ([history](https://github.com/docker-library/docs/commits/master/sourcemage))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # Docker images for Source Mage GNU/Linux
 
@@ -77,3 +80,9 @@ $ docker run -it sourcemage:0.62
 All contents released under the [GNU Free Documentation License](https://www.gnu.org/licenses/fdl.html).
 
 All Source Mage code released under the [GNU General Public License 2.0](https://www.gnu.org/licenses/gpl.html) or greater.
+
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
+
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `sourcemage/` directory](https://github.com/docker-library/repo-info/tree/master/repos/sourcemage).
+
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

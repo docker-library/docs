@@ -16,7 +16,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `0.9.2` (*0.X/Dockerfile*)](https://github.com/hashicorp/docker-consul/blob/b323ad31103564a502ed4c5d2ba0017c953e6239/0.X/Dockerfile)
+-	[`0.9.4` (*0.X/Dockerfile*)](https://github.com/hashicorp/docker-consul/blob/068a08f88d9e3b313022ac5790c7f884b5aae601/0.X/Dockerfile)
+-	[`1.0.8` (*0.X/Dockerfile*)](https://github.com/hashicorp/docker-consul/blob/3095259fe32be886341fb80d72a6d202a4a808e1/0.X/Dockerfile)
+-	[`1.1.1` (*0.X/Dockerfile*)](https://github.com/hashicorp/docker-consul/blob/82e4bf74b3d2fa57172f32fd06a981e97929d59c/0.X/Dockerfile)
+-	[`1.2.4` (*0.X/Dockerfile*)](https://github.com/hashicorp/docker-consul/blob/af95a2ec9c44fea90458ede561984b2366c57887/0.X/Dockerfile)
+-	[`1.4.0`, `latest` (*0.X/Dockerfile*)](https://github.com/hashicorp/docker-consul/blob/a9fc2295556404f409d16de58be611b77079a870/0.X/Dockerfile)
 
 # Quick reference
 
@@ -28,6 +32,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[HashiCorp](https://github.com/hashicorp/docker-consul)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/consul/), [`arm32v6`](https://hub.docker.com/r/arm32v6/consul/), [`arm64v8`](https://hub.docker.com/r/arm64v8/consul/), [`i386`](https://hub.docker.com/r/i386/consul/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/consul/` directory](https://github.com/docker-library/repo-info/blob/master/repos/consul) ([history](https://github.com/docker-library/repo-info/commits/master/repos/consul))  
@@ -41,7 +48,7 @@ WARNING:
 	[docs repo's `consul/` directory](https://github.com/docker-library/docs/tree/master/consul) ([history](https://github.com/docker-library/docs/commits/master/consul))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # Consul
 
@@ -50,7 +57,7 @@ Consul is a distributed, highly-available, and multi-datacenter aware tool for s
 -	[Consul documentation](https://www.consul.io/)
 -	[Consul on GitHub](https://github.com/hashicorp/consul)
 
-![logo](https://cdn.rawgit.com/docker-library/docs/8adb88e1e328c244711742f65319ed4064cff9a2/consul/logo.svg)
+![logo](https://raw.githubusercontent.com/docker-library/docs/8adb88e1e328c244711742f65319ed4064cff9a2/consul/logo.svg?sanitize=true)
 
 # Consul and Docker
 
@@ -83,15 +90,15 @@ The entry point also includes a small utility to look up a client or bind addres
 ## Running Consul for Development
 
 ```console
-$ docker run -d --name=dev-consul consul
+$ docker run -d --name=dev-consul -e CONSUL_BIND_INTERFACE=eth0 consul
 ```
 
 This runs a completely in-memory Consul server agent with default bridge networking and no services exposed on the host, which is useful for development but should not be used in production. For example, if that server is running at internal address 172.17.0.2, you can run a three node cluster for development by starting up two more instances and telling them to join the first node.
 
 ```console
-$ docker run -d consul agent -dev -join=172.17.0.2
+$ docker run -d -e CONSUL_BIND_INTERFACE=eth0 consul agent -dev -join=172.17.0.2
 ... server 2 starts
-$ docker run -d consul agent -dev -join=172.17.0.2
+$ docker run -d -e CONSUL_BIND_INTERFACE=eth0 consul agent -dev -join=172.17.0.2
 ... server 3 starts
 ```
 
@@ -244,3 +251,9 @@ Consul has the ability to execute health checks inside containers. If the Docker
 # License
 
 View [license information](https://raw.githubusercontent.com/hashicorp/consul/master/LICENSE) for the software contained in this image.
+
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
+
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `consul/` directory](https://github.com/docker-library/repo-info/tree/master/repos/consul).
+
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.3.1-standalone`, `4.3-standalone`, `4-standalone`, `standalone`, `4.3.1`, `4.3`, `4`, `latest` (*4.3/Dockerfile*)](https://github.com/TimWolla/docker-adminer/blob/73de6b9a7979ded5d2289fe015fffe81fa32e0a4/4.3/Dockerfile)
--	[`4.3.1-fastcgi`, `4.3-fastcgi`, `4-fastcgi`, `fastcgi` (*4.3/fastcgi/Dockerfile*)](https://github.com/TimWolla/docker-adminer/blob/e7677ec95176973e991b063d8782876207738ce1/4.3/fastcgi/Dockerfile)
+-	[`4.7.0-standalone`, `4.7-standalone`, `4-standalone`, `standalone`, `4.7.0`, `4.7`, `4`, `latest` (*4/Dockerfile*)](https://github.com/TimWolla/docker-adminer/blob/9995b788b8948892a1aed163ab78796d5acaa276/4/Dockerfile)
+-	[`4.7.0-fastcgi`, `4.7-fastcgi`, `4-fastcgi`, `fastcgi` (*4/fastcgi/Dockerfile*)](https://github.com/TimWolla/docker-adminer/blob/9995b788b8948892a1aed163ab78796d5acaa276/4/fastcgi/Dockerfile)
 
 # Quick reference
 
@@ -29,6 +29,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[Tim Düsterhus (of the Docker Community)](https://github.com/TimWolla/docker-adminer)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/adminer/), [`arm32v6`](https://hub.docker.com/r/arm32v6/adminer/), [`arm64v8`](https://hub.docker.com/r/arm64v8/adminer/), [`i386`](https://hub.docker.com/r/i386/adminer/), [`ppc64le`](https://hub.docker.com/r/ppc64le/adminer/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/adminer/` directory](https://github.com/docker-library/repo-info/blob/master/repos/adminer) ([history](https://github.com/docker-library/repo-info/commits/master/repos/adminer))  
@@ -42,7 +45,7 @@ WARNING:
 	[docs repo's `adminer/` directory](https://github.com/docker-library/docs/tree/master/adminer) ([history](https://github.com/docker-library/docs/commits/master/adminer))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # Adminer
 
@@ -66,7 +69,7 @@ Then you can hit `http://localhost:8080` or `http://host-ip:8080` in your browse
 
 ### FastCGI
 
-If you are already running a FastCGI capable web server you might prefer running adminer via FastCGI:
+If you are already running a FastCGI capable web server you might prefer running Adminer via FastCGI:
 
 ```console
 $ docker run --link some_database:db -p 9000:9000 adminer:fastcgi
@@ -87,24 +90,26 @@ version: '3.1'
 
 services:
 
-    adminer:
-        image: adminer
-        ports:
-            - 8080:8080
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
 
-    db:
-        image: mysql:5.6
-        environment:
-            MYSQL_ROOT_PASSWORD: example
+  db:
+    image: mysql:5.6
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: example
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/96c08fac215f64844b9db61038a571b86534a12b/adminer/stack.yml)
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/9efeec18b6b2ed232cf0fbd3914b6211e16e242c/adminer/stack.yml)
 
 Run `docker stack deploy -c stack.yml adminer` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
 
 ### Loading plugins
 
-This image bundles all official adminer plugins. You can find the list of plugins on GitHub: https://github.com/vrana/adminer/tree/master/plugins.
+This image bundles all official Adminer plugins. You can find the list of plugins on GitHub: https://github.com/vrana/adminer/tree/master/plugins.
 
 To load plugins you can pass a list of filenames in `ADMINER_PLUGINS`:
 
@@ -146,6 +151,14 @@ $ docker run --link some_database:db -p 8080:8080 -e ADMINER_DESIGN='nette' admi
 
 To use a custom design you can add a file called `/var/www/html/adminer.css`.
 
+### Usage with external server
+
+You can specify the default host with the `ADMINER_DEFAULT_SERVER` environment variable. This is useful if you are connecting to an external server or a docker container named something other than the default `db`.
+
+```console
+docker run -p 8080:8080 -e ADMINER_DEFAULT_SERVER=mysql adminer
+```
+
 ## Supported Drivers
 
 While Adminer supports a wide range of database drivers this image only supports the following out of the box:
@@ -158,11 +171,17 @@ While Adminer supports a wide range of database drivers this image only supports
 
 To add support for the other drivers you will need to install the following PHP extensions on top of this image:
 
--	sqlsrv (MS SQL)
--	oci8 (Oracle)
--	interbase (Firebird)
--	mongo (MongoDB)
+-	`pdo_dblib` (MS SQL)
+-	`oci8` (Oracle)
+-	`interbase` (Firebird)
+-	`mongodb` (MongoDB)
 
 # License
 
 View [license information](https://github.com/vrana/adminer/blob/master/readme.txt) for the software contained in this image.
+
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
+
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `adminer/` directory](https://github.com/docker-library/repo-info/tree/master/repos/adminer).
+
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

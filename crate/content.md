@@ -19,7 +19,9 @@ The smallest CrateDB clusters can easily ingest tens of thousands of records per
 
 Spin up this Docker image like so:
 
-	$ docker run -p 4200:4200 crate
+```console
+$ docker run -p 4200:4200 %%IMAGE%%
+```
 
 Once you're up and running, head on over to [the introductory docs](https://crate.io/docs/stable/hello.html).
 
@@ -29,6 +31,12 @@ Read more:
 -	[CrateDB Docker Best Practices](https://crate.io/docs/reference/best_practice/docker.html)
 
 ## Issues
+
+### Memory Accounting
+
+The combinations of Linux kernel version 3.x and Docker >= 1.12 could lead to a major problem with memory accounting causing the kernel to kill the CrateDB process in the container. This problems occurs because of a [slab shrinker issue](https://lwn.net/Articles/628829/) that is fixed in kernel versions >= 4.0.
+
+### Others
 
 For issue specific to the CrateDB Docker image, report issues via [the `docker-crate` GitHub issue tracker](https://github.com/crate/docker-crate/issues)
 

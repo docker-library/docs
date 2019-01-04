@@ -25,13 +25,13 @@ Sentry is a realtime event logging and aggregation platform. It specializes in m
 3.	Generate a new secret key to be shared by all `%%REPO%%` containers. This value will then be used as the `SENTRY_SECRET_KEY` environment variable.
 
 	```console
-	$ docker run --rm sentry config generate-secret-key
+	$ docker run --rm %%IMAGE%% config generate-secret-key
 	```
 
 4.	If this is a new database, you'll need to run `upgrade`
 
 	```console
-	$ docker run -it --rm -e SENTRY_SECRET_KEY='<secret-key>' --link sentry-postgres:postgres --link sentry-redis:redis sentry upgrade
+	$ docker run -it --rm -e SENTRY_SECRET_KEY='<secret-key>' --link sentry-postgres:postgres --link sentry-redis:redis %%IMAGE%% upgrade
 	```
 
 	**Note: the `-it` is important as the initial upgrade will prompt to create an initial user and will fail without it**
@@ -39,14 +39,14 @@ Sentry is a realtime event logging and aggregation platform. It specializes in m
 5.	Now start up Sentry server
 
 	```console
-	$ docker run -d --name my-sentry -e SENTRY_SECRET_KEY='<secret-key>' --link sentry-redis:redis --link sentry-postgres:postgres sentry
+	$ docker run -d --name my-sentry -e SENTRY_SECRET_KEY='<secret-key>' --link sentry-redis:redis --link sentry-postgres:postgres %%IMAGE%%
 	```
 
 6.	The default config needs a celery beat and celery workers, start as many workers as you need (each with a unique name)
 
 	```console
-	$ docker run -d --name sentry-cron -e SENTRY_SECRET_KEY='<secret-key>' --link sentry-postgres:postgres --link sentry-redis:redis sentry run cron
-	$ docker run -d --name sentry-worker-1 -e SENTRY_SECRET_KEY='<secret-key>' --link sentry-postgres:postgres --link sentry-redis:redis sentry run worker
+	$ docker run -d --name sentry-cron -e SENTRY_SECRET_KEY='<secret-key>' --link sentry-postgres:postgres --link sentry-redis:redis %%IMAGE%% run cron
+	$ docker run -d --name sentry-worker-1 -e SENTRY_SECRET_KEY='<secret-key>' --link sentry-postgres:postgres --link sentry-redis:redis %%IMAGE%% run worker
 	```
 
 ### Port mapping
@@ -58,7 +58,7 @@ If you'd like to be able to access the instance from the host without the contai
 If you did not create a superuser during `upgrade`, use the following to create one:
 
 ```console
-$ docker run -it --rm -e SENTRY_SECRET_KEY='<secret-key>' --link sentry-redis:redis --link sentry-postgres:postgres sentry createuser
+$ docker run -it --rm -e SENTRY_SECRET_KEY='<secret-key>' --link sentry-redis:redis --link sentry-postgres:postgres %%IMAGE%% createuser
 ```
 
 ## Environment variables
@@ -70,7 +70,7 @@ When you start the `%%REPO%%` image, you can adjust the configuration of the Sen
 A secret key used for cryptographic functions within Sentry. This key should be unique and consistent across all running instances. You can generate a new secret key doing something like:
 
 ```console
-$ docker run --rm sentry config generate-secret-key
+$ docker run --rm %%IMAGE%% config generate-secret-key
 ```
 
 ### `SENTRY_POSTGRES_HOST`, `SENTRY_POSTGRES_PORT`, `SENTRY_DB_NAME`, `SENTRY_DB_USER`, `SENTRY_DB_PASSWORD`

@@ -16,13 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`0.6.4` (*0.6.4/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/c087a27b5ec93445e89dc46f25af973f114f1399/0.6.4/Dockerfile)
--	[`0.6.5` (*0.6.5/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/c087a27b5ec93445e89dc46f25af973f114f1399/0.6.5/Dockerfile)
--	[`0.7.0` (*0.7.0/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/02af9417ae42bf6290b4b36c2188b1836f1017a8/0.7.0/Dockerfile)
--	[`0.7.2` (*0.7.2/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/02af9417ae42bf6290b4b36c2188b1836f1017a8/0.7.2/Dockerfile)
--	[`0.7.3` (*0.7.3/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/02af9417ae42bf6290b4b36c2188b1836f1017a8/0.7.3/Dockerfile)
--	[`0.8.0` (*0.8.0/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/d1cbdce2b531e9223356efb14e828afa556e1f70/0.8.0/Dockerfile)
--	[`0.8.1`, `latest` (*0.8.1/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/9ddc187d94f68f2572e4d3b1e733c98c661d628b/0.8.1/Dockerfile)
+-	[`1.0.1`, `latest` (*0.X/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/6ca0fa239f6a7150dfab827a0852a0031a02e028/0.X/Dockerfile)
 
 # Quick reference
 
@@ -34,6 +28,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[HashiCorp](https://github.com/hashicorp/docker-vault)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/vault/), [`arm32v6`](https://hub.docker.com/r/arm32v6/vault/), [`arm64v8`](https://hub.docker.com/r/arm64v8/vault/), [`i386`](https://hub.docker.com/r/i386/vault/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/vault/` directory](https://github.com/docker-library/repo-info/blob/master/repos/vault) ([history](https://github.com/docker-library/repo-info/commits/master/repos/vault))  
@@ -47,7 +44,7 @@ WARNING:
 	[docs repo's `vault/` directory](https://github.com/docker-library/docs/tree/master/vault) ([history](https://github.com/docker-library/docs/commits/master/vault))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # Vault
 
@@ -56,7 +53,7 @@ Vault is a tool for securely accessing secrets. A secret is anything that you wa
 -	[Vault documentation](https://www.vaultproject.io/)
 -	[Vault on GitHub](https://github.com/hashicorp/vault)
 
-![logo](https://cdn.rawgit.com/docker-library/docs/fab4b16599d1424cee888d47af850e0ba07e6a37/vault/logo.svg)
+![logo](https://raw.githubusercontent.com/docker-library/docs/fab4b16599d1424cee888d47af850e0ba07e6a37/vault/logo.svg?sanitize=true)
 
 # Using the Container
 
@@ -113,3 +110,9 @@ Since 0.6.3 this container also supports the `VAULT_REDIRECT_INTERFACE` and `VAU
 # License
 
 View [license information](https://raw.githubusercontent.com/hashicorp/vault/master/LICENSE) for the software contained in this image.
+
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
+
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `vault/` directory](https://github.com/docker-library/repo-info/tree/master/repos/vault).
+
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

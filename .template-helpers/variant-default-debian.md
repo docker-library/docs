@@ -1,0 +1,1 @@
+Some of these tags may have names like %%DEB-SUITES%% in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on.

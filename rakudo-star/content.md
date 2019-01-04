@@ -19,7 +19,7 @@ Perl 6 Language Documentation: [http://doc.perl6.org/](http://doc.perl6.org/)
 Simply running a container with the image will launch a Perl 6 REPL:
 
 ```console
-$ docker run -it rakudo-star
+$ docker run -it %%IMAGE%%
 > say 'Hello, Perl!'
 Hello, Perl!
 ```
@@ -27,7 +27,7 @@ Hello, Perl!
 You can also provide perl6 command line switches to `docker run`:
 
 ```console
-$ docker run -it rakudo-star -e 'say "Hello!"'
+$ docker run -it %%IMAGE%% -e 'say "Hello!"'
 ```
 
 # Contributing/Getting Help

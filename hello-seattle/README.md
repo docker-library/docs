@@ -16,8 +16,27 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest` (*amd64/hello-seattle/Dockerfile*)](https://github.com/docker-library/hello-world/blob/7d0ee592e4ed60e2da9d59331e16ecdcadc1ed87/amd64/hello-seattle/Dockerfile)
--	[`nanoserver` (*amd64/hello-seattle/nanoserver/Dockerfile*)](https://github.com/docker-library/hello-world/blob/7d0ee592e4ed60e2da9d59331e16ecdcadc1ed87/amd64/hello-seattle/nanoserver/Dockerfile)
+## Simple Tags
+
+-	[`linux` (*amd64/hello-seattle/Dockerfile*)](https://github.com/docker-library/hello-world/blob/b715c35271f1d18832480bde75fe17b93db26414/amd64/hello-seattle/Dockerfile)
+-	[`nanoserver-sac2016` (*amd64/hello-seattle/nanoserver-sac2016/Dockerfile*)](https://github.com/docker-library/hello-world/blob/9c93e37114a7fe99b5fc0d776e0b8dff99cbbb75/amd64/hello-seattle/nanoserver-sac2016/Dockerfile)
+-	[`nanoserver-1709` (*amd64/hello-seattle/nanoserver-1709/Dockerfile*)](https://github.com/docker-library/hello-world/blob/9c93e37114a7fe99b5fc0d776e0b8dff99cbbb75/amd64/hello-seattle/nanoserver-1709/Dockerfile)
+-	[`nanoserver-1803` (*amd64/hello-seattle/nanoserver-1803/Dockerfile*)](https://github.com/docker-library/hello-world/blob/9c93e37114a7fe99b5fc0d776e0b8dff99cbbb75/amd64/hello-seattle/nanoserver-1803/Dockerfile)
+-	[`nanoserver-1809` (*amd64/hello-seattle/nanoserver-1809/Dockerfile*)](https://github.com/docker-library/hello-world/blob/9c93e37114a7fe99b5fc0d776e0b8dff99cbbb75/amd64/hello-seattle/nanoserver-1809/Dockerfile)
+
+## Shared Tags
+
+-	`latest`:
+	-	[`linux` (*amd64/hello-seattle/Dockerfile*)](https://github.com/docker-library/hello-world/blob/b715c35271f1d18832480bde75fe17b93db26414/amd64/hello-seattle/Dockerfile)
+	-	[`nanoserver-sac2016` (*amd64/hello-seattle/nanoserver-sac2016/Dockerfile*)](https://github.com/docker-library/hello-world/blob/9c93e37114a7fe99b5fc0d776e0b8dff99cbbb75/amd64/hello-seattle/nanoserver-sac2016/Dockerfile)
+	-	[`nanoserver-1709` (*amd64/hello-seattle/nanoserver-1709/Dockerfile*)](https://github.com/docker-library/hello-world/blob/9c93e37114a7fe99b5fc0d776e0b8dff99cbbb75/amd64/hello-seattle/nanoserver-1709/Dockerfile)
+	-	[`nanoserver-1803` (*amd64/hello-seattle/nanoserver-1803/Dockerfile*)](https://github.com/docker-library/hello-world/blob/9c93e37114a7fe99b5fc0d776e0b8dff99cbbb75/amd64/hello-seattle/nanoserver-1803/Dockerfile)
+	-	[`nanoserver-1809` (*amd64/hello-seattle/nanoserver-1809/Dockerfile*)](https://github.com/docker-library/hello-world/blob/9c93e37114a7fe99b5fc0d776e0b8dff99cbbb75/amd64/hello-seattle/nanoserver-1809/Dockerfile)
+-	`nanoserver`:
+	-	[`nanoserver-sac2016` (*amd64/hello-seattle/nanoserver-sac2016/Dockerfile*)](https://github.com/docker-library/hello-world/blob/9c93e37114a7fe99b5fc0d776e0b8dff99cbbb75/amd64/hello-seattle/nanoserver-sac2016/Dockerfile)
+	-	[`nanoserver-1709` (*amd64/hello-seattle/nanoserver-1709/Dockerfile*)](https://github.com/docker-library/hello-world/blob/9c93e37114a7fe99b5fc0d776e0b8dff99cbbb75/amd64/hello-seattle/nanoserver-1709/Dockerfile)
+	-	[`nanoserver-1803` (*amd64/hello-seattle/nanoserver-1803/Dockerfile*)](https://github.com/docker-library/hello-world/blob/9c93e37114a7fe99b5fc0d776e0b8dff99cbbb75/amd64/hello-seattle/nanoserver-1803/Dockerfile)
+	-	[`nanoserver-1809` (*amd64/hello-seattle/nanoserver-1809/Dockerfile*)](https://github.com/docker-library/hello-world/blob/9c93e37114a7fe99b5fc0d776e0b8dff99cbbb75/amd64/hello-seattle/nanoserver-1809/Dockerfile)
 
 # Quick reference
 
@@ -29,6 +48,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[the Docker Community](https://github.com/docker-library/hello-world)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/hello-seattle/), [`arm32v5`](https://hub.docker.com/r/arm32v5/hello-seattle/), [`arm32v7`](https://hub.docker.com/r/arm32v7/hello-seattle/), [`arm64v8`](https://hub.docker.com/r/arm64v8/hello-seattle/), [`i386`](https://hub.docker.com/r/i386/hello-seattle/), [`ppc64le`](https://hub.docker.com/r/ppc64le/hello-seattle/), [`s390x`](https://hub.docker.com/r/s390x/hello-seattle/), [`windows-amd64`](https://hub.docker.com/r/winamd64/hello-seattle/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/hello-seattle/` directory](https://github.com/docker-library/repo-info/blob/master/repos/hello-seattle) ([history](https://github.com/docker-library/repo-info/commits/master/repos/hello-seattle))  
@@ -42,7 +64,7 @@ WARNING:
 	[docs repo's `hello-seattle/` directory](https://github.com/docker-library/docs/tree/master/hello-seattle) ([history](https://github.com/docker-library/docs/commits/master/hello-seattle))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # Hello, DockerCon 2016 (Seattle)!
 
@@ -74,3 +96,13 @@ For more examples and ideas, visit:
 ```
 
 See [the `hello-world` image description](https://hub.docker.com/_/hello-world/) for more information about this image (and its construction).
+
+# License
+
+View [license information](https://github.com/docker-library/hello-world/blob/master/LICENSE) for the software contained in this image.
+
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
+
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `hello-seattle/` directory](https://github.com/docker-library/repo-info/tree/master/repos/hello-seattle).
+
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

@@ -4,6 +4,7 @@ services:
 
   redmine:
     image: redmine
+    restart: always
     ports:
       - 8080:3000
     environment:
@@ -12,6 +13,7 @@ services:
 
   db:
     image: mysql:5.7
+    restart: always
     environment:
       MYSQL_ROOT_PASSWORD: example
       MYSQL_DATABASE: redmine

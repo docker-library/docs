@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.19.0-stretch`, `1-stretch`, `1.19-stretch`, `stretch`, `1.19.0`, `1`, `1.19`, `latest` (*1.19.0/stretch/Dockerfile*)](https://github.com/rust-lang-nursery/docker-rust/blob/106c4be7e3d29a38c6953c30fccd54c6ce366157/1.19.0/stretch/Dockerfile)
--	[`1.19.0-jessie`, `1-jessie`, `1.19-jessie`, `jessie` (*1.19.0/jessie/Dockerfile*)](https://github.com/rust-lang-nursery/docker-rust/blob/106c4be7e3d29a38c6953c30fccd54c6ce366157/1.19.0/jessie/Dockerfile)
+-	[`1.31.1-stretch`, `1-stretch`, `1.31-stretch`, `stretch`, `1.31.1`, `1`, `1.31`, `latest` (*1.31.1/stretch/Dockerfile*)](https://github.com/rust-lang-nursery/docker-rust/blob/1d112bc218d6b7a5479a05fa652130d8e086564f/1.31.1/stretch/Dockerfile)
+-	[`1.31.1-slim-stretch`, `1-slim-stretch`, `1.31-slim-stretch`, `slim-stretch`, `1.31.1-slim`, `1-slim`, `1.31-slim`, `slim` (*1.31.1/stretch/slim/Dockerfile*)](https://github.com/rust-lang-nursery/docker-rust/blob/1d112bc218d6b7a5479a05fa652130d8e086564f/1.31.1/stretch/slim/Dockerfile)
 
 # Quick reference
 
@@ -29,6 +29,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[the Rust Project developers](https://github.com/rust-lang-nursery/docker-rust)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/rust/), [`arm32v7`](https://hub.docker.com/r/arm32v7/rust/), [`arm64v8`](https://hub.docker.com/r/arm64v8/rust/), [`i386`](https://hub.docker.com/r/i386/rust/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/rust/` directory](https://github.com/docker-library/repo-info/blob/master/repos/rust) ([history](https://github.com/docker-library/repo-info/commits/master/repos/rust))  
@@ -42,7 +45,7 @@ WARNING:
 	[docs repo's `rust/` directory](https://github.com/docker-library/docs/tree/master/rust) ([history](https://github.com/docker-library/docs/commits/master/rust))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Rust?
 
@@ -59,7 +62,7 @@ Rust is a systems programming language sponsored by Mozilla Research. It is desi
 The most straightforward way to use this image is to use a Rust container as both the build and runtime environment. In your `Dockerfile`, writing something along the lines of the following will compile and run your project:
 
 ```dockerfile
-FROM rust:1.19.0
+FROM rust:1.23.0
 
 WORKDIR /usr/src/myapp
 COPY . .
@@ -78,14 +81,36 @@ $ docker run -it --rm --name my-running-app my-rust-app
 
 ## Compile your app inside the Docker container
 
-There may be occasions where it is not appropriate to run your app inside a container. To compiler, but not run your app inside the Docker instance, you can write something like:
+There may be occasions where it is not appropriate to run your app inside a container. To compile, but not run your app inside the Docker instance, you can write something like:
 
 ```console
-$ docker run --rm --user "$(id -u)":"$(id -g)" -v "$PWD":/usr/src/myapp -w /usr/src/myapp rust:1.19.0 cargo build --release
+$ docker run --rm --user "$(id -u)":"$(id -g)" -v "$PWD":/usr/src/myapp -w /usr/src/myapp rust:1.23.0 cargo build --release
 ```
 
 This will add your current directory, as a volume, to the container, set the working directory to the volume, and run the command `cargo build --release`. This tells Cargo, Rust's build system, to compile the crate in `myapp` and output the executable to `target/release/myapp`.
 
+# Image Variants
+
+The `rust` images come in many flavors, each designed for a specific use case.
+
+## `rust:<version>`
+
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+This tag is based off of [`buildpack-deps`](https://hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of Docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
+
+Some of these tags may have names like stretch in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on.
+
+## `rust:<version>-slim`
+
+This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `rust`. Unless you are working in an environment where *only* the `rust` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
+
 # License
 
 View [license information](https://www.rust-lang.org/en-US/legal.html) for the software contained in this image.
+
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
+
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `rust/` directory](https://github.com/docker-library/repo-info/tree/master/repos/rust).
+
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

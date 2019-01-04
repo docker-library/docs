@@ -16,10 +16,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `2.1`, `2.1.5` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/d62ce82f635f4ff76db8de10cdbdea5df7edf168/Dockerfile)
--	[`1.0`, `1.0.6` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/89e1557944b257c9e56b0e93a458eb6f0238ece3/Dockerfile)
--	[`1.1`, `1.1.6` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/019830ed59c4b110f8c93f30430d282818ad95ec/Dockerfile)
--	[`2.0`, `2.0.7` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/79d51bb263104ccd2d3c57a5d74c16d6f0466d21/Dockerfile)
+-	[`3.1.4`, `3.1`, `latest` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/fd4e206a6dedf45dd75066d359528f245781e4d5/Dockerfile)
+-	[`3.0.7`, `3.0` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/ca1f030be8be51c126fa908400aa031be6eb0412/Dockerfile)
+-	[`2.3.11`, `2.3` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/f15780fc923017c66040c4baf79f2efd506655ac/Dockerfile)
+-	[`2.2.7`, `2.2` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/771c9b60ffbb03c2692e09a2539c7411327d7e3d/Dockerfile)
+-	[`2.1.10`, `2.1` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/ed8cda8b567628dd733716dc5c8f507512587783/Dockerfile)
+-	[`2.0.7`, `2.0` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/79d51bb263104ccd2d3c57a5d74c16d6f0466d21/Dockerfile)
 
 # Quick reference
 
@@ -31,6 +33,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[Crate.io](https://github.com/crate/docker-crate)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/crate/), [`arm64v8`](https://hub.docker.com/r/arm64v8/crate/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/crate/` directory](https://github.com/docker-library/repo-info/blob/master/repos/crate) ([history](https://github.com/docker-library/repo-info/commits/master/repos/crate))  
@@ -44,7 +49,7 @@ WARNING:
 	[docs repo's `crate/` directory](https://github.com/docker-library/docs/tree/master/crate) ([history](https://github.com/docker-library/docs/commits/master/crate))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/0d4ccc1c0a00a99c3302ffeb17831225cbba7863/crate/logo.png)
 
@@ -67,7 +72,9 @@ The smallest CrateDB clusters can easily ingest tens of thousands of records per
 
 Spin up this Docker image like so:
 
-	$ docker run -p 4200:4200 crate
+```console
+$ docker run -p 4200:4200 crate
+```
 
 Once you're up and running, head on over to [the introductory docs](https://crate.io/docs/stable/hello.html).
 
@@ -77,6 +84,12 @@ Read more:
 -	[CrateDB Docker Best Practices](https://crate.io/docs/reference/best_practice/docker.html)
 
 ## Issues
+
+### Memory Accounting
+
+The combinations of Linux kernel version 3.x and Docker >= 1.12 could lead to a major problem with memory accounting causing the kernel to kill the CrateDB process in the container. This problems occurs because of a [slab shrinker issue](https://lwn.net/Articles/628829/) that is fixed in kernel versions >= 4.0.
+
+### Others
 
 For issue specific to the CrateDB Docker image, report issues via [the `docker-crate` GitHub issue tracker](https://github.com/crate/docker-crate/issues)
 
@@ -93,3 +106,9 @@ See the [developer docs](https://github.com/crate/docker-crateblob/master/DEVELO
 CrateDB is an open core project.
 
 See the CrateDB [licensing docs](https://github.com/crate/crate/blob/master/LICENSE.txt) for more information.
+
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
+
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `crate/` directory](https://github.com/docker-library/repo-info/tree/master/repos/crate).
+
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

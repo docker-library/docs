@@ -16,10 +16,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`17.10`, `artful-20170728`, `artful`, `devel` (*artful/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/a2573609340194bf33712c1fa2dc4de8f9b70ca2/artful/Dockerfile)
--	[`14.04`, `trusty-20170728`, `trusty` (*trusty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/a2573609340194bf33712c1fa2dc4de8f9b70ca2/trusty/Dockerfile)
--	[`16.04`, `xenial-20170802`, `xenial`, `latest` (*xenial/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/a2573609340194bf33712c1fa2dc4de8f9b70ca2/xenial/Dockerfile)
--	[`17.04`, `zesty-20170703`, `zesty`, `rolling` (*zesty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/a2573609340194bf33712c1fa2dc4de8f9b70ca2/zesty/Dockerfile)
+-	[`18.04`, `bionic-20181204`, `bionic`, `latest` (*bionic/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/185c5e23efaa8c7c857683e6dcf4d886acda3cba/bionic/Dockerfile)
+-	[`18.10`, `cosmic-20181219`, `cosmic`, `rolling` (*cosmic/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/185c5e23efaa8c7c857683e6dcf4d886acda3cba/cosmic/Dockerfile)
+-	[`19.04`, `disco-20181220`, `disco`, `devel` (*disco/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/185c5e23efaa8c7c857683e6dcf4d886acda3cba/disco/Dockerfile)
+-	[`14.04`, `trusty-20181217`, `trusty` (*trusty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/185c5e23efaa8c7c857683e6dcf4d886acda3cba/trusty/Dockerfile)
+-	[`16.04`, `xenial-20181218`, `xenial` (*xenial/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/185c5e23efaa8c7c857683e6dcf4d886acda3cba/xenial/Dockerfile)
 
 # Quick reference
 
@@ -31,6 +32,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[Canonical](https://partner-images.canonical.com/core/) and [Tianon (Debian Developer)](https://github.com/tianon/docker-brew-ubuntu-core)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/ubuntu/), [`arm32v7`](https://hub.docker.com/r/arm32v7/ubuntu/), [`arm64v8`](https://hub.docker.com/r/arm64v8/ubuntu/), [`i386`](https://hub.docker.com/r/i386/ubuntu/), [`ppc64le`](https://hub.docker.com/r/ppc64le/ubuntu/), [`s390x`](https://hub.docker.com/r/s390x/ubuntu/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/ubuntu/` directory](https://github.com/docker-library/repo-info/blob/master/repos/ubuntu) ([history](https://github.com/docker-library/repo-info/commits/master/repos/ubuntu))  
@@ -44,7 +48,7 @@ WARNING:
 	[docs repo's `ubuntu/` directory](https://github.com/docker-library/docs/tree/master/ubuntu) ([history](https://github.com/docker-library/docs/commits/master/ubuntu))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Ubuntu?
 
@@ -77,6 +81,32 @@ ENV LANG en_US.utf8
 ```
 
 ## `/etc/apt/sources.list`
+
+### `ubuntu:18.04`
+
+```console
+$ docker run ubuntu:18.04 grep -v '^#' /etc/apt/sources.list
+
+deb http://archive.ubuntu.com/ubuntu/ bionic main restricted
+
+deb http://archive.ubuntu.com/ubuntu/ bionic-updates main restricted
+
+deb http://archive.ubuntu.com/ubuntu/ bionic universe
+deb-src http://archive.ubuntu.com/ubuntu/ bionic universe
+deb http://archive.ubuntu.com/ubuntu/ bionic-updates universe
+deb-src http://archive.ubuntu.com/ubuntu/ bionic-updates universe
+
+deb http://archive.ubuntu.com/ubuntu/ bionic multiverse
+deb http://archive.ubuntu.com/ubuntu/ bionic-updates multiverse
+
+deb http://archive.ubuntu.com/ubuntu/ bionic-backports main restricted universe multiverse
+
+
+deb http://security.ubuntu.com/ubuntu/ bionic-security main restricted
+deb http://security.ubuntu.com/ubuntu/ bionic-security universe
+deb-src http://security.ubuntu.com/ubuntu/ bionic-security universe
+deb http://security.ubuntu.com/ubuntu/ bionic-security multiverse
+```
 
 ### `ubuntu:16.04`
 
@@ -123,3 +153,13 @@ deb-src http://archive.ubuntu.com/ubuntu/ trusty-security main restricted
 deb http://archive.ubuntu.com/ubuntu/ trusty-security universe
 deb-src http://archive.ubuntu.com/ubuntu/ trusty-security universe
 ```
+
+# License
+
+View [license information](https://www.ubuntu.com/about/about-ubuntu/licensing) for the software contained in this image.
+
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
+
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `ubuntu/` directory](https://github.com/docker-library/repo-info/tree/master/repos/ubuntu).
+
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

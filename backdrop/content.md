@@ -11,7 +11,7 @@ Backdrop CMS enables people to build highly customized websites, affordably, thr
 The basic pattern for starting a `%%REPO%%` instance is:
 
 ```console
-$ docker run --name some-%%REPO%% --link some-mysql:mysql -d %%REPO%%
+$ docker run --name some-%%REPO%% --link some-mysql:mysql -d %%IMAGE%%
 ```
 
 The following environment variables are also honored for configuring your Backdrop CMS instance:
@@ -28,7 +28,7 @@ The `BACKDROP_DB_NAME` **must already exist** on the given MySQL server. Check o
 If you'd like to be able to access the instance from the host without the container's IP, standard port mappings can be used:
 
 ```console
-$ docker run --name some-%%REPO%% --link some-mysql:mysql -p 8080:80 -d %%REPO%%
+$ docker run --name some-%%REPO%% --link some-mysql:mysql -p 8080:80 -d %%IMAGE%%
 ```
 
 Then, access it via `http://localhost:8080` or `http://host-ip:8080` in a browser.

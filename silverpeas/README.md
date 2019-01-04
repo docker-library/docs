@@ -16,7 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.0-alpha3`, `latest` (*Dockerfile*)](https://github.com/Silverpeas/docker-silverpeas-prod/blob/48e66a18fb4fa3933a1aafce48be75cc4b18a765/Dockerfile)
+-	[`6.0.1`, `latest` (*Dockerfile*)](https://github.com/Silverpeas/docker-silverpeas-prod/blob/3e3e2ce680e57828a145151a2ee609b34e1501d2/Dockerfile)
 
 # Quick reference
 
@@ -28,6 +28,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[Silverpeas](https://github.com/Silverpeas/docker-silverpeas-prod)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/silverpeas/), [`arm64v8`](https://hub.docker.com/r/arm64v8/silverpeas/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/silverpeas/` directory](https://github.com/docker-library/repo-info/blob/master/repos/silverpeas) ([history](https://github.com/docker-library/repo-info/commits/master/repos/silverpeas))  
@@ -41,7 +44,7 @@ WARNING:
 	[docs repo's `silverpeas/` directory](https://github.com/docker-library/docs/tree/master/silverpeas) ([history](https://github.com/docker-library/docs/commits/master/silverpeas))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Silverpeas
 
@@ -280,3 +283,9 @@ Silverpeas uses FLOSS softwares. These are (in a non exhaustive list):
 -	Libraries under the MIT license like JQuery and Angular JS.
 -	Libraries and applications under the Apache 2.0 license like the Apache Commons libraries and the Image Magick tool.
 -	Libraries and applications under the GPL/LGPL license like SWFTools, FlexPaper Flash GPL, LibreOffice, OpenJDK.
+
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
+
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `silverpeas/` directory](https://github.com/docker-library/repo-info/tree/master/repos/silverpeas).
+
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

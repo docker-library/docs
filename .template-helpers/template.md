@@ -13,6 +13,9 @@
 -	**Maintained by**:  
 	%%MAINTAINER%%
 
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	%%ARCHES%%
+
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/%%REPO%%/` directory](https://github.com/docker-library/repo-info/blob/master/repos/%%REPO%%) ([history](https://github.com/docker-library/repo-info/commits/master/repos/%%REPO%%))  
 	(image metadata, transfer size, etc)
@@ -25,6 +28,6 @@
 	[docs repo's `%%REPO%%/` directory](https://github.com/docker-library/docs/tree/master/%%REPO%%) ([history](https://github.com/docker-library/docs/commits/master/%%REPO%%))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 %%CONTENT%%%%VARIANT%%%%LICENSE%%

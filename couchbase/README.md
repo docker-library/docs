@@ -16,10 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `enterprise`, `4.6.2`, `enterprise-4.6.2` (*enterprise/couchbase-server/4.6.2/Dockerfile*)](https://github.com/couchbase/docker/blob/927f3ae56611ab213fbfcf92a158a1aaea33eff2/enterprise/couchbase-server/4.6.2/Dockerfile)
--	[`community`, `community-4.5.1` (*community/couchbase-server/4.5.1/Dockerfile*)](https://github.com/couchbase/docker/blob/927f3ae56611ab213fbfcf92a158a1aaea33eff2/community/couchbase-server/4.5.1/Dockerfile)
--	[`3.1.6`, `enterprise-3.1.6` (*enterprise/couchbase-server/3.1.6/Dockerfile*)](https://github.com/couchbase/docker/blob/927f3ae56611ab213fbfcf92a158a1aaea33eff2/enterprise/couchbase-server/3.1.6/Dockerfile)
--	[`community-3.1.3` (*community/couchbase-server/3.1.3/Dockerfile*)](https://github.com/couchbase/docker/blob/927f3ae56611ab213fbfcf92a158a1aaea33eff2/community/couchbase-server/3.1.3/Dockerfile)
+-	[`latest`, `enterprise`, `6.0.0`, `enterprise-6.0.0` (*enterprise/couchbase-server/6.0.0/Dockerfile*)](https://github.com/couchbase/docker/blob/18d1ed8c5deb288d6db5ddbf0a9585352f82c887/enterprise/couchbase-server/6.0.0/Dockerfile)
+-	[`community`, `community-6.0.0` (*community/couchbase-server/6.0.0/Dockerfile*)](https://github.com/couchbase/docker/blob/18d1ed8c5deb288d6db5ddbf0a9585352f82c887/community/couchbase-server/6.0.0/Dockerfile)
 
 # Quick reference
 
@@ -31,6 +29,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[the Couchbase Docker Team](https://github.com/couchbase/docker)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/couchbase/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/couchbase/` directory](https://github.com/docker-library/repo-info/blob/master/repos/couchbase) ([history](https://github.com/docker-library/repo-info/commits/master/repos/couchbase))  
@@ -44,7 +45,7 @@ WARNING:
 	[docs repo's `couchbase/` directory](https://github.com/docker-library/docs/tree/master/couchbase) ([history](https://github.com/docker-library/docs/commits/master/couchbase))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Couchbase Server?
 
@@ -204,3 +205,9 @@ By default, the `latest` Docker tag points to the latest Enterprise Edition. If 
 ```console
 docker run couchbase:community-4.0.0
 ```
+
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
+
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `couchbase/` directory](https://github.com/docker-library/repo-info/tree/master/repos/couchbase).
+
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

@@ -16,8 +16,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.3`, `1.3.6`, `1.3.6.1`, `latest` (*chronograf/1.3/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/8116068f4dfd1375b4287896807a60783bd0dd11/chronograf/1.3/Dockerfile)
--	[`1.3-alpine`, `1.3.6-alpine`, `1.3.6.1-alpine`, `alpine` (*chronograf/1.3/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/8116068f4dfd1375b4287896807a60783bd0dd11/chronograf/1.3/alpine/Dockerfile)
+-	[`1.5`, `1.5.0`, `1.5.0.1` (*chronograf/1.5/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/181bca99b696f751600ca161533f3cefbcc85cd3/chronograf/1.5/Dockerfile)
+-	[`1.5-alpine`, `1.5.0-alpine`, `1.5.0.1-alpine` (*chronograf/1.5/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/181bca99b696f751600ca161533f3cefbcc85cd3/chronograf/1.5/alpine/Dockerfile)
+-	[`1.6`, `1.6.2` (*chronograf/1.6/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/181bca99b696f751600ca161533f3cefbcc85cd3/chronograf/1.6/Dockerfile)
+-	[`1.6-alpine`, `1.6.2-alpine` (*chronograf/1.6/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/181bca99b696f751600ca161533f3cefbcc85cd3/chronograf/1.6/alpine/Dockerfile)
+-	[`1.7`, `1.7.5`, `latest` (*chronograf/1.7/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/181bca99b696f751600ca161533f3cefbcc85cd3/chronograf/1.7/Dockerfile)
+-	[`1.7-alpine`, `1.7.5-alpine`, `alpine` (*chronograf/1.7/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/181bca99b696f751600ca161533f3cefbcc85cd3/chronograf/1.7/alpine/Dockerfile)
 
 # Quick reference
 
@@ -29,6 +33,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[InfluxData](https://github.com/influxdata/influxdata-docker)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/chronograf/), [`arm32v7`](https://hub.docker.com/r/arm32v7/chronograf/), [`arm64v8`](https://hub.docker.com/r/arm64v8/chronograf/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/chronograf/` directory](https://github.com/docker-library/repo-info/blob/master/repos/chronograf) ([history](https://github.com/docker-library/repo-info/commits/master/repos/chronograf))  
@@ -42,7 +49,7 @@ WARNING:
 	[docs repo's `chronograf/` directory](https://github.com/docker-library/docs/tree/master/chronograf) ([history](https://github.com/docker-library/docs/commits/master/chronograf))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # Chronograf
 
@@ -118,7 +125,7 @@ The `chronograf` images come in many flavors, each designed for a specific use c
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `chronograf:alpine`
+## `chronograf:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
@@ -129,3 +136,9 @@ To minimize image size, it's uncommon for additional related tools (such as `git
 # License
 
 View [license information](https://github.com/influxdata/chronograf/blob/master/LICENSE) for the software contained in this image.
+
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
+
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `chronograf/` directory](https://github.com/docker-library/repo-info/tree/master/repos/chronograf).
+
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

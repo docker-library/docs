@@ -8,15 +8,15 @@
 version: '3.1'
 services:
 
-    geonetwork:
-      image: geonetwork
-      ports:
-          - 8080:8080
-      environment:
-          DATA_DIR: /var/lib/geonetwork_data
-      volumes:
-         - geonetwork:/var/lib/geonetwork_data
+  geonetwork:
+    image: geonetwork
+    restart: always
+    ports:
+      - 8080:8080
+    environment:
+      DATA_DIR: /var/lib/geonetwork_data
+    volumes:
+      - geonetwork:/var/lib/geonetwork_data
 
 volumes:
-    geonetwork:
-
+  geonetwork:

@@ -16,14 +16,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.4.12`, `4.4`, `4`, `latest` (*4.4/Dockerfile*)](https://github.com/tianon/docker-bash/blob/75358344e900aa56e64722b2241a6bcd39ca67ee/4.4/Dockerfile)
--	[`4.3.48`, `4.3` (*4.3/Dockerfile*)](https://github.com/tianon/docker-bash/blob/75358344e900aa56e64722b2241a6bcd39ca67ee/4.3/Dockerfile)
--	[`4.2.53`, `4.2` (*4.2/Dockerfile*)](https://github.com/tianon/docker-bash/blob/75358344e900aa56e64722b2241a6bcd39ca67ee/4.2/Dockerfile)
--	[`4.1.17`, `4.1` (*4.1/Dockerfile*)](https://github.com/tianon/docker-bash/blob/75358344e900aa56e64722b2241a6bcd39ca67ee/4.1/Dockerfile)
--	[`4.0.44`, `4.0` (*4.0/Dockerfile*)](https://github.com/tianon/docker-bash/blob/75358344e900aa56e64722b2241a6bcd39ca67ee/4.0/Dockerfile)
--	[`3.2.57`, `3.2`, `3` (*3.2/Dockerfile*)](https://github.com/tianon/docker-bash/blob/75358344e900aa56e64722b2241a6bcd39ca67ee/3.2/Dockerfile)
--	[`3.1.23`, `3.1` (*3.1/Dockerfile*)](https://github.com/tianon/docker-bash/blob/75358344e900aa56e64722b2241a6bcd39ca67ee/3.1/Dockerfile)
--	[`3.0.22`, `3.0` (*3.0/Dockerfile*)](https://github.com/tianon/docker-bash/blob/75358344e900aa56e64722b2241a6bcd39ca67ee/3.0/Dockerfile)
+-	[`5.0-rc1`, `5.0-rc`, `rc` (*5.0-rc/Dockerfile*)](https://github.com/tianon/docker-bash/blob/9dc1c12d0a8aa7ea4b51b166d0b64a78d44df9f0/5.0-rc/Dockerfile)
+-	[`4.4.23`, `4.4`, `4`, `latest` (*4.4/Dockerfile*)](https://github.com/tianon/docker-bash/blob/9bee3aa767f9ecbe455c92c8b98bdbf4ab0a5db0/4.4/Dockerfile)
+-	[`4.3.48`, `4.3` (*4.3/Dockerfile*)](https://github.com/tianon/docker-bash/blob/9bee3aa767f9ecbe455c92c8b98bdbf4ab0a5db0/4.3/Dockerfile)
+-	[`4.2.53`, `4.2` (*4.2/Dockerfile*)](https://github.com/tianon/docker-bash/blob/9bee3aa767f9ecbe455c92c8b98bdbf4ab0a5db0/4.2/Dockerfile)
+-	[`4.1.17`, `4.1` (*4.1/Dockerfile*)](https://github.com/tianon/docker-bash/blob/9bee3aa767f9ecbe455c92c8b98bdbf4ab0a5db0/4.1/Dockerfile)
+-	[`4.0.44`, `4.0` (*4.0/Dockerfile*)](https://github.com/tianon/docker-bash/blob/9bee3aa767f9ecbe455c92c8b98bdbf4ab0a5db0/4.0/Dockerfile)
+-	[`3.2.57`, `3.2`, `3` (*3.2/Dockerfile*)](https://github.com/tianon/docker-bash/blob/9bee3aa767f9ecbe455c92c8b98bdbf4ab0a5db0/3.2/Dockerfile)
+-	[`3.1.23`, `3.1` (*3.1/Dockerfile*)](https://github.com/tianon/docker-bash/blob/9bee3aa767f9ecbe455c92c8b98bdbf4ab0a5db0/3.1/Dockerfile)
+-	[`3.0.22`, `3.0` (*3.0/Dockerfile*)](https://github.com/tianon/docker-bash/blob/9bee3aa767f9ecbe455c92c8b98bdbf4ab0a5db0/3.0/Dockerfile)
 
 # Quick reference
 
@@ -35,6 +36,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[Tianon (of the Docker Community)](https://github.com/tianon/docker-bash), [with Chet's support (from Bash upstream)](https://github.com/docker-library/official-images/pull/2217#issue-181031192)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/bash/), [`arm32v6`](https://hub.docker.com/r/arm32v6/bash/), [`arm64v8`](https://hub.docker.com/r/arm64v8/bash/), [`i386`](https://hub.docker.com/r/i386/bash/), [`ppc64le`](https://hub.docker.com/r/ppc64le/bash/), [`s390x`](https://hub.docker.com/r/s390x/bash/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/bash/` directory](https://github.com/docker-library/repo-info/blob/master/repos/bash) ([history](https://github.com/docker-library/repo-info/commits/master/repos/bash))  
@@ -48,7 +52,7 @@ WARNING:
 	[docs repo's `bash/` directory](https://github.com/docker-library/docs/tree/master/bash) ([history](https://github.com/docker-library/docs/commits/master/bash))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Bash?
 
@@ -111,3 +115,9 @@ $ docker run -it --rm --name my-running-app my-bash-app
 # License
 
 Bash is free software, distributed under the terms of the [GNU General Public License, version 3](http://www.gnu.org/licenses/gpl.html).
+
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
+
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `bash/` directory](https://github.com/docker-library/repo-info/tree/master/repos/bash).
+
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

@@ -1,1 +1,0 @@
-Official Jenkins Docker image

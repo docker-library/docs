@@ -16,18 +16,22 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.0.81-jre7`, `7.0-jre7`, `7-jre7`, `7.0.81`, `7.0`, `7` (*7/jre7/Dockerfile*)](https://github.com/docker-library/tomcat/blob/ab435d680d56084ebe0419adfb31cc58df3624dd/7/jre7/Dockerfile)
--	[`7.0.81-jre7-alpine`, `7.0-jre7-alpine`, `7-jre7-alpine`, `7.0.81-alpine`, `7.0-alpine`, `7-alpine` (*7/jre7-alpine/Dockerfile*)](https://github.com/docker-library/tomcat/blob/0e9a915bf893faa9160ab1a144c7ba5049a4fe27/7/jre7-alpine/Dockerfile)
--	[`7.0.81-jre8`, `7.0-jre8`, `7-jre8` (*7/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/ab435d680d56084ebe0419adfb31cc58df3624dd/7/jre8/Dockerfile)
--	[`7.0.81-jre8-alpine`, `7.0-jre8-alpine`, `7-jre8-alpine` (*7/jre8-alpine/Dockerfile*)](https://github.com/docker-library/tomcat/blob/0e9a915bf893faa9160ab1a144c7ba5049a4fe27/7/jre8-alpine/Dockerfile)
--	[`8.0.46-jre7`, `8.0-jre7`, `8.0.46`, `8.0` (*8.0/jre7/Dockerfile*)](https://github.com/docker-library/tomcat/blob/5c8b74e495a1b63116b524407941b15eef58a7fe/8.0/jre7/Dockerfile)
--	[`8.0.46-jre7-alpine`, `8.0-jre7-alpine`, `8.0.46-alpine`, `8.0-alpine` (*8.0/jre7-alpine/Dockerfile*)](https://github.com/docker-library/tomcat/blob/03255da1fc6f0e3ab4a3507cb9e28d707fc921d0/8.0/jre7-alpine/Dockerfile)
--	[`8.0.46-jre8`, `8.0-jre8` (*8.0/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/5c8b74e495a1b63116b524407941b15eef58a7fe/8.0/jre8/Dockerfile)
--	[`8.0.46-jre8-alpine`, `8.0-jre8-alpine` (*8.0/jre8-alpine/Dockerfile*)](https://github.com/docker-library/tomcat/blob/03255da1fc6f0e3ab4a3507cb9e28d707fc921d0/8.0/jre8-alpine/Dockerfile)
--	[`8.5.20-jre8`, `8.5-jre8`, `8-jre8`, `jre8`, `8.5.20`, `8.5`, `8`, `latest` (*8.5/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/ec4d672211c919aad07ac7bebe7c6f26373ee467/8.5/jre8/Dockerfile)
--	[`8.5.20-jre8-alpine`, `8.5-jre8-alpine`, `8-jre8-alpine`, `jre8-alpine`, `8.5.20-alpine`, `8.5-alpine`, `8-alpine`, `alpine` (*8.5/jre8-alpine/Dockerfile*)](https://github.com/docker-library/tomcat/blob/9040855496452d91d7b0d8abbfd70c60448a07a1/8.5/jre8-alpine/Dockerfile)
--	[`9.0.0.M26-jre8`, `9.0.0-jre8`, `9.0-jre8`, `9-jre8`, `9.0.0.M26`, `9.0.0`, `9.0`, `9` (*9.0/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/77323f32b92405944da026c68428e3180e6bc33a/9.0/jre8/Dockerfile)
--	[`9.0.0.M26-jre8-alpine`, `9.0.0-jre8-alpine`, `9.0-jre8-alpine`, `9-jre8-alpine`, `9.0.0.M26-alpine`, `9.0.0-alpine`, `9.0-alpine`, `9-alpine` (*9.0/jre8-alpine/Dockerfile*)](https://github.com/docker-library/tomcat/blob/dcadb55c324ad088e5e34b5bc6f1202e025ea848/9.0/jre8-alpine/Dockerfile)
+-	[`7.0.92-jre7`, `7.0-jre7`, `7-jre7`, `7.0.92`, `7.0`, `7` (*7/jre7/Dockerfile*)](https://github.com/docker-library/tomcat/blob/ffde17a33a1930496bb43c75bc7a826c977d3807/7/jre7/Dockerfile)
+-	[`7.0.92-jre7-slim`, `7.0-jre7-slim`, `7-jre7-slim`, `7.0.92-slim`, `7.0-slim`, `7-slim` (*7/jre7-slim/Dockerfile*)](https://github.com/docker-library/tomcat/blob/ffde17a33a1930496bb43c75bc7a826c977d3807/7/jre7-slim/Dockerfile)
+-	[`7.0.92-jre7-alpine`, `7.0-jre7-alpine`, `7-jre7-alpine`, `7.0.92-alpine`, `7.0-alpine`, `7-alpine` (*7/jre7-alpine/Dockerfile*)](https://github.com/docker-library/tomcat/blob/1722fc14b4eb66f746a2067739f32d4111f408de/7/jre7-alpine/Dockerfile)
+-	[`7.0.92-jre8`, `7.0-jre8`, `7-jre8` (*7/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/ffde17a33a1930496bb43c75bc7a826c977d3807/7/jre8/Dockerfile)
+-	[`7.0.92-jre8-slim`, `7.0-jre8-slim`, `7-jre8-slim` (*7/jre8-slim/Dockerfile*)](https://github.com/docker-library/tomcat/blob/ffde17a33a1930496bb43c75bc7a826c977d3807/7/jre8-slim/Dockerfile)
+-	[`7.0.92-jre8-alpine`, `7.0-jre8-alpine`, `7-jre8-alpine` (*7/jre8-alpine/Dockerfile*)](https://github.com/docker-library/tomcat/blob/1722fc14b4eb66f746a2067739f32d4111f408de/7/jre8-alpine/Dockerfile)
+-	[`8.5.37-jre8`, `8.5-jre8`, `8-jre8`, `jre8`, `8.5.37`, `8.5`, `8`, `latest` (*8.5/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/4b7edb6276a275185ddeb3db989573bf35aca2b5/8.5/jre8/Dockerfile)
+-	[`8.5.37-jre8-slim`, `8.5-jre8-slim`, `8-jre8-slim`, `jre8-slim`, `8.5.37-slim`, `8.5-slim`, `8-slim`, `slim` (*8.5/jre8-slim/Dockerfile*)](https://github.com/docker-library/tomcat/blob/4b7edb6276a275185ddeb3db989573bf35aca2b5/8.5/jre8-slim/Dockerfile)
+-	[`8.5.37-jre8-alpine`, `8.5-jre8-alpine`, `8-jre8-alpine`, `jre8-alpine`, `8.5.37-alpine`, `8.5-alpine`, `8-alpine`, `alpine` (*8.5/jre8-alpine/Dockerfile*)](https://github.com/docker-library/tomcat/blob/d3d5932c4c852fa2861c68d6d1adaf0ce1b1a870/8.5/jre8-alpine/Dockerfile)
+-	[`8.5.37-jre11`, `8.5-jre11`, `8-jre11`, `jre11` (*8.5/jre11/Dockerfile*)](https://github.com/docker-library/tomcat/blob/4b7edb6276a275185ddeb3db989573bf35aca2b5/8.5/jre11/Dockerfile)
+-	[`8.5.37-jre11-slim`, `8.5-jre11-slim`, `8-jre11-slim`, `jre11-slim` (*8.5/jre11-slim/Dockerfile*)](https://github.com/docker-library/tomcat/blob/4b7edb6276a275185ddeb3db989573bf35aca2b5/8.5/jre11-slim/Dockerfile)
+-	[`9.0.14-jre8`, `9.0-jre8`, `9-jre8` (*9.0/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/f58a6b4236cfe10672c9505aab5024100c9e084d/9.0/jre8/Dockerfile)
+-	[`9.0.14-jre8-slim`, `9.0-jre8-slim`, `9-jre8-slim` (*9.0/jre8-slim/Dockerfile*)](https://github.com/docker-library/tomcat/blob/f58a6b4236cfe10672c9505aab5024100c9e084d/9.0/jre8-slim/Dockerfile)
+-	[`9.0.14-jre8-alpine`, `9.0-jre8-alpine`, `9-jre8-alpine` (*9.0/jre8-alpine/Dockerfile*)](https://github.com/docker-library/tomcat/blob/a3690c7d71d468e51f0c01ded83f79c7686a2a35/9.0/jre8-alpine/Dockerfile)
+-	[`9.0.14-jre11`, `9.0-jre11`, `9-jre11` (*9.0/jre11/Dockerfile*)](https://github.com/docker-library/tomcat/blob/f58a6b4236cfe10672c9505aab5024100c9e084d/9.0/jre11/Dockerfile)
+-	[`9.0.14-jre11-slim`, `9.0-jre11-slim`, `9-jre11-slim` (*9.0/jre11-slim/Dockerfile*)](https://github.com/docker-library/tomcat/blob/f58a6b4236cfe10672c9505aab5024100c9e084d/9.0/jre11-slim/Dockerfile)
 
 # Quick reference
 
@@ -39,6 +43,9 @@ WARNING:
 
 -	**Maintained by**:  
 	[the Docker Community](https://github.com/docker-library/tomcat)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/tomcat/), [`arm32v5`](https://hub.docker.com/r/arm32v5/tomcat/), [`arm32v6`](https://hub.docker.com/r/arm32v6/tomcat/), [`arm32v7`](https://hub.docker.com/r/arm32v7/tomcat/), [`arm64v8`](https://hub.docker.com/r/arm64v8/tomcat/), [`i386`](https://hub.docker.com/r/i386/tomcat/), [`ppc64le`](https://hub.docker.com/r/ppc64le/tomcat/), [`s390x`](https://hub.docker.com/r/s390x/tomcat/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/tomcat/` directory](https://github.com/docker-library/repo-info/blob/master/repos/tomcat) ([history](https://github.com/docker-library/repo-info/commits/master/repos/tomcat))  
@@ -52,7 +59,7 @@ WARNING:
 	[docs repo's `tomcat/` directory](https://github.com/docker-library/docs/tree/master/tomcat) ([history](https://github.com/docker-library/docs/commits/master/tomcat))
 
 -	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker/releases/latest) (down to 1.6 on a best-effort basis)
+	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Tomcat?
 
@@ -104,7 +111,11 @@ The `tomcat` images come in many flavors, each designed for a specific use case.
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `tomcat:alpine`
+## `tomcat:<version>-slim`
+
+This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `tomcat`. Unless you are working in an environment where *only* the `tomcat` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
+
+## `tomcat:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
@@ -115,3 +126,9 @@ To minimize image size, it's uncommon for additional related tools (such as `git
 # License
 
 View [license information](https://www.apache.org/licenses/LICENSE-2.0) for the software contained in this image.
+
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
+
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `tomcat/` directory](https://github.com/docker-library/repo-info/tree/master/repos/tomcat).
+
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.
