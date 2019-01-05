@@ -1,1 +1,1 @@
-Open-source Microservice & API Management layer built on top of NGINX.
+The Cloud-Native API Gateway & Service Mesh for APIs and Microservices
