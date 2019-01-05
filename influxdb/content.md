@@ -37,10 +37,6 @@ The following ports are important and are used by InfluxDB.
 
 The HTTP API port will be automatically exposed when using `docker run -P`.
 
-The administrator interface is not automatically exposed when using `docker run -P` and is disabled by default. The adminstrator interface requires that the web browser have access to InfluxDB on the same port in the container as from the web browser. Since `-P` exposes the HTTP port to the host on a random port, the administrator interface is not compatible with this setting.
-
-The administrator interface is deprecated as of 1.1.0 and will be removed in 1.3.0.
-
 Find more about API Endpoints & Ports [here](https://docs.influxdata.com/influxdb/latest/concepts/api/).
 
 ### Configuration
