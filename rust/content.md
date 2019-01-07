@@ -18,7 +18,7 @@ FROM %%IMAGE%%:1.31
 WORKDIR /usr/src/myapp
 COPY . .
 
-RUN cargo install --path /usr/src/myapp
+RUN cargo install --path .
 
 CMD ["myapp"]
 ```
