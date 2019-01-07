@@ -62,12 +62,12 @@ Rust is a systems programming language sponsored by Mozilla Research. It is desi
 The most straightforward way to use this image is to use a Rust container as both the build and runtime environment. In your `Dockerfile`, writing something along the lines of the following will compile and run your project:
 
 ```dockerfile
-FROM rust:1.23.0
+FROM rust:1.31
 
 WORKDIR /usr/src/myapp
 COPY . .
 
-RUN cargo install
+RUN cargo install --path .
 
 CMD ["myapp"]
 ```

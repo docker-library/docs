@@ -29,7 +29,7 @@ WARNING:
 	[https://github.com/containous/traefik-library-image/issues](https://github.com/containous/traefik-library-image/issues)
 
 -	**Maintained by**:  
-	[the Træfik Project](https://github.com/containous/traefik-library-image)
+	[the Traefik Project](https://github.com/containous/traefik-library-image)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/traefik/), [`arm32v6`](https://hub.docker.com/r/arm32v6/traefik/), [`arm64v8`](https://hub.docker.com/r/arm64v8/traefik/), [`windows-amd64`](https://hub.docker.com/r/winamd64/traefik/)
@@ -50,11 +50,11 @@ WARNING:
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/a6cc2c5f4bc6658168f2a0abbb0307acaefff80e/traefik/logo.png)
 
-[Træfɪk](https://github.com/containous/traefik) is a modern HTTP reverse proxy and load balancer that makes deploying microservices easy.
+[Traefik](https://github.com/containous/traefik) is a modern HTTP reverse proxy and load balancer that makes deploying microservices easy.
 
-Træfik integrates with your existing infrastructure components ([Docker](https://www.docker.com/), [Swarm mode](https://docs.docker.com/engine/swarm/), [Kubernetes](https://kubernetes.io), [Marathon](https://mesosphere.github.io/marathon/), [Consul](https://www.consul.io/), [Etcd](https://coreos.com/etcd/), [Rancher](https://rancher.com), [Amazon ECS](https://aws.amazon.com/ecs), ...) and configures itself automatically and dynamically.
+Traefik integrates with your existing infrastructure components ([Docker](https://www.docker.com/), [Swarm mode](https://docs.docker.com/engine/swarm/), [Kubernetes](https://kubernetes.io), [Marathon](https://mesosphere.github.io/marathon/), [Consul](https://www.consul.io/), [Etcd](https://coreos.com/etcd/), [Rancher](https://rancher.com), [Amazon ECS](https://aws.amazon.com/ecs), ...) and configures itself automatically and dynamically.
 
-Telling Træfik where your orchestrator is could be the *only* configuration step you need to do.
+Telling Traefik where your orchestrator is could be the *only* configuration step you need to do.
 
 # Example usage
 
@@ -73,7 +73,7 @@ domain = "docker.local"
 watch = true
 ```
 
-Start Træfɪk:
+Start Traefik:
 
 ```bash
 docker run -d -p 8080:8080 -p 80:80 \
@@ -88,7 +88,7 @@ Start a backend server, named `test`:
 docker run -d --name test emilevauge/whoami
 ```
 
-And finally, you can access to your `whoami` server throught Træfɪk, on the domain name `{containerName}.{configuredDomain}`:
+And finally, you can access to your `whoami` server throught Traefik, on the domain name `{containerName}.{configuredDomain}`:
 
 ```bash
 curl --header 'Host: test.docker.local' 'http://localhost:80/'
@@ -117,7 +117,7 @@ The web UI [http://localhost:8080](http://localhost:8080) will give you an overv
 
 You can find the complete documentation at [https://docs.traefik.io](https://docs.traefik.io).
 
-A collection of contributions around Træfik can be found at [https://awesome.traefik.io](https://awesome.traefik.io).
+A collection of contributions around Traefik can be found at [https://awesome.traefik.io](https://awesome.traefik.io).
 
 # License
 
