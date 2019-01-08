@@ -186,4 +186,3 @@ $ docker run --rm \
 ```
 
 The above would create the database `db0`, create an admin user with the password `supersecretpassword`, then create the `telegraf` user with your telegraf's secret password. It would then exit and leave behind any files it created in the volume that you mounted.
->>>>>>> 0ae2dfcd0df23423f769d7bd9a27675df0ed190d
