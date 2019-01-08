@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2-6.0.0`, `2-6.0`, `2-6`, `2`, `2-6.0.0-jessie`, `2-6.0-jessie`, `2-6-jessie`, `2-jessie` (*2/Dockerfile*)](https://github.com/docker-library/pypy/blob/e63e6ad8c3a28f5ff6c3019a493093da15248d20/2/Dockerfile)
--	[`2-6.0.0-slim`, `2-6.0-slim`, `2-6-slim`, `2-slim`, `2-6.0.0-slim-jessie`, `2-6.0-slim-jessie`, `2-6-slim-jessie`, `2-slim-jessie` (*2/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/e63e6ad8c3a28f5ff6c3019a493093da15248d20/2/slim/Dockerfile)
+-	[`2-6.0.0`, `2-6.0`, `2-6`, `2`, `2-6.0.0-jessie`, `2-6.0-jessie`, `2-6-jessie`, `2-jessie` (*2/Dockerfile*)](https://github.com/docker-library/pypy/blob/523034bb96ffeaeee83dffe880082252fb778f7d/2/Dockerfile)
+-	[`2-6.0.0-slim`, `2-6.0-slim`, `2-6-slim`, `2-slim`, `2-6.0.0-slim-jessie`, `2-6.0-slim-jessie`, `2-6-slim-jessie`, `2-slim-jessie` (*2/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/523034bb96ffeaeee83dffe880082252fb778f7d/2/slim/Dockerfile)
 -	[`3-6.0.0`, `3-6.0`, `3-6`, `3`, `latest`, `3-6.0.0-jessie`, `3-6.0-jessie`, `3-6-jessie`, `3-jessie`, `jessie` (*3/Dockerfile*)](https://github.com/docker-library/pypy/blob/e63e6ad8c3a28f5ff6c3019a493093da15248d20/3/Dockerfile)
 -	[`3-6.0.0-slim`, `3-6.0-slim`, `3-6-slim`, `3-slim`, `slim`, `3-6.0.0-slim-jessie`, `3-6.0-slim-jessie`, `3-6-slim-jessie`, `3-slim-jessie`, `slim-jessie` (*3/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/e63e6ad8c3a28f5ff6c3019a493093da15248d20/3/slim/Dockerfile)
 
