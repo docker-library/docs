@@ -1,6 +1,8 @@
 # What is EventStore?
 
-EventStore is a distributed database for storing Streams of Events capable of solving a growing number of use cases. You can replay events to build the current state of your data in the Read Model of your choise.
+The open-source, functional database with Complex Event Processing in JavaScript.
+
+EventStore is open-source, distributed functional database for storing Streams of Events capable of solving a growing number of use cases. You can replay events to build the current state of your data in the Read Model of your choice.
 
 > For more information about EventStore, please visit [eventstore.org](https://eventstore.org/)
 
@@ -10,7 +12,7 @@ EventStore is a distributed database for storing Streams of Events capable of so
 
 This default distribution is governed by the EventStore License, and includes the [full set of free features](https://eventstore.org/terms/support/event-store-support-terms-v8.pdf).
 
-View the detailed release notes [here](https://eventstore.org/blog/).
+View detailed release notes [here](https://eventstore.org/blog/).
 
 Not the version you're looking for? View all supported [past releases](https://eventstore.org/downloads/).
 
