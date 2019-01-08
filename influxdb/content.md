@@ -112,6 +112,7 @@ Run the influx client in this container:
 ```console
 $ docker exec -it influxdb influx
 ```
+
 Or run the influx client in a separate container:
 
 ```console
