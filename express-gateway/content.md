@@ -29,7 +29,7 @@ If so, skip directly to the point **2**; else, please keep going with this guide
 Start a Redis container by executing:
 
 ```shell
-docker run -d --name express-gateway-data-store \
+$ docker run -d --name express-gateway-data-store \
                 -p 6379:6379 \
                 redis:alpine
 ```
@@ -55,7 +55,10 @@ You can now read the docs at [express-gateway.io/docs](http://express-gateway.io
 ### Install plugin
 
 You can install custom plugins to the current Express Gateway image just creating a new `Dockerfile`,
-use `expressgateway/express-gateway` as base image and then install the required plugins as global yarn
+use `%%IMAGE%%` as base image and then install the required plugins as global yarn
 packages
 
-`RUN yarn add global express-gateway-plugin-name`
+```dockerfile
+FROM %%IMAGE%%
+RUN yarn add global express-gateway-plugin-name
+```
