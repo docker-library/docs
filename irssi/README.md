@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.1.1`, `1.1`, `1`, `latest` (*debian/Dockerfile*)](https://github.com/jessfraz/irssi/blob/6b35dbff64c5d8eeaab7d75f456ffa7378279455/debian/Dockerfile)
--	[`1.1.1-alpine`, `1.1-alpine`, `1-alpine`, `alpine` (*alpine/Dockerfile*)](https://github.com/jessfraz/irssi/blob/6b35dbff64c5d8eeaab7d75f456ffa7378279455/alpine/Dockerfile)
+-	[`1.1.2`, `1.1`, `1`, `latest` (*debian/Dockerfile*)](https://github.com/jessfraz/irssi/blob/a94cec8b8e5771117577522dbed7d9376852abc5/debian/Dockerfile)
+-	[`1.1.2-alpine`, `1.1-alpine`, `1-alpine`, `alpine` (*alpine/Dockerfile*)](https://github.com/jessfraz/irssi/blob/a94cec8b8e5771117577522dbed7d9376852abc5/alpine/Dockerfile)
 
 # Quick reference
 
