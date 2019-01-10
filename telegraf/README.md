@@ -16,12 +16,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.7`, `1.7.4` (*telegraf/1.7/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/6d7c22b81723cf19858c05457c6ea914ab696304/telegraf/1.7/Dockerfile)
--	[`1.7-alpine`, `1.7.4-alpine` (*telegraf/1.7/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/6d7c22b81723cf19858c05457c6ea914ab696304/telegraf/1.7/alpine/Dockerfile)
--	[`1.8`, `1.8.3` (*telegraf/1.8/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/6d7c22b81723cf19858c05457c6ea914ab696304/telegraf/1.8/Dockerfile)
--	[`1.8-alpine`, `1.8.3-alpine` (*telegraf/1.8/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/6d7c22b81723cf19858c05457c6ea914ab696304/telegraf/1.8/alpine/Dockerfile)
--	[`1.9`, `1.9.1`, `latest` (*telegraf/1.9/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/6d7c22b81723cf19858c05457c6ea914ab696304/telegraf/1.9/Dockerfile)
--	[`1.9-alpine`, `1.9.1-alpine`, `alpine` (*telegraf/1.9/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/6d7c22b81723cf19858c05457c6ea914ab696304/telegraf/1.9/alpine/Dockerfile)
+-	[`1.7`, `1.7.4` (*telegraf/1.7/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/e46815e3ebf5ac0d37a08c3cf423b39e857b1d7a/telegraf/1.7/Dockerfile)
+-	[`1.7-alpine`, `1.7.4-alpine` (*telegraf/1.7/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/e46815e3ebf5ac0d37a08c3cf423b39e857b1d7a/telegraf/1.7/alpine/Dockerfile)
+-	[`1.8`, `1.8.3` (*telegraf/1.8/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/e46815e3ebf5ac0d37a08c3cf423b39e857b1d7a/telegraf/1.8/Dockerfile)
+-	[`1.8-alpine`, `1.8.3-alpine` (*telegraf/1.8/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/e46815e3ebf5ac0d37a08c3cf423b39e857b1d7a/telegraf/1.8/alpine/Dockerfile)
+-	[`1.9`, `1.9.2`, `latest` (*telegraf/1.9/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/e46815e3ebf5ac0d37a08c3cf423b39e857b1d7a/telegraf/1.9/Dockerfile)
+-	[`1.9-alpine`, `1.9.2-alpine`, `alpine` (*telegraf/1.9/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/e46815e3ebf5ac0d37a08c3cf423b39e857b1d7a/telegraf/1.9/alpine/Dockerfile)
 
 # Quick reference
 
