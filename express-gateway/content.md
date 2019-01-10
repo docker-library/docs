@@ -47,8 +47,8 @@ $ docker run -d --name express-gateway \
     %%IMAGE%%
 ```
 
-_Note:_ You might want to expose other ports to the host in case you're serving your APIs through **HTTPS**.
-_Note:_ You need to mount a volume with configuration files and volumes in order to make Express-Gateway start correctly.
+*Note:* You might want to expose other ports to the host in case you're serving your APIs through **HTTPS**.
+*Note:* You need to mount a volume with configuration files and volumes in order to make Express-Gateway start correctly.
 
 You can now read the docs at [express-gateway.io/docs](http://express-gateway.io/docs) to learn more about Express-Gateway and configure it accordingly to your needs.
 
