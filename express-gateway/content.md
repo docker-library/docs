@@ -6,13 +6,13 @@ Express-Gateway's documentation can be found at [https://express-gateway.io/docs
 
 ## Main Features
 
-- Built Entirely on Express and Express Middleware
-- Dynamic Centralized Config
-- API Consumer and Credentials Management
-- Plugins and Plugin Framework
-- Distributed Data Store
-- CLI
-- Admin API
+-	Built Entirely on Express and Express Middleware
+-	Dynamic Centralized Config
+-	API Consumer and Credentials Management
+-	Plugins and Plugin Framework
+-	Distributed Data Store
+-	CLI
+-	Admin API
 
 %%LOGO%%
 
