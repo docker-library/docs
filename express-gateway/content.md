@@ -55,9 +55,7 @@ You can now read the docs at [express-gateway.io/docs](http://express-gateway.io
 
 ### Install plugin
 
-You can install custom plugins to the current Express Gateway image just creating a new `Dockerfile`,
-use `%%IMAGE%%` as base image and then install the required plugins as global yarn
-packages
+You can install custom plugins to the current Express Gateway image just creating a new `Dockerfile`, use `%%IMAGE%%` as base image and then install the required plugins as global yarn packages
 
 ```dockerfile
 FROM %%IMAGE%%
