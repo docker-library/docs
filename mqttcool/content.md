@@ -2,7 +2,7 @@
 
 MQTT.Cool is a gateway designed for boosting existing MQTT brokers by extending their native functionalities with new out-of-the-box cool features.
 
-For more information and related downloads for the MQTT.Cool server and MQTT.Cool related products, please visit [www.lightstreamer.com](http://www.lightstreamer.com/mqttcool-features).
+For more information and related downloads for the MQTT.Cool server and MQTT.Cool related products, please visit [mqtt.cool](https://mqtt.cool).
 
 %%LOGO%%
 
@@ -19,7 +19,8 @@ $ docker run --name mc-server -d -p 80:8080 %%IMAGE%%
 This will map port 8080 inside the container to port 80 on local host. Then point your browser to `http://localhost` and watch the Welcome page from which you can launch the Test Client, a handy tool for testing the interaction between the MQTT.Cool server and any external MQTT broker.
 
 Furthermore, you can be redirected to the source code examples available on [GitHub](http://github.com/MQTTCool).
-=======
+
+```
 $ docker run --name mc-server -d -p 80:8080 mqttcool
 ```
 
