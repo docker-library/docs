@@ -49,6 +49,7 @@ Then, access it via `http://localhost:8080` or `http://host-ip:8080` in a browse
 
 ```console
 $ docker run --name some-%%REPO%% -p 8080:80 %%image%%
+$ docker run --name some-%%REPO%% -v /local/path/to/config.local.php:/var/www/html/config.local.php -p 8080:80 %%IMAGE%%
 ```
 
 ## Image Variants
