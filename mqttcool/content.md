@@ -20,12 +20,6 @@ This will map port 8080 inside the container to port 80 on local host. Then poin
 
 Furthermore, you can be redirected to the source code examples available on [GitHub](http://github.com/MQTTCool).
 
-```
-$ docker run --name mc-server -d -p 80:8080 mqttcool
-```
-
-This will map port 8080 inside the container to port 80 on local host. Then point your browser to `http://localhost` and watch the Welcome page, from which you can be directed to the examples available on [GitHub](http://github.com/MQTTCool).
-
 ## Custom settings
 
 It is possible to customize each aspect of the MQTT.Cool instance running into the container. For example, a specific configuration file may be supplied as follows:
@@ -52,7 +46,6 @@ Alternatively, the above tasks can be executed by deriving a new image through a
 
 ```dockerfile
 FROM %%IMAGE%%
-
 
 # Please specify a COPY command only for the the required custom configuration files
 COPY my-mqtt_master_connector_conf.xml /mqtt.cool/mqtt_connectors/mqtt_master_connector_conf.xml
