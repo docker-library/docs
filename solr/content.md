@@ -149,9 +149,11 @@ This works for Solr versions newer than 6.3.0. Older versions had some hardcoded
 
 In Solr, it is common to specify a custom SOLR_HOME, to store cores and configuration in a different volume. In docker-solr, you can use that with mounted volumes:
 
-	mkdir mysolrhome
-	sudo chown 8983:8983 mysolrhome
-	docker run -it -v $PWD/mysolrhome:/opt/mysolrhome -e SOLR_HOME=/opt/mysolrhome %%IMAGE%%
+```console
+$ mkdir mysolrhome
+$ sudo chown 8983:8983 mysolrhome
+$ docker run -it -v $PWD/mysolrhome:/opt/mysolrhome -e SOLR_HOME=/opt/mysolrhome %%IMAGE%%
+```
 
 Solr requires a solr.xml file and configsets in the SOLR_HOME, so you must provide that ahead of time. One way of doing that is to copy the default content before running Solr:
 
