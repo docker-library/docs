@@ -135,40 +135,36 @@ and just run `docker-compose up`.
 
 ## solr.in.sh configuration
 
-In Solr it is common to configure settings in [solr.in.sh](https://github.com/apache/lucene-solr/blob/master/solr/bin/solr.in.sh),
-as documented in the [Solr Reference Guide](https://cwiki.apache.org/confluence/display/solr/Taking+Solr+to+Production#TakingSolrtoProduction-Environmentoverridesincludefile).
+In Solr it is common to configure settings in [solr.in.sh](https://github.com/apache/lucene-solr/blob/master/solr/bin/solr.in.sh), as documented in the [Solr Reference Guide](https://cwiki.apache.org/confluence/display/solr/Taking+Solr+to+Production#TakingSolrtoProduction-Environmentoverridesincludefile).
 
 In docker-solr you can simply pass these environment variables to the container. For example:
 
-    docker run -d -P -e SOLR_HEAP=800m solr
+	docker run -d -P -e SOLR_HEAP=800m solr
 
-This works for Solr versions newer than 6.3.0. Older versions had some hardcoded defaults in `solr.in.sh`;
-see `docs/set-heap.sh` for how to modify that configuration.
+This works for Solr versions newer than 6.3.0. Older versions had some hardcoded defaults in `solr.in.sh`; see `docs/set-heap.sh` for how to modify that configuration.
 
 ## Custom SOLR_HOME
 
-In Solr, it is common to specify a custom SOLR_HOME, to store cores and configuration in a different volume.
-In docker-solr, you can use that with mounted volumes:
+In Solr, it is common to specify a custom SOLR_HOME, to store cores and configuration in a different volume. In docker-solr, you can use that with mounted volumes:
 
-    mkdir mysolrhome
-    sudo chown 8983:8983 mysolrhome
-    docker run -it -v $PWD/mysolrhome:/opt/mysolrhome -e SOLR_HOME=/opt/mysolrhome solr
+	mkdir mysolrhome
+	sudo chown 8983:8983 mysolrhome
+	docker run -it -v $PWD/mysolrhome:/opt/mysolrhome -e SOLR_HOME=/opt/mysolrhome solr
 
-Solr requires a solr.xml file and configsets in the SOLR_HOME, so you must provide that ahead of time.
-One way of doing that is to copy the default content before running Solr:
+Solr requires a solr.xml file and configsets in the SOLR_HOME, so you must provide that ahead of time. One way of doing that is to copy the default content before running Solr:
 
-    docker run -it -v $PWD/mysolrhome:/opt/mysolrhome -e SOLR_HOME=/opt/mysolrhome solr \
-       bash -c "cp -R /opt/solr/server/solr/* /opt/mysolrhome"
-    docker run -it -v $PWD/mysolrhome:/opt/mysolrhome -e SOLR_HOME=/opt/mysolrhome solr
+	docker run -it -v $PWD/mysolrhome:/opt/mysolrhome -e SOLR_HOME=/opt/mysolrhome solr \
+	   bash -c "cp -R /opt/solr/server/solr/* /opt/mysolrhome"
+	docker run -it -v $PWD/mysolrhome:/opt/mysolrhome -e SOLR_HOME=/opt/mysolrhome solr
 
 or, in a single command:
 
-    docker run -it -v $PWD/mysolrhome:/opt/mysolrhome -e SOLR_HOME=/opt/mysolrhome solr \
-       bash -c "cp -R /opt/solr/server/solr/* /opt/mysolrhome && exec docker-entrypoint.sh solr-foreground"
+	docker run -it -v $PWD/mysolrhome:/opt/mysolrhome -e SOLR_HOME=/opt/mysolrhome solr \
+	   bash -c "cp -R /opt/solr/server/solr/* /opt/mysolrhome && exec docker-entrypoint.sh solr-foreground"
 
 As an added convenience, you can pass `-e INIT_SOLR_HOME=yes` to do that automatically (if SOLR_HOME is empty):
 
-    docker run -it -v $PWD/mysolrhome:/opt/mysolrhome -e SOLR_HOME=/opt/mysolrhome -e INIT_SOLR_HOME=yes solr
+	docker run -it -v $PWD/mysolrhome:/opt/mysolrhome -e SOLR_HOME=/opt/mysolrhome -e INIT_SOLR_HOME=yes solr
 
 ## Extending the image
 
