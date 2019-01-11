@@ -1,1 +1,1 @@
-View [license information](www.lightstreamer.com/latest/mqtt.cool/MQTT.Cool%20Community%20SLA%20201708.pdf) for the software contained in this image.
+View [license information](https://get.mqtt.cool/server/1.1.0/Lightstreamer+Software+License+Agreement.pdf) for the software contained in this image.
