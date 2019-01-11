@@ -139,7 +139,9 @@ In Solr it is common to configure settings in [solr.in.sh](https://github.com/ap
 
 In docker-solr you can simply pass these environment variables to the container. For example:
 
-	docker run -d -P -e SOLR_HEAP=800m solr
+```console
+$ docker run -d -P -e SOLR_HEAP=800m %%IMAGE%%
+```
 
 This works for Solr versions newer than 6.3.0. Older versions had some hardcoded defaults in `solr.in.sh`; see `docs/set-heap.sh` for how to modify that configuration.
 
@@ -149,22 +151,28 @@ In Solr, it is common to specify a custom SOLR_HOME, to store cores and configur
 
 	mkdir mysolrhome
 	sudo chown 8983:8983 mysolrhome
-	docker run -it -v $PWD/mysolrhome:/opt/mysolrhome -e SOLR_HOME=/opt/mysolrhome solr
+	docker run -it -v $PWD/mysolrhome:/opt/mysolrhome -e SOLR_HOME=/opt/mysolrhome %%IMAGE%%
 
 Solr requires a solr.xml file and configsets in the SOLR_HOME, so you must provide that ahead of time. One way of doing that is to copy the default content before running Solr:
 
-	docker run -it -v $PWD/mysolrhome:/opt/mysolrhome -e SOLR_HOME=/opt/mysolrhome solr \
-	   bash -c "cp -R /opt/solr/server/solr/* /opt/mysolrhome"
-	docker run -it -v $PWD/mysolrhome:/opt/mysolrhome -e SOLR_HOME=/opt/mysolrhome solr
+```console
+$ docker run -it -v $PWD/mysolrhome:/opt/mysolrhome -e SOLR_HOME=/opt/mysolrhome %%IMAGE%% \
+   bash -c "cp -R /opt/solr/server/solr/* /opt/mysolrhome"
+$ docker run -it -v $PWD/mysolrhome:/opt/mysolrhome -e SOLR_HOME=/opt/mysolrhome %%IMAGE%%
+```
 
 or, in a single command:
 
-	docker run -it -v $PWD/mysolrhome:/opt/mysolrhome -e SOLR_HOME=/opt/mysolrhome solr \
-	   bash -c "cp -R /opt/solr/server/solr/* /opt/mysolrhome && exec docker-entrypoint.sh solr-foreground"
+```console
+$ docker run -it -v $PWD/mysolrhome:/opt/mysolrhome -e SOLR_HOME=/opt/mysolrhome %%IMAGE%% \
+   bash -c "cp -R /opt/solr/server/solr/* /opt/mysolrhome && exec docker-entrypoint.sh solr-foreground"
+```
 
 As an added convenience, you can pass `-e INIT_SOLR_HOME=yes` to do that automatically (if SOLR_HOME is empty):
 
-	docker run -it -v $PWD/mysolrhome:/opt/mysolrhome -e SOLR_HOME=/opt/mysolrhome -e INIT_SOLR_HOME=yes solr
+```console
+$ docker run -it -v $PWD/mysolrhome:/opt/mysolrhome -e SOLR_HOME=/opt/mysolrhome -e INIT_SOLR_HOME=yes %%IMAGE%%
+```
 
 ## Extending the image
 
@@ -181,7 +189,7 @@ echo "this is running inside the container before Solr starts"
 you can run:
 
 ```console
-$ docker run --name solr_custom1 -d -P -v $PWD/custom.sh:/docker-entrypoint-initdb.d/custom.sh solr
+$ docker run --name solr_custom1 -d -P -v $PWD/custom.sh:/docker-entrypoint-initdb.d/custom.sh %%IMAGE%%
 $ sleep 5
 $ docker logs solr_custom1 | head
 /opt/docker-solr/scripts/docker-entrypoint.sh: running /docker-entrypoint-initdb.d/set-heap.sh
