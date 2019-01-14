@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.32.0-rc.2`, `1.32` (*1.32/Dockerfile*)](https://github.com/wikimedia/mediawiki-docker/blob/5ddbcbfb2ec0209755471c5493fdb6b10ffb13c1/1.32/Dockerfile)
--	[`1.31.1`, `1.31`, `lts`, `stable`, `latest` (*1.31/Dockerfile*)](https://github.com/wikimedia/mediawiki-docker/blob/5ddbcbfb2ec0209755471c5493fdb6b10ffb13c1/1.31/Dockerfile)
--	[`1.30.1`, `1.30`, `legacy` (*1.30/Dockerfile*)](https://github.com/wikimedia/mediawiki-docker/blob/5ddbcbfb2ec0209755471c5493fdb6b10ffb13c1/1.30/Dockerfile)
--	[`1.27.5`, `1.27`, `legacylts` (*1.27/Dockerfile*)](https://github.com/wikimedia/mediawiki-docker/blob/5ddbcbfb2ec0209755471c5493fdb6b10ffb13c1/1.27/Dockerfile)
+-	[`1.32.0`, `1.32` (*1.32/Dockerfile*)](https://github.com/wikimedia/mediawiki-docker/blob/06e8e1fff294a244b3c6177dd9138f14e4b410fa/1.32/Dockerfile)
+-	[`1.31.1`, `1.31`, `lts`, `stable`, `latest` (*1.31/Dockerfile*)](https://github.com/wikimedia/mediawiki-docker/blob/06e8e1fff294a244b3c6177dd9138f14e4b410fa/1.31/Dockerfile)
+-	[`1.30.1`, `1.30`, `legacy` (*1.30/Dockerfile*)](https://github.com/wikimedia/mediawiki-docker/blob/06e8e1fff294a244b3c6177dd9138f14e4b410fa/1.30/Dockerfile)
+-	[`1.27.5`, `1.27`, `legacylts` (*1.27/Dockerfile*)](https://github.com/wikimedia/mediawiki-docker/blob/06e8e1fff294a244b3c6177dd9138f14e4b410fa/1.27/Dockerfile)
 
 # Quick reference
 
