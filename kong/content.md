@@ -8,7 +8,7 @@ Kong's official documentation can be found at [docs.konghq.com](https://docs.kon
 
 # How to use this image
 
-First, Kong requires a running Cassandra cluster (3.x+) or PostgreSQL instance (9.5+) before it starts. You can either use the official Cassandra/PostgreSQL containers, or use your own.
+First, Kong requires a running Cassandra cluster (3.x+) or PostgreSQL instance (9.6+) before it starts. You can either use the official Cassandra/PostgreSQL containers, or use your own.
 
 ## 1. Link Kong to either a Cassandra or PostgreSQL container
 
