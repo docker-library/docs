@@ -51,7 +51,7 @@ WARNING:
 
 Eggdrop is the world's most popular Open Source IRC bot, designed for flexibility and ease of use, and is freely distributable under the GNU General Public License (GPL). It is designed to Linux, BSD, SunOs, Windows, and Mac OS X, among others. The core codebase is extendable via TCL scripts or C modules and bots can be linked to form botnets, enabling the sharing of userfiles and partylines across multiple bots.
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/d36235b330f3945d48c230eb58f3ea8319b6d985/eggdrop/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/c100057041a160e73a879916f2d88762cc7a01ec/eggdrop/logo.png)
 
 # How to use this image
 

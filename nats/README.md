@@ -88,8 +88,8 @@ WARNING:
 # Check "docker run" for more information.
 
 $ docker run -d --name nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 nats
-[INF] Starting nats-server version 1.3.0
-[INF] Git commit [eed4fbc]
+[INF] Starting nats-server version 1.4.0
+[INF] Git commit [ce2df36]
 [INF] Starting http monitor on 0.0.0.0:8222
 [INF] Listening for client connections on 0.0.0.0:4222
 [INF] Server is ready
@@ -105,18 +105,18 @@ $ docker run -d --name=nats-2 --link nats-main -p 4222:4222 -p 6222:6222 -p 8222
 
 # If you want to verify the routes are connected, try this instead:
 $ docker run -d --name=nats-2 --link nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 nats -c gnatsd.conf --routes=nats-route://ruser:T0pS3cr3t@nats-main:6222 -DV
-[INF] Starting nats-server version 1.3.0
-[DBG] Go build version go1.11
-[INF] Git commit [eed4fbc]
+[INF] Starting nats-server version 1.4.0
+[DBG] Go build version go1.11.4
+[INF] Git commit [ce2df36]
 [INF] Starting http monitor on 0.0.0.0:8222
 [INF] Listening for client connections on 0.0.0.0:4222
-[DBG] Server id is TH1MRk9Mug4fgIDdcXIo6R
+[DBG] Server id is n82AYgh7RMsbfAsitmpXzk
 [INF] Server is ready
 [INF] Listening for route connections on 0.0.0.0:6222
 [DBG] Trying to connect to route on nats-main:6222
 [DBG] 172.17.0.2:6222 - rid:1 - Route connection created
 [DBG] 172.17.0.2:6222 - rid:1 - Route connect msg sent
-[DBG] 172.17.0.2:6222 - rid:1 - Registering remote route "kxi2il81mIY4TsgwdGl9Fb"
+[DBG] 172.17.0.2:6222 - rid:1 - Registering remote route "cC1EkYhtbDovu0HYthjzHV"
 [DBG] 172.17.0.2:6222 - rid:1 - Route sent local subscriptions
 ```
 
@@ -163,6 +163,7 @@ Server Options:
     -ms,--https_port <port>          Use port for https monitoring
     -c, --config <file>              Configuration file
     -sl,--signal <signal>[=<pid>]    Send signal to gnatsd process (stop, quit, reopen, reload)
+                                     <pid> can be either a PID (e.g. 1) or the path to a PID file (e.g. /var/run/gnatsd.pid)
         --client_advertise <string>  Client URL to advertise to other servers
 
 Logging Options:
