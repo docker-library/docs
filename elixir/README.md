@@ -16,14 +16,17 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.7.4`, `1.7`, `latest` (*1.7/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/7c1f05ca3fd47bdc86cab3f0310068646a31dcac/1.7/Dockerfile)
--	[`1.7.4-slim`, `1.7-slim`, `slim` (*1.7/slim/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/7c1f05ca3fd47bdc86cab3f0310068646a31dcac/1.7/slim/Dockerfile)
--	[`1.7.4-alpine`, `1.7-alpine`, `alpine` (*1.7/alpine/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/7c1f05ca3fd47bdc86cab3f0310068646a31dcac/1.7/alpine/Dockerfile)
+-	[`1.8.0`, `1.8`, `latest` (*1.8/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/5cbb432b49cd41aef579d211380e5cb0f7818b34/1.8/Dockerfile)
+-	[`1.8.0-slim`, `1.8-slim`, `slim` (*1.8/slim/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/5cbb432b49cd41aef579d211380e5cb0f7818b34/1.8/slim/Dockerfile)
+-	[`1.8.0-alpine`, `1.8-alpine`, `alpine` (*1.8/alpine/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/5cbb432b49cd41aef579d211380e5cb0f7818b34/1.8/alpine/Dockerfile)
+-	[`1.7.4`, `1.7` (*1.7/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/2b7dd2845d27a6dad57bf0047b305375d6182402/1.7/Dockerfile)
+-	[`1.7.4-slim`, `1.7-slim` (*1.7/slim/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/7c1f05ca3fd47bdc86cab3f0310068646a31dcac/1.7/slim/Dockerfile)
+-	[`1.7.4-alpine`, `1.7-alpine` (*1.7/alpine/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/2b7dd2845d27a6dad57bf0047b305375d6182402/1.7/alpine/Dockerfile)
 -	[`1.6.6`, `1.6` (*1.6/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/0936291249c7e11d4618a17a2b452045c9e6233a/1.6/Dockerfile)
 -	[`1.6.6-slim`, `1.6-slim` (*1.6/slim/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/0936291249c7e11d4618a17a2b452045c9e6233a/1.6/slim/Dockerfile)
 -	[`1.6.6-alpine`, `1.6-alpine` (*1.6/alpine/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/0936291249c7e11d4618a17a2b452045c9e6233a/1.6/alpine/Dockerfile)
 -	[`1.6.6-otp-21`, `1.6-otp-21` (*1.6/otp-21/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/b57a72d04ddd1f1b4e2e3f5b70e44e37def4db31/1.6/otp-21/Dockerfile)
--	[`1.6.6-otp-21-alpine`, `1.6-otp-21-alpine` (*1.6/otp-21-alpine/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/71f26c0a37a3d928f24021b14e23b88643c06280/1.6/otp-21-alpine/Dockerfile)
+-	[`1.6.6-otp-21-alpine`, `1.6-otp-21-alpine` (*1.6/otp-21-alpine/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/084efbdda747411b3a41c231deaff03c437e5aad/1.6/otp-21-alpine/Dockerfile)
 -	[`1.5.3`, `1.5` (*1.5/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/f2528c0158d465f96f311faa19aff3cffb4e7f25/1.5/Dockerfile)
 -	[`1.5.3-slim`, `1.5-slim` (*1.5/slim/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/f2528c0158d465f96f311faa19aff3cffb4e7f25/1.5/slim/Dockerfile)
 -	[`1.5.3-alpine`, `1.5-alpine` (*1.5/alpine/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/f2528c0158d465f96f311faa19aff3cffb4e7f25/1.5/alpine/Dockerfile)
