@@ -2,8 +2,7 @@
 
 %%LOGO%%
 
-Fluentd is a streaming data collector for unified logging layer hosted by [CNCF](https://www.cncf.io/project-faq/fluentd/).
-Fluentd lets you unify the data collection and consumption for a better use and understanding of data.
+Fluentd is a streaming data collector for unified logging layer hosted by [CNCF](https://www.cncf.io/project-faq/fluentd/). Fluentd lets you unify the data collection and consumption for a better use and understanding of data.
 
 For more information, check [official site](https://www.fluentd.org/) and [documentation site](https://docs.fluentd.org/).
 
@@ -17,5 +16,4 @@ $ docker run -p 24224:24224 -p 24224:24224/udp -u fluent -v /path/to/dir:/fluent
 2019-01-16 11:58:27 +0000 [info]: #0 fluentd worker is now running worker = 0
 ```
 
-Docker's official images support only v1.3.3 or later.
-If you want to know more details, check [fluentd-docker-image README](https://github.com/fluent/fluentd-docker-image/blob/master/README.md).
+Docker's official images support only v1.3.3 or later. If you want to know more details, check [fluentd-docker-image README](https://github.com/fluent/fluentd-docker-image/blob/master/README.md).
