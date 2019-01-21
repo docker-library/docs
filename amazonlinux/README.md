@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.0.20181114`, `2`, `latest` (*Dockerfile*)](https://github.com/aws/amazon-linux-docker-images/blob/3de85bea51cc97f74263a12825564db727b55996/Dockerfile)
--	[`2.0.20181114-with-sources`, `2-with-sources`, `with-sources` (*Dockerfile*)](https://github.com/aws/amazon-linux-docker-images/blob/d214b0bd288b5c03410b41d4b827bfe52a4fa71a/Dockerfile)
--	[`2018.03.0.20180827`, `2018.03`, `1` (*Dockerfile*)](https://github.com/aws/amazon-linux-docker-images/blob/890e071ad2a4bc307b2e0705eb9e8dee9105be77/Dockerfile)
--	[`2018.03.0.20180827-with-sources`, `2018.03-with-sources`, `1-with-sources` (*Dockerfile*)](https://github.com/aws/amazon-linux-docker-images/blob/fe5ac27b2c2d6a42252da8a1349cdcce9e6af400/Dockerfile)
+-	[`2.0.20190115`, `2`, `latest` (*Dockerfile*)](https://github.com/aws/amazon-linux-docker-images/blob/04063a7fea41cb62cadfea8f411d3f03c2bb0f58/Dockerfile)
+-	[`2.0.20190115-with-sources`, `2-with-sources`, `with-sources` (*Dockerfile*)](https://github.com/aws/amazon-linux-docker-images/blob/fd78a97651383e54a16d522f9940c9864dc9cd16/Dockerfile)
+-	[`2018.03.0.20190118`, `2018.03`, `1` (*Dockerfile*)](https://github.com/aws/amazon-linux-docker-images/blob/e3dff64bfe5cb08c4670fa948b4f891c1e65301b/Dockerfile)
+-	[`2018.03.0.20190118-with-sources`, `2018.03-with-sources`, `1-with-sources` (*Dockerfile*)](https://github.com/aws/amazon-linux-docker-images/blob/ca11c2eee4f215d7c5367f9ece138ac1b417b1a2/Dockerfile)
 
 # Quick reference
 
