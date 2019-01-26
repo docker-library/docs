@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2-6.0.0`, `2-6.0`, `2-6`, `2`, `2-6.0.0-jessie`, `2-6.0-jessie`, `2-6-jessie`, `2-jessie` (*2/Dockerfile*)](https://github.com/docker-library/pypy/blob/9b24a15e48d364779806a2ceb8adf300969d4fff/2/Dockerfile)
--	[`2-6.0.0-slim`, `2-6.0-slim`, `2-6-slim`, `2-slim`, `2-6.0.0-slim-jessie`, `2-6.0-slim-jessie`, `2-6-slim-jessie`, `2-slim-jessie` (*2/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/9b24a15e48d364779806a2ceb8adf300969d4fff/2/slim/Dockerfile)
--	[`3-6.0.0`, `3-6.0`, `3-6`, `3`, `latest`, `3-6.0.0-jessie`, `3-6.0-jessie`, `3-6-jessie`, `3-jessie`, `jessie` (*3/Dockerfile*)](https://github.com/docker-library/pypy/blob/e63e6ad8c3a28f5ff6c3019a493093da15248d20/3/Dockerfile)
--	[`3-6.0.0-slim`, `3-6.0-slim`, `3-6-slim`, `3-slim`, `slim`, `3-6.0.0-slim-jessie`, `3-6.0-slim-jessie`, `3-6-slim-jessie`, `3-slim-jessie`, `slim-jessie` (*3/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/e63e6ad8c3a28f5ff6c3019a493093da15248d20/3/slim/Dockerfile)
+-	[`2-6.0.0`, `2-6.0`, `2-6`, `2`, `2-6.0.0-jessie`, `2-6.0-jessie`, `2-6-jessie`, `2-jessie` (*2/Dockerfile*)](https://github.com/docker-library/pypy/blob/ced7c041cd98198ae06b6522f5a10884384374aa/2/Dockerfile)
+-	[`2-6.0.0-slim`, `2-6.0-slim`, `2-6-slim`, `2-slim`, `2-6.0.0-slim-jessie`, `2-6.0-slim-jessie`, `2-6-slim-jessie`, `2-slim-jessie` (*2/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/ced7c041cd98198ae06b6522f5a10884384374aa/2/slim/Dockerfile)
+-	[`3-6.0.0`, `3-6.0`, `3-6`, `3`, `latest`, `3-6.0.0-jessie`, `3-6.0-jessie`, `3-6-jessie`, `3-jessie`, `jessie` (*3/Dockerfile*)](https://github.com/docker-library/pypy/blob/ced7c041cd98198ae06b6522f5a10884384374aa/3/Dockerfile)
+-	[`3-6.0.0-slim`, `3-6.0-slim`, `3-6-slim`, `3-slim`, `slim`, `3-6.0.0-slim-jessie`, `3-6.0-slim-jessie`, `3-6-slim-jessie`, `3-slim-jessie`, `slim-jessie` (*3/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/ced7c041cd98198ae06b6522f5a10884384374aa/3/slim/Dockerfile)
 
 # Quick reference
 
