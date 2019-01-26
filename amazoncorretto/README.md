@@ -16,7 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8`, `8u192`, `8-al2-full`, `latest` (*Dockerfile*)](https://github.com/corretto/corretto-8-docker/blob/ca83f84faf06f5ca115ac922926e37fb183a2126/Dockerfile)
+-	[`8`, `8u202`, `8-al2-full`, `latest` (*Dockerfile*)](https://github.com/corretto/corretto-8-docker/blob/00075d9caa52634b489867a1a8c5a146b1695d0a/Dockerfile)
 
 # Quick reference
 
