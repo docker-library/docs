@@ -48,25 +48,11 @@ Then, access it via `http://localhost:8080` or `http://host-ip:8080` in a browse
 ## Existing config.local.php
 
 ```console
-$ docker run --name some-%%REPO%% -p 8080:80 %%image%%
-$ docker run --name some-%%REPO%% -v /local/path/to/config.local.php:/var/www/html/config.local.php -p 8080:80 %%IMAGE%%
+$ docker run -v /local/path/to/config.local.php:/var/www/html/config.local.php \
+           --name some-%%REPO%% \
+           -p 8080:80 \
+        %%IMAGE%%
 ```
-
-## Image Variants
-
-The following variants are currently provided:
-
-### apache
-
-This starts an Apache webserver with PHP, so you can use `postfixadmin` out of the box.
-
-### fpm-alpine
-
-This image has a very small footprint. It is based on Alpine Linux and starts only a PHP FPM process. Use this variant if you already have a seperate webserver. If you need more tools, that are not available on Alpine Linux, use the `fpm` image instead.
-
-### fpm
-
-This image starts only a PHP FPM container. Use this variant if you already have a seperate webserver.
 
 %%STACK%%
 
