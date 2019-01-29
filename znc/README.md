@@ -75,6 +75,8 @@ If you use any external module, put the .cpp, .py or .pm file to `/znc-data/modu
 
 Musl silently doesn't support `AI_ADDRCONFIG` yet, and ZNC doesn't support [Happy Eyeballs](https://en.wikipedia.org/wiki/Happy_Eyeballs) yet. Together they cause very slow connection. So for now IPv6 is disabled here.
 
+This image contains the latest released version. If you want the bleeding edge (unstable) version, it's at [zncbouncer/znc-git](https://hub.docker.com/r/zncbouncer/znc-git).
+
 # Image Variants
 
 The `znc` images come in many flavors, each designed for a specific use case.
