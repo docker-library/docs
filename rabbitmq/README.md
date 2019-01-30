@@ -16,14 +16,14 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.7.8`, `3.7`, `3`, `latest` (*3.7/debian/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/1a8fd1c6ee027baafb7144c24ad3c995ba5e0d24/3.7/debian/Dockerfile)
--	[`3.7.8-management`, `3.7-management`, `3-management`, `management` (*3.7/debian/management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/4b2b11c59ee65c2a09616b163d4572559a86bb7b/3.7/debian/management/Dockerfile)
--	[`3.7.8-alpine`, `3.7-alpine`, `3-alpine`, `alpine` (*3.7/alpine/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/1a8fd1c6ee027baafb7144c24ad3c995ba5e0d24/3.7/alpine/Dockerfile)
--	[`3.7.8-management-alpine`, `3.7-management-alpine`, `3-management-alpine`, `management-alpine` (*3.7/alpine/management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/4b2b11c59ee65c2a09616b163d4572559a86bb7b/3.7/alpine/management/Dockerfile)
--	[`3.6.16`, `3.6` (*3.6/debian/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/1a8fd1c6ee027baafb7144c24ad3c995ba5e0d24/3.6/debian/Dockerfile)
--	[`3.6.16-management`, `3.6-management` (*3.6/debian/management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/b9eda3e4665c24db70a9a290fddf33bc5c567b10/3.6/debian/management/Dockerfile)
--	[`3.6.16-alpine`, `3.6-alpine` (*3.6/alpine/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/1a8fd1c6ee027baafb7144c24ad3c995ba5e0d24/3.6/alpine/Dockerfile)
--	[`3.6.16-management-alpine`, `3.6-management-alpine` (*3.6/alpine/management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/b9eda3e4665c24db70a9a290fddf33bc5c567b10/3.6/alpine/management/Dockerfile)
+-	[`3.7.11-rc.2`, `3.7-rc` (*3.7-rc/ubuntu/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/8a623bb9420b8bfb1cbad2467abb48db26e7ddbc/3.7-rc/ubuntu/Dockerfile)
+-	[`3.7.11-rc.2-management`, `3.7-rc-management` (*3.7-rc/ubuntu/management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/f22c0b266cfeb8cb6d776f9e6a961908c2557ad3/3.7-rc/ubuntu/management/Dockerfile)
+-	[`3.7.11-rc.2-alpine`, `3.7-rc-alpine` (*3.7-rc/alpine/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/8a623bb9420b8bfb1cbad2467abb48db26e7ddbc/3.7-rc/alpine/Dockerfile)
+-	[`3.7.11-rc.2-management-alpine`, `3.7-rc-management-alpine` (*3.7-rc/alpine/management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/da06cbdbe9e89305b2650a782af06f96004a894e/3.7-rc/alpine/management/Dockerfile)
+-	[`3.7.10`, `3.7`, `3`, `latest` (*3.7/ubuntu/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/a51c5ad7333baae15f609e9fcbac1400d02b96a6/3.7/ubuntu/Dockerfile)
+-	[`3.7.10-management`, `3.7-management`, `3-management`, `management` (*3.7/ubuntu/management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/f22c0b266cfeb8cb6d776f9e6a961908c2557ad3/3.7/ubuntu/management/Dockerfile)
+-	[`3.7.10-alpine`, `3.7-alpine`, `3-alpine`, `alpine` (*3.7/alpine/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/a51c5ad7333baae15f609e9fcbac1400d02b96a6/3.7/alpine/Dockerfile)
+-	[`3.7.10-management-alpine`, `3.7-management-alpine`, `3-management-alpine`, `management-alpine` (*3.7/alpine/management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/4b2b11c59ee65c2a09616b163d4572559a86bb7b/3.7/alpine/management/Dockerfile)
 
 # Quick reference
 
@@ -37,7 +37,7 @@ WARNING:
 	[the Docker Community](https://github.com/docker-library/rabbitmq)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/rabbitmq/), [`arm32v5`](https://hub.docker.com/r/arm32v5/rabbitmq/), [`arm32v6`](https://hub.docker.com/r/arm32v6/rabbitmq/), [`arm32v7`](https://hub.docker.com/r/arm32v7/rabbitmq/), [`arm64v8`](https://hub.docker.com/r/arm64v8/rabbitmq/), [`i386`](https://hub.docker.com/r/i386/rabbitmq/), [`ppc64le`](https://hub.docker.com/r/ppc64le/rabbitmq/), [`s390x`](https://hub.docker.com/r/s390x/rabbitmq/)
+	[`amd64`](https://hub.docker.com/r/amd64/rabbitmq/), [`arm32v6`](https://hub.docker.com/r/arm32v6/rabbitmq/), [`arm32v7`](https://hub.docker.com/r/arm32v7/rabbitmq/), [`arm64v8`](https://hub.docker.com/r/arm64v8/rabbitmq/), [`i386`](https://hub.docker.com/r/i386/rabbitmq/), [`ppc64le`](https://hub.docker.com/r/ppc64le/rabbitmq/), [`s390x`](https://hub.docker.com/r/s390x/rabbitmq/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/rabbitmq/` directory](https://github.com/docker-library/repo-info/blob/master/repos/rabbitmq) ([history](https://github.com/docker-library/repo-info/commits/master/repos/rabbitmq))  
