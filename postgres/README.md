@@ -16,7 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`11.1`, `11`, `latest` (*11/Dockerfile*)](https://github.com/docker-library/postgres/blob/45b855af13f6a753fa77bb830c482af6a69d50da/11/Dockerfile)
+-	[`11.1`, `11`, `latest` (*11/Dockerfile*)](https://github.com/docker-library/postgres/blob/42f9ab3bab65fdbabbf35130c68a9869b6e82ee7/11/Dockerfile)
 -	[`11.1-alpine`, `11-alpine`, `alpine` (*11/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/45b855af13f6a753fa77bb830c482af6a69d50da/11/alpine/Dockerfile)
 -	[`10.6`, `10` (*10/Dockerfile*)](https://github.com/docker-library/postgres/blob/45b855af13f6a753fa77bb830c482af6a69d50da/10/Dockerfile)
 -	[`10.6-alpine`, `10-alpine` (*10/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/45b855af13f6a753fa77bb830c482af6a69d50da/10/alpine/Dockerfile)
