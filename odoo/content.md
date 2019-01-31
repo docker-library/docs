@@ -95,9 +95,9 @@ services:
   db:
     image: postgres:10
     environment:
+      - POSTGRES_DB=postgres
       - POSTGRES_PASSWORD=odoo
       - POSTGRES_USER=odoo
-      - POSTGRES_DB=postgres
 ```
 
 If the default postgres credentials does not suit you, tweak the environment variables:
@@ -118,9 +118,9 @@ services:
   mydb:
     image: postgres:10
     environment:
-      - POSTGRES_USER=odoo
-      - POSTGRES_PASSWORD=myodoo
       - POSTGRES_DB=postgres
+      - POSTGRES_PASSWORD=myodoo
+      - POSTGRES_USER=odoo
 ```
 
 Here's a last example showing you how to mount custom addons, how to use a custom configuration file and how to use volumes for the Odoo and postgres data dir:
@@ -141,6 +141,7 @@ services:
   db:
     image: postgres:10
     environment:
+      - POSTGRES_DB=postgres
       - POSTGRES_PASSWORD=odoo
       - POSTGRES_USER=odoo
       - PGDATA=/var/lib/postgresql/data/pgdata
