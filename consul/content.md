@@ -5,6 +5,9 @@ Consul is a distributed, highly-available, and multi-datacenter aware tool for s
 -	[Consul documentation](https://www.consul.io/)
 -	[Consul on GitHub](https://github.com/hashicorp/consul)
 
+## Notice for (x.y.z-ent) Image Variants
+This HashiCorp enterprise software is for use only by customers who have a valid and active license agreement with HashiCorp or an authorized HashiCorp reseller. If you do not have a valid license to use this software, you may not download or otherwise use it. All use of this software is subject to the terms and conditions of your license agreement, and all other rights are expressly reserved.
+
 %%LOGO%%
 
 # Consul and Docker
