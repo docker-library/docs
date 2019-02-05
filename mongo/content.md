@@ -74,6 +74,18 @@ To see the full list of possible options, check the MongoDB manual on [`mongod`]
 $ docker run -it --rm %%IMAGE%% --help
 ```
 
+## Setting WiredTiger cache size limits
+
+By default Mongo will set the `wiredTigerCacheSizeGB` to a value proportional to the host's total memory regardless of memory limits you may have imposed on the container. In such an instance you will want to set the cache size to something appropriate, taking into account any other processes you may be running in the container which would also utilize memory.
+
+Taking the examples above you can configure the cache size to use 1.5GB as:
+
+```console
+$ docker run --name some-%%REPO%% -d %%IMAGE%% --wiredTigerCacheSizeGB 1.5
+```
+
+See also https://docs.mongodb.com/manual/reference/program/mongod/#wiredtiger-options
+
 ## Using a custom MongoDB configuration file
 
 For a more complicated configuration setup, you can still use the MongoDB configuration file. `mongod` does not read a configuration file by default, so the `--config` option with the path to the configuration file needs to be specified. Create a custom configuration file and put it in the container by either creating a custom Dockerfile `FROM %%IMAGE%%` or mounting it from the host machine to the container. See the MongoDB manual for a full list of [configuration file](https://docs.mongodb.com/manual/reference/configuration-options/) options.
