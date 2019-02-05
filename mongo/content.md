@@ -84,7 +84,7 @@ Taking the examples above you can configure the cache size to use 1.5GB as:
 $ docker run --name some-%%REPO%% -d %%IMAGE%% --wiredTigerCacheSizeGB 1.5
 ```
 
-See also https://docs.mongodb.com/manual/reference/program/mongod/#wiredtiger-options
+See [the upstream "WiredTiger Options" documentation](https://docs.mongodb.com/manual/reference/program/mongod/#wiredtiger-options) for more details.
 
 ## Using a custom MongoDB configuration file
 
