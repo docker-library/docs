@@ -14,8 +14,6 @@ Redis is an open-source, networked, in-memory, key-value data store with optiona
 $ docker run --name some-redis -d %%IMAGE%%
 ```
 
-This image includes `EXPOSE 6379` (the redis port), so standard container linking will make it automatically available to the linked containers (as the following examples illustrate).
-
 ## start with persistent storage
 
 ```console

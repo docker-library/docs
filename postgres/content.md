@@ -16,7 +16,7 @@ PostgreSQL implements the majority of the SQL:2011 standard, is ACID-compliant a
 $ docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -d %%IMAGE%%
 ```
 
-This image includes `EXPOSE 5432` (the postgres port), so standard container linking will make it automatically available to the linked containers. The default `postgres` user and database are created in the entrypoint with `initdb`.
+The default `postgres` user and database are created in the entrypoint with `initdb`.
 
 > The postgres database is a default database meant for use by users, utilities and third party applications.
 >
