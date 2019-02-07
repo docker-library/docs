@@ -1,1 +1,1 @@
-This project contains the stable releases of the openSUSE distribution.
+DEPRECATED - for current official images see opensuse/leap and opensuse/tumbleweed.
