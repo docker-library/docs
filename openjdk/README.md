@@ -55,10 +55,10 @@ WARNING:
 -	[`8u191-jre-alpine3.9`, `8-jre-alpine3.9`, `8u191-jre-alpine`, `8-jre-alpine` (*8/jre/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/d93be18f4f2d5e8457169cac00e559d953b6028e/8/jre/alpine/Dockerfile)
 -	[`7u181-jdk-jessie`, `7u181-jessie`, `7-jdk-jessie`, `7-jessie` (*7/jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/5a23ec5ab11beacb71f89ec9f9935c52ab7e44bb/7/jdk/Dockerfile)
 -	[`7u181-jdk-slim-jessie`, `7u181-slim-jessie`, `7-jdk-slim-jessie`, `7-slim-jessie`, `7u181-jdk-slim`, `7u181-slim`, `7-jdk-slim`, `7-slim` (*7/jdk/slim/Dockerfile*)](https://github.com/docker-library/openjdk/blob/5a23ec5ab11beacb71f89ec9f9935c52ab7e44bb/7/jdk/slim/Dockerfile)
--	[`7u181-jdk-alpine3.9`, `7u181-alpine3.9`, `7-jdk-alpine3.9`, `7-alpine3.9`, `7u181-jdk-alpine`, `7u181-alpine`, `7-jdk-alpine`, `7-alpine` (*7/jdk/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/d93be18f4f2d5e8457169cac00e559d953b6028e/7/jdk/alpine/Dockerfile)
+-	[`7u201-jdk-alpine3.9`, `7u201-alpine3.9`, `7-jdk-alpine3.9`, `7-alpine3.9`, `7u201-jdk-alpine`, `7u201-alpine`, `7-jdk-alpine`, `7-alpine` (*7/jdk/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/a7cc605aead56177b2c86fecd9e0875378f8ce3d/7/jdk/alpine/Dockerfile)
 -	[`7u181-jre-jessie`, `7-jre-jessie` (*7/jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/5a23ec5ab11beacb71f89ec9f9935c52ab7e44bb/7/jre/Dockerfile)
 -	[`7u181-jre-slim-jessie`, `7-jre-slim-jessie`, `7u181-jre-slim`, `7-jre-slim` (*7/jre/slim/Dockerfile*)](https://github.com/docker-library/openjdk/blob/5a23ec5ab11beacb71f89ec9f9935c52ab7e44bb/7/jre/slim/Dockerfile)
--	[`7u181-jre-alpine3.9`, `7-jre-alpine3.9`, `7u181-jre-alpine`, `7-jre-alpine` (*7/jre/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/d93be18f4f2d5e8457169cac00e559d953b6028e/7/jre/alpine/Dockerfile)
+-	[`7u201-jre-alpine3.9`, `7-jre-alpine3.9`, `7u201-jre-alpine`, `7-jre-alpine` (*7/jre/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/a7cc605aead56177b2c86fecd9e0875378f8ce3d/7/jre/alpine/Dockerfile)
 
 ## Shared Tags
 
