@@ -20,11 +20,13 @@ By default you can login as `admin` with password `admin`, see [authentication d
 
 To analyze a Maven project:
 
-	# On Linux:
-	mvn sonar:sonar
-	
-	# With boot2docker:
-	mvn sonar:sonar -Dsonar.host.url=http://$(boot2docker ip):9000
+```console
+# On Linux:
+$ mvn sonar:sonar
+
+# With boot2docker:
+$ mvn sonar:sonar -Dsonar.host.url=http://$(boot2docker ip):9000
+```
 
 To analyze other kinds of projects and for more details see [Analyzing Source Code documentation](https://redirect.sonarsource.com/doc/analyzing-source-code.html).
 
