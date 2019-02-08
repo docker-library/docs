@@ -1,1 +1,1 @@
-DEPRECATED - for current official images see opensuse/leap and opensuse/tumbleweed.
+DEPRECATED - for current images by the openSUSE Project see opensuse/leap and opensuse/tumbleweed.
