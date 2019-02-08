@@ -22,6 +22,8 @@ This image has been deprecated in favor of the [`opensuse/leap`](https://hub.doc
 
 The opensuse:tumbleweed image is no longer updated, please use [`opensuse/tumbleweed`](https://hub.docker.com/r/opensuse/tumbleweed) instead. [`opensuse/tumbleweed`](https://hub.docker.com/r/opensuse/tumbleweed) is updated on every snapshot release.
 
+An archive for images of unsupported versions can be found at [`opensuse/archive`](https://hub.docker.com/r/opensuse/archive).
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`42.3`, `latest`, `leap` (*x86_64//Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/0611a04c49ad2d19cf4765455549e028f8a8015d/x86_64//Dockerfile)
