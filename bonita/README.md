@@ -230,7 +230,9 @@ The `-v /my/own/datadir:/opt/bonita` part of the command mounts the `/my/own/dat
 
 	-	Copy data from the filesystem
 
-			cp -r bonita_7.2.3_postgres bonita_migration
+		```console
+		$ cp -r bonita_7.2.3_postgres bonita_migration
+		```
 
 -	Retrieve the DB container IP
 
@@ -241,18 +243,22 @@ The `-v /my/own/datadir:/opt/bonita` part of the command mounts the `/my/own/dat
 
 -	Dump the database
 
-		export PGPASSWORD=mysecretpassword
-		pg_dump -O -x -h 172.17.0.26 -U postgres bonitadb > /tmp/bonitadb.sql
+	```console
+	$ export PGPASSWORD=mysecretpassword
+	$ pg_dump -O -x -h 172.17.0.26 -U postgres bonitadb > /tmp/bonitadb.sql
+	```
 
 	Note that businessdb won't be updated with the migration tool but you may want to also backup/move it.
 
 -	Load the dump
 
-		export PGPASSWORD=mysecretpassword
-		psql -U postgres -h 172.17.0.26 -d postgres -c "CREATE USER newbonitauser WITH PASSWORD 'newbonitapass';"
-		psql -U postgres -h 172.17.0.26 -d postgres -c "CREATE DATABASE newbonitadb OWNER newbonitauser;"
-		export PGPASSWORD=newbonitapass
-		cat /tmp/bonitadb.sql | psql -U newbonitauser -h 172.17.0.26 newbonitadb
+	```console
+	$ export PGPASSWORD=mysecretpassword
+	$ psql -U postgres -h 172.17.0.26 -d postgres -c "CREATE USER newbonitauser WITH PASSWORD 'newbonitapass';"
+	$ psql -U postgres -h 172.17.0.26 -d postgres -c "CREATE DATABASE newbonitadb OWNER newbonitauser;"
+	$ export PGPASSWORD=newbonitapass
+	$ cat /tmp/bonitadb.sql | psql -U newbonitauser -h 172.17.0.26 newbonitadb
+	```
 
 -	Retrieve the last migration tool
 
@@ -285,11 +291,15 @@ The `-v /my/own/datadir:/opt/bonita` part of the command mounts the `/my/own/dat
 
 -	Configure the migration tool
 
-		cd bonita-migration-distrib-2.37.0
+	```console
+	$ cd bonita-migration-distrib-2.37.0
+	```
 
 	edit the migration tool config to point towards the copy of bonita home and db
 
-		vim Config.properties
+	```console
+	$ vim Config.properties
+	```
 
 	For example :
 
@@ -303,8 +313,10 @@ The `-v /my/own/datadir:/opt/bonita` part of the command mounts the `/my/own/dat
 
 -	Launch the migration
 
-		cd bin
-		./bonita-migration-distrib
+	```console
+	$ cd bin
+	$ ./bonita-migration-distrib
+	```
 
 -	Launch the new container pointing towards the copy of DB and filesystem
 
