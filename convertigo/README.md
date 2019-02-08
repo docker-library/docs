@@ -159,10 +159,12 @@ $ docker run -d --name C8O-MBAAS -e JAVA_OPTS="-Xmx4096m -DjvmRoute=server1" -p 
 
 You can use this [stack](https://github.com/convertigo/docker/blob/master/compose/mbaas/docker-compose.yml) to run a complete Convertigo MBaaS server with FullSync repository and MySQL analytics in a few command lines.
 
-	mkdir c8oMBaaS
-	cd c8oMBaaS
-	wget https://raw.githubusercontent.com/convertigo/docker/master/compose/mbaas/docker-compose.yml
-	docker-compose up -d
+```console
+$ mkdir c8oMBaaS
+$ cd c8oMBaaS
+$ wget https://raw.githubusercontent.com/convertigo/docker/master/compose/mbaas/docker-compose.yml
+$ docker-compose up -d
+```
 
 # Image Variants
 

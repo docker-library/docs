@@ -75,10 +75,12 @@ PostgreSQL is the recommanded database.
 
 [Set max_prepared_transactions to 100](https://documentation.bonitasoft.com/bonita/7.8/database-configuration#toc5):
 
-	mkdir -p custom_postgres
-	echo '#!/bin/bash' > custom_postgres/bonita.sh
-	echo 'sed -i "s/^.*max_prepared_transactions\s*=\s*\(.*\)$/max_prepared_transactions = 100/" "$PGDATA"/postgresql.conf' >> custom_postgres/bonita.sh
-	chmod +x custom_postgres/bonita.sh
+```console
+$ mkdir -p custom_postgres
+$ echo '#!/bin/bash' > custom_postgres/bonita.sh
+$ echo 'sed -i "s/^.*max_prepared_transactions\s*=\s*\(.*\)$/max_prepared_transactions = 100/" "$PGDATA"/postgresql.conf' >> custom_postgres/bonita.sh
+$ chmod +x custom_postgres/bonita.sh
+```
 
 Mount that directory location as /docker-entrypoint-initdb.d inside the PostgreSQL container:
 
@@ -98,9 +100,11 @@ There are known issues with the management of XA transactions by MySQL engine an
 
 [Increase the packet size](https://documentation.bonitasoft.com/bonita/7.8/database-configuration#toc5) which is set by default to 1M:
 
-	mkdir -p custom_mysql
-	echo "[mysqld]" > custom_mysql/bonita.cnf
-	echo "max_allowed_packet=16M" >> custom_mysql/bonita.cnf
+```console
+$ mkdir -p custom_mysql
+$ echo "[mysqld]" > custom_mysql/bonita.cnf
+$ echo "max_allowed_packet=16M" >> custom_mysql/bonita.cnf
+```
 
 Mount that directory location as /etc/mysql/conf.d inside the MySQL container:
 
@@ -452,12 +456,14 @@ If you would like to do additional initialization, you can add a `*.sh` script u
 
 For example, you can increase the log level :
 
-	mkdir -p custom_bonita
-	echo '#!/bin/bash' > custom_bonita/bonita.sh
-	echo 'sed -i "s/^org.bonitasoft.level = WARNING$/org.bonitasoft.level = FINEST/" /opt/bonita/BonitaCommunity-7.8.1-Tomcat-8.5.34/server/conf/logging.properties' >> custom_bonita/bonita.sh
-	chmod +x custom_bonita/bonita.sh
-	
-	docker run --name bonita_custom -v "$PWD"/custom_bonita/:/opt/custom-init.d -d -p 8080:8080 bonita
+```console
+$ mkdir -p custom_bonita
+$ echo '#!/bin/bash' > custom_bonita/bonita.sh
+$ echo 'sed -i "s/^org.bonitasoft.level = WARNING$/org.bonitasoft.level = FINEST/" /opt/bonita/BonitaCommunity-7.8.1-Tomcat-8.5.34/server/conf/logging.properties' >> custom_bonita/bonita.sh
+$ chmod +x custom_bonita/bonita.sh
+
+$ docker run --name bonita_custom -v "$PWD"/custom_bonita/:/opt/custom-init.d -d -p 8080:8080 bonita
+```
 
 Note: There are several ways to check the `bonita` logs. One of them is
 
