@@ -1,2 +1,2 @@
-Official Docker Images for Eclipse OpenJ9 binaries built by AdoptOpenJDK. 
+Official Docker Images for OpenJDK + Eclipse OpenJ9 binaries built by AdoptOpenJDK. 
 

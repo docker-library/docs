@@ -12,7 +12,7 @@ AdoptOpenJDK is a community of Java user group members, Java developers and vend
 
 ### Images
 
-There are two types of Docker images here: the Software Developers Kit (SDK), and a small footprint version of the SDK (slim). These images can be used as the basis for custom built images for running your applications.
+There are two types of Docker images here: the Java Development Kit (JDK), and a small footprint version of the JDK (slim). These images can be used as the basis for custom built images for running your applications.
 
 
 ##### Multi-Arch Image
@@ -26,7 +26,7 @@ Docker Images for the following architectures are now available:
 To run a pre-built jar file with the JRE image, use the following commands:
 
 ```dockerfile
-FROM %%IMAGE%%:8-sdk
+FROM %%IMAGE%%:8-jdk
 RUN mkdir /opt/app
 COPY japp.jar /opt/app
 CMD ["java", "-jar", "/opt/app/japp.jar"]
@@ -42,7 +42,7 @@ docker run -it --rm japp
 If you want to place the jar file on the host file system instead of inside the container, you can mount the host path onto the container by using the following commands:
 
 ```dockerfile
-FROM %%IMAGE%%:sdk
+FROM %%IMAGE%%:jdk
 CMD ["java", "-jar", "/opt/app/japp.jar"]
 ```
 
