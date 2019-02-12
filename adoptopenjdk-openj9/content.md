@@ -14,7 +14,6 @@ AdoptOpenJDK is a community of Java user group members, Java developers and vend
 
 There are two types of Docker images here: the Java Development Kit (JDK), and a small footprint version of the JDK (slim). These images can be used as the basis for custom built images for running your applications.
 
-
 ##### Multi-Arch Image
 
 Docker Images for the following architectures are now available:
