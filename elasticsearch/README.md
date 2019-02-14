@@ -26,9 +26,7 @@ WARNING:
 	the [Elasticsearch Discuss Forums](https://discuss.elastic.co/c/elasticsearch), the [Elastic community](https://www.elastic.co/community)
 
 -	**Where to file issues**:  
-	For issues with Elasticsearch Docker Image: https://github.com/elastic/elasticsearch-docker/issues
-
-For issues with Elasticsearch: [https://github.com/elastic/elasticsearch/issues](https://github.com/elastic/elasticsearch/issues)
+	For issues with Elasticsearch Docker Image or Elasticsearch: https://github.com/elastic/elasticsearch-docker/issues
 
 -	**Maintained by**:  
 	[the Elastic Team](https://github.com/elastic/elasticsearch-docker)
