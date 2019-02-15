@@ -26,10 +26,10 @@ WARNING:
 	the [Elasticsearch Discuss Forums](https://discuss.elastic.co/c/elasticsearch), the [Elastic community](https://www.elastic.co/community)
 
 -	**Where to file issues**:  
-	For issues with Elasticsearch Docker Image or Elasticsearch: https://github.com/elastic/elasticsearch-docker/issues
+	For issues with Elasticsearch Docker Image or Elasticsearch: https://github.com/elastic/elasticsearch/issues
 
 -	**Maintained by**:  
-	[the Elastic Team](https://github.com/elastic/elasticsearch-docker)
+	[the Elastic Team](https://github.com/elastic/elasticsearch)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/elasticsearch/)
