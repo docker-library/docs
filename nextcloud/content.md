@@ -168,7 +168,7 @@ services:
   app:
     image: %%IMAGE%%
     ports:
-      - 8080:80
+      - 127.0.0.1:8080:80
     links:
       - db
     volumes:
@@ -217,7 +217,7 @@ services:
   web:
     image: nginx
     ports:
-      - 8080:80
+      - 127.0.0.1:8080:80
     links:
       - app
     volumes:
