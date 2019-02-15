@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.30.0-uclibc`, `1.30-uclibc`, `1-uclibc`, `uclibc` (*uclibc/Dockerfile*)](https://github.com/docker-library/busybox/blob/b1495be7b9777efe53b3ead0325fa7d7984723f8/uclibc/Dockerfile)
--	[`1.30.0-glibc`, `1.30-glibc`, `1-glibc`, `glibc` (*glibc/Dockerfile*)](https://github.com/docker-library/busybox/blob/b1495be7b9777efe53b3ead0325fa7d7984723f8/glibc/Dockerfile)
--	[`1.30.0-musl`, `1.30-musl`, `1-musl`, `musl` (*musl/Dockerfile*)](https://github.com/docker-library/busybox/blob/b1495be7b9777efe53b3ead0325fa7d7984723f8/musl/Dockerfile)
--	[`1.30.0`, `1.30`, `1`, `latest` (*uclibc/Dockerfile*)](https://github.com/docker-library/busybox/blob/b1495be7b9777efe53b3ead0325fa7d7984723f8/uclibc/Dockerfile)
+-	[`1.30.1-uclibc`, `1.30-uclibc`, `1-uclibc`, `uclibc` (*uclibc/Dockerfile*)](https://github.com/docker-library/busybox/blob/82bc0333a9ae148fbb4246bcbff1487b3fc0c510/uclibc/Dockerfile)
+-	[`1.30.1-glibc`, `1.30-glibc`, `1-glibc`, `glibc` (*glibc/Dockerfile*)](https://github.com/docker-library/busybox/blob/82bc0333a9ae148fbb4246bcbff1487b3fc0c510/glibc/Dockerfile)
+-	[`1.30.1-musl`, `1.30-musl`, `1-musl`, `musl` (*musl/Dockerfile*)](https://github.com/docker-library/busybox/blob/82bc0333a9ae148fbb4246bcbff1487b3fc0c510/musl/Dockerfile)
+-	[`1.30.1`, `1.30`, `1`, `latest` (*uclibc/Dockerfile*)](https://github.com/docker-library/busybox/blob/82bc0333a9ae148fbb4246bcbff1487b3fc0c510/uclibc/Dockerfile)
 
 # Quick reference
 
