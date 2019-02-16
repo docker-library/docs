@@ -16,7 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `9`, `9.2`, `9.2.5`, `9.2-jre`, `9.2.6-jre`, `9.2.6.0`, `9.2.6.0-jre` (*9000/jre/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/baed0bc286dba0992746c2f9cbb311a1c945a16f/9000/jre/Dockerfile)
+-	[`latest`, `9`, `9.2`, `9.2.6`, `9.2-jre`, `9.2.6-jre`, `9.2.6.0`, `9.2.6.0-jre` (*9000/jre/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/baed0bc286dba0992746c2f9cbb311a1c945a16f/9000/jre/Dockerfile)
 -	[`9-alpine`, `9.2-alpine`, `9.2.6-alpine`, `9.2-jre-alpine`, `9.2.6-jre-alpine`, `9.2.6.0-alpine`, `9.2.6.0-jre-alpine` (*9000/alpine-jre/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/baed0bc286dba0992746c2f9cbb311a1c945a16f/9000/alpine-jre/Dockerfile)
 -	[`9-jdk`, `9.2-jdk`, `9.2.6-jdk`, `9.2.6.0-jdk` (*9000/jdk/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/baed0bc286dba0992746c2f9cbb311a1c945a16f/9000/jdk/Dockerfile)
 -	[`9-jdk-alpine`, `9.2-jdk-alpine`, `9.2.6-jdk-alpine`, `9.2.6.0-jdk-alpine` (*9000/alpine-jdk/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/baed0bc286dba0992746c2f9cbb311a1c945a16f/9000/alpine-jdk/Dockerfile)
