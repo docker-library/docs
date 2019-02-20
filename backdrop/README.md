@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.10.1`, `1.10`, `1`, `1.10.1-apache`, `1.10-apache`, `1-apache`, `apache`, `latest` (*1/apache/Dockerfile*)](https://github.com/backdrop-ops/backdrop-docker/blob/6e10ccf33adf2b59c8197336e510688a49e342f8/1/apache/Dockerfile)
--	[`1.10.1-fpm`, `1.10-fpm`, `1-fpm`, `fpm` (*1/fpm/Dockerfile*)](https://github.com/backdrop-ops/backdrop-docker/blob/6e10ccf33adf2b59c8197336e510688a49e342f8/1/fpm/Dockerfile)
+-	[`1.10.1`, `1.10`, `1`, `1.10.1-apache`, `1.10-apache`, `1-apache`, `apache`, `latest` (*1/apache/Dockerfile*)](https://github.com/backdrop-ops/backdrop-docker/blob/7cc189d199f92b981c1e2dc71c4d2d3aa4f4fa45/1/apache/Dockerfile)
+-	[`1.10.1-fpm`, `1.10-fpm`, `1-fpm`, `fpm` (*1/fpm/Dockerfile*)](https://github.com/backdrop-ops/backdrop-docker/blob/7cc189d199f92b981c1e2dc71c4d2d3aa4f4fa45/1/fpm/Dockerfile)
 
 # Quick reference
 
@@ -126,7 +126,6 @@ If you need additional PHP extensions, you'll need to create your own image `FRO
 The following Docker Hub features can help with the task of keeping your dependent images up-to-date:
 
 -	[Automated Builds](https://docs.docker.com/docker-hub/builds/) let Docker Hub automatically build your Dockerfile each time you push changes to it.
--	[Repository Links](https://docs.docker.com/docker-hub/builds/#repository-links) can ensure that your image is also rebuilt any time `backdrop` is updated.
 
 # License
 
