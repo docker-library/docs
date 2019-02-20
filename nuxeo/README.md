@@ -19,7 +19,7 @@ WARNING:
 -	[`7.10`, `7`, `LTS-2015` (*7.10/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/b5c1f07464530ef23f78671547cfbe94bc027848/7.10/Dockerfile)
 -	[`8.10`, `8`, `LTS-2016` (*8.10/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/410650daecfa5d8bc79dea54a875d16f47b80eda/8.10/Dockerfile)
 -	[`9.10`, `9`, `LTS-2017` (*9.10/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/5c0031a6e7ac1f52a9ce80b26fd8e764d319a8b0/9.10/Dockerfile)
--	[`10.10`, `10`, `LTS-2019`, `LTS`, `FT`, `latest` (*10.10/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/ae5abd6e6c4eb4ef00577214905ede32d225987f/10.10/Dockerfile)
+-	[`10.10`, `10`, `LTS-2019`, `LTS`, `FT`, `latest` (*10.10/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/c54eabfab0aabb19cf31c7e98ac4add1a8bee100/10.10/Dockerfile)
 
 # Quick reference
 
@@ -33,7 +33,7 @@ WARNING:
 	[Nuxeo](https://github.com/nuxeo/docker-nuxeo)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/nuxeo/)
+	[`amd64`](https://hub.docker.com/r/amd64/nuxeo/), [`arm64v8`](https://hub.docker.com/r/arm64v8/nuxeo/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/nuxeo/` directory](https://github.com/docker-library/repo-info/blob/master/repos/nuxeo) ([history](https://github.com/docker-library/repo-info/commits/master/repos/nuxeo))  
