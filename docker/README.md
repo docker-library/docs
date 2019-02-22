@@ -19,9 +19,9 @@ WARNING:
 -	[`18.09.2`, `18.09`, `18`, `stable`, `test`, `latest` (*18.09/Dockerfile*)](https://github.com/docker-library/docker/blob/8de974821c5a6d82783707b5a0fef19d9531b0fc/18.09/Dockerfile)
 -	[`18.09.2-dind`, `18.09-dind`, `18-dind`, `stable-dind`, `test-dind`, `dind` (*18.09/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/65fab2cd767c10f22ee66afa919eda80dbdc8872/18.09/dind/Dockerfile)
 -	[`18.09.2-git`, `18.09-git`, `18-git`, `stable-git`, `test-git`, `git` (*18.09/git/Dockerfile*)](https://github.com/docker-library/docker/blob/91bbc4f7b06c06020d811dafb2266bcd7cf6c06d/18.09/git/Dockerfile)
--	[`18.06.2-ce`, `18.06.2`, `18.06`, `edge` (*18.06/Dockerfile*)](https://github.com/docker-library/docker/blob/c2943e9a0803eea85526f63510a0a8c1e38630d5/18.06/Dockerfile)
--	[`18.06.2-ce-dind`, `18.06.2-dind`, `18.06-dind`, `edge-dind` (*18.06/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/65fab2cd767c10f22ee66afa919eda80dbdc8872/18.06/dind/Dockerfile)
--	[`18.06.2-ce-git`, `18.06.2-git`, `18.06-git`, `edge-git` (*18.06/git/Dockerfile*)](https://github.com/docker-library/docker/blob/595ad0c92090937dcb7c200900fb97e36d36c412/18.06/git/Dockerfile)
+-	[`18.06.3-ce`, `18.06.3`, `18.06`, `edge` (*18.06/Dockerfile*)](https://github.com/docker-library/docker/blob/08e48bcb07e3edeff5399676924c42d18f894df6/18.06/Dockerfile)
+-	[`18.06.3-ce-dind`, `18.06.3-dind`, `18.06-dind`, `edge-dind` (*18.06/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/65fab2cd767c10f22ee66afa919eda80dbdc8872/18.06/dind/Dockerfile)
+-	[`18.06.3-ce-git`, `18.06.3-git`, `18.06-git`, `edge-git` (*18.06/git/Dockerfile*)](https://github.com/docker-library/docker/blob/595ad0c92090937dcb7c200900fb97e36d36c412/18.06/git/Dockerfile)
 
 # Quick reference
 
