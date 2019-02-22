@@ -14,10 +14,10 @@ The base filesystem tarball for this image is auto-generated in Arch Linux infra
 
 This image is intended to serve the following goals:
 
-* Provide the Arch experience in a Docker Image
-* Provide the most simple but complete image to base every other upon
-* pacman needs to work out of the box
-* All installed packages have to be kept unmodified
+	- Provide the Arch experience in a Docker Image
+	- Provide the most simple but complete image to base every other upon
+	- pacman needs to work out of the box
+	- All installed packages have to be kept unmodified
 
 ## Base packages
 
