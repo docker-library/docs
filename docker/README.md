@@ -16,12 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`18.09.3-rc1`, `18.09-rc`, `rc`, `test` (*18.09-rc/Dockerfile*)](https://github.com/docker-library/docker/blob/0ea1769704a07017fd9a876590de2feb434d33e2/18.09-rc/Dockerfile)
--	[`18.09.3-rc1-dind`, `18.09-rc-dind`, `rc-dind`, `test-dind` (*18.09-rc/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/42a505379852819393f6a904eef3b1943070bf56/18.09-rc/dind/Dockerfile)
--	[`18.09.3-rc1-git`, `18.09-rc-git`, `rc-git`, `test-git` (*18.09-rc/git/Dockerfile*)](https://github.com/docker-library/docker/blob/42a505379852819393f6a904eef3b1943070bf56/18.09-rc/git/Dockerfile)
--	[`18.09.2`, `18.09`, `18`, `stable`, `latest` (*18.09/Dockerfile*)](https://github.com/docker-library/docker/blob/0ea1769704a07017fd9a876590de2feb434d33e2/18.09/Dockerfile)
--	[`18.09.2-dind`, `18.09-dind`, `18-dind`, `stable-dind`, `dind` (*18.09/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/65fab2cd767c10f22ee66afa919eda80dbdc8872/18.09/dind/Dockerfile)
--	[`18.09.2-git`, `18.09-git`, `18-git`, `stable-git`, `git` (*18.09/git/Dockerfile*)](https://github.com/docker-library/docker/blob/91bbc4f7b06c06020d811dafb2266bcd7cf6c06d/18.09/git/Dockerfile)
+-	[`18.09.3`, `18.09`, `18`, `stable`, `test`, `latest` (*18.09/Dockerfile*)](https://github.com/docker-library/docker/blob/7411f18388ff3cc475f8b866cd2561f6b7822541/18.09/Dockerfile)
+-	[`18.09.3-dind`, `18.09-dind`, `18-dind`, `stable-dind`, `test-dind`, `dind` (*18.09/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/65fab2cd767c10f22ee66afa919eda80dbdc8872/18.09/dind/Dockerfile)
+-	[`18.09.3-git`, `18.09-git`, `18-git`, `stable-git`, `test-git`, `git` (*18.09/git/Dockerfile*)](https://github.com/docker-library/docker/blob/91bbc4f7b06c06020d811dafb2266bcd7cf6c06d/18.09/git/Dockerfile)
 -	[`18.06.3-ce`, `18.06.3`, `18.06`, `edge` (*18.06/Dockerfile*)](https://github.com/docker-library/docker/blob/0ea1769704a07017fd9a876590de2feb434d33e2/18.06/Dockerfile)
 -	[`18.06.3-ce-dind`, `18.06.3-dind`, `18.06-dind`, `edge-dind` (*18.06/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/65fab2cd767c10f22ee66afa919eda80dbdc8872/18.06/dind/Dockerfile)
 -	[`18.06.3-ce-git`, `18.06.3-git`, `18.06-git`, `edge-git` (*18.06/git/Dockerfile*)](https://github.com/docker-library/docker/blob/595ad0c92090937dcb7c200900fb97e36d36c412/18.06/git/Dockerfile)
