@@ -356,9 +356,9 @@ secrets:
 From the [XWiki Solr Search API documentation](http://extensions.xwiki.org/xwiki/bin/view/Extension/Solr%20Search%20API):
 
 > By default XWiki ships with an embedded Solr. This is mostly for ease of use but the embedded instance is not really recommended by the Solr team so you might want to externalize it when starting to have a wiki with a lots of pages. Solr is using a lot of memory and a standalone Solr instance is generally better in term of speed than the embedded one. It should not be much noticeable in a small wiki but if you find yourself starting to have memory issues and slow search results you should probably try to install and setup an external instance of Solr using the guide.
-> 
+>
 > Also the speed of the drive where the Solr index is located can be very important because Solr/Lucene is quite filesystem intensive. For example putting it in a SSD might give a noticeable boost.
-> 
+>
 > You can also find more Solr-specific performance details on https://wiki.apache.org/solr/SolrPerformanceProblems. Standalone Solr also comes with a very nice UI, along with monitoring and test tools.
 
 This image provides the configuration parameters `INDEX_HOST` and `INDEX_PORT` which are used to configure `xwiki.properties` with:
