@@ -9,13 +9,14 @@ As an application wiki, XWiki allows for the storing of structured data and the 
 %%LOGO%%
 
 # Table of contents
+
 <!-- generated with pandoc -f gfm --toc -o readme-toc.md README.md -->
 
 -	[Introduction](#introduction)
 -	[How to use this image](#how-to-use-this-image)
 	-	[Pulling existing image](#pulling-existing-image)
 		-	[Using docker run](#using-docker-run)
-        	-	[Using docker-compose](#using-docker-compose)
+		-	[Using docker-compose](#using-docker-compose)
 		-	[Using Docker Swarm](#using-docker-swarm)
 	-	[Using an external Solr service](#using-an-external-solr-service)
 		-	[Preparing Solr container](#preparing-solr-container)
