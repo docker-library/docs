@@ -132,7 +132,7 @@ This variable allows you to specify the name of a database to be used for creati
 
 ### `MONGO_NON_ROOT_USERNAME`, `MONGO_NON_ROOT_PASSWORD`, and `MONGO_NON_ROOT_ROLE`
 
-Additionally, if you have set `MONGO_NON_ROOT_USERNAME` and `MONGO_NON_ROOT_PASSWORD` then a username with password will be created with the the `MONGO_NON_ROOT_ROLE` role. The `MONGO_NON_ROOT_ROLE` variable is optional and if not specified will default to `readWrite`. This user will be created with this role on the `MONGO_INITDB_DATABASE` only if they are specified.
+Additionally, if you have set `MONGO_NON_ROOT_USERNAME` and `MONGO_NON_ROOT_PASSWORD` then a username with password will be created with the the `MONGO_NON_ROOT_ROLE` role. The `MONGO_NON_ROOT_ROLE` variable is optional and if not specified will default to `readWrite`. This user will be created with this role on the `MONGO_INITDB_DATABASE` only if they are specified. (Note: this will only work if you have set both `MONGO_INITDB_ROOT_USERNAME` and `MONGO_INITDB_ROOT_PASSWORD`)
 
 ## Docker Secrets
 
