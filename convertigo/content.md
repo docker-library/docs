@@ -98,10 +98,20 @@ $ docker run -d --name C8O-MBAAS -e CONVERTIGO_TESTPLATFORM_USER=tp_user -e CONV
 
 Convertigo is based on a *Java* process with some defaults *JVM* options. You can override our defaults *JVM* options with you own.
 
-Add any *Java JVM* options such as -Xmx or -D[something]
+Add any *Java JVM* options such as -D[something] :
 
 ```console
-$ docker run -d --name C8O-MBAAS -e JAVA_OPTS="-Xmx4096m -DjvmRoute=server1" -p 28080:28080 %%IMAGE%%
+$ docker run -d --name C8O-MBAAS -e JAVA_OPTS="-DjvmRoute=server1" -p 28080:28080 %%IMAGE%%
+```
+
+## `JXMX` Environment variable
+
+Convertigo tries to allocate this amount of memory in the container and will automatically reduce it until the value is compatible for the Docker memory constraints. Once the best value found, it is used as `-Xmx=${JXMX}m` parameter for the JVM.
+
+The default `JXMX` value is `2048` and can be defined :
+
+```console
+$ docker run -d --name C8O-MBAAS -e JXMX="4096" -p 28080:28080 %%IMAGE%%
 ```
 
 ## Pre configurated Docker compose stack
