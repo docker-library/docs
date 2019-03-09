@@ -16,9 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.7.3-apache`, `1.7-apache`, `1-apache`, `apache`, `1.7.3`, `1.7`, `1`, `latest` (*apache/Dockerfile*)](https://github.com/YOURLS/docker-yourls/blob/974a5688421ab0eae1dbcbf832cb140a1a6adb0b/apache/Dockerfile)
--	[`1.7.3-fpm`, `1.7-fpm`, `1-fpm`, `fpm` (*fpm/Dockerfile*)](https://github.com/YOURLS/docker-yourls/blob/974a5688421ab0eae1dbcbf832cb140a1a6adb0b/fpm/Dockerfile)
--	[`1.7.3-fpm-alpine`, `1.7-fpm-alpine`, `1-fpm-alpine`, `fpm-alpine` (*fpm-alpine/Dockerfile*)](https://github.com/YOURLS/docker-yourls/blob/974a5688421ab0eae1dbcbf832cb140a1a6adb0b/fpm-alpine/Dockerfile)
+-	[`1.7.3-apache`, `1.7-apache`, `1-apache`, `apache`, `1.7.3`, `1.7`, `1`, `latest` (*apache/Dockerfile*)](https://github.com/YOURLS/docker-yourls/blob/71832c631cd4cb174070d54d3136aa2e413edee8/apache/Dockerfile)
+-	[`1.7.3-fpm`, `1.7-fpm`, `1-fpm`, `fpm` (*fpm/Dockerfile*)](https://github.com/YOURLS/docker-yourls/blob/71832c631cd4cb174070d54d3136aa2e413edee8/fpm/Dockerfile)
+-	[`1.7.3-fpm-alpine`, `1.7-fpm-alpine`, `1-fpm-alpine`, `fpm-alpine` (*fpm-alpine/Dockerfile*)](https://github.com/YOURLS/docker-yourls/blob/71832c631cd4cb174070d54d3136aa2e413edee8/fpm-alpine/Dockerfile)
 
 # Quick reference
 
@@ -61,6 +61,8 @@ YOURLS is a set of PHP scripts that will allow you to run Your Own URL Shortener
 ```console
 $ docker run --name some-yourls --link some-mysql:mysql \
     -e YOURLS_SITE="https://example.com" \
+    -e YOURLS_USER="example_username" \
+    -e YOURLS_PASS="example_password" \
     -d yourls
 ```
 
@@ -73,6 +75,8 @@ The following environment variables are also honored for configuring your YOURLS
 -	`-e YOURLS_TABLE_PREFIX=...` (defaults to "", only set this when you need to override the default table prefix in wp-config.php)
 -	`-e YOURLS_COOKIEKEY=...` (default to unique random SHA1s)
 -	`-e YOURLS_SITE=...` (yourls instance url)
+-	`-e YOURLS_USER=...` (yourls instance user name)
+-	`-e YOURLS_PASS=...` (yourls instance user password)
 
 If the `YOURLS_DB_NAME` specified does not already exist on the given MySQL server, it will be created automatically upon startup of the `yourls` container, provided that the `YOURLS_DB_USER` specified has the necessary permissions to create it.
 
@@ -108,6 +112,8 @@ services:
     environment:
       YOURLS_DB_PASS: example
       YOURLS_SITE: https://example.com
+      YOURLS_USER: example_username
+      YOURLS_PASS: example_password
 
   mysql:
     image: mysql:5.7
@@ -116,7 +122,7 @@ services:
       MYSQL_ROOT_PASSWORD: example
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/56798ba4051d863557e7e6256c452a9265745675/yourls/stack.yml)
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/be1a84b44ec3c028aa0ac5a9c8e413e43dfe05e4/yourls/stack.yml)
 
 Run `docker stack deploy -c stack.yml yourls` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
 
