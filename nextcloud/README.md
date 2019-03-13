@@ -25,6 +25,9 @@ WARNING:
 -	[`15.0.5-apache`, `15.0-apache`, `15-apache`, `apache`, `stable-apache`, `production-apache`, `15.0.5`, `15.0`, `15`, `latest`, `stable`, `production` (*15.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/532834349b9e12e9739d82e9fd58858d7251f690/15.0/apache/Dockerfile)
 -	[`15.0.5-fpm-alpine`, `15.0-fpm-alpine`, `15-fpm-alpine`, `fpm-alpine`, `stable-fpm-alpine`, `production-fpm-alpine` (*15.0/fpm-alpine/Dockerfile*)](https://github.com/nextcloud/docker/blob/532834349b9e12e9739d82e9fd58858d7251f690/15.0/fpm-alpine/Dockerfile)
 -	[`15.0.5-fpm`, `15.0-fpm`, `15-fpm`, `fpm`, `stable-fpm`, `production-fpm` (*15.0/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/532834349b9e12e9739d82e9fd58858d7251f690/15.0/fpm/Dockerfile)
+-	[`16.0.0alpha1-apache`, `16.0.0-alpha-apache`, `16.0-alpha-apache`, `16-alpha-apache`, `16.0.0alpha1`, `16.0.0-alpha`, `16.0-alpha`, `16-alpha` (*16.0-alpha/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/60622a729bf841a7f84e9e3672b3118c6823d521/16.0-alpha/apache/Dockerfile)
+-	[`16.0.0alpha1-fpm-alpine`, `16.0.0-alpha-fpm-alpine`, `16.0-alpha-fpm-alpine`, `16-alpha-fpm-alpine` (*16.0-alpha/fpm-alpine/Dockerfile*)](https://github.com/nextcloud/docker/blob/60622a729bf841a7f84e9e3672b3118c6823d521/16.0-alpha/fpm-alpine/Dockerfile)
+-	[`16.0.0alpha1-fpm`, `16.0.0-alpha-fpm`, `16.0-alpha-fpm`, `16-alpha-fpm` (*16.0-alpha/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/60622a729bf841a7f84e9e3672b3118c6823d521/16.0-alpha/fpm/Dockerfile)
 
 # Quick reference
 
