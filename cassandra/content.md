@@ -13,7 +13,7 @@ Apache Cassandra is an open source distributed database management system design
 Starting a Cassandra instance is simple:
 
 ```console
-$ docker run --name some-%%REPO%% -d %%IMAGE%%:tag
+$ docker run --name some-%%REPO%% --network some-network -d %%IMAGE%%:tag
 ```
 
 ... where `some-%%REPO%%` is the name you want to assign to your container and `tag` is the tag specifying the Cassandra version you want. See the list above for relevant tags.
@@ -23,15 +23,7 @@ $ docker run --name some-%%REPO%% -d %%IMAGE%%:tag
 Using the environment variables documented below, there are two cluster scenarios: instances on the same machine and instances on separate machines. For the same machine, start the instance as described above. To start other instances, just tell each new node where the first is.
 
 ```console
-$ docker run --name some-%%REPO%%2 -d -e CASSANDRA_SEEDS="$(docker inspect --format='{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' some-%%REPO%%)" %%IMAGE%%:tag
-```
-
-... where `some-%%REPO%%` is the name of your original Cassandra Server container, taking advantage of `docker inspect` to get the IP address of the other container.
-
-Or you may use Docker networks to tell the new node where the first is:
-
-```console
-$ docker run --name some-cassandra2 -d --network some-network %%IMAGE%%:tag
+$ docker run --name some-%%REPO%%2 -d --network some-network -e CASSANDRA_SEEDS=some-%%REPO%% %%IMAGE%%:tag
 ```
 
 For separate machines (ie, two VMs on a cloud provider), you need to tell Cassandra what IP address to advertise to the other nodes (since the address of the container is behind the docker bridge).
@@ -53,7 +45,7 @@ $ docker run --name some-%%REPO%% -d -e CASSANDRA_BROADCAST_ADDRESS=10.43.43.43 
 The following command starts another Cassandra container instance and runs `cqlsh` (Cassandra Query Language Shell) against your original Cassandra container, allowing you to execute CQL statements against your database instance:
 
 ```console
-$ docker run -it --network some-network --rm %%IMAGE%% cqlsh some-cassandra
+$ docker run -it --network some-network --rm %%IMAGE%% cqlsh some-%%REPO%%
 ```
 
 More information about the CQL can be found in the [Cassandra documentation](https://cassandra.apache.org/doc/latest/cql/index.html).
