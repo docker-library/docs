@@ -120,10 +120,10 @@ $ docker run --name some-mongo -d mongo:tag
 
 ## Connect to MongoDB from another Docker container
 
-The MongoDB server in the image listens on the standard MongoDB port, `27017`, so connecting via container linking or Docker networks will be the same as connecting to a remote `mongod`. The following example starts another MongoDB container instance and runs the `mongo` command line client against the original MongoDB container from the example above, allowing you to execute MongoDB statements against your database instance:
+The MongoDB server in the image listens on the standard MongoDB port, `27017`, so connecting via Docker networks will be the same as connecting to a remote `mongod`. The following example starts another MongoDB container instance and runs the `mongo` command line client against the original MongoDB container from the example above, allowing you to execute MongoDB statements against your database instance:
 
 ```console
-$ docker run -it --link some-mongo:mongo --rm mongo mongo --host mongo test
+$ docker run -it --network some-network --rm mongo mongo --host some-mongo test
 ```
 
 ... where `some-mongo` is the name of your original `mongo` container.
@@ -234,13 +234,13 @@ These variables, used in conjunction, create a new user and set that user's pass
 The following is an example of using these two variables to create a MongoDB instance and then using the `mongo` cli to connect against the `admin` authentication database.
 
 ```console
-$ docker run -d --name some-mongo \
+$ docker run -d --network some-network --name some-mongo \
 	-e MONGO_INITDB_ROOT_USERNAME=mongoadmin \
 	-e MONGO_INITDB_ROOT_PASSWORD=secret \
 	mongo
 
-$ docker run -it --rm --link some-mongo:mongo mongo \
-	mongo --host mongo \
+$ docker run -it --rm --network some-network mongo \
+	mongo --host some-mongo \
 		-u mongoadmin \
 		-p secret \
 		--authenticationDatabase admin \

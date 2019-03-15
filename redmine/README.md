@@ -73,26 +73,26 @@ $ docker run -d --name some-redmine redmine
 
 ## Run Redmine with a Database Container
 
-Running Redmine with a database server is the recommened way.
+Running Redmine with a database server is the recommended way.
 
 1.	start a database container
 
 	-	PostgreSQL
 
 		```console
-		$ docker run -d --name some-postgres -e POSTGRES_PASSWORD=secret -e POSTGRES_USER=redmine postgres
+		$ docker run -d --name some-postgres --network some-network -e POSTGRES_PASSWORD=secret -e POSTGRES_USER=redmine postgres
 		```
 
-	-	MySQL (replace `--link some-postgres:postgres` with `--link some-mysql:mysql` when running redmine)
+	-	MySQL (replace `-e REDMINE_DB_POSTGRES=some-postgres` with `-e REDMINE_DB_MYSQL=some-mysql` when running Redmine)
 
 		```console
-		$ docker run -d --name some-mysql -e MYSQL_ROOT_PASSWORD=secret -e MYSQL_DATABASE=redmine mysql
+		$ docker run -d --name some-mysql --network some-network -e MYSQL_USER=redmine -e MYSQL_PASSWORD=secret -e MYSQL_DATABASE=redmine -e MYSQL_RANDOM_ROOT_PASSWORD=1 mysql:5.7
 		```
 
 2.	start redmine
 
 	```console
-	$ docker run -d --name some-redmine --link some-postgres:postgres redmine
+	$ docker run -d --name some-redmine --network some-network -e REDMINE_DB_POSTGRES=some-postgres -e REDMINE_DB_USERNAME=redmine -e REDMINE_DB_PASSWORD=secret redmine
 	```
 
 ## ... via [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/) or [`docker-compose`](https://github.com/docker/compose)

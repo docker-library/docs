@@ -78,29 +78,29 @@ $ docker run --name some-drupal -p 8080:80 -d drupal
 
 Then, access it via `http://localhost:8080` or `http://host-ip:8080` in a browser.
 
-There are multiple database types supported by this image, most easily used via standard container linking. In the default configuration, SQLite can be used to avoid a second container and write to flat-files. More detailed instructions for different (more production-ready) database types follow.
+There are multiple database types supported by this image, most easily used via Docker networks. In the default configuration, SQLite can be used to avoid a second container and write to flat-files. More detailed instructions for different (more production-ready) database types follow.
 
 When first accessing the webserver provided by this image, it will go through a brief setup process. The details provided below are specifically for the "Set up database" step of that configuration process.
 
 ## MySQL
 
 ```console
-$ docker run --name some-drupal --link some-mysql:mysql -d drupal
+$ docker run --name some-drupal --network some-network -d drupal
 ```
 
 -	Database type: `MySQL, MariaDB, or equivalent`
 -	Database name/username/password: `<details for accessing your MySQL instance>` (`MYSQL_USER`, `MYSQL_PASSWORD`, `MYSQL_DATABASE`; see environment variables in the description for [`mysql`](https://hub.docker.com/_/mysql/))
--	ADVANCED OPTIONS; Database host: `mysql` (for using the `/etc/hosts` entry added by `--link` to access the linked container's MySQL instance)
+-	ADVANCED OPTIONS; Database host: `some-mysql` (for using the DNS entry added by `--network` to access the MySQL container)
 
 ## PostgreSQL
 
 ```console
-$ docker run --name some-drupal --link some-postgres:postgres -d drupal
+$ docker run --name some-drupal --network some-network -d drupal
 ```
 
 -	Database type: `PostgreSQL`
 -	Database name/username/password: `<details for accessing your PostgreSQL instance>` (`POSTGRES_USER`, `POSTGRES_PASSWORD`; see environment variables in the description for [`postgres`](https://hub.docker.com/_/postgres/))
--	ADVANCED OPTIONS; Database host: `postgres` (for using the `/etc/hosts` entry added by `--link` to access the linked container's PostgreSQL instance)
+-	ADVANCED OPTIONS; Database host: `some-postgres` (for using the DNS entry added by `--network` to access the PostgreSQL container)
 
 ## Volumes
 
@@ -117,7 +117,7 @@ $ docker run --rm drupal tar -cC /var/www/html/sites . | tar -xC /path/on/host/s
 This can then be bind-mounted into a new container:
 
 ```console
-$ docker run --name some-drupal --link some-postgres:postgres -d \
+$ docker run --name some-drupal --network some-network -d \
 	-v /path/on/host/modules:/var/www/html/modules \
 	-v /path/on/host/profiles:/var/www/html/profiles \
 	-v /path/on/host/sites:/var/www/html/sites \
@@ -130,7 +130,7 @@ Another solution using Docker Volumes:
 ```console
 $ docker volume create drupal-sites
 $ docker run --rm -v drupal-sites:/temporary/sites drupal cp -aRT /var/www/html/sites /temporary/sites
-$ docker run --name some-drupal --link some-postgres:postgres -d \
+$ docker run --name some-drupal --network some-network -d \
 	-v drupal-modules:/var/www/html/modules \
 	-v drupal-profiles:/var/www/html/profiles \
 	-v drupal-sites:/var/www/html/sites \

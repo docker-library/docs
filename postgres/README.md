@@ -79,16 +79,10 @@ The default `postgres` user and database are created in the entrypoint with `ini
 >
 > [postgresql.org/docs](http://www.postgresql.org/docs/9.5/interactive/app-initdb.html)
 
-## connect to it from an application
-
-```console
-$ docker run --name some-app --link some-postgres:postgres -d application-that-uses-postgres
-```
-
 ## ... or via `psql`
 
 ```console
-$ docker run -it --rm --link some-postgres:postgres postgres psql -h postgres -U postgres
+$ docker run -it --rm --network some-network postgres psql -h some-postgres -U postgres
 psql (9.5.0)
 Type "help" for help.
 
