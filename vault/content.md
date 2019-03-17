@@ -59,6 +59,11 @@ Run `vault status` in a second container:
 $ docker run -e VAULT_ADDR='http://<container-ip>:8200' --cap-add=IPC_LOCK vault status
 ```
 
+Store a secret:
+```console
+$ docker run -e VAULT_ADDR='http://<container-ip>:8200' -e VAULT_TOKEN='myroot' --cap-add=IPC_LOCK vault kv put secret/hello foo=world excited=yes
+```
+
 ## Running Vault in Server Mode
 
 ```console
