@@ -42,7 +42,21 @@ When running in development mode, two additional options can be set via environm
 As an example:
 
 ```console
-$ docker run --cap-add=IPC_LOCK -e 'VAULT_DEV_ROOT_TOKEN_ID=myroot' -e 'VAULT_DEV_LISTEN_ADDRESS=0.0.0.0:1234' %%IMAGE%%
+$ docker run --cap-add=IPC_LOCK -e 'VAULT_DEV_ROOT_TOKEN_ID=myroot' -e VAULT_ADDR='http://127.0.0.1:8200' -p 8200:8200 %%IMAGE%%
+```
+
+You can now access the Vault UI on your host machine in a browser at [`http://localhost:8200`](http://localhost:8200)
+
+### To run commands against this container:
+
+In a second terminal, get the IP address of the container you just started:
+```console
+$ docker inspect <container-id> | grep IPAddress
+```
+
+Run `vault status` in a second container:
+```console
+$ docker run -e VAULT_ADDR='http://<container-ip>:8200' --cap-add=IPC_LOCK vault status
 ```
 
 ## Running Vault in Server Mode
