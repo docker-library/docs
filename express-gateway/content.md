@@ -59,5 +59,5 @@ You can install custom plugins to the current Express Gateway image just creatin
 
 ```dockerfile
 FROM %%IMAGE%%
-RUN yarn add global express-gateway-plugin-name
+RUN yarn global add express-gateway-plugin-name
 ```
