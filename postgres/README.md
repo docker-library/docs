@@ -131,6 +131,8 @@ The PostgreSQL image uses several environment variables which are easy to miss. 
 
 **Warning**: the Docker specific variables will only have an effect if you start the container with a data directory that is empty; any pre-existing database will be left untouched on container startup.
 
+**Warning**: Setting PGUSER, PGHOST, PGDATABASE and/or PGPASSWORD is not recommended. These environment variables may have unpredictable effects during initialization. Instead, use the POSTGRES_* environment variables as explained below. 
+
 ### `POSTGRES_PASSWORD`
 
 This environment variable is recommended for you to use the PostgreSQL image. This environment variable sets the superuser password for PostgreSQL. The default superuser is defined by the `POSTGRES_USER` environment variable.
