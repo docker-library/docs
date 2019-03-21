@@ -2,45 +2,62 @@
 
 The images in this repository contain Open Liberty. For more information about Open Liberty, see the [Open Liberty Website](https://openliberty.io/) site.
 
-# Images
+# Image User
 
-There are multiple images available in this repository.
+This image runs by default with `USER 1001` (non-root), as part of group `0`. Please make sure you read below to set the appropriate folder and file permissions.
+
+## Updating folder permissions
+
+All of the folders accessed by WebSphere Liberty have been given the appropriate permissions, but if your extending Dockerfile needs permission to another location you can simply temporarily switch into root and provide the needed permissions, example:
+
+```dockerfile
+USER root
+RUN mkdir -p /myFolder && chown -R 1001:0 /myFolder
+USER 1001
+```
+
+## Updating file permissions
+
+You have to make sure that **all** the artifacts you are copying into the image (via `COPY` or `ADD`) have the correct permissions to be `read` and `executed` by user `1001` or group `0`, because the ownership of the file is changed to be `root:0` when transferring into the docker image.
+
+You have a few options for doing this: before copying the file, during copy, or after copy.
+
+### Updating permissions before copying
+
+Since the ownership of the file will change to `root:0`, you can simply set the permissions for the owner's group to be able to read/execute the artifact (i.e. the middle digit of a `chmod` command). For example, you can do `chmod g+rx server.xml` to ensure your `server.xml` can be `read` and `executed` by group `0`, as well as any artifacts such as the application's `EAR` or `WAR` file, JDBC driver, or other files that are placed on the image via `COPY` or `ADD`.
+
+### Updating permissions during copy
+
+If you're using Docker v17.09.0-ce and newer you can take advantage of the flag `--chown=<user>:<group>` during either `ADD` or `COPY`. For example: `COPY --chown=1001:0 jvm.options /config/jvm.options`. This is the preferred approach as you don't need to worry about changing permissions before calling `docker build` and you also do not duplicate layers in the resulting image.
+
+### Updating permissions after copy
+
+If you need your Dockerfile to work with older versions of Docker CE and don't want to pre-process the permissions of the files you can temporarily switch into root to change the permissions of the needed files. For example:
+
+```dockerfile
+USER root
+RUN chown 1001:0 /config/jvm.options
+RUN chown 1001:0 /output/resources/security/ltpa.keys
+USER 1001
+```
+
+Please note that this pattern will duplicate the docker layers for those artifacts, which can heavily bloat your resulting docker image (depending on the size of the artifact). So it is recommended to set the permissions before or during copy.
+
+## Tags
+
+There are multiple tags available in this repository.
 
 The `kernel` image contains the Liberty kernel and can be used as the basis for custom built images that contain only the features required for a specific application. For example, the following Dockerfile starts with this image, copies in the `server.xml` that lists the features required by the application.
 
 ```dockerfile
 FROM %%IMAGE%%:kernel
-COPY server.xml /config/
+COPY --chown=1001:0  Sample1.war /config/dropins/
+COPY --chown=1001:0  server.xml /config/
 ```
 
 The `microProfile1` image contains the features required to implement Eclipse MicroProfile 1.3. The `webProfile8` image contains the features required for Java EE8 Web Profile compliance. The `javaee8` image adds the features required for Java EE8 Full Platform compliance. The `javaee8` image is also tagged with `latest`. The `webProfile7` image contains the features required for Java EE7 Web Profile compliance. The `javaee7` image adds the features required for Java EE7 Full Platform compliance. The `springBoot1` and `springBoot2` images contain the features required for running Spring Boot 1.5 and 2.0 applications.
 
-There are also additional images for different JVM combinations. Currently there are tags for java8 only, but there are two variants one based on IBM Java and Ubuntu and the other based on the IBM small footprint Java which is based on alpine linux. The naming structure for the variants is tag-javaversion-vandor/variant. This leads to webProfile8-java8-ibmsfj as one. At this time the full list of images are:
-
-	kernel
-	kernel-java8-ibm
-	kernel-java8-ibmsfj
-	microProfile1
-	microProfile1-java8-ibm
-	microProfile1-java8-ibmsfj
-	springBoot1
-	springBoot1-java8-ibm
-	springBoot1-java8-ibmsfj
-	springBoot2
-	springBoot2-java8-ibm
-	springBoot2-java8-ibmsfj
-	webProfile8
-	webProfile8-java8-ibm
-	webProfile8-java8-ibmsfj
-	javaee8
-	javaee8-java8-ibm
-	javaee8-java8-ibmsfj
-	webProfile7
-	webProfile7-java8-ibm
-	webProfile7-java8-ibmsfj
-	javaee7
-	javaee7-java8-ibm
-	javaee7-java8-ibmsfj
+There are also additional images for different JVM combinations. Currently there are tags for java8 only, but there are two variants one based on IBM Java and Ubuntu and the other based on the IBM small footprint Java which is based on alpine linux. The naming structure for the variants is tag-javaversion-vandor/variant. This leads to webProfile8-java8-ibmsfj as one. At this time the full list of images are found in the `Supported tags and respective Dockerfile links` section above.
 
 # Usage
 
