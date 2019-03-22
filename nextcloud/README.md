@@ -25,9 +25,9 @@ WARNING:
 -	[`15.0.5-apache`, `15.0-apache`, `15-apache`, `apache`, `stable-apache`, `production-apache`, `15.0.5`, `15.0`, `15`, `latest`, `stable`, `production` (*15.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/a1ed54243dbcf7e9b7ebdb77fc325a9d8ebdb3a5/15.0/apache/Dockerfile)
 -	[`15.0.5-fpm-alpine`, `15.0-fpm-alpine`, `15-fpm-alpine`, `fpm-alpine`, `stable-fpm-alpine`, `production-fpm-alpine` (*15.0/fpm-alpine/Dockerfile*)](https://github.com/nextcloud/docker/blob/a1ed54243dbcf7e9b7ebdb77fc325a9d8ebdb3a5/15.0/fpm-alpine/Dockerfile)
 -	[`15.0.5-fpm`, `15.0-fpm`, `15-fpm`, `fpm`, `stable-fpm`, `production-fpm` (*15.0/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/a1ed54243dbcf7e9b7ebdb77fc325a9d8ebdb3a5/15.0/fpm/Dockerfile)
--	[`16.0.0alpha1-apache`, `16.0.0-alpha-apache`, `16.0-alpha-apache`, `16-alpha-apache`, `16.0.0alpha1`, `16.0.0-alpha`, `16.0-alpha`, `16-alpha` (*16.0-alpha/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/a1ed54243dbcf7e9b7ebdb77fc325a9d8ebdb3a5/16.0-alpha/apache/Dockerfile)
--	[`16.0.0alpha1-fpm-alpine`, `16.0.0-alpha-fpm-alpine`, `16.0-alpha-fpm-alpine`, `16-alpha-fpm-alpine` (*16.0-alpha/fpm-alpine/Dockerfile*)](https://github.com/nextcloud/docker/blob/a1ed54243dbcf7e9b7ebdb77fc325a9d8ebdb3a5/16.0-alpha/fpm-alpine/Dockerfile)
--	[`16.0.0alpha1-fpm`, `16.0.0-alpha-fpm`, `16.0-alpha-fpm`, `16-alpha-fpm` (*16.0-alpha/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/a1ed54243dbcf7e9b7ebdb77fc325a9d8ebdb3a5/16.0-alpha/fpm/Dockerfile)
+-	[`16.0.0beta1-apache`, `16.0.0-beta-apache`, `16.0-beta-apache`, `16-beta-apache`, `16.0.0beta1`, `16.0.0-beta`, `16.0-beta`, `16-beta` (*16.0-beta/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/e6701140043c2f8f2f9cb39805ea19c7d2a7c894/16.0-beta/apache/Dockerfile)
+-	[`16.0.0beta1-fpm-alpine`, `16.0.0-beta-fpm-alpine`, `16.0-beta-fpm-alpine`, `16-beta-fpm-alpine` (*16.0-beta/fpm-alpine/Dockerfile*)](https://github.com/nextcloud/docker/blob/e6701140043c2f8f2f9cb39805ea19c7d2a7c894/16.0-beta/fpm-alpine/Dockerfile)
+-	[`16.0.0beta1-fpm`, `16.0.0-beta-fpm`, `16.0-beta-fpm`, `16-beta-fpm` (*16.0-beta/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/e6701140043c2f8f2f9cb39805ea19c7d2a7c894/16.0-beta/fpm/Dockerfile)
 
 # Quick reference
 

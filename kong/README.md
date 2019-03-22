@@ -16,6 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
+-	[`1.1.0rc2-alpine`, `1.1rc2-alpine`, `1.1.0rc2`, `1.1rc2` (*alpine/Dockerfile*)](https://github.com/Kong/docker-kong/blob/764155275f26b1447ce34f9255d2564d4fdd08a1/alpine/Dockerfile)
+-	[`1.1.0rc2-centos`, `1.1rc2-centos` (*centos/Dockerfile*)](https://github.com/Kong/docker-kong/blob/764155275f26b1447ce34f9255d2564d4fdd08a1/centos/Dockerfile)
 -	[`1.1.0rc1-alpine`, `1.1rc1-alpine`, `1.1.0rc1`, `1.1rc1` (*alpine/Dockerfile*)](https://github.com/Kong/docker-kong/blob/5955431d39aa86618994b595e15d394ad323d336/alpine/Dockerfile)
 -	[`1.1.0rc1-centos`, `1.1rc1-centos` (*centos/Dockerfile*)](https://github.com/Kong/docker-kong/blob/5955431d39aa86618994b595e15d394ad323d336/centos/Dockerfile)
 -	[`1.0.3-alpine`, `1.0.3`, `1.0`, `latest` (*alpine/Dockerfile*)](https://github.com/Kong/docker-kong/blob/61ca745bf9ae97af6d950dace81680a855b96a45/alpine/Dockerfile)
@@ -122,6 +124,7 @@ Once the database has been started and prepared, we can start a Kong container a
 $ docker run -d --name kong \
     --link kong-database:kong-database \
     -e "KONG_DATABASE=postgres" \
+    -e "KONG_PG_HOST=kong-database" \
     -e "KONG_CASSANDRA_CONTACT_POINTS=kong-database" \
     -e "KONG_PROXY_ACCESS_LOG=/dev/stdout" \
     -e "KONG_ADMIN_ACCESS_LOG=/dev/stdout" \
