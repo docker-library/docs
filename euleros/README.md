@@ -16,7 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.2`, `latest` (*2.2/Dockerfile*)](https://github.com/euleros/euleros-docker-images/blob/e1e5020fe9fd5030c9e5d34d5e86a74b379eff36/2.2/Dockerfile)
+-	[`2.3.1809`, `latest` (*2.3.1809/x86_64//Dockerfile*)](https://github.com/euleros/euleros-docker-images/blob/db22e2c392c3922d2c674110c90667576618f348/2.3.1809/x86_64//Dockerfile)
+-	[`2.2` (*2.2/Dockerfile*)](https://github.com/euleros/euleros-docker-images/blob/959f378638f222bd1eebe8dccf267cccbc118174/2.2/Dockerfile)
 
 # Quick reference
 
@@ -30,7 +31,7 @@ WARNING:
 	[The EulerOS Project](https://github.com/euleros/euleros-docker-images)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/euleros/)
+	[`amd64`](https://hub.docker.com/r/amd64/euleros/), [`arm64v8`](https://hub.docker.com/r/arm64v8/euleros/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/euleros/` directory](https://github.com/docker-library/repo-info/blob/master/repos/euleros) ([history](https://github.com/docker-library/repo-info/commits/master/repos/euleros))  
