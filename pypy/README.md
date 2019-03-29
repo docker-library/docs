@@ -16,12 +16,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.7-7.1.0`, `2.7-7.1`, `2.7-7`, `2.7`, `2-7.1.0`, `2-7.1`, `2-7`, `2`, `2.7-7.1.0-jessie`, `2.7-7.1-jessie`, `2.7-7-jessie`, `2.7-jessie`, `2-7.1.0-jessie`, `2-7.1-jessie`, `2-7-jessie`, `2-jessie` (*2.7/Dockerfile*)](https://github.com/docker-library/pypy/blob/bcfd9f2587ef4aa818bf37eb1a6dffa348ba90cf/2.7/Dockerfile)
--	[`2.7-7.1.0-slim`, `2.7-7.1-slim`, `2.7-7-slim`, `2.7-slim`, `2-7.1.0-slim`, `2-7.1-slim`, `2-7-slim`, `2-slim`, `2.7-7.1.0-slim-jessie`, `2.7-7.1-slim-jessie`, `2.7-7-slim-jessie`, `2.7-slim-jessie`, `2-7.1.0-slim-jessie`, `2-7.1-slim-jessie`, `2-7-slim-jessie`, `2-slim-jessie` (*2.7/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/bcfd9f2587ef4aa818bf37eb1a6dffa348ba90cf/2.7/slim/Dockerfile)
--	[`3.5-7.0.0`, `3.5-7.0`, `3.5-7`, `3.5`, `3-7.0.0`, `3-7.0`, `3-7`, `3`, `latest`, `3.5-7.0.0-jessie`, `3.5-7.0-jessie`, `3.5-7-jessie`, `3.5-jessie`, `3-7.0.0-jessie`, `3-7.0-jessie`, `3-7-jessie`, `3-jessie`, `jessie` (*3.5/Dockerfile*)](https://github.com/docker-library/pypy/blob/a25dfed4a6f684edfa44947fdb9f198962c5885a/3.5/Dockerfile)
--	[`3.5-7.0.0-slim`, `3.5-7.0-slim`, `3.5-7-slim`, `3.5-slim`, `3-7.0.0-slim`, `3-7.0-slim`, `3-7-slim`, `3-slim`, `slim`, `3.5-7.0.0-slim-jessie`, `3.5-7.0-slim-jessie`, `3.5-7-slim-jessie`, `3.5-slim-jessie`, `3-7.0.0-slim-jessie`, `3-7.0-slim-jessie`, `3-7-slim-jessie`, `3-slim-jessie`, `slim-jessie` (*3.5/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/a25dfed4a6f684edfa44947fdb9f198962c5885a/3.5/slim/Dockerfile)
--	[`3.6-7.1.0`, `3.6-7.1`, `3.6-7`, `3.6`, `3.6-7.1.0-jessie`, `3.6-7.1-jessie`, `3.6-7-jessie`, `3.6-jessie` (*3.6/Dockerfile*)](https://github.com/docker-library/pypy/blob/6ec92626b247be066a0c89d86521a00571cc5d44/3.6/Dockerfile)
--	[`3.6-7.1.0-slim`, `3.6-7.1-slim`, `3.6-7-slim`, `3.6-slim`, `3.6-7.1.0-slim-jessie`, `3.6-7.1-slim-jessie`, `3.6-7-slim-jessie`, `3.6-slim-jessie` (*3.6/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/6ec92626b247be066a0c89d86521a00571cc5d44/3.6/slim/Dockerfile)
+-	[`2.7-7.1.0`, `2.7-7.1`, `2.7-7`, `2.7`, `2-7.1.0`, `2-7.1`, `2-7`, `2`, `2.7-7.1.0-jessie`, `2.7-7.1-jessie`, `2.7-7-jessie`, `2.7-jessie`, `2-7.1.0-jessie`, `2-7.1-jessie`, `2-7-jessie`, `2-jessie` (*2.7/Dockerfile*)](https://github.com/docker-library/pypy/blob/d54416e2be73520a490eb0dd2819d8a2b4df3652/2.7/Dockerfile)
+-	[`2.7-7.1.0-slim`, `2.7-7.1-slim`, `2.7-7-slim`, `2.7-slim`, `2-7.1.0-slim`, `2-7.1-slim`, `2-7-slim`, `2-slim`, `2.7-7.1.0-slim-jessie`, `2.7-7.1-slim-jessie`, `2.7-7-slim-jessie`, `2.7-slim-jessie`, `2-7.1.0-slim-jessie`, `2-7.1-slim-jessie`, `2-7-slim-jessie`, `2-slim-jessie` (*2.7/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/abb5b517964511ac622572f07f54c21d58849dfe/2.7/slim/Dockerfile)
+-	[`3.5-7.0.0`, `3.5-7.0`, `3.5-7`, `3.5`, `3-7.0.0`, `3-7.0`, `3-7`, `3`, `latest`, `3.5-7.0.0-stretch`, `3.5-7.0-stretch`, `3.5-7-stretch`, `3.5-stretch`, `3-7.0.0-stretch`, `3-7.0-stretch`, `3-7-stretch`, `3-stretch`, `stretch` (*3.5/Dockerfile*)](https://github.com/docker-library/pypy/blob/b3ee440a1a459e63001454e5a9e1f20da439edab/3.5/Dockerfile)
+-	[`3.5-7.0.0-slim`, `3.5-7.0-slim`, `3.5-7-slim`, `3.5-slim`, `3-7.0.0-slim`, `3-7.0-slim`, `3-7-slim`, `3-slim`, `slim`, `3.5-7.0.0-slim-stretch`, `3.5-7.0-slim-stretch`, `3.5-7-slim-stretch`, `3.5-slim-stretch`, `3-7.0.0-slim-stretch`, `3-7.0-slim-stretch`, `3-7-slim-stretch`, `3-slim-stretch`, `slim-stretch` (*3.5/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/abb5b517964511ac622572f07f54c21d58849dfe/3.5/slim/Dockerfile)
+-	[`3.6-7.1.0`, `3.6-7.1`, `3.6-7`, `3.6`, `3.6-7.1.0-stretch`, `3.6-7.1-stretch`, `3.6-7-stretch`, `3.6-stretch` (*3.6/Dockerfile*)](https://github.com/docker-library/pypy/blob/b3ee440a1a459e63001454e5a9e1f20da439edab/3.6/Dockerfile)
+-	[`3.6-7.1.0-slim`, `3.6-7.1-slim`, `3.6-7-slim`, `3.6-slim`, `3.6-7.1.0-slim-stretch`, `3.6-7.1-slim-stretch`, `3.6-7-slim-stretch`, `3.6-slim-stretch` (*3.6/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/abb5b517964511ac622572f07f54c21d58849dfe/3.6/slim/Dockerfile)
 
 # Quick reference
 
@@ -35,7 +35,7 @@ WARNING:
 	[the Docker Community](https://github.com/docker-library/pypy)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/pypy/), [`i386`](https://hub.docker.com/r/i386/pypy/)
+	[`amd64`](https://hub.docker.com/r/amd64/pypy/), [`i386`](https://hub.docker.com/r/i386/pypy/), [`ppc64le`](https://hub.docker.com/r/ppc64le/pypy/), [`s390x`](https://hub.docker.com/r/s390x/pypy/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/pypy/` directory](https://github.com/docker-library/repo-info/blob/master/repos/pypy) ([history](https://github.com/docker-library/repo-info/commits/master/repos/pypy))  
@@ -124,7 +124,7 @@ This is the defacto image. If you are unsure about what your needs are, you prob
 
 This tag is based off of [`buildpack-deps`](https://hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of Docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
 
-Some of these tags may have names like jessie in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on.
+Some of these tags may have names like jessie or stretch in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on.
 
 ## `pypy:<version>-slim`
 

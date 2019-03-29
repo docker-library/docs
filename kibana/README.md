@@ -25,12 +25,10 @@ WARNING:
 	the [Kibana Discuss Forums](https://discuss.elastic.co/c/kibana), the [Elastic community](https://www.elastic.co/community)
 
 -	**Where to file issues**:  
-	For issues with the Kibana Docker image: https://github.com/elastic/kibana-docker/issues
-
-For issues with Kibana: [https://github.com/elastic/kibana/issues](https://github.com/elastic/kibana/issues)
+	For issues with the Kibana Docker image or Kibana: https://github.com/elastic/kibana/issues
 
 -	**Maintained by**:  
-	[the Elastic Team](https://github.com/elastic/kibana-docker)
+	[the Elastic Team](https://github.com/elastic/kibana)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/kibana/)
