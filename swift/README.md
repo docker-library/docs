@@ -16,7 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.2.3`, `4.2`, `4`, `latest` (*4.2/ubuntu/16.04/Dockerfile*)](https://github.com/apple/swift-docker/blob/75dde01ef86e98437b1206c6a58d0428dfb345a4/4.2/ubuntu/16.04/Dockerfile)
+-	[`5.0`, `5.0-bionic`, `bionic`, `latest` (*5.0/ubuntu/18.04/Dockerfile*)](https://github.com/apple/swift-docker/blob/0d3ffbb7885c8731970fc294be96ce91153840d9/5.0/ubuntu/18.04/Dockerfile)
+-	[`5.0-xenial`, `xenial` (*5.0/ubuntu/16.04/Dockerfile*)](https://github.com/apple/swift-docker/blob/0d3ffbb7885c8731970fc294be96ce91153840d9/5.0/ubuntu/16.04/Dockerfile)
+-	[`4.2.3`, `4.2`, `4` (*4.2/ubuntu/16.04/Dockerfile*)](https://github.com/apple/swift-docker/blob/75dde01ef86e98437b1206c6a58d0428dfb345a4/4.2/ubuntu/16.04/Dockerfile)
 -	[`4.2.2` (*4.2/ubuntu/16.04/Dockerfile*)](https://github.com/apple/swift-docker/blob/c5dd5e013de66da930cf1b9804797dbae11e8f9c/4.2/ubuntu/16.04/Dockerfile)
 -	[`4.2.1` (*4.2/Dockerfile*)](https://github.com/apple/swift-docker/blob/34aa283f9b3473ab22b2282f71773781b121af19/4.2/Dockerfile)
 -	[`4.1.3`, `4.1` (*4.1/Dockerfile*)](https://github.com/apple/swift-docker/blob/34aa283f9b3473ab22b2282f71773781b121af19/4.1/Dockerfile)
