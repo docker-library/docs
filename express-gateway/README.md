@@ -16,7 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.x`, `1.16.x`, `1.16.1`, `latest` (*alpine/Dockerfile*)](https://github.com/ExpressGateway/docker-express-gateway/blob/59683d0fceebef65c87ccc5d6b37ac2010f44583/alpine/Dockerfile)
+-	[`1.x`, `1.16.x`, `1.16.2`, `latest` (*alpine/Dockerfile*)](https://github.com/ExpressGateway/docker-express-gateway/blob/64981a7796a1ac46be96f6207f5c0382a0415c58/alpine/Dockerfile)
 
 # Quick reference
 
