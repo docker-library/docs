@@ -20,8 +20,6 @@ WARNING:
 -	[`4.0.3-passenger`, `4.0-passenger`, `4-passenger`, `passenger` (*4.0/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/35af27ca3527e2af63aef04fd71a03aeb18e19c9/4.0/passenger/Dockerfile)
 -	[`3.4.10`, `3.4`, `3` (*3.4/Dockerfile*)](https://github.com/docker-library/redmine/blob/4f48b663ba6fab3eca2e57e660fe2ed9f17e175e/3.4/Dockerfile)
 -	[`3.4.10-passenger`, `3.4-passenger`, `3-passenger` (*3.4/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/35af27ca3527e2af63aef04fd71a03aeb18e19c9/3.4/passenger/Dockerfile)
--	[`3.3.9`, `3.3` (*3.3/Dockerfile*)](https://github.com/docker-library/redmine/blob/8e9f5fc59b6fa899e07a0c2dfca0d46425e6c088/3.3/Dockerfile)
--	[`3.3.9-passenger`, `3.3-passenger` (*3.3/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/35af27ca3527e2af63aef04fd71a03aeb18e19c9/3.3/passenger/Dockerfile)
 
 # Quick reference
 
