@@ -16,9 +16,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`v1.7.3`, `1.7.3`, `v1.7`, `1.7`, `maroilles`, `latest` (*scratch/amd64/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/b5cc6bd196fbf6740acb0db6665ac420193c90b4/scratch/amd64/Dockerfile)
--	[`v1.7.3-alpine`, `1.7.3-alpine`, `v1.7-alpine`, `1.7-alpine`, `maroilles-alpine`, `alpine` (*alpine/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/b5cc6bd196fbf6740acb0db6665ac420193c90b4/alpine/Dockerfile)
--	[`v1.7.3-nanoserver`, `1.7.3-nanoserver`, `v1.7-nanoserver`, `1.7-nanoserver`, `maroilles-nanoserver`, `v1.7.3-nanoserver-sac2016`, `1.7.3-nanoserver-sac2016`, `v1.7-nanoserver-sac2016`, `1.7-nanoserver-sac2016`, `maroilles-nanoserver-sac2016`, `nanoserver`, `nanoserver-sac2016` (*windows/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/b5cc6bd196fbf6740acb0db6665ac420193c90b4/windows/Dockerfile)
+-	[`v2.0.0-alpha3`, `2.0.0-alpha3`, `v2.0`, `2.0`, `faisselle` (*scratch/amd64/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/0f1b09187679d0959032232f057b9d5348e6a663/scratch/amd64/Dockerfile)
+-	[`v2.0.0-alpha3-alpine`, `2.0.0-alpha3-alpine`, `v2.0-alpine`, `2.0-alpine`, `faisselle-alpine` (*alpine/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/0f1b09187679d0959032232f057b9d5348e6a663/alpine/Dockerfile)
+-	[`v2.0.0-alpha3-nanoserver`, `2.0.0-alpha3-nanoserver`, `v2.0-nanoserver`, `2.0-nanoserver`, `faisselle-nanoserver`, `v2.0.0-alpha3-nanoserver-sac2016`, `2.0.0-alpha3-nanoserver-sac2016`, `v2.0-nanoserver-sac2016`, `2.0-nanoserver-sac2016`, `faisselle-nanoserver-sac2016` (*windows/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/0f1b09187679d0959032232f057b9d5348e6a663/windows/Dockerfile)
+-	[`v1.7.10`, `1.7.10`, `v1.7`, `1.7`, `maroilles`, `latest` (*scratch/amd64/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/07de2d05953a9144a717d66a847991c0fc200cdf/scratch/amd64/Dockerfile)
+-	[`v1.7.10-alpine`, `1.7.10-alpine`, `v1.7-alpine`, `1.7-alpine`, `maroilles-alpine`, `alpine` (*alpine/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/07de2d05953a9144a717d66a847991c0fc200cdf/alpine/Dockerfile)
+-	[`v1.7.10-nanoserver`, `1.7.10-nanoserver`, `v1.7-nanoserver`, `1.7-nanoserver`, `maroilles-nanoserver`, `v1.7.10-nanoserver-sac2016`, `1.7.10-nanoserver-sac2016`, `v1.7-nanoserver-sac2016`, `1.7-nanoserver-sac2016`, `maroilles-nanoserver-sac2016`, `nanoserver`, `nanoserver-sac2016` (*windows/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/07de2d05953a9144a717d66a847991c0fc200cdf/windows/Dockerfile)
 
 # Quick reference
 
@@ -29,7 +32,7 @@ WARNING:
 	[https://github.com/containous/traefik-library-image/issues](https://github.com/containous/traefik-library-image/issues)
 
 -	**Maintained by**:  
-	[the Træfik Project](https://github.com/containous/traefik-library-image)
+	[the Traefik Project](https://github.com/containous/traefik-library-image)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/traefik/), [`arm32v6`](https://hub.docker.com/r/arm32v6/traefik/), [`arm64v8`](https://hub.docker.com/r/arm64v8/traefik/), [`windows-amd64`](https://hub.docker.com/r/winamd64/traefik/)
@@ -50,11 +53,11 @@ WARNING:
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/a6cc2c5f4bc6658168f2a0abbb0307acaefff80e/traefik/logo.png)
 
-[Træfɪk](https://github.com/containous/traefik) is a modern HTTP reverse proxy and load balancer that makes deploying microservices easy.
+[Traefik](https://github.com/containous/traefik) is a modern HTTP reverse proxy and load balancer that makes deploying microservices easy.
 
-Træfik integrates with your existing infrastructure components ([Docker](https://www.docker.com/), [Swarm mode](https://docs.docker.com/engine/swarm/), [Kubernetes](https://kubernetes.io), [Marathon](https://mesosphere.github.io/marathon/), [Consul](https://www.consul.io/), [Etcd](https://coreos.com/etcd/), [Rancher](https://rancher.com), [Amazon ECS](https://aws.amazon.com/ecs), ...) and configures itself automatically and dynamically.
+Traefik integrates with your existing infrastructure components ([Docker](https://www.docker.com/), [Swarm mode](https://docs.docker.com/engine/swarm/), [Kubernetes](https://kubernetes.io), [Marathon](https://mesosphere.github.io/marathon/), [Consul](https://www.consul.io/), [Etcd](https://coreos.com/etcd/), [Rancher](https://rancher.com), [Amazon ECS](https://aws.amazon.com/ecs), ...) and configures itself automatically and dynamically.
 
-Telling Træfik where your orchestrator is could be the *only* configuration step you need to do.
+Telling Traefik where your orchestrator is could be the *only* configuration step you need to do.
 
 # Example usage
 
@@ -73,7 +76,7 @@ domain = "docker.local"
 watch = true
 ```
 
-Start Træfɪk:
+Start Traefik:
 
 ```bash
 docker run -d -p 8080:8080 -p 80:80 \
@@ -88,7 +91,7 @@ Start a backend server, named `test`:
 docker run -d --name test emilevauge/whoami
 ```
 
-And finally, you can access to your `whoami` server throught Træfɪk, on the domain name `{containerName}.{configuredDomain}`:
+And finally, you can access to your `whoami` server throught Traefik, on the domain name `{containerName}.{configuredDomain}`:
 
 ```bash
 curl --header 'Host: test.docker.local' 'http://localhost:80/'
@@ -117,7 +120,7 @@ The web UI [http://localhost:8080](http://localhost:8080) will give you an overv
 
 You can find the complete documentation at [https://docs.traefik.io](https://docs.traefik.io).
 
-A collection of contributions around Træfik can be found at [https://awesome.traefik.io](https://awesome.traefik.io).
+A collection of contributions around Traefik can be found at [https://awesome.traefik.io](https://awesome.traefik.io).
 
 # License
 

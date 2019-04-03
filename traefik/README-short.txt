@@ -1,1 +1,1 @@
-Træfɪk, a modern reverse proxy
+Traefik, The Cloud Native Edge Router

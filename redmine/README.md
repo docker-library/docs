@@ -16,10 +16,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.4.6`, `3.4`, `3`, `latest` (*3.4/Dockerfile*)](https://github.com/docker-library/redmine/blob/aa9d653e472f2993d8b61a92d32eb9848952cbac/3.4/Dockerfile)
--	[`3.4.6-passenger`, `3.4-passenger`, `3-passenger`, `passenger` (*3.4/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/3620c44581073acbafa5ee848025122e350b39e0/3.4/passenger/Dockerfile)
--	[`3.3.8`, `3.3` (*3.3/Dockerfile*)](https://github.com/docker-library/redmine/blob/aa9d653e472f2993d8b61a92d32eb9848952cbac/3.3/Dockerfile)
--	[`3.3.8-passenger`, `3.3-passenger` (*3.3/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/3620c44581073acbafa5ee848025122e350b39e0/3.3/passenger/Dockerfile)
+-	[`4.0.3`, `4.0`, `4`, `latest` (*4.0/Dockerfile*)](https://github.com/docker-library/redmine/blob/ff4c604761049c2c5b9d89f178379c81abf3b2ed/4.0/Dockerfile)
+-	[`4.0.3-passenger`, `4.0-passenger`, `4-passenger`, `passenger` (*4.0/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/35af27ca3527e2af63aef04fd71a03aeb18e19c9/4.0/passenger/Dockerfile)
+-	[`3.4.10`, `3.4`, `3` (*3.4/Dockerfile*)](https://github.com/docker-library/redmine/blob/4f48b663ba6fab3eca2e57e660fe2ed9f17e175e/3.4/Dockerfile)
+-	[`3.4.10-passenger`, `3.4-passenger`, `3-passenger` (*3.4/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/35af27ca3527e2af63aef04fd71a03aeb18e19c9/3.4/passenger/Dockerfile)
+-	[`3.3.9`, `3.3` (*3.3/Dockerfile*)](https://github.com/docker-library/redmine/blob/8e9f5fc59b6fa899e07a0c2dfca0d46425e6c088/3.3/Dockerfile)
+-	[`3.3.9-passenger`, `3.3-passenger` (*3.3/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/35af27ca3527e2af63aef04fd71a03aeb18e19c9/3.3/passenger/Dockerfile)
 
 # Quick reference
 
@@ -71,26 +73,26 @@ $ docker run -d --name some-redmine redmine
 
 ## Run Redmine with a Database Container
 
-Running Redmine with a database server is the recommened way.
+Running Redmine with a database server is the recommended way.
 
 1.	start a database container
 
 	-	PostgreSQL
 
 		```console
-		$ docker run -d --name some-postgres -e POSTGRES_PASSWORD=secret -e POSTGRES_USER=redmine postgres
+		$ docker run -d --name some-postgres --network some-network -e POSTGRES_PASSWORD=secret -e POSTGRES_USER=redmine postgres
 		```
 
-	-	MySQL (replace `--link some-postgres:postgres` with `--link some-mysql:mysql` when running redmine)
+	-	MySQL (replace `-e REDMINE_DB_POSTGRES=some-postgres` with `-e REDMINE_DB_MYSQL=some-mysql` when running Redmine)
 
 		```console
-		$ docker run -d --name some-mysql -e MYSQL_ROOT_PASSWORD=secret -e MYSQL_DATABASE=redmine mysql
+		$ docker run -d --name some-mysql --network some-network -e MYSQL_USER=redmine -e MYSQL_PASSWORD=secret -e MYSQL_DATABASE=redmine -e MYSQL_RANDOM_ROOT_PASSWORD=1 mysql:5.7
 		```
 
 2.	start redmine
 
 	```console
-	$ docker run -d --name some-redmine --link some-postgres:postgres redmine
+	$ docker run -d --name some-redmine --network some-network -e REDMINE_DB_POSTGRES=some-postgres -e REDMINE_DB_USERNAME=redmine -e REDMINE_DB_PASSWORD=secret redmine
 	```
 
 ## ... via [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/) or [`docker-compose`](https://github.com/docker/compose)

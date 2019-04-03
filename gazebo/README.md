@@ -16,14 +16,16 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`gzserver7`, `gzserver7-xenial` (*gazebo/7/ubuntu/xenial/gzserver7/Dockerfile*)](https://github.com/osrf/docker_images/blob/c5ca5054c6921645802f21e888b79f464863eb1a/gazebo/7/ubuntu/xenial/gzserver7/Dockerfile)
--	[`libgazebo7`, `libgazebo7-xenial` (*gazebo/7/ubuntu/xenial/libgazebo7/Dockerfile*)](https://github.com/osrf/docker_images/blob/c5ca5054c6921645802f21e888b79f464863eb1a/gazebo/7/ubuntu/xenial/libgazebo7/Dockerfile)
--	[`gzserver8`, `gzserver8-xenial` (*gazebo/8/ubuntu/xenial/gzserver8/Dockerfile*)](https://github.com/osrf/docker_images/blob/c5ca5054c6921645802f21e888b79f464863eb1a/gazebo/8/ubuntu/xenial/gzserver8/Dockerfile)
--	[`libgazebo8`, `libgazebo8-xenial` (*gazebo/8/ubuntu/xenial/libgazebo8/Dockerfile*)](https://github.com/osrf/docker_images/blob/c5ca5054c6921645802f21e888b79f464863eb1a/gazebo/8/ubuntu/xenial/libgazebo8/Dockerfile)
--	[`gzserver9-xenial` (*gazebo/9/ubuntu/xenial/gzserver9/Dockerfile*)](https://github.com/osrf/docker_images/blob/df787a9fad9aacbea3ae2e85aa6247d8baa522fd/gazebo/9/ubuntu/xenial/gzserver9/Dockerfile)
--	[`libgazebo9-xenial` (*gazebo/9/ubuntu/xenial/libgazebo9/Dockerfile*)](https://github.com/osrf/docker_images/blob/df787a9fad9aacbea3ae2e85aa6247d8baa522fd/gazebo/9/ubuntu/xenial/libgazebo9/Dockerfile)
--	[`gzserver9`, `gzserver9-bionic` (*gazebo/9/ubuntu/bionic/gzserver9/Dockerfile*)](https://github.com/osrf/docker_images/blob/df787a9fad9aacbea3ae2e85aa6247d8baa522fd/gazebo/9/ubuntu/bionic/gzserver9/Dockerfile)
--	[`libgazebo9`, `libgazebo9-bionic`, `latest` (*gazebo/9/ubuntu/bionic/libgazebo9/Dockerfile*)](https://github.com/osrf/docker_images/blob/df787a9fad9aacbea3ae2e85aa6247d8baa522fd/gazebo/9/ubuntu/bionic/libgazebo9/Dockerfile)
+-	[`gzserver7`, `gzserver7-xenial` (*gazebo/7/ubuntu/xenial/gzserver7/Dockerfile*)](https://github.com/osrf/docker_images/blob/99cb35e7aec72917dbaf264831edc6de22272769/gazebo/7/ubuntu/xenial/gzserver7/Dockerfile)
+-	[`libgazebo7`, `libgazebo7-xenial` (*gazebo/7/ubuntu/xenial/libgazebo7/Dockerfile*)](https://github.com/osrf/docker_images/blob/99cb35e7aec72917dbaf264831edc6de22272769/gazebo/7/ubuntu/xenial/libgazebo7/Dockerfile)
+-	[`gzserver9-xenial` (*gazebo/9/ubuntu/xenial/gzserver9/Dockerfile*)](https://github.com/osrf/docker_images/blob/44566fb378f4e04ac4b60f4dd2b802ff7554365e/gazebo/9/ubuntu/xenial/gzserver9/Dockerfile)
+-	[`libgazebo9-xenial` (*gazebo/9/ubuntu/xenial/libgazebo9/Dockerfile*)](https://github.com/osrf/docker_images/blob/44566fb378f4e04ac4b60f4dd2b802ff7554365e/gazebo/9/ubuntu/xenial/libgazebo9/Dockerfile)
+-	[`gzserver9`, `gzserver9-bionic` (*gazebo/9/ubuntu/bionic/gzserver9/Dockerfile*)](https://github.com/osrf/docker_images/blob/041349d7040610273286eb38a7a038f60e405617/gazebo/9/ubuntu/bionic/gzserver9/Dockerfile)
+-	[`libgazebo9`, `libgazebo9-bionic` (*gazebo/9/ubuntu/bionic/libgazebo9/Dockerfile*)](https://github.com/osrf/docker_images/blob/041349d7040610273286eb38a7a038f60e405617/gazebo/9/ubuntu/bionic/libgazebo9/Dockerfile)
+-	[`gzserver9-stretch` (*gazebo/9/debian/stretch/gzserver9/Dockerfile*)](https://github.com/osrf/docker_images/blob/23e427965fb5650593d9d3567e0ee716dc87c470/gazebo/9/debian/stretch/gzserver9/Dockerfile)
+-	[`libgazebo9-stretch` (*gazebo/9/debian/stretch/libgazebo9/Dockerfile*)](https://github.com/osrf/docker_images/blob/23e427965fb5650593d9d3567e0ee716dc87c470/gazebo/9/debian/stretch/libgazebo9/Dockerfile)
+-	[`gzserver10`, `gzserver10-bionic` (*gazebo/10/ubuntu/bionic/gzserver10/Dockerfile*)](https://github.com/osrf/docker_images/blob/00d02282c2393ccde655fa0c333b4410a10b3985/gazebo/10/ubuntu/bionic/gzserver10/Dockerfile)
+-	[`libgazebo10`, `libgazebo10-bionic`, `latest` (*gazebo/10/ubuntu/bionic/libgazebo10/Dockerfile*)](https://github.com/osrf/docker_images/blob/00d02282c2393ccde655fa0c333b4410a10b3985/gazebo/10/ubuntu/bionic/libgazebo10/Dockerfile)
 
 # Quick reference
 
@@ -37,7 +39,7 @@ WARNING:
 	[the Open Source Robotics Foundation](https://github.com/osrf/docker_images)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/gazebo/)
+	[`amd64`](https://hub.docker.com/r/amd64/gazebo/), [`arm32v7`](https://hub.docker.com/r/arm32v7/gazebo/), [`arm64v8`](https://hub.docker.com/r/arm64v8/gazebo/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/gazebo/` directory](https://github.com/docker-library/repo-info/blob/master/repos/gazebo) ([history](https://github.com/docker-library/repo-info/commits/master/repos/gazebo))  

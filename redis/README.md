@@ -16,12 +16,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.0.0`, `5.0`, `5`, `latest`, `5.0.0-stretch`, `5.0-stretch`, `5-stretch`, `stretch` (*5.0/Dockerfile*)](https://github.com/docker-library/redis/blob/dc6dc737baa434528ce31948b22b4c6ccc78793a/5.0/Dockerfile)
--	[`5.0.0-32bit`, `5.0-32bit`, `5-32bit`, `32bit`, `5.0.0-32bit-stretch`, `5.0-32bit-stretch`, `5-32bit-stretch`, `32bit-stretch` (*5.0/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/dc6dc737baa434528ce31948b22b4c6ccc78793a/5.0/32bit/Dockerfile)
--	[`5.0.0-alpine`, `5.0-alpine`, `5-alpine`, `alpine`, `5.0.0-alpine3.8`, `5.0-alpine3.8`, `5-alpine3.8`, `alpine3.8` (*5.0/alpine/Dockerfile*)](https://github.com/docker-library/redis/blob/dc6dc737baa434528ce31948b22b4c6ccc78793a/5.0/alpine/Dockerfile)
--	[`4.0.11`, `4.0`, `4`, `4.0.11-stretch`, `4.0-stretch`, `4-stretch` (*4.0/Dockerfile*)](https://github.com/docker-library/redis/blob/53348c1c52c3d2e8666fbf748bc9e2297c35b452/4.0/Dockerfile)
--	[`4.0.11-32bit`, `4.0-32bit`, `4-32bit`, `4.0.11-32bit-stretch`, `4.0-32bit-stretch`, `4-32bit-stretch` (*4.0/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/53348c1c52c3d2e8666fbf748bc9e2297c35b452/4.0/32bit/Dockerfile)
--	[`4.0.11-alpine`, `4.0-alpine`, `4-alpine`, `4.0.11-alpine3.8`, `4.0-alpine3.8`, `4-alpine3.8` (*4.0/alpine/Dockerfile*)](https://github.com/docker-library/redis/blob/53348c1c52c3d2e8666fbf748bc9e2297c35b452/4.0/alpine/Dockerfile)
+-	[`5.0.4`, `5.0`, `5`, `latest`, `5.0.4-stretch`, `5.0-stretch`, `5-stretch`, `stretch` (*5.0/Dockerfile*)](https://github.com/docker-library/redis/blob/dcc0a2a343ce499b78ca617987e8621e7d31515b/5.0/Dockerfile)
+-	[`5.0.4-32bit`, `5.0-32bit`, `5-32bit`, `32bit`, `5.0.4-32bit-stretch`, `5.0-32bit-stretch`, `5-32bit-stretch`, `32bit-stretch` (*5.0/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/dcc0a2a343ce499b78ca617987e8621e7d31515b/5.0/32bit/Dockerfile)
+-	[`5.0.4-alpine`, `5.0-alpine`, `5-alpine`, `alpine`, `5.0.4-alpine3.9`, `5.0-alpine3.9`, `5-alpine3.9`, `alpine3.9` (*5.0/alpine/Dockerfile*)](https://github.com/docker-library/redis/blob/dcc0a2a343ce499b78ca617987e8621e7d31515b/5.0/alpine/Dockerfile)
+-	[`4.0.14`, `4.0`, `4`, `4.0.14-stretch`, `4.0-stretch`, `4-stretch` (*4.0/Dockerfile*)](https://github.com/docker-library/redis/blob/9519b0469cc8410808b1741c9372394a4b37b1c0/4.0/Dockerfile)
+-	[`4.0.14-32bit`, `4.0-32bit`, `4-32bit`, `4.0.14-32bit-stretch`, `4.0-32bit-stretch`, `4-32bit-stretch` (*4.0/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/9519b0469cc8410808b1741c9372394a4b37b1c0/4.0/32bit/Dockerfile)
+-	[`4.0.14-alpine`, `4.0-alpine`, `4-alpine`, `4.0.14-alpine3.9`, `4.0-alpine3.9`, `4-alpine3.9` (*4.0/alpine/Dockerfile*)](https://github.com/docker-library/redis/blob/9519b0469cc8410808b1741c9372394a4b37b1c0/4.0/alpine/Dockerfile)
 
 # Quick reference
 
@@ -67,8 +67,6 @@ Redis is an open-source, networked, in-memory, key-value data store with optiona
 $ docker run --name some-redis -d redis
 ```
 
-This image includes `EXPOSE 6379` (the redis port), so standard container linking will make it automatically available to the linked containers (as the following examples illustrate).
-
 ## start with persistent storage
 
 ```console
@@ -79,16 +77,10 @@ If persistence is enabled, data is stored in the `VOLUME /data`, which can be us
 
 For more about Redis Persistence, see [http://redis.io/topics/persistence](http://redis.io/topics/persistence).
 
-## connect to it from an application
+## connecting via `redis-cli`
 
 ```console
-$ docker run --name some-app --link some-redis:redis -d application-that-uses-redis
-```
-
-## ... or via `redis-cli`
-
-```console
-$ docker run -it --link some-redis:redis --rm redis redis-cli -h redis -p 6379
+$ docker run -it --network some-network --rm redis redis-cli -h some-redis
 ```
 
 ## Additionally, If you want to use your own redis.conf ...

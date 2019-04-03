@@ -54,7 +54,7 @@ We can now start a Chronograf container that references this database.
 
 ```console
 $ docker run -p 8888:8888 \
-      --net=influxdb
+      --net=influxdb \
       %%IMAGE%% --influxdb-url=http://influxdb:8086
 ```
 

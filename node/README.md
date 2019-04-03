@@ -16,22 +16,28 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.12.0-jessie`, `8.12-jessie`, `8-jessie`, `carbon-jessie`, `8.12.0`, `8.12`, `8`, `carbon` (*8/jessie/Dockerfile*)](https://github.com/nodejs/docker-node/blob/526c6e618300bdda0da4b3159df682cae83e14aa/8/jessie/Dockerfile)
--	[`8.12.0-alpine`, `8.12-alpine`, `8-alpine`, `carbon-alpine` (*8/alpine/Dockerfile*)](https://github.com/nodejs/docker-node/blob/526c6e618300bdda0da4b3159df682cae83e14aa/8/alpine/Dockerfile)
--	[`8.12.0-onbuild`, `8.12-onbuild`, `8-onbuild`, `carbon-onbuild` (*8/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/526c6e618300bdda0da4b3159df682cae83e14aa/8/onbuild/Dockerfile)
--	[`8.12.0-slim`, `8.12-slim`, `8-slim`, `carbon-slim` (*8/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/526c6e618300bdda0da4b3159df682cae83e14aa/8/slim/Dockerfile)
--	[`8.12.0-stretch`, `8.12-stretch`, `8-stretch`, `carbon-stretch` (*8/stretch/Dockerfile*)](https://github.com/nodejs/docker-node/blob/526c6e618300bdda0da4b3159df682cae83e14aa/8/stretch/Dockerfile)
--	[`6.14.4-jessie`, `6.14-jessie`, `6-jessie`, `boron-jessie`, `6.14.4`, `6.14`, `6`, `boron` (*6/jessie/Dockerfile*)](https://github.com/nodejs/docker-node/blob/72dd945d29dee5afa73956ebc971bf3a472442f7/6/jessie/Dockerfile)
--	[`6.14.4-alpine`, `6.14-alpine`, `6-alpine`, `boron-alpine` (*6/alpine/Dockerfile*)](https://github.com/nodejs/docker-node/blob/72dd945d29dee5afa73956ebc971bf3a472442f7/6/alpine/Dockerfile)
--	[`6.14.4-onbuild`, `6.14-onbuild`, `6-onbuild`, `boron-onbuild` (*6/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/72dd945d29dee5afa73956ebc971bf3a472442f7/6/onbuild/Dockerfile)
--	[`6.14.4-slim`, `6.14-slim`, `6-slim`, `boron-slim` (*6/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/72dd945d29dee5afa73956ebc971bf3a472442f7/6/slim/Dockerfile)
--	[`6.14.4-stretch`, `6.14-stretch`, `6-stretch`, `boron-stretch` (*6/stretch/Dockerfile*)](https://github.com/nodejs/docker-node/blob/72dd945d29dee5afa73956ebc971bf3a472442f7/6/stretch/Dockerfile)
--	[`10.12.0-jessie`, `10.12-jessie`, `10-jessie`, `jessie`, `10.12.0`, `10.12`, `10`, `latest` (*10/jessie/Dockerfile*)](https://github.com/nodejs/docker-node/blob/45fa3ebe94598758b9c9e4a382236fc7e879e2e6/10/jessie/Dockerfile)
--	[`10.12.0-alpine`, `10.12-alpine`, `10-alpine`, `alpine` (*10/alpine/Dockerfile*)](https://github.com/nodejs/docker-node/blob/45fa3ebe94598758b9c9e4a382236fc7e879e2e6/10/alpine/Dockerfile)
--	[`10.12.0-slim`, `10.12-slim`, `10-slim`, `slim` (*10/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/45fa3ebe94598758b9c9e4a382236fc7e879e2e6/10/slim/Dockerfile)
--	[`10.12.0-stretch`, `10.12-stretch`, `10-stretch`, `stretch` (*10/stretch/Dockerfile*)](https://github.com/nodejs/docker-node/blob/45fa3ebe94598758b9c9e4a382236fc7e879e2e6/10/stretch/Dockerfile)
--	[`chakracore-8.11.1`, `chakracore-8.11`, `chakracore-8` (*chakracore/8/Dockerfile*)](https://github.com/nodejs/docker-node/blob/947280600648b70e067d35415d6812fd03127def/chakracore/8/Dockerfile)
--	[`chakracore-10.6.0`, `chakracore-10.6`, `chakracore-10`, `chakracore` (*chakracore/10/Dockerfile*)](https://github.com/nodejs/docker-node/blob/ea61a26000dbc3b90708f4f024614dc41c94346e/chakracore/10/Dockerfile)
+-	[`8.15.1-jessie`, `8.15-jessie`, `8-jessie`, `carbon-jessie` (*8/jessie/Dockerfile*)](https://github.com/nodejs/docker-node/blob/de76fb48b532d6be012098dc3538bd15329a27d0/8/jessie/Dockerfile)
+-	[`8.15.1-jessie-slim`, `8.15-jessie-slim`, `8-jessie-slim`, `carbon-jessie-slim` (*8/jessie-slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/de76fb48b532d6be012098dc3538bd15329a27d0/8/jessie-slim/Dockerfile)
+-	[`8.15.1-alpine`, `8.15-alpine`, `8-alpine`, `carbon-alpine` (*8/alpine/Dockerfile*)](https://github.com/nodejs/docker-node/blob/de76fb48b532d6be012098dc3538bd15329a27d0/8/alpine/Dockerfile)
+-	[`8.15.1-onbuild`, `8.15-onbuild`, `8-onbuild`, `carbon-onbuild` (*8/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/de76fb48b532d6be012098dc3538bd15329a27d0/8/onbuild/Dockerfile)
+-	[`8.15.1-stretch`, `8.15-stretch`, `8-stretch`, `carbon-stretch`, `8.15.1`, `8.15`, `8`, `carbon` (*8/stretch/Dockerfile*)](https://github.com/nodejs/docker-node/blob/de76fb48b532d6be012098dc3538bd15329a27d0/8/stretch/Dockerfile)
+-	[`8.15.1-stretch-slim`, `8.15-stretch-slim`, `8-stretch-slim`, `carbon-stretch-slim`, `8.15.1-slim`, `8.15-slim`, `8-slim`, `carbon-slim` (*8/stretch-slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/de76fb48b532d6be012098dc3538bd15329a27d0/8/stretch-slim/Dockerfile)
+-	[`6.17.0-jessie`, `6.17-jessie`, `6-jessie`, `boron-jessie` (*6/jessie/Dockerfile*)](https://github.com/nodejs/docker-node/blob/6833ee622c5a1d4c054ffaf96115f2a20714f5f3/6/jessie/Dockerfile)
+-	[`6.17.0-jessie-slim`, `6.17-jessie-slim`, `6-jessie-slim`, `boron-jessie-slim` (*6/jessie-slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/6833ee622c5a1d4c054ffaf96115f2a20714f5f3/6/jessie-slim/Dockerfile)
+-	[`6.17.0-alpine`, `6.17-alpine`, `6-alpine`, `boron-alpine` (*6/alpine/Dockerfile*)](https://github.com/nodejs/docker-node/blob/6833ee622c5a1d4c054ffaf96115f2a20714f5f3/6/alpine/Dockerfile)
+-	[`6.17.0-onbuild`, `6.17-onbuild`, `6-onbuild`, `boron-onbuild` (*6/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/6833ee622c5a1d4c054ffaf96115f2a20714f5f3/6/onbuild/Dockerfile)
+-	[`6.17.0-stretch`, `6.17-stretch`, `6-stretch`, `boron-stretch`, `6.17.0`, `6.17`, `6`, `boron` (*6/stretch/Dockerfile*)](https://github.com/nodejs/docker-node/blob/6833ee622c5a1d4c054ffaf96115f2a20714f5f3/6/stretch/Dockerfile)
+-	[`6.17.0-stretch-slim`, `6.17-stretch-slim`, `6-stretch-slim`, `boron-stretch-slim`, `6.17.0-slim`, `6.17-slim`, `6-slim`, `boron-slim` (*6/stretch-slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/6833ee622c5a1d4c054ffaf96115f2a20714f5f3/6/stretch-slim/Dockerfile)
+-	[`11.13.0-alpine`, `11.13-alpine`, `11-alpine`, `current-alpine`, `alpine` (*11/alpine/Dockerfile*)](https://github.com/nodejs/docker-node/blob/ed4cf449b40da125d4a5991fc12db20be51e6d4a/11/alpine/Dockerfile)
+-	[`11.13.0-stretch`, `11.13-stretch`, `11-stretch`, `current-stretch`, `stretch`, `11.13.0`, `11.13`, `11`, `current`, `latest` (*11/stretch/Dockerfile*)](https://github.com/nodejs/docker-node/blob/ed4cf449b40da125d4a5991fc12db20be51e6d4a/11/stretch/Dockerfile)
+-	[`11.13.0-stretch-slim`, `11.13-stretch-slim`, `11-stretch-slim`, `current-stretch-slim`, `stretch-slim`, `11.13.0-slim`, `11.13-slim`, `11-slim`, `current-slim`, `slim` (*11/stretch-slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/ed4cf449b40da125d4a5991fc12db20be51e6d4a/11/stretch-slim/Dockerfile)
+-	[`10.15.3-jessie`, `10.15-jessie`, `10-jessie`, `dubnium-jessie`, `lts-jessie` (*10/jessie/Dockerfile*)](https://github.com/nodejs/docker-node/blob/170ed2092d4925971f9cd3ad5dfc416e820f90fd/10/jessie/Dockerfile)
+-	[`10.15.3-jessie-slim`, `10.15-jessie-slim`, `10-jessie-slim`, `dubnium-jessie-slim`, `lts-jessie-slim` (*10/jessie-slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/170ed2092d4925971f9cd3ad5dfc416e820f90fd/10/jessie-slim/Dockerfile)
+-	[`10.15.3-alpine`, `10.15-alpine`, `10-alpine`, `dubnium-alpine`, `lts-alpine` (*10/alpine/Dockerfile*)](https://github.com/nodejs/docker-node/blob/170ed2092d4925971f9cd3ad5dfc416e820f90fd/10/alpine/Dockerfile)
+-	[`10.15.3-stretch`, `10.15-stretch`, `10-stretch`, `dubnium-stretch`, `lts-stretch`, `10.15.3`, `10.15`, `10`, `dubnium`, `lts` (*10/stretch/Dockerfile*)](https://github.com/nodejs/docker-node/blob/170ed2092d4925971f9cd3ad5dfc416e820f90fd/10/stretch/Dockerfile)
+-	[`10.15.3-stretch-slim`, `10.15-stretch-slim`, `10-stretch-slim`, `dubnium-stretch-slim`, `lts-stretch-slim`, `10.15.3-slim`, `10.15-slim`, `10-slim`, `dubnium-slim`, `lts-slim` (*10/stretch-slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/170ed2092d4925971f9cd3ad5dfc416e820f90fd/10/stretch-slim/Dockerfile)
+-	[`chakracore-8.11.1`, `chakracore-8.11`, `chakracore-8` (*chakracore/8/Dockerfile*)](https://github.com/nodejs/docker-node/blob/8ccd57c1457a1b47adc4d82f9fed9ad51ccef3c5/chakracore/8/Dockerfile)
+-	[`chakracore-10.13.0`, `chakracore-10.13`, `chakracore-10`, `chakracore` (*chakracore/10/Dockerfile*)](https://github.com/nodejs/docker-node/blob/69c8a5f448f46f9e34d7fb577eca79ba01f6864d/chakracore/10/Dockerfile)
 
 # Quick reference
 
@@ -89,6 +95,10 @@ This tag is based off of [`buildpack-deps`](https://hub.docker.com/_/buildpack-d
 
 Some of these tags may have names like jessie or stretch in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on.
 
+## `node:<version>-slim`
+
+This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `node`. Unless you are working in an environment where *only* the `node` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
+
 ## `node:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
@@ -104,10 +114,6 @@ The `ONBUILD` image variants are deprecated, and their usage is discouraged. For
 While the `onbuild` variant is really useful for "getting off the ground running" (zero to Dockerized in a short period of time), it's not recommended for long-term usage within a project due to the lack of control over *when* the `ONBUILD` triggers fire (see also [`docker/docker#5714`](https://github.com/docker/docker/issues/5714), [`docker/docker#8240`](https://github.com/docker/docker/issues/8240), [`docker/docker#11917`](https://github.com/docker/docker/issues/11917)).
 
 Once you've got a handle on how your project functions within Docker, you'll probably want to adjust your `Dockerfile` to inherit from a non-`onbuild` variant and copy the commands from the `onbuild` variant `Dockerfile` (moving the `ONBUILD` lines to the end and removing the `ONBUILD` keywords) into your own file so that you have tighter control over them and more transparency for yourself and others looking at your `Dockerfile` as to what it does. This also makes it easier to add additional requirements as time goes on (such as installing more packages before performing the previously-`ONBUILD` steps).
-
-## `node:<version>-slim`
-
-This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `node`. Unless you are working in an environment where *only* the `node` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
 
 # License
 

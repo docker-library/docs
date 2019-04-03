@@ -16,15 +16,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.6.2-apache`, `8.6-apache`, `8-apache`, `apache`, `8.6.2`, `8.6`, `8`, `latest` (*8.6/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/48eb0d321cb472d76de0cf552192ee044f568ebe/8.6/apache/Dockerfile)
--	[`8.6.2-fpm`, `8.6-fpm`, `8-fpm`, `fpm` (*8.6/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/48eb0d321cb472d76de0cf552192ee044f568ebe/8.6/fpm/Dockerfile)
--	[`8.6.2-fpm-alpine`, `8.6-fpm-alpine`, `8-fpm-alpine`, `fpm-alpine` (*8.6/fpm-alpine/Dockerfile*)](https://github.com/docker-library/drupal/blob/48eb0d321cb472d76de0cf552192ee044f568ebe/8.6/fpm-alpine/Dockerfile)
--	[`8.5.8-apache`, `8.5-apache`, `8.5.8`, `8.5` (*8.5/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/8a9569a2d2e9ded138454b34ae043afd0bdb2660/8.5/apache/Dockerfile)
--	[`8.5.8-fpm`, `8.5-fpm` (*8.5/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/8a9569a2d2e9ded138454b34ae043afd0bdb2660/8.5/fpm/Dockerfile)
--	[`8.5.8-fpm-alpine`, `8.5-fpm-alpine` (*8.5/fpm-alpine/Dockerfile*)](https://github.com/docker-library/drupal/blob/8a9569a2d2e9ded138454b34ae043afd0bdb2660/8.5/fpm-alpine/Dockerfile)
--	[`7.60-apache`, `7-apache`, `7.60`, `7` (*7/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/978f4a2b3b187dcf105d9c40cfd6b84ea8597850/7/apache/Dockerfile)
--	[`7.60-fpm`, `7-fpm` (*7/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/978f4a2b3b187dcf105d9c40cfd6b84ea8597850/7/fpm/Dockerfile)
--	[`7.60-fpm-alpine`, `7-fpm-alpine` (*7/fpm-alpine/Dockerfile*)](https://github.com/docker-library/drupal/blob/978f4a2b3b187dcf105d9c40cfd6b84ea8597850/7/fpm-alpine/Dockerfile)
+-	[`8.6.13-apache`, `8.6-apache`, `8-apache`, `apache`, `8.6.13`, `8.6`, `8`, `latest` (*8.6/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/ad7ae4e7d42746c98e55fd489e1ed5f510ba1f23/8.6/apache/Dockerfile)
+-	[`8.6.13-fpm`, `8.6-fpm`, `8-fpm`, `fpm` (*8.6/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/ad7ae4e7d42746c98e55fd489e1ed5f510ba1f23/8.6/fpm/Dockerfile)
+-	[`8.6.13-fpm-alpine`, `8.6-fpm-alpine`, `8-fpm-alpine`, `fpm-alpine` (*8.6/fpm-alpine/Dockerfile*)](https://github.com/docker-library/drupal/blob/ad7ae4e7d42746c98e55fd489e1ed5f510ba1f23/8.6/fpm-alpine/Dockerfile)
+-	[`8.5.14-apache`, `8.5-apache`, `8.5.14`, `8.5` (*8.5/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/6cd1dd522ad508295a24c2f66fb41079b1dcc3af/8.5/apache/Dockerfile)
+-	[`8.5.14-fpm`, `8.5-fpm` (*8.5/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/6cd1dd522ad508295a24c2f66fb41079b1dcc3af/8.5/fpm/Dockerfile)
+-	[`8.5.14-fpm-alpine`, `8.5-fpm-alpine` (*8.5/fpm-alpine/Dockerfile*)](https://github.com/docker-library/drupal/blob/6cd1dd522ad508295a24c2f66fb41079b1dcc3af/8.5/fpm-alpine/Dockerfile)
+-	[`7.65-apache`, `7-apache`, `7.65`, `7` (*7/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/9c086fdeb757ae146d71384bdeb5103dd54b6d28/7/apache/Dockerfile)
+-	[`7.65-fpm`, `7-fpm` (*7/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/9c086fdeb757ae146d71384bdeb5103dd54b6d28/7/fpm/Dockerfile)
+-	[`7.65-fpm-alpine`, `7-fpm-alpine` (*7/fpm-alpine/Dockerfile*)](https://github.com/docker-library/drupal/blob/9c086fdeb757ae146d71384bdeb5103dd54b6d28/7/fpm-alpine/Dockerfile)
 
 # Quick reference
 
@@ -78,29 +78,29 @@ $ docker run --name some-drupal -p 8080:80 -d drupal
 
 Then, access it via `http://localhost:8080` or `http://host-ip:8080` in a browser.
 
-There are multiple database types supported by this image, most easily used via standard container linking. In the default configuration, SQLite can be used to avoid a second container and write to flat-files. More detailed instructions for different (more production-ready) database types follow.
+There are multiple database types supported by this image, most easily used via Docker networks. In the default configuration, SQLite can be used to avoid a second container and write to flat-files. More detailed instructions for different (more production-ready) database types follow.
 
 When first accessing the webserver provided by this image, it will go through a brief setup process. The details provided below are specifically for the "Set up database" step of that configuration process.
 
 ## MySQL
 
 ```console
-$ docker run --name some-drupal --link some-mysql:mysql -d drupal
+$ docker run --name some-drupal --network some-network -d drupal
 ```
 
 -	Database type: `MySQL, MariaDB, or equivalent`
 -	Database name/username/password: `<details for accessing your MySQL instance>` (`MYSQL_USER`, `MYSQL_PASSWORD`, `MYSQL_DATABASE`; see environment variables in the description for [`mysql`](https://hub.docker.com/_/mysql/))
--	ADVANCED OPTIONS; Database host: `mysql` (for using the `/etc/hosts` entry added by `--link` to access the linked container's MySQL instance)
+-	ADVANCED OPTIONS; Database host: `some-mysql` (for using the DNS entry added by `--network` to access the MySQL container)
 
 ## PostgreSQL
 
 ```console
-$ docker run --name some-drupal --link some-postgres:postgres -d drupal
+$ docker run --name some-drupal --network some-network -d drupal
 ```
 
 -	Database type: `PostgreSQL`
 -	Database name/username/password: `<details for accessing your PostgreSQL instance>` (`POSTGRES_USER`, `POSTGRES_PASSWORD`; see environment variables in the description for [`postgres`](https://hub.docker.com/_/postgres/))
--	ADVANCED OPTIONS; Database host: `postgres` (for using the `/etc/hosts` entry added by `--link` to access the linked container's PostgreSQL instance)
+-	ADVANCED OPTIONS; Database host: `some-postgres` (for using the DNS entry added by `--network` to access the PostgreSQL container)
 
 ## Volumes
 
@@ -117,7 +117,7 @@ $ docker run --rm drupal tar -cC /var/www/html/sites . | tar -xC /path/on/host/s
 This can then be bind-mounted into a new container:
 
 ```console
-$ docker run --name some-drupal --link some-postgres:postgres -d \
+$ docker run --name some-drupal --network some-network -d \
 	-v /path/on/host/modules:/var/www/html/modules \
 	-v /path/on/host/profiles:/var/www/html/profiles \
 	-v /path/on/host/sites:/var/www/html/sites \
@@ -130,7 +130,7 @@ Another solution using Docker Volumes:
 ```console
 $ docker volume create drupal-sites
 $ docker run --rm -v drupal-sites:/temporary/sites drupal cp -aRT /var/www/html/sites /temporary/sites
-$ docker run --name some-drupal --link some-postgres:postgres -d \
+$ docker run --name some-drupal --network some-network -d \
 	-v drupal-modules:/var/www/html/modules \
 	-v drupal-profiles:/var/www/html/profiles \
 	-v drupal-sites:/var/www/html/sites \
@@ -193,7 +193,6 @@ If you need additional PHP extensions, you'll need to create your own image `FRO
 The following Docker Hub features can help with the task of keeping your dependent images up-to-date:
 
 -	[Automated Builds](https://docs.docker.com/docker-hub/builds/) let Docker Hub automatically build your Dockerfile each time you push changes to it.
--	[Repository Links](https://docs.docker.com/docker-hub/builds/#repository-links) can ensure that your image is also rebuilt any time `drupal` is updated.
 
 ## Running as an arbitrary user
 

@@ -16,10 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.4.1` (*6.4.1/Dockerfile*)](https://github.com/docker-library/kibana/blob/b8eac6fd9374fdb607b226603c13f180d4040588/6.4.1/Dockerfile)
--	[`6.4.0` (*6.4.0/Dockerfile*)](https://github.com/docker-library/kibana/blob/b8eac6fd9374fdb607b226603c13f180d4040588/6.4.0/Dockerfile)
--	[`6.4.2` (*6/Dockerfile*)](https://github.com/docker-library/kibana/blob/b8eac6fd9374fdb607b226603c13f180d4040588/6/Dockerfile)
--	[`5.6.12`, `5.6`, `5` (*5/Dockerfile*)](https://github.com/docker-library/kibana/blob/958ce4b1abe560d2cbbe6a74168d13031cb1e106/5/Dockerfile)
+-	[`6.7.0` (*6/Dockerfile*)](https://github.com/docker-library/kibana/blob/e085150e59f3a1c292e417c7adbc97fbb5cd9f1b/6/Dockerfile)
+-	[`5.6.16`, `5.6`, `5` (*5/Dockerfile*)](https://github.com/docker-library/kibana/blob/c6966787dbfaae201ddd3826b33298165e26f416/5/Dockerfile)
 
 # Quick reference
 
@@ -27,12 +25,10 @@ WARNING:
 	the [Kibana Discuss Forums](https://discuss.elastic.co/c/kibana), the [Elastic community](https://www.elastic.co/community)
 
 -	**Where to file issues**:  
-	For issues with the Kibana Docker image: https://github.com/elastic/kibana-docker/issues
-
-For issues with Kibana: [https://github.com/elastic/kibana/issues](https://github.com/elastic/kibana/issues)
+	For issues with the Kibana Docker image or Kibana: https://github.com/elastic/kibana/issues
 
 -	**Maintained by**:  
-	[the Elastic Team](https://github.com/elastic/kibana-docker)
+	[the Elastic Team](https://github.com/elastic/kibana)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/kibana/)
@@ -57,7 +53,7 @@ Kibana is an open source analytics and visualization platform designed to work w
 
 > For more information about Kibana, please visit [www.elastic.co/products/kibana](https://www.elastic.co/products/kibana)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/8bb704930619acddf6f5705e7d1cf54defdd3388/kibana/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/7baeec9386c1d3960fc9021a5973694b2e0e1af9/kibana/logo.png)
 
 # About This Image
 

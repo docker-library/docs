@@ -1,1 +1,1 @@
-View [license information](https://getkong.org/license/) for the software contained in this image.
+View [license information](https://konghq.com/kong/license/) for the software contained in this image.

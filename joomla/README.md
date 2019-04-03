@@ -16,18 +16,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.8.13-php5.6-apache`, `3.8-php5.6-apache`, `3-php5.6-apache`, `php5.6-apache`, `3.8.13-php5.6`, `3.8-php5.6`, `3-php5.6`, `php5.6` (*php5.6/apache/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/23d27541b491bb4b259e1941ec48a9c6e495b70d/php5.6/apache/Dockerfile)
--	[`3.8.13-php5.6-fpm`, `3.8-php5.6-fpm`, `3-php5.6-fpm`, `php5.6-fpm` (*php5.6/fpm/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/23d27541b491bb4b259e1941ec48a9c6e495b70d/php5.6/fpm/Dockerfile)
--	[`3.8.13-php5.6-fpm-alpine`, `3.8-php5.6-fpm-alpine`, `3-php5.6-fpm-alpine`, `php5.6-fpm-alpine` (*php5.6/fpm-alpine/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/23d27541b491bb4b259e1941ec48a9c6e495b70d/php5.6/fpm-alpine/Dockerfile)
--	[`3.8.13-php7.0-apache`, `3.8-php7.0-apache`, `3-php7.0-apache`, `php7.0-apache`, `3.8.13-php7.0`, `3.8-php7.0`, `3-php7.0`, `php7.0` (*php7.0/apache/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/23d27541b491bb4b259e1941ec48a9c6e495b70d/php7.0/apache/Dockerfile)
--	[`3.8.13-php7.0-fpm`, `3.8-php7.0-fpm`, `3-php7.0-fpm`, `php7.0-fpm` (*php7.0/fpm/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/23d27541b491bb4b259e1941ec48a9c6e495b70d/php7.0/fpm/Dockerfile)
--	[`3.8.13-php7.0-fpm-alpine`, `3.8-php7.0-fpm-alpine`, `3-php7.0-fpm-alpine`, `php7.0-fpm-alpine` (*php7.0/fpm-alpine/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/23d27541b491bb4b259e1941ec48a9c6e495b70d/php7.0/fpm-alpine/Dockerfile)
--	[`3.8.13-apache`, `3.8-apache`, `3-apache`, `apache`, `3.8.13`, `3.8`, `3`, `latest`, `3.8.13-php7.1-apache`, `3.8-php7.1-apache`, `3-php7.1-apache`, `php7.1-apache`, `3.8.13-php7.1`, `3.8-php7.1`, `3-php7.1`, `php7.1` (*php7.1/apache/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/23d27541b491bb4b259e1941ec48a9c6e495b70d/php7.1/apache/Dockerfile)
--	[`3.8.13-fpm`, `3.8-fpm`, `3-fpm`, `fpm`, `3.8.13-php7.1-fpm`, `3.8-php7.1-fpm`, `3-php7.1-fpm`, `php7.1-fpm` (*php7.1/fpm/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/23d27541b491bb4b259e1941ec48a9c6e495b70d/php7.1/fpm/Dockerfile)
--	[`3.8.13-fpm-alpine`, `3.8-fpm-alpine`, `3-fpm-alpine`, `fpm-alpine`, `3.8.13-php7.1-fpm-alpine`, `3.8-php7.1-fpm-alpine`, `3-php7.1-fpm-alpine`, `php7.1-fpm-alpine` (*php7.1/fpm-alpine/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/23d27541b491bb4b259e1941ec48a9c6e495b70d/php7.1/fpm-alpine/Dockerfile)
--	[`3.8.13-php7.2-apache`, `3.8-php7.2-apache`, `3-php7.2-apache`, `php7.2-apache`, `3.8.13-php7.2`, `3.8-php7.2`, `3-php7.2`, `php7.2` (*php7.2/apache/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/23d27541b491bb4b259e1941ec48a9c6e495b70d/php7.2/apache/Dockerfile)
--	[`3.8.13-php7.2-fpm`, `3.8-php7.2-fpm`, `3-php7.2-fpm`, `php7.2-fpm` (*php7.2/fpm/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/23d27541b491bb4b259e1941ec48a9c6e495b70d/php7.2/fpm/Dockerfile)
--	[`3.8.13-php7.2-fpm-alpine`, `3.8-php7.2-fpm-alpine`, `3-php7.2-fpm-alpine`, `php7.2-fpm-alpine` (*php7.2/fpm-alpine/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/23d27541b491bb4b259e1941ec48a9c6e495b70d/php7.2/fpm-alpine/Dockerfile)
+-	[`3.9.4-apache`, `3.9-apache`, `3-apache`, `apache`, `3.9.4`, `3.9`, `3`, `latest`, `3.9.4-php7.1-apache`, `3.9-php7.1-apache`, `3-php7.1-apache`, `php7.1-apache`, `3.9.4-php7.1`, `3.9-php7.1`, `3-php7.1`, `php7.1` (*php7.1/apache/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/13d38e1c494304fdacd016c59bb5ea0de35ab1c8/php7.1/apache/Dockerfile)
+-	[`3.9.4-fpm`, `3.9-fpm`, `3-fpm`, `fpm`, `3.9.4-php7.1-fpm`, `3.9-php7.1-fpm`, `3-php7.1-fpm`, `php7.1-fpm` (*php7.1/fpm/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/13d38e1c494304fdacd016c59bb5ea0de35ab1c8/php7.1/fpm/Dockerfile)
+-	[`3.9.4-fpm-alpine`, `3.9-fpm-alpine`, `3-fpm-alpine`, `fpm-alpine`, `3.9.4-php7.1-fpm-alpine`, `3.9-php7.1-fpm-alpine`, `3-php7.1-fpm-alpine`, `php7.1-fpm-alpine` (*php7.1/fpm-alpine/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/13d38e1c494304fdacd016c59bb5ea0de35ab1c8/php7.1/fpm-alpine/Dockerfile)
+-	[`3.9.4-php7.2-apache`, `3.9-php7.2-apache`, `3-php7.2-apache`, `php7.2-apache`, `3.9.4-php7.2`, `3.9-php7.2`, `3-php7.2`, `php7.2` (*php7.2/apache/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/13d38e1c494304fdacd016c59bb5ea0de35ab1c8/php7.2/apache/Dockerfile)
+-	[`3.9.4-php7.2-fpm`, `3.9-php7.2-fpm`, `3-php7.2-fpm`, `php7.2-fpm` (*php7.2/fpm/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/13d38e1c494304fdacd016c59bb5ea0de35ab1c8/php7.2/fpm/Dockerfile)
+-	[`3.9.4-php7.2-fpm-alpine`, `3.9-php7.2-fpm-alpine`, `3-php7.2-fpm-alpine`, `php7.2-fpm-alpine` (*php7.2/fpm-alpine/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/13d38e1c494304fdacd016c59bb5ea0de35ab1c8/php7.2/fpm-alpine/Dockerfile)
+-	[`3.9.4-php7.3-apache`, `3.9-php7.3-apache`, `3-php7.3-apache`, `php7.3-apache`, `3.9.4-php7.3`, `3.9-php7.3`, `3-php7.3`, `php7.3` (*php7.3/apache/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/13d38e1c494304fdacd016c59bb5ea0de35ab1c8/php7.3/apache/Dockerfile)
+-	[`3.9.4-php7.3-fpm`, `3.9-php7.3-fpm`, `3-php7.3-fpm`, `php7.3-fpm` (*php7.3/fpm/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/13d38e1c494304fdacd016c59bb5ea0de35ab1c8/php7.3/fpm/Dockerfile)
+-	[`3.9.4-php7.3-fpm-alpine`, `3.9-php7.3-fpm-alpine`, `3-php7.3-fpm-alpine`, `php7.3-fpm-alpine` (*php7.3/fpm-alpine/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/13d38e1c494304fdacd016c59bb5ea0de35ab1c8/php7.3/fpm-alpine/Dockerfile)
 
 # Quick reference
 
@@ -134,7 +131,6 @@ If you need additional PHP extensions, you'll need to create your own image `FRO
 The following Docker Hub features can help with the task of keeping your dependent images up-to-date:
 
 -	[Automated Builds](https://docs.docker.com/docker-hub/builds/) let Docker Hub automatically build your Dockerfile each time you push changes to it.
--	[Repository Links](https://docs.docker.com/docker-hub/builds/#repository-links) can ensure that your image is also rebuilt any time `joomla` is updated.
 
 # Image Variants
 

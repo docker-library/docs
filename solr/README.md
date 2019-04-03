@@ -16,27 +16,21 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.5.0`, `7.5`, `7`, `latest` (*7.5/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/30a795fb7b30dded4dd10748efa947f39a476252/7.5/Dockerfile)
--	[`7.5.0-alpine`, `7.5-alpine`, `7-alpine`, `alpine` (*7.5/alpine/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/30a795fb7b30dded4dd10748efa947f39a476252/7.5/alpine/Dockerfile)
--	[`7.5.0-slim`, `7.5-slim`, `7-slim`, `slim` (*7.5/slim/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/30a795fb7b30dded4dd10748efa947f39a476252/7.5/slim/Dockerfile)
--	[`7.4.0`, `7.4` (*7.4/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/6dbc447c76a5ef9467ed1f2e3dd896500139bf23/7.4/Dockerfile)
--	[`7.4.0-alpine`, `7.4-alpine` (*7.4/alpine/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/6dbc447c76a5ef9467ed1f2e3dd896500139bf23/7.4/alpine/Dockerfile)
--	[`7.4.0-slim`, `7.4-slim` (*7.4/slim/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/6dbc447c76a5ef9467ed1f2e3dd896500139bf23/7.4/slim/Dockerfile)
--	[`7.3.1`, `7.3` (*7.3/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/dc31c84b54a469091a08de7c5b6c73b397e48162/7.3/Dockerfile)
--	[`7.3.1-alpine`, `7.3-alpine` (*7.3/alpine/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/48c50a7b2746470baa9b3e3573033e600dac75e9/7.3/alpine/Dockerfile)
--	[`7.3.1-slim`, `7.3-slim` (*7.3/slim/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/dc31c84b54a469091a08de7c5b6c73b397e48162/7.3/slim/Dockerfile)
--	[`7.2.1`, `7.2` (*7.2/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/48c50a7b2746470baa9b3e3573033e600dac75e9/7.2/Dockerfile)
--	[`7.2.1-alpine`, `7.2-alpine` (*7.2/alpine/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/48c50a7b2746470baa9b3e3573033e600dac75e9/7.2/alpine/Dockerfile)
--	[`7.2.1-slim`, `7.2-slim` (*7.2/slim/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/48c50a7b2746470baa9b3e3573033e600dac75e9/7.2/slim/Dockerfile)
--	[`7.1.0`, `7.1` (*7.1/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/48c50a7b2746470baa9b3e3573033e600dac75e9/7.1/Dockerfile)
--	[`7.1.0-alpine`, `7.1-alpine` (*7.1/alpine/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/48c50a7b2746470baa9b3e3573033e600dac75e9/7.1/alpine/Dockerfile)
--	[`7.1.0-slim`, `7.1-slim` (*7.1/slim/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/48c50a7b2746470baa9b3e3573033e600dac75e9/7.1/slim/Dockerfile)
--	[`6.6.5`, `6.6`, `6` (*6.6/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/d4ee8786131f1271be0b725aa2ab298ec66f4e22/6.6/Dockerfile)
--	[`6.6.5-alpine`, `6.6-alpine`, `6-alpine` (*6.6/alpine/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/d4ee8786131f1271be0b725aa2ab298ec66f4e22/6.6/alpine/Dockerfile)
--	[`6.6.5-slim`, `6.6-slim`, `6-slim` (*6.6/slim/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/d4ee8786131f1271be0b725aa2ab298ec66f4e22/6.6/slim/Dockerfile)
--	[`5.5.5`, `5.5`, `5` (*5.5/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/48c50a7b2746470baa9b3e3573033e600dac75e9/5.5/Dockerfile)
--	[`5.5.5-alpine`, `5.5-alpine`, `5-alpine` (*5.5/alpine/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/48c50a7b2746470baa9b3e3573033e600dac75e9/5.5/alpine/Dockerfile)
--	[`5.5.5-slim`, `5.5-slim`, `5-slim` (*5.5/slim/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/48c50a7b2746470baa9b3e3573033e600dac75e9/5.5/slim/Dockerfile)
+-	[`7.7.1`, `7.7`, `7`, `latest` (*7.7/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/a52ebbb74db723e7afa7a3abcd46f34ed2013a58/7.7/Dockerfile)
+-	[`7.7.1-alpine`, `7.7-alpine`, `7-alpine`, `alpine` (*7.7/alpine/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/6b9921de4e848a3188445c1f0311d33fec0024a0/7.7/alpine/Dockerfile)
+-	[`7.7.1-slim`, `7.7-slim`, `7-slim`, `slim` (*7.7/slim/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/6b9921de4e848a3188445c1f0311d33fec0024a0/7.7/slim/Dockerfile)
+-	[`7.6.0`, `7.6` (*7.6/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/a52ebbb74db723e7afa7a3abcd46f34ed2013a58/7.6/Dockerfile)
+-	[`7.6.0-alpine`, `7.6-alpine` (*7.6/alpine/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/d61313b443fb798a3a4e873d2255216e7b5c3a69/7.6/alpine/Dockerfile)
+-	[`7.6.0-slim`, `7.6-slim` (*7.6/slim/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/d61313b443fb798a3a4e873d2255216e7b5c3a69/7.6/slim/Dockerfile)
+-	[`7.5.0`, `7.5` (*7.5/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/a52ebbb74db723e7afa7a3abcd46f34ed2013a58/7.5/Dockerfile)
+-	[`7.5.0-alpine`, `7.5-alpine` (*7.5/alpine/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/d61313b443fb798a3a4e873d2255216e7b5c3a69/7.5/alpine/Dockerfile)
+-	[`7.5.0-slim`, `7.5-slim` (*7.5/slim/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/d61313b443fb798a3a4e873d2255216e7b5c3a69/7.5/slim/Dockerfile)
+-	[`6.6.5`, `6.6`, `6` (*6.6/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/a52ebbb74db723e7afa7a3abcd46f34ed2013a58/6.6/Dockerfile)
+-	[`6.6.5-alpine`, `6.6-alpine`, `6-alpine` (*6.6/alpine/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/d61313b443fb798a3a4e873d2255216e7b5c3a69/6.6/alpine/Dockerfile)
+-	[`6.6.5-slim`, `6.6-slim`, `6-slim` (*6.6/slim/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/d61313b443fb798a3a4e873d2255216e7b5c3a69/6.6/slim/Dockerfile)
+-	[`5.5.5`, `5.5`, `5` (*5.5/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/a52ebbb74db723e7afa7a3abcd46f34ed2013a58/5.5/Dockerfile)
+-	[`5.5.5-alpine`, `5.5-alpine`, `5-alpine` (*5.5/alpine/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/d61313b443fb798a3a4e873d2255216e7b5c3a69/5.5/alpine/Dockerfile)
+-	[`5.5.5-slim`, `5.5-slim`, `5-slim` (*5.5/slim/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/d61313b443fb798a3a4e873d2255216e7b5c3a69/5.5/slim/Dockerfile)
 
 # Quick reference
 
@@ -121,7 +115,7 @@ $ docker cp $HOME/mydata/mydata.xml my_solr:/opt/solr/mydata.xml
 $ docker exec -it --user=solr my_solr bin/post -c gettingstarted mydata.xml
 ```
 
-or by using Docker host volumes:
+or by mounting a host directory as a volume:
 
 ```console
 $ docker run --name my_solr -d -p 8983:8983 -t -v $HOME/mydata:/opt/solr/mydata solr
@@ -174,7 +168,7 @@ $ sudo chown 8983:8983 mycores
 $ docker run -d -P -v $PWD/mycores:/opt/solr/server/solr/mycores solr solr-precreate mycore
 ```
 
-This second way is quicker, easier to monitor because it logs to the docker log, and can fail immediately if something is wrong. But, because it makes assumptions about Solr's "basic_configs", future upstream changes could break that.
+This second way is quicker, easier to monitor because it logs to the docker log, and can fail immediately if something is wrong.
 
 The third way of creating a core at startup is to use the image extension mechanism explained in the next section.
 
@@ -201,29 +195,69 @@ volumes:
 
 and just run `docker-compose up`.
 
+## solr.in.sh configuration
+
+In Solr it is common to configure settings in [solr.in.sh](https://github.com/apache/lucene-solr/blob/master/solr/bin/solr.in.sh), as documented in the [Solr Reference Guide](https://cwiki.apache.org/confluence/display/solr/Taking+Solr+to+Production#TakingSolrtoProduction-Environmentoverridesincludefile).
+
+In docker-solr you can simply pass these environment variables to the container. For example:
+
+```console
+$ docker run -d -P -e SOLR_HEAP=800m solr
+```
+
+This works for Solr versions newer than 6.3.0. Older versions had some hardcoded defaults in `solr.in.sh`; see `docs/set-heap.sh` for how to modify that configuration.
+
+## Custom SOLR_HOME
+
+In Solr, it is common to specify a custom SOLR_HOME, to store cores and configuration in a different volume. In docker-solr, you can use that with mounted volumes:
+
+```console
+$ mkdir mysolrhome
+$ sudo chown 8983:8983 mysolrhome
+$ docker run -it -v $PWD/mysolrhome:/opt/mysolrhome -e SOLR_HOME=/opt/mysolrhome solr
+```
+
+Solr requires a solr.xml file and configsets in the SOLR_HOME, so you must provide that ahead of time. One way of doing that is to copy the default content before running Solr:
+
+```console
+$ docker run -it -v $PWD/mysolrhome:/opt/mysolrhome -e SOLR_HOME=/opt/mysolrhome solr \
+   bash -c "cp -R /opt/solr/server/solr/* /opt/mysolrhome"
+$ docker run -it -v $PWD/mysolrhome:/opt/mysolrhome -e SOLR_HOME=/opt/mysolrhome solr
+```
+
+or, in a single command:
+
+```console
+$ docker run -it -v $PWD/mysolrhome:/opt/mysolrhome -e SOLR_HOME=/opt/mysolrhome solr \
+   bash -c "cp -R /opt/solr/server/solr/* /opt/mysolrhome && exec docker-entrypoint.sh solr-foreground"
+```
+
+As an added convenience, you can pass `-e INIT_SOLR_HOME=yes` to do that automatically (if SOLR_HOME is empty):
+
+```console
+$ docker run -it -v $PWD/mysolrhome:/opt/mysolrhome -e SOLR_HOME=/opt/mysolrhome -e INIT_SOLR_HOME=yes solr
+```
+
 ## Extending the image
 
 The docker-solr image has an extension mechanism. At run time, before starting Solr, the container will execute scripts in the `/docker-entrypoint-initdb.d/` directory. You can add your own scripts there either by using mounted volumes or by using a custom Dockerfile. These scripts can for example copy a core directory with pre-loaded data for continuous integration testing, or modify the Solr configuration.
 
-Here is a simple example. With a `set-heap.sh` script like:
+Here is a simple example. With a `custom.sh` script like:
 
 ```console
 #!/bin/bash
 set -e
-cp /opt/solr/bin/solr.in.sh /opt/solr/bin/solr.in.sh.orig
-sed -e 's/SOLR_HEAP=".*"/SOLR_HEAP="1024m"/' </opt/solr/bin/solr.in.sh.orig >/opt/solr/bin/solr.in.sh
-grep '^SOLR_HEAP=' /opt/solr/bin/solr.in.sh
+echo "this is running inside the container before Solr starts"
 ```
 
 you can run:
 
 ```console
-$ docker run --name solr_heap1 -d -P -v $PWD/docs/set-heap.sh:/docker-entrypoint-initdb.d/set-heap.sh solr
+$ docker run --name solr_custom1 -d -P -v $PWD/custom.sh:/docker-entrypoint-initdb.d/custom.sh solr
 $ sleep 5
-$ docker logs solr_heap1 | head
+$ docker logs solr_custom1 | head
 /opt/docker-solr/scripts/docker-entrypoint.sh: running /docker-entrypoint-initdb.d/set-heap.sh
-SOLR_HEAP="1024m"
-
+this is running inside the container before Solr starts
 
 Starting Solr on port 8983 from /opt/solr/server
 ```
@@ -234,9 +268,9 @@ With this extension mechanism it can be useful to see the shell commands that ar
 
 You can also run a distributed Solr configuration.
 
-The recommended and most flexible way to do that is to use Docker networking. See the [Can I run ZooKeeper and Solr clusters under Docker](https://github.com/docker-solr/docker-solr/blob/master/Docker-FAQ.md#can-i-run-zookeeper-and-solr-clusters-under-docker) FAQ, and [this example](docs/docker-networking.md).
+The recommended and most flexible way to do that is to use Docker networking. See the [Can I run ZooKeeper and Solr clusters under Docker](https://github.com/docker-solr/docker-solr/blob/master/Docker-FAQ.md#can-i-run-zookeeper-and-solr-clusters-under-docker) FAQ, and [this example](https://github.com/docker-solr/docker-solr/blob/master/docs/docker-networking.md).
 
-You can also use legacy links, see the [Can I run ZooKeeper and Solr with Docker Links](Docker-FAQ.md#can-i-run-zookeeper-and-solr-clusters-under-docker) FAQ.
+You can also use legacy links, see the [Can I run ZooKeeper and Solr with Docker Links](https://github.com/docker-solr/docker-solr/blob/master/Docker-FAQ.md#can-i-run-zookeeper-and-solr-clusters-under-docker) FAQ.
 
 # About this repository
 

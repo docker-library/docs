@@ -24,5 +24,3 @@ The local Grapes cache can be reused across containers by creating a volume and 
 docker volume create --name grapes-cache
 docker run --rm -it -v grapes-cache:/home/groovy/.groovy/grapes %%IMAGE%%
 ```
-
-**Note: Java 9 and Java 10 support is experimental**

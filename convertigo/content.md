@@ -27,12 +27,12 @@ You can access the Server admin console on http://[dockerhost]:28080/convertigo 
 
 ## Link Convertigo to a CouchDB database for FullSync (Convertigo EE only)
 
-Convertigo MBaaS FullSync module uses Apache CouchDB 1.7.1 as NoSQL repository. You can use the **[couchdb](https://hub.docker.com/_/couchdb/)** docker image and link to it convertigo this way
+Convertigo MBaaS FullSync module uses Apache CouchDB 2.3.0 as NoSQL repository. You can use the **[couchdb](https://hub.docker.com/_/couchdb/)** docker image and link to it convertigo this way
 
 Launch CouchDB container and name it 'fullsync'
 
 ```console
-$ docker run -d --name fullsync couchdb:1.7.1
+$ docker run -d --name fullsync couchdb:2.3.0
 ```
 
 Then launch Convertigo and link it to the running 'fullsync' container. Convertigo MBaaS sever will automatically use it as its fullsync repository.
@@ -98,17 +98,29 @@ $ docker run -d --name C8O-MBAAS -e CONVERTIGO_TESTPLATFORM_USER=tp_user -e CONV
 
 Convertigo is based on a *Java* process with some defaults *JVM* options. You can override our defaults *JVM* options with you own.
 
-Add any *Java JVM* options such as -Xmx or -D[something]
+Add any *Java JVM* options such as -D[something] :
 
 ```console
-$ docker run -d --name C8O-MBAAS -e JAVA_OPTS="-Xmx4096m -DjvmRoute=server1" -p 28080:28080 %%IMAGE%%
+$ docker run -d --name C8O-MBAAS -e JAVA_OPTS="-DjvmRoute=server1" -p 28080:28080 %%IMAGE%%
+```
+
+## `JXMX` Environment variable
+
+Convertigo tries to allocate this amount of memory in the container and will automatically reduce it until the value is compatible for the Docker memory constraints. Once the best value found, it is used as `-Xmx=${JXMX}m` parameter for the JVM.
+
+The default `JXMX` value is `2048` and can be defined :
+
+```console
+$ docker run -d --name C8O-MBAAS -e JXMX="4096" -p 28080:28080 %%IMAGE%%
 ```
 
 ## Pre configurated Docker compose stack
 
 You can use this [stack](https://github.com/convertigo/docker/blob/master/compose/mbaas/docker-compose.yml) to run a complete Convertigo MBaaS server with FullSync repository and MySQL analytics in a few command lines.
 
-	mkdir c8oMBaaS
-	cd c8oMBaaS
-	wget https://raw.githubusercontent.com/convertigo/docker/master/compose/mbaas/docker-compose.yml
-	docker-compose up -d
+```console
+$ mkdir c8oMBaaS
+$ cd c8oMBaaS
+$ wget https://raw.githubusercontent.com/convertigo/docker/master/compose/mbaas/docker-compose.yml
+$ docker-compose up -d
+```

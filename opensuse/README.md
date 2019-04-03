@@ -18,14 +18,15 @@ WARNING:
 
 This image has been deprecated in favor of the [`opensuse/leap`](https://hub.docker.com/r/opensuse/leap) and [`opensuse/tumbleweed`](https://hub.docker.com/r/opensuse/tumbleweed) images provided and maintained by the [openSUSE Project](https://www.opensuse.org/) release team.
 
-`opensuse:42.3` (= `opensuse:latest`) will receive security relevant fixes until the [EOL of Leap 42.3](https://en.opensuse.org/Lifetime#openSUSE_Leap). Newer openSUSE Leap releases such as 15.x are only available at [`opensuse/leap`](https://hub.docker.com/r/opensuse/leap)\.
+`opensuse:42.3` (= `opensuse:latest`) will receive security relevant fixes until the [EOL of Leap 42.3](https://en.opensuse.org/Lifetime#openSUSE_Leap). Newer openSUSE Leap releases such as 15.x are only available at [`opensuse/leap`](https://hub.docker.com/r/opensuse/leap).
 
 The opensuse:tumbleweed image is no longer updated, please use [`opensuse/tumbleweed`](https://hub.docker.com/r/opensuse/tumbleweed) instead. [`opensuse/tumbleweed`](https://hub.docker.com/r/opensuse/tumbleweed) is updated on every snapshot release.
+
+An archive for images of unsupported versions can be found at [`opensuse/archive`](https://hub.docker.com/r/opensuse/archive).
 
 # Supported tags and respective `Dockerfile` links
 
 -	[`42.3`, `latest`, `leap` (*x86_64//Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/0611a04c49ad2d19cf4765455549e028f8a8015d/x86_64//Dockerfile)
--	[`tumbleweed` (*x86_64//Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/2b8e47140b2a964ac827d17d4b5edd52ee22997d/x86_64//Dockerfile)
 
 # Quick reference
 
@@ -39,7 +40,7 @@ The opensuse:tumbleweed image is no longer updated, please use [`opensuse/tumble
 	[the SUSE containers team](https://github.com/openSUSE/docker-containers-build)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/opensuse/), [`arm64v8`](https://hub.docker.com/r/arm64v8/opensuse/), [`ppc64le`](https://hub.docker.com/r/ppc64le/opensuse/), [`s390x`](https://hub.docker.com/r/s390x/opensuse/)
+	[`amd64`](https://hub.docker.com/r/amd64/opensuse/), [`arm64v8`](https://hub.docker.com/r/arm64v8/opensuse/), [`ppc64le`](https://hub.docker.com/r/ppc64le/opensuse/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/opensuse/` directory](https://github.com/docker-library/repo-info/blob/master/repos/opensuse) ([history](https://github.com/docker-library/repo-info/commits/master/repos/opensuse))  

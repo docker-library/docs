@@ -16,18 +16,16 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`11.0`, `11`, `latest` (*11/Dockerfile*)](https://github.com/docker-library/postgres/blob/88341a435106ea0c9a805ff305bf486f81f56e0c/11/Dockerfile)
--	[`11.0-alpine`, `11-alpine`, `alpine` (*11/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/3402e9731098e1cba778c0af82b8d6fdfc698f27/11/alpine/Dockerfile)
--	[`10.5`, `10` (*10/Dockerfile*)](https://github.com/docker-library/postgres/blob/6f6968e4a2ee82cc7893e12414cbb221044ed3bd/10/Dockerfile)
--	[`10.5-alpine`, `10-alpine` (*10/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/3f585c58df93e93b730c09a13e8904b96fa20c58/10/alpine/Dockerfile)
--	[`9.6.10`, `9.6`, `9` (*9.6/Dockerfile*)](https://github.com/docker-library/postgres/blob/3f585c58df93e93b730c09a13e8904b96fa20c58/9.6/Dockerfile)
--	[`9.6.10-alpine`, `9.6-alpine`, `9-alpine` (*9.6/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/3f585c58df93e93b730c09a13e8904b96fa20c58/9.6/alpine/Dockerfile)
--	[`9.5.14`, `9.5` (*9.5/Dockerfile*)](https://github.com/docker-library/postgres/blob/3f585c58df93e93b730c09a13e8904b96fa20c58/9.5/Dockerfile)
--	[`9.5.14-alpine`, `9.5-alpine` (*9.5/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/3f585c58df93e93b730c09a13e8904b96fa20c58/9.5/alpine/Dockerfile)
--	[`9.4.19`, `9.4` (*9.4/Dockerfile*)](https://github.com/docker-library/postgres/blob/3f585c58df93e93b730c09a13e8904b96fa20c58/9.4/Dockerfile)
--	[`9.4.19-alpine`, `9.4-alpine` (*9.4/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/3f585c58df93e93b730c09a13e8904b96fa20c58/9.4/alpine/Dockerfile)
--	[`9.3.24`, `9.3` (*9.3/Dockerfile*)](https://github.com/docker-library/postgres/blob/3f585c58df93e93b730c09a13e8904b96fa20c58/9.3/Dockerfile)
--	[`9.3.24-alpine`, `9.3-alpine` (*9.3/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/3f585c58df93e93b730c09a13e8904b96fa20c58/9.3/alpine/Dockerfile)
+-	[`11.2`, `11`, `latest` (*11/Dockerfile*)](https://github.com/docker-library/postgres/blob/7e80419825e4bab4e749bc61334570ffc261ea5e/11/Dockerfile)
+-	[`11.2-alpine`, `11-alpine`, `alpine` (*11/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/6c3b27f1433ad81675afb386a182098dc867e3e8/11/alpine/Dockerfile)
+-	[`10.7`, `10` (*10/Dockerfile*)](https://github.com/docker-library/postgres/blob/ef04f3055bab11b10d3d5c41a659acfacf2c850b/10/Dockerfile)
+-	[`10.7-alpine`, `10-alpine` (*10/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/cc305ee1c59d93ac1808108edda6556b879374a4/10/alpine/Dockerfile)
+-	[`9.6.12`, `9.6`, `9` (*9.6/Dockerfile*)](https://github.com/docker-library/postgres/blob/a9610d18de51c189c9d4b0197c408e2e3bfb7917/9.6/Dockerfile)
+-	[`9.6.12-alpine`, `9.6-alpine`, `9-alpine` (*9.6/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/122fb0bdcc8058166d7535d30724278efbe41e86/9.6/alpine/Dockerfile)
+-	[`9.5.16`, `9.5` (*9.5/Dockerfile*)](https://github.com/docker-library/postgres/blob/58793919b63a1e0b2a9797b857bf435276e28436/9.5/Dockerfile)
+-	[`9.5.16-alpine`, `9.5-alpine` (*9.5/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/c6da877bba4184e5e112032f52e36bcabccc6ce8/9.5/alpine/Dockerfile)
+-	[`9.4.21`, `9.4` (*9.4/Dockerfile*)](https://github.com/docker-library/postgres/blob/23d28bb5957e74cfa1167262fffaddab1bdea4d6/9.4/Dockerfile)
+-	[`9.4.21-alpine`, `9.4-alpine` (*9.4/alpine/Dockerfile*)](https://github.com/docker-library/postgres/blob/fd5c083fcfb276b9cc2299057a8c6c8431bc3b0a/9.4/alpine/Dockerfile)
 
 # Quick reference
 
@@ -75,22 +73,16 @@ PostgreSQL implements the majority of the SQL:2011 standard, is ACID-compliant a
 $ docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgres
 ```
 
-This image includes `EXPOSE 5432` (the postgres port), so standard container linking will make it automatically available to the linked containers. The default `postgres` user and database are created in the entrypoint with `initdb`.
+The default `postgres` user and database are created in the entrypoint with `initdb`.
 
 > The postgres database is a default database meant for use by users, utilities and third party applications.
 >
 > [postgresql.org/docs](http://www.postgresql.org/docs/9.5/interactive/app-initdb.html)
 
-## connect to it from an application
-
-```console
-$ docker run --name some-app --link some-postgres:postgres -d application-that-uses-postgres
-```
-
 ## ... or via `psql`
 
 ```console
-$ docker run -it --rm --link some-postgres:postgres postgres psql -h postgres -U postgres
+$ docker run -it --rm --network some-network postgres psql -h some-postgres -U postgres
 psql (9.5.0)
 Type "help" for help.
 
@@ -129,13 +121,19 @@ services:
 
 Run `docker stack deploy -c stack.yml postgres` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
 
+# How to extend this image
+
+There are many ways to extend the `postgres` image. Without trying to support every possible use case, here are just a few that we have found useful.
+
 ## Environment Variables
 
 The PostgreSQL image uses several environment variables which are easy to miss. While none of the variables are required, they may significantly aid you in using the image.
 
+**Warning**: the Docker specific variables will only have an effect if you start the container with a data directory that is empty; any pre-existing database will be left untouched on container startup.
+
 ### `POSTGRES_PASSWORD`
 
-This environment variable is recommended for you to use the PostgreSQL image. This environment variable sets the superuser password for PostgreSQL. The default superuser is defined by the `POSTGRES_USER` environment variable. In the above example, it is being set to "mysecretpassword".
+This environment variable is recommended for you to use the PostgreSQL image. This environment variable sets the superuser password for PostgreSQL. The default superuser is defined by the `POSTGRES_USER` environment variable.
 
 Note 1: The PostgreSQL image sets up `trust` authentication locally so you may notice a password is not required when connecting from `localhost` (inside the same container). However, a password will be required if connecting from a different host/container.
 
@@ -144,10 +142,6 @@ Note 2: This variable defines the superuser password in the PostgreSQL instance,
 ### `POSTGRES_USER`
 
 This optional environment variable is used in conjunction with `POSTGRES_PASSWORD` to set a user and its password. This variable will create the specified user with superuser power and a database with the same name. If it is not specified, then the default user of `postgres` will be used.
-
-### `PGDATA`
-
-This optional environment variable can be used to define another location - like a subdirectory - for the database files. The default is `/var/lib/postgresql/data`, but if the data volume you're using is a fs mountpoint (like with GCE persistent disks), Postgres `initdb` recommends a subdirectory (for example `/var/lib/postgresql/data/pgdata` ) be created to contain the data.
 
 ### `POSTGRES_DB`
 
@@ -163,9 +157,15 @@ This optional environment variable can be used to define another location for th
 
 **Note:** on PostgreSQL 9.x, this variable is `POSTGRES_INITDB_XLOGDIR` (reflecting [the changed name of the `--xlogdir` flag to `--waldir` in PostgreSQL 10+](https://wiki.postgresql.org/wiki/New_in_postgres_10#Renaming_of_.22xlog.22_to_.22wal.22_Globally_.28and_location.2Flsn.29)).
 
+### `PGDATA`
+
+This optional variable can be used to define another location - like a subdirectory - for the database files. The default is `/var/lib/postgresql/data`, but if the data volume you're using is a filesystem mountpoint (like with GCE persistent disks), Postgres `initdb` recommends a subdirectory (for example `/var/lib/postgresql/data/pgdata` ) be created to contain the data.
+
+This is an environment variable that is not Docker specific. Because the variable is used by the `postgres` server binary (see the [PostgreSQL docs](https://www.postgresql.org/docs/11/app-postgres.html#id-1.9.5.14.7)), the entrypoint script takes it into account.
+
 ## Docker Secrets
 
-As an alternative to passing sensitive information via environment variables, `_FILE` may be appended to the previously listed environment variables, causing the initialization script to load the values for those variables from files present in the container. In particular, this can be used to load passwords from Docker secrets stored in `/run/secrets/<secret_name>` files. For example:
+As an alternative to passing sensitive information via environment variables, `_FILE` may be appended to some of the previously listed environment variables, causing the initialization script to load the values for those variables from files present in the container. In particular, this can be used to load passwords from Docker secrets stored in `/run/secrets/<secret_name>` files. For example:
 
 ```console
 $ docker run --name some-postgres -e POSTGRES_PASSWORD_FILE=/run/secrets/postgres-passwd -d postgres
@@ -173,7 +173,72 @@ $ docker run --name some-postgres -e POSTGRES_PASSWORD_FILE=/run/secrets/postgre
 
 Currently, this is only supported for `POSTGRES_INITDB_ARGS`, `POSTGRES_PASSWORD`, `POSTGRES_USER`, and `POSTGRES_DB`.
 
-## Arbitrary `--user` Notes
+## Initialization scripts
+
+If you would like to do additional initialization in an image derived from this one, add one or more `*.sql`, `*.sql.gz`, or `*.sh` scripts under `/docker-entrypoint-initdb.d` (creating the directory if necessary). After the entrypoint calls `initdb` to create the default `postgres` user and database, it will run any `*.sql` files, run any executable `*.sh` scripts, and source any non-executable `*.sh` scripts found in that directory to do further initialization before starting the service.
+
+**Warning**: scripts in `/docker-entrypoint-initdb.d` are only run if you start the container with a data directory that is empty; any pre-existing database will be left untouched on container startup. One common problem is that if one of your `/docker-entrypoint-initdb.d` scripts fails (which will cause the entrypoint script to exit) and your orchestrator restarts the container with the already initialized data directory, it will not continue on with your scripts.
+
+For example, to add an additional user and database, add the following to `/docker-entrypoint-initdb.d/init-user-db.sh`:
+
+```bash
+#!/bin/bash
+set -e
+
+psql -v ON_ERROR_STOP=1 --username "$POSTGRES_USER" --dbname "$POSTGRES_DB" <<-EOSQL
+	CREATE USER docker;
+	CREATE DATABASE docker;
+	GRANT ALL PRIVILEGES ON DATABASE docker TO docker;
+EOSQL
+```
+
+These initialization files will be executed in sorted name order as defined by the current locale, which defaults to `en_US.utf8`. Any `*.sql` files will be executed by `POSTGRES_USER`, which defaults to the `postgres` superuser. It is recommended that any `psql` commands that are run inside of a `*.sh` script be executed as `POSTGRES_USER` by using the `--username "$POSTGRES_USER"` flag. This user will be able to connect without a password due to the presence of `trust` authentication for Unix socket connections made inside the container.
+
+Additionally, as of [docker-library/postgres#253](https://github.com/docker-library/postgres/pull/253), these initialization scripts are run as the `postgres` user (or as the "semi-arbitrary user" specified with the `--user` flag to `docker run`; see the section titled "Arbitrary `--user` Notes" for more details). Also, as of [docker-library/postgres#440](https://github.com/docker-library/postgres/pull/440), the temporary daemon started for these initialization scripts listens only on the Unix socket, so any `psql` usage should drop the hostname portion (see [docker-library/postgres#474 (comment)](https://github.com/docker-library/postgres/issues/474#issuecomment-416914741) for example).
+
+## Database Configuration
+
+There are many ways to set PostgreSQL server configuration. For information on what is available to configure, see the postgresql.org [docs](https://www.postgresql.org/docs/current/static/runtime-config.html) for the specific version of PostgreSQL that you are running. Here are a few options for setting configuration:
+
+-	Use a custom config file. Create a config file and get it into the container. If you need a starting place for your config file you can use the sample provided by PostgreSQL which is available in the container at `/usr/share/postgresql/postgresql.conf.sample` (`/usr/local/share/postgresql/postgresql.conf.sample` in Alpine variants).
+
+	-	**Important note:** you must set `listen_addresses = '*'`so that other containers will be able to access postgres.
+
+	```console
+	$ # get the default config
+	$ docker run -i --rm postgres cat /usr/share/postgresql/postgresql.conf.sample > my-postgres.conf
+
+	$ # customize the config
+
+	$ # run postgres with custom config
+	$ docker run -d --name some-postgres -v "$PWD/my-postgres.conf":/etc/postgresql/postgresql.conf postgres -c 'config_file=/etc/postgresql/postgresql.conf'
+	```
+
+-	Set options directly on the run line. The entrypoint script is made so that any options passed to the docker command will be passed along to the `postgres` server daemon. From the [docs](https://www.postgresql.org/docs/current/static/app-postgres.html) we see that any option available in a `.conf` file can be set via `-c`.
+
+	```console
+	$ docker run -d --name some-postgres postgres -c 'shared_buffers=256MB' -c 'max_connections=200'
+	```
+
+## Locale Customization
+
+You can extend the image with a simple `Dockerfile` to set a different locale. The following example will set the default locale to `de_DE.utf8`:
+
+```dockerfile
+FROM postgres:9.4
+RUN localedef -i de_DE -c -f UTF-8 -A /usr/share/locale/locale.alias de_DE.UTF-8
+ENV LANG de_DE.utf8
+```
+
+Since database initialization only happens on container startup, this allows us to set the language before it is created.
+
+## Additional Extensions
+
+When using the default (Debian-based) variants, installing additional extensions (such as PostGIS) should be as simple as installing the relevant packages (see [github.com/appropriate/docker-postgis](https://github.com/appropriate/docker-postgis/blob/f6d28e4a1871b1f72e1c893ff103f10b6d7cb6e1/10-2.4/Dockerfile) for a concrete example).
+
+When using the Alpine variants, any postgres extension not listed in [postgres-contrib](https://www.postgresql.org/docs/10/static/contrib.html) will need to be compiled in your own image (again, see [github.com/appropriate/docker-postgis](https://github.com/appropriate/docker-postgis/blob/f6d28e4a1871b1f72e1c893ff103f10b6d7cb6e1/10-2.4/alpine/Dockerfile) for a concrete example).
+
+# Arbitrary `--user` Notes
 
 As of [docker-library/postgres#253](https://github.com/docker-library/postgres/pull/253), this image supports running as a (mostly) arbitrary user via `--user` on `docker run`.
 
@@ -216,72 +281,13 @@ The three easiest ways to get around this:
 	LOG:  database system is ready to accept connections
 	```
 
-# How to extend this image
-
-If you would like to do additional initialization in an image derived from this one, add one or more `*.sql`, `*.sql.gz`, or `*.sh` scripts under `/docker-entrypoint-initdb.d` (creating the directory if necessary). After the entrypoint calls `initdb` to create the default `postgres` user and database, it will run any `*.sql` files, run any executable `*.sh` scripts, and source any non-executable `*.sh` scripts found in that directory to do further initialization before starting the service.
-
-For example, to add an additional user and database, add the following to `/docker-entrypoint-initdb.d/init-user-db.sh`:
-
-```bash
-#!/bin/bash
-set -e
-
-psql -v ON_ERROR_STOP=1 --username "$POSTGRES_USER" --dbname "$POSTGRES_DB" <<-EOSQL
-	CREATE USER docker;
-	CREATE DATABASE docker;
-	GRANT ALL PRIVILEGES ON DATABASE docker TO docker;
-EOSQL
-```
-
-These initialization files will be executed in sorted name order as defined by the current locale, which defaults to `en_US.utf8`. Any `*.sql` files will be executed by `POSTGRES_USER`, which defaults to the `postgres` superuser. It is recommended that any `psql` commands that are run inside of a `*.sh` script be executed as `POSTGRES_USER` by using the `--username "$POSTGRES_USER"` flag. This user will be able to connect without a password due to the presence of `trust` authentication for Unix socket connections made inside the container.
-
-Additionally, as of [docker-library/postgres#253](https://github.com/docker-library/postgres/pull/253), these initialization scripts are run as the `postgres` user (or as the "semi-arbitrary user" specified with the `--user` flag to `docker run`; see the section titled "Arbitrary `--user` Notes" for more details). Also, as of [docker-library/postgres#440](https://github.com/docker-library/postgres/pull/440), the temporary daemon started for these initialization scripts listens only on the Unix socket, so any `psql` usage should drop the hostname portion (see [docker-library/postgres#474 (comment)](https://github.com/docker-library/postgres/issues/474#issuecomment-416914741) for example).
-
-You can also extend the image with a simple `Dockerfile` to set a different locale. The following example will set the default locale to `de_DE.utf8`:
-
-```dockerfile
-FROM postgres:9.4
-RUN localedef -i de_DE -c -f UTF-8 -A /usr/share/locale/locale.alias de_DE.UTF-8
-ENV LANG de_DE.utf8
-```
-
-Since database initialization only happens on container startup, this allows us to set the language before it is created.
-
-## Database Configuration
-
-There are many ways to set PostgreSQL server configuration. For information on what is available to configure, see the postgresql.org [docs](https://www.postgresql.org/docs/current/static/runtime-config.html) for the specific version of PostgreSQL that you are running. Here are a few options for setting configuration:
-
--	Use a custom config file. Create a config file and get it into the container. If you need a starting place for your config file you can use the sample provided by PostgreSQL which is available in the container at `/usr/share/postgresql/postgresql.conf.sample` (`/usr/local/share/postgresql/postgresql.conf.sample` in Alpine variants).
-
-	-	**Important note:** you must set `listen_addresses = '*'`so that other containers will be able to access postgres.
-
-	```console
-	$ # get the default config
-	$ docker run -i --rm postgres cat /usr/share/postgresql/postgresql.conf.sample > my-postgres.conf
-
-	$ # customize the config
-
-	$ # run postgres with custom config
-	$ docker run -d --name some-postgres -v "$PWD/my-postgres.conf":/etc/postgresql/postgresql.conf postgres -c 'config_file=/etc/postgresql/postgresql.conf'
-	```
-
--	Set options directly on the run line. The entrypoint script is made so that any options passed to the docker command will be passed along to the `postgres` server daemon. From the [docs](https://www.postgresql.org/docs/current/static/app-postgres.html) we see that any option available in a `.conf` file can be set via `-c`.
-
-	```console
-	$ docker run -d --name some-postgres postgres -c 'shared_buffers=256MB' -c 'max_connections=200'
-	```
-
-## Additional Extensions
-
-When using the default (Debian-based) variants, installing additional extensions (such as PostGIS) should be as simple as installing the relevant packages (see [github.com/appropriate/docker-postgis](https://github.com/appropriate/docker-postgis/blob/f6d28e4a1871b1f72e1c893ff103f10b6d7cb6e1/10-2.4/Dockerfile) for a concrete example).
-
-When using the Alpine variants, any postgres extension not listed in [postgres-contrib](https://www.postgresql.org/docs/10/static/contrib.html) will need to be compiled in your own image (again, see [github.com/appropriate/docker-postgis](https://github.com/appropriate/docker-postgis/blob/f6d28e4a1871b1f72e1c893ff103f10b6d7cb6e1/10-2.4/alpine/Dockerfile) for a concrete example).
-
 # Caveats
 
 If there is no database when `postgres` starts in a container, then `postgres` will create the default database for you. While this is the expected behavior of `postgres`, this means that it will not accept incoming connections during that time. This may cause issues when using automation tools, such as `docker-compose`, that start several containers simultaneously.
 
 Also note that the default `/dev/shm` size for containers is 64MB. If the shared memory is exhausted you will encounter `ERROR:  could not resize shared memory segment . . . : No space left on device`. You will want to pass [`--shm-size=256MB`](https://docs.docker.com/engine/reference/run/#runtime-constraints-on-resources) for example to `docker run`, or alternatively in [`docker-compose`](https://docs.docker.com/compose/compose-file/#shm_size)
+
+See ["IPVS connection timeout issue" in the Docker Success Center](https://success.docker.com/article/ipvs-connection-timeout-issue) for details about IPVS connection timeouts which will affect long-running idle connections to PostgreSQL in Swarm Mode using overlay networks.
 
 ## Where to Store Data
 

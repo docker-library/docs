@@ -16,11 +16,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`10.3.10-bionic`, `10.3-bionic`, `10-bionic`, `bionic`, `10.3.10`, `10.3`, `10`, `latest` (*10.3/Dockerfile*)](https://github.com/docker-library/mariadb/blob/44cfe68144976ce0ec135593ffe15c4bcca0dc6f/10.3/Dockerfile)
--	[`10.2.18-bionic`, `10.2-bionic`, `10.2.18`, `10.2` (*10.2/Dockerfile*)](https://github.com/docker-library/mariadb/blob/81ad56cf6bdf82666da60d828247684fda142c03/10.2/Dockerfile)
--	[`10.1.36-bionic`, `10.1-bionic`, `10.1.36`, `10.1` (*10.1/Dockerfile*)](https://github.com/docker-library/mariadb/blob/c65dccaa72d6030429ebb764b10a13c955c92314/10.1/Dockerfile)
--	[`10.0.36-xenial`, `10.0-xenial`, `10.0.36`, `10.0` (*10.0/Dockerfile*)](https://github.com/docker-library/mariadb/blob/c65dccaa72d6030429ebb764b10a13c955c92314/10.0/Dockerfile)
--	[`5.5.62-trusty`, `5.5-trusty`, `5-trusty`, `5.5.62`, `5.5`, `5` (*5.5/Dockerfile*)](https://github.com/docker-library/mariadb/blob/4ffbde76c75a49456d1729bb142d1c0c9c51f574/5.5/Dockerfile)
+-	[`10.4.3-bionic`, `10.4-bionic`, `rc-bionic`, `10.4.3`, `10.4`, `rc` (*10.4/Dockerfile*)](https://github.com/docker-library/mariadb/blob/93f1e9c9082364522c77b94e98299d7d398089f8/10.4/Dockerfile)
+-	[`10.3.14-bionic`, `10.3-bionic`, `10-bionic`, `bionic`, `10.3.14`, `10.3`, `10`, `latest` (*10.3/Dockerfile*)](https://github.com/docker-library/mariadb/blob/32aca58b13ee20d6514587e1a57ec9a0632fbe1d/10.3/Dockerfile)
+-	[`10.2.23-bionic`, `10.2-bionic`, `10.2.23`, `10.2` (*10.2/Dockerfile*)](https://github.com/docker-library/mariadb/blob/fa087985605ca508ac661a52164db8c292c9f779/10.2/Dockerfile)
+-	[`10.1.38-bionic`, `10.1-bionic`, `10.1.38`, `10.1` (*10.1/Dockerfile*)](https://github.com/docker-library/mariadb/blob/93f1e9c9082364522c77b94e98299d7d398089f8/10.1/Dockerfile)
+-	[`10.0.38-xenial`, `10.0-xenial`, `10.0.38`, `10.0` (*10.0/Dockerfile*)](https://github.com/docker-library/mariadb/blob/93f1e9c9082364522c77b94e98299d7d398089f8/10.0/Dockerfile)
+-	[`5.5.63-trusty`, `5.5-trusty`, `5-trusty`, `5.5.63`, `5.5`, `5` (*5.5/Dockerfile*)](https://github.com/docker-library/mariadb/blob/93f1e9c9082364522c77b94e98299d7d398089f8/5.5/Dockerfile)
 
 # Quick reference
 
@@ -72,27 +73,17 @@ $ docker run --name some-mariadb -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mariadb:
 
 ... where `some-mariadb` is the name you want to assign to your container, `my-secret-pw` is the password to be set for the MySQL root user and `tag` is the tag specifying the MySQL version you want. See the list above for relevant tags.
 
-## Connect to MySQL from an application in another Docker container
-
-Since MariaDB is intended as a drop-in replacement for MySQL, it can be used with many applications.
-
-This image exposes the standard MySQL port (3306), so container linking makes the MySQL instance available to other application containers. Start your application container like this in order to link it to the MySQL container:
-
-```console
-$ docker run --name some-app --link some-mariadb:mysql -d application-that-uses-mysql
-```
-
 ## Connect to MariaDB from the MySQL command line client
 
 The following command starts another `mariadb` container instance and runs the `mysql` command line client against your original `mariadb` container, allowing you to execute SQL statements against your database instance:
 
 ```console
-$ docker run -it --link some-mariadb:mysql --rm mariadb sh -c 'exec mysql -h"$MYSQL_PORT_3306_TCP_ADDR" -P"$MYSQL_PORT_3306_TCP_PORT" -uroot -p"$MYSQL_ENV_MYSQL_ROOT_PASSWORD"'
+$ docker run -it --network some-network --rm mariadb mysql -hsome-mariadb -uexample-user -p
 ```
 
-... where `some-mariadb` is the name of your original `mariadb` container.
+... where `some-mariadb` is the name of your original `mariadb` container (connected to the `some-network` Docker network).
 
-This image can also be used as a client for non-Docker or remote MariaDB instances:
+This image can also be used as a client for non-Docker or remote instances:
 
 ```console
 $ docker run -it --rm mariadb mysql -hsome.mysql.host -usome-mysql-user -p
@@ -135,7 +126,7 @@ The `docker exec` command allows you to run commands inside a Docker container. 
 $ docker exec -it some-mariadb bash
 ```
 
-The MariaDB Server log is available through Docker's container log:
+The log is available through Docker's container log:
 
 ```console
 $ docker logs some-mariadb
@@ -143,7 +134,7 @@ $ docker logs some-mariadb
 
 ## Using a custom MySQL configuration file
 
-The MariaDB startup configuration is specified in the file `/etc/mysql/my.cnf`, and that file in turn includes any files found in the `/etc/mysql/conf.d` directory that end with `.cnf`. Settings in files in this directory will augment and/or override settings in `/etc/mysql/my.cnf`. If you want to use a customized MySQL configuration, you can create your alternative configuration file in a directory on the host machine and then mount that directory location as `/etc/mysql/conf.d` inside the `mariadb` container.
+The startup configuration is specified in the file `/etc/mysql/my.cnf`, and that file in turn includes any files found in the `/etc/mysql/conf.d` directory that end with `.cnf`. Settings in files in this directory will augment and/or override settings in `/etc/mysql/my.cnf`. If you want to use a customized MySQL configuration, you can create your alternative configuration file in a directory on the host machine and then mount that directory location as `/etc/mysql/conf.d` inside the `mariadb` container.
 
 If `/my/custom/config-file.cnf` is the path and name of your custom configuration file, you can start your `mariadb` container like this (note that only the directory path of the custom config file is used in this command):
 

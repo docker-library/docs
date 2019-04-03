@@ -45,10 +45,22 @@ die 'login failed' unless $login->success;
 
 my $token = $login->res->json->{token};
 
+my $csrf;
+for my $cookie (@{ $login->res->cookies }) {
+	if ($cookie->name eq 'csrftoken') {
+		$csrf = $cookie->value;
+		last;
+	}
+}
+die 'missing CSRF token' unless defined $csrf;
+
 my $attemptLogin = $ua->post('https://hub.docker.com/attempt-login/' => {} => json => { jwt => $token });
 die 'attempt-login failed' unless $attemptLogin->success;
 
-my $authorizationHeader = { Authorization => "JWT $token" };
+my $authorizationHeader = {
+	Authorization => "JWT $token",
+	'X-CSRFToken' => $csrf,
+};
 
 my $userData = $ua->get('https://hub.docker.com/v2/user/' => $authorizationHeader);
 die 'user failed' unless $userData->success;

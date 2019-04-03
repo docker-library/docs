@@ -16,10 +16,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`18.04`, `bionic-20181018`, `bionic`, `latest` (*bionic/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/c7e9f7353aa24d1c35f501e06382aed1b540e85f/bionic/Dockerfile)
--	[`18.10`, `cosmic-20181018`, `cosmic`, `rolling`, `devel` (*cosmic/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/c7e9f7353aa24d1c35f501e06382aed1b540e85f/cosmic/Dockerfile)
--	[`14.04`, `trusty-20180929`, `trusty` (*trusty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/c7e9f7353aa24d1c35f501e06382aed1b540e85f/trusty/Dockerfile)
--	[`16.04`, `xenial-20181005`, `xenial` (*xenial/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/c7e9f7353aa24d1c35f501e06382aed1b540e85f/xenial/Dockerfile)
+-	[`18.04`, `bionic-20190307`, `bionic`, `latest` (*bionic/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/bfd753a747344ff1c6838a2c91ff0606e936f0d0/bionic/Dockerfile)
+-	[`18.10`, `cosmic-20190311`, `cosmic`, `rolling` (*cosmic/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/bfd753a747344ff1c6838a2c91ff0606e936f0d0/cosmic/Dockerfile)
+-	[`19.04`, `disco-20190310`, `disco`, `devel` (*disco/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/bfd753a747344ff1c6838a2c91ff0606e936f0d0/disco/Dockerfile)
+-	[`14.04`, `trusty-20190305`, `trusty` (*trusty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/bfd753a747344ff1c6838a2c91ff0606e936f0d0/trusty/Dockerfile)
+-	[`16.04`, `xenial-20190222`, `xenial` (*xenial/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/bfd753a747344ff1c6838a2c91ff0606e936f0d0/xenial/Dockerfile)
 
 # Quick reference
 
@@ -77,80 +78,6 @@ For uses where that is not sufficient, other locales can be installed/generated 
 RUN apt-get update && apt-get install -y locales && rm -rf /var/lib/apt/lists/* \
 	&& localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
 ENV LANG en_US.utf8
-```
-
-## `/etc/apt/sources.list`
-
-### `ubuntu:18.04`
-
-```console
-$ docker run ubuntu:18.04 grep -v '^#' /etc/apt/sources.list
-
-deb http://archive.ubuntu.com/ubuntu/ bionic main restricted
-
-deb http://archive.ubuntu.com/ubuntu/ bionic-updates main restricted
-
-deb http://archive.ubuntu.com/ubuntu/ bionic universe
-deb-src http://archive.ubuntu.com/ubuntu/ bionic universe
-deb http://archive.ubuntu.com/ubuntu/ bionic-updates universe
-deb-src http://archive.ubuntu.com/ubuntu/ bionic-updates universe
-
-deb http://archive.ubuntu.com/ubuntu/ bionic multiverse
-deb http://archive.ubuntu.com/ubuntu/ bionic-updates multiverse
-
-deb http://archive.ubuntu.com/ubuntu/ bionic-backports main restricted universe multiverse
-
-
-deb http://security.ubuntu.com/ubuntu/ bionic-security main restricted
-deb http://security.ubuntu.com/ubuntu/ bionic-security universe
-deb-src http://security.ubuntu.com/ubuntu/ bionic-security universe
-deb http://security.ubuntu.com/ubuntu/ bionic-security multiverse
-```
-
-### `ubuntu:16.04`
-
-```console
-$ docker run ubuntu:16.04 grep -v '^#' /etc/apt/sources.list
-
-deb http://archive.ubuntu.com/ubuntu/ xenial main restricted
-deb-src http://archive.ubuntu.com/ubuntu/ xenial main restricted
-
-deb http://archive.ubuntu.com/ubuntu/ xenial-updates main restricted
-deb-src http://archive.ubuntu.com/ubuntu/ xenial-updates main restricted
-
-deb http://archive.ubuntu.com/ubuntu/ xenial universe
-deb-src http://archive.ubuntu.com/ubuntu/ xenial universe
-deb http://archive.ubuntu.com/ubuntu/ xenial-updates universe
-deb-src http://archive.ubuntu.com/ubuntu/ xenial-updates universe
-
-
-deb http://archive.ubuntu.com/ubuntu/ xenial-security main restricted
-deb-src http://archive.ubuntu.com/ubuntu/ xenial-security main restricted
-deb http://archive.ubuntu.com/ubuntu/ xenial-security universe
-deb-src http://archive.ubuntu.com/ubuntu/ xenial-security universe
-```
-
-### `ubuntu:14.04`
-
-```console
-$ docker run ubuntu:14.04 grep -v '^#' /etc/apt/sources.list
-
-deb http://archive.ubuntu.com/ubuntu/ trusty main restricted
-deb-src http://archive.ubuntu.com/ubuntu/ trusty main restricted
-
-deb http://archive.ubuntu.com/ubuntu/ trusty-updates main restricted
-deb-src http://archive.ubuntu.com/ubuntu/ trusty-updates main restricted
-
-deb http://archive.ubuntu.com/ubuntu/ trusty universe
-deb-src http://archive.ubuntu.com/ubuntu/ trusty universe
-deb http://archive.ubuntu.com/ubuntu/ trusty-updates universe
-deb-src http://archive.ubuntu.com/ubuntu/ trusty-updates universe
-
-
-deb http://archive.ubuntu.com/ubuntu/ trusty-security main restricted
-deb-src http://archive.ubuntu.com/ubuntu/ trusty-security main restricted
-deb http://archive.ubuntu.com/ubuntu/ trusty-security universe
-deb-src http://archive.ubuntu.com/ubuntu/ trusty-security universe
 ```
 
 # License

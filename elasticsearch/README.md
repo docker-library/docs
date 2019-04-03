@@ -16,11 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.4.1` (*6.4.1/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/cf9cba0a1590cfd894d51bc7998d9d36b2d47afd/6.4.1/Dockerfile)
--	[`6.4.0` (*6.4.0/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/cf9cba0a1590cfd894d51bc7998d9d36b2d47afd/6.4.0/Dockerfile)
--	[`6.4.2` (*6/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/cf9cba0a1590cfd894d51bc7998d9d36b2d47afd/6/Dockerfile)
--	[`5.6.12`, `5.6`, `5` (*5/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/b30b4e51e77c6289be522b1d5c3d64918b9d77d9/5/Dockerfile)
--	[`5.6.12-alpine`, `5.6-alpine`, `5-alpine` (*5/alpine/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/b30b4e51e77c6289be522b1d5c3d64918b9d77d9/5/alpine/Dockerfile)
+-	[`6.7.0` (*6/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/a1a331cbea5676d959fc796d140228d38d691e3d/6/Dockerfile)
+-	[`5.6.16`, `5.6`, `5` (*5/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/9f14d95917805470ce1303d61add6ae195d24c70/5/Dockerfile)
+-	[`5.6.16-alpine`, `5.6-alpine`, `5-alpine` (*5/alpine/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/9f14d95917805470ce1303d61add6ae195d24c70/5/alpine/Dockerfile)
 
 # Quick reference
 
@@ -28,12 +26,10 @@ WARNING:
 	the [Elasticsearch Discuss Forums](https://discuss.elastic.co/c/elasticsearch), the [Elastic community](https://www.elastic.co/community)
 
 -	**Where to file issues**:  
-	For issues with Elasticsearch Docker Image: https://github.com/elastic/elasticsearch-docker/issues
-
-For issues with Elasticsearch: [https://github.com/elastic/elasticsearch/issues](https://github.com/elastic/elasticsearch/issues)
+	For issues with Elasticsearch Docker Image or Elasticsearch: https://github.com/elastic/elasticsearch/issues
 
 -	**Maintained by**:  
-	[the Elastic Team](https://github.com/elastic/elasticsearch-docker)
+	[the Elastic Team](https://github.com/elastic/elasticsearch)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/elasticsearch/)
@@ -58,7 +54,7 @@ Elasticsearch is a distributed, RESTful search and analytics engine capable of s
 
 > For more information about Elasticsearch, please visit [www.elastic.co/products/elasticsearch](https://www.elastic.co/products/elasticsearch)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/8bb704930619acddf6f5705e7d1cf54defdd3388/elasticsearch/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/7baeec9386c1d3960fc9021a5973694b2e0e1af9/elasticsearch/logo.png)
 
 # About This Image
 

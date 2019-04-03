@@ -16,14 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`server`, `server-0.5.0` (*notary-server/Dockerfile*)](https://github.com/docker/notary-official-images/blob/ff7ae14c71fa0f87f9e6bd8de81a78c20db66664/notary-server/Dockerfile)
--	[`signer`, `signer-0.5.0` (*notary-signer/Dockerfile*)](https://github.com/docker/notary-official-images/blob/ff7ae14c71fa0f87f9e6bd8de81a78c20db66664/notary-signer/Dockerfile)
--	[`server-0.4.2` (*notary-server/Dockerfile*)](https://github.com/docker/notary-official-images/blob/dcb19bd39abed92c206d3d95ad4ddf90c9e0e721/notary-server/Dockerfile)
--	[`signer-0.4.2` (*notary-signer/Dockerfile*)](https://github.com/docker/notary-official-images/blob/dcb19bd39abed92c206d3d95ad4ddf90c9e0e721/notary-signer/Dockerfile)
--	[`server-0.3.0` (*notary-server/Dockerfile*)](https://github.com/docker/notary-official-images/blob/5fbf22ada9e5167fe4e9340ac947e8b3110aceba/notary-server/Dockerfile)
--	[`signer-0.3.0` (*notary-signer/Dockerfile*)](https://github.com/docker/notary-official-images/blob/5fbf22ada9e5167fe4e9340ac947e8b3110aceba/notary-signer/Dockerfile)
--	[`server-0.2.0` (*notary-server/Dockerfile*)](https://github.com/docker/notary-official-images/blob/3ea5b74928929415f2faaa5df574c4745bf6d286/notary-server/Dockerfile)
--	[`signer-0.2.0` (*notary-signer/Dockerfile*)](https://github.com/docker/notary-official-images/blob/3ea5b74928929415f2faaa5df574c4745bf6d286/notary-signer/Dockerfile)
+-	[`server-0.6.1-1`, `server` (*notary-server/Dockerfile*)](https://github.com/docker/notary-official-images/blob/ee9401173fbe4c672f3e3e71b0881d21f2112eca/notary-server/Dockerfile)
+-	[`signer-0.6.1-1`, `signer` (*notary-signer/Dockerfile*)](https://github.com/docker/notary-official-images/blob/ee9401173fbe4c672f3e3e71b0881d21f2112eca/notary-signer/Dockerfile)
 
 # Quick reference
 
@@ -37,7 +31,7 @@ WARNING:
 	[Docker, Inc.](https://github.com/docker/notary-official-images)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/notary/)
+	[`amd64`](https://hub.docker.com/r/amd64/notary/), [`arm32v6`](https://hub.docker.com/r/arm32v6/notary/), [`arm64v8`](https://hub.docker.com/r/arm64v8/notary/), [`i386`](https://hub.docker.com/r/i386/notary/), [`ppc64le`](https://hub.docker.com/r/ppc64le/notary/), [`s390x`](https://hub.docker.com/r/s390x/notary/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/notary/` directory](https://github.com/docker-library/repo-info/blob/master/repos/notary) ([history](https://github.com/docker-library/repo-info/commits/master/repos/notary))  

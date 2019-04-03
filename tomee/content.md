@@ -58,4 +58,6 @@ The configuration files are available in `/usr/local/tomee/conf/`. By default, n
 
 You can also use this image as base image for deploying your war application. To do it you need to create a Dockerfile based on Tomee Docker image and add the war file in `webapps` directory:
 
-	COPY <locationofapplication>/<warfile> /usr/local/tomee/webapps/<warfile>
+```dockerfile
+COPY <locationofapplication>/<warfile> /usr/local/tomee/webapps/<warfile>
+```

@@ -16,12 +16,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`18.09.0-beta5`, `18.09-rc`, `rc`, `test` (*18.09-rc/Dockerfile*)](https://github.com/docker-library/docker/blob/9da077a794cffbea8461b128286a9acb69a3c54d/18.09-rc/Dockerfile)
--	[`18.09.0-beta5-dind`, `18.09-rc-dind`, `rc-dind`, `test-dind` (*18.09-rc/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/fe2ca76a21fdc02cbb4974246696ee1b4a7839dd/18.09-rc/dind/Dockerfile)
--	[`18.09.0-beta5-git`, `18.09-rc-git`, `rc-git`, `test-git` (*18.09-rc/git/Dockerfile*)](https://github.com/docker-library/docker/blob/5dd425e5b74a02bde63257e56c2bb67cbae74686/18.09-rc/git/Dockerfile)
--	[`18.06.1-ce`, `18.06.1`, `18.06`, `18`, `edge`, `stable`, `latest` (*18.06/Dockerfile*)](https://github.com/docker-library/docker/blob/fe2ca76a21fdc02cbb4974246696ee1b4a7839dd/18.06/Dockerfile)
--	[`18.06.1-ce-dind`, `18.06.1-dind`, `18.06-dind`, `18-dind`, `edge-dind`, `stable-dind`, `dind` (*18.06/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/fe2ca76a21fdc02cbb4974246696ee1b4a7839dd/18.06/dind/Dockerfile)
--	[`18.06.1-ce-git`, `18.06.1-git`, `18.06-git`, `18-git`, `edge-git`, `stable-git`, `git` (*18.06/git/Dockerfile*)](https://github.com/docker-library/docker/blob/595ad0c92090937dcb7c200900fb97e36d36c412/18.06/git/Dockerfile)
+-	[`18.09.4`, `18.09`, `18`, `stable`, `test`, `latest` (*18.09/Dockerfile*)](https://github.com/docker-library/docker/blob/3d71bbc03dfd209ef7cc14380e235731daf2690a/18.09/Dockerfile)
+-	[`18.09.4-dind`, `18.09-dind`, `18-dind`, `stable-dind`, `test-dind`, `dind` (*18.09/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/65fab2cd767c10f22ee66afa919eda80dbdc8872/18.09/dind/Dockerfile)
+-	[`18.09.4-git`, `18.09-git`, `18-git`, `stable-git`, `test-git`, `git` (*18.09/git/Dockerfile*)](https://github.com/docker-library/docker/blob/91bbc4f7b06c06020d811dafb2266bcd7cf6c06d/18.09/git/Dockerfile)
+-	[`18.06.3-ce`, `18.06.3`, `18.06`, `edge` (*18.06/Dockerfile*)](https://github.com/docker-library/docker/blob/0ea1769704a07017fd9a876590de2feb434d33e2/18.06/Dockerfile)
+-	[`18.06.3-ce-dind`, `18.06.3-dind`, `18.06-dind`, `edge-dind` (*18.06/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/65fab2cd767c10f22ee66afa919eda80dbdc8872/18.06/dind/Dockerfile)
+-	[`18.06.3-ce-git`, `18.06.3-git`, `18.06-git`, `edge-git` (*18.06/git/Dockerfile*)](https://github.com/docker-library/docker/blob/595ad0c92090937dcb7c200900fb97e36d36c412/18.06/git/Dockerfile)
 
 # Quick reference
 
@@ -79,7 +79,7 @@ $ docker run --privileged --name some-docker -d docker:stable-dind
 
 **Note:** `--privileged` is required for Docker-in-Docker to function properly, but it should be used with care as it provides full access to the host environment, as explained [in the relevant section of the Docker documentation](https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities).
 
-This image includes `EXPOSE 2375` (the Docker port), so standard container linking will make it automatically available to the linked containers (as the following examples illustrate).
+By default, the `dind` variants of this image add `--host=tcp://0.0.0.0:2375` (on top of the explicit default of `--host=unix:///var/run/docker.sock`) in order to allow external containers to access `dockerd` appropriately (as the following examples illustrate).
 
 ## Connect to it from a second container
 

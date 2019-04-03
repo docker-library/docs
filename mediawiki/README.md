@@ -16,9 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`lts`, `stable`, `latest`, `1.31`, `1.31.1` (*1.31/Dockerfile*)](https://github.com/wikimedia/mediawiki-docker/blob/41b4758701e47c363a49ff2ef8835be5f69cf383/1.31/Dockerfile)
--	[`legacy`, `1.30`, `1.30.1` (*1.30/Dockerfile*)](https://github.com/wikimedia/mediawiki-docker/blob/41b4758701e47c363a49ff2ef8835be5f69cf383/1.30/Dockerfile)
--	[`legacylts`, `1.27`, `1.27.5` (*1.27/Dockerfile*)](https://github.com/wikimedia/mediawiki-docker/blob/41b4758701e47c363a49ff2ef8835be5f69cf383/1.27/Dockerfile)
+-	[`1.32.0`, `1.32`, `stable`, `latest` (*1.32/Dockerfile*)](https://github.com/wikimedia/mediawiki-docker/blob/06e8e1fff294a244b3c6177dd9138f14e4b410fa/1.32/Dockerfile)
+-	[`1.31.1`, `1.31`, `lts`, `legacy` (*1.31/Dockerfile*)](https://github.com/wikimedia/mediawiki-docker/blob/06e8e1fff294a244b3c6177dd9138f14e4b410fa/1.31/Dockerfile)
+-	[`1.27.5`, `1.27`, `legacylts` (*1.27/Dockerfile*)](https://github.com/wikimedia/mediawiki-docker/blob/06e8e1fff294a244b3c6177dd9138f14e4b410fa/1.27/Dockerfile)
 
 # Quick reference
 
@@ -128,10 +128,10 @@ services:
       MYSQL_DATABASE: my_wiki
       MYSQL_USER: wikiuser
       MYSQL_PASSWORD: example
-      MYSQL_RANDOM_ROOT_PASSWORD: yes
+      MYSQL_RANDOM_ROOT_PASSWORD: 'yes'
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/9efeec18b6b2ed232cf0fbd3914b6211e16e242c/mediawiki/stack.yml)
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/7b72bad5e2c684fa5829aecd3bf5b17a6e685963/mediawiki/stack.yml)
 
 Run `docker stack deploy -c stack.yml mediawiki` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
 
@@ -144,7 +144,6 @@ If you need additional PHP extensions, you'll need to create your own image `FRO
 The following Docker Hub features can help with the task of keeping your dependent images up-to-date:
 
 -	[Automated Builds](https://docs.docker.com/docker-hub/builds/) let Docker Hub automatically build your Dockerfile each time you push changes to it.
--	[Repository Links](https://docs.docker.com/docker-hub/builds/#repository-links) can ensure that your image is also rebuilt any time `mediawiki` is updated.
 
 # License
 

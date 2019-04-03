@@ -16,14 +16,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`lein-2.8.1`, `lein`, `latest` (*debian/lein/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/a2a9729b5bab38202a13c3ca2e7a7c440e03fed7/debian/lein/Dockerfile)
--	[`lein-2.8.1-onbuild`, `lein-onbuild`, `onbuild` (*debian/lein/onbuild/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/a2a9729b5bab38202a13c3ca2e7a7c440e03fed7/debian/lein/onbuild/Dockerfile)
--	[`lein-2.8.1-alpine`, `lein-alpine`, `alpine` (*alpine/lein/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/a2a9729b5bab38202a13c3ca2e7a7c440e03fed7/alpine/lein/Dockerfile)
--	[`lein-2.8.1-alpine-onbuild`, `lein-alpine-onbuild`, `alpine-onbuild` (*alpine/lein/onbuild/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/a2a9729b5bab38202a13c3ca2e7a7c440e03fed7/alpine/lein/onbuild/Dockerfile)
--	[`boot-2.8.1`, `boot` (*debian/boot/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/a2a9729b5bab38202a13c3ca2e7a7c440e03fed7/debian/boot/Dockerfile)
--	[`boot-2.8.1-alpine`, `boot-alpine` (*alpine/boot/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/a2a9729b5bab38202a13c3ca2e7a7c440e03fed7/alpine/boot/Dockerfile)
--	[`tools-deps-1.9.0.394`, `tools-deps` (*debian/tools-deps/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/a2a9729b5bab38202a13c3ca2e7a7c440e03fed7/debian/tools-deps/Dockerfile)
--	[`tools-deps-1.9.0.394-alpine`, `tools-deps-alpine` (*alpine/tools-deps/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/a2a9729b5bab38202a13c3ca2e7a7c440e03fed7/alpine/tools-deps/Dockerfile)
+-	[`openjdk-8-lein`, `openjdk-8-lein-2.9.1`, `lein-2.9.1`, `lein`, `latest` (*target/openjdk-8/debian/lein/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/f4257cfa677af38c2f8a9cd0455747c9bee835ca/target/openjdk-8/debian/lein/Dockerfile)
+-	[`openjdk-8-lein-alpine`, `openjdk-8-lein-2.9.1-alpine`, `lein-2.9.1-alpine`, `lein-alpine`, `alpine` (*target/openjdk-8/alpine/lein/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/f4257cfa677af38c2f8a9cd0455747c9bee835ca/target/openjdk-8/alpine/lein/Dockerfile)
+-	[`openjdk-8-boot`, `openjdk-8-boot-2.8.2`, `boot-2.8.2`, `boot` (*target/openjdk-8/debian/boot/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/f4257cfa677af38c2f8a9cd0455747c9bee835ca/target/openjdk-8/debian/boot/Dockerfile)
+-	[`openjdk-8-boot-alpine`, `openjdk-8-boot-2.8.2-alpine`, `boot-2.8.2-alpine`, `boot-alpine` (*target/openjdk-8/alpine/boot/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/f4257cfa677af38c2f8a9cd0455747c9bee835ca/target/openjdk-8/alpine/boot/Dockerfile)
+-	[`openjdk-8-tools-deps`, `openjdk-8-tools-deps-1.10.0.442`, `tools-deps-1.10.0.442`, `tools-deps` (*target/openjdk-8/debian/tools-deps/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/f4257cfa677af38c2f8a9cd0455747c9bee835ca/target/openjdk-8/debian/tools-deps/Dockerfile)
+-	[`openjdk-8-tools-deps-alpine`, `openjdk-8-tools-deps-1.10.0.442-alpine`, `tools-deps-1.10.0.442-alpine`, `tools-deps-alpine` (*target/openjdk-8/alpine/tools-deps/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/f4257cfa677af38c2f8a9cd0455747c9bee835ca/target/openjdk-8/alpine/tools-deps/Dockerfile)
+-	[`openjdk-11-lein`, `openjdk-11-lein-2.9.1` (*target/openjdk-11/debian/lein/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/f4257cfa677af38c2f8a9cd0455747c9bee835ca/target/openjdk-11/debian/lein/Dockerfile)
+-	[`openjdk-11-boot`, `openjdk-11-boot-2.8.2` (*target/openjdk-11/debian/boot/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/f4257cfa677af38c2f8a9cd0455747c9bee835ca/target/openjdk-11/debian/boot/Dockerfile)
+-	[`openjdk-11-tools-deps`, `openjdk-11-tools-deps-1.10.0.442` (*target/openjdk-11/debian/tools-deps/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/f4257cfa677af38c2f8a9cd0455747c9bee835ca/target/openjdk-11/debian/tools-deps/Dockerfile)
 
 # Quick reference
 
@@ -63,9 +64,28 @@ Clojure is a dialect of the Lisp programming language. It is a general-purpose p
 
 # How to use this image
 
-## Start a Lein/Clojure instance in your app
+## Build tools
 
-Since the most common way to use Clojure is in conjunction with [Leiningen (`lein`)](http://leiningen.org/), this image assumes that's how you'll be working. The most straightforward way to use this image is to add a `Dockerfile` to an existing Leiningen/Clojure project:
+Clojure has three major approaches to building and running projects:
+
+1.	[leiningen](https://leiningen.org)
+	1.	The oldest and probably most common tool
+2.	[boot](http://boot-clj.com)
+	1.	An alternative approach that solves similar problems as leiningen
+3.	[tools-deps](https://clojure.org/guides/deps_and_cli)
+	1.	A more recent official tool for some of the lein/boot use cases
+
+There are variants of this image for all three of these tools and their respective releases. The most basic form of these tags is:
+
+1.	`clojure:lein`
+2.	`clojure:boot`
+3.	`clojure:tools-deps`
+
+But you can also append a hyphen and the version of that tool you'd like to use. For example, for lein 2.8.1 you can use this image: `clojure:lein-2.8.1`.
+
+## Run your app with leiningen
+
+Add a `Dockerfile` to an existing Leiningen/Clojure project with the following contents:
 
 ```dockerfile
 FROM clojure
@@ -108,6 +128,10 @@ $ docker run -it --rm -v "$PWD":/usr/src/app -w /usr/src/app clojure lein uberja
 
 This will build your project into a jar file located in your project's `target/uberjar` directory.
 
+## More details
+
+See [the official image README](https://github.com/Quantisan/docker-clojure/blob/master/README.md) for more details about using this image with boot and tools-deps.
+
 # Image Variants
 
 The `clojure` images come in many flavors, each designed for a specific use case.
@@ -115,14 +139,6 @@ The `clojure` images come in many flavors, each designed for a specific use case
 ## `clojure:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-## `clojure:<version>-onbuild`
-
-The `ONBUILD` image variants are deprecated, and their usage is discouraged. For more details, see [docker-library/official-images#2076](https://github.com/docker-library/official-images/issues/2076).
-
-While the `onbuild` variant is really useful for "getting off the ground running" (zero to Dockerized in a short period of time), it's not recommended for long-term usage within a project due to the lack of control over *when* the `ONBUILD` triggers fire (see also [`docker/docker#5714`](https://github.com/docker/docker/issues/5714), [`docker/docker#8240`](https://github.com/docker/docker/issues/8240), [`docker/docker#11917`](https://github.com/docker/docker/issues/11917)).
-
-Once you've got a handle on how your project functions within Docker, you'll probably want to adjust your `Dockerfile` to inherit from a non-`onbuild` variant and copy the commands from the `onbuild` variant `Dockerfile` (moving the `ONBUILD` lines to the end and removing the `ONBUILD` keywords) into your own file so that you have tighter control over them and more transparency for yourself and others looking at your `Dockerfile` as to what it does. This also makes it easier to add additional requirements as time goes on (such as installing more packages before performing the previously-`ONBUILD` steps).
 
 ## `clojure:<version>-alpine`
 

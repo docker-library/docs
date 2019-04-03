@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.30.0-stretch`, `1-stretch`, `1.30-stretch`, `stretch`, `1.30.0`, `1`, `1.30`, `latest` (*1.30.0/stretch/Dockerfile*)](https://github.com/rust-lang-nursery/docker-rust/blob/9591b70ba627c079e772a5c00036ce48082fbeda/1.30.0/stretch/Dockerfile)
--	[`1.30.0-slim-stretch`, `1-slim-stretch`, `1.30-slim-stretch`, `slim-stretch`, `1.30.0-slim`, `1-slim`, `1.30-slim`, `slim` (*1.30.0/stretch/slim/Dockerfile*)](https://github.com/rust-lang-nursery/docker-rust/blob/9591b70ba627c079e772a5c00036ce48082fbeda/1.30.0/stretch/slim/Dockerfile)
+-	[`1.33.0-stretch`, `1-stretch`, `1.33-stretch`, `stretch`, `1.33.0`, `1`, `1.33`, `latest` (*1.33.0/stretch/Dockerfile*)](https://github.com/rust-lang-nursery/docker-rust/blob/97a72441aad0ec26edf5175382c3d0022c84ba7d/1.33.0/stretch/Dockerfile)
+-	[`1.33.0-slim-stretch`, `1-slim-stretch`, `1.33-slim-stretch`, `slim-stretch`, `1.33.0-slim`, `1-slim`, `1.33-slim`, `slim` (*1.33.0/stretch/slim/Dockerfile*)](https://github.com/rust-lang-nursery/docker-rust/blob/97a72441aad0ec26edf5175382c3d0022c84ba7d/1.33.0/stretch/slim/Dockerfile)
 
 # Quick reference
 
@@ -62,12 +62,12 @@ Rust is a systems programming language sponsored by Mozilla Research. It is desi
 The most straightforward way to use this image is to use a Rust container as both the build and runtime environment. In your `Dockerfile`, writing something along the lines of the following will compile and run your project:
 
 ```dockerfile
-FROM rust:1.23.0
+FROM rust:1.31
 
 WORKDIR /usr/src/myapp
 COPY . .
 
-RUN cargo install
+RUN cargo install --path .
 
 CMD ["myapp"]
 ```
