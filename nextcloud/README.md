@@ -25,9 +25,9 @@ WARNING:
 -	[`15.0.6-apache`, `15.0-apache`, `15-apache`, `apache`, `15.0.6`, `15.0`, `15`, `latest` (*15.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/da4cd779e331ab91db38f2c5350efd58be5f6931/15.0/apache/Dockerfile)
 -	[`15.0.6-fpm-alpine`, `15.0-fpm-alpine`, `15-fpm-alpine`, `fpm-alpine` (*15.0/fpm-alpine/Dockerfile*)](https://github.com/nextcloud/docker/blob/da4cd779e331ab91db38f2c5350efd58be5f6931/15.0/fpm-alpine/Dockerfile)
 -	[`15.0.6-fpm`, `15.0-fpm`, `15-fpm`, `fpm` (*15.0/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/da4cd779e331ab91db38f2c5350efd58be5f6931/15.0/fpm/Dockerfile)
--	[`16.0.0beta2-apache`, `16.0.0-beta-apache`, `16.0-beta-apache`, `16-beta-apache`, `16.0.0beta2`, `16.0.0-beta`, `16.0-beta`, `16-beta` (*16.0-beta/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/6731d57690135e4b530429ec9491fcc42057f68a/16.0-beta/apache/Dockerfile)
--	[`16.0.0beta2-fpm-alpine`, `16.0.0-beta-fpm-alpine`, `16.0-beta-fpm-alpine`, `16-beta-fpm-alpine` (*16.0-beta/fpm-alpine/Dockerfile*)](https://github.com/nextcloud/docker/blob/6731d57690135e4b530429ec9491fcc42057f68a/16.0-beta/fpm-alpine/Dockerfile)
--	[`16.0.0beta2-fpm`, `16.0.0-beta-fpm`, `16.0-beta-fpm`, `16-beta-fpm` (*16.0-beta/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/6731d57690135e4b530429ec9491fcc42057f68a/16.0-beta/fpm/Dockerfile)
+-	[`16.0.0beta3-apache`, `16.0.0-beta-apache`, `16.0-beta-apache`, `16-beta-apache`, `16.0.0beta3`, `16.0.0-beta`, `16.0-beta`, `16-beta` (*16.0-beta/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/fbc8d72ccadf2311a30d69342c2088c74f231ad9/16.0-beta/apache/Dockerfile)
+-	[`16.0.0beta3-fpm-alpine`, `16.0.0-beta-fpm-alpine`, `16.0-beta-fpm-alpine`, `16-beta-fpm-alpine` (*16.0-beta/fpm-alpine/Dockerfile*)](https://github.com/nextcloud/docker/blob/fbc8d72ccadf2311a30d69342c2088c74f231ad9/16.0-beta/fpm-alpine/Dockerfile)
+-	[`16.0.0beta3-fpm`, `16.0.0-beta-fpm`, `16.0-beta-fpm`, `16-beta-fpm` (*16.0-beta/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/fbc8d72ccadf2311a30d69342c2088c74f231ad9/16.0-beta/fpm/Dockerfile)
 
 # Quick reference
 
