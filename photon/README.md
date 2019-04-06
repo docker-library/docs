@@ -18,8 +18,8 @@ WARNING:
 
 -	[`3.0`, `3.0-20190329`, `latest` (*docker/Dockerfile*)](https://github.com/vmware/photon-docker-image/blob/64ea854f3e0858ceb5fa0beeb7e99a801ee39a73/docker/Dockerfile)
 -	[`dev`, `dev-20180904` (*docker/Dockerfile*)](https://github.com/vmware/photon-docker-image/blob/ef64980d07a68bd0cd97de9224df5c3e62e4db12/docker/Dockerfile)
--	[`1.0`, `1.0-20190329` (*docker/Dockerfile*)](https://github.com/vmware/photon-docker-image/blob/2b9c563e11e5fb611b95f3421f35da76c43c9ad4/docker/Dockerfile)
--	[`2.0`, `2.0-20190329` (*docker/Dockerfile*)](https://github.com/vmware/photon-docker-image/blob/f7f27279da88b347a8f63fe2f6b2bc7f68597811/docker/Dockerfile)
+-	[`1.0`, `1.0-20190405` (*docker/Dockerfile*)](https://github.com/vmware/photon-docker-image/blob/9a30b6890cc9b8ab0e913e9f2a8b86e8b71dcfb2/docker/Dockerfile)
+-	[`2.0`, `2.0-20190405` (*docker/Dockerfile*)](https://github.com/vmware/photon-docker-image/blob/ecb2e5f03bf9154b3b78d0f9e3c6893638733551/docker/Dockerfile)
 
 # Quick reference
 
