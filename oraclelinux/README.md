@@ -51,7 +51,7 @@ WARNING:
 
 # Oracle Linux
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/ec0d698a7724e87f1e9ee0e4af266a334a574a03/oraclelinux/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/ac923d04bcfcf8de5128ab155ed9f1698374fdfc/oraclelinux/logo.png)
 
 Oracle Linux is an open-source operating system available under the GNU General Public License (GPLv2). Suitable for general purpose or Oracle workloads, it benefits from rigorous testing of more than 128,000 hours per day with real- world workloads and includes unique innovations such as Ksplice for zero- downtime kernel patching, DTrace for real-time diagnostics, the powerful Btrfs file system, and more.
 
