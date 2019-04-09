@@ -18,50 +18,50 @@ WARNING:
 
 ## Simple Tags
 
--	[`1.12.2-stretch`, `1.12-stretch`, `1-stretch`, `stretch` (*1.12/stretch/Dockerfile*)](https://github.com/docker-library/golang/blob/15ddde6bf4bbfff97af673d8c04d32a95eb60d3e/1.12/stretch/Dockerfile)
--	[`1.12.2-alpine3.9`, `1.12-alpine3.9`, `1-alpine3.9`, `alpine3.9`, `1.12.2-alpine`, `1.12-alpine`, `1-alpine`, `alpine` (*1.12/alpine3.9/Dockerfile*)](https://github.com/docker-library/golang/blob/15ddde6bf4bbfff97af673d8c04d32a95eb60d3e/1.12/alpine3.9/Dockerfile)
--	[`1.12.2-windowsservercore-ltsc2016`, `1.12-windowsservercore-ltsc2016`, `1-windowsservercore-ltsc2016`, `windowsservercore-ltsc2016` (*1.12/windows/windowsservercore-ltsc2016/Dockerfile*)](https://github.com/docker-library/golang/blob/15ddde6bf4bbfff97af673d8c04d32a95eb60d3e/1.12/windows/windowsservercore-ltsc2016/Dockerfile)
--	[`1.12.2-windowsservercore-1709`, `1.12-windowsservercore-1709`, `1-windowsservercore-1709`, `windowsservercore-1709` (*1.12/windows/windowsservercore-1709/Dockerfile*)](https://github.com/docker-library/golang/blob/15ddde6bf4bbfff97af673d8c04d32a95eb60d3e/1.12/windows/windowsservercore-1709/Dockerfile)
--	[`1.12.2-windowsservercore-1803`, `1.12-windowsservercore-1803`, `1-windowsservercore-1803`, `windowsservercore-1803` (*1.12/windows/windowsservercore-1803/Dockerfile*)](https://github.com/docker-library/golang/blob/15ddde6bf4bbfff97af673d8c04d32a95eb60d3e/1.12/windows/windowsservercore-1803/Dockerfile)
--	[`1.12.2-windowsservercore-1809`, `1.12-windowsservercore-1809`, `1-windowsservercore-1809`, `windowsservercore-1809` (*1.12/windows/windowsservercore-1809/Dockerfile*)](https://github.com/docker-library/golang/blob/15ddde6bf4bbfff97af673d8c04d32a95eb60d3e/1.12/windows/windowsservercore-1809/Dockerfile)
--	[`1.12.2-nanoserver-sac2016`, `1.12-nanoserver-sac2016`, `1-nanoserver-sac2016`, `nanoserver-sac2016` (*1.12/windows/nanoserver-sac2016/Dockerfile*)](https://github.com/docker-library/golang/blob/15ddde6bf4bbfff97af673d8c04d32a95eb60d3e/1.12/windows/nanoserver-sac2016/Dockerfile)
--	[`1.11.7-stretch`, `1.11-stretch` (*1.11/stretch/Dockerfile*)](https://github.com/docker-library/golang/blob/e5da3ded3ae6e599b047bbb6218673b354944f10/1.11/stretch/Dockerfile)
--	[`1.11.7-alpine3.9`, `1.11-alpine3.9`, `1.11.7-alpine`, `1.11-alpine` (*1.11/alpine3.9/Dockerfile*)](https://github.com/docker-library/golang/blob/e5da3ded3ae6e599b047bbb6218673b354944f10/1.11/alpine3.9/Dockerfile)
--	[`1.11.7-alpine3.8`, `1.11-alpine3.8` (*1.11/alpine3.8/Dockerfile*)](https://github.com/docker-library/golang/blob/e5da3ded3ae6e599b047bbb6218673b354944f10/1.11/alpine3.8/Dockerfile)
--	[`1.11.7-windowsservercore-ltsc2016`, `1.11-windowsservercore-ltsc2016` (*1.11/windows/windowsservercore-ltsc2016/Dockerfile*)](https://github.com/docker-library/golang/blob/e5da3ded3ae6e599b047bbb6218673b354944f10/1.11/windows/windowsservercore-ltsc2016/Dockerfile)
--	[`1.11.7-windowsservercore-1709`, `1.11-windowsservercore-1709` (*1.11/windows/windowsservercore-1709/Dockerfile*)](https://github.com/docker-library/golang/blob/e5da3ded3ae6e599b047bbb6218673b354944f10/1.11/windows/windowsservercore-1709/Dockerfile)
--	[`1.11.7-windowsservercore-1803`, `1.11-windowsservercore-1803` (*1.11/windows/windowsservercore-1803/Dockerfile*)](https://github.com/docker-library/golang/blob/e5da3ded3ae6e599b047bbb6218673b354944f10/1.11/windows/windowsservercore-1803/Dockerfile)
--	[`1.11.7-windowsservercore-1809`, `1.11-windowsservercore-1809` (*1.11/windows/windowsservercore-1809/Dockerfile*)](https://github.com/docker-library/golang/blob/e5da3ded3ae6e599b047bbb6218673b354944f10/1.11/windows/windowsservercore-1809/Dockerfile)
--	[`1.11.7-nanoserver-sac2016`, `1.11-nanoserver-sac2016` (*1.11/windows/nanoserver-sac2016/Dockerfile*)](https://github.com/docker-library/golang/blob/e5da3ded3ae6e599b047bbb6218673b354944f10/1.11/windows/nanoserver-sac2016/Dockerfile)
+-	[`1.12.3-stretch`, `1.12-stretch`, `1-stretch`, `stretch` (*1.12/stretch/Dockerfile*)](https://github.com/docker-library/golang/blob/ec8ae35b2c40c81dcbce3d124e097df8c937d5cb/1.12/stretch/Dockerfile)
+-	[`1.12.3-alpine3.9`, `1.12-alpine3.9`, `1-alpine3.9`, `alpine3.9`, `1.12.3-alpine`, `1.12-alpine`, `1-alpine`, `alpine` (*1.12/alpine3.9/Dockerfile*)](https://github.com/docker-library/golang/blob/ec8ae35b2c40c81dcbce3d124e097df8c937d5cb/1.12/alpine3.9/Dockerfile)
+-	[`1.12.3-windowsservercore-ltsc2016`, `1.12-windowsservercore-ltsc2016`, `1-windowsservercore-ltsc2016`, `windowsservercore-ltsc2016` (*1.12/windows/windowsservercore-ltsc2016/Dockerfile*)](https://github.com/docker-library/golang/blob/ec8ae35b2c40c81dcbce3d124e097df8c937d5cb/1.12/windows/windowsservercore-ltsc2016/Dockerfile)
+-	[`1.12.3-windowsservercore-1709`, `1.12-windowsservercore-1709`, `1-windowsservercore-1709`, `windowsservercore-1709` (*1.12/windows/windowsservercore-1709/Dockerfile*)](https://github.com/docker-library/golang/blob/ec8ae35b2c40c81dcbce3d124e097df8c937d5cb/1.12/windows/windowsservercore-1709/Dockerfile)
+-	[`1.12.3-windowsservercore-1803`, `1.12-windowsservercore-1803`, `1-windowsservercore-1803`, `windowsservercore-1803` (*1.12/windows/windowsservercore-1803/Dockerfile*)](https://github.com/docker-library/golang/blob/ec8ae35b2c40c81dcbce3d124e097df8c937d5cb/1.12/windows/windowsservercore-1803/Dockerfile)
+-	[`1.12.3-windowsservercore-1809`, `1.12-windowsservercore-1809`, `1-windowsservercore-1809`, `windowsservercore-1809` (*1.12/windows/windowsservercore-1809/Dockerfile*)](https://github.com/docker-library/golang/blob/ec8ae35b2c40c81dcbce3d124e097df8c937d5cb/1.12/windows/windowsservercore-1809/Dockerfile)
+-	[`1.12.3-nanoserver-sac2016`, `1.12-nanoserver-sac2016`, `1-nanoserver-sac2016`, `nanoserver-sac2016` (*1.12/windows/nanoserver-sac2016/Dockerfile*)](https://github.com/docker-library/golang/blob/ec8ae35b2c40c81dcbce3d124e097df8c937d5cb/1.12/windows/nanoserver-sac2016/Dockerfile)
+-	[`1.11.8-stretch`, `1.11-stretch` (*1.11/stretch/Dockerfile*)](https://github.com/docker-library/golang/blob/7b5fdcbaf4d5de1a6711c7712a87a9b3a61a9f30/1.11/stretch/Dockerfile)
+-	[`1.11.8-alpine3.9`, `1.11-alpine3.9`, `1.11.8-alpine`, `1.11-alpine` (*1.11/alpine3.9/Dockerfile*)](https://github.com/docker-library/golang/blob/7b5fdcbaf4d5de1a6711c7712a87a9b3a61a9f30/1.11/alpine3.9/Dockerfile)
+-	[`1.11.8-alpine3.8`, `1.11-alpine3.8` (*1.11/alpine3.8/Dockerfile*)](https://github.com/docker-library/golang/blob/7b5fdcbaf4d5de1a6711c7712a87a9b3a61a9f30/1.11/alpine3.8/Dockerfile)
+-	[`1.11.8-windowsservercore-ltsc2016`, `1.11-windowsservercore-ltsc2016` (*1.11/windows/windowsservercore-ltsc2016/Dockerfile*)](https://github.com/docker-library/golang/blob/7b5fdcbaf4d5de1a6711c7712a87a9b3a61a9f30/1.11/windows/windowsservercore-ltsc2016/Dockerfile)
+-	[`1.11.8-windowsservercore-1709`, `1.11-windowsservercore-1709` (*1.11/windows/windowsservercore-1709/Dockerfile*)](https://github.com/docker-library/golang/blob/7b5fdcbaf4d5de1a6711c7712a87a9b3a61a9f30/1.11/windows/windowsservercore-1709/Dockerfile)
+-	[`1.11.8-windowsservercore-1803`, `1.11-windowsservercore-1803` (*1.11/windows/windowsservercore-1803/Dockerfile*)](https://github.com/docker-library/golang/blob/7b5fdcbaf4d5de1a6711c7712a87a9b3a61a9f30/1.11/windows/windowsservercore-1803/Dockerfile)
+-	[`1.11.8-windowsservercore-1809`, `1.11-windowsservercore-1809` (*1.11/windows/windowsservercore-1809/Dockerfile*)](https://github.com/docker-library/golang/blob/7b5fdcbaf4d5de1a6711c7712a87a9b3a61a9f30/1.11/windows/windowsservercore-1809/Dockerfile)
+-	[`1.11.8-nanoserver-sac2016`, `1.11-nanoserver-sac2016` (*1.11/windows/nanoserver-sac2016/Dockerfile*)](https://github.com/docker-library/golang/blob/7b5fdcbaf4d5de1a6711c7712a87a9b3a61a9f30/1.11/windows/nanoserver-sac2016/Dockerfile)
 
 ## Shared Tags
 
--	`1.12.2`, `1.12`, `1`, `latest`:
-	-	[`1.12.2-stretch` (*1.12/stretch/Dockerfile*)](https://github.com/docker-library/golang/blob/15ddde6bf4bbfff97af673d8c04d32a95eb60d3e/1.12/stretch/Dockerfile)
-	-	[`1.12.2-windowsservercore-ltsc2016` (*1.12/windows/windowsservercore-ltsc2016/Dockerfile*)](https://github.com/docker-library/golang/blob/15ddde6bf4bbfff97af673d8c04d32a95eb60d3e/1.12/windows/windowsservercore-ltsc2016/Dockerfile)
-	-	[`1.12.2-windowsservercore-1709` (*1.12/windows/windowsservercore-1709/Dockerfile*)](https://github.com/docker-library/golang/blob/15ddde6bf4bbfff97af673d8c04d32a95eb60d3e/1.12/windows/windowsservercore-1709/Dockerfile)
-	-	[`1.12.2-windowsservercore-1803` (*1.12/windows/windowsservercore-1803/Dockerfile*)](https://github.com/docker-library/golang/blob/15ddde6bf4bbfff97af673d8c04d32a95eb60d3e/1.12/windows/windowsservercore-1803/Dockerfile)
-	-	[`1.12.2-windowsservercore-1809` (*1.12/windows/windowsservercore-1809/Dockerfile*)](https://github.com/docker-library/golang/blob/15ddde6bf4bbfff97af673d8c04d32a95eb60d3e/1.12/windows/windowsservercore-1809/Dockerfile)
--	`1.12.2-windowsservercore`, `1.12-windowsservercore`, `1-windowsservercore`, `windowsservercore`:
-	-	[`1.12.2-windowsservercore-ltsc2016` (*1.12/windows/windowsservercore-ltsc2016/Dockerfile*)](https://github.com/docker-library/golang/blob/15ddde6bf4bbfff97af673d8c04d32a95eb60d3e/1.12/windows/windowsservercore-ltsc2016/Dockerfile)
-	-	[`1.12.2-windowsservercore-1709` (*1.12/windows/windowsservercore-1709/Dockerfile*)](https://github.com/docker-library/golang/blob/15ddde6bf4bbfff97af673d8c04d32a95eb60d3e/1.12/windows/windowsservercore-1709/Dockerfile)
-	-	[`1.12.2-windowsservercore-1803` (*1.12/windows/windowsservercore-1803/Dockerfile*)](https://github.com/docker-library/golang/blob/15ddde6bf4bbfff97af673d8c04d32a95eb60d3e/1.12/windows/windowsservercore-1803/Dockerfile)
-	-	[`1.12.2-windowsservercore-1809` (*1.12/windows/windowsservercore-1809/Dockerfile*)](https://github.com/docker-library/golang/blob/15ddde6bf4bbfff97af673d8c04d32a95eb60d3e/1.12/windows/windowsservercore-1809/Dockerfile)
--	`1.12.2-nanoserver`, `1.12-nanoserver`, `1-nanoserver`, `nanoserver`:
-	-	[`1.12.2-nanoserver-sac2016` (*1.12/windows/nanoserver-sac2016/Dockerfile*)](https://github.com/docker-library/golang/blob/15ddde6bf4bbfff97af673d8c04d32a95eb60d3e/1.12/windows/nanoserver-sac2016/Dockerfile)
--	`1.11.7`, `1.11`:
-	-	[`1.11.7-stretch` (*1.11/stretch/Dockerfile*)](https://github.com/docker-library/golang/blob/e5da3ded3ae6e599b047bbb6218673b354944f10/1.11/stretch/Dockerfile)
-	-	[`1.11.7-windowsservercore-ltsc2016` (*1.11/windows/windowsservercore-ltsc2016/Dockerfile*)](https://github.com/docker-library/golang/blob/e5da3ded3ae6e599b047bbb6218673b354944f10/1.11/windows/windowsservercore-ltsc2016/Dockerfile)
-	-	[`1.11.7-windowsservercore-1709` (*1.11/windows/windowsservercore-1709/Dockerfile*)](https://github.com/docker-library/golang/blob/e5da3ded3ae6e599b047bbb6218673b354944f10/1.11/windows/windowsservercore-1709/Dockerfile)
-	-	[`1.11.7-windowsservercore-1803` (*1.11/windows/windowsservercore-1803/Dockerfile*)](https://github.com/docker-library/golang/blob/e5da3ded3ae6e599b047bbb6218673b354944f10/1.11/windows/windowsservercore-1803/Dockerfile)
-	-	[`1.11.7-windowsservercore-1809` (*1.11/windows/windowsservercore-1809/Dockerfile*)](https://github.com/docker-library/golang/blob/e5da3ded3ae6e599b047bbb6218673b354944f10/1.11/windows/windowsservercore-1809/Dockerfile)
--	`1.11.7-windowsservercore`, `1.11-windowsservercore`:
-	-	[`1.11.7-windowsservercore-ltsc2016` (*1.11/windows/windowsservercore-ltsc2016/Dockerfile*)](https://github.com/docker-library/golang/blob/e5da3ded3ae6e599b047bbb6218673b354944f10/1.11/windows/windowsservercore-ltsc2016/Dockerfile)
-	-	[`1.11.7-windowsservercore-1709` (*1.11/windows/windowsservercore-1709/Dockerfile*)](https://github.com/docker-library/golang/blob/e5da3ded3ae6e599b047bbb6218673b354944f10/1.11/windows/windowsservercore-1709/Dockerfile)
-	-	[`1.11.7-windowsservercore-1803` (*1.11/windows/windowsservercore-1803/Dockerfile*)](https://github.com/docker-library/golang/blob/e5da3ded3ae6e599b047bbb6218673b354944f10/1.11/windows/windowsservercore-1803/Dockerfile)
-	-	[`1.11.7-windowsservercore-1809` (*1.11/windows/windowsservercore-1809/Dockerfile*)](https://github.com/docker-library/golang/blob/e5da3ded3ae6e599b047bbb6218673b354944f10/1.11/windows/windowsservercore-1809/Dockerfile)
--	`1.11.7-nanoserver`, `1.11-nanoserver`:
-	-	[`1.11.7-nanoserver-sac2016` (*1.11/windows/nanoserver-sac2016/Dockerfile*)](https://github.com/docker-library/golang/blob/e5da3ded3ae6e599b047bbb6218673b354944f10/1.11/windows/nanoserver-sac2016/Dockerfile)
+-	`1.12.3`, `1.12`, `1`, `latest`:
+	-	[`1.12.3-stretch` (*1.12/stretch/Dockerfile*)](https://github.com/docker-library/golang/blob/ec8ae35b2c40c81dcbce3d124e097df8c937d5cb/1.12/stretch/Dockerfile)
+	-	[`1.12.3-windowsservercore-ltsc2016` (*1.12/windows/windowsservercore-ltsc2016/Dockerfile*)](https://github.com/docker-library/golang/blob/ec8ae35b2c40c81dcbce3d124e097df8c937d5cb/1.12/windows/windowsservercore-ltsc2016/Dockerfile)
+	-	[`1.12.3-windowsservercore-1709` (*1.12/windows/windowsservercore-1709/Dockerfile*)](https://github.com/docker-library/golang/blob/ec8ae35b2c40c81dcbce3d124e097df8c937d5cb/1.12/windows/windowsservercore-1709/Dockerfile)
+	-	[`1.12.3-windowsservercore-1803` (*1.12/windows/windowsservercore-1803/Dockerfile*)](https://github.com/docker-library/golang/blob/ec8ae35b2c40c81dcbce3d124e097df8c937d5cb/1.12/windows/windowsservercore-1803/Dockerfile)
+	-	[`1.12.3-windowsservercore-1809` (*1.12/windows/windowsservercore-1809/Dockerfile*)](https://github.com/docker-library/golang/blob/ec8ae35b2c40c81dcbce3d124e097df8c937d5cb/1.12/windows/windowsservercore-1809/Dockerfile)
+-	`1.12.3-windowsservercore`, `1.12-windowsservercore`, `1-windowsservercore`, `windowsservercore`:
+	-	[`1.12.3-windowsservercore-ltsc2016` (*1.12/windows/windowsservercore-ltsc2016/Dockerfile*)](https://github.com/docker-library/golang/blob/ec8ae35b2c40c81dcbce3d124e097df8c937d5cb/1.12/windows/windowsservercore-ltsc2016/Dockerfile)
+	-	[`1.12.3-windowsservercore-1709` (*1.12/windows/windowsservercore-1709/Dockerfile*)](https://github.com/docker-library/golang/blob/ec8ae35b2c40c81dcbce3d124e097df8c937d5cb/1.12/windows/windowsservercore-1709/Dockerfile)
+	-	[`1.12.3-windowsservercore-1803` (*1.12/windows/windowsservercore-1803/Dockerfile*)](https://github.com/docker-library/golang/blob/ec8ae35b2c40c81dcbce3d124e097df8c937d5cb/1.12/windows/windowsservercore-1803/Dockerfile)
+	-	[`1.12.3-windowsservercore-1809` (*1.12/windows/windowsservercore-1809/Dockerfile*)](https://github.com/docker-library/golang/blob/ec8ae35b2c40c81dcbce3d124e097df8c937d5cb/1.12/windows/windowsservercore-1809/Dockerfile)
+-	`1.12.3-nanoserver`, `1.12-nanoserver`, `1-nanoserver`, `nanoserver`:
+	-	[`1.12.3-nanoserver-sac2016` (*1.12/windows/nanoserver-sac2016/Dockerfile*)](https://github.com/docker-library/golang/blob/ec8ae35b2c40c81dcbce3d124e097df8c937d5cb/1.12/windows/nanoserver-sac2016/Dockerfile)
+-	`1.11.8`, `1.11`:
+	-	[`1.11.8-stretch` (*1.11/stretch/Dockerfile*)](https://github.com/docker-library/golang/blob/7b5fdcbaf4d5de1a6711c7712a87a9b3a61a9f30/1.11/stretch/Dockerfile)
+	-	[`1.11.8-windowsservercore-ltsc2016` (*1.11/windows/windowsservercore-ltsc2016/Dockerfile*)](https://github.com/docker-library/golang/blob/7b5fdcbaf4d5de1a6711c7712a87a9b3a61a9f30/1.11/windows/windowsservercore-ltsc2016/Dockerfile)
+	-	[`1.11.8-windowsservercore-1709` (*1.11/windows/windowsservercore-1709/Dockerfile*)](https://github.com/docker-library/golang/blob/7b5fdcbaf4d5de1a6711c7712a87a9b3a61a9f30/1.11/windows/windowsservercore-1709/Dockerfile)
+	-	[`1.11.8-windowsservercore-1803` (*1.11/windows/windowsservercore-1803/Dockerfile*)](https://github.com/docker-library/golang/blob/7b5fdcbaf4d5de1a6711c7712a87a9b3a61a9f30/1.11/windows/windowsservercore-1803/Dockerfile)
+	-	[`1.11.8-windowsservercore-1809` (*1.11/windows/windowsservercore-1809/Dockerfile*)](https://github.com/docker-library/golang/blob/7b5fdcbaf4d5de1a6711c7712a87a9b3a61a9f30/1.11/windows/windowsservercore-1809/Dockerfile)
+-	`1.11.8-windowsservercore`, `1.11-windowsservercore`:
+	-	[`1.11.8-windowsservercore-ltsc2016` (*1.11/windows/windowsservercore-ltsc2016/Dockerfile*)](https://github.com/docker-library/golang/blob/7b5fdcbaf4d5de1a6711c7712a87a9b3a61a9f30/1.11/windows/windowsservercore-ltsc2016/Dockerfile)
+	-	[`1.11.8-windowsservercore-1709` (*1.11/windows/windowsservercore-1709/Dockerfile*)](https://github.com/docker-library/golang/blob/7b5fdcbaf4d5de1a6711c7712a87a9b3a61a9f30/1.11/windows/windowsservercore-1709/Dockerfile)
+	-	[`1.11.8-windowsservercore-1803` (*1.11/windows/windowsservercore-1803/Dockerfile*)](https://github.com/docker-library/golang/blob/7b5fdcbaf4d5de1a6711c7712a87a9b3a61a9f30/1.11/windows/windowsservercore-1803/Dockerfile)
+	-	[`1.11.8-windowsservercore-1809` (*1.11/windows/windowsservercore-1809/Dockerfile*)](https://github.com/docker-library/golang/blob/7b5fdcbaf4d5de1a6711c7712a87a9b3a61a9f30/1.11/windows/windowsservercore-1809/Dockerfile)
+-	`1.11.8-nanoserver`, `1.11-nanoserver`:
+	-	[`1.11.8-nanoserver-sac2016` (*1.11/windows/nanoserver-sac2016/Dockerfile*)](https://github.com/docker-library/golang/blob/7b5fdcbaf4d5de1a6711c7712a87a9b3a61a9f30/1.11/windows/nanoserver-sac2016/Dockerfile)
 
 # Quick reference
 
