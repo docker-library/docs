@@ -3,4 +3,4 @@ The Dockerfiles and associated scripts are licensed under the [Apache License, V
 Licenses for the products installed within the images:
 
 -	Eclipse OpenJ9 + OpenJDK: The combined works license is [GNU GPL v2 with Classpath Exception](http://openjdk.java.net/legal/gplv2+ce.html).
--   OpenJDK: The project license is GNU GPL v2 with Classpath Exception.
+-	OpenJDK: The project license is GNU GPL v2 with Classpath Exception.
