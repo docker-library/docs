@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.8.4`, `1.8`, `1`, `latest` (*1.8/Dockerfile*)](https://github.com/composer/docker/blob/ebbb9efd87b78cf9b837f97105bcb6c5f0ee44ef/1.8/Dockerfile)
--	[`1.7.3`, `1.7` (*1.7/Dockerfile*)](https://github.com/composer/docker/blob/ebbb9efd87b78cf9b837f97105bcb6c5f0ee44ef/1.7/Dockerfile)
+-	[`1.8.5`, `1.8`, `1`, `latest` (*1.8/Dockerfile*)](https://github.com/composer/docker/blob/b09945e1c20d64bc62b20dbc20e77eec93d3ee87/1.8/Dockerfile)
+-	[`1.7.3`, `1.7` (*1.7/Dockerfile*)](https://github.com/composer/docker/blob/b09945e1c20d64bc62b20dbc20e77eec93d3ee87/1.7/Dockerfile)
 
 # Quick reference
 
@@ -31,7 +31,7 @@ WARNING:
 	[Composer](https://github.com/composer/docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/composer/), [`arm32v6`](https://hub.docker.com/r/arm32v6/composer/), [`arm64v8`](https://hub.docker.com/r/arm64v8/composer/), [`i386`](https://hub.docker.com/r/i386/composer/), [`ppc64le`](https://hub.docker.com/r/ppc64le/composer/)
+	[`amd64`](https://hub.docker.com/r/amd64/composer/), [`arm32v6`](https://hub.docker.com/r/arm32v6/composer/), [`arm32v7`](https://hub.docker.com/r/arm32v7/composer/), [`arm64v8`](https://hub.docker.com/r/arm64v8/composer/), [`i386`](https://hub.docker.com/r/i386/composer/), [`ppc64le`](https://hub.docker.com/r/ppc64le/composer/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/composer/` directory](https://github.com/docker-library/repo-info/blob/master/repos/composer) ([history](https://github.com/docker-library/repo-info/commits/master/repos/composer))  
