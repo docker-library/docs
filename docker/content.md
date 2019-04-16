@@ -18,15 +18,13 @@ If you are still convinced that you need Docker-in-Docker and not just access to
 
 ## Start a daemon instance
 
-**IMPORTANT:** this image defaults to `--storage-driver=vfs`, which will be very slow and inefficient (but is the only driver which is guaranteed to work regardless of your underlying filesystem). Which driver you should use varies depending on your needs, but a good rule of thumb is that your DinD instance should be using the same driver as your host (which can be seen under `Storage Driver` in the output of `docker info`). See the "Custom daemon flags" section below for how to specify your storage driver.
-
 ```console
-$ docker run --privileged --name some-docker -d %%IMAGE%%:stable-dind
+$ docker run --privileged --name some-docker -d %%IMAGE%%:dind
 ```
 
 **Note:** `--privileged` is required for Docker-in-Docker to function properly, but it should be used with care as it provides full access to the host environment, as explained [in the relevant section of the Docker documentation](https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities).
 
-By default, the `dind` variants of this image add `--host=tcp://0.0.0.0:2375` (on top of the explicit default of `--host=unix:///var/run/docker.sock`) in order to allow external containers to access `dockerd` appropriately (as the following examples illustrate).
+By default, the `dind` variants of this image add `--host=tcp://0.0.0.0:2375` (on top of the explicit default of `--host=unix:///var/run/docker.sock`) in order to allow external containers to access `dockerd` appropriately (as the following examples illustrate). If you use `--network=host` or other methods of sharing network namespaces (such as Kubernetes pods, for example), this might be a security issue. To disable this image behavior, simply override the container command or entrypoint to run `dockerd` directly (`... docker:dind dockerd ...` or `... --entrypoint dockerd docker:dind ...`).
 
 ## Connect to it from a second container
 
