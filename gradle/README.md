@@ -16,16 +16,16 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.3.1-jdk8`, `5.3-jdk8`, `jdk8`, `5.3.1-jdk`, `5.3-jdk`, `jdk`, `5.3.1`, `5.3`, `latest` (*jdk8/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/0c2624d788edb813667a1e72659f8be612d420f3/jdk8/Dockerfile)
--	[`5.3.1-jre8`, `5.3-jre8`, `jre8`, `5.3.1-jre`, `5.3-jre`, `jre` (*jre8/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/0c2624d788edb813667a1e72659f8be612d420f3/jre8/Dockerfile)
--	[`5.3.1-jdk8-alpine`, `5.3-jdk8-alpine`, `jdk8-alpine`, `5.3.1-jdk-alpine`, `5.3-jdk-alpine`, `jdk-alpine`, `5.3.1-alpine`, `5.3-alpine`, `alpine` (*jdk8-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/0c2624d788edb813667a1e72659f8be612d420f3/jdk8-alpine/Dockerfile)
--	[`5.3.1-jdk8-slim`, `5.3-jdk8-slim`, `jdk8-slim`, `5.3.1-jdk-slim`, `5.3-jdk-slim`, `jdk-slim`, `5.3.1-slim`, `5.3-slim`, `slim` (*jdk8-slim/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/0c2624d788edb813667a1e72659f8be612d420f3/jdk8-slim/Dockerfile)
--	[`5.3.1-jre8-alpine`, `5.3-jre8-alpine`, `jre8-alpine`, `5.3.1-jre-alpine`, `5.3-jre-alpine`, `jre-alpine` (*jre8-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/0c2624d788edb813667a1e72659f8be612d420f3/jre8-alpine/Dockerfile)
--	[`5.3.1-jre8-slim`, `5.3-jre8-slim`, `jre8-slim`, `5.3.1-jre-slim`, `5.3-jre-slim`, `jre-slim` (*jre8-slim/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/0c2624d788edb813667a1e72659f8be612d420f3/jre8-slim/Dockerfile)
--	[`5.3.1-jdk11`, `5.3-jdk11`, `jdk11` (*jdk11/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/0c2624d788edb813667a1e72659f8be612d420f3/jdk11/Dockerfile)
--	[`5.3.1-jdk11-slim`, `5.3-jdk11-slim`, `jdk11-slim` (*jdk11-slim/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/0c2624d788edb813667a1e72659f8be612d420f3/jdk11-slim/Dockerfile)
--	[`5.3.1-jre11`, `5.3-jre11`, `jre11` (*jre11/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/0c2624d788edb813667a1e72659f8be612d420f3/jre11/Dockerfile)
--	[`5.3.1-jre11-slim`, `5.3-jre11-slim`, `jre11-slim` (*jre11-slim/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/0c2624d788edb813667a1e72659f8be612d420f3/jre11-slim/Dockerfile)
+-	[`5.4.0-jdk8`, `5.4-jdk8`, `jdk8`, `5.4.0-jdk`, `5.4-jdk`, `jdk`, `5.4.0`, `5.4`, `latest` (*jdk8/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/0b209ea63ac0c24304a9678b77b2165cd956c1b6/jdk8/Dockerfile)
+-	[`5.4.0-jre8`, `5.4-jre8`, `jre8`, `5.4.0-jre`, `5.4-jre`, `jre` (*jre8/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/0b209ea63ac0c24304a9678b77b2165cd956c1b6/jre8/Dockerfile)
+-	[`5.4.0-jdk8-alpine`, `5.4-jdk8-alpine`, `jdk8-alpine`, `5.4.0-jdk-alpine`, `5.4-jdk-alpine`, `jdk-alpine`, `5.4.0-alpine`, `5.4-alpine`, `alpine` (*jdk8-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/0b209ea63ac0c24304a9678b77b2165cd956c1b6/jdk8-alpine/Dockerfile)
+-	[`5.4.0-jdk8-slim`, `5.4-jdk8-slim`, `jdk8-slim`, `5.4.0-jdk-slim`, `5.4-jdk-slim`, `jdk-slim`, `5.4.0-slim`, `5.4-slim`, `slim` (*jdk8-slim/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/0b209ea63ac0c24304a9678b77b2165cd956c1b6/jdk8-slim/Dockerfile)
+-	[`5.4.0-jre8-alpine`, `5.4-jre8-alpine`, `jre8-alpine`, `5.4.0-jre-alpine`, `5.4-jre-alpine`, `jre-alpine` (*jre8-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/0b209ea63ac0c24304a9678b77b2165cd956c1b6/jre8-alpine/Dockerfile)
+-	[`5.4.0-jre8-slim`, `5.4-jre8-slim`, `jre8-slim`, `5.4.0-jre-slim`, `5.4-jre-slim`, `jre-slim` (*jre8-slim/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/0b209ea63ac0c24304a9678b77b2165cd956c1b6/jre8-slim/Dockerfile)
+-	[`5.4.0-jdk11`, `5.4-jdk11`, `jdk11` (*jdk11/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/0b209ea63ac0c24304a9678b77b2165cd956c1b6/jdk11/Dockerfile)
+-	[`5.4.0-jdk11-slim`, `5.4-jdk11-slim`, `jdk11-slim` (*jdk11-slim/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/0b209ea63ac0c24304a9678b77b2165cd956c1b6/jdk11-slim/Dockerfile)
+-	[`5.4.0-jre11`, `5.4-jre11`, `jre11` (*jre11/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/0b209ea63ac0c24304a9678b77b2165cd956c1b6/jre11/Dockerfile)
+-	[`5.4.0-jre11-slim`, `5.4-jre11-slim`, `jre11-slim` (*jre11-slim/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/0b209ea63ac0c24304a9678b77b2165cd956c1b6/jre11-slim/Dockerfile)
 
 # Quick reference
 
