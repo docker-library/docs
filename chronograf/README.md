@@ -16,12 +16,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.5`, `1.5.0`, `1.5.0.1` (*chronograf/1.5/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/ba23becaa11632798fb6faeec0f994a8389fd8b6/chronograf/1.5/Dockerfile)
--	[`1.5-alpine`, `1.5.0-alpine`, `1.5.0.1-alpine` (*chronograf/1.5/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/ba23becaa11632798fb6faeec0f994a8389fd8b6/chronograf/1.5/alpine/Dockerfile)
--	[`1.6`, `1.6.2` (*chronograf/1.6/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/ba23becaa11632798fb6faeec0f994a8389fd8b6/chronograf/1.6/Dockerfile)
--	[`1.6-alpine`, `1.6.2-alpine` (*chronograf/1.6/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/ba23becaa11632798fb6faeec0f994a8389fd8b6/chronograf/1.6/alpine/Dockerfile)
--	[`1.7`, `1.7.8`, `latest` (*chronograf/1.7/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/ba23becaa11632798fb6faeec0f994a8389fd8b6/chronograf/1.7/Dockerfile)
--	[`1.7-alpine`, `1.7.8-alpine`, `alpine` (*chronograf/1.7/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/ba23becaa11632798fb6faeec0f994a8389fd8b6/chronograf/1.7/alpine/Dockerfile)
+-	[`1.5`, `1.5.0`, `1.5.0.1` (*chronograf/1.5/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/101c4c05423f2eb3389bbe516d3ec3de215878d2/chronograf/1.5/Dockerfile)
+-	[`1.5-alpine`, `1.5.0-alpine`, `1.5.0.1-alpine` (*chronograf/1.5/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/101c4c05423f2eb3389bbe516d3ec3de215878d2/chronograf/1.5/alpine/Dockerfile)
+-	[`1.6`, `1.6.2` (*chronograf/1.6/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/101c4c05423f2eb3389bbe516d3ec3de215878d2/chronograf/1.6/Dockerfile)
+-	[`1.6-alpine`, `1.6.2-alpine` (*chronograf/1.6/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/101c4c05423f2eb3389bbe516d3ec3de215878d2/chronograf/1.6/alpine/Dockerfile)
+-	[`1.7`, `1.7.10`, `latest` (*chronograf/1.7/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/101c4c05423f2eb3389bbe516d3ec3de215878d2/chronograf/1.7/Dockerfile)
+-	[`1.7-alpine`, `1.7.10-alpine`, `alpine` (*chronograf/1.7/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/101c4c05423f2eb3389bbe516d3ec3de215878d2/chronograf/1.7/alpine/Dockerfile)
 
 # Quick reference
 
