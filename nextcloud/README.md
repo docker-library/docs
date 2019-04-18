@@ -22,9 +22,9 @@ WARNING:
 -	[`15.0.7-apache`, `15.0-apache`, `15-apache`, `apache`, `stable-apache`, `production-apache`, `15.0.7`, `15.0`, `15`, `latest`, `stable`, `production` (*15.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/09151270f2fb0ccf7de1420d5fa2f31fedd5d749/15.0/apache/Dockerfile)
 -	[`15.0.7-fpm-alpine`, `15.0-fpm-alpine`, `15-fpm-alpine`, `fpm-alpine`, `stable-fpm-alpine`, `production-fpm-alpine` (*15.0/fpm-alpine/Dockerfile*)](https://github.com/nextcloud/docker/blob/09151270f2fb0ccf7de1420d5fa2f31fedd5d749/15.0/fpm-alpine/Dockerfile)
 -	[`15.0.7-fpm`, `15.0-fpm`, `15-fpm`, `fpm`, `stable-fpm`, `production-fpm` (*15.0/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/09151270f2fb0ccf7de1420d5fa2f31fedd5d749/15.0/fpm/Dockerfile)
--	[`16.0.0RC1-apache`, `16.0.0-rc-apache`, `16.0-rc-apache`, `16-rc-apache`, `16.0.0RC1`, `16.0.0-rc`, `16.0-rc`, `16-rc` (*16.0-rc/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/2af113afc6cb76d5c15bb814821a1a5b124cf4ef/16.0-rc/apache/Dockerfile)
--	[`16.0.0RC1-fpm-alpine`, `16.0.0-rc-fpm-alpine`, `16.0-rc-fpm-alpine`, `16-rc-fpm-alpine` (*16.0-rc/fpm-alpine/Dockerfile*)](https://github.com/nextcloud/docker/blob/2af113afc6cb76d5c15bb814821a1a5b124cf4ef/16.0-rc/fpm-alpine/Dockerfile)
--	[`16.0.0RC1-fpm`, `16.0.0-rc-fpm`, `16.0-rc-fpm`, `16-rc-fpm` (*16.0-rc/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/2af113afc6cb76d5c15bb814821a1a5b124cf4ef/16.0-rc/fpm/Dockerfile)
+-	[`16.0.0RC2-apache`, `16.0.0-rc-apache`, `16.0-rc-apache`, `16-rc-apache`, `16.0.0RC2`, `16.0.0-rc`, `16.0-rc`, `16-rc` (*16.0-rc/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/03cdaf2bee9bdbfbdf7f00fdefa5db1c2dd6e122/16.0-rc/apache/Dockerfile)
+-	[`16.0.0RC2-fpm-alpine`, `16.0.0-rc-fpm-alpine`, `16.0-rc-fpm-alpine`, `16-rc-fpm-alpine` (*16.0-rc/fpm-alpine/Dockerfile*)](https://github.com/nextcloud/docker/blob/03cdaf2bee9bdbfbdf7f00fdefa5db1c2dd6e122/16.0-rc/fpm-alpine/Dockerfile)
+-	[`16.0.0RC2-fpm`, `16.0.0-rc-fpm`, `16.0-rc-fpm`, `16-rc-fpm` (*16.0-rc/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/03cdaf2bee9bdbfbdf7f00fdefa5db1c2dd6e122/16.0-rc/fpm/Dockerfile)
 
 # Quick reference
 
