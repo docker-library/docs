@@ -39,4 +39,4 @@ Please review the [Oracle Container Runtime for Docker User's Guide](https://doc
 
 For Oracle Linux users without a paid support subscription, the following resources are available:
 
-- The [Oracle Linux Space](https://community.oracle.com/community/groundbreakers/server_&_storage_systems/linux/oracle_linux) on the [Oracle Technology Network Community](https://community.oracle.com/welcome).
+-   The [Oracle Linux Space](https://community.oracle.com/community/groundbreakers/server_&_storage_systems/linux/oracle_linux) on the [Oracle Technology Network Community](https://community.oracle.com/welcome).
