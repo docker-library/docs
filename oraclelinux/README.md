@@ -67,7 +67,7 @@ The Oracle Linux images are intended for use in the **FROM** field of a downstre
 
 ## Social media resources
 
--	[Twitter](https://twitter.com/ORCL_Linux)
+-	[Twitter](https://twitter.com/OracleLinux)
 -	[Facebook](https://www.facebook.com/OracleLinux)
 -	[YouTube](https://www.youtube.com/user/OracleLinuxChannel)
 -	[Blog](http://blogs.oracle.com/linux)
@@ -90,8 +90,7 @@ Please review the [Oracle Container Runtime for Docker User's Guide](https://doc
 
 For Oracle Linux users without a paid support subscription, the following resources are available:
 
--	The [Oracle Linux Forum](https://community.oracle.com/community/server_%26_storage_systems/linux/oracle_linux) on the [Oracle Technology Network Community](https://community.oracle.com/welcome).
--	The `#oracle-linux` IRC channel on Freenode.
+-	The [Oracle Linux space](https://community.oracle.com/community/groundbreakers/server_&_storage_systems/linux/oracle_linux) on the [Oracle Technology Network Community](https://community.oracle.com/welcome).
 
 # License
 
