@@ -20,10 +20,10 @@ WARNING:
 -	[`1.15.12-perl`, `mainline-perl`, `1-perl`, `1.15-perl`, `perl` (*mainline/stretch-perl/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/e5123eea0d29c8d13df17d782f15679458ff899e/mainline/stretch-perl/Dockerfile)
 -	[`1.15.12-alpine`, `mainline-alpine`, `1-alpine`, `1.15-alpine`, `alpine` (*mainline/alpine/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/e5123eea0d29c8d13df17d782f15679458ff899e/mainline/alpine/Dockerfile)
 -	[`1.15.12-alpine-perl`, `mainline-alpine-perl`, `1-alpine-perl`, `1.15-alpine-perl`, `alpine-perl` (*mainline/alpine-perl/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/e5123eea0d29c8d13df17d782f15679458ff899e/mainline/alpine-perl/Dockerfile)
--	[`1.14.2`, `stable`, `1.14` (*stable/stretch/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/b71469ab815f580ba0ad658a32e91c86f8565ed4/stable/stretch/Dockerfile)
--	[`1.14.2-perl`, `stable-perl`, `1.14-perl` (*stable/stretch-perl/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/b71469ab815f580ba0ad658a32e91c86f8565ed4/stable/stretch-perl/Dockerfile)
--	[`1.14.2-alpine`, `stable-alpine`, `1.14-alpine` (*stable/alpine/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/2364fdc54af554d28ef95b7be381677d10987986/stable/alpine/Dockerfile)
--	[`1.14.2-alpine-perl`, `stable-alpine-perl`, `1.14-alpine-perl` (*stable/alpine-perl/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/2364fdc54af554d28ef95b7be381677d10987986/stable/alpine-perl/Dockerfile)
+-	[`1.16.0`, `stable`, `1.16` (*stable/stretch/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/9a052e07b2c283df9960375ee40be50c5c462a7e/stable/stretch/Dockerfile)
+-	[`1.16.0-perl`, `stable-perl`, `1.16-perl` (*stable/stretch-perl/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/9a052e07b2c283df9960375ee40be50c5c462a7e/stable/stretch-perl/Dockerfile)
+-	[`1.16.0-alpine`, `stable-alpine`, `1.16-alpine` (*stable/alpine/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/9a052e07b2c283df9960375ee40be50c5c462a7e/stable/alpine/Dockerfile)
+-	[`1.16.0-alpine-perl`, `stable-alpine-perl`, `1.16-alpine-perl` (*stable/alpine-perl/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/9a052e07b2c283df9960375ee40be50c5c462a7e/stable/alpine-perl/Dockerfile)
 
 # Quick reference
 
