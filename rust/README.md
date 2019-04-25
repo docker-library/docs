@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.34.0-stretch`, `1-stretch`, `1.34-stretch`, `stretch`, `1.34.0`, `1`, `1.34`, `latest` (*1.34.0/stretch/Dockerfile*)](https://github.com/rust-lang-nursery/docker-rust/blob/7663b3d6680c62dee26c8c20b03a836fc09b6325/1.34.0/stretch/Dockerfile)
--	[`1.34.0-slim-stretch`, `1-slim-stretch`, `1.34-slim-stretch`, `slim-stretch`, `1.34.0-slim`, `1-slim`, `1.34-slim`, `slim` (*1.34.0/stretch/slim/Dockerfile*)](https://github.com/rust-lang-nursery/docker-rust/blob/7663b3d6680c62dee26c8c20b03a836fc09b6325/1.34.0/stretch/slim/Dockerfile)
+-	[`1.34.1-stretch`, `1-stretch`, `1.34-stretch`, `stretch`, `1.34.1`, `1`, `1.34`, `latest` (*1.34.1/stretch/Dockerfile*)](https://github.com/rust-lang-nursery/docker-rust/blob/0ae19e393f5d53bbfd657f48e0cf9ab203059af3/1.34.1/stretch/Dockerfile)
+-	[`1.34.1-slim-stretch`, `1-slim-stretch`, `1.34-slim-stretch`, `slim-stretch`, `1.34.1-slim`, `1-slim`, `1.34-slim`, `slim` (*1.34.1/stretch/slim/Dockerfile*)](https://github.com/rust-lang-nursery/docker-rust/blob/0ae19e393f5d53bbfd657f48e0cf9ab203059af3/1.34.1/stretch/slim/Dockerfile)
 
 # Quick reference
 
