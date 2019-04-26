@@ -16,4 +16,4 @@ $ docker run -p 24224:24224 -p 24224:24224/udp -u fluent -v /path/to/dir:/fluent
 2019-01-16 11:58:27 +0000 [info]: #0 fluentd worker is now running worker = 0
 ```
 
-Docker's official images support only v1.3.3 or later. If you want to know more details, check [fluentd-docker-image README](https://github.com/fluent/fluentd-docker-image/blob/master/README.md).
+Docker's official images support only v1.4.2 or later. If you want to know more details, check [fluentd-docker-image README](https://github.com/fluent/fluentd-docker-image/blob/master/README.md).
