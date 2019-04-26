@@ -61,7 +61,7 @@ Telling Traefik where your orchestrator is could be the *only* configuration ste
 
 # Example usage
 
-Grab a [sample configuration file](https://raw.githubusercontent.com/containous/traefik/master/traefik.sample.toml) and rename it to `traefik.toml`. Enable `docker` provider and web UI:
+Grab a [sample configuration file](https://raw.githubusercontent.com/containous/traefik/v1.7/traefik.sample.toml?cf_lbyyhhwhyjj5l3rs65cb3w=wfzwes8u9vhgro07qp282a) and rename it to `traefik.toml`. Enable `docker` provider and web UI:
 
 ```toml
 ################################################################
