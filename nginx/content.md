@@ -90,7 +90,7 @@ The `default.conf.template` file may then contain variable references like this:
 listen       ${NGINX_PORT};
 ```
 
-By default, `nginx-envsubst` reads template files in `/etc/nginx/templates` directory and outputs the result of execution using `envsubst` to `/etc/nginx/conf.d`.
+By default, `nginx-envsubst` reads template files in `/etc/nginx/templates` and outputs the result of executing `envsubst` to `/etc/nginx/conf.d`.
 
 This behavior can be changed via the following environent variables:
 
