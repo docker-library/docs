@@ -68,7 +68,7 @@ $ docker run --name my-custom-nginx-container -d custom-nginx
 
 ### Using environment variables in %%IMAGE%% configuration
 
-Out-of-the-box, %%IMAGE%% doesn't support environment variables inside most configuration blocks. But `envsubst` may be used as a workaround if you need to generate your %%IMAGE%% configuration dynamically before %%IMAGE%% starts.
+Out-of-the-box, %%IMAGE%% doesn't support environment variables inside most configuration blocks. But this image contains a script to run `envsubst`, named `nginx-envsubst`. The script will be invoked automatically and will extract environment variables before %%IMAGE%% starts.
 
 Here is an example using docker-compose.yml:
 
@@ -76,19 +76,33 @@ Here is an example using docker-compose.yml:
 web:
   image: %%IMAGE%%
   volumes:
-   - ./mysite.template:/etc/nginx/conf.d/mysite.template
+   - ./default.conf.template:/etc/nginx/templates/default.conf.template
   ports:
    - "8080:80"
   environment:
    - NGINX_HOST=foobar.com
    - NGINX_PORT=80
-  command: /bin/bash -c "envsubst < /etc/nginx/conf.d/mysite.template > /etc/nginx/conf.d/default.conf && exec nginx -g 'daemon off;'"
 ```
 
-The `mysite.template` file may then contain variable references like this:
+The `default.conf.template` file may then contain variable references like this:
 
-`listen       ${NGINX_PORT};
-`
+```
+listen       ${NGINX_PORT};
+```
+
+By default, `nginx-envsubst` reads template files in `/etc/nginx/templates` directory and outputs the result of execution using `envsubst` to `/etc/nginx/conf.d`.
+
+This behavior can be changed via the following environent variables:
+
+- `NGINX_ENVSUBST_TEMPLATE_DIR`
+    - A directory containing template files (default: `/etc/nginx/templates`)
+- `NGINX_ENVSUBST_TEMPLATE_SUFFIX`
+    - A suffix of template files (default: `.template`)
+    - `nginx-envsubst` only processes the files whose name contains this suffix.
+- `NGINX_ENVSUBST_OUTPUT_DIR`
+    - A directory where the result of executing envsubst is output (default: `/etc/nginx/conf.d`)
+    - The output filename is the template filename with the suffix removed.
+        - ex.) `/etc/nginx/templates/default.conf.template` will be output with the filename `/etc/nginx/conf.d/default.conf`.
 
 ## Running %%IMAGE%% in read-only mode
 
