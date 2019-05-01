@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.6.1`, `1.6`, `latest` (*docker/1.6/Dockerfile*)](https://github.com/eclipse/mosquitto/blob/d5264338008dc2459d6994e4d527d3b06cc43d7f/docker/1.6/Dockerfile)
--	[`1.5.8`, `1.5` (*docker/1.5/Dockerfile*)](https://github.com/eclipse/mosquitto/blob/d5264338008dc2459d6994e4d527d3b06cc43d7f/docker/1.5/Dockerfile)
+-	[`1.6.2`, `1.6`, `latest` (*docker/1.6/Dockerfile*)](https://github.com/eclipse/mosquitto/blob/995f90dbafa82c7fd3d24f7174d094f11c2d6c85/docker/1.6/Dockerfile)
+-	[`1.5.8`, `1.5` (*docker/1.5/Dockerfile*)](https://github.com/eclipse/mosquitto/blob/995f90dbafa82c7fd3d24f7174d094f11c2d6c85/docker/1.5/Dockerfile)
 
 # Quick reference
 
