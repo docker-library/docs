@@ -78,21 +78,7 @@ The images are designed to support a number of different usage patterns. The fol
 
 It is a very strong best practice to create an extending Docker image, we called it the `application image`, that encapsulates an application and its configuration. This creates a robust, self-contained and predictable Docker image that can span new containers upon request, without relying on volumes or other external runtime artifacts that may behave different over time.
 
-If you want to build the smallest possible WebSphere Liberty application image you can start with our `kernel` tag, add your artifacts, and run `installUtility` to grow the set of features to be fit-for-purpose. Scroll up to the `Tags` section for an example.
-
-If you want to start with one of the pre-packaged tags you do not need to run `installUtility` if the tag contains all the features you required, and you may not even need to copy a `server.xml` - unless you have updates you want to make. So one example of building an application image that runs a MicroProfile 2.0 application is:
-
-```dockerfile
-FROM %%IMAGE%%:microprofile2
-COPY --chown=1001:0  Sample1.war /config/dropins/
-```
-
-You can then build and run this image:
-
-```console
-$ docker build -t app .
-$ docker run -d -p 80:9080 -p 443:9443 app
-```
+If you want to build the smallest possible WebSphere Liberty application image you can start with our `kernel` tag, add your artifacts, and run `configure.sh` to grow the set of features to be fit-for-purpose. Please see our [GitHub page](https://github.com/WASdev/ci.docker#building-an-application-image) for more details.  
 
 ## Using volumes for configuration
 
