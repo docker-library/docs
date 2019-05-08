@@ -96,7 +96,7 @@ $ docker run -d -p 80:9080 -p 443:9443 app
 
 ## Using volumes for configuration
 
-This pattern can be useful for quick experiments / early development (i.e. `I just want to run the application as I iterate over it`), can should not be used for development scenarios that involve different teams and environments - for these cases the `Application Image` pattern described above is the way to go.
+This pattern can be useful for quick experiments / early development (i.e. `I just want to run the application as I iterate over it`), but should not be used for development scenarios that involve different teams and environments - for these cases the `Application Image` pattern described above is the way to go.
 
 When using `volumes`, an application file can be mounted in the `dropins` directory of this server and run. The following example starts a container in the background running a .WAR file from the host file system with the HTTP and HTTPS ports mapped to 80 and 443 respectively.
 
@@ -122,19 +122,11 @@ For greater flexibility over configuration, it is possible to mount an entire se
 
 The `springBoot` images introduce capabilities specific to the support of Spring Boot applications, including the `springBootUtility` used to separate Spring Boot applications into thin applications and dependency library caches. To elaborate these capabilities this section assumes the standalone Spring Boot 2.0.x application `hellospringboot.jar` exists in the `/tmp` directory.
 
-1.	A Spring Boot application JAR deploys to the `dropins/spring` directory within the default server configuration, not the `dropins` directory. Liberty allows one Spring Boot application per server configuration. The following example starts a container running a Spring Boot application.
-
-	```console
-	$ docker run -d -p 8080:9080 \
-	    -v /tmp/hellospringboot.jar:/config/dropins/spring/hellospringboot.jar \
-	    %%IMAGE%%:springBoot2
-	```
-
-	Similarly, you can create a Spring Boot application layer over this image by adding the application JAR to the `dropins/spring` directory. In this example we copied `hellospringboot.jar` from `/tmp` to the same directory containing the following Dockerfile.
+1.	A Spring Boot application JAR deploys to the `dropins/spring` directory within the default server configuration, not the `dropins` directory. Liberty allows one Spring Boot application per server configuration. You can create a Spring Boot application layer over this image by adding the application JAR to the `dropins/spring` directory. In this example we copied `hellospringboot.jar` from `/tmp` to the same directory containing the following Dockerfile.
 
 	```dockerfile
 	FROM %%IMAGE%%:springBoot2
-	COPY hellospringboot.jar /config/dropins/spring/
+	COPY --chown=1001:0 hellospringboot.jar /config/dropins/spring/
 	```
 
 	The custom image can be built and run as follows.
@@ -144,31 +136,13 @@ The `springBoot` images introduce capabilities specific to the support of Spring
 	$ docker run -d -p 8080:9080 app
 	```
 
-2.	The `springBoot` images provide the library cache directory, `lib.index.cache`, which contains an indexed library cache created by the `springBootUtility` command. Use `lib.index.cache` to provide the library cache for a thin application.
+2.	The `springBoot` images provide the library cache directory, `lib.index.cache`, which contains an indexed library cache created by the `springBootUtility` command. Use `lib.index.cache` to provide the library cache for a thin application. 
 
-	For example, run the following command to thin the `hellospringboot.jar` application.
-
-	```console
-	$ <wlp>/bin/springBootUtility thin \
-	   --sourceAppPath=/tmp/hellospringboot.jar \
-	   --targetLibCachePath=/tmp/lib.index.cache \
-	   --targetThinAppPath=/tmp/thinhellospringboot.jar
-	```
-
-	You can run the thin application by mounting both the target application JAR and library cache when starting the container.
-
-	```console
-	$ docker run -d -p 8080:9080 \
-	    -v /tmp/thinhellospringboot.jar:/config/dropins/spring/thinhellospringboot.jar \
-	    -v /tmp/lib.index.cache:/lib.index.cache \
-	    %%IMAGE%%:springBoot2
-	```
-
-	Similarly, you can use the `springBootUtility` command to create thin application and library cache layers over a `springBoot` image. The following example uses docker staging to efficiently build an image that deploys a fat Spring Boot application as two layers containing a thin application and a library cache.
+	You can use the `springBootUtility` command to create thin application and library cache layers over a `springBoot` image. The following example uses docker staging to efficiently build an image that deploys a fat Spring Boot application as two layers containing a thin application and a library cache.
 
 	```dockerfile
 	FROM %%IMAGE%%:springBoot2 as staging
-	COPY hellospringboot.jar /staging/myFatApp.jar
+	COPY --chown=1001:0 hellospringboot.jar /staging/myFatApp.jar
 	RUN springBootUtility thin \
 	   --sourceAppPath=/staging/myFatApp.jar \
 	   --targetThinAppPath=/staging/myThinApp.jar \
