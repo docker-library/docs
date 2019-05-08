@@ -126,79 +126,51 @@ There are also additional images for different JVM combinations. Currently there
 
 # Usage
 
-The images are designed to support a number of different usage patterns. The following examples assume that [DefaultServletEngine.zip](https://github.com/WASdev/sample.servlet/releases/download/V1/DefaultServletEngine.zip) has been extracted to `/tmp`.
+The images are designed to support a number of different usage patterns. The following examples are based on the Java EE8 Liberty [application deployment sample](https://developer.ibm.com/wasdev/docs/article_appdeployment/) and assume that [DefaultServletEngine.zip](https://github.com/WASdev/sample.servlet/releases/download/V1/DefaultServletEngine.zip) has been extracted to `/tmp` and the `server.xml` updated to accept HTTP connections from outside of the container by adding the following element inside the `server` stanza (if not using one of the pre-packaged `server.xml` files with our tags):
 
-1.	Each image contains a default server configuration that specifies the corresponding features and exposes ports 9080 and 9443 for HTTP and HTTPS respectively. A .WAR file can therefore be mounted in the `dropins` directory of this server and run. The following example starts a container in the background running a .WAR file from the host file system with the HTTP and HTTPS ports mapped to 80 and 443 respectively.
+```xml
+<httpEndpoint host="*" httpPort="9080" httpsPort="-1"/>
+```
 
-	```console
-	$ docker run -d -p 80:9080 -p 443:9443 \
+## Application Image
+
+It is a very strong best practice to create an extending Docker image, we called it the `application image`, that encapsulates an application and its configuration. This creates a robust, self-contained and predictable Docker image that can span new containers upon request, without relying on volumes or other external runtime artifacts that may behave different over time.
+
+If you want to build the smallest possible WebSphere Liberty application image you can start with our `kernel` tag, add your artifacts, and run `configure.sh` to grow the set of features to be fit-for-purpose. Please see our [GitHub page](https://github.com/OpenLiberty/ci.docker#building-an-application-image) for more details.
+
+## Using volumes for configuration
+
+This pattern can be useful for quick experiments / early development (i.e. `I just want to run the application as I iterate over it`), but should not be used for development scenarios that involve different teams and environments - for these cases the `Application Image` pattern described above is the way to go.
+
+When using `volumes`, an application file can be mounted in the `dropins` directory of this server and run. The following example starts a container in the background running a .WAR file from the host file system with the HTTP and HTTPS ports mapped to 80 and 443 respectively.
+
+```console
+$ docker run -d -p 80:9080 -p 443:9443 \
 	    -v /tmp/DefaultServletEngine/dropins/Sample1.war:/config/dropins/Sample1.war \
 	    open-liberty:webProfile8
-	```
+```
 
-	When the server is started, you can browse to http://localhost/Sample1/SimpleServlet on the Docker host.
+When the server is started, you can browse to http://localhost/Sample1/SimpleServlet on the Docker host.
 
-2.	For greater flexibility over configuration, it is possible to mount an entire server configuration directory from the host and then specify the server name as a parameter to the run command. Note: This particular example server configuration provides only HTTP access.
+Note: If you are using the boot2docker virtual machine on OS X or Windows, you need to get the IP of the virtual host by using the command `boot2docker ip` instead of by using localhost.
+
+For greater flexibility over configuration, it is possible to mount an entire server configuration directory from the host and then specify the server name as a parameter to the run command. Note: This particular example server configuration provides only HTTP access.
 
 	```console
 	$ docker run -d -p 80:9080 \
 	  -v /tmp/DefaultServletEngine:/config \
-	  open-liberty:webProfile8-sfj
-	```
-
-3.	You can also build an application layer on top of this image by using either the default server configuration or a new server configuration. In this example, we have copied the `Sample1.war` from `/tmp/DefaultServletEngine/dropins` to the same directory as the following Dockerfile.
-
-	```dockerfile
-	FROM open-liberty:webProfile8
-	COPY Sample1.war /config/dropins/
-	```
-
-	This can then be built and run as follows:
-
-	```console
-	$ docker build -t app .
-	$ docker run -d -p 80:9080 -p 443:9443 app
-	```
-
-4.	You can mount a data volume container that contains the application and the server configuration on to the image. This has the benefit that it has no dependency on files from the host but still allows the application container to be easily re-mounted on a newer version of the application server image. This example assumes that you have copied the `/tmp/DefaultServletEngine` directory in to the same directory as the Dockerfile.
-
-	Build and run the data volume container:
-
-	```dockerfile
-	FROM open-liberty:webProfile8
-	COPY DefaultServletEngine /config
-	```
-
-	```console
-	$ docker build -t app-image .
-	$ docker run -d -v /config \
-	    --name app app-image true
-	```
-
-	Run the Open Liberty image with the volumes from the data volume container mounted:
-
-	```console
-	$ docker run -d -p 80:9080 \
-	  --volumes-from app open-liberty:webProfile8
+	  open-liberty:webProfile8
 	```
 
 # Using `springBoot` images
 
 The `springBoot` images introduce capabilities specific to the support of Spring Boot applications, including the `springBootUtility` used to separate Spring Boot applications into thin applications and dependency library caches. To elaborate these capabilities this section assumes the standalone Spring Boot 2.0.x application `hellospringboot.jar` exists in the `/tmp` directory.
 
-1.	A Spring Boot application JAR deploys to the `dropins/spring` directory within the default server configuration, not the `dropins` directory. Liberty allows one Spring Boot application per server configuration. The following example starts a container running a Spring Boot application.
-
-	```console
-	$ docker run -d -p 8080:9080 \
-	    -v /tmp/hellospringboot.jar:/config/dropins/spring/hellospringboot.jar \
-	    open-liberty:springBoot2
-	```
-
-	Similarly, you can create a Spring Boot application layer over this image by adding the application JAR to the `dropins/spring` directory. In this example we copied `hellospringboot.jar` from `/tmp` to the same directory containing the following Dockerfile.
+1.	A Spring Boot application JAR deploys to the `dropins/spring` directory within the default server configuration, not the `dropins` directory. Liberty allows one Spring Boot application per server configuration. You can create a Spring Boot application layer over this image by adding the application JAR to the `dropins/spring` directory. In this example we copied `hellospringboot.jar` from `/tmp` to the same directory containing the following Dockerfile.
 
 	```dockerfile
 	FROM open-liberty:springBoot2
-	COPY hellospringboot.jar /config/dropins/spring/
+	COPY --chown=1001:0 hellospringboot.jar /config/dropins/spring/
 	```
 
 	The custom image can be built and run as follows.
@@ -210,29 +182,11 @@ The `springBoot` images introduce capabilities specific to the support of Spring
 
 2.	The `springBoot` images provide the library cache directory, `lib.index.cache`, which contains an indexed library cache created by the `springBootUtility` command. Use `lib.index.cache` to provide the library cache for a thin application.
 
-	For example, run the following command to thin the `hellospringboot.jar` application.
-
-	```console
-	$ <wlp>/bin/springBootUtility thin \
-	   --sourceAppPath=/tmp/hellospringboot.jar \
-	   --targetLibCachePath=/tmp/lib.index.cache \
-	   --targetThinAppPath=/tmp/thinhellospringboot.jar
-	```
-
-	You can run the thin application by mounting both the target application JAR and library cache when starting the container.
-
-	```console
-	$ docker run -d -p 8080:9080 \
-	    -v /tmp/thinhellospringboot.jar:/config/dropins/spring/thinhellospringboot.jar \
-	    -v /tmp/lib.index.cache:/lib.index.cache \
-	    open-liberty:springBoot2
-	```
-
-	Similarly, you can use the `springBootUtility` command to create thin application and library cache layers over a `springBoot` image. The following example uses docker staging to efficiently build an image that deploys a fat Spring Boot application as two layers containing a thin application and a library cache.
+	You can use the `springBootUtility` command to create thin application and library cache layers over a `springBoot` image. The following example uses docker staging to efficiently build an image that deploys a fat Spring Boot application as two layers containing a thin application and a library cache.
 
 	```dockerfile
 	FROM open-liberty:springBoot2 as staging
-	COPY hellospringboot.jar /staging/myFatApp.jar
+	COPY --chown=1001:0 hellospringboot.jar /staging/myFatApp.jar
 	RUN springBootUtility thin \
 	   --sourceAppPath=/staging/myFatApp.jar \
 	   --targetThinAppPath=/staging/myThinApp.jar \
