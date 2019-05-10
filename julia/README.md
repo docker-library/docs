@@ -18,7 +18,7 @@ WARNING:
 
 ## Simple Tags
 
--	[`1.1.0-stretch`, `1.1-stretch`, `1-stretch`, `stretch` (*1.1/stretch/Dockerfile*)](https://github.com/docker-library/julia/blob/cccb8b5148d509a74cb12b64de44ad7b20328f23/1.1/stretch/Dockerfile)
+-	[`1.1.0-stretch`, `1.1-stretch`, `1-stretch`, `stretch` (*1.1/stretch/Dockerfile*)](https://github.com/docker-library/julia/blob/6e478029a0ccb80d4c86f516fdea3f80cb15dce9/1.1/stretch/Dockerfile)
 -	[`1.1.0-windowsservercore-ltsc2016`, `1.1-windowsservercore-ltsc2016`, `1-windowsservercore-ltsc2016`, `windowsservercore-ltsc2016` (*1.1/windows/windowsservercore-ltsc2016/Dockerfile*)](https://github.com/docker-library/julia/blob/cccb8b5148d509a74cb12b64de44ad7b20328f23/1.1/windows/windowsservercore-ltsc2016/Dockerfile)
 -	[`1.1.0-windowsservercore-1803`, `1.1-windowsservercore-1803`, `1-windowsservercore-1803`, `windowsservercore-1803` (*1.1/windows/windowsservercore-1803/Dockerfile*)](https://github.com/docker-library/julia/blob/cccb8b5148d509a74cb12b64de44ad7b20328f23/1.1/windows/windowsservercore-1803/Dockerfile)
 -	[`1.0.3-stretch`, `1.0-stretch` (*1.0/stretch/Dockerfile*)](https://github.com/docker-library/julia/blob/60c9e91e86668dfd86f19034ebee211dfe3dd423/1.0/stretch/Dockerfile)
@@ -28,7 +28,7 @@ WARNING:
 ## Shared Tags
 
 -	`1.1.0`, `1.1`, `1`, `latest`:
-	-	[`1.1.0-stretch` (*1.1/stretch/Dockerfile*)](https://github.com/docker-library/julia/blob/cccb8b5148d509a74cb12b64de44ad7b20328f23/1.1/stretch/Dockerfile)
+	-	[`1.1.0-stretch` (*1.1/stretch/Dockerfile*)](https://github.com/docker-library/julia/blob/6e478029a0ccb80d4c86f516fdea3f80cb15dce9/1.1/stretch/Dockerfile)
 	-	[`1.1.0-windowsservercore-ltsc2016` (*1.1/windows/windowsservercore-ltsc2016/Dockerfile*)](https://github.com/docker-library/julia/blob/cccb8b5148d509a74cb12b64de44ad7b20328f23/1.1/windows/windowsservercore-ltsc2016/Dockerfile)
 	-	[`1.1.0-windowsservercore-1803` (*1.1/windows/windowsservercore-1803/Dockerfile*)](https://github.com/docker-library/julia/blob/cccb8b5148d509a74cb12b64de44ad7b20328f23/1.1/windows/windowsservercore-1803/Dockerfile)
 -	`1.0.3`, `1.0`:
