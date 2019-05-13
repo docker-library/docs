@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.4.14`, `3.4`, `latest` (*3.4.14/Dockerfile*)](https://github.com/31z4/zookeeper-docker/blob/7742c89bd51c569df89dbcac395c79489c044171/3.4.14/Dockerfile)
--	[`3.5.4-beta`, `3.5` (*3.5.4-beta/Dockerfile*)](https://github.com/31z4/zookeeper-docker/blob/c6ef4c1ada3c59dc3c1aaef43619b6e048d3c9e8/3.5.4-beta/Dockerfile)
+-	[`3.4.14`, `3.4`, `latest` (*3.4.14/Dockerfile*)](https://github.com/31z4/zookeeper-docker/blob/d06286660ebfe25b6842a208f3fcde363fad8e35/3.4.14/Dockerfile)
+-	[`3.5.4-beta`, `3.5` (*3.5.4-beta/Dockerfile*)](https://github.com/31z4/zookeeper-docker/blob/d06286660ebfe25b6842a208f3fcde363fad8e35/3.5.4-beta/Dockerfile)
 
 # Quick reference
 
@@ -118,7 +118,7 @@ services:
 
 [![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/65a70c8fe1ac46ba04b91d4dc3f55c80a218a029/zookeeper/stack.yml)
 
-This will start Zookeeper in [replicated mode](http://zookeeper.apache.org/doc/current/zookeeperStarted.html#sc_RunningReplicatedZooKeeper). Run `docker stack deploy -c stack.yml zookeeper` (or `docker-compose -f stack.yml up`) and wait for it to initialize completely. Ports `2181-2183` will be exposed.
+This will start Zookeeper in [replicated mode](https://zookeeper.apache.org/doc/current/zookeeperStarted.html#sc_RunningReplicatedZooKeeper). Run `docker stack deploy -c stack.yml zookeeper` (or `docker-compose -f stack.yml up`) and wait for it to initialize completely. Ports `2181-2183` will be exposed.
 
 > Please be aware that setting up multiple servers on a single machine will not create any redundancy. If something were to happen which caused the machine to die, all of the zookeeper servers would be offline. Full redundancy requires that each server have its own machine. It must be a completely separate physical server. Multiple virtual machines on the same physical host are still vulnerable to the complete failure of that host.
 
@@ -166,7 +166,7 @@ Defaults to `60`. ZooKeeper's `maxClientCnxns`
 
 ### `ZOO_STANDALONE_ENABLED`
 
-Defaults to `false`. Zookeeper's [`standaloneEnabled`](http://zookeeper.apache.org/doc/trunk/zookeeperReconfig.html#sc_reconfig_standaloneEnabled)
+Defaults to `true`. Zookeeper's [`standaloneEnabled`](https://zookeeper.apache.org/doc/r3.5.4-beta/zookeeperReconfig.html#sc_reconfig_standaloneEnabled)
 
 > Prior to 3.5.0, one could run ZooKeeper in Standalone mode or in a Distributed mode. These are separate implementation stacks, and switching between them during run time is not possible. By default (for backward compatibility) standaloneEnabled is set to true. The consequence of using this default is that if started with a single server the ensemble will not be allowed to grow, and if started with more than one server it will not be allowed to shrink to contain fewer than two participants.
 
@@ -194,7 +194,7 @@ The id must be unique within the ensemble and should have a value between 1 and 
 
 This variable allows you to specify a list of machines of the Zookeeper ensemble. Each entry has the form of `server.id=host:port:port`. Entries are separated with space. Do note that this variable will not have any effect if you start the container with a `/conf` directory that already contains the `zoo.cfg` file.
 
-In 3.5, the syntax of this has changed. Servers should be specified as such: `server.id=<address1>:<port1>:<port2>[:role];[<client port address>:]<client port>` [Zookeeper Dynamic Reconfiguration](http://zookeeper.apache.org/doc/r3.5.3-beta/zookeeperReconfig.html)
+In 3.5, the syntax of this has changed. Servers should be specified as such: `server.id=<address1>:<port1>:<port2>[:role];[<client port address>:]<client port>` [Zookeeper Dynamic Reconfiguration](https://zookeeper.apache.org/doc/r3.5.3-beta/zookeeperReconfig.html)
 
 ## Where to store data
 
@@ -210,7 +210,7 @@ By default, ZooKeeper redirects stdout/stderr outputs to the console. You can re
 $ docker run --name some-zookeeper --restart always -e ZOO_LOG4J_PROP="INFO,ROLLINGFILE" zookeeper
 ```
 
-This will write logs to `/logs/zookeeper.log`. Check [ZooKeeper Logging](http://zookeeper.apache.org/doc/current/zookeeperAdmin.html#sc_logging) for more details.
+This will write logs to `/logs/zookeeper.log`. Check [ZooKeeper Logging](https://zookeeper.apache.org/doc/current/zookeeperAdmin.html#sc_logging) for more details.
 
 This image is configured with a volume at `/logs` for your convenience.
 
