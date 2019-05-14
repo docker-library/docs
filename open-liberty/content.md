@@ -73,6 +73,10 @@ It is a very strong best practice to create an extending Docker image, we called
 
 If you want to build the smallest possible WebSphere Liberty application image you can start with our `kernel` tag, add your artifacts, and run `configure.sh` to grow the set of features to be fit-for-purpose. Please see our [GitHub page](https://github.com/OpenLiberty/ci.docker#building-an-application-image) for more details.
 
+## Enabling Enterprise functionality
+
+The Open Liberty images have a set of built-in XML snippets that enable and configure enterprise functionality such as session cache and monitoring. These are toggled by specific `ARG`s in your application image Dockerfile and configured via the `configure.sh` script. Please see the [instructions](https://github.com/openliberty/ci.docker#enterprise-functionality) on our GitHub page for more information.
+
 ## Using volumes for configuration
 
 This pattern can be useful for quick experiments / early development (i.e. `I just want to run the application as I iterate over it`), but should not be used for development scenarios that involve different teams and environments - for these cases the `Application Image` pattern described above is the way to go.
