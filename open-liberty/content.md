@@ -75,7 +75,7 @@ If you want to build the smallest possible WebSphere Liberty application image y
 
 ## Enabling Enterprise functionality
 
-The Open Liberty images have a set of built-in XML snippets that enable and configure enterprise functionality such as session cache and monitoring. These are toggled by specific `ARG`s in your application image Dockerfile and configured via the `configure.sh` script. Please the [instructions](https://github.com/openliberty/ci.docker#enterprise-functionality) on our GitHub page for more information.
+The Open Liberty images have a set of built-in XML snippets that enable and configure enterprise functionality such as session cache and monitoring. These are toggled by specific `ARG`s in your application image Dockerfile and configured via the `configure.sh` script. Please see the [instructions](https://github.com/openliberty/ci.docker#enterprise-functionality) on our GitHub page for more information.
 
 ## Using volumes for configuration
 
