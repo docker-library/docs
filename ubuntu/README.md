@@ -16,11 +16,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`18.04`, `bionic-20190424`, `bionic`, `latest` (*bionic/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/5a80061eeed1a4c395066d922bf7f1a0ea79e73c/bionic/Dockerfile)
--	[`18.10`, `cosmic-20190418`, `cosmic` (*cosmic/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/5a80061eeed1a4c395066d922bf7f1a0ea79e73c/cosmic/Dockerfile)
--	[`19.04`, `disco-20190423`, `disco`, `rolling` (*disco/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/5a80061eeed1a4c395066d922bf7f1a0ea79e73c/disco/Dockerfile)
--	[`14.04`, `trusty-20190425`, `trusty` (*trusty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/5a80061eeed1a4c395066d922bf7f1a0ea79e73c/trusty/Dockerfile)
--	[`16.04`, `xenial-20190425`, `xenial` (*xenial/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/5a80061eeed1a4c395066d922bf7f1a0ea79e73c/xenial/Dockerfile)
+-	[`18.04`, `bionic-20190515`, `bionic`, `latest` (*bionic/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/010bf9649b1d10e2c34b159a9a9b338d0fdd4939/bionic/Dockerfile)
+-	[`18.10`, `cosmic-20190515`, `cosmic` (*cosmic/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/010bf9649b1d10e2c34b159a9a9b338d0fdd4939/cosmic/Dockerfile)
+-	[`19.04`, `disco-20190515`, `disco`, `rolling` (*disco/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/010bf9649b1d10e2c34b159a9a9b338d0fdd4939/disco/Dockerfile)
+-	[`19.10`, `eoan-20190508`, `eoan`, `devel` (*eoan/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/010bf9649b1d10e2c34b159a9a9b338d0fdd4939/eoan/Dockerfile)
+-	[`14.04`, `trusty-20190515`, `trusty` (*trusty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/010bf9649b1d10e2c34b159a9a9b338d0fdd4939/trusty/Dockerfile)
+-	[`16.04`, `xenial-20190515`, `xenial` (*xenial/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/010bf9649b1d10e2c34b159a9a9b338d0fdd4939/xenial/Dockerfile)
 
 # Quick reference
 
