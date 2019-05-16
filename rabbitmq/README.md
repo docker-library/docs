@@ -16,17 +16,17 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.8.0-beta.3`, `3.8-rc` (*3.8-rc/ubuntu/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/fbc4fecb9b5139c0ae22b512d75a948bce4b93e9/3.8-rc/ubuntu/Dockerfile)
--	[`3.8.0-beta.3-management`, `3.8-rc-management` (*3.8-rc/ubuntu/management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/3a5957b93e31661739a9018bc2ae5d20f1bfae59/3.8-rc/ubuntu/management/Dockerfile)
--	[`3.8.0-beta.3-alpine`, `3.8-rc-alpine` (*3.8-rc/alpine/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/fbc4fecb9b5139c0ae22b512d75a948bce4b93e9/3.8-rc/alpine/Dockerfile)
--	[`3.8.0-beta.3-management-alpine`, `3.8-rc-management-alpine` (*3.8-rc/alpine/management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/3a5957b93e31661739a9018bc2ae5d20f1bfae59/3.8-rc/alpine/management/Dockerfile)
--	[`3.7.15-beta.1`, `3.7-rc` (*3.7-rc/ubuntu/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/56e55cad646a496e95273e8c500b24edab2ebfe0/3.7-rc/ubuntu/Dockerfile)
+-	[`3.8.0-beta.4`, `3.8-rc` (*3.8-rc/ubuntu/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/ab5b3a45d27d4341827a16ae31183d4aa89ed520/3.8-rc/ubuntu/Dockerfile)
+-	[`3.8.0-beta.4-management`, `3.8-rc-management` (*3.8-rc/ubuntu/management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/3a5957b93e31661739a9018bc2ae5d20f1bfae59/3.8-rc/ubuntu/management/Dockerfile)
+-	[`3.8.0-beta.4-alpine`, `3.8-rc-alpine` (*3.8-rc/alpine/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/ab5b3a45d27d4341827a16ae31183d4aa89ed520/3.8-rc/alpine/Dockerfile)
+-	[`3.8.0-beta.4-management-alpine`, `3.8-rc-management-alpine` (*3.8-rc/alpine/management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/3a5957b93e31661739a9018bc2ae5d20f1bfae59/3.8-rc/alpine/management/Dockerfile)
+-	[`3.7.15-beta.1`, `3.7-rc` (*3.7-rc/ubuntu/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/01e2a1a77260bc9e1c6001ba1a61323791b1dfcc/3.7-rc/ubuntu/Dockerfile)
 -	[`3.7.15-beta.1-management`, `3.7-rc-management` (*3.7-rc/ubuntu/management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/f22c0b266cfeb8cb6d776f9e6a961908c2557ad3/3.7-rc/ubuntu/management/Dockerfile)
--	[`3.7.15-beta.1-alpine`, `3.7-rc-alpine` (*3.7-rc/alpine/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/56e55cad646a496e95273e8c500b24edab2ebfe0/3.7-rc/alpine/Dockerfile)
+-	[`3.7.15-beta.1-alpine`, `3.7-rc-alpine` (*3.7-rc/alpine/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/01e2a1a77260bc9e1c6001ba1a61323791b1dfcc/3.7-rc/alpine/Dockerfile)
 -	[`3.7.15-beta.1-management-alpine`, `3.7-rc-management-alpine` (*3.7-rc/alpine/management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/da06cbdbe9e89305b2650a782af06f96004a894e/3.7-rc/alpine/management/Dockerfile)
--	[`3.7.14`, `3.7`, `3`, `latest` (*3.7/ubuntu/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/6f98f87ceb0ad2fb3105b69d7253bd1e672981fd/3.7/ubuntu/Dockerfile)
+-	[`3.7.14`, `3.7`, `3`, `latest` (*3.7/ubuntu/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/7289bc5e9d408054876a918b20e3a93e0618a45a/3.7/ubuntu/Dockerfile)
 -	[`3.7.14-management`, `3.7-management`, `3-management`, `management` (*3.7/ubuntu/management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/f22c0b266cfeb8cb6d776f9e6a961908c2557ad3/3.7/ubuntu/management/Dockerfile)
--	[`3.7.14-alpine`, `3.7-alpine`, `3-alpine`, `alpine` (*3.7/alpine/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/6f98f87ceb0ad2fb3105b69d7253bd1e672981fd/3.7/alpine/Dockerfile)
+-	[`3.7.14-alpine`, `3.7-alpine`, `3-alpine`, `alpine` (*3.7/alpine/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/7289bc5e9d408054876a918b20e3a93e0618a45a/3.7/alpine/Dockerfile)
 -	[`3.7.14-management-alpine`, `3.7-management-alpine`, `3-management-alpine`, `management-alpine` (*3.7/alpine/management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/4b2b11c59ee65c2a09616b163d4572559a86bb7b/3.7/alpine/management/Dockerfile)
 
 # Quick reference
