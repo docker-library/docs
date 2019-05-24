@@ -14,33 +14,32 @@ Eclipse OpenJ9 is a high performance, scalable, Java virtual machine (JVM) imple
 
 ### Images
 
-There are three types of Docker images here: the Java Development Kit (JDK), the Java Runtime Environment (JRE) and a small footprint version of the JDK (slim). These images can be used as the basis for custom built images for running your applications.
-
-##### Alpine Linux
-
-Consider using [Alpine Linux](http://alpinelinux.org/) if you are concerned about the size of the overall image. Alpine Linux is a stripped down version of Linux that is based on [musl libc](http://wiki.musl-libc.org/wiki/Functional_differences_from_glibc) and Busybox, resulting in a [Docker image](https://hub.docker.com/_/alpine/) size of approximately 5 MB. Due to its extremely small size and reduced number of installed packages, it has a much smaller attack surface which improves security. The OpenJDK binaries built by AdoptOpenJDK currently have a dependency on gnu glibc, the sources can be found [here](https://github.com/sgerrand/docker-glibc-builder/releases/). Installing this library adds an extra 8 MB to the image size.
+There are two types of Docker images here: the Java Development Kit (JDK) and the Java Runtime Environment (JRE). These images can be used as the basis for custom built images for running your applications.
 
 ##### Multi-Arch Image
 
 Docker Images for the following architectures are now available:
 
--	x86\_64, ppc64le, s390x
+-	HotSpot
+	-	amd64, arm32v7, arm64v8, ppc64le, s390x
+-	Eclipse OpenJ9
+	-	amd64, ppc64le, s390x
 
 ### How to use this Image
 
-To run a pre-built jar file with the latest OpenJDK 8 with HotSpot JRE image, use the following Dockerfile:
+To run a pre-built jar file with the latest OpenJDK 11 with HotSpot JRE image, use the following Dockerfile:
 
 ```dockerfile
-FROM %%IMAGE%%:hotspot-8-jre
+FROM %%IMAGE%%:11-jre-hotspot
 RUN mkdir /opt/app
 COPY japp.jar /opt/app
 CMD ["java", "-jar", "/opt/app/japp.jar"]
 ```
 
-To do the same with the latest OpenJDK 8 with Eclipse OpenJ9 JRE image, use the following Dockerfile:
+To do the same with the latest OpenJDK 11 with Eclipse OpenJ9 JRE image, use the following Dockerfile:
 
 ```dockerfile
-FROM %%IMAGE%%:openj9-8-jre
+FROM %%IMAGE%%:11-jre-openj9
 RUN mkdir /opt/app
 COPY japp.jar /opt/app
 CMD ["java", "-jar", "/opt/app/japp.jar"]
@@ -56,7 +55,7 @@ docker run -it --rm japp
 If you want to place the jar file on the host file system instead of inside the container, you can mount the host path onto the container by using the following commands:
 
 ```dockerfile
-FROM %%IMAGE%%:jre-12.33_openj9-0.13.0-alpine
+FROM %%IMAGE%%:12.0.1_12-jdk-openj9-0.14.1
 CMD ["java", "-jar", "/opt/app/japp.jar"]
 ```
 
