@@ -12,9 +12,9 @@ PHP is a server-side scripting language designed for web development, but which 
 
 ```dockerfile
 FROM %%IMAGE%%:7.2-cli
-COPY . /usr/src/myapp
 WORKDIR /usr/src/myapp
 CMD [ "php", "./your-script.php" ]
+COPY . .
 ```
 
 Then, run the commands to build and run the Docker image:
