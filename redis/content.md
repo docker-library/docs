@@ -14,6 +14,12 @@ Redis is an open-source, networked, in-memory, key-value data store with optiona
 $ docker run --name some-redis -d %%IMAGE%%
 ```
 
+Connect to it locally on your machine:
+
+```console
+$ docker run --name some-redis -p 127.0.0.1:6379:6379 -d %%IMAGE%%
+```
+
 ## start with persistent storage
 
 ```console
@@ -26,9 +32,23 @@ For more about Redis Persistence, see [http://redis.io/topics/persistence](http:
 
 ## connecting via `redis-cli`
 
+Create the network first:
+
+```console
+$ docker network create some-network
+```
+
+Start the server in the same network, see `--network` argument:
+
+```console
+$ docker run --name some-redis --network some-network -d %%IMAGE%%
+```
+
+Run the `redis-cli` in a docker container in the same network:
+
 ```console
 $ docker run -it --network some-network --rm %%IMAGE%% redis-cli -h some-redis
-```
+``
 
 ## Additionally, If you want to use your own redis.conf ...
 
