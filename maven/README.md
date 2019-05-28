@@ -16,15 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.6.1-jdk-11-slim`, `3.6.1-slim`, `3.6-jdk-11-slim`, `3.6-slim`, `3-jdk-11-slim`, `slim` (*jdk-11-slim/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/671605eb62f155b14d600b6941095a16e0b06f5e/jdk-11-slim/Dockerfile)
--	[`3.6.1-jdk-11`, `3.6.1`, `3.6-jdk-11`, `3.6`, `3-jdk-11`, `3`, `latest` (*jdk-11/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/671605eb62f155b14d600b6941095a16e0b06f5e/jdk-11/Dockerfile)
+-	[`3.6.1-jdk-11-slim`, `3.6.1-slim`, `3.6-jdk-11-slim`, `3.6-slim`, `3-jdk-11-slim`, `slim` (*jdk-11-slim/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/966c1657b1629cdb547692ac8e48b491a9961892/jdk-11-slim/Dockerfile)
+-	[`3.6.1-jdk-11`, `3.6.1`, `3.6-jdk-11`, `3.6`, `3-jdk-11`, `3`, `latest` (*jdk-11/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/966c1657b1629cdb547692ac8e48b491a9961892/jdk-11/Dockerfile)
 -	[`3.6.1-jdk-12`, `3.6-jdk-12`, `3-jdk-12` (*jdk-12/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/671605eb62f155b14d600b6941095a16e0b06f5e/jdk-12/Dockerfile)
--	[`3.6.1-jdk-13-alpine`, `3.6-jdk-13-alpine`, `3-jdk-13-alpine` (*jdk-13-alpine/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/671605eb62f155b14d600b6941095a16e0b06f5e/jdk-13-alpine/Dockerfile)
 -	[`3.6.1-jdk-13`, `3.6-jdk-13`, `3-jdk-13` (*jdk-13/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/671605eb62f155b14d600b6941095a16e0b06f5e/jdk-13/Dockerfile)
--	[`3.6.1-jdk-7-alpine`, `3.6-jdk-7-alpine`, `3-jdk-7-alpine` (*jdk-7-alpine/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/671605eb62f155b14d600b6941095a16e0b06f5e/jdk-7-alpine/Dockerfile)
--	[`3.6.1-jdk-7-slim`, `3.6-jdk-7-slim`, `3-jdk-7-slim` (*jdk-7-slim/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/671605eb62f155b14d600b6941095a16e0b06f5e/jdk-7-slim/Dockerfile)
--	[`3.6.1-jdk-7`, `3.6-jdk-7`, `3-jdk-7` (*jdk-7/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/671605eb62f155b14d600b6941095a16e0b06f5e/jdk-7/Dockerfile)
--	[`3.6.1-jdk-8-alpine`, `3.6.1-alpine`, `3.6-jdk-8-alpine`, `3.6-alpine`, `3-jdk-8-alpine`, `alpine` (*jdk-8-alpine/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/671605eb62f155b14d600b6941095a16e0b06f5e/jdk-8-alpine/Dockerfile)
 -	[`3.6.1-jdk-8-slim`, `3.6-jdk-8-slim`, `3-jdk-8-slim` (*jdk-8-slim/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/671605eb62f155b14d600b6941095a16e0b06f5e/jdk-8-slim/Dockerfile)
 -	[`3.6.1-jdk-8`, `3.6-jdk-8`, `3-jdk-8` (*jdk-8/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/671605eb62f155b14d600b6941095a16e0b06f5e/jdk-8/Dockerfile)
 -	[`3.6.1-ibmjava-8-alpine`, `3.6.1-ibmjava-alpine`, `3.6-ibmjava-8-alpine`, `3.6-ibmjava-alpine`, `3-ibmjava-8-alpine`, `ibmjava-alpine` (*ibmjava-8-alpine/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/671605eb62f155b14d600b6941095a16e0b06f5e/ibmjava-8-alpine/Dockerfile)
@@ -44,7 +39,7 @@ WARNING:
 	[the Maven Project](https://github.com/carlossg/docker-maven)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/maven/), [`arm32v5`](https://hub.docker.com/r/arm32v5/maven/), [`arm32v6`](https://hub.docker.com/r/arm32v6/maven/), [`arm32v7`](https://hub.docker.com/r/arm32v7/maven/), [`arm64v8`](https://hub.docker.com/r/arm64v8/maven/), [`i386`](https://hub.docker.com/r/i386/maven/), [`ppc64le`](https://hub.docker.com/r/ppc64le/maven/), [`s390x`](https://hub.docker.com/r/s390x/maven/)
+	[`amd64`](https://hub.docker.com/r/amd64/maven/), [`arm64v8`](https://hub.docker.com/r/arm64v8/maven/), [`i386`](https://hub.docker.com/r/i386/maven/), [`ppc64le`](https://hub.docker.com/r/ppc64le/maven/), [`s390x`](https://hub.docker.com/r/s390x/maven/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/maven/` directory](https://github.com/docker-library/repo-info/blob/master/repos/maven) ([history](https://github.com/docker-library/repo-info/commits/master/repos/maven))  

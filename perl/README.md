@@ -16,18 +16,18 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `5`, `5.28`, `5.28.2` (*5.028.002-main/Dockerfile*)](https://github.com/perl/docker-perl/blob/9c264844428eaef70ec0c8eefc213cae53fdf12f/5.028.002-main/Dockerfile)
--	[`slim`, `5-slim`, `5.28-slim`, `5.28.2-slim` (*5.028.002-slim/Dockerfile*)](https://github.com/perl/docker-perl/blob/9c264844428eaef70ec0c8eefc213cae53fdf12f/5.028.002-slim/Dockerfile)
--	[`threaded`, `5-threaded`, `5.28-threaded`, `5.28.2-threaded` (*5.028.002-main,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/9c264844428eaef70ec0c8eefc213cae53fdf12f/5.028.002-main,threaded/Dockerfile)
--	[`slim-threaded`, `5-slim-threaded`, `5.28-slim-threaded`, `5.28.2-slim-threaded` (*5.028.002-slim,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/9c264844428eaef70ec0c8eefc213cae53fdf12f/5.028.002-slim,threaded/Dockerfile)
--	[`5.26`, `5.26.3` (*5.026.003-main/Dockerfile*)](https://github.com/perl/docker-perl/blob/9c264844428eaef70ec0c8eefc213cae53fdf12f/5.026.003-main/Dockerfile)
--	[`5.26-slim`, `5.26.3-slim` (*5.026.003-slim/Dockerfile*)](https://github.com/perl/docker-perl/blob/9c264844428eaef70ec0c8eefc213cae53fdf12f/5.026.003-slim/Dockerfile)
--	[`5.26-threaded`, `5.26.3-threaded` (*5.026.003-main,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/9c264844428eaef70ec0c8eefc213cae53fdf12f/5.026.003-main,threaded/Dockerfile)
--	[`5.26-slim-threaded`, `5.26.3-slim-threaded` (*5.026.003-slim,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/9c264844428eaef70ec0c8eefc213cae53fdf12f/5.026.003-slim,threaded/Dockerfile)
--	[`5.24`, `5.24.4` (*5.024.004-main/Dockerfile*)](https://github.com/perl/docker-perl/blob/9c264844428eaef70ec0c8eefc213cae53fdf12f/5.024.004-main/Dockerfile)
--	[`5.24-slim`, `5.24.4-slim` (*5.024.004-slim/Dockerfile*)](https://github.com/perl/docker-perl/blob/9c264844428eaef70ec0c8eefc213cae53fdf12f/5.024.004-slim/Dockerfile)
--	[`5.24-threaded`, `5.24.4-threaded` (*5.024.004-main,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/9c264844428eaef70ec0c8eefc213cae53fdf12f/5.024.004-main,threaded/Dockerfile)
--	[`5.24-slim-threaded`, `5.24.4-slim-threaded` (*5.024.004-slim,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/9c264844428eaef70ec0c8eefc213cae53fdf12f/5.024.004-slim,threaded/Dockerfile)
+-	[`latest`, `5`, `5.30`, `5.30.0` (*5.030.000-main/Dockerfile*)](https://github.com/perl/docker-perl/blob/92233bc5293c2eb17f3019f329cc67fd96d92bcf/5.030.000-main/Dockerfile)
+-	[`slim`, `5-slim`, `5.30-slim`, `5.30.0-slim` (*5.030.000-slim/Dockerfile*)](https://github.com/perl/docker-perl/blob/92233bc5293c2eb17f3019f329cc67fd96d92bcf/5.030.000-slim/Dockerfile)
+-	[`threaded`, `5-threaded`, `5.30-threaded`, `5.30.0-threaded` (*5.030.000-main,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/92233bc5293c2eb17f3019f329cc67fd96d92bcf/5.030.000-main,threaded/Dockerfile)
+-	[`slim-threaded`, `5-slim-threaded`, `5.30-slim-threaded`, `5.30.0-slim-threaded` (*5.030.000-slim,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/92233bc5293c2eb17f3019f329cc67fd96d92bcf/5.030.000-slim,threaded/Dockerfile)
+-	[`5.28`, `5.28.2` (*5.028.002-main/Dockerfile*)](https://github.com/perl/docker-perl/blob/92233bc5293c2eb17f3019f329cc67fd96d92bcf/5.028.002-main/Dockerfile)
+-	[`5.28-slim`, `5.28.2-slim` (*5.028.002-slim/Dockerfile*)](https://github.com/perl/docker-perl/blob/92233bc5293c2eb17f3019f329cc67fd96d92bcf/5.028.002-slim/Dockerfile)
+-	[`5.28-threaded`, `5.28.2-threaded` (*5.028.002-main,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/92233bc5293c2eb17f3019f329cc67fd96d92bcf/5.028.002-main,threaded/Dockerfile)
+-	[`5.28-slim-threaded`, `5.28.2-slim-threaded` (*5.028.002-slim,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/92233bc5293c2eb17f3019f329cc67fd96d92bcf/5.028.002-slim,threaded/Dockerfile)
+-	[`5.26`, `5.26.3` (*5.026.003-main/Dockerfile*)](https://github.com/perl/docker-perl/blob/92233bc5293c2eb17f3019f329cc67fd96d92bcf/5.026.003-main/Dockerfile)
+-	[`5.26-slim`, `5.26.3-slim` (*5.026.003-slim/Dockerfile*)](https://github.com/perl/docker-perl/blob/92233bc5293c2eb17f3019f329cc67fd96d92bcf/5.026.003-slim/Dockerfile)
+-	[`5.26-threaded`, `5.26.3-threaded` (*5.026.003-main,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/92233bc5293c2eb17f3019f329cc67fd96d92bcf/5.026.003-main,threaded/Dockerfile)
+-	[`5.26-slim-threaded`, `5.26.3-slim-threaded` (*5.026.003-slim,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/92233bc5293c2eb17f3019f329cc67fd96d92bcf/5.026.003-slim,threaded/Dockerfile)
 
 # Quick reference
 

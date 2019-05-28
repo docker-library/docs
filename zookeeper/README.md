@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.4.14`, `3.4`, `latest` (*3.4.14/Dockerfile*)](https://github.com/31z4/zookeeper-docker/blob/d06286660ebfe25b6842a208f3fcde363fad8e35/3.4.14/Dockerfile)
--	[`3.5.4-beta`, `3.5` (*3.5.4-beta/Dockerfile*)](https://github.com/31z4/zookeeper-docker/blob/d06286660ebfe25b6842a208f3fcde363fad8e35/3.5.4-beta/Dockerfile)
+-	[`3.4.14`, `3.4` (*3.4.14/Dockerfile*)](https://github.com/31z4/zookeeper-docker/blob/01d134a4dcb1676d7efe9d0c64c5e0cfdba6fb27/3.4.14/Dockerfile)
+-	[`3.5.5`, `3.5`, `latest` (*3.5.5/Dockerfile*)](https://github.com/31z4/zookeeper-docker/blob/01d134a4dcb1676d7efe9d0c64c5e0cfdba6fb27/3.5.5/Dockerfile)
 
 # Quick reference
 
@@ -31,7 +31,7 @@ WARNING:
 	[the Docker Community](https://github.com/31z4/zookeeper-docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/zookeeper/), [`arm32v6`](https://hub.docker.com/r/arm32v6/zookeeper/), [`arm64v8`](https://hub.docker.com/r/arm64v8/zookeeper/), [`i386`](https://hub.docker.com/r/i386/zookeeper/), [`ppc64le`](https://hub.docker.com/r/ppc64le/zookeeper/), [`s390x`](https://hub.docker.com/r/s390x/zookeeper/)
+	[`amd64`](https://hub.docker.com/r/amd64/zookeeper/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/zookeeper/` directory](https://github.com/docker-library/repo-info/blob/master/repos/zookeeper) ([history](https://github.com/docker-library/repo-info/commits/master/repos/zookeeper))  
@@ -166,7 +166,7 @@ Defaults to `60`. ZooKeeper's `maxClientCnxns`
 
 ### `ZOO_STANDALONE_ENABLED`
 
-Defaults to `true`. Zookeeper's [`standaloneEnabled`](https://zookeeper.apache.org/doc/r3.5.4-beta/zookeeperReconfig.html#sc_reconfig_standaloneEnabled)
+Defaults to `true`. Zookeeper's [`standaloneEnabled`](https://zookeeper.apache.org/doc/r3.5.5/zookeeperReconfig.html#sc_reconfig_standaloneEnabled)
 
 > Prior to 3.5.0, one could run ZooKeeper in Standalone mode or in a Distributed mode. These are separate implementation stacks, and switching between them during run time is not possible. By default (for backward compatibility) standaloneEnabled is set to true. The consequence of using this default is that if started with a single server the ensemble will not be allowed to grow, and if started with more than one server it will not be allowed to shrink to contain fewer than two participants.
 
@@ -194,7 +194,7 @@ The id must be unique within the ensemble and should have a value between 1 and 
 
 This variable allows you to specify a list of machines of the Zookeeper ensemble. Each entry has the form of `server.id=host:port:port`. Entries are separated with space. Do note that this variable will not have any effect if you start the container with a `/conf` directory that already contains the `zoo.cfg` file.
 
-In 3.5, the syntax of this has changed. Servers should be specified as such: `server.id=<address1>:<port1>:<port2>[:role];[<client port address>:]<client port>` [Zookeeper Dynamic Reconfiguration](https://zookeeper.apache.org/doc/r3.5.3-beta/zookeeperReconfig.html)
+In 3.5, the syntax of this has changed. Servers should be specified as such: `server.id=<address1>:<port1>:<port2>[:role];[<client port address>:]<client port>` [Zookeeper Dynamic Reconfiguration](https://zookeeper.apache.org/doc/r3.5.5/zookeeperReconfig.html)
 
 ## Where to store data
 
