@@ -6,10 +6,13 @@
 
 # How to use this image
 
-Note that if you are mounting a volume and the uid running Docker is not `1000`, you should run as user `root` (`-u root`).
-
 ## Building a Gradle project
 
 Run this from the directory of the Gradle project you want to build.
 
-`docker run --rm -v "$PWD":/home/gradle/project -w /home/gradle/project %%IMAGE%% gradle <gradle-task>`
+`docker run --rm -u gradle -v "$PWD":/home/gradle/project -w /home/gradle/project %%IMAGE%% gradle <gradle-task>`
+
+Note the above command runs using uid/gid 1000 (user _gradle_) to avoid running as root.
+
+If you are mounting a volume and the uid/gid running Docker is not _1000_, you should run as user _root_ (`-u root`).
+_root_ is also the default, so you can also simply not specify a user.
