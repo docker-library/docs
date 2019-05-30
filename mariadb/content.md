@@ -145,7 +145,7 @@ The `-v /my/own/datadir:/var/lib/mysql` part of the command mounts the `/my/own/
 ## No connections until MySQL init completes
 
 If there is no database initialized when the container starts, then a default database will be created. While this is the expected behavior, this means that it will not accept incoming connections until such initialization completes. This may cause issues when using automation tools, such as `docker-compose`, which start several containers simultaneously.
-
+asdf
 ## Usage against an existing database
 
 If you start your `%%IMAGE%%` container instance with a data directory that already contains a database (specifically, a `mysql` subdirectory), the `$MYSQL_ROOT_PASSWORD` variable should be omitted from the run command line; it will in any case be ignored, and the pre-existing database will not be changed in any way.
