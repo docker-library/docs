@@ -162,7 +162,7 @@ If you know the permissions of your directory are already set appropriately (suc
 
 ```console
 $ mkdir data
-$ ls -lnd data
+$ ls -lnd dataasdf
 drwxr-xr-x 2 1000 1000 4096 Aug 27 15:54 data
 $ docker run -v "$PWD/data":/var/lib/mysql --user 1000:1000 --name some-%%REPO%% -e MYSQL_ROOT_PASSWORD=my-secret-pw -d %%IMAGE%%:tag
 ```
