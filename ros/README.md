@@ -40,10 +40,10 @@ WARNING:
 -	[`melodic-ros-base-stretch` (*ros/melodic/debian/stretch/ros-base/Dockerfile*)](https://github.com/osrf/docker_images/blob/a328e5aa68889ab5ae50ec87c1fd3a8b14e5d11f/ros/melodic/debian/stretch/ros-base/Dockerfile)
 -	[`melodic-robot-stretch` (*ros/melodic/debian/stretch/robot/Dockerfile*)](https://github.com/osrf/docker_images/blob/a328e5aa68889ab5ae50ec87c1fd3a8b14e5d11f/ros/melodic/debian/stretch/robot/Dockerfile)
 -	[`melodic-perception-stretch` (*ros/melodic/debian/stretch/perception/Dockerfile*)](https://github.com/osrf/docker_images/blob/a328e5aa68889ab5ae50ec87c1fd3a8b14e5d11f/ros/melodic/debian/stretch/perception/Dockerfile)
--	[`bouncy-ros-core`, `bouncy-ros-core-bionic` (*ros/bouncy/ubuntu/bionic/ros-core/Dockerfile*)](https://github.com/osrf/docker_images/blob/a328e5aa68889ab5ae50ec87c1fd3a8b14e5d11f/ros/bouncy/ubuntu/bionic/ros-core/Dockerfile)
--	[`bouncy-ros-base`, `bouncy-ros-base-bionic`, `bouncy` (*ros/bouncy/ubuntu/bionic/ros-base/Dockerfile*)](https://github.com/osrf/docker_images/blob/a328e5aa68889ab5ae50ec87c1fd3a8b14e5d11f/ros/bouncy/ubuntu/bionic/ros-base/Dockerfile)
--	[`crystal-ros-core`, `crystal-ros-core-bionic` (*ros/crystal/ubuntu/bionic/ros-core/Dockerfile*)](https://github.com/osrf/docker_images/blob/a328e5aa68889ab5ae50ec87c1fd3a8b14e5d11f/ros/crystal/ubuntu/bionic/ros-core/Dockerfile)
--	[`crystal-ros-base`, `crystal-ros-base-bionic`, `crystal` (*ros/crystal/ubuntu/bionic/ros-base/Dockerfile*)](https://github.com/osrf/docker_images/blob/a328e5aa68889ab5ae50ec87c1fd3a8b14e5d11f/ros/crystal/ubuntu/bionic/ros-base/Dockerfile)
+-	[`bouncy-ros-core`, `bouncy-ros-core-bionic` (*ros/bouncy/ubuntu/bionic/ros-core/Dockerfile*)](https://github.com/osrf/docker_images/blob/fb0fe0a628d023eec6ea1444551fa28209bd28d6/ros/bouncy/ubuntu/bionic/ros-core/Dockerfile)
+-	[`bouncy-ros-base`, `bouncy-ros-base-bionic`, `bouncy` (*ros/bouncy/ubuntu/bionic/ros-base/Dockerfile*)](https://github.com/osrf/docker_images/blob/fb0fe0a628d023eec6ea1444551fa28209bd28d6/ros/bouncy/ubuntu/bionic/ros-base/Dockerfile)
+-	[`crystal-ros-core`, `crystal-ros-core-bionic` (*ros/crystal/ubuntu/bionic/ros-core/Dockerfile*)](https://github.com/osrf/docker_images/blob/fb0fe0a628d023eec6ea1444551fa28209bd28d6/ros/crystal/ubuntu/bionic/ros-core/Dockerfile)
+-	[`crystal-ros-base`, `crystal-ros-base-bionic`, `crystal` (*ros/crystal/ubuntu/bionic/ros-base/Dockerfile*)](https://github.com/osrf/docker_images/blob/fb0fe0a628d023eec6ea1444551fa28209bd28d6/ros/crystal/ubuntu/bionic/ros-base/Dockerfile)
 
 # Quick reference
 
