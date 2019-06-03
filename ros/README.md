@@ -44,6 +44,8 @@ WARNING:
 -	[`bouncy-ros-base`, `bouncy-ros-base-bionic`, `bouncy` (*ros/bouncy/ubuntu/bionic/ros-base/Dockerfile*)](https://github.com/osrf/docker_images/blob/fb0fe0a628d023eec6ea1444551fa28209bd28d6/ros/bouncy/ubuntu/bionic/ros-base/Dockerfile)
 -	[`crystal-ros-core`, `crystal-ros-core-bionic` (*ros/crystal/ubuntu/bionic/ros-core/Dockerfile*)](https://github.com/osrf/docker_images/blob/fb0fe0a628d023eec6ea1444551fa28209bd28d6/ros/crystal/ubuntu/bionic/ros-core/Dockerfile)
 -	[`crystal-ros-base`, `crystal-ros-base-bionic`, `crystal` (*ros/crystal/ubuntu/bionic/ros-base/Dockerfile*)](https://github.com/osrf/docker_images/blob/fb0fe0a628d023eec6ea1444551fa28209bd28d6/ros/crystal/ubuntu/bionic/ros-base/Dockerfile)
+-	[`dashing-ros-core`, `dashing-ros-core-bionic` (*ros/dashing/ubuntu/bionic/ros-core/Dockerfile*)](https://github.com/osrf/docker_images/blob/b832b00758b1cde2893b80f2f769b076164d9982/ros/dashing/ubuntu/bionic/ros-core/Dockerfile)
+-	[`dashing-ros-base`, `dashing-ros-base-bionic`, `dashing` (*ros/dashing/ubuntu/bionic/ros-base/Dockerfile*)](https://github.com/osrf/docker_images/blob/b832b00758b1cde2893b80f2f769b076164d9982/ros/dashing/ubuntu/bionic/ros-base/Dockerfile)
 
 # Quick reference
 

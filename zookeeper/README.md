@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.4.14`, `3.4` (*3.4.14/Dockerfile*)](https://github.com/31z4/zookeeper-docker/blob/01d134a4dcb1676d7efe9d0c64c5e0cfdba6fb27/3.4.14/Dockerfile)
--	[`3.5.5`, `3.5`, `latest` (*3.5.5/Dockerfile*)](https://github.com/31z4/zookeeper-docker/blob/01d134a4dcb1676d7efe9d0c64c5e0cfdba6fb27/3.5.5/Dockerfile)
+-	[`3.4.14`, `3.4` (*3.4.14/Dockerfile*)](https://github.com/31z4/zookeeper-docker/blob/0ac81c1137d4714fa2d5f698b99b29aabf1fa383/3.4.14/Dockerfile)
+-	[`3.5.5`, `3.5`, `latest` (*3.5.5/Dockerfile*)](https://github.com/31z4/zookeeper-docker/blob/0ac81c1137d4714fa2d5f698b99b29aabf1fa383/3.5.5/Dockerfile)
 
 # Quick reference
 
@@ -93,7 +93,7 @@ services:
       - 2181:2181
     environment:
       ZOO_MY_ID: 1
-      ZOO_SERVERS: server.1=0.0.0.0:2888:3888 server.2=zoo2:2888:3888 server.3=zoo3:2888:3888
+      ZOO_SERVERS: server.1=0.0.0.0:2888:3888;2181 server.2=zoo2:2888:3888;2181 server.3=zoo3:2888:3888;2181
 
   zoo2:
     image: zookeeper
@@ -103,7 +103,7 @@ services:
       - 2182:2181
     environment:
       ZOO_MY_ID: 2
-      ZOO_SERVERS: server.1=zoo1:2888:3888 server.2=0.0.0.0:2888:3888 server.3=zoo3:2888:3888
+      ZOO_SERVERS: server.1=zoo1:2888:3888;2181 server.2=0.0.0.0:2888:3888;2181 server.3=zoo3:2888:3888;2181
 
   zoo3:
     image: zookeeper
@@ -113,10 +113,10 @@ services:
       - 2183:2181
     environment:
       ZOO_MY_ID: 3
-      ZOO_SERVERS: server.1=zoo1:2888:3888 server.2=zoo2:2888:3888 server.3=0.0.0.0:2888:3888
+      ZOO_SERVERS: server.1=zoo1:2888:3888;2181 server.2=zoo2:2888:3888;2181 server.3=0.0.0.0:2888:3888;2181
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/65a70c8fe1ac46ba04b91d4dc3f55c80a218a029/zookeeper/stack.yml)
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/ef162dce5998011e1753c3337dcbe61200c522d2/zookeeper/stack.yml)
 
 This will start Zookeeper in [replicated mode](https://zookeeper.apache.org/doc/current/zookeeperStarted.html#sc_RunningReplicatedZooKeeper). Run `docker stack deploy -c stack.yml zookeeper` (or `docker-compose -f stack.yml up`) and wait for it to initialize completely. Ports `2181-2183` will be exposed.
 
