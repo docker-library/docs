@@ -122,13 +122,14 @@ web:
 
 Since 1.17.0, both alpine- and debian-based images variants use the same user and group ids to drop the privileges for worker processes:
 
-```
+```console
+$ id
 uid=101(nginx) gid=101(nginx) groups=101(nginx)
 ```
 
 ## Running %%IMAGE%% as a non-root user
 
-It is possible to run the image as a less privileged arbitrary UID/GID.  This, however, requires modification of %%IMAGE%% configuration to use directories writeable by that specific UID/GID pair:
+It is possible to run the image as a less privileged arbitrary UID/GID. This, however, requires modification of %%IMAGE%% configuration to use directories writeable by that specific UID/GID pair:
 
 ```console
 $ docker run -d -v $PWD/nginx.conf:/etc/nginx/nginx.conf %%IMAGE%%
@@ -136,13 +137,13 @@ $ docker run -d -v $PWD/nginx.conf:/etc/nginx/nginx.conf %%IMAGE%%
 
 where nginx.conf in the current directory should have the following directives re-defined:
 
-```
+```nginx
 pid        /tmp/nginx.pid;
 ```
 
 And in the http context:
 
-```
+```nginx
 http {
     client_body_temp_path /tmp/client_temp;
     proxy_temp_path       /tmp/proxy_temp_path;
