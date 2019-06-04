@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.15.12`, `mainline`, `1`, `1.15`, `latest` (*mainline/stretch/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/e5123eea0d29c8d13df17d782f15679458ff899e/mainline/stretch/Dockerfile)
--	[`1.15.12-perl`, `mainline-perl`, `1-perl`, `1.15-perl`, `perl` (*mainline/stretch-perl/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/e5123eea0d29c8d13df17d782f15679458ff899e/mainline/stretch-perl/Dockerfile)
--	[`1.15.12-alpine`, `mainline-alpine`, `1-alpine`, `1.15-alpine`, `alpine` (*mainline/alpine/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/e5123eea0d29c8d13df17d782f15679458ff899e/mainline/alpine/Dockerfile)
--	[`1.15.12-alpine-perl`, `mainline-alpine-perl`, `1-alpine-perl`, `1.15-alpine-perl`, `alpine-perl` (*mainline/alpine-perl/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/e5123eea0d29c8d13df17d782f15679458ff899e/mainline/alpine-perl/Dockerfile)
+-	[`1.17.0`, `mainline`, `1`, `1.17`, `latest` (*mainline/stretch/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/b749353968a57ebd9da17e12d23f1a5fb62f9de9/mainline/stretch/Dockerfile)
+-	[`1.17.0-perl`, `mainline-perl`, `1-perl`, `1.17-perl`, `perl` (*mainline/stretch-perl/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/b749353968a57ebd9da17e12d23f1a5fb62f9de9/mainline/stretch-perl/Dockerfile)
+-	[`1.17.0-alpine`, `mainline-alpine`, `1-alpine`, `1.17-alpine`, `alpine` (*mainline/alpine/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/b749353968a57ebd9da17e12d23f1a5fb62f9de9/mainline/alpine/Dockerfile)
+-	[`1.17.0-alpine-perl`, `mainline-alpine-perl`, `1-alpine-perl`, `1.17-alpine-perl`, `alpine-perl` (*mainline/alpine-perl/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/b749353968a57ebd9da17e12d23f1a5fb62f9de9/mainline/alpine-perl/Dockerfile)
 -	[`1.16.0`, `stable`, `1.16` (*stable/stretch/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/9a052e07b2c283df9960375ee40be50c5c462a7e/stable/stretch/Dockerfile)
 -	[`1.16.0-perl`, `stable-perl`, `1.16-perl` (*stable/stretch-perl/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/9a052e07b2c283df9960375ee40be50c5c462a7e/stable/stretch-perl/Dockerfile)
 -	[`1.16.0-alpine`, `stable-alpine`, `1.16-alpine` (*stable/alpine/Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/9a052e07b2c283df9960375ee40be50c5c462a7e/stable/alpine/Dockerfile)
@@ -171,6 +171,42 @@ web:
   volumes:
     - ./nginx.conf:/etc/nginx/nginx.conf:ro
   command: [nginx-debug, '-g', 'daemon off;']
+```
+
+## User and group id
+
+Since 1.17.0, both alpine- and debian-based images variants use the same user and group ids to drop the privileges for worker processes:
+
+```console
+$ id
+uid=101(nginx) gid=101(nginx) groups=101(nginx)
+```
+
+## Running nginx as a non-root user
+
+It is possible to run the image as a less privileged arbitrary UID/GID. This, however, requires modification of nginx configuration to use directories writeable by that specific UID/GID pair:
+
+```console
+$ docker run -d -v $PWD/nginx.conf:/etc/nginx/nginx.conf nginx
+```
+
+where nginx.conf in the current directory should have the following directives re-defined:
+
+```nginx
+pid        /tmp/nginx.pid;
+```
+
+And in the http context:
+
+```nginx
+http {
+    client_body_temp_path /tmp/client_temp;
+    proxy_temp_path       /tmp/proxy_temp_path;
+    fastcgi_temp_path     /tmp/fastcgi_temp;
+    uwsgi_temp_path       /tmp/uwsgi_temp;
+    scgi_temp_path        /tmp/scgi_temp;
+...
+}
 ```
 
 ## Monitoring nginx with Amplify
