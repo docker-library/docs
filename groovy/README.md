@@ -16,18 +16,18 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.5.7-jdk8`, `2.5-jdk8`, `2.5.7-jdk`, `2.5-jdk`, `jdk8`, `jdk` (*jdk8/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/6d07d28a34de75d6d8ab8cce9b7354cad8f72c5a/jdk8/Dockerfile)
--	[`2.5.7-jre8`, `2.5-jre8`, `2.5.7-jre`, `2.5-jre`, `2.5.7`, `2.5`, `jre8`, `jre`, `latest` (*jre8/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/6d07d28a34de75d6d8ab8cce9b7354cad8f72c5a/jre8/Dockerfile)
--	[`2.5.7-jdk11`, `2.5-jdk11`, `jdk11` (*jdk11/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/6d07d28a34de75d6d8ab8cce9b7354cad8f72c5a/jdk11/Dockerfile)
--	[`2.5.7-jre11`, `2.5-jre11`, `jre11` (*jre11/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/6d07d28a34de75d6d8ab8cce9b7354cad8f72c5a/jre11/Dockerfile)
--	[`2.5.7-jdk12`, `2.5-jdk12`, `jdk12` (*jdk12/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/6d07d28a34de75d6d8ab8cce9b7354cad8f72c5a/jdk12/Dockerfile)
--	[`2.5.7-jre12`, `2.5-jre12`, `jre12` (*jre12/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/6d07d28a34de75d6d8ab8cce9b7354cad8f72c5a/jre12/Dockerfile)
--	[`3.0.0-beta-1-jdk8`, `3.0-jdk8`, `3.0.0-beta-1-jdk`, `3.0-jdk` (*jdk8/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/d6ea19d95c26d91f22947992456703a7359c1b18/jdk8/Dockerfile)
--	[`3.0.0-beta-1-jre8`, `3.0-jre8`, `3.0.0-beta-1-jre`, `3.0-jre`, `3.0.0-beta-1`, `3.0` (*jre8/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/d6ea19d95c26d91f22947992456703a7359c1b18/jre8/Dockerfile)
--	[`3.0.0-beta-1-jdk11`, `3.0-jdk11` (*jdk11/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/d6ea19d95c26d91f22947992456703a7359c1b18/jdk11/Dockerfile)
--	[`3.0.0-beta-1-jre11`, `3.0-jre11` (*jre11/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/d6ea19d95c26d91f22947992456703a7359c1b18/jre11/Dockerfile)
--	[`3.0.0-beta-1-jdk12`, `3.0-jdk12` (*jdk12/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/d6ea19d95c26d91f22947992456703a7359c1b18/jdk12/Dockerfile)
--	[`3.0.0-beta-1-jre12`, `3.0-jre12` (*jre12/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/d6ea19d95c26d91f22947992456703a7359c1b18/jre12/Dockerfile)
+-	[`2.5.7-jdk8`, `2.5-jdk8`, `2.5.7-jdk`, `2.5-jdk`, `jdk8`, `jdk` (*jdk8/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/bdb06615e9514eab52d003dfb2c8f1a9109ffc16/jdk8/Dockerfile)
+-	[`2.5.7-jre8`, `2.5-jre8`, `2.5.7-jre`, `2.5-jre`, `2.5.7`, `2.5`, `jre8`, `jre`, `latest` (*jre8/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/bdb06615e9514eab52d003dfb2c8f1a9109ffc16/jre8/Dockerfile)
+-	[`2.5.7-jdk11`, `2.5-jdk11`, `jdk11` (*jdk11/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/bdb06615e9514eab52d003dfb2c8f1a9109ffc16/jdk11/Dockerfile)
+-	[`2.5.7-jre11`, `2.5-jre11`, `jre11` (*jre11/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/bdb06615e9514eab52d003dfb2c8f1a9109ffc16/jre11/Dockerfile)
+-	[`2.5.7-jdk12`, `2.5-jdk12`, `jdk12` (*jdk12/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/bdb06615e9514eab52d003dfb2c8f1a9109ffc16/jdk12/Dockerfile)
+-	[`2.5.7-jre12`, `2.5-jre12`, `jre12` (*jre12/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/bdb06615e9514eab52d003dfb2c8f1a9109ffc16/jre12/Dockerfile)
+-	[`3.0.0-beta-1-jdk8`, `3.0-jdk8`, `3.0.0-beta-1-jdk`, `3.0-jdk` (*jdk8/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/445999bb5793fb4f6f3d4af011da9193dbb9fb37/jdk8/Dockerfile)
+-	[`3.0.0-beta-1-jre8`, `3.0-jre8`, `3.0.0-beta-1-jre`, `3.0-jre`, `3.0.0-beta-1`, `3.0` (*jre8/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/445999bb5793fb4f6f3d4af011da9193dbb9fb37/jre8/Dockerfile)
+-	[`3.0.0-beta-1-jdk11`, `3.0-jdk11` (*jdk11/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/445999bb5793fb4f6f3d4af011da9193dbb9fb37/jdk11/Dockerfile)
+-	[`3.0.0-beta-1-jre11`, `3.0-jre11` (*jre11/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/445999bb5793fb4f6f3d4af011da9193dbb9fb37/jre11/Dockerfile)
+-	[`3.0.0-beta-1-jdk12`, `3.0-jdk12` (*jdk12/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/445999bb5793fb4f6f3d4af011da9193dbb9fb37/jdk12/Dockerfile)
+-	[`3.0.0-beta-1-jre12`, `3.0-jre12` (*jre12/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/445999bb5793fb4f6f3d4af011da9193dbb9fb37/jre12/Dockerfile)
 
 # Quick reference
 
