@@ -1,1 +1,1 @@
-Zabbix appliance contains MySQL server, Zabbix server, Zabbix Java Gateway and Zabbix frontend.
+Zabbix appliance with MySQL database support and Nginx web-server.
