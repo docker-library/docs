@@ -16,12 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`10.4.5-bionic`, `10.4-bionic`, `rc-bionic`, `10.4.5`, `10.4`, `rc` (*10.4/Dockerfile*)](https://github.com/docker-library/mariadb/blob/547b040c77483aa507e8130700407c4a35a213fa/10.4/Dockerfile)
--	[`10.3.15-bionic`, `10.3-bionic`, `10-bionic`, `bionic`, `10.3.15`, `10.3`, `10`, `latest` (*10.3/Dockerfile*)](https://github.com/docker-library/mariadb/blob/c89883655154c9f44891e7bd092232db646214b3/10.3/Dockerfile)
--	[`10.2.24-bionic`, `10.2-bionic`, `10.2.24`, `10.2` (*10.2/Dockerfile*)](https://github.com/docker-library/mariadb/blob/457116ca8023b9e2081d4b903f908142e1ad2289/10.2/Dockerfile)
--	[`10.1.40-bionic`, `10.1-bionic`, `10.1.40`, `10.1` (*10.1/Dockerfile*)](https://github.com/docker-library/mariadb/blob/bd52ab1ec18174f7a356135c0bbe749062842635/10.1/Dockerfile)
--	[`10.0.38-xenial`, `10.0-xenial`, `10.0.38`, `10.0` (*10.0/Dockerfile*)](https://github.com/docker-library/mariadb/blob/93f1e9c9082364522c77b94e98299d7d398089f8/10.0/Dockerfile)
--	[`5.5.64-trusty`, `5.5-trusty`, `5-trusty`, `5.5.64`, `5.5`, `5` (*5.5/Dockerfile*)](https://github.com/docker-library/mariadb/blob/2621ad0b229384856f43ba586e5c9f81a9b9532d/5.5/Dockerfile)
+-	[`10.4.5-bionic`, `10.4-bionic`, `rc-bionic`, `10.4.5`, `10.4`, `rc` (*10.4/Dockerfile*)](https://github.com/docker-library/mariadb/blob/c969655b3c92a1ae3f066e506ab7b32ff4ba4582/10.4/Dockerfile)
+-	[`10.3.15-bionic`, `10.3-bionic`, `10-bionic`, `bionic`, `10.3.15`, `10.3`, `10`, `latest` (*10.3/Dockerfile*)](https://github.com/docker-library/mariadb/blob/c969655b3c92a1ae3f066e506ab7b32ff4ba4582/10.3/Dockerfile)
+-	[`10.2.24-bionic`, `10.2-bionic`, `10.2.24`, `10.2` (*10.2/Dockerfile*)](https://github.com/docker-library/mariadb/blob/c969655b3c92a1ae3f066e506ab7b32ff4ba4582/10.2/Dockerfile)
+-	[`10.1.40-bionic`, `10.1-bionic`, `10.1.40`, `10.1` (*10.1/Dockerfile*)](https://github.com/docker-library/mariadb/blob/c969655b3c92a1ae3f066e506ab7b32ff4ba4582/10.1/Dockerfile)
 
 # Quick reference
 
@@ -35,7 +33,7 @@ WARNING:
 	[the Docker Community](https://github.com/docker-library/mariadb)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/mariadb/), [`arm64v8`](https://hub.docker.com/r/arm64v8/mariadb/), [`i386`](https://hub.docker.com/r/i386/mariadb/), [`ppc64le`](https://hub.docker.com/r/ppc64le/mariadb/)
+	[`amd64`](https://hub.docker.com/r/amd64/mariadb/), [`arm64v8`](https://hub.docker.com/r/arm64v8/mariadb/), [`ppc64le`](https://hub.docker.com/r/ppc64le/mariadb/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/mariadb/` directory](https://github.com/docker-library/repo-info/blob/master/repos/mariadb) ([history](https://github.com/docker-library/repo-info/commits/master/repos/mariadb))  
