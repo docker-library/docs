@@ -56,7 +56,7 @@ https://wiki.alpinelinux.org/wiki/Comparison_with_other_distros
 
 ## Changes to file permission requirements
 
-Several [security concerns](https://github.com/neo4j/docker-neo4j/issues/130) have been raised about the Neo4j image changing file access and ownership.
+Some users have [raised concerns](https://github.com/neo4j/docker-neo4j/issues/130) that the Neo4j image changes file permissions on the host machine.
 
 By default, Neo4j runs as the user `neo4j` who only exists in the container, not on the host. That means that it's hard to set up mount folders on the host which this new user has write permissions for. 
 We have updated the error messaging with advice about how to fix file permission errors. We also introduced writability checks and reduced the amount of file permission changes the image will perform. This has been found to interfere with some Kubernetes setups, so is currently an opt-in feature.
