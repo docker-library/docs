@@ -1,12 +1,28 @@
 # What is Neo4j?
 
-Neo4j is a highly scalable, robust, native graph database. It is used in mission-critical apps by thousands of leading startups, enterprises, and governments around the world. You can learn more [here](http://neo4j.com/developer).
+Neo4j is the world's leading graph database, with native graph storage and processing. You can learn more [here](http://neo4j.com/developer).
 
 %%LOGO%%
 
+# Available legacy images
+
+As of 11th June 2019 all new Neo4j Docker images will be released with a base image of debian-slim instead of alpine linux.
+
+Older Neo4j images have already been released with `openjdk:8-jre-alpine` as the base image, which is no longer officially supported by `openjdk`. This means our old images can no longer be listed as "supported" on docker hub, although **they are still available for download**.
+
+In addition to the supported tags, we also have these legacy images of Neo4j available through docker hub:
+
+* `3.5.5`, `3.5.5-enterprise` and earlier patches
+* `3.4.13`, `3.4.13-enterprise` and earlier patches
+* `3.3`, `3.3-enterprise`, `3.3.9`, `3.3.9-enterprise` and earlier patches
+* `3.2`, `3.2-enterprise`, `3.2.14`, `3.2.14-enterprise` and earlier patches
+
+A complete list of all available Neo4j images can be found here: 
+https://github.com/neo4j/docker-neo4j-publish/tree/master
+
 # How to use this image
 
-## Start an instance of neo4j
+## Start an instance of Neo4j
 
 You can start a Neo4j container like this:
 
