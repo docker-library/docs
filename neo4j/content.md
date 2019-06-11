@@ -4,7 +4,7 @@ Neo4j is the world's leading graph database, with native graph storage and proce
 
 %%LOGO%%
 
-# Getting Started
+# How to use this image
 
 You can start a Neo4j container like this:
 
