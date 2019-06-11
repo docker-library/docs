@@ -1,4 +1,4 @@
-# What is Neo4j?
+# What is neo4j?
 
 Neo4j is the world's leading graph database, with native graph storage and processing. You can learn more [here](http://neo4j.com/developer).
 
