@@ -62,6 +62,7 @@ By default, Neo4j runs as the user `neo4j` who only exists in the container, not
 We have updated the error messaging with advice about how to fix file permission errors. We also introduced writability checks and reduced the amount of file permission changes the image will perform. This has been found to interfere with some Kubernetes setups, so is currently an opt-in feature.
 
 To enforce stricter file permissions checking you can pass this environment variable to the container:
-    `--env SECURE_FILE_PERMISSIONS=yes`
+
+`--env SECURE_FILE_PERMISSIONS=yes`
 
 
