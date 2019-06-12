@@ -30,7 +30,7 @@ This template defines the "Supported tags and Dockerfile links" portion of an im
 	{{- $dir := .ArchDirectory $arch -}}
 	{{- $dockerfile := .ArchFile $arch -}}
 	{{- $dockerfilePath := eq $dir "." | ternary $dockerfile (join "/" $dir $dockerfile) -}}
-	` {{- $e.Tags | join "`, `" -}} ` (* {{- $dockerfilePath -}} *)
+	` {{- $e.Tags | join "`, `" -}} `
 	{{- $gitCommit := $e.ArchGitCommit $arch -}}
 	{{- if $isGitHub -}} ]( {{- $repoUrlBase -}} /blob/ {{- $gitCommit -}} / {{- $dockerfilePath -}} ) {{- end -}}
 	{{- /* TODO decide what to do (if anything) about non-GitHub repos with respect to URL */ -}}
@@ -63,7 +63,7 @@ This template defines the "Supported tags and Dockerfile links" portion of an im
 				{{- $dir := .ArchDirectory $arch -}}
 				{{- $dockerfile := .ArchFile $arch -}}
 				{{- $dockerfilePath := eq $dir "." | ternary $dockerfile (join "/" $dir $dockerfile) -}}
-				` {{- $e.Tags | first -}} ` (* {{- $dockerfilePath -}} *)
+				` {{- $e.Tags | first -}} `
 				{{- $gitCommit := $e.ArchGitCommit $arch -}}
 				{{- if $isGitHub -}} ]( {{- $repoUrlBase -}} /blob/ {{- $gitCommit -}} / {{- $dockerfilePath -}} ) {{- end -}}
 				{{- /* TODO decide what to do (if anything) about non-GitHub repos with respect to URL */ -}}
