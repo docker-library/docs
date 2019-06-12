@@ -18,17 +18,17 @@ For more information and related downloads for Zabbix components, please visit [
 
 Start a Zabbix web-interface container as follows:
 
-    docker run --name some-%%REPO%% -e DB_SERVER_HOST="some-mysql-server" -e MYSQL_USER="some-user" -e MYSQL_PASSWORD="some-password" -e ZBX_SERVER_HOST="some-zabbix-server" -e PHP_TZ="some-timezone" -d %%IMAGE%%:tag
+	docker run --name some-%%REPO%% -e DB_SERVER_HOST="some-mysql-server" -e MYSQL_USER="some-user" -e MYSQL_PASSWORD="some-password" -e ZBX_SERVER_HOST="some-zabbix-server" -e PHP_TZ="some-timezone" -d %%IMAGE%%:tag
 
 Where `some-%%REPO%%` is the name you want to assign to your container, `some-mysql-server` is IP or DNS name of MySQL server, `some-user` is user to connect to Zabbix database on MySQL server, `some-password` is the password to connect to MySQL server, `some-zabbix-server` is IP or DNS name of Zabbix server or proxy, `some-timezone` is PHP like timezone name and `tag` is the tag specifying the version you want. See the list below for relevant tags.
 
 ## Linking the container to Zabbix server
 
-    docker run --name some-%%REPO%% --link some-zabbix-server:zabbix-server -e DB_SERVER_HOST="some-mysql-server" -e MYSQL_USER="some-user" -e MYSQL_PASSWORD="some-password" -e ZBX_SERVER_HOST="some-zabbix-server" -e PHP_TZ="some-timezone" -d %%IMAGE%%:tag
+	docker run --name some-%%REPO%% --link some-zabbix-server:zabbix-server -e DB_SERVER_HOST="some-mysql-server" -e MYSQL_USER="some-user" -e MYSQL_PASSWORD="some-password" -e ZBX_SERVER_HOST="some-zabbix-server" -e PHP_TZ="some-timezone" -d %%IMAGE%%:tag
 
 ## Linking the container to MySQL database
 
-    docker run --name some-%%REPO%% --link some-mysql-server:mysql -e DB_SERVER_HOST="some-mysql-server" -e MYSQL_USER="some-user" -e MYSQL_PASSWORD="some-password" -e ZBX_SERVER_HOST="some-zabbix-server" -e PHP_TZ="some-timezone" -d %%IMAGE%%:tag
+	docker run --name some-%%REPO%% --link some-mysql-server:mysql -e DB_SERVER_HOST="some-mysql-server" -e MYSQL_USER="some-user" -e MYSQL_PASSWORD="some-password" -e ZBX_SERVER_HOST="some-zabbix-server" -e PHP_TZ="some-timezone" -d %%IMAGE%%:tag
 
 ## Container shell access and viewing Zabbix web interface logs
 
@@ -90,23 +90,23 @@ The variable is visible Zabbix installation name in right top corner of the web 
 
 ### `ZBX_MAXEXECUTIONTIME`
 
-The varable is PHP ``max_execution_time`` option. By default, value is `300`.
+The varable is PHP `max_execution_time` option. By default, value is `300`.
 
 ### `ZBX_MEMORYLIMIT`
 
-The varable is PHP ``memory_limit`` option. By default, value is `128M`.
+The varable is PHP `memory_limit` option. By default, value is `128M`.
 
 ### `ZBX_POSTMAXSIZE`
 
-The varable is PHP ``post_max_size`` option. By default, value is `16M`.
+The varable is PHP `post_max_size` option. By default, value is `16M`.
 
 ### `ZBX_UPLOADMAXFILESIZE`
 
-The varable is PHP ``upload_max_filesize`` option. By default, value is `2M`.
+The varable is PHP `upload_max_filesize` option. By default, value is `2M`.
 
 ### `ZBX_MAXINPUTTIME`
 
-The varable is PHP ``max_input_time`` option. By default, value is `300`.
+The varable is PHP `max_input_time` option. By default, value is `300`.
 
 ### `ZBX_SESSION_NAME`
 
@@ -114,9 +114,9 @@ The variable is Zabbix frontend [definition](https://www.zabbix.com/documentatio
 
 ## Allowed volumes for the Zabbix web interface container
 
-### ``/etc/ssl/apache2``
+### `/etc/ssl/apache2`
 
-The volume allows to enable HTTPS for the Zabbix web interface. The volume must contains two files ``ssl.crt`` and ``ssl.key`` prepared for Apache2 SSL connections.
+The volume allows to enable HTTPS for the Zabbix web interface. The volume must contains two files `ssl.crt` and `ssl.key` prepared for Apache2 SSL connections.
 
 Please follow official Apache2 [documentation](https://httpd.apache.org/docs/2.4/ssl/ssl_howto.html) to get more details about how to create certificate files.
 

@@ -18,13 +18,13 @@ For more information and related downloads for Zabbix components, please visit [
 
 Start a Zabbix Java Gateway container as follows:
 
-    docker run --name some-%%REPO%% -d %%IMAGE%%:tag
+	docker run --name some-%%REPO%% -d %%IMAGE%%:tag
 
 Where `some-%%REPO%%` is the name you want to assign to your container and `tag` is the tag specifying the version you want. See the list below for relevant tags.
 
 ## Linking the container to Zabbix server or Zabbix proxy
 
-    docker run --name some-%%REPO%% -d %%IMAGE%%:tag
+	docker run --name some-%%REPO%% -d %%IMAGE%%:tag
 
 ## Container shell access and viewing Zabbix Java Gateway logs
 
@@ -54,7 +54,7 @@ This variable is used to specify timeout for outgoing connections. By default, v
 
 ### `ZBX_DEBUGLEVEL`
 
-This variable is used to specify log level. By default, value is `info`. The variable allows next values: ``trace``, ``debug``, ``info``, ``want``, ``error``, ``all``, ``off``
+This variable is used to specify log level. By default, value is `info`. The variable allows next values: `trace`, `debug`, `info`, `want`, `error`, `all`, `off`
 
 # The image variants
 

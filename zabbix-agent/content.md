@@ -53,6 +53,7 @@ By default, Docker containers are "unprivileged" and do not have access to the m
 ```console
 $ docker run --name some-%%REPO%% --privileged -d %%IMAGE%%:tag
 ```
+
 ```console
 $ docker run --name some-%%REPO%% -v /dev/sdc:/dev/sdc -d %%IMAGE%%:tag
 ```
@@ -63,15 +64,15 @@ When you start the `%%REPO%%` image, you can adjust the configuration of the Zab
 
 ### `ZBX_HOSTNAME`
 
-This variable is unique, case sensitive hostname. By default, value is `hostname` of the container. It is ``Hostname`` parameter in ``zabbix_agentd.conf``.
+This variable is unique, case sensitive hostname. By default, value is `hostname` of the container. It is `Hostname` parameter in `zabbix_agentd.conf`.
 
 ### `ZBX_SERVER_HOST`
 
-This variable is IP or DNS name of Zabbix server or Zabbix proxy. By default, value is `zabbix-server`. It is ``Server`` parameter in ``zabbix_agentd.conf``. It is allowed to specify Zabbix server or Zabbix proxy port number using ``ZBX_SERVER_PORT`` variable. It make sense in case of non-default port for active checks.
+This variable is IP or DNS name of Zabbix server or Zabbix proxy. By default, value is `zabbix-server`. It is `Server` parameter in `zabbix_agentd.conf`. It is allowed to specify Zabbix server or Zabbix proxy port number using `ZBX_SERVER_PORT` variable. It make sense in case of non-default port for active checks.
 
 ### `ZBX_PASSIVE_ALLOW`
 
-This variable is boolean (``true`` or ``false``) and enables or disables feature of passive checks. By default, value is `true`.
+This variable is boolean (`true` or `false`) and enables or disables feature of passive checks. By default, value is `true`.
 
 ### `ZBX_PASSIVESERVERS`
 
@@ -79,79 +80,78 @@ The variable is comma separated list of allowed Zabbix server or proxy hosts for
 
 ### `ZBX_ACTIVE_ALLOW`
 
-This variable is boolean (``true`` or ``false``) and enables or disables feature of active checks. By default, value is `true`.
+This variable is boolean (`true` or `false`) and enables or disables feature of active checks. By default, value is `true`.
 
 ### `ZBX_ACTIVESERVERS`
 
-The variable is comma separated list of allowed Zabbix server or proxy hosts for connections to Zabbix agent container. You may specify port of Zabbix server or Zabbix proxy in such syntax: ``zabbix-server:10061,zabbix-proxy:10072``.
+The variable is comma separated list of allowed Zabbix server or proxy hosts for connections to Zabbix agent container. You may specify port of Zabbix server or Zabbix proxy in such syntax: `zabbix-server:10061,zabbix-proxy:10072`.
 
 ### `ZBX_LOADMODULE`
 
-The variable is list of comma separated loadable Zabbix modules. It works with  volume ``/var/lib/zabbix/modules``. The syntax of the variable is ``dummy1.so,dummy2.so``.
+The variable is list of comma separated loadable Zabbix modules. It works with volume `/var/lib/zabbix/modules`. The syntax of the variable is `dummy1.so,dummy2.so`.
 
 ### `ZBX_DEBUGLEVEL`
 
-The variable is used to specify debug level. By default, value is ``3``. It is ``DebugLevel`` parameter in ``zabbix_agentd.conf``. Allowed values are listed below:
-- ``0`` - basic information about starting and stopping of Zabbix processes;
-- ``1`` - critical information
-- ``2`` - error information
-- ``3`` - warnings
-- ``4`` -  for debugging (produces lots of information)
-- ``5`` - extended debugging (produces even more information)
+The variable is used to specify debug level. By default, value is `3`. It is `DebugLevel` parameter in `zabbix_agentd.conf`. Allowed values are listed below:
+
+-	`0` - basic information about starting and stopping of Zabbix processes;
+-	`1` - critical information
+-	`2` - error information
+-	`3` - warnings
+-	`4` - for debugging (produces lots of information)
+-	`5` - extended debugging (produces even more information)
 
 ### `ZBX_TIMEOUT`
 
-The variable is used to specify timeout for processing checks. By default, value is ``3``.
+The variable is used to specify timeout for processing checks. By default, value is `3`.
 
 ### Other variables
 
 Additionally the image allows to specify many other environment variables listed below:
 
-```
-ZBX_SOURCEIP=
-ZBX_ENABLEREMOTECOMMANDS=0
-ZBX_LOGREMOTECOMMANDS=0
-ZBX_STARTAGENTS=3
-ZBX_HOSTNAMEITEM=system.hostname
-ZBX_METADATA=
-ZBX_METADATAITEM=
-ZBX_REFRESHACTIVECHECKS=120
-ZBX_BUFFERSEND=5
-ZBX_BUFFERSIZE=100
-ZBX_MAXLINESPERSECOND=20
-ZBX_LISTENIP=
-ZBX_UNSAFEUSERPARAMETERS=0
-ZBX_TLSCONNECT=unencrypted
-ZBX_TLSACCEPT=unencrypted
-ZBX_TLSCAFILE=
-ZBX_TLSCRLFILE=
-ZBX_TLSSERVERCERTISSUER=
-ZBX_TLSSERVERCERTSUBJECT=
-ZBX_TLSCERTFILE=
-ZBX_TLSKEYFILE=
-ZBX_TLSPSKIDENTITY=
-ZBX_TLSPSKFILE=
-```
+	ZBX_SOURCEIP=
+	ZBX_ENABLEREMOTECOMMANDS=0
+	ZBX_LOGREMOTECOMMANDS=0
+	ZBX_STARTAGENTS=3
+	ZBX_HOSTNAMEITEM=system.hostname
+	ZBX_METADATA=
+	ZBX_METADATAITEM=
+	ZBX_REFRESHACTIVECHECKS=120
+	ZBX_BUFFERSEND=5
+	ZBX_BUFFERSIZE=100
+	ZBX_MAXLINESPERSECOND=20
+	ZBX_LISTENIP=
+	ZBX_UNSAFEUSERPARAMETERS=0
+	ZBX_TLSCONNECT=unencrypted
+	ZBX_TLSACCEPT=unencrypted
+	ZBX_TLSCAFILE=
+	ZBX_TLSCRLFILE=
+	ZBX_TLSSERVERCERTISSUER=
+	ZBX_TLSSERVERCERTSUBJECT=
+	ZBX_TLSCERTFILE=
+	ZBX_TLSKEYFILE=
+	ZBX_TLSPSKIDENTITY=
+	ZBX_TLSPSKFILE=
 
 Default values of these variables are specified after equal sign.
 
-The allowed variables are identical of parameters in official ``zabbix_agentd.conf`` configuration file. For example, ``ZBX_REFRESHACTIVECHECKS`` = ``RefreshActiveChecks``.
+The allowed variables are identical of parameters in official `zabbix_agentd.conf` configuration file. For example, `ZBX_REFRESHACTIVECHECKS` = `RefreshActiveChecks`.
 
-Please use official documentation for [``zabbix_agentd.conf``](https://www.zabbix.com/documentation/current/manual/appendix/config/zabbix_agentd) to get more information about the variables.
+Please use official documentation for [`zabbix_agentd.conf`](https://www.zabbix.com/documentation/current/manual/appendix/config/zabbix_agentd) to get more information about the variables.
 
 ## Allowed volumes for the Zabbix agent container
 
-### ``/etc/zabbix/zabbix_agentd.d``
+### `/etc/zabbix/zabbix_agentd.d`
 
-The volume allows include ``*.conf`` files and extend Zabbix agent using ``UserParameter`` feature.
+The volume allows include `*.conf` files and extend Zabbix agent using `UserParameter` feature.
 
-### ``/var/lib/zabbix/modules``
+### `/var/lib/zabbix/modules`
 
-The volume allows load additional modules and extend Zabbix agent using ``LoadModule`` feature.
+The volume allows load additional modules and extend Zabbix agent using `LoadModule` feature.
 
-### ``/var/lib/zabbix/enc``
+### `/var/lib/zabbix/enc`
 
-The volume is used to store TLS related files. These file names are specified using ``ZBX_TLSCAFILE``, ``ZBX_TLSCRLFILE``, ``ZBX_TLSKEY_FILE`` and ``ZBX_TLSPSKFILE`` variables.
+The volume is used to store TLS related files. These file names are specified using `ZBX_TLSCAFILE`, `ZBX_TLSCRLFILE`, `ZBX_TLSKEY_FILE` and `ZBX_TLSPSKFILE` variables.
 
 # The image variants
 
@@ -189,7 +189,7 @@ If you have any problems with or questions about this image, please contact us t
 
 ### Known issues
 
-Currently it is not allowed to specify ``ZBX_ALIAS`` environment variable. Please use ``/etc/zabbix/zabbix_agent.d`` volume with additional configuration files with ``Alias`` options.
+Currently it is not allowed to specify `ZBX_ALIAS` environment variable. Please use `/etc/zabbix/zabbix_agent.d` volume with additional configuration files with `Alias` options.
 
 ## Contributing
 

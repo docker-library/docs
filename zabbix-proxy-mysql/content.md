@@ -18,7 +18,7 @@ For more information and related downloads for Zabbix components, please visit [
 
 Start a Zabbix proxy container as follows:
 
-    docker run --name some-%%REPO%% -e DB_SERVER_HOST="some-mysql-server" -e MYSQL_USER="some-user" -e MYSQL_PASSWORD="some-password" -e ZBX_HOSTNAME=some-hostname -e ZBX_SERVER_HOST=some-zabbix-server -d %%IMAGE%%:tag
+	docker run --name some-%%REPO%% -e DB_SERVER_HOST="some-mysql-server" -e MYSQL_USER="some-user" -e MYSQL_PASSWORD="some-password" -e ZBX_HOSTNAME=some-hostname -e ZBX_SERVER_HOST=some-zabbix-server -d %%IMAGE%%:tag
 
 Where `some-%%REPO%%` is the name you want to assign to your container, `some-mysql-server` is IP or DNS name of MySQL server, `some-user` is user to connect to Zabbix database on MySQL server, `some-password` is the password to connect to MySQL server, `some-hostname` is the hostname, it is Hostname parameter in Zabbix proxy configuration file, `some-zabbix-server` is IP or DNS name of Zabbix server and `tag` is the tag specifying the version you want. See the list below for relevant tags.
 
@@ -62,11 +62,11 @@ The variable allows to switch Zabbix proxy mode. Bu default, value is `0` - acti
 
 ### `ZBX_HOSTNAME`
 
-This variable is unique, case sensitive hostname. By default, value is `zabbix-proxy-mysql` of the container. It is ``Hostname`` parameter in ``zabbix_proxy.conf``.
+This variable is unique, case sensitive hostname. By default, value is `zabbix-proxy-mysql` of the container. It is `Hostname` parameter in `zabbix_proxy.conf`.
 
 ### `ZBX_SERVER_HOST`
 
-This variable is IP or DNS name of Zabbix server or Zabbix proxy. By default, value is `zabbix-server`. It is ``Server`` parameter in ``zabbix_proxy.conf``. It is allowed to specify Zabbix server or Zabbix proxy port number using ``ZBX_SERVER_PORT`` variable. It make sense in case of non-default port for active checks.
+This variable is IP or DNS name of Zabbix server or Zabbix proxy. By default, value is `zabbix-server`. It is `Server` parameter in `zabbix_proxy.conf`. It is allowed to specify Zabbix server or Zabbix proxy port number using `ZBX_SERVER_PORT` variable. It make sense in case of non-default port for active checks.
 
 ### `ZBX_SERVER_PORT`
 
@@ -77,7 +77,7 @@ This variable is port Zabbix server listening on. By default, value is `10051`.
 This variable is IP or DNS name of MySQL server. By default, value is 'mysql-server'
 
 ### `DB_SERVER_PORT`
-    
+
 This variable is port of MySQL server. By default, value is '3306'.
 
 ### `MYSQL_USER`, `MYSQL_PASSWORD`
@@ -90,21 +90,22 @@ The variable is Zabbix database name. By default, value is `zabbix_proxy`.
 
 ### `ZBX_LOADMODULE`
 
-The variable is list of comma separated loadable Zabbix modules. It works with  volume ``/var/lib/zabbix/modules``. The syntax of the variable is ``dummy1.so,dummy2.so``.
+The variable is list of comma separated loadable Zabbix modules. It works with volume `/var/lib/zabbix/modules`. The syntax of the variable is `dummy1.so,dummy2.so`.
 
-### ``ZBX_DEBUGLEVEL``
+### `ZBX_DEBUGLEVEL`
 
-The variable is used to specify debug level. By default, value is ``3``. It is ``DebugLevel`` parameter in ``zabbix_server.conf``. Allowed values are listed below:
-- ``0`` - basic information about starting and stopping of Zabbix processes;
-- ``1`` - critical information
-- ``2`` - error information
-- ``3`` - warnings
-- ``4`` - for debugging (produces lots of information)
-- ``5`` - extended debugging (produces even more information)
+The variable is used to specify debug level. By default, value is `3`. It is `DebugLevel` parameter in `zabbix_server.conf`. Allowed values are listed below:
+
+-	`0` - basic information about starting and stopping of Zabbix processes;
+-	`1` - critical information
+-	`2` - error information
+-	`3` - warnings
+-	`4` - for debugging (produces lots of information)
+-	`5` - extended debugging (produces even more information)
 
 ### `ZBX_TIMEOUT`
 
-The variable is used to specify timeout for processing checks. By default, value is ``4``.
+The variable is used to specify timeout for processing checks. By default, value is `4`.
 
 ### `ZBX_JAVAGATEWAY_ENABLE`
 
@@ -114,97 +115,94 @@ The variable enable communication with Zabbix Java Gateway to collect Java relat
 
 Additionally the image allows to specify many other environment variables listed below:
 
-```
-ZBX_HOSTNAMEITEM=system.hostname
-ZBX_SOURCEIP=
-ZBX_PROXYLOCALBUFFER=0
-ZBX_PROXYOFFLINEBUFFER=1
-ZBX_PROXYHEARTBEATFREQUENCY=60
-ZBX_CONFIGFREQUENCY=3600
-ZBX_DATASENDERFREQUENCY=1
-ZBX_STARTPOLLERS=5
-ZBX_IPMIPOLLERS=0
-ZBX_STARTPOLLERSUNREACHABLE=1
-ZBX_STARTTRAPPERS=5
-ZBX_STARTPINGERS=1
-ZBX_STARTDISCOVERERS=1
-ZBX_STARTHTTPPOLLERS=1
-ZBX_JAVAGATEWAY=zabbix-java-gateway
-ZBX_JAVAGATEWAYPORT=10052
-ZBX_STARTJAVAPOLLERS=0
-ZBX_STARTVMWARECOLLECTORS=0
-ZBX_VMWAREFREQUENCY=60
-ZBX_VMWAREPERFFREQUENCY=60
-ZBX_VMWARECACHESIZE=8M
-ZBX_VMWARETIMEOUT=10
-ZBX_ENABLE_SNMP_TRAPS=false
-ZBX_LISTENIP=
-ZBX_HOUSEKEEPINGFREQUENCY=1
-ZBX_CACHESIZE=8M
-ZBX_STARTDBSYNCERS=4
-ZBX_HISTORYCACHESIZE=16M
-ZBX_HISTORYINDEXCACHESIZE=4M
-ZBX_TRAPPERIMEOUT=300
-ZBX_UNREACHABLEPERIOD=45
-ZBX_UNAVAILABLEDELAY=60
-ZBX_UNREACHABLEDELAY=15
-ZBX_LOGSLOWQUERIES=3000
-ZBX_TLSCONNECT=unencrypted
-ZBX_TLSACCEPT=unencrypted
-ZBX_TLSCAFILE=
-ZBX_TLSCRLFILE=
-ZBX_TLSSERVERCERTISSUER=
-ZBX_TLSSERVERCERTSUBJECT=
-ZBX_TLSCERTFILE=
-ZBX_TLSKEYFILE=
-ZBX_TLSPSKIDENTITY=
-ZBX_TLSPSKFILE=
-```
+	ZBX_HOSTNAMEITEM=system.hostname
+	ZBX_SOURCEIP=
+	ZBX_PROXYLOCALBUFFER=0
+	ZBX_PROXYOFFLINEBUFFER=1
+	ZBX_PROXYHEARTBEATFREQUENCY=60
+	ZBX_CONFIGFREQUENCY=3600
+	ZBX_DATASENDERFREQUENCY=1
+	ZBX_STARTPOLLERS=5
+	ZBX_IPMIPOLLERS=0
+	ZBX_STARTPOLLERSUNREACHABLE=1
+	ZBX_STARTTRAPPERS=5
+	ZBX_STARTPINGERS=1
+	ZBX_STARTDISCOVERERS=1
+	ZBX_STARTHTTPPOLLERS=1
+	ZBX_JAVAGATEWAY=zabbix-java-gateway
+	ZBX_JAVAGATEWAYPORT=10052
+	ZBX_STARTJAVAPOLLERS=0
+	ZBX_STARTVMWARECOLLECTORS=0
+	ZBX_VMWAREFREQUENCY=60
+	ZBX_VMWAREPERFFREQUENCY=60
+	ZBX_VMWARECACHESIZE=8M
+	ZBX_VMWARETIMEOUT=10
+	ZBX_ENABLE_SNMP_TRAPS=false
+	ZBX_LISTENIP=
+	ZBX_HOUSEKEEPINGFREQUENCY=1
+	ZBX_CACHESIZE=8M
+	ZBX_STARTDBSYNCERS=4
+	ZBX_HISTORYCACHESIZE=16M
+	ZBX_HISTORYINDEXCACHESIZE=4M
+	ZBX_TRAPPERIMEOUT=300
+	ZBX_UNREACHABLEPERIOD=45
+	ZBX_UNAVAILABLEDELAY=60
+	ZBX_UNREACHABLEDELAY=15
+	ZBX_LOGSLOWQUERIES=3000
+	ZBX_TLSCONNECT=unencrypted
+	ZBX_TLSACCEPT=unencrypted
+	ZBX_TLSCAFILE=
+	ZBX_TLSCRLFILE=
+	ZBX_TLSSERVERCERTISSUER=
+	ZBX_TLSSERVERCERTSUBJECT=
+	ZBX_TLSCERTFILE=
+	ZBX_TLSKEYFILE=
+	ZBX_TLSPSKIDENTITY=
+	ZBX_TLSPSKFILE=
 
 Default values of these variables are specified after equal sign.
 
-The allowed variables are identical of parameters in official ``zabbix_proxy.conf``. For example, ``ZBX_LOGSLOWQUERIES`` = ``LogSlowQueries``.
+The allowed variables are identical of parameters in official `zabbix_proxy.conf`. For example, `ZBX_LOGSLOWQUERIES` = `LogSlowQueries`.
 
-Please use official documentation for [``zabbix_proxy.conf``](https://www.zabbix.com/documentation/current/manual/appendix/config/zabbix_proxy) to get more information about the variables.
+Please use official documentation for [`zabbix_proxy.conf`](https://www.zabbix.com/documentation/current/manual/appendix/config/zabbix_proxy) to get more information about the variables.
 
 ## Allowed volumes for the Zabbix proxy container
 
-### ``/usr/lib/zabbix/externalscripts``
+### `/usr/lib/zabbix/externalscripts`
 
-The volume is used by External checks (type of items). It is `ExternalScripts` parameter in ``zabbix_proxy.conf``.
+The volume is used by External checks (type of items). It is `ExternalScripts` parameter in `zabbix_proxy.conf`.
 
-### ``/var/lib/zabbix/modules``
+### `/var/lib/zabbix/modules`
 
-The volume allows load additional modules and extend Zabbix proxy using ``LoadModule`` feature.
+The volume allows load additional modules and extend Zabbix proxy using `LoadModule` feature.
 
-### ``/var/lib/zabbix/enc``
+### `/var/lib/zabbix/enc`
 
-The volume is used to store TLS related files. These file names are specified using ``ZBX_TLSCAFILE``, ``ZBX_TLSCRLFILE``, ``ZBX_TLSKEY_FILE`` and ``ZBX_TLSPSKFILE`` variables.
+The volume is used to store TLS related files. These file names are specified using `ZBX_TLSCAFILE`, `ZBX_TLSCRLFILE`, `ZBX_TLSKEY_FILE` and `ZBX_TLSPSKFILE` variables.
 
-### ``/var/lib/zabbix/ssh_keys``
+### `/var/lib/zabbix/ssh_keys`
 
-The volume is used as location of public and private keys for SSH checks and actions. It is `SSHKeyLocation` parameter in ``zabbix_proxy.conf``.
+The volume is used as location of public and private keys for SSH checks and actions. It is `SSHKeyLocation` parameter in `zabbix_proxy.conf`.
 
-### ``/var/lib/zabbix/ssl/certs``
+### `/var/lib/zabbix/ssl/certs`
 
-The volume is used as location of of SSL client certificate files for client authentication. It is `SSLCertLocation` parameter in ``zabbix_proxy.conf``.
+The volume is used as location of of SSL client certificate files for client authentication. It is `SSLCertLocation` parameter in `zabbix_proxy.conf`.
 
-### ``/var/lib/zabbix/ssl/keys``
+### `/var/lib/zabbix/ssl/keys`
 
-The volume is used as location of SSL private key files for client authentication. It is `SSLKeyLocation` parameter in ``zabbix_proxy.conf``.
+The volume is used as location of SSL private key files for client authentication. It is `SSLKeyLocation` parameter in `zabbix_proxy.conf`.
 
-### ``/var/lib/zabbix/ssl/ssl_ca``
+### `/var/lib/zabbix/ssl/ssl_ca`
 
-The volume is used as location of certificate authority (CA) files for SSL server certificate verification. It is `SSLCALocation` parameter in ``zabbix_proxy.conf``.
+The volume is used as location of certificate authority (CA) files for SSL server certificate verification. It is `SSLCALocation` parameter in `zabbix_proxy.conf`.
 
-### ``/var/lib/zabbix/snmptraps``
+### `/var/lib/zabbix/snmptraps`
 
-The volume is used as location of ``snmptraps.log`` file. It could be shared by ``zabbix-snmptraps`` container and inherited using `volumes_from` Docker option while creating new instance of Zabbix proxy.
-SNMP traps processing feature could be enabled using shared volume and switched ``ZBX_ENABLE_SNMP_TRAPS`` environment variable to `true`.
+The volume is used as location of `snmptraps.log` file. It could be shared by `zabbix-snmptraps` container and inherited using `volumes_from` Docker option while creating new instance of Zabbix proxy. SNMP traps processing feature could be enabled using shared volume and switched `ZBX_ENABLE_SNMP_TRAPS` environment variable to `true`.
 
-### ``/var/lib/zabbix/mibs``
+### `/var/lib/zabbix/mibs`
 
-The volume allows to add new MIB files. It does not support subdirectories, all MIBs must be placed to ``/var/lib/zabbix/mibs``.
+The volume allows to add new MIB files. It does not support subdirectories, all MIBs must be placed to `/var/lib/zabbix/mibs`.
 
 # The image variants
 
