@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7`, `latest` (*sl7/Dockerfile*)](https://github.com/scientificlinux/sl-docker/blob/6f0afe07c9abcb8952c22ab76ed69d1fc757602e/sl7/Dockerfile)
--	[`6` (*sl6/Dockerfile*)](https://github.com/scientificlinux/sl-docker/blob/5288d401c76c12025e0495265067ad6a912b59ce/sl6/Dockerfile)
+-	[`7`, `latest`](https://github.com/scientificlinux/sl-docker/blob/6f0afe07c9abcb8952c22ab76ed69d1fc757602e/sl7/Dockerfile)
+-	[`6`](https://github.com/scientificlinux/sl-docker/blob/5288d401c76c12025e0495265067ad6a912b59ce/sl6/Dockerfile)
 
 # Quick reference
 

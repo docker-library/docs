@@ -18,16 +18,16 @@ WARNING:
 
 ## Simple Tags
 
--	[`2.0.0-linux`, `linux` (*amd64/Dockerfile*)](https://github.com/nats-io/nats-docker/blob/f94c8e5fe7242e29752374eb464ef99954ae53f9/amd64/Dockerfile)
--	[`2.0.0-nanoserver`, `nanoserver` (*windows/nanoserver/Dockerfile*)](https://github.com/nats-io/nats-docker/blob/f94c8e5fe7242e29752374eb464ef99954ae53f9/windows/nanoserver/Dockerfile)
--	[`2.0.0-nanoserver-1809`, `nanoserver-1809` (*windows/nanoserver2019/Dockerfile*)](https://github.com/nats-io/nats-docker/blob/f94c8e5fe7242e29752374eb464ef99954ae53f9/windows/nanoserver2019/Dockerfile)
--	[`2.0.0-windowsservercore`, `windowsservercore` (*windows/windowsservercore/Dockerfile*)](https://github.com/nats-io/nats-docker/blob/f94c8e5fe7242e29752374eb464ef99954ae53f9/windows/windowsservercore/Dockerfile)
+-	[`2.0.0-linux`, `linux`](https://github.com/nats-io/nats-docker/blob/f94c8e5fe7242e29752374eb464ef99954ae53f9/amd64/Dockerfile)
+-	[`2.0.0-nanoserver`, `nanoserver`](https://github.com/nats-io/nats-docker/blob/f94c8e5fe7242e29752374eb464ef99954ae53f9/windows/nanoserver/Dockerfile)
+-	[`2.0.0-nanoserver-1809`, `nanoserver-1809`](https://github.com/nats-io/nats-docker/blob/f94c8e5fe7242e29752374eb464ef99954ae53f9/windows/nanoserver2019/Dockerfile)
+-	[`2.0.0-windowsservercore`, `windowsservercore`](https://github.com/nats-io/nats-docker/blob/f94c8e5fe7242e29752374eb464ef99954ae53f9/windows/windowsservercore/Dockerfile)
 
 ## Shared Tags
 
 -	`2.0.0`, `latest`:
-	-	[`2.0.0-linux` (*amd64/Dockerfile*)](https://github.com/nats-io/nats-docker/blob/f94c8e5fe7242e29752374eb464ef99954ae53f9/amd64/Dockerfile)
-	-	[`2.0.0-nanoserver` (*windows/nanoserver/Dockerfile*)](https://github.com/nats-io/nats-docker/blob/f94c8e5fe7242e29752374eb464ef99954ae53f9/windows/nanoserver/Dockerfile)
+	-	[`2.0.0-linux`](https://github.com/nats-io/nats-docker/blob/f94c8e5fe7242e29752374eb464ef99954ae53f9/amd64/Dockerfile)
+	-	[`2.0.0-nanoserver`](https://github.com/nats-io/nats-docker/blob/f94c8e5fe7242e29752374eb464ef99954ae53f9/windows/nanoserver/Dockerfile)
 
 # Quick reference
 

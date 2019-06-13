@@ -16,22 +16,22 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`trusty`, `nd14.04` (*dockerfiles/trusty/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/28179a5247bf4681dd56cd11c542f57fafbe0354/dockerfiles/trusty/Dockerfile)
--	[`trusty-non-free`, `nd14.04-non-free` (*dockerfiles/trusty-non-free/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/28179a5247bf4681dd56cd11c542f57fafbe0354/dockerfiles/trusty-non-free/Dockerfile)
--	[`xenial`, `nd16.04` (*dockerfiles/xenial/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/28179a5247bf4681dd56cd11c542f57fafbe0354/dockerfiles/xenial/Dockerfile)
--	[`xenial-non-free`, `nd16.04-non-free` (*dockerfiles/xenial-non-free/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/28179a5247bf4681dd56cd11c542f57fafbe0354/dockerfiles/xenial-non-free/Dockerfile)
--	[`bionic`, `nd18.04` (*dockerfiles/bionic/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/28179a5247bf4681dd56cd11c542f57fafbe0354/dockerfiles/bionic/Dockerfile)
--	[`bionic-non-free`, `nd18.04-non-free` (*dockerfiles/bionic-non-free/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/28179a5247bf4681dd56cd11c542f57fafbe0354/dockerfiles/bionic-non-free/Dockerfile)
--	[`cosmic`, `nd18.10` (*dockerfiles/cosmic/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/28179a5247bf4681dd56cd11c542f57fafbe0354/dockerfiles/cosmic/Dockerfile)
--	[`cosmic-non-free`, `nd18.10-non-free` (*dockerfiles/cosmic-non-free/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/28179a5247bf4681dd56cd11c542f57fafbe0354/dockerfiles/cosmic-non-free/Dockerfile)
--	[`jessie`, `nd80` (*dockerfiles/jessie/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/28179a5247bf4681dd56cd11c542f57fafbe0354/dockerfiles/jessie/Dockerfile)
--	[`jessie-non-free`, `nd80-non-free` (*dockerfiles/jessie-non-free/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/28179a5247bf4681dd56cd11c542f57fafbe0354/dockerfiles/jessie-non-free/Dockerfile)
--	[`stretch`, `nd90`, `latest` (*dockerfiles/stretch/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/28179a5247bf4681dd56cd11c542f57fafbe0354/dockerfiles/stretch/Dockerfile)
--	[`stretch-non-free`, `nd90-non-free`, `non-free` (*dockerfiles/stretch-non-free/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/28179a5247bf4681dd56cd11c542f57fafbe0354/dockerfiles/stretch-non-free/Dockerfile)
--	[`buster`, `nd100` (*dockerfiles/buster/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/28179a5247bf4681dd56cd11c542f57fafbe0354/dockerfiles/buster/Dockerfile)
--	[`buster-non-free`, `nd100-non-free` (*dockerfiles/buster-non-free/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/28179a5247bf4681dd56cd11c542f57fafbe0354/dockerfiles/buster-non-free/Dockerfile)
--	[`sid`, `nd` (*dockerfiles/sid/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/28179a5247bf4681dd56cd11c542f57fafbe0354/dockerfiles/sid/Dockerfile)
--	[`sid-non-free`, `nd-non-free` (*dockerfiles/sid-non-free/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/28179a5247bf4681dd56cd11c542f57fafbe0354/dockerfiles/sid-non-free/Dockerfile)
+-	[`trusty`, `nd14.04`](https://github.com/neurodebian/dockerfiles/blob/28179a5247bf4681dd56cd11c542f57fafbe0354/dockerfiles/trusty/Dockerfile)
+-	[`trusty-non-free`, `nd14.04-non-free`](https://github.com/neurodebian/dockerfiles/blob/28179a5247bf4681dd56cd11c542f57fafbe0354/dockerfiles/trusty-non-free/Dockerfile)
+-	[`xenial`, `nd16.04`](https://github.com/neurodebian/dockerfiles/blob/28179a5247bf4681dd56cd11c542f57fafbe0354/dockerfiles/xenial/Dockerfile)
+-	[`xenial-non-free`, `nd16.04-non-free`](https://github.com/neurodebian/dockerfiles/blob/28179a5247bf4681dd56cd11c542f57fafbe0354/dockerfiles/xenial-non-free/Dockerfile)
+-	[`bionic`, `nd18.04`](https://github.com/neurodebian/dockerfiles/blob/28179a5247bf4681dd56cd11c542f57fafbe0354/dockerfiles/bionic/Dockerfile)
+-	[`bionic-non-free`, `nd18.04-non-free`](https://github.com/neurodebian/dockerfiles/blob/28179a5247bf4681dd56cd11c542f57fafbe0354/dockerfiles/bionic-non-free/Dockerfile)
+-	[`cosmic`, `nd18.10`](https://github.com/neurodebian/dockerfiles/blob/28179a5247bf4681dd56cd11c542f57fafbe0354/dockerfiles/cosmic/Dockerfile)
+-	[`cosmic-non-free`, `nd18.10-non-free`](https://github.com/neurodebian/dockerfiles/blob/28179a5247bf4681dd56cd11c542f57fafbe0354/dockerfiles/cosmic-non-free/Dockerfile)
+-	[`jessie`, `nd80`](https://github.com/neurodebian/dockerfiles/blob/28179a5247bf4681dd56cd11c542f57fafbe0354/dockerfiles/jessie/Dockerfile)
+-	[`jessie-non-free`, `nd80-non-free`](https://github.com/neurodebian/dockerfiles/blob/28179a5247bf4681dd56cd11c542f57fafbe0354/dockerfiles/jessie-non-free/Dockerfile)
+-	[`stretch`, `nd90`, `latest`](https://github.com/neurodebian/dockerfiles/blob/28179a5247bf4681dd56cd11c542f57fafbe0354/dockerfiles/stretch/Dockerfile)
+-	[`stretch-non-free`, `nd90-non-free`, `non-free`](https://github.com/neurodebian/dockerfiles/blob/28179a5247bf4681dd56cd11c542f57fafbe0354/dockerfiles/stretch-non-free/Dockerfile)
+-	[`buster`, `nd100`](https://github.com/neurodebian/dockerfiles/blob/28179a5247bf4681dd56cd11c542f57fafbe0354/dockerfiles/buster/Dockerfile)
+-	[`buster-non-free`, `nd100-non-free`](https://github.com/neurodebian/dockerfiles/blob/28179a5247bf4681dd56cd11c542f57fafbe0354/dockerfiles/buster-non-free/Dockerfile)
+-	[`sid`, `nd`](https://github.com/neurodebian/dockerfiles/blob/28179a5247bf4681dd56cd11c542f57fafbe0354/dockerfiles/sid/Dockerfile)
+-	[`sid-non-free`, `nd-non-free`](https://github.com/neurodebian/dockerfiles/blob/28179a5247bf4681dd56cd11c542f57fafbe0354/dockerfiles/sid-non-free/Dockerfile)
 
 # Quick reference
 

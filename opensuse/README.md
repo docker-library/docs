@@ -26,7 +26,7 @@ An archive for images of unsupported versions can be found at [`opensuse/archive
 
 # Supported tags and respective `Dockerfile` links
 
--	[`42.3`, `latest`, `leap` (*x86_64//Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/0df142c37386f5be35c3355d316d7bc444825e0b/x86_64//Dockerfile)
+-	[`42.3`, `latest`, `leap`](https://github.com/openSUSE/docker-containers-build/blob/0df142c37386f5be35c3355d316d7bc444825e0b/x86_64//Dockerfile)
 
 # Quick reference
 

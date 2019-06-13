@@ -16,7 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `0.62` (*stable/Dockerfile*)](https://github.com/vaygr/docker-sourcemage/blob/a03bbe3ae7bbb839c3c69afd4504ca336f7b9cb9/stable/Dockerfile)
+-	[`latest`, `0.62`](https://github.com/vaygr/docker-sourcemage/blob/a03bbe3ae7bbb839c3c69afd4504ca336f7b9cb9/stable/Dockerfile)
 
 # Quick reference
 

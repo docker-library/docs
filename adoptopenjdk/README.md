@@ -16,18 +16,18 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8u212-b03-jdk-hotspot`, `8-jdk-hotspot`, `8-hotspot` (*8/jdk/ubuntu/Dockerfile.hotspot.releases.full*)](https://github.com/AdoptOpenJDK/openjdk-docker/blob/ba8e2ff59253f16c76878d032a846199d58f453e/8/jdk/ubuntu/Dockerfile.hotspot.releases.full)
--	[`8u212-b03-jre-hotspot`, `8-jre-hotspot` (*8/jre/ubuntu/Dockerfile.hotspot.releases.full*)](https://github.com/AdoptOpenJDK/openjdk-docker/blob/ba8e2ff59253f16c76878d032a846199d58f453e/8/jre/ubuntu/Dockerfile.hotspot.releases.full)
--	[`11.0.3_7-jdk-hotspot`, `11-jdk-hotspot`, `11-hotspot` (*11/jdk/ubuntu/Dockerfile.hotspot.releases.full*)](https://github.com/AdoptOpenJDK/openjdk-docker/blob/ba8e2ff59253f16c76878d032a846199d58f453e/11/jdk/ubuntu/Dockerfile.hotspot.releases.full)
--	[`11.0.3_7-jre-hotspot`, `11-jre-hotspot` (*11/jre/ubuntu/Dockerfile.hotspot.releases.full*)](https://github.com/AdoptOpenJDK/openjdk-docker/blob/ba8e2ff59253f16c76878d032a846199d58f453e/11/jre/ubuntu/Dockerfile.hotspot.releases.full)
--	[`12.0.1_12-jdk-hotspot`, `12-jdk-hotspot`, `12-hotspot`, `hotspot`, `latest` (*12/jdk/ubuntu/Dockerfile.hotspot.releases.full*)](https://github.com/AdoptOpenJDK/openjdk-docker/blob/ba8e2ff59253f16c76878d032a846199d58f453e/12/jdk/ubuntu/Dockerfile.hotspot.releases.full)
--	[`12.0.1_12-jre-hotspot`, `12-jre-hotspot` (*12/jre/ubuntu/Dockerfile.hotspot.releases.full*)](https://github.com/AdoptOpenJDK/openjdk-docker/blob/ba8e2ff59253f16c76878d032a846199d58f453e/12/jre/ubuntu/Dockerfile.hotspot.releases.full)
--	[`8u212-b04-jdk-openj9-0.14.2`, `8-jdk-openj9`, `8-openj9` (*8/jdk/ubuntu/Dockerfile.openj9.releases.full*)](https://github.com/AdoptOpenJDK/openjdk-docker/blob/ce22bbca376d54aaf4b3bce8997b7272adab118b/8/jdk/ubuntu/Dockerfile.openj9.releases.full)
--	[`8u212-b04-jre-openj9-0.14.2`, `8-jre-openj9` (*8/jre/ubuntu/Dockerfile.openj9.releases.full*)](https://github.com/AdoptOpenJDK/openjdk-docker/blob/ce22bbca376d54aaf4b3bce8997b7272adab118b/8/jre/ubuntu/Dockerfile.openj9.releases.full)
--	[`11.0.3_7-jdk-openj9-0.14.3`, `11-jdk-openj9`, `11-openj9` (*11/jdk/ubuntu/Dockerfile.openj9.releases.full*)](https://github.com/AdoptOpenJDK/openjdk-docker/blob/ce22bbca376d54aaf4b3bce8997b7272adab118b/11/jdk/ubuntu/Dockerfile.openj9.releases.full)
--	[`11.0.3_7-jre-openj9-0.14.3`, `11-jre-openj9` (*11/jre/ubuntu/Dockerfile.openj9.releases.full*)](https://github.com/AdoptOpenJDK/openjdk-docker/blob/ce22bbca376d54aaf4b3bce8997b7272adab118b/11/jre/ubuntu/Dockerfile.openj9.releases.full)
--	[`12.0.1_12-jdk-openj9-0.14.1`, `12-jdk-openj9`, `12-openj9`, `openj9` (*12/jdk/ubuntu/Dockerfile.openj9.releases.full*)](https://github.com/AdoptOpenJDK/openjdk-docker/blob/ce22bbca376d54aaf4b3bce8997b7272adab118b/12/jdk/ubuntu/Dockerfile.openj9.releases.full)
--	[`12.0.1_12-jre-openj9-0.14.1`, `12-jre-openj9` (*12/jre/ubuntu/Dockerfile.openj9.releases.full*)](https://github.com/AdoptOpenJDK/openjdk-docker/blob/ce22bbca376d54aaf4b3bce8997b7272adab118b/12/jre/ubuntu/Dockerfile.openj9.releases.full)
+-	[`8u212-b03-jdk-hotspot`, `8-jdk-hotspot`, `8-hotspot`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/ba8e2ff59253f16c76878d032a846199d58f453e/8/jdk/ubuntu/Dockerfile.hotspot.releases.full)
+-	[`8u212-b03-jre-hotspot`, `8-jre-hotspot`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/ba8e2ff59253f16c76878d032a846199d58f453e/8/jre/ubuntu/Dockerfile.hotspot.releases.full)
+-	[`11.0.3_7-jdk-hotspot`, `11-jdk-hotspot`, `11-hotspot`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/ba8e2ff59253f16c76878d032a846199d58f453e/11/jdk/ubuntu/Dockerfile.hotspot.releases.full)
+-	[`11.0.3_7-jre-hotspot`, `11-jre-hotspot`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/ba8e2ff59253f16c76878d032a846199d58f453e/11/jre/ubuntu/Dockerfile.hotspot.releases.full)
+-	[`12.0.1_12-jdk-hotspot`, `12-jdk-hotspot`, `12-hotspot`, `hotspot`, `latest`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/ba8e2ff59253f16c76878d032a846199d58f453e/12/jdk/ubuntu/Dockerfile.hotspot.releases.full)
+-	[`12.0.1_12-jre-hotspot`, `12-jre-hotspot`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/ba8e2ff59253f16c76878d032a846199d58f453e/12/jre/ubuntu/Dockerfile.hotspot.releases.full)
+-	[`8u212-b04-jdk-openj9-0.14.2`, `8-jdk-openj9`, `8-openj9`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/ce22bbca376d54aaf4b3bce8997b7272adab118b/8/jdk/ubuntu/Dockerfile.openj9.releases.full)
+-	[`8u212-b04-jre-openj9-0.14.2`, `8-jre-openj9`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/ce22bbca376d54aaf4b3bce8997b7272adab118b/8/jre/ubuntu/Dockerfile.openj9.releases.full)
+-	[`11.0.3_7-jdk-openj9-0.14.3`, `11-jdk-openj9`, `11-openj9`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/ce22bbca376d54aaf4b3bce8997b7272adab118b/11/jdk/ubuntu/Dockerfile.openj9.releases.full)
+-	[`11.0.3_7-jre-openj9-0.14.3`, `11-jre-openj9`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/ce22bbca376d54aaf4b3bce8997b7272adab118b/11/jre/ubuntu/Dockerfile.openj9.releases.full)
+-	[`12.0.1_12-jdk-openj9-0.14.1`, `12-jdk-openj9`, `12-openj9`, `openj9`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/ce22bbca376d54aaf4b3bce8997b7272adab118b/12/jdk/ubuntu/Dockerfile.openj9.releases.full)
+-	[`12.0.1_12-jre-openj9-0.14.1`, `12-jre-openj9`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/ce22bbca376d54aaf4b3bce8997b7272adab118b/12/jre/ubuntu/Dockerfile.openj9.releases.full)
 
 # Quick reference
 

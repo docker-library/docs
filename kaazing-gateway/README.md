@@ -16,7 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.6.0`, `5.6`, `5`, `latest` (*Dockerfile*)](https://github.com/kaazing/gateway.docker/blob/a40c8da9d2c2925bdd78b9a6d1b6da3fe89322d1/Dockerfile)
+-	[`5.6.0`, `5.6`, `5`, `latest`](https://github.com/kaazing/gateway.docker/blob/a40c8da9d2c2925bdd78b9a6d1b6da3fe89322d1/Dockerfile)
 
 # Quick reference
 

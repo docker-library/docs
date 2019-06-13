@@ -16,7 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`0.9.9`, `0.9`, `0`, `latest` (*Dockerfile*)](https://github.com/idno/Known-Docker/blob/3454a52b4ad48e22b95e706dba9ff953cf84c2b1/Dockerfile)
+-	[`0.9.9`, `0.9`, `0`, `latest`](https://github.com/idno/Known-Docker/blob/3454a52b4ad48e22b95e706dba9ff953cf84c2b1/Dockerfile)
 
 # Quick reference
 

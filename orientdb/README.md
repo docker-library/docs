@@ -16,12 +16,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.0.18` (*2.0/Dockerfile*)](https://github.com/orientechnologies/orientdb-docker/blob/127587dc5f88c1f1f5f459b186afaa8dda80b7ba/2.0/Dockerfile)
--	[`2.1.25` (*2.1/Dockerfile*)](https://github.com/orientechnologies/orientdb-docker/blob/127587dc5f88c1f1f5f459b186afaa8dda80b7ba/2.1/Dockerfile)
--	[`2.2.37` (*2.2/x86_64/openjdk-slim/Dockerfile*)](https://github.com/orientechnologies/orientdb-docker/blob/127587dc5f88c1f1f5f459b186afaa8dda80b7ba/2.2/x86_64/openjdk-slim/Dockerfile)
--	[`2.2.37-spatial` (*2.2-spatial/x86_64/openjdk-slim/Dockerfile*)](https://github.com/orientechnologies/orientdb-docker/blob/127587dc5f88c1f1f5f459b186afaa8dda80b7ba/2.2-spatial/x86_64/openjdk-slim/Dockerfile)
--	[`3.0.20`, `latest` (*3.0/x86_64/openjdk-slim/Dockerfile*)](https://github.com/orientechnologies/orientdb-docker/blob/127587dc5f88c1f1f5f459b186afaa8dda80b7ba/3.0/x86_64/openjdk-slim/Dockerfile)
--	[`3.0.20-tp3` (*3.0-tp3/x86_64/openjdk-slim/Dockerfile*)](https://github.com/orientechnologies/orientdb-docker/blob/127587dc5f88c1f1f5f459b186afaa8dda80b7ba/3.0-tp3/x86_64/openjdk-slim/Dockerfile)
+-	[`2.0.18`](https://github.com/orientechnologies/orientdb-docker/blob/127587dc5f88c1f1f5f459b186afaa8dda80b7ba/2.0/Dockerfile)
+-	[`2.1.25`](https://github.com/orientechnologies/orientdb-docker/blob/127587dc5f88c1f1f5f459b186afaa8dda80b7ba/2.1/Dockerfile)
+-	[`2.2.37`](https://github.com/orientechnologies/orientdb-docker/blob/127587dc5f88c1f1f5f459b186afaa8dda80b7ba/2.2/x86_64/openjdk-slim/Dockerfile)
+-	[`2.2.37-spatial`](https://github.com/orientechnologies/orientdb-docker/blob/127587dc5f88c1f1f5f459b186afaa8dda80b7ba/2.2-spatial/x86_64/openjdk-slim/Dockerfile)
+-	[`3.0.20`, `latest`](https://github.com/orientechnologies/orientdb-docker/blob/127587dc5f88c1f1f5f459b186afaa8dda80b7ba/3.0/x86_64/openjdk-slim/Dockerfile)
+-	[`3.0.20-tp3`](https://github.com/orientechnologies/orientdb-docker/blob/127587dc5f88c1f1f5f459b186afaa8dda80b7ba/3.0-tp3/x86_64/openjdk-slim/Dockerfile)
 
 # Quick reference
 

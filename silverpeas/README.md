@@ -16,7 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.0.1`, `latest` (*Dockerfile*)](https://github.com/Silverpeas/docker-silverpeas-prod/blob/3e3e2ce680e57828a145151a2ee609b34e1501d2/Dockerfile)
+-	[`6.0.1`, `latest`](https://github.com/Silverpeas/docker-silverpeas-prod/blob/3e3e2ce680e57828a145151a2ee609b34e1501d2/Dockerfile)
 
 # Quick reference
 

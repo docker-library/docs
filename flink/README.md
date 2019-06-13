@@ -16,18 +16,18 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.7.2-hadoop24-scala_2.11` (*1.7/hadoop24-scala_2.11-debian/Dockerfile*)](https://github.com/docker-flink/docker-flink/blob/f96f07a516dbd4d9544d22c5272006ccd0b988d6/1.7/hadoop24-scala_2.11-debian/Dockerfile)
--	[`1.7.2-hadoop24-scala_2.12`, `1.7.2-hadoop24`, `1.7-hadoop24` (*1.7/hadoop24-scala_2.12-debian/Dockerfile*)](https://github.com/docker-flink/docker-flink/blob/f96f07a516dbd4d9544d22c5272006ccd0b988d6/1.7/hadoop24-scala_2.12-debian/Dockerfile)
--	[`1.7.2-hadoop26-scala_2.11` (*1.7/hadoop26-scala_2.11-debian/Dockerfile*)](https://github.com/docker-flink/docker-flink/blob/f96f07a516dbd4d9544d22c5272006ccd0b988d6/1.7/hadoop26-scala_2.11-debian/Dockerfile)
--	[`1.7.2-hadoop26-scala_2.12`, `1.7.2-hadoop26`, `1.7-hadoop26` (*1.7/hadoop26-scala_2.12-debian/Dockerfile*)](https://github.com/docker-flink/docker-flink/blob/f96f07a516dbd4d9544d22c5272006ccd0b988d6/1.7/hadoop26-scala_2.12-debian/Dockerfile)
--	[`1.7.2-hadoop27-scala_2.11` (*1.7/hadoop27-scala_2.11-debian/Dockerfile*)](https://github.com/docker-flink/docker-flink/blob/f96f07a516dbd4d9544d22c5272006ccd0b988d6/1.7/hadoop27-scala_2.11-debian/Dockerfile)
--	[`1.7.2-hadoop27-scala_2.12`, `1.7.2-hadoop27`, `1.7-hadoop27` (*1.7/hadoop27-scala_2.12-debian/Dockerfile*)](https://github.com/docker-flink/docker-flink/blob/f96f07a516dbd4d9544d22c5272006ccd0b988d6/1.7/hadoop27-scala_2.12-debian/Dockerfile)
--	[`1.7.2-hadoop28-scala_2.11` (*1.7/hadoop28-scala_2.11-debian/Dockerfile*)](https://github.com/docker-flink/docker-flink/blob/f96f07a516dbd4d9544d22c5272006ccd0b988d6/1.7/hadoop28-scala_2.11-debian/Dockerfile)
--	[`1.7.2-hadoop28-scala_2.12`, `1.7.2-hadoop28`, `1.7-hadoop28` (*1.7/hadoop28-scala_2.12-debian/Dockerfile*)](https://github.com/docker-flink/docker-flink/blob/f96f07a516dbd4d9544d22c5272006ccd0b988d6/1.7/hadoop28-scala_2.12-debian/Dockerfile)
--	[`1.7.2-scala_2.11`, `1.7-scala_2.11` (*1.7/scala_2.11-debian/Dockerfile*)](https://github.com/docker-flink/docker-flink/blob/f96f07a516dbd4d9544d22c5272006ccd0b988d6/1.7/scala_2.11-debian/Dockerfile)
--	[`1.7.2-scala_2.12`, `1.7-scala_2.12`, `1.7.2`, `1.7` (*1.7/scala_2.12-debian/Dockerfile*)](https://github.com/docker-flink/docker-flink/blob/f96f07a516dbd4d9544d22c5272006ccd0b988d6/1.7/scala_2.12-debian/Dockerfile)
--	[`1.8.0-scala_2.11`, `1.8-scala_2.11`, `scala_2.11` (*1.8/scala_2.11-debian/Dockerfile*)](https://github.com/docker-flink/docker-flink/blob/f96f07a516dbd4d9544d22c5272006ccd0b988d6/1.8/scala_2.11-debian/Dockerfile)
--	[`1.8.0-scala_2.12`, `1.8-scala_2.12`, `scala_2.12`, `1.8.0`, `1.8`, `latest` (*1.8/scala_2.12-debian/Dockerfile*)](https://github.com/docker-flink/docker-flink/blob/f96f07a516dbd4d9544d22c5272006ccd0b988d6/1.8/scala_2.12-debian/Dockerfile)
+-	[`1.7.2-hadoop24-scala_2.11`](https://github.com/docker-flink/docker-flink/blob/f96f07a516dbd4d9544d22c5272006ccd0b988d6/1.7/hadoop24-scala_2.11-debian/Dockerfile)
+-	[`1.7.2-hadoop24-scala_2.12`, `1.7.2-hadoop24`, `1.7-hadoop24`](https://github.com/docker-flink/docker-flink/blob/f96f07a516dbd4d9544d22c5272006ccd0b988d6/1.7/hadoop24-scala_2.12-debian/Dockerfile)
+-	[`1.7.2-hadoop26-scala_2.11`](https://github.com/docker-flink/docker-flink/blob/f96f07a516dbd4d9544d22c5272006ccd0b988d6/1.7/hadoop26-scala_2.11-debian/Dockerfile)
+-	[`1.7.2-hadoop26-scala_2.12`, `1.7.2-hadoop26`, `1.7-hadoop26`](https://github.com/docker-flink/docker-flink/blob/f96f07a516dbd4d9544d22c5272006ccd0b988d6/1.7/hadoop26-scala_2.12-debian/Dockerfile)
+-	[`1.7.2-hadoop27-scala_2.11`](https://github.com/docker-flink/docker-flink/blob/f96f07a516dbd4d9544d22c5272006ccd0b988d6/1.7/hadoop27-scala_2.11-debian/Dockerfile)
+-	[`1.7.2-hadoop27-scala_2.12`, `1.7.2-hadoop27`, `1.7-hadoop27`](https://github.com/docker-flink/docker-flink/blob/f96f07a516dbd4d9544d22c5272006ccd0b988d6/1.7/hadoop27-scala_2.12-debian/Dockerfile)
+-	[`1.7.2-hadoop28-scala_2.11`](https://github.com/docker-flink/docker-flink/blob/f96f07a516dbd4d9544d22c5272006ccd0b988d6/1.7/hadoop28-scala_2.11-debian/Dockerfile)
+-	[`1.7.2-hadoop28-scala_2.12`, `1.7.2-hadoop28`, `1.7-hadoop28`](https://github.com/docker-flink/docker-flink/blob/f96f07a516dbd4d9544d22c5272006ccd0b988d6/1.7/hadoop28-scala_2.12-debian/Dockerfile)
+-	[`1.7.2-scala_2.11`, `1.7-scala_2.11`](https://github.com/docker-flink/docker-flink/blob/f96f07a516dbd4d9544d22c5272006ccd0b988d6/1.7/scala_2.11-debian/Dockerfile)
+-	[`1.7.2-scala_2.12`, `1.7-scala_2.12`, `1.7.2`, `1.7`](https://github.com/docker-flink/docker-flink/blob/f96f07a516dbd4d9544d22c5272006ccd0b988d6/1.7/scala_2.12-debian/Dockerfile)
+-	[`1.8.0-scala_2.11`, `1.8-scala_2.11`, `scala_2.11`](https://github.com/docker-flink/docker-flink/blob/f96f07a516dbd4d9544d22c5272006ccd0b988d6/1.8/scala_2.11-debian/Dockerfile)
+-	[`1.8.0-scala_2.12`, `1.8-scala_2.12`, `scala_2.12`, `1.8.0`, `1.8`, `latest`](https://github.com/docker-flink/docker-flink/blob/f96f07a516dbd4d9544d22c5272006ccd0b988d6/1.8/scala_2.12-debian/Dockerfile)
 
 # Quick reference
 

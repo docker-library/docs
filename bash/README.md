@@ -16,15 +16,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.0.7`, `5.0`, `5`, `latest` (*5.0/Dockerfile*)](https://github.com/tianon/docker-bash/blob/fba9ecf51cac8e334263a377fe0c5c0e4de74265/5.0/Dockerfile)
--	[`4.4.23`, `4.4`, `4` (*4.4/Dockerfile*)](https://github.com/tianon/docker-bash/blob/38a2a9828a6916afcb05663fd5db950afaf4c17d/4.4/Dockerfile)
--	[`4.3.48`, `4.3` (*4.3/Dockerfile*)](https://github.com/tianon/docker-bash/blob/38a2a9828a6916afcb05663fd5db950afaf4c17d/4.3/Dockerfile)
--	[`4.2.53`, `4.2` (*4.2/Dockerfile*)](https://github.com/tianon/docker-bash/blob/38a2a9828a6916afcb05663fd5db950afaf4c17d/4.2/Dockerfile)
--	[`4.1.17`, `4.1` (*4.1/Dockerfile*)](https://github.com/tianon/docker-bash/blob/38a2a9828a6916afcb05663fd5db950afaf4c17d/4.1/Dockerfile)
--	[`4.0.44`, `4.0` (*4.0/Dockerfile*)](https://github.com/tianon/docker-bash/blob/38a2a9828a6916afcb05663fd5db950afaf4c17d/4.0/Dockerfile)
--	[`3.2.57`, `3.2`, `3` (*3.2/Dockerfile*)](https://github.com/tianon/docker-bash/blob/38a2a9828a6916afcb05663fd5db950afaf4c17d/3.2/Dockerfile)
--	[`3.1.23`, `3.1` (*3.1/Dockerfile*)](https://github.com/tianon/docker-bash/blob/38a2a9828a6916afcb05663fd5db950afaf4c17d/3.1/Dockerfile)
--	[`3.0.22`, `3.0` (*3.0/Dockerfile*)](https://github.com/tianon/docker-bash/blob/38a2a9828a6916afcb05663fd5db950afaf4c17d/3.0/Dockerfile)
+-	[`5.0.7`, `5.0`, `5`, `latest`](https://github.com/tianon/docker-bash/blob/fba9ecf51cac8e334263a377fe0c5c0e4de74265/5.0/Dockerfile)
+-	[`4.4.23`, `4.4`, `4`](https://github.com/tianon/docker-bash/blob/38a2a9828a6916afcb05663fd5db950afaf4c17d/4.4/Dockerfile)
+-	[`4.3.48`, `4.3`](https://github.com/tianon/docker-bash/blob/38a2a9828a6916afcb05663fd5db950afaf4c17d/4.3/Dockerfile)
+-	[`4.2.53`, `4.2`](https://github.com/tianon/docker-bash/blob/38a2a9828a6916afcb05663fd5db950afaf4c17d/4.2/Dockerfile)
+-	[`4.1.17`, `4.1`](https://github.com/tianon/docker-bash/blob/38a2a9828a6916afcb05663fd5db950afaf4c17d/4.1/Dockerfile)
+-	[`4.0.44`, `4.0`](https://github.com/tianon/docker-bash/blob/38a2a9828a6916afcb05663fd5db950afaf4c17d/4.0/Dockerfile)
+-	[`3.2.57`, `3.2`, `3`](https://github.com/tianon/docker-bash/blob/38a2a9828a6916afcb05663fd5db950afaf4c17d/3.2/Dockerfile)
+-	[`3.1.23`, `3.1`](https://github.com/tianon/docker-bash/blob/38a2a9828a6916afcb05663fd5db950afaf4c17d/3.1/Dockerfile)
+-	[`3.0.22`, `3.0`](https://github.com/tianon/docker-bash/blob/38a2a9828a6916afcb05663fd5db950afaf4c17d/3.0/Dockerfile)
 
 # Quick reference
 

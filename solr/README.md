@@ -16,20 +16,20 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.1.1`, `8.1`, `8`, `latest` (*8.1/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/02fff54d99672ee2666bff6f96f008996fb3e3b8/8.1/Dockerfile)
--	[`8.1.1-slim`, `8.1-slim`, `8-slim`, `slim` (*8.1/slim/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/02fff54d99672ee2666bff6f96f008996fb3e3b8/8.1/slim/Dockerfile)
--	[`8.0.0`, `8.0` (*8.0/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/71ebabff0dce35b97e796ab0c444276c75d6538e/8.0/Dockerfile)
--	[`8.0.0-slim`, `8.0-slim` (*8.0/slim/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/71ebabff0dce35b97e796ab0c444276c75d6538e/8.0/slim/Dockerfile)
--	[`7.7.2`, `7.7`, `7` (*7.7/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/3d2bfd1262cdc05e8ed6de9347c7b961157bf136/7.7/Dockerfile)
--	[`7.7.2-slim`, `7.7-slim`, `7-slim` (*7.7/slim/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/3d2bfd1262cdc05e8ed6de9347c7b961157bf136/7.7/slim/Dockerfile)
--	[`7.6.0`, `7.6` (*7.6/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/71ebabff0dce35b97e796ab0c444276c75d6538e/7.6/Dockerfile)
--	[`7.6.0-slim`, `7.6-slim` (*7.6/slim/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/71ebabff0dce35b97e796ab0c444276c75d6538e/7.6/slim/Dockerfile)
--	[`7.5.0`, `7.5` (*7.5/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/71ebabff0dce35b97e796ab0c444276c75d6538e/7.5/Dockerfile)
--	[`7.5.0-slim`, `7.5-slim` (*7.5/slim/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/71ebabff0dce35b97e796ab0c444276c75d6538e/7.5/slim/Dockerfile)
--	[`6.6.6`, `6.6`, `6` (*6.6/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/a6ad91bb7bb4373a0342325f3140966cc1c1ab24/6.6/Dockerfile)
--	[`6.6.6-slim`, `6.6-slim`, `6-slim` (*6.6/slim/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/a6ad91bb7bb4373a0342325f3140966cc1c1ab24/6.6/slim/Dockerfile)
--	[`5.5.5`, `5.5`, `5` (*5.5/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/a6ad91bb7bb4373a0342325f3140966cc1c1ab24/5.5/Dockerfile)
--	[`5.5.5-slim`, `5.5-slim`, `5-slim` (*5.5/slim/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/a6ad91bb7bb4373a0342325f3140966cc1c1ab24/5.5/slim/Dockerfile)
+-	[`8.1.1`, `8.1`, `8`, `latest`](https://github.com/docker-solr/docker-solr/blob/02fff54d99672ee2666bff6f96f008996fb3e3b8/8.1/Dockerfile)
+-	[`8.1.1-slim`, `8.1-slim`, `8-slim`, `slim`](https://github.com/docker-solr/docker-solr/blob/02fff54d99672ee2666bff6f96f008996fb3e3b8/8.1/slim/Dockerfile)
+-	[`8.0.0`, `8.0`](https://github.com/docker-solr/docker-solr/blob/71ebabff0dce35b97e796ab0c444276c75d6538e/8.0/Dockerfile)
+-	[`8.0.0-slim`, `8.0-slim`](https://github.com/docker-solr/docker-solr/blob/71ebabff0dce35b97e796ab0c444276c75d6538e/8.0/slim/Dockerfile)
+-	[`7.7.2`, `7.7`, `7`](https://github.com/docker-solr/docker-solr/blob/3d2bfd1262cdc05e8ed6de9347c7b961157bf136/7.7/Dockerfile)
+-	[`7.7.2-slim`, `7.7-slim`, `7-slim`](https://github.com/docker-solr/docker-solr/blob/3d2bfd1262cdc05e8ed6de9347c7b961157bf136/7.7/slim/Dockerfile)
+-	[`7.6.0`, `7.6`](https://github.com/docker-solr/docker-solr/blob/71ebabff0dce35b97e796ab0c444276c75d6538e/7.6/Dockerfile)
+-	[`7.6.0-slim`, `7.6-slim`](https://github.com/docker-solr/docker-solr/blob/71ebabff0dce35b97e796ab0c444276c75d6538e/7.6/slim/Dockerfile)
+-	[`7.5.0`, `7.5`](https://github.com/docker-solr/docker-solr/blob/71ebabff0dce35b97e796ab0c444276c75d6538e/7.5/Dockerfile)
+-	[`7.5.0-slim`, `7.5-slim`](https://github.com/docker-solr/docker-solr/blob/71ebabff0dce35b97e796ab0c444276c75d6538e/7.5/slim/Dockerfile)
+-	[`6.6.6`, `6.6`, `6`](https://github.com/docker-solr/docker-solr/blob/a6ad91bb7bb4373a0342325f3140966cc1c1ab24/6.6/Dockerfile)
+-	[`6.6.6-slim`, `6.6-slim`, `6-slim`](https://github.com/docker-solr/docker-solr/blob/a6ad91bb7bb4373a0342325f3140966cc1c1ab24/6.6/slim/Dockerfile)
+-	[`5.5.5`, `5.5`, `5`](https://github.com/docker-solr/docker-solr/blob/a6ad91bb7bb4373a0342325f3140966cc1c1ab24/5.5/Dockerfile)
+-	[`5.5.5-slim`, `5.5-slim`, `5-slim`](https://github.com/docker-solr/docker-solr/blob/a6ad91bb7bb4373a0342325f3140966cc1c1ab24/5.5/slim/Dockerfile)
 
 # Quick reference
 

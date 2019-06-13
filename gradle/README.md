@@ -16,11 +16,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.4.1-jdk8`, `5.4-jdk8`, `jdk8`, `5.4.1-jdk`, `5.4-jdk`, `jdk`, `5.4.1`, `5.4`, `latest` (*jdk8/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/7c606d205bcf13551f8203e12174c37004383694/jdk8/Dockerfile)
--	[`5.4.1-jre8`, `5.4-jre8`, `jre8`, `5.4.1-jre`, `5.4-jre`, `jre` (*jre8/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/7c606d205bcf13551f8203e12174c37004383694/jre8/Dockerfile)
--	[`5.4.1-jdk11`, `5.4-jdk11`, `jdk11` (*jdk11/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/7c606d205bcf13551f8203e12174c37004383694/jdk11/Dockerfile)
--	[`5.4.1-jdk12`, `5.4-jdk12`, `jdk12` (*jdk12/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/7c606d205bcf13551f8203e12174c37004383694/jdk12/Dockerfile)
--	[`5.4.1-jre12`, `5.4-jre12`, `jre12` (*jre12/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/7c606d205bcf13551f8203e12174c37004383694/jre12/Dockerfile)
+-	[`5.4.1-jdk8`, `5.4-jdk8`, `jdk8`, `5.4.1-jdk`, `5.4-jdk`, `jdk`, `5.4.1`, `5.4`, `latest`](https://github.com/keeganwitt/docker-gradle/blob/7c606d205bcf13551f8203e12174c37004383694/jdk8/Dockerfile)
+-	[`5.4.1-jre8`, `5.4-jre8`, `jre8`, `5.4.1-jre`, `5.4-jre`, `jre`](https://github.com/keeganwitt/docker-gradle/blob/7c606d205bcf13551f8203e12174c37004383694/jre8/Dockerfile)
+-	[`5.4.1-jdk11`, `5.4-jdk11`, `jdk11`](https://github.com/keeganwitt/docker-gradle/blob/7c606d205bcf13551f8203e12174c37004383694/jdk11/Dockerfile)
+-	[`5.4.1-jdk12`, `5.4-jdk12`, `jdk12`](https://github.com/keeganwitt/docker-gradle/blob/7c606d205bcf13551f8203e12174c37004383694/jdk12/Dockerfile)
+-	[`5.4.1-jre12`, `5.4-jre12`, `jre12`](https://github.com/keeganwitt/docker-gradle/blob/7c606d205bcf13551f8203e12174c37004383694/jre12/Dockerfile)
 
 # Quick reference
 

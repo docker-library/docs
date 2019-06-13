@@ -16,7 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.3.6`, `2.3`, `2`, `latest` (*jessie/2.3.6/Dockerfile*)](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/05946c0dbe3c7fa9338d3827428b2c32074a1447/jessie/2.3.6/Dockerfile)
+-	[`2.3.6`, `2.3`, `2`, `latest`](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/05946c0dbe3c7fa9338d3827428b2c32074a1447/jessie/2.3.6/Dockerfile)
 
 # Quick reference
 
