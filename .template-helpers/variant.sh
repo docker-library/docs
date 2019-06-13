@@ -96,14 +96,14 @@ for tag in "${tags[@]}"; do
 	done
 done
 
-if [ "$text" ]; then
+if [ -n "$text" ]; then
 	default="$([ -f "$repoDir/variant.md" ] && cat "$repoDir/variant.md" || cat "$dir/variant.md")"
 	default+=$'\n' # parameter expansion eats the trailing newline
 
 	# buildpack-deps text
 	potentialTags="$(bashbrew list --uniq "$bbRepo" | cut -d: -f2)"
 	for tag in $potentialTags; do
-		baseImage="$(bashbrew cat -f '{{ .ArchDockerFrom (.TagEntry.Architectures | first) .TagEntry }}' "$bbRepo:$tag")"
+		baseImage="$(bashbrew cat -f '{{ .ArchLastStageFrom (.TagEntry.Architectures | first) .TagEntry }}' "$bbRepo:$tag" 2>/dev/null)"
 		case "$baseImage" in
 			buildpack-deps:*-*) ;; # "scm", "curl" -- not large images
 			buildpack-deps:*)

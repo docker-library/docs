@@ -29,7 +29,7 @@ for tag in "$tags"; do
 		{{- $e := $.TagEntry -}}
 		'"$templateArchVar"'
 		{{- if $e.HasArchitecture $arch -}}
-			{{- $from := $.ArchDockerFrom $arch $e -}}
+			{{- $froms := $.ArchDockerFroms $arch $e -}}
 		{{- end -}}
 	' "$repo:$tag" &> /dev/null; then
 		toFetch+=( "$repo:$tag" )
