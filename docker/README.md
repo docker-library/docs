@@ -16,15 +16,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`19.03.0-rc2`, `19.03-rc`, `rc`, `test`](https://github.com/docker-library/docker/blob/fded04bc1ec3920a5960a76e398d7ce5f147f6f7/19.03-rc/Dockerfile)
+-	[`19.03.0-rc2`, `19.03-rc`, `rc`, `test`](https://github.com/docker-library/docker/blob/6001c15038b05149a83dcc17e1bbeedc92979f6d/19.03-rc/Dockerfile)
 -	[`19.03.0-rc2-dind`, `19.03-rc-dind`, `rc-dind`, `test-dind`](https://github.com/docker-library/docker/blob/27471a8b93e980bd4c51464ee933ed90fd36bf97/19.03-rc/dind/Dockerfile)
 -	[`19.03.0-rc2-git`, `19.03-rc-git`, `rc-git`, `test-git`](https://github.com/docker-library/docker/blob/98ffef81ebfa7601a9ed2f0bf56d78f426bf253c/19.03-rc/git/Dockerfile)
--	[`18.09.6`, `18.09`, `18`, `stable`, `latest`](https://github.com/docker-library/docker/blob/9633df3ae8a88dfed9ba7f92e8a911249bbe4ec0/18.09/Dockerfile)
+-	[`18.09.6`, `18.09`, `18`, `stable`, `latest`](https://github.com/docker-library/docker/blob/6001c15038b05149a83dcc17e1bbeedc92979f6d/18.09/Dockerfile)
 -	[`18.09.6-dind`, `18.09-dind`, `18-dind`, `stable-dind`, `dind`](https://github.com/docker-library/docker/blob/27471a8b93e980bd4c51464ee933ed90fd36bf97/18.09/dind/Dockerfile)
 -	[`18.09.6-git`, `18.09-git`, `18-git`, `stable-git`, `git`](https://github.com/docker-library/docker/blob/91bbc4f7b06c06020d811dafb2266bcd7cf6c06d/18.09/git/Dockerfile)
--	[`18.06.3-ce`, `18.06.3`, `18.06`, `edge`](https://github.com/docker-library/docker/blob/0ea1769704a07017fd9a876590de2feb434d33e2/18.06/Dockerfile)
--	[`18.06.3-ce-dind`, `18.06.3-dind`, `18.06-dind`, `edge-dind`](https://github.com/docker-library/docker/blob/27471a8b93e980bd4c51464ee933ed90fd36bf97/18.06/dind/Dockerfile)
--	[`18.06.3-ce-git`, `18.06.3-git`, `18.06-git`, `edge-git`](https://github.com/docker-library/docker/blob/595ad0c92090937dcb7c200900fb97e36d36c412/18.06/git/Dockerfile)
 
 # Quick reference
 
@@ -38,7 +35,7 @@ WARNING:
 	[Tianon (of the Docker Project)](https://github.com/docker-library/docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/docker/), [`arm32v6`](https://hub.docker.com/r/arm32v6/docker/), [`arm64v8`](https://hub.docker.com/r/arm64v8/docker/), [`ppc64le`](https://hub.docker.com/r/ppc64le/docker/), [`s390x`](https://hub.docker.com/r/s390x/docker/)
+	[`amd64`](https://hub.docker.com/r/amd64/docker/), [`arm32v6`](https://hub.docker.com/r/arm32v6/docker/), [`arm32v7`](https://hub.docker.com/r/arm32v7/docker/), [`arm64v8`](https://hub.docker.com/r/arm64v8/docker/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/docker/` directory](https://github.com/docker-library/repo-info/blob/master/repos/docker) ([history](https://github.com/docker-library/repo-info/commits/master/repos/docker))  

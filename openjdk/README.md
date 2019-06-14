@@ -65,18 +65,27 @@ WARNING:
 	-	[`12.0.1-jdk-windowsservercore-ltsc2016`](https://github.com/docker-library/openjdk/blob/07af3ffded3216b44d69b4f14309fc5a2967e623/12/jdk/windows/windowsservercore-ltsc2016/Dockerfile)
 -	`11.0.3-jdk`, `11.0.3`, `11.0-jdk`, `11.0`, `11-jdk`, `11`:
 	-	[`11.0.3-jdk-stretch`](https://github.com/docker-library/openjdk/blob/da44a9234d75e3d89ea00d679cb6a326cbbbbead/11/jdk/Dockerfile)
+	-	[`11.0.3-jdk-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/6c8415585bb0a0d4afb4ede869f21d645b310d2e/11/jdk/windows/windowsservercore-1809/Dockerfile)
+	-	[`11.0.3-jdk-windowsservercore-1803`](https://github.com/docker-library/openjdk/blob/6c8415585bb0a0d4afb4ede869f21d645b310d2e/11/jdk/windows/windowsservercore-1803/Dockerfile)
+	-	[`11.0.3-jdk-windowsservercore-ltsc2016`](https://github.com/docker-library/openjdk/blob/6c8415585bb0a0d4afb4ede869f21d645b310d2e/11/jdk/windows/windowsservercore-ltsc2016/Dockerfile)
 -	`11.0.3-jdk-windowsservercore`, `11.0.3-windowsservercore`, `11.0-jdk-windowsservercore`, `11.0-windowsservercore`, `11-jdk-windowsservercore`, `11-windowsservercore`:
 	-	[`11.0.3-jdk-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/6c8415585bb0a0d4afb4ede869f21d645b310d2e/11/jdk/windows/windowsservercore-1809/Dockerfile)
 	-	[`11.0.3-jdk-windowsservercore-1803`](https://github.com/docker-library/openjdk/blob/6c8415585bb0a0d4afb4ede869f21d645b310d2e/11/jdk/windows/windowsservercore-1803/Dockerfile)
 	-	[`11.0.3-jdk-windowsservercore-ltsc2016`](https://github.com/docker-library/openjdk/blob/6c8415585bb0a0d4afb4ede869f21d645b310d2e/11/jdk/windows/windowsservercore-ltsc2016/Dockerfile)
 -	`8u212-b04-jdk`, `8u212-b04`, `8u212-jdk`, `8u212`, `8-jdk`, `8`:
 	-	[`8u212-b04-jdk-stretch`](https://github.com/docker-library/openjdk/blob/da44a9234d75e3d89ea00d679cb6a326cbbbbead/8/jdk/Dockerfile)
+	-	[`8u212-b04-jdk-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/6c8415585bb0a0d4afb4ede869f21d645b310d2e/8/jdk/windows/windowsservercore-1809/Dockerfile)
+	-	[`8u212-b04-jdk-windowsservercore-1803`](https://github.com/docker-library/openjdk/blob/6c8415585bb0a0d4afb4ede869f21d645b310d2e/8/jdk/windows/windowsservercore-1803/Dockerfile)
+	-	[`8u212-b04-jdk-windowsservercore-ltsc2016`](https://github.com/docker-library/openjdk/blob/6c8415585bb0a0d4afb4ede869f21d645b310d2e/8/jdk/windows/windowsservercore-ltsc2016/Dockerfile)
 -	`8u212-b04-jdk-windowsservercore`, `8u212-b04-windowsservercore`, `8u212-jdk-windowsservercore`, `8u212-windowsservercore`, `8-jdk-windowsservercore`, `8-windowsservercore`:
 	-	[`8u212-b04-jdk-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/6c8415585bb0a0d4afb4ede869f21d645b310d2e/8/jdk/windows/windowsservercore-1809/Dockerfile)
 	-	[`8u212-b04-jdk-windowsservercore-1803`](https://github.com/docker-library/openjdk/blob/6c8415585bb0a0d4afb4ede869f21d645b310d2e/8/jdk/windows/windowsservercore-1803/Dockerfile)
 	-	[`8u212-b04-jdk-windowsservercore-ltsc2016`](https://github.com/docker-library/openjdk/blob/6c8415585bb0a0d4afb4ede869f21d645b310d2e/8/jdk/windows/windowsservercore-ltsc2016/Dockerfile)
 -	`8u212-b04-jre`, `8u212-jre`, `8-jre`:
 	-	[`8u212-b04-jre-stretch`](https://github.com/docker-library/openjdk/blob/da44a9234d75e3d89ea00d679cb6a326cbbbbead/8/jre/Dockerfile)
+	-	[`8u212-b04-jre-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/6c8415585bb0a0d4afb4ede869f21d645b310d2e/8/jre/windows/windowsservercore-1809/Dockerfile)
+	-	[`8u212-b04-jre-windowsservercore-1803`](https://github.com/docker-library/openjdk/blob/6c8415585bb0a0d4afb4ede869f21d645b310d2e/8/jre/windows/windowsservercore-1803/Dockerfile)
+	-	[`8u212-b04-jre-windowsservercore-ltsc2016`](https://github.com/docker-library/openjdk/blob/6c8415585bb0a0d4afb4ede869f21d645b310d2e/8/jre/windows/windowsservercore-ltsc2016/Dockerfile)
 -	`8u212-b04-jre-windowsservercore`, `8u212-jre-windowsservercore`, `8-jre-windowsservercore`:
 	-	[`8u212-b04-jre-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/6c8415585bb0a0d4afb4ede869f21d645b310d2e/8/jre/windows/windowsservercore-1809/Dockerfile)
 	-	[`8u212-b04-jre-windowsservercore-1803`](https://github.com/docker-library/openjdk/blob/6c8415585bb0a0d4afb4ede869f21d645b310d2e/8/jre/windows/windowsservercore-1803/Dockerfile)
