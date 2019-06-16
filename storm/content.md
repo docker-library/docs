@@ -54,7 +54,7 @@ Run `docker stack deploy -c stack.yml storm` (or `docker-compose -f stack.yml up
 
 ## Configuration
 
-This image uses [default configuration](https://github.com/apache/storm/blob/v1.1.0/conf/defaults.yaml) of the Apache Storm. There are two main ways to change it.
+This image uses [default configuration](https://github.com/apache/storm/blob/v2.0.0/conf/defaults.yaml) of the Apache Storm. There are two main ways to change it.
 
 1.	Using command line arguments.
 
@@ -70,7 +70,7 @@ This image uses [default configuration](https://github.com/apache/storm/blob/v1.
 
 ## Logging
 
-This image uses [default logging configuration](https://github.com/apache/storm/tree/v1.1.0/log4j2). All logs go to the `/logs` directory by default.
+This image uses [default logging configuration](https://github.com/apache/storm/tree/v2.0.0/log4j2). All logs go to the `/logs` directory by default.
 
 ## Data persistence
 
