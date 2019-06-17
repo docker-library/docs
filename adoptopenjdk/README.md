@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8u212-b03-jdk-hotspot`, `8-jdk-hotspot`, `8-hotspot`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/ba8e2ff59253f16c76878d032a846199d58f453e/8/jdk/ubuntu/Dockerfile.hotspot.releases.full)
--	[`8u212-b03-jre-hotspot`, `8-jre-hotspot`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/ba8e2ff59253f16c76878d032a846199d58f453e/8/jre/ubuntu/Dockerfile.hotspot.releases.full)
+-	[`8u212-b04-jdk-hotspot`, `8-jdk-hotspot`, `8-hotspot`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/02e23cd61cc3e013c160a564b4ac0e4d18d94a0b/8/jdk/ubuntu/Dockerfile.hotspot.releases.full)
+-	[`8u212-b04-jre-hotspot`, `8-jre-hotspot`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/02e23cd61cc3e013c160a564b4ac0e4d18d94a0b/8/jre/ubuntu/Dockerfile.hotspot.releases.full)
 -	[`11.0.3_7-jdk-hotspot`, `11-jdk-hotspot`, `11-hotspot`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/ba8e2ff59253f16c76878d032a846199d58f453e/11/jdk/ubuntu/Dockerfile.hotspot.releases.full)
 -	[`11.0.3_7-jre-hotspot`, `11-jre-hotspot`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/ba8e2ff59253f16c76878d032a846199d58f453e/11/jre/ubuntu/Dockerfile.hotspot.releases.full)
 -	[`12.0.1_12-jdk-hotspot`, `12-jdk-hotspot`, `12-hotspot`, `hotspot`, `latest`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/ba8e2ff59253f16c76878d032a846199d58f453e/12/jdk/ubuntu/Dockerfile.hotspot.releases.full)
