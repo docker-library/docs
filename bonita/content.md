@@ -85,7 +85,7 @@ Run `docker stack deploy -c stack.yml %%REPO%%` (or `docker-compose -f stack.yml
 
 ## Where to store data
 
-Most of the data are stored in a database and can be stored outside the Bonita container as described above using the PostgreSQL or MySQL container. However, some data remains inside the Bonita bundle. Bonita Home is a folder, called `bonita`, which contains configuration, working, and temporary folders and files. There are also log files inside the `logs` folder.
+Most of the data are stored in a database and can be stored outside the Bonita container as described above using the PostgreSQL or MySQL container. However, some data remains inside the Bonita bundle. Bonita Home is a folder, called `bonita`, which contains configuration, working, and temporary folders and files. There are also log files inside the `logs` folder till Bonita 7.8.
 
 Important note: There are several ways to store data used by applications that run in Docker containers. We encourage users of the `%%REPO%%` images to familiarize themselves with the options available, including:
 
@@ -238,7 +238,7 @@ The `-v /my/own/datadir:/opt/bonita` part of the command mounts the `/my/own/dat
 	```
 
 	```console
-	$ cd /opt/bonita/BonitaCommunity-7.9.0-Tomcat-8.5.34/setup
+	$ cd /opt/bonita/BonitaCommunity-7.9.0-tomcat/setup
 	$ ./setup.sh pull
 	$ TENANT_LOGIN=tech_user
 	$ TENANT_PASSWORD=secret
@@ -260,6 +260,10 @@ The `-v /my/own/datadir:/opt/bonita` part of the command mounts the `/my/own/dat
 	```console
 	$ docker restart bonita_7.9.0_postgres
 	```
+
+-	Specific consideration regarding migration to Java 11 in Bonita 7.9
+
+	Bonita 7.9 docker image runs with Java 11. If you are migrating from an earlier version which runs Java 7.8 you should validate on a test environment that your custom code is compatible. Aside from just code incompatibility, special attention has to be given to the dependencies of the custom code, as they might either not work in Java 11.
 
 For more details regarding Bonita migration, see the [documentation](https://documentation.bonitasoft.com/bonita/7.9/migrate-from-an-earlier-version-of-bonita-bpm).
 
@@ -361,6 +365,14 @@ These variables are optional, and used in conjunction to create users and databa
 
 `BIZ_DB_DROP_EXISTING` default value is `N`.
 
+### `BONITA_SERVER_LOGGING_FILE`, `BONITA_SETUP_LOGGING_FILE`
+
+Since Bonita 7.9 `BONITA_SERVER_LOGGING_FILE` and `BONITA_SETUP_LOGGING_FILE` can be used to update logging configuration.
+
+`BONITA_SERVER_LOGGING_FILE` default value is `/opt/bonita/BonitaSubscription-${BONITA_VERSION}-tomcat/server/conf/logging.properties`.
+
+`BONITA_SETUP_LOGGING_FILE` default value is `/opt/bonita/BonitaSubscription-${BONITA_VERSION}-tomcat/setup/logback.xml`.
+
 # How to extend this image
 
 If you would like to do additional initialization, you can add a `*.sh` script under `/opt/custom-init.d`. The `startup.sh` file will source any `*.sh` script found in this directory to do further initialization before starting the service.
@@ -370,15 +382,29 @@ For example, you can increase the log level :
 ```console
 $ mkdir -p custom_bonita
 $ echo '#!/bin/bash' > custom_bonita/bonita.sh
-$ echo 'sed -i "s/^org.bonitasoft.level = WARNING$/org.bonitasoft.level = FINEST/" /opt/bonita/BonitaCommunity-7.9.0-Tomcat-8.5.34/server/conf/logging.properties' >> custom_bonita/bonita.sh
+$ echo 'sed -i "s/^org.bonitasoft.level = WARNING$/org.bonitasoft.level = FINEST/" /opt/bonita/BonitaCommunity-7.8.4-Tomcat-8.5.34/server/conf/logging.properties' >> custom_bonita/bonita.sh
 $ chmod +x custom_bonita/bonita.sh
 
 $ docker run --name bonita_custom -v "$PWD"/custom_bonita/:/opt/custom-init.d -d -p 8080:8080 %%IMAGE%%
 ```
 
-Note: There are several ways to check the `bonita` logs. One of them is
+Since Bonita 7.9 you can also apply a custom `logging.properties` file like this :
+
+```console
+docker run --name bonita \
+  -v /path/to/logging.properties:/etc/logging.properties -e BONITA_SERVER_LOGGING_FILE=/etc/logging.properties \
+  -d -p 8080:8080 %%IMAGE%%
+```
+
+Note: There are several ways to check the `bonita` logs. Till Bonita 7.8, one of them is
 
 ```console
 $ docker exec -ti bonita_custom /bin/bash
-tail -f /opt/bonita/BonitaCommunity-7.9.0-Tomcat-8.5.34/server/logs/bonita.`date +%Y-%m-%d`.log
+tail -f /opt/bonita/BonitaCommunity-7.8.4-Tomcat-8.5.34/server/logs/bonita.`date +%Y-%m-%d`.log
+```
+
+Since Bonita 7.9 bonita logs are redirected towards standard output and directly accessible using
+
+```console
+$ docker logs -f bonita
 ```
