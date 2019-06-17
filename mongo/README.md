@@ -18,7 +18,7 @@ WARNING:
 
 ## Simple Tags
 
--	[`3.4.21-xenial`, `3.4-xenial`](https://github.com/docker-library/mongo/blob/0336b736c7368413edee47513a478b0f616ec3e3/3.4/Dockerfile)
+-	[`3.4.21-xenial`, `3.4-xenial`](https://github.com/docker-library/mongo/blob/206d99a55d42d3a7d24ff3c75ace7972c57f2adb/3.4/Dockerfile)
 -	[`3.4.21-windowsservercore-ltsc2016`, `3.4-windowsservercore-ltsc2016`](https://github.com/docker-library/mongo/blob/c60938f89c4138a5417724a5b9eaeb2d4cbe4c23/3.4/windows/windowsservercore-ltsc2016/Dockerfile)
 -	[`3.6.13-xenial`, `3.6-xenial`, `3-xenial`](https://github.com/docker-library/mongo/blob/c6d7e7fb21b03905c4796293f9bdbba5227acd75/3.6/Dockerfile)
 -	[`3.6.13-windowsservercore-ltsc2016`, `3.6-windowsservercore-ltsc2016`, `3-windowsservercore-ltsc2016`](https://github.com/docker-library/mongo/blob/c6d7e7fb21b03905c4796293f9bdbba5227acd75/3.6/windows/windowsservercore-ltsc2016/Dockerfile)
@@ -35,7 +35,7 @@ WARNING:
 ## Shared Tags
 
 -	`3.4.21`, `3.4`:
-	-	[`3.4.21-xenial`](https://github.com/docker-library/mongo/blob/0336b736c7368413edee47513a478b0f616ec3e3/3.4/Dockerfile)
+	-	[`3.4.21-xenial`](https://github.com/docker-library/mongo/blob/206d99a55d42d3a7d24ff3c75ace7972c57f2adb/3.4/Dockerfile)
 	-	[`3.4.21-windowsservercore-ltsc2016`](https://github.com/docker-library/mongo/blob/c60938f89c4138a5417724a5b9eaeb2d4cbe4c23/3.4/windows/windowsservercore-ltsc2016/Dockerfile)
 -	`3.4.21-windowsservercore`, `3.4-windowsservercore`:
 	-	[`3.4.21-windowsservercore-ltsc2016`](https://github.com/docker-library/mongo/blob/c60938f89c4138a5417724a5b9eaeb2d4cbe4c23/3.4/windows/windowsservercore-ltsc2016/Dockerfile)
