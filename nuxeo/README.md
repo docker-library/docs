@@ -33,7 +33,7 @@ WARNING:
 	[Nuxeo](https://github.com/nuxeo/docker-nuxeo)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/nuxeo/), [`arm64v8`](https://hub.docker.com/r/arm64v8/nuxeo/)
+	[`amd64`](https://hub.docker.com/r/amd64/nuxeo/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/nuxeo/` directory](https://github.com/docker-library/repo-info/blob/master/repos/nuxeo) ([history](https://github.com/docker-library/repo-info/commits/master/repos/nuxeo))  
