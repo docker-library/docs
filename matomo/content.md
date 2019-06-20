@@ -10,11 +10,7 @@
 
 %%LOGO%%
 
-## Usage
-
-In keeping with a 'pure' micro-services approach, this image runs a Matomo service only (in the form of FastCGI). Because of that it **must** be used with companion containers which provide a database for data storage and HTTP to FastCGI proxy/translation services for the user interface.
-
-## Runtime
+# How to use this image
 
 You can run the Matomo container and service like so:
 
@@ -24,16 +20,22 @@ docker run -d --link some-mysql:db matomo
 
 This assumes you've already launched a suitable MySQL or MariaDB database container.
 
-You'll now need to use a suitable reverse proxy to access the user interface; which is available on TCP port 9000. Nginx provides the necessary functions for translation between HTTP and FastCGI.
+## Persistent data
+
+Use a Docker volume to keep persistent data:
+
+```console
+docker run -d --link some-mysql:db -v matomo:/var/www/html matomo
+```
 
 ## Matomo Installation
 
 Once you're up and running, you'll arrive at the configuration wizard page. If you're using the compose file, at the `Database Setup` step, please enter the following:
 
 -	Database Server: `db`
--	Login: `root`
--	Password: MYSQL_ROOT_PASSWORD
--	Database Name: piwik (or you can choose)
+-	Login: MYSQL_USER
+-	Password: MYSQL_PASSWORD
+-	Database Name: MYSQL_DATABASE
 
 And leave the rest as default.
 
@@ -58,3 +60,19 @@ We'd love to hear your feedback and suggestions in the issue tracker: [github.co
 ## GeoIP
 
 This product includes GeoLite data created by MaxMind, available from [http://www.maxmind.com](http://www.maxmind.com).
+
+## Image Variants
+
+The following variants are currently provided:
+
+### apache
+
+This starts an Apache webserver with PHP, so you can use `matomo` out of the box.
+
+### fpm-alpine
+
+This image has a very small footprint. It is based on Alpine Linux and starts only a PHP FPM process. Use this variant if you already have a seperate webserver. If you need more tools, that are not available on Alpine Linux, use the `fpm` image instead.
+
+### fpm
+
+This image starts only a PHP FPM container. Use this variant if you already have a seperate webserver.
