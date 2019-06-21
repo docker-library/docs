@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.5.7`, `7.5`, `latest`](https://github.com/convertigo/docker/blob/59af509cbad0944fbbf2ad3cdb103d24e330cbec/7.5/7.5.7/Dockerfile)
--	[`7.5.7-slim`, `7.5-slim`, `slim`](https://github.com/convertigo/docker/blob/59af509cbad0944fbbf2ad3cdb103d24e330cbec/7.5/7.5.7/slim/Dockerfile)
+-	[`7.5.7`, `7.5`, `latest`](https://github.com/convertigo/docker/blob/24aac18434c36052877fd3e083db0e671e8bd742/7.5/7.5.7/Dockerfile)
+-	[`7.5.7-slim`, `7.5-slim`, `slim`](https://github.com/convertigo/docker/blob/24aac18434c36052877fd3e083db0e671e8bd742/7.5/7.5.7/slim/Dockerfile)
 
 # Quick reference
 
