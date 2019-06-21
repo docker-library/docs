@@ -40,12 +40,12 @@ WARNING:
 -	[`melodic-ros-base-stretch`](https://github.com/osrf/docker_images/blob/1a1c56d93f309d10c412c6323db5791fc1b23d1b/ros/melodic/debian/stretch/ros-base/Dockerfile)
 -	[`melodic-robot-stretch`](https://github.com/osrf/docker_images/blob/1a1c56d93f309d10c412c6323db5791fc1b23d1b/ros/melodic/debian/stretch/robot/Dockerfile)
 -	[`melodic-perception-stretch`](https://github.com/osrf/docker_images/blob/1a1c56d93f309d10c412c6323db5791fc1b23d1b/ros/melodic/debian/stretch/perception/Dockerfile)
--	[`bouncy-ros-core`, `bouncy-ros-core-bionic`](https://github.com/osrf/docker_images/blob/fb0fe0a628d023eec6ea1444551fa28209bd28d6/ros/bouncy/ubuntu/bionic/ros-core/Dockerfile)
--	[`bouncy-ros-base`, `bouncy-ros-base-bionic`, `bouncy`](https://github.com/osrf/docker_images/blob/fb0fe0a628d023eec6ea1444551fa28209bd28d6/ros/bouncy/ubuntu/bionic/ros-base/Dockerfile)
--	[`crystal-ros-core`, `crystal-ros-core-bionic`](https://github.com/osrf/docker_images/blob/fb0fe0a628d023eec6ea1444551fa28209bd28d6/ros/crystal/ubuntu/bionic/ros-core/Dockerfile)
--	[`crystal-ros-base`, `crystal-ros-base-bionic`, `crystal`](https://github.com/osrf/docker_images/blob/fb0fe0a628d023eec6ea1444551fa28209bd28d6/ros/crystal/ubuntu/bionic/ros-base/Dockerfile)
--	[`dashing-ros-core`, `dashing-ros-core-bionic`](https://github.com/osrf/docker_images/blob/b832b00758b1cde2893b80f2f769b076164d9982/ros/dashing/ubuntu/bionic/ros-core/Dockerfile)
--	[`dashing-ros-base`, `dashing-ros-base-bionic`, `dashing`](https://github.com/osrf/docker_images/blob/b832b00758b1cde2893b80f2f769b076164d9982/ros/dashing/ubuntu/bionic/ros-base/Dockerfile)
+-	[`bouncy-ros-core`, `bouncy-ros-core-bionic`](https://github.com/osrf/docker_images/blob/32244a8fafcf7d3c69c48e3a3aa082e4acc1fbf7/ros/bouncy/ubuntu/bionic/ros-core/Dockerfile)
+-	[`bouncy-ros-base`, `bouncy-ros-base-bionic`, `bouncy`](https://github.com/osrf/docker_images/blob/32244a8fafcf7d3c69c48e3a3aa082e4acc1fbf7/ros/bouncy/ubuntu/bionic/ros-base/Dockerfile)
+-	[`crystal-ros-core`, `crystal-ros-core-bionic`](https://github.com/osrf/docker_images/blob/32244a8fafcf7d3c69c48e3a3aa082e4acc1fbf7/ros/crystal/ubuntu/bionic/ros-core/Dockerfile)
+-	[`crystal-ros-base`, `crystal-ros-base-bionic`, `crystal`](https://github.com/osrf/docker_images/blob/32244a8fafcf7d3c69c48e3a3aa082e4acc1fbf7/ros/crystal/ubuntu/bionic/ros-base/Dockerfile)
+-	[`dashing-ros-core`, `dashing-ros-core-bionic`](https://github.com/osrf/docker_images/blob/bf5aa6ca8ca41a096dd20b7b9e4e18594795bd27/ros/dashing/ubuntu/bionic/ros-core/Dockerfile)
+-	[`dashing-ros-base`, `dashing-ros-base-bionic`, `dashing`](https://github.com/osrf/docker_images/blob/bf5aa6ca8ca41a096dd20b7b9e4e18594795bd27/ros/dashing/ubuntu/bionic/ros-base/Dockerfile)
 
 # Quick reference
 
