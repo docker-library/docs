@@ -20,8 +20,8 @@ WARNING:
 -	[`2.7-7.1.1-slim`, `2.7-7.1-slim`, `2.7-7-slim`, `2.7-slim`, `2-7.1.1-slim`, `2-7.1-slim`, `2-7-slim`, `2-slim`, `2.7-7.1.1-slim-jessie`, `2.7-7.1-slim-jessie`, `2.7-7-slim-jessie`, `2.7-slim-jessie`, `2-7.1.1-slim-jessie`, `2-7.1-slim-jessie`, `2-7-slim-jessie`, `2-slim-jessie`](https://github.com/docker-library/pypy/blob/eb8f5a1379cb955c32678e5b4824f1263af8ab09/2.7/slim/Dockerfile)
 -	[`3.5-7.0.0`, `3.5-7.0`, `3.5-7`, `3.5`, `3-7.0.0`, `3-7.0`, `3-7`, `3`, `latest`, `3.5-7.0.0-stretch`, `3.5-7.0-stretch`, `3.5-7-stretch`, `3.5-stretch`, `3-7.0.0-stretch`, `3-7.0-stretch`, `3-7-stretch`, `3-stretch`, `stretch`](https://github.com/docker-library/pypy/blob/2e5bca39321ccaecbfe9f387e20b43d04c270154/3.5/Dockerfile)
 -	[`3.5-7.0.0-slim`, `3.5-7.0-slim`, `3.5-7-slim`, `3.5-slim`, `3-7.0.0-slim`, `3-7.0-slim`, `3-7-slim`, `3-slim`, `slim`, `3.5-7.0.0-slim-stretch`, `3.5-7.0-slim-stretch`, `3.5-7-slim-stretch`, `3.5-slim-stretch`, `3-7.0.0-slim-stretch`, `3-7.0-slim-stretch`, `3-7-slim-stretch`, `3-slim-stretch`, `slim-stretch`](https://github.com/docker-library/pypy/blob/2e5bca39321ccaecbfe9f387e20b43d04c270154/3.5/slim/Dockerfile)
--	[`3.6-7.1.1`, `3.6-7.1`, `3.6-7`, `3.6`, `3.6-7.1.1-stretch`, `3.6-7.1-stretch`, `3.6-7-stretch`, `3.6-stretch`](https://github.com/docker-library/pypy/blob/eb8f5a1379cb955c32678e5b4824f1263af8ab09/3.6/Dockerfile)
--	[`3.6-7.1.1-slim`, `3.6-7.1-slim`, `3.6-7-slim`, `3.6-slim`, `3.6-7.1.1-slim-stretch`, `3.6-7.1-slim-stretch`, `3.6-7-slim-stretch`, `3.6-slim-stretch`](https://github.com/docker-library/pypy/blob/eb8f5a1379cb955c32678e5b4824f1263af8ab09/3.6/slim/Dockerfile)
+-	[`3.6-7.1.1`, `3.6-7.1`, `3.6-7`, `3.6`, `3.6-7.1.1-stretch`, `3.6-7.1-stretch`, `3.6-7-stretch`, `3.6-stretch`](https://github.com/docker-library/pypy/blob/669ca6492e33303a5f4770fd2ffa009b8b47ced9/3.6/Dockerfile)
+-	[`3.6-7.1.1-slim`, `3.6-7.1-slim`, `3.6-7-slim`, `3.6-slim`, `3.6-7.1.1-slim-stretch`, `3.6-7.1-slim-stretch`, `3.6-7-slim-stretch`, `3.6-slim-stretch`](https://github.com/docker-library/pypy/blob/669ca6492e33303a5f4770fd2ffa009b8b47ced9/3.6/slim/Dockerfile)
 
 # Quick reference
 
