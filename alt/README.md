@@ -47,9 +47,6 @@ For create new bug, please use [ALT's bugzilla page](https://bugzilla.altlinux.o
 -	**Source of this description**:  
 	[docs repo's `alt/` directory](https://github.com/docker-library/docs/tree/master/alt) ([history](https://github.com/docker-library/docs/commits/master/alt))
 
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
-
 # ALT Linux
 
 This image serves as the `official ALT image` for the [ALT Linux](https://altlinux.org/).

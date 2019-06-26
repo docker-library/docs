@@ -44,9 +44,6 @@ WARNING:
 -	**Source of this description**:  
 	[docs repo's `fluentd/` directory](https://github.com/docker-library/docs/tree/master/fluentd) ([history](https://github.com/docker-library/docs/commits/master/fluentd))
 
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
-
 # What is Fluentd?
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/23d5a64f3f38c1cad2557ded3d3d16388d9239cb/fluentd/logo.png)

@@ -44,9 +44,6 @@ WARNING:
 -	**Source of this description**:  
 	[docs repo's `sl/` directory](https://github.com/docker-library/docs/tree/master/sl) ([history](https://github.com/docker-library/docs/commits/master/sl))
 
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
-
 # Scientific Linux
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/9d3c9d2eb97c9558ed53dc5f7f837654d455f9e5/sl/logo.png)

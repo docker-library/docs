@@ -54,9 +54,6 @@ WARNING:
 -	**Source of this description**:  
 	[docs repo's `flink/` directory](https://github.com/docker-library/docs/tree/master/flink) ([history](https://github.com/docker-library/docs/commits/master/flink))
 
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
-
 # What is Apache Flink?
 
 Apache Flink is an open source stream processing framework with powerful stream- and batch-processing capabilities.

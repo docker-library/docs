@@ -45,9 +45,6 @@ WARNING:
 -	**Source of this description**:  
 	[docs repo's `postfixadmin/` directory](https://github.com/docker-library/docs/tree/master/postfixadmin) ([history](https://github.com/docker-library/docs/commits/master/postfixadmin))
 
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
-
 # What is Postfix Admin?
 
 Postfix Admin is a web based interface to configure and manage a Postfix based email server for many users. Features include support for virtual domains and aliases, quotas, and vacation/out-of-the-office messages. It requires PHP, Postfix and one of MySQL, PostgreSQL or SQLite.

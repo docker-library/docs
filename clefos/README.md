@@ -43,9 +43,6 @@ WARNING:
 -	**Source of this description**:  
 	[docs repo's `clefos/` directory](https://github.com/docker-library/docs/tree/master/clefos) ([history](https://github.com/docker-library/docs/commits/master/clefos))
 
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
-
 # ClefOS
 
 ClefOS Linux is a community-supported distribution for IBM Z (aka "mainframe") derived from sources freely provided to the public by [CentOS](http://vault.clefos.org/) which in turn is derived from the [Red Hat](ftp://ftp.redhat.com/pub/redhat/linux/enterprise/) sources for Red Hat Enterprise Linux (RHEL). As such, ClefOS Linux aims to be functionally compatible with CentOS and RHEL. The ClefOS Project mainly changes packages to remove upstream vendor branding and artwork. ClefOS Linux is no-cost and free to redistribute. Each ClefOS Linux version is maintained and released according to the CentOS schedule.

@@ -53,9 +53,6 @@ An archive for images of unsupported versions can be found at [`opensuse/archive
 -	**Source of this description**:  
 	[docs repo's `opensuse/` directory](https://github.com/docker-library/docs/tree/master/opensuse) ([history](https://github.com/docker-library/docs/commits/master/opensuse))
 
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
-
 # openSUSE
 
 This project contains the stable releases of the openSUSE distribution.

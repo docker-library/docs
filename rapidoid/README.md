@@ -43,9 +43,6 @@ WARNING:
 -	**Source of this description**:  
 	[docs repo's `rapidoid/` directory](https://github.com/docker-library/docs/tree/master/rapidoid) ([history](https://github.com/docker-library/docs/commits/master/rapidoid))
 
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
-
 # What is Rapidoid?
 
 Rapidoid is an extremely fast HTTP server and modern Java web framework / application container, with a strong focus on high productivity and high performance.

@@ -60,9 +60,6 @@ WARNING:
 -	**Source of this description**:  
 	[docs repo's `elixir/` directory](https://github.com/docker-library/docs/tree/master/elixir) ([history](https://github.com/docker-library/docs/commits/master/elixir))
 
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
-
 # What is Elixir?
 
 Elixir is a dynamic, functional language designed for building scalable and maintainable applications.

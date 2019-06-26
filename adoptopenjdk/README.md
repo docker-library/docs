@@ -208,9 +208,6 @@ WARNING:
 -	**Source of this description**:  
 	[docs repo's `adoptopenjdk/` directory](https://github.com/docker-library/docs/tree/master/adoptopenjdk) ([history](https://github.com/docker-library/docs/commits/master/adoptopenjdk))
 
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
-
 ## Overview
 
 The images in this repository contain OpenJDK binaries that are built by AdoptOpenJDK and contain both HotSpot and Eclipse OpenJ9 JVMs.
@@ -236,9 +233,9 @@ There are two types of Docker images here: the Java Development Kit (JDK) and th
 Docker Images for the following architectures are now available:
 
 -	HotSpot
-	-	amd64, arm32v7, arm64v8, ppc64le, s390x
+	-	`amd64`, `arm32v7`, `arm64v8`, `ppc64le`, `s390x`, `windows-amd64`
 -	Eclipse OpenJ9
-	-	amd64, ppc64le, s390x
+	-	`amd64`, `ppc64le`, `s390x`, `windows-amd64`
 
 # How to use this Image
 

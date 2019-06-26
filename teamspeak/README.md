@@ -43,9 +43,6 @@ WARNING:
 -	**Source of this description**:  
 	[docs repo's `teamspeak/` directory](https://github.com/docker-library/docs/tree/master/teamspeak) ([history](https://github.com/docker-library/docs/commits/master/teamspeak))
 
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
-
 # What is TeamSpeak?
 
 TeamSpeak offers the ideal voice communication for online gaming, education and training, internal business communication, and staying in touch with friends and family. Our primary focus is delivering a solution that is easy to use, with high security standards, excellent voice quality, and low system and bandwidth usage.

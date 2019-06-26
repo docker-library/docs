@@ -51,9 +51,6 @@ WARNING:
 -	**Source of this description**:  
 	[docs repo's `docker/` directory](https://github.com/docker-library/docs/tree/master/docker) ([history](https://github.com/docker-library/docs/commits/master/docker))
 
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
-
 # What is Docker in Docker?
 
 Although running Docker inside Docker is generally not recommended, there are some legitimate use cases, such as development of Docker itself.

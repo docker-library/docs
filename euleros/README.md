@@ -46,9 +46,6 @@ WARNING:
 -	**Source of this description**:  
 	[docs repo's `euleros/` directory](https://github.com/docker-library/docs/tree/master/euleros) ([history](https://github.com/docker-library/docs/commits/master/euleros))
 
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
-
 ![logo](https://raw.githubusercontent.com/docker-library/docs/67335f712632d352c94de4beeff0120d7c68168c/euleros/logo.png)
 
 # EulerOS

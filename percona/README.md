@@ -49,9 +49,6 @@ WARNING:
 -	**Source of this description**:  
 	[docs repo's `percona/` directory](https://github.com/docker-library/docs/tree/master/percona) ([history](https://github.com/docker-library/docs/commits/master/percona))
 
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
-
 # Percona Server for MySQL
 
 Percona Server for MySQL is a fork of the MySQL relational database management system created by Percona.
