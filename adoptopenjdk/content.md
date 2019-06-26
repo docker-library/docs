@@ -23,9 +23,9 @@ There are two types of Docker images here: the Java Development Kit (JDK) and th
 Docker Images for the following architectures are now available:
 
 -	HotSpot
-	-	amd64, arm32v7, arm64v8, ppc64le, s390x
+	-	`amd64`, `arm32v7`, `arm64v8`, `ppc64le`, `s390x`, `windows-amd64`
 -	Eclipse OpenJ9
-	-	amd64, ppc64le, s390x
+	-	`amd64`, `ppc64le`, `s390x`, `windows-amd64`
 
 # How to use this Image
 
