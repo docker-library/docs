@@ -13,7 +13,7 @@ The Robot Operating System (ROS) is a set of software libraries and tools that h
 To create your own ROS docker images and install custom packages, here's a simple example of installing the C++, Python client library demos and security CLI using the official released Debian packages via apt-get.
 
 ```dockerfile
-FROM %%IMAGE%%:crystal
+FROM %%IMAGE%%:dashing
 
 # install ros packages for installed release
 RUN apt-get update && apt-get install -y \
@@ -45,7 +45,7 @@ $ docker run -it --rm my/ros:app
 To create your own ROS docker images and build custom packages, here's a simple example of installing a package's build dependencies, compiling it from source, and installing the resulting build artifacts into a final multi-stage image layer.
 
 ```dockerfile
-FROM %%IMAGE%%:crystal-ros-base
+FROM %%IMAGE%%:dashing-ros-base
 
 # install ros build tools
 RUN apt-get update && apt-get install -y \
@@ -78,7 +78,7 @@ RUN . /opt/ros/$ROS_DISTRO/setup.sh && \
         -DCMAKE_BUILD_TYPE=Release
 
 # copy ros package install via multi-stage
-FROM %%IMAGE%%:crystal-ros-core
+FROM %%IMAGE%%:dashing-ros-core
 ENV ROS_WS /opt/ros_ws
 COPY --from=0  $ROS_WS/install $ROS_WS/install
 
