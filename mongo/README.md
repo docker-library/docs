@@ -28,9 +28,9 @@ WARNING:
 -	[`4.1.13-bionic`, `4.1-bionic`, `unstable-bionic`](https://github.com/docker-library/mongo/blob/096bf90f3f86a8dd70e56b2c39590c0ca0bb5dd6/4.1/Dockerfile)
 -	[`4.1.13-windowsservercore-ltsc2016`, `4.1-windowsservercore-ltsc2016`, `unstable-windowsservercore-ltsc2016`](https://github.com/docker-library/mongo/blob/385d26429b42f0de1b97b1df48964af8b191f8fe/4.1/windows/windowsservercore-ltsc2016/Dockerfile)
 -	[`4.1.13-windowsservercore-1803`, `4.1-windowsservercore-1803`, `unstable-windowsservercore-1803`](https://github.com/docker-library/mongo/blob/385d26429b42f0de1b97b1df48964af8b191f8fe/4.1/windows/windowsservercore-1803/Dockerfile)
--	[`4.2.0-rc1-bionic`, `4.2-rc-bionic`, `rc-bionic`](https://github.com/docker-library/mongo/blob/096bf90f3f86a8dd70e56b2c39590c0ca0bb5dd6/4.2-rc/Dockerfile)
--	[`4.2.0-rc1-windowsservercore-ltsc2016`, `4.2-rc-windowsservercore-ltsc2016`, `rc-windowsservercore-ltsc2016`](https://github.com/docker-library/mongo/blob/b6a2025cd8ddf3cf15e125e208177b44dc08771f/4.2-rc/windows/windowsservercore-ltsc2016/Dockerfile)
--	[`4.2.0-rc1-windowsservercore-1803`, `4.2-rc-windowsservercore-1803`, `rc-windowsservercore-1803`](https://github.com/docker-library/mongo/blob/b6a2025cd8ddf3cf15e125e208177b44dc08771f/4.2-rc/windows/windowsservercore-1803/Dockerfile)
+-	[`4.2.0-rc2-bionic`, `4.2-rc-bionic`, `rc-bionic`](https://github.com/docker-library/mongo/blob/90a7bac2177b8e7a3c996f796be98e2da6029b10/4.2-rc/Dockerfile)
+-	[`4.2.0-rc2-windowsservercore-ltsc2016`, `4.2-rc-windowsservercore-ltsc2016`, `rc-windowsservercore-ltsc2016`](https://github.com/docker-library/mongo/blob/825473ffe6ad5fd14de11260af489a4089473d21/4.2-rc/windows/windowsservercore-ltsc2016/Dockerfile)
+-	[`4.2.0-rc2-windowsservercore-1803`, `4.2-rc-windowsservercore-1803`, `rc-windowsservercore-1803`](https://github.com/docker-library/mongo/blob/825473ffe6ad5fd14de11260af489a4089473d21/4.2-rc/windows/windowsservercore-1803/Dockerfile)
 
 ## Shared Tags
 
@@ -58,13 +58,13 @@ WARNING:
 -	`4.1.13-windowsservercore`, `4.1-windowsservercore`, `unstable-windowsservercore`:
 	-	[`4.1.13-windowsservercore-ltsc2016`](https://github.com/docker-library/mongo/blob/385d26429b42f0de1b97b1df48964af8b191f8fe/4.1/windows/windowsservercore-ltsc2016/Dockerfile)
 	-	[`4.1.13-windowsservercore-1803`](https://github.com/docker-library/mongo/blob/385d26429b42f0de1b97b1df48964af8b191f8fe/4.1/windows/windowsservercore-1803/Dockerfile)
--	`4.2.0-rc1`, `4.2-rc`, `rc`:
-	-	[`4.2.0-rc1-bionic`](https://github.com/docker-library/mongo/blob/096bf90f3f86a8dd70e56b2c39590c0ca0bb5dd6/4.2-rc/Dockerfile)
-	-	[`4.2.0-rc1-windowsservercore-ltsc2016`](https://github.com/docker-library/mongo/blob/b6a2025cd8ddf3cf15e125e208177b44dc08771f/4.2-rc/windows/windowsservercore-ltsc2016/Dockerfile)
-	-	[`4.2.0-rc1-windowsservercore-1803`](https://github.com/docker-library/mongo/blob/b6a2025cd8ddf3cf15e125e208177b44dc08771f/4.2-rc/windows/windowsservercore-1803/Dockerfile)
--	`4.2.0-rc1-windowsservercore`, `4.2-rc-windowsservercore`, `rc-windowsservercore`:
-	-	[`4.2.0-rc1-windowsservercore-ltsc2016`](https://github.com/docker-library/mongo/blob/b6a2025cd8ddf3cf15e125e208177b44dc08771f/4.2-rc/windows/windowsservercore-ltsc2016/Dockerfile)
-	-	[`4.2.0-rc1-windowsservercore-1803`](https://github.com/docker-library/mongo/blob/b6a2025cd8ddf3cf15e125e208177b44dc08771f/4.2-rc/windows/windowsservercore-1803/Dockerfile)
+-	`4.2.0-rc2`, `4.2-rc`, `rc`:
+	-	[`4.2.0-rc2-bionic`](https://github.com/docker-library/mongo/blob/90a7bac2177b8e7a3c996f796be98e2da6029b10/4.2-rc/Dockerfile)
+	-	[`4.2.0-rc2-windowsservercore-ltsc2016`](https://github.com/docker-library/mongo/blob/825473ffe6ad5fd14de11260af489a4089473d21/4.2-rc/windows/windowsservercore-ltsc2016/Dockerfile)
+	-	[`4.2.0-rc2-windowsservercore-1803`](https://github.com/docker-library/mongo/blob/825473ffe6ad5fd14de11260af489a4089473d21/4.2-rc/windows/windowsservercore-1803/Dockerfile)
+-	`4.2.0-rc2-windowsservercore`, `4.2-rc-windowsservercore`, `rc-windowsservercore`:
+	-	[`4.2.0-rc2-windowsservercore-ltsc2016`](https://github.com/docker-library/mongo/blob/825473ffe6ad5fd14de11260af489a4089473d21/4.2-rc/windows/windowsservercore-ltsc2016/Dockerfile)
+	-	[`4.2.0-rc2-windowsservercore-1803`](https://github.com/docker-library/mongo/blob/825473ffe6ad5fd14de11260af489a4089473d21/4.2-rc/windows/windowsservercore-1803/Dockerfile)
 
 # Quick reference
 

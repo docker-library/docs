@@ -18,6 +18,11 @@ WARNING:
 
 ## Simple Tags
 
+-	[`1.13beta1-buster`, `1.13-rc-buster`, `rc-buster`](https://github.com/docker-library/golang/blob/a8b5183271450c7519e8b1b179f00292757f8e7b/1.13-rc/buster/Dockerfile)
+-	[`1.13beta1-alpine3.10`, `1.13-rc-alpine3.10`, `rc-alpine3.10`, `1.13beta1-alpine`, `1.13-rc-alpine`, `rc-alpine`](https://github.com/docker-library/golang/blob/a8b5183271450c7519e8b1b179f00292757f8e7b/1.13-rc/alpine3.10/Dockerfile)
+-	[`1.13beta1-windowsservercore-ltsc2016`, `1.13-rc-windowsservercore-ltsc2016`, `rc-windowsservercore-ltsc2016`](https://github.com/docker-library/golang/blob/a8b5183271450c7519e8b1b179f00292757f8e7b/1.13-rc/windows/windowsservercore-ltsc2016/Dockerfile)
+-	[`1.13beta1-windowsservercore-1803`, `1.13-rc-windowsservercore-1803`, `rc-windowsservercore-1803`](https://github.com/docker-library/golang/blob/a8b5183271450c7519e8b1b179f00292757f8e7b/1.13-rc/windows/windowsservercore-1803/Dockerfile)
+-	[`1.13beta1-windowsservercore-1809`, `1.13-rc-windowsservercore-1809`, `rc-windowsservercore-1809`](https://github.com/docker-library/golang/blob/a8b5183271450c7519e8b1b179f00292757f8e7b/1.13-rc/windows/windowsservercore-1809/Dockerfile)
 -	[`1.12.6-stretch`, `1.12-stretch`, `1-stretch`, `stretch`](https://github.com/docker-library/golang/blob/a9171b851ba926f2979e8c711d25faa025194def/1.12/stretch/Dockerfile)
 -	[`1.12.6-alpine3.10`, `1.12-alpine3.10`, `1-alpine3.10`, `alpine3.10`, `1.12.6-alpine`, `1.12-alpine`, `1-alpine`, `alpine`](https://github.com/docker-library/golang/blob/a3e99c2914478c623a6142c4a61e2e508e0bc7e8/1.12/alpine3.10/Dockerfile)
 -	[`1.12.6-alpine3.9`, `1.12-alpine3.9`, `1-alpine3.9`, `alpine3.9`](https://github.com/docker-library/golang/blob/a9171b851ba926f2979e8c711d25faa025194def/1.12/alpine3.9/Dockerfile)
@@ -33,6 +38,15 @@ WARNING:
 
 ## Shared Tags
 
+-	`1.13beta1`, `1.13-rc`, `rc`:
+	-	[`1.13beta1-buster`](https://github.com/docker-library/golang/blob/a8b5183271450c7519e8b1b179f00292757f8e7b/1.13-rc/buster/Dockerfile)
+	-	[`1.13beta1-windowsservercore-ltsc2016`](https://github.com/docker-library/golang/blob/a8b5183271450c7519e8b1b179f00292757f8e7b/1.13-rc/windows/windowsservercore-ltsc2016/Dockerfile)
+	-	[`1.13beta1-windowsservercore-1803`](https://github.com/docker-library/golang/blob/a8b5183271450c7519e8b1b179f00292757f8e7b/1.13-rc/windows/windowsservercore-1803/Dockerfile)
+	-	[`1.13beta1-windowsservercore-1809`](https://github.com/docker-library/golang/blob/a8b5183271450c7519e8b1b179f00292757f8e7b/1.13-rc/windows/windowsservercore-1809/Dockerfile)
+-	`1.13beta1-windowsservercore`, `1.13-rc-windowsservercore`, `rc-windowsservercore`:
+	-	[`1.13beta1-windowsservercore-ltsc2016`](https://github.com/docker-library/golang/blob/a8b5183271450c7519e8b1b179f00292757f8e7b/1.13-rc/windows/windowsservercore-ltsc2016/Dockerfile)
+	-	[`1.13beta1-windowsservercore-1803`](https://github.com/docker-library/golang/blob/a8b5183271450c7519e8b1b179f00292757f8e7b/1.13-rc/windows/windowsservercore-1803/Dockerfile)
+	-	[`1.13beta1-windowsservercore-1809`](https://github.com/docker-library/golang/blob/a8b5183271450c7519e8b1b179f00292757f8e7b/1.13-rc/windows/windowsservercore-1809/Dockerfile)
 -	`1.12.6`, `1.12`, `1`, `latest`:
 	-	[`1.12.6-stretch`](https://github.com/docker-library/golang/blob/a9171b851ba926f2979e8c711d25faa025194def/1.12/stretch/Dockerfile)
 	-	[`1.12.6-windowsservercore-ltsc2016`](https://github.com/docker-library/golang/blob/a9171b851ba926f2979e8c711d25faa025194def/1.12/windows/windowsservercore-ltsc2016/Dockerfile)
@@ -152,7 +166,7 @@ The `golang` images come in many flavors, each designed for a specific use case.
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like stretch in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on.
+Some of these tags may have names like buster or stretch in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on.
 
 ## `golang:<version>-alpine`
 
