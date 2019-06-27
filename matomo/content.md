@@ -60,19 +60,3 @@ We'd love to hear your feedback and suggestions in the issue tracker: [github.co
 ## GeoIP
 
 This product includes GeoLite data created by MaxMind, available from [http://www.maxmind.com](http://www.maxmind.com).
-
-## Image Variants
-
-The following variants are currently provided:
-
-### apache
-
-This starts an Apache webserver with PHP, so you can use `matomo` out of the box.
-
-### fpm-alpine
-
-This image has a very small footprint. It is based on Alpine Linux and starts only a PHP FPM process. Use this variant if you already have a seperate webserver. If you need more tools, that are not available on Alpine Linux, use the `fpm` image instead.
-
-### fpm
-
-This image starts only a PHP FPM container. Use this variant if you already have a seperate webserver.
