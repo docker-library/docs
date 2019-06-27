@@ -186,7 +186,7 @@ $ docker-compose rm
 # More Resources
 
 [ROS.org](http://www.ros.org/): Main ROS website  
-[Docs](https://docs.ros2.org/): Core Documentation  
+[Docs](https://index.ros.org/doc/ros2/): Core Documentation  
 [Index](https://index.ros.org/doc/ros2/): Package Index  
 [Design](https://design.ros2.org/): Design Articles  
 [ROS Answers](https://answers.ros.org/questions/): Ask questions. Get answers  
