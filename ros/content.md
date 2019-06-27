@@ -18,8 +18,7 @@ FROM %%IMAGE%%:dashing
 # install ros packages for installed release
 RUN apt-get update && apt-get install -y \
       ros-${ROS_DISTRO}-demo-nodes-cpp \
-      ros-${ROS_DISTRO}-demo-nodes-py \
-      ros-${ROS_DISTRO}-sros2 && \
+      ros-${ROS_DISTRO}-demo-nodes-py && \
     rm -rf /var/lib/apt/lists/*
 
 # run ros package launch file
@@ -183,72 +182,6 @@ $ docker-compose rm
 ```
 
 > Note: the auto-generated network, `ros_demos`, will persist until you explicitly remove it using `docker-compose down`.
-
-### Securing ROS
-
-Lets build upon the example above by adding authenticated encryption to the message transport. This is done by leveraging [Secure DDS](https://www.omg.org/spec/DDS-SECURITY). We'll use the same ROS docker image to bootstrap the PKI, CAs, and Digitally Signed files.
-
-> Create a script at `~/ros_demos/keystore/bootstrap_keystore.bash` to bootstrap a keystore and add entries for each node:
-
-```shell
-#!/usr/bin/env bash
-# Bootstrap ROS keystore
-ros2 security create_keystore ./
-ros2 security create_key ./ talker
-ros2 security create_key ./ listener
-chown -R $(stat -c '%u:%g' ./) ./
-```
-
-> Create a enforcement file at `~/ros_demos/config.env` to configure ROS Security:
-
-```shell
-# Configure ROS Security
-ROS_SECURITY_NODE_DIRECTORY=/keystore
-ROS_SECURITY_STRATEGY=Enforce
-ROS_SECURITY_ENABLE=true
-ROS_DOMAIN_ID=0
-```
-
-> Use a temporary container to run the keystore bootstrapping script in the keystore directory:
-
-```console
-$ docker run -it --rm \
-    --env-file ./config.env \
-    --volume ./keystore:/keystore:rw \
-    --workdir /keystore \
-    ros2 bash bootstrap_keystore.bash
-```
-
-> Now modify the original `docker-compose.yml` to use the configured environment and respective keystore entries:
-
-```yaml
-version: '3'
-
-services:
-  talker:
-    build: ./Dockerfile
-    environment:
-      - ./config.env
-    volumes:
-      - ./keystore/talker:/keystore:ro
-    command: ros2 run demo_nodes_cpp talker
-
-  listener:
-    build: ./Dockerfile
-    environment:
-      - ./config.env
-    volumes:
-      - ./keystore/listener:/keystore:ro
-    command: ros2 run demo_nodes_py listener
-```
-
-> Now simply startup docker-compose as before:
-
-```console
-$ docker-compose up
-```
-
-Note: So far this has only added authenticated encryption, i.e. only participants with public certificates signed by a trusted CA may join the domain. To enable access control within the secure domain, i.e. restrict which and how topics may be used by participants, more such details can be found [here](https://github.com/ros2/sros2/).
 
 # More Resources
 
