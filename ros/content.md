@@ -26,7 +26,7 @@ RUN apt-get update && apt-get install -y \
 CMD ["ros2", "launch", "demo_nodes_cpp", "talker_listener.launch.py"]
 ```
 
-Note: all ROS images include a default entrypoint that sources the ROS environment setup before exiting the configured command, in this case the demo packages launch file. You can then build and run the Docker image like so:
+Note: all ROS images include a default entrypoint that sources the ROS environment setup before executing the configured command, in this case the demo packages launch file. You can then build and run the Docker image like so:
 
 ```console
 $ docker build -t my/ros:app .
