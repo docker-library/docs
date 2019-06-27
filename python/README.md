@@ -18,10 +18,9 @@ WARNING:
 
 ## Simple Tags
 
--	[`3.8.0b1-stretch`, `3.8-rc-stretch`, `rc-stretch`](https://github.com/docker-library/python/blob/4baab390a3ba83908b869277491c4ce2ca283373/3.8-rc/stretch/Dockerfile)
--	[`3.8.0b1-slim-stretch`, `3.8-rc-slim-stretch`, `rc-slim-stretch`, `3.8.0b1-slim`, `3.8-rc-slim`, `rc-slim`](https://github.com/docker-library/python/blob/4baab390a3ba83908b869277491c4ce2ca283373/3.8-rc/stretch/slim/Dockerfile)
+-	[`3.8.0b1-buster`, `3.8-rc-buster`, `rc-buster`](https://github.com/docker-library/python/blob/4fc051f0aa8ef60931474b23567a7f232095d85f/3.8-rc/buster/Dockerfile)
+-	[`3.8.0b1-slim-buster`, `3.8-rc-slim-buster`, `rc-slim-buster`, `3.8.0b1-slim`, `3.8-rc-slim`, `rc-slim`](https://github.com/docker-library/python/blob/4fc051f0aa8ef60931474b23567a7f232095d85f/3.8-rc/buster/slim/Dockerfile)
 -	[`3.8.0b1-alpine3.10`, `3.8-rc-alpine3.10`, `rc-alpine3.10`, `3.8.0b1-alpine`, `3.8-rc-alpine`, `rc-alpine`](https://github.com/docker-library/python/blob/e057559fad64ed81b3da9fad6612a2de8b0ae544/3.8-rc/alpine3.10/Dockerfile)
--	[`3.8.0b1-alpine3.9`, `3.8-rc-alpine3.9`, `rc-alpine3.9`](https://github.com/docker-library/python/blob/4baab390a3ba83908b869277491c4ce2ca283373/3.8-rc/alpine3.9/Dockerfile)
 -	[`3.8.0b1-windowsservercore-ltsc2016`, `3.8-rc-windowsservercore-ltsc2016`, `rc-windowsservercore-ltsc2016`](https://github.com/docker-library/python/blob/4baab390a3ba83908b869277491c4ce2ca283373/3.8-rc/windows/windowsservercore-ltsc2016/Dockerfile)
 -	[`3.8.0b1-windowsservercore-1803`, `3.8-rc-windowsservercore-1803`, `rc-windowsservercore-1803`](https://github.com/docker-library/python/blob/4baab390a3ba83908b869277491c4ce2ca283373/3.8-rc/windows/windowsservercore-1803/Dockerfile)
 -	[`3.8.0b1-windowsservercore-1809`, `3.8-rc-windowsservercore-1809`, `rc-windowsservercore-1809`](https://github.com/docker-library/python/blob/4baab390a3ba83908b869277491c4ce2ca283373/3.8-rc/windows/windowsservercore-1809/Dockerfile)
@@ -60,7 +59,7 @@ WARNING:
 ## Shared Tags
 
 -	`3.8.0b1`, `3.8-rc`, `rc`:
-	-	[`3.8.0b1-stretch`](https://github.com/docker-library/python/blob/4baab390a3ba83908b869277491c4ce2ca283373/3.8-rc/stretch/Dockerfile)
+	-	[`3.8.0b1-buster`](https://github.com/docker-library/python/blob/4fc051f0aa8ef60931474b23567a7f232095d85f/3.8-rc/buster/Dockerfile)
 	-	[`3.8.0b1-windowsservercore-ltsc2016`](https://github.com/docker-library/python/blob/4baab390a3ba83908b869277491c4ce2ca283373/3.8-rc/windows/windowsservercore-ltsc2016/Dockerfile)
 	-	[`3.8.0b1-windowsservercore-1803`](https://github.com/docker-library/python/blob/4baab390a3ba83908b869277491c4ce2ca283373/3.8-rc/windows/windowsservercore-1803/Dockerfile)
 	-	[`3.8.0b1-windowsservercore-1809`](https://github.com/docker-library/python/blob/4baab390a3ba83908b869277491c4ce2ca283373/3.8-rc/windows/windowsservercore-1809/Dockerfile)
@@ -194,7 +193,7 @@ This is the defacto image. If you are unsure about what your needs are, you prob
 
 This tag is based off of [`buildpack-deps`](https://hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of Docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
 
-Some of these tags may have names like jessie or stretch in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on.
+Some of these tags may have names like buster, jessie, or stretch in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on.
 
 ## `python:<version>-slim`
 
