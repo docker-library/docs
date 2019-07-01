@@ -18,11 +18,11 @@ WARNING:
 
 ## Simple Tags
 
--	[`13-ea-26-jdk-oraclelinux7`, `13-ea-26-oraclelinux7`, `13-ea-jdk-oraclelinux7`, `13-ea-oraclelinux7`, `13-jdk-oraclelinux7`, `13-oraclelinux7`, `13-ea-26-jdk-oracle`, `13-ea-26-oracle`, `13-ea-jdk-oracle`, `13-ea-oracle`, `13-jdk-oracle`, `13-oracle`](https://github.com/docker-library/openjdk/blob/3f0afc707474b8900b5a0e0aebc7940ac195c232/13/jdk/oracle/Dockerfile)
+-	[`13-ea-27-jdk-oraclelinux7`, `13-ea-27-oraclelinux7`, `13-ea-jdk-oraclelinux7`, `13-ea-oraclelinux7`, `13-jdk-oraclelinux7`, `13-oraclelinux7`, `13-ea-27-jdk-oracle`, `13-ea-27-oracle`, `13-ea-jdk-oracle`, `13-ea-oracle`, `13-jdk-oracle`, `13-oracle`](https://github.com/docker-library/openjdk/blob/92869730148f4b7dafbc2f3dc37647242ee7d792/13/jdk/oracle/Dockerfile)
 -	[`13-ea-19-jdk-alpine3.9`, `13-ea-19-alpine3.9`, `13-ea-jdk-alpine3.9`, `13-ea-alpine3.9`, `13-jdk-alpine3.9`, `13-alpine3.9`, `13-ea-19-jdk-alpine`, `13-ea-19-alpine`, `13-ea-jdk-alpine`, `13-ea-alpine`, `13-jdk-alpine`, `13-alpine`](https://github.com/docker-library/openjdk/blob/1398299a268f339254a94b606113d1627dec342e/13/jdk/alpine/Dockerfile)
--	[`13-ea-26-jdk-windowsservercore-1809`, `13-ea-26-windowsservercore-1809`, `13-ea-jdk-windowsservercore-1809`, `13-ea-windowsservercore-1809`, `13-jdk-windowsservercore-1809`, `13-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/3f0afc707474b8900b5a0e0aebc7940ac195c232/13/jdk/windows/windowsservercore-1809/Dockerfile)
--	[`13-ea-26-jdk-windowsservercore-1803`, `13-ea-26-windowsservercore-1803`, `13-ea-jdk-windowsservercore-1803`, `13-ea-windowsservercore-1803`, `13-jdk-windowsservercore-1803`, `13-windowsservercore-1803`](https://github.com/docker-library/openjdk/blob/3f0afc707474b8900b5a0e0aebc7940ac195c232/13/jdk/windows/windowsservercore-1803/Dockerfile)
--	[`13-ea-26-jdk-windowsservercore-ltsc2016`, `13-ea-26-windowsservercore-ltsc2016`, `13-ea-jdk-windowsservercore-ltsc2016`, `13-ea-windowsservercore-ltsc2016`, `13-jdk-windowsservercore-ltsc2016`, `13-windowsservercore-ltsc2016`](https://github.com/docker-library/openjdk/blob/3f0afc707474b8900b5a0e0aebc7940ac195c232/13/jdk/windows/windowsservercore-ltsc2016/Dockerfile)
+-	[`13-ea-27-jdk-windowsservercore-1809`, `13-ea-27-windowsservercore-1809`, `13-ea-jdk-windowsservercore-1809`, `13-ea-windowsservercore-1809`, `13-jdk-windowsservercore-1809`, `13-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/92869730148f4b7dafbc2f3dc37647242ee7d792/13/jdk/windows/windowsservercore-1809/Dockerfile)
+-	[`13-ea-27-jdk-windowsservercore-1803`, `13-ea-27-windowsservercore-1803`, `13-ea-jdk-windowsservercore-1803`, `13-ea-windowsservercore-1803`, `13-jdk-windowsservercore-1803`, `13-windowsservercore-1803`](https://github.com/docker-library/openjdk/blob/92869730148f4b7dafbc2f3dc37647242ee7d792/13/jdk/windows/windowsservercore-1803/Dockerfile)
+-	[`13-ea-27-jdk-windowsservercore-ltsc2016`, `13-ea-27-windowsservercore-ltsc2016`, `13-ea-jdk-windowsservercore-ltsc2016`, `13-ea-windowsservercore-ltsc2016`, `13-jdk-windowsservercore-ltsc2016`, `13-windowsservercore-ltsc2016`](https://github.com/docker-library/openjdk/blob/92869730148f4b7dafbc2f3dc37647242ee7d792/13/jdk/windows/windowsservercore-ltsc2016/Dockerfile)
 -	[`12.0.1-jdk-oraclelinux7`, `12.0.1-oraclelinux7`, `12.0-jdk-oraclelinux7`, `12.0-oraclelinux7`, `12-jdk-oraclelinux7`, `12-oraclelinux7`, `jdk-oraclelinux7`, `oraclelinux7`, `12.0.1-jdk-oracle`, `12.0.1-oracle`, `12.0-jdk-oracle`, `12.0-oracle`, `12-jdk-oracle`, `12-oracle`, `jdk-oracle`, `oracle`](https://github.com/docker-library/openjdk/blob/554ff38a160f896ddd7f0fdca1cd34817e253a56/12/jdk/oracle/Dockerfile)
 -	[`12.0.1-jdk-windowsservercore-1809`, `12.0.1-windowsservercore-1809`, `12.0-jdk-windowsservercore-1809`, `12.0-windowsservercore-1809`, `12-jdk-windowsservercore-1809`, `12-windowsservercore-1809`, `jdk-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/07af3ffded3216b44d69b4f14309fc5a2967e623/12/jdk/windows/windowsservercore-1809/Dockerfile)
 -	[`12.0.1-jdk-windowsservercore-1803`, `12.0.1-windowsservercore-1803`, `12.0-jdk-windowsservercore-1803`, `12.0-windowsservercore-1803`, `12-jdk-windowsservercore-1803`, `12-windowsservercore-1803`, `jdk-windowsservercore-1803`, `windowsservercore-1803`](https://github.com/docker-library/openjdk/blob/07af3ffded3216b44d69b4f14309fc5a2967e623/12/jdk/windows/windowsservercore-1803/Dockerfile)
@@ -45,15 +45,15 @@ WARNING:
 
 ## Shared Tags
 
--	`13-ea-26-jdk`, `13-ea-26`, `13-ea-jdk`, `13-ea`, `13-jdk`, `13`:
-	-	[`13-ea-26-jdk-oraclelinux7`](https://github.com/docker-library/openjdk/blob/3f0afc707474b8900b5a0e0aebc7940ac195c232/13/jdk/oracle/Dockerfile)
-	-	[`13-ea-26-jdk-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/3f0afc707474b8900b5a0e0aebc7940ac195c232/13/jdk/windows/windowsservercore-1809/Dockerfile)
-	-	[`13-ea-26-jdk-windowsservercore-1803`](https://github.com/docker-library/openjdk/blob/3f0afc707474b8900b5a0e0aebc7940ac195c232/13/jdk/windows/windowsservercore-1803/Dockerfile)
-	-	[`13-ea-26-jdk-windowsservercore-ltsc2016`](https://github.com/docker-library/openjdk/blob/3f0afc707474b8900b5a0e0aebc7940ac195c232/13/jdk/windows/windowsservercore-ltsc2016/Dockerfile)
--	`13-ea-26-jdk-windowsservercore`, `13-ea-26-windowsservercore`, `13-ea-jdk-windowsservercore`, `13-ea-windowsservercore`, `13-jdk-windowsservercore`, `13-windowsservercore`:
-	-	[`13-ea-26-jdk-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/3f0afc707474b8900b5a0e0aebc7940ac195c232/13/jdk/windows/windowsservercore-1809/Dockerfile)
-	-	[`13-ea-26-jdk-windowsservercore-1803`](https://github.com/docker-library/openjdk/blob/3f0afc707474b8900b5a0e0aebc7940ac195c232/13/jdk/windows/windowsservercore-1803/Dockerfile)
-	-	[`13-ea-26-jdk-windowsservercore-ltsc2016`](https://github.com/docker-library/openjdk/blob/3f0afc707474b8900b5a0e0aebc7940ac195c232/13/jdk/windows/windowsservercore-ltsc2016/Dockerfile)
+-	`13-ea-27-jdk`, `13-ea-27`, `13-ea-jdk`, `13-ea`, `13-jdk`, `13`:
+	-	[`13-ea-27-jdk-oraclelinux7`](https://github.com/docker-library/openjdk/blob/92869730148f4b7dafbc2f3dc37647242ee7d792/13/jdk/oracle/Dockerfile)
+	-	[`13-ea-27-jdk-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/92869730148f4b7dafbc2f3dc37647242ee7d792/13/jdk/windows/windowsservercore-1809/Dockerfile)
+	-	[`13-ea-27-jdk-windowsservercore-1803`](https://github.com/docker-library/openjdk/blob/92869730148f4b7dafbc2f3dc37647242ee7d792/13/jdk/windows/windowsservercore-1803/Dockerfile)
+	-	[`13-ea-27-jdk-windowsservercore-ltsc2016`](https://github.com/docker-library/openjdk/blob/92869730148f4b7dafbc2f3dc37647242ee7d792/13/jdk/windows/windowsservercore-ltsc2016/Dockerfile)
+-	`13-ea-27-jdk-windowsservercore`, `13-ea-27-windowsservercore`, `13-ea-jdk-windowsservercore`, `13-ea-windowsservercore`, `13-jdk-windowsservercore`, `13-windowsservercore`:
+	-	[`13-ea-27-jdk-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/92869730148f4b7dafbc2f3dc37647242ee7d792/13/jdk/windows/windowsservercore-1809/Dockerfile)
+	-	[`13-ea-27-jdk-windowsservercore-1803`](https://github.com/docker-library/openjdk/blob/92869730148f4b7dafbc2f3dc37647242ee7d792/13/jdk/windows/windowsservercore-1803/Dockerfile)
+	-	[`13-ea-27-jdk-windowsservercore-ltsc2016`](https://github.com/docker-library/openjdk/blob/92869730148f4b7dafbc2f3dc37647242ee7d792/13/jdk/windows/windowsservercore-ltsc2016/Dockerfile)
 -	`12.0.1-jdk`, `12.0.1`, `12.0-jdk`, `12.0`, `12-jdk`, `12`, `jdk`, `latest`:
 	-	[`12.0.1-jdk-oraclelinux7`](https://github.com/docker-library/openjdk/blob/554ff38a160f896ddd7f0fdca1cd34817e253a56/12/jdk/oracle/Dockerfile)
 	-	[`12.0.1-jdk-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/07af3ffded3216b44d69b4f14309fc5a2967e623/12/jdk/windows/windowsservercore-1809/Dockerfile)

@@ -54,6 +54,8 @@ The SapMachine image supports the x86/64 architecture.
 
 Java and all Java-based trademarks and logos are trademarks or registered trademarks of Oracle and/or its affiliates.
 
+![logo](https://raw.githubusercontent.com/docker-library/docs/7ce76bc750f7a81f6a6eab30a93deb061c4be75e/sapmachine/logo.png)
+
 ### How to use this Image
 
 You can pull and test the image with the following commands:
