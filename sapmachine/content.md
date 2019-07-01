@@ -8,6 +8,8 @@ The SapMachine image supports the x86/64 architecture.
 
 Java and all Java-based trademarks and logos are trademarks or registered trademarks of Oracle and/or its affiliates.
 
+%%LOGO%%
+
 ### How to use this Image
 
 You can pull and test the image with the following commands:
