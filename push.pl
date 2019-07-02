@@ -4,7 +4,7 @@ use warnings;
 use 5.010;
 use open ':encoding(utf8)';
 
-use File::Basename qw(fileparse);
+use File::Basename qw(basename fileparse);
 use File::Temp;
 use Getopt::Long;
 use Mojo::UserAgent;
@@ -14,7 +14,7 @@ use Term::UI;
 use Term::ReadLine;
 
 my $hubLengthLimit = 25_000;
-my $githubBase = 'https://github.com/docker-library/docs/tree/master';
+my $githubBase = 'https://github.com/docker-library/docs/tree/master'; # TODO point this at the correct "dist-xxx" branch based on "namespace"
 
 my $username;
 my $password;
@@ -80,18 +80,35 @@ sub prompt_for_edit {
 	if ($lengthLimit > 0 && length($proposedText) > $lengthLimit) {
 		# TODO https://github.com/docker/hub-beta-feedback/issues/238
 		my $fullUrl = "$githubBase/$proposedFile";
-		my $note = "**Note:** the description for this image is longer than the Hub length limit of $lengthLimit, so has been trimmed.  The full description can be found at [$fullUrl]($fullUrl).  See [docker/hub-beta-feedback#238](https://github.com/docker/hub-beta-feedback/issues/238) for more information.\n\n";
-		$proposedText = $note . substr $proposedText, 0, ($lengthLimit - length($note));
+		my $tagsNote = "**Note:** the description for this image is longer than the Hub length limit of $lengthLimit, so the \"Supported tags\" list has been trimmed to compensate.  The full list can be found at [$fullUrl]($fullUrl#supported-tags-and-respective-dockerfile-links).  See [docker/hub-beta-feedback#238](https://github.com/docker/hub-beta-feedback/issues/238) for more information.\n\n";
+		my $genericNote = "**Note:** the description for this image is longer than the Hub length limit of $lengthLimit, so has been trimmed.  The full description can be found at [$fullUrl]($fullUrl).  See [docker/hub-beta-feedback#238](https://github.com/docker/hub-beta-feedback/issues/238) for more information.\n\n";
+		
+		my $trimmedText = $proposedText;
+		
+		# if our text is too long for the Hub length limit, let's first try removing the "Supported tags" list and add $tagsNote and see if that's enough to let us put the full image documentation
+		$trimmedText =~ s%^(# Supported tags and respective `Dockerfile` links\n\n).*?\n(?=# |\[)%$1$tagsNote%ms;
+		# (we scrape until the next "h1" or a line starting with a link which is likely a build status badge for an architecture-namespace)
+		
+		if (length($trimmedText) > $lengthLimit) {
+			# ... if that doesn't do the trick, then do our older naïve description trimming
+			$trimmedText = $genericNote . substr $proposedText, 0, ($lengthLimit - length($genericNote));
+		}
+		
+		$proposedText = $trimmedText;
 	}
 	
 	return $currentText if $currentText eq $proposedText;
 	
 	my @proposedFileBits = fileparse($proposedFile, qr!\.[^.]*!);
-	my $file = File::Temp->new(SUFFIX => $proposedFileBits[2]);
+	my $file = File::Temp->new(SUFFIX => '-' . basename($proposedFileBits[1]) . '-current' . $proposedFileBits[2]);
 	my $filename = $file->filename;
 	spurt encode('UTF-8', $currentText . "\n"), $filename;
 	
-	system(qw(git --no-pager diff --no-index), $filename, $proposedFile);
+	my $tempProposedFile = File::Temp->new(SUFFIX => '-' . basename($proposedFileBits[1]) . '-proposed' . $proposedFileBits[2]);
+	my $tempProposedFilename = $tempProposedFile->filename;
+	spurt encode('UTF-8', $proposedText . "\n"), $tempProposedFilename;
+	
+	system(qw(git --no-pager diff --no-index), $filename, $tempProposedFilename);
 	
 	my $reply;
 	if ($batchmode) {
@@ -115,7 +132,7 @@ sub prompt_for_edit {
 	}
 	
 	if ($reply eq 'vimdiff') {
-		system('vimdiff', $filename, $proposedFile) == 0 or die "vimdiff on $filename and $proposedFile failed";
+		system('vimdiff', $tempProposedFilename, $filename) == 0 or die "vimdiff on $filename and $proposedFile failed";
 		return trim(decode('UTF-8', slurp($filename)));
 	}
 	
