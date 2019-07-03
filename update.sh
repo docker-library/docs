@@ -137,8 +137,8 @@ for image in "${images[@]}"; do
 			if [ -n "$ARCH_SPECIFIC_DOCS" ]; then
 				partial='**No supported tags found!**'$'\n\n''It is very likely that `%%REPO%%` does not support the currently selected architecture (`'"$BASHBREW_ARCH"'`).'
 			else
-				echo >&2 'error: missing TAGS for '"$repo"'!'
-				exit 1
+				# opensuse, etc
+				partial='**No supported tags**'
 			fi
 		elif [ -n "$ARCH_SPECIFIC_DOCS" ]; then
 			jenkinsJobUrl="https://doi-janky.infosiftr.net/job/multiarch/job/$BASHBREW_ARCH/job/$repo/"
@@ -149,7 +149,7 @@ for image in "${images[@]}"; do
 
 		echo '  ARCHES => arches.sh "'"$repo"'"'
 		arches="$("$helperDir/arches.sh" "$repo")"
-		[ "$arches" ]
+		[ -n "$arches" ] || arches='**No supported architectures**'
 		replace_field "$targetFile" 'ARCHES' "$arches"
 
 		echo '  CONTENT => '"$repo"'/content.md'

@@ -23,7 +23,7 @@ templateArchVar='{{- $arch := $archSpecific | ternary arch ($e.HasArchitecture a
 tags="$(bashbrew list --uniq "$repo" | cut -d: -f2-)"
 tags=( $tags )
 toFetch=()
-for tag in "$tags"; do
+for tag in "${tags[@]}"; do
 	if ! bashbrew cat --format '
 		'"$templateHeader"'
 		{{- $e := $.TagEntry -}}
