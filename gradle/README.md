@@ -19,6 +19,7 @@ WARNING:
 -	[`5.5.0-jdk8`, `5.5-jdk8`, `jdk8`, `5.5.0-jdk`, `5.5-jdk`, `jdk`, `5.5.0`, `5.5`, `latest`](https://github.com/keeganwitt/docker-gradle/blob/ee03f213eb762ea24077e6b7aaaa290026062f3c/jdk8/Dockerfile)
 -	[`5.5.0-jre8`, `5.5-jre8`, `jre8`, `5.5.0-jre`, `5.5-jre`, `jre`](https://github.com/keeganwitt/docker-gradle/blob/ee03f213eb762ea24077e6b7aaaa290026062f3c/jre8/Dockerfile)
 -	[`5.5.0-jdk11`, `5.5-jdk11`, `jdk11`](https://github.com/keeganwitt/docker-gradle/blob/ee03f213eb762ea24077e6b7aaaa290026062f3c/jdk11/Dockerfile)
+-	[`5.5.0-jre11`, `5.5-jre11`, `jre11`](https://github.com/keeganwitt/docker-gradle/blob/ee03f213eb762ea24077e6b7aaaa290026062f3c/jre11/Dockerfile)
 -	[`5.5.0-jdk12`, `5.5-jdk12`, `jdk12`](https://github.com/keeganwitt/docker-gradle/blob/ee03f213eb762ea24077e6b7aaaa290026062f3c/jdk12/Dockerfile)
 -	[`5.5.0-jre12`, `5.5-jre12`, `jre12`](https://github.com/keeganwitt/docker-gradle/blob/ee03f213eb762ea24077e6b7aaaa290026062f3c/jre12/Dockerfile)
 
