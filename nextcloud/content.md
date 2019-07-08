@@ -148,7 +148,7 @@ If you want to use Redis you have to create a separate [Redis](https://hub.docke
 
 The use of Redis is recommended to prevent file locking problems. See the examples for further instructions.
 
-To use a external SMTP server you have to provide the conection details. To configure Nextcloud to use SMTP add:
+To use a external SMTP server you have to provide the connection details. To configure Nextcloud to use SMTP add:
 
 -	`SMTP_HOST` (not set by default) hostname of the SMTP server
 -	`SMTP_SECURE` (empty by default) set to 'ssl' to use SSL on the connection.
