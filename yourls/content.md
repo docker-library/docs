@@ -27,7 +27,7 @@ The following environment variables are also honored for configuring your YOURLS
 -	`-e YOURLS_SITE=...` (yourls instance url)
 -	`-e YOURLS_USER=...` (yourls instance user name)
 -	`-e YOURLS_PASS=...` (yourls instance user password)
--	`-e YOURLS_URL_CONVERT=..` (yourls URL shortening method: 36 or 62)
+-	`-e YOURLS_URL_CONVERT=...` (yourls URL shortening method: `36` or `62`)
 
 If the `YOURLS_DB_NAME` specified does not already exist on the given MySQL server, it will be created automatically upon startup of the `yourls` container, provided that the `YOURLS_DB_USER` specified has the necessary permissions to create it.
 
