@@ -16,7 +16,8 @@ $ docker run --name some-%%REPO%% --link some-mysql:mysql \
     -d %%IMAGE%%
 ```
 
-The following environment variables are also honored for configuring your YOURLS instance:
+The YOURLS instance accepts [a number of environment variables for configuration](https://yourls.org/#Config).  
+A few notable/important examples for using this Docker image include:
 
 -	`-e YOURLS_DB_HOST=...` (defaults to the IP and port of the linked `mysql` container)
 -	`-e YOURLS_DB_USER=...` (defaults to "root")
