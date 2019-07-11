@@ -102,11 +102,11 @@ Note: If you are using the boot2docker virtual machine on OS X or Windows, you n
 
 For greater flexibility over configuration, it is possible to mount an entire server configuration directory from the host and then specify the server name as a parameter to the run command. Note: This particular example server configuration provides only HTTP access.
 
-	```console
-	$ docker run -d -p 80:9080 \
-	  -v /tmp/DefaultServletEngine:/config \
-	  %%IMAGE%%:webProfile8
-	```
+```console
+$ docker run -d -p 80:9080 \
+      -v /tmp/DefaultServletEngine:/config \
+      %%IMAGE%%:webProfile8
+```
 
 # Using `springBoot` images
 
