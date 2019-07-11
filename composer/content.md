@@ -23,10 +23,9 @@ $ docker run --rm --interactive --tty \
 You can bind mount the Composer home directory from your host to the container to enable a persistent cache or share global configuration:
 
 ```console
-$ COMPOSER_HOME=$HOME/.composer \
-  docker run --rm --interactive --tty \
+$ docker run --rm --interactive --tty \
   --volume $PWD:/app \
-  --volume $COMPOSER_HOME:/tmp \
+  --volume ${COMPOSER_HOME:-$HOME/.composer}:/tmp \
   %%IMAGE%% install
 ```
 
@@ -35,13 +34,11 @@ $ COMPOSER_HOME=$HOME/.composer \
 Or if you are following the XDG specification:
 
 ```console
-$ COMPOSER_HOME=$HOME/.config/composer \
-  COMPOSER_CACHE_DIR=$HOME/.cache/composer \
-  docker run --rm --interactive --tty \
+$ docker run --rm --interactive --tty \
   --env COMPOSER_HOME \
   --env COMPOSER_CACHE_DIR \
-  --volume $COMPOSER_HOME:$COMPOSER_HOME \
-  --volume $COMPOSER_CACHE_DIR:$COMPOSER_CACHE_DIR \
+  --volume ${COMPOSER_HOME:-$HOME/.config/composer}:$COMPOSER_HOME \
+  --volume ${COMPOSER_CACHE_DIR:-$HOME/.cache/composer}:$COMPOSER_CACHE_DIR \
   --volume $PWD:/app \
   %%IMAGE%% install
 ```
@@ -62,7 +59,8 @@ $ docker run --rm --interactive --tty \
 When you need to access private repositories, you will either need to share your configured credentials, or mount your `ssh-agent` socket inside the running container:
 
 ```console
-$ docker run --rm --interactive --tty \
+$ eval $(ssh-agent); \
+  docker run --rm --interactive --tty \
   --volume $PWD:/app \
   --volume $SSH_AUTH_SOCK:/ssh-auth.sock \
   --env SSH_AUTH_SOCK=/ssh-auth.sock \
@@ -74,7 +72,8 @@ $ docker run --rm --interactive --tty \
 When combining the use of private repositories with running Composer as another user, you might run into non-existent user errors (thrown by ssh). To work around this, simply mount the host passwd and group files (read-only) into the container:
 
 ```console
-$ docker run --rm --interactive --tty \
+$ eval $(ssh-agent); \
+  docker run --rm --interactive --tty \
   --volume $PWD:/app \
   --volume $SSH_AUTH_SOCK:/ssh-auth.sock \
   --volume /etc/passwd:/etc/passwd:ro \
