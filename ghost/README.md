@@ -67,7 +67,7 @@ $ docker run -d --name some-ghost ghost
 If you'd like to be able to access the instance from the host without the container's IP, standard port mappings can be used:
 
 ```console
-$ docker run -d --name some-ghost -p 3001:2368 ghost
+$ docker run -d --name some-ghost -e url=http://localhost:3001 -p 3001:2368 ghost
 ```
 
 Then, access it via `http://localhost:3001` or `http://host-ip:3001` in a browser.
