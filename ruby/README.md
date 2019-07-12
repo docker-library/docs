@@ -16,23 +16,27 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.7.0-preview1-buster`, `2.7-rc-buster`, `rc-buster`, `2.7.0-preview1`, `2.7-rc`, `rc`](https://github.com/docker-library/ruby/blob/aacff4398185738d84232f1685df12306be13114/2.7-rc/buster/Dockerfile)
--	[`2.7.0-preview1-slim-buster`, `2.7-rc-slim-buster`, `rc-slim-buster`, `2.7.0-preview1-slim`, `2.7-rc-slim`, `rc-slim`](https://github.com/docker-library/ruby/blob/aacff4398185738d84232f1685df12306be13114/2.7-rc/buster/slim/Dockerfile)
--	[`2.7.0-preview1-alpine3.10`, `2.7-rc-alpine3.10`, `rc-alpine3.10`, `2.7.0-preview1-alpine`, `2.7-rc-alpine`, `rc-alpine`](https://github.com/docker-library/ruby/blob/aacff4398185738d84232f1685df12306be13114/2.7-rc/alpine3.10/Dockerfile)
--	[`2.6.3-stretch`, `2.6-stretch`, `2-stretch`, `stretch`, `2.6.3`, `2.6`, `2`, `latest`](https://github.com/docker-library/ruby/blob/aacff4398185738d84232f1685df12306be13114/2.6/stretch/Dockerfile)
--	[`2.6.3-slim-stretch`, `2.6-slim-stretch`, `2-slim-stretch`, `slim-stretch`, `2.6.3-slim`, `2.6-slim`, `2-slim`, `slim`](https://github.com/docker-library/ruby/blob/aacff4398185738d84232f1685df12306be13114/2.6/stretch/slim/Dockerfile)
--	[`2.6.3-alpine3.10`, `2.6-alpine3.10`, `2-alpine3.10`, `alpine3.10`, `2.6.3-alpine`, `2.6-alpine`, `2-alpine`, `alpine`](https://github.com/docker-library/ruby/blob/aacff4398185738d84232f1685df12306be13114/2.6/alpine3.10/Dockerfile)
--	[`2.6.3-alpine3.9`, `2.6-alpine3.9`, `2-alpine3.9`, `alpine3.9`](https://github.com/docker-library/ruby/blob/aacff4398185738d84232f1685df12306be13114/2.6/alpine3.9/Dockerfile)
--	[`2.5.5-stretch`, `2.5-stretch`, `2.5.5`, `2.5`](https://github.com/docker-library/ruby/blob/aacff4398185738d84232f1685df12306be13114/2.5/stretch/Dockerfile)
--	[`2.5.5-slim-stretch`, `2.5-slim-stretch`, `2.5.5-slim`, `2.5-slim`](https://github.com/docker-library/ruby/blob/aacff4398185738d84232f1685df12306be13114/2.5/stretch/slim/Dockerfile)
--	[`2.5.5-alpine3.10`, `2.5-alpine3.10`, `2.5.5-alpine`, `2.5-alpine`](https://github.com/docker-library/ruby/blob/aacff4398185738d84232f1685df12306be13114/2.5/alpine3.10/Dockerfile)
--	[`2.5.5-alpine3.9`, `2.5-alpine3.9`](https://github.com/docker-library/ruby/blob/aacff4398185738d84232f1685df12306be13114/2.5/alpine3.9/Dockerfile)
--	[`2.4.6-stretch`, `2.4-stretch`, `2.4.6`, `2.4`](https://github.com/docker-library/ruby/blob/aacff4398185738d84232f1685df12306be13114/2.4/stretch/Dockerfile)
--	[`2.4.6-slim-stretch`, `2.4-slim-stretch`, `2.4.6-slim`, `2.4-slim`](https://github.com/docker-library/ruby/blob/aacff4398185738d84232f1685df12306be13114/2.4/stretch/slim/Dockerfile)
--	[`2.4.6-jessie`, `2.4-jessie`](https://github.com/docker-library/ruby/blob/aacff4398185738d84232f1685df12306be13114/2.4/jessie/Dockerfile)
--	[`2.4.6-slim-jessie`, `2.4-slim-jessie`](https://github.com/docker-library/ruby/blob/aacff4398185738d84232f1685df12306be13114/2.4/jessie/slim/Dockerfile)
--	[`2.4.6-alpine3.10`, `2.4-alpine3.10`, `2.4.6-alpine`, `2.4-alpine`](https://github.com/docker-library/ruby/blob/aacff4398185738d84232f1685df12306be13114/2.4/alpine3.10/Dockerfile)
--	[`2.4.6-alpine3.9`, `2.4-alpine3.9`](https://github.com/docker-library/ruby/blob/aacff4398185738d84232f1685df12306be13114/2.4/alpine3.9/Dockerfile)
+-	[`2.7.0-preview1-buster`, `2.7-rc-buster`, `rc-buster`, `2.7.0-preview1`, `2.7-rc`, `rc`](https://github.com/docker-library/ruby/blob/e040029c82501556371e9d84a9db607dfb1bba51/2.7-rc/buster/Dockerfile)
+-	[`2.7.0-preview1-slim-buster`, `2.7-rc-slim-buster`, `rc-slim-buster`, `2.7.0-preview1-slim`, `2.7-rc-slim`, `rc-slim`](https://github.com/docker-library/ruby/blob/e040029c82501556371e9d84a9db607dfb1bba51/2.7-rc/buster/slim/Dockerfile)
+-	[`2.7.0-preview1-alpine3.10`, `2.7-rc-alpine3.10`, `rc-alpine3.10`, `2.7.0-preview1-alpine`, `2.7-rc-alpine`, `rc-alpine`](https://github.com/docker-library/ruby/blob/b7e190bed1efc2521fc51e6dee7243c6aaa974e6/2.7-rc/alpine3.10/Dockerfile)
+-	[`2.6.3-buster`, `2.6-buster`, `2-buster`, `buster`, `2.6.3`, `2.6`, `2`, `latest`](https://github.com/docker-library/ruby/blob/3b767347867328b98aefa48e60de95b2190f631e/2.6/buster/Dockerfile)
+-	[`2.6.3-slim-buster`, `2.6-slim-buster`, `2-slim-buster`, `slim-buster`, `2.6.3-slim`, `2.6-slim`, `2-slim`, `slim`](https://github.com/docker-library/ruby/blob/3b767347867328b98aefa48e60de95b2190f631e/2.6/buster/slim/Dockerfile)
+-	[`2.6.3-stretch`, `2.6-stretch`, `2-stretch`, `stretch`](https://github.com/docker-library/ruby/blob/e040029c82501556371e9d84a9db607dfb1bba51/2.6/stretch/Dockerfile)
+-	[`2.6.3-slim-stretch`, `2.6-slim-stretch`, `2-slim-stretch`, `slim-stretch`](https://github.com/docker-library/ruby/blob/e040029c82501556371e9d84a9db607dfb1bba51/2.6/stretch/slim/Dockerfile)
+-	[`2.6.3-alpine3.10`, `2.6-alpine3.10`, `2-alpine3.10`, `alpine3.10`, `2.6.3-alpine`, `2.6-alpine`, `2-alpine`, `alpine`](https://github.com/docker-library/ruby/blob/b7e190bed1efc2521fc51e6dee7243c6aaa974e6/2.6/alpine3.10/Dockerfile)
+-	[`2.6.3-alpine3.9`, `2.6-alpine3.9`, `2-alpine3.9`, `alpine3.9`](https://github.com/docker-library/ruby/blob/b7e190bed1efc2521fc51e6dee7243c6aaa974e6/2.6/alpine3.9/Dockerfile)
+-	[`2.5.5-buster`, `2.5-buster`, `2.5.5`, `2.5`](https://github.com/docker-library/ruby/blob/3b767347867328b98aefa48e60de95b2190f631e/2.5/buster/Dockerfile)
+-	[`2.5.5-slim-buster`, `2.5-slim-buster`, `2.5.5-slim`, `2.5-slim`](https://github.com/docker-library/ruby/blob/3b767347867328b98aefa48e60de95b2190f631e/2.5/buster/slim/Dockerfile)
+-	[`2.5.5-stretch`, `2.5-stretch`](https://github.com/docker-library/ruby/blob/e040029c82501556371e9d84a9db607dfb1bba51/2.5/stretch/Dockerfile)
+-	[`2.5.5-slim-stretch`, `2.5-slim-stretch`](https://github.com/docker-library/ruby/blob/e040029c82501556371e9d84a9db607dfb1bba51/2.5/stretch/slim/Dockerfile)
+-	[`2.5.5-alpine3.10`, `2.5-alpine3.10`, `2.5.5-alpine`, `2.5-alpine`](https://github.com/docker-library/ruby/blob/b7e190bed1efc2521fc51e6dee7243c6aaa974e6/2.5/alpine3.10/Dockerfile)
+-	[`2.5.5-alpine3.9`, `2.5-alpine3.9`](https://github.com/docker-library/ruby/blob/b7e190bed1efc2521fc51e6dee7243c6aaa974e6/2.5/alpine3.9/Dockerfile)
+-	[`2.4.6-buster`, `2.4-buster`, `2.4.6`, `2.4`](https://github.com/docker-library/ruby/blob/3b767347867328b98aefa48e60de95b2190f631e/2.4/buster/Dockerfile)
+-	[`2.4.6-slim-buster`, `2.4-slim-buster`, `2.4.6-slim`, `2.4-slim`](https://github.com/docker-library/ruby/blob/3b767347867328b98aefa48e60de95b2190f631e/2.4/buster/slim/Dockerfile)
+-	[`2.4.6-stretch`, `2.4-stretch`](https://github.com/docker-library/ruby/blob/e040029c82501556371e9d84a9db607dfb1bba51/2.4/stretch/Dockerfile)
+-	[`2.4.6-slim-stretch`, `2.4-slim-stretch`](https://github.com/docker-library/ruby/blob/e040029c82501556371e9d84a9db607dfb1bba51/2.4/stretch/slim/Dockerfile)
+-	[`2.4.6-alpine3.10`, `2.4-alpine3.10`, `2.4.6-alpine`, `2.4-alpine`](https://github.com/docker-library/ruby/blob/b7e190bed1efc2521fc51e6dee7243c6aaa974e6/2.4/alpine3.10/Dockerfile)
+-	[`2.4.6-alpine3.9`, `2.4-alpine3.9`](https://github.com/docker-library/ruby/blob/b7e190bed1efc2521fc51e6dee7243c6aaa974e6/2.4/alpine3.9/Dockerfile)
 
 # Quick reference
 
@@ -134,7 +138,7 @@ This is the defacto image. If you are unsure about what your needs are, you prob
 
 This tag is based off of [`buildpack-deps`](https://hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of Docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
 
-Some of these tags may have names like buster, jessie, or stretch in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on.
+Some of these tags may have names like buster or stretch in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on.
 
 ## `ruby:<version>-slim`
 
