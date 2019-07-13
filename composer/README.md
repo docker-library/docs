@@ -28,7 +28,7 @@ WARNING:
 	[https://github.com/composer/docker/issues](https://github.com/composer/docker/issues)
 
 -	**Maintained by**:  
-	[Composer](https://github.com/composer/docker)
+	[Rob Bast](https://github.com/alcohol), with [contributions](https://github.com/composer/docker/graphs/contributors) from the community.
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/composer/), [`arm32v6`](https://hub.docker.com/r/arm32v6/composer/), [`arm32v7`](https://hub.docker.com/r/arm32v7/composer/), [`arm64v8`](https://hub.docker.com/r/arm64v8/composer/), [`i386`](https://hub.docker.com/r/i386/composer/), [`ppc64le`](https://hub.docker.com/r/ppc64le/composer/)
@@ -71,7 +71,7 @@ You can bind mount the Composer home directory from your host to the container t
 ```console
 $ docker run --rm --interactive --tty \
   --volume $PWD:/app \
-  --volume $COMPOSER_HOME:/tmp \
+  --volume ${COMPOSER_HOME:-$HOME/.composer}:/tmp \
   composer install
 ```
 
@@ -80,13 +80,11 @@ $ docker run --rm --interactive --tty \
 Or if you are following the XDG specification:
 
 ```console
-$ COMPOSER_HOME=$HOME/.config/composer \
-  COMPOSER_CACHE_DIR=$HOME/.cache/composer \
-  docker run --rm --interactive --tty \
+$ docker run --rm --interactive --tty \
   --env COMPOSER_HOME \
   --env COMPOSER_CACHE_DIR \
-  --volume $COMPOSER_HOME:$COMPOSER_HOME \
-  --volume $COMPOSER_CACHE_DIR:$COMPOSER_CACHE_DIR \
+  --volume ${COMPOSER_HOME:-$HOME/.config/composer}:$COMPOSER_HOME \
+  --volume ${COMPOSER_CACHE_DIR:-$HOME/.cache/composer}:$COMPOSER_CACHE_DIR \
   --volume $PWD:/app \
   composer install
 ```
@@ -107,7 +105,8 @@ $ docker run --rm --interactive --tty \
 When you need to access private repositories, you will either need to share your configured credentials, or mount your `ssh-agent` socket inside the running container:
 
 ```console
-$ docker run --rm --interactive --tty \
+$ eval $(ssh-agent); \
+  docker run --rm --interactive --tty \
   --volume $PWD:/app \
   --volume $SSH_AUTH_SOCK:/ssh-auth.sock \
   --env SSH_AUTH_SOCK=/ssh-auth.sock \
@@ -119,7 +118,8 @@ $ docker run --rm --interactive --tty \
 When combining the use of private repositories with running Composer as another user, you might run into non-existent user errors (thrown by ssh). To work around this, simply mount the host passwd and group files (read-only) into the container:
 
 ```console
-$ docker run --rm --interactive --tty \
+$ eval $(ssh-agent); \
+  docker run --rm --interactive --tty \
   --volume $PWD:/app \
   --volume $SSH_AUTH_SOCK:/ssh-auth.sock \
   --volume /etc/passwd:/etc/passwd:ro \
@@ -131,50 +131,41 @@ $ docker run --rm --interactive --tty \
 
 # Troubleshooting
 
-### PHP versions
+### PHP version & extensions
 
-Our image is aimed at quickly running Composer without the need for having a PHP runtime installed. You should not rely on the PHP version in our container. We do not provide a Composer image for each supported PHP version because we do not want to encourage using Composer as a base image or a production image.
+Our image is aimed at quickly running Composer without the need for having a PHP runtime installed on your host. You should not rely on the PHP version in our container. We do not provide a Composer image for each supported PHP version because we do not want to encourage using Composer as a base image or a production image.
 
-Suggestions:
-
--	use [`--ignore-platform-reqs`](https://getcomposer.org/doc/03-cli.md#install-i):
-
-	```console
-	$ composer install --ignore-platform-reqs
-	```
-
--	specify the target [platform](https://getcomposer.org/doc/06-config.md#platform) in your `composer.json`:
-
-	```json
-	{
-	  "config": {
-	    "platform": {
-	      "php": "7.1.3"
-	    }
-	  }
-	}
-	```
-
-### PHP extensions
-
-We aim to deliver an image that is as lean as possible, built for running Composer only. Sometimes dependencies or Composer [scripts](https://getcomposer.org/doc/articles/scripts.md) require the availability of certain PHP extensions.
+We try to deliver an image that is as lean as possible, built for running Composer only. Sometimes dependencies or Composer [scripts](https://getcomposer.org/doc/articles/scripts.md) require the availability of certain PHP extensions.
 
 Suggestions:
 
--	pass the `--ignore-platform-reqs` and / or `--no-scripts` flags to `install` or `update`:
-
-	```console
-	$ docker run --rm --interactive --tty \
-	  --volume $PWD:/app \
-	  composer install --ignore-platform-reqs --no-scripts
-	```
-
--	create your own buid image and [install](https://getcomposer.org/doc/faqs/how-to-install-composer-programmatically.md) Composer inside it.
+-	(optimal) create your own build image and [install](https://getcomposer.org/doc/faqs/how-to-install-composer-programmatically.md) Composer inside it.
 
 	**Note:** Docker 17.05 introduced [multi-stage builds](https://docs.docker.com/develop/develop-images/multistage-build/), simplifying this enormously:
 
 	```dockerfile
 	COPY --from=composer /usr/bin/composer /usr/bin/composer
+	```
+
+-	(alternatively) specify the target [platform](https://getcomposer.org/doc/06-config.md#platform) / extension(s) in your `composer.json`:
+
+	```json
+	{
+	  "config": {
+	    "platform": {
+	      "php": "MAJOR.MINOR.PATCH",
+	      "ext-something": "1"
+	    }
+	  }
+	}
+	```
+
+-	(discouraged) pass the [`--ignore-platform-reqs`](https://getcomposer.org/doc/03-cli.md#install-i) and / or `--no-scripts` flags to `install` or `update`:
+
+	```console
+	$ docker run --rm --interactive --tty \
+	  --volume $PWD:/app \
+	  composer install --ignore-platform-reqs --no-scripts
 	```
 
 # License
