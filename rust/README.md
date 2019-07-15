@@ -18,6 +18,8 @@ WARNING:
 
 -	[`1.36.0-stretch`, `1-stretch`, `1.36-stretch`, `stretch`, `1.36.0`, `1`, `1.36`, `latest`](https://github.com/rust-lang-nursery/docker-rust/blob/8b50bd6718b4eff487ea9451371fdfafcf1981c2/1.36.0/stretch/Dockerfile)
 -	[`1.36.0-slim-stretch`, `1-slim-stretch`, `1.36-slim-stretch`, `slim-stretch`, `1.36.0-slim`, `1-slim`, `1.36-slim`, `slim`](https://github.com/rust-lang-nursery/docker-rust/blob/8b50bd6718b4eff487ea9451371fdfafcf1981c2/1.36.0/stretch/slim/Dockerfile)
+-	[`1.36.0-buster`, `1-buster`, `1.36-buster`, `buster`](https://github.com/rust-lang-nursery/docker-rust/blob/948972727f24fc3e1062a9442047f0dea4e3db50/1.36.0/buster/Dockerfile)
+-	[`1.36.0-slim-buster`, `1-slim-buster`, `1.36-slim-buster`, `slim-buster`](https://github.com/rust-lang-nursery/docker-rust/blob/948972727f24fc3e1062a9442047f0dea4e3db50/1.36.0/buster/slim/Dockerfile)
 
 # Quick reference
 
@@ -96,7 +98,7 @@ This is the defacto image. If you are unsure about what your needs are, you prob
 
 This tag is based off of [`buildpack-deps`](https://hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of Docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
 
-Some of these tags may have names like stretch in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on.
+Some of these tags may have names like buster or stretch in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on.
 
 ## `rust:<version>-slim`
 

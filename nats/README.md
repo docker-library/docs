@@ -18,16 +18,16 @@ WARNING:
 
 ## Simple Tags
 
--	[`2.0.0-linux`, `linux`](https://github.com/nats-io/nats-docker/blob/f94c8e5fe7242e29752374eb464ef99954ae53f9/amd64/Dockerfile)
--	[`2.0.0-nanoserver`, `nanoserver`](https://github.com/nats-io/nats-docker/blob/f94c8e5fe7242e29752374eb464ef99954ae53f9/windows/nanoserver/Dockerfile)
--	[`2.0.0-nanoserver-1809`, `nanoserver-1809`](https://github.com/nats-io/nats-docker/blob/f94c8e5fe7242e29752374eb464ef99954ae53f9/windows/nanoserver2019/Dockerfile)
--	[`2.0.0-windowsservercore`, `windowsservercore`](https://github.com/nats-io/nats-docker/blob/f94c8e5fe7242e29752374eb464ef99954ae53f9/windows/windowsservercore/Dockerfile)
+-	[`2.0.2-linux`, `linux`](https://github.com/nats-io/nats-docker/blob/1d19738cad8d4e2c654ead45c2b5cbe3b9f29c83/amd64/Dockerfile)
+-	[`2.0.2-nanoserver`, `nanoserver`, `nanoserver-1803`](https://github.com/nats-io/nats-docker/blob/1d19738cad8d4e2c654ead45c2b5cbe3b9f29c83/windows/nanoserver-1803/Dockerfile)
+-	[`2.0.2-nanoserver-1809`, `nanoserver-1809`](https://github.com/nats-io/nats-docker/blob/1d19738cad8d4e2c654ead45c2b5cbe3b9f29c83/windows/nanoserver-1809/Dockerfile)
+-	[`2.0.2-windowsservercore`, `windowsservercore`](https://github.com/nats-io/nats-docker/blob/1d19738cad8d4e2c654ead45c2b5cbe3b9f29c83/windows/windowsservercore/Dockerfile)
 
 ## Shared Tags
 
--	`2.0.0`, `latest`:
-	-	[`2.0.0-linux`](https://github.com/nats-io/nats-docker/blob/f94c8e5fe7242e29752374eb464ef99954ae53f9/amd64/Dockerfile)
-	-	[`2.0.0-nanoserver`](https://github.com/nats-io/nats-docker/blob/f94c8e5fe7242e29752374eb464ef99954ae53f9/windows/nanoserver/Dockerfile)
+-	`2.0.2`, `latest`:
+	-	[`2.0.2-linux`](https://github.com/nats-io/nats-docker/blob/1d19738cad8d4e2c654ead45c2b5cbe3b9f29c83/amd64/Dockerfile)
+	-	[`2.0.2-nanoserver`](https://github.com/nats-io/nats-docker/blob/1d19738cad8d4e2c654ead45c2b5cbe3b9f29c83/windows/nanoserver-1803/Dockerfile)
 
 # Quick reference
 
@@ -90,11 +90,11 @@ The routing protocol has been dramatically improved and adds support for account
 # Check "docker run" for more information.
 
 $ docker run -d --name nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 nats
-[INF] Starting nats-server version 2.0.0
-[INF] Git commit [e12e56a]
+[INF] Starting nats-server version 2.0.2
+[INF] Git commit [6a40503]
 [INF] Starting http monitor on 0.0.0.0:8222
 [INF] Listening for client connections on 0.0.0.0:4222
-[INF] Server id is NDMKAAJBQA7OIWCOSJFE5A54LBGN7PRGDFXA6YWTFLY7BB3EJE26PYS6
+[INF] Server id is NDBE6UQ7K6YSXBVWX2MJ2URFRDEQWPTFPSEN7HWJPRVUINA77P7AWAIW
 [INF] Server is ready
 [INF] Listening for route connections on 0.0.0.0:6222
 
@@ -108,12 +108,12 @@ $ docker run -d --name=nats-2 --link nats-main -p 4222:4222 -p 6222:6222 -p 8222
 
 # If you want to verify the routes are connected, try this instead:
 $ docker run -d --name=nats-2 --link nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 nats -c nats-server.conf --routes=nats-route://ruser:T0pS3cr3t@nats-main:6222 -DV
-[INF] Starting nats-server version 2.0.0
-[DBG] Go build version go1.11.10
-[INF] Git commit [e12e56a]
+[INF] Starting nats-server version 2.0.2
+[DBG] Go build version go1.11.12
+[INF] Git commit [6a40503]
 [INF] Starting http monitor on 0.0.0.0:8222
 [INF] Listening for client connections on 0.0.0.0:4222
-[INF] Server id is NCYDIN2GGETVBJXVX6LOE254WJTJRHH4ORNTG4KCIVPI662YQR77KUH4
+[INF] Server id is NDJXHD5ODU45CD3B4J7FCQTB7TKTN3IFHADKY65YPMHT2DBX45C7BL2K
 [INF] Server is ready
 [DBG] Get non local IPs for "0.0.0.0"
 [DBG]  ip=172.17.0.3
@@ -121,7 +121,7 @@ $ docker run -d --name=nats-2 --link nats-main -p 4222:4222 -p 6222:6222 -p 8222
 [DBG] Trying to connect to route on nats-main:6222
 [DBG] 172.17.0.2:6222 - rid:1 - Route connect msg sent
 [INF] 172.17.0.2:6222 - rid:1 - Route connection created
-[DBG] 172.17.0.2:6222 - rid:1 - Registering remote route "NAKXX5DI3LXIVEJI7HQJMIRU522YUM3I4RYMN4HYRM5EYUR2PQYKSHZZ"
+[DBG] 172.17.0.2:6222 - rid:1 - Registering remote route "NBJHE3LV6SHP3OAFITIR7PDMYNT6J4UI66GTHTYX6N4TLIBV7EI56GNA"
 [DBG] 172.17.0.2:6222 - rid:1 - Sent local subscriptions to route
 ```
 
