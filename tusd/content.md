@@ -15,7 +15,7 @@ moment allowing to continue seamlessly after e.g. network interruptions.
 Starting a tusd instance is simple:
 
 ```console
-$ docker run --name some-%%REPO%% -v ./tusd:/srv/tusd -p 1080 -d %%IMAGE%%:tag
+$ docker run --name some-%%REPO%% -v ./tusd:/srv/tusd -p 1080:1080 -d %%IMAGE%%:tag
 ```
 
 ... where `some-%%REPO%%` is the name you want to assign to your container, `-v ./tusd:/src/tusd` is the folder you'd like to get your uploaded files into and `tag` is the tag specifying the tusd image version you want. See the list above for relevant tags.
