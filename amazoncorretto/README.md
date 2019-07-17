@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8`, `8u212`, `8-al2-full`, `latest`](https://github.com/corretto/corretto-8-docker/blob/055b9f36817325fbf5d2469150684ad8a4f4f1e4/Dockerfile)
--	[`11`, `11.0.3`, `11-al2-full`](https://github.com/corretto/corretto-11-docker/blob/0b311f7144b833e789165173a83a2022987dfb7b/Dockerfile)
+-	[`8`, `8u222`, `8-al2-full`, `latest`](https://github.com/corretto/corretto-8-docker/blob/aa6b1dc18c638d9711bb6f130a4219ba402c462f/Dockerfile)
+-	[`11`, `11.0.4`, `11-al2-full`](https://github.com/corretto/corretto-11-docker/blob/ff33946d1003fdfbec6d5bd0074ed82affc6c76c/Dockerfile)
 
 # Quick reference
 
