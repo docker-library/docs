@@ -19,9 +19,9 @@ WARNING:
 -	[`19.03.0-rc3`, `19.03-rc`, `rc`, `test`](https://github.com/docker-library/docker/blob/cdcff675cecbae122cbae49ed6e17fa78bb6116a/19.03-rc/Dockerfile)
 -	[`19.03.0-rc3-dind`, `19.03-rc-dind`, `rc-dind`, `test-dind`](https://github.com/docker-library/docker/blob/27471a8b93e980bd4c51464ee933ed90fd36bf97/19.03-rc/dind/Dockerfile)
 -	[`19.03.0-rc3-git`, `19.03-rc-git`, `rc-git`, `test-git`](https://github.com/docker-library/docker/blob/98ffef81ebfa7601a9ed2f0bf56d78f426bf253c/19.03-rc/git/Dockerfile)
--	[`18.09.7`, `18.09`, `18`, `stable`, `latest`](https://github.com/docker-library/docker/blob/cbb0ee05d8be7b73d6b482c4a602be137e108f77/18.09/Dockerfile)
--	[`18.09.7-dind`, `18.09-dind`, `18-dind`, `stable-dind`, `dind`](https://github.com/docker-library/docker/blob/27471a8b93e980bd4c51464ee933ed90fd36bf97/18.09/dind/Dockerfile)
--	[`18.09.7-git`, `18.09-git`, `18-git`, `stable-git`, `git`](https://github.com/docker-library/docker/blob/91bbc4f7b06c06020d811dafb2266bcd7cf6c06d/18.09/git/Dockerfile)
+-	[`18.09.8`, `18.09`, `18`, `stable`, `latest`](https://github.com/docker-library/docker/blob/463595652d2367887b1ffe95ec30caa00179be72/18.09/Dockerfile)
+-	[`18.09.8-dind`, `18.09-dind`, `18-dind`, `stable-dind`, `dind`](https://github.com/docker-library/docker/blob/27471a8b93e980bd4c51464ee933ed90fd36bf97/18.09/dind/Dockerfile)
+-	[`18.09.8-git`, `18.09-git`, `18-git`, `stable-git`, `git`](https://github.com/docker-library/docker/blob/91bbc4f7b06c06020d811dafb2266bcd7cf6c06d/18.09/git/Dockerfile)
 
 # Quick reference
 
