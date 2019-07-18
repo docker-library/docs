@@ -18,12 +18,12 @@ WARNING:
 
 -	[`gzserver7`, `gzserver7-xenial`](https://github.com/osrf/docker_images/blob/99cb35e7aec72917dbaf264831edc6de22272769/gazebo/7/ubuntu/xenial/gzserver7/Dockerfile)
 -	[`libgazebo7`, `libgazebo7-xenial`](https://github.com/osrf/docker_images/blob/99cb35e7aec72917dbaf264831edc6de22272769/gazebo/7/ubuntu/xenial/libgazebo7/Dockerfile)
--	[`gzserver9-xenial`](https://github.com/osrf/docker_images/blob/7249d4e3e274c286c1ba99df9997b200a42a814f/gazebo/9/ubuntu/xenial/gzserver9/Dockerfile)
--	[`libgazebo9-xenial`](https://github.com/osrf/docker_images/blob/7249d4e3e274c286c1ba99df9997b200a42a814f/gazebo/9/ubuntu/xenial/libgazebo9/Dockerfile)
--	[`gzserver9`, `gzserver9-bionic`](https://github.com/osrf/docker_images/blob/6fa8c96b01d9f6aa43916b784dece2725a42671f/gazebo/9/ubuntu/bionic/gzserver9/Dockerfile)
--	[`libgazebo9`, `libgazebo9-bionic`](https://github.com/osrf/docker_images/blob/6fa8c96b01d9f6aa43916b784dece2725a42671f/gazebo/9/ubuntu/bionic/libgazebo9/Dockerfile)
--	[`gzserver9-stretch`](https://github.com/osrf/docker_images/blob/23e427965fb5650593d9d3567e0ee716dc87c470/gazebo/9/debian/stretch/gzserver9/Dockerfile)
--	[`libgazebo9-stretch`](https://github.com/osrf/docker_images/blob/23e427965fb5650593d9d3567e0ee716dc87c470/gazebo/9/debian/stretch/libgazebo9/Dockerfile)
+-	[`gzserver9-xenial`](https://github.com/osrf/docker_images/blob/638cb137617feea78adbdaba46b269759de1172a/gazebo/9/ubuntu/xenial/gzserver9/Dockerfile)
+-	[`libgazebo9-xenial`](https://github.com/osrf/docker_images/blob/638cb137617feea78adbdaba46b269759de1172a/gazebo/9/ubuntu/xenial/libgazebo9/Dockerfile)
+-	[`gzserver9`, `gzserver9-bionic`](https://github.com/osrf/docker_images/blob/264aff0e30704a8d214693b8dd1caf60fce86aad/gazebo/9/ubuntu/bionic/gzserver9/Dockerfile)
+-	[`libgazebo9`, `libgazebo9-bionic`](https://github.com/osrf/docker_images/blob/264aff0e30704a8d214693b8dd1caf60fce86aad/gazebo/9/ubuntu/bionic/libgazebo9/Dockerfile)
+-	[`gzserver9-stretch`](https://github.com/osrf/docker_images/blob/8b2acf6a1ac899b3af3816a41e3063d9702e87b6/gazebo/9/debian/stretch/gzserver9/Dockerfile)
+-	[`libgazebo9-stretch`](https://github.com/osrf/docker_images/blob/8b2acf6a1ac899b3af3816a41e3063d9702e87b6/gazebo/9/debian/stretch/libgazebo9/Dockerfile)
 -	[`gzserver10`, `gzserver10-bionic`](https://github.com/osrf/docker_images/blob/00d02282c2393ccde655fa0c333b4410a10b3985/gazebo/10/ubuntu/bionic/gzserver10/Dockerfile)
 -	[`libgazebo10`, `libgazebo10-bionic`, `latest`](https://github.com/osrf/docker_images/blob/00d02282c2393ccde655fa0c333b4410a10b3985/gazebo/10/ubuntu/bionic/libgazebo10/Dockerfile)
 
