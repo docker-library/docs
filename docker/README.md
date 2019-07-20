@@ -66,127 +66,176 @@ If you are still convinced that you need Docker-in-Docker and not just access to
 
 [![asciicast](https://asciinema.org/a/24707.png)](https://asciinema.org/a/24707)
 
+## TLS
+
+Starting in 18.09+, the `dind` variants of this image will automatically generate TLS certificates in the directory specified by the `DOCKER_TLS_CERTDIR` environment variable.
+
+**Warning:** in 18.09, this behavior is disabled by default (for compatibility). If you use `--network=host`, shared network namespaces (as in Kubernetes pods), or otherwise have network access to the container (including containers started within the `dind` instance via their gateway interface), this is a potential security issue (which can lead to access to the host system, for example). It is recommended to enable TLS by setting the variable to an appropriate value (`-e DOCKER_TLS_CERTDIR=/certs` or similar). In 19.03+, this behavior is enabled by default.
+
+When enabled, the Docker daemon will be started with `--host=tcp://0.0.0.0:2376 --tlsverify ...` (and when disabled, the Docker daemon will be started with `--host=tcp://0.0.0.0:2375`).
+
+Inside the directory specified by `DOCKER_TLS_CERTDIR`, the entrypoint scripts will create/use three directories:
+
+-	`ca`: the certificate authority files (`cert.pem`, `key.pem`)
+-	`server`: the `dockerd` (daemon) certificate files (`cert.pem`, `ca.pem`, `key.pem`)
+-	`client`: the `docker` (client) certificate files (`cert.pem`, `ca.pem`, `key.pem`; suitable for `DOCKER_CERT_PATH`)
+
+In order to make use of this functionality from a "client" container, at least the `client` subdirectory of the `$DOCKER_TLS_CERTDIR` directory needs to be shared (as illustrated in the following examples).
+
+To disable this image behavior, simply override the container command or entrypoint to run `dockerd` directly (`... docker:dind dockerd ...` or `... --entrypoint dockerd docker:dind ...`).
+
 ## Start a daemon instance
 
 ```console
-$ docker run --privileged --name some-docker -d docker:dind
+$ docker run --privileged --name some-docker -d \
+	--network some-network --network-alias docker \
+	-e DOCKER_TLS_CERTDIR=/certs \
+	-v some-docker-certs-ca:/certs/ca \
+	-v some-docker-certs-client:/certs/client \
+	docker:dind
 ```
 
 **Note:** `--privileged` is required for Docker-in-Docker to function properly, but it should be used with care as it provides full access to the host environment, as explained [in the relevant section of the Docker documentation](https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities).
 
-**Warning:** by default, the `dind` variants of this image add `--host=tcp://0.0.0.0:2375` (on top of the explicit default of `--host=unix:///var/run/docker.sock`) in order to allow other containers to access `dockerd` (as the following examples illustrate). If you use `--network=host`, shared network namespaces (as in Kubernetes pods), or otherwise have network access to the container (including containers started within the `dind` instance via their gateway interface), this is a potential security issue (which can lead to access to the host system, for example). To disable this image behavior, simply override the container command or entrypoint to run `dockerd` directly (`... docker:dind dockerd ...` or `... --entrypoint dockerd docker:dind ...`). It is recommended to implement TLS (`... docker:dind dockerd --host tcp://0.0.0.0:2376 --tlsverify ...`) if network access to the `dind` instance is required.
-
 ## Connect to it from a second container
 
 ```console
-$ docker run --rm --link some-docker:docker docker:edge version
-Client:
- Version:      17.05.0-ce
- API version:  1.27 (downgraded from 1.29)
- Go version:   go1.7.5
- Git commit:   89658be
- Built:        Fri May  5 15:36:11 2017
- OS/Arch:      linux/amd64
+$ docker run --rm --network some-network \
+	-e DOCKER_TLS_CERTDIR=/certs \
+	-v some-docker-certs-client:/certs/client:ro \
+	docker:latest version
+Client: Docker Engine - Community
+ Version:           18.09.8
+ API version:       1.39
+ Go version:        go1.10.8
+ Git commit:        0dd43dd87f
+ Built:             Wed Jul 17 17:38:58 2019
+ OS/Arch:           linux/amd64
+ Experimental:      false
 
-Server:
- Version:      17.03.1-ce
- API version:  1.27 (minimum version 1.12)
- Go version:   go1.7.5
- Git commit:   c6d412e
- Built:        Tue Mar 28 00:40:02 2017
- OS/Arch:      linux/amd64
- Experimental: false
+Server: Docker Engine - Community
+ Engine:
+  Version:          18.09.8
+  API version:      1.39 (minimum version 1.12)
+  Go version:       go1.10.8
+  Git commit:       0dd43dd87f
+  Built:            Wed Jul 17 17:48:49 2019
+  OS/Arch:          linux/amd64
+  Experimental:     false
 ```
 
 ```console
-$ docker run -it --rm --link some-docker:docker docker:edge sh
+$ docker run -it --rm --network some-network \
+	-e DOCKER_TLS_CERTDIR=/certs \
+	-v some-docker-certs-client:/certs/client:ro \
+	docker:latest sh
 / # docker version
-Client:
- Version:      17.05.0-ce
- API version:  1.27 (downgraded from 1.29)
- Go version:   go1.7.5
- Git commit:   89658be
- Built:        Fri May  5 15:36:11 2017
- OS/Arch:      linux/amd64
+Client: Docker Engine - Community
+ Version:           18.09.8
+ API version:       1.39
+ Go version:        go1.10.8
+ Git commit:        0dd43dd87f
+ Built:             Wed Jul 17 17:38:58 2019
+ OS/Arch:           linux/amd64
+ Experimental:      false
 
-Server:
- Version:      17.03.1-ce
- API version:  1.27 (minimum version 1.12)
- Go version:   go1.7.5
- Git commit:   c6d412e
- Built:        Tue Mar 28 00:40:02 2017
- OS/Arch:      linux/amd64
- Experimental: false
+Server: Docker Engine - Community
+ Engine:
+  Version:          18.09.8
+  API version:      1.39 (minimum version 1.12)
+  Go version:       go1.10.8
+  Git commit:       0dd43dd87f
+  Built:            Wed Jul 17 17:48:49 2019
+  OS/Arch:          linux/amd64
+  Experimental:     false
 ```
 
 ```console
-$ docker run --rm --link some-docker:docker docker info
+$ docker run --rm --network some-network \
+	-e DOCKER_TLS_CERTDIR=/certs \
+	-v some-docker-certs-client:/certs/client:ro \
+	docker:latest info
 Containers: 0
  Running: 0
  Paused: 0
  Stopped: 0
 Images: 0
-Server Version: 17.03.1-ce
-Storage Driver: vfs
+Server Version: 18.09.8
+Storage Driver: overlay2
+ Backing Filesystem: extfs
+ Supports d_type: true
+ Native Overlay Diff: true
 Logging Driver: json-file
 Cgroup Driver: cgroupfs
-Plugins: 
+Plugins:
  Volume: local
  Network: bridge host macvlan null overlay
+ Log: awslogs fluentd gcplogs gelf journald json-file local logentries splunk syslog
 Swarm: inactive
 Runtimes: runc
 Default Runtime: runc
 Init Binary: docker-init
-containerd version: 4ab9917febca54791c5f071a9d1f404867857fcc
-runc version: 54296cf40ad8143b62dbcaa1d90e520a2136ddfe
-init version: 949e6fa
+containerd version: 894b81a4b802e4eb2a91d1ce216b8817763c29fb
+runc version: 425e105d5a03fabd737a126ad93d62a9eeede87f
+init version: fec3683
 Security Options:
+ apparmor
  seccomp
   Profile: default
-Kernel Version: 4.4.63-gentoo
-Operating System: Alpine Linux v3.5 (containerized)
+Kernel Version: 4.19.0-5-amd64
+Operating System: Alpine Linux v3.10 (containerized)
 OSType: linux
 Architecture: x86_64
-CPUs: 8
-Total Memory: 31.4 GiB
-Name: 393376fdc461
-ID: FDP3:4GDT:L2WP:D4CC:UAW5:RHNA:4Z4G:WQYY:YWBE:7RER:LV7E:USY5
+CPUs: 12
+Total Memory: 62.79GiB
+Name: e174d61a4a12
+ID: HJXG:3OT7:MGDL:Y2BL:WCYP:CKSP:CGAM:4BLH:NEI4:IURF:4COF:AH6N
 Docker Root Dir: /var/lib/docker
 Debug Mode (client): false
 Debug Mode (server): false
 Registry: https://index.docker.io/v1/
-WARNING: bridge-nf-call-iptables is disabled
-WARNING: bridge-nf-call-ip6tables is disabled
+Labels:
 Experimental: false
 Insecure Registries:
  127.0.0.0/8
 Live Restore Enabled: false
+Product License: Community Engine
+
+WARNING: bridge-nf-call-iptables is disabled
+WARNING: bridge-nf-call-ip6tables is disabled
 ```
 
 ```console
-$ docker run --rm -v /var/run/docker.sock:/var/run/docker.sock docker version
-Client:
- Version:      17.05.0-ce
- API version:  1.28 (downgraded from 1.29)
- Go version:   go1.7.5
- Git commit:   89658be
- Built:        Fri May  5 15:36:11 2017
- OS/Arch:      linux/amd64
+$ docker run --rm -v /var/run/docker.sock:/var/run/docker.sock docker:latest version
+Client: Docker Engine - Community
+ Version:           18.09.8
+ API version:       1.39
+ Go version:        go1.10.8
+ Git commit:        0dd43dd87f
+ Built:             Wed Jul 17 17:38:58 2019
+ OS/Arch:           linux/amd64
+ Experimental:      false
 
-Server:
- Version:      17.04.0-ce
- API version:  1.28 (minimum version 1.12)
- Go version:   go1.8
- Git commit:   4845c56
- Built:        Thu Apr 27 07:51:43 2017
- OS/Arch:      linux/amd64
- Experimental: false
+Server: Docker Engine - Community
+ Engine:
+  Version:          18.09.7
+  API version:      1.39 (minimum version 1.12)
+  Go version:       go1.10.8
+  Git commit:       2d0083d
+  Built:            Thu Jun 27 17:23:02 2019
+  OS/Arch:          linux/amd64
+  Experimental:     false
 ```
 
 ## Custom daemon flags
 
 ```console
-$ docker run --privileged --name some-overlay-docker -d docker:dind --storage-driver=overlay
+$ docker run --privileged --name some-docker -d \
+	--network some-network --network-alias docker \
+	-e DOCKER_TLS_CERTDIR=/certs \
+	-v some-docker-certs-ca:/certs/ca \
+	-v some-docker-certs-client:/certs/client \
+	docker:dind --storage-driver overlay2
 ```
 
 ## Where to Store Data
