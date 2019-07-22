@@ -16,12 +16,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`19.03.0-rc3`, `19.03-rc`, `rc`, `test`](https://github.com/docker-library/docker/blob/cad4d26d9d84c3701e8fcfc922145b569f8dfc22/19.03-rc/Dockerfile)
--	[`19.03.0-rc3-dind`, `19.03-rc-dind`, `rc-dind`, `test-dind`](https://github.com/docker-library/docker/blob/6438624ec99b859db87dcef2cc75f5a961d1903c/19.03-rc/dind/Dockerfile)
--	[`19.03.0-rc3-git`, `19.03-rc-git`, `rc-git`, `test-git`](https://github.com/docker-library/docker/blob/98ffef81ebfa7601a9ed2f0bf56d78f426bf253c/19.03-rc/git/Dockerfile)
--	[`18.09.8`, `18.09`, `18`, `stable`, `latest`](https://github.com/docker-library/docker/blob/cad4d26d9d84c3701e8fcfc922145b569f8dfc22/18.09/Dockerfile)
--	[`18.09.8-dind`, `18.09-dind`, `18-dind`, `stable-dind`, `dind`](https://github.com/docker-library/docker/blob/6438624ec99b859db87dcef2cc75f5a961d1903c/18.09/dind/Dockerfile)
--	[`18.09.8-git`, `18.09-git`, `18-git`, `stable-git`, `git`](https://github.com/docker-library/docker/blob/91bbc4f7b06c06020d811dafb2266bcd7cf6c06d/18.09/git/Dockerfile)
+-	[`19.03.0`, `19.03`, `19`, `stable`, `test`, `latest`](https://github.com/docker-library/docker/blob/4975dca2dd357705c5613045348402ab664ccdf0/19.03/Dockerfile)
+-	[`19.03.0-dind`, `19.03-dind`, `19-dind`, `stable-dind`, `test-dind`, `dind`](https://github.com/docker-library/docker/blob/4975dca2dd357705c5613045348402ab664ccdf0/19.03/dind/Dockerfile)
+-	[`19.03.0-git`, `19.03-git`, `19-git`, `stable-git`, `test-git`, `git`](https://github.com/docker-library/docker/blob/4975dca2dd357705c5613045348402ab664ccdf0/19.03/git/Dockerfile)
+-	[`18.09.8`, `18.09`, `18`](https://github.com/docker-library/docker/blob/cad4d26d9d84c3701e8fcfc922145b569f8dfc22/18.09/Dockerfile)
+-	[`18.09.8-dind`, `18.09-dind`, `18-dind`](https://github.com/docker-library/docker/blob/6438624ec99b859db87dcef2cc75f5a961d1903c/18.09/dind/Dockerfile)
+-	[`18.09.8-git`, `18.09-git`, `18-git`](https://github.com/docker-library/docker/blob/91bbc4f7b06c06020d811dafb2266bcd7cf6c06d/18.09/git/Dockerfile)
 
 # Quick reference
 
