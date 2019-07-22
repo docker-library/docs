@@ -191,7 +191,7 @@ docker run -d -p 80:9080 -p 443:9443 \
 
 WebSphere Liberty is a commercial distribution of Open Liberty. There is an official docker image for websphere-liberty. The websphere-liberty docker image predates the open-liberty one, so to make it simpler to move from open-liberty to websphere-liberty (or vice versa) the images are broadly compatible. It should be possible to move from one to the other with a simple FROM clause change. Some considerations for moving between them:
 
-- Open Liberty installs into `/opt/ol` rather than `/opt/ibm`.
-- Use the `/config` folder for accessing the server configuration.
-- Use the `/output` folder for accessing the server output.
-- When adding your own SSL configuration use the `/config/configDropins/defaults/keystore.xml`.
+-	Open Liberty installs into `/opt/ol` rather than `/opt/ibm`.
+-	Use the `/config` folder for accessing the server configuration.
+-	Use the `/output` folder for accessing the server output.
+-	When adding your own SSL configuration use the `/config/configDropins/defaults/keystore.xml`.
