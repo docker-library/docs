@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.17.1`, `mainline`, `1`, `1.17`, `latest`](https://github.com/nginxinc/docker-nginx/blob/f9fbfcbcb24cb1fd6d207d33e9345d3e6dbb8ff2/mainline/stretch/Dockerfile)
--	[`1.17.1-perl`, `mainline-perl`, `1-perl`, `1.17-perl`, `perl`](https://github.com/nginxinc/docker-nginx/blob/f9fbfcbcb24cb1fd6d207d33e9345d3e6dbb8ff2/mainline/stretch-perl/Dockerfile)
--	[`1.17.1-alpine`, `mainline-alpine`, `1-alpine`, `1.17-alpine`, `alpine`](https://github.com/nginxinc/docker-nginx/blob/f9fbfcbcb24cb1fd6d207d33e9345d3e6dbb8ff2/mainline/alpine/Dockerfile)
--	[`1.17.1-alpine-perl`, `mainline-alpine-perl`, `1-alpine-perl`, `1.17-alpine-perl`, `alpine-perl`](https://github.com/nginxinc/docker-nginx/blob/f9fbfcbcb24cb1fd6d207d33e9345d3e6dbb8ff2/mainline/alpine-perl/Dockerfile)
+-	[`1.17.2`, `mainline`, `1`, `1.17`, `latest`](https://github.com/nginxinc/docker-nginx/blob/c817e28dd68b6daa33265a8cb527b1c4cd723b59/mainline/buster/Dockerfile)
+-	[`1.17.2-perl`, `mainline-perl`, `1-perl`, `1.17-perl`, `perl`](https://github.com/nginxinc/docker-nginx/blob/c817e28dd68b6daa33265a8cb527b1c4cd723b59/mainline/buster-perl/Dockerfile)
+-	[`1.17.2-alpine`, `mainline-alpine`, `1-alpine`, `1.17-alpine`, `alpine`](https://github.com/nginxinc/docker-nginx/blob/c817e28dd68b6daa33265a8cb527b1c4cd723b59/mainline/alpine/Dockerfile)
+-	[`1.17.2-alpine-perl`, `mainline-alpine-perl`, `1-alpine-perl`, `1.17-alpine-perl`, `alpine-perl`](https://github.com/nginxinc/docker-nginx/blob/c817e28dd68b6daa33265a8cb527b1c4cd723b59/mainline/alpine-perl/Dockerfile)
 -	[`1.16.0`, `stable`, `1.16`](https://github.com/nginxinc/docker-nginx/blob/9a052e07b2c283df9960375ee40be50c5c462a7e/stable/stretch/Dockerfile)
 -	[`1.16.0-perl`, `stable-perl`, `1.16-perl`](https://github.com/nginxinc/docker-nginx/blob/9a052e07b2c283df9960375ee40be50c5c462a7e/stable/stretch-perl/Dockerfile)
 -	[`1.16.0-alpine`, `stable-alpine`, `1.16-alpine`](https://github.com/nginxinc/docker-nginx/blob/9a052e07b2c283df9960375ee40be50c5c462a7e/stable/alpine/Dockerfile)

@@ -16,10 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`9.0.0`, `9.0`](https://github.com/getsentry/docker-sentry/blob/4b3fad46dbe56285629162e059f4f0e89174b0f9/9.0/Dockerfile)
--	[`9.0.0-onbuild`, `9.0-onbuild`](https://github.com/getsentry/docker-sentry/blob/ec474d97d968afdf78f4e489b58c68a2fbc46ee2/9.0/onbuild/Dockerfile)
--	[`9.1.1`, `9.1`, `9`, `latest`](https://github.com/getsentry/docker-sentry/blob/c2df5c220266ab9e8338d88c1ee5d8f5fdbd6cce/9.1/Dockerfile)
--	[`9.1.1-onbuild`, `9.1-onbuild`, `9-onbuild`, `onbuild`](https://github.com/getsentry/docker-sentry/blob/f58f91fe5dc31bfe77af277dae7002a5542326a9/9.1/onbuild/Dockerfile)
+-	[`9.1.2`, `9.1`, `9`, `latest`](https://github.com/getsentry/docker-sentry/blob/09a7761e841eee7fab758526b14d46ae56134952/9.1/Dockerfile)
+-	[`9.1.2-onbuild`, `9.1-onbuild`, `9-onbuild`, `onbuild`](https://github.com/getsentry/docker-sentry/blob/f58f91fe5dc31bfe77af277dae7002a5542326a9/9.1/onbuild/Dockerfile)
 
 # Quick reference
 
