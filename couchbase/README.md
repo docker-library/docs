@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `enterprise`, `6.0.1`, `enterprise-6.0.1` (*enterprise/couchbase-server/6.0.1/Dockerfile*)](https://github.com/couchbase/docker/blob/0c5b1bde0c603d8f507964cc4e6a73f3cb6b39f3/enterprise/couchbase-server/6.0.1/Dockerfile)
--	[`community`, `community-6.0.0` (*community/couchbase-server/6.0.0/Dockerfile*)](https://github.com/couchbase/docker/blob/0c5b1bde0c603d8f507964cc4e6a73f3cb6b39f3/community/couchbase-server/6.0.0/Dockerfile)
+-	[`latest`, `enterprise`, `6.0.2`, `enterprise-6.0.2`](https://github.com/couchbase/docker/blob/c3c89541de4ca5638a12c0e0822667f981e62bda/enterprise/couchbase-server/6.0.2/Dockerfile)
+-	[`community`, `community-6.0.0`](https://github.com/couchbase/docker/blob/c3c89541de4ca5638a12c0e0822667f981e62bda/community/couchbase-server/6.0.0/Dockerfile)
 
 # Quick reference
 
@@ -43,9 +43,6 @@ WARNING:
 
 -	**Source of this description**:  
 	[docs repo's `couchbase/` directory](https://github.com/docker-library/docs/tree/master/couchbase) ([history](https://github.com/docker-library/docs/commits/master/couchbase))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Couchbase Server?
 

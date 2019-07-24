@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.0.20190228`, `2`, `latest` (*Dockerfile*)](https://github.com/aws/amazon-linux-docker-images/blob/19420345fc037699392a82a8f7fc48e34f9836fc/Dockerfile)
--	[`2.0.20190228-with-sources`, `2-with-sources`, `with-sources` (*Dockerfile*)](https://github.com/aws/amazon-linux-docker-images/blob/e40d948ff1fd67b8702d15c3abde42c5f6681438/Dockerfile)
--	[`2018.03.0.20190212`, `2018.03`, `1` (*Dockerfile*)](https://github.com/aws/amazon-linux-docker-images/blob/6ba97eac5a6222140a5b70ae1083da0f1e3f2f18/Dockerfile)
--	[`2018.03.0.20190212-with-sources`, `2018.03-with-sources`, `1-with-sources` (*Dockerfile*)](https://github.com/aws/amazon-linux-docker-images/blob/d53016cae3efb56598428cad7b7699598f29d297/Dockerfile)
+-	[`2.0.20190508`, `2`, `latest`](https://github.com/amazonlinux/container-images/blob/c28dadcba0a27c8ba762bb6c54aed1b956f4e872/Dockerfile)
+-	[`2.0.20190508-with-sources`, `2-with-sources`, `with-sources`](https://github.com/amazonlinux/container-images/blob/eeffe33a00f82e8cf132b4834b4d10a2d88ecd70/Dockerfile)
+-	[`2018.03.0.20190514`, `2018.03`, `1`](https://github.com/amazonlinux/container-images/blob/4be6353f5012d044b6d7c447aa8c6feee0728542/Dockerfile)
+-	[`2018.03.0.20190514-with-sources`, `2018.03-with-sources`, `1-with-sources`](https://github.com/amazonlinux/container-images/blob/44f09a2ec31b76fc01ba5cdc18d136e5b5e02782/Dockerfile)
 
 # Quick reference
 
@@ -45,9 +45,6 @@ WARNING:
 
 -	**Source of this description**:  
 	[docs repo's `amazonlinux/` directory](https://github.com/docker-library/docs/tree/master/amazonlinux) ([history](https://github.com/docker-library/docs/commits/master/amazonlinux))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 ## What is Amazon Linux?
 

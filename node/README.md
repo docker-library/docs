@@ -16,28 +16,25 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.15.1-jessie`, `8.15-jessie`, `8-jessie`, `carbon-jessie` (*8/jessie/Dockerfile*)](https://github.com/nodejs/docker-node/blob/de76fb48b532d6be012098dc3538bd15329a27d0/8/jessie/Dockerfile)
--	[`8.15.1-jessie-slim`, `8.15-jessie-slim`, `8-jessie-slim`, `carbon-jessie-slim` (*8/jessie-slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/de76fb48b532d6be012098dc3538bd15329a27d0/8/jessie-slim/Dockerfile)
--	[`8.15.1-alpine`, `8.15-alpine`, `8-alpine`, `carbon-alpine` (*8/alpine/Dockerfile*)](https://github.com/nodejs/docker-node/blob/de76fb48b532d6be012098dc3538bd15329a27d0/8/alpine/Dockerfile)
--	[`8.15.1-onbuild`, `8.15-onbuild`, `8-onbuild`, `carbon-onbuild` (*8/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/de76fb48b532d6be012098dc3538bd15329a27d0/8/onbuild/Dockerfile)
--	[`8.15.1-stretch`, `8.15-stretch`, `8-stretch`, `carbon-stretch`, `8.15.1`, `8.15`, `8`, `carbon` (*8/stretch/Dockerfile*)](https://github.com/nodejs/docker-node/blob/de76fb48b532d6be012098dc3538bd15329a27d0/8/stretch/Dockerfile)
--	[`8.15.1-stretch-slim`, `8.15-stretch-slim`, `8-stretch-slim`, `carbon-stretch-slim`, `8.15.1-slim`, `8.15-slim`, `8-slim`, `carbon-slim` (*8/stretch-slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/de76fb48b532d6be012098dc3538bd15329a27d0/8/stretch-slim/Dockerfile)
--	[`6.17.0-jessie`, `6.17-jessie`, `6-jessie`, `boron-jessie` (*6/jessie/Dockerfile*)](https://github.com/nodejs/docker-node/blob/6833ee622c5a1d4c054ffaf96115f2a20714f5f3/6/jessie/Dockerfile)
--	[`6.17.0-jessie-slim`, `6.17-jessie-slim`, `6-jessie-slim`, `boron-jessie-slim` (*6/jessie-slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/6833ee622c5a1d4c054ffaf96115f2a20714f5f3/6/jessie-slim/Dockerfile)
--	[`6.17.0-alpine`, `6.17-alpine`, `6-alpine`, `boron-alpine` (*6/alpine/Dockerfile*)](https://github.com/nodejs/docker-node/blob/6833ee622c5a1d4c054ffaf96115f2a20714f5f3/6/alpine/Dockerfile)
--	[`6.17.0-onbuild`, `6.17-onbuild`, `6-onbuild`, `boron-onbuild` (*6/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/6833ee622c5a1d4c054ffaf96115f2a20714f5f3/6/onbuild/Dockerfile)
--	[`6.17.0-stretch`, `6.17-stretch`, `6-stretch`, `boron-stretch`, `6.17.0`, `6.17`, `6`, `boron` (*6/stretch/Dockerfile*)](https://github.com/nodejs/docker-node/blob/6833ee622c5a1d4c054ffaf96115f2a20714f5f3/6/stretch/Dockerfile)
--	[`6.17.0-stretch-slim`, `6.17-stretch-slim`, `6-stretch-slim`, `boron-stretch-slim`, `6.17.0-slim`, `6.17-slim`, `6-slim`, `boron-slim` (*6/stretch-slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/6833ee622c5a1d4c054ffaf96115f2a20714f5f3/6/stretch-slim/Dockerfile)
--	[`11.13.0-alpine`, `11.13-alpine`, `11-alpine`, `current-alpine`, `alpine` (*11/alpine/Dockerfile*)](https://github.com/nodejs/docker-node/blob/ed4cf449b40da125d4a5991fc12db20be51e6d4a/11/alpine/Dockerfile)
--	[`11.13.0-stretch`, `11.13-stretch`, `11-stretch`, `current-stretch`, `stretch`, `11.13.0`, `11.13`, `11`, `current`, `latest` (*11/stretch/Dockerfile*)](https://github.com/nodejs/docker-node/blob/ed4cf449b40da125d4a5991fc12db20be51e6d4a/11/stretch/Dockerfile)
--	[`11.13.0-stretch-slim`, `11.13-stretch-slim`, `11-stretch-slim`, `current-stretch-slim`, `stretch-slim`, `11.13.0-slim`, `11.13-slim`, `11-slim`, `current-slim`, `slim` (*11/stretch-slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/ed4cf449b40da125d4a5991fc12db20be51e6d4a/11/stretch-slim/Dockerfile)
--	[`10.15.3-jessie`, `10.15-jessie`, `10-jessie`, `dubnium-jessie`, `lts-jessie` (*10/jessie/Dockerfile*)](https://github.com/nodejs/docker-node/blob/170ed2092d4925971f9cd3ad5dfc416e820f90fd/10/jessie/Dockerfile)
--	[`10.15.3-jessie-slim`, `10.15-jessie-slim`, `10-jessie-slim`, `dubnium-jessie-slim`, `lts-jessie-slim` (*10/jessie-slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/170ed2092d4925971f9cd3ad5dfc416e820f90fd/10/jessie-slim/Dockerfile)
--	[`10.15.3-alpine`, `10.15-alpine`, `10-alpine`, `dubnium-alpine`, `lts-alpine` (*10/alpine/Dockerfile*)](https://github.com/nodejs/docker-node/blob/170ed2092d4925971f9cd3ad5dfc416e820f90fd/10/alpine/Dockerfile)
--	[`10.15.3-stretch`, `10.15-stretch`, `10-stretch`, `dubnium-stretch`, `lts-stretch`, `10.15.3`, `10.15`, `10`, `dubnium`, `lts` (*10/stretch/Dockerfile*)](https://github.com/nodejs/docker-node/blob/170ed2092d4925971f9cd3ad5dfc416e820f90fd/10/stretch/Dockerfile)
--	[`10.15.3-stretch-slim`, `10.15-stretch-slim`, `10-stretch-slim`, `dubnium-stretch-slim`, `lts-stretch-slim`, `10.15.3-slim`, `10.15-slim`, `10-slim`, `dubnium-slim`, `lts-slim` (*10/stretch-slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/170ed2092d4925971f9cd3ad5dfc416e820f90fd/10/stretch-slim/Dockerfile)
--	[`chakracore-8.11.1`, `chakracore-8.11`, `chakracore-8` (*chakracore/8/Dockerfile*)](https://github.com/nodejs/docker-node/blob/8ccd57c1457a1b47adc4d82f9fed9ad51ccef3c5/chakracore/8/Dockerfile)
--	[`chakracore-10.13.0`, `chakracore-10.13`, `chakracore-10`, `chakracore` (*chakracore/10/Dockerfile*)](https://github.com/nodejs/docker-node/blob/69c8a5f448f46f9e34d7fb577eca79ba01f6864d/chakracore/10/Dockerfile)
+-	[`8.16.0-jessie`, `8.16-jessie`, `8-jessie`, `carbon-jessie`](https://github.com/nodejs/docker-node/blob/7e47b378c42b03ae6afae704c5bf5b724aae2b92/8/jessie/Dockerfile)
+-	[`8.16.0-jessie-slim`, `8.16-jessie-slim`, `8-jessie-slim`, `carbon-jessie-slim`](https://github.com/nodejs/docker-node/blob/7e47b378c42b03ae6afae704c5bf5b724aae2b92/8/jessie-slim/Dockerfile)
+-	[`8.16.0-alpine`, `8.16-alpine`, `8-alpine`, `carbon-alpine`](https://github.com/nodejs/docker-node/blob/7e47b378c42b03ae6afae704c5bf5b724aae2b92/8/alpine/Dockerfile)
+-	[`8.16.0-onbuild`, `8.16-onbuild`, `8-onbuild`, `carbon-onbuild`](https://github.com/nodejs/docker-node/blob/a8dbfa5c7cac9dca9145c6f429cd2c4f11176707/8/onbuild/Dockerfile)
+-	[`8.16.0-stretch`, `8.16-stretch`, `8-stretch`, `carbon-stretch`, `8.16.0`, `8.16`, `8`, `carbon`](https://github.com/nodejs/docker-node/blob/7e47b378c42b03ae6afae704c5bf5b724aae2b92/8/stretch/Dockerfile)
+-	[`8.16.0-stretch-slim`, `8.16-stretch-slim`, `8-stretch-slim`, `carbon-stretch-slim`, `8.16.0-slim`, `8.16-slim`, `8-slim`, `carbon-slim`](https://github.com/nodejs/docker-node/blob/7e47b378c42b03ae6afae704c5bf5b724aae2b92/8/stretch-slim/Dockerfile)
+-	[`12.6.0-alpine`, `12.6-alpine`, `12-alpine`, `current-alpine`, `alpine`](https://github.com/nodejs/docker-node/blob/be0fbedc36a8746a7cbe3b3b1972175177fcdadd/12/alpine/Dockerfile)
+-	[`12.6.0-stretch`, `12.6-stretch`, `12-stretch`, `current-stretch`, `stretch`, `12.6.0`, `12.6`, `12`, `current`, `latest`](https://github.com/nodejs/docker-node/blob/be0fbedc36a8746a7cbe3b3b1972175177fcdadd/12/stretch/Dockerfile)
+-	[`12.6.0-stretch-slim`, `12.6-stretch-slim`, `12-stretch-slim`, `current-stretch-slim`, `stretch-slim`, `12.6.0-slim`, `12.6-slim`, `12-slim`, `current-slim`, `slim`](https://github.com/nodejs/docker-node/blob/be0fbedc36a8746a7cbe3b3b1972175177fcdadd/12/stretch-slim/Dockerfile)
+-	[`11.15.0-alpine`, `11.15-alpine`, `11-alpine`](https://github.com/nodejs/docker-node/blob/7e47b378c42b03ae6afae704c5bf5b724aae2b92/11/alpine/Dockerfile)
+-	[`11.15.0-stretch`, `11.15-stretch`, `11-stretch`, `11.15.0`, `11.15`, `11`](https://github.com/nodejs/docker-node/blob/7e47b378c42b03ae6afae704c5bf5b724aae2b92/11/stretch/Dockerfile)
+-	[`11.15.0-stretch-slim`, `11.15-stretch-slim`, `11-stretch-slim`, `11.15.0-slim`, `11.15-slim`, `11-slim`](https://github.com/nodejs/docker-node/blob/7e47b378c42b03ae6afae704c5bf5b724aae2b92/11/stretch-slim/Dockerfile)
+-	[`10.16.0-jessie`, `10.16-jessie`, `10-jessie`, `dubnium-jessie`, `lts-jessie`](https://github.com/nodejs/docker-node/blob/f8f2384f7edc345f5ffc0496458005981b512882/10/jessie/Dockerfile)
+-	[`10.16.0-jessie-slim`, `10.16-jessie-slim`, `10-jessie-slim`, `dubnium-jessie-slim`, `lts-jessie-slim`](https://github.com/nodejs/docker-node/blob/f8f2384f7edc345f5ffc0496458005981b512882/10/jessie-slim/Dockerfile)
+-	[`10.16.0-alpine`, `10.16-alpine`, `10-alpine`, `dubnium-alpine`, `lts-alpine`](https://github.com/nodejs/docker-node/blob/f8f2384f7edc345f5ffc0496458005981b512882/10/alpine/Dockerfile)
+-	[`10.16.0-stretch`, `10.16-stretch`, `10-stretch`, `dubnium-stretch`, `lts-stretch`, `10.16.0`, `10.16`, `10`, `dubnium`, `lts`](https://github.com/nodejs/docker-node/blob/f8f2384f7edc345f5ffc0496458005981b512882/10/stretch/Dockerfile)
+-	[`10.16.0-stretch-slim`, `10.16-stretch-slim`, `10-stretch-slim`, `dubnium-stretch-slim`, `lts-stretch-slim`, `10.16.0-slim`, `10.16-slim`, `10-slim`, `dubnium-slim`, `lts-slim`](https://github.com/nodejs/docker-node/blob/f8f2384f7edc345f5ffc0496458005981b512882/10/stretch-slim/Dockerfile)
+-	[`chakracore-8.11.1`, `chakracore-8.11`, `chakracore-8`](https://github.com/nodejs/docker-node/blob/4c59289300f9b4f7e95d5f30a008212b450a3bf3/chakracore/8/Dockerfile)
+-	[`chakracore-10.13.0`, `chakracore-10.13`, `chakracore-10`, `chakracore`](https://github.com/nodejs/docker-node/blob/4c59289300f9b4f7e95d5f30a008212b450a3bf3/chakracore/10/Dockerfile)
 
 # Quick reference
 
@@ -63,9 +60,6 @@ WARNING:
 
 -	**Source of this description**:  
 	[docs repo's `node/` directory](https://github.com/docker-library/docs/tree/master/node) ([history](https://github.com/docker-library/docs/commits/master/node))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Node.js?
 

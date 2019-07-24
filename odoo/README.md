@@ -16,9 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`12.0`, `12`, `latest` (*12.0/Dockerfile*)](https://github.com/odoo/docker/blob/d3e44ad1f340ceb42ec73c2be5b2d65042fe7a52/12.0/Dockerfile)
--	[`11.0`, `11` (*11.0/Dockerfile*)](https://github.com/odoo/docker/blob/d3e44ad1f340ceb42ec73c2be5b2d65042fe7a52/11.0/Dockerfile)
--	[`10.0`, `10` (*10.0/Dockerfile*)](https://github.com/odoo/docker/blob/d3e44ad1f340ceb42ec73c2be5b2d65042fe7a52/10.0/Dockerfile)
+-	[`12.0`, `12`, `latest`](https://github.com/odoo/docker/blob/c6b79809f0772c419f681889b810ae4aaff8ec37/12.0/Dockerfile)
+-	[`11.0`, `11`](https://github.com/odoo/docker/blob/c6b79809f0772c419f681889b810ae4aaff8ec37/11.0/Dockerfile)
+-	[`10.0`, `10`](https://github.com/odoo/docker/blob/c6b79809f0772c419f681889b810ae4aaff8ec37/10.0/Dockerfile)
 
 # Quick reference
 
@@ -44,9 +44,6 @@ WARNING:
 
 -	**Source of this description**:  
 	[docs repo's `odoo/` directory](https://github.com/docker-library/docs/tree/master/odoo) ([history](https://github.com/docker-library/docs/commits/master/odoo))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Odoo?
 

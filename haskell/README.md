@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.6.3`, `8.6`, `8`, `latest` (*8.6/Dockerfile*)](https://github.com/freebroccolo/docker-haskell/blob/03467e1a14543d83d33833e669249a3c42f7b7c8/8.6/Dockerfile)
--	[`8.4.4`, `8.4` (*8.4/Dockerfile*)](https://github.com/freebroccolo/docker-haskell/blob/03467e1a14543d83d33833e669249a3c42f7b7c8/8.4/Dockerfile)
+-	[`8.6.5`, `8.6`, `8`, `latest`](https://github.com/freebroccolo/docker-haskell/blob/7fd359b8dab3bf543832eb1ff34e1a46eef262a7/8.6/Dockerfile)
+-	[`8.4.4`, `8.4`](https://github.com/freebroccolo/docker-haskell/blob/03467e1a14543d83d33833e669249a3c42f7b7c8/8.4/Dockerfile)
 
 # Quick reference
 
@@ -43,9 +43,6 @@ WARNING:
 
 -	**Source of this description**:  
 	[docs repo's `haskell/` directory](https://github.com/docker-library/docs/tree/master/haskell) ([history](https://github.com/docker-library/docs/commits/master/haskell))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Haskell?
 

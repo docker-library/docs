@@ -16,11 +16,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`20190228`, `edge` (*x86_64//Dockerfile*)](https://github.com/alpinelinux/docker-alpine/blob/0d41e5d52a51c3762caf8ea2a0abc74f77b9ebe2/x86_64//Dockerfile)
--	[`3.9.2`, `3.9`, `latest` (*x86_64//Dockerfile*)](https://github.com/alpinelinux/docker-alpine/blob/847dd9a734df631555265ccf598ce635d3fe1453/x86_64//Dockerfile)
--	[`3.8.4`, `3.8` (*x86_64//Dockerfile*)](https://github.com/alpinelinux/docker-alpine/blob/dc10be162e9d2c3f799fde73e25ad30f78ff479b/x86_64//Dockerfile)
--	[`3.7.3`, `3.7` (*x86_64//Dockerfile*)](https://github.com/alpinelinux/docker-alpine/blob/e5205c8b54dd31cf9f9bb010f56cd5dfca73a711/x86_64//Dockerfile)
--	[`3.6.5`, `3.6` (*x86_64//Dockerfile*)](https://github.com/alpinelinux/docker-alpine/blob/a63b6f1205ccb10d0df96f743de4247df6e59b39/x86_64//Dockerfile)
+-	[`20190707`, `edge`](https://github.com/alpinelinux/docker-alpine/blob/9d620918eb6b7ddbea4ab2c0d1fce85b96b50410/x86_64/Dockerfile)
+-	[`3.10.1`, `3.10`, `latest`](https://github.com/alpinelinux/docker-alpine/blob/34fd41e9b9901d7b346a22c670e5875a84ecfc35/x86_64/Dockerfile)
+-	[`3.9.4`, `3.9`](https://github.com/alpinelinux/docker-alpine/blob/29db8d88a0387f56cc77b270f72d33b9d48fd021/x86_64/Dockerfile)
+-	[`3.8.4`, `3.8`](https://github.com/alpinelinux/docker-alpine/blob/dc10be162e9d2c3f799fde73e25ad30f78ff479b/x86_64/Dockerfile)
+-	[`3.7.3`, `3.7`](https://github.com/alpinelinux/docker-alpine/blob/e5205c8b54dd31cf9f9bb010f56cd5dfca73a711/x86_64/Dockerfile)
 
 # Quick reference
 
@@ -28,10 +28,10 @@ WARNING:
 	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
 -	**Where to file issues**:  
-	[https://github.com/gliderlabs/docker-alpine/issues](https://github.com/gliderlabs/docker-alpine/issues)
+	[https://github.com/alpinelinux/docker-alpine/issues](https://github.com/alpinelinux/docker-alpine/issues)
 
 -	**Maintained by**:  
-	[Glider Labs](https://github.com/gliderlabs/docker-alpine) (an Alpine community contributor)
+	[Natanael Copa](https://github.com/alpinelinux/docker-alpine) (an Alpine Linux maintainer)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/alpine/), [`arm32v6`](https://hub.docker.com/r/arm32v6/alpine/), [`arm32v7`](https://hub.docker.com/r/arm32v7/alpine/), [`arm64v8`](https://hub.docker.com/r/arm64v8/alpine/), [`i386`](https://hub.docker.com/r/i386/alpine/), [`ppc64le`](https://hub.docker.com/r/ppc64le/alpine/), [`s390x`](https://hub.docker.com/r/s390x/alpine/)
@@ -46,9 +46,6 @@ WARNING:
 
 -	**Source of this description**:  
 	[docs repo's `alpine/` directory](https://github.com/docker-library/docs/tree/master/alpine) ([history](https://github.com/docker-library/docs/commits/master/alpine))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Alpine Linux?
 
@@ -79,10 +76,6 @@ ENTRYPOINT ["mysql"]
 ```
 
 This yields us a virtual image size of about 145MB image.
-
-## Documentation
-
-This image is well documented. [Check out the documentation at Viewdocs](http://gliderlabs.viewdocs.io/docker-alpine).
 
 # License
 

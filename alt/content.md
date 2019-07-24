@@ -14,13 +14,13 @@ This image serves as the `official ALT image` for the [ALT Linux](https://altlin
 
 The name Sisyphus comes from the Greek mythology. Uninterrupted efforts on improvement of technologies set in the repository make ALT Linux Team similar to tireless Sisyphus continuously rolling stones up the hill.
 
-# About Platform 8
+# About Platform 9
 
-As said above, Sisyphus is a frequently updated repository mainly designed for developers. Stable distributions by ALT are the best solution for those users preferring stability and predictability of the system to its functionality (primarily new and corporate users). Such stable distributions are based on stable Sisyphus repository slices called platforms. Platform 8 (p8) was created in April, 2016, and will be supported till December, 2019.
+As said above, Sisyphus is a frequently updated repository mainly designed for developers. Stable distributions by ALT are the best solution for those users preferring stability and predictability of the system to its functionality (primarily new and corporate users). Such stable distributions are based on stable Sisyphus repository slices called platforms. Platform 9 (p9) was created in June, 2019, and will be supported till December, 2022.
 
 # About this image
 
-The `%%IMAGE%%:latest` tag will always point the latest stable release (which is, at the time of this writing, `%%IMAGE%%:p8`).
+The `%%IMAGE%%:latest` tag will always point the latest stable release (which is, at the time of this writing, `%%IMAGE%%:p9`).
 
 ## How It's Made
 

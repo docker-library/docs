@@ -16,12 +16,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.7-7.1.0`, `2.7-7.1`, `2.7-7`, `2.7`, `2-7.1.0`, `2-7.1`, `2-7`, `2`, `2.7-7.1.0-jessie`, `2.7-7.1-jessie`, `2.7-7-jessie`, `2.7-jessie`, `2-7.1.0-jessie`, `2-7.1-jessie`, `2-7-jessie`, `2-jessie` (*2.7/Dockerfile*)](https://github.com/docker-library/pypy/blob/d54416e2be73520a490eb0dd2819d8a2b4df3652/2.7/Dockerfile)
--	[`2.7-7.1.0-slim`, `2.7-7.1-slim`, `2.7-7-slim`, `2.7-slim`, `2-7.1.0-slim`, `2-7.1-slim`, `2-7-slim`, `2-slim`, `2.7-7.1.0-slim-jessie`, `2.7-7.1-slim-jessie`, `2.7-7-slim-jessie`, `2.7-slim-jessie`, `2-7.1.0-slim-jessie`, `2-7.1-slim-jessie`, `2-7-slim-jessie`, `2-slim-jessie` (*2.7/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/abb5b517964511ac622572f07f54c21d58849dfe/2.7/slim/Dockerfile)
--	[`3.5-7.0.0`, `3.5-7.0`, `3.5-7`, `3.5`, `3-7.0.0`, `3-7.0`, `3-7`, `3`, `latest`, `3.5-7.0.0-stretch`, `3.5-7.0-stretch`, `3.5-7-stretch`, `3.5-stretch`, `3-7.0.0-stretch`, `3-7.0-stretch`, `3-7-stretch`, `3-stretch`, `stretch` (*3.5/Dockerfile*)](https://github.com/docker-library/pypy/blob/b3ee440a1a459e63001454e5a9e1f20da439edab/3.5/Dockerfile)
--	[`3.5-7.0.0-slim`, `3.5-7.0-slim`, `3.5-7-slim`, `3.5-slim`, `3-7.0.0-slim`, `3-7.0-slim`, `3-7-slim`, `3-slim`, `slim`, `3.5-7.0.0-slim-stretch`, `3.5-7.0-slim-stretch`, `3.5-7-slim-stretch`, `3.5-slim-stretch`, `3-7.0.0-slim-stretch`, `3-7.0-slim-stretch`, `3-7-slim-stretch`, `3-slim-stretch`, `slim-stretch` (*3.5/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/abb5b517964511ac622572f07f54c21d58849dfe/3.5/slim/Dockerfile)
--	[`3.6-7.1.0`, `3.6-7.1`, `3.6-7`, `3.6`, `3.6-7.1.0-stretch`, `3.6-7.1-stretch`, `3.6-7-stretch`, `3.6-stretch` (*3.6/Dockerfile*)](https://github.com/docker-library/pypy/blob/b3ee440a1a459e63001454e5a9e1f20da439edab/3.6/Dockerfile)
--	[`3.6-7.1.0-slim`, `3.6-7.1-slim`, `3.6-7-slim`, `3.6-slim`, `3.6-7.1.0-slim-stretch`, `3.6-7.1-slim-stretch`, `3.6-7-slim-stretch`, `3.6-slim-stretch` (*3.6/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/abb5b517964511ac622572f07f54c21d58849dfe/3.6/slim/Dockerfile)
+-	[`2.7-7.1.1`, `2.7-7.1`, `2.7-7`, `2.7`, `2-7.1.1`, `2-7.1`, `2-7`, `2`, `2.7-7.1.1-jessie`, `2.7-7.1-jessie`, `2.7-7-jessie`, `2.7-jessie`, `2-7.1.1-jessie`, `2-7.1-jessie`, `2-7-jessie`, `2-jessie`](https://github.com/docker-library/pypy/blob/72fc82320f97281991a70d40c2c5d8b28793de6e/2.7/Dockerfile)
+-	[`2.7-7.1.1-slim`, `2.7-7.1-slim`, `2.7-7-slim`, `2.7-slim`, `2-7.1.1-slim`, `2-7.1-slim`, `2-7-slim`, `2-slim`, `2.7-7.1.1-slim-jessie`, `2.7-7.1-slim-jessie`, `2.7-7-slim-jessie`, `2.7-slim-jessie`, `2-7.1.1-slim-jessie`, `2-7.1-slim-jessie`, `2-7-slim-jessie`, `2-slim-jessie`](https://github.com/docker-library/pypy/blob/72fc82320f97281991a70d40c2c5d8b28793de6e/2.7/slim/Dockerfile)
+-	[`3.5-7.0.0`, `3.5-7.0`, `3.5-7`, `3.5`, `3-7.0.0`, `3-7.0`, `3-7`, `3`, `latest`, `3.5-7.0.0-stretch`, `3.5-7.0-stretch`, `3.5-7-stretch`, `3.5-stretch`, `3-7.0.0-stretch`, `3-7.0-stretch`, `3-7-stretch`, `3-stretch`, `stretch`](https://github.com/docker-library/pypy/blob/0d32ead1cc3481afd1e6c5786a973a35ad9c5494/3.5/Dockerfile)
+-	[`3.5-7.0.0-slim`, `3.5-7.0-slim`, `3.5-7-slim`, `3.5-slim`, `3-7.0.0-slim`, `3-7.0-slim`, `3-7-slim`, `3-slim`, `slim`, `3.5-7.0.0-slim-stretch`, `3.5-7.0-slim-stretch`, `3.5-7-slim-stretch`, `3.5-slim-stretch`, `3-7.0.0-slim-stretch`, `3-7.0-slim-stretch`, `3-7-slim-stretch`, `3-slim-stretch`, `slim-stretch`](https://github.com/docker-library/pypy/blob/0d32ead1cc3481afd1e6c5786a973a35ad9c5494/3.5/slim/Dockerfile)
+-	[`3.6-7.1.1`, `3.6-7.1`, `3.6-7`, `3.6`, `3.6-7.1.1-stretch`, `3.6-7.1-stretch`, `3.6-7-stretch`, `3.6-stretch`](https://github.com/docker-library/pypy/blob/72fc82320f97281991a70d40c2c5d8b28793de6e/3.6/Dockerfile)
+-	[`3.6-7.1.1-slim`, `3.6-7.1-slim`, `3.6-7-slim`, `3.6-slim`, `3.6-7.1.1-slim-stretch`, `3.6-7.1-slim-stretch`, `3.6-7-slim-stretch`, `3.6-slim-stretch`](https://github.com/docker-library/pypy/blob/72fc82320f97281991a70d40c2c5d8b28793de6e/3.6/slim/Dockerfile)
 
 # Quick reference
 
@@ -47,9 +47,6 @@ WARNING:
 
 -	**Source of this description**:  
 	[docs repo's `pypy/` directory](https://github.com/docker-library/docs/tree/master/pypy) ([history](https://github.com/docker-library/docs/commits/master/pypy))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is PyPy?
 

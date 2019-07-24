@@ -27,4 +27,4 @@ bashbrew cat --format '
 			{{- ",\n" -}}
 		{{- end -}}
 	{{- end -}}
-' "$repo" | sort -u | tr '\n' ' ' | sed 's/, $/\n/'
+' "$repo" | sort -u | tr '\n' ' ' | sed -r -e 's/, $/\n/' -e 's/^[[:space:]]+|[[:space:]]+$//g'

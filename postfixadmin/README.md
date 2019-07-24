@@ -16,9 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.2.2-apache`, `3.2-apache`, `3-apache`, `apache`, `3.2.2`, `3.2`, `3`, `latest` (*apache/Dockerfile*)](https://github.com/postfixadmin/docker/blob/a70ae86e94eb4631515edd0f79df40fb9c756a4e/apache/Dockerfile)
--	[`3.2.2-fpm`, `3.2-fpm`, `3-fpm`, `fpm` (*fpm/Dockerfile*)](https://github.com/postfixadmin/docker/blob/a70ae86e94eb4631515edd0f79df40fb9c756a4e/fpm/Dockerfile)
--	[`3.2.2-fpm-alpine`, `3.2-fpm-alpine`, `3-fpm-alpine`, `fpm-alpine` (*fpm-alpine/Dockerfile*)](https://github.com/postfixadmin/docker/blob/a70ae86e94eb4631515edd0f79df40fb9c756a4e/fpm-alpine/Dockerfile)
+-	[`3.2.2-apache`, `3.2-apache`, `3-apache`, `apache`, `3.2.2`, `3.2`, `3`, `latest`](https://github.com/postfixadmin/docker/blob/a70ae86e94eb4631515edd0f79df40fb9c756a4e/apache/Dockerfile)
+-	[`3.2.2-fpm`, `3.2-fpm`, `3-fpm`, `fpm`](https://github.com/postfixadmin/docker/blob/a70ae86e94eb4631515edd0f79df40fb9c756a4e/fpm/Dockerfile)
+-	[`3.2.2-fpm-alpine`, `3.2-fpm-alpine`, `3-fpm-alpine`, `fpm-alpine`](https://github.com/postfixadmin/docker/blob/a70ae86e94eb4631515edd0f79df40fb9c756a4e/fpm-alpine/Dockerfile)
 
 # Quick reference
 
@@ -44,9 +44,6 @@ WARNING:
 
 -	**Source of this description**:  
 	[docs repo's `postfixadmin/` directory](https://github.com/docker-library/docs/tree/master/postfixadmin) ([history](https://github.com/docker-library/docs/commits/master/postfixadmin))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Postfix Admin?
 

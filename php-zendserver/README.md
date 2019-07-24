@@ -16,9 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.6`, `8.5-php5.6`, `8.5` (*8.5/5.6/Dockerfile*)](https://github.com/zendtech/php-zendserver-docker/blob/78105bf7c9123abbb432ddba50d73ecb482062ca/8.5/5.6/Dockerfile)
--	[`9.1` (*9.1/7.1/Dockerfile*)](https://github.com/zendtech/php-zendserver-docker/blob/78105bf7c9123abbb432ddba50d73ecb482062ca/9.1/7.1/Dockerfile)
--	[`2018.0`, `latest` (*2018.0/7.2/Dockerfile*)](https://github.com/zendtech/php-zendserver-docker/blob/78105bf7c9123abbb432ddba50d73ecb482062ca/2018.0/7.2/Dockerfile)
+-	[`5.6`, `8.5-php5.6`, `8.5`](https://github.com/zendtech/php-zendserver-docker/blob/7193a889c7cc113d354cf28d0db5eeeea46c89a3/8.5/5.6/Dockerfile)
+-	[`9.1`](https://github.com/zendtech/php-zendserver-docker/blob/7193a889c7cc113d354cf28d0db5eeeea46c89a3/9.1/7.1/Dockerfile)
+-	[`2019.0`, `latest`](https://github.com/zendtech/php-zendserver-docker/blob/7193a889c7cc113d354cf28d0db5eeeea46c89a3/2019.0/Dockerfile)
 
 # Quick reference
 
@@ -44,9 +44,6 @@ WARNING:
 
 -	**Source of this description**:  
 	[docs repo's `php-zendserver/` directory](https://github.com/docker-library/docs/tree/master/php-zendserver) ([history](https://github.com/docker-library/docs/commits/master/php-zendserver))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Zend Server?
 

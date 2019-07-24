@@ -16,7 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.7`, `3.7.1`, `latest` (*alpine/Dockerfile*)](https://github.com/TeamSpeak-Systems/teamspeak-linux-docker-images/blob/d0c8785270b45f1d99fe1393813155c3db455395/alpine/Dockerfile)
+-	[`3.9`, `3.9.1`, `latest`](https://github.com/TeamSpeak-Systems/teamspeak-linux-docker-images/blob/ef39847a374333c5de84d4cb730bbbc99dd9f18b/alpine/Dockerfile)
 
 # Quick reference
 
@@ -42,9 +42,6 @@ WARNING:
 
 -	**Source of this description**:  
 	[docs repo's `teamspeak/` directory](https://github.com/docker-library/docs/tree/master/teamspeak) ([history](https://github.com/docker-library/docs/commits/master/teamspeak))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is TeamSpeak?
 

@@ -27,7 +27,4 @@
 -	**Source of this description**:  
 	[docs repo's `%%REPO%%/` directory](https://github.com/docker-library/docs/tree/master/%%REPO%%) ([history](https://github.com/docker-library/docs/commits/master/%%REPO%%))
 
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
-
 %%CONTENT%%%%VARIANT%%%%LICENSE%%

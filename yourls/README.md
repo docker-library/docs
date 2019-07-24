@@ -16,9 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.7.3-apache`, `1.7-apache`, `1-apache`, `apache`, `1.7.3`, `1.7`, `1`, `latest` (*apache/Dockerfile*)](https://github.com/YOURLS/docker-yourls/blob/f7ed6e15964d9e9025267598541e5e93e7924f8f/apache/Dockerfile)
--	[`1.7.3-fpm`, `1.7-fpm`, `1-fpm`, `fpm` (*fpm/Dockerfile*)](https://github.com/YOURLS/docker-yourls/blob/f7ed6e15964d9e9025267598541e5e93e7924f8f/fpm/Dockerfile)
--	[`1.7.3-fpm-alpine`, `1.7-fpm-alpine`, `1-fpm-alpine`, `fpm-alpine` (*fpm-alpine/Dockerfile*)](https://github.com/YOURLS/docker-yourls/blob/f7ed6e15964d9e9025267598541e5e93e7924f8f/fpm-alpine/Dockerfile)
+-	[`1.7.3-apache`, `1.7-apache`, `1-apache`, `apache`, `1.7.3`, `1.7`, `1`, `latest`](https://github.com/YOURLS/docker-yourls/blob/ce1aacd32cb0854595a5324049bb84bfdc2babf5/apache/Dockerfile)
+-	[`1.7.3-fpm`, `1.7-fpm`, `1-fpm`, `fpm`](https://github.com/YOURLS/docker-yourls/blob/ce1aacd32cb0854595a5324049bb84bfdc2babf5/fpm/Dockerfile)
+-	[`1.7.3-fpm-alpine`, `1.7-fpm-alpine`, `1-fpm-alpine`, `fpm-alpine`](https://github.com/YOURLS/docker-yourls/blob/ce1aacd32cb0854595a5324049bb84bfdc2babf5/fpm-alpine/Dockerfile)
 
 # Quick reference
 
@@ -45,9 +45,6 @@ WARNING:
 -	**Source of this description**:  
 	[docs repo's `yourls/` directory](https://github.com/docker-library/docs/tree/master/yourls) ([history](https://github.com/docker-library/docs/commits/master/yourls))
 
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
-
 # What is YOURLS?
 
 YOURLS is a set of PHP scripts that will allow you to run Your Own URL Shortener. You'll have full control over your data, detailed stats, analytics, plugins, and more. It's free.
@@ -66,7 +63,8 @@ $ docker run --name some-yourls --link some-mysql:mysql \
     -d yourls
 ```
 
-The following environment variables are also honored for configuring your YOURLS instance:
+The YOURLS instance accepts [a number of environment variables for configuration](https://yourls.org/#Config).  
+A few notable/important examples for using this Docker image include:
 
 -	`-e YOURLS_DB_HOST=...` (defaults to the IP and port of the linked `mysql` container)
 -	`-e YOURLS_DB_USER=...` (defaults to "root")

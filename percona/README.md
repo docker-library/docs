@@ -16,11 +16,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.0.15-5-centos`, `8.0-centos`, `8-centos`, `8.0.15-5`, `8.0`, `8`, `ps-8.0.15-5`, `ps-8.0`, `ps-8` (*percona-server.80/Dockerfile*)](https://github.com/percona/percona-docker/blob/9557526f4c48078ecb58167cf02ce808407ee273/percona-server.80/Dockerfile)
--	[`5.7.25-centos`, `5.7-centos`, `5-centos`, `centos`, `5.7.25`, `5.7`, `5`, `ps-5.7.25`, `ps-5.7`, `ps-5`, `latest` (*percona-server.57/Dockerfile-dockerhub*)](https://github.com/percona/percona-docker/blob/cedbd67233e531efa730eef3de64a0ad2bd65739/percona-server.57/Dockerfile-dockerhub)
--	[`5.6.43-centos`, `5.6-centos`, `5.6.43`, `5.6`, `ps-5.6.43`, `ps-5.6` (*percona-server.56/Dockerfile-dockerhub*)](https://github.com/percona/percona-docker/blob/c0bbda5f3e2c3a32ac45f22c51f5282d77afd5cc/percona-server.56/Dockerfile-dockerhub)
--	[`psmdb-4.0.6`, `psmdb-4.0` (*percona-server-mongodb.40/Dockerfile*)](https://github.com/percona/percona-docker/blob/9e691d7409c1a246fc6440809ddccf36458b6b04/percona-server-mongodb.40/Dockerfile)
--	[`psmdb-3.6.11`, `psmdb-3.6` (*percona-server-mongodb.36/Dockerfile*)](https://github.com/percona/percona-docker/blob/61192e2e81b7576f68c58637283dfff8284b2595/percona-server-mongodb.36/Dockerfile)
+-	[`8.0.15-6-centos`, `8.0-centos`, `8-centos`, `8.0.15-6`, `8.0`, `8`, `ps-8.0.15-6`, `ps-8.0`, `ps-8`](https://github.com/percona/percona-docker/blob/5a21c5eaacf5542d510112c681bc4f88c552becb/percona-server.80/Dockerfile)
+-	[`5.7.26-centos`, `5.7-centos`, `5-centos`, `centos`, `5.7.26`, `5.7`, `5`, `ps-5.7.26`, `ps-5.7`, `ps-5`, `latest`](https://github.com/percona/percona-docker/blob/9749495eb09e8611ec0713d6fc404eaa0cfae1d4/percona-server.57/Dockerfile-dockerhub)
+-	[`5.6.44-centos`, `5.6-centos`, `5.6.44`, `5.6`, `ps-5.6.44`, `ps-5.6`](https://github.com/percona/percona-docker/blob/486e77b0b933037e992836cda21ac6785720f1dc/percona-server.56/Dockerfile-dockerhub)
+-	[`psmdb-4.0.10`, `psmdb-4.0`](https://github.com/percona/percona-docker/blob/ea1ee6f37e54593a829f282c623daefeeae0e7b6/percona-server-mongodb.40/Dockerfile)
+-	[`psmdb-3.6.12`, `psmdb-3.6`](https://github.com/percona/percona-docker/blob/d1495383efaab7925dc3fd631386b068717d5738/percona-server-mongodb.36/Dockerfile)
 
 # Quick reference
 
@@ -48,9 +48,6 @@ WARNING:
 
 -	**Source of this description**:  
 	[docs repo's `percona/` directory](https://github.com/docker-library/docs/tree/master/percona) ([history](https://github.com/docker-library/docs/commits/master/percona))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # Percona Server for MySQL
 
@@ -255,6 +252,14 @@ Most of the normal tools will work, although their usage might be a little convo
 
 ```console
 $ docker exec some-percona sh -c 'exec mysqldump --all-databases -uroot -p"$MYSQL_ROOT_PASSWORD"' > /some/path/on/your/host/all-databases.sql
+```
+
+## Restoring data from dump files
+
+For restoring data. You can use `docker exec` command with `-i` flag, similar to the following:
+
+```console
+$ docker exec -i some-percona sh -c 'exec mysql -uroot -p"$MYSQL_ROOT_PASSWORD"' < /some/path/on/your/host/all-databases.sql
 ```
 
 # License

@@ -16,7 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.5.3`, `latest` (*r-base/Dockerfile*)](https://github.com/rocker-org/rocker/blob/ab427992a183729b2698e06d078eca53853c8044/r-base/Dockerfile)
+-	[`3.6.1`, `latest`](https://github.com/rocker-org/rocker/blob/919df9809c677916100cf837be687f6704d6b1b1/r-base/Dockerfile)
 
 # Quick reference
 
@@ -42,9 +42,6 @@ WARNING:
 
 -	**Source of this description**:  
 	[docs repo's `r-base/` directory](https://github.com/docker-library/docs/tree/master/r-base) ([history](https://github.com/docker-library/docs/commits/master/r-base))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is R?
 

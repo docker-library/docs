@@ -16,10 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.0.15`, `8.0`, `8`, `latest` (*8.0/Dockerfile*)](https://github.com/docker-library/mysql/blob/a7a737f1eb44db467c85c8229df9d886dd63460e/8.0/Dockerfile)
--	[`5.7.25`, `5.7`, `5` (*5.7/Dockerfile*)](https://github.com/docker-library/mysql/blob/bb7ea52db4e12d3fb526450d22382d5cd8cd41ca/5.7/Dockerfile)
--	[`5.6.43`, `5.6` (*5.6/Dockerfile*)](https://github.com/docker-library/mysql/blob/c0454b9e0ede6050deb66e2aabbc213b11b3eefe/5.6/Dockerfile)
--	[`5.5.62`, `5.5` (*5.5/Dockerfile*)](https://github.com/docker-library/mysql/blob/696fc899126ae00771b5d87bdadae836e704ae7d/5.5/Dockerfile)
+-	[`8.0.17`, `8.0`, `8`, `latest`](https://github.com/docker-library/mysql/blob/4af273a07854d7e4b68c5148b8e23b86aa8706e2/8.0/Dockerfile)
+-	[`5.7.27`, `5.7`, `5`](https://github.com/docker-library/mysql/blob/51f9523ad07abacbce90c43eb27390c1c1f76266/5.7/Dockerfile)
+-	[`5.6.45`, `5.6`](https://github.com/docker-library/mysql/blob/ed0e47e48b8ca3dbc4d68d68f56384bdd1fb5cdb/5.6/Dockerfile)
 
 # Quick reference
 
@@ -45,9 +44,6 @@ WARNING:
 
 -	**Source of this description**:  
 	[docs repo's `mysql/` directory](https://github.com/docker-library/docs/tree/master/mysql) ([history](https://github.com/docker-library/docs/commits/master/mysql))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is MySQL?
 
@@ -248,6 +244,14 @@ Most of the normal tools will work, although their usage might be a little convo
 
 ```console
 $ docker exec some-mysql sh -c 'exec mysqldump --all-databases -uroot -p"$MYSQL_ROOT_PASSWORD"' > /some/path/on/your/host/all-databases.sql
+```
+
+## Restoring data from dump files
+
+For restoring data. You can use `docker exec` command with `-i` flag, similar to the following:
+
+```console
+$ docker exec -i some-mysql sh -c 'exec mysql -uroot -p"$MYSQL_ROOT_PASSWORD"' < /some/path/on/your/host/all-databases.sql
 ```
 
 # License

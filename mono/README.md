@@ -16,11 +16,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.18.1.0`, `latest`, `5.18.1`, `5.18`, `5` (*5.18.1.0/Dockerfile*)](https://github.com/mono/docker/blob/3c2e39edd2bd3eb93f393b4682e41068a25df499/5.18.1.0/Dockerfile)
--	[`5.18.1.0-slim`, `slim`, `5.18.1-slim`, `5.18-slim`, `5-slim` (*5.18.1.0/slim/Dockerfile*)](https://github.com/mono/docker/blob/3c2e39edd2bd3eb93f393b4682e41068a25df499/5.18.1.0/slim/Dockerfile)
--	[`5.16.1.0`, `5.16.1`, `5.16` (*5.16.1.0/Dockerfile*)](https://github.com/mono/docker/blob/3c2e39edd2bd3eb93f393b4682e41068a25df499/5.16.1.0/Dockerfile)
--	[`5.16.1.0-slim`, `5.16.1-slim`, `5.16-slim` (*5.16.1.0/slim/Dockerfile*)](https://github.com/mono/docker/blob/3c2e39edd2bd3eb93f393b4682e41068a25df499/5.16.1.0/slim/Dockerfile)
--	[`4.8.0.524`, `4.8.0`, `4.8`, `4` (*4.8.0.524/Dockerfile*)](https://github.com/mono/docker/blob/0d987d93235630e05a14983c7f87500ab33c90da/4.8.0.524/Dockerfile)
+-	[`6.0.0.313`, `latest`, `6.0.0`, `6.0`, `6`](https://github.com/mono/docker/blob/c47c852008be6934ac650f282c18c70f2cfec72f/6.0.0.313/Dockerfile)
+-	[`6.0.0.313-slim`, `slim`, `6.0.0-slim`, `6.0-slim`, `6-slim`](https://github.com/mono/docker/blob/c47c852008be6934ac650f282c18c70f2cfec72f/6.0.0.313/slim/Dockerfile)
+-	[`5.20.1.34`, `5.20.1`, `5.20`, `5`](https://github.com/mono/docker/blob/c47c852008be6934ac650f282c18c70f2cfec72f/5.20.1.34/Dockerfile)
+-	[`5.20.1.34-slim`, `5.20.1-slim`, `5.20-slim`, `5-slim`](https://github.com/mono/docker/blob/c47c852008be6934ac650f282c18c70f2cfec72f/5.20.1.34/slim/Dockerfile)
+-	[`5.18.1.28`, `5.18.1`, `5.18`](https://github.com/mono/docker/blob/c47c852008be6934ac650f282c18c70f2cfec72f/5.18.1.28/Dockerfile)
+-	[`5.18.1.28-slim`, `5.18.1-slim`, `5.18-slim`](https://github.com/mono/docker/blob/c47c852008be6934ac650f282c18c70f2cfec72f/5.18.1.28/slim/Dockerfile)
 
 # Quick reference
 
@@ -46,9 +47,6 @@ WARNING:
 
 -	**Source of this description**:  
 	[docs repo's `mono/` directory](https://github.com/docker-library/docs/tree/master/mono) ([history](https://github.com/docker-library/docs/commits/master/mono))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Mono
 

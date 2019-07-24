@@ -14,9 +14,15 @@ WARNING:
 
 -->
 
+# **DEPRECATION NOTICE**
+
+This image is deprecated due to maintainer inactivity (last updated Oct 2017; [docker-library/official-images#3530](https://github.com/docker-library/official-images/pull/3530)).
+
+If a representative of the RethinkDB community would like to step up and continue maintenance, [the contribution guidelines](https://github.com/docker-library/official-images/blob/master/README.md#contributing-to-the-standard-library) are the best place to start.
+
 # Supported tags and respective `Dockerfile` links
 
--	[`2.3.6`, `2.3`, `2`, `latest` (*jessie/2.3.6/Dockerfile*)](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/05946c0dbe3c7fa9338d3827428b2c32074a1447/jessie/2.3.6/Dockerfile)
+-	[`2.3.6`, `2.3`, `2`, `latest`](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/05946c0dbe3c7fa9338d3827428b2c32074a1447/jessie/2.3.6/Dockerfile)
 
 # Quick reference
 
@@ -42,9 +48,6 @@ WARNING:
 
 -	**Source of this description**:  
 	[docs repo's `rethinkdb/` directory](https://github.com/docker-library/docs/tree/master/rethinkdb) ([history](https://github.com/docker-library/docs/commits/master/rethinkdb))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is RethinkDB?
 

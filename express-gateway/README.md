@@ -16,7 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.x`, `1.16.x`, `1.16.2`, `latest` (*alpine/Dockerfile*)](https://github.com/ExpressGateway/docker-express-gateway/blob/64981a7796a1ac46be96f6207f5c0382a0415c58/alpine/Dockerfile)
+-	[`1.x`, `1.16.x`, `1.16.7`, `latest`](https://github.com/ExpressGateway/docker-express-gateway/blob/4b1a691e345e135ef33a192d59d07817b736ec5f/alpine/Dockerfile)
 
 # Quick reference
 
@@ -42,9 +42,6 @@ WARNING:
 
 -	**Source of this description**:  
 	[docs repo's `express-gateway/` directory](https://github.com/docker-library/docs/tree/master/express-gateway) ([history](https://github.com/docker-library/docs/commits/master/express-gateway))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Express-Gateway?
 

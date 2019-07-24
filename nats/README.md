@@ -18,15 +18,16 @@ WARNING:
 
 ## Simple Tags
 
--	[`1.4.1-linux`, `linux` (*amd64/Dockerfile*)](https://github.com/nats-io/nats-docker/blob/349eabff215ee6b068f46d34df378aba52790805/amd64/Dockerfile)
--	[`1.4.1-nanoserver`, `nanoserver` (*windows/nanoserver/Dockerfile*)](https://github.com/nats-io/nats-docker/blob/349eabff215ee6b068f46d34df378aba52790805/windows/nanoserver/Dockerfile)
--	[`1.4.1-windowsservercore`, `windowsservercore` (*windows/windowsservercore/Dockerfile*)](https://github.com/nats-io/nats-docker/blob/349eabff215ee6b068f46d34df378aba52790805/windows/windowsservercore/Dockerfile)
+-	[`2.0.2-linux`, `linux`](https://github.com/nats-io/nats-docker/blob/1d19738cad8d4e2c654ead45c2b5cbe3b9f29c83/amd64/Dockerfile)
+-	[`2.0.2-nanoserver`, `nanoserver`, `nanoserver-1803`](https://github.com/nats-io/nats-docker/blob/1d19738cad8d4e2c654ead45c2b5cbe3b9f29c83/windows/nanoserver-1803/Dockerfile)
+-	[`2.0.2-nanoserver-1809`, `nanoserver-1809`](https://github.com/nats-io/nats-docker/blob/1d19738cad8d4e2c654ead45c2b5cbe3b9f29c83/windows/nanoserver-1809/Dockerfile)
+-	[`2.0.2-windowsservercore`, `windowsservercore`](https://github.com/nats-io/nats-docker/blob/1d19738cad8d4e2c654ead45c2b5cbe3b9f29c83/windows/windowsservercore/Dockerfile)
 
 ## Shared Tags
 
--	`1.4.1`, `latest`:
-	-	[`1.4.1-linux` (*amd64/Dockerfile*)](https://github.com/nats-io/nats-docker/blob/349eabff215ee6b068f46d34df378aba52790805/amd64/Dockerfile)
-	-	[`1.4.1-nanoserver` (*windows/nanoserver/Dockerfile*)](https://github.com/nats-io/nats-docker/blob/349eabff215ee6b068f46d34df378aba52790805/windows/nanoserver/Dockerfile)
+-	`2.0.2`, `latest`:
+	-	[`2.0.2-linux`](https://github.com/nats-io/nats-docker/blob/1d19738cad8d4e2c654ead45c2b5cbe3b9f29c83/amd64/Dockerfile)
+	-	[`2.0.2-nanoserver`](https://github.com/nats-io/nats-docker/blob/1d19738cad8d4e2c654ead45c2b5cbe3b9f29c83/windows/nanoserver-1803/Dockerfile)
 
 # Quick reference
 
@@ -53,14 +54,15 @@ WARNING:
 -	**Source of this description**:  
 	[docs repo's `nats/` directory](https://github.com/docker-library/docs/tree/master/nats) ([history](https://github.com/docker-library/docs/commits/master/nats))
 
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
-
 # [NATS](https://nats.io): A high-performance cloud native messaging system.
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/ad703934a62fabf54452755c8486698ff6fc5cc2/nats/logo.png)
 
 `nats` is a high performance server for the NATS Messaging System.
+
+# Backward Compatibility
+
+The routing protocol has been dramatically improved and adds support for accounts and multi-tenancy. The new protocol is not backward compatible with servers pre v2.0.0.
 
 # Example usage
 
@@ -88,10 +90,11 @@ WARNING:
 # Check "docker run" for more information.
 
 $ docker run -d --name nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 nats
-[INF] Starting nats-server version 1.4.1
-[INF] Git commit [ce2df36]
+[INF] Starting nats-server version 2.0.2
+[INF] Git commit [6a40503]
 [INF] Starting http monitor on 0.0.0.0:8222
 [INF] Listening for client connections on 0.0.0.0:4222
+[INF] Server id is NDBE6UQ7K6YSXBVWX2MJ2URFRDEQWPTFPSEN7HWJPRVUINA77P7AWAIW
 [INF] Server is ready
 [INF] Listening for route connections on 0.0.0.0:6222
 
@@ -101,23 +104,25 @@ $ docker run -d --name nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 nats
 # Note that since you are passing arguments, this overrides the CMD section
 # of the Dockerfile, so you need to pass all arguments, including the
 # config file.
-$ docker run -d --name=nats-2 --link nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 nats -c gnatsd.conf --routes=nats-route://ruser:T0pS3cr3t@nats-main:6222
+$ docker run -d --name=nats-2 --link nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 nats -c nats-server.conf --routes=nats-route://ruser:T0pS3cr3t@nats-main:6222
 
 # If you want to verify the routes are connected, try this instead:
-$ docker run -d --name=nats-2 --link nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 nats -c gnatsd.conf --routes=nats-route://ruser:T0pS3cr3t@nats-main:6222 -DV
-[INF] Starting nats-server version 1.4.1
-[DBG] Go build version go1.11.4
-[INF] Git commit [ce2df36]
+$ docker run -d --name=nats-2 --link nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 nats -c nats-server.conf --routes=nats-route://ruser:T0pS3cr3t@nats-main:6222 -DV
+[INF] Starting nats-server version 2.0.2
+[DBG] Go build version go1.11.12
+[INF] Git commit [6a40503]
 [INF] Starting http monitor on 0.0.0.0:8222
 [INF] Listening for client connections on 0.0.0.0:4222
-[DBG] Server id is n82AYgh7RMsbfAsitmpXzk
+[INF] Server id is NDJXHD5ODU45CD3B4J7FCQTB7TKTN3IFHADKY65YPMHT2DBX45C7BL2K
 [INF] Server is ready
+[DBG] Get non local IPs for "0.0.0.0"
+[DBG]  ip=172.17.0.3
 [INF] Listening for route connections on 0.0.0.0:6222
 [DBG] Trying to connect to route on nats-main:6222
-[DBG] 172.17.0.2:6222 - rid:1 - Route connection created
 [DBG] 172.17.0.2:6222 - rid:1 - Route connect msg sent
-[DBG] 172.17.0.2:6222 - rid:1 - Registering remote route "cC1EkYhtbDovu0HYthjzHV"
-[DBG] 172.17.0.2:6222 - rid:1 - Route sent local subscriptions
+[INF] 172.17.0.2:6222 - rid:1 - Route connection created
+[DBG] 172.17.0.2:6222 - rid:1 - Registering remote route "NBJHE3LV6SHP3OAFITIR7PDMYNT6J4UI66GTHTYX6N4TLIBV7EI56GNA"
+[DBG] 172.17.0.2:6222 - rid:1 - Sent local subscriptions to route
 ```
 
 The server will load the configuration file below. Any command line flags can override these values.
@@ -147,7 +152,7 @@ cluster {
 
   # Routes are actively solicited and connected to from this server.
   # This Docker image has none by default, but you can pass a
-  # flag to the gnatsd docker image to create one to an existing server.
+  # flag to the nats-server docker image to create one to an existing server.
   routes = []
 }
 ```
@@ -162,9 +167,10 @@ Server Options:
     -m, --http_port <port>           Use port for http monitoring
     -ms,--https_port <port>          Use port for https monitoring
     -c, --config <file>              Configuration file
-    -sl,--signal <signal>[=<pid>]    Send signal to gnatsd process (stop, quit, reopen, reload)
-                                     <pid> can be either a PID (e.g. 1) or the path to a PID file (e.g. /var/run/gnatsd.pid)
+    -sl,--signal <signal>[=<pid>]    Send signal to nats-server process (stop, quit, reopen, reload)
+                                     <pid> can be either a PID (e.g. 1) or the path to a PID file (e.g. /var/run/nats-server.pid)
         --client_advertise <string>  Client URL to advertise to other servers
+    -t                               Test configuration and exit
 
 Logging Options:
     -l, --log <file>                 File to redirect log output

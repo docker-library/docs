@@ -3,8 +3,7 @@ set -Eeuo pipefail
 
 image="${1:-hello-world}"
 
-timeout 5s docker pull hello-world &> /dev/null || exit 0
-timeout 5s docker pull "$image" &> /dev/null || exit 0
+echo hello-world "$image" | timeout 5s xargs -P2 -n1 docker pull &> /dev/null || exit 0
 
 exec > "$(dirname "$(readlink -f "$BASH_SOURCE")")/content.md"
 
@@ -16,7 +15,12 @@ echo '$ docker run %%IMAGE%%'
 docker run --rm hello-world
 echo
 echo '$ docker images %%IMAGE%%'
-docker images "$image" | awk -F'  +' 'NR == 1 || $2 == "latest" { print $1"\t"$2"\t"$3"\t"$5 }' | column -t -s$'\t'
+{
+	id="$(docker image inspect --format '{{ .Id }}' "$image:latest" | sed -r 's/^sha256:([a-f0-9]{12})[a-f0-9]+$/\1/')"
+	size="$(docker image inspect --format '{{ .VirtualSize }}' "$image:latest")"
+	echo $'REPOSITORY\tTAG\tIMAGE ID\tSIZE'
+	echo "$image"$'\tlatest\t'"$id"$'\t'"$size"
+} | column -t -s$'\t'
 echo '```'
 
 echo

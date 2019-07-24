@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.7.3`, `1.7`, `latest` (*full/Dockerfile*)](https://github.com/znc/znc-docker/blob/c75452c182d9e06e84f7ad7e1958e8e6063eb38a/full/Dockerfile)
--	[`1.7.3-slim`, `1.7-slim`, `slim` (*slim/Dockerfile*)](https://github.com/znc/znc-docker/blob/c75452c182d9e06e84f7ad7e1958e8e6063eb38a/slim/Dockerfile)
+-	[`1.7.4`, `1.7`, `latest`](https://github.com/znc/znc-docker/blob/e1047ff1ab0d4e2b4bca71fb65b16645c2ffa0a1/full/Dockerfile)
+-	[`1.7.4-slim`, `1.7-slim`, `slim`](https://github.com/znc/znc-docker/blob/e1047ff1ab0d4e2b4bca71fb65b16645c2ffa0a1/slim/Dockerfile)
 
 # Quick reference
 
@@ -43,9 +43,6 @@ WARNING:
 
 -	**Source of this description**:  
 	[docs repo's `znc/` directory](https://github.com/docker-library/docs/tree/master/znc) ([history](https://github.com/docker-library/docs/commits/master/znc))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is ZNC?
 

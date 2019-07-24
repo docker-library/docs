@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.2.0`, `1.2`, `1`, `latest` (*debian/Dockerfile*)](https://github.com/jessfraz/irssi/blob/ec5a36f9e17511c0b9768719db0aeeef1715fe42/debian/Dockerfile)
--	[`1.2.0-alpine`, `1.2-alpine`, `1-alpine`, `alpine` (*alpine/Dockerfile*)](https://github.com/jessfraz/irssi/blob/ec5a36f9e17511c0b9768719db0aeeef1715fe42/alpine/Dockerfile)
+-	[`1.2.1`, `1.2`, `1`, `latest`](https://github.com/jessfraz/irssi/blob/175c2ab5442cc9a57a5a84ae931108a4b6784a07/debian/Dockerfile)
+-	[`1.2.1-alpine`, `1.2-alpine`, `1-alpine`, `alpine`](https://github.com/jessfraz/irssi/blob/175c2ab5442cc9a57a5a84ae931108a4b6784a07/alpine/Dockerfile)
 
 # Quick reference
 
@@ -43,9 +43,6 @@ WARNING:
 
 -	**Source of this description**:  
 	[docs repo's `irssi/` directory](https://github.com/docker-library/docs/tree/master/irssi) ([history](https://github.com/docker-library/docs/commits/master/irssi))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is irssi?
 

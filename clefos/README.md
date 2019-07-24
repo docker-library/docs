@@ -16,7 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7`, `7.6.1810`, `latest` (*Dockerfile*)](https://github.com/nealef/clefos/blob/58fdf15e6116ee402029f005b2561b3f23bd6a6d/Dockerfile)
+-	[`7`, `7.6.1810`, `latest`](https://github.com/nealef/clefos/blob/58fdf15e6116ee402029f005b2561b3f23bd6a6d/Dockerfile)
 
 # Quick reference
 
@@ -42,9 +42,6 @@ WARNING:
 
 -	**Source of this description**:  
 	[docs repo's `clefos/` directory](https://github.com/docker-library/docs/tree/master/clefos) ([history](https://github.com/docker-library/docs/commits/master/clefos))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # ClefOS
 

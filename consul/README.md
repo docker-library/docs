@@ -16,7 +16,14 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.4.4`, `latest` (*0.X/Dockerfile*)](https://github.com/hashicorp/docker-consul/blob/c5cfe2b2554acdbd06add9e71373b65d167b1ade/0.X/Dockerfile)
+-	[`1.6.0-beta1`](https://github.com/hashicorp/docker-consul/blob/c4d239035589dc12fe82fc8550766faf7ec4961d/0.X/Dockerfile)
+-	[`1.5.2`, `1.5`, `latest`](https://github.com/hashicorp/docker-consul/blob/53c426f4c5d1cc9517c93de97bf32d56a4d5380d/0.X/Dockerfile)
+-	[`1.4.5`, `1.4`](https://github.com/hashicorp/docker-consul/blob/6294b73920ab700f9b38104f4de0ffe083e462e5/0.X/Dockerfile)
+-	[`1.3.1`, `1.3`](https://github.com/hashicorp/docker-consul/blob/9591d8392246c015dfee642f2634237ff791354a/0.X/Dockerfile)
+-	[`1.2.4`, `1.2`](https://github.com/hashicorp/docker-consul/blob/1fba73564ac4f8e7bfcc6a59a2ee747ba4dad1e0/0.X/Dockerfile)
+-	[`1.1.1`, `1.1`](https://github.com/hashicorp/docker-consul/blob/f52a1b9735ad74bebcf4555ffb8bb6fc1ab2dd95/0.X/Dockerfile)
+-	[`1.0.8`, `1.0`](https://github.com/hashicorp/docker-consul/blob/fdad25d89f87b89c7f39c2cd3223f01fbde74ffc/0.X/Dockerfile)
+-	[`0.9.4`, `0.9`](https://github.com/hashicorp/docker-consul/blob/dbc28ad074f219b1a5c277491d18f2e5244937c5/0.X/Dockerfile)
 
 # Quick reference
 
@@ -42,9 +49,6 @@ WARNING:
 
 -	**Source of this description**:  
 	[docs repo's `consul/` directory](https://github.com/docker-library/docs/tree/master/consul) ([history](https://github.com/docker-library/docs/commits/master/consul))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # Consul
 

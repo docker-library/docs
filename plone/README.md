@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.1.5`, `5.1`, `5`, `latest` (*5.1/5.1.5/debian/Dockerfile*)](https://github.com/plone/plone.docker/blob/ef1fcdb9f366abaf1e55647f037a19bd867a4da3/5.1/5.1.5/debian/Dockerfile)
--	[`5.1.5-alpine`, `5.1-alpine`, `5-alpine`, `alpine` (*5.1/5.1.5/alpine/Dockerfile*)](https://github.com/plone/plone.docker/blob/ef1fcdb9f366abaf1e55647f037a19bd867a4da3/5.1/5.1.5/alpine/Dockerfile)
--	[`4.3.18`, `4.3`, `4` (*4.3/4.3.18/debian/Dockerfile*)](https://github.com/plone/plone.docker/blob/4a429ec549ecea264e7c345e435b6805cc61887b/4.3/4.3.18/debian/Dockerfile)
--	[`4.3.18-alpine`, `4.3-alpine`, `4-alpine` (*4.3/4.3.18/alpine/Dockerfile*)](https://github.com/plone/plone.docker/blob/4a429ec549ecea264e7c345e435b6805cc61887b/4.3/4.3.18/alpine/Dockerfile)
+-	[`5.1.5`, `5.1`, `5`, `latest`](https://github.com/plone/plone.docker/blob/ef1fcdb9f366abaf1e55647f037a19bd867a4da3/5.1/5.1.5/debian/Dockerfile)
+-	[`5.1.5-alpine`, `5.1-alpine`, `5-alpine`, `alpine`](https://github.com/plone/plone.docker/blob/ef1fcdb9f366abaf1e55647f037a19bd867a4da3/5.1/5.1.5/alpine/Dockerfile)
+-	[`4.3.18`, `4.3`, `4`](https://github.com/plone/plone.docker/blob/4a429ec549ecea264e7c345e435b6805cc61887b/4.3/4.3.18/debian/Dockerfile)
+-	[`4.3.18-alpine`, `4.3-alpine`, `4-alpine`](https://github.com/plone/plone.docker/blob/4a429ec549ecea264e7c345e435b6805cc61887b/4.3/4.3.18/alpine/Dockerfile)
 
 # Quick reference
 
@@ -45,9 +45,6 @@ WARNING:
 
 -	**Source of this description**:  
 	[docs repo's `plone/` directory](https://github.com/docker-library/docs/tree/master/plone) ([history](https://github.com/docker-library/docs/commits/master/plone))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Plone?
 

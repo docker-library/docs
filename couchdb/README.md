@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `2.3.1`, `2.3`, `2` (*2.3.1/Dockerfile*)](https://github.com/apache/couchdb-docker/blob/3bcc626d30623789b4750d076f059bcd010c2a04/2.3.1/Dockerfile)
--	[`2.3.0` (*2.3.0/Dockerfile*)](https://github.com/apache/couchdb-docker/blob/3bcc626d30623789b4750d076f059bcd010c2a04/2.3.0/Dockerfile)
+-	[`latest`, `2.3.1`, `2.3`, `2`](https://github.com/apache/couchdb-docker/blob/3bcc626d30623789b4750d076f059bcd010c2a04/2.3.1/Dockerfile)
+-	[`2.3.0`](https://github.com/apache/couchdb-docker/blob/3bcc626d30623789b4750d076f059bcd010c2a04/2.3.0/Dockerfile)
 
 # Quick reference
 
@@ -43,9 +43,6 @@ WARNING:
 
 -	**Source of this description**:  
 	[docs repo's `couchdb/` directory](https://github.com/docker-library/docs/tree/master/couchdb) ([history](https://github.com/docker-library/docs/commits/master/couchdb))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Apache CouchDB?
 

@@ -16,15 +16,14 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.0`, `5.0-bionic`, `bionic`, `latest` (*5.0/ubuntu/18.04/Dockerfile*)](https://github.com/apple/swift-docker/blob/0d3ffbb7885c8731970fc294be96ce91153840d9/5.0/ubuntu/18.04/Dockerfile)
--	[`5.0-xenial`, `xenial` (*5.0/ubuntu/16.04/Dockerfile*)](https://github.com/apple/swift-docker/blob/0d3ffbb7885c8731970fc294be96ce91153840d9/5.0/ubuntu/16.04/Dockerfile)
--	[`4.2.4`, `4.2`, `4` (*4.2/ubuntu/16.04/Dockerfile*)](https://github.com/apple/swift-docker/blob/f0a61df2dd9a14dd6988e6017ae58cc63df37f41/4.2/ubuntu/16.04/Dockerfile)
--	[`4.2.3` (*4.2/ubuntu/16.04/Dockerfile*)](https://github.com/apple/swift-docker/blob/75dde01ef86e98437b1206c6a58d0428dfb345a4/4.2/ubuntu/16.04/Dockerfile)
--	[`4.2.2` (*4.2/ubuntu/16.04/Dockerfile*)](https://github.com/apple/swift-docker/blob/c5dd5e013de66da930cf1b9804797dbae11e8f9c/4.2/ubuntu/16.04/Dockerfile)
--	[`4.2.1` (*4.2/Dockerfile*)](https://github.com/apple/swift-docker/blob/34aa283f9b3473ab22b2282f71773781b121af19/4.2/Dockerfile)
--	[`4.1.3`, `4.1` (*4.1/Dockerfile*)](https://github.com/apple/swift-docker/blob/34aa283f9b3473ab22b2282f71773781b121af19/4.1/Dockerfile)
--	[`4.0.3`, `4.0` (*4.0/Dockerfile*)](https://github.com/apple/swift-docker/blob/34aa283f9b3473ab22b2282f71773781b121af19/4.0/Dockerfile)
--	[`3.1.1`, `3.1`, `3` (*3.1/Dockerfile*)](https://github.com/apple/swift-docker/blob/34aa283f9b3473ab22b2282f71773781b121af19/3.1/Dockerfile)
+-	[`5.0.2`, `5.0`, `5.0.2-bionic`, `5.0-bionic`, `bionic`, `latest`](https://github.com/apple/swift-docker/blob/585696c3d6daae2197527bee5b53a3d0e092a47f/5.0/ubuntu/18.04/Dockerfile)
+-	[`5.0.2-xenial`, `5.0-xenial`, `xenial`](https://github.com/apple/swift-docker/blob/585696c3d6daae2197527bee5b53a3d0e092a47f/5.0/ubuntu/16.04/Dockerfile)
+-	[`5.0.2-slim`, `5.0-slim`, `5.0.2-bionic-slim`, `5.0-bionic-slim`, `bionic-slim`, `slim`](https://github.com/apple/swift-docker/blob/585696c3d6daae2197527bee5b53a3d0e092a47f/5.0/ubuntu/18.04/slim/Dockerfile)
+-	[`5.0.2-xenial-slim`, `5.0-xenial-slim`, `xenial-slim`](https://github.com/apple/swift-docker/blob/585696c3d6daae2197527bee5b53a3d0e092a47f/5.0/ubuntu/16.04/slim/Dockerfile)
+-	[`4.2.4`, `4.2`, `4`](https://github.com/apple/swift-docker/blob/f0a61df2dd9a14dd6988e6017ae58cc63df37f41/4.2/ubuntu/16.04/Dockerfile)
+-	[`4.1.3`, `4.1`](https://github.com/apple/swift-docker/blob/34aa283f9b3473ab22b2282f71773781b121af19/4.1/Dockerfile)
+-	[`4.0.3`, `4.0`](https://github.com/apple/swift-docker/blob/34aa283f9b3473ab22b2282f71773781b121af19/4.0/Dockerfile)
+-	[`3.1.1`, `3.1`, `3`](https://github.com/apple/swift-docker/blob/34aa283f9b3473ab22b2282f71773781b121af19/3.1/Dockerfile)
 
 # Quick reference
 
@@ -50,9 +49,6 @@ WARNING:
 
 -	**Source of this description**:  
 	[docs repo's `swift/` directory](https://github.com/docker-library/docs/tree/master/swift) ([history](https://github.com/docker-library/docs/commits/master/swift))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Swift?
 
@@ -102,6 +98,20 @@ and then attach it
 ```bash
 docker attach swiftfun
 ```
+
+# Image Variants
+
+The `swift` images come in many flavors, each designed for a specific use case.
+
+## `swift:<version>`
+
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+Some of these tags may have names like bionic or xenial in them. These are the suite code names for releases of [Ubuntu](https://wiki.ubuntu.com/Releases) and indicate which release the image is based on.
+
+## `swift:<version>-slim`
+
+This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `swift`. Unless you are working in an environment where *only* the `swift` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
 
 # License
 

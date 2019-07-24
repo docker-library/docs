@@ -16,9 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.7.0` (*6/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/a1a331cbea5676d959fc796d140228d38d691e3d/6/Dockerfile)
--	[`5.6.16`, `5.6`, `5` (*5/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/9f14d95917805470ce1303d61add6ae195d24c70/5/Dockerfile)
--	[`5.6.16-alpine`, `5.6-alpine`, `5-alpine` (*5/alpine/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/9f14d95917805470ce1303d61add6ae195d24c70/5/alpine/Dockerfile)
+-	[`7.2.0`](https://github.com/docker-library/elasticsearch/blob/0f90651d2bb17829fc69a497888ad7eac89b3edc/7/Dockerfile)
+-	[`6.8.1`](https://github.com/docker-library/elasticsearch/blob/c9aa8eecee3217d3f0497e29c57b8d822a5eea76/6/Dockerfile)
 
 # Quick reference
 
@@ -44,9 +43,6 @@ WARNING:
 
 -	**Source of this description**:  
 	[docs repo's `elasticsearch/` directory](https://github.com/docker-library/docs/tree/master/elasticsearch) ([history](https://github.com/docker-library/docs/commits/master/elasticsearch))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Elasticsearch?
 

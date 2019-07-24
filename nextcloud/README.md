@@ -16,24 +16,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`13.0.12-apache`, `13.0-apache`, `13-apache`, `13.0.12`, `13.0`, `13` (*13.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/a1ed54243dbcf7e9b7ebdb77fc325a9d8ebdb3a5/13.0/apache/Dockerfile)
--	[`13.0.12-fpm-alpine`, `13.0-fpm-alpine`, `13-fpm-alpine` (*13.0/fpm-alpine/Dockerfile*)](https://github.com/nextcloud/docker/blob/a1ed54243dbcf7e9b7ebdb77fc325a9d8ebdb3a5/13.0/fpm-alpine/Dockerfile)
--	[`13.0.12-fpm`, `13.0-fpm`, `13-fpm` (*13.0/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/a1ed54243dbcf7e9b7ebdb77fc325a9d8ebdb3a5/13.0/fpm/Dockerfile)
--	[`14.0.9RC1-apache`, `14.0.9-rc-apache`, `14.0-rc-apache`, `14-rc-apache`, `14.0.9RC1`, `14.0.9-rc`, `14.0-rc`, `14-rc` (*14.0-rc/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/e3b5cade0fbdded526fd633157c5f7eb9a453da9/14.0-rc/apache/Dockerfile)
--	[`14.0.9RC1-fpm-alpine`, `14.0.9-rc-fpm-alpine`, `14.0-rc-fpm-alpine`, `14-rc-fpm-alpine` (*14.0-rc/fpm-alpine/Dockerfile*)](https://github.com/nextcloud/docker/blob/e3b5cade0fbdded526fd633157c5f7eb9a453da9/14.0-rc/fpm-alpine/Dockerfile)
--	[`14.0.9RC1-fpm`, `14.0.9-rc-fpm`, `14.0-rc-fpm`, `14-rc-fpm` (*14.0-rc/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/e3b5cade0fbdded526fd633157c5f7eb9a453da9/14.0-rc/fpm/Dockerfile)
--	[`14.0.8-apache`, `14.0-apache`, `14-apache`, `14.0.8`, `14.0`, `14` (*14.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/a1ed54243dbcf7e9b7ebdb77fc325a9d8ebdb3a5/14.0/apache/Dockerfile)
--	[`14.0.8-fpm-alpine`, `14.0-fpm-alpine`, `14-fpm-alpine` (*14.0/fpm-alpine/Dockerfile*)](https://github.com/nextcloud/docker/blob/a1ed54243dbcf7e9b7ebdb77fc325a9d8ebdb3a5/14.0/fpm-alpine/Dockerfile)
--	[`14.0.8-fpm`, `14.0-fpm`, `14-fpm` (*14.0/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/a1ed54243dbcf7e9b7ebdb77fc325a9d8ebdb3a5/14.0/fpm/Dockerfile)
--	[`15.0.6RC1-apache`, `15.0.6-rc-apache`, `15.0-rc-apache`, `15-rc-apache`, `15.0.6RC1`, `15.0.6-rc`, `15.0-rc`, `15-rc` (*15.0-rc/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/e3b5cade0fbdded526fd633157c5f7eb9a453da9/15.0-rc/apache/Dockerfile)
--	[`15.0.6RC1-fpm-alpine`, `15.0.6-rc-fpm-alpine`, `15.0-rc-fpm-alpine`, `15-rc-fpm-alpine` (*15.0-rc/fpm-alpine/Dockerfile*)](https://github.com/nextcloud/docker/blob/e3b5cade0fbdded526fd633157c5f7eb9a453da9/15.0-rc/fpm-alpine/Dockerfile)
--	[`15.0.6RC1-fpm`, `15.0.6-rc-fpm`, `15.0-rc-fpm`, `15-rc-fpm` (*15.0-rc/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/e3b5cade0fbdded526fd633157c5f7eb9a453da9/15.0-rc/fpm/Dockerfile)
--	[`15.0.5-apache`, `15.0-apache`, `15-apache`, `apache`, `stable-apache`, `production-apache`, `15.0.5`, `15.0`, `15`, `latest`, `stable`, `production` (*15.0/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/a1ed54243dbcf7e9b7ebdb77fc325a9d8ebdb3a5/15.0/apache/Dockerfile)
--	[`15.0.5-fpm-alpine`, `15.0-fpm-alpine`, `15-fpm-alpine`, `fpm-alpine`, `stable-fpm-alpine`, `production-fpm-alpine` (*15.0/fpm-alpine/Dockerfile*)](https://github.com/nextcloud/docker/blob/a1ed54243dbcf7e9b7ebdb77fc325a9d8ebdb3a5/15.0/fpm-alpine/Dockerfile)
--	[`15.0.5-fpm`, `15.0-fpm`, `15-fpm`, `fpm`, `stable-fpm`, `production-fpm` (*15.0/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/a1ed54243dbcf7e9b7ebdb77fc325a9d8ebdb3a5/15.0/fpm/Dockerfile)
--	[`16.0.0beta2-apache`, `16.0.0-beta-apache`, `16.0-beta-apache`, `16-beta-apache`, `16.0.0beta2`, `16.0.0-beta`, `16.0-beta`, `16-beta` (*16.0-beta/apache/Dockerfile*)](https://github.com/nextcloud/docker/blob/6731d57690135e4b530429ec9491fcc42057f68a/16.0-beta/apache/Dockerfile)
--	[`16.0.0beta2-fpm-alpine`, `16.0.0-beta-fpm-alpine`, `16.0-beta-fpm-alpine`, `16-beta-fpm-alpine` (*16.0-beta/fpm-alpine/Dockerfile*)](https://github.com/nextcloud/docker/blob/6731d57690135e4b530429ec9491fcc42057f68a/16.0-beta/fpm-alpine/Dockerfile)
--	[`16.0.0beta2-fpm`, `16.0.0-beta-fpm`, `16.0-beta-fpm`, `16-beta-fpm` (*16.0-beta/fpm/Dockerfile*)](https://github.com/nextcloud/docker/blob/6731d57690135e4b530429ec9491fcc42057f68a/16.0-beta/fpm/Dockerfile)
+-	[`14.0.13-apache`, `14.0-apache`, `14-apache`, `14.0.13`, `14.0`, `14`](https://github.com/nextcloud/docker/blob/ea8fae60eb7bb6839ea551132a3e067e1f3e7fdf/14.0/apache/Dockerfile)
+-	[`14.0.13-fpm-alpine`, `14.0-fpm-alpine`, `14-fpm-alpine`](https://github.com/nextcloud/docker/blob/ea8fae60eb7bb6839ea551132a3e067e1f3e7fdf/14.0/fpm-alpine/Dockerfile)
+-	[`14.0.13-fpm`, `14.0-fpm`, `14-fpm`](https://github.com/nextcloud/docker/blob/ea8fae60eb7bb6839ea551132a3e067e1f3e7fdf/14.0/fpm/Dockerfile)
+-	[`15.0.10-apache`, `15.0-apache`, `15-apache`, `production-apache`, `15.0.10`, `15.0`, `15`, `production`](https://github.com/nextcloud/docker/blob/c956cf7fa62e86c722bd44b38b009d70a48e4f1a/15.0/apache/Dockerfile)
+-	[`15.0.10-fpm-alpine`, `15.0-fpm-alpine`, `15-fpm-alpine`, `production-fpm-alpine`](https://github.com/nextcloud/docker/blob/c956cf7fa62e86c722bd44b38b009d70a48e4f1a/15.0/fpm-alpine/Dockerfile)
+-	[`15.0.10-fpm`, `15.0-fpm`, `15-fpm`, `production-fpm`](https://github.com/nextcloud/docker/blob/c956cf7fa62e86c722bd44b38b009d70a48e4f1a/15.0/fpm/Dockerfile)
+-	[`16.0.3-apache`, `16.0-apache`, `16-apache`, `apache`, `stable-apache`, `16.0.3`, `16.0`, `16`, `latest`, `stable`](https://github.com/nextcloud/docker/blob/c956cf7fa62e86c722bd44b38b009d70a48e4f1a/16.0/apache/Dockerfile)
+-	[`16.0.3-fpm-alpine`, `16.0-fpm-alpine`, `16-fpm-alpine`, `fpm-alpine`, `stable-fpm-alpine`](https://github.com/nextcloud/docker/blob/c956cf7fa62e86c722bd44b38b009d70a48e4f1a/16.0/fpm-alpine/Dockerfile)
+-	[`16.0.3-fpm`, `16.0-fpm`, `16-fpm`, `fpm`, `stable-fpm`](https://github.com/nextcloud/docker/blob/c956cf7fa62e86c722bd44b38b009d70a48e4f1a/16.0/fpm/Dockerfile)
 
 # Quick reference
 
@@ -59,9 +50,6 @@ WARNING:
 
 -	**Source of this description**:  
 	[docs repo's `nextcloud/` directory](https://github.com/docker-library/docs/tree/master/nextcloud) ([history](https://github.com/docker-library/docs/commits/master/nextcloud))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Nextcloud?
 
@@ -107,7 +95,7 @@ By default this container uses SQLite for data storage, but the Nextcloud setup 
 
 The Nextcloud installation and all data beyond what lives in the database (file uploads, etc) is stored in the [unnamed docker volume](https://docs.docker.com/engine/tutorials/dockervolumes/#adding-a-data-volume) volume `/var/www/html`. The docker daemon will store that data within the docker directory `/var/lib/docker/volumes/...`. That means your data is saved even if the container crashes, is stopped or deleted.
 
-To make your data persistent to upgrading and get access for backups is using named docker volume or mount a host folder. To achieve this you need one volume for your database container and Nextcloud.
+A named Docker volume or a mounted host directory should be used for upgrades and backups. To achieve this you need one volume for your database container and one for Nextcloud.
 
 Nextcloud:
 
@@ -170,7 +158,7 @@ $ docker-compose exec --user www-data app php occ
 
 The nextcloud image supports auto configuration via environment variables. You can preconfigure everything that is asked on the install page on first run. To enable auto configuration, set your database connection via the following environment variables. ONLY use one database type!
 
-**SQLITE_DATABASE**:
+**SQLite**:
 
 -	`SQLITE_DATABASE` Name of the database using sqlite
 
@@ -197,6 +185,34 @@ If you want you can set the data directory and table prefix, otherwise default v
 
 -	`NEXTCLOUD_DATA_DIR` (default: */var/www/html/data*) Configures the data directory where nextcloud stores all files from the users.
 -	`NEXTCLOUD_TABLE_PREFIX` (default: *""*) Optional prefix for the tables. Used to be `oc_` in the past
+
+One or more trusted domains can be set by environment variable, too. They will be added to the configuration after install.
+
+-	`NEXTCLOUD_TRUSTED_DOMAINS` (not set by default) Optional space-separated list of domains
+
+The install and update script is only triggered when a default command is used (`apache-foreground` or `php-fpm`). If you use a custom command you have to enable the install / update with
+
+-	`NEXTCLOUD_UPDATE` (default: *0*)
+
+If you want to use Redis you have to create a separate [Redis](https://hub.docker.com/_/redis/) container in your setup / in your docker-compose file. To inform Nextcloud about the Redis container add:
+
+-	`REDIS_HOST` (not set by default) Name of Redis container
+-	`REDIS_HOST_PORT` (default: *6379*) Optional port for Redis, only use for external Redis servers that run on non-standard ports.
+
+The use of Redis is recommended to prevent file locking problems. See the examples for further instructions.
+
+To use a external SMTP server you have to provide the connection details. To configure Nextcloud to use SMTP add:
+
+-	`SMTP_HOST` (not set by default) hostname of the SMTP server
+-	`SMTP_SECURE` (empty by default) set to 'ssl' to use SSL on the connection.
+-	`SMTP_PORT` (default: *465* for SSL and *25* for non-secure connection) Optional port for SMTP connection.
+-	`SMTP_AUTHTYPE` (default: *LOGIN*) The method used for authentication.
+-	`SMTP_NAME` (empty by default) Username for the authentication.
+-	`SMTP_PASSWORD` (empty by default) Password for the authentication.
+-	`MAIL_FROM_ADDRESS` (not set by default) Use this address for the 'from' field in the mail envelopes sent by Nextcloud.
+-	`MAIL_DOMAIN` (not set by default) Set a different domain for the emails than the domain where Nextcloud is installed.
+
+Check the [Nextcloud documentation](https://docs.nextcloud.com/server/15/admin_manual/configuration_server/email_configuration.html) for other values to configure SMTP.
 
 # Running this image with docker-compose
 
@@ -312,7 +328,11 @@ When you first access your Nextcloud, the setup wizard will appear and ask you t
 
 # Update to a newer version
 
-Updating the Nextcloud container is done by pulling the new image, throwing away the old container and starting the new one. Since all data is stored in volumes, nothing gets lost. The startup script will check for the version in your volume and the installed docker version. If it finds a mismatch, it automatically starts the upgrade process. Don't forget to add all the volumes to your new container, so it works as expected.
+Updating the Nextcloud container is done by pulling the new image, throwing away the old container and starting the new one.
+
+**It is only possible to upgrade one major version at a time. For example, if you want to upgrade from version 14 to 16, you will have to upgrade from version 14 to 15, then from 15 to 16.**
+
+Since all data is stored in volumes, nothing gets lost. The startup script will check for the version in your volume and the installed docker version. If it finds a mismatch, it automatically starts the upgrade process. Don't forget to add all the volumes to your new container, so it works as expected.
 
 ```console
 $ docker pull nextcloud
@@ -355,6 +375,18 @@ If you use your own Dockerfile you need to configure your docker-compose file ac
       - config:/var/www/html/config
       - apps:/var/www/html/apps
     restart: always
+```
+
+If you intend to use another command to run the image. Make sure that you set `NEXTCLOUD_UPDATE=1` in your Dockerfile. Otherwise the installation and update will not work.
+
+```yaml
+FROM nextcloud:apache
+
+...
+
+ENV NEXTCLOUD_UPDATE=1
+
+CMD ["/usr/bin/supervisord"]
 ```
 
 **Updating** your own derived image is also very simple. When a new version of the Nextcloud image is available run:

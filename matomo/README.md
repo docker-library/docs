@@ -16,9 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.9.1-apache`, `3.9-apache`, `3-apache`, `apache`, `3.9.1`, `3.9`, `3`, `latest` (*apache/Dockerfile*)](https://github.com/matomo-org/docker/blob/2125140c0481fa39e5f1add28bcc45fd9f36e75e/apache/Dockerfile)
--	[`3.9.1-fpm`, `3.9-fpm`, `3-fpm`, `fpm` (*fpm/Dockerfile*)](https://github.com/matomo-org/docker/blob/2125140c0481fa39e5f1add28bcc45fd9f36e75e/fpm/Dockerfile)
--	[`3.9.1-fpm-alpine`, `3.9-fpm-alpine`, `3-fpm-alpine`, `fpm-alpine` (*fpm-alpine/Dockerfile*)](https://github.com/matomo-org/docker/blob/2125140c0481fa39e5f1add28bcc45fd9f36e75e/fpm-alpine/Dockerfile)
+-	[`3.10.0-apache`, `3.10-apache`, `3-apache`, `apache`, `3.10.0`, `3.10`, `3`, `latest`](https://github.com/matomo-org/docker/blob/689757368fff698888c004265e4de99d2bb70265/apache/Dockerfile)
+-	[`3.10.0-fpm`, `3.10-fpm`, `3-fpm`, `fpm`](https://github.com/matomo-org/docker/blob/689757368fff698888c004265e4de99d2bb70265/fpm/Dockerfile)
+-	[`3.10.0-fpm-alpine`, `3.10-fpm-alpine`, `3-fpm-alpine`, `fpm-alpine`](https://github.com/matomo-org/docker/blob/c3bc18c223ee4327acf5506eed3f2ffe517a027a/fpm-alpine/Dockerfile)
 
 # Quick reference
 
@@ -45,9 +45,6 @@ WARNING:
 -	**Source of this description**:  
 	[docs repo's `matomo/` directory](https://github.com/docker-library/docs/tree/master/matomo) ([history](https://github.com/docker-library/docs/commits/master/matomo))
 
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
-
 # Matomo (formerly Piwik)
 
 [![Build Status](https://travis-ci.org/matomo-org/docker.svg?branch=master)](https://travis-ci.org/matomo-org/docker) [Matomo](https://matomo.org/) (formerly Piwik) is the leading open-source analytics platform that gives you more than just powerful analytics:
@@ -60,11 +57,7 @@ WARNING:
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/955ef68222b4466509ca877daab484bc0095afcf/matomo/logo.png)
 
-## Usage
-
-In keeping with a 'pure' micro-services approach, this image runs a Matomo service only (in the form of FastCGI). Because of that it **must** be used with companion containers which provide a database for data storage and HTTP to FastCGI proxy/translation services for the user interface.
-
-## Runtime
+# How to use this image
 
 You can run the Matomo container and service like so:
 
@@ -74,20 +67,35 @@ docker run -d --link some-mysql:db matomo
 
 This assumes you've already launched a suitable MySQL or MariaDB database container.
 
-You'll now need to use a suitable reverse proxy to access the user interface; which is available on TCP port 9000. Nginx provides the necessary functions for translation between HTTP and FastCGI.
+## Persistent data
+
+Use a Docker volume to keep persistent data:
+
+```console
+docker run -d --link some-mysql:db -v matomo:/var/www/html matomo
+```
 
 ## Matomo Installation
 
 Once you're up and running, you'll arrive at the configuration wizard page. If you're using the compose file, at the `Database Setup` step, please enter the following:
 
 -	Database Server: `db`
--	Login: `root`
--	Password: MYSQL_ROOT_PASSWORD
--	Database Name: piwik (or you can choose)
+-	Login: MYSQL_USER
+-	Password: MYSQL_PASSWORD
+-	Database Name: MYSQL_DATABASE
 
 And leave the rest as default.
 
 Then you can continue the installation with the super user.
+
+The following environment variables are also honored for configuring your Matomo instance:
+
+-	`MATOMO_DATABASE_HOST`
+-	`MATOMO_DATABASE_ADAPTER`
+-	`MATOMO_DATABASE_TABLES_PREFIX`
+-	`MATOMO_DATABASE_USERNAME`
+-	`MATOMO_DATABASE_PASSWORD`
+-	`MATOMO_DATABASE_DBNAME`
 
 ## Docker-compose examples and log import instructions
 

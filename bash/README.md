@@ -16,15 +16,16 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.0.3`, `5.0`, `5`, `latest` (*5.0/Dockerfile*)](https://github.com/tianon/docker-bash/blob/2aa32af4d0f27e8078257e59e39ebcd755379b85/5.0/Dockerfile)
--	[`4.4.23`, `4.4`, `4` (*4.4/Dockerfile*)](https://github.com/tianon/docker-bash/blob/38a2a9828a6916afcb05663fd5db950afaf4c17d/4.4/Dockerfile)
--	[`4.3.48`, `4.3` (*4.3/Dockerfile*)](https://github.com/tianon/docker-bash/blob/38a2a9828a6916afcb05663fd5db950afaf4c17d/4.3/Dockerfile)
--	[`4.2.53`, `4.2` (*4.2/Dockerfile*)](https://github.com/tianon/docker-bash/blob/38a2a9828a6916afcb05663fd5db950afaf4c17d/4.2/Dockerfile)
--	[`4.1.17`, `4.1` (*4.1/Dockerfile*)](https://github.com/tianon/docker-bash/blob/38a2a9828a6916afcb05663fd5db950afaf4c17d/4.1/Dockerfile)
--	[`4.0.44`, `4.0` (*4.0/Dockerfile*)](https://github.com/tianon/docker-bash/blob/38a2a9828a6916afcb05663fd5db950afaf4c17d/4.0/Dockerfile)
--	[`3.2.57`, `3.2`, `3` (*3.2/Dockerfile*)](https://github.com/tianon/docker-bash/blob/38a2a9828a6916afcb05663fd5db950afaf4c17d/3.2/Dockerfile)
--	[`3.1.23`, `3.1` (*3.1/Dockerfile*)](https://github.com/tianon/docker-bash/blob/38a2a9828a6916afcb05663fd5db950afaf4c17d/3.1/Dockerfile)
--	[`3.0.22`, `3.0` (*3.0/Dockerfile*)](https://github.com/tianon/docker-bash/blob/38a2a9828a6916afcb05663fd5db950afaf4c17d/3.0/Dockerfile)
+-	[`devel-20190719`, `devel`](https://github.com/tianon/docker-bash/blob/455f78047f1e0d59170f68ff0caeebc3762437ea/devel/Dockerfile)
+-	[`5.0.7`, `5.0`, `5`, `latest`](https://github.com/tianon/docker-bash/blob/3682e16bca63b20ab51745afa30156e2740fc5c6/5.0/Dockerfile)
+-	[`4.4.23`, `4.4`, `4`](https://github.com/tianon/docker-bash/blob/3682e16bca63b20ab51745afa30156e2740fc5c6/4.4/Dockerfile)
+-	[`4.3.48`, `4.3`](https://github.com/tianon/docker-bash/blob/3682e16bca63b20ab51745afa30156e2740fc5c6/4.3/Dockerfile)
+-	[`4.2.53`, `4.2`](https://github.com/tianon/docker-bash/blob/3682e16bca63b20ab51745afa30156e2740fc5c6/4.2/Dockerfile)
+-	[`4.1.17`, `4.1`](https://github.com/tianon/docker-bash/blob/3682e16bca63b20ab51745afa30156e2740fc5c6/4.1/Dockerfile)
+-	[`4.0.44`, `4.0`](https://github.com/tianon/docker-bash/blob/3682e16bca63b20ab51745afa30156e2740fc5c6/4.0/Dockerfile)
+-	[`3.2.57`, `3.2`, `3`](https://github.com/tianon/docker-bash/blob/3682e16bca63b20ab51745afa30156e2740fc5c6/3.2/Dockerfile)
+-	[`3.1.23`, `3.1`](https://github.com/tianon/docker-bash/blob/3682e16bca63b20ab51745afa30156e2740fc5c6/3.1/Dockerfile)
+-	[`3.0.22`, `3.0`](https://github.com/tianon/docker-bash/blob/3682e16bca63b20ab51745afa30156e2740fc5c6/3.0/Dockerfile)
 
 # Quick reference
 
@@ -50,9 +51,6 @@ WARNING:
 
 -	**Source of this description**:  
 	[docs repo's `bash/` directory](https://github.com/docker-library/docs/tree/master/bash) ([history](https://github.com/docker-library/docs/commits/master/bash))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Bash?
 

@@ -16,15 +16,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`openjdk-8-lein`, `openjdk-8-lein-2.9.1`, `lein-2.9.1`, `lein`, `latest` (*target/openjdk-8/debian/lein/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/f4257cfa677af38c2f8a9cd0455747c9bee835ca/target/openjdk-8/debian/lein/Dockerfile)
--	[`openjdk-8-lein-alpine`, `openjdk-8-lein-2.9.1-alpine`, `lein-2.9.1-alpine`, `lein-alpine`, `alpine` (*target/openjdk-8/alpine/lein/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/f4257cfa677af38c2f8a9cd0455747c9bee835ca/target/openjdk-8/alpine/lein/Dockerfile)
--	[`openjdk-8-boot`, `openjdk-8-boot-2.8.2`, `boot-2.8.2`, `boot` (*target/openjdk-8/debian/boot/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/f4257cfa677af38c2f8a9cd0455747c9bee835ca/target/openjdk-8/debian/boot/Dockerfile)
--	[`openjdk-8-boot-alpine`, `openjdk-8-boot-2.8.2-alpine`, `boot-2.8.2-alpine`, `boot-alpine` (*target/openjdk-8/alpine/boot/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/f4257cfa677af38c2f8a9cd0455747c9bee835ca/target/openjdk-8/alpine/boot/Dockerfile)
--	[`openjdk-8-tools-deps`, `openjdk-8-tools-deps-1.10.0.442`, `tools-deps-1.10.0.442`, `tools-deps` (*target/openjdk-8/debian/tools-deps/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/f4257cfa677af38c2f8a9cd0455747c9bee835ca/target/openjdk-8/debian/tools-deps/Dockerfile)
--	[`openjdk-8-tools-deps-alpine`, `openjdk-8-tools-deps-1.10.0.442-alpine`, `tools-deps-1.10.0.442-alpine`, `tools-deps-alpine` (*target/openjdk-8/alpine/tools-deps/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/f4257cfa677af38c2f8a9cd0455747c9bee835ca/target/openjdk-8/alpine/tools-deps/Dockerfile)
--	[`openjdk-11-lein`, `openjdk-11-lein-2.9.1` (*target/openjdk-11/debian/lein/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/f4257cfa677af38c2f8a9cd0455747c9bee835ca/target/openjdk-11/debian/lein/Dockerfile)
--	[`openjdk-11-boot`, `openjdk-11-boot-2.8.2` (*target/openjdk-11/debian/boot/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/f4257cfa677af38c2f8a9cd0455747c9bee835ca/target/openjdk-11/debian/boot/Dockerfile)
--	[`openjdk-11-tools-deps`, `openjdk-11-tools-deps-1.10.0.442` (*target/openjdk-11/debian/tools-deps/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/f4257cfa677af38c2f8a9cd0455747c9bee835ca/target/openjdk-11/debian/tools-deps/Dockerfile)
+-	[`openjdk-8-lein`, `openjdk-8-lein-2.9.1`, `lein-2.9.1`, `lein`, `latest`](https://github.com/Quantisan/docker-clojure/blob/f4257cfa677af38c2f8a9cd0455747c9bee835ca/target/openjdk-8/debian/lein/Dockerfile)
+-	[`openjdk-8-lein-alpine`, `openjdk-8-lein-2.9.1-alpine`, `lein-2.9.1-alpine`, `lein-alpine`, `alpine`](https://github.com/Quantisan/docker-clojure/blob/f4257cfa677af38c2f8a9cd0455747c9bee835ca/target/openjdk-8/alpine/lein/Dockerfile)
+-	[`openjdk-8-boot`, `openjdk-8-boot-2.8.2`, `boot-2.8.2`, `boot`](https://github.com/Quantisan/docker-clojure/blob/f4257cfa677af38c2f8a9cd0455747c9bee835ca/target/openjdk-8/debian/boot/Dockerfile)
+-	[`openjdk-8-boot-alpine`, `openjdk-8-boot-2.8.2-alpine`, `boot-2.8.2-alpine`, `boot-alpine`](https://github.com/Quantisan/docker-clojure/blob/f4257cfa677af38c2f8a9cd0455747c9bee835ca/target/openjdk-8/alpine/boot/Dockerfile)
+-	[`openjdk-8-tools-deps`, `openjdk-8-tools-deps-1.10.0.442`, `tools-deps-1.10.0.442`, `tools-deps`](https://github.com/Quantisan/docker-clojure/blob/f4257cfa677af38c2f8a9cd0455747c9bee835ca/target/openjdk-8/debian/tools-deps/Dockerfile)
+-	[`openjdk-8-tools-deps-alpine`, `openjdk-8-tools-deps-1.10.0.442-alpine`, `tools-deps-1.10.0.442-alpine`, `tools-deps-alpine`](https://github.com/Quantisan/docker-clojure/blob/f4257cfa677af38c2f8a9cd0455747c9bee835ca/target/openjdk-8/alpine/tools-deps/Dockerfile)
+-	[`openjdk-11-lein`, `openjdk-11-lein-2.9.1`](https://github.com/Quantisan/docker-clojure/blob/f4257cfa677af38c2f8a9cd0455747c9bee835ca/target/openjdk-11/debian/lein/Dockerfile)
+-	[`openjdk-11-boot`, `openjdk-11-boot-2.8.2`](https://github.com/Quantisan/docker-clojure/blob/f4257cfa677af38c2f8a9cd0455747c9bee835ca/target/openjdk-11/debian/boot/Dockerfile)
+-	[`openjdk-11-tools-deps`, `openjdk-11-tools-deps-1.10.0.442`](https://github.com/Quantisan/docker-clojure/blob/f4257cfa677af38c2f8a9cd0455747c9bee835ca/target/openjdk-11/debian/tools-deps/Dockerfile)
 
 # Quick reference
 
@@ -50,9 +50,6 @@ WARNING:
 
 -	**Source of this description**:  
 	[docs repo's `clojure/` directory](https://github.com/docker-library/docs/tree/master/clojure) ([history](https://github.com/docker-library/docs/commits/master/clojure))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Clojure?
 

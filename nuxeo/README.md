@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.10`, `7`, `LTS-2015` (*7.10/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/b5c1f07464530ef23f78671547cfbe94bc027848/7.10/Dockerfile)
--	[`8.10`, `8`, `LTS-2016` (*8.10/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/410650daecfa5d8bc79dea54a875d16f47b80eda/8.10/Dockerfile)
--	[`9.10`, `9`, `LTS-2017` (*9.10/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/5c0031a6e7ac1f52a9ce80b26fd8e764d319a8b0/9.10/Dockerfile)
--	[`10.10`, `10`, `LTS-2019`, `LTS`, `FT`, `latest` (*10.10/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/c54eabfab0aabb19cf31c7e98ac4add1a8bee100/10.10/Dockerfile)
+-	[`7.10`, `7`, `LTS-2015`](https://github.com/nuxeo/docker-nuxeo/blob/f253a2398dbc39b42ca6ff84f2adeda8c1e8287e/7.10/Dockerfile)
+-	[`8.10`, `8`, `LTS-2016`](https://github.com/nuxeo/docker-nuxeo/blob/f253a2398dbc39b42ca6ff84f2adeda8c1e8287e/8.10/Dockerfile)
+-	[`9.10`, `9`, `LTS-2017`](https://github.com/nuxeo/docker-nuxeo/blob/f253a2398dbc39b42ca6ff84f2adeda8c1e8287e/9.10/Dockerfile)
+-	[`10.10`, `10`, `LTS-2019`, `LTS`, `FT`, `latest`](https://github.com/nuxeo/docker-nuxeo/blob/f253a2398dbc39b42ca6ff84f2adeda8c1e8287e/10.10/Dockerfile)
 
 # Quick reference
 
@@ -33,7 +33,7 @@ WARNING:
 	[Nuxeo](https://github.com/nuxeo/docker-nuxeo)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/nuxeo/), [`arm64v8`](https://hub.docker.com/r/arm64v8/nuxeo/)
+	[`amd64`](https://hub.docker.com/r/amd64/nuxeo/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/nuxeo/` directory](https://github.com/docker-library/repo-info/blob/master/repos/nuxeo) ([history](https://github.com/docker-library/repo-info/commits/master/repos/nuxeo))  
@@ -45,9 +45,6 @@ WARNING:
 
 -	**Source of this description**:  
 	[docs repo's `nuxeo/` directory](https://github.com/docker-library/docs/tree/master/nuxeo) ([history](https://github.com/docker-library/docs/commits/master/nuxeo))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Nuxeo ?
 

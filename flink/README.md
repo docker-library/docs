@@ -16,36 +16,18 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.6.4-hadoop24-scala_2.11`, `1.6.4-hadoop24`, `1.6-hadoop24` (*1.6/hadoop24-scala_2.11-debian/Dockerfile*)](https://github.com/docker-flink/docker-flink/blob/d1f94159f1b7bc5dec7af195d191d100e2a02333/1.6/hadoop24-scala_2.11-debian/Dockerfile)
--	[`1.6.4-hadoop26-scala_2.11`, `1.6.4-hadoop26`, `1.6-hadoop26` (*1.6/hadoop26-scala_2.11-debian/Dockerfile*)](https://github.com/docker-flink/docker-flink/blob/d1f94159f1b7bc5dec7af195d191d100e2a02333/1.6/hadoop26-scala_2.11-debian/Dockerfile)
--	[`1.6.4-hadoop27-scala_2.11`, `1.6.4-hadoop27`, `1.6-hadoop27` (*1.6/hadoop27-scala_2.11-debian/Dockerfile*)](https://github.com/docker-flink/docker-flink/blob/d1f94159f1b7bc5dec7af195d191d100e2a02333/1.6/hadoop27-scala_2.11-debian/Dockerfile)
--	[`1.6.4-hadoop28-scala_2.11`, `1.6.4-hadoop28`, `1.6-hadoop28` (*1.6/hadoop28-scala_2.11-debian/Dockerfile*)](https://github.com/docker-flink/docker-flink/blob/d1f94159f1b7bc5dec7af195d191d100e2a02333/1.6/hadoop28-scala_2.11-debian/Dockerfile)
--	[`1.6.4-scala_2.11`, `1.6-scala_2.11`, `1.6.4`, `1.6` (*1.6/scala_2.11-debian/Dockerfile*)](https://github.com/docker-flink/docker-flink/blob/d1f94159f1b7bc5dec7af195d191d100e2a02333/1.6/scala_2.11-debian/Dockerfile)
--	[`1.6.4-hadoop24-scala_2.11-alpine`, `1.6.4-hadoop24-alpine`, `1.6-hadoop24-alpine` (*1.6/hadoop24-scala_2.11-alpine/Dockerfile*)](https://github.com/docker-flink/docker-flink/blob/d1f94159f1b7bc5dec7af195d191d100e2a02333/1.6/hadoop24-scala_2.11-alpine/Dockerfile)
--	[`1.6.4-hadoop26-scala_2.11-alpine`, `1.6.4-hadoop26-alpine`, `1.6-hadoop26-alpine` (*1.6/hadoop26-scala_2.11-alpine/Dockerfile*)](https://github.com/docker-flink/docker-flink/blob/d1f94159f1b7bc5dec7af195d191d100e2a02333/1.6/hadoop26-scala_2.11-alpine/Dockerfile)
--	[`1.6.4-hadoop27-scala_2.11-alpine`, `1.6.4-hadoop27-alpine`, `1.6-hadoop27-alpine` (*1.6/hadoop27-scala_2.11-alpine/Dockerfile*)](https://github.com/docker-flink/docker-flink/blob/d1f94159f1b7bc5dec7af195d191d100e2a02333/1.6/hadoop27-scala_2.11-alpine/Dockerfile)
--	[`1.6.4-hadoop28-scala_2.11-alpine`, `1.6.4-hadoop28-alpine`, `1.6-hadoop28-alpine` (*1.6/hadoop28-scala_2.11-alpine/Dockerfile*)](https://github.com/docker-flink/docker-flink/blob/d1f94159f1b7bc5dec7af195d191d100e2a02333/1.6/hadoop28-scala_2.11-alpine/Dockerfile)
--	[`1.6.4-scala_2.11-alpine`, `1.6-scala_2.11-alpine`, `1.6.4-alpine`, `1.6-alpine` (*1.6/scala_2.11-alpine/Dockerfile*)](https://github.com/docker-flink/docker-flink/blob/d1f94159f1b7bc5dec7af195d191d100e2a02333/1.6/scala_2.11-alpine/Dockerfile)
--	[`1.7.2-hadoop24-scala_2.11` (*1.7/hadoop24-scala_2.11-debian/Dockerfile*)](https://github.com/docker-flink/docker-flink/blob/d1f94159f1b7bc5dec7af195d191d100e2a02333/1.7/hadoop24-scala_2.11-debian/Dockerfile)
--	[`1.7.2-hadoop24-scala_2.12`, `1.7.2-hadoop24`, `1.7-hadoop24`, `hadoop24` (*1.7/hadoop24-scala_2.12-debian/Dockerfile*)](https://github.com/docker-flink/docker-flink/blob/d1f94159f1b7bc5dec7af195d191d100e2a02333/1.7/hadoop24-scala_2.12-debian/Dockerfile)
--	[`1.7.2-hadoop26-scala_2.11` (*1.7/hadoop26-scala_2.11-debian/Dockerfile*)](https://github.com/docker-flink/docker-flink/blob/d1f94159f1b7bc5dec7af195d191d100e2a02333/1.7/hadoop26-scala_2.11-debian/Dockerfile)
--	[`1.7.2-hadoop26-scala_2.12`, `1.7.2-hadoop26`, `1.7-hadoop26`, `hadoop26` (*1.7/hadoop26-scala_2.12-debian/Dockerfile*)](https://github.com/docker-flink/docker-flink/blob/d1f94159f1b7bc5dec7af195d191d100e2a02333/1.7/hadoop26-scala_2.12-debian/Dockerfile)
--	[`1.7.2-hadoop27-scala_2.11` (*1.7/hadoop27-scala_2.11-debian/Dockerfile*)](https://github.com/docker-flink/docker-flink/blob/d1f94159f1b7bc5dec7af195d191d100e2a02333/1.7/hadoop27-scala_2.11-debian/Dockerfile)
--	[`1.7.2-hadoop27-scala_2.12`, `1.7.2-hadoop27`, `1.7-hadoop27`, `hadoop27` (*1.7/hadoop27-scala_2.12-debian/Dockerfile*)](https://github.com/docker-flink/docker-flink/blob/d1f94159f1b7bc5dec7af195d191d100e2a02333/1.7/hadoop27-scala_2.12-debian/Dockerfile)
--	[`1.7.2-hadoop28-scala_2.11` (*1.7/hadoop28-scala_2.11-debian/Dockerfile*)](https://github.com/docker-flink/docker-flink/blob/d1f94159f1b7bc5dec7af195d191d100e2a02333/1.7/hadoop28-scala_2.11-debian/Dockerfile)
--	[`1.7.2-hadoop28-scala_2.12`, `1.7.2-hadoop28`, `1.7-hadoop28`, `hadoop28` (*1.7/hadoop28-scala_2.12-debian/Dockerfile*)](https://github.com/docker-flink/docker-flink/blob/d1f94159f1b7bc5dec7af195d191d100e2a02333/1.7/hadoop28-scala_2.12-debian/Dockerfile)
--	[`1.7.2-scala_2.11`, `1.7-scala_2.11`, `scala_2.11` (*1.7/scala_2.11-debian/Dockerfile*)](https://github.com/docker-flink/docker-flink/blob/d1f94159f1b7bc5dec7af195d191d100e2a02333/1.7/scala_2.11-debian/Dockerfile)
--	[`1.7.2-scala_2.12`, `1.7-scala_2.12`, `scala_2.12`, `1.7.2`, `1.7`, `latest` (*1.7/scala_2.12-debian/Dockerfile*)](https://github.com/docker-flink/docker-flink/blob/d1f94159f1b7bc5dec7af195d191d100e2a02333/1.7/scala_2.12-debian/Dockerfile)
--	[`1.7.2-hadoop24-scala_2.11-alpine` (*1.7/hadoop24-scala_2.11-alpine/Dockerfile*)](https://github.com/docker-flink/docker-flink/blob/d1f94159f1b7bc5dec7af195d191d100e2a02333/1.7/hadoop24-scala_2.11-alpine/Dockerfile)
--	[`1.7.2-hadoop24-scala_2.12-alpine`, `1.7.2-hadoop24-alpine`, `1.7-hadoop24-alpine`, `hadoop24-alpine` (*1.7/hadoop24-scala_2.12-alpine/Dockerfile*)](https://github.com/docker-flink/docker-flink/blob/d1f94159f1b7bc5dec7af195d191d100e2a02333/1.7/hadoop24-scala_2.12-alpine/Dockerfile)
--	[`1.7.2-hadoop26-scala_2.11-alpine` (*1.7/hadoop26-scala_2.11-alpine/Dockerfile*)](https://github.com/docker-flink/docker-flink/blob/d1f94159f1b7bc5dec7af195d191d100e2a02333/1.7/hadoop26-scala_2.11-alpine/Dockerfile)
--	[`1.7.2-hadoop26-scala_2.12-alpine`, `1.7.2-hadoop26-alpine`, `1.7-hadoop26-alpine`, `hadoop26-alpine` (*1.7/hadoop26-scala_2.12-alpine/Dockerfile*)](https://github.com/docker-flink/docker-flink/blob/d1f94159f1b7bc5dec7af195d191d100e2a02333/1.7/hadoop26-scala_2.12-alpine/Dockerfile)
--	[`1.7.2-hadoop27-scala_2.11-alpine` (*1.7/hadoop27-scala_2.11-alpine/Dockerfile*)](https://github.com/docker-flink/docker-flink/blob/d1f94159f1b7bc5dec7af195d191d100e2a02333/1.7/hadoop27-scala_2.11-alpine/Dockerfile)
--	[`1.7.2-hadoop27-scala_2.12-alpine`, `1.7.2-hadoop27-alpine`, `1.7-hadoop27-alpine`, `hadoop27-alpine` (*1.7/hadoop27-scala_2.12-alpine/Dockerfile*)](https://github.com/docker-flink/docker-flink/blob/d1f94159f1b7bc5dec7af195d191d100e2a02333/1.7/hadoop27-scala_2.12-alpine/Dockerfile)
--	[`1.7.2-hadoop28-scala_2.11-alpine` (*1.7/hadoop28-scala_2.11-alpine/Dockerfile*)](https://github.com/docker-flink/docker-flink/blob/d1f94159f1b7bc5dec7af195d191d100e2a02333/1.7/hadoop28-scala_2.11-alpine/Dockerfile)
--	[`1.7.2-hadoop28-scala_2.12-alpine`, `1.7.2-hadoop28-alpine`, `1.7-hadoop28-alpine`, `hadoop28-alpine` (*1.7/hadoop28-scala_2.12-alpine/Dockerfile*)](https://github.com/docker-flink/docker-flink/blob/d1f94159f1b7bc5dec7af195d191d100e2a02333/1.7/hadoop28-scala_2.12-alpine/Dockerfile)
--	[`1.7.2-scala_2.11-alpine`, `1.7-scala_2.11-alpine`, `scala_2.11-alpine` (*1.7/scala_2.11-alpine/Dockerfile*)](https://github.com/docker-flink/docker-flink/blob/d1f94159f1b7bc5dec7af195d191d100e2a02333/1.7/scala_2.11-alpine/Dockerfile)
--	[`1.7.2-scala_2.12-alpine`, `1.7-scala_2.12-alpine`, `scala_2.12-alpine`, `1.7.2-alpine`, `1.7-alpine`, `alpine` (*1.7/scala_2.12-alpine/Dockerfile*)](https://github.com/docker-flink/docker-flink/blob/d1f94159f1b7bc5dec7af195d191d100e2a02333/1.7/scala_2.12-alpine/Dockerfile)
+-	[`1.7.2-hadoop24-scala_2.11`](https://github.com/docker-flink/docker-flink/blob/f96f07a516dbd4d9544d22c5272006ccd0b988d6/1.7/hadoop24-scala_2.11-debian/Dockerfile)
+-	[`1.7.2-hadoop24-scala_2.12`, `1.7.2-hadoop24`, `1.7-hadoop24`](https://github.com/docker-flink/docker-flink/blob/f96f07a516dbd4d9544d22c5272006ccd0b988d6/1.7/hadoop24-scala_2.12-debian/Dockerfile)
+-	[`1.7.2-hadoop26-scala_2.11`](https://github.com/docker-flink/docker-flink/blob/f96f07a516dbd4d9544d22c5272006ccd0b988d6/1.7/hadoop26-scala_2.11-debian/Dockerfile)
+-	[`1.7.2-hadoop26-scala_2.12`, `1.7.2-hadoop26`, `1.7-hadoop26`](https://github.com/docker-flink/docker-flink/blob/f96f07a516dbd4d9544d22c5272006ccd0b988d6/1.7/hadoop26-scala_2.12-debian/Dockerfile)
+-	[`1.7.2-hadoop27-scala_2.11`](https://github.com/docker-flink/docker-flink/blob/f96f07a516dbd4d9544d22c5272006ccd0b988d6/1.7/hadoop27-scala_2.11-debian/Dockerfile)
+-	[`1.7.2-hadoop27-scala_2.12`, `1.7.2-hadoop27`, `1.7-hadoop27`](https://github.com/docker-flink/docker-flink/blob/f96f07a516dbd4d9544d22c5272006ccd0b988d6/1.7/hadoop27-scala_2.12-debian/Dockerfile)
+-	[`1.7.2-hadoop28-scala_2.11`](https://github.com/docker-flink/docker-flink/blob/f96f07a516dbd4d9544d22c5272006ccd0b988d6/1.7/hadoop28-scala_2.11-debian/Dockerfile)
+-	[`1.7.2-hadoop28-scala_2.12`, `1.7.2-hadoop28`, `1.7-hadoop28`](https://github.com/docker-flink/docker-flink/blob/f96f07a516dbd4d9544d22c5272006ccd0b988d6/1.7/hadoop28-scala_2.12-debian/Dockerfile)
+-	[`1.7.2-scala_2.11`, `1.7-scala_2.11`](https://github.com/docker-flink/docker-flink/blob/f96f07a516dbd4d9544d22c5272006ccd0b988d6/1.7/scala_2.11-debian/Dockerfile)
+-	[`1.7.2-scala_2.12`, `1.7-scala_2.12`, `1.7.2`, `1.7`](https://github.com/docker-flink/docker-flink/blob/f96f07a516dbd4d9544d22c5272006ccd0b988d6/1.7/scala_2.12-debian/Dockerfile)
+-	[`1.8.1-scala_2.11`, `1.8-scala_2.11`, `scala_2.11`](https://github.com/docker-flink/docker-flink/blob/60c582b1422f77a336bafb89fb9ae4f1965027a8/1.8/scala_2.11-debian/Dockerfile)
+-	[`1.8.1-scala_2.12`, `1.8-scala_2.12`, `scala_2.12`, `1.8.1`, `1.8`, `latest`](https://github.com/docker-flink/docker-flink/blob/60c582b1422f77a336bafb89fb9ae4f1965027a8/1.8/scala_2.12-debian/Dockerfile)
 
 # Quick reference
 
@@ -59,7 +41,7 @@ WARNING:
 	[members of the Apache Flink community](https://github.com/docker-flink/docker-flink)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/flink/), [`arm32v5`](https://hub.docker.com/r/arm32v5/flink/), [`arm32v6`](https://hub.docker.com/r/arm32v6/flink/), [`arm32v7`](https://hub.docker.com/r/arm32v7/flink/), [`arm64v8`](https://hub.docker.com/r/arm64v8/flink/), [`i386`](https://hub.docker.com/r/i386/flink/), [`ppc64le`](https://hub.docker.com/r/ppc64le/flink/), [`s390x`](https://hub.docker.com/r/s390x/flink/)
+	[`amd64`](https://hub.docker.com/r/amd64/flink/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/flink/` directory](https://github.com/docker-library/repo-info/blob/master/repos/flink) ([history](https://github.com/docker-library/repo-info/commits/master/repos/flink))  
@@ -71,9 +53,6 @@ WARNING:
 
 -	**Source of this description**:  
 	[docs repo's `flink/` directory](https://github.com/docker-library/docs/tree/master/flink) ([history](https://github.com/docker-library/docs/commits/master/flink))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Apache Flink?
 
@@ -158,22 +137,6 @@ These are the default ports used by the Flink image:
 This repository is available on [github.com/docker-flink/docker-flink](https://github.com/docker-flink/docker-flink), and the official build is on the [Docker Hub](https://hub.docker.com/_/flink/).
 
 This repository is maintained by members of the Apache Flink community.
-
-# Image Variants
-
-The `flink` images come in many flavors, each designed for a specific use case.
-
-## `flink:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-## `flink:<version>-alpine`
-
-This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
-
-This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
-
-To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 # License
 

@@ -16,22 +16,27 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.8.1`, `1.8`, `latest` (*1.8/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/5570afaa6de095a86e98457e1ad1351f92ccfe26/1.8/Dockerfile)
--	[`1.8.1-slim`, `1.8-slim`, `slim` (*1.8/slim/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/5570afaa6de095a86e98457e1ad1351f92ccfe26/1.8/slim/Dockerfile)
--	[`1.8.1-alpine`, `1.8-alpine`, `alpine` (*1.8/alpine/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/5570afaa6de095a86e98457e1ad1351f92ccfe26/1.8/alpine/Dockerfile)
--	[`1.7.4`, `1.7` (*1.7/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/2b7dd2845d27a6dad57bf0047b305375d6182402/1.7/Dockerfile)
--	[`1.7.4-slim`, `1.7-slim` (*1.7/slim/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/7c1f05ca3fd47bdc86cab3f0310068646a31dcac/1.7/slim/Dockerfile)
--	[`1.7.4-alpine`, `1.7-alpine` (*1.7/alpine/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/2b7dd2845d27a6dad57bf0047b305375d6182402/1.7/alpine/Dockerfile)
--	[`1.6.6`, `1.6` (*1.6/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/0936291249c7e11d4618a17a2b452045c9e6233a/1.6/Dockerfile)
--	[`1.6.6-slim`, `1.6-slim` (*1.6/slim/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/0936291249c7e11d4618a17a2b452045c9e6233a/1.6/slim/Dockerfile)
--	[`1.6.6-alpine`, `1.6-alpine` (*1.6/alpine/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/0936291249c7e11d4618a17a2b452045c9e6233a/1.6/alpine/Dockerfile)
--	[`1.6.6-otp-21`, `1.6-otp-21` (*1.6/otp-21/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/b57a72d04ddd1f1b4e2e3f5b70e44e37def4db31/1.6/otp-21/Dockerfile)
--	[`1.6.6-otp-21-alpine`, `1.6-otp-21-alpine` (*1.6/otp-21-alpine/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/084efbdda747411b3a41c231deaff03c437e5aad/1.6/otp-21-alpine/Dockerfile)
--	[`1.5.3`, `1.5` (*1.5/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/f2528c0158d465f96f311faa19aff3cffb4e7f25/1.5/Dockerfile)
--	[`1.5.3-slim`, `1.5-slim` (*1.5/slim/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/f2528c0158d465f96f311faa19aff3cffb4e7f25/1.5/slim/Dockerfile)
--	[`1.5.3-alpine`, `1.5-alpine` (*1.5/alpine/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/f2528c0158d465f96f311faa19aff3cffb4e7f25/1.5/alpine/Dockerfile)
--	[`1.4.5`, `1.4` (*1.4/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/8f1888ae05506b9ad12e1b97f084a15e7588f442/1.4/Dockerfile)
--	[`1.4.5-slim`, `1.4-slim` (*1.4/slim/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/8f1888ae05506b9ad12e1b97f084a15e7588f442/1.4/slim/Dockerfile)
+-	[`1.9.0`, `1.9`, `latest`](https://github.com/c0b/docker-elixir/blob/6398b1c03b2dc7ce7c2e0c80b3f641c042ec36bc/1.9/Dockerfile)
+-	[`1.9.0-slim`, `1.9-slim`, `slim`](https://github.com/c0b/docker-elixir/blob/6398b1c03b2dc7ce7c2e0c80b3f641c042ec36bc/1.9/slim/Dockerfile)
+-	[`1.9.0-alpine`, `1.9-alpine`, `alpine`](https://github.com/c0b/docker-elixir/blob/6398b1c03b2dc7ce7c2e0c80b3f641c042ec36bc/1.9/alpine/Dockerfile)
+-	[`1.8.2`, `1.8`](https://github.com/c0b/docker-elixir/blob/4122b4840bd762d1434424e1ec693929b0198c98/1.8/Dockerfile)
+-	[`1.8.2-slim`, `1.8-slim`](https://github.com/c0b/docker-elixir/blob/4122b4840bd762d1434424e1ec693929b0198c98/1.8/slim/Dockerfile)
+-	[`1.8.2-alpine`, `1.8-alpine`](https://github.com/c0b/docker-elixir/blob/4122b4840bd762d1434424e1ec693929b0198c98/1.8/alpine/Dockerfile)
+-	[`1.8.2-otp-22`, `1.8-otp-22`, `otp-22`](https://github.com/c0b/docker-elixir/blob/6dc5ffd3b4c2915096887b45ba8e71d391ce2398/1.8/otp-22/Dockerfile)
+-	[`1.8.2-otp-22-alpine`, `1.8-otp-22-alpine`, `otp-22-alpine`](https://github.com/c0b/docker-elixir/blob/6dc5ffd3b4c2915096887b45ba8e71d391ce2398/1.8/otp-22-alpine/Dockerfile)
+-	[`1.7.4`, `1.7`](https://github.com/c0b/docker-elixir/blob/2b7dd2845d27a6dad57bf0047b305375d6182402/1.7/Dockerfile)
+-	[`1.7.4-slim`, `1.7-slim`](https://github.com/c0b/docker-elixir/blob/7c1f05ca3fd47bdc86cab3f0310068646a31dcac/1.7/slim/Dockerfile)
+-	[`1.7.4-alpine`, `1.7-alpine`](https://github.com/c0b/docker-elixir/blob/2b7dd2845d27a6dad57bf0047b305375d6182402/1.7/alpine/Dockerfile)
+-	[`1.6.6`, `1.6`](https://github.com/c0b/docker-elixir/blob/0936291249c7e11d4618a17a2b452045c9e6233a/1.6/Dockerfile)
+-	[`1.6.6-slim`, `1.6-slim`](https://github.com/c0b/docker-elixir/blob/0936291249c7e11d4618a17a2b452045c9e6233a/1.6/slim/Dockerfile)
+-	[`1.6.6-alpine`, `1.6-alpine`](https://github.com/c0b/docker-elixir/blob/0936291249c7e11d4618a17a2b452045c9e6233a/1.6/alpine/Dockerfile)
+-	[`1.6.6-otp-21`, `1.6-otp-21`](https://github.com/c0b/docker-elixir/blob/b57a72d04ddd1f1b4e2e3f5b70e44e37def4db31/1.6/otp-21/Dockerfile)
+-	[`1.6.6-otp-21-alpine`, `1.6-otp-21-alpine`](https://github.com/c0b/docker-elixir/blob/084efbdda747411b3a41c231deaff03c437e5aad/1.6/otp-21-alpine/Dockerfile)
+-	[`1.5.3`, `1.5`](https://github.com/c0b/docker-elixir/blob/f2528c0158d465f96f311faa19aff3cffb4e7f25/1.5/Dockerfile)
+-	[`1.5.3-slim`, `1.5-slim`](https://github.com/c0b/docker-elixir/blob/f2528c0158d465f96f311faa19aff3cffb4e7f25/1.5/slim/Dockerfile)
+-	[`1.5.3-alpine`, `1.5-alpine`](https://github.com/c0b/docker-elixir/blob/f2528c0158d465f96f311faa19aff3cffb4e7f25/1.5/alpine/Dockerfile)
+-	[`1.4.5`, `1.4`](https://github.com/c0b/docker-elixir/blob/8f1888ae05506b9ad12e1b97f084a15e7588f442/1.4/Dockerfile)
+-	[`1.4.5-slim`, `1.4-slim`](https://github.com/c0b/docker-elixir/blob/8f1888ae05506b9ad12e1b97f084a15e7588f442/1.4/slim/Dockerfile)
 
 # Quick reference
 
@@ -57,9 +62,6 @@ WARNING:
 
 -	**Source of this description**:  
 	[docs repo's `elixir/` directory](https://github.com/docker-library/docs/tree/master/elixir) ([history](https://github.com/docker-library/docs/commits/master/elixir))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Elixir?
 

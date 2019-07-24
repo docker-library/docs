@@ -16,9 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.32.0`, `1.32`, `stable`, `latest` (*1.32/Dockerfile*)](https://github.com/wikimedia/mediawiki-docker/blob/06e8e1fff294a244b3c6177dd9138f14e4b410fa/1.32/Dockerfile)
--	[`1.31.1`, `1.31`, `lts`, `legacy` (*1.31/Dockerfile*)](https://github.com/wikimedia/mediawiki-docker/blob/06e8e1fff294a244b3c6177dd9138f14e4b410fa/1.31/Dockerfile)
--	[`1.27.5`, `1.27`, `legacylts` (*1.27/Dockerfile*)](https://github.com/wikimedia/mediawiki-docker/blob/06e8e1fff294a244b3c6177dd9138f14e4b410fa/1.27/Dockerfile)
+-	[`1.33.0`, `1.33`, `stable`, `latest`](https://github.com/wikimedia/mediawiki-docker/blob/98c36e3a5bb64dca5cbe6638a826a7137a164a44/1.33/Dockerfile)
+-	[`1.32.3`, `1.32`, `legacy`](https://github.com/wikimedia/mediawiki-docker/blob/98c36e3a5bb64dca5cbe6638a826a7137a164a44/1.32/Dockerfile)
+-	[`1.31.3`, `1.31`, `lts`](https://github.com/wikimedia/mediawiki-docker/blob/98c36e3a5bb64dca5cbe6638a826a7137a164a44/1.31/Dockerfile)
+-	[`1.27.7`, `1.27`, `legacylts`](https://github.com/wikimedia/mediawiki-docker/blob/98c36e3a5bb64dca5cbe6638a826a7137a164a44/1.27/Dockerfile)
 
 # Quick reference
 
@@ -44,9 +45,6 @@ WARNING:
 
 -	**Source of this description**:  
 	[docs repo's `mediawiki/` directory](https://github.com/docker-library/docs/tree/master/mediawiki) ([history](https://github.com/docker-library/docs/commits/master/mediawiki))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is MediaWiki?
 
