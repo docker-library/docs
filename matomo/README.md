@@ -88,6 +88,15 @@ And leave the rest as default.
 
 Then you can continue the installation with the super user.
 
+The following environment variables are also honored for configuring your Matomo instance:
+
+-	`MATOMO_DATABASE_HOST`
+-	`MATOMO_DATABASE_ADAPTER`
+-	`MATOMO_DATABASE_TABLES_PREFIX`
+-	`MATOMO_DATABASE_USERNAME`
+-	`MATOMO_DATABASE_PASSWORD`
+-	`MATOMO_DATABASE_DBNAME`
+
 ## Docker-compose examples and log import instructions
 
 A minimal set-up using docker-compose is available in the [.examples folder](https://github.com/matomo-org/docker/tree/master/.examples).
