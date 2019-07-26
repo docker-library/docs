@@ -32,7 +32,15 @@ To analyze other kinds of projects and for more details see [Analyzing Source Co
 
 ## Requirements
 
-As SonarQube use an embedded ElasticSearch, you need to make sure that the Docker host configuration complies with the [ElasticSearch production mode requirements](https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html#docker-cli-run-prod-mode) and [File Descriptors configuration](https://www.elastic.co/guide/en/elasticsearch/reference/current/file-descriptors.html)
+Because SonarQube uses an embedded Elasticsearch, make sure that the Docker host configuration complies with the [Elasticsearch production mode requirements](https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html#docker-cli-run-prod-mode) and [File Descriptors configuration](https://www.elastic.co/guide/en/elasticsearch/reference/current/file-descriptors.html).
+
+For example, on Linux, you can set the recommended values for the current session by running the following commands as root on the host:
+```
+sysctl -w vm.max_map_count=262144
+sysctl -w fs.file-max=65536
+ulimit -n 65536
+ulimit -u 4096
+```
 
 ## Advanced configuration
 
@@ -41,10 +49,10 @@ As SonarQube use an embedded ElasticSearch, you need to make sure that the Docke
 
 By default, the image will use an embedded H2 database that is not suited for production.
 
-> Warning : only a single instance of SonarQube must connect to the DB schema. Be careful if using Docker Swarm 
-> of Kubernetes to not have at any moment several SonarQube instances running on the same database schema.
-> If you do so, SonarQube will behaves in unpredictable ways and data will get corrupted.
-> There is no safeguard until [SONAR-10362](https://jira.sonarsource.com/browse/SONAR-10362) 
+> Warning: Only a single instance of SonarQube can connect to a database schema. If you're using a Docker Swarm or
+> Kubernetes, make sure that multiple SonarQube instances are never running on the same database schema simultaneously.
+> This will cause SonarQube to behave unpredictably and data will be corrupted.
+> There is no safeguard until [SONAR-10362](https://jira.sonarsource.com/browse/SONAR-10362).
 
 ### Option 1: Use parameters via Docker environment variables
 
