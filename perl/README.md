@@ -16,18 +16,30 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `5`, `5.30`, `5.30.0`](https://github.com/perl/docker-perl/blob/92233bc5293c2eb17f3019f329cc67fd96d92bcf/5.030.000-main/Dockerfile)
--	[`slim`, `5-slim`, `5.30-slim`, `5.30.0-slim`](https://github.com/perl/docker-perl/blob/92233bc5293c2eb17f3019f329cc67fd96d92bcf/5.030.000-slim/Dockerfile)
--	[`threaded`, `5-threaded`, `5.30-threaded`, `5.30.0-threaded`](https://github.com/perl/docker-perl/blob/92233bc5293c2eb17f3019f329cc67fd96d92bcf/5.030.000-main,threaded/Dockerfile)
--	[`slim-threaded`, `5-slim-threaded`, `5.30-slim-threaded`, `5.30.0-slim-threaded`](https://github.com/perl/docker-perl/blob/92233bc5293c2eb17f3019f329cc67fd96d92bcf/5.030.000-slim,threaded/Dockerfile)
--	[`5.28`, `5.28.2`](https://github.com/perl/docker-perl/blob/92233bc5293c2eb17f3019f329cc67fd96d92bcf/5.028.002-main/Dockerfile)
--	[`5.28-slim`, `5.28.2-slim`](https://github.com/perl/docker-perl/blob/92233bc5293c2eb17f3019f329cc67fd96d92bcf/5.028.002-slim/Dockerfile)
--	[`5.28-threaded`, `5.28.2-threaded`](https://github.com/perl/docker-perl/blob/92233bc5293c2eb17f3019f329cc67fd96d92bcf/5.028.002-main,threaded/Dockerfile)
--	[`5.28-slim-threaded`, `5.28.2-slim-threaded`](https://github.com/perl/docker-perl/blob/92233bc5293c2eb17f3019f329cc67fd96d92bcf/5.028.002-slim,threaded/Dockerfile)
--	[`5.26`, `5.26.3`](https://github.com/perl/docker-perl/blob/92233bc5293c2eb17f3019f329cc67fd96d92bcf/5.026.003-main/Dockerfile)
--	[`5.26-slim`, `5.26.3-slim`](https://github.com/perl/docker-perl/blob/92233bc5293c2eb17f3019f329cc67fd96d92bcf/5.026.003-slim/Dockerfile)
--	[`5.26-threaded`, `5.26.3-threaded`](https://github.com/perl/docker-perl/blob/92233bc5293c2eb17f3019f329cc67fd96d92bcf/5.026.003-main,threaded/Dockerfile)
--	[`5.26-slim-threaded`, `5.26.3-slim-threaded`](https://github.com/perl/docker-perl/blob/92233bc5293c2eb17f3019f329cc67fd96d92bcf/5.026.003-slim,threaded/Dockerfile)
+-	[`latest`, `5`, `5.30`, `5.30.0`, `5-buster`, `5.30-buster`, `5.30.0-buster`](https://github.com/perl/docker-perl/blob/01044791941b91f99e970c3f1256d9dc0daee5e4/5.030.000-main-buster/Dockerfile)
+-	[`5-stretch`, `5.30-stretch`, `5.30.0-stretch`](https://github.com/perl/docker-perl/blob/01044791941b91f99e970c3f1256d9dc0daee5e4/5.030.000-main-stretch/Dockerfile)
+-	[`slim`, `5-slim`, `5.30-slim`, `5.30.0-slim`, `slim-buster`, `5-slim-buster`, `5.30-slim-buster`, `5.30.0-slim-buster`](https://github.com/perl/docker-perl/blob/01044791941b91f99e970c3f1256d9dc0daee5e4/5.030.000-slim-buster/Dockerfile)
+-	[`slim-stretch`, `5-slim-stretch`, `5.30-slim-stretch`, `5.30.0-slim-stretch`](https://github.com/perl/docker-perl/blob/01044791941b91f99e970c3f1256d9dc0daee5e4/5.030.000-slim-stretch/Dockerfile)
+-	[`threaded`, `5-threaded`, `5.30-threaded`, `5.30.0-threaded`, `threaded-buster`, `5-threaded-buster`, `5.30-threaded-buster`, `5.30.0-threaded-buster`](https://github.com/perl/docker-perl/blob/01044791941b91f99e970c3f1256d9dc0daee5e4/5.030.000-main,threaded-buster/Dockerfile)
+-	[`threaded-stretch`, `5-threaded-stretch`, `5.30-threaded-stretch`, `5.30.0-threaded-stretch`](https://github.com/perl/docker-perl/blob/01044791941b91f99e970c3f1256d9dc0daee5e4/5.030.000-main,threaded-stretch/Dockerfile)
+-	[`slim-threaded`, `5-slim-threaded`, `5.30-slim-threaded`, `5.30.0-slim-threaded`, `slim-threaded-buster`, `5-slim-threaded-buster`, `5.30-slim-threaded-buster`, `5.30.0-slim-threaded-buster`](https://github.com/perl/docker-perl/blob/01044791941b91f99e970c3f1256d9dc0daee5e4/5.030.000-slim,threaded-buster/Dockerfile)
+-	[`slim-threaded-stretch`, `5-slim-threaded-stretch`, `5.30-slim-threaded-stretch`, `5.30.0-slim-threaded-stretch`](https://github.com/perl/docker-perl/blob/01044791941b91f99e970c3f1256d9dc0daee5e4/5.030.000-slim,threaded-stretch/Dockerfile)
+-	[`5.28`, `5.28.2`, `5.28-buster`, `5.28.2-buster`](https://github.com/perl/docker-perl/blob/01044791941b91f99e970c3f1256d9dc0daee5e4/5.028.002-main-buster/Dockerfile)
+-	[`5.28-stretch`, `5.28.2-stretch`](https://github.com/perl/docker-perl/blob/01044791941b91f99e970c3f1256d9dc0daee5e4/5.028.002-main-stretch/Dockerfile)
+-	[`5.28-slim`, `5.28.2-slim`, `5.28-slim-buster`, `5.28.2-slim-buster`](https://github.com/perl/docker-perl/blob/01044791941b91f99e970c3f1256d9dc0daee5e4/5.028.002-slim-buster/Dockerfile)
+-	[`5.28-slim-stretch`, `5.28.2-slim-stretch`](https://github.com/perl/docker-perl/blob/01044791941b91f99e970c3f1256d9dc0daee5e4/5.028.002-slim-stretch/Dockerfile)
+-	[`5.28-threaded`, `5.28.2-threaded`, `5.28-threaded-buster`, `5.28.2-threaded-buster`](https://github.com/perl/docker-perl/blob/01044791941b91f99e970c3f1256d9dc0daee5e4/5.028.002-main,threaded-buster/Dockerfile)
+-	[`5.28-threaded-stretch`, `5.28.2-threaded-stretch`](https://github.com/perl/docker-perl/blob/01044791941b91f99e970c3f1256d9dc0daee5e4/5.028.002-main,threaded-stretch/Dockerfile)
+-	[`5.28-slim-threaded`, `5.28.2-slim-threaded`, `5.28-slim-threaded-buster`, `5.28.2-slim-threaded-buster`](https://github.com/perl/docker-perl/blob/01044791941b91f99e970c3f1256d9dc0daee5e4/5.028.002-slim,threaded-buster/Dockerfile)
+-	[`5.28-slim-threaded-stretch`, `5.28.2-slim-threaded-stretch`](https://github.com/perl/docker-perl/blob/01044791941b91f99e970c3f1256d9dc0daee5e4/5.028.002-slim,threaded-stretch/Dockerfile)
+-	[`5.26`, `5.26.3`, `5.26-buster`, `5.26.3-buster`](https://github.com/perl/docker-perl/blob/01044791941b91f99e970c3f1256d9dc0daee5e4/5.026.003-main-buster/Dockerfile)
+-	[`5.26-stretch`, `5.26.3-stretch`](https://github.com/perl/docker-perl/blob/01044791941b91f99e970c3f1256d9dc0daee5e4/5.026.003-main-stretch/Dockerfile)
+-	[`5.26-slim`, `5.26.3-slim`, `5.26-slim-buster`, `5.26.3-slim-buster`](https://github.com/perl/docker-perl/blob/01044791941b91f99e970c3f1256d9dc0daee5e4/5.026.003-slim-buster/Dockerfile)
+-	[`5.26-slim-stretch`, `5.26.3-slim-stretch`](https://github.com/perl/docker-perl/blob/01044791941b91f99e970c3f1256d9dc0daee5e4/5.026.003-slim-stretch/Dockerfile)
+-	[`5.26-threaded`, `5.26.3-threaded`, `5.26-threaded-buster`, `5.26.3-threaded-buster`](https://github.com/perl/docker-perl/blob/01044791941b91f99e970c3f1256d9dc0daee5e4/5.026.003-main,threaded-buster/Dockerfile)
+-	[`5.26-threaded-stretch`, `5.26.3-threaded-stretch`](https://github.com/perl/docker-perl/blob/01044791941b91f99e970c3f1256d9dc0daee5e4/5.026.003-main,threaded-stretch/Dockerfile)
+-	[`5.26-slim-threaded`, `5.26.3-slim-threaded`, `5.26-slim-threaded-buster`, `5.26.3-slim-threaded-buster`](https://github.com/perl/docker-perl/blob/01044791941b91f99e970c3f1256d9dc0daee5e4/5.026.003-slim,threaded-buster/Dockerfile)
+-	[`5.26-slim-threaded-stretch`, `5.26.3-slim-threaded-stretch`](https://github.com/perl/docker-perl/blob/01044791941b91f99e970c3f1256d9dc0daee5e4/5.026.003-slim,threaded-stretch/Dockerfile)
 
 # Quick reference
 
@@ -121,6 +133,8 @@ The `perl` images come in many flavors, each designed for a specific use case.
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
 This tag is based off of [`buildpack-deps`](https://hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of Docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
+
+Some of these tags may have names like buster or stretch in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on.
 
 ## `perl:<version>-slim`
 
