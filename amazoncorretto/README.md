@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8`, `8u222`, `8-al2-full`, `latest`](https://github.com/corretto/corretto-8-docker/blob/aa6b1dc18c638d9711bb6f130a4219ba402c462f/Dockerfile)
--	[`11`, `11.0.4`, `11-al2-full`](https://github.com/corretto/corretto-11-docker/blob/ff33946d1003fdfbec6d5bd0074ed82affc6c76c/Dockerfile)
+-	[`8`, `8u222`, `8-al2-full`, `latest`](https://github.com/corretto/corretto-8-docker/blob/cd7c7563f35cc12cf50a9a418e5ecaa73810a8e8/Dockerfile)
+-	[`11`, `11.0.4`, `11-al2-full`](https://github.com/corretto/corretto-11-docker/blob/ef101ef699ac861721faffa22247c32d845a217a/Dockerfile)
 
 # Quick reference
 
@@ -31,7 +31,7 @@ WARNING:
 	[the AWS JDK team](https://github.com/corretto/corretto-8-docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/amazoncorretto/)
+	[`amd64`](https://hub.docker.com/r/amd64/amazoncorretto/), [`arm64v8`](https://hub.docker.com/r/arm64v8/amazoncorretto/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/amazoncorretto/` directory](https://github.com/docker-library/repo-info/blob/master/repos/amazoncorretto) ([history](https://github.com/docker-library/repo-info/commits/master/repos/amazoncorretto))  
