@@ -16,9 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`19.03.0`, `19.03`, `19`, `stable`, `test`, `latest`](https://github.com/docker-library/docker/blob/4975dca2dd357705c5613045348402ab664ccdf0/19.03/Dockerfile)
--	[`19.03.0-dind`, `19.03-dind`, `19-dind`, `stable-dind`, `test-dind`, `dind`](https://github.com/docker-library/docker/blob/306841553919fba3de31766c2ba44b9e2cc5e2ec/19.03/dind/Dockerfile)
--	[`19.03.0-git`, `19.03-git`, `19-git`, `stable-git`, `test-git`, `git`](https://github.com/docker-library/docker/blob/4975dca2dd357705c5613045348402ab664ccdf0/19.03/git/Dockerfile)
+-	[`19.03.1`, `19.03`, `19`, `stable`, `test`, `latest`](https://github.com/docker-library/docker/blob/252695b88bf6c0e2914ca20b1f00a2ad0a2bfef3/19.03/Dockerfile)
+-	[`19.03.1-dind`, `19.03-dind`, `19-dind`, `stable-dind`, `test-dind`, `dind`](https://github.com/docker-library/docker/blob/306841553919fba3de31766c2ba44b9e2cc5e2ec/19.03/dind/Dockerfile)
+-	[`19.03.1-git`, `19.03-git`, `19-git`, `stable-git`, `test-git`, `git`](https://github.com/docker-library/docker/blob/4975dca2dd357705c5613045348402ab664ccdf0/19.03/git/Dockerfile)
 -	[`18.09.8`, `18.09`, `18`](https://github.com/docker-library/docker/blob/cad4d26d9d84c3701e8fcfc922145b569f8dfc22/18.09/Dockerfile)
 -	[`18.09.8-dind`, `18.09-dind`, `18-dind`](https://github.com/docker-library/docker/blob/306841553919fba3de31766c2ba44b9e2cc5e2ec/18.09/dind/Dockerfile)
 -	[`18.09.8-git`, `18.09-git`, `18-git`](https://github.com/docker-library/docker/blob/91bbc4f7b06c06020d811dafb2266bcd7cf6c06d/18.09/git/Dockerfile)

@@ -44,11 +44,11 @@ WARNING:
 -	[`8.5.43-jdk8-adoptopenjdk-hotspot`, `8.5-jdk8-adoptopenjdk-hotspot`, `8-jdk8-adoptopenjdk-hotspot`, `jdk8-adoptopenjdk-hotspot`](https://github.com/docker-library/tomcat/blob/171f0ecab3f65af8db6301f6fa6cf12ce99d7828/8.5/jdk8/adoptopenjdk-hotspot/Dockerfile)
 -	[`8.5.43-jdk8-adoptopenjdk-openj9`, `8.5-jdk8-adoptopenjdk-openj9`, `8-jdk8-adoptopenjdk-openj9`, `jdk8-adoptopenjdk-openj9`](https://github.com/docker-library/tomcat/blob/171f0ecab3f65af8db6301f6fa6cf12ce99d7828/8.5/jdk8/adoptopenjdk-openj9/Dockerfile)
 -	[`8.5.43-jdk8-corretto`, `8.5-jdk8-corretto`, `8-jdk8-corretto`, `jdk8-corretto`](https://github.com/docker-library/tomcat/blob/171f0ecab3f65af8db6301f6fa6cf12ce99d7828/8.5/jdk8/corretto/Dockerfile)
--	[`7.0.94-jdk8-openjdk`, `7.0-jdk8-openjdk`, `7-jdk8-openjdk`, `7.0.94-jdk8`, `7.0-jdk8`, `7-jdk8`, `7.0.94`, `7.0`, `7`](https://github.com/docker-library/tomcat/blob/a041e006c1713abd79d67de3a057b845112f19ad/7/jdk8/openjdk/Dockerfile)
--	[`7.0.94-jdk8-openjdk-slim`, `7.0-jdk8-openjdk-slim`, `7-jdk8-openjdk-slim`](https://github.com/docker-library/tomcat/blob/a041e006c1713abd79d67de3a057b845112f19ad/7/jdk8/openjdk-slim/Dockerfile)
--	[`7.0.94-jdk8-adoptopenjdk-hotspot`, `7.0-jdk8-adoptopenjdk-hotspot`, `7-jdk8-adoptopenjdk-hotspot`](https://github.com/docker-library/tomcat/blob/a041e006c1713abd79d67de3a057b845112f19ad/7/jdk8/adoptopenjdk-hotspot/Dockerfile)
--	[`7.0.94-jdk8-adoptopenjdk-openj9`, `7.0-jdk8-adoptopenjdk-openj9`, `7-jdk8-adoptopenjdk-openj9`](https://github.com/docker-library/tomcat/blob/a041e006c1713abd79d67de3a057b845112f19ad/7/jdk8/adoptopenjdk-openj9/Dockerfile)
--	[`7.0.94-jdk8-corretto`, `7.0-jdk8-corretto`, `7-jdk8-corretto`](https://github.com/docker-library/tomcat/blob/a041e006c1713abd79d67de3a057b845112f19ad/7/jdk8/corretto/Dockerfile)
+-	[`7.0.96-jdk8-openjdk`, `7.0-jdk8-openjdk`, `7-jdk8-openjdk`, `7.0.96-jdk8`, `7.0-jdk8`, `7-jdk8`, `7.0.96`, `7.0`, `7`](https://github.com/docker-library/tomcat/blob/ebd6636d596c050c3348f6a53edb3184f35dcaed/7/jdk8/openjdk/Dockerfile)
+-	[`7.0.96-jdk8-openjdk-slim`, `7.0-jdk8-openjdk-slim`, `7-jdk8-openjdk-slim`](https://github.com/docker-library/tomcat/blob/ebd6636d596c050c3348f6a53edb3184f35dcaed/7/jdk8/openjdk-slim/Dockerfile)
+-	[`7.0.96-jdk8-adoptopenjdk-hotspot`, `7.0-jdk8-adoptopenjdk-hotspot`, `7-jdk8-adoptopenjdk-hotspot`](https://github.com/docker-library/tomcat/blob/ebd6636d596c050c3348f6a53edb3184f35dcaed/7/jdk8/adoptopenjdk-hotspot/Dockerfile)
+-	[`7.0.96-jdk8-adoptopenjdk-openj9`, `7.0-jdk8-adoptopenjdk-openj9`, `7-jdk8-adoptopenjdk-openj9`](https://github.com/docker-library/tomcat/blob/ebd6636d596c050c3348f6a53edb3184f35dcaed/7/jdk8/adoptopenjdk-openj9/Dockerfile)
+-	[`7.0.96-jdk8-corretto`, `7.0-jdk8-corretto`, `7-jdk8-corretto`](https://github.com/docker-library/tomcat/blob/ebd6636d596c050c3348f6a53edb3184f35dcaed/7/jdk8/corretto/Dockerfile)
 
 # Quick reference
 
