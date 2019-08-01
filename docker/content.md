@@ -188,6 +188,10 @@ $ docker run --privileged --name some-docker -d \
 	%%IMAGE%%:dind --storage-driver overlay2
 ```
 
+## Rootless
+
+For more information about using the experimental "rootless" image variants, see [docker-library/docker#174](https://github.com/docker-library/docker/pull/174).
+
 ## Where to Store Data
 
 Important note: There are several ways to store data used by applications that run in Docker containers. We encourage users of the `%%REPO%%` images to familiarize themselves with the options available, including:
