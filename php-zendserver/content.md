@@ -44,6 +44,7 @@ To start a single Zend Server instance, execute:
 
 -	Zend Server 8
 -	Zend Server 9 (With PHP 7 GA)(Default version)
+-	Zend Server 2019 with multi PHP Version Support (7.1, 7.2 & 7.3)
 
 ##### Cluster
 
