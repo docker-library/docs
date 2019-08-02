@@ -16,7 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.9.1-community`, `7.9-community`, `latest`, `lts`](https://github.com/SonarSource/docker-sonarqube/blob/82aff0792a91eb1a58baea66e7651c8e69fa18ce/7.9.1-community/Dockerfile)
+-	[`7.9.1-community`, `7.9-community`, `latest`, `lts`](https://github.com/SonarSource/docker-sonarqube/blob/c2ec0708e5c20c4bed02606c3b626dede5e3b8a7/7/community/Dockerfile)
 
 # Quick reference
 
