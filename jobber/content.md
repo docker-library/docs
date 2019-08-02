@@ -10,4 +10,4 @@ Along with the functionality of cron, Jobber also provides:
 
 # How to use this image
 
-This image contains Jobber running as an unprivileged user named "jobberuser". The jobs are defined in the file /home/jobberuser/.jobber. By default, the only job is one that prints "Jobber is running!" every second. You should replace it with your own jobs. Refer to [the documentation](https://dshearer.github.io/jobber/doc/v1.3/#jobfile) to learn how to do this.
+This image contains Jobber running as an unprivileged user named "jobberuser". The jobs are defined in the file /home/jobberuser/.jobber. By default, the only job is one that prints "Jobber is running!" every second. You should replace it with your own jobs. Refer to [the documentation](https://dshearer.github.io/jobber/doc/v1.4/#jobfile) to learn how to do this.
