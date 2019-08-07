@@ -223,6 +223,24 @@ If there is no database initialized when the container starts, then a default da
 
 If the application you're trying to connect to MySQL does not handle MySQL downtime or waiting for MySQL to start gracefully, then a putting a connect-retry loop before the service starts might be necessary. For an example of such an implementation in the official images, see [WordPress](https://github.com/docker-library/wordpress/blob/1b48b4bccd7adb0f7ea1431c7b470a40e186f3da/docker-entrypoint.sh#L195-L235) or [Bonita](https://github.com/docker-library/docs/blob/9660a0cccb87d8db842f33bc0578d769caaf3ba9/bonita/stack.yml#L28-L44).
 
+If you are using `docker-compose`, then you may also use a healthcheck on the MySQL container to ensure it is accepting connections before starting other containers which depend on it:
+
+```
+services:
+  mysql:
+    image: mysql:8.0.15
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+    healthcheck:
+      test: 'mysql -e SELECT\ 1'
+                                                                                 
+  app:
+    ...
+    depends_on:
+      mysql:
+        condition: service_healthy
+```
+
 ## Usage against an existing database
 
 If you start your `mysql` container instance with a data directory that already contains a database (specifically, a `mysql` subdirectory), the `$MYSQL_ROOT_PASSWORD` variable should be omitted from the run command line; it will in any case be ignored, and the pre-existing database will not be changed in any way.
