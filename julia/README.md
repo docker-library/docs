@@ -18,9 +18,11 @@ WARNING:
 
 ## Simple Tags
 
+-	[`1.1.1-buster`, `1.1-buster`, `1-buster`, `buster`](https://github.com/docker-library/julia/blob/1c1bfc53b104b73332954b1544adb53d52a190fa/1.1/buster/Dockerfile)
 -	[`1.1.1-stretch`, `1.1-stretch`, `1-stretch`, `stretch`](https://github.com/docker-library/julia/blob/36c40cb93c8ca5c717ab7395a775f5683f176e97/1.1/stretch/Dockerfile)
 -	[`1.1.1-windowsservercore-ltsc2016`, `1.1-windowsservercore-ltsc2016`, `1-windowsservercore-ltsc2016`, `windowsservercore-ltsc2016`](https://github.com/docker-library/julia/blob/36c40cb93c8ca5c717ab7395a775f5683f176e97/1.1/windows/windowsservercore-ltsc2016/Dockerfile)
 -	[`1.1.1-windowsservercore-1803`, `1.1-windowsservercore-1803`, `1-windowsservercore-1803`, `windowsservercore-1803`](https://github.com/docker-library/julia/blob/36c40cb93c8ca5c717ab7395a775f5683f176e97/1.1/windows/windowsservercore-1803/Dockerfile)
+-	[`1.0.4-buster`, `1.0-buster`](https://github.com/docker-library/julia/blob/1c1bfc53b104b73332954b1544adb53d52a190fa/1.0/buster/Dockerfile)
 -	[`1.0.4-stretch`, `1.0-stretch`](https://github.com/docker-library/julia/blob/092cb514a9994ee61ae883f53d56ea03c89a3c0c/1.0/stretch/Dockerfile)
 -	[`1.0.4-windowsservercore-ltsc2016`, `1.0-windowsservercore-ltsc2016`](https://github.com/docker-library/julia/blob/092cb514a9994ee61ae883f53d56ea03c89a3c0c/1.0/windows/windowsservercore-ltsc2016/Dockerfile)
 -	[`1.0.4-windowsservercore-1803`, `1.0-windowsservercore-1803`](https://github.com/docker-library/julia/blob/092cb514a9994ee61ae883f53d56ea03c89a3c0c/1.0/windows/windowsservercore-1803/Dockerfile)
@@ -28,11 +30,11 @@ WARNING:
 ## Shared Tags
 
 -	`1.1.1`, `1.1`, `1`, `latest`:
-	-	[`1.1.1-stretch`](https://github.com/docker-library/julia/blob/36c40cb93c8ca5c717ab7395a775f5683f176e97/1.1/stretch/Dockerfile)
+	-	[`1.1.1-buster`](https://github.com/docker-library/julia/blob/1c1bfc53b104b73332954b1544adb53d52a190fa/1.1/buster/Dockerfile)
 	-	[`1.1.1-windowsservercore-ltsc2016`](https://github.com/docker-library/julia/blob/36c40cb93c8ca5c717ab7395a775f5683f176e97/1.1/windows/windowsservercore-ltsc2016/Dockerfile)
 	-	[`1.1.1-windowsservercore-1803`](https://github.com/docker-library/julia/blob/36c40cb93c8ca5c717ab7395a775f5683f176e97/1.1/windows/windowsservercore-1803/Dockerfile)
 -	`1.0.4`, `1.0`:
-	-	[`1.0.4-stretch`](https://github.com/docker-library/julia/blob/092cb514a9994ee61ae883f53d56ea03c89a3c0c/1.0/stretch/Dockerfile)
+	-	[`1.0.4-buster`](https://github.com/docker-library/julia/blob/1c1bfc53b104b73332954b1544adb53d52a190fa/1.0/buster/Dockerfile)
 	-	[`1.0.4-windowsservercore-ltsc2016`](https://github.com/docker-library/julia/blob/092cb514a9994ee61ae883f53d56ea03c89a3c0c/1.0/windows/windowsservercore-ltsc2016/Dockerfile)
 	-	[`1.0.4-windowsservercore-1803`](https://github.com/docker-library/julia/blob/092cb514a9994ee61ae883f53d56ea03c89a3c0c/1.0/windows/windowsservercore-1803/Dockerfile)
 
@@ -93,7 +95,7 @@ The `julia` images come in many flavors, each designed for a specific use case.
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like stretch in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on.
+Some of these tags may have names like buster or stretch in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on.
 
 ## `julia:<version>-windowsservercore`
 
