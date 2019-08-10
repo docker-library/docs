@@ -48,6 +48,14 @@ $ docker run -v /myredis/conf/redis.conf:/usr/local/etc/redis/redis.conf --name 
 
 Where `/myredis/conf/` is a local directory containing your `redis.conf` file. Using this method means that there is no need for you to have a Dockerfile for your redis container.
 
+Another way to configure redis server by passing the configuration through `stdin` like below which `redis-server` supports and you can gain more flexibilty if you combined it with envrionment variables. In the example below we use environment variable called `REDIS_MAXMEMORY` to set the value of `maxmemory` dynamically.
+
+```console
+# Setting maxmemory value using envrionment variable
+
+$ docker run --name myredis -e REDIS_MAXMEMORY=128mb %%IMAGE%% sh -c 'echo -e "maxmemory $REDIS_MAXMEMORY" | redis-server -'
+```
+
 ## `32bit` variant
 
 This variant is *not* a 32bit image (and will not run on 32bit hardware), but includes Redis compiled as a 32bit binary, especially for users who need the decreased memory requirements associated with that. See ["Using 32 bit instances"](http://redis.io/topics/memory-optimization#using-32-bit-instances) in the Redis documentation for more information.
