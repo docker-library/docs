@@ -48,12 +48,12 @@ $ docker run -v /myredis/conf/redis.conf:/usr/local/etc/redis/redis.conf --name 
 
 Where `/myredis/conf/` is a local directory containing your `redis.conf` file. Using this method means that there is no need for you to have a Dockerfile for your redis container.
 
-Another way to configure redis server by passing the configuration through `stdin` like below which `redis-server` supports and you can gain more flexibilty if you combined it with envrionment variables. In the example below we use environment variable called `REDIS_MAXMEMORY` to set the value of `maxmemory` dynamically.
+Another way to configure redis server by passing the configuration through `stdin` like below which `redis-server` supports and you can gain more flexibilty if you combined it with envrionment variables. In the example below we use two environment variables called `REDIS_MAXMEMORY` and `REDIS_APPENDONLY` to set the value of `maxmemory` and `appendonly` dynamically.
 
 ```console
 # Setting maxmemory value using envrionment variable
 
-$ docker run --name myredis -e REDIS_MAXMEMORY=128mb %%IMAGE%% sh -c 'echo -e "maxmemory $REDIS_MAXMEMORY" | redis-server -'
+$ docker run --name myredis -e REDIS_MAXMEMORY=128mb -e REDIS_APPENDONLY=no %%IMAGE%% sh -c 'echo -e "maxmemory $REDIS_MAXMEMORY \nappendonly $REDIS_APPENDONLY" | redis-server -'
 ```
 
 ## `32bit` variant
