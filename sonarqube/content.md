@@ -70,6 +70,14 @@ More recipes can be found [here](https://github.com/SonarSource/docker-sonarqube
 
 You can pass `sonar.` configuration properties as Docker environment variables, as demonstrated in the example above for database configuration.
 
+#### Docker Secrets
+
+As an alternative to passing sensitive information via environment variables, `.file` may be appended to the previously listed environment variables, causing the initialization script to load the values for those variables from files present in the container. In particular, this can be used to load passwords from Docker secrets stored in `/run/secrets/<secret_name>` files. For example:
+
+```console
+$ docker run --name sonarqube -e sonar.jdbc.username.file=/run/secrets/postgres_sonar_password ... -d sonarqube
+```
+
 ### Option 2: Use bind-mounted persistent volumes
 
 The images contain the SonarQube installation at `/opt/sonarqube`. You can use bind-mounted persistent volumes to override selected files or directories, for example:
