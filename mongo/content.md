@@ -52,10 +52,10 @@ See the [MongoDB manual](https://docs.mongodb.com/manual/) for information on us
 
 ## Customize configuration without configuration file
 
-Most MongoDB configuration can be set through flags to `mongod`. The entrypoint of the image is created to pass its arguments along to `mongod`. See below an example of setting MongoDB to use a [smaller default file size](https://docs.mongodb.com/manual/reference/program/mongod/#cmdoption-mongod-smallfiles) via `docker run`.
+Most MongoDB configuration can be set through flags to `mongod`. The entrypoint of the image is created to pass its arguments along to `mongod`. See below an example of setting MongoDB to use a different [threading and execution model](https://docs.mongodb.com/manual/reference/program/mongod/#cmdoption-mongod-serviceexecutor) via `docker run`.
 
 ```console
-$ docker run --name some-%%REPO%% -d %%IMAGE%% --smallfiles
+$ docker run --name some-%%REPO%% -d %%IMAGE%% --serviceExecutor adaptive
 ```
 
 And here is the same with a `docker-compose.yml` file
@@ -65,7 +65,7 @@ version: '3.1'
 services:
   mongo:
     image: %%IMAGE%%
-    command: --smallfiles
+    command: --serviceExecutor adaptive
 ```
 
 To see the full list of possible options, check the MongoDB manual on [`mongod`](https://docs.mongodb.com/manual/reference/program/mongod/) or check the `--help` output of `mongod`:
