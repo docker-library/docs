@@ -20,8 +20,8 @@ WARNING:
 -	[`2.1.25`](https://github.com/orientechnologies/orientdb-docker/blob/127587dc5f88c1f1f5f459b186afaa8dda80b7ba/2.1/Dockerfile)
 -	[`2.2.37`](https://github.com/orientechnologies/orientdb-docker/blob/127587dc5f88c1f1f5f459b186afaa8dda80b7ba/2.2/x86_64/openjdk-slim/Dockerfile)
 -	[`2.2.37-spatial`](https://github.com/orientechnologies/orientdb-docker/blob/127587dc5f88c1f1f5f459b186afaa8dda80b7ba/2.2-spatial/x86_64/openjdk-slim/Dockerfile)
--	[`3.0.22`, `latest`](https://github.com/orientechnologies/orientdb-docker/blob/17e718a1facc40363795a5cddeb790acb837704f/3.0/x86_64/openjdk-slim/Dockerfile)
--	[`3.0.22-tp3`](https://github.com/orientechnologies/orientdb-docker/blob/17e718a1facc40363795a5cddeb790acb837704f/3.0-tp3/x86_64/openjdk-slim/Dockerfile)
+-	[`3.0.23`, `latest`](https://github.com/orientechnologies/orientdb-docker/blob/0de925573a65f60fc91de4e71c9706e254d511cc/3.0/x86_64/openjdk-slim/Dockerfile)
+-	[`3.0.23-tp3`](https://github.com/orientechnologies/orientdb-docker/blob/0de925573a65f60fc91de4e71c9706e254d511cc/3.0-tp3/x86_64/openjdk-slim/Dockerfile)
 
 # Quick reference
 
