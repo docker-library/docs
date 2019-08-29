@@ -16,12 +16,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.6.0-jdk8`, `5.6-jdk8`, `jdk8`, `5.6.0-jdk`, `5.6-jdk`, `jdk`, `5.6.0`, `5.6`, `latest`](https://github.com/keeganwitt/docker-gradle/blob/b7daaec3e7bb91e4d9e61dffdf5845528c5cffea/jdk8/Dockerfile)
--	[`5.6.0-jre8`, `5.6-jre8`, `jre8`, `5.6.0-jre`, `5.6-jre`, `jre`](https://github.com/keeganwitt/docker-gradle/blob/b7daaec3e7bb91e4d9e61dffdf5845528c5cffea/jre8/Dockerfile)
--	[`5.6.0-jdk11`, `5.6-jdk11`, `jdk11`](https://github.com/keeganwitt/docker-gradle/blob/b7daaec3e7bb91e4d9e61dffdf5845528c5cffea/jdk11/Dockerfile)
--	[`5.6.0-jre11`, `5.6-jre11`, `jre11`](https://github.com/keeganwitt/docker-gradle/blob/b7daaec3e7bb91e4d9e61dffdf5845528c5cffea/jre11/Dockerfile)
--	[`5.6.0-jdk12`, `5.6-jdk12`, `jdk12`](https://github.com/keeganwitt/docker-gradle/blob/b7daaec3e7bb91e4d9e61dffdf5845528c5cffea/jdk12/Dockerfile)
--	[`5.6.0-jre12`, `5.6-jre12`, `jre12`](https://github.com/keeganwitt/docker-gradle/blob/b7daaec3e7bb91e4d9e61dffdf5845528c5cffea/jre12/Dockerfile)
+-	[`5.6.1-jdk8`, `5.6-jdk8`, `jdk8`, `5.6.1-jdk`, `5.6-jdk`, `jdk`, `5.6.1`, `5.6`, `latest`](https://github.com/keeganwitt/docker-gradle/blob/29feff8805d3274b38ebde8eab0737765d3156a0/jdk8/Dockerfile)
+-	[`5.6.1-jre8`, `5.6-jre8`, `jre8`, `5.6.1-jre`, `5.6-jre`, `jre`](https://github.com/keeganwitt/docker-gradle/blob/29feff8805d3274b38ebde8eab0737765d3156a0/jre8/Dockerfile)
+-	[`5.6.1-jdk11`, `5.6-jdk11`, `jdk11`](https://github.com/keeganwitt/docker-gradle/blob/29feff8805d3274b38ebde8eab0737765d3156a0/jdk11/Dockerfile)
+-	[`5.6.1-jre11`, `5.6-jre11`, `jre11`](https://github.com/keeganwitt/docker-gradle/blob/29feff8805d3274b38ebde8eab0737765d3156a0/jre11/Dockerfile)
+-	[`5.6.1-jdk12`, `5.6-jdk12`, `jdk12`](https://github.com/keeganwitt/docker-gradle/blob/29feff8805d3274b38ebde8eab0737765d3156a0/jdk12/Dockerfile)
+-	[`5.6.1-jre12`, `5.6-jre12`, `jre12`](https://github.com/keeganwitt/docker-gradle/blob/29feff8805d3274b38ebde8eab0737765d3156a0/jre12/Dockerfile)
 
 # Quick reference
 
