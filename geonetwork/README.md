@@ -16,8 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.6.0`, `3.6`, `latest`](https://github.com/geonetwork/docker-geonetwork/blob/9a28f0a61a8b043b1562f79caed9fdec3c009452/3.6.0/Dockerfile)
--	[`3.6.0-postgres`, `3.6-postgres`, `postgres`](https://github.com/geonetwork/docker-geonetwork/blob/9a28f0a61a8b043b1562f79caed9fdec3c009452/3.6.0/postgres/Dockerfile)
+-	[`3.6.0`, `3.6`](https://github.com/geonetwork/docker-geonetwork/blob/e249c6031a55559392204a2c3ef8e8f8d11545a5/3.6.0/Dockerfile)
+-	[`3.6.0-postgres`, `3.6-postgres`](https://github.com/geonetwork/docker-geonetwork/blob/9a28f0a61a8b043b1562f79caed9fdec3c009452/3.6.0/postgres/Dockerfile)
+-	[`3.8.0`, `3.8`, `latest`](https://github.com/geonetwork/docker-geonetwork/blob/e946f10156ed14097351c05cb79349dfda046c0d/3.8.0/Dockerfile)
+-	[`3.8.0-postgres`, `3.8-postgres`, `postgres`](https://github.com/geonetwork/docker-geonetwork/blob/e946f10156ed14097351c05cb79349dfda046c0d/3.8.0/postgres/Dockerfile)
 
 # Quick reference
 
@@ -31,7 +33,7 @@ WARNING:
 	[GeoNetwork opensource](https://github.com/geonetwork/docker-geonetwork)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/geonetwork/), [`arm32v5`](https://hub.docker.com/r/arm32v5/geonetwork/), [`arm32v7`](https://hub.docker.com/r/arm32v7/geonetwork/), [`arm64v8`](https://hub.docker.com/r/arm64v8/geonetwork/), [`i386`](https://hub.docker.com/r/i386/geonetwork/), [`ppc64le`](https://hub.docker.com/r/ppc64le/geonetwork/), [`s390x`](https://hub.docker.com/r/s390x/geonetwork/)
+	[`amd64`](https://hub.docker.com/r/amd64/geonetwork/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/geonetwork/` directory](https://github.com/docker-library/repo-info/blob/master/repos/geonetwork) ([history](https://github.com/docker-library/repo-info/commits/master/repos/geonetwork))  
@@ -92,7 +94,7 @@ $ docker run --name some-geonetwork -d -p 8080:8080 -e DATA_DIR=/var/lib/geonetw
 
 ## Persist data
 
-If you want the data directory to live beyond restarts, or even destruction of the container, you can mount a directory from the docker engine's host into the container. - `-v <host path>:<data directory>`. For instance this, will mount the host directory `/host/geonetwork-docker` into `/var/lib/geonetwork_data` on the container:
+If you want the data directory to live beyond restarts, or even destruction of the container, you can mount a directory from the docker engine's host into the container. - `-v /host/path:/path/to/data/directory`. For instance this, will mount the host directory `/host/geonetwork-docker` into `/var/lib/geonetwork_data` on the container:
 
 ```console
 $ docker run --name some-geonetwork -d -p 8080:8080 -e DATA_DIR=/var/lib/geonetwork_data -v /host/geonetwork-docker:/var/lib/geonetwork_data geonetwork
