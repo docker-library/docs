@@ -100,6 +100,12 @@ Defaults to `3`. Zookeeper's [`autoPurge.snapRetainCount`](https://zookeeper.apa
 
 > When enabled, ZooKeeper auto purge feature retains the autopurge.snapRetainCount most recent snapshots and the corresponding transaction logs in the dataDir and dataLogDir respectively and deletes the rest. Defaults to 3. Minimum value is 3.
 
+### `ZOO_4LW_COMMANDS_WHITELIST`
+
+Defaults to `srvr`. Zookeeper's [`4lw.commands.whitelist`](https://zookeeper.apache.org/doc/current/zookeeperAdmin.html#sc_clusterOptions)
+
+> A list of comma separated Four Letter Words commands that user wants to use. A valid Four Letter Words command must be put in this list else ZooKeeper server will not enable the command. By default the whitelist only contains "srvr" command which zkServer.sh uses. The rest of four letter word commands are disabled by default.
+
 ## Replicated mode
 
 Environment variables below are mandatory if you want to run Zookeeper in replicated mode.
