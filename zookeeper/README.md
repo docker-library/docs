@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.4.14`, `3.4`](https://github.com/31z4/zookeeper-docker/blob/c978f835bc33509324b51cb210c8c5c9934c38ff/3.4.14/Dockerfile)
--	[`3.5.5`, `3.5`, `latest`](https://github.com/31z4/zookeeper-docker/blob/c978f835bc33509324b51cb210c8c5c9934c38ff/3.5.5/Dockerfile)
+-	[`3.4.14`, `3.4`](https://github.com/31z4/zookeeper-docker/blob/5a82d0b90d055f39d50e0a64ae2e00da15f9b8b1/3.4.14/Dockerfile)
+-	[`3.5.5`, `3.5`, `latest`](https://github.com/31z4/zookeeper-docker/blob/5a82d0b90d055f39d50e0a64ae2e00da15f9b8b1/3.5.5/Dockerfile)
 
 # Quick reference
 
@@ -184,6 +184,12 @@ Defaults to `0`. Zookeeper's [`autoPurge.purgeInterval`](https://zookeeper.apach
 Defaults to `3`. Zookeeper's [`autoPurge.snapRetainCount`](https://zookeeper.apache.org/doc/current/zookeeperAdmin.html#sc_advancedConfiguration)
 
 > When enabled, ZooKeeper auto purge feature retains the autopurge.snapRetainCount most recent snapshots and the corresponding transaction logs in the dataDir and dataLogDir respectively and deletes the rest. Defaults to 3. Minimum value is 3.
+
+### `ZOO_4LW_COMMANDS_WHITELIST`
+
+Defaults to `srvr`. Zookeeper's [`4lw.commands.whitelist`](https://zookeeper.apache.org/doc/current/zookeeperAdmin.html#sc_clusterOptions)
+
+> A list of comma separated Four Letter Words commands that user wants to use. A valid Four Letter Words command must be put in this list else ZooKeeper server will not enable the command. By default the whitelist only contains "srvr" command which zkServer.sh uses. The rest of four letter word commands are disabled by default.
 
 ## Replicated mode
 
