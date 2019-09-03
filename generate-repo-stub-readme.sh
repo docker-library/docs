@@ -85,9 +85,23 @@ arches="$(bashbrew cat --format '{{ range .Entries }}{{ join "\n" .Architectures
 if [ -n "$arches" ]; then
 	archTable=
 	i=0
-	for arch in $arches; do
-		jenkinsLink="https://doi-janky.infosiftr.net/job/multiarch/job/$arch/job/$repo"
-		jenkinsImage="https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/$arch/job/$repo.svg?label=$arch"
+	for arch in $arches put-shared; do
+		if [ "$arch" = 'put-shared' ]; then
+			jenkinsLink=
+			for jenkinsJob in "job/put-shared/job/light/job/$repo" 'job/put-shared/job/heavy'; do
+				jenkinsImage="https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/$jenkinsJob.svg?label=$arch"
+				if _check_shields_io_image "$jenkinsImage"; then
+					jenkinsLink="https://doi-janky.infosiftr.net/$jenkinsJob"
+					break
+				fi
+			done
+			if [ -z "$jenkinsLink" ]; then
+				continue
+			fi
+		else
+			jenkinsLink="https://doi-janky.infosiftr.net/job/multiarch/job/$arch/job/$repo"
+			jenkinsImage="https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/$arch/job/$repo.svg?label=$arch"
+		fi
 		if _check_shields_io_image "$jenkinsImage"; then
 			archTable="${archTable:-|} [![$arch build status badge]($jenkinsImage)]($jenkinsLink) |"
 			(( i = (i + 1) % 4 )) || : # modulo here needs to match the number of colums used below
