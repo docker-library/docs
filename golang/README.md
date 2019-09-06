@@ -19,6 +19,7 @@ WARNING:
 ## Simple Tags
 
 -	[`1.13.0-buster`, `1.13-buster`, `1-buster`, `buster`](https://github.com/docker-library/golang/blob/2909cfd3ecb769671eb8222eaf9a782a6aed024d/1.13/buster/Dockerfile)
+-	[`1.13.0-stretch`, `1.13-stretch`, `1-stretch`, `stretch`](https://github.com/docker-library/golang/blob/e7c5f6049153f4f754eff210413b1d7ea882ad72/1.13/stretch/Dockerfile)
 -	[`1.13.0-alpine3.10`, `1.13-alpine3.10`, `1-alpine3.10`, `alpine3.10`, `1.13.0-alpine`, `1.13-alpine`, `1-alpine`, `alpine`](https://github.com/docker-library/golang/blob/2909cfd3ecb769671eb8222eaf9a782a6aed024d/1.13/alpine3.10/Dockerfile)
 -	[`1.13.0-windowsservercore-ltsc2016`, `1.13-windowsservercore-ltsc2016`, `1-windowsservercore-ltsc2016`, `windowsservercore-ltsc2016`](https://github.com/docker-library/golang/blob/2909cfd3ecb769671eb8222eaf9a782a6aed024d/1.13/windows/windowsservercore-ltsc2016/Dockerfile)
 -	[`1.13.0-windowsservercore-1803`, `1.13-windowsservercore-1803`, `1-windowsservercore-1803`, `windowsservercore-1803`](https://github.com/docker-library/golang/blob/2909cfd3ecb769671eb8222eaf9a782a6aed024d/1.13/windows/windowsservercore-1803/Dockerfile)

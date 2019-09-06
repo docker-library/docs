@@ -18,10 +18,10 @@ WARNING:
 
 -	[`4.0.4`, `4.0`, `4`, `latest`](https://github.com/docker-library/redmine/blob/89e332359934f039709ac47d8317e88e2b410575/4.0/Dockerfile)
 -	[`4.0.4-passenger`, `4.0-passenger`, `4-passenger`, `passenger`](https://github.com/docker-library/redmine/blob/35af27ca3527e2af63aef04fd71a03aeb18e19c9/4.0/passenger/Dockerfile)
--	[`4.0.4-alpine`, `4.0-alpine`, `4-alpine`, `alpine`](https://github.com/docker-library/redmine/blob/89e332359934f039709ac47d8317e88e2b410575/4.0/alpine/Dockerfile)
+-	[`4.0.4-alpine`, `4.0-alpine`, `4-alpine`, `alpine`](https://github.com/docker-library/redmine/blob/963dc93edf81f8e0fe3708467fee148e080ce126/4.0/alpine/Dockerfile)
 -	[`3.4.11`, `3.4`, `3`](https://github.com/docker-library/redmine/blob/89e332359934f039709ac47d8317e88e2b410575/3.4/Dockerfile)
 -	[`3.4.11-passenger`, `3.4-passenger`, `3-passenger`](https://github.com/docker-library/redmine/blob/35af27ca3527e2af63aef04fd71a03aeb18e19c9/3.4/passenger/Dockerfile)
--	[`3.4.11-alpine`, `3.4-alpine`, `3-alpine`](https://github.com/docker-library/redmine/blob/89e332359934f039709ac47d8317e88e2b410575/3.4/alpine/Dockerfile)
+-	[`3.4.11-alpine`, `3.4-alpine`, `3-alpine`](https://github.com/docker-library/redmine/blob/963dc93edf81f8e0fe3708467fee148e080ce126/3.4/alpine/Dockerfile)
 
 # Quick reference
 
