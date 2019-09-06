@@ -319,7 +319,9 @@ For information about how to get Docker running on Windows, please see the relev
 
 # License
 
-View [license information](https://github.com/mongodb/mongo/blob/7c3cfac300cfcca4f73f1c3b18457f0f8fae3f69/README#L71) for the software contained in this image.
+View [license information](https://github.com/mongodb/mongo/blob/6ea81c883e7297be99884185c908c7ece385caf8/README#L89-L95) for the software contained in this image.
+
+It is relevant to note the change from AGPL to SSPLv1 for all versions after October 16, 2018.
 
 As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 
