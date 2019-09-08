@@ -49,7 +49,7 @@ RUN docker-php-source extract \
 
 ### PHP Core Extensions
 
-For example, if you want to have a PHP-FPM image with `iconv` and `gd` extensions, you can inherit the base image that you like, and write your own `Dockerfile` like this:
+For example, if you want to have a PHP-FPM image with `gd` extensions, you can inherit the base image that you like, and write your own `Dockerfile` like this:
 
 ```dockerfile
 FROM %%IMAGE%%:7.2-fpm
@@ -57,7 +57,6 @@ RUN apt-get update && apt-get install -y \
 		libfreetype6-dev \
 		libjpeg62-turbo-dev \
 		libpng-dev \
-	&& docker-php-ext-install -j$(nproc) iconv \
 	&& docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ \
 	&& docker-php-ext-install -j$(nproc) gd
 ```
@@ -65,6 +64,10 @@ RUN apt-get update && apt-get install -y \
 Remember, you must install dependencies for your extensions manually. If an extension needs custom `configure` arguments, you can use the `docker-php-ext-configure` script like this example. There is no need to run `docker-php-source` manually in this case, since that is handled by the `configure` and `install` scripts.
 
 See ["Dockerizing Compiled Software"](https://tianon.xyz/post/2017/12/26/dockerize-compiled-software.html) for a description of the technique Tianon uses for determining the necessary build-time dependencies for any bit of software (which applies directly to compiling PHP extensions).
+
+### Default extensions
+
+Some extensions are compiled by default. This depends on the PHP version you are using. Run `php -m` in the container to get a list for your specific version.
 
 ### PECL extensions
 
