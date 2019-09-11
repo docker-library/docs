@@ -16,12 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`v2.0.0-rc2`, `2.0.0-rc2`, `v2.0`, `2.0`, `montdor`](https://github.com/containous/traefik-library-image/blob/5de2ba0bde779c08d99a87f70cf46fd24c185f68/scratch/Dockerfile)
--	[`v2.0.0-rc2-alpine`, `2.0.0-rc2-alpine`, `v2.0-alpine`, `2.0-alpine`, `montdor-alpine`](https://github.com/containous/traefik-library-image/blob/5de2ba0bde779c08d99a87f70cf46fd24c185f68/alpine/Dockerfile)
--	[`v2.0.0-rc2-nanoserver`, `2.0.0-rc2-nanoserver`, `v2.0-nanoserver`, `2.0-nanoserver`, `montdor-nanoserver`, `v2.0.0-rc2-nanoserver-sac2016`, `2.0.0-rc2-nanoserver-sac2016`, `v2.0-nanoserver-sac2016`, `2.0-nanoserver-sac2016`, `montdor-nanoserver-sac2016`](https://github.com/containous/traefik-library-image/blob/5de2ba0bde779c08d99a87f70cf46fd24c185f68/windows/sac2016/Dockerfile)
+-	[`v2.0.0-rc3`, `2.0.0-rc3`, `v2.0`, `2.0`, `montdor`](https://github.com/containous/traefik-library-image/blob/65a0466cd3336a0fd048ef4b06cd9a08a9edae6e/scratch/Dockerfile)
+-	[`v2.0.0-rc3-alpine`, `2.0.0-rc3-alpine`, `v2.0-alpine`, `2.0-alpine`, `montdor-alpine`](https://github.com/containous/traefik-library-image/blob/65a0466cd3336a0fd048ef4b06cd9a08a9edae6e/alpine/Dockerfile)
 -	[`v1.7.14`, `1.7.14`, `v1.7`, `1.7`, `maroilles`, `latest`](https://github.com/containous/traefik-library-image/blob/1220871969fc11f5e619bba4de3355e695fe3061/scratch/amd64/Dockerfile)
 -	[`v1.7.14-alpine`, `1.7.14-alpine`, `v1.7-alpine`, `1.7-alpine`, `maroilles-alpine`, `alpine`](https://github.com/containous/traefik-library-image/blob/1220871969fc11f5e619bba4de3355e695fe3061/alpine/Dockerfile)
--	[`v1.7.14-nanoserver`, `1.7.14-nanoserver`, `v1.7-nanoserver`, `1.7-nanoserver`, `maroilles-nanoserver`, `v1.7.14-nanoserver-sac2016`, `1.7.14-nanoserver-sac2016`, `v1.7-nanoserver-sac2016`, `1.7-nanoserver-sac2016`, `maroilles-nanoserver-sac2016`, `nanoserver`, `nanoserver-sac2016`](https://github.com/containous/traefik-library-image/blob/1220871969fc11f5e619bba4de3355e695fe3061/windows/Dockerfile)
 
 # Quick reference
 
@@ -35,7 +33,7 @@ WARNING:
 	[the Traefik Project](https://github.com/containous/traefik-library-image)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/traefik/), [`arm32v6`](https://hub.docker.com/r/arm32v6/traefik/), [`arm64v8`](https://hub.docker.com/r/arm64v8/traefik/), [`windows-amd64`](https://hub.docker.com/r/winamd64/traefik/)
+	[`amd64`](https://hub.docker.com/r/amd64/traefik/), [`arm32v6`](https://hub.docker.com/r/arm32v6/traefik/), [`arm64v8`](https://hub.docker.com/r/arm64v8/traefik/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/traefik/` directory](https://github.com/docker-library/repo-info/blob/master/repos/traefik) ([history](https://github.com/docker-library/repo-info/commits/master/repos/traefik))  
