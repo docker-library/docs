@@ -6,6 +6,14 @@ Redis is an open-source, networked, in-memory, key-value data store with optiona
 
 %%LOGO%%
 
+# Security
+
+For the ease of accessing Redis from other containers via Docker networking, the "Protected mode" is turned off by default. This means that if you expose the port outside of your host (e.g., via `-p` on `docker run`), it will be open without a password to anyone. It is **highly** recommended to set a password (by supplying a config file) if you plan on exposing your Redis instance to the internet. For further information, see the following links about Redis security:
+
+-	[Redis documentation on security](https://redis.io/topics/security)
+-	[Protected mode](https://redis.io/topics/security#protected-mode)
+-	[A few things about Redis security by antirez](http://antirez.com/news/96)
+
 # How to use this image
 
 ## start a redis instance
