@@ -18,8 +18,8 @@ WARNING:
 
 -	[`v2.0.0-rc3`, `2.0.0-rc3`, `v2.0`, `2.0`, `montdor`](https://github.com/containous/traefik-library-image/blob/65a0466cd3336a0fd048ef4b06cd9a08a9edae6e/scratch/Dockerfile)
 -	[`v2.0.0-rc3-alpine`, `2.0.0-rc3-alpine`, `v2.0-alpine`, `2.0-alpine`, `montdor-alpine`](https://github.com/containous/traefik-library-image/blob/65a0466cd3336a0fd048ef4b06cd9a08a9edae6e/alpine/Dockerfile)
--	[`v1.7.14`, `1.7.14`, `v1.7`, `1.7`, `maroilles`, `latest`](https://github.com/containous/traefik-library-image/blob/1220871969fc11f5e619bba4de3355e695fe3061/scratch/amd64/Dockerfile)
--	[`v1.7.14-alpine`, `1.7.14-alpine`, `v1.7-alpine`, `1.7-alpine`, `maroilles-alpine`, `alpine`](https://github.com/containous/traefik-library-image/blob/1220871969fc11f5e619bba4de3355e695fe3061/alpine/Dockerfile)
+-	[`v1.7.15`, `1.7.15`, `v1.7`, `1.7`, `maroilles`, `latest`](https://github.com/containous/traefik-library-image/blob/7fdb3306ad96133928541d5305b771173aab0313/scratch/Dockerfile)
+-	[`v1.7.15-alpine`, `1.7.15-alpine`, `v1.7-alpine`, `1.7-alpine`, `maroilles-alpine`, `alpine`](https://github.com/containous/traefik-library-image/blob/7fdb3306ad96133928541d5305b771173aab0313/alpine/Dockerfile)
 
 # Quick reference
 
