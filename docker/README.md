@@ -20,9 +20,6 @@ WARNING:
 -	[`19.03.2-dind`, `19.03-dind`, `19-dind`, `stable-dind`, `test-dind`, `dind`](https://github.com/docker-library/docker/blob/92d278e671f32a9ee4a3c0668e46a41f4a3b74b0/19.03/dind/Dockerfile)
 -	[`19.03.2-dind-rootless`, `19.03-dind-rootless`, `19-dind-rootless`, `stable-dind-rootless`, `test-dind-rootless`, `dind-rootless`](https://github.com/docker-library/docker/blob/c01ffa41486f70c34f020c769bc5bddf106367ea/19.03/dind-rootless/Dockerfile)
 -	[`19.03.2-git`, `19.03-git`, `19-git`, `stable-git`, `test-git`, `git`](https://github.com/docker-library/docker/blob/4975dca2dd357705c5613045348402ab664ccdf0/19.03/git/Dockerfile)
--	[`18.09.9`, `18.09`, `18`](https://github.com/docker-library/docker/blob/f656a3cc682d8a39d8262c7cf93e3f4482183a36/18.09/Dockerfile)
--	[`18.09.9-dind`, `18.09-dind`, `18-dind`](https://github.com/docker-library/docker/blob/92d278e671f32a9ee4a3c0668e46a41f4a3b74b0/18.09/dind/Dockerfile)
--	[`18.09.9-git`, `18.09-git`, `18-git`](https://github.com/docker-library/docker/blob/91bbc4f7b06c06020d811dafb2266bcd7cf6c06d/18.09/git/Dockerfile)
 
 # Quick reference
 

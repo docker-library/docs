@@ -18,16 +18,16 @@ WARNING:
 
 ## Simple Tags
 
--	[`0.16.0-linux`, `linux`](https://github.com/nats-io/nats-streaming-docker/blob/ed069d4902a57e52f5c6ddbc9c33361c269c5d16/amd64/Dockerfile)
--	[`0.16.0-nanoserver`, `nanoserver`, `nanoserver-1803`](https://github.com/nats-io/nats-streaming-docker/blob/ed069d4902a57e52f5c6ddbc9c33361c269c5d16/windows/nanoserver-1803/Dockerfile)
--	[`0.16.0-nanoserver-1809`, `nanoserver-1809`](https://github.com/nats-io/nats-streaming-docker/blob/ed069d4902a57e52f5c6ddbc9c33361c269c5d16/windows/nanoserver-1809/Dockerfile)
--	[`0.16.0-windowsservercore`, `windowsservercore`](https://github.com/nats-io/nats-streaming-docker/blob/ed069d4902a57e52f5c6ddbc9c33361c269c5d16/windows/windowsservercore/Dockerfile)
+-	[`0.16.2-linux`, `linux`](https://github.com/nats-io/nats-streaming-docker/blob/236d21372934860eb197cc4b25ad7e58b981ed6f/amd64/Dockerfile)
+-	[`0.16.2-nanoserver`, `nanoserver`, `nanoserver-1803`](https://github.com/nats-io/nats-streaming-docker/blob/236d21372934860eb197cc4b25ad7e58b981ed6f/windows/nanoserver-1803/Dockerfile)
+-	[`0.16.2-nanoserver-1809`, `nanoserver-1809`](https://github.com/nats-io/nats-streaming-docker/blob/236d21372934860eb197cc4b25ad7e58b981ed6f/windows/nanoserver-1809/Dockerfile)
+-	[`0.16.2-windowsservercore`, `windowsservercore`](https://github.com/nats-io/nats-streaming-docker/blob/236d21372934860eb197cc4b25ad7e58b981ed6f/windows/windowsservercore/Dockerfile)
 
 ## Shared Tags
 
--	`0.16.0`, `latest`:
-	-	[`0.16.0-linux`](https://github.com/nats-io/nats-streaming-docker/blob/ed069d4902a57e52f5c6ddbc9c33361c269c5d16/amd64/Dockerfile)
-	-	[`0.16.0-nanoserver`](https://github.com/nats-io/nats-streaming-docker/blob/ed069d4902a57e52f5c6ddbc9c33361c269c5d16/windows/nanoserver-1803/Dockerfile)
+-	`0.16.2`, `latest`:
+	-	[`0.16.2-linux`](https://github.com/nats-io/nats-streaming-docker/blob/236d21372934860eb197cc4b25ad7e58b981ed6f/amd64/Dockerfile)
+	-	[`0.16.2-nanoserver`](https://github.com/nats-io/nats-streaming-docker/blob/236d21372934860eb197cc4b25ad7e58b981ed6f/windows/nanoserver-1803/Dockerfile)
 
 # Quick reference
 
