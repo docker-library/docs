@@ -16,10 +16,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`v2.0.0-rc3`, `2.0.0-rc3`, `v2.0`, `2.0`, `montdor`](https://github.com/containous/traefik-library-image/blob/65a0466cd3336a0fd048ef4b06cd9a08a9edae6e/scratch/Dockerfile)
--	[`v2.0.0-rc3-alpine`, `2.0.0-rc3-alpine`, `v2.0-alpine`, `2.0-alpine`, `montdor-alpine`](https://github.com/containous/traefik-library-image/blob/65a0466cd3336a0fd048ef4b06cd9a08a9edae6e/alpine/Dockerfile)
--	[`v1.7.15`, `1.7.15`, `v1.7`, `1.7`, `maroilles`, `latest`](https://github.com/containous/traefik-library-image/blob/7fdb3306ad96133928541d5305b771173aab0313/scratch/Dockerfile)
--	[`v1.7.15-alpine`, `1.7.15-alpine`, `v1.7-alpine`, `1.7-alpine`, `maroilles-alpine`, `alpine`](https://github.com/containous/traefik-library-image/blob/7fdb3306ad96133928541d5305b771173aab0313/alpine/Dockerfile)
+-	[`v2.0.0-rc4`, `2.0.0-rc4`, `v2.0`, `2.0`, `montdor`](https://github.com/containous/traefik-library-image/blob/9895566e03b5800b431d5ee89a7b56b39f612b59/alpine/Dockerfile)
+-	[`v2.0.0-rc4-windowsservercore-1809`, `2.0.0-rc4-windowsservercore-1809`, `v2.0-windowsservercore-1809`, `2.0-windowsservercore-1809`, `montdor-windowsservercore-1809`](https://github.com/containous/traefik-library-image/blob/9895566e03b5800b431d5ee89a7b56b39f612b59/windows/1809/Dockerfile)
+-	[`v1.7.16`, `1.7.16`, `v1.7`, `1.7`, `maroilles`, `latest`](https://github.com/containous/traefik-library-image/blob/c35c242498450bb31333770ec3bce26260020d6f/scratch/Dockerfile)
+-	[`v1.7.16-alpine`, `1.7.16-alpine`, `v1.7-alpine`, `1.7-alpine`, `maroilles-alpine`, `alpine`](https://github.com/containous/traefik-library-image/blob/c35c242498450bb31333770ec3bce26260020d6f/alpine/Dockerfile)
+-	[`v1.7.16-windowsservercore-1809`, `1.7.16-windowsservercore-1809`, `v1.7-windowsservercore-1809`, `1.7-windowsservercore-1809`, `maroilles-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/containous/traefik-library-image/blob/c35c242498450bb31333770ec3bce26260020d6f/windows/1809/Dockerfile)
 
 # Quick reference
 
@@ -33,7 +34,7 @@ WARNING:
 	[the Traefik Project](https://github.com/containous/traefik-library-image)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/traefik/), [`arm32v6`](https://hub.docker.com/r/arm32v6/traefik/), [`arm64v8`](https://hub.docker.com/r/arm64v8/traefik/)
+	[`amd64`](https://hub.docker.com/r/amd64/traefik/), [`arm32v6`](https://hub.docker.com/r/arm32v6/traefik/), [`arm64v8`](https://hub.docker.com/r/arm64v8/traefik/), [`windows-amd64`](https://hub.docker.com/r/winamd64/traefik/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/traefik/` directory](https://github.com/docker-library/repo-info/blob/master/repos/traefik) ([history](https://github.com/docker-library/repo-info/commits/master/repos/traefik))  
@@ -176,6 +177,23 @@ You can find the complete documentation:
 A community support is available at [https://community.containo.us](https://community.containo.us)
 
 A collection of contributions around Traefik can be found at [https://awesome.traefik.io](https://awesome.traefik.io).
+
+# Image Variants
+
+The `traefik` images come in many flavors, each designed for a specific use case.
+
+## `traefik:<version>`
+
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+## `traefik:<version>-windowsservercore`
+
+This image is based on [Windows Server Core (`microsoft/windowsservercore`)](https://hub.docker.com/r/microsoft/windowsservercore/). As such, it only works in places which that image does, such as Windows 10 Professional/Enterprise (Anniversary Edition) or Windows Server 2016.
+
+For information about how to get Docker running on Windows, please see the relevant "Quick Start" guide provided by Microsoft:
+
+-	[Windows Server Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_server)
+-	[Windows 10 Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)
 
 # License
 

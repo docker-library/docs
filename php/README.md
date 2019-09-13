@@ -265,7 +265,7 @@ COPY config/opcache.ini $PHP_INI_DIR/conf.d/
 
 The `php` images come in many flavors, each designed for a specific use case.
 
-Some of these tags may have names like buster or stretch in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on.
+Some of these tags may have names like buster or stretch in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 ## `php:<version>-cli`
 
