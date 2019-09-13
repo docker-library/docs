@@ -1,10 +1,10 @@
 %%LOGO%%
 
-[Traefik](https://github.com/containous/traefik) is a modern HTTP reverse proxy and load balancer that makes deploying microservices easy.
+[Traefik](https://traefik.io) is a modern HTTP reverse proxy and load balancer that makes deploying microservices easy.
 
 Traefik integrates with your existing infrastructure components ([Docker](https://www.docker.com/), [Swarm mode](https://docs.docker.com/engine/swarm/), [Kubernetes](https://kubernetes.io), [Marathon](https://mesosphere.github.io/marathon/), [Consul](https://www.consul.io/), [Etcd](https://coreos.com/etcd/), [Rancher](https://rancher.com), [Amazon ECS](https://aws.amazon.com/ecs), ...) and configures itself automatically and dynamically.
 
-Telling Traefik where your orchestrator is could be the *only* configuration step you need to do.
+Pointing Traefik at your orchestrator should be the *only* configuration step you need.
 
 # Traefik v2 - Example usage
 
@@ -59,9 +59,9 @@ X-Forwarded-Server: 7e073cb54211
 X-Real-Ip: 172.17.0.1
 ```
 
-The web UI [http://localhost:8080](http://localhost:8080) will give you an overview of the frontends/backends and also a health dashboard.
+The web UI [http://localhost:8080](http://localhost:8080) will give you an overview of the routers, services, and middlewares.
 
-![Web UI Providers](https://raw.githubusercontent.com/containous/traefik/v2.0/docs/content/assets/img/webui-dashboard.png)
+![Web UI](https://raw.githubusercontent.com/containous/traefik/v2.0/docs/content/assets/img/webui-dashboard.png)
 
 # Traefik v1 - Example usage
 
