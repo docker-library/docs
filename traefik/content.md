@@ -61,7 +61,7 @@ X-Real-Ip: 172.17.0.1
 
 The web UI [http://localhost:8080](http://localhost:8080) will give you an overview of the frontends/backends and also a health dashboard.
 
-![Web UI Providers](https://raw.githubusercontent.com/containous/traefik/master/docs/content/assets/img/webui-dashboard.png)
+![Web UI Providers](https://raw.githubusercontent.com/containous/traefik/v2.0/docs/content/assets/img/webui-dashboard.png)
 
 # Traefik v1 - Example usage
 
