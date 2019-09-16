@@ -16,6 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
+(See ["What's the difference between 'Shared' and 'Simple' tags?" in the FAQ](https://github.com/docker-library/faq#whats-the-difference-between-shared-and-simple-tags).)
+
 ## Simple Tags
 
 -	[`0.17.0-python3.7-buster`, `0.17-python3.7-buster`, `0-python3.7-buster`, `python3.7-buster`, `0.17.0-buster`, `0.17-buster`, `0-buster`, `buster`](https://github.com/hylang/docker-hylang/blob/a1a6af6ad95540f3d5d7de95a27bf2e8d0ddd569/dockerfiles-generated/Dockerfile.python3.7-buster)

@@ -16,6 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
+(See ["What's the difference between 'Shared' and 'Simple' tags?" in the FAQ](https://github.com/docker-library/faq#whats-the-difference-between-shared-and-simple-tags).)
+
 ## Simple Tags
 
 -	[`8u222-b10-jdk-hotspot-bionic`, `8-jdk-hotspot-bionic`, `8-hotspot-bionic`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/4dd8db3c0fb30281ead0baa706800a605d3ebbe1/8/jdk/ubuntu/Dockerfile.hotspot.releases.full)

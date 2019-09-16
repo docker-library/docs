@@ -16,6 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
+(See ["What's the difference between 'Shared' and 'Simple' tags?" in the FAQ](https://github.com/docker-library/faq#whats-the-difference-between-shared-and-simple-tags).)
+
 ## Simple Tags
 
 -	[`2.0.4-linux`, `linux`](https://github.com/nats-io/nats-docker/blob/9abb1b4d926fdcaea5a55e0451cd7725d3238de1/amd64/Dockerfile)

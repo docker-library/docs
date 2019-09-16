@@ -16,6 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
+(See ["What's the difference between 'Shared' and 'Simple' tags?" in the FAQ](https://github.com/docker-library/faq#whats-the-difference-between-shared-and-simple-tags).)
+
 ## Simple Tags
 
 -	[`1.13.0-buster`, `1.13-buster`, `1-buster`, `buster`](https://github.com/docker-library/golang/blob/2909cfd3ecb769671eb8222eaf9a782a6aed024d/1.13/buster/Dockerfile)

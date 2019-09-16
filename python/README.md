@@ -16,6 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
+(See ["What's the difference between 'Shared' and 'Simple' tags?" in the FAQ](https://github.com/docker-library/faq#whats-the-difference-between-shared-and-simple-tags).)
+
 ## Simple Tags
 
 -	[`3.8.0b4-buster`, `3.8-rc-buster`, `rc-buster`](https://github.com/docker-library/python/blob/5f5b1bfb9466f0ac8fbd7b615b99493532d42ae8/3.8-rc/buster/Dockerfile)
