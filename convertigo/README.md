@@ -16,9 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.6.3`, `7.6`, `latest`](https://github.com/convertigo/convertigo/blob/5afa82d14ae4299ac23b0ac364e36f6dbbeb7ce9/docker/default/Dockerfile)
--	[`7.6.3-slim`, `7.6-slim`, `slim`](https://github.com/convertigo/convertigo/blob/5afa82d14ae4299ac23b0ac364e36f6dbbeb7ce9/docker/slim/Dockerfile)
--	[`7.6.3-openj9`, `7.6-openj9`, `openj9`](https://github.com/convertigo/convertigo/blob/5afa82d14ae4299ac23b0ac364e36f6dbbeb7ce9/docker/openj9/Dockerfile)
+-	[`7.6.4`, `7.6`, `latest`](https://github.com/convertigo/convertigo/blob/839a7d740213cf51f6eee83c3954a197d6bb78ce/docker/default/Dockerfile)
+-	[`7.6.4-slim`, `7.6-slim`, `slim`](https://github.com/convertigo/convertigo/blob/839a7d740213cf51f6eee83c3954a197d6bb78ce/docker/slim/Dockerfile)
+-	[`7.6.4-openj9`, `7.6-openj9`, `openj9`](https://github.com/convertigo/convertigo/blob/839a7d740213cf51f6eee83c3954a197d6bb78ce/docker/openj9/Dockerfile)
 
 # Quick reference
 
