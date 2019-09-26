@@ -16,11 +16,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1-stretch`, `1.37-stretch`, `1.37.0-stretch`, `stretch`](https://github.com/rust-lang-nursery/docker-rust/blob/d55d56e152da6cffe980baee408cd18716df4b44/1.37.0/stretch/Dockerfile)
--	[`1-slim-stretch`, `1.37-slim-stretch`, `1.37.0-slim-stretch`, `slim-stretch`](https://github.com/rust-lang-nursery/docker-rust/blob/d55d56e152da6cffe980baee408cd18716df4b44/1.37.0/stretch/slim/Dockerfile)
--	[`1-buster`, `1.37-buster`, `1.37.0-buster`, `buster`, `1`, `1.37`, `1.37.0`, `latest`](https://github.com/rust-lang-nursery/docker-rust/blob/d55d56e152da6cffe980baee408cd18716df4b44/1.37.0/buster/Dockerfile)
--	[`1-slim-buster`, `1.37-slim-buster`, `1.37.0-slim-buster`, `slim-buster`, `1-slim`, `1.37-slim`, `1.37.0-slim`, `slim`](https://github.com/rust-lang-nursery/docker-rust/blob/d55d56e152da6cffe980baee408cd18716df4b44/1.37.0/buster/slim/Dockerfile)
--	[`1-alpine3.10`, `1.37-alpine3.10`, `1.37.0-alpine3.10`, `alpine3.10`, `1-alpine`, `1.37-alpine`, `1.37.0-alpine`, `alpine`](https://github.com/rust-lang-nursery/docker-rust/blob/5586e216d828d2d8ab0a784eac32cacf38eae438/1.37.0/alpine3.10/Dockerfile)
+-	[`1-stretch`, `1.38-stretch`, `1.38.0-stretch`, `stretch`](https://github.com/rust-lang-nursery/docker-rust/blob/1d8ef2981548b4b54767e09274c26b2dd6a4e9ec/1.38.0/stretch/Dockerfile)
+-	[`1-slim-stretch`, `1.38-slim-stretch`, `1.38.0-slim-stretch`, `slim-stretch`](https://github.com/rust-lang-nursery/docker-rust/blob/1d8ef2981548b4b54767e09274c26b2dd6a4e9ec/1.38.0/stretch/slim/Dockerfile)
+-	[`1-buster`, `1.38-buster`, `1.38.0-buster`, `buster`, `1`, `1.38`, `1.38.0`, `latest`](https://github.com/rust-lang-nursery/docker-rust/blob/1d8ef2981548b4b54767e09274c26b2dd6a4e9ec/1.38.0/buster/Dockerfile)
+-	[`1-slim-buster`, `1.38-slim-buster`, `1.38.0-slim-buster`, `slim-buster`, `1-slim`, `1.38-slim`, `1.38.0-slim`, `slim`](https://github.com/rust-lang-nursery/docker-rust/blob/1d8ef2981548b4b54767e09274c26b2dd6a4e9ec/1.38.0/buster/slim/Dockerfile)
+-	[`1-alpine3.10`, `1.38-alpine3.10`, `1.38.0-alpine3.10`, `alpine3.10`, `1-alpine`, `1.38-alpine`, `1.38.0-alpine`, `alpine`](https://github.com/rust-lang-nursery/docker-rust/blob/1d8ef2981548b4b54767e09274c26b2dd6a4e9ec/1.38.0/alpine3.10/Dockerfile)
 
 # Quick reference
 
