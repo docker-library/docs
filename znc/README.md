@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.7.4`, `1.7`, `latest`](https://github.com/znc/znc-docker/blob/e1047ff1ab0d4e2b4bca71fb65b16645c2ffa0a1/full/Dockerfile)
--	[`1.7.4-slim`, `1.7-slim`, `slim`](https://github.com/znc/znc-docker/blob/e1047ff1ab0d4e2b4bca71fb65b16645c2ffa0a1/slim/Dockerfile)
+-	[`1.7.5`, `1.7`, `latest`](https://github.com/znc/znc-docker/blob/94e51a0bb426afbd857b7b19ffff96a5d0a6be0b/full/Dockerfile)
+-	[`1.7.5-slim`, `1.7-slim`, `slim`](https://github.com/znc/znc-docker/blob/94e51a0bb426afbd857b7b19ffff96a5d0a6be0b/slim/Dockerfile)
 
 # Quick reference
 
