@@ -1,1 +1,1 @@
-The Docker image creation scripts contained under the repository %%REPO%% are licensed under GPLv3. However, all applications contained in each tag are licensed under their specific licenses.
+The Docker image creation scripts contained under the repository %%REPO%% are licensed under GPLv3. All the licensing information for the packages contained in it can be found under `/usr/share/licenses/` inside of the image.
