@@ -28,10 +28,10 @@ WARNING:
 	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
 -	**Where to file issues**:  
-	[https://github.com/rust-lang-nursery/docker-rust/issues](https://github.com/rust-lang-nursery/docker-rust/issues)
+	[https://github.com/rust-lang/docker-rust/issues](https://github.com/rust-lang/docker-rust/issues)
 
 -	**Maintained by**:  
-	[the Rust Project developers](https://github.com/rust-lang-nursery/docker-rust)
+	[the Rust Project developers](https://github.com/rust-lang/docker-rust)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/rust/), [`arm32v7`](https://hub.docker.com/r/arm32v7/rust/), [`arm64v8`](https://hub.docker.com/r/arm64v8/rust/), [`i386`](https://hub.docker.com/r/i386/rust/)
