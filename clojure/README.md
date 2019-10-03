@@ -16,15 +16,33 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`openjdk-8-lein`, `openjdk-8-lein-2.9.1`, `lein-2.9.1`, `lein`, `latest`](https://github.com/Quantisan/docker-clojure/blob/f4257cfa677af38c2f8a9cd0455747c9bee835ca/target/openjdk-8/debian/lein/Dockerfile)
--	[`openjdk-8-lein-alpine`, `openjdk-8-lein-2.9.1-alpine`, `lein-2.9.1-alpine`, `lein-alpine`, `alpine`](https://github.com/Quantisan/docker-clojure/blob/f4257cfa677af38c2f8a9cd0455747c9bee835ca/target/openjdk-8/alpine/lein/Dockerfile)
--	[`openjdk-8-boot`, `openjdk-8-boot-2.8.2`, `boot-2.8.2`, `boot`](https://github.com/Quantisan/docker-clojure/blob/f4257cfa677af38c2f8a9cd0455747c9bee835ca/target/openjdk-8/debian/boot/Dockerfile)
--	[`openjdk-8-boot-alpine`, `openjdk-8-boot-2.8.2-alpine`, `boot-2.8.2-alpine`, `boot-alpine`](https://github.com/Quantisan/docker-clojure/blob/f4257cfa677af38c2f8a9cd0455747c9bee835ca/target/openjdk-8/alpine/boot/Dockerfile)
--	[`openjdk-8-tools-deps`, `openjdk-8-tools-deps-1.10.0.442`, `tools-deps-1.10.0.442`, `tools-deps`](https://github.com/Quantisan/docker-clojure/blob/f4257cfa677af38c2f8a9cd0455747c9bee835ca/target/openjdk-8/debian/tools-deps/Dockerfile)
--	[`openjdk-8-tools-deps-alpine`, `openjdk-8-tools-deps-1.10.0.442-alpine`, `tools-deps-1.10.0.442-alpine`, `tools-deps-alpine`](https://github.com/Quantisan/docker-clojure/blob/f4257cfa677af38c2f8a9cd0455747c9bee835ca/target/openjdk-8/alpine/tools-deps/Dockerfile)
--	[`openjdk-11-lein`, `openjdk-11-lein-2.9.1`](https://github.com/Quantisan/docker-clojure/blob/f4257cfa677af38c2f8a9cd0455747c9bee835ca/target/openjdk-11/debian/lein/Dockerfile)
--	[`openjdk-11-boot`, `openjdk-11-boot-2.8.2`](https://github.com/Quantisan/docker-clojure/blob/f4257cfa677af38c2f8a9cd0455747c9bee835ca/target/openjdk-11/debian/boot/Dockerfile)
--	[`openjdk-11-tools-deps`, `openjdk-11-tools-deps-1.10.0.442`](https://github.com/Quantisan/docker-clojure/blob/f4257cfa677af38c2f8a9cd0455747c9bee835ca/target/openjdk-11/debian/tools-deps/Dockerfile)
+-	[`openjdk-8`, `openjdk-8-lein`, `openjdk-8-lein-2.9.1`, `openjdk-8-stretch`, `openjdk-8-lein-stretch`, `openjdk-8-lein-2.9.1-stretch`](https://github.com/Quantisan/docker-clojure/blob/d032cd0795677fa5f89db574159dd911ce86c44a/target/openjdk-8-stretch/lein/Dockerfile)
+-	[`openjdk-8-slim-buster`, `openjdk-8-lein-slim-buster`, `openjdk-8-lein-2.9.1-slim-buster`](https://github.com/Quantisan/docker-clojure/blob/d032cd0795677fa5f89db574159dd911ce86c44a/target/openjdk-8-slim-buster/lein/Dockerfile)
+-	[`openjdk-8-boot`, `openjdk-8-boot-2.8.3`, `openjdk-8-boot-stretch`, `openjdk-8-boot-2.8.3-stretch`](https://github.com/Quantisan/docker-clojure/blob/d032cd0795677fa5f89db574159dd911ce86c44a/target/openjdk-8-stretch/boot/Dockerfile)
+-	[`openjdk-8-boot-slim-buster`, `openjdk-8-boot-2.8.3-slim-buster`](https://github.com/Quantisan/docker-clojure/blob/d032cd0795677fa5f89db574159dd911ce86c44a/target/openjdk-8-slim-buster/boot/Dockerfile)
+-	[`openjdk-8-tools-deps`, `openjdk-8-tools-deps-1.10.1.469`, `openjdk-8-tools-deps-stretch`, `openjdk-8-tools-deps-1.10.1.469-stretch`](https://github.com/Quantisan/docker-clojure/blob/d032cd0795677fa5f89db574159dd911ce86c44a/target/openjdk-8-stretch/tools-deps/Dockerfile)
+-	[`openjdk-8-tools-deps-slim-buster`, `openjdk-8-tools-deps-1.10.1.469-slim-buster`](https://github.com/Quantisan/docker-clojure/blob/d032cd0795677fa5f89db574159dd911ce86c44a/target/openjdk-8-slim-buster/tools-deps/Dockerfile)
+-	[`openjdk-11`, `openjdk-11-lein`, `openjdk-11-lein-2.9.1`, `lein`, `lein-2.9.1`, `openjdk-11-stretch`, `openjdk-11-lein-stretch`, `openjdk-11-lein-2.9.1-stretch`, `lein-stretch`, `lein-2.9.1-stretch`](https://github.com/Quantisan/docker-clojure/blob/d032cd0795677fa5f89db574159dd911ce86c44a/target/openjdk-11-stretch/lein/Dockerfile)
+-	[`openjdk-11-lein-slim-buster`, `openjdk-11-slim-buster`, `openjdk-11-lein-2.9.1-slim-buster`, `slim-buster`, `lein-slim-buster`, `lein-2.9.1-slim-buster`, `latest`](https://github.com/Quantisan/docker-clojure/blob/d032cd0795677fa5f89db574159dd911ce86c44a/target/openjdk-11-slim-buster/lein/Dockerfile)
+-	[`openjdk-11-boot`, `openjdk-11-boot-2.8.3`, `boot`, `boot-2.8.3`, `openjdk-11-boot-stretch`, `openjdk-11-boot-2.8.3-stretch`, `boot-stretch`, `boot-2.8.3-stretch`](https://github.com/Quantisan/docker-clojure/blob/d032cd0795677fa5f89db574159dd911ce86c44a/target/openjdk-11-stretch/boot/Dockerfile)
+-	[`openjdk-11-boot-slim-buster`, `openjdk-11-boot-2.8.3-slim-buster`, `boot-slim-buster`, `boot-2.8.3-slim-buster`](https://github.com/Quantisan/docker-clojure/blob/d032cd0795677fa5f89db574159dd911ce86c44a/target/openjdk-11-slim-buster/boot/Dockerfile)
+-	[`openjdk-11-tools-deps`, `openjdk-11-tools-deps-1.10.1.469`, `tools-deps`, `tools-deps-1.10.1.469`, `openjdk-11-tools-deps-stretch`, `openjdk-11-tools-deps-1.10.1.469-stretch`, `tools-deps-stretch`, `tools-deps-1.10.1.469-stretch`](https://github.com/Quantisan/docker-clojure/blob/d032cd0795677fa5f89db574159dd911ce86c44a/target/openjdk-11-stretch/tools-deps/Dockerfile)
+-	[`openjdk-11-tools-deps-slim-buster`, `openjdk-11-tools-deps-1.10.1.469-slim-buster`, `tools-deps-1.10.1.469-slim-buster`, `tools-deps-slim-buster`](https://github.com/Quantisan/docker-clojure/blob/d032cd0795677fa5f89db574159dd911ce86c44a/target/openjdk-11-slim-buster/tools-deps/Dockerfile)
+-	[`openjdk-13`, `openjdk-13-lein`, `openjdk-13-lein-2.9.1`, `openjdk-13-slim-buster`, `openjdk-13-lein-slim-buster`, `openjdk-13-lein-2.9.1-slim-buster`](https://github.com/Quantisan/docker-clojure/blob/d032cd0795677fa5f89db574159dd911ce86c44a/target/openjdk-13-slim-buster/lein/Dockerfile)
+-	[`openjdk-13-buster`, `openjdk-13-lein-buster`, `openjdk-13-lein-2.9.1-buster`](https://github.com/Quantisan/docker-clojure/blob/d032cd0795677fa5f89db574159dd911ce86c44a/target/openjdk-13-buster/lein/Dockerfile)
+-	[`openjdk-13-boot`, `openjdk-13-boot-2.8.3`, `openjdk-13-boot-slim-buster`, `openjdk-13-boot-2.8.3-slim-buster`](https://github.com/Quantisan/docker-clojure/blob/d032cd0795677fa5f89db574159dd911ce86c44a/target/openjdk-13-slim-buster/boot/Dockerfile)
+-	[`openjdk-13-boot-buster`, `openjdk-13-boot-2.8.3-buster`](https://github.com/Quantisan/docker-clojure/blob/d032cd0795677fa5f89db574159dd911ce86c44a/target/openjdk-13-buster/boot/Dockerfile)
+-	[`openjdk-13-tools-deps`, `openjdk-13-tools-deps-1.10.1.469`, `openjdk-13-tools-deps-slim-buster`, `openjdk-13-tools-deps-1.10.1.469-slim-buster`](https://github.com/Quantisan/docker-clojure/blob/d032cd0795677fa5f89db574159dd911ce86c44a/target/openjdk-13-slim-buster/tools-deps/Dockerfile)
+-	[`openjdk-13-tools-deps-buster`, `openjdk-13-tools-deps-1.10.1.469-buster`](https://github.com/Quantisan/docker-clojure/blob/d032cd0795677fa5f89db574159dd911ce86c44a/target/openjdk-13-buster/tools-deps/Dockerfile)
+-	[`openjdk-14`, `openjdk-14-lein`, `openjdk-14-lein-2.9.1`, `openjdk-14-slim-buster`, `openjdk-14-lein-slim-buster`, `openjdk-14-lein-2.9.1-slim-buster`](https://github.com/Quantisan/docker-clojure/blob/d032cd0795677fa5f89db574159dd911ce86c44a/target/openjdk-14-slim-buster/lein/Dockerfile)
+-	[`openjdk-14-buster`, `openjdk-14-lein-buster`, `openjdk-14-lein-2.9.1-buster`](https://github.com/Quantisan/docker-clojure/blob/d032cd0795677fa5f89db574159dd911ce86c44a/target/openjdk-14-buster/lein/Dockerfile)
+-	[`openjdk-14-boot`, `openjdk-14-boot-2.8.3`, `openjdk-14-boot-slim-buster`, `openjdk-14-boot-2.8.3-slim-buster`](https://github.com/Quantisan/docker-clojure/blob/d032cd0795677fa5f89db574159dd911ce86c44a/target/openjdk-14-slim-buster/boot/Dockerfile)
+-	[`openjdk-14-boot-buster`, `openjdk-14-boot-2.8.3-buster`](https://github.com/Quantisan/docker-clojure/blob/d032cd0795677fa5f89db574159dd911ce86c44a/target/openjdk-14-buster/boot/Dockerfile)
+-	[`openjdk-14-tools-deps`, `openjdk-14-tools-deps-1.10.1.469`, `openjdk-14-tools-deps-slim-buster`, `openjdk-14-tools-deps-1.10.1.469-slim-buster`](https://github.com/Quantisan/docker-clojure/blob/d032cd0795677fa5f89db574159dd911ce86c44a/target/openjdk-14-slim-buster/tools-deps/Dockerfile)
+-	[`openjdk-14-tools-deps-buster`, `openjdk-14-tools-deps-1.10.1.469-buster`](https://github.com/Quantisan/docker-clojure/blob/d032cd0795677fa5f89db574159dd911ce86c44a/target/openjdk-14-buster/tools-deps/Dockerfile)
+-	[`openjdk-14-alpine`, `openjdk-14-lein-alpine`, `openjdk-14-lein-2.9.1-alpine`](https://github.com/Quantisan/docker-clojure/blob/d032cd0795677fa5f89db574159dd911ce86c44a/target/openjdk-14-alpine/lein/Dockerfile)
+-	[`openjdk-14-boot-alpine`, `openjdk-14-boot-2.8.3-alpine`](https://github.com/Quantisan/docker-clojure/blob/d032cd0795677fa5f89db574159dd911ce86c44a/target/openjdk-14-alpine/boot/Dockerfile)
+-	[`openjdk-14-tools-deps-alpine`, `openjdk-14-tools-deps-1.10.1.469-alpine`](https://github.com/Quantisan/docker-clojure/blob/d032cd0795677fa5f89db574159dd911ce86c44a/target/openjdk-14-alpine/tools-deps/Dockerfile)
 
 # Quick reference
 
@@ -38,7 +56,7 @@ WARNING:
 	[the Docker Community](https://github.com/Quantisan/docker-clojure)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/clojure/), [`arm32v5`](https://hub.docker.com/r/arm32v5/clojure/), [`arm32v7`](https://hub.docker.com/r/arm32v7/clojure/), [`arm64v8`](https://hub.docker.com/r/arm64v8/clojure/), [`i386`](https://hub.docker.com/r/i386/clojure/), [`ppc64le`](https://hub.docker.com/r/ppc64le/clojure/), [`s390x`](https://hub.docker.com/r/s390x/clojure/)
+	[`amd64`](https://hub.docker.com/r/amd64/clojure/), [`arm64v8`](https://hub.docker.com/r/arm64v8/clojure/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/clojure/` directory](https://github.com/docker-library/repo-info/blob/master/repos/clojure) ([history](https://github.com/docker-library/repo-info/commits/master/repos/clojure))  
@@ -136,6 +154,12 @@ The `clojure` images come in many flavors, each designed for a specific use case
 ## `clojure:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+Some of these tags may have names like buster or stretch in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+
+## `clojure:<version>-slim`
+
+This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `clojure`. Unless you are working in an environment where *only* the `clojure` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
 
 ## `clojure:<version>-alpine`
 
