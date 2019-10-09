@@ -265,9 +265,9 @@ The `-v /my/own/datadir:/opt/bonita` part of the command mounts the `/my/own/dat
 
 		```console
 		cd bonita_migration
-		wget https://release.ow2.org/bonita/bonita-migration-distrib-2.43.0.zip
+		wget https://release.ow2.org/bonita/bonita-migration-distrib-2.44.0.zip
 		wget https://download.forge.ow2.org/bonita/BonitaBPMCommunity-7.2.4-Tomcat-7.0.67.zip
-		unzip bonita-migration-distrib-2.43.0.zip
+		unzip bonita-migration-distrib-2.44.0.zip
 		unzip BonitaBPMCommunity-7.2.4-Tomcat-7.0.67.zip
 		```
 
@@ -282,14 +282,14 @@ The `-v /my/own/datadir:/opt/bonita` part of the command mounts the `/my/own/dat
 
 		```console
 		cd bonita_migration
-		wget https://release.ow2.org/bonita/bonita-migration-distrib-2.43.0.zip
-		unzip bonita-migration-distrib-2.43.0.zip
+		wget https://release.ow2.org/bonita/bonita-migration-distrib-2.44.0.zip
+		unzip bonita-migration-distrib-2.44.0.zip
 		```
 
 -	Configure the migration tool
 
 	```console
-	$ cd bonita-migration-distrib-2.43.0
+	$ cd bonita-migration-distrib-2.44.0
 	```
 
 	edit the migration tool config to point towards the copy of bonita home and db
@@ -326,17 +326,17 @@ The `-v /my/own/datadir:/opt/bonita` part of the command mounts the `/my/own/dat
 	-	If >= 7.3.0
 
 	```console
-	$ docker run --name=bonita_7.9.2_postgres --link mydbpostgres:postgres -e "DB_NAME=newbonitadb" -e "DB_USER=newbonitauser" -e "DB_PASS=newbonitapass" -d -p 8081:8080 bonita:7.9.2
+	$ docker run --name=bonita_7.9.3_postgres --link mydbpostgres:postgres -e "DB_NAME=newbonitadb" -e "DB_USER=newbonitauser" -e "DB_PASS=newbonitapass" -d -p 8081:8080 bonita:7.9.3
 	```
 
 -	Reapply specific configuration if needed, for example with a version >= 7.3.0 :
 
 	```console
-	$ docker exec -ti bonita_7.9.2_postgres /bin/bash
+	$ docker exec -ti bonita_7.9.3_postgres /bin/bash
 	```
 
 	```console
-	$ cd /opt/bonita/BonitaCommunity-7.9.2-tomcat/setup
+	$ cd /opt/bonita/BonitaCommunity-7.9.3-tomcat/setup
 	$ ./setup.sh pull
 	$ TENANT_LOGIN=tech_user
 	$ TENANT_PASSWORD=secret
@@ -356,7 +356,7 @@ The `-v /my/own/datadir:/opt/bonita` part of the command mounts the `/my/own/dat
 	```
 
 	```console
-	$ docker restart bonita_7.9.2_postgres
+	$ docker restart bonita_7.9.3_postgres
 	```
 
 -	Specific consideration regarding migration to Java 11 in Bonita 7.9
