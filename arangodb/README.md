@@ -20,7 +20,7 @@ WARNING:
 -	[`3.2`, `3.2.17`](https://github.com/arangodb/arangodb-docker/blob/b4c22ad8bf4facbbc7c3b24e985251a09fcdbcec/stretch/3.2.17/Dockerfile)
 -	[`3.3`, `3.3.23`](https://github.com/arangodb/arangodb-docker/blob/24db8fa0429ce6fa1f7d56e54c9bb3da51c32b3e/stretch/3.3.23/Dockerfile)
 -	[`3.4`, `3.4.8`](https://github.com/arangodb/arangodb-docker/blob/76d742d9908be005fe2ce2169d38324685415e9d/alpine/3.4.8/Dockerfile)
--	[`3.5`, `3.5.0`, `latest`](https://github.com/arangodb/arangodb-docker/blob/b2ecb91f1d8e4ae3fe66b59abff364d01d49625a/alpine/3.5.0/Dockerfile)
+-	[`3.5`, `3.5.1`, `latest`](https://github.com/arangodb/arangodb-docker/blob/b1f012dc9207094642174a5bc0345c706ac66509/alpine/3.5.1/Dockerfile)
 
 # Quick reference
 
