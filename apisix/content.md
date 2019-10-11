@@ -7,22 +7,27 @@ APISIX is based on OpenResty and etcd. Compared with traditional API gateways, A
 %%LOGO%%
 
 # How to use this image
+
 First, APISIX requires a running etcd before it starts. You can either use the official etcd container, or use your own.
 
 ### Running a single node etcd
+
 Use the host IP address when configuring etcd:
-```
+
+```shell
 export NODE1=192.168.1.21
 ```
 
 Configure a Docker volume to store etcd data:
-```
+
+```shell
 docker volume create --name etcd-data
 export DATA_DIR="etcd-data"
 ```
 
 Run the latest version of etcd:
-```
+
+```shell
 REGISTRY=gcr.io/etcd-development/etcd
 
 docker run \
@@ -38,7 +43,9 @@ docker run \
 ```
 
 ### Start APISIX
+
 Once etcd is ready, you can start APISIX now:
+
 ```shell
 $ docker run -d --name apisix \
     -p 9080:9080 \
@@ -47,8 +54,10 @@ $ docker run -d --name apisix \
 ```
 
 # use docker-compose
+
 Use `docker-compose` is more easy to try APISIX, the content of `docker-compose.yml` as below:
-```
+
+```shell
 version: "3"
 
 services:
@@ -99,7 +108,8 @@ networks:
 ```
 
 Then run like this:
-```
+
+```shell
 $ docker-compose -p docker-apisix up -d
 ```
 
