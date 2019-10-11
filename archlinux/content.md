@@ -14,10 +14,10 @@ The base filesystem tarball for this image is auto-generated in Arch Linux infra
 
 This image is intended to serve the following goals:
 
--   Provide the Arch experience in a Docker Image
--   Provide the most simple but complete image to base every other upon
--   pacman needs to work out of the box
--   All installed packages have to be kept unmodified
+-	Provide the Arch experience in a Docker Image
+-	Provide the most simple but complete image to base every other upon
+-	pacman needs to work out of the box
+-	All installed packages have to be kept unmodified
 
 ## Base packages
 
@@ -25,10 +25,7 @@ Given that that the image is intended to be light-weight several packages of the
 
 ## Updating
 
-Arch Linux is a rolling release distribution, so a full update is recommended
-when installing new packages. In other words, we suggest to either execute `RUN
-pacman -Syu` immediately after your `FROM` statement or as soon as you docker
-run into a container.
+Arch Linux is a rolling release distribution, so a full update is recommended when installing new packages. In other words, we suggest to either execute `RUN pacman -Syu` immediately after your `FROM` statement or as soon as you docker run into a container.
 
 ## How It's Made
 

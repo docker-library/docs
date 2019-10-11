@@ -1,1 +1,1 @@
-Archlinux is a simple, lightweight Linux distribution aimed for flexibility.
+Arch Linux is a simple, lightweight Linux distribution aimed for flexibility.
