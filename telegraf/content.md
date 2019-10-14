@@ -207,3 +207,42 @@ $ docker run -d --name=telegraf \
 ```
 
 Refer to the docker [plugin documentation](https://github.com/influxdata/telegraf/blob/master/plugins/inputs/docker/README.md) for more information.
+
+### Install Additional Packages
+
+Some plugins require additional packages to be installed.  For example, the `ntpq` plugin requires `ntpq` command.  It is recommended to create a custom derivative image to install any needed commands.
+
+As an example this Dockerfile add the `mtr-tiny` image to the stock image and save it as `telegraf-mtr.docker`:
+```dockerfile
+FROM telegraf:1.12.3
+
+RUN DEBIAN_FRONTEND=noninteractive \
+	apt-get update && apt-get install -y --no-install-recommends mtr-tiny && \
+	rm -rf /var/lib/apt/lists/*
+```
+
+Build the derivative image:
+```console
+$ docker build -t telegraf-mtr:1.12.3 - < telegraf-mtr.docker
+```
+
+Create a `telegraf.conf` configuration file:
+```toml
+[[inputs.exec]]
+  interval = "60s"
+  commands=["mtr -C -n example.org"]
+  timeout = "40s"
+  data_format = "csv"
+  csv_skip_rows = 1
+  csv_column_names=["", "", "status", "dest", "hop", "ip", "loss", "snt", "", "", "avg", "best", "worst", "stdev"]
+  name_override = "mtr"
+  csv_tag_columns = ["dest", "hop", "ip"]
+
+[[outputs.file]]
+  files = ["stdout"]
+```
+
+Run your derivative image:
+```console
+$ docker run --name telegraf --rm -v $PWD/telegraf.conf:/etc/telegraf/telegraf.conf telegraf-mtr:1.12.3
+```
