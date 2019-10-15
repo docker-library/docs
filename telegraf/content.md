@@ -210,7 +210,7 @@ Refer to the docker [plugin documentation](https://github.com/influxdata/telegra
 
 ### Install Additional Packages
 
-Some plugins require additional packages to be installed.  For example, the `ntpq` plugin requires `ntpq` command. It is recommended to create a custom derivative image to install any needed commands.
+Some plugins require additional packages to be installed. For example, the `ntpq` plugin requires `ntpq` command. It is recommended to create a custom derivative image to install any needed commands.
 
 As an example this Dockerfile add the `mtr-tiny` image to the stock image and save it as `telegraf-mtr.docker`:
 
