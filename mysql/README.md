@@ -16,9 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.0.17`, `8.0`, `8`, `latest`](https://github.com/docker-library/mysql/blob/4af273a07854d7e4b68c5148b8e23b86aa8706e2/8.0/Dockerfile)
--	[`5.7.27`, `5.7`, `5`](https://github.com/docker-library/mysql/blob/51f9523ad07abacbce90c43eb27390c1c1f76266/5.7/Dockerfile)
--	[`5.6.45`, `5.6`](https://github.com/docker-library/mysql/blob/ed0e47e48b8ca3dbc4d68d68f56384bdd1fb5cdb/5.6/Dockerfile)
+-	[`8.0.18`, `8.0`, `8`, `latest`](https://github.com/docker-library/mysql/blob/367788b4c0eccf8bf6d10e8897262d22cf816284/8.0/Dockerfile)
+-	[`5.7.28`, `5.7`, `5`](https://github.com/docker-library/mysql/blob/5fa3526d23a846c6a2982901bc8190025af44336/5.7/Dockerfile)
+-	[`5.6.46`, `5.6`](https://github.com/docker-library/mysql/blob/49bedb5f999c19d3b931ea8bfd926a5b0a1c1db4/5.6/Dockerfile)
 
 # Quick reference
 
