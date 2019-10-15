@@ -10,7 +10,7 @@ Our strong community is diverse and helpful, and we pride ourselves on the range
 
 # About this image
 
-The base filesystem tarball for this image is auto-generated in Arch Linux infrastructure at the beginning of each month. Given the rolling-release nature of Arch Linux, images are tagged with the timestamp of the date they were generated. For example, `%%IMAGE%%:20190905` was generated the Seventh of November of 2018. The latest tag will contain the latest build always.
+The base filesystem tarball for this image is auto-generated in Arch Linux infrastructure at the beginning of each month. Given the rolling-release nature of Arch Linux, images are tagged with the timestamp of the date they were generated. For example, `%%IMAGE%%:20191006` was generated the Sixth of October of 2019. The latest tag will contain the latest build always.
 
 This image is intended to serve the following goals:
 
