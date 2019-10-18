@@ -16,11 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`18.04`, `bionic-20190912.1`, `bionic`, `latest`](https://github.com/tianon/docker-brew-ubuntu-core/blob/30f325d6526a6dd5ff9f5663a80dcc56db363e2a/bionic/Dockerfile)
--	[`18.10`, `cosmic-20190719`, `cosmic`](https://github.com/tianon/docker-brew-ubuntu-core/blob/30f325d6526a6dd5ff9f5663a80dcc56db363e2a/cosmic/Dockerfile)
--	[`19.04`, `disco-20190913`, `disco`, `rolling`](https://github.com/tianon/docker-brew-ubuntu-core/blob/30f325d6526a6dd5ff9f5663a80dcc56db363e2a/disco/Dockerfile)
--	[`19.10`, `eoan-20190916`, `eoan`, `devel`](https://github.com/tianon/docker-brew-ubuntu-core/blob/30f325d6526a6dd5ff9f5663a80dcc56db363e2a/eoan/Dockerfile)
--	[`16.04`, `xenial-20190904`, `xenial`](https://github.com/tianon/docker-brew-ubuntu-core/blob/30f325d6526a6dd5ff9f5663a80dcc56db363e2a/xenial/Dockerfile)
+-	[`18.04`, `bionic-20191010`, `bionic`, `latest`](https://github.com/tianon/docker-brew-ubuntu-core/blob/8f4b095575c0e00752e10e60765c1bd65625ae95/bionic/Dockerfile)
+-	[`19.04`, `disco-20191011`, `disco`](https://github.com/tianon/docker-brew-ubuntu-core/blob/8f4b095575c0e00752e10e60765c1bd65625ae95/disco/Dockerfile)
+-	[`19.10`, `eoan-20191017`, `eoan`, `rolling`](https://github.com/tianon/docker-brew-ubuntu-core/blob/8f4b095575c0e00752e10e60765c1bd65625ae95/eoan/Dockerfile)
+-	[`16.04`, `xenial-20191010`, `xenial`](https://github.com/tianon/docker-brew-ubuntu-core/blob/8f4b095575c0e00752e10e60765c1bd65625ae95/xenial/Dockerfile)
 
 # Quick reference
 

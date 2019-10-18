@@ -16,7 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.9.1-community`, `7.9-community`, `latest`, `lts`](https://github.com/SonarSource/docker-sonarqube/blob/c2ec0708e5c20c4bed02606c3b626dede5e3b8a7/7/community/Dockerfile)
+-	[`7.9.1-community`, `7.9-community`, `latest`, `lts`](https://github.com/SonarSource/docker-sonarqube/blob/8ae0fadc72fef64334998e811f1b9cf68a458a2c/7/community/Dockerfile)
+-	[`8.0-community-beta`, `8-community-beta`, `community-beta`](https://github.com/SonarSource/docker-sonarqube/blob/8ae0fadc72fef64334998e811f1b9cf68a458a2c/8/community/Dockerfile)
+-	[`8.0-developer-beta`, `8-developer-beta`, `developer-beta`](https://github.com/SonarSource/docker-sonarqube/blob/8ae0fadc72fef64334998e811f1b9cf68a458a2c/8/developer/Dockerfile)
+-	[`8.0-enterprise-beta`, `8-enterprise-beta`, `enterprise-beta`](https://github.com/SonarSource/docker-sonarqube/blob/8ae0fadc72fef64334998e811f1b9cf68a458a2c/8/enterprise/Dockerfile)
 
 # Quick reference
 

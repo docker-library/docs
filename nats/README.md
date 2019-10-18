@@ -20,16 +20,18 @@ WARNING:
 
 ## Simple Tags
 
--	[`2.1.0-linux`, `linux`](https://github.com/nats-io/nats-docker/blob/710f0ed18645d78e97fa7fd8cdf9b80dbe936eb6/amd64/Dockerfile)
--	[`2.1.0-nanoserver`, `nanoserver`, `nanoserver-1803`](https://github.com/nats-io/nats-docker/blob/710f0ed18645d78e97fa7fd8cdf9b80dbe936eb6/windows/nanoserver-1803/Dockerfile)
--	[`2.1.0-nanoserver-1809`, `nanoserver-1809`](https://github.com/nats-io/nats-docker/blob/710f0ed18645d78e97fa7fd8cdf9b80dbe936eb6/windows/nanoserver-1809/Dockerfile)
--	[`2.1.0-windowsservercore`, `windowsservercore`](https://github.com/nats-io/nats-docker/blob/710f0ed18645d78e97fa7fd8cdf9b80dbe936eb6/windows/windowsservercore/Dockerfile)
+-	[`2.1.0-linux`, `linux`](https://github.com/nats-io/nats-docker/blob/f71b553207305f7d725e3eed1329dcd8b00ca22f/2.1.0/scratch/amd64/Dockerfile)
+-	[`2.1.0-windowsservercore-1809`, `windowsservercore-1809`, `windowsservercore`](https://github.com/nats-io/nats-docker/blob/f71b553207305f7d725e3eed1329dcd8b00ca22f/2.1.0/windowsservercore1809/Dockerfile)
+-	[`2.1.0-nanoserver-1809`, `nanoserver-1809`](https://github.com/nats-io/nats-docker/blob/f71b553207305f7d725e3eed1329dcd8b00ca22f/2.1.0/nanoserver1809/Dockerfile)
+-	[`2.1.0-windowsservercore-1803`, `windowsservercore-1803`](https://github.com/nats-io/nats-docker/blob/f71b553207305f7d725e3eed1329dcd8b00ca22f/2.1.0/windowsservercore1803/Dockerfile)
+-	[`2.1.0-nanoserver-1803`, `nanoserver-1803`](https://github.com/nats-io/nats-docker/blob/f71b553207305f7d725e3eed1329dcd8b00ca22f/2.1.0/nanoserver1803/Dockerfile)
+-	[`2.1.0-windowsservercore-ltsc2016`, `windowsservercore-ltsc2016`](https://github.com/nats-io/nats-docker/blob/f71b553207305f7d725e3eed1329dcd8b00ca22f/2.1.0/windowsservercoreltsc2016/Dockerfile)
 
 ## Shared Tags
 
 -	`2.1.0`, `latest`:
-	-	[`2.1.0-linux`](https://github.com/nats-io/nats-docker/blob/710f0ed18645d78e97fa7fd8cdf9b80dbe936eb6/amd64/Dockerfile)
-	-	[`2.1.0-nanoserver`](https://github.com/nats-io/nats-docker/blob/710f0ed18645d78e97fa7fd8cdf9b80dbe936eb6/windows/nanoserver-1803/Dockerfile)
+	-	[`2.1.0-linux`](https://github.com/nats-io/nats-docker/blob/f71b553207305f7d725e3eed1329dcd8b00ca22f/2.1.0/scratch/amd64/Dockerfile)
+	-	[`2.1.0-nanoserver-1809`](https://github.com/nats-io/nats-docker/blob/f71b553207305f7d725e3eed1329dcd8b00ca22f/2.1.0/nanoserver1809/Dockerfile)
 
 # Quick reference
 
