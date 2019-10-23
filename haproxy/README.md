@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.0.7`, `2.0`, `latest`](https://github.com/docker-library/haproxy/blob/2663a97d654b3d46e930ab98fc136443f93bfe82/2.0/Dockerfile)
--	[`2.0.7-alpine`, `2.0-alpine`, `alpine`](https://github.com/docker-library/haproxy/blob/2663a97d654b3d46e930ab98fc136443f93bfe82/2.0/alpine/Dockerfile)
+-	[`2.0.8`, `2.0`, `latest`](https://github.com/docker-library/haproxy/blob/3700abeba4834a27c43b16330cbaf1b8bae565cd/2.0/Dockerfile)
+-	[`2.0.8-alpine`, `2.0-alpine`, `alpine`](https://github.com/docker-library/haproxy/blob/3700abeba4834a27c43b16330cbaf1b8bae565cd/2.0/alpine/Dockerfile)
 -	[`1.9.11`, `1.9`, `1`](https://github.com/docker-library/haproxy/blob/9dddade0c1bddeb2346ffef36b97d037c39bd5cf/1.9/Dockerfile)
 -	[`1.9.11-alpine`, `1.9-alpine`, `1-alpine`](https://github.com/docker-library/haproxy/blob/9dddade0c1bddeb2346ffef36b97d037c39bd5cf/1.9/alpine/Dockerfile)
 -	[`1.8.21`, `1.8`](https://github.com/docker-library/haproxy/blob/3dbb06aa772a093dab4b88660f8470a4f28de310/1.8/Dockerfile)
