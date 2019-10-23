@@ -16,9 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`12.0`, `12`, `latest`](https://github.com/odoo/docker/blob/b5f088de13927177263d6cbc5ebf7d39de4dcfa7/12.0/Dockerfile)
--	[`11.0`, `11`](https://github.com/odoo/docker/blob/b5f088de13927177263d6cbc5ebf7d39de4dcfa7/11.0/Dockerfile)
--	[`10.0`, `10`](https://github.com/odoo/docker/blob/b5f088de13927177263d6cbc5ebf7d39de4dcfa7/10.0/Dockerfile)
+-	[`13.0`, `13`, `latest`](https://github.com/odoo/docker/blob/ffe62bdd52f88ac85f54064e6eb02aa38f88f58d/13.0/Dockerfile)
+-	[`12.0`, `12`](https://github.com/odoo/docker/blob/ffe62bdd52f88ac85f54064e6eb02aa38f88f58d/12.0/Dockerfile)
+-	[`11.0`, `11`](https://github.com/odoo/docker/blob/ffe62bdd52f88ac85f54064e6eb02aa38f88f58d/11.0/Dockerfile)
 
 # Quick reference
 
@@ -32,7 +32,7 @@ WARNING:
 	[Odoo](https://github.com/odoo/docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/odoo/), [`arm64v8`](https://hub.docker.com/r/arm64v8/odoo/)
+	[`amd64`](https://hub.docker.com/r/amd64/odoo/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/odoo/` directory](https://github.com/docker-library/repo-info/blob/master/repos/odoo) ([history](https://github.com/docker-library/repo-info/commits/master/repos/odoo))  
