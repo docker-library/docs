@@ -16,18 +16,31 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
+(See ["What's the difference between 'Shared' and 'Simple' tags?" in the FAQ](https://github.com/docker-library/faq#whats-the-difference-between-shared-and-simple-tags).)
+
 ## Simple Tags
 
--	[`2.0.2-linux`, `linux`](https://github.com/nats-io/nats-docker/blob/1d19738cad8d4e2c654ead45c2b5cbe3b9f29c83/amd64/Dockerfile)
--	[`2.0.2-nanoserver`, `nanoserver`, `nanoserver-1803`](https://github.com/nats-io/nats-docker/blob/1d19738cad8d4e2c654ead45c2b5cbe3b9f29c83/windows/nanoserver-1803/Dockerfile)
--	[`2.0.2-nanoserver-1809`, `nanoserver-1809`](https://github.com/nats-io/nats-docker/blob/1d19738cad8d4e2c654ead45c2b5cbe3b9f29c83/windows/nanoserver-1809/Dockerfile)
--	[`2.0.2-windowsservercore`, `windowsservercore`](https://github.com/nats-io/nats-docker/blob/1d19738cad8d4e2c654ead45c2b5cbe3b9f29c83/windows/windowsservercore/Dockerfile)
+-	[`2.1.0-alpine3.10`, `2.1-alpine3.10`, `2-alpine3.10`, `alpine3.10`, `2.1.0-alpine`, `2.1-alpine`, `2-alpine`, `alpine`](https://github.com/nats-io/nats-docker/blob/5b1a290bd1b553e43186003f5130ba1b805e505d/2.1.0/alpine3.10/Dockerfile)
+-	[`2.1.0-scratch`, `2.1-scratch`, `2-scratch`, `scratch`, `2.1.0-linux`, `2.1-linux`, `2-linux`, `linux`](https://github.com/nats-io/nats-docker/blob/5b1a290bd1b553e43186003f5130ba1b805e505d/2.1.0/scratch/Dockerfile)
+-	[`2.1.0-windowsservercore-1809`, `2.1-windowsservercore-1809`, `2-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/nats-io/nats-docker/blob/5b1a290bd1b553e43186003f5130ba1b805e505d/2.1.0/windowsservercore-1809/Dockerfile)
+-	[`2.1.0-nanoserver-1809`, `2.1-nanoserver-1809`, `2-nanoserver-1809`, `nanoserver-1809`](https://github.com/nats-io/nats-docker/blob/5b1a290bd1b553e43186003f5130ba1b805e505d/2.1.0/nanoserver-1809/Dockerfile)
+-	[`2.1.0-windowsservercore-1803`, `2.1-windowsservercore-1803`, `2-windowsservercore-1803`, `windowsservercore-1803`](https://github.com/nats-io/nats-docker/blob/5b1a290bd1b553e43186003f5130ba1b805e505d/2.1.0/windowsservercore-1803/Dockerfile)
+-	[`2.1.0-nanoserver-1803`, `2.1-nanoserver-1803`, `2-nanoserver-1803`, `nanoserver-1803`](https://github.com/nats-io/nats-docker/blob/5b1a290bd1b553e43186003f5130ba1b805e505d/2.1.0/nanoserver-1803/Dockerfile)
+-	[`2.1.0-windowsservercore-ltsc2016`, `2.1-windowsservercore-ltsc2016`, `2-windowsservercore-ltsc2016`, `windowsservercore-ltsc2016`](https://github.com/nats-io/nats-docker/blob/5b1a290bd1b553e43186003f5130ba1b805e505d/2.1.0/windowsservercore-ltsc2016/Dockerfile)
 
 ## Shared Tags
 
--	`2.0.2`, `latest`:
-	-	[`2.0.2-linux`](https://github.com/nats-io/nats-docker/blob/1d19738cad8d4e2c654ead45c2b5cbe3b9f29c83/amd64/Dockerfile)
-	-	[`2.0.2-nanoserver`](https://github.com/nats-io/nats-docker/blob/1d19738cad8d4e2c654ead45c2b5cbe3b9f29c83/windows/nanoserver-1803/Dockerfile)
+-	`2.1.0`, `2.1`, `2`, `latest`:
+	-	[`2.1.0-scratch`](https://github.com/nats-io/nats-docker/blob/5b1a290bd1b553e43186003f5130ba1b805e505d/2.1.0/scratch/Dockerfile)
+	-	[`2.1.0-nanoserver-1809`](https://github.com/nats-io/nats-docker/blob/5b1a290bd1b553e43186003f5130ba1b805e505d/2.1.0/nanoserver-1809/Dockerfile)
+	-	[`2.1.0-nanoserver-1803`](https://github.com/nats-io/nats-docker/blob/5b1a290bd1b553e43186003f5130ba1b805e505d/2.1.0/nanoserver-1803/Dockerfile)
+-	`2.1.0-windowsservercore`, `2.1-windowsservercore`, `2-windowsservercore`, `windowsservercore`:
+	-	[`2.1.0-windowsservercore-1809`](https://github.com/nats-io/nats-docker/blob/5b1a290bd1b553e43186003f5130ba1b805e505d/2.1.0/windowsservercore-1809/Dockerfile)
+	-	[`2.1.0-windowsservercore-1803`](https://github.com/nats-io/nats-docker/blob/5b1a290bd1b553e43186003f5130ba1b805e505d/2.1.0/windowsservercore-1803/Dockerfile)
+	-	[`2.1.0-windowsservercore-ltsc2016`](https://github.com/nats-io/nats-docker/blob/5b1a290bd1b553e43186003f5130ba1b805e505d/2.1.0/windowsservercore-ltsc2016/Dockerfile)
+-	`2.1.0-nanoserver`, `2.1-nanoserver`, `2-nanoserver`, `nanoserver`:
+	-	[`2.1.0-nanoserver-1809`](https://github.com/nats-io/nats-docker/blob/5b1a290bd1b553e43186003f5130ba1b805e505d/2.1.0/nanoserver-1809/Dockerfile)
+	-	[`2.1.0-nanoserver-1803`](https://github.com/nats-io/nats-docker/blob/5b1a290bd1b553e43186003f5130ba1b805e505d/2.1.0/nanoserver-1803/Dockerfile)
 
 # Quick reference
 
@@ -90,11 +103,11 @@ The routing protocol has been dramatically improved and adds support for account
 # Check "docker run" for more information.
 
 $ docker run -d --name nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 nats
-[INF] Starting nats-server version 2.0.2
-[INF] Git commit [6a40503]
+[INF] Starting nats-server version 2.0.4
+[INF] Git commit [c8ca58e]
 [INF] Starting http monitor on 0.0.0.0:8222
 [INF] Listening for client connections on 0.0.0.0:4222
-[INF] Server id is NDBE6UQ7K6YSXBVWX2MJ2URFRDEQWPTFPSEN7HWJPRVUINA77P7AWAIW
+[INF] Server id is NCEZYE4WBASAAYIPSVWVLU52TXVEN52TDN3KKHWDV33PQ32A6TLBQ7EA
 [INF] Server is ready
 [INF] Listening for route connections on 0.0.0.0:6222
 
@@ -108,12 +121,12 @@ $ docker run -d --name=nats-2 --link nats-main -p 4222:4222 -p 6222:6222 -p 8222
 
 # If you want to verify the routes are connected, try this instead:
 $ docker run -d --name=nats-2 --link nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 nats -c nats-server.conf --routes=nats-route://ruser:T0pS3cr3t@nats-main:6222 -DV
-[INF] Starting nats-server version 2.0.2
-[DBG] Go build version go1.11.12
-[INF] Git commit [6a40503]
+[INF] Starting nats-server version 2.0.4
+[DBG] Go build version go1.12.8
+[INF] Git commit [c8ca58e]
 [INF] Starting http monitor on 0.0.0.0:8222
 [INF] Listening for client connections on 0.0.0.0:4222
-[INF] Server id is NDJXHD5ODU45CD3B4J7FCQTB7TKTN3IFHADKY65YPMHT2DBX45C7BL2K
+[INF] Server id is NCCJ57DJMZETVT3QIIUQR7MIU5FXCCX7QHTYRDKWNMNYIG43K3Y74J3X
 [INF] Server is ready
 [DBG] Get non local IPs for "0.0.0.0"
 [DBG]  ip=172.17.0.3
@@ -121,7 +134,7 @@ $ docker run -d --name=nats-2 --link nats-main -p 4222:4222 -p 6222:6222 -p 8222
 [DBG] Trying to connect to route on nats-main:6222
 [DBG] 172.17.0.2:6222 - rid:1 - Route connect msg sent
 [INF] 172.17.0.2:6222 - rid:1 - Route connection created
-[DBG] 172.17.0.2:6222 - rid:1 - Registering remote route "NBJHE3LV6SHP3OAFITIR7PDMYNT6J4UI66GTHTYX6N4TLIBV7EI56GNA"
+[DBG] 172.17.0.2:6222 - rid:1 - Registering remote route "NAXUH5CIXFGNRGFWSTZ2DJDJH3Y3X3LDM7RKZCELOUPCKVELMSFWECKS"
 [DBG] 172.17.0.2:6222 - rid:1 - Sent local subscriptions to route
 ```
 
@@ -214,6 +227,14 @@ The `nats` images come in many flavors, each designed for a specific use case.
 ## `nats:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+## `nats:<version>-alpine`
+
+This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+
+This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+
+To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 ## `nats:<version>-windowsservercore`
 

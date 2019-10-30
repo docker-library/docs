@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`devel-20190719`, `devel`](https://github.com/tianon/docker-bash/blob/455f78047f1e0d59170f68ff0caeebc3762437ea/devel/Dockerfile)
--	[`5.0.7`, `5.0`, `5`, `latest`](https://github.com/tianon/docker-bash/blob/3682e16bca63b20ab51745afa30156e2740fc5c6/5.0/Dockerfile)
+-	[`devel-20191009`, `devel`](https://github.com/tianon/docker-bash/blob/b17a58367aa72c0c3b9c284f7362a32388774e45/devel/Dockerfile)
+-	[`5.0.11`, `5.0`, `5`, `latest`](https://github.com/tianon/docker-bash/blob/b3f7588b0c2d28dc41d5bebbae30d21eded7d730/5.0/Dockerfile)
 -	[`4.4.23`, `4.4`, `4`](https://github.com/tianon/docker-bash/blob/3682e16bca63b20ab51745afa30156e2740fc5c6/4.4/Dockerfile)
 -	[`4.3.48`, `4.3`](https://github.com/tianon/docker-bash/blob/3682e16bca63b20ab51745afa30156e2740fc5c6/4.3/Dockerfile)
 -	[`4.2.53`, `4.2`](https://github.com/tianon/docker-bash/blob/3682e16bca63b20ab51745afa30156e2740fc5c6/4.2/Dockerfile)

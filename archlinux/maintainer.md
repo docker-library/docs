@@ -1,0 +1,1 @@
+Arch Linux trusted users [Santiago Torres-Arias](https://www.archlinux.org/people/trusted-users/#sangy) and [Christian Rebischke](https://www.archlinux.org/people/trusted-users/#shibumi) as well as Arch Linux developer [Pierre Schmitz](https://www.archlinux.org/people/developers/#pierre).

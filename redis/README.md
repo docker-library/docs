@@ -16,12 +16,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.0.5`, `5.0`, `5`, `latest`, `5.0.5-buster`, `5.0-buster`, `5-buster`, `buster`](https://github.com/docker-library/redis/blob/ede954da6de61f1d6a8572db4cd7bdf1278a2815/5.0/Dockerfile)
--	[`5.0.5-32bit`, `5.0-32bit`, `5-32bit`, `32bit`, `5.0.5-32bit-buster`, `5.0-32bit-buster`, `5-32bit-buster`, `32bit-buster`](https://github.com/docker-library/redis/blob/ede954da6de61f1d6a8572db4cd7bdf1278a2815/5.0/32bit/Dockerfile)
--	[`5.0.5-alpine`, `5.0-alpine`, `5-alpine`, `alpine`, `5.0.5-alpine3.10`, `5.0-alpine3.10`, `5-alpine3.10`, `alpine3.10`](https://github.com/docker-library/redis/blob/a767b4701be8de74f252e204e3eadb39c8e38583/5.0/alpine/Dockerfile)
--	[`4.0.14`, `4.0`, `4`, `4.0.14-buster`, `4.0-buster`, `4-buster`](https://github.com/docker-library/redis/blob/ede954da6de61f1d6a8572db4cd7bdf1278a2815/4.0/Dockerfile)
--	[`4.0.14-32bit`, `4.0-32bit`, `4-32bit`, `4.0.14-32bit-buster`, `4.0-32bit-buster`, `4-32bit-buster`](https://github.com/docker-library/redis/blob/ede954da6de61f1d6a8572db4cd7bdf1278a2815/4.0/32bit/Dockerfile)
--	[`4.0.14-alpine`, `4.0-alpine`, `4-alpine`, `4.0.14-alpine3.10`, `4.0-alpine3.10`, `4-alpine3.10`](https://github.com/docker-library/redis/blob/a767b4701be8de74f252e204e3eadb39c8e38583/4.0/alpine/Dockerfile)
+-	[`5.0.6`, `5.0`, `5`, `latest`, `5.0.6-buster`, `5.0-buster`, `5-buster`, `buster`](https://github.com/docker-library/redis/blob/6ec0ad5628df2404509f776e9c70fbecf5364c10/5.0/Dockerfile)
+-	[`5.0.6-32bit`, `5.0-32bit`, `5-32bit`, `32bit`, `5.0.6-32bit-buster`, `5.0-32bit-buster`, `5-32bit-buster`, `32bit-buster`](https://github.com/docker-library/redis/blob/6ec0ad5628df2404509f776e9c70fbecf5364c10/5.0/32bit/Dockerfile)
+-	[`5.0.6-alpine`, `5.0-alpine`, `5-alpine`, `alpine`, `5.0.6-alpine3.10`, `5.0-alpine3.10`, `5-alpine3.10`, `alpine3.10`](https://github.com/docker-library/redis/blob/6ec0ad5628df2404509f776e9c70fbecf5364c10/5.0/alpine/Dockerfile)
+-	[`4.0.14`, `4.0`, `4`, `4.0.14-buster`, `4.0-buster`, `4-buster`](https://github.com/docker-library/redis/blob/0b2910f292fa6ac32318cb2acc84355b11aa8a7a/4.0/Dockerfile)
+-	[`4.0.14-32bit`, `4.0-32bit`, `4-32bit`, `4.0.14-32bit-buster`, `4.0-32bit-buster`, `4-32bit-buster`](https://github.com/docker-library/redis/blob/0b2910f292fa6ac32318cb2acc84355b11aa8a7a/4.0/32bit/Dockerfile)
+-	[`4.0.14-alpine`, `4.0-alpine`, `4-alpine`, `4.0.14-alpine3.10`, `4.0-alpine3.10`, `4-alpine3.10`](https://github.com/docker-library/redis/blob/0b2910f292fa6ac32318cb2acc84355b11aa8a7a/4.0/alpine/Dockerfile)
 
 # Quick reference
 
@@ -55,6 +55,14 @@ Redis is an open-source, networked, in-memory, key-value data store with optiona
 > [wikipedia.org/wiki/Redis](https://en.wikipedia.org/wiki/Redis)
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/01c12653951b2fe592c1f93a13b4e289ada0e3a1/redis/logo.png)
+
+# Security
+
+For the ease of accessing Redis from other containers via Docker networking, the "Protected mode" is turned off by default. This means that if you expose the port outside of your host (e.g., via `-p` on `docker run`), it will be open without a password to anyone. It is **highly** recommended to set a password (by supplying a config file) if you plan on exposing your Redis instance to the internet. For further information, see the following links about Redis security:
+
+-	[Redis documentation on security](https://redis.io/topics/security)
+-	[Protected mode](https://redis.io/topics/security#protected-mode)
+-	[A few things about Redis security by antirez](http://antirez.com/news/96)
 
 # How to use this image
 
@@ -118,7 +126,7 @@ The `redis` images come in many flavors, each designed for a specific use case.
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like buster in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on.
+Some of these tags may have names like buster in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 ## `redis:<version>-alpine`
 

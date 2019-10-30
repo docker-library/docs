@@ -16,12 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.7-7.1.1`, `2.7-7.1`, `2.7-7`, `2.7`, `2-7.1.1`, `2-7.1`, `2-7`, `2`, `2.7-7.1.1-jessie`, `2.7-7.1-jessie`, `2.7-7-jessie`, `2.7-jessie`, `2-7.1.1-jessie`, `2-7.1-jessie`, `2-7-jessie`, `2-jessie`](https://github.com/docker-library/pypy/blob/72fc82320f97281991a70d40c2c5d8b28793de6e/2.7/Dockerfile)
--	[`2.7-7.1.1-slim`, `2.7-7.1-slim`, `2.7-7-slim`, `2.7-slim`, `2-7.1.1-slim`, `2-7.1-slim`, `2-7-slim`, `2-slim`, `2.7-7.1.1-slim-jessie`, `2.7-7.1-slim-jessie`, `2.7-7-slim-jessie`, `2.7-slim-jessie`, `2-7.1.1-slim-jessie`, `2-7.1-slim-jessie`, `2-7-slim-jessie`, `2-slim-jessie`](https://github.com/docker-library/pypy/blob/72fc82320f97281991a70d40c2c5d8b28793de6e/2.7/slim/Dockerfile)
--	[`3.5-7.0.0`, `3.5-7.0`, `3.5-7`, `3.5`, `3-7.0.0`, `3-7.0`, `3-7`, `3`, `latest`, `3.5-7.0.0-stretch`, `3.5-7.0-stretch`, `3.5-7-stretch`, `3.5-stretch`, `3-7.0.0-stretch`, `3-7.0-stretch`, `3-7-stretch`, `3-stretch`, `stretch`](https://github.com/docker-library/pypy/blob/0d32ead1cc3481afd1e6c5786a973a35ad9c5494/3.5/Dockerfile)
--	[`3.5-7.0.0-slim`, `3.5-7.0-slim`, `3.5-7-slim`, `3.5-slim`, `3-7.0.0-slim`, `3-7.0-slim`, `3-7-slim`, `3-slim`, `slim`, `3.5-7.0.0-slim-stretch`, `3.5-7.0-slim-stretch`, `3.5-7-slim-stretch`, `3.5-slim-stretch`, `3-7.0.0-slim-stretch`, `3-7.0-slim-stretch`, `3-7-slim-stretch`, `3-slim-stretch`, `slim-stretch`](https://github.com/docker-library/pypy/blob/0d32ead1cc3481afd1e6c5786a973a35ad9c5494/3.5/slim/Dockerfile)
--	[`3.6-7.1.1`, `3.6-7.1`, `3.6-7`, `3.6`, `3.6-7.1.1-stretch`, `3.6-7.1-stretch`, `3.6-7-stretch`, `3.6-stretch`](https://github.com/docker-library/pypy/blob/72fc82320f97281991a70d40c2c5d8b28793de6e/3.6/Dockerfile)
--	[`3.6-7.1.1-slim`, `3.6-7.1-slim`, `3.6-7-slim`, `3.6-slim`, `3.6-7.1.1-slim-stretch`, `3.6-7.1-slim-stretch`, `3.6-7-slim-stretch`, `3.6-slim-stretch`](https://github.com/docker-library/pypy/blob/72fc82320f97281991a70d40c2c5d8b28793de6e/3.6/slim/Dockerfile)
+-	[`2.7-7.2.0`, `2.7-7.2`, `2.7-7`, `2.7`, `2-7.2.0`, `2-7.2`, `2-7`, `2`, `2.7-7.2.0-jessie`, `2.7-7.2-jessie`, `2.7-7-jessie`, `2.7-jessie`, `2-7.2.0-jessie`, `2-7.2-jessie`, `2-7-jessie`, `2-jessie`](https://github.com/docker-library/pypy/blob/d1be8318bbc3d1fe881ba87631901b9d9d68396b/2.7/Dockerfile)
+-	[`2.7-7.2.0-slim`, `2.7-7.2-slim`, `2.7-7-slim`, `2.7-slim`, `2-7.2.0-slim`, `2-7.2-slim`, `2-7-slim`, `2-slim`, `2.7-7.2.0-slim-jessie`, `2.7-7.2-slim-jessie`, `2.7-7-slim-jessie`, `2.7-slim-jessie`, `2-7.2.0-slim-jessie`, `2-7.2-slim-jessie`, `2-7-slim-jessie`, `2-slim-jessie`](https://github.com/docker-library/pypy/blob/d1be8318bbc3d1fe881ba87631901b9d9d68396b/2.7/slim/Dockerfile)
+-	[`3.6-7.2.0`, `3.6-7.2`, `3.6-7`, `3.6`, `3-7.2.0`, `3-7.2`, `3-7`, `3`, `latest`, `3.6-7.2.0-stretch`, `3.6-7.2-stretch`, `3.6-7-stretch`, `3.6-stretch`, `3-7.2.0-stretch`, `3-7.2-stretch`, `3-7-stretch`, `3-stretch`, `stretch`](https://github.com/docker-library/pypy/blob/d1be8318bbc3d1fe881ba87631901b9d9d68396b/3.6/Dockerfile)
+-	[`3.6-7.2.0-slim`, `3.6-7.2-slim`, `3.6-7-slim`, `3.6-slim`, `3-7.2.0-slim`, `3-7.2-slim`, `3-7-slim`, `3-slim`, `slim`, `3.6-7.2.0-slim-stretch`, `3.6-7.2-slim-stretch`, `3.6-7-slim-stretch`, `3.6-slim-stretch`, `3-7.2.0-slim-stretch`, `3-7.2-slim-stretch`, `3-7-slim-stretch`, `3-slim-stretch`, `slim-stretch`](https://github.com/docker-library/pypy/blob/d1be8318bbc3d1fe881ba87631901b9d9d68396b/3.6/slim/Dockerfile)
 
 # Quick reference
 
@@ -35,7 +33,7 @@ WARNING:
 	[the Docker Community](https://github.com/docker-library/pypy)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/pypy/), [`i386`](https://hub.docker.com/r/i386/pypy/), [`ppc64le`](https://hub.docker.com/r/ppc64le/pypy/), [`s390x`](https://hub.docker.com/r/s390x/pypy/)
+	[`amd64`](https://hub.docker.com/r/amd64/pypy/), [`arm64v8`](https://hub.docker.com/r/arm64v8/pypy/), [`i386`](https://hub.docker.com/r/i386/pypy/), [`ppc64le`](https://hub.docker.com/r/ppc64le/pypy/), [`s390x`](https://hub.docker.com/r/s390x/pypy/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/pypy/` directory](https://github.com/docker-library/repo-info/blob/master/repos/pypy) ([history](https://github.com/docker-library/repo-info/commits/master/repos/pypy))  
@@ -119,9 +117,9 @@ The `pypy` images come in many flavors, each designed for a specific use case.
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-This tag is based off of [`buildpack-deps`](https://hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of Docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
+Some of these tags may have names like jessie or stretch in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
-Some of these tags may have names like jessie or stretch in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on.
+This tag is based off of [`buildpack-deps`](https://hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of Docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
 
 ## `pypy:<version>-slim`
 

@@ -16,18 +16,18 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`12-beta2`, `12`](https://github.com/docker-library/postgres/blob/87b15b6c65ba985ac958e7b35ba787422113066e/12/Dockerfile)
--	[`12-beta2-alpine`, `12-alpine`](https://github.com/docker-library/postgres/blob/ba24350aa02996f75cf5b44eea0af082775cc8ec/12/alpine/Dockerfile)
--	[`11.4`, `11`, `latest`](https://github.com/docker-library/postgres/blob/87b15b6c65ba985ac958e7b35ba787422113066e/11/Dockerfile)
--	[`11.4-alpine`, `11-alpine`, `alpine`](https://github.com/docker-library/postgres/blob/ba24350aa02996f75cf5b44eea0af082775cc8ec/11/alpine/Dockerfile)
--	[`10.9`, `10`](https://github.com/docker-library/postgres/blob/87b15b6c65ba985ac958e7b35ba787422113066e/10/Dockerfile)
--	[`10.9-alpine`, `10-alpine`](https://github.com/docker-library/postgres/blob/ba24350aa02996f75cf5b44eea0af082775cc8ec/10/alpine/Dockerfile)
--	[`9.6.14`, `9.6`, `9`](https://github.com/docker-library/postgres/blob/87b15b6c65ba985ac958e7b35ba787422113066e/9.6/Dockerfile)
--	[`9.6.14-alpine`, `9.6-alpine`, `9-alpine`](https://github.com/docker-library/postgres/blob/ba24350aa02996f75cf5b44eea0af082775cc8ec/9.6/alpine/Dockerfile)
--	[`9.5.18`, `9.5`](https://github.com/docker-library/postgres/blob/87b15b6c65ba985ac958e7b35ba787422113066e/9.5/Dockerfile)
--	[`9.5.18-alpine`, `9.5-alpine`](https://github.com/docker-library/postgres/blob/ba24350aa02996f75cf5b44eea0af082775cc8ec/9.5/alpine/Dockerfile)
--	[`9.4.23`, `9.4`](https://github.com/docker-library/postgres/blob/87b15b6c65ba985ac958e7b35ba787422113066e/9.4/Dockerfile)
--	[`9.4.23-alpine`, `9.4-alpine`](https://github.com/docker-library/postgres/blob/ba24350aa02996f75cf5b44eea0af082775cc8ec/9.4/alpine/Dockerfile)
+-	[`12.0`, `12`, `latest`](https://github.com/docker-library/postgres/blob/a8613f4cda3e932245f09c4d0f6733462b14b582/12/Dockerfile)
+-	[`12.0-alpine`, `12-alpine`, `alpine`](https://github.com/docker-library/postgres/blob/f08b03f05b690748660ff738975a104c19fc5500/12/alpine/Dockerfile)
+-	[`11.5`, `11`](https://github.com/docker-library/postgres/blob/f19a74ec301fe755b70a822f905c8f537f67bc9a/11/Dockerfile)
+-	[`11.5-alpine`, `11-alpine`](https://github.com/docker-library/postgres/blob/0a66d53fface5ccc8274f99712ba2f382a1caf42/11/alpine/Dockerfile)
+-	[`10.10`, `10`](https://github.com/docker-library/postgres/blob/ff832cbf1e9ffe150f66f00a0837d5b59083fec9/10/Dockerfile)
+-	[`10.10-alpine`, `10-alpine`](https://github.com/docker-library/postgres/blob/cad3d8b1f7ee31f3592c2911e014e81b9b2a1c8d/10/alpine/Dockerfile)
+-	[`9.6.15`, `9.6`, `9`](https://github.com/docker-library/postgres/blob/3610f1e45365fb09c0fea29fa387b35f0efdb3a1/9.6/Dockerfile)
+-	[`9.6.15-alpine`, `9.6-alpine`, `9-alpine`](https://github.com/docker-library/postgres/blob/c552b2bcd8dd5ef822463343b461fe0e31445b9d/9.6/alpine/Dockerfile)
+-	[`9.5.19`, `9.5`](https://github.com/docker-library/postgres/blob/2803c9e12ac659335a394d5712e5da8cd10bdf69/9.5/Dockerfile)
+-	[`9.5.19-alpine`, `9.5-alpine`](https://github.com/docker-library/postgres/blob/db452338a99764f0141aae60f7267a58f665e6b7/9.5/alpine/Dockerfile)
+-	[`9.4.24`, `9.4`](https://github.com/docker-library/postgres/blob/dff03e96967d204b4df297e03a90086506600590/9.4/Dockerfile)
+-	[`9.4.24-alpine`, `9.4-alpine`](https://github.com/docker-library/postgres/blob/4b652bf95baee9cd7ef31300a4938ad72d09ad88/9.4/alpine/Dockerfile)
 
 # Quick reference
 
@@ -284,7 +284,7 @@ The three easiest ways to get around this:
 
 If there is no database when `postgres` starts in a container, then `postgres` will create the default database for you. While this is the expected behavior of `postgres`, this means that it will not accept incoming connections during that time. This may cause issues when using automation tools, such as `docker-compose`, that start several containers simultaneously.
 
-Also note that the default `/dev/shm` size for containers is 64MB. If the shared memory is exhausted you will encounter `ERROR:  could not resize shared memory segment . . . : No space left on device`. You will want to pass [`--shm-size=256MB`](https://docs.docker.com/engine/reference/run/#runtime-constraints-on-resources) for example to `docker run`, or alternatively in [`docker-compose`](https://docs.docker.com/compose/compose-file/#shm_size)
+Also note that the default `/dev/shm` size for containers is 64MB. If the shared memory is exhausted you will encounter `ERROR:  could not resize shared memory segment . . . : No space left on device`. You will want to pass [`--shm-size=256MB`](https://docs.docker.com/engine/reference/run/#runtime-constraints-on-resources) for example to `docker run`, or alternatively in [`docker-compose`](https://docs.docker.com/compose/compose-file/#domainname-hostname-ipc-mac_address-privileged-read_only-shm_size-stdin_open-tty-user-working_dir)
 
 See ["IPVS connection timeout issue" in the Docker Success Center](https://success.docker.com/article/ipvs-connection-timeout-issue) for details about IPVS connection timeouts which will affect long-running idle connections to PostgreSQL in Swarm Mode using overlay networks.
 
