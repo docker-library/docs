@@ -16,7 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `20191006`](https://github.com/archlinux/archlinux-docker/blob/ed18f615efd16f3a39b2c3eeed79a1f0c6a1dfca/Dockerfile)
+-	[`latest`, `20191105`](https://github.com/archlinux/archlinux-docker/blob/15a9a3997aa8e571a8ce2a019b65b5eb698919ec/Dockerfile)
+-	[`20191006`](https://github.com/archlinux/archlinux-docker/blob/ed18f615efd16f3a39b2c3eeed79a1f0c6a1dfca/Dockerfile)
 
 # Quick reference
 
