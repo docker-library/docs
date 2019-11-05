@@ -41,12 +41,12 @@ WARNING:
 -	[`3.6.9-slim-stretch`, `3.6-slim-stretch`](https://github.com/docker-library/python/blob/22b2cebaaee699c43f4eb70c732be92ad4bf098e/3.6/stretch/slim/Dockerfile)
 -	[`3.6.9-alpine3.10`, `3.6-alpine3.10`, `3.6.9-alpine`, `3.6-alpine`](https://github.com/docker-library/python/blob/22b2cebaaee699c43f4eb70c732be92ad4bf098e/3.6/alpine3.10/Dockerfile)
 -	[`3.6.9-alpine3.9`, `3.6-alpine3.9`](https://github.com/docker-library/python/blob/22b2cebaaee699c43f4eb70c732be92ad4bf098e/3.6/alpine3.9/Dockerfile)
--	[`3.5.8-buster`, `3.5-buster`](https://github.com/docker-library/python/blob/a808d352739324866dc0d0752d8e859f84a9fdf9/3.5/buster/Dockerfile)
--	[`3.5.8-slim-buster`, `3.5-slim-buster`, `3.5.8-slim`, `3.5-slim`](https://github.com/docker-library/python/blob/a808d352739324866dc0d0752d8e859f84a9fdf9/3.5/buster/slim/Dockerfile)
--	[`3.5.8-stretch`, `3.5-stretch`](https://github.com/docker-library/python/blob/a808d352739324866dc0d0752d8e859f84a9fdf9/3.5/stretch/Dockerfile)
--	[`3.5.8-slim-stretch`, `3.5-slim-stretch`](https://github.com/docker-library/python/blob/a808d352739324866dc0d0752d8e859f84a9fdf9/3.5/stretch/slim/Dockerfile)
--	[`3.5.8-alpine3.10`, `3.5-alpine3.10`, `3.5.8-alpine`, `3.5-alpine`](https://github.com/docker-library/python/blob/a808d352739324866dc0d0752d8e859f84a9fdf9/3.5/alpine3.10/Dockerfile)
--	[`3.5.8-alpine3.9`, `3.5-alpine3.9`](https://github.com/docker-library/python/blob/a808d352739324866dc0d0752d8e859f84a9fdf9/3.5/alpine3.9/Dockerfile)
+-	[`3.5.9-buster`, `3.5-buster`](https://github.com/docker-library/python/blob/970a23ea618292ca2132883a95c1ed02b8564d5e/3.5/buster/Dockerfile)
+-	[`3.5.9-slim-buster`, `3.5-slim-buster`, `3.5.9-slim`, `3.5-slim`](https://github.com/docker-library/python/blob/970a23ea618292ca2132883a95c1ed02b8564d5e/3.5/buster/slim/Dockerfile)
+-	[`3.5.9-stretch`, `3.5-stretch`](https://github.com/docker-library/python/blob/970a23ea618292ca2132883a95c1ed02b8564d5e/3.5/stretch/Dockerfile)
+-	[`3.5.9-slim-stretch`, `3.5-slim-stretch`](https://github.com/docker-library/python/blob/970a23ea618292ca2132883a95c1ed02b8564d5e/3.5/stretch/slim/Dockerfile)
+-	[`3.5.9-alpine3.10`, `3.5-alpine3.10`, `3.5.9-alpine`, `3.5-alpine`](https://github.com/docker-library/python/blob/970a23ea618292ca2132883a95c1ed02b8564d5e/3.5/alpine3.10/Dockerfile)
+-	[`3.5.9-alpine3.9`, `3.5-alpine3.9`](https://github.com/docker-library/python/blob/970a23ea618292ca2132883a95c1ed02b8564d5e/3.5/alpine3.9/Dockerfile)
 -	[`2.7.17-buster`, `2.7-buster`, `2-buster`](https://github.com/docker-library/python/blob/c4414a2fdbb7fa1e752f27565e41c7032b673a03/2.7/buster/Dockerfile)
 -	[`2.7.17-slim-buster`, `2.7-slim-buster`, `2-slim-buster`, `2.7.17-slim`, `2.7-slim`, `2-slim`](https://github.com/docker-library/python/blob/c4414a2fdbb7fa1e752f27565e41c7032b673a03/2.7/buster/slim/Dockerfile)
 -	[`2.7.17-stretch`, `2.7-stretch`, `2-stretch`](https://github.com/docker-library/python/blob/c4414a2fdbb7fa1e752f27565e41c7032b673a03/2.7/stretch/Dockerfile)
@@ -79,8 +79,8 @@ WARNING:
 	-	[`3.7.5-windowsservercore-1809`](https://github.com/docker-library/python/blob/78ae92d7a478ecb98dc0db9ac3acf2d23bfd1bdb/3.7/windows/windowsservercore-1809/Dockerfile)
 -	`3.6.9`, `3.6`:
 	-	[`3.6.9-buster`](https://github.com/docker-library/python/blob/22b2cebaaee699c43f4eb70c732be92ad4bf098e/3.6/buster/Dockerfile)
--	`3.5.8`, `3.5`:
-	-	[`3.5.8-buster`](https://github.com/docker-library/python/blob/a808d352739324866dc0d0752d8e859f84a9fdf9/3.5/buster/Dockerfile)
+-	`3.5.9`, `3.5`:
+	-	[`3.5.9-buster`](https://github.com/docker-library/python/blob/970a23ea618292ca2132883a95c1ed02b8564d5e/3.5/buster/Dockerfile)
 -	`2.7.17`, `2.7`, `2`:
 	-	[`2.7.17-buster`](https://github.com/docker-library/python/blob/c4414a2fdbb7fa1e752f27565e41c7032b673a03/2.7/buster/Dockerfile)
 	-	[`2.7.17-windowsservercore-ltsc2016`](https://github.com/docker-library/python/blob/c4414a2fdbb7fa1e752f27565e41c7032b673a03/2.7/windows/windowsservercore-ltsc2016/Dockerfile)
