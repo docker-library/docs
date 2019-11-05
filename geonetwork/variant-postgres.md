@@ -35,12 +35,13 @@ And then you could launch geonetwork, making sure you join the same network, and
 ```console
 $ docker run --name geonetwork -d -p 8080:8080 --network=mynet -e POSTGRES_DB_HOST=some-postgres -e POSTGRES_DB_PORT=5432 -e POSTGRES_DB_USERNAME=postgres -e POSTGRES_DB_PASSWORD=mysecretpassword  -e POSTGRES_DB_NAME=mydbname geonetwork:postgres
 ```
+
 #### Configuration environment variables
 
 These are some environments variables that can be set to configure the database connection:
 
-* `POSTGRES_DB_HOST`: database host name.
-* `POSTGRES_DB_PORT`: port where database server is listening (by default `5432`).
-* `POSTGRES_DB_NAME`: name of the database. If it doesn't exists the container will try to create it.
-* `POSTGRES_DB_USERNAME`: username.
-* `POSTGRES_DB_PASSWORD`: password.
+-	`POSTGRES_DB_HOST`: database host name.
+-	`POSTGRES_DB_PORT`: port where database server is listening (by default `5432`).
+-	`POSTGRES_DB_NAME`: name of the database. If it doesn't exist the container will try to create it.
+-	`POSTGRES_DB_USERNAME`: username.
+-	`POSTGRES_DB_PASSWORD`: password.
