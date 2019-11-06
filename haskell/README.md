@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.8.1`, `8.8`, `8`, `latest`](https://github.com/freebroccolo/docker-haskell/blob/aa517c24c51bbd54da5805517acd12120a9340ab/8.8/Dockerfile)
--	[`8.6.5`, `8.6`](https://github.com/freebroccolo/docker-haskell/blob/aa517c24c51bbd54da5805517acd12120a9340ab/8.6/Dockerfile)
+-	[`8.8.1`, `8.8`, `8`, `latest`](https://github.com/haskell/docker-haskell/blob/aa517c24c51bbd54da5805517acd12120a9340ab/8.8/Dockerfile)
+-	[`8.6.5`, `8.6`](https://github.com/haskell/docker-haskell/blob/aa517c24c51bbd54da5805517acd12120a9340ab/8.6/Dockerfile)
 
 # Quick reference
 
