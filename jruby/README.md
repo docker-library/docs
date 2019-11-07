@@ -16,9 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `9`, `9.2`, `9.2.8`, `9.2-jre`, `9.2.8-jre`, `9.2.8.0`, `9.2.8.0-jre`](https://github.com/cpuguy83/docker-jruby/blob/df880c1c46b8cfb0c5df25b69b758be4bbcd6297/9000/jre/Dockerfile)
--	[`9-jdk`, `9.2-jdk`, `9.2.8-jdk`, `9.2.8.0-jdk`](https://github.com/cpuguy83/docker-jruby/blob/df880c1c46b8cfb0c5df25b69b758be4bbcd6297/9000/jdk/Dockerfile)
--	[`9-onbuild`, `9.2-onbuild`, `9.2.7-onbuild`, `9.2.7.0-onbuild`](https://github.com/cpuguy83/docker-jruby/blob/df880c1c46b8cfb0c5df25b69b758be4bbcd6297/9000/onbuild/Dockerfile)
+-	[`latest`, `9`, `9.2`, `9.2.9`, `9.2-jre`, `9.2.9-jre`, `9.2.9.0`, `9.2.9.0-jre`](https://github.com/cpuguy83/docker-jruby/blob/4f090791f66566bb1954b0d124f109505e748fc5/9000/jre/Dockerfile)
+-	[`9-jdk`, `9.2-jdk`, `9.2.9-jdk`, `9.2.9.0-jdk`](https://github.com/cpuguy83/docker-jruby/blob/4f090791f66566bb1954b0d124f109505e748fc5/9000/jdk/Dockerfile)
+-	[`9-onbuild`, `9.2-onbuild`, `9.2.9-onbuild`, `9.2.9.0-onbuild`](https://github.com/cpuguy83/docker-jruby/blob/4f090791f66566bb1954b0d124f109505e748fc5/9000/onbuild/Dockerfile)
 -	[`9.1`, `9.1.17`, `9.1.17.0`, `9.1-jre`, `9.1.17-jre`, `9.1.17.0-jre`](https://github.com/cpuguy83/docker-jruby/blob/8bc3fe27670a851953345182fe12f14f5e708383/9000/jre/Dockerfile)
 -	[`9.1-jdk`, `9.1.17-jdk`, `9.1.17.0-jdk`](https://github.com/cpuguy83/docker-jruby/blob/8bc3fe27670a851953345182fe12f14f5e708383/9000/jdk/Dockerfile)
 
