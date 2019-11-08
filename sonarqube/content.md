@@ -98,7 +98,7 @@ Follow these steps for your first installation:
 	$ docker run -d --name sonarqube \
 	    -p 9000:9000 \
 	    -e sonar.jdbc.username=sonar \
-        -e sonar.jdbc.password=sonar \
+	    -e sonar.jdbc.password=sonar \
 	    -v sonarqube_conf:/opt/sonarqube/conf \
 	    -v sonarqube_extensions:/opt/sonarqube/extensions \
 	    -v sonarqube_logs:/opt/sonarqube/logs \
