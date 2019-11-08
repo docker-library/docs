@@ -16,13 +16,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.2.0`, `5.2`, `5`, `latest`](https://github.com/plone/plone.docker/blob/163708ce4228e162647a3666937a86b72c8c0fc6/5.2/5.2.0/debian/Dockerfile)
--	[`5.2.0-alpine`, `5.2-alpine`, `5-alpine`, `alpine`](https://github.com/plone/plone.docker/blob/163708ce4228e162647a3666937a86b72c8c0fc6/5.2/5.2.0/alpine/Dockerfile)
--	[`5.2.0-python2`, `5.2-python2`, `5-python2`, `python2`](https://github.com/plone/plone.docker/blob/163708ce4228e162647a3666937a86b72c8c0fc6/5.2/5.2.0/python2/Dockerfile)
--	[`5.1.6`, `5.1`](https://github.com/plone/plone.docker/blob/163708ce4228e162647a3666937a86b72c8c0fc6/5.1/5.1.6/debian/Dockerfile)
--	[`5.1.6-alpine`, `5.1-alpine`](https://github.com/plone/plone.docker/blob/163708ce4228e162647a3666937a86b72c8c0fc6/5.1/5.1.6/alpine/Dockerfile)
--	[`4.3.19`, `4.3`, `4`](https://github.com/plone/plone.docker/blob/163708ce4228e162647a3666937a86b72c8c0fc6/4.3/4.3.19/debian/Dockerfile)
--	[`4.3.19-alpine`, `4.3-alpine`, `4-alpine`](https://github.com/plone/plone.docker/blob/163708ce4228e162647a3666937a86b72c8c0fc6/4.3/4.3.19/alpine/Dockerfile)
+-	[`5.2.0`, `5.2`, `5`, `latest`](https://github.com/plone/plone.docker/blob/86b60961d1c0610f427477f579b8754e7a511936/5.2/5.2.0/debian/Dockerfile)
+-	[`5.2.0-alpine`, `5.2-alpine`, `5-alpine`, `alpine`](https://github.com/plone/plone.docker/blob/86b60961d1c0610f427477f579b8754e7a511936/5.2/5.2.0/alpine/Dockerfile)
+-	[`5.2.0-python2`, `5.2-python2`, `5-python2`, `python2`](https://github.com/plone/plone.docker/blob/86b60961d1c0610f427477f579b8754e7a511936/5.2/5.2.0/python2/Dockerfile)
+-	[`5.1.6`, `5.1`](https://github.com/plone/plone.docker/blob/86b60961d1c0610f427477f579b8754e7a511936/5.1/5.1.6/debian/Dockerfile)
+-	[`5.1.6-alpine`, `5.1-alpine`](https://github.com/plone/plone.docker/blob/86b60961d1c0610f427477f579b8754e7a511936/5.1/5.1.6/alpine/Dockerfile)
+-	[`4.3.19`, `4.3`, `4`](https://github.com/plone/plone.docker/blob/86b60961d1c0610f427477f579b8754e7a511936/4.3/4.3.19/debian/Dockerfile)
+-	[`4.3.19-alpine`, `4.3-alpine`, `4-alpine`](https://github.com/plone/plone.docker/blob/86b60961d1c0610f427477f579b8754e7a511936/4.3/4.3.19/alpine/Dockerfile)
 
 # Quick reference
 
