@@ -71,7 +71,7 @@ The images contain the SonarQube installation at `/opt/sonarqube`. You need to b
 
 Follow these steps for your first installation:
 
-1.	Create volumes `sonarqube_conf`, `sonarqube_data`, `sonarqube_logs` and `sonarqube_extensions` and start the image with the following command. This will populate all the folders (copying default plugins, create the elasticsearch data folder, create the sonar.properties configuration file). Watch the logs, and once the container is properly started you can force-exit (ctrl+c) and proceed to the next step.
+1.	Create volumes `sonarqube_conf`, `sonarqube_data`, `sonarqube_logs` and `sonarqube_extensions` and start the image with the following command. This will populate all the volumes (copying default plugins, create the elasticsearch data folder, create the sonar.properties configuration file). Watch the logs, and once the container is properly started you can force-exit (ctrl+c) and proceed to the next step.
 
 	```console
 	$ docker run --rm \
