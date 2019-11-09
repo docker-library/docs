@@ -71,19 +71,20 @@ The Plone image uses several environment variable that allow to specify a more s
 Run Plone and install two addons (eea.facetednavigation and collective.easyform)
 
 ```console
-$ docker run -p 8080:8080 -e SITE="mysite" -e ADDONS="eea.facetednavigation collective.easyform" plone
+$ docker run -p 8080:8080 -e SITE="mysite" -e ADDONS="eea.facetednavigation collective.easyform" %%IMAGE%%
 ```
 
 To use specific add-ons versions:
 
 ```console
- -e ADDONS="eea.facetednavigation collective.easyform" -e VERSIONS="eea.facetednavigation=13.3 collective.easyform=2.1.0"
+ -e ADDONS="eea.facetednavigation collective.easyform" \
+ -e VERSIONS="eea.facetednavigation=13.3 collective.easyform=2.1.0"
 ```
 
 RestAPI:
 
 ```console
-$ docker run -p 8080:8080 -e SITE=plone plone
+$ docker run -p 8080:8080 -e SITE=plone %%IMAGE%%
 
 $ curl -H 'Accept: application/json' http://localhost:8080/plone
 ```
