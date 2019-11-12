@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`19.03.5-beta2`, `19.03-rc`, `rc`, `test`](https://github.com/docker-library/docker/blob/b3cd7c227ec0d1713229a74547628afeb27c2456/19.03-rc/Dockerfile)
--	[`19.03.5-beta2-dind`, `19.03-rc-dind`, `rc-dind`, `test-dind`](https://github.com/docker-library/docker/blob/92d278e671f32a9ee4a3c0668e46a41f4a3b74b0/19.03-rc/dind/Dockerfile)
--	[`19.03.5-beta2-dind-rootless`, `19.03-rc-dind-rootless`, `rc-dind-rootless`, `test-dind-rootless`](https://github.com/docker-library/docker/blob/c01ffa41486f70c34f020c769bc5bddf106367ea/19.03-rc/dind-rootless/Dockerfile)
--	[`19.03.5-beta2-git`, `19.03-rc-git`, `rc-git`, `test-git`](https://github.com/docker-library/docker/blob/98ffef81ebfa7601a9ed2f0bf56d78f426bf253c/19.03-rc/git/Dockerfile)
+-	[`19.03.5-rc1`, `19.03-rc`, `rc`, `test`](https://github.com/docker-library/docker/blob/5962a31de0ccebb93826e621dd9844daaae3d3a0/19.03-rc/Dockerfile)
+-	[`19.03.5-rc1-dind`, `19.03-rc-dind`, `rc-dind`, `test-dind`](https://github.com/docker-library/docker/blob/92d278e671f32a9ee4a3c0668e46a41f4a3b74b0/19.03-rc/dind/Dockerfile)
+-	[`19.03.5-rc1-dind-rootless`, `19.03-rc-dind-rootless`, `rc-dind-rootless`, `test-dind-rootless`](https://github.com/docker-library/docker/blob/c01ffa41486f70c34f020c769bc5bddf106367ea/19.03-rc/dind-rootless/Dockerfile)
+-	[`19.03.5-rc1-git`, `19.03-rc-git`, `rc-git`, `test-git`](https://github.com/docker-library/docker/blob/98ffef81ebfa7601a9ed2f0bf56d78f426bf253c/19.03-rc/git/Dockerfile)
 -	[`19.03.4`, `19.03`, `19`, `stable`, `latest`](https://github.com/docker-library/docker/blob/4dd3f3fe1f263ea74cdc8bed6091008cf62ab751/19.03/Dockerfile)
 -	[`19.03.4-dind`, `19.03-dind`, `19-dind`, `stable-dind`, `dind`](https://github.com/docker-library/docker/blob/92d278e671f32a9ee4a3c0668e46a41f4a3b74b0/19.03/dind/Dockerfile)
 -	[`19.03.4-dind-rootless`, `19.03-dind-rootless`, `19-dind-rootless`, `stable-dind-rootless`, `dind-rootless`](https://github.com/docker-library/docker/blob/c01ffa41486f70c34f020c769bc5bddf106367ea/19.03/dind-rootless/Dockerfile)
