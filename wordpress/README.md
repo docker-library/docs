@@ -25,9 +25,9 @@ WARNING:
 -	[`5.2.4-apache`, `5.2-apache`, `5-apache`, `apache`, `5.2.4`, `5.2`, `5`, `latest`, `5.2.4-php7.3-apache`, `5.2-php7.3-apache`, `5-php7.3-apache`, `php7.3-apache`, `5.2.4-php7.3`, `5.2-php7.3`, `5-php7.3`, `php7.3`](https://github.com/docker-library/wordpress/blob/41af7e24571774b8016b930bfb767c39552d0a02/php7.3/apache/Dockerfile)
 -	[`5.2.4-fpm`, `5.2-fpm`, `5-fpm`, `fpm`, `5.2.4-php7.3-fpm`, `5.2-php7.3-fpm`, `5-php7.3-fpm`, `php7.3-fpm`](https://github.com/docker-library/wordpress/blob/41af7e24571774b8016b930bfb767c39552d0a02/php7.3/fpm/Dockerfile)
 -	[`5.2.4-fpm-alpine`, `5.2-fpm-alpine`, `5-fpm-alpine`, `fpm-alpine`, `5.2.4-php7.3-fpm-alpine`, `5.2-php7.3-fpm-alpine`, `5-php7.3-fpm-alpine`, `php7.3-fpm-alpine`](https://github.com/docker-library/wordpress/blob/41af7e24571774b8016b930bfb767c39552d0a02/php7.3/fpm-alpine/Dockerfile)
--	[`cli-2.3.0-php7.1`, `cli-2.3-php7.1`, `cli-2-php7.1`, `cli-php7.1`](https://github.com/docker-library/wordpress/blob/f4cc67fc2a0479f292f2ccbcdb9f58113374d258/php7.1/cli/Dockerfile)
--	[`cli-2.3.0-php7.2`, `cli-2.3-php7.2`, `cli-2-php7.2`, `cli-php7.2`](https://github.com/docker-library/wordpress/blob/f4cc67fc2a0479f292f2ccbcdb9f58113374d258/php7.2/cli/Dockerfile)
--	[`cli-2.3.0`, `cli-2.3`, `cli-2`, `cli`, `cli-2.3.0-php7.3`, `cli-2.3-php7.3`, `cli-2-php7.3`, `cli-php7.3`](https://github.com/docker-library/wordpress/blob/f4cc67fc2a0479f292f2ccbcdb9f58113374d258/php7.3/cli/Dockerfile)
+-	[`cli-2.4.0-php7.1`, `cli-2.4-php7.1`, `cli-2-php7.1`, `cli-php7.1`](https://github.com/docker-library/wordpress/blob/9df87306ae4794479dbc9eaf570aca33fc4f41aa/php7.1/cli/Dockerfile)
+-	[`cli-2.4.0-php7.2`, `cli-2.4-php7.2`, `cli-2-php7.2`, `cli-php7.2`](https://github.com/docker-library/wordpress/blob/9df87306ae4794479dbc9eaf570aca33fc4f41aa/php7.2/cli/Dockerfile)
+-	[`cli-2.4.0`, `cli-2.4`, `cli-2`, `cli`, `cli-2.4.0-php7.3`, `cli-2.4-php7.3`, `cli-2-php7.3`, `cli-php7.3`](https://github.com/docker-library/wordpress/blob/9df87306ae4794479dbc9eaf570aca33fc4f41aa/php7.3/cli/Dockerfile)
 
 # Quick reference
 
