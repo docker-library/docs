@@ -55,16 +55,55 @@ By default, the image will use an embedded H2 database that is not suited for pr
 
 Setup a database by following the "Installing the Database" section of https://docs.sonarqube.org/latest/setup/install-server/.
 
-### Use bind-mounted folders
+### Use bind-mounted folders or volumes
 
-The images contain the SonarQube installation at `/opt/sonarqube`. You need to use bind-mounted folders to override selected files or directories :
+The images contain the SonarQube installation folders at `/opt/sonarqube`. You will need to bind them to your host to override selected files or directories :
 
 -	`/opt/sonarqube/conf`: configuration files, such as `sonar.properties`
 -	`/opt/sonarqube/data`: data files, such as the embedded H2 database and Elasticsearch indexes
 -	`/opt/sonarqube/logs`: contains SonarQube logs about access, web process, CE process, Elasticsearch logs
--	`/opt/sonarqube/extensions`: plugins, such as language analyzers
+-	`/opt/sonarqube/extensions`: plugins, such as language analyzers  
 
-### First installation
+### SonarQube 7.9.x LTS first installation
+
+Follow these steps for your first installation:
+
+1.	Create volumes `sonarqube_conf`, `sonarqube_data`, `sonarqube_logs`, and `sonarqube_extensions` and start the image with the following command. This will populate all the volumes (copying default plugins, create the Elasticsearch data folder, create the sonar.properties configuration file). Watch the logs, and, once the container is properly started, you can force-exit (ctrl+c) and proceed to the next step.
+
+	```console
+	$ docker run --rm \
+	    -p 9000:9000 \
+	    -v sonarqube_conf:/opt/sonarqube/conf \
+	    -v sonarqube_extensions:/opt/sonarqube/extensions \
+	    -v sonarqube_logs:/opt/sonarqube/logs \
+	    -v sonarqube_data:/opt/sonarqube/data \
+	    %%IMAGE%%
+	```
+
+2.	Configure sonar.properties to configure the database JDBC URL. Templates are available for every supported database. Just uncomment and configure the template you need. Please note that due to [SONAR-12501](https://jira.sonarsource.com/browse/SONAR-12501), providing `sonar.jdbc.username` and `sonar.jdbc.password` in `sonar.properties` is not working, and you will need to explicitly define theses values in the docker run command with the `-e` flag.
+
+	```plain
+	#Example for PostgreSQL
+	sonar.jdbc.url=jdbc:postgresql://localhost/sonarqube
+	```
+
+3.	Drivers for the supported databases (except Oracle) are already provided. Do not replace the provided drivers; they are the only ones supported. For Oracle, copy the JDBC driver into `$SONARQUBE_HOME/extensions/jdbc-driver/oracle`.
+
+4.	Run the image with your JDBC username and password :
+
+	```console
+	$ docker run -d --name sonarqube \
+	    -p 9000:9000 \
+	    -e sonar.jdbc.username=sonar \
+	    -e sonar.jdbc.password=sonar \
+	    -v sonarqube_conf:/opt/sonarqube/conf \
+	    -v sonarqube_extensions:/opt/sonarqube/extensions \
+	    -v sonarqube_logs:/opt/sonarqube/logs \
+	    -v sonarqube_data:/opt/sonarqube/data \
+	    %%IMAGE%%
+	```
+
+### SonarQube 8.x first installation
 
 Follow these steps for your first installation:
 
@@ -109,11 +148,24 @@ Follow these steps for your first installation:
 
 ## Upgrade SonarQube
 
+### From 7.9.x LTS to another 7.9.x LTS version
+
+Take a look at the [Upgrade Guide](https://docs.sonarqube.org/latest/setup/upgrading/).  
+No specific Docker operations are needed, just use the new tag.
+
+### From 7.9.x LTS to 8.x
+
+Follow the next section instructions, but instead of upgrading from folders to folders, you will migrate your volumes to new folders.
+
+> Starting with the version 8.0, you can move your `sonar.jdbc.username` and `sonar.jdbc.password` value to `sonar.properties` instead of passing them with the `-e` flag.
+
+### From 8.x
+
 Follow these steps to upgrade SonarQube:
 
 1.	Create a new `sonarqube_home_new` folder and backup your old folder.
 
-2.	Update the environment variable `$SONARQUBE_HOME` pointing to it. Backup the old one:
+2.	Update the environment variable `$SONARQUBE_HOME` pointing to it:
 
 	```console
 	$ mkdir /path/to/your/filesystem/sonarqube_home_new
