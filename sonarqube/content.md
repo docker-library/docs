@@ -62,7 +62,7 @@ The images contain the SonarQube installation folders at `/opt/sonarqube`. You w
 -	`/opt/sonarqube/conf`: configuration files, such as `sonar.properties`
 -	`/opt/sonarqube/data`: data files, such as the embedded H2 database and Elasticsearch indexes
 -	`/opt/sonarqube/logs`: contains SonarQube logs about access, web process, CE process, Elasticsearch logs
--	`/opt/sonarqube/extensions`: plugins, such as language analyzers  
+-	`/opt/sonarqube/extensions`: plugins, such as language analyzers
 
 ### SonarQube 7.9.x LTS first installation
 
