@@ -49,7 +49,7 @@ Rocket.Chat is a Web Chat Server, developed in JavaScript, using the Meteor full
 
 It is a great solution for communities and companies wanting to privately host their own chat service or for developers looking forward to build and evolve their own chat platforms.
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/03a593f2d33ac163b1b346a60de29aa59f7f78db/rocket.chat/logo.svg?sanitize=true)
+![logo](https://raw.githubusercontent.com/docker-library/docs/58b1de3ee0d72e7b157fb70a0232e2dd75c9b516/rocket.chat/logo.svg?sanitize=true)
 
 # How to use this image
 
@@ -84,6 +84,12 @@ If you're using a third party Mongo provider, or working with Kubernetes, you ne
 ```console
 $ docker run --name rocketchat -p 80:3000 --env ROOT_URL=http://localhost --env MONGO_URL=mongodb://mymongourl/mydb --env MONGO_OPLOG_URL=mongodb://mymongourl:27017/local -d rocket.chat
 ```
+
+### Check our docs
+
+For full documentation on production deployment best practices, please visit https://rocket.chat/docs/installation/docker-containers/
+
+Need some help? Join our community forums https://forums.rocket.chat
 
 # License
 
