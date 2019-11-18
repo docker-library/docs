@@ -39,3 +39,9 @@ If you're using a third party Mongo provider, or working with Kubernetes, you ne
 ```console
 $ docker run --name rocketchat -p 80:3000 --env ROOT_URL=http://localhost --env MONGO_URL=mongodb://mymongourl/mydb --env MONGO_OPLOG_URL=mongodb://mymongourl:27017/local -d %%IMAGE%%
 ```
+
+### Check our docs
+
+For full documentation on production deployment best practices, please visit https://rocket.chat/docs/installation/docker-containers/
+
+Need some help? Join our community forums https://forums.rocket.chat
