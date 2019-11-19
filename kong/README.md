@@ -75,7 +75,7 @@ It's up to you to decide which datastore between Cassandra or PostgreSQL you wan
 Start a Cassandra container by executing:
 
 ```shell
-$ docker run -d --name kong-database \
+docker run -d --name kong-database \
                 -p 9042:9042 \
                 cassandra:3
 ```
@@ -114,7 +114,7 @@ In the above example, both Cassandra and PostgreSQL are configured, but you shou
 Once the database has been started and prepared, we can start a Kong container and link it to the database container, and configuring the `KONG_DATABASE` environment variable with either `cassandra` or `postgres` depending on which database you decided to use:
 
 ```shell
-$ docker run -d --name kong \
+docker run -d --name kong \
     --link kong-database:kong-database \
     -e "KONG_DATABASE=postgres" \
     -e "KONG_PG_HOST=kong-database" \
@@ -140,7 +140,7 @@ You can now read the docs at [docs.konghq.com](https://docs.konghq.com/) to lear
 You can override any property of the [Kong configuration file](https://docs.konghq.com/latest/configuration/) with environment variables. Just prepend any Kong configuration property with the `KONG_` prefix, for example:
 
 ```shell
-$ docker run -d --name kong \
+docker run -d --name kong \
     -e "KONG_DATABASE=postgres"
     -e "KONG_PG_HOST=kong-database" \
     -e "KONG_LOG_LEVEL=info" \
@@ -159,7 +159,7 @@ $ docker run -d --name kong \
 If you change your custom configuration, you can reload Kong (without downtime) by issuing:
 
 ```shell
-$ docker exec -it kong kong reload
+docker exec -it kong kong reload
 ```
 
 This will run the [`kong reload`](https://docs.konghq.com/latest/cli/#reload) command in your container.
