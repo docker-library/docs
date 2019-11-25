@@ -2,7 +2,7 @@
 
 The images in this repository contain Open Liberty. For more information about Open Liberty, see the [Open Liberty Website](https://openliberty.io/) site.
 
-If you're looking for Open Liberty based on Red Hat's Universal Base Image, please see [this repo](https://hub.docker.com/r/openliberty/open-liberty).  
+If you're looking for Open Liberty based on Red Hat's Universal Base Image, please see [this repo](https://hub.docker.com/r/openliberty/open-liberty).
 
 # Image User
 
