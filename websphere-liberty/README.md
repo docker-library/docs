@@ -76,7 +76,9 @@ WARNING:
 
 # Overview
 
-The images in this repository contain IBM WebSphere Application Server Liberty for Developers and the IBM Java Runtime Environment. See the license section below for restrictions relating to the use of this image. For more information about WebSphere Application Server Liberty, see the [WASdev](https://developer.ibm.com/wasdev/docs/category/getting-started/) site.
+The images in this repository contain WebSphere Liberty application server and the IBM Java Runtime Environment. For more information please see our [official repository](https://github.com/WASdev/ci.docker).
+
+If you're looking for UBI-based images, please see [this repo](https://hub.docker.com/r/ibmcom/websphere-liberty/).
 
 # Image User
 
@@ -123,24 +125,14 @@ Please note that this pattern will duplicate the docker layers for those artifac
 
 There are multiple tags available in this repository. The image with the tag `beta` contains the contents of the install archive for the latest monthly beta. The other images are all based on the latest generally available fix pack.
 
-The `kernel` image contains just the Liberty kernel and no additional runtime features. This image can be used as the basis for custom built images that contain only the features required for a specific application. For example, the following Dockerfile starts with this image, copies in the `server.xml` that lists the features required by the application, and then uses the `installUtility` command to download those features from the online repository.
+The `kernel` image contains just the Liberty kernel and no additional runtime features. This image can be used as the basis for custom built images that contain only the features required for a specific application. For example, the following Dockerfile starts with this image, copies in the `server.xml` that lists the features required by the application, and then uses the `configure.sh` script to download those features from the online repository.
 
 ```dockerfile
 FROM websphere-liberty:kernel
 COPY --chown=1001:0  Sample1.war /config/dropins/
 COPY --chown=1001:0  server.xml /config/
-RUN installUtility install --acceptLicense defaultServer
+RUN configure.sh
 ```
-
-The `webProfile8` image contains the features required for Java EE8 Web Profile compliance. The `javaee8` image extends this image and adds the features required for Java EE8 Full Platform compliance. The `javaee8` image is also tagged with `latest`.
-
-The `webProfile7` image contains the features required for Java EE7 Web Profile compliance. The `javaee7` image extends this image and adds the features required for Java EE7 Full Platform compliance.
-
-The `webProfile8`, `javaee8`, `webProfile7` and `javaee7` images also contain a common set of features that are expected to be of use for a typical production scenario. These features are: `appSecurity-2.0`, `collectiveMember-1.0`, `localConnector-1.0`, `ldapRegistry-3.0`, `monitor-1.0`, `requestTiming-1.0`, `restConnector-2.0`, `sessionDatabase-1.0`, `ssl-1.0`, `transportSecurity-1.0` and `webCache-1.0`.
-
-The `microProfile1` and `microProfile2` images contains the features required to support MicroProfile 1.4 and MicroProfile 2.0 (respectively).
-
-The `springBoot1` and `springBoot2` images contain all features required for running Spring Boot 1.5 and 2.0 applications; including `springBoot-1.5` or `springBoot-2.0`, respectively, plus `servlet-4.0`, `jsp-2.3`, `webSocket-1.1`, and `transportSecurity-1.0`.
 
 # Usage
 

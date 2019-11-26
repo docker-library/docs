@@ -124,6 +124,8 @@ WARNING:
 
 The images in this repository contain Open Liberty. For more information about Open Liberty, see the [Open Liberty Website](https://openliberty.io/) site.
 
+If you're looking for Open Liberty based on Red Hat's Universal Base Image, please see [this repo](https://hub.docker.com/r/openliberty/open-liberty).
+
 # Image User
 
 This image runs by default with `USER 1001` (non-root), as part of group `0`. Please make sure you read below to set the appropriate folder and file permissions.
@@ -169,17 +171,16 @@ Please note that this pattern will duplicate the docker layers for those artifac
 
 There are multiple tags available in this repository.
 
-The `kernel` image contains the Liberty kernel and can be used as the basis for custom built images that contain only the features required for a specific application. For example, the following Dockerfile starts with this image, copies in the `server.xml` that lists the features required by the application.
+The `kernel` image contains the Liberty kernel and can be used as the basis for custom built images that contain only the features required for a specific application. For example, the following Dockerfile starts with this image, copies in the `server.xml` that lists the features required by the application and then run a built-in script to install the needed features.
 
 ```dockerfile
 FROM open-liberty:kernel
 COPY --chown=1001:0  Sample1.war /config/dropins/
 COPY --chown=1001:0  server.xml /config/
+RUN configure.sh
 ```
 
-The `microProfile1` image contains the features required to implement Eclipse MicroProfile 1.3. The `webProfile8` image contains the features required for Java EE8 Web Profile compliance. The `javaee8` image adds the features required for Java EE8 Full Platform compliance. The `javaee8` image is also tagged with `latest`. The `webProfile7` image contains the features required for Java EE7 Web Profile compliance. The `javaee7` image adds the features required for Java EE7 Full Platform compliance. The `springBoot1` and `springBoot2` images contain the features required for running Spring Boot 1.5 and 2.0 applications.
-
-There are also additional images for different JVM combinations. Currently there are tags for java8 only, but there are two variants one based on IBM Java and Ubuntu and the other based on the IBM small footprint Java which is based on alpine linux. The naming structure for the variants is tag-javaversion-vandor/variant. This leads to webProfile8-java8-ibmsfj as one. At this time the full list of images are found in the `Supported tags and respective Dockerfile links` section above.
+The full list of images are found in the `Supported tags and respective Dockerfile links` section above.
 
 # Usage
 
