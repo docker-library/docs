@@ -20,7 +20,7 @@ WARNING:
 -	[`19.04`, `disco-20191030`, `disco`](https://github.com/tianon/docker-brew-ubuntu-core/blob/d4313e13366d24a97bd178db4450f63e221803f1/disco/Dockerfile)
 -	[`19.10`, `eoan-20191101`, `eoan`, `rolling`](https://github.com/tianon/docker-brew-ubuntu-core/blob/d4313e13366d24a97bd178db4450f63e221803f1/eoan/Dockerfile)
 -	[`20.04`, `focal-20191030`, `focal`, `devel`](https://github.com/tianon/docker-brew-ubuntu-core/blob/d4313e13366d24a97bd178db4450f63e221803f1/focal/Dockerfile)
--	[`14.04`, `trusty-20191107`, `trusty`](https://github.com/tianon/docker-brew-ubuntu-core/blob/d4313e13366d24a97bd178db4450f63e221803f1/trusty/Dockerfile)
+-	[`14.04`, `trusty-20190515`, `trusty`](https://github.com/tianon/docker-brew-ubuntu-core/blob/010bf9649b1d10e2c34b159a9a9b338d0fdd4939/trusty/Dockerfile)
 -	[`16.04`, `xenial-20191108`, `xenial`](https://github.com/tianon/docker-brew-ubuntu-core/blob/d4313e13366d24a97bd178db4450f63e221803f1/xenial/Dockerfile)
 
 # Quick reference

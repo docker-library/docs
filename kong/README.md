@@ -85,7 +85,7 @@ $ docker run -d --name kong-database \
 Start a PostgreSQL container by executing:
 
 ```shell
-docker run -d --name kong-database \
+$ docker run -d --name kong-database \
                 -p 5432:5432 \
                 -e "POSTGRES_USER=kong" \
                 -e "POSTGRES_DB=kong" \
@@ -97,7 +97,7 @@ docker run -d --name kong-database \
 Run the database migrations with an ephemeral Kong container:
 
 ```shell
-docker run --rm \
+$ docker run --rm \
     --link kong-database:kong-database \
     -e "KONG_DATABASE=postgres" \
     -e "KONG_PG_HOST=kong-database" \
