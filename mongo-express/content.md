@@ -9,7 +9,7 @@ mongo-express is a web-based MongoDB admin interface written in Node.js, Express
 # How to use this image
 
 ```console
-$ docker run --link some_mongo_container:mongo -p 8081:8081 %%IMAGE%%
+$ docker run --network some-network -e ME_CONFIG_MONGODB_SERVER=some-mongo -p 8081:8081 %%IMAGE%%
 ```
 
 Then you can hit `http://localhost:8081` or `http://host-ip:8081` in your browser.
@@ -54,10 +54,11 @@ The following are only needed if `ME_CONFIG_MONGODB_ENABLE_ADMIN` is **"false"**
 
 ```console
 $ docker run -it --rm \
+    --network web_default \
     --name mongo-express \
-    --link web_db_1:mongo \
     -p 8081:8081 \
     -e ME_CONFIG_OPTIONS_EDITORTHEME="ambiance" \
+    -e ME_CONFIG_MONGODB_SERVER="web_db_1" \
     -e ME_CONFIG_BASICAUTH_USERNAME="user" \
     -e ME_CONFIG_BASICAUTH_PASSWORD="fairly long password" \
     %%IMAGE%%

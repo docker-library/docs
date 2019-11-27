@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`develop` (*develop/Dockerfile*)](https://github.com/eggheads/eggdrop-docker/blob/bdb1f8a5b46db1779c6d5df6d682ad2bfa33bccb/develop/Dockerfile)
--	[`1.8`, `1.8.3`, `stable`, `latest` (*1.8/Dockerfile*)](https://github.com/eggheads/eggdrop-docker/blob/68e421d4e8f87301d921c84548407ec340f0b8ed/1.8/Dockerfile)
+-	[`develop`](https://github.com/eggheads/eggdrop-docker/blob/51d2fa5962ba517ba83f2e9b9da2913ce94392ba/develop/Dockerfile)
+-	[`1.8`, `1.8.4`, `stable`, `latest`](https://github.com/eggheads/eggdrop-docker/blob/fa5fed10359b27ea2880ef986379e30daccb3ac2/1.8/Dockerfile)
 
 # Quick reference
 
@@ -44,14 +44,11 @@ WARNING:
 -	**Source of this description**:  
 	[docs repo's `eggdrop/` directory](https://github.com/docker-library/docs/tree/master/eggdrop) ([history](https://github.com/docker-library/docs/commits/master/eggdrop))
 
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
-
 # What is Eggdrop?
 
 Eggdrop is the world's most popular Open Source IRC bot, designed for flexibility and ease of use, and is freely distributable under the GNU General Public License (GPL). It is designed to Linux, BSD, SunOs, Windows, and Mac OS X, among others. The core codebase is extendable via TCL scripts or C modules and bots can be linked to form botnets, enabling the sharing of userfiles and partylines across multiple bots.
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/d36235b330f3945d48c230eb58f3ea8319b6d985/eggdrop/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/c100057041a160e73a879916f2d88762cc7a01ec/eggdrop/logo.png)
 
 # How to use this image
 

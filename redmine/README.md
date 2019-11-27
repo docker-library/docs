@@ -16,10 +16,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.4.6`, `3.4`, `3`, `latest` (*3.4/Dockerfile*)](https://github.com/docker-library/redmine/blob/3aa206974b8f92c2953635e60c54a67435eca3de/3.4/Dockerfile)
--	[`3.4.6-passenger`, `3.4-passenger`, `3-passenger`, `passenger` (*3.4/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/aab2a6f72bf5ff15da0bf1ac39bfe9b9e686119a/3.4/passenger/Dockerfile)
--	[`3.3.8`, `3.3` (*3.3/Dockerfile*)](https://github.com/docker-library/redmine/blob/3aa206974b8f92c2953635e60c54a67435eca3de/3.3/Dockerfile)
--	[`3.3.8-passenger`, `3.3-passenger` (*3.3/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/aab2a6f72bf5ff15da0bf1ac39bfe9b9e686119a/3.3/passenger/Dockerfile)
+-	[`4.0.5`, `4.0`, `4`, `latest`](https://github.com/docker-library/redmine/blob/4064a505db909322bda24823c200f4c97985d638/4.0/Dockerfile)
+-	[`4.0.5-passenger`, `4.0-passenger`, `4-passenger`, `passenger`](https://github.com/docker-library/redmine/blob/fd5541e76d7f2230484c19a784b8f9ee884559ce/4.0/passenger/Dockerfile)
+-	[`4.0.5-alpine`, `4.0-alpine`, `4-alpine`, `alpine`](https://github.com/docker-library/redmine/blob/4064a505db909322bda24823c200f4c97985d638/4.0/alpine/Dockerfile)
+-	[`3.4.12`, `3.4`, `3`](https://github.com/docker-library/redmine/blob/ba9880cc3a224c7e5e15c1f9bf1757aa7c4c5b92/3.4/Dockerfile)
+-	[`3.4.12-passenger`, `3.4-passenger`, `3-passenger`](https://github.com/docker-library/redmine/blob/fd5541e76d7f2230484c19a784b8f9ee884559ce/3.4/passenger/Dockerfile)
+-	[`3.4.12-alpine`, `3.4-alpine`, `3-alpine`](https://github.com/docker-library/redmine/blob/ba9880cc3a224c7e5e15c1f9bf1757aa7c4c5b92/3.4/alpine/Dockerfile)
 
 # Quick reference
 
@@ -46,9 +48,6 @@ WARNING:
 -	**Source of this description**:  
 	[docs repo's `redmine/` directory](https://github.com/docker-library/docs/tree/master/redmine) ([history](https://github.com/docker-library/docs/commits/master/redmine))
 
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
-
 # What is Redmine?
 
 Redmine is a free and open source, web-based project management and issue tracking tool. It allows users to manage multiple projects and associated subprojects. It features per project wikis and forums, time tracking, and flexible role based access control. It includes a calendar and Gantt charts to aid visual representation of projects and their deadlines. Redmine integrates with various version control systems and includes a repository browser and diff viewer.
@@ -71,26 +70,26 @@ $ docker run -d --name some-redmine redmine
 
 ## Run Redmine with a Database Container
 
-Running Redmine with a database server is the recommened way.
+Running Redmine with a database server is the recommended way.
 
 1.	start a database container
 
 	-	PostgreSQL
 
 		```console
-		$ docker run -d --name some-postgres -e POSTGRES_PASSWORD=secret -e POSTGRES_USER=redmine postgres
+		$ docker run -d --name some-postgres --network some-network -e POSTGRES_PASSWORD=secret -e POSTGRES_USER=redmine postgres
 		```
 
-	-	MySQL (replace `--link some-postgres:postgres` with `--link some-mysql:mysql` when running redmine)
+	-	MySQL (replace `-e REDMINE_DB_POSTGRES=some-postgres` with `-e REDMINE_DB_MYSQL=some-mysql` when running Redmine)
 
 		```console
-		$ docker run -d --name some-mysql -e MYSQL_ROOT_PASSWORD=secret -e MYSQL_DATABASE=redmine mysql
+		$ docker run -d --name some-mysql --network some-network -e MYSQL_USER=redmine -e MYSQL_PASSWORD=secret -e MYSQL_DATABASE=redmine -e MYSQL_RANDOM_ROOT_PASSWORD=1 mysql:5.7
 		```
 
 2.	start redmine
 
 	```console
-	$ docker run -d --name some-redmine --link some-postgres:postgres redmine
+	$ docker run -d --name some-redmine --network some-network -e REDMINE_DB_POSTGRES=some-postgres -e REDMINE_DB_USERNAME=redmine -e REDMINE_DB_PASSWORD=secret redmine
 	```
 
 ## ... via [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/) or [`docker-compose`](https://github.com/docker/compose)
@@ -206,6 +205,22 @@ $ docker run -d --name some-redmine -e REDMINE_DB_MYSQL_FILE=/run/secrets/mysql-
 ```
 
 Currently, this is only supported for `REDMINE_DB_MYSQL`, `REDMINE_DB_POSTGRES`, `REDMINE_DB_PORT`, `REDMINE_DB_USERNAME`, `REDMINE_DB_PASSWORD`, `REDMINE_DB_DATABASE`, `REDMINE_DB_ENCODING`, and `REDMINE_SECRET_KEY_BASE`.
+
+# Image Variants
+
+The `redmine` images come in many flavors, each designed for a specific use case.
+
+## `redmine:<version>`
+
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+## `redmine:<version>-alpine`
+
+This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+
+This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+
+To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 # License
 

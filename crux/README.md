@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.4`, `latest` (*Dockerfile*)](https://github.com/cruxlinux/docker-crux/blob/da081a9004c5559cd77a1e2c2521193ccb2afdd2/Dockerfile)
--	[`3.2` (*Dockerfile*)](https://github.com/cruxlinux/docker-crux/blob/07e966125ba3d6d48a12489830917e8a9bc983a7/Dockerfile)
+-	[`3.4`, `latest`](https://github.com/cruxlinux/docker-crux/blob/da081a9004c5559cd77a1e2c2521193ccb2afdd2/Dockerfile)
+-	[`3.2`](https://github.com/cruxlinux/docker-crux/blob/07e966125ba3d6d48a12489830917e8a9bc983a7/Dockerfile)
 
 # Quick reference
 
@@ -43,9 +43,6 @@ WARNING:
 
 -	**Source of this description**:  
 	[docs repo's `crux/` directory](https://github.com/docker-library/docs/tree/master/crux) ([history](https://github.com/docker-library/docs/commits/master/crux))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is CRUX?
 

@@ -16,11 +16,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.16.0.179`, `latest`, `5.16.0`, `5.16`, `5` (*5.16.0.179/Dockerfile*)](https://github.com/mono/docker/blob/3cb13514d4bfb239a4836b58fc137c7d9dda4da0/5.16.0.179/Dockerfile)
--	[`5.16.0.179-slim`, `slim`, `5.16.0-slim`, `5.16-slim`, `5-slim` (*5.16.0.179/slim/Dockerfile*)](https://github.com/mono/docker/blob/3cb13514d4bfb239a4836b58fc137c7d9dda4da0/5.16.0.179/slim/Dockerfile)
--	[`5.14.0.177`, `5.14.0`, `5.14` (*5.14.0.177/Dockerfile*)](https://github.com/mono/docker/blob/6d9b65ee9c9fe73b5fed6674e8ebe8e0d6f5abaf/5.14.0.177/Dockerfile)
--	[`5.14.0.177-slim`, `5.14.0-slim`, `5.14-slim` (*5.14.0.177/slim/Dockerfile*)](https://github.com/mono/docker/blob/6d9b65ee9c9fe73b5fed6674e8ebe8e0d6f5abaf/5.14.0.177/slim/Dockerfile)
--	[`4.8.0.524`, `4.8.0`, `4.8`, `4` (*4.8.0.524/Dockerfile*)](https://github.com/mono/docker/blob/0d987d93235630e05a14983c7f87500ab33c90da/4.8.0.524/Dockerfile)
+-	[`6.4.0.198`, `latest`, `6.4.0`, `6.4`, `6`](https://github.com/mono/docker/blob/1d31220a290b2b4d19654a8cdb4ba13888e29717/6.4.0.198/Dockerfile)
+-	[`6.4.0.198-slim`, `slim`, `6.4.0-slim`, `6.4-slim`, `6-slim`](https://github.com/mono/docker/blob/1d31220a290b2b4d19654a8cdb4ba13888e29717/6.4.0.198/slim/Dockerfile)
+-	[`6.0.0.334`, `6.0.0`, `6.0`](https://github.com/mono/docker/blob/1d31220a290b2b4d19654a8cdb4ba13888e29717/6.0.0.334/Dockerfile)
+-	[`6.0.0.334-slim`, `6.0.0-slim`, `6.0-slim`](https://github.com/mono/docker/blob/1d31220a290b2b4d19654a8cdb4ba13888e29717/6.0.0.334/slim/Dockerfile)
+-	[`5.20.1.34`, `5.20.1`, `5.20`, `5`](https://github.com/mono/docker/blob/c47c852008be6934ac650f282c18c70f2cfec72f/5.20.1.34/Dockerfile)
+-	[`5.20.1.34-slim`, `5.20.1-slim`, `5.20-slim`, `5-slim`](https://github.com/mono/docker/blob/c47c852008be6934ac650f282c18c70f2cfec72f/5.20.1.34/slim/Dockerfile)
 
 # Quick reference
 
@@ -34,7 +35,7 @@ WARNING:
 	[the Mono Project](https://github.com/mono/docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/mono/), [`arm32v7`](https://hub.docker.com/r/arm32v7/mono/), [`arm64v8`](https://hub.docker.com/r/arm64v8/mono/), [`i386`](https://hub.docker.com/r/i386/mono/)
+	[`amd64`](https://hub.docker.com/r/amd64/mono/), [`arm32v5`](https://hub.docker.com/r/arm32v5/mono/), [`arm32v7`](https://hub.docker.com/r/arm32v7/mono/), [`arm64v8`](https://hub.docker.com/r/arm64v8/mono/), [`i386`](https://hub.docker.com/r/i386/mono/), [`ppc64le`](https://hub.docker.com/r/ppc64le/mono/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/mono/` directory](https://github.com/docker-library/repo-info/blob/master/repos/mono) ([history](https://github.com/docker-library/repo-info/commits/master/repos/mono))  
@@ -46,9 +47,6 @@ WARNING:
 
 -	**Source of this description**:  
 	[docs repo's `mono/` directory](https://github.com/docker-library/docs/tree/master/mono) ([history](https://github.com/docker-library/docs/commits/master/mono))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Mono
 

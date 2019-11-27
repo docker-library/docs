@@ -51,14 +51,14 @@ See the [RabbitMQ "Clustering Guide"](https://www.rabbitmq.com/clustering.html#e
 For setting a consistent cookie (especially useful for clustering but also for remote/cross-container administration via `rabbitmqctl`), use `RABBITMQ_ERLANG_COOKIE`:
 
 ```console
-$ docker run -d --hostname my-rabbit --name some-rabbit -e RABBITMQ_ERLANG_COOKIE='secret cookie here' %%IMAGE%%:3
+$ docker run -d --hostname some-rabbit --name some-rabbit --network some-network -e RABBITMQ_ERLANG_COOKIE='secret cookie here' %%IMAGE%%:3
 ```
 
 This can then be used from a separate instance to connect:
 
 ```console
-$ docker run -it --rm --link some-rabbit:my-rabbit -e RABBITMQ_ERLANG_COOKIE='secret cookie here' %%IMAGE%%:3 bash
-root@f2a2d3d27c75:/# rabbitmqctl -n rabbit@my-rabbit list_users
+$ docker run -it --rm --network some-network -e RABBITMQ_ERLANG_COOKIE='secret cookie here' %%IMAGE%%:3 bash
+root@f2a2d3d27c75:/# rabbitmqctl -n rabbit@some-rabbit list_users
 Listing users ...
 guest   [administrator]
 ```
@@ -66,7 +66,7 @@ guest   [administrator]
 Alternatively, one can also use `RABBITMQ_NODENAME` to make repeated `rabbitmqctl` invocations simpler:
 
 ```console
-$ docker run -it --rm --link some-rabbit:my-rabbit -e RABBITMQ_ERLANG_COOKIE='secret cookie here' -e RABBITMQ_NODENAME=rabbit@my-rabbit %%IMAGE%%:3 bash
+$ docker run -it --rm --network some-network -e RABBITMQ_ERLANG_COOKIE='secret cookie here' -e RABBITMQ_NODENAME=rabbit@some-rabbit %%IMAGE%%:3 bash
 root@f2a2d3d27c75:/# rabbitmqctl list_users
 Listing users ...
 guest   [administrator]
@@ -142,7 +142,9 @@ If you wish to change the default vhost, you can do so with the `RABBITMQ_DEFAUL
 $ docker run -d --hostname my-rabbit --name some-rabbit -e RABBITMQ_DEFAULT_VHOST=my_vhost %%IMAGE%%:3-management
 ```
 
-### Enabling HiPE
+### Enabling HiPE (deprecated)
+
+**Note**: HiPE is disabled since version 3.7.15 of rabbimq images (https://github.com/docker-library/rabbitmq/pull/340)
 
 See the [RabbitMQ "Configuration"](http://www.rabbitmq.com/configure.html#config-items) for more information about various configuration options.
 
@@ -177,8 +179,6 @@ Alternatively, it is possible to use the `RABBITMQ_SERVER_ADDITIONAL_ERL_ARGS` e
 
 Additional configuration keys would be specified as a list. For example, configuring both [`channel_max`](https://www.rabbitmq.com/configure.html#config-items) and [`auth_backends`](https://www.rabbitmq.com/ldap.html#overview) would look something like `-e RABBITMQ_SERVER_ADDITIONAL_ERL_ARGS="-rabbit channel_max 4007 auth_backends [rabbit_auth_backend_ldap,rabbit_auth_backend_internal]"`. Note that some variables such as for `auth_backends` require their value(s) to be enclosed in brackets, and for multiple values explicitly including the comma as a delimiter.
 
-## Connecting to the daemon
+### Health/Liveness/Readiness Checking
 
-```console
-$ docker run --name some-app --link some-rabbit:rabbit -d application-that-uses-rabbitmq
-```
+See [the "Official Images" FAQ](https://github.com/docker-library/faq#healthcheck) and [the discussion on docker-library/rabbitmq#174 (especially the large comment by Michael Klishin from RabbitMQ upstream)](https://github.com/docker-library/rabbitmq/pull/174#issuecomment-452002696) for a detailed explanation of why this image does not come with a default `HEALTHCHECK` defined, and for suggestions for implementing your own health/liveness/readiness checks.

@@ -16,12 +16,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.6.1`, `2.6`, `2`, `latest` (*2/debian/Dockerfile*)](https://github.com/docker-library/ghost/blob/2dded8903da71e4a1bbc12cdc703c62416fedcc8/2/debian/Dockerfile)
--	[`2.6.1-alpine`, `2.6-alpine`, `2-alpine`, `alpine` (*2/alpine/Dockerfile*)](https://github.com/docker-library/ghost/blob/2dded8903da71e4a1bbc12cdc703c62416fedcc8/2/alpine/Dockerfile)
--	[`1.25.6`, `1.25`, `1` (*1/debian/Dockerfile*)](https://github.com/docker-library/ghost/blob/f1dde8050d6994a8df9564e50bffd4549c9c9305/1/debian/Dockerfile)
--	[`1.25.6-alpine`, `1.25-alpine`, `1-alpine` (*1/alpine/Dockerfile*)](https://github.com/docker-library/ghost/blob/94e82489166b6d44f590306402492df09bbfbcbd/1/alpine/Dockerfile)
--	[`0.11.14`, `0.11`, `0` (*0/debian/Dockerfile*)](https://github.com/docker-library/ghost/blob/f1dde8050d6994a8df9564e50bffd4549c9c9305/0/debian/Dockerfile)
--	[`0.11.14-alpine`, `0.11-alpine`, `0-alpine` (*0/alpine/Dockerfile*)](https://github.com/docker-library/ghost/blob/e1880db3c56f85410ad3342cbd33e7f98f24bcac/0/alpine/Dockerfile)
+-	[`3.0.3`, `3.0`, `3`, `latest`](https://github.com/docker-library/ghost/blob/d587046068f03ddc399d89e62ea1c4810d7350e9/3/debian/Dockerfile)
+-	[`3.0.3-alpine`, `3.0-alpine`, `3-alpine`, `alpine`](https://github.com/docker-library/ghost/blob/d587046068f03ddc399d89e62ea1c4810d7350e9/3/alpine/Dockerfile)
+-	[`2.37.0`, `2.37`, `2`](https://github.com/docker-library/ghost/blob/072fa27f0da8557028a79a01a6df05eb02657ae8/2/debian/Dockerfile)
+-	[`2.37.0-alpine`, `2.37-alpine`, `2-alpine`](https://github.com/docker-library/ghost/blob/072fa27f0da8557028a79a01a6df05eb02657ae8/2/alpine/Dockerfile)
+-	[`1.26.0`, `1.26`, `1`](https://github.com/docker-library/ghost/blob/c8f6801c0377e8e5d712ffb12dee351610af7f7b/1/debian/Dockerfile)
+-	[`1.26.0-alpine`, `1.26-alpine`, `1-alpine`](https://github.com/docker-library/ghost/blob/c8f6801c0377e8e5d712ffb12dee351610af7f7b/1/alpine/Dockerfile)
 
 # Quick reference
 
@@ -48,9 +48,6 @@ WARNING:
 -	**Source of this description**:  
 	[docs repo's `ghost/` directory](https://github.com/docker-library/docs/tree/master/ghost) ([history](https://github.com/docker-library/docs/commits/master/ghost))
 
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
-
 # Ghost
 
 Ghost is a free and open source blogging platform written in JavaScript and distributed under the MIT License, designed to simplify the process of online publishing for individual bloggers as well as online publications.
@@ -72,7 +69,7 @@ $ docker run -d --name some-ghost ghost
 If you'd like to be able to access the instance from the host without the container's IP, standard port mappings can be used:
 
 ```console
-$ docker run -d --name some-ghost -p 3001:2368 ghost
+$ docker run -d --name some-ghost -e url=http://localhost:3001 -p 3001:2368 ghost
 ```
 
 Then, access it via `http://localhost:3001` or `http://host-ip:3001` in a browser.

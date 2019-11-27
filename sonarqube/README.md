@@ -16,15 +16,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.7.5`, `lts` (*6.7.5/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/5d738964cc4b857ca5b399d6f0bb626b6710bac6/6.7.5/Dockerfile)
--	[`6.7.5-alpine`, `lts-alpine` (*6.7.5-alpine/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/5d738964cc4b857ca5b399d6f0bb626b6710bac6/6.7.5-alpine/Dockerfile)
--	[`7.1`, `latest` (*7.1/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/5d738964cc4b857ca5b399d6f0bb626b6710bac6/7.1/Dockerfile)
--	[`7.1-alpine`, `alpine` (*7.1-alpine/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/5d738964cc4b857ca5b399d6f0bb626b6710bac6/7.1-alpine/Dockerfile)
+-	[`7.9.1-community`, `7.9-community`, `latest`, `lts`](https://github.com/SonarSource/docker-sonarqube/blob/8ae0fadc72fef64334998e811f1b9cf68a458a2c/7/community/Dockerfile)
+-	[`8.0-community-beta`, `8-community-beta`, `community-beta`](https://github.com/SonarSource/docker-sonarqube/blob/8ae0fadc72fef64334998e811f1b9cf68a458a2c/8/community/Dockerfile)
+-	[`8.0-developer-beta`, `8-developer-beta`, `developer-beta`](https://github.com/SonarSource/docker-sonarqube/blob/8ae0fadc72fef64334998e811f1b9cf68a458a2c/8/developer/Dockerfile)
+-	[`8.0-enterprise-beta`, `8-enterprise-beta`, `enterprise-beta`](https://github.com/SonarSource/docker-sonarqube/blob/8ae0fadc72fef64334998e811f1b9cf68a458a2c/8/enterprise/Dockerfile)
 
 # Quick reference
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the SonarSource Community forum](https://community.sonarsource.com/tags/c/help/sq/docker), [the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
 -	**Where to file issues**:  
 	[https://github.com/SonarSource/docker-sonarqube/issues](https://github.com/SonarSource/docker-sonarqube/issues)
@@ -46,75 +46,269 @@ WARNING:
 -	**Source of this description**:  
 	[docs repo's `sonarqube/` directory](https://github.com/docker-library/docs/tree/master/sonarqube) ([history](https://github.com/docker-library/docs/commits/master/sonarqube))
 
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
-
 # What is SonarQube?
 
-SonarQube is an open source platform for continuous inspection of code quality.
-
-> [wikipedia.org/wiki/SonarQube](http://en.wikipedia.org/wiki/SonarQube)
+[SonarQube](https://www.sonarqube.org/) is an open source product for continuous inspection of code quality.
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/84479f149eb7d748d5dc057665eb96f923e60dc1/sonarqube/logo.png)
 
 # How to use this image
 
-## Run SonarQube
+Here you'll find the Docker image for the Community Edition of SonarQube and beta versions of the Docker images for Developer Edition and Enterprise Edition.
 
-The server is started this way:
+## Docker Host Requirements
 
-```console
-$ docker run -d --name sonarqube -p 9000:9000 -p 9092:9092 sonarqube
-```
+Because SonarQube uses an embedded Elasticsearch, make sure that your Docker host configuration complies with the [Elasticsearch production mode requirements](https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html#docker-cli-run-prod-mode) and [File Descriptors configuration](https://www.elastic.co/guide/en/elasticsearch/reference/current/file-descriptors.html).
 
-By default you can login as `admin` with password `admin`, see [authentication](https://docs.sonarqube.org/display/SONAR/Authentication).
-
-To analyse a project:
+For example, on Linux, you can set the recommended values for the current session by running the following commands as root on the host:
 
 ```console
-$ On Linux:
-mvn sonar:sonar
-
-$ With boot2docker:
-mvn sonar:sonar -Dsonar.host.url=http://$(boot2docker ip):9000 -Dsonar.jdbc.url="jdbc:h2:tcp://$(boot2docker ip)/sonar"
+sysctl -w vm.max_map_count=262144
+sysctl -w fs.file-max=65536
+ulimit -n 65536
+ulimit -u 4096
 ```
 
-## Database configuration
+## Get Started in Two Minutes Guide
+
+/!\ This section shows you how to quickly run a demo instance. When you are ready to move to a more sustainable setup, take some time to read the **Configuration** section below.
+
+Start the server by running:
+
+```console
+$ docker run -d --name sonarqube -p 9000:9000 sonarqube
+```
+
+By default you can login as `admin` with password `admin`, see [authentication documentation](https://docs.sonarqube.org/latest/instance-administration/security/).
+
+To analyze a Maven project:
+
+```console
+# On Linux:
+$ mvn sonar:sonar
+
+# With boot2docker:
+$ mvn sonar:sonar -Dsonar.host.url=http://$(boot2docker ip):9000
+```
+
+To analyze other kinds of projects and for more details see [Analyzing Source Code documentation](https://redirect.sonarsource.com/doc/analyzing-source-code.html).
+
+## Configuration
+
+### Database
 
 By default, the image will use an embedded H2 database that is not suited for production.
 
-The production database is configured with these variables: `SONARQUBE_JDBC_USERNAME`, `SONARQUBE_JDBC_PASSWORD` and `SONARQUBE_JDBC_URL`.
+> Warning: Only a single instance of SonarQube can connect to a database schema. If you're using a Docker Swarm or Kubernetes, make sure that multiple SonarQube instances are never running on the same database schema simultaneously. This will cause SonarQube to behave unpredictably and data will be corrupted. There is no safeguard until [SONAR-10362](https://jira.sonarsource.com/browse/SONAR-10362).
+
+Setup a database by following the "Installing the Database" section of https://docs.sonarqube.org/latest/setup/install-server/.
+
+### Use bind-mounted folders or volumes
+
+The images contain the SonarQube installation folders at `/opt/sonarqube`. You will need to bind them to your host to override selected files or directories :
+
+-	`/opt/sonarqube/conf`: configuration files, such as `sonar.properties`
+-	`/opt/sonarqube/data`: data files, such as the embedded H2 database and Elasticsearch indexes
+-	`/opt/sonarqube/logs`: contains SonarQube logs about access, web process, CE process, Elasticsearch logs
+-	`/opt/sonarqube/extensions`: plugins, such as language analyzers
+
+### SonarQube 7.9.x LTS first installation
+
+Follow these steps for your first installation:
+
+1.	Create volumes `sonarqube_conf`, `sonarqube_data`, `sonarqube_logs`, and `sonarqube_extensions` and start the image with the following command. This will populate all the volumes (copying default plugins, create the Elasticsearch data folder, create the sonar.properties configuration file). Watch the logs, and, once the container is properly started, you can force-exit (ctrl+c) and proceed to the next step.
+
+	```console
+	$ docker run --rm \
+	    -p 9000:9000 \
+	    -v sonarqube_conf:/opt/sonarqube/conf \
+	    -v sonarqube_extensions:/opt/sonarqube/extensions \
+	    -v sonarqube_logs:/opt/sonarqube/logs \
+	    -v sonarqube_data:/opt/sonarqube/data \
+	    sonarqube
+	```
+
+2.	Configure sonar.properties to configure the database JDBC URL. Templates are available for every supported database. Just uncomment and configure the template you need. Please note that due to [SONAR-12501](https://jira.sonarsource.com/browse/SONAR-12501), providing `sonar.jdbc.username` and `sonar.jdbc.password` in `sonar.properties` is not working, and you will need to explicitly define theses values in the docker run command with the `-e` flag.
+
+	```plain
+	#Example for PostgreSQL
+	sonar.jdbc.url=jdbc:postgresql://localhost/sonarqube
+	```
+
+3.	Drivers for the supported databases (except Oracle) are already provided. Do not replace the provided drivers; they are the only ones supported. For Oracle, copy the JDBC driver into `$SONARQUBE_HOME/extensions/jdbc-driver/oracle`.
+
+4.	Run the image with your JDBC username and password :
+
+	```console
+	$ docker run -d --name sonarqube \
+	    -p 9000:9000 \
+	    -e sonar.jdbc.username=sonar \
+	    -e sonar.jdbc.password=sonar \
+	    -v sonarqube_conf:/opt/sonarqube/conf \
+	    -v sonarqube_extensions:/opt/sonarqube/extensions \
+	    -v sonarqube_logs:/opt/sonarqube/logs \
+	    -v sonarqube_data:/opt/sonarqube/data \
+	    sonarqube
+	```
+
+### SonarQube 8.x first installation
+
+Follow these steps for your first installation:
+
+1.	Create a `sonarqube_home` folder and create a environment variable `$SONARQUBE_HOME` pointing to it:
+
+	```console
+	$ mkdir /path/to/your/filesystem/sonarqube_home
+	$ export SONARQUBE_HOME=/path/to/your/filesystem/sonarqube_home
+	```
+
+2.	Initialize SONARQUBE_HOME folder tree with `--init`. This will initialize the default configuration, copy embedded plugins, and prepare the data folder:
+
+	```console
+	$ docker run --rm \
+	 -v $SONARQUBE_HOME/conf:/opt/sonarqube/conf \
+	 -v $SONARQUBE_HOME/extensions:/opt/sonarqube/extensions \
+	 -v $SONARQUBE_HOME/data:/opt/sonarqube/data \
+	 sonarqube --init
+	```
+
+3.	Configure sonar.properties to configure the database settings. Templates are available for every supported database. Just uncomment and configure the template you need and comment out the lines dedicated to H2:
+
+	```plain
+	#Example for PostgreSQL
+	sonar.jdbc.username=sonarqube sonar.jdbc.password=mypassword
+	sonar.jdbc.url=jdbc:postgresql://localhost/sonarqube
+	```
+
+4.	Drivers for the supported databases (except Oracle) are already provided. Do not replace the provided drivers; they are the only ones supported. For Oracle, copy the JDBC driver into `$SONARQUBE_HOME/extensions/jdbc-driver/oracle`.
+
+5.	Run the image:
+
+	```console
+	$ docker run -d --name sonarqube \
+	    -p 9000:9000 \
+	    -v $SONARQUBE_HOME/conf:/opt/sonarqube/conf \
+	    -v $SONARQUBE_HOME/extensions:/opt/sonarqube/extensions \
+	    -v $SONARQUBE_HOME/logs:/opt/sonarqube/logs \
+	    -v $SONARQUBE_HOME/data:/opt/sonarqube/data \
+	    sonarqube
+	```
+
+## Upgrade SonarQube
+
+### From 7.9.x LTS to another 7.9.x LTS version
+
+Take a look at the [Upgrade Guide](https://docs.sonarqube.org/latest/setup/upgrading/).  
+No specific Docker operations are needed, just use the new tag.
+
+### From 7.9.x LTS to 8.x
+
+Follow the next section instructions, but instead of upgrading from folders to folders, you will migrate your volumes to new folders.
+
+> Starting with the version 8.0, you can move your `sonar.jdbc.username` and `sonar.jdbc.password` value to `sonar.properties` instead of passing them with the `-e` flag.
+
+### From 8.x
+
+Follow these steps to upgrade SonarQube:
+
+1.	Create a new `sonarqube_home_new` folder and backup your old folder.
+
+2.	Update the environment variable `$SONARQUBE_HOME` pointing to it:
+
+	```console
+	$ mkdir /path/to/your/filesystem/sonarqube_home_new
+	$ export SONARQUBE_HOME=/path/to/your/filesystem/sonarqube_home_new
+	```
+
+3.	Initialize the new `SONARQUBE_HOME` with `--init`:
+
+	```console
+	$ docker run --rm \
+	    -v $SONARQUBE_HOME/conf:/opt/sonarqube/conf \
+	    -v $SONARQUBE_HOME/extensions:/opt/sonarqube/extensions \
+	    -v $SONARQUBE_HOME/data:/opt/sonarqube/data \
+	    sonarqube --init  
+	```
+
+4.	Take a look at the [Upgrade Guide](https://docs.sonarqube.org/latest/setup/upgrading/) for information on:
+
+	-	Manually installing the non-default plugins
+	-	Updating the contents of sonar.properties and wrapper.conf
+	-	Copying the Oracle DB JDBC driver if needed  
+		  
+
+5.	Stop and remove the sonarqube container (a restart is not enough as the environment variables are only evaluated during the first run, not during a restart):
+
+	```console
+	$ docker stop sonarqube
+	$ docker rm sonarqube
+	```
+
+6.	Run docker:
+
+	```console
+	$ docker run -d --name sq -p 9000:9000 \
+	    -v $SONARQUBE_HOME/conf:/opt/sonarqube/conf \
+	    -v $SONARQUBE_HOME/extensions:/opt/sonarqube/extensions \
+	    -v $SONARQUBE_HOME/logs:/opt/sonarqube/logs \
+	    -v $SONARQUBE_HOME/data:/opt/sonarqube/data \
+	    sonarqube
+	```
+
+7.	Browse to `http://yourSonarQubeServerURL/setup` and follow the setup instructions.
+
+8.	Reanalyze your projects to get fresh data.
+
+## Advanced configuration
+
+#### Use parameters via Docker environment variables
+
+The database can be configured with the following SonarQube properties used as environment variables: `sonar.jdbc.username`, `sonar.jdbc.password` and `sonar.jdbc.url`.
 
 ```console
 $ docker run -d --name sonarqube \
-	-p 9000:9000 -p 9092:9092 \
-	-e SONARQUBE_JDBC_USERNAME=sonar \
-	-e SONARQUBE_JDBC_PASSWORD=sonar \
-	-e SONARQUBE_JDBC_URL=jdbc:postgresql://localhost/sonar \
-	sonarqube
+    -p 9000:9000 \
+    -e sonar.jdbc.username=sonar \
+    -e sonar.jdbc.password=sonar \
+    -e sonar.jdbc.url=jdbc:postgresql://localhost/sonar \
+    -v $SONARQUBE_HOME/conf:/opt/sonarqube/conf \
+    -v $SONARQUBE_HOME/extensions:/opt/sonarqube/extensions \
+    -v $SONARQUBE_HOME/logs:/opt/sonarqube/logs \
+    -v $SONARQUBE_HOME/data:/opt/sonarqube/data \
+    sonarqube
 ```
+
+Use of the environment variables `SONARQUBE_JDBC_USERNAME`, `SONARQUBE_JDBC_PASSWORD`, and `SONARQUBE_JDBC_URL` is deprecated and will stop working in future releases.
 
 More recipes can be found [here](https://github.com/SonarSource/docker-sonarqube/blob/master/recipes.md).
 
+### Customized image
+
+In some environments, it may make more sense to prepare a custom image containing your configuration. A `Dockerfile` to achieve this may be as simple as:
+
+```dockerfile
+FROM sonarqube:7.4-community
+COPY sonar.properties /opt/sonarqube/conf/
+```
+
+You could then build and try the image with something like:
+
+```console
+$ docker build --tag=sonarqube-custom .
+$ docker run -ti sonarqube-custom
+```
+
+### Avoid hard termination of SonarQube
+
+Starting from SonarQube 7.8, SonarQube stops gracefully, waiting for any tasks in progress to finish. Waiting for in-progress tasks to finish can take a large amount of time which the docker does not expect by default when stopping. To avoid having the SonarQube instance killed by the Docker daemon after 10 seconds, it is best to configure a timeout to stop the container with `--stop-timeout`. For example:
+
+```console
+docker run --stop-timeout 3600 sonarqube
+```
+
 ## Administration
 
-The administration guide can be found [here](http://docs.sonarqube.org/display/SONAR/Administration+Guide).
-
-# Image Variants
-
-The `sonarqube` images come in many flavors, each designed for a specific use case.
-
-## `sonarqube:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-## `sonarqube:<version>-alpine`
-
-This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
-
-This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
-
-To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
+The administration guide can be found [here](https://redirect.sonarsource.com/doc/administration-guide.html).
 
 # License
 

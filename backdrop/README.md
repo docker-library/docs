@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.10.1`, `1.10`, `1`, `1.10.1-apache`, `1.10-apache`, `1-apache`, `apache`, `latest` (*1/apache/Dockerfile*)](https://github.com/backdrop-ops/backdrop-docker/blob/de93346a2c589bd6fc7de4f4de784fdd17ddaaf9/1/apache/Dockerfile)
--	[`1.10.1-fpm`, `1.10-fpm`, `1-fpm`, `fpm` (*1/fpm/Dockerfile*)](https://github.com/backdrop-ops/backdrop-docker/blob/de93346a2c589bd6fc7de4f4de784fdd17ddaaf9/1/fpm/Dockerfile)
+-	[`1.13.2`, `1.13`, `1`, `1.13.2-apache`, `1.13-apache`, `1-apache`, `apache`, `latest`](https://github.com/backdrop-ops/backdrop-docker/blob/1c82e369b6bf1b8ab45becda7f9f9777fe7f6a7f/1/apache/Dockerfile)
+-	[`1.13.2-fpm`, `1.13-fpm`, `1-fpm`, `fpm`](https://github.com/backdrop-ops/backdrop-docker/blob/1c82e369b6bf1b8ab45becda7f9f9777fe7f6a7f/1/fpm/Dockerfile)
 
 # Quick reference
 
@@ -43,9 +43,6 @@ WARNING:
 
 -	**Source of this description**:  
 	[docs repo's `backdrop/` directory](https://github.com/docker-library/docs/tree/master/backdrop) ([history](https://github.com/docker-library/docs/commits/master/backdrop))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Backdrop CMS?
 
@@ -126,7 +123,6 @@ If you need additional PHP extensions, you'll need to create your own image `FRO
 The following Docker Hub features can help with the task of keeping your dependent images up-to-date:
 
 -	[Automated Builds](https://docs.docker.com/docker-hub/builds/) let Docker Hub automatically build your Dockerfile each time you push changes to it.
--	[Repository Links](https://docs.docker.com/docker-hub/builds/#repository-links) can ensure that your image is also rebuilt any time `backdrop` is updated.
 
 # License
 

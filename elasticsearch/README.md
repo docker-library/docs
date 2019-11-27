@@ -16,9 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.5.1` (*6/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/649743f29f4f3e9b54959cced3e059c5c4aaa444/6/Dockerfile)
--	[`5.6.13`, `5.6`, `5` (*5/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/a912899428b3c0854a463a30a3d7c5d52a088759/5/Dockerfile)
--	[`5.6.13-alpine`, `5.6-alpine`, `5-alpine` (*5/alpine/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/a912899428b3c0854a463a30a3d7c5d52a088759/5/alpine/Dockerfile)
+-	[`7.4.2`](https://github.com/docker-library/elasticsearch/blob/d2a9208235faa0165bd03dad612e897bdbcf09fc/7/Dockerfile)
+-	[`6.8.5`](https://github.com/docker-library/elasticsearch/blob/fb24d2b5bdbc212787c066480d818851f4da8f86/6/Dockerfile)
 
 # Quick reference
 
@@ -26,12 +25,10 @@ WARNING:
 	the [Elasticsearch Discuss Forums](https://discuss.elastic.co/c/elasticsearch), the [Elastic community](https://www.elastic.co/community)
 
 -	**Where to file issues**:  
-	For issues with Elasticsearch Docker Image: https://github.com/elastic/elasticsearch-docker/issues
-
-For issues with Elasticsearch: [https://github.com/elastic/elasticsearch/issues](https://github.com/elastic/elasticsearch/issues)
+	For issues with Elasticsearch Docker Image or Elasticsearch: https://github.com/elastic/elasticsearch/issues
 
 -	**Maintained by**:  
-	[the Elastic Team](https://github.com/elastic/elasticsearch-docker)
+	[the Elastic Team](https://github.com/elastic/elasticsearch)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/elasticsearch/)
@@ -46,9 +43,6 @@ For issues with Elasticsearch: [https://github.com/elastic/elasticsearch/issues]
 
 -	**Source of this description**:  
 	[docs repo's `elasticsearch/` directory](https://github.com/docker-library/docs/tree/master/elasticsearch) ([history](https://github.com/docker-library/docs/commits/master/elasticsearch))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Elasticsearch?
 

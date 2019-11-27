@@ -20,7 +20,8 @@ join() {
 
 commaJoin() {
 	local items=( $(xargs -n1 <<<"$1" | sort -u) ); shift
-	sep=', '
+
+	local sep=', '
 	case "${#items[@]}" in
 		0)
 			return
@@ -96,24 +97,9 @@ for tag in "${tags[@]}"; do
 	done
 done
 
-if [ "$text" ]; then
+if [ -n "$text" ]; then
 	default="$([ -f "$repoDir/variant.md" ] && cat "$repoDir/variant.md" || cat "$dir/variant.md")"
 	default+=$'\n' # parameter expansion eats the trailing newline
-
-	# buildpack-deps text
-	potentialTags="$(bashbrew list --uniq "$bbRepo" | cut -d: -f2)"
-	for tag in $potentialTags; do
-		baseImage="$(bashbrew cat -f '{{ .ArchDockerFrom (.TagEntry.Architectures | first) .TagEntry }}' "$bbRepo:$tag")"
-		case "$baseImage" in
-			buildpack-deps:*-*) ;; # "scm", "curl" -- not large images
-			buildpack-deps:*)
-				default+=$'\n' # give a little space
-				default+="$(< "$dir/variant-default-buildpack-deps.md")"
-				default+=$'\n' # parameter expansion eats the trailing newline
-				break
-				;;
-		esac
-	done
 
 	if [ "$repo" != 'debian' ] && [ "$repo" != 'ubuntu' ]; then
 		# what is 'jessie', 'stretch' and 'sid'
@@ -150,6 +136,21 @@ if [ "$text" ]; then
 			default+=$'\n' # parameter expansion eats the trailing newline
 		fi
 	fi
+
+	# buildpack-deps text
+	potentialTags="$(bashbrew list --uniq "$bbRepo" | cut -d: -f2)"
+	for tag in $potentialTags; do
+		baseImage="$(bashbrew cat -f '{{ .ArchLastStageFrom (.TagEntry.Architectures | first) .TagEntry }}' "$bbRepo:$tag" 2>/dev/null)"
+		case "$baseImage" in
+			buildpack-deps:*-*) ;; # "scm", "curl" -- not large images
+			buildpack-deps:*)
+				default+=$'\n' # give a little space
+				default+="$(< "$dir/variant-default-buildpack-deps.md")"
+				default+=$'\n' # parameter expansion eats the trailing newline
+				break
+				;;
+		esac
+	done
 
 	echo
 	echo

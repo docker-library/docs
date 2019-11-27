@@ -16,30 +16,22 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`indigo-ros-core`, `indigo-ros-core-trusty` (*ros/indigo/ubuntu/trusty/ros-core/Dockerfile*)](https://github.com/osrf/docker_images/blob/49d22242e02e9c541a9e85b657e1785617b6f470/ros/indigo/ubuntu/trusty/ros-core/Dockerfile)
--	[`indigo-ros-base`, `indigo-ros-base-trusty`, `indigo` (*ros/indigo/ubuntu/trusty/ros-base/Dockerfile*)](https://github.com/osrf/docker_images/blob/49d22242e02e9c541a9e85b657e1785617b6f470/ros/indigo/ubuntu/trusty/ros-base/Dockerfile)
--	[`indigo-robot`, `indigo-robot-trusty` (*ros/indigo/ubuntu/trusty/robot/Dockerfile*)](https://github.com/osrf/docker_images/blob/49d22242e02e9c541a9e85b657e1785617b6f470/ros/indigo/ubuntu/trusty/robot/Dockerfile)
--	[`indigo-perception`, `indigo-perception-trusty` (*ros/indigo/ubuntu/trusty/perception/Dockerfile*)](https://github.com/osrf/docker_images/blob/49d22242e02e9c541a9e85b657e1785617b6f470/ros/indigo/ubuntu/trusty/perception/Dockerfile)
--	[`kinetic-ros-core`, `kinetic-ros-core-xenial` (*ros/kinetic/ubuntu/xenial/ros-core/Dockerfile*)](https://github.com/osrf/docker_images/blob/49d22242e02e9c541a9e85b657e1785617b6f470/ros/kinetic/ubuntu/xenial/ros-core/Dockerfile)
--	[`kinetic-ros-base`, `kinetic-ros-base-xenial`, `kinetic` (*ros/kinetic/ubuntu/xenial/ros-base/Dockerfile*)](https://github.com/osrf/docker_images/blob/49d22242e02e9c541a9e85b657e1785617b6f470/ros/kinetic/ubuntu/xenial/ros-base/Dockerfile)
--	[`kinetic-robot`, `kinetic-robot-xenial` (*ros/kinetic/ubuntu/xenial/robot/Dockerfile*)](https://github.com/osrf/docker_images/blob/49d22242e02e9c541a9e85b657e1785617b6f470/ros/kinetic/ubuntu/xenial/robot/Dockerfile)
--	[`kinetic-perception`, `kinetic-perception-xenial` (*ros/kinetic/ubuntu/xenial/perception/Dockerfile*)](https://github.com/osrf/docker_images/blob/49d22242e02e9c541a9e85b657e1785617b6f470/ros/kinetic/ubuntu/xenial/perception/Dockerfile)
--	[`lunar-ros-core`, `lunar-ros-core-xenial` (*ros/lunar/ubuntu/xenial/ros-core/Dockerfile*)](https://github.com/osrf/docker_images/blob/49d22242e02e9c541a9e85b657e1785617b6f470/ros/lunar/ubuntu/xenial/ros-core/Dockerfile)
--	[`lunar-ros-base`, `lunar-ros-base-xenial`, `lunar` (*ros/lunar/ubuntu/xenial/ros-base/Dockerfile*)](https://github.com/osrf/docker_images/blob/49d22242e02e9c541a9e85b657e1785617b6f470/ros/lunar/ubuntu/xenial/ros-base/Dockerfile)
--	[`lunar-robot`, `lunar-robot-xenial` (*ros/lunar/ubuntu/xenial/robot/Dockerfile*)](https://github.com/osrf/docker_images/blob/49d22242e02e9c541a9e85b657e1785617b6f470/ros/lunar/ubuntu/xenial/robot/Dockerfile)
--	[`lunar-perception`, `lunar-perception-xenial` (*ros/lunar/ubuntu/xenial/perception/Dockerfile*)](https://github.com/osrf/docker_images/blob/49d22242e02e9c541a9e85b657e1785617b6f470/ros/lunar/ubuntu/xenial/perception/Dockerfile)
--	[`lunar-ros-core-stretch` (*ros/lunar/debian/stretch/ros-core/Dockerfile*)](https://github.com/osrf/docker_images/blob/49d22242e02e9c541a9e85b657e1785617b6f470/ros/lunar/debian/stretch/ros-core/Dockerfile)
--	[`lunar-ros-base-stretch` (*ros/lunar/debian/stretch/ros-base/Dockerfile*)](https://github.com/osrf/docker_images/blob/49d22242e02e9c541a9e85b657e1785617b6f470/ros/lunar/debian/stretch/ros-base/Dockerfile)
--	[`lunar-robot-stretch` (*ros/lunar/debian/stretch/robot/Dockerfile*)](https://github.com/osrf/docker_images/blob/49d22242e02e9c541a9e85b657e1785617b6f470/ros/lunar/debian/stretch/robot/Dockerfile)
--	[`lunar-perception-stretch` (*ros/lunar/debian/stretch/perception/Dockerfile*)](https://github.com/osrf/docker_images/blob/49d22242e02e9c541a9e85b657e1785617b6f470/ros/lunar/debian/stretch/perception/Dockerfile)
--	[`melodic-ros-core`, `melodic-ros-core-bionic` (*ros/melodic/ubuntu/bionic/ros-core/Dockerfile*)](https://github.com/osrf/docker_images/blob/49d22242e02e9c541a9e85b657e1785617b6f470/ros/melodic/ubuntu/bionic/ros-core/Dockerfile)
--	[`melodic-ros-base`, `melodic-ros-base-bionic`, `melodic`, `latest` (*ros/melodic/ubuntu/bionic/ros-base/Dockerfile*)](https://github.com/osrf/docker_images/blob/49d22242e02e9c541a9e85b657e1785617b6f470/ros/melodic/ubuntu/bionic/ros-base/Dockerfile)
--	[`melodic-robot`, `melodic-robot-bionic` (*ros/melodic/ubuntu/bionic/robot/Dockerfile*)](https://github.com/osrf/docker_images/blob/49d22242e02e9c541a9e85b657e1785617b6f470/ros/melodic/ubuntu/bionic/robot/Dockerfile)
--	[`melodic-perception`, `melodic-perception-bionic` (*ros/melodic/ubuntu/bionic/perception/Dockerfile*)](https://github.com/osrf/docker_images/blob/49d22242e02e9c541a9e85b657e1785617b6f470/ros/melodic/ubuntu/bionic/perception/Dockerfile)
--	[`melodic-ros-core-stretch` (*ros/melodic/debian/stretch/ros-core/Dockerfile*)](https://github.com/osrf/docker_images/blob/49d22242e02e9c541a9e85b657e1785617b6f470/ros/melodic/debian/stretch/ros-core/Dockerfile)
--	[`melodic-ros-base-stretch` (*ros/melodic/debian/stretch/ros-base/Dockerfile*)](https://github.com/osrf/docker_images/blob/49d22242e02e9c541a9e85b657e1785617b6f470/ros/melodic/debian/stretch/ros-base/Dockerfile)
--	[`melodic-robot-stretch` (*ros/melodic/debian/stretch/robot/Dockerfile*)](https://github.com/osrf/docker_images/blob/49d22242e02e9c541a9e85b657e1785617b6f470/ros/melodic/debian/stretch/robot/Dockerfile)
--	[`melodic-perception-stretch` (*ros/melodic/debian/stretch/perception/Dockerfile*)](https://github.com/osrf/docker_images/blob/49d22242e02e9c541a9e85b657e1785617b6f470/ros/melodic/debian/stretch/perception/Dockerfile)
+-	[`kinetic-ros-core`, `kinetic-ros-core-xenial`](https://github.com/osrf/docker_images/blob/460ddc4707530c2179788e2100d5c624cf2af3d7/ros/kinetic/ubuntu/xenial/ros-core/Dockerfile)
+-	[`kinetic-ros-base`, `kinetic-ros-base-xenial`, `kinetic`](https://github.com/osrf/docker_images/blob/460ddc4707530c2179788e2100d5c624cf2af3d7/ros/kinetic/ubuntu/xenial/ros-base/Dockerfile)
+-	[`kinetic-robot`, `kinetic-robot-xenial`](https://github.com/osrf/docker_images/blob/460ddc4707530c2179788e2100d5c624cf2af3d7/ros/kinetic/ubuntu/xenial/robot/Dockerfile)
+-	[`kinetic-perception`, `kinetic-perception-xenial`](https://github.com/osrf/docker_images/blob/460ddc4707530c2179788e2100d5c624cf2af3d7/ros/kinetic/ubuntu/xenial/perception/Dockerfile)
+-	[`melodic-ros-core`, `melodic-ros-core-bionic`](https://github.com/osrf/docker_images/blob/460ddc4707530c2179788e2100d5c624cf2af3d7/ros/melodic/ubuntu/bionic/ros-core/Dockerfile)
+-	[`melodic-ros-base`, `melodic-ros-base-bionic`, `melodic`, `latest`](https://github.com/osrf/docker_images/blob/460ddc4707530c2179788e2100d5c624cf2af3d7/ros/melodic/ubuntu/bionic/ros-base/Dockerfile)
+-	[`melodic-robot`, `melodic-robot-bionic`](https://github.com/osrf/docker_images/blob/460ddc4707530c2179788e2100d5c624cf2af3d7/ros/melodic/ubuntu/bionic/robot/Dockerfile)
+-	[`melodic-perception`, `melodic-perception-bionic`](https://github.com/osrf/docker_images/blob/460ddc4707530c2179788e2100d5c624cf2af3d7/ros/melodic/ubuntu/bionic/perception/Dockerfile)
+-	[`melodic-ros-core-stretch`](https://github.com/osrf/docker_images/blob/460ddc4707530c2179788e2100d5c624cf2af3d7/ros/melodic/debian/stretch/ros-core/Dockerfile)
+-	[`melodic-ros-base-stretch`](https://github.com/osrf/docker_images/blob/460ddc4707530c2179788e2100d5c624cf2af3d7/ros/melodic/debian/stretch/ros-base/Dockerfile)
+-	[`melodic-robot-stretch`](https://github.com/osrf/docker_images/blob/460ddc4707530c2179788e2100d5c624cf2af3d7/ros/melodic/debian/stretch/robot/Dockerfile)
+-	[`melodic-perception-stretch`](https://github.com/osrf/docker_images/blob/460ddc4707530c2179788e2100d5c624cf2af3d7/ros/melodic/debian/stretch/perception/Dockerfile)
+-	[`crystal-ros-core`, `crystal-ros-core-bionic`](https://github.com/osrf/docker_images/blob/1eb48f1275f0a9153d0b0ed088bed338f1a79ead/ros/crystal/ubuntu/bionic/ros-core/Dockerfile)
+-	[`crystal-ros-base`, `crystal-ros-base-bionic`, `crystal`](https://github.com/osrf/docker_images/blob/1eb48f1275f0a9153d0b0ed088bed338f1a79ead/ros/crystal/ubuntu/bionic/ros-base/Dockerfile)
+-	[`dashing-ros-core`, `dashing-ros-core-bionic`](https://github.com/osrf/docker_images/blob/1eb48f1275f0a9153d0b0ed088bed338f1a79ead/ros/dashing/ubuntu/bionic/ros-core/Dockerfile)
+-	[`dashing-ros-base`, `dashing-ros-base-bionic`, `dashing`](https://github.com/osrf/docker_images/blob/1eb48f1275f0a9153d0b0ed088bed338f1a79ead/ros/dashing/ubuntu/bionic/ros-base/Dockerfile)
 
 # Quick reference
 
@@ -65,9 +57,6 @@ WARNING:
 
 -	**Source of this description**:  
 	[docs repo's `ros/` directory](https://github.com/docker-library/docs/tree/master/ros) ([history](https://github.com/docker-library/docs/commits/master/ros))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is [ROS](http://www.ros.org/)?
 
@@ -125,7 +114,7 @@ $ docker run -v "/home/ubuntu/.ros/:/root/.ros/" ros
 
 ### Devices
 
-Some application may require device access for acquiring images from connected cameras, control input from human interface device, or GPUS for hardware acceleration. This can be done using the [`--device`](https://docs.docker.com/reference/run/) run argument to mount the device inside the container, providing processes inside hardware access.
+Some application may require device access for acquiring images from connected cameras, control input from human interface device, or GPUS for hardware acceleration. This can be done using the [`--device`](https://docs.docker.com/engine/reference/commandline/run/#add-host-device-to-container---device) run argument to mount the device inside the container, providing processes inside hardware access.
 
 ### Networks
 
@@ -247,7 +236,7 @@ $ docker rm master talker listener
 
 ### Compose
 
-Now that you have an appreciation for bootstrapping a distributed ROS example manually, lets try and automate it using [`docker-compose`](https://docs.docker.com/compose/)\.
+Now that you have an appreciation for bootstrapping a distributed ROS example manually, lets try and automate it using [`docker-compose`](https://docs.docker.com/compose/).
 
 > Start by making a folder named `rostutorials` and moving the Dockerfile we used earlier inside this directory. Then create a yaml file named `docker-compose.yml` in the same directory and paste the following inside:
 
@@ -302,7 +291,7 @@ $ docker-compose stop
 $ docker-compose rm
 ```
 
-> Note: the auto-generated network, `rostutorials_default`, will persist over the life of the docker engine or until you explicitly remove it using [`docker network rm`](https://docs.docker.com/engine/reference/commandline/network_rm/)\.
+> Note: the auto-generated network, `rostutorials_default`, will persist over the life of the docker engine or until you explicitly remove it using [`docker network rm`](https://docs.docker.com/engine/reference/commandline/network_rm/).
 
 # More Resources
 

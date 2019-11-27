@@ -16,24 +16,27 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8-jre-1.7.5-jaxrs` (*8-jre-1.7.5-jaxrs/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/654f74c68d07c36d3ca72475423c0db65245673e/8-jre-1.7.5-jaxrs/Dockerfile)
--	[`8-jre-1.7.5-plume` (*8-jre-1.7.5-plume/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/654f74c68d07c36d3ca72475423c0db65245673e/8-jre-1.7.5-plume/Dockerfile)
--	[`8-jre-1.7.5-plus` (*8-jre-1.7.5-plus/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/654f74c68d07c36d3ca72475423c0db65245673e/8-jre-1.7.5-plus/Dockerfile)
--	[`8-jre-1.7.5-webprofile` (*8-jre-1.7.5-webprofile/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/654f74c68d07c36d3ca72475423c0db65245673e/8-jre-1.7.5-webprofile/Dockerfile)
--	[`8-jre-7.0.4-plume` (*8-jre-7.0.4-plume/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/654f74c68d07c36d3ca72475423c0db65245673e/8-jre-7.0.4-plume/Dockerfile)
--	[`8-jre-7.0.4-plus` (*8-jre-7.0.4-plus/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/654f74c68d07c36d3ca72475423c0db65245673e/8-jre-7.0.4-plus/Dockerfile)
--	[`8-jre-7.0.4-webprofile` (*8-jre-7.0.4-webprofile/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/654f74c68d07c36d3ca72475423c0db65245673e/8-jre-7.0.4-webprofile/Dockerfile)
--	[`8-jre-7.0.5-plume` (*8-jre-7.0.5-plume/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/654f74c68d07c36d3ca72475423c0db65245673e/8-jre-7.0.5-plume/Dockerfile)
--	[`8-jre-7.0.5-plus` (*8-jre-7.0.5-plus/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/654f74c68d07c36d3ca72475423c0db65245673e/8-jre-7.0.5-plus/Dockerfile)
--	[`8-jre-7.0.5-webprofile` (*8-jre-7.0.5-webprofile/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/654f74c68d07c36d3ca72475423c0db65245673e/8-jre-7.0.5-webprofile/Dockerfile)
--	[`8-jre-7.1.0-plume` (*8-jre-7.1.0-plume/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/654f74c68d07c36d3ca72475423c0db65245673e/8-jre-7.1.0-plume/Dockerfile)
--	[`8-jre-7.1.0-plus` (*8-jre-7.1.0-plus/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/654f74c68d07c36d3ca72475423c0db65245673e/8-jre-7.1.0-plus/Dockerfile)
--	[`8-jre-7.1.0-microprofile` (*8-jre-7.1.0-microprofile/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/654f74c68d07c36d3ca72475423c0db65245673e/8-jre-7.1.0-microprofile/Dockerfile)
--	[`8-jre-7.1.0-webprofile` (*8-jre-7.1.0-webprofile/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/654f74c68d07c36d3ca72475423c0db65245673e/8-jre-7.1.0-webprofile/Dockerfile)
--	[`8-jre-8.0.0-M1-plume` (*8-jre-8.0.0-M1-plume/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/654f74c68d07c36d3ca72475423c0db65245673e/8-jre-8.0.0-M1-plume/Dockerfile)
--	[`8-jre-8.0.0-M1-plus` (*8-jre-8.0.0-M1-plus/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/654f74c68d07c36d3ca72475423c0db65245673e/8-jre-8.0.0-M1-plus/Dockerfile)
--	[`8-jre-8.0.0-M1-microprofile` (*8-jre-8.0.0-M1-microprofile/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/654f74c68d07c36d3ca72475423c0db65245673e/8-jre-8.0.0-M1-microprofile/Dockerfile)
--	[`8-jre-8.0.0-M1-webprofile`, `latest` (*8-jre-8.0.0-M1-webprofile/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/654f74c68d07c36d3ca72475423c0db65245673e/8-jre-8.0.0-M1-webprofile/Dockerfile)
+-	[`8-jre-1.7.5-jaxrs`](https://github.com/tomitribe/docker-tomee/blob/fbe01211d21051406ffaae5bdf41d1f629caf58f/8-jre-1.7.5-jaxrs/Dockerfile)
+-	[`8-jre-1.7.5-plume`](https://github.com/tomitribe/docker-tomee/blob/fbe01211d21051406ffaae5bdf41d1f629caf58f/8-jre-1.7.5-plume/Dockerfile)
+-	[`8-jre-1.7.5-plus`](https://github.com/tomitribe/docker-tomee/blob/fbe01211d21051406ffaae5bdf41d1f629caf58f/8-jre-1.7.5-plus/Dockerfile)
+-	[`8-jre-1.7.5-webprofile`](https://github.com/tomitribe/docker-tomee/blob/fbe01211d21051406ffaae5bdf41d1f629caf58f/8-jre-1.7.5-webprofile/Dockerfile)
+-	[`8-jre-7.0.4-plume`](https://github.com/tomitribe/docker-tomee/blob/fbe01211d21051406ffaae5bdf41d1f629caf58f/8-jre-7.0.4-plume/Dockerfile)
+-	[`8-jre-7.0.4-plus`](https://github.com/tomitribe/docker-tomee/blob/fbe01211d21051406ffaae5bdf41d1f629caf58f/8-jre-7.0.4-plus/Dockerfile)
+-	[`8-jre-7.0.4-webprofile`](https://github.com/tomitribe/docker-tomee/blob/fbe01211d21051406ffaae5bdf41d1f629caf58f/8-jre-7.0.4-webprofile/Dockerfile)
+-	[`8-jre-7.0.5-plume`](https://github.com/tomitribe/docker-tomee/blob/fbe01211d21051406ffaae5bdf41d1f629caf58f/8-jre-7.0.5-plume/Dockerfile)
+-	[`8-jre-7.0.5-plus`](https://github.com/tomitribe/docker-tomee/blob/fbe01211d21051406ffaae5bdf41d1f629caf58f/8-jre-7.0.5-plus/Dockerfile)
+-	[`8-jre-7.0.5-webprofile`](https://github.com/tomitribe/docker-tomee/blob/fbe01211d21051406ffaae5bdf41d1f629caf58f/8-jre-7.0.5-webprofile/Dockerfile)
+-	[`8-jre-7.0.6-plume`](https://github.com/tomitribe/docker-tomee/blob/fbe01211d21051406ffaae5bdf41d1f629caf58f/8-jre-7.0.6-plume/Dockerfile)
+-	[`8-jre-7.0.6-plus`](https://github.com/tomitribe/docker-tomee/blob/fbe01211d21051406ffaae5bdf41d1f629caf58f/8-jre-7.0.6-plus/Dockerfile)
+-	[`8-jre-7.0.6-webprofile`](https://github.com/tomitribe/docker-tomee/blob/fbe01211d21051406ffaae5bdf41d1f629caf58f/8-jre-7.0.6-webprofile/Dockerfile)
+-	[`8-jre-7.1.0-plume`](https://github.com/tomitribe/docker-tomee/blob/fbe01211d21051406ffaae5bdf41d1f629caf58f/8-jre-7.1.0-plume/Dockerfile)
+-	[`8-jre-7.1.0-plus`](https://github.com/tomitribe/docker-tomee/blob/fbe01211d21051406ffaae5bdf41d1f629caf58f/8-jre-7.1.0-plus/Dockerfile)
+-	[`8-jre-7.1.0-microprofile`](https://github.com/tomitribe/docker-tomee/blob/fbe01211d21051406ffaae5bdf41d1f629caf58f/8-jre-7.1.0-microprofile/Dockerfile)
+-	[`8-jre-7.1.0-webprofile`](https://github.com/tomitribe/docker-tomee/blob/fbe01211d21051406ffaae5bdf41d1f629caf58f/8-jre-7.1.0-webprofile/Dockerfile)
+-	[`11-jre-8.0.0-M3-plume`](https://github.com/tomitribe/docker-tomee/blob/fbe01211d21051406ffaae5bdf41d1f629caf58f/11-jre-8.0.0-M3-plume/Dockerfile)
+-	[`11-jre-8.0.0-M3-plus`](https://github.com/tomitribe/docker-tomee/blob/fbe01211d21051406ffaae5bdf41d1f629caf58f/11-jre-8.0.0-M3-plus/Dockerfile)
+-	[`11-jre-8.0.0-M3-microprofile`](https://github.com/tomitribe/docker-tomee/blob/fbe01211d21051406ffaae5bdf41d1f629caf58f/11-jre-8.0.0-M3-microprofile/Dockerfile)
+-	[`11-jre-8.0.0-M3-webprofile`, `latest`](https://github.com/tomitribe/docker-tomee/blob/fbe01211d21051406ffaae5bdf41d1f629caf58f/11-jre-8.0.0-M3-webprofile/Dockerfile)
 
 # Quick reference
 
@@ -47,7 +50,7 @@ WARNING:
 	[the Docker Community](https://github.com/tomitribe/docker-tomee)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/tomee/), [`arm32v5`](https://hub.docker.com/r/arm32v5/tomee/), [`arm32v7`](https://hub.docker.com/r/arm32v7/tomee/), [`arm64v8`](https://hub.docker.com/r/arm64v8/tomee/), [`i386`](https://hub.docker.com/r/i386/tomee/), [`ppc64le`](https://hub.docker.com/r/ppc64le/tomee/), [`s390x`](https://hub.docker.com/r/s390x/tomee/)
+	[`amd64`](https://hub.docker.com/r/amd64/tomee/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/tomee/` directory](https://github.com/docker-library/repo-info/blob/master/repos/tomee) ([history](https://github.com/docker-library/repo-info/commits/master/repos/tomee))  
@@ -59,9 +62,6 @@ WARNING:
 
 -	**Source of this description**:  
 	[docs repo's `tomee/` directory](https://github.com/docker-library/docs/tree/master/tomee) ([history](https://github.com/docker-library/docs/commits/master/tomee))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is TomEE?
 
@@ -123,7 +123,9 @@ The configuration files are available in `/usr/local/tomee/conf/`. By default, n
 
 You can also use this image as base image for deploying your war application. To do it you need to create a Dockerfile based on Tomee Docker image and add the war file in `webapps` directory:
 
-	COPY <locationofapplication>/<warfile> /usr/local/tomee/webapps/<warfile>
+```dockerfile
+COPY <locationofapplication>/<warfile> /usr/local/tomee/webapps/<warfile>
+```
 
 # License
 

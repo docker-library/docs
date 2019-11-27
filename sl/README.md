@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7`, `latest` (*sl7/Dockerfile*)](https://github.com/scientificlinux/sl-docker/blob/3d25951933c16ccfdccb4020122ec97fbef4d9c5/sl7/Dockerfile)
--	[`6` (*sl6/Dockerfile*)](https://github.com/scientificlinux/sl-docker/blob/53e0b1d1819c45868d2ede8accd285c3f164d038/sl6/Dockerfile)
+-	[`7`, `latest`](https://github.com/scientificlinux/sl-docker/blob/6d075d2937271d0ae43df4046ea4e7a9c8f17fbf/sl7/Dockerfile)
+-	[`6`](https://github.com/scientificlinux/sl-docker/blob/c0733b996ad5d7a583e4029b1c7888dc4f52e6f2/sl6/Dockerfile)
 
 # Quick reference
 
@@ -43,9 +43,6 @@ WARNING:
 
 -	**Source of this description**:  
 	[docs repo's `sl/` directory](https://github.com/docker-library/docs/tree/master/sl) ([history](https://github.com/docker-library/docs/commits/master/sl))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # Scientific Linux
 

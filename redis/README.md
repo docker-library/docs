@@ -16,12 +16,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.0.1`, `5.0`, `5`, `latest`, `5.0.1-stretch`, `5.0-stretch`, `5-stretch`, `stretch` (*5.0/Dockerfile*)](https://github.com/docker-library/redis/blob/a5d019077b46494751482512c200c4df34463dc6/5.0/Dockerfile)
--	[`5.0.1-32bit`, `5.0-32bit`, `5-32bit`, `32bit`, `5.0.1-32bit-stretch`, `5.0-32bit-stretch`, `5-32bit-stretch`, `32bit-stretch` (*5.0/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/a5d019077b46494751482512c200c4df34463dc6/5.0/32bit/Dockerfile)
--	[`5.0.1-alpine`, `5.0-alpine`, `5-alpine`, `alpine`, `5.0.1-alpine3.8`, `5.0-alpine3.8`, `5-alpine3.8`, `alpine3.8` (*5.0/alpine/Dockerfile*)](https://github.com/docker-library/redis/blob/cad514bada42abbaba0092c5c94e94553b19f9cf/5.0/alpine/Dockerfile)
--	[`4.0.11`, `4.0`, `4`, `4.0.11-stretch`, `4.0-stretch`, `4-stretch` (*4.0/Dockerfile*)](https://github.com/docker-library/redis/blob/a5d019077b46494751482512c200c4df34463dc6/4.0/Dockerfile)
--	[`4.0.11-32bit`, `4.0-32bit`, `4-32bit`, `4.0.11-32bit-stretch`, `4.0-32bit-stretch`, `4-32bit-stretch` (*4.0/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/a5d019077b46494751482512c200c4df34463dc6/4.0/32bit/Dockerfile)
--	[`4.0.11-alpine`, `4.0-alpine`, `4-alpine`, `4.0.11-alpine3.8`, `4.0-alpine3.8`, `4-alpine3.8` (*4.0/alpine/Dockerfile*)](https://github.com/docker-library/redis/blob/53348c1c52c3d2e8666fbf748bc9e2297c35b452/4.0/alpine/Dockerfile)
+-	[`5.0.7`, `5.0`, `5`, `latest`, `5.0.7-buster`, `5.0-buster`, `5-buster`, `buster`](https://github.com/docker-library/redis/blob/d42494ab2d96070c8d83f37a7542fbbffd999988/5.0/Dockerfile)
+-	[`5.0.7-32bit`, `5.0-32bit`, `5-32bit`, `32bit`, `5.0.7-32bit-buster`, `5.0-32bit-buster`, `5-32bit-buster`, `32bit-buster`](https://github.com/docker-library/redis/blob/d42494ab2d96070c8d83f37a7542fbbffd999988/5.0/32bit/Dockerfile)
+-	[`5.0.7-alpine`, `5.0-alpine`, `5-alpine`, `alpine`, `5.0.7-alpine3.10`, `5.0-alpine3.10`, `5-alpine3.10`, `alpine3.10`](https://github.com/docker-library/redis/blob/d42494ab2d96070c8d83f37a7542fbbffd999988/5.0/alpine/Dockerfile)
+-	[`4.0.14`, `4.0`, `4`, `4.0.14-buster`, `4.0-buster`, `4-buster`](https://github.com/docker-library/redis/blob/0b2910f292fa6ac32318cb2acc84355b11aa8a7a/4.0/Dockerfile)
+-	[`4.0.14-32bit`, `4.0-32bit`, `4-32bit`, `4.0.14-32bit-buster`, `4.0-32bit-buster`, `4-32bit-buster`](https://github.com/docker-library/redis/blob/0b2910f292fa6ac32318cb2acc84355b11aa8a7a/4.0/32bit/Dockerfile)
+-	[`4.0.14-alpine`, `4.0-alpine`, `4-alpine`, `4.0.14-alpine3.10`, `4.0-alpine3.10`, `4-alpine3.10`](https://github.com/docker-library/redis/blob/0b2910f292fa6ac32318cb2acc84355b11aa8a7a/4.0/alpine/Dockerfile)
 
 # Quick reference
 
@@ -48,9 +48,6 @@ WARNING:
 -	**Source of this description**:  
 	[docs repo's `redis/` directory](https://github.com/docker-library/docs/tree/master/redis) ([history](https://github.com/docker-library/docs/commits/master/redis))
 
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
-
 # What is Redis?
 
 Redis is an open-source, networked, in-memory, key-value data store with optional durability. It is written in ANSI C. The development of Redis is sponsored by Redis Labs today; before that, it was sponsored by Pivotal and VMware. According to the monthly ranking by DB-Engines.com, Redis is the most popular key-value store. The name Redis means REmote DIctionary Server.
@@ -59,6 +56,14 @@ Redis is an open-source, networked, in-memory, key-value data store with optiona
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/01c12653951b2fe592c1f93a13b4e289ada0e3a1/redis/logo.png)
 
+# Security
+
+For the ease of accessing Redis from other containers via Docker networking, the "Protected mode" is turned off by default. This means that if you expose the port outside of your host (e.g., via `-p` on `docker run`), it will be open without a password to anyone. It is **highly** recommended to set a password (by supplying a config file) if you plan on exposing your Redis instance to the internet. For further information, see the following links about Redis security:
+
+-	[Redis documentation on security](https://redis.io/topics/security)
+-	[Protected mode](https://redis.io/topics/security#protected-mode)
+-	[A few things about Redis security by antirez](http://antirez.com/news/96)
+
 # How to use this image
 
 ## start a redis instance
@@ -66,8 +71,6 @@ Redis is an open-source, networked, in-memory, key-value data store with optiona
 ```console
 $ docker run --name some-redis -d redis
 ```
-
-This image includes `EXPOSE 6379` (the redis port), so standard container linking will make it automatically available to the linked containers (as the following examples illustrate).
 
 ## start with persistent storage
 
@@ -79,16 +82,10 @@ If persistence is enabled, data is stored in the `VOLUME /data`, which can be us
 
 For more about Redis Persistence, see [http://redis.io/topics/persistence](http://redis.io/topics/persistence).
 
-## connect to it from an application
+## connecting via `redis-cli`
 
 ```console
-$ docker run --name some-app --link some-redis:redis -d application-that-uses-redis
-```
-
-## ... or via `redis-cli`
-
-```console
-$ docker run -it --link some-redis:redis --rm redis redis-cli -h redis -p 6379
+$ docker run -it --network some-network --rm redis redis-cli -h some-redis
 ```
 
 ## Additionally, If you want to use your own redis.conf ...
@@ -129,7 +126,7 @@ The `redis` images come in many flavors, each designed for a specific use case.
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like stretch in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on.
+Some of these tags may have names like buster in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 ## `redis:<version>-alpine`
 

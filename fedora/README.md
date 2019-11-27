@@ -16,11 +16,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`27` (*x86_64//Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/e1796b2753d5a5731de5915661e4639c4342b950/x86_64//Dockerfile)
--	[`26` (*x86_64//Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/035aa2a3970e4e10a9a6ae0b79322b882bfe50d3/x86_64//Dockerfile)
--	[`rawhide`, `30` (*x86_64//Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/f65a23bf343b7bb6b1e32e46ba8e1157f23761fa/x86_64//Dockerfile)
--	[`28` (*x86_64//Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/5b1abab687c875971ba462626ea49dc58f53f8a1/x86_64//Dockerfile)
--	[`latest`, `29` (*x86_64//Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/4cdb4cf9fd9b2a569a3f90c0ac28e76fe6d3e9e1/x86_64//Dockerfile)
+-	[`26`](https://github.com/fedora-cloud/docker-brew-fedora/blob/035aa2a3970e4e10a9a6ae0b79322b882bfe50d3/x86_64/Dockerfile)
+-	[`27`](https://github.com/fedora-cloud/docker-brew-fedora/blob/e1796b2753d5a5731de5915661e4639c4342b950/x86_64/Dockerfile)
+-	[`28`](https://github.com/fedora-cloud/docker-brew-fedora/blob/aa106da2be30656a7ccb32b96f6788031ce8656f/x86_64/Dockerfile)
+-	[`29`](https://github.com/fedora-cloud/docker-brew-fedora/blob/4dbc2ccd3b4d52258981eaf12043025054d53023/x86_64/Dockerfile)
+-	[`30`](https://github.com/fedora-cloud/docker-brew-fedora/blob/14e0023deca67bb8b1be7803949f804f490b7d1a/x86_64/Dockerfile)
+-	[`latest`, `31`](https://github.com/fedora-cloud/docker-brew-fedora/blob/a531762a988cc17d88aa823350ba64596aadf721/x86_64/Dockerfile)
+-	[`rawhide`, `32`](https://github.com/fedora-cloud/docker-brew-fedora/blob/0e2f9f74eaac694ba913812d9e1f889e45638a2b/x86_64/Dockerfile)
 
 # Quick reference
 
@@ -47,9 +49,6 @@ WARNING:
 -	**Source of this description**:  
 	[docs repo's `fedora/` directory](https://github.com/docker-library/docs/tree/master/fedora) ([history](https://github.com/docker-library/docs/commits/master/fedora))
 
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
-
 # Fedora
 
 This image serves as the `official Fedora image` for the [Fedora Distribution](https://getfedora.org/).
@@ -58,7 +57,7 @@ This image serves as the `official Fedora image` for the [Fedora Distribution](h
 
 The `fedora:latest` tag will always point to the latest stable release.
 
-This image is a relatively small footprint in comparison to a standard Fedora installation. This image is generated in the [Fedora Build System](http://koji.fedoraproject.org/koji/) and is built from [this kickstart file](https://git.fedorahosted.org/cgit/spin-kickstarts.git/tree/fedora-docker-base.ks).
+This image is a relatively small footprint in comparison to a standard Fedora installation. This image is generated in the [Fedora Build System](http://koji.fedoraproject.org/koji/) and is built from [this kickstart file](https://pagure.io/fedora-kickstarts/blob/master/f/fedora-container-base.ks).
 
 [Fedora Rawhide](https://fedoraproject.org/wiki/Releases/Rawhide) is available via `fedora:rawhide` and any specific version of Fedora as `fedora:$version` (example: `fedora:23`).
 

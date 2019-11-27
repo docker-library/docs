@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.1.20`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/cassandra/blob/5c58a3353bb4d533f78bf809f1e55ea0b67b4ba5/2.1/Dockerfile)
--	[`2.2.13`, `2.2`, `2` (*2.2/Dockerfile*)](https://github.com/docker-library/cassandra/blob/5c58a3353bb4d533f78bf809f1e55ea0b67b4ba5/2.2/Dockerfile)
--	[`3.0.17`, `3.0` (*3.0/Dockerfile*)](https://github.com/docker-library/cassandra/blob/5c58a3353bb4d533f78bf809f1e55ea0b67b4ba5/3.0/Dockerfile)
--	[`3.11.3`, `3.11`, `3`, `latest` (*3.11/Dockerfile*)](https://github.com/docker-library/cassandra/blob/5c58a3353bb4d533f78bf809f1e55ea0b67b4ba5/3.11/Dockerfile)
+-	[`2.1.21`, `2.1`](https://github.com/docker-library/cassandra/blob/f98d3fc5282a99cdfe1ec8aa808d6313080137c0/2.1/Dockerfile)
+-	[`2.2.15`, `2.2`, `2`](https://github.com/docker-library/cassandra/blob/2852d6ace9623301bd831e38a6993a73f0a640a1/2.2/Dockerfile)
+-	[`3.0.19`, `3.0`](https://github.com/docker-library/cassandra/blob/006818b41131828443e1e192a7ad94a84fe668b9/3.0/Dockerfile)
+-	[`3.11.5`, `3.11`, `3`, `latest`](https://github.com/docker-library/cassandra/blob/e5b7ed497ff74587560682dd4c6a2e9b01f818d9/3.11/Dockerfile)
 
 # Quick reference
 
@@ -46,9 +46,6 @@ WARNING:
 -	**Source of this description**:  
 	[docs repo's `cassandra/` directory](https://github.com/docker-library/docs/tree/master/cassandra) ([history](https://github.com/docker-library/docs/commits/master/cassandra))
 
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
-
 # What is Cassandra?
 
 Apache Cassandra is an open source distributed database management system designed to handle large amounts of data across many commodity servers, providing high availability with no single point of failure. Cassandra offers robust support for clusters spanning multiple datacenters, with asynchronous masterless replication allowing low latency operations for all clients.
@@ -64,33 +61,17 @@ Apache Cassandra is an open source distributed database management system design
 Starting a Cassandra instance is simple:
 
 ```console
-$ docker run --name some-cassandra -d cassandra:tag
+$ docker run --name some-cassandra --network some-network -d cassandra:tag
 ```
 
 ... where `some-cassandra` is the name you want to assign to your container and `tag` is the tag specifying the Cassandra version you want. See the list above for relevant tags.
-
-## Connect to Cassandra from an application in another Docker container
-
-This image exposes the standard Cassandra ports (see the [Cassandra FAQ](https://wiki.apache.org/cassandra/FAQ#ports)), so container linking makes the Cassandra instance available to other application containers. Start your application container like this in order to link it to the Cassandra container:
-
-```console
-$ docker run --name some-app --link some-cassandra:cassandra -d app-that-uses-cassandra
-```
 
 ## Make a cluster
 
 Using the environment variables documented below, there are two cluster scenarios: instances on the same machine and instances on separate machines. For the same machine, start the instance as described above. To start other instances, just tell each new node where the first is.
 
 ```console
-$ docker run --name some-cassandra2 -d -e CASSANDRA_SEEDS="$(docker inspect --format='{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' some-cassandra)" cassandra:tag
-```
-
-... where `some-cassandra` is the name of your original Cassandra Server container, taking advantage of `docker inspect` to get the IP address of the other container.
-
-Or you may use the docker run --link option to tell the new node where the first is:
-
-```console
-$ docker run --name some-cassandra2 -d --link some-cassandra:cassandra cassandra:tag
+$ docker run --name some-cassandra2 -d --network some-network -e CASSANDRA_SEEDS=some-cassandra cassandra:tag
 ```
 
 For separate machines (ie, two VMs on a cloud provider), you need to tell Cassandra what IP address to advertise to the other nodes (since the address of the container is behind the docker bridge).
@@ -112,16 +93,8 @@ $ docker run --name some-cassandra -d -e CASSANDRA_BROADCAST_ADDRESS=10.43.43.43
 The following command starts another Cassandra container instance and runs `cqlsh` (Cassandra Query Language Shell) against your original Cassandra container, allowing you to execute CQL statements against your database instance:
 
 ```console
-$ docker run -it --link some-cassandra:cassandra --rm cassandra sh -c 'exec cqlsh "$CASSANDRA_PORT_9042_TCP_ADDR"'
+$ docker run -it --network some-network --rm cassandra cqlsh some-cassandra
 ```
-
-... or (simplified to take advantage of the `/etc/hosts` entry Docker adds for linked containers):
-
-```console
-$ docker run -it --link some-cassandra:cassandra --rm cassandra cqlsh cassandra
-```
-
-... where `some-cassandra` is the name of your original Cassandra Server container.
 
 More information about the CQL can be found in the [Cassandra documentation](https://cassandra.apache.org/doc/latest/cql/index.html).
 

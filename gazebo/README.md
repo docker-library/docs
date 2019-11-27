@@ -16,16 +16,16 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`gzserver7`, `gzserver7-xenial` (*gazebo/7/ubuntu/xenial/gzserver7/Dockerfile*)](https://github.com/osrf/docker_images/blob/ed75e08b51ca57c98fad49705091ceb89a96814c/gazebo/7/ubuntu/xenial/gzserver7/Dockerfile)
--	[`libgazebo7`, `libgazebo7-xenial` (*gazebo/7/ubuntu/xenial/libgazebo7/Dockerfile*)](https://github.com/osrf/docker_images/blob/ed75e08b51ca57c98fad49705091ceb89a96814c/gazebo/7/ubuntu/xenial/libgazebo7/Dockerfile)
--	[`gzserver8`, `gzserver8-xenial` (*gazebo/8/ubuntu/xenial/gzserver8/Dockerfile*)](https://github.com/osrf/docker_images/blob/ed75e08b51ca57c98fad49705091ceb89a96814c/gazebo/8/ubuntu/xenial/gzserver8/Dockerfile)
--	[`libgazebo8`, `libgazebo8-xenial` (*gazebo/8/ubuntu/xenial/libgazebo8/Dockerfile*)](https://github.com/osrf/docker_images/blob/ed75e08b51ca57c98fad49705091ceb89a96814c/gazebo/8/ubuntu/xenial/libgazebo8/Dockerfile)
--	[`gzserver9-xenial` (*gazebo/9/ubuntu/xenial/gzserver9/Dockerfile*)](https://github.com/osrf/docker_images/blob/6e6d8b6a56b30bd799fdf916479f535d3de963c1/gazebo/9/ubuntu/xenial/gzserver9/Dockerfile)
--	[`libgazebo9-xenial` (*gazebo/9/ubuntu/xenial/libgazebo9/Dockerfile*)](https://github.com/osrf/docker_images/blob/6e6d8b6a56b30bd799fdf916479f535d3de963c1/gazebo/9/ubuntu/xenial/libgazebo9/Dockerfile)
--	[`gzserver9`, `gzserver9-bionic` (*gazebo/9/ubuntu/bionic/gzserver9/Dockerfile*)](https://github.com/osrf/docker_images/blob/6e6d8b6a56b30bd799fdf916479f535d3de963c1/gazebo/9/ubuntu/bionic/gzserver9/Dockerfile)
--	[`libgazebo9`, `libgazebo9-bionic`, `latest` (*gazebo/9/ubuntu/bionic/libgazebo9/Dockerfile*)](https://github.com/osrf/docker_images/blob/6e6d8b6a56b30bd799fdf916479f535d3de963c1/gazebo/9/ubuntu/bionic/libgazebo9/Dockerfile)
--	[`gzserver9-stretch` (*gazebo/9/debian/stretch/gzserver9/Dockerfile*)](https://github.com/osrf/docker_images/blob/9fbac2c659d6feb6fbb24f7b2662441cf1a6cf4b/gazebo/9/debian/stretch/gzserver9/Dockerfile)
--	[`libgazebo9-stretch` (*gazebo/9/debian/stretch/libgazebo9/Dockerfile*)](https://github.com/osrf/docker_images/blob/9fbac2c659d6feb6fbb24f7b2662441cf1a6cf4b/gazebo/9/debian/stretch/libgazebo9/Dockerfile)
+-	[`gzserver7`, `gzserver7-xenial`](https://github.com/osrf/docker_images/blob/e296cc1a131ef3b2ac62a91d6bf31ab6fb27884d/gazebo/7/ubuntu/xenial/gzserver7/Dockerfile)
+-	[`libgazebo7`, `libgazebo7-xenial`](https://github.com/osrf/docker_images/blob/e296cc1a131ef3b2ac62a91d6bf31ab6fb27884d/gazebo/7/ubuntu/xenial/libgazebo7/Dockerfile)
+-	[`gzserver9-xenial`](https://github.com/osrf/docker_images/blob/ad70e430c50dd3ee987ca2e7153f40c6071e87a4/gazebo/9/ubuntu/xenial/gzserver9/Dockerfile)
+-	[`libgazebo9-xenial`](https://github.com/osrf/docker_images/blob/ad70e430c50dd3ee987ca2e7153f40c6071e87a4/gazebo/9/ubuntu/xenial/libgazebo9/Dockerfile)
+-	[`gzserver9`, `gzserver9-bionic`](https://github.com/osrf/docker_images/blob/30cfa33eacf61711114f8aca1cd38271fe14d61b/gazebo/9/ubuntu/bionic/gzserver9/Dockerfile)
+-	[`libgazebo9`, `libgazebo9-bionic`](https://github.com/osrf/docker_images/blob/30cfa33eacf61711114f8aca1cd38271fe14d61b/gazebo/9/ubuntu/bionic/libgazebo9/Dockerfile)
+-	[`gzserver9-stretch`](https://github.com/osrf/docker_images/blob/e2c145e63a7b14d2ebd7928b4bdd0302195fe704/gazebo/9/debian/stretch/gzserver9/Dockerfile)
+-	[`libgazebo9-stretch`](https://github.com/osrf/docker_images/blob/e2c145e63a7b14d2ebd7928b4bdd0302195fe704/gazebo/9/debian/stretch/libgazebo9/Dockerfile)
+-	[`gzserver10`, `gzserver10-bionic`](https://github.com/osrf/docker_images/blob/00d02282c2393ccde655fa0c333b4410a10b3985/gazebo/10/ubuntu/bionic/gzserver10/Dockerfile)
+-	[`libgazebo10`, `libgazebo10-bionic`, `latest`](https://github.com/osrf/docker_images/blob/00d02282c2393ccde655fa0c333b4410a10b3985/gazebo/10/ubuntu/bionic/libgazebo10/Dockerfile)
 
 # Quick reference
 
@@ -51,9 +51,6 @@ WARNING:
 
 -	**Source of this description**:  
 	[docs repo's `gazebo/` directory](https://github.com/docker-library/docs/tree/master/gazebo) ([history](https://github.com/docker-library/docs/commits/master/gazebo))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is [Gazebo](http://www.gazebosim.org/)?
 

@@ -1,3 +1,3 @@
-CrateDB is an open core project.
+CrateDB is licensed under the Apache License 2.0.
 
-See the CrateDB [licensing docs](https://github.com/crate/crate/blob/master/LICENSE.txt) for more information.
+See [LICENSE](https://github.com/crate/crate/blob/master/LICENSE) for more information.

@@ -16,9 +16,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.8`, `2.8.11` (*jessie/2.8.11/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/d6fca9a137cd21345b1d380fc0e72daacb6130ce/jessie/2.8.11/Dockerfile)
--	[`3.3`, `3.3.19`, `latest` (*stretch/3.3.19/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/1042a480fcf5d5d4e33b01c24c887236707ad752/stretch/3.3.19/Dockerfile)
--	[`3.2`, `3.2.17` (*stretch/3.2.17/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/b4c22ad8bf4facbbc7c3b24e985251a09fcdbcec/stretch/3.2.17/Dockerfile)
+-	[`2.8`, `2.8.11`](https://github.com/arangodb/arangodb-docker/blob/d6fca9a137cd21345b1d380fc0e72daacb6130ce/jessie/2.8.11/Dockerfile)
+-	[`3.2`, `3.2.17`](https://github.com/arangodb/arangodb-docker/blob/b4c22ad8bf4facbbc7c3b24e985251a09fcdbcec/stretch/3.2.17/Dockerfile)
+-	[`3.3`, `3.3.23`](https://github.com/arangodb/arangodb-docker/blob/24db8fa0429ce6fa1f7d56e54c9bb3da51c32b3e/stretch/3.3.23/Dockerfile)
+-	[`3.4`, `3.4.8`](https://github.com/arangodb/arangodb-docker/blob/76d742d9908be005fe2ce2169d38324685415e9d/alpine/3.4.8/Dockerfile)
+-	[`3.5`, `3.5.2`, `latest`](https://github.com/arangodb/arangodb-docker/blob/963661d349d79baa5400abf1bc15d494c5cf9532/alpine/3.5.2/Dockerfile)
+-	[`3.5.1`](https://github.com/arangodb/arangodb-docker/blob/b1f012dc9207094642174a5bc0345c706ac66509/alpine/3.5.1/Dockerfile)
 
 # Quick reference
 
@@ -44,9 +47,6 @@ WARNING:
 
 -	**Source of this description**:  
 	[docs repo's `arangodb/` directory](https://github.com/docker-library/docs/tree/master/arangodb) ([history](https://github.com/docker-library/docs/commits/master/arangodb))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is ArangoDB?
 

@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.6.2`, `2.6`, `2`, `latest` (*Dockerfile*)](https://github.com/docker/distribution-library-image/blob/15dbd1a011dbda8da055d6cea8bc1e7705c32ead/Dockerfile)
--	[`2.5.2`, `2.5` (*Dockerfile*)](https://github.com/docker/distribution-library-image/blob/f96d9029112d8da459312fb8249802bc4ec6ac21/Dockerfile)
+-	[`2.7.1`, `2.7`, `2`, `latest`](https://github.com/docker/distribution-library-image/blob/0b6ea3ba50b65563600a717f07db4cfa6f18f957/amd64/Dockerfile)
+-	[`2.6.2`, `2.6`](https://github.com/docker/distribution-library-image/blob/fc40f1f1051bb4a42ee4661ccaa190c1bd6c6be9/amd64/Dockerfile)
 
 # Quick reference
 
@@ -31,7 +31,7 @@ WARNING:
 	[Docker, Inc.](https://github.com/docker/distribution-library-image)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/registry/)
+	[`amd64`](https://hub.docker.com/r/amd64/registry/), [`arm32v6`](https://hub.docker.com/r/arm32v6/registry/), [`arm64v8`](https://hub.docker.com/r/arm64v8/registry/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/registry/` directory](https://github.com/docker-library/repo-info/blob/master/repos/registry) ([history](https://github.com/docker-library/repo-info/commits/master/repos/registry))  
@@ -43,9 +43,6 @@ WARNING:
 
 -	**Source of this description**:  
 	[docs repo's `registry/` directory](https://github.com/docker-library/docs/tree/master/registry) ([history](https://github.com/docker-library/docs/commits/master/registry))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # Docker Registry
 

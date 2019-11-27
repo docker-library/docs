@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.6.3`, `7.6` (*7.6/Dockerfile*)](https://github.com/Bonitasoft-Community/docker_bonita/blob/0c4ee4c11217e3a78d336b735cc50310d5064c61/7.6/Dockerfile)
--	[`7.7.4`, `7.7`, `latest` (*7.7/Dockerfile*)](https://github.com/Bonitasoft-Community/docker_bonita/blob/62ad3127f6d67c381a3ad695702ba68430e54040/7.7/Dockerfile)
+-	[`7.8.4`, `7.8`](https://github.com/Bonitasoft-Community/docker_bonita/blob/8e54821e4c81d4dbc3a106e907b145448c7a39f6/7.8/Dockerfile)
+-	[`7.9.4`, `7.9`, `latest`](https://github.com/Bonitasoft-Community/docker_bonita/blob/4ce826e88b107ab685c4df72af1960dda68890f1/7.9/Dockerfile)
 
 # Quick reference
 
@@ -44,9 +44,6 @@ WARNING:
 -	**Source of this description**:  
 	[docs repo's `bonita/` directory](https://github.com/docker-library/docs/tree/master/bonita) ([history](https://github.com/docker-library/docs/commits/master/bonita))
 
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
-
 # What is Bonita?
 
 Bonita (called Bonita BPM till 7.5) is an open-source business process management and workflow suite created in 2001. It was started in France National Institute for Research in Computer Science, and then had incubated several years inside of the French computer science company Groupe Bull. Since 2009, the development of Bonita is supported by a company dedicated to this activity: Bonitasoft.
@@ -63,7 +60,7 @@ Bonita (called Bonita BPM till 7.5) is an open-source business process managemen
 $ docker run --name bonita -d -p 8080:8080 bonita
 ```
 
-This will start a container running the [Tomcat Bundle](https://documentation.bonitasoft.com/bonita/7.7/tomcat-bundle) with Bonita Engine + Bonita Portal. With no environment variables specified, it's as like if you have launched the bundle on your host using startup.{sh|bat} (with security hardening on REST and HTTP APIs, cf Security part). Bonita uses a H2 database here.
+This will start a container running the [Tomcat Bundle](https://documentation.bonitasoft.com/bonita/7.9/tomcat-bundle) with Bonita Engine + Bonita Portal. With no environment variables specified, it's as like if you have launched the bundle on your host using startup.{sh|bat} (with security hardening on REST and HTTP APIs, cf Security part). Bonita uses a H2 database here.
 
 You can access the Bonita Portal on http://localhost:8080/bonita and login using the default credentials: install / install
 
@@ -73,12 +70,14 @@ You can access the Bonita Portal on http://localhost:8080/bonita and login using
 
 PostgreSQL is the recommanded database.
 
-[Set max_prepared_transactions to 100](https://documentation.bonitasoft.com/bonita/7.7/database-configuration#toc5):
+[Set max_prepared_transactions to 100](https://documentation.bonitasoft.com/bonita/7.9/database-configuration#toc5):
 
-	mkdir -p custom_postgres
-	echo '#!/bin/bash' > custom_postgres/bonita.sh
-	echo 'sed -i "s/^.*max_prepared_transactions\s*=\s*\(.*\)$/max_prepared_transactions = 100/" "$PGDATA"/postgresql.conf' >> custom_postgres/bonita.sh
-	chmod +x custom_postgres/bonita.sh
+```console
+$ mkdir -p custom_postgres
+$ echo '#!/bin/bash' > custom_postgres/bonita.sh
+$ echo 'sed -i "s/^.*max_prepared_transactions\s*=\s*\(.*\)$/max_prepared_transactions = 100/" "$PGDATA"/postgresql.conf' >> custom_postgres/bonita.sh
+$ chmod +x custom_postgres/bonita.sh
+```
 
 Mount that directory location as /docker-entrypoint-initdb.d inside the PostgreSQL container:
 
@@ -96,11 +95,13 @@ $ docker run --name bonita_postgres --link mydbpostgres:postgres -d -p 8080:8080
 
 There are known issues with the management of XA transactions by MySQL engine and driver: see MySQL bugs [17343](http://bugs.mysql.com/bug.php?id=17343) and [12161](http://bugs.mysql.com/bug.php?id=12161) for more details. Thus, using MySQL database in a production environment is not recommended.
 
-[Increase the packet size](https://documentation.bonitasoft.com/bonita/7.7/database-configuration#toc5) which is set by default to 1M:
+[Increase the packet size](https://documentation.bonitasoft.com/bonita/7.9/database-configuration#toc5) which is set by default to 1M:
 
-	mkdir -p custom_mysql
-	echo "[mysqld]" > custom_mysql/bonita.cnf
-	echo "max_allowed_packet=16M" >> custom_mysql/bonita.cnf
+```console
+$ mkdir -p custom_mysql
+$ echo "[mysqld]" > custom_mysql/bonita.cnf
+$ echo "max_allowed_packet=16M" >> custom_mysql/bonita.cnf
+```
 
 Mount that directory location as /etc/mysql/conf.d inside the MySQL container:
 
@@ -182,7 +183,7 @@ Run `docker stack deploy -c stack.yml bonita` (or `docker-compose -f stack.yml u
 
 ## Where to store data
 
-Most of the data are stored in a database and can be stored outside the Bonita container as described above using the PostgreSQL or MySQL container. However, some data remains inside the Bonita bundle. Bonita Home is a folder, called `bonita`, which contains configuration, working, and temporary folders and files. There are also log files inside the `logs` folder.
+Most of the data are stored in a database and can be stored outside the Bonita container as described above using the PostgreSQL or MySQL container. However, some data remains inside the Bonita bundle. Bonita Home is a folder, called `bonita`, which contains configuration, working, and temporary folders and files. There are also log files inside the `logs` folder till Bonita 7.8.
 
 Important note: There are several ways to store data used by applications that run in Docker containers. We encourage users of the `bonita` images to familiarize themselves with the options available, including:
 
@@ -226,7 +227,9 @@ The `-v /my/own/datadir:/opt/bonita` part of the command mounts the `/my/own/dat
 
 	-	Copy data from the filesystem
 
-			cp -r bonita_7.2.3_postgres bonita_migration
+		```console
+		$ cp -r bonita_7.2.3_postgres bonita_migration
+		```
 
 -	Retrieve the DB container IP
 
@@ -237,18 +240,22 @@ The `-v /my/own/datadir:/opt/bonita` part of the command mounts the `/my/own/dat
 
 -	Dump the database
 
-		export PGPASSWORD=mysecretpassword
-		pg_dump -O -x -h 172.17.0.26 -U postgres bonitadb > /tmp/bonitadb.sql
+	```console
+	$ export PGPASSWORD=mysecretpassword
+	$ pg_dump -O -x -h 172.17.0.26 -U postgres bonitadb > /tmp/bonitadb.sql
+	```
 
 	Note that businessdb won't be updated with the migration tool but you may want to also backup/move it.
 
 -	Load the dump
 
-		export PGPASSWORD=mysecretpassword
-		psql -U postgres -h 172.17.0.26 -d postgres -c "CREATE USER newbonitauser WITH PASSWORD 'newbonitapass';"
-		psql -U postgres -h 172.17.0.26 -d postgres -c "CREATE DATABASE newbonitadb OWNER newbonitauser;"
-		export PGPASSWORD=newbonitapass
-		cat /tmp/bonitadb.sql | psql -U newbonitauser -h 172.17.0.26 newbonitadb
+	```console
+	$ export PGPASSWORD=mysecretpassword
+	$ psql -U postgres -h 172.17.0.26 -d postgres -c "CREATE USER newbonitauser WITH PASSWORD 'newbonitapass';"
+	$ psql -U postgres -h 172.17.0.26 -d postgres -c "CREATE DATABASE newbonitadb OWNER newbonitauser;"
+	$ export PGPASSWORD=newbonitapass
+	$ cat /tmp/bonitadb.sql | psql -U newbonitauser -h 172.17.0.26 newbonitadb
+	```
 
 -	Retrieve the last migration tool
 
@@ -258,9 +265,9 @@ The `-v /my/own/datadir:/opt/bonita` part of the command mounts the `/my/own/dat
 
 		```console
 		cd bonita_migration
-		wget https://release.ow2.org/bonita/bonita-migration-distrib-2.34.0.zip
+		wget https://release.ow2.org/bonita/bonita-migration-distrib-2.45.0.zip
 		wget https://download.forge.ow2.org/bonita/BonitaBPMCommunity-7.2.4-Tomcat-7.0.67.zip
-		unzip bonita-migration-distrib-2.34.0.zip
+		unzip bonita-migration-distrib-2.45.0.zip
 		unzip BonitaBPMCommunity-7.2.4-Tomcat-7.0.67.zip
 		```
 
@@ -275,17 +282,21 @@ The `-v /my/own/datadir:/opt/bonita` part of the command mounts the `/my/own/dat
 
 		```console
 		cd bonita_migration
-		wget https://release.ow2.org/bonita/bonita-migration-distrib-2.34.0.zip
-		unzip bonita-migration-distrib-2.34.0.zip
+		wget https://release.ow2.org/bonita/bonita-migration-distrib-2.45.0.zip
+		unzip bonita-migration-distrib-2.45.0.zip
 		```
 
 -	Configure the migration tool
 
-		cd bonita-migration-distrib-2.34.0
+	```console
+	$ cd bonita-migration-distrib-2.45.0
+	```
 
 	edit the migration tool config to point towards the copy of bonita home and db
 
-		vim Config.properties
+	```console
+	$ vim Config.properties
+	```
 
 	For example :
 
@@ -299,8 +310,10 @@ The `-v /my/own/datadir:/opt/bonita` part of the command mounts the `/my/own/dat
 
 -	Launch the migration
 
-		cd bin
-		./bonita-migration-distrib
+	```console
+	$ cd bin
+	$ ./bonita-migration-distrib
+	```
 
 -	Launch the new container pointing towards the copy of DB and filesystem
 
@@ -313,17 +326,17 @@ The `-v /my/own/datadir:/opt/bonita` part of the command mounts the `/my/own/dat
 	-	If >= 7.3.0
 
 	```console
-	$ docker run --name=bonita_7.7.4_postgres --link mydbpostgres:postgres -e "DB_NAME=newbonitadb" -e "DB_USER=newbonitauser" -e "DB_PASS=newbonitapass" -d -p 8081:8080 bonita:7.7.4
+	$ docker run --name=bonita_7.9.4_postgres --link mydbpostgres:postgres -e "DB_NAME=newbonitadb" -e "DB_USER=newbonitauser" -e "DB_PASS=newbonitapass" -d -p 8081:8080 bonita:7.9.4
 	```
 
 -	Reapply specific configuration if needed, for example with a version >= 7.3.0 :
 
 	```console
-	$ docker exec -ti bonita_7.7.4_postgres /bin/bash
+	$ docker exec -ti bonita_7.9.4_postgres /bin/bash
 	```
 
 	```console
-	$ cd /opt/bonita/BonitaCommunity-7.7.4-Tomcat-8.5.31/setup
+	$ cd /opt/bonita/BonitaCommunity-7.9.4-tomcat/setup
 	$ ./setup.sh pull
 	$ TENANT_LOGIN=tech_user
 	$ TENANT_PASSWORD=secret
@@ -343,10 +356,14 @@ The `-v /my/own/datadir:/opt/bonita` part of the command mounts the `/my/own/dat
 	```
 
 	```console
-	$ docker restart bonita_7.7.4_postgres
+	$ docker restart bonita_7.9.4_postgres
 	```
 
-For more details regarding Bonita migration, see the [documentation](https://documentation.bonitasoft.com/bonita/7.7/migrate-from-an-earlier-version-of-bonita-bpm).
+-	Specific consideration regarding migration to Java 11 in Bonita 7.9
+
+	Bonita 7.9 docker image runs with Java 11. If you are migrating from an earlier version which runs Java 8, you should validate on a test environment that your custom code is compatible. Aside from just code incompatibility, special attention has to be given to the dependencies of the custom code, as they might not work in Java 11.
+
+For more details regarding Bonita migration, see the [documentation](https://documentation.bonitasoft.com/bonita/7.9/migrate-from-an-earlier-version-of-bonita-bpm).
 
 ## Security
 
@@ -354,11 +371,11 @@ This Docker image activates both static and dynamic authorization checks by defa
 
 -	REST API authorization
 
-	-	[Static authorization checking](https://documentation.bonitasoft.com/bonita/7.7/rest-api-authorization#toc1)
+	-	[Static authorization checking](https://documentation.bonitasoft.com/bonita/7.9/rest-api-authorization#toc1)
 
-	-	[Dynamic authorization checking](https://documentation.bonitasoft.com/bonita/7.7/rest-api-authorization#toc2)
+	-	[Dynamic authorization checking](https://documentation.bonitasoft.com/bonita/7.9/rest-api-authorization#toc2)
 
--	[HTTP API](https://documentation.bonitasoft.com/bonita/7.7/rest-api-authorization#toc10)
+-	[HTTP API](https://documentation.bonitasoft.com/bonita/7.9/rest-api-authorization#toc10)
 
 For specific needs you can override this behavior by setting HTTP_API to true and REST_API_DYN_AUTH_CHECKS to false:
 
@@ -372,7 +389,7 @@ When you start the `bonita` image, you can adjust the configuration of the Bonit
 
 ### `PLATFORM_PASSWORD`
 
-This environment variable [is recommended](https://documentation.bonitasoft.com/bonita/7.7/tomcat-bundle#toc3) for you to use the Bonita image. It sets the platform administrator password for Bonita. If it is not specified, the default password `platform` will be used.
+This environment variable [is recommended](https://documentation.bonitasoft.com/bonita/7.9/tomcat-bundle#toc3) for you to use the Bonita image. It sets the platform administrator password for Bonita. If it is not specified, the default password `platform` will be used.
 
 ### `PLATFORM_LOGIN`
 
@@ -380,7 +397,7 @@ This optional environment variable is used in conjunction with `PLATFORM_PASSWOR
 
 ### `TENANT_PASSWORD`
 
-This environment variable [is recommended](https://documentation.bonitasoft.com/bonita/7.7/tomcat-bundle#toc3) for you to use the Bonita image. It sets the tenant administrator password for Bonita. If it is not specified, the default password `install` will be used.
+This environment variable [is recommended](https://documentation.bonitasoft.com/bonita/7.9/tomcat-bundle#toc3) for you to use the Bonita image. It sets the tenant administrator password for Bonita. If it is not specified, the default password `install` will be used.
 
 ### `TENANT_LOGIN`
 
@@ -388,7 +405,7 @@ This optional environment variable is used in conjunction with `TENANT_PASSWORD`
 
 ### `REST_API_DYN_AUTH_CHECKS`
 
-This optional environment variable is used to enable/disable [dynamic authorization checking](https://documentation.bonitasoft.com/bonita/7.7/rest-api-authorization#toc2) on Bonita REST API. The default value is `true`, which will activate dynamic authorization checking.
+This optional environment variable is used to enable/disable [dynamic authorization checking](https://documentation.bonitasoft.com/bonita/7.9/rest-api-authorization#toc2) on Bonita REST API. The default value is `true`, which will activate dynamic authorization checking.
 
 ### `HTTP_API`
 
@@ -422,7 +439,7 @@ These variables are used in conjunction to create a new user, set that user's pa
 
 ### `BIZ_DB_NAME`, `BIZ_DB_USER`, `BIZ_DB_PASS`
 
-These variables are used in conjunction to create a new user, set that user's password and create the `bonita` [business database](https://documentation.bonitasoft.com/bonita/7.7/define-and-deploy-the-bdm#toc1).
+These variables are used in conjunction to create a new user, set that user's password and create the `bonita` [business database](https://documentation.bonitasoft.com/bonita/7.9/define-and-deploy-the-bdm#toc1).
 
 `BIZ_DB_NAME` default value is `businessdb`.
 
@@ -446,24 +463,48 @@ These variables are optional, and used in conjunction to create users and databa
 
 `BIZ_DB_DROP_EXISTING` default value is `N`.
 
+### `BONITA_SERVER_LOGGING_FILE`, `BONITA_SETUP_LOGGING_FILE`
+
+Since Bonita 7.9 `BONITA_SERVER_LOGGING_FILE` and `BONITA_SETUP_LOGGING_FILE` can be used to update logging configuration.
+
+`BONITA_SERVER_LOGGING_FILE` default value is `/opt/bonita/BonitaSubscription-${BONITA_VERSION}-tomcat/server/conf/logging.properties`.
+
+`BONITA_SETUP_LOGGING_FILE` default value is `/opt/bonita/BonitaSubscription-${BONITA_VERSION}-tomcat/setup/logback.xml`.
+
 # How to extend this image
 
 If you would like to do additional initialization, you can add a `*.sh` script under `/opt/custom-init.d`. The `startup.sh` file will source any `*.sh` script found in this directory to do further initialization before starting the service.
 
 For example, you can increase the log level :
 
-	mkdir -p custom_bonita
-	echo '#!/bin/bash' > custom_bonita/bonita.sh
-	echo 'sed -i "s/^org.bonitasoft.level = WARNING$/org.bonitasoft.level = FINEST/" /opt/bonita/BonitaCommunity-7.7.4-Tomcat-8.5.31/server/conf/logging.properties' >> custom_bonita/bonita.sh
-	chmod +x custom_bonita/bonita.sh
-	
-	docker run --name bonita_custom -v "$PWD"/custom_bonita/:/opt/custom-init.d -d -p 8080:8080 bonita
+```console
+$ mkdir -p custom_bonita
+$ echo '#!/bin/bash' > custom_bonita/bonita.sh
+$ echo 'sed -i "s/^org.bonitasoft.level = WARNING$/org.bonitasoft.level = FINEST/" /opt/bonita/BonitaCommunity-7.8.4-Tomcat-8.5.34/server/conf/logging.properties' >> custom_bonita/bonita.sh
+$ chmod +x custom_bonita/bonita.sh
 
-Note: There are several ways to check the `bonita` logs. One of them is
+$ docker run --name bonita_custom -v "$PWD"/custom_bonita/:/opt/custom-init.d -d -p 8080:8080 bonita
+```
+
+Since Bonita 7.9 you can also apply a custom `logging.properties` file like this :
+
+```console
+docker run --name bonita \
+  -v /path/to/logging.properties:/etc/logging.properties -e BONITA_SERVER_LOGGING_FILE=/etc/logging.properties \
+  -d -p 8080:8080 bonita
+```
+
+Note: There are several ways to check the `bonita` logs. Till Bonita 7.8, one of them is
 
 ```console
 $ docker exec -ti bonita_custom /bin/bash
-tail -f /opt/bonita/BonitaCommunity-7.7.4-Tomcat-8.5.31/server/logs/bonita.`date +%Y-%m-%d`.log
+tail -f /opt/bonita/BonitaCommunity-7.8.4-Tomcat-8.5.34/server/logs/bonita.`date +%Y-%m-%d`.log
+```
+
+Since Bonita 7.9 bonita logs are redirected towards standard output and directly accessible using
+
+```console
+$ docker logs -f bonita
 ```
 
 # License

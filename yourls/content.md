@@ -11,10 +11,13 @@ YOURLS is a set of PHP scripts that will allow you to run Your Own URL Shortener
 ```console
 $ docker run --name some-%%REPO%% --link some-mysql:mysql \
     -e YOURLS_SITE="https://example.com" \
+    -e YOURLS_USER="example_username" \
+    -e YOURLS_PASS="example_password" \
     -d %%IMAGE%%
 ```
 
-The following environment variables are also honored for configuring your YOURLS instance:
+The YOURLS instance accepts [a number of environment variables for configuration](https://yourls.org/#Config).  
+A few notable/important examples for using this Docker image include:
 
 -	`-e YOURLS_DB_HOST=...` (defaults to the IP and port of the linked `mysql` container)
 -	`-e YOURLS_DB_USER=...` (defaults to "root")
@@ -23,6 +26,8 @@ The following environment variables are also honored for configuring your YOURLS
 -	`-e YOURLS_TABLE_PREFIX=...` (defaults to "", only set this when you need to override the default table prefix in wp-config.php)
 -	`-e YOURLS_COOKIEKEY=...` (default to unique random SHA1s)
 -	`-e YOURLS_SITE=...` (yourls instance url)
+-	`-e YOURLS_USER=...` (yourls instance user name)
+-	`-e YOURLS_PASS=...` (yourls instance user password)
 
 If the `YOURLS_DB_NAME` specified does not already exist on the given MySQL server, it will be created automatically upon startup of the `yourls` container, provided that the `YOURLS_DB_USER` specified has the necessary permissions to create it.
 
@@ -54,4 +59,3 @@ If you need additional PHP extensions, you'll need to create your own image `FRO
 The following Docker Hub features can help with the task of keeping your dependent images up-to-date:
 
 -	[Automated Builds](https://docs.docker.com/docker-hub/builds/) let Docker Hub automatically build your Dockerfile each time you push changes to it.
--	[Repository Links](https://docs.docker.com/docker-hub/builds/#repository-links) can ensure that your image is also rebuilt any time `%%REPO%%` is updated.

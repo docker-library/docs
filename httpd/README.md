@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.4.37`, `2.4`, `2`, `latest` (*2.4/Dockerfile*)](https://github.com/docker-library/httpd/blob/a426e299988c48f4937dfb4a9a67ac479ca011e1/2.4/Dockerfile)
--	[`2.4.37-alpine`, `2.4-alpine`, `2-alpine`, `alpine` (*2.4/alpine/Dockerfile*)](https://github.com/docker-library/httpd/blob/a426e299988c48f4937dfb4a9a67ac479ca011e1/2.4/alpine/Dockerfile)
+-	[`2.4.41`, `2.4`, `2`, `latest`](https://github.com/docker-library/httpd/blob/8da3138c7ad5973fbaae0e464a190d377d2b4219/2.4/Dockerfile)
+-	[`2.4.41-alpine`, `2.4-alpine`, `2-alpine`, `alpine`](https://github.com/docker-library/httpd/blob/82fd968fb7cfe496a0f87888777e834530dd9154/2.4/alpine/Dockerfile)
 
 # Quick reference
 
@@ -43,9 +43,6 @@ WARNING:
 
 -	**Source of this description**:  
 	[docs repo's `httpd/` directory](https://github.com/docker-library/docs/tree/master/httpd) ([history](https://github.com/docker-library/docs/commits/master/httpd))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is httpd?
 

@@ -16,14 +16,22 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.7.8`, `3.7`, `3`, `latest` (*3.7/debian/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/1a8fd1c6ee027baafb7144c24ad3c995ba5e0d24/3.7/debian/Dockerfile)
--	[`3.7.8-management`, `3.7-management`, `3-management`, `management` (*3.7/debian/management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/4b2b11c59ee65c2a09616b163d4572559a86bb7b/3.7/debian/management/Dockerfile)
--	[`3.7.8-alpine`, `3.7-alpine`, `3-alpine`, `alpine` (*3.7/alpine/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/1a8fd1c6ee027baafb7144c24ad3c995ba5e0d24/3.7/alpine/Dockerfile)
--	[`3.7.8-management-alpine`, `3.7-management-alpine`, `3-management-alpine`, `management-alpine` (*3.7/alpine/management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/4b2b11c59ee65c2a09616b163d4572559a86bb7b/3.7/alpine/management/Dockerfile)
--	[`3.6.16`, `3.6` (*3.6/debian/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/1a8fd1c6ee027baafb7144c24ad3c995ba5e0d24/3.6/debian/Dockerfile)
--	[`3.6.16-management`, `3.6-management` (*3.6/debian/management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/b9eda3e4665c24db70a9a290fddf33bc5c567b10/3.6/debian/management/Dockerfile)
--	[`3.6.16-alpine`, `3.6-alpine` (*3.6/alpine/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/1a8fd1c6ee027baafb7144c24ad3c995ba5e0d24/3.6/alpine/Dockerfile)
--	[`3.6.16-management-alpine`, `3.6-management-alpine` (*3.6/alpine/management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/b9eda3e4665c24db70a9a290fddf33bc5c567b10/3.6/alpine/management/Dockerfile)
+-	[`3.8.2-rc.1`, `3.8-rc`](https://github.com/docker-library/rabbitmq/blob/3cec79ba9a0a37776b4466d3be1abd60454e1ec9/3.8-rc/ubuntu/Dockerfile)
+-	[`3.8.2-rc.1-management`, `3.8-rc-management`](https://github.com/docker-library/rabbitmq/blob/3a5957b93e31661739a9018bc2ae5d20f1bfae59/3.8-rc/ubuntu/management/Dockerfile)
+-	[`3.8.2-rc.1-alpine`, `3.8-rc-alpine`](https://github.com/docker-library/rabbitmq/blob/3cec79ba9a0a37776b4466d3be1abd60454e1ec9/3.8-rc/alpine/Dockerfile)
+-	[`3.8.2-rc.1-management-alpine`, `3.8-rc-management-alpine`](https://github.com/docker-library/rabbitmq/blob/3a5957b93e31661739a9018bc2ae5d20f1bfae59/3.8-rc/alpine/management/Dockerfile)
+-	[`3.8.1`, `3.8`, `3`, `latest`](https://github.com/docker-library/rabbitmq/blob/e58e2d5ba7fd4e4a8047f45837060da901a06fde/3.8/ubuntu/Dockerfile)
+-	[`3.8.1-management`, `3.8-management`, `3-management`, `management`](https://github.com/docker-library/rabbitmq/blob/af5f6ff9a3916d89be6d190d562d247ae12ffa73/3.8/ubuntu/management/Dockerfile)
+-	[`3.8.1-alpine`, `3.8-alpine`, `3-alpine`, `alpine`](https://github.com/docker-library/rabbitmq/blob/e58e2d5ba7fd4e4a8047f45837060da901a06fde/3.8/alpine/Dockerfile)
+-	[`3.8.1-management-alpine`, `3.8-management-alpine`, `3-management-alpine`, `management-alpine`](https://github.com/docker-library/rabbitmq/blob/af5f6ff9a3916d89be6d190d562d247ae12ffa73/3.8/alpine/management/Dockerfile)
+-	[`3.7.22-rc.1`, `3.7-rc`](https://github.com/docker-library/rabbitmq/blob/7129682dc04e080e20ec7a963e3a6f777b95218f/3.7-rc/ubuntu/Dockerfile)
+-	[`3.7.22-rc.1-management`, `3.7-rc-management`](https://github.com/docker-library/rabbitmq/blob/f22c0b266cfeb8cb6d776f9e6a961908c2557ad3/3.7-rc/ubuntu/management/Dockerfile)
+-	[`3.7.22-rc.1-alpine`, `3.7-rc-alpine`](https://github.com/docker-library/rabbitmq/blob/7129682dc04e080e20ec7a963e3a6f777b95218f/3.7-rc/alpine/Dockerfile)
+-	[`3.7.22-rc.1-management-alpine`, `3.7-rc-management-alpine`](https://github.com/docker-library/rabbitmq/blob/da06cbdbe9e89305b2650a782af06f96004a894e/3.7-rc/alpine/management/Dockerfile)
+-	[`3.7.21`, `3.7`](https://github.com/docker-library/rabbitmq/blob/eb3256136809408f58be851338316b6d2ee83946/3.7/ubuntu/Dockerfile)
+-	[`3.7.21-management`, `3.7-management`](https://github.com/docker-library/rabbitmq/blob/f22c0b266cfeb8cb6d776f9e6a961908c2557ad3/3.7/ubuntu/management/Dockerfile)
+-	[`3.7.21-alpine`, `3.7-alpine`](https://github.com/docker-library/rabbitmq/blob/eb3256136809408f58be851338316b6d2ee83946/3.7/alpine/Dockerfile)
+-	[`3.7.21-management-alpine`, `3.7-management-alpine`](https://github.com/docker-library/rabbitmq/blob/4b2b11c59ee65c2a09616b163d4572559a86bb7b/3.7/alpine/management/Dockerfile)
 
 # Quick reference
 
@@ -37,7 +45,7 @@ WARNING:
 	[the Docker Community](https://github.com/docker-library/rabbitmq)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/rabbitmq/), [`arm32v5`](https://hub.docker.com/r/arm32v5/rabbitmq/), [`arm32v6`](https://hub.docker.com/r/arm32v6/rabbitmq/), [`arm32v7`](https://hub.docker.com/r/arm32v7/rabbitmq/), [`arm64v8`](https://hub.docker.com/r/arm64v8/rabbitmq/), [`i386`](https://hub.docker.com/r/i386/rabbitmq/), [`ppc64le`](https://hub.docker.com/r/ppc64le/rabbitmq/), [`s390x`](https://hub.docker.com/r/s390x/rabbitmq/)
+	[`amd64`](https://hub.docker.com/r/amd64/rabbitmq/), [`arm32v6`](https://hub.docker.com/r/arm32v6/rabbitmq/), [`arm32v7`](https://hub.docker.com/r/arm32v7/rabbitmq/), [`arm64v8`](https://hub.docker.com/r/arm64v8/rabbitmq/), [`i386`](https://hub.docker.com/r/i386/rabbitmq/), [`ppc64le`](https://hub.docker.com/r/ppc64le/rabbitmq/), [`s390x`](https://hub.docker.com/r/s390x/rabbitmq/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/rabbitmq/` directory](https://github.com/docker-library/repo-info/blob/master/repos/rabbitmq) ([history](https://github.com/docker-library/repo-info/commits/master/repos/rabbitmq))  
@@ -49,9 +57,6 @@ WARNING:
 
 -	**Source of this description**:  
 	[docs repo's `rabbitmq/` directory](https://github.com/docker-library/docs/tree/master/rabbitmq) ([history](https://github.com/docker-library/docs/commits/master/rabbitmq))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is RabbitMQ?
 
@@ -106,14 +111,14 @@ See the [RabbitMQ "Clustering Guide"](https://www.rabbitmq.com/clustering.html#e
 For setting a consistent cookie (especially useful for clustering but also for remote/cross-container administration via `rabbitmqctl`), use `RABBITMQ_ERLANG_COOKIE`:
 
 ```console
-$ docker run -d --hostname my-rabbit --name some-rabbit -e RABBITMQ_ERLANG_COOKIE='secret cookie here' rabbitmq:3
+$ docker run -d --hostname some-rabbit --name some-rabbit --network some-network -e RABBITMQ_ERLANG_COOKIE='secret cookie here' rabbitmq:3
 ```
 
 This can then be used from a separate instance to connect:
 
 ```console
-$ docker run -it --rm --link some-rabbit:my-rabbit -e RABBITMQ_ERLANG_COOKIE='secret cookie here' rabbitmq:3 bash
-root@f2a2d3d27c75:/# rabbitmqctl -n rabbit@my-rabbit list_users
+$ docker run -it --rm --network some-network -e RABBITMQ_ERLANG_COOKIE='secret cookie here' rabbitmq:3 bash
+root@f2a2d3d27c75:/# rabbitmqctl -n rabbit@some-rabbit list_users
 Listing users ...
 guest   [administrator]
 ```
@@ -121,7 +126,7 @@ guest   [administrator]
 Alternatively, one can also use `RABBITMQ_NODENAME` to make repeated `rabbitmqctl` invocations simpler:
 
 ```console
-$ docker run -it --rm --link some-rabbit:my-rabbit -e RABBITMQ_ERLANG_COOKIE='secret cookie here' -e RABBITMQ_NODENAME=rabbit@my-rabbit rabbitmq:3 bash
+$ docker run -it --rm --network some-network -e RABBITMQ_ERLANG_COOKIE='secret cookie here' -e RABBITMQ_NODENAME=rabbit@some-rabbit rabbitmq:3 bash
 root@f2a2d3d27c75:/# rabbitmqctl list_users
 Listing users ...
 guest   [administrator]
@@ -197,7 +202,9 @@ If you wish to change the default vhost, you can do so with the `RABBITMQ_DEFAUL
 $ docker run -d --hostname my-rabbit --name some-rabbit -e RABBITMQ_DEFAULT_VHOST=my_vhost rabbitmq:3-management
 ```
 
-### Enabling HiPE
+### Enabling HiPE (deprecated)
+
+**Note**: HiPE is disabled since version 3.7.15 of rabbimq images (https://github.com/docker-library/rabbitmq/pull/340)
 
 See the [RabbitMQ "Configuration"](http://www.rabbitmq.com/configure.html#config-items) for more information about various configuration options.
 
@@ -232,11 +239,9 @@ Alternatively, it is possible to use the `RABBITMQ_SERVER_ADDITIONAL_ERL_ARGS` e
 
 Additional configuration keys would be specified as a list. For example, configuring both [`channel_max`](https://www.rabbitmq.com/configure.html#config-items) and [`auth_backends`](https://www.rabbitmq.com/ldap.html#overview) would look something like `-e RABBITMQ_SERVER_ADDITIONAL_ERL_ARGS="-rabbit channel_max 4007 auth_backends [rabbit_auth_backend_ldap,rabbit_auth_backend_internal]"`. Note that some variables such as for `auth_backends` require their value(s) to be enclosed in brackets, and for multiple values explicitly including the comma as a delimiter.
 
-## Connecting to the daemon
+### Health/Liveness/Readiness Checking
 
-```console
-$ docker run --name some-app --link some-rabbit:rabbit -d application-that-uses-rabbitmq
-```
+See [the "Official Images" FAQ](https://github.com/docker-library/faq#healthcheck) and [the discussion on docker-library/rabbitmq#174 (especially the large comment by Michael Klishin from RabbitMQ upstream)](https://github.com/docker-library/rabbitmq/pull/174#issuecomment-452002696) for a detailed explanation of why this image does not come with a default `HEALTHCHECK` defined, and for suggestions for implementing your own health/liveness/readiness checks.
 
 # Image Variants
 

@@ -8,14 +8,17 @@ This template defines the "Supported tags and Dockerfile links" portion of an im
 
 {{- $sharedTagGroups := .Manifest.GetSharedTagGroups -}}
 {{- if (len $sharedTagGroups) -}}
-	{{- "## Simple Tags\n\n" -}}
+	(See ["What's the difference between 'Shared' and 'Simple' tags?" in the FAQ](https://github.com/docker-library/faq#whats-the-difference-between-shared-and-simple-tags).)
+	{{- "\n\n" -}}
+	## Simple Tags
+	{{- "\n\n" -}}
 {{- end -}}
 
 {{- range $i, $e := ($archSpecific | ternary (archFilter arch $.Entries) $.Entries) -}}
 	{{- $arch := $archSpecific | ternary arch ($e.HasArchitecture arch | ternary arch ($e.Architectures | first)) -}}
 
 	{{- /* force bashbrew to "fetch" the GitCommit so that it is fully resolved */ -}}
-	{{- $from := $.ArchDockerFrom $arch $e -}}
+	{{- $froms := $.ArchDockerFroms $arch $e -}}
 
 	{{- $gitRepo := $e.ArchGitRepo $arch -}}
 	{{- $repoUrlBase := $gitRepo | replace "git://" "https://" | trimSuffixes ".git" -}}
@@ -30,7 +33,7 @@ This template defines the "Supported tags and Dockerfile links" portion of an im
 	{{- $dir := .ArchDirectory $arch -}}
 	{{- $dockerfile := .ArchFile $arch -}}
 	{{- $dockerfilePath := eq $dir "." | ternary $dockerfile (join "/" $dir $dockerfile) -}}
-	` {{- $e.Tags | join "`, `" -}} ` (* {{- $dockerfilePath -}} *)
+	` {{- $e.Tags | join "`, `" -}} `
 	{{- $gitCommit := $e.ArchGitCommit $arch -}}
 	{{- if $isGitHub -}} ]( {{- $repoUrlBase -}} /blob/ {{- $gitCommit -}} / {{- $dockerfilePath -}} ) {{- end -}}
 	{{- /* TODO decide what to do (if anything) about non-GitHub repos with respect to URL */ -}}
@@ -52,7 +55,7 @@ This template defines the "Supported tags and Dockerfile links" portion of an im
 				{{- $arch := $archSpecific | ternary arch ($e.HasArchitecture arch | ternary arch ($e.Architectures | first)) -}}
 
 				{{- /* force bashbrew to "fetch" the GitCommit so that it is fully resolved */ -}}
-				{{- $from := $.ArchDockerFrom $arch $e -}}
+				{{- $froms := $.ArchDockerFroms $arch $e -}}
 
 				{{- $gitRepo := $e.ArchGitRepo $arch -}}
 				{{- $repoUrlBase := $gitRepo | replace "git://" "https://" | trimSuffixes ".git" -}}
@@ -63,7 +66,7 @@ This template defines the "Supported tags and Dockerfile links" portion of an im
 				{{- $dir := .ArchDirectory $arch -}}
 				{{- $dockerfile := .ArchFile $arch -}}
 				{{- $dockerfilePath := eq $dir "." | ternary $dockerfile (join "/" $dir $dockerfile) -}}
-				` {{- $e.Tags | first -}} ` (* {{- $dockerfilePath -}} *)
+				` {{- $e.Tags | first -}} `
 				{{- $gitCommit := $e.ArchGitCommit $arch -}}
 				{{- if $isGitHub -}} ]( {{- $repoUrlBase -}} /blob/ {{- $gitCommit -}} / {{- $dockerfilePath -}} ) {{- end -}}
 				{{- /* TODO decide what to do (if anything) about non-GitHub repos with respect to URL */ -}}

@@ -16,9 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`12.0`, `12`, `latest` (*12.0/Dockerfile*)](https://github.com/odoo/docker/blob/d0360678214b8f70970a2369a5a6b37981ab2c45/12.0/Dockerfile)
--	[`11.0`, `11` (*11.0/Dockerfile*)](https://github.com/odoo/docker/blob/d0360678214b8f70970a2369a5a6b37981ab2c45/11.0/Dockerfile)
--	[`10.0`, `10` (*10.0/Dockerfile*)](https://github.com/odoo/docker/blob/d0360678214b8f70970a2369a5a6b37981ab2c45/10.0/Dockerfile)
+-	[`13.0`, `13`, `latest`](https://github.com/odoo/docker/blob/596a7cabc07dd3b1d18b6c2832cace7328e36969/13.0/Dockerfile)
+-	[`12.0`, `12`](https://github.com/odoo/docker/blob/596a7cabc07dd3b1d18b6c2832cace7328e36969/12.0/Dockerfile)
+-	[`11.0`, `11`](https://github.com/odoo/docker/blob/596a7cabc07dd3b1d18b6c2832cace7328e36969/11.0/Dockerfile)
 
 # Quick reference
 
@@ -32,7 +32,7 @@ WARNING:
 	[Odoo](https://github.com/odoo/docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/odoo/), [`arm64v8`](https://hub.docker.com/r/arm64v8/odoo/)
+	[`amd64`](https://hub.docker.com/r/amd64/odoo/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/odoo/` directory](https://github.com/docker-library/repo-info/blob/master/repos/odoo) ([history](https://github.com/docker-library/repo-info/commits/master/repos/odoo))  
@@ -44,9 +44,6 @@ WARNING:
 
 -	**Source of this description**:  
 	[docs repo's `odoo/` directory](https://github.com/docker-library/docs/tree/master/odoo) ([history](https://github.com/docker-library/docs/commits/master/odoo))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Odoo?
 
@@ -145,9 +142,9 @@ services:
   db:
     image: postgres:10
     environment:
+      - POSTGRES_DB=postgres
       - POSTGRES_PASSWORD=odoo
       - POSTGRES_USER=odoo
-      - POSTGRES_DB=postgres
 ```
 
 If the default postgres credentials does not suit you, tweak the environment variables:
@@ -168,9 +165,9 @@ services:
   mydb:
     image: postgres:10
     environment:
-      - POSTGRES_USER=odoo
-      - POSTGRES_PASSWORD=myodoo
       - POSTGRES_DB=postgres
+      - POSTGRES_PASSWORD=myodoo
+      - POSTGRES_USER=odoo
 ```
 
 Here's a last example showing you how to mount custom addons, how to use a custom configuration file and how to use volumes for the Odoo and postgres data dir:
@@ -191,6 +188,7 @@ services:
   db:
     image: postgres:10
     environment:
+      - POSTGRES_DB=postgres
       - POSTGRES_PASSWORD=odoo
       - POSTGRES_USER=odoo
       - PGDATA=/var/lib/postgresql/data/pgdata

@@ -19,14 +19,15 @@ The smallest CrateDB clusters can easily ingest tens of thousands of records per
 
 Spin up this Docker image like so:
 
-	$ docker run -p 4200:4200 %%IMAGE%%
+```console
+$ docker run -p 4200:4200 %%IMAGE%%
+```
 
-Once you're up and running, head on over to [the introductory docs](https://crate.io/docs/stable/hello.html).
+Once you're up and running, head on over to [the introductory docs](https://crate.io/docs/crate/getting-started/en/latest/first-use/index.html).
 
-Read more:
+See also:
 
--	[Getting Started With CrateDB on Docker](https://crate.io/docs/install/containers/docker/)
--	[CrateDB Docker Best Practices](https://crate.io/docs/reference/best_practice/docker.html)
+-	[Getting Started With CrateDB on Docker](https://crate.io/docs/crate/guide/en/latest/deployment/containers/docker.html)
 
 ## Issues
 
@@ -44,4 +45,4 @@ For issues with CrateDB itself, report issues via [the `crate` GitHub issue trac
 
 This image is primarily maintained by [Crate.io](http://crate.io/), but we welcome community contributions!
 
-See the [developer docs](https://github.com/crate/docker-crateblob/master/DEVELOP.rst) and the [contribution docs](https://github.com/crate/docker-crate/blob/master/CONTRIBUTING.rst) for more information.
+See the [developer docs](https://github.com/crate/docker-crate/blob/master/DEVELOP.rst) and the [contribution docs](https://github.com/crate/docker-crate/blob/master/CONTRIBUTING.rst) for more information.

@@ -16,10 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.0`, `3.0-20181030` (*docker/Dockerfile*)](https://github.com/vmware/photon-docker-image/blob/113108450ed3038e0f69ce8df12178cea361a41f/docker/Dockerfile)
--	[`2.0`, `2.0-20181108`, `latest` (*docker/Dockerfile*)](https://github.com/vmware/photon-docker-image/blob/5e7614558bdf99091495dd859e4a4320444e36a0/docker/Dockerfile)
--	[`1.0`, `1.0-20181107` (*docker/Dockerfile*)](https://github.com/vmware/photon-docker-image/blob/7eb911e7a4e606cb03de2d944a915ff39ecff56c/docker/Dockerfile)
--	[`dev`, `dev-20180904` (*docker/Dockerfile*)](https://github.com/vmware/photon-docker-image/blob/ef64980d07a68bd0cd97de9224df5c3e62e4db12/docker/Dockerfile)
+-	[`3.0`, `3.0-20191101`, `latest`](https://github.com/vmware/photon-docker-image/blob/1f0503255c9a5bbe01a146a8f17b1a9c0eef9255/docker/Dockerfile)
+-	[`1.0`, `1.0-20191004`](https://github.com/vmware/photon-docker-image/blob/0ab988e7b330b42f2746385bad0384c107c0f737/docker/Dockerfile)
+-	[`2.0`, `2.0-20191025`](https://github.com/vmware/photon-docker-image/blob/f7400b9b6ece9d4b5d433e8bdfb6b86e0ee2e48a/docker/Dockerfile)
 
 # Quick reference
 
@@ -45,9 +44,6 @@ WARNING:
 
 -	**Source of this description**:  
 	[docs repo's `photon/` directory](https://github.com/docker-library/docs/tree/master/photon) ([history](https://github.com/docker-library/docs/commits/master/photon))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # VMware Photon OS
 

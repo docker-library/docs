@@ -16,10 +16,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.6`, `7`, `latest` (*7.6/Dockerfile*)](https://github.com/oracle/container-images/blob/54ab6edcc7e8ec45613d34456093da338b537267/7.6/Dockerfile)
--	[`7-slim` (*7-slim/Dockerfile*)](https://github.com/oracle/container-images/blob/54ab6edcc7e8ec45613d34456093da338b537267/7-slim/Dockerfile)
--	[`6.10`, `6` (*6.10/Dockerfile*)](https://github.com/oracle/container-images/blob/54ab6edcc7e8ec45613d34456093da338b537267/6.10/Dockerfile)
--	[`6-slim` (*6-slim/Dockerfile*)](https://github.com/oracle/container-images/blob/54ab6edcc7e8ec45613d34456093da338b537267/6-slim/Dockerfile)
+-	[`8.0`, `8`](https://github.com/oracle/container-images/blob/6d08f03f9a8075d3a2a42a1b59e3fea6a513849c/8.0/Dockerfile)
+-	[`8-slim`](https://github.com/oracle/container-images/blob/6d08f03f9a8075d3a2a42a1b59e3fea6a513849c/8-slim/Dockerfile)
+-	[`7.7`, `7`, `latest`](https://github.com/oracle/container-images/blob/6d08f03f9a8075d3a2a42a1b59e3fea6a513849c/7.7/Dockerfile)
+-	[`7-slim`](https://github.com/oracle/container-images/blob/6d08f03f9a8075d3a2a42a1b59e3fea6a513849c/7-slim/Dockerfile)
+-	[`6.10`, `6`](https://github.com/oracle/container-images/blob/6d08f03f9a8075d3a2a42a1b59e3fea6a513849c/6.10/Dockerfile)
+-	[`6-slim`](https://github.com/oracle/container-images/blob/6d08f03f9a8075d3a2a42a1b59e3fea6a513849c/6-slim/Dockerfile)
 
 # Quick reference
 
@@ -46,12 +48,9 @@ WARNING:
 -	**Source of this description**:  
 	[docs repo's `oraclelinux/` directory](https://github.com/docker-library/docs/tree/master/oraclelinux) ([history](https://github.com/docker-library/docs/commits/master/oraclelinux))
 
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
-
 # Oracle Linux
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/ec0d698a7724e87f1e9ee0e4af266a334a574a03/oraclelinux/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/ac923d04bcfcf8de5128ab155ed9f1698374fdfc/oraclelinux/logo.png)
 
 Oracle Linux is an open-source operating system available under the GNU General Public License (GPLv2). Suitable for general purpose or Oracle workloads, it benefits from rigorous testing of more than 128,000 hours per day with real- world workloads and includes unique innovations such as Ksplice for zero- downtime kernel patching, DTrace for real-time diagnostics, the powerful Btrfs file system, and more.
 
@@ -67,7 +66,7 @@ The Oracle Linux images are intended for use in the **FROM** field of a downstre
 
 ## Social media resources
 
--	[Twitter](https://twitter.com/ORCL_Linux)
+-	[Twitter](https://twitter.com/OracleLinux)
 -	[Facebook](https://www.facebook.com/OracleLinux)
 -	[YouTube](https://www.youtube.com/user/OracleLinuxChannel)
 -	[Blog](http://blogs.oracle.com/linux)
@@ -90,12 +89,11 @@ Please review the [Oracle Container Runtime for Docker User's Guide](https://doc
 
 For Oracle Linux users without a paid support subscription, the following resources are available:
 
--	The [Oracle Linux Forum](https://community.oracle.com/community/server_%26_storage_systems/linux/oracle_linux) on the [Oracle Technology Network Community](https://community.oracle.com/welcome).
--	The `#oracle-linux` IRC channel on Freenode.
+-	The [Oracle Linux space](https://community.oracle.com/community/groundbreakers/server_&_storage_systems/linux/oracle_linux) on the [Oracle Technology Network Community](https://community.oracle.com/welcome).
 
 # License
 
-View the [Oracle Linux End-User License Agreement](https://oss.oracle.com/ol6/EULA) for the software contained in this image.
+View the [Oracle Linux End-User License Agreement](https://oss.oracle.com/ol/EULA) for the software contained in this image.
 
 As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 

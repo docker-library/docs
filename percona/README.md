@@ -16,9 +16,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.0.12-2rc1-centos`, `8.0-centos`, `8-centos`, `8.0.12-2rc1`, `8.0`, `8` (*percona-server.80/Dockerfile*)](https://github.com/percona/percona-docker/blob/9f4a229bf338497d47b7216929a53f715fdade17/percona-server.80/Dockerfile)
--	[`5.7.23-centos`, `5.7-centos`, `5-centos`, `centos`, `5.7.23`, `5.7`, `5`, `latest` (*percona-server.57/Dockerfile-dockerhub*)](https://github.com/percona/percona-docker/blob/9f4a229bf338497d47b7216929a53f715fdade17/percona-server.57/Dockerfile-dockerhub)
--	[`5.6.41-centos`, `5.6-centos`, `5.6.41`, `5.6` (*percona-server.56/Dockerfile-dockerhub*)](https://github.com/percona/percona-docker/blob/bd9111fa72764033b89e4beaaa71e0523231069b/percona-server.56/Dockerfile-dockerhub)
+-	[`8.0.16-7-centos`, `8.0-centos`, `8-centos`, `8.0.16-7`, `8.0`, `8`, `ps-8.0.16-7`, `ps-8.0`, `ps-8`](https://github.com/percona/percona-docker/blob/2e895190352332559d15e3847b82124e7fd0ed03/percona-server.80/Dockerfile)
+-	[`5.7.26-centos`, `5.7-centos`, `5-centos`, `centos`, `5.7.26`, `5.7`, `5`, `ps-5.7.26`, `ps-5.7`, `ps-5`, `latest`](https://github.com/percona/percona-docker/blob/9749495eb09e8611ec0713d6fc404eaa0cfae1d4/percona-server.57/Dockerfile-dockerhub)
+-	[`5.6.45-centos`, `5.6-centos`, `5.6.45`, `5.6`, `ps-5.6.45`, `ps-5.6`](https://github.com/percona/percona-docker/blob/eb40779081c84f00206d53b4d3d73aa76af458ef/percona-server.56/Dockerfile-dockerhub)
+-	[`psmdb-4.0.10`, `psmdb-4.0`](https://github.com/percona/percona-docker/blob/ea1ee6f37e54593a829f282c623daefeeae0e7b6/percona-server-mongodb.40/Dockerfile)
+-	[`psmdb-3.6.12`, `psmdb-3.6`](https://github.com/percona/percona-docker/blob/d1495383efaab7925dc3fd631386b068717d5738/percona-server-mongodb.36/Dockerfile)
 
 # Quick reference
 
@@ -26,7 +28,9 @@ WARNING:
 	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
 -	**Where to file issues**:  
-	[https://github.com/percona/percona-docker/issues](https://github.com/percona/percona-docker/issues)
+	For issues with Percona Server: [Percona Server JIRA](https://jira.percona.com/issues/?jql=project+%3D+PS)
+
+	You will need to create an account if you do not have one.
 
 -	**Maintained by**:  
 	[Percona](https://github.com/percona/percona-docker)
@@ -44,9 +48,6 @@ WARNING:
 
 -	**Source of this description**:  
 	[docs repo's `percona/` directory](https://github.com/docker-library/docs/tree/master/percona) ([history](https://github.com/docker-library/docs/commits/master/percona))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # Percona Server for MySQL
 
@@ -70,25 +71,15 @@ $ docker run --name some-percona -e MYSQL_ROOT_PASSWORD=my-secret-pw -d percona:
 
 ... where `some-percona` is the name you want to assign to your container, `my-secret-pw` is the password to be set for the MySQL root user and `tag` is the tag specifying the MySQL version you want. See the list above for relevant tags.
 
-## Connect to MySQL from an application in another Docker container
-
-Since Percona Server for MySQL is intended as a drop-in replacement for MySQL, it can be used with many applications.
-
-This image exposes the standard MySQL port (3306), so container linking makes the MySQL instance available to other application containers. Start your application container like this in order to link it to the MySQL container:
-
-```console
-$ docker run --name some-app --link some-percona:mysql -d application-that-uses-mysql
-```
-
-## Connect to Percona Server for MySQL from the command line client
+## Connect to MariaDB from the MySQL command line client
 
 The following command starts another `percona` container instance and runs the `mysql` command line client against your original `percona` container, allowing you to execute SQL statements against your database instance:
 
 ```console
-$ docker run -it --link some-percona:mysql --rm percona sh -c 'exec mysql -h"$MYSQL_PORT_3306_TCP_ADDR" -P"$MYSQL_PORT_3306_TCP_PORT" -uroot -p"$MYSQL_ENV_MYSQL_ROOT_PASSWORD"'
+$ docker run -it --network some-network --rm percona mysql -hsome-percona -uexample-user -p
 ```
 
-... where `some-percona` is the name of your original `percona` container.
+... where `some-percona` is the name of your original `percona` container (connected to the `some-network` Docker network).
 
 This image can also be used as a client for non-Docker or remote instances:
 
@@ -261,6 +252,14 @@ Most of the normal tools will work, although their usage might be a little convo
 
 ```console
 $ docker exec some-percona sh -c 'exec mysqldump --all-databases -uroot -p"$MYSQL_ROOT_PASSWORD"' > /some/path/on/your/host/all-databases.sql
+```
+
+## Restoring data from dump files
+
+For restoring data. You can use `docker exec` command with `-i` flag, similar to the following:
+
+```console
+$ docker exec -i some-percona sh -c 'exec mysql -uroot -p"$MYSQL_ROOT_PASSWORD"' < /some/path/on/your/host/all-databases.sql
 ```
 
 # License

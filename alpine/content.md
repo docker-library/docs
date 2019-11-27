@@ -27,7 +27,3 @@ ENTRYPOINT ["mysql"]
 ```
 
 This yields us a virtual image size of about 145MB image.
-
-## Documentation
-
-This image is well documented. [Check out the documentation at Viewdocs](http://gliderlabs.viewdocs.io/docker-alpine).

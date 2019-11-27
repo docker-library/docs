@@ -16,9 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.7.0-apache`, `3.7-apache`, `3-apache`, `apache`, `3.7.0`, `3.7`, `3`, `latest` (*apache/Dockerfile*)](https://github.com/matomo-org/docker/blob/8d1838e0fffbb95c387ae9318bc5fb91302eb1d2/apache/Dockerfile)
--	[`3.7.0-fpm`, `3.7-fpm`, `3-fpm`, `fpm` (*fpm/Dockerfile*)](https://github.com/matomo-org/docker/blob/8d1838e0fffbb95c387ae9318bc5fb91302eb1d2/fpm/Dockerfile)
--	[`3.7.0-fpm-alpine`, `3.7-fpm-alpine`, `3-fpm-alpine`, `fpm-alpine` (*fpm-alpine/Dockerfile*)](https://github.com/matomo-org/docker/blob/8d1838e0fffbb95c387ae9318bc5fb91302eb1d2/fpm-alpine/Dockerfile)
+-	[`3.12.0-apache`, `3.12-apache`, `3-apache`, `apache`, `3.12.0`, `3.12`, `3`, `latest`](https://github.com/matomo-org/docker/blob/a144c1f29560f114ec299ab8388060719ffd99f9/apache/Dockerfile)
+-	[`3.12.0-fpm`, `3.12-fpm`, `3-fpm`, `fpm`](https://github.com/matomo-org/docker/blob/a144c1f29560f114ec299ab8388060719ffd99f9/fpm/Dockerfile)
+-	[`3.12.0-fpm-alpine`, `3.12-fpm-alpine`, `3-fpm-alpine`, `fpm-alpine`](https://github.com/matomo-org/docker/blob/a144c1f29560f114ec299ab8388060719ffd99f9/fpm-alpine/Dockerfile)
 
 # Quick reference
 
@@ -32,7 +32,7 @@ WARNING:
 	[Matomo](https://github.com/matomo-org/docker) (a Matomo community contributor)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/matomo/), [`arm32v5`](https://hub.docker.com/r/arm32v5/matomo/), [`arm32v6`](https://hub.docker.com/r/arm32v6/matomo/), [`arm32v7`](https://hub.docker.com/r/arm32v7/matomo/), [`arm64v8`](https://hub.docker.com/r/arm64v8/matomo/), [`i386`](https://hub.docker.com/r/i386/matomo/), [`ppc64le`](https://hub.docker.com/r/ppc64le/matomo/), [`s390x`](https://hub.docker.com/r/s390x/matomo/)
+	[`amd64`](https://hub.docker.com/r/amd64/matomo/), [`arm32v5`](https://hub.docker.com/r/arm32v5/matomo/), [`arm32v6`](https://hub.docker.com/r/arm32v6/matomo/), [`arm32v7`](https://hub.docker.com/r/arm32v7/matomo/), [`arm64v8`](https://hub.docker.com/r/arm64v8/matomo/), [`i386`](https://hub.docker.com/r/i386/matomo/), [`ppc64le`](https://hub.docker.com/r/ppc64le/matomo/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/matomo/` directory](https://github.com/docker-library/repo-info/blob/master/repos/matomo) ([history](https://github.com/docker-library/repo-info/commits/master/repos/matomo))  
@@ -44,9 +44,6 @@ WARNING:
 
 -	**Source of this description**:  
 	[docs repo's `matomo/` directory](https://github.com/docker-library/docs/tree/master/matomo) ([history](https://github.com/docker-library/docs/commits/master/matomo))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # Matomo (formerly Piwik)
 
@@ -60,11 +57,7 @@ WARNING:
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/955ef68222b4466509ca877daab484bc0095afcf/matomo/logo.png)
 
-## Usage
-
-In keeping with a 'pure' micro-services approach, this image runs a Matomo service only (in the form of FastCGI). Because of that it **must** be used with companion containers which provide a database for data storage and HTTP to FastCGI proxy/translation services for the user interface.
-
-## Runtime
+# How to use this image
 
 You can run the Matomo container and service like so:
 
@@ -74,20 +67,35 @@ docker run -d --link some-mysql:db matomo
 
 This assumes you've already launched a suitable MySQL or MariaDB database container.
 
-You'll now need to use a suitable reverse proxy to access the user interface; which is available on TCP port 9000. Nginx provides the necessary functions for translation between HTTP and FastCGI.
+## Persistent data
+
+Use a Docker volume to keep persistent data:
+
+```console
+docker run -d --link some-mysql:db -v matomo:/var/www/html matomo
+```
 
 ## Matomo Installation
 
 Once you're up and running, you'll arrive at the configuration wizard page. If you're using the compose file, at the `Database Setup` step, please enter the following:
 
 -	Database Server: `db`
--	Login: `root`
--	Password: MYSQL_ROOT_PASSWORD
--	Database Name: piwik (or you can choose)
+-	Login: MYSQL_USER
+-	Password: MYSQL_PASSWORD
+-	Database Name: MYSQL_DATABASE
 
 And leave the rest as default.
 
 Then you can continue the installation with the super user.
+
+The following environment variables are also honored for configuring your Matomo instance:
+
+-	`MATOMO_DATABASE_HOST`
+-	`MATOMO_DATABASE_ADAPTER`
+-	`MATOMO_DATABASE_TABLES_PREFIX`
+-	`MATOMO_DATABASE_USERNAME`
+-	`MATOMO_DATABASE_PASSWORD`
+-	`MATOMO_DATABASE_DBNAME`
 
 ## Docker-compose examples and log import instructions
 

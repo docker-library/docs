@@ -1,6 +1,6 @@
 # What is MongoDB?
 
-MongoDB is a [free and open-source cross-platform document-oriented database](https://en.wikipedia.org/wiki/Document-oriented_database) program. Classified as a [NoSQL](https://en.wikipedia.org/wiki/NoSQL) database program, MongoDB uses (JSON)[https://en.wikipedia.org/wiki/JSON]-like documents with [schemata](https://en.wikipedia.org/wiki/Database_schema). MongoDB is developed by [MongoDB Inc.](https://en.wikipedia.org/wiki/MongoDB_Inc.), and is published under a combination of the [Server Side Public License](https://www.mongodb.com/licensing/server-side-public-license) and the [Apache License](https://en.wikipedia.org/wiki/Apache_License).
+MongoDB is a [free and open-source cross-platform document-oriented database](https://en.wikipedia.org/wiki/Document-oriented_database) program. Classified as a [NoSQL](https://en.wikipedia.org/wiki/NoSQL) database program, MongoDB uses [JSON](https://en.wikipedia.org/wiki/JSON)-like documents with [schemata](https://en.wikipedia.org/wiki/Database_schema). MongoDB is developed by [MongoDB Inc.](https://en.wikipedia.org/wiki/MongoDB_Inc.), and is published under a combination of the [Server Side Public License](https://www.mongodb.com/licensing/server-side-public-license) and the [Apache License](https://en.wikipedia.org/wiki/Apache_License).
 
 First developed by the software company 10gen (now MongoDB Inc.) in October 2007 as a component of a planned platform as a service product, the company shifted to an open source development model in 2009, with 10gen offering commercial support and other services. Since then, MongoDB has been adopted as backend software by a number of major websites and services, including MetLife, Barclays, ADP, UPS, Viacom, and the New York Times, among others. MongoDB is the most popular NoSQL database system.
 
@@ -16,14 +16,14 @@ First developed by the software company 10gen (now MongoDB Inc.) in October 2007
 $ docker run --name some-%%REPO%% -d %%IMAGE%%:tag
 ```
 
-... where `some-%%REPO%%` is the name you want to assign to your container and tag is the tag specifying the MongoDB version you want. See the list above for relevant tags.
+... where `some-%%REPO%%` is the name you want to assign to your container and `tag` is the tag specifying the MongoDB version you want. See the list above for relevant tags.
 
 ## Connect to MongoDB from another Docker container
 
-The MongoDB server in the image listens on the standard MongoDB port, `27017`, so connecting via container linking or Docker networks will be the same as connecting to a remote `mongod`. The following example starts another MongoDB container instance and runs the `mongo` command line client against the original MongoDB container from the example above, allowing you to execute MongoDB statements against your database instance:
+The MongoDB server in the image listens on the standard MongoDB port, `27017`, so connecting via Docker networks will be the same as connecting to a remote `mongod`. The following example starts another MongoDB container instance and runs the `mongo` command line client against the original MongoDB container from the example above, allowing you to execute MongoDB statements against your database instance:
 
 ```console
-$ docker run -it --link some-%%REPO%%:mongo --rm %%IMAGE%% mongo --host mongo test
+$ docker run -it --network some-network --rm %%IMAGE%% mongo --host some-%%REPO%% test
 ```
 
 ... where `some-%%REPO%%` is the name of your original `mongo` container.
@@ -52,10 +52,10 @@ See the [MongoDB manual](https://docs.mongodb.com/manual/) for information on us
 
 ## Customize configuration without configuration file
 
-Most MongoDB configuration can be set through flags to `mongod`. The entrypoint of the image is created to pass its arguments along to `mongod`. See below an example of setting MongoDB to use a [smaller default file size](https://docs.mongodb.com/manual/reference/program/mongod/#cmdoption-mongod-smallfiles) via `docker run`.
+Most MongoDB configuration can be set through flags to `mongod`. The entrypoint of the image is created to pass its arguments along to `mongod`. See below an example of setting MongoDB to use a different [threading and execution model](https://docs.mongodb.com/manual/reference/program/mongod/#cmdoption-mongod-serviceexecutor) via `docker run`.
 
 ```console
-$ docker run --name some-%%REPO%% -d %%IMAGE%% --smallfiles
+$ docker run --name some-%%REPO%% -d %%IMAGE%% --serviceExecutor adaptive
 ```
 
 And here is the same with a `docker-compose.yml` file
@@ -65,7 +65,7 @@ version: '3.1'
 services:
   mongo:
     image: %%IMAGE%%
-    command: --smallfiles
+    command: --serviceExecutor adaptive
 ```
 
 To see the full list of possible options, check the MongoDB manual on [`mongod`](https://docs.mongodb.com/manual/reference/program/mongod/) or check the `--help` output of `mongod`:
@@ -73,6 +73,18 @@ To see the full list of possible options, check the MongoDB manual on [`mongod`]
 ```console
 $ docker run -it --rm %%IMAGE%% --help
 ```
+
+## Setting WiredTiger cache size limits
+
+By default Mongo will set the `wiredTigerCacheSizeGB` to a value proportional to the host's total memory regardless of memory limits you may have imposed on the container. In such an instance you will want to set the cache size to something appropriate, taking into account any other processes you may be running in the container which would also utilize memory.
+
+Taking the examples above you can configure the cache size to use 1.5GB as:
+
+```console
+$ docker run --name some-%%REPO%% -d %%IMAGE%% --wiredTigerCacheSizeGB 1.5
+```
+
+See [the upstream "WiredTiger Options" documentation](https://docs.mongodb.com/manual/reference/program/mongod/#wiredtiger-options) for more details.
 
 ## Using a custom MongoDB configuration file
 
@@ -90,17 +102,29 @@ When you start the `%%REPO%%` image, you can adjust the initialization of the Mo
 
 ### `MONGO_INITDB_ROOT_USERNAME`, `MONGO_INITDB_ROOT_PASSWORD`
 
-These variables, used in conjunction, create a new user and set that user's password. This user is created in the `admin` authentication database and given the role of `root`. Both variables are required for a user to be created. If both are present then MongoDB will start with authentication enabled: `mongod --auth`. Authentication in MongoDB is fairly complex, so more complex user setup is explicitly left to the user via `/docker-entrypoint-initdb.d/` (see *Initializing a fresh instance* below). The following is an example of using these two variables to create a MongoDB instance and then using the `mongo` cli to connect against the `admin` authentication database.
+These variables, used in conjunction, create a new user and set that user's password. This user is created in the `admin` [authentication database](https://docs.mongodb.com/manual/core/security-users/#user-authentication-database) and given [the role of `root`](https://docs.mongodb.com/manual/reference/built-in-roles/#root), which is [a "superuser" role](https://docs.mongodb.com/manual/core/security-built-in-roles/#superuser-roles).
+
+The following is an example of using these two variables to create a MongoDB instance and then using the `mongo` cli to connect against the `admin` authentication database.
 
 ```console
-$ docker run -d --name some-%%REPO%% -e MONGO_INITDB_ROOT_USERNAME=mongoadmin -e MONGO_INITDB_ROOT_PASSWORD=secret %%IMAGE%%
+$ docker run -d --network some-network --name some-%%REPO%% \
+	-e MONGO_INITDB_ROOT_USERNAME=mongoadmin \
+	-e MONGO_INITDB_ROOT_PASSWORD=secret \
+	%%IMAGE%%
 
-$ docker run -it --rm --link some-%%REPO%%:mongo %%IMAGE%% mongo --host mongo -u mongoadmin -p secret --authenticationDatabase admin some-db
+$ docker run -it --rm --network some-network %%IMAGE%% \
+	mongo --host some-mongo \
+		-u mongoadmin \
+		-p secret \
+		--authenticationDatabase admin \
+		some-db
 > db.getName();
 some-db
 ```
 
-If you do not provide these two variables or do not set the `--auth` flag with your own custom user setup, then MongoDB will not require authentication. For more details about the functionality described here, please see the sections in the official documentation which describe [authentication](https://docs.mongodb.com/manual/core/authentication/) and [authorization](https://docs.mongodb.com/manual/core/authorization/) in more detail.
+Both variables are required for a user to be created. If both are present then MongoDB will start with authentication enabled (`mongod --auth`).
+
+Authentication in MongoDB is fairly complex, so more complex user setup is explicitly left to the user via `/docker-entrypoint-initdb.d/` (see the *Initializing a fresh instance* and *Authentication* sections below for more details).
 
 ### `MONGO_INITDB_DATABASE`
 
@@ -119,6 +143,18 @@ Currently, this is only supported for `MONGO_INITDB_ROOT_USERNAME` and `MONGO_IN
 # Initializing a fresh instance
 
 When a container is started for the first time it will execute files with extensions `.sh` and `.js` that are found in `/docker-entrypoint-initdb.d`. Files will be executed in alphabetical order. `.js` files will be executed by `mongo` using the database specified by the `MONGO_INITDB_DATABASE` variable, if it is present, or `test` otherwise. You may also switch databases within the `.js` script.
+
+# Authentication
+
+As noted above, authentication in MongoDB is fairly complex (although disabled by default). For details about how MongoDB handles authentication, please see the relevant upstream documentation:
+
+-	[`mongod --auth`](https://docs.mongodb.com/manual/reference/program/mongod/#cmdoption-mongod-auth)
+-	[Security > Authentication](https://docs.mongodb.com/manual/core/authentication/)
+-	[Security > Role-Based Access Control](https://docs.mongodb.com/manual/core/authorization/)
+-	[Security > Role-Based Access Control > Built-In Roles](https://docs.mongodb.com/manual/core/security-built-in-roles/)
+-	[Security > Enable Auth (tutorial)](https://docs.mongodb.com/manual/tutorial/enable-authentication/)
+
+In addition to the `/docker-entrypoint-initdb.d` behavior documented above (which is a simple way to configure users for authentication for less complicated deployments), this image also supports `MONGO_INITDB_ROOT_USERNAME` and `MONGO_INITDB_ROOT_PASSWORD` for creating a simple user with [the role `root`](https://docs.mongodb.com/manual/reference/built-in-roles/#root) in the `admin` [authentication database](https://docs.mongodb.com/manual/core/security-users/#user-authentication-database), as described in the *Environment Variables* section above.
 
 # Caveats
 

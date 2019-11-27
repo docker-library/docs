@@ -16,9 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.7.2-apache`, `1.7-apache`, `1-apache`, `apache`, `1.7.2`, `1.7`, `1`, `latest` (*1.7.2/apache/Dockerfile*)](https://github.com/YOURLS/docker-yourls/blob/6d66e2a1f1bebd2faee9ac97b8c1d449e6d80f99/1.7.2/apache/Dockerfile)
--	[`1.7.2-fpm`, `1.7-fpm`, `1-fpm`, `fpm` (*1.7.2/fpm/Dockerfile*)](https://github.com/YOURLS/docker-yourls/blob/6d66e2a1f1bebd2faee9ac97b8c1d449e6d80f99/1.7.2/fpm/Dockerfile)
--	[`1.7.2-fpm-alpine`, `1.7-fpm-alpine`, `1-fpm-alpine`, `fpm-alpine` (*1.7.2/fpm-alpine/Dockerfile*)](https://github.com/YOURLS/docker-yourls/blob/6d66e2a1f1bebd2faee9ac97b8c1d449e6d80f99/1.7.2/fpm-alpine/Dockerfile)
+-	[`1.7.4-apache`, `1.7-apache`, `1-apache`, `apache`, `1.7.4`, `1.7`, `1`, `latest`](https://github.com/YOURLS/docker-yourls/blob/03c2472a9fefb0b0ec87cb3dfd82091b7561c5e8/apache/Dockerfile)
+-	[`1.7.4-fpm`, `1.7-fpm`, `1-fpm`, `fpm`](https://github.com/YOURLS/docker-yourls/blob/03c2472a9fefb0b0ec87cb3dfd82091b7561c5e8/fpm/Dockerfile)
+-	[`1.7.4-fpm-alpine`, `1.7-fpm-alpine`, `1-fpm-alpine`, `fpm-alpine`](https://github.com/YOURLS/docker-yourls/blob/03c2472a9fefb0b0ec87cb3dfd82091b7561c5e8/fpm-alpine/Dockerfile)
 
 # Quick reference
 
@@ -45,9 +45,6 @@ WARNING:
 -	**Source of this description**:  
 	[docs repo's `yourls/` directory](https://github.com/docker-library/docs/tree/master/yourls) ([history](https://github.com/docker-library/docs/commits/master/yourls))
 
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
-
 # What is YOURLS?
 
 YOURLS is a set of PHP scripts that will allow you to run Your Own URL Shortener. You'll have full control over your data, detailed stats, analytics, plugins, and more. It's free.
@@ -61,10 +58,13 @@ YOURLS is a set of PHP scripts that will allow you to run Your Own URL Shortener
 ```console
 $ docker run --name some-yourls --link some-mysql:mysql \
     -e YOURLS_SITE="https://example.com" \
+    -e YOURLS_USER="example_username" \
+    -e YOURLS_PASS="example_password" \
     -d yourls
 ```
 
-The following environment variables are also honored for configuring your YOURLS instance:
+The YOURLS instance accepts [a number of environment variables for configuration](https://yourls.org/#Config).  
+A few notable/important examples for using this Docker image include:
 
 -	`-e YOURLS_DB_HOST=...` (defaults to the IP and port of the linked `mysql` container)
 -	`-e YOURLS_DB_USER=...` (defaults to "root")
@@ -73,6 +73,8 @@ The following environment variables are also honored for configuring your YOURLS
 -	`-e YOURLS_TABLE_PREFIX=...` (defaults to "", only set this when you need to override the default table prefix in wp-config.php)
 -	`-e YOURLS_COOKIEKEY=...` (default to unique random SHA1s)
 -	`-e YOURLS_SITE=...` (yourls instance url)
+-	`-e YOURLS_USER=...` (yourls instance user name)
+-	`-e YOURLS_PASS=...` (yourls instance user password)
 
 If the `YOURLS_DB_NAME` specified does not already exist on the given MySQL server, it will be created automatically upon startup of the `yourls` container, provided that the `YOURLS_DB_USER` specified has the necessary permissions to create it.
 
@@ -108,6 +110,8 @@ services:
     environment:
       YOURLS_DB_PASS: example
       YOURLS_SITE: https://example.com
+      YOURLS_USER: example_username
+      YOURLS_PASS: example_password
 
   mysql:
     image: mysql:5.7
@@ -116,7 +120,7 @@ services:
       MYSQL_ROOT_PASSWORD: example
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/56798ba4051d863557e7e6256c452a9265745675/yourls/stack.yml)
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/be1a84b44ec3c028aa0ac5a9c8e413e43dfe05e4/yourls/stack.yml)
 
 Run `docker stack deploy -c stack.yml yourls` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
 
@@ -129,7 +133,6 @@ If you need additional PHP extensions, you'll need to create your own image `FRO
 The following Docker Hub features can help with the task of keeping your dependent images up-to-date:
 
 -	[Automated Builds](https://docs.docker.com/docker-hub/builds/) let Docker Hub automatically build your Dockerfile each time you push changes to it.
--	[Repository Links](https://docs.docker.com/docker-hub/builds/#repository-links) can ensure that your image is also rebuilt any time `yourls` is updated.
 
 # Image Variants
 

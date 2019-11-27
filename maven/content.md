@@ -24,9 +24,11 @@ $ docker build --tag my_local_%%IMAGE%%:3.5.2-jdk-8 .
 
 The local Maven repository can be reused across containers by creating a volume and mounting it in `/root/.m2`.
 
-	docker volume create --name maven-repo
-	docker run -it -v maven-repo:/root/.m2 %%IMAGE%% mvn archetype:generate # will download artifacts
-	docker run -it -v maven-repo:/root/.m2 %%IMAGE%% mvn archetype:generate # will reuse downloaded artifacts
+```console
+$ docker volume create --name maven-repo
+$ docker run -it -v maven-repo:/root/.m2 %%IMAGE%% mvn archetype:generate # will download artifacts
+$ docker run -it -v maven-repo:/root/.m2 %%IMAGE%% mvn archetype:generate # will reuse downloaded artifacts
+```
 
 Or you can just use your home .m2 cache directory that you share e.g. with your Eclipse/IDEA:
 

@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.7.0-standalone`, `4.7-standalone`, `4-standalone`, `standalone`, `4.7.0`, `4.7`, `4`, `latest` (*4/Dockerfile*)](https://github.com/TimWolla/docker-adminer/blob/9995b788b8948892a1aed163ab78796d5acaa276/4/Dockerfile)
--	[`4.7.0-fastcgi`, `4.7-fastcgi`, `4-fastcgi`, `fastcgi` (*4/fastcgi/Dockerfile*)](https://github.com/TimWolla/docker-adminer/blob/9995b788b8948892a1aed163ab78796d5acaa276/4/fastcgi/Dockerfile)
+-	[`4.7.5-standalone`, `4.7-standalone`, `4-standalone`, `standalone`, `4.7.5`, `4.7`, `4`, `latest`](https://github.com/TimWolla/docker-adminer/blob/0efbd705f55311b3ec5f7c4a677d182aa70910a9/4/Dockerfile)
+-	[`4.7.5-fastcgi`, `4.7-fastcgi`, `4-fastcgi`, `fastcgi`](https://github.com/TimWolla/docker-adminer/blob/0efbd705f55311b3ec5f7c4a677d182aa70910a9/4/fastcgi/Dockerfile)
 
 # Quick reference
 
@@ -31,7 +31,7 @@ WARNING:
 	[Tim Düsterhus (of the Docker Community)](https://github.com/TimWolla/docker-adminer)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/adminer/), [`arm32v6`](https://hub.docker.com/r/arm32v6/adminer/), [`arm64v8`](https://hub.docker.com/r/arm64v8/adminer/), [`i386`](https://hub.docker.com/r/i386/adminer/), [`ppc64le`](https://hub.docker.com/r/ppc64le/adminer/)
+	[`amd64`](https://hub.docker.com/r/amd64/adminer/), [`arm32v6`](https://hub.docker.com/r/arm32v6/adminer/), [`arm32v7`](https://hub.docker.com/r/arm32v7/adminer/), [`arm64v8`](https://hub.docker.com/r/arm64v8/adminer/), [`i386`](https://hub.docker.com/r/i386/adminer/), [`ppc64le`](https://hub.docker.com/r/ppc64le/adminer/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/adminer/` directory](https://github.com/docker-library/repo-info/blob/master/repos/adminer) ([history](https://github.com/docker-library/repo-info/commits/master/repos/adminer))  
@@ -43,9 +43,6 @@ WARNING:
 
 -	**Source of this description**:  
 	[docs repo's `adminer/` directory](https://github.com/docker-library/docs/tree/master/adminer) ([history](https://github.com/docker-library/docs/commits/master/adminer))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # Adminer
 

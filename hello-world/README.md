@@ -16,24 +16,23 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
+(See ["What's the difference between 'Shared' and 'Simple' tags?" in the FAQ](https://github.com/docker-library/faq#whats-the-difference-between-shared-and-simple-tags).)
+
 ## Simple Tags
 
--	[`linux` (*amd64/hello-world/Dockerfile*)](https://github.com/docker-library/hello-world/blob/b715c35271f1d18832480bde75fe17b93db26414/amd64/hello-world/Dockerfile)
--	[`nanoserver-sac2016` (*amd64/hello-world/nanoserver-sac2016/Dockerfile*)](https://github.com/docker-library/hello-world/blob/b715c35271f1d18832480bde75fe17b93db26414/amd64/hello-world/nanoserver-sac2016/Dockerfile)
--	[`nanoserver-1709` (*amd64/hello-world/nanoserver-1709/Dockerfile*)](https://github.com/docker-library/hello-world/blob/b715c35271f1d18832480bde75fe17b93db26414/amd64/hello-world/nanoserver-1709/Dockerfile)
--	[`nanoserver-1803` (*amd64/hello-world/nanoserver-1803/Dockerfile*)](https://github.com/docker-library/hello-world/blob/b715c35271f1d18832480bde75fe17b93db26414/amd64/hello-world/nanoserver-1803/Dockerfile)
+-	[`linux`](https://github.com/docker-library/hello-world/blob/b715c35271f1d18832480bde75fe17b93db26414/amd64/hello-world/Dockerfile)
+-	[`nanoserver-1803`](https://github.com/docker-library/hello-world/blob/9c93e37114a7fe99b5fc0d776e0b8dff99cbbb75/amd64/hello-world/nanoserver-1803/Dockerfile)
+-	[`nanoserver-1809`](https://github.com/docker-library/hello-world/blob/9c93e37114a7fe99b5fc0d776e0b8dff99cbbb75/amd64/hello-world/nanoserver-1809/Dockerfile)
 
 ## Shared Tags
 
 -	`latest`:
-	-	[`linux` (*amd64/hello-world/Dockerfile*)](https://github.com/docker-library/hello-world/blob/b715c35271f1d18832480bde75fe17b93db26414/amd64/hello-world/Dockerfile)
-	-	[`nanoserver-sac2016` (*amd64/hello-world/nanoserver-sac2016/Dockerfile*)](https://github.com/docker-library/hello-world/blob/b715c35271f1d18832480bde75fe17b93db26414/amd64/hello-world/nanoserver-sac2016/Dockerfile)
-	-	[`nanoserver-1709` (*amd64/hello-world/nanoserver-1709/Dockerfile*)](https://github.com/docker-library/hello-world/blob/b715c35271f1d18832480bde75fe17b93db26414/amd64/hello-world/nanoserver-1709/Dockerfile)
-	-	[`nanoserver-1803` (*amd64/hello-world/nanoserver-1803/Dockerfile*)](https://github.com/docker-library/hello-world/blob/b715c35271f1d18832480bde75fe17b93db26414/amd64/hello-world/nanoserver-1803/Dockerfile)
+	-	[`linux`](https://github.com/docker-library/hello-world/blob/b715c35271f1d18832480bde75fe17b93db26414/amd64/hello-world/Dockerfile)
+	-	[`nanoserver-1803`](https://github.com/docker-library/hello-world/blob/9c93e37114a7fe99b5fc0d776e0b8dff99cbbb75/amd64/hello-world/nanoserver-1803/Dockerfile)
+	-	[`nanoserver-1809`](https://github.com/docker-library/hello-world/blob/9c93e37114a7fe99b5fc0d776e0b8dff99cbbb75/amd64/hello-world/nanoserver-1809/Dockerfile)
 -	`nanoserver`:
-	-	[`nanoserver-sac2016` (*amd64/hello-world/nanoserver-sac2016/Dockerfile*)](https://github.com/docker-library/hello-world/blob/b715c35271f1d18832480bde75fe17b93db26414/amd64/hello-world/nanoserver-sac2016/Dockerfile)
-	-	[`nanoserver-1709` (*amd64/hello-world/nanoserver-1709/Dockerfile*)](https://github.com/docker-library/hello-world/blob/b715c35271f1d18832480bde75fe17b93db26414/amd64/hello-world/nanoserver-1709/Dockerfile)
-	-	[`nanoserver-1803` (*amd64/hello-world/nanoserver-1803/Dockerfile*)](https://github.com/docker-library/hello-world/blob/b715c35271f1d18832480bde75fe17b93db26414/amd64/hello-world/nanoserver-1803/Dockerfile)
+	-	[`nanoserver-1803`](https://github.com/docker-library/hello-world/blob/9c93e37114a7fe99b5fc0d776e0b8dff99cbbb75/amd64/hello-world/nanoserver-1803/Dockerfile)
+	-	[`nanoserver-1809`](https://github.com/docker-library/hello-world/blob/9c93e37114a7fe99b5fc0d776e0b8dff99cbbb75/amd64/hello-world/nanoserver-1809/Dockerfile)
 
 # Quick reference
 
@@ -59,9 +58,6 @@ WARNING:
 
 -	**Source of this description**:  
 	[docs repo's `hello-world/` directory](https://github.com/docker-library/docs/tree/master/hello-world) ([history](https://github.com/docker-library/docs/commits/master/hello-world))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # Example output
 
@@ -92,7 +88,7 @@ For more examples and ideas, visit:
 
 $ docker images hello-world
 REPOSITORY   TAG     IMAGE ID      SIZE
-hello-world  latest  4ab4c602aa5e  1.84kB
+hello-world  latest  fce289e99eb9  1840
 ```
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/01c12653951b2fe592c1f93a13b4e289ada0e3a1/hello-world/logo.png)

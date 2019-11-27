@@ -16,8 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`p8`, `latest` (*x86_64//Dockerfile*)](https://github.com/alt-cloud/docker-brew-alt/blob/a344c86cb9828d8414b0ef1f447f68e21a67a20e/x86_64//Dockerfile)
--	[`sisyphus` (*x86_64//Dockerfile*)](https://github.com/alt-cloud/docker-brew-alt/blob/0233794bdbc8f239f051b7c012d02b19cd68afdf/x86_64//Dockerfile)
+-	[`p9`, `latest`](https://github.com/alt-cloud/docker-brew-alt/blob/e97e14b9ddc54efc0d8a2bee5af76d0ff7d90832/x86_64/Dockerfile)
+-	[`p8`](https://github.com/alt-cloud/docker-brew-alt/blob/43865172eb9a97efa718af9cd5b5246db1657066/x86_64/Dockerfile)
+-	[`sisyphus`](https://github.com/alt-cloud/docker-brew-alt/blob/06eb14171b57bbf157d646e2c4bef1f6f6d95187/x86_64/Dockerfile)
 
 # Quick reference
 
@@ -27,13 +28,13 @@ WARNING:
 -	**Where to file issues**:  
 	First of all, please, make sure that the developers are not aware of the [bug in ALT bugzilla](https://bugzilla.altlinux.org/buglist.cgi?query_format=advanced&product=Sisyphus&component=docker-ce).
 
-For create new bug, please use [ALT's bugzilla page](https://bugzilla.altlinux.org/enter_bug.cgi?product=Sisyphus) (choose `docker-ce` as component and include details about image problems in the description) or [GitHub](https://github.com/alt-cloud/docker-brew-alt/issues).
+For create new bug, please use [ALT's bugzilla page](https://bugzilla.altlinux.org/enter_bug.cgi?product=Docker) (choose `Official image` as component and include details about image problems in the description) or [GitHub](https://github.com/alt-cloud/docker-brew-alt/issues).
 
 -	**Maintained by**:  
 	[The ALT Linux Team Cloud](https://github.com/alt-cloud/docker-brew-alt)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/alt/), [`arm64v8`](https://hub.docker.com/r/arm64v8/alt/), [`i386`](https://hub.docker.com/r/i386/alt/)
+	[`amd64`](https://hub.docker.com/r/amd64/alt/), [`arm64v8`](https://hub.docker.com/r/arm64v8/alt/), [`i386`](https://hub.docker.com/r/i386/alt/), [`ppc64le`](https://hub.docker.com/r/ppc64le/alt/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/alt/` directory](https://github.com/docker-library/repo-info/blob/master/repos/alt) ([history](https://github.com/docker-library/repo-info/commits/master/repos/alt))  
@@ -45,9 +46,6 @@ For create new bug, please use [ALT's bugzilla page](https://bugzilla.altlinux.o
 
 -	**Source of this description**:  
 	[docs repo's `alt/` directory](https://github.com/docker-library/docs/tree/master/alt) ([history](https://github.com/docker-library/docs/commits/master/alt))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # ALT Linux
 
@@ -65,13 +63,13 @@ This image serves as the `official ALT image` for the [ALT Linux](https://altlin
 
 The name Sisyphus comes from the Greek mythology. Uninterrupted efforts on improvement of technologies set in the repository make ALT Linux Team similar to tireless Sisyphus continuously rolling stones up the hill.
 
-# About Platform 8
+# About Platform 9
 
-As said above, Sisyphus is a frequently updated repository mainly designed for developers. Stable distributions by ALT are the best solution for those users preferring stability and predictability of the system to its functionality (primarily new and corporate users). Such stable distributions are based on stable Sisyphus repository slices called platforms. Platform 8 (p8) was created in April, 2016, and will be supported till December, 2019.
+As said above, Sisyphus is a frequently updated repository mainly designed for developers. Stable distributions by ALT are the best solution for those users preferring stability and predictability of the system to its functionality (primarily new and corporate users). Such stable distributions are based on stable Sisyphus repository slices called platforms. Platform 9 (p9) was created in June, 2019, and will be supported till December, 2022.
 
 # About this image
 
-The `alt:latest` tag will always point the latest stable release (which is, at the time of this writing, `alt:p8`).
+The `alt:latest` tag will always point the latest stable release (which is, at the time of this writing, `alt:p9`).
 
 ## How It's Made
 

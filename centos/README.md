@@ -16,19 +16,22 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `centos7`, `7` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/72c01dc74ef482ce318167c5c10646be65ac682e/docker/Dockerfile)
--	[`centos6`, `6` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/23b05f6a35520ebf338e4df918e4952830da068b/docker/Dockerfile)
--	[`centos7.5.1804`, `7.5.1804` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/0cea32a0018ac2d874960d9378a9745bf92affd2/docker/Dockerfile)
--	[`centos7.4.1708`, `7.4.1708` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/66add29c188e42d4d855f4d4acdb2b73d547edb6/docker/Dockerfile)
--	[`centos7.3.1611`, `7.3.1611` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/5bbaef9f60ab9e3eeb61acec631c2d91f8714fff/docker/Dockerfile)
--	[`centos7.2.1511`, `7.2.1511` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/a3c59bd4e98a7f9c063d993955c8ec19c5b1ceff/docker/Dockerfile)
--	[`centos7.1.1503`, `7.1.1503` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/bc561dfdd671d612dbb9f92e7e17dd8009befc44/docker/Dockerfile)
--	[`centos7.0.1406`, `7.0.1406` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/f1d1e0bd83baef08e257da50e6fb446e4dd1b90c/docker/Dockerfile)
--	[`centos6.10`, `6.10` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/da050e2fc6c28d8d72d8bf78c49537247b5ddf76/docker/Dockerfile)
--	[`centos6.9`, `6.9` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/4f329fe087b0152df26344cecee9ba30b03b1a7b/docker/Dockerfile)
--	[`centos6.8`, `6.8` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/f32666d2af356ed6835942ed753a4970e18bca94/docker/Dockerfile)
--	[`centos6.7`, `6.7` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/d0b72df83f49da844f88aabebe3826372f675370/docker/Dockerfile)
--	[`centos6.6`, `6.6` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/8911843d9a6cc71aadd81e491f94618aded94f30/docker/Dockerfile)
+-	[`latest`, `centos8`, `8`](https://github.com/CentOS/sig-cloud-instance-images/blob/0510c8e67cb3a48db178a8302157cdf7d9e99a0c/docker/Dockerfile)
+-	[`centos7`, `7`](https://github.com/CentOS/sig-cloud-instance-images/blob/d9560a37644faaeac50162582f82a5ee920dc37e/docker/Dockerfile)
+-	[`centos6`, `6`](https://github.com/CentOS/sig-cloud-instance-images/blob/23b05f6a35520ebf338e4df918e4952830da068b/docker/Dockerfile)
+-	[`centos7.7.1908`, `7.7.1908`](https://github.com/CentOS/sig-cloud-instance-images/blob/dcf7932cbda6dd9865d50bfe969927e3e1f0c671/docker/Dockerfile)
+-	[`centos7.6.1810`, `7.6.1810`](https://github.com/CentOS/sig-cloud-instance-images/blob/7c2e214edced0b2f22e663ab4175a80fc93acaa9/docker/Dockerfile)
+-	[`centos7.5.1804`, `7.5.1804`](https://github.com/CentOS/sig-cloud-instance-images/blob/0cea32a0018ac2d874960d9378a9745bf92affd2/docker/Dockerfile)
+-	[`centos7.4.1708`, `7.4.1708`](https://github.com/CentOS/sig-cloud-instance-images/blob/66add29c188e42d4d855f4d4acdb2b73d547edb6/docker/Dockerfile)
+-	[`centos7.3.1611`, `7.3.1611`](https://github.com/CentOS/sig-cloud-instance-images/blob/5bbaef9f60ab9e3eeb61acec631c2d91f8714fff/docker/Dockerfile)
+-	[`centos7.2.1511`, `7.2.1511`](https://github.com/CentOS/sig-cloud-instance-images/blob/a3c59bd4e98a7f9c063d993955c8ec19c5b1ceff/docker/Dockerfile)
+-	[`centos7.1.1503`, `7.1.1503`](https://github.com/CentOS/sig-cloud-instance-images/blob/bc561dfdd671d612dbb9f92e7e17dd8009befc44/docker/Dockerfile)
+-	[`centos7.0.1406`, `7.0.1406`](https://github.com/CentOS/sig-cloud-instance-images/blob/f1d1e0bd83baef08e257da50e6fb446e4dd1b90c/docker/Dockerfile)
+-	[`centos6.10`, `6.10`](https://github.com/CentOS/sig-cloud-instance-images/blob/da050e2fc6c28d8d72d8bf78c49537247b5ddf76/docker/Dockerfile)
+-	[`centos6.9`, `6.9`](https://github.com/CentOS/sig-cloud-instance-images/blob/4f329fe087b0152df26344cecee9ba30b03b1a7b/docker/Dockerfile)
+-	[`centos6.8`, `6.8`](https://github.com/CentOS/sig-cloud-instance-images/blob/f32666d2af356ed6835942ed753a4970e18bca94/docker/Dockerfile)
+-	[`centos6.7`, `6.7`](https://github.com/CentOS/sig-cloud-instance-images/blob/d0b72df83f49da844f88aabebe3826372f675370/docker/Dockerfile)
+-	[`centos6.6`, `6.6`](https://github.com/CentOS/sig-cloud-instance-images/blob/8911843d9a6cc71aadd81e491f94618aded94f30/docker/Dockerfile)
 
 # Quick reference
 
@@ -55,9 +58,6 @@ WARNING:
 -	**Source of this description**:  
 	[docs repo's `centos/` directory](https://github.com/docker-library/docs/tree/master/centos) ([history](https://github.com/docker-library/docs/commits/master/centos))
 
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
-
 # CentOS
 
 CentOS Linux is a community-supported distribution derived from sources freely provided to the public by [Red Hat](ftp://ftp.redhat.com/pub/redhat/linux/enterprise/) for Red Hat Enterprise Linux (RHEL). As such, CentOS Linux aims to be functionally compatible with RHEL. The CentOS Project mainly changes packages to remove upstream vendor branding and artwork. CentOS Linux is no-cost and free to redistribute. Each CentOS Linux version is maintained for up to 10 years (by means of security updates -- the duration of the support interval by Red Hat has varied over time with respect to Sources released). A new CentOS Linux version is released approximately every 2 years and each CentOS Linux version is periodically updated (roughly every 6 months) to support newer hardware. This results in a secure, low-maintenance, reliable, predictable, and reproducible Linux environment.
@@ -76,7 +76,7 @@ The CentOS Project offers regularly updated images for all active releases. Thes
 
 ## Minor tags
 
-Additionally, images with minor version tags that correspond to install media are also offered. **These images DO NOT recieve updates** as they are intended to match installation iso contents. If you choose to use these images it is highly recommended that you include `RUN yum -y update && yum clean all` in your Dockerfile, or otherwise address any potential security concerns. To use these images, please specify the minor version tag:
+Additionally, images with minor version tags that correspond to install media are also offered. **These images DO NOT receive updates** as they are intended to match installation iso contents. If you choose to use these images it is highly recommended that you include `RUN yum -y update && yum clean all` in your Dockerfile, or otherwise address any potential security concerns. To use these images, please specify the minor version tag:
 
 For example: `docker pull centos:5.11` or `docker pull centos:6.6`
 

@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.29.3-uclibc`, `1.29-uclibc`, `1-uclibc`, `uclibc` (*uclibc/Dockerfile*)](https://github.com/docker-library/busybox/blob/0b299265b6140985a88913133261b93d5a2c2c19/uclibc/Dockerfile)
--	[`1.29.3-glibc`, `1.29-glibc`, `1-glibc`, `glibc` (*glibc/Dockerfile*)](https://github.com/docker-library/busybox/blob/0b299265b6140985a88913133261b93d5a2c2c19/glibc/Dockerfile)
--	[`1.29.3-musl`, `1.29-musl`, `1-musl`, `musl` (*musl/Dockerfile*)](https://github.com/docker-library/busybox/blob/0b299265b6140985a88913133261b93d5a2c2c19/musl/Dockerfile)
--	[`1.29.3`, `1.29`, `1`, `latest` (*uclibc/Dockerfile*)](https://github.com/docker-library/busybox/blob/0b299265b6140985a88913133261b93d5a2c2c19/uclibc/Dockerfile)
+-	[`1.31.1-uclibc`, `1.31-uclibc`, `1-uclibc`, `uclibc`](https://github.com/docker-library/busybox/blob/df521b5fcacf7164e3e33d6560d2a7da665ade9c/uclibc/Dockerfile)
+-	[`1.31.1-glibc`, `1.31-glibc`, `1-glibc`, `glibc`](https://github.com/docker-library/busybox/blob/df521b5fcacf7164e3e33d6560d2a7da665ade9c/glibc/Dockerfile)
+-	[`1.31.1-musl`, `1.31-musl`, `1-musl`, `musl`](https://github.com/docker-library/busybox/blob/df521b5fcacf7164e3e33d6560d2a7da665ade9c/musl/Dockerfile)
+-	[`1.31.1`, `1.31`, `1`, `latest`](https://github.com/docker-library/busybox/blob/df521b5fcacf7164e3e33d6560d2a7da665ade9c/uclibc/Dockerfile)
 
 # Quick reference
 
@@ -45,9 +45,6 @@ WARNING:
 
 -	**Source of this description**:  
 	[docs repo's `busybox/` directory](https://github.com/docker-library/docs/tree/master/busybox) ([history](https://github.com/docker-library/docs/commits/master/busybox))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is BusyBox? The Swiss Army Knife of Embedded Linux
 

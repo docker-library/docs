@@ -16,7 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.0.1`, `latest` (*Dockerfile*)](https://github.com/Silverpeas/docker-silverpeas-prod/blob/3e3e2ce680e57828a145151a2ee609b34e1501d2/Dockerfile)
+-	[`6.0.2`, `latest`](https://github.com/Silverpeas/docker-silverpeas-prod/blob/189a4f2db783d5052add54f2c07ca7a3b860c685/Dockerfile)
 
 # Quick reference
 
@@ -30,7 +30,7 @@ WARNING:
 	[Silverpeas](https://github.com/Silverpeas/docker-silverpeas-prod)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/silverpeas/), [`arm64v8`](https://hub.docker.com/r/arm64v8/silverpeas/)
+	[`amd64`](https://hub.docker.com/r/amd64/silverpeas/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/silverpeas/` directory](https://github.com/docker-library/repo-info/blob/master/repos/silverpeas) ([history](https://github.com/docker-library/repo-info/commits/master/repos/silverpeas))  
@@ -42,9 +42,6 @@ WARNING:
 
 -	**Source of this description**:  
 	[docs repo's `silverpeas/` directory](https://github.com/docker-library/docs/tree/master/silverpeas) ([history](https://github.com/docker-library/docs/commits/master/silverpeas))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Silverpeas
 

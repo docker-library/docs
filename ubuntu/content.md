@@ -1,8 +1,8 @@
 # What is Ubuntu?
 
-Ubuntu is a Debian-based Linux operating system, with Unity as its default desktop environment. It is based on free software and named after the Southern African philosophy of ubuntu (literally, "human-ness"), which often is translated as "humanity towards others" or "the belief in a universal bond of sharing that connects all humanity".
+Ubuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things. It is the world's most popular operating system across public clouds and OpenStack clouds. It is the number one platform for containers; from Docker to Kubernetes to LXD, Ubuntu can run your containers at scale. Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
-Development of Ubuntu is led by UK-based Canonical Ltd., a company owned by South African entrepreneur Mark Shuttleworth. Canonical generates revenue through the sale of technical support and other services related to Ubuntu. The Ubuntu project is publicly committed to the principles of open-source software development; people are encouraged to use free software, study how it works, improve upon it, and distribute it.
+Development of Ubuntu is led by Canonical Ltd. Canonical generates revenue through the sale of technical support and other services related to Ubuntu. The Ubuntu project is publicly committed to the principles of open-source software development; people are encouraged to use free software, study how it works, improve upon it, and distribute it.
 
 > [wikipedia.org/wiki/Ubuntu_(operating_system)](https://en.wikipedia.org/wiki/Ubuntu_%28operating_system%29)
 
@@ -26,78 +26,4 @@ For uses where that is not sufficient, other locales can be installed/generated 
 RUN apt-get update && apt-get install -y locales && rm -rf /var/lib/apt/lists/* \
 	&& localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
 ENV LANG en_US.utf8
-```
-
-## `/etc/apt/sources.list`
-
-### `%%IMAGE%%:18.04`
-
-```console
-$ docker run %%IMAGE%%:18.04 grep -v '^#' /etc/apt/sources.list
-
-deb http://archive.ubuntu.com/ubuntu/ bionic main restricted
-
-deb http://archive.ubuntu.com/ubuntu/ bionic-updates main restricted
-
-deb http://archive.ubuntu.com/ubuntu/ bionic universe
-deb-src http://archive.ubuntu.com/ubuntu/ bionic universe
-deb http://archive.ubuntu.com/ubuntu/ bionic-updates universe
-deb-src http://archive.ubuntu.com/ubuntu/ bionic-updates universe
-
-deb http://archive.ubuntu.com/ubuntu/ bionic multiverse
-deb http://archive.ubuntu.com/ubuntu/ bionic-updates multiverse
-
-deb http://archive.ubuntu.com/ubuntu/ bionic-backports main restricted universe multiverse
-
-
-deb http://security.ubuntu.com/ubuntu/ bionic-security main restricted
-deb http://security.ubuntu.com/ubuntu/ bionic-security universe
-deb-src http://security.ubuntu.com/ubuntu/ bionic-security universe
-deb http://security.ubuntu.com/ubuntu/ bionic-security multiverse
-```
-
-### `%%IMAGE%%:16.04`
-
-```console
-$ docker run %%IMAGE%%:16.04 grep -v '^#' /etc/apt/sources.list
-
-deb http://archive.ubuntu.com/ubuntu/ xenial main restricted
-deb-src http://archive.ubuntu.com/ubuntu/ xenial main restricted
-
-deb http://archive.ubuntu.com/ubuntu/ xenial-updates main restricted
-deb-src http://archive.ubuntu.com/ubuntu/ xenial-updates main restricted
-
-deb http://archive.ubuntu.com/ubuntu/ xenial universe
-deb-src http://archive.ubuntu.com/ubuntu/ xenial universe
-deb http://archive.ubuntu.com/ubuntu/ xenial-updates universe
-deb-src http://archive.ubuntu.com/ubuntu/ xenial-updates universe
-
-
-deb http://archive.ubuntu.com/ubuntu/ xenial-security main restricted
-deb-src http://archive.ubuntu.com/ubuntu/ xenial-security main restricted
-deb http://archive.ubuntu.com/ubuntu/ xenial-security universe
-deb-src http://archive.ubuntu.com/ubuntu/ xenial-security universe
-```
-
-### `%%IMAGE%%:14.04`
-
-```console
-$ docker run %%IMAGE%%:14.04 grep -v '^#' /etc/apt/sources.list
-
-deb http://archive.ubuntu.com/ubuntu/ trusty main restricted
-deb-src http://archive.ubuntu.com/ubuntu/ trusty main restricted
-
-deb http://archive.ubuntu.com/ubuntu/ trusty-updates main restricted
-deb-src http://archive.ubuntu.com/ubuntu/ trusty-updates main restricted
-
-deb http://archive.ubuntu.com/ubuntu/ trusty universe
-deb-src http://archive.ubuntu.com/ubuntu/ trusty universe
-deb http://archive.ubuntu.com/ubuntu/ trusty-updates universe
-deb-src http://archive.ubuntu.com/ubuntu/ trusty-updates universe
-
-
-deb http://archive.ubuntu.com/ubuntu/ trusty-security main restricted
-deb-src http://archive.ubuntu.com/ubuntu/ trusty-security main restricted
-deb http://archive.ubuntu.com/ubuntu/ trusty-security universe
-deb-src http://archive.ubuntu.com/ubuntu/ trusty-security universe
 ```

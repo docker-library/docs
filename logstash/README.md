@@ -16,9 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.5.1` (*6/Dockerfile*)](https://github.com/docker-library/logstash/blob/60f93194c822ef6eefa62b46448521b1b01d3ef3/6/Dockerfile)
--	[`5.6.13`, `5.6`, `5` (*5/Dockerfile*)](https://github.com/docker-library/logstash/blob/babe058abf92da5091d976173639663f7fea0d59/5/Dockerfile)
--	[`5.6.13-alpine`, `5.6-alpine`, `5-alpine` (*5/alpine/Dockerfile*)](https://github.com/docker-library/logstash/blob/babe058abf92da5091d976173639663f7fea0d59/5/alpine/Dockerfile)
+-	[`7.4.2`](https://github.com/docker-library/logstash/blob/08f0241e9b8f15a57a82f8d9283795f2ab71341f/7/Dockerfile)
+-	[`6.8.5`](https://github.com/docker-library/logstash/blob/cbebabecdab7144b15e520000ca9a4a9b1a5e169/6/Dockerfile)
 
 # Quick reference
 
@@ -44,9 +43,6 @@ WARNING:
 
 -	**Source of this description**:  
 	[docs repo's `logstash/` directory](https://github.com/docker-library/docs/tree/master/logstash) ([history](https://github.com/docker-library/docs/commits/master/logstash))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Logstash?
 

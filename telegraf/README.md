@@ -16,12 +16,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.6`, `1.6.4` (*telegraf/1.6/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/e90ed7bbdcd69305c615fe9be7903ef2e93ad978/telegraf/1.6/Dockerfile)
--	[`1.6-alpine`, `1.6.4-alpine` (*telegraf/1.6/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/e90ed7bbdcd69305c615fe9be7903ef2e93ad978/telegraf/1.6/alpine/Dockerfile)
--	[`1.7`, `1.7.4` (*telegraf/1.7/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/e90ed7bbdcd69305c615fe9be7903ef2e93ad978/telegraf/1.7/Dockerfile)
--	[`1.7-alpine`, `1.7.4-alpine` (*telegraf/1.7/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/e90ed7bbdcd69305c615fe9be7903ef2e93ad978/telegraf/1.7/alpine/Dockerfile)
--	[`1.8`, `1.8.3`, `latest` (*telegraf/1.8/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/e90ed7bbdcd69305c615fe9be7903ef2e93ad978/telegraf/1.8/Dockerfile)
--	[`1.8-alpine`, `1.8.3-alpine`, `alpine` (*telegraf/1.8/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/e90ed7bbdcd69305c615fe9be7903ef2e93ad978/telegraf/1.8/alpine/Dockerfile)
+-	[`1.10`, `1.10.4`](https://github.com/influxdata/influxdata-docker/blob/7bdbdd1c41c6d6f2d2cd26691dad096fc850cfce/telegraf/1.10/Dockerfile)
+-	[`1.10-alpine`, `1.10.4-alpine`](https://github.com/influxdata/influxdata-docker/blob/7bdbdd1c41c6d6f2d2cd26691dad096fc850cfce/telegraf/1.10/alpine/Dockerfile)
+-	[`1.11`, `1.11.5`](https://github.com/influxdata/influxdata-docker/blob/7bdbdd1c41c6d6f2d2cd26691dad096fc850cfce/telegraf/1.11/Dockerfile)
+-	[`1.11-alpine`, `1.11.5-alpine`](https://github.com/influxdata/influxdata-docker/blob/7bdbdd1c41c6d6f2d2cd26691dad096fc850cfce/telegraf/1.11/alpine/Dockerfile)
+-	[`1.12`, `1.12.6`, `latest`](https://github.com/influxdata/influxdata-docker/blob/7bdbdd1c41c6d6f2d2cd26691dad096fc850cfce/telegraf/1.12/Dockerfile)
+-	[`1.12-alpine`, `1.12.6-alpine`, `alpine`](https://github.com/influxdata/influxdata-docker/blob/7bdbdd1c41c6d6f2d2cd26691dad096fc850cfce/telegraf/1.12/alpine/Dockerfile)
 
 # Quick reference
 
@@ -47,9 +47,6 @@ WARNING:
 
 -	**Source of this description**:  
 	[docs repo's `telegraf/` directory](https://github.com/docker-library/docs/tree/master/telegraf) ([history](https://github.com/docker-library/docs/commits/master/telegraf))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # Telegraf
 
@@ -260,6 +257,48 @@ $ docker run -d --name=telegraf \
 ```
 
 Refer to the docker [plugin documentation](https://github.com/influxdata/telegraf/blob/master/plugins/inputs/docker/README.md) for more information.
+
+### Install Additional Packages
+
+Some plugins require additional packages to be installed. For example, the `ntpq` plugin requires `ntpq` command. It is recommended to create a custom derivative image to install any needed commands.
+
+As an example this Dockerfile add the `mtr-tiny` image to the stock image and save it as `telegraf-mtr.docker`:
+
+```dockerfile
+FROM telegraf:1.12.3
+
+RUN apt-get update && apt-get install -y --no-install-recommends mtr-tiny && \
+	rm -rf /var/lib/apt/lists/*
+```
+
+Build the derivative image:
+
+```console
+$ docker build -t telegraf-mtr:1.12.3 - < telegraf-mtr.docker
+```
+
+Create a `telegraf.conf` configuration file:
+
+```toml
+[[inputs.exec]]
+  interval = "60s"
+  commands=["mtr -C -n example.org"]
+  timeout = "40s"
+  data_format = "csv"
+  csv_skip_rows = 1
+  csv_column_names=["", "", "status", "dest", "hop", "ip", "loss", "snt", "", "", "avg", "best", "worst", "stdev"]
+  name_override = "mtr"
+  csv_tag_columns = ["dest", "hop", "ip"]
+
+[[outputs.file]]
+  files = ["stdout"]
+```
+
+Run your derivative image:
+
+```console
+$ docker run --name telegraf --rm -v $PWD/telegraf.conf:/etc/telegraf/telegraf.conf telegraf-mtr:1.12.3
+```
 
 # Image Variants
 

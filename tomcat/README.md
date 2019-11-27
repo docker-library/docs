@@ -16,26 +16,33 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.0.92-jre7`, `7.0-jre7`, `7-jre7`, `7.0.92`, `7.0`, `7` (*7/jre7/Dockerfile*)](https://github.com/docker-library/tomcat/blob/37baee2462247279efcf9e072f55d4ff3086a7a9/7/jre7/Dockerfile)
--	[`7.0.92-jre7-slim`, `7.0-jre7-slim`, `7-jre7-slim`, `7.0.92-slim`, `7.0-slim`, `7-slim` (*7/jre7-slim/Dockerfile*)](https://github.com/docker-library/tomcat/blob/37baee2462247279efcf9e072f55d4ff3086a7a9/7/jre7-slim/Dockerfile)
--	[`7.0.92-jre7-alpine`, `7.0-jre7-alpine`, `7-jre7-alpine`, `7.0.92-alpine`, `7.0-alpine`, `7-alpine` (*7/jre7-alpine/Dockerfile*)](https://github.com/docker-library/tomcat/blob/1722fc14b4eb66f746a2067739f32d4111f408de/7/jre7-alpine/Dockerfile)
--	[`7.0.92-jre8`, `7.0-jre8`, `7-jre8` (*7/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/37baee2462247279efcf9e072f55d4ff3086a7a9/7/jre8/Dockerfile)
--	[`7.0.92-jre8-slim`, `7.0-jre8-slim`, `7-jre8-slim` (*7/jre8-slim/Dockerfile*)](https://github.com/docker-library/tomcat/blob/37baee2462247279efcf9e072f55d4ff3086a7a9/7/jre8-slim/Dockerfile)
--	[`7.0.92-jre8-alpine`, `7.0-jre8-alpine`, `7-jre8-alpine` (*7/jre8-alpine/Dockerfile*)](https://github.com/docker-library/tomcat/blob/1722fc14b4eb66f746a2067739f32d4111f408de/7/jre8-alpine/Dockerfile)
--	[`8.5.35-jre8`, `8.5-jre8`, `8-jre8`, `jre8`, `8.5.35`, `8.5`, `8`, `latest` (*8.5/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/c0df3d5463944671fefe200bdadd95c69a616ab4/8.5/jre8/Dockerfile)
--	[`8.5.35-jre8-slim`, `8.5-jre8-slim`, `8-jre8-slim`, `jre8-slim`, `8.5.35-slim`, `8.5-slim`, `8-slim`, `slim` (*8.5/jre8-slim/Dockerfile*)](https://github.com/docker-library/tomcat/blob/c0df3d5463944671fefe200bdadd95c69a616ab4/8.5/jre8-slim/Dockerfile)
--	[`8.5.35-jre8-alpine`, `8.5-jre8-alpine`, `8-jre8-alpine`, `jre8-alpine`, `8.5.35-alpine`, `8.5-alpine`, `8-alpine`, `alpine` (*8.5/jre8-alpine/Dockerfile*)](https://github.com/docker-library/tomcat/blob/c0df3d5463944671fefe200bdadd95c69a616ab4/8.5/jre8-alpine/Dockerfile)
--	[`8.5.35-jre10`, `8.5-jre10`, `8-jre10`, `jre10` (*8.5/jre10/Dockerfile*)](https://github.com/docker-library/tomcat/blob/c0df3d5463944671fefe200bdadd95c69a616ab4/8.5/jre10/Dockerfile)
--	[`8.5.35-jre10-slim`, `8.5-jre10-slim`, `8-jre10-slim`, `jre10-slim` (*8.5/jre10-slim/Dockerfile*)](https://github.com/docker-library/tomcat/blob/c0df3d5463944671fefe200bdadd95c69a616ab4/8.5/jre10-slim/Dockerfile)
--	[`8.5.35-jre11`, `8.5-jre11`, `8-jre11`, `jre11` (*8.5/jre11/Dockerfile*)](https://github.com/docker-library/tomcat/blob/c0df3d5463944671fefe200bdadd95c69a616ab4/8.5/jre11/Dockerfile)
--	[`8.5.35-jre11-slim`, `8.5-jre11-slim`, `8-jre11-slim`, `jre11-slim` (*8.5/jre11-slim/Dockerfile*)](https://github.com/docker-library/tomcat/blob/c0df3d5463944671fefe200bdadd95c69a616ab4/8.5/jre11-slim/Dockerfile)
--	[`9.0.13-jre8`, `9.0-jre8`, `9-jre8` (*9.0/jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/c0df3d5463944671fefe200bdadd95c69a616ab4/9.0/jre8/Dockerfile)
--	[`9.0.13-jre8-slim`, `9.0-jre8-slim`, `9-jre8-slim` (*9.0/jre8-slim/Dockerfile*)](https://github.com/docker-library/tomcat/blob/c0df3d5463944671fefe200bdadd95c69a616ab4/9.0/jre8-slim/Dockerfile)
--	[`9.0.13-jre8-alpine`, `9.0-jre8-alpine`, `9-jre8-alpine` (*9.0/jre8-alpine/Dockerfile*)](https://github.com/docker-library/tomcat/blob/c0df3d5463944671fefe200bdadd95c69a616ab4/9.0/jre8-alpine/Dockerfile)
--	[`9.0.13-jre10`, `9.0-jre10`, `9-jre10`, `9.0.13`, `9.0`, `9` (*9.0/jre10/Dockerfile*)](https://github.com/docker-library/tomcat/blob/c0df3d5463944671fefe200bdadd95c69a616ab4/9.0/jre10/Dockerfile)
--	[`9.0.13-jre10-slim`, `9.0-jre10-slim`, `9-jre10-slim`, `9.0.13-slim`, `9.0-slim`, `9-slim` (*9.0/jre10-slim/Dockerfile*)](https://github.com/docker-library/tomcat/blob/c0df3d5463944671fefe200bdadd95c69a616ab4/9.0/jre10-slim/Dockerfile)
--	[`9.0.13-jre11`, `9.0-jre11`, `9-jre11` (*9.0/jre11/Dockerfile*)](https://github.com/docker-library/tomcat/blob/c0df3d5463944671fefe200bdadd95c69a616ab4/9.0/jre11/Dockerfile)
--	[`9.0.13-jre11-slim`, `9.0-jre11-slim`, `9-jre11-slim` (*9.0/jre11-slim/Dockerfile*)](https://github.com/docker-library/tomcat/blob/c0df3d5463944671fefe200bdadd95c69a616ab4/9.0/jre11-slim/Dockerfile)
+-	[`9.0.29-jdk13-openjdk-oracle`, `9.0-jdk13-openjdk-oracle`, `9-jdk13-openjdk-oracle`](https://github.com/docker-library/tomcat/blob/4b02799c836cf580cf3a31ca2a137abd793b3d62/9.0/jdk13/openjdk-oracle/Dockerfile)
+-	[`9.0.29-jdk11-openjdk`, `9.0-jdk11-openjdk`, `9-jdk11-openjdk`, `9.0.29-jdk11`, `9.0-jdk11`, `9-jdk11`, `9.0.29`, `9.0`, `9`](https://github.com/docker-library/tomcat/blob/4b02799c836cf580cf3a31ca2a137abd793b3d62/9.0/jdk11/openjdk/Dockerfile)
+-	[`9.0.29-jdk11-openjdk-slim`, `9.0-jdk11-openjdk-slim`, `9-jdk11-openjdk-slim`](https://github.com/docker-library/tomcat/blob/4b02799c836cf580cf3a31ca2a137abd793b3d62/9.0/jdk11/openjdk-slim/Dockerfile)
+-	[`9.0.29-jdk11-adoptopenjdk-hotspot`, `9.0-jdk11-adoptopenjdk-hotspot`, `9-jdk11-adoptopenjdk-hotspot`](https://github.com/docker-library/tomcat/blob/4b02799c836cf580cf3a31ca2a137abd793b3d62/9.0/jdk11/adoptopenjdk-hotspot/Dockerfile)
+-	[`9.0.29-jdk11-adoptopenjdk-openj9`, `9.0-jdk11-adoptopenjdk-openj9`, `9-jdk11-adoptopenjdk-openj9`](https://github.com/docker-library/tomcat/blob/4b02799c836cf580cf3a31ca2a137abd793b3d62/9.0/jdk11/adoptopenjdk-openj9/Dockerfile)
+-	[`9.0.29-jdk11-corretto`, `9.0-jdk11-corretto`, `9-jdk11-corretto`](https://github.com/docker-library/tomcat/blob/4b02799c836cf580cf3a31ca2a137abd793b3d62/9.0/jdk11/corretto/Dockerfile)
+-	[`9.0.29-jdk8-openjdk`, `9.0-jdk8-openjdk`, `9-jdk8-openjdk`, `9.0.29-jdk8`, `9.0-jdk8`, `9-jdk8`](https://github.com/docker-library/tomcat/blob/4b02799c836cf580cf3a31ca2a137abd793b3d62/9.0/jdk8/openjdk/Dockerfile)
+-	[`9.0.29-jdk8-openjdk-slim`, `9.0-jdk8-openjdk-slim`, `9-jdk8-openjdk-slim`](https://github.com/docker-library/tomcat/blob/4b02799c836cf580cf3a31ca2a137abd793b3d62/9.0/jdk8/openjdk-slim/Dockerfile)
+-	[`9.0.29-jdk8-adoptopenjdk-hotspot`, `9.0-jdk8-adoptopenjdk-hotspot`, `9-jdk8-adoptopenjdk-hotspot`](https://github.com/docker-library/tomcat/blob/4b02799c836cf580cf3a31ca2a137abd793b3d62/9.0/jdk8/adoptopenjdk-hotspot/Dockerfile)
+-	[`9.0.29-jdk8-adoptopenjdk-openj9`, `9.0-jdk8-adoptopenjdk-openj9`, `9-jdk8-adoptopenjdk-openj9`](https://github.com/docker-library/tomcat/blob/4b02799c836cf580cf3a31ca2a137abd793b3d62/9.0/jdk8/adoptopenjdk-openj9/Dockerfile)
+-	[`9.0.29-jdk8-corretto`, `9.0-jdk8-corretto`, `9-jdk8-corretto`](https://github.com/docker-library/tomcat/blob/4b02799c836cf580cf3a31ca2a137abd793b3d62/9.0/jdk8/corretto/Dockerfile)
+-	[`8.5.49-jdk13-openjdk-oracle`, `8.5-jdk13-openjdk-oracle`, `8-jdk13-openjdk-oracle`, `jdk13-openjdk-oracle`](https://github.com/docker-library/tomcat/blob/ac840829bd52309030c8811d292776888109df63/8.5/jdk13/openjdk-oracle/Dockerfile)
+-	[`8.5.49-jdk11-openjdk`, `8.5-jdk11-openjdk`, `8-jdk11-openjdk`, `jdk11-openjdk`, `8.5.49-jdk11`, `8.5-jdk11`, `8-jdk11`, `jdk11`](https://github.com/docker-library/tomcat/blob/ac840829bd52309030c8811d292776888109df63/8.5/jdk11/openjdk/Dockerfile)
+-	[`8.5.49-jdk11-openjdk-slim`, `8.5-jdk11-openjdk-slim`, `8-jdk11-openjdk-slim`, `jdk11-openjdk-slim`](https://github.com/docker-library/tomcat/blob/ac840829bd52309030c8811d292776888109df63/8.5/jdk11/openjdk-slim/Dockerfile)
+-	[`8.5.49-jdk11-adoptopenjdk-hotspot`, `8.5-jdk11-adoptopenjdk-hotspot`, `8-jdk11-adoptopenjdk-hotspot`, `jdk11-adoptopenjdk-hotspot`](https://github.com/docker-library/tomcat/blob/ac840829bd52309030c8811d292776888109df63/8.5/jdk11/adoptopenjdk-hotspot/Dockerfile)
+-	[`8.5.49-jdk11-adoptopenjdk-openj9`, `8.5-jdk11-adoptopenjdk-openj9`, `8-jdk11-adoptopenjdk-openj9`, `jdk11-adoptopenjdk-openj9`](https://github.com/docker-library/tomcat/blob/ac840829bd52309030c8811d292776888109df63/8.5/jdk11/adoptopenjdk-openj9/Dockerfile)
+-	[`8.5.49-jdk11-corretto`, `8.5-jdk11-corretto`, `8-jdk11-corretto`, `jdk11-corretto`](https://github.com/docker-library/tomcat/blob/ac840829bd52309030c8811d292776888109df63/8.5/jdk11/corretto/Dockerfile)
+-	[`8.5.49-jdk8-openjdk`, `8.5-jdk8-openjdk`, `8-jdk8-openjdk`, `jdk8-openjdk`, `8.5.49-jdk8`, `8.5-jdk8`, `8-jdk8`, `jdk8`, `8.5.49`, `8.5`, `8`, `latest`](https://github.com/docker-library/tomcat/blob/ac840829bd52309030c8811d292776888109df63/8.5/jdk8/openjdk/Dockerfile)
+-	[`8.5.49-jdk8-openjdk-slim`, `8.5-jdk8-openjdk-slim`, `8-jdk8-openjdk-slim`, `jdk8-openjdk-slim`](https://github.com/docker-library/tomcat/blob/ac840829bd52309030c8811d292776888109df63/8.5/jdk8/openjdk-slim/Dockerfile)
+-	[`8.5.49-jdk8-adoptopenjdk-hotspot`, `8.5-jdk8-adoptopenjdk-hotspot`, `8-jdk8-adoptopenjdk-hotspot`, `jdk8-adoptopenjdk-hotspot`](https://github.com/docker-library/tomcat/blob/ac840829bd52309030c8811d292776888109df63/8.5/jdk8/adoptopenjdk-hotspot/Dockerfile)
+-	[`8.5.49-jdk8-adoptopenjdk-openj9`, `8.5-jdk8-adoptopenjdk-openj9`, `8-jdk8-adoptopenjdk-openj9`, `jdk8-adoptopenjdk-openj9`](https://github.com/docker-library/tomcat/blob/ac840829bd52309030c8811d292776888109df63/8.5/jdk8/adoptopenjdk-openj9/Dockerfile)
+-	[`8.5.49-jdk8-corretto`, `8.5-jdk8-corretto`, `8-jdk8-corretto`, `jdk8-corretto`](https://github.com/docker-library/tomcat/blob/ac840829bd52309030c8811d292776888109df63/8.5/jdk8/corretto/Dockerfile)
+-	[`7.0.96-jdk8-openjdk`, `7.0-jdk8-openjdk`, `7-jdk8-openjdk`, `7.0.96-jdk8`, `7.0-jdk8`, `7-jdk8`, `7.0.96`, `7.0`, `7`](https://github.com/docker-library/tomcat/blob/7cdbab2ce07c1593fc657fd6fac7821a5472dfd2/7/jdk8/openjdk/Dockerfile)
+-	[`7.0.96-jdk8-openjdk-slim`, `7.0-jdk8-openjdk-slim`, `7-jdk8-openjdk-slim`](https://github.com/docker-library/tomcat/blob/7cdbab2ce07c1593fc657fd6fac7821a5472dfd2/7/jdk8/openjdk-slim/Dockerfile)
+-	[`7.0.96-jdk8-adoptopenjdk-hotspot`, `7.0-jdk8-adoptopenjdk-hotspot`, `7-jdk8-adoptopenjdk-hotspot`](https://github.com/docker-library/tomcat/blob/7cdbab2ce07c1593fc657fd6fac7821a5472dfd2/7/jdk8/adoptopenjdk-hotspot/Dockerfile)
+-	[`7.0.96-jdk8-adoptopenjdk-openj9`, `7.0-jdk8-adoptopenjdk-openj9`, `7-jdk8-adoptopenjdk-openj9`](https://github.com/docker-library/tomcat/blob/7cdbab2ce07c1593fc657fd6fac7821a5472dfd2/7/jdk8/adoptopenjdk-openj9/Dockerfile)
+-	[`7.0.96-jdk8-corretto`, `7.0-jdk8-corretto`, `7-jdk8-corretto`](https://github.com/docker-library/tomcat/blob/7cdbab2ce07c1593fc657fd6fac7821a5472dfd2/7/jdk8/corretto/Dockerfile)
 
 # Quick reference
 
@@ -49,7 +56,7 @@ WARNING:
 	[the Docker Community](https://github.com/docker-library/tomcat)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/tomcat/), [`arm32v5`](https://hub.docker.com/r/arm32v5/tomcat/), [`arm32v6`](https://hub.docker.com/r/arm32v6/tomcat/), [`arm32v7`](https://hub.docker.com/r/arm32v7/tomcat/), [`arm64v8`](https://hub.docker.com/r/arm64v8/tomcat/), [`i386`](https://hub.docker.com/r/i386/tomcat/), [`ppc64le`](https://hub.docker.com/r/ppc64le/tomcat/), [`s390x`](https://hub.docker.com/r/s390x/tomcat/)
+	[`amd64`](https://hub.docker.com/r/amd64/tomcat/), [`arm32v7`](https://hub.docker.com/r/arm32v7/tomcat/), [`arm64v8`](https://hub.docker.com/r/arm64v8/tomcat/), [`ppc64le`](https://hub.docker.com/r/ppc64le/tomcat/), [`s390x`](https://hub.docker.com/r/s390x/tomcat/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/tomcat/` directory](https://github.com/docker-library/repo-info/blob/master/repos/tomcat) ([history](https://github.com/docker-library/repo-info/commits/master/repos/tomcat))  
@@ -61,9 +68,6 @@ WARNING:
 
 -	**Source of this description**:  
 	[docs repo's `tomcat/` directory](https://github.com/docker-library/docs/tree/master/tomcat) ([history](https://github.com/docker-library/docs/commits/master/tomcat))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Tomcat?
 
@@ -118,14 +122,6 @@ This is the defacto image. If you are unsure about what your needs are, you prob
 ## `tomcat:<version>-slim`
 
 This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `tomcat`. Unless you are working in an environment where *only* the `tomcat` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
-
-## `tomcat:<version>-alpine`
-
-This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
-
-This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
-
-To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 # License
 

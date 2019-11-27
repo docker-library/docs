@@ -1,3 +1,1 @@
-For issues with the Kibana Docker image: %%GITHUB-REPO%%/issues
-
-For issues with Kibana: [https://github.com/elastic/kibana/issues](https://github.com/elastic/kibana/issues)
+For issues with the Kibana Docker image or Kibana: %%GITHUB-REPO%%/issues

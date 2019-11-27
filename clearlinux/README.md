@@ -16,7 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `base` (*Dockerfile*)](https://github.com/clearlinux/docker-brew-clearlinux/blob/37dd645aa8d6aa8ffa3c4037944b425f90de66f8/Dockerfile)
+-	[`latest`, `base`](https://github.com/clearlinux/docker-brew-clearlinux/blob/5a8b60e50a2a3cf89ed871b71ebbe2da11ab76f5/Dockerfile)
 
 # Quick reference
 
@@ -42,9 +42,6 @@ WARNING:
 
 -	**Source of this description**:  
 	[docs repo's `clearlinux/` directory](https://github.com/docker-library/docs/tree/master/clearlinux) ([history](https://github.com/docker-library/docs/commits/master/clearlinux))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # Clear Linux OS
 

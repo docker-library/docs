@@ -16,7 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.5.4`, `1.5`, `latest` (*docker/1.5/Dockerfile*)](https://github.com/eclipse/mosquitto/blob/8960b1fe29a745cd0ed14ab914833f01adaa5c24/docker/1.5/Dockerfile)
+-	[`1.6.7`, `1.6`, `latest`](https://github.com/eclipse/mosquitto/blob/eaab1799337ef33594d165b179d20b1c6305f9f3/docker/1.6/Dockerfile)
+-	[`1.5.9`, `1.5`](https://github.com/eclipse/mosquitto/blob/eaab1799337ef33594d165b179d20b1c6305f9f3/docker/1.5/Dockerfile)
 
 # Quick reference
 
@@ -43,14 +44,11 @@ WARNING:
 -	**Source of this description**:  
 	[docs repo's `eclipse-mosquitto/` directory](https://github.com/docker-library/docs/tree/master/eclipse-mosquitto) ([history](https://github.com/docker-library/docs/commits/master/eclipse-mosquitto))
 
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
-
 # What is Eclipse Mosquitto?
 
-Eclipse Mosquitto is an open source implementation of a server for version 3.1 and 3.1.1 of the MQTT protocol. Main homepage: http://mosquitto.org/
+Eclipse Mosquitto is an open source implementation of a server for versions 5, 3.1.1, and 3.1 of the MQTT protocol. Main homepages: http://mosquitto.org/
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/543ed10ed132af12c3662c7a04010d3f36538094/eclipse-mosquitto/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/757578e3a44e5460a8a11d32a81776f8b74231a9/eclipse-mosquitto/logo.png)
 
 # How to use this image
 
