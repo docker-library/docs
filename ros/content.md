@@ -181,6 +181,49 @@ $ docker-compose rm
 
 > Note: the auto-generated network, `ros_demos`, will persist until you explicitly remove it using `docker-compose down`.
 
+### ROS 1 Bridge
+
+To ease ROS 2 migration, [`ros1_bridge`](https://index.ros.org/p/ros1_bridge/github-ros2-ros1_bridge) is a ROS 2 package that provides bidirectional communication between ROS 1 and ROS 2. As a minimal example, given the ROS 2 Dockerfile above, we'll create the ROS 1 equivalent bellow, and name the Dockerfile appropriately. 
+
+
+```dockerfile
+FROM ros:melodic
+
+# install ros package
+RUN apt-get update && apt-get install -y \
+      ros-${ROS_DISTRO}-ros-tutorials \
+      ros-${ROS_DISTRO}-common-tutorials && \
+    rm -rf /var/lib/apt/lists/*
+
+# launch ros package
+CMD ["roslaunch", "roscpp_tutorials", "talker_listener.launch"]
+```
+
+The compose file bellow spawns services for both talker listener demos while connecting the two via a dynamic bridge. You may then view the log output from both pairs of talker and listener nodes cross talking over the `/chatter` topic.
+
+```yaml
+version: '3'
+
+services:
+  ros1:
+    build:
+      context: .
+      dockerfile: ros1.Dockerfile
+
+  ros2:
+    build:
+      context: .
+      dockerfile: ros2.Dockerfile
+
+  bridge:
+    image: osrf/ros:dashing-ros1-bridge
+    environment:
+      - "ROS_HOSTNAME=bridge"
+      - "ROS_MASTER_URI=http://ros1:11311"
+    command: ros2 run ros1_bridge dynamic_bridge
+
+```
+
 # More Resources
 
 [ROS.org](http://www.ros.org/): Main ROS website  
