@@ -15,13 +15,13 @@ To create your own ROS docker images and install custom packages, here's a simpl
 ```dockerfile
 FROM %%IMAGE%%:dashing
 
-# install ros packages for installed release
+# install ros package
 RUN apt-get update && apt-get install -y \
       ros-${ROS_DISTRO}-demo-nodes-cpp \
       ros-${ROS_DISTRO}-demo-nodes-py && \
     rm -rf /var/lib/apt/lists/*
 
-# run ros package launch file
+# launch ros package
 CMD ["ros2", "launch", "demo_nodes_cpp", "talker_listener.launch.py"]
 ```
 
@@ -44,14 +44,9 @@ $ docker run -it --rm my/ros:app
 To create your own ROS docker images and build custom packages, here's a simple example of installing a package's build dependencies, compiling it from source, and installing the resulting build artifacts into a final multi-stage image layer.
 
 ```dockerfile
-FROM %%IMAGE%%:dashing-ros-base
+FROM %%IMAGE%%:dashing-ros-base AS builder
 
-# install ros build tools
-RUN apt-get update && apt-get install -y \
-      python3-colcon-common-extensions && \
-    rm -rf /var/lib/apt/lists/*
-
-# clone ros package repo
+# clone package source
 ENV ROS_WS /opt/ros_ws
 RUN mkdir -p $ROS_WS/src
 WORKDIR $ROS_WS
@@ -59,34 +54,35 @@ RUN git -C src clone \
       -b $ROS_DISTRO \
       https://github.com/ros2/demos.git
 
-# install ros package dependencies
-RUN apt-get update && \
-    rosdep update && \
+# install package dependencies
+RUN . /opt/ros/$ROS_DISTRO/setup.sh && \
+    apt-get update && rosdep update && \
     rosdep install -y \
       --from-paths \
         src/demos/demo_nodes_cpp \
       --ignore-src && \
     rm -rf /var/lib/apt/lists/*
 
-# build ros package source
+# build package workspace
 RUN . /opt/ros/$ROS_DISTRO/setup.sh && \
     colcon build \
       --packages-select \
         demo_nodes_cpp \
-      --cmake-args \
-        -DCMAKE_BUILD_TYPE=Release
+      --mixin release
 
-# copy ros package install via multi-stage
-FROM %%IMAGE%%:dashing-ros-core
+# create new multi-stage
+FROM %%IMAGE%%:dashing-ros-core AS runner
+
+# copy package install
 ENV ROS_WS /opt/ros_ws
-COPY --from=0  $ROS_WS/install $ROS_WS/install
+COPY --from=builder  $ROS_WS/install $ROS_WS/install
 
-# source ros package from entrypoint
+# source entrypoint setup
 RUN sed --in-place --expression \
       '$isource "$ROS_WS/install/setup.bash"' \
       /ros_entrypoint.sh
 
-# run ros package launch file
+# run launch file
 CMD ["ros2", "launch", "demo_nodes_cpp", "talker_listener.launch.py"]
 ```
 
