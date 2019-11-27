@@ -185,7 +185,6 @@ $ docker-compose rm
 
 To ease ROS 2 migration, [`ros1_bridge`](https://index.ros.org/p/ros1_bridge/github-ros2-ros1_bridge) is a ROS 2 package that provides bidirectional communication between ROS 1 and ROS 2. As a minimal example, given the ROS 2 Dockerfile above, we'll create the ROS 1 equivalent bellow, and name the Dockerfile appropriately. 
 
-
 ```dockerfile
 FROM ros:melodic
 
@@ -221,7 +220,6 @@ services:
       - "ROS_HOSTNAME=bridge"
       - "ROS_MASTER_URI=http://ros1:11311"
     command: ros2 run ros1_bridge dynamic_bridge
-
 ```
 
 # More Resources
