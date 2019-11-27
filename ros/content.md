@@ -88,9 +88,9 @@ CMD ["ros2", "launch", "demo_nodes_cpp", "talker_listener.launch.py"]
 
 Note: `--from-paths` and `--packages-select` are set here as so to only install the dependencies and build for the `demo_nodes_cpp` package, one among many in the demo git repo that was cloned. To install the dependencies and build all the packages in the source workspace, merely change the scope by setting `--from-paths src/` and dropping the `--packages-select` arguments.
 
-	REPOSITORY    TAG                 IMAGE ID        CREATED         SIZE
-	my/ros        app-multi-stage     66c8112b2fb6    4 seconds ago   775MB
-	my/ros        app-single-stage    6b500239d0d6    2 minutes ago   797MB
+	REPOSITORY    TAG        IMAGE ID        CREATED         SIZE
+	my/ros        runner     66c8112b2fb6    2 seconds ago   818MB
+	my/ros        builder    6b500239d0d6    9 seconds ago   867MB
 
 For this particular package, using a multi-stage build didn't shrink the final image by much, but for more complex applications, segmenting build setup from the runtime can help keep image sizes down. Additionally, doing so can also prepare you for releasing your package to the community, helping to reconcile dependency discrepancies you may have otherwise forgotten to declare in your `package.xml` manifest.
 
