@@ -32,6 +32,8 @@ WARNING:
 -	[`crystal-ros-base`, `crystal-ros-base-bionic`, `crystal`](https://github.com/osrf/docker_images/blob/1eb48f1275f0a9153d0b0ed088bed338f1a79ead/ros/crystal/ubuntu/bionic/ros-base/Dockerfile)
 -	[`dashing-ros-core`, `dashing-ros-core-bionic`](https://github.com/osrf/docker_images/blob/1eb48f1275f0a9153d0b0ed088bed338f1a79ead/ros/dashing/ubuntu/bionic/ros-core/Dockerfile)
 -	[`dashing-ros-base`, `dashing-ros-base-bionic`, `dashing`](https://github.com/osrf/docker_images/blob/1eb48f1275f0a9153d0b0ed088bed338f1a79ead/ros/dashing/ubuntu/bionic/ros-base/Dockerfile)
+-	[`eloquent-ros-core`, `eloquent-ros-core-bionic`](https://github.com/osrf/docker_images/blob/d3983aa82e927de86d777f1b42beb89dbdddb9ec/ros/eloquent/ubuntu/bionic/ros-core/Dockerfile)
+-	[`eloquent-ros-base`, `eloquent-ros-base-bionic`, `eloquent`](https://github.com/osrf/docker_images/blob/d3983aa82e927de86d777f1b42beb89dbdddb9ec/ros/eloquent/ubuntu/bionic/ros-base/Dockerfile)
 
 # Quick reference
 
