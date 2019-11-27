@@ -102,6 +102,8 @@ Developing such complex systems with cutting edge implementations of newly publi
 
 With the advancements and standardization of software containers, roboticists are primed to acquire a host of improved developer tooling for building and shipping software. To help alleviate the growing pains and technical challenges of adopting new practices, we have focused on providing an official resource for using ROS with these new technologies.
 
+For a complete listing of supported architecture and base images for each ROS Distribution Release, please read the official REP on target platforms for either [ROS 1](https://www.ros.org/reps/rep-0003.html) or for [ROS 2](https://www.ros.org/reps/rep-2000.html).
+
 ## Deployment suggestions
 
 The available tags include supported distros along with a hierarchy tags based off the most common meta-package dependencies, designed to have a small footprint and simple configuration:
