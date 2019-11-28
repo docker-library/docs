@@ -16,18 +16,18 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.6.2-jdk-11-openj9`, `3.6-jdk-11-openj9`, `3-jdk-11-openj9`](https://github.com/carlossg/docker-maven/blob/6f912331309f5ab9745a91ef5884f3a0b46dfc1d/jdk-11-openj9/Dockerfile)
--	[`3.6.2-jdk-11-slim`, `3.6.2-slim`, `3.6-jdk-11-slim`, `3.6-slim`, `3-jdk-11-slim`, `slim`](https://github.com/carlossg/docker-maven/blob/081d9d041aa640694fceabc02c72fe93d5cd42cd/jdk-11-slim/Dockerfile)
--	[`3.6.2-jdk-11`, `3.6.2`, `3.6-jdk-11`, `3.6`, `3-jdk-11`, `3`, `latest`](https://github.com/carlossg/docker-maven/blob/081d9d041aa640694fceabc02c72fe93d5cd42cd/jdk-11/Dockerfile)
--	[`3.6.2-jdk-13`, `3.6-jdk-13`, `3-jdk-13`](https://github.com/carlossg/docker-maven/blob/081d9d041aa640694fceabc02c72fe93d5cd42cd/jdk-13/Dockerfile)
--	[`3.6.2-jdk-14`, `3.6-jdk-14`, `3-jdk-14`](https://github.com/carlossg/docker-maven/blob/081d9d041aa640694fceabc02c72fe93d5cd42cd/jdk-14/Dockerfile)
--	[`3.6.2-jdk-8-openj9`, `3.6-jdk-8-openj9`, `3-jdk-8-openj9`](https://github.com/carlossg/docker-maven/blob/6f912331309f5ab9745a91ef5884f3a0b46dfc1d/jdk-8-openj9/Dockerfile)
--	[`3.6.2-jdk-8-slim`, `3.6-jdk-8-slim`, `3-jdk-8-slim`](https://github.com/carlossg/docker-maven/blob/081d9d041aa640694fceabc02c72fe93d5cd42cd/jdk-8-slim/Dockerfile)
--	[`3.6.2-jdk-8`, `3.6-jdk-8`, `3-jdk-8`](https://github.com/carlossg/docker-maven/blob/081d9d041aa640694fceabc02c72fe93d5cd42cd/jdk-8/Dockerfile)
--	[`3.6.2-ibmjava-8-alpine`, `3.6.2-ibmjava-alpine`, `3.6-ibmjava-8-alpine`, `3.6-ibmjava-alpine`, `3-ibmjava-8-alpine`, `ibmjava-alpine`](https://github.com/carlossg/docker-maven/blob/081d9d041aa640694fceabc02c72fe93d5cd42cd/ibmjava-8-alpine/Dockerfile)
--	[`3.6.2-ibmjava-8`, `3.6.2-ibmjava`, `3.6-ibmjava-8`, `3.6-ibmjava`, `3-ibmjava-8`](https://github.com/carlossg/docker-maven/blob/081d9d041aa640694fceabc02c72fe93d5cd42cd/ibmjava-8/Dockerfile)
--	[`3.6.2-amazoncorretto-11`, `3.6-amazoncorretto-11`, `3-amazoncorretto-11`, `3-amazoncorretto`, `amazoncorretto`](https://github.com/carlossg/docker-maven/blob/081d9d041aa640694fceabc02c72fe93d5cd42cd/amazoncorretto-11/Dockerfile)
--	[`3.6.2-amazoncorretto-8`, `3.6-amazoncorretto-8`, `3-amazoncorretto-8`](https://github.com/carlossg/docker-maven/blob/081d9d041aa640694fceabc02c72fe93d5cd42cd/amazoncorretto-8/Dockerfile)
+-	[`3.6.3-jdk-11-openj9`, `3.6-jdk-11-openj9`, `3-jdk-11-openj9`](https://github.com/carlossg/docker-maven/blob/d3dd6bc261c6173c5e52e3a7a36b6a3d8d2800b4/jdk-11-openj9/Dockerfile)
+-	[`3.6.3-jdk-11-slim`, `3.6.3-slim`, `3.6-jdk-11-slim`, `3.6-slim`, `3-jdk-11-slim`, `slim`](https://github.com/carlossg/docker-maven/blob/d3dd6bc261c6173c5e52e3a7a36b6a3d8d2800b4/jdk-11-slim/Dockerfile)
+-	[`3.6.3-jdk-11`, `3.6.3`, `3.6-jdk-11`, `3.6`, `3-jdk-11`, `3`, `latest`](https://github.com/carlossg/docker-maven/blob/d3dd6bc261c6173c5e52e3a7a36b6a3d8d2800b4/jdk-11/Dockerfile)
+-	[`3.6.3-jdk-13`, `3.6-jdk-13`, `3-jdk-13`](https://github.com/carlossg/docker-maven/blob/d3dd6bc261c6173c5e52e3a7a36b6a3d8d2800b4/jdk-13/Dockerfile)
+-	[`3.6.3-jdk-14`, `3.6-jdk-14`, `3-jdk-14`](https://github.com/carlossg/docker-maven/blob/d3dd6bc261c6173c5e52e3a7a36b6a3d8d2800b4/jdk-14/Dockerfile)
+-	[`3.6.3-jdk-8-openj9`, `3.6-jdk-8-openj9`, `3-jdk-8-openj9`](https://github.com/carlossg/docker-maven/blob/d3dd6bc261c6173c5e52e3a7a36b6a3d8d2800b4/jdk-8-openj9/Dockerfile)
+-	[`3.6.3-jdk-8-slim`, `3.6-jdk-8-slim`, `3-jdk-8-slim`](https://github.com/carlossg/docker-maven/blob/d3dd6bc261c6173c5e52e3a7a36b6a3d8d2800b4/jdk-8-slim/Dockerfile)
+-	[`3.6.3-jdk-8`, `3.6-jdk-8`, `3-jdk-8`](https://github.com/carlossg/docker-maven/blob/d3dd6bc261c6173c5e52e3a7a36b6a3d8d2800b4/jdk-8/Dockerfile)
+-	[`3.6.3-ibmjava-8-alpine`, `3.6.3-ibmjava-alpine`, `3.6-ibmjava-8-alpine`, `3.6-ibmjava-alpine`, `3-ibmjava-8-alpine`, `ibmjava-alpine`](https://github.com/carlossg/docker-maven/blob/d3dd6bc261c6173c5e52e3a7a36b6a3d8d2800b4/ibmjava-8-alpine/Dockerfile)
+-	[`3.6.3-ibmjava-8`, `3.6.3-ibmjava`, `3.6-ibmjava-8`, `3.6-ibmjava`, `3-ibmjava-8`](https://github.com/carlossg/docker-maven/blob/d3dd6bc261c6173c5e52e3a7a36b6a3d8d2800b4/ibmjava-8/Dockerfile)
+-	[`3.6.3-amazoncorretto-11`, `3.6-amazoncorretto-11`, `3-amazoncorretto-11`, `3-amazoncorretto`, `amazoncorretto`](https://github.com/carlossg/docker-maven/blob/d3dd6bc261c6173c5e52e3a7a36b6a3d8d2800b4/amazoncorretto-11/Dockerfile)
+-	[`3.6.3-amazoncorretto-8`, `3.6-amazoncorretto-8`, `3-amazoncorretto-8`](https://github.com/carlossg/docker-maven/blob/d3dd6bc261c6173c5e52e3a7a36b6a3d8d2800b4/amazoncorretto-8/Dockerfile)
 
 # Quick reference
 
