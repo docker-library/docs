@@ -51,20 +51,6 @@ WARNING:
 -	[`7.2.25-cli-alpine3.9`, `7.2-cli-alpine3.9`, `7.2.25-alpine3.9`, `7.2-alpine3.9`](https://github.com/docker-library/php/blob/4bac7da6e793e561b53f300021c9fa57da9fe0a8/7.2/alpine3.9/cli/Dockerfile)
 -	[`7.2.25-fpm-alpine3.9`, `7.2-fpm-alpine3.9`](https://github.com/docker-library/php/blob/4bac7da6e793e561b53f300021c9fa57da9fe0a8/7.2/alpine3.9/fpm/Dockerfile)
 -	[`7.2.25-zts-alpine3.9`, `7.2-zts-alpine3.9`](https://github.com/docker-library/php/blob/4bac7da6e793e561b53f300021c9fa57da9fe0a8/7.2/alpine3.9/zts/Dockerfile)
--	[`7.1.33-cli-buster`, `7.1-cli-buster`, `7.1.33-buster`, `7.1-buster`, `7.1.33-cli`, `7.1-cli`, `7.1.33`, `7.1`](https://github.com/docker-library/php/blob/15ecc4fbcb11b7963de2a81462c825610b6ecefd/7.1/buster/cli/Dockerfile)
--	[`7.1.33-apache-buster`, `7.1-apache-buster`, `7.1.33-apache`, `7.1-apache`](https://github.com/docker-library/php/blob/49d861431ad76e5bc0b9c0a2af230cd51030adcd/7.1/buster/apache/Dockerfile)
--	[`7.1.33-fpm-buster`, `7.1-fpm-buster`, `7.1.33-fpm`, `7.1-fpm`](https://github.com/docker-library/php/blob/15ecc4fbcb11b7963de2a81462c825610b6ecefd/7.1/buster/fpm/Dockerfile)
--	[`7.1.33-zts-buster`, `7.1-zts-buster`, `7.1.33-zts`, `7.1-zts`](https://github.com/docker-library/php/blob/15ecc4fbcb11b7963de2a81462c825610b6ecefd/7.1/buster/zts/Dockerfile)
--	[`7.1.33-cli-stretch`, `7.1-cli-stretch`, `7.1.33-stretch`, `7.1-stretch`](https://github.com/docker-library/php/blob/15ecc4fbcb11b7963de2a81462c825610b6ecefd/7.1/stretch/cli/Dockerfile)
--	[`7.1.33-apache-stretch`, `7.1-apache-stretch`](https://github.com/docker-library/php/blob/49d861431ad76e5bc0b9c0a2af230cd51030adcd/7.1/stretch/apache/Dockerfile)
--	[`7.1.33-fpm-stretch`, `7.1-fpm-stretch`](https://github.com/docker-library/php/blob/15ecc4fbcb11b7963de2a81462c825610b6ecefd/7.1/stretch/fpm/Dockerfile)
--	[`7.1.33-zts-stretch`, `7.1-zts-stretch`](https://github.com/docker-library/php/blob/15ecc4fbcb11b7963de2a81462c825610b6ecefd/7.1/stretch/zts/Dockerfile)
--	[`7.1.33-cli-alpine3.10`, `7.1-cli-alpine3.10`, `7.1.33-alpine3.10`, `7.1-alpine3.10`, `7.1.33-cli-alpine`, `7.1-cli-alpine`, `7.1.33-alpine`, `7.1-alpine`](https://github.com/docker-library/php/blob/15ecc4fbcb11b7963de2a81462c825610b6ecefd/7.1/alpine3.10/cli/Dockerfile)
--	[`7.1.33-fpm-alpine3.10`, `7.1-fpm-alpine3.10`, `7.1.33-fpm-alpine`, `7.1-fpm-alpine`](https://github.com/docker-library/php/blob/15ecc4fbcb11b7963de2a81462c825610b6ecefd/7.1/alpine3.10/fpm/Dockerfile)
--	[`7.1.33-zts-alpine3.10`, `7.1-zts-alpine3.10`, `7.1.33-zts-alpine`, `7.1-zts-alpine`](https://github.com/docker-library/php/blob/15ecc4fbcb11b7963de2a81462c825610b6ecefd/7.1/alpine3.10/zts/Dockerfile)
--	[`7.1.33-cli-alpine3.9`, `7.1-cli-alpine3.9`, `7.1.33-alpine3.9`, `7.1-alpine3.9`](https://github.com/docker-library/php/blob/15ecc4fbcb11b7963de2a81462c825610b6ecefd/7.1/alpine3.9/cli/Dockerfile)
--	[`7.1.33-fpm-alpine3.9`, `7.1-fpm-alpine3.9`](https://github.com/docker-library/php/blob/15ecc4fbcb11b7963de2a81462c825610b6ecefd/7.1/alpine3.9/fpm/Dockerfile)
--	[`7.1.33-zts-alpine3.9`, `7.1-zts-alpine3.9`](https://github.com/docker-library/php/blob/15ecc4fbcb11b7963de2a81462c825610b6ecefd/7.1/alpine3.9/zts/Dockerfile)
 
 # Quick reference
 
@@ -78,7 +64,7 @@ WARNING:
 	[the Docker Community](https://github.com/docker-library/php)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/php/), [`arm32v5`](https://hub.docker.com/r/arm32v5/php/), [`arm32v6`](https://hub.docker.com/r/arm32v6/php/), [`arm32v7`](https://hub.docker.com/r/arm32v7/php/), [`arm64v8`](https://hub.docker.com/r/arm64v8/php/), [`i386`](https://hub.docker.com/r/i386/php/), [`ppc64le`](https://hub.docker.com/r/ppc64le/php/), [`s390x`](https://hub.docker.com/r/s390x/php/)
+	[`amd64`](https://hub.docker.com/r/amd64/php/), [`arm32v5`](https://hub.docker.com/r/arm32v5/php/), [`arm32v6`](https://hub.docker.com/r/arm32v6/php/), [`arm32v7`](https://hub.docker.com/r/arm32v7/php/), [`arm64v8`](https://hub.docker.com/r/arm64v8/php/), [`i386`](https://hub.docker.com/r/i386/php/), [`ppc64le`](https://hub.docker.com/r/ppc64le/php/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/php/` directory](https://github.com/docker-library/repo-info/blob/master/repos/php) ([history](https://github.com/docker-library/repo-info/commits/master/repos/php))  
