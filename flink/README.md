@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.8.2-scala_2.11`, `1.8-scala_2.11`](https://github.com/docker-flink/docker-flink/blob/2e4b45b10e8efe04c324e44cacf7df16b2553f0f/1.8/scala_2.11-debian/Dockerfile)
--	[`1.8.2-scala_2.12`, `1.8-scala_2.12`, `1.8.2`, `1.8`](https://github.com/docker-flink/docker-flink/blob/2e4b45b10e8efe04c324e44cacf7df16b2553f0f/1.8/scala_2.12-debian/Dockerfile)
--	[`1.9.1-scala_2.11`, `1.9-scala_2.11`, `scala_2.11`](https://github.com/docker-flink/docker-flink/blob/1741d4663a98e206796f529bc522d59d54888cab/1.9/scala_2.11-debian/Dockerfile)
--	[`1.9.1-scala_2.12`, `1.9-scala_2.12`, `scala_2.12`, `1.9.1`, `1.9`, `latest`](https://github.com/docker-flink/docker-flink/blob/1741d4663a98e206796f529bc522d59d54888cab/1.9/scala_2.12-debian/Dockerfile)
+-	[`1.8.2-scala_2.11`, `1.8-scala_2.11`](https://github.com/docker-flink/docker-flink/blob/a1c7fec05760b20a48ace3861874f90b6df9f396/1.8/scala_2.11-debian/Dockerfile)
+-	[`1.8.2-scala_2.12`, `1.8-scala_2.12`, `1.8.2`, `1.8`](https://github.com/docker-flink/docker-flink/blob/a1c7fec05760b20a48ace3861874f90b6df9f396/1.8/scala_2.12-debian/Dockerfile)
+-	[`1.9.1-scala_2.11`, `1.9-scala_2.11`, `scala_2.11`](https://github.com/docker-flink/docker-flink/blob/a1c7fec05760b20a48ace3861874f90b6df9f396/1.9/scala_2.11-debian/Dockerfile)
+-	[`1.9.1-scala_2.12`, `1.9-scala_2.12`, `scala_2.12`, `1.9.1`, `1.9`, `latest`](https://github.com/docker-flink/docker-flink/blob/a1c7fec05760b20a48ace3861874f90b6df9f396/1.9/scala_2.12-debian/Dockerfile)
 
 # Quick reference
 
