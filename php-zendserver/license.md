@@ -1,1 +1,1 @@
-[Zend Technologies Ltd.](https://www.zend.com/topics/License-EULA-2010-09-2.pdf)
+[Perforce Software, Inc.](https://www.zend.com/end-user-license-agreement)
