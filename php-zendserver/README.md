@@ -28,7 +28,7 @@ WARNING:
 	[Zend Support Center](https://www.zend.com/en/support-center)
 
 -	**Maintained by**:  
-	[Zend Technologies](https://github.com/zendtech/php-zendserver-docker)
+	[Perforce Software, Inc.](https://github.com/zendtech/php-zendserver-docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/php-zendserver/)
@@ -181,7 +181,7 @@ Each Zend Server Docker container requires 1GB of availible memory.
 
 # License
 
-[Zend Technologies Ltd.](https://www.zend.com/topics/License-EULA-2010-09-2.pdf)
+[Perforce Software, Inc.](https://www.zend.com/end-user-license-agreement)
 
 As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 
