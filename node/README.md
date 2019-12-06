@@ -25,11 +25,11 @@ WARNING:
 -	[`8.16.2-alpine3.9`, `8.16-alpine3.9`, `8-alpine3.9`, `carbon-alpine3.9`](https://github.com/nodejs/docker-node/blob/c6bc44e84afcdb81d9749b7b034c60e916a519ad/8/alpine3.9/Dockerfile)
 -	[`8.16.2-alpine3.10`, `8.16-alpine3.10`, `8-alpine3.10`, `carbon-alpine3.10`, `8.16.2-alpine`, `8.16-alpine`, `8-alpine`, `carbon-alpine`](https://github.com/nodejs/docker-node/blob/c6bc44e84afcdb81d9749b7b034c60e916a519ad/8/alpine3.10/Dockerfile)
 -	[`8.16.2-onbuild`, `8.16-onbuild`, `8-onbuild`, `carbon-onbuild`](https://github.com/nodejs/docker-node/blob/fa27514a3fd775e1cb6bddac326f6f97dad05fb2/8/onbuild/Dockerfile)
--	[`13.2.0-stretch`, `13.2-stretch`, `13-stretch`, `stretch`, `13.2.0`, `13.2`, `13`, `latest`](https://github.com/nodejs/docker-node/blob/caad438f17000bdfe543a4466390a6e79d1dee93/13/stretch/Dockerfile)
--	[`13.2.0-stretch-slim`, `13.2-stretch-slim`, `13-stretch-slim`, `stretch-slim`, `13.2.0-slim`, `13.2-slim`, `13-slim`, `slim`](https://github.com/nodejs/docker-node/blob/caad438f17000bdfe543a4466390a6e79d1dee93/13/stretch-slim/Dockerfile)
--	[`13.2.0-buster`, `13.2-buster`, `13-buster`, `buster`](https://github.com/nodejs/docker-node/blob/caad438f17000bdfe543a4466390a6e79d1dee93/13/buster/Dockerfile)
--	[`13.2.0-buster-slim`, `13.2-buster-slim`, `13-buster-slim`, `buster-slim`](https://github.com/nodejs/docker-node/blob/caad438f17000bdfe543a4466390a6e79d1dee93/13/buster-slim/Dockerfile)
--	[`13.2.0-alpine3.10`, `13.2-alpine3.10`, `13-alpine3.10`, `alpine3.10`, `13.2.0-alpine`, `13.2-alpine`, `13-alpine`, `alpine`](https://github.com/nodejs/docker-node/blob/caad438f17000bdfe543a4466390a6e79d1dee93/13/alpine3.10/Dockerfile)
+-	[`13.3.0-stretch`, `13.3-stretch`, `13-stretch`, `stretch`, `13.3.0`, `13.3`, `13`, `latest`](https://github.com/nodejs/docker-node/blob/cbdde22f468f5032a59d52330894544a0756f0fb/13/stretch/Dockerfile)
+-	[`13.3.0-stretch-slim`, `13.3-stretch-slim`, `13-stretch-slim`, `stretch-slim`, `13.3.0-slim`, `13.3-slim`, `13-slim`, `slim`](https://github.com/nodejs/docker-node/blob/cbdde22f468f5032a59d52330894544a0756f0fb/13/stretch-slim/Dockerfile)
+-	[`13.3.0-buster`, `13.3-buster`, `13-buster`, `buster`](https://github.com/nodejs/docker-node/blob/cbdde22f468f5032a59d52330894544a0756f0fb/13/buster/Dockerfile)
+-	[`13.3.0-buster-slim`, `13.3-buster-slim`, `13-buster-slim`, `buster-slim`](https://github.com/nodejs/docker-node/blob/cbdde22f468f5032a59d52330894544a0756f0fb/13/buster-slim/Dockerfile)
+-	[`13.3.0-alpine3.10`, `13.3-alpine3.10`, `13-alpine3.10`, `alpine3.10`, `13.3.0-alpine`, `13.3-alpine`, `13-alpine`, `alpine`](https://github.com/nodejs/docker-node/blob/cbdde22f468f5032a59d52330894544a0756f0fb/13/alpine3.10/Dockerfile)
 -	[`12.13.1-stretch`, `12.13-stretch`, `12-stretch`, `erbium-stretch`, `lts-stretch`, `current-stretch`, `12.13.1`, `12.13`, `12`, `erbium`, `lts`, `current`](https://github.com/nodejs/docker-node/blob/4f49f67ebd8d577dd7c97dabf5df69e6d947406c/12/stretch/Dockerfile)
 -	[`12.13.1-stretch-slim`, `12.13-stretch-slim`, `12-stretch-slim`, `erbium-stretch-slim`, `lts-stretch-slim`, `current-stretch-slim`, `12.13.1-slim`, `12.13-slim`, `12-slim`, `erbium-slim`, `lts-slim`, `current-slim`](https://github.com/nodejs/docker-node/blob/4f49f67ebd8d577dd7c97dabf5df69e6d947406c/12/stretch-slim/Dockerfile)
 -	[`12.13.1-buster`, `12.13-buster`, `12-buster`, `erbium-buster`, `lts-buster`, `current-buster`](https://github.com/nodejs/docker-node/blob/4f49f67ebd8d577dd7c97dabf5df69e6d947406c/12/buster/Dockerfile)
@@ -44,8 +44,8 @@ WARNING:
 -	[`10.17.0-buster-slim`, `10.17-buster-slim`, `10-buster-slim`, `dubnium-buster-slim`](https://github.com/nodejs/docker-node/blob/f5875531604b4b3b9fbc36437182781c3655c8ae/10/buster-slim/Dockerfile)
 -	[`10.17.0-alpine3.9`, `10.17-alpine3.9`, `10-alpine3.9`, `dubnium-alpine3.9`](https://github.com/nodejs/docker-node/blob/c6bc44e84afcdb81d9749b7b034c60e916a519ad/10/alpine3.9/Dockerfile)
 -	[`10.17.0-alpine3.10`, `10.17-alpine3.10`, `10-alpine3.10`, `dubnium-alpine3.10`, `10.17.0-alpine`, `10.17-alpine`, `10-alpine`, `dubnium-alpine`](https://github.com/nodejs/docker-node/blob/c6bc44e84afcdb81d9749b7b034c60e916a519ad/10/alpine3.10/Dockerfile)
--	[`chakracore-8.11.1`, `chakracore-8.11`, `chakracore-8`](https://github.com/nodejs/docker-node/blob/64f490dcbc50dbdc112afe34a24cf19d607ea0b0/chakracore/8/Dockerfile)
--	[`chakracore-10.13.0`, `chakracore-10.13`, `chakracore-10`, `chakracore`](https://github.com/nodejs/docker-node/blob/64f490dcbc50dbdc112afe34a24cf19d607ea0b0/chakracore/10/Dockerfile)
+-	[`chakracore-8.11.1`, `chakracore-8.11`, `chakracore-8`](https://github.com/nodejs/docker-node/blob/3bf0d764ee0868d89f9d5a1d26b1d48a2d22abcb/chakracore/8/Dockerfile)
+-	[`chakracore-10.13.0`, `chakracore-10.13`, `chakracore-10`, `chakracore`](https://github.com/nodejs/docker-node/blob/3bf0d764ee0868d89f9d5a1d26b1d48a2d22abcb/chakracore/10/Dockerfile)
 
 # Quick reference
 
