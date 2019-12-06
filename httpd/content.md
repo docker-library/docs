@@ -42,7 +42,7 @@ To customize the configuration of the httpd server, first obtain the upstream de
 $ docker run --rm %%IMAGE%%:2.4 cat /usr/local/apache2/conf/httpd.conf > my-httpd.conf
 ```
 
-You can then `COPY` your custom configuration in as `/usr/local/apache2/conf/httpd.conf`.
+You can then `COPY` your custom configuration in as `/usr/local/apache2/conf/httpd.conf`:
 
 ```dockerfile
 FROM %%IMAGE%%:2.4
