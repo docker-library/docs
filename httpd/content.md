@@ -36,7 +36,13 @@ $ docker run -dit --name my-apache-app -p 8080:80 -v "$PWD":/usr/local/apache2/h
 
 ### Configuration
 
-To customize the configuration of the httpd server, just `COPY` your custom configuration in as `/usr/local/apache2/conf/httpd.conf`.
+To customize the configuration of the httpd server, first obtain the upstream default configuration from the container:
+
+```console
+$ docker run --rm %%IMAGE%%:2.4 cat /usr/local/apache2/conf/httpd.conf > my-httpd.conf
+```
+
+You can then `COPY` your custom configuration in as `/usr/local/apache2/conf/httpd.conf`:
 
 ```dockerfile
 FROM %%IMAGE%%:2.4
