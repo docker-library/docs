@@ -20,6 +20,10 @@ WARNING:
 
 ## Simple Tags
 
+-	[`3.9.0a1-buster`, `3.9-rc-buster`, `rc-buster`](https://github.com/docker-library/python/blob/a7db8db3c0eb92c86fbe74a91cb0eab4f7699a21/3.9-rc/buster/Dockerfile)
+-	[`3.9.0a1-alpine3.10`, `3.9-rc-alpine3.10`, `rc-alpine3.10`, `3.9.0a1-alpine`, `3.9-rc-alpine`, `rc-alpine`](https://github.com/docker-library/python/blob/a7db8db3c0eb92c86fbe74a91cb0eab4f7699a21/3.9-rc/alpine3.10/Dockerfile)
+-	[`3.9.0a1-windowsservercore-ltsc2016`, `3.9-rc-windowsservercore-ltsc2016`, `rc-windowsservercore-ltsc2016`](https://github.com/docker-library/python/blob/a7db8db3c0eb92c86fbe74a91cb0eab4f7699a21/3.9-rc/windows/windowsservercore-ltsc2016/Dockerfile)
+-	[`3.9.0a1-windowsservercore-1809`, `3.9-rc-windowsservercore-1809`, `rc-windowsservercore-1809`](https://github.com/docker-library/python/blob/a7db8db3c0eb92c86fbe74a91cb0eab4f7699a21/3.9-rc/windows/windowsservercore-1809/Dockerfile)
 -	[`3.8.0-buster`, `3.8-buster`, `3-buster`, `buster`](https://github.com/docker-library/python/blob/0b1fb9529c79ea85b8c80ff3dd85a32a935b0346/3.8/buster/Dockerfile)
 -	[`3.8.0-slim-buster`, `3.8-slim-buster`, `3-slim-buster`, `slim-buster`, `3.8.0-slim`, `3.8-slim`, `3-slim`, `slim`](https://github.com/docker-library/python/blob/0b1fb9529c79ea85b8c80ff3dd85a32a935b0346/3.8/buster/slim/Dockerfile)
 -	[`3.8.0-alpine3.10`, `3.8-alpine3.10`, `3-alpine3.10`, `alpine3.10`, `3.8.0-alpine`, `3.8-alpine`, `3-alpine`, `alpine`](https://github.com/docker-library/python/blob/0b1fb9529c79ea85b8c80ff3dd85a32a935b0346/3.8/alpine3.10/Dockerfile)
@@ -56,6 +60,13 @@ WARNING:
 
 ## Shared Tags
 
+-	`3.9.0a1`, `3.9-rc`, `rc`:
+	-	[`3.9.0a1-buster`](https://github.com/docker-library/python/blob/a7db8db3c0eb92c86fbe74a91cb0eab4f7699a21/3.9-rc/buster/Dockerfile)
+	-	[`3.9.0a1-windowsservercore-ltsc2016`](https://github.com/docker-library/python/blob/a7db8db3c0eb92c86fbe74a91cb0eab4f7699a21/3.9-rc/windows/windowsservercore-ltsc2016/Dockerfile)
+	-	[`3.9.0a1-windowsservercore-1809`](https://github.com/docker-library/python/blob/a7db8db3c0eb92c86fbe74a91cb0eab4f7699a21/3.9-rc/windows/windowsservercore-1809/Dockerfile)
+-	`3.9.0a1-windowsservercore`, `3.9-rc-windowsservercore`, `rc-windowsservercore`:
+	-	[`3.9.0a1-windowsservercore-ltsc2016`](https://github.com/docker-library/python/blob/a7db8db3c0eb92c86fbe74a91cb0eab4f7699a21/3.9-rc/windows/windowsservercore-ltsc2016/Dockerfile)
+	-	[`3.9.0a1-windowsservercore-1809`](https://github.com/docker-library/python/blob/a7db8db3c0eb92c86fbe74a91cb0eab4f7699a21/3.9-rc/windows/windowsservercore-1809/Dockerfile)
 -	`3.8.0`, `3.8`, `3`, `latest`:
 	-	[`3.8.0-buster`](https://github.com/docker-library/python/blob/0b1fb9529c79ea85b8c80ff3dd85a32a935b0346/3.8/buster/Dockerfile)
 	-	[`3.8.0-windowsservercore-ltsc2016`](https://github.com/docker-library/python/blob/0ecd42b0e0b519259224959b8f9dc64e76d5a73e/3.8/windows/windowsservercore-ltsc2016/Dockerfile)
@@ -180,10 +191,6 @@ Some of these tags may have names like buster or stretch in them. These are the 
 
 This tag is based off of [`buildpack-deps`](https://hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of Docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
 
-## `python:<version>-slim`
-
-This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `python`. Unless you are working in an environment where *only* the `python` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
-
 ## `python:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
@@ -200,6 +207,10 @@ For information about how to get Docker running on Windows, please see the relev
 
 -	[Windows Server Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_server)
 -	[Windows 10 Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)
+
+## `python:<version>-slim`
+
+This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `python`. Unless you are working in an environment where *only* the `python` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
 
 # License
 
