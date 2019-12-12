@@ -28,11 +28,12 @@ When first accessing the webserver provided by this image, it will go through a 
 
 ## MySQL
 
-For using Drupal with a MySQL database you'll want to run a [MySQL](https://hub.docker.com/_/mysql/) container and configure it using environment variables for 
-- `MYSQL_DATABASE`
-- `MYSQL_USER`
-- `MYSQL_PASSWORD`
-- `MYSQL_ROOT_PASSWORD`
+For using Drupal with a MySQL database you'll want to run a [MySQL](https://hub.docker.com/_/mysql/) container and configure it using environment variables for
+
+-       `MYSQL_DATABASE`
+-       `MYSQL_USER`
+-       `MYSQL_PASSWORD`
+-       `MYSQL_ROOT_PASSWORD`
 
 ```console
 $ docker run -d --name some-mysql --network some-network \
@@ -44,15 +45,17 @@ mysql:5.7
 ```
 
 In Drupal's "set up database" step on the web installation walkthrough enter the values for the environment variables you provided
--	Database name/username/password: `<details for accessing your MySQL instance>` (`MYSQL_USER`, `MYSQL_PASSWORD`, `MYSQL_DATABASE`; see environment variables in the description for [`mysql`](https://hub.docker.com/_/mysql/))
--	ADVANCED OPTIONS; Database host: `some-mysql` (Containers on the same [docker-network](https://docs.docker.com/v17.09/engine/userguide/networking/) are routable by their container-name)
+
+-       Database name/username/password: `<details for accessing your MySQL instance>` (`MYSQL_USER`, `MYSQL_PASSWORD`, `MYSQL_DATABASE`; see environment variables in the description for [`mysql`](https://hub.docker.com/_/mysql/))
+-       ADVANCED OPTIONS; Database host: `some-mysql` (Containers on the same [docker-network](https://docs.docker.com/v17.09/engine/userguide/networking/) are routable by their container-name)
 
 ## PostgreSQL
 
-For using Drupal with a PostgreSQL database you'll want to run a [Postgres](https://hub.docker.com/_/postgres) container and configure it using environment variables for 
-- `POSTGRES_DB`
-- `POSTGRES_USER`
-- `POSTGRES_PASSWORD`
+For using Drupal with a PostgreSQL database you'll want to run a [Postgres](https://hub.docker.com/_/postgres) container and configure it using environment variables for
+
+-       `POSTGRES_DB`
+-       `POSTGRES_USER`
+-       `POSTGRES_PASSWORD`
 
 ```console
 $ docker run -d --name some-postgres --network some-network \
@@ -63,9 +66,10 @@ postgres:11
 ```
 
 In Drupal's "set up database" step on the web installation walkthrough enter the values for the environment variables you provided
--	Database type: `PostgreSQL`
--	Database name/username/password: `<details for accessing your PostgreSQL instance>` (`POSTGRES_USER`, `POSTGRES_PASSWORD`, `POSTGRES_DB`; see environment variables in the description for [`postgres`](https://hub.docker.com/_/postgres/))
--	ADVANCED OPTIONS; Database host: `some-postgres` (Containers on the same [docker-network](https://docs.docker.com/v17.09/engine/userguide/networking/) are routable by their container-name)
+
+-       Database type: `PostgreSQL`
+-       Database name/username/password: `<details for accessing your PostgreSQL instance>` (`POSTGRES_USER`, `POSTGRES_PASSWORD`, `POSTGRES_DB`; see environment variables in the description for [`postgres`](https://hub.docker.com/_/postgres/))
+-       ADVANCED OPTIONS; Database host: `some-postgres` (Containers on the same [docker-network](https://docs.docker.com/v17.09/engine/userguide/networking/) are routable by their container-name)
 
 ## Volumes
 
