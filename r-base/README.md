@@ -16,7 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.6.1`, `latest`](https://github.com/rocker-org/rocker/blob/919df9809c677916100cf837be687f6704d6b1b1/r-base/Dockerfile)
+-	[`3.6.2`, `latest`](https://github.com/rocker-org/rocker/blob/df56b98e4a2a4611fa9aacae99c4a304531c2640/r-base/Dockerfile)
 
 # Quick reference
 
