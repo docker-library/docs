@@ -125,6 +125,6 @@ You can find the complete documentation:
 -	for [v1.7](https://docs.traefik.io/v1.7)
 -	for [v2.0](https://docs.traefik.io/v2.0)
 
-A community support is available at [https://community.containo.us](https://community.containo.us)
+A community support is available at [community.containo.us/c/traefik](https://community.containo.us/c/traefik)
 
 A collection of contributions around Traefik can be found at [https://awesome.traefik.io](https://awesome.traefik.io).
