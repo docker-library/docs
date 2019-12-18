@@ -4,7 +4,7 @@ Ubuntu is a Debian-based Linux operating system that runs from the desktop to th
 
 Development of Ubuntu is led by Canonical Ltd. Canonical generates revenue through the sale of technical support and other services related to Ubuntu. The Ubuntu project is publicly committed to the principles of open-source software development; people are encouraged to use free software, study how it works, improve upon it, and distribute it.
 
-> [wikipedia.org/wiki/Ubuntu_(operating_system)](https://en.wikipedia.org/wiki/Ubuntu_%28operating_system%29)
+> [wikipedia.org/wiki/Ubuntu](https://en.wikipedia.org/wiki/Ubuntu)
 
 %%LOGO%%
 
