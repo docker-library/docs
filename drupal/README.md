@@ -16,15 +16,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.8.0-apache`, `8.8-apache`, `8-apache`, `apache`, `8.8.0`, `8.8`, `8`, `latest`](https://github.com/docker-library/drupal/blob/b6cc96948b301411b49828ebe01e969076aacbf4/8.8/apache/Dockerfile)
--	[`8.8.0-fpm`, `8.8-fpm`, `8-fpm`, `fpm`](https://github.com/docker-library/drupal/blob/b6cc96948b301411b49828ebe01e969076aacbf4/8.8/fpm/Dockerfile)
--	[`8.8.0-fpm-alpine`, `8.8-fpm-alpine`, `8-fpm-alpine`, `fpm-alpine`](https://github.com/docker-library/drupal/blob/b6cc96948b301411b49828ebe01e969076aacbf4/8.8/fpm-alpine/Dockerfile)
--	[`8.7.10-apache`, `8.7-apache`, `8.7.10`, `8.7`](https://github.com/docker-library/drupal/blob/67a73208bb915899afb9e7b2a7080c8d783faa7c/8.7/apache/Dockerfile)
--	[`8.7.10-fpm`, `8.7-fpm`](https://github.com/docker-library/drupal/blob/67a73208bb915899afb9e7b2a7080c8d783faa7c/8.7/fpm/Dockerfile)
--	[`8.7.10-fpm-alpine`, `8.7-fpm-alpine`](https://github.com/docker-library/drupal/blob/67a73208bb915899afb9e7b2a7080c8d783faa7c/8.7/fpm-alpine/Dockerfile)
--	[`7.68-apache`, `7-apache`, `7.68`, `7`](https://github.com/docker-library/drupal/blob/588f5c5d5f03919b6add9beb38503ae9733f748f/7/apache/Dockerfile)
--	[`7.68-fpm`, `7-fpm`](https://github.com/docker-library/drupal/blob/588f5c5d5f03919b6add9beb38503ae9733f748f/7/fpm/Dockerfile)
--	[`7.68-fpm-alpine`, `7-fpm-alpine`](https://github.com/docker-library/drupal/blob/588f5c5d5f03919b6add9beb38503ae9733f748f/7/fpm-alpine/Dockerfile)
+-	[`8.8.1-apache`, `8.8-apache`, `8-apache`, `apache`, `8.8.1`, `8.8`, `8`, `latest`](https://github.com/docker-library/drupal/blob/aa0832cb02509999c0de49100e3f7661d8fe2672/8.8/apache/Dockerfile)
+-	[`8.8.1-fpm`, `8.8-fpm`, `8-fpm`, `fpm`](https://github.com/docker-library/drupal/blob/aa0832cb02509999c0de49100e3f7661d8fe2672/8.8/fpm/Dockerfile)
+-	[`8.8.1-fpm-alpine`, `8.8-fpm-alpine`, `8-fpm-alpine`, `fpm-alpine`](https://github.com/docker-library/drupal/blob/aa0832cb02509999c0de49100e3f7661d8fe2672/8.8/fpm-alpine/Dockerfile)
+-	[`8.7.11-apache`, `8.7-apache`, `8.7.11`, `8.7`](https://github.com/docker-library/drupal/blob/6a99936a0870ae9d95d9e6070d1ffe7eb0e1f406/8.7/apache/Dockerfile)
+-	[`8.7.11-fpm`, `8.7-fpm`](https://github.com/docker-library/drupal/blob/6a99936a0870ae9d95d9e6070d1ffe7eb0e1f406/8.7/fpm/Dockerfile)
+-	[`8.7.11-fpm-alpine`, `8.7-fpm-alpine`](https://github.com/docker-library/drupal/blob/6a99936a0870ae9d95d9e6070d1ffe7eb0e1f406/8.7/fpm-alpine/Dockerfile)
+-	[`7.69-apache`, `7-apache`, `7.69`, `7`](https://github.com/docker-library/drupal/blob/045b0f25b96b1fe0e660b736d28ef385253a32e7/7/apache/Dockerfile)
+-	[`7.69-fpm`, `7-fpm`](https://github.com/docker-library/drupal/blob/045b0f25b96b1fe0e660b736d28ef385253a32e7/7/fpm/Dockerfile)
+-	[`7.69-fpm-alpine`, `7-fpm-alpine`](https://github.com/docker-library/drupal/blob/045b0f25b96b1fe0e660b736d28ef385253a32e7/7/fpm-alpine/Dockerfile)
 
 # Quick reference
 
