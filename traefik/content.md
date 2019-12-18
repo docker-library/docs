@@ -127,4 +127,4 @@ You can find the complete documentation:
 
 A community support is available at [community.containo.us/c/traefik](https://community.containo.us/c/traefik)
 
-A collection of contributions around Traefik can be found at [https://awesome.traefik.io](https://awesome.traefik.io).
+A collection of contributions around Traefik can be found at [github.com/containous/traefik/wiki/Awesome-Traefik](https://github.com/containous/traefik/wiki/Awesome-Traefik).
