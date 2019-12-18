@@ -1,1 +1,1 @@
-Convertigo is an open source MBaaS/MADP platform for mobile application development and back-end.
+Convertigo is an open source Low Code Application Platform (LCAP) featuring MXDP (Multi eXperience Development Platform) / MBaaS (Mobile Back end as a Service) for full-stack mobile and web application development.
