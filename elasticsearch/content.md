@@ -22,7 +22,7 @@ For Elasticsearch versions prior to 6.4.0 a full list of images, tags, and docum
 
 For full Elasticsearch documentation see [here](https://www.elastic.co/guide/en/elasticsearch/reference/index.html).
 
-**The commands below are intended for deploying in a development context only. For production installation and configuration, see [Install Elasticsearch with Docker](https://www.elastic.co/guide/en/elasticsearch/reference/6.4/docker.html).**
+**The commands below are intended for deploying in a development context only. For production installation and configuration, see [Install Elasticsearch with Docker](https://www.elastic.co/guide/en/elasticsearch/reference/7.5/docker.html).**
 
 ## Running in Development Mode
 
@@ -40,4 +40,4 @@ $ docker run -d --name elasticsearch --net somenetwork -p 9200:9200 -p 9300:9300
 
 ## Running in Production Mode
 
-See [Install Elasticsearch with Docker](https://www.elastic.co/guide/en/elasticsearch/reference/6.x/docker.html)
+See [Install Elasticsearch with Docker](https://www.elastic.co/guide/en/elasticsearch/reference/7.5/docker.html)
