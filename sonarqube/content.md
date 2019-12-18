@@ -53,7 +53,7 @@ By default, the image will use an embedded H2 database that is not suited for pr
 
 > Warning: Only a single instance of SonarQube can connect to a database schema. If you're using a Docker Swarm or Kubernetes, make sure that multiple SonarQube instances are never running on the same database schema simultaneously. This will cause SonarQube to behave unpredictably and data will be corrupted. There is no safeguard until [SONAR-10362](https://jira.sonarsource.com/browse/SONAR-10362).
 
-Setup a database by following the "Installing the Database" section of https://docs.sonarqube.org/latest/setup/install-server/.
+Setup a database by following the [Installing the Database](https://docs.sonarqube.org/latest/setup/install-server/) section.
 
 ### Use bind-mounted folders or volumes
 
