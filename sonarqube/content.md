@@ -43,7 +43,7 @@ $ mvn sonar:sonar
 $ mvn sonar:sonar -Dsonar.host.url=http://$(boot2docker ip):9000
 ```
 
-To analyze other kinds of projects and for more details see [Analyzing Source Code documentation](https://docs.sonarqube.org/latest/analysis/overview/).
+To analyze other kinds of projects and for more details see [Analyzing Source Code documentation](https://redirect.sonarsource.com/doc/analyzing-source-code.html).
 
 ## Configuration
 
