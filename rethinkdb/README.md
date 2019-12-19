@@ -16,7 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.3.7`, `2.3`, `2`, `latest`](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/6efa057f145112f259949ce5b37a3bd6384eb5c5/bionic/2.3.7/Dockerfile)
+-	[`2.4.0`, `2.4`, `2`, `latest`](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/54d3eebf6409b196264c193e0cbad027061739b3/bionic/2.4.0/Dockerfile)
 
 # Quick reference
 
