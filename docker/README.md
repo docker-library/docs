@@ -18,7 +18,7 @@ WARNING:
 
 -	[`19.03.5`, `19.03`, `19`, `stable`, `test`, `latest`](https://github.com/docker-library/docker/blob/7a67842e7ff12c1426ae6a67ac1b7a701b51f3df/19.03/Dockerfile)
 -	[`19.03.5-dind`, `19.03-dind`, `19-dind`, `stable-dind`, `test-dind`, `dind`](https://github.com/docker-library/docker/blob/92d278e671f32a9ee4a3c0668e46a41f4a3b74b0/19.03/dind/Dockerfile)
--	[`19.03.5-dind-rootless`, `19.03-dind-rootless`, `19-dind-rootless`, `stable-dind-rootless`, `test-dind-rootless`, `dind-rootless`](https://github.com/docker-library/docker/blob/cbe1c220b3d43715ddd712cf93e8fb2e3c32429c/19.03/dind-rootless/Dockerfile)
+-	[`19.03.5-dind-rootless`, `19.03-dind-rootless`, `19-dind-rootless`, `stable-dind-rootless`, `test-dind-rootless`, `dind-rootless`](https://github.com/docker-library/docker/blob/cd0099524944dd1ad368421ec042e0ec9ef53a47/19.03/dind-rootless/Dockerfile)
 -	[`19.03.5-git`, `19.03-git`, `19-git`, `stable-git`, `test-git`, `git`](https://github.com/docker-library/docker/blob/7a67842e7ff12c1426ae6a67ac1b7a701b51f3df/19.03/git/Dockerfile)
 
 # Quick reference
