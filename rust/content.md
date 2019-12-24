@@ -44,7 +44,7 @@ COPY --from=builder /usr/src/myapp /usr/local/bin/myapp
 CMD ["myapp"]
 ```
 
-Note: Some shared libraries may need to be installed as shown in the installation of the libssl-dev line above.
+Note: Some shared libraries may need to be installed as shown in the installation of the libssl line above.
 
 This method will create an image that is less than 200mb. If you switch to using the Alpine-based rust image, you might be able to save another 60mb.
 
