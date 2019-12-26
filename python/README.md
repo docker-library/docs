@@ -21,40 +21,41 @@ WARNING:
 ## Simple Tags
 
 -	[`3.9.0a2-buster`, `3.9-rc-buster`, `rc-buster`](https://github.com/docker-library/python/blob/3957597c187b95f6753273331a32fe27fbbfcb6c/3.9-rc/buster/Dockerfile)
--	[`3.9.0a2-alpine3.10`, `3.9-rc-alpine3.10`, `rc-alpine3.10`, `3.9.0a2-alpine`, `3.9-rc-alpine`, `rc-alpine`](https://github.com/docker-library/python/blob/3957597c187b95f6753273331a32fe27fbbfcb6c/3.9-rc/alpine3.10/Dockerfile)
+-	[`3.9.0a2-alpine3.10`, `3.9-rc-alpine3.10`, `rc-alpine3.10`](https://github.com/docker-library/python/blob/ba80ba5c05697802945538f7d4fc896377f79abd/3.9-rc/alpine3.10/Dockerfile)
 -	[`3.9.0a2-windowsservercore-ltsc2016`, `3.9-rc-windowsservercore-ltsc2016`, `rc-windowsservercore-ltsc2016`](https://github.com/docker-library/python/blob/3957597c187b95f6753273331a32fe27fbbfcb6c/3.9-rc/windows/windowsservercore-ltsc2016/Dockerfile)
 -	[`3.9.0a2-windowsservercore-1809`, `3.9-rc-windowsservercore-1809`, `rc-windowsservercore-1809`](https://github.com/docker-library/python/blob/3957597c187b95f6753273331a32fe27fbbfcb6c/3.9-rc/windows/windowsservercore-1809/Dockerfile)
 -	[`3.8.1-buster`, `3.8-buster`, `3-buster`, `buster`](https://github.com/docker-library/python/blob/32b69d61f6cb2c8774be8099380cd37c699dfedf/3.8/buster/Dockerfile)
 -	[`3.8.1-slim-buster`, `3.8-slim-buster`, `3-slim-buster`, `slim-buster`, `3.8.1-slim`, `3.8-slim`, `3-slim`, `slim`](https://github.com/docker-library/python/blob/32b69d61f6cb2c8774be8099380cd37c699dfedf/3.8/buster/slim/Dockerfile)
--	[`3.8.1-alpine3.10`, `3.8-alpine3.10`, `3-alpine3.10`, `alpine3.10`, `3.8.1-alpine`, `3.8-alpine`, `3-alpine`, `alpine`](https://github.com/docker-library/python/blob/32b69d61f6cb2c8774be8099380cd37c699dfedf/3.8/alpine3.10/Dockerfile)
+-	[`3.8.1-alpine3.11`, `3.8-alpine3.11`, `3-alpine3.11`, `alpine3.11`, `3.8.1-alpine`, `3.8-alpine`, `3-alpine`, `alpine`](https://github.com/docker-library/python/blob/ba80ba5c05697802945538f7d4fc896377f79abd/3.8/alpine3.11/Dockerfile)
+-	[`3.8.1-alpine3.10`, `3.8-alpine3.10`, `3-alpine3.10`, `alpine3.10`](https://github.com/docker-library/python/blob/ba80ba5c05697802945538f7d4fc896377f79abd/3.8/alpine3.10/Dockerfile)
 -	[`3.8.1-windowsservercore-ltsc2016`, `3.8-windowsservercore-ltsc2016`, `3-windowsservercore-ltsc2016`, `windowsservercore-ltsc2016`](https://github.com/docker-library/python/blob/32b69d61f6cb2c8774be8099380cd37c699dfedf/3.8/windows/windowsservercore-ltsc2016/Dockerfile)
 -	[`3.8.1-windowsservercore-1809`, `3.8-windowsservercore-1809`, `3-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/docker-library/python/blob/32b69d61f6cb2c8774be8099380cd37c699dfedf/3.8/windows/windowsservercore-1809/Dockerfile)
 -	[`3.7.6-buster`, `3.7-buster`](https://github.com/docker-library/python/blob/5f1e3cbcb02c508a5357b5637f3b7a51937e4b5d/3.7/buster/Dockerfile)
 -	[`3.7.6-slim-buster`, `3.7-slim-buster`, `3.7.6-slim`, `3.7-slim`](https://github.com/docker-library/python/blob/5f1e3cbcb02c508a5357b5637f3b7a51937e4b5d/3.7/buster/slim/Dockerfile)
 -	[`3.7.6-stretch`, `3.7-stretch`](https://github.com/docker-library/python/blob/5f1e3cbcb02c508a5357b5637f3b7a51937e4b5d/3.7/stretch/Dockerfile)
 -	[`3.7.6-slim-stretch`, `3.7-slim-stretch`](https://github.com/docker-library/python/blob/5f1e3cbcb02c508a5357b5637f3b7a51937e4b5d/3.7/stretch/slim/Dockerfile)
--	[`3.7.6-alpine3.10`, `3.7-alpine3.10`, `3.7.6-alpine`, `3.7-alpine`](https://github.com/docker-library/python/blob/5f1e3cbcb02c508a5357b5637f3b7a51937e4b5d/3.7/alpine3.10/Dockerfile)
--	[`3.7.6-alpine3.9`, `3.7-alpine3.9`](https://github.com/docker-library/python/blob/5f1e3cbcb02c508a5357b5637f3b7a51937e4b5d/3.7/alpine3.9/Dockerfile)
+-	[`3.7.6-alpine3.11`, `3.7-alpine3.11`, `3.7.6-alpine`, `3.7-alpine`](https://github.com/docker-library/python/blob/ba80ba5c05697802945538f7d4fc896377f79abd/3.7/alpine3.11/Dockerfile)
+-	[`3.7.6-alpine3.10`, `3.7-alpine3.10`](https://github.com/docker-library/python/blob/ba80ba5c05697802945538f7d4fc896377f79abd/3.7/alpine3.10/Dockerfile)
 -	[`3.7.6-windowsservercore-ltsc2016`, `3.7-windowsservercore-ltsc2016`](https://github.com/docker-library/python/blob/5f1e3cbcb02c508a5357b5637f3b7a51937e4b5d/3.7/windows/windowsservercore-ltsc2016/Dockerfile)
 -	[`3.7.6-windowsservercore-1809`, `3.7-windowsservercore-1809`](https://github.com/docker-library/python/blob/5f1e3cbcb02c508a5357b5637f3b7a51937e4b5d/3.7/windows/windowsservercore-1809/Dockerfile)
 -	[`3.6.10-buster`, `3.6-buster`](https://github.com/docker-library/python/blob/4b59d07e2f231678b3d5f14af9250b5097456ac1/3.6/buster/Dockerfile)
 -	[`3.6.10-slim-buster`, `3.6-slim-buster`, `3.6.10-slim`, `3.6-slim`](https://github.com/docker-library/python/blob/4b59d07e2f231678b3d5f14af9250b5097456ac1/3.6/buster/slim/Dockerfile)
 -	[`3.6.10-stretch`, `3.6-stretch`](https://github.com/docker-library/python/blob/4b59d07e2f231678b3d5f14af9250b5097456ac1/3.6/stretch/Dockerfile)
 -	[`3.6.10-slim-stretch`, `3.6-slim-stretch`](https://github.com/docker-library/python/blob/4b59d07e2f231678b3d5f14af9250b5097456ac1/3.6/stretch/slim/Dockerfile)
--	[`3.6.10-alpine3.10`, `3.6-alpine3.10`, `3.6.10-alpine`, `3.6-alpine`](https://github.com/docker-library/python/blob/4b59d07e2f231678b3d5f14af9250b5097456ac1/3.6/alpine3.10/Dockerfile)
--	[`3.6.10-alpine3.9`, `3.6-alpine3.9`](https://github.com/docker-library/python/blob/4b59d07e2f231678b3d5f14af9250b5097456ac1/3.6/alpine3.9/Dockerfile)
+-	[`3.6.10-alpine3.11`, `3.6-alpine3.11`, `3.6.10-alpine`, `3.6-alpine`](https://github.com/docker-library/python/blob/ba80ba5c05697802945538f7d4fc896377f79abd/3.6/alpine3.11/Dockerfile)
+-	[`3.6.10-alpine3.10`, `3.6-alpine3.10`](https://github.com/docker-library/python/blob/ba80ba5c05697802945538f7d4fc896377f79abd/3.6/alpine3.10/Dockerfile)
 -	[`3.5.9-buster`, `3.5-buster`](https://github.com/docker-library/python/blob/43fe04f2c209221da5ecabce1253120744282509/3.5/buster/Dockerfile)
 -	[`3.5.9-slim-buster`, `3.5-slim-buster`, `3.5.9-slim`, `3.5-slim`](https://github.com/docker-library/python/blob/43fe04f2c209221da5ecabce1253120744282509/3.5/buster/slim/Dockerfile)
 -	[`3.5.9-stretch`, `3.5-stretch`](https://github.com/docker-library/python/blob/43fe04f2c209221da5ecabce1253120744282509/3.5/stretch/Dockerfile)
 -	[`3.5.9-slim-stretch`, `3.5-slim-stretch`](https://github.com/docker-library/python/blob/43fe04f2c209221da5ecabce1253120744282509/3.5/stretch/slim/Dockerfile)
--	[`3.5.9-alpine3.10`, `3.5-alpine3.10`, `3.5.9-alpine`, `3.5-alpine`](https://github.com/docker-library/python/blob/43fe04f2c209221da5ecabce1253120744282509/3.5/alpine3.10/Dockerfile)
--	[`3.5.9-alpine3.9`, `3.5-alpine3.9`](https://github.com/docker-library/python/blob/43fe04f2c209221da5ecabce1253120744282509/3.5/alpine3.9/Dockerfile)
+-	[`3.5.9-alpine3.11`, `3.5-alpine3.11`, `3.5.9-alpine`, `3.5-alpine`](https://github.com/docker-library/python/blob/ba80ba5c05697802945538f7d4fc896377f79abd/3.5/alpine3.11/Dockerfile)
+-	[`3.5.9-alpine3.10`, `3.5-alpine3.10`](https://github.com/docker-library/python/blob/ba80ba5c05697802945538f7d4fc896377f79abd/3.5/alpine3.10/Dockerfile)
 -	[`2.7.17-buster`, `2.7-buster`, `2-buster`](https://github.com/docker-library/python/blob/43fe04f2c209221da5ecabce1253120744282509/2.7/buster/Dockerfile)
 -	[`2.7.17-slim-buster`, `2.7-slim-buster`, `2-slim-buster`, `2.7.17-slim`, `2.7-slim`, `2-slim`](https://github.com/docker-library/python/blob/43fe04f2c209221da5ecabce1253120744282509/2.7/buster/slim/Dockerfile)
 -	[`2.7.17-stretch`, `2.7-stretch`, `2-stretch`](https://github.com/docker-library/python/blob/43fe04f2c209221da5ecabce1253120744282509/2.7/stretch/Dockerfile)
 -	[`2.7.17-slim-stretch`, `2.7-slim-stretch`, `2-slim-stretch`](https://github.com/docker-library/python/blob/43fe04f2c209221da5ecabce1253120744282509/2.7/stretch/slim/Dockerfile)
--	[`2.7.17-alpine3.10`, `2.7-alpine3.10`, `2-alpine3.10`, `2.7.17-alpine`, `2.7-alpine`, `2-alpine`](https://github.com/docker-library/python/blob/43fe04f2c209221da5ecabce1253120744282509/2.7/alpine3.10/Dockerfile)
--	[`2.7.17-alpine3.9`, `2.7-alpine3.9`, `2-alpine3.9`](https://github.com/docker-library/python/blob/43fe04f2c209221da5ecabce1253120744282509/2.7/alpine3.9/Dockerfile)
+-	[`2.7.17-alpine3.11`, `2.7-alpine3.11`, `2-alpine3.11`, `2.7.17-alpine`, `2.7-alpine`, `2-alpine`](https://github.com/docker-library/python/blob/024062fe4751d7255264dff3e9a9024c05920374/2.7/alpine3.11/Dockerfile)
+-	[`2.7.17-alpine3.10`, `2.7-alpine3.10`, `2-alpine3.10`](https://github.com/docker-library/python/blob/43fe04f2c209221da5ecabce1253120744282509/2.7/alpine3.10/Dockerfile)
 -	[`2.7.17-windowsservercore-ltsc2016`, `2.7-windowsservercore-ltsc2016`, `2-windowsservercore-ltsc2016`](https://github.com/docker-library/python/blob/c4414a2fdbb7fa1e752f27565e41c7032b673a03/2.7/windows/windowsservercore-ltsc2016/Dockerfile)
 -	[`2.7.17-windowsservercore-1809`, `2.7-windowsservercore-1809`, `2-windowsservercore-1809`](https://github.com/docker-library/python/blob/c4414a2fdbb7fa1e752f27565e41c7032b673a03/2.7/windows/windowsservercore-1809/Dockerfile)
 
@@ -191,14 +192,6 @@ Some of these tags may have names like buster or stretch in them. These are the 
 
 This tag is based off of [`buildpack-deps`](https://hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of Docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
 
-## `python:<version>-alpine`
-
-This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
-
-This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
-
-To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
-
 ## `python:<version>-windowsservercore`
 
 This image is based on [Windows Server Core (`microsoft/windowsservercore`)](https://hub.docker.com/r/microsoft/windowsservercore/). As such, it only works in places which that image does, such as Windows 10 Professional/Enterprise (Anniversary Edition) or Windows Server 2016.
@@ -211,6 +204,14 @@ For information about how to get Docker running on Windows, please see the relev
 ## `python:<version>-slim`
 
 This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `python`. Unless you are working in an environment where *only* the `python` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
+
+## `python:<version>-alpine`
+
+This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+
+This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+
+To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 # License
 
