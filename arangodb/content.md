@@ -84,7 +84,7 @@ The ArangoDB image provides several authentication methods which can be specifie
 
 	Disable authentication. Useful for testing.
 
-	**WARNING** Doing so in production will expose all your data. Make sure that ArangoDB is not diretcly accessible from the internet!
+	**WARNING** Doing so in production will expose all your data. Make sure that ArangoDB is not directly accessible from the internet!
 
 3.	ARANGO_ROOT_PASSWORD=somepassword
 
