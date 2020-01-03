@@ -66,7 +66,7 @@ CMD ["snap-example"]
 
 ### Examples
 
-See the application snippet above in more detail in the [example snap application](https://github.com/freebroccolo/docker-haskell/tree/master/examples/7.10/snap).
+See the application snippet above in more detail in the [example snap application](https://github.com/haskell/docker-haskell/tree/master/examples/7.10/snap).
 
 ### Considerations for `happy`, `alex`, etc
 
