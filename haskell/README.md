@@ -25,10 +25,10 @@ WARNING:
 	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
 -	**Where to file issues**:  
-	[https://github.com/freebroccolo/docker-haskell/issues](https://github.com/freebroccolo/docker-haskell/issues)
+	[https://github.com/haskell/docker-haskell/issues](https://github.com/haskell/docker-haskell/issues)
 
 -	**Maintained by**:  
-	[the Docker Community](https://github.com/freebroccolo/docker-haskell)
+	[the Docker Community](https://github.com/haskell/docker-haskell)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/haskell/)
@@ -112,7 +112,7 @@ CMD ["snap-example"]
 
 ### Examples
 
-See the application snippet above in more detail in the [example snap application](https://github.com/freebroccolo/docker-haskell/tree/master/examples/7.10/snap).
+See the application snippet above in more detail in the [example snap application](https://github.com/haskell/docker-haskell/tree/master/examples/7.10/snap).
 
 ### Considerations for `happy`, `alex`, etc
 
@@ -152,7 +152,7 @@ The alternative to use `--install-ghc` doesn't make sense in a Docker image cont
 
 # License
 
-This image is licensed under the MIT License ([LICENSE](https://github.com/freebroccolo/docker-haskell/blob/master/LICENSE)) and includes software licensed under BSD licenses: [Glasgow Haskell Compiler License](https://www.haskell.org/ghc/license), [Stack License](https://github.com/commercialhaskell/stack/blob/master/LICENSE).
+This image is licensed under the MIT License ([LICENSE](https://github.com/haskell/docker-haskell/blob/master/LICENSE)) and includes software licensed under BSD licenses: [Glasgow Haskell Compiler License](https://www.haskell.org/ghc/license), [Stack License](https://github.com/commercialhaskell/stack/blob/master/LICENSE).
 
 As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 
