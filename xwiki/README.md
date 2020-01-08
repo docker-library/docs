@@ -16,8 +16,6 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`10`, `10.11`, `10.11.11`, `10-mysql-tomcat`](https://github.com/xwiki-contrib/docker-xwiki/blob/b5d75f3e79ae6df32ed1ccab487e7dba0898f299/10/mysql-tomcat/Dockerfile)
--	[`10-postgres-tomcat`, `10.11-postgres-tomcat`, `10.11.11-postgres-tomcat`](https://github.com/xwiki-contrib/docker-xwiki/blob/b5d75f3e79ae6df32ed1ccab487e7dba0898f299/10/postgres-tomcat/Dockerfile)
 -	[`11`, `11.10`, `11.10.2`, `11-mysql-tomcat`, `11.10-mysql-tomcat`, `11.10.2-mysql-tomcat`, `stable-mysql-tomcat`, `stable-mysql`, `stable`, `latest`, `mysql-tomcat`, `lts-mysql-tomcat`, `lts-mysql`, `lts`](https://github.com/xwiki-contrib/docker-xwiki/blob/ab4e20f0ae8562b801f7f4901b931b8d9405b697/11/mysql-tomcat/Dockerfile)
 -	[`11-postgres-tomcat`, `11.10-postgres-tomcat`, `11.10.2-postgres-tomcat`, `stable-postgres-tomcat`, `stable-postgres`, `postgres-tomcat`, `lts-postgres-tomcat`, `lts-postgres`](https://github.com/xwiki-contrib/docker-xwiki/blob/ab4e20f0ae8562b801f7f4901b931b8d9405b697/11/postgres-tomcat/Dockerfile)
 
