@@ -8,7 +8,7 @@ use File::Basename qw(basename fileparse);
 use File::Temp;
 use Getopt::Long;
 use Mojo::UserAgent;
-use Mojo::Util qw(decode encode slurp spurt trim);
+use Mojo::Util qw(b64_encode decode encode slurp spurt trim);
 
 use Term::UI;
 use Term::ReadLine;
@@ -20,11 +20,13 @@ my $username;
 my $password;
 my $batchmode;
 my $namespace;
+my $logos;
 GetOptions(
 	'u|username=s' => \$username,
 	'p|password=s' => \$password,
 	'batchmode!' => \$batchmode,
 	'namespace=s' => \$namespace,
+	'logos!' => \$logos,
 ) or die 'bad args';
 
 die 'no repos specified' unless @ARGV;
@@ -148,6 +150,49 @@ while (my $repo = shift) { # 'library/hylang', 'tianon/perl', etc
 	$repoName =~ s!^.*/!!; # 'hylang', 'perl', etc
 	
 	my $repoUrl = 'https://hub.docker.com/v2/repositories/' . $repo . '/';
+	
+	if ($logos && $repo =~ m{ ^ library/ }x) {
+		# the "library" org images include a logo which is displayed in the Hub UI
+		# if we have a logo file, let's update that metadata first
+		my $repoLogo120 = $repoName . '/logo-120.png';
+		if (!-f $repoLogo120) {
+			my $repoLogoPng = $repoName . '/logo.png';
+			my $repoLogoSvg = $repoName . '/logo.svg';
+			my $logoToConvert = (
+				-f $repoLogoPng
+				? $repoLogoPng
+				: $repoLogoSvg
+			);
+			if (-f $logoToConvert) {
+				say 'converting ' . $logoToConvert . ' to ' . $repoLogo120;
+				system(
+					qw( convert -background none -density 1200 -strip -resize 120x120> -gravity center -extent 120x120 ),
+					$logoToConvert,
+					$repoLogo120,
+				) == 0 or die "failed to convert $repoLogoPng into $repoLogo120";
+			}
+		}
+		if (-f $repoLogo120) {
+			my $proposedLogo = slurp($repoLogo120);
+			my $currentLogo = $ua->get('https://d1q6f0aelx0por.cloudfront.net/product-logos/' . join('-', split(m{/}, $repo)) . '-logo.png', { 'Cache-Control' => 'no-cache' });
+			$currentLogo = ($currentLogo->success ? $currentLogo->res->body : undef);
+			
+			if ($currentLogo && $currentLogo eq $proposedLogo) {
+				say 'no change to ' . $repoName . ' logo; skipping';
+			}
+			else {
+				say 'putting logo ' . $repoLogo120;
+				my $logoUrl = $repoUrl . 'logo';
+				my $logoPut = $ua->put($logoUrl => $authorizationHeader => json => {
+						'image_data' => b64_encode($proposedLogo),
+						'content_type' => 'image/png',
+						'file_ext' => 'png',
+					});
+				warn 'warning: put to ' . $logoUrl . ' failed: ' . $logoPut->res->text unless $logoPut->success;
+			}
+		}
+	}
+	
 	my $repoTx = $ua->get($repoUrl => $authorizationHeader);
 	warn 'warning: failed to get: ' . $repoUrl . ' (skipping)' and next unless $repoTx->success;
 	
@@ -157,7 +202,7 @@ while (my $repo = shift) { # 'library/hylang', 'tianon/perl', etc
 	
 	my $hubShort = prompt_for_edit($repoDetails->{description}, $repoName . '/README-short.txt');
 	my $hubLong = prompt_for_edit($repoDetails->{full_description}, $repoName . '/README.md', $hubLengthLimit);
-	
+
 	say 'no change to ' . $repoName . '; skipping' and next if $repoDetails->{description} eq $hubShort and $repoDetails->{full_description} eq $hubLong;
 	
 	say 'updating ' . $repoName;
