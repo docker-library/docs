@@ -28,8 +28,6 @@ WARNING:
 -	[`1.7.12-alpine`, `1.7-alpine`](https://github.com/docker-library/haproxy/blob/fcb217989a970805d4dfee5903fec5d97870a54a/1.7/alpine/Dockerfile)
 -	[`1.6.15`, `1.6`](https://github.com/docker-library/haproxy/blob/4e917ff7cbc629b29af59d02057ceece8102e4e0/1.6/Dockerfile)
 -	[`1.6.15-alpine`, `1.6-alpine`](https://github.com/docker-library/haproxy/blob/4e917ff7cbc629b29af59d02057ceece8102e4e0/1.6/alpine/Dockerfile)
--	[`1.5.19`, `1.5`](https://github.com/docker-library/haproxy/blob/d21ad4557dd2ea46cba1f05a75dcd39ee42c5c56/1.5/Dockerfile)
--	[`1.5.19-alpine`, `1.5-alpine`](https://github.com/docker-library/haproxy/blob/af7ea81960c11b73b8a328e65f97df62a389cd10/1.5/alpine/Dockerfile)
 
 # Quick reference
 
