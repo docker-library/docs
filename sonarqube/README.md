@@ -169,7 +169,7 @@ Follow these steps for your first installation:
 	 -v $SONARQUBE_HOME/conf:/opt/sonarqube/conf \
 	 -v $SONARQUBE_HOME/extensions:/opt/sonarqube/extensions \
 	 -v $SONARQUBE_HOME/data:/opt/sonarqube/data \
-	 sonarqube --init
+	 sonarqube:community-beta --init
 	```
 
 3.	Configure sonar.properties to configure the database settings. Templates are available for every supported database. Just uncomment and configure the template you need and comment out the lines dedicated to H2:
@@ -191,7 +191,7 @@ Follow these steps for your first installation:
 	    -v $SONARQUBE_HOME/extensions:/opt/sonarqube/extensions \
 	    -v $SONARQUBE_HOME/logs:/opt/sonarqube/logs \
 	    -v $SONARQUBE_HOME/data:/opt/sonarqube/data \
-	    sonarqube
+	    sonarqube:community-beta
 	```
 
 ## Upgrade SonarQube
@@ -227,7 +227,7 @@ Follow these steps to upgrade SonarQube:
 	    -v $SONARQUBE_HOME/conf:/opt/sonarqube/conf \
 	    -v $SONARQUBE_HOME/extensions:/opt/sonarqube/extensions \
 	    -v $SONARQUBE_HOME/data:/opt/sonarqube/data \
-	    sonarqube --init  
+	    sonarqube:community-beta --init  
 	```
 
 4.	Take a look at the [Upgrade Guide](https://docs.sonarqube.org/latest/setup/upgrading/) for information on:
@@ -252,7 +252,7 @@ Follow these steps to upgrade SonarQube:
 	    -v $SONARQUBE_HOME/extensions:/opt/sonarqube/extensions \
 	    -v $SONARQUBE_HOME/logs:/opt/sonarqube/logs \
 	    -v $SONARQUBE_HOME/data:/opt/sonarqube/data \
-	    sonarqube
+	    sonarqube:community-beta
 	```
 
 7.	Browse to `http://yourSonarQubeServerURL/setup` and follow the setup instructions.
