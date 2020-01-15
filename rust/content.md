@@ -40,7 +40,7 @@ RUN cargo install --path .
 
 FROM debian:buster-slim
 RUN apt-get update && apt-get install -y extra-runtime-dependencies
-COPY --from=builder $CARGO_HOME/bin/myapp /usr/local/bin/myapp
+COPY --from=builder /usr/local/cargo/bin/myapp /usr/local/bin/myapp
 CMD ["myapp"]
 ```
 
