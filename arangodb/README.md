@@ -79,7 +79,7 @@ Furthermore, ArangoDB offers a microservice framework called [Foxx](https://www.
 
 ### Start an ArangoDB instance
 
-In order to start an ArangoDB instance run
+In order to start an ArangoDB instance, run:
 
 ```console
 unix> docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 -d --name arangodb-instance arangodb
@@ -87,7 +87,7 @@ unix> docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 -d --name arangodb-instance ar
 
 Will create and launch the arangodb docker instance as background process. The Identifier of the process is printed. By default ArangoDB listen on port 8529 for request and the image includes `EXPOSE 8529`. If you link an application container it is automatically available in the linked container. See the following examples.
 
-In order to get the IP arango listens on run:
+In order to get the IP arango listens on, run:
 
 ```console
 unix> docker inspect --format '{{ .NetworkSettings.IPAddress }}' arangodb-instance
@@ -95,7 +95,7 @@ unix> docker inspect --format '{{ .NetworkSettings.IPAddress }}' arangodb-instan
 
 ### Using the instance
 
-In order to use the running instance from an application, link the container
+In order to use the running instance from an application, link the container:
 
 ```console
 unix> docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 --name my-app --link arangodb-instance:db-link arangodb
@@ -113,7 +113,7 @@ These can be used to access the database.
 
 ### Exposing the port to the outside world
 
-If you want to expose the port to the outside world, run
+If you want to expose the port to the outside world, run:
 
 ```console
 unix> docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 -p 8529:8529 -d arangodb
@@ -126,17 +126,17 @@ ArangoDB listen on port 8529 for request and the image includes `EXPOSE
 
 The ArangoDB image provides several authentication methods which can be specified via environment variables (-e) when using `docker run`
 
-1.	ARANGO_RANDOM_ROOT_PASSWORD=1
+1.	`ARANGO_RANDOM_ROOT_PASSWORD=1`
 
 	Generate a random root password when starting. The password will be printed to stdout (may be inspected later using `docker logs`)
 
-2.	ARANGO_NO_AUTH=1
+2.	`ARANGO_NO_AUTH=1`
 
 	Disable authentication. Useful for testing.
 
 	**WARNING** Doing so in production will expose all your data. Make sure that ArangoDB is not directly accessible from the internet!
 
-3.	ARANGO_ROOT_PASSWORD=somepassword
+3.	`ARANGO_ROOT_PASSWORD=somepassword`
 
 	Specify your own root password.
 
@@ -144,15 +144,39 @@ Note: this way of specifying logins only applies to single server installations.
 
 ### Command line options
 
-In order to get a list of supported options, run
+You can pass arguments to the ArangoDB server by appending them to the end of the Docker command:
 
 ```console
-unix> docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 arangodb arangod --help
+unix> docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 arangodb --help
 ```
+
+The entrypoint script starts the `arangod` binary by default and forwards your arguments.
+
+You may also start other binaries, such as the ArangoShell:
+
+```console
+unix> docker run -it arangodb arangosh --server.database myDB ...
+```
+
+Note that you need to set up networking for containers if `arangod` runs in one container and you want to access it with `arangosh` running in another container. It is easier to execute it in the same container instead. Use `docker ps` to find out the container ID / name of a running container:
+
+```console
+unix> docker ps
+CONTAINER ID   IMAGE     COMMAND                 CREATED      STATUS      PORTS                   NAMES
+1234567890ab   arangodb  "/entrypoint.sh aran…"  2 hours ago  Up 2 hours  0.0.0.0:8529->8529/tcp  jolly_joker
+```
+
+Then use `docker exec` and the ID / name to run something inside of the existing container:
+
+```console
+unix> docker exec -it jolly_joker arangosh
+```
+
+See more information about [Configuration](https://www.arangodb.com/docs/stable/administration-configuration.html)
 
 ## Persistent Data
 
-ArangoDB supports two different storage engines as of ArangoDB 3.2. You can choose them while instantiating the container with the environment variable `ARANGO_STORAGE_ENGINE`. With `mmfiles` you choose the classic storage engine, `rocksdb` will choose the newly introduced storage engine based on [rocksdb](http://rocksdb.org/). The default choice is `mmfiles`.
+ArangoDB supports two different storage engines as of ArangoDB 3.2. You can choose them while instantiating the container with the environment variable `ARANGO_STORAGE_ENGINE`. With `mmfiles` you choose the classic storage engine, `rocksdb` will choose the newly introduced storage engine based on [RocksDB](http://rocksdb.org/). The default choice is `mmfiles`.
 
 ArangoDB use the volume `/var/lib/arangodb3` as database directory to store the collection data and the volume `/var/lib/arangodb3-apps` as apps directory to store any extensions. These directories are marked as docker volumes.
 
@@ -203,7 +227,7 @@ When deriving the image, you can control the instantiation via putting files int
 
 -	`*.sh` - files ending with .sh will be run as a bash shellscript.
 -	`*.js` - files will be executed with arangosh. You can specify additional arangosh arguments via the `ARANGOSH_ARGS` environment variable.
--	`dumps/` - in this directory you can place subdirectories containing database dumps generated using [arangodump](https://docs.arangodb.com/latest/Manual/Administration/Arangodump.html). They will be restored using [arangorestore](https://docs.arangodb.com/latest/Manual/Administration/Arangorestore.html).
+-	`dumps/` - in this directory you can place subdirectories containing database dumps generated using [arangodump](https://www.arangodb.com/docs/stable/programs-arangodump.html). They can be restored using [arangorestore](https://www.arangodb.com/docs/stable/programs-arangorestore.html).
 
 # License
 
