@@ -39,8 +39,8 @@ COPY . .
 RUN cargo install --path .
 
 FROM debian:buster-slim
-RUN apt-get update && apt-get install -y libssl
-COPY --from=builder /usr/src/myapp /usr/local/bin/myapp
+RUN apt-get update && apt-get install -y libssl-dev
+COPY --from=builder /usr/src/myapp/target/release/myapp /usr/local/bin/myapp
 CMD ["myapp"]
 ```
 
