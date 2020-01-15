@@ -33,14 +33,14 @@ $ docker run -it --rm --name my-running-app my-rust-app
 This creates an image that has all of the rust tooling for the image, which is 1.8gb. If you just want the compiled application:
 
 ```dockerfile
-FROM rust:1.39 as builder
+FROM rust:1.40 as builder
 WORKDIR /usr/src/myapp
 COPY . .
 RUN cargo install --path .
 
 FROM debian:buster-slim
 RUN apt-get update && apt-get install -y extra-runtime-dependencies
-COPY --from=builder /usr/src/myapp/target/release/myapp /usr/local/bin/myapp
+COPY --from=builder $CARGO_HOME/bin/myapp /usr/local/bin/myapp
 CMD ["myapp"]
 ```
 
