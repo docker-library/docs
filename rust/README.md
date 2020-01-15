@@ -82,18 +82,18 @@ $ docker run -it --rm --name my-running-app my-rust-app
 This creates an image that has all of the rust tooling for the image, which is 1.8gb. If you just want the compiled application:
 
 ```dockerfile
-FROM rust:1.39 as builder
+FROM rust:1.40 as builder
 WORKDIR /usr/src/myapp
 COPY . .
 RUN cargo install --path .
 
 FROM debian:buster-slim
-RUN apt-get update && apt-get install -y libssl
-COPY --from=builder /usr/src/myapp /usr/local/bin/myapp
+RUN apt-get update && apt-get install -y extra-runtime-dependencies
+COPY --from=builder /usr/local/cargo/bin/myapp /usr/local/bin/myapp
 CMD ["myapp"]
 ```
 
-Note: Some shared libraries may need to be installed as shown in the installation of the libssl line above.
+Note: Some shared libraries may need to be installed as shown in the installation of the `extra-runtime-dependencies` line above.
 
 This method will create an image that is less than 200mb. If you switch to using the Alpine-based rust image, you might be able to save another 60mb.
 
