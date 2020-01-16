@@ -16,9 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.6.6`, `7.6`, `latest`](https://github.com/convertigo/convertigo/blob/cba10f7401396ca6249bad74ba041837077f9738/docker/default/Dockerfile)
--	[`7.6.6-slim`, `7.6-slim`, `slim`](https://github.com/convertigo/convertigo/blob/cba10f7401396ca6249bad74ba041837077f9738/docker/slim/Dockerfile)
--	[`7.6.6-openj9`, `7.6-openj9`, `openj9`](https://github.com/convertigo/convertigo/blob/cba10f7401396ca6249bad74ba041837077f9738/docker/openj9/Dockerfile)
+-	[`7.7.0`, `7.7`, `latest`](https://github.com/convertigo/convertigo/blob/ff803d19e19d8be0712f16a39f07142c587e6a34/docker/default/Dockerfile)
 
 # Quick reference
 
@@ -192,18 +190,6 @@ $ cd c8oMBaaS
 $ wget https://raw.githubusercontent.com/convertigo/docker/master/compose/mbaas/docker-compose.yml
 $ docker-compose up -d
 ```
-
-# Image Variants
-
-The `convertigo` images come in many flavors, each designed for a specific use case.
-
-## `convertigo:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-## `convertigo:<version>-slim`
-
-This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `convertigo`. Unless you are working in an environment where *only* the `convertigo` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
 
 # License
 
