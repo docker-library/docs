@@ -1,0 +1,15 @@
+version: '3.1'
+
+services:
+  db:
+    image: mariadb:10.3
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: notSecureChangeMe
+
+  phpmyadmin:
+    image: phpmyadmin
+    ports:
+      - 8080:80
+    environment:
+      - PMA_ARBITRARY=1
