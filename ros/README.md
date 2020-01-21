@@ -28,8 +28,6 @@ WARNING:
 -	[`melodic-ros-base-stretch`](https://github.com/osrf/docker_images/blob/460ddc4707530c2179788e2100d5c624cf2af3d7/ros/melodic/debian/stretch/ros-base/Dockerfile)
 -	[`melodic-robot-stretch`](https://github.com/osrf/docker_images/blob/460ddc4707530c2179788e2100d5c624cf2af3d7/ros/melodic/debian/stretch/robot/Dockerfile)
 -	[`melodic-perception-stretch`](https://github.com/osrf/docker_images/blob/460ddc4707530c2179788e2100d5c624cf2af3d7/ros/melodic/debian/stretch/perception/Dockerfile)
--	[`crystal-ros-core`, `crystal-ros-core-bionic`](https://github.com/osrf/docker_images/blob/557e1a220d460b83402b7ed44b5cfcfb7e39524e/ros/crystal/ubuntu/bionic/ros-core/Dockerfile)
--	[`crystal-ros-base`, `crystal-ros-base-bionic`, `crystal`](https://github.com/osrf/docker_images/blob/557e1a220d460b83402b7ed44b5cfcfb7e39524e/ros/crystal/ubuntu/bionic/ros-base/Dockerfile)
 -	[`dashing-ros-core`, `dashing-ros-core-bionic`](https://github.com/osrf/docker_images/blob/d188a5a15dba3d3fa266e4578c1ed2e1b4421c72/ros/dashing/ubuntu/bionic/ros-core/Dockerfile)
 -	[`dashing-ros-base`, `dashing-ros-base-bionic`, `dashing`](https://github.com/osrf/docker_images/blob/d188a5a15dba3d3fa266e4578c1ed2e1b4421c72/ros/dashing/ubuntu/bionic/ros-base/Dockerfile)
 -	[`eloquent-ros-core`, `eloquent-ros-core-bionic`](https://github.com/osrf/docker_images/blob/9b63c2f2a11ef18c93f7c8f35770625fc48181d8/ros/eloquent/ubuntu/bionic/ros-core/Dockerfile)
