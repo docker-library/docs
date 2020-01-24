@@ -60,7 +60,7 @@ A safe home for all your data. Access & share your files, calendars, contacts, m
 
 > [Nextcloud.com](https://nextcloud.com/)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/e563b6cd3d797e2b3695576d20041227d1fb7536/nextcloud/logo.svg?sanitize=true)
+![logo](https://raw.githubusercontent.com/docker-library/docs/eabcf59e64b4395e681a7f7a9773bd213c9f3678/nextcloud/logo.svg?sanitize=true)
 
 # How to use this image
 
