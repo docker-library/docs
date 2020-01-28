@@ -18,8 +18,10 @@ WARNING:
 
 -	[`6.0.3`, `6.0`](https://github.com/Lightstreamer/Docker/blob/eeab1ae534273b1b05c973e577a1f3eec8d58427/6.0/Dockerfile)
 -	[`6.1.0`, `6.1`, `6`](https://github.com/Lightstreamer/Docker/blob/eeab1ae534273b1b05c973e577a1f3eec8d58427/6.1/Dockerfile)
--	[`7.0.3-jdk8-openjdk`, `7.0-jdk8-openjdk`, `7-jdk8-openjdk`, `7.0.3-jdk8`, `7.0-jdk8`, `7-jdk8`](https://github.com/Lightstreamer/Docker/blob/4ffe8753677fe6d6fea3c0e8cdc44383b278a0b7/7.0/jdk8/Dockerfile)
--	[`7.0.3-jdk11-openjdk`, `7.0-jdk11-openjdk`, `7-jdk11-openjdk`, `7.0.3-jdk11`, `7.0-jdk11`, `7-jdk11`, `7.0.3`, `7.0`, `7`, `latest`](https://github.com/Lightstreamer/Docker/blob/3efee7177cc5213bf17ad12ff1ba518f5b58c1f0/7.0/jdk11/Dockerfile)
+-	[`7.0.3-jdk8-openjdk`, `7.0-jdk8-openjdk`, `7.0.3-jdk8`, `7.0-jdk8`](https://github.com/Lightstreamer/Docker/blob/4ffe8753677fe6d6fea3c0e8cdc44383b278a0b7/7.0/jdk8/Dockerfile)
+-	[`7.0.3-jdk11-openjdk`, `7.0-jdk11-openjdk`, `7.0.3-jdk11`, `7.0-jdk11`, `7.0.3`, `7.0`](https://github.com/Lightstreamer/Docker/blob/3efee7177cc5213bf17ad12ff1ba518f5b58c1f0/7.0/jdk11/Dockerfile)
+-	[`7.1.0-jdk8-openjdk`, `7.1-jdk8-openjdk`, `7-jdk8-openjdk`, `7.1.0-jdk8`, `7.1-jdk8`, `7-jdk8`](https://github.com/Lightstreamer/Docker/blob/45001c033ed1837a9374a9285b7d2e8acfee6dca/7.1/jdk8/Dockerfile)
+-	[`7.1.0-jdk11-openjdk`, `7.1-jdk11-openjdk`, `7-jdk11-openjdk`, `7.1.0-jdk11`, `7.1-jdk11`, `7-jdk11`, `7.1.0`, `7.1`, `7`, `latest`](https://github.com/Lightstreamer/Docker/blob/45001c033ed1837a9374a9285b7d2e8acfee6dca/7.1/jdk11/Dockerfile)
 
 # Quick reference
 
