@@ -37,7 +37,7 @@ If you'd like to be able to access the instance from the host without the contai
 $ docker run --name some-%%REPO%% --link some-mysql:mysql -p 8080:80 -d %%IMAGE%%
 ```
 
-Then, access it via `http://localhost:8080` or `http://host-ip:8080` in a browser.
+Then, access it via `http://localhost:8080/admin/` or `http://host-ip:8080/admin/` in a browser.
 
 If you'd like to use an external database instead of a linked `mysql` container, specify the hostname and port with `YOURLS_DB_HOST` along with the password in `YOURLS_DB_PASS` and the username in `YOURLS_DB_USER` (if it is something other than `root`):
 
@@ -48,7 +48,7 @@ $ docker run --name some-%%REPO%%s -e YOURLS_DB_HOST=10.1.2.3:3306 \
 
 ## %%STACK%%
 
-Run `docker stack deploy -c stack.yml %%REPO%%` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
+Run `docker stack deploy -c stack.yml %%REPO%%` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080/admin/`, `http://localhost:8080/admin/`, or `http://host-ip:8080/admin/` (as appropriate).
 
 ## Adding additional libraries / extensions
 
