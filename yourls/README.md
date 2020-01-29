@@ -84,7 +84,7 @@ If you'd like to be able to access the instance from the host without the contai
 $ docker run --name some-yourls --link some-mysql:mysql -p 8080:80 -d yourls
 ```
 
-Then, access it via `http://localhost:8080` or `http://host-ip:8080` in a browser.
+Then, access it via `http://localhost:8080/admin/` or `http://host-ip:8080/admin/` in a browser.
 
 If you'd like to use an external database instead of a linked `mysql` container, specify the hostname and port with `YOURLS_DB_HOST` along with the password in `YOURLS_DB_PASS` and the username in `YOURLS_DB_USER` (if it is something other than `root`):
 
@@ -122,7 +122,7 @@ services:
 
 [![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/be1a84b44ec3c028aa0ac5a9c8e413e43dfe05e4/yourls/stack.yml)
 
-Run `docker stack deploy -c stack.yml yourls` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
+Run `docker stack deploy -c stack.yml yourls` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080/admin/`, `http://localhost:8080/admin/`, or `http://host-ip:8080/admin/` (as appropriate).
 
 ## Adding additional libraries / extensions
 
