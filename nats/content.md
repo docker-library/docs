@@ -34,8 +34,8 @@ The routing protocol has been dramatically improved and adds support for account
 # Check "docker run" for more information.
 
 $ docker run -d --name nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 %%IMAGE%%
-[INF] Starting nats-server version 2.0.4
-[INF] Git commit [c8ca58e]
+[INF] Starting nats-server version 2.1.4
+[INF] Git commit [fb009af]
 [INF] Starting http monitor on 0.0.0.0:8222
 [INF] Listening for client connections on 0.0.0.0:4222
 [INF] Server id is NCEZYE4WBASAAYIPSVWVLU52TXVEN52TDN3KKHWDV33PQ32A6TLBQ7EA
@@ -52,9 +52,9 @@ $ docker run -d --name=nats-2 --link nats-main -p 4222:4222 -p 6222:6222 -p 8222
 
 # If you want to verify the routes are connected, try this instead:
 $ docker run -d --name=nats-2 --link nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 %%IMAGE%% -c nats-server.conf --routes=nats-route://ruser:T0pS3cr3t@nats-main:6222 -DV
-[INF] Starting nats-server version 2.0.4
-[DBG] Go build version go1.12.8
-[INF] Git commit [c8ca58e]
+[INF] Starting nats-server version 2.1.4
+[DBG] Go build version go1.13.7
+[INF] Git commit [fb009af]
 [INF] Starting http monitor on 0.0.0.0:8222
 [INF] Listening for client connections on 0.0.0.0:4222
 [INF] Server id is NCCJ57DJMZETVT3QIIUQR7MIU5FXCCX7QHTYRDKWNMNYIG43K3Y74J3X
