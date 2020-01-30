@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`11`, `11.10`, `11.10.2`, `11-mysql-tomcat`, `11.10-mysql-tomcat`, `11.10.2-mysql-tomcat`, `lts-mysql-tomcat`, `lts-mysql`, `lts`, `mysql-tomcat`](https://github.com/xwiki-contrib/docker-xwiki/blob/ab4e20f0ae8562b801f7f4901b931b8d9405b697/11/mysql-tomcat/Dockerfile)
--	[`11-postgres-tomcat`, `11.10-postgres-tomcat`, `11.10.2-postgres-tomcat`, `lts-postgres-tomcat`, `lts-postgres`, `postgres-tomcat`](https://github.com/xwiki-contrib/docker-xwiki/blob/ab4e20f0ae8562b801f7f4901b931b8d9405b697/11/postgres-tomcat/Dockerfile)
--	[`12`, `12.0`, `12-mysql-tomcat`, `12.0-mysql-tomcat`, `stable-mysql-tomcat`, `stable-mysql`, `stable`, `latest`](https://github.com/xwiki-contrib/docker-xwiki/blob/135e858f6ed37d581f929b10a2f5d1ed83f759d4/12/mysql-tomcat/Dockerfile)
--	[`12-postgres-tomcat`, `12.0-postgres-tomcat`, `stable-postgres-tomcat`, `stable-postgres`](https://github.com/xwiki-contrib/docker-xwiki/blob/135e858f6ed37d581f929b10a2f5d1ed83f759d4/12/postgres-tomcat/Dockerfile)
+-	[`11`, `11.10`, `11.10.2`, `11-mysql-tomcat`, `11.10-mysql-tomcat`, `11.10.2-mysql-tomcat`, `lts-mysql-tomcat`, `lts-mysql`, `lts`](https://github.com/xwiki-contrib/docker-xwiki/blob/ab4e20f0ae8562b801f7f4901b931b8d9405b697/11/mysql-tomcat/Dockerfile)
+-	[`11-postgres-tomcat`, `11.10-postgres-tomcat`, `11.10.2-postgres-tomcat`, `lts-postgres-tomcat`, `lts-postgres`](https://github.com/xwiki-contrib/docker-xwiki/blob/ab4e20f0ae8562b801f7f4901b931b8d9405b697/11/postgres-tomcat/Dockerfile)
+-	[`12`, `12.0`, `12-mysql-tomcat`, `12.0-mysql-tomcat`, `mysql-tomcat`, `stable-mysql-tomcat`, `stable-mysql`, `stable`, `latest`](https://github.com/xwiki-contrib/docker-xwiki/blob/135e858f6ed37d581f929b10a2f5d1ed83f759d4/12/mysql-tomcat/Dockerfile)
+-	[`12-postgres-tomcat`, `12.0-postgres-tomcat`, `postgres-tomcat`, `stable-postgres-tomcat`, `stable-postgres`](https://github.com/xwiki-contrib/docker-xwiki/blob/135e858f6ed37d581f929b10a2f5d1ed83f759d4/12/postgres-tomcat/Dockerfile)
 
 # Quick reference
 

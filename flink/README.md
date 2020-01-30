@@ -18,8 +18,8 @@ WARNING:
 
 -	[`1.8.3-scala_2.11`, `1.8-scala_2.11`](https://github.com/docker-flink/docker-flink/blob/4d85b71b7cf9fa4a38f8682ed13aa0f55445e32e/1.8/scala_2.11-debian/Dockerfile)
 -	[`1.8.3-scala_2.12`, `1.8-scala_2.12`, `1.8.3`, `1.8`](https://github.com/docker-flink/docker-flink/blob/4d85b71b7cf9fa4a38f8682ed13aa0f55445e32e/1.8/scala_2.12-debian/Dockerfile)
--	[`1.9.1-scala_2.11`, `1.9-scala_2.11`, `scala_2.11`](https://github.com/docker-flink/docker-flink/blob/8cd66b6f89c13134270a4e865a40c2e5e72cfa21/1.9/scala_2.11-debian/Dockerfile)
--	[`1.9.1-scala_2.12`, `1.9-scala_2.12`, `scala_2.12`, `1.9.1`, `1.9`, `latest`](https://github.com/docker-flink/docker-flink/blob/8cd66b6f89c13134270a4e865a40c2e5e72cfa21/1.9/scala_2.12-debian/Dockerfile)
+-	[`1.9.2-scala_2.11`, `1.9-scala_2.11`, `scala_2.11`](https://github.com/docker-flink/docker-flink/blob/9e0e37ff1bf72937ca72655d257778ed7ba4ebd0/1.9/scala_2.11-debian/Dockerfile)
+-	[`1.9.2-scala_2.12`, `1.9-scala_2.12`, `scala_2.12`, `1.9.2`, `1.9`, `latest`](https://github.com/docker-flink/docker-flink/blob/9e0e37ff1bf72937ca72655d257778ed7ba4ebd0/1.9/scala_2.12-debian/Dockerfile)
 
 # Quick reference
 
