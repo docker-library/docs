@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.3`, `6.3.1-1`, `6.3.1`, `6`, `latest`, `fresh`](https://github.com/varnish/docker-varnish/blob/fe5dc755a0325fd106f798de97d30dbd9d9ce836/fresh/debian/Dockerfile)
--	[`6.0`, `6.0.5-1`, `6.0.5`, `stable`](https://github.com/varnish/docker-varnish/blob/fe5dc755a0325fd106f798de97d30dbd9d9ce836/stable/debian/Dockerfile)
+-	[`6.3`, `6.3.2-1`, `6.3.2`, `6`, `latest`, `fresh`](https://github.com/varnish/docker-varnish/blob/a177fa702cf191997094aec9b20951c2012bdc17/fresh/debian/Dockerfile)
+-	[`6.0`, `6.0.6-1`, `6.0.6`, `stable`](https://github.com/varnish/docker-varnish/blob/a177fa702cf191997094aec9b20951c2012bdc17/stable/debian/Dockerfile)
 
 # Quick reference
 
