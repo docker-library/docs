@@ -25,7 +25,9 @@ WARNING:
 -	[`gzserver9-stretch`](https://github.com/osrf/docker_images/blob/e02819ea8bb6838c133d476a7f41f5079836eb4a/gazebo/9/debian/stretch/gzserver9/Dockerfile)
 -	[`libgazebo9-stretch`](https://github.com/osrf/docker_images/blob/e02819ea8bb6838c133d476a7f41f5079836eb4a/gazebo/9/debian/stretch/libgazebo9/Dockerfile)
 -	[`gzserver10`, `gzserver10-bionic`](https://github.com/osrf/docker_images/blob/f1b7ad09fa3bc6b88621c5f4ff2da9669c9ccb3e/gazebo/10/ubuntu/bionic/gzserver10/Dockerfile)
--	[`libgazebo10`, `libgazebo10-bionic`, `latest`](https://github.com/osrf/docker_images/blob/f1b7ad09fa3bc6b88621c5f4ff2da9669c9ccb3e/gazebo/10/ubuntu/bionic/libgazebo10/Dockerfile)
+-	[`libgazebo10`, `libgazebo10-bionic`](https://github.com/osrf/docker_images/blob/f1b7ad09fa3bc6b88621c5f4ff2da9669c9ccb3e/gazebo/10/ubuntu/bionic/libgazebo10/Dockerfile)
+-	[`gzserver11`, `gzserver11-bionic`](https://github.com/osrf/docker_images/blob/bd0ef992496452d93ea929ea5921b123acdab58c/gazebo/11/ubuntu/bionic/gzserver11/Dockerfile)
+-	[`libgazebo11`, `libgazebo11-bionic`, `latest`](https://github.com/osrf/docker_images/blob/bd0ef992496452d93ea929ea5921b123acdab58c/gazebo/11/ubuntu/bionic/libgazebo11/Dockerfile)
 
 # Quick reference
 
@@ -39,7 +41,7 @@ WARNING:
 	[the Open Source Robotics Foundation](https://github.com/osrf/docker_images)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/gazebo/), [`arm32v7`](https://hub.docker.com/r/arm32v7/gazebo/), [`arm64v8`](https://hub.docker.com/r/arm64v8/gazebo/)
+	[`amd64`](https://hub.docker.com/r/amd64/gazebo/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/gazebo/` directory](https://github.com/docker-library/repo-info/blob/master/repos/gazebo) ([history](https://github.com/docker-library/repo-info/commits/master/repos/gazebo))  
