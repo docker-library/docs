@@ -21,6 +21,7 @@ WARNING:
 ## Simple Tags
 
 -	[`1.14rc1-buster`, `1.14-rc-buster`, `rc-buster`](https://github.com/docker-library/golang/blob/06bc0446f48dfda05b3548bd1f64eb108471fc6b/1.14-rc/buster/Dockerfile)
+-	[`1.14rc1-stretch`, `1.14-rc-stretch`, `rc-stretch`](https://github.com/docker-library/golang/blob/dd09f367e097e0bd45467652072c3951c37280cb/1.14-rc/stretch/Dockerfile)
 -	[`1.14rc1-alpine3.11`, `1.14-rc-alpine3.11`, `rc-alpine3.11`, `1.14rc1-alpine`, `1.14-rc-alpine`, `rc-alpine`](https://github.com/docker-library/golang/blob/06bc0446f48dfda05b3548bd1f64eb108471fc6b/1.14-rc/alpine3.11/Dockerfile)
 -	[`1.14rc1-windowsservercore-ltsc2016`, `1.14-rc-windowsservercore-ltsc2016`, `rc-windowsservercore-ltsc2016`](https://github.com/docker-library/golang/blob/06bc0446f48dfda05b3548bd1f64eb108471fc6b/1.14-rc/windows/windowsservercore-ltsc2016/Dockerfile)
 -	[`1.14rc1-windowsservercore-1809`, `1.14-rc-windowsservercore-1809`, `rc-windowsservercore-1809`](https://github.com/docker-library/golang/blob/06bc0446f48dfda05b3548bd1f64eb108471fc6b/1.14-rc/windows/windowsservercore-1809/Dockerfile)
