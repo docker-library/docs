@@ -16,18 +16,18 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`12.1`, `12`, `latest`](https://github.com/docker-library/postgres/blob/0d0485cb02e526f5a240b7740b46c35404aaf13f/12/Dockerfile)
--	[`12.1-alpine`, `12-alpine`, `alpine`](https://github.com/docker-library/postgres/blob/c4b019526a25d1300de77b9699d53ad187cf0dcf/12/alpine/Dockerfile)
--	[`11.6`, `11`](https://github.com/docker-library/postgres/blob/0d0485cb02e526f5a240b7740b46c35404aaf13f/11/Dockerfile)
--	[`11.6-alpine`, `11-alpine`](https://github.com/docker-library/postgres/blob/c4b019526a25d1300de77b9699d53ad187cf0dcf/11/alpine/Dockerfile)
--	[`10.11`, `10`](https://github.com/docker-library/postgres/blob/0d0485cb02e526f5a240b7740b46c35404aaf13f/10/Dockerfile)
--	[`10.11-alpine`, `10-alpine`](https://github.com/docker-library/postgres/blob/c4b019526a25d1300de77b9699d53ad187cf0dcf/10/alpine/Dockerfile)
--	[`9.6.16`, `9.6`, `9`](https://github.com/docker-library/postgres/blob/0d0485cb02e526f5a240b7740b46c35404aaf13f/9.6/Dockerfile)
--	[`9.6.16-alpine`, `9.6-alpine`, `9-alpine`](https://github.com/docker-library/postgres/blob/c4b019526a25d1300de77b9699d53ad187cf0dcf/9.6/alpine/Dockerfile)
--	[`9.5.20`, `9.5`](https://github.com/docker-library/postgres/blob/0d0485cb02e526f5a240b7740b46c35404aaf13f/9.5/Dockerfile)
--	[`9.5.20-alpine`, `9.5-alpine`](https://github.com/docker-library/postgres/blob/c4b019526a25d1300de77b9699d53ad187cf0dcf/9.5/alpine/Dockerfile)
--	[`9.4.25`, `9.4`](https://github.com/docker-library/postgres/blob/0d0485cb02e526f5a240b7740b46c35404aaf13f/9.4/Dockerfile)
--	[`9.4.25-alpine`, `9.4-alpine`](https://github.com/docker-library/postgres/blob/c4b019526a25d1300de77b9699d53ad187cf0dcf/9.4/alpine/Dockerfile)
+-	[`12.2`, `12`, `latest`](https://github.com/docker-library/postgres/blob/10fe2ae44bfcc7e26d05e898f3baf3a019c82dd7/12/Dockerfile)
+-	[`12.2-alpine`, `12-alpine`, `alpine`](https://github.com/docker-library/postgres/blob/691a785b0bcb7aea28225a17e794a1edeedf531e/12/alpine/Dockerfile)
+-	[`11.7`, `11`](https://github.com/docker-library/postgres/blob/505eda129119afc4cfc86fcacd407a31e9ab22c0/11/Dockerfile)
+-	[`11.7-alpine`, `11-alpine`](https://github.com/docker-library/postgres/blob/d3908b054de55e0f6bdcd2ec01a20a278022d5b1/11/alpine/Dockerfile)
+-	[`10.12`, `10`](https://github.com/docker-library/postgres/blob/d21499fa3f55639c6751423e55ff630516bf34e3/10/Dockerfile)
+-	[`10.12-alpine`, `10-alpine`](https://github.com/docker-library/postgres/blob/8bebabd5bcfa166ff8ac29a5166d2c1eb6e36002/10/alpine/Dockerfile)
+-	[`9.6.17`, `9.6`, `9`](https://github.com/docker-library/postgres/blob/9558084c73fd9bb5e3c7d8048e6a46f9e18a6ea2/9.6/Dockerfile)
+-	[`9.6.17-alpine`, `9.6-alpine`, `9-alpine`](https://github.com/docker-library/postgres/blob/06bd57c3c36caa0c8b629e2f4b54a5e46dafa901/9.6/alpine/Dockerfile)
+-	[`9.5.21`, `9.5`](https://github.com/docker-library/postgres/blob/f45fb749594bfe5ea893fe8b3340757600f03f7e/9.5/Dockerfile)
+-	[`9.5.21-alpine`, `9.5-alpine`](https://github.com/docker-library/postgres/blob/33e66cdc27fb5558266b52658c081226d2272995/9.5/alpine/Dockerfile)
+-	[`9.4.26`, `9.4`](https://github.com/docker-library/postgres/blob/ef7af1266db5b895a2981aeba25accf074d82a6b/9.4/Dockerfile)
+-	[`9.4.26-alpine`, `9.4-alpine`](https://github.com/docker-library/postgres/blob/473b58e971e2eb0351af12288dc4976bd3c591ad/9.4/alpine/Dockerfile)
 
 # Quick reference
 
@@ -132,11 +132,11 @@ The PostgreSQL image uses several environment variables which are easy to miss. 
 
 ### `POSTGRES_PASSWORD`
 
-This environment variable is recommended for you to use the PostgreSQL image. This environment variable sets the superuser password for PostgreSQL. The default superuser is defined by the `POSTGRES_USER` environment variable.
+This environment variable is normally required for you to use the PostgreSQL image. This environment variable sets the superuser password for PostgreSQL. The default superuser is defined by the `POSTGRES_USER` environment variable.
 
 Note 1: The PostgreSQL image sets up `trust` authentication locally so you may notice a password is not required when connecting from `localhost` (inside the same container). However, a password will be required if connecting from a different host/container.
 
-Note 2: This variable defines the superuser password in the PostgreSQL instance, as set by the `initdb` script during inital container startup. It has no effect on the `PGPASSWORD` environment variable that may be used by the `psql` client at runtime, as described at [https://www.postgresql.org/docs/10/static/libpq-envars.html](https://www.postgresql.org/docs/10/static/libpq-envars.html). `PGPASSWORD`, if used, will be specified as a separate environment variable.
+Note 2: This variable defines the superuser password in the PostgreSQL instance, as set by the `initdb` script during initial container startup. It has no effect on the `PGPASSWORD` environment variable that may be used by the `psql` client at runtime, as described at [https://www.postgresql.org/docs/10/static/libpq-envars.html](https://www.postgresql.org/docs/10/static/libpq-envars.html). `PGPASSWORD`, if used, will be specified as a separate environment variable.
 
 ### `POSTGRES_USER`
 
@@ -155,6 +155,18 @@ This optional environment variable can be used to send arguments to `postgres in
 This optional environment variable can be used to define another location for the Postgres transaction log. By default the transaction log is stored in a subdirectory of the main Postgres data folder (`PGDATA`). Sometimes it can be desireable to store the transaction log in a different directory which may be backed by storage with different performance or reliability characteristics.
 
 **Note:** on PostgreSQL 9.x, this variable is `POSTGRES_INITDB_XLOGDIR` (reflecting [the changed name of the `--xlogdir` flag to `--waldir` in PostgreSQL 10+](https://wiki.postgresql.org/wiki/New_in_postgres_10#Renaming_of_.22xlog.22_to_.22wal.22_Globally_.28and_location.2Flsn.29)).
+
+### `POSTGRES_HOST_AUTH_METHOD`
+
+This optional variable can be used to control the `auth-method` for `host` connections for `all` databases, `all` users, and `all` addresses. If unspecified then [`md5` password authentication](https://www.postgresql.org/docs/current/auth-password.html) is used. On an uninitialized database, this will populate `pg_hba.conf` via this approximate line:
+
+```console
+echo "host all all all $POSTGRES_HOST_AUTH_METHOD" >> pg_hba.conf
+```
+
+It is not recommended to use [`trust`](https://www.postgresql.org/docs/current/auth-trust.html) since it allows anyone to connect without a password, even if one is set (like via `POSTGRES_PASSWORD`).
+
+See the PostgreSQL documentation on [`pg_hba.conf`](https://www.postgresql.org/docs/current/auth-pg-hba-conf.html) for more information about possible values and their meanings.
 
 ### `PGDATA`
 
@@ -210,13 +222,13 @@ There are many ways to set PostgreSQL server configuration. For information on w
 	$ # customize the config
 
 	$ # run postgres with custom config
-	$ docker run -d --name some-postgres -v "$PWD/my-postgres.conf":/etc/postgresql/postgresql.conf postgres -c 'config_file=/etc/postgresql/postgresql.conf'
+	$ docker run -d --name some-postgres -v "$PWD/my-postgres.conf":/etc/postgresql/postgresql.conf -e POSTGRES_PASSWORD=mysecretpassword postgres -c 'config_file=/etc/postgresql/postgresql.conf'
 	```
 
 -	Set options directly on the run line. The entrypoint script is made so that any options passed to the docker command will be passed along to the `postgres` server daemon. From the [docs](https://www.postgresql.org/docs/current/static/app-postgres.html) we see that any option available in a `.conf` file can be set via `-c`.
 
 	```console
-	$ docker run -d --name some-postgres postgres -c 'shared_buffers=256MB' -c 'max_connections=200'
+	$ docker run -d --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword postgres -c 'shared_buffers=256MB' -c 'max_connections=200'
 	```
 
 ## Locale Customization
@@ -244,11 +256,11 @@ As of [docker-library/postgres#253](https://github.com/docker-library/postgres/p
 The main caveat to note is that `postgres` doesn't care what UID it runs as (as long as the owner of `/var/lib/postgresql/data` matches), but `initdb` *does* care (and needs the user to exist in `/etc/passwd`):
 
 ```console
-$ docker run -it --rm --user www-data postgres
+$ docker run -it --rm --user www-data -e POSTGRES_PASSWORD=mysecretpassword postgres
 The files belonging to this database system will be owned by user "www-data".
 ...
 
-$ docker run -it --rm --user 1000:1000 postgres
+$ docker run -it --rm --user 1000:1000 -e POSTGRES_PASSWORD=mysecretpassword postgres
 initdb: could not look up effective user ID 1000: user does not exist
 ```
 
@@ -259,7 +271,7 @@ The three easiest ways to get around this:
 2.	bind-mount `/etc/passwd` read-only from the host (if the UID you desire is a valid user on your host):
 
 	```console
-	$ docker run -it --rm --user "$(id -u):$(id -g)" -v /etc/passwd:/etc/passwd:ro postgres
+	$ docker run -it --rm --user "$(id -u):$(id -g)" -v /etc/passwd:/etc/passwd:ro -e POSTGRES_PASSWORD=mysecretpassword postgres
 	The files belonging to this database system will be owned by user "jsmith".
 	...
 	```
@@ -268,7 +280,7 @@ The three easiest ways to get around this:
 
 	```console
 	$ docker volume create pgdata
-	$ docker run -it --rm -v pgdata:/var/lib/postgresql/data postgres
+	$ docker run -it --rm -v pgdata:/var/lib/postgresql/data -e POSTGRES_PASSWORD=mysecretpassword postgres
 	The files belonging to this database system will be owned by user "postgres".
 	...
 	( once it's finished initializing successfully and is waiting for connections, stop it )
@@ -301,7 +313,7 @@ The Docker documentation is a good starting point for understanding the differen
 2.	Start your `postgres` container like this:
 
 	```console
-	$ docker run --name some-postgres -v /my/own/datadir:/var/lib/postgresql/data -d postgres:tag
+	$ docker run --name some-postgres -v /my/own/datadir:/var/lib/postgresql/data -e POSTGRES_PASSWORD=mysecretpassword -d postgres:tag
 	```
 
 The `-v /my/own/datadir:/var/lib/postgresql/data` part of the command mounts the `/my/own/datadir` directory from the underlying host system as `/var/lib/postgresql/data` inside the container, where PostgreSQL by default will write its data files.
