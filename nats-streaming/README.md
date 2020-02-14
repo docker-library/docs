@@ -28,6 +28,7 @@ WARNING:
 
 -	`0.17.0`, `latest`:
 	-	[`0.17.0-linux`](https://github.com/nats-io/nats-streaming-docker/blob/9716618a61deba8a7e28b69d53d95d698bde5117/amd64/Dockerfile)
+	-	[`0.17.0-nanoserver-1809`](https://github.com/nats-io/nats-streaming-docker/blob/9716618a61deba8a7e28b69d53d95d698bde5117/windows/nanoserver-1809/Dockerfile)
 
 # Quick reference
 
