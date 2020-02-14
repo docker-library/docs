@@ -1,10 +1,5 @@
 The Dockerfiles and associated scripts are licensed under the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0.html).
 
-Licenses for the products installed within the images are as follows:
+Starting with WebSphere Liberty 18.0.0.3, the WebSphere Liberty Docker images found in Docker Hub contain an International License Agreement for Non-Warranted Programs (ILAN) license which allows entitled WebSphere Liberty customers to use these same images under an International Program License Agreement (IPLA) term.
 
--	[IBM JRE](http://www14.software.ibm.com/cgi-bin/weblap/lap.pl?la_formnum=&li_formnum=L-JWOD-9SYNCP&title=IBM%C2%AE+SDK%2C+Java+Technology+Edition%2C+Version+8.0&l=en) (International License Agreement for Non-Warranted Programs)
--	[IBM WebSphere Application Server](https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/license/base_ilan/ilan/19.0.0.9/lafiles/en.html) in the non-beta images ILAN (International License Agreement for Non-Warranted Programs).
--	[IBM WebSphere Application Server Liberty Beta](https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/downloads/wlp/beta/lafiles/en.html) in the `beta` image (International License Agreement for Early Release of Programs)
--	[Non IBM License](https://github.com/WASdev/ci.docker/blob/master/ga/developer/kernel/non_ibm_license.html)
-
-Note: These licenses do not permit further distribution and that the terms for WebSphere Application Server in the non-beta images restrict usage to a developer machine or build server only, or subject to a maximum 2 gigabyte heap usage across all instances. Instructions are available to enable entitled customers to [upgrade](https://github.com/WASdev/ci.docker/tree/master/ga/production-upgrade) the Docker Hub image for production use or [build](https://github.com/WASdev/ci.docker/tree/master/ga/production-install) their own production licensed image.
+For customers that still wish to apply a WebSphere Application Server license to their docker image can do so following [these instructions](https://github.com/WASdev/ci.docker/tree/master/ga/production-upgrade).
