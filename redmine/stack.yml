@@ -4,8 +4,6 @@ services:
 
   redmine:
     image: redmine
-    deploy:
-      replicas: 3
     restart: always
     ports:
       - 8080:3000
