@@ -1,6 +1,6 @@
 **Tags and versioning warning:**
 
-Pinning a tag (even to the patch level) does not prevent breaking changes.  See [Versioning Warning] below.
+Pinning a tag (even to the patch level) does not prevent breaking changes.  See [Avoiding Breaking Changes](#avoiding-breaking-changes) below.
 
 # What is PostgreSQL?
 
@@ -45,7 +45,7 @@ postgres=# SELECT 1;
 
 Run `docker stack deploy -c stack.yml %%REPO%%` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
 
-# Versioning Warning:
+# Avoiding Breaking Changes
 
 ### Pin a digest to avoid breaking changes
 Docker "Official Images" use tags that correspond to the version of the application they run (in our case, Postgres) and therefore do not typically have any way of indicating changes (even breaking changes) to the image configuration in their tags or "version numbers".  Because of this, it is highly recommended that you "pin" a specific SHA digest of this image wherever it is used if you need to avoid breaking changes.
