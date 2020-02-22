@@ -112,6 +112,7 @@ services:
     environment:
       REDMINE_DB_MYSQL: db
       REDMINE_DB_PASSWORD: example
+      REDMINE_SECRET_KEY_BASE: supersecretkey
 
   db:
     image: mysql:5.7
@@ -121,7 +122,7 @@ services:
       MYSQL_DATABASE: redmine
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/e24f39cddf21560cf0a24f149059ff23640b0f16/redmine/stack.yml)
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/cd78c2e058c5a648c0ef42590943736612332666/redmine/stack.yml)
 
 Run `docker stack deploy -c stack.yml redmine` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
 
@@ -197,7 +198,7 @@ This variable allows you to control if `rake redmine:plugins:migrate` is run on 
 
 ### `REDMINE_SECRET_KEY_BASE`
 
-This variable is used to create an initial `config/secrets.yml` and set the `secret_key_base` value, which is "used by Rails to encode cookies storing session data thus preventing their tampering. Generating a new secret token invalidates all existing sessions after restart" ([session store](https://www.redmine.org/projects/redmine/wiki/RedmineInstall#Step-5-Session-store-secret-generation)). If you do not set this variable or provide a `secrets.yml` one will be generated using `rake generate_secret_token`.
+This variable is required when using Docker Swarm replicas to maintain session connections when being loadbalanced between containers. It will create an initial `config/secrets.yml` and set the `secret_key_base` value, which is "used by Rails to encode cookies storing session data thus preventing their tampering. Generating a new secret token invalidates all existing sessions after restart" ([session store](https://www.redmine.org/projects/redmine/wiki/RedmineInstall#Step-5-Session-store-secret-generation)). If you do not set this variable or provide a `secrets.yml` one will be generated using `rake generate_secret_token`.
 
 ## Docker Secrets
 
