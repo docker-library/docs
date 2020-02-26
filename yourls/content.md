@@ -23,7 +23,7 @@ A few notable/important examples for using this Docker image include:
 -	`-e YOURLS_DB_USER=...` (defaults to "root")
 -	`-e YOURLS_DB_PASS=...` (defaults to the value of the `MYSQL_ROOT_PASSWORD` environment variable from the linked `mysql` container)
 -	`-e YOURLS_DB_NAME=...` (defaults to "yourls")
--	`-e YOURLS_TABLE_PREFIX=...` (defaults to "", only set this when you need to override the default table prefix in wp-config.php)
+-	`-e YOURLS_DB_PREFIX=...` (defaults to "yourls_", only set this when you need to override the default table prefix)
 -	`-e YOURLS_COOKIEKEY=...` (default to unique random SHA1s)
 -	`-e YOURLS_SITE=...` (yourls instance url)
 -	`-e YOURLS_USER=...` (yourls instance user name)
