@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.1.21`, `2.1`](https://github.com/docker-library/cassandra/blob/f98d3fc5282a99cdfe1ec8aa808d6313080137c0/2.1/Dockerfile)
--	[`2.2.15`, `2.2`, `2`](https://github.com/docker-library/cassandra/blob/2852d6ace9623301bd831e38a6993a73f0a640a1/2.2/Dockerfile)
--	[`3.0.19`, `3.0`](https://github.com/docker-library/cassandra/blob/006818b41131828443e1e192a7ad94a84fe668b9/3.0/Dockerfile)
--	[`3.11.5`, `3.11`, `3`, `latest`](https://github.com/docker-library/cassandra/blob/e5b7ed497ff74587560682dd4c6a2e9b01f818d9/3.11/Dockerfile)
+-	[`2.1.21`, `2.1`](https://github.com/docker-library/cassandra/blob/de006e2143c7685102fcc790aec32ebdf1cf7789/2.1/Dockerfile)
+-	[`2.2.16`, `2.2`, `2`](https://github.com/docker-library/cassandra/blob/de006e2143c7685102fcc790aec32ebdf1cf7789/2.2/Dockerfile)
+-	[`3.0.20`, `3.0`](https://github.com/docker-library/cassandra/blob/de006e2143c7685102fcc790aec32ebdf1cf7789/3.0/Dockerfile)
+-	[`3.11.6`, `3.11`, `3`, `latest`](https://github.com/docker-library/cassandra/blob/de006e2143c7685102fcc790aec32ebdf1cf7789/3.11/Dockerfile)
 
 # Quick reference
 
@@ -33,7 +33,7 @@ WARNING:
 	[the Docker Community](https://github.com/docker-library/cassandra)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/cassandra/), [`arm64v8`](https://hub.docker.com/r/arm64v8/cassandra/), [`i386`](https://hub.docker.com/r/i386/cassandra/), [`ppc64le`](https://hub.docker.com/r/ppc64le/cassandra/)
+	[`amd64`](https://hub.docker.com/r/amd64/cassandra/), [`arm32v7`](https://hub.docker.com/r/arm32v7/cassandra/), [`arm64v8`](https://hub.docker.com/r/arm64v8/cassandra/), [`ppc64le`](https://hub.docker.com/r/ppc64le/cassandra/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/cassandra/` directory](https://github.com/docker-library/repo-info/blob/master/repos/cassandra) ([history](https://github.com/docker-library/repo-info/commits/master/repos/cassandra))  
