@@ -20,12 +20,12 @@ WARNING:
 
 ## Simple Tags
 
--	[`8u232-b09-jdk-hotspot-bionic`, `8-jdk-hotspot-bionic`, `8-hotspot-bionic`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/3b20018f331a9201b86405fbacdebe034bf522bf/8/jdk/ubuntu/Dockerfile.hotspot.releases.full)
--	[`8u232-b09-jdk-hotspot-windowsservercore-ltsc2016`, `8-jdk-hotspot-windowsservercore-ltsc2016`, `8-hotspot-windowsservercore-ltsc2016`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/3b20018f331a9201b86405fbacdebe034bf522bf/8/jdk/windows/windowsservercore-ltsc2016/Dockerfile.hotspot.releases.full)
--	[`8u232-b09-jdk-hotspot-windowsservercore-1809`, `8-jdk-hotspot-windowsservercore-1809`, `8-hotspot-windowsservercore-1809`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/3b20018f331a9201b86405fbacdebe034bf522bf/8/jdk/windows/windowsservercore-1809/Dockerfile.hotspot.releases.full)
--	[`8u232-b09-jre-hotspot-bionic`, `8-jre-hotspot-bionic`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/3b20018f331a9201b86405fbacdebe034bf522bf/8/jre/ubuntu/Dockerfile.hotspot.releases.full)
--	[`8u232-b09-jre-hotspot-windowsservercore-ltsc2016`, `8-jre-hotspot-windowsservercore-ltsc2016`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/3b20018f331a9201b86405fbacdebe034bf522bf/8/jre/windows/windowsservercore-ltsc2016/Dockerfile.hotspot.releases.full)
--	[`8u232-b09-jre-hotspot-windowsservercore-1809`, `8-jre-hotspot-windowsservercore-1809`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/3b20018f331a9201b86405fbacdebe034bf522bf/8/jre/windows/windowsservercore-1809/Dockerfile.hotspot.releases.full)
+-	[`8u242-b08-jdk-hotspot-bionic`, `8-jdk-hotspot-bionic`, `8-hotspot-bionic`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/e8f080aaad6e6ab09929063c1d001af6281a0660/8/jdk/ubuntu/Dockerfile.hotspot.releases.full)
+-	[`8u242-b08-jdk-hotspot-windowsservercore-ltsc2016`, `8-jdk-hotspot-windowsservercore-ltsc2016`, `8-hotspot-windowsservercore-ltsc2016`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/e8f080aaad6e6ab09929063c1d001af6281a0660/8/jdk/windows/windowsservercore-ltsc2016/Dockerfile.hotspot.releases.full)
+-	[`8u242-b08-jdk-hotspot-windowsservercore-1809`, `8-jdk-hotspot-windowsservercore-1809`, `8-hotspot-windowsservercore-1809`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/e8f080aaad6e6ab09929063c1d001af6281a0660/8/jdk/windows/windowsservercore-1809/Dockerfile.hotspot.releases.full)
+-	[`8u242-b08-jre-hotspot-bionic`, `8-jre-hotspot-bionic`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/e8f080aaad6e6ab09929063c1d001af6281a0660/8/jre/ubuntu/Dockerfile.hotspot.releases.full)
+-	[`8u242-b08-jre-hotspot-windowsservercore-ltsc2016`, `8-jre-hotspot-windowsservercore-ltsc2016`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/e8f080aaad6e6ab09929063c1d001af6281a0660/8/jre/windows/windowsservercore-ltsc2016/Dockerfile.hotspot.releases.full)
+-	[`8u242-b08-jre-hotspot-windowsservercore-1809`, `8-jre-hotspot-windowsservercore-1809`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/e8f080aaad6e6ab09929063c1d001af6281a0660/8/jre/windows/windowsservercore-1809/Dockerfile.hotspot.releases.full)
 -	[`11.0.6_10-jdk-hotspot-bionic`, `11-jdk-hotspot-bionic`, `11-hotspot-bionic`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/6ef982afbdd32a0b2195c9ee0fa36328535a3c64/11/jdk/ubuntu/Dockerfile.hotspot.releases.full)
 -	[`11.0.6_10-jdk-hotspot-windowsservercore-ltsc2016`, `11-jdk-hotspot-windowsservercore-ltsc2016`, `11-hotspot-windowsservercore-ltsc2016`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/6ef982afbdd32a0b2195c9ee0fa36328535a3c64/11/jdk/windows/windowsservercore-ltsc2016/Dockerfile.hotspot.releases.full)
 -	[`11.0.6_10-jdk-hotspot-windowsservercore-1809`, `11-jdk-hotspot-windowsservercore-1809`, `11-hotspot-windowsservercore-1809`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/6ef982afbdd32a0b2195c9ee0fa36328535a3c64/11/jdk/windows/windowsservercore-1809/Dockerfile.hotspot.releases.full)
@@ -59,20 +59,20 @@ WARNING:
 
 ## Shared Tags
 
--	`8u232-b09-jdk-hotspot`, `8-jdk-hotspot`, `8-hotspot`:
-	-	[`8u232-b09-jdk-hotspot-bionic`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/3b20018f331a9201b86405fbacdebe034bf522bf/8/jdk/ubuntu/Dockerfile.hotspot.releases.full)
-	-	[`8u232-b09-jdk-hotspot-windowsservercore-ltsc2016`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/3b20018f331a9201b86405fbacdebe034bf522bf/8/jdk/windows/windowsservercore-ltsc2016/Dockerfile.hotspot.releases.full)
-	-	[`8u232-b09-jdk-hotspot-windowsservercore-1809`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/3b20018f331a9201b86405fbacdebe034bf522bf/8/jdk/windows/windowsservercore-1809/Dockerfile.hotspot.releases.full)
--	`8u232-b09-jdk-hotspot-windowsservercore`, `8-jdk-hotspot-windowsservercore`, `8-hotspot-windowsservercore`:
-	-	[`8u232-b09-jdk-hotspot-windowsservercore-ltsc2016`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/3b20018f331a9201b86405fbacdebe034bf522bf/8/jdk/windows/windowsservercore-ltsc2016/Dockerfile.hotspot.releases.full)
-	-	[`8u232-b09-jdk-hotspot-windowsservercore-1809`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/3b20018f331a9201b86405fbacdebe034bf522bf/8/jdk/windows/windowsservercore-1809/Dockerfile.hotspot.releases.full)
--	`8u232-b09-jre-hotspot`, `8-jre-hotspot`:
-	-	[`8u232-b09-jre-hotspot-bionic`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/3b20018f331a9201b86405fbacdebe034bf522bf/8/jre/ubuntu/Dockerfile.hotspot.releases.full)
-	-	[`8u232-b09-jre-hotspot-windowsservercore-ltsc2016`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/3b20018f331a9201b86405fbacdebe034bf522bf/8/jre/windows/windowsservercore-ltsc2016/Dockerfile.hotspot.releases.full)
-	-	[`8u232-b09-jre-hotspot-windowsservercore-1809`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/3b20018f331a9201b86405fbacdebe034bf522bf/8/jre/windows/windowsservercore-1809/Dockerfile.hotspot.releases.full)
--	`8u232-b09-jre-hotspot-windowsservercore`, `8-jre-hotspot-windowsservercore`:
-	-	[`8u232-b09-jre-hotspot-windowsservercore-ltsc2016`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/3b20018f331a9201b86405fbacdebe034bf522bf/8/jre/windows/windowsservercore-ltsc2016/Dockerfile.hotspot.releases.full)
-	-	[`8u232-b09-jre-hotspot-windowsservercore-1809`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/3b20018f331a9201b86405fbacdebe034bf522bf/8/jre/windows/windowsservercore-1809/Dockerfile.hotspot.releases.full)
+-	`8u242-b08-jdk-hotspot`, `8-jdk-hotspot`, `8-hotspot`:
+	-	[`8u242-b08-jdk-hotspot-bionic`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/e8f080aaad6e6ab09929063c1d001af6281a0660/8/jdk/ubuntu/Dockerfile.hotspot.releases.full)
+	-	[`8u242-b08-jdk-hotspot-windowsservercore-ltsc2016`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/e8f080aaad6e6ab09929063c1d001af6281a0660/8/jdk/windows/windowsservercore-ltsc2016/Dockerfile.hotspot.releases.full)
+	-	[`8u242-b08-jdk-hotspot-windowsservercore-1809`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/e8f080aaad6e6ab09929063c1d001af6281a0660/8/jdk/windows/windowsservercore-1809/Dockerfile.hotspot.releases.full)
+-	`8u242-b08-jdk-hotspot-windowsservercore`, `8-jdk-hotspot-windowsservercore`, `8-hotspot-windowsservercore`:
+	-	[`8u242-b08-jdk-hotspot-windowsservercore-ltsc2016`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/e8f080aaad6e6ab09929063c1d001af6281a0660/8/jdk/windows/windowsservercore-ltsc2016/Dockerfile.hotspot.releases.full)
+	-	[`8u242-b08-jdk-hotspot-windowsservercore-1809`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/e8f080aaad6e6ab09929063c1d001af6281a0660/8/jdk/windows/windowsservercore-1809/Dockerfile.hotspot.releases.full)
+-	`8u242-b08-jre-hotspot`, `8-jre-hotspot`:
+	-	[`8u242-b08-jre-hotspot-bionic`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/e8f080aaad6e6ab09929063c1d001af6281a0660/8/jre/ubuntu/Dockerfile.hotspot.releases.full)
+	-	[`8u242-b08-jre-hotspot-windowsservercore-ltsc2016`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/e8f080aaad6e6ab09929063c1d001af6281a0660/8/jre/windows/windowsservercore-ltsc2016/Dockerfile.hotspot.releases.full)
+	-	[`8u242-b08-jre-hotspot-windowsservercore-1809`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/e8f080aaad6e6ab09929063c1d001af6281a0660/8/jre/windows/windowsservercore-1809/Dockerfile.hotspot.releases.full)
+-	`8u242-b08-jre-hotspot-windowsservercore`, `8-jre-hotspot-windowsservercore`:
+	-	[`8u242-b08-jre-hotspot-windowsservercore-ltsc2016`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/e8f080aaad6e6ab09929063c1d001af6281a0660/8/jre/windows/windowsservercore-ltsc2016/Dockerfile.hotspot.releases.full)
+	-	[`8u242-b08-jre-hotspot-windowsservercore-1809`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/e8f080aaad6e6ab09929063c1d001af6281a0660/8/jre/windows/windowsservercore-1809/Dockerfile.hotspot.releases.full)
 -	`11.0.6_10-jdk-hotspot`, `11-jdk-hotspot`, `11-hotspot`:
 	-	[`11.0.6_10-jdk-hotspot-bionic`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/6ef982afbdd32a0b2195c9ee0fa36328535a3c64/11/jdk/ubuntu/Dockerfile.hotspot.releases.full)
 	-	[`11.0.6_10-jdk-hotspot-windowsservercore-ltsc2016`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/6ef982afbdd32a0b2195c9ee0fa36328535a3c64/11/jdk/windows/windowsservercore-ltsc2016/Dockerfile.hotspot.releases.full)
