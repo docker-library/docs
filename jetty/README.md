@@ -16,11 +16,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`9.4.26-jre11-slim`, `9.4-jre11-slim`, `9-jre11-slim`](https://github.com/appropriate/docker-jetty/blob/4d8c5831719bd7dc409e990250e6c9ff95856b10/9.4-jre11-slim/Dockerfile)
--	[`9.4.26-jre11`, `9.4-jre11`, `9-jre11`](https://github.com/appropriate/docker-jetty/blob/4d8c5831719bd7dc409e990250e6c9ff95856b10/9.4-jre11/Dockerfile)
--	[`9.4.26-jre8`, `9.4-jre8`, `9-jre8`](https://github.com/appropriate/docker-jetty/blob/4d8c5831719bd7dc409e990250e6c9ff95856b10/9.4-jre8/Dockerfile)
--	[`9.4.26-jdk13-slim`, `9.4-jdk13-slim`, `9-jdk13-slim`](https://github.com/appropriate/docker-jetty/blob/4d8c5831719bd7dc409e990250e6c9ff95856b10/9.4-jdk13-slim/Dockerfile)
--	[`9.4.26`, `9.4`, `9`, `9.4.26-jdk13`, `9.4-jdk13`, `9-jdk13`, `latest`, `jdk13`](https://github.com/appropriate/docker-jetty/blob/4d8c5831719bd7dc409e990250e6c9ff95856b10/9.4-jdk13/Dockerfile)
+-	[`9.4.27-jre11-slim`, `9.4-jre11-slim`, `9-jre11-slim`](https://github.com/appropriate/docker-jetty/blob/89dfeafc4a603611cf5135249acbe218b515439c/9.4-jre11-slim/Dockerfile)
+-	[`9.4.27-jre11`, `9.4-jre11`, `9-jre11`](https://github.com/appropriate/docker-jetty/blob/89dfeafc4a603611cf5135249acbe218b515439c/9.4-jre11/Dockerfile)
+-	[`9.4.27-jre8`, `9.4-jre8`, `9-jre8`](https://github.com/appropriate/docker-jetty/blob/89dfeafc4a603611cf5135249acbe218b515439c/9.4-jre8/Dockerfile)
+-	[`9.4.27-jdk13-slim`, `9.4-jdk13-slim`, `9-jdk13-slim`](https://github.com/appropriate/docker-jetty/blob/89dfeafc4a603611cf5135249acbe218b515439c/9.4-jdk13-slim/Dockerfile)
+-	[`9.4.27`, `9.4`, `9`, `9.4.27-jdk13`, `9.4-jdk13`, `9-jdk13`, `latest`, `jdk13`](https://github.com/appropriate/docker-jetty/blob/89dfeafc4a603611cf5135249acbe218b515439c/9.4-jdk13/Dockerfile)
 -	[`9.3.28-jre8`, `9.3-jre8`](https://github.com/appropriate/docker-jetty/blob/28562cbee783f1ccb94c375b7e9165c6cfe6d2e2/9.3-jre8/Dockerfile)
 -	[`9.2.29-jre8`, `9.2-jre8`](https://github.com/appropriate/docker-jetty/blob/28562cbee783f1ccb94c375b7e9165c6cfe6d2e2/9.2-jre8/Dockerfile)
 
