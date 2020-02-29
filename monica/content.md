@@ -15,14 +15,15 @@ The `fpm` tag contains a fastCGI-Process that serves the web pages. This image s
 ### Using the apache image
 
 This image contains a webserver that exposes port 80. Run the container with:
+
 ```sh
 docker run --name some-%%REPO%% -d -p 80:80 %%IMAGE%%
 ```
 
 ### Using the fpm image
 
-This image serves a fastCGI server that exposes port 9000. You may need an additional web server that can proxy requests to the fpm port 9000 of the container.
-Run this container with:
+This image serves a fastCGI server that exposes port 9000. You may need an additional web server that can proxy requests to the fpm port 9000 of the container. Run this container with:
+
 ```sh
 docker run --name some-%%REPO%% -d -p 9000:9000 %%IMAGE%%:fpm
 ```
@@ -32,6 +33,7 @@ docker run --name some-%%REPO%% -d -p 9000:9000 %%IMAGE%%:fpm
 To have a persistent storage for your datas, you may want to create volumes for your db, and for monica you will have to save the `/var/www/html/storage` directory.
 
 Run a container with this named volume:
+
 ```sh
 docker run -d 
         -v monica_data:/var/www/html/storage
@@ -40,19 +42,19 @@ docker run -d
 
 ### Run commands inside the container
 
-Like every Laravel application, the `php artisan` command is very usefull for Monica.
-To run a command inside the container, run
+Like every Laravel application, the `php artisan` command is very usefull for Monica. To run a command inside the container, run
 
 ```sh
 docker exec CONTAINER_ID php artisan COMMAND
 ```
 
 or for docker-compose
+
 ```sh
 docker-compose exec %%REPO%% php artisan COMMAND
 ```
-where `%%REPO%%` is the name of the service in your `docker-compose.yml` file.
 
+where `%%REPO%%` is the name of the service in your `docker-compose.yml` file.
 
 ## Running the image with docker-compose
 
@@ -66,9 +68,7 @@ This version will use the apache image and add a mysql container. The volumes ar
 
 Make sure to pass in values for `APP_KEY` and `MYSQL_ROOT_PASSWORD` variables before you run this setup.
 
-Set `APP_KEY` to a random 32-character string. For example, if you have the `pwgen` utility installed, you could copy and paste the
-output of `pwgen -s 32 1`.
-
+Set `APP_KEY` to a random 32-character string. For example, if you have the `pwgen` utility installed, you could copy and paste the output of `pwgen -s 32 1`.
 
 ```yaml
 version: "3.4"
@@ -110,6 +110,7 @@ Run `docker-compose up -d`.
 Wait until all migrations are done and then access Monica at http://localhost/ from your host system. If this looks ok, add your first user account.
 
 Then run this command once:
+
 ```sh
 docker-compose exec app php artisan setup:production
 ```
@@ -124,10 +125,7 @@ An example of `nginx.conf` file can be found on the [`example section`](%%GITHUB
 
 Make sure to set values for `APP_KEY` and `MYSQL_ROOT_PASSWORD` variables before you run this setup.
 
-Set `APP_KEY` to a random 32-character string. For example, if you
-have the `pwgen` utility installed, you could copy and paste the
-output of `pwgen -s 32 1`.
-
+Set `APP_KEY` to a random 32-character string. For example, if you have the `pwgen` utility installed, you could copy and paste the output of `pwgen -s 32 1`.
 
 ```yaml
 version: "3.4"
@@ -182,12 +180,12 @@ Run `docker-compose up -d`.
 Wait until all migrations are done and then access Monica at http://localhost/ from your host system. If this looks ok, add your first user account.
 
 Then run this command once:
+
 ```sh
 docker-compose exec app php artisan setup:production
 ```
 
-
-## Make Monica available from the internet 
+## Make Monica available from the internet
 
 To expose your Monica instance for the internet, it's important to set environment variable `APP_ENV=production`. In this case `https` mode will be mandatory.
 
