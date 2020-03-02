@@ -17,6 +17,8 @@ WARNING:
 # Supported tags and respective `Dockerfile` links
 
 -	[`9.0.31-jdk13-openjdk-oracle`, `9.0-jdk13-openjdk-oracle`, `9-jdk13-openjdk-oracle`](https://github.com/docker-library/tomcat/blob/d61dafcbdcbc6715cab5ab6c58a8fa259062400d/9.0/jdk13/openjdk-oracle/Dockerfile)
+-	[`9.0.31-jdk13-openjdk-buster`, `9.0-jdk13-openjdk-buster`, `9-jdk13-openjdk-buster`](https://github.com/docker-library/tomcat/blob/ac48cbb92d2664675929d013fd163fbc153697d9/9.0/jdk13/openjdk-buster/Dockerfile)
+-	[`9.0.31-jdk13-openjdk-slim-buster`, `9.0-jdk13-openjdk-slim-buster`, `9-jdk13-openjdk-slim-buster`](https://github.com/docker-library/tomcat/blob/ac48cbb92d2664675929d013fd163fbc153697d9/9.0/jdk13/openjdk-slim-buster/Dockerfile)
 -	[`9.0.31-jdk11-openjdk`, `9.0-jdk11-openjdk`, `9-jdk11-openjdk`, `9.0.31-jdk11`, `9.0-jdk11`, `9-jdk11`, `9.0.31`, `9.0`, `9`](https://github.com/docker-library/tomcat/blob/d61dafcbdcbc6715cab5ab6c58a8fa259062400d/9.0/jdk11/openjdk/Dockerfile)
 -	[`9.0.31-jdk11-openjdk-slim`, `9.0-jdk11-openjdk-slim`, `9-jdk11-openjdk-slim`](https://github.com/docker-library/tomcat/blob/d61dafcbdcbc6715cab5ab6c58a8fa259062400d/9.0/jdk11/openjdk-slim/Dockerfile)
 -	[`9.0.31-jdk11-adoptopenjdk-hotspot`, `9.0-jdk11-adoptopenjdk-hotspot`, `9-jdk11-adoptopenjdk-hotspot`](https://github.com/docker-library/tomcat/blob/d61dafcbdcbc6715cab5ab6c58a8fa259062400d/9.0/jdk11/adoptopenjdk-hotspot/Dockerfile)
@@ -28,6 +30,8 @@ WARNING:
 -	[`9.0.31-jdk8-adoptopenjdk-openj9`, `9.0-jdk8-adoptopenjdk-openj9`, `9-jdk8-adoptopenjdk-openj9`](https://github.com/docker-library/tomcat/blob/d61dafcbdcbc6715cab5ab6c58a8fa259062400d/9.0/jdk8/adoptopenjdk-openj9/Dockerfile)
 -	[`9.0.31-jdk8-corretto`, `9.0-jdk8-corretto`, `9-jdk8-corretto`](https://github.com/docker-library/tomcat/blob/d61dafcbdcbc6715cab5ab6c58a8fa259062400d/9.0/jdk8/corretto/Dockerfile)
 -	[`8.5.51-jdk13-openjdk-oracle`, `8.5-jdk13-openjdk-oracle`, `8-jdk13-openjdk-oracle`, `jdk13-openjdk-oracle`](https://github.com/docker-library/tomcat/blob/c94a988c9e74d6a60247e4671a84c95a47d627c9/8.5/jdk13/openjdk-oracle/Dockerfile)
+-	[`8.5.51-jdk13-openjdk-buster`, `8.5-jdk13-openjdk-buster`, `8-jdk13-openjdk-buster`, `jdk13-openjdk-buster`](https://github.com/docker-library/tomcat/blob/ac48cbb92d2664675929d013fd163fbc153697d9/8.5/jdk13/openjdk-buster/Dockerfile)
+-	[`8.5.51-jdk13-openjdk-slim-buster`, `8.5-jdk13-openjdk-slim-buster`, `8-jdk13-openjdk-slim-buster`, `jdk13-openjdk-slim-buster`](https://github.com/docker-library/tomcat/blob/ac48cbb92d2664675929d013fd163fbc153697d9/8.5/jdk13/openjdk-slim-buster/Dockerfile)
 -	[`8.5.51-jdk11-openjdk`, `8.5-jdk11-openjdk`, `8-jdk11-openjdk`, `jdk11-openjdk`, `8.5.51-jdk11`, `8.5-jdk11`, `8-jdk11`, `jdk11`](https://github.com/docker-library/tomcat/blob/c94a988c9e74d6a60247e4671a84c95a47d627c9/8.5/jdk11/openjdk/Dockerfile)
 -	[`8.5.51-jdk11-openjdk-slim`, `8.5-jdk11-openjdk-slim`, `8-jdk11-openjdk-slim`, `jdk11-openjdk-slim`](https://github.com/docker-library/tomcat/blob/c94a988c9e74d6a60247e4671a84c95a47d627c9/8.5/jdk11/openjdk-slim/Dockerfile)
 -	[`8.5.51-jdk11-adoptopenjdk-hotspot`, `8.5-jdk11-adoptopenjdk-hotspot`, `8-jdk11-adoptopenjdk-hotspot`, `jdk11-adoptopenjdk-hotspot`](https://github.com/docker-library/tomcat/blob/c94a988c9e74d6a60247e4671a84c95a47d627c9/8.5/jdk11/adoptopenjdk-hotspot/Dockerfile)
@@ -112,6 +116,8 @@ The `tomcat` images come in many flavors, each designed for a specific use case.
 ## `tomcat:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+Some of these tags may have names like buster in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 ## `tomcat:<version>-slim`
 
