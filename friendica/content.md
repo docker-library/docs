@@ -91,8 +91,8 @@ You have to set a valid SMTP-MTA for the `SMTP` environment variable to enable m
 
 The following environment variables are possible for the SMTP examples.
 
--	`SITENAME` The name of the Friendica node. (**required**)
 -	`SMTP` Address of the SMTP Mail-Gateway. (**required**)
+-	`SMTP_DOMAIN` The sender domain. (**required** - e.g. `friendica.local`)
 -	`SMTP_FROM` Sender user-part of the address. (Default: `no-reply` - e.g. no-reply@friendica.local)
 -	`SMTP_TLS` Use TLS for connecting the SMTP Mail-Gateway. (Default: empty)
 -	`SMTP_STARTTLS` Use STARTTLS for connecting the SMTP Mail-Gateway. (Default: empty)
@@ -186,7 +186,6 @@ services:
       - MYSQL_PASSWORD=
       - MYSQL_DATABASE=friendica
       - FRIENDICA_ADMIN_MAIL=root@friendica.local      
-    hostname: friendica.local
     depends_on:
       - db
 
@@ -236,7 +235,6 @@ services:
       - MYSQL_PASSWORD=
       - MYSQL_DATABASE=friendica
       - FRIENDICA_ADMIN_MAIL=root@friendica.local
-    hostname: friendica.local
     networks:
       - proxy-tier
       - default 
