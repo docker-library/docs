@@ -16,15 +16,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`12.2`, `12`, `latest`](https://github.com/docker-library/postgres/blob/7491dca61e0b72e48b5b0848ca026405208222f4/12/Dockerfile)
+-	[`12.2`, `12`, `latest`](https://github.com/docker-library/postgres/blob/0a0f6444f52b3bf5067a94eda9b009cc0aede651/12/Dockerfile)
 -	[`12.2-alpine`, `12-alpine`, `alpine`](https://github.com/docker-library/postgres/blob/4f70bf2b811bcdb4ab1a015ef703373226452157/12/alpine/Dockerfile)
--	[`11.7`, `11`](https://github.com/docker-library/postgres/blob/06cc08b44b4dc879e0c948ba64d2d0a00596ed50/11/Dockerfile)
+-	[`11.7`, `11`](https://github.com/docker-library/postgres/blob/0a0f6444f52b3bf5067a94eda9b009cc0aede651/11/Dockerfile)
 -	[`11.7-alpine`, `11-alpine`](https://github.com/docker-library/postgres/blob/4f70bf2b811bcdb4ab1a015ef703373226452157/11/alpine/Dockerfile)
--	[`10.12`, `10`](https://github.com/docker-library/postgres/blob/bdfa18e43c2b7ea7d26d2df7a18b12a674beaf92/10/Dockerfile)
+-	[`10.12`, `10`](https://github.com/docker-library/postgres/blob/0a0f6444f52b3bf5067a94eda9b009cc0aede651/10/Dockerfile)
 -	[`10.12-alpine`, `10-alpine`](https://github.com/docker-library/postgres/blob/4f70bf2b811bcdb4ab1a015ef703373226452157/10/alpine/Dockerfile)
--	[`9.6.17`, `9.6`, `9`](https://github.com/docker-library/postgres/blob/8b792b8005278fa2349e2c591736b57aa94d7131/9.6/Dockerfile)
+-	[`9.6.17`, `9.6`, `9`](https://github.com/docker-library/postgres/blob/0a0f6444f52b3bf5067a94eda9b009cc0aede651/9.6/Dockerfile)
 -	[`9.6.17-alpine`, `9.6-alpine`, `9-alpine`](https://github.com/docker-library/postgres/blob/4f70bf2b811bcdb4ab1a015ef703373226452157/9.6/alpine/Dockerfile)
--	[`9.5.21`, `9.5`](https://github.com/docker-library/postgres/blob/1de51ab35ec3dccbb992b9b02faf8b61ed2d1e2d/9.5/Dockerfile)
+-	[`9.5.21`, `9.5`](https://github.com/docker-library/postgres/blob/0a0f6444f52b3bf5067a94eda9b009cc0aede651/9.5/Dockerfile)
 -	[`9.5.21-alpine`, `9.5-alpine`](https://github.com/docker-library/postgres/blob/4f70bf2b811bcdb4ab1a015ef703373226452157/9.5/alpine/Dockerfile)
 
 # Quick reference
