@@ -33,7 +33,7 @@ $ docker run -ti --rm -v "$PWD":/home/docker -w /home/docker -u docker %%IMAGE%%
 Alternatively, just run a bash session on the container first. This allows a user to run batch commands and also edit and run scripts:
 
 ```console
-$ docker run -ti --rm %%IMAGE%% /usr/bin/bash
+$ docker run -ti --rm %%IMAGE%% bash
 $ vim.tiny myscript.R
 ```
 
