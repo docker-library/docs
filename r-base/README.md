@@ -55,7 +55,7 @@ R is a GNU project. The source code for the R software environment is written pr
 
 > [R FAQ](http://cran.r-project.org/doc/FAQ/R-FAQ.html#What-is-R_003f), [wikipedia.org/wiki/R_(programming_language)](http://en.wikipedia.org/wiki/R_%28programming_language%29)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/878d695448f08584e0b90a88fb60614e4c346d6e/r-base/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/18225eea5667b1bc03a19024eb09ccc482207ecf/r-base/logo.png)
 
 # How to use this image
 
@@ -78,7 +78,7 @@ $ docker run -ti --rm -v "$PWD":/home/docker -w /home/docker -u docker r-base R 
 Alternatively, just run a bash session on the container first. This allows a user to run batch commands and also edit and run scripts:
 
 ```console
-$ docker run -ti --rm r-base /usr/bin/bash
+$ docker run -ti --rm r-base bash
 $ vim.tiny myscript.R
 ```
 

@@ -17,7 +17,6 @@ WARNING:
 # Supported tags and respective `Dockerfile` links
 
 -	[`8.8.3`, `8.8`, `8`, `latest`](https://github.com/haskell/docker-haskell/blob/c7675920a33d47aa30ff5456ee622cd61a2d62be/8.8/Dockerfile)
--	[`8.8.2`](https://github.com/haskell/docker-haskell/blob/1eaf476bf1a9933898f8e96bb366308485d9353f/8.8/Dockerfile)
 -	[`8.6.5`, `8.6`](https://github.com/haskell/docker-haskell/blob/c7675920a33d47aa30ff5456ee622cd61a2d62be/8.6/Dockerfile)
 
 # Quick reference
