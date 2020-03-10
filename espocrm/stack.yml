@@ -17,12 +17,12 @@ services:
       ESPOCRM_DATABASE_PASSWORD: example
       ESPOCRM_ADMIN_USERNAME: admin
       ESPOCRM_ADMIN_PASSWORD: password
-      ESPOCRM_SITE_URL: "http://localhost:8080"
+      ESPOCRM_SITE_URL: http://localhost:8080
     restart: always
     ports:
       - 8080:80
     volumes:
-     - espocrm:/var/www/html
+      - espocrm:/var/www/html
 
 volumes:
   mysql:
