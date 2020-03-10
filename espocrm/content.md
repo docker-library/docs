@@ -62,11 +62,11 @@ The URL of EspoCRM. This option is very important for normal operating of EspoCR
 ### Other optional options
 The list of possible values and their default values can be found in EspoCRM Administrator panel > Settings.
 
-- `ESPOCRM_LANGUAGE`
-- `ESPOCRM_DATE_FORMAT`
-- `ESPOCRM_TIME_FORMAT`
-- `ESPOCRM_TIME_ZONE`
-- `ESPOCRM_WEEK_START`
-- `ESPOCRM_DEFAULT_CURRENCY`
-- `ESPOCRM_THOUSAND_SEPARATOR`
-- `ESPOCRM_DECIMAL_MARK`
+    - `ESPOCRM_LANGUAGE`
+    - `ESPOCRM_DATE_FORMAT`
+    - `ESPOCRM_TIME_FORMAT`
+    - `ESPOCRM_TIME_ZONE`
+    - `ESPOCRM_WEEK_START`
+    - `ESPOCRM_DEFAULT_CURRENCY`
+    - `ESPOCRM_THOUSAND_SEPARATOR`
+    - `ESPOCRM_DECIMAL_MARK`
