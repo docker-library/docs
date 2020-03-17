@@ -94,7 +94,7 @@ See the [official docs](http://www.rethinkdb.com/docs/) for infomation on using 
 
 # License
 
-View [license information](http://www.gnu.org/licenses/agpl-3.0.html) for the software contained in this image.
+View [license information](https://raw.githubusercontent.com/rethinkdb/rethinkdb/next/LICENSE) for the software contained in this image.
 
 As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 
