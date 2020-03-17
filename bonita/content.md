@@ -106,7 +106,7 @@ The `-v /my/own/datadir:/opt/bonita` part of the command mounts the `/my/own/dat
 -	Stop the container to perform a backup
 
 	```console
-	$ docker stop bonita_7.9.4_postgres
+	$ docker stop bonita_7.9.5_postgres
 	```
 
 -	For containers < 7.3.0 :
