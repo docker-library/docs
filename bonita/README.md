@@ -16,7 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.9.4`, `7.9`](https://github.com/Bonitasoft-Community/docker_bonita/blob/4ce826e88b107ab685c4df72af1960dda68890f1/7.9/Dockerfile)
+-	[`7.9.5`, `7.9`](https://github.com/Bonitasoft-Community/docker_bonita/blob/b58b05d989055ca3521fc92211d10ff640b4028f/7.9/Dockerfile)
 -	[`7.10.3`, `7.10`, `latest`](https://github.com/Bonitasoft-Community/docker_bonita/blob/b58b05d989055ca3521fc92211d10ff640b4028f/7.10/Dockerfile)
 
 # Quick reference
@@ -204,7 +204,7 @@ The `-v /my/own/datadir:/opt/bonita` part of the command mounts the `/my/own/dat
 -	Stop the container to perform a backup
 
 	```console
-	$ docker stop bonita_7.9.4_postgres
+	$ docker stop bonita_7.9.5_postgres
 	```
 
 -	For containers < 7.3.0 :
