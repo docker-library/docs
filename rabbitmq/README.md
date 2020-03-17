@@ -16,13 +16,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.8.3`, `3.8`, `3`, `latest`](https://github.com/docker-library/rabbitmq/blob/f385008e7aeb1ed78975b1c3563904f157e3d91a/3.8/ubuntu/Dockerfile)
+-	[`3.8.3`, `3.8`, `3`, `latest`](https://github.com/docker-library/rabbitmq/blob/f53deb9a1feee417e86ce276532eaa6bc1b44ae1/3.8/ubuntu/Dockerfile)
 -	[`3.8.3-management`, `3.8-management`, `3-management`, `management`](https://github.com/docker-library/rabbitmq/blob/af5f6ff9a3916d89be6d190d562d247ae12ffa73/3.8/ubuntu/management/Dockerfile)
--	[`3.8.3-alpine`, `3.8-alpine`, `3-alpine`, `alpine`](https://github.com/docker-library/rabbitmq/blob/f385008e7aeb1ed78975b1c3563904f157e3d91a/3.8/alpine/Dockerfile)
+-	[`3.8.3-alpine`, `3.8-alpine`, `3-alpine`, `alpine`](https://github.com/docker-library/rabbitmq/blob/f53deb9a1feee417e86ce276532eaa6bc1b44ae1/3.8/alpine/Dockerfile)
 -	[`3.8.3-management-alpine`, `3.8-management-alpine`, `3-management-alpine`, `management-alpine`](https://github.com/docker-library/rabbitmq/blob/af5f6ff9a3916d89be6d190d562d247ae12ffa73/3.8/alpine/management/Dockerfile)
--	[`3.7.24`, `3.7`](https://github.com/docker-library/rabbitmq/blob/cf0c6a21d1b373f0c6d1dae02a9fcfc530ec8d77/3.7/ubuntu/Dockerfile)
+-	[`3.7.24`, `3.7`](https://github.com/docker-library/rabbitmq/blob/84fc3639bf0da4d035b16f618c33b5013a885d70/3.7/ubuntu/Dockerfile)
 -	[`3.7.24-management`, `3.7-management`](https://github.com/docker-library/rabbitmq/blob/f22c0b266cfeb8cb6d776f9e6a961908c2557ad3/3.7/ubuntu/management/Dockerfile)
--	[`3.7.24-alpine`, `3.7-alpine`](https://github.com/docker-library/rabbitmq/blob/cf0c6a21d1b373f0c6d1dae02a9fcfc530ec8d77/3.7/alpine/Dockerfile)
+-	[`3.7.24-alpine`, `3.7-alpine`](https://github.com/docker-library/rabbitmq/blob/84fc3639bf0da4d035b16f618c33b5013a885d70/3.7/alpine/Dockerfile)
 -	[`3.7.24-management-alpine`, `3.7-management-alpine`](https://github.com/docker-library/rabbitmq/blob/4b2b11c59ee65c2a09616b163d4572559a86bb7b/3.7/alpine/management/Dockerfile)
 
 # Quick reference
