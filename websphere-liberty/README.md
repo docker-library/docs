@@ -16,31 +16,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`beta`](https://github.com/WASdev/ci.docker/blob/67b021bcb8a895446360a68f821f960f5aaea166/beta/Dockerfile)
--	[`kernel`](https://github.com/WASdev/ci.docker/blob/67b021bcb8a895446360a68f821f960f5aaea166/ga/latest/kernel/Dockerfile.ubuntu.ibmjava8)
--	[`full`, `latest`](https://github.com/WASdev/ci.docker/blob/67b021bcb8a895446360a68f821f960f5aaea166/ga/latest/full/Dockerfile.ubuntu.ibmjava8)
--	[`19.0.0.12-kernel-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/67b021bcb8a895446360a68f821f960f5aaea166/ga/19.0.0.12/kernel/Dockerfile.ubuntu.ibmjava8)
--	[`19.0.0.12-full-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/67b021bcb8a895446360a68f821f960f5aaea166/ga/19.0.0.12/full/Dockerfile.ubuntu.ibmjava8)
--	[`19.0.0.9-kernel`](https://github.com/WASdev/ci.docker/blob/67b021bcb8a895446360a68f821f960f5aaea166/ga/19.0.0.9/kernel/Dockerfile)
--	[`19.0.0.9-kernel-java11`](https://github.com/WASdev/ci.docker/blob/67b021bcb8a895446360a68f821f960f5aaea166/ga/19.0.0.9/kernel/Dockerfile.java11)
--	[`19.0.0.9-javaee8`](https://github.com/WASdev/ci.docker/blob/67b021bcb8a895446360a68f821f960f5aaea166/ga/19.0.0.9/javaee8/Dockerfile)
--	[`19.0.0.9-javaee8-java11`](https://github.com/WASdev/ci.docker/blob/67b021bcb8a895446360a68f821f960f5aaea166/ga/19.0.0.9/javaee8/Dockerfile.java11)
--	[`19.0.0.9-webProfile8`](https://github.com/WASdev/ci.docker/blob/67b021bcb8a895446360a68f821f960f5aaea166/ga/19.0.0.9/webProfile8/Dockerfile)
--	[`19.0.0.9-webProfile8-java11`](https://github.com/WASdev/ci.docker/blob/67b021bcb8a895446360a68f821f960f5aaea166/ga/19.0.0.9/webProfile8/Dockerfile.java11)
--	[`19.0.0.9-microProfile1`](https://github.com/WASdev/ci.docker/blob/67b021bcb8a895446360a68f821f960f5aaea166/ga/19.0.0.9/microProfile1/Dockerfile)
--	[`19.0.0.9-microProfile1-java11`](https://github.com/WASdev/ci.docker/blob/67b021bcb8a895446360a68f821f960f5aaea166/ga/19.0.0.9/microProfile1/Dockerfile.java11)
--	[`19.0.0.9-microProfile2`](https://github.com/WASdev/ci.docker/blob/67b021bcb8a895446360a68f821f960f5aaea166/ga/19.0.0.9/microProfile2/Dockerfile)
--	[`19.0.0.9-microProfile2-java11`](https://github.com/WASdev/ci.docker/blob/67b021bcb8a895446360a68f821f960f5aaea166/ga/19.0.0.9/microProfile2/Dockerfile.java11)
--	[`19.0.0.9-microProfile3`](https://github.com/WASdev/ci.docker/blob/67b021bcb8a895446360a68f821f960f5aaea166/ga/19.0.0.9/microProfile3/Dockerfile)
--	[`19.0.0.9-microProfile3-java11`](https://github.com/WASdev/ci.docker/blob/67b021bcb8a895446360a68f821f960f5aaea166/ga/19.0.0.9/microProfile3/Dockerfile.java11)
--	[`19.0.0.9-springBoot2`](https://github.com/WASdev/ci.docker/blob/67b021bcb8a895446360a68f821f960f5aaea166/ga/19.0.0.9/springBoot2/Dockerfile)
--	[`19.0.0.9-springBoot2-java11`](https://github.com/WASdev/ci.docker/blob/67b021bcb8a895446360a68f821f960f5aaea166/ga/19.0.0.9/springBoot2/Dockerfile.java11)
--	[`19.0.0.9-springBoot1`](https://github.com/WASdev/ci.docker/blob/67b021bcb8a895446360a68f821f960f5aaea166/ga/19.0.0.9/springBoot1/Dockerfile)
--	[`19.0.0.9-springBoot1-java11`](https://github.com/WASdev/ci.docker/blob/67b021bcb8a895446360a68f821f960f5aaea166/ga/19.0.0.9/springBoot1/Dockerfile.java11)
--	[`19.0.0.9-webProfile7`](https://github.com/WASdev/ci.docker/blob/67b021bcb8a895446360a68f821f960f5aaea166/ga/19.0.0.9/webProfile7/Dockerfile)
--	[`19.0.0.9-webProfile7-java11`](https://github.com/WASdev/ci.docker/blob/67b021bcb8a895446360a68f821f960f5aaea166/ga/19.0.0.9/webProfile7/Dockerfile.java11)
--	[`19.0.0.9-javaee7`](https://github.com/WASdev/ci.docker/blob/67b021bcb8a895446360a68f821f960f5aaea166/ga/19.0.0.9/javaee7/Dockerfile)
--	[`19.0.0.9-javaee7-java11`](https://github.com/WASdev/ci.docker/blob/67b021bcb8a895446360a68f821f960f5aaea166/ga/19.0.0.9/javaee7/Dockerfile.java11)
+-	[`beta`](https://github.com/WASdev/ci.docker/blob/487d78ee8b916b85eb0215933c4fd12285c5ac25/beta/Dockerfile)
+-	[`kernel`](https://github.com/WASdev/ci.docker/blob/487d78ee8b916b85eb0215933c4fd12285c5ac25/ga/latest/kernel/Dockerfile.ubuntu.ibmjava8)
+-	[`full`, `latest`](https://github.com/WASdev/ci.docker/blob/487d78ee8b916b85eb0215933c4fd12285c5ac25/ga/latest/full/Dockerfile.ubuntu.ibmjava8)
+-	[`20.0.0.3-kernel-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/487d78ee8b916b85eb0215933c4fd12285c5ac25/ga/20.0.0.3/kernel/Dockerfile.ubuntu.ibmjava8)
+-	[`20.0.0.3-full-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/487d78ee8b916b85eb0215933c4fd12285c5ac25/ga/20.0.0.3/full/Dockerfile.ubuntu.ibmjava8)
+-	[`19.0.0.12-kernel-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/487d78ee8b916b85eb0215933c4fd12285c5ac25/ga/19.0.0.12/kernel/Dockerfile.ubuntu.ibmjava8)
+-	[`19.0.0.12-full-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/487d78ee8b916b85eb0215933c4fd12285c5ac25/ga/19.0.0.12/full/Dockerfile.ubuntu.ibmjava8)
 
 # Quick reference
 
