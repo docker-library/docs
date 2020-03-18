@@ -16,9 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`9.0.33-jdk13-openjdk-oracle`, `9.0-jdk13-openjdk-oracle`, `9-jdk13-openjdk-oracle`](https://github.com/docker-library/tomcat/blob/5a8577af736ff76ade0afe2f46d03fc6aed43ce1/9.0/jdk13/openjdk-oracle/Dockerfile)
--	[`9.0.33-jdk13-openjdk-buster`, `9.0-jdk13-openjdk-buster`, `9-jdk13-openjdk-buster`](https://github.com/docker-library/tomcat/blob/5a8577af736ff76ade0afe2f46d03fc6aed43ce1/9.0/jdk13/openjdk-buster/Dockerfile)
--	[`9.0.33-jdk13-openjdk-slim-buster`, `9.0-jdk13-openjdk-slim-buster`, `9-jdk13-openjdk-slim-buster`](https://github.com/docker-library/tomcat/blob/5a8577af736ff76ade0afe2f46d03fc6aed43ce1/9.0/jdk13/openjdk-slim-buster/Dockerfile)
+-	[`9.0.33-jdk14-openjdk-oracle`, `9.0-jdk14-openjdk-oracle`, `9-jdk14-openjdk-oracle`](https://github.com/docker-library/tomcat/blob/dbd2272f425b8a124730d2c19f52c02dcfef66a5/9.0/jdk14/openjdk-oracle/Dockerfile)
+-	[`9.0.33-jdk14-openjdk-buster`, `9.0-jdk14-openjdk-buster`, `9-jdk14-openjdk-buster`](https://github.com/docker-library/tomcat/blob/dbd2272f425b8a124730d2c19f52c02dcfef66a5/9.0/jdk14/openjdk-buster/Dockerfile)
+-	[`9.0.33-jdk14-openjdk-slim-buster`, `9.0-jdk14-openjdk-slim-buster`, `9-jdk14-openjdk-slim-buster`](https://github.com/docker-library/tomcat/blob/dbd2272f425b8a124730d2c19f52c02dcfef66a5/9.0/jdk14/openjdk-slim-buster/Dockerfile)
 -	[`9.0.33-jdk11-openjdk`, `9.0-jdk11-openjdk`, `9-jdk11-openjdk`, `9.0.33-jdk11`, `9.0-jdk11`, `9-jdk11`, `9.0.33`, `9.0`, `9`](https://github.com/docker-library/tomcat/blob/5a8577af736ff76ade0afe2f46d03fc6aed43ce1/9.0/jdk11/openjdk/Dockerfile)
 -	[`9.0.33-jdk11-openjdk-slim`, `9.0-jdk11-openjdk-slim`, `9-jdk11-openjdk-slim`](https://github.com/docker-library/tomcat/blob/5a8577af736ff76ade0afe2f46d03fc6aed43ce1/9.0/jdk11/openjdk-slim/Dockerfile)
 -	[`9.0.33-jdk11-adoptopenjdk-hotspot`, `9.0-jdk11-adoptopenjdk-hotspot`, `9-jdk11-adoptopenjdk-hotspot`](https://github.com/docker-library/tomcat/blob/5a8577af736ff76ade0afe2f46d03fc6aed43ce1/9.0/jdk11/adoptopenjdk-hotspot/Dockerfile)
@@ -29,9 +29,9 @@ WARNING:
 -	[`9.0.33-jdk8-adoptopenjdk-hotspot`, `9.0-jdk8-adoptopenjdk-hotspot`, `9-jdk8-adoptopenjdk-hotspot`](https://github.com/docker-library/tomcat/blob/5a8577af736ff76ade0afe2f46d03fc6aed43ce1/9.0/jdk8/adoptopenjdk-hotspot/Dockerfile)
 -	[`9.0.33-jdk8-adoptopenjdk-openj9`, `9.0-jdk8-adoptopenjdk-openj9`, `9-jdk8-adoptopenjdk-openj9`](https://github.com/docker-library/tomcat/blob/5a8577af736ff76ade0afe2f46d03fc6aed43ce1/9.0/jdk8/adoptopenjdk-openj9/Dockerfile)
 -	[`9.0.33-jdk8-corretto`, `9.0-jdk8-corretto`, `9-jdk8-corretto`](https://github.com/docker-library/tomcat/blob/5a8577af736ff76ade0afe2f46d03fc6aed43ce1/9.0/jdk8/corretto/Dockerfile)
--	[`8.5.53-jdk13-openjdk-oracle`, `8.5-jdk13-openjdk-oracle`, `8-jdk13-openjdk-oracle`, `jdk13-openjdk-oracle`](https://github.com/docker-library/tomcat/blob/200fb67e66016f412b5e8428e48e7794dd7faae7/8.5/jdk13/openjdk-oracle/Dockerfile)
--	[`8.5.53-jdk13-openjdk-buster`, `8.5-jdk13-openjdk-buster`, `8-jdk13-openjdk-buster`, `jdk13-openjdk-buster`](https://github.com/docker-library/tomcat/blob/200fb67e66016f412b5e8428e48e7794dd7faae7/8.5/jdk13/openjdk-buster/Dockerfile)
--	[`8.5.53-jdk13-openjdk-slim-buster`, `8.5-jdk13-openjdk-slim-buster`, `8-jdk13-openjdk-slim-buster`, `jdk13-openjdk-slim-buster`](https://github.com/docker-library/tomcat/blob/200fb67e66016f412b5e8428e48e7794dd7faae7/8.5/jdk13/openjdk-slim-buster/Dockerfile)
+-	[`8.5.53-jdk14-openjdk-oracle`, `8.5-jdk14-openjdk-oracle`, `8-jdk14-openjdk-oracle`, `jdk14-openjdk-oracle`](https://github.com/docker-library/tomcat/blob/dbd2272f425b8a124730d2c19f52c02dcfef66a5/8.5/jdk14/openjdk-oracle/Dockerfile)
+-	[`8.5.53-jdk14-openjdk-buster`, `8.5-jdk14-openjdk-buster`, `8-jdk14-openjdk-buster`, `jdk14-openjdk-buster`](https://github.com/docker-library/tomcat/blob/dbd2272f425b8a124730d2c19f52c02dcfef66a5/8.5/jdk14/openjdk-buster/Dockerfile)
+-	[`8.5.53-jdk14-openjdk-slim-buster`, `8.5-jdk14-openjdk-slim-buster`, `8-jdk14-openjdk-slim-buster`, `jdk14-openjdk-slim-buster`](https://github.com/docker-library/tomcat/blob/dbd2272f425b8a124730d2c19f52c02dcfef66a5/8.5/jdk14/openjdk-slim-buster/Dockerfile)
 -	[`8.5.53-jdk11-openjdk`, `8.5-jdk11-openjdk`, `8-jdk11-openjdk`, `jdk11-openjdk`, `8.5.53-jdk11`, `8.5-jdk11`, `8-jdk11`, `jdk11`](https://github.com/docker-library/tomcat/blob/200fb67e66016f412b5e8428e48e7794dd7faae7/8.5/jdk11/openjdk/Dockerfile)
 -	[`8.5.53-jdk11-openjdk-slim`, `8.5-jdk11-openjdk-slim`, `8-jdk11-openjdk-slim`, `jdk11-openjdk-slim`](https://github.com/docker-library/tomcat/blob/200fb67e66016f412b5e8428e48e7794dd7faae7/8.5/jdk11/openjdk-slim/Dockerfile)
 -	[`8.5.53-jdk11-adoptopenjdk-hotspot`, `8.5-jdk11-adoptopenjdk-hotspot`, `8-jdk11-adoptopenjdk-hotspot`, `jdk11-adoptopenjdk-hotspot`](https://github.com/docker-library/tomcat/blob/200fb67e66016f412b5e8428e48e7794dd7faae7/8.5/jdk11/adoptopenjdk-hotspot/Dockerfile)
