@@ -16,7 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.11`, `3.11.0`, `latest`](https://github.com/TeamSpeak-Systems/teamspeak-linux-docker-images/blob/12ce1ade4fbc630e0126d863132d21b27a16330a/alpine/Dockerfile)
+-	[`3.12`, `3.12.0`, `latest`](https://github.com/TeamSpeak-Systems/teamspeak-linux-docker-images/blob/4fc46f2faacc29937e14d7e7cd1da68287001ef7/alpine/Dockerfile)
 
 # Quick reference
 
