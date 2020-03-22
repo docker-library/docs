@@ -1,4 +1,5 @@
-# What is Nextcloud?
+What is Nextcloud?
+==================
 
 A safe home for all your data. Access & share your files, calendars, contacts, mail & more from any device, on your terms.
 
@@ -6,7 +7,8 @@ A safe home for all your data. Access & share your files, calendars, contacts, m
 
 %%LOGO%%
 
-# How to use this image
+How to use this image
+=====================
 
 This image is designed to be used in a micro-service environment. There are two versions of the image you can choose from.
 
@@ -14,7 +16,8 @@ The `apache` tag contains a full Nextcloud installation including an apache web 
 
 The second option is a `fpm` container. It is based on the [php-fpm](https://hub.docker.com/_/php/) image and runs a fastCGI-Process that serves your Nextcloud page. To use this image it must be combined with any webserver that can proxy the http requests to the FastCGI-port of the container.
 
-## Using the apache image
+Using the apache image
+----------------------
 
 The apache image contains a webserver and exposes port 80. To start the container type:
 
@@ -24,7 +27,8 @@ $ docker run -d -p 8080:80 %%IMAGE%%
 
 Now you can access Nextcloud at http://localhost:8080/ from your host system.
 
-## Using the fpm image
+Using the fpm image
+-------------------
 
 To use the fpm image you need an additional web server that can proxy http-request to the fpm-port of the container. For fpm connection this container exposes port 9000. In most cases you might want use another container or your host as proxy. If you use your host you can address your Nextcloud container directly on port 9000. If you use another container, make sure that you add them to the same docker network (via `docker run --network <NAME> ...` or a `docker-compose` file). In both cases you don't want to map the fpm port to you host.
 
@@ -34,11 +38,13 @@ $ docker run -d %%IMAGE%%:fpm
 
 As the fastCGI-Process is not capable of serving static files (style sheets, images, ...) the webserver needs access to these files. This can be achieved with the `volumes-from` option. You can find more information in the docker-compose section.
 
-## Using an external database
+Using an external database
+--------------------------
 
 By default this container uses SQLite for data storage, but the Nextcloud setup wizard (appears on first run) allows connecting to an existing MySQL/MariaDB or PostgreSQL database. You can also link a database container, e. g. `--link my-mysql:mysql`, and then use `mysql` as the database host on setup. More info is in the docker-compose section.
 
-## Persistent data
+Persistent data
+---------------
 
 The Nextcloud installation and all data beyond what lives in the database (file uploads, etc) is stored in the [unnamed docker volume](https://docs.docker.com/engine/tutorials/dockervolumes/#adding-a-data-volume) volume `/var/www/html`. The docker daemon will store that data within the docker directory `/var/lib/docker/volumes/...`. That means your data is saved even if the container crashes, is stopped or deleted.
 
@@ -87,7 +93,8 @@ $ docker run -d \
 	%%IMAGE%%
 ```
 
-## Using the Nextcloud command-line interface
+Using the Nextcloud command-line interface
+------------------------------------------
 
 To use the [Nextcloud command-line interface](https://docs.nextcloud.com/server/12/admin_manual/configuration_server/occ_command.html) (aka. `occ` command):
 
@@ -101,7 +108,8 @@ or for docker-compose:
 $ docker-compose exec --user www-data app php occ
 ```
 
-## Auto configuration via environment variables
+Auto configuration via environment variables
+--------------------------------------------
 
 The %%IMAGE%% image supports auto configuration via environment variables. You can preconfigure everything that is asked on the install page on first run. To enable auto configuration, set your database connection via the following environment variables. ONLY use one database type!
 
@@ -139,7 +147,7 @@ One or more trusted domains can be set by environment variable, too. They will b
 
 The install and update script is only triggered when a default command is used (`apache-foreground` or `php-fpm`). If you use a custom command you have to enable the install / update with
 
--	`NEXTCLOUD_UPDATE` (default: *0*)
+-	`NEXTCLOUD_UPDATE` (default: *0*\)
 
 If you want to use Redis you have to create a separate [Redis](https://hub.docker.com/_/redis/) container in your setup / in your docker-compose file. To inform Nextcloud about the Redis container add:
 
@@ -161,13 +169,15 @@ To use a external SMTP server you have to provide the connection details. To con
 
 Check the [Nextcloud documentation](https://docs.nextcloud.com/server/15/admin_manual/configuration_server/email_configuration.html) for other values to configure SMTP.
 
-# Running this image with docker-compose
+Running this image with docker-compose
+======================================
 
 The easiest way to get a fully featured and functional setup is using a `docker-compose` file. There are too many different possibilities to setup your system, so here are only some examples what you have to look for.
 
 At first make sure you have chosen the right base image (fpm or apache) and added the features you wanted (see below). In every case you want to add a database container and docker volumes to get easy access to your persistent data. When you want to have your server reachable from the internet adding HTTPS-encryption is mandatory! See below for more information.
 
-## Base version - apache
+Base version - apache
+---------------------
 
 This version will use the apache image and add a mariaDB container. The volumes are set to keep your data persistent. This setup provides **no ssl encryption** and is intended to run behind a proxy.
 
@@ -206,7 +216,8 @@ services:
 
 Then run `docker-compose up -d`, now you can access Nextcloud at http://localhost:8080/ from your host system.
 
-## Base version - FPM
+Base version - FPM
+------------------
 
 When using the FPM image you need another container that acts as web server on port 80 and proxies the requests to the Nextcloud container. In this example a simple nginx container is combined with the Nextcloud-fpm image and a MariaDB database container. The data is stored in docker volumes. The nginx container also need access to static files from your Nextcloud installation. It gets access to all the volumes mounted to Nextcloud via the `volumes_from` option.The configuration for nginx is stored in the configuration file `nginx.conf`, that is mounted into the container. An example can be found in the examples section [here](https://github.com/nextcloud/docker/tree/master/.examples).
 
@@ -257,11 +268,67 @@ services:
 
 Then run `docker-compose up -d`, now you can access Nextcloud at http://localhost:8080/ from your host system.
 
-# Make your Nextcloud available from the internet
+Docker Secrets
+==============
+
+As an alternative to passing sensitive information via environment variables, _FILE may be appended to the previously listed environment variables, causing the initialization script to load the values for those variables from files present in the container. In particular, this can be used to load passwords from Docker secrets stored in /run/secrets/<secret_name> files. For example:
+
+```yaml
+version: '3.2'
+
+services:
+  db:
+    image: postgres
+    restart: always
+    volumes:
+      - db:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=nextcloud
+      - POSTGRES_USER=nextcloud
+      - POSTGRES_PASSWORD_FILE=/run/secrets/postgres_password
+    secrets:
+      - postgres_password
+
+  app:
+    image: nextcloud
+    restart: always
+    ports:
+      - 8080:80
+    volumes:
+      - nextcloud:/var/www/html
+    environment:
+      - POSTGRES_HOST=db
+      - POSTGRES_DB=nextcloud
+      - POSTGRES_USER=nextcloud
+      - POSTGRES_PASSWORD_FILE=/run/secrets/postgres_password
+      - NEXTCLOUD_ADMIN_USER=superuser
+      - NEXTCLOUD_ADMIN_PASSWORD_FILE=/run/secrets/admin_password
+    depends_on:
+      - db
+    secrets:
+      - postgres_password
+      - admin_password
+
+volumes:
+  db:
+  nextcloud:
+
+secrets:
+  postgres_password:
+    file: ./postgres_password.txt # put postgresql password to this file
+  admin_password:
+    file: ./admin_password.txt # put admin password to this file
+```
+
+Currently, this is only supported for `NEXTCLOUD_ADMIN_PASSWORD`, `MYSQL_PASSWORD`, `POSTGRES_PASSWORD`.
+
+Make your Nextcloud available from the internet
+===============================================
 
 Until here your Nextcloud is just available from you docker host. If you want you Nextcloud available from the internet adding SSL encryption is mandatory.
 
-## HTTPS - SSL encryption
+HTTPS - SSL encryption
+----------------------
 
 There are many different possibilities to introduce encryption depending on your setup.
 
@@ -269,11 +336,13 @@ We recommend using a reverse proxy in front of our Nextcloud installation. Your 
 
 In our [examples](https://github.com/nextcloud/docker/tree/master/.examples) section we have an example for a fully automated setup using a reverse proxy, a container for [Let's Encrypt](https://letsencrypt.org/) certificate handling, database and Nextcloud. It uses the popular [nginx-proxy](https://github.com/jwilder/nginx-proxy) and [docker-letsencrypt-nginx-proxy-companion](https://github.com/JrCs/docker-letsencrypt-nginx-proxy-companion) containers. Please check the according documentations before using this setup.
 
-# First use
+First use
+=========
 
 When you first access your Nextcloud, the setup wizard will appear and ask you to choose an administrator account, password and the database connection. For the database use `db` as host and `nextcloud` as table and user name. Also enter the password you chose in your `docker-compose.yml` file.
 
-# Update to a newer version
+Update to a newer version
+=========================
 
 Updating the Nextcloud container is done by pulling the new image, throwing away the old container and starting the new one.
 
@@ -297,7 +366,8 @@ $ docker-compose pull
 $ docker-compose up -d
 ```
 
-# Adding Features
+Adding Features
+===============
 
 A lot of people want to use additional functionality inside their Nextcloud installation. If the image does not include the packages you need, you can easily build your own image on top of it. Start your derived image with the `FROM` statement and add whatever you like.
 
@@ -352,7 +422,8 @@ docker-compose up -d
 
 The `--pull` option tells docker to look for new versions of the base image. Then the build instructions inside your `Dockerfile` are run on top of the new image.
 
-# Migrating an existing installation
+Migrating an existing installation
+==================================
 
 You're already using Nextcloud and want to switch to docker? Great! Here are some things to look out for:
 
@@ -409,6 +480,7 @@ You're already using Nextcloud and want to switch to docker? Great! Here are som
 	docker-compose exec app chown -R www-data:www-data /var/www/html/custom_apps
 	```
 
-# Questions / Issues
+Questions / Issues
+==================
 
 If you got any questions or problems using the image, please visit our [Github Repository](https://github.com/nextcloud/docker) and write an issue.
