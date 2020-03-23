@@ -258,9 +258,9 @@ Since database initialization only happens on container startup, this allows us 
 
 ## Additional Extensions
 
-When using the default (Debian-based) variants, installing additional extensions (such as PostGIS) should be as simple as installing the relevant packages (see [github.com/appropriate/docker-postgis](https://github.com/appropriate/docker-postgis/blob/f6d28e4a1871b1f72e1c893ff103f10b6d7cb6e1/10-2.4/Dockerfile) for a concrete example).
+When using the default (Debian-based) variants, installing additional extensions (such as PostGIS) should be as simple as installing the relevant packages (see [github.com/postgis/docker-postgis](https://github.com/postgis/docker-postgis/blob/4eb614133d6aa87bfc5c952d24b7eb1f499e5c7c/12-3.0/Dockerfile) for a concrete example).
 
-When using the Alpine variants, any postgres extension not listed in [postgres-contrib](https://www.postgresql.org/docs/10/static/contrib.html) will need to be compiled in your own image (again, see [github.com/appropriate/docker-postgis](https://github.com/appropriate/docker-postgis/blob/f6d28e4a1871b1f72e1c893ff103f10b6d7cb6e1/10-2.4/alpine/Dockerfile) for a concrete example).
+When using the Alpine variants, any postgres extension not listed in [postgres-contrib](https://www.postgresql.org/docs/10/static/contrib.html) will need to be compiled in your own image (again, see [github.com/postgis/docker-postgis](https://github.com/postgis/docker-postgis/blob/4eb614133d6aa87bfc5c952d24b7eb1f499e5c7c/12-3.0/alpine/Dockerfile) for a concrete example).
 
 # Arbitrary `--user` Notes
 
