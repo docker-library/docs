@@ -16,13 +16,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`beta`](https://github.com/WASdev/ci.docker/blob/487d78ee8b916b85eb0215933c4fd12285c5ac25/beta/Dockerfile)
--	[`kernel`](https://github.com/WASdev/ci.docker/blob/487d78ee8b916b85eb0215933c4fd12285c5ac25/ga/latest/kernel/Dockerfile.ubuntu.ibmjava8)
--	[`full`, `latest`](https://github.com/WASdev/ci.docker/blob/487d78ee8b916b85eb0215933c4fd12285c5ac25/ga/latest/full/Dockerfile.ubuntu.ibmjava8)
--	[`20.0.0.3-kernel-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/487d78ee8b916b85eb0215933c4fd12285c5ac25/ga/20.0.0.3/kernel/Dockerfile.ubuntu.ibmjava8)
--	[`20.0.0.3-full-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/487d78ee8b916b85eb0215933c4fd12285c5ac25/ga/20.0.0.3/full/Dockerfile.ubuntu.ibmjava8)
--	[`19.0.0.12-kernel-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/487d78ee8b916b85eb0215933c4fd12285c5ac25/ga/19.0.0.12/kernel/Dockerfile.ubuntu.ibmjava8)
--	[`19.0.0.12-full-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/487d78ee8b916b85eb0215933c4fd12285c5ac25/ga/19.0.0.12/full/Dockerfile.ubuntu.ibmjava8)
+-	[`beta`](https://github.com/WASdev/ci.docker/blob/97bec01666d1946ec35337080a28d0c3a13214f7/beta/Dockerfile)
+-	[`kernel`](https://github.com/WASdev/ci.docker/blob/97bec01666d1946ec35337080a28d0c3a13214f7/ga/latest/kernel/Dockerfile.ubuntu.ibmjava8)
+-	[`full`, `latest`](https://github.com/WASdev/ci.docker/blob/97bec01666d1946ec35337080a28d0c3a13214f7/ga/latest/full/Dockerfile.ubuntu.ibmjava8)
+-	[`20.0.0.3-kernel-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/97bec01666d1946ec35337080a28d0c3a13214f7/ga/20.0.0.3/kernel/Dockerfile.ubuntu.ibmjava8)
+-	[`20.0.0.3-full-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/97bec01666d1946ec35337080a28d0c3a13214f7/ga/20.0.0.3/full/Dockerfile.ubuntu.ibmjava8)
+-	[`19.0.0.12-kernel-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/97bec01666d1946ec35337080a28d0c3a13214f7/ga/19.0.0.12/kernel/Dockerfile.ubuntu.ibmjava8)
+-	[`19.0.0.12-full-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/97bec01666d1946ec35337080a28d0c3a13214f7/ga/19.0.0.12/full/Dockerfile.ubuntu.ibmjava8)
 
 # Quick reference
 
