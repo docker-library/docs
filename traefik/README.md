@@ -16,13 +16,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`v2.2.0-rc4-windowsservercore-1809`, `2.2.0-rc4-windowsservercore-1809`, `v2.2-windowsservercore-1809`, `2.2-windowsservercore-1809`, `chevrotin-windowsservercore-1809`](https://github.com/containous/traefik-library-image/blob/1462e946e3f26e1f9e1304b871ae5601f2ea51c9/windows/1809/Dockerfile)
--	[`v2.2.0-rc4`, `2.2.0-rc4`, `v2.2`, `2.2`, `chevrotin`](https://github.com/containous/traefik-library-image/blob/1462e946e3f26e1f9e1304b871ae5601f2ea51c9/alpine/Dockerfile)
--	[`v2.1.9-windowsservercore-1809`, `2.1.9-windowsservercore-1809`, `v2.1-windowsservercore-1809`, `2.1-windowsservercore-1809`, `cantal-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/containous/traefik-library-image/blob/e1cd38299fd7732c7327cf7eb6300b6a14839b9a/windows/1809/Dockerfile)
--	[`v2.1.9`, `2.1.9`, `v2.1`, `2.1`, `cantal`, `latest`](https://github.com/containous/traefik-library-image/blob/e1cd38299fd7732c7327cf7eb6300b6a14839b9a/alpine/Dockerfile)
--	[`v1.7.23-windowsservercore-1809`, `1.7.23-windowsservercore-1809`, `v1.7-windowsservercore-1809`, `1.7-windowsservercore-1809`, `maroilles-windowsservercore-1809`](https://github.com/containous/traefik-library-image/blob/965cd47f7962448401b402d1e251e19fe2135faa/windows/1809/Dockerfile)
--	[`v1.7.23-alpine`, `1.7.23-alpine`, `v1.7-alpine`, `1.7-alpine`, `maroilles-alpine`](https://github.com/containous/traefik-library-image/blob/965cd47f7962448401b402d1e251e19fe2135faa/alpine/Dockerfile)
--	[`v1.7.23`, `1.7.23`, `v1.7`, `1.7`, `maroilles`](https://github.com/containous/traefik-library-image/blob/965cd47f7962448401b402d1e251e19fe2135faa/scratch/Dockerfile)
+-	[`v2.2.0-windowsservercore-1809`, `2.2.0-windowsservercore-1809`, `v2.2-windowsservercore-1809`, `2.2-windowsservercore-1809`, `chevrotin-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/containous/traefik-library-image/blob/6dcd8fe17189e8076ee052a614dda5550afb2930/windows/1809/Dockerfile)
+-	[`v2.2.0`, `2.2.0`, `v2.2`, `2.2`, `chevrotin`, `latest`](https://github.com/containous/traefik-library-image/blob/6dcd8fe17189e8076ee052a614dda5550afb2930/alpine/Dockerfile)
+-	[`v1.7.24-windowsservercore-1809`, `1.7.24-windowsservercore-1809`, `v1.7-windowsservercore-1809`, `1.7-windowsservercore-1809`, `maroilles-windowsservercore-1809`](https://github.com/containous/traefik-library-image/blob/7b90db1b9b495c897bb92a8d3de4f98957fd460d/windows/1809/Dockerfile)
+-	[`v1.7.24-alpine`, `1.7.24-alpine`, `v1.7-alpine`, `1.7-alpine`, `maroilles-alpine`](https://github.com/containous/traefik-library-image/blob/7b90db1b9b495c897bb92a8d3de4f98957fd460d/alpine/Dockerfile)
+-	[`v1.7.24`, `1.7.24`, `v1.7`, `1.7`, `maroilles`](https://github.com/containous/traefik-library-image/blob/7b90db1b9b495c897bb92a8d3de4f98957fd460d/scratch/Dockerfile)
 
 # Quick reference
 
