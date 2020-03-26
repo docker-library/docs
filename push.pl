@@ -7,8 +7,9 @@ use open ':encoding(utf8)';
 use File::Basename qw(basename fileparse);
 use File::Temp;
 use Getopt::Long;
+use Mojo::File;
 use Mojo::UserAgent;
-use Mojo::Util qw(b64_encode decode encode slurp spurt trim);
+use Mojo::Util qw(b64_encode decode encode trim);
 
 use Term::UI;
 use Term::ReadLine;
@@ -43,7 +44,7 @@ unless (defined $password) {
 }
 
 my $login = $ua->post('https://hub.docker.com/v2/users/login/' => {} => json => { username => $username, password => $password });
-die 'login failed' unless $login->success;
+die 'login failed' unless $login->res->is_success;
 
 my $token = $login->res->json->{token};
 
@@ -57,7 +58,7 @@ for my $cookie (@{ $login->res->cookies }) {
 die 'missing CSRF token' unless defined $csrf;
 
 my $attemptLogin = $ua->post('https://hub.docker.com/attempt-login/' => {} => json => { jwt => $token });
-die 'attempt-login failed' unless $attemptLogin->success;
+die 'attempt-login failed' unless $attemptLogin->res->is_success;
 
 my $authorizationHeader = {
 	Authorization => "JWT $token",
@@ -65,7 +66,7 @@ my $authorizationHeader = {
 };
 
 my $userData = $ua->get('https://hub.docker.com/v2/user/' => $authorizationHeader);
-die 'user failed' unless $userData->success;
+die 'user failed' unless $userData->res->is_success;
 $userData = $userData->res->json;
 
 sub prompt_for_edit {
@@ -73,7 +74,7 @@ sub prompt_for_edit {
 	my $proposedFile = shift;
 	my $lengthLimit = shift // 0;
 	
-	my $proposedText = slurp $proposedFile or warn 'missing ' . $proposedFile;
+	my $proposedText = Mojo::File->new($proposedFile)->slurp or warn 'missing ' . $proposedFile;
 	$proposedText = trim(decode('UTF-8', $proposedText));
 	
 	# remove our warning about generated files (Hub doesn't support HTML comments in Markdown)
@@ -104,11 +105,11 @@ sub prompt_for_edit {
 	my @proposedFileBits = fileparse($proposedFile, qr!\.[^.]*!);
 	my $file = File::Temp->new(SUFFIX => '-' . basename($proposedFileBits[1]) . '-current' . $proposedFileBits[2]);
 	my $filename = $file->filename;
-	spurt encode('UTF-8', $currentText . "\n"), $filename;
+	Mojo::File->new($filename)->spurt(encode('UTF-8', $currentText . "\n"));
 	
 	my $tempProposedFile = File::Temp->new(SUFFIX => '-' . basename($proposedFileBits[1]) . '-proposed' . $proposedFileBits[2]);
 	my $tempProposedFilename = $tempProposedFile->filename;
-	spurt encode('UTF-8', $proposedText . "\n"), $tempProposedFilename;
+	Mojo::File->new($tempProposedFilename)->spurt(encode('UTF-8', $proposedText . "\n"));
 	
 	system(qw(git --no-pager diff --no-index), $filename, $tempProposedFilename);
 	
@@ -135,7 +136,7 @@ sub prompt_for_edit {
 	
 	if ($reply eq 'vimdiff') {
 		system('vimdiff', $tempProposedFilename, $filename) == 0 or die "vimdiff on $filename and $proposedFile failed";
-		return trim(decode('UTF-8', slurp($filename)));
+		return trim(decode('UTF-8', Mojo::File->new($filename)->slurp));
 	}
 	
 	return $currentText;
@@ -173,9 +174,9 @@ while (my $repo = shift) { # 'library/hylang', 'tianon/perl', etc
 			}
 		}
 		if (-f $repoLogo120) {
-			my $proposedLogo = slurp($repoLogo120);
+			my $proposedLogo = Mojo::File->new($repoLogo120)->slurp;
 			my $currentLogo = $ua->get('https://d1q6f0aelx0por.cloudfront.net/product-logos/' . join('-', split(m{/}, $repo)) . '-logo.png', { 'Cache-Control' => 'no-cache' });
-			$currentLogo = ($currentLogo->success ? $currentLogo->res->body : undef);
+			$currentLogo = ($currentLogo->res->is_success ? $currentLogo->res->body : undef);
 			
 			if ($currentLogo && $currentLogo eq $proposedLogo) {
 				say 'no change to ' . $repoName . ' logo; skipping';
@@ -188,13 +189,13 @@ while (my $repo = shift) { # 'library/hylang', 'tianon/perl', etc
 						'content_type' => 'image/png',
 						'file_ext' => 'png',
 					});
-				warn 'warning: put to ' . $logoUrl . ' failed: ' . $logoPut->res->text unless $logoPut->success;
+				warn 'warning: put to ' . $logoUrl . ' failed: ' . $logoPut->res->text unless $logoPut->res->is_success;
 			}
 		}
 	}
 	
 	my $repoTx = $ua->get($repoUrl => $authorizationHeader);
-	warn 'warning: failed to get: ' . $repoUrl . ' (skipping)' and next unless $repoTx->success;
+	warn 'warning: failed to get: ' . $repoUrl . ' (skipping)' and next unless $repoTx->res->is_success;
 	
 	my $repoDetails = $repoTx->res->json;
 	$repoDetails->{description} //= '';
@@ -202,7 +203,7 @@ while (my $repo = shift) { # 'library/hylang', 'tianon/perl', etc
 	
 	my $hubShort = prompt_for_edit($repoDetails->{description}, $repoName . '/README-short.txt');
 	my $hubLong = prompt_for_edit($repoDetails->{full_description}, $repoName . '/README.md', $hubLengthLimit);
-
+	
 	say 'no change to ' . $repoName . '; skipping' and next if $repoDetails->{description} eq $hubShort and $repoDetails->{full_description} eq $hubLong;
 	
 	say 'updating ' . $repoName;
@@ -211,5 +212,5 @@ while (my $repo = shift) { # 'library/hylang', 'tianon/perl', etc
 			description => $hubShort,
 			full_description => $hubLong,
 		});
-	warn 'patch to ' . $repoUrl . ' failed: ' . $repoPatch->res->text and next unless $repoPatch->success;
+	warn 'patch to ' . $repoUrl . ' failed: ' . $repoPatch->res->text and next unless $repoPatch->res->is_success;
 }

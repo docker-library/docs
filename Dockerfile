@@ -19,7 +19,7 @@ RUN cpanm Digest::SHA Module::Signature
 # reinstall cpanm itself, for good measure
 RUN cpanm App::cpanminus
 
-RUN cpanm Mojolicious@5.80
+RUN cpanm Mojolicious@8.35
 
 RUN cpanm EV
 RUN cpanm IO::Socket::IP
