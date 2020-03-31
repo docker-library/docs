@@ -2,9 +2,7 @@
 
 The images in this repository contain WebSphere Liberty application server and the IBM Java Runtime Environment. For more information please see our [official repository](https://github.com/WASdev/ci.docker).
 
-This repository contains WebSphere Liberty based on top of IBM Java 8 with Ubuntu images
-only. See [here](https://hub.docker.com/r/ibmcom/websphere-liberty/) for WebSphere Liberty based on Red Hat's Universal Base
-Image, which includes additional java options.
+This repository contains WebSphere Liberty based on top of IBM Java 8 with Ubuntu images only. See [here](https://hub.docker.com/r/ibmcom/websphere-liberty/) for WebSphere Liberty based on Red Hat's Universal Base Image, which includes additional java options.
 
 # Image User
 
@@ -51,12 +49,7 @@ Please note that this pattern will duplicate the docker layers for those artifac
 
 There are multiple tags available in this repository. The image with the tag `beta` contains the contents of the install archive for the latest monthly beta. The other images are all based on the latest generally available fix pack.
 
-The `kernel` image contains just the Liberty kernel and no additional runtime
-features. This image is the recommended basis for custom built images, so that
-they can contain only the features required for a specific application. For
-example, the following Dockerfile starts with this image, copies in the
-`server.xml` that lists the features required by the application, and then uses
-the `configure.sh` script to download those features from the online repository.
+The `kernel` image contains just the Liberty kernel and no additional runtime features. This image is the recommended basis for custom built images, so that they can contain only the features required for a specific application. For example, the following Dockerfile starts with this image, copies in the `server.xml` that lists the features required by the application, and then uses the `configure.sh` script to download those features from the online repository.
 
 ```dockerfile
 FROM %%IMAGE%%:kernel
@@ -109,18 +102,10 @@ $ docker run -d -p 80:9080 \
 
 # Using Spring Boot with WebSphere Liberty
 
-The `full` images introduce capabilities specific to the support of all Liberty
-features, including Spring Boot applications. This image thus includes the
-`springBootUtility` used to separate Spring Boot applications into thin
-applications and dependency library caches. To get these same capabilities
-without including features you are not using, build instead on top of `kernel` images
-and run configure.sh for your server.xml, ensuring that it enables either the
-`springBoot-1.5` or `springBoot-2.0` feature.
+The `full` images introduce capabilities specific to the support of all Liberty features, including Spring Boot applications. This image thus includes the `springBootUtility` used to separate Spring Boot applications into thin applications and dependency library caches. To get these same capabilities without including features you are not using, build instead on top of `kernel` images and run configure.sh for your server.xml, ensuring that it enables either the `springBoot-1.5` or `springBoot-2.0` feature.
 
 
-To elaborate these capabilities this
-section assumes the standalone Spring Boot 2.0.x application
-`hellospringboot.jar` exists in the `/tmp` directory.
+To elaborate these capabilities this section assumes the standalone Spring Boot 2.0.x application `hellospringboot.jar` exists in the `/tmp` directory.
 
 1.	A Spring Boot application JAR deploys to the `dropins/spring` directory within the default server configuration, not the `dropins` directory. Liberty allows one Spring Boot application per server configuration. You can create a Spring Boot application layer over this image by adding the application JAR to the `dropins/spring` directory. In this example we copied `hellospringboot.jar` from `/tmp` to the same directory containing the following Dockerfile.
 
@@ -128,9 +113,9 @@ section assumes the standalone Spring Boot 2.0.x application
 	FROM %%IMAGE%%:kernel
 
 	COPY --chown=1001:0 hellospringboot.jar /config/dropins/spring/
-    COPY --chown=1001:0 server.xml /config/
-    
-    RUN configure.sh
+	COPY --chown=1001:0 server.xml /config/
+
+	RUN configure.sh
 	```
 
 	The custom image can be built and run as follows.
@@ -147,7 +132,7 @@ section assumes the standalone Spring Boot 2.0.x application
 	```dockerfile
 	FROM %%IMAGE%%:kernel as staging
 	COPY --chown=1001:0 hellospringboot.jar /staging/myFatApp.jar
-    COPY --chown=1001:0 server.xml /config/
+	COPY --chown=1001:0 server.xml /config/
 	RUN configure.sh && springBootUtility thin \
 	   --sourceAppPath=/staging/myFatApp.jar \
 	   --targetThinAppPath=/staging/myThinApp.jar \
@@ -199,11 +184,7 @@ docker run -d -p 80:9080 -p 443:9443 \
 
 # Changing locale
 
-The base Ubuntu image does not include additional language packs. To use an
-alternative locale, build your own image that installs the required language
-pack and then sets the `LANG` environment variable. For example, the following
-Dockerfile starts with the `%%IMAGE%%:full` image, installs the Portuguese
-language pack, and sets Brazilian Portuguese as the default locale:
+The base Ubuntu image does not include additional language packs. To use an alternative locale, build your own image that installs the required language pack and then sets the `LANG` environment variable. For example, the following Dockerfile starts with the `%%IMAGE%%:full` image, installs the Portuguese language pack, and sets Brazilian Portuguese as the default locale:
 
 ```dockerfile
 FROM %%IMAGE%%:full
