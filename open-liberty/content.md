@@ -2,7 +2,8 @@
 
 The images in this repository contain Open Liberty. For more information about Open Liberty, see the [Open Liberty Website](https://openliberty.io/) site.
 
-This repository contains OpenLiberty based on top of OpenJDK 8 with Eclipse OpenJ9 JRE images only. See
+This repository contains OpenLiberty based on top of OpenJDK 8 Eclipse
+OpenJ9 with Ubuntu images only. See
 [here](https://hub.docker.com/r/openliberty/open-liberty) for Open Liberty
 based on Red Hat's Universal Base Image, which includes additional java options.
 
@@ -109,14 +110,15 @@ $ docker run -d -p 80:9080 \
   %%IMAGE%%:full
 ```
 
-# Using Spring Boot with `kernel` images
+# Using Spring Boot with Open Liberty
 
 The `full` images introduce capabilities specific to the support of all Liberty
 features, including Spring Boot applications. This image thus includes the
 `springBootUtility` used to separate Spring Boot applications into thin
 applications and dependency library caches. To get these same capabilities
 without including features you are not using, build instead on top of `kernel` images
-and run configure.sh for your server.xml.
+and run configure.sh for your server.xml, ensuring that it enables either the
+`springBoot-1.5` or `springBoot-2.0` feature.
 
 To elaborate these capabilities this
 section assumes the standalone Spring Boot 2.0.x application
