@@ -16,8 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.0.2`, `4.0`, `latest`](https://github.com/neo4j/docker-neo4j-publish/blob/56d28624bc264497ed7fae8253a52a92611c6fee/4.0.2/community/Dockerfile)
--	[`4.0.2-enterprise`, `4.0-enterprise`, `enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/56d28624bc264497ed7fae8253a52a92611c6fee/4.0.2/enterprise/Dockerfile)
+-	[`4.0.3`, `4.0`, `latest`](https://github.com/neo4j/docker-neo4j-publish/blob/51ed84f02e569a0d86c6e634fab3ae6540806a7e/4.0.3/community/Dockerfile)
+-	[`4.0.3-enterprise`, `4.0-enterprise`, `enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/51ed84f02e569a0d86c6e634fab3ae6540806a7e/4.0.3/enterprise/Dockerfile)
+-	[`4.0.2`](https://github.com/neo4j/docker-neo4j-publish/blob/56d28624bc264497ed7fae8253a52a92611c6fee/4.0.2/community/Dockerfile)
+-	[`4.0.2-enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/56d28624bc264497ed7fae8253a52a92611c6fee/4.0.2/enterprise/Dockerfile)
 -	[`4.0.1`](https://github.com/neo4j/docker-neo4j-publish/blob/13c288e9c36ee22e682b459fb218c9239e2c1083/4.0.1/community/Dockerfile)
 -	[`4.0.1-enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/13c288e9c36ee22e682b459fb218c9239e2c1083/4.0.1/enterprise/Dockerfile)
 -	[`4.0.0`](https://github.com/neo4j/docker-neo4j-publish/blob/685fb314ef8e451217b6806028b9ac4dbf44d3fc/4.0.0/community/Dockerfile)
