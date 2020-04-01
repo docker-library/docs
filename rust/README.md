@@ -98,6 +98,24 @@ Note: Some shared libraries may need to be installed as shown in the installatio
 
 This method will create an image that is less than 200mb. If you switch to using the Alpine-based rust image, you might be able to save another 60mb.
 
+This image is now being rebuilt each time you change a line of code. You can fetch the dependencies in a previous step to optimize your development workflow:
+
+```dockerfile
+FROM rust:1.40 as builder
+ENV USER=root
+WORKDIR /usr/src/myapp
+RUN cargo init
+COPY Cargo.toml /code/Cargo.toml
+RUN cargo fetch
+COPY . .
+RUN cargo install --path .
+
+FROM debian:buster-slim
+RUN apt-get update && apt-get install -y extra-runtime-dependencies
+COPY --from=builder /usr/local/cargo/bin/myapp /usr/local/bin/myapp
+CMD ["myapp"]
+```
+
 See https://docs.docker.com/develop/develop-images/multistage-build/ for more information.
 
 ## Compile your app inside the Docker container
