@@ -1,1 +1,1 @@
-Mountebank is the only open source service virtualization tool.
+Mountebank is an open source tool to provide cross-platform, multi-protocol test doubles.
