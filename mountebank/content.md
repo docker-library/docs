@@ -25,7 +25,6 @@ $ docker start -a mountebank
 
 By default mountebank doesn't have any imposters enabled, so is needed to create a custom imposter. Suppose you have the custom imposter at `/path/to/imposters/imposters.json`
 
-
 ```json
 {
   "imposters": [
@@ -58,11 +57,12 @@ By default mountebank doesn't have any imposters enabled, so is needed to create
 }
 
 ```
+
 With that you can run the docker image with:
 
 ```console
 $ docker run \
-    -v /path/to/imposters:/imposters 
+    -v /path/to/imposters:/imposters
     -p 8080:8080 \
     --name mountebank \
     -t %%IMAGE%% \
@@ -91,4 +91,3 @@ To start your Mountebank instance, go in the directory of the `docker-compose.ym
 ```console
 docker-compose up -d
 ```
-
