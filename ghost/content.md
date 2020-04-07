@@ -22,7 +22,7 @@ If you'd like to be able to access the instance from the host without the contai
 $ docker run -d --name some-ghost -e url=http://localhost:3001 -p 3001:2368 %%IMAGE%%
 ```
 
-Then, access it via `http://localhost:3001` or `http://host-ip:3001` in a browser.
+If all goes well, you'll be able to access your new site on `http://localhost:3001` and `http://localhost:3001/ghost` to access Ghost Admin (or `http://host-ip:3001` and `http://host-ip:3001/ghost`, respectively).
 
 ### Upgrading Ghost
 
