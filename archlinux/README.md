@@ -16,7 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `20200306`](https://github.com/archlinux/archlinux-docker/blob/7cc3899f3be9e2da0bc3c03f82f0f570df9ce908/Dockerfile)
+-	[`latest`, `20200407`](https://github.com/archlinux/archlinux-docker/blob/c136f3e502204c8d61fbfb48c2c64fa76c4f143c/Dockerfile)
+-	[`20200306`](https://github.com/archlinux/archlinux-docker/blob/7cc3899f3be9e2da0bc3c03f82f0f570df9ce908/Dockerfile)
 -	[`20200205`](https://github.com/archlinux/archlinux-docker/blob/38da0535b738f00ec3beeb18fef27758744b7f13/Dockerfile)
 -	[`20200106`](https://github.com/archlinux/archlinux-docker/blob/5cda6709af009df0c1db0022629b45a2ddc9f717/Dockerfile)
 -	[`20191205`](https://github.com/archlinux/archlinux-docker/blob/b285a662b4fb81b8614f8705d7ddd7681b8d530b/Dockerfile)
