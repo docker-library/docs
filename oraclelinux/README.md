@@ -16,13 +16,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.1`, `8`](https://github.com/oracle/container-images/blob/7a6d6716e9143eabc13a8c22c2d5771d71ef6575/8.1/Dockerfile)
--	[`8.0`](https://github.com/oracle/container-images/blob/7a6d6716e9143eabc13a8c22c2d5771d71ef6575/8.0/Dockerfile)
--	[`8-slim`](https://github.com/oracle/container-images/blob/7a6d6716e9143eabc13a8c22c2d5771d71ef6575/8-slim/Dockerfile)
--	[`7.7`, `7`, `latest`](https://github.com/oracle/container-images/blob/7a6d6716e9143eabc13a8c22c2d5771d71ef6575/7.7/Dockerfile)
--	[`7-slim`](https://github.com/oracle/container-images/blob/7a6d6716e9143eabc13a8c22c2d5771d71ef6575/7-slim/Dockerfile)
--	[`6.10`, `6`](https://github.com/oracle/container-images/blob/7a6d6716e9143eabc13a8c22c2d5771d71ef6575/6.10/Dockerfile)
--	[`6-slim`](https://github.com/oracle/container-images/blob/7a6d6716e9143eabc13a8c22c2d5771d71ef6575/6-slim/Dockerfile)
+-	[`8.1`, `8`](https://github.com/oracle/container-images/blob/b22bc0aae247d85ec26d2acf9d5e2e801fc4ab22/8.1/Dockerfile)
+-	[`8.0`](https://github.com/oracle/container-images/blob/b22bc0aae247d85ec26d2acf9d5e2e801fc4ab22/8.0/Dockerfile)
+-	[`8-slim`](https://github.com/oracle/container-images/blob/b22bc0aae247d85ec26d2acf9d5e2e801fc4ab22/8-slim/Dockerfile)
+-	[`7.8`, `7`, `latest`](https://github.com/oracle/container-images/blob/b22bc0aae247d85ec26d2acf9d5e2e801fc4ab22/7.8/Dockerfile)
+-	[`7-slim`](https://github.com/oracle/container-images/blob/b22bc0aae247d85ec26d2acf9d5e2e801fc4ab22/7-slim/Dockerfile)
+-	[`6.10`, `6`](https://github.com/oracle/container-images/blob/b22bc0aae247d85ec26d2acf9d5e2e801fc4ab22/6.10/Dockerfile)
+-	[`6-slim`](https://github.com/oracle/container-images/blob/b22bc0aae247d85ec26d2acf9d5e2e801fc4ab22/6-slim/Dockerfile)
 
 # Quick reference
 
