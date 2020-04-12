@@ -94,7 +94,7 @@ Note the second `FROM` instruction - this produces a much smaller image by simpl
 
 The `caddy-builder` script is used to [build a new Caddy entrypoint](https://github.com/caddyserver/caddy/blob/71e81d262bc34545f73f1380bc5d078d83d1570f/cmd/caddy/main.go#L15..L25), with the provided modules. You can specify just a module name, or a name with a version (separated by `@`).
 
-Note that the "standard" Caddy modules ([`github.com/caddyserver/caddy/v2/modules/standard`](https://github.com/caddyserver/caddy/tree/v2/modules/standard)) are always included.
+Note that the "standard" Caddy modules ([`github.com/caddyserver/caddy/master/modules/standard`](https://github.com/caddyserver/caddy/tree/master/modules/standard)) are always included.
 
 ### Graceful reloads
 
