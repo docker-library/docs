@@ -32,12 +32,6 @@ WARNING:
 -	[`2.5.8-slim-stretch`, `2.5-slim-stretch`](https://github.com/docker-library/ruby/blob/a564feaaee4c8647c299ab11d41498468bb9af7b/2.5/stretch/slim/Dockerfile)
 -	[`2.5.8-alpine3.11`, `2.5-alpine3.11`, `2.5.8-alpine`, `2.5-alpine`](https://github.com/docker-library/ruby/blob/a564feaaee4c8647c299ab11d41498468bb9af7b/2.5/alpine3.11/Dockerfile)
 -	[`2.5.8-alpine3.10`, `2.5-alpine3.10`](https://github.com/docker-library/ruby/blob/a564feaaee4c8647c299ab11d41498468bb9af7b/2.5/alpine3.10/Dockerfile)
--	[`2.4.10-buster`, `2.4-buster`, `2.4.10`, `2.4`](https://github.com/docker-library/ruby/blob/a564feaaee4c8647c299ab11d41498468bb9af7b/2.4/buster/Dockerfile)
--	[`2.4.10-slim-buster`, `2.4-slim-buster`, `2.4.10-slim`, `2.4-slim`](https://github.com/docker-library/ruby/blob/a564feaaee4c8647c299ab11d41498468bb9af7b/2.4/buster/slim/Dockerfile)
--	[`2.4.10-stretch`, `2.4-stretch`](https://github.com/docker-library/ruby/blob/a564feaaee4c8647c299ab11d41498468bb9af7b/2.4/stretch/Dockerfile)
--	[`2.4.10-slim-stretch`, `2.4-slim-stretch`](https://github.com/docker-library/ruby/blob/a564feaaee4c8647c299ab11d41498468bb9af7b/2.4/stretch/slim/Dockerfile)
--	[`2.4.10-alpine3.11`, `2.4-alpine3.11`, `2.4.10-alpine`, `2.4-alpine`](https://github.com/docker-library/ruby/blob/a564feaaee4c8647c299ab11d41498468bb9af7b/2.4/alpine3.11/Dockerfile)
--	[`2.4.10-alpine3.10`, `2.4-alpine3.10`](https://github.com/docker-library/ruby/blob/a564feaaee4c8647c299ab11d41498468bb9af7b/2.4/alpine3.10/Dockerfile)
 
 # Quick reference
 
