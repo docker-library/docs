@@ -12,7 +12,7 @@ Caddy requires write access to two locations: a [data directory](https://caddyse
 
 From the docs:
 
-> The data directory must not be treated like a cache. Its contents are not ephemeral or merely for the sake of performance. Caddy stores TLS certificates, private keys, OCSP staples, and other necessary information to the data directory. It should not be purged without an understanding of the implications.
+> The data directory must not be treated as a cache. Its contents are not ephemeral or merely for the sake of performance. Caddy stores TLS certificates, private keys, OCSP staples, and other necessary information to the data directory. It should not be purged without an understanding of the implications.
 
 This image provides for two mount-points for volumes: `/data` and `/config`.
 
@@ -27,9 +27,9 @@ The default config file simply serves files from `/usr/share/caddy`, so if you w
 ```console
 $ echo "hello world" > index.html
 $ docker run -d -p 80:80 \
-    -v $(pwd)/index.html:/usr/share/caddy/index.html \
+    -v $PWD/index.html:/usr/share/caddy/index.html \
     -v caddy_data:/data \
-    caddy/caddy
+    %%IMAGE%%
 ...
 $ curl http://localhost/
 hello world
@@ -39,9 +39,9 @@ To override the default [`Caddyfile`](https://github.com/caddyserver/dist/blob/m
 
 ```console
 $ docker run -d -p 80:80 \
-    -v $(pwd)/Caddyfile:/etc/caddy/Caddyfile \
+    -v $PWD/Caddyfile:/etc/caddy/Caddyfile \
     -v caddy_data:/data \
-    caddy/caddy
+    %%IMAGE%%
 ```
 
 ### Automatic TLS with the Caddy image
@@ -53,7 +53,7 @@ $ docker run -d -p 80:80 -p 443:443 \
     -v /site:/usr/share/caddy \
     -v caddy_data:/data \
     -v caddy_config:/config \
-    caddy/caddy caddy file-server --domain example.com
+    %%IMAGE%% caddy file-server --domain example.com
 ```
 
 The key here is that Caddy is able to listen to ports `80` and `443`, both required for the ACME HTTP challenge.
@@ -62,11 +62,11 @@ See [Caddy's docs](https://caddyserver.com/docs/automatic-https) for more inform
 
 ### Building your own Caddy-based image
 
-Most users deploying production sites will not want to rely on mounting files into a container, but will instead base their own images on `caddy/caddy`:
+Most users deploying production sites will not want to rely on mounting files into a container, but will instead base their own images on `%%IMAGE%%`:
 
 ```Dockerfile
 # note: never use the :latest tag in a production site
-FROM caddy/caddy:v2.0.0
+FROM %%IMAGE%%:2.0.0
 
 COPY Caddyfile /etc/caddy/Caddyfile
 COPY site /site
@@ -79,18 +79,18 @@ Caddy is extendable through the use of "modules". See https://caddyserver.com/do
 You can use the `:builder` image as a short-cut to building a new Caddy binary:
 
 ```Dockerfile
-FROM caddy/caddy:v2.0.0-builder AS builder
+FROM %%IMAGE%%:2.0.0-builder AS builder
 
 RUN caddy-builder \
     github.com/caddyserver/nginx-adapter \
     github.com/hairyhenderson/caddy-teapot-module@v0.0.1
 
-FROM caddy/caddy:v2.0.0
+FROM %%IMAGE%%:2.0.0
 
 COPY --from=builder /usr/bin/caddy /usr/bin/caddy
 ```
 
-Note the second `FROM` instruction - this produces a much smaller image by simply overlaying the newly-built binary on top of the the regular `caddy/caddy` image.
+Note the second `FROM` instruction - this produces a much smaller image by simply overlaying the newly-built binary on top of the the regular `%%IMAGE%%` image.
 
 The `caddy-builder` script is used to [build a new Caddy entrypoint](https://github.com/caddyserver/caddy/blob/71e81d262bc34545f73f1380bc5d078d83d1570f/cmd/caddy/main.go#L15..L25), with the provided modules. You can specify just a module name, or a name with a version (separated by `@`).
 
