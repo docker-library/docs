@@ -16,7 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.0.0-rc.3`, `2.0.0-rc.3-alpine`, `alpine`, `latest`](https://github.com/caddyserver/caddy-docker/blob/82359bcbcd3d43b8703605afc60370b6c5f87d1f/alpine/Dockerfile)
+-	[`2.0.0-rc.3`, `2.0.0-rc.3-alpine`, `alpine`, `latest`](https://github.com/caddyserver/caddy-docker/blob/b665b72798e3e26c9483d3df80af3515e1c0c016/alpine/Dockerfile)
 -	[`2.0.0-rc.3-builder`, `builder`](https://github.com/caddyserver/caddy-docker/blob/82359bcbcd3d43b8703605afc60370b6c5f87d1f/builder/Dockerfile)
 
 # Quick reference
@@ -31,7 +31,7 @@ WARNING:
 	[the Caddy Docker Maintainers](https://github.com/caddyserver/caddy-docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/caddy/)
+	[`amd64`](https://hub.docker.com/r/amd64/caddy/), [`arm32v6`](https://hub.docker.com/r/arm32v6/caddy/), [`arm32v7`](https://hub.docker.com/r/arm32v7/caddy/), [`arm64v8`](https://hub.docker.com/r/arm64v8/caddy/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/caddy/` directory](https://github.com/docker-library/repo-info/blob/master/repos/caddy) ([history](https://github.com/docker-library/repo-info/commits/master/repos/caddy))  
