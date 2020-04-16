@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.1.1`, `4.1`, `4`, `latest`](https://github.com/docker-library/redmine/blob/16b5509c279ef9edef03ce62ce010d37aa6631d4/4.1/Dockerfile)
+-	[`4.1.1`, `4.1`, `4`, `latest`](https://github.com/docker-library/redmine/blob/fc2372f36ad91692c845d62fb1973d8ff8f99a11/4.1/Dockerfile)
 -	[`4.1.1-passenger`, `4.1-passenger`, `4-passenger`, `passenger`](https://github.com/docker-library/redmine/blob/fe32a0b56f5eacae086030de5e0ca19ea026b51b/4.1/passenger/Dockerfile)
 -	[`4.1.1-alpine`, `4.1-alpine`, `4-alpine`, `alpine`](https://github.com/docker-library/redmine/blob/1dae7ff59aef57ec379bbada0fa01a193fadb847/4.1/alpine/Dockerfile)
--	[`4.0.7`, `4.0`](https://github.com/docker-library/redmine/blob/0b8bccf05d7ed2c304eb3c4623de2995fa2a8a29/4.0/Dockerfile)
+-	[`4.0.7`, `4.0`](https://github.com/docker-library/redmine/blob/fc2372f36ad91692c845d62fb1973d8ff8f99a11/4.0/Dockerfile)
 -	[`4.0.7-passenger`, `4.0-passenger`](https://github.com/docker-library/redmine/blob/fd5541e76d7f2230484c19a784b8f9ee884559ce/4.0/passenger/Dockerfile)
 -	[`4.0.7-alpine`, `4.0-alpine`](https://github.com/docker-library/redmine/blob/1dae7ff59aef57ec379bbada0fa01a193fadb847/4.0/alpine/Dockerfile)
 
@@ -35,7 +35,7 @@ WARNING:
 	[the Docker Community](https://github.com/docker-library/redmine)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/redmine/), [`arm32v5`](https://hub.docker.com/r/arm32v5/redmine/), [`arm32v7`](https://hub.docker.com/r/arm32v7/redmine/), [`arm64v8`](https://hub.docker.com/r/arm64v8/redmine/), [`i386`](https://hub.docker.com/r/i386/redmine/), [`ppc64le`](https://hub.docker.com/r/ppc64le/redmine/), [`s390x`](https://hub.docker.com/r/s390x/redmine/)
+	[`amd64`](https://hub.docker.com/r/amd64/redmine/), [`arm32v5`](https://hub.docker.com/r/arm32v5/redmine/), [`arm32v7`](https://hub.docker.com/r/arm32v7/redmine/), [`arm64v8`](https://hub.docker.com/r/arm64v8/redmine/), [`i386`](https://hub.docker.com/r/i386/redmine/), [`mips64le`](https://hub.docker.com/r/mips64le/redmine/), [`ppc64le`](https://hub.docker.com/r/ppc64le/redmine/), [`s390x`](https://hub.docker.com/r/s390x/redmine/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/redmine/` directory](https://github.com/docker-library/repo-info/blob/master/repos/redmine) ([history](https://github.com/docker-library/repo-info/commits/master/repos/redmine))  
