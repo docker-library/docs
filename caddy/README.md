@@ -16,7 +16,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.0.0-rc.3`, `2.0.0-rc.3-alpine`, `alpine`, `latest`](https://github.com/caddyserver/caddy-docker/blob/b665b72798e3e26c9483d3df80af3515e1c0c016/alpine/Dockerfile)
+-	[`2.0.0-rc.3`, `2.0.0-rc.3-alpine`, `alpine`, `latest`](https://github.com/caddyserver/caddy-docker/blob/94a0098157df267d23e54782d962b9f41b0d15c5/alpine/Dockerfile)
 -	[`2.0.0-rc.3-builder`, `builder`](https://github.com/caddyserver/caddy-docker/blob/82359bcbcd3d43b8703605afc60370b6c5f87d1f/builder/Dockerfile)
 
 # Quick reference
