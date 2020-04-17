@@ -16,9 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.2.3-apache`, `3.2-apache`, `3-apache`, `apache`, `3.2.3`, `3.2`, `3`, `latest`](https://github.com/postfixadmin/docker/blob/9419925a74a082b25bfd6db8a568ed7027b50700/apache/Dockerfile)
--	[`3.2.3-fpm`, `3.2-fpm`, `3-fpm`, `fpm`](https://github.com/postfixadmin/docker/blob/9419925a74a082b25bfd6db8a568ed7027b50700/fpm/Dockerfile)
--	[`3.2.3-fpm-alpine`, `3.2-fpm-alpine`, `3-fpm-alpine`, `fpm-alpine`](https://github.com/postfixadmin/docker/blob/9419925a74a082b25bfd6db8a568ed7027b50700/fpm-alpine/Dockerfile)
+-	[`3.2.4-apache`, `3.2-apache`, `3-apache`, `apache`, `3.2.4`, `3.2`, `3`, `latest`](https://github.com/postfixadmin/docker/blob/b1ffcf48cd23b4ba779dc5c1a8c6f78c6ef45077/apache/Dockerfile)
+-	[`3.2.4-fpm`, `3.2-fpm`, `3-fpm`, `fpm`](https://github.com/postfixadmin/docker/blob/b1ffcf48cd23b4ba779dc5c1a8c6f78c6ef45077/fpm/Dockerfile)
+-	[`3.2.4-fpm-alpine`, `3.2-fpm-alpine`, `3-fpm-alpine`, `fpm-alpine`](https://github.com/postfixadmin/docker/blob/b1ffcf48cd23b4ba779dc5c1a8c6f78c6ef45077/fpm-alpine/Dockerfile)
 
 # Quick reference
 
@@ -32,7 +32,7 @@ WARNING:
 	[Postfix Admin](https://github.com/postfixadmin/docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/postfixadmin/), [`arm32v5`](https://hub.docker.com/r/arm32v5/postfixadmin/), [`arm32v6`](https://hub.docker.com/r/arm32v6/postfixadmin/), [`arm32v7`](https://hub.docker.com/r/arm32v7/postfixadmin/), [`arm64v8`](https://hub.docker.com/r/arm64v8/postfixadmin/), [`i386`](https://hub.docker.com/r/i386/postfixadmin/), [`ppc64le`](https://hub.docker.com/r/ppc64le/postfixadmin/)
+	[`amd64`](https://hub.docker.com/r/amd64/postfixadmin/), [`arm32v5`](https://hub.docker.com/r/arm32v5/postfixadmin/), [`arm32v6`](https://hub.docker.com/r/arm32v6/postfixadmin/), [`arm32v7`](https://hub.docker.com/r/arm32v7/postfixadmin/), [`arm64v8`](https://hub.docker.com/r/arm64v8/postfixadmin/), [`i386`](https://hub.docker.com/r/i386/postfixadmin/), [`ppc64le`](https://hub.docker.com/r/ppc64le/postfixadmin/), [`s390x`](https://hub.docker.com/r/s390x/postfixadmin/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/postfixadmin/` directory](https://github.com/docker-library/repo-info/blob/master/repos/postfixadmin) ([history](https://github.com/docker-library/repo-info/commits/master/repos/postfixadmin))  
