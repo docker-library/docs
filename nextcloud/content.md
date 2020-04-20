@@ -89,7 +89,7 @@ $ docker run -d \
 
 ## Using the Nextcloud command-line interface
 
-To use the [Nextcloud command-line interface](https://docs.nextcloud.com/server/12/admin_manual/configuration_server/occ_command.html) (aka. `occ` command):
+To use the [Nextcloud command-line interface](https://docs.nextcloud.com/server/latest/admin_manual/configuration_server/occ_command.html) (aka. `occ` command):
 
 ```console
 $ docker exec --user www-data CONTAINER_ID php occ
@@ -159,7 +159,25 @@ To use a external SMTP server you have to provide the connection details. To con
 -	`MAIL_FROM_ADDRESS` (not set by default) Use this address for the 'from' field in the mail envelopes sent by Nextcloud.
 -	`MAIL_DOMAIN` (not set by default) Set a different domain for the emails than the domain where Nextcloud is installed.
 
-Check the [Nextcloud documentation](https://docs.nextcloud.com/server/15/admin_manual/configuration_server/email_configuration.html) for other values to configure SMTP.
+Check the [Nextcloud documentation](https://docs.nextcloud.com/server/latest/admin_manual/configuration_server/email_configuration.html) for other values to configure SMTP.
+
+## Using the apache image behind a reverse proxy and auto configure server host and protocol
+
+The apache image will replace the remote addr (ip address visible to Nextcloud) with the ip address from `X-Real-IP` if the request is coming from a proxy in 10.0.0.0/8, 172.16.0.0/12 or 192.168.0.0/16 by default. If you want Nextcloud to pick up the server host (`HTTP_X_FORWARDED_HOST`), protocol (`HTTP_X_FORWARDED_PROTO`) and client ip (`HTTP_X_FORWARDED_FOR`) from a trusted proxy disable rewrite ip and the reverse proxies ip address to `TRUSTED_PROXIES`.
+
+-	`APACHE_DISABLE_REWRITE_IP` (not set by default): Set to 1 to disable rewrite ip.
+-	`TRUSTED_PROXIES` (empty by default): A space-separated list of trusted proxies. CIDR notation is supported for IPv4.
+
+If the `TRUSTED_PROXIES` approach does not work for you, try using fixed values for overwrite parameters.
+
+-	`OVERWRITEHOST` (empty by default): Set the hostname of the proxy. Can also specify a port.
+-	`OVERWRITEPROTOCOL` (empty by default): Set the protocol of the proxy, http or https.
+-	`OVERWRITEWEBROOT` (empty by default): Set the absolute path of the proxy.
+-	`OVERWRITECONDADDR` (empty by default): Regex to overwrite the values dependent on the remote address.
+
+Check the [Nexcloud documentation](https://docs.nextcloud.com/server/latest/admin_manual/configuration_server/reverse_proxy_configuration.html) for more details.
+
+Keep in mind that once set, removing these environment variables won't remove these values from the configuration file, due to how Nextcloud merges configuration files together.
 
 # Running this image with docker-compose
 
