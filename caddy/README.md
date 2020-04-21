@@ -16,8 +16,24 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.0.0-rc.3`, `2.0.0-rc.3-alpine`, `alpine`, `latest`](https://github.com/caddyserver/caddy-docker/blob/94a0098157df267d23e54782d962b9f41b0d15c5/alpine/Dockerfile)
+(See ["What's the difference between 'Shared' and 'Simple' tags?" in the FAQ](https://github.com/docker-library/faq#whats-the-difference-between-shared-and-simple-tags).)
+
+## Simple Tags
+
+-	[`2.0.0-rc.3-alpine`, `alpine`](https://github.com/caddyserver/caddy-docker/blob/94a0098157df267d23e54782d962b9f41b0d15c5/alpine/Dockerfile)
 -	[`2.0.0-rc.3-builder`, `builder`](https://github.com/caddyserver/caddy-docker/blob/82359bcbcd3d43b8703605afc60370b6c5f87d1f/builder/Dockerfile)
+-	[`2.0.0-rc.3-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/caddyserver/caddy-docker/blob/98d0b9b4f9ce8cffaed0653c8730153338c01c71/windows/1809/Dockerfile)
+-	[`2.0.0-rc.3-windowsservercore-ltsc2016`, `windowsservercore-ltsc2016`](https://github.com/caddyserver/caddy-docker/blob/98d0b9b4f9ce8cffaed0653c8730153338c01c71/windows/ltsc2016/Dockerfile)
+
+## Shared Tags
+
+-	`2.0.0-rc.3`, `latest`:
+	-	[`2.0.0-rc.3-alpine`](https://github.com/caddyserver/caddy-docker/blob/94a0098157df267d23e54782d962b9f41b0d15c5/alpine/Dockerfile)
+	-	[`2.0.0-rc.3-windowsservercore-1809`](https://github.com/caddyserver/caddy-docker/blob/98d0b9b4f9ce8cffaed0653c8730153338c01c71/windows/1809/Dockerfile)
+	-	[`2.0.0-rc.3-windowsservercore-ltsc2016`](https://github.com/caddyserver/caddy-docker/blob/98d0b9b4f9ce8cffaed0653c8730153338c01c71/windows/ltsc2016/Dockerfile)
+-	`2.0.0-rc.3-windowsservercore`, `windowsservercore`:
+	-	[`2.0.0-rc.3-windowsservercore-1809`](https://github.com/caddyserver/caddy-docker/blob/98d0b9b4f9ce8cffaed0653c8730153338c01c71/windows/1809/Dockerfile)
+	-	[`2.0.0-rc.3-windowsservercore-ltsc2016`](https://github.com/caddyserver/caddy-docker/blob/98d0b9b4f9ce8cffaed0653c8730153338c01c71/windows/ltsc2016/Dockerfile)
 
 # Quick reference
 
@@ -31,7 +47,7 @@ WARNING:
 	[the Caddy Docker Maintainers](https://github.com/caddyserver/caddy-docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/caddy/), [`arm32v6`](https://hub.docker.com/r/arm32v6/caddy/), [`arm32v7`](https://hub.docker.com/r/arm32v7/caddy/), [`arm64v8`](https://hub.docker.com/r/arm64v8/caddy/)
+	[`amd64`](https://hub.docker.com/r/amd64/caddy/), [`arm32v6`](https://hub.docker.com/r/arm32v6/caddy/), [`arm32v7`](https://hub.docker.com/r/arm32v7/caddy/), [`arm64v8`](https://hub.docker.com/r/arm64v8/caddy/), [`windows-amd64`](https://hub.docker.com/r/winamd64/caddy/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/caddy/` directory](https://github.com/docker-library/repo-info/blob/master/repos/caddy) ([history](https://github.com/docker-library/repo-info/commits/master/repos/caddy))  
@@ -170,6 +186,15 @@ This image is based on the popular [Alpine Linux project](http://alpinelinux.org
 This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
 
 To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
+
+## `caddy:<version>-windowsservercore`
+
+This image is based on [Windows Server Core (`microsoft/windowsservercore`)](https://hub.docker.com/r/microsoft/windowsservercore/). As such, it only works in places which that image does, such as Windows 10 Professional/Enterprise (Anniversary Edition) or Windows Server 2016.
+
+For information about how to get Docker running on Windows, please see the relevant "Quick Start" guide provided by Microsoft:
+
+-	[Windows Server Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_server)
+-	[Windows 10 Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)
 
 # License
 
