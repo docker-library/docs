@@ -16,16 +16,21 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.6.3-jdk-11-openj9`, `3.6-jdk-11-openj9`, `3-jdk-11-openj9`](https://github.com/carlossg/docker-maven/blob/d3dd6bc261c6173c5e52e3a7a36b6a3d8d2800b4/jdk-11-openj9/Dockerfile)
--	[`3.6.3-jdk-11-slim`, `3.6.3-slim`, `3.6-jdk-11-slim`, `3.6-slim`, `3-jdk-11-slim`, `slim`](https://github.com/carlossg/docker-maven/blob/d3dd6bc261c6173c5e52e3a7a36b6a3d8d2800b4/jdk-11-slim/Dockerfile)
--	[`3.6.3-jdk-11`, `3.6-jdk-11`, `3-jdk-11`](https://github.com/carlossg/docker-maven/blob/d3dd6bc261c6173c5e52e3a7a36b6a3d8d2800b4/jdk-11/Dockerfile)
--	[`3.6.3-jdk-14`, `3.6.3`, `3.6-jdk-14`, `3.6`, `3-jdk-14`, `3`, `latest`](https://github.com/carlossg/docker-maven/blob/d3dd6bc261c6173c5e52e3a7a36b6a3d8d2800b4/jdk-14/Dockerfile)
--	[`3.6.3-jdk-8-openj9`, `3.6-jdk-8-openj9`, `3-jdk-8-openj9`](https://github.com/carlossg/docker-maven/blob/d3dd6bc261c6173c5e52e3a7a36b6a3d8d2800b4/jdk-8-openj9/Dockerfile)
--	[`3.6.3-jdk-8-slim`, `3.6-jdk-8-slim`, `3-jdk-8-slim`](https://github.com/carlossg/docker-maven/blob/d3dd6bc261c6173c5e52e3a7a36b6a3d8d2800b4/jdk-8-slim/Dockerfile)
--	[`3.6.3-jdk-8`, `3.6-jdk-8`, `3-jdk-8`](https://github.com/carlossg/docker-maven/blob/d3dd6bc261c6173c5e52e3a7a36b6a3d8d2800b4/jdk-8/Dockerfile)
+-	[`3.6.3-jdk-11`, `3.6-jdk-11`, `3-jdk-11`, `3.6.3-openjdk-11`, `3.6-openjdk-11`, `3-openjdk-11`](https://github.com/carlossg/docker-maven/blob/26ba49149787c85b9c51222b47c00879b2a0afde/openjdk-11/Dockerfile)
+-	[`3.6.3-jdk-11-openj9`, `3.6-jdk-11-openj9`, `3-jdk-11-openj9`, `3.6.3-adoptopenjdk-11-openj9`, `3.6-adoptopenjdk-11-openj9`, `3-adoptopenjdk-11-openj9`](https://github.com/carlossg/docker-maven/blob/26ba49149787c85b9c51222b47c00879b2a0afde/adoptopenjdk-11-openj9/Dockerfile)
+-	[`3.6.3-jdk-11-slim`, `3.6-jdk-11-slim`, `3-jdk-11-slim`, `3.6.3-openjdk-11-slim`, `3.6-openjdk-11-slim`, `3-openjdk-11-slim`](https://github.com/carlossg/docker-maven/blob/26ba49149787c85b9c51222b47c00879b2a0afde/openjdk-11-slim/Dockerfile)
+-	[`3.6.3-jdk-14`, `3.6-jdk-14`, `3-jdk-14`, `3.6.3-openjdk-14`, `3.6.3`, `3.6.3-openjdk`, `3.6-openjdk-14`, `3.6`, `3.6-openjdk`, `3-openjdk-14`, `3`, `latest`, `3-openjdk`, `openjdk`](https://github.com/carlossg/docker-maven/blob/26ba49149787c85b9c51222b47c00879b2a0afde/openjdk-14/Dockerfile)
+-	[`3.6.3-jdk-8`, `3.6-jdk-8`, `3-jdk-8`, `3.6.3-openjdk-8`, `3.6-openjdk-8`, `3-openjdk-8`](https://github.com/carlossg/docker-maven/blob/26ba49149787c85b9c51222b47c00879b2a0afde/openjdk-8/Dockerfile)
+-	[`3.6.3-jdk-8-openj9`, `3.6-jdk-8-openj9`, `3-jdk-8-openj9`, `3.6.3-adoptopenjdk-8-openj9`, `3.6-adoptopenjdk-8-openj9`, `3-adoptopenjdk-8-openj9`](https://github.com/carlossg/docker-maven/blob/26ba49149787c85b9c51222b47c00879b2a0afde/adoptopenjdk-8-openj9/Dockerfile)
+-	[`3.6.3-jdk-8-slim`, `3.6-jdk-8-slim`, `3-jdk-8-slim`, `3.6.3-openjdk-8-slim`, `3.6-openjdk-8-slim`, `3-openjdk-8-slim`](https://github.com/carlossg/docker-maven/blob/26ba49149787c85b9c51222b47c00879b2a0afde/openjdk-8-slim/Dockerfile)
+-	[`3.6.3-openjdk-14-slim`, `3.6.3-slim`, `3.6-openjdk-14-slim`, `3.6-slim`, `3-openjdk-14-slim`, `slim`](https://github.com/carlossg/docker-maven/blob/440e1f708e8fa5ea4d6ef509d22aee6d8265b209/openjdk-14-slim/Dockerfile)
 -	[`3.6.3-openjdk-15`, `3.6-openjdk-15`, `3-openjdk-15`](https://github.com/carlossg/docker-maven/blob/4ba4f1c3b6600e64c8c430dfea2ef65ff18608ff/openjdk-15/Dockerfile)
--	[`3.6.3-ibmjava-8-alpine`, `3.6.3-ibmjava-alpine`, `3.6-ibmjava-8-alpine`, `3.6-ibmjava-alpine`, `3-ibmjava-8-alpine`, `ibmjava-alpine`](https://github.com/carlossg/docker-maven/blob/d3dd6bc261c6173c5e52e3a7a36b6a3d8d2800b4/ibmjava-8-alpine/Dockerfile)
+-	[`3.6.3-adoptopenjdk-11`, `3.6-adoptopenjdk-11`, `3-adoptopenjdk-11`](https://github.com/carlossg/docker-maven/blob/d98fc55d68cbd5fa8df9e59c95678e1d702b0925/adoptopenjdk-11/Dockerfile)
+-	[`3.6.3-adoptopenjdk-14`, `3.6.3-adoptopenjdk`, `3.6-adoptopenjdk-14`, `3.6-adoptopenjdk`, `3-adoptopenjdk-14`, `3-adoptopenjdk`, `adoptopenjdk`](https://github.com/carlossg/docker-maven/blob/5768b638a84739d0ad85dbcbe42018075550b109/adoptopenjdk-14/Dockerfile)
+-	[`3.6.3-adoptopenjdk-14-openj9`, `3.6-adoptopenjdk-14-openj9`, `3-adoptopenjdk-14-openj9`](https://github.com/carlossg/docker-maven/blob/5768b638a84739d0ad85dbcbe42018075550b109/adoptopenjdk-14-openj9/Dockerfile)
+-	[`3.6.3-adoptopenjdk-8`, `3.6-adoptopenjdk-8`, `3-adoptopenjdk-8`](https://github.com/carlossg/docker-maven/blob/d98fc55d68cbd5fa8df9e59c95678e1d702b0925/adoptopenjdk-8/Dockerfile)
 -	[`3.6.3-ibmjava-8`, `3.6.3-ibmjava`, `3.6-ibmjava-8`, `3.6-ibmjava`, `3-ibmjava-8`, `3-ibmjava`, `ibmjava`](https://github.com/carlossg/docker-maven/blob/d3dd6bc261c6173c5e52e3a7a36b6a3d8d2800b4/ibmjava-8/Dockerfile)
+-	[`3.6.3-ibmjava-8-alpine`, `3.6.3-ibmjava-alpine`, `3.6-ibmjava-8-alpine`, `3.6-ibmjava-alpine`, `3-ibmjava-8-alpine`, `ibmjava-alpine`](https://github.com/carlossg/docker-maven/blob/d3dd6bc261c6173c5e52e3a7a36b6a3d8d2800b4/ibmjava-8-alpine/Dockerfile)
 -	[`3.6.3-amazoncorretto-11`, `3.6.3-amazoncorretto`, `3.6-amazoncorretto-11`, `3.6-amazoncorretto`, `3-amazoncorretto-11`, `3-amazoncorretto`, `amazoncorretto`](https://github.com/carlossg/docker-maven/blob/d3dd6bc261c6173c5e52e3a7a36b6a3d8d2800b4/amazoncorretto-11/Dockerfile)
 -	[`3.6.3-amazoncorretto-8`, `3.6-amazoncorretto-8`, `3-amazoncorretto-8`](https://github.com/carlossg/docker-maven/blob/d3dd6bc261c6173c5e52e3a7a36b6a3d8d2800b4/amazoncorretto-8/Dockerfile)
 
@@ -41,7 +46,7 @@ WARNING:
 	[the Maven Project](https://github.com/carlossg/docker-maven)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/maven/), [`arm64v8`](https://hub.docker.com/r/arm64v8/maven/), [`i386`](https://hub.docker.com/r/i386/maven/), [`ppc64le`](https://hub.docker.com/r/ppc64le/maven/), [`s390x`](https://hub.docker.com/r/s390x/maven/)
+	[`amd64`](https://hub.docker.com/r/amd64/maven/), [`arm32v7`](https://hub.docker.com/r/arm32v7/maven/), [`arm64v8`](https://hub.docker.com/r/arm64v8/maven/), [`i386`](https://hub.docker.com/r/i386/maven/), [`ppc64le`](https://hub.docker.com/r/ppc64le/maven/), [`s390x`](https://hub.docker.com/r/s390x/maven/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/maven/` directory](https://github.com/docker-library/repo-info/blob/master/repos/maven) ([history](https://github.com/docker-library/repo-info/commits/master/repos/maven))  
