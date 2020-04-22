@@ -125,14 +125,25 @@ $ docker run -d --name C8O -e COOKIE_PATH="/convertigo" -p 28080:28080 %%IMAGE%%
 
 ## `COOKIE_SECURE` Environment variable
 
-Convertigo use a *cookie* to maintain sessions. Requests on port `28080` are *HTTP* but we advice to use an *HTTPS* front for production (nginx, kubenetes ingress, ...). In this case, you can secure yours cookies to be used only with secured connections by adding the `Secure` flag.
-
-The Secure flag can be enabled by setting the `COOKIE_SECURE` environment variable to `true`. Once enabled, cookies and sessions aren't working through an *HTTP* connection.
+Convertigo use a *cookie* to maintain sessions. Requests on port `28080` are *HTTP* but we advice to use an *HTTPS* front for production (nginx, kubenetes ingress, ...).
+In this case, you can secure yours cookies to be used only with secured connections by adding the `Secure` flag.
+The Secure flag can be enabled by setting the `COOKIE_SECURE` environment variable to `true`.
+Once enabled, cookies and sessions aren't working through an *HTTP* connection.
 
 The default `COOKIE_SECURE` value is `false` and can be defined :
 
 ```console
 $ docker run -d --name C8O -e COOKIE_SECURE="true" -p 28080:28080 %%IMAGE%%
+```
+
+## `COOKIE_SAMESITE` Environment variable
+
+Allow to configure the *SameSite* parameter for generated cookies. Can be *empty*, `none`, `lax` or `strict`.
+
+The default `COOKIE_SAMESITE` value is *empty* and can be defined this way:
+
+```console
+$ docker run -d –name C8O -e COOKIE_SAMESITE=lax -p 28080:28080 %%IMAGE%%
 ```
 
 ## Pre configurated Docker compose stack
