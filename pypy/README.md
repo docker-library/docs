@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.7-7.3.0`, `2.7-7.3`, `2.7-7`, `2.7`, `2-7.3.0`, `2-7.3`, `2-7`, `2`, `2.7-7.3.0-buster`, `2.7-7.3-buster`, `2.7-7-buster`, `2.7-buster`, `2-7.3.0-buster`, `2-7.3-buster`, `2-7-buster`, `2-buster`](https://github.com/docker-library/pypy/blob/ac6a989a09815fc6ff38da92ea1154bc048caae3/2.7/Dockerfile)
--	[`2.7-7.3.0-slim`, `2.7-7.3-slim`, `2.7-7-slim`, `2.7-slim`, `2-7.3.0-slim`, `2-7.3-slim`, `2-7-slim`, `2-slim`, `2.7-7.3.0-slim-buster`, `2.7-7.3-slim-buster`, `2.7-7-slim-buster`, `2.7-slim-buster`, `2-7.3.0-slim-buster`, `2-7.3-slim-buster`, `2-7-slim-buster`, `2-slim-buster`](https://github.com/docker-library/pypy/blob/ac6a989a09815fc6ff38da92ea1154bc048caae3/2.7/slim/Dockerfile)
--	[`3.6-7.3.0`, `3.6-7.3`, `3.6-7`, `3.6`, `3-7.3.0`, `3-7.3`, `3-7`, `3`, `latest`, `3.6-7.3.0-buster`, `3.6-7.3-buster`, `3.6-7-buster`, `3.6-buster`, `3-7.3.0-buster`, `3-7.3-buster`, `3-7-buster`, `3-buster`, `buster`](https://github.com/docker-library/pypy/blob/ac6a989a09815fc6ff38da92ea1154bc048caae3/3.6/Dockerfile)
--	[`3.6-7.3.0-slim`, `3.6-7.3-slim`, `3.6-7-slim`, `3.6-slim`, `3-7.3.0-slim`, `3-7.3-slim`, `3-7-slim`, `3-slim`, `slim`, `3.6-7.3.0-slim-buster`, `3.6-7.3-slim-buster`, `3.6-7-slim-buster`, `3.6-slim-buster`, `3-7.3.0-slim-buster`, `3-7.3-slim-buster`, `3-7-slim-buster`, `3-slim-buster`, `slim-buster`](https://github.com/docker-library/pypy/blob/ac6a989a09815fc6ff38da92ea1154bc048caae3/3.6/slim/Dockerfile)
+-	[`2.7-7.3.0`, `2.7-7.3`, `2.7-7`, `2.7`, `2-7.3.0`, `2-7.3`, `2-7`, `2`, `2.7-7.3.0-buster`, `2.7-7.3-buster`, `2.7-7-buster`, `2.7-buster`, `2-7.3.0-buster`, `2-7.3-buster`, `2-7-buster`, `2-buster`](https://github.com/docker-library/pypy/blob/30385f19542aa8bdcca7fb2f7a9a18786e9e8f17/2.7/Dockerfile)
+-	[`2.7-7.3.0-slim`, `2.7-7.3-slim`, `2.7-7-slim`, `2.7-slim`, `2-7.3.0-slim`, `2-7.3-slim`, `2-7-slim`, `2-slim`, `2.7-7.3.0-slim-buster`, `2.7-7.3-slim-buster`, `2.7-7-slim-buster`, `2.7-slim-buster`, `2-7.3.0-slim-buster`, `2-7.3-slim-buster`, `2-7-slim-buster`, `2-slim-buster`](https://github.com/docker-library/pypy/blob/30385f19542aa8bdcca7fb2f7a9a18786e9e8f17/2.7/slim/Dockerfile)
+-	[`3.6-7.3.0`, `3.6-7.3`, `3.6-7`, `3.6`, `3-7.3.0`, `3-7.3`, `3-7`, `3`, `latest`, `3.6-7.3.0-buster`, `3.6-7.3-buster`, `3.6-7-buster`, `3.6-buster`, `3-7.3.0-buster`, `3-7.3-buster`, `3-7-buster`, `3-buster`, `buster`](https://github.com/docker-library/pypy/blob/30385f19542aa8bdcca7fb2f7a9a18786e9e8f17/3.6/Dockerfile)
+-	[`3.6-7.3.0-slim`, `3.6-7.3-slim`, `3.6-7-slim`, `3.6-slim`, `3-7.3.0-slim`, `3-7.3-slim`, `3-7-slim`, `3-slim`, `slim`, `3.6-7.3.0-slim-buster`, `3.6-7.3-slim-buster`, `3.6-7-slim-buster`, `3.6-slim-buster`, `3-7.3.0-slim-buster`, `3-7.3-slim-buster`, `3-7-slim-buster`, `3-slim-buster`, `slim-buster`](https://github.com/docker-library/pypy/blob/30385f19542aa8bdcca7fb2f7a9a18786e9e8f17/3.6/slim/Dockerfile)
 
 # Quick reference
 
