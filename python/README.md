@@ -21,7 +21,7 @@ WARNING:
 ## Simple Tags
 
 -	[`3.9.0a5-buster`, `3.9-rc-buster`, `rc-buster`](https://github.com/docker-library/python/blob/9f79a9df8fec373757cd0c2a2a75ce41c113e28b/3.9-rc/buster/Dockerfile)
--	[`3.9.0a5-alpine3.10`, `3.9-rc-alpine3.10`, `rc-alpine3.10`](https://github.com/docker-library/python/blob/9f79a9df8fec373757cd0c2a2a75ce41c113e28b/3.9-rc/alpine3.10/Dockerfile)
+-	[`3.9.0a5-alpine3.11`, `3.9-rc-alpine3.11`, `rc-alpine3.11`, `3.9.0a5-alpine`, `3.9-rc-alpine`, `rc-alpine`](https://github.com/docker-library/python/blob/5c38998d55d0396dab6658e579fdeec353d97660/3.9-rc/alpine3.11/Dockerfile)
 -	[`3.9.0a5-windowsservercore-ltsc2016`, `3.9-rc-windowsservercore-ltsc2016`, `rc-windowsservercore-ltsc2016`](https://github.com/docker-library/python/blob/9f79a9df8fec373757cd0c2a2a75ce41c113e28b/3.9-rc/windows/windowsservercore-ltsc2016/Dockerfile)
 -	[`3.9.0a5-windowsservercore-1809`, `3.9-rc-windowsservercore-1809`, `rc-windowsservercore-1809`](https://github.com/docker-library/python/blob/9f79a9df8fec373757cd0c2a2a75ce41c113e28b/3.9-rc/windows/windowsservercore-1809/Dockerfile)
 -	[`3.8.2-buster`, `3.8-buster`, `3-buster`, `buster`](https://github.com/docker-library/python/blob/21d2ab0a50100ebdaf32f4bbb214bf21f857d1da/3.8/buster/Dockerfile)
@@ -177,6 +177,14 @@ Some of these tags may have names like buster or stretch in them. These are the 
 
 This tag is based off of [`buildpack-deps`](https://hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of Docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
 
+## `python:<version>-alpine`
+
+This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+
+This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+
+To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
+
 ## `python:<version>-windowsservercore`
 
 This image is based on [Windows Server Core (`microsoft/windowsservercore`)](https://hub.docker.com/r/microsoft/windowsservercore/). As such, it only works in places which that image does, such as Windows 10 Professional/Enterprise (Anniversary Edition) or Windows Server 2016.
@@ -189,14 +197,6 @@ For information about how to get Docker running on Windows, please see the relev
 ## `python:<version>-slim`
 
 This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `python`. Unless you are working in an environment where *only* the `python` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
-
-## `python:<version>-alpine`
-
-This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
-
-This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
-
-To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 # License
 
