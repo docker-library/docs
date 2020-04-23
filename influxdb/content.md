@@ -6,6 +6,10 @@ InfluxDB is a time series database built from the ground up to handle high write
 
 %%LOGO%%
 
+## Updating latest to 2.0
+
+In the future, the latest tag for this image will point to the latest released implementation of influxdb 2.0. This will happen when the first general available release for 2.0 exists. If you are using the `latest` tag for any production or development purposes, please update your development environment to reference the `1.8` tag.
+
 ## Using this Image
 
 ### Running the container
