@@ -20,8 +20,6 @@ WARNING:
 -	[`3.13.4-alpine`, `3.13-alpine`, `3-alpine`, `alpine`](https://github.com/docker-library/ghost/blob/a79811a2e4522ed03bf1b1c969def16ac439abbf/3/alpine/Dockerfile)
 -	[`2.38.1`, `2.38`, `2`](https://github.com/docker-library/ghost/blob/292aeadfdf5d428867c2b160268540aa4d4a04c5/2/debian/Dockerfile)
 -	[`2.38.1-alpine`, `2.38-alpine`, `2-alpine`](https://github.com/docker-library/ghost/blob/7555f792b28dbe01d521e7edbfc4af2c6824a3ff/2/alpine/Dockerfile)
--	[`1.26.2`, `1.26`, `1`](https://github.com/docker-library/ghost/blob/292aeadfdf5d428867c2b160268540aa4d4a04c5/1/debian/Dockerfile)
--	[`1.26.2-alpine`, `1.26-alpine`, `1-alpine`](https://github.com/docker-library/ghost/blob/aeed5c9122e22c71f321c36f11f8794b3915dce5/1/alpine/Dockerfile)
 
 # Quick reference
 
