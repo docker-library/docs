@@ -225,10 +225,17 @@ services:
 # More Resources
 
 [ROS.org](http://www.ros.org/): Main ROS website  
-[Docs](https://index.ros.org/doc/ros2/): Core Documentation  
-[Index](https://index.ros.org/doc/ros2/): Package Index  
-[Design](https://design.ros2.org/): Design Articles  
-[ROS Answers](https://answers.ros.org/questions/): Ask questions. Get answers  
+[Q&A](https://answers.ros.org/questions/): Ask questions. Get answers  
 [Forums](https://discourse.ros.org/): Hear the latest discussions  
 [Blog](http://www.ros.org/news/): Stay up-to-date  
+[Packages](https://index.ros.org/packages/): Discover indexed packages  
 [OSRF](https://www.osrfoundation.org/): Open Source Robotics Foundation
+
+## ROS 2
+
+[Index](https://index.ros.org/doc/ros2/): ROS 2 Documentation  
+[Design](https://design.ros2.org/): ROS 2 Design Articles  
+
+## ROS 1
+
+[Wiki](http://wiki.ros.org/Documentation): ROS 1 Documentation  
