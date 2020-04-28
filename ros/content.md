@@ -102,13 +102,13 @@ Developing such complex systems with cutting edge implementations of newly publi
 
 With the advancements and standardization of software containers, roboticists are primed to acquire a host of improved developer tooling for building and shipping software. To help alleviate the growing pains and technical challenges of adopting new practices, we have focused on providing an official resource for using ROS with these new technologies.
 
-For a complete listing of supported architecture and base images for each ROS Distribution Release, please read the official REP on target platforms for either [ROS 1](https://www.ros.org/reps/rep-0003.html) or for [ROS 2](https://www.ros.org/reps/rep-2000.html).
+For a complete listing of supported architecture and base images for each ROS Distribution Release, please read the official REP on target platforms for either [ROS1](https://www.ros.org/reps/rep-0003.html) or for [ROS2](https://www.ros.org/reps/rep-2000.html).
 
 ## Deployment suggestions
 
 The available tags include supported distros along with a hierarchy tags based off the most common meta-package dependencies, designed to have a small footprint and simple configuration:
 
--	`ros-core`: barebone ROS 2 install
+-	`ros-core`: barebone ROS install
 -	`ros-base`: basic tools and libraries (also tagged with distro name with LTS version as `latest`)
 
 The rest of the common meta-packages such as `desktop` and `ros1-bridge` are hosted on automatic build repos under OSRF's Docker Hub profile [here](https://hub.docker.com/r/osrf/ros/). These meta-packages include graphical dependencies and hook a host of other large packages such as X11, X server, etc. So in the interest of keep the official images lean and secure, the desktop packages are just be hosted with OSRF's profile.
@@ -181,9 +181,9 @@ $ docker-compose rm
 
 > Note: the auto-generated network, `ros_demos`, will persist until you explicitly remove it using `docker-compose down`.
 
-### ROS 1 Bridge
+### ROS1 Bridge
 
-To ease ROS 2 migration, [`ros1_bridge`](https://index.ros.org/p/ros1_bridge/github-ros2-ros1_bridge) is a ROS 2 package that provides bidirectional communication between ROS 1 and ROS 2. As a minimal example, given the ROS 2 Dockerfile above, we'll create the ROS 1 equivalent bellow, and name the Dockerfile appropriately. 
+To ease ROS2 migration, [`ros1_bridge`](https://index.ros.org/p/ros1_bridge/github-ros2-ros1_bridge) is a ROS2 package that provides bidirectional communication between ROS1 and ROS2. As a minimal example, given the ROS2 Dockerfile above, we'll create the ROS1 equivalent bellow, and name the Dockerfile appropriately. 
 
 ```dockerfile
 FROM ros:melodic
@@ -231,11 +231,11 @@ services:
 [Packages](https://index.ros.org/packages/): Discover indexed packages  
 [OSRF](https://www.osrfoundation.org/): Open Source Robotics Foundation
 
-## ROS 2
+## ROS2
 
-[Index](https://index.ros.org/doc/ros2/): ROS 2 Documentation  
-[Design](https://design.ros2.org/): ROS 2 Design Articles  
+[Index](https://index.ros.org/doc/ros2/): ROS2 Documentation  
+[Design](https://design.ros2.org/): ROS2 Design Articles  
 
-## ROS 1
+## ROS1
 
-[Wiki](http://wiki.ros.org/Documentation): ROS 1 Documentation  
+[Wiki](http://wiki.ros.org/Documentation): ROS1 Documentation  
