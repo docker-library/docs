@@ -183,7 +183,7 @@ $ docker-compose rm
 
 ### ROS1 Bridge
 
-To ease ROS2 migration, [`ros1_bridge`](https://index.ros.org/p/ros1_bridge/github-ros2-ros1_bridge) is a ROS2 package that provides bidirectional communication between ROS1 and ROS2. As a minimal example, given the ROS2 Dockerfile above, we'll create the ROS1 equivalent bellow, and name the Dockerfile appropriately. 
+To ease ROS2 migration, [`ros1_bridge`](https://index.ros.org/p/ros1_bridge/github-ros2-ros1_bridge) is a ROS2 package that provides bidirectional communication between ROS1 and ROS2. As a minimal example, given the ROS2 Dockerfile above, we'll create the ROS1 equivalent below, and name the Dockerfile appropriately. 
 
 ```dockerfile
 FROM ros:melodic
