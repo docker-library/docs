@@ -156,6 +156,8 @@ services:
 
   listener:
     build: ./
+    environment:
+      - "PYTHONUNBUFFERED=1"
     command: ros2 run demo_nodes_py listener
 ```
 
