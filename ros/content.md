@@ -44,7 +44,8 @@ $ docker run -it --rm my/ros:app
 To create your own ROS docker images and build custom packages, here's a simple example of installing a package's build dependencies, compiling it from source, and installing the resulting build artifacts into a final multi-stage image layer.
 
 ```dockerfile
-FROM %%IMAGE%%:dashing-ros-base AS builder
+ARG ROS_TAG=%%IMAGE%%:foxy
+FROM $ROS_TAG-ros-base AS builder
 
 # clone package source
 ENV ROS_WS /opt/ros_ws
@@ -60,6 +61,7 @@ RUN . /opt/ros/$ROS_DISTRO/setup.sh && \
     rosdep install -y \
       --from-paths \
         src/demos/demo_nodes_cpp \
+        src/demos/demo_nodes_py \
       --ignore-src && \
     rm -rf /var/lib/apt/lists/*
 
@@ -68,10 +70,11 @@ RUN . /opt/ros/$ROS_DISTRO/setup.sh && \
     colcon build \
       --packages-select \
         demo_nodes_cpp \
+        demo_nodes_py \
       --mixin release
 
 # create new multi-stage
-FROM %%IMAGE%%:dashing-ros-core AS runner
+FROM $ROS_TAG-ros-core AS runner
 
 # copy package install
 ENV ROS_WS /opt/ros_ws
@@ -86,13 +89,15 @@ RUN sed --in-place --expression \
 CMD ["ros2", "launch", "demo_nodes_cpp", "talker_listener.launch.py"]
 ```
 
-Note: `--from-paths` and `--packages-select` are set here as so to only install the dependencies and build for the `demo_nodes_cpp` package, one among many in the demo git repo that was cloned. To install the dependencies and build all the packages in the source workspace, merely change the scope by setting `--from-paths src/` and dropping the `--packages-select` arguments.
+Note: `--from-paths` and `--packages-select` are set here as so to only install the dependencies and build for the demo C++ and Python packages, among many in the demo git repo that was cloned. To install the dependencies and build all the packages in the source workspace, merely change the scope by setting `--from-paths src/` and dropping the `--packages-select` arguments.
+
+For these particular packages, the tag used for the runner image consequently includes the necessary runtime dependencies for the talker and listener examples, however such may not always be the case. For example, starting a container from the runner image with the command `ros2 launch demo_nodes_cpp add_two_ints.launch.py` will fail, as that depends on `example_interfaces` package that are not installed here. Additionally, in interests of keeping `ros-core` tag minimal in image size, developer tools such as `rosdep` and `colcon` are not shipped in `ros_core`, but in `ros-base` instead.
 
 	REPOSITORY    TAG        IMAGE ID        CREATED         SIZE
 	my/ros        runner     66c8112b2fb6    2 seconds ago   654MB
 	my/ros        builder    6b500239d0d6    9 seconds ago   859MB
 
-For this particular package, using a multi-stage build didn't shrink the final image by much, but for more complex applications, segmenting build setup from the runtime can help keep image sizes down. Additionally, doing so can also prepare you for releasing your package to the community, helping to reconcile dependency discrepancies you may have otherwise forgotten to declare in your `package.xml` manifest.
+Although using a multi-stage build didn't shrink the final image by much, for more complex applications, segmenting build setup from the runtime can help keep image sizes down. Additionally, doing so can also prepare you for releasing your package to the community, helping to reconcile runtime vs development dependency discrepancies you may have otherwise forgotten to declare in your `package.xml` manifest.
 
 ## Deployment use cases
 
@@ -108,7 +113,7 @@ For a complete listing of supported architecture and base images for each ROS Di
 
 The available tags include supported distros along with a hierarchy tags based off the most common meta-package dependencies, designed to have a small footprint and simple configuration:
 
--	`ros-core`: barebone ROS install
+-	`ros-core`: minimal ROS install
 -	`ros-base`: basic tools and libraries (also tagged with distro name with LTS version as `latest`)
 
 The rest of the common meta-packages such as `desktop` and `ros1-bridge` are hosted on automatic build repos under OSRF's Docker Hub profile [here](https://hub.docker.com/r/osrf/ros/). These meta-packages include graphical dependencies and hook a host of other large packages such as X11, X server, etc. So in the interest of keep the official images lean and secure, the desktop packages are just be hosted with OSRF's profile.
@@ -146,11 +151,11 @@ version: '3'
 
 services:
   talker:
-    build: ./Dockerfile
+    build: ./
     command: ros2 run demo_nodes_cpp talker
 
   listener:
-    build: ./Dockerfile
+    build: ./
     command: ros2 run demo_nodes_py listener
 ```
 
@@ -206,12 +211,12 @@ version: '3'
 services:
   ros1:
     build:
-      context: .
+      context: ./
       dockerfile: ros1.Dockerfile
 
   ros2:
     build:
-      context: .
+      context: ./
       dockerfile: ros2.Dockerfile
 
   bridge:
