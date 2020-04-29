@@ -25,10 +25,10 @@ WARNING:
 	the [Logstash Discuss Forums](https://discuss.elastic.co/c/logstash) and the [Elastic community](https://www.elastic.co/community).
 
 -	**Where to file issues**:  
-	https://github.com/elastic/logstash-docker/issues
+	For issues with Logstash Docker Image or Logstash: https://github.com/elastic/logstash/issues
 
 -	**Maintained by**:  
-	[the Elastic Team](https://github.com/elastic/logstash-docker)
+	[the Elastic Team](https://github.com/elastic/logstash)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/logstash/)
