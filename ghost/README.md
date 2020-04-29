@@ -147,6 +147,8 @@ services:
     ports:
       - 8080:2368
     environment:
+      # to have images, links and similar working and not refering to localhost set this value.
+      url: https://ghost.example.com
       # see https://docs.ghost.org/docs/config#section-running-ghost-with-config-env-variables
       database__client: mysql
       database__connection__host: db
