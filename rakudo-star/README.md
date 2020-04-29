@@ -16,8 +16,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `2019.03`](https://github.com/perl6/docker/blob/e26d1937190790a6b6110ba8220b98fe3bb97c04/Dockerfile)
--	[`alpine`, `2019.03-alpine`](https://github.com/perl6/docker/blob/d2175a31e85d52cfad674814422ecf9779ea08e1/alpine/Dockerfile)
+-	[`latest`, `2020.01`](https://github.com/raku/docker/blob/d893fa621e755045c80fb4d0615c2810812d98f7/Dockerfile)
+-	[`alpine`, `2020.01-alpine`](https://github.com/raku/docker/blob/d893fa621e755045c80fb4d0615c2810812d98f7/alpine/Dockerfile)
 
 # Quick reference
 
