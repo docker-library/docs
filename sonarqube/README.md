@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.9.3-community`, `7.9-community`, `lts`](https://github.com/SonarSource/docker-sonarqube/blob/62bf9864e14e439dcd0019e3205668d62f623169/7/community/Dockerfile)
--	[`8.2-community`, `8-community`, `community`, `latest`](https://github.com/SonarSource/docker-sonarqube/blob/62bf9864e14e439dcd0019e3205668d62f623169/8/community/Dockerfile)
--	[`8.2-developer`, `8-developer`, `developer`](https://github.com/SonarSource/docker-sonarqube/blob/62bf9864e14e439dcd0019e3205668d62f623169/8/developer/Dockerfile)
--	[`8.2-enterprise`, `8-enterprise`, `enterprise`](https://github.com/SonarSource/docker-sonarqube/blob/62bf9864e14e439dcd0019e3205668d62f623169/8/enterprise/Dockerfile)
+-	[`7.9.3-community`, `7.9-community`, `lts`](https://github.com/SonarSource/docker-sonarqube/blob/8e20fb49201cbf29bfdb152e08a38524afc26b15/7/community/Dockerfile)
+-	[`8.3-community`, `8-community`, `community`, `latest`](https://github.com/SonarSource/docker-sonarqube/blob/8e20fb49201cbf29bfdb152e08a38524afc26b15/8/community/Dockerfile)
+-	[`8.3-developer`, `8-developer`, `developer`](https://github.com/SonarSource/docker-sonarqube/blob/8e20fb49201cbf29bfdb152e08a38524afc26b15/8/developer/Dockerfile)
+-	[`8.3-enterprise`, `8-enterprise`, `enterprise`](https://github.com/SonarSource/docker-sonarqube/blob/8e20fb49201cbf29bfdb152e08a38524afc26b15/8/enterprise/Dockerfile)
 
 # Quick reference
 
