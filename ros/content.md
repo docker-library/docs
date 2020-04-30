@@ -10,7 +10,7 @@ The Robot Operating System (ROS) is a set of software libraries and tools that h
 
 ## Creating a `Dockerfile` to install ROS packages
 
-To create your own ROS docker images and install custom packages, here's a simple example of installing the C++, Python client library demos and security CLI using the official released Debian packages via apt-get.
+To create your own ROS docker images and install custom packages, here's a simple example of installing the C++, Python client library demos using the official released Debian packages via apt-get.
 
 ```dockerfile
 FROM %%IMAGE%%:dashing
@@ -44,45 +44,66 @@ $ docker run -it --rm my/ros:app
 To create your own ROS docker images and build custom packages, here's a simple example of installing a package's build dependencies, compiling it from source, and installing the resulting build artifacts into a final multi-stage image layer.
 
 ```dockerfile
-ARG ROS_TAG=%%IMAGE%%:foxy
-FROM $ROS_TAG-ros-base AS builder
+ARG FROM_IMAGE=%%IMAGE%%:foxy
+ARG OVERLAY_WS=/opt/ros/overlay_ws
 
-# clone package source
-ENV ROS_WS /opt/ros_ws
-RUN mkdir -p $ROS_WS/src
-WORKDIR $ROS_WS
-RUN git -C src clone \
-      -b $ROS_DISTRO \
-      https://github.com/ros2/demos.git
+# multi-stage for caching
+FROM $FROM_IMAGE AS cache
 
-# install package dependencies
+# copy overlay source
+ARG OVERLAY_WS
+WORKDIR $OVERLAY_WS/src
+RUN echo "\
+repositories: \n\
+  ros2/demos: \n\
+    type: git \n\
+    url: https://github.com/ros2/demos.git \n\
+    version: ${ROS_DISTRO} \n\
+" > ../overlay.repos
+RUN vcs import ./ < ../overlay.repos \
+    && find ./ -name ".git" | xargs rm -rf
+
+# copy manifests for caching
+WORKDIR /opt
+RUN mkdir -p /tmp/opt \
+    && find ./ -name "package.xml" | \
+      xargs cp --parents -t /tmp/opt \
+    && find ./ -name "COLCON_IGNORE" | \
+      xargs cp --parents -t /tmp/opt || true
+
+# multi-stage for building
+FROM $FROM_IMAGE AS build
+
+# copy overlay manifests
+ARG OVERLAY_WS
+WORKDIR $OVERLAY_WS
+COPY --from=cache /tmp/$OVERLAY_WS/src ./src
+
+# install overlay dependencies
 RUN . /opt/ros/$ROS_DISTRO/setup.sh && \
-    apt-get update && rosdep update && \
-    rosdep install -y \
+    apt-get update && rosdep install -y \
       --from-paths \
-        src/demos/demo_nodes_cpp \
-        src/demos/demo_nodes_py \
-      --ignore-src && \
-    rm -rf /var/lib/apt/lists/*
+        src/ros2/demos/demo_nodes_cpp \
+        src/ros2/demos/demo_nodes_py \
+      --ignore-src \
+    && rm -rf /var/lib/apt/lists/*
 
-# build package workspace
+# copy overlay source
+COPY --from=cache $OVERLAY_WS/src ./src
+
+# build overlay source
+ARG OVERLAY_MIXINS="release"
 RUN . /opt/ros/$ROS_DISTRO/setup.sh && \
     colcon build \
       --packages-select \
         demo_nodes_cpp \
         demo_nodes_py \
-      --mixin release
-
-# create new multi-stage
-FROM $ROS_TAG-ros-core AS runner
-
-# copy package install
-ENV ROS_WS /opt/ros_ws
-COPY --from=builder  $ROS_WS/install $ROS_WS/install
+      --mixin $OVERLAY_MIXINS
 
 # source entrypoint setup
+ENV OVERLAY_WS $OVERLAY_WS
 RUN sed --in-place --expression \
-      '$isource "$ROS_WS/install/setup.bash"' \
+      '$isource "$OVERLAY_WS/install/setup.bash"' \
       /ros_entrypoint.sh
 
 # run launch file
