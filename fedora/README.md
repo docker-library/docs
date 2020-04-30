@@ -21,9 +21,9 @@ WARNING:
 -	[`28`](https://github.com/fedora-cloud/docker-brew-fedora/blob/aa106da2be30656a7ccb32b96f6788031ce8656f/x86_64/Dockerfile)
 -	[`29`](https://github.com/fedora-cloud/docker-brew-fedora/blob/4dbc2ccd3b4d52258981eaf12043025054d53023/x86_64/Dockerfile)
 -	[`30`](https://github.com/fedora-cloud/docker-brew-fedora/blob/ec092e1e4679f955d142b91f85ecd30a4f14a6ed/x86_64/Dockerfile)
--	[`latest`, `31`](https://github.com/fedora-cloud/docker-brew-fedora/blob/799f0b09293e641b22bd4218cadf03013a82c9dd/x86_64/Dockerfile)
--	[`32`](https://github.com/fedora-cloud/docker-brew-fedora/blob/2aa2af95cdeac2baf3f97aab0082448d1cd305cd/x86_64/Dockerfile)
--	[`rawhide`, `33`](https://github.com/fedora-cloud/docker-brew-fedora/blob/80ea58e013ec6e8fe60dc79ded363f45df17e23e/x86_64/Dockerfile)
+-	[`latest`, `31`](https://github.com/fedora-cloud/docker-brew-fedora/blob/a1647ba32fcbf52a176aaef7347cdc808a1886e4/x86_64/Dockerfile)
+-	[`32`](https://github.com/fedora-cloud/docker-brew-fedora/blob/5d08d3b763390c5b4a0feabec98171762aa0227f/x86_64/Dockerfile)
+-	[`rawhide`, `33`](https://github.com/fedora-cloud/docker-brew-fedora/blob/0619ac2fc01c673d95e13dcdefb91c9e4149923f/x86_64/Dockerfile)
 
 # Quick reference
 
