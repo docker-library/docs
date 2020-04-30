@@ -48,9 +48,9 @@ ARG FROM_IMAGE=%%IMAGE%%:foxy
 ARG OVERLAY_WS=/opt/ros/overlay_ws
 
 # multi-stage for caching
-FROM $FROM_IMAGE AS cache
+FROM $FROM_IMAGE AS cacher
 
-# copy overlay source
+# clone overlay source
 ARG OVERLAY_WS
 WORKDIR $OVERLAY_WS/src
 RUN echo "\
@@ -60,26 +60,24 @@ repositories: \n\
     url: https://github.com/ros2/demos.git \n\
     version: ${ROS_DISTRO} \n\
 " > ../overlay.repos
-RUN vcs import ./ < ../overlay.repos \
-    && find ./ -name ".git" | xargs rm -rf
+RUN vcs import ./ < ../overlay.repos && \
+    find ./ -name ".git" | xargs rm -rf
 
 # copy manifests for caching
 WORKDIR /opt
-RUN mkdir -p /tmp/opt \
-    && find ./ -name "package.xml" | \
-      xargs cp --parents -t /tmp/opt \
-    && find ./ -name "COLCON_IGNORE" | \
+RUN mkdir -p /tmp/opt && \
+    find ./ -name "package.xml" | \
+      xargs cp --parents -t /tmp/opt && \
+    find ./ -name "COLCON_IGNORE" | \
       xargs cp --parents -t /tmp/opt || true
 
 # multi-stage for building
-FROM $FROM_IMAGE AS build
-
-# copy overlay manifests
-ARG OVERLAY_WS
-WORKDIR $OVERLAY_WS
-COPY --from=cache /tmp/$OVERLAY_WS/src ./src
+FROM $FROM_IMAGE AS builder
 
 # install overlay dependencies
+ARG OVERLAY_WS
+WORKDIR $OVERLAY_WS
+COPY --from=cacher /tmp/$OVERLAY_WS/src ./src
 RUN . /opt/ros/$ROS_DISTRO/setup.sh && \
     apt-get update && rosdep install -y \
       --from-paths \
@@ -88,10 +86,8 @@ RUN . /opt/ros/$ROS_DISTRO/setup.sh && \
       --ignore-src \
     && rm -rf /var/lib/apt/lists/*
 
-# copy overlay source
-COPY --from=cache $OVERLAY_WS/src ./src
-
 # build overlay source
+COPY --from=cacher $OVERLAY_WS/src ./src
 ARG OVERLAY_MIXINS="release"
 RUN . /opt/ros/$ROS_DISTRO/setup.sh && \
     colcon build \
