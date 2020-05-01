@@ -3,7 +3,7 @@ set -Eeuo pipefail
 
 cd "$(dirname "$(readlink -f "$BASH_SOURCE")")/.."
 
-files="$(find -name '*.yml')"
+files="$(find -name '*.yml' -not -path './.github/*')"
 need=()
 needdiff=
 for f in $files; do
