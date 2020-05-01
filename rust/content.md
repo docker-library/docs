@@ -39,14 +39,14 @@ COPY . .
 RUN cargo install --path .
 
 FROM debian:buster-slim
-RUN apt-get update && apt-get install -y extra-runtime-dependencies
+RUN apt-get update && apt-get install -y <extra-runtime-dependencies>
 COPY --from=builder /usr/local/cargo/bin/myapp /usr/local/bin/myapp
 CMD ["myapp"]
 ```
 
-Note: Some shared libraries may need to be installed as shown in the installation of the `extra-runtime-dependencies` line above.
+Note: Some shared libraries may need to be installed, to do that replace `<extra-runtime-dependencies>` with any needed dependencies. Again, `myapp` needs to be replaced with the name of your application. 
 
-This method will create an image that is less than 200mb. If you switch to using the Alpine-based rust image, you might be able to save another 60mb.
+This method will create an image that is less than 200mb, the default Rust `hello-world` project is less than 90MB. If you switch to using the Alpine-based rust image, you might be able to save another 60mb.
 
 See https://docs.docker.com/develop/develop-images/multistage-build/ for more information.
 
