@@ -10,7 +10,7 @@ Rust is a systems programming language sponsored by Mozilla Research. It is desi
 
 ## Start a Rust instance running your app
 
-The most straightforward way to use this image is to use a Rust container as both the build and runtime environment. In your `Dockerfile`, writing something along the lines of the following will compile and run your project:
+The most straightforward way to use this image is to use a Rust container as both the build and runtime environment. In your `Dockerfile`, use the following template as a starting point:
 
 ```dockerfile
 FROM %%IMAGE%%:1.31
@@ -23,7 +23,7 @@ RUN cargo install --path .
 CMD ["myapp"]
 ```
 
-Then, build and run the Docker image:
+Be sure to replace `myapp` with the name of your application. Then, build and run the Docker image:
 
 ```console
 $ docker build -t my-rust-app .
