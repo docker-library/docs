@@ -1,17 +1,19 @@
-# Supported tags and respective `Dockerfile` links
-
-%%TAGS%%
-
 # Quick reference
+
+-	**Maintained by**:  
+	%%MAINTAINER%%
 
 -	**Where to get help**:  
 	%%GET-HELP%%
 
+# Supported tags and respective `Dockerfile` links
+
+%%TAGS%%
+
+# Quick reference (cont.)
+
 -	**Where to file issues**:  
 	%%ISSUES%%
-
--	**Maintained by**:  
-	%%MAINTAINER%%
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	%%ARCHES%%
