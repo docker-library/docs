@@ -2,9 +2,9 @@
 
 This repository contains the image documentation for each of the official images. See [docker-library/official-images](https://github.com/docker-library/official-images) for more information about the program in general.
 
-All Markdown files here are run through [tianon's fork of `markdownfmt`](https://github.com/tianon/markdownfmt) (only forked to add some smaller-diff preference and minor DockerHub-compatibility changes), and verified as formatted correctly via Travis CI.
+All Markdown files here are run through [tianon's fork of `markdownfmt`](https://github.com/tianon/markdownfmt) (only forked to add some smaller-diff preference and minor DockerHub-compatibility changes), and verified as formatted correctly via GitHub Actions.
 
--	[![Travis CI status badge](https://img.shields.io/travis/docker-library/docs/master.svg?label=Travis%20CI)](https://travis-ci.org/docker-library/docs)
+-	[![GitHub CI status badge](https://img.shields.io/github/workflow/status/docker-library/docs/GitHub%20CI/master?label=GitHub%20CI)](https://github.com/docker-library/docs/actions?query=workflow%3A%22GitHub+CI%22+branch%3Amaster)
 -	[![library update.sh status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/docs/job/library.svg?label=Automated%20library%20update.sh)](https://doi-janky.infosiftr.net/job/docs/job/library/)
 	-	[![amd64 update.sh status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/docs/job/amd64.svg?label=Automated%20amd64%20update.sh)](https://doi-janky.infosiftr.net/job/docs/job/amd64/)
 	-	[![arm32v5 update.sh status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/docs/job/arm32v5.svg?label=Automated%20arm32v5%20update.sh)](https://doi-janky.infosiftr.net/job/docs/job/arm32v5/)
