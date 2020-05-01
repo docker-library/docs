@@ -14,21 +14,23 @@ WARNING:
 
 -->
 
+# Quick reference
+
+-	**Maintained by**:  
+	[the SWI-Prolog community](https://github.com/SWI-Prolog/docker-swipl)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`latest`, `8.1.12`](https://github.com/SWI-Prolog/docker-swipl/blob/87ae5e3e6e67594f835dfb34ffa2c57d7ed65ce1/8.1.12/stretch/Dockerfile)
 -	[`stable`, `8.0.3`](https://github.com/SWI-Prolog/docker-swipl/blob/87ae5e3e6e67594f835dfb34ffa2c57d7ed65ce1/8.0.3/stretch/Dockerfile)
 
-# Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+# Quick reference (cont.)
 
 -	**Where to file issues**:  
 	[https://github.com/SWI-Prolog/docker-swipl/issues](https://github.com/SWI-Prolog/docker-swipl/issues)
-
--	**Maintained by**:  
-	[the SWI-Prolog community](https://github.com/SWI-Prolog/docker-swipl)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/swipl/), [`arm32v7`](https://hub.docker.com/r/arm32v7/swipl/), [`arm64v8`](https://hub.docker.com/r/arm64v8/swipl/)

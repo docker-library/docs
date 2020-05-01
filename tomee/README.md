@@ -14,6 +14,14 @@ WARNING:
 
 -->
 
+# Quick reference
+
+-	**Maintained by**:  
+	[the Docker Community](https://github.com/tomitribe/docker-tomee)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`8-jre-7.0.7-plume`, `7.0.7-plume`](https://github.com/tomitribe/docker-tomee/blob/c7642e963c08920560906159e126ea22b9ada61d/TomEE-7.0/jre8/plume/Dockerfile)
@@ -32,16 +40,10 @@ WARNING:
 -	[`11-jre-8.0.1-microprofile`, `8.0.1-microprofile`](https://github.com/tomitribe/docker-tomee/blob/c7642e963c08920560906159e126ea22b9ada61d/TomEE-8.0/jre11/microprofile/Dockerfile)
 -	[`11-jre-8.0.1-webprofile`, `8.0.1-webprofile`, `latest`, `8`](https://github.com/tomitribe/docker-tomee/blob/c7642e963c08920560906159e126ea22b9ada61d/TomEE-8.0/jre11/webprofile/Dockerfile)
 
-# Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+# Quick reference (cont.)
 
 -	**Where to file issues**:  
 	[https://github.com/tomitribe/docker-tomee/issues](https://github.com/tomitribe/docker-tomee/issues)
-
--	**Maintained by**:  
-	[the Docker Community](https://github.com/tomitribe/docker-tomee)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/tomee/)

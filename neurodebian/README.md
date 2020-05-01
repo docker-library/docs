@@ -14,6 +14,14 @@ WARNING:
 
 -->
 
+# Quick reference
+
+-	**Maintained by**:  
+	[NeuroDebian](https://github.com/neurodebian/dockerfiles)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`trusty`, `nd14.04`](https://github.com/neurodebian/dockerfiles/blob/b48258339ba2e3addd11ccaed4933f8e5153033c/dockerfiles/trusty/Dockerfile)
@@ -35,16 +43,10 @@ WARNING:
 -	[`sid`, `nd`](https://github.com/neurodebian/dockerfiles/blob/b48258339ba2e3addd11ccaed4933f8e5153033c/dockerfiles/sid/Dockerfile)
 -	[`sid-non-free`, `nd-non-free`](https://github.com/neurodebian/dockerfiles/blob/b48258339ba2e3addd11ccaed4933f8e5153033c/dockerfiles/sid-non-free/Dockerfile)
 
-# Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+# Quick reference (cont.)
 
 -	**Where to file issues**:  
 	[https://github.com/neurodebian/dockerfiles/issues](https://github.com/neurodebian/dockerfiles/issues)
-
--	**Maintained by**:  
-	[NeuroDebian](https://github.com/neurodebian/dockerfiles)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/neurodebian/)

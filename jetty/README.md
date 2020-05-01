@@ -14,6 +14,14 @@ WARNING:
 
 -->
 
+# Quick reference
+
+-	**Maintained by**:  
+	[the Docker Community](https://github.com/appropriate/docker-jetty)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`9.4.27-jre11-slim`, `9.4-jre11-slim`, `9-jre11-slim`](https://github.com/appropriate/docker-jetty/blob/89dfeafc4a603611cf5135249acbe218b515439c/9.4-jre11-slim/Dockerfile)
@@ -24,16 +32,10 @@ WARNING:
 -	[`9.3.28-jre8`, `9.3-jre8`](https://github.com/appropriate/docker-jetty/blob/28562cbee783f1ccb94c375b7e9165c6cfe6d2e2/9.3-jre8/Dockerfile)
 -	[`9.2.29-jre8`, `9.2-jre8`](https://github.com/appropriate/docker-jetty/blob/28562cbee783f1ccb94c375b7e9165c6cfe6d2e2/9.2-jre8/Dockerfile)
 
-# Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+# Quick reference (cont.)
 
 -	**Where to file issues**:  
 	[https://github.com/appropriate/docker-jetty/issues](https://github.com/appropriate/docker-jetty/issues)
-
--	**Maintained by**:  
-	[the Docker Community](https://github.com/appropriate/docker-jetty)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/jetty/), [`arm64v8`](https://hub.docker.com/r/arm64v8/jetty/)

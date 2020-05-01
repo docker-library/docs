@@ -14,6 +14,14 @@ WARNING:
 
 -->
 
+# Quick reference
+
+-	**Maintained by**:  
+	[Keegan Witt (of the Groovy Project)](https://github.com/keeganwitt/docker-gradle), [with the Gradle Project's approval](https://discuss.gradle.org/t/official-docker-images/21159/8)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`6.3.0-jdk8`, `6.3-jdk8`, `jdk8`, `6.3.0-jdk`, `6.3-jdk`, `jdk`, `6.3.0`, `6.3`, `latest`](https://github.com/keeganwitt/docker-gradle/blob/5ccc2041d4dc7caa219e861b961d6c9717b0274b/jdk8/Dockerfile)
@@ -23,16 +31,10 @@ WARNING:
 -	[`6.3.0-jdk14`, `6.3-jdk14`, `jdk14`](https://github.com/keeganwitt/docker-gradle/blob/5ccc2041d4dc7caa219e861b961d6c9717b0274b/jdk14/Dockerfile)
 -	[`6.3.0-jre14`, `6.3-jre14`, `jre14`](https://github.com/keeganwitt/docker-gradle/blob/5ccc2041d4dc7caa219e861b961d6c9717b0274b/jre14/Dockerfile)
 
-# Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+# Quick reference (cont.)
 
 -	**Where to file issues**:  
 	[https://github.com/keeganwitt/docker-gradle/issues](https://github.com/keeganwitt/docker-gradle/issues)
-
--	**Maintained by**:  
-	[Keegan Witt (of the Groovy Project)](https://github.com/keeganwitt/docker-gradle), [with the Gradle Project's approval](https://discuss.gradle.org/t/official-docker-images/21159/8)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/gradle/), [`arm32v7`](https://hub.docker.com/r/arm32v7/gradle/), [`arm64v8`](https://hub.docker.com/r/arm64v8/gradle/), [`ppc64le`](https://hub.docker.com/r/ppc64le/gradle/), [`s390x`](https://hub.docker.com/r/s390x/gradle/)

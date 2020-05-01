@@ -14,6 +14,14 @@ WARNING:
 
 -->
 
+# Quick reference
+
+-	**Maintained by**:  
+	[The Node.js Docker Team](https://github.com/nodejs/docker-node)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`14.1.0-stretch`, `14.1-stretch`, `14-stretch`, `stretch`, `current-stretch`, `14.1.0`, `14.1`, `14`, `latest`, `current`](https://github.com/nodejs/docker-node/blob/38922cd36cc63f8b5f114c4c97b08eba3f559446/14/stretch/Dockerfile)
@@ -45,16 +53,10 @@ WARNING:
 -	[`10.20.1-alpine3.10`, `10.20-alpine3.10`, `10-alpine3.10`, `dubnium-alpine3.10`](https://github.com/nodejs/docker-node/blob/d071b895dd1b8da6c566f45b971825fe5b087b21/10/alpine3.10/Dockerfile)
 -	[`10.20.1-alpine3.11`, `10.20-alpine3.11`, `10-alpine3.11`, `dubnium-alpine3.11`, `10.20.1-alpine`, `10.20-alpine`, `10-alpine`, `dubnium-alpine`](https://github.com/nodejs/docker-node/blob/d071b895dd1b8da6c566f45b971825fe5b087b21/10/alpine3.11/Dockerfile)
 
-# Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+# Quick reference (cont.)
 
 -	**Where to file issues**:  
 	[https://github.com/nodejs/docker-node/issues](https://github.com/nodejs/docker-node/issues)
-
--	**Maintained by**:  
-	[The Node.js Docker Team](https://github.com/nodejs/docker-node)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/node/), [`arm32v6`](https://hub.docker.com/r/arm32v6/node/), [`arm32v7`](https://hub.docker.com/r/arm32v7/node/), [`arm64v8`](https://hub.docker.com/r/arm64v8/node/), [`i386`](https://hub.docker.com/r/i386/node/), [`ppc64le`](https://hub.docker.com/r/ppc64le/node/), [`s390x`](https://hub.docker.com/r/s390x/node/)

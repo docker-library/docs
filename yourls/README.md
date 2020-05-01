@@ -14,22 +14,24 @@ WARNING:
 
 -->
 
+# Quick reference
+
+-	**Maintained by**:  
+	[YOURLS](https://github.com/YOURLS/docker-yourls)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`1.7.9-apache`, `1.7-apache`, `1-apache`, `apache`, `1.7.9`, `1.7`, `1`, `latest`](https://github.com/YOURLS/docker-yourls/blob/72f24c9b782ddf3f5c694e5461ba03330124463e/apache/Dockerfile)
 -	[`1.7.9-fpm`, `1.7-fpm`, `1-fpm`, `fpm`](https://github.com/YOURLS/docker-yourls/blob/72f24c9b782ddf3f5c694e5461ba03330124463e/fpm/Dockerfile)
 -	[`1.7.9-fpm-alpine`, `1.7-fpm-alpine`, `1-fpm-alpine`, `fpm-alpine`](https://github.com/YOURLS/docker-yourls/blob/72f24c9b782ddf3f5c694e5461ba03330124463e/fpm-alpine/Dockerfile)
 
-# Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+# Quick reference (cont.)
 
 -	**Where to file issues**:  
 	[https://github.com/YOURLS/docker-yourls/issues](https://github.com/YOURLS/docker-yourls/issues)
-
--	**Maintained by**:  
-	[YOURLS](https://github.com/YOURLS/docker-yourls)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/yourls/), [`arm32v5`](https://hub.docker.com/r/arm32v5/yourls/), [`arm32v6`](https://hub.docker.com/r/arm32v6/yourls/), [`arm32v7`](https://hub.docker.com/r/arm32v7/yourls/), [`arm64v8`](https://hub.docker.com/r/arm64v8/yourls/), [`i386`](https://hub.docker.com/r/i386/yourls/), [`ppc64le`](https://hub.docker.com/r/ppc64le/yourls/), [`s390x`](https://hub.docker.com/r/s390x/yourls/)

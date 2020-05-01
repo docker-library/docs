@@ -14,6 +14,14 @@ WARNING:
 
 -->
 
+# Quick reference
+
+-	**Maintained by**:  
+	[the Caddy Docker Maintainers](https://github.com/caddyserver/caddy-docker)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
 (See ["What's the difference between 'Shared' and 'Simple' tags?" in the FAQ](https://github.com/docker-library/faq#whats-the-difference-between-shared-and-simple-tags).)
@@ -35,16 +43,10 @@ WARNING:
 	-	[`2.0.0-rc.3-windowsservercore-1809`](https://github.com/caddyserver/caddy-docker/blob/8ac69cfc9c0ad5a82f6399519fb256275f7228d8/windows/1809/Dockerfile)
 	-	[`2.0.0-rc.3-windowsservercore-ltsc2016`](https://github.com/caddyserver/caddy-docker/blob/8ac69cfc9c0ad5a82f6399519fb256275f7228d8/windows/ltsc2016/Dockerfile)
 
-# Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+# Quick reference (cont.)
 
 -	**Where to file issues**:  
 	[https://github.com/caddyserver/caddy-docker/issues](https://github.com/caddyserver/caddy-docker/issues)
-
--	**Maintained by**:  
-	[the Caddy Docker Maintainers](https://github.com/caddyserver/caddy-docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/caddy/), [`arm32v6`](https://hub.docker.com/r/arm32v6/caddy/), [`arm32v7`](https://hub.docker.com/r/arm32v7/caddy/), [`arm64v8`](https://hub.docker.com/r/arm64v8/caddy/), [`windows-amd64`](https://hub.docker.com/r/winamd64/caddy/)

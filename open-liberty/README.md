@@ -14,6 +14,14 @@ WARNING:
 
 -->
 
+# Quick reference
+
+-	**Maintained by**:  
+	[the Open Liberty Community](https://github.com/OpenLiberty/ci.docker)
+
+-	**Where to get help**:  
+	[the Open Liberty community](https://www.openliberty.io/community/)
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`kernel`, `kernel-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/e71e40aaa6bee15e5bd26f01176ffd249493b6b8/releases/latest/kernel/Dockerfile.ubuntu.adoptopenjdk8)
@@ -23,16 +31,10 @@ WARNING:
 -	[`19.0.0.12-kernel-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/e71e40aaa6bee15e5bd26f01176ffd249493b6b8/releases/19.0.0.12/kernel/Dockerfile.ubuntu.adoptopenjdk8)
 -	[`19.0.0.12-full-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/e71e40aaa6bee15e5bd26f01176ffd249493b6b8/releases/19.0.0.12/full/Dockerfile.ubuntu.adoptopenjdk8)
 
-# Quick reference
-
--	**Where to get help**:  
-	[the Open Liberty community](https://www.openliberty.io/community/)
+# Quick reference (cont.)
 
 -	**Where to file issues**:  
 	[https://github.com/OpenLiberty/ci.docker/issues](https://github.com/OpenLiberty/ci.docker/issues)
-
--	**Maintained by**:  
-	[the Open Liberty Community](https://github.com/OpenLiberty/ci.docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/open-liberty/), [`ppc64le`](https://hub.docker.com/r/ppc64le/open-liberty/), [`s390x`](https://hub.docker.com/r/s390x/open-liberty/)

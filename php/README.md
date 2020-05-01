@@ -14,6 +14,14 @@ WARNING:
 
 -->
 
+# Quick reference
+
+-	**Maintained by**:  
+	[the Docker Community](https://github.com/docker-library/php)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`7.4.5-cli-buster`, `7.4-cli-buster`, `7-cli-buster`, `cli-buster`, `7.4.5-buster`, `7.4-buster`, `7-buster`, `buster`, `7.4.5-cli`, `7.4-cli`, `7-cli`, `cli`, `7.4.5`, `7.4`, `7`, `latest`](https://github.com/docker-library/php/blob/7ccfc9272c3b5a5f100b38a75e91c99fdd2cb47a/7.4/buster/cli/Dockerfile)
@@ -55,16 +63,10 @@ WARNING:
 -	[`7.2.30-fpm-alpine3.10`, `7.2-fpm-alpine3.10`](https://github.com/docker-library/php/blob/d41f0d0c2a71b16280e5c26d06570bf7d76f3621/7.2/alpine3.10/fpm/Dockerfile)
 -	[`7.2.30-zts-alpine3.10`, `7.2-zts-alpine3.10`](https://github.com/docker-library/php/blob/d41f0d0c2a71b16280e5c26d06570bf7d76f3621/7.2/alpine3.10/zts/Dockerfile)
 
-# Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+# Quick reference (cont.)
 
 -	**Where to file issues**:  
 	[https://github.com/docker-library/php/issues](https://github.com/docker-library/php/issues)
-
--	**Maintained by**:  
-	[the Docker Community](https://github.com/docker-library/php)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/php/), [`arm32v5`](https://hub.docker.com/r/arm32v5/php/), [`arm32v6`](https://hub.docker.com/r/arm32v6/php/), [`arm32v7`](https://hub.docker.com/r/arm32v7/php/), [`arm64v8`](https://hub.docker.com/r/arm64v8/php/), [`i386`](https://hub.docker.com/r/i386/php/), [`mips64le`](https://hub.docker.com/r/mips64le/php/), [`ppc64le`](https://hub.docker.com/r/ppc64le/php/), [`s390x`](https://hub.docker.com/r/s390x/php/)

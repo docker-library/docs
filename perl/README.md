@@ -14,6 +14,14 @@ WARNING:
 
 -->
 
+# Quick reference
+
+-	**Maintained by**:  
+	[the Perl Community](https://github.com/Perl/docker-perl)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`latest`, `5`, `5.30`, `5.30.2`, `5-buster`, `5.30-buster`, `5.30.2-buster`](https://github.com/perl/docker-perl/blob/054bceb46d86b0f76683bbae808de63323c21c98/5.030.002-main-buster/Dockerfile)
@@ -41,16 +49,10 @@ WARNING:
 -	[`5.26-slim-threaded`, `5.26.3-slim-threaded`, `5.26-slim-threaded-buster`, `5.26.3-slim-threaded-buster`](https://github.com/perl/docker-perl/blob/054bceb46d86b0f76683bbae808de63323c21c98/5.026.003-slim,threaded-buster/Dockerfile)
 -	[`5.26-slim-threaded-stretch`, `5.26.3-slim-threaded-stretch`](https://github.com/perl/docker-perl/blob/054bceb46d86b0f76683bbae808de63323c21c98/5.026.003-slim,threaded-stretch/Dockerfile)
 
-# Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+# Quick reference (cont.)
 
 -	**Where to file issues**:  
 	[https://github.com/Perl/docker-perl/issues](https://github.com/Perl/docker-perl/issues)
-
--	**Maintained by**:  
-	[the Perl Community](https://github.com/Perl/docker-perl)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/perl/), [`arm32v7`](https://hub.docker.com/r/arm32v7/perl/), [`arm64v8`](https://hub.docker.com/r/arm64v8/perl/), [`i386`](https://hub.docker.com/r/i386/perl/), [`ppc64le`](https://hub.docker.com/r/ppc64le/perl/), [`s390x`](https://hub.docker.com/r/s390x/perl/)

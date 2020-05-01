@@ -14,22 +14,24 @@ WARNING:
 
 -->
 
+# Quick reference
+
+-	**Maintained by**:  
+	[Wikimedia Foundation & Docker Community](https://github.com/wikimedia/mediawiki-docker)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`1.34.1`, `1.34`, `stable`, `latest`](https://github.com/wikimedia/mediawiki-docker/blob/672a803dfb39e86b8dc1f4b57fde4c6df6304050/1.34/Dockerfile)
 -	[`1.33.3`, `1.33`, `legacy`](https://github.com/wikimedia/mediawiki-docker/blob/672a803dfb39e86b8dc1f4b57fde4c6df6304050/1.33/Dockerfile)
 -	[`1.31.7`, `1.31`, `lts`, `legacylts`](https://github.com/wikimedia/mediawiki-docker/blob/672a803dfb39e86b8dc1f4b57fde4c6df6304050/1.31/Dockerfile)
 
-# Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+# Quick reference (cont.)
 
 -	**Where to file issues**:  
 	[https://phabricator.wikimedia.org/project/view/3094/](https://phabricator.wikimedia.org/project/view/3094/)
-
--	**Maintained by**:  
-	[Wikimedia Foundation & Docker Community](https://github.com/wikimedia/mediawiki-docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/mediawiki/), [`arm32v5`](https://hub.docker.com/r/arm32v5/mediawiki/), [`arm32v7`](https://hub.docker.com/r/arm32v7/mediawiki/), [`arm64v8`](https://hub.docker.com/r/arm64v8/mediawiki/), [`i386`](https://hub.docker.com/r/i386/mediawiki/), [`ppc64le`](https://hub.docker.com/r/ppc64le/mediawiki/)

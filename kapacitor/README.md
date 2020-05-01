@@ -14,6 +14,14 @@ WARNING:
 
 -->
 
+# Quick reference
+
+-	**Maintained by**:  
+	[InfluxData](https://github.com/influxdata/influxdata-docker)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`1.4`, `1.4.1`](https://github.com/influxdata/influxdata-docker/blob/65e446ee51fa4324559198886e2dd2ce0c24d21e/kapacitor/1.4/Dockerfile)
@@ -21,16 +29,10 @@ WARNING:
 -	[`1.5`, `1.5.4`, `latest`](https://github.com/influxdata/influxdata-docker/blob/65e446ee51fa4324559198886e2dd2ce0c24d21e/kapacitor/1.5/Dockerfile)
 -	[`1.5-alpine`, `1.5.4-alpine`, `alpine`](https://github.com/influxdata/influxdata-docker/blob/65e446ee51fa4324559198886e2dd2ce0c24d21e/kapacitor/1.5/alpine/Dockerfile)
 
-# Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+# Quick reference (cont.)
 
 -	**Where to file issues**:  
 	[https://github.com/influxdata/influxdata-docker/issues](https://github.com/influxdata/influxdata-docker/issues)
-
--	**Maintained by**:  
-	[InfluxData](https://github.com/influxdata/influxdata-docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/kapacitor/), [`arm32v7`](https://hub.docker.com/r/arm32v7/kapacitor/), [`arm64v8`](https://hub.docker.com/r/arm64v8/kapacitor/)

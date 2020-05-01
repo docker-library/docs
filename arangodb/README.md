@@ -14,6 +14,14 @@ WARNING:
 
 -->
 
+# Quick reference
+
+-	**Maintained by**:  
+	[ArangoDB](https://github.com/arangodb/arangodb-docker)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`2.8`, `2.8.11`](https://github.com/arangodb/arangodb-docker/blob/d6fca9a137cd21345b1d380fc0e72daacb6130ce/jessie/2.8.11/Dockerfile)
@@ -23,16 +31,10 @@ WARNING:
 -	[`3.5`, `3.5.4`](https://github.com/arangodb/arangodb-docker/blob/8fa0c5d9b74ca36cf3e7ed6e8df8954c87cf04a6/alpine/3.5.4/Dockerfile)
 -	[`3.6`, `3.6.3`, `latest`](https://github.com/arangodb/arangodb-docker/blob/ef37ecea1c60befdf513eb2cad81d01b447dc28a/alpine/3.6.3/Dockerfile)
 
-# Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+# Quick reference (cont.)
 
 -	**Where to file issues**:  
 	[https://github.com/arangodb/arangodb-docker/issues](https://github.com/arangodb/arangodb-docker/issues)
-
--	**Maintained by**:  
-	[ArangoDB](https://github.com/arangodb/arangodb-docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/arangodb/)

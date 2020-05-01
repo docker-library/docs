@@ -14,6 +14,14 @@ WARNING:
 
 -->
 
+# Quick reference
+
+-	**Maintained by**:  
+	[The EulerOS Project](https://github.com/euleros/euleros-docker-images)
+
+-	**Where to get help**:  
+	[the EulerOS Community Forums](http://developer.huawei.com/ict/forum/forum.php?mod=forumdisplay&fid=400257&page=) or 8x5 Comprehensive Support 400 8828 000
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`2.3.1809`, `latest`](https://github.com/euleros/euleros-docker-images/blob/db22e2c392c3922d2c674110c90667576618f348/2.3.1809/x86_64/Dockerfile)
@@ -21,16 +29,10 @@ WARNING:
 -	[`2.3.1803`](https://github.com/euleros/euleros-docker-images/blob/5afd15edcd49671adefb6dff87537f2943ae1107/2.3.1803/x86_64/Dockerfile)
 -	[`2.2`](https://github.com/euleros/euleros-docker-images/blob/959f378638f222bd1eebe8dccf267cccbc118174/2.2/Dockerfile)
 
-# Quick reference
-
--	**Where to get help**:  
-	[the EulerOS Community Forums](http://developer.huawei.com/ict/forum/forum.php?mod=forumdisplay&fid=400257&page=) or 8x5 Comprehensive Support 400 8828 000
+# Quick reference (cont.)
 
 -	**Where to file issues**:  
 	[https://github.com/euleros/euleros-docker-images/issues](https://github.com/euleros/euleros-docker-images/issues)
-
--	**Maintained by**:  
-	[The EulerOS Project](https://github.com/euleros/euleros-docker-images)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/euleros/), [`arm64v8`](https://hub.docker.com/r/arm64v8/euleros/)

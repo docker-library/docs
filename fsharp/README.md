@@ -14,22 +14,24 @@ WARNING:
 
 -->
 
+# Quick reference
+
+-	**Maintained by**:  
+	[the F# Community](https://github.com/fsprojects/docker-fsharp)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`latest`, `10`, `10.7`, `10.7.0`](https://github.com/fsprojects/docker-fsharp/blob/6ced4c004bac9d5a024eefbc1d90219c78ce784b/10.7.0/mono/Dockerfile)
 -	[`4`, `4.1`, `4.1.34`](https://github.com/fsprojects/docker-fsharp/blob/6ced4c004bac9d5a024eefbc1d90219c78ce784b/4.1.34/mono/Dockerfile)
 -	[`netcore`, `10-netcore`, `10.7-netcore`, `10.7.0-netcore`](https://github.com/fsprojects/docker-fsharp/blob/6ced4c004bac9d5a024eefbc1d90219c78ce784b/10.7.0/netcore/Dockerfile)
 
-# Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+# Quick reference (cont.)
 
 -	**Where to file issues**:  
 	[https://github.com/fsprojects/docker-fsharp/issues](https://github.com/fsprojects/docker-fsharp/issues)
-
--	**Maintained by**:  
-	[the F# Community](https://github.com/fsprojects/docker-fsharp)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/fsharp/), [`arm64v8`](https://hub.docker.com/r/arm64v8/fsharp/)

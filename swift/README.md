@@ -14,6 +14,14 @@ WARNING:
 
 -->
 
+# Quick reference
+
+-	**Maintained by**:  
+	[the Swift Community](https://github.com/apple/swift-docker)
+
+-	**Where to get help**:  
+	[Swift Docker Community Forums](https://forums.swift.org/c/server/docker)
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`5.2.2`, `5.2`, `5.2.2-bionic`, `5.2-bionic`, `bionic`, `latest`](https://github.com/apple/swift-docker/blob/2aa4d892e95c04321810beda924e484356eee58a/5.2/ubuntu/18.04/Dockerfile)
@@ -32,16 +40,10 @@ WARNING:
 -	[`4.1.3`, `4.1`](https://github.com/apple/swift-docker/blob/34aa283f9b3473ab22b2282f71773781b121af19/4.1/Dockerfile)
 -	[`4.0.3`, `4.0`](https://github.com/apple/swift-docker/blob/34aa283f9b3473ab22b2282f71773781b121af19/4.0/Dockerfile)
 
-# Quick reference
-
--	**Where to get help**:  
-	[Swift Docker Community Forums](https://forums.swift.org/c/server/docker)
+# Quick reference (cont.)
 
 -	**Where to file issues**:  
 	[https://bugs.swift.org](https://bugs.swift.org) Component: Docker
-
--	**Maintained by**:  
-	[the Swift Community](https://github.com/apple/swift-docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/swift/)

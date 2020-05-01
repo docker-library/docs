@@ -14,6 +14,14 @@ WARNING:
 
 -->
 
+# Quick reference
+
+-	**Maintained by**:  
+	[SonarSource](https://github.com/SonarSource/docker-sonarqube)
+
+-	**Where to get help**:  
+	[the SonarSource Community forum](https://community.sonarsource.com/tags/c/help/sq/docker), [the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`7.9.3-community`, `7.9-community`, `lts`](https://github.com/SonarSource/docker-sonarqube/blob/8e20fb49201cbf29bfdb152e08a38524afc26b15/7/community/Dockerfile)
@@ -21,16 +29,10 @@ WARNING:
 -	[`8.3-developer`, `8-developer`, `developer`](https://github.com/SonarSource/docker-sonarqube/blob/8e20fb49201cbf29bfdb152e08a38524afc26b15/8/developer/Dockerfile)
 -	[`8.3-enterprise`, `8-enterprise`, `enterprise`](https://github.com/SonarSource/docker-sonarqube/blob/8e20fb49201cbf29bfdb152e08a38524afc26b15/8/enterprise/Dockerfile)
 
-# Quick reference
-
--	**Where to get help**:  
-	[the SonarSource Community forum](https://community.sonarsource.com/tags/c/help/sq/docker), [the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+# Quick reference (cont.)
 
 -	**Where to file issues**:  
 	[https://github.com/SonarSource/docker-sonarqube/issues](https://github.com/SonarSource/docker-sonarqube/issues)
-
--	**Maintained by**:  
-	[SonarSource](https://github.com/SonarSource/docker-sonarqube)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/sonarqube/)

@@ -14,6 +14,14 @@ WARNING:
 
 -->
 
+# Quick reference
+
+-	**Maintained by**:  
+	[IBM Runtime Technologies](https://github.com/ibmruntimes/ci.docker)
+
+-	**Where to get help**:  
+	[the developerWorks forum for IBM Java Runtimes and SDKs](https://www.ibm.com/developerworks/community/forums/html/forum?id=11111111-0000-0000-0000-000000000367)
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`8-jre`, `jre`, `8`, `latest`](https://github.com/ibmruntimes/ci.docker/blob/030790af35e0b2c1a56c03b04982e97ee5724005/ibmjava/8/jre/ubuntu/Dockerfile)
@@ -23,16 +31,10 @@ WARNING:
 -	[`8-sdk`, `sdk`](https://github.com/ibmruntimes/ci.docker/blob/030790af35e0b2c1a56c03b04982e97ee5724005/ibmjava/8/sdk/ubuntu/Dockerfile)
 -	[`8-sdk-alpine`, `sdk-alpine`](https://github.com/ibmruntimes/ci.docker/blob/030790af35e0b2c1a56c03b04982e97ee5724005/ibmjava/8/sdk/alpine/Dockerfile)
 
-# Quick reference
-
--	**Where to get help**:  
-	[the developerWorks forum for IBM Java Runtimes and SDKs](https://www.ibm.com/developerworks/community/forums/html/forum?id=11111111-0000-0000-0000-000000000367)
+# Quick reference (cont.)
 
 -	**Where to file issues**:  
 	[GitHub](https://github.com/ibmruntimes/ci.docker/issues); for troubleshooting, see our [How Do I ...?](http://www.ibm.com/developerworks/java/jdk/howdoi/) page
-
--	**Maintained by**:  
-	[IBM Runtime Technologies](https://github.com/ibmruntimes/ci.docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/ibmjava/), [`i386`](https://hub.docker.com/r/i386/ibmjava/), [`ppc64le`](https://hub.docker.com/r/ppc64le/ibmjava/), [`s390x`](https://hub.docker.com/r/s390x/ibmjava/)

@@ -14,21 +14,23 @@ WARNING:
 
 -->
 
+# Quick reference
+
+-	**Maintained by**:  
+	[Apache CouchDB](https://github.com/apache/couchdb-docker)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`latest`, `3.0.0`, `3.0`, `3`](https://github.com/apache/couchdb-docker/blob/f56c425bb7d64918a57936376e0070e7742768cd/3.0.0/Dockerfile)
 -	[`2.3.1`, `2.3`, `2`](https://github.com/apache/couchdb-docker/blob/f56c425bb7d64918a57936376e0070e7742768cd/2.3.1/Dockerfile)
 
-# Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+# Quick reference (cont.)
 
 -	**Where to file issues**:  
 	[https://github.com/apache/couchdb-docker/issues](https://github.com/apache/couchdb-docker/issues)
-
--	**Maintained by**:  
-	[Apache CouchDB](https://github.com/apache/couchdb-docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/couchdb/), [`arm64v8`](https://hub.docker.com/r/arm64v8/couchdb/), [`ppc64le`](https://hub.docker.com/r/ppc64le/couchdb/)

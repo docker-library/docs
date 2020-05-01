@@ -14,6 +14,14 @@ WARNING:
 
 -->
 
+# Quick reference
+
+-	**Maintained by**:  
+	[the Docker Community](https://github.com/docker-library/tomcat)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`10.0.0-M4-jdk14-openjdk-oracle`, `10.0.0-jdk14-openjdk-oracle`, `10.0-jdk14-openjdk-oracle`, `10-jdk14-openjdk-oracle`](https://github.com/docker-library/tomcat/blob/236eadcac2f760d0b88ef8a950c4d0f33ad3da45/10.0/jdk14/openjdk-oracle/Dockerfile)
@@ -61,16 +69,10 @@ WARNING:
 -	[`7.0.103-jdk8-adoptopenjdk-openj9`, `7.0-jdk8-adoptopenjdk-openj9`, `7-jdk8-adoptopenjdk-openj9`](https://github.com/docker-library/tomcat/blob/236eadcac2f760d0b88ef8a950c4d0f33ad3da45/7/jdk8/adoptopenjdk-openj9/Dockerfile)
 -	[`7.0.103-jdk8-corretto`, `7.0-jdk8-corretto`, `7-jdk8-corretto`](https://github.com/docker-library/tomcat/blob/236eadcac2f760d0b88ef8a950c4d0f33ad3da45/7/jdk8/corretto/Dockerfile)
 
-# Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+# Quick reference (cont.)
 
 -	**Where to file issues**:  
 	[https://github.com/docker-library/tomcat/issues](https://github.com/docker-library/tomcat/issues)
-
--	**Maintained by**:  
-	[the Docker Community](https://github.com/docker-library/tomcat)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/tomcat/), [`arm32v7`](https://hub.docker.com/r/arm32v7/tomcat/), [`arm64v8`](https://hub.docker.com/r/arm64v8/tomcat/), [`ppc64le`](https://hub.docker.com/r/ppc64le/tomcat/), [`s390x`](https://hub.docker.com/r/s390x/tomcat/)

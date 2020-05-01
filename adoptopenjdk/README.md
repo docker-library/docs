@@ -14,6 +14,14 @@ WARNING:
 
 -->
 
+# Quick reference
+
+-	**Maintained by**:  
+	[AdoptOpenJDK](https://github.com/AdoptOpenJDK/openjdk-docker)
+
+-	**Where to get help**:  
+	[AdoptOpenJDK Slack](https://adoptopenjdk.net/slack.html); [AdoptOpenJDK Mailing List](https://mail.openjdk.java.net/mailman/listinfo/adoption-discuss); [Eclipse OpenJ9 Slack](https://www.eclipse.org/openj9/oj9_joinslack.html); [Eclipse OpenJ9 Mailing List](https://dev.eclipse.org/mailman/listinfo/openj9-dev)
+
 # Supported tags and respective `Dockerfile` links
 
 (See ["What's the difference between 'Shared' and 'Simple' tags?" in the FAQ](https://github.com/docker-library/faq#whats-the-difference-between-shared-and-simple-tags).)
@@ -222,16 +230,10 @@ WARNING:
 	-	[`14.0.1_7.1-jre-openj9-0.20.0-windowsservercore-ltsc2016`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/facb9fef4e720ca5e037862e19ca8ac5b883cc48/14/jre/windows/windowsservercore-ltsc2016/Dockerfile.openj9.releases.full)
 	-	[`14.0.1_7.1-jre-openj9-0.20.0-windowsservercore-1809`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/facb9fef4e720ca5e037862e19ca8ac5b883cc48/14/jre/windows/windowsservercore-1809/Dockerfile.openj9.releases.full)
 
-# Quick reference
-
--	**Where to get help**:  
-	[AdoptOpenJDK Slack](https://adoptopenjdk.net/slack.html); [AdoptOpenJDK Mailing List](https://mail.openjdk.java.net/mailman/listinfo/adoption-discuss); [Eclipse OpenJ9 Slack](https://www.eclipse.org/openj9/oj9_joinslack.html); [Eclipse OpenJ9 Mailing List](https://dev.eclipse.org/mailman/listinfo/openj9-dev)
+# Quick reference (cont.)
 
 -	**Where to file issues**:  
 	[GitHub](https://github.com/AdoptOpenJDK/openjdk-docker/issues); The [adoptopenjdk support](https://adoptopenjdk.net/support.html) page has more information on quality, roadmap and support levels for AdoptOpenJDK builds;
-
--	**Maintained by**:  
-	[AdoptOpenJDK](https://github.com/AdoptOpenJDK/openjdk-docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/adoptopenjdk/), [`arm32v7`](https://hub.docker.com/r/arm32v7/adoptopenjdk/), [`arm64v8`](https://hub.docker.com/r/arm64v8/adoptopenjdk/), [`ppc64le`](https://hub.docker.com/r/ppc64le/adoptopenjdk/), [`s390x`](https://hub.docker.com/r/s390x/adoptopenjdk/), [`windows-amd64`](https://hub.docker.com/r/winamd64/adoptopenjdk/)

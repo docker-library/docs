@@ -14,6 +14,14 @@ WARNING:
 
 -->
 
+# Quick reference
+
+-	**Maintained by**:  
+	[the Oracle Linux Product Team](https://github.com/oracle/container-images)
+
+-	**Where to get help**:  
+	see the "Customer Support" and "Community Support" sections below
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`8.1`, `8`](https://github.com/oracle/container-images/blob/b22bc0aae247d85ec26d2acf9d5e2e801fc4ab22/8.1/Dockerfile)
@@ -24,16 +32,10 @@ WARNING:
 -	[`6.10`, `6`](https://github.com/oracle/container-images/blob/b22bc0aae247d85ec26d2acf9d5e2e801fc4ab22/6.10/Dockerfile)
 -	[`6-slim`](https://github.com/oracle/container-images/blob/b22bc0aae247d85ec26d2acf9d5e2e801fc4ab22/6-slim/Dockerfile)
 
-# Quick reference
-
--	**Where to get help**:  
-	see the "Customer Support" and "Community Support" sections below
+# Quick reference (cont.)
 
 -	**Where to file issues**:  
 	[https://github.com/oracle/container-images/issues](https://github.com/oracle/container-images/issues)
-
--	**Maintained by**:  
-	[the Oracle Linux Product Team](https://github.com/oracle/container-images)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/oraclelinux/), [`arm64v8`](https://hub.docker.com/r/arm64v8/oraclelinux/)

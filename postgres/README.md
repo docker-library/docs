@@ -14,6 +14,14 @@ WARNING:
 
 -->
 
+# Quick reference
+
+-	**Maintained by**:  
+	[the PostgreSQL Docker Community](https://github.com/docker-library/postgres)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`12.2`, `12`, `latest`](https://github.com/docker-library/postgres/blob/a1420dac644b8190df5e78e80bfa9610b2f077e2/12/Dockerfile)
@@ -27,16 +35,10 @@ WARNING:
 -	[`9.5.21`, `9.5`](https://github.com/docker-library/postgres/blob/a1420dac644b8190df5e78e80bfa9610b2f077e2/9.5/Dockerfile)
 -	[`9.5.21-alpine`, `9.5-alpine`](https://github.com/docker-library/postgres/blob/33bccfcaddd0679f55ee1028c012d26cd196537d/9.5/alpine/Dockerfile)
 
-# Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+# Quick reference (cont.)
 
 -	**Where to file issues**:  
 	[https://github.com/docker-library/postgres/issues](https://github.com/docker-library/postgres/issues)
-
--	**Maintained by**:  
-	[the PostgreSQL Docker Community](https://github.com/docker-library/postgres)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/postgres/), [`arm32v5`](https://hub.docker.com/r/arm32v5/postgres/), [`arm32v6`](https://hub.docker.com/r/arm32v6/postgres/), [`arm32v7`](https://hub.docker.com/r/arm32v7/postgres/), [`arm64v8`](https://hub.docker.com/r/arm64v8/postgres/), [`i386`](https://hub.docker.com/r/i386/postgres/), [`mips64le`](https://hub.docker.com/r/mips64le/postgres/), [`ppc64le`](https://hub.docker.com/r/ppc64le/postgres/), [`s390x`](https://hub.docker.com/r/s390x/postgres/)

@@ -14,20 +14,22 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`3.6.3`, `latest`](https://github.com/rocker-org/rocker/blob/e76a46e4d082c0294437c34df1072f48c6fa3685/r-base/Dockerfile)
-
 # Quick reference
+
+-	**Maintained by**:  
+	[the Rocker Community](https://github.com/rocker-org/rocker)
 
 -	**Where to get help**:  
 	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
+# Supported tags and respective `Dockerfile` links
+
+-	[`3.6.3`, `latest`](https://github.com/rocker-org/rocker/blob/e76a46e4d082c0294437c34df1072f48c6fa3685/r-base/Dockerfile)
+
+# Quick reference (cont.)
+
 -	**Where to file issues**:  
 	[GitHub](https://github.com/rocker-org/rocker/issues) or [Email](mailto:rocker-maintainers@eddelbuettel.com)
-
--	**Maintained by**:  
-	[the Rocker Community](https://github.com/rocker-org/rocker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/r-base/), [`arm64v8`](https://hub.docker.com/r/arm64v8/r-base/)

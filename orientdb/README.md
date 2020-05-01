@@ -14,6 +14,14 @@ WARNING:
 
 -->
 
+# Quick reference
+
+-	**Maintained by**:  
+	[OrientDB](https://github.com/orientechnologies/orientdb-docker)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`3.0.30`, `3.0`, `latest`](https://github.com/orientechnologies/orientdb-docker/blob/76586496ae5457689bebdf76ebd267a3be1aa954/release/3.0.x/3.0.30/Dockerfile)
@@ -23,16 +31,10 @@ WARNING:
 -	[`2.1.25`, `2.1`](https://github.com/orientechnologies/orientdb-docker/blob/76586496ae5457689bebdf76ebd267a3be1aa954/release/2.1.x/Dockerfile)
 -	[`2.0.18`, `2.0`](https://github.com/orientechnologies/orientdb-docker/blob/76586496ae5457689bebdf76ebd267a3be1aa954/release/2.0.x/Dockerfile)
 
-# Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+# Quick reference (cont.)
 
 -	**Where to file issues**:  
 	[https://github.com/orientechnologies/orientdb-docker/issues](https://github.com/orientechnologies/orientdb-docker/issues)
-
--	**Maintained by**:  
-	[OrientDB](https://github.com/orientechnologies/orientdb-docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/orientdb/)

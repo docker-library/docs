@@ -14,20 +14,22 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`1.4.0-alpine3.10`, `1.4-alpine3.10`, `1-alpine3.10`, `latest`](https://github.com/dshearer/jobber-docker/blob/64d2a0778ae73986cb90f1c374d9dfb42c9b8483/alpine3.10/Dockerfile)
-
 # Quick reference
+
+-	**Maintained by**:  
+	[Jobber](https://github.com/dshearer/jobber-docker)
 
 -	**Where to get help**:  
 	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
+# Supported tags and respective `Dockerfile` links
+
+-	[`1.4.0-alpine3.10`, `1.4-alpine3.10`, `1-alpine3.10`, `latest`](https://github.com/dshearer/jobber-docker/blob/64d2a0778ae73986cb90f1c374d9dfb42c9b8483/alpine3.10/Dockerfile)
+
+# Quick reference (cont.)
+
 -	**Where to file issues**:  
 	[https://github.com/dshearer/jobber-docker/issues](https://github.com/dshearer/jobber-docker/issues)
-
--	**Maintained by**:  
-	[Jobber](https://github.com/dshearer/jobber-docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/jobber/)

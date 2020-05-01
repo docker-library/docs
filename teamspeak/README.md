@@ -14,20 +14,22 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`3.12`, `3.12.1`, `latest`](https://github.com/TeamSpeak-Systems/teamspeak-linux-docker-images/blob/dd1e68d64552f8848f88b542d2c6d4707a6f20b6/alpine/Dockerfile)
-
 # Quick reference
+
+-	**Maintained by**:  
+	TeamSpeak Developers [nwerensteijn](https://github.com/nwerensteijn) and [muenchow](https://github.com/muenchow)
 
 -	**Where to get help**:  
 	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
+# Supported tags and respective `Dockerfile` links
+
+-	[`3.12`, `3.12.1`, `latest`](https://github.com/TeamSpeak-Systems/teamspeak-linux-docker-images/blob/dd1e68d64552f8848f88b542d2c6d4707a6f20b6/alpine/Dockerfile)
+
+# Quick reference (cont.)
+
 -	**Where to file issues**:  
 	[https://github.com/TeamSpeak-Systems/teamspeak-linux-docker-images/issues](https://github.com/TeamSpeak-Systems/teamspeak-linux-docker-images/issues)
-
--	**Maintained by**:  
-	TeamSpeak Developers [nwerensteijn](https://github.com/nwerensteijn) and [muenchow](https://github.com/muenchow)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/teamspeak/)

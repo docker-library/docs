@@ -14,21 +14,23 @@ WARNING:
 
 -->
 
+# Quick reference
+
+-	**Maintained by**:  
+	[the Elastic Team](https://github.com/elastic/kibana)
+
+-	**Where to get help**:  
+	the [Kibana Discuss Forums](https://discuss.elastic.co/c/kibana), the [Elastic community](https://www.elastic.co/community)
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`7.6.2`](https://github.com/docker-library/kibana/blob/8e76f488b77dda7824e531450ddc08b33aae18bc/7/Dockerfile)
 -	[`6.8.8`](https://github.com/docker-library/kibana/blob/119c1cde627beeb27df8181f313900788399442b/6/Dockerfile)
 
-# Quick reference
-
--	**Where to get help**:  
-	the [Kibana Discuss Forums](https://discuss.elastic.co/c/kibana), the [Elastic community](https://www.elastic.co/community)
+# Quick reference (cont.)
 
 -	**Where to file issues**:  
 	For issues with the Kibana Docker image or Kibana: https://github.com/elastic/kibana/issues
-
--	**Maintained by**:  
-	[the Elastic Team](https://github.com/elastic/kibana)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/kibana/)

@@ -14,21 +14,23 @@ WARNING:
 
 -->
 
+# Quick reference
+
+-	**Maintained by**:  
+	[the Docker Community](https://github.com/haskell/docker-haskell)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`8.8.3`, `8.8`, `8`, `latest`](https://github.com/haskell/docker-haskell/blob/c7675920a33d47aa30ff5456ee622cd61a2d62be/8.8/Dockerfile)
 -	[`8.6.5`, `8.6`](https://github.com/haskell/docker-haskell/blob/c7675920a33d47aa30ff5456ee622cd61a2d62be/8.6/Dockerfile)
 
-# Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+# Quick reference (cont.)
 
 -	**Where to file issues**:  
 	[https://github.com/haskell/docker-haskell/issues](https://github.com/haskell/docker-haskell/issues)
-
--	**Maintained by**:  
-	[the Docker Community](https://github.com/haskell/docker-haskell)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/haskell/)

@@ -14,20 +14,22 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`1.x`, `1.16.x`, `1.16.10`, `latest`](https://github.com/ExpressGateway/docker-express-gateway/blob/704432298a3b9a99de87fcb19b33962e6995b7a3/alpine/Dockerfile)
-
 # Quick reference
+
+-	**Maintained by**:  
+	[the Express Gateway Team](https://github.com/ExpressGateway/express-gateway)
 
 -	**Where to get help**:  
 	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
+# Supported tags and respective `Dockerfile` links
+
+-	[`1.x`, `1.16.x`, `1.16.10`, `latest`](https://github.com/ExpressGateway/docker-express-gateway/blob/704432298a3b9a99de87fcb19b33962e6995b7a3/alpine/Dockerfile)
+
+# Quick reference (cont.)
+
 -	**Where to file issues**:  
 	[https://github.com/ExpressGateway/express-gateway/issues](https://github.com/ExpressGateway/express-gateway/issues)
-
--	**Maintained by**:  
-	[the Express Gateway Team](https://github.com/ExpressGateway/express-gateway)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/express-gateway/), [`arm64v8`](https://hub.docker.com/r/arm64v8/express-gateway/), [`i386`](https://hub.docker.com/r/i386/express-gateway/), [`ppc64le`](https://hub.docker.com/r/ppc64le/express-gateway/), [`s390x`](https://hub.docker.com/r/s390x/express-gateway/)

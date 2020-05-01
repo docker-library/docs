@@ -14,6 +14,14 @@ WARNING:
 
 -->
 
+# Quick reference
+
+-	**Maintained by**:  
+	[the XWiki Community](https://github.com/xwiki-contrib/docker-xwiki)
+
+-	**Where to get help**:  
+	[the XWiki Users Mailing List/Forum](http://dev.xwiki.org/xwiki/bin/view/Community/MailingLists) or [the XWiki IRC channel](http://dev.xwiki.org/xwiki/bin/view/Community/IRC)
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`11`, `11.10`, `11.10.4`, `11-mysql-tomcat`, `11.10-mysql-tomcat`, `11.10.4-mysql-tomcat`, `lts-mysql-tomcat`, `lts-mysql`, `lts`](https://github.com/xwiki-contrib/docker-xwiki/blob/cab959829bd94668a5a6624aa370eb42e8a7c2b1/11/mysql-tomcat/Dockerfile)
@@ -21,16 +29,10 @@ WARNING:
 -	[`12`, `12.3`, `12-mysql-tomcat`, `12.3-mysql-tomcat`, `mysql-tomcat`, `stable-mysql-tomcat`, `stable-mysql`, `stable`, `latest`](https://github.com/xwiki-contrib/docker-xwiki/blob/ebb23e6def6d52dc5dc79bb5844f71f68aba0728/12/mysql-tomcat/Dockerfile)
 -	[`12-postgres-tomcat`, `12.3-postgres-tomcat`, `postgres-tomcat`, `stable-postgres-tomcat`, `stable-postgres`](https://github.com/xwiki-contrib/docker-xwiki/blob/ebb23e6def6d52dc5dc79bb5844f71f68aba0728/12/postgres-tomcat/Dockerfile)
 
-# Quick reference
-
--	**Where to get help**:  
-	[the XWiki Users Mailing List/Forum](http://dev.xwiki.org/xwiki/bin/view/Community/MailingLists) or [the XWiki IRC channel](http://dev.xwiki.org/xwiki/bin/view/Community/IRC)
+# Quick reference (cont.)
 
 -	**Where to file issues**:  
 	[the XWiki Docker JIRA project](http://jira.xwiki.org/browse/XDOCKER)
-
--	**Maintained by**:  
-	[the XWiki Community](https://github.com/xwiki-contrib/docker-xwiki)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/xwiki/), [`arm64v8`](https://hub.docker.com/r/arm64v8/xwiki/)

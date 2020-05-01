@@ -14,6 +14,14 @@ WARNING:
 
 -->
 
+# Quick reference
+
+-	**Maintained by**:  
+	[the IBM WASdev Community](https://github.com/WASdev/ci.docker)
+
+-	**Where to get help**:  
+	[the WASdev community](https://developer.ibm.com/wasdev/help/)
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`beta`](https://github.com/WASdev/ci.docker/blob/8571f13a63cd0767e2ba6af3fcd0001c0e636e59/beta/Dockerfile)
@@ -24,16 +32,10 @@ WARNING:
 -	[`19.0.0.12-kernel-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/8571f13a63cd0767e2ba6af3fcd0001c0e636e59/ga/19.0.0.12/kernel/Dockerfile.ubuntu.ibmjava8)
 -	[`19.0.0.12-full-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/8571f13a63cd0767e2ba6af3fcd0001c0e636e59/ga/19.0.0.12/full/Dockerfile.ubuntu.ibmjava8)
 
-# Quick reference
-
--	**Where to get help**:  
-	[the WASdev community](https://developer.ibm.com/wasdev/help/)
+# Quick reference (cont.)
 
 -	**Where to file issues**:  
 	[https://github.com/WASdev/ci.docker/issues](https://github.com/WASdev/ci.docker/issues)
-
--	**Maintained by**:  
-	[the IBM WASdev Community](https://github.com/WASdev/ci.docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/websphere-liberty/), [`i386`](https://hub.docker.com/r/i386/websphere-liberty/), [`ppc64le`](https://hub.docker.com/r/ppc64le/websphere-liberty/), [`s390x`](https://hub.docker.com/r/s390x/websphere-liberty/)

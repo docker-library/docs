@@ -14,6 +14,14 @@ WARNING:
 
 -->
 
+# Quick reference
+
+-	**Maintained by**:  
+	[the Rust Project developers](https://github.com/rust-lang/docker-rust)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`1-stretch`, `1.43-stretch`, `1.43.0-stretch`, `stretch`](https://github.com/rust-lang-nursery/docker-rust/blob/deb612dd257e15f2bfe877fd3253b2b1b7c261df/1.43.0/stretch/Dockerfile)
@@ -23,16 +31,10 @@ WARNING:
 -	[`1-alpine3.10`, `1.43-alpine3.10`, `1.43.0-alpine3.10`, `alpine3.10`](https://github.com/rust-lang-nursery/docker-rust/blob/deb612dd257e15f2bfe877fd3253b2b1b7c261df/1.43.0/alpine3.10/Dockerfile)
 -	[`1-alpine3.11`, `1.43-alpine3.11`, `1.43.0-alpine3.11`, `alpine3.11`, `1-alpine`, `1.43-alpine`, `1.43.0-alpine`, `alpine`](https://github.com/rust-lang-nursery/docker-rust/blob/deb612dd257e15f2bfe877fd3253b2b1b7c261df/1.43.0/alpine3.11/Dockerfile)
 
-# Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+# Quick reference (cont.)
 
 -	**Where to file issues**:  
 	[https://github.com/rust-lang/docker-rust/issues](https://github.com/rust-lang/docker-rust/issues)
-
--	**Maintained by**:  
-	[the Rust Project developers](https://github.com/rust-lang/docker-rust)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/rust/), [`arm32v7`](https://hub.docker.com/r/arm32v7/rust/), [`arm64v8`](https://hub.docker.com/r/arm64v8/rust/), [`i386`](https://hub.docker.com/r/i386/rust/)

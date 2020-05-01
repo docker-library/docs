@@ -14,6 +14,14 @@ WARNING:
 
 -->
 
+# Quick reference
+
+-	**Maintained by**:  
+	[the Solr Community](https://github.com/docker-solr/docker-solr)
+
+-	**Where to get help**:  
+	[the Solr Community](https://lucene.apache.org/solr/community.html)
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`8.5.1`, `8.5`, `8`, `latest`](https://github.com/docker-solr/docker-solr/blob/574d3d15742dce60957d423240337a3962f265f6/8.5/Dockerfile)
@@ -35,16 +43,10 @@ WARNING:
 -	[`5.5.5`, `5.5`, `5`](https://github.com/docker-solr/docker-solr/blob/574d3d15742dce60957d423240337a3962f265f6/5.5/Dockerfile)
 -	[`5.5.5-slim`, `5.5-slim`, `5-slim`](https://github.com/docker-solr/docker-solr/blob/574d3d15742dce60957d423240337a3962f265f6/5.5/slim/Dockerfile)
 
-# Quick reference
-
--	**Where to get help**:  
-	[the Solr Community](https://lucene.apache.org/solr/community.html)
+# Quick reference (cont.)
 
 -	**Where to file issues**:  
 	[https://github.com/docker-solr/docker-solr/issues](https://github.com/docker-solr/docker-solr/issues)
-
--	**Maintained by**:  
-	[the Solr Community](https://github.com/docker-solr/docker-solr)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/solr/), [`arm64v8`](https://hub.docker.com/r/arm64v8/solr/)

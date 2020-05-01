@@ -14,21 +14,23 @@ WARNING:
 
 -->
 
+# Quick reference
+
+-	**Maintained by**:  
+	[The SapMachine Team](https://github.com/SAP/SapMachine)
+
+-	**Where to get help**:  
+	send an email to sapmachine@sap.com
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`11`, `11.0.7`, `lts`](https://github.com/SAP/SapMachine-infrastructure/blob/3d2d199e3c53a0de726491827ef0587c3c9b4f20/dockerfiles/official/lts/Dockerfile)
 -	[`14`, `14.0.1`, `latest`](https://github.com/SAP/SapMachine-infrastructure/blob/dddf6cf714e932b34e25d69f8cdb9c2381851199/dockerfiles/official/stable/Dockerfile)
 
-# Quick reference
-
--	**Where to get help**:  
-	send an email to sapmachine@sap.com
+# Quick reference (cont.)
 
 -	**Where to file issues**:  
 	[GitHub](https://github.com/SAP/SapMachine/issues) For more information see the [SapMachine Wiki](https://github.com/SAP/SapMachine/wiki).
-
--	**Maintained by**:  
-	[The SapMachine Team](https://github.com/SAP/SapMachine)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/sapmachine/)

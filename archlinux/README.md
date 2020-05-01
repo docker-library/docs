@@ -14,6 +14,14 @@ WARNING:
 
 -->
 
+# Quick reference
+
+-	**Maintained by**:  
+	Arch Linux trusted users [Santiago Torres-Arias](https://www.archlinux.org/people/trusted-users/#sangy) and [Christian Rebischke](https://www.archlinux.org/people/trusted-users/#shibumi) as well as Arch Linux developer [Pierre Schmitz](https://www.archlinux.org/people/developers/#pierre).
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`latest`, `20200407`](https://github.com/archlinux/archlinux-docker/blob/c136f3e502204c8d61fbfb48c2c64fa76c4f143c/Dockerfile)
@@ -24,16 +32,10 @@ WARNING:
 -	[`20191105`](https://github.com/archlinux/archlinux-docker/blob/15a9a3997aa8e571a8ce2a019b65b5eb698919ec/Dockerfile)
 -	[`20191006`](https://github.com/archlinux/archlinux-docker/blob/ed18f615efd16f3a39b2c3eeed79a1f0c6a1dfca/Dockerfile)
 
-# Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+# Quick reference (cont.)
 
 -	**Where to file issues**:  
 	[https://github.com/archlinux/archlinux-docker/issues](https://github.com/archlinux/archlinux-docker/issues)
-
--	**Maintained by**:  
-	Arch Linux trusted users [Santiago Torres-Arias](https://www.archlinux.org/people/trusted-users/#sangy) and [Christian Rebischke](https://www.archlinux.org/people/trusted-users/#shibumi) as well as Arch Linux developer [Pierre Schmitz](https://www.archlinux.org/people/developers/#pierre).
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/archlinux/)

@@ -14,6 +14,14 @@ WARNING:
 
 -->
 
+# Quick reference
+
+-	**Maintained by**:  
+	[Neo4j](https://github.com/neo4j/docker-neo4j)
+
+-	**Where to get help**:  
+	[Stack Overflow](http://stackoverflow.com/questions/tagged/neo4j)
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`4.0.3`, `4.0`, `latest`](https://github.com/neo4j/docker-neo4j-publish/blob/51ed84f02e569a0d86c6e634fab3ae6540806a7e/4.0.3/community/Dockerfile)
@@ -53,16 +61,10 @@ WARNING:
 -	[`3.4.14`](https://github.com/neo4j/docker-neo4j-publish/blob/e3ddc2d97443a058c19cd5997d8c0df48c1956a9/3.4.14/community/Dockerfile)
 -	[`3.4.14-enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/e3ddc2d97443a058c19cd5997d8c0df48c1956a9/3.4.14/enterprise/Dockerfile)
 
-# Quick reference
-
--	**Where to get help**:  
-	[Stack Overflow](http://stackoverflow.com/questions/tagged/neo4j)
+# Quick reference (cont.)
 
 -	**Where to file issues**:  
 	[https://github.com/neo4j/docker-neo4j/issues](https://github.com/neo4j/docker-neo4j/issues)
-
--	**Maintained by**:  
-	[Neo4j](https://github.com/neo4j/docker-neo4j)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/neo4j/)

@@ -14,21 +14,23 @@ WARNING:
 
 -->
 
+# Quick reference
+
+-	**Maintained by**:  
+	[the Elastic Team](https://github.com/elastic/logstash)
+
+-	**Where to get help**:  
+	the [Logstash Discuss Forums](https://discuss.elastic.co/c/logstash) and the [Elastic community](https://www.elastic.co/community).
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`7.6.2`](https://github.com/docker-library/logstash/blob/c75adbe14f4280d172e6e049b677215fdb225e0d/7/Dockerfile)
 -	[`6.8.8`](https://github.com/docker-library/logstash/blob/591ffb5cdd3e61e87e582b374c9b8d72f8ee1dbe/6/Dockerfile)
 
-# Quick reference
-
--	**Where to get help**:  
-	the [Logstash Discuss Forums](https://discuss.elastic.co/c/logstash) and the [Elastic community](https://www.elastic.co/community).
+# Quick reference (cont.)
 
 -	**Where to file issues**:  
 	For issues with Logstash Docker Image or Logstash: https://github.com/elastic/logstash/issues
-
--	**Maintained by**:  
-	[the Elastic Team](https://github.com/elastic/logstash)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/logstash/)

@@ -14,20 +14,22 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`7.8.0`, `7.8`, `latest`](https://github.com/convertigo/convertigo/blob/ffc9ab045f2e9bcc1103fb0bd00042d2527eeae5/docker/default/Dockerfile)
-
 # Quick reference
+
+-	**Maintained by**:  
+	[Convertigo](https://github.com/convertigo/docker)
 
 -	**Where to get help**:  
 	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
+# Supported tags and respective `Dockerfile` links
+
+-	[`7.8.0`, `7.8`, `latest`](https://github.com/convertigo/convertigo/blob/ffc9ab045f2e9bcc1103fb0bd00042d2527eeae5/docker/default/Dockerfile)
+
+# Quick reference (cont.)
+
 -	**Where to file issues**:  
 	[https://github.com/convertigo/docker/issues](https://github.com/convertigo/docker/issues)
-
--	**Maintained by**:  
-	[Convertigo](https://github.com/convertigo/docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/convertigo/)

@@ -14,6 +14,14 @@ WARNING:
 
 -->
 
+# Quick reference
+
+-	**Maintained by**:  
+	[InfluxData](https://github.com/influxdata/influxdata-docker)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`1.7`, `1.7.10`](https://github.com/influxdata/influxdata-docker/blob/032b0c1480b865bd44bb22d97c68cf6c076a04b7/influxdb/1.7/Dockerfile)
@@ -29,16 +37,10 @@ WARNING:
 -	[`1.8-meta`, `1.8.0-meta`, `meta`](https://github.com/influxdata/influxdata-docker/blob/032b0c1480b865bd44bb22d97c68cf6c076a04b7/influxdb/1.8/meta/Dockerfile)
 -	[`1.8-meta-alpine`, `1.8.0-meta-alpine`, `meta-alpine`](https://github.com/influxdata/influxdata-docker/blob/032b0c1480b865bd44bb22d97c68cf6c076a04b7/influxdb/1.8/meta/alpine/Dockerfile)
 
-# Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+# Quick reference (cont.)
 
 -	**Where to file issues**:  
 	[https://github.com/influxdata/influxdata-docker/issues](https://github.com/influxdata/influxdata-docker/issues)
-
--	**Maintained by**:  
-	[InfluxData](https://github.com/influxdata/influxdata-docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/influxdb/), [`arm32v7`](https://hub.docker.com/r/arm32v7/influxdb/), [`arm64v8`](https://hub.docker.com/r/arm64v8/influxdb/)

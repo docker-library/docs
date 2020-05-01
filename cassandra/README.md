@@ -14,6 +14,14 @@ WARNING:
 
 -->
 
+# Quick reference
+
+-	**Maintained by**:  
+	[the Docker Community](https://github.com/docker-library/cassandra)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`2.1.21`, `2.1`](https://github.com/docker-library/cassandra/blob/4c146a91f56dc3043284c817f1d61f152199482c/2.1/Dockerfile)
@@ -21,16 +29,10 @@ WARNING:
 -	[`3.0.20`, `3.0`](https://github.com/docker-library/cassandra/blob/4c146a91f56dc3043284c817f1d61f152199482c/3.0/Dockerfile)
 -	[`3.11.6`, `3.11`, `3`, `latest`](https://github.com/docker-library/cassandra/blob/4c146a91f56dc3043284c817f1d61f152199482c/3.11/Dockerfile)
 
-# Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+# Quick reference (cont.)
 
 -	**Where to file issues**:  
 	[https://github.com/docker-library/cassandra/issues](https://github.com/docker-library/cassandra/issues)
-
--	**Maintained by**:  
-	[the Docker Community](https://github.com/docker-library/cassandra)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/cassandra/), [`arm32v7`](https://hub.docker.com/r/arm32v7/cassandra/), [`arm64v8`](https://hub.docker.com/r/arm64v8/cassandra/), [`ppc64le`](https://hub.docker.com/r/ppc64le/cassandra/)
