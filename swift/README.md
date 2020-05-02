@@ -24,10 +24,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.2.2`, `5.2`, `5.2.2-bionic`, `5.2-bionic`, `bionic`, `latest`](https://github.com/apple/swift-docker/blob/2aa4d892e95c04321810beda924e484356eee58a/5.2/ubuntu/18.04/Dockerfile)
--	[`5.2.2-xenial`, `5.2-xenial`, `xenial`](https://github.com/apple/swift-docker/blob/2aa4d892e95c04321810beda924e484356eee58a/5.2/ubuntu/16.04/Dockerfile)
--	[`5.2.2-slim`, `5.2-slim`, `5.2.2-bionic-slim`, `5.2-bionic-slim`, `bionic-slim`, `slim`](https://github.com/apple/swift-docker/blob/2aa4d892e95c04321810beda924e484356eee58a/5.2/ubuntu/18.04/slim/Dockerfile)
--	[`5.2.2-xenial-slim`, `5.2-xenial-slim`, `xenial-slim`](https://github.com/apple/swift-docker/blob/2aa4d892e95c04321810beda924e484356eee58a/5.2/ubuntu/16.04/slim/Dockerfile)
+-	[`5.2.3`, `5.2`, `5.2.3-bionic`, `5.2-bionic`, `bionic`, `latest`](https://github.com/apple/swift-docker/blob/38f179345ace24236d6c09de84e77d91384014cd/5.2/ubuntu/18.04/Dockerfile)
+-	[`5.2.3-xenial`, `5.2-xenial`, `xenial`](https://github.com/apple/swift-docker/blob/38f179345ace24236d6c09de84e77d91384014cd/5.2/ubuntu/16.04/Dockerfile)
+-	[`5.2.3-slim`, `5.2-slim`, `5.2.3-bionic-slim`, `5.2-bionic-slim`, `bionic-slim`, `slim`](https://github.com/apple/swift-docker/blob/38f179345ace24236d6c09de84e77d91384014cd/5.2/ubuntu/18.04/slim/Dockerfile)
+-	[`5.2.3-xenial-slim`, `5.2-xenial-slim`, `xenial-slim`](https://github.com/apple/swift-docker/blob/38f179345ace24236d6c09de84e77d91384014cd/5.2/ubuntu/16.04/slim/Dockerfile)
 -	[`5.1.5`, `5.1`, `5.1.5-bionic`, `5.1-bionic`](https://github.com/apple/swift-docker/blob/05538e13a3015675d83e2553cdce5d1d67e17235/5.1/ubuntu/18.04/Dockerfile)
 -	[`5.1.5-xenial`, `5.1-xenial`](https://github.com/apple/swift-docker/blob/05538e13a3015675d83e2553cdce5d1d67e17235/5.1/ubuntu/16.04/Dockerfile)
 -	[`5.1.5-slim`, `5.1-slim`, `5.1.5-bionic-sim`, `5.1-bionic-slim`](https://github.com/apple/swift-docker/blob/05538e13a3015675d83e2553cdce5d1d67e17235/5.1/ubuntu/18.04/slim/Dockerfile)
