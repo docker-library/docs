@@ -24,12 +24,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.6`, `1.6.2`](https://github.com/influxdata/influxdata-docker/blob/41160a3144532faee76c50a48e68d967137204b3/chronograf/1.6/Dockerfile)
--	[`1.6-alpine`, `1.6.2-alpine`](https://github.com/influxdata/influxdata-docker/blob/41160a3144532faee76c50a48e68d967137204b3/chronograf/1.6/alpine/Dockerfile)
--	[`1.7`, `1.7.17`](https://github.com/influxdata/influxdata-docker/blob/41160a3144532faee76c50a48e68d967137204b3/chronograf/1.7/Dockerfile)
--	[`1.7-alpine`, `1.7.17-alpine`](https://github.com/influxdata/influxdata-docker/blob/41160a3144532faee76c50a48e68d967137204b3/chronograf/1.7/alpine/Dockerfile)
--	[`1.8`, `1.8.2`, `latest`](https://github.com/influxdata/influxdata-docker/blob/41160a3144532faee76c50a48e68d967137204b3/chronograf/1.8/Dockerfile)
--	[`1.8-alpine`, `1.8.2-alpine`, `alpine`](https://github.com/influxdata/influxdata-docker/blob/41160a3144532faee76c50a48e68d967137204b3/chronograf/1.8/alpine/Dockerfile)
+-	[`1.6`, `1.6.2`](https://github.com/influxdata/influxdata-docker/blob/4fc3aa594c3b78d07b5b1f0e8a2e9168a22b6d01/chronograf/1.6/Dockerfile)
+-	[`1.6-alpine`, `1.6.2-alpine`](https://github.com/influxdata/influxdata-docker/blob/4fc3aa594c3b78d07b5b1f0e8a2e9168a22b6d01/chronograf/1.6/alpine/Dockerfile)
+-	[`1.7`, `1.7.17`](https://github.com/influxdata/influxdata-docker/blob/4fc3aa594c3b78d07b5b1f0e8a2e9168a22b6d01/chronograf/1.7/Dockerfile)
+-	[`1.7-alpine`, `1.7.17-alpine`](https://github.com/influxdata/influxdata-docker/blob/4fc3aa594c3b78d07b5b1f0e8a2e9168a22b6d01/chronograf/1.7/alpine/Dockerfile)
+-	[`1.8`, `1.8.4`, `latest`](https://github.com/influxdata/influxdata-docker/blob/4fc3aa594c3b78d07b5b1f0e8a2e9168a22b6d01/chronograf/1.8/Dockerfile)
+-	[`1.8-alpine`, `1.8.4-alpine`, `alpine`](https://github.com/influxdata/influxdata-docker/blob/4fc3aa594c3b78d07b5b1f0e8a2e9168a22b6d01/chronograf/1.8/alpine/Dockerfile)
 
 # Quick reference (cont.)
 

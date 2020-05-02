@@ -24,7 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.6.3`, `latest`](https://github.com/rocker-org/rocker/blob/e76a46e4d082c0294437c34df1072f48c6fa3685/r-base/Dockerfile)
+-	[`4.0.0`, `latest`](https://github.com/rocker-org/rocker/blob/1286d1fa0165a06b93ea9c4cebd94a54cbf86227/r-base/latest/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -32,7 +32,7 @@ WARNING:
 	[GitHub](https://github.com/rocker-org/rocker/issues) or [Email](mailto:rocker-maintainers@eddelbuettel.com)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/r-base/), [`arm64v8`](https://hub.docker.com/r/arm64v8/r-base/)
+	[`amd64`](https://hub.docker.com/r/amd64/r-base/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/r-base/` directory](https://github.com/docker-library/repo-info/blob/master/repos/r-base) ([history](https://github.com/docker-library/repo-info/commits/master/repos/r-base))  
