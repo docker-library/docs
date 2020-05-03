@@ -144,7 +144,7 @@ version: '3.1'
 services:
 
   ghost:
-    image: ghost:1-alpine
+    image: ghost
     restart: always
     ports:
       - 2368:2368
