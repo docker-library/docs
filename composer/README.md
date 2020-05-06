@@ -24,7 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.10.5`, `1.10`, `1`, `latest`](https://github.com/composer/docker/blob/aad90425d31d11226898c4702c331463e8cdebda/1.10/Dockerfile)
+-	[`1.10.6`, `1.10`, `1`, `latest`](https://github.com/composer/docker/blob/719eb94597f3608c4933fd781d2a8448f840d277/1.10/Dockerfile)
 -	[`1.9.3`, `1.9`](https://github.com/composer/docker/blob/6deedc6a8c89b17c9a6ca61a28c8b206513c76f8/1.9/Dockerfile)
 
 # Quick reference (cont.)

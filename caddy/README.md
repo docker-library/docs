@@ -28,7 +28,7 @@ WARNING:
 
 ## Simple Tags
 
--	[`2.0.0-alpine`, `2-alpine`, `alpine`](https://github.com/caddyserver/caddy-docker/blob/d9baf11b7abb9343891bb9c28f8cc7137ae94b68/alpine/Dockerfile)
+-	[`2.0.0-alpine`, `2-alpine`, `alpine`](https://github.com/caddyserver/caddy-docker/blob/c09e27ca73c56565d4526eef27adbac9ba57575c/alpine/Dockerfile)
 -	[`2.0.0-builder`, `2-builder`, `builder`](https://github.com/caddyserver/caddy-docker/blob/d9baf11b7abb9343891bb9c28f8cc7137ae94b68/builder/Dockerfile)
 -	[`2.0.0-windowsservercore-1809`, `2-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/caddyserver/caddy-docker/blob/d9baf11b7abb9343891bb9c28f8cc7137ae94b68/windows/1809/Dockerfile)
 -	[`2.0.0-windowsservercore-ltsc2016`, `2-windowsservercore-ltsc2016`, `windowsservercore-ltsc2016`](https://github.com/caddyserver/caddy-docker/blob/d9baf11b7abb9343891bb9c28f8cc7137ae94b68/windows/ltsc2016/Dockerfile)
@@ -36,7 +36,7 @@ WARNING:
 ## Shared Tags
 
 -	`2.0.0`, `2`, `latest`:
-	-	[`2.0.0-alpine`](https://github.com/caddyserver/caddy-docker/blob/d9baf11b7abb9343891bb9c28f8cc7137ae94b68/alpine/Dockerfile)
+	-	[`2.0.0-alpine`](https://github.com/caddyserver/caddy-docker/blob/c09e27ca73c56565d4526eef27adbac9ba57575c/alpine/Dockerfile)
 	-	[`2.0.0-windowsservercore-1809`](https://github.com/caddyserver/caddy-docker/blob/d9baf11b7abb9343891bb9c28f8cc7137ae94b68/windows/1809/Dockerfile)
 	-	[`2.0.0-windowsservercore-ltsc2016`](https://github.com/caddyserver/caddy-docker/blob/d9baf11b7abb9343891bb9c28f8cc7137ae94b68/windows/ltsc2016/Dockerfile)
 -	`2.0.0-windowsservercore`, `2-windowsservercore`, `windowsservercore`:
@@ -49,7 +49,7 @@ WARNING:
 	[https://github.com/caddyserver/caddy-docker/issues](https://github.com/caddyserver/caddy-docker/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/caddy/), [`arm32v6`](https://hub.docker.com/r/arm32v6/caddy/), [`arm32v7`](https://hub.docker.com/r/arm32v7/caddy/), [`arm64v8`](https://hub.docker.com/r/arm64v8/caddy/), [`windows-amd64`](https://hub.docker.com/r/winamd64/caddy/)
+	[`amd64`](https://hub.docker.com/r/amd64/caddy/), [`arm32v6`](https://hub.docker.com/r/arm32v6/caddy/), [`arm32v7`](https://hub.docker.com/r/arm32v7/caddy/), [`arm64v8`](https://hub.docker.com/r/arm64v8/caddy/), [`ppc64le`](https://hub.docker.com/r/ppc64le/caddy/), [`s390x`](https://hub.docker.com/r/s390x/caddy/), [`windows-amd64`](https://hub.docker.com/r/winamd64/caddy/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/caddy/` directory](https://github.com/docker-library/repo-info/blob/master/repos/caddy) ([history](https://github.com/docker-library/repo-info/commits/master/repos/caddy))  
