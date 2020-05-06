@@ -111,9 +111,6 @@ for image in "${images[@]}"; do
 			deprecated+=$'\n\n'
 		fi
 
-		echo '  GIT PREFETCH => "'"$repo"'"'
-		"$helperDir/git-prefetch.sh" "$repo"
-
 		if ! partial="$("$helperDir/generate-dockerfile-links-partial.sh" "$repo")"; then
 			{
 				echo
