@@ -24,12 +24,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8-jre`, `jre`, `8`, `latest`](https://github.com/ibmruntimes/ci.docker/blob/030790af35e0b2c1a56c03b04982e97ee5724005/ibmjava/8/jre/ubuntu/Dockerfile)
--	[`8-jre-alpine`, `jre-alpine`](https://github.com/ibmruntimes/ci.docker/blob/030790af35e0b2c1a56c03b04982e97ee5724005/ibmjava/8/jre/alpine/Dockerfile)
--	[`8-sfj`, `sfj`](https://github.com/ibmruntimes/ci.docker/blob/030790af35e0b2c1a56c03b04982e97ee5724005/ibmjava/8/sfj/ubuntu/Dockerfile)
--	[`8-sfj-alpine`, `sfj-alpine`](https://github.com/ibmruntimes/ci.docker/blob/030790af35e0b2c1a56c03b04982e97ee5724005/ibmjava/8/sfj/alpine/Dockerfile)
--	[`8-sdk`, `sdk`](https://github.com/ibmruntimes/ci.docker/blob/030790af35e0b2c1a56c03b04982e97ee5724005/ibmjava/8/sdk/ubuntu/Dockerfile)
--	[`8-sdk-alpine`, `sdk-alpine`](https://github.com/ibmruntimes/ci.docker/blob/030790af35e0b2c1a56c03b04982e97ee5724005/ibmjava/8/sdk/alpine/Dockerfile)
+-	[`8-jre`, `jre`, `8`, `latest`](https://github.com/ibmruntimes/ci.docker/blob/83506ae3219b62dbf96f6ad0111e0f9a6169be0c/ibmjava/8/jre/ubuntu/Dockerfile)
+-	[`8-jre-alpine`, `jre-alpine`](https://github.com/ibmruntimes/ci.docker/blob/83506ae3219b62dbf96f6ad0111e0f9a6169be0c/ibmjava/8/jre/alpine/Dockerfile)
+-	[`8-sfj`, `sfj`](https://github.com/ibmruntimes/ci.docker/blob/83506ae3219b62dbf96f6ad0111e0f9a6169be0c/ibmjava/8/sfj/ubuntu/Dockerfile)
+-	[`8-sfj-alpine`, `sfj-alpine`](https://github.com/ibmruntimes/ci.docker/blob/83506ae3219b62dbf96f6ad0111e0f9a6169be0c/ibmjava/8/sfj/alpine/Dockerfile)
+-	[`8-sdk`, `sdk`](https://github.com/ibmruntimes/ci.docker/blob/83506ae3219b62dbf96f6ad0111e0f9a6169be0c/ibmjava/8/sdk/ubuntu/Dockerfile)
+-	[`8-sdk-alpine`, `sdk-alpine`](https://github.com/ibmruntimes/ci.docker/blob/83506ae3219b62dbf96f6ad0111e0f9a6169be0c/ibmjava/8/sdk/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
