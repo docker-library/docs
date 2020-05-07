@@ -27,29 +27,6 @@ The following tags are available:
 -	Major versions, such as `5`, `5-fpm`, and `5-fpm-alpine`
 -	Specific minor versions, such as `5.0`, `5.0-fpm`, and `5-fpm-alpine`
 -	Specific patch versions, such as `5.0.0`, `5.0.0-fpm`, and `5.0.0-alpine`. Note that, on rare occasion, here may be an intermediary "docker-only" release, such as 4.9.2-1
--	`edge`, `edge-fpm`, `edge-fpm-alpine`, a development version build from the daily snapshot
-
-## Image variants
-
-We provide three variations:
-
-### apache
-
-"apache" includes a full Apache webserver with PHP and includes everything needed to work out of the box.
-
-This is the default when only a version number is requested.
-
-### fpm
-
-"fpm" only starts a PHP FPM container. Use this variant if you already have a seperate webserver.
-
-This includes more tools and is therefore a larger image than the "fpm-alpine" variation.
-
-### fpm-alpine
-
-"fpm-alpine" has a very small footprint. It is based on Alpine Linux and only starts a PHP FPM process.
-
-Use this variant if you already have a seperate webserver. If you need more tools that are not available on Alpine Linux, use the fpm image instead.
 
 ## Usage with linked server
 
