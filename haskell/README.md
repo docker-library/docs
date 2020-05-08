@@ -24,8 +24,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.8.3`, `8.8`, `8`, `latest`](https://github.com/haskell/docker-haskell/blob/c7675920a33d47aa30ff5456ee622cd61a2d62be/8.8/Dockerfile)
--	[`8.6.5`, `8.6`](https://github.com/haskell/docker-haskell/blob/c7675920a33d47aa30ff5456ee622cd61a2d62be/8.6/Dockerfile)
+-	[`8.10.1-buster`, `8.10-buster`, `8-buster`, `buster`, `8.10.1`, `8.10`, `8`, `latest`](https://github.com/haskell/docker-haskell/blob/82f44382a183fcc1d0026d8abe58259195a8930c/8.10/buster/Dockerfile)
+-	[`8.10.1-stretch`, `8.10-stretch`, `8-stretch`, `stretch`](https://github.com/haskell/docker-haskell/blob/82f44382a183fcc1d0026d8abe58259195a8930c/8.10/stretch/Dockerfile)
+-	[`8.8.3-buster`, `8.8-buster`, `8.8.3`, `8.8`](https://github.com/haskell/docker-haskell/blob/82f44382a183fcc1d0026d8abe58259195a8930c/8.8/buster/Dockerfile)
+-	[`8.8.3-stretch`, `8.8-stretch`](https://github.com/haskell/docker-haskell/blob/82f44382a183fcc1d0026d8abe58259195a8930c/8.8/stretch/Dockerfile)
 
 # Quick reference (cont.)
 
