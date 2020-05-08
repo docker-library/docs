@@ -33,9 +33,9 @@ WARNING:
 -	[`18.0.4-apache`, `18.0-apache`, `18-apache`, `apache`, `stable-apache`, `18.0.4`, `18.0`, `18`, `latest`, `stable`](https://github.com/nextcloud/docker/blob/b1825a188ba1918aa30d0b6ac18d0a32ff3ec707/18.0/apache/Dockerfile)
 -	[`18.0.4-fpm-alpine`, `18.0-fpm-alpine`, `18-fpm-alpine`, `fpm-alpine`, `stable-fpm-alpine`](https://github.com/nextcloud/docker/blob/b1825a188ba1918aa30d0b6ac18d0a32ff3ec707/18.0/fpm-alpine/Dockerfile)
 -	[`18.0.4-fpm`, `18.0-fpm`, `18-fpm`, `fpm`, `stable-fpm`](https://github.com/nextcloud/docker/blob/b1825a188ba1918aa30d0b6ac18d0a32ff3ec707/18.0/fpm/Dockerfile)
--	[`19.0.0beta7-apache`, `19.0.0-beta-apache`, `19.0-beta-apache`, `19-beta-apache`, `19.0.0beta7`, `19.0.0-beta`, `19.0-beta`, `19-beta`](https://github.com/nextcloud/docker/blob/764c79de08b3eaf70ef3cfee1f784f21e7d1f00d/19.0-beta/apache/Dockerfile)
--	[`19.0.0beta7-fpm-alpine`, `19.0.0-beta-fpm-alpine`, `19.0-beta-fpm-alpine`, `19-beta-fpm-alpine`](https://github.com/nextcloud/docker/blob/764c79de08b3eaf70ef3cfee1f784f21e7d1f00d/19.0-beta/fpm-alpine/Dockerfile)
--	[`19.0.0beta7-fpm`, `19.0.0-beta-fpm`, `19.0-beta-fpm`, `19-beta-fpm`](https://github.com/nextcloud/docker/blob/764c79de08b3eaf70ef3cfee1f784f21e7d1f00d/19.0-beta/fpm/Dockerfile)
+-	[`19.0.0RC1-apache`, `19.0.0-rc-apache`, `19.0-rc-apache`, `19-rc-apache`, `19.0.0RC1`, `19.0.0-rc`, `19.0-rc`, `19-rc`](https://github.com/nextcloud/docker/blob/05c3a27d349566e8d3b79797b7300ab1e1bb6a79/19.0-rc/apache/Dockerfile)
+-	[`19.0.0RC1-fpm-alpine`, `19.0.0-rc-fpm-alpine`, `19.0-rc-fpm-alpine`, `19-rc-fpm-alpine`](https://github.com/nextcloud/docker/blob/05c3a27d349566e8d3b79797b7300ab1e1bb6a79/19.0-rc/fpm-alpine/Dockerfile)
+-	[`19.0.0RC1-fpm`, `19.0.0-rc-fpm`, `19.0-rc-fpm`, `19-rc-fpm`](https://github.com/nextcloud/docker/blob/05c3a27d349566e8d3b79797b7300ab1e1bb6a79/19.0-rc/fpm/Dockerfile)
 
 # Quick reference (cont.)
 
