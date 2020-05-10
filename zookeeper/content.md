@@ -108,11 +108,7 @@ Defaults to `srvr`. Zookeeper's [`4lw.commands.whitelist`](https://zookeeper.apa
 
 ## Advanced configuration
 
-Not every Zookeeper configuration setting is exposed via the environment variables listed above.
-These variables are only meant to cover minimum configuration keywords and some often changing options.
-If [mounting your custom config file](#configuration) as a volume doesn't work for you, consider using `JVMFLAGS` environment variable.
-Many of the Zookeeper advanced configuration options can be set there using Java system properties in the form of `-Dproperty=value`.
-For example, you can use Netty instead of NIO (default option) as a server communication framework:
+Not every Zookeeper configuration setting is exposed via the environment variables listed above. These variables are only meant to cover minimum configuration keywords and some often changing options. If [mounting your custom config file](#configuration) as a volume doesn't work for you, consider using `JVMFLAGS` environment variable. Many of the Zookeeper advanced configuration options can be set there using Java system properties in the form of `-Dproperty=value`. For example, you can use Netty instead of NIO (default option) as a server communication framework:
 
 ```console
 $ docker run --name some-zookeeper --restart always -e JVMFLAGS="-Dzookeeper.serverCnxnFactory=org.apache.zookeeper.server.NettyServerCnxnFactory" %%IMAGE%%
