@@ -25,7 +25,7 @@ $ docker run --name some-app --link some-zookeeper:zookeeper -d application-that
 ## Connect to Zookeeper from the Zookeeper command line client
 
 ```console
-$ docker run -it --rm --link some-zookeeper:zookeeper zookeeper zkCli.sh -server zookeeper
+$ docker run -it --rm --link some-zookeeper:zookeeper %%IMAGE%% zkCli.sh -server zookeeper
 ```
 
 ## %%STACK%%
@@ -49,7 +49,7 @@ $ docker run --name some-zookeeper --restart always -d -v $(pwd)/zoo.cfg:/conf/z
 ZooKeeper recommended defaults are used if `zoo.cfg` file is not provided. They can be overridden using the following environment variables.
 
 ```console
-$ docker run -e "ZOO_INIT_LIMIT=10" --name some-zookeeper --restart always -d 31z4/zookeeper
+$ docker run -e "ZOO_INIT_LIMIT=10" --name some-zookeeper --restart always -d %%IMAGE%%
 ```
 
 ### `ZOO_TICK_TIME`
@@ -78,13 +78,13 @@ Defaults to `60`. ZooKeeper's `maxClientCnxns`
 
 ### `ZOO_STANDALONE_ENABLED`
 
-Defaults to `true`. Zookeeper's [`standaloneEnabled`](https://zookeeper.apache.org/doc/r3.5.5/zookeeperReconfig.html#sc_reconfig_standaloneEnabled)
+Defaults to `true`. Zookeeper's [`standaloneEnabled`](https://zookeeper.apache.org/doc/r3.5.7/zookeeperReconfig.html#sc_reconfig_standaloneEnabled)
 
 > Prior to 3.5.0, one could run ZooKeeper in Standalone mode or in a Distributed mode. These are separate implementation stacks, and switching between them during run time is not possible. By default (for backward compatibility) standaloneEnabled is set to true. The consequence of using this default is that if started with a single server the ensemble will not be allowed to grow, and if started with more than one server it will not be allowed to shrink to contain fewer than two participants.
 
 ### `ZOO_ADMINSERVER_ENABLED`
 
-Defaults to `true`. Zookeeper's [`admin.enableServer`](http://zookeeper.apache.org/doc/r3.5.5/zookeeperAdmin.html#sc_adminserver_config)
+Defaults to `true`. Zookeeper's [`admin.enableServer`](http://zookeeper.apache.org/doc/r3.5.7/zookeeperAdmin.html#sc_adminserver_config)
 
 > New in 3.5.0: The AdminServer is an embedded Jetty server that provides an HTTP interface to the four letter word commands. By default, the server is started on port 8080, and commands are issued by going to the URL "/commands/[command name]", e.g., http://localhost:8080/commands/stat.
 
@@ -106,6 +106,26 @@ Defaults to `srvr`. Zookeeper's [`4lw.commands.whitelist`](https://zookeeper.apa
 
 > A list of comma separated Four Letter Words commands that user wants to use. A valid Four Letter Words command must be put in this list else ZooKeeper server will not enable the command. By default the whitelist only contains "srvr" command which zkServer.sh uses. The rest of four letter word commands are disabled by default.
 
+## Advanced configuration
+
+Not every Zookeeper configuration setting is exposed via the environment variables listed above.
+These variables are only meant to cover minimum configuration keywords and some often changing options.
+If [mounting your custom config file](#configuration) as a volume doesn't work for you, consider using `JVMFLAGS` environment variable.
+Many of the Zookeeper advanced configuration options can be set there using Java system properties in the form of `-Dproperty=value`.
+For example, you can use Netty instead of NIO (default option) as a server communication framework:
+
+```console
+$ docker run --name some-zookeeper --restart always -e JVMFLAGS="-Dzookeeper.serverCnxnFactory=org.apache.zookeeper.server.NettyServerCnxnFactory" %%IMAGE%%
+```
+
+See [Advanced Configuration](https://zookeeper.apache.org/doc/current/zookeeperAdmin.html#sc_advancedConfiguration) for the full list of supported Java system properties.
+
+Another example use case for the `JVMFLAGS` is setting a maximum JWM heap size of 1 GB:
+
+```console
+$ docker run --name some-zookeeper --restart always -e JVMFLAGS="-Xmx1024m" %%IMAGE%%
+```
+
 ## Replicated mode
 
 Environment variables below are mandatory if you want to run Zookeeper in replicated mode.
@@ -118,7 +138,7 @@ The id must be unique within the ensemble and should have a value between 1 and 
 
 This variable allows you to specify a list of machines of the Zookeeper ensemble. Each entry has the form of `server.id=host:port:port`. Entries are separated with space. Do note that this variable will not have any effect if you start the container with a `/conf` directory that already contains the `zoo.cfg` file.
 
-In 3.5, the syntax of this has changed. Servers should be specified as such: `server.id=<address1>:<port1>:<port2>[:role];[<client port address>:]<client port>` [Zookeeper Dynamic Reconfiguration](https://zookeeper.apache.org/doc/r3.5.5/zookeeperReconfig.html)
+In 3.5, the syntax of this has changed. Servers should be specified as such: `server.id=<address1>:<port1>:<port2>[:role];[<client port address>:]<client port>` [Zookeeper Dynamic Reconfiguration](https://zookeeper.apache.org/doc/r3.5.7/zookeeperReconfig.html)
 
 ## Where to store data
 
@@ -131,7 +151,7 @@ This image is configured with volumes at `/data` and `/datalog` to hold the Zook
 By default, ZooKeeper redirects stdout/stderr outputs to the console. You can redirect to a file located in `/logs` by passing environment variable `ZOO_LOG4J_PROP` as follows:
 
 ```console
-$ docker run --name some-zookeeper --restart always -e ZOO_LOG4J_PROP="INFO,ROLLINGFILE" zookeeper
+$ docker run --name some-zookeeper --restart always -e ZOO_LOG4J_PROP="INFO,ROLLINGFILE" %%IMAGE%%
 ```
 
 This will write logs to `/logs/zookeeper.log`. Check [ZooKeeper Logging](https://zookeeper.apache.org/doc/current/zookeeperAdmin.html#sc_logging) for more details.
