@@ -17,7 +17,7 @@ WARNING:
 # Quick reference
 
 -	**Maintained by**:  
-	[the Solr Community](https://github.com/docker-solr/docker-solr)
+	[the Apache Lucene/Solr project](https://github.com/docker-solr/docker-solr)
 
 -	**Where to get help**:  
 	[the Solr Community](https://lucene.apache.org/solr/community.html)
@@ -68,8 +68,6 @@ Solr is highly reliable, scalable and fault tolerant, providing distributed inde
 
 Learn more on [Apache Solr homepage](http://lucene.apache.org/solr/) and in the [Apache Solr Reference Guide](https://www.apache.org/dyn/closer.cgi/lucene/solr/ref-guide/).
 
-> [wikipedia.org/wiki/Apache_Solr](https://en.wikipedia.org/wiki/Apache_Solr)
-
 ![logo](https://raw.githubusercontent.com/docker-library/docs/ddc9eb521da7c412b70229f1a600d0c63d55d0f7/solr/logo.png)
 
 # How to use this Docker image
@@ -87,6 +85,10 @@ For more detailed instructions for using this image, see the [README](https://gi
 # About this repository
 
 This repository is available on [github.com/docker-solr/docker-solr](https://github.com/docker-solr/docker-solr), and the official build is on the [Docker Hub](https://hub.docker.com/_/solr/).
+
+# History
+
+This project was started in 2015 by [Martijn Koster](https://github.com/makuk66). In 2019 maintainership and copyright was transferred to the Apache Lucene/Solr project. Many thanks to Martijn for all your contributions over the years!
 
 # Image Variants
 
@@ -106,7 +108,7 @@ Solr is licensed under the [Apache License, Version 2.0](https://www.apache.org/
 
 This repository is also licensed under the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0).
 
-Copyright 2015 Martijn Koster
+Copyright 2015-2020 The Apache Software Foundation
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 
