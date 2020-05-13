@@ -24,11 +24,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`10.5.2-bionic`, `10.5-bionic`, `beta-bionic`, `10.5.2`, `10.5`, `beta`](https://github.com/docker-library/mariadb/blob/48ee7746c6da7dfd372189a0d5a45a7894548cd9/10.5/Dockerfile)
--	[`10.4.12-bionic`, `10.4-bionic`, `10-bionic`, `bionic`, `10.4.12`, `10.4`, `10`, `latest`](https://github.com/docker-library/mariadb/blob/48ee7746c6da7dfd372189a0d5a45a7894548cd9/10.4/Dockerfile)
--	[`10.3.22-bionic`, `10.3-bionic`, `10.3.22`, `10.3`](https://github.com/docker-library/mariadb/blob/48ee7746c6da7dfd372189a0d5a45a7894548cd9/10.3/Dockerfile)
--	[`10.2.31-bionic`, `10.2-bionic`, `10.2.31`, `10.2`](https://github.com/docker-library/mariadb/blob/48ee7746c6da7dfd372189a0d5a45a7894548cd9/10.2/Dockerfile)
--	[`10.1.44-bionic`, `10.1-bionic`, `10.1.44`, `10.1`](https://github.com/docker-library/mariadb/blob/48ee7746c6da7dfd372189a0d5a45a7894548cd9/10.1/Dockerfile)
+-	[`10.5.3-bionic`, `10.5-bionic`, `rc-bionic`, `10.5.3`, `10.5`, `rc`](https://github.com/docker-library/mariadb/blob/5031dc2305e2ecaf60e0c0fbcbffe7342bcabdcd/10.5/Dockerfile)
+-	[`10.4.13-bionic`, `10.4-bionic`, `10-bionic`, `bionic`, `10.4.13`, `10.4`, `10`, `latest`](https://github.com/docker-library/mariadb/blob/e237371aba967adbaef090fc05a071d234c9a223/10.4/Dockerfile)
+-	[`10.3.23-bionic`, `10.3-bionic`, `10.3.23`, `10.3`](https://github.com/docker-library/mariadb/blob/be81d695b5112ae2d4d985b0d01992d609deec0d/10.3/Dockerfile)
+-	[`10.2.32-bionic`, `10.2-bionic`, `10.2.32`, `10.2`](https://github.com/docker-library/mariadb/blob/68283bc5b8543752023e03376943f87f49bf45cb/10.2/Dockerfile)
+-	[`10.1.45-bionic`, `10.1-bionic`, `10.1.45`, `10.1`](https://github.com/docker-library/mariadb/blob/423d43f6c3ce116c754d90b539462b882a7c5c9d/10.1/Dockerfile)
 
 # Quick reference (cont.)
 
