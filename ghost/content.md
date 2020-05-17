@@ -60,7 +60,7 @@ This Docker image for Ghost uses SQLite. There is nothing special to configure.
 
 ## Configuration
 
-All Ghost configuration parameters (such as `url`) can be specified via environment variables. See [the Ghost documentation](https://docs.ghost.org/docs/config#section-running-ghost-with-config-env-variables) for details about what configuration is allowed and how to convert a nested configuration key into the appropriate environment variable name:
+All Ghost configuration parameters (such as `url`) can be specified via environment variables. See [the Ghost documentation](https://ghost.org/docs/concepts/config/#running-ghost-with-config-env-variables) for details about what configuration is allowed and how to convert a nested configuration key into the appropriate environment variable name:
 
 ```console
 $ docker run -d --name some-ghost -e url=http://some-ghost.example.com %%IMAGE%%
