@@ -24,18 +24,20 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`gzserver7`, `gzserver7-xenial`](https://github.com/osrf/docker_images/blob/e296cc1a131ef3b2ac62a91d6bf31ab6fb27884d/gazebo/7/ubuntu/xenial/gzserver7/Dockerfile)
--	[`libgazebo7`, `libgazebo7-xenial`](https://github.com/osrf/docker_images/blob/e296cc1a131ef3b2ac62a91d6bf31ab6fb27884d/gazebo/7/ubuntu/xenial/libgazebo7/Dockerfile)
--	[`gzserver9-xenial`](https://github.com/osrf/docker_images/blob/844fe41c654dd84ba291d01620fc11f7ec99c9ad/gazebo/9/ubuntu/xenial/gzserver9/Dockerfile)
--	[`libgazebo9-xenial`](https://github.com/osrf/docker_images/blob/844fe41c654dd84ba291d01620fc11f7ec99c9ad/gazebo/9/ubuntu/xenial/libgazebo9/Dockerfile)
--	[`gzserver9`, `gzserver9-bionic`](https://github.com/osrf/docker_images/blob/2f090a032f756498681f948e60711908cfb524d6/gazebo/9/ubuntu/bionic/gzserver9/Dockerfile)
--	[`libgazebo9`, `libgazebo9-bionic`](https://github.com/osrf/docker_images/blob/2f090a032f756498681f948e60711908cfb524d6/gazebo/9/ubuntu/bionic/libgazebo9/Dockerfile)
--	[`gzserver9-stretch`](https://github.com/osrf/docker_images/blob/e02819ea8bb6838c133d476a7f41f5079836eb4a/gazebo/9/debian/stretch/gzserver9/Dockerfile)
--	[`libgazebo9-stretch`](https://github.com/osrf/docker_images/blob/e02819ea8bb6838c133d476a7f41f5079836eb4a/gazebo/9/debian/stretch/libgazebo9/Dockerfile)
--	[`gzserver10`, `gzserver10-bionic`](https://github.com/osrf/docker_images/blob/f1b7ad09fa3bc6b88621c5f4ff2da9669c9ccb3e/gazebo/10/ubuntu/bionic/gzserver10/Dockerfile)
--	[`libgazebo10`, `libgazebo10-bionic`](https://github.com/osrf/docker_images/blob/f1b7ad09fa3bc6b88621c5f4ff2da9669c9ccb3e/gazebo/10/ubuntu/bionic/libgazebo10/Dockerfile)
--	[`gzserver11`, `gzserver11-bionic`](https://github.com/osrf/docker_images/blob/bd0ef992496452d93ea929ea5921b123acdab58c/gazebo/11/ubuntu/bionic/gzserver11/Dockerfile)
--	[`libgazebo11`, `libgazebo11-bionic`, `latest`](https://github.com/osrf/docker_images/blob/bd0ef992496452d93ea929ea5921b123acdab58c/gazebo/11/ubuntu/bionic/libgazebo11/Dockerfile)
+-	[`gzserver7`, `gzserver7-xenial`](https://github.com/osrf/docker_images/blob/6f18102d57b424ce454f61e4ac432e3d6d71f670/gazebo/7/ubuntu/xenial/gzserver7/Dockerfile)
+-	[`libgazebo7`, `libgazebo7-xenial`](https://github.com/osrf/docker_images/blob/6f18102d57b424ce454f61e4ac432e3d6d71f670/gazebo/7/ubuntu/xenial/libgazebo7/Dockerfile)
+-	[`gzserver9-xenial`](https://github.com/osrf/docker_images/blob/6f18102d57b424ce454f61e4ac432e3d6d71f670/gazebo/9/ubuntu/xenial/gzserver9/Dockerfile)
+-	[`libgazebo9-xenial`](https://github.com/osrf/docker_images/blob/6f18102d57b424ce454f61e4ac432e3d6d71f670/gazebo/9/ubuntu/xenial/libgazebo9/Dockerfile)
+-	[`gzserver9`, `gzserver9-bionic`](https://github.com/osrf/docker_images/blob/6f18102d57b424ce454f61e4ac432e3d6d71f670/gazebo/9/ubuntu/bionic/gzserver9/Dockerfile)
+-	[`libgazebo9`, `libgazebo9-bionic`](https://github.com/osrf/docker_images/blob/6f18102d57b424ce454f61e4ac432e3d6d71f670/gazebo/9/ubuntu/bionic/libgazebo9/Dockerfile)
+-	[`gzserver9-stretch`](https://github.com/osrf/docker_images/blob/6f18102d57b424ce454f61e4ac432e3d6d71f670/gazebo/9/debian/stretch/gzserver9/Dockerfile)
+-	[`libgazebo9-stretch`](https://github.com/osrf/docker_images/blob/6f18102d57b424ce454f61e4ac432e3d6d71f670/gazebo/9/debian/stretch/libgazebo9/Dockerfile)
+-	[`gzserver10`, `gzserver10-bionic`](https://github.com/osrf/docker_images/blob/6f18102d57b424ce454f61e4ac432e3d6d71f670/gazebo/10/ubuntu/bionic/gzserver10/Dockerfile)
+-	[`libgazebo10`, `libgazebo10-bionic`](https://github.com/osrf/docker_images/blob/6f18102d57b424ce454f61e4ac432e3d6d71f670/gazebo/10/ubuntu/bionic/libgazebo10/Dockerfile)
+-	[`gzserver11-bionic`](https://github.com/osrf/docker_images/blob/6f18102d57b424ce454f61e4ac432e3d6d71f670/gazebo/11/ubuntu/bionic/gzserver11/Dockerfile)
+-	[`libgazebo11-bionic`](https://github.com/osrf/docker_images/blob/6f18102d57b424ce454f61e4ac432e3d6d71f670/gazebo/11/ubuntu/bionic/libgazebo11/Dockerfile)
+-	[`gzserver11`, `gzserver11-focal`](https://github.com/osrf/docker_images/blob/43e969496f5cabe19dd658c18c85f742bdaf6923/gazebo/11/ubuntu/focal/gzserver11/Dockerfile)
+-	[`libgazebo11`, `libgazebo11-focal`, `latest`](https://github.com/osrf/docker_images/blob/43e969496f5cabe19dd658c18c85f742bdaf6923/gazebo/11/ubuntu/focal/libgazebo11/Dockerfile)
 
 # Quick reference (cont.)
 
