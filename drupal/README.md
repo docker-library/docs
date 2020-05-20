@@ -24,15 +24,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.8.5-apache`, `8.8-apache`, `8-apache`, `apache`, `8.8.5`, `8.8`, `8`, `latest`](https://github.com/docker-library/drupal/blob/189686e109917d7bffaf28024be7d6d28495f57d/8.8/apache/Dockerfile)
--	[`8.8.5-fpm`, `8.8-fpm`, `8-fpm`, `fpm`](https://github.com/docker-library/drupal/blob/189686e109917d7bffaf28024be7d6d28495f57d/8.8/fpm/Dockerfile)
--	[`8.8.5-fpm-alpine`, `8.8-fpm-alpine`, `8-fpm-alpine`, `fpm-alpine`](https://github.com/docker-library/drupal/blob/189686e109917d7bffaf28024be7d6d28495f57d/8.8/fpm-alpine/Dockerfile)
--	[`8.7.13-apache`, `8.7-apache`, `8.7.13`, `8.7`](https://github.com/docker-library/drupal/blob/72a76c53c4f4b0c3f9780bbdb8a12f8b94f73c1b/8.7/apache/Dockerfile)
--	[`8.7.13-fpm`, `8.7-fpm`](https://github.com/docker-library/drupal/blob/72a76c53c4f4b0c3f9780bbdb8a12f8b94f73c1b/8.7/fpm/Dockerfile)
--	[`8.7.13-fpm-alpine`, `8.7-fpm-alpine`](https://github.com/docker-library/drupal/blob/72a76c53c4f4b0c3f9780bbdb8a12f8b94f73c1b/8.7/fpm-alpine/Dockerfile)
--	[`7.69-apache`, `7-apache`, `7.69`, `7`](https://github.com/docker-library/drupal/blob/1ec9ec0be11ef631014202064adcc402b834717d/7/apache/Dockerfile)
--	[`7.69-fpm`, `7-fpm`](https://github.com/docker-library/drupal/blob/1ec9ec0be11ef631014202064adcc402b834717d/7/fpm/Dockerfile)
--	[`7.69-fpm-alpine`, `7-fpm-alpine`](https://github.com/docker-library/drupal/blob/1ec9ec0be11ef631014202064adcc402b834717d/7/fpm-alpine/Dockerfile)
+-	[`8.8.6-apache`, `8.8-apache`, `8-apache`, `apache`, `8.8.6`, `8.8`, `8`, `latest`](https://github.com/docker-library/drupal/blob/6b0f9aae2811ecf6d0a65cea3a42c8f7d7087b05/8.8/apache/Dockerfile)
+-	[`8.8.6-fpm`, `8.8-fpm`, `8-fpm`, `fpm`](https://github.com/docker-library/drupal/blob/6b0f9aae2811ecf6d0a65cea3a42c8f7d7087b05/8.8/fpm/Dockerfile)
+-	[`8.8.6-fpm-alpine`, `8.8-fpm-alpine`, `8-fpm-alpine`, `fpm-alpine`](https://github.com/docker-library/drupal/blob/6b0f9aae2811ecf6d0a65cea3a42c8f7d7087b05/8.8/fpm-alpine/Dockerfile)
+-	[`8.7.14-apache`, `8.7-apache`, `8.7.14`, `8.7`](https://github.com/docker-library/drupal/blob/a238069a74de3039f8effb25f59224fbeaf93646/8.7/apache/Dockerfile)
+-	[`8.7.14-fpm`, `8.7-fpm`](https://github.com/docker-library/drupal/blob/a238069a74de3039f8effb25f59224fbeaf93646/8.7/fpm/Dockerfile)
+-	[`8.7.14-fpm-alpine`, `8.7-fpm-alpine`](https://github.com/docker-library/drupal/blob/a238069a74de3039f8effb25f59224fbeaf93646/8.7/fpm-alpine/Dockerfile)
+-	[`7.70-apache`, `7-apache`, `7.70`, `7`](https://github.com/docker-library/drupal/blob/f4aeae69c752b0cfcbc038f0f2e3316291937968/7/apache/Dockerfile)
+-	[`7.70-fpm`, `7-fpm`](https://github.com/docker-library/drupal/blob/f4aeae69c752b0cfcbc038f0f2e3316291937968/7/fpm/Dockerfile)
+-	[`7.70-fpm-alpine`, `7-fpm-alpine`](https://github.com/docker-library/drupal/blob/f4aeae69c752b0cfcbc038f0f2e3316291937968/7/fpm-alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -40,7 +40,7 @@ WARNING:
 	[https://github.com/docker-library/drupal/issues](https://github.com/docker-library/drupal/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/drupal/), [`arm32v5`](https://hub.docker.com/r/arm32v5/drupal/), [`arm32v6`](https://hub.docker.com/r/arm32v6/drupal/), [`arm32v7`](https://hub.docker.com/r/arm32v7/drupal/), [`arm64v8`](https://hub.docker.com/r/arm64v8/drupal/), [`i386`](https://hub.docker.com/r/i386/drupal/), [`ppc64le`](https://hub.docker.com/r/ppc64le/drupal/), [`s390x`](https://hub.docker.com/r/s390x/drupal/)
+	[`amd64`](https://hub.docker.com/r/amd64/drupal/), [`arm32v5`](https://hub.docker.com/r/arm32v5/drupal/), [`arm32v6`](https://hub.docker.com/r/arm32v6/drupal/), [`arm32v7`](https://hub.docker.com/r/arm32v7/drupal/), [`arm64v8`](https://hub.docker.com/r/arm64v8/drupal/), [`i386`](https://hub.docker.com/r/i386/drupal/), [`mips64le`](https://hub.docker.com/r/mips64le/drupal/), [`ppc64le`](https://hub.docker.com/r/ppc64le/drupal/), [`s390x`](https://hub.docker.com/r/s390x/drupal/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/drupal/` directory](https://github.com/docker-library/repo-info/blob/master/repos/drupal) ([history](https://github.com/docker-library/repo-info/commits/master/repos/drupal))  
