@@ -170,19 +170,5 @@ FROM %%IMAGE%%:7.4-fpm-alpine
 RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
 ```
 
-## Performance
-
-For production deployments, this image ships with defaults that are quite different from standard Linux distros (Ubuntu). This improves configurability but may cause unexpected performance loss. A good example of that is opcache, recommend in in certain [PHP frameworks](https://symfony.com/doc/current/performance.html#performance-use-preloading).
-
-### Example
-
-```dockerfile
-FROM %%IMAGE%%:7.3-apache
-
-RUN docker-php-ext-install opcache
-
-# Override with custom opcache settings
-COPY config/opcache.ini "$PHP_INI_DIR/conf.d/"
-```
-
-For example `opcache.ini` filess see [here](https://www.hmazter.com/2019/04/speeding-up-php-docker-with-opcache/) and [here](https://laravel-news.com/php-opcache-docker)
+In many production environments, it is also recommended to (build and) enable the PHP core OPcache extension for performance.
+See [the upstream OPcache documentation](https://www.php.net/manual/en/book.opcache.php) for more details.
