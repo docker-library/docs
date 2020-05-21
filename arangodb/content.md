@@ -130,7 +130,7 @@ See more information about [Configuration](https://www.arangodb.com/docs/stable/
 
 `arangod` checks the following environment variables, which can be used to restrict how much memory and how many CPU cores it should use:
 
--	`ARANGODB_OVERRIDE_DETECTED_TOTAL_MEMORY` _(introduced in v3.6.3)_
+-	`ARANGODB_OVERRIDE_DETECTED_TOTAL_MEMORY` *(introduced in v3.6.3)*
 
 	This variable can be used to override the automatic detection of the total amount of RAM present on the system. One can specify a decimal number (in bytes). Furthermore, if `G` or `g` is appended, the value is multiplied by `2^30`. If `M` or `m` is appended, the value is multiplied by `2^20`. If `K` or `k` is appended, the value is multiplied by `2^10`. That is, `64G` means 64 gigabytes.
 
@@ -141,9 +141,9 @@ See more information about [Configuration](https://www.arangodb.com/docs/stable/
 	1.	If `arangod` is running in a container and its cgroup has a RAM limitation, then one should specify this limitation in this environment variable, since it is currently not automatically detected.
 	2.	If `arangod` is running alongside other services on the same machine and thus sharing the RAM with them, one should limit the amount of memory using this environment variable.
 
--	`ARANGODB_OVERRIDE_DETECTED_NUMBER_OF_CORES` _(introduced in v3.7.1)_
+-	`ARANGODB_OVERRIDE_DETECTED_NUMBER_OF_CORES` *(introduced in v3.7.1)*
 
-	This variable can be used to override the automatic detection of the number of CPU cores present on the system. 
+	This variable can be used to override the automatic detection of the number of CPU cores present on the system.
 
 	The number of CPU cores detected is logged as an INFO message at server start. If the variable is set, the overridden value is shown. Various default values for threading are calculated based on this value.
 
