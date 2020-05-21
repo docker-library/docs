@@ -6,7 +6,7 @@ version: '3.1'
 services:
 
   ghost:
-    image: ghost:1-alpine
+    image: ghost:3-alpine
     restart: always
     ports:
       - 8080:2368
@@ -17,6 +17,8 @@ services:
       database__connection__user: root
       database__connection__password: example
       database__connection__database: ghost
+      # this url value is just an example, and is likely wrong for your environment!
+      url: http://localhost:8080
 
   db:
     image: mysql:5.7
