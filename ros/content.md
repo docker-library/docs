@@ -133,7 +133,7 @@ The available tags include supported distros along with a hierarchy tags based o
 -	`ros-core`: minimal ROS install
 -	`ros-base`: basic tools and libraries (also tagged with distro name with LTS version as `latest`)
 
-The rest of the common meta-packages such as `desktop` and `ros1-bridge` are hosted on automatic build repos under OSRF's Docker Hub profile [here](https://hub.docker.com/r/osrf/ros/). These meta-packages include graphical dependencies and hook a host of other large packages such as X11, X server, etc. So in the interest of keep the official images lean and secure, the desktop packages are just be hosted with OSRF's profile.
+The rest of the common meta-packages such as `desktop` and `ros1-bridge` are hosted on automatic build repos under OSRF's Docker Hub profile [here](https://hub.docker.com/r/osrf/ros/). These meta-packages include graphical dependencies and hook a host of other large packages such as X11, X server, etc. So in the interest of keep the official images lean and secure, the desktop packages are just be hosted with OSRF's profile. For a extensive list of available variants, please read the official REP on target platforms for either [ROS1](https://ros.org/reps/rep-0150.html) or for [ROS2](https://www.ros.org/reps/rep-2001.html).
 
 ### Volumes
 
