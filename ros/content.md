@@ -13,7 +13,7 @@ The Robot Operating System (ROS) is a set of software libraries and tools that h
 To create your own ROS docker images and install custom packages, here's a simple example of installing the C++, Python client library demos using the official released Debian packages via apt-get.
 
 ```dockerfile
-FROM %%IMAGE%%:dashing
+FROM %%IMAGE%%:foxy
 
 # install ros package
 RUN apt-get update && apt-get install -y \
@@ -207,7 +207,7 @@ $ docker-compose rm
 +To ease ROS2 migration, [`ros1_bridge`](https://index.ros.org/p/ros1_bridge/github-ros2-ros1_bridge) is a ROS2 package that provides bidirectional communication between ROS1 and ROS2. As a minimal example, given the ROS2 Dockerfile above, we'll create the ROS1 equivalent below, and name the Dockerfile appropriately.
 
 ```dockerfile
-FROM ros:melodic
+FROM %%IMAGE%%:noetic
 
 # install ros package
 RUN apt-get update && apt-get install -y \
@@ -236,7 +236,7 @@ services:
       dockerfile: ros2.Dockerfile
 
   bridge:
-    image: osrf/ros:dashing-ros1-bridge
+    image: osrf/ros:foxy-ros1-bridge
     environment:
       - "ROS_HOSTNAME=bridge"
       - "ROS_MASTER_URI=http://ros1:11311"
