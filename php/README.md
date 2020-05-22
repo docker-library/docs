@@ -252,10 +252,9 @@ FROM php:7.4-fpm-alpine
 
 # Use the default production configuration
 RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
-
-# Override with custom opcache settings
-COPY config/opcache.ini $PHP_INI_DIR/conf.d/
 ```
+
+In many production environments, it is also recommended to (build and) enable the PHP core OPcache extension for performance. See [the upstream OPcache documentation](https://www.php.net/manual/en/book.opcache.php) for more details.
 
 # Image Variants
 
