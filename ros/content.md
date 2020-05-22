@@ -105,15 +105,11 @@ RUN sed --in-place --expression \
 CMD ["ros2", "launch", "demo_nodes_cpp", "talker_listener.launch.py"]
 ```
 
+The example above starts by using [`vcstools`](https://github.com/vcstools/vcstools) to clone source repos of interest into the cacher stage. One could similarly `COPY` code from the local build context into the source directory as well. Package manifest files are then cached in a temporary directory where the following builder stage may copy from to install necessary dependencies with [`rosdep`](https://github.com/ros-infrastructure/rosdep). This is done prior copying the rest of the source files to preserve the multi stage build cache, given unaltered manifests do not altered declared dependencies, saving time and bandwidth. The overlay is then built using [`colcon`](https://colcon.readthedocs.io/en/released/), the entrypoint updated to source the workspace, and the default command set to launch the demo.
+
 Note: `--from-paths` and `--packages-select` are set here as so to only install the dependencies and build for the demo C++ and Python packages, among many in the demo git repo that was cloned. To install the dependencies and build all the packages in the source workspace, merely change the scope by setting `--from-paths src/` and dropping the `--packages-select` arguments.
 
-For these particular packages, the tag used for the runner image consequently includes the necessary runtime dependencies for the talker and listener examples, however such may not always be the case. For example, starting a container from the runner image with the command `ros2 launch demo_nodes_cpp add_two_ints.launch.py` will fail, as that depends on `example_interfaces` package that are not installed here. Additionally, in interests of keeping `ros-core` tag minimal in image size, developer tools such as [`rosdep`](https://github.com/ros-infrastructure/rosdep), [`colcon`](https://colcon.readthedocs.io/en/released/) and [`vcstools`](https://github.com/vcstools/vcstools) are not shipped in `ros_core`, but in `ros-base` instead.
-
-	REPOSITORY    TAG        IMAGE ID        CREATED         SIZE
-	my/ros        runner     66c8112b2fb6    2 seconds ago   654MB
-	my/ros        builder    6b500239d0d6    9 seconds ago   859MB
-
-Although using a multi-stage build didn't shrink the final image by much, for more complex applications, segmenting build setup from the runtime can help keep image sizes down. Additionally, doing so can also prepare you for releasing your package to the community, helping to reconcile runtime vs development dependency discrepancies you may have otherwise forgotten to declare in your `package.xml` manifest.
+For more advance examples such as daisy chaining multiple overlay workspaces to improve caching of docker image build layers, using tools such as ccache to accelerate compilation with colcon, or using buildkit to save build time and bandwidth even when dependencies change, the provided `Dockerfile`s in the [Navigation2](https://github.com/ros-planning/navigation2) repo are excellent resources.
 
 ## Deployment use cases
 
@@ -131,6 +127,8 @@ The available tags include supported distros along with a hierarchy tags based o
 
 -	`ros-core`: minimal ROS install
 -	`ros-base`: basic tools and libraries (also tagged with distro name with LTS version as `latest`)
+
+In the interest of keeping `ros-core` tag minimal in image size, developer tools such as `rosdep`, `colcon` and `vcstools` are not shipped in `ros_core`, but in `ros-base` instead.
 
 The rest of the common meta-packages such as `desktop` and `ros1-bridge` are hosted on automatic build repos under OSRF's Docker Hub profile [here](https://hub.docker.com/r/osrf/ros/). These meta-packages include graphical dependencies and hook a host of other large packages such as X11, X server, etc. So in the interest of keep the official images lean and secure, the desktop packages are just be hosted with OSRF's profile. For a extensive list of available variants, please read the official REP on target platforms for either [ROS1](https://ros.org/reps/rep-0150.html) or for [ROS2](https://www.ros.org/reps/rep-2001.html).
 
