@@ -28,6 +28,7 @@ WARNING:
 -	[`3.10.2-postgres`, `3.10-postgres`, `postgres`](https://github.com/geonetwork/docker-geonetwork/blob/f81b111fbe3d765ee56f61c5474099764ee07004/3.10.2/postgres/Dockerfile)
 -	[`3.8.3`, `3.8`](https://github.com/geonetwork/docker-geonetwork/blob/af81a4ff8f592d27b4911ad20d569379864ee85f/3.8.3/Dockerfile)
 -	[`3.8.3-postgres`, `3.8-postgres`](https://github.com/geonetwork/docker-geonetwork/blob/af81a4ff8f592d27b4911ad20d569379864ee85f/3.8.3/postgres/Dockerfile)
+-	[`4.0.0-alpha.1`, `4.0.0-alpha`, `4.0-alpha`, `4-alpha`](https://github.com/geonetwork/docker-geonetwork/blob/322b19a848bdc0ab227e40f2e1b84dec059550bb/4.0.0-alpha.1/Dockerfile)
 
 # Quick reference (cont.)
 
