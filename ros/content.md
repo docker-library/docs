@@ -60,8 +60,7 @@ repositories: \n\
     url: https://github.com/ros2/demos.git \n\
     version: ${ROS_DISTRO} \n\
 " > ../overlay.repos
-RUN vcs import ./ < ../overlay.repos && \
-    find ./ -name ".git" | xargs rm -rf
+RUN vcs import ./ < ../overlay.repos
 
 # copy manifests for caching
 WORKDIR /opt
