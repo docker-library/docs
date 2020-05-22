@@ -109,7 +109,7 @@ The example above starts by using [`vcstools`](https://github.com/vcstools/vcsto
 
 Note: `--from-paths` and `--packages-select` are set here as so to only install the dependencies and build for the demo C++ and Python packages, among many in the demo git repo that was cloned. To install the dependencies and build all the packages in the source workspace, merely change the scope by setting `--from-paths src/` and dropping the `--packages-select` arguments.
 
-For more advance examples such as daisy chaining multiple overlay workspaces to improve caching of docker image build layers, using tools such as ccache to accelerate compilation with colcon, or using buildkit to save build time and bandwidth even when dependencies change, the provided `Dockerfile`s in the [Navigation2](https://github.com/ros-planning/navigation2) repo are excellent resources.
+For more advance examples such as daisy chaining multiple overlay workspaces to improve caching of docker image build layers, using tools such as ccache to accelerate compilation with colcon, or using buildkit to save build time and bandwidth even when dependencies change, the project `Dockerfile`s in the ROS2 [Navigation2](https://github.com/ros-planning/navigation2) repo are excellent resources.
 
 ## Deployment use cases
 
@@ -204,7 +204,7 @@ $ docker-compose rm
 
 ### ROS1 Bridge
 
-To ease ROS2 migration, [`ros1_bridge`](https://index.ros.org/p/ros1_bridge/github-ros2-ros1_bridge) is a ROS2 package that provides bidirectional communication between ROS1 and ROS2. As a minimal example, given the ROS2 Dockerfile above, we'll create the ROS1 equivalent below, and name the Dockerfile appropriately. 
++To ease ROS2 migration, [`ros1_bridge`](https://index.ros.org/p/ros1_bridge/github-ros2-ros1_bridge) is a ROS2 package that provides bidirectional communication between ROS1 and ROS2. As a minimal example, given the ROS2 Dockerfile above, we'll create the ROS1 equivalent below, and name the Dockerfile appropriately.
 
 ```dockerfile
 FROM ros:melodic
@@ -255,8 +255,8 @@ services:
 ## ROS2
 
 [Index](https://index.ros.org/doc/ros2/): ROS2 Documentation  
-[Design](https://design.ros2.org/): ROS2 Design Articles  
+[Design](https://design.ros2.org/): ROS2 Design Articles
 
 ## ROS1
 
-[Wiki](http://wiki.ros.org/Documentation): ROS1 Documentation  
+[Wiki](http://wiki.ros.org/Documentation): ROS1 Documentation
