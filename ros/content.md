@@ -119,7 +119,7 @@ Developing such complex systems with cutting edge implementations of newly publi
 
 With the advancements and standardization of software containers, roboticists are primed to acquire a host of improved developer tooling for building and shipping software. To help alleviate the growing pains and technical challenges of adopting new practices, we have focused on providing an official resource for using ROS with these new technologies.
 
-For a complete listing of supported architecture and base images for each ROS Distribution Release, please read the official REP on target platforms for either [ROS1](https://www.ros.org/reps/rep-0003.html) or for [ROS2](https://www.ros.org/reps/rep-2000.html).
+For a complete listing of supported architectures and base images for each ROS Distribution Release, please read the official REP on target platforms for either [ROS1](https://www.ros.org/reps/rep-0003.html) or for [ROS2](https://www.ros.org/reps/rep-2000.html).
 
 ## Deployment suggestions
 
@@ -150,7 +150,7 @@ Some application may require device access for acquiring images from connected c
 
 ROS allows for peer-to-peer networking of processes (potentially distributed across machines) that are loosely coupled using the ROS communication infrastructure. ROS implements several different styles of communication, including synchronous RPC-style communication over services, asynchronous streaming of typed data over topics, combinations of both prior via request/reply and status/feedback over actions, and run-time settings via configuration over parameters. To abide by the best practice of [one process per container](https://docs.docker.com/articles/dockerfile_best-practices/), Docker networks can be used to string together several running ROS processes. For further details see the Deployment example further below.
 
-Alternatively, more permissive network setting can be use to share all host network interfaces with the container, such as [`host` network driver](https://docs.docker.com/network/host/), simplifying connectivity with external network participants. Be aware however that this removes the networking namespace separation between containers, and can affect the ability of DDS participants communicate between containers, as documented [here](https://community.rti.com/kb/how-use-rti-connext-dds-communicate-across-docker-containers-using-host-driver).
+Alternatively, more permissive network setting can be used to share all host network interfaces with the container, such as [`host` network driver](https://docs.docker.com/network/host/), simplifying connectivity with external network participants. Be aware however that this removes the networking namespace separation between containers, and can affect the ability of DDS participants to communicate between containers, as documented [here](https://community.rti.com/kb/how-use-rti-connext-dds-communicate-across-docker-containers-using-host-driver).
 
 ## Deployment example
 
