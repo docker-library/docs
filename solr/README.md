@@ -14,39 +14,39 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`8.4.1`, `8.4`, `8`, `latest`](https://github.com/docker-solr/docker-solr/blob/394ead2fa128d90afb072284bce5f1715345c53c/8.4/Dockerfile)
--	[`8.4.1-slim`, `8.4-slim`, `8-slim`, `slim`](https://github.com/docker-solr/docker-solr/blob/394ead2fa128d90afb072284bce5f1715345c53c/8.4/slim/Dockerfile)
--	[`8.3.1`, `8.3`](https://github.com/docker-solr/docker-solr/blob/394ead2fa128d90afb072284bce5f1715345c53c/8.3/Dockerfile)
--	[`8.3.1-slim`, `8.3-slim`](https://github.com/docker-solr/docker-solr/blob/394ead2fa128d90afb072284bce5f1715345c53c/8.3/slim/Dockerfile)
--	[`8.2.0`, `8.2`](https://github.com/docker-solr/docker-solr/blob/394ead2fa128d90afb072284bce5f1715345c53c/8.2/Dockerfile)
--	[`8.2.0-slim`, `8.2-slim`](https://github.com/docker-solr/docker-solr/blob/394ead2fa128d90afb072284bce5f1715345c53c/8.2/slim/Dockerfile)
--	[`8.1.1`, `8.1`](https://github.com/docker-solr/docker-solr/blob/394ead2fa128d90afb072284bce5f1715345c53c/8.1/Dockerfile)
--	[`8.1.1-slim`, `8.1-slim`](https://github.com/docker-solr/docker-solr/blob/394ead2fa128d90afb072284bce5f1715345c53c/8.1/slim/Dockerfile)
--	[`8.0.0`, `8.0`](https://github.com/docker-solr/docker-solr/blob/394ead2fa128d90afb072284bce5f1715345c53c/8.0/Dockerfile)
--	[`8.0.0-slim`, `8.0-slim`](https://github.com/docker-solr/docker-solr/blob/394ead2fa128d90afb072284bce5f1715345c53c/8.0/slim/Dockerfile)
--	[`7.7.2`, `7.7`, `7`](https://github.com/docker-solr/docker-solr/blob/394ead2fa128d90afb072284bce5f1715345c53c/7.7/Dockerfile)
--	[`7.7.2-slim`, `7.7-slim`, `7-slim`](https://github.com/docker-solr/docker-solr/blob/394ead2fa128d90afb072284bce5f1715345c53c/7.7/slim/Dockerfile)
--	[`7.6.0`, `7.6`](https://github.com/docker-solr/docker-solr/blob/394ead2fa128d90afb072284bce5f1715345c53c/7.6/Dockerfile)
--	[`7.6.0-slim`, `7.6-slim`](https://github.com/docker-solr/docker-solr/blob/394ead2fa128d90afb072284bce5f1715345c53c/7.6/slim/Dockerfile)
--	[`7.5.0`, `7.5`](https://github.com/docker-solr/docker-solr/blob/394ead2fa128d90afb072284bce5f1715345c53c/7.5/Dockerfile)
--	[`7.5.0-slim`, `7.5-slim`](https://github.com/docker-solr/docker-solr/blob/394ead2fa128d90afb072284bce5f1715345c53c/7.5/slim/Dockerfile)
--	[`6.6.6`, `6.6`, `6`](https://github.com/docker-solr/docker-solr/blob/394ead2fa128d90afb072284bce5f1715345c53c/6.6/Dockerfile)
--	[`6.6.6-slim`, `6.6-slim`, `6-slim`](https://github.com/docker-solr/docker-solr/blob/394ead2fa128d90afb072284bce5f1715345c53c/6.6/slim/Dockerfile)
--	[`5.5.5`, `5.5`, `5`](https://github.com/docker-solr/docker-solr/blob/394ead2fa128d90afb072284bce5f1715345c53c/5.5/Dockerfile)
--	[`5.5.5-slim`, `5.5-slim`, `5-slim`](https://github.com/docker-solr/docker-solr/blob/394ead2fa128d90afb072284bce5f1715345c53c/5.5/slim/Dockerfile)
-
 # Quick reference
+
+-	**Maintained by**:  
+	[the Apache Lucene/Solr project](https://github.com/docker-solr/docker-solr)
 
 -	**Where to get help**:  
 	[the Solr Community](https://lucene.apache.org/solr/community.html)
 
+# Supported tags and respective `Dockerfile` links
+
+-	[`8.5.1`, `8.5`, `8`, `latest`](https://github.com/docker-solr/docker-solr/blob/574d3d15742dce60957d423240337a3962f265f6/8.5/Dockerfile)
+-	[`8.5.1-slim`, `8.5-slim`, `8-slim`, `slim`](https://github.com/docker-solr/docker-solr/blob/574d3d15742dce60957d423240337a3962f265f6/8.5/slim/Dockerfile)
+-	[`8.4.1`, `8.4`](https://github.com/docker-solr/docker-solr/blob/574d3d15742dce60957d423240337a3962f265f6/8.4/Dockerfile)
+-	[`8.4.1-slim`, `8.4-slim`](https://github.com/docker-solr/docker-solr/blob/574d3d15742dce60957d423240337a3962f265f6/8.4/slim/Dockerfile)
+-	[`8.3.1`, `8.3`](https://github.com/docker-solr/docker-solr/blob/574d3d15742dce60957d423240337a3962f265f6/8.3/Dockerfile)
+-	[`8.3.1-slim`, `8.3-slim`](https://github.com/docker-solr/docker-solr/blob/574d3d15742dce60957d423240337a3962f265f6/8.3/slim/Dockerfile)
+-	[`8.2.0`, `8.2`](https://github.com/docker-solr/docker-solr/blob/574d3d15742dce60957d423240337a3962f265f6/8.2/Dockerfile)
+-	[`8.2.0-slim`, `8.2-slim`](https://github.com/docker-solr/docker-solr/blob/574d3d15742dce60957d423240337a3962f265f6/8.2/slim/Dockerfile)
+-	[`8.1.1`, `8.1`](https://github.com/docker-solr/docker-solr/blob/574d3d15742dce60957d423240337a3962f265f6/8.1/Dockerfile)
+-	[`8.1.1-slim`, `8.1-slim`](https://github.com/docker-solr/docker-solr/blob/574d3d15742dce60957d423240337a3962f265f6/8.1/slim/Dockerfile)
+-	[`8.0.0`, `8.0`](https://github.com/docker-solr/docker-solr/blob/574d3d15742dce60957d423240337a3962f265f6/8.0/Dockerfile)
+-	[`8.0.0-slim`, `8.0-slim`](https://github.com/docker-solr/docker-solr/blob/574d3d15742dce60957d423240337a3962f265f6/8.0/slim/Dockerfile)
+-	[`7.7.3`, `7.7`, `7`](https://github.com/docker-solr/docker-solr/blob/574d3d15742dce60957d423240337a3962f265f6/7.7/Dockerfile)
+-	[`7.7.3-slim`, `7.7-slim`, `7-slim`](https://github.com/docker-solr/docker-solr/blob/574d3d15742dce60957d423240337a3962f265f6/7.7/slim/Dockerfile)
+-	[`6.6.6`, `6.6`, `6`](https://github.com/docker-solr/docker-solr/blob/574d3d15742dce60957d423240337a3962f265f6/6.6/Dockerfile)
+-	[`6.6.6-slim`, `6.6-slim`, `6-slim`](https://github.com/docker-solr/docker-solr/blob/574d3d15742dce60957d423240337a3962f265f6/6.6/slim/Dockerfile)
+-	[`5.5.5`, `5.5`, `5`](https://github.com/docker-solr/docker-solr/blob/574d3d15742dce60957d423240337a3962f265f6/5.5/Dockerfile)
+-	[`5.5.5-slim`, `5.5-slim`, `5-slim`](https://github.com/docker-solr/docker-solr/blob/574d3d15742dce60957d423240337a3962f265f6/5.5/slim/Dockerfile)
+
+# Quick reference (cont.)
+
 -	**Where to file issues**:  
 	[https://github.com/docker-solr/docker-solr/issues](https://github.com/docker-solr/docker-solr/issues)
-
--	**Maintained by**:  
-	[the Solr Community](https://github.com/docker-solr/docker-solr)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/solr/), [`arm64v8`](https://hub.docker.com/r/arm64v8/solr/)
@@ -68,8 +68,6 @@ Solr is highly reliable, scalable and fault tolerant, providing distributed inde
 
 Learn more on [Apache Solr homepage](http://lucene.apache.org/solr/) and in the [Apache Solr Reference Guide](https://www.apache.org/dyn/closer.cgi/lucene/solr/ref-guide/).
 
-> [wikipedia.org/wiki/Apache_Solr](https://en.wikipedia.org/wiki/Apache_Solr)
-
 ![logo](https://raw.githubusercontent.com/docker-library/docs/ddc9eb521da7c412b70229f1a600d0c63d55d0f7/solr/logo.png)
 
 # How to use this Docker image
@@ -87,6 +85,10 @@ For more detailed instructions for using this image, see the [README](https://gi
 # About this repository
 
 This repository is available on [github.com/docker-solr/docker-solr](https://github.com/docker-solr/docker-solr), and the official build is on the [Docker Hub](https://hub.docker.com/_/solr/).
+
+# History
+
+This project was started in 2015 by [Martijn Koster](https://github.com/makuk66). In 2019 maintainership and copyright was transferred to the Apache Lucene/Solr project. Many thanks to Martijn for all your contributions over the years!
 
 # Image Variants
 
@@ -106,7 +108,7 @@ Solr is licensed under the [Apache License, Version 2.0](https://www.apache.org/
 
 This repository is also licensed under the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0).
 
-Copyright 2015 Martijn Koster
+Copyright 2015-2020 The Apache Software Foundation
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 

@@ -20,20 +20,22 @@ These images were removed in favor of the [`opensuse/leap`](https://hub.docker.c
 
 An archive for images of unsupported versions can be found at [`opensuse/archive`](https://hub.docker.com/r/opensuse/archive).
 
-# Supported tags and respective `Dockerfile` links
-
-**No supported tags**
-
 # Quick reference
+
+-	**Maintained by**:  
+	[the SUSE containers team](https://github.com/openSUSE/docker-containers-build)
 
 -	**Where to get help**:  
 	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
+# Supported tags and respective `Dockerfile` links
+
+**No supported tags**
+
+# Quick reference (cont.)
+
 -	**Where to file issues**:  
 	[https://github.com/openSUSE/docker-containers-build/issues](https://github.com/openSUSE/docker-containers-build/issues)
-
--	**Maintained by**:  
-	[the SUSE containers team](https://github.com/openSUSE/docker-containers-build)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	**No supported architectures**

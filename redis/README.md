@@ -14,30 +14,29 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`6.0-rc1`, `6.0-rc`, `rc`, `6.0-rc1-buster`, `6.0-rc-buster`, `rc-buster`](https://github.com/docker-library/redis/blob/b6d413ceff3a2bca10a430ace121597fa8fe2a2c/6.0-rc/Dockerfile)
--	[`6.0-rc1-alpine`, `6.0-rc-alpine`, `rc-alpine`, `6.0-rc1-alpine3.11`, `6.0-rc-alpine3.11`, `rc-alpine3.11`](https://github.com/docker-library/redis/blob/b6d413ceff3a2bca10a430ace121597fa8fe2a2c/6.0-rc/alpine/Dockerfile)
--	[`5.0.7`, `5.0`, `5`, `latest`, `5.0.7-buster`, `5.0-buster`, `5-buster`, `buster`](https://github.com/docker-library/redis/blob/b6d413ceff3a2bca10a430ace121597fa8fe2a2c/5.0/Dockerfile)
--	[`5.0.7-32bit`, `5.0-32bit`, `5-32bit`, `32bit`, `5.0.7-32bit-buster`, `5.0-32bit-buster`, `5-32bit-buster`, `32bit-buster`](https://github.com/docker-library/redis/blob/b6d413ceff3a2bca10a430ace121597fa8fe2a2c/5.0/32bit/Dockerfile)
--	[`5.0.7-alpine`, `5.0-alpine`, `5-alpine`, `alpine`, `5.0.7-alpine3.11`, `5.0-alpine3.11`, `5-alpine3.11`, `alpine3.11`](https://github.com/docker-library/redis/blob/b6d413ceff3a2bca10a430ace121597fa8fe2a2c/5.0/alpine/Dockerfile)
--	[`4.0.14`, `4.0`, `4`, `4.0.14-buster`, `4.0-buster`, `4-buster`](https://github.com/docker-library/redis/blob/b6d413ceff3a2bca10a430ace121597fa8fe2a2c/4.0/Dockerfile)
--	[`4.0.14-32bit`, `4.0-32bit`, `4-32bit`, `4.0.14-32bit-buster`, `4.0-32bit-buster`, `4-32bit-buster`](https://github.com/docker-library/redis/blob/b6d413ceff3a2bca10a430ace121597fa8fe2a2c/4.0/32bit/Dockerfile)
--	[`4.0.14-alpine`, `4.0-alpine`, `4-alpine`, `4.0.14-alpine3.11`, `4.0-alpine3.11`, `4-alpine3.11`](https://github.com/docker-library/redis/blob/b6d413ceff3a2bca10a430ace121597fa8fe2a2c/4.0/alpine/Dockerfile)
-
 # Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
-
--	**Where to file issues**:  
-	[https://github.com/docker-library/redis/issues](https://github.com/docker-library/redis/issues)
 
 -	**Maintained by**:  
 	[the Docker Community](https://github.com/docker-library/redis)
 
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+# Supported tags and respective `Dockerfile` links
+
+-	[`6.0.3`, `6.0`, `6`, `latest`, `6.0.3-buster`, `6.0-buster`, `6-buster`, `buster`](https://github.com/docker-library/redis/blob/9c9d49d25acd7428ea30669f0395506f4a7f78fc/6.0/Dockerfile)
+-	[`6.0.3-alpine`, `6.0-alpine`, `6-alpine`, `alpine`, `6.0.3-alpine3.11`, `6.0-alpine3.11`, `6-alpine3.11`, `alpine3.11`](https://github.com/docker-library/redis/blob/9c9d49d25acd7428ea30669f0395506f4a7f78fc/6.0/alpine/Dockerfile)
+-	[`5.0.9`, `5.0`, `5`, `5.0.9-buster`, `5.0-buster`, `5-buster`](https://github.com/docker-library/redis/blob/d3a0f3d95ac768db44dbcb87ecf88cfc436581d5/5.0/Dockerfile)
+-	[`5.0.9-32bit`, `5.0-32bit`, `5-32bit`, `5.0.9-32bit-buster`, `5.0-32bit-buster`, `5-32bit-buster`](https://github.com/docker-library/redis/blob/d3a0f3d95ac768db44dbcb87ecf88cfc436581d5/5.0/32bit/Dockerfile)
+-	[`5.0.9-alpine`, `5.0-alpine`, `5-alpine`, `5.0.9-alpine3.11`, `5.0-alpine3.11`, `5-alpine3.11`](https://github.com/docker-library/redis/blob/d3a0f3d95ac768db44dbcb87ecf88cfc436581d5/5.0/alpine/Dockerfile)
+
+# Quick reference (cont.)
+
+-	**Where to file issues**:  
+	[https://github.com/docker-library/redis/issues](https://github.com/docker-library/redis/issues)
+
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/redis/), [`arm32v5`](https://hub.docker.com/r/arm32v5/redis/), [`arm32v6`](https://hub.docker.com/r/arm32v6/redis/), [`arm32v7`](https://hub.docker.com/r/arm32v7/redis/), [`arm64v8`](https://hub.docker.com/r/arm64v8/redis/), [`i386`](https://hub.docker.com/r/i386/redis/), [`ppc64le`](https://hub.docker.com/r/ppc64le/redis/), [`s390x`](https://hub.docker.com/r/s390x/redis/)
+	[`amd64`](https://hub.docker.com/r/amd64/redis/), [`arm32v5`](https://hub.docker.com/r/arm32v5/redis/), [`arm32v6`](https://hub.docker.com/r/arm32v6/redis/), [`arm32v7`](https://hub.docker.com/r/arm32v7/redis/), [`arm64v8`](https://hub.docker.com/r/arm64v8/redis/), [`i386`](https://hub.docker.com/r/i386/redis/), [`mips64le`](https://hub.docker.com/r/mips64le/redis/), [`ppc64le`](https://hub.docker.com/r/ppc64le/redis/), [`s390x`](https://hub.docker.com/r/s390x/redis/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/redis/` directory](https://github.com/docker-library/repo-info/blob/master/repos/redis) ([history](https://github.com/docker-library/repo-info/commits/master/repos/redis))  

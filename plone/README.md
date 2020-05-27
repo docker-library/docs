@@ -14,22 +14,24 @@ WARNING:
 
 -->
 
+# Quick reference
+
+-	**Maintained by**:  
+	[Plone Community](https://github.com/plone/plone.docker)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`5.2.1`, `5.2`, `5`, `latest`](https://github.com/plone/plone.docker/blob/a346627b8e694036693d03f95d4986a3d6cb3111/5.2/5.2.1/debian/Dockerfile)
 -	[`5.2.1-alpine`, `5.2-alpine`, `5-alpine`, `alpine`](https://github.com/plone/plone.docker/blob/a346627b8e694036693d03f95d4986a3d6cb3111/5.2/5.2.1/alpine/Dockerfile)
 -	[`5.2.1-python2`, `5.2-python2`, `5-python2`, `python2`](https://github.com/plone/plone.docker/blob/5a3ed2cf8f0206bf710935c6daa527eb0e1056a4/5.2/5.2.1/python2/Dockerfile)
 
-# Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+# Quick reference (cont.)
 
 -	**Where to file issues**:  
 	[https://github.com/plone/plone.docker/issues](https://github.com/plone/plone.docker/issues)
-
--	**Maintained by**:  
-	[Plone Community](https://github.com/plone/plone.docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/plone/), [`arm32v5`](https://hub.docker.com/r/arm32v5/plone/), [`arm32v6`](https://hub.docker.com/r/arm32v6/plone/), [`arm32v7`](https://hub.docker.com/r/arm32v7/plone/), [`arm64v8`](https://hub.docker.com/r/arm64v8/plone/), [`i386`](https://hub.docker.com/r/i386/plone/), [`ppc64le`](https://hub.docker.com/r/ppc64le/plone/), [`s390x`](https://hub.docker.com/r/s390x/plone/)

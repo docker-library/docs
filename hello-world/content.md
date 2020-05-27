@@ -27,7 +27,7 @@ For more examples and ideas, visit:
 
 $ docker images %%IMAGE%%
 REPOSITORY   TAG     IMAGE ID      SIZE
-hello-world  latest  fce289e99eb9  1840
+hello-world  latest  bf756fb1ae65  13336
 ```
 
 %%LOGO%%

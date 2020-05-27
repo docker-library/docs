@@ -14,22 +14,24 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`4.1.1`, `4.1`, `latest`](https://github.com/crate/docker-crate/blob/b38085896af2281ff01a5901002984a8c1291107/Dockerfile)
--	[`4.0.12`, `4.0`](https://github.com/crate/docker-crate/blob/7791cda08fbf054ab2ce7a988f8811074b8c3bf4/Dockerfile)
--	[`3.3.5`, `3.3`](https://github.com/crate/docker-crate/blob/f5c527fb12df004e3fc620fd9d91b97686f56ef8/Dockerfile)
-
 # Quick reference
+
+-	**Maintained by**:  
+	[Crate.io](https://github.com/crate/docker-crate)
 
 -	**Where to get help**:  
 	[project documentation](https://crate.io/docs/), [StackOverflow](https://stackoverflow.com/tags/crate), [Slack](https://crate.io/docs/support/slackin/), or [paid support](https://crate.io/pricing/)
 
+# Supported tags and respective `Dockerfile` links
+
+-	[`4.1.5`, `4.1`, `latest`](https://github.com/crate/docker-crate/blob/1d2060119c573f07b861f808c0aa89331fa80cd5/Dockerfile)
+-	[`4.0.12`, `4.0`](https://github.com/crate/docker-crate/blob/7791cda08fbf054ab2ce7a988f8811074b8c3bf4/Dockerfile)
+-	[`3.3.5`, `3.3`](https://github.com/crate/docker-crate/blob/f5c527fb12df004e3fc620fd9d91b97686f56ef8/Dockerfile)
+
+# Quick reference (cont.)
+
 -	**Where to file issues**:  
 	[https://github.com/crate/docker-crate/issues](https://github.com/crate/docker-crate/issues)
-
--	**Maintained by**:  
-	[Crate.io](https://github.com/crate/docker-crate)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/crate/), [`arm64v8`](https://hub.docker.com/r/arm64v8/crate/)

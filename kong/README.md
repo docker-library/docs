@@ -14,14 +14,22 @@ WARNING:
 
 -->
 
+# Quick reference
+
+-	**Maintained by**:  
+	[the Kong Docker Maintainers](https://github.com/kong/kong)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
--	[`2.0.1-alpine`, `2.0.1`, `2.0`, `latest`, `alpine`](https://github.com/Kong/docker-kong/blob/7c6281ca1906b05080af23c94fafa2ff08d05856/alpine/Dockerfile)
--	[`2.0.1-ubuntu`, `2.0-ubuntu`, `ubuntu`](https://github.com/Kong/docker-kong/blob/7c6281ca1906b05080af23c94fafa2ff08d05856/ubuntu/Dockerfile)
--	[`2.0.1-centos`, `2.0-centos`, `centos`](https://github.com/Kong/docker-kong/blob/7c6281ca1906b05080af23c94fafa2ff08d05856/centos/Dockerfile)
--	[`1.5.0-alpine`, `1.5.0`, `1.5`](https://github.com/Kong/docker-kong/blob/ec0c67d478157c48a4fdec616f88968e1613717a/alpine/Dockerfile)
--	[`1.5.0-ubuntu`, `1.5-ubuntu`](https://github.com/Kong/docker-kong/blob/ec0c67d478157c48a4fdec616f88968e1613717a/ubuntu/Dockerfile)
--	[`1.5.0-centos`, `1.5-centos`](https://github.com/Kong/docker-kong/blob/ec0c67d478157c48a4fdec616f88968e1613717a/centos/Dockerfile)
+-	[`2.0.4-alpine`, `2.0.4`, `2.0`, `latest`, `alpine`](https://github.com/Kong/docker-kong/blob/74c5796ec1789d13b794c7cda0a5bca692aa6d53/alpine/Dockerfile)
+-	[`2.0.4-ubuntu`, `2.0-ubuntu`, `ubuntu`](https://github.com/Kong/docker-kong/blob/74c5796ec1789d13b794c7cda0a5bca692aa6d53/ubuntu/Dockerfile)
+-	[`2.0.4-centos`, `2.0-centos`, `centos`](https://github.com/Kong/docker-kong/blob/74c5796ec1789d13b794c7cda0a5bca692aa6d53/centos/Dockerfile)
+-	[`1.5.1-alpine`, `1.5.1`, `1.5`](https://github.com/Kong/docker-kong/blob/8ba4389169d5873be65a09001d06293ccdfc7caf/alpine/Dockerfile)
+-	[`1.5.1-ubuntu`, `1.5-ubuntu`](https://github.com/Kong/docker-kong/blob/8ba4389169d5873be65a09001d06293ccdfc7caf/ubuntu/Dockerfile)
+-	[`1.5.1-centos`, `1.5-centos`](https://github.com/Kong/docker-kong/blob/8ba4389169d5873be65a09001d06293ccdfc7caf/centos/Dockerfile)
 -	[`1.4.3-alpine`, `1.4.3`, `1.4`](https://github.com/Kong/docker-kong/blob/d2884ee222e72c3edb9abd48d4062991e41ea7bc/alpine/Dockerfile)
 -	[`1.4.3-ubuntu`, `1.4-ubuntu`](https://github.com/Kong/docker-kong/blob/d2884ee222e72c3edb9abd48d4062991e41ea7bc/ubuntu/Dockerfile)
 -	[`1.4.3-centos`, `1.4-centos`](https://github.com/Kong/docker-kong/blob/d2884ee222e72c3edb9abd48d4062991e41ea7bc/centos/Dockerfile)
@@ -35,16 +43,10 @@ WARNING:
 -	[`1.0.4-alpine`, `1.0.4`, `1.0`](https://github.com/Kong/docker-kong/blob/5a47f391b479e6660edab76813891326630bed0e/alpine/Dockerfile)
 -	[`1.0.4-centos`, `1.0-centos`](https://github.com/Kong/docker-kong/blob/5a47f391b479e6660edab76813891326630bed0e/centos/Dockerfile)
 
-# Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+# Quick reference (cont.)
 
 -	**Where to file issues**:  
 	[https://github.com/kong/kong/issues](https://github.com/kong/kong/issues)
-
--	**Maintained by**:  
-	[the Kong Docker Maintainers](https://github.com/kong/kong)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/kong/), [`arm64v8`](https://hub.docker.com/r/arm64v8/kong/)

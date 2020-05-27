@@ -89,7 +89,7 @@ $ docker run -d \
 
 ## Using the Nextcloud command-line interface
 
-To use the [Nextcloud command-line interface](https://docs.nextcloud.com/server/12/admin_manual/configuration_server/occ_command.html) (aka. `occ` command):
+To use the [Nextcloud command-line interface](https://docs.nextcloud.com/server/latest/admin_manual/configuration_server/occ_command.html) (aka. `occ` command):
 
 ```console
 $ docker exec --user www-data CONTAINER_ID php occ
@@ -159,7 +159,25 @@ To use a external SMTP server you have to provide the connection details. To con
 -	`MAIL_FROM_ADDRESS` (not set by default) Use this address for the 'from' field in the mail envelopes sent by Nextcloud.
 -	`MAIL_DOMAIN` (not set by default) Set a different domain for the emails than the domain where Nextcloud is installed.
 
-Check the [Nextcloud documentation](https://docs.nextcloud.com/server/15/admin_manual/configuration_server/email_configuration.html) for other values to configure SMTP.
+Check the [Nextcloud documentation](https://docs.nextcloud.com/server/latest/admin_manual/configuration_server/email_configuration.html) for other values to configure SMTP.
+
+## Using the apache image behind a reverse proxy and auto configure server host and protocol
+
+The apache image will replace the remote addr (ip address visible to Nextcloud) with the ip address from `X-Real-IP` if the request is coming from a proxy in 10.0.0.0/8, 172.16.0.0/12 or 192.168.0.0/16 by default. If you want Nextcloud to pick up the server host (`HTTP_X_FORWARDED_HOST`), protocol (`HTTP_X_FORWARDED_PROTO`) and client ip (`HTTP_X_FORWARDED_FOR`) from a trusted proxy disable rewrite ip and the reverse proxies ip address to `TRUSTED_PROXIES`.
+
+-	`APACHE_DISABLE_REWRITE_IP` (not set by default): Set to 1 to disable rewrite ip.
+-	`TRUSTED_PROXIES` (empty by default): A space-separated list of trusted proxies. CIDR notation is supported for IPv4.
+
+If the `TRUSTED_PROXIES` approach does not work for you, try using fixed values for overwrite parameters.
+
+-	`OVERWRITEHOST` (empty by default): Set the hostname of the proxy. Can also specify a port.
+-	`OVERWRITEPROTOCOL` (empty by default): Set the protocol of the proxy, http or https.
+-	`OVERWRITEWEBROOT` (empty by default): Set the absolute path of the proxy.
+-	`OVERWRITECONDADDR` (empty by default): Regex to overwrite the values dependent on the remote address.
+
+Check the [Nexcloud documentation](https://docs.nextcloud.com/server/latest/admin_manual/configuration_server/reverse_proxy_configuration.html) for more details.
+
+Keep in mind that once set, removing these environment variables won't remove these values from the configuration file, due to how Nextcloud merges configuration files together.
 
 # Running this image with docker-compose
 
@@ -256,6 +274,70 @@ services:
 ```
 
 Then run `docker-compose up -d`, now you can access Nextcloud at http://localhost:8080/ from your host system.
+
+# Docker Secrets
+
+As an alternative to passing sensitive information via environment variables, _FILE may be appended to the previously listed environment variables, causing the initialization script to load the values for those variables from files present in the container. In particular, this can be used to load passwords from Docker secrets stored in /run/secrets/<secret_name> files. For example:
+
+```yaml
+version: '3.2'
+
+services:
+  db:
+    image: postgres
+    restart: always
+    volumes:
+      - db:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB_FILE=/run/secrets/postgres_db
+      - POSTGRES_USER_FILE=/run/secrets/postgres_user
+      - POSTGRES_PASSWORD_FILE=/run/secrets/postgres_password
+    secrets:
+      - postgres_db
+      - postgres_password
+      - postgres_user
+
+  app:
+    image: nextcloud
+    restart: always
+    ports:
+      - 8080:80
+    volumes:
+      - nextcloud:/var/www/html
+    environment:
+      - POSTGRES_HOST=db
+      - POSTGRES_DB_FILE=/run/secrets/postgres_db
+      - POSTGRES_USER_FILE=/run/secrets/postgres_user
+      - POSTGRES_PASSWORD_FILE=/run/secrets/postgres_password
+      - NEXTCLOUD_ADMIN_PASSWORD_FILE=/run/secrets/nextcloud_admin_password
+      - NEXTCLOUD_ADMIN_USER_FILE=/run/secrets/nextcloud_admin_user
+    depends_on:
+      - db
+    secrets:
+      - nextcloud_admin_password
+      - nextcloud_admin_user
+      - postgres_db
+      - postgres_password
+      - postgres_user
+
+volumes:
+  db:
+  nextcloud:
+
+secrets:
+  nextcloud_admin_password:
+    file: ./nextcloud_admin_password.txt # put admin password to this file
+  nextcloud_admin_user:
+    file: ./nextcloud_admin_user.txt # put admin username to this file
+  postgres_db:
+    file: ./postgres_db.txt # put postgresql db name to this file
+  postgres_password:
+    file: ./postgres_password.txt # put postgresql password to this file
+  postgres_user:
+    file: ./postgres_user.txt # put postgresql username to this file
+```
+
+Currently, this is only supported for `NEXTCLOUD_ADMIN_PASSWORD`, `NEXTCLOUD_ADMIN_USER`, `MYSQL_DB`, `MYSQL_PASSWORD`, `MYSQL_USER`, `POSTGRES_DB`, `POSTGRES_PASSWORD`, `POSTGRES_USER`.
 
 # Make your Nextcloud available from the internet
 

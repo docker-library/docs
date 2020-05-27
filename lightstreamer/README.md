@@ -14,6 +14,14 @@ WARNING:
 
 -->
 
+# Quick reference
+
+-	**Maintained by**:  
+	[the Lightstreamer Server Development Team](https://github.com/Lightstreamer/Docker)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`6.0.3`, `6.0`](https://github.com/Lightstreamer/Docker/blob/eeab1ae534273b1b05c973e577a1f3eec8d58427/6.0/Dockerfile)
@@ -23,16 +31,10 @@ WARNING:
 -	[`7.1.0-jdk8-openjdk`, `7.1-jdk8-openjdk`, `7-jdk8-openjdk`, `7.1.0-jdk8`, `7.1-jdk8`, `7-jdk8`](https://github.com/Lightstreamer/Docker/blob/45001c033ed1837a9374a9285b7d2e8acfee6dca/7.1/jdk8/Dockerfile)
 -	[`7.1.0-jdk11-openjdk`, `7.1-jdk11-openjdk`, `7-jdk11-openjdk`, `7.1.0-jdk11`, `7.1-jdk11`, `7-jdk11`, `7.1.0`, `7.1`, `7`, `latest`](https://github.com/Lightstreamer/Docker/blob/45001c033ed1837a9374a9285b7d2e8acfee6dca/7.1/jdk11/Dockerfile)
 
-# Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+# Quick reference (cont.)
 
 -	**Where to file issues**:  
 	[https://github.com/Lightstreamer/Docker/issues](https://github.com/Lightstreamer/Docker/issues)
-
--	**Maintained by**:  
-	[the Lightstreamer Server Development Team](https://github.com/Lightstreamer/Docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/lightstreamer/), [`arm64v8`](https://hub.docker.com/r/arm64v8/lightstreamer/)

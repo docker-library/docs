@@ -14,23 +14,25 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`19.03.6`, `19.03`, `19`, `stable`, `test`, `latest`](https://github.com/docker-library/docker/blob/3dc42d46491d14b9b87f553bd46a45954ecec8ea/19.03/Dockerfile)
--	[`19.03.6-dind`, `19.03-dind`, `19-dind`, `stable-dind`, `test-dind`, `dind`](https://github.com/docker-library/docker/blob/4d5e4e2fcd2c5279a747e9ac221fb2442da53dec/19.03/dind/Dockerfile)
--	[`19.03.6-dind-rootless`, `19.03-dind-rootless`, `19-dind-rootless`, `stable-dind-rootless`, `test-dind-rootless`, `dind-rootless`](https://github.com/docker-library/docker/blob/cd0099524944dd1ad368421ec042e0ec9ef53a47/19.03/dind-rootless/Dockerfile)
--	[`19.03.6-git`, `19.03-git`, `19-git`, `stable-git`, `test-git`, `git`](https://github.com/docker-library/docker/blob/7a67842e7ff12c1426ae6a67ac1b7a701b51f3df/19.03/git/Dockerfile)
-
 # Quick reference
+
+-	**Maintained by**:  
+	[Tianon (of the Docker Project)](https://github.com/docker-library/docker)
 
 -	**Where to get help**:  
 	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
+# Supported tags and respective `Dockerfile` links
+
+-	[`19.03.9`, `19.03`, `19`, `stable`, `test`, `latest`](https://github.com/docker-library/docker/blob/cdd23554f9417055ca2a18805fa9ad5716209934/19.03/Dockerfile)
+-	[`19.03.9-dind`, `19.03-dind`, `19-dind`, `stable-dind`, `test-dind`, `dind`](https://github.com/docker-library/docker/blob/a73d96e731e2dd5d6822c99a9af4dcbfbbedb2be/19.03/dind/Dockerfile)
+-	[`19.03.9-dind-rootless`, `19.03-dind-rootless`, `19-dind-rootless`, `stable-dind-rootless`, `test-dind-rootless`, `dind-rootless`](https://github.com/docker-library/docker/blob/25c81c65fe4e971ff75e67df38e8b9970b523f6e/19.03/dind-rootless/Dockerfile)
+-	[`19.03.9-git`, `19.03-git`, `19-git`, `stable-git`, `test-git`, `git`](https://github.com/docker-library/docker/blob/7a67842e7ff12c1426ae6a67ac1b7a701b51f3df/19.03/git/Dockerfile)
+
+# Quick reference (cont.)
+
 -	**Where to file issues**:  
 	[https://github.com/docker-library/docker/issues](https://github.com/docker-library/docker/issues)
-
--	**Maintained by**:  
-	[Tianon (of the Docker Project)](https://github.com/docker-library/docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/docker/), [`arm32v6`](https://hub.docker.com/r/arm32v6/docker/), [`arm32v7`](https://hub.docker.com/r/arm32v7/docker/), [`arm64v8`](https://hub.docker.com/r/arm64v8/docker/)

@@ -14,24 +14,26 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`10.5.1-bionic`, `10.5-bionic`, `beta-bionic`, `10.5.1`, `10.5`, `beta`](https://github.com/docker-library/mariadb/blob/9372a0dfecdce6bb860de28aa93cf6f1bacd392e/10.5/Dockerfile)
--	[`10.4.12-bionic`, `10.4-bionic`, `10-bionic`, `bionic`, `10.4.12`, `10.4`, `10`, `latest`](https://github.com/docker-library/mariadb/blob/c895fa579e99a69667e14b50c4b9bdb85d4854fe/10.4/Dockerfile)
--	[`10.3.22-bionic`, `10.3-bionic`, `10.3.22`, `10.3`](https://github.com/docker-library/mariadb/blob/60f6c4349a91904fd94c4dc5bf534bd318000c35/10.3/Dockerfile)
--	[`10.2.31-bionic`, `10.2-bionic`, `10.2.31`, `10.2`](https://github.com/docker-library/mariadb/blob/595e0db2db12e2505a35362d9a8138448ebc9ec1/10.2/Dockerfile)
--	[`10.1.44-bionic`, `10.1-bionic`, `10.1.44`, `10.1`](https://github.com/docker-library/mariadb/blob/4c69dec03b0b771563c8474ab358b7812edbfc88/10.1/Dockerfile)
-
 # Quick reference
+
+-	**Maintained by**:  
+	[the Docker Community](https://github.com/docker-library/mariadb)
 
 -	**Where to get help**:  
 	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
+# Supported tags and respective `Dockerfile` links
+
+-	[`10.5.3-bionic`, `10.5-bionic`, `rc-bionic`, `10.5.3`, `10.5`, `rc`](https://github.com/docker-library/mariadb/blob/f2ba44905eb3aed53fca34536f05f109055d9bc2/10.5/Dockerfile)
+-	[`10.4.13-bionic`, `10.4-bionic`, `10-bionic`, `bionic`, `10.4.13`, `10.4`, `10`, `latest`](https://github.com/docker-library/mariadb/blob/f2ba44905eb3aed53fca34536f05f109055d9bc2/10.4/Dockerfile)
+-	[`10.3.23-bionic`, `10.3-bionic`, `10.3.23`, `10.3`](https://github.com/docker-library/mariadb/blob/f2ba44905eb3aed53fca34536f05f109055d9bc2/10.3/Dockerfile)
+-	[`10.2.32-bionic`, `10.2-bionic`, `10.2.32`, `10.2`](https://github.com/docker-library/mariadb/blob/f2ba44905eb3aed53fca34536f05f109055d9bc2/10.2/Dockerfile)
+-	[`10.1.45-bionic`, `10.1-bionic`, `10.1.45`, `10.1`](https://github.com/docker-library/mariadb/blob/f2ba44905eb3aed53fca34536f05f109055d9bc2/10.1/Dockerfile)
+
+# Quick reference (cont.)
+
 -	**Where to file issues**:  
 	[https://github.com/docker-library/mariadb/issues](https://github.com/docker-library/mariadb/issues)
-
--	**Maintained by**:  
-	[the Docker Community](https://github.com/docker-library/mariadb)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/mariadb/), [`arm64v8`](https://hub.docker.com/r/arm64v8/mariadb/), [`ppc64le`](https://hub.docker.com/r/ppc64le/mariadb/)

@@ -14,21 +14,23 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`latest`, `2019.03`](https://github.com/perl6/docker/blob/e26d1937190790a6b6110ba8220b98fe3bb97c04/Dockerfile)
--	[`alpine`, `2019.03-alpine`](https://github.com/perl6/docker/blob/d2175a31e85d52cfad674814422ecf9779ea08e1/alpine/Dockerfile)
-
 # Quick reference
+
+-	**Maintained by**:  
+	[the Perl 6 Community](https://github.com/perl6/docker)
 
 -	**Where to get help**:  
 	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
+# Supported tags and respective `Dockerfile` links
+
+-	[`latest`, `2020.01`](https://github.com/raku/docker/blob/d893fa621e755045c80fb4d0615c2810812d98f7/Dockerfile)
+-	[`alpine`, `2020.01-alpine`](https://github.com/raku/docker/blob/d893fa621e755045c80fb4d0615c2810812d98f7/alpine/Dockerfile)
+
+# Quick reference (cont.)
+
 -	**Where to file issues**:  
 	[https://github.com/perl6/docker/issues](https://github.com/perl6/docker/issues)
-
--	**Maintained by**:  
-	[the Perl 6 Community](https://github.com/perl6/docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/rakudo-star/), [`arm64v8`](https://hub.docker.com/r/arm64v8/rakudo-star/)
@@ -46,41 +48,39 @@ WARNING:
 
 # What is Rakudo Star?
 
-Rakudo Star is a Perl 6 distribution designed for use by early adopters of the language. It includes a virtual machine (the JVM or MoarVM), the Rakudo Perl 6 compiler, and a suite of modules that users may find useful. This image includes the MoarVM backend for the compiler.
+Rakudo Star is a Raku (formerly known as Perl 6) distribution designed for use by early adopters of the language. It includes a virtual machine (the JVM or MoarVM), the Rakudo compiler, and a suite of modules that users may find useful. This image includes the MoarVM backend for the compiler.
 
 Project homepage: [http://rakudo.org](http://rakudo.org)
 
 GitHub repository: [https://github.com/rakudo/star](https://github.com/rakudo/star)
 
-The Dockerfile responsible: [http://github.com/perl6/docker/tree/master/Dockerfile](http://github.com/perl6/docker/tree/master/Dockerfile)
+The Dockerfile responsible: [http://github.com/raku/docker/tree/master/Dockerfile](http://github.com/raku/docker/tree/master/Dockerfile)
 
-Perl 6 Language Specification: [http://design.perl6.org/](http://design.perl6.org/)
-
-Perl 6 Language Documentation: [http://doc.perl6.org/](http://doc.perl6.org/)
+Raku Language Documentation: [http://docs.raku.org/](http://docs.raku.org/)
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/48ac05ac94903844bfbdea1fb361676a904f9d85/rakudo-star/logo.png)
 
 # How to use this image
 
-Simply running a container with the image will launch a Perl 6 REPL:
+Simply running a container with the image will launch a Raku REPL:
 
 ```console
 $ docker run -it rakudo-star
-> say 'Hello, Perl!'
-Hello, Perl!
+> say 'Hello, Raku!'
+Hello, Raku!
 ```
 
-You can also provide perl6 command line switches to `docker run`:
+You can also provide raku command line switches to `docker run`:
 
 ```console
-$ docker run -it rakudo-star -e 'say "Hello!"'
+$ docker run -it rakudo-star raku -e 'say "Hello!"'
 ```
 
 # Contributing/Getting Help
 
-Many Perl 6 developers are present on #perl6 on Freenode.
+Many Raku developers are present on #raku on Freenode.
 
-Issues for Rakudo are tracked in RT: [https://rt.perl.org/](https://rt.perl.org/)
+Issues for Rakudo are tracked in [on GitHub](https://github.com/rakudo/rakudo/issues/).
 
 # Image Variants
 

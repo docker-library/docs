@@ -1,8 +1,10 @@
 # What is ArangoDB?
 
-ArangoDB is a multi-model, open-source database with flexible data models for documents, graphs, and key-values. Build high performance applications using a convenient SQL-like query language or JavaScript extensions. Use ACID transactions if you require them. Scale horizontally and vertically with a few mouse clicks.
+ArangoDB is a multi-model, open-source database with flexible data models for documents, graphs, and key-values. Build high performance applications using a convenient SQL-like query language or JavaScript extensions. Use ACID transactions if you require them. Scale horizontally with a few mouse clicks.
 
-The supported data models can be mixed in queries and allow ArangoDB to be the aggregation point for the data request you have in mind.
+ArangoDB runs everywhere: On-prem, in the cloud and also on [ArangoDBs Cloud Service Oasis](https://cloud.arangodb.com/home).
+
+The supported data models can be mixed in queries and allow ArangoDB to be the aggregation point for your data.
 
 > [arangodb.com](https://arangodb.com)
 
@@ -123,6 +125,29 @@ unix> docker exec -it jolly_joker arangosh
 ```
 
 See more information about [Configuration](https://www.arangodb.com/docs/stable/administration-configuration.html)
+
+### Limiting resource utilization
+
+`arangod` checks the following environment variables, which can be used to restrict how much memory and how many CPU cores it should use:
+
+-	`ARANGODB_OVERRIDE_DETECTED_TOTAL_MEMORY` *(introduced in v3.6.3)*
+
+	This variable can be used to override the automatic detection of the total amount of RAM present on the system. One can specify a decimal number (in bytes). Furthermore, if `G` or `g` is appended, the value is multiplied by `2^30`. If `M` or `m` is appended, the value is multiplied by `2^20`. If `K` or `k` is appended, the value is multiplied by `2^10`. That is, `64G` means 64 gigabytes.
+
+	The total amount of RAM detected is logged as an INFO message at server start. If the variable is set, the overridden value is shown. Various default sizes are calculated based on this value (e.g. RocksDB buffer cache size).
+
+	Setting this option can in particular be useful in two cases:
+
+	1.	If `arangod` is running in a container and its cgroup has a RAM limitation, then one should specify this limitation in this environment variable, since it is currently not automatically detected.
+	2.	If `arangod` is running alongside other services on the same machine and thus sharing the RAM with them, one should limit the amount of memory using this environment variable.
+
+-	`ARANGODB_OVERRIDE_DETECTED_NUMBER_OF_CORES` *(introduced in v3.7.1)*
+
+	This variable can be used to override the automatic detection of the number of CPU cores present on the system.
+
+	The number of CPU cores detected is logged as an INFO message at server start. If the variable is set, the overridden value is shown. Various default values for threading are calculated based on this value.
+
+	Setting this option is useful if `arangod` is running in a container or alongside other services on the same machine and shall not use all available CPUs.
 
 ## Persistent Data
 

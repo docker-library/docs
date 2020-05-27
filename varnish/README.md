@@ -14,21 +14,23 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`6.3`, `6.3.2-1`, `6.3.2`, `6`, `latest`, `fresh`](https://github.com/varnish/docker-varnish/blob/a177fa702cf191997094aec9b20951c2012bdc17/fresh/debian/Dockerfile)
--	[`6.0`, `6.0.6-1`, `6.0.6`, `stable`](https://github.com/varnish/docker-varnish/blob/a177fa702cf191997094aec9b20951c2012bdc17/stable/debian/Dockerfile)
-
 # Quick reference
+
+-	**Maintained by**:  
+	[the Varnish Docker Community](https://github.com/varnish/docker-varnish)
 
 -	**Where to get help**:  
 	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
+# Supported tags and respective `Dockerfile` links
+
+-	[`6.0`, `6.0.6-1`, `6.0.6`, `stable`](https://github.com/varnish/docker-varnish/blob/d32d16eb38cd161f0e626880cbd334da7d301027/stable/debian/Dockerfile)
+-	[`6.4`, `6.4.0-1`, `6.4.0`, `6`, `latest`, `fresh`](https://github.com/varnish/docker-varnish/blob/d32d16eb38cd161f0e626880cbd334da7d301027/fresh/debian/Dockerfile)
+
+# Quick reference (cont.)
+
 -	**Where to file issues**:  
 	[https://github.com/varnish/docker-varnish/issues](https://github.com/varnish/docker-varnish/issues)
-
--	**Maintained by**:  
-	[the Varnish Docker Community](https://github.com/varnish/docker-varnish)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/varnish/)
@@ -69,7 +71,7 @@ backend default {
 Then run:
 
 ```console
-$ docker run --name my-running-varnish -v /path/to/default.vcl:/etc/varnish/default.vcl:ro --tmpfs /usr/local/var/varnish:exec -d varnish
+$ docker run --name my-running-varnish -v /path/to/default.vcl:/etc/varnish/default.vcl:ro --tmpfs /var/lib/varnish:exec -d varnish
 ```
 
 Alternatively, a simple `Dockerfile` can be used to generate a new image that includes the necessary `default.vcl` (which is a much cleaner solution than the bind mount above):
@@ -89,7 +91,7 @@ $ docker run --name my-running-varnish --tmpfs /var/lib/varnish:exec -d my-varni
 ### Exposing the port
 
 ```console
-$ docker run --name my-running-varnish --tmpfs /usr/local/var/varnish:exec -d -p 8080:80 my-varnish
++$ docker run --name my-running-varnish --tmpfs /var/lib/varnish:exec -d -p 8080:80 my-varnish
 ```
 
 Then you can hit `http://localhost:8080` or `http://host-ip:8080` in your browser.

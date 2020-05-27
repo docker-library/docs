@@ -14,21 +14,23 @@ WARNING:
 
 -->
 
+# Quick reference
+
+-	**Maintained by**:  
+	[Sentry](https://github.com/getsentry/docker-sentry)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`9.1.2`, `9.1`, `9`, `latest`](https://github.com/getsentry/docker-sentry/blob/09a7761e841eee7fab758526b14d46ae56134952/9.1/Dockerfile)
 -	[`9.1.2-onbuild`, `9.1-onbuild`, `9-onbuild`, `onbuild`](https://github.com/getsentry/docker-sentry/blob/f58f91fe5dc31bfe77af277dae7002a5542326a9/9.1/onbuild/Dockerfile)
 
-# Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+# Quick reference (cont.)
 
 -	**Where to file issues**:  
 	[https://github.com/getsentry/docker-sentry/issues](https://github.com/getsentry/docker-sentry/issues)
-
--	**Maintained by**:  
-	[Sentry](https://github.com/getsentry/docker-sentry)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/sentry/)

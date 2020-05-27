@@ -14,25 +14,27 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`2019.12-apache`, `apache`, `stable-apache`, `2019.12`, `latest`, `stable`](https://github.com/friendica/docker/blob/611f5cf09129fa23ee507ac89f32cfde3c80d557/2019.12/apache/Dockerfile)
--	[`2019.12-fpm`, `fpm`, `stable-fpm`](https://github.com/friendica/docker/blob/611f5cf09129fa23ee507ac89f32cfde3c80d557/2019.12/fpm/Dockerfile)
--	[`2019.12-fpm-alpine`, `fpm-alpine`, `stable-fpm-alpine`](https://github.com/friendica/docker/blob/611f5cf09129fa23ee507ac89f32cfde3c80d557/2019.12/fpm-alpine/Dockerfile)
--	[`2020.03-dev-apache`, `dev-apache`, `2020.03-dev`, `dev`](https://github.com/friendica/docker/blob/611f5cf09129fa23ee507ac89f32cfde3c80d557/2020.03-dev/apache/Dockerfile)
--	[`2020.03-dev-fpm`, `dev-fpm`](https://github.com/friendica/docker/blob/611f5cf09129fa23ee507ac89f32cfde3c80d557/2020.03-dev/fpm/Dockerfile)
--	[`2020.03-dev-fpm-alpine`, `dev-fpm-alpine`](https://github.com/friendica/docker/blob/611f5cf09129fa23ee507ac89f32cfde3c80d557/2020.03-dev/fpm-alpine/Dockerfile)
-
 # Quick reference
+
+-	**Maintained by**:  
+	[nupplaPhil](https://github.com/friendica/docker)
 
 -	**Where to get help**:  
 	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
+# Supported tags and respective `Dockerfile` links
+
+-	[`2020.03-apache`, `apache`, `stable-apache`, `2020.03`, `latest`, `stable`](https://github.com/friendica/docker/blob/ad99a985409c5ef4eefb5903b1ec81096dc8f613/2020.03/apache/Dockerfile)
+-	[`2020.03-fpm`, `fpm`, `stable-fpm`](https://github.com/friendica/docker/blob/ad99a985409c5ef4eefb5903b1ec81096dc8f613/2020.03/fpm/Dockerfile)
+-	[`2020.03-fpm-alpine`, `fpm-alpine`, `stable-fpm-alpine`](https://github.com/friendica/docker/blob/ad99a985409c5ef4eefb5903b1ec81096dc8f613/2020.03/fpm-alpine/Dockerfile)
+-	[`2020.06-dev-apache`, `dev-apache`, `2020.06-dev`, `dev`](https://github.com/friendica/docker/blob/ad99a985409c5ef4eefb5903b1ec81096dc8f613/2020.06-dev/apache/Dockerfile)
+-	[`2020.06-dev-fpm`, `dev-fpm`](https://github.com/friendica/docker/blob/ad99a985409c5ef4eefb5903b1ec81096dc8f613/2020.06-dev/fpm/Dockerfile)
+-	[`2020.06-dev-fpm-alpine`, `dev-fpm-alpine`](https://github.com/friendica/docker/blob/ad99a985409c5ef4eefb5903b1ec81096dc8f613/2020.06-dev/fpm-alpine/Dockerfile)
+
+# Quick reference (cont.)
+
 -	**Where to file issues**:  
 	[https://github.com/friendica/docker/issues](https://github.com/friendica/docker/issues)
-
--	**Maintained by**:  
-	[nupplaPhil](https://github.com/friendica/docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/friendica/), [`arm32v5`](https://hub.docker.com/r/arm32v5/friendica/), [`arm32v6`](https://hub.docker.com/r/arm32v6/friendica/), [`arm32v7`](https://hub.docker.com/r/arm32v7/friendica/), [`arm64v8`](https://hub.docker.com/r/arm64v8/friendica/), [`i386`](https://hub.docker.com/r/i386/friendica/), [`ppc64le`](https://hub.docker.com/r/ppc64le/friendica/)
@@ -141,8 +143,8 @@ You have to set a valid SMTP-MTA for the `SMTP` environment variable to enable m
 
 The following environment variables are possible for the SMTP examples.
 
--	`SITENAME` The name of the Friendica node. (**required**)
 -	`SMTP` Address of the SMTP Mail-Gateway. (**required**)
+-	`SMTP_DOMAIN` The sender domain. (**required** - e.g. `friendica.local`)
 -	`SMTP_FROM` Sender user-part of the address. (Default: `no-reply` - e.g. no-reply@friendica.local)
 -	`SMTP_TLS` Use TLS for connecting the SMTP Mail-Gateway. (Default: empty)
 -	`SMTP_STARTTLS` Use STARTTLS for connecting the SMTP Mail-Gateway. (Default: empty)
@@ -236,7 +238,6 @@ services:
       - MYSQL_PASSWORD=
       - MYSQL_DATABASE=friendica
       - FRIENDICA_ADMIN_MAIL=root@friendica.local      
-    hostname: friendica.local
     depends_on:
       - db
 
@@ -286,7 +287,6 @@ services:
       - MYSQL_PASSWORD=
       - MYSQL_DATABASE=friendica
       - FRIENDICA_ADMIN_MAIL=root@friendica.local
-    hostname: friendica.local
     networks:
       - proxy-tier
       - default 

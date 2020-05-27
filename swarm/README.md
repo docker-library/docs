@@ -14,20 +14,22 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`1.2.9`, `latest`](https://github.com/docker/swarm-library-image/blob/a2a08d733833327354b5d3336ffbd19e4f369a2d/Dockerfile)
-
 # Quick reference
+
+-	**Maintained by**:  
+	[Docker, Inc.](https://github.com/docker/swarm-library-image)
 
 -	**Where to get help**:  
 	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
+# Supported tags and respective `Dockerfile` links
+
+-	[`1.2.9`, `latest`](https://github.com/docker/swarm-library-image/blob/a2a08d733833327354b5d3336ffbd19e4f369a2d/Dockerfile)
+
+# Quick reference (cont.)
+
 -	**Where to file issues**:  
 	[https://github.com/docker/swarm-library-image/issues](https://github.com/docker/swarm-library-image/issues)
-
--	**Maintained by**:  
-	[Docker, Inc.](https://github.com/docker/swarm-library-image)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/swarm/)

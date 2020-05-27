@@ -14,11 +14,20 @@ WARNING:
 
 -->
 
+# Quick reference
+
+-	**Maintained by**:  
+	[The CentOS Project](https://github.com/CentOS/sig-cloud-instance-images)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`latest`, `centos8`, `8`, `centos8.1.1911`, `8.1.1911`](https://github.com/CentOS/sig-cloud-instance-images/blob/52cc14a6dd2efc45265417a4690964d32cf13857/docker/Dockerfile)
--	[`centos7`, `7`](https://github.com/CentOS/sig-cloud-instance-images/blob/d9560a37644faaeac50162582f82a5ee920dc37e/docker/Dockerfile)
+-	[`centos7`, `7`](https://github.com/CentOS/sig-cloud-instance-images/blob/b521221b5c8ac3ac88698e77941a2414ce6e778d/docker/Dockerfile)
 -	[`centos6`, `6`](https://github.com/CentOS/sig-cloud-instance-images/blob/23b05f6a35520ebf338e4df918e4952830da068b/docker/Dockerfile)
+-	[`centos7.8.2003`, `7.8.2003`](https://github.com/CentOS/sig-cloud-instance-images/blob/216a920c467977bbd0f456d3bc381100a88b3768/docker/Dockerfile)
 -	[`centos7.7.1908`, `7.7.1908`](https://github.com/CentOS/sig-cloud-instance-images/blob/dcf7932cbda6dd9865d50bfe969927e3e1f0c671/docker/Dockerfile)
 -	[`centos7.6.1810`, `7.6.1810`](https://github.com/CentOS/sig-cloud-instance-images/blob/7c2e214edced0b2f22e663ab4175a80fc93acaa9/docker/Dockerfile)
 -	[`centos7.5.1804`, `7.5.1804`](https://github.com/CentOS/sig-cloud-instance-images/blob/0cea32a0018ac2d874960d9378a9745bf92affd2/docker/Dockerfile)
@@ -33,16 +42,10 @@ WARNING:
 -	[`centos6.7`, `6.7`](https://github.com/CentOS/sig-cloud-instance-images/blob/d0b72df83f49da844f88aabebe3826372f675370/docker/Dockerfile)
 -	[`centos6.6`, `6.6`](https://github.com/CentOS/sig-cloud-instance-images/blob/8911843d9a6cc71aadd81e491f94618aded94f30/docker/Dockerfile)
 
-# Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+# Quick reference (cont.)
 
 -	**Where to file issues**:  
 	[https://bugs.centos.org](https://bugs.centos.org) or [GitHub](https://github.com/CentOS/sig-cloud-instance-images/issues)
-
--	**Maintained by**:  
-	[The CentOS Project](https://github.com/CentOS/sig-cloud-instance-images)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/centos/), [`arm32v7`](https://hub.docker.com/r/arm32v7/centos/), [`arm64v8`](https://hub.docker.com/r/arm64v8/centos/), [`i386`](https://hub.docker.com/r/i386/centos/), [`ppc64le`](https://hub.docker.com/r/ppc64le/centos/)

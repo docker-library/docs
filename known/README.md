@@ -14,20 +14,22 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`0.9.9`, `0.9`, `0`, `latest`](https://github.com/idno/Known-Docker/blob/3454a52b4ad48e22b95e706dba9ff953cf84c2b1/Dockerfile)
-
 # Quick reference
+
+-	**Maintained by**:  
+	[Known](https://github.com/idno/Known-Docker)
 
 -	**Where to get help**:  
 	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
+# Supported tags and respective `Dockerfile` links
+
+-	[`0.9.9`, `0.9`, `0`, `latest`](https://github.com/idno/Known-Docker/blob/3454a52b4ad48e22b95e706dba9ff953cf84c2b1/Dockerfile)
+
+# Quick reference (cont.)
+
 -	**Where to file issues**:  
 	[https://github.com/idno/Known-Docker/issues](https://github.com/idno/Known-Docker/issues)
-
--	**Maintained by**:  
-	[Known](https://github.com/idno/Known-Docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/known/), [`arm64v8`](https://hub.docker.com/r/arm64v8/known/)

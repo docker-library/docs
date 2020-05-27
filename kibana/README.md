@@ -14,21 +14,23 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`7.6.0`](https://github.com/docker-library/kibana/blob/bd52317f514e1f50d5e8aed9dd581fad7e0648dc/7/Dockerfile)
--	[`6.8.6`](https://github.com/docker-library/kibana/blob/581e38e19e48fcae9ef2bf58afb20ffebe9da082/6/Dockerfile)
-
 # Quick reference
+
+-	**Maintained by**:  
+	[the Elastic Team](https://github.com/elastic/kibana)
 
 -	**Where to get help**:  
 	the [Kibana Discuss Forums](https://discuss.elastic.co/c/kibana), the [Elastic community](https://www.elastic.co/community)
 
+# Supported tags and respective `Dockerfile` links
+
+-	[`7.7.0`](https://github.com/docker-library/kibana/blob/f3512f90b2c0be7c3547095a0bd1e607e18e9af3/7/Dockerfile)
+-	[`6.8.9`](https://github.com/docker-library/kibana/blob/f3512f90b2c0be7c3547095a0bd1e607e18e9af3/6/Dockerfile)
+
+# Quick reference (cont.)
+
 -	**Where to file issues**:  
 	For issues with the Kibana Docker image or Kibana: https://github.com/elastic/kibana/issues
-
--	**Maintained by**:  
-	[the Elastic Team](https://github.com/elastic/kibana)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/kibana/)

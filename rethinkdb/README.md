@@ -14,20 +14,22 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`2.4.0`, `2.4`, `2`, `latest`](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/54d3eebf6409b196264c193e0cbad027061739b3/bionic/2.4.0/Dockerfile)
-
 # Quick reference
+
+-	**Maintained by**:  
+	[RethinkDB](https://github.com/rethinkdb/rethinkdb-dockerfiles)
 
 -	**Where to get help**:  
 	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
+# Supported tags and respective `Dockerfile` links
+
+-	[`2.4.0`, `2.4`, `2`, `latest`](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/54d3eebf6409b196264c193e0cbad027061739b3/bionic/2.4.0/Dockerfile)
+
+# Quick reference (cont.)
+
 -	**Where to file issues**:  
 	[https://github.com/rethinkdb/rethinkdb-dockerfiles/issues](https://github.com/rethinkdb/rethinkdb-dockerfiles/issues)
-
--	**Maintained by**:  
-	[RethinkDB](https://github.com/rethinkdb/rethinkdb-dockerfiles)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/rethinkdb/)
@@ -94,7 +96,7 @@ See the [official docs](http://www.rethinkdb.com/docs/) for infomation on using 
 
 # License
 
-View [license information](http://www.gnu.org/licenses/agpl-3.0.html) for the software contained in this image.
+View [license information](https://raw.githubusercontent.com/rethinkdb/rethinkdb/next/LICENSE) for the software contained in this image.
 
 As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 

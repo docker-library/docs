@@ -22,7 +22,7 @@ If you'd like to be able to access the instance from the host without the contai
 $ docker run -d --name some-ghost -e url=http://localhost:3001 -p 3001:2368 %%IMAGE%%
 ```
 
-Then, access it via `http://localhost:3001` or `http://host-ip:3001` in a browser.
+If all goes well, you'll be able to access your new site on `http://localhost:3001` and `http://localhost:3001/ghost` to access Ghost Admin (or `http://host-ip:3001` and `http://host-ip:3001/ghost`, respectively).
 
 ### Upgrading Ghost
 
@@ -60,7 +60,7 @@ This Docker image for Ghost uses SQLite. There is nothing special to configure.
 
 ## Configuration
 
-All Ghost configuration parameters (such as `url`) can be specified via environment variables. See [the Ghost documentation](https://docs.ghost.org/docs/config#section-running-ghost-with-config-env-variables) for details about what configuration is allowed and how to convert a nested configuration key into the appropriate environment variable name:
+All Ghost configuration parameters (such as `url`) can be specified via environment variables. See [the Ghost documentation](https://ghost.org/docs/concepts/config/#running-ghost-with-config-env-variables) for details about what configuration is allowed and how to convert a nested configuration key into the appropriate environment variable name:
 
 ```console
 $ docker run -d --name some-ghost -e url=http://some-ghost.example.com %%IMAGE%%

@@ -14,11 +14,19 @@ WARNING:
 
 -->
 
+# Quick reference
+
+-	**Maintained by**:  
+	[the Docker Community](https://github.com/c0b/docker-elixir), [with Elixir's support](https://github.com/docker-library/official-images/pull/1398#issuecomment-180484549)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
--	[`1.10.1`, `1.10`, `latest`](https://github.com/c0b/docker-elixir/blob/3c7f7d55bf28a4f4689aac3d2e01bfa41173076d/1.10/Dockerfile)
--	[`1.10.1-slim`, `1.10-slim`, `slim`](https://github.com/c0b/docker-elixir/blob/3c7f7d55bf28a4f4689aac3d2e01bfa41173076d/1.10/slim/Dockerfile)
--	[`1.10.1-alpine`, `1.10-alpine`, `alpine`](https://github.com/c0b/docker-elixir/blob/3c7f7d55bf28a4f4689aac3d2e01bfa41173076d/1.10/alpine/Dockerfile)
+-	[`1.10.3`, `1.10`, `latest`](https://github.com/c0b/docker-elixir/blob/fcf3a05b730e55b805b85aa571048e72dc82fe1e/1.10/Dockerfile)
+-	[`1.10.3-slim`, `1.10-slim`, `slim`](https://github.com/c0b/docker-elixir/blob/fcf3a05b730e55b805b85aa571048e72dc82fe1e/1.10/slim/Dockerfile)
+-	[`1.10.3-alpine`, `1.10-alpine`, `alpine`](https://github.com/c0b/docker-elixir/blob/fcf3a05b730e55b805b85aa571048e72dc82fe1e/1.10/alpine/Dockerfile)
 -	[`1.9.4`, `1.9`](https://github.com/c0b/docker-elixir/blob/0d9f47458468a8bf1407374731cbec077ab6f895/1.9/Dockerfile)
 -	[`1.9.4-slim`, `1.9-slim`](https://github.com/c0b/docker-elixir/blob/0d9f47458468a8bf1407374731cbec077ab6f895/1.9/slim/Dockerfile)
 -	[`1.9.4-alpine`, `1.9-alpine`](https://github.com/c0b/docker-elixir/blob/0d9f47458468a8bf1407374731cbec077ab6f895/1.9/alpine/Dockerfile)
@@ -41,16 +49,10 @@ WARNING:
 -	[`1.4.5`, `1.4`](https://github.com/c0b/docker-elixir/blob/8f1888ae05506b9ad12e1b97f084a15e7588f442/1.4/Dockerfile)
 -	[`1.4.5-slim`, `1.4-slim`](https://github.com/c0b/docker-elixir/blob/8f1888ae05506b9ad12e1b97f084a15e7588f442/1.4/slim/Dockerfile)
 
-# Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+# Quick reference (cont.)
 
 -	**Where to file issues**:  
 	[https://github.com/c0b/docker-elixir/issues](https://github.com/c0b/docker-elixir/issues)
-
--	**Maintained by**:  
-	[the Docker Community](https://github.com/c0b/docker-elixir), [with Elixir's support](https://github.com/docker-library/official-images/pull/1398#issuecomment-180484549)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/elixir/), [`arm32v7`](https://hub.docker.com/r/arm32v7/elixir/), [`arm64v8`](https://hub.docker.com/r/arm64v8/elixir/), [`i386`](https://hub.docker.com/r/i386/elixir/), [`ppc64le`](https://hub.docker.com/r/ppc64le/elixir/), [`s390x`](https://hub.docker.com/r/s390x/elixir/)

@@ -14,25 +14,27 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`3.0.0-jdk8`, `3.0-jdk8`, `3.0.0-jdk`, `3.0-jdk`, `jdk8`, `jdk`](https://github.com/groovy/docker-groovy/blob/53ad8b1f1e17b59c9c928a61c642edae96ae344f/jdk8/Dockerfile)
--	[`3.0.0-jre8`, `3.0-jre8`, `3.0.0-jre`, `3.0-jre`, `3.0.0`, `3.0`, `jre8`, `jre`, `latest`](https://github.com/groovy/docker-groovy/blob/53ad8b1f1e17b59c9c928a61c642edae96ae344f/jre8/Dockerfile)
--	[`3.0.0-jdk11`, `3.0-jdk11`, `jdk11`](https://github.com/groovy/docker-groovy/blob/53ad8b1f1e17b59c9c928a61c642edae96ae344f/jdk11/Dockerfile)
--	[`3.0.0-jre11`, `3.0-jre11`, `jre11`](https://github.com/groovy/docker-groovy/blob/53ad8b1f1e17b59c9c928a61c642edae96ae344f/jre11/Dockerfile)
--	[`3.0.0-jdk13`, `3.0-jdk13`, `jdk13`](https://github.com/groovy/docker-groovy/blob/53ad8b1f1e17b59c9c928a61c642edae96ae344f/jdk13/Dockerfile)
--	[`3.0.0-jre13`, `3.0-jre13`, `jre13`](https://github.com/groovy/docker-groovy/blob/53ad8b1f1e17b59c9c928a61c642edae96ae344f/jre13/Dockerfile)
-
 # Quick reference
+
+-	**Maintained by**:  
+	[the Apache Groovy project](https://github.com/groovy/docker-groovy)
 
 -	**Where to get help**:  
 	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
+# Supported tags and respective `Dockerfile` links
+
+-	[`3.0.4-jdk8`, `3.0-jdk8`, `3.0.4-jdk`, `3.0-jdk`, `jdk8`, `jdk`](https://github.com/groovy/docker-groovy/blob/6301e19926a4668ac470e4ce9b850e4b9380bfc3/jdk8/Dockerfile)
+-	[`3.0.4-jre8`, `3.0-jre8`, `3.0.4-jre`, `3.0-jre`, `3.0.4`, `3.0`, `jre8`, `jre`, `latest`](https://github.com/groovy/docker-groovy/blob/6301e19926a4668ac470e4ce9b850e4b9380bfc3/jre8/Dockerfile)
+-	[`3.0.4-jdk11`, `3.0-jdk11`, `jdk11`](https://github.com/groovy/docker-groovy/blob/6301e19926a4668ac470e4ce9b850e4b9380bfc3/jdk11/Dockerfile)
+-	[`3.0.4-jre11`, `3.0-jre11`, `jre11`](https://github.com/groovy/docker-groovy/blob/6301e19926a4668ac470e4ce9b850e4b9380bfc3/jre11/Dockerfile)
+-	[`3.0.4-jdk14`, `3.0-jdk14`, `jdk14`](https://github.com/groovy/docker-groovy/blob/6301e19926a4668ac470e4ce9b850e4b9380bfc3/jdk14/Dockerfile)
+-	[`3.0.4-jre14`, `3.0-jre14`, `jre14`](https://github.com/groovy/docker-groovy/blob/6301e19926a4668ac470e4ce9b850e4b9380bfc3/jre14/Dockerfile)
+
+# Quick reference (cont.)
+
 -	**Where to file issues**:  
 	[https://github.com/groovy/docker-groovy/issues](https://github.com/groovy/docker-groovy/issues)
-
--	**Maintained by**:  
-	[the Apache Groovy project](https://github.com/groovy/docker-groovy)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/groovy/), [`arm32v7`](https://hub.docker.com/r/arm32v7/groovy/), [`arm64v8`](https://hub.docker.com/r/arm64v8/groovy/), [`ppc64le`](https://hub.docker.com/r/ppc64le/groovy/), [`s390x`](https://hub.docker.com/r/s390x/groovy/)

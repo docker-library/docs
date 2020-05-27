@@ -14,24 +14,27 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`latest`, `2.3.1`, `2.3`, `2`](https://github.com/apache/couchdb-docker/blob/3bcc626d30623789b4750d076f059bcd010c2a04/2.3.1/Dockerfile)
--	[`2.3.0`](https://github.com/apache/couchdb-docker/blob/3bcc626d30623789b4750d076f059bcd010c2a04/2.3.0/Dockerfile)
-
 # Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
-
--	**Where to file issues**:  
-	[https://github.com/apache/couchdb-docker/issues](https://github.com/apache/couchdb-docker/issues)
 
 -	**Maintained by**:  
 	[Apache CouchDB](https://github.com/apache/couchdb-docker)
 
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+# Supported tags and respective `Dockerfile` links
+
+-	[`latest`, `3.1.0`, `3.1`, `3`](https://github.com/apache/couchdb-docker/blob/01e1c16bb405c1174393c76a7ebc3792b0c5e2c9/3.1.0/Dockerfile)
+-	[`3.0.1`, `3.0`](https://github.com/apache/couchdb-docker/blob/01e1c16bb405c1174393c76a7ebc3792b0c5e2c9/3.0.1/Dockerfile)
+-	[`2.3.1`, `2.3`, `2`](https://github.com/apache/couchdb-docker/blob/01e1c16bb405c1174393c76a7ebc3792b0c5e2c9/2.3.1/Dockerfile)
+
+# Quick reference (cont.)
+
+-	**Where to file issues**:  
+	[https://github.com/apache/couchdb-docker/issues](https://github.com/apache/couchdb-docker/issues)
+
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/couchdb/)
+	[`amd64`](https://hub.docker.com/r/amd64/couchdb/), [`arm64v8`](https://hub.docker.com/r/arm64v8/couchdb/), [`ppc64le`](https://hub.docker.com/r/ppc64le/couchdb/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/couchdb/` directory](https://github.com/docker-library/repo-info/blob/master/repos/couchdb) ([history](https://github.com/docker-library/repo-info/commits/master/repos/couchdb))  

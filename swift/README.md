@@ -14,12 +14,24 @@ WARNING:
 
 -->
 
+# Quick reference
+
+-	**Maintained by**:  
+	[the Swift Community](https://github.com/apple/swift-docker)
+
+-	**Where to get help**:  
+	[Swift Docker Community Forums](https://forums.swift.org/c/server/docker)
+
 # Supported tags and respective `Dockerfile` links
 
--	[`5.1.4`, `5.1`, `5.1.4-bionic`, `5.1-bionic`, `bionic`, `latest`](https://github.com/apple/swift-docker/blob/4e4468b8ef9f08774272fde51e8e0c8cef49d540/5.1/ubuntu/18.04/Dockerfile)
--	[`5.1.4-xenial`, `5.1-xenial`, `xenial`](https://github.com/apple/swift-docker/blob/4e4468b8ef9f08774272fde51e8e0c8cef49d540/5.1/ubuntu/16.04/Dockerfile)
--	[`5.1.4-slim`, `5.1-slim`, `5.1.4-bionic-sim`, `5.1-bionic-slim`, `bionic-slim`, `slim`](https://github.com/apple/swift-docker/blob/4e4468b8ef9f08774272fde51e8e0c8cef49d540/5.1/ubuntu/18.04/slim/Dockerfile)
--	[`5.1.4-xenial-slim`, `5.1-xenial-slim`, `xenial-slim`](https://github.com/apple/swift-docker/blob/4e4468b8ef9f08774272fde51e8e0c8cef49d540/5.1/ubuntu/16.04/slim/Dockerfile)
+-	[`5.2.3`, `5.2`, `5.2.3-bionic`, `5.2-bionic`, `bionic`, `latest`](https://github.com/apple/swift-docker/blob/38f179345ace24236d6c09de84e77d91384014cd/5.2/ubuntu/18.04/Dockerfile)
+-	[`5.2.3-xenial`, `5.2-xenial`, `xenial`](https://github.com/apple/swift-docker/blob/38f179345ace24236d6c09de84e77d91384014cd/5.2/ubuntu/16.04/Dockerfile)
+-	[`5.2.3-slim`, `5.2-slim`, `5.2.3-bionic-slim`, `5.2-bionic-slim`, `bionic-slim`, `slim`](https://github.com/apple/swift-docker/blob/38f179345ace24236d6c09de84e77d91384014cd/5.2/ubuntu/18.04/slim/Dockerfile)
+-	[`5.2.3-xenial-slim`, `5.2-xenial-slim`, `xenial-slim`](https://github.com/apple/swift-docker/blob/38f179345ace24236d6c09de84e77d91384014cd/5.2/ubuntu/16.04/slim/Dockerfile)
+-	[`5.1.5`, `5.1`, `5.1.5-bionic`, `5.1-bionic`](https://github.com/apple/swift-docker/blob/05538e13a3015675d83e2553cdce5d1d67e17235/5.1/ubuntu/18.04/Dockerfile)
+-	[`5.1.5-xenial`, `5.1-xenial`](https://github.com/apple/swift-docker/blob/05538e13a3015675d83e2553cdce5d1d67e17235/5.1/ubuntu/16.04/Dockerfile)
+-	[`5.1.5-slim`, `5.1-slim`, `5.1.5-bionic-sim`, `5.1-bionic-slim`](https://github.com/apple/swift-docker/blob/05538e13a3015675d83e2553cdce5d1d67e17235/5.1/ubuntu/18.04/slim/Dockerfile)
+-	[`5.1.5-xenial-slim`, `5.1-xenial-slim`](https://github.com/apple/swift-docker/blob/05538e13a3015675d83e2553cdce5d1d67e17235/5.1/ubuntu/16.04/slim/Dockerfile)
 -	[`5.0.3`, `5.0`, `5.0.3-bionic`, `5.0-bionic`](https://github.com/apple/swift-docker/blob/78d0a2dde09af579d06e2114a101fd90b01fbfb0/5.0/ubuntu/18.04/Dockerfile)
 -	[`5.0.3-xenial`, `5.0-xenial`](https://github.com/apple/swift-docker/blob/78d0a2dde09af579d06e2114a101fd90b01fbfb0/5.0/ubuntu/16.04/Dockerfile)
 -	[`5.0.3-slim`, `5.0-slim`, `5.0.3-bionic-slim`, `5.0-bionic-slim`](https://github.com/apple/swift-docker/blob/78d0a2dde09af579d06e2114a101fd90b01fbfb0/5.0/ubuntu/18.04/slim/Dockerfile)
@@ -28,16 +40,10 @@ WARNING:
 -	[`4.1.3`, `4.1`](https://github.com/apple/swift-docker/blob/34aa283f9b3473ab22b2282f71773781b121af19/4.1/Dockerfile)
 -	[`4.0.3`, `4.0`](https://github.com/apple/swift-docker/blob/34aa283f9b3473ab22b2282f71773781b121af19/4.0/Dockerfile)
 
-# Quick reference
-
--	**Where to get help**:  
-	[Swift Docker Community Forums](https://forums.swift.org/c/server/docker)
+# Quick reference (cont.)
 
 -	**Where to file issues**:  
 	[https://bugs.swift.org](https://bugs.swift.org) Component: Docker
-
--	**Maintained by**:  
-	[the Swift Community](https://github.com/apple/swift-docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/swift/)

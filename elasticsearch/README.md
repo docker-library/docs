@@ -14,21 +14,23 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`7.6.0`](https://github.com/docker-library/elasticsearch/blob/3ee0cc9aaf25ebb7fba9e9e1c8f4f94b77f85366/7/Dockerfile)
--	[`6.8.6`](https://github.com/docker-library/elasticsearch/blob/4c04ee848e9183d70c6109e9325d6a40520d334d/6/Dockerfile)
-
 # Quick reference
+
+-	**Maintained by**:  
+	[the Elastic Team](https://github.com/elastic/elasticsearch)
 
 -	**Where to get help**:  
 	the [Elasticsearch Discuss Forums](https://discuss.elastic.co/c/elasticsearch), the [Elastic community](https://www.elastic.co/community)
 
+# Supported tags and respective `Dockerfile` links
+
+-	[`7.7.0`](https://github.com/docker-library/elasticsearch/blob/9a07fe301328cb6dfc6cc6aeed784bdc51c31eca/7/Dockerfile)
+-	[`6.8.9`](https://github.com/docker-library/elasticsearch/blob/9a07fe301328cb6dfc6cc6aeed784bdc51c31eca/6/Dockerfile)
+
+# Quick reference (cont.)
+
 -	**Where to file issues**:  
 	For issues with Elasticsearch Docker Image or Elasticsearch: https://github.com/elastic/elasticsearch/issues
-
--	**Maintained by**:  
-	[the Elastic Team](https://github.com/elastic/elasticsearch)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/elasticsearch/)

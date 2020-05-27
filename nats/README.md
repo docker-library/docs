@@ -14,39 +14,41 @@ WARNING:
 
 -->
 
+# Quick reference
+
+-	**Maintained by**:  
+	[the NATS Project](https://github.com/nats-io/nats-docker)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
 (See ["What's the difference between 'Shared' and 'Simple' tags?" in the FAQ](https://github.com/docker-library/faq#whats-the-difference-between-shared-and-simple-tags).)
 
 ## Simple Tags
 
--	[`2.1.4-alpine3.11`, `2.1-alpine3.11`, `2-alpine3.11`, `alpine3.11`, `2.1.4-alpine`, `2.1-alpine`, `2-alpine`, `alpine`](https://github.com/nats-io/nats-docker/blob/55d5de1db617f12e35f98bc95e969765de1d4eb5/2.1.4/alpine3.11/Dockerfile)
--	[`2.1.4-scratch`, `2.1-scratch`, `2-scratch`, `scratch`, `2.1.4-linux`, `2.1-linux`, `2-linux`, `linux`](https://github.com/nats-io/nats-docker/blob/55d5de1db617f12e35f98bc95e969765de1d4eb5/2.1.4/scratch/Dockerfile)
--	[`2.1.4-windowsservercore-1809`, `2.1-windowsservercore-1809`, `2-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/nats-io/nats-docker/blob/55d5de1db617f12e35f98bc95e969765de1d4eb5/2.1.4/windowsservercore-1809/Dockerfile)
--	[`2.1.4-nanoserver-1809`, `2.1-nanoserver-1809`, `2-nanoserver-1809`, `nanoserver-1809`](https://github.com/nats-io/nats-docker/blob/55d5de1db617f12e35f98bc95e969765de1d4eb5/2.1.4/nanoserver-1809/Dockerfile)
--	[`2.1.4-windowsservercore-ltsc2016`, `2.1-windowsservercore-ltsc2016`, `2-windowsservercore-ltsc2016`, `windowsservercore-ltsc2016`](https://github.com/nats-io/nats-docker/blob/55d5de1db617f12e35f98bc95e969765de1d4eb5/2.1.4/windowsservercore-ltsc2016/Dockerfile)
+-	[`2.1.7-alpine3.11`, `2.1-alpine3.11`, `2-alpine3.11`, `alpine3.11`, `2.1.7-alpine`, `2.1-alpine`, `2-alpine`, `alpine`](https://github.com/nats-io/nats-docker/blob/8f8045b5c6c6f17a28b5bc12f0f18eb6380f435f/2.1.7/alpine3.11/Dockerfile)
+-	[`2.1.7-scratch`, `2.1-scratch`, `2-scratch`, `scratch`, `2.1.7-linux`, `2.1-linux`, `2-linux`, `linux`](https://github.com/nats-io/nats-docker/blob/8f8045b5c6c6f17a28b5bc12f0f18eb6380f435f/2.1.7/scratch/Dockerfile)
+-	[`2.1.7-windowsservercore-1809`, `2.1-windowsservercore-1809`, `2-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/nats-io/nats-docker/blob/8f8045b5c6c6f17a28b5bc12f0f18eb6380f435f/2.1.7/windowsservercore-1809/Dockerfile)
+-	[`2.1.7-nanoserver-1809`, `2.1-nanoserver-1809`, `2-nanoserver-1809`, `nanoserver-1809`](https://github.com/nats-io/nats-docker/blob/8f8045b5c6c6f17a28b5bc12f0f18eb6380f435f/2.1.7/nanoserver-1809/Dockerfile)
+-	[`2.1.7-windowsservercore-ltsc2016`, `2.1-windowsservercore-ltsc2016`, `2-windowsservercore-ltsc2016`, `windowsservercore-ltsc2016`](https://github.com/nats-io/nats-docker/blob/8f8045b5c6c6f17a28b5bc12f0f18eb6380f435f/2.1.7/windowsservercore-ltsc2016/Dockerfile)
 
 ## Shared Tags
 
--	`2.1.4`, `2.1`, `2`, `latest`:
-	-	[`2.1.4-scratch`](https://github.com/nats-io/nats-docker/blob/55d5de1db617f12e35f98bc95e969765de1d4eb5/2.1.4/scratch/Dockerfile)
-	-	[`2.1.4-nanoserver-1809`](https://github.com/nats-io/nats-docker/blob/55d5de1db617f12e35f98bc95e969765de1d4eb5/2.1.4/nanoserver-1809/Dockerfile)
--	`2.1.4-windowsservercore`, `2.1-windowsservercore`, `2-windowsservercore`, `windowsservercore`:
-	-	[`2.1.4-windowsservercore-1809`](https://github.com/nats-io/nats-docker/blob/55d5de1db617f12e35f98bc95e969765de1d4eb5/2.1.4/windowsservercore-1809/Dockerfile)
-	-	[`2.1.4-windowsservercore-ltsc2016`](https://github.com/nats-io/nats-docker/blob/55d5de1db617f12e35f98bc95e969765de1d4eb5/2.1.4/windowsservercore-ltsc2016/Dockerfile)
--	`2.1.4-nanoserver`, `2.1-nanoserver`, `2-nanoserver`, `nanoserver`:
-	-	[`2.1.4-nanoserver-1809`](https://github.com/nats-io/nats-docker/blob/55d5de1db617f12e35f98bc95e969765de1d4eb5/2.1.4/nanoserver-1809/Dockerfile)
+-	`2.1.7`, `2.1`, `2`, `latest`:
+	-	[`2.1.7-scratch`](https://github.com/nats-io/nats-docker/blob/8f8045b5c6c6f17a28b5bc12f0f18eb6380f435f/2.1.7/scratch/Dockerfile)
+	-	[`2.1.7-nanoserver-1809`](https://github.com/nats-io/nats-docker/blob/8f8045b5c6c6f17a28b5bc12f0f18eb6380f435f/2.1.7/nanoserver-1809/Dockerfile)
+-	`2.1.7-windowsservercore`, `2.1-windowsservercore`, `2-windowsservercore`, `windowsservercore`:
+	-	[`2.1.7-windowsservercore-1809`](https://github.com/nats-io/nats-docker/blob/8f8045b5c6c6f17a28b5bc12f0f18eb6380f435f/2.1.7/windowsservercore-1809/Dockerfile)
+	-	[`2.1.7-windowsservercore-ltsc2016`](https://github.com/nats-io/nats-docker/blob/8f8045b5c6c6f17a28b5bc12f0f18eb6380f435f/2.1.7/windowsservercore-ltsc2016/Dockerfile)
+-	`2.1.7-nanoserver`, `2.1-nanoserver`, `2-nanoserver`, `nanoserver`:
+	-	[`2.1.7-nanoserver-1809`](https://github.com/nats-io/nats-docker/blob/8f8045b5c6c6f17a28b5bc12f0f18eb6380f435f/2.1.7/nanoserver-1809/Dockerfile)
 
-# Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+# Quick reference (cont.)
 
 -	**Where to file issues**:  
 	[https://github.com/nats-io/nats-docker/issues](https://github.com/nats-io/nats-docker/issues)
-
--	**Maintained by**:  
-	[the NATS Project](https://github.com/nats-io/nats-docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/nats/), [`arm32v6`](https://hub.docker.com/r/arm32v6/nats/), [`arm32v7`](https://hub.docker.com/r/arm32v7/nats/), [`arm64v8`](https://hub.docker.com/r/arm64v8/nats/), [`windows-amd64`](https://hub.docker.com/r/winamd64/nats/)
@@ -98,11 +100,10 @@ The routing protocol has been dramatically improved and adds support for account
 # Check "docker run" for more information.
 
 $ docker run -d --name nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 nats
-[INF] Starting nats-server version 2.1.4
-[INF] Git commit [fb009af]
-[INF] Starting http monitor on 0.0.0.0:8222
+[INF] Starting nats-server version 2.1.7
+[INF] Git commit [bf0930e]
 [INF] Listening for client connections on 0.0.0.0:4222
-[INF] Server id is NCEZYE4WBASAAYIPSVWVLU52TXVEN52TDN3KKHWDV33PQ32A6TLBQ7EA
+[INF] Server id is NANEPV46X4QZ7FR5DD4U7WLWI6BWRLJXFTHO2FIJRGFSW5NLH3MOV7VZ
 [INF] Server is ready
 [INF] Listening for route connections on 0.0.0.0:6222
 
@@ -116,12 +117,12 @@ $ docker run -d --name=nats-2 --link nats-main -p 4222:4222 -p 6222:6222 -p 8222
 
 # If you want to verify the routes are connected, try this instead:
 $ docker run -d --name=nats-2 --link nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 nats -c nats-server.conf --routes=nats-route://ruser:T0pS3cr3t@nats-main:6222 -DV
-[INF] Starting nats-server version 2.1.4
-[DBG] Go build version go1.13.7
-[INF] Git commit [fb009af]
+[INF] Starting nats-server version 2.1.7
+[DBG] Go build version go1.13.10
+[INF] Git commit [bf0930e]
 [INF] Starting http monitor on 0.0.0.0:8222
 [INF] Listening for client connections on 0.0.0.0:4222
-[INF] Server id is NCCJ57DJMZETVT3QIIUQR7MIU5FXCCX7QHTYRDKWNMNYIG43K3Y74J3X
+[INF] Server id is NC5WVL732YIR7N2TH3EHLLTGBNYJMZUUJMYEVWTZ3KU6DQB6ROGPAWYM
 [INF] Server is ready
 [DBG] Get non local IPs for "0.0.0.0"
 [DBG]  ip=172.17.0.3
@@ -129,7 +130,7 @@ $ docker run -d --name=nats-2 --link nats-main -p 4222:4222 -p 6222:6222 -p 8222
 [DBG] Trying to connect to route on nats-main:6222
 [DBG] 172.17.0.2:6222 - rid:1 - Route connect msg sent
 [INF] 172.17.0.2:6222 - rid:1 - Route connection created
-[DBG] 172.17.0.2:6222 - rid:1 - Registering remote route "NAXUH5CIXFGNRGFWSTZ2DJDJH3Y3X3LDM7RKZCELOUPCKVELMSFWECKS"
+[DBG] 172.17.0.2:6222 - rid:1 - Registering remote route "ND2WROCKLR6NGB6E5RUV6FQNPQO475MWOR4IGM6E6AZNKVTKXDD6YCM5"
 [DBG] 172.17.0.2:6222 - rid:1 - Sent local subscriptions to route
 ```
 
@@ -187,7 +188,9 @@ Logging Options:
     -r, --remote_syslog <addr>       Syslog server addr (udp://localhost:514)
     -D, --debug                      Enable debugging output
     -V, --trace                      Trace the raw protocol
+    -VV                              Verbose trace (traces system account as well)
     -DV                              Debug and trace
+    -DVV                             Debug and verbose trace (traces system account as well)
 
 Authorization Options:
         --user <user>                User required for connections

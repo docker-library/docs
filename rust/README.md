@@ -14,25 +14,27 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`1-stretch`, `1.41-stretch`, `1.41.0-stretch`, `stretch`](https://github.com/rust-lang-nursery/docker-rust/blob/76921dd61d80c4e8107b858d26bf5e52c4c09816/1.41.0/stretch/Dockerfile)
--	[`1-slim-stretch`, `1.41-slim-stretch`, `1.41.0-slim-stretch`, `slim-stretch`](https://github.com/rust-lang-nursery/docker-rust/blob/76921dd61d80c4e8107b858d26bf5e52c4c09816/1.41.0/stretch/slim/Dockerfile)
--	[`1-buster`, `1.41-buster`, `1.41.0-buster`, `buster`, `1`, `1.41`, `1.41.0`, `latest`](https://github.com/rust-lang-nursery/docker-rust/blob/76921dd61d80c4e8107b858d26bf5e52c4c09816/1.41.0/buster/Dockerfile)
--	[`1-slim-buster`, `1.41-slim-buster`, `1.41.0-slim-buster`, `slim-buster`, `1-slim`, `1.41-slim`, `1.41.0-slim`, `slim`](https://github.com/rust-lang-nursery/docker-rust/blob/76921dd61d80c4e8107b858d26bf5e52c4c09816/1.41.0/buster/slim/Dockerfile)
--	[`1-alpine3.10`, `1.41-alpine3.10`, `1.41.0-alpine3.10`, `alpine3.10`](https://github.com/rust-lang-nursery/docker-rust/blob/76921dd61d80c4e8107b858d26bf5e52c4c09816/1.41.0/alpine3.10/Dockerfile)
--	[`1-alpine3.11`, `1.41-alpine3.11`, `1.41.0-alpine3.11`, `alpine3.11`, `1-alpine`, `1.41-alpine`, `1.41.0-alpine`, `alpine`](https://github.com/rust-lang-nursery/docker-rust/blob/76921dd61d80c4e8107b858d26bf5e52c4c09816/1.41.0/alpine3.11/Dockerfile)
-
 # Quick reference
+
+-	**Maintained by**:  
+	[the Rust Project developers](https://github.com/rust-lang/docker-rust)
 
 -	**Where to get help**:  
 	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
+# Supported tags and respective `Dockerfile` links
+
+-	[`1-stretch`, `1.43-stretch`, `1.43.1-stretch`, `stretch`](https://github.com/rust-lang-nursery/docker-rust/blob/009cc0a821ff773d54875350312731ed490d5cce/1.43.1/stretch/Dockerfile)
+-	[`1-slim-stretch`, `1.43-slim-stretch`, `1.43.1-slim-stretch`, `slim-stretch`](https://github.com/rust-lang-nursery/docker-rust/blob/009cc0a821ff773d54875350312731ed490d5cce/1.43.1/stretch/slim/Dockerfile)
+-	[`1-buster`, `1.43-buster`, `1.43.1-buster`, `buster`, `1`, `1.43`, `1.43.1`, `latest`](https://github.com/rust-lang-nursery/docker-rust/blob/009cc0a821ff773d54875350312731ed490d5cce/1.43.1/buster/Dockerfile)
+-	[`1-slim-buster`, `1.43-slim-buster`, `1.43.1-slim-buster`, `slim-buster`, `1-slim`, `1.43-slim`, `1.43.1-slim`, `slim`](https://github.com/rust-lang-nursery/docker-rust/blob/009cc0a821ff773d54875350312731ed490d5cce/1.43.1/buster/slim/Dockerfile)
+-	[`1-alpine3.10`, `1.43-alpine3.10`, `1.43.1-alpine3.10`, `alpine3.10`](https://github.com/rust-lang-nursery/docker-rust/blob/009cc0a821ff773d54875350312731ed490d5cce/1.43.1/alpine3.10/Dockerfile)
+-	[`1-alpine3.11`, `1.43-alpine3.11`, `1.43.1-alpine3.11`, `alpine3.11`, `1-alpine`, `1.43-alpine`, `1.43.1-alpine`, `alpine`](https://github.com/rust-lang-nursery/docker-rust/blob/009cc0a821ff773d54875350312731ed490d5cce/1.43.1/alpine3.11/Dockerfile)
+
+# Quick reference (cont.)
+
 -	**Where to file issues**:  
 	[https://github.com/rust-lang/docker-rust/issues](https://github.com/rust-lang/docker-rust/issues)
-
--	**Maintained by**:  
-	[the Rust Project developers](https://github.com/rust-lang/docker-rust)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/rust/), [`arm32v7`](https://hub.docker.com/r/arm32v7/rust/), [`arm64v8`](https://hub.docker.com/r/arm64v8/rust/), [`i386`](https://hub.docker.com/r/i386/rust/)

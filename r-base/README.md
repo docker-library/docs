@@ -14,20 +14,22 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`3.6.2`, `latest`](https://github.com/rocker-org/rocker/blob/df56b98e4a2a4611fa9aacae99c4a304531c2640/r-base/Dockerfile)
-
 # Quick reference
+
+-	**Maintained by**:  
+	[the Rocker Community](https://github.com/rocker-org/rocker)
 
 -	**Where to get help**:  
 	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
+# Supported tags and respective `Dockerfile` links
+
+-	[`4.0.0`, `latest`](https://github.com/rocker-org/rocker/blob/0317dc922dc7b9181d86446436acdd7f77ee0f17/r-base/latest/Dockerfile)
+
+# Quick reference (cont.)
+
 -	**Where to file issues**:  
 	[GitHub](https://github.com/rocker-org/rocker/issues) or [Email](mailto:rocker-maintainers@eddelbuettel.com)
-
--	**Maintained by**:  
-	[the Rocker Community](https://github.com/rocker-org/rocker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/r-base/), [`arm64v8`](https://hub.docker.com/r/arm64v8/r-base/)
@@ -55,7 +57,7 @@ R is a GNU project. The source code for the R software environment is written pr
 
 > [R FAQ](http://cran.r-project.org/doc/FAQ/R-FAQ.html#What-is-R_003f), [wikipedia.org/wiki/R_(programming_language)](http://en.wikipedia.org/wiki/R_%28programming_language%29)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/878d695448f08584e0b90a88fb60614e4c346d6e/r-base/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/18225eea5667b1bc03a19024eb09ccc482207ecf/r-base/logo.png)
 
 # How to use this image
 
@@ -78,7 +80,7 @@ $ docker run -ti --rm -v "$PWD":/home/docker -w /home/docker -u docker r-base R 
 Alternatively, just run a bash session on the container first. This allows a user to run batch commands and also edit and run scripts:
 
 ```console
-$ docker run -ti --rm r-base /usr/bin/bash
+$ docker run -ti --rm r-base bash
 $ vim.tiny myscript.R
 ```
 

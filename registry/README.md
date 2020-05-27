@@ -14,21 +14,23 @@ WARNING:
 
 -->
 
+# Quick reference
+
+-	**Maintained by**:  
+	[Docker, Inc.](https://github.com/docker/distribution-library-image)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`2.7.1`, `2.7`, `2`, `latest`](https://github.com/docker/distribution-library-image/blob/0b6ea3ba50b65563600a717f07db4cfa6f18f957/amd64/Dockerfile)
 -	[`2.6.2`, `2.6`](https://github.com/docker/distribution-library-image/blob/fc40f1f1051bb4a42ee4661ccaa190c1bd6c6be9/amd64/Dockerfile)
 
-# Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+# Quick reference (cont.)
 
 -	**Where to file issues**:  
 	[https://github.com/docker/distribution-library-image/issues](https://github.com/docker/distribution-library-image/issues)
-
--	**Maintained by**:  
-	[Docker, Inc.](https://github.com/docker/distribution-library-image)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/registry/), [`arm32v6`](https://hub.docker.com/r/arm32v6/registry/), [`arm64v8`](https://hub.docker.com/r/arm64v8/registry/)

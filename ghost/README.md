@@ -14,25 +14,25 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`3.6.0`, `3.6`, `3`, `latest`](https://github.com/docker-library/ghost/blob/801174fc6c0812962e8ab9dbb988ac91dc2b3dcd/3/debian/Dockerfile)
--	[`3.6.0-alpine`, `3.6-alpine`, `3-alpine`, `alpine`](https://github.com/docker-library/ghost/blob/801174fc6c0812962e8ab9dbb988ac91dc2b3dcd/3/alpine/Dockerfile)
--	[`2.38.0`, `2.38`, `2`](https://github.com/docker-library/ghost/blob/aeed5c9122e22c71f321c36f11f8794b3915dce5/2/debian/Dockerfile)
--	[`2.38.0-alpine`, `2.38-alpine`, `2-alpine`](https://github.com/docker-library/ghost/blob/aeed5c9122e22c71f321c36f11f8794b3915dce5/2/alpine/Dockerfile)
--	[`1.26.2`, `1.26`, `1`](https://github.com/docker-library/ghost/blob/aeed5c9122e22c71f321c36f11f8794b3915dce5/1/debian/Dockerfile)
--	[`1.26.2-alpine`, `1.26-alpine`, `1-alpine`](https://github.com/docker-library/ghost/blob/aeed5c9122e22c71f321c36f11f8794b3915dce5/1/alpine/Dockerfile)
-
 # Quick reference
+
+-	**Maintained by**:  
+	[the Docker Community](https://github.com/docker-library/ghost)
 
 -	**Where to get help**:  
 	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
+# Supported tags and respective `Dockerfile` links
+
+-	[`3.17.1`, `3.17`, `3`, `latest`](https://github.com/docker-library/ghost/blob/e395a5a01987c10fd462c676875469489e103f93/3/debian/Dockerfile)
+-	[`3.17.1-alpine`, `3.17-alpine`, `3-alpine`, `alpine`](https://github.com/docker-library/ghost/blob/e395a5a01987c10fd462c676875469489e103f93/3/alpine/Dockerfile)
+-	[`2.38.1`, `2.38`, `2`](https://github.com/docker-library/ghost/blob/5798d6bd9c3b359954d90d173154cc36ba6f8337/2/debian/Dockerfile)
+-	[`2.38.1-alpine`, `2.38-alpine`, `2-alpine`](https://github.com/docker-library/ghost/blob/5798d6bd9c3b359954d90d173154cc36ba6f8337/2/alpine/Dockerfile)
+
+# Quick reference (cont.)
+
 -	**Where to file issues**:  
 	[https://github.com/docker-library/ghost/issues](https://github.com/docker-library/ghost/issues)
-
--	**Maintained by**:  
-	[the Docker Community](https://github.com/docker-library/ghost)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/ghost/), [`arm32v6`](https://hub.docker.com/r/arm32v6/ghost/), [`arm32v7`](https://hub.docker.com/r/arm32v7/ghost/), [`arm64v8`](https://hub.docker.com/r/arm64v8/ghost/), [`i386`](https://hub.docker.com/r/i386/ghost/), [`ppc64le`](https://hub.docker.com/r/ppc64le/ghost/), [`s390x`](https://hub.docker.com/r/s390x/ghost/)
@@ -72,7 +72,7 @@ If you'd like to be able to access the instance from the host without the contai
 $ docker run -d --name some-ghost -e url=http://localhost:3001 -p 3001:2368 ghost
 ```
 
-Then, access it via `http://localhost:3001` or `http://host-ip:3001` in a browser.
+If all goes well, you'll be able to access your new site on `http://localhost:3001` and `http://localhost:3001/ghost` to access Ghost Admin (or `http://host-ip:3001` and `http://host-ip:3001/ghost`, respectively).
 
 ### Upgrading Ghost
 
@@ -110,7 +110,7 @@ This Docker image for Ghost uses SQLite. There is nothing special to configure.
 
 ## Configuration
 
-All Ghost configuration parameters (such as `url`) can be specified via environment variables. See [the Ghost documentation](https://docs.ghost.org/docs/config#section-running-ghost-with-config-env-variables) for details about what configuration is allowed and how to convert a nested configuration key into the appropriate environment variable name:
+All Ghost configuration parameters (such as `url`) can be specified via environment variables. See [the Ghost documentation](https://ghost.org/docs/concepts/config/#running-ghost-with-config-env-variables) for details about what configuration is allowed and how to convert a nested configuration key into the appropriate environment variable name:
 
 ```console
 $ docker run -d --name some-ghost -e url=http://some-ghost.example.com ghost
@@ -144,7 +144,7 @@ version: '3.1'
 services:
 
   ghost:
-    image: ghost:1-alpine
+    image: ghost:3-alpine
     restart: always
     ports:
       - 8080:2368
@@ -155,6 +155,8 @@ services:
       database__connection__user: root
       database__connection__password: example
       database__connection__database: ghost
+      # this url value is just an example, and is likely wrong for your environment!
+      url: http://localhost:8080
 
   db:
     image: mysql:5.7
@@ -163,7 +165,7 @@ services:
       MYSQL_ROOT_PASSWORD: example
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/e24f39cddf21560cf0a24f149059ff23640b0f16/ghost/stack.yml)
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/c57e666ff4299ee6e801a9843b7f39eebfd8f2da/ghost/stack.yml)
 
 Run `docker stack deploy -c stack.yml ghost` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
 

@@ -14,25 +14,27 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`1.5`, `1.5.0`, `1.5.0.1`](https://github.com/influxdata/influxdata-docker/blob/731c6989f1fc15e37d0cda42540958f1c697b911/chronograf/1.5/Dockerfile)
--	[`1.5-alpine`, `1.5.0-alpine`, `1.5.0.1-alpine`](https://github.com/influxdata/influxdata-docker/blob/731c6989f1fc15e37d0cda42540958f1c697b911/chronograf/1.5/alpine/Dockerfile)
--	[`1.6`, `1.6.2`](https://github.com/influxdata/influxdata-docker/blob/731c6989f1fc15e37d0cda42540958f1c697b911/chronograf/1.6/Dockerfile)
--	[`1.6-alpine`, `1.6.2-alpine`](https://github.com/influxdata/influxdata-docker/blob/731c6989f1fc15e37d0cda42540958f1c697b911/chronograf/1.6/alpine/Dockerfile)
--	[`1.7`, `1.7.16`, `latest`](https://github.com/influxdata/influxdata-docker/blob/731c6989f1fc15e37d0cda42540958f1c697b911/chronograf/1.7/Dockerfile)
--	[`1.7-alpine`, `1.7.16-alpine`, `alpine`](https://github.com/influxdata/influxdata-docker/blob/731c6989f1fc15e37d0cda42540958f1c697b911/chronograf/1.7/alpine/Dockerfile)
-
 # Quick reference
+
+-	**Maintained by**:  
+	[InfluxData](https://github.com/influxdata/influxdata-docker)
 
 -	**Where to get help**:  
 	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
+# Supported tags and respective `Dockerfile` links
+
+-	[`1.6`, `1.6.2`](https://github.com/influxdata/influxdata-docker/blob/4fc3aa594c3b78d07b5b1f0e8a2e9168a22b6d01/chronograf/1.6/Dockerfile)
+-	[`1.6-alpine`, `1.6.2-alpine`](https://github.com/influxdata/influxdata-docker/blob/4fc3aa594c3b78d07b5b1f0e8a2e9168a22b6d01/chronograf/1.6/alpine/Dockerfile)
+-	[`1.7`, `1.7.17`](https://github.com/influxdata/influxdata-docker/blob/4fc3aa594c3b78d07b5b1f0e8a2e9168a22b6d01/chronograf/1.7/Dockerfile)
+-	[`1.7-alpine`, `1.7.17-alpine`](https://github.com/influxdata/influxdata-docker/blob/4fc3aa594c3b78d07b5b1f0e8a2e9168a22b6d01/chronograf/1.7/alpine/Dockerfile)
+-	[`1.8`, `1.8.4`, `latest`](https://github.com/influxdata/influxdata-docker/blob/4fc3aa594c3b78d07b5b1f0e8a2e9168a22b6d01/chronograf/1.8/Dockerfile)
+-	[`1.8-alpine`, `1.8.4-alpine`, `alpine`](https://github.com/influxdata/influxdata-docker/blob/4fc3aa594c3b78d07b5b1f0e8a2e9168a22b6d01/chronograf/1.8/alpine/Dockerfile)
+
+# Quick reference (cont.)
+
 -	**Where to file issues**:  
 	[https://github.com/influxdata/influxdata-docker/issues](https://github.com/influxdata/influxdata-docker/issues)
-
--	**Maintained by**:  
-	[InfluxData](https://github.com/influxdata/influxdata-docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/chronograf/), [`arm32v7`](https://hub.docker.com/r/arm32v7/chronograf/), [`arm64v8`](https://hub.docker.com/r/arm64v8/chronograf/)

@@ -14,21 +14,23 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`8`, `8u242`, `8-al2-full`, `latest`](https://github.com/corretto/corretto-8-docker/blob/ae31a3e5106d3d16e0a3154bca567c10879522af/Dockerfile)
--	[`11`, `11.0.6`, `11-al2-full`](https://github.com/corretto/corretto-11-docker/blob/a797c24219a9262e581ee70fc928c57acacde331/Dockerfile)
-
 # Quick reference
+
+-	**Maintained by**:  
+	[the AWS JDK team](https://github.com/corretto/corretto-8-docker)
 
 -	**Where to get help**:  
 	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
+# Supported tags and respective `Dockerfile` links
+
+-	[`8`, `8u252`, `8u252-al2`, `8-al2-full`, `8-al2-jdk`, `latest`](https://github.com/corretto/corretto-docker/blob/619edf4eceed8bc4392509cfb29a4cdaac4787d8/8/jdk/al2/Dockerfile)
+-	[`11`, `11.0.7`, `11.0.7-al2`, `11-al2-jdk`, `11-al2-full`](https://github.com/corretto/corretto-docker/blob/619edf4eceed8bc4392509cfb29a4cdaac4787d8/11/jdk/al2/Dockerfile)
+
+# Quick reference (cont.)
+
 -	**Where to file issues**:  
 	[https://github.com/corretto/corretto-8-docker/issues](https://github.com/corretto/corretto-8-docker/issues)
-
--	**Maintained by**:  
-	[the AWS JDK team](https://github.com/corretto/corretto-8-docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/amazoncorretto/), [`arm64v8`](https://hub.docker.com/r/arm64v8/amazoncorretto/)

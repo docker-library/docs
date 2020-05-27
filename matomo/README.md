@@ -14,25 +14,27 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`3.13.2-apache`, `3.13-apache`, `3-apache`, `apache`, `3.13.2`, `3.13`, `3`, `latest`](https://github.com/matomo-org/docker/blob/ec16ac06900a6a163220184b2ba310a8980dbfe9/apache/Dockerfile)
--	[`3.13.2-fpm`, `3.13-fpm`, `3-fpm`, `fpm`](https://github.com/matomo-org/docker/blob/ec16ac06900a6a163220184b2ba310a8980dbfe9/fpm/Dockerfile)
--	[`3.13.2-fpm-alpine`, `3.13-fpm-alpine`, `3-fpm-alpine`, `fpm-alpine`](https://github.com/matomo-org/docker/blob/ec16ac06900a6a163220184b2ba310a8980dbfe9/fpm-alpine/Dockerfile)
-
 # Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
-
--	**Where to file issues**:  
-	[https://github.com/matomo-org/docker/issues](https://github.com/matomo-org/docker/issues)
 
 -	**Maintained by**:  
 	[Matomo](https://github.com/matomo-org/docker) (a Matomo community contributor)
 
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+# Supported tags and respective `Dockerfile` links
+
+-	[`3.13.5-apache`, `3.13-apache`, `3-apache`, `apache`, `3.13.5`, `3.13`, `3`, `latest`](https://github.com/matomo-org/docker/blob/5f0966ed08cf055472793309e070fd3caef5af2b/apache/Dockerfile)
+-	[`3.13.5-fpm`, `3.13-fpm`, `3-fpm`, `fpm`](https://github.com/matomo-org/docker/blob/5f0966ed08cf055472793309e070fd3caef5af2b/fpm/Dockerfile)
+-	[`3.13.5-fpm-alpine`, `3.13-fpm-alpine`, `3-fpm-alpine`, `fpm-alpine`](https://github.com/matomo-org/docker/blob/5f0966ed08cf055472793309e070fd3caef5af2b/fpm-alpine/Dockerfile)
+
+# Quick reference (cont.)
+
+-	**Where to file issues**:  
+	[https://github.com/matomo-org/docker/issues](https://github.com/matomo-org/docker/issues)
+
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/matomo/), [`arm32v5`](https://hub.docker.com/r/arm32v5/matomo/), [`arm32v6`](https://hub.docker.com/r/arm32v6/matomo/), [`arm32v7`](https://hub.docker.com/r/arm32v7/matomo/), [`arm64v8`](https://hub.docker.com/r/arm64v8/matomo/), [`i386`](https://hub.docker.com/r/i386/matomo/), [`ppc64le`](https://hub.docker.com/r/ppc64le/matomo/)
+	[`amd64`](https://hub.docker.com/r/amd64/matomo/), [`arm32v5`](https://hub.docker.com/r/arm32v5/matomo/), [`arm32v6`](https://hub.docker.com/r/arm32v6/matomo/), [`arm32v7`](https://hub.docker.com/r/arm32v7/matomo/), [`arm64v8`](https://hub.docker.com/r/arm64v8/matomo/), [`i386`](https://hub.docker.com/r/i386/matomo/), [`mips64le`](https://hub.docker.com/r/mips64le/matomo/), [`ppc64le`](https://hub.docker.com/r/ppc64le/matomo/), [`s390x`](https://hub.docker.com/r/s390x/matomo/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/matomo/` directory](https://github.com/docker-library/repo-info/blob/master/repos/matomo) ([history](https://github.com/docker-library/repo-info/commits/master/repos/matomo))  

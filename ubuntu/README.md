@@ -14,24 +14,27 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`18.04`, `bionic-20200112`, `bionic`, `latest`](https://github.com/tianon/docker-brew-ubuntu-core/blob/bcdd3818e932eda677301ae5d81c80e010793c91/bionic/Dockerfile)
--	[`19.10`, `eoan-20200114`, `eoan`, `rolling`](https://github.com/tianon/docker-brew-ubuntu-core/blob/bcdd3818e932eda677301ae5d81c80e010793c91/eoan/Dockerfile)
--	[`20.04`, `focal-20200115`, `focal`, `devel`](https://github.com/tianon/docker-brew-ubuntu-core/blob/bcdd3818e932eda677301ae5d81c80e010793c91/focal/Dockerfile)
--	[`14.04`, `trusty-20191217`, `trusty`](https://github.com/tianon/docker-brew-ubuntu-core/blob/bcdd3818e932eda677301ae5d81c80e010793c91/trusty/Dockerfile)
--	[`16.04`, `xenial-20200114`, `xenial`](https://github.com/tianon/docker-brew-ubuntu-core/blob/bcdd3818e932eda677301ae5d81c80e010793c91/xenial/Dockerfile)
-
 # Quick reference
+
+-	**Maintained by**:  
+	[Canonical](https://partner-images.canonical.com/core/) and [Tianon (Debian Developer)](https://github.com/tianon/docker-brew-ubuntu-core)
 
 -	**Where to get help**:  
 	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
+# Supported tags and respective `Dockerfile` links
+
+-	[`18.04`, `bionic-20200403`, `bionic`](https://github.com/tianon/docker-brew-ubuntu-core/blob/451851eab04432157249eb444d5a42714e2a7112/bionic/Dockerfile)
+-	[`19.10`, `eoan-20200410`, `eoan`](https://github.com/tianon/docker-brew-ubuntu-core/blob/451851eab04432157249eb444d5a42714e2a7112/eoan/Dockerfile)
+-	[`20.04`, `focal-20200423`, `focal`, `latest`, `rolling`](https://github.com/tianon/docker-brew-ubuntu-core/blob/451851eab04432157249eb444d5a42714e2a7112/focal/Dockerfile)
+-	[`20.10`, `groovy-20200505`, `groovy`, `devel`](https://github.com/tianon/docker-brew-ubuntu-core/blob/451851eab04432157249eb444d5a42714e2a7112/groovy/Dockerfile)
+-	[`14.04`, `trusty-20191217`, `trusty`](https://github.com/tianon/docker-brew-ubuntu-core/blob/451851eab04432157249eb444d5a42714e2a7112/trusty/Dockerfile)
+-	[`16.04`, `xenial-20200326`, `xenial`](https://github.com/tianon/docker-brew-ubuntu-core/blob/451851eab04432157249eb444d5a42714e2a7112/xenial/Dockerfile)
+
+# Quick reference (cont.)
+
 -	**Where to file issues**:  
 	[the cloud-images bug tracker](https://bugs.launchpad.net/cloud-images) (include the `docker` tag)
-
--	**Maintained by**:  
-	[Canonical](https://partner-images.canonical.com/core/) and [Tianon (Debian Developer)](https://github.com/tianon/docker-brew-ubuntu-core)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/ubuntu/), [`arm32v7`](https://hub.docker.com/r/arm32v7/ubuntu/), [`arm64v8`](https://hub.docker.com/r/arm64v8/ubuntu/), [`i386`](https://hub.docker.com/r/i386/ubuntu/), [`ppc64le`](https://hub.docker.com/r/ppc64le/ubuntu/), [`s390x`](https://hub.docker.com/r/s390x/ubuntu/)

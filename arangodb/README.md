@@ -14,25 +14,24 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`2.8`, `2.8.11`](https://github.com/arangodb/arangodb-docker/blob/d6fca9a137cd21345b1d380fc0e72daacb6130ce/jessie/2.8.11/Dockerfile)
--	[`3.2`, `3.2.17`](https://github.com/arangodb/arangodb-docker/blob/b4c22ad8bf4facbbc7c3b24e985251a09fcdbcec/stretch/3.2.17/Dockerfile)
--	[`3.3`, `3.3.23`](https://github.com/arangodb/arangodb-docker/blob/24db8fa0429ce6fa1f7d56e54c9bb3da51c32b3e/stretch/3.3.23/Dockerfile)
--	[`3.4`, `3.4.9`](https://github.com/arangodb/arangodb-docker/blob/4aa774dd973b77f958fbe7a90285ca2452ca22aa/alpine/3.4.9/Dockerfile)
--	[`3.5`, `3.5.4`](https://github.com/arangodb/arangodb-docker/blob/8fa0c5d9b74ca36cf3e7ed6e8df8954c87cf04a6/alpine/3.5.4/Dockerfile)
--	[`3.6`, `3.6.1`, `latest`](https://github.com/arangodb/arangodb-docker/blob/3a3b5e8f4314686cb531720158e27bf6abe0c11b/alpine/3.6.1/Dockerfile)
-
 # Quick reference
+
+-	**Maintained by**:  
+	[ArangoDB](https://github.com/arangodb/arangodb-docker)
 
 -	**Where to get help**:  
 	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
+# Supported tags and respective `Dockerfile` links
+
+-	[`3.4`, `3.4.10`](https://github.com/arangodb/arangodb-docker/blob/63dc866beb0546ba3b172e76f64759abfe1a0a28/alpine/3.4.10/Dockerfile)
+-	[`3.5`, `3.5.5`](https://github.com/arangodb/arangodb-docker/blob/8690d4d6c3f3f0aaea34af72455a2c78a5669149/alpine/3.5.5.1/Dockerfile)
+-	[`3.6`, `3.6.3`, `latest`](https://github.com/arangodb/arangodb-docker/blob/63dc866beb0546ba3b172e76f64759abfe1a0a28/alpine/3.6.3.1/Dockerfile)
+
+# Quick reference (cont.)
+
 -	**Where to file issues**:  
 	[https://github.com/arangodb/arangodb-docker/issues](https://github.com/arangodb/arangodb-docker/issues)
-
--	**Maintained by**:  
-	[ArangoDB](https://github.com/arangodb/arangodb-docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/arangodb/)
@@ -50,9 +49,11 @@ WARNING:
 
 # What is ArangoDB?
 
-ArangoDB is a multi-model, open-source database with flexible data models for documents, graphs, and key-values. Build high performance applications using a convenient SQL-like query language or JavaScript extensions. Use ACID transactions if you require them. Scale horizontally and vertically with a few mouse clicks.
+ArangoDB is a multi-model, open-source database with flexible data models for documents, graphs, and key-values. Build high performance applications using a convenient SQL-like query language or JavaScript extensions. Use ACID transactions if you require them. Scale horizontally with a few mouse clicks.
 
-The supported data models can be mixed in queries and allow ArangoDB to be the aggregation point for the data request you have in mind.
+ArangoDB runs everywhere: On-prem, in the cloud and also on [ArangoDBs Cloud Service Oasis](https://cloud.arangodb.com/home).
+
+The supported data models can be mixed in queries and allow ArangoDB to be the aggregation point for your data.
 
 > [arangodb.com](https://arangodb.com)
 
@@ -173,6 +174,29 @@ unix> docker exec -it jolly_joker arangosh
 ```
 
 See more information about [Configuration](https://www.arangodb.com/docs/stable/administration-configuration.html)
+
+### Limiting resource utilization
+
+`arangod` checks the following environment variables, which can be used to restrict how much memory and how many CPU cores it should use:
+
+-	`ARANGODB_OVERRIDE_DETECTED_TOTAL_MEMORY` *(introduced in v3.6.3)*
+
+	This variable can be used to override the automatic detection of the total amount of RAM present on the system. One can specify a decimal number (in bytes). Furthermore, if `G` or `g` is appended, the value is multiplied by `2^30`. If `M` or `m` is appended, the value is multiplied by `2^20`. If `K` or `k` is appended, the value is multiplied by `2^10`. That is, `64G` means 64 gigabytes.
+
+	The total amount of RAM detected is logged as an INFO message at server start. If the variable is set, the overridden value is shown. Various default sizes are calculated based on this value (e.g. RocksDB buffer cache size).
+
+	Setting this option can in particular be useful in two cases:
+
+	1.	If `arangod` is running in a container and its cgroup has a RAM limitation, then one should specify this limitation in this environment variable, since it is currently not automatically detected.
+	2.	If `arangod` is running alongside other services on the same machine and thus sharing the RAM with them, one should limit the amount of memory using this environment variable.
+
+-	`ARANGODB_OVERRIDE_DETECTED_NUMBER_OF_CORES` *(introduced in v3.7.1)*
+
+	This variable can be used to override the automatic detection of the number of CPU cores present on the system.
+
+	The number of CPU cores detected is logged as an INFO message at server start. If the variable is set, the overridden value is shown. Various default values for threading are calculated based on this value.
+
+	Setting this option is useful if `arangod` is running in a container or alongside other services on the same machine and shall not use all available CPUs.
 
 ## Persistent Data
 

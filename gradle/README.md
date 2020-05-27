@@ -14,25 +14,27 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`6.1.1-jdk8`, `6.1-jdk8`, `jdk8`, `6.1.1-jdk`, `6.1-jdk`, `jdk`, `6.1.1`, `6.1`, `latest`](https://github.com/keeganwitt/docker-gradle/blob/6596a2c43781107a48acd7520149bb153f10ea06/jdk8/Dockerfile)
--	[`6.1.1-jre8`, `6.1-jre8`, `jre8`, `6.1.1-jre`, `6.1-jre`, `jre`](https://github.com/keeganwitt/docker-gradle/blob/6596a2c43781107a48acd7520149bb153f10ea06/jre8/Dockerfile)
--	[`6.1.1-jdk11`, `6.1-jdk11`, `jdk11`](https://github.com/keeganwitt/docker-gradle/blob/6596a2c43781107a48acd7520149bb153f10ea06/jdk11/Dockerfile)
--	[`6.1.1-jre11`, `6.1-jre11`, `jre11`](https://github.com/keeganwitt/docker-gradle/blob/6596a2c43781107a48acd7520149bb153f10ea06/jre11/Dockerfile)
--	[`6.1.1-jdk13`, `6.1-jdk13`, `jdk13`](https://github.com/keeganwitt/docker-gradle/blob/6596a2c43781107a48acd7520149bb153f10ea06/jdk13/Dockerfile)
--	[`6.1.1-jre13`, `6.1-jre13`, `jre13`](https://github.com/keeganwitt/docker-gradle/blob/6596a2c43781107a48acd7520149bb153f10ea06/jre13/Dockerfile)
-
 # Quick reference
+
+-	**Maintained by**:  
+	[Keegan Witt (of the Groovy Project)](https://github.com/keeganwitt/docker-gradle), [with the Gradle Project's approval](https://discuss.gradle.org/t/official-docker-images/21159/8)
 
 -	**Where to get help**:  
 	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
+# Supported tags and respective `Dockerfile` links
+
+-	[`6.4.1-jdk8`, `6.4-jdk8`, `jdk8`, `6.4.1-jdk`, `6.4-jdk`, `jdk`, `6.4.1`, `6.4`, `latest`](https://github.com/keeganwitt/docker-gradle/blob/817aaf497e85eab01821d9faf2854df88e58702f/jdk8/Dockerfile)
+-	[`6.4.1-jre8`, `6.4-jre8`, `jre8`, `6.4.1-jre`, `6.4-jre`, `jre`](https://github.com/keeganwitt/docker-gradle/blob/817aaf497e85eab01821d9faf2854df88e58702f/jre8/Dockerfile)
+-	[`6.4.1-jdk11`, `6.4-jdk11`, `jdk11`](https://github.com/keeganwitt/docker-gradle/blob/817aaf497e85eab01821d9faf2854df88e58702f/jdk11/Dockerfile)
+-	[`6.4.1-jre11`, `6.4-jre11`, `jre11`](https://github.com/keeganwitt/docker-gradle/blob/817aaf497e85eab01821d9faf2854df88e58702f/jre11/Dockerfile)
+-	[`6.4.1-jdk14`, `6.4-jdk14`, `jdk14`](https://github.com/keeganwitt/docker-gradle/blob/817aaf497e85eab01821d9faf2854df88e58702f/jdk14/Dockerfile)
+-	[`6.4.1-jre14`, `6.4-jre14`, `jre14`](https://github.com/keeganwitt/docker-gradle/blob/817aaf497e85eab01821d9faf2854df88e58702f/jre14/Dockerfile)
+
+# Quick reference (cont.)
+
 -	**Where to file issues**:  
 	[https://github.com/keeganwitt/docker-gradle/issues](https://github.com/keeganwitt/docker-gradle/issues)
-
--	**Maintained by**:  
-	[Keegan Witt (of the Groovy Project)](https://github.com/keeganwitt/docker-gradle), [with the Gradle Project's approval](https://discuss.gradle.org/t/official-docker-images/21159/8)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/gradle/), [`arm32v7`](https://hub.docker.com/r/arm32v7/gradle/), [`arm64v8`](https://hub.docker.com/r/arm64v8/gradle/), [`ppc64le`](https://hub.docker.com/r/ppc64le/gradle/), [`s390x`](https://hub.docker.com/r/s390x/gradle/)

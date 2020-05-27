@@ -14,6 +14,14 @@ WARNING:
 
 -->
 
+# Quick reference
+
+-	**Maintained by**:  
+	[the Docker Community](https://github.com/Quantisan/docker-clojure)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`openjdk-8`, `openjdk-8-lein`, `openjdk-8-lein-2.9.1`, `openjdk-8-stretch`, `openjdk-8-lein-stretch`, `openjdk-8-lein-2.9.1-stretch`](https://github.com/Quantisan/docker-clojure/blob/e96f6249cac065855a40a9f36ba88949e0a52d7d/target/openjdk-8-stretch/lein/Dockerfile)
@@ -44,16 +52,10 @@ WARNING:
 -	[`openjdk-14-boot-alpine`, `openjdk-14-boot-2.8.3-alpine`](https://github.com/Quantisan/docker-clojure/blob/e96f6249cac065855a40a9f36ba88949e0a52d7d/target/openjdk-14-alpine/boot/Dockerfile)
 -	[`openjdk-14-tools-deps-alpine`, `openjdk-14-tools-deps-1.10.1.502-alpine`](https://github.com/Quantisan/docker-clojure/blob/e96f6249cac065855a40a9f36ba88949e0a52d7d/target/openjdk-14-alpine/tools-deps/Dockerfile)
 
-# Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+# Quick reference (cont.)
 
 -	**Where to file issues**:  
 	[https://github.com/Quantisan/docker-clojure/issues](https://github.com/Quantisan/docker-clojure/issues)
-
--	**Maintained by**:  
-	[the Docker Community](https://github.com/Quantisan/docker-clojure)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/clojure/), [`arm64v8`](https://hub.docker.com/r/arm64v8/clojure/)

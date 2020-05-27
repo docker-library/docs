@@ -14,22 +14,24 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`4.6.0.12`](https://github.com/aerospike/aerospike-server.docker/blob/a9e640c0f806f17cae0713fd683d4db3331147f0/Dockerfile)
--	[`4.7.0.10`](https://github.com/aerospike/aerospike-server.docker/blob/83f9d3c2294f8f4394b27de1f2b0dd5d3c5f49c8/Dockerfile)
--	[`4.8.0.5`, `latest`](https://github.com/aerospike/aerospike-server.docker/blob/96834bb8e834c299cfb8dbb7dfb8cda3988172ed/Dockerfile)
-
 # Quick reference
+
+-	**Maintained by**:  
+	[Aerospike, Inc.](https://github.com/aerospike/aerospike-server.docker)
 
 -	**Where to get help**:  
 	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
+# Supported tags and respective `Dockerfile` links
+
+-	[`4.8.0.11`](https://github.com/aerospike/aerospike-server.docker/blob/28e5a8dcb3384291a1da9f9bdeef3bd87aeedb84/Dockerfile)
+-	[`4.9.0.8`](https://github.com/aerospike/aerospike-server.docker/blob/ef97bb1d61d672cdb537deb1b773509e32a61abf/Dockerfile)
+-	[`5.0.0.4`, `latest`](https://github.com/aerospike/aerospike-server.docker/blob/177797d0d557f1534d3c952e9a1e29e21eccea05/Dockerfile)
+
+# Quick reference (cont.)
+
 -	**Where to file issues**:  
 	[the Aerospike Forums](https://discuss.aerospike.com) or [GitHub](https://github.com/aerospike/aerospike-server.docker/issues)
-
--	**Maintained by**:  
-	[Aerospike, Inc.](https://github.com/aerospike/aerospike-server.docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/aerospike/)

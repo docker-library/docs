@@ -14,28 +14,24 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`1.7.0`, `1.7`, `latest`](https://github.com/hashicorp/docker-consul/blob/20add33b31a54c8de514a72255618058727f0227/0.X/Dockerfile)
--	[`1.6.3`, `1.6`](https://github.com/hashicorp/docker-consul/blob/a6a7e327b27b148110e9bde6efbac6ea15bac7fa/0.X/Dockerfile)
--	[`1.5.3`, `1.5`](https://github.com/hashicorp/docker-consul/blob/9d0aaa3caf747a7022969bcaaff3399fe34efc9c/0.X/Dockerfile)
--	[`1.4.5`, `1.4`](https://github.com/hashicorp/docker-consul/blob/6294b73920ab700f9b38104f4de0ffe083e462e5/0.X/Dockerfile)
--	[`1.3.1`, `1.3`](https://github.com/hashicorp/docker-consul/blob/9591d8392246c015dfee642f2634237ff791354a/0.X/Dockerfile)
--	[`1.2.4`, `1.2`](https://github.com/hashicorp/docker-consul/blob/1fba73564ac4f8e7bfcc6a59a2ee747ba4dad1e0/0.X/Dockerfile)
--	[`1.1.1`, `1.1`](https://github.com/hashicorp/docker-consul/blob/f52a1b9735ad74bebcf4555ffb8bb6fc1ab2dd95/0.X/Dockerfile)
--	[`1.0.8`, `1.0`](https://github.com/hashicorp/docker-consul/blob/fdad25d89f87b89c7f39c2cd3223f01fbde74ffc/0.X/Dockerfile)
--	[`0.9.4`, `0.9`](https://github.com/hashicorp/docker-consul/blob/dbc28ad074f219b1a5c277491d18f2e5244937c5/0.X/Dockerfile)
-
 # Quick reference
+
+-	**Maintained by**:  
+	[HashiCorp](https://github.com/hashicorp/docker-consul)
 
 -	**Where to get help**:  
 	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
+# Supported tags and respective `Dockerfile` links
+
+-	[`1.8.0-beta2`, `beta`](https://github.com/hashicorp/docker-consul/blob/47c5def6b37c59a5e1ec01d3cd7d5c3ef074c52b/0.X/Dockerfile)
+-	[`1.7.3`, `1.7`, `latest`](https://github.com/hashicorp/docker-consul/blob/9cb67358af03c73222da3badebc7c69d765c456a/0.X/Dockerfile)
+-	[`1.6.5`, `1.6`](https://github.com/hashicorp/docker-consul/blob/5fdce521f44a1cd56d3f5fb92e5732f2ae516d3e/0.X/Dockerfile)
+
+# Quick reference (cont.)
+
 -	**Where to file issues**:  
 	[https://github.com/hashicorp/docker-consul/issues](https://github.com/hashicorp/docker-consul/issues)
-
--	**Maintained by**:  
-	[HashiCorp](https://github.com/hashicorp/docker-consul)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/consul/), [`arm32v6`](https://hub.docker.com/r/arm32v6/consul/), [`arm64v8`](https://hub.docker.com/r/arm64v8/consul/), [`i386`](https://hub.docker.com/r/i386/consul/)

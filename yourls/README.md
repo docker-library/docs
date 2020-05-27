@@ -14,25 +14,27 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`1.7.6-apache`, `1.7-apache`, `1-apache`, `apache`, `1.7.6`, `1.7`, `1`, `latest`](https://github.com/YOURLS/docker-yourls/blob/bfcb6afb84d742a7fd3a9053684fa295aae7d5ac/apache/Dockerfile)
--	[`1.7.6-fpm`, `1.7-fpm`, `1-fpm`, `fpm`](https://github.com/YOURLS/docker-yourls/blob/bfcb6afb84d742a7fd3a9053684fa295aae7d5ac/fpm/Dockerfile)
--	[`1.7.6-fpm-alpine`, `1.7-fpm-alpine`, `1-fpm-alpine`, `fpm-alpine`](https://github.com/YOURLS/docker-yourls/blob/bfcb6afb84d742a7fd3a9053684fa295aae7d5ac/fpm-alpine/Dockerfile)
-
 # Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
-
--	**Where to file issues**:  
-	[https://github.com/YOURLS/docker-yourls/issues](https://github.com/YOURLS/docker-yourls/issues)
 
 -	**Maintained by**:  
 	[YOURLS](https://github.com/YOURLS/docker-yourls)
 
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+# Supported tags and respective `Dockerfile` links
+
+-	[`1.7.9-apache`, `1.7-apache`, `1-apache`, `apache`, `1.7.9`, `1.7`, `1`, `latest`](https://github.com/YOURLS/docker-yourls/blob/fe07662938efe12d7c8c82bea32d1d34874d0665/apache/Dockerfile)
+-	[`1.7.9-fpm`, `1.7-fpm`, `1-fpm`, `fpm`](https://github.com/YOURLS/docker-yourls/blob/fe07662938efe12d7c8c82bea32d1d34874d0665/fpm/Dockerfile)
+-	[`1.7.9-fpm-alpine`, `1.7-fpm-alpine`, `1-fpm-alpine`, `fpm-alpine`](https://github.com/YOURLS/docker-yourls/blob/fe07662938efe12d7c8c82bea32d1d34874d0665/fpm-alpine/Dockerfile)
+
+# Quick reference (cont.)
+
+-	**Where to file issues**:  
+	[https://github.com/YOURLS/docker-yourls/issues](https://github.com/YOURLS/docker-yourls/issues)
+
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/yourls/), [`arm32v5`](https://hub.docker.com/r/arm32v5/yourls/), [`arm32v6`](https://hub.docker.com/r/arm32v6/yourls/), [`arm32v7`](https://hub.docker.com/r/arm32v7/yourls/), [`arm64v8`](https://hub.docker.com/r/arm64v8/yourls/), [`i386`](https://hub.docker.com/r/i386/yourls/), [`ppc64le`](https://hub.docker.com/r/ppc64le/yourls/)
+	[`amd64`](https://hub.docker.com/r/amd64/yourls/), [`arm32v5`](https://hub.docker.com/r/arm32v5/yourls/), [`arm32v6`](https://hub.docker.com/r/arm32v6/yourls/), [`arm32v7`](https://hub.docker.com/r/arm32v7/yourls/), [`arm64v8`](https://hub.docker.com/r/arm64v8/yourls/), [`i386`](https://hub.docker.com/r/i386/yourls/), [`mips64le`](https://hub.docker.com/r/mips64le/yourls/), [`ppc64le`](https://hub.docker.com/r/ppc64le/yourls/), [`s390x`](https://hub.docker.com/r/s390x/yourls/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/yourls/` directory](https://github.com/docker-library/repo-info/blob/master/repos/yourls) ([history](https://github.com/docker-library/repo-info/commits/master/repos/yourls))  
@@ -70,7 +72,7 @@ A few notable/important examples for using this Docker image include:
 -	`-e YOURLS_DB_USER=...` (defaults to "root")
 -	`-e YOURLS_DB_PASS=...` (defaults to the value of the `MYSQL_ROOT_PASSWORD` environment variable from the linked `mysql` container)
 -	`-e YOURLS_DB_NAME=...` (defaults to "yourls")
--	`-e YOURLS_TABLE_PREFIX=...` (defaults to "", only set this when you need to override the default table prefix in wp-config.php)
+-	`-e YOURLS_DB_PREFIX=...` (defaults to "yourls_", only set this when you need to override the default table prefix)
 -	`-e YOURLS_COOKIEKEY=...` (default to unique random SHA1s)
 -	`-e YOURLS_SITE=...` (yourls instance url)
 -	`-e YOURLS_USER=...` (yourls instance user name)

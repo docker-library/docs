@@ -14,21 +14,24 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`latest`, `enterprise`, `6.5.0`, `enterprise-6.5.0`](https://github.com/couchbase/docker/blob/3775225f6eb1e6e9b92bb51ac3c0b86e6989fe9e/enterprise/couchbase-server/6.5.0/Dockerfile)
--	[`community`, `community-6.0.0`](https://github.com/couchbase/docker/blob/201af2d1fd4988d23d980cef5b91763ee5fdc9b7/community/couchbase-server/6.0.0/Dockerfile)
-
 # Quick reference
+
+-	**Maintained by**:  
+	[the Couchbase Docker Team](https://github.com/couchbase/docker)
 
 -	**Where to get help**:  
 	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
+# Supported tags and respective `Dockerfile` links
+
+-	[`latest`, `enterprise`, `6.5.1`, `enterprise-6.5.1`](https://github.com/couchbase/docker/blob/46de65611374973ecf7ec28b0c582a8175d3bda0/enterprise/couchbase-server/6.5.1/Dockerfile)
+-	[`enterprise-6.5.0`](https://github.com/couchbase/docker/blob/46de65611374973ecf7ec28b0c582a8175d3bda0/enterprise/couchbase-server/6.5.0/Dockerfile)
+-	[`community`, `community-6.5.1`](https://github.com/couchbase/docker/blob/f17df7695bbd6efb756b90b683bd5f34d08b5708/community/couchbase-server/6.5.1/Dockerfile)
+
+# Quick reference (cont.)
+
 -	**Where to file issues**:  
 	[https://github.com/couchbase/docker/issues](https://github.com/couchbase/docker/issues)
-
--	**Maintained by**:  
-	[the Couchbase Docker Team](https://github.com/couchbase/docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/couchbase/)

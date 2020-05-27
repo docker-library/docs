@@ -14,24 +14,29 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`latest`, `9`, `9.2`, `9.2.9`, `9.2-jre`, `9.2.9-jre`, `9.2.9.0`, `9.2.9.0-jre`](https://github.com/cpuguy83/docker-jruby/blob/4f090791f66566bb1954b0d124f109505e748fc5/9000/jre/Dockerfile)
--	[`9-jdk`, `9.2-jdk`, `9.2.9-jdk`, `9.2.9.0-jdk`](https://github.com/cpuguy83/docker-jruby/blob/4f090791f66566bb1954b0d124f109505e748fc5/9000/jdk/Dockerfile)
--	[`9-onbuild`, `9.2-onbuild`, `9.2.9-onbuild`, `9.2.9.0-onbuild`](https://github.com/cpuguy83/docker-jruby/blob/4f090791f66566bb1954b0d124f109505e748fc5/9000/onbuild/Dockerfile)
--	[`9.1`, `9.1.17`, `9.1.17.0`, `9.1-jre`, `9.1.17-jre`, `9.1.17.0-jre`](https://github.com/cpuguy83/docker-jruby/blob/8bc3fe27670a851953345182fe12f14f5e708383/9000/jre/Dockerfile)
--	[`9.1-jdk`, `9.1.17-jdk`, `9.1.17.0-jdk`](https://github.com/cpuguy83/docker-jruby/blob/8bc3fe27670a851953345182fe12f14f5e708383/9000/jdk/Dockerfile)
-
 # Quick reference
+
+-	**Maintained by**:  
+	[the Docker Community](https://github.com/cpuguy83/docker-jruby)
 
 -	**Where to get help**:  
 	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
+# Supported tags and respective `Dockerfile` links
+
+-	[`latest`, `9`, `9.2`, `9.2.11`, `9.2-jre`, `9.2-jre8`, `9.2.11-jre`, `9.2.11-jre8`, `9.2.11.1`, `9.2.11.1-jre`, `9.2.11.1-jre8`](https://github.com/cpuguy83/docker-jruby/blob/669ad8f91df152ae83deef766569e0b1f5ec6b2f/9000/jre8/Dockerfile)
+-	[`9-jdk`, `9-jdk8`, `9.2-jdk`, `9.2-jdk8`, `9.2.11-jdk`, `9.2.11-jdk8`, `9.2.11.1-jdk`, `9.2.11.1-jdk8`](https://github.com/cpuguy83/docker-jruby/blob/669ad8f91df152ae83deef766569e0b1f5ec6b2f/9000/jdk8/Dockerfile)
+-	[`9.2-jre11`, `9.2.11-jre11`, `9.2.11.1-jre11`](https://github.com/cpuguy83/docker-jruby/blob/669ad8f91df152ae83deef766569e0b1f5ec6b2f/9000/jre11/Dockerfile)
+-	[`9.2-jdk11`, `9.2.11-jdk11`, `9.2.11.1-jdk11`](https://github.com/cpuguy83/docker-jruby/blob/669ad8f91df152ae83deef766569e0b1f5ec6b2f/9000/jdk11/Dockerfile)
+-	[`9.2-jdk14`, `9.2.11-jdk14`, `9.2.11.1-jdk14`](https://github.com/cpuguy83/docker-jruby/blob/669ad8f91df152ae83deef766569e0b1f5ec6b2f/9000/jdk14/Dockerfile)
+-	[`9-onbuild`, `9.2-onbuild`, `9.2.11-onbuild`, `9.2.11.1-onbuild`](https://github.com/cpuguy83/docker-jruby/blob/669ad8f91df152ae83deef766569e0b1f5ec6b2f/9000/onbuild-jdk8/Dockerfile)
+-	[`9.1`, `9.1.17`, `9.1.17.0`, `9.1-jre`, `9.1.17-jre`, `9.1.17.0-jre`](https://github.com/cpuguy83/docker-jruby/blob/8bc3fe27670a851953345182fe12f14f5e708383/9000/jre/Dockerfile)
+-	[`9.1-jdk`, `9.1.17-jdk`, `9.1.17.0-jdk`](https://github.com/cpuguy83/docker-jruby/blob/8bc3fe27670a851953345182fe12f14f5e708383/9000/jdk/Dockerfile)
+
+# Quick reference (cont.)
+
 -	**Where to file issues**:  
 	[https://github.com/cpuguy83/docker-jruby/issues](https://github.com/cpuguy83/docker-jruby/issues)
-
--	**Maintained by**:  
-	[the Docker Community](https://github.com/cpuguy83/docker-jruby)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/jruby/)

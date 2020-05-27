@@ -2,7 +2,7 @@
 
 The images in this repository contain Open Liberty. For more information about Open Liberty, see the [Open Liberty Website](https://openliberty.io/) site.
 
-If you're looking for Open Liberty based on Red Hat's Universal Base Image, please see [this repo](https://hub.docker.com/r/openliberty/open-liberty).
+This repository contains OpenLiberty based on top of OpenJDK 8 Eclipse OpenJ9 with Ubuntu images only. See [here](https://hub.docker.com/r/openliberty/open-liberty) for Open Liberty based on Red Hat's Universal Base Image, which includes additional java options.
 
 # Image User
 
@@ -49,7 +49,7 @@ Please note that this pattern will duplicate the docker layers for those artifac
 
 There are multiple tags available in this repository.
 
-The `kernel` image contains the Liberty kernel and can be used as the basis for custom built images that contain only the features required for a specific application. For example, the following Dockerfile starts with this image, copies in the `server.xml` that lists the features required by the application and then run a built-in script to install the needed features.
+The `kernel` image contains just the Liberty kernel and no additional runtime features. This image is the recommended basis for custom built images, so that they can contain only the features required for a specific application. For example, the following Dockerfile starts with this image, copies in the `server.xml` that lists the features required by the application, and then uses the `configure.sh` script to download those features from the online repository.
 
 ```dockerfile
 FROM %%IMAGE%%:kernel
@@ -72,7 +72,7 @@ The images are designed to support a number of different usage patterns. The fol
 
 It is a very strong best practice to create an extending Docker image, we called it the `application image`, that encapsulates an application and its configuration. This creates a robust, self-contained and predictable Docker image that can span new containers upon request, without relying on volumes or other external runtime artifacts that may behave different over time.
 
-If you want to build the smallest possible WebSphere Liberty application image you can start with our `kernel` tag, add your artifacts, and run `configure.sh` to grow the set of features to be fit-for-purpose. Please see our [GitHub page](https://github.com/OpenLiberty/ci.docker#building-an-application-image) for more details.
+If you want to build the smallest possible Open Liberty application image you can start with our `kernel` tag, add your artifacts, and run `configure.sh` to grow the set of features to be fit-for-purpose. Please see our [GitHub page](https://github.com/OpenLiberty/ci.docker#building-an-application-image) for more details.
 
 ## Enabling Enterprise functionality
 
@@ -87,7 +87,7 @@ When using `volumes`, an application file can be mounted in the `dropins` direct
 ```console
 $ docker run -d -p 80:9080 -p 443:9443 \
 	    -v /tmp/DefaultServletEngine/dropins/Sample1.war:/config/dropins/Sample1.war \
-	    %%IMAGE%%:webProfile8
+	    %%IMAGE%%:full
 ```
 
 When the server is started, you can browse to http://localhost/Sample1/SimpleServlet on the Docker host.
@@ -99,18 +99,24 @@ For greater flexibility over configuration, it is possible to mount an entire se
 ```console
 $ docker run -d -p 80:9080 \
   -v /tmp/DefaultServletEngine:/config \
-  %%IMAGE%%:webProfile8
+  %%IMAGE%%:full
 ```
 
-# Using `springBoot` images
+# Using Spring Boot with Open Liberty
 
-The `springBoot` images introduce capabilities specific to the support of Spring Boot applications, including the `springBootUtility` used to separate Spring Boot applications into thin applications and dependency library caches. To elaborate these capabilities this section assumes the standalone Spring Boot 2.0.x application `hellospringboot.jar` exists in the `/tmp` directory.
+The `full` images introduce capabilities specific to the support of all Liberty features, including Spring Boot applications. This image thus includes the `springBootUtility` used to separate Spring Boot applications into thin applications and dependency library caches. To get these same capabilities without including features you are not using, build instead on top of `kernel` images and run configure.sh for your server.xml, ensuring that it enables either the `springBoot-1.5` or `springBoot-2.0` feature.
+
+To elaborate these capabilities this section assumes the standalone Spring Boot 2.0.x application `hellospringboot.jar` exists in the `/tmp` directory.
 
 1.	A Spring Boot application JAR deploys to the `dropins/spring` directory within the default server configuration, not the `dropins` directory. Liberty allows one Spring Boot application per server configuration. You can create a Spring Boot application layer over this image by adding the application JAR to the `dropins/spring` directory. In this example we copied `hellospringboot.jar` from `/tmp` to the same directory containing the following Dockerfile.
 
 	```dockerfile
-	FROM %%IMAGE%%:springBoot2
+	FROM %%IMAGE%%:kernel
+
 	COPY --chown=1001:0 hellospringboot.jar /config/dropins/spring/
+	COPY --chown=1001:0 server.xml /config/
+
+	RUN configure.sh
 	```
 
 	The custom image can be built and run as follows.
@@ -120,18 +126,19 @@ The `springBoot` images introduce capabilities specific to the support of Spring
 	$ docker run -d -p 8080:9080 app
 	```
 
-2.	The `springBoot` images provide the library cache directory, `lib.index.cache`, which contains an indexed library cache created by the `springBootUtility` command. Use `lib.index.cache` to provide the library cache for a thin application.
+2.	The `full` images provide the library cache directory, `lib.index.cache`, which contains an indexed library cache created by the `springBootUtility` command. Use `lib.index.cache` to provide the library cache for a thin application.
 
-	You can use the `springBootUtility` command to create thin application and library cache layers over a `springBoot` image. The following example uses docker staging to efficiently build an image that deploys a fat Spring Boot application as two layers containing a thin application and a library cache.
+	You can use the `springBootUtility` command to create thin application and library cache layers over a `full` image. The following example uses docker staging to efficiently build an image that deploys a fat Spring Boot application as two layers containing a thin application and a library cache.
 
 	```dockerfile
-	FROM %%IMAGE%%:springBoot2 as staging
+	FROM %%IMAGE%%:kernel as staging
 	COPY --chown=1001:0 hellospringboot.jar /staging/myFatApp.jar
-	RUN springBootUtility thin \
+	COPY --chown=1001:0 server.xml /config/
+	RUN configure.sh && springBootUtility thin \
 	   --sourceAppPath=/staging/myFatApp.jar \
 	   --targetThinAppPath=/staging/myThinApp.jar \
 	   --targetLibCachePath=/staging/lib.index.cache
-	FROM %%IMAGE%%:springBoot2
+	FROM %%IMAGE%%:kernel
 	COPY --from=staging /staging/lib.index.cache /lib.index.cache
 	COPY --from=staging /staging/myThinApp.jar /config/dropins/spring/myThinApp.jar
 	```

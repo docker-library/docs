@@ -14,20 +14,23 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`2.4.9`, `2.4`, `2`, `latest`](https://github.com/RocketChat/Docker.Official.Image/blob/022483549bdf709aef768fa26afa107b6f06cbb3/Dockerfile)
-
 # Quick reference
+
+-	**Maintained by**:  
+	[Rocket.Chat](https://github.com/RocketChat/Docker.Official.Image)
 
 -	**Where to get help**:  
 	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
+# Supported tags and respective `Dockerfile` links
+
+-	[`3.2.2`, `3.2`, `3`, `latest`](https://github.com/RocketChat/Docker.Official.Image/blob/9cc942405ca293ef01474e2c13a40894ee313851/3/Dockerfile)
+-	[`2.4.12`, `2.4`, `2`](https://github.com/RocketChat/Docker.Official.Image/blob/9cc942405ca293ef01474e2c13a40894ee313851/2/Dockerfile)
+
+# Quick reference (cont.)
+
 -	**Where to file issues**:  
 	[https://github.com/RocketChat/Docker.Official.Image/issues](https://github.com/RocketChat/Docker.Official.Image/issues)
-
--	**Maintained by**:  
-	[Rocket.Chat](https://github.com/RocketChat/Docker.Official.Image)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/rocket.chat/)

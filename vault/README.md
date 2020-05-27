@@ -14,20 +14,23 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`1.3.2`, `latest`](https://github.com/hashicorp/docker-vault/blob/df3e3b2fbb4028f72493734a8ce4349a82a3d1f6/0.X/Dockerfile)
-
 # Quick reference
+
+-	**Maintained by**:  
+	[HashiCorp](https://github.com/hashicorp/docker-vault)
 
 -	**Where to get help**:  
 	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
+# Supported tags and respective `Dockerfile` links
+
+-	[`1.4.2`, `latest`](https://github.com/hashicorp/docker-vault/blob/f5a7567208f4e163185b60089bc9cfe0cf15956f/0.X/Dockerfile)
+-	[`1.3.6`](https://github.com/hashicorp/docker-vault/blob/45c8650877258b7038c17f3acc1b01462c732d43/0.X/Dockerfile)
+
+# Quick reference (cont.)
+
 -	**Where to file issues**:  
 	[https://github.com/hashicorp/docker-vault/issues](https://github.com/hashicorp/docker-vault/issues)
-
--	**Maintained by**:  
-	[HashiCorp](https://github.com/hashicorp/docker-vault)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/vault/), [`arm32v6`](https://hub.docker.com/r/arm32v6/vault/), [`arm64v8`](https://hub.docker.com/r/arm64v8/vault/), [`i386`](https://hub.docker.com/r/i386/vault/)

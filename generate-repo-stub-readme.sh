@@ -1,9 +1,9 @@
-#!/bin/bash
-set -e
+#!/usr/bin/env bash
+set -Eeuo pipefail
 
 cd "$(dirname "$(readlink -f "$BASH_SOURCE")")"
 
-repo="$1"
+repo="${1:-}"
 
 if [ -z "$repo" ]; then
 	echo >&2 'error: no repo specified'
@@ -24,11 +24,11 @@ if [ -s "$repo/github-repo" ]; then
 	canonicalRepo="$(< "$repo/github-repo")"
 fi
 canonicalRepo="$(curl -fsSLI -o /dev/null -w '%{url_effective}\n' "$canonicalRepo")" # follow redirects (http://stackoverflow.com/a/3077316/433558)
-travisRepo="${canonicalRepo#*://github.com/}"
+githubRepoName="${canonicalRepo#*://github.com/}"
 
-if [[ "$travisRepo" = elastic/* ]]; then
+if [[ "$githubRepoName" = elastic/* ]]; then
 	# Elastic points "github-repo" at their upstream elastic/xyz-docker repos, but we want our README stubs to still point at our integration repos
-	travisRepo="docker-library/$repo"
+	githubRepoName="docker-library/$repo"
 fi
 
 maintainer="$(sed -e 's!%%GITHUB-REPO%%!'"$canonicalRepo"'!g' "$repo/maintainer.md")"
@@ -61,10 +61,12 @@ badges=()
 n=$'\n'
 t=$'\t'
 
+branch='master'
 toTest=(
-	"https://img.shields.io/travis/$travisRepo/master.svg?label=Travis%20CI" "https://travis-ci.org/$travisRepo/branches"
-	"https://img.shields.io/appveyor/ci/$travisRepo/master.svg?label=AppVeyor" "https://ci.appveyor.com/project/$travisRepo"
-	"https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/update.sh/job/$repo.svg?label=Automated%20update.sh" "https://doi-janky.infosiftr.net/job/update.sh/job/$repo"
+	"https://img.shields.io/github/workflow/status/$githubRepoName/GitHub%20CI/$branch?label=GitHub%20CI" "https://github.com/$githubRepoName/actions?query=workflow%3A%22GitHub+CI%22+branch%3A$branch"
+	"https://img.shields.io/travis/$githubRepoName/$branch.svg?label=Travis%20CI" "https://travis-ci.org/$githubRepoName/branches"
+	"https://img.shields.io/appveyor/ci/$githubRepoName/$branch.svg?label=AppVeyor" "https://ci.appveyor.com/project/$githubRepoName"
+	"https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/update.sh/job/$repo.svg?label=Automated%20update.sh" "https://doi-janky.infosiftr.net/job/update.sh/job/$repo/"
 )
 
 _check_shields_io_image() {
@@ -91,7 +93,7 @@ if [ -n "$arches" ]; then
 			for jenkinsJob in "job/put-shared/job/light/job/$repo" 'job/put-shared/job/heavy'; do
 				jenkinsImage="https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/$jenkinsJob.svg?label=$arch"
 				if _check_shields_io_image "$jenkinsImage"; then
-					jenkinsLink="https://doi-janky.infosiftr.net/$jenkinsJob"
+					jenkinsLink="https://doi-janky.infosiftr.net/$jenkinsJob/"
 					break
 				fi
 			done
@@ -99,7 +101,7 @@ if [ -n "$arches" ]; then
 				continue
 			fi
 		else
-			jenkinsLink="https://doi-janky.infosiftr.net/job/multiarch/job/$arch/job/$repo"
+			jenkinsLink="https://doi-janky.infosiftr.net/job/multiarch/job/$arch/job/$repo/"
 			jenkinsImage="https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/$arch/job/$repo.svg?label=$arch"
 		fi
 		if _check_shields_io_image "$jenkinsImage"; then

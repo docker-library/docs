@@ -14,37 +14,33 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`1.5`, `1.5.4`](https://github.com/influxdata/influxdata-docker/blob/d80e739adbe01bb2f0cb3db77da3ded6c1556d15/influxdb/1.5/Dockerfile)
--	[`1.5-alpine`, `1.5.4-alpine`](https://github.com/influxdata/influxdata-docker/blob/d80e739adbe01bb2f0cb3db77da3ded6c1556d15/influxdb/1.5/alpine/Dockerfile)
--	[`1.5-data`, `1.5.4-data`](https://github.com/influxdata/influxdata-docker/blob/d80e739adbe01bb2f0cb3db77da3ded6c1556d15/influxdb/1.5/data/Dockerfile)
--	[`1.5-data-alpine`, `1.5.4-data-alpine`](https://github.com/influxdata/influxdata-docker/blob/d80e739adbe01bb2f0cb3db77da3ded6c1556d15/influxdb/1.5/data/alpine/Dockerfile)
--	[`1.5-meta`, `1.5.4-meta`](https://github.com/influxdata/influxdata-docker/blob/d80e739adbe01bb2f0cb3db77da3ded6c1556d15/influxdb/1.5/meta/Dockerfile)
--	[`1.5-meta-alpine`, `1.5.4-meta-alpine`](https://github.com/influxdata/influxdata-docker/blob/d80e739adbe01bb2f0cb3db77da3ded6c1556d15/influxdb/1.5/meta/alpine/Dockerfile)
--	[`1.6`, `1.6.6`](https://github.com/influxdata/influxdata-docker/blob/d80e739adbe01bb2f0cb3db77da3ded6c1556d15/influxdb/1.6/Dockerfile)
--	[`1.6-alpine`, `1.6.6-alpine`](https://github.com/influxdata/influxdata-docker/blob/d80e739adbe01bb2f0cb3db77da3ded6c1556d15/influxdb/1.6/alpine/Dockerfile)
--	[`1.6-data`, `1.6.6-data`](https://github.com/influxdata/influxdata-docker/blob/d80e739adbe01bb2f0cb3db77da3ded6c1556d15/influxdb/1.6/data/Dockerfile)
--	[`1.6-data-alpine`, `1.6.6-data-alpine`](https://github.com/influxdata/influxdata-docker/blob/d80e739adbe01bb2f0cb3db77da3ded6c1556d15/influxdb/1.6/data/alpine/Dockerfile)
--	[`1.6-meta`, `1.6.6-meta`](https://github.com/influxdata/influxdata-docker/blob/d80e739adbe01bb2f0cb3db77da3ded6c1556d15/influxdb/1.6/meta/Dockerfile)
--	[`1.6-meta-alpine`, `1.6.6-meta-alpine`](https://github.com/influxdata/influxdata-docker/blob/d80e739adbe01bb2f0cb3db77da3ded6c1556d15/influxdb/1.6/meta/alpine/Dockerfile)
--	[`1.7`, `1.7.9`, `latest`](https://github.com/influxdata/influxdata-docker/blob/d80e739adbe01bb2f0cb3db77da3ded6c1556d15/influxdb/1.7/Dockerfile)
--	[`1.7-alpine`, `1.7.9-alpine`, `alpine`](https://github.com/influxdata/influxdata-docker/blob/d80e739adbe01bb2f0cb3db77da3ded6c1556d15/influxdb/1.7/alpine/Dockerfile)
--	[`1.7-data`, `1.7.9-data`, `data`](https://github.com/influxdata/influxdata-docker/blob/d80e739adbe01bb2f0cb3db77da3ded6c1556d15/influxdb/1.7/data/Dockerfile)
--	[`1.7-data-alpine`, `1.7.9-data-alpine`, `data-alpine`](https://github.com/influxdata/influxdata-docker/blob/d80e739adbe01bb2f0cb3db77da3ded6c1556d15/influxdb/1.7/data/alpine/Dockerfile)
--	[`1.7-meta`, `1.7.9-meta`, `meta`](https://github.com/influxdata/influxdata-docker/blob/d80e739adbe01bb2f0cb3db77da3ded6c1556d15/influxdb/1.7/meta/Dockerfile)
--	[`1.7-meta-alpine`, `1.7.9-meta-alpine`, `meta-alpine`](https://github.com/influxdata/influxdata-docker/blob/d80e739adbe01bb2f0cb3db77da3ded6c1556d15/influxdb/1.7/meta/alpine/Dockerfile)
-
 # Quick reference
+
+-	**Maintained by**:  
+	[InfluxData](https://github.com/influxdata/influxdata-docker)
 
 -	**Where to get help**:  
 	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
+# Supported tags and respective `Dockerfile` links
+
+-	[`1.7`, `1.7.10`](https://github.com/influxdata/influxdata-docker/blob/032b0c1480b865bd44bb22d97c68cf6c076a04b7/influxdb/1.7/Dockerfile)
+-	[`1.7-alpine`, `1.7.10-alpine`](https://github.com/influxdata/influxdata-docker/blob/032b0c1480b865bd44bb22d97c68cf6c076a04b7/influxdb/1.7/alpine/Dockerfile)
+-	[`1.7-data`, `1.7.10-data`](https://github.com/influxdata/influxdata-docker/blob/032b0c1480b865bd44bb22d97c68cf6c076a04b7/influxdb/1.7/data/Dockerfile)
+-	[`1.7-data-alpine`, `1.7.10-data-alpine`](https://github.com/influxdata/influxdata-docker/blob/032b0c1480b865bd44bb22d97c68cf6c076a04b7/influxdb/1.7/data/alpine/Dockerfile)
+-	[`1.7-meta`, `1.7.10-meta`](https://github.com/influxdata/influxdata-docker/blob/032b0c1480b865bd44bb22d97c68cf6c076a04b7/influxdb/1.7/meta/Dockerfile)
+-	[`1.7-meta-alpine`, `1.7.10-meta-alpine`](https://github.com/influxdata/influxdata-docker/blob/032b0c1480b865bd44bb22d97c68cf6c076a04b7/influxdb/1.7/meta/alpine/Dockerfile)
+-	[`1.8`, `1.8.0`, `latest`](https://github.com/influxdata/influxdata-docker/blob/032b0c1480b865bd44bb22d97c68cf6c076a04b7/influxdb/1.8/Dockerfile)
+-	[`1.8-alpine`, `1.8.0-alpine`, `alpine`](https://github.com/influxdata/influxdata-docker/blob/032b0c1480b865bd44bb22d97c68cf6c076a04b7/influxdb/1.8/alpine/Dockerfile)
+-	[`1.8-data`, `1.8.0-data`, `data`](https://github.com/influxdata/influxdata-docker/blob/032b0c1480b865bd44bb22d97c68cf6c076a04b7/influxdb/1.8/data/Dockerfile)
+-	[`1.8-data-alpine`, `1.8.0-data-alpine`, `data-alpine`](https://github.com/influxdata/influxdata-docker/blob/032b0c1480b865bd44bb22d97c68cf6c076a04b7/influxdb/1.8/data/alpine/Dockerfile)
+-	[`1.8-meta`, `1.8.0-meta`, `meta`](https://github.com/influxdata/influxdata-docker/blob/032b0c1480b865bd44bb22d97c68cf6c076a04b7/influxdb/1.8/meta/Dockerfile)
+-	[`1.8-meta-alpine`, `1.8.0-meta-alpine`, `meta-alpine`](https://github.com/influxdata/influxdata-docker/blob/032b0c1480b865bd44bb22d97c68cf6c076a04b7/influxdb/1.8/meta/alpine/Dockerfile)
+
+# Quick reference (cont.)
+
 -	**Where to file issues**:  
 	[https://github.com/influxdata/influxdata-docker/issues](https://github.com/influxdata/influxdata-docker/issues)
-
--	**Maintained by**:  
-	[InfluxData](https://github.com/influxdata/influxdata-docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/influxdb/), [`arm32v7`](https://hub.docker.com/r/arm32v7/influxdb/), [`arm64v8`](https://hub.docker.com/r/arm64v8/influxdb/)
@@ -67,6 +63,10 @@ InfluxDB is a time series database built from the ground up to handle high write
 [InfluxDB Documentation](https://docs.influxdata.com/influxdb/latest/)
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/43d87118415bb75d7bb107683e79cd6d69186f67/influxdb/logo.png)
+
+## Updating latest to 2.0
+
+In the future, the latest tag for this image will point to the latest released implementation of influxdb 2.0. This will happen when the first general available release for 2.0 exists. If you are using the `latest` tag for any production or development purposes, please update your development environment to reference the `1.8` tag.
 
 ## Using this Image
 
@@ -95,14 +95,9 @@ $ docker run -p 8086:8086 \
 The following ports are important and are used by InfluxDB.
 
 -	8086 HTTP API port
--	8083 Administrator interface port, if it is enabled
 -	2003 Graphite support, if it is enabled
 
 The HTTP API port will be automatically exposed when using `docker run -P`.
-
-The administrator interface is not automatically exposed when using `docker run -P` and is disabled by default. The adminstrator interface requires that the web browser have access to InfluxDB on the same port in the container as from the web browser. Since `-P` exposes the HTTP port to the host on a random port, the administrator interface is not compatible with this setting.
-
-The administrator interface is deprecated as of 1.1.0 and will be removed in 1.3.0.
 
 Find more about API Endpoints & Ports [here](https://docs.influxdata.com/influxdb/latest/concepts/api/).
 
@@ -149,18 +144,6 @@ docker run -p 8086:8086 -p 2003:2003 \
 ```
 
 See the [README on GitHub](https://github.com/influxdata/influxdb/blob/master/services/graphite/README.md) for more detailed documentation to set up the Graphite service. In order to take advantage of graphite templates, you should use a configuration file by outputting a default configuration file using the steps above and modifying the `[[graphite]]` section.
-
-### Administrator Interface
-
-The administrator interface is deprecated as of 1.1.0 and will be removed in 1.3.0. It is disabled by default. If needed, it can still be enabled by setting an environment variable like below:
-
-```console
-docker run -p 8086:8086 -p 8083:8083 \
-    -e INFLUXDB_ADMIN_ENABLED=true \
-    influxdb
-```
-
-To use the administrator interface, both the HTTP API and the administrator interface API's must be forwarded to the same port.
 
 ### HTTP API
 
@@ -258,7 +241,7 @@ To manually initialize the database and exit, the `/init-influxdb.sh` script can
 
 ```console
 $ docker run --rm \
-      -e INFLUXDB_DB=db0 -e INFLUXDB_ADMIN_ENABLED=true \
+      -e INFLUXDB_DB=db0 \
       -e INFLUXDB_ADMIN_USER=admin -e INFLUXDB_ADMIN_PASSWORD=supersecretpassword \
       -e INFLUXDB_USER=telegraf -e INFLUXDB_USER_PASSWORD=secretpassword \
       -v $PWD:/var/lib/influxdb \

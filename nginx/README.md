@@ -14,27 +14,29 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`1.17.8`, `mainline`, `1`, `1.17`, `latest`](https://github.com/nginxinc/docker-nginx/blob/5971de30c487356d5d2a2e1a79e02b2612f9a72f/mainline/buster/Dockerfile)
--	[`1.17.8-perl`, `mainline-perl`, `1-perl`, `1.17-perl`, `perl`](https://github.com/nginxinc/docker-nginx/blob/5971de30c487356d5d2a2e1a79e02b2612f9a72f/mainline/buster-perl/Dockerfile)
--	[`1.17.8-alpine`, `mainline-alpine`, `1-alpine`, `1.17-alpine`, `alpine`](https://github.com/nginxinc/docker-nginx/blob/5971de30c487356d5d2a2e1a79e02b2612f9a72f/mainline/alpine/Dockerfile)
--	[`1.17.8-alpine-perl`, `mainline-alpine-perl`, `1-alpine-perl`, `1.17-alpine-perl`, `alpine-perl`](https://github.com/nginxinc/docker-nginx/blob/5971de30c487356d5d2a2e1a79e02b2612f9a72f/mainline/alpine-perl/Dockerfile)
--	[`1.16.1`, `stable`, `1.16`](https://github.com/nginxinc/docker-nginx/blob/f7738edec51adb47470a96ad120cd63975a9d3d0/stable/buster/Dockerfile)
--	[`1.16.1-perl`, `stable-perl`, `1.16-perl`](https://github.com/nginxinc/docker-nginx/blob/f7738edec51adb47470a96ad120cd63975a9d3d0/stable/buster-perl/Dockerfile)
--	[`1.16.1-alpine`, `stable-alpine`, `1.16-alpine`](https://github.com/nginxinc/docker-nginx/blob/f7738edec51adb47470a96ad120cd63975a9d3d0/stable/alpine/Dockerfile)
--	[`1.16.1-alpine-perl`, `stable-alpine-perl`, `1.16-alpine-perl`](https://github.com/nginxinc/docker-nginx/blob/f7738edec51adb47470a96ad120cd63975a9d3d0/stable/alpine-perl/Dockerfile)
-
 # Quick reference
+
+-	**Maintained by**:  
+	[the NGINX Docker Maintainers](https://github.com/nginxinc/docker-nginx)
 
 -	**Where to get help**:  
 	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
+# Supported tags and respective `Dockerfile` links
+
+-	[`1.17.10`, `mainline`, `1`, `1.17`, `latest`](https://github.com/nginxinc/docker-nginx/blob/594ce7a8bc26c85af88495ac94d5cd0096b306f7/mainline/buster/Dockerfile)
+-	[`1.17.10-perl`, `mainline-perl`, `1-perl`, `1.17-perl`, `perl`](https://github.com/nginxinc/docker-nginx/blob/594ce7a8bc26c85af88495ac94d5cd0096b306f7/mainline/buster-perl/Dockerfile)
+-	[`1.17.10-alpine`, `mainline-alpine`, `1-alpine`, `1.17-alpine`, `alpine`](https://github.com/nginxinc/docker-nginx/blob/594ce7a8bc26c85af88495ac94d5cd0096b306f7/mainline/alpine/Dockerfile)
+-	[`1.17.10-alpine-perl`, `mainline-alpine-perl`, `1-alpine-perl`, `1.17-alpine-perl`, `alpine-perl`](https://github.com/nginxinc/docker-nginx/blob/594ce7a8bc26c85af88495ac94d5cd0096b306f7/mainline/alpine-perl/Dockerfile)
+-	[`1.18.0`, `stable`, `1.18`](https://github.com/nginxinc/docker-nginx/blob/70e44865208627c5ada57242b46920205603c096/stable/buster/Dockerfile)
+-	[`1.18.0-perl`, `stable-perl`, `1.18-perl`](https://github.com/nginxinc/docker-nginx/blob/70e44865208627c5ada57242b46920205603c096/stable/buster-perl/Dockerfile)
+-	[`1.18.0-alpine`, `stable-alpine`, `1.18-alpine`](https://github.com/nginxinc/docker-nginx/blob/70e44865208627c5ada57242b46920205603c096/stable/alpine/Dockerfile)
+-	[`1.18.0-alpine-perl`, `stable-alpine-perl`, `1.18-alpine-perl`](https://github.com/nginxinc/docker-nginx/blob/70e44865208627c5ada57242b46920205603c096/stable/alpine-perl/Dockerfile)
+
+# Quick reference (cont.)
+
 -	**Where to file issues**:  
 	[https://github.com/nginxinc/docker-nginx/issues](https://github.com/nginxinc/docker-nginx/issues)
-
--	**Maintained by**:  
-	[the NGINX Docker Maintainers](https://github.com/nginxinc/docker-nginx)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/nginx/), [`arm32v6`](https://hub.docker.com/r/arm32v6/nginx/), [`arm32v7`](https://hub.docker.com/r/arm32v7/nginx/), [`arm64v8`](https://hub.docker.com/r/arm64v8/nginx/), [`i386`](https://hub.docker.com/r/i386/nginx/), [`ppc64le`](https://hub.docker.com/r/ppc64le/nginx/), [`s390x`](https://hub.docker.com/r/s390x/nginx/)
