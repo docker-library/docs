@@ -24,11 +24,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`10.5.3-bionic`, `10.5-bionic`, `rc-bionic`, `10.5.3`, `10.5`, `rc`](https://github.com/docker-library/mariadb/blob/f2ba44905eb3aed53fca34536f05f109055d9bc2/10.5/Dockerfile)
--	[`10.4.13-bionic`, `10.4-bionic`, `10-bionic`, `bionic`, `10.4.13`, `10.4`, `10`, `latest`](https://github.com/docker-library/mariadb/blob/f2ba44905eb3aed53fca34536f05f109055d9bc2/10.4/Dockerfile)
--	[`10.3.23-bionic`, `10.3-bionic`, `10.3.23`, `10.3`](https://github.com/docker-library/mariadb/blob/f2ba44905eb3aed53fca34536f05f109055d9bc2/10.3/Dockerfile)
--	[`10.2.32-bionic`, `10.2-bionic`, `10.2.32`, `10.2`](https://github.com/docker-library/mariadb/blob/f2ba44905eb3aed53fca34536f05f109055d9bc2/10.2/Dockerfile)
--	[`10.1.45-bionic`, `10.1-bionic`, `10.1.45`, `10.1`](https://github.com/docker-library/mariadb/blob/f2ba44905eb3aed53fca34536f05f109055d9bc2/10.1/Dockerfile)
+-	[`10.5.3-bionic`, `10.5-bionic`, `rc-bionic`, `10.5.3`, `10.5`, `rc`](https://github.com/docker-library/mariadb/blob/1dc8ff16050abd03612148818e533fcb39332395/10.5/Dockerfile)
+-	[`10.4.13-bionic`, `10.4-bionic`, `10-bionic`, `bionic`, `10.4.13`, `10.4`, `10`, `latest`](https://github.com/docker-library/mariadb/blob/1dc8ff16050abd03612148818e533fcb39332395/10.4/Dockerfile)
+-	[`10.3.23-bionic`, `10.3-bionic`, `10.3.23`, `10.3`](https://github.com/docker-library/mariadb/blob/1dc8ff16050abd03612148818e533fcb39332395/10.3/Dockerfile)
+-	[`10.2.32-bionic`, `10.2-bionic`, `10.2.32`, `10.2`](https://github.com/docker-library/mariadb/blob/1dc8ff16050abd03612148818e533fcb39332395/10.2/Dockerfile)
+-	[`10.1.45-bionic`, `10.1-bionic`, `10.1.45`, `10.1`](https://github.com/docker-library/mariadb/blob/1dc8ff16050abd03612148818e533fcb39332395/10.1/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -176,11 +176,15 @@ Do note that there is no need to use this mechanism to create the root superuser
 
 ### `MYSQL_ALLOW_EMPTY_PASSWORD`
 
-This is an optional variable. Set to `yes` to allow the container to be started with a blank password for the root user. *NOTE*: Setting this variable to `yes` is not recommended unless you really know what you are doing, since this will leave your MariaDB instance completely unprotected, allowing anyone to gain complete superuser access.
+This is an optional variable. Set to a non-empty value, like `yes`, to allow the container to be started with a blank password for the root user. *NOTE*: Setting this variable to `yes` is not recommended unless you really know what you are doing, since this will leave your MariaDB instance completely unprotected, allowing anyone to gain complete superuser access.
 
 ### `MYSQL_RANDOM_ROOT_PASSWORD`
 
-This is an optional variable. Set to `yes` to generate a random initial password for the root user (using `pwgen`). The generated root password will be printed to stdout (`GENERATED ROOT PASSWORD: .....`).
+This is an optional variable. Set to a non-empty value, like `yes`, to generate a random initial password for the root user (using `pwgen`). The generated root password will be printed to stdout (`GENERATED ROOT PASSWORD: .....`).
+
+### `MYSQL_INITDB_SKIP_TZINFO`
+
+By default, the entrypoint script automatically loads the timezone data needed for the `CONVERT_TZ()` function. If it is not needed, any non-empty value disables timezone loading.
 
 ## Docker Secrets
 
