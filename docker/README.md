@@ -24,7 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`19.03.11`, `19.03`, `19`, `stable`, `test`, `latest`](https://github.com/docker-library/docker/blob/1e1315f53a45ee2563afb97880feadfad2eb3059/19.03/Dockerfile)
+-	[`19.03.11`, `19.03`, `19`, `stable`, `test`, `latest`](https://github.com/docker-library/docker/blob/eb305f71421bf772cfac2a46571280ff90f60033/19.03/Dockerfile)
 -	[`19.03.11-dind`, `19.03-dind`, `19-dind`, `stable-dind`, `test-dind`, `dind`](https://github.com/docker-library/docker/blob/a73d96e731e2dd5d6822c99a9af4dcbfbbedb2be/19.03/dind/Dockerfile)
 -	[`19.03.11-dind-rootless`, `19.03-dind-rootless`, `19-dind-rootless`, `stable-dind-rootless`, `test-dind-rootless`, `dind-rootless`](https://github.com/docker-library/docker/blob/25c81c65fe4e971ff75e67df38e8b9970b523f6e/19.03/dind-rootless/Dockerfile)
 -	[`19.03.11-git`, `19.03-git`, `19-git`, `stable-git`, `test-git`, `git`](https://github.com/docker-library/docker/blob/7a67842e7ff12c1426ae6a67ac1b7a701b51f3df/19.03/git/Dockerfile)
