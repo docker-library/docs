@@ -24,12 +24,14 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.0.31`, `3.0`, `latest`](https://github.com/orientechnologies/orientdb-docker/blob/7893b07ad8f78b66f1c724244a88a70a05669e6e/release/3.0.x/3.0.31/Dockerfile)
--	[`3.0.31-tp3`, `3.0-tp3`](https://github.com/orientechnologies/orientdb-docker/blob/7893b07ad8f78b66f1c724244a88a70a05669e6e/release/3.0.x/3.0.31-tp3/Dockerfile)
--	[`2.2.37`, `2.2`](https://github.com/orientechnologies/orientdb-docker/blob/76586496ae5457689bebdf76ebd267a3be1aa954/release/2.2.x/2.2.37/Dockerfile)
--	[`2.2.37-spatial`](https://github.com/orientechnologies/orientdb-docker/blob/76586496ae5457689bebdf76ebd267a3be1aa954/release/2.2.x/2.2.37-spatial/Dockerfile)
--	[`2.1.25`, `2.1`](https://github.com/orientechnologies/orientdb-docker/blob/76586496ae5457689bebdf76ebd267a3be1aa954/release/2.1.x/Dockerfile)
--	[`2.0.18`, `2.0`](https://github.com/orientechnologies/orientdb-docker/blob/76586496ae5457689bebdf76ebd267a3be1aa954/release/2.0.x/Dockerfile)
+-	[`3.1.0`, `3.1`, `latest`](https://github.com/orientechnologies/orientdb-docker/blob/0562973e21d0992bc799dcb7b64b1978b7e32ac3/release/3.1.x/3.1.0/Dockerfile)
+-	[`3.1.0-tp3`, `3.1-tp3`](https://github.com/orientechnologies/orientdb-docker/blob/0562973e21d0992bc799dcb7b64b1978b7e32ac3/release/3.1.x/3.1.0-tp3/Dockerfile)
+-	[`3.0.31`, `3.0`](https://github.com/orientechnologies/orientdb-docker/blob/0562973e21d0992bc799dcb7b64b1978b7e32ac3/release/3.0.x/3.0.31/Dockerfile)
+-	[`3.0.31-tp3`, `3.0-tp3`](https://github.com/orientechnologies/orientdb-docker/blob/0562973e21d0992bc799dcb7b64b1978b7e32ac3/release/3.0.x/3.0.31-tp3/Dockerfile)
+-	[`2.2.37`, `2.2`](https://github.com/orientechnologies/orientdb-docker/blob/0562973e21d0992bc799dcb7b64b1978b7e32ac3/release/2.2.x/2.2.37/Dockerfile)
+-	[`2.2.37-spatial`](https://github.com/orientechnologies/orientdb-docker/blob/0562973e21d0992bc799dcb7b64b1978b7e32ac3/release/2.2.x/2.2.37-spatial/Dockerfile)
+-	[`2.1.25`, `2.1`](https://github.com/orientechnologies/orientdb-docker/blob/0562973e21d0992bc799dcb7b64b1978b7e32ac3/release/2.1.x/Dockerfile)
+-	[`2.0.18`, `2.0`](https://github.com/orientechnologies/orientdb-docker/blob/0562973e21d0992bc799dcb7b64b1978b7e32ac3/release/2.0.x/Dockerfile)
 
 # Quick reference (cont.)
 
