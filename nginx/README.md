@@ -122,7 +122,7 @@ $ docker run --name my-custom-nginx-container -d custom-nginx
 
 ### Using environment variables in nginx configuration
 
-Out-of-the-box, nginx doesn't support environment variables inside most configuration blocks. But `envsubst` may be used as a workaround if you need to generate your nginx configuration dynamically before nginx starts.
+Out-of-the-box, nginx doesn't support environment variables inside most configuration blocks. But this image has a function, which will extract environment variables before nginx starts.
 
 Here is an example using docker-compose.yml:
 
@@ -130,19 +130,37 @@ Here is an example using docker-compose.yml:
 web:
   image: nginx
   volumes:
-   - ./mysite.template:/etc/nginx/conf.d/mysite.template
+   - ./templates:/etc/nginx/templates
   ports:
    - "8080:80"
   environment:
    - NGINX_HOST=foobar.com
    - NGINX_PORT=80
-  command: /bin/bash -c "envsubst < /etc/nginx/conf.d/mysite.template > /etc/nginx/conf.d/default.conf && exec nginx -g 'daemon off;'"
 ```
 
-The `mysite.template` file may then contain variable references like this:
+By default, this function reads template files in `/etc/nginx/templates/*.template` and outputs the result of executing `envsubst` to `/etc/nginx/conf.d`.
 
-`listen       ${NGINX_PORT};
-`
+So if you place `templates/default.conf.template` file, which contains variable references like this:
+
+	listen       ${NGINX_PORT};
+
+outputs to `/etc/nginx/conf.d/default.conf` like this:
+
+	listen       80;
+
+This behavior can be changed via the following environment variables:
+
+-	`NGINX_ENVSUBST_TEMPLATE_DIR`
+	-	A directory which contains template files (default: `/etc/nginx/templates`)
+	-	When this directory doesn't exist, this function will do nothing about template processing.
+-	`NGINX_ENVSUBST_TEMPLATE_SUFFIX`
+	-	A suffix of template files (default: `.template`)
+	-	This function only processes the files whose name ends with this suffix.
+-	`NGINX_ENVSUBST_OUTPUT_DIR`
+	-	A directory where the result of executing envsubst is output (default: `/etc/nginx/conf.d`)
+	-	The output filename is the template filename with the suffix removed.
+		-	ex.) `/etc/nginx/templates/default.conf.template` will be output with the filename `/etc/nginx/conf.d/default.conf`.
+	-	This directory must be writable by the user running a container.
 
 ## Running nginx in read-only mode
 
