@@ -24,10 +24,14 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.2.3`, `5.2`, `5.2.3-bionic`, `5.2-bionic`, `bionic`, `latest`](https://github.com/apple/swift-docker/blob/38f179345ace24236d6c09de84e77d91384014cd/5.2/ubuntu/18.04/Dockerfile)
--	[`5.2.3-xenial`, `5.2-xenial`, `xenial`](https://github.com/apple/swift-docker/blob/38f179345ace24236d6c09de84e77d91384014cd/5.2/ubuntu/16.04/Dockerfile)
--	[`5.2.3-slim`, `5.2-slim`, `5.2.3-bionic-slim`, `5.2-bionic-slim`, `bionic-slim`, `slim`](https://github.com/apple/swift-docker/blob/38f179345ace24236d6c09de84e77d91384014cd/5.2/ubuntu/18.04/slim/Dockerfile)
--	[`5.2.3-xenial-slim`, `5.2-xenial-slim`, `xenial-slim`](https://github.com/apple/swift-docker/blob/38f179345ace24236d6c09de84e77d91384014cd/5.2/ubuntu/16.04/slim/Dockerfile)
+-	[`5.2.4`, `5.2`, `5.2.4-bionic`, `5.2-bionic`, `bionic`, `latest`](https://github.com/apple/swift-docker/blob/bcaa665ab185e9af7d82612c9436950e92466451/5.2/ubuntu/18.04/Dockerfile)
+-	[`5.2.4-xenial`, `5.2-xenial`, `xenial`](https://github.com/apple/swift-docker/blob/bcaa665ab185e9af7d82612c9436950e92466451/5.2/ubuntu/16.04/Dockerfile)
+-	[`5.2.4-slim`, `5.2-slim`, `5.2.4-bionic-slim`, `5.2-bionic-slim`, `bionic-slim`, `slim`](https://github.com/apple/swift-docker/blob/bcaa665ab185e9af7d82612c9436950e92466451/5.2/ubuntu/18.04/slim/Dockerfile)
+-	[`5.2.4-xenial-slim`, `5.2-xenial-slim`, `xenial-slim`](https://github.com/apple/swift-docker/blob/bcaa665ab185e9af7d82612c9436950e92466451/5.2/ubuntu/16.04/slim/Dockerfile)
+-	[`5.2.4-focal-slim`, `5.2-focal-slim`, `focal-slim`](https://github.com/apple/swift-docker/blob/bcaa665ab185e9af7d82612c9436950e92466451/5.2/ubuntu/20.04/slim/Dockerfile)
+-	[`5.2.4-focal`, `5.2-focal`, `focal`](https://github.com/apple/swift-docker/blob/bcaa665ab185e9af7d82612c9436950e92466451/5.2/ubuntu/20.04/Dockerfile)
+-	[`5.2.4-amazonlinux2`, `5.2-amazonlinux2`, `amazonlinux2`](https://github.com/apple/swift-docker/blob/bcaa665ab185e9af7d82612c9436950e92466451/5.2/amazonlinux/2/Dockerfile)
+-	[`5.2.4-centos8`, `5.2-centos8`, `centos8`](https://github.com/apple/swift-docker/blob/bcaa665ab185e9af7d82612c9436950e92466451/5.2/centos/8/Dockerfile)
 -	[`5.1.5`, `5.1`, `5.1.5-bionic`, `5.1-bionic`](https://github.com/apple/swift-docker/blob/05538e13a3015675d83e2553cdce5d1d67e17235/5.1/ubuntu/18.04/Dockerfile)
 -	[`5.1.5-xenial`, `5.1-xenial`](https://github.com/apple/swift-docker/blob/05538e13a3015675d83e2553cdce5d1d67e17235/5.1/ubuntu/16.04/Dockerfile)
 -	[`5.1.5-slim`, `5.1-slim`, `5.1.5-bionic-sim`, `5.1-bionic-slim`](https://github.com/apple/swift-docker/blob/05538e13a3015675d83e2553cdce5d1d67e17235/5.1/ubuntu/18.04/slim/Dockerfile)
@@ -116,7 +120,7 @@ The `swift` images come in many flavors, each designed for a specific use case.
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like bionic or xenial in them. These are the suite code names for releases of [Ubuntu](https://wiki.ubuntu.com/Releases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Ubuntu.
+Some of these tags may have names like bionic, focal, or xenial in them. These are the suite code names for releases of [Ubuntu](https://wiki.ubuntu.com/Releases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Ubuntu.
 
 ## `swift:<version>-slim`
 
