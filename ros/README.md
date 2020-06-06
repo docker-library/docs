@@ -29,7 +29,7 @@ WARNING:
 -	[`kinetic-robot`, `kinetic-robot-xenial`](https://github.com/osrf/docker_images/blob/7ff09c2a75e902bc2bb25a1f1ae748ec4e9c7a4b/ros/kinetic/ubuntu/xenial/robot/Dockerfile)
 -	[`kinetic-perception`, `kinetic-perception-xenial`](https://github.com/osrf/docker_images/blob/7ff09c2a75e902bc2bb25a1f1ae748ec4e9c7a4b/ros/kinetic/ubuntu/xenial/perception/Dockerfile)
 -	[`melodic-ros-core`, `melodic-ros-core-bionic`](https://github.com/osrf/docker_images/blob/0b33e61b5bbed5b93b9fba2d5bae5db604ff9b58/ros/melodic/ubuntu/bionic/ros-core/Dockerfile)
--	[`melodic-ros-base`, `melodic-ros-base-bionic`, `melodic`, `latest`](https://github.com/osrf/docker_images/blob/0b33e61b5bbed5b93b9fba2d5bae5db604ff9b58/ros/melodic/ubuntu/bionic/ros-base/Dockerfile)
+-	[`melodic-ros-base`, `melodic-ros-base-bionic`, `melodic`](https://github.com/osrf/docker_images/blob/0b33e61b5bbed5b93b9fba2d5bae5db604ff9b58/ros/melodic/ubuntu/bionic/ros-base/Dockerfile)
 -	[`melodic-robot`, `melodic-robot-bionic`](https://github.com/osrf/docker_images/blob/7ff09c2a75e902bc2bb25a1f1ae748ec4e9c7a4b/ros/melodic/ubuntu/bionic/robot/Dockerfile)
 -	[`melodic-perception`, `melodic-perception-bionic`](https://github.com/osrf/docker_images/blob/7ff09c2a75e902bc2bb25a1f1ae748ec4e9c7a4b/ros/melodic/ubuntu/bionic/perception/Dockerfile)
 -	[`melodic-ros-core-stretch`](https://github.com/osrf/docker_images/blob/0b33e61b5bbed5b93b9fba2d5bae5db604ff9b58/ros/melodic/debian/stretch/ros-core/Dockerfile)
@@ -48,6 +48,8 @@ WARNING:
 -	[`dashing-ros-base`, `dashing-ros-base-bionic`, `dashing`](https://github.com/osrf/docker_images/blob/0b33e61b5bbed5b93b9fba2d5bae5db604ff9b58/ros/dashing/ubuntu/bionic/ros-base/Dockerfile)
 -	[`eloquent-ros-core`, `eloquent-ros-core-bionic`](https://github.com/osrf/docker_images/blob/0b33e61b5bbed5b93b9fba2d5bae5db604ff9b58/ros/eloquent/ubuntu/bionic/ros-core/Dockerfile)
 -	[`eloquent-ros-base`, `eloquent-ros-base-bionic`, `eloquent`](https://github.com/osrf/docker_images/blob/0b33e61b5bbed5b93b9fba2d5bae5db604ff9b58/ros/eloquent/ubuntu/bionic/ros-base/Dockerfile)
+-	[`foxy-ros-core`, `foxy-ros-core-focal`](https://github.com/osrf/docker_images/blob/03c81bdfa9d3b185ac009d9a8ecea26ccd85e179/ros/foxy/ubuntu/focal/ros-core/Dockerfile)
+-	[`foxy-ros-base`, `foxy-ros-base-focal`, `foxy`, `latest`](https://github.com/osrf/docker_images/blob/03c81bdfa9d3b185ac009d9a8ecea26ccd85e179/ros/foxy/ubuntu/focal/ros-base/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -68,30 +70,118 @@ WARNING:
 -	**Source of this description**:  
 	[docs repo's `ros/` directory](https://github.com/docker-library/docs/tree/master/ros) ([history](https://github.com/docker-library/docs/commits/master/ros))
 
-# What is [ROS](http://www.ros.org/)?
+# What is [ROS](https://www.ros.org/)?
 
 The Robot Operating System (ROS) is a set of software libraries and tools that help you build robot applications. From drivers to state-of-the-art algorithms, and with powerful developer tools, ROS has what you need for your next robotics project. And it's all open source.
 
 > [wikipedia.org/wiki/Robot_Operating_System](https://en.wikipedia.org/wiki/Robot_Operating_System)
 
-[![logo](https://raw.githubusercontent.com/docker-library/docs/0074e9dac72a35e5058f356885121aa82572682f/ros/logo.png)](http://www.ros.org/)
+[![logo](https://raw.githubusercontent.com/docker-library/docs/0074e9dac72a35e5058f356885121aa82572682f/ros/logo.png)](https://www.ros.org/)
 
 # How to use this image
 
-## Create a `Dockerfile` in your ROS app project
+## Creating a `Dockerfile` to install ROS packages
+
+To create your own ROS docker images and install custom packages, here's a simple example of installing the C++, Python client library demos using the official released Debian packages via apt-get.
 
 ```dockerfile
-FROM ros:indigo
-# place here your application's setup specifics
-CMD [ "roslaunch", "my-ros-app my-ros-app.launch" ]
+FROM ros:foxy
+
+# install ros package
+RUN apt-get update && apt-get install -y \
+      ros-${ROS_DISTRO}-demo-nodes-cpp \
+      ros-${ROS_DISTRO}-demo-nodes-py && \
+    rm -rf /var/lib/apt/lists/*
+
+# launch ros package
+CMD ["ros2", "launch", "demo_nodes_cpp", "talker_listener.launch.py"]
 ```
 
-You can then build and run the Docker image:
+Note: all ROS images include a default entrypoint that sources the ROS environment setup before executing the configured command, in this case the demo packages launch file. You can then build and run the Docker image like so:
 
 ```console
-$ docker build -t my-ros-app .
-$ docker run -it --rm --name my-running-app my-ros-app
+$ docker build -t my/ros:app .
+$ docker run -it --rm my/ros:app
+[INFO] [launch]: process[talker-1]: started with pid [813]
+[INFO] [launch]: process[listener-2]: started with pid [814]
+[INFO] [talker]: Publishing: 'Hello World: 1'
+[INFO] [listener]: I heard: [Hello World: 1]
+[INFO] [talker]: Publishing: 'Hello World: 2'
+[INFO] [listener]: I heard: [Hello World: 2]
+...
 ```
+
+## Creating a `Dockerfile` to build ROS packages
+
+To create your own ROS docker images and build custom packages, here's a simple example of installing a package's build dependencies, compiling it from source, and installing the resulting build artifacts into a final multi-stage image layer.
+
+```dockerfile
+ARG FROM_IMAGE=ros:foxy
+ARG OVERLAY_WS=/opt/ros/overlay_ws
+
+# multi-stage for caching
+FROM $FROM_IMAGE AS cacher
+
+# clone overlay source
+ARG OVERLAY_WS
+WORKDIR $OVERLAY_WS/src
+RUN echo "\
+repositories: \n\
+  ros2/demos: \n\
+    type: git \n\
+    url: https://github.com/ros2/demos.git \n\
+    version: ${ROS_DISTRO} \n\
+" > ../overlay.repos
+RUN vcs import ./ < ../overlay.repos
+
+# copy manifests for caching
+WORKDIR /opt
+RUN mkdir -p /tmp/opt && \
+    find ./ -name "package.xml" | \
+      xargs cp --parents -t /tmp/opt && \
+    find ./ -name "COLCON_IGNORE" | \
+      xargs cp --parents -t /tmp/opt || true
+
+# multi-stage for building
+FROM $FROM_IMAGE AS builder
+
+# install overlay dependencies
+ARG OVERLAY_WS
+WORKDIR $OVERLAY_WS
+COPY --from=cacher /tmp/$OVERLAY_WS/src ./src
+RUN . /opt/ros/$ROS_DISTRO/setup.sh && \
+    apt-get update && rosdep install -y \
+      --from-paths \
+        src/ros2/demos/demo_nodes_cpp \
+        src/ros2/demos/demo_nodes_py \
+      --ignore-src \
+    && rm -rf /var/lib/apt/lists/*
+
+# build overlay source
+COPY --from=cacher $OVERLAY_WS/src ./src
+ARG OVERLAY_MIXINS="release"
+RUN . /opt/ros/$ROS_DISTRO/setup.sh && \
+    colcon build \
+      --packages-select \
+        demo_nodes_cpp \
+        demo_nodes_py \
+      --mixin $OVERLAY_MIXINS
+
+# source entrypoint setup
+ENV OVERLAY_WS $OVERLAY_WS
+RUN sed --in-place --expression \
+      '$isource "$OVERLAY_WS/install/setup.bash"' \
+      /ros_entrypoint.sh
+
+# run launch file
+CMD ["ros2", "launch", "demo_nodes_cpp", "talker_listener.launch.py"]
+```
+
+The example above starts by using [`vcstool`](https://github.com/dirk-thomas/vcstool) to clone source repos of interest into the cacher stage. One could similarly `COPY` code from the local build context into the source directory as well. Package manifest files are then cached in a temporary directory where the following builder stage may copy from to install necessary dependencies with [`rosdep`](https://github.com/ros-infrastructure/rosdep). This is done prior copying the rest of the source files to preserve the multi stage build cache, given unaltered manifests do not altered declared dependencies, saving time and bandwidth. The overlay is then built using [`colcon`](https://colcon.readthedocs.io/en/released/), the entrypoint updated to source the workspace, and the default command set to launch the demo.
+
+Note: `--from-paths` and `--packages-select` are set here as so to only install the dependencies and build for the demo C++ and Python packages, among many in the demo git repo that was cloned. To install the dependencies and build all the packages in the source workspace, merely change the scope by setting `--from-paths src/` and dropping the `--packages-select` arguments.
+
+For more advance examples such as daisy chaining multiple overlay workspaces to improve caching of docker image build layers, using tools such as ccache to accelerate compilation with colcon, or using buildkit to save build time and bandwidth even when dependencies change, the project `Dockerfile`s in the ROS2 [Navigation2](https://github.com/ros-planning/navigation2) repo are excellent resources.
 
 ## Deployment use cases
 
@@ -101,16 +191,18 @@ Developing such complex systems with cutting edge implementations of newly publi
 
 With the advancements and standardization of software containers, roboticists are primed to acquire a host of improved developer tooling for building and shipping software. To help alleviate the growing pains and technical challenges of adopting new practices, we have focused on providing an official resource for using ROS with these new technologies.
 
+For a complete listing of supported architectures and base images for each ROS Distribution Release, please read the official REP on target platforms for either [ROS1](https://www.ros.org/reps/rep-0003.html) or for [ROS2](https://www.ros.org/reps/rep-2000.html).
+
 ## Deployment suggestions
 
 The available tags include supported distros along with a hierarchy tags based off the most common meta-package dependencies, designed to have a small footprint and simple configuration:
 
--	`ros-core`: barebone ROS install
+-	`ros-core`: minimal ROS install
 -	`ros-base`: basic tools and libraries (also tagged with distro name with LTS version as `latest`)
--	`robot`: basic install for robots
--	`perception`: basic install for perception tasks
 
-The rest of the common meta-packages such as `desktop` and `desktop-full` are hosted on automatic build repos under OSRF's Docker Hub profile [here](https://hub.docker.com/r/osrf/ros/). These meta-packages include graphical dependencies and hook a host of other large packages such as X11, X server, etc. So in the interest of keep the official images lean and secure, the desktop packages are just be hosted with OSRF's profile.
+In the interest of keeping `ros-core` tag minimal in image size, developer tools such as `rosdep`, `colcon` and `vcstools` are not shipped in `ros_core`, but in `ros-base` instead.
+
+The rest of the common meta-packages such as `desktop` and `ros1-bridge` are hosted on automatic build repos under OSRF's Docker Hub profile [here](https://hub.docker.com/r/osrf/ros/). These meta-packages include graphical dependencies and hook a host of other large packages such as X11, X server, etc. So in the interest of keep the official images lean and secure, the desktop packages are just be hosted with OSRF's profile. For a extensive list of available variants, please read the official REP on target platforms for either [ROS1](https://ros.org/reps/rep-0150.html) or for [ROS2](https://www.ros.org/reps/rep-2001.html).
 
 ### Volumes
 
@@ -128,194 +220,122 @@ Some application may require device access for acquiring images from connected c
 
 ### Networks
 
-The ROS runtime "graph" is a peer-to-peer network of processes (potentially distributed across machines) that are loosely coupled using the ROS communication infrastructure. ROS implements several different styles of communication, including synchronous RPC-style communication over services, asynchronous streaming of data over topics, and storage of data on a Parameter Server. To abide by the best practice of [one process per container](https://docs.docker.com/articles/dockerfile_best-practices/), Docker networks can be used to string together several running ROS processes. For further details about [ROS NetworkSetup](http://wiki.ros.org/ROS/NetworkSetup) wik article, or see the Deployment example below.
+ROS allows for peer-to-peer networking of processes (potentially distributed across machines) that are loosely coupled using the ROS communication infrastructure. ROS implements several different styles of communication, including synchronous RPC-style communication over services, asynchronous streaming of typed data over topics, combinations of both prior via request/reply and status/feedback over actions, and run-time settings via configuration over parameters. To abide by the best practice of [one process per container](https://docs.docker.com/articles/dockerfile_best-practices/), Docker networks can be used to string together several running ROS processes. For further details see the Deployment example further below.
+
+Alternatively, more permissive network setting can be used to share all host network interfaces with the container, such as [`host` network driver](https://docs.docker.com/network/host/), simplifying connectivity with external network participants. Be aware however that this removes the networking namespace separation between containers, and can affect the ability of DDS participants to communicate between containers, as documented [here](https://community.rti.com/kb/how-use-rti-connext-dds-communicate-across-docker-containers-using-host-driver).
 
 ## Deployment example
 
-If we want our all ROS nodes to easily talk to each other, we'll can use a virtual network to connect the separate containers. In this short example, we'll create a virtual network, spin up a new container running `roscore` advertised as the `master` service on the new network, then spawn a message publisher and subscriber process as services on the same network.
+### Docker Compose
 
-### Build image
+In this example we'll demonstrate using [`docker-compose`](https://docs.docker.com/compose/) to spawn a pair of message publisher and subscriber nodes in separate containers connected through shared software defined network.
 
-> Build a ROS image that includes ROS tutorials using this `Dockerfile:`
-
-```dockerfile
-FROM ros:indigo-ros-base
-# install ros tutorials packages
-RUN apt-get update && apt-get install -y \
-    ros-indigo-ros-tutorials \
-    ros-indigo-common-tutorials \
-    && rm -rf /var/lib/apt/lists/
-```
-
-> Then to build the image from within the same directory:
-
-```console
-$ docker build --tag ros:ros-tutorials .
-```
-
-#### Create network
-
-> To create a new network `foo`, we use the network command:
-
-	docker network create foo
-
-> Now that we have a network, we can create services. Services advertise there location on the network, making it easy to resolve the location/address of the service specific container. We'll use this make sure our ROS nodes can find and connect to our ROS `master`.
-
-#### Run services
-
-> To create a container for the ROS master and advertise it's service:
-
-```console
-$ docker run -it --rm \
-    --net foo \
-    --name master \
-    ros:ros-tutorials \
-    roscore
-```
-
-> Now you can see that master is running and is ready manage our other ROS nodes. To add our `talker` node, we'll need to point the relevant environment variable to the master service:
-
-```console
-$ docker run -it --rm \
-    --net foo \
-    --name talker \
-    --env ROS_HOSTNAME=talker \
-    --env ROS_MASTER_URI=http://master:11311 \
-    ros:ros-tutorials \
-    rosrun roscpp_tutorials talker
-```
-
-> Then in another terminal, run the `listener` node similarly:
-
-```console
-$ docker run -it --rm \
-    --net foo \
-    --name listener \
-    --env ROS_HOSTNAME=listener \
-    --env ROS_MASTER_URI=http://master:11311 \
-    ros:ros-tutorials \
-    rosrun roscpp_tutorials listener
-```
-
-> Alright! You should see `listener` is now echoing each message the `talker` broadcasting. You can then list the containers and see something like this:
-
-```console
-$ docker service ls
-SERVICE ID          NAME                NETWORK             CONTAINER
-67ce73355e67        listener            foo                 a62019123321
-917ee622d295        master              foo                 f6ab9155fdbe
-7f5a4748fb8d        talker              foo                 e0da2ee7570a
-```
-
-> And for the services:
-
-```console
-$ docker ps
-CONTAINER ID        IMAGE               COMMAND                CREATED              STATUS              PORTS               NAMES
-a62019123321        ros:ros-tutorials   "/ros_entrypoint.sh    About a minute ago   Up About a minute   11311/tcp           listener
-e0da2ee7570a        ros:ros-tutorials   "/ros_entrypoint.sh    About a minute ago   Up About a minute   11311/tcp           talker
-f6ab9155fdbe        ros:ros-tutorials   "/ros_entrypoint.sh    About a minute ago   Up About a minute   11311/tcp           master
-```
-
-#### Introspection
-
-> Ok, now that we see the two nodes are communicating, let get inside one of the containers and do some introspection what exactly the topics are:
-
-```console
-$ docker exec -it master bash
-$ source /ros_entrypoint.sh
-```
-
-> If we then use `rostopic` to list published message topics, we should see something like this:
-
-```console
-$ rostopic list
-/chatter
-/rosout
-/rosout_agg
-```
-
-#### Tear down
-
-> To tear down the structure we've made, we just need to stop the containers and the services. We can stop and remove the containers using `Ctrl^C` where we launched the containers or using the stop command with the names we gave them:
-
-```console
-$ docker stop master talker listener
-$ docker rm master talker listener
-```
-
-### Compose
-
-Now that you have an appreciation for bootstrapping a distributed ROS example manually, lets try and automate it using [`docker-compose`](https://docs.docker.com/compose/).
-
-> Start by making a folder named `rostutorials` and moving the Dockerfile we used earlier inside this directory. Then create a yaml file named `docker-compose.yml` in the same directory and paste the following inside:
+> Create the directory `~/ros_demos` and add the first `Dockerfile` example from above. In the same directory, also create file `docker-compose.yml` with the following that runs a C++ publisher with a Python subscriber:
 
 ```yaml
-version: '2'
+version: '3'
+
 services:
-  master:
-    build: .
-    container_name: master
-    command:
-      - roscore
-  
   talker:
-    build: .
-    container_name: talker
-    environment:
-      - "ROS_HOSTNAME=talker"
-      - "ROS_MASTER_URI=http://master:11311"
-    command: rosrun roscpp_tutorials talker
-  
+    build: ./
+    command: ros2 run demo_nodes_cpp talker
+
   listener:
-    build: .
-    container_name: listener
+    build: ./
     environment:
-      - "ROS_HOSTNAME=listener"
-      - "ROS_MASTER_URI=http://master:11311"
-    command: rosrun roscpp_tutorials listener
+      - "PYTHONUNBUFFERED=1"
+    command: ros2 run demo_nodes_py listener
 ```
 
-> Now from inside the same folder, use docker-copose to launch our ROS nodes and specify that they coexist on their own network:
+> Use docker-compose inside the same directory to launch our ROS nodes. Given the containers created derive from the same docker compose project, they will coexist on shared project network:
 
 ```console
 $ docker-compose up -d
 ```
 
-> Notice that a new network named `rostutorials_default` has now been created, you can inspect it further with:
+> Notice that a new network named `ros_demos` has been created, as can be shown further with:
 
 ```console
-$ docker network inspect rostutorials_default
+$ docker network inspect ros_demos
 ```
 
-> We can monitor the logged output of each service, such as the listener node like so:
+> We can monitor the logged output of each container, such as the listener node like so:
 
 ```console
 $ docker-compose logs listener
 ```
 
-> Finally, we can stop and remove all the relevant containers using docker-copose from the same directory:
+> Finally, we can stop and remove all the relevant containers using docker-compose from the same directory:
 
 ```console
 $ docker-compose stop
 $ docker-compose rm
 ```
 
-> Note: the auto-generated network, `rostutorials_default`, will persist over the life of the docker engine or until you explicitly remove it using [`docker network rm`](https://docs.docker.com/engine/reference/commandline/network_rm/).
+> Note: the auto-generated network, `ros_demos`, will persist until you explicitly remove it using `docker-compose down`.
+
+### ROS1 Bridge
+
++To ease ROS2 migration, [`ros1_bridge`](https://index.ros.org/p/ros1_bridge/github-ros2-ros1_bridge) is a ROS2 package that provides bidirectional communication between ROS1 and ROS2. As a minimal example, given the ROS2 Dockerfile above, we'll create the ROS1 equivalent below, and name the Dockerfile appropriately.
+
+```dockerfile
+FROM ros:noetic
+
+# install ros package
+RUN apt-get update && apt-get install -y \
+      ros-${ROS_DISTRO}-ros-tutorials \
+      ros-${ROS_DISTRO}-common-tutorials && \
+    rm -rf /var/lib/apt/lists/*
+
+# launch ros package
+CMD ["roslaunch", "roscpp_tutorials", "talker_listener.launch"]
+```
+
+The compose file bellow spawns services for both talker listener demos while connecting the two via a dynamic bridge. You may then view the log output from both pairs of talker and listener nodes cross talking over the `/chatter` topic.
+
+```yaml
+version: '3'
+
+services:
+  ros1:
+    build:
+      context: ./
+      dockerfile: ros1.Dockerfile
+
+  ros2:
+    build:
+      context: ./
+      dockerfile: ros2.Dockerfile
+
+  bridge:
+    image: osrf/ros:foxy-ros1-bridge
+    environment:
+      - "ROS_HOSTNAME=bridge"
+      - "ROS_MASTER_URI=http://ros1:11311"
+    command: ros2 run ros1_bridge dynamic_bridge
+```
 
 # More Resources
 
 [ROS.org](http://www.ros.org/): Main ROS website  
-[Wiki](http://wiki.ros.org/): Find tutorials and learn more  
-[ROS Answers](http://answers.ros.org/questions/): Ask questions. Get answers  
+[Q&A](https://answers.ros.org/questions/): Ask questions. Get answers  
+[Forums](https://discourse.ros.org/): Hear the latest discussions  
 [Blog](http://www.ros.org/news/): Stay up-to-date  
-[OSRF](http://www.osrfoundation.org/): Open Source Robotics Foundation
+[Packages](https://index.ros.org/packages/): Discover indexed packages  
+[OSRF](https://www.osrfoundation.org/): Open Source Robotics Foundation
+
+## ROS2
+
+[Index](https://index.ros.org/doc/ros2/): ROS2 Documentation  
+[Design](https://design.ros2.org/): ROS2 Design Articles
+
+## ROS1
+
+[Wiki](http://wiki.ros.org/Documentation): ROS1 Documentation
 
 # License
 
-The core of ROS is licensed under the standard three-clause BSD license. This is a very permissive open license that allows for reuse in commercial and closed source products. You can find more about the BSD license from the Opensource.org [BSD 3-Clause](http://opensource.org/licenses/BSD-3-Clause) page and Wikipedia's [BSD Licenses](http://en.wikipedia.org/wiki/BSD_licenses) entry.
-
-While the core parts of ROS are licensed under the BSD license, other licenses are commonly used in the community packages, such as the [Apache 2.0](http://opensource.org/licenses/Apache-2.0) license, the [GPL](http://opensource.org/licenses/gpl-license) license, the [MIT](http://opensource.org/licenses/MIT) license, and even proprietary licenses. Each package in the ROS ecosystem is required to specify a license, so that it is easy for you to quickly identify if a package will meet your licensing needs.
+View [package index](https://index.ros.org/packages/) for license information on software contained in this image.
 
 As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 
