@@ -136,6 +136,14 @@ web:
   command: [nginx-debug, '-g', 'daemon off;']
 ```
 
+## Entrypoint quiet logs
+
+Since version 1.19.0, a verbose entrypoint was added. It provides information on what's happening during container startup. You can silence this output by setting environment variable `NGINX_ENTRYPOINT_QUIET_LOGS`:
+
+```console
+$ docker run -d -e NGINX_ENTRYPOINT_QUIET_LOGS=1 %%IMAGE%%
+```
+
 ## User and group id
 
 Since 1.17.0, both alpine- and debian-based images variants use the same user and group ids to drop the privileges for worker processes:
