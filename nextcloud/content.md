@@ -128,7 +128,7 @@ If you set any values, they will not be asked in the install page on first run. 
 -	`NEXTCLOUD_ADMIN_USER` Name of the Nextcloud admin user.
 -	`NEXTCLOUD_ADMIN_PASSWORD` Password for the Nextcloud admin user.
 
-+If you want, you can set the data directory, otherwise default value will be used.
+If you want, you can set the data directory, otherwise default value will be used.
 
 -	`NEXTCLOUD_DATA_DIR` (default: */var/www/html/data*) Configures the data directory where nextcloud stores all files from the users.
 
