@@ -127,10 +127,11 @@ The available tags include supported distros along with a hierarchy tags based o
 
 -	`ros-core`: minimal ROS install
 -	`ros-base`: basic tools and libraries (also tagged with distro name with LTS version as `latest`)
+-	`ros1-bridge`: tools and libraries to run hybrid ROS 1 - ROS 2 systems and bridge messages between them
 
 In the interest of keeping `ros-core` tag minimal in image size, developer tools such as `rosdep`, `colcon` and `vcstools` are not shipped in `ros_core`, but in `ros-base` instead.
 
-The rest of the common meta-packages such as `desktop` and `ros1-bridge` are hosted on automatic build repos under OSRF's Docker Hub profile [here](https://hub.docker.com/r/osrf/ros/). These meta-packages include graphical dependencies and hook a host of other large packages such as X11, X server, etc. So in the interest of keep the official images lean and secure, the desktop packages are just be hosted with OSRF's profile. For a extensive list of available variants, please read the official REP on target platforms for either [ROS1](https://ros.org/reps/rep-0150.html) or for [ROS2](https://www.ros.org/reps/rep-2001.html).
+The rest of the common meta-packages such as `desktop` are hosted on repos under OSRF's Docker Hub profile [here](https://hub.docker.com/r/osrf/ros/). These meta-packages include graphical dependencies and hook a host of other large packages such as X11, X server, etc. So in the interest of keep the official images lean and secure, the desktop packages are just be hosted with OSRF's profile. For a extensive list of available variants, please read the official REP on target platforms for either [ROS1](https://ros.org/reps/rep-0150.html) or for [ROS2](https://www.ros.org/reps/rep-2001.html).
 
 ### Volumes
 
@@ -236,7 +237,7 @@ services:
       dockerfile: ros2.Dockerfile
 
   bridge:
-    image: osrf/ros:foxy-ros1-bridge
+    image: ros:foxy-ros1-bridge
     environment:
       - "ROS_HOSTNAME=bridge"
       - "ROS_MASTER_URI=http://ros1:11311"
