@@ -24,7 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `centos8`, `8`, `centos8.1.1911`, `8.1.1911`](https://github.com/CentOS/sig-cloud-instance-images/blob/52cc14a6dd2efc45265417a4690964d32cf13857/docker/Dockerfile)
+-	[`latest`, `centos8`, `8`, `centos8.2.2004`, `8.2.2004`](https://github.com/CentOS/sig-cloud-instance-images/blob/5125788a241618b4d37254050d0bddcbd5b7df33/docker/Dockerfile)
+-	[`centos8.1.1911`, `8.1.1911`](https://github.com/CentOS/sig-cloud-instance-images/blob/52cc14a6dd2efc45265417a4690964d32cf13857/docker/Dockerfile)
 -	[`centos7`, `7`](https://github.com/CentOS/sig-cloud-instance-images/blob/b521221b5c8ac3ac88698e77941a2414ce6e778d/docker/Dockerfile)
 -	[`centos6`, `6`](https://github.com/CentOS/sig-cloud-instance-images/blob/23b05f6a35520ebf338e4df918e4952830da068b/docker/Dockerfile)
 -	[`centos7.8.2003`, `7.8.2003`](https://github.com/CentOS/sig-cloud-instance-images/blob/216a920c467977bbd0f456d3bc381100a88b3768/docker/Dockerfile)
