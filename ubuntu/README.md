@@ -24,12 +24,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`18.04`, `bionic-20200403`, `bionic`](https://github.com/tianon/docker-brew-ubuntu-core/blob/451851eab04432157249eb444d5a42714e2a7112/bionic/Dockerfile)
--	[`19.10`, `eoan-20200410`, `eoan`](https://github.com/tianon/docker-brew-ubuntu-core/blob/451851eab04432157249eb444d5a42714e2a7112/eoan/Dockerfile)
--	[`20.04`, `focal-20200423`, `focal`, `latest`, `rolling`](https://github.com/tianon/docker-brew-ubuntu-core/blob/451851eab04432157249eb444d5a42714e2a7112/focal/Dockerfile)
--	[`20.10`, `groovy-20200505`, `groovy`, `devel`](https://github.com/tianon/docker-brew-ubuntu-core/blob/451851eab04432157249eb444d5a42714e2a7112/groovy/Dockerfile)
--	[`14.04`, `trusty-20191217`, `trusty`](https://github.com/tianon/docker-brew-ubuntu-core/blob/451851eab04432157249eb444d5a42714e2a7112/trusty/Dockerfile)
--	[`16.04`, `xenial-20200326`, `xenial`](https://github.com/tianon/docker-brew-ubuntu-core/blob/451851eab04432157249eb444d5a42714e2a7112/xenial/Dockerfile)
+-	[`18.04`, `bionic-20200526`, `bionic`](https://github.com/tianon/docker-brew-ubuntu-core/blob/7c60863f1bdc0466b648ada069d29a49107cc7be/bionic/Dockerfile)
+-	[`19.10`, `eoan-20200608`, `eoan`](https://github.com/tianon/docker-brew-ubuntu-core/blob/7c60863f1bdc0466b648ada069d29a49107cc7be/eoan/Dockerfile)
+-	[`20.04`, `focal-20200606`, `focal`, `latest`, `rolling`](https://github.com/tianon/docker-brew-ubuntu-core/blob/7c60863f1bdc0466b648ada069d29a49107cc7be/focal/Dockerfile)
+-	[`20.10`, `groovy-20200609`, `groovy`, `devel`](https://github.com/tianon/docker-brew-ubuntu-core/blob/7c60863f1bdc0466b648ada069d29a49107cc7be/groovy/Dockerfile)
+-	[`14.04`, `trusty-20191217`, `trusty`](https://github.com/tianon/docker-brew-ubuntu-core/blob/7c60863f1bdc0466b648ada069d29a49107cc7be/trusty/Dockerfile)
+-	[`16.04`, `xenial-20200514`, `xenial`](https://github.com/tianon/docker-brew-ubuntu-core/blob/7c60863f1bdc0466b648ada069d29a49107cc7be/xenial/Dockerfile)
 
 # Quick reference (cont.)
 
