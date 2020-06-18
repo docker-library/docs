@@ -24,12 +24,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2020.03-apache`, `apache`, `stable-apache`, `2020.03`, `latest`, `stable`](https://github.com/friendica/docker/blob/ad99a985409c5ef4eefb5903b1ec81096dc8f613/2020.03/apache/Dockerfile)
--	[`2020.03-fpm`, `fpm`, `stable-fpm`](https://github.com/friendica/docker/blob/ad99a985409c5ef4eefb5903b1ec81096dc8f613/2020.03/fpm/Dockerfile)
--	[`2020.03-fpm-alpine`, `fpm-alpine`, `stable-fpm-alpine`](https://github.com/friendica/docker/blob/ad99a985409c5ef4eefb5903b1ec81096dc8f613/2020.03/fpm-alpine/Dockerfile)
--	[`2020.06-dev-apache`, `dev-apache`, `2020.06-dev`, `dev`](https://github.com/friendica/docker/blob/ad99a985409c5ef4eefb5903b1ec81096dc8f613/2020.06-dev/apache/Dockerfile)
--	[`2020.06-dev-fpm`, `dev-fpm`](https://github.com/friendica/docker/blob/ad99a985409c5ef4eefb5903b1ec81096dc8f613/2020.06-dev/fpm/Dockerfile)
--	[`2020.06-dev-fpm-alpine`, `dev-fpm-alpine`](https://github.com/friendica/docker/blob/ad99a985409c5ef4eefb5903b1ec81096dc8f613/2020.06-dev/fpm-alpine/Dockerfile)
+-	[`2020.03-apache`, `apache`, `stable-apache`, `2020.03`, `latest`, `stable`](https://github.com/friendica/docker/blob/67af709a0d16c0d2c0bd58cd88a0adfb799e784d/2020.03/apache/Dockerfile)
+-	[`2020.03-fpm`, `fpm`, `stable-fpm`](https://github.com/friendica/docker/blob/67af709a0d16c0d2c0bd58cd88a0adfb799e784d/2020.03/fpm/Dockerfile)
+-	[`2020.03-fpm-alpine`, `fpm-alpine`, `stable-fpm-alpine`](https://github.com/friendica/docker/blob/7fe1de658d8e3fb2bb9c7bd8c76d7856a6f62745/2020.03/fpm-alpine/Dockerfile)
+-	[`2020.06-dev-apache`, `dev-apache`, `2020.06-dev`, `dev`](https://github.com/friendica/docker/blob/67af709a0d16c0d2c0bd58cd88a0adfb799e784d/2020.06-dev/apache/Dockerfile)
+-	[`2020.06-dev-fpm`, `dev-fpm`](https://github.com/friendica/docker/blob/67af709a0d16c0d2c0bd58cd88a0adfb799e784d/2020.06-dev/fpm/Dockerfile)
+-	[`2020.06-dev-fpm-alpine`, `dev-fpm-alpine`](https://github.com/friendica/docker/blob/7fe1de658d8e3fb2bb9c7bd8c76d7856a6f62745/2020.06-dev/fpm-alpine/Dockerfile)
+-	[`2020.06-rc-apache`, `rc-apache`, `2020.06-rc`, `rc`](https://github.com/friendica/docker/blob/67af709a0d16c0d2c0bd58cd88a0adfb799e784d/2020.06-rc/apache/Dockerfile)
+-	[`2020.06-rc-fpm`, `rc-fpm`](https://github.com/friendica/docker/blob/67af709a0d16c0d2c0bd58cd88a0adfb799e784d/2020.06-rc/fpm/Dockerfile)
+-	[`2020.06-rc-fpm-alpine`, `rc-fpm-alpine`](https://github.com/friendica/docker/blob/7fe1de658d8e3fb2bb9c7bd8c76d7856a6f62745/2020.06-rc/fpm-alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -37,7 +40,7 @@ WARNING:
 	[https://github.com/friendica/docker/issues](https://github.com/friendica/docker/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/friendica/), [`arm32v5`](https://hub.docker.com/r/arm32v5/friendica/), [`arm32v6`](https://hub.docker.com/r/arm32v6/friendica/), [`arm32v7`](https://hub.docker.com/r/arm32v7/friendica/), [`arm64v8`](https://hub.docker.com/r/arm64v8/friendica/), [`i386`](https://hub.docker.com/r/i386/friendica/), [`ppc64le`](https://hub.docker.com/r/ppc64le/friendica/)
+	[`amd64`](https://hub.docker.com/r/amd64/friendica/), [`arm32v5`](https://hub.docker.com/r/arm32v5/friendica/), [`arm32v6`](https://hub.docker.com/r/arm32v6/friendica/), [`arm32v7`](https://hub.docker.com/r/arm32v7/friendica/), [`arm64v8`](https://hub.docker.com/r/arm64v8/friendica/), [`i386`](https://hub.docker.com/r/i386/friendica/), [`mips64le`](https://hub.docker.com/r/mips64le/friendica/), [`ppc64le`](https://hub.docker.com/r/ppc64le/friendica/), [`s390x`](https://hub.docker.com/r/s390x/friendica/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/friendica/` directory](https://github.com/docker-library/repo-info/blob/master/repos/friendica) ([history](https://github.com/docker-library/repo-info/commits/master/repos/friendica))  
