@@ -28,6 +28,12 @@ WARNING:
 
 ## Simple Tags
 
+-	[`16-ea-1-jdk-oraclelinux7`, `16-ea-1-oraclelinux7`, `16-ea-jdk-oraclelinux7`, `16-ea-oraclelinux7`, `16-jdk-oraclelinux7`, `16-oraclelinux7`, `16-ea-1-jdk-oracle`, `16-ea-1-oracle`, `16-ea-jdk-oracle`, `16-ea-oracle`, `16-jdk-oracle`, `16-oracle`](https://github.com/docker-library/openjdk/blob/d756977d0e276667d058208811f450e1a8a80a87/16/jdk/oracle/Dockerfile)
+-	[`16-ea-1-jdk-buster`, `16-ea-1-buster`, `16-ea-jdk-buster`, `16-ea-buster`, `16-jdk-buster`, `16-buster`](https://github.com/docker-library/openjdk/blob/d756977d0e276667d058208811f450e1a8a80a87/16/jdk/Dockerfile)
+-	[`16-ea-1-jdk-slim-buster`, `16-ea-1-slim-buster`, `16-ea-jdk-slim-buster`, `16-ea-slim-buster`, `16-jdk-slim-buster`, `16-slim-buster`, `16-ea-1-jdk-slim`, `16-ea-1-slim`, `16-ea-jdk-slim`, `16-ea-slim`, `16-jdk-slim`, `16-slim`](https://github.com/docker-library/openjdk/blob/d756977d0e276667d058208811f450e1a8a80a87/16/jdk/slim/Dockerfile)
+-	[`16-ea-1-jdk-windowsservercore-1809`, `16-ea-1-windowsservercore-1809`, `16-ea-jdk-windowsservercore-1809`, `16-ea-windowsservercore-1809`, `16-jdk-windowsservercore-1809`, `16-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/d756977d0e276667d058208811f450e1a8a80a87/16/jdk/windows/windowsservercore-1809/Dockerfile)
+-	[`16-ea-1-jdk-windowsservercore-ltsc2016`, `16-ea-1-windowsservercore-ltsc2016`, `16-ea-jdk-windowsservercore-ltsc2016`, `16-ea-windowsservercore-ltsc2016`, `16-jdk-windowsservercore-ltsc2016`, `16-windowsservercore-ltsc2016`](https://github.com/docker-library/openjdk/blob/d756977d0e276667d058208811f450e1a8a80a87/16/jdk/windows/windowsservercore-ltsc2016/Dockerfile)
+-	[`16-ea-1-jdk-nanoserver-1809`, `16-ea-1-nanoserver-1809`, `16-ea-jdk-nanoserver-1809`, `16-ea-nanoserver-1809`, `16-jdk-nanoserver-1809`, `16-nanoserver-1809`](https://github.com/docker-library/openjdk/blob/d756977d0e276667d058208811f450e1a8a80a87/16/jdk/windows/nanoserver-1809/Dockerfile)
 -	[`15-ea-27-jdk-oraclelinux7`, `15-ea-27-oraclelinux7`, `15-ea-jdk-oraclelinux7`, `15-ea-oraclelinux7`, `15-jdk-oraclelinux7`, `15-oraclelinux7`, `15-ea-27-jdk-oracle`, `15-ea-27-oracle`, `15-ea-jdk-oracle`, `15-ea-oracle`, `15-jdk-oracle`, `15-oracle`](https://github.com/docker-library/openjdk/blob/1679aaf254c29bae2d2a9755d65b9b4c926343ae/15/jdk/oracle/Dockerfile)
 -	[`15-ea-27-jdk-buster`, `15-ea-27-buster`, `15-ea-jdk-buster`, `15-ea-buster`, `15-jdk-buster`, `15-buster`](https://github.com/docker-library/openjdk/blob/1679aaf254c29bae2d2a9755d65b9b4c926343ae/15/jdk/Dockerfile)
 -	[`15-ea-27-jdk-slim-buster`, `15-ea-27-slim-buster`, `15-ea-jdk-slim-buster`, `15-ea-slim-buster`, `15-jdk-slim-buster`, `15-slim-buster`, `15-ea-27-jdk-slim`, `15-ea-27-slim`, `15-ea-jdk-slim`, `15-ea-slim`, `15-jdk-slim`, `15-slim`](https://github.com/docker-library/openjdk/blob/1679aaf254c29bae2d2a9755d65b9b4c926343ae/15/jdk/slim/Dockerfile)
@@ -64,6 +70,15 @@ WARNING:
 
 ## Shared Tags
 
+-	`16-ea-1-jdk`, `16-ea-1`, `16-ea-jdk`, `16-ea`, `16-jdk`, `16`:
+	-	[`16-ea-1-jdk-oraclelinux7`](https://github.com/docker-library/openjdk/blob/d756977d0e276667d058208811f450e1a8a80a87/16/jdk/oracle/Dockerfile)
+	-	[`16-ea-1-jdk-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/d756977d0e276667d058208811f450e1a8a80a87/16/jdk/windows/windowsservercore-1809/Dockerfile)
+	-	[`16-ea-1-jdk-windowsservercore-ltsc2016`](https://github.com/docker-library/openjdk/blob/d756977d0e276667d058208811f450e1a8a80a87/16/jdk/windows/windowsservercore-ltsc2016/Dockerfile)
+-	`16-ea-1-jdk-windowsservercore`, `16-ea-1-windowsservercore`, `16-ea-jdk-windowsservercore`, `16-ea-windowsservercore`, `16-jdk-windowsservercore`, `16-windowsservercore`:
+	-	[`16-ea-1-jdk-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/d756977d0e276667d058208811f450e1a8a80a87/16/jdk/windows/windowsservercore-1809/Dockerfile)
+	-	[`16-ea-1-jdk-windowsservercore-ltsc2016`](https://github.com/docker-library/openjdk/blob/d756977d0e276667d058208811f450e1a8a80a87/16/jdk/windows/windowsservercore-ltsc2016/Dockerfile)
+-	`16-ea-1-jdk-nanoserver`, `16-ea-1-nanoserver`, `16-ea-jdk-nanoserver`, `16-ea-nanoserver`, `16-jdk-nanoserver`, `16-nanoserver`:
+	-	[`16-ea-1-jdk-nanoserver-1809`](https://github.com/docker-library/openjdk/blob/d756977d0e276667d058208811f450e1a8a80a87/16/jdk/windows/nanoserver-1809/Dockerfile)
 -	`15-ea-27-jdk`, `15-ea-27`, `15-ea-jdk`, `15-ea`, `15-jdk`, `15`:
 	-	[`15-ea-27-jdk-oraclelinux7`](https://github.com/docker-library/openjdk/blob/1679aaf254c29bae2d2a9755d65b9b4c926343ae/15/jdk/oracle/Dockerfile)
 	-	[`15-ea-27-jdk-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/1679aaf254c29bae2d2a9755d65b9b4c926343ae/15/jdk/windows/windowsservercore-1809/Dockerfile)
@@ -215,14 +230,6 @@ Starting with `openjdk:12` the default image as well as the `-oracle` and `-orac
 
 The OpenJDK binaries in the default image as well as the `-oracle` and `-oraclelinux7` variants are built by Oracle and are sourced from the [OpenJDK community](https://openjdk.java.net/). These binaries are licensed under the [GPLv2 with the Classpath Exception](https://openjdk.java.net/legal/gplv2+ce.html).
 
-## `openjdk:<version>-alpine`
-
-This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
-
-This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
-
-To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
-
 ## `openjdk:<version>-windowsservercore`
 
 This image is based on [Windows Server Core (`microsoft/windowsservercore`)](https://hub.docker.com/r/microsoft/windowsservercore/). As such, it only works in places which that image does, such as Windows 10 Professional/Enterprise (Anniversary Edition) or Windows Server 2016.
@@ -231,6 +238,14 @@ For information about how to get Docker running on Windows, please see the relev
 
 -	[Windows Server Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_server)
 -	[Windows 10 Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)
+
+## `openjdk:<version>-alpine`
+
+This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+
+This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+
+To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 # License
 

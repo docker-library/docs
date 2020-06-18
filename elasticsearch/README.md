@@ -24,8 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.7.1`](https://github.com/docker-library/elasticsearch/blob/474535936a32ff1a04aefa197d7ee11e77cd2e21/7/Dockerfile)
--	[`6.8.10`](https://github.com/docker-library/elasticsearch/blob/859c4b22df4b8cec2cc589e0253bfff46d54af9f/6/Dockerfile)
+-	[`7.8.0`](https://github.com/docker-library/elasticsearch/blob/551cff2cb19d99d2c76a8717d7d3007bb23c3a7a/7/Dockerfile)
+-	[`6.8.10`](https://github.com/docker-library/elasticsearch/blob/551cff2cb19d99d2c76a8717d7d3007bb23c3a7a/6/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -33,7 +33,7 @@ WARNING:
 	For issues with Elasticsearch Docker Image or Elasticsearch: https://github.com/elastic/elasticsearch/issues
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/elasticsearch/)
+	[`amd64`](https://hub.docker.com/r/amd64/elasticsearch/), [`arm64v8`](https://hub.docker.com/r/arm64v8/elasticsearch/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/elasticsearch/` directory](https://github.com/docker-library/repo-info/blob/master/repos/elasticsearch) ([history](https://github.com/docker-library/repo-info/commits/master/repos/elasticsearch))  
