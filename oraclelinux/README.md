@@ -28,7 +28,7 @@ WARNING:
 -	[`8.1`](https://github.com/oracle/container-images/blob/616b148f9d90a9b7c8470d666e3f605ef49bc0d2/8.1/Dockerfile)
 -	[`8.0`](https://github.com/oracle/container-images/blob/616b148f9d90a9b7c8470d666e3f605ef49bc0d2/8.0/Dockerfile)
 -	[`8-slim`](https://github.com/oracle/container-images/blob/616b148f9d90a9b7c8470d666e3f605ef49bc0d2/8-slim/Dockerfile)
--	[`7.8`, `7`, `latest`](https://github.com/oracle/container-images/blob/616b148f9d90a9b7c8470d666e3f605ef49bc0d2/7.8/Dockerfile)
+-	[`7.8`, `7`](https://github.com/oracle/container-images/blob/616b148f9d90a9b7c8470d666e3f605ef49bc0d2/7.8/Dockerfile)
 -	[`7-slim`](https://github.com/oracle/container-images/blob/616b148f9d90a9b7c8470d666e3f605ef49bc0d2/7-slim/Dockerfile)
 -	[`6.10`, `6`](https://github.com/oracle/container-images/blob/616b148f9d90a9b7c8470d666e3f605ef49bc0d2/6.10/Dockerfile)
 -	[`6-slim`](https://github.com/oracle/container-images/blob/616b148f9d90a9b7c8470d666e3f605ef49bc0d2/6-slim/Dockerfile)
@@ -61,6 +61,10 @@ Oracle Linux is an open-source operating system available under the GNU General 
 ## How to use these images
 
 The Oracle Linux images are intended for use in the **FROM** field of a downstream `Dockerfile`. For example, to use the latest optimized Oracle Linux 7 image, specify `FROM oraclelinux:7-slim`.
+
+## Removal of `latest` tag
+
+The `latest` tag was removed from the Oracle Linux official images in June 2020 to reduce confusion. Downstream images using `oraclelinux:latest` or no tag should be updated to `oraclelinux:7` for future builds. Note that Oracle recommends using the `-slim` variants for the smallest possible image size.
 
 ## Official Resources
 
