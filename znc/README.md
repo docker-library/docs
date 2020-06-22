@@ -26,8 +26,6 @@ WARNING:
 
 -	[`1.8.1`, `1.8`, `latest`](https://github.com/znc/znc-docker/blob/cb2cabf8d63bc992f530b0fb86d0ad9cf955819d/full/Dockerfile)
 -	[`1.8.1-slim`, `1.8-slim`, `slim`](https://github.com/znc/znc-docker/blob/cb2cabf8d63bc992f530b0fb86d0ad9cf955819d/slim/Dockerfile)
--	[`1.8.0`](https://github.com/znc/znc-docker/blob/91f58af10b62197187af1f0a9695488e88279e98/full/Dockerfile)
--	[`1.8.0-slim`](https://github.com/znc/znc-docker/blob/91f58af10b62197187af1f0a9695488e88279e98/slim/Dockerfile)
 
 # Quick reference (cont.)
 
