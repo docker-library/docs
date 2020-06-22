@@ -20,7 +20,7 @@ WARNING:
 	TeamSpeak Developers [nwerensteijn](https://github.com/nwerensteijn) and [muenchow](https://github.com/muenchow)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
 # Supported tags and respective `Dockerfile` links
 

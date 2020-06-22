@@ -26,7 +26,7 @@ As noted in [docker-library/official-images#4667 (comment)](https://github.com/d
 	[Rapidoid](https://github.com/rapidoid/docker-rapidoid)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
 # Supported tags and respective `Dockerfile` links
 
