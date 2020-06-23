@@ -66,7 +66,7 @@ Then build the image with `docker build -t custom-nginx .` and run it as follows
 $ docker run --name my-custom-nginx-container -d custom-nginx
 ```
 
-### Using environment variables in %%IMAGE%% configuration
+### Using environment variables in %%IMAGE%% configuration (new in 1.19)
 
 Out-of-the-box, %%IMAGE%% doesn't support environment variables inside most configuration blocks. But this image has a function, which will extract environment variables before %%IMAGE%% starts.
 
