@@ -73,7 +73,7 @@ The default configuration requires a running InfluxDB instance as an output plug
 Minimal example to start an InfluxDB container:
 
 ```console
-$ docker run -d --name influxdb -p 8083:8083 -p 8086:8086 influxdb
+$ docker run -d --name influxdb -p 8086:8086 influxdb
 ```
 
 Starting Telegraf using the default config, which connects to InfluxDB at `http://localhost:8086/`:
