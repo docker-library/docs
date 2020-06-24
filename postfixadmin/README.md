@@ -97,25 +97,11 @@ Then, access it via `http://localhost:8080` or `http://host-ip:8080` in a browse
 ## Existing config.local.php
 
 ```console
-$ docker run --name some-postfixadmin -p 8080:80 %%image%%
-$ docker run --name some-postfixadmin -v /local/path/to/config.local.php:/var/www/html/config.local.php -p 8080:80 postfixadmin
+$ docker run -v /local/path/to/config.local.php:/var/www/html/config.local.php \
+           --name some-postfixadmin \
+           -p 8080:80 \
+        postfixadmin
 ```
-
-## Image Variants
-
-The following variants are currently provided:
-
-### apache
-
-This starts an Apache webserver with PHP, so you can use `postfixadmin` out of the box.
-
-### fpm-alpine
-
-This image has a very small footprint. It is based on Alpine Linux and starts only a PHP FPM process. Use this variant if you already have a seperate webserver. If you need more tools, that are not available on Alpine Linux, use the `fpm` image instead.
-
-### fpm
-
-This image starts only a PHP FPM container. Use this variant if you already have a seperate webserver.
 
 ... via [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/) or [`docker-compose`](https://github.com/docker/compose)
 
@@ -129,7 +115,7 @@ services:
     image: mysql:5.7
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: notSecureChangeMe
+      MYSQL_RANDOM_ROOT_PASSWORD: 1
       MYSQL_DATABASE: postfixadmin
       MYSQL_USER: postfixadmin
       MYSQL_PASSWORD: example
@@ -149,7 +135,7 @@ services:
       POSTFIXADMIN_DB_PASSWORD: example
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/be39946abe91fb116d24d8b797c9adacfd15a851/postfixadmin/stack.yml)
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/c011eff7d5385665f43db2e0330716da4ab68e75/postfixadmin/stack.yml)
 
 Run docker stack deploy -c stack.yml postfixadmin (or docker-compose -f stack.yml up), wait for it to initialize completely, and visit http://swarm-ip:8080, http://localhost:8080, or http://host-ip:8080 (as appropriate).
 
@@ -161,13 +147,17 @@ The `postfixadmin` images come in many flavors, each designed for a specific use
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `postfixadmin:<version>-alpine`
+### apache
 
-This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+This starts an Apache webserver with PHP, so you can use `postfixadmin` out of the box.
 
-This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+### fpm
 
-To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
+This image starts only a PHP FPM container. Use this variant if you already have a seperate webserver.
+
+### fpm-alpine
+
+This image has a very small footprint. It is based on Alpine Linux and starts only a PHP FPM process. Use this variant if you already have a seperate webserver. If you need more tools, that are not available on Alpine Linux, use the `fpm` image instead.
 
 # License
 
