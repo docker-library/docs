@@ -66,29 +66,29 @@ $ docker run -d -p 4222:4222 -p 8222:8222 %%IMAGE%%
 Output that you would get if you had started with `-ti` instead of `d` (for daemon):
 
 ```bash
-[1] 2020/02/11 19:45:55.379789 [INF] STREAM: Starting nats-streaming-server[test-cluster] version 0.17.0
-[1] 2020/02/11 19:45:55.379864 [INF] STREAM: ServerID: oe3fSgSCIfkPnbGvQch6k9
-[1] 2020/02/11 19:45:55.379867 [INF] STREAM: Go version: go1.13.7
-[1] 2020/02/11 19:45:55.379869 [INF] STREAM: Git commit: [f4b7190]
-[1] 2020/02/11 19:45:55.380454 [INF] Starting nats-server version 2.1.4
-[1] 2020/02/11 19:45:55.380461 [INF] Git commit [fb009af]
-[1] 2020/02/11 19:45:55.380619 [INF] Starting http monitor on 0.0.0.0:8222
-[1] 2020/02/11 19:45:55.380659 [INF] Listening for client connections on 0.0.0.0:4222
-[1] 2020/02/11 19:45:55.380662 [INF] Server id is NCIJ5WZMDXD3SRQFXAZNMO4C4BMEKVTZA33WLG4VPP7LRE37KIB5D4FX
-[1] 2020/02/11 19:45:55.380664 [INF] Server is ready
-[1] 2020/02/11 19:45:55.407105 [INF] STREAM: Recovering the state...
-[1] 2020/02/11 19:45:55.407113 [INF] STREAM: No recovered state
-[1] 2020/02/11 19:45:55.662310 [INF] STREAM: Message store is MEMORY
-[1] 2020/02/11 19:45:55.662347 [INF] STREAM: ---------- Store Limits ----------
-[1] 2020/02/11 19:45:55.662351 [INF] STREAM: Channels:                  100 *
-[1] 2020/02/11 19:45:55.662355 [INF] STREAM: --------- Channels Limits --------
-[1] 2020/02/11 19:45:55.662358 [INF] STREAM:   Subscriptions:          1000 *
-[1] 2020/02/11 19:45:55.662361 [INF] STREAM:   Messages     :       1000000 *
-[1] 2020/02/11 19:45:55.662364 [INF] STREAM:   Bytes        :     976.56 MB *
-[1] 2020/02/11 19:45:55.662367 [INF] STREAM:   Age          :     unlimited *
-[1] 2020/02/11 19:45:55.662370 [INF] STREAM:   Inactivity   :     unlimited *
-[1] 2020/02/11 19:45:55.662374 [INF] STREAM: ----------------------------------
-[1] 2020/02/11 19:45:55.662377 [INF] STREAM: Streaming Server is ready
+[INF] STREAM: Starting nats-streaming-server[test-cluster] version 0.18.0
+[INF] STREAM: ServerID: QnCizjYJntaQ5YKCLZyMBo
+[INF] STREAM: Go version: go1.14.4
+[INF] STREAM: Git commit: [026e3a6]
+[INF] Starting nats-server version 2.1.7
+[INF] Git commit [bf0930e]
+[INF] Starting http monitor on 0.0.0.0:8222
+[INF] Listening for client connections on 0.0.0.0:4222
+[INF] Server id is NDEL3IH6WM6NOFYFREZE7WOLWSLGDUHDKIRJY65KWF7BLD677T7P4YXS
+[INF] Server is ready
+[INF] STREAM: Recovering the state...
+[INF] STREAM: No recovered state
+[INF] STREAM: Message store is MEMORY
+[INF] STREAM: ---------- Store Limits ----------
+[INF] STREAM: Channels:                  100 *
+[INF] STREAM: --------- Channels Limits --------
+[INF] STREAM:   Subscriptions:          1000 *
+[INF] STREAM:   Messages     :       1000000 *
+[INF] STREAM:   Bytes        :     976.56 MB *
+[INF] STREAM:   Age          :     unlimited *
+[INF] STREAM:   Inactivity   :     unlimited *
+[INF] STREAM: ----------------------------------
+[INF] STREAM: Streaming Server is ready
 ```
 
 To use a file based store instead, you would run:
@@ -96,29 +96,29 @@ To use a file based store instead, you would run:
 ```bash
 $ docker run -d -p 4222:4222 -p 8222:8222 %%IMAGE%% -store file -dir datastore
 
-[1] 2020/02/11 19:46:24.891825 [INF] STREAM: Starting nats-streaming-server[test-cluster] version 0.17.0
-[1] 2020/02/11 19:46:24.891863 [INF] STREAM: ServerID: y2zpmpnNLbnnLX4RGpW4HT
-[1] 2020/02/11 19:46:24.891866 [INF] STREAM: Go version: go1.13.7
-[1] 2020/02/11 19:46:24.891868 [INF] STREAM: Git commit: [f4b7190]
-[1] 2020/02/11 19:46:24.892633 [INF] Starting nats-server version 2.1.4
-[1] 2020/02/11 19:46:24.892653 [INF] Git commit [fb009af]
-[1] 2020/02/11 19:46:24.892837 [INF] Listening for client connections on 0.0.0.0:4222
-[1] 2020/02/11 19:46:24.892857 [INF] Server id is NAB5BC4I4DY7UQ3NJVRYVSZ66SWMWQYCHMMMVO4KZDZU3WUDOBQZYH52
-[1] 2020/02/11 19:46:24.892860 [INF] Server is ready
-[1] 2020/02/11 19:46:24.919546 [INF] STREAM: Recovering the state...
-[1] 2020/02/11 19:46:24.919685 [INF] STREAM: No recovered state
-[1] 2020/02/11 19:46:25.170492 [INF] STREAM: Message store is FILE
-[1] 2020/02/11 19:46:25.170536 [INF] STREAM: Store location: datastore
-[1] 2020/02/11 19:46:25.170563 [INF] STREAM: ---------- Store Limits ----------
-[1] 2020/02/11 19:46:25.170602 [INF] STREAM: Channels:                  100 *
-[1] 2020/02/11 19:46:25.170608 [INF] STREAM: --------- Channels Limits --------
-[1] 2020/02/11 19:46:25.170611 [INF] STREAM:   Subscriptions:          1000 *
-[1] 2020/02/11 19:46:25.170614 [INF] STREAM:   Messages     :       1000000 *
-[1] 2020/02/11 19:46:25.170618 [INF] STREAM:   Bytes        :     976.56 MB *
-[1] 2020/02/11 19:46:25.170621 [INF] STREAM:   Age          :     unlimited *
-[1] 2020/02/11 19:46:25.170624 [INF] STREAM:   Inactivity   :     unlimited *
-[1] 2020/02/11 19:46:25.170627 [INF] STREAM: ----------------------------------
-[1] 2020/02/11 19:46:25.170630 [INF] STREAM: Streaming Server is ready
+[INF] STREAM: Starting nats-streaming-server[test-cluster] version 0.18.0
+[INF] STREAM: ServerID: Qg9dJm1Py4MgvDupmem1Xv
+[INF] STREAM: Go version: go1.14.4
+[INF] STREAM: Git commit: [026e3a6]
+[INF] Starting nats-server version 2.1.7
+[INF] Git commit [bf0930e]
+[INF] Listening for client connections on 0.0.0.0:4222
+[INF] Server id is NAXXNLWA6A3WDOYVZ6RRBMPVBY5AT5L3C2TBYTTMCILIELMXYZ6FZR4Y
+[INF] Server is ready
+[INF] STREAM: Recovering the state...
+[INF] STREAM: No recovered state
+[INF] STREAM: Message store is FILE
+[INF] STREAM: Store location: datastore
+[INF] STREAM: ---------- Store Limits ----------
+[INF] STREAM: Channels:                  100 *
+[INF] STREAM: --------- Channels Limits --------
+[INF] STREAM:   Subscriptions:          1000 *
+[INF] STREAM:   Messages     :       1000000 *
+[INF] STREAM:   Bytes        :     976.56 MB *
+[INF] STREAM:   Age          :     unlimited *
+[INF] STREAM:   Inactivity   :     unlimited *
+[INF] STREAM: ----------------------------------
+[INF] STREAM: Streaming Server is ready
 ```
 
 You can also connect to a remote NATS Server running in a docker image. First, run NATS Server:
@@ -132,24 +132,24 @@ Now, start the Streaming server and link it to the above docker image:
 ```bash
 $ docker run -d --link nats-main %%IMAGE%% -store file -dir datastore -ns nats://nats-main:4222
 
-[1] 2020/02/11 19:46:40.206660 [INF] STREAM: Starting nats-streaming-server[test-cluster] version 0.17.0
-[1] 2020/02/11 19:46:40.206699 [INF] STREAM: ServerID: bon7pyyeNH4ClntI1fCJos
-[1] 2020/02/11 19:46:40.206702 [INF] STREAM: Go version: go1.13.7
-[1] 2020/02/11 19:46:40.206704 [INF] STREAM: Git commit: [f4b7190]
-[1] 2020/02/11 19:46:40.233833 [INF] STREAM: Recovering the state...
-[1] 2020/02/11 19:46:40.233992 [INF] STREAM: No recovered state
-[1] 2020/02/11 19:46:40.487836 [INF] STREAM: Message store is FILE
-[1] 2020/02/11 19:46:40.487845 [INF] STREAM: Store location: datastore
-[1] 2020/02/11 19:46:40.487884 [INF] STREAM: ---------- Store Limits ----------
-[1] 2020/02/11 19:46:40.487963 [INF] STREAM: Channels:                  100 *
-[1] 2020/02/11 19:46:40.487966 [INF] STREAM: --------- Channels Limits --------
-[1] 2020/02/11 19:46:40.487968 [INF] STREAM:   Subscriptions:          1000 *
-[1] 2020/02/11 19:46:40.487993 [INF] STREAM:   Messages     :       1000000 *
-[1] 2020/02/11 19:46:40.487995 [INF] STREAM:   Bytes        :     976.56 MB *
-[1] 2020/02/11 19:46:40.488023 [INF] STREAM:   Age          :     unlimited *
-[1] 2020/02/11 19:46:40.488025 [INF] STREAM:   Inactivity   :     unlimited *
-[1] 2020/02/11 19:46:40.488027 [INF] STREAM: ----------------------------------
-[1] 2020/02/11 19:46:40.488029 [INF] STREAM: Streaming Server is ready
+[INF] STREAM: Starting nats-streaming-server[test-cluster] version 0.18.0
+[INF] STREAM: ServerID: LdiEVHvuGYnzAucXW419dX
+[INF] STREAM: Go version: go1.14.4
+[INF] STREAM: Git commit: [026e3a6]
+[INF] STREAM: Recovering the state...
+[INF] STREAM: Recovered 0 channel(s)
+[INF] STREAM: Message store is FILE
+[INF] STREAM: Store location: datastore
+[INF] STREAM: ---------- Store Limits ----------
+[INF] STREAM: Channels:                  100 *
+[INF] STREAM: --------- Channels Limits --------
+[INF] STREAM:   Subscriptions:          1000 *
+[INF] STREAM:   Messages     :       1000000 *
+[INF] STREAM:   Bytes        :     976.56 MB *
+[INF] STREAM:   Age          :     unlimited *
+[INF] STREAM:   Inactivity   :     unlimited *
+[INF] STREAM: ----------------------------------
+[INF] STREAM: Streaming Server is ready
 ```
 
 Notice that the output shows that the NATS Server was not started, as opposed to the first output.
@@ -173,7 +173,7 @@ Streaming Server Options:
     -hbt, --hb_timeout <duration>        How long server waits for a heartbeat response
     -hbf, --hb_fail_count <int>          Number of failed heartbeats before server closes the client connection
           --ft_group <string>            Name of the FT Group. A group can be 2 or more servers with a single active server and all sharing the same datastore
-    -sl,  --signal <signal>[=<pid>]      Send signal to nats-streaming-server process (stop, quit, reopen)
+    -sl,  --signal <signal>[=<pid>]      Send signal to nats-streaming-server process (stop, quit, reopen, reload - only for embedded NATS Server)
           --encrypt <bool>               Specify if server should use encryption at rest
           --encryption_cipher <string>   Cipher to use for encryption. Currently support AES and CHAHA (ChaChaPoly). Defaults to AES
           --encryption_key <string>      Encryption Key. It is recommended to specify it through the NATS_STREAMING_ENCRYPTION_KEY environment variable instead
@@ -240,7 +240,7 @@ Embedded NATS Server Options:
 Logging Options:
     -l, --log <string>               File to redirect log output
     -T, --logtime=<bool>             Timestamp log entries (default: true)
-    -s, --syslog <string>            Enable syslog as log method
+    -s, --syslog <bool>              Enable syslog as log method
     -r, --remote_syslog <string>     Syslog server addr (udp://localhost:514)
     -D, --debug=<bool>               Enable debugging output
     -V, --trace=<bool>               Trace the raw protocol
