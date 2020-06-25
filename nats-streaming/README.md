@@ -28,15 +28,22 @@ WARNING:
 
 ## Simple Tags
 
--	[`0.17.0-linux`, `linux`](https://github.com/nats-io/nats-streaming-docker/blob/9716618a61deba8a7e28b69d53d95d698bde5117/amd64/Dockerfile)
--	[`0.17.0-nanoserver-1809`, `nanoserver-1809`](https://github.com/nats-io/nats-streaming-docker/blob/9716618a61deba8a7e28b69d53d95d698bde5117/windows/nanoserver-1809/Dockerfile)
--	[`0.17.0-windowsservercore`, `windowsservercore`](https://github.com/nats-io/nats-streaming-docker/blob/9716618a61deba8a7e28b69d53d95d698bde5117/windows/windowsservercore/Dockerfile)
+-	[`0.18.0-alpine3.12`, `0.18-alpine3.12`, `alpine3.12`, `0.18.0-alpine`, `0.18-alpine`, `alpine`](https://github.com/nats-io/nats-streaming-docker/blob/f3b3e48bdaa499e7f583e4cd0034df31a08644a6/0.18.0/alpine3.12/Dockerfile)
+-	[`0.18.0-scratch`, `0.18-scratch`, `scratch`, `0.18.0-linux`, `0.18-linux`, `linux`](https://github.com/nats-io/nats-streaming-docker/blob/f3b3e48bdaa499e7f583e4cd0034df31a08644a6/0.18.0/scratch/Dockerfile)
+-	[`0.18.0-windowsservercore-1809`, `0.18-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/nats-io/nats-streaming-docker/blob/f3b3e48bdaa499e7f583e4cd0034df31a08644a6/0.18.0/windowsservercore-1809/Dockerfile)
+-	[`0.18.0-nanoserver-1809`, `0.18-nanoserver-1809`, `nanoserver-1809`](https://github.com/nats-io/nats-streaming-docker/blob/f3b3e48bdaa499e7f583e4cd0034df31a08644a6/0.18.0/nanoserver-1809/Dockerfile)
+-	[`0.18.0-windowsservercore-ltsc2016`, `0.18-windowsservercore-ltsc2016`, `windowsservercore-ltsc2016`](https://github.com/nats-io/nats-streaming-docker/blob/f3b3e48bdaa499e7f583e4cd0034df31a08644a6/0.18.0/windowsservercore-ltsc2016/Dockerfile)
 
 ## Shared Tags
 
--	`0.17.0`, `latest`:
-	-	[`0.17.0-linux`](https://github.com/nats-io/nats-streaming-docker/blob/9716618a61deba8a7e28b69d53d95d698bde5117/amd64/Dockerfile)
-	-	[`0.17.0-nanoserver-1809`](https://github.com/nats-io/nats-streaming-docker/blob/9716618a61deba8a7e28b69d53d95d698bde5117/windows/nanoserver-1809/Dockerfile)
+-	`0.18.0`, `0.18`, `latest`:
+	-	[`0.18.0-scratch`](https://github.com/nats-io/nats-streaming-docker/blob/f3b3e48bdaa499e7f583e4cd0034df31a08644a6/0.18.0/scratch/Dockerfile)
+	-	[`0.18.0-nanoserver-1809`](https://github.com/nats-io/nats-streaming-docker/blob/f3b3e48bdaa499e7f583e4cd0034df31a08644a6/0.18.0/nanoserver-1809/Dockerfile)
+-	`0.18.0-windowsservercore`, `0.18-windowsservercore`, `windowsservercore`:
+	-	[`0.18.0-windowsservercore-1809`](https://github.com/nats-io/nats-streaming-docker/blob/f3b3e48bdaa499e7f583e4cd0034df31a08644a6/0.18.0/windowsservercore-1809/Dockerfile)
+	-	[`0.18.0-windowsservercore-ltsc2016`](https://github.com/nats-io/nats-streaming-docker/blob/f3b3e48bdaa499e7f583e4cd0034df31a08644a6/0.18.0/windowsservercore-ltsc2016/Dockerfile)
+-	`0.18.0-nanoserver`, `0.18-nanoserver`, `nanoserver`:
+	-	[`0.18.0-nanoserver-1809`](https://github.com/nats-io/nats-streaming-docker/blob/f3b3e48bdaa499e7f583e4cd0034df31a08644a6/0.18.0/nanoserver-1809/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -338,6 +345,14 @@ The `nats-streaming` images come in many flavors, each designed for a specific u
 ## `nats-streaming:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+## `nats-streaming:<version>-alpine`
+
+This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+
+This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+
+To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 ## `nats-streaming:<version>-windowsservercore`
 
