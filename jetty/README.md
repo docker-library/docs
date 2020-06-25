@@ -17,7 +17,7 @@ WARNING:
 # Quick reference
 
 -	**Maintained by**:  
-	[the Docker Community](https://github.com/eclipse/jetty.docker)
+	[the Docker Community](https://github.com/appropriate/docker-jetty)
 
 -	**Where to get help**:  
 	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
@@ -52,7 +52,7 @@ WARNING:
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/eclipse/jetty.docker/issues](https://github.com/eclipse/jetty.docker/issues)
+	[https://github.com/appropriate/docker-jetty/issues](https://github.com/appropriate/docker-jetty/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/jetty/), [`arm64v8`](https://hub.docker.com/r/arm64v8/jetty/)
@@ -186,7 +186,7 @@ This image does not contain the common packages contained in the default tag and
 
 # License
 
-View [license information](http://eclipse.org/jetty/licenses.html) for the software contained in this image.
+View [license information](http://eclipse.org/jetty/licenses.php) for the software contained in this image.
 
 As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 
