@@ -24,6 +24,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
+-	[`8.0.0alpha1-cli-buster`, `8.0-rc-cli-buster`, `rc-cli-buster`, `8.0.0alpha1-buster`, `8.0-rc-buster`, `rc-buster`, `8.0.0alpha1-cli`, `8.0-rc-cli`, `rc-cli`, `8.0.0alpha1`, `8.0-rc`, `rc`](https://github.com/docker-library/php/blob/a414802d2e033af3fc2214dbcbf5410af7269936/8.0-rc/buster/cli/Dockerfile)
+-	[`8.0.0alpha1-apache-buster`, `8.0-rc-apache-buster`, `rc-apache-buster`, `8.0.0alpha1-apache`, `8.0-rc-apache`, `rc-apache`](https://github.com/docker-library/php/blob/a414802d2e033af3fc2214dbcbf5410af7269936/8.0-rc/buster/apache/Dockerfile)
+-	[`8.0.0alpha1-fpm-buster`, `8.0-rc-fpm-buster`, `rc-fpm-buster`, `8.0.0alpha1-fpm`, `8.0-rc-fpm`, `rc-fpm`](https://github.com/docker-library/php/blob/a414802d2e033af3fc2214dbcbf5410af7269936/8.0-rc/buster/fpm/Dockerfile)
+-	[`8.0.0alpha1-zts-buster`, `8.0-rc-zts-buster`, `rc-zts-buster`, `8.0.0alpha1-zts`, `8.0-rc-zts`, `rc-zts`](https://github.com/docker-library/php/blob/a414802d2e033af3fc2214dbcbf5410af7269936/8.0-rc/buster/zts/Dockerfile)
+-	[`8.0.0alpha1-cli-alpine3.12`, `8.0-rc-cli-alpine3.12`, `rc-cli-alpine3.12`, `8.0.0alpha1-alpine3.12`, `8.0-rc-alpine3.12`, `rc-alpine3.12`, `8.0.0alpha1-cli-alpine`, `8.0-rc-cli-alpine`, `rc-cli-alpine`, `8.0.0alpha1-alpine`, `8.0-rc-alpine`, `rc-alpine`](https://github.com/docker-library/php/blob/a414802d2e033af3fc2214dbcbf5410af7269936/8.0-rc/alpine3.12/cli/Dockerfile)
+-	[`8.0.0alpha1-fpm-alpine3.12`, `8.0-rc-fpm-alpine3.12`, `rc-fpm-alpine3.12`, `8.0.0alpha1-fpm-alpine`, `8.0-rc-fpm-alpine`, `rc-fpm-alpine`](https://github.com/docker-library/php/blob/a414802d2e033af3fc2214dbcbf5410af7269936/8.0-rc/alpine3.12/fpm/Dockerfile)
 -	[`7.4.7-cli-buster`, `7.4-cli-buster`, `7-cli-buster`, `cli-buster`, `7.4.7-buster`, `7.4-buster`, `7-buster`, `buster`, `7.4.7-cli`, `7.4-cli`, `7-cli`, `cli`, `7.4.7`, `7.4`, `7`, `latest`](https://github.com/docker-library/php/blob/b6fd2f70018163227f0f18f3ba1fa4d70e6d929e/7.4/buster/cli/Dockerfile)
 -	[`7.4.7-apache-buster`, `7.4-apache-buster`, `7-apache-buster`, `apache-buster`, `7.4.7-apache`, `7.4-apache`, `7-apache`, `apache`](https://github.com/docker-library/php/blob/b6fd2f70018163227f0f18f3ba1fa4d70e6d929e/7.4/buster/apache/Dockerfile)
 -	[`7.4.7-fpm-buster`, `7.4-fpm-buster`, `7-fpm-buster`, `fpm-buster`, `7.4.7-fpm`, `7.4-fpm`, `7-fpm`, `fpm`](https://github.com/docker-library/php/blob/b6fd2f70018163227f0f18f3ba1fa4d70e6d929e/7.4/buster/fpm/Dockerfile)
