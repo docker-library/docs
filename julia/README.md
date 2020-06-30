@@ -29,6 +29,7 @@ WARNING:
 ## Simple Tags
 
 -	[`1.5.0-rc1-buster`, `1.5.0-buster`, `1.5-buster`, `1.5-rc-buster`, `rc-buster`](https://github.com/docker-library/julia/blob/6a716f3d1f28aaafce298c33e27a053443eec6fb/1.5-rc/buster/Dockerfile)
+-	[`1.5.0-rc1-alpine3.12`, `1.5.0-alpine3.12`, `1.5-alpine3.12`, `1.5-rc-alpine3.12`, `rc-alpine3.12`, `1.5.0-rc1-alpine`, `1.5.0-alpine`, `1.5-alpine`, `1.5-rc-alpine`, `rc-alpine`](https://github.com/docker-library/julia/blob/fb8e27612702b2dc93f109947a4df0f99477f3b0/1.5-rc/alpine3.12/Dockerfile)
 -	[`1.5.0-rc1-windowsservercore-ltsc2016`, `1.5.0-windowsservercore-ltsc2016`, `1.5-windowsservercore-ltsc2016`, `1.5-rc-windowsservercore-ltsc2016`, `rc-windowsservercore-ltsc2016`](https://github.com/docker-library/julia/blob/6a716f3d1f28aaafce298c33e27a053443eec6fb/1.5-rc/windows/windowsservercore-ltsc2016/Dockerfile)
 -	[`1.5.0-rc1-windowsservercore-1809`, `1.5.0-windowsservercore-1809`, `1.5-windowsservercore-1809`, `1.5-rc-windowsservercore-1809`, `rc-windowsservercore-1809`](https://github.com/docker-library/julia/blob/6a716f3d1f28aaafce298c33e27a053443eec6fb/1.5-rc/windows/windowsservercore-1809/Dockerfile)
 -	[`1.4.2-buster`, `1.4-buster`, `1-buster`, `buster`](https://github.com/docker-library/julia/blob/a427b70887e18776bf16b3f06bfc136a65392690/1.4/buster/Dockerfile)
@@ -106,6 +107,14 @@ The `julia` images come in many flavors, each designed for a specific use case.
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
 Some of these tags may have names like buster or stretch in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+
+## `julia:<version>-alpine`
+
+This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+
+This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+
+To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 ## `julia:<version>-windowsservercore`
 
