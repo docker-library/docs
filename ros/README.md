@@ -53,6 +53,9 @@ WARNING:
 -	[`foxy-ros-core`, `foxy-ros-core-focal`](https://github.com/osrf/docker_images/blob/03c81bdfa9d3b185ac009d9a8ecea26ccd85e179/ros/foxy/ubuntu/focal/ros-core/Dockerfile)
 -	[`foxy-ros-base`, `foxy-ros-base-focal`, `foxy`, `latest`](https://github.com/osrf/docker_images/blob/03c81bdfa9d3b185ac009d9a8ecea26ccd85e179/ros/foxy/ubuntu/focal/ros-base/Dockerfile)
 -	[`foxy-ros1-bridge`, `foxy-ros1-bridge-focal`](https://github.com/osrf/docker_images/blob/c71d7177eaad534e42307b4e7ab7e30078c884de/ros/foxy/ubuntu/focal/ros1-bridge/Dockerfile)
+-	[`rolling-ros-core`, `rolling-ros-core-focal`](https://github.com/osrf/docker_images/blob/f8cfc3fa7ee88d6b59ae18deedd179b8de4c3eb2/ros/rolling/ubuntu/focal/ros-core/Dockerfile)
+-	[`rolling-ros-base`, `rolling-ros-base-focal`, `rolling`](https://github.com/osrf/docker_images/blob/f8cfc3fa7ee88d6b59ae18deedd179b8de4c3eb2/ros/rolling/ubuntu/focal/ros-base/Dockerfile)
+-	[`rolling-ros1-bridge`, `rolling-ros1-bridge-focal`](https://github.com/osrf/docker_images/blob/f8cfc3fa7ee88d6b59ae18deedd179b8de4c3eb2/ros/rolling/ubuntu/focal/ros1-bridge/Dockerfile)
 
 # Quick reference (cont.)
 
