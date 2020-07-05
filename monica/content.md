@@ -16,7 +16,7 @@ The `fpm` tag contains a fastCGI-Process that serves the web pages. This image s
 
 This image contains a webserver that exposes port 80. Run the container with:
 
-```sh
+```console
 docker run --name some-%%REPO%% -d -p 80:80 %%IMAGE%%
 ```
 
@@ -24,7 +24,7 @@ docker run --name some-%%REPO%% -d -p 80:80 %%IMAGE%%
 
 This image serves a fastCGI server that exposes port 9000. You may need an additional web server that can proxy requests to the fpm port 9000 of the container. Run this container with:
 
-```sh
+```console
 docker run --name some-%%REPO%% -d -p 9000:9000 %%IMAGE%%:fpm
 ```
 
@@ -34,9 +34,9 @@ To have a persistent storage for your datas, you may want to create volumes for 
 
 Run a container with this named volume:
 
-```sh
-docker run -d 
-        -v monica_data:/var/www/html/storage
+```console
+docker run -d \
+        -v monica_data:/var/www/html/storage \
         %%IMAGE%%
 ```
 
@@ -44,13 +44,13 @@ docker run -d
 
 Like every Laravel application, the `php artisan` command is very usefull for Monica. To run a command inside the container, run
 
-```sh
+```console
 docker exec CONTAINER_ID php artisan COMMAND
 ```
 
 or for docker-compose
 
-```sh
+```console
 docker-compose exec %%REPO%% php artisan COMMAND
 ```
 
@@ -68,138 +68,133 @@ This version will use the apache image and add a mysql container. The volumes ar
 
 Make sure to pass in values for `APP_KEY` variable before you run this setup.
 
-Set `APP_KEY` to a random 32-character string. For example, if you
-have the `pwgen` utility installed, you could copy and paste the
-output of `pwgen -s 32 1`.
+1.	Create a `docker-compose.yml` file
 
-1. Create a `docker-compose.yml` file
+	```yaml
+	version: "3.4"
 
-```yaml
-version: "3.4"
+	services:
+	  app:
+	    image: monica
+	    depends_on:
+	      - db
+	    ports:
+	      - 8080:80
+	    environment:
+	      - APP_KEY=
+	      - DB_HOST=db
+	    volumes:
+	      - data:/var/www/html/storage
+	    restart: always
 
-services:
-  app:
-    image: monica
-    depends_on:
-      - db
-    ports:
-      - 8080:80
-    environment:
-      - APP_KEY=
-      - DB_HOST=db
-    volumes:
-      - data:/var/www/html/storage
-    restart: always
+	  db:
+	    image: mysql:5.7
+	    environment:
+	      - MYSQL_RANDOM_ROOT_PASSWORD=true
+	      - MYSQL_DATABASE=monica
+	      - MYSQL_USER=homestead
+	      - MYSQL_PASSWORD=secret
+	    volumes:
+	      - mysql:/var/lib/mysql
+	    restart: always
 
-  db:
-    image: mysql:5.7
-    environment:
-      - MYSQL_RANDOM_ROOT_PASSWORD=true
-      - MYSQL_DATABASE=monica
-      - MYSQL_USER=homestead
-      - MYSQL_PASSWORD=secret
-    volumes:
-      - mysql:/var/lib/mysql
-    restart: always
+	volumes:
+	  data:
+	    name: data
+	  mysql:
+	    name: mysql
+	```
 
-volumes:
-  data:
-    name: data
-  mysql:
-    name: mysql
-```
+2.	Set a value for `APP_KEY` variable before you run this setup. It should be a random 32-character string. For example, if you have the `pwgen` utility installed, you can copy and paste the output of:
 
-2. Set a value for `APP_KEY` variable before you run this setup.
-   It should be a random 32-character string. For example, if you have the `pwgen` utility installed,
-   you can copy and paste the output of
-   ```sh
-   pwgen -s 32 1
-   ```
+	```console
+	pwgen -s 32 1
+	```
 
-3. Run
-   ```sh
-   docker-compose up -d
-   ```
+3.	Run
 
-   Wait until all migrations are done and then access Monica at http://localhost:8080/ from your host system.
-   If this looks ok, add your first user account.
+	```console
+	docker-compose up -d
+	```
 
-4. Run this command once:
-   ```sh
-   docker-compose exec app php artisan setup:production
-   ```
+	Wait until all migrations are done and then access Monica at http://localhost:8080/ from your host system. If this looks ok, add your first user account.
+
+4.	Run this command once:
+
+	```console
+	docker-compose exec app php artisan setup:production
+	```
 
 ### FPM version
 
 When using FPM image, you will need another container with a webserver to proxy http requests. In this example we use nginx with a basic container to do this.
 
-1. Download `nginx.conf` and `Dockerfile` file for nginx image. An example can be found on the [`example section`](%%GITHUB-REPO%%/blob/master/.examples/supervisor/fpm/web/).
-The `web` container image should be pre-build before each deploy with: `docker-compose build`
+1.	Download `nginx.conf` and `Dockerfile` file for nginx image. An example can be found on the [`example section`](%%GITHUB-REPO%%/blob/master/.examples/supervisor/fpm/web/). The `web` container image should be pre-build before each deploy with: `docker-compose build`
 
-2. Create a `docker-compose.yml` file
+2.	Create a `docker-compose.yml` file
 
-```yaml
-version: "3.4"
+	```yaml
+	version: "3.4"
 
-services:
-  app:
-    image: monica:fpm
-    depends_on:
-      - db
-    environment:
-      - APP_KEY=
-      - DB_HOST=db
-    volumes:
-      - data:/var/www/html/storage
-    restart: always
-  
-  web:
-    build: ./web
-    ports:
-      - 8080:80
-    depends_on:
-      - app
-    volumes:
-      - data:/var/www/html/storage:ro
-    restart: always
+	services:
+	  app:
+	    image: monica:fpm
+	    depends_on:
+	      - db
+	    environment:
+	      - APP_KEY=
+	      - DB_HOST=db
+	    volumes:
+	      - data:/var/www/html/storage
+	    restart: always
 
-  db:
-    image: mysql:5.7
-    environment:
-      - MYSQL_RANDOM_ROOT_PASSWORD=true
-      - MYSQL_DATABASE=monica
-      - MYSQL_USER=homestead
-      - MYSQL_PASSWORD=secret
-    volumes:
-      - mysql:/var/lib/mysql
-    restart: always
+	  web:
+	    build: ./web
+	    ports:
+	      - 8080:80
+	    depends_on:
+	      - app
+	    volumes:
+	      - data:/var/www/html/storage:ro
+	    restart: always
 
-volumes:
-  data:
-    name: data
-  mysql:
-    name: mysql
-```
+	  db:
+	    image: mysql:5.7
+	    environment:
+	      - MYSQL_RANDOM_ROOT_PASSWORD=true
+	      - MYSQL_DATABASE=monica
+	      - MYSQL_USER=homestead
+	      - MYSQL_PASSWORD=secret
+	    volumes:
+	      - mysql:/var/lib/mysql
+	    restart: always
 
-3. Set a value for `APP_KEY` variable before you run this setup.
-   It should be a random 32-character string. For example, if you have the `pwgen` utility installed,
-   you can copy and paste the output of
-   ```sh
-   pwgen -s 32 1
-   ```
+	volumes:
+	  data:
+	    name: data
+	  mysql:
+	    name: mysql
+	```
 
-4. Run
-   ```sh
-   docker-compose up -d
-   ```
+3.	Set a value for `APP_KEY` variable before you run this setup. It should be a random 32-character string. For example, if you have the `pwgen` utility installed, you can copy and paste the output of:
 
-   Wait until all migrations are done and then access Monica at http://localhost:8080/ from your host system.
-   If this looks ok, add your first user account.
+	```console
+	pwgen -s 32 1
+	```
 
-5. Run this command once:
-   ```sh
-   docker-compose exec app php artisan setup:production
-   ```
+4.	Run
+
+	```console
+	docker-compose up -d
+	```
+
+	Wait until all migrations are done and then access Monica at http://localhost:8080/ from your host system. If this looks ok, add your first user account.
+
+5.	Run this command once:
+
+	```console
+	docker-compose exec app php artisan setup:production
+	```
 
 ## Make Monica available from the internet
 
