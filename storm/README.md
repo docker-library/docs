@@ -26,7 +26,7 @@ WARNING:
 
 -	[`1.1.3`, `1.1`](https://github.com/31z4/storm-docker/blob/664a7f4730f58be00fd7fe0526d2c13180107c6f/1.1.3/Dockerfile)
 -	[`1.2.3`, `1.2`](https://github.com/31z4/storm-docker/blob/664a7f4730f58be00fd7fe0526d2c13180107c6f/1.2.3/Dockerfile)
--	[`2.1.0`, `2.1`, `latest`](https://github.com/31z4/storm-docker/blob/664a7f4730f58be00fd7fe0526d2c13180107c6f/2.1.0/Dockerfile)
+-	[`2.2.0`, `2.2`, `latest`](https://github.com/31z4/storm-docker/blob/4c2804fa4365f62c3b6009d3496661542e4d446a/2.2.0/Dockerfile)
 
 # Quick reference (cont.)
 
