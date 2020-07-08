@@ -24,12 +24,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.2-dev12`, `2.2-rc`](https://github.com/docker-library/haproxy/blob/423c687b7fd5229abd2d030f4de5a89c27f1270b/2.2-rc/Dockerfile)
--	[`2.2-dev12-alpine`, `2.2-rc-alpine`](https://github.com/docker-library/haproxy/blob/423c687b7fd5229abd2d030f4de5a89c27f1270b/2.2-rc/alpine/Dockerfile)
--	[`2.1.7`, `2.1`, `latest`](https://github.com/docker-library/haproxy/blob/ff559288c519c0792bccb5c2e0d1e9d5fd5a87c9/2.1/Dockerfile)
--	[`2.1.7-alpine`, `2.1-alpine`, `alpine`](https://github.com/docker-library/haproxy/blob/e538b03ce98ce2c9bb9e6e0db26d87ad45a137d0/2.1/alpine/Dockerfile)
--	[`2.0.15`, `2.0`, `lts`](https://github.com/docker-library/haproxy/blob/f85b33d7a5fd97fd7852fe18d602009ab093289c/2.0/Dockerfile)
--	[`2.0.15-alpine`, `2.0-alpine`, `lts-alpine`](https://github.com/docker-library/haproxy/blob/e538b03ce98ce2c9bb9e6e0db26d87ad45a137d0/2.0/alpine/Dockerfile)
+-	[`2.2.0`, `2.2`, `latest`, `lts`](https://github.com/docker-library/haproxy/blob/b9e54c2c29daa41f5045c7e95c887abe1933ea03/2.2/Dockerfile)
+-	[`2.2.0-alpine`, `2.2-alpine`, `alpine`, `lts-alpine`](https://github.com/docker-library/haproxy/blob/b9e54c2c29daa41f5045c7e95c887abe1933ea03/2.2/alpine/Dockerfile)
+-	[`2.1.7`, `2.1`](https://github.com/docker-library/haproxy/blob/ff559288c519c0792bccb5c2e0d1e9d5fd5a87c9/2.1/Dockerfile)
+-	[`2.1.7-alpine`, `2.1-alpine`](https://github.com/docker-library/haproxy/blob/e538b03ce98ce2c9bb9e6e0db26d87ad45a137d0/2.1/alpine/Dockerfile)
+-	[`2.0.15`, `2.0`](https://github.com/docker-library/haproxy/blob/f85b33d7a5fd97fd7852fe18d602009ab093289c/2.0/Dockerfile)
+-	[`2.0.15-alpine`, `2.0-alpine`](https://github.com/docker-library/haproxy/blob/e538b03ce98ce2c9bb9e6e0db26d87ad45a137d0/2.0/alpine/Dockerfile)
 -	[`1.9.15`, `1.9`, `1`](https://github.com/docker-library/haproxy/blob/eeaaa570ccaeec6fa7e545b9314d6f246b6b283c/1.9/Dockerfile)
 -	[`1.9.15-alpine`, `1.9-alpine`, `1-alpine`](https://github.com/docker-library/haproxy/blob/e538b03ce98ce2c9bb9e6e0db26d87ad45a137d0/1.9/alpine/Dockerfile)
 -	[`1.8.25`, `1.8`](https://github.com/docker-library/haproxy/blob/eeaaa570ccaeec6fa7e545b9314d6f246b6b283c/1.8/Dockerfile)

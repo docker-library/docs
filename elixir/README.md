@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.10.3`, `1.10`, `latest`](https://github.com/c0b/docker-elixir/blob/fcf3a05b730e55b805b85aa571048e72dc82fe1e/1.10/Dockerfile)
--	[`1.10.3-slim`, `1.10-slim`, `slim`](https://github.com/c0b/docker-elixir/blob/fcf3a05b730e55b805b85aa571048e72dc82fe1e/1.10/slim/Dockerfile)
--	[`1.10.3-alpine`, `1.10-alpine`, `alpine`](https://github.com/c0b/docker-elixir/blob/fcf3a05b730e55b805b85aa571048e72dc82fe1e/1.10/alpine/Dockerfile)
+-	[`1.10.4`, `1.10`, `latest`](https://github.com/c0b/docker-elixir/blob/a8d582c328db5864a4e8e5f869900e3a52265f38/1.10/Dockerfile)
+-	[`1.10.4-slim`, `1.10-slim`, `slim`](https://github.com/c0b/docker-elixir/blob/a8d582c328db5864a4e8e5f869900e3a52265f38/1.10/slim/Dockerfile)
+-	[`1.10.4-alpine`, `1.10-alpine`, `alpine`](https://github.com/c0b/docker-elixir/blob/a8d582c328db5864a4e8e5f869900e3a52265f38/1.10/alpine/Dockerfile)
 -	[`1.9.4`, `1.9`](https://github.com/c0b/docker-elixir/blob/0d9f47458468a8bf1407374731cbec077ab6f895/1.9/Dockerfile)
 -	[`1.9.4-slim`, `1.9-slim`](https://github.com/c0b/docker-elixir/blob/0d9f47458468a8bf1407374731cbec077ab6f895/1.9/slim/Dockerfile)
 -	[`1.9.4-alpine`, `1.9-alpine`](https://github.com/c0b/docker-elixir/blob/0d9f47458468a8bf1407374731cbec077ab6f895/1.9/alpine/Dockerfile)

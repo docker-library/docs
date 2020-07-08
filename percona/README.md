@@ -27,7 +27,7 @@ WARNING:
 -	[`8.0.19-10-centos`, `8.0-centos`, `8-centos`, `8.0.19-10`, `8.0`, `8`, `ps-8.0.19-10`, `ps-8.0`, `ps-8`](https://github.com/percona/percona-docker/blob/c5a71b2b629df714f6dbe25974d754209a3f3bb4/percona-server.80/Dockerfile)
 -	[`5.7.30-centos`, `5.7-centos`, `5-centos`, `centos`, `5.7.30`, `5.7`, `5`, `ps-5.7.30`, `ps-5.7`, `ps-5`, `latest`](https://github.com/percona/percona-docker/blob/722aecd7714aa6c2fa3e50ccaef1aef45b1ca5c1/percona-server.57/Dockerfile-dockerhub)
 -	[`5.6.48-centos`, `5.6-centos`, `5.6.48`, `5.6`, `ps-5.6.47`, `ps-5.6`](https://github.com/percona/percona-docker/blob/97f0dd85b9f99da75ea1b74727634ce15c1b5ea0/percona-server.56/Dockerfile-dockerhub)
--	[`psmdb-4.2.7`, `psmdb-4.2`](https://github.com/percona/percona-docker/blob/402748f15ad2dd3d28acd01bf820c5612b065993/percona-server-mongodb.42/Dockerfile)
+-	[`psmdb-4.2.8`, `psmdb-4.2`](https://github.com/percona/percona-docker/blob/b513dd76f769339c52a5722b12a7a92847c624d5/percona-server-mongodb.42/Dockerfile)
 -	[`psmdb-4.0.19`, `psmdb-4.0`](https://github.com/percona/percona-docker/blob/3a2779e6937f832e957980cc3847f5efa7658ea9/percona-server-mongodb.40/Dockerfile)
 -	[`psmdb-3.6.18`, `psmdb-3.6`](https://github.com/percona/percona-docker/blob/3a2779e6937f832e957980cc3847f5efa7658ea9/percona-server-mongodb.36/Dockerfile)
 
