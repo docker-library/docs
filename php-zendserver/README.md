@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.5`, `8.5-php5.6`, `5.6`](https://github.com/zendtech/php-zendserver-docker/blob/9dbdde8ed975da58a8bfdefeedf1e37ea24034f9/8.5/5.6/Dockerfile)
--	[`9.1`](https://github.com/zendtech/php-zendserver-docker/blob/9dbdde8ed975da58a8bfdefeedf1e37ea24034f9/9.1/7.1/Dockerfile)
--	[`2019.0`, `latest`](https://github.com/zendtech/php-zendserver-docker/blob/9dbdde8ed975da58a8bfdefeedf1e37ea24034f9/2019.0/Dockerfile)
+-	[`8.5`, `8.5-php5.6`, `5.6`](https://github.com/zendtech/php-zendserver-docker/blob/5ed6d060d28a9484f7163b807a1a31116462715b/8.5/5.6/Dockerfile)
+-	[`9.1`](https://github.com/zendtech/php-zendserver-docker/blob/5ed6d060d28a9484f7163b807a1a31116462715b/9.1/7.1/Dockerfile)
+-	[`2019.0`, `latest`](https://github.com/zendtech/php-zendserver-docker/blob/5ed6d060d28a9484f7163b807a1a31116462715b/2019.0/Dockerfile)
 
 # Quick reference (cont.)
 
