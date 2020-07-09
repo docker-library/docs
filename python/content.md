@@ -58,3 +58,7 @@ or (again, if you need to use Python 2):
 ```console
 $ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp %%IMAGE%%:2 python your-daemon-or-script.py
 ```
+
+## Multiple Python versions in the image
+
+In the non `python:slim` variants there will be an additional older `python` executable at `/usr/bin/python` while the desired newer `/usr/local/bin/python` is the default choice in the `$PATH`. This is an unfortunate side-effect of using the `buildpack-deps` image in the non-slim variants
