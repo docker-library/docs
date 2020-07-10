@@ -24,8 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`v2.2.2-windowsservercore-1809`, `2.2.2-windowsservercore-1809`, `v2.2-windowsservercore-1809`, `2.2-windowsservercore-1809`, `chevrotin-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/containous/traefik-library-image/blob/296caddf8ba97b52841872b2192758af9e9d7775/windows/1809/Dockerfile)
--	[`v2.2.2`, `2.2.2`, `v2.2`, `2.2`, `chevrotin`, `latest`](https://github.com/containous/traefik-library-image/blob/296caddf8ba97b52841872b2192758af9e9d7775/alpine/Dockerfile)
+-	[`v2.2.4-windowsservercore-1809`, `2.2.4-windowsservercore-1809`, `v2.2-windowsservercore-1809`, `2.2-windowsservercore-1809`, `chevrotin-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/containous/traefik-library-image/blob/f3987516ba5bf9051d7ea16dfffed4af58cfb765/windows/1809/Dockerfile)
+-	[`v2.2.4`, `2.2.4`, `v2.2`, `2.2`, `chevrotin`, `latest`](https://github.com/containous/traefik-library-image/blob/f3987516ba5bf9051d7ea16dfffed4af58cfb765/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
