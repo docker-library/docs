@@ -24,12 +24,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.1.0-rc.1-alpine`, `2.1-alpine`, `2.1.0-beta.1`, `2.1`](https://github.com/Kong/docker-kong/blob/82d0514a2850b03252bbe3847532ee3edca197c0/alpine/Dockerfile)
--	[`2.1.0-rc.1-ubuntu`, `2.1-ubuntu`](https://github.com/Kong/docker-kong/blob/82d0514a2850b03252bbe3847532ee3edca197c0/ubuntu/Dockerfile)
--	[`2.1.0-rc.1-centos`, `2.1-centos`](https://github.com/Kong/docker-kong/blob/82d0514a2850b03252bbe3847532ee3edca197c0/centos/Dockerfile)
--	[`2.0.5-alpine`, `2.0.5`, `2.0`, `2`, `latest`, `alpine`](https://github.com/Kong/docker-kong/blob/d908daa2aec80281076198f2114cf121e96fc1a6/alpine/Dockerfile)
--	[`2.0.5-ubuntu`, `2.0-ubuntu`, `ubuntu`](https://github.com/Kong/docker-kong/blob/d908daa2aec80281076198f2114cf121e96fc1a6/ubuntu/Dockerfile)
--	[`2.0.5-centos`, `2.0-centos`, `centos`](https://github.com/Kong/docker-kong/blob/d908daa2aec80281076198f2114cf121e96fc1a6/centos/Dockerfile)
+-	[`2.1.0-rc.1-alpine`, `2.1-alpine`, `2.1.0-rc.1`, `2.1`](https://github.com/Kong/docker-kong/blob/5b5169dff2834cc867f3156950c4e52eb0c907b2/alpine/Dockerfile)
+-	[`2.1.0-rc.1-ubuntu`, `2.1-ubuntu`](https://github.com/Kong/docker-kong/blob/5b5169dff2834cc867f3156950c4e52eb0c907b2/ubuntu/Dockerfile)
+-	[`2.1.0-rc.1-centos`, `2.1-centos`](https://github.com/Kong/docker-kong/blob/5b5169dff2834cc867f3156950c4e52eb0c907b2/centos/Dockerfile)
+-	[`2.0.5-alpine`, `2.0.5`, `2.0`, `2`, `latest`, `alpine`](https://github.com/Kong/docker-kong/blob/60626098f2f32fe1528eb4ffacff13fd1c3e919f/alpine/Dockerfile)
+-	[`2.0.5-ubuntu`, `2.0-ubuntu`, `ubuntu`](https://github.com/Kong/docker-kong/blob/60626098f2f32fe1528eb4ffacff13fd1c3e919f/ubuntu/Dockerfile)
+-	[`2.0.5-centos`, `2.0-centos`, `centos`](https://github.com/Kong/docker-kong/blob/60626098f2f32fe1528eb4ffacff13fd1c3e919f/centos/Dockerfile)
 -	[`1.5.1-alpine`, `1.5.1`, `1.5`, `1`](https://github.com/Kong/docker-kong/blob/8ba4389169d5873be65a09001d06293ccdfc7caf/alpine/Dockerfile)
 -	[`1.5.1-ubuntu`, `1.5-ubuntu`](https://github.com/Kong/docker-kong/blob/8ba4389169d5873be65a09001d06293ccdfc7caf/ubuntu/Dockerfile)
 -	[`1.5.1-centos`, `1.5-centos`](https://github.com/Kong/docker-kong/blob/8ba4389169d5873be65a09001d06293ccdfc7caf/centos/Dockerfile)
