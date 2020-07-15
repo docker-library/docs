@@ -24,8 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8`, `8u252`, `8u252-al2`, `8-al2-full`, `8-al2-jdk`, `latest`](https://github.com/corretto/corretto-docker/blob/619edf4eceed8bc4392509cfb29a4cdaac4787d8/8/jdk/al2/Dockerfile)
--	[`11`, `11.0.7`, `11.0.7-al2`, `11-al2-jdk`, `11-al2-full`](https://github.com/corretto/corretto-docker/blob/619edf4eceed8bc4392509cfb29a4cdaac4787d8/11/jdk/al2/Dockerfile)
+-	[`8`, `8u262`, `8u262-al2`, `8-al2-full`, `8-al2-jdk`, `latest`](https://github.com/corretto/corretto-docker/blob/62ad57b8dec957bae1f29975a567cd67cd841d2a/8/jdk/al2/Dockerfile)
+-	[`11`, `11.0.8`, `11.0.8-al2`, `11-al2-jdk`, `11-al2-full`](https://github.com/corretto/corretto-docker/blob/62ad57b8dec957bae1f29975a567cd67cd841d2a/11/jdk/al2/Dockerfile)
 
 # Quick reference (cont.)
 
