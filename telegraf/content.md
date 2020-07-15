@@ -172,19 +172,28 @@ Check that the measurement `foo` is added in the DB.
 
 -	[Output Plugins](https://docs.influxdata.com/telegraf/latest/plugins/outputs/)
 
-### Monitoring the host filesystem
+### Monitoring the Docker Engine Host
 
-One of the more common use cases for Telegraf is running it in a container to monitor the host filesystem using the inputs that take information from the `/proc` filesystem. This section only applies to monitoring a Linux host.
+One common use case for Telegraf is to monitor the Docker Engine Host from within a container. The recommended technique is to mount the host filesystems into the container and use environment variables to instruct Telegraf where to locate the filesystems.
 
-To do this, you can mount the host's `/proc` filesystem inside of the container and set the location of `/proc` to an alternate location by using the `HOST_PROC` environment variable to change the location of where `/proc` is located. As an example:
+The precise files that need to be made available varies from plugin to plugin. Here is an example showing the full set of supported locations:
 
 ```console
 $ docker run -d --name=telegraf \
-      --net=influxdb \
-      -e HOST_PROC=/host/proc \
-      -v /proc:/host/proc:ro \
-      -v $PWD/telegraf.conf:/etc/telegraf/telegraf.conf:ro \
-      %%IMAGE%%
+	-v $PWD/telegraf.conf:/etc/telegraf/telegraf.conf:ro \
+	-v /:/hostfs:ro \
+	-v /etc:/hostfs/etc:ro \
+	-v /proc:/hostfs/proc:ro \
+	-v /sys:/hostfs/sys:ro \
+	-v /var:/hostfs/var:ro \
+	-v /run:/hostfs/run:ro \
+	-e HOST_ETC=/hostfs/etc \
+	-e HOST_PROC=/hostfs/proc \
+	-e HOST_SYS=/hostfs/sys \
+	-e HOST_VAR=/hostfs/var \
+	-e HOST_RUN=/hostfs/run \
+	-e HOST_MOUNT_PREFIX=/hostfs \
+	%%IMAGE%%
 ```
 
 ### Monitoring docker containers
