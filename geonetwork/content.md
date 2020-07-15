@@ -36,7 +36,7 @@ Then, if you are running docker on Linux, you may access geonetwork at http://lo
 
 The data directory is the location on the file system where the catalog stores much of its custom configuration and uploaded files. It is also where it stores a number of support files, used for various purposes (e.g.: Lucene index, spatial index, thumbnails). The default variant also uses a local H2 database to store the metadata catalog itself.
 
-By default, geonetwork sets the data directory on `/usr/local/tomcat/webapps/geonetwork/WEB-INF/data` and H2 database file to the tomcat bin dir `/usr/local/tomcat/gn.h2.db`, but you may override these values by injecting environment variables into the container: - `-e DATA_DIR=...` (defaults to `/usr/local/tomcat/webapps/geonetwork/WEB-INF/data`) and `-e GEONETWORK_DB_NAME=...` (defaults to `gn` which sets up database `gn.h2.db` in tomcat bin dir `/usr/local/tomcat`)
+By default, geonetwork sets the data directory on `/usr/local/tomcat/webapps/geonetwork/WEB-INF/data` and H2 database file to the tomcat bin dir `/usr/local/tomcat/gn.h2.db`, but you may override these values by injecting environment variables into the container: - `-e DATA_DIR=...` (defaults to `/usr/local/tomcat/webapps/geonetwork/WEB-INF/data`) and `-e GEONETWORK_DB_NAME=...` (defaults to `gn` which sets up database `gn.h2.db` in tomcat bin dir `/usr/local/tomcat`). Note that setting the database location via `GEONETWORK_DB_NAME` only works from version 3.10.3 onwards.
 
 ## Persisting data
 
