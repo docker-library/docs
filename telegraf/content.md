@@ -182,11 +182,6 @@ The precise files that need to be made available varies from plugin to plugin. H
 $ docker run -d --name=telegraf \
 	-v $PWD/telegraf.conf:/etc/telegraf/telegraf.conf:ro \
 	-v /:/hostfs:ro \
-	-v /etc:/hostfs/etc:ro \
-	-v /proc:/hostfs/proc:ro \
-	-v /sys:/hostfs/sys:ro \
-	-v /var:/hostfs/var:ro \
-	-v /run:/hostfs/run:ro \
 	-e HOST_ETC=/hostfs/etc \
 	-e HOST_PROC=/hostfs/proc \
 	-e HOST_SYS=/hostfs/sys \
