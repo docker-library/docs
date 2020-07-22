@@ -25,7 +25,6 @@ WARNING:
 # Supported tags and respective `Dockerfile` links
 
 -	[`18.04`, `bionic-20200630`, `bionic`](https://github.com/tianon/docker-brew-ubuntu-core/blob/5510699c08fd4c68c7fd05783ceedf15751b6cd9/bionic/Dockerfile)
--	[`19.10`, `eoan-20200608`, `eoan`](https://github.com/tianon/docker-brew-ubuntu-core/blob/5510699c08fd4c68c7fd05783ceedf15751b6cd9/eoan/Dockerfile)
 -	[`20.04`, `focal-20200703`, `focal`, `latest`, `rolling`](https://github.com/tianon/docker-brew-ubuntu-core/blob/5510699c08fd4c68c7fd05783ceedf15751b6cd9/focal/Dockerfile)
 -	[`20.10`, `groovy-20200704`, `groovy`, `devel`](https://github.com/tianon/docker-brew-ubuntu-core/blob/5510699c08fd4c68c7fd05783ceedf15751b6cd9/groovy/Dockerfile)
 -	[`14.04`, `trusty-20191217`, `trusty`](https://github.com/tianon/docker-brew-ubuntu-core/blob/5510699c08fd4c68c7fd05783ceedf15751b6cd9/trusty/Dockerfile)
