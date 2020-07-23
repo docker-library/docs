@@ -245,7 +245,7 @@ There are many ways to set PostgreSQL server configuration. For information on w
 -	Set options directly on the run line. The entrypoint script is made so that any options passed to the docker command will be passed along to the `postgres` server daemon. From the [docs](https://www.postgresql.org/docs/current/static/app-postgres.html) we see that any option available in a `.conf` file can be set via `-c`.
 
 	```console
-	$ docker run -d --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword postgres -c 'shared_buffers=256MB' -c 'max_connections=200'
+	$ docker run -d --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword postgres -c shared_buffers=256MB -c max_connections=200
 	```
 
 ## Locale Customization
