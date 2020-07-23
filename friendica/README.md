@@ -24,12 +24,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2020.07-apache`, `apache`, `stable-apache`, `2020.07`, `latest`, `stable`](https://github.com/friendica/docker/blob/2e38177e2e53641655d78f7bbdedf134c5645198/2020.07/apache/Dockerfile)
--	[`2020.07-fpm`, `fpm`, `stable-fpm`](https://github.com/friendica/docker/blob/2e38177e2e53641655d78f7bbdedf134c5645198/2020.07/fpm/Dockerfile)
--	[`2020.07-fpm-alpine`, `fpm-alpine`, `stable-fpm-alpine`](https://github.com/friendica/docker/blob/2e38177e2e53641655d78f7bbdedf134c5645198/2020.07/fpm-alpine/Dockerfile)
--	[`2020.09-dev-apache`, `dev-apache`, `2020.09-dev`, `dev`](https://github.com/friendica/docker/blob/2e38177e2e53641655d78f7bbdedf134c5645198/2020.09-dev/apache/Dockerfile)
--	[`2020.09-dev-fpm`, `dev-fpm`](https://github.com/friendica/docker/blob/2e38177e2e53641655d78f7bbdedf134c5645198/2020.09-dev/fpm/Dockerfile)
--	[`2020.09-dev-fpm-alpine`, `dev-fpm-alpine`](https://github.com/friendica/docker/blob/2e38177e2e53641655d78f7bbdedf134c5645198/2020.09-dev/fpm-alpine/Dockerfile)
+-	[`2020.07-apache`, `apache`, `stable-apache`, `2020.07`, `latest`, `stable`](https://github.com/friendica/docker/blob/51a6dcc6fcf3fc1aa57c60477428646272778016/2020.07/apache/Dockerfile)
+-	[`2020.07-fpm`, `fpm`, `stable-fpm`](https://github.com/friendica/docker/blob/51a6dcc6fcf3fc1aa57c60477428646272778016/2020.07/fpm/Dockerfile)
+-	[`2020.07-fpm-alpine`, `fpm-alpine`, `stable-fpm-alpine`](https://github.com/friendica/docker/blob/51a6dcc6fcf3fc1aa57c60477428646272778016/2020.07/fpm-alpine/Dockerfile)
+-	[`2020.09-dev-apache`, `dev-apache`, `2020.09-dev`, `dev`](https://github.com/friendica/docker/blob/51a6dcc6fcf3fc1aa57c60477428646272778016/2020.09-dev/apache/Dockerfile)
+-	[`2020.09-dev-fpm`, `dev-fpm`](https://github.com/friendica/docker/blob/51a6dcc6fcf3fc1aa57c60477428646272778016/2020.09-dev/fpm/Dockerfile)
+-	[`2020.09-dev-fpm-alpine`, `dev-fpm-alpine`](https://github.com/friendica/docker/blob/51a6dcc6fcf3fc1aa57c60477428646272778016/2020.09-dev/fpm-alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -144,13 +144,13 @@ You have to set a valid SMTP-MTA for the `SMTP` environment variable to enable m
 The following environment variables are possible for the SMTP examples.
 
 -	`SMTP` Address of the SMTP Mail-Gateway. (**required**)
+-	`SMTP_PORT` Port of the SMTP Mail-Gateway. (Default: 587)
 -	`SMTP_DOMAIN` The sender domain. (**required** - e.g. `friendica.local`)
 -	`SMTP_FROM` Sender user-part of the address. (Default: `no-reply` - e.g. no-reply@friendica.local)
 -	`SMTP_TLS` Use TLS for connecting the SMTP Mail-Gateway. (Default: empty)
 -	`SMTP_STARTTLS` Use STARTTLS for connecting the SMTP Mail-Gateway. (Default: empty)
 -	`SMTP_AUTH_USER` Username for the SMTP Mail-Gateway. (Default: empty)
 -	`SMTP_AUTH_PASS` Password for the SMTP Mail-Gateway. (Default: empty)
--	`SMTP_AUTH_METHOD` Authentication method for the SMTP Mail-Gateway. (Default: empty/plain text)
 
 ## Database settings
 
