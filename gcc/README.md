@@ -24,7 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`10.1.0`, `10.1`, `10`, `latest`](https://github.com/docker-library/gcc/blob/97b046b578bd86cae5414d80b3ad0027c590aebd/10/Dockerfile)
+-	[`10.2.0`, `10.2`, `10`, `latest`](https://github.com/docker-library/gcc/blob/36c1ff6d7b44428b35fa8b61787c76b225d8184a/10/Dockerfile)
 -	[`9.3.0`, `9.3`, `9`](https://github.com/docker-library/gcc/blob/05aef2fc627328e12bbf77aca44fd399a22c7fc4/9/Dockerfile)
 -	[`8.4.0`, `8.4`, `8`](https://github.com/docker-library/gcc/blob/05aef2fc627328e12bbf77aca44fd399a22c7fc4/8/Dockerfile)
 
