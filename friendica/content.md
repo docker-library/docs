@@ -92,13 +92,13 @@ You have to set a valid SMTP-MTA for the `SMTP` environment variable to enable m
 The following environment variables are possible for the SMTP examples.
 
 -	`SMTP` Address of the SMTP Mail-Gateway. (**required**)
+-	`SMTP_PORT` Port of the SMTP Mail-Gateway. (Default: 587)
 -	`SMTP_DOMAIN` The sender domain. (**required** - e.g. `friendica.local`)
 -	`SMTP_FROM` Sender user-part of the address. (Default: `no-reply` - e.g. no-reply@friendica.local)
 -	`SMTP_TLS` Use TLS for connecting the SMTP Mail-Gateway. (Default: empty)
 -	`SMTP_STARTTLS` Use STARTTLS for connecting the SMTP Mail-Gateway. (Default: empty)
 -	`SMTP_AUTH_USER` Username for the SMTP Mail-Gateway. (Default: empty)
 -	`SMTP_AUTH_PASS` Password for the SMTP Mail-Gateway. (Default: empty)
--	`SMTP_AUTH_METHOD` Authentication method for the SMTP Mail-Gateway. (Default: empty/plain text)
 
 ## Database settings
 
