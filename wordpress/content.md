@@ -85,4 +85,4 @@ When running WP-CLI via the `cli` variants of this image, it is important to not
 
 See [the "Configuration" section of the `php` image documentation](https://hub.docker.com/_/php/).
 
-Additionally you could create a `custom.ini` with the desired parameters and place it in the `$PHP_INI_DIR/conf.d/` directory.
+For example, to adjust common `php.ini` flags like `upload_max_filesize`, you could create a `custom.ini` with the desired parameters and place it in the `$PHP_INI_DIR/conf.d/` directory.
