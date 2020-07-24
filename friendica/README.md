@@ -24,12 +24,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2020.07-apache`, `apache`, `stable-apache`, `2020.07`, `latest`, `stable`](https://github.com/friendica/docker/blob/51a6dcc6fcf3fc1aa57c60477428646272778016/2020.07/apache/Dockerfile)
--	[`2020.07-fpm`, `fpm`, `stable-fpm`](https://github.com/friendica/docker/blob/51a6dcc6fcf3fc1aa57c60477428646272778016/2020.07/fpm/Dockerfile)
--	[`2020.07-fpm-alpine`, `fpm-alpine`, `stable-fpm-alpine`](https://github.com/friendica/docker/blob/51a6dcc6fcf3fc1aa57c60477428646272778016/2020.07/fpm-alpine/Dockerfile)
--	[`2020.09-dev-apache`, `dev-apache`, `2020.09-dev`, `dev`](https://github.com/friendica/docker/blob/51a6dcc6fcf3fc1aa57c60477428646272778016/2020.09-dev/apache/Dockerfile)
--	[`2020.09-dev-fpm`, `dev-fpm`](https://github.com/friendica/docker/blob/51a6dcc6fcf3fc1aa57c60477428646272778016/2020.09-dev/fpm/Dockerfile)
--	[`2020.09-dev-fpm-alpine`, `dev-fpm-alpine`](https://github.com/friendica/docker/blob/51a6dcc6fcf3fc1aa57c60477428646272778016/2020.09-dev/fpm-alpine/Dockerfile)
+-	[`2020.07-apache`, `apache`, `stable-apache`, `2020.07`, `latest`, `stable`](https://github.com/friendica/docker/blob/87e5dc1cf0ca948492966db0aab85b558e280e55/2020.07/apache/Dockerfile)
+-	[`2020.07-fpm`, `fpm`, `stable-fpm`](https://github.com/friendica/docker/blob/87e5dc1cf0ca948492966db0aab85b558e280e55/2020.07/fpm/Dockerfile)
+-	[`2020.07-fpm-alpine`, `fpm-alpine`, `stable-fpm-alpine`](https://github.com/friendica/docker/blob/87e5dc1cf0ca948492966db0aab85b558e280e55/2020.07/fpm-alpine/Dockerfile)
+-	[`2020.09-dev-apache`, `dev-apache`, `2020.09-dev`, `dev`](https://github.com/friendica/docker/blob/87e5dc1cf0ca948492966db0aab85b558e280e55/2020.09-dev/apache/Dockerfile)
+-	[`2020.09-dev-fpm`, `dev-fpm`](https://github.com/friendica/docker/blob/87e5dc1cf0ca948492966db0aab85b558e280e55/2020.09-dev/fpm/Dockerfile)
+-	[`2020.09-dev-fpm-alpine`, `dev-fpm-alpine`](https://github.com/friendica/docker/blob/87e5dc1cf0ca948492966db0aab85b558e280e55/2020.09-dev/fpm-alpine/Dockerfile)
 
 # Quick reference (cont.)
 
