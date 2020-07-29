@@ -28,22 +28,22 @@ WARNING:
 
 ## Simple Tags
 
--	[`0.18.0-alpine3.12`, `0.18-alpine3.12`, `alpine3.12`, `0.18.0-alpine`, `0.18-alpine`, `alpine`](https://github.com/nats-io/nats-streaming-docker/blob/f3b3e48bdaa499e7f583e4cd0034df31a08644a6/0.18.0/alpine3.12/Dockerfile)
--	[`0.18.0-scratch`, `0.18-scratch`, `scratch`, `0.18.0-linux`, `0.18-linux`, `linux`](https://github.com/nats-io/nats-streaming-docker/blob/f3b3e48bdaa499e7f583e4cd0034df31a08644a6/0.18.0/scratch/Dockerfile)
--	[`0.18.0-windowsservercore-1809`, `0.18-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/nats-io/nats-streaming-docker/blob/f3b3e48bdaa499e7f583e4cd0034df31a08644a6/0.18.0/windowsservercore-1809/Dockerfile)
--	[`0.18.0-nanoserver-1809`, `0.18-nanoserver-1809`, `nanoserver-1809`](https://github.com/nats-io/nats-streaming-docker/blob/f3b3e48bdaa499e7f583e4cd0034df31a08644a6/0.18.0/nanoserver-1809/Dockerfile)
--	[`0.18.0-windowsservercore-ltsc2016`, `0.18-windowsservercore-ltsc2016`, `windowsservercore-ltsc2016`](https://github.com/nats-io/nats-streaming-docker/blob/f3b3e48bdaa499e7f583e4cd0034df31a08644a6/0.18.0/windowsservercore-ltsc2016/Dockerfile)
+-	[`0.18.0-alpine3.12`, `0.18-alpine3.12`, `alpine3.12`, `0.18.0-alpine`, `0.18-alpine`, `alpine`](https://github.com/nats-io/nats-streaming-docker/blob/49cdc0a64cf8d1c0d4ac46e25f195d717020dd29/0.18.0/alpine3.12/Dockerfile)
+-	[`0.18.0-scratch`, `0.18-scratch`, `scratch`, `0.18.0-linux`, `0.18-linux`, `linux`](https://github.com/nats-io/nats-streaming-docker/blob/49cdc0a64cf8d1c0d4ac46e25f195d717020dd29/0.18.0/scratch/Dockerfile)
+-	[`0.18.0-windowsservercore-1809`, `0.18-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/nats-io/nats-streaming-docker/blob/49cdc0a64cf8d1c0d4ac46e25f195d717020dd29/0.18.0/windowsservercore-1809/Dockerfile)
+-	[`0.18.0-nanoserver-1809`, `0.18-nanoserver-1809`, `nanoserver-1809`](https://github.com/nats-io/nats-streaming-docker/blob/49cdc0a64cf8d1c0d4ac46e25f195d717020dd29/0.18.0/nanoserver-1809/Dockerfile)
+-	[`0.18.0-windowsservercore-ltsc2016`, `0.18-windowsservercore-ltsc2016`, `windowsservercore-ltsc2016`](https://github.com/nats-io/nats-streaming-docker/blob/49cdc0a64cf8d1c0d4ac46e25f195d717020dd29/0.18.0/windowsservercore-ltsc2016/Dockerfile)
 
 ## Shared Tags
 
 -	`0.18.0`, `0.18`, `latest`:
-	-	[`0.18.0-scratch`](https://github.com/nats-io/nats-streaming-docker/blob/f3b3e48bdaa499e7f583e4cd0034df31a08644a6/0.18.0/scratch/Dockerfile)
-	-	[`0.18.0-nanoserver-1809`](https://github.com/nats-io/nats-streaming-docker/blob/f3b3e48bdaa499e7f583e4cd0034df31a08644a6/0.18.0/nanoserver-1809/Dockerfile)
+	-	[`0.18.0-scratch`](https://github.com/nats-io/nats-streaming-docker/blob/49cdc0a64cf8d1c0d4ac46e25f195d717020dd29/0.18.0/scratch/Dockerfile)
+	-	[`0.18.0-nanoserver-1809`](https://github.com/nats-io/nats-streaming-docker/blob/49cdc0a64cf8d1c0d4ac46e25f195d717020dd29/0.18.0/nanoserver-1809/Dockerfile)
 -	`0.18.0-windowsservercore`, `0.18-windowsservercore`, `windowsservercore`:
-	-	[`0.18.0-windowsservercore-1809`](https://github.com/nats-io/nats-streaming-docker/blob/f3b3e48bdaa499e7f583e4cd0034df31a08644a6/0.18.0/windowsservercore-1809/Dockerfile)
-	-	[`0.18.0-windowsservercore-ltsc2016`](https://github.com/nats-io/nats-streaming-docker/blob/f3b3e48bdaa499e7f583e4cd0034df31a08644a6/0.18.0/windowsservercore-ltsc2016/Dockerfile)
+	-	[`0.18.0-windowsservercore-1809`](https://github.com/nats-io/nats-streaming-docker/blob/49cdc0a64cf8d1c0d4ac46e25f195d717020dd29/0.18.0/windowsservercore-1809/Dockerfile)
+	-	[`0.18.0-windowsservercore-ltsc2016`](https://github.com/nats-io/nats-streaming-docker/blob/49cdc0a64cf8d1c0d4ac46e25f195d717020dd29/0.18.0/windowsservercore-ltsc2016/Dockerfile)
 -	`0.18.0-nanoserver`, `0.18-nanoserver`, `nanoserver`:
-	-	[`0.18.0-nanoserver-1809`](https://github.com/nats-io/nats-streaming-docker/blob/f3b3e48bdaa499e7f583e4cd0034df31a08644a6/0.18.0/nanoserver-1809/Dockerfile)
+	-	[`0.18.0-nanoserver-1809`](https://github.com/nats-io/nats-streaming-docker/blob/49cdc0a64cf8d1c0d4ac46e25f195d717020dd29/0.18.0/nanoserver-1809/Dockerfile)
 
 # Quick reference (cont.)
 
