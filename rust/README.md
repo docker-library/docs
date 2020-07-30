@@ -24,12 +24,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1-stretch`, `1.45-stretch`, `1.45.0-stretch`, `stretch`](https://github.com/rust-lang-nursery/docker-rust/blob/0e1e519c3c2b201312dc4869d1e8c3bf9eafee01/1.45.0/stretch/Dockerfile)
--	[`1-slim-stretch`, `1.45-slim-stretch`, `1.45.0-slim-stretch`, `slim-stretch`](https://github.com/rust-lang-nursery/docker-rust/blob/0e1e519c3c2b201312dc4869d1e8c3bf9eafee01/1.45.0/stretch/slim/Dockerfile)
--	[`1-buster`, `1.45-buster`, `1.45.0-buster`, `buster`, `1`, `1.45`, `1.45.0`, `latest`](https://github.com/rust-lang-nursery/docker-rust/blob/0e1e519c3c2b201312dc4869d1e8c3bf9eafee01/1.45.0/buster/Dockerfile)
--	[`1-slim-buster`, `1.45-slim-buster`, `1.45.0-slim-buster`, `slim-buster`, `1-slim`, `1.45-slim`, `1.45.0-slim`, `slim`](https://github.com/rust-lang-nursery/docker-rust/blob/0e1e519c3c2b201312dc4869d1e8c3bf9eafee01/1.45.0/buster/slim/Dockerfile)
--	[`1-alpine3.11`, `1.45-alpine3.11`, `1.45.0-alpine3.11`, `alpine3.11`](https://github.com/rust-lang-nursery/docker-rust/blob/0e1e519c3c2b201312dc4869d1e8c3bf9eafee01/1.45.0/alpine3.11/Dockerfile)
--	[`1-alpine3.12`, `1.45-alpine3.12`, `1.45.0-alpine3.12`, `alpine3.12`, `1-alpine`, `1.45-alpine`, `1.45.0-alpine`, `alpine`](https://github.com/rust-lang-nursery/docker-rust/blob/0e1e519c3c2b201312dc4869d1e8c3bf9eafee01/1.45.0/alpine3.12/Dockerfile)
+-	[`1-stretch`, `1.45-stretch`, `1.45.1-stretch`, `stretch`](https://github.com/rust-lang-nursery/docker-rust/blob/0345665196e5c245fb0f58f5fb93f85f24890222/1.45.1/stretch/Dockerfile)
+-	[`1-slim-stretch`, `1.45-slim-stretch`, `1.45.1-slim-stretch`, `slim-stretch`](https://github.com/rust-lang-nursery/docker-rust/blob/0345665196e5c245fb0f58f5fb93f85f24890222/1.45.1/stretch/slim/Dockerfile)
+-	[`1-buster`, `1.45-buster`, `1.45.1-buster`, `buster`, `1`, `1.45`, `1.45.1`, `latest`](https://github.com/rust-lang-nursery/docker-rust/blob/0345665196e5c245fb0f58f5fb93f85f24890222/1.45.1/buster/Dockerfile)
+-	[`1-slim-buster`, `1.45-slim-buster`, `1.45.1-slim-buster`, `slim-buster`, `1-slim`, `1.45-slim`, `1.45.1-slim`, `slim`](https://github.com/rust-lang-nursery/docker-rust/blob/0345665196e5c245fb0f58f5fb93f85f24890222/1.45.1/buster/slim/Dockerfile)
+-	[`1-alpine3.11`, `1.45-alpine3.11`, `1.45.1-alpine3.11`, `alpine3.11`](https://github.com/rust-lang-nursery/docker-rust/blob/0345665196e5c245fb0f58f5fb93f85f24890222/1.45.1/alpine3.11/Dockerfile)
+-	[`1-alpine3.12`, `1.45-alpine3.12`, `1.45.1-alpine3.12`, `alpine3.12`, `1-alpine`, `1.45-alpine`, `1.45.1-alpine`, `alpine`](https://github.com/rust-lang-nursery/docker-rust/blob/0345665196e5c245fb0f58f5fb93f85f24890222/1.45.1/alpine3.12/Dockerfile)
 
 # Quick reference (cont.)
 
