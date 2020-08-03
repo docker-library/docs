@@ -129,11 +129,12 @@ For running the `redmine:passenger` variant as an arbitrary user you will howeve
 1.	Create the user on your host and mount `/etc/passwd:/etc/passwd:ro`
 
 2.	Create a Dockerfile `FROM redmine:passenger` and include something like [`RUN groupadd -r group && useradd --no-log-init -r -g group user`](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#user)
-```dockerfile
-FROM redmine:passenger
-RUN groupadd -r group && useradd --no-log-init -r -g group user
-USER user
-```
+
+	```dockerfile
+	FROM redmine:passenger
+	RUN groupadd -r group && useradd --no-log-init -r -g group user
+	USER user
+	```
 
 ## Docker Secrets
 
