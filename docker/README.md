@@ -24,10 +24,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`19.03.13-beta1`, `19.03-rc`, `rc`, `test`](https://github.com/docker-library/docker/blob/4f5b0cb5438527c6913a943ae07b4d2b1eaa8393/19.03-rc/Dockerfile)
--	[`19.03.13-beta1-dind`, `19.03-rc-dind`, `rc-dind`, `test-dind`](https://github.com/docker-library/docker/blob/4f5b0cb5438527c6913a943ae07b4d2b1eaa8393/19.03-rc/dind/Dockerfile)
--	[`19.03.13-beta1-dind-rootless`, `19.03-rc-dind-rootless`, `rc-dind-rootless`, `test-dind-rootless`](https://github.com/docker-library/docker/blob/399f205733e0162fe6f6529fad8f2231b843606e/19.03-rc/dind-rootless/Dockerfile)
--	[`19.03.13-beta1-git`, `19.03-rc-git`, `rc-git`, `test-git`](https://github.com/docker-library/docker/blob/7a67842e7ff12c1426ae6a67ac1b7a701b51f3df/19.03-rc/git/Dockerfile)
+-	[`19.03.13-beta2`, `19.03-rc`, `rc`, `test`](https://github.com/docker-library/docker/blob/184d0e7687beb67e227d1ce2e0ab79a357613566/19.03-rc/Dockerfile)
+-	[`19.03.13-beta2-dind`, `19.03-rc-dind`, `rc-dind`, `test-dind`](https://github.com/docker-library/docker/blob/4f5b0cb5438527c6913a943ae07b4d2b1eaa8393/19.03-rc/dind/Dockerfile)
+-	[`19.03.13-beta2-dind-rootless`, `19.03-rc-dind-rootless`, `rc-dind-rootless`, `test-dind-rootless`](https://github.com/docker-library/docker/blob/399f205733e0162fe6f6529fad8f2231b843606e/19.03-rc/dind-rootless/Dockerfile)
+-	[`19.03.13-beta2-git`, `19.03-rc-git`, `rc-git`, `test-git`](https://github.com/docker-library/docker/blob/7a67842e7ff12c1426ae6a67ac1b7a701b51f3df/19.03-rc/git/Dockerfile)
 -	[`19.03.12`, `19.03`, `19`, `stable`, `latest`](https://github.com/docker-library/docker/blob/86f7f4b563c7c6fe4620c5a8d82694a78f41989f/19.03/Dockerfile)
 -	[`19.03.12-dind`, `19.03-dind`, `19-dind`, `stable-dind`, `dind`](https://github.com/docker-library/docker/blob/93c19dff54de9876f736b3aa8026be5ad5987388/19.03/dind/Dockerfile)
 -	[`19.03.12-dind-rootless`, `19.03-dind-rootless`, `19-dind-rootless`, `stable-dind-rootless`, `dind-rootless`](https://github.com/docker-library/docker/blob/399f205733e0162fe6f6529fad8f2231b843606e/19.03/dind-rootless/Dockerfile)
