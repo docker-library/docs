@@ -120,6 +120,22 @@ This variable allows you to control if `rake redmine:plugins:migrate` is run on 
 
 This variable is required when using Docker Swarm replicas to maintain session connections when being loadbalanced between containers. It will create an initial `config/secrets.yml` and set the `secret_key_base` value, which is "used by Rails to encode cookies storing session data thus preventing their tampering. Generating a new secret token invalidates all existing sessions after restart" ([session store](https://www.redmine.org/projects/redmine/wiki/RedmineInstall#Step-5-Session-store-secret-generation)). If you do not set this variable or provide a `secrets.yml` one will be generated using `rake generate_secret_token`.
 
+## Running as an arbitrary user
+
+For running Redmine without Phusion Passenger you can simply use the [`--user`](https://docs.docker.com/engine/reference/run/#user) flag to `docker run` and give it a `username:group` or `UID:GID`, the user doesn't need to exist in the container
+
+For running the `redmine:passenger` variant as an arbitrary user you will however need the user to exist in `/etc/passwd`. Here are a few examples for doing that:
+
+1.	Create the user on your host and mount `/etc/passwd:/etc/passwd:ro`
+
+2.	Create a Dockerfile `FROM redmine:passenger` and include something like [`RUN groupadd -r group && useradd --no-log-init -r -g group user`](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#user)
+
+	```dockerfile
+	FROM redmine:passenger
+	RUN groupadd -r group && useradd --no-log-init -r -g group user
+	USER user
+	```
+
 ## Docker Secrets
 
 As an alternative to passing sensitive information via environment variables, `_FILE` may be appended to the previously listed environment variables, causing the initialization script to load the values for those variables from files present in the container. In particular, this can be used to load passwords from Docker secrets stored in `/run/secrets/<secret_name>` files. For example:
