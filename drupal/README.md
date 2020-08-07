@@ -24,15 +24,18 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.9.2-apache`, `8.9-apache`, `8-apache`, `apache`, `8.9.2`, `8.9`, `8`, `latest`](https://github.com/docker-library/drupal/blob/e382bbf87765657ae8761e404cb3e4b28674c40b/8.9/apache/Dockerfile)
--	[`8.9.2-fpm`, `8.9-fpm`, `8-fpm`, `fpm`](https://github.com/docker-library/drupal/blob/e382bbf87765657ae8761e404cb3e4b28674c40b/8.9/fpm/Dockerfile)
--	[`8.9.2-fpm-alpine`, `8.9-fpm-alpine`, `8-fpm-alpine`, `fpm-alpine`](https://github.com/docker-library/drupal/blob/e382bbf87765657ae8761e404cb3e4b28674c40b/8.9/fpm-alpine/Dockerfile)
--	[`8.8.8-apache`, `8.8-apache`, `8.8.8`, `8.8`](https://github.com/docker-library/drupal/blob/8194d369e4ac30f2858c57f225133316d71fd04b/8.8/apache/Dockerfile)
--	[`8.8.8-fpm`, `8.8-fpm`](https://github.com/docker-library/drupal/blob/8194d369e4ac30f2858c57f225133316d71fd04b/8.8/fpm/Dockerfile)
--	[`8.8.8-fpm-alpine`, `8.8-fpm-alpine`](https://github.com/docker-library/drupal/blob/8194d369e4ac30f2858c57f225133316d71fd04b/8.8/fpm-alpine/Dockerfile)
--	[`7.72-apache`, `7-apache`, `7.72`, `7`](https://github.com/docker-library/drupal/blob/5c214244f66447edfb98c2091f85df32c9f00f52/7/apache/Dockerfile)
--	[`7.72-fpm`, `7-fpm`](https://github.com/docker-library/drupal/blob/5c214244f66447edfb98c2091f85df32c9f00f52/7/fpm/Dockerfile)
--	[`7.72-fpm-alpine`, `7-fpm-alpine`](https://github.com/docker-library/drupal/blob/5c214244f66447edfb98c2091f85df32c9f00f52/7/fpm-alpine/Dockerfile)
+-	[`9.0.3-apache-buster`, `9.0-apache-buster`, `9-apache-buster`, `apache-buster`, `9.0.3-apache`, `9.0-apache`, `9-apache`, `apache`, `9.0.3`, `9.0`, `9`, `latest`](https://github.com/docker-library/drupal/blob/be98c136f919d081e21e5b327e3e6338bb99f410/9.0/apache-buster/Dockerfile)
+-	[`9.0.3-fpm-buster`, `9.0-fpm-buster`, `9-fpm-buster`, `fpm-buster`, `9.0.3-fpm`, `9.0-fpm`, `9-fpm`, `fpm`](https://github.com/docker-library/drupal/blob/be98c136f919d081e21e5b327e3e6338bb99f410/9.0/fpm-buster/Dockerfile)
+-	[`9.0.3-fpm-alpine3.12`, `9.0-fpm-alpine3.12`, `9-fpm-alpine3.12`, `fpm-alpine3.12`, `9.0.3-fpm-alpine`, `9.0-fpm-alpine`, `9-fpm-alpine`, `fpm-alpine`](https://github.com/docker-library/drupal/blob/be98c136f919d081e21e5b327e3e6338bb99f410/9.0/fpm-alpine3.12/Dockerfile)
+-	[`8.9.3-apache-buster`, `8.9-apache-buster`, `8-apache-buster`, `8.9.3-apache`, `8.9-apache`, `8-apache`, `8.9.3`, `8.9`, `8`](https://github.com/docker-library/drupal/blob/201b7c008434fc0cd187270c89804abdcbfff293/8.9/apache-buster/Dockerfile)
+-	[`8.9.3-fpm-buster`, `8.9-fpm-buster`, `8-fpm-buster`, `8.9.3-fpm`, `8.9-fpm`, `8-fpm`](https://github.com/docker-library/drupal/blob/201b7c008434fc0cd187270c89804abdcbfff293/8.9/fpm-buster/Dockerfile)
+-	[`8.9.3-fpm-alpine3.12`, `8.9-fpm-alpine3.12`, `8-fpm-alpine3.12`, `8.9.3-fpm-alpine`, `8.9-fpm-alpine`, `8-fpm-alpine`](https://github.com/docker-library/drupal/blob/201b7c008434fc0cd187270c89804abdcbfff293/8.9/fpm-alpine3.12/Dockerfile)
+-	[`8.8.8-apache-buster`, `8.8-apache-buster`, `8.8.8-apache`, `8.8-apache`, `8.8.8`, `8.8`](https://github.com/docker-library/drupal/blob/530833e89ecc367b136b720d1ca89b6d5379ae57/8.8/apache-buster/Dockerfile)
+-	[`8.8.8-fpm-buster`, `8.8-fpm-buster`, `8.8.8-fpm`, `8.8-fpm`](https://github.com/docker-library/drupal/blob/530833e89ecc367b136b720d1ca89b6d5379ae57/8.8/fpm-buster/Dockerfile)
+-	[`8.8.8-fpm-alpine3.12`, `8.8-fpm-alpine3.12`, `8.8.8-fpm-alpine`, `8.8-fpm-alpine`](https://github.com/docker-library/drupal/blob/530833e89ecc367b136b720d1ca89b6d5379ae57/8.8/fpm-alpine3.12/Dockerfile)
+-	[`7.72-apache-buster`, `7-apache-buster`, `7.72-apache`, `7-apache`, `7.72`, `7`](https://github.com/docker-library/drupal/blob/4a5ce8db5c29fa192bd991346dcf9e3c473fa0e2/7/apache-buster/Dockerfile)
+-	[`7.72-fpm-buster`, `7-fpm-buster`, `7.72-fpm`, `7-fpm`](https://github.com/docker-library/drupal/blob/4a5ce8db5c29fa192bd991346dcf9e3c473fa0e2/7/fpm-buster/Dockerfile)
+-	[`7.72-fpm-alpine3.12`, `7-fpm-alpine3.12`, `7.72-fpm-alpine`, `7-fpm-alpine`](https://github.com/docker-library/drupal/blob/4a5ce8db5c29fa192bd991346dcf9e3c473fa0e2/7/fpm-alpine3.12/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -220,6 +223,8 @@ The `drupal` images come in many flavors, each designed for a specific use case.
 ## `drupal:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+Some of these tags may have names like buster in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 ## `drupal:<version>-fpm`
 
