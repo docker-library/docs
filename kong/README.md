@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.1.0-alpine`, `2.1-alpine`, `2.1.0`, `2.1`, `2`, `alpine`, `latest`](https://github.com/Kong/docker-kong/blob/ab4e1d8a61d80e5884e940f76622f729e751f563/alpine/Dockerfile)
--	[`2.1.0-ubuntu`, `2.1-ubuntu`, `ubuntu`](https://github.com/Kong/docker-kong/blob/ab4e1d8a61d80e5884e940f76622f729e751f563/ubuntu/Dockerfile)
--	[`2.1.0-centos`, `2.1-centos`, `centos`](https://github.com/Kong/docker-kong/blob/ab4e1d8a61d80e5884e940f76622f729e751f563/centos/Dockerfile)
+-	[`2.1.1-alpine`, `2.1-alpine`, `2.1.1`, `2.1`, `2`, `alpine`, `latest`](https://github.com/Kong/docker-kong/blob/8b2b58c52db78db1f15fb1ee7337cb07d066ead4/alpine/Dockerfile)
+-	[`2.1.1-ubuntu`, `2.1-ubuntu`, `ubuntu`](https://github.com/Kong/docker-kong/blob/8b2b58c52db78db1f15fb1ee7337cb07d066ead4/ubuntu/Dockerfile)
+-	[`2.1.1-centos`, `2.1-centos`, `centos`](https://github.com/Kong/docker-kong/blob/8b2b58c52db78db1f15fb1ee7337cb07d066ead4/centos/Dockerfile)
 -	[`2.0.5-alpine`, `2.0.5`, `2.0`](https://github.com/Kong/docker-kong/blob/60626098f2f32fe1528eb4ffacff13fd1c3e919f/alpine/Dockerfile)
 -	[`2.0.5-ubuntu`, `2.0-ubuntu`](https://github.com/Kong/docker-kong/blob/60626098f2f32fe1528eb4ffacff13fd1c3e919f/ubuntu/Dockerfile)
 -	[`2.0.5-centos`, `2.0-centos`](https://github.com/Kong/docker-kong/blob/60626098f2f32fe1528eb4ffacff13fd1c3e919f/centos/Dockerfile)
