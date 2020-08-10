@@ -24,7 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.4.3-alpine3.11`, `1.4-alpine3.11`, `1-alpine3.11`, `latest`](https://github.com/dshearer/jobber-docker/blob/f7b276c7e49184667f6fc7323e15735c3a08c1d2/alpine3.11/Dockerfile)
+-	[`1.4.4-alpine3.11`, `1.4-alpine3.11`, `1-alpine3.11`, `latest`](https://github.com/dshearer/jobber-docker/blob/cd07d76987097b5389aa9be5f48df041aa74d699/alpine3.11/Dockerfile)
 
 # Quick reference (cont.)
 

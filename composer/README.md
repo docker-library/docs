@@ -24,8 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.0.0-alpha2`, `2.0`, `2`](https://github.com/composer/docker/blob/56e8b2f78eeb10669943dcddbe24d66e18c0605c/2.0/Dockerfile)
--	[`1.10.9`, `1.10`, `1`, `latest`](https://github.com/composer/docker/blob/64c8750c2acba298d218f03918e0863e8e10f6f0/1.10/Dockerfile)
+-	[`2.0.0-alpha3`, `2.0`, `2`](https://github.com/composer/docker/blob/25c2d0384e6eb770dc027c83643f3ff3942fa994/2.0/Dockerfile)
+-	[`1.10.10`, `1.10`, `1`, `latest`](https://github.com/composer/docker/blob/25c2d0384e6eb770dc027c83643f3ff3942fa994/1.10/Dockerfile)
 -	[`1.9.3`, `1.9`](https://github.com/composer/docker/blob/268d70a1c5270dfbc89e945d40e37c0501a333f1/1.9/Dockerfile)
 
 # Quick reference (cont.)
