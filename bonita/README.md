@@ -26,7 +26,7 @@ WARNING:
 
 -	[`7.9.5`, `7.9`](https://github.com/Bonitasoft-Community/docker_bonita/blob/b58b05d989055ca3521fc92211d10ff640b4028f/7.9/Dockerfile)
 -	[`7.10.5`, `7.10`](https://github.com/Bonitasoft-Community/docker_bonita/blob/80b6eebd5281c5597e2f38ed4d3a8c4b8449261c/7.10/Dockerfile)
--	[`7.11.0`, `7.11`, `latest`](https://github.com/Bonitasoft-Community/docker_bonita/blob/01eb71d7570cf028dd5fa3692ede98903e72faa1/7.11/Dockerfile)
+-	[`7.11.1`, `7.11`, `latest`](https://github.com/Bonitasoft-Community/docker_bonita/blob/cefacfd0bf83e68acaeeaddadb7bbbe73293041f/7.11/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -329,17 +329,17 @@ The `-v /my/own/datadir:/opt/bonita` part of the command mounts the `/my/own/dat
 	-	If >= 7.3.0
 
 	```console
-	$ docker run --name=bonita_7.11.0_postgres --link mydbpostgres:postgres -e "DB_NAME=newbonitadb" -e "DB_USER=newbonitauser" -e "DB_PASS=newbonitapass" -d -p 8081:8080 bonita:7.11.0
+	$ docker run --name=bonita_7.11.1_postgres --link mydbpostgres:postgres -e "DB_NAME=newbonitadb" -e "DB_USER=newbonitauser" -e "DB_PASS=newbonitapass" -d -p 8081:8080 bonita:7.11.1
 	```
 
 -	Reapply specific configuration if needed, for example with a version >= 7.3.0 :
 
 	```console
-	$ docker exec -ti bonita_7.11.0_postgres /bin/bash
+	$ docker exec -ti bonita_7.11.1_postgres /bin/bash
 	```
 
 	```console
-	$ cd /opt/bonita/BonitaCommunity-7.11.0/setup
+	$ cd /opt/bonita/BonitaCommunity-7.11.1/setup
 	$ ./setup.sh pull
 	$ TENANT_LOGIN=tech_user
 	$ TENANT_PASSWORD=secret
@@ -359,7 +359,7 @@ The `-v /my/own/datadir:/opt/bonita` part of the command mounts the `/my/own/dat
 	```
 
 	```console
-	$ docker restart bonita_7.11.0_postgres
+	$ docker restart bonita_7.11.1_postgres
 	```
 
 -	Specific consideration regarding migration to Java 11 in Bonita 7.9
@@ -483,7 +483,7 @@ For example, you can increase the log level :
 ```console
 $ mkdir -p custom_bonita
 $ echo '#!/bin/bash' > custom_bonita/bonita.sh
-$ echo 'sed -i "s/^org.bonitasoft.level = WARNING$/org.bonitasoft.level = FINEST/" /opt/bonita/BonitaCommunity-7.11.0/server/conf/logging.properties' >> custom_bonita/bonita.sh
+$ echo 'sed -i "s/^org.bonitasoft.level = WARNING$/org.bonitasoft.level = FINEST/" /opt/bonita/BonitaCommunity-7.11.1/server/conf/logging.properties' >> custom_bonita/bonita.sh
 $ chmod +x custom_bonita/bonita.sh
 
 $ docker run --name bonita_custom -v "$PWD"/custom_bonita/:/opt/custom-init.d -d -p 8080:8080 bonita
@@ -501,7 +501,7 @@ Note: There are several ways to check the `bonita` logs. Till Bonita 7.8, one of
 
 ```console
 $ docker exec -ti bonita_custom /bin/bash
-tail -f /opt/bonita/BonitaCommunity-7.11.0/server/logs/bonita.`date +%Y-%m-%d`.log
+tail -f /opt/bonita/BonitaCommunity-7.11.1/server/logs/bonita.`date +%Y-%m-%d`.log
 ```
 
 Since Bonita 7.9 bonita logs are redirected towards standard output and directly accessible using
