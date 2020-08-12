@@ -250,7 +250,7 @@ There are many ways to set PostgreSQL server configuration. For information on w
 
 ## Locale Customization
 
-You can extend the image with a simple `Dockerfile` to set a different locale. The following example will set the default locale to `de_DE.utf8`:
+You can extend the Debian-based images with a simple `Dockerfile` to set a different locale. The following example will set the default locale to `de_DE.utf8`:
 
 ```dockerfile
 FROM postgres:9.4
@@ -259,6 +259,8 @@ ENV LANG de_DE.utf8
 ```
 
 Since database initialization only happens on container startup, this allows us to set the language before it is created.
+
+Also of note, Alpine-based variants do *not* support locales; see ["Character sets and locale" in the musl documentation](https://wiki.musl-libc.org/functional-differences-from-glibc.html#Character-sets-and-locale) for more details.
 
 ## Additional Extensions
 
