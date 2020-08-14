@@ -24,8 +24,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.4.0-buster-slim`, `2.4-buster-slim`, `2-buster-slim`, `buster-slim`, `2.4.0`, `2.4`, `2`, `latest`](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/444f7754822cb3e96cb2b66042d8e87d2227be0b/buster/2.4.0/Dockerfile)
--	[`2.4.0-centos`, `2.4-centos`, `2-centos`, `centos`](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/444f7754822cb3e96cb2b66042d8e87d2227be0b/centos8/2.4.0/Dockerfile)
+-	[`2.4.1-buster-slim`, `2.4-buster-slim`, `2-buster-slim`, `buster-slim`, `2.4.1`, `2.4`, `2`, `latest`](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/5bccd499742f6f05e7ddc970842a1763bdd99cfa/buster/2.4.1/Dockerfile)
+-	[`2.4.1-centos`, `2.4-centos`, `2-centos`, `centos`](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/5bccd499742f6f05e7ddc970842a1763bdd99cfa/centos8/2.4.1/Dockerfile)
+-	[`2.4.0-buster-slim`, `2.4.0`](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/444f7754822cb3e96cb2b66042d8e87d2227be0b/buster/2.4.0/Dockerfile)
+-	[`2.4.0-centos`](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/444f7754822cb3e96cb2b66042d8e87d2227be0b/centos8/2.4.0/Dockerfile)
 
 # Quick reference (cont.)
 
