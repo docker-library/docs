@@ -71,7 +71,7 @@ PostgreSQL implements the majority of the SQL:2011 standard, is ACID-compliant a
 ## start a postgres instance
 
 ```console
-$ docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgres
+$ docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -p 5432:5432 -d postgres
 ```
 
 The default `postgres` user and database are created in the entrypoint with `initdb`.
