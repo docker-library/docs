@@ -39,5 +39,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
       - run: .ci/check-pr-no-readme.sh
     if: ${{ github.event_name == 'pull_request' }}
