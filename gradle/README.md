@@ -24,12 +24,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.6.0-jdk8`, `6.6-jdk8`, `jdk8`, `6.6.0-jdk`, `6.6-jdk`, `jdk`, `6.6.0`, `6.6`, `latest`](https://github.com/keeganwitt/docker-gradle/blob/bc176d51b9bb8ddb692660189db41706453c18be/jdk8/Dockerfile)
--	[`6.6.0-jre8`, `6.6-jre8`, `jre8`, `6.6.0-jre`, `6.6-jre`, `jre`](https://github.com/keeganwitt/docker-gradle/blob/bc176d51b9bb8ddb692660189db41706453c18be/jre8/Dockerfile)
--	[`6.6.0-jdk11`, `6.6-jdk11`, `jdk11`](https://github.com/keeganwitt/docker-gradle/blob/bc176d51b9bb8ddb692660189db41706453c18be/jdk11/Dockerfile)
--	[`6.6.0-jre11`, `6.6-jre11`, `jre11`](https://github.com/keeganwitt/docker-gradle/blob/bc176d51b9bb8ddb692660189db41706453c18be/jre11/Dockerfile)
--	[`6.6.0-jdk14`, `6.6-jdk14`, `jdk14`](https://github.com/keeganwitt/docker-gradle/blob/bc176d51b9bb8ddb692660189db41706453c18be/jdk14/Dockerfile)
--	[`6.6.0-jre14`, `6.6-jre14`, `jre14`](https://github.com/keeganwitt/docker-gradle/blob/bc176d51b9bb8ddb692660189db41706453c18be/jre14/Dockerfile)
+-	[`6.6.1-jdk8`, `6.6-jdk8`, `jdk8`, `6.6.1-jdk`, `6.6-jdk`, `jdk`, `6.6.1`, `6.6`, `latest`](https://github.com/keeganwitt/docker-gradle/blob/f6e27a40b3c8b6dcc8dc07a278f7a9f0c2a808cb/jdk8/Dockerfile)
+-	[`6.6.1-jre8`, `6.6-jre8`, `jre8`, `6.6.1-jre`, `6.6-jre`, `jre`](https://github.com/keeganwitt/docker-gradle/blob/f6e27a40b3c8b6dcc8dc07a278f7a9f0c2a808cb/jre8/Dockerfile)
+-	[`6.6.1-jdk11`, `6.6-jdk11`, `jdk11`](https://github.com/keeganwitt/docker-gradle/blob/f6e27a40b3c8b6dcc8dc07a278f7a9f0c2a808cb/jdk11/Dockerfile)
+-	[`6.6.1-jre11`, `6.6-jre11`, `jre11`](https://github.com/keeganwitt/docker-gradle/blob/f6e27a40b3c8b6dcc8dc07a278f7a9f0c2a808cb/jre11/Dockerfile)
+-	[`6.6.1-jdk14`, `6.6-jdk14`, `jdk14`](https://github.com/keeganwitt/docker-gradle/blob/f6e27a40b3c8b6dcc8dc07a278f7a9f0c2a808cb/jdk14/Dockerfile)
+-	[`6.6.1-jre14`, `6.6-jre14`, `jre14`](https://github.com/keeganwitt/docker-gradle/blob/f6e27a40b3c8b6dcc8dc07a278f7a9f0c2a808cb/jre14/Dockerfile)
 
 # Quick reference (cont.)
 
