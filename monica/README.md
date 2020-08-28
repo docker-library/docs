@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.18.0-apache`, `2.18-apache`, `2-apache`, `apache`, `2.18.0`, `2.18`, `2`, `latest`](https://github.com/monicahq/docker/blob/7a83d357006fe1b7947717d75842ea4d6f720ac5/apache/Dockerfile)
--	[`2.18.0-fpm`, `2.18-fpm`, `2-fpm`, `fpm`](https://github.com/monicahq/docker/blob/7a83d357006fe1b7947717d75842ea4d6f720ac5/fpm/Dockerfile)
--	[`2.18.0-fpm-alpine`, `2.18-fpm-alpine`, `2-fpm-alpine`, `fpm-alpine`](https://github.com/monicahq/docker/blob/7a83d357006fe1b7947717d75842ea4d6f720ac5/fpm-alpine/Dockerfile)
+-	[`2.19.0-apache`, `2.19-apache`, `2-apache`, `apache`, `2.19.0`, `2.19`, `2`, `latest`](https://github.com/monicahq/docker/blob/fd973cc5c4990a023fb8030f4665cd418e672de3/apache/Dockerfile)
+-	[`2.19.0-fpm`, `2.19-fpm`, `2-fpm`, `fpm`](https://github.com/monicahq/docker/blob/fd973cc5c4990a023fb8030f4665cd418e672de3/fpm/Dockerfile)
+-	[`2.19.0-fpm-alpine`, `2.19-fpm-alpine`, `2-fpm-alpine`, `fpm-alpine`](https://github.com/monicahq/docker/blob/fd973cc5c4990a023fb8030f4665cd418e672de3/fpm-alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -51,7 +51,7 @@ WARNING:
 
 Monica is a great open source personal relationship management system to organize the interactions with your loved ones.
 
-
+![logo](https://raw.githubusercontent.com/docker-library/docs/b962028212dbd77c9531dbcf8d5a81db79d4a735/monica/logo.svg?sanitize=true)
 
 # How to use this image
 
