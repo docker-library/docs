@@ -24,14 +24,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`kernel`, `kernel-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/f298155c3f61532fcf4ed8b4feedfb5ebece793b/releases/latest/kernel/Dockerfile.ubuntu.adoptopenjdk8)
--	[`full`, `full-java8-openj9`, `latest`](https://github.com/OpenLiberty/ci.docker/blob/f298155c3f61532fcf4ed8b4feedfb5ebece793b/releases/latest/full/Dockerfile.ubuntu.adoptopenjdk8)
--	[`20.0.0.8-kernel-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/f298155c3f61532fcf4ed8b4feedfb5ebece793b/releases/20.0.0.8/kernel/Dockerfile.ubuntu.adoptopenjdk8)
--	[`20.0.0.8-full-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/f298155c3f61532fcf4ed8b4feedfb5ebece793b/releases/20.0.0.8/full/Dockerfile.ubuntu.adoptopenjdk8)
--	[`20.0.0.6-kernel-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/f298155c3f61532fcf4ed8b4feedfb5ebece793b/releases/20.0.0.6/kernel/Dockerfile.ubuntu.adoptopenjdk8)
--	[`20.0.0.6-full-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/f298155c3f61532fcf4ed8b4feedfb5ebece793b/releases/20.0.0.6/full/Dockerfile.ubuntu.adoptopenjdk8)
--	[`20.0.0.3-kernel-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/f298155c3f61532fcf4ed8b4feedfb5ebece793b/releases/20.0.0.3/kernel/Dockerfile.ubuntu.adoptopenjdk8)
--	[`20.0.0.3-full-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/f298155c3f61532fcf4ed8b4feedfb5ebece793b/releases/20.0.0.3/full/Dockerfile.ubuntu.adoptopenjdk8)
+-	[`kernel`, `kernel-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/f00edd9cde30ac11d08c0bce4a2de8d435bd8f5d/releases/latest/kernel/Dockerfile.ubuntu.adoptopenjdk8)
+-	[`full`, `full-java8-openj9`, `latest`](https://github.com/OpenLiberty/ci.docker/blob/f00edd9cde30ac11d08c0bce4a2de8d435bd8f5d/releases/latest/full/Dockerfile.ubuntu.adoptopenjdk8)
+-	[`20.0.0.9-kernel-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/f00edd9cde30ac11d08c0bce4a2de8d435bd8f5d/releases/20.0.0.9/kernel/Dockerfile.ubuntu.adoptopenjdk8)
+-	[`20.0.0.9-full-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/f00edd9cde30ac11d08c0bce4a2de8d435bd8f5d/releases/20.0.0.9/full/Dockerfile.ubuntu.adoptopenjdk8)
+-	[`20.0.0.6-kernel-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/f00edd9cde30ac11d08c0bce4a2de8d435bd8f5d/releases/20.0.0.6/kernel/Dockerfile.ubuntu.adoptopenjdk8)
+-	[`20.0.0.6-full-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/f00edd9cde30ac11d08c0bce4a2de8d435bd8f5d/releases/20.0.0.6/full/Dockerfile.ubuntu.adoptopenjdk8)
 
 # Quick reference (cont.)
 
