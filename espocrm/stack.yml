@@ -29,7 +29,7 @@ services:
     restart: always
     entrypoint: docker-cron.sh
     volumes:
-     - espocrm:/var/www/html
+      - espocrm:/var/www/html
 
 volumes:
   mysql:
