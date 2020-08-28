@@ -24,6 +24,13 @@ services:
     volumes:
       - espocrm:/var/www/html
 
+  cron:
+    image: espocrm
+    restart: always
+    entrypoint: docker-cron.sh
+    volumes:
+     - espocrm:/var/www/html
+
 volumes:
   mysql:
   espocrm:
