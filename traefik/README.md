@@ -26,8 +26,8 @@ WARNING:
 
 -	[`v2.3.0-rc4-windowsservercore-1809`, `2.3.0-rc4-windowsservercore-1809`, `v2.3-windowsservercore-1809`, `2.3-windowsservercore-1809`, `picodon-windowsservercore-1809`](https://github.com/containous/traefik-library-image/blob/2012b77109a5d9c40c829b3b1471179c490a6472/windows/1809/Dockerfile)
 -	[`v2.3.0-rc4`, `2.3.0-rc4`, `v2.3`, `2.3`, `picodon`](https://github.com/containous/traefik-library-image/blob/2012b77109a5d9c40c829b3b1471179c490a6472/alpine/Dockerfile)
--	[`v2.2.8-windowsservercore-1809`, `2.2.8-windowsservercore-1809`, `v2.2-windowsservercore-1809`, `2.2-windowsservercore-1809`, `chevrotin-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/containous/traefik-library-image/blob/3a918cb6253b82d01d5423266875617aeda0f1bc/windows/1809/Dockerfile)
--	[`v2.2.8`, `2.2.8`, `v2.2`, `2.2`, `chevrotin`, `latest`](https://github.com/containous/traefik-library-image/blob/3a918cb6253b82d01d5423266875617aeda0f1bc/alpine/Dockerfile)
+-	[`v2.2.10-windowsservercore-1809`, `2.2.10-windowsservercore-1809`, `v2.2-windowsservercore-1809`, `2.2-windowsservercore-1809`, `chevrotin-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/containous/traefik-library-image/blob/5920a9c73cb53b985a535a4b8cfbb98dc2f08ad6/windows/1809/Dockerfile)
+-	[`v2.2.10`, `2.2.10`, `v2.2`, `2.2`, `chevrotin`, `latest`](https://github.com/containous/traefik-library-image/blob/5920a9c73cb53b985a535a4b8cfbb98dc2f08ad6/alpine/Dockerfile)
 -	[`v1.7.26-windowsservercore-1809`, `1.7.26-windowsservercore-1809`, `v1.7-windowsservercore-1809`, `1.7-windowsservercore-1809`, `maroilles-windowsservercore-1809`](https://github.com/containous/traefik-library-image/blob/b8acd6164a229d1a351ad635b471bbdd6d35e687/windows/1809/Dockerfile)
 -	[`v1.7.26-alpine`, `1.7.26-alpine`, `v1.7-alpine`, `1.7-alpine`, `maroilles-alpine`](https://github.com/containous/traefik-library-image/blob/b8acd6164a229d1a351ad635b471bbdd6d35e687/alpine/Dockerfile)
 -	[`v1.7.26`, `1.7.26`, `v1.7`, `1.7`, `maroilles`](https://github.com/containous/traefik-library-image/blob/b8acd6164a229d1a351ad635b471bbdd6d35e687/scratch/Dockerfile)
