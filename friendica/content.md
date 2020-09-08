@@ -154,7 +154,7 @@ services:
     volumes:
       - db:/var/lib/mysql
     environment:
-       - MYSQL_DATABASE_FILE=/run/secrets/mysql_db
+       - MYSQL_DATABASE_FILE=/run/secrets/mysql_database
        - MYSQL_USER_FILE=/run/secrets/mysql_user
        - MYSQL_PASSWORD_FILE=/run/secrets/mysql_password
     secrets:
@@ -171,7 +171,7 @@ services:
       - "8080:80"
     environment:
       - MYSQL_HOST=db
-      - MYSQL_DATABASE_FILE=/run/secrets/mysql_db
+      - MYSQL_DATABASE_FILE=/run/secrets/mysql_database
       - MYSQL_USER_FILE=/run/secrets/mysql_user
       - MYSQL_PASSWORD_FILE=/run/secrets/mysql_password
       - FRIENDICA_ADMIN_MAIL_FILE=/run/secrets/friendica_admin_mail
