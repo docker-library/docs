@@ -198,6 +198,66 @@ The Friendica image supports auto configuration via environment variables. You c
 -	`MYSQL_DATABASE` Name of the database using mysql / mariadb.
 -	`MYSQL_HOST` Hostname of the database server using mysql / mariadb.
 
+# Docker Secrets
+
+As an alternative to passing sensitive information via environment variables, _FILE may be appended to the previously listed environment variables, causing the initialization script to load the values for those variables from files present in the container. In particular, this can be used to load passwords from Docker secrets stored in /run/secrets/<secret_name> files. For example:
+
+```yaml
+version: '3.2'
+
+services:
+  db:
+    image: mariadb
+    restart: always
+    volumes:
+      - db:/var/lib/mysql
+    environment:
+       - MYSQL_DATABASE_FILE=/run/secrets/mysql_database
+       - MYSQL_USER_FILE=/run/secrets/mysql_user
+       - MYSQL_PASSWORD_FILE=/run/secrets/mysql_password
+    secrets:
+      - mysql_database
+      - mysql_password
+      - mysql_user
+
+  app:
+    image: friendica
+    restart: always
+    volumes:
+      - friendica:/var/www/html
+    ports:
+      - "8080:80"
+    environment:
+      - MYSQL_HOST=db
+      - MYSQL_DATABASE_FILE=/run/secrets/mysql_database
+      - MYSQL_USER_FILE=/run/secrets/mysql_user
+      - MYSQL_PASSWORD_FILE=/run/secrets/mysql_password
+      - FRIENDICA_ADMIN_MAIL_FILE=/run/secrets/friendica_admin_mail
+    depends_on:
+      - db
+    secrets:
+      - friendica_admin_mail
+      - mysql_database
+      - mysql_password
+      - mysql_user
+
+volumes:
+  db:
+  friendica:
+
+secrets:
+  friendica_admin_mail:
+    file: ./friendica_admin_mail.txt # put admin email to this file
+  mysql_database:
+    file: ./mysql_database.txt # put mysql database name to this file
+  mysql_password:
+    file: ./mysql_password.txt # put mysql password to this file
+  mysql_user:
+    file: ./mysql_user.txt # put mysql username to this file
+```
+
+Currently, this is only supported for `FRIENDICA_ADMIN_MAIL`, `MYSQL_DATABASE`, `MYSQL_PASSWORD`, `MYSQL_USER`.
+
 # Maintenance of the image
 
 ## Updating to a newer version
