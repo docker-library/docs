@@ -36,7 +36,7 @@ RUN stack install pandoc pandoc-citeproc
 ENTRYPOINT ["pandoc"]
 ```
 
-**NOTE**: You might get a "Compiler version mismatched" error in some cases. See [Considerations for Stack](#considerations-for-stack) for details.
+**NOTE**: You might get a "Compiler version mismatched" error in some cases. See the "Considerations for Stack" section below for details.
 
 Dockerize an application using `cabal`:
 
