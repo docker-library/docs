@@ -7,49 +7,53 @@
 Running a Hitch Docker container can be done by using the following command:
 
 ```console
-docker run --name=hitch -p 443:443 varnish/hitch:latest
+docker run --name=hitch -p 443:443 hitch:latest
 ```
 
 This container will expose port `443`, which is required for HTTPS traffic.
 
+## Configuration file and extra options
+
+Without any argument, the container will run `hitch --config=/etc/hitch/hitch.conf`. You can mount your own configuration file to replace the default one:
+
+```console
+docker run -v /path/to/your/config/file:/etc/hitch/hitch.conf hitch
+```
+
+You can also change the path of the configuration file by setting the `HITCH_CONFIG_FILE` environment variable. You can set it to an empty string to disable the configuration file altogether.
+
+Note that extra arguments can be added to the command line. If the first argument starts with a `-`, the arguments are added to the default command line, otherwise they are treated as a command.
+
+> Our assumption is that your backend, Varnish or other, supports both *HTTP/2* and the *PROXY* protocol.
+
 ## Connecting to Varnish
 
-By default Hitch will connect to Varnish on `localhost` port `8843` with *PROXY protocol* support enabled. The hostname and port of Varnish can be changed through the `BACKEND_HOST` and `BACKEND_PORT` environment variables.
+By default Hitch will connect to Varnish using `localhost:8843` using the [PROXY protocol](https://github.com/varnish/hitch/blob/master/docs/proxy-protocol.md). If your `varnishd` process has been started with `-a localhost:8443,PROXY`, the two will be able to talk together and Varnish will expose the true client IP as `client.ip` in VCL.
 
-Here's an example where Hitch connects to a Varnish container with the hostname `varnish` on port `8080`:
+But you'll probably run your Varnish in a separate container. In that case, you'll want to change the backend settings. You can either do that by replacing the [`backend`](https://github.com/varnish/hitch/blob/master/hitch.conf.man.rst#backend--) configuration setting in your mounted configuration file, or by adding a *command-line option*.
 
-	docker run --name=hitch -p 443:443 --env BACKEND_HOST=varnish --env BACKEND_PORT=8080 varnish/hitch:latest
+Here's how you set the backend via a *command-line option*:
 
-By default version 2 of the *PROXY protocol* is enabled. If you don't want to use the *PROXY protocol* to connect to Varnish, please assign an empty string to the `PROXY_PROTOCOL_V2` environment variable as illustrated below:
-
-	docker run --name=hitch -p 443:443 --env PROXY_PROTOCOL_V2= varnish/hitch:latest
+```console
+docker run hitch "--backend=[varnish]:8443"
+```
 
 ## Setting the certificate
 
-The Hitch Docker image comes with a dummy certificate that is stored in `/etc/hitch/certs/example.com`. Using a bind mount, you can override the value of the certificate and use your own certificate.
+The Hitch Docker image comes with a self-signed certificate for `localhost` that is stored in `/etc/hitch/certs/default`. Using a bind mount, you can override the value of the certificate and use your own certificate.
 
 Here's an example:
 
-	docker run --name=hitch -p 443:443 -v /path/to/your/certificate:/etc/hitch/certs/example.com varnish/hitch:latest
+```console
+docker run -v /path/to/your/certificate:/etc/hitch/certs/default hitch
+```
 
-## Overriding the frontend connection settings
+You can also override the [`pem-file`](https://github.com/varnish/hitch/blob/master/hitch.conf.man.rst#pem-file--string) configuration setting in your mounted configuration file.
 
-As previously mentioned, the Hitch container will run on port `443` and will be bound to all available network interfaces.
+If you prefer setting the certificate location on the command line, you can add the location as part of the `--backend` option.
 
-If you want to change this behavior, you can leverage the `FRONTEND_HOST` and `FRONTEND_PORT` environment variables.
+Here's how you do this:
 
-Here's an example where Hitch listens for incoming connections on port `8443`:
-
-	docker run --name=hitch -p 8443:8443 --env FRONTEND_PORT=8443 varnish/hitch:latest
-
-## Overriding other settings
-
-The Hitch configuration mostly relies on default values.
-
-The *frontend connection*, *backend connection*, and *proxy v2* settings are configured through environment variables.
-
-The *certificate location* and the *runtime user* are set in the `/etc/hitch/hitch.conf` configuration file.
-
-Any other [configuration parameter](https://github.com/varnish/hitch/blob/1.5.0/hitch.conf.man.rst) can also be set in the `hitch.conf` configuration file. You can override the contents of this file using a bind mount as illustrated below:
-
-	docker run --name=hitch -p 443:443 -v /path/to/your/hitch.conf:/etc/hitch/hitch.conf varnish/hitch:latest
+```console
+docker run hitch "--backend=[varnish]:8443:/path/to/cert.pem"
+```
