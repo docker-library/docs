@@ -52,7 +52,7 @@ WARNING:
 -	[`eloquent-ros1-bridge`, `eloquent-ros1-bridge-bionic`](https://github.com/osrf/docker_images/blob/576e10eb03567a24596c88d515026c84a2ea0dec/ros/eloquent/ubuntu/bionic/ros1-bridge/Dockerfile)
 -	[`foxy-ros-core`, `foxy-ros-core-focal`](https://github.com/osrf/docker_images/blob/30496b03a10f37d3ee54d5df672a0c27e0ab3952/ros/foxy/ubuntu/focal/ros-core/Dockerfile)
 -	[`foxy-ros-base`, `foxy-ros-base-focal`, `foxy`, `latest`](https://github.com/osrf/docker_images/blob/30496b03a10f37d3ee54d5df672a0c27e0ab3952/ros/foxy/ubuntu/focal/ros-base/Dockerfile)
--	[`foxy-ros1-bridge`, `foxy-ros1-bridge-focal`](https://github.com/osrf/docker_images/blob/2ae0f0880b6652b606471461708835debba01eb3/ros/foxy/ubuntu/focal/ros1-bridge/Dockerfile)
+-	[`foxy-ros1-bridge`, `foxy-ros1-bridge-focal`](https://github.com/osrf/docker_images/blob/1512b3084ab3ccfe84d91a37de30372d859ca1b1/ros/foxy/ubuntu/focal/ros1-bridge/Dockerfile)
 -	[`rolling-ros-core`, `rolling-ros-core-focal`](https://github.com/osrf/docker_images/blob/f8cfc3fa7ee88d6b59ae18deedd179b8de4c3eb2/ros/rolling/ubuntu/focal/ros-core/Dockerfile)
 -	[`rolling-ros-base`, `rolling-ros-base-focal`, `rolling`](https://github.com/osrf/docker_images/blob/f8cfc3fa7ee88d6b59ae18deedd179b8de4c3eb2/ros/rolling/ubuntu/focal/ros-base/Dockerfile)
 -	[`rolling-ros1-bridge`, `rolling-ros1-bridge-focal`](https://github.com/osrf/docker_images/blob/c098e08c9e9a077516dbba9648893e89aecf1d63/ros/rolling/ubuntu/focal/ros1-bridge/Dockerfile)
