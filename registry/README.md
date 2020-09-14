@@ -22,6 +22,8 @@ WARNING:
 -	**Where to get help**:  
 	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
+-	**Need a free, secure hosted registry?** Try [Docker Hub](https://www.docker.com/pricing).
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`2.7.1`, `2.7`, `2`, `latest`](https://github.com/docker/distribution-library-image/blob/ab00e8dae12d4515ed259015eab771ec92e92dd4/amd64/Dockerfile)
