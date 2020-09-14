@@ -80,9 +80,9 @@ If you'd like to be able to access the instance from the host without the contai
 
 When you start the `%%REPO%%` image, you can adjust the configuration of the instance by passing one or more environment variables on the `docker run` command line.
 
-### `REDMINE_DB_MYSQL` or `REDMINE_DB_POSTGRES`
+### `REDMINE_DB_MYSQL`, `REDMINE_DB_POSTGRES`, or `REDMINE_DB_SQLSERVER`
 
-These two variables allow you to set the hostname or IP address of the MySQL or PostgreSQL host, respectively. These values are mutually exclusive so it is undefined behavior if both are set. If neither variable is set, the image will fall back to using SQLite.
+These variables allow you to set the hostname or IP address of the MySQL, PostgreSQL, or Microsoft SQL host, respectively. These values are mutually exclusive so it is undefined behavior if any two are set. If no variable is set, the image will fall back to using SQLite.
 
 ### `REDMINE_DB_PORT`
 
