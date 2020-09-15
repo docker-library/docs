@@ -9,7 +9,7 @@ Consul is a distributed, highly-available, and multi-datacenter aware tool for s
 
 # Consul and Docker
 
-Consul has several moving parts so we'll start with a brief introduction to Consul's architecture and then detail how Consul interacts with Docker. Please see the [Consul Architecture](https://www.consul.io/docs/internals/architecture.html) guide for more detail on all these concepts.
+Consul has several moving parts so we'll start with a brief introduction to Consul's architecture and then detail how Consul interacts with Docker. Please see the [Consul Architecture](https://www.consul.io/docs/architecture) guide for more detail on all these concepts.
 
 Each host in a Consul cluster runs the Consul agent, a long running daemon that can be started in client or server mode. Each cluster has at least 1 agent in server mode, and usually 3 or 5 for high availability. The server agents participate in a [consensus protocol](https://www.consul.io/docs/internals/consensus.html), maintain a centralized view of the cluster's state, and respond to queries from other agents in the cluster. The rest of the agents in client mode participate in a [gossip protocol](https://www.consul.io/docs/internals/gossip.html) to discover other agents and check them for failures, and they forward queries about the cluster to the server agents.
 
