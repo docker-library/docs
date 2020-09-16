@@ -106,7 +106,7 @@ First developed by the software company 10gen (now MongoDB Inc.) in October 2007
 ## Start a `mongo` server instance
 
 ```console
-$ docker run --name some-mongo --network=some-network-d mongo:tag
+$ docker run --name some-mongo --network some-network -d mongo:tag
 ```
 
 ... where `some-mongo` is the name you want to assign to your container, tag` is the tag specifying the MongoDB version you want, and `some-network` is an existing Docker network. See the list above for relevant tags.
