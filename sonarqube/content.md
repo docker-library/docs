@@ -42,7 +42,7 @@ We recommend creating volumes for the following directories:
 -	`/opt/sonarqube/conf`: **for Version 7.9.x only**, configuration files, such as `sonar.properties`.
 -	`/opt/sonarqube/data`: data files, such as the embedded H2 database and Elasticsearch indexes
 -	`/opt/sonarqube/logs`: contains SonarQube logs about access, web process, CE process, Elasticsearch logs
--	`/opt/sonarqube/extensions`: plugins, such as language analyzers
+-	`/opt/sonarqube/extensions`: contains any plugins you install and the Oracle JDBC driver if necessary
 
 > **Warning:** You cannot use the same volumes on multiple instances of SonarQube.
 
