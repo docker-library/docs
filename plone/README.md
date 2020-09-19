@@ -24,8 +24,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.2.1`, `5.2`, `5`, `latest`](https://github.com/plone/plone.docker/blob/e430c572526898d695431896827904def2493fed/5.2/5.2.1/debian/Dockerfile)
--	[`5.2.1-alpine`, `5.2-alpine`, `5-alpine`, `alpine`](https://github.com/plone/plone.docker/blob/e430c572526898d695431896827904def2493fed/5.2/5.2.1/alpine/Dockerfile)
+-	[`5.2.2-python38`, `5.2-python38`, `5-python38`, `python38`, `5.2.2`, `5.2`, `5`, `latest`](https://github.com/plone/plone.docker/blob/f66610b264ad294acc2bb85676e53e803994a5e7/5.2/5.2.2/debian/Dockerfile)
+-	[`5.2.2-python37`, `5.2-python37`, `5-python37`, `python37`](https://github.com/plone/plone.docker/blob/f66610b264ad294acc2bb85676e53e803994a5e7/5.2/5.2.2/python37/Dockerfile)
+-	[`5.2.2-python36`, `5.2-python36`, `5-python36`, `python36`](https://github.com/plone/plone.docker/blob/f66610b264ad294acc2bb85676e53e803994a5e7/5.2/5.2.2/python36/Dockerfile)
+-	[`5.2.2-alpine`, `5.2-alpine`, `5-alpine`, `alpine`](https://github.com/plone/plone.docker/blob/f66610b264ad294acc2bb85676e53e803994a5e7/5.2/5.2.2/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
