@@ -50,7 +50,7 @@ The default `Caddyfile` only listens to port `80`, and does not set up automatic
 
 ```console
 $ docker run -d -p 80:80 -p 443:443 \
-    -v /site:/usr/share/caddy \
+    -v /site:/srv \
     -v caddy_data:/data \
     -v caddy_config:/config \
     %%IMAGE%% caddy file-server --domain example.com
@@ -66,33 +66,33 @@ Most users deploying production sites will not want to rely on mounting files in
 
 ```Dockerfile
 # note: never use the :latest tag in a production site
-FROM %%IMAGE%%:2.0.0
+FROM %%IMAGE%%:<version>
 
 COPY Caddyfile /etc/caddy/Caddyfile
-COPY site /site
+COPY site /srv
 ```
 
 #### Adding custom Caddy modules
 
-Caddy is extendable through the use of "modules". See https://caddyserver.com/docs/extending-caddy for full details.
+Caddy is extendable through the use of "modules". See https://caddyserver.com/docs/extending-caddy for full details. You can find a list of available modules on [the Caddy website's download page](https://caddyserver.com/download).
 
 You can use the `:builder` image as a short-cut to building a new Caddy binary:
 
 ```Dockerfile
-FROM %%IMAGE%%:2.0.0-builder AS builder
+FROM %%IMAGE%%:<version>-builder AS builder
 
-RUN caddy-builder \
-    github.com/caddyserver/nginx-adapter \
-    github.com/hairyhenderson/caddy-teapot-module@v0.0.1
+RUN xcaddy build \
+    --with github.com/caddyserver/nginx-adapter \
+    --with github.com/hairyhenderson/caddy-teapot-module@v0.0.3-0
 
-FROM %%IMAGE%%:2.0.0
+FROM %%IMAGE%%:<version>
 
 COPY --from=builder /usr/bin/caddy /usr/bin/caddy
 ```
 
 Note the second `FROM` instruction - this produces a much smaller image by simply overlaying the newly-built binary on top of the the regular `%%IMAGE%%` image.
 
-The `caddy-builder` script is used to [build a new Caddy entrypoint](https://github.com/caddyserver/caddy/blob/71e81d262bc34545f73f1380bc5d078d83d1570f/cmd/caddy/main.go#L15..L25), with the provided modules. You can specify just a module name, or a name with a version (separated by `@`).
+The [`xcaddy`](https://caddyserver.com/docs/build#xcaddy) tool is used to [build a new Caddy entrypoint](https://github.com/caddyserver/caddy/blob/4217217badf220d7d2c25f43f955fdc8454f2c64/cmd/caddy/main.go#L15..L25), with the provided modules. You can specify just a module name, or a name with a version (separated by `@`). You can also specify a specific version (can be a version tag or commit hash) of Caddy to build from. Read more about [`xcaddy` usage](https://github.com/caddyserver/xcaddy#command-usage).
 
 Note that the "standard" Caddy modules ([`github.com/caddyserver/caddy/master/modules/standard`](https://github.com/caddyserver/caddy/tree/master/modules/standard)) are always included.
 
@@ -102,9 +102,30 @@ Caddy does not require a full restart when configuration is changed. Caddy comes
 
 When running Caddy in Docker, the recommended way to trigger a config reload is by executing the `caddy reload` command in the running container.
 
-First, you'll need to determine your container ID or name. Then, pass the container ID to `docker exec`.
+First, you'll need to determine your container ID or name. Then, pass the container ID to `docker exec`. The working directory is set to `/etc/caddy` so Caddy can find your Caddyfile without additional arguments.
 
 ```console
 $ caddy_container_id=$(docker ps | grep caddy | awk '{print $1;}')
-$ docker exec $caddy_container_id caddy reload --config /etc/caddy/Caddyfile --adapter caddyfile
+$ docker exec $caddy_container_id -w /etc/caddy caddy reload
+```
+
+### Docker Compose example
+
+If you prefer to use `docker-compoose` to run your stack, here's a sample service definition.
+
+```yaml
+version: "3.7"
+
+services:
+  caddy:
+    image: %%IMAGE%%:<version>
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - $PWD/Caddyfile:/etc/caddy/Caddyfile
+      - $PWD/site:/srv
+      - caddy_data:/data
+      - caddy_config:/config
 ```
