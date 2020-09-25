@@ -24,15 +24,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.34.2`, `1.34`, `stable`, `latest`](https://github.com/wikimedia/mediawiki-docker/blob/9c1e9bdec7d96abd3a1a497da6f4d684b41dc551/1.34/apache/Dockerfile)
--	[`1.34.2-fpm`, `1.34-fpm`, `stable-fpm`](https://github.com/wikimedia/mediawiki-docker/blob/9c1e9bdec7d96abd3a1a497da6f4d684b41dc551/1.34/fpm/Dockerfile)
--	[`1.34.2-fpm-alpine`, `1.34-fpm-alpine`, `stable-fpm-alpine`](https://github.com/wikimedia/mediawiki-docker/blob/9c1e9bdec7d96abd3a1a497da6f4d684b41dc551/1.34/fpm-alpine/Dockerfile)
--	[`1.33.4`, `1.33`, `legacy`](https://github.com/wikimedia/mediawiki-docker/blob/9c1e9bdec7d96abd3a1a497da6f4d684b41dc551/1.33/apache/Dockerfile)
--	[`1.33.4-fpm`, `1.33-fpm`, `legacy-fpm`](https://github.com/wikimedia/mediawiki-docker/blob/9c1e9bdec7d96abd3a1a497da6f4d684b41dc551/1.33/fpm/Dockerfile)
--	[`1.33.4-fpm-alpine`, `1.33-fpm-alpine`, `legacy-fpm-alpine`](https://github.com/wikimedia/mediawiki-docker/blob/9c1e9bdec7d96abd3a1a497da6f4d684b41dc551/1.33/fpm-alpine/Dockerfile)
--	[`1.31.8`, `1.31`, `lts`, `legacylts`](https://github.com/wikimedia/mediawiki-docker/blob/9c1e9bdec7d96abd3a1a497da6f4d684b41dc551/1.31/apache/Dockerfile)
--	[`1.31.8-fpm`, `1.31-fpm`, `lts-fpm`, `legacylts-fpm`](https://github.com/wikimedia/mediawiki-docker/blob/9c1e9bdec7d96abd3a1a497da6f4d684b41dc551/1.31/fpm/Dockerfile)
--	[`1.31.8-fpm-alpine`, `1.31-fpm-alpine`, `lts-fpm-alpine`, `legacylts-fpm-alpine`](https://github.com/wikimedia/mediawiki-docker/blob/9c1e9bdec7d96abd3a1a497da6f4d684b41dc551/1.31/fpm-alpine/Dockerfile)
+-	[`1.34.4`, `1.34`, `legacy`, `stable`, `latest`](https://github.com/wikimedia/mediawiki-docker/blob/f5fa040dfbe95ffc2d21db1f7356911e324066de/1.34/apache/Dockerfile)
+-	[`1.34.4-fpm`, `1.34-fpm`, `legacy-fpm`, `stable-fpm`](https://github.com/wikimedia/mediawiki-docker/blob/f5fa040dfbe95ffc2d21db1f7356911e324066de/1.34/fpm/Dockerfile)
+-	[`1.34.4-fpm-alpine`, `1.34-fpm-alpine`, `legacy-fpm-alpline`, `stable-fpm-alpine`](https://github.com/wikimedia/mediawiki-docker/blob/f5fa040dfbe95ffc2d21db1f7356911e324066de/1.34/fpm-alpine/Dockerfile)
+-	[`1.31.10`, `1.31`, `lts`, `legacylts`](https://github.com/wikimedia/mediawiki-docker/blob/f5fa040dfbe95ffc2d21db1f7356911e324066de/1.31/apache/Dockerfile)
+-	[`1.31.10-fpm`, `1.31-fpm`, `lts-fpm`, `legacylts-fpm`](https://github.com/wikimedia/mediawiki-docker/blob/f5fa040dfbe95ffc2d21db1f7356911e324066de/1.31/fpm/Dockerfile)
+-	[`1.31.10-fpm-alpine`, `1.31-fpm-alpine`, `lts-fpm-alpine`, `legacylts-fpm-alpine`](https://github.com/wikimedia/mediawiki-docker/blob/f5fa040dfbe95ffc2d21db1f7356911e324066de/1.31/fpm-alpine/Dockerfile)
 
 # Quick reference (cont.)
 

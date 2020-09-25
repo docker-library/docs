@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2020.09-apache`, `apache`, `stable-apache`, `2020.09`, `latest`, `stable`](https://github.com/friendica/docker/blob/3b7eebb01c0ca4ab2ce73647a9bed0b23a645491/2020.09/apache/Dockerfile)
--	[`2020.09-fpm`, `fpm`, `stable-fpm`](https://github.com/friendica/docker/blob/3b7eebb01c0ca4ab2ce73647a9bed0b23a645491/2020.09/fpm/Dockerfile)
--	[`2020.09-fpm-alpine`, `fpm-alpine`, `stable-fpm-alpine`](https://github.com/friendica/docker/blob/3b7eebb01c0ca4ab2ce73647a9bed0b23a645491/2020.09/fpm-alpine/Dockerfile)
+-	[`2020.09-apache`, `apache`, `stable-apache`, `2020.09`, `latest`, `stable`](https://github.com/friendica/docker/blob/ca5b039dd116f4654813baab556e75ae3f7adca8/2020.09/apache/Dockerfile)
+-	[`2020.09-fpm`, `fpm`, `stable-fpm`](https://github.com/friendica/docker/blob/ca5b039dd116f4654813baab556e75ae3f7adca8/2020.09/fpm/Dockerfile)
+-	[`2020.09-fpm-alpine`, `fpm-alpine`, `stable-fpm-alpine`](https://github.com/friendica/docker/blob/ca5b039dd116f4654813baab556e75ae3f7adca8/2020.09/fpm-alpine/Dockerfile)
 -	[`2020.12-dev-apache`, `dev-apache`, `2020.12-dev`, `dev`](https://github.com/friendica/docker/blob/3b7eebb01c0ca4ab2ce73647a9bed0b23a645491/2020.12-dev/apache/Dockerfile)
 -	[`2020.12-dev-fpm`, `dev-fpm`](https://github.com/friendica/docker/blob/3b7eebb01c0ca4ab2ce73647a9bed0b23a645491/2020.12-dev/fpm/Dockerfile)
 -	[`2020.12-dev-fpm-alpine`, `dev-fpm-alpine`](https://github.com/friendica/docker/blob/3b7eebb01c0ca4ab2ce73647a9bed0b23a645491/2020.12-dev/fpm-alpine/Dockerfile)
