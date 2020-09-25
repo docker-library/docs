@@ -20,7 +20,7 @@ WARNING:
 	[the Caddy Docker Maintainers](https://github.com/caddyserver/caddy-docker)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Caddy Community Forums](https://caddy.community)
 
 # Supported tags and respective `Dockerfile` links
 
@@ -28,20 +28,43 @@ WARNING:
 
 ## Simple Tags
 
--	[`2.1.1-alpine`, `2-alpine`, `alpine`](https://github.com/caddyserver/caddy-docker/blob/324fa6bd5b5e7fa3fcbcc5c69f17443fbd1eeebf/2.1/alpine/Dockerfile)
--	[`2.1.1-builder`, `2-builder`, `builder`](https://github.com/caddyserver/caddy-docker/blob/465c686ce698896381a2ebe69ca704260f21ca7b/2.1/builder/Dockerfile)
--	[`2.1.1-windowsservercore-1809`, `2-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/caddyserver/caddy-docker/blob/324fa6bd5b5e7fa3fcbcc5c69f17443fbd1eeebf/2.1/windows/1809/Dockerfile)
--	[`2.1.1-windowsservercore-ltsc2016`, `2-windowsservercore-ltsc2016`, `windowsservercore-ltsc2016`](https://github.com/caddyserver/caddy-docker/blob/324fa6bd5b5e7fa3fcbcc5c69f17443fbd1eeebf/2.1/windows/ltsc2016/Dockerfile)
+-	[`2.1.1-alpine`](https://github.com/caddyserver/caddy-docker/blob/98b7497fbd428e50040ef34f7a4ba2833c22780f/2.1/alpine/Dockerfile)
+-	[`2.1.1-builder-alpine`](https://github.com/caddyserver/caddy-docker/blob/a54f7d1165d6240f53984ad42475ac833b2e6562/2.1/builder/Dockerfile)
+-	[`2.1.1-windowsservercore-1809`](https://github.com/caddyserver/caddy-docker/blob/98b7497fbd428e50040ef34f7a4ba2833c22780f/2.1/windows/1809/Dockerfile)
+-	[`2.1.1-windowsservercore-ltsc2016`](https://github.com/caddyserver/caddy-docker/blob/98b7497fbd428e50040ef34f7a4ba2833c22780f/2.1/windows/ltsc2016/Dockerfile)
+-	[`2.1.1-builder-windowsservercore-1809`](https://github.com/caddyserver/caddy-docker/blob/a54f7d1165d6240f53984ad42475ac833b2e6562/2.1/windows-builder/1809/Dockerfile)
+-	[`2.1.1-builder-windowsservercore-ltsc2016`](https://github.com/caddyserver/caddy-docker/blob/a54f7d1165d6240f53984ad42475ac833b2e6562/2.1/windows-builder/ltsc2016/Dockerfile)
+-	[`2.2.0-alpine`, `2-alpine`, `alpine`](https://github.com/caddyserver/caddy-docker/blob/153e0aaa8e8f9f7cc2879c4ffd1016dec368cd9e/2.2/alpine/Dockerfile)
+-	[`2.2.0-builder-alpine`, `2-builder-alpine`, `builder-alpine`](https://github.com/caddyserver/caddy-docker/blob/a54f7d1165d6240f53984ad42475ac833b2e6562/2.2/builder/Dockerfile)
+-	[`2.2.0-windowsservercore-1809`, `2-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/caddyserver/caddy-docker/blob/153e0aaa8e8f9f7cc2879c4ffd1016dec368cd9e/2.2/windows/1809/Dockerfile)
+-	[`2.2.0-windowsservercore-ltsc2016`, `2-windowsservercore-ltsc2016`, `windowsservercore-ltsc2016`](https://github.com/caddyserver/caddy-docker/blob/153e0aaa8e8f9f7cc2879c4ffd1016dec368cd9e/2.2/windows/ltsc2016/Dockerfile)
+-	[`2.2.0-builder-windowsservercore-1809`, `2-builder-windowsservercore-1809`, `builder-windowsservercore-1809`](https://github.com/caddyserver/caddy-docker/blob/a54f7d1165d6240f53984ad42475ac833b2e6562/2.2/windows-builder/1809/Dockerfile)
+-	[`2.2.0-builder-windowsservercore-ltsc2016`, `2-builder-windowsservercore-ltsc2016`, `builder-windowsservercore-ltsc2016`](https://github.com/caddyserver/caddy-docker/blob/a54f7d1165d6240f53984ad42475ac833b2e6562/2.2/windows-builder/ltsc2016/Dockerfile)
 
 ## Shared Tags
 
--	`2.1.1`, `2`, `latest`:
-	-	[`2.1.1-alpine`](https://github.com/caddyserver/caddy-docker/blob/324fa6bd5b5e7fa3fcbcc5c69f17443fbd1eeebf/2.1/alpine/Dockerfile)
-	-	[`2.1.1-windowsservercore-1809`](https://github.com/caddyserver/caddy-docker/blob/324fa6bd5b5e7fa3fcbcc5c69f17443fbd1eeebf/2.1/windows/1809/Dockerfile)
-	-	[`2.1.1-windowsservercore-ltsc2016`](https://github.com/caddyserver/caddy-docker/blob/324fa6bd5b5e7fa3fcbcc5c69f17443fbd1eeebf/2.1/windows/ltsc2016/Dockerfile)
--	`2.1.1-windowsservercore`, `2-windowsservercore`, `windowsservercore`:
-	-	[`2.1.1-windowsservercore-1809`](https://github.com/caddyserver/caddy-docker/blob/324fa6bd5b5e7fa3fcbcc5c69f17443fbd1eeebf/2.1/windows/1809/Dockerfile)
-	-	[`2.1.1-windowsservercore-ltsc2016`](https://github.com/caddyserver/caddy-docker/blob/324fa6bd5b5e7fa3fcbcc5c69f17443fbd1eeebf/2.1/windows/ltsc2016/Dockerfile)
+-	`2.1.1`:
+	-	[`2.1.1-alpine`](https://github.com/caddyserver/caddy-docker/blob/98b7497fbd428e50040ef34f7a4ba2833c22780f/2.1/alpine/Dockerfile)
+	-	[`2.1.1-windowsservercore-1809`](https://github.com/caddyserver/caddy-docker/blob/98b7497fbd428e50040ef34f7a4ba2833c22780f/2.1/windows/1809/Dockerfile)
+	-	[`2.1.1-windowsservercore-ltsc2016`](https://github.com/caddyserver/caddy-docker/blob/98b7497fbd428e50040ef34f7a4ba2833c22780f/2.1/windows/ltsc2016/Dockerfile)
+-	`2.1.1-builder`:
+	-	[`2.1.1-builder-alpine`](https://github.com/caddyserver/caddy-docker/blob/a54f7d1165d6240f53984ad42475ac833b2e6562/2.1/builder/Dockerfile)
+	-	[`2.1.1-builder-windowsservercore-1809`](https://github.com/caddyserver/caddy-docker/blob/a54f7d1165d6240f53984ad42475ac833b2e6562/2.1/windows-builder/1809/Dockerfile)
+	-	[`2.1.1-builder-windowsservercore-ltsc2016`](https://github.com/caddyserver/caddy-docker/blob/a54f7d1165d6240f53984ad42475ac833b2e6562/2.1/windows-builder/ltsc2016/Dockerfile)
+-	`2.1.1-windowsservercore`:
+	-	[`2.1.1-windowsservercore-1809`](https://github.com/caddyserver/caddy-docker/blob/98b7497fbd428e50040ef34f7a4ba2833c22780f/2.1/windows/1809/Dockerfile)
+	-	[`2.1.1-windowsservercore-ltsc2016`](https://github.com/caddyserver/caddy-docker/blob/98b7497fbd428e50040ef34f7a4ba2833c22780f/2.1/windows/ltsc2016/Dockerfile)
+-	`2.2.0`, `2`, `latest`:
+	-	[`2.2.0-alpine`](https://github.com/caddyserver/caddy-docker/blob/153e0aaa8e8f9f7cc2879c4ffd1016dec368cd9e/2.2/alpine/Dockerfile)
+	-	[`2.2.0-windowsservercore-1809`](https://github.com/caddyserver/caddy-docker/blob/153e0aaa8e8f9f7cc2879c4ffd1016dec368cd9e/2.2/windows/1809/Dockerfile)
+	-	[`2.2.0-windowsservercore-ltsc2016`](https://github.com/caddyserver/caddy-docker/blob/153e0aaa8e8f9f7cc2879c4ffd1016dec368cd9e/2.2/windows/ltsc2016/Dockerfile)
+-	`2.2.0-builder`, `2-builder`, `builder`:
+	-	[`2.2.0-builder-alpine`](https://github.com/caddyserver/caddy-docker/blob/a54f7d1165d6240f53984ad42475ac833b2e6562/2.2/builder/Dockerfile)
+	-	[`2.2.0-builder-windowsservercore-1809`](https://github.com/caddyserver/caddy-docker/blob/a54f7d1165d6240f53984ad42475ac833b2e6562/2.2/windows-builder/1809/Dockerfile)
+	-	[`2.2.0-builder-windowsservercore-ltsc2016`](https://github.com/caddyserver/caddy-docker/blob/a54f7d1165d6240f53984ad42475ac833b2e6562/2.2/windows-builder/ltsc2016/Dockerfile)
+-	`2.2.0-windowsservercore`, `2-windowsservercore`, `windowsservercore`:
+	-	[`2.2.0-windowsservercore-1809`](https://github.com/caddyserver/caddy-docker/blob/153e0aaa8e8f9f7cc2879c4ffd1016dec368cd9e/2.2/windows/1809/Dockerfile)
+	-	[`2.2.0-windowsservercore-ltsc2016`](https://github.com/caddyserver/caddy-docker/blob/153e0aaa8e8f9f7cc2879c4ffd1016dec368cd9e/2.2/windows/ltsc2016/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -114,7 +137,7 @@ The default `Caddyfile` only listens to port `80`, and does not set up automatic
 
 ```console
 $ docker run -d -p 80:80 -p 443:443 \
-    -v /site:/usr/share/caddy \
+    -v /site:/srv \
     -v caddy_data:/data \
     -v caddy_config:/config \
     caddy caddy file-server --domain example.com
@@ -130,33 +153,33 @@ Most users deploying production sites will not want to rely on mounting files in
 
 ```Dockerfile
 # note: never use the :latest tag in a production site
-FROM caddy:2.0.0
+FROM caddy:<version>
 
 COPY Caddyfile /etc/caddy/Caddyfile
-COPY site /site
+COPY site /srv
 ```
 
 #### Adding custom Caddy modules
 
-Caddy is extendable through the use of "modules". See https://caddyserver.com/docs/extending-caddy for full details.
+Caddy is extendable through the use of "modules". See https://caddyserver.com/docs/extending-caddy for full details. You can find a list of available modules on [the Caddy website's download page](https://caddyserver.com/download).
 
 You can use the `:builder` image as a short-cut to building a new Caddy binary:
 
 ```Dockerfile
-FROM caddy:2.0.0-builder AS builder
+FROM caddy:<version>-builder AS builder
 
-RUN caddy-builder \
-    github.com/caddyserver/nginx-adapter \
-    github.com/hairyhenderson/caddy-teapot-module@v0.0.1
+RUN xcaddy build \
+    --with github.com/caddyserver/nginx-adapter \
+    --with github.com/hairyhenderson/caddy-teapot-module@v0.0.3-0
 
-FROM caddy:2.0.0
+FROM caddy:<version>
 
 COPY --from=builder /usr/bin/caddy /usr/bin/caddy
 ```
 
 Note the second `FROM` instruction - this produces a much smaller image by simply overlaying the newly-built binary on top of the the regular `caddy` image.
 
-The `caddy-builder` script is used to [build a new Caddy entrypoint](https://github.com/caddyserver/caddy/blob/71e81d262bc34545f73f1380bc5d078d83d1570f/cmd/caddy/main.go#L15..L25), with the provided modules. You can specify just a module name, or a name with a version (separated by `@`).
+The [`xcaddy`](https://caddyserver.com/docs/build#xcaddy) tool is used to [build a new Caddy entrypoint](https://github.com/caddyserver/caddy/blob/4217217badf220d7d2c25f43f955fdc8454f2c64/cmd/caddy/main.go#L15..L25), with the provided modules. You can specify just a module name, or a name with a version (separated by `@`). You can also specify a specific version (can be a version tag or commit hash) of Caddy to build from. Read more about [`xcaddy` usage](https://github.com/caddyserver/xcaddy#command-usage).
 
 Note that the "standard" Caddy modules ([`github.com/caddyserver/caddy/master/modules/standard`](https://github.com/caddyserver/caddy/tree/master/modules/standard)) are always included.
 
@@ -166,11 +189,32 @@ Caddy does not require a full restart when configuration is changed. Caddy comes
 
 When running Caddy in Docker, the recommended way to trigger a config reload is by executing the `caddy reload` command in the running container.
 
-First, you'll need to determine your container ID or name. Then, pass the container ID to `docker exec`.
+First, you'll need to determine your container ID or name. Then, pass the container ID to `docker exec`. The working directory is set to `/etc/caddy` so Caddy can find your Caddyfile without additional arguments.
 
 ```console
 $ caddy_container_id=$(docker ps | grep caddy | awk '{print $1;}')
-$ docker exec $caddy_container_id caddy reload --config /etc/caddy/Caddyfile --adapter caddyfile
+$ docker exec $caddy_container_id -w /etc/caddy caddy reload
+```
+
+### Docker Compose example
+
+If you prefer to use `docker-compoose` to run your stack, here's a sample service definition.
+
+```yaml
+version: "3.7"
+
+services:
+  caddy:
+    image: caddy:<version>
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - $PWD/Caddyfile:/etc/caddy/Caddyfile
+      - $PWD/site:/srv
+      - caddy_data:/data
+      - caddy_config:/config
 ```
 
 # Image Variants
