@@ -24,10 +24,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.7-7.3.1`, `2.7-7.3`, `2.7-7`, `2.7`, `2-7.3.1`, `2-7.3`, `2-7`, `2`, `2.7-7.3.1-buster`, `2.7-7.3-buster`, `2.7-7-buster`, `2.7-buster`, `2-7.3.1-buster`, `2-7.3-buster`, `2-7-buster`, `2-buster`](https://github.com/docker-library/pypy/blob/784e896a5d09a6e5139926936b897ee779fcce77/2.7/Dockerfile)
--	[`2.7-7.3.1-slim`, `2.7-7.3-slim`, `2.7-7-slim`, `2.7-slim`, `2-7.3.1-slim`, `2-7.3-slim`, `2-7-slim`, `2-slim`, `2.7-7.3.1-slim-buster`, `2.7-7.3-slim-buster`, `2.7-7-slim-buster`, `2.7-slim-buster`, `2-7.3.1-slim-buster`, `2-7.3-slim-buster`, `2-7-slim-buster`, `2-slim-buster`](https://github.com/docker-library/pypy/blob/784e896a5d09a6e5139926936b897ee779fcce77/2.7/slim/Dockerfile)
--	[`3.6-7.3.1`, `3.6-7.3`, `3.6-7`, `3.6`, `3-7.3.1`, `3-7.3`, `3-7`, `3`, `latest`, `3.6-7.3.1-buster`, `3.6-7.3-buster`, `3.6-7-buster`, `3.6-buster`, `3-7.3.1-buster`, `3-7.3-buster`, `3-7-buster`, `3-buster`, `buster`](https://github.com/docker-library/pypy/blob/784e896a5d09a6e5139926936b897ee779fcce77/3.6/Dockerfile)
--	[`3.6-7.3.1-slim`, `3.6-7.3-slim`, `3.6-7-slim`, `3.6-slim`, `3-7.3.1-slim`, `3-7.3-slim`, `3-7-slim`, `3-slim`, `slim`, `3.6-7.3.1-slim-buster`, `3.6-7.3-slim-buster`, `3.6-7-slim-buster`, `3.6-slim-buster`, `3-7.3.1-slim-buster`, `3-7.3-slim-buster`, `3-7-slim-buster`, `3-slim-buster`, `slim-buster`](https://github.com/docker-library/pypy/blob/784e896a5d09a6e5139926936b897ee779fcce77/3.6/slim/Dockerfile)
+-	[`2.7-7.3.2`, `2.7-7.3`, `2.7-7`, `2.7`, `2-7.3.2`, `2-7.3`, `2-7`, `2`, `2.7-7.3.2-buster`, `2.7-7.3-buster`, `2.7-7-buster`, `2.7-buster`, `2-7.3.2-buster`, `2-7.3-buster`, `2-7-buster`, `2-buster`](https://github.com/docker-library/pypy/blob/af46309f0e0d85beef6b1ad2d4f05f5af7550033/2.7/Dockerfile)
+-	[`2.7-7.3.2-slim`, `2.7-7.3-slim`, `2.7-7-slim`, `2.7-slim`, `2-7.3.2-slim`, `2-7.3-slim`, `2-7-slim`, `2-slim`, `2.7-7.3.2-slim-buster`, `2.7-7.3-slim-buster`, `2.7-7-slim-buster`, `2.7-slim-buster`, `2-7.3.2-slim-buster`, `2-7.3-slim-buster`, `2-7-slim-buster`, `2-slim-buster`](https://github.com/docker-library/pypy/blob/af46309f0e0d85beef6b1ad2d4f05f5af7550033/2.7/slim/Dockerfile)
+-	[`3.6-7.3.2`, `3.6-7.3`, `3.6-7`, `3.6`, `3-7.3.2`, `3-7.3`, `3-7`, `3`, `latest`, `3.6-7.3.2-buster`, `3.6-7.3-buster`, `3.6-7-buster`, `3.6-buster`, `3-7.3.2-buster`, `3-7.3-buster`, `3-7-buster`, `3-buster`, `buster`](https://github.com/docker-library/pypy/blob/af46309f0e0d85beef6b1ad2d4f05f5af7550033/3.6/Dockerfile)
+-	[`3.6-7.3.2-slim`, `3.6-7.3-slim`, `3.6-7-slim`, `3.6-slim`, `3-7.3.2-slim`, `3-7.3-slim`, `3-7-slim`, `3-slim`, `slim`, `3.6-7.3.2-slim-buster`, `3.6-7.3-slim-buster`, `3.6-7-slim-buster`, `3.6-slim-buster`, `3-7.3.2-slim-buster`, `3-7.3-slim-buster`, `3-7-slim-buster`, `3-slim-buster`, `slim-buster`](https://github.com/docker-library/pypy/blob/af46309f0e0d85beef6b1ad2d4f05f5af7550033/3.6/slim/Dockerfile)
+-	[`3.7-7.3.2`, `3.7-7.3`, `3.7-7`, `3.7`, `3.7-7.3.2-buster`, `3.7-7.3-buster`, `3.7-7-buster`, `3.7-buster`](https://github.com/docker-library/pypy/blob/af46309f0e0d85beef6b1ad2d4f05f5af7550033/3.7/Dockerfile)
+-	[`3.7-7.3.2-slim`, `3.7-7.3-slim`, `3.7-7-slim`, `3.7-slim`, `3.7-7.3.2-slim-buster`, `3.7-7.3-slim-buster`, `3.7-7-slim-buster`, `3.7-slim-buster`](https://github.com/docker-library/pypy/blob/af46309f0e0d85beef6b1ad2d4f05f5af7550033/3.7/slim/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -35,7 +37,7 @@ WARNING:
 	[https://github.com/docker-library/pypy/issues](https://github.com/docker-library/pypy/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/pypy/), [`arm64v8`](https://hub.docker.com/r/arm64v8/pypy/), [`i386`](https://hub.docker.com/r/i386/pypy/), [`ppc64le`](https://hub.docker.com/r/ppc64le/pypy/), [`s390x`](https://hub.docker.com/r/s390x/pypy/)
+	[`amd64`](https://hub.docker.com/r/amd64/pypy/), [`arm64v8`](https://hub.docker.com/r/arm64v8/pypy/), [`i386`](https://hub.docker.com/r/i386/pypy/), [`s390x`](https://hub.docker.com/r/s390x/pypy/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/pypy/` directory](https://github.com/docker-library/repo-info/blob/master/repos/pypy) ([history](https://github.com/docker-library/repo-info/commits/master/repos/pypy))  
