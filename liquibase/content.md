@@ -16,4 +16,4 @@ The only change to use this docker image, is to use `docker run ...` and mount t
 
 `docker run -v /home/user/changelog:/liquibase/changelog liquibase --driver=org.postgresql.Driver --url=”jdbc:postgresql://<DATABASE_IP>:<DATABASE_PORT>/<DATABASE>” --changeLogFile=/liquibase/changelog/changelog.xml --username=<USERNAME> --password=<PASSWORD>`
 
-All Liquibase commands, such as `rollback`, `updateSQL`, and others, are available, as well. 
+All Liquibase commands, such as `rollback`, `updateSQL`, and others, are available, as well.
