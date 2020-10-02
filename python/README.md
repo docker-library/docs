@@ -53,12 +53,6 @@ WARNING:
 -	[`3.6.12-slim-stretch`, `3.6-slim-stretch`](https://github.com/docker-library/python/blob/554274e3e010fbe89a81d5b7551d44c7d6980414/3.6/stretch/slim/Dockerfile)
 -	[`3.6.12-alpine3.12`, `3.6-alpine3.12`, `3.6.12-alpine`, `3.6-alpine`](https://github.com/docker-library/python/blob/554274e3e010fbe89a81d5b7551d44c7d6980414/3.6/alpine3.12/Dockerfile)
 -	[`3.6.12-alpine3.11`, `3.6-alpine3.11`](https://github.com/docker-library/python/blob/554274e3e010fbe89a81d5b7551d44c7d6980414/3.6/alpine3.11/Dockerfile)
--	[`3.5.10-buster`, `3.5-buster`](https://github.com/docker-library/python/blob/c85a8c6d27b6121ae196baae7d7e6353dc934991/3.5/buster/Dockerfile)
--	[`3.5.10-slim-buster`, `3.5-slim-buster`, `3.5.10-slim`, `3.5-slim`](https://github.com/docker-library/python/blob/c85a8c6d27b6121ae196baae7d7e6353dc934991/3.5/buster/slim/Dockerfile)
--	[`3.5.10-stretch`, `3.5-stretch`](https://github.com/docker-library/python/blob/c85a8c6d27b6121ae196baae7d7e6353dc934991/3.5/stretch/Dockerfile)
--	[`3.5.10-slim-stretch`, `3.5-slim-stretch`](https://github.com/docker-library/python/blob/c85a8c6d27b6121ae196baae7d7e6353dc934991/3.5/stretch/slim/Dockerfile)
--	[`3.5.10-alpine3.12`, `3.5-alpine3.12`, `3.5.10-alpine`, `3.5-alpine`](https://github.com/docker-library/python/blob/c85a8c6d27b6121ae196baae7d7e6353dc934991/3.5/alpine3.12/Dockerfile)
--	[`3.5.10-alpine3.11`, `3.5-alpine3.11`](https://github.com/docker-library/python/blob/c85a8c6d27b6121ae196baae7d7e6353dc934991/3.5/alpine3.11/Dockerfile)
 
 ## Shared Tags
 
@@ -85,8 +79,6 @@ WARNING:
 	-	[`3.7.9-windowsservercore-1809`](https://github.com/docker-library/python/blob/35d8d9712c3ea4cbc4004a0e62ab61100b6fed99/3.7/windows/windowsservercore-1809/Dockerfile)
 -	`3.6.12`, `3.6`:
 	-	[`3.6.12-buster`](https://github.com/docker-library/python/blob/554274e3e010fbe89a81d5b7551d44c7d6980414/3.6/buster/Dockerfile)
--	`3.5.10`, `3.5`:
-	-	[`3.5.10-buster`](https://github.com/docker-library/python/blob/c85a8c6d27b6121ae196baae7d7e6353dc934991/3.5/buster/Dockerfile)
 
 # Quick reference (cont.)
 
