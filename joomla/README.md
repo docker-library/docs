@@ -24,15 +24,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.9.21-php7.2-apache`, `3.9-php7.2-apache`, `3-php7.2-apache`, `php7.2-apache`, `3.9.21-php7.2`, `3.9-php7.2`, `3-php7.2`, `php7.2`](https://github.com/joomla-docker/docker-joomla/blob/9bbb72ba7eeadca698025d96f78ae441194700b5/php7.2/apache/Dockerfile)
--	[`3.9.21-php7.2-fpm`, `3.9-php7.2-fpm`, `3-php7.2-fpm`, `php7.2-fpm`](https://github.com/joomla-docker/docker-joomla/blob/9bbb72ba7eeadca698025d96f78ae441194700b5/php7.2/fpm/Dockerfile)
--	[`3.9.21-php7.2-fpm-alpine`, `3.9-php7.2-fpm-alpine`, `3-php7.2-fpm-alpine`, `php7.2-fpm-alpine`](https://github.com/joomla-docker/docker-joomla/blob/9bbb72ba7eeadca698025d96f78ae441194700b5/php7.2/fpm-alpine/Dockerfile)
--	[`3.9.21-apache`, `3.9-apache`, `3-apache`, `apache`, `3.9.21`, `3.9`, `3`, `latest`, `3.9.21-php7.3-apache`, `3.9-php7.3-apache`, `3-php7.3-apache`, `php7.3-apache`, `3.9.21-php7.3`, `3.9-php7.3`, `3-php7.3`, `php7.3`](https://github.com/joomla-docker/docker-joomla/blob/9bbb72ba7eeadca698025d96f78ae441194700b5/php7.3/apache/Dockerfile)
--	[`3.9.21-fpm`, `3.9-fpm`, `3-fpm`, `fpm`, `3.9.21-php7.3-fpm`, `3.9-php7.3-fpm`, `3-php7.3-fpm`, `php7.3-fpm`](https://github.com/joomla-docker/docker-joomla/blob/9bbb72ba7eeadca698025d96f78ae441194700b5/php7.3/fpm/Dockerfile)
--	[`3.9.21-fpm-alpine`, `3.9-fpm-alpine`, `3-fpm-alpine`, `fpm-alpine`, `3.9.21-php7.3-fpm-alpine`, `3.9-php7.3-fpm-alpine`, `3-php7.3-fpm-alpine`, `php7.3-fpm-alpine`](https://github.com/joomla-docker/docker-joomla/blob/9bbb72ba7eeadca698025d96f78ae441194700b5/php7.3/fpm-alpine/Dockerfile)
--	[`3.9.21-php7.4-apache`, `3.9-php7.4-apache`, `3-php7.4-apache`, `php7.4-apache`, `3.9.21-php7.4`, `3.9-php7.4`, `3-php7.4`, `php7.4`](https://github.com/joomla-docker/docker-joomla/blob/9bbb72ba7eeadca698025d96f78ae441194700b5/php7.4/apache/Dockerfile)
--	[`3.9.21-php7.4-fpm`, `3.9-php7.4-fpm`, `3-php7.4-fpm`, `php7.4-fpm`](https://github.com/joomla-docker/docker-joomla/blob/9bbb72ba7eeadca698025d96f78ae441194700b5/php7.4/fpm/Dockerfile)
--	[`3.9.21-php7.4-fpm-alpine`, `3.9-php7.4-fpm-alpine`, `3-php7.4-fpm-alpine`, `php7.4-fpm-alpine`](https://github.com/joomla-docker/docker-joomla/blob/9bbb72ba7eeadca698025d96f78ae441194700b5/php7.4/fpm-alpine/Dockerfile)
+-	[`3.9.22-php7.2-apache`, `3.9-php7.2-apache`, `3-php7.2-apache`, `php7.2-apache`, `3.9.22-php7.2`, `3.9-php7.2`, `3-php7.2`, `php7.2`](https://github.com/joomla-docker/docker-joomla/blob/33ce00563664c3fdb3ecee60f01179a6b66767ec/php7.2/apache/Dockerfile)
+-	[`3.9.22-php7.2-fpm`, `3.9-php7.2-fpm`, `3-php7.2-fpm`, `php7.2-fpm`](https://github.com/joomla-docker/docker-joomla/blob/33ce00563664c3fdb3ecee60f01179a6b66767ec/php7.2/fpm/Dockerfile)
+-	[`3.9.22-php7.2-fpm-alpine`, `3.9-php7.2-fpm-alpine`, `3-php7.2-fpm-alpine`, `php7.2-fpm-alpine`](https://github.com/joomla-docker/docker-joomla/blob/33ce00563664c3fdb3ecee60f01179a6b66767ec/php7.2/fpm-alpine/Dockerfile)
+-	[`3.9.22-apache`, `3.9-apache`, `3-apache`, `apache`, `3.9.22`, `3.9`, `3`, `latest`, `3.9.22-php7.3-apache`, `3.9-php7.3-apache`, `3-php7.3-apache`, `php7.3-apache`, `3.9.22-php7.3`, `3.9-php7.3`, `3-php7.3`, `php7.3`](https://github.com/joomla-docker/docker-joomla/blob/33ce00563664c3fdb3ecee60f01179a6b66767ec/php7.3/apache/Dockerfile)
+-	[`3.9.22-fpm`, `3.9-fpm`, `3-fpm`, `fpm`, `3.9.22-php7.3-fpm`, `3.9-php7.3-fpm`, `3-php7.3-fpm`, `php7.3-fpm`](https://github.com/joomla-docker/docker-joomla/blob/33ce00563664c3fdb3ecee60f01179a6b66767ec/php7.3/fpm/Dockerfile)
+-	[`3.9.22-fpm-alpine`, `3.9-fpm-alpine`, `3-fpm-alpine`, `fpm-alpine`, `3.9.22-php7.3-fpm-alpine`, `3.9-php7.3-fpm-alpine`, `3-php7.3-fpm-alpine`, `php7.3-fpm-alpine`](https://github.com/joomla-docker/docker-joomla/blob/33ce00563664c3fdb3ecee60f01179a6b66767ec/php7.3/fpm-alpine/Dockerfile)
+-	[`3.9.22-php7.4-apache`, `3.9-php7.4-apache`, `3-php7.4-apache`, `php7.4-apache`, `3.9.22-php7.4`, `3.9-php7.4`, `3-php7.4`, `php7.4`](https://github.com/joomla-docker/docker-joomla/blob/33ce00563664c3fdb3ecee60f01179a6b66767ec/php7.4/apache/Dockerfile)
+-	[`3.9.22-php7.4-fpm`, `3.9-php7.4-fpm`, `3-php7.4-fpm`, `php7.4-fpm`](https://github.com/joomla-docker/docker-joomla/blob/33ce00563664c3fdb3ecee60f01179a6b66767ec/php7.4/fpm/Dockerfile)
+-	[`3.9.22-php7.4-fpm-alpine`, `3.9-php7.4-fpm-alpine`, `3-php7.4-fpm-alpine`, `php7.4-fpm-alpine`](https://github.com/joomla-docker/docker-joomla/blob/33ce00563664c3fdb3ecee60f01179a6b66767ec/php7.4/fpm-alpine/Dockerfile)
 
 # Quick reference (cont.)
 
