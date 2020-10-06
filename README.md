@@ -47,7 +47,7 @@ All Markdown files here are run through [tianon's fork of `markdownfmt`](https:/
 
 Edit the `content.md` for an image; not the `README.md` as it's auto-generated from the contents of the other files in that repo. To see the changes to the `README.md`, run `./update.sh myimage` from the repo root, but do not add the `README.md` changes to your pull request. See also `markdownfmt.sh` point [below](#how-do-i-add-a-new-images-docs).
 
-After opening your Pull Request the changes will be checked by an automated `markdownfmt.sh` before it can be merged. A common issue is incorrect spacing such as with two lines missing an empty line between them (double-spaced)
+After opening your Pull Request the changes will be checked by an automated `markdownfmt.sh` before it can be merged. A common issue is incorrect spacing such as with two lines missing an empty line between them (double-spaced).
 
 # How do I add a new image's docs
 
