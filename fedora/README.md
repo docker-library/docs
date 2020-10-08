@@ -25,9 +25,9 @@ WARNING:
 # Supported tags and respective `Dockerfile` links
 
 -	[`31`](https://github.com/fedora-cloud/docker-brew-fedora/blob/619a9d98269d556d030648ad486bb2c9f50f1768/x86_64/Dockerfile)
--	[`latest`, `32`](https://github.com/fedora-cloud/docker-brew-fedora/blob/858623325e7131ebb26e4c59b77a41817c1226d3/x86_64/Dockerfile)
--	[`33`](https://github.com/fedora-cloud/docker-brew-fedora/blob/ca4fa870a01789a777d5ebd0d7af855ee585a50d/x86_64/Dockerfile)
--	[`rawhide`, `34`](https://github.com/fedora-cloud/docker-brew-fedora/blob/8e8f37ceb92fcc3ae14944d10146cb47a9a02aba/x86_64/Dockerfile)
+-	[`latest`, `32`](https://github.com/fedora-cloud/docker-brew-fedora/blob/d011eb05bd6855b2e2fa4393117d1cdadc575b16/x86_64/Dockerfile)
+-	[`33`](https://github.com/fedora-cloud/docker-brew-fedora/blob/31676f13b9cf08f51ab74bba2988ca21d13725c7/x86_64/Dockerfile)
+-	[`rawhide`, `34`](https://github.com/fedora-cloud/docker-brew-fedora/blob/da3adfaa3a64b02bfc6a78199964ac2f8d777f1c/x86_64/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -35,7 +35,7 @@ WARNING:
 	[Fedora's bugzilla page](https://bugzilla.redhat.com/enter_bug.cgi?product=Fedora) (choose `docker` as component and include details about image problems in the description) or [GitHub](https://github.com/fedora-cloud/docker-brew-fedora/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/fedora/), [`arm64v8`](https://hub.docker.com/r/arm64v8/fedora/), [`ppc64le`](https://hub.docker.com/r/ppc64le/fedora/), [`s390x`](https://hub.docker.com/r/s390x/fedora/)
+	[`amd64`](https://hub.docker.com/r/amd64/fedora/), [`arm32v7`](https://hub.docker.com/r/arm32v7/fedora/), [`arm64v8`](https://hub.docker.com/r/arm64v8/fedora/), [`ppc64le`](https://hub.docker.com/r/ppc64le/fedora/), [`s390x`](https://hub.docker.com/r/s390x/fedora/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/fedora/` directory](https://github.com/docker-library/repo-info/blob/master/repos/fedora) ([history](https://github.com/docker-library/repo-info/commits/master/repos/fedora))  
