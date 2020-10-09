@@ -47,7 +47,7 @@ There are many ways to extend the `%%REPO%%` image. Without trying to support ev
 
 ## Environment Variables
 
-The PostgreSQL image uses several environment variables which are easy to miss. While none of the variables are required, they may significantly aid you in using the image.
+The PostgreSQL image uses several environment variables which are easy to miss. The only variable required is `POSTGRES_PASSWORD`, the rest are optional.
 
 **Warning**: the Docker specific variables will only have an effect if you start the container with a data directory that is empty; any pre-existing database will be left untouched on container startup.
 
