@@ -128,4 +128,8 @@ services:
       - $PWD/site:/srv
       - caddy_data:/data
       - caddy_config:/config
+
+volumes:
+  caddy_data:
+  caddy_config:
 ```
