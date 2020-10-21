@@ -28,8 +28,7 @@ This image is deprecated in favor of the full installation explained over at [Se
 
 # Supported tags and respective `Dockerfile` links
 
--	[`9.1.2`, `9.1`, `9`, `latest`](https://github.com/getsentry/docker-sentry/blob/09a7761e841eee7fab758526b14d46ae56134952/9.1/Dockerfile)
--	[`9.1.2-onbuild`, `9.1-onbuild`, `9-onbuild`, `onbuild`](https://github.com/getsentry/docker-sentry/blob/f58f91fe5dc31bfe77af277dae7002a5542326a9/9.1/onbuild/Dockerfile)
+**No supported tags**
 
 # Quick reference (cont.)
 
@@ -37,7 +36,7 @@ This image is deprecated in favor of the full installation explained over at [Se
 	[https://github.com/getsentry/docker-sentry/issues](https://github.com/getsentry/docker-sentry/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/sentry/)
+	**No supported architectures**
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/sentry/` directory](https://github.com/docker-library/repo-info/blob/master/repos/sentry) ([history](https://github.com/docker-library/repo-info/commits/master/repos/sentry))  
@@ -152,30 +151,6 @@ Connection information for an outbound smtp server. These values aren't needed i
 ### `SENTRY_MAILGUN_API_KEY`
 
 If you're using Mailgun for inbound mail, set your API key and configure a route to forward to `/api/hooks/mailgun/inbound/`.
-
-# Image Variants
-
-The `sentry` images come in many flavors, each designed for a specific use case.
-
-## `sentry:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-## `sentry:onbuild`
-
-This image makes it easy to custom build your own Sentry instance by copying in a custom `config.yml` and/or `sentry.conf.py` file and installing plugins from `requirements.txt`.
-
-It's also possible to develop custom extensions within your `onbuild` package. If the build directory contains a `setup.py` file, this will also get installed.
-
-See the [official Sentry documentation](https://docs.getsentry.com/on-premise/server/installation/) for more information.
-
-To create your custom `sentry:onbuild` package, simply do the following:
-
-1.	Create a Dockerfile containing `FROM sentry:onbuild`
-2.	In the same directory, add your custom configuration files.
-3.	You can get copies of those files to use as templates from the [docker-sentry GitHub repo](https://github.com/getsentry/docker-sentry/).
-4.	Build your image: `docker build -t mysentry .`
-5.	Run your custom image using `mysentry` instead of `sentry`.
 
 # License
 
