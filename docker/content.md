@@ -188,6 +188,23 @@ $ docker run --privileged --name some-docker -d \
 	%%IMAGE%%:dind --storage-driver overlay2
 ```
 
+## Runtime Settings Considerations
+
+Inspired by the [official systemd `docker.service` configuration](https://github.com/docker/docker-ce-packaging/blob/57ae892b13de399171fc33f878b70e72855747e6/systemd/docker.service#L30-L45), you may want to consider different values for the following runtime configuration options, especially for production Docker instances:
+
+```console
+$ docker run --privileged --name some-docker -d \
+	... \
+	--ulimit nofile=-1 \
+	--ulimit nproc=-1 \
+	--ulimit core=-1 \
+	--pids-limit -1 \
+	--oom-score-adj -500 \
+	%%IMAGE%%:dind
+```
+
+Some of these will not be supported based on the settings on the host's `dockerd`, such as `--ulimit nofile=-1`, giving errors that look like `error setting rlimit type 7: operation not permitted`, and some may inherit sane values from the host `dockerd` instance or may not apply for your usage of Docker-in-Docker (for example, you likely want to set `--oom-score-adj` to a value that's higher than `dockerd` on the host so that your Docker-in-Docker instance is killed before the host Docker instance is).
+
 ## Rootless
 
 For more information about using the experimental "rootless" image variants, see [docker-library/docker#174](https://github.com/docker-library/docker/pull/174).
