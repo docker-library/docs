@@ -62,7 +62,7 @@ A full example:
 $ docker run -d -v <DIRECTORY>:/opt/aerospike/data --name aerospike -p 3000:3000 -p 3001:3001 -p 3002:3002 -p 3003:3003 %%IMAGE%%
 ```
 
-__Note:__ As of version 5.1.0.10 the Dockerfile no longer has /opt/aerospike/data as a Docker Volume by default.
+**Note:** As of version 5.1.0.10 the Dockerfile no longer has /opt/aerospike/data as a Docker Volume by default.
 
 ## Clustering
 
