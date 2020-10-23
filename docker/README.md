@@ -24,10 +24,14 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`19.03.13`, `19.03`, `19`, `stable`, `test`, `latest`](https://github.com/docker-library/docker/blob/12d1c2763b54d29137ec448a3e4ad1a9aefae1a0/19.03/Dockerfile)
--	[`19.03.13-dind`, `19.03-dind`, `19-dind`, `stable-dind`, `test-dind`, `dind`](https://github.com/docker-library/docker/blob/12d1c2763b54d29137ec448a3e4ad1a9aefae1a0/19.03/dind/Dockerfile)
--	[`19.03.13-dind-rootless`, `19.03-dind-rootless`, `19-dind-rootless`, `stable-dind-rootless`, `test-dind-rootless`, `dind-rootless`](https://github.com/docker-library/docker/blob/12d1c2763b54d29137ec448a3e4ad1a9aefae1a0/19.03/dind-rootless/Dockerfile)
--	[`19.03.13-git`, `19.03-git`, `19-git`, `stable-git`, `test-git`, `git`](https://github.com/docker-library/docker/blob/12d1c2763b54d29137ec448a3e4ad1a9aefae1a0/19.03/git/Dockerfile)
+-	[`20.10.0-beta1`, `20.10-rc`, `rc`](https://github.com/docker-library/docker/blob/b6597f7fc1294f4ee3345576f06889d2ff773a8d/20.10-rc/Dockerfile)
+-	[`20.10.0-beta1-dind`, `20.10-rc-dind`, `rc-dind`](https://github.com/docker-library/docker/blob/b1d2628005e12e79079c025c3653cba248d6f264/20.10-rc/dind/Dockerfile)
+-	[`20.10.0-beta1-dind-rootless`, `20.10-rc-dind-rootless`, `rc-dind-rootless`](https://github.com/docker-library/docker/blob/b6597f7fc1294f4ee3345576f06889d2ff773a8d/20.10-rc/dind-rootless/Dockerfile)
+-	[`20.10.0-beta1-git`, `20.10-rc-git`, `rc-git`](https://github.com/docker-library/docker/blob/b6597f7fc1294f4ee3345576f06889d2ff773a8d/20.10-rc/git/Dockerfile)
+-	[`19.03.13`, `19.03`, `19`, `stable`, `latest`](https://github.com/docker-library/docker/blob/12d1c2763b54d29137ec448a3e4ad1a9aefae1a0/19.03/Dockerfile)
+-	[`19.03.13-dind`, `19.03-dind`, `19-dind`, `stable-dind`, `dind`](https://github.com/docker-library/docker/blob/b1d2628005e12e79079c025c3653cba248d6f264/19.03/dind/Dockerfile)
+-	[`19.03.13-dind-rootless`, `19.03-dind-rootless`, `19-dind-rootless`, `stable-dind-rootless`, `dind-rootless`](https://github.com/docker-library/docker/blob/12d1c2763b54d29137ec448a3e4ad1a9aefae1a0/19.03/dind-rootless/Dockerfile)
+-	[`19.03.13-git`, `19.03-git`, `19-git`, `stable-git`, `git`](https://github.com/docker-library/docker/blob/12d1c2763b54d29137ec448a3e4ad1a9aefae1a0/19.03/git/Dockerfile)
 
 # Quick reference (cont.)
 
