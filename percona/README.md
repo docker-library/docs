@@ -30,7 +30,7 @@ WARNING:
 -	[`psmdb-4.4.1`, `psmdb-4.4`](https://github.com/percona/percona-docker/blob/602119736d5c4426ab60fbd8c05cc081a73e975d/percona-server-mongodb-4.4/Dockerfile)
 -	[`psmdb-4.2.9`, `psmdb-4.2`](https://github.com/percona/percona-docker/blob/6962f2215220e998b357abcf20c31334adfeb506/percona-server-mongodb-4.2/Dockerfile)
 -	[`psmdb-4.0.20`, `psmdb-4.0`](https://github.com/percona/percona-docker/blob/edef48f13966c4581e7ee77138b24133ba70174b/percona-server-mongodb-4.0/Dockerfile)
--	[`psmdb-3.6.19`, `psmdb-3.6`](https://github.com/percona/percona-docker/blob/a949d60e22172d6329d6509253e6db254898217e/percona-server-mongodb-3.6/Dockerfile)
+-	[`psmdb-3.6.20`, `psmdb-3.6`](https://github.com/percona/percona-docker/blob/10eca796491518ec22589d77160eb9269d613150/percona-server-mongodb-3.6/Dockerfile)
 
 # Quick reference (cont.)
 
