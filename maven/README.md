@@ -41,6 +41,7 @@ WARNING:
 -	[`3.6.3-ibmjava-8`, `3.6.3-ibmjava`, `3.6-ibmjava-8`, `3.6-ibmjava`, `3-ibmjava-8`, `3-ibmjava`, `ibmjava`](https://github.com/carlossg/docker-maven/blob/d3dd6bc261c6173c5e52e3a7a36b6a3d8d2800b4/ibmjava-8/Dockerfile)
 -	[`3.6.3-ibmjava-8-alpine`, `3.6.3-ibmjava-alpine`, `3.6-ibmjava-8-alpine`, `3.6-ibmjava-alpine`, `3-ibmjava-8-alpine`, `ibmjava-alpine`](https://github.com/carlossg/docker-maven/blob/d3dd6bc261c6173c5e52e3a7a36b6a3d8d2800b4/ibmjava-8-alpine/Dockerfile)
 -	[`3.6.3-amazoncorretto-11`, `3.6.3-amazoncorretto`, `3.6-amazoncorretto-11`, `3.6-amazoncorretto`, `3-amazoncorretto-11`, `3-amazoncorretto`, `amazoncorretto`](https://github.com/carlossg/docker-maven/blob/bd12f1eef2fc77dd6341dbe461ff78eedfbc8f2a/amazoncorretto-11/Dockerfile)
+-	[`3.6.3-amazoncorretto-15`, `3.6-amazoncorretto-15`, `3-amazoncorretto-15`](https://github.com/carlossg/docker-maven/blob/ec6fda17ef61e07cf861b9963f16bc95da438261/amazoncorretto-15/Dockerfile)
 -	[`3.6.3-amazoncorretto-8`, `3.6-amazoncorretto-8`, `3-amazoncorretto-8`](https://github.com/carlossg/docker-maven/blob/bd12f1eef2fc77dd6341dbe461ff78eedfbc8f2a/amazoncorretto-8/Dockerfile)
 
 # Quick reference (cont.)
