@@ -32,6 +32,14 @@ For many simple, single file projects, you may find it inconvenient to write a c
 $ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp %%IMAGE%%:5.20 perl your-daemon-or-script.pl
 ```
 
+## Coexisting with Debian's `/usr/bin/perl`
+
+The *perl* binary built for this image is installed in `/usr/local/bin/perl`, along with other standard tools in the Perl distribution such as `prove` and `perldoc`, as well as [`cpanm`](https://metacpan.org/pod/App::cpanminus) for installing [CPAN](https://www.cpan.org) modules. Containers running this image will also have their `PATH` enviroment set like `/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin` to ensure that this *perl* binary will be found *first* in normal usage.
+
+As this official image of Docker is built using the [buildpack-deps](https://hub.docker.com/_/buildpack-deps) image (or [debian:slim](https://hub.docker.com/_/debian) for `:slim` variants,) this image also contains a `/usr/bin/perl` as supplied by the [Debian](https://www.debian.org) project. This is needed for the underlying [dpkg](https://en.wikipedia.org/wiki/Dpkg)/[apt](https://en.wikipedia.org/wiki/APT_(software)) package management tools to work correctly, as docker-perl cannot be used here due to different configuration (such as `@INC` and installation paths, as well as other differences like whether `-Dusethreads` is included or not.)
+
+See also [Perl/docker-perl#26](https://github.com/Perl/docker-perl/issues/26) for an extended discussion.
+
 ## Signal handling behavior notice
 
 As Perl will run as PID 1 by default in containers (unless an [ENTRYPOINT](https://docs.docker.com/engine/reference/builder/#entrypoint) is set,) special care needs to be considered when expecting to send signals (particularly SIGINT or SIGTERM) to it. For example, running
