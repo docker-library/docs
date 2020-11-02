@@ -1,134 +1,142 @@
-# What is Zend Server?
+# PHP via Zend Server
 
-Zend Server is the integrated application platform for PHP mobile and web apps. Zend Server provides you with a highly available PHP production environment which includes, amongst other features, a highly reliable PHP stack, application monitoring, troubleshooting, and the all-new Z-Ray.
+With Zend Server on Docker, you'll get your PHP applications up and running safely and quickly. Alongside Docker's tools and customization capabilities, you'll be benefiting from Zend Server's state of the art approach to PHP. Zend Server feature highlights include a highly reliable PHP stack, Application Peformance Monitoring and Analysis, troubleshooting with Code Tracing and common debugging tools, as well as Z-Ray - unique technology that gives developers unprecedented visibility into their code at run time.
 
-### Boost your Development with Z-Ray
+For development purposes we provide a time-limited trial license. For production applications you must posess a valid Zend Server license, which you should specify using the instructions in the section "[Supported Environment Variables](#env)".
 
-Using Zend Server Z-Ray is akin to wearing X-Ray goggles, effortlessly giving developers deep insight into how their code is running as they are developing it – all without having to change any of their habits or workflow. With Z-Ray, developers can immediately understand the impact of their code changes, enabling them to both improve quality and solve issues long before their code reaches production. In addition to the obvious benefits of this ‘Left Shifting’ – better performance, fewer production issues and faster recovery times – using Z-Ray is also downright fun!
+## Core Features of the Images
 
-### Powering Continuous Delivery
+- LTS versions of Zend Server
+- PHP Swoole extension
+- Alternative entrypoint script for serverless mode
+- Easy configuration change via special list files
+- Support for Zend Server clustering
+- Support for pre- and post-initialization routines
 
-Zend Server is the platform that enables Continuous Delivery, which provides consistency, automation and collaboration capabilities throughout the application delivery cycle. Patterns are available to integrate Zend Server with: Chef, Jenkins, Nagios, Vmware, Puppet.
+## Quick Start
 
-### Additional Resources
+The Docker Hub images are built from the files in this GitHub repository:
 
--	[http://www.zend.com/](http://www.zend.com/)
--	[http://support.roguewave.com/](http://support.roguewave.com/)
--	[http://files.zend.com/help/Zend-Server/zend-server.htm#faqs.htm](http://files.zend.com/help/Zend-Server/zend-server.htm#faqs.htm)
--	[http://files.zend.com/help/Zend-Server/zend-server.htm#getting\_started.htm](http://files.zend.com/help/Zend-Server/zend-server.htm#getting_started.htm)
+https://github.com/zendtech/php-zendserver-docker
 
-# PHP-ZendServer
+In this repository you will find **docker-compose.yml** which is the easiest way to become familiar with Zend Server features. Simply clone the repository (`git clone https://github.com/zendtech/php-zendserver-docker.git`) and run in it:
+```
+docker-compose up
+```
+This will start a Zend Server cluster with a single server in it. You can then log in to the Zend Server UI at http://127.0.0.1:10081, or browse the Document Root with some examples at http://127.0.0.1:30080 or https://127.0.0.1:30443.
 
-This is a cluster-enabled version of a Dockerized Zend Server container. With Zend Server on Docker, you'll get your PHP applications up and running on a highly available PHP production environment which includes, amongst other features, a highly reliable PHP stack, application monitoring, troubleshooting, and the new and innovative new technology - Z-Ray. Z-Ray gives developers unprecedented visibility into their code by tracking and displaying in a toolbar live and detailed info on how the various elements constructing their page are performing.
+You can also scale your Zend Server cluster up or down with a command like this (run in a different terminal):
+```
+docker-compose up --detach --scale zendserver=4
+```
 
-For development purposes we provide you with a time limited trial license. For production use you must provide a valid Zend Server license using the instructions below in the Usage section.
+The cluster is, in fact, behind a load balancer (Traefik), which exposes the following endpoints:
+- http://127.0.0.1:30080/ - Zend Server's Document Root
+- http://127.0.0.1:30090/ - Zend Server's Document Root with Session Affinity
+- https://127.0.0.1:30443/ - Zend Server's Document Root in HTTPS (terminated at Traefik)
+- http://127.0.0.1:10081/ - Zend Server's UI and WebAPI
+- http://127.0.0.1:8080/ - Traefik UI (and API)
 
-## Usage
+## Basic Usage
 
-#### Launching the Container from Docker-Hub
+In many cases, all you need is just one Zend Server container, for example:
 
-Zend Server is shared on [Docker-Hub] as **php-zendserver**.
+```
+$ docker run -d -P %%IMAGE%%
+```
+or
+```
+$ docker run -d -P %%IMAGE%%:8.5
+```
 
-##### Single instance
+The container exposes 4 ports - some of them you may want to publish to your machine's ports:
+```
+$ docker run -d -p8080:80 -p10081:10081 %%IMAGE%%
+```
+This will allow you to access the container's ports directly on the local machine:
 
-To start a single Zend Server instance, execute:
+- http://localhost:8080  (web server's document root)
+- http://localhost:10081 (Zend Server UI)
 
-	    $ docker run %%IMAGE%%
+## <a name="env"></a>Supported Environment Variables
 
--	You can specify the PHP and Zend Server version by adding ':<php-version>' or ':&lt;ZS-version&gt;-php&lt;version&gt;' to the 'docker run' command.
+Examples of all of these variables can be found either in `docker-compose.yml` or in `variables.env` (see on [GitHub](https://github.com/zendtech/php-zendserver-docker)).
 
-		for example: 
-		$docker run %%IMAGE%%:8.5-php5.6
+- **`ZS_LICENSE_KEY`** and
+- **`ZS_ORDER_NUMBER`** can be used to apply your existing Zend Server license to the Docker containers that you start. Otherwise you'll be using a short temporary license included with the image.
+```
+docker run --rm -Pti \
+    -e ZS_ORDER_NUMBER=102030 \
+    -e ZS_LICENSE_KEY=1A2B3C4D5E6F7G8H9I0J9K8L7M6N5O4P \
+%%IMAGE%% bash
+```
+---
+- **`ZS_ADMIN_PASSWORD`** can be used to set an 'admin' password for Zend Server UI. If this variable is not specified, a reasonably secure password will be generated. To see the password you can use the `zsinfo` command inside the container:
+```
+docker run --rm -Pti %%IMAGE%% zsinfo
+```
+If you're running the container in detached mode, the easiest way is setting `$ZS_ADMIN_PASSWORD` to a value that you won't forget
+```
+docker run --rm -Pd -e ZS_ADMIN_PASSWORD="SeeStickyN0te" %%IMAGE%%
+```
+---
+- **`ZS_CLUSTER="TRUE"`** can be set to instruct the initialization script to add the server to a cluster, connection to which is defined by the next 2 variables:
+  - **`ZS_DB_HOST`** defines the database host for the database 'ZendServer'. Can be a host name or IP address - either way, it will be converted to an IP address. Custom ports (not 3306) are not supported.
+  - **`MYSQL_ROOT_PASSWORD`** the database connection user is always 'root' and it is assumed that this user always needs a password.
+```
+docker run --rm -Pti \
+    -e ZS_CLUSTER="TRUE" \
+    -e ZS_DB_HOST="maria.db.local" \
+    -e MYSQL_ROOT_PASSWORD="SeeFl!pSide" \
+%%IMAGE%% bash
+```
+---
+- **`ZS_PRE_INIT="/full/path/to/program"`** and
+- **`ZS_POST_INIT="/full/path/to/program"`** can be specified to be run, respectively, before or/and after the intitialization routines. In most cases you would mount a directory or just the script into the container and use these variables to execute it.
+```
+docker run --rm -Pti \
+    -v /my/local/updater.sh:/usr/local/bin/upd.sh \
+    -e ZS_PRE_INIT=/usr/local/bin/upd.sh \
+%%IMAGE%% bash
+```
 
-#### Availible versions:
+## <a name="cnf"></a>Configuration Manipulation
 
--	Zend Server 8
--	Zend Server 9 (With PHP 7 GA)(Default version)
--	Zend Server 2019 with multi PHP Version Support (7.1, 7.2 & 7.3)
+The initialization script will be searching for the directory `/usr/local/zend/tmp/ini-patches`. If this directory exists, the `.ini` files in this directory will be used as directives for patching Zend Server's configuration files. See the (extensively documented with in-line comments) examples in the directory [ini-patches](https://github.com/zendtech/php-zendserver-docker/tree/master/ini-patches).
+> **NOTE:** not all of Zend Server's configuration can be changed this way. Some configuration changes require WebAPI - use `$ZS_POST_INIT` for these.
 
-##### Cluster
+## Initialization Stages
 
-To start a Zend Server cluster, execute the following command for each cluster node:
+The intialization script, which is also defined as the image's ENTRYPOINT, is `/usr/local/bin/run.sh` . In some cases it is helpful to understand the order of operations in this script.
 
-	    $ docker run -e MYSQL_HOSTNAME=<db-ip> -e MYSQL_PORT=3306 -e MYSQL_USERNAME=<username> -e MYSQL_PASSWORD=<password> -e MYSQL_DBNAME=zend %%IMAGE%%
+1. **Sleep 2 seconds** - just in case.
+1. **Patching configuration** - see the section "[Configuration Manipulation](#cnf)".
+1. **Pre-init program** - see `$ZS_PRE_INIT`.
+1. **Changing license** - see `$ZS_LICENSE_KEY` and `$ZS_ORDER_NUMBER`.
+1. **Starting Zend Server** - required for next stages.
+1. **Setting 'admin' password** - see `$ZS_ADMIN_PASSWORD`.
+1. **Generating a unique WebAPI key** - for user 'docker', it will be used throughout the cluster.
+1. **Joining the cluster** - if `$ZS_CLUSTER`, `$ZS_DB_HOST` and `$MYSQL_ROOT_PASSWORD` are set;
+    * at the end - **Zend Server restart** - appears as "Final restart" in the logs.
+1. **Post-init program** - see `$ZS_POST_INIT`.
 
-#### Bring your own license
+## Serverless Flavor
 
-To use your own Zend Server license: $ docker run %%IMAGE%% -e ZEND_LICENSE_KEY=<license-key> -e ZEND_LICENSE_ORDER=<order-number>
+The image also has an alternative ENTRYPOINT script `/usr/local/bin/serverless.sh` , which consists of only two stages:
 
-#### Launching the Container from Dockerfile
+1. **Patching configuration** - see the section "[Configuration Manipulation](#cnf)"
+2. **Starting a Swoole-based "lambda" processor** - e.g., the file `lambdas/server.php` in this repository
 
-From a local folder containing this repo's clone, execute the following command to generate the image. The **image-id** will be outputted:
+This script assumes that a volume containing the file `server.php` is mounted inside the container as `/lambdas`.
 
-	    $ docker build .
+The sample `docker-compose.yml` includes a "lambda" service mapped to http://127.0.0.1:9501.
 
-##### Single instance from custom image
+ `docker-compose.yml` also has a live editor (Theia) to edit the lambda functions at http://127.0.0.1:3000 - both `DocRoot` and `lambdas` are mounted (latter inside the former) into this live editor.
 
-To start a single Zend Server instance, execute:
+## Additional Zend Server Resources
 
-	    $ docker run <image-id>
+Official Website - [http://www.zend.com/](http://www.zend.com/)
 
-#### Cluster from custom image
+Technical Support - [http://techsupport.roguewave.com/](http://techsupport.roguewave.com/)
 
-To start a Zend Server cluster, execute the following command on each cluster node:
-
-	    $ docker run -e MYSQL_HOSTNAME=<db-ip> -e MYSQL_PORT=3306 -e MYSQL_USERNAME=<username> -e MYSQL_PASSWORD=<password> -e MYSQL_DBNAME=zend <image-id>
-
-#### Accessing Zend server
-
-Once started, the container will output the information required to access the PHP application and the Zend Server UI, including an automatically generated admin password.
-
-#### Port forwarding (For remote access)
-
-To access the container **remotely**, port forwarding must be configured, either manually or using docker. For example, this command redirects port 80 to port 88, and port 10081 (Zend Server UI port) to port 10088:
-
-	    $ docker run -p 88:80 -p 10088:10081 %%IMAGE%%
-
-##### For clustered instances:
-
-To start a Zend Server cluster you must provide a Mysql compatible database:
-
-	    $ docker run -p 88:80 -p 10088:10081 -e MYSQL_HOSTNAME=<db-ip> -e MYSQL_PORT=3306 -e MYSQL_USERNAME=<username> -e MYSQL_PASSWORD=<password> -e MYSQL_DBNAME=zend <image-id>
-
-Please note, when running multiple instances only one instance can be bound to a port. If you are running a cluster, either assign a port redirect to one node only, or assign a different port to each container.
-
-#### Adding application files
-
-Application files can be automatically pulled from a Git repo by setting the **GIT_URL** env var to the repo's URL. Alternatively, if building an image from Dockerfile, place the app files in the "app/" folder.
-
-The files will be copied to the containers /var/www/html folder and defined in Zend Server as the default app. An example index.html file is included. this feature is available in Zend Server 8 and above.
-
-#### Env variables
-
-Env variables are passed in the run command with the "-e" switch.
-
-##### Optional env-variables:
-
-To specify a pre-defined admin password for Zend Server use:
-
--	ZS\_ADMIN\_PASSWORD
-
-Automatically Deploy an app from Git URL:
-
--	GIT\_URL
-
-MySQL vars for clustered ops. *ALL* are required for the node to properly join a cluster:
-
--	MYSQL\_HOSTNAME - ip or hostname of MySQL database
--	MYSQL\_PORT - MySQL listening port
--	MYSQL\_USERNAME
--	MYSQL\_PASSWORD
--	MYSQL\_DBNAME - Name of the database Zend Server will use for cluster ops (created automatically if it does not exist).
-
-To specify a pre-purchased license use the following env vars:
-
--	ZEND\_LICENSE\_KEY
--	ZEND\_LICENSE\_ORDER
-
-Set Zend Server to production mode by setting the following env var to "true". By default Zend Server is set to "development mode" with Z-Ray enabled:
-
--	ZS\_PRODUCTION
-
-### Minimal Requirements
-
-Each Zend Server Docker container requires 1GB of availible memory.
+Online Documentation - [http://files.zend.com/help/Zend-Server/zend-server.htm](http://files.zend.com/help/Zend-Server/zend-server.htm)
