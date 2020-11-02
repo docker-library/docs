@@ -10,7 +10,7 @@ Our strong community is diverse and helpful, and we pride ourselves on the range
 
 # About this image
 
-The base filesystem tarball for this image is auto-generated weekly in Arch Linux infrastructure. Given the rolling-release nature of Arch Linux, images are tagged with the included package group / meta package and the timestamp of the date they were generated. For example, `%%IMAGE%%:base-20201101.0.7893` was generated the First of November 2020 in CI job #7893. The `latest` tag will always match the latest `base` tag.
+The root filesystem tarball for this image is auto-generated weekly in Arch Linux infrastructure. Given the rolling-release nature of Arch Linux, images are tagged with the included package group / meta package and the timestamp of the date they were generated. For example, `%%IMAGE%%:base-20201101.0.7893` was generated the First of November 2020 in CI job #7893. The `latest` tag will always match the latest `base` tag.
 
 Besides `base` we also provide images for the `base-devel` package group.
 
@@ -20,6 +20,10 @@ This image is intended to serve the following goals:
 -	Provide simplest but complete image to base every other upon
 -	`pacman` needs to work out of the box
 -	All installed packages have to be kept unmodified
+
+## Availability
+
+Root filesystem tarballs are [provided by our GitLab](https://gitlab.archlinux.org/archlinux/archlinux-docker/-/releases) for at least a year.
 
 ## Updating
 
