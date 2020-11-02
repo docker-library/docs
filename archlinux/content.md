@@ -31,4 +31,4 @@ Arch Linux is a rolling release distribution, so a full update is recommended wh
 
 ## How It's Made
 
-You can build this image with the tools on the [GitLab repository](https://gitlab.archlinux.org/archlinux/archlinux-docker) using the included makefile.
+You can build this image with the tools on the [Arch Linux GitLab repository](https://gitlab.archlinux.org/archlinux/archlinux-docker) using the included makefile.
