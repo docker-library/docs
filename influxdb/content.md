@@ -139,7 +139,7 @@ Automatically initializes a database with the name of this environment variable.
 
 ##### INFLUXDB_HTTP_AUTH_ENABLED
 
-Enables authentication. Either this must be set or `auth-enabled = true` must be set within the configuration file for any authentication related options below to work.
+Enables authentication. Either this must be set to `true` or `auth-enabled = true` must be set within the configuration file for any authentication related options below to work.
 
 ##### INFLUXDB_ADMIN_USER
 
