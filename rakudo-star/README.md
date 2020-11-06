@@ -24,8 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `2020.01`](https://github.com/raku/docker/blob/d893fa621e755045c80fb4d0615c2810812d98f7/Dockerfile)
--	[`alpine`, `2020.01-alpine`](https://github.com/raku/docker/blob/d893fa621e755045c80fb4d0615c2810812d98f7/alpine/Dockerfile)
+-	[`latest`, `2020.10`](https://github.com/raku/docker/blob/41361d587e7356ff57d4b09f48694f483bfbbd5c/Dockerfile)
+-	[`alpine`, `2020.10-alpine`](https://github.com/raku/docker/blob/41361d587e7356ff57d4b09f48694f483bfbbd5c/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
