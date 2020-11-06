@@ -26,7 +26,7 @@ WARNING:
 
 -	[`7.9.5`, `7.9`](https://github.com/Bonitasoft-Community/docker_bonita/blob/b58b05d989055ca3521fc92211d10ff640b4028f/7.9/Dockerfile)
 -	[`7.10.6`, `7.10`](https://github.com/Bonitasoft-Community/docker_bonita/blob/e6f9f1a5e57c35bbd833c9441a639f326dffb7d5/7.10/Dockerfile)
--	[`7.11.2`, `7.11`, `latest`](https://github.com/Bonitasoft-Community/docker_bonita/blob/e6f9f1a5e57c35bbd833c9441a639f326dffb7d5/7.11/Dockerfile)
+-	[`7.11.3`, `7.11`, `latest`](https://github.com/bonitasoft/bonita-distrib/blob/39f39f028c344311e8f35c7e98b1c18051f277f6/docker/Dockerfile)
 
 # Quick reference (cont.)
 
