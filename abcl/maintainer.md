@@ -1,1 +1,1 @@
-[CL Docker Images Project](%%GITHUB-REPO%%)
+[CL Docker Images Project](https://common-lisp.net/project/cl-docker-images)
