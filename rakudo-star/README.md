@@ -17,7 +17,7 @@ WARNING:
 # Quick reference
 
 -	**Maintained by**:  
-	[the Perl 6 Community](https://github.com/perl6/docker)
+	[the Raku Community](https://github.com/Raku/docker)
 
 -	**Where to get help**:  
 	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
@@ -30,7 +30,7 @@ WARNING:
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/perl6/docker/issues](https://github.com/perl6/docker/issues)
+	[https://github.com/Raku/docker/issues](https://github.com/Raku/docker/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/rakudo-star/), [`arm64v8`](https://hub.docker.com/r/arm64v8/rakudo-star/)
@@ -50,13 +50,11 @@ WARNING:
 
 Rakudo Star is a Raku (formerly known as Perl 6) distribution designed for use by early adopters of the language. It includes a virtual machine (the JVM or MoarVM), the Rakudo compiler, and a suite of modules that users may find useful. This image includes the MoarVM backend for the compiler.
 
-Project homepage: [http://rakudo.org](http://rakudo.org)
+-	Project homepage: https://rakudo.org/
+-	Raku Language Specification: https://github.com/Raku/roast
+-	Raku Language Documentation: https://docs.raku.org/
 
-GitHub repository: [https://github.com/rakudo/star](https://github.com/rakudo/star)
-
-The Dockerfile responsible: [http://github.com/raku/docker/tree/master/Dockerfile](http://github.com/raku/docker/tree/master/Dockerfile)
-
-Raku Language Documentation: [http://docs.raku.org/](http://docs.raku.org/)
+> [wikipedia.org/wiki/Rakudo](https://en.wikipedia.org/wiki/Rakudo)
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/48ac05ac94903844bfbdea1fb361676a904f9d85/rakudo-star/logo.png)
 
@@ -80,7 +78,7 @@ $ docker run -it rakudo-star raku -e 'say "Hello!"'
 
 Many Raku developers are present on #raku on Freenode.
 
-Issues for Rakudo are tracked in [on GitHub](https://github.com/rakudo/rakudo/issues/).
+Issues for Rakudo are tracked in [on GitHub](https://github.com/rakudo/rakudo/issues).
 
 # Image Variants
 
