@@ -24,14 +24,14 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`kernel`, `kernel-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/0eaa90a2e98aaa7c67c902ab44b39ac60c8b1357/releases/latest/kernel/Dockerfile.ubuntu.adoptopenjdk8)
--	[`full`, `full-java8-openj9`, `latest`](https://github.com/OpenLiberty/ci.docker/blob/0eaa90a2e98aaa7c67c902ab44b39ac60c8b1357/releases/latest/full/Dockerfile.ubuntu.adoptopenjdk8)
--	[`20.0.0.10-kernel-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/0eaa90a2e98aaa7c67c902ab44b39ac60c8b1357/releases/20.0.0.10/kernel/Dockerfile.ubuntu.adoptopenjdk8)
--	[`20.0.0.10-full-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/0eaa90a2e98aaa7c67c902ab44b39ac60c8b1357/releases/20.0.0.10/full/Dockerfile.ubuntu.adoptopenjdk8)
--	[`20.0.0.9-kernel-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/0eaa90a2e98aaa7c67c902ab44b39ac60c8b1357/releases/20.0.0.9/kernel/Dockerfile.ubuntu.adoptopenjdk8)
--	[`20.0.0.9-full-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/0eaa90a2e98aaa7c67c902ab44b39ac60c8b1357/releases/20.0.0.9/full/Dockerfile.ubuntu.adoptopenjdk8)
--	[`20.0.0.6-kernel-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/0eaa90a2e98aaa7c67c902ab44b39ac60c8b1357/releases/20.0.0.6/kernel/Dockerfile.ubuntu.adoptopenjdk8)
--	[`20.0.0.6-full-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/0eaa90a2e98aaa7c67c902ab44b39ac60c8b1357/releases/20.0.0.6/full/Dockerfile.ubuntu.adoptopenjdk8)
+-	[`kernel-slim`, `kernel-slim-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/3c0fb437b5de0d5ce976d6b118e7feec697900fa/releases/latest/kernel-slim/Dockerfile.ubuntu.adoptopenjdk8)
+-	[`full`, `full-java8-openj9`, `latest`](https://github.com/OpenLiberty/ci.docker/blob/3c0fb437b5de0d5ce976d6b118e7feec697900fa/releases/latest/full/Dockerfile.ubuntu.adoptopenjdk8)
+-	[`20.0.0.11-kernel-slim-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/3c0fb437b5de0d5ce976d6b118e7feec697900fa/releases/20.0.0.11/kernel-slim/Dockerfile.ubuntu.adoptopenjdk8)
+-	[`20.0.0.11-full-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/3c0fb437b5de0d5ce976d6b118e7feec697900fa/releases/20.0.0.11/full/Dockerfile.ubuntu.adoptopenjdk8)
+-	[`20.0.0.9-kernel-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/3c0fb437b5de0d5ce976d6b118e7feec697900fa/releases/20.0.0.9/kernel/Dockerfile.ubuntu.adoptopenjdk8)
+-	[`20.0.0.9-full-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/3c0fb437b5de0d5ce976d6b118e7feec697900fa/releases/20.0.0.9/full/Dockerfile.ubuntu.adoptopenjdk8)
+-	[`20.0.0.6-kernel-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/3c0fb437b5de0d5ce976d6b118e7feec697900fa/releases/20.0.0.6/kernel/Dockerfile.ubuntu.adoptopenjdk8)
+-	[`20.0.0.6-full-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/3c0fb437b5de0d5ce976d6b118e7feec697900fa/releases/20.0.0.6/full/Dockerfile.ubuntu.adoptopenjdk8)
 
 # Quick reference (cont.)
 
@@ -259,6 +259,18 @@ WebSphere Liberty is a commercial distribution of Open Liberty. There is an offi
 -	Use the `/config` folder for accessing the server configuration.
 -	Use the `/output` folder for accessing the server output.
 -	When adding your own SSL configuration use the `/config/configDropins/defaults/keystore.xml`.
+
+# Image Variants
+
+The `open-liberty` images come in many flavors, each designed for a specific use case.
+
+## `open-liberty:<version>`
+
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+## `open-liberty:<version>-slim`
+
+This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `open-liberty`. Unless you are working in an environment where *only* the `open-liberty` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
 
 # License
 
