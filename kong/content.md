@@ -111,10 +111,3 @@ This will run the [`kong reload`](https://docs.konghq.com/latest/cli/#reload) co
 # Kubernetes Ingress
 
 Among the many deployment options [available](https://konghq.com/install), Kong also offers a [Kubernetes Ingress Controller](https://github.com/Kong/kubernetes-ingress-controller) ready to use in your K8S environment.
-
-# Service Mesh
-
-Since version 1.x you can run Kong in a Service Mesh deployment as a platform-agnostic sidecar proxy (including Kubernetes, but also on any other platform supported by Kong). To get started and learn more you can read the docs at:
-
--	[Streams and Service Mesh](https://docs.konghq.com/latest/streams-and-service-mesh/)
--	[Kubernetes and Service Mesh](https://github.com/Kong/kong-mesh-dist-kubernetes)
