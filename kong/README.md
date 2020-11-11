@@ -61,9 +61,43 @@ Under active development, Kong is now used in production at hundreds of organiza
 
 Kong's official documentation can be found at [docs.konghq.com](https://docs.konghq.com/).
 
-# How to use this image
+# How to use this image without a Database
 
-First, Kong requires a running Cassandra cluster (3.x+) or PostgreSQL instance (9.6+) before it starts. You can either use the official Cassandra/PostgreSQL containers, or use your own.
+Kong 1.1 added the capability to run Kong without a database, using only in-memory storage for entities: we call this DB-less mode. When running Kong DB-less, the configuration of entities is done in a second configuration file, in YAML or JSON, using declarative configuration.
+
+```shell
+$ docker run -d --name kong \
+    -e "KONG_DATABASE=off" \
+    -e "KONG_PROXY_ACCESS_LOG=/dev/stdout" \
+    -e "KONG_ADMIN_ACCESS_LOG=/dev/stdout" \
+    -e "KONG_PROXY_ERROR_LOG=/dev/stderr" \
+    -e "KONG_ADMIN_ERROR_LOG=/dev/stderr" \
+    -e "KONG_ADMIN_LISTEN=0.0.0.0:8001, 0.0.0.0:8444 ssl" \
+    -p 8000:8000 \
+    -p 8443:8443 \
+    -p 8001:8001 \
+    -p 8444:8444 \
+    kong
+```
+
+Generate a skeleton configuration file to get you started
+
+```shell
+$ docker exec -it kong kong config init /home/kong/kong.yml
+$ docker exec -it kong cat /home/kong/kong.yml >> kong.yml
+```
+
+Load a declarative configuration into a running Kong node via its Admin API using HTTPie
+
+```shell
+$ http :8001/config config=@kong.yml
+```
+
+**Note**: Not all Kong plugins are compatible with DB-less mode, since some of them by design require a central database coordination and/or dynamic creation of entities, see the doc for details at [DB-less and Declarative Configuration](https://docs.konghq.com/latest/db-less-and-declarative-config/)
+
+# How to use this image with a Database
+
+First, for fully-compatible with all plugins (e.g. acl, oauth2), Kong requires a running Cassandra cluster (3.x+) or PostgreSQL instance (9.6+) before it starts. You can either use the official Cassandra/PostgreSQL containers, or use your own.
 
 ## 1. Link Kong to either a Cassandra or PostgreSQL container
 
