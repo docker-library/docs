@@ -1,1 +1,1 @@
-The Cloud-Native API Gateway & Service Mesh for APIs and Microservices
+The Cloud-Native API Gateway for APIs and Microservices
