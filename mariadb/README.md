@@ -24,10 +24,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`10.5.7-focal`, `10.5-focal`, `10-focal`, `focal`, `10.5.7`, `10.5`, `10`, `latest`](https://github.com/docker-library/mariadb/blob/5aa55c25db15da23bcc75afdc1b4da0b61099dff/10.5/Dockerfile)
--	[`10.4.16-focal`, `10.4-focal`, `10.4.16`, `10.4`](https://github.com/docker-library/mariadb/blob/e47d8430989ab4a61291e3b08466f9a5fb2d2663/10.4/Dockerfile)
--	[`10.3.26-focal`, `10.3-focal`, `10.3.26`, `10.3`](https://github.com/docker-library/mariadb/blob/6cfc9b1b49fdf1ef8e17273c9460ba21e7052a1c/10.3/Dockerfile)
--	[`10.2.35-bionic`, `10.2-bionic`, `10.2.35`, `10.2`](https://github.com/docker-library/mariadb/blob/f382d0526c1daf63069ece2a96c4610807d63a7c/10.2/Dockerfile)
+-	[`10.5.8-focal`, `10.5-focal`, `10-focal`, `focal`, `10.5.8`, `10.5`, `10`, `latest`](https://github.com/docker-library/mariadb/blob/58bef417cbeea4eb6b15c46b6097c3cbb99beb32/10.5/Dockerfile)
+-	[`10.4.17-focal`, `10.4-focal`, `10.4.17`, `10.4`](https://github.com/docker-library/mariadb/blob/8ef8085a9b9a24c440292d7e854fb2158f967210/10.4/Dockerfile)
+-	[`10.3.27-focal`, `10.3-focal`, `10.3.27`, `10.3`](https://github.com/docker-library/mariadb/blob/36c34c3de9f4018d5153b531d754c5ae6805f723/10.3/Dockerfile)
+-	[`10.2.36-bionic`, `10.2-bionic`, `10.2.36`, `10.2`](https://github.com/docker-library/mariadb/blob/a6f3e998fbe25b027bbc168f8c8948be461aa127/10.2/Dockerfile)
 -	[`10.1.48-bionic`, `10.1-bionic`, `10.1.48`, `10.1`](https://github.com/docker-library/mariadb/blob/1c8ad664ca320bebc8fa105cb3ec9ad385f0bae3/10.1/Dockerfile)
 
 # Quick reference (cont.)
