@@ -2,15 +2,15 @@
 
 InfluxDB is a time series database built from the ground up to handle high write and query loads. InfluxDB is meant to be used as a backing store for any use case involving large amounts of timestamped data, including DevOps monitoring, application metrics, IoT sensor data, and real-time analytics.
 
-[InfluxDB Documentation](https://docs.influxdata.com/influxdb/latest/)
+[InfluxDB 1.8 documentation](https://docs.influxdata.com/influxdb/v1.8/)
 
 %%LOGO%%
 
-## Updating latest to 2.0
+## Update the latest tag to 1.8
 
-In the future, the latest tag for this image will point to the latest released implementation of influxdb 2.0. This will happen when the first general available release for 2.0 exists. If you are using the `latest` tag for any production or development purposes, please update your development environment to reference the `1.8` tag.
+As of the InfluxDB  2.0 OSS (open source) general available, the `latest` tag for this image points to the latest 2.0 release. If you are using the `latest` tag for any production or development purposes, update your development environment to reference the `1.8` tag.
 
-## Using this Image
+## Using this mage
 
 ### Running the container
 
@@ -41,7 +41,7 @@ The following ports are important and are used by InfluxDB.
 
 The HTTP API port will be automatically exposed when using `docker run -P`.
 
-Find more about API Endpoints & Ports [here](https://docs.influxdata.com/influxdb/latest/concepts/api/).
+Find more about API Endpoints & Ports [here](https://docs.influxdata.com/influxdb/v1.8/tools/api/).
 
 ### Configuration
 
@@ -73,7 +73,7 @@ INFLUXDB_META_DIR=/path/to/metadir
 INFLUXDB_DATA_QUERY_LOG_ENABLED=false
 ```
 
-Find more about configuring InfluxDB [here](https://docs.influxdata.com/influxdb/latest/introduction/installation/).
+Find more about configuring InfluxDB 1.8 [here](https://docs.influxdata.com/influxdb/v1.8/administration/config/).
 
 ### Graphite
 
@@ -85,23 +85,23 @@ docker run -p 8086:8086 -p 2003:2003 \
     %%IMAGE%%
 ```
 
-See the [README on GitHub](https://github.com/influxdata/influxdb/blob/master/services/graphite/README.md) for more detailed documentation to set up the Graphite service. In order to take advantage of graphite templates, you should use a configuration file by outputting a default configuration file using the steps above and modifying the `[[graphite]]` section.
+Use the [Exec Input Plugin](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/exec) to input metrics in the [Graphite data format](https://github.com/influxdata/telegraf/tree/master/plugins/parsers/graphite). Note, you can modify your `[[inputs.exec]]` configuration as needed to include supported template patterns.
 
 ### HTTP API
 
-Creating a DB named mydb:
+Creating a database named mydb:
 
 ```console
 $ curl -G http://localhost:8086/query --data-urlencode "q=CREATE DATABASE mydb"
 ```
 
-Inserting into the DB:
+Write some data into the database:
 
 ```console
 $ curl -i -XPOST 'http://localhost:8086/write?db=mydb' --data-binary 'cpu_load_short,host=server01,region=us-west value=0.64 1434055562000000000'
 ```
 
-Read more about this in the [official documentation](https://docs.influxdata.com/influxdb/latest/guides/writing_data/)
+For more information, see the [Write data with the InfluxDB API](https://docs.influxdata.com/influxdb/v1.8/guides/write_data/)
 
 ### CLI / SHELL
 
