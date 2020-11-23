@@ -63,11 +63,11 @@ WARNING:
 -	[`8.5.60-jdk8-adoptopenjdk-hotspot`, `8.5-jdk8-adoptopenjdk-hotspot`, `8-jdk8-adoptopenjdk-hotspot`](https://github.com/docker-library/tomcat/blob/eec3cd9e3450b74c6ccfae193a1f5c65e488548c/8.5/jdk8/adoptopenjdk-hotspot/Dockerfile)
 -	[`8.5.60-jdk8-adoptopenjdk-openj9`, `8.5-jdk8-adoptopenjdk-openj9`, `8-jdk8-adoptopenjdk-openj9`](https://github.com/docker-library/tomcat/blob/eec3cd9e3450b74c6ccfae193a1f5c65e488548c/8.5/jdk8/adoptopenjdk-openj9/Dockerfile)
 -	[`8.5.60-jdk8-corretto`, `8.5-jdk8-corretto`, `8-jdk8-corretto`](https://github.com/docker-library/tomcat/blob/eec3cd9e3450b74c6ccfae193a1f5c65e488548c/8.5/jdk8/corretto/Dockerfile)
--	[`7.0.106-jdk8-openjdk-buster`, `7.0-jdk8-openjdk-buster`, `7-jdk8-openjdk-buster`, `7.0.106-jdk8-openjdk`, `7.0-jdk8-openjdk`, `7-jdk8-openjdk`, `7.0.106-jdk8`, `7.0-jdk8`, `7-jdk8`, `7.0.106`, `7.0`, `7`](https://github.com/docker-library/tomcat/blob/f837bd06fb2796cd8d5b9063a87d4d330323803c/7/jdk8/openjdk-buster/Dockerfile)
--	[`7.0.106-jdk8-openjdk-slim-buster`, `7.0-jdk8-openjdk-slim-buster`, `7-jdk8-openjdk-slim-buster`, `7.0.106-jdk8-openjdk-slim`, `7.0-jdk8-openjdk-slim`, `7-jdk8-openjdk-slim`](https://github.com/docker-library/tomcat/blob/f837bd06fb2796cd8d5b9063a87d4d330323803c/7/jdk8/openjdk-slim-buster/Dockerfile)
--	[`7.0.106-jdk8-adoptopenjdk-hotspot`, `7.0-jdk8-adoptopenjdk-hotspot`, `7-jdk8-adoptopenjdk-hotspot`](https://github.com/docker-library/tomcat/blob/f837bd06fb2796cd8d5b9063a87d4d330323803c/7/jdk8/adoptopenjdk-hotspot/Dockerfile)
--	[`7.0.106-jdk8-adoptopenjdk-openj9`, `7.0-jdk8-adoptopenjdk-openj9`, `7-jdk8-adoptopenjdk-openj9`](https://github.com/docker-library/tomcat/blob/f837bd06fb2796cd8d5b9063a87d4d330323803c/7/jdk8/adoptopenjdk-openj9/Dockerfile)
--	[`7.0.106-jdk8-corretto`, `7.0-jdk8-corretto`, `7-jdk8-corretto`](https://github.com/docker-library/tomcat/blob/f837bd06fb2796cd8d5b9063a87d4d330323803c/7/jdk8/corretto/Dockerfile)
+-	[`7.0.107-jdk8-openjdk-buster`, `7.0-jdk8-openjdk-buster`, `7-jdk8-openjdk-buster`, `7.0.107-jdk8-openjdk`, `7.0-jdk8-openjdk`, `7-jdk8-openjdk`, `7.0.107-jdk8`, `7.0-jdk8`, `7-jdk8`, `7.0.107`, `7.0`, `7`](https://github.com/docker-library/tomcat/blob/7dc4069b449a26c1e2c6a21af673a5690ca8366b/7/jdk8/openjdk-buster/Dockerfile)
+-	[`7.0.107-jdk8-openjdk-slim-buster`, `7.0-jdk8-openjdk-slim-buster`, `7-jdk8-openjdk-slim-buster`, `7.0.107-jdk8-openjdk-slim`, `7.0-jdk8-openjdk-slim`, `7-jdk8-openjdk-slim`](https://github.com/docker-library/tomcat/blob/7dc4069b449a26c1e2c6a21af673a5690ca8366b/7/jdk8/openjdk-slim-buster/Dockerfile)
+-	[`7.0.107-jdk8-adoptopenjdk-hotspot`, `7.0-jdk8-adoptopenjdk-hotspot`, `7-jdk8-adoptopenjdk-hotspot`](https://github.com/docker-library/tomcat/blob/7dc4069b449a26c1e2c6a21af673a5690ca8366b/7/jdk8/adoptopenjdk-hotspot/Dockerfile)
+-	[`7.0.107-jdk8-adoptopenjdk-openj9`, `7.0-jdk8-adoptopenjdk-openj9`, `7-jdk8-adoptopenjdk-openj9`](https://github.com/docker-library/tomcat/blob/7dc4069b449a26c1e2c6a21af673a5690ca8366b/7/jdk8/adoptopenjdk-openj9/Dockerfile)
+-	[`7.0.107-jdk8-corretto`, `7.0-jdk8-corretto`, `7-jdk8-corretto`](https://github.com/docker-library/tomcat/blob/7dc4069b449a26c1e2c6a21af673a5690ca8366b/7/jdk8/corretto/Dockerfile)
 
 # Quick reference (cont.)
 
