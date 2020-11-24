@@ -8,7 +8,7 @@ InfluxDB is a time series database built from the ground up to handle high write
 
 ## Update the latest tag to 1.8
 
-As of the InfluxDB  2.0 OSS (open source) general available, the `latest` tag for this image points to the latest 2.0 release. If you are using the `latest` tag for any production or development purposes, update your development environment to reference the `1.8` tag.
+As of the InfluxDB 2.0 OSS (open source) general availability release, the `latest` tag for this image points to the latest 2.0 release. If you are using the `latest` tag for any production or development purposes, update your development environment to reference the `1.8` tag.
 
 ## Using this mage
 
