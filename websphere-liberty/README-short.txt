@@ -1,1 +1,1 @@
-Official IBM WebSphere Application Server for Developers Liberty image.
+WebSphere Liberty multi-architecture images based on Ubuntu 18.04
