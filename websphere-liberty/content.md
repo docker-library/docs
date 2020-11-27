@@ -2,6 +2,8 @@
 
 All of the images in this repository use Ubuntu as the Operating System. For variants that use the Universal Base Image, please see [this repository](https://hub.docker.com/r/ibmcom/websphere-liberty/).
 
+For more information on these images please see our [GitHub repository](https://github.com/WASdev/ci.docker#container-images).
+
 # Image User
 
 This image runs by default with `USER 1001` (non-root), as part of group `0`. Please make sure you read below to set the appropriate folder and file permissions.
