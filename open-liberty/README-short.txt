@@ -1,1 +1,1 @@
-Official Open Liberty image.
+Open Liberty multi-architecture images based on Ubuntu 18.04
