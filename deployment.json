@@ -1,0 +1,81 @@
+{
+  "id": "/subscriptions/c23662fe-6d13-4b4d-9fec-f73a29b22b43/resourceGroups/rohittavels-rg/providers/Microsoft.Resources/deployments/Microsoft.SSL",
+  "name": "Microsoft.SSL",
+  "type": "Microsoft.Resources/deployments",
+  "tags": {
+    "primaryResourceId": "/subscriptions/c23662fe-6d13-4b4d-9fec-f73a29b22b43/resourcegroups/rohittavels-rg/providers/Microsoft.CertificateRegistration/certificateOrders/rohit",
+    "marketplaceItemId": "Microsoft.SSL"
+  },
+  "properties": {
+    "templateHash": "12688158336463581370",
+    "parameters": {
+      "certificateOrderName": {
+        "type": "String",
+        "value": "rohit"
+      },
+      "distinguishedName": {
+        "type": "String",
+        "value": "CN=rohittravels.org"
+      },
+      "validityInYears": {
+        "type": "Int",
+        "value": 1
+      },
+      "productType": {
+        "type": "String",
+        "value": "StandardDomainValidatedSsl"
+      }
+    },
+    "mode": "Incremental",
+    "debugSetting": {
+      "detailLevel": "None"
+    },
+    "provisioningState": "Failed",
+    "timestamp": "2020-11-23T05:48:54.2040251Z",
+    "duration": "PT19.048952S",
+    "correlationId": "62f5f6af-1951-49e5-82a8-4cb5559a9568",
+    "providers": [
+      {
+        "namespace": "Microsoft.CertificateRegistration",
+        "resourceTypes": [
+          {
+            "resourceType": "certificateOrders",
+            "locations": [
+              "global"
+            ]
+          },
+          {
+            "resourceType": "certificateOrders/providers/locks",
+            "locations": [
+              null
+            ]
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/c23662fe-6d13-4b4d-9fec-f73a29b22b43/resourceGroups/rohittavels-rg/providers/Microsoft.CertificateRegistration/certificateOrders/rohit",
+            "resourceType": "Microsoft.CertificateRegistration/certificateOrders",
+            "resourceName": "rohit"
+          }
+        ],
+        "id": "/subscriptions/c23662fe-6d13-4b4d-9fec-f73a29b22b43/resourceGroups/rohittavels-rg/providers/Microsoft.CertificateRegistration/certificateOrders/rohit/providers/Microsoft.Authorization/locks/rohit",
+        "resourceType": "Microsoft.CertificateRegistration/certificateOrders/providers/locks",
+        "resourceName": "rohit/Microsoft.Authorization/rohit"
+      }
+    ],
+    "error": {
+      "code": "DeploymentFailed",
+      "message": "At least one resource deployment operation failed. Please list deployment operations for details. Please see https://aka.ms/DeployOperations for usage details.",
+      "details": [
+        {
+          "code": "CertificateResellerWebService_RetrieverCertDetailError"
+        }
+      ]
+    },
+    "validationLevel": "Template"
+  }
+}

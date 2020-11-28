@@ -1,0 +1,27 @@
+[
+  {
+    "id": "/subscriptions/c23662fe-6d13-4b4d-9fec-f73a29b22b43/resourceGroups/rohittavels-rg/providers/Microsoft.Resources/deployments/Microsoft.SSL/operations/63B0FAA2B0B033F4",
+    "operationId": "63B0FAA2B0B033F4",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Failed",
+      "timestamp": "2020-11-23T05:48:54.0308759Z",
+      "duration": "PT17.9671268S",
+      "trackingId": "5a0e9a03-4515-4f74-9743-1e111ea03f59",
+      "serviceRequestId": "7e1665fd-20d0-4f0f-a832-d1338006cd52",
+      "statusCode": "BadRequest",
+      "statusMessage": {
+        "status": "Failed",
+        "error": {
+          "code": "DeploymentOperationFailed",
+          "message": "{\r\n  \"Code\": \"CertificateResellerWebService_RetrieverCertDetailError\",\r\n  \"Message\": null,\r\n  \"Target\": null,\r\n  \"Details\": [\r\n    {\r\n      \"Message\": null\r\n    },\r\n    {\r\n      \"Code\": \"CertificateResellerWebService_RetrieverCertDetailError\"\r\n    },\r\n    {\r\n      \"ErrorEntity\": null\r\n    }\r\n  ],\r\n  \"Innererror\": null\r\n}"
+        }
+      },
+      "targetResource": {
+        "id": "/subscriptions/c23662fe-6d13-4b4d-9fec-f73a29b22b43/resourceGroups/rohittavels-rg/providers/Microsoft.CertificateRegistration/certificateOrders/rohit",
+        "resourceType": "Microsoft.CertificateRegistration/certificateOrders",
+        "resourceName": "rohit"
+      }
+    }
+  }
+]
