@@ -1,8 +1,8 @@
 # Overview
 
-The images in this repository contain WebSphere Liberty application server and the IBM Java Runtime Environment. For more information please see our [official repository](https://github.com/WASdev/ci.docker).
+All of the images in this repository use Ubuntu as the Operating System. For variants that use the Universal Base Image, please see [this repository](https://hub.docker.com/r/ibmcom/websphere-liberty/).
 
-This repository contains WebSphere Liberty based on top of IBM Java 8 with Ubuntu images only. See [here](https://hub.docker.com/r/ibmcom/websphere-liberty/) for WebSphere Liberty based on Red Hat's Universal Base Image, which includes additional java options.
+For more information on these images please see our [GitHub repository](https://github.com/WASdev/ci.docker#container-images).
 
 # Image User
 

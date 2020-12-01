@@ -1,8 +1,8 @@
 # Overview
 
-The images in this repository contain Open Liberty. For more information about Open Liberty, see the [Open Liberty Website](https://openliberty.io/) site.
+All of the images in this repository use Ubuntu as the Operating System. For variants that use the Universal Base Image, please see [this repository](https://hub.docker.com/r/openliberty/open-liberty/).
 
-This repository contains OpenLiberty based on top of OpenJDK 8 Eclipse OpenJ9 with Ubuntu images only. See [here](https://hub.docker.com/r/openliberty/open-liberty) for Open Liberty based on Red Hat's Universal Base Image, which includes additional java options.
+For more information on these images please see our [GitHub repository](https://github.com/OpenLiberty/ci.docker#container-images).
 
 # Image User
 
