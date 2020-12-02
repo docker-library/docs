@@ -28,10 +28,10 @@ WARNING:
 -	[`20.10.0-rc1-dind`, `20.10-rc-dind`, `rc-dind`](https://github.com/docker-library/docker/blob/b1d2628005e12e79079c025c3653cba248d6f264/20.10-rc/dind/Dockerfile)
 -	[`20.10.0-rc1-dind-rootless`, `20.10-rc-dind-rootless`, `rc-dind-rootless`](https://github.com/docker-library/docker/blob/5bccde5ea3335ace174f1988f2a15bb0c7943ad6/20.10-rc/dind-rootless/Dockerfile)
 -	[`20.10.0-rc1-git`, `20.10-rc-git`, `rc-git`](https://github.com/docker-library/docker/blob/b6597f7fc1294f4ee3345576f06889d2ff773a8d/20.10-rc/git/Dockerfile)
--	[`19.03.13`, `19.03`, `19`, `stable`, `latest`](https://github.com/docker-library/docker/blob/12d1c2763b54d29137ec448a3e4ad1a9aefae1a0/19.03/Dockerfile)
--	[`19.03.13-dind`, `19.03-dind`, `19-dind`, `stable-dind`, `dind`](https://github.com/docker-library/docker/blob/b1d2628005e12e79079c025c3653cba248d6f264/19.03/dind/Dockerfile)
--	[`19.03.13-dind-rootless`, `19.03-dind-rootless`, `19-dind-rootless`, `stable-dind-rootless`, `dind-rootless`](https://github.com/docker-library/docker/blob/5bccde5ea3335ace174f1988f2a15bb0c7943ad6/19.03/dind-rootless/Dockerfile)
--	[`19.03.13-git`, `19.03-git`, `19-git`, `stable-git`, `git`](https://github.com/docker-library/docker/blob/12d1c2763b54d29137ec448a3e4ad1a9aefae1a0/19.03/git/Dockerfile)
+-	[`19.03.14`, `19.03`, `19`, `stable`, `latest`](https://github.com/docker-library/docker/blob/c8b077bfbab07a33ba5c80e5d4987fba8bbdd67b/19.03/Dockerfile)
+-	[`19.03.14-dind`, `19.03-dind`, `19-dind`, `stable-dind`, `dind`](https://github.com/docker-library/docker/blob/b1d2628005e12e79079c025c3653cba248d6f264/19.03/dind/Dockerfile)
+-	[`19.03.14-dind-rootless`, `19.03-dind-rootless`, `19-dind-rootless`, `stable-dind-rootless`, `dind-rootless`](https://github.com/docker-library/docker/blob/c8b077bfbab07a33ba5c80e5d4987fba8bbdd67b/19.03/dind-rootless/Dockerfile)
+-	[`19.03.14-git`, `19.03-git`, `19-git`, `stable-git`, `git`](https://github.com/docker-library/docker/blob/12d1c2763b54d29137ec448a3e4ad1a9aefae1a0/19.03/git/Dockerfile)
 
 # Quick reference (cont.)
 
