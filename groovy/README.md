@@ -30,12 +30,12 @@ WARNING:
 -	[`3.0.6-jre11`, `3.0-jre11`, `jre11`](https://github.com/groovy/docker-groovy/blob/a48a3fed614ad8a42f555cf6a5a8299ec47b658e/jre11/Dockerfile)
 -	[`3.0.6-jdk15`, `3.0-jdk15`, `jdk15`](https://github.com/groovy/docker-groovy/blob/a48a3fed614ad8a42f555cf6a5a8299ec47b658e/jdk15/Dockerfile)
 -	[`3.0.6-jre15`, `3.0-jre15`, `jre15`](https://github.com/groovy/docker-groovy/blob/a48a3fed614ad8a42f555cf6a5a8299ec47b658e/jre15/Dockerfile)
--	[`4.0.0-alpha-1-jdk8`, `4.0-jdk8`, `4.0.0-alpha-1-jdk`, `4.0-jdk`](https://github.com/groovy/docker-groovy/blob/02a47a57034b959c4a61302e8147e82365210050/jdk8/Dockerfile)
--	[`4.0.0-alpha-1-jre8`, `4.0-jre8`, `4.0.0-alpha-1-jre`, `4.0-jre`, `4.0.0-alpha-1`, `4.0`](https://github.com/groovy/docker-groovy/blob/02a47a57034b959c4a61302e8147e82365210050/jre8/Dockerfile)
--	[`4.0.0-alpha-1-jdk11`, `4.0-jdk11`](https://github.com/groovy/docker-groovy/blob/02a47a57034b959c4a61302e8147e82365210050/jdk11/Dockerfile)
--	[`4.0.0-alpha-1-jre11`, `4.0-jre11`](https://github.com/groovy/docker-groovy/blob/02a47a57034b959c4a61302e8147e82365210050/jre11/Dockerfile)
--	[`4.0.0-alpha-1-jdk15`, `4.0-jdk15`](https://github.com/groovy/docker-groovy/blob/02a47a57034b959c4a61302e8147e82365210050/jdk15/Dockerfile)
--	[`4.0.0-alpha-1-jre15`, `4.0-jre15`](https://github.com/groovy/docker-groovy/blob/02a47a57034b959c4a61302e8147e82365210050/jre15/Dockerfile)
+-	[`4.0.0-alpha-2-jdk8`, `4.0-jdk8`, `4.0.0-alpha-2-jdk`, `4.0-jdk`](https://github.com/groovy/docker-groovy/blob/a5bc6d96b7e8a8bd82439fdaa048c222229d82ec/jdk8/Dockerfile)
+-	[`4.0.0-alpha-2-jre8`, `4.0-jre8`, `4.0.0-alpha-2-jre`, `4.0-jre`, `4.0.0-alpha-2`, `4.0`](https://github.com/groovy/docker-groovy/blob/a5bc6d96b7e8a8bd82439fdaa048c222229d82ec/jre8/Dockerfile)
+-	[`4.0.0-alpha-2-jdk11`, `4.0-jdk11`](https://github.com/groovy/docker-groovy/blob/a5bc6d96b7e8a8bd82439fdaa048c222229d82ec/jdk11/Dockerfile)
+-	[`4.0.0-alpha-2-jre11`, `4.0-jre11`](https://github.com/groovy/docker-groovy/blob/a5bc6d96b7e8a8bd82439fdaa048c222229d82ec/jre11/Dockerfile)
+-	[`4.0.0-alpha-2-jdk15`, `4.0-jdk15`](https://github.com/groovy/docker-groovy/blob/a5bc6d96b7e8a8bd82439fdaa048c222229d82ec/jdk15/Dockerfile)
+-	[`4.0.0-alpha-2-jre15`, `4.0-jre15`](https://github.com/groovy/docker-groovy/blob/a5bc6d96b7e8a8bd82439fdaa048c222229d82ec/jre15/Dockerfile)
 
 # Quick reference (cont.)
 
