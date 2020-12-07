@@ -216,9 +216,14 @@ services:
       - 8080:80
     links:
       - db
+    restart: always
     volumes:
       - nextcloud:/var/www/html
-    restart: always
+    environment:
+      - MYSQL_PASSWORD=
+      - MYSQL_DATABASE=nextcloud
+      - MYSQL_USER=nextcloud
+      - MYSQL_HOST=db
 ```
 
 Then run `docker-compose up -d`, now you can access Nextcloud at http://localhost:8080/ from your host system.
