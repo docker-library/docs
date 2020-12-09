@@ -46,7 +46,7 @@ WARNING:
 -	[`noetic-perception-buster`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/noetic/debian/buster/perception/Dockerfile)
 -	[`dashing-ros-core`, `dashing-ros-core-bionic`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/dashing/ubuntu/bionic/ros-core/Dockerfile)
 -	[`dashing-ros-base`, `dashing-ros-base-bionic`, `dashing`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/dashing/ubuntu/bionic/ros-base/Dockerfile)
--	[`dashing-ros1-bridge`, `dashing-ros1-bridge-bionic`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/dashing/ubuntu/bionic/ros1-bridge/Dockerfile)
+-	[`dashing-ros1-bridge`, `dashing-ros1-bridge-bionic`](https://github.com/osrf/docker_images/blob/dae91acf0f246fd2b56dcb62738c99c6a7f2a0e9/ros/dashing/ubuntu/bionic/ros1-bridge/Dockerfile)
 -	[`eloquent-ros-core`, `eloquent-ros-core-bionic`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/eloquent/ubuntu/bionic/ros-core/Dockerfile)
 -	[`eloquent-ros-base`, `eloquent-ros-base-bionic`, `eloquent`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/eloquent/ubuntu/bionic/ros-base/Dockerfile)
 -	[`eloquent-ros1-bridge`, `eloquent-ros1-bridge-bionic`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/eloquent/ubuntu/bionic/ros1-bridge/Dockerfile)
