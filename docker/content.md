@@ -14,7 +14,7 @@ If you are still convinced that you need Docker-in-Docker and not just access to
 
 # How to use this image
 
-[![asciicast](https://asciinema.org/a/24707.png)](https://asciinema.org/a/24707)
+[![asciicast](https://asciinema.org/a/378669.svg)](https://asciinema.org/a/378669)
 
 ## TLS
 
