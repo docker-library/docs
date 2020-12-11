@@ -24,15 +24,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`18.0.11-apache`, `18.0-apache`, `18-apache`, `18.0.11`, `18.0`, `18`](https://github.com/nextcloud/docker/blob/62398b5ea03fb6dd4b89a59765ab7d285083c327/18.0/apache/Dockerfile)
--	[`18.0.11-fpm-alpine`, `18.0-fpm-alpine`, `18-fpm-alpine`](https://github.com/nextcloud/docker/blob/62398b5ea03fb6dd4b89a59765ab7d285083c327/18.0/fpm-alpine/Dockerfile)
--	[`18.0.11-fpm`, `18.0-fpm`, `18-fpm`](https://github.com/nextcloud/docker/blob/62398b5ea03fb6dd4b89a59765ab7d285083c327/18.0/fpm/Dockerfile)
--	[`19.0.5-apache`, `19.0-apache`, `19-apache`, `stable-apache`, `production-apache`, `19.0.5`, `19.0`, `19`, `stable`, `production`](https://github.com/nextcloud/docker/blob/62398b5ea03fb6dd4b89a59765ab7d285083c327/19.0/apache/Dockerfile)
--	[`19.0.5-fpm-alpine`, `19.0-fpm-alpine`, `19-fpm-alpine`, `stable-fpm-alpine`, `production-fpm-alpine`](https://github.com/nextcloud/docker/blob/62398b5ea03fb6dd4b89a59765ab7d285083c327/19.0/fpm-alpine/Dockerfile)
--	[`19.0.5-fpm`, `19.0-fpm`, `19-fpm`, `stable-fpm`, `production-fpm`](https://github.com/nextcloud/docker/blob/62398b5ea03fb6dd4b89a59765ab7d285083c327/19.0/fpm/Dockerfile)
--	[`20.0.2-apache`, `20.0-apache`, `20-apache`, `apache`, `20.0.2`, `20.0`, `20`, `latest`](https://github.com/nextcloud/docker/blob/62398b5ea03fb6dd4b89a59765ab7d285083c327/20.0/apache/Dockerfile)
--	[`20.0.2-fpm-alpine`, `20.0-fpm-alpine`, `20-fpm-alpine`, `fpm-alpine`](https://github.com/nextcloud/docker/blob/62398b5ea03fb6dd4b89a59765ab7d285083c327/20.0/fpm-alpine/Dockerfile)
--	[`20.0.2-fpm`, `20.0-fpm`, `20-fpm`, `fpm`](https://github.com/nextcloud/docker/blob/62398b5ea03fb6dd4b89a59765ab7d285083c327/20.0/fpm/Dockerfile)
+-	[`18.0.12-apache`, `18.0-apache`, `18-apache`, `18.0.12`, `18.0`, `18`](https://github.com/nextcloud/docker/blob/f87624c6eb4f37cf930dfec2441d744d44e31495/18.0/apache/Dockerfile)
+-	[`18.0.12-fpm`, `18.0-fpm`, `18-fpm`](https://github.com/nextcloud/docker/blob/f87624c6eb4f37cf930dfec2441d744d44e31495/18.0/fpm/Dockerfile)
+-	[`18.0.12-fpm-alpine`, `18.0-fpm-alpine`, `18-fpm-alpine`](https://github.com/nextcloud/docker/blob/f87624c6eb4f37cf930dfec2441d744d44e31495/18.0/fpm-alpine/Dockerfile)
+-	[`19.0.6-apache`, `19.0-apache`, `19-apache`, `19.0.6`, `19.0`, `19`](https://github.com/nextcloud/docker/blob/f87624c6eb4f37cf930dfec2441d744d44e31495/19.0/apache/Dockerfile)
+-	[`19.0.6-fpm`, `19.0-fpm`, `19-fpm`](https://github.com/nextcloud/docker/blob/f87624c6eb4f37cf930dfec2441d744d44e31495/19.0/fpm/Dockerfile)
+-	[`19.0.6-fpm-alpine`, `19.0-fpm-alpine`, `19-fpm-alpine`](https://github.com/nextcloud/docker/blob/f87624c6eb4f37cf930dfec2441d744d44e31495/19.0/fpm-alpine/Dockerfile)
+-	[`20.0.3-apache`, `20.0-apache`, `20-apache`, `apache`, `20.0.3`, `20.0`, `20`, `latest`](https://github.com/nextcloud/docker/blob/f87624c6eb4f37cf930dfec2441d744d44e31495/20.0/apache/Dockerfile)
+-	[`20.0.3-fpm`, `20.0-fpm`, `20-fpm`, `fpm`](https://github.com/nextcloud/docker/blob/f87624c6eb4f37cf930dfec2441d744d44e31495/20.0/fpm/Dockerfile)
+-	[`20.0.3-fpm-alpine`, `20.0-fpm-alpine`, `20-fpm-alpine`, `fpm-alpine`](https://github.com/nextcloud/docker/blob/f87624c6eb4f37cf930dfec2441d744d44e31495/20.0/fpm-alpine/Dockerfile)
 
 # Quick reference (cont.)
 
