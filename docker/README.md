@@ -25,7 +25,7 @@ WARNING:
 # Supported tags and respective `Dockerfile` links
 
 -	[`20.10.0`, `20.10`, `20`, `latest`](https://github.com/docker-library/docker/blob/387e351394bfad74bceebf8303c6c8e39c3d4ed4/20.10/Dockerfile)
--	[`20.10.0-dind`, `20.10-dind`, `20-dind`, `dind`](https://github.com/docker-library/docker/blob/387e351394bfad74bceebf8303c6c8e39c3d4ed4/20.10/dind/Dockerfile)
+-	[`20.10.0-dind`, `20.10-dind`, `20-dind`, `dind`](https://github.com/docker-library/docker/blob/094faa88f437cafef7aeb0cc36e75b59046cc4b9/20.10/dind/Dockerfile)
 -	[`20.10.0-dind-rootless`, `20.10-dind-rootless`, `20-dind-rootless`, `dind-rootless`](https://github.com/docker-library/docker/blob/387e351394bfad74bceebf8303c6c8e39c3d4ed4/20.10/dind-rootless/Dockerfile)
 -	[`20.10.0-git`, `20.10-git`, `20-git`, `git`](https://github.com/docker-library/docker/blob/387e351394bfad74bceebf8303c6c8e39c3d4ed4/20.10/git/Dockerfile)
 -	[`19.03.14`, `19.03`, `19`](https://github.com/docker-library/docker/blob/c8b077bfbab07a33ba5c80e5d4987fba8bbdd67b/19.03/Dockerfile)
