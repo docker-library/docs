@@ -102,10 +102,12 @@ CMD [ "redis-server", "/usr/local/etc/redis/redis.conf" ]
 Alternatively, you can specify something along the same lines with `docker run` options.
 
 ```console
-$ docker run -v /myredis/conf/redis.conf:/usr/local/etc/redis/redis.conf --name myredis redis redis-server /usr/local/etc/redis/redis.conf
+$ docker run -v /myredis/conf:/usr/local/etc/redis --name myredis redis redis-server /usr/local/etc/redis/redis.conf
 ```
 
 Where `/myredis/conf/` is a local directory containing your `redis.conf` file. Using this method means that there is no need for you to have a Dockerfile for your redis container.
+
+The mapped directory should be writable, as depending on the configuration and mode of operation, Redis may need to create additional configuration files or rewrite existing ones.
 
 ## `32bit` variant
 
