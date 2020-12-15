@@ -76,7 +76,7 @@ If all goes well, you'll be able to access your new site on `http://localhost:30
 
 ### Upgrading Ghost
 
-You will want to ensure you are running the latest minor version (1.25.5 or 0.11.9) of Ghost before upgrading major versions. Otherwise, you may run into database errors.
+You will want to ensure you are running the latest minor version of Ghost before upgrading major versions. Otherwise, you may run into database errors.
 
 For upgrading your Ghost container you will want to mount your data to the appropriate path in the predecessor container (see below): import your content from the admin panel, stop the container, and then re-mount your content to the successor container you are upgrading into; you can then export your content from the admin panel.
 
@@ -84,24 +84,16 @@ For upgrading your Ghost container you will want to mount your data to the appro
 
 Mount your existing content. In this example we also use the Alpine base image.
 
-### Ghost 1.x.x
-
 ```console
-$ docker run -d --name some-ghost -p 3001:2368 -v /path/to/ghost/blog:/var/lib/ghost/content ghost:1-alpine
-```
-
-### Ghost 0.11.xx
-
-```console
-$ docker run -d --name some-ghost -p 3001:2368 -v /path/to/ghost/blog:/var/lib/ghost ghost:0.11-alpine
+$ docker run -d --name some-ghost -p 3001:2368 -v /path/to/ghost/blog:/var/lib/ghost/content ghost:alpine
 ```
 
 ### Docker Volume
 
-Alternatively you can use a [data container](http://docs.docker.com/engine/tutorials/dockervolumes/) that has a volume that points to `/var/lib/ghost/content` (or /var/lib/ghost for 0.11.x) and then reference it:
+Alternatively you can use a named [docker volume](https://docs.docker.com/storage/volumes/) instead of a direct host path for `/var/lib/ghost/content`:
 
 ```console
-$ docker run -d --name some-ghost --volumes-from some-ghost-data ghost
+$ docker run -d --name some-ghost -v some-ghost-data:/var/lib/ghost/content ghost
 ```
 
 ### SQLite Database
@@ -124,7 +116,7 @@ When opening a ticket at https://github.com/TryGhost/Ghost/issues it becomes nec
 
 ```console
 $ docker exec <container-id> node --version
-v6.11.2
+[node version output]
 ```
 
 ## Note about Ghost-CLI
