@@ -1,6 +1,6 @@
 # What is GridDB?
 
-[GridDB](https://github.com/griddb/griddb) is Database for IoT with both NoSQL interface and SQL Interface.
+[GridDB](https://github.com/griddb/griddb) is Database for IoT with both NoSQL interface and SQL Interface.  
 Please refer to [GridDB Features Reference](https://github.com/griddb/docs-en/blob/master/manuals/GridDB_FeaturesReference.md) for functionality.
 
 %%LOGO%%
@@ -75,8 +75,8 @@ $ docker run --name container_name griddb
 # Run sample java client
 $ docker pull griddb/java-client
 $ docker run griddb/java-client
-```
 --> Person:  name=name02 status=false count=2 lob=[65, 66, 67, 68, 69, 70, 71, 72, 73, 74]
+```
 
 The more information about griddb server and java client. Could please refer to [here](https://github.com/griddb/griddb)
 
@@ -89,12 +89,12 @@ $ docker run --name container_name griddb
 # Run sample JDBC Driver
 $ docker pull griddb/jdbc
 $ docker run griddb/jdbc
-```
 --> SQL Create Table name=SampleJDBC_Select
     SQL Insert count=5
     SQL row(id=3, value=test3)
     SQL row(id=4, value=test4)
     success!
+```
 
 The more information about JDBC Driver. Could please refer to [here](https://github.com/griddb/jdbc)
 
@@ -108,8 +108,8 @@ $ docker run --name container_name \
   griddb
 ```
 
-With:
-    my_vol is volume ( $ docker volume ls )
+With:  
+    my_vol is volume ( $ docker volume ls )  
 Or you can see more infor in path: "/var/lib/docker/volumes/my_vol/_data"
 
 ## Stop a `%%IMAGE%%` server
