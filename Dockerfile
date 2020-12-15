@@ -32,10 +32,10 @@ ENV LANG C.UTF-8
 
 RUN mkdir ~/.vim ~/.vim/bundle ~/.vim/autoload
 RUN set -x \
-	&& git clone https://github.com/tpope/vim-pathogen.git ~/.vim/bundle/pathogen \
+	&& git clone --depth 1 https://github.com/tpope/vim-pathogen.git ~/.vim/bundle/pathogen \
 	&& ln -s ../bundle/pathogen/autoload/pathogen.vim ~/.vim/autoload/
-RUN git clone https://github.com/jtratner/vim-flavored-markdown.git ~/.vim/bundle/ghmarkdown
-RUN git clone https://github.com/nanotech/jellybeans.vim.git ~/.vim/bundle/jellybeans
+RUN git clone --depth 1 https://github.com/jtratner/vim-flavored-markdown.git ~/.vim/bundle/ghmarkdown
+RUN git clone --depth 1 https://github.com/nanotech/jellybeans.vim.git ~/.vim/bundle/jellybeans
 RUN { \
 		echo 'scriptencoding utf-8'; \
 		\
