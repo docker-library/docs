@@ -12,9 +12,11 @@ Please refer to [GridDB Features Reference](https://github.com/griddb/docs-en/bl
 Starting a GridDB instance is simple:
 
 Run images griddb sever default setting
+
 ```console
 $ docker run griddb
 ```
+
 Run image with environment config
 
 ```console
@@ -29,24 +31,25 @@ docker run --name container_name \
 ```
 
 Using docker-compose:
+
 ```console
 $ docker-compose up
 ```
+
 Run images using docker-compose.yaml
-```
-version: '3'
 
-services:
-  griddb:
-    container_name: docker
-    image: griddb
-    volumes:
-      - "vol:/var/lib/gridstore"
-
-volumes:
-    vol:
-
-```
+	version: '3'
+	
+	services:
+	  griddb:
+	    container_name: docker
+	    image: griddb
+	    volumes:
+	      - "vol:/var/lib/gridstore"
+	
+	volumes:
+	    vol:
+	
 
 # Container shell access
 
@@ -55,15 +58,17 @@ The `docker exec` command allows you to run commands inside a Docker container. 
 ```console
 $ docker exec -it some-%%REPO%% bash
 ```
+
 Check status container for griddb sever:
-```
-$ docker exec container_name /bin/bash -c "gs_stat -u admin/admin"
-```
+
+	$ docker exec container_name /bin/bash -c "gs_stat -u admin/admin"
+
 The log is available through Docker's container log:
 
 ```console
 $ docker logs some-%%REPO%%
 ```
+
 # Execute a sample program (Ubuntu)
 
 ## Run sample Client (Java)
@@ -108,8 +113,10 @@ $ docker run --name container_name \
   griddb
 ```
 
-With:  
-    my_vol is volume ( $ docker volume ls )  
+With:
+
+	my_vol is volume ( $ docker volume ls )  
+
 Or you can see more infor in path: "/var/lib/docker/volumes/my_vol/_data"
 
 ## Stop a `%%IMAGE%%` server
@@ -121,6 +128,7 @@ $ docker kill some-%%REPO%%
 ```
 
 Note: You can restart griddb server after stopped griddb server. Using command in below:
+
 ```console
 $ docker container start CONTAINER_NAME
 ```
