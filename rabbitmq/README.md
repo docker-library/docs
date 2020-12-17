@@ -24,13 +24,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.8.10-beta.1`, `3.8-rc`](https://github.com/docker-library/rabbitmq/blob/61bde14964280981fb12890d4614befc902da79a/3.8-rc/ubuntu/Dockerfile)
+-	[`3.8.10-beta.1`, `3.8-rc`](https://github.com/docker-library/rabbitmq/blob/b16299d4f95aa18fd0b3a8ae45f788af9b029af8/3.8-rc/ubuntu/Dockerfile)
 -	[`3.8.10-beta.1-management`, `3.8-rc-management`](https://github.com/docker-library/rabbitmq/blob/888638927482f86af6e88bebb67423926cb1112f/3.8-rc/ubuntu/management/Dockerfile)
--	[`3.8.10-beta.1-alpine`, `3.8-rc-alpine`](https://github.com/docker-library/rabbitmq/blob/61bde14964280981fb12890d4614befc902da79a/3.8-rc/alpine/Dockerfile)
+-	[`3.8.10-beta.1-alpine`, `3.8-rc-alpine`](https://github.com/docker-library/rabbitmq/blob/b16299d4f95aa18fd0b3a8ae45f788af9b029af8/3.8-rc/alpine/Dockerfile)
 -	[`3.8.10-beta.1-management-alpine`, `3.8-rc-management-alpine`](https://github.com/docker-library/rabbitmq/blob/888638927482f86af6e88bebb67423926cb1112f/3.8-rc/alpine/management/Dockerfile)
--	[`3.8.9`, `3.8`, `3`, `latest`](https://github.com/docker-library/rabbitmq/blob/093344023cb30eb36f05adaab3ae51bb939ee1ae/3.8/ubuntu/Dockerfile)
+-	[`3.8.9`, `3.8`, `3`, `latest`](https://github.com/docker-library/rabbitmq/blob/272329906f928c6431fff5c2c21b9ecccf75992d/3.8/ubuntu/Dockerfile)
 -	[`3.8.9-management`, `3.8-management`, `3-management`, `management`](https://github.com/docker-library/rabbitmq/blob/888638927482f86af6e88bebb67423926cb1112f/3.8/ubuntu/management/Dockerfile)
--	[`3.8.9-alpine`, `3.8-alpine`, `3-alpine`, `alpine`](https://github.com/docker-library/rabbitmq/blob/093344023cb30eb36f05adaab3ae51bb939ee1ae/3.8/alpine/Dockerfile)
+-	[`3.8.9-alpine`, `3.8-alpine`, `3-alpine`, `alpine`](https://github.com/docker-library/rabbitmq/blob/272329906f928c6431fff5c2c21b9ecccf75992d/3.8/alpine/Dockerfile)
 -	[`3.8.9-management-alpine`, `3.8-management-alpine`, `3-management-alpine`, `management-alpine`](https://github.com/docker-library/rabbitmq/blob/888638927482f86af6e88bebb67423926cb1112f/3.8/alpine/management/Dockerfile)
 
 # Quick reference (cont.)
