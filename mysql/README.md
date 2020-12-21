@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.0.22`, `8.0`, `8`, `latest`](https://github.com/docker-library/mysql/blob/ee33a2144a0effe9459abf02f20a6202ae645e94/8.0/Dockerfile.debian)
--	[`5.7.32`, `5.7`, `5`](https://github.com/docker-library/mysql/blob/ee33a2144a0effe9459abf02f20a6202ae645e94/5.7/Dockerfile.debian)
--	[`5.6.50`, `5.6`](https://github.com/docker-library/mysql/blob/ee33a2144a0effe9459abf02f20a6202ae645e94/5.6/Dockerfile.debian)
+-	[`8.0.22`, `8.0`, `8`, `latest`](https://github.com/docker-library/mysql/blob/b0a0e546712534b30ac13e8b2829f23654facbc5/8.0/Dockerfile.debian)
+-	[`5.7.32`, `5.7`, `5`](https://github.com/docker-library/mysql/blob/b0a0e546712534b30ac13e8b2829f23654facbc5/5.7/Dockerfile.debian)
+-	[`5.6.50`, `5.6`](https://github.com/docker-library/mysql/blob/b0a0e546712534b30ac13e8b2829f23654facbc5/5.6/Dockerfile.debian)
 
 # Quick reference (cont.)
 
