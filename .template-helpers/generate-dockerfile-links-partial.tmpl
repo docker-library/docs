@@ -21,22 +21,24 @@ This template defines the "Supported tags and Dockerfile links" portion of an im
 	{{- $froms := $.ArchDockerFroms $arch $e -}}
 
 	{{- $gitRepo := $e.ArchGitRepo $arch -}}
+	{{- $gitCommit := $e.ArchGitCommit $arch -}}
+	{{- $dir := .ArchDirectory $arch -}}
+	{{- $dockerfile := .ArchFile $arch -}}
+	{{- $dockerfilePath := eq $dir "." | ternary $dockerfile (join "/" $dir $dockerfile) -}}
 	{{- $repoUrlBase := $gitRepo | replace "git://" "https://" | trimSuffixes ".git" -}}
-	{{- $isGitHub := hasPrefix "https://github.com/" $repoUrlBase -}}
+	{{- $url := hasPrefix "https://github.com/" $repoUrlBase | ternary (join "/" $repoUrlBase "blob" $gitCommit $dockerfilePath) "" -}}
+	{{- /* handle https://gitlab.../.../... style URLs (by reasonably assuming they're a gitlab instance) */ -}}
+	{{- $url = $url | ternary $url (hasPrefix "https://gitlab." $repoUrlBase | ternary (join "/" $repoUrlBase "-/blob" $gitCommit $dockerfilePath) "") -}}
+	{{- /* TODO decide what to do (if anything) about other non-GitHub repos with respect to URL */ -}}
 
 	{{- if $i -}}
 		{{- "\n" -}}
 	{{- end -}}
 
 	- {{- "\t" -}}
-	{{- if $isGitHub -}} [ {{- end -}}
-	{{- $dir := .ArchDirectory $arch -}}
-	{{- $dockerfile := .ArchFile $arch -}}
-	{{- $dockerfilePath := eq $dir "." | ternary $dockerfile (join "/" $dir $dockerfile) -}}
+	{{- if $url -}} [ {{- end -}}
 	` {{- $e.Tags | join "`, `" -}} `
-	{{- $gitCommit := $e.ArchGitCommit $arch -}}
-	{{- if $isGitHub -}} ]( {{- $repoUrlBase -}} /blob/ {{- $gitCommit -}} / {{- $dockerfilePath -}} ) {{- end -}}
-	{{- /* TODO decide what to do (if anything) about non-GitHub repos with respect to URL */ -}}
+	{{- if $url -}} ]( {{- $url -}} ) {{- end -}}
 {{- end -}}
 {{- "\n\n" -}}
 
@@ -58,18 +60,20 @@ This template defines the "Supported tags and Dockerfile links" portion of an im
 				{{- $froms := $.ArchDockerFroms $arch $e -}}
 
 				{{- $gitRepo := $e.ArchGitRepo $arch -}}
-				{{- $repoUrlBase := $gitRepo | replace "git://" "https://" | trimSuffixes ".git" -}}
-				{{- $isGitHub := hasPrefix "https://github.com/" $repoUrlBase -}}
-
-				{{- "\t-\t" -}}
-				{{- if $isGitHub -}} [ {{- end -}}
+				{{- $gitCommit := $e.ArchGitCommit $arch -}}
 				{{- $dir := .ArchDirectory $arch -}}
 				{{- $dockerfile := .ArchFile $arch -}}
 				{{- $dockerfilePath := eq $dir "." | ternary $dockerfile (join "/" $dir $dockerfile) -}}
+				{{- $repoUrlBase := $gitRepo | replace "git://" "https://" | trimSuffixes ".git" -}}
+				{{- $url := hasPrefix "https://github.com/" $repoUrlBase | ternary (join "/" $repoUrlBase "blob" $gitCommit $dockerfilePath) "" -}}
+				{{- /* handle https://gitlab.../.../... style URLs (by reasonably assuming they're a gitlab instance) */ -}}
+				{{- $url = $url | ternary $url (hasPrefix "https://gitlab." $repoUrlBase | ternary (join "/" $repoUrlBase "-/blob" $gitCommit $dockerfilePath) "") -}}
+				{{- /* TODO decide what to do (if anything) about other non-GitHub repos with respect to URL */ -}}
+
+				{{- "\t-\t" -}}
+				{{- if $url -}} [ {{- end -}}
 				` {{- $e.Tags | first -}} `
-				{{- $gitCommit := $e.ArchGitCommit $arch -}}
-				{{- if $isGitHub -}} ]( {{- $repoUrlBase -}} /blob/ {{- $gitCommit -}} / {{- $dockerfilePath -}} ) {{- end -}}
-				{{- /* TODO decide what to do (if anything) about non-GitHub repos with respect to URL */ -}}
+				{{- if $url -}} ]( {{- $url -}} ) {{- end -}}
 
 				{{- "\n" -}}
 			{{- end -}}
