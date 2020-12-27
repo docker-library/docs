@@ -2,7 +2,9 @@ name: Action Tester
 
 on:
   pull_request:
-    branches: [arm32v6]
+    branches:
+      - arm32v6
+      - master
 
 jobs:
   build:
