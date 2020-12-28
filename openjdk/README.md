@@ -28,6 +28,13 @@ WARNING:
 
 ## Simple Tags
 
+-	[`17-ea-3-jdk-oraclelinux8`, `17-ea-3-oraclelinux8`, `17-ea-jdk-oraclelinux8`, `17-ea-oraclelinux8`, `17-jdk-oraclelinux8`, `17-oraclelinux8`, `17-ea-3-jdk-oracle`, `17-ea-3-oracle`, `17-ea-jdk-oracle`, `17-ea-oracle`, `17-jdk-oracle`, `17-oracle`](https://github.com/docker-library/openjdk/blob/23f461cd1ba13181f6d9fa6696b2b5f204d8c2d8/17/jdk/oraclelinux8/Dockerfile)
+-	[`17-ea-3-jdk-oraclelinux7`, `17-ea-3-oraclelinux7`, `17-ea-jdk-oraclelinux7`, `17-ea-oraclelinux7`, `17-jdk-oraclelinux7`, `17-oraclelinux7`](https://github.com/docker-library/openjdk/blob/23f461cd1ba13181f6d9fa6696b2b5f204d8c2d8/17/jdk/oraclelinux7/Dockerfile)
+-	[`17-ea-3-jdk-buster`, `17-ea-3-buster`, `17-ea-jdk-buster`, `17-ea-buster`, `17-jdk-buster`, `17-buster`](https://github.com/docker-library/openjdk/blob/23f461cd1ba13181f6d9fa6696b2b5f204d8c2d8/17/jdk/buster/Dockerfile)
+-	[`17-ea-3-jdk-slim-buster`, `17-ea-3-slim-buster`, `17-ea-jdk-slim-buster`, `17-ea-slim-buster`, `17-jdk-slim-buster`, `17-slim-buster`, `17-ea-3-jdk-slim`, `17-ea-3-slim`, `17-ea-jdk-slim`, `17-ea-slim`, `17-jdk-slim`, `17-slim`](https://github.com/docker-library/openjdk/blob/23f461cd1ba13181f6d9fa6696b2b5f204d8c2d8/17/jdk/slim-buster/Dockerfile)
+-	[`17-ea-3-jdk-windowsservercore-1809`, `17-ea-3-windowsservercore-1809`, `17-ea-jdk-windowsservercore-1809`, `17-ea-windowsservercore-1809`, `17-jdk-windowsservercore-1809`, `17-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/23f461cd1ba13181f6d9fa6696b2b5f204d8c2d8/17/jdk/windows/windowsservercore-1809/Dockerfile)
+-	[`17-ea-3-jdk-windowsservercore-ltsc2016`, `17-ea-3-windowsservercore-ltsc2016`, `17-ea-jdk-windowsservercore-ltsc2016`, `17-ea-windowsservercore-ltsc2016`, `17-jdk-windowsservercore-ltsc2016`, `17-windowsservercore-ltsc2016`](https://github.com/docker-library/openjdk/blob/23f461cd1ba13181f6d9fa6696b2b5f204d8c2d8/17/jdk/windows/windowsservercore-ltsc2016/Dockerfile)
+-	[`17-ea-3-jdk-nanoserver-1809`, `17-ea-3-nanoserver-1809`, `17-ea-jdk-nanoserver-1809`, `17-ea-nanoserver-1809`, `17-jdk-nanoserver-1809`, `17-nanoserver-1809`](https://github.com/docker-library/openjdk/blob/23f461cd1ba13181f6d9fa6696b2b5f204d8c2d8/17/jdk/windows/nanoserver-1809/Dockerfile)
 -	[`16-ea-30-jdk-oraclelinux8`, `16-ea-30-oraclelinux8`, `16-ea-jdk-oraclelinux8`, `16-ea-oraclelinux8`, `16-jdk-oraclelinux8`, `16-oraclelinux8`, `16-ea-30-jdk-oracle`, `16-ea-30-oracle`, `16-ea-jdk-oracle`, `16-ea-oracle`, `16-jdk-oracle`, `16-oracle`](https://github.com/docker-library/openjdk/blob/2f484cbf97ce02d878aae5ed982b4588891494a7/16/jdk/oraclelinux8/Dockerfile)
 -	[`16-ea-30-jdk-oraclelinux7`, `16-ea-30-oraclelinux7`, `16-ea-jdk-oraclelinux7`, `16-ea-oraclelinux7`, `16-jdk-oraclelinux7`, `16-oraclelinux7`](https://github.com/docker-library/openjdk/blob/2f484cbf97ce02d878aae5ed982b4588891494a7/16/jdk/oraclelinux7/Dockerfile)
 -	[`16-ea-30-jdk-buster`, `16-ea-30-buster`, `16-ea-jdk-buster`, `16-ea-buster`, `16-jdk-buster`, `16-buster`](https://github.com/docker-library/openjdk/blob/2f484cbf97ce02d878aae5ed982b4588891494a7/16/jdk/buster/Dockerfile)
@@ -66,6 +73,15 @@ WARNING:
 
 ## Shared Tags
 
+-	`17-ea-3-jdk`, `17-ea-3`, `17-ea-jdk`, `17-ea`, `17-jdk`, `17`:
+	-	[`17-ea-3-jdk-oraclelinux8`](https://github.com/docker-library/openjdk/blob/23f461cd1ba13181f6d9fa6696b2b5f204d8c2d8/17/jdk/oraclelinux8/Dockerfile)
+	-	[`17-ea-3-jdk-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/23f461cd1ba13181f6d9fa6696b2b5f204d8c2d8/17/jdk/windows/windowsservercore-1809/Dockerfile)
+	-	[`17-ea-3-jdk-windowsservercore-ltsc2016`](https://github.com/docker-library/openjdk/blob/23f461cd1ba13181f6d9fa6696b2b5f204d8c2d8/17/jdk/windows/windowsservercore-ltsc2016/Dockerfile)
+-	`17-ea-3-jdk-windowsservercore`, `17-ea-3-windowsservercore`, `17-ea-jdk-windowsservercore`, `17-ea-windowsservercore`, `17-jdk-windowsservercore`, `17-windowsservercore`:
+	-	[`17-ea-3-jdk-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/23f461cd1ba13181f6d9fa6696b2b5f204d8c2d8/17/jdk/windows/windowsservercore-1809/Dockerfile)
+	-	[`17-ea-3-jdk-windowsservercore-ltsc2016`](https://github.com/docker-library/openjdk/blob/23f461cd1ba13181f6d9fa6696b2b5f204d8c2d8/17/jdk/windows/windowsservercore-ltsc2016/Dockerfile)
+-	`17-ea-3-jdk-nanoserver`, `17-ea-3-nanoserver`, `17-ea-jdk-nanoserver`, `17-ea-nanoserver`, `17-jdk-nanoserver`, `17-nanoserver`:
+	-	[`17-ea-3-jdk-nanoserver-1809`](https://github.com/docker-library/openjdk/blob/23f461cd1ba13181f6d9fa6696b2b5f204d8c2d8/17/jdk/windows/nanoserver-1809/Dockerfile)
 -	`16-ea-30-jdk`, `16-ea-30`, `16-ea-jdk`, `16-ea`, `16-jdk`, `16`:
 	-	[`16-ea-30-jdk-oraclelinux8`](https://github.com/docker-library/openjdk/blob/2f484cbf97ce02d878aae5ed982b4588891494a7/16/jdk/oraclelinux8/Dockerfile)
 	-	[`16-ea-30-jdk-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/2f484cbf97ce02d878aae5ed982b4588891494a7/16/jdk/windows/windowsservercore-1809/Dockerfile)
@@ -217,14 +233,6 @@ Starting with `openjdk:12` the default image as well as the `-oracle` and `-orac
 
 The OpenJDK binaries in the default image as well as the `-oracle` and `-oraclelinux7` variants are built by Oracle and are sourced from the [OpenJDK community](https://openjdk.java.net/). These binaries are licensed under the [GPLv2 with the Classpath Exception](https://openjdk.java.net/legal/gplv2+ce.html).
 
-## `openjdk:<version>-alpine`
-
-This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
-
-The OpenJDK port for Alpine is not in a supported release by OpenJDK, since it is not in the mainline code base. It is only available as early access builds of [OpenJDK Project Portola](http://openjdk.java.net/projects/portola). See also [this comment](https://github.com/docker-library/openjdk/pull/235#issuecomment-424599754). So this image follows what is available from the OpenJDK project's maintainers.
-
-What this means is that Alpine based images are only released for early access release versions of OpenJDK. Once a particular release becomes a "General-Availability" release, the Alpine version is dropped from the "Supported Tags"; they are still available to pull, but will no longer be updated.
-
 ## `openjdk:<version>-windowsservercore`
 
 This image is based on [Windows Server Core (`microsoft/windowsservercore`)](https://hub.docker.com/r/microsoft/windowsservercore/). As such, it only works in places which that image does, such as Windows 10 Professional/Enterprise (Anniversary Edition) or Windows Server 2016.
@@ -233,6 +241,14 @@ For information about how to get Docker running on Windows, please see the relev
 
 -	[Windows Server Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_server)
 -	[Windows 10 Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)
+
+## `openjdk:<version>-alpine`
+
+This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+
+The OpenJDK port for Alpine is not in a supported release by OpenJDK, since it is not in the mainline code base. It is only available as early access builds of [OpenJDK Project Portola](http://openjdk.java.net/projects/portola). See also [this comment](https://github.com/docker-library/openjdk/pull/235#issuecomment-424599754). So this image follows what is available from the OpenJDK project's maintainers.
+
+What this means is that Alpine based images are only released for early access release versions of OpenJDK. Once a particular release becomes a "General-Availability" release, the Alpine version is dropped from the "Supported Tags"; they are still available to pull, but will no longer be updated.
 
 # License
 
