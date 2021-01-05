@@ -198,7 +198,7 @@ $ docker exec $caddy_container_id -w /etc/caddy caddy reload
 
 ### Docker Compose example
 
-If you prefer to use `docker-compoose` to run your stack, here's a sample service definition.
+If you prefer to use `docker-compose` to run your stack, here's a sample service definition.
 
 ```yaml
 version: "3.7"
