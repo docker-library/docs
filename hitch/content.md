@@ -40,9 +40,9 @@ docker run hitch "--backend=[varnish]:8443"
 
 ## Setting the certificate
 
-The Hitch Docker image comes with a self-signed certificate that is stored in `/etc/hitch/certs/default`. 
+The Hitch Docker image comes with a self-signed certificate that is stored in `/etc/hitch/certs/default`.
 
-This certificate is automatically created during *Hitch* package install, and is a self-signed certificate using 2048-bit RSA-encrypted cipher. It is set up for the `localhost` hostname, with an expiration date 30 years in the future. 
+This certificate is automatically created during *Hitch* package install, and is a self-signed certificate using 2048-bit RSA-encrypted cipher. It is set up for the `localhost` hostname, with an expiration date 30 years in the future.
 
 This certificate is only suited for testing. Using a bind mount, you can override the value of the certificate and use your own certificate, which is advisable.
 
