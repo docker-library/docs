@@ -15,10 +15,12 @@ The intent is also to maintain high compatibility with MySQL, ensuring a "drop-i
 Starting a MariaDB instance is simple:
 
 ```console
-$ docker run --name some-%%REPO%% -e MYSQL_ROOT_PASSWORD=my-secret-pw -d %%IMAGE%%:tag
+# Create the network
+$ docker network create some-network
+$ docker run --net some-network --name some-%%REPO%% -e MYSQL_ROOT_PASSWORD=my-secret-pw -d %%IMAGE%%:tag
 ```
 
-... where `some-%%REPO%%` is the name you want to assign to your container, `my-secret-pw` is the password to be set for the MySQL root user and `tag` is the tag specifying the MySQL version you want. See the list above for relevant tags.
+...  where `some-network` is newly created network (other than `bridge` as the default network), where `some-%%REPO%%` is the name you want to assign to your container, `my-secret-pw` is the password to be set for the MySQL root user and `tag` is the tag specifying the MySQL version you want. See the list above for relevant tags.
 
 ## Connect to MariaDB from the MySQL command line client
 
