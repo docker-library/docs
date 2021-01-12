@@ -24,11 +24,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.0.4`, `2.0`, `2`](https://github.com/eclipse/mosquitto/blob/faeb9e9122c35d24bc6667a48275e37b5732f54a/docker/2.0/Dockerfile)
--	[`2.0.4-openssl`, `2.0-openssl`, `2-openssl`](https://github.com/eclipse/mosquitto/blob/faeb9e9122c35d24bc6667a48275e37b5732f54a/docker/2.0-openssl/Dockerfile)
--	[`1.6.12`, `1.6`, `latest`](https://github.com/eclipse/mosquitto/blob/faeb9e9122c35d24bc6667a48275e37b5732f54a/docker/1.6/Dockerfile)
--	[`1.6.12-openssl`, `1.6-openssl`, `openssl`](https://github.com/eclipse/mosquitto/blob/faeb9e9122c35d24bc6667a48275e37b5732f54a/docker/1.6-openssl/Dockerfile)
--	[`1.5.10`, `1.5`](https://github.com/eclipse/mosquitto/blob/faeb9e9122c35d24bc6667a48275e37b5732f54a/docker/1.5/Dockerfile)
+-	[`2.0.5`, `2.0`, `2`](https://github.com/eclipse/mosquitto/blob/e78c04de9bd64b622d1e18f459be933968a20a91/docker/2.0/Dockerfile)
+-	[`2.0.5-openssl`, `2.0-openssl`, `2-openssl`](https://github.com/eclipse/mosquitto/blob/e78c04de9bd64b622d1e18f459be933968a20a91/docker/2.0-openssl/Dockerfile)
+-	[`1.6.12`, `1.6`, `latest`](https://github.com/eclipse/mosquitto/blob/e78c04de9bd64b622d1e18f459be933968a20a91/docker/1.6/Dockerfile)
+-	[`1.6.12-openssl`, `1.6-openssl`, `openssl`](https://github.com/eclipse/mosquitto/blob/e78c04de9bd64b622d1e18f459be933968a20a91/docker/1.6-openssl/Dockerfile)
+-	[`1.5.10`, `1.5`](https://github.com/eclipse/mosquitto/blob/e78c04de9bd64b622d1e18f459be933968a20a91/docker/1.5/Dockerfile)
 
 # Quick reference (cont.)
 

@@ -26,8 +26,8 @@ WARNING:
 
 -	[`v2.4.0-rc1-windowsservercore-1809`, `2.4.0-rc1-windowsservercore-1809`, `v2.4-windowsservercore-1809`, `2.4-windowsservercore-1809`, `livarot-windowsservercore-1809`](https://github.com/traefik/traefik-library-image/blob/e3a11c7578f6cbc690f64a964f794f604840a4bf/windows/1809/Dockerfile)
 -	[`v2.4.0-rc1`, `2.4.0-rc1`, `v2.4`, `2.4`, `livarot`](https://github.com/traefik/traefik-library-image/blob/e3a11c7578f6cbc690f64a964f794f604840a4bf/alpine/Dockerfile)
--	[`v2.3.6-windowsservercore-1809`, `2.3.6-windowsservercore-1809`, `v2.3-windowsservercore-1809`, `2.3-windowsservercore-1809`, `picodon-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/traefik/traefik-library-image/blob/52997b0fdb3c358e0eb73ff1f999e0359e15909e/windows/1809/Dockerfile)
--	[`v2.3.6`, `2.3.6`, `v2.3`, `2.3`, `picodon`, `latest`](https://github.com/traefik/traefik-library-image/blob/52997b0fdb3c358e0eb73ff1f999e0359e15909e/alpine/Dockerfile)
+-	[`v2.3.7-windowsservercore-1809`, `2.3.7-windowsservercore-1809`, `v2.3-windowsservercore-1809`, `2.3-windowsservercore-1809`, `picodon-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/traefik/traefik-library-image/blob/5f8653509193f68c10ac12d5ebfe8657d7cd2bf7/windows/1809/Dockerfile)
+-	[`v2.3.7`, `2.3.7`, `v2.3`, `2.3`, `picodon`, `latest`](https://github.com/traefik/traefik-library-image/blob/5f8653509193f68c10ac12d5ebfe8657d7cd2bf7/alpine/Dockerfile)
 -	[`v1.7.26-windowsservercore-1809`, `1.7.26-windowsservercore-1809`, `v1.7-windowsservercore-1809`, `1.7-windowsservercore-1809`, `maroilles-windowsservercore-1809`](https://github.com/containous/traefik-library-image/blob/b8acd6164a229d1a351ad635b471bbdd6d35e687/windows/1809/Dockerfile)
 -	[`v1.7.26-alpine`, `1.7.26-alpine`, `v1.7-alpine`, `1.7-alpine`, `maroilles-alpine`](https://github.com/containous/traefik-library-image/blob/b8acd6164a229d1a351ad635b471bbdd6d35e687/alpine/Dockerfile)
 -	[`v1.7.26`, `1.7.26`, `v1.7`, `1.7`, `maroilles`](https://github.com/containous/traefik-library-image/blob/b8acd6164a229d1a351ad635b471bbdd6d35e687/scratch/Dockerfile)

@@ -28,22 +28,22 @@ WARNING:
 
 ## Simple Tags
 
--	[`0.19.0-alpine3.12`, `0.19-alpine3.12`, `alpine3.12`, `0.19.0-alpine`, `0.19-alpine`, `alpine`](https://github.com/nats-io/nats-streaming-docker/blob/a66231ba810d884b8548fa74ca04e79173216aeb/0.19.0/alpine3.12/Dockerfile)
--	[`0.19.0-scratch`, `0.19-scratch`, `scratch`, `0.19.0-linux`, `0.19-linux`, `linux`](https://github.com/nats-io/nats-streaming-docker/blob/a66231ba810d884b8548fa74ca04e79173216aeb/0.19.0/scratch/Dockerfile)
--	[`0.19.0-windowsservercore-1809`, `0.19-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/nats-io/nats-streaming-docker/blob/a66231ba810d884b8548fa74ca04e79173216aeb/0.19.0/windowsservercore-1809/Dockerfile)
--	[`0.19.0-nanoserver-1809`, `0.19-nanoserver-1809`, `nanoserver-1809`](https://github.com/nats-io/nats-streaming-docker/blob/a66231ba810d884b8548fa74ca04e79173216aeb/0.19.0/nanoserver-1809/Dockerfile)
--	[`0.19.0-windowsservercore-ltsc2016`, `0.19-windowsservercore-ltsc2016`, `windowsservercore-ltsc2016`](https://github.com/nats-io/nats-streaming-docker/blob/a66231ba810d884b8548fa74ca04e79173216aeb/0.19.0/windowsservercore-ltsc2016/Dockerfile)
+-	[`0.20.0-alpine3.12`, `0.20-alpine3.12`, `alpine3.12`, `0.20.0-alpine`, `0.20-alpine`, `alpine`](https://github.com/nats-io/nats-streaming-docker/blob/70a87b9e248c9a04e9b6c320164522217b7a5269/0.20.0/alpine3.12/Dockerfile)
+-	[`0.20.0-scratch`, `0.20-scratch`, `scratch`, `0.20.0-linux`, `0.20-linux`, `linux`](https://github.com/nats-io/nats-streaming-docker/blob/70a87b9e248c9a04e9b6c320164522217b7a5269/0.20.0/scratch/Dockerfile)
+-	[`0.20.0-windowsservercore-1809`, `0.20-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/nats-io/nats-streaming-docker/blob/70a87b9e248c9a04e9b6c320164522217b7a5269/0.20.0/windowsservercore-1809/Dockerfile)
+-	[`0.20.0-nanoserver-1809`, `0.20-nanoserver-1809`, `nanoserver-1809`](https://github.com/nats-io/nats-streaming-docker/blob/70a87b9e248c9a04e9b6c320164522217b7a5269/0.20.0/nanoserver-1809/Dockerfile)
+-	[`0.20.0-windowsservercore-ltsc2016`, `0.20-windowsservercore-ltsc2016`, `windowsservercore-ltsc2016`](https://github.com/nats-io/nats-streaming-docker/blob/70a87b9e248c9a04e9b6c320164522217b7a5269/0.20.0/windowsservercore-ltsc2016/Dockerfile)
 
 ## Shared Tags
 
--	`0.19.0`, `0.19`, `latest`:
-	-	[`0.19.0-scratch`](https://github.com/nats-io/nats-streaming-docker/blob/a66231ba810d884b8548fa74ca04e79173216aeb/0.19.0/scratch/Dockerfile)
-	-	[`0.19.0-nanoserver-1809`](https://github.com/nats-io/nats-streaming-docker/blob/a66231ba810d884b8548fa74ca04e79173216aeb/0.19.0/nanoserver-1809/Dockerfile)
--	`0.19.0-windowsservercore`, `0.19-windowsservercore`, `windowsservercore`:
-	-	[`0.19.0-windowsservercore-1809`](https://github.com/nats-io/nats-streaming-docker/blob/a66231ba810d884b8548fa74ca04e79173216aeb/0.19.0/windowsservercore-1809/Dockerfile)
-	-	[`0.19.0-windowsservercore-ltsc2016`](https://github.com/nats-io/nats-streaming-docker/blob/a66231ba810d884b8548fa74ca04e79173216aeb/0.19.0/windowsservercore-ltsc2016/Dockerfile)
--	`0.19.0-nanoserver`, `0.19-nanoserver`, `nanoserver`:
-	-	[`0.19.0-nanoserver-1809`](https://github.com/nats-io/nats-streaming-docker/blob/a66231ba810d884b8548fa74ca04e79173216aeb/0.19.0/nanoserver-1809/Dockerfile)
+-	`0.20.0`, `0.20`, `latest`:
+	-	[`0.20.0-scratch`](https://github.com/nats-io/nats-streaming-docker/blob/70a87b9e248c9a04e9b6c320164522217b7a5269/0.20.0/scratch/Dockerfile)
+	-	[`0.20.0-nanoserver-1809`](https://github.com/nats-io/nats-streaming-docker/blob/70a87b9e248c9a04e9b6c320164522217b7a5269/0.20.0/nanoserver-1809/Dockerfile)
+-	`0.20.0-windowsservercore`, `0.20-windowsservercore`, `windowsservercore`:
+	-	[`0.20.0-windowsservercore-1809`](https://github.com/nats-io/nats-streaming-docker/blob/70a87b9e248c9a04e9b6c320164522217b7a5269/0.20.0/windowsservercore-1809/Dockerfile)
+	-	[`0.20.0-windowsservercore-ltsc2016`](https://github.com/nats-io/nats-streaming-docker/blob/70a87b9e248c9a04e9b6c320164522217b7a5269/0.20.0/windowsservercore-ltsc2016/Dockerfile)
+-	`0.20.0-nanoserver`, `0.20-nanoserver`, `nanoserver`:
+	-	[`0.20.0-nanoserver-1809`](https://github.com/nats-io/nats-streaming-docker/blob/70a87b9e248c9a04e9b6c320164522217b7a5269/0.20.0/nanoserver-1809/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -132,29 +132,29 @@ $ docker run -d -p 4222:4222 -p 8222:8222 nats-streaming
 Output that you would get if you had started with `-ti` instead of `d` (for daemon):
 
 ```bash
-[1] 2020/02/11 19:45:55.379789 [INF] STREAM: Starting nats-streaming-server[test-cluster] version 0.17.0
-[1] 2020/02/11 19:45:55.379864 [INF] STREAM: ServerID: oe3fSgSCIfkPnbGvQch6k9
-[1] 2020/02/11 19:45:55.379867 [INF] STREAM: Go version: go1.13.7
-[1] 2020/02/11 19:45:55.379869 [INF] STREAM: Git commit: [f4b7190]
-[1] 2020/02/11 19:45:55.380454 [INF] Starting nats-server version 2.1.4
-[1] 2020/02/11 19:45:55.380461 [INF] Git commit [fb009af]
-[1] 2020/02/11 19:45:55.380619 [INF] Starting http monitor on 0.0.0.0:8222
-[1] 2020/02/11 19:45:55.380659 [INF] Listening for client connections on 0.0.0.0:4222
-[1] 2020/02/11 19:45:55.380662 [INF] Server id is NCIJ5WZMDXD3SRQFXAZNMO4C4BMEKVTZA33WLG4VPP7LRE37KIB5D4FX
-[1] 2020/02/11 19:45:55.380664 [INF] Server is ready
-[1] 2020/02/11 19:45:55.407105 [INF] STREAM: Recovering the state...
-[1] 2020/02/11 19:45:55.407113 [INF] STREAM: No recovered state
-[1] 2020/02/11 19:45:55.662310 [INF] STREAM: Message store is MEMORY
-[1] 2020/02/11 19:45:55.662347 [INF] STREAM: ---------- Store Limits ----------
-[1] 2020/02/11 19:45:55.662351 [INF] STREAM: Channels:                  100 *
-[1] 2020/02/11 19:45:55.662355 [INF] STREAM: --------- Channels Limits --------
-[1] 2020/02/11 19:45:55.662358 [INF] STREAM:   Subscriptions:          1000 *
-[1] 2020/02/11 19:45:55.662361 [INF] STREAM:   Messages     :       1000000 *
-[1] 2020/02/11 19:45:55.662364 [INF] STREAM:   Bytes        :     976.56 MB *
-[1] 2020/02/11 19:45:55.662367 [INF] STREAM:   Age          :     unlimited *
-[1] 2020/02/11 19:45:55.662370 [INF] STREAM:   Inactivity   :     unlimited *
-[1] 2020/02/11 19:45:55.662374 [INF] STREAM: ----------------------------------
-[1] 2020/02/11 19:45:55.662377 [INF] STREAM: Streaming Server is ready
+[1] 2021/01/09 02:33:27.598398 [INF] STREAM: Starting nats-streaming-server[test-cluster] version 0.20.0
+[1] 2021/01/09 02:33:27.598450 [INF] STREAM: ServerID: wle5yqWHfM3u7pyr2cZxMl
+[1] 2021/01/09 02:33:27.598453 [INF] STREAM: Go version: go1.15.6
+[1] 2021/01/09 02:33:27.598455 [INF] STREAM: Git commit: [f158dba]
+[1] 2021/01/09 02:33:27.599262 [INF] Starting nats-server version 2.1.9
+[1] 2021/01/09 02:33:27.599282 [INF] Git commit [7c76626]
+[1] 2021/01/09 02:33:27.599633 [INF] Starting http monitor on 0.0.0.0:8222
+[1] 2021/01/09 02:33:27.599780 [INF] Listening for client connections on 0.0.0.0:4222
+[1] 2021/01/09 02:33:27.599887 [INF] Server id is NBCYTAYHQW2ZJWZ2MWOZ4OR5TXX7SIOW76NBWFPQVY4LENFF4Z6BBDWV
+[1] 2021/01/09 02:33:27.599890 [INF] Server is ready
+[1] 2021/01/09 02:33:27.628282 [INF] STREAM: Recovering the state...
+[1] 2021/01/09 02:33:27.628410 [INF] STREAM: No recovered state
+[1] 2021/01/09 02:33:27.880289 [INF] STREAM: Message store is MEMORY
+[1] 2021/01/09 02:33:27.880337 [INF] STREAM: ---------- Store Limits ----------
+[1] 2021/01/09 02:33:27.880343 [INF] STREAM: Channels:                  100 *
+[1] 2021/01/09 02:33:27.880348 [INF] STREAM: --------- Channels Limits --------
+[1] 2021/01/09 02:33:27.880352 [INF] STREAM:   Subscriptions:          1000 *
+[1] 2021/01/09 02:33:27.880356 [INF] STREAM:   Messages     :       1000000 *
+[1] 2021/01/09 02:33:27.880360 [INF] STREAM:   Bytes        :     976.56 MB *
+[1] 2021/01/09 02:33:27.880431 [INF] STREAM:   Age          :     unlimited *
+[1] 2021/01/09 02:33:27.880616 [INF] STREAM:   Inactivity   :     unlimited *
+[1] 2021/01/09 02:33:27.880646 [INF] STREAM: ----------------------------------
+[1] 2021/01/09 02:33:27.880651 [INF] STREAM: Streaming Server is ready
 ```
 
 To use a file based store instead, you would run:
@@ -162,29 +162,29 @@ To use a file based store instead, you would run:
 ```bash
 $ docker run -d -p 4222:4222 -p 8222:8222 nats-streaming -store file -dir datastore
 
-[1] 2020/02/11 19:46:24.891825 [INF] STREAM: Starting nats-streaming-server[test-cluster] version 0.17.0
-[1] 2020/02/11 19:46:24.891863 [INF] STREAM: ServerID: y2zpmpnNLbnnLX4RGpW4HT
-[1] 2020/02/11 19:46:24.891866 [INF] STREAM: Go version: go1.13.7
-[1] 2020/02/11 19:46:24.891868 [INF] STREAM: Git commit: [f4b7190]
-[1] 2020/02/11 19:46:24.892633 [INF] Starting nats-server version 2.1.4
-[1] 2020/02/11 19:46:24.892653 [INF] Git commit [fb009af]
-[1] 2020/02/11 19:46:24.892837 [INF] Listening for client connections on 0.0.0.0:4222
-[1] 2020/02/11 19:46:24.892857 [INF] Server id is NAB5BC4I4DY7UQ3NJVRYVSZ66SWMWQYCHMMMVO4KZDZU3WUDOBQZYH52
-[1] 2020/02/11 19:46:24.892860 [INF] Server is ready
-[1] 2020/02/11 19:46:24.919546 [INF] STREAM: Recovering the state...
-[1] 2020/02/11 19:46:24.919685 [INF] STREAM: No recovered state
-[1] 2020/02/11 19:46:25.170492 [INF] STREAM: Message store is FILE
-[1] 2020/02/11 19:46:25.170536 [INF] STREAM: Store location: datastore
-[1] 2020/02/11 19:46:25.170563 [INF] STREAM: ---------- Store Limits ----------
-[1] 2020/02/11 19:46:25.170602 [INF] STREAM: Channels:                  100 *
-[1] 2020/02/11 19:46:25.170608 [INF] STREAM: --------- Channels Limits --------
-[1] 2020/02/11 19:46:25.170611 [INF] STREAM:   Subscriptions:          1000 *
-[1] 2020/02/11 19:46:25.170614 [INF] STREAM:   Messages     :       1000000 *
-[1] 2020/02/11 19:46:25.170618 [INF] STREAM:   Bytes        :     976.56 MB *
-[1] 2020/02/11 19:46:25.170621 [INF] STREAM:   Age          :     unlimited *
-[1] 2020/02/11 19:46:25.170624 [INF] STREAM:   Inactivity   :     unlimited *
-[1] 2020/02/11 19:46:25.170627 [INF] STREAM: ----------------------------------
-[1] 2020/02/11 19:46:25.170630 [INF] STREAM: Streaming Server is ready
+[1] 2021/01/09 02:33:50.099413 [INF] STREAM: Starting nats-streaming-server[test-cluster] version 0.20.0
+[1] 2021/01/09 02:33:50.099559 [INF] STREAM: ServerID: ntGF2a7jppxgD432QR8srZ
+[1] 2021/01/09 02:33:50.099906 [INF] STREAM: Go version: go1.15.6
+[1] 2021/01/09 02:33:50.100048 [INF] STREAM: Git commit: [f158dba]
+[1] 2021/01/09 02:33:50.101328 [INF] Starting nats-server version 2.1.9
+[1] 2021/01/09 02:33:50.101387 [INF] Git commit [7c76626]
+[1] 2021/01/09 02:33:50.101635 [INF] Listening for client connections on 0.0.0.0:4222
+[1] 2021/01/09 02:33:50.101656 [INF] Server id is NBF5UTWHD66QHACRHGLQRK4F5UJ22UTGMBX643ZHDC6A3J5DWLV5FMML
+[1] 2021/01/09 02:33:50.101659 [INF] Server is ready
+[1] 2021/01/09 02:33:50.127998 [INF] STREAM: Recovering the state...
+[1] 2021/01/09 02:33:50.128115 [INF] STREAM: No recovered state
+[1] 2021/01/09 02:33:50.378689 [INF] STREAM: Message store is FILE
+[1] 2021/01/09 02:33:50.378699 [INF] STREAM: Store location: datastore
+[1] 2021/01/09 02:33:50.378713 [INF] STREAM: ---------- Store Limits ----------
+[1] 2021/01/09 02:33:50.378730 [INF] STREAM: Channels:                  100 *
+[1] 2021/01/09 02:33:50.378733 [INF] STREAM: --------- Channels Limits --------
+[1] 2021/01/09 02:33:50.378734 [INF] STREAM:   Subscriptions:          1000 *
+[1] 2021/01/09 02:33:50.378735 [INF] STREAM:   Messages     :       1000000 *
+[1] 2021/01/09 02:33:50.378736 [INF] STREAM:   Bytes        :     976.56 MB *
+[1] 2021/01/09 02:33:50.378737 [INF] STREAM:   Age          :     unlimited *
+[1] 2021/01/09 02:33:50.378738 [INF] STREAM:   Inactivity   :     unlimited *
+[1] 2021/01/09 02:33:50.378740 [INF] STREAM: ----------------------------------
+[1] 2021/01/09 02:33:50.378741 [INF] STREAM: Streaming Server is ready
 ```
 
 You can also connect to a remote NATS Server running in a docker image. First, run NATS Server:
@@ -198,24 +198,24 @@ Now, start the Streaming server and link it to the above docker image:
 ```bash
 $ docker run -d --link nats-main nats-streaming -store file -dir datastore -ns nats://nats-main:4222
 
-[1] 2020/02/11 19:46:40.206660 [INF] STREAM: Starting nats-streaming-server[test-cluster] version 0.17.0
-[1] 2020/02/11 19:46:40.206699 [INF] STREAM: ServerID: bon7pyyeNH4ClntI1fCJos
-[1] 2020/02/11 19:46:40.206702 [INF] STREAM: Go version: go1.13.7
-[1] 2020/02/11 19:46:40.206704 [INF] STREAM: Git commit: [f4b7190]
-[1] 2020/02/11 19:46:40.233833 [INF] STREAM: Recovering the state...
-[1] 2020/02/11 19:46:40.233992 [INF] STREAM: No recovered state
-[1] 2020/02/11 19:46:40.487836 [INF] STREAM: Message store is FILE
-[1] 2020/02/11 19:46:40.487845 [INF] STREAM: Store location: datastore
-[1] 2020/02/11 19:46:40.487884 [INF] STREAM: ---------- Store Limits ----------
-[1] 2020/02/11 19:46:40.487963 [INF] STREAM: Channels:                  100 *
-[1] 2020/02/11 19:46:40.487966 [INF] STREAM: --------- Channels Limits --------
-[1] 2020/02/11 19:46:40.487968 [INF] STREAM:   Subscriptions:          1000 *
-[1] 2020/02/11 19:46:40.487993 [INF] STREAM:   Messages     :       1000000 *
-[1] 2020/02/11 19:46:40.487995 [INF] STREAM:   Bytes        :     976.56 MB *
-[1] 2020/02/11 19:46:40.488023 [INF] STREAM:   Age          :     unlimited *
-[1] 2020/02/11 19:46:40.488025 [INF] STREAM:   Inactivity   :     unlimited *
-[1] 2020/02/11 19:46:40.488027 [INF] STREAM: ----------------------------------
-[1] 2020/02/11 19:46:40.488029 [INF] STREAM: Streaming Server is ready
+[1] 2021/01/09 02:34:07.768444 [INF] STREAM: Starting nats-streaming-server[test-cluster] version 0.20.0
+[1] 2021/01/09 02:34:07.768481 [INF] STREAM: ServerID: Fiubmg5F21FK2J6YwpJ1lP
+[1] 2021/01/09 02:34:07.768483 [INF] STREAM: Go version: go1.15.6
+[1] 2021/01/09 02:34:07.768485 [INF] STREAM: Git commit: [f158dba]
+[1] 2021/01/09 02:34:07.796117 [INF] STREAM: Recovering the state...
+[1] 2021/01/09 02:34:07.796247 [INF] STREAM: No recovered state
+[1] 2021/01/09 02:34:08.046945 [INF] STREAM: Message store is FILE
+[1] 2021/01/09 02:34:08.047008 [INF] STREAM: Store location: datastore
+[1] 2021/01/09 02:34:08.047076 [INF] STREAM: ---------- Store Limits ----------
+[1] 2021/01/09 02:34:08.047111 [INF] STREAM: Channels:                  100 *
+[1] 2021/01/09 02:34:08.047130 [INF] STREAM: --------- Channels Limits --------
+[1] 2021/01/09 02:34:08.047143 [INF] STREAM:   Subscriptions:          1000 *
+[1] 2021/01/09 02:34:08.047155 [INF] STREAM:   Messages     :       1000000 *
+[1] 2021/01/09 02:34:08.047221 [INF] STREAM:   Bytes        :     976.56 MB *
+[1] 2021/01/09 02:34:08.047226 [INF] STREAM:   Age          :     unlimited *
+[1] 2021/01/09 02:34:08.047231 [INF] STREAM:   Inactivity   :     unlimited *
+[1] 2021/01/09 02:34:08.047235 [INF] STREAM: ----------------------------------
+[1] 2021/01/09 02:34:08.047239 [INF] STREAM: Streaming Server is ready
 ```
 
 Notice that the output shows that the NATS Server was not started, as opposed to the first output.
@@ -239,22 +239,24 @@ Streaming Server Options:
     -hbt, --hb_timeout <duration>        How long server waits for a heartbeat response
     -hbf, --hb_fail_count <int>          Number of failed heartbeats before server closes the client connection
           --ft_group <string>            Name of the FT Group. A group can be 2 or more servers with a single active server and all sharing the same datastore
-    -sl,  --signal <signal>[=<pid>]      Send signal to nats-streaming-server process (stop, quit, reopen)
+    -sl,  --signal <signal>[=<pid>]      Send signal to nats-streaming-server process (stop, quit, reopen, reload - only for embedded NATS Server)
           --encrypt <bool>               Specify if server should use encryption at rest
           --encryption_cipher <string>   Cipher to use for encryption. Currently support AES and CHAHA (ChaChaPoly). Defaults to AES
           --encryption_key <string>      Encryption Key. It is recommended to specify it through the NATS_STREAMING_ENCRYPTION_KEY environment variable instead
-    
+          --replace_durable <bool>       Replace the existing durable subscription instead of reporting a duplicate durable error
+
 Streaming Server Clustering Options:
-    --clustered <bool>                   Run the server in a clustered configuration (default: false)
-    --cluster_node_id <string>           ID of the node within the cluster if there is no stored ID (default: random UUID)
-    --cluster_bootstrap <bool>           Bootstrap the cluster if there is no existing state by electing self as leader (default: false)
-    --cluster_peers <string, ...>        Comma separated list of cluster peer node IDs to bootstrap cluster state
-    --cluster_log_path <string>          Directory to store log replication data
-    --cluster_log_cache_size <int>       Number of log entries to cache in memory to reduce disk IO (default: 512)
-    --cluster_log_snapshots <int>        Number of log snapshots to retain (default: 2)
-    --cluster_trailing_logs <int>        Number of log entries to leave after a snapshot and compaction
-    --cluster_sync <bool>                Do a file sync after every write to the replication log and message store
-    --cluster_raft_logging <bool>        Enable logging from the Raft library (disabled by default)
+    --clustered <bool>                     Run the server in a clustered configuration (default: false)
+    --cluster_node_id <string>             ID of the node within the cluster if there is no stored ID (default: random UUID)
+    --cluster_bootstrap <bool>             Bootstrap the cluster if there is no existing state by electing self as leader (default: false)
+    --cluster_peers <string, ...>          Comma separated list of cluster peer node IDs to bootstrap cluster state
+    --cluster_log_path <string>            Directory to store log replication data
+    --cluster_log_cache_size <int>         Number of log entries to cache in memory to reduce disk IO (default: 512)
+    --cluster_log_snapshots <int>          Number of log snapshots to retain (default: 2)
+    --cluster_trailing_logs <int>          Number of log entries to leave after a snapshot and compaction
+    --cluster_sync <bool>                  Do a file sync after every write to the replication log and message store
+    --cluster_raft_logging <bool>          Enable logging from the Raft library (disabled by default)
+    --cluster_allow_add_remove_node <bool> Enable the ability to send NATS requests to the leader to add/remove cluster nodes
 
 Streaming Server File Store Options:
     --file_compact_enabled <bool>        Enable file compaction
@@ -280,6 +282,7 @@ Streaming Server SQL Store Options:
     --sql_source <string>            Datasource used when opening an SQL connection to the database
     --sql_no_caching <bool>          Enable/Disable caching for improved performance
     --sql_max_open_conns <int>       Maximum number of opened connections to the database
+    --sql_bulk_insert_limit <int>    Maximum number of messages stored with a single SQL "INSERT" statement
 
 Streaming Server TLS Options:
     -secure <bool>                   Use a TLS connection to the NATS server without
@@ -306,7 +309,7 @@ Embedded NATS Server Options:
 Logging Options:
     -l, --log <string>               File to redirect log output
     -T, --logtime=<bool>             Timestamp log entries (default: true)
-    -s, --syslog <string>            Enable syslog as log method
+    -s, --syslog <bool>              Enable syslog as log method
     -r, --remote_syslog <string>     Syslog server addr (udp://localhost:514)
     -D, --debug=<bool>               Enable debugging output
     -V, --trace=<bool>               Trace the raw protocol
