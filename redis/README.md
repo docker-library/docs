@@ -24,10 +24,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.2-rc1`, `6.2-rc`, `rc`, `6.2-rc1-buster`, `6.2-rc-buster`, `rc-buster`](https://github.com/docker-library/redis/blob/4ef411f3182868638f538798966a48b585ecce24/6.2-rc/Dockerfile)
--	[`6.2-rc1-alpine`, `6.2-rc-alpine`, `rc-alpine`, `6.2-rc1-alpine3.12`, `6.2-rc-alpine3.12`, `rc-alpine3.12`](https://github.com/docker-library/redis/blob/4ef411f3182868638f538798966a48b585ecce24/6.2-rc/alpine/Dockerfile)
--	[`6.0.9`, `6.0`, `6`, `latest`, `6.0.9-buster`, `6.0-buster`, `6-buster`, `buster`](https://github.com/docker-library/redis/blob/7ccc22760cc9b659916678a52654be8f43757551/6.0/Dockerfile)
--	[`6.0.9-alpine`, `6.0-alpine`, `6-alpine`, `alpine`, `6.0.9-alpine3.12`, `6.0-alpine3.12`, `6-alpine3.12`, `alpine3.12`](https://github.com/docker-library/redis/blob/7ccc22760cc9b659916678a52654be8f43757551/6.0/alpine/Dockerfile)
+-	[`6.2-rc2`, `6.2-rc`, `rc`, `6.2-rc2-buster`, `6.2-rc-buster`, `rc-buster`](https://github.com/docker-library/redis/blob/f621fd1249e1e0fa86fb70ec735370979a94ab6f/6.2-rc/Dockerfile)
+-	[`6.2-rc2-alpine`, `6.2-rc-alpine`, `rc-alpine`, `6.2-rc2-alpine3.12`, `6.2-rc-alpine3.12`, `rc-alpine3.12`](https://github.com/docker-library/redis/blob/f621fd1249e1e0fa86fb70ec735370979a94ab6f/6.2-rc/alpine/Dockerfile)
+-	[`6.0.10`, `6.0`, `6`, `latest`, `6.0.10-buster`, `6.0-buster`, `6-buster`, `buster`](https://github.com/docker-library/redis/blob/f634377257f6a41eaded4fb57672260fea6369e1/6.0/Dockerfile)
+-	[`6.0.10-alpine`, `6.0-alpine`, `6-alpine`, `alpine`, `6.0.10-alpine3.12`, `6.0-alpine3.12`, `6-alpine3.12`, `alpine3.12`](https://github.com/docker-library/redis/blob/f634377257f6a41eaded4fb57672260fea6369e1/6.0/alpine/Dockerfile)
 -	[`5.0.10`, `5.0`, `5`, `5.0.10-buster`, `5.0-buster`, `5-buster`](https://github.com/docker-library/redis/blob/1779e83980f7cc0e197c649ba560306991e2e4c6/5.0/Dockerfile)
 -	[`5.0.10-32bit`, `5.0-32bit`, `5-32bit`, `5.0.10-32bit-buster`, `5.0-32bit-buster`, `5-32bit-buster`](https://github.com/docker-library/redis/blob/1779e83980f7cc0e197c649ba560306991e2e4c6/5.0/32bit/Dockerfile)
 -	[`5.0.10-alpine`, `5.0-alpine`, `5-alpine`, `5.0.10-alpine3.12`, `5.0-alpine3.12`, `5-alpine3.12`](https://github.com/docker-library/redis/blob/1779e83980f7cc0e197c649ba560306991e2e4c6/5.0/alpine/Dockerfile)
