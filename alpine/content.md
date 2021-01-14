@@ -27,3 +27,7 @@ ENTRYPOINT ["mysql"]
 ```
 
 This yields us a virtual image size of about 145MB image.
+
+## Compile Binary for Alpine
+
+If you're adding a pre-compiled binary, make sure that it's compiled against the musl libc toolchain, not glibc.
