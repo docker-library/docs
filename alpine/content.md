@@ -11,17 +11,17 @@
 Use like you would any other base image:
 
 ```dockerfile
-FROM %%IMAGE%%:3.7
-RUN apk add --no-cache mysql-client
+FROM %%IMAGE%%
+RUN apk add --no-cache mariadb-client
 ENTRYPOINT ["mysql"]
 ```
 
-This example has a virtual image size of only 36.8MB. Compare that to our good friend Ubuntu:
+This example has a virtual image size of only 40MB. Compare that to our good friend Ubuntu:
 
 ```dockerfile
-FROM ubuntu:18.04
+FROM ubuntu
 RUN apt-get update \
-    && apt-get install -y --no-install-recommends mysql-client \
+    && apt-get install -y --no-install-recommends mariadb-client \
     && rm -rf /var/lib/apt/lists/*
 ENTRYPOINT ["mysql"]
 ```
