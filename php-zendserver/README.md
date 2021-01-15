@@ -41,7 +41,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/php-zendserver`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fphp-zendserver)  
+	[official-images repo's `library/php-zendserver` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fphp-zendserver)  
 	[official-images repo's `library/php-zendserver` file](https://github.com/docker-library/official-images/blob/master/library/php-zendserver) ([history](https://github.com/docker-library/official-images/commits/master/library/php-zendserver))
 
 -	**Source of this description**:  

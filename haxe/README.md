@@ -125,7 +125,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/haxe`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fhaxe)  
+	[official-images repo's `library/haxe` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fhaxe)  
 	[official-images repo's `library/haxe` file](https://github.com/docker-library/official-images/blob/master/library/haxe) ([history](https://github.com/docker-library/official-images/commits/master/library/haxe))
 
 -	**Source of this description**:  

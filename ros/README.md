@@ -70,7 +70,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/ros`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fros)  
+	[official-images repo's `library/ros` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fros)  
 	[official-images repo's `library/ros` file](https://github.com/docker-library/official-images/blob/master/library/ros) ([history](https://github.com/docker-library/official-images/commits/master/library/ros))
 
 -	**Source of this description**:  

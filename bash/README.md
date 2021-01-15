@@ -49,7 +49,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/bash`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fbash)  
+	[official-images repo's `library/bash` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fbash)  
 	[official-images repo's `library/bash` file](https://github.com/docker-library/official-images/blob/master/library/bash) ([history](https://github.com/docker-library/official-images/commits/master/library/bash))
 
 -	**Source of this description**:  

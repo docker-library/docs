@@ -40,7 +40,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/logstash`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Flogstash)  
+	[official-images repo's `library/logstash` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Flogstash)  
 	[official-images repo's `library/logstash` file](https://github.com/docker-library/official-images/blob/master/library/logstash) ([history](https://github.com/docker-library/official-images/commits/master/library/logstash))
 
 -	**Source of this description**:  

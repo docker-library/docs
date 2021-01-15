@@ -39,7 +39,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/express-gateway`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fexpress-gateway)  
+	[official-images repo's `library/express-gateway` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fexpress-gateway)  
 	[official-images repo's `library/express-gateway` file](https://github.com/docker-library/official-images/blob/master/library/express-gateway) ([history](https://github.com/docker-library/official-images/commits/master/library/express-gateway))
 
 -	**Source of this description**:  

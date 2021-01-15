@@ -42,7 +42,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/haskell`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fhaskell)  
+	[official-images repo's `library/haskell` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fhaskell)  
 	[official-images repo's `library/haskell` file](https://github.com/docker-library/official-images/blob/master/library/haskell) ([history](https://github.com/docker-library/official-images/commits/master/library/haskell))
 
 -	**Source of this description**:  

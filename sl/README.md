@@ -39,7 +39,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/sl`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fsl)  
+	[official-images repo's `library/sl` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fsl)  
 	[official-images repo's `library/sl` file](https://github.com/docker-library/official-images/blob/master/library/sl) ([history](https://github.com/docker-library/official-images/commits/master/library/sl))
 
 -	**Source of this description**:  

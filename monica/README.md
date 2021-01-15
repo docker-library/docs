@@ -41,7 +41,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/monica`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmonica)  
+	[official-images repo's `library/monica` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fmonica)  
 	[official-images repo's `library/monica` file](https://github.com/docker-library/official-images/blob/master/library/monica) ([history](https://github.com/docker-library/official-images/commits/master/library/monica))
 
 -	**Source of this description**:  

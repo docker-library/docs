@@ -42,7 +42,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/plone`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fplone)  
+	[official-images repo's `library/plone` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fplone)  
 	[official-images repo's `library/plone` file](https://github.com/docker-library/official-images/blob/master/library/plone) ([history](https://github.com/docker-library/official-images/commits/master/library/plone))
 
 -	**Source of this description**:  

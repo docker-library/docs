@@ -39,7 +39,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/mongo-express`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmongo-express)  
+	[official-images repo's `library/mongo-express` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fmongo-express)  
 	[official-images repo's `library/mongo-express` file](https://github.com/docker-library/official-images/blob/master/library/mongo-express) ([history](https://github.com/docker-library/official-images/commits/master/library/mongo-express))
 
 -	**Source of this description**:  

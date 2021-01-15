@@ -46,7 +46,7 @@ See [docker-library/official-images#7130](https://github.com/docker-library/offi
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/crux`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fcrux)  
+	[official-images repo's `library/crux` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fcrux)  
 	[official-images repo's `library/crux` file](https://github.com/docker-library/official-images/blob/master/library/crux) ([history](https://github.com/docker-library/official-images/commits/master/library/crux))
 
 -	**Source of this description**:  

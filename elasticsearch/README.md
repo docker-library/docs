@@ -40,7 +40,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/elasticsearch`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Felasticsearch)  
+	[official-images repo's `library/elasticsearch` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Felasticsearch)  
 	[official-images repo's `library/elasticsearch` file](https://github.com/docker-library/official-images/blob/master/library/elasticsearch) ([history](https://github.com/docker-library/official-images/commits/master/library/elasticsearch))
 
 -	**Source of this description**:  

@@ -41,7 +41,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/mysql`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmysql)  
+	[official-images repo's `library/mysql` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fmysql)  
 	[official-images repo's `library/mysql` file](https://github.com/docker-library/official-images/blob/master/library/mysql) ([history](https://github.com/docker-library/official-images/commits/master/library/mysql))
 
 -	**Source of this description**:  

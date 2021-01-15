@@ -42,7 +42,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/aerospike`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Faerospike)  
+	[official-images repo's `library/aerospike` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Faerospike)  
 	[official-images repo's `library/aerospike` file](https://github.com/docker-library/official-images/blob/master/library/aerospike) ([history](https://github.com/docker-library/official-images/commits/master/library/aerospike))
 
 -	**Source of this description**:  

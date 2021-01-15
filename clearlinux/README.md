@@ -39,7 +39,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/clearlinux`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fclearlinux)  
+	[official-images repo's `library/clearlinux` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fclearlinux)  
 	[official-images repo's `library/clearlinux` file](https://github.com/docker-library/official-images/blob/master/library/clearlinux) ([history](https://github.com/docker-library/official-images/commits/master/library/clearlinux))
 
 -	**Source of this description**:  

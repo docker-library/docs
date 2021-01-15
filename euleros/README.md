@@ -42,7 +42,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/euleros`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Feuleros)  
+	[official-images repo's `library/euleros` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Feuleros)  
 	[official-images repo's `library/euleros` file](https://github.com/docker-library/official-images/blob/master/library/euleros) ([history](https://github.com/docker-library/official-images/commits/master/library/euleros))
 
 -	**Source of this description**:  

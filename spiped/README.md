@@ -40,7 +40,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/spiped`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fspiped)  
+	[official-images repo's `library/spiped` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fspiped)  
 	[official-images repo's `library/spiped` file](https://github.com/docker-library/official-images/blob/master/library/spiped) ([history](https://github.com/docker-library/official-images/commits/master/library/spiped))
 
 -	**Source of this description**:  

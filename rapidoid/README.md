@@ -45,7 +45,7 @@ As noted in [docker-library/official-images#4667 (comment)](https://github.com/d
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/rapidoid`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Frapidoid)  
+	[official-images repo's `library/rapidoid` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Frapidoid)  
 	[official-images repo's `library/rapidoid` file](https://github.com/docker-library/official-images/blob/master/library/rapidoid) ([history](https://github.com/docker-library/official-images/commits/master/library/rapidoid))
 
 -	**Source of this description**:  

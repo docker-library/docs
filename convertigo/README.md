@@ -39,7 +39,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/convertigo`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fconvertigo)  
+	[official-images repo's `library/convertigo` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fconvertigo)  
 	[official-images repo's `library/convertigo` file](https://github.com/docker-library/official-images/blob/master/library/convertigo) ([history](https://github.com/docker-library/official-images/commits/master/library/convertigo))
 
 -	**Source of this description**:  

@@ -79,7 +79,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/caddy`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fcaddy)  
+	[official-images repo's `library/caddy` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fcaddy)  
 	[official-images repo's `library/caddy` file](https://github.com/docker-library/official-images/blob/master/library/caddy) ([history](https://github.com/docker-library/official-images/commits/master/library/caddy))
 
 -	**Source of this description**:  

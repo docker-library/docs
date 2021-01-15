@@ -50,7 +50,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/postgres`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fpostgres)  
+	[official-images repo's `library/postgres` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fpostgres)  
 	[official-images repo's `library/postgres` file](https://github.com/docker-library/official-images/blob/master/library/postgres) ([history](https://github.com/docker-library/official-images/commits/master/library/postgres))
 
 -	**Source of this description**:  

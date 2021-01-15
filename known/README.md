@@ -39,7 +39,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/known`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fknown)  
+	[official-images repo's `library/known` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fknown)  
 	[official-images repo's `library/known` file](https://github.com/docker-library/official-images/blob/master/library/known) ([history](https://github.com/docker-library/official-images/commits/master/library/known))
 
 -	**Source of this description**:  

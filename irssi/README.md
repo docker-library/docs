@@ -40,7 +40,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/irssi`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Firssi)  
+	[official-images repo's `library/irssi` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Firssi)  
 	[official-images repo's `library/irssi` file](https://github.com/docker-library/official-images/blob/master/library/irssi) ([history](https://github.com/docker-library/official-images/commits/master/library/irssi))
 
 -	**Source of this description**:  

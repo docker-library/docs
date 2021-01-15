@@ -40,7 +40,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/rakudo-star`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Frakudo-star)  
+	[official-images repo's `library/rakudo-star` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Frakudo-star)  
 	[official-images repo's `library/rakudo-star` file](https://github.com/docker-library/official-images/blob/master/library/rakudo-star) ([history](https://github.com/docker-library/official-images/commits/master/library/rakudo-star))
 
 -	**Source of this description**:  

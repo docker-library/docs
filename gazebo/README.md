@@ -52,7 +52,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/gazebo`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fgazebo)  
+	[official-images repo's `library/gazebo` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fgazebo)  
 	[official-images repo's `library/gazebo` file](https://github.com/docker-library/official-images/blob/master/library/gazebo) ([history](https://github.com/docker-library/official-images/commits/master/library/gazebo))
 
 -	**Source of this description**:  

@@ -39,7 +39,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/jobber`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fjobber)  
+	[official-images repo's `library/jobber` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fjobber)  
 	[official-images repo's `library/jobber` file](https://github.com/docker-library/official-images/blob/master/library/jobber) ([history](https://github.com/docker-library/official-images/commits/master/library/jobber))
 
 -	**Source of this description**:  

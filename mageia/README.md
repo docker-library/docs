@@ -39,7 +39,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/mageia`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmageia)  
+	[official-images repo's `library/mageia` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fmageia)  
 	[official-images repo's `library/mageia` file](https://github.com/docker-library/official-images/blob/master/library/mageia) ([history](https://github.com/docker-library/official-images/commits/master/library/mageia))
 
 -	**Source of this description**:  

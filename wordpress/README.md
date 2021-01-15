@@ -52,7 +52,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/wordpress`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fwordpress)  
+	[official-images repo's `library/wordpress` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fwordpress)  
 	[official-images repo's `library/wordpress` file](https://github.com/docker-library/official-images/blob/master/library/wordpress) ([history](https://github.com/docker-library/official-images/commits/master/library/wordpress))
 
 -	**Source of this description**:  

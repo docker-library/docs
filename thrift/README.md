@@ -48,7 +48,7 @@ There is a useful discussion in [ahawkins/docker-thrift#12](https://github.com/a
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/thrift`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fthrift)  
+	[official-images repo's `library/thrift` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fthrift)  
 	[official-images repo's `library/thrift` file](https://github.com/docker-library/official-images/blob/master/library/thrift) ([history](https://github.com/docker-library/official-images/commits/master/library/thrift))
 
 -	**Source of this description**:  

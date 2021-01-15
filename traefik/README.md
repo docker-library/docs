@@ -45,7 +45,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/traefik`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Ftraefik)  
+	[official-images repo's `library/traefik` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Ftraefik)  
 	[official-images repo's `library/traefik` file](https://github.com/docker-library/official-images/blob/master/library/traefik) ([history](https://github.com/docker-library/official-images/commits/master/library/traefik))
 
 -	**Source of this description**:  

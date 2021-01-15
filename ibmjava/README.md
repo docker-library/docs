@@ -44,7 +44,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/ibmjava`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fibmjava)  
+	[official-images repo's `library/ibmjava` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fibmjava)  
 	[official-images repo's `library/ibmjava` file](https://github.com/docker-library/official-images/blob/master/library/ibmjava) ([history](https://github.com/docker-library/official-images/commits/master/library/ibmjava))
 
 -	**Source of this description**:  

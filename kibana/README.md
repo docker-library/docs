@@ -40,7 +40,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/kibana`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fkibana)  
+	[official-images repo's `library/kibana` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fkibana)  
 	[official-images repo's `library/kibana` file](https://github.com/docker-library/official-images/blob/master/library/kibana) ([history](https://github.com/docker-library/official-images/commits/master/library/kibana))
 
 -	**Source of this description**:  

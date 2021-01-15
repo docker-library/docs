@@ -40,7 +40,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/adminer`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fadminer)  
+	[official-images repo's `library/adminer` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fadminer)  
 	[official-images repo's `library/adminer` file](https://github.com/docker-library/official-images/blob/master/library/adminer) ([history](https://github.com/docker-library/official-images/commits/master/library/adminer))
 
 -	**Source of this description**:  

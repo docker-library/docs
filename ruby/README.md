@@ -57,7 +57,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/ruby`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fruby)  
+	[official-images repo's `library/ruby` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fruby)  
 	[official-images repo's `library/ruby` file](https://github.com/docker-library/official-images/blob/master/library/ruby) ([history](https://github.com/docker-library/official-images/commits/master/library/ruby))
 
 -	**Source of this description**:  

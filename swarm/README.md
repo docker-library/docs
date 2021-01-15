@@ -45,7 +45,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/swarm`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fswarm)  
+	[official-images repo's `library/swarm` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fswarm)  
 	[official-images repo's `library/swarm` file](https://github.com/docker-library/official-images/blob/master/library/swarm) ([history](https://github.com/docker-library/official-images/commits/master/library/swarm))
 
 -	**Source of this description**:  

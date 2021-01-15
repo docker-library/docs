@@ -41,7 +41,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/storm`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fstorm)  
+	[official-images repo's `library/storm` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fstorm)  
 	[official-images repo's `library/storm` file](https://github.com/docker-library/official-images/blob/master/library/storm) ([history](https://github.com/docker-library/official-images/commits/master/library/storm))
 
 -	**Source of this description**:  

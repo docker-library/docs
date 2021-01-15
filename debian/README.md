@@ -66,7 +66,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/debian`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fdebian)  
+	[official-images repo's `library/debian` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fdebian)  
 	[official-images repo's `library/debian` file](https://github.com/docker-library/official-images/blob/master/library/debian) ([history](https://github.com/docker-library/official-images/commits/master/library/debian))
 
 -	**Source of this description**:  

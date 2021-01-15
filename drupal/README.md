@@ -50,7 +50,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/drupal`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fdrupal)  
+	[official-images repo's `library/drupal` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fdrupal)  
 	[official-images repo's `library/drupal` file](https://github.com/docker-library/official-images/blob/master/library/drupal) ([history](https://github.com/docker-library/official-images/commits/master/library/drupal))
 
 -	**Source of this description**:  

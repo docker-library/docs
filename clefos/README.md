@@ -39,7 +39,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/clefos`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fclefos)  
+	[official-images repo's `library/clefos` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fclefos)  
 	[official-images repo's `library/clefos` file](https://github.com/docker-library/official-images/blob/master/library/clefos) ([history](https://github.com/docker-library/official-images/commits/master/library/clefos))
 
 -	**Source of this description**:  

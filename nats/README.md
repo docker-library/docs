@@ -58,7 +58,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/nats`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fnats)  
+	[official-images repo's `library/nats` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fnats)  
 	[official-images repo's `library/nats` file](https://github.com/docker-library/official-images/blob/master/library/nats) ([history](https://github.com/docker-library/official-images/commits/master/library/nats))
 
 -	**Source of this description**:  

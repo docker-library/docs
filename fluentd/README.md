@@ -40,7 +40,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/fluentd`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Ffluentd)  
+	[official-images repo's `library/fluentd` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Ffluentd)  
 	[official-images repo's `library/fluentd` file](https://github.com/docker-library/official-images/blob/master/library/fluentd) ([history](https://github.com/docker-library/official-images/commits/master/library/fluentd))
 
 -	**Source of this description**:  

@@ -40,7 +40,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/arangodb`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Farangodb)  
+	[official-images repo's `library/arangodb` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Farangodb)  
 	[official-images repo's `library/arangodb` file](https://github.com/docker-library/official-images/blob/master/library/arangodb) ([history](https://github.com/docker-library/official-images/commits/master/library/arangodb))
 
 -	**Source of this description**:  

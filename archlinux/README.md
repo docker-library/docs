@@ -40,7 +40,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/archlinux`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Farchlinux)  
+	[official-images repo's `library/archlinux` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Farchlinux)  
 	[official-images repo's `library/archlinux` file](https://github.com/docker-library/official-images/blob/master/library/archlinux) ([history](https://github.com/docker-library/official-images/commits/master/library/archlinux))
 
 -	**Source of this description**:  

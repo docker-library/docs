@@ -40,7 +40,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/notary`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fnotary)  
+	[official-images repo's `library/notary` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fnotary)  
 	[official-images repo's `library/notary` file](https://github.com/docker-library/official-images/blob/master/library/notary) ([history](https://github.com/docker-library/official-images/commits/master/library/notary))
 
 -	**Source of this description**:  

@@ -43,7 +43,7 @@ This image is deprecated in favor of the full installation explained over at [Se
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/sentry`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fsentry)  
+	[official-images repo's `library/sentry` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fsentry)  
 	[official-images repo's `library/sentry` file](https://github.com/docker-library/official-images/blob/master/library/sentry) ([history](https://github.com/docker-library/official-images/commits/master/library/sentry))
 
 -	**Source of this description**:  

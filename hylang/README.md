@@ -76,7 +76,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/hylang`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fhylang)  
+	[official-images repo's `library/hylang` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fhylang)  
 	[official-images repo's `library/hylang` file](https://github.com/docker-library/official-images/blob/master/library/hylang) ([history](https://github.com/docker-library/official-images/commits/master/library/hylang))
 
 -	**Source of this description**:  

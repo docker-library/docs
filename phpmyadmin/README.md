@@ -41,7 +41,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/phpmyadmin`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fphpmyadmin)  
+	[official-images repo's `library/phpmyadmin` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fphpmyadmin)  
 	[official-images repo's `library/phpmyadmin` file](https://github.com/docker-library/official-images/blob/master/library/phpmyadmin) ([history](https://github.com/docker-library/official-images/commits/master/library/phpmyadmin))
 
 -	**Source of this description**:  

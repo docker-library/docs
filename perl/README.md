@@ -62,7 +62,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/perl`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fperl)  
+	[official-images repo's `library/perl` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fperl)  
 	[official-images repo's `library/perl` file](https://github.com/docker-library/official-images/blob/master/library/perl) ([history](https://github.com/docker-library/official-images/commits/master/library/perl))
 
 -	**Source of this description**:  

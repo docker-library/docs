@@ -44,7 +44,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/redmine`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fredmine)  
+	[official-images repo's `library/redmine` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fredmine)  
 	[official-images repo's `library/redmine` file](https://github.com/docker-library/official-images/blob/master/library/redmine) ([history](https://github.com/docker-library/official-images/commits/master/library/redmine))
 
 -	**Source of this description**:  

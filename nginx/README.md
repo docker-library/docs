@@ -46,7 +46,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/nginx`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fnginx)  
+	[official-images repo's `library/nginx` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fnginx)  
 	[official-images repo's `library/nginx` file](https://github.com/docker-library/official-images/blob/master/library/nginx) ([history](https://github.com/docker-library/official-images/commits/master/library/nginx))
 
 -	**Source of this description**:  

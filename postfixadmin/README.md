@@ -41,7 +41,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/postfixadmin`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fpostfixadmin)  
+	[official-images repo's `library/postfixadmin` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fpostfixadmin)  
 	[official-images repo's `library/postfixadmin` file](https://github.com/docker-library/official-images/blob/master/library/postfixadmin) ([history](https://github.com/docker-library/official-images/commits/master/library/postfixadmin))
 
 -	**Source of this description**:  

@@ -40,7 +40,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/backdrop`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fbackdrop)  
+	[official-images repo's `library/backdrop` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fbackdrop)  
 	[official-images repo's `library/backdrop` file](https://github.com/docker-library/official-images/blob/master/library/backdrop) ([history](https://github.com/docker-library/official-images/commits/master/library/backdrop))
 
 -	**Source of this description**:  

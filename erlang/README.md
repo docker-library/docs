@@ -54,7 +54,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/erlang`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Ferlang)  
+	[official-images repo's `library/erlang` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Ferlang)  
 	[official-images repo's `library/erlang` file](https://github.com/docker-library/official-images/blob/master/library/erlang) ([history](https://github.com/docker-library/official-images/commits/master/library/erlang))
 
 -	**Source of this description**:  

@@ -42,7 +42,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/sonarqube`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fsonarqube)  
+	[official-images repo's `library/sonarqube` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fsonarqube)  
 	[official-images repo's `library/sonarqube` file](https://github.com/docker-library/official-images/blob/master/library/sonarqube) ([history](https://github.com/docker-library/official-images/commits/master/library/sonarqube))
 
 -	**Source of this description**:  

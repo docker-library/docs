@@ -54,7 +54,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/neurodebian`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fneurodebian)  
+	[official-images repo's `library/neurodebian` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fneurodebian)  
 	[official-images repo's `library/neurodebian` file](https://github.com/docker-library/official-images/blob/master/library/neurodebian) ([history](https://github.com/docker-library/official-images/commits/master/library/neurodebian))
 
 -	**Source of this description**:  

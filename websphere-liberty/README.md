@@ -48,7 +48,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/websphere-liberty`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fwebsphere-liberty)  
+	[official-images repo's `library/websphere-liberty` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fwebsphere-liberty)  
 	[official-images repo's `library/websphere-liberty` file](https://github.com/docker-library/official-images/blob/master/library/websphere-liberty) ([history](https://github.com/docker-library/official-images/commits/master/library/websphere-liberty))
 
 -	**Source of this description**:  

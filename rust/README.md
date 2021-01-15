@@ -42,7 +42,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/rust`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Frust)  
+	[official-images repo's `library/rust` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Frust)  
 	[official-images repo's `library/rust` file](https://github.com/docker-library/official-images/blob/master/library/rust) ([history](https://github.com/docker-library/official-images/commits/master/library/rust))
 
 -	**Source of this description**:  

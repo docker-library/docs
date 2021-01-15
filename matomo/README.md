@@ -41,7 +41,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/matomo`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmatomo)  
+	[official-images repo's `library/matomo` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fmatomo)  
 	[official-images repo's `library/matomo` file](https://github.com/docker-library/official-images/blob/master/library/matomo) ([history](https://github.com/docker-library/official-images/commits/master/library/matomo))
 
 -	**Source of this description**:  

@@ -44,7 +44,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/telegraf`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Ftelegraf)  
+	[official-images repo's `library/telegraf` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Ftelegraf)  
 	[official-images repo's `library/telegraf` file](https://github.com/docker-library/official-images/blob/master/library/telegraf) ([history](https://github.com/docker-library/official-images/commits/master/library/telegraf))
 
 -	**Source of this description**:  

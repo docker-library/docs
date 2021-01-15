@@ -41,7 +41,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/registry`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fregistry)  
+	[official-images repo's `library/registry` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fregistry)  
 	[official-images repo's `library/registry` file](https://github.com/docker-library/official-images/blob/master/library/registry) ([history](https://github.com/docker-library/official-images/commits/master/library/registry))
 
 -	**Source of this description**:  

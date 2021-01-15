@@ -45,7 +45,7 @@ See [docker-library/docs#1433](https://github.com/docker-library/docs/pull/1433)
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/sourcemage`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fsourcemage)  
+	[official-images repo's `library/sourcemage` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fsourcemage)  
 	[official-images repo's `library/sourcemage` file](https://github.com/docker-library/official-images/blob/master/library/sourcemage) ([history](https://github.com/docker-library/official-images/commits/master/library/sourcemage))
 
 -	**Source of this description**:  

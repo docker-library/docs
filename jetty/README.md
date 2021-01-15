@@ -62,7 +62,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/jetty`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fjetty)  
+	[official-images repo's `library/jetty` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fjetty)  
 	[official-images repo's `library/jetty` file](https://github.com/docker-library/official-images/blob/master/library/jetty) ([history](https://github.com/docker-library/official-images/commits/master/library/jetty))
 
 -	**Source of this description**:  

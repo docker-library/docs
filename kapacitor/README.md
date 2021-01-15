@@ -42,7 +42,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/kapacitor`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fkapacitor)  
+	[official-images repo's `library/kapacitor` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fkapacitor)  
 	[official-images repo's `library/kapacitor` file](https://github.com/docker-library/official-images/blob/master/library/kapacitor) ([history](https://github.com/docker-library/official-images/commits/master/library/kapacitor))
 
 -	**Source of this description**:  

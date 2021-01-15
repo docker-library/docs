@@ -44,7 +44,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/joomla`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fjoomla)  
+	[official-images repo's `library/joomla` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fjoomla)  
 	[official-images repo's `library/joomla` file](https://github.com/docker-library/official-images/blob/master/library/joomla) ([history](https://github.com/docker-library/official-images/commits/master/library/joomla))
 
 -	**Source of this description**:  

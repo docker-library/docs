@@ -58,7 +58,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/nats-streaming`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fnats-streaming)  
+	[official-images repo's `library/nats-streaming` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fnats-streaming)  
 	[official-images repo's `library/nats-streaming` file](https://github.com/docker-library/official-images/blob/master/library/nats-streaming) ([history](https://github.com/docker-library/official-images/commits/master/library/nats-streaming))
 
 -	**Source of this description**:  

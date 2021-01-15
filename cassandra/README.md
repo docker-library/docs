@@ -43,7 +43,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/cassandra`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fcassandra)  
+	[official-images repo's `library/cassandra` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fcassandra)  
 	[official-images repo's `library/cassandra` file](https://github.com/docker-library/official-images/blob/master/library/cassandra) ([history](https://github.com/docker-library/official-images/commits/master/library/cassandra))
 
 -	**Source of this description**:  

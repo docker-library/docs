@@ -40,7 +40,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/znc`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fznc)  
+	[official-images repo's `library/znc` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fznc)  
 	[official-images repo's `library/znc` file](https://github.com/docker-library/official-images/blob/master/library/znc) ([history](https://github.com/docker-library/official-images/commits/master/library/znc))
 
 -	**Source of this description**:  

@@ -45,7 +45,7 @@ An archive for images of unsupported versions can be found at [`opensuse/archive
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/opensuse`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fopensuse)  
+	[official-images repo's `library/opensuse` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fopensuse)  
 	[official-images repo's `library/opensuse` file](https://github.com/docker-library/official-images/blob/master/library/opensuse) ([history](https://github.com/docker-library/official-images/commits/master/library/opensuse))
 
 -	**Source of this description**:  

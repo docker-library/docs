@@ -42,7 +42,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/nuxeo`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fnuxeo)  
+	[official-images repo's `library/nuxeo` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fnuxeo)  
 	[official-images repo's `library/nuxeo` file](https://github.com/docker-library/official-images/blob/master/library/nuxeo) ([history](https://github.com/docker-library/official-images/commits/master/library/nuxeo))
 
 -	**Source of this description**:  

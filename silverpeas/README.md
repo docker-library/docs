@@ -40,7 +40,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/silverpeas`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fsilverpeas)  
+	[official-images repo's `library/silverpeas` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fsilverpeas)  
 	[official-images repo's `library/silverpeas` file](https://github.com/docker-library/official-images/blob/master/library/silverpeas) ([history](https://github.com/docker-library/official-images/commits/master/library/silverpeas))
 
 -	**Source of this description**:  

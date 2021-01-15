@@ -43,7 +43,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/crate`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fcrate)  
+	[official-images repo's `library/crate` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fcrate)  
 	[official-images repo's `library/crate` file](https://github.com/docker-library/official-images/blob/master/library/crate) ([history](https://github.com/docker-library/official-images/commits/master/library/crate))
 
 -	**Source of this description**:  

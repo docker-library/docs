@@ -205,7 +205,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/adoptopenjdk`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fadoptopenjdk)  
+	[official-images repo's `library/adoptopenjdk` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fadoptopenjdk)  
 	[official-images repo's `library/adoptopenjdk` file](https://github.com/docker-library/official-images/blob/master/library/adoptopenjdk) ([history](https://github.com/docker-library/official-images/commits/master/library/adoptopenjdk))
 
 -	**Source of this description**:  

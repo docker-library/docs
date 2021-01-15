@@ -41,7 +41,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/zookeeper`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fzookeeper)  
+	[official-images repo's `library/zookeeper` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fzookeeper)  
 	[official-images repo's `library/zookeeper` file](https://github.com/docker-library/official-images/blob/master/library/zookeeper) ([history](https://github.com/docker-library/official-images/commits/master/library/zookeeper))
 
 -	**Source of this description**:  

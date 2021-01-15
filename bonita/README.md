@@ -41,7 +41,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/bonita`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fbonita)  
+	[official-images repo's `library/bonita` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fbonita)  
 	[official-images repo's `library/bonita` file](https://github.com/docker-library/official-images/blob/master/library/bonita) ([history](https://github.com/docker-library/official-images/commits/master/library/bonita))
 
 -	**Source of this description**:  

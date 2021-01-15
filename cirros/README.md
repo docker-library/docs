@@ -39,7 +39,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/cirros`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fcirros)  
+	[official-images repo's `library/cirros` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fcirros)  
 	[official-images repo's `library/cirros` file](https://github.com/docker-library/official-images/blob/master/library/cirros) ([history](https://github.com/docker-library/official-images/commits/master/library/cirros))
 
 -	**Source of this description**:  

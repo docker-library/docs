@@ -47,7 +47,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/friendica`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Ffriendica)  
+	[official-images repo's `library/friendica` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Ffriendica)  
 	[official-images repo's `library/friendica` file](https://github.com/docker-library/official-images/blob/master/library/friendica) ([history](https://github.com/docker-library/official-images/commits/master/library/friendica))
 
 -	**Source of this description**:  

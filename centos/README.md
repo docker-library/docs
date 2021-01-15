@@ -42,7 +42,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/centos`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fcentos)  
+	[official-images repo's `library/centos` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fcentos)  
 	[official-images repo's `library/centos` file](https://github.com/docker-library/official-images/blob/master/library/centos) ([history](https://github.com/docker-library/official-images/commits/master/library/centos))
 
 -	**Source of this description**:  

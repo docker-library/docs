@@ -43,7 +43,7 @@ For create new bug, please use [ALT's bugzilla page](https://bugzilla.altlinux.o
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/alt`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Falt)  
+	[official-images repo's `library/alt` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Falt)  
 	[official-images repo's `library/alt` file](https://github.com/docker-library/official-images/blob/master/library/alt) ([history](https://github.com/docker-library/official-images/commits/master/library/alt))
 
 -	**Source of this description**:  

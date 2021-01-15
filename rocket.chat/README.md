@@ -42,7 +42,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/rocket.chat`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Frocket.chat)  
+	[official-images repo's `library/rocket.chat` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Frocket.chat)  
 	[official-images repo's `library/rocket.chat` file](https://github.com/docker-library/official-images/blob/master/library/rocket.chat) ([history](https://github.com/docker-library/official-images/commits/master/library/rocket.chat))
 
 -	**Source of this description**:  

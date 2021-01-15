@@ -39,7 +39,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/teamspeak`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fteamspeak)  
+	[official-images repo's `library/teamspeak` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fteamspeak)  
 	[official-images repo's `library/teamspeak` file](https://github.com/docker-library/official-images/blob/master/library/teamspeak) ([history](https://github.com/docker-library/official-images/commits/master/library/teamspeak))
 
 -	**Source of this description**:  

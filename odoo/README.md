@@ -41,7 +41,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/odoo`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fodoo)  
+	[official-images repo's `library/odoo` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fodoo)  
 	[official-images repo's `library/odoo` file](https://github.com/docker-library/official-images/blob/master/library/odoo) ([history](https://github.com/docker-library/official-images/commits/master/library/odoo))
 
 -	**Source of this description**:  

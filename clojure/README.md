@@ -66,7 +66,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/clojure`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fclojure)  
+	[official-images repo's `library/clojure` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fclojure)  
 	[official-images repo's `library/clojure` file](https://github.com/docker-library/official-images/blob/master/library/clojure) ([history](https://github.com/docker-library/official-images/commits/master/library/clojure))
 
 -	**Source of this description**:  

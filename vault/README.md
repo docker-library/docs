@@ -41,7 +41,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/vault`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fvault)  
+	[official-images repo's `library/vault` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fvault)  
 	[official-images repo's `library/vault` file](https://github.com/docker-library/official-images/blob/master/library/vault) ([history](https://github.com/docker-library/official-images/commits/master/library/vault))
 
 -	**Source of this description**:  

@@ -46,7 +46,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/docker`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fdocker)  
+	[official-images repo's `library/docker` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fdocker)  
 	[official-images repo's `library/docker` file](https://github.com/docker-library/official-images/blob/master/library/docker) ([history](https://github.com/docker-library/official-images/commits/master/library/docker))
 
 -	**Source of this description**:  

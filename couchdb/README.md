@@ -41,7 +41,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/couchdb`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fcouchdb)  
+	[official-images repo's `library/couchdb` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fcouchdb)  
 	[official-images repo's `library/couchdb` file](https://github.com/docker-library/official-images/blob/master/library/couchdb) ([history](https://github.com/docker-library/official-images/commits/master/library/couchdb))
 
 -	**Source of this description**:  

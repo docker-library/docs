@@ -44,7 +44,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/chronograf`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fchronograf)  
+	[official-images repo's `library/chronograf` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fchronograf)  
 	[official-images repo's `library/chronograf` file](https://github.com/docker-library/official-images/blob/master/library/chronograf) ([history](https://github.com/docker-library/official-images/commits/master/library/chronograf))
 
 -	**Source of this description**:  

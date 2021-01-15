@@ -60,7 +60,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/elixir`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Felixir)  
+	[official-images repo's `library/elixir` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Felixir)  
 	[official-images repo's `library/elixir` file](https://github.com/docker-library/official-images/blob/master/library/elixir) ([history](https://github.com/docker-library/official-images/commits/master/library/elixir))
 
 -	**Source of this description**:  

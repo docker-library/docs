@@ -39,7 +39,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/r-base`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fr-base)  
+	[official-images repo's `library/r-base` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fr-base)  
 	[official-images repo's `library/r-base` file](https://github.com/docker-library/official-images/blob/master/library/r-base) ([history](https://github.com/docker-library/official-images/commits/master/library/r-base))
 
 -	**Source of this description**:  

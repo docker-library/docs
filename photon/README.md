@@ -41,7 +41,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/photon`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fphoton)  
+	[official-images repo's `library/photon` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fphoton)  
 	[official-images repo's `library/photon` file](https://github.com/docker-library/official-images/blob/master/library/photon) ([history](https://github.com/docker-library/official-images/commits/master/library/photon))
 
 -	**Source of this description**:  

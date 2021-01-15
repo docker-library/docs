@@ -42,7 +42,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/rethinkdb`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Frethinkdb)  
+	[official-images repo's `library/rethinkdb` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Frethinkdb)  
 	[official-images repo's `library/rethinkdb` file](https://github.com/docker-library/official-images/blob/master/library/rethinkdb) ([history](https://github.com/docker-library/official-images/commits/master/library/rethinkdb))
 
 -	**Source of this description**:  

@@ -50,7 +50,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/open-liberty`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fopen-liberty)  
+	[official-images repo's `library/open-liberty` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fopen-liberty)  
 	[official-images repo's `library/open-liberty` file](https://github.com/docker-library/official-images/blob/master/library/open-liberty) ([history](https://github.com/docker-library/official-images/commits/master/library/open-liberty))
 
 -	**Source of this description**:  

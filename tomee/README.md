@@ -53,7 +53,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/tomee`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Ftomee)  
+	[official-images repo's `library/tomee` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Ftomee)  
 	[official-images repo's `library/tomee` file](https://github.com/docker-library/official-images/blob/master/library/tomee) ([history](https://github.com/docker-library/official-images/commits/master/library/tomee))
 
 -	**Source of this description**:  
