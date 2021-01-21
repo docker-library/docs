@@ -24,18 +24,18 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`9.1.2-apache-buster`, `9.1-apache-buster`, `9-apache-buster`, `apache-buster`, `9.1.2-apache`, `9.1-apache`, `9-apache`, `apache`, `9.1.2`, `9.1`, `9`, `latest`](https://github.com/docker-library/drupal/blob/174a4057624aa4c21d874ec992da4f0376842b62/9.1/apache-buster/Dockerfile)
--	[`9.1.2-fpm-buster`, `9.1-fpm-buster`, `9-fpm-buster`, `fpm-buster`, `9.1.2-fpm`, `9.1-fpm`, `9-fpm`, `fpm`](https://github.com/docker-library/drupal/blob/174a4057624aa4c21d874ec992da4f0376842b62/9.1/fpm-buster/Dockerfile)
--	[`9.1.2-fpm-alpine3.12`, `9.1-fpm-alpine3.12`, `9-fpm-alpine3.12`, `fpm-alpine3.12`, `9.1.2-fpm-alpine`, `9.1-fpm-alpine`, `9-fpm-alpine`, `fpm-alpine`](https://github.com/docker-library/drupal/blob/174a4057624aa4c21d874ec992da4f0376842b62/9.1/fpm-alpine3.12/Dockerfile)
--	[`9.0.10-apache-buster`, `9.0-apache-buster`, `9.0.10-apache`, `9.0-apache`, `9.0.10`, `9.0`](https://github.com/docker-library/drupal/blob/174a4057624aa4c21d874ec992da4f0376842b62/9.0/apache-buster/Dockerfile)
--	[`9.0.10-fpm-buster`, `9.0-fpm-buster`, `9.0.10-fpm`, `9.0-fpm`](https://github.com/docker-library/drupal/blob/174a4057624aa4c21d874ec992da4f0376842b62/9.0/fpm-buster/Dockerfile)
--	[`9.0.10-fpm-alpine3.12`, `9.0-fpm-alpine3.12`, `9.0.10-fpm-alpine`, `9.0-fpm-alpine`](https://github.com/docker-library/drupal/blob/174a4057624aa4c21d874ec992da4f0376842b62/9.0/fpm-alpine3.12/Dockerfile)
--	[`8.9.12-apache-buster`, `8.9-apache-buster`, `8-apache-buster`, `8.9.12-apache`, `8.9-apache`, `8-apache`, `8.9.12`, `8.9`, `8`](https://github.com/docker-library/drupal/blob/174a4057624aa4c21d874ec992da4f0376842b62/8.9/apache-buster/Dockerfile)
--	[`8.9.12-fpm-buster`, `8.9-fpm-buster`, `8-fpm-buster`, `8.9.12-fpm`, `8.9-fpm`, `8-fpm`](https://github.com/docker-library/drupal/blob/174a4057624aa4c21d874ec992da4f0376842b62/8.9/fpm-buster/Dockerfile)
--	[`8.9.12-fpm-alpine3.12`, `8.9-fpm-alpine3.12`, `8-fpm-alpine3.12`, `8.9.12-fpm-alpine`, `8.9-fpm-alpine`, `8-fpm-alpine`](https://github.com/docker-library/drupal/blob/174a4057624aa4c21d874ec992da4f0376842b62/8.9/fpm-alpine3.12/Dockerfile)
--	[`7.77-apache-buster`, `7-apache-buster`, `7.77-apache`, `7-apache`, `7.77`, `7`](https://github.com/docker-library/drupal/blob/c9f287f02d7c12ec7c1f89e4ed43005f5e90a7ef/7/apache-buster/Dockerfile)
--	[`7.77-fpm-buster`, `7-fpm-buster`, `7.77-fpm`, `7-fpm`](https://github.com/docker-library/drupal/blob/c9f287f02d7c12ec7c1f89e4ed43005f5e90a7ef/7/fpm-buster/Dockerfile)
--	[`7.77-fpm-alpine3.12`, `7-fpm-alpine3.12`, `7.77-fpm-alpine`, `7-fpm-alpine`](https://github.com/docker-library/drupal/blob/c9f287f02d7c12ec7c1f89e4ed43005f5e90a7ef/7/fpm-alpine3.12/Dockerfile)
+-	[`9.1.3-apache-buster`, `9.1-apache-buster`, `9-apache-buster`, `apache-buster`, `9.1.3-apache`, `9.1-apache`, `9-apache`, `apache`, `9.1.3`, `9.1`, `9`, `latest`](https://github.com/docker-library/drupal/blob/dac9cf49b9c58b834014ba4cd5ccc9cbcb9319ba/9.1/apache-buster/Dockerfile)
+-	[`9.1.3-fpm-buster`, `9.1-fpm-buster`, `9-fpm-buster`, `fpm-buster`, `9.1.3-fpm`, `9.1-fpm`, `9-fpm`, `fpm`](https://github.com/docker-library/drupal/blob/dac9cf49b9c58b834014ba4cd5ccc9cbcb9319ba/9.1/fpm-buster/Dockerfile)
+-	[`9.1.3-fpm-alpine3.12`, `9.1-fpm-alpine3.12`, `9-fpm-alpine3.12`, `fpm-alpine3.12`, `9.1.3-fpm-alpine`, `9.1-fpm-alpine`, `9-fpm-alpine`, `fpm-alpine`](https://github.com/docker-library/drupal/blob/dac9cf49b9c58b834014ba4cd5ccc9cbcb9319ba/9.1/fpm-alpine3.12/Dockerfile)
+-	[`9.0.11-apache-buster`, `9.0-apache-buster`, `9.0.11-apache`, `9.0-apache`, `9.0.11`, `9.0`](https://github.com/docker-library/drupal/blob/4ec63d38beb91ce90f585a0cfa2547d31872f9a8/9.0/apache-buster/Dockerfile)
+-	[`9.0.11-fpm-buster`, `9.0-fpm-buster`, `9.0.11-fpm`, `9.0-fpm`](https://github.com/docker-library/drupal/blob/4ec63d38beb91ce90f585a0cfa2547d31872f9a8/9.0/fpm-buster/Dockerfile)
+-	[`9.0.11-fpm-alpine3.12`, `9.0-fpm-alpine3.12`, `9.0.11-fpm-alpine`, `9.0-fpm-alpine`](https://github.com/docker-library/drupal/blob/4ec63d38beb91ce90f585a0cfa2547d31872f9a8/9.0/fpm-alpine3.12/Dockerfile)
+-	[`8.9.13-apache-buster`, `8.9-apache-buster`, `8-apache-buster`, `8.9.13-apache`, `8.9-apache`, `8-apache`, `8.9.13`, `8.9`, `8`](https://github.com/docker-library/drupal/blob/537d74ca9b9851e5de4dce362e35d6daf8727154/8.9/apache-buster/Dockerfile)
+-	[`8.9.13-fpm-buster`, `8.9-fpm-buster`, `8-fpm-buster`, `8.9.13-fpm`, `8.9-fpm`, `8-fpm`](https://github.com/docker-library/drupal/blob/537d74ca9b9851e5de4dce362e35d6daf8727154/8.9/fpm-buster/Dockerfile)
+-	[`8.9.13-fpm-alpine3.12`, `8.9-fpm-alpine3.12`, `8-fpm-alpine3.12`, `8.9.13-fpm-alpine`, `8.9-fpm-alpine`, `8-fpm-alpine`](https://github.com/docker-library/drupal/blob/537d74ca9b9851e5de4dce362e35d6daf8727154/8.9/fpm-alpine3.12/Dockerfile)
+-	[`7.78-apache-buster`, `7-apache-buster`, `7.78-apache`, `7-apache`, `7.78`, `7`](https://github.com/docker-library/drupal/blob/b10ebf1064f777db1bd0a2212bd0c55d0bec9649/7/apache-buster/Dockerfile)
+-	[`7.78-fpm-buster`, `7-fpm-buster`, `7.78-fpm`, `7-fpm`](https://github.com/docker-library/drupal/blob/b10ebf1064f777db1bd0a2212bd0c55d0bec9649/7/fpm-buster/Dockerfile)
+-	[`7.78-fpm-alpine3.12`, `7-fpm-alpine3.12`, `7.78-fpm-alpine`, `7-fpm-alpine`](https://github.com/docker-library/drupal/blob/b10ebf1064f777db1bd0a2212bd0c55d0bec9649/7/fpm-alpine3.12/Dockerfile)
 
 # Quick reference (cont.)
 
