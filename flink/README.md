@@ -28,8 +28,10 @@ WARNING:
 -	[`1.11.3-scala_2.11-java8`, `1.11-scala_2.11-java8`, `1.11.3-scala_2.11`, `1.11-scala_2.11`](https://github.com/apache/flink-docker/blob/7035f03679b11352f2fdecd9f6a9bb0ec8bc2022/1.11/scala_2.11-java8-debian/Dockerfile)
 -	[`1.11.3-scala_2.12-java11`, `1.11-scala_2.12-java11`, `1.11.3-java11`, `1.11-java11`](https://github.com/apache/flink-docker/blob/7035f03679b11352f2fdecd9f6a9bb0ec8bc2022/1.11/scala_2.12-java11-debian/Dockerfile)
 -	[`1.11.3-scala_2.12-java8`, `1.11-scala_2.12-java8`, `1.11.3-scala_2.12`, `1.11-scala_2.12`, `1.11.3-java8`, `1.11-java8`, `1.11.3`, `1.11`](https://github.com/apache/flink-docker/blob/7035f03679b11352f2fdecd9f6a9bb0ec8bc2022/1.11/scala_2.12-java8-debian/Dockerfile)
--	[`1.10.2-scala_2.12`, `1.10-scala_2.12`, `1.10.2`, `1.10`](https://github.com/apache/flink-docker/blob/58a29fca7c6ff05999fad4371638d16335f7e93e/1.10/scala_2.12-debian/Dockerfile)
--	[`1.10.2-scala_2.11`, `1.10-scala_2.11`](https://github.com/apache/flink-docker/blob/58a29fca7c6ff05999fad4371638d16335f7e93e/1.10/scala_2.11-debian/Dockerfile)
+-	[`1.12.0-scala_2.11-java11`, `1.12-scala_2.11-java11`, `scala_2.11-java11`](https://github.com/apache/flink-docker/blob/4d7cb3068d670bef274975c9412d5e40317fba3f/1.12/scala_2.11-java11-debian/Dockerfile)
+-	[`1.12.0-scala_2.11-java8`, `1.12-scala_2.11-java8`, `scala_2.11-java8`, `1.12.0-scala_2.11`, `1.12-scala_2.11`, `scala_2.11`](https://github.com/apache/flink-docker/blob/4d7cb3068d670bef274975c9412d5e40317fba3f/1.12/scala_2.11-java8-debian/Dockerfile)
+-	[`1.12.0-scala_2.12-java11`, `1.12-scala_2.12-java11`, `scala_2.12-java11`, `1.12.0-java11`, `1.12-java11`, `java11`](https://github.com/apache/flink-docker/blob/4d7cb3068d670bef274975c9412d5e40317fba3f/1.12/scala_2.12-java11-debian/Dockerfile)
+-	[`1.12.0-scala_2.12-java8`, `1.12-scala_2.12-java8`, `scala_2.12-java8`, `1.12.0-scala_2.12`, `1.12-scala_2.12`, `scala_2.12`, `1.12.0-java8`, `1.12-java8`, `java8`, `1.12.0`, `1.12`, `latest`](https://github.com/apache/flink-docker/blob/4d7cb3068d670bef274975c9412d5e40317fba3f/1.12/scala_2.12-java8-debian/Dockerfile)
 
 # Quick reference (cont.)
 
