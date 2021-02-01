@@ -24,8 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7`, `latest`](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/d6147eff57f9453625efceebb5f5c432b94ca5e5/dist/7/x86_64/Dockerfile)
--	[`cauldron`](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/d6147eff57f9453625efceebb5f5c432b94ca5e5/dist/cauldron/x86_64/Dockerfile)
+-	[`8`, `rc`](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/723f7d8c483da1b72d0ab80b0e515e431aa0fd71/dist/8/x86_64/Dockerfile)
+-	[`7`, `latest`](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/723f7d8c483da1b72d0ab80b0e515e431aa0fd71/dist/7/x86_64/Dockerfile)
+-	[`cauldron`](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/723f7d8c483da1b72d0ab80b0e515e431aa0fd71/dist/cauldron/x86_64/Dockerfile)
 
 # Quick reference (cont.)
 
