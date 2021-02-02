@@ -24,14 +24,14 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`20.10.2`, `20.10`, `20`, `latest`](https://github.com/docker-library/docker/blob/72ed002682df9e778da1fc8f0aa2ea1a0b9a3986/20.10/Dockerfile)
--	[`20.10.2-dind`, `20.10-dind`, `20-dind`, `dind`](https://github.com/docker-library/docker/blob/094faa88f437cafef7aeb0cc36e75b59046cc4b9/20.10/dind/Dockerfile)
--	[`20.10.2-dind-rootless`, `20.10-dind-rootless`, `20-dind-rootless`, `dind-rootless`](https://github.com/docker-library/docker/blob/72ed002682df9e778da1fc8f0aa2ea1a0b9a3986/20.10/dind-rootless/Dockerfile)
--	[`20.10.2-git`, `20.10-git`, `20-git`, `git`](https://github.com/docker-library/docker/blob/387e351394bfad74bceebf8303c6c8e39c3d4ed4/20.10/git/Dockerfile)
--	[`19.03.14`, `19.03`, `19`](https://github.com/docker-library/docker/blob/c8b077bfbab07a33ba5c80e5d4987fba8bbdd67b/19.03/Dockerfile)
--	[`19.03.14-dind`, `19.03-dind`, `19-dind`](https://github.com/docker-library/docker/blob/b1d2628005e12e79079c025c3653cba248d6f264/19.03/dind/Dockerfile)
--	[`19.03.14-dind-rootless`, `19.03-dind-rootless`, `19-dind-rootless`](https://github.com/docker-library/docker/blob/c8b077bfbab07a33ba5c80e5d4987fba8bbdd67b/19.03/dind-rootless/Dockerfile)
--	[`19.03.14-git`, `19.03-git`, `19-git`](https://github.com/docker-library/docker/blob/12d1c2763b54d29137ec448a3e4ad1a9aefae1a0/19.03/git/Dockerfile)
+-	[`20.10.3`, `20.10`, `20`, `latest`](https://github.com/docker-library/docker/blob/ec5d64f9611da8f8b19c9c5c4acc04b9397174e6/20.10/Dockerfile)
+-	[`20.10.3-dind`, `20.10-dind`, `20-dind`, `dind`](https://github.com/docker-library/docker/blob/094faa88f437cafef7aeb0cc36e75b59046cc4b9/20.10/dind/Dockerfile)
+-	[`20.10.3-dind-rootless`, `20.10-dind-rootless`, `20-dind-rootless`, `dind-rootless`](https://github.com/docker-library/docker/blob/ec5d64f9611da8f8b19c9c5c4acc04b9397174e6/20.10/dind-rootless/Dockerfile)
+-	[`20.10.3-git`, `20.10-git`, `20-git`, `git`](https://github.com/docker-library/docker/blob/387e351394bfad74bceebf8303c6c8e39c3d4ed4/20.10/git/Dockerfile)
+-	[`19.03.15`, `19.03`, `19`](https://github.com/docker-library/docker/blob/835c371c516ebdf67adc0c76bbfb38bf9d3e586c/19.03/Dockerfile)
+-	[`19.03.15-dind`, `19.03-dind`, `19-dind`](https://github.com/docker-library/docker/blob/b1d2628005e12e79079c025c3653cba248d6f264/19.03/dind/Dockerfile)
+-	[`19.03.15-dind-rootless`, `19.03-dind-rootless`, `19-dind-rootless`](https://github.com/docker-library/docker/blob/835c371c516ebdf67adc0c76bbfb38bf9d3e586c/19.03/dind-rootless/Dockerfile)
+-	[`19.03.15-git`, `19.03-git`, `19-git`](https://github.com/docker-library/docker/blob/12d1c2763b54d29137ec448a3e4ad1a9aefae1a0/19.03/git/Dockerfile)
 
 # Quick reference (cont.)
 
