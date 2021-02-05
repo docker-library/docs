@@ -33,7 +33,7 @@ WARNING:
 -	[`sid-curl`, `unstable-curl`](https://github.com/docker-library/buildpack-deps/blob/98a5ab81d47a106c458cdf90733df0ee8beea06c/debian/sid/curl/Dockerfile)
 -	[`sid-scm`, `unstable-scm`](https://github.com/docker-library/buildpack-deps/blob/65d69325ad741cea6dee20781c1faaab2e003d87/debian/sid/scm/Dockerfile)
 -	[`sid`, `unstable`](https://github.com/docker-library/buildpack-deps/blob/65d69325ad741cea6dee20781c1faaab2e003d87/debian/sid/Dockerfile)
--	[`stretch-curl`, `oldstable-curl`](https://github.com/docker-library/buildpack-deps/blob/98a5ab81d47a106c458cdf90733df0ee8beea06c/debian/stretch/curl/Dockerfile)
+-	[`stretch-curl`, `oldstable-curl`](https://github.com/docker-library/buildpack-deps/blob/93d2a6f64abe6787b7dd25c7d5322af1fa2e3f55/debian/stretch/curl/Dockerfile)
 -	[`stretch-scm`, `oldstable-scm`](https://github.com/docker-library/buildpack-deps/blob/65d69325ad741cea6dee20781c1faaab2e003d87/debian/stretch/scm/Dockerfile)
 -	[`stretch`, `oldstable`](https://github.com/docker-library/buildpack-deps/blob/65d69325ad741cea6dee20781c1faaab2e003d87/debian/stretch/Dockerfile)
 -	[`bionic-curl`, `18.04-curl`](https://github.com/docker-library/buildpack-deps/blob/98a5ab81d47a106c458cdf90733df0ee8beea06c/ubuntu/bionic/curl/Dockerfile)
@@ -48,7 +48,7 @@ WARNING:
 -	[`hirsute-curl`, `21.04-curl`](https://github.com/docker-library/buildpack-deps/blob/98a5ab81d47a106c458cdf90733df0ee8beea06c/ubuntu/hirsute/curl/Dockerfile)
 -	[`hirsute-scm`, `21.04-scm`](https://github.com/docker-library/buildpack-deps/blob/98a5ab81d47a106c458cdf90733df0ee8beea06c/ubuntu/hirsute/scm/Dockerfile)
 -	[`hirsute`, `21.04`](https://github.com/docker-library/buildpack-deps/blob/98a5ab81d47a106c458cdf90733df0ee8beea06c/ubuntu/hirsute/Dockerfile)
--	[`xenial-curl`, `16.04-curl`](https://github.com/docker-library/buildpack-deps/blob/98a5ab81d47a106c458cdf90733df0ee8beea06c/ubuntu/xenial/curl/Dockerfile)
+-	[`xenial-curl`, `16.04-curl`](https://github.com/docker-library/buildpack-deps/blob/93d2a6f64abe6787b7dd25c7d5322af1fa2e3f55/ubuntu/xenial/curl/Dockerfile)
 -	[`xenial-scm`, `16.04-scm`](https://github.com/docker-library/buildpack-deps/blob/65d69325ad741cea6dee20781c1faaab2e003d87/ubuntu/xenial/scm/Dockerfile)
 -	[`xenial`, `16.04`](https://github.com/docker-library/buildpack-deps/blob/98a5ab81d47a106c458cdf90733df0ee8beea06c/ubuntu/xenial/Dockerfile)
 
