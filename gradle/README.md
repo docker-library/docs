@@ -24,16 +24,16 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.8.1-jdk8`, `6.8.1-jdk8-hotspot`, `6.8-jdk8`, `6.8-jdk8-hotspot`, `jdk8`, `jdk8-hotspot`, `6.8.1-jdk`, `6.8.1-jdk-hotspot`, `6.8-jdk`, `6.8-jdk-hotspot`, `jdk`, `jdk-hotspot`, `6.8.1`, `6.8.1-hotspot`, `6.8`, `6.8-hotspot`, `latest`, `hotspot`](https://github.com/keeganwitt/docker-gradle/blob/ca63c262892414dda16c68308e4191a04c7ca7da/hotspot/jdk8/Dockerfile)
--	[`6.8.1-jre8`, `6.8.1-jre8-hotspot`, `6.8-jre8`, `6.8-jre8-hotspot`, `jre8`, `jre8-hotspot`, `6.8.1-jre`, `6.8.1-jre-hotspot`, `6.8-jre`, `6.8-jre-hotspot`, `jre`, `jre-hotspot`](https://github.com/keeganwitt/docker-gradle/blob/ca63c262892414dda16c68308e4191a04c7ca7da/hotspot/jre8/Dockerfile)
--	[`6.8.1-jdk11`, `6.8.1-jdk11-hotspot`, `6.8-jdk11`, `6.8-jdk11-hotspot`, `jdk11`, `jdk11-hotspot`](https://github.com/keeganwitt/docker-gradle/blob/ca63c262892414dda16c68308e4191a04c7ca7da/hotspot/jdk11/Dockerfile)
--	[`6.8.1-jre11`, `6.8.1-jre11-hotspot`, `6.8-jre11`, `6.8-jre11-hotspot`, `jre11`, `jre11-hotspot`](https://github.com/keeganwitt/docker-gradle/blob/ca63c262892414dda16c68308e4191a04c7ca7da/hotspot/jre11/Dockerfile)
--	[`6.8.1-jdk15`, `6.8.1-jdk15-hotspot`, `6.8-jdk15`, `6.8-jdk15-hotspot`, `jdk15`, `jdk15-hotspot`](https://github.com/keeganwitt/docker-gradle/blob/ca63c262892414dda16c68308e4191a04c7ca7da/hotspot/jdk15/Dockerfile)
--	[`6.8.1-jre15`, `6.8.1-jre15-hotspot`, `6.8-jre15`, `6.8-jre15-hotspot`, `jre15`, `jre15-hotspot`](https://github.com/keeganwitt/docker-gradle/blob/ca63c262892414dda16c68308e4191a04c7ca7da/hotspot/jre15/Dockerfile)
--	[`6.8.1-jdk8-openj9`, `6.8-jdk8-openj9`, `jdk8-openj9`, `6.8.1-jdk-openj9`, `6.8-jdk-openj9`, `jdk-openj9`, `6.8.1-openj9`, `6.8-openj9`, `openj9`](https://github.com/keeganwitt/docker-gradle/blob/ca63c262892414dda16c68308e4191a04c7ca7da/openj9/jdk8/Dockerfile)
--	[`6.8.1-jre8-openj9`, `6.8-jre8-openj9`, `jre8-openj9`, `6.8.1-jre-openj9`, `6.8-jre-openj9`, `jre-openj9`](https://github.com/keeganwitt/docker-gradle/blob/ca63c262892414dda16c68308e4191a04c7ca7da/openj9/jre8/Dockerfile)
--	[`6.8.1-jdk11-openj9`, `6.8-jdk11-openj9`, `jdk11-openj9`](https://github.com/keeganwitt/docker-gradle/blob/ca63c262892414dda16c68308e4191a04c7ca7da/openj9/jdk11/Dockerfile)
--	[`6.8.1-jre11-openj9`, `6.8-jre11-openj9`, `jre11-openj9`](https://github.com/keeganwitt/docker-gradle/blob/ca63c262892414dda16c68308e4191a04c7ca7da/openj9/jre11/Dockerfile)
+-	[`6.8.2-jdk8`, `6.8.2-jdk8-hotspot`, `6.8-jdk8`, `6.8-jdk8-hotspot`, `jdk8`, `jdk8-hotspot`, `6.8.2-jdk`, `6.8.2-jdk-hotspot`, `6.8-jdk`, `6.8-jdk-hotspot`, `jdk`, `jdk-hotspot`, `6.8.2`, `6.8.2-hotspot`, `6.8`, `6.8-hotspot`, `latest`, `hotspot`](https://github.com/keeganwitt/docker-gradle/blob/233a7be26a98bcf6a06227a5932cf0c1d6a73f19/hotspot/jdk8/Dockerfile)
+-	[`6.8.2-jre8`, `6.8.2-jre8-hotspot`, `6.8-jre8`, `6.8-jre8-hotspot`, `jre8`, `jre8-hotspot`, `6.8.2-jre`, `6.8.2-jre-hotspot`, `6.8-jre`, `6.8-jre-hotspot`, `jre`, `jre-hotspot`](https://github.com/keeganwitt/docker-gradle/blob/233a7be26a98bcf6a06227a5932cf0c1d6a73f19/hotspot/jre8/Dockerfile)
+-	[`6.8.2-jdk11`, `6.8.2-jdk11-hotspot`, `6.8-jdk11`, `6.8-jdk11-hotspot`, `jdk11`, `jdk11-hotspot`](https://github.com/keeganwitt/docker-gradle/blob/233a7be26a98bcf6a06227a5932cf0c1d6a73f19/hotspot/jdk11/Dockerfile)
+-	[`6.8.2-jre11`, `6.8.2-jre11-hotspot`, `6.8-jre11`, `6.8-jre11-hotspot`, `jre11`, `jre11-hotspot`](https://github.com/keeganwitt/docker-gradle/blob/233a7be26a98bcf6a06227a5932cf0c1d6a73f19/hotspot/jre11/Dockerfile)
+-	[`6.8.2-jdk15`, `6.8.2-jdk15-hotspot`, `6.8-jdk15`, `6.8-jdk15-hotspot`, `jdk15`, `jdk15-hotspot`](https://github.com/keeganwitt/docker-gradle/blob/233a7be26a98bcf6a06227a5932cf0c1d6a73f19/hotspot/jdk15/Dockerfile)
+-	[`6.8.2-jre15`, `6.8.2-jre15-hotspot`, `6.8-jre15`, `6.8-jre15-hotspot`, `jre15`, `jre15-hotspot`](https://github.com/keeganwitt/docker-gradle/blob/233a7be26a98bcf6a06227a5932cf0c1d6a73f19/hotspot/jre15/Dockerfile)
+-	[`6.8.2-jdk8-openj9`, `6.8-jdk8-openj9`, `jdk8-openj9`, `6.8.2-jdk-openj9`, `6.8-jdk-openj9`, `jdk-openj9`, `6.8.2-openj9`, `6.8-openj9`, `openj9`](https://github.com/keeganwitt/docker-gradle/blob/233a7be26a98bcf6a06227a5932cf0c1d6a73f19/openj9/jdk8/Dockerfile)
+-	[`6.8.2-jre8-openj9`, `6.8-jre8-openj9`, `jre8-openj9`, `6.8.2-jre-openj9`, `6.8-jre-openj9`, `jre-openj9`](https://github.com/keeganwitt/docker-gradle/blob/233a7be26a98bcf6a06227a5932cf0c1d6a73f19/openj9/jre8/Dockerfile)
+-	[`6.8.2-jdk11-openj9`, `6.8-jdk11-openj9`, `jdk11-openj9`](https://github.com/keeganwitt/docker-gradle/blob/233a7be26a98bcf6a06227a5932cf0c1d6a73f19/openj9/jdk11/Dockerfile)
+-	[`6.8.2-jre11-openj9`, `6.8-jre11-openj9`, `jre11-openj9`](https://github.com/keeganwitt/docker-gradle/blob/233a7be26a98bcf6a06227a5932cf0c1d6a73f19/openj9/jre11/Dockerfile)
 
 # Quick reference (cont.)
 
