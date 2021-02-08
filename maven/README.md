@@ -34,6 +34,8 @@ WARNING:
 -	[`3.6.3-openjdk-15-slim`, `3.6-openjdk-15-slim`, `3-openjdk-15-slim`](https://github.com/carlossg/docker-maven/blob/cc080bd044b5ae09731e5cb5f8de61fb5bdb32a5/openjdk-15-slim/Dockerfile)
 -	[`3.6.3-openjdk-16`, `3.6-openjdk-16`, `3-openjdk-16`](https://github.com/carlossg/docker-maven/blob/a7de5419ae52d514d0fd5bcd08694fce2334aed4/openjdk-16/Dockerfile)
 -	[`3.6.3-openjdk-16-slim`, `3.6-openjdk-16-slim`, `3-openjdk-16-slim`](https://github.com/carlossg/docker-maven/blob/cc080bd044b5ae09731e5cb5f8de61fb5bdb32a5/openjdk-16-slim/Dockerfile)
+-	[`3.6.3-openjdk-17`, `3.6-openjdk-17`, `3-openjdk-17`](https://github.com/carlossg/docker-maven/blob/762bc0ad0dcb552d52b63cf293c9a3ea4f4fcacf/openjdk-17/Dockerfile)
+-	[`3.6.3-openjdk-17-slim`, `3.6-openjdk-17-slim`, `3-openjdk-17-slim`](https://github.com/carlossg/docker-maven/blob/762bc0ad0dcb552d52b63cf293c9a3ea4f4fcacf/openjdk-17-slim/Dockerfile)
 -	[`3.6.3-adoptopenjdk-11`, `3.6-adoptopenjdk-11`, `3-adoptopenjdk-11`](https://github.com/carlossg/docker-maven/blob/d98fc55d68cbd5fa8df9e59c95678e1d702b0925/adoptopenjdk-11/Dockerfile)
 -	[`3.6.3-adoptopenjdk-14`, `3.6-adoptopenjdk-14`, `3-adoptopenjdk-14`](https://github.com/carlossg/docker-maven/blob/5768b638a84739d0ad85dbcbe42018075550b109/adoptopenjdk-14/Dockerfile)
 -	[`3.6.3-adoptopenjdk-14-openj9`, `3.6-adoptopenjdk-14-openj9`, `3-adoptopenjdk-14-openj9`](https://github.com/carlossg/docker-maven/blob/b243010db790a1ab8f6a43d26ae86a76cba86b55/adoptopenjdk-14-openj9/Dockerfile)
