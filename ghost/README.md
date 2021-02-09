@@ -147,6 +147,8 @@ services:
       database__connection__user: root
       database__connection__password: example
       database__connection__database: ghost
+      # if you want to start ghost in development mode uncomment next line
+      # NODE_ENV: development
       # this url value is just an example, and is likely wrong for your environment!
       url: http://localhost:8080
 
