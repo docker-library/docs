@@ -1,1 +1,1 @@
-../.common-templates/maintainer-community.md
+[MariaDB developer community](%%GITHUB-REPO%%)
