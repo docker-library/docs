@@ -18,7 +18,7 @@ $ docker run --name some-%%REPO%% -e MYSQL_ROOT_PASSWORD=my-secret-pw -d %%IMAGE
 
 ... where `some-%%REPO%%` is the name you want to assign to your container, `my-secret-pw` is the password to be set for the MySQL root user and `tag` is the tag specifying the MySQL version you want. See the list above for relevant tags.
 
-## Connect to MariaDB from the MySQL command line client
+## Connect to MariaDB from the MySQL/MariaDB command line client
 
 The following command starts another `%%IMAGE%%` container instance and runs the `mysql` command line client against your original `%%IMAGE%%` container, allowing you to execute SQL statements against your database instance:
 
@@ -34,7 +34,7 @@ This image can also be used as a client for non-Docker or remote instances:
 $ docker run -it --rm %%IMAGE%% mysql -hsome.mysql.host -usome-mysql-user -p
 ```
 
-More information about the MySQL command line client can be found in the [MySQL documentation](http://dev.mysql.com/doc/en/mysql.html)
+More information about the MariaDB command line client can be found in the [MariaDB Knowledge Base](https://mariadb.com/kb/en/mysql-command-line-client/)
 
 ## %%STACK%%
 
