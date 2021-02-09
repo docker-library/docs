@@ -40,7 +40,7 @@ More information about the MariaDB command line client can be found in the [Mari
 
 Run `docker stack deploy -c stack.yml %%REPO%%` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
 
-## Container shell access and viewing MySQL logs
+## Container shell access and viewing MariaDB logs
 
 The `docker exec` command allows you to run commands inside a Docker container. The following command line will give you a bash shell inside your `%%IMAGE%%` container:
 
@@ -54,7 +54,7 @@ The log is available through Docker's container log:
 $ docker logs some-%%REPO%%
 ```
 
-## Using a custom MySQL configuration file
+## Using a custom MariaDB configuration file
 
 The startup configuration is specified in the file `/etc/mysql/my.cnf`, and that file in turn includes any files found in the `/etc/mysql/conf.d` directory that end with `.cnf`. Settings in files in this directory will augment and/or override settings in `/etc/mysql/my.cnf`. If you want to use a customized MySQL configuration, you can create your alternative configuration file in a directory on the host machine and then mount that directory location as `/etc/mysql/conf.d` inside the `%%IMAGE%%` container.
 
