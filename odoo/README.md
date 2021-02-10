@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`14.0`, `14`, `latest`](https://github.com/odoo/docker/blob/44a0a3f1b32e72b55079fb1a6a05efdbda248bfe/14.0/Dockerfile)
--	[`13.0`, `13`](https://github.com/odoo/docker/blob/44a0a3f1b32e72b55079fb1a6a05efdbda248bfe/13.0/Dockerfile)
--	[`12.0`, `12`](https://github.com/odoo/docker/blob/44a0a3f1b32e72b55079fb1a6a05efdbda248bfe/12.0/Dockerfile)
+-	[`14.0`, `14`, `latest`](https://github.com/odoo/docker/blob/6fb83876d016fcdcae40853c8e0d405dac7feaef/14.0/Dockerfile)
+-	[`13.0`, `13`](https://github.com/odoo/docker/blob/6fb83876d016fcdcae40853c8e0d405dac7feaef/13.0/Dockerfile)
+-	[`12.0`, `12`](https://github.com/odoo/docker/blob/6fb83876d016fcdcae40853c8e0d405dac7feaef/12.0/Dockerfile)
 
 # Quick reference (cont.)
 
