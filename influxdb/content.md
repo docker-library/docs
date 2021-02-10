@@ -21,6 +21,7 @@ To avoid this problem when migrating from `quay.io/influxdb/influxdb` to `influx
 ### Change volume mount point
 
 If you don't mind using the new default path, you can switch the mount-point for the volume containing your data:
+
 ```console
 # Migrate from this:
 $ docker run -p 8086:8086 \
@@ -36,6 +37,7 @@ docker run -p 8086:8086 \
 ### Override default configs
 
 If you'd rather keep your data files in the home directory, you can override the container's default config:
+
 ```console
 # Migrate from this:
 $ docker run -p 8086:8086 \
