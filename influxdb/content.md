@@ -10,6 +10,48 @@ InfluxDB is a time series database built from the ground up to handle high write
 
 The `latest` tag for this image now points to the latest released implementation of InfluxDB 2.0. If you are using the `latest` tag and would like to stay on the 1.x line, please update your environment to reference the `1.8` tag.
 
+## Upgrading from quay.io-hosted 2.x
+
+Early Docker builds of InfluxDB 2.x were hosted at `quay.io/influxdb/influxdb`. The builds were very bare-bones, containing the `influx` and `influxd` binaries without any default configuration or helper scripts. By default, the `influxd` process stored data under `/root/.influxdbv2`.
+
+Starting with `v2.0.4`, we've restored our DockerHub build. This build defaults to storing data in `/var/lib/influxdb2`. Upgrading directly from `quay.io/influxdb/influxdb` to `influxdb:2.0.4` without modifying any settings will appear to cause data loss, as the new process won't be able to find your existing data files.
+
+To avoid this problem when migrating from `quay.io/influxdb/influxdb` to `influxdb:2.0`, you can use one of the following approaches.
+
+### Change volume mount point
+
+If you don't mind using the new default path, you can switch the mount-point for the volume containing your data:
+```console
+# Migrate from this:
+$ docker run -p 8086:8086 \
+      -v $PWD:/root/.influxdbv2 \
+      quay.io/influxdb/influxdb:v2.0.3
+
+# To this:
+docker run -p 8086:8086 \
+      -v $PWD:/var/lib/influxdb2 \
+      %%IMAGE%%
+```
+
+### Override default configs
+
+If you'd rather keep your data files in the home directory, you can override the container's default config:
+```console
+# Migrate from this:
+$ docker run -p 8086:8086 \
+      -v $PWD:/root/.influxdbv2 \
+      quay.io/influxdb/influxdb:v2.0.3
+
+# To this:
+docker run -p 8086:8086 \
+      -e INFLUXD_BOLT_PATH=/root/.influxdbv2/influxd.bolt \
+      -e INFLUXD_ENGINE_PATH=/root/.influxdbv2/engine \
+      -v $PWD:/root/.influxdbv2 \
+      %%IMAGE%%
+```
+
+See the section about configuration below for more ways to override the data paths.
+
 ## Using this Image - 2.x
 
 ### Running the container
