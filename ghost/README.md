@@ -149,6 +149,8 @@ services:
       database__connection__database: ghost
       # this url value is just an example, and is likely wrong for your environment!
       url: http://localhost:8080
+      # contrary to the default mentioned in the linked documentation, this image defaults to NODE_ENV=production (so development mode needs to be explicitly specified if desired)
+      #NODE_ENV: development
 
   db:
     image: mysql:5.7
@@ -157,7 +159,7 @@ services:
       MYSQL_ROOT_PASSWORD: example
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/c57e666ff4299ee6e801a9843b7f39eebfd8f2da/ghost/stack.yml)
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/e107b09e525803634104863dc726c430ca7cc5ea/ghost/stack.yml)
 
 Run `docker stack deploy -c stack.yml ghost` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
 
