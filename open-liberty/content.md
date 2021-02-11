@@ -49,16 +49,19 @@ Please note that this pattern will duplicate the docker layers for those artifac
 
 There are multiple tags available in this repository.
 
-The `kernel` image contains just the Liberty kernel and no additional runtime features. This image is the recommended basis for custom built images, so that they can contain only the features required for a specific application. For example, the following Dockerfile starts with this image, copies in the `server.xml` that lists the features required by the application, and then uses the `configure.sh` script to download those features from the online repository.
+The `kernel-slim` image contains just the Liberty kernel and no additional runtime features. This image is the recommended basis for custom built images, so that they can contain only the features required for a specific application. For example, the following Dockerfile starts with this image, copies in the `server.xml` that lists the features required by the application, and then uses the `configure.sh` script to download those features from the online repository.
 
 ```dockerfile
-FROM %%IMAGE%%:kernel
+FROM %%IMAGE%%:kernel-slim
 COPY --chown=1001:0  Sample1.war /config/dropins/
 COPY --chown=1001:0  server.xml /config/
 RUN configure.sh
 ```
 
 The full list of images are found in the `Supported tags and respective Dockerfile links` section above.
+
+Note: As of the 20.0.0.11 release the kernel images are deprecated and will not the updated. The kernel-slim images will replace them in this and future releases.
+Please visit https://github.com/OpenLiberty/ci.docker#building-an-application-image for more information on how to expand the kernel-slim image to contain the features needed.
 
 # Usage
 
@@ -72,7 +75,7 @@ The images are designed to support a number of different usage patterns. The fol
 
 It is a very strong best practice to create an extending Docker image, we called it the `application image`, that encapsulates an application and its configuration. This creates a robust, self-contained and predictable Docker image that can span new containers upon request, without relying on volumes or other external runtime artifacts that may behave different over time.
 
-If you want to build the smallest possible Open Liberty application image you can start with our `kernel` tag, add your artifacts, and run `configure.sh` to grow the set of features to be fit-for-purpose. Please see our [GitHub page](https://github.com/OpenLiberty/ci.docker#building-an-application-image) for more details.
+If you want to build the smallest possible Open Liberty application image you can start with our `kernel-slim` tag, add your artifacts, and run `configure.sh` to grow the set of features to be fit-for-purpose. Please see our [GitHub page](https://github.com/OpenLiberty/ci.docker#building-an-application-image) for more details.
 
 ## Enabling Enterprise functionality
 
@@ -104,14 +107,14 @@ $ docker run -d -p 80:9080 \
 
 # Using Spring Boot with Open Liberty
 
-The `full` images introduce capabilities specific to the support of all Liberty features, including Spring Boot applications. This image thus includes the `springBootUtility` used to separate Spring Boot applications into thin applications and dependency library caches. To get these same capabilities without including features you are not using, build instead on top of `kernel` images and run configure.sh for your server.xml, ensuring that it enables either the `springBoot-1.5` or `springBoot-2.0` feature.
+The `full` images introduce capabilities specific to the support of all Liberty features, including Spring Boot applications. This image thus includes the `springBootUtility` used to separate Spring Boot applications into thin applications and dependency library caches. To get these same capabilities without including features you are not using, build instead on top of `kernel-slim` images and run configure.sh for your server.xml, ensuring that it enables either the `springBoot-1.5` or `springBoot-2.0` feature.
 
 To elaborate these capabilities this section assumes the standalone Spring Boot 2.0.x application `hellospringboot.jar` exists in the `/tmp` directory.
 
 1.	A Spring Boot application JAR deploys to the `dropins/spring` directory within the default server configuration, not the `dropins` directory. Liberty allows one Spring Boot application per server configuration. You can create a Spring Boot application layer over this image by adding the application JAR to the `dropins/spring` directory. In this example we copied `hellospringboot.jar` from `/tmp` to the same directory containing the following Dockerfile.
 
 	```dockerfile
-	FROM %%IMAGE%%:kernel
+	FROM %%IMAGE%%:kernel-slim
 
 	COPY --chown=1001:0 hellospringboot.jar /config/dropins/spring/
 	COPY --chown=1001:0 server.xml /config/
@@ -131,14 +134,14 @@ To elaborate these capabilities this section assumes the standalone Spring Boot 
 	You can use the `springBootUtility` command to create thin application and library cache layers over a `full` image. The following example uses docker staging to efficiently build an image that deploys a fat Spring Boot application as two layers containing a thin application and a library cache.
 
 	```dockerfile
-	FROM %%IMAGE%%:kernel as staging
+	FROM %%IMAGE%%:kernel-slim as staging
 	COPY --chown=1001:0 hellospringboot.jar /staging/myFatApp.jar
 	COPY --chown=1001:0 server.xml /config/
 	RUN springBootUtility thin \
 	   --sourceAppPath=/staging/myFatApp.jar \
 	   --targetThinAppPath=/staging/myThinApp.jar \
 	   --targetLibCachePath=/staging/lib.index.cache
-	FROM %%IMAGE%%:kernel
+	FROM %%IMAGE%%:kernel-slim
 	COPY --chown=1001:0 server.xml /config
 	COPY --from=staging /staging/lib.index.cache /lib.index.cache
 	COPY --from=staging /staging/myThinApp.jar /config/dropins/spring/myThinApp.jar
