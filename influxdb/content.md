@@ -6,11 +6,11 @@ InfluxDB is a time series database built from the ground up to handle high write
 
 %%LOGO%%
 
-## `latest` updated to 2.0
+## `latest` updated to InfluxDB 2.x
 
-The `latest` tag for this image now points to the latest released implementation of InfluxDB 2.0. If you are using the `latest` tag and would like to stay on the 1.x line, please update your environment to reference the `1.8` tag.
+The `latest` tag for this image now points to the latest released implementation of InfluxDB 2.x. If you are using the `latest` tag and would like to stay on the InfluxDB 1.x line, please update your environment to reference the `1.8` tag.
 
-## Upgrading from quay.io-hosted 2.x
+## Upgrading from quay.io-hosted InfluxDB 2.x image
 
 Early Docker builds of InfluxDB 2.x were hosted at `quay.io/influxdb/influxdb`. The builds were very bare-bones, containing the `influx` and `influxd` binaries without any default configuration or helper scripts. By default, the `influxd` process stored data under `/root/.influxdbv2`.
 
@@ -54,7 +54,7 @@ docker run -p 8086:8086 \
 
 See the section about configuration below for more ways to override the data paths.
 
-## Using this Image - 2.x
+## Using this Image - InfluxDB 2.x
 
 ### Running the container
 
@@ -130,7 +130,7 @@ Find more about configuring InfluxDB [here](https://docs.influxdata.com/influxdb
 
 ### Database Setup
 
-InfluxDB 2.0 requires authentication. A special API exists to bootstrap the first super-user in the database, along with an initial organization and bucket. It's possible to access this API manually, or to run it automatically via environment variables.
+InfluxDB 2.x requires authentication. A special API exists to bootstrap the first super-user in the database, along with an initial organization and bucket. It's possible to access this API manually, or to run it automatically via environment variables.
 
 #### Manual Setup
 
@@ -226,7 +226,7 @@ $ docker run -d -p 8086:8086 \
 
 **NOTE:** Automated setup will not run if an existing boltdb file is found at the configured path. This behavior allows for the InfluxDB container to reboot post-setup without encountering "DB is already set up" errors.
 
-### Interacting with the DB
+### Interacting with InfluxDB
 
 Once an InfluxDB instance has completed initial setup, its APIs will unlock. See the main documentation site for reference information and examples on:
 
@@ -235,9 +235,9 @@ Once an InfluxDB instance has completed initial setup, its APIs will unlock. See
 -	[Configuring security](https://docs.influxdata.com/influxdb/v2.0/security/)
 -	[And more!](https://docs.influxdata.com/influxdb/v2.0/)
 
-### Upgrading from 1.x
+### Upgrading from InfluxDB 1.x
 
-InfluxDB 2.0 provides a 1.x-compatible API, but expects a different storage layout on disk. To bridge this mismatch, the InfluxDB image contains extra functionality to migrate 1.x data and config into 2.x layouts automatically before booting the `influxd` server.
+InfluxDB 2.x provides a 1.x-compatible API, but expects a different storage layout on disk. To bridge this mismatch, the InfluxDB image contains extra functionality to migrate 1.x data and config into 2.x layouts automatically before booting the `influxd` server.
 
 The automated upgrade process also bootstraps an initial admin user, organization, and bucket in the system, so it uses the same set of environment variables as the automated setup process described above:
 
@@ -270,7 +270,7 @@ Find more about the InfluxDB upgrade process [here](https://docs.influxdata.com/
 
 #### Upgrade Example - Minimal
 
-Assume you've been running a minimal 1.x deployment:
+Assume you've been running a minimal InfluxDB 1.x deployment:
 
 ```console
 $ docker run -p 8086:8086 \
@@ -278,7 +278,7 @@ $ docker run -p 8086:8086 \
       %%IMAGE%%:1.8
 ```
 
-To upgrade this deployment to 2.x, stop the running 1.x container, then run:
+To upgrade this deployment to InfluxDB 2.x, stop the running InfluxDB 1.x container, then run:
 
 ```console
 $ docker run -p 8086:8086 \
@@ -292,9 +292,9 @@ $ docker run -p 8086:8086 \
       %%IMAGE%%
 ```
 
-#### Upgrade Example - Custom 1.x Config
+#### Upgrade Example - Custom InfluxDB 1.x Config
 
-Assume you've been running a 1.x deployment with customized config:
+Assume you've been running an InfluxDB 1.x deployment with customized config:
 
 ```console
 $ docker run -p 8086:8086 \
@@ -303,7 +303,7 @@ $ docker run -p 8086:8086 \
       %%IMAGE%%:1.8
 ```
 
-To upgrade this deployment to 2.x, stop the running container, then run:
+To upgrade this deployment to InfluxDB 2.x, stop the running container, then run:
 
 ```console
 $ docker run -p 8086:8086 \
@@ -320,7 +320,7 @@ $ docker run -p 8086:8086 \
 
 #### Upgrade Example - Custom Paths
 
-Assume you've been running a 1.x deployment with data and config mounted at custom paths:
+Assume you've been running an InfluxDB 1.x deployment with data and config mounted at custom paths:
 
 ```console
 $ docker run -p 8086:8086 \
@@ -329,7 +329,7 @@ $ docker run -p 8086:8086 \
       %%IMAGE%%:1.8 -config /root/influxdb/influxdb.conf
 ```
 
-To upgrade this deployment to 2.x, first decide if you'd like to keep using custom paths, or use the 2.x defaults. If you decide to use the defaults, you'd stop the running 1.x container, then run:
+To upgrade this deployment to InfluxDB 2.x, first decide if you'd like to keep using custom paths, or use the InfluxDB 2.x defaults. If you decide to use the defaults, you'd stop the running InfluxDB 1.x container, then run:
 
 ```console
 $ docker run -p 8086:8086 \
@@ -376,7 +376,7 @@ As a convenience for script-writers, the image will export a number of variables
 -	`INFLUXDB_INIT_ORG_ID`: ID of the initial organization created by `setup`/`upgrade`
 -	`INFLUXDB_INIT_BUCKET_ID`: ID of the initial bucket created by `setup`/`upgrade`
 
-For example, if you wanted to grant write-access to a 1.x client on your initial bucket, you'd first create the file `$PWD/scripts/setup-v1.sh` with contents:
+For example, if you wanted to grant write-access to an InfluxDB 1.x client on your initial bucket, you'd first create the file `$PWD/scripts/setup-v1.sh` with contents:
 
 ```bash
 #!/bin/bash
@@ -417,7 +417,7 @@ $ docker run -p 8086:8086 \
 
 **NOTE:** Custom scripts will not run if an existing boltdb file is found at the configured path (causing `setup` or `upgrade` to be skipped). This behavior allows for the InfluxDB container to reboot post-initialization without encountering errors from non-idempotent script commands.
 
-## Using this Image - 1.x
+## Using this Image - InfluxDB 1.x
 
 ### Running the container
 
