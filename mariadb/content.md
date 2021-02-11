@@ -103,23 +103,23 @@ This specifies the password that will be set for the MariaDB `root` superuser ac
 
 Set to a non-empty value, like `yes`, to allow the container to be started with a blank password for the root user. *NOTE*: Setting this variable to `yes` is not recommended unless you really know what you are doing, since this will leave your MariaDB instance completely unprotected, allowing anyone to gain complete superuser access.
 
+### `MARIADB_RANDOM_ROOT_PASSWORD` / `MYSQL_RANDOM_ROOT_PASSWORD`
+
+Set to a non-empty value, like `yes`, to generate a random initial password for the root user. The generated root password will be printed to stdout (`GENERATED ROOT PASSWORD: .....`).
+
+### `MARIADB_ROOT_HOST` / `MYSQL_ROOT_HOST`
+
+This is the hostname part of the root user created. By default this is `%`, however it can be set to any default [MariaDB allowed hostname component](https://mariadb.com/kb/en/create-user/#host-name-component).
+
 ### `MARIADB_DATABASE` / `MYSQL_DATABASE`
 
-This variable is optional and allows you to specify the name of a database to be created on image startup. If a user/password was supplied (see below) then that user will be granted superuser access ([corresponding to `GRANT ALL`](https://mariadb.com/kb/en/grant/#the-all-privileges-privilege)) to this database.
+This variable allows you to specify the name of a database to be created on image startup.
 
-### `MARIADB_USER` / `MYSQL_USER`,  `MARIADB_PASSWORD` / `MYSQL_PASSWORD`
+### `MARIADB_USER` / `MYSQL_USER`, `MARIADB_PASSWORD` / `MYSQL_PASSWORD`
 
-These variables are optional, used in conjunction to create a new user and to set that user's password. This user will be granted superuser permissions (see above) for the database specified by the `MARIADB_DATABASE` / `MYSQL_DATABASE` variable. Both user and password variables are required for a user to be created.
+These are used in conjunction to create a new user and to set that user's password. Both user and password variables are required for a user to be created. This user will be granted all access ([corresponding to `GRANT ALL`](https://mariadb.com/kb/en/grant/#the-all-privileges-privilege)) to the `MARIADB_DATABASE` database.
 
 Do note that there is no need to use this mechanism to create the root superuser, that user gets created by default with the password specified by the `MARIADB_ROOT_PASSWORD` / `MYSQL_ROOT_PASSWORD` variable.
-
-### `MARIADB_ALLOW_EMPTY_PASSWORD` / `MYSQL_ALLOW_EMPTY_PASSWORD`
-
-This is an optional variable. Set to a non-empty value, like `yes`, to allow the container to be started with a blank password for the root user. *NOTE*: Setting this variable to `yes` is not recommended unless you really know what you are doing, since this will leave your MariaDB instance completely unprotected, allowing anyone to gain complete superuser access.
-
-### `MARIADB_ROOT_PASSWORD` / `MYSQL_RANDOM_ROOT_PASSWORD`
-
-This is an optional variable. Set to a non-empty value, like `yes`, to generate a random initial password for the root user. The generated root password will be printed to stdout (`GENERATED ROOT PASSWORD: .....`).
 
 ### `MARIADB_INITDB_SKIP_TZINFO` / `MYSQL_INITDB_SKIP_TZINFO`
 
