@@ -6,7 +6,7 @@
 
 # How to use this image
 
-Here you'll find the Docker images for the Community Edition, Developer Edition, and Enterprise Edition of SonarQube.
+Here you'll find the Docker images for the Community Edition, Developer Edition, Enterprise Edition, and DataCenter Edition of SonarQube.
 
 ## Docker Host Requirements
 
@@ -31,7 +31,7 @@ To quickly run a demo instance, see Using Docker on the [Get Started in Two Minu
 
 By default, the image will use an embedded H2 database that is not suited for production.
 
-> **Warning:** Only a single instance of SonarQube can connect to a database schema. If you're using a Docker Swarm or Kubernetes, make sure that multiple SonarQube instances are never running on the same database schema simultaneously. This will cause SonarQube to behave unpredictably and data will be corrupted. There is no safeguard until [SONAR-10362](https://jira.sonarsource.com/browse/SONAR-10362).
+> **Warning:** Only a single instance of SonarQube can connect to a database schema. If you're using a Docker Swarm or Kubernetes, make sure that multiple SonarQube instances are never running on the same database schema simultaneously. This will cause SonarQube to behave unpredictably and data will be corrupted. There is no safeguard until [SONAR-10362](https://jira.sonarsource.com/browse/SONAR-10362). The Datacenter Edition has the same limitation in that only one cluster can connect to one database schema at the same time.
 
 Set up a database by following the "Installing the Database" section of https://docs.sonarqube.org/latest/setup/install-server/.
 
@@ -42,13 +42,15 @@ We recommend creating volumes for the following directories:
 -	`/opt/sonarqube/conf`: **for Version 7.9.x only**, configuration files, such as `sonar.properties`.
 -	`/opt/sonarqube/data`: data files, such as the embedded H2 database and Elasticsearch indexes
 -	`/opt/sonarqube/logs`: contains SonarQube logs about access, web process, CE process, Elasticsearch logs
--	`/opt/sonarqube/extensions`: plugins, such as language analyzers
+-	`/opt/sonarqube/extensions`: for 3rd party plugins 
 
 > **Warning:** You cannot use the same volumes on multiple instances of SonarQube.
 
 ## First Installation
 
 For installation instructions, see Installing the Server from the Docker Image on the [Install the Server](https://docs.sonarqube.org/latest/setup/install-server/) page.
+
+To run a cluster with the DataCenter Edition, please refer to Installing SonarQube from the Docker Image on the [Install the Server as a Cluster](https://docs.sonarqube.org/latest/setup/install-cluster/) page.
 
 ## Upgrading
 
