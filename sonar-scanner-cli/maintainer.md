@@ -1,1 +1,0 @@
-[SonarSource](%%GITHUB-REPO%%)
