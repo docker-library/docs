@@ -49,12 +49,20 @@ Please note that this pattern will duplicate the docker layers for those artifac
 
 There are multiple tags available in this repository.
 
-The `kernel` image contains just the Liberty kernel and no additional runtime features. This image is the recommended basis for custom built images, so that they can contain only the features required for a specific application. For example, the following Dockerfile starts with this image, copies in the `server.xml` that lists the features required by the application, and then uses the `configure.sh` script to download those features from the online repository.
+The `kernel-slim` image contains just the Liberty kernel and no additional runtime features. This image is the recommended basis for custom built images, so that they can contain only the features required for a specific application. For example, the following Dockerfile starts with this image, copies in the `server.xml` that lists the features required by the application, and then uses the `features.sh` script to download those features from the online repository.
 
 ```dockerfile
-FROM %%IMAGE%%:kernel
-COPY --chown=1001:0  Sample1.war /config/dropins/
+FROM %%IMAGE%%:kernel-slim
+
+# Add server configuration
 COPY --chown=1001:0  server.xml /config/
+# This script will add the requested XML snippets to enable Liberty features and grow image to be fit-for-purpose using featureUtility.
+# Only available in 'kernel-slim'. The 'full' tag already includes all features for convenience.
+RUN features.sh
+
+# Add the application
+COPY --chown=1001:0  Sample1.war /config/dropins/
+# This script will add the requested server configurations, apply any interim fixes and populate caches to optimize runtime.
 RUN configure.sh
 ```
 
