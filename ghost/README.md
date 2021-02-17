@@ -24,10 +24,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.40.5`, `3.40`, `3`, `latest`](https://github.com/docker-library/ghost/blob/5a87e57daeff91831cece198aee121f7a1811199/3/debian/Dockerfile)
--	[`3.40.5-alpine`, `3.40-alpine`, `3-alpine`, `alpine`](https://github.com/docker-library/ghost/blob/5a87e57daeff91831cece198aee121f7a1811199/3/alpine/Dockerfile)
--	[`2.38.2`, `2.38`, `2`](https://github.com/docker-library/ghost/blob/3eeb98378c4664f4f7813c3d45bfeee26d51ce58/2/debian/Dockerfile)
--	[`2.38.2-alpine`, `2.38-alpine`, `2-alpine`](https://github.com/docker-library/ghost/blob/3eeb98378c4664f4f7813c3d45bfeee26d51ce58/2/alpine/Dockerfile)
+-	[`3.41.5`, `3.41`, `3`, `latest`](https://github.com/docker-library/ghost/blob/14fe1dffcbed89ecadaadb9fb12dc9e85944e749/3/debian/Dockerfile)
+-	[`3.41.5-alpine`, `3.41-alpine`, `3-alpine`, `alpine`](https://github.com/docker-library/ghost/blob/14fe1dffcbed89ecadaadb9fb12dc9e85944e749/3/alpine/Dockerfile)
+-	[`2.38.3`, `2.38`, `2`](https://github.com/docker-library/ghost/blob/520d77b96f88615fdcfa02434d1ca15a97bf62b6/2/debian/Dockerfile)
+-	[`2.38.3-alpine`, `2.38-alpine`, `2-alpine`](https://github.com/docker-library/ghost/blob/520d77b96f88615fdcfa02434d1ca15a97bf62b6/2/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -149,6 +149,8 @@ services:
       database__connection__database: ghost
       # this url value is just an example, and is likely wrong for your environment!
       url: http://localhost:8080
+      # contrary to the default mentioned in the linked documentation, this image defaults to NODE_ENV=production (so development mode needs to be explicitly specified if desired)
+      #NODE_ENV: development
 
   db:
     image: mysql:5.7
@@ -157,7 +159,7 @@ services:
       MYSQL_ROOT_PASSWORD: example
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/c57e666ff4299ee6e801a9843b7f39eebfd8f2da/ghost/stack.yml)
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/e107b09e525803634104863dc726c430ca7cc5ea/ghost/stack.yml)
 
 Run `docker stack deploy -c stack.yml ghost` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
 

@@ -19,6 +19,8 @@ services:
       database__connection__database: ghost
       # this url value is just an example, and is likely wrong for your environment!
       url: http://localhost:8080
+      # contrary to the default mentioned in the linked documentation, this image defaults to NODE_ENV=production (so development mode needs to be explicitly specified if desired)
+      #NODE_ENV: development
 
   db:
     image: mysql:5.7
