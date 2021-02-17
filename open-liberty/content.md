@@ -53,9 +53,17 @@ The `kernel-slim` image contains just the Liberty kernel and no additional runti
 
 ```dockerfile
 FROM %%IMAGE%%:kernel-slim
-COPY --chown=1001:0  Sample1.war /config/dropins/
+
+# Add server configuration
 COPY --chown=1001:0  server.xml /config/
+# This script will add the requested XML snippets to enable Liberty features and grow image to be fit-for-purpose using featureUtility.
+# Only available in 'kernel-slim'. The 'full' tag already includes all features for convenience.
 RUN features.sh
+
+# Add the application
+COPY --chown=1001:0  Sample1.war /config/dropins/
+# This script will add the requested server configurations, apply any interim fixes and populate caches to optimize runtime.
+RUN configure.sh
 ```
 
 The full list of images are found in the `Supported tags and respective Dockerfile links` section above.
