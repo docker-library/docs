@@ -30,7 +30,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.2.9`, `latest`](https://github.com/docker/swarm-library-image/blob/a2a08d733833327354b5d3336ffbd19e4f369a2d/Dockerfile)
+**No supported tags**
 
 # Quick reference (cont.)
 
@@ -38,7 +38,7 @@ WARNING:
 	[https://github.com/docker/swarm-library-image/issues](https://github.com/docker/swarm-library-image/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/swarm/)
+	**No supported architectures**
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/swarm/` directory](https://github.com/docker-library/repo-info/blob/master/repos/swarm) ([history](https://github.com/docker-library/repo-info/commits/master/repos/swarm))  
