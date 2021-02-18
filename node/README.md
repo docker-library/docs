@@ -24,14 +24,14 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`15.8.0-alpine3.10`, `15.8-alpine3.10`, `15-alpine3.10`, `alpine3.10`, `current-alpine3.10`](https://github.com/nodejs/docker-node/blob/4ab6ab7d06845aa950054ec5522fe8b81927bf05/15/alpine3.10/Dockerfile)
--	[`15.8.0-alpine3.11`, `15.8-alpine3.11`, `15-alpine3.11`, `alpine3.11`, `current-alpine3.11`, `15.8.0-alpine`, `15.8-alpine`, `15-alpine`, `alpine`, `current-alpine`](https://github.com/nodejs/docker-node/blob/4ab6ab7d06845aa950054ec5522fe8b81927bf05/15/alpine3.11/Dockerfile)
--	[`15.8.0-alpine3.12`, `15.8-alpine3.12`, `15-alpine3.12`, `alpine3.12`, `current-alpine3.12`](https://github.com/nodejs/docker-node/blob/4ab6ab7d06845aa950054ec5522fe8b81927bf05/15/alpine3.12/Dockerfile)
--	[`15.8.0-alpine3.13`, `15.8-alpine3.13`, `15-alpine3.13`, `alpine3.13`, `current-alpine3.13`](https://github.com/nodejs/docker-node/blob/dbee85cde7c9d11d9df2d9305df4039942fc1ba9/15/alpine3.13/Dockerfile)
--	[`15.8.0-buster`, `15.8-buster`, `15-buster`, `buster`, `current-buster`](https://github.com/nodejs/docker-node/blob/4ab6ab7d06845aa950054ec5522fe8b81927bf05/15/buster/Dockerfile)
--	[`15.8.0-buster-slim`, `15.8-buster-slim`, `15-buster-slim`, `buster-slim`, `current-buster-slim`](https://github.com/nodejs/docker-node/blob/4ab6ab7d06845aa950054ec5522fe8b81927bf05/15/buster-slim/Dockerfile)
--	[`15.8.0-stretch`, `15.8-stretch`, `15-stretch`, `stretch`, `current-stretch`, `15.8.0`, `15.8`, `15`, `latest`, `current`](https://github.com/nodejs/docker-node/blob/4ab6ab7d06845aa950054ec5522fe8b81927bf05/15/stretch/Dockerfile)
--	[`15.8.0-stretch-slim`, `15.8-stretch-slim`, `15-stretch-slim`, `stretch-slim`, `current-stretch-slim`, `15.8.0-slim`, `15.8-slim`, `15-slim`, `slim`, `current-slim`](https://github.com/nodejs/docker-node/blob/4ab6ab7d06845aa950054ec5522fe8b81927bf05/15/stretch-slim/Dockerfile)
+-	[`15.9.0-alpine3.10`, `15.9-alpine3.10`, `15-alpine3.10`, `alpine3.10`, `current-alpine3.10`](https://github.com/nodejs/docker-node/blob/f0ee14fac7ee37f694baa9dabfeb0a3dd1cc3a93/15/alpine3.10/Dockerfile)
+-	[`15.9.0-alpine3.11`, `15.9-alpine3.11`, `15-alpine3.11`, `alpine3.11`, `current-alpine3.11`, `15.9.0-alpine`, `15.9-alpine`, `15-alpine`, `alpine`, `current-alpine`](https://github.com/nodejs/docker-node/blob/f0ee14fac7ee37f694baa9dabfeb0a3dd1cc3a93/15/alpine3.11/Dockerfile)
+-	[`15.9.0-alpine3.12`, `15.9-alpine3.12`, `15-alpine3.12`, `alpine3.12`, `current-alpine3.12`](https://github.com/nodejs/docker-node/blob/f0ee14fac7ee37f694baa9dabfeb0a3dd1cc3a93/15/alpine3.12/Dockerfile)
+-	[`15.9.0-alpine3.13`, `15.9-alpine3.13`, `15-alpine3.13`, `alpine3.13`, `current-alpine3.13`](https://github.com/nodejs/docker-node/blob/f0ee14fac7ee37f694baa9dabfeb0a3dd1cc3a93/15/alpine3.13/Dockerfile)
+-	[`15.9.0-buster`, `15.9-buster`, `15-buster`, `buster`, `current-buster`](https://github.com/nodejs/docker-node/blob/f0ee14fac7ee37f694baa9dabfeb0a3dd1cc3a93/15/buster/Dockerfile)
+-	[`15.9.0-buster-slim`, `15.9-buster-slim`, `15-buster-slim`, `buster-slim`, `current-buster-slim`](https://github.com/nodejs/docker-node/blob/f0ee14fac7ee37f694baa9dabfeb0a3dd1cc3a93/15/buster-slim/Dockerfile)
+-	[`15.9.0-stretch`, `15.9-stretch`, `15-stretch`, `stretch`, `current-stretch`, `15.9.0`, `15.9`, `15`, `latest`, `current`](https://github.com/nodejs/docker-node/blob/f0ee14fac7ee37f694baa9dabfeb0a3dd1cc3a93/15/stretch/Dockerfile)
+-	[`15.9.0-stretch-slim`, `15.9-stretch-slim`, `15-stretch-slim`, `stretch-slim`, `current-stretch-slim`, `15.9.0-slim`, `15.9-slim`, `15-slim`, `slim`, `current-slim`](https://github.com/nodejs/docker-node/blob/f0ee14fac7ee37f694baa9dabfeb0a3dd1cc3a93/15/stretch-slim/Dockerfile)
 -	[`14.15.5-alpine3.10`, `14.15-alpine3.10`, `14-alpine3.10`, `fermium-alpine3.10`, `lts-alpine3.10`](https://github.com/nodejs/docker-node/blob/884bf23823005e9fba035ae34184222e030189db/14/alpine3.10/Dockerfile)
 -	[`14.15.5-alpine3.11`, `14.15-alpine3.11`, `14-alpine3.11`, `fermium-alpine3.11`, `lts-alpine3.11`, `14.15.5-alpine`, `14.15-alpine`, `14-alpine`, `fermium-alpine`, `lts-alpine`](https://github.com/nodejs/docker-node/blob/884bf23823005e9fba035ae34184222e030189db/14/alpine3.11/Dockerfile)
 -	[`14.15.5-alpine3.12`, `14.15-alpine3.12`, `14-alpine3.12`, `fermium-alpine3.12`, `lts-alpine3.12`](https://github.com/nodejs/docker-node/blob/884bf23823005e9fba035ae34184222e030189db/14/alpine3.12/Dockerfile)
