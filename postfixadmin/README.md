@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.3.6-apache`, `3.3-apache`, `3-apache`, `apache`, `3.3.6`, `3.3`, `3`, `latest`](https://github.com/postfixadmin/docker/blob/1bf306d0747aec808a39fce09d4151bc643b770a/apache/Dockerfile)
--	[`3.3.6-fpm`, `3.3-fpm`, `3-fpm`, `fpm`](https://github.com/postfixadmin/docker/blob/1bf306d0747aec808a39fce09d4151bc643b770a/fpm/Dockerfile)
--	[`3.3.6-fpm-alpine`, `3.3-fpm-alpine`, `3-fpm-alpine`, `fpm-alpine`](https://github.com/postfixadmin/docker/blob/1bf306d0747aec808a39fce09d4151bc643b770a/fpm-alpine/Dockerfile)
+-	[`3.3.7-apache`, `3.3-apache`, `3-apache`, `apache`, `3.3.7`, `3.3`, `3`, `latest`](https://github.com/postfixadmin/docker/blob/e58854f733ebb82e43bb0289278ed746753210b5/apache/Dockerfile)
+-	[`3.3.7-fpm`, `3.3-fpm`, `3-fpm`, `fpm`](https://github.com/postfixadmin/docker/blob/e58854f733ebb82e43bb0289278ed746753210b5/fpm/Dockerfile)
+-	[`3.3.7-fpm-alpine`, `3.3-fpm-alpine`, `3-fpm-alpine`, `fpm-alpine`](https://github.com/postfixadmin/docker/blob/e58854f733ebb82e43bb0289278ed746753210b5/fpm-alpine/Dockerfile)
 
 # Quick reference (cont.)
 
