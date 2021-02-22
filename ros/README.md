@@ -55,7 +55,7 @@ WARNING:
 -	[`foxy-ros1-bridge`, `foxy-ros1-bridge-focal`](https://github.com/osrf/docker_images/blob/f7d378b9d6ed10c72a2f686554f7b712e921c1aa/ros/foxy/ubuntu/focal/ros1-bridge/Dockerfile)
 -	[`rolling-ros-core`, `rolling-ros-core-focal`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/rolling/ubuntu/focal/ros-core/Dockerfile)
 -	[`rolling-ros-base`, `rolling-ros-base-focal`, `rolling`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/rolling/ubuntu/focal/ros-base/Dockerfile)
--	[`rolling-ros1-bridge`, `rolling-ros1-bridge-focal`](https://github.com/osrf/docker_images/blob/727ccbb47e31d2893e0cd097d5c83ef03cf49b5c/ros/rolling/ubuntu/focal/ros1-bridge/Dockerfile)
+-	[`rolling-ros1-bridge`, `rolling-ros1-bridge-focal`](https://github.com/osrf/docker_images/blob/0bdddc2c15b993fc0fbbcf80bfae5d3cc8bb6be5/ros/rolling/ubuntu/focal/ros1-bridge/Dockerfile)
 
 # Quick reference (cont.)
 
