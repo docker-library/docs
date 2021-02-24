@@ -17,7 +17,7 @@ WARNING:
 # Quick reference
 
 -	**Maintained by**:  
-	[the Docker Community](https://github.com/cpuguy83/docker-jruby)
+	[the Docker Community](https://github.com/jruby/docker-jruby)
 
 -	**Where to get help**:  
 	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
@@ -35,7 +35,7 @@ WARNING:
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/cpuguy83/docker-jruby/issues](https://github.com/cpuguy83/docker-jruby/issues)
+	[https://github.com/jruby/docker-jruby/issues](https://github.com/jruby/docker-jruby/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/jruby/)
