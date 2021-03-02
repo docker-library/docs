@@ -24,13 +24,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.2.0`, `6.2`, `6`, `latest`, `6.2.0-buster`, `6.2-buster`, `6-buster`, `buster`](https://github.com/docker-library/redis/blob/231905d0841f52ee4f3a5b8b42d62cd6d14a1a93/6.2/Dockerfile)
--	[`6.2.0-alpine`, `6.2-alpine`, `6-alpine`, `alpine`, `6.2.0-alpine3.13`, `6.2-alpine3.13`, `6-alpine3.13`, `alpine3.13`](https://github.com/docker-library/redis/blob/231905d0841f52ee4f3a5b8b42d62cd6d14a1a93/6.2/alpine/Dockerfile)
--	[`6.0.11`, `6.0`, `6.0.11-buster`, `6.0-buster`](https://github.com/docker-library/redis/blob/231905d0841f52ee4f3a5b8b42d62cd6d14a1a93/6.0/Dockerfile)
--	[`6.0.11-alpine`, `6.0-alpine`, `6.0.11-alpine3.13`, `6.0-alpine3.13`](https://github.com/docker-library/redis/blob/231905d0841f52ee4f3a5b8b42d62cd6d14a1a93/6.0/alpine/Dockerfile)
--	[`5.0.11`, `5.0`, `5`, `5.0.11-buster`, `5.0-buster`, `5-buster`](https://github.com/docker-library/redis/blob/8253b78187024dda7bf1ade64e6680ab6406e5c4/5/Dockerfile)
--	[`5.0.11-32bit`, `5.0-32bit`, `5-32bit`, `5.0.11-32bit-buster`, `5.0-32bit-buster`, `5-32bit-buster`](https://github.com/docker-library/redis/blob/8253b78187024dda7bf1ade64e6680ab6406e5c4/5/32bit/Dockerfile)
--	[`5.0.11-alpine`, `5.0-alpine`, `5-alpine`, `5.0.11-alpine3.13`, `5.0-alpine3.13`, `5-alpine3.13`](https://github.com/docker-library/redis/blob/8253b78187024dda7bf1ade64e6680ab6406e5c4/5/alpine/Dockerfile)
+-	[`6.2.1`, `6.2`, `6`, `latest`, `6.2.1-buster`, `6.2-buster`, `6-buster`, `buster`](https://github.com/docker-library/redis/blob/6f1af45d6b0db298e0118ab4406cf8edb642c337/6.2/Dockerfile)
+-	[`6.2.1-alpine`, `6.2-alpine`, `6-alpine`, `alpine`, `6.2.1-alpine3.13`, `6.2-alpine3.13`, `6-alpine3.13`, `alpine3.13`](https://github.com/docker-library/redis/blob/6f1af45d6b0db298e0118ab4406cf8edb642c337/6.2/alpine/Dockerfile)
+-	[`6.0.12`, `6.0`, `6.0.12-buster`, `6.0-buster`](https://github.com/docker-library/redis/blob/7b37611579e91f4ce356dfc2954500b5d6d43b60/6.0/Dockerfile)
+-	[`6.0.12-alpine`, `6.0-alpine`, `6.0.12-alpine3.13`, `6.0-alpine3.13`](https://github.com/docker-library/redis/blob/7b37611579e91f4ce356dfc2954500b5d6d43b60/6.0/alpine/Dockerfile)
+-	[`5.0.12`, `5.0`, `5`, `5.0.12-buster`, `5.0-buster`, `5-buster`](https://github.com/docker-library/redis/blob/147762b57f4d4391ba6cf8fbd1e7590a606643ef/5/Dockerfile)
+-	[`5.0.12-32bit`, `5.0-32bit`, `5-32bit`, `5.0.12-32bit-buster`, `5.0-32bit-buster`, `5-32bit-buster`](https://github.com/docker-library/redis/blob/147762b57f4d4391ba6cf8fbd1e7590a606643ef/5/32bit/Dockerfile)
+-	[`5.0.12-alpine`, `5.0-alpine`, `5-alpine`, `5.0.12-alpine3.13`, `5.0-alpine3.13`, `5-alpine3.13`](https://github.com/docker-library/redis/blob/147762b57f4d4391ba6cf8fbd1e7590a606643ef/5/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
