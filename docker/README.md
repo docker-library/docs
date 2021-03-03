@@ -24,10 +24,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`20.10.4`, `20.10`, `20`, `latest`](https://github.com/docker-library/docker/blob/d60bf352d0e0e0e9783984138dcac2508b3a281f/20.10/Dockerfile)
--	[`20.10.4-dind`, `20.10-dind`, `20-dind`, `dind`](https://github.com/docker-library/docker/blob/094faa88f437cafef7aeb0cc36e75b59046cc4b9/20.10/dind/Dockerfile)
--	[`20.10.4-dind-rootless`, `20.10-dind-rootless`, `20-dind-rootless`, `dind-rootless`](https://github.com/docker-library/docker/blob/d60bf352d0e0e0e9783984138dcac2508b3a281f/20.10/dind-rootless/Dockerfile)
--	[`20.10.4-git`, `20.10-git`, `20-git`, `git`](https://github.com/docker-library/docker/blob/387e351394bfad74bceebf8303c6c8e39c3d4ed4/20.10/git/Dockerfile)
+-	[`20.10.5`, `20.10`, `20`, `latest`](https://github.com/docker-library/docker/blob/9728dce92752348ac2623bcf96436f1a89e15dd3/20.10/Dockerfile)
+-	[`20.10.5-dind`, `20.10-dind`, `20-dind`, `dind`](https://github.com/docker-library/docker/blob/094faa88f437cafef7aeb0cc36e75b59046cc4b9/20.10/dind/Dockerfile)
+-	[`20.10.5-dind-rootless`, `20.10-dind-rootless`, `20-dind-rootless`, `dind-rootless`](https://github.com/docker-library/docker/blob/9728dce92752348ac2623bcf96436f1a89e15dd3/20.10/dind-rootless/Dockerfile)
+-	[`20.10.5-git`, `20.10-git`, `20-git`, `git`](https://github.com/docker-library/docker/blob/387e351394bfad74bceebf8303c6c8e39c3d4ed4/20.10/git/Dockerfile)
 -	[`19.03.15`, `19.03`, `19`](https://github.com/docker-library/docker/blob/835c371c516ebdf67adc0c76bbfb38bf9d3e586c/19.03/Dockerfile)
 -	[`19.03.15-dind`, `19.03-dind`, `19-dind`](https://github.com/docker-library/docker/blob/b1d2628005e12e79079c025c3653cba248d6f264/19.03/dind/Dockerfile)
 -	[`19.03.15-dind-rootless`, `19.03-dind-rootless`, `19-dind-rootless`](https://github.com/docker-library/docker/blob/835c371c516ebdf67adc0c76bbfb38bf9d3e586c/19.03/dind-rootless/Dockerfile)
