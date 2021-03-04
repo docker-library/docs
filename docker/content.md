@@ -209,6 +209,10 @@ Some of these will not be supported based on the settings on the host's `dockerd
 
 For more information about using the experimental "rootless" image variants, see [docker-library/docker#174](https://github.com/docker-library/docker/pull/174).
 
+Note that you still need `--privileged` ([docker-library/docker#151](https://github.com/docker-library/docker/issues/151#issuecomment-483185972) & [docker-library/docker#281](https://github.com/docker-library/docker/issues/281#issuecomment-744766015))
+
+As of `20.10.x` `--experimental` is no longer needed https://github.com/moby/moby/pull/40759
+
 ## Where to Store Data
 
 Important note: There are several ways to store data used by applications that run in Docker containers. We encourage users of the `%%REPO%%` images to familiarize themselves with the options available, including:
