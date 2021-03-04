@@ -209,9 +209,7 @@ Some of these will not be supported based on the settings on the host's `dockerd
 
 For more information about using the experimental "rootless" image variants, see [docker-library/docker#174](https://github.com/docker-library/docker/pull/174).
 
-Note that you still need `--privileged` ([docker-library/docker#151](https://github.com/docker-library/docker/issues/151#issuecomment-483185972) & [docker-library/docker#281](https://github.com/docker-library/docker/issues/281#issuecomment-744766015))
-
-As of `20.10.x` `--experimental` is no longer needed https://github.com/moby/moby/pull/40759
+**Note:** just like the regular `dind` images, `--privileged` is required for Docker-in-Docker to function properly ([docker-library/docker#151](https://github.com/docker-library/docker/issues/151#issuecomment-483185972) & [docker-library/docker#281](https://github.com/docker-library/docker/issues/281#issuecomment-744766015)). For `19.03.x` rootless images, an arg of `--experimental` is required for `dockerd` ([docker/docker#40759](https://github.com/docker/docker/pull/40759)).
 
 ## Where to Store Data
 
