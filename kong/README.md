@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.3.2-alpine`, `2.3-alpine`, `2.3.2`, `2.3`, `2`, `alpine`, `latest`](https://github.com/Kong/docker-kong/blob/becb6cd2232f14e79f77531b5ad0181f1eec9715/alpine/Dockerfile)
--	[`2.3.2-ubuntu`, `2.3-ubuntu`, `ubuntu`](https://github.com/Kong/docker-kong/blob/becb6cd2232f14e79f77531b5ad0181f1eec9715/ubuntu/Dockerfile)
--	[`2.3.2-centos`, `2.3-centos`, `centos`](https://github.com/Kong/docker-kong/blob/becb6cd2232f14e79f77531b5ad0181f1eec9715/centos/Dockerfile)
+-	[`2.3.3-alpine`, `2.3-alpine`, `2.3.3`, `2.3`, `2`, `alpine`, `latest`](https://github.com/Kong/docker-kong/blob/6a6944f5abb7bd2708a47f5571a5133ad976b343/alpine/Dockerfile)
+-	[`2.3.3-ubuntu`, `2.3-ubuntu`, `ubuntu`](https://github.com/Kong/docker-kong/blob/6a6944f5abb7bd2708a47f5571a5133ad976b343/ubuntu/Dockerfile)
+-	[`2.3.3-centos`, `2.3-centos`, `centos`](https://github.com/Kong/docker-kong/blob/6a6944f5abb7bd2708a47f5571a5133ad976b343/centos/Dockerfile)
 -	[`2.2.2-alpine`, `2.2-alpine`, `2.2.2`, `2.2`](https://github.com/Kong/docker-kong/blob/40f9973922b56ac590053b56f159bdce802e9296/alpine/Dockerfile)
 -	[`2.2.2-ubuntu`, `2.2-ubuntu`](https://github.com/Kong/docker-kong/blob/40f9973922b56ac590053b56f159bdce802e9296/ubuntu/Dockerfile)
 -	[`2.2.2-centos`, `2.2-centos`](https://github.com/Kong/docker-kong/blob/40f9973922b56ac590053b56f159bdce802e9296/centos/Dockerfile)
