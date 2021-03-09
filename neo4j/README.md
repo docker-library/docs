@@ -20,7 +20,7 @@ WARNING:
 	[Neo4j](https://github.com/neo4j/docker-neo4j)
 
 -	**Where to get help**:  
-	[Stack Overflow](http://stackoverflow.com/questions/tagged/neo4j)
+	[Neo4j Community Forums](https://community.neo4j.com)
 
 # Supported tags and respective `Dockerfile` links
 
