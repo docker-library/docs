@@ -9,6 +9,8 @@
 -	Images for Plone 5.x and Plone 4.x
 -	Enable add-ons via environment variables
 -	Choose between [Debian](https://www.debian.org/) or [Alpine](http://www.alpinelinux.org/) based images.
+-	Built-in RelStorage support, configurable via environment variables (requires Plone 5.2.4+)
+-	Built-in LDAP/AD support via pas.plugins.ldap (requires Plone 5.2.4+)
 
 ## Usage
 
@@ -121,12 +123,42 @@ $ curl -H 'Accept: application/json' http://localhost:8080/plone
 -	`CORS_ALLOW_HEADERS` - A comma separated list of request headers allowed to be sent by the client, e.g. `X-My-Header`. Defaults to `Accept,Authorization,Content-Type,X-Custom-Header`
 -	`CORS_MAX_AGE` - Indicates how long the results of a preflight request can be cached. Defaults to `3600`
 
+**RELSTORAGE:**
+
+-	`RELSTORAGE_ADAPTER_OPTIONS` - A comma separated list of RelStorage adapter options to set for the plone instance (using [plone.recipe.zope2instance](https://relstorage.readthedocs.io/en/latest/configure-application.html#configuring-plone)). This is required in order to use RelStorage.
+
+All other available environment variables match exactly with RelStorage settings, according to the following table and the [settings specification available on the docs](https://relstorage.readthedocs.io/en/latest/relstorage-options.html).
+
+| Environment variable                      | RelStorage option              | Default value                   |
+|-------------------------------------------|--------------------------------|---------------------------------|
+| RELSTORAGE_NAME                           | name                           | None                            |
+| RELSTORAGE_READ_ONLY                      | read-only                      | None                            |
+| RELSTORAGE_KEEP_HISTORY                   | keep-history                   | None                            |
+| RELSTORAGE_COMMIT_LOCK_TIMEOUT            | commit-lock-timeout            | None                            |
+| RELSTORAGE_COMMIT_LOCK_ID                 | commit-lock-id                 | None                            |
+| RELSTORAGE_CREATE_SCHEMA                  | create-schema                  | None                            |
+| RELSTORAGE_BLOB_DIR                       | blob-dir                       | /plone/instance/var/blobstorage |
+| RELSTORAGE_SHARED_BLOB_DIR                | shared-blob-dir                | None                            |
+| RELSTORAGE_BLOB_CACHE_SIZE                | blob-cache-size                | None                            |
+| RELSTORAGE_BLOB_CACHE_SIZE_CHECK          | blob-cache-size-check          | None                            |
+| RELSTORAGE_BLOB_CACHE_SIZE_CHECK_EXTERNAL | blob-cache-size-check-external | None                            |
+| RELSTORAGE_BLOB_CHUNK_SIZE                | blob-chunk-size                | None                            |
+| RELSTORAGE_REPLICA_CONF                   | replica-conf                   | None                            |
+| RELSTORAGE_RO_REPLICA_CONF                | ro-replica-conf                | None                            |
+| RELSTORAGE_REPLICA_TIMEOUT                | replica-timeout                | None                            |
+| RELSTORAGE_REVERT_WHEN_STALE              | revert-when-stale              | None                            |
+| RELSTORAGE_PACK_GC                        | pack-gc                        | None                            |
+| RELSTORAGE_PACK_PREPACK_ONLY              | pack-prepack-only              | None                            |
+| RELSTORAGE_PACK_SKIP_PREPACK              | pack-skip-prepack              | None                            |
+| RELSTORAGE_PACK_BATCH_TIMEOUT             | pack-batch-timeout             | None                            |
+| RELSTORAGE_PACK_COMMIT_BUSY_DELAY         | pack-commit-busy-delay         | None                            |
+| RELSTORAGE_CACHE_PREFIX                   | cache-prefix                   | None                            |
+| RELSTORAGE_CACHE_LOCAL_MB                 | cache-local-mb                 | None                            |
+| RELSTORAGE_CACHE_LOCAL_OBJECT_MAX         | cache-local-object-max         | None                            |
+| RELSTORAGE_CACHE_LOCAL_COMPRESSION        | cache-local-compressione       | None                            |
+| RELSTORAGE_CACHE_DELTA_SIZE_LIMIT         | cache-delta-size-limit         | None                            |
+| RELSTORAGE_CACHE_LOCAL_DIR                | cache-local-dir                | None                            |
+
 ## Documentation
 
 Full documentation for end users can be found online at [docs.plone.org](https://docs.plone.org/manage/docker/docs/usage/index.html)
-
-## Credits
-
-This docker image was originally financed by the [European Environment Agency](http://eea.europa.eu), an agency of the European Union.
-
-Thanks to [Antonio De Marinis](https://github.com/demarant), [Sven Strack](https://github.com/svx) and [Alin Voinea](https://github.com/avoinea) for their preliminary work.
