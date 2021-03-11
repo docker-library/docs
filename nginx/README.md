@@ -24,10 +24,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.19.7`, `mainline`, `1`, `1.19`, `latest`](https://github.com/nginxinc/docker-nginx/blob/fa2213a76da35137a5aee565cef5095a209aeb3d/mainline/debian/Dockerfile)
--	[`1.19.7-perl`, `mainline-perl`, `1-perl`, `1.19-perl`, `perl`](https://github.com/nginxinc/docker-nginx/blob/fa2213a76da35137a5aee565cef5095a209aeb3d/mainline/debian-perl/Dockerfile)
--	[`1.19.7-alpine`, `mainline-alpine`, `1-alpine`, `1.19-alpine`, `alpine`](https://github.com/nginxinc/docker-nginx/blob/fa2213a76da35137a5aee565cef5095a209aeb3d/mainline/alpine/Dockerfile)
--	[`1.19.7-alpine-perl`, `mainline-alpine-perl`, `1-alpine-perl`, `1.19-alpine-perl`, `alpine-perl`](https://github.com/nginxinc/docker-nginx/blob/fa2213a76da35137a5aee565cef5095a209aeb3d/mainline/alpine-perl/Dockerfile)
+-	[`1.19.8`, `mainline`, `1`, `1.19`, `latest`](https://github.com/nginxinc/docker-nginx/blob/dcaaf66e4464037b1a887541f39acf8182233ab8/mainline/debian/Dockerfile)
+-	[`1.19.8-perl`, `mainline-perl`, `1-perl`, `1.19-perl`, `perl`](https://github.com/nginxinc/docker-nginx/blob/dcaaf66e4464037b1a887541f39acf8182233ab8/mainline/debian-perl/Dockerfile)
+-	[`1.19.8-alpine`, `mainline-alpine`, `1-alpine`, `1.19-alpine`, `alpine`](https://github.com/nginxinc/docker-nginx/blob/dcaaf66e4464037b1a887541f39acf8182233ab8/mainline/alpine/Dockerfile)
+-	[`1.19.8-alpine-perl`, `mainline-alpine-perl`, `1-alpine-perl`, `1.19-alpine-perl`, `alpine-perl`](https://github.com/nginxinc/docker-nginx/blob/dcaaf66e4464037b1a887541f39acf8182233ab8/mainline/alpine-perl/Dockerfile)
 -	[`1.18.0`, `stable`, `1.18`](https://github.com/nginxinc/docker-nginx/blob/3fb70ddd7094c1fdd50cc83d432643dc10ab6243/stable/debian/Dockerfile)
 -	[`1.18.0-perl`, `stable-perl`, `1.18-perl`](https://github.com/nginxinc/docker-nginx/blob/3fb70ddd7094c1fdd50cc83d432643dc10ab6243/stable/debian-perl/Dockerfile)
 -	[`1.18.0-alpine`, `stable-alpine`, `1.18-alpine`](https://github.com/nginxinc/docker-nginx/blob/3fb70ddd7094c1fdd50cc83d432643dc10ab6243/stable/alpine/Dockerfile)
