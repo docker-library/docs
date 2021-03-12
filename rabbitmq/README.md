@@ -192,28 +192,23 @@ If you wish to change the default vhost, you can do so with the `RABBITMQ_DEFAUL
 $ docker run -d --hostname my-rabbit --name some-rabbit -e RABBITMQ_DEFAULT_VHOST=my_vhost rabbitmq:3-management
 ```
 
-### Enabling HiPE (deprecated)
-
-**Note**: HiPE is disabled since version 3.7.15 of rabbimq images (https://github.com/docker-library/rabbitmq/pull/340)
-
-See the [RabbitMQ "Configuration"](http://www.rabbitmq.com/configure.html#config-items) for more information about various configuration options.
-
-For enabling the HiPE compiler on startup use `RABBITMQ_HIPE_COMPILE` set to `1`. According to the official documentation:
-
-> Set to true to precompile parts of RabbitMQ with HiPE, a just-in-time compiler for Erlang. This will increase server throughput at the cost of increased startup time. You might see 20-50% better performance at the cost of a few minutes delay at startup.
-
-It is therefore important to take that startup delay into consideration when configuring health checks, automated clustering etc.
-
 ### Enabling Plugins
 
-Creating a Dockerfile will have them enabled at runtime. To see the full list of plugins present on the image `rabbitmq-plugins list`
+RabbitMQ plugins can be [enabled at runtime](https://www.rabbitmq.com/plugins.html) in a custom `Dockerfile` like so:
 
 ```Dockerfile
-FROM rabbitmq:3.7-management
+FROM rabbitmq:3-management
 RUN rabbitmq-plugins enable --offline rabbitmq_mqtt rabbitmq_federation_management rabbitmq_stomp
 ```
 
-You can also mount a file at `/etc/rabbitmq/enabled_plugins` with contents as an erlang list of atoms ending with a period.
+Another option would be to mount a file at `/etc/rabbitmq/enabled_plugins` to control what plugins are enabled.
+See [The Enabled Plugins File](https://www.rabbitmq.com/plugins.html#enabled-plugins-file) in the RabbitMQ guide on plugins.
+
+To see the full list of plugins available in the image, use
+
+``` shell
+rabbitmq-plugins list
+```
 
 Example `enabled_plugins`
 
