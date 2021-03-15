@@ -100,13 +100,18 @@ The routing protocol has been dramatically improved and adds support for account
 # Check "docker run" for more information.
 
 $ docker run -d --name nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 nats
-[INF] Starting nats-server version 2.1.7
-[INF] Git commit [bf0930e]
+[INF] Starting nats-server
+[INF]   Version:  2.2.0
+[INF]   Git:      [0e3c723]
+[INF]   Name:     NAAPD2KOP6BXYPTBEG5YGZAHQPECYUZSBODAYTK3S6J7SJTR5AC6W7IX
+[INF]   ID:       NAAPD2KOP6BXYPTBEG5YGZAHQPECYUZSBODAYTK3S6J7SJTR5AC6W7IX
+[INF] Using configuration file: nats-server.conf
+[INF] Starting http monitor on 0.0.0.0:8222
 [INF] Listening for client connections on 0.0.0.0:4222
-[INF] Server id is NANEPV46X4QZ7FR5DD4U7WLWI6BWRLJXFTHO2FIJRGFSW5NLH3MOV7VZ
 [INF] Server is ready
+[INF] Cluster name is 3781IJ8hK8LAGThaBCpRQy
+[WRN] Cluster name was dynamically generated, consider setting one
 [INF] Listening for route connections on 0.0.0.0:6222
-
 ...
 
 # To run a second server and cluster them together..
@@ -117,21 +122,32 @@ $ docker run -d --name=nats-2 --link nats-main -p 4222:4222 -p 6222:6222 -p 8222
 
 # If you want to verify the routes are connected, try this instead:
 $ docker run -d --name=nats-2 --link nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 nats -c nats-server.conf --routes=nats-route://ruser:T0pS3cr3t@nats-main:6222 -DV
-[INF] Starting nats-server version 2.1.7
-[DBG] Go build version go1.13.10
-[INF] Git commit [bf0930e]
+[INF] Starting nats-server
+[INF]   Version:  2.2.0
+[INF]   Git:      [0e3c723]
+[DBG]   Go build: go1.16.2
+[INF]   Name:     NCMJQTEA7WM3LY6MKUUG24DSIEHISE2EZF2SBO72JXP7BNNU6YX26WF2
+[INF]   ID:       NCMJQTEA7WM3LY6MKUUG24DSIEHISE2EZF2SBO72JXP7BNNU6YX26WF2
+[INF] Using configuration file: nats-server.conf
+[DBG] Created system account: "$SYS"
 [INF] Starting http monitor on 0.0.0.0:8222
 [INF] Listening for client connections on 0.0.0.0:4222
-[INF] Server id is NC5WVL732YIR7N2TH3EHLLTGBNYJMZUUJMYEVWTZ3KU6DQB6ROGPAWYM
-[INF] Server is ready
 [DBG] Get non local IPs for "0.0.0.0"
-[DBG]  ip=172.17.0.3
+[DBG]   ip=172.17.0.3
+[INF] Server is ready
+[INF] Cluster name is dvuGqmwENiIrewXIJJnthd
+[WRN] Cluster name was dynamically generated, consider setting one
 [INF] Listening for route connections on 0.0.0.0:6222
-[DBG] Trying to connect to route on nats-main:6222
-[DBG] 172.17.0.2:6222 - rid:1 - Route connect msg sent
-[INF] 172.17.0.2:6222 - rid:1 - Route connection created
-[DBG] 172.17.0.2:6222 - rid:1 - Registering remote route "ND2WROCKLR6NGB6E5RUV6FQNPQO475MWOR4IGM6E6AZNKVTKXDD6YCM5"
-[DBG] 172.17.0.2:6222 - rid:1 - Sent local subscriptions to route
+[DBG] Trying to connect to route on nats-main:6222 (172.17.0.2:6222)
+[DBG] 172.17.0.2:6222 - rid:3 - Route connect msg sent
+[INF] 172.17.0.2:6222 - rid:3 - Route connection created
+[INF] 172.17.0.2:6222 - rid:3 - Router connection closed: Cluster Name Conflict
+[DBG] Attempting reconnect for solicited route "nats-route://ruser:T0pS3cr3t@nats-main:6222"
+[DBG] Trying to connect to route on nats-main:6222 (172.17.0.2:6222)
+[DBG] 172.17.0.2:6222 - rid:4 - Route connect msg sent
+[INF] 172.17.0.2:6222 - rid:4 - Route connection created
+[DBG] 172.17.0.2:6222 - rid:4 - Registering remote route "NCFLC67BGF4JYOACT72Y7AWM4EE75MVJRESKBE4WUNEALXA2JRPQA66Q"
+[DBG] 172.17.0.2:6222 - rid:4 - Sent local subscriptions to route
 ```
 
 The server will load the configuration file below. Any command line flags can override these values.
@@ -147,6 +163,8 @@ monitor_port: 8222
 
 # This is for clustering multiple servers together.
 cluster {
+  # It is recommended to set a cluster name
+  name: "my_cluster"
 
   # Route connections to be received on any interface on port 6222
   port: 6222
@@ -172,14 +190,15 @@ cluster {
 Server Options:
     -a, --addr <host>                Bind to host address (default: 0.0.0.0)
     -p, --port <port>                Use port for clients (default: 4222)
+    -n, --name <server_name>         Server name (default: auto)
     -P, --pid <file>                 File to store PID
     -m, --http_port <port>           Use port for http monitoring
     -ms,--https_port <port>          Use port for https monitoring
     -c, --config <file>              Configuration file
+    -t                               Test configuration and exit
     -sl,--signal <signal>[=<pid>]    Send signal to nats-server process (stop, quit, reopen, reload)
                                      <pid> can be either a PID (e.g. 1) or the path to a PID file (e.g. /var/run/nats-server.pid)
         --client_advertise <string>  Client URL to advertise to other servers
-    -t                               Test configuration and exit
 
 Logging Options:
     -l, --log <file>                 File to redirect log output
@@ -191,6 +210,10 @@ Logging Options:
     -VV                              Verbose trace (traces system account as well)
     -DV                              Debug and trace
     -DVV                             Debug and verbose trace (traces system account as well)
+
+JetStream Options:
+    -js, --jetstream                 Enable JetStream functionality.
+    -sd, --store_dir <dir>           Set the storage directory.
 
 Authorization Options:
         --user <user>                User required for connections
@@ -207,10 +230,10 @@ TLS Options:
 Cluster Options:
         --routes <rurl-1, rurl-2>    Routes to solicit and connect
         --cluster <cluster-url>      Cluster URL for solicited routes
-        --no_advertise <bool>        Advertise known cluster IPs to clients
+        --cluster_name <string>      Cluster Name, if not set one will be dynamically generated
+        --no_advertise <bool>        Do not advertise known cluster information to clients
         --cluster_advertise <string> Cluster URL to advertise to other servers
         --connect_retries <number>   For implicit routes, number of connect retries
-
 
 Common Options:
     -h, --help                       Show this message
