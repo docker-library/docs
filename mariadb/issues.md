@@ -1,1 +1,1 @@
-[https://jira.mariadb.org/](https://jira.mariadb.org/) under "MDEV" Project, and component "Packaging" or [GitHub](%%GITHUB-REPO%%/issues)
+[https://jira.mariadb.org/](https://jira.mariadb.org/) under "MDEV" Project, and component "Docker" or [GitHub](%%GITHUB-REPO%%/issues)
