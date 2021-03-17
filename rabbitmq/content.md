@@ -121,6 +121,7 @@ RABBITMQ_MANAGEMENT_SSL_FAIL_IF_NO_PEER_CERT
 RABBITMQ_MANAGEMENT_SSL_KEYFILE
 RABBITMQ_MANAGEMENT_SSL_VERIFY
 ```
+
 Note that enabling the managemnt interface over SSL will disable it over TCP (port 5672 by default).
 
 ### Setting default user and password
