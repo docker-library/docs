@@ -28,10 +28,10 @@ WARNING:
 
 ## Simple Tags
 
--	[`1.6.0-rc2-buster`, `1.6.0-buster`, `1.6-buster`, `1.6-rc-buster`](https://github.com/docker-library/julia/blob/f87eb3489cbce17e565e8434e0650130063ffa41/1.6-rc/buster/Dockerfile)
--	[`1.6.0-rc2-alpine3.13`, `1.6.0-alpine3.13`, `1.6-alpine3.13`, `1.6-rc-alpine3.13`, `1.6.0-rc2-alpine`, `1.6.0-alpine`, `1.6-alpine`, `1.6-rc-alpine`](https://github.com/docker-library/julia/blob/82bc0a63cfded9d8eac2d7ef64b42d3c0315c6cc/1.6-rc/alpine3.13/Dockerfile)
--	[`1.6.0-rc2-windowsservercore-1809`, `1.6.0-windowsservercore-1809`, `1.6-windowsservercore-1809`, `1.6-rc-windowsservercore-1809`](https://github.com/docker-library/julia/blob/f87eb3489cbce17e565e8434e0650130063ffa41/1.6-rc/windows/windowsservercore-1809/Dockerfile)
--	[`1.6.0-rc2-windowsservercore-ltsc2016`, `1.6.0-windowsservercore-ltsc2016`, `1.6-windowsservercore-ltsc2016`, `1.6-rc-windowsservercore-ltsc2016`](https://github.com/docker-library/julia/blob/f87eb3489cbce17e565e8434e0650130063ffa41/1.6-rc/windows/windowsservercore-ltsc2016/Dockerfile)
+-	[`1.6.0-rc3-buster`, `1.6.0-buster`, `1.6-buster`, `1.6-rc-buster`](https://github.com/docker-library/julia/blob/bd481047baf707bfac6b6c918654256c4a6b4608/1.6-rc/buster/Dockerfile)
+-	[`1.6.0-rc3-alpine3.13`, `1.6.0-alpine3.13`, `1.6-alpine3.13`, `1.6-rc-alpine3.13`, `1.6.0-rc3-alpine`, `1.6.0-alpine`, `1.6-alpine`, `1.6-rc-alpine`](https://github.com/docker-library/julia/blob/bd481047baf707bfac6b6c918654256c4a6b4608/1.6-rc/alpine3.13/Dockerfile)
+-	[`1.6.0-rc3-windowsservercore-1809`, `1.6.0-windowsservercore-1809`, `1.6-windowsservercore-1809`, `1.6-rc-windowsservercore-1809`](https://github.com/docker-library/julia/blob/bd481047baf707bfac6b6c918654256c4a6b4608/1.6-rc/windows/windowsservercore-1809/Dockerfile)
+-	[`1.6.0-rc3-windowsservercore-ltsc2016`, `1.6.0-windowsservercore-ltsc2016`, `1.6-windowsservercore-ltsc2016`, `1.6-rc-windowsservercore-ltsc2016`](https://github.com/docker-library/julia/blob/bd481047baf707bfac6b6c918654256c4a6b4608/1.6-rc/windows/windowsservercore-ltsc2016/Dockerfile)
 -	[`1.5.4-buster`, `1.5-buster`, `1-buster`, `buster`](https://github.com/docker-library/julia/blob/fd7152819b13e0d953e90c65af1d734654e6ec3d/1.5/buster/Dockerfile)
 -	[`1.5.4-alpine3.13`, `1.5-alpine3.13`, `1-alpine3.13`, `alpine3.13`, `1.5.4-alpine`, `1.5-alpine`, `1-alpine`, `alpine`](https://github.com/docker-library/julia/blob/fd7152819b13e0d953e90c65af1d734654e6ec3d/1.5/alpine3.13/Dockerfile)
 -	[`1.5.4-alpine3.12`, `1.5-alpine3.12`, `1-alpine3.12`, `alpine3.12`](https://github.com/docker-library/julia/blob/fd7152819b13e0d953e90c65af1d734654e6ec3d/1.5/alpine3.12/Dockerfile)
@@ -44,10 +44,10 @@ WARNING:
 
 ## Shared Tags
 
--	`1.6.0-rc2`, `1.6.0`, `1.6`, `1.6-rc`:
-	-	[`1.6.0-rc2-buster`](https://github.com/docker-library/julia/blob/f87eb3489cbce17e565e8434e0650130063ffa41/1.6-rc/buster/Dockerfile)
-	-	[`1.6.0-rc2-windowsservercore-1809`](https://github.com/docker-library/julia/blob/f87eb3489cbce17e565e8434e0650130063ffa41/1.6-rc/windows/windowsservercore-1809/Dockerfile)
-	-	[`1.6.0-rc2-windowsservercore-ltsc2016`](https://github.com/docker-library/julia/blob/f87eb3489cbce17e565e8434e0650130063ffa41/1.6-rc/windows/windowsservercore-ltsc2016/Dockerfile)
+-	`1.6.0-rc3`, `1.6.0`, `1.6`, `1.6-rc`:
+	-	[`1.6.0-rc3-buster`](https://github.com/docker-library/julia/blob/bd481047baf707bfac6b6c918654256c4a6b4608/1.6-rc/buster/Dockerfile)
+	-	[`1.6.0-rc3-windowsservercore-1809`](https://github.com/docker-library/julia/blob/bd481047baf707bfac6b6c918654256c4a6b4608/1.6-rc/windows/windowsservercore-1809/Dockerfile)
+	-	[`1.6.0-rc3-windowsservercore-ltsc2016`](https://github.com/docker-library/julia/blob/bd481047baf707bfac6b6c918654256c4a6b4608/1.6-rc/windows/windowsservercore-ltsc2016/Dockerfile)
 -	`1.5.4`, `1.5`, `1`, `latest`:
 	-	[`1.5.4-buster`](https://github.com/docker-library/julia/blob/fd7152819b13e0d953e90c65af1d734654e6ec3d/1.5/buster/Dockerfile)
 	-	[`1.5.4-windowsservercore-1809`](https://github.com/docker-library/julia/blob/fd7152819b13e0d953e90c65af1d734654e6ec3d/1.5/windows/windowsservercore-1809/Dockerfile)
