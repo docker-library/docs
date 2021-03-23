@@ -9,6 +9,8 @@
 -	Images for Plone 5.x and Plone 4.x
 -	Enable add-ons via environment variables
 -	Choose between [Debian](https://www.debian.org/) or [Alpine](http://www.alpinelinux.org/) based images.
+-	Built-in RelStorage support, configurable via environment variables (requires Plone 5.2.4+)
+-	Built-in LDAP/AD support via pas.plugins.ldap (requires Plone 5.2.4+)
 
 ## Usage
 
@@ -121,12 +123,19 @@ $ curl -H 'Accept: application/json' http://localhost:8080/plone
 -	`CORS_ALLOW_HEADERS` - A comma separated list of request headers allowed to be sent by the client, e.g. `X-My-Header`. Defaults to `Accept,Authorization,Content-Type,X-Custom-Header`
 -	`CORS_MAX_AGE` - Indicates how long the results of a preflight request can be cached. Defaults to `3600`
 
+**RELSTORAGE:**
+
+-	`RELSTORAGE_ADAPTER_OPTIONS` - A comma separated list of RelStorage adapter options to set for the plone instance (using [plone.recipe.zope2instance](https://relstorage.readthedocs.io/en/latest/configure-application.html#configuring-plone)). This is required in order to use RelStorage.
+
+All other available environment variables match exactly with RelStorage settings, according to the [settings specification available on the docs](https://relstorage.readthedocs.io/en/latest/relstorage-options.html).
+
+-	`RELSTORAGE_NAME` - **name** - The name of the storage.
+-	`RELSTORAGE_READ_ONLY` - **read-only** - If true, only reads may be executed against the storage.
+-	`RELSTORAGE_KEEP_HISTORY` - **keep-history** - If this option is set to true (the default), the adapter will create and use a history-preserving database schema (like FileStorage).
+-	`RELSTORAGE_BLOB_DIR` - **blob-dir** - If supplied, the storage will provide ZODB blob support; this option specifies the name of the directory to hold blob data. The directory will be created if it does not exist. If no value (or an empty value) is provided, then no blob support will be provided. Default: `/plone/instance/var/blobstorage`
+
+	[See more](https://relstorage.readthedocs.io/en/latest/relstorage-options.html)
+
 ## Documentation
 
 Full documentation for end users can be found online at [docs.plone.org](https://docs.plone.org/manage/docker/docs/usage/index.html)
-
-## Credits
-
-This docker image was originally financed by the [European Environment Agency](http://eea.europa.eu), an agency of the European Union.
-
-Thanks to [Antonio De Marinis](https://github.com/demarant), [Sven Strack](https://github.com/svx) and [Alin Voinea](https://github.com/avoinea) for their preliminary work.
