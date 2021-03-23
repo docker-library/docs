@@ -16,7 +16,7 @@ The `latest` tag for this image now points to the latest released implementation
 
 InfluxDB 2.x provides a 1.x-compatible API, but expects a different storage layout on disk. To bridge this mismatch, the InfluxDB image contains extra functionality to migrate 1.x data and config into 2.x layouts automatically before booting the `influxd` server.
 
-The automated upgrade process also bootstraps an initial admin user, organization, and bucket in the system, so it uses the same set of environment variables as the automated setup process described above:
+The automated upgrade process bootstraps an initial admin user, organization, and bucket in the system. Additional environment variables are used to configure the setup logic:
 
 -	`DOCKER_INFLUXDB_INIT_USERNAME`: The username to set for the system's initial super-user (**Required**).
 -	`DOCKER_INFLUXDB_INIT_PASSWORD`: The password to set for the system's inital super-user (**Required**).
@@ -76,7 +76,7 @@ Assume you've been running an InfluxDB 1.x deployment with customized config:
 ```console
 $ docker run -p 8086:8086 \
       -v influxdb:/var/lib/influxdb \
-      -v $PWD/influxdb.conf:/etc/influxdb/influxdb.conf:ro \
+      -v $PWD/influxdb.conf:/etc/influxdb/influxdb.conf \
       %%IMAGE%%:1.8
 ```
 
@@ -86,7 +86,8 @@ To upgrade this deployment to InfluxDB 2.x, stop the running container, then run
 $ docker run -p 8086:8086 \
       -v influxdb:/var/lib/influxdb \
       -v influxdb2:/var/lib/influxdb2 \
-      -v $PWD/influxdb.conf:/etc/influxdb/influxdb.conf:ro \
+      -v influxdb2-config:/etc/influxdb2 \
+      -v $PWD/influxdb.conf:/etc/influxdb/influxdb.conf \
       -e DOCKER_INFLUXDB_INIT_MODE=upgrade \
       -e DOCKER_INFLUXDB_INIT_USERNAME=my-user \
       -e DOCKER_INFLUXDB_INIT_PASSWORD=my-password \
@@ -102,7 +103,7 @@ Assume you've been running an InfluxDB 1.x deployment with data and config mount
 ```console
 $ docker run -p 8086:8086 \
       -v influxdb:/root/influxdb/data \
-      -v $PWD/influxdb.conf:/root/influxdb/influxdb.conf:ro \
+      -v $PWD/influxdb.conf:/root/influxdb/influxdb.conf \
       %%IMAGE%%:1.8 -config /root/influxdb/influxdb.conf
 ```
 
@@ -112,7 +113,8 @@ To upgrade this deployment to InfluxDB 2.x, first decide if you'd like to keep u
 $ docker run -p 8086:8086 \
       -v influxdb:/root/influxdb/data \
       -v influxdb2:/var/lib/influxdb2 \
-      -v $PWD/influxdb.conf:/root/influxdb/influxdb.conf:ro \
+      -v influxdb2-config:/etc/influxdb2 \
+      -v $PWD/influxdb.conf:/root/influxdb/influxdb.conf \
       -e DOCKER_INFLUXDB_INIT_MODE=upgrade \
       -e DOCKER_INFLUXDB_INIT_USERNAME=my-user \
       -e DOCKER_INFLUXDB_INIT_PASSWORD=my-password \
@@ -128,7 +130,8 @@ To retain your custom paths, you'd run:
 $ docker run -p 8086:8086 \
       -v influxdb:/root/influxdb/data \
       -v influxdb2:/root/influxdb2/data \
-      -v $PWD/influxdb.conf:/root/influxdb/influxdb.conf:ro \
+      -v influxdb2-config:/etc/influxdb2 \
+      -v $PWD/influxdb.conf:/root/influxdb/influxdb.conf \
       -e DOCKER_INFLUXDB_INIT_MODE=upgrade \
       -e DOCKER_INFLUXDB_INIT_USERNAME=my-user \
       -e DOCKER_INFLUXDB_INIT_PASSWORD=my-password \
@@ -227,7 +230,7 @@ Modify the default configuration, which will now be available under `$PWD`. Then
 
 ```console
 $ docker run -p 8086:8086 \
-      -v $PWD/config.yml:/etc/influxdb2/config.yml:ro \
+      -v $PWD/config.yml:/etc/influxdb2/config.yml \
       %%IMAGE%%:2.0
 ```
 
