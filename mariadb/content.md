@@ -13,7 +13,7 @@ The intent is also to maintain high compatibility with MySQL, ensuring a library
 Starting a MariaDB instance is simple:
 
 ```console
-$ docker run --port 127.0.0.1:3306:3306  --name some-%%REPO%% -e MYSQL_ROOT_PASSWORD=my-secret-pw -d %%IMAGE%%:tag
+$ docker run -p 127.0.0.1:3306:3306  --name some-%%REPO%% -e MYSQL_ROOT_PASSWORD=my-secret-pw -d %%IMAGE%%:tag
 ```
 
 or:
