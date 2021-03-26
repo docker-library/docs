@@ -72,13 +72,15 @@ backend default {
 Then run:
 
 ```console
-$ docker run --name my-running-varnish -v /path/to/default.vcl:/etc/varnish/default.vcl:ro --tmpfs /var/lib/varnish:exec -d varnish
+# we need both a configuration file at /etc/varnish/default.vcl
+# and our workdir to be mounted as tmpfs to avoid disk I/O
+$ docker run -v /path/to/default.vcl:/etc/varnish/default.vcl:ro --tmpfs /var/lib/varnish:exec varnish
 ```
 
 Alternatively, a simple `Dockerfile` can be used to generate a new image that includes the necessary `default.vcl` (which is a much cleaner solution than the bind mount above):
 
 ```dockerfile
-FROM varnish:6.2
+FROM varnish
 
 COPY default.vcl /etc/varnish/
 ```
@@ -86,7 +88,35 @@ COPY default.vcl /etc/varnish/
 Place this file in the same directory as your `default.vcl`, run `docker build -t my-varnish .`, then start your container:
 
 ```console
-$ docker run --name my-running-varnish --tmpfs /var/lib/varnish:exec -d my-varnish
+$ docker --tmpfs /var/lib/varnish:exec my-varnish
+```
+
+### Additional configuration
+
+By default, the containers will use a cache size of 100MB, which is usually a bit too small, but you can quickly set it through the `VARNISH_SIZE` environment variable:
+
+```console
+$ docker run --tmpfs /var/lib/varnish:exec -e VARNISH_SIZE=2G varnish
+```
+
+Additionally, you can add arguments to `docker run` affter `varnish`, if the first one starts with a `-`, they will be appendend to the [default command](https://github.com/varnish/docker-varnish/blob/master/docker-varnish-entrypoint#L8):
+
+```console
+# extend the default keep period
+$ docker run --tmpfs /var/lib/varnish:exec -e VARNISH_SIZE=2G varnish -p default_keep=300
+```
+
+If your first argument after `varnish` doesn't start with `-`, it will be interpreted as a command to override the default one:
+
+```console
+# show the command-line options
+$ docker run varnish varnishd -?
+
+# list parameters usable with -p
+$ docker run varnish varnishd -x parameter
+
+# run the server with your own parameters (don't forget -F to not daemonize)
+$ docker run varnish varnishd -a :8080 -b 127.0.0.1:8181 -t 600 -p feature=+http2
 ```
 
 ### Exposing the port
