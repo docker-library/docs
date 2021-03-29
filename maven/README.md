@@ -17,7 +17,7 @@ WARNING:
 # Quick reference
 
 -	**Maintained by**:  
-	[the Maven Project](https://github.com/carlossg/docker-maven)
+	[Carlos Sanchez](https://github.com/carlossg/docker-maven)
 
 -	**Where to get help**:  
 	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
