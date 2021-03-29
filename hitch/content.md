@@ -26,16 +26,16 @@ Note that extra arguments can be added to the command line. If the first argumen
 
 > Our assumption is that your backend, Varnish or other, supports both *HTTP/2* and the *PROXY* protocol.
 
-## Connecting to Varnish
+## Connecting to the backend
 
-By default Hitch will connect to Varnish using `localhost:8843` using the [PROXY protocol](https://github.com/varnish/hitch/blob/master/docs/proxy-protocol.md). If your `varnishd` process has been started with `-a localhost:8443,PROXY`, the two will be able to talk together and Varnish will expose the true client IP as `client.ip` in VCL.
+By default Hitch will connect to the backend using `localhost:8843` using the [PROXY protocol](https://github.com/varnish/hitch/blob/master/docs/proxy-protocol.md). If your backend server *PROXY*, the two will be able to talk together and backend will be able to expose the true client IP.
 
-But you'll probably run your Varnish in a separate container. In that case, you'll want to change the backend settings. You can either do that by replacing the [`backend`](https://github.com/varnish/hitch/blob/master/hitch.conf.man.rst#backend--) configuration setting in your mounted configuration file, or by adding a *command-line option*.
+But you'll probably run your backend service in a separate container. In that case, you'll want to change the backend settings. You can either do that by replacing the [`backend`](https://github.com/varnish/hitch/blob/master/hitch.conf.man.rst#backend--) configuration setting in your mounted configuration file, or by adding a *command-line option*.
 
-Here's how you set the backend via a *command-line option*:
+Here's how you set the backend via a *command-line option*, assuming your backend is available through `backend.example.com` on port `8443`:
 
 ```console
-$ docker run %%IMAGE%% "--backend=[varnish]:8443"
+$ docker run %%IMAGE%% "--backend=[backend.example.com]:8443"
 ```
 
 ## Setting the certificate
@@ -59,5 +59,5 @@ If you prefer setting the certificate location on the command line, you can add 
 Here's how you do this:
 
 ```console
-$ docker run %%IMAGE%% "--backend=[varnish]:8443:/path/to/cert.pem"
+$ docker run %%IMAGE%% "--backend=[backend.example.com]:8443:/path/to/cert.pem"
 ```
