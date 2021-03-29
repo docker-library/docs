@@ -7,7 +7,7 @@
 Running a Hitch Docker container can be done by using the following command:
 
 ```console
-docker run --name=hitch -p 443:443 hitch:latest
+$ docker run --name=hitch -p 443:443 %%IMAGE%%
 ```
 
 This container will expose port `443`, which is required for HTTPS traffic.
@@ -17,10 +17,10 @@ This container will expose port `443`, which is required for HTTPS traffic.
 Without any argument, the container will run `hitch --config=/etc/hitch/hitch.conf`. You can mount your own configuration file to replace the default one:
 
 ```console
-docker run -v /path/to/your/config/file:/etc/hitch/hitch.conf hitch
+$ docker run -v /path/to/your/config/file:/etc/hitch/hitch.conf:ro %%IMAGE%%
 ```
 
-You can also change the path of the configuration file by setting the `HITCH_CONFIG_FILE` environment variable. You can set it to an empty string to disable the configuration file altogether.
+You can also change the path of the configuration file by setting the `HITCH_CONFIG_FILE` environment variable.
 
 Note that extra arguments can be added to the command line. If the first argument starts with a `-`, the arguments are added to the default command line, otherwise they are treated as a command.
 
@@ -35,7 +35,7 @@ But you'll probably run your Varnish in a separate container. In that case, you'
 Here's how you set the backend via a *command-line option*:
 
 ```console
-docker run hitch "--backend=[varnish]:8443"
+$ docker run %%IMAGE%% "--backend=[varnish]:8443"
 ```
 
 ## Setting the certificate
@@ -49,7 +49,7 @@ This certificate is only suited for testing. Using a bind mount, you can overrid
 Here's an example:
 
 ```console
-docker run -v /path/to/your/certificate:/etc/hitch/certs/default hitch
+$ docker run -v /path/to/your/certificate:/etc/hitch/certs/default:ro %%IMAGE%%
 ```
 
 You can also override the [`pem-file`](https://github.com/varnish/hitch/blob/master/hitch.conf.man.rst#pem-file--string) configuration setting in your mounted configuration file.
@@ -59,5 +59,5 @@ If you prefer setting the certificate location on the command line, you can add 
 Here's how you do this:
 
 ```console
-docker run hitch "--backend=[varnish]:8443:/path/to/cert.pem"
+$ docker run %%IMAGE%% "--backend=[varnish]:8443:/path/to/cert.pem"
 ```
