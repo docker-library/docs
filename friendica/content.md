@@ -36,24 +36,23 @@ $ docker run -d %%IMAGE%%:fpm
 
 As the fastCGI-Process is not capable of serving static files (style sheets, images, ...) the webserver needs access to these files. This can be achieved with the `volumes-from` option. You can find more information in the docker-compose section.
 
-## Using the cron job
+## Background tasks
 
-There are three options to enable the cron-job for Friendica:
+Friendica requires background tasks to fetch and send all kind of messages and maintain the complete instance. This setup is crucial for the Friendica node. There are two options to enable background tasks for Friendica:
 
--	Using the default Image and activate the cron-job (see [Installation](https://friendi.ca/resources/installation/), sector `Activating scheduled tasks`)
--	Using the default image (apache, fpm, fpm-alpine) and creating **two** container (one for cron and one for the main app)
--	Using one of the additional, prepared [`cron dockerfiles`](https://github.com/friendica/docker/tree/master/.examples/dockerfiles/cron)
+-	Using the default Image and manually setup background tasks (see Friendica [Install](https://github.com/friendica/friendica/blob/2021.03-rc/doc/Install.md#required-background-tasks))
+-	Using the default image (apache, fpm, fpm-alpine) and starting a dedicated `cron` instance and use `cron.sh` as startup command (like this [Example](https://github.com/friendica/docker/blob/stable/.examples/docker-compose/insecure/mariadb-cron-redis/apache/docker-compose.yml))
 
 ## Possible Environment Variables
 
 **Friendica Settings**
 
--	`FRIENDICA_URL` The Friendica URL.
+-	`FRIENDICA_URL` The Friendica complete URL including protocol, domain and subpath (example: https://friendica.local/sub/ ).
 -	`FRIENDICA_TZ` The default localization of the Friendica server.
 -	`FRIENDICA_LANG` The default language of the Friendica server.
 -	`FRIENDICA_SITENAME` The Sitename of the Friendica server.
 -	`FRIENDICA_NO_VALIDATION` If set to `true`, the URL and E-Mail validation will be disabled.
--	`FRIENDICA_DATA` If set to `true`, the fileystem will be used instead of the DB backend.
+-	`FRIENDICA_DATA` Set the name of the storage provider (e.g `Filesystem` to use filesystem), default ist the DB backend.
 -	`FRIENDICA_DATA_DIR` The data directory of the Friendica server (Default: /var/www/data).
 
 **Friendica Logging**
@@ -134,6 +133,7 @@ $ docker run -d \
 
 The Friendica image supports auto configuration via environment variables. You can preconfigure everything that is asked on the install page on first run. To enable the automatic installation, you have to the following environment variables:
 
+-	`FRIENDICA_URL` The Friendica complete URL including protocol, domain and subpath (example: https://friendica.local/sub/ ).
 -	`FRIENDICA_ADMIN_MAIL` E-Mail address of the administrator.
 -	`MYSQL_USER` Username for the database user using mysql / mariadb.
 -	`MYSQL_PASSWORD` Password for the database user using mysql / mariadb.
