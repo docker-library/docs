@@ -24,10 +24,14 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.10.2-buster`, `8.10-buster`, `8-buster`, `buster`, `8.10.2`, `8.10`, `8`, `latest`](https://github.com/haskell/docker-haskell/blob/fb5c774c38a7ab2e7d233d95368be0f899353496/8.10/buster/Dockerfile)
--	[`8.10.2-stretch`, `8.10-stretch`, `8-stretch`, `stretch`](https://github.com/haskell/docker-haskell/blob/fb5c774c38a7ab2e7d233d95368be0f899353496/8.10/stretch/Dockerfile)
--	[`8.8.4-buster`, `8.8-buster`, `8.8.4`, `8.8`](https://github.com/haskell/docker-haskell/blob/fb5c774c38a7ab2e7d233d95368be0f899353496/8.8/buster/Dockerfile)
--	[`8.8.4-stretch`, `8.8-stretch`](https://github.com/haskell/docker-haskell/blob/fb5c774c38a7ab2e7d233d95368be0f899353496/8.8/stretch/Dockerfile)
+-	[`9.0.1-buster`, `9.0-buster`, `9-buster`, `buster`, `9.0.1`, `9.0`, `9`, `latest`](https://github.com/haskell/docker-haskell/blob/0f1e3f51f5930cce90aacefae4ae3c12f609a2be/9.0/buster/Dockerfile)
+-	[`9.0.1-stretch`, `9.0-stretch`, `9-stretch`, `stretch`](https://github.com/haskell/docker-haskell/blob/0f1e3f51f5930cce90aacefae4ae3c12f609a2be/9.0/stretch/Dockerfile)
+-	[`8.10.4-buster`, `8.10-buster`, `8-buster`, `8.10.4`, `8.10`, `8`](https://github.com/haskell/docker-haskell/blob/0f1e3f51f5930cce90aacefae4ae3c12f609a2be/8.10/buster/Dockerfile)
+-	[`8.10.4-stretch`, `8.10-stretch`, `8-stretch`](https://github.com/haskell/docker-haskell/blob/0f1e3f51f5930cce90aacefae4ae3c12f609a2be/8.10/stretch/Dockerfile)
+-	[`8.10.3-buster`, `8.10.3`](https://github.com/haskell/docker-haskell/blob/9a8e8618c43ab5445798261da7f6b6cf5435a2ff/8.10/buster/Dockerfile)
+-	[`8.10.3-stretch`](https://github.com/haskell/docker-haskell/blob/9a8e8618c43ab5445798261da7f6b6cf5435a2ff/8.10/stretch/Dockerfile)
+-	[`8.8.4-buster`, `8.8-buster`, `8.8.4`, `8.8`](https://github.com/haskell/docker-haskell/blob/9a8e8618c43ab5445798261da7f6b6cf5435a2ff/8.8/buster/Dockerfile)
+-	[`8.8.4-stretch`, `8.8-stretch`](https://github.com/haskell/docker-haskell/blob/9a8e8618c43ab5445798261da7f6b6cf5435a2ff/8.8/stretch/Dockerfile)
 
 # Quick reference (cont.)
 
