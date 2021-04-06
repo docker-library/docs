@@ -34,6 +34,8 @@ WARNING:
 -	[`6.8.3-jre8-openj9`, `6.8-jre8-openj9`, `jre8-openj9`, `6.8.3-jre-openj9`, `6.8-jre-openj9`, `jre-openj9`](https://github.com/keeganwitt/docker-gradle/blob/ef27237d21e823cc0e075fff946322b5e551e8c4/openj9/jre8/Dockerfile)
 -	[`6.8.3-jdk11-openj9`, `6.8-jdk11-openj9`, `jdk11-openj9`](https://github.com/keeganwitt/docker-gradle/blob/ef27237d21e823cc0e075fff946322b5e551e8c4/openj9/jdk11/Dockerfile)
 -	[`6.8.3-jre11-openj9`, `6.8-jre11-openj9`, `jre11-openj9`](https://github.com/keeganwitt/docker-gradle/blob/ef27237d21e823cc0e075fff946322b5e551e8c4/openj9/jre11/Dockerfile)
+-	[`6.8.3-jdk15-openj9`, `6.8-jdk15-openj9`, `jdk15-openj9`](https://github.com/keeganwitt/docker-gradle/blob/ef27237d21e823cc0e075fff946322b5e551e8c4/openj9/jdk15/Dockerfile)
+-	[`6.8.3-jre15-openj9`, `6.8-jre15-openj9`, `jre15-openj9`](https://github.com/keeganwitt/docker-gradle/blob/ef27237d21e823cc0e075fff946322b5e551e8c4/openj9/jre15/Dockerfile)
 
 # Quick reference (cont.)
 
