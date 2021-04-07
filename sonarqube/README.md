@@ -140,7 +140,7 @@ The administration guide can be found [here](https://redirect.sonarsource.com/do
 
 # License
 
-View [license information](http://www.gnu.org/licenses/lgpl.txt) for the software contained in this image.
+SonarQube Community Edition is licensed under [GNU Lesser General Public License, Version 3.0](http://www.gnu.org/licenses/lgpl.txt). SonarQube Developer, Enterprise, and Data Center Editions are licensed under [SonarSource Terms and Conditions](https://www.sonarsource.com/docs/sonarsource_terms_and_conditions.pdf).
 
 As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 

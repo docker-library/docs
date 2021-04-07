@@ -24,7 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.9.1`, `7.9`, `latest`](https://github.com/convertigo/convertigo/blob/c5efdd83547ca0357acb00bb45f92bc9c4e95d7d/docker/default/Dockerfile)
+-	[`7.9.2`, `7.9`, `latest`](https://github.com/convertigo/convertigo/blob/754b85da127e3887aa7605c3a1e616b948dc02d3/docker/default/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -47,11 +47,12 @@ WARNING:
 
 # What is Convertigo Mobility Platform ?
 
-Convertigo is an open source Low Code Application Platform (LCAP) featuring MXDP (Multi eXperience Development Platform) / MBaaS (Mobile Back end as a Service) for full-stack mobile and web application development. The platform is used to build complex Cross-platform Enterprise Mobile apps in a few days. Convertigo platform is composed of several components:
+Convertigo is an open source fullstack Low Code & No Code platform.. The platform is used to build complex Cross-platform Enterprise Mobile apps in a few days. Convertigo platform is composed of several components:
 
 1.	**Convertigo MBaaS**: The back-end MBaaS server part. Handles back-end connectors, micro-services execution, offline data device synchronization and serves Mobile Web apps. Runs as a Docker container with the `convertigo` image
 2.	**Convertigo Studio**: Runs on a Windows or a MacOS workstation, Eclipse based IDE, used to program MBaaS micro-services workflows and optionaly use the "Mobile Builder" edition to build Mobile apps UIs in a MXDP (Multi eXperience Development Platform) Low code mode. Can be directly downloaded from [Sourceforge.net](https://sourceforge.net/projects/convertigo/files/latest/download)
-3.	**Convertigo SDKs**: Can be used with third party Mobile development tools such as Xcode (iOS) Android Studio (Android) and Visual Studio (Windows Mobile, Windows UWP and Xamarin). SDKS are available on each platform standard repository (Bintray for Android, Cocoapods for iOS and Nuget for .NET)
+3.	**Convertigo SDKs**: Can be used with third party Mobile development tools such as Xcode (iOS) Android Studio (Android). SDKS are available on each platform standard repository (Bintray for Android, Cocoapods for iOS and Nuget for .NET)
+4.	**Convertigo Forms**: The No Code App Builder to build form based apps as PWAs or Web applications with a Web Based NoCode studio intented for non technical developpers (Citizen Developpers)
 
 Convertigo Community edition brought to you by Convertigo SA (Paris & San Francisco). The platform is currently used by more than 100K developers worldwide, building enterprise class mobile apps.
 
