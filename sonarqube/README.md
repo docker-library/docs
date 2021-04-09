@@ -25,11 +25,11 @@ WARNING:
 # Supported tags and respective `Dockerfile` links
 
 -	[`7.9.6-community`, `7.9-community`, `lts`](https://github.com/SonarSource/docker-sonarqube/blob/ee0ecba92f006f8429b7071acfef13207b3f4ddc/7/community/Dockerfile)
--	[`8.8-community`, `8-community`, `community`, `latest`](https://github.com/SonarSource/docker-sonarqube/blob/ee0ecba92f006f8429b7071acfef13207b3f4ddc/8/community/Dockerfile)
--	[`8.8-developer`, `8-developer`, `developer`](https://github.com/SonarSource/docker-sonarqube/blob/ee0ecba92f006f8429b7071acfef13207b3f4ddc/8/developer/Dockerfile)
--	[`8.8-enterprise`, `8-enterprise`, `enterprise`](https://github.com/SonarSource/docker-sonarqube/blob/ee0ecba92f006f8429b7071acfef13207b3f4ddc/8/enterprise/Dockerfile)
--	[`8.8-datacenter-app`, `8-datacenter-app`, `datacenter-app`](https://github.com/SonarSource/docker-sonarqube/blob/ee0ecba92f006f8429b7071acfef13207b3f4ddc/8/datacenter/app/Dockerfile)
--	[`8.8-datacenter-search`, `8-datacenter-search`, `datacenter-search`](https://github.com/SonarSource/docker-sonarqube/blob/ee0ecba92f006f8429b7071acfef13207b3f4ddc/8/datacenter/search/Dockerfile)
+-	[`8.8.0-community`, `8.8-community`, `8-community`, `community`, `latest`](https://github.com/SonarSource/docker-sonarqube/blob/ee0ecba92f006f8429b7071acfef13207b3f4ddc/8/community/Dockerfile)
+-	[`8.8.0-developer`, `8.8-developer`, `8-developer`, `developer`](https://github.com/SonarSource/docker-sonarqube/blob/ee0ecba92f006f8429b7071acfef13207b3f4ddc/8/developer/Dockerfile)
+-	[`8.8.0-enterprise`, `8.8-enterprise`, `8-enterprise`, `enterprise`](https://github.com/SonarSource/docker-sonarqube/blob/ee0ecba92f006f8429b7071acfef13207b3f4ddc/8/enterprise/Dockerfile)
+-	[`8.8.0-datacenter-app`, `8.8-datacenter-app`, `8-datacenter-app`, `datacenter-app`](https://github.com/SonarSource/docker-sonarqube/blob/ee0ecba92f006f8429b7071acfef13207b3f4ddc/8/datacenter/app/Dockerfile)
+-	[`8.8.0-datacenter-search`, `8.8-datacenter-search`, `8-datacenter-search`, `datacenter-search`](https://github.com/SonarSource/docker-sonarqube/blob/ee0ecba92f006f8429b7071acfef13207b3f4ddc/8/datacenter/search/Dockerfile)
 
 # Quick reference (cont.)
 
