@@ -39,6 +39,8 @@ WARNING:
 -	[`3.8.1-adoptopenjdk-11`, `3.8-adoptopenjdk-11`, `3-adoptopenjdk-11`](https://github.com/carlossg/docker-maven/blob/bdffb5117c33476d554325d8efe5866306004b99/adoptopenjdk-11/Dockerfile)
 -	[`3.8.1-adoptopenjdk-15`, `3.8.1-adoptopenjdk`, `3.8-adoptopenjdk-15`, `3.8-adoptopenjdk`, `3-adoptopenjdk-15`, `3-adoptopenjdk`, `adoptopenjdk`](https://github.com/carlossg/docker-maven/blob/bdffb5117c33476d554325d8efe5866306004b99/adoptopenjdk-15/Dockerfile)
 -	[`3.8.1-adoptopenjdk-15-openj9`, `3.8-adoptopenjdk-15-openj9`, `3-adoptopenjdk-15-openj9`](https://github.com/carlossg/docker-maven/blob/bdffb5117c33476d554325d8efe5866306004b99/adoptopenjdk-15-openj9/Dockerfile)
+-	[`3.8.1-adoptopenjdk-16`, `3.8-adoptopenjdk-16`, `3-adoptopenjdk-16`](https://github.com/carlossg/docker-maven/blob/b1a19f5406f0d01cd8fe689efbb838474c48db4f/adoptopenjdk-16/Dockerfile)
+-	[`3.8.1-adoptopenjdk-16-openj9`, `3.8-adoptopenjdk-16-openj9`, `3-adoptopenjdk-16-openj9`](https://github.com/carlossg/docker-maven/blob/b1a19f5406f0d01cd8fe689efbb838474c48db4f/adoptopenjdk-16-openj9/Dockerfile)
 -	[`3.8.1-adoptopenjdk-8`, `3.8-adoptopenjdk-8`, `3-adoptopenjdk-8`](https://github.com/carlossg/docker-maven/blob/bdffb5117c33476d554325d8efe5866306004b99/adoptopenjdk-8/Dockerfile)
 -	[`3.8.1-ibmjava-8`, `3.8.1-ibmjava`, `3.8-ibmjava-8`, `3.8-ibmjava`, `3-ibmjava-8`, `3-ibmjava`, `ibmjava`](https://github.com/carlossg/docker-maven/blob/bdffb5117c33476d554325d8efe5866306004b99/ibmjava-8/Dockerfile)
 -	[`3.8.1-ibmjava-8-alpine`, `3.8.1-ibmjava-alpine`, `3.8-ibmjava-8-alpine`, `3.8-ibmjava-alpine`, `3-ibmjava-8-alpine`, `ibmjava-alpine`](https://github.com/carlossg/docker-maven/blob/bdffb5117c33476d554325d8efe5866306004b99/ibmjava-8-alpine/Dockerfile)
