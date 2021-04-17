@@ -31,7 +31,7 @@ Anyone can [sign up](https://www.aerospike.com/lp/try-now/) to get an evaluation
 
 ### Running a node with a feature key file in a mapped directory
 
-```sh
+```console
 docker run -tid -v DIR:/opt/aerospike/etc/ -e "FEATURE_KEY_FILE=/opt/aerospike/etc/features.conf" --name aerospike -p 3000:3000 -p 3001:3001 -p 3002:3002 aerospike/aerospike-server-enterprise
 ```
 
@@ -39,7 +39,7 @@ Above, *DIR* is a directory on your machine where you drop your feature key file
 
 ### Running a node with a feature key file in an environment variable 
 
-```sh
+```console
 FEATKEY=$(base64 ~/Desktop/evaluation-features.conf)
 docker run -tid -e "FEATURES=$FEATKEY" -e "FEATURE_KEY_FILE=env-b64:FEATURES" --name aerospike -p 3000:3000 -p 3001:3001 -p 3002:3002 aerospike/aerospike-server-enterprise
 ```
@@ -56,7 +56,7 @@ You can inject parameters into the configuration template using container-side e
 
 For example, to set the default [namespace](https://www.aerospike.com/docs/architecture/data-model.html) name to *demo*:
 
-```sh
+```console
 docker run -tid --name aerospike -e "NAMESPACE=demo" -p 3000:3000 -p 3001:3001 -p 3002:3002 -v /my/dir:/opt/aerospike/etc/ -e "FEATURE_KEY_FILE=/opt/aerospike/etc/features.conf" aerospike/aerospike-server-enterprise
 ```
 
@@ -91,7 +91,7 @@ You should first `-v` map a local directory, which Docker will bind mount. Next,
 
 For example:
 
-```sh
+```console
 docker run -tid -v /opt/aerospike/etc/:/opt/aerospike/etc/ --name aerospike -p 3000:3000 -p 3001:3001 -p 3002:3002 aerospike/aerospike-server-enterprise --config-file /opt/aerospike/etc/aerospike.conf
 ```
 
@@ -101,7 +101,7 @@ With Docker, the files within the container are not persisted past the life of t
 
 For example:
 
-```sh
+```console
 docker run -tid  -v /opt/aerospike/data:/opt/aerospike/data  -v /opt/aerospike/etc:/opt/aerospike/etc/ --name aerospike -p 3000:3000 -p 3001:3001 -p 3002:3002 -e "FEATURE_KEY_FILE=/opt/aerospike/etc/features.conf" aerospike/aerospike-server-enterprise
 ```
 
@@ -120,7 +120,7 @@ Alternatively, a custom configuration file is used with the parameter `file` set
 
 In this example we also mount the data directory in a similar way, using a custom configuration file.
 
-```sh
+```console
 docker run -tid -v /opt/aerospike/data:/opt/aerospike/data -v /opt/aerospike/etc/:/opt/aerospike/etc/ --name aerospike -p 3000:3000 -p 3001:3001 -p 3002:3002 aerospike/aerospike-server-enterprise --config-file /opt/aerospike/etc/aerospike.conf
 ```
 
@@ -140,7 +140,7 @@ Update the `storage-engine device` section of the namespace in the custom aerosp
 
 Now to map a host drive /dev/sdc to /dev/xvdc on a container
 
-```sh
+```console
 docker run -tid --device '/dev/sdc:/dev/xvdc' -v /opt/aerospike/etc/:/opt/aerospike/etc/ --name aerospike -p 3000:3000 -p 3001:3001 -p 3002:3002 aerospike/aerospike-server-enterprise --config-file /opt/aerospike/etc/aerospike.conf
 ```
 
