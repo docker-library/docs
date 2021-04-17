@@ -22,12 +22,14 @@
 -	Image Versions
 -	Reporting Issues
 -	License
-## Getting Started 
+	## Getting Started
+
 
 Aerospike Enterprise Edition requires a feature key file to start and to ungate certain features in the database, such as compression. Enterprise customers can use their production or development keys.
 
 Anyone can [sign up](https://www.aerospike.com/lp/try-now/) to get an evaluation feature key file for a full-featured, single-node Aerospike Enterprise Edition.
-### Running a node with a feature key file in a mapped directory 
+### Running a node with a feature key file in a mapped directory
+
 
 ```sh
 docker run -tid -v DIR:/opt/aerospike/etc/ -e "FEATURE_KEY_FILE=/opt/aerospike/etc/features.conf" --name aerospike -p 3000:3000 -p 3001:3001 -p 3002:3002 aerospike/aerospike-server-enterprise
@@ -164,7 +166,7 @@ In order for the Aerospike node to properly broadcast its address to the cluster
 	            port 3000                    # Listening Port
 	            access-address 192.168.1.100 # IP Address used by cluster nodes and applications
 	        }
-		
+
 ### Mesh Clustering 
 
 Mesh networking requires setting up links between each node in the cluster. This can be achieved in two ways:
