@@ -23,7 +23,7 @@ This image is intended to serve the following goals:
 
 ## Availability
 
-Root filesystem tarballs are [provided by our GitLab](https://gitlab.archlinux.org/archlinux/archlinux-docker/-/releases) for at least a year.
+Root filesystem tarballs are [provided by our GitLab](https://gitlab.archlinux.org/archlinux/archlinux-docker/-/releases) for at least two months.
 
 ## Updating
 
