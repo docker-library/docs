@@ -22,7 +22,8 @@
 -	Image Versions
 -	Reporting Issues
 -	License
-	## Getting Started
+
+## Getting Started
 
 
 Aerospike Enterprise Edition requires a feature key file to start and to ungate certain features in the database, such as compression. Enterprise customers can use their production or development keys.
