@@ -1,1 +1,1 @@
-[The AlmaLinux OS Project](%%GITHUB-REPO%%)
+[The AlmaLinux OS Foundation](%%GITHUB-REPO%%)
