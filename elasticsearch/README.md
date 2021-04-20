@@ -92,7 +92,7 @@ See [Install Elasticsearch with Docker](https://www.elastic.co/guide/en/elastics
 
 # License
 
-View [license information](https://github.com/elastic/elasticsearch/blob/6.4/licenses/ELASTIC-LICENSE.txt) for the software contained in this image.
+View [license information](https://github.com/elastic/elasticsearch/blob/master/licenses/ELASTIC-LICENSE-2.0.txt) for the software contained in this image.
 
 As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 
