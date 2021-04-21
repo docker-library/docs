@@ -28,10 +28,10 @@ WARNING:
 -	[`1.19.10-perl`, `mainline-perl`, `1-perl`, `1.19-perl`, `perl`](https://github.com/nginxinc/docker-nginx/blob/464886ab21ebe4b036ceb36d7557bf491f6d9320/mainline/debian-perl/Dockerfile)
 -	[`1.19.10-alpine`, `mainline-alpine`, `1-alpine`, `1.19-alpine`, `alpine`](https://github.com/nginxinc/docker-nginx/blob/464886ab21ebe4b036ceb36d7557bf491f6d9320/mainline/alpine/Dockerfile)
 -	[`1.19.10-alpine-perl`, `mainline-alpine-perl`, `1-alpine-perl`, `1.19-alpine-perl`, `alpine-perl`](https://github.com/nginxinc/docker-nginx/blob/464886ab21ebe4b036ceb36d7557bf491f6d9320/mainline/alpine-perl/Dockerfile)
--	[`1.18.0`, `stable`, `1.18`](https://github.com/nginxinc/docker-nginx/blob/3fb70ddd7094c1fdd50cc83d432643dc10ab6243/stable/debian/Dockerfile)
--	[`1.18.0-perl`, `stable-perl`, `1.18-perl`](https://github.com/nginxinc/docker-nginx/blob/3fb70ddd7094c1fdd50cc83d432643dc10ab6243/stable/debian-perl/Dockerfile)
--	[`1.18.0-alpine`, `stable-alpine`, `1.18-alpine`](https://github.com/nginxinc/docker-nginx/blob/3fb70ddd7094c1fdd50cc83d432643dc10ab6243/stable/alpine/Dockerfile)
--	[`1.18.0-alpine-perl`, `stable-alpine-perl`, `1.18-alpine-perl`](https://github.com/nginxinc/docker-nginx/blob/3fb70ddd7094c1fdd50cc83d432643dc10ab6243/stable/alpine-perl/Dockerfile)
+-	[`1.20.0`, `stable`, `1.20`](https://github.com/nginxinc/docker-nginx/blob/ab8516ed3a212d8a03392567c8f55c570c839e59/stable/debian/Dockerfile)
+-	[`1.20.0-perl`, `stable-perl`, `1.20-perl`](https://github.com/nginxinc/docker-nginx/blob/ab8516ed3a212d8a03392567c8f55c570c839e59/stable/debian-perl/Dockerfile)
+-	[`1.20.0-alpine`, `stable-alpine`, `1.20-alpine`](https://github.com/nginxinc/docker-nginx/blob/ab8516ed3a212d8a03392567c8f55c570c839e59/stable/alpine/Dockerfile)
+-	[`1.20.0-alpine-perl`, `stable-alpine-perl`, `1.20-alpine-perl`](https://github.com/nginxinc/docker-nginx/blob/ab8516ed3a212d8a03392567c8f55c570c839e59/stable/alpine-perl/Dockerfile)
 
 # Quick reference (cont.)
 
