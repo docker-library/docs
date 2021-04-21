@@ -1,1 +1,1 @@
-MariaDB Server is a high performing open source relational databases, forked from MySQL.
+MariaDB Server is a high performing open source relational database, forked from MySQL.
