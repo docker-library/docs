@@ -24,17 +24,22 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`kernel`](https://github.com/WASdev/ci.docker/blob/63fced9324fd5f4f488fdaeb54c05fb9fd2e1428/ga/latest/kernel/Dockerfile.ubuntu.ibmjava8)
--	[`kernel-java11-openj9`](https://github.com/WASdev/ci.docker/blob/63fced9324fd5f4f488fdaeb54c05fb9fd2e1428/ga/latest/kernel/Dockerfile.ubuntu.adoptopenjdk11)
--	[`full`, `latest`](https://github.com/WASdev/ci.docker/blob/63fced9324fd5f4f488fdaeb54c05fb9fd2e1428/ga/latest/full/Dockerfile.ubuntu.ibmjava8)
--	[`full-java11-openj9`, `21.0.0.3-full-java11-openj9`](https://github.com/WASdev/ci.docker/blob/63fced9324fd5f4f488fdaeb54c05fb9fd2e1428/ga/latest/full/Dockerfile.ubuntu.adoptopenjdk11)
--	[`21.0.0.3-kernel-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/63fced9324fd5f4f488fdaeb54c05fb9fd2e1428/ga/21.0.0.3/kernel/Dockerfile.ubuntu.ibmjava8)
--	[`21.0.0.3-kernel-java11-openj9`](https://github.com/WASdev/ci.docker/blob/63fced9324fd5f4f488fdaeb54c05fb9fd2e1428/ga/21.0.0.3/kernel/Dockerfile.ubuntu.adoptopenjdk11)
--	[`21.0.0.3-full-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/63fced9324fd5f4f488fdaeb54c05fb9fd2e1428/ga/21.0.0.3/full/Dockerfile.ubuntu.ibmjava8)
--	[`20.0.0.12-kernel-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/63fced9324fd5f4f488fdaeb54c05fb9fd2e1428/ga/20.0.0.12/kernel/Dockerfile.ubuntu.ibmjava8)
--	[`20.0.0.12-kernel-java11-openj9`](https://github.com/WASdev/ci.docker/blob/63fced9324fd5f4f488fdaeb54c05fb9fd2e1428/ga/20.0.0.12/kernel/Dockerfile.ubuntu.adoptopenjdk11)
--	[`20.0.0.12-full-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/63fced9324fd5f4f488fdaeb54c05fb9fd2e1428/ga/20.0.0.12/full/Dockerfile.ubuntu.ibmjava8)
--	[`20.0.0.12-full-java11-openj9`](https://github.com/WASdev/ci.docker/blob/63fced9324fd5f4f488fdaeb54c05fb9fd2e1428/ga/20.0.0.12/full/Dockerfile.ubuntu.adoptopenjdk11)
+-	[`kernel`](https://github.com/WASdev/ci.docker/blob/498fd2562d74c98227db511bd7920c2406b4d921/ga/latest/kernel/Dockerfile.ubuntu.ibmjava8)
+-	[`kernel-java11-openj9`](https://github.com/WASdev/ci.docker/blob/498fd2562d74c98227db511bd7920c2406b4d921/ga/latest/kernel/Dockerfile.ubuntu.adoptopenjdk11)
+-	[`full`, `latest`](https://github.com/WASdev/ci.docker/blob/498fd2562d74c98227db511bd7920c2406b4d921/ga/latest/full/Dockerfile.ubuntu.ibmjava8)
+-	[`full-java11-openj9`](https://github.com/WASdev/ci.docker/blob/498fd2562d74c98227db511bd7920c2406b4d921/ga/latest/full/Dockerfile.ubuntu.adoptopenjdk11)
+-	[`21.0.0.4-kernel-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/498fd2562d74c98227db511bd7920c2406b4d921/ga/21.0.0.4/kernel/Dockerfile.ubuntu.ibmjava8)
+-	[`21.0.0.4-kernel-java11-openj9`](https://github.com/WASdev/ci.docker/blob/498fd2562d74c98227db511bd7920c2406b4d921/ga/21.0.0.4/kernel/Dockerfile.ubuntu.adoptopenjdk11)
+-	[`21.0.0.4-full-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/498fd2562d74c98227db511bd7920c2406b4d921/ga/21.0.0.4/full/Dockerfile.ubuntu.ibmjava8)
+-	[`21.0.0.4-full-java11-openj9`](https://github.com/WASdev/ci.docker/blob/498fd2562d74c98227db511bd7920c2406b4d921/ga/21.0.0.4/full/Dockerfile.ubuntu.adoptopenjdk11)
+-	[`21.0.0.3-kernel-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/498fd2562d74c98227db511bd7920c2406b4d921/ga/21.0.0.3/kernel/Dockerfile.ubuntu.ibmjava8)
+-	[`21.0.0.3-kernel-java11-openj9`](https://github.com/WASdev/ci.docker/blob/498fd2562d74c98227db511bd7920c2406b4d921/ga/21.0.0.3/kernel/Dockerfile.ubuntu.adoptopenjdk11)
+-	[`21.0.0.3-full-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/498fd2562d74c98227db511bd7920c2406b4d921/ga/21.0.0.3/full/Dockerfile.ubuntu.ibmjava8)
+-	[`21.0.0.3-full-java11-openj9`](https://github.com/WASdev/ci.docker/blob/498fd2562d74c98227db511bd7920c2406b4d921/ga/21.0.0.3/full/Dockerfile.ubuntu.adoptopenjdk11)
+-	[`20.0.0.12-kernel-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/498fd2562d74c98227db511bd7920c2406b4d921/ga/20.0.0.12/kernel/Dockerfile.ubuntu.ibmjava8)
+-	[`20.0.0.12-kernel-java11-openj9`](https://github.com/WASdev/ci.docker/blob/498fd2562d74c98227db511bd7920c2406b4d921/ga/20.0.0.12/kernel/Dockerfile.ubuntu.adoptopenjdk11)
+-	[`20.0.0.12-full-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/498fd2562d74c98227db511bd7920c2406b4d921/ga/20.0.0.12/full/Dockerfile.ubuntu.ibmjava8)
+-	[`20.0.0.12-full-java11-openj9`](https://github.com/WASdev/ci.docker/blob/498fd2562d74c98227db511bd7920c2406b4d921/ga/20.0.0.12/full/Dockerfile.ubuntu.adoptopenjdk11)
 
 # Quick reference (cont.)
 
