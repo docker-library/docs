@@ -24,12 +24,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`18.04`, `bionic-20210325`, `bionic`](https://github.com/tianon/docker-brew-ubuntu-core/blob/7145f9723125e6e4367dc0fb428ffd9f2bc00334/bionic/Dockerfile)
--	[`20.04`, `focal-20210401`, `focal`, `latest`](https://github.com/tianon/docker-brew-ubuntu-core/blob/7145f9723125e6e4367dc0fb428ffd9f2bc00334/focal/Dockerfile)
--	[`20.10`, `groovy-20210325.1`, `groovy`, `rolling`](https://github.com/tianon/docker-brew-ubuntu-core/blob/7145f9723125e6e4367dc0fb428ffd9f2bc00334/groovy/Dockerfile)
--	[`21.04`, `hirsute-20210401`, `hirsute`, `devel`](https://github.com/tianon/docker-brew-ubuntu-core/blob/7145f9723125e6e4367dc0fb428ffd9f2bc00334/hirsute/Dockerfile)
--	[`14.04`, `trusty-20191217`, `trusty`](https://github.com/tianon/docker-brew-ubuntu-core/blob/7145f9723125e6e4367dc0fb428ffd9f2bc00334/trusty/Dockerfile)
--	[`16.04`, `xenial-20210114`, `xenial`](https://github.com/tianon/docker-brew-ubuntu-core/blob/7145f9723125e6e4367dc0fb428ffd9f2bc00334/xenial/Dockerfile)
+-	[`18.04`, `bionic-20210416`, `bionic`](https://github.com/tianon/docker-brew-ubuntu-core/blob/4b7cb6f04bc4054f9ab1fa42b549caa1a41b7c92/bionic/Dockerfile)
+-	[`20.04`, `focal-20210416`, `focal`, `latest`](https://github.com/tianon/docker-brew-ubuntu-core/blob/4b7cb6f04bc4054f9ab1fa42b549caa1a41b7c92/focal/Dockerfile)
+-	[`20.10`, `groovy-20210416`, `groovy`](https://github.com/tianon/docker-brew-ubuntu-core/blob/4b7cb6f04bc4054f9ab1fa42b549caa1a41b7c92/groovy/Dockerfile)
+-	[`21.04`, `hirsute-20210422`, `hirsute`, `rolling`, `devel`](https://github.com/tianon/docker-brew-ubuntu-core/blob/4b7cb6f04bc4054f9ab1fa42b549caa1a41b7c92/hirsute/Dockerfile)
+-	[`14.04`, `trusty-20191217`, `trusty`](https://github.com/tianon/docker-brew-ubuntu-core/blob/4b7cb6f04bc4054f9ab1fa42b549caa1a41b7c92/trusty/Dockerfile)
+-	[`16.04`, `xenial-20210416`, `xenial`](https://github.com/tianon/docker-brew-ubuntu-core/blob/4b7cb6f04bc4054f9ab1fa42b549caa1a41b7c92/xenial/Dockerfile)
 
 # Quick reference (cont.)
 
