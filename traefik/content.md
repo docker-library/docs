@@ -38,7 +38,7 @@ Start a backend server, named `test`:
 docker run -d --name test containous/whoami
 ```
 
-And finally, you can access to your `whoami` server throught Traefik, on the domain name `test.docker.localhost`:
+And finally, you can access to your `whoami` server through Traefik, on the domain name `test.docker.localhost`:
 
 ```console
 # $ curl --header 'Host:test.docker.localhost' 'http://localhost:80/'
@@ -93,7 +93,7 @@ Start a backend server, named `test`:
 docker run -d --name test containous/whoami
 ```
 
-And finally, you can access to your `whoami` server throught Traefik, on the domain name `{containerName}.{configuredDomain}` (`test.docker.localhost`):
+And finally, you can access to your `whoami` server through Traefik, on the domain name `{containerName}.{configuredDomain}` (`test.docker.localhost`):
 
 ```console
 # $ curl --header 'Host:test.docker.localhost' 'http://localhost:80/'

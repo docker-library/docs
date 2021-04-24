@@ -20,4 +20,4 @@ $ docker run --name my-memcache -d %%IMAGE%% memcached -m 64
 
 This would set the Memcached server to use 64 megabytes for storage.
 
-For infomation on configuring your memcached server, see the extensive [wiki](https://github.com/memcached/memcached/wiki).
+For information on configuring your memcached server, see the extensive [wiki](https://github.com/memcached/memcached/wiki).

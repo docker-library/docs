@@ -122,7 +122,7 @@ Some container hosts must add `--tmpfs /run` to the `docker run` command.
 
 # License
 
-By default the SL docker images do not include documentation or license files. If you require them, please remove `tsflags=nodocs` from `/etc/yum.conf` and run `yum reinstall mypackage` to recieve the documentation.
+By default the SL docker images do not include documentation or license files. If you require them, please remove `tsflags=nodocs` from `/etc/yum.conf` and run `yum reinstall mypackage` to receive the documentation.
 
 As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 
