@@ -24,18 +24,18 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2020.09-apache`, `2020.09`](https://github.com/friendica/docker/blob/969e173e59471789f1376c952693654aa7e8176e/2020.09/apache/Dockerfile)
--	[`2020.09-fpm`](https://github.com/friendica/docker/blob/969e173e59471789f1376c952693654aa7e8176e/2020.09/fpm/Dockerfile)
--	[`2020.09-fpm-alpine`](https://github.com/friendica/docker/blob/969e173e59471789f1376c952693654aa7e8176e/2020.09/fpm-alpine/Dockerfile)
--	[`2021.01-apache`, `apache`, `stable-apache`, `2021.01`, `latest`, `stable`](https://github.com/friendica/docker/blob/969e173e59471789f1376c952693654aa7e8176e/2021.01/apache/Dockerfile)
--	[`2021.01-fpm`, `fpm`, `stable-fpm`](https://github.com/friendica/docker/blob/969e173e59471789f1376c952693654aa7e8176e/2021.01/fpm/Dockerfile)
--	[`2021.01-fpm-alpine`, `fpm-alpine`, `stable-fpm-alpine`](https://github.com/friendica/docker/blob/969e173e59471789f1376c952693654aa7e8176e/2021.01/fpm-alpine/Dockerfile)
--	[`2021.03-dev-apache`, `dev-apache`, `2021.03-dev`, `dev`](https://github.com/friendica/docker/blob/969e173e59471789f1376c952693654aa7e8176e/2021.03-dev/apache/Dockerfile)
--	[`2021.03-dev-fpm`, `dev-fpm`](https://github.com/friendica/docker/blob/969e173e59471789f1376c952693654aa7e8176e/2021.03-dev/fpm/Dockerfile)
--	[`2021.03-dev-fpm-alpine`, `dev-fpm-alpine`](https://github.com/friendica/docker/blob/969e173e59471789f1376c952693654aa7e8176e/2021.03-dev/fpm-alpine/Dockerfile)
--	[`2021.03-rc-apache`, `rc-apache`, `2021.03-rc`, `rc`](https://github.com/friendica/docker/blob/969e173e59471789f1376c952693654aa7e8176e/2021.03-rc/apache/Dockerfile)
--	[`2021.03-rc-fpm`, `rc-fpm`](https://github.com/friendica/docker/blob/969e173e59471789f1376c952693654aa7e8176e/2021.03-rc/fpm/Dockerfile)
--	[`2021.03-rc-fpm-alpine`, `rc-fpm-alpine`](https://github.com/friendica/docker/blob/969e173e59471789f1376c952693654aa7e8176e/2021.03-rc/fpm-alpine/Dockerfile)
+-	[`2020.09-apache`, `2020.09`](https://github.com/friendica/docker/blob/88db303a9ad22024d505b28390af384e28a5a624/2020.09/apache/Dockerfile)
+-	[`2020.09-fpm`](https://github.com/friendica/docker/blob/88db303a9ad22024d505b28390af384e28a5a624/2020.09/fpm/Dockerfile)
+-	[`2020.09-fpm-alpine`](https://github.com/friendica/docker/blob/88db303a9ad22024d505b28390af384e28a5a624/2020.09/fpm-alpine/Dockerfile)
+-	[`2021.01-apache`, `apache`, `stable-apache`, `2021.01`, `latest`, `stable`](https://github.com/friendica/docker/blob/88db303a9ad22024d505b28390af384e28a5a624/2021.01/apache/Dockerfile)
+-	[`2021.01-fpm`, `fpm`, `stable-fpm`](https://github.com/friendica/docker/blob/88db303a9ad22024d505b28390af384e28a5a624/2021.01/fpm/Dockerfile)
+-	[`2021.01-fpm-alpine`, `fpm-alpine`, `stable-fpm-alpine`](https://github.com/friendica/docker/blob/88db303a9ad22024d505b28390af384e28a5a624/2021.01/fpm-alpine/Dockerfile)
+-	[`2021.03-dev-apache`, `dev-apache`, `2021.03-dev`, `dev`](https://github.com/friendica/docker/blob/88db303a9ad22024d505b28390af384e28a5a624/2021.03-dev/apache/Dockerfile)
+-	[`2021.03-dev-fpm`, `dev-fpm`](https://github.com/friendica/docker/blob/88db303a9ad22024d505b28390af384e28a5a624/2021.03-dev/fpm/Dockerfile)
+-	[`2021.03-dev-fpm-alpine`, `dev-fpm-alpine`](https://github.com/friendica/docker/blob/88db303a9ad22024d505b28390af384e28a5a624/2021.03-dev/fpm-alpine/Dockerfile)
+-	[`2021.03-rc-apache`, `rc-apache`, `2021.03-rc`, `rc`](https://github.com/friendica/docker/blob/88db303a9ad22024d505b28390af384e28a5a624/2021.03-rc/apache/Dockerfile)
+-	[`2021.03-rc-fpm`, `rc-fpm`](https://github.com/friendica/docker/blob/88db303a9ad22024d505b28390af384e28a5a624/2021.03-rc/fpm/Dockerfile)
+-	[`2021.03-rc-fpm-alpine`, `rc-fpm-alpine`](https://github.com/friendica/docker/blob/88db303a9ad22024d505b28390af384e28a5a624/2021.03-rc/fpm-alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -154,6 +154,7 @@ The following environment variables are possible for the SMTP examples.
 -	`SMTP_FROM` Sender user-part of the address. (Default: `no-reply` - e.g. no-reply@friendica.local)
 -	`SMTP_TLS` Use TLS for connecting the SMTP Mail-Gateway. (Default: empty)
 -	`SMTP_STARTTLS` Use STARTTLS for connecting the SMTP Mail-Gateway. (Default: empty)
+-	`SMTP_AUTH` Auth mode for the SMTP Mail-Gateway. (Default: `On`)
 -	`SMTP_AUTH_USER` Username for the SMTP Mail-Gateway. (Default: empty)
 -	`SMTP_AUTH_PASS` Password for the SMTP Mail-Gateway. (Default: empty)
 
