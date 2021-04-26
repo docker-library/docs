@@ -2,7 +2,7 @@
 
 Telegraf is an open source agent written in Go for collecting metrics and data on the system it's running on or from other services. Telegraf writes data it collects to InfluxDB in the correct format.
 
-[Telegraf Official Docs](https://docs.influxdata.com/telegraf/latest/introduction/getting_started/)
+[Telegraf Official Docs](https://docs.influxdata.com/telegraf/latest/introduction/getting-started/)
 
 %%LOGO%%
 
