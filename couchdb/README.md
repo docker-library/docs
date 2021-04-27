@@ -20,13 +20,13 @@ WARNING:
 	[Apache CouchDB](https://github.com/apache/couchdb-docker)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `3.1.0`, `3.1`, `3`](https://github.com/apache/couchdb-docker/blob/01e1c16bb405c1174393c76a7ebc3792b0c5e2c9/3.1.0/Dockerfile)
--	[`3.0.1`, `3.0`](https://github.com/apache/couchdb-docker/blob/01e1c16bb405c1174393c76a7ebc3792b0c5e2c9/3.0.1/Dockerfile)
--	[`2.3.1`, `2.3`, `2`](https://github.com/apache/couchdb-docker/blob/01e1c16bb405c1174393c76a7ebc3792b0c5e2c9/2.3.1/Dockerfile)
+-	[`latest`, `3.1.1`, `3.1`, `3`](https://github.com/apache/couchdb-docker/blob/e3ca492e13f65ffd72593ac3d7c43c737787e2b2/3.1.1/Dockerfile)
+-	[`3.0.1`, `3.0`](https://github.com/apache/couchdb-docker/blob/e3ca492e13f65ffd72593ac3d7c43c737787e2b2/3.0.1/Dockerfile)
+-	[`2.3.1`, `2.3`, `2`](https://github.com/apache/couchdb-docker/blob/e3ca492e13f65ffd72593ac3d7c43c737787e2b2/2.3.1/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -34,14 +34,14 @@ WARNING:
 	[https://github.com/apache/couchdb-docker/issues](https://github.com/apache/couchdb-docker/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/couchdb/), [`arm64v8`](https://hub.docker.com/r/arm64v8/couchdb/), [`ppc64le`](https://hub.docker.com/r/ppc64le/couchdb/)
+	[`amd64`](https://hub.docker.com/r/amd64/couchdb/), [`arm64v8`](https://hub.docker.com/r/arm64v8/couchdb/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/couchdb/` directory](https://github.com/docker-library/repo-info/blob/master/repos/couchdb) ([history](https://github.com/docker-library/repo-info/commits/master/repos/couchdb))  
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/couchdb`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fcouchdb)  
+	[official-images repo's `library/couchdb` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fcouchdb)  
 	[official-images repo's `library/couchdb` file](https://github.com/docker-library/official-images/blob/master/library/couchdb) ([history](https://github.com/docker-library/official-images/commits/master/library/couchdb))
 
 -	**Source of this description**:  

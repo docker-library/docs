@@ -20,25 +20,25 @@ WARNING:
 	[the Docker Community](https://github.com/tomitribe/docker-tomee)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8-jre-7.0.7-plume`, `7.0.7-plume`](https://github.com/tomitribe/docker-tomee/blob/c7642e963c08920560906159e126ea22b9ada61d/TomEE-7.0/jre8/plume/Dockerfile)
--	[`8-jre-7.0.7-plus`, `7.0.7-plus`](https://github.com/tomitribe/docker-tomee/blob/c7642e963c08920560906159e126ea22b9ada61d/TomEE-7.0/jre8/plus/Dockerfile)
--	[`8-jre-7.0.7-webprofile`, `7.0`](https://github.com/tomitribe/docker-tomee/blob/c7642e963c08920560906159e126ea22b9ada61d/TomEE-7.0/jre8/webprofile/Dockerfile)
--	[`8-jre-7.1.2-plume`, `7.1.2-plume`](https://github.com/tomitribe/docker-tomee/blob/c7642e963c08920560906159e126ea22b9ada61d/TomEE-7.1/jre8/plume/Dockerfile)
--	[`8-jre-7.1.2-plus`, `7.1.2-plus`](https://github.com/tomitribe/docker-tomee/blob/c7642e963c08920560906159e126ea22b9ada61d/TomEE-7.1/jre8/plus/Dockerfile)
--	[`8-jre-7.1.2-microprofile`, `7.1.2-microprofile`](https://github.com/tomitribe/docker-tomee/blob/c7642e963c08920560906159e126ea22b9ada61d/TomEE-7.1/jre8/microprofile/Dockerfile)
--	[`8-jre-7.1.2-webprofile`, `7.1.2-webprofile`, `7`, `7.1`](https://github.com/tomitribe/docker-tomee/blob/c7642e963c08920560906159e126ea22b9ada61d/TomEE-7.1/jre8/webprofile/Dockerfile)
--	[`8-jre-8.0.1-plume`](https://github.com/tomitribe/docker-tomee/blob/c7642e963c08920560906159e126ea22b9ada61d/TomEE-8.0/jre8/plume/Dockerfile)
--	[`8-jre-8.0.1-plus`](https://github.com/tomitribe/docker-tomee/blob/c7642e963c08920560906159e126ea22b9ada61d/TomEE-8.0/jre8/plus/Dockerfile)
--	[`8-jre-8.0.1-microprofile`](https://github.com/tomitribe/docker-tomee/blob/c7642e963c08920560906159e126ea22b9ada61d/TomEE-8.0/jre8/microprofile/Dockerfile)
--	[`8-jre-8.0.1-webprofile`](https://github.com/tomitribe/docker-tomee/blob/c7642e963c08920560906159e126ea22b9ada61d/TomEE-8.0/jre8/webprofile/Dockerfile)
--	[`11-jre-8.0.1-plume`, `8.0.1-plume`](https://github.com/tomitribe/docker-tomee/blob/c7642e963c08920560906159e126ea22b9ada61d/TomEE-8.0/jre11/plume/Dockerfile)
--	[`11-jre-8.0.1-plus`, `8.0.1-plus`](https://github.com/tomitribe/docker-tomee/blob/c7642e963c08920560906159e126ea22b9ada61d/TomEE-8.0/jre11/plus/Dockerfile)
--	[`11-jre-8.0.1-microprofile`, `8.0.1-microprofile`](https://github.com/tomitribe/docker-tomee/blob/c7642e963c08920560906159e126ea22b9ada61d/TomEE-8.0/jre11/microprofile/Dockerfile)
--	[`11-jre-8.0.1-webprofile`, `8.0.1-webprofile`, `latest`, `8`](https://github.com/tomitribe/docker-tomee/blob/c7642e963c08920560906159e126ea22b9ada61d/TomEE-8.0/jre11/webprofile/Dockerfile)
+-	[`8-jre-7.0.9-plume`, `7.0.9-plume`](https://github.com/tomitribe/docker-tomee/blob/e14a033bd167917f5fe7cff8909022489996aed3/TomEE-7.0/jre8/plume/Dockerfile)
+-	[`8-jre-7.0.9-plus`, `7.0.9-plus`](https://github.com/tomitribe/docker-tomee/blob/e14a033bd167917f5fe7cff8909022489996aed3/TomEE-7.0/jre8/plus/Dockerfile)
+-	[`8-jre-7.0.9-webprofile`, `7.0`](https://github.com/tomitribe/docker-tomee/blob/e14a033bd167917f5fe7cff8909022489996aed3/TomEE-7.0/jre8/webprofile/Dockerfile)
+-	[`8-jre-7.1.4-plume`, `7.1.4-plume`](https://github.com/tomitribe/docker-tomee/blob/e14a033bd167917f5fe7cff8909022489996aed3/TomEE-7.1/jre8/plume/Dockerfile)
+-	[`8-jre-7.1.4-plus`, `7.1.4-plus`](https://github.com/tomitribe/docker-tomee/blob/e14a033bd167917f5fe7cff8909022489996aed3/TomEE-7.1/jre8/plus/Dockerfile)
+-	[`8-jre-7.1.4-microprofile`, `7.1.4-microprofile`](https://github.com/tomitribe/docker-tomee/blob/e14a033bd167917f5fe7cff8909022489996aed3/TomEE-7.1/jre8/microprofile/Dockerfile)
+-	[`8-jre-7.1.4-webprofile`, `7.1.4-webprofile`, `7`, `7.1`](https://github.com/tomitribe/docker-tomee/blob/e14a033bd167917f5fe7cff8909022489996aed3/TomEE-7.1/jre8/webprofile/Dockerfile)
+-	[`8-jre-8.0.6-plume`](https://github.com/tomitribe/docker-tomee/blob/e14a033bd167917f5fe7cff8909022489996aed3/TomEE-8.0/jre8/plume/Dockerfile)
+-	[`8-jre-8.0.6-plus`](https://github.com/tomitribe/docker-tomee/blob/e14a033bd167917f5fe7cff8909022489996aed3/TomEE-8.0/jre8/plus/Dockerfile)
+-	[`8-jre-8.0.6-microprofile`](https://github.com/tomitribe/docker-tomee/blob/e14a033bd167917f5fe7cff8909022489996aed3/TomEE-8.0/jre8/microprofile/Dockerfile)
+-	[`8-jre-8.0.6-webprofile`](https://github.com/tomitribe/docker-tomee/blob/e14a033bd167917f5fe7cff8909022489996aed3/TomEE-8.0/jre8/webprofile/Dockerfile)
+-	[`11-jre-8.0.6-plume`, `8.0.6-plume`](https://github.com/tomitribe/docker-tomee/blob/e14a033bd167917f5fe7cff8909022489996aed3/TomEE-8.0/jre11/plume/Dockerfile)
+-	[`11-jre-8.0.6-plus`, `8.0.6-plus`](https://github.com/tomitribe/docker-tomee/blob/e14a033bd167917f5fe7cff8909022489996aed3/TomEE-8.0/jre11/plus/Dockerfile)
+-	[`11-jre-8.0.6-microprofile`, `8.0.6-microprofile`](https://github.com/tomitribe/docker-tomee/blob/e14a033bd167917f5fe7cff8909022489996aed3/TomEE-8.0/jre11/microprofile/Dockerfile)
+-	[`11-jre-8.0.6-webprofile`, `8.0.6-webprofile`, `latest`, `8`](https://github.com/tomitribe/docker-tomee/blob/e14a033bd167917f5fe7cff8909022489996aed3/TomEE-8.0/jre11/webprofile/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -53,7 +53,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/tomee`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Ftomee)  
+	[official-images repo's `library/tomee` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Ftomee)  
 	[official-images repo's `library/tomee` file](https://github.com/docker-library/official-images/blob/master/library/tomee) ([history](https://github.com/docker-library/official-images/commits/master/library/tomee))
 
 -	**Source of this description**:  

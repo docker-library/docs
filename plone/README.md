@@ -20,13 +20,14 @@ WARNING:
 	[Plone Community](https://github.com/plone/plone.docker)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.2.1`, `5.2`, `5`, `latest`](https://github.com/plone/plone.docker/blob/a346627b8e694036693d03f95d4986a3d6cb3111/5.2/5.2.1/debian/Dockerfile)
--	[`5.2.1-alpine`, `5.2-alpine`, `5-alpine`, `alpine`](https://github.com/plone/plone.docker/blob/a346627b8e694036693d03f95d4986a3d6cb3111/5.2/5.2.1/alpine/Dockerfile)
--	[`5.2.1-python2`, `5.2-python2`, `5-python2`, `python2`](https://github.com/plone/plone.docker/blob/5a3ed2cf8f0206bf710935c6daa527eb0e1056a4/5.2/5.2.1/python2/Dockerfile)
+-	[`5.2.4-python38`, `5.2-python38`, `5-python38`, `python38`, `5.2.4`, `5.2`, `5`, `latest`](https://github.com/plone/plone.docker/blob/a516871e08532c8a343f9e9e713c8abc8d80aae6/5.2/5.2.4/debian/Dockerfile)
+-	[`5.2.4-python37`, `5.2-python37`, `5-python37`, `python37`](https://github.com/plone/plone.docker/blob/a516871e08532c8a343f9e9e713c8abc8d80aae6/5.2/5.2.4/python37/Dockerfile)
+-	[`5.2.4-python36`, `5.2-python36`, `5-python36`, `python36`](https://github.com/plone/plone.docker/blob/a516871e08532c8a343f9e9e713c8abc8d80aae6/5.2/5.2.4/python36/Dockerfile)
+-	[`5.2.4-alpine`, `5.2-alpine`, `5-alpine`, `alpine`](https://github.com/plone/plone.docker/blob/a516871e08532c8a343f9e9e713c8abc8d80aae6/5.2/5.2.4/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -41,7 +42,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/plone`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fplone)  
+	[official-images repo's `library/plone` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fplone)  
 	[official-images repo's `library/plone` file](https://github.com/docker-library/official-images/blob/master/library/plone) ([history](https://github.com/docker-library/official-images/commits/master/library/plone))
 
 -	**Source of this description**:  
@@ -58,6 +59,8 @@ WARNING:
 -	Images for Plone 5.x and Plone 4.x
 -	Enable add-ons via environment variables
 -	Choose between [Debian](https://www.debian.org/) or [Alpine](http://www.alpinelinux.org/) based images.
+-	Built-in RelStorage support, configurable via environment variables (requires Plone 5.2.4+)
+-	Built-in LDAP/AD support via pas.plugins.ldap (requires Plone 5.2.4+)
 
 ## Usage
 
@@ -170,15 +173,22 @@ $ curl -H 'Accept: application/json' http://localhost:8080/plone
 -	`CORS_ALLOW_HEADERS` - A comma separated list of request headers allowed to be sent by the client, e.g. `X-My-Header`. Defaults to `Accept,Authorization,Content-Type,X-Custom-Header`
 -	`CORS_MAX_AGE` - Indicates how long the results of a preflight request can be cached. Defaults to `3600`
 
+**RELSTORAGE:**
+
+-	`RELSTORAGE_ADAPTER_OPTIONS` - A comma separated list of RelStorage adapter options to set for the plone instance (using [plone.recipe.zope2instance](https://relstorage.readthedocs.io/en/latest/configure-application.html#configuring-plone)). This is required in order to use RelStorage.
+
+All other available environment variables match exactly with RelStorage settings, according to the [settings specification available on the docs](https://relstorage.readthedocs.io/en/latest/relstorage-options.html).
+
+-	`RELSTORAGE_NAME` - **name** - The name of the storage.
+-	`RELSTORAGE_READ_ONLY` - **read-only** - If true, only reads may be executed against the storage.
+-	`RELSTORAGE_KEEP_HISTORY` - **keep-history** - If this option is set to true (the default), the adapter will create and use a history-preserving database schema (like FileStorage).
+-	`RELSTORAGE_BLOB_DIR` - **blob-dir** - If supplied, the storage will provide ZODB blob support; this option specifies the name of the directory to hold blob data. The directory will be created if it does not exist. If no value (or an empty value) is provided, then no blob support will be provided. Default: `/plone/instance/var/blobstorage`
+
+	[See more](https://relstorage.readthedocs.io/en/latest/relstorage-options.html)
+
 ## Documentation
 
 Full documentation for end users can be found online at [docs.plone.org](https://docs.plone.org/manage/docker/docs/usage/index.html)
-
-## Credits
-
-This docker image was originally financed by the [European Environment Agency](http://eea.europa.eu), an agency of the European Union.
-
-Thanks to [Antonio De Marinis](https://github.com/demarant), [Sven Strack](https://github.com/svx) and [Alin Voinea](https://github.com/avoinea) for their preliminary work.
 
 # Image Variants
 
@@ -190,9 +200,9 @@ This is the defacto image. If you are unsure about what your needs are, you prob
 
 ## `plone:<version>-alpine`
 
-This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
-This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
 
 To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 

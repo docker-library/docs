@@ -17,25 +17,42 @@ WARNING:
 # Quick reference
 
 -	**Maintained by**:  
-	[the Docker Community](https://github.com/appropriate/docker-jetty)
+	[the Docker Community](https://github.com/eclipse/jetty.docker)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`9.4.27-jre11-slim`, `9.4-jre11-slim`, `9-jre11-slim`](https://github.com/appropriate/docker-jetty/blob/89dfeafc4a603611cf5135249acbe218b515439c/9.4-jre11-slim/Dockerfile)
--	[`9.4.27-jre11`, `9.4-jre11`, `9-jre11`](https://github.com/appropriate/docker-jetty/blob/89dfeafc4a603611cf5135249acbe218b515439c/9.4-jre11/Dockerfile)
--	[`9.4.27-jre8`, `9.4-jre8`, `9-jre8`](https://github.com/appropriate/docker-jetty/blob/89dfeafc4a603611cf5135249acbe218b515439c/9.4-jre8/Dockerfile)
--	[`9.4.27-jdk13-slim`, `9.4-jdk13-slim`, `9-jdk13-slim`](https://github.com/appropriate/docker-jetty/blob/89dfeafc4a603611cf5135249acbe218b515439c/9.4-jdk13-slim/Dockerfile)
--	[`9.4.27`, `9.4`, `9`, `9.4.27-jdk13`, `9.4-jdk13`, `9-jdk13`, `latest`, `jdk13`](https://github.com/appropriate/docker-jetty/blob/89dfeafc4a603611cf5135249acbe218b515439c/9.4-jdk13/Dockerfile)
--	[`9.3.28-jre8`, `9.3-jre8`](https://github.com/appropriate/docker-jetty/blob/28562cbee783f1ccb94c375b7e9165c6cfe6d2e2/9.3-jre8/Dockerfile)
--	[`9.2.29-jre8`, `9.2-jre8`](https://github.com/appropriate/docker-jetty/blob/28562cbee783f1ccb94c375b7e9165c6cfe6d2e2/9.2-jre8/Dockerfile)
+-	[`11.0.2-jre11-slim`](https://github.com/eclipse/jetty.docker/blob/a5956c18b302fce8eacb8d6e7944c638761bc052/11.0-jre11-slim/Dockerfile)
+-	[`11.0.2-jre11`](https://github.com/eclipse/jetty.docker/blob/a5956c18b302fce8eacb8d6e7944c638761bc052/11.0-jre11/Dockerfile)
+-	[`11.0.2-jdk15-slim`](https://github.com/eclipse/jetty.docker/blob/a5956c18b302fce8eacb8d6e7944c638761bc052/11.0-jdk15-slim/Dockerfile)
+-	[`11.0.2`, `11.0.2-jdk15`](https://github.com/eclipse/jetty.docker/blob/a5956c18b302fce8eacb8d6e7944c638761bc052/11.0-jdk15/Dockerfile)
+-	[`11.0.2-jdk11-slim`](https://github.com/eclipse/jetty.docker/blob/a5956c18b302fce8eacb8d6e7944c638761bc052/11.0-jdk11-slim/Dockerfile)
+-	[`11.0.2-jdk11`](https://github.com/eclipse/jetty.docker/blob/a5956c18b302fce8eacb8d6e7944c638761bc052/11.0-jdk11/Dockerfile)
+-	[`10.0.2-jre11-slim`](https://github.com/eclipse/jetty.docker/blob/a5956c18b302fce8eacb8d6e7944c638761bc052/10.0-jre11-slim/Dockerfile)
+-	[`10.0.2-jre11`](https://github.com/eclipse/jetty.docker/blob/a5956c18b302fce8eacb8d6e7944c638761bc052/10.0-jre11/Dockerfile)
+-	[`10.0.2-jdk15-slim`](https://github.com/eclipse/jetty.docker/blob/a5956c18b302fce8eacb8d6e7944c638761bc052/10.0-jdk15-slim/Dockerfile)
+-	[`10.0.2`, `10.0.2-jdk15`](https://github.com/eclipse/jetty.docker/blob/a5956c18b302fce8eacb8d6e7944c638761bc052/10.0-jdk15/Dockerfile)
+-	[`10.0.2-jdk11-slim`](https://github.com/eclipse/jetty.docker/blob/a5956c18b302fce8eacb8d6e7944c638761bc052/10.0-jdk11-slim/Dockerfile)
+-	[`10.0.2-jdk11`](https://github.com/eclipse/jetty.docker/blob/a5956c18b302fce8eacb8d6e7944c638761bc052/10.0-jdk11/Dockerfile)
+-	[`9.4.40-jre11-slim`, `9.4-jre11-slim`, `9-jre11-slim`](https://github.com/eclipse/jetty.docker/blob/c33e2e9e291d5407594e33c9e7675bea2c0cda6f/9.4-jre11-slim/Dockerfile)
+-	[`9.4.40-jre11`, `9.4-jre11`, `9-jre11`](https://github.com/eclipse/jetty.docker/blob/c33e2e9e291d5407594e33c9e7675bea2c0cda6f/9.4-jre11/Dockerfile)
+-	[`9.4.40-jre8-slim`, `9.4-jre8-slim`, `9-jre8-slim`](https://github.com/eclipse/jetty.docker/blob/c33e2e9e291d5407594e33c9e7675bea2c0cda6f/9.4-jre8-slim/Dockerfile)
+-	[`9.4.40-jre8`, `9.4-jre8`, `9-jre8`](https://github.com/eclipse/jetty.docker/blob/c33e2e9e291d5407594e33c9e7675bea2c0cda6f/9.4-jre8/Dockerfile)
+-	[`9.4.40-jdk15-slim`, `9.4-jdk15-slim`, `9-jdk15-slim`](https://github.com/eclipse/jetty.docker/blob/c33e2e9e291d5407594e33c9e7675bea2c0cda6f/9.4-jdk15-slim/Dockerfile)
+-	[`9.4.40`, `9.4`, `9`, `9.4.40-jdk15`, `9.4-jdk15`, `9-jdk15`, `latest`, `jdk15`](https://github.com/eclipse/jetty.docker/blob/c33e2e9e291d5407594e33c9e7675bea2c0cda6f/9.4-jdk15/Dockerfile)
+-	[`9.4.40-jdk11-slim`, `9.4-jdk11-slim`, `9-jdk11-slim`](https://github.com/eclipse/jetty.docker/blob/c33e2e9e291d5407594e33c9e7675bea2c0cda6f/9.4-jdk11-slim/Dockerfile)
+-	[`9.4.40-jdk11`, `9.4-jdk11`, `9-jdk11`](https://github.com/eclipse/jetty.docker/blob/c33e2e9e291d5407594e33c9e7675bea2c0cda6f/9.4-jdk11/Dockerfile)
+-	[`9.4.40-jdk8-slim`, `9.4-jdk8-slim`, `9-jdk8-slim`](https://github.com/eclipse/jetty.docker/blob/c33e2e9e291d5407594e33c9e7675bea2c0cda6f/9.4-jdk8-slim/Dockerfile)
+-	[`9.4.40-jdk8`, `9.4-jdk8`, `9-jdk8`](https://github.com/eclipse/jetty.docker/blob/c33e2e9e291d5407594e33c9e7675bea2c0cda6f/9.4-jdk8/Dockerfile)
+-	[`9.3.29-jre8`, `9.3-jre8`](https://github.com/eclipse/jetty.docker/blob/c47212fa6db5547a5090fa409c4ee3913bcc18ce/9.3-jre8/Dockerfile)
+-	[`9.2.30-jre8`, `9.2-jre8`](https://github.com/eclipse/jetty.docker/blob/481a3bcb16a8bf0ee11a4b67a4710050e5403064/9.2-jre8/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/appropriate/docker-jetty/issues](https://github.com/appropriate/docker-jetty/issues)
+	[https://github.com/eclipse/jetty.docker/issues](https://github.com/eclipse/jetty.docker/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/jetty/), [`arm64v8`](https://hub.docker.com/r/arm64v8/jetty/)
@@ -45,7 +62,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/jetty`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fjetty)  
+	[official-images repo's `library/jetty` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fjetty)  
 	[official-images repo's `library/jetty` file](https://github.com/docker-library/official-images/blob/master/library/jetty) ([history](https://github.com/docker-library/official-images/commits/master/library/jetty))
 
 -	**Source of this description**:  
@@ -169,7 +186,7 @@ This image does not contain the common packages contained in the default tag and
 
 # License
 
-View [license information](http://eclipse.org/jetty/licenses.php) for the software contained in this image.
+View [license information](http://eclipse.org/jetty/licenses.html) for the software contained in this image.
 
 As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 

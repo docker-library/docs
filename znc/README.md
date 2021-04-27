@@ -20,12 +20,12 @@ WARNING:
 	[the ZNC Community](https://github.com/znc/znc-docker)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.8.0`, `1.8`, `latest`](https://github.com/znc/znc-docker/blob/91f58af10b62197187af1f0a9695488e88279e98/full/Dockerfile)
--	[`1.8.0-slim`, `1.8-slim`, `slim`](https://github.com/znc/znc-docker/blob/91f58af10b62197187af1f0a9695488e88279e98/slim/Dockerfile)
+-	[`1.8.2`, `1.8`, `latest`](https://github.com/znc/znc-docker/blob/443da08b1500a0815bc392da027cf2291017a223/full/Dockerfile)
+-	[`1.8.2-slim`, `1.8-slim`, `slim`](https://github.com/znc/znc-docker/blob/443da08b1500a0815bc392da027cf2291017a223/slim/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -40,7 +40,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/znc`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fznc)  
+	[official-images repo's `library/znc` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fznc)  
 	[official-images repo's `library/znc` file](https://github.com/docker-library/official-images/blob/master/library/znc) ([history](https://github.com/docker-library/official-images/commits/master/library/znc))
 
 -	**Source of this description**:  
@@ -65,10 +65,10 @@ $ docker run -it -v znc-cfg:/znc-data znc --makeconf
 To run ZNC:
 
 ```console
-$ docker run -p 6697:6697 -v znc-cfg:/znc-data znc
+$ docker run -p 12345:12345 -v znc-cfg:/znc-data znc
 ```
 
-The port should match the port you used during `--makeconf`. Note that 6667 is often blocked by web browsers, and therefore is not recommended.
+The port (12345 in the example above) should match the port you used during `--makeconf`. Note that 6667 and 6697 are often blocked by web browsers, and therefore are not recommended for ZNC.
 
 If you use any external module, put the .cpp, .py or .pm file to `/znc-data/modules` (you may need to create that directory).
 

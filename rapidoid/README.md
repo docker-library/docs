@@ -26,7 +26,7 @@ As noted in [docker-library/official-images#4667 (comment)](https://github.com/d
 	[Rapidoid](https://github.com/rapidoid/docker-rapidoid)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
 # Supported tags and respective `Dockerfile` links
 
@@ -45,7 +45,7 @@ As noted in [docker-library/official-images#4667 (comment)](https://github.com/d
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/rapidoid`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Frapidoid)  
+	[official-images repo's `library/rapidoid` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Frapidoid)  
 	[official-images repo's `library/rapidoid` file](https://github.com/docker-library/official-images/blob/master/library/rapidoid) ([history](https://github.com/docker-library/official-images/commits/master/library/rapidoid))
 
 -	**Source of this description**:  

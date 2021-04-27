@@ -20,7 +20,7 @@ WARNING:
 	[the Docker Community](https://github.com/docker-library/hello-world)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
 # Supported tags and respective `Dockerfile` links
 
@@ -29,15 +29,15 @@ WARNING:
 ## Simple Tags
 
 -	[`linux`](https://github.com/docker-library/hello-world/blob/7ecae6978055d2fb6960e2a29d24a2af612e2716/amd64/hello-world/Dockerfile)
--	[`nanoserver-1809`](https://github.com/docker-library/hello-world/blob/9c93e37114a7fe99b5fc0d776e0b8dff99cbbb75/amd64/hello-world/nanoserver-1809/Dockerfile)
+-	[`nanoserver-1809`](https://github.com/docker-library/hello-world/blob/a6fdcbffb08c09e63c48cda1878e15fefcb6460a/amd64/hello-world/nanoserver-1809/Dockerfile)
 
 ## Shared Tags
 
 -	`latest`:
 	-	[`linux`](https://github.com/docker-library/hello-world/blob/7ecae6978055d2fb6960e2a29d24a2af612e2716/amd64/hello-world/Dockerfile)
-	-	[`nanoserver-1809`](https://github.com/docker-library/hello-world/blob/9c93e37114a7fe99b5fc0d776e0b8dff99cbbb75/amd64/hello-world/nanoserver-1809/Dockerfile)
+	-	[`nanoserver-1809`](https://github.com/docker-library/hello-world/blob/a6fdcbffb08c09e63c48cda1878e15fefcb6460a/amd64/hello-world/nanoserver-1809/Dockerfile)
 -	`nanoserver`:
-	-	[`nanoserver-1809`](https://github.com/docker-library/hello-world/blob/9c93e37114a7fe99b5fc0d776e0b8dff99cbbb75/amd64/hello-world/nanoserver-1809/Dockerfile)
+	-	[`nanoserver-1809`](https://github.com/docker-library/hello-world/blob/a6fdcbffb08c09e63c48cda1878e15fefcb6460a/amd64/hello-world/nanoserver-1809/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -52,7 +52,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/hello-world`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fhello-world)  
+	[official-images repo's `library/hello-world` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fhello-world)  
 	[official-images repo's `library/hello-world` file](https://github.com/docker-library/official-images/blob/master/library/hello-world) ([history](https://github.com/docker-library/official-images/commits/master/library/hello-world))
 
 -	**Source of this description**:  
@@ -87,7 +87,7 @@ For more examples and ideas, visit:
 
 $ docker images hello-world
 REPOSITORY   TAG     IMAGE ID      SIZE
-hello-world  latest  bf756fb1ae65  13336
+hello-world  latest  d1165f221234  13336
 ```
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/01c12653951b2fe592c1f93a13b4e289ada0e3a1/hello-world/logo.png)

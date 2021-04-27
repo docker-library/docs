@@ -20,13 +20,13 @@ WARNING:
 	[Odoo](https://github.com/odoo/docker)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`13.0`, `13`, `latest`](https://github.com/odoo/docker/blob/f116a674ca62595d0fbf1ded206ec2e4d962ebf0/13.0/Dockerfile)
--	[`12.0`, `12`](https://github.com/odoo/docker/blob/f116a674ca62595d0fbf1ded206ec2e4d962ebf0/12.0/Dockerfile)
--	[`11.0`, `11`](https://github.com/odoo/docker/blob/f116a674ca62595d0fbf1ded206ec2e4d962ebf0/11.0/Dockerfile)
+-	[`14.0`, `14`, `latest`](https://github.com/odoo/docker/blob/dea339fddc16cbeb88f72376350d138fa4d78650/14.0/Dockerfile)
+-	[`13.0`, `13`](https://github.com/odoo/docker/blob/dea339fddc16cbeb88f72376350d138fa4d78650/13.0/Dockerfile)
+-	[`12.0`, `12`](https://github.com/odoo/docker/blob/dea339fddc16cbeb88f72376350d138fa4d78650/12.0/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -41,7 +41,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/odoo`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fodoo)  
+	[official-images repo's `library/odoo` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fodoo)  
 	[official-images repo's `library/odoo` file](https://github.com/docker-library/official-images/blob/master/library/odoo) ([history](https://github.com/docker-library/official-images/commits/master/library/odoo))
 
 -	**Source of this description**:  

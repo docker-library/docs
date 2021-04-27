@@ -14,13 +14,17 @@ WARNING:
 
 -->
 
+# **DEPRECATION NOTICE**
+
+This image is deprecated due to inactivity (last updated Aug 2018; [docker-library/official-images#4670](https://github.com/docker-library/official-images/pull/4670)).
+
 # Quick reference
 
 -	**Maintained by**:  
 	[Known](https://github.com/idno/Known-Docker)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
 # Supported tags and respective `Dockerfile` links
 
@@ -39,7 +43,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/known`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fknown)  
+	[official-images repo's `library/known` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fknown)  
 	[official-images repo's `library/known` file](https://github.com/docker-library/official-images/blob/master/library/known) ([history](https://github.com/docker-library/official-images/commits/master/library/known))
 
 -	**Source of this description**:  

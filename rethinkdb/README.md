@@ -20,11 +20,14 @@ WARNING:
 	[RethinkDB](https://github.com/rethinkdb/rethinkdb-dockerfiles)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.4.0`, `2.4`, `2`, `latest`](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/54d3eebf6409b196264c193e0cbad027061739b3/bionic/2.4.0/Dockerfile)
+-	[`2.4.1-buster-slim`, `2.4-buster-slim`, `2-buster-slim`, `buster-slim`, `2.4.1`, `2.4`, `2`, `latest`](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/5bccd499742f6f05e7ddc970842a1763bdd99cfa/buster/2.4.1/Dockerfile)
+-	[`2.4.1-centos`, `2.4-centos`, `2-centos`, `centos`](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/5bccd499742f6f05e7ddc970842a1763bdd99cfa/centos8/2.4.1/Dockerfile)
+-	[`2.4.0-buster-slim`, `2.4.0`](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/444f7754822cb3e96cb2b66042d8e87d2227be0b/buster/2.4.0/Dockerfile)
+-	[`2.4.0-centos`](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/444f7754822cb3e96cb2b66042d8e87d2227be0b/centos8/2.4.0/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -39,7 +42,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/rethinkdb`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Frethinkdb)  
+	[official-images repo's `library/rethinkdb` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Frethinkdb)  
 	[official-images repo's `library/rethinkdb` file](https://github.com/docker-library/official-images/blob/master/library/rethinkdb) ([history](https://github.com/docker-library/official-images/commits/master/library/rethinkdb))
 
 -	**Source of this description**:  
@@ -93,6 +96,20 @@ kill $(lsof -t -i @localhost:8080 -sTCP:listen)
 ## Configuration
 
 See the [official docs](http://www.rethinkdb.com/docs/) for infomation on using and configuring a RethinkDB cluster.
+
+# Image Variants
+
+The `rethinkdb` images come in many flavors, each designed for a specific use case.
+
+## `rethinkdb:<version>`
+
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+Some of these tags may have names like buster in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+
+## `rethinkdb:<version>-slim`
+
+This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `rethinkdb`. Unless you are working in an environment where *only* the `rethinkdb` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
 
 # License
 

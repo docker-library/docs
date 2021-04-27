@@ -20,16 +20,22 @@ WARNING:
 	[Keegan Witt (of the Groovy Project)](https://github.com/keeganwitt/docker-gradle), [with the Gradle Project's approval](https://discuss.gradle.org/t/official-docker-images/21159/8)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.4.1-jdk8`, `6.4-jdk8`, `jdk8`, `6.4.1-jdk`, `6.4-jdk`, `jdk`, `6.4.1`, `6.4`, `latest`](https://github.com/keeganwitt/docker-gradle/blob/817aaf497e85eab01821d9faf2854df88e58702f/jdk8/Dockerfile)
--	[`6.4.1-jre8`, `6.4-jre8`, `jre8`, `6.4.1-jre`, `6.4-jre`, `jre`](https://github.com/keeganwitt/docker-gradle/blob/817aaf497e85eab01821d9faf2854df88e58702f/jre8/Dockerfile)
--	[`6.4.1-jdk11`, `6.4-jdk11`, `jdk11`](https://github.com/keeganwitt/docker-gradle/blob/817aaf497e85eab01821d9faf2854df88e58702f/jdk11/Dockerfile)
--	[`6.4.1-jre11`, `6.4-jre11`, `jre11`](https://github.com/keeganwitt/docker-gradle/blob/817aaf497e85eab01821d9faf2854df88e58702f/jre11/Dockerfile)
--	[`6.4.1-jdk14`, `6.4-jdk14`, `jdk14`](https://github.com/keeganwitt/docker-gradle/blob/817aaf497e85eab01821d9faf2854df88e58702f/jdk14/Dockerfile)
--	[`6.4.1-jre14`, `6.4-jre14`, `jre14`](https://github.com/keeganwitt/docker-gradle/blob/817aaf497e85eab01821d9faf2854df88e58702f/jre14/Dockerfile)
+-	[`7.0.0-jdk8`, `7.0.0-jdk8-hotspot`, `7.0-jdk8`, `7.0-jdk8-hotspot`, `jdk8`, `jdk8-hotspot`, `7.0.0-jdk`, `7.0.0-jdk-hotspot`, `7.0-jdk`, `7.0-jdk-hotspot`, `jdk`, `jdk-hotspot`, `7.0.0`, `7.0.0-hotspot`, `7.0`, `7.0-hotspot`, `latest`, `hotspot`](https://github.com/keeganwitt/docker-gradle/blob/605a08fb025ad34e8e9d5d2391427886e64fc9f7/hotspot/jdk8/Dockerfile)
+-	[`7.0.0-jre8`, `7.0.0-jre8-hotspot`, `7.0-jre8`, `7.0-jre8-hotspot`, `jre8`, `jre8-hotspot`, `7.0.0-jre`, `7.0.0-jre-hotspot`, `7.0-jre`, `7.0-jre-hotspot`, `jre`, `jre-hotspot`](https://github.com/keeganwitt/docker-gradle/blob/605a08fb025ad34e8e9d5d2391427886e64fc9f7/hotspot/jre8/Dockerfile)
+-	[`7.0.0-jdk11`, `7.0.0-jdk11-hotspot`, `7.0-jdk11`, `7.0-jdk11-hotspot`, `jdk11`, `jdk11-hotspot`](https://github.com/keeganwitt/docker-gradle/blob/605a08fb025ad34e8e9d5d2391427886e64fc9f7/hotspot/jdk11/Dockerfile)
+-	[`7.0.0-jre11`, `7.0.0-jre11-hotspot`, `7.0-jre11`, `7.0-jre11-hotspot`, `jre11`, `jre11-hotspot`](https://github.com/keeganwitt/docker-gradle/blob/605a08fb025ad34e8e9d5d2391427886e64fc9f7/hotspot/jre11/Dockerfile)
+-	[`7.0.0-jdk16`, `7.0.0-jdk16-hotspot`, `7.0-jdk16`, `7.0-jdk16-hotspot`, `jdk16`, `jdk16-hotspot`](https://github.com/keeganwitt/docker-gradle/blob/605a08fb025ad34e8e9d5d2391427886e64fc9f7/hotspot/jdk16/Dockerfile)
+-	[`7.0.0-jre16`, `7.0.0-jre16-hotspot`, `7.0-jre16`, `7.0-jre16-hotspot`, `jre16`, `jre16-hotspot`](https://github.com/keeganwitt/docker-gradle/blob/605a08fb025ad34e8e9d5d2391427886e64fc9f7/hotspot/jre16/Dockerfile)
+-	[`7.0.0-jdk8-openj9`, `7.0-jdk8-openj9`, `jdk8-openj9`, `7.0.0-jdk-openj9`, `7.0-jdk-openj9`, `jdk-openj9`, `7.0.0-openj9`, `7.0-openj9`, `openj9`](https://github.com/keeganwitt/docker-gradle/blob/605a08fb025ad34e8e9d5d2391427886e64fc9f7/openj9/jdk8/Dockerfile)
+-	[`7.0.0-jre8-openj9`, `7.0-jre8-openj9`, `jre8-openj9`, `7.0.0-jre-openj9`, `7.0-jre-openj9`, `jre-openj9`](https://github.com/keeganwitt/docker-gradle/blob/605a08fb025ad34e8e9d5d2391427886e64fc9f7/openj9/jre8/Dockerfile)
+-	[`7.0.0-jdk11-openj9`, `7.0-jdk11-openj9`, `jdk11-openj9`](https://github.com/keeganwitt/docker-gradle/blob/605a08fb025ad34e8e9d5d2391427886e64fc9f7/openj9/jdk11/Dockerfile)
+-	[`7.0.0-jre11-openj9`, `7.0-jre11-openj9`, `jre11-openj9`](https://github.com/keeganwitt/docker-gradle/blob/605a08fb025ad34e8e9d5d2391427886e64fc9f7/openj9/jre11/Dockerfile)
+-	[`7.0.0-jdk16-openj9`, `7.0-jdk16-openj9`, `jdk16-openj9`](https://github.com/keeganwitt/docker-gradle/blob/605a08fb025ad34e8e9d5d2391427886e64fc9f7/openj9/jdk16/Dockerfile)
+-	[`7.0.0-jre16-openj9`, `7.0-jre16-openj9`, `jre16-openj9`](https://github.com/keeganwitt/docker-gradle/blob/605a08fb025ad34e8e9d5d2391427886e64fc9f7/openj9/jre16/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -44,7 +50,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/gradle`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fgradle)  
+	[official-images repo's `library/gradle` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fgradle)  
 	[official-images repo's `library/gradle` file](https://github.com/docker-library/official-images/blob/master/library/gradle) ([history](https://github.com/docker-library/official-images/commits/master/library/gradle))
 
 -	**Source of this description**:  

@@ -20,13 +20,12 @@ WARNING:
 	[ArangoDB](https://github.com/arangodb/arangodb-docker)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.4`, `3.4.10`](https://github.com/arangodb/arangodb-docker/blob/63dc866beb0546ba3b172e76f64759abfe1a0a28/alpine/3.4.10/Dockerfile)
--	[`3.5`, `3.5.5`](https://github.com/arangodb/arangodb-docker/blob/8690d4d6c3f3f0aaea34af72455a2c78a5669149/alpine/3.5.5.1/Dockerfile)
--	[`3.6`, `3.6.3`, `latest`](https://github.com/arangodb/arangodb-docker/blob/63dc866beb0546ba3b172e76f64759abfe1a0a28/alpine/3.6.3.1/Dockerfile)
+-	[`3.6`, `3.6.13`](https://github.com/arangodb/arangodb-docker/blob/293903ae4adcf22eaafcf427076a6e62010ab1ea/alpine/3.6.13/Dockerfile)
+-	[`3.7`, `3.7.10`, `latest`](https://github.com/arangodb/arangodb-docker/blob/f4170707010ed55855b68e709861dde4d0f3cb12/alpine/3.7.10/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -41,7 +40,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/arangodb`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Farangodb)  
+	[official-images repo's `library/arangodb` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Farangodb)  
 	[official-images repo's `library/arangodb` file](https://github.com/docker-library/official-images/blob/master/library/arangodb) ([history](https://github.com/docker-library/official-images/commits/master/library/arangodb))
 
 -	**Source of this description**:  
@@ -49,9 +48,9 @@ WARNING:
 
 # What is ArangoDB?
 
-ArangoDB is a multi-model, open-source database with flexible data models for documents, graphs, and key-values. Build high performance applications using a convenient SQL-like query language or JavaScript extensions. Use ACID transactions if you require them. Scale horizontally with a few mouse clicks.
+ArangoDB is a multi-model, open-source database with flexible data models for documents, graphs, and key-values. Build high performance applications using a convenient SQL-like query language or JavaScript extensions. Use ACID transactions if you require them. Scale horizontally and vertically with a few mouse clicks.
 
-ArangoDB runs everywhere: On-prem, in the cloud and also on [ArangoDBs Cloud Service Oasis](https://cloud.arangodb.com/home).
+ArangoDB runs everywhere: On-prem, in the cloud and also on [ArangoDB's Cloud Service Oasis](https://cloud.arangodb.com/home).
 
 The supported data models can be mixed in queries and allow ArangoDB to be the aggregation point for your data.
 
@@ -200,11 +199,9 @@ See more information about [Configuration](https://www.arangodb.com/docs/stable/
 
 ## Persistent Data
 
-ArangoDB supports two different storage engines as of ArangoDB 3.2. You can choose them while instantiating the container with the environment variable `ARANGO_STORAGE_ENGINE`. With `mmfiles` you choose the classic storage engine, `rocksdb` will choose the newly introduced storage engine based on [RocksDB](http://rocksdb.org/). The default choice is `mmfiles`.
+ArangoDB supports two different storage engines from version 3.2 to 3.6. You can choose them while instantiating the container with the environment variable `ARANGO_STORAGE_ENGINE`. With `mmfiles` you choose the classic storage engine (not available in 3.7 and later), `rocksdb` will choose the storage engine based on [RocksDB](http://rocksdb.org/). The default choice is `rocksdb` from version 3.4 on.
 
-ArangoDB use the volume `/var/lib/arangodb3` as database directory to store the collection data and the volume `/var/lib/arangodb3-apps` as apps directory to store any extensions. These directories are marked as docker volumes.
-
-Please note that the old version 2.x used `/var/lib/arangodb` and `/var/lib/arangodb-apps`. We will refer to the 3.x variant in this document. In case you are starting a 2.x image just replace it with the 2.x variant.
+ArangoDB uses the volume `/var/lib/arangodb3` as database directory to store the collection data and the volume `/var/lib/arangodb3-apps` as apps directory to store any extensions. These directories are marked as docker volumes.
 
 See `docker inspect --format "{{ .Config.Volumes}}" arangodb` for all volumes.
 
@@ -255,7 +252,7 @@ When deriving the image, you can control the instantiation via putting files int
 
 # License
 
-[Arangodb itself is licensed under the Apache License](https://github.com/arangodb/arangodb/blob/devel/LICENSE), but it contains [software of third parties under their respective licenses](https://github.com/arangodb/arangodb/blob/devel/LICENSES-OTHER-COMPONENTS.md).
+[ArangoDB itself is licensed under the Apache License](https://github.com/arangodb/arangodb/blob/devel/LICENSE), but it contains [software of third parties under their respective licenses](https://github.com/arangodb/arangodb/blob/devel/LICENSES-OTHER-COMPONENTS.md).
 
 As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 

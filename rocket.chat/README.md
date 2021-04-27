@@ -20,12 +20,14 @@ WARNING:
 	[Rocket.Chat](https://github.com/RocketChat/Docker.Official.Image)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.2.2`, `3.2`, `3`, `latest`](https://github.com/RocketChat/Docker.Official.Image/blob/9cc942405ca293ef01474e2c13a40894ee313851/3/Dockerfile)
--	[`2.4.12`, `2.4`, `2`](https://github.com/RocketChat/Docker.Official.Image/blob/9cc942405ca293ef01474e2c13a40894ee313851/2/Dockerfile)
+-	[`3.13.2`, `3.13`, `3`, `latest`](https://github.com/RocketChat/Docker.Official.Image/blob/13feeb6646c19a96013780eed555fb11018da262/3.13/Dockerfile)
+-	[`3.12.4`, `3.12`](https://github.com/RocketChat/Docker.Official.Image/blob/13feeb6646c19a96013780eed555fb11018da262/3.12/Dockerfile)
+-	[`3.11.4`, `3.11`](https://github.com/RocketChat/Docker.Official.Image/blob/13feeb6646c19a96013780eed555fb11018da262/3.11/Dockerfile)
+-	[`2.4.14`, `2.4`, `2`](https://github.com/RocketChat/Docker.Official.Image/blob/8c163b1c5a8e077280d8dc2301ba75dfbfd52d32/2.4/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -40,7 +42,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/rocket.chat`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Frocket.chat)  
+	[official-images repo's `library/rocket.chat` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Frocket.chat)  
 	[official-images repo's `library/rocket.chat` file](https://github.com/docker-library/official-images/blob/master/library/rocket.chat) ([history](https://github.com/docker-library/official-images/commits/master/library/rocket.chat))
 
 -	**Source of this description**:  

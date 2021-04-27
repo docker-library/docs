@@ -20,14 +20,16 @@ WARNING:
 	[the Docker Community](https://github.com/docker-library/ghost)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.17.1`, `3.17`, `3`, `latest`](https://github.com/docker-library/ghost/blob/e395a5a01987c10fd462c676875469489e103f93/3/debian/Dockerfile)
--	[`3.17.1-alpine`, `3.17-alpine`, `3-alpine`, `alpine`](https://github.com/docker-library/ghost/blob/e395a5a01987c10fd462c676875469489e103f93/3/alpine/Dockerfile)
--	[`2.38.1`, `2.38`, `2`](https://github.com/docker-library/ghost/blob/5798d6bd9c3b359954d90d173154cc36ba6f8337/2/debian/Dockerfile)
--	[`2.38.1-alpine`, `2.38-alpine`, `2-alpine`](https://github.com/docker-library/ghost/blob/5798d6bd9c3b359954d90d173154cc36ba6f8337/2/alpine/Dockerfile)
+-	[`4.3.2`, `4.3`, `4`, `latest`](https://github.com/docker-library/ghost/blob/913e06521993c4d1adb75902b3b866860a466af5/4/debian/Dockerfile)
+-	[`4.3.2-alpine`, `4.3-alpine`, `4-alpine`, `alpine`](https://github.com/docker-library/ghost/blob/913e06521993c4d1adb75902b3b866860a466af5/4/alpine/Dockerfile)
+-	[`3.42.5`, `3.42`, `3`](https://github.com/docker-library/ghost/blob/aafa3aef4bd6d39c9b883fb1b477e9f85eb88504/3/debian/Dockerfile)
+-	[`3.42.5-alpine`, `3.42-alpine`, `3-alpine`](https://github.com/docker-library/ghost/blob/aafa3aef4bd6d39c9b883fb1b477e9f85eb88504/3/alpine/Dockerfile)
+-	[`2.38.3`, `2.38`, `2`](https://github.com/docker-library/ghost/blob/43436c4d7ff4f323dce29012582fb311bde50c27/2/debian/Dockerfile)
+-	[`2.38.3-alpine`, `2.38-alpine`, `2-alpine`](https://github.com/docker-library/ghost/blob/43436c4d7ff4f323dce29012582fb311bde50c27/2/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -42,7 +44,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/ghost`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fghost)  
+	[official-images repo's `library/ghost` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fghost)  
 	[official-images repo's `library/ghost` file](https://github.com/docker-library/official-images/blob/master/library/ghost) ([history](https://github.com/docker-library/official-images/commits/master/library/ghost))
 
 -	**Source of this description**:  
@@ -76,7 +78,7 @@ If all goes well, you'll be able to access your new site on `http://localhost:30
 
 ### Upgrading Ghost
 
-You will want to ensure you are running the latest minor version (1.25.5 or 0.11.9) of Ghost before upgrading major versions. Otherwise, you may run into database errors.
+You will want to ensure you are running the latest minor version of Ghost before upgrading major versions. Otherwise, you may run into database errors.
 
 For upgrading your Ghost container you will want to mount your data to the appropriate path in the predecessor container (see below): import your content from the admin panel, stop the container, and then re-mount your content to the successor container you are upgrading into; you can then export your content from the admin panel.
 
@@ -84,24 +86,16 @@ For upgrading your Ghost container you will want to mount your data to the appro
 
 Mount your existing content. In this example we also use the Alpine base image.
 
-### Ghost 1.x.x
-
 ```console
-$ docker run -d --name some-ghost -p 3001:2368 -v /path/to/ghost/blog:/var/lib/ghost/content ghost:1-alpine
-```
-
-### Ghost 0.11.xx
-
-```console
-$ docker run -d --name some-ghost -p 3001:2368 -v /path/to/ghost/blog:/var/lib/ghost ghost:0.11-alpine
+$ docker run -d --name some-ghost -p 3001:2368 -v /path/to/ghost/blog:/var/lib/ghost/content ghost:alpine
 ```
 
 ### Docker Volume
 
-Alternatively you can use a [data container](http://docs.docker.com/engine/tutorials/dockervolumes/) that has a volume that points to `/var/lib/ghost/content` (or /var/lib/ghost for 0.11.x) and then reference it:
+Alternatively you can use a named [docker volume](https://docs.docker.com/storage/volumes/) instead of a direct host path for `/var/lib/ghost/content`:
 
 ```console
-$ docker run -d --name some-ghost --volumes-from some-ghost-data ghost
+$ docker run -d --name some-ghost -v some-ghost-data:/var/lib/ghost/content ghost
 ```
 
 ### SQLite Database
@@ -124,7 +118,7 @@ When opening a ticket at https://github.com/TryGhost/Ghost/issues it becomes nec
 
 ```console
 $ docker exec <container-id> node --version
-v6.11.2
+[node version output]
 ```
 
 ## Note about Ghost-CLI
@@ -149,7 +143,7 @@ services:
     ports:
       - 8080:2368
     environment:
-      # see https://docs.ghost.org/docs/config#section-running-ghost-with-config-env-variables
+      # see https://ghost.org/docs/config/#configuration-options
       database__client: mysql
       database__connection__host: db
       database__connection__user: root
@@ -157,6 +151,8 @@ services:
       database__connection__database: ghost
       # this url value is just an example, and is likely wrong for your environment!
       url: http://localhost:8080
+      # contrary to the default mentioned in the linked documentation, this image defaults to NODE_ENV=production (so development mode needs to be explicitly specified if desired)
+      #NODE_ENV: development
 
   db:
     image: mysql:5.7
@@ -165,7 +161,7 @@ services:
       MYSQL_ROOT_PASSWORD: example
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/c57e666ff4299ee6e801a9843b7f39eebfd8f2da/ghost/stack.yml)
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/ff4ab86fc4ec774fb4d419480fd412064b38054f/ghost/stack.yml)
 
 Run `docker stack deploy -c stack.yml ghost` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
 
@@ -179,9 +175,9 @@ This is the defacto image. If you are unsure about what your needs are, you prob
 
 ## `ghost:<version>-alpine`
 
-This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
-This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
 
 To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 

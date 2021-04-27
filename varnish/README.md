@@ -20,12 +20,12 @@ WARNING:
 	[the Varnish Docker Community](https://github.com/varnish/docker-varnish)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.0`, `6.0.6-1`, `6.0.6`, `stable`](https://github.com/varnish/docker-varnish/blob/d32d16eb38cd161f0e626880cbd334da7d301027/stable/debian/Dockerfile)
--	[`6.4`, `6.4.0-1`, `6.4.0`, `6`, `latest`, `fresh`](https://github.com/varnish/docker-varnish/blob/d32d16eb38cd161f0e626880cbd334da7d301027/fresh/debian/Dockerfile)
+-	[`6.0`, `6.0.7-1`, `6.0.7`, `stable`](https://github.com/varnish/docker-varnish/blob/51a66e74c3a56e4def767d3ad3f6c8ad1a4addaa/stable/debian/Dockerfile)
+-	[`6.6`, `6.6.0-1`, `6.6.0`, `6`, `latest`, `fresh`](https://github.com/varnish/docker-varnish/blob/51a66e74c3a56e4def767d3ad3f6c8ad1a4addaa/fresh/debian/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -40,7 +40,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/varnish`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fvarnish)  
+	[official-images repo's `library/varnish` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fvarnish)  
 	[official-images repo's `library/varnish` file](https://github.com/docker-library/official-images/blob/master/library/varnish) ([history](https://github.com/docker-library/official-images/commits/master/library/varnish))
 
 -	**Source of this description**:  
@@ -71,13 +71,15 @@ backend default {
 Then run:
 
 ```console
-$ docker run --name my-running-varnish -v /path/to/default.vcl:/etc/varnish/default.vcl:ro --tmpfs /var/lib/varnish:exec -d varnish
+# we need both a configuration file at /etc/varnish/default.vcl
+# and our workdir to be mounted as tmpfs to avoid disk I/O
+$ docker run -v /path/to/default.vcl:/etc/varnish/default.vcl:ro --tmpfs /var/lib/varnish:exec varnish
 ```
 
 Alternatively, a simple `Dockerfile` can be used to generate a new image that includes the necessary `default.vcl` (which is a much cleaner solution than the bind mount above):
 
 ```dockerfile
-FROM varnish:6.2
+FROM varnish
 
 COPY default.vcl /etc/varnish/
 ```
@@ -85,7 +87,35 @@ COPY default.vcl /etc/varnish/
 Place this file in the same directory as your `default.vcl`, run `docker build -t my-varnish .`, then start your container:
 
 ```console
-$ docker run --name my-running-varnish --tmpfs /var/lib/varnish:exec -d my-varnish
+$ docker --tmpfs /var/lib/varnish:exec my-varnish
+```
+
+### Additional configuration
+
+By default, the containers will use a cache size of 100MB, which is usually a bit too small, but you can quickly set it through the `VARNISH_SIZE` environment variable:
+
+```console
+$ docker run --tmpfs /var/lib/varnish:exec -e VARNISH_SIZE=2G varnish
+```
+
+Additionally, you can add arguments to `docker run` affter `varnish`, if the first one starts with a `-`, they will be appendend to the [default command](https://github.com/varnish/docker-varnish/blob/master/docker-varnish-entrypoint#L8):
+
+```console
+# extend the default keep period
+$ docker run --tmpfs /var/lib/varnish:exec -e VARNISH_SIZE=2G varnish -p default_keep=300
+```
+
+If your first argument after `varnish` doesn't start with `-`, it will be interpreted as a command to override the default one:
+
+```console
+# show the command-line options
+$ docker run varnish varnishd -?
+
+# list parameters usable with -p
+$ docker run varnish varnishd -x parameter
+
+# run the server with your own parameters (don't forget -F to not daemonize)
+$ docker run varnish varnishd -a :8080 -b 127.0.0.1:8181 -t 600 -p feature=+http2
 ```
 
 ### Exposing the port

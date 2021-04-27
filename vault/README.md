@@ -20,12 +20,13 @@ WARNING:
 	[HashiCorp](https://github.com/hashicorp/docker-vault)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.4.2`, `latest`](https://github.com/hashicorp/docker-vault/blob/f5a7567208f4e163185b60089bc9cfe0cf15956f/0.X/Dockerfile)
--	[`1.3.6`](https://github.com/hashicorp/docker-vault/blob/45c8650877258b7038c17f3acc1b01462c732d43/0.X/Dockerfile)
+-	[`1.7.1`, `latest`](https://github.com/hashicorp/docker-vault/blob/14d893cb83118fd3642e9e516f682c5e0e0a2c30/0.X/Dockerfile)
+-	[`1.6.4`](https://github.com/hashicorp/docker-vault/blob/88aeb655ea14e74bb9d9ae7e583f86c3e0d9a29f/0.X/Dockerfile)
+-	[`1.5.8`](https://github.com/hashicorp/docker-vault/blob/1c4258acc24265a26b0581929954ec112230fb8d/0.X/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -40,7 +41,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/vault`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fvault)  
+	[official-images repo's `library/vault` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fvault)  
 	[official-images repo's `library/vault` file](https://github.com/docker-library/official-images/blob/master/library/vault) ([history](https://github.com/docker-library/official-images/commits/master/library/vault))
 
 -	**Source of this description**:  

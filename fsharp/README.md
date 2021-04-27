@@ -20,13 +20,13 @@ WARNING:
 	[the F# Community](https://github.com/fsprojects/docker-fsharp)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `10`, `10.7`, `10.7.0`](https://github.com/fsprojects/docker-fsharp/blob/6ced4c004bac9d5a024eefbc1d90219c78ce784b/10.7.0/mono/Dockerfile)
--	[`4`, `4.1`, `4.1.34`](https://github.com/fsprojects/docker-fsharp/blob/6ced4c004bac9d5a024eefbc1d90219c78ce784b/4.1.34/mono/Dockerfile)
--	[`netcore`, `10-netcore`, `10.7-netcore`, `10.7.0-netcore`](https://github.com/fsprojects/docker-fsharp/blob/6ced4c004bac9d5a024eefbc1d90219c78ce784b/10.7.0/netcore/Dockerfile)
+-	[`latest`, `10`, `10.10`, `10.10.0`](https://github.com/fsprojects/docker-fsharp/blob/a47a73b4b99d85720e191680e29f1bd1d62724ea/10.10.0/mono/Dockerfile)
+-	[`4`, `4.1`, `4.1.34`](https://github.com/fsprojects/docker-fsharp/blob/a47a73b4b99d85720e191680e29f1bd1d62724ea/4.1.34/mono/Dockerfile)
+-	[`netcore`, `10-netcore`, `10.10-netcore`, `10.10.0-netcore`](https://github.com/fsprojects/docker-fsharp/blob/a47a73b4b99d85720e191680e29f1bd1d62724ea/10.10.0/netcore/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -41,7 +41,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/fsharp`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Ffsharp)  
+	[official-images repo's `library/fsharp` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Ffsharp)  
 	[official-images repo's `library/fsharp` file](https://github.com/docker-library/official-images/blob/master/library/fsharp) ([history](https://github.com/docker-library/official-images/commits/master/library/fsharp))
 
 -	**Source of this description**:  

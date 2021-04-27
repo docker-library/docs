@@ -20,18 +20,15 @@ WARNING:
 	[Fedora Release Engineering](https://github.com/fedora-cloud/docker-brew-fedora)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`26`](https://github.com/fedora-cloud/docker-brew-fedora/blob/035aa2a3970e4e10a9a6ae0b79322b882bfe50d3/x86_64/Dockerfile)
--	[`27`](https://github.com/fedora-cloud/docker-brew-fedora/blob/e1796b2753d5a5731de5915661e4639c4342b950/x86_64/Dockerfile)
--	[`28`](https://github.com/fedora-cloud/docker-brew-fedora/blob/aa106da2be30656a7ccb32b96f6788031ce8656f/x86_64/Dockerfile)
--	[`29`](https://github.com/fedora-cloud/docker-brew-fedora/blob/4dbc2ccd3b4d52258981eaf12043025054d53023/x86_64/Dockerfile)
--	[`30`](https://github.com/fedora-cloud/docker-brew-fedora/blob/ec092e1e4679f955d142b91f85ecd30a4f14a6ed/x86_64/Dockerfile)
--	[`latest`, `31`](https://github.com/fedora-cloud/docker-brew-fedora/blob/dfd9c5c8cb3b98de83f697446ad5885df1476d73/x86_64/Dockerfile)
--	[`32`](https://github.com/fedora-cloud/docker-brew-fedora/blob/d44f7abdc99edb550771c154ab81ce8f12e11172/x86_64/Dockerfile)
--	[`rawhide`, `33`](https://github.com/fedora-cloud/docker-brew-fedora/blob/54c8f0cfa2dcedcd2165fecb101e9e4ba9c2c499/x86_64/Dockerfile)
+-	[`31`](https://github.com/fedora-cloud/docker-brew-fedora/blob/619a9d98269d556d030648ad486bb2c9f50f1768/x86_64/Dockerfile)
+-	[`32`](https://github.com/fedora-cloud/docker-brew-fedora/blob/7d59b0538a60562d1756644b02e51451a311ccdc/x86_64/Dockerfile)
+-	[`latest`, `33`](https://github.com/fedora-cloud/docker-brew-fedora/blob/84e8f980c203961f94e12e85bd2cee8fff08b70f/x86_64/Dockerfile)
+-	[`34`](https://github.com/fedora-cloud/docker-brew-fedora/blob/fbf3385cf226b655a7e785c238232ea165badca7/x86_64/Dockerfile)
+-	[`rawhide`, `35`](https://github.com/fedora-cloud/docker-brew-fedora/blob/5af98888c93fe29c5c738df708e9864d47e8e492/x86_64/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -46,7 +43,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/fedora`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Ffedora)  
+	[official-images repo's `library/fedora` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Ffedora)  
 	[official-images repo's `library/fedora` file](https://github.com/docker-library/official-images/blob/master/library/fedora) ([history](https://github.com/docker-library/official-images/commits/master/library/fedora))
 
 -	**Source of this description**:  

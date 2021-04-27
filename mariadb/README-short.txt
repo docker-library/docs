@@ -1,1 +1,1 @@
-MariaDB is a community-developed fork of MySQL intended to remain free under the GNU GPL.
+MariaDB Server is a high performing open source relational databases, forked from MySQL.

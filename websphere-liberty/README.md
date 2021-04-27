@@ -24,15 +24,22 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`beta`](https://github.com/WASdev/ci.docker/blob/c89d127a536ed68bbf8d3d5ad92da443fb1a87d0/beta/Dockerfile)
--	[`kernel`](https://github.com/WASdev/ci.docker/blob/c89d127a536ed68bbf8d3d5ad92da443fb1a87d0/ga/latest/kernel/Dockerfile.ubuntu.ibmjava8)
--	[`full`, `latest`](https://github.com/WASdev/ci.docker/blob/c89d127a536ed68bbf8d3d5ad92da443fb1a87d0/ga/latest/full/Dockerfile.ubuntu.ibmjava8)
--	[`20.0.0.5-kernel-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/c89d127a536ed68bbf8d3d5ad92da443fb1a87d0/ga/20.0.0.5/kernel/Dockerfile.ubuntu.ibmjava8)
--	[`20.0.0.5-full-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/c89d127a536ed68bbf8d3d5ad92da443fb1a87d0/ga/20.0.0.5/full/Dockerfile.ubuntu.ibmjava8)
--	[`20.0.0.3-kernel-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/c89d127a536ed68bbf8d3d5ad92da443fb1a87d0/ga/20.0.0.3/kernel/Dockerfile.ubuntu.ibmjava8)
--	[`20.0.0.3-full-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/c89d127a536ed68bbf8d3d5ad92da443fb1a87d0/ga/20.0.0.3/full/Dockerfile.ubuntu.ibmjava8)
--	[`19.0.0.12-kernel-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/c89d127a536ed68bbf8d3d5ad92da443fb1a87d0/ga/19.0.0.12/kernel/Dockerfile.ubuntu.ibmjava8)
--	[`19.0.0.12-full-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/c89d127a536ed68bbf8d3d5ad92da443fb1a87d0/ga/19.0.0.12/full/Dockerfile.ubuntu.ibmjava8)
+-	[`kernel`](https://github.com/WASdev/ci.docker/blob/498fd2562d74c98227db511bd7920c2406b4d921/ga/latest/kernel/Dockerfile.ubuntu.ibmjava8)
+-	[`kernel-java11-openj9`](https://github.com/WASdev/ci.docker/blob/498fd2562d74c98227db511bd7920c2406b4d921/ga/latest/kernel/Dockerfile.ubuntu.adoptopenjdk11)
+-	[`full`, `latest`](https://github.com/WASdev/ci.docker/blob/498fd2562d74c98227db511bd7920c2406b4d921/ga/latest/full/Dockerfile.ubuntu.ibmjava8)
+-	[`full-java11-openj9`](https://github.com/WASdev/ci.docker/blob/498fd2562d74c98227db511bd7920c2406b4d921/ga/latest/full/Dockerfile.ubuntu.adoptopenjdk11)
+-	[`21.0.0.4-kernel-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/498fd2562d74c98227db511bd7920c2406b4d921/ga/21.0.0.4/kernel/Dockerfile.ubuntu.ibmjava8)
+-	[`21.0.0.4-kernel-java11-openj9`](https://github.com/WASdev/ci.docker/blob/498fd2562d74c98227db511bd7920c2406b4d921/ga/21.0.0.4/kernel/Dockerfile.ubuntu.adoptopenjdk11)
+-	[`21.0.0.4-full-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/498fd2562d74c98227db511bd7920c2406b4d921/ga/21.0.0.4/full/Dockerfile.ubuntu.ibmjava8)
+-	[`21.0.0.4-full-java11-openj9`](https://github.com/WASdev/ci.docker/blob/498fd2562d74c98227db511bd7920c2406b4d921/ga/21.0.0.4/full/Dockerfile.ubuntu.adoptopenjdk11)
+-	[`21.0.0.3-kernel-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/498fd2562d74c98227db511bd7920c2406b4d921/ga/21.0.0.3/kernel/Dockerfile.ubuntu.ibmjava8)
+-	[`21.0.0.3-kernel-java11-openj9`](https://github.com/WASdev/ci.docker/blob/498fd2562d74c98227db511bd7920c2406b4d921/ga/21.0.0.3/kernel/Dockerfile.ubuntu.adoptopenjdk11)
+-	[`21.0.0.3-full-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/498fd2562d74c98227db511bd7920c2406b4d921/ga/21.0.0.3/full/Dockerfile.ubuntu.ibmjava8)
+-	[`21.0.0.3-full-java11-openj9`](https://github.com/WASdev/ci.docker/blob/498fd2562d74c98227db511bd7920c2406b4d921/ga/21.0.0.3/full/Dockerfile.ubuntu.adoptopenjdk11)
+-	[`20.0.0.12-kernel-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/498fd2562d74c98227db511bd7920c2406b4d921/ga/20.0.0.12/kernel/Dockerfile.ubuntu.ibmjava8)
+-	[`20.0.0.12-kernel-java11-openj9`](https://github.com/WASdev/ci.docker/blob/498fd2562d74c98227db511bd7920c2406b4d921/ga/20.0.0.12/kernel/Dockerfile.ubuntu.adoptopenjdk11)
+-	[`20.0.0.12-full-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/498fd2562d74c98227db511bd7920c2406b4d921/ga/20.0.0.12/full/Dockerfile.ubuntu.ibmjava8)
+-	[`20.0.0.12-full-java11-openj9`](https://github.com/WASdev/ci.docker/blob/498fd2562d74c98227db511bd7920c2406b4d921/ga/20.0.0.12/full/Dockerfile.ubuntu.adoptopenjdk11)
 
 # Quick reference (cont.)
 
@@ -47,7 +54,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/websphere-liberty`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fwebsphere-liberty)  
+	[official-images repo's `library/websphere-liberty` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fwebsphere-liberty)  
 	[official-images repo's `library/websphere-liberty` file](https://github.com/docker-library/official-images/blob/master/library/websphere-liberty) ([history](https://github.com/docker-library/official-images/commits/master/library/websphere-liberty))
 
 -	**Source of this description**:  
@@ -55,9 +62,9 @@ WARNING:
 
 # Overview
 
-The images in this repository contain WebSphere Liberty application server and the IBM Java Runtime Environment. For more information please see our [official repository](https://github.com/WASdev/ci.docker).
+All of the images in this repository use Ubuntu as the Operating System. For variants that use the Universal Base Image, please see [this repository](https://hub.docker.com/r/ibmcom/websphere-liberty/).
 
-This repository contains WebSphere Liberty based on top of IBM Java 8 with Ubuntu images only. See [here](https://hub.docker.com/r/ibmcom/websphere-liberty/) for WebSphere Liberty based on Red Hat's Universal Base Image, which includes additional java options.
+For more information on these images please see our [GitHub repository](https://github.com/WASdev/ci.docker#container-images).
 
 # Image User
 
@@ -187,13 +194,15 @@ To elaborate these capabilities this section assumes the standalone Spring Boot 
 	FROM websphere-liberty:kernel as staging
 	COPY --chown=1001:0 hellospringboot.jar /staging/myFatApp.jar
 	COPY --chown=1001:0 server.xml /config/
-	RUN configure.sh && springBootUtility thin \
+	RUN springBootUtility thin \
 	   --sourceAppPath=/staging/myFatApp.jar \
 	   --targetThinAppPath=/staging/myThinApp.jar \
 	   --targetLibCachePath=/staging/lib.index.cache
 	FROM websphere-liberty:kernel
+	COPY --chown=1001:0 server.xml /config
 	COPY --from=staging /staging/lib.index.cache /lib.index.cache
 	COPY --from=staging /staging/myThinApp.jar /config/dropins/spring/myThinApp.jar
+	RUN configure.sh
 	```
 
 	For Spring Boot applications packaged with library dependencies that rarely change across continuous application updates, you can use the capabilities mentioned above to to share library caches across containers and to create even more efficient docker layers that leverage the docker build cache.

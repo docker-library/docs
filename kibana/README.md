@@ -24,8 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.7.0`](https://github.com/docker-library/kibana/blob/f3512f90b2c0be7c3547095a0bd1e607e18e9af3/7/Dockerfile)
--	[`6.8.9`](https://github.com/docker-library/kibana/blob/f3512f90b2c0be7c3547095a0bd1e607e18e9af3/6/Dockerfile)
+-	[`7.12.0`](https://github.com/docker-library/kibana/blob/357513fc65a890add229f11f9379697f22af9c28/7/Dockerfile)
+-	[`6.8.15`](https://github.com/docker-library/kibana/blob/d6759ae96883bf483b449f26c97229442e13c5cc/6/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -40,7 +40,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/kibana`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fkibana)  
+	[official-images repo's `library/kibana` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fkibana)  
 	[official-images repo's `library/kibana` file](https://github.com/docker-library/official-images/blob/master/library/kibana) ([history](https://github.com/docker-library/official-images/commits/master/library/kibana))
 
 -	**Source of this description**:  
@@ -94,7 +94,7 @@ For additional information on running and configuring Kibana on Docker, see [Run
 
 # License
 
-View [license information](https://github.com/elastic/kibana/blob/master/licenses/ELASTIC-LICENSE.txt) for the software contained in this image.
+View [license information](https://github.com/elastic/kibana/blob/master/licenses/ELASTIC-LICENSE-2.0.txt) for the software contained in this image.
 
 As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 

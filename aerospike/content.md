@@ -62,6 +62,8 @@ A full example:
 $ docker run -d -v <DIRECTORY>:/opt/aerospike/data --name aerospike -p 3000:3000 -p 3001:3001 -p 3002:3002 -p 3003:3003 %%IMAGE%%
 ```
 
+**Note:** As of version 5.1.0.10 the Dockerfile no longer has /opt/aerospike/data as a Docker Volume by default.
+
 ## Clustering
 
 Aerospike recommends using Mesh Clustering. Mesh uses TCP point to point connections for heartbeats. Each node in the cluster maintains a heartbeat connection to all other nodes. Please see [http://www.aerospike.com/docs/operations/configure/network/heartbeat/#mesh-unicast-heartbeat](http://www.aerospike.com/docs/operations/configure/network/heartbeat/#mesh-unicast-heartbeat)

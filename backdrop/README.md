@@ -20,12 +20,12 @@ WARNING:
 	[Backdrop Ops](https://github.com/backdrop-ops/backdrop-docker)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.13.2`, `1.13`, `1`, `1.13.2-apache`, `1.13-apache`, `1-apache`, `apache`, `latest`](https://github.com/backdrop-ops/backdrop-docker/blob/1c82e369b6bf1b8ab45becda7f9f9777fe7f6a7f/1/apache/Dockerfile)
--	[`1.13.2-fpm`, `1.13-fpm`, `1-fpm`, `fpm`](https://github.com/backdrop-ops/backdrop-docker/blob/1c82e369b6bf1b8ab45becda7f9f9777fe7f6a7f/1/fpm/Dockerfile)
+-	[`1.17.3`, `1.17`, `1`, `1.17.3-apache`, `1.17-apache`, `1-apache`, `apache`, `latest`](https://github.com/backdrop-ops/backdrop-docker/blob/b760ba970a67f3dcdc975ed8b77f915895184577/1/apache/Dockerfile)
+-	[`1.17.3-fpm`, `1.17-fpm`, `1-fpm`, `fpm`](https://github.com/backdrop-ops/backdrop-docker/blob/b760ba970a67f3dcdc975ed8b77f915895184577/1/fpm/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -40,7 +40,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/backdrop`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fbackdrop)  
+	[official-images repo's `library/backdrop` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fbackdrop)  
 	[official-images repo's `library/backdrop` file](https://github.com/docker-library/official-images/blob/master/library/backdrop) ([history](https://github.com/docker-library/official-images/commits/master/library/backdrop))
 
 -	**Source of this description**:  

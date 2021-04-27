@@ -20,14 +20,18 @@ WARNING:
 	[Tianon (of the Docker Project)](https://github.com/docker-library/docker)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`19.03.9`, `19.03`, `19`, `stable`, `test`, `latest`](https://github.com/docker-library/docker/blob/cdd23554f9417055ca2a18805fa9ad5716209934/19.03/Dockerfile)
--	[`19.03.9-dind`, `19.03-dind`, `19-dind`, `stable-dind`, `test-dind`, `dind`](https://github.com/docker-library/docker/blob/a73d96e731e2dd5d6822c99a9af4dcbfbbedb2be/19.03/dind/Dockerfile)
--	[`19.03.9-dind-rootless`, `19.03-dind-rootless`, `19-dind-rootless`, `stable-dind-rootless`, `test-dind-rootless`, `dind-rootless`](https://github.com/docker-library/docker/blob/25c81c65fe4e971ff75e67df38e8b9970b523f6e/19.03/dind-rootless/Dockerfile)
--	[`19.03.9-git`, `19.03-git`, `19-git`, `stable-git`, `test-git`, `git`](https://github.com/docker-library/docker/blob/7a67842e7ff12c1426ae6a67ac1b7a701b51f3df/19.03/git/Dockerfile)
+-	[`20.10.6`, `20.10`, `20`, `latest`](https://github.com/docker-library/docker/blob/f6a0c427f0354dcf5870c430c72c8f1d6b4e6d5e/20.10/Dockerfile)
+-	[`20.10.6-dind`, `20.10-dind`, `20-dind`, `dind`](https://github.com/docker-library/docker/blob/094faa88f437cafef7aeb0cc36e75b59046cc4b9/20.10/dind/Dockerfile)
+-	[`20.10.6-dind-rootless`, `20.10-dind-rootless`, `20-dind-rootless`, `dind-rootless`](https://github.com/docker-library/docker/blob/f6a0c427f0354dcf5870c430c72c8f1d6b4e6d5e/20.10/dind-rootless/Dockerfile)
+-	[`20.10.6-git`, `20.10-git`, `20-git`, `git`](https://github.com/docker-library/docker/blob/387e351394bfad74bceebf8303c6c8e39c3d4ed4/20.10/git/Dockerfile)
+-	[`19.03.15`, `19.03`, `19`](https://github.com/docker-library/docker/blob/835c371c516ebdf67adc0c76bbfb38bf9d3e586c/19.03/Dockerfile)
+-	[`19.03.15-dind`, `19.03-dind`, `19-dind`](https://github.com/docker-library/docker/blob/b1d2628005e12e79079c025c3653cba248d6f264/19.03/dind/Dockerfile)
+-	[`19.03.15-dind-rootless`, `19.03-dind-rootless`, `19-dind-rootless`](https://github.com/docker-library/docker/blob/835c371c516ebdf67adc0c76bbfb38bf9d3e586c/19.03/dind-rootless/Dockerfile)
+-	[`19.03.15-git`, `19.03-git`, `19-git`](https://github.com/docker-library/docker/blob/12d1c2763b54d29137ec448a3e4ad1a9aefae1a0/19.03/git/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -42,7 +46,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/docker`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fdocker)  
+	[official-images repo's `library/docker` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fdocker)  
 	[official-images repo's `library/docker` file](https://github.com/docker-library/official-images/blob/master/library/docker) ([history](https://github.com/docker-library/official-images/commits/master/library/docker))
 
 -	**Source of this description**:  
@@ -64,7 +68,7 @@ If you are still convinced that you need Docker-in-Docker and not just access to
 
 # How to use this image
 
-[![asciicast](https://asciinema.org/a/24707.png)](https://asciinema.org/a/24707)
+[![asciicast](https://asciinema.org/a/378669.svg)](https://asciinema.org/a/378669)
 
 ## TLS
 
@@ -238,9 +242,41 @@ $ docker run --privileged --name some-docker -d \
 	docker:dind --storage-driver overlay2
 ```
 
+## Runtime Settings Considerations
+
+Inspired by the [official systemd `docker.service` configuration](https://github.com/docker/docker-ce-packaging/blob/57ae892b13de399171fc33f878b70e72855747e6/systemd/docker.service#L30-L45), you may want to consider different values for the following runtime configuration options, especially for production Docker instances:
+
+```console
+$ docker run --privileged --name some-docker -d \
+	... \
+	--ulimit nofile=-1 \
+	--ulimit nproc=-1 \
+	--ulimit core=-1 \
+	--pids-limit -1 \
+	--oom-score-adj -500 \
+	docker:dind
+```
+
+Some of these will not be supported based on the settings on the host's `dockerd`, such as `--ulimit nofile=-1`, giving errors that look like `error setting rlimit type 7: operation not permitted`, and some may inherit sane values from the host `dockerd` instance or may not apply for your usage of Docker-in-Docker (for example, you likely want to set `--oom-score-adj` to a value that's higher than `dockerd` on the host so that your Docker-in-Docker instance is killed before the host Docker instance is).
+
 ## Rootless
 
 For more information about using the experimental "rootless" image variants, see [docker-library/docker#174](https://github.com/docker-library/docker/pull/174).
+
+**Note:** just like the regular `dind` images, `--privileged` is required for Docker-in-Docker to function properly ([docker-library/docker#151](https://github.com/docker-library/docker/issues/151#issuecomment-483185972) & [docker-library/docker#281](https://github.com/docker-library/docker/issues/281#issuecomment-744766015)). For `19.03.x` rootless images, an argument of `--experimental` is required for `dockerd` ([docker/docker#40759](https://github.com/docker/docker/pull/40759)).
+
+Basic example usage:
+
+```console
+$ docker run -d --name some-docker --privileged docker:dind-rootless
+$ docker logs --tail=3 some-docker # to verify the daemon has finished generating TLS certificates and is listening successfully
+time="xxx" level=info msg="Daemon has completed initialization"
+time="xxx" level=info msg="API listen on /run/user/1000/docker.sock"
+time="xxx" level=info msg="API listen on [::]:2376"
+$ docker exec -it some-docker docker-entrypoint.sh sh # using "docker-entrypoint.sh" which auto-sets "DOCKER_HOST" appropriately
+/ $ docker info --format '{{ json .SecurityOptions }}'
+["name=seccomp,profile=default","name=rootless"]
+```
 
 ## Where to Store Data
 

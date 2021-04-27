@@ -20,14 +20,18 @@ WARNING:
 	[the Docker Community](https://github.com/docker-library/busybox)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.31.1-uclibc`, `1.31-uclibc`, `1-uclibc`, `uclibc`](https://github.com/docker-library/busybox/blob/7c3206169c4d32ae0afbb36b90cb9f9b77011f7a/uclibc/Dockerfile)
--	[`1.31.1-glibc`, `1.31-glibc`, `1-glibc`, `glibc`](https://github.com/docker-library/busybox/blob/7c3206169c4d32ae0afbb36b90cb9f9b77011f7a/glibc/Dockerfile)
--	[`1.31.1-musl`, `1.31-musl`, `1-musl`, `musl`](https://github.com/docker-library/busybox/blob/7c3206169c4d32ae0afbb36b90cb9f9b77011f7a/musl/Dockerfile)
--	[`1.31.1`, `1.31`, `1`, `latest`](https://github.com/docker-library/busybox/blob/7c3206169c4d32ae0afbb36b90cb9f9b77011f7a/uclibc/Dockerfile)
+-	[`1.32.1-uclibc`, `1.32-uclibc`, `1-uclibc`, `stable-uclibc`, `uclibc`](https://github.com/docker-library/busybox/blob/3d11ce4d95521ccc2da21ebc4e10ebe161a02f63/stable/uclibc/Dockerfile)
+-	[`1.32.1-glibc`, `1.32-glibc`, `1-glibc`, `stable-glibc`, `glibc`](https://github.com/docker-library/busybox/blob/3d11ce4d95521ccc2da21ebc4e10ebe161a02f63/stable/glibc/Dockerfile)
+-	[`1.32.1-musl`, `1.32-musl`, `1-musl`, `stable-musl`, `musl`](https://github.com/docker-library/busybox/blob/3d11ce4d95521ccc2da21ebc4e10ebe161a02f63/stable/musl/Dockerfile)
+-	[`1.32.1`, `1.32`, `1`, `stable`, `latest`](https://github.com/docker-library/busybox/blob/3d11ce4d95521ccc2da21ebc4e10ebe161a02f63/stable/uclibc/Dockerfile)
+-	[`1.33.0-uclibc`, `1.33-uclibc`, `unstable-uclibc`](https://github.com/docker-library/busybox/blob/3d11ce4d95521ccc2da21ebc4e10ebe161a02f63/unstable/uclibc/Dockerfile)
+-	[`1.33.0-glibc`, `1.33-glibc`, `unstable-glibc`](https://github.com/docker-library/busybox/blob/3d11ce4d95521ccc2da21ebc4e10ebe161a02f63/unstable/glibc/Dockerfile)
+-	[`1.33.0-musl`, `1.33-musl`, `unstable-musl`](https://github.com/docker-library/busybox/blob/3d11ce4d95521ccc2da21ebc4e10ebe161a02f63/unstable/musl/Dockerfile)
+-	[`1.33.0`, `1.33`, `unstable`](https://github.com/docker-library/busybox/blob/3d11ce4d95521ccc2da21ebc4e10ebe161a02f63/unstable/uclibc/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -42,7 +46,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/busybox`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fbusybox)  
+	[official-images repo's `library/busybox` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fbusybox)  
 	[official-images repo's `library/busybox` file](https://github.com/docker-library/official-images/blob/master/library/busybox) ([history](https://github.com/docker-library/official-images/commits/master/library/busybox))
 
 -	**Source of this description**:  

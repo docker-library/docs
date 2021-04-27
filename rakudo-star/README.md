@@ -17,20 +17,20 @@ WARNING:
 # Quick reference
 
 -	**Maintained by**:  
-	[the Perl 6 Community](https://github.com/perl6/docker)
+	[the Raku Community](https://github.com/Raku/docker)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `2020.01`](https://github.com/raku/docker/blob/d893fa621e755045c80fb4d0615c2810812d98f7/Dockerfile)
--	[`alpine`, `2020.01-alpine`](https://github.com/raku/docker/blob/d893fa621e755045c80fb4d0615c2810812d98f7/alpine/Dockerfile)
+-	[`latest`, `2020.10`](https://github.com/Raku/docker/blob/9101edf7704759d30c6fd180f3f9646109e1327d/2020.10/buster/Dockerfile)
+-	[`alpine`, `2020.10-alpine`](https://github.com/Raku/docker/blob/9101edf7704759d30c6fd180f3f9646109e1327d/2020.10/alpine3.12/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/perl6/docker/issues](https://github.com/perl6/docker/issues)
+	[https://github.com/Raku/docker/issues](https://github.com/Raku/docker/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/rakudo-star/), [`arm64v8`](https://hub.docker.com/r/arm64v8/rakudo-star/)
@@ -40,7 +40,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/rakudo-star`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Frakudo-star)  
+	[official-images repo's `library/rakudo-star` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Frakudo-star)  
 	[official-images repo's `library/rakudo-star` file](https://github.com/docker-library/official-images/blob/master/library/rakudo-star) ([history](https://github.com/docker-library/official-images/commits/master/library/rakudo-star))
 
 -	**Source of this description**:  
@@ -50,13 +50,11 @@ WARNING:
 
 Rakudo Star is a Raku (formerly known as Perl 6) distribution designed for use by early adopters of the language. It includes a virtual machine (the JVM or MoarVM), the Rakudo compiler, and a suite of modules that users may find useful. This image includes the MoarVM backend for the compiler.
 
-Project homepage: [http://rakudo.org](http://rakudo.org)
+-	Project homepage: https://rakudo.org/
+-	Raku Language Specification: https://github.com/Raku/roast
+-	Raku Language Documentation: https://docs.raku.org/
 
-GitHub repository: [https://github.com/rakudo/star](https://github.com/rakudo/star)
-
-The Dockerfile responsible: [http://github.com/raku/docker/tree/master/Dockerfile](http://github.com/raku/docker/tree/master/Dockerfile)
-
-Raku Language Documentation: [http://docs.raku.org/](http://docs.raku.org/)
+> [wikipedia.org/wiki/Rakudo](https://en.wikipedia.org/wiki/Rakudo)
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/48ac05ac94903844bfbdea1fb361676a904f9d85/rakudo-star/logo.png)
 
@@ -80,7 +78,7 @@ $ docker run -it rakudo-star raku -e 'say "Hello!"'
 
 Many Raku developers are present on #raku on Freenode.
 
-Issues for Rakudo are tracked in [on GitHub](https://github.com/rakudo/rakudo/issues/).
+Issues for Rakudo are tracked in [on GitHub](https://github.com/rakudo/rakudo/issues).
 
 # Image Variants
 
@@ -92,9 +90,9 @@ This is the defacto image. If you are unsure about what your needs are, you prob
 
 ## `rakudo-star:<version>-alpine`
 
-This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
-This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
 
 To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 

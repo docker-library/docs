@@ -20,14 +20,33 @@ WARNING:
 	[the Docker Community](https://github.com/docker-library/pypy)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.7-7.3.0`, `2.7-7.3`, `2.7-7`, `2.7`, `2-7.3.0`, `2-7.3`, `2-7`, `2`, `2.7-7.3.0-buster`, `2.7-7.3-buster`, `2.7-7-buster`, `2.7-buster`, `2-7.3.0-buster`, `2-7.3-buster`, `2-7-buster`, `2-buster`](https://github.com/docker-library/pypy/blob/30385f19542aa8bdcca7fb2f7a9a18786e9e8f17/2.7/Dockerfile)
--	[`2.7-7.3.0-slim`, `2.7-7.3-slim`, `2.7-7-slim`, `2.7-slim`, `2-7.3.0-slim`, `2-7.3-slim`, `2-7-slim`, `2-slim`, `2.7-7.3.0-slim-buster`, `2.7-7.3-slim-buster`, `2.7-7-slim-buster`, `2.7-slim-buster`, `2-7.3.0-slim-buster`, `2-7.3-slim-buster`, `2-7-slim-buster`, `2-slim-buster`](https://github.com/docker-library/pypy/blob/30385f19542aa8bdcca7fb2f7a9a18786e9e8f17/2.7/slim/Dockerfile)
--	[`3.6-7.3.0`, `3.6-7.3`, `3.6-7`, `3.6`, `3-7.3.0`, `3-7.3`, `3-7`, `3`, `latest`, `3.6-7.3.0-buster`, `3.6-7.3-buster`, `3.6-7-buster`, `3.6-buster`, `3-7.3.0-buster`, `3-7.3-buster`, `3-7-buster`, `3-buster`, `buster`](https://github.com/docker-library/pypy/blob/30385f19542aa8bdcca7fb2f7a9a18786e9e8f17/3.6/Dockerfile)
--	[`3.6-7.3.0-slim`, `3.6-7.3-slim`, `3.6-7-slim`, `3.6-slim`, `3-7.3.0-slim`, `3-7.3-slim`, `3-7-slim`, `3-slim`, `slim`, `3.6-7.3.0-slim-buster`, `3.6-7.3-slim-buster`, `3.6-7-slim-buster`, `3.6-slim-buster`, `3-7.3.0-slim-buster`, `3-7.3-slim-buster`, `3-7-slim-buster`, `3-slim-buster`, `slim-buster`](https://github.com/docker-library/pypy/blob/30385f19542aa8bdcca7fb2f7a9a18786e9e8f17/3.6/slim/Dockerfile)
+(See ["What's the difference between 'Shared' and 'Simple' tags?" in the FAQ](https://github.com/docker-library/faq#whats-the-difference-between-shared-and-simple-tags).)
+
+## Simple Tags
+
+-	[`3.7-7.3.4-buster`, `3.7-7.3-buster`, `3.7-7-buster`, `3.7-buster`, `3-7.3.4-buster`, `3-7.3-buster`, `3-7-buster`, `3-buster`, `buster`](https://github.com/docker-library/pypy/blob/596e037750c79f94e3ac5cb9ec2ca28961987599/3.7/buster/Dockerfile)
+-	[`3.7-7.3.4-slim`, `3.7-7.3-slim`, `3.7-7-slim`, `3.7-slim`, `3-7.3.4-slim`, `3-7.3-slim`, `3-7-slim`, `3-slim`, `slim`, `3.7-7.3.4-slim-buster`, `3.7-7.3-slim-buster`, `3.7-7-slim-buster`, `3.7-slim-buster`, `3-7.3.4-slim-buster`, `3-7.3-slim-buster`, `3-7-slim-buster`, `3-slim-buster`, `slim-buster`](https://github.com/docker-library/pypy/blob/596e037750c79f94e3ac5cb9ec2ca28961987599/3.7/slim-buster/Dockerfile)
+-	[`3.7-7.3.4-windowsservercore-1809`, `3.7-7.3-windowsservercore-1809`, `3.7-7-windowsservercore-1809`, `3.7-windowsservercore-1809`, `3-7.3.4-windowsservercore-1809`, `3-7.3-windowsservercore-1809`, `3-7-windowsservercore-1809`, `3-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/docker-library/pypy/blob/596e037750c79f94e3ac5cb9ec2ca28961987599/3.7/windows/windowsservercore-1809/Dockerfile)
+-	[`2.7-7.3.4-buster`, `2.7-7.3-buster`, `2.7-7-buster`, `2.7-buster`, `2-7.3.4-buster`, `2-7.3-buster`, `2-7-buster`, `2-buster`](https://github.com/docker-library/pypy/blob/b3c933e1173e9382bc61855c7a144e109cdc5012/2.7/buster/Dockerfile)
+-	[`2.7-7.3.4-slim`, `2.7-7.3-slim`, `2.7-7-slim`, `2.7-slim`, `2-7.3.4-slim`, `2-7.3-slim`, `2-7-slim`, `2-slim`, `2.7-7.3.4-slim-buster`, `2.7-7.3-slim-buster`, `2.7-7-slim-buster`, `2.7-slim-buster`, `2-7.3.4-slim-buster`, `2-7.3-slim-buster`, `2-7-slim-buster`, `2-slim-buster`](https://github.com/docker-library/pypy/blob/596e037750c79f94e3ac5cb9ec2ca28961987599/2.7/slim-buster/Dockerfile)
+-	[`2.7-7.3.4-windowsservercore-1809`, `2.7-7.3-windowsservercore-1809`, `2.7-7-windowsservercore-1809`, `2.7-windowsservercore-1809`, `2-7.3.4-windowsservercore-1809`, `2-7.3-windowsservercore-1809`, `2-7-windowsservercore-1809`, `2-windowsservercore-1809`](https://github.com/docker-library/pypy/blob/596e037750c79f94e3ac5cb9ec2ca28961987599/2.7/windows/windowsservercore-1809/Dockerfile)
+
+## Shared Tags
+
+-	`3.7-7.3.4`, `3.7-7.3`, `3.7-7`, `3.7`, `3-7.3.4`, `3-7.3`, `3-7`, `3`, `latest`:
+	-	[`3.7-7.3.4-buster`](https://github.com/docker-library/pypy/blob/596e037750c79f94e3ac5cb9ec2ca28961987599/3.7/buster/Dockerfile)
+	-	[`3.7-7.3.4-windowsservercore-1809`](https://github.com/docker-library/pypy/blob/596e037750c79f94e3ac5cb9ec2ca28961987599/3.7/windows/windowsservercore-1809/Dockerfile)
+-	`3.7-7.3.4-windowsservercore`, `3.7-7.3-windowsservercore`, `3.7-7-windowsservercore`, `3.7-windowsservercore`, `3-7.3.4-windowsservercore`, `3-7.3-windowsservercore`, `3-7-windowsservercore`, `3-windowsservercore`, `windowsservercore`:
+	-	[`3.7-7.3.4-windowsservercore-1809`](https://github.com/docker-library/pypy/blob/596e037750c79f94e3ac5cb9ec2ca28961987599/3.7/windows/windowsservercore-1809/Dockerfile)
+-	`2.7-7.3.4`, `2.7-7.3`, `2.7-7`, `2.7`, `2-7.3.4`, `2-7.3`, `2-7`, `2`:
+	-	[`2.7-7.3.4-buster`](https://github.com/docker-library/pypy/blob/b3c933e1173e9382bc61855c7a144e109cdc5012/2.7/buster/Dockerfile)
+	-	[`2.7-7.3.4-windowsservercore-1809`](https://github.com/docker-library/pypy/blob/596e037750c79f94e3ac5cb9ec2ca28961987599/2.7/windows/windowsservercore-1809/Dockerfile)
+-	`2.7-7.3.4-windowsservercore`, `2.7-7.3-windowsservercore`, `2.7-7-windowsservercore`, `2.7-windowsservercore`, `2-7.3.4-windowsservercore`, `2-7.3-windowsservercore`, `2-7-windowsservercore`, `2-windowsservercore`:
+	-	[`2.7-7.3.4-windowsservercore-1809`](https://github.com/docker-library/pypy/blob/596e037750c79f94e3ac5cb9ec2ca28961987599/2.7/windows/windowsservercore-1809/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -35,14 +54,14 @@ WARNING:
 	[https://github.com/docker-library/pypy/issues](https://github.com/docker-library/pypy/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/pypy/), [`arm64v8`](https://hub.docker.com/r/arm64v8/pypy/), [`i386`](https://hub.docker.com/r/i386/pypy/), [`ppc64le`](https://hub.docker.com/r/ppc64le/pypy/), [`s390x`](https://hub.docker.com/r/s390x/pypy/)
+	[`amd64`](https://hub.docker.com/r/amd64/pypy/), [`arm64v8`](https://hub.docker.com/r/arm64v8/pypy/), [`i386`](https://hub.docker.com/r/i386/pypy/), [`s390x`](https://hub.docker.com/r/s390x/pypy/), [`windows-amd64`](https://hub.docker.com/r/winamd64/pypy/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/pypy/` directory](https://github.com/docker-library/repo-info/blob/master/repos/pypy) ([history](https://github.com/docker-library/repo-info/commits/master/repos/pypy))  
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/pypy`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fpypy)  
+	[official-images repo's `library/pypy` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fpypy)  
 	[official-images repo's `library/pypy` file](https://github.com/docker-library/official-images/blob/master/library/pypy) ([history](https://github.com/docker-library/official-images/commits/master/library/pypy))
 
 -	**Source of this description**:  
@@ -126,6 +145,15 @@ This tag is based off of [`buildpack-deps`](https://hub.docker.com/_/buildpack-d
 ## `pypy:<version>-slim`
 
 This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `pypy`. Unless you are working in an environment where *only* the `pypy` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
+
+## `pypy:<version>-windowsservercore`
+
+This image is based on [Windows Server Core (`microsoft/windowsservercore`)](https://hub.docker.com/r/microsoft/windowsservercore/). As such, it only works in places which that image does, such as Windows 10 Professional/Enterprise (Anniversary Edition) or Windows Server 2016.
+
+For information about how to get Docker running on Windows, please see the relevant "Quick Start" guide provided by Microsoft:
+
+-	[Windows Server Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_server)
+-	[Windows 10 Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)
 
 # License
 

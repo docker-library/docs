@@ -20,13 +20,13 @@ WARNING:
 	[The ALT Linux Team Cloud](https://github.com/alt-cloud/docker-brew-alt)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`p9`, `latest`](https://github.com/alt-cloud/docker-brew-alt/blob/c3c1f444708cc0ce980ed2d13b877a4faf8ffe6e/x86_64/Dockerfile)
--	[`p8`](https://github.com/alt-cloud/docker-brew-alt/blob/b7c6a1e701ad6454d2644f57bbb20e22a1db9c64/x86_64/Dockerfile)
--	[`sisyphus`](https://github.com/alt-cloud/docker-brew-alt/blob/52b1dc24145fd5fd93cec6851ac91faea799cf94/x86_64/Dockerfile)
+-	[`p9`, `latest`](https://github.com/alt-cloud/docker-brew-alt/blob/027b02f57faf6278ab0a7080e077f4e989e0302d/x86_64/Dockerfile)
+-	[`p8`](https://github.com/alt-cloud/docker-brew-alt/blob/ce87cc6c704caf13461955cfa5ddd83a7d04207a/x86_64/Dockerfile)
+-	[`sisyphus`](https://github.com/alt-cloud/docker-brew-alt/blob/425b1b723bf933037319e23d5a5cdf7e796971eb/x86_64/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -43,7 +43,7 @@ For create new bug, please use [ALT's bugzilla page](https://bugzilla.altlinux.o
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/alt`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Falt)  
+	[official-images repo's `library/alt` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Falt)  
 	[official-images repo's `library/alt` file](https://github.com/docker-library/official-images/blob/master/library/alt) ([history](https://github.com/docker-library/official-images/commits/master/library/alt))
 
 -	**Source of this description**:  

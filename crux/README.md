@@ -14,13 +14,19 @@ WARNING:
 
 -->
 
+# **DEPRECATION NOTICE**
+
+This image is deprecated due to maintainer inactivity (last updated Nov 2018; [docker-library/official-images#5073](https://github.com/docker-library/official-images/pull/5073)).
+
+See [docker-library/official-images#7130](https://github.com/docker-library/official-images/pull/7130) for discussion around an in-progress upstream update.
+
 # Quick reference
 
 -	**Maintained by**:  
 	[Docker Crux](https://github.com/cruxlinux/docker-crux)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
 # Supported tags and respective `Dockerfile` links
 
@@ -40,7 +46,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/crux`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fcrux)  
+	[official-images repo's `library/crux` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fcrux)  
 	[official-images repo's `library/crux` file](https://github.com/docker-library/official-images/blob/master/library/crux) ([history](https://github.com/docker-library/official-images/commits/master/library/crux))
 
 -	**Source of this description**:  

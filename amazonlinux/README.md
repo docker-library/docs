@@ -20,14 +20,14 @@ WARNING:
 	[the Amazon Linux Team](https://github.com/aws/amazon-linux-docker-images)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.0.20200406.0`, `2`, `latest`](https://github.com/amazonlinux/container-images/blob/92466cbdf8600e425701459dba31a31aa53415e7/Dockerfile)
--	[`2.0.20200406.0-with-sources`, `2-with-sources`, `with-sources`](https://github.com/amazonlinux/container-images/blob/d686ee33d867fddd67595fb5d0df581b23ebfdfe/Dockerfile)
--	[`2018.03.0.20200318.1`, `2018.03`, `1`](https://github.com/amazonlinux/container-images/blob/3209338a28f4fa5f0a189e517c0809d095c777d8/Dockerfile)
--	[`2018.03.0.20200318.1-with-sources`, `2018.03-with-sources`, `1-with-sources`](https://github.com/amazonlinux/container-images/blob/4f52cd2aa92456ef8f867fb6fa8ac63aab2d462f/Dockerfile)
+-	[`2.0.20210326.0`, `2`, `latest`](https://github.com/amazonlinux/container-images/blob/6034adc97679e1ac7fa88c499405699326436304/Dockerfile)
+-	[`2.0.20210326.0-with-sources`, `2-with-sources`, `with-sources`](https://github.com/amazonlinux/container-images/blob/54c655c48433d8277b9b5190935806eba541c6ee/Dockerfile)
+-	[`2018.03.0.20210319.0`, `2018.03`, `1`](https://github.com/amazonlinux/container-images/blob/6cce9f98bfd3ef6fa775fa7fca2e1b34fe531e16/Dockerfile)
+-	[`2018.03.0.20210319.0-with-sources`, `2018.03-with-sources`, `1-with-sources`](https://github.com/amazonlinux/container-images/blob/ff58ee90f6aa45b56b86222d009828c8bc4f40ac/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -42,7 +42,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/amazonlinux`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Famazonlinux)  
+	[official-images repo's `library/amazonlinux` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Famazonlinux)  
 	[official-images repo's `library/amazonlinux` file](https://github.com/docker-library/official-images/blob/master/library/amazonlinux) ([history](https://github.com/docker-library/official-images/commits/master/library/amazonlinux))
 
 -	**Source of this description**:  

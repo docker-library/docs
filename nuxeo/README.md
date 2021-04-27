@@ -20,7 +20,7 @@ WARNING:
 	[Nuxeo](https://github.com/nuxeo/docker-nuxeo)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
 # Supported tags and respective `Dockerfile` links
 
@@ -42,7 +42,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/nuxeo`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fnuxeo)  
+	[official-images repo's `library/nuxeo` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fnuxeo)  
 	[official-images repo's `library/nuxeo` file](https://github.com/docker-library/official-images/blob/master/library/nuxeo) ([history](https://github.com/docker-library/official-images/commits/master/library/nuxeo))
 
 -	**Source of this description**:  

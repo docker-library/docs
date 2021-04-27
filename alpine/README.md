@@ -20,15 +20,15 @@ WARNING:
 	[Natanael Copa](https://github.com/alpinelinux/docker-alpine) (an Alpine Linux maintainer)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`20200428`, `edge`](https://github.com/alpinelinux/docker-alpine/blob/38e5f8a8728204d1b8c3ab62cbf28c2110f8a544/x86_64/Dockerfile)
--	[`3.11.6`, `3.11`, `3`, `latest`](https://github.com/alpinelinux/docker-alpine/blob/c5510d5b1d2546d133f7b0938690c3c1e2cd9549/x86_64/Dockerfile)
--	[`3.10.5`, `3.10`](https://github.com/alpinelinux/docker-alpine/blob/a02be1f7da059d74c0743792b41d17626128c2a3/x86_64/Dockerfile)
--	[`3.9.6`, `3.9`](https://github.com/alpinelinux/docker-alpine/blob/d7eb97a39abbdfe6ba73236f844cb80b756280d1/x86_64/Dockerfile)
--	[`3.8.5`, `3.8`](https://github.com/alpinelinux/docker-alpine/blob/c0919567e0350f0128fcad803d8e79c4ecfdf258/x86_64/Dockerfile)
+-	[`20210212`, `edge`](https://github.com/alpinelinux/docker-alpine/blob/489953694b9dd165f615dc01971971ddf55701f8/x86_64/Dockerfile)
+-	[`3.13.5`, `3.13`, `3`, `latest`](https://github.com/alpinelinux/docker-alpine/blob/37579d92b9faa70398240431bc46720242faa5e5/x86_64/Dockerfile)
+-	[`3.12.7`, `3.12`](https://github.com/alpinelinux/docker-alpine/blob/8b8051f1c11daff18ada363488e145af9e201802/x86_64/Dockerfile)
+-	[`3.11.11`, `3.11`](https://github.com/alpinelinux/docker-alpine/blob/2cd76fb18830708f4af5a6927c3aa40867a4e8bb/x86_64/Dockerfile)
+-	[`3.10.9`, `3.10`](https://github.com/alpinelinux/docker-alpine/blob/5a9faa421c89dc3d516bc84e9d47907d560fc2bd/x86_64/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -43,7 +43,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/alpine`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Falpine)  
+	[official-images repo's `library/alpine` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Falpine)  
 	[official-images repo's `library/alpine` file](https://github.com/docker-library/official-images/blob/master/library/alpine) ([history](https://github.com/docker-library/official-images/commits/master/library/alpine))
 
 -	**Source of this description**:  

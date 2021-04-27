@@ -20,15 +20,15 @@ WARNING:
 	[GeoNetwork opensource](https://github.com/geonetwork/docker-geonetwork)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.10.2`, `3.10`, `latest`](https://github.com/geonetwork/docker-geonetwork/blob/f81b111fbe3d765ee56f61c5474099764ee07004/3.10.2/Dockerfile)
--	[`3.10.2-postgres`, `3.10-postgres`, `postgres`](https://github.com/geonetwork/docker-geonetwork/blob/f81b111fbe3d765ee56f61c5474099764ee07004/3.10.2/postgres/Dockerfile)
+-	[`3.10.6`, `3.10`, `3`, `latest`](https://github.com/geonetwork/docker-geonetwork/blob/a737bd2c96b3d960ba6c9cade863d2330386847a/3.10.6/Dockerfile)
+-	[`3.10.6-postgres`, `3.10-postgres`, `3-postgres`, `postgres`](https://github.com/geonetwork/docker-geonetwork/blob/a737bd2c96b3d960ba6c9cade863d2330386847a/3.10.6/postgres/Dockerfile)
 -	[`3.8.3`, `3.8`](https://github.com/geonetwork/docker-geonetwork/blob/af81a4ff8f592d27b4911ad20d569379864ee85f/3.8.3/Dockerfile)
 -	[`3.8.3-postgres`, `3.8-postgres`](https://github.com/geonetwork/docker-geonetwork/blob/af81a4ff8f592d27b4911ad20d569379864ee85f/3.8.3/postgres/Dockerfile)
--	[`4.0.0-alpha.1`, `4.0.0-alpha`, `4.0-alpha`, `4-alpha`](https://github.com/geonetwork/docker-geonetwork/blob/322b19a848bdc0ab227e40f2e1b84dec059550bb/4.0.0-alpha.1/Dockerfile)
+-	[`4.0.3`, `4.0`, `4`](https://github.com/geonetwork/docker-geonetwork/blob/aa5074ff3d7f7da7f856135ffa3cb979b1631f66/4.0.3/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -43,7 +43,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/geonetwork`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fgeonetwork)  
+	[official-images repo's `library/geonetwork` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fgeonetwork)  
 	[official-images repo's `library/geonetwork` file](https://github.com/docker-library/official-images/blob/master/library/geonetwork) ([history](https://github.com/docker-library/official-images/commits/master/library/geonetwork))
 
 -	**Source of this description**:  
@@ -83,24 +83,24 @@ $ docker run --name some-geonetwork -d -p 8080:8080 geonetwork
 
 Then, if you are running docker on Linux, you may access geonetwork at http://localhost:8080/geonetwork. Otherwise, replace `localhost` by the address of your docker machine.
 
-## Set the data directory
+## Set the data directory and H2 db file
 
-The data directory is the location on the file system where the catalog stores much of its custom configuration and uploaded files. It is also where it stores a number of support files, used for various purposes (e.g.: Lucene index, spatial index, thumbnails).
+The data directory is the location on the file system where the catalog stores much of its custom configuration and uploaded files. It is also where it stores a number of support files, used for various purposes (e.g.: Lucene index, spatial index, thumbnails). The default variant also uses a local H2 database to store the metadata catalog itself.
 
-By default, geonetwork sets the data directory on `/usr/local/tomcat/webapps/geonetwork/WEB-INF/data`, but you may override this value by injecting an environment variable into the container: - `-e DATA_DIR=...` (defaults to `/usr/local/tomcat/webapps/geonetwork/WEB-INF/data`)
+By default, geonetwork sets the data directory on `/usr/local/tomcat/webapps/geonetwork/WEB-INF/data` and H2 database file to the tomcat bin dir `/usr/local/tomcat/gn.h2.db`, but you may override these values by injecting environment variables into the container: - `-e DATA_DIR=...` (defaults to `/usr/local/tomcat/webapps/geonetwork/WEB-INF/data`) and `-e GEONETWORK_DB_NAME=...` (defaults to `gn` which sets up database `gn.h2.db` in tomcat bin dir `/usr/local/tomcat`). Note that setting the database location via `GEONETWORK_DB_NAME` only works from version 3.10.3 onwards.
 
-For instance, to set the data directory to `/var/lib/geonetwork_data`:
+## Persisting data
+
+To set the data directory to `/var/lib/geonetwork/data` and H2 database file to `/var/lib/geonetwork/db/gn.h2.db` so they both persist through restarts:
 
 ```console
-$ docker run --name some-geonetwork -d -p 8080:8080 -e DATA_DIR=/var/lib/geonetwork_data geonetwork
+$ docker run --name some-geonetwork -d -p 8080:8080 -e DATA_DIR=/var/lib/geonetwork/data -e GEONETWORK_DB_NAME=/var/lib/geonetwork/db/gn geonetwork
 ```
 
-## Persist data
-
-If you want the data directory to live beyond restarts, or even destruction of the container, you can mount a directory from the docker engine's host into the container. - `-v /host/path:/path/to/data/directory`. For instance this, will mount the host directory `/host/geonetwork-docker` into `/var/lib/geonetwork_data` on the container:
+If you want the data directory to live beyond restarts, or even destruction of the container, you can mount a directory from the docker engine's host into the container. - `-v /host/path:/path/to/data/directory`. For instance this, will mount the host directory `/host/geonetwork-docker` into `/var/lib/geonetwork` on the container:
 
 ```console
-$ docker run --name some-geonetwork -d -p 8080:8080 -e DATA_DIR=/var/lib/geonetwork_data -v /host/geonetwork-docker:/var/lib/geonetwork_data geonetwork
+$ docker run --name some-geonetwork -d -p 8080:8080 -e DATA_DIR=/var/lib/geonetwork/data -e GEONETWORK_DB_NAME=/var/lib/geonetwork/db/gn -v /host/geonetwork-docker:/var/lib/geonetwork geonetwork
 ```
 
 ## ... via [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/) or [`docker-compose`](https://github.com/docker/compose)

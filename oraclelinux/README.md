@@ -24,14 +24,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.2`, `8`](https://github.com/oracle/container-images/blob/f15c4cdc4a1483e541eb00d18c8058d2b5988fff/8.2/Dockerfile)
--	[`8.1`](https://github.com/oracle/container-images/blob/f15c4cdc4a1483e541eb00d18c8058d2b5988fff/8.1/Dockerfile)
--	[`8.0`](https://github.com/oracle/container-images/blob/f15c4cdc4a1483e541eb00d18c8058d2b5988fff/8.0/Dockerfile)
--	[`8-slim`](https://github.com/oracle/container-images/blob/f15c4cdc4a1483e541eb00d18c8058d2b5988fff/8-slim/Dockerfile)
--	[`7.8`, `7`, `latest`](https://github.com/oracle/container-images/blob/f15c4cdc4a1483e541eb00d18c8058d2b5988fff/7.8/Dockerfile)
--	[`7-slim`](https://github.com/oracle/container-images/blob/f15c4cdc4a1483e541eb00d18c8058d2b5988fff/7-slim/Dockerfile)
--	[`6.10`, `6`](https://github.com/oracle/container-images/blob/f15c4cdc4a1483e541eb00d18c8058d2b5988fff/6.10/Dockerfile)
--	[`6-slim`](https://github.com/oracle/container-images/blob/f15c4cdc4a1483e541eb00d18c8058d2b5988fff/6-slim/Dockerfile)
+-	[`8.3`, `8`](https://github.com/oracle/container-images/blob/5214ad8b74906bb161e6b7ee6cbb018d35513aac/8/Dockerfile)
+-	[`8-slim`](https://github.com/oracle/container-images/blob/5214ad8b74906bb161e6b7ee6cbb018d35513aac/8-slim/Dockerfile)
+-	[`7.9`, `7`](https://github.com/oracle/container-images/blob/5214ad8b74906bb161e6b7ee6cbb018d35513aac/7/Dockerfile)
+-	[`7-slim`](https://github.com/oracle/container-images/blob/5214ad8b74906bb161e6b7ee6cbb018d35513aac/7-slim/Dockerfile)
+-	[`6.10`, `6`](https://github.com/oracle/container-images/blob/5214ad8b74906bb161e6b7ee6cbb018d35513aac/6/Dockerfile)
+-	[`6-slim`](https://github.com/oracle/container-images/blob/5214ad8b74906bb161e6b7ee6cbb018d35513aac/6-slim/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -46,7 +44,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/oraclelinux`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Foraclelinux)  
+	[official-images repo's `library/oraclelinux` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Foraclelinux)  
 	[official-images repo's `library/oraclelinux` file](https://github.com/docker-library/official-images/blob/master/library/oraclelinux) ([history](https://github.com/docker-library/official-images/commits/master/library/oraclelinux))
 
 -	**Source of this description**:  
@@ -54,13 +52,17 @@ WARNING:
 
 # Oracle Linux
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/ac923d04bcfcf8de5128ab155ed9f1698374fdfc/oraclelinux/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/9d0bc984117a35c4236e09ba1c6f4b2b9f287773/oraclelinux/logo.png)
 
 Oracle Linux is an open-source operating system available under the GNU General Public License (GPLv2). Suitable for general purpose or Oracle workloads, it benefits from rigorous testing of more than 128,000 hours per day with real- world workloads and includes unique innovations such as Ksplice for zero- downtime kernel patching, DTrace for real-time diagnostics, the powerful Btrfs file system, and more.
 
 ## How to use these images
 
 The Oracle Linux images are intended for use in the **FROM** field of a downstream `Dockerfile`. For example, to use the latest optimized Oracle Linux 7 image, specify `FROM oraclelinux:7-slim`.
+
+## Removal of `latest` tag
+
+The `latest` tag was removed from the Oracle Linux official images in June 2020 to reduce confusion. Downstream images using `oraclelinux:latest` or no tag should be updated to `oraclelinux:7` for future builds. Note that Oracle recommends using the `-slim` variants for the smallest possible image size.
 
 ## Official Resources
 

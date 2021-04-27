@@ -20,23 +20,26 @@ WARNING:
 	[the Docker Community](https://github.com/erlang/docker-erlang-otp)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`23.0.1`, `23.0`, `23`, `latest`](https://github.com/erlang/docker-erlang-otp/blob/4c6605055beca4454ca1dadf24a6efd34114e1ce/23/Dockerfile)
--	[`23.0.1-slim`, `23.0-slim`, `23-slim`, `slim`](https://github.com/erlang/docker-erlang-otp/blob/4c6605055beca4454ca1dadf24a6efd34114e1ce/23/slim/Dockerfile)
--	[`23.0.1-alpine`, `23.0-alpine`, `23-alpine`, `alpine`](https://github.com/erlang/docker-erlang-otp/blob/4c6605055beca4454ca1dadf24a6efd34114e1ce/23/alpine/Dockerfile)
--	[`22.3.4.1`, `22.3.4`, `22.3`, `22`](https://github.com/erlang/docker-erlang-otp/blob/4c6605055beca4454ca1dadf24a6efd34114e1ce/22/Dockerfile)
--	[`22.3.4.1-slim`, `22.3.4-slim`, `22.3-slim`, `22-slim`](https://github.com/erlang/docker-erlang-otp/blob/4c6605055beca4454ca1dadf24a6efd34114e1ce/22/slim/Dockerfile)
--	[`22.3.4.1-alpine`, `22.3.4-alpine`, `22.3-alpine`, `22-alpine`](https://github.com/erlang/docker-erlang-otp/blob/4c6605055beca4454ca1dadf24a6efd34114e1ce/22/alpine/Dockerfile)
--	[`21.3.8.16`, `21.3.8`, `21.3`, `21`](https://github.com/erlang/docker-erlang-otp/blob/4c6605055beca4454ca1dadf24a6efd34114e1ce/21/Dockerfile)
--	[`21.3.8.16-slim`, `21.3.8-slim`, `21.3-slim`, `21-slim`](https://github.com/erlang/docker-erlang-otp/blob/4c6605055beca4454ca1dadf24a6efd34114e1ce/21/slim/Dockerfile)
--	[`21.3.8.16-alpine`, `21.3.8-alpine`, `21.3-alpine`, `21-alpine`](https://github.com/erlang/docker-erlang-otp/blob/4c6605055beca4454ca1dadf24a6efd34114e1ce/21/alpine/Dockerfile)
--	[`20.3.8.26`, `20.3.8`, `20.3`, `20`](https://github.com/erlang/docker-erlang-otp/blob/b06bf8de34e693b3698f3a22e8ff864dc320b380/20/Dockerfile)
+-	[`24.0-rc3.0.0`, `24.0-rc3.0`, `24.0-rc3`, `24`](https://github.com/erlang/docker-erlang-otp/blob/a696b7a5dbabe787ef1ce59a95713fc4906e0cac/24/Dockerfile)
+-	[`24.0-rc3.0.0-slim`, `24.0-rc3.0-slim`, `24.0-rc3-slim`, `24-slim`](https://github.com/erlang/docker-erlang-otp/blob/a696b7a5dbabe787ef1ce59a95713fc4906e0cac/24/slim/Dockerfile)
+-	[`24.0-rc3.0.0-alpine`, `24.0-rc3.0-alpine`, `24.0-rc3-alpine`, `24-alpine`](https://github.com/erlang/docker-erlang-otp/blob/a696b7a5dbabe787ef1ce59a95713fc4906e0cac/24/alpine/Dockerfile)
+-	[`23.3.1.0`, `23.3.1`, `23.3`, `23`, `latest`](https://github.com/erlang/docker-erlang-otp/blob/c9980a3c044a636521478061c33df5b78d07d22b/23/Dockerfile)
+-	[`23.3.1.0-slim`, `23.3.1-slim`, `23.3-slim`, `23-slim`, `slim`](https://github.com/erlang/docker-erlang-otp/blob/c9980a3c044a636521478061c33df5b78d07d22b/23/slim/Dockerfile)
+-	[`23.3.1.0-alpine`, `23.3.1-alpine`, `23.3-alpine`, `23-alpine`, `alpine`](https://github.com/erlang/docker-erlang-otp/blob/c9980a3c044a636521478061c33df5b78d07d22b/23/alpine/Dockerfile)
+-	[`22.3.4.17`, `22.3.4`, `22.3`, `22`](https://github.com/erlang/docker-erlang-otp/blob/f03f5a6d7dd17896eb3a6167a980898d14daec12/22/Dockerfile)
+-	[`22.3.4.17-slim`, `22.3.4-slim`, `22.3-slim`, `22-slim`](https://github.com/erlang/docker-erlang-otp/blob/f03f5a6d7dd17896eb3a6167a980898d14daec12/22/slim/Dockerfile)
+-	[`22.3.4.17-alpine`, `22.3.4-alpine`, `22.3-alpine`, `22-alpine`](https://github.com/erlang/docker-erlang-otp/blob/f03f5a6d7dd17896eb3a6167a980898d14daec12/22/alpine/Dockerfile)
+-	[`21.3.8.22`, `21.3.8`, `21.3`, `21`](https://github.com/erlang/docker-erlang-otp/blob/c9980a3c044a636521478061c33df5b78d07d22b/21/Dockerfile)
+-	[`21.3.8.22-slim`, `21.3.8-slim`, `21.3-slim`, `21-slim`](https://github.com/erlang/docker-erlang-otp/blob/c9980a3c044a636521478061c33df5b78d07d22b/21/slim/Dockerfile)
+-	[`21.3.8.22-alpine`, `21.3.8-alpine`, `21.3-alpine`, `21-alpine`](https://github.com/erlang/docker-erlang-otp/blob/c9980a3c044a636521478061c33df5b78d07d22b/21/alpine/Dockerfile)
+-	[`20.3.8.26`, `20.3.8`, `20.3`, `20`](https://github.com/erlang/docker-erlang-otp/blob/29d80b396454961b64fb481fc3b06aeb63919cc3/20/Dockerfile)
 -	[`20.3.8.26-slim`, `20.3.8-slim`, `20.3-slim`, `20-slim`](https://github.com/erlang/docker-erlang-otp/blob/b06bf8de34e693b3698f3a22e8ff864dc320b380/20/slim/Dockerfile)
--	[`20.3.8.26-alpine`, `20.3.8-alpine`, `20.3-alpine`, `20-alpine`](https://github.com/erlang/docker-erlang-otp/blob/b06bf8de34e693b3698f3a22e8ff864dc320b380/20/alpine/Dockerfile)
--	[`19.3.6.13`, `19.3.6`, `19.3`, `19`](https://github.com/erlang/docker-erlang-otp/blob/e91894d9d9c3651382834b77978a05fa057338fb/19/Dockerfile)
+-	[`20.3.8.26-alpine`, `20.3.8-alpine`, `20.3-alpine`, `20-alpine`](https://github.com/erlang/docker-erlang-otp/blob/29d80b396454961b64fb481fc3b06aeb63919cc3/20/alpine/Dockerfile)
+-	[`19.3.6.13`, `19.3.6`, `19.3`, `19`](https://github.com/erlang/docker-erlang-otp/blob/29d80b396454961b64fb481fc3b06aeb63919cc3/19/Dockerfile)
 -	[`19.3.6.13-slim`, `19.3.6-slim`, `19.3-slim`, `19-slim`](https://github.com/erlang/docker-erlang-otp/blob/e91894d9d9c3651382834b77978a05fa057338fb/19/slim/Dockerfile)
 -	[`18.3.4.11`, `18.3.4`, `18.3`, `18`](https://github.com/erlang/docker-erlang-otp/blob/e91894d9d9c3651382834b77978a05fa057338fb/18/Dockerfile)
 -	[`18.3.4.11-slim`, `18.3.4-slim`, `18.3-slim`, `18-slim`](https://github.com/erlang/docker-erlang-otp/blob/e91894d9d9c3651382834b77978a05fa057338fb/18/slim/Dockerfile)
@@ -54,7 +57,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/erlang`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Ferlang)  
+	[official-images repo's `library/erlang` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Ferlang)  
 	[official-images repo's `library/erlang` file](https://github.com/docker-library/official-images/blob/master/library/erlang) ([history](https://github.com/docker-library/official-images/commits/master/library/erlang))
 
 -	**Source of this description**:  
@@ -125,9 +128,9 @@ This image does not contain the common packages contained in the default tag and
 
 ## `erlang:<version>-alpine`
 
-This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
-This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
 
 To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 

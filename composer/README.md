@@ -20,12 +20,12 @@ WARNING:
 	[Rob Bast](https://github.com/alcohol), with [contributions](https://github.com/composer/docker/graphs/contributors) from the community.
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.10.6`, `1.10`, `1`, `latest`](https://github.com/composer/docker/blob/719eb94597f3608c4933fd781d2a8448f840d277/1.10/Dockerfile)
--	[`1.9.3`, `1.9`](https://github.com/composer/docker/blob/6deedc6a8c89b17c9a6ca61a28c8b206513c76f8/1.9/Dockerfile)
+-	[`2.0.12`, `2.0`, `2`, `latest`](https://github.com/composer/docker/blob/a534fa6d3ca169c58d9622a36457e3e5c6301bae/2.0/Dockerfile)
+-	[`1.10.21`, `1.10`, `1`](https://github.com/composer/docker/blob/70a34a6e811942b9c55a57eb696c3ee49ca528e1/1.10/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -40,7 +40,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/composer`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fcomposer)  
+	[official-images repo's `library/composer` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fcomposer)  
 	[official-images repo's `library/composer` file](https://github.com/docker-library/official-images/blob/master/library/composer) ([history](https://github.com/docker-library/official-images/commits/master/library/composer))
 
 -	**Source of this description**:  
@@ -58,15 +58,13 @@ You can read more about Composer in our [official documentation](https://getcomp
 
 ### Basic usage
 
-Running the `composer` image is as simple as follows:
-
 ```console
 $ docker run --rm --interactive --tty \
   --volume $PWD:/app \
-  composer install
+  composer <command>
 ```
 
-### Persistent cache / global configuration
+### Persist cache / global configuration
 
 You can bind mount the Composer home directory from your host to the container to enable a persistent cache or share global configuration:
 
@@ -74,12 +72,12 @@ You can bind mount the Composer home directory from your host to the container t
 $ docker run --rm --interactive --tty \
   --volume $PWD:/app \
   --volume ${COMPOSER_HOME:-$HOME/.composer}:/tmp \
-  composer install
+  composer <command>
 ```
 
 **Note:** this relies on the fact that the `COMPOSER_HOME` value is set to `/tmp` in the image by default.
 
-Or if you are following the XDG specification:
+Or if your environment follows the XDG specification:
 
 ```console
 $ docker run --rm --interactive --tty \
@@ -88,7 +86,7 @@ $ docker run --rm --interactive --tty \
   --volume ${COMPOSER_HOME:-$HOME/.config/composer}:$COMPOSER_HOME \
   --volume ${COMPOSER_CACHE_DIR:-$HOME/.cache/composer}:$COMPOSER_CACHE_DIR \
   --volume $PWD:/app \
-  composer install
+  composer <command>
 ```
 
 ### Filesystem permissions
@@ -99,8 +97,12 @@ By default, Composer runs as root inside the container. This can lead to permiss
 $ docker run --rm --interactive --tty \
   --volume $PWD:/app \
   --user $(id -u):$(id -g) \
-  composer install
+  composer <command>
 ```
+
+See: https://docs.docker.com/engine/reference/run/#user for details.
+
+> Note: Docker for Mac behaves differently and this tip might not apply to Docker for Mac users.
 
 ### Private repositories / SSH agent
 
@@ -112,12 +114,12 @@ $ eval $(ssh-agent); \
   --volume $PWD:/app \
   --volume $SSH_AUTH_SOCK:/ssh-auth.sock \
   --env SSH_AUTH_SOCK=/ssh-auth.sock \
-  composer install
+  composer <command>
 ```
 
 **Note:** On OSX this requires Docker For Mac v2.2.0.0 or later, see [docker/for-mac#410](https://github.com/docker/for-mac/issues/410).
 
-When combining the use of private repositories with running Composer as another user, you might run into non-existent user errors (thrown by ssh). To work around this, simply mount the host passwd and group files (read-only) into the container:
+When combining the use of private repositories with running Composer as another user, you can run into non-existent user errors (thrown by ssh). To work around this, bind mount the host passwd and group files (read-only) into the container:
 
 ```console
 $ eval $(ssh-agent); \
@@ -128,7 +130,7 @@ $ eval $(ssh-agent); \
   --volume /etc/group:/etc/group:ro \
   --env SSH_AUTH_SOCK=/ssh-auth.sock \
   --user $(id -u):$(id -g) \
-  composer install
+  composer <command>
 ```
 
 # Troubleshooting
@@ -156,7 +158,7 @@ Suggestions:
 	  "config": {
 	    "platform": {
 	      "php": "MAJOR.MINOR.PATCH",
-	      "ext-something": "1"
+	      "ext-something": "MAJOR.MINOR.PATCH"
 	    }
 	  }
 	}

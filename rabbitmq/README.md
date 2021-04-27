@@ -20,22 +20,18 @@ WARNING:
 	[the Docker Community](https://github.com/docker-library/rabbitmq)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.8.4-rc.3`, `3.8-rc`](https://github.com/docker-library/rabbitmq/blob/fa268f0763da9cb08a185120989dd3dc755b8a76/3.8-rc/ubuntu/Dockerfile)
--	[`3.8.4-rc.3-management`, `3.8-rc-management`](https://github.com/docker-library/rabbitmq/blob/13ec1c85a0882184b0bbaab2216822e7a3718d30/3.8-rc/ubuntu/management/Dockerfile)
--	[`3.8.4-rc.3-alpine`, `3.8-rc-alpine`](https://github.com/docker-library/rabbitmq/blob/fa268f0763da9cb08a185120989dd3dc755b8a76/3.8-rc/alpine/Dockerfile)
--	[`3.8.4-rc.3-management-alpine`, `3.8-rc-management-alpine`](https://github.com/docker-library/rabbitmq/blob/13ec1c85a0882184b0bbaab2216822e7a3718d30/3.8-rc/alpine/management/Dockerfile)
--	[`3.8.3`, `3.8`, `3`, `latest`](https://github.com/docker-library/rabbitmq/blob/7aa93f2563dd6558322b2f7b4b813003be7e0816/3.8/ubuntu/Dockerfile)
--	[`3.8.3-management`, `3.8-management`, `3-management`, `management`](https://github.com/docker-library/rabbitmq/blob/af5f6ff9a3916d89be6d190d562d247ae12ffa73/3.8/ubuntu/management/Dockerfile)
--	[`3.8.3-alpine`, `3.8-alpine`, `3-alpine`, `alpine`](https://github.com/docker-library/rabbitmq/blob/7aa93f2563dd6558322b2f7b4b813003be7e0816/3.8/alpine/Dockerfile)
--	[`3.8.3-management-alpine`, `3.8-management-alpine`, `3-management-alpine`, `management-alpine`](https://github.com/docker-library/rabbitmq/blob/af5f6ff9a3916d89be6d190d562d247ae12ffa73/3.8/alpine/management/Dockerfile)
--	[`3.7.26`, `3.7`](https://github.com/docker-library/rabbitmq/blob/7f42f9325352afc1625fbf1cc928e1f66bb6cd5c/3.7/ubuntu/Dockerfile)
--	[`3.7.26-management`, `3.7-management`](https://github.com/docker-library/rabbitmq/blob/bf2c73df6ee8475ac30c9773a8128852450ea518/3.7/ubuntu/management/Dockerfile)
--	[`3.7.26-alpine`, `3.7-alpine`](https://github.com/docker-library/rabbitmq/blob/7f42f9325352afc1625fbf1cc928e1f66bb6cd5c/3.7/alpine/Dockerfile)
--	[`3.7.26-management-alpine`, `3.7-management-alpine`](https://github.com/docker-library/rabbitmq/blob/bf2c73df6ee8475ac30c9773a8128852450ea518/3.7/alpine/management/Dockerfile)
+-	[`3.8.15-rc.2`, `3.8-rc`](https://github.com/docker-library/rabbitmq/blob/0c9e77ef2e7b569523ba6f01dd84ed1315b62903/3.8-rc/ubuntu/Dockerfile)
+-	[`3.8.15-rc.2-management`, `3.8-rc-management`](https://github.com/docker-library/rabbitmq/blob/7e63843da6bfb191ddee6dbe3dd7ec0df36ae70b/3.8-rc/ubuntu/management/Dockerfile)
+-	[`3.8.15-rc.2-alpine`, `3.8-rc-alpine`](https://github.com/docker-library/rabbitmq/blob/0c9e77ef2e7b569523ba6f01dd84ed1315b62903/3.8-rc/alpine/Dockerfile)
+-	[`3.8.15-rc.2-management-alpine`, `3.8-rc-management-alpine`](https://github.com/docker-library/rabbitmq/blob/7e63843da6bfb191ddee6dbe3dd7ec0df36ae70b/3.8-rc/alpine/management/Dockerfile)
+-	[`3.8.14`, `3.8`, `3`, `latest`](https://github.com/docker-library/rabbitmq/blob/10fb3def4f912ed753d81917ce6bdb48cd6a5f36/3.8/ubuntu/Dockerfile)
+-	[`3.8.14-management`, `3.8-management`, `3-management`, `management`](https://github.com/docker-library/rabbitmq/blob/7e63843da6bfb191ddee6dbe3dd7ec0df36ae70b/3.8/ubuntu/management/Dockerfile)
+-	[`3.8.14-alpine`, `3.8-alpine`, `3-alpine`, `alpine`](https://github.com/docker-library/rabbitmq/blob/10fb3def4f912ed753d81917ce6bdb48cd6a5f36/3.8/alpine/Dockerfile)
+-	[`3.8.14-management-alpine`, `3.8-management-alpine`, `3-management-alpine`, `management-alpine`](https://github.com/docker-library/rabbitmq/blob/7e63843da6bfb191ddee6dbe3dd7ec0df36ae70b/3.8/alpine/management/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -50,7 +46,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/rabbitmq`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Frabbitmq)  
+	[official-images repo's `library/rabbitmq` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Frabbitmq)  
 	[official-images repo's `library/rabbitmq` file](https://github.com/docker-library/official-images/blob/master/library/rabbitmq) ([history](https://github.com/docker-library/official-images/commits/master/library/rabbitmq))
 
 -	**Source of this description**:  
@@ -206,7 +202,7 @@ $ docker run -d --hostname my-rabbit --name some-rabbit -e RABBITMQ_DEFAULT_VHOS
 
 See the [RabbitMQ "Configuration"](http://www.rabbitmq.com/configure.html#config-items) for more information about various configuration options.
 
-For enabling the HiPE compiler on startup use `RABBITMQ_HIPE_COMPILE` set to `1`. Accroding to the official documentation:
+For enabling the HiPE compiler on startup use `RABBITMQ_HIPE_COMPILE` set to `1`. According to the official documentation:
 
 > Set to true to precompile parts of RabbitMQ with HiPE, a just-in-time compiler for Erlang. This will increase server throughput at the cost of increased startup time. You might see 20-50% better performance at the cost of a few minutes delay at startup.
 
@@ -251,9 +247,9 @@ This is the defacto image. If you are unsure about what your needs are, you prob
 
 ## `rabbitmq:<version>-alpine`
 
-This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
-This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
 
 To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
