@@ -66,3 +66,10 @@ $ for GOOS in darwin linux; do
 >   done
 > done
 ```
+
+## Creating a smaller and more secured image for your app
+
+If you want a production ready image for your app, you might want to make it smaller and more secured.  
+This can be achieved by using multistage builds and following some basic rules.  
+You can look at this [Medium post](https://chemidy.medium.com/create-the-smallest-and-secured-golang-docker-image-based-on-scratch-4752223b7324) to learn more.  
+See also the [GitHub repo](https://github.com/chemidy/smallest-secured-golang-docker-image) by the same author.
