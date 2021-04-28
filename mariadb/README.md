@@ -14,24 +14,28 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`10.5.2-bionic`, `10.5-bionic`, `beta-bionic`, `10.5.2`, `10.5`, `beta`](https://github.com/docker-library/mariadb/blob/48ee7746c6da7dfd372189a0d5a45a7894548cd9/10.5/Dockerfile)
--	[`10.4.12-bionic`, `10.4-bionic`, `10-bionic`, `bionic`, `10.4.12`, `10.4`, `10`, `latest`](https://github.com/docker-library/mariadb/blob/48ee7746c6da7dfd372189a0d5a45a7894548cd9/10.4/Dockerfile)
--	[`10.3.22-bionic`, `10.3-bionic`, `10.3.22`, `10.3`](https://github.com/docker-library/mariadb/blob/48ee7746c6da7dfd372189a0d5a45a7894548cd9/10.3/Dockerfile)
--	[`10.2.31-bionic`, `10.2-bionic`, `10.2.31`, `10.2`](https://github.com/docker-library/mariadb/blob/48ee7746c6da7dfd372189a0d5a45a7894548cd9/10.2/Dockerfile)
--	[`10.1.44-bionic`, `10.1-bionic`, `10.1.44`, `10.1`](https://github.com/docker-library/mariadb/blob/48ee7746c6da7dfd372189a0d5a45a7894548cd9/10.1/Dockerfile)
-
 # Quick reference
 
+-	**Maintained by**:  
+	[MariaDB developer community](https://github.com/MariaDB/mariadb-docker)
+
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[Database Adminstrators (Stack Exchange)](https://dba.stackexchange.com/questions/tagged/docker+mariadb), [MariaDB Knowledge Base](https://mariadb.com/kb/en/docker-and-mariadb/) ([Ask a Question here](https://mariadb.com/kb/en/docker-and-mariadb/ask) available).
+
+Also see the ["Getting Help with MariaDB" article on the MariaDB Knowledge Base](https://mariadb.com/kb/en/getting-help-with-mariadb/).
+
+# Supported tags and respective `Dockerfile` links
+
+-	[`10.5.9-focal`, `10.5-focal`, `10-focal`, `focal`, `10.5.9`, `10.5`, `10`, `latest`](https://github.com/docker-library/mariadb/blob/5d57b119775458cd37994a0f313ea3a29603efbb/10.5/Dockerfile)
+-	[`10.4.18-focal`, `10.4-focal`, `10.4.18`, `10.4`](https://github.com/docker-library/mariadb/blob/74078d37c547949e762bbabdd3b684f932c7be2e/10.4/Dockerfile)
+-	[`10.3.28-focal`, `10.3-focal`, `10.3.28`, `10.3`](https://github.com/docker-library/mariadb/blob/ac4469cfa8e1a01093ce0a142ca0a03a5db58fce/10.3/Dockerfile)
+-	[`10.2.37-bionic`, `10.2-bionic`, `10.2.37`, `10.2`](https://github.com/docker-library/mariadb/blob/f0e04a7e0e4b7d83691efc889865da8d6ae5f00e/10.2/Dockerfile)
+-	[`10.1.48-bionic`, `10.1-bionic`, `10.1.48`, `10.1`](https://github.com/docker-library/mariadb/blob/0d197a924990af521cded73d04f113b06488844f/10.1/Dockerfile)
+
+# Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/docker-library/mariadb/issues](https://github.com/docker-library/mariadb/issues)
-
--	**Maintained by**:  
-	[the Docker Community](https://github.com/docker-library/mariadb)
+	[https://jira.mariadb.org/](https://jira.mariadb.org/) under "MDEV" Project, and component "Packaging" or [GitHub](https://github.com/MariaDB/mariadb-docker/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/mariadb/), [`arm64v8`](https://hub.docker.com/r/arm64v8/mariadb/), [`ppc64le`](https://hub.docker.com/r/ppc64le/mariadb/)
@@ -41,7 +45,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/mariadb`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmariadb)  
+	[official-images repo's `library/mariadb` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fmariadb)  
 	[official-images repo's `library/mariadb` file](https://github.com/docker-library/official-images/blob/master/library/mariadb) ([history](https://github.com/docker-library/official-images/commits/master/library/mariadb))
 
 -	**Source of this description**:  
@@ -49,13 +53,11 @@ WARNING:
 
 # What is MariaDB?
 
-MariaDB is a community-developed fork of the MySQL relational database management system intended to remain free under the GNU GPL. Being a fork of a leading open source software system, it is notable for being led by the original developers of MySQL, who forked it due to concerns over its acquisition by Oracle. Contributors are required to share their copyright with the MariaDB Foundation.
+MariaDB Server is one of the most popular database servers in the world. It’s made by the original developers of MySQL and guaranteed to stay open source. Notable users include Wikipedia, DBS Bank and ServiceNow.
 
-The intent is also to maintain high compatibility with MySQL, ensuring a "drop-in" replacement capability with library binary equivalency and exact matching with MySQL APIs and commands. It includes the XtraDB storage engine for replacing InnoDB, as well as a new storage engine, Aria, that intends to be both a transactional and non-transactional engine perhaps even included in future versions of MySQL.
+The intent is also to maintain high compatibility with MySQL, ensuring a library binary equivalency and exact matching with MySQL APIs and commands. MariaDB developers continue to develop new features and improve performance to better serve its users.
 
-> [wikipedia.org/wiki/MariaDB](https://en.wikipedia.org/wiki/MariaDB)
-
-![logo](https://raw.githubusercontent.com/docker-library/docs/74e3b3d4d60389208732dbd2c95145868111d959/mariadb/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/fe985dcb24154456254e252d1fa4a2b6b656ee80/mariadb/logo.png)
 
 # How to use this image
 
@@ -64,12 +66,19 @@ The intent is also to maintain high compatibility with MySQL, ensuring a "drop-i
 Starting a MariaDB instance is simple:
 
 ```console
-$ docker run --name some-mariadb -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mariadb:tag
+$ docker run -p 127.0.0.1:3306:3306  --name some-mariadb -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mariadb:tag
 ```
 
-... where `some-mariadb` is the name you want to assign to your container, `my-secret-pw` is the password to be set for the MySQL root user and `tag` is the tag specifying the MySQL version you want. See the list above for relevant tags.
+or:
 
-## Connect to MariaDB from the MySQL command line client
+```console
+$ docker network create some-network # Create the network
+$ docker run --net some-network --name some-mariadb -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mariadb:tag
+```
+
+... where `some-network` is newly created network (other than `bridge` as the default network), `some-mariadb` is the name you want to assign to your container, `my-secret-pw` is the password to be set for the MariaDB root user and `tag` is the tag specifying the MariaDB version you want. See the list above for relevant tags.
+
+## Connect to MariaDB from the MySQL/MariaDB command line client
 
 The following command starts another `mariadb` container instance and runs the `mysql` command line client against your original `mariadb` container, allowing you to execute SQL statements against your database instance:
 
@@ -85,7 +94,7 @@ This image can also be used as a client for non-Docker or remote instances:
 $ docker run -it --rm mariadb mysql -hsome.mysql.host -usome-mysql-user -p
 ```
 
-More information about the MySQL command line client can be found in the [MySQL documentation](http://dev.mysql.com/doc/en/mysql.html)
+More information about the MariaDB command line client can be found in the [MariaDB Knowledge Base](https://mariadb.com/kb/en/mysql-command-line-client/)
 
 ## ... via [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/) or [`docker-compose`](https://github.com/docker/compose)
 
@@ -114,7 +123,7 @@ services:
 
 Run `docker stack deploy -c stack.yml mariadb` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
 
-## Container shell access and viewing MySQL logs
+## Container shell access and viewing MariaDB logs
 
 The `docker exec` command allows you to run commands inside a Docker container. The following command line will give you a bash shell inside your `mariadb` container:
 
@@ -128,7 +137,7 @@ The log is available through Docker's container log:
 $ docker logs some-mariadb
 ```
 
-## Using a custom MySQL configuration file
+## Using a custom MariaDB configuration file
 
 The startup configuration is specified in the file `/etc/mysql/my.cnf`, and that file in turn includes any files found in the `/etc/mysql/conf.d` directory that end with `.cnf`. Settings in files in this directory will augment and/or override settings in `/etc/mysql/my.cnf`. If you want to use a customized MySQL configuration, you can create your alternative configuration file in a directory on the host machine and then mount that directory location as `/etc/mysql/conf.d` inside the `mariadb` container.
 
@@ -174,11 +183,15 @@ Do note that there is no need to use this mechanism to create the root superuser
 
 ### `MYSQL_ALLOW_EMPTY_PASSWORD`
 
-This is an optional variable. Set to `yes` to allow the container to be started with a blank password for the root user. *NOTE*: Setting this variable to `yes` is not recommended unless you really know what you are doing, since this will leave your MariaDB instance completely unprotected, allowing anyone to gain complete superuser access.
+This is an optional variable. Set to a non-empty value, like `yes`, to allow the container to be started with a blank password for the root user. *NOTE*: Setting this variable to `yes` is not recommended unless you really know what you are doing, since this will leave your MariaDB instance completely unprotected, allowing anyone to gain complete superuser access.
 
 ### `MYSQL_RANDOM_ROOT_PASSWORD`
 
-This is an optional variable. Set to `yes` to generate a random initial password for the root user (using `pwgen`). The generated root password will be printed to stdout (`GENERATED ROOT PASSWORD: .....`).
+This is an optional variable. Set to a non-empty value, like `yes`, to generate a random initial password for the root user (using `pwgen`). The generated root password will be printed to stdout (`GENERATED ROOT PASSWORD: .....`).
+
+### `MYSQL_INITDB_SKIP_TZINFO`
+
+By default, the entrypoint script automatically loads the timezone data needed for the `CONVERT_TZ()` function. If it is not needed, any non-empty value disables timezone loading.
 
 ## Docker Secrets
 
@@ -192,7 +205,7 @@ Currently, this is only supported for `MYSQL_ROOT_PASSWORD`, `MYSQL_ROOT_HOST`, 
 
 # Initializing a fresh instance
 
-When a container is started for the first time, a new database with the specified name will be created and initialized with the provided configuration variables. Furthermore, it will execute files with extensions `.sh`, `.sql` and `.sql.gz` that are found in `/docker-entrypoint-initdb.d`. Files will be executed in alphabetical order. You can easily populate your `mariadb` services by [mounting a SQL dump into that directory](https://docs.docker.com/engine/tutorials/dockervolumes/#mount-a-host-file-as-a-data-volume) and provide [custom images](https://docs.docker.com/reference/builder/) with contributed data. SQL files will be imported by default to the database specified by the `MYSQL_DATABASE` variable.
+When a container is started for the first time, a new database with the specified name will be created and initialized with the provided configuration variables. Furthermore, it will execute files with extensions `.sh`, `.sql`, `.sql.gz`, and `.sql.xz` that are found in `/docker-entrypoint-initdb.d`. Files will be executed in alphabetical order. `.sh` files without file execute permission are sourced rather than executed. You can easily populate your `mariadb` services by [mounting a SQL dump into that directory](https://docs.docker.com/engine/tutorials/dockervolumes/#mount-a-host-file-as-a-data-volume) and provide [custom images](https://docs.docker.com/reference/builder/) with contributed data. SQL files will be imported by default to the database specified by the `MYSQL_DATABASE` variable.
 
 # Caveats
 

@@ -14,20 +14,28 @@ WARNING:
 
 -->
 
+# **DEPRECATION NOTICE**
+
+This image is deprecated due to maintainer inactivity (last updated Dec 2016; [docker-library/official-images#2403](https://github.com/docker-library/official-images/pull/2403)).
+
+See [docker-library/docs#1433](https://github.com/docker-library/docs/pull/1433) for discussion around an in-progress upstream update.
+
+# Quick reference
+
+-	**Maintained by**:  
+	[the Source Mage Community](https://github.com/vaygr/docker-sourcemage)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`latest`, `0.62`](https://github.com/vaygr/docker-sourcemage/blob/a03bbe3ae7bbb839c3c69afd4504ca336f7b9cb9/stable/Dockerfile)
 
-# Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+# Quick reference (cont.)
 
 -	**Where to file issues**:  
 	[https://github.com/vaygr/docker-sourcemage/issues](https://github.com/vaygr/docker-sourcemage/issues)
-
--	**Maintained by**:  
-	[the Source Mage Community](https://github.com/vaygr/docker-sourcemage)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/sourcemage/)
@@ -37,7 +45,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/sourcemage`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fsourcemage)  
+	[official-images repo's `library/sourcemage` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fsourcemage)  
 	[official-images repo's `library/sourcemage` file](https://github.com/docker-library/official-images/blob/master/library/sourcemage) ([history](https://github.com/docker-library/official-images/commits/master/library/sourcemage))
 
 -	**Source of this description**:  

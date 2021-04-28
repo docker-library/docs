@@ -14,22 +14,25 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`3.0`, `3.0-20200424`, `latest`](https://github.com/vmware/photon-docker-image/blob/5a5ac7caccd1299e9481bac190806d89e5010615/docker/Dockerfile)
--	[`1.0`, `1.0-20200424`](https://github.com/vmware/photon-docker-image/blob/7f5b8dc3b62cc2c8d20149e65a4efba9e406ffc5/docker/Dockerfile)
--	[`2.0`, `2.0-20200424`](https://github.com/vmware/photon-docker-image/blob/2750e1b68c08545e8cca639cec3ea716ef406d1d/docker/Dockerfile)
-
 # Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
-
--	**Where to file issues**:  
-	[https://github.com/vmware/photon-docker-image/issues](https://github.com/vmware/photon-docker-image/issues)
 
 -	**Maintained by**:  
 	[VMware](https://github.com/vmware/photon-docker-image)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+# Supported tags and respective `Dockerfile` links
+
+-	[`4.0`, `4.0-20210416`, `latest`](https://github.com/vmware/photon-docker-image/blob/e156344c305129a464eeb9c5fa1a383502c54d71/docker/Dockerfile)
+-	[`3.0`, `3.0-20210416`](https://github.com/vmware/photon-docker-image/blob/2aeb97f8dde8bfa5f781748b0c71425bfe47add1/docker/Dockerfile)
+-	[`1.0`, `1.0-20210416`](https://github.com/vmware/photon-docker-image/blob/76de488ffd07e0babc7d0ba7fb62bd25673ab672/docker/Dockerfile)
+-	[`2.0`, `2.0-20210416`](https://github.com/vmware/photon-docker-image/blob/409329193d08c81b54b5ab7d0a0874aa63f1a294/docker/Dockerfile)
+
+# Quick reference (cont.)
+
+-	**Where to file issues**:  
+	[https://github.com/vmware/photon-docker-image/issues](https://github.com/vmware/photon-docker-image/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/photon/), [`arm64v8`](https://hub.docker.com/r/arm64v8/photon/)
@@ -39,7 +42,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/photon`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fphoton)  
+	[official-images repo's `library/photon` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fphoton)  
 	[official-images repo's `library/photon` file](https://github.com/docker-library/official-images/blob/master/library/photon) ([history](https://github.com/docker-library/official-images/commits/master/library/photon))
 
 -	**Source of this description**:  

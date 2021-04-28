@@ -14,6 +14,20 @@ WARNING:
 
 -->
 
+# **DEPRECATION NOTICE**
+
+This image is deprecated due to inactivity (last updated Feb 2019; [docker-library/official-images#5411](https://github.com/docker-library/official-images/pull/5411)).
+
+There is a useful discussion in [ahawkins/docker-thrift#12](https://github.com/ahawkins/docker-thrift/issues/12) about the future of this image.
+
+# Quick reference
+
+-	**Maintained by**:  
+	[the Docker Community](https://github.com/ahawkins/docker-thrift)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`0.9`, `0.9.3`](https://github.com/ahawkins/docker-thrift/blob/d322572f7dd6ea468a14a4d832fbec26f152c71e/0.9/Dockerfile)
@@ -21,16 +35,10 @@ WARNING:
 -	[`0.11`, `0.11.0`](https://github.com/ahawkins/docker-thrift/blob/00e197d889426695446baec4e034b5ddbb15bcb3/0.11/Dockerfile)
 -	[`0.12`, `0.12.0`, `latest`](https://github.com/ahawkins/docker-thrift/blob/d7e73876549d205898b1922bcbf69e74ef11c288/0.12/Dockerfile)
 
-# Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+# Quick reference (cont.)
 
 -	**Where to file issues**:  
 	[https://github.com/ahawkins/docker-thrift/issues](https://github.com/ahawkins/docker-thrift/issues)
-
--	**Maintained by**:  
-	[the Docker Community](https://github.com/ahawkins/docker-thrift)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/thrift/)
@@ -40,7 +48,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/thrift`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fthrift)  
+	[official-images repo's `library/thrift` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fthrift)  
 	[official-images repo's `library/thrift` file](https://github.com/docker-library/official-images/blob/master/library/thrift) ([history](https://github.com/docker-library/official-images/commits/master/library/thrift))
 
 -	**Source of this description**:  

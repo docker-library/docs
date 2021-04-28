@@ -14,35 +14,43 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`2020.03-apache`, `apache`, `stable-apache`, `2020.03`, `latest`, `stable`](https://github.com/friendica/docker/blob/ad99a985409c5ef4eefb5903b1ec81096dc8f613/2020.03/apache/Dockerfile)
--	[`2020.03-fpm`, `fpm`, `stable-fpm`](https://github.com/friendica/docker/blob/ad99a985409c5ef4eefb5903b1ec81096dc8f613/2020.03/fpm/Dockerfile)
--	[`2020.03-fpm-alpine`, `fpm-alpine`, `stable-fpm-alpine`](https://github.com/friendica/docker/blob/ad99a985409c5ef4eefb5903b1ec81096dc8f613/2020.03/fpm-alpine/Dockerfile)
--	[`2020.06-dev-apache`, `dev-apache`, `2020.06-dev`, `dev`](https://github.com/friendica/docker/blob/ad99a985409c5ef4eefb5903b1ec81096dc8f613/2020.06-dev/apache/Dockerfile)
--	[`2020.06-dev-fpm`, `dev-fpm`](https://github.com/friendica/docker/blob/ad99a985409c5ef4eefb5903b1ec81096dc8f613/2020.06-dev/fpm/Dockerfile)
--	[`2020.06-dev-fpm-alpine`, `dev-fpm-alpine`](https://github.com/friendica/docker/blob/ad99a985409c5ef4eefb5903b1ec81096dc8f613/2020.06-dev/fpm-alpine/Dockerfile)
-
 # Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
-
--	**Where to file issues**:  
-	[https://github.com/friendica/docker/issues](https://github.com/friendica/docker/issues)
 
 -	**Maintained by**:  
 	[nupplaPhil](https://github.com/friendica/docker)
 
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+# Supported tags and respective `Dockerfile` links
+
+-	[`2020.09-apache`, `2020.09`](https://github.com/friendica/docker/blob/88db303a9ad22024d505b28390af384e28a5a624/2020.09/apache/Dockerfile)
+-	[`2020.09-fpm`](https://github.com/friendica/docker/blob/88db303a9ad22024d505b28390af384e28a5a624/2020.09/fpm/Dockerfile)
+-	[`2020.09-fpm-alpine`](https://github.com/friendica/docker/blob/88db303a9ad22024d505b28390af384e28a5a624/2020.09/fpm-alpine/Dockerfile)
+-	[`2021.01-apache`, `apache`, `stable-apache`, `2021.01`, `latest`, `stable`](https://github.com/friendica/docker/blob/88db303a9ad22024d505b28390af384e28a5a624/2021.01/apache/Dockerfile)
+-	[`2021.01-fpm`, `fpm`, `stable-fpm`](https://github.com/friendica/docker/blob/88db303a9ad22024d505b28390af384e28a5a624/2021.01/fpm/Dockerfile)
+-	[`2021.01-fpm-alpine`, `fpm-alpine`, `stable-fpm-alpine`](https://github.com/friendica/docker/blob/88db303a9ad22024d505b28390af384e28a5a624/2021.01/fpm-alpine/Dockerfile)
+-	[`2021.03-dev-apache`, `dev-apache`, `2021.03-dev`, `dev`](https://github.com/friendica/docker/blob/88db303a9ad22024d505b28390af384e28a5a624/2021.03-dev/apache/Dockerfile)
+-	[`2021.03-dev-fpm`, `dev-fpm`](https://github.com/friendica/docker/blob/88db303a9ad22024d505b28390af384e28a5a624/2021.03-dev/fpm/Dockerfile)
+-	[`2021.03-dev-fpm-alpine`, `dev-fpm-alpine`](https://github.com/friendica/docker/blob/88db303a9ad22024d505b28390af384e28a5a624/2021.03-dev/fpm-alpine/Dockerfile)
+-	[`2021.03-rc-apache`, `rc-apache`, `2021.03-rc`, `rc`](https://github.com/friendica/docker/blob/88db303a9ad22024d505b28390af384e28a5a624/2021.03-rc/apache/Dockerfile)
+-	[`2021.03-rc-fpm`, `rc-fpm`](https://github.com/friendica/docker/blob/88db303a9ad22024d505b28390af384e28a5a624/2021.03-rc/fpm/Dockerfile)
+-	[`2021.03-rc-fpm-alpine`, `rc-fpm-alpine`](https://github.com/friendica/docker/blob/88db303a9ad22024d505b28390af384e28a5a624/2021.03-rc/fpm-alpine/Dockerfile)
+
+# Quick reference (cont.)
+
+-	**Where to file issues**:  
+	[https://github.com/friendica/docker/issues](https://github.com/friendica/docker/issues)
+
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/friendica/), [`arm32v5`](https://hub.docker.com/r/arm32v5/friendica/), [`arm32v6`](https://hub.docker.com/r/arm32v6/friendica/), [`arm32v7`](https://hub.docker.com/r/arm32v7/friendica/), [`arm64v8`](https://hub.docker.com/r/arm64v8/friendica/), [`i386`](https://hub.docker.com/r/i386/friendica/), [`ppc64le`](https://hub.docker.com/r/ppc64le/friendica/)
+	[`amd64`](https://hub.docker.com/r/amd64/friendica/), [`arm32v5`](https://hub.docker.com/r/arm32v5/friendica/), [`arm32v6`](https://hub.docker.com/r/arm32v6/friendica/), [`arm32v7`](https://hub.docker.com/r/arm32v7/friendica/), [`arm64v8`](https://hub.docker.com/r/arm64v8/friendica/), [`i386`](https://hub.docker.com/r/i386/friendica/), [`mips64le`](https://hub.docker.com/r/mips64le/friendica/), [`ppc64le`](https://hub.docker.com/r/ppc64le/friendica/), [`s390x`](https://hub.docker.com/r/s390x/friendica/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/friendica/` directory](https://github.com/docker-library/repo-info/blob/master/repos/friendica) ([history](https://github.com/docker-library/repo-info/commits/master/repos/friendica))  
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/friendica`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Ffriendica)  
+	[official-images repo's `library/friendica` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Ffriendica)  
 	[official-images repo's `library/friendica` file](https://github.com/docker-library/official-images/blob/master/library/friendica) ([history](https://github.com/docker-library/official-images/commits/master/library/friendica))
 
 -	**Source of this description**:  
@@ -86,24 +94,23 @@ $ docker run -d friendica:fpm
 
 As the fastCGI-Process is not capable of serving static files (style sheets, images, ...) the webserver needs access to these files. This can be achieved with the `volumes-from` option. You can find more information in the docker-compose section.
 
-## Using the cron job
+## Background tasks
 
-There are three options to enable the cron-job for Friendica:
+Friendica requires background tasks to fetch and send all kind of messages and maintain the complete instance. This setup is crucial for the Friendica node. There are two options to enable background tasks for Friendica:
 
--	Using the default Image and activate the cron-job (see [Installation](https://friendi.ca/resources/installation/), sector `Activating scheduled tasks`)
--	Using the default image (apache, fpm, fpm-alpine) and creating **two** container (one for cron and one for the main app)
--	Using one of the additional, prepared [`cron dockerfiles`](https://github.com/friendica/docker/tree/master/.examples/dockerfiles/cron)
+-	Using the default Image and manually setup background tasks (see Friendica [Install](https://github.com/friendica/friendica/blob/2021.03-rc/doc/Install.md#required-background-tasks))
+-	Using the default image (apache, fpm, fpm-alpine) and starting a dedicated `cron` instance and use `cron.sh` as startup command (like this [Example](https://github.com/friendica/docker/blob/stable/.examples/docker-compose/insecure/mariadb-cron-redis/apache/docker-compose.yml))
 
 ## Possible Environment Variables
 
 **Friendica Settings**
 
--	`FRIENDICA_URL` The Friendica URL.
+-	`FRIENDICA_URL` The Friendica complete URL including protocol, domain and subpath (example: https://friendica.local/sub/ ).
 -	`FRIENDICA_TZ` The default localization of the Friendica server.
 -	`FRIENDICA_LANG` The default language of the Friendica server.
 -	`FRIENDICA_SITENAME` The Sitename of the Friendica server.
 -	`FRIENDICA_NO_VALIDATION` If set to `true`, the URL and E-Mail validation will be disabled.
--	`FRIENDICA_DATA` If set to `true`, the fileystem will be used instead of the DB backend.
+-	`FRIENDICA_DATA` Set the name of the storage provider (e.g `Filesystem` to use filesystem), default ist the DB backend.
 -	`FRIENDICA_DATA_DIR` The data directory of the Friendica server (Default: /var/www/data).
 
 **Friendica Logging**
@@ -142,13 +149,14 @@ You have to set a valid SMTP-MTA for the `SMTP` environment variable to enable m
 The following environment variables are possible for the SMTP examples.
 
 -	`SMTP` Address of the SMTP Mail-Gateway. (**required**)
+-	`SMTP_PORT` Port of the SMTP Mail-Gateway. (Default: 587)
 -	`SMTP_DOMAIN` The sender domain. (**required** - e.g. `friendica.local`)
 -	`SMTP_FROM` Sender user-part of the address. (Default: `no-reply` - e.g. no-reply@friendica.local)
 -	`SMTP_TLS` Use TLS for connecting the SMTP Mail-Gateway. (Default: empty)
 -	`SMTP_STARTTLS` Use STARTTLS for connecting the SMTP Mail-Gateway. (Default: empty)
+-	`SMTP_AUTH` Auth mode for the SMTP Mail-Gateway. (Default: `On`)
 -	`SMTP_AUTH_USER` Username for the SMTP Mail-Gateway. (Default: empty)
 -	`SMTP_AUTH_PASS` Password for the SMTP Mail-Gateway. (Default: empty)
--	`SMTP_AUTH_METHOD` Authentication method for the SMTP Mail-Gateway. (Default: empty/plain text)
 
 ## Database settings
 
@@ -184,11 +192,72 @@ $ docker run -d \
 
 The Friendica image supports auto configuration via environment variables. You can preconfigure everything that is asked on the install page on first run. To enable the automatic installation, you have to the following environment variables:
 
+-	`FRIENDICA_URL` The Friendica complete URL including protocol, domain and subpath (example: https://friendica.local/sub/ ).
 -	`FRIENDICA_ADMIN_MAIL` E-Mail address of the administrator.
 -	`MYSQL_USER` Username for the database user using mysql / mariadb.
 -	`MYSQL_PASSWORD` Password for the database user using mysql / mariadb.
 -	`MYSQL_DATABASE` Name of the database using mysql / mariadb.
 -	`MYSQL_HOST` Hostname of the database server using mysql / mariadb.
+
+# Docker Secrets
+
+As an alternative to passing sensitive information via environment variables, _FILE may be appended to the previously listed environment variables, causing the initialization script to load the values for those variables from files present in the container. In particular, this can be used to load passwords from Docker secrets stored in /run/secrets/<secret_name> files. For example:
+
+```yaml
+version: '3.2'
+
+services:
+  db:
+    image: mariadb
+    restart: always
+    volumes:
+      - db:/var/lib/mysql
+    environment:
+       - MYSQL_DATABASE_FILE=/run/secrets/mysql_database
+       - MYSQL_USER_FILE=/run/secrets/mysql_user
+       - MYSQL_PASSWORD_FILE=/run/secrets/mysql_password
+    secrets:
+      - mysql_database
+      - mysql_password
+      - mysql_user
+
+  app:
+    image: friendica
+    restart: always
+    volumes:
+      - friendica:/var/www/html
+    ports:
+      - "8080:80"
+    environment:
+      - MYSQL_HOST=db
+      - MYSQL_DATABASE_FILE=/run/secrets/mysql_database
+      - MYSQL_USER_FILE=/run/secrets/mysql_user
+      - MYSQL_PASSWORD_FILE=/run/secrets/mysql_password
+      - FRIENDICA_ADMIN_MAIL_FILE=/run/secrets/friendica_admin_mail
+    depends_on:
+      - db
+    secrets:
+      - friendica_admin_mail
+      - mysql_database
+      - mysql_password
+      - mysql_user
+
+volumes:
+  db:
+  friendica:
+
+secrets:
+  friendica_admin_mail:
+    file: ./friendica_admin_mail.txt # put admin email to this file
+  mysql_database:
+    file: ./mysql_database.txt # put mysql database name to this file
+  mysql_password:
+    file: ./mysql_password.txt # put mysql password to this file
+  mysql_user:
+    file: ./mysql_user.txt # put mysql username to this file
+```
+
+Currently, this is only supported for `FRIENDICA_ADMIN_MAIL`, `MYSQL_DATABASE`, `MYSQL_PASSWORD`, `MYSQL_USER`.
 
 # Maintenance of the image
 
@@ -347,9 +416,9 @@ This is the defacto image. If you are unsure about what your needs are, you prob
 
 ## `friendica:<version>-alpine`
 
-This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
-This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
 
 To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 

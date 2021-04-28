@@ -14,22 +14,24 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`8.5`, `8.5-php5.6`, `5.6`](https://github.com/zendtech/php-zendserver-docker/blob/9dbdde8ed975da58a8bfdefeedf1e37ea24034f9/8.5/5.6/Dockerfile)
--	[`9.1`](https://github.com/zendtech/php-zendserver-docker/blob/9dbdde8ed975da58a8bfdefeedf1e37ea24034f9/9.1/7.1/Dockerfile)
--	[`2019.0`, `latest`](https://github.com/zendtech/php-zendserver-docker/blob/9dbdde8ed975da58a8bfdefeedf1e37ea24034f9/2019.0/Dockerfile)
-
 # Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
-
--	**Where to file issues**:  
-	[Zend Support Center](https://www.zend.com/en/support-center)
 
 -	**Maintained by**:  
 	[Perforce Software, Inc.](https://github.com/zendtech/php-zendserver-docker)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+# Supported tags and respective `Dockerfile` links
+
+-	[`8.5`, `8.5-php5.6`, `5.6`](https://github.com/zendtech/php-zendserver-docker/blob/f56e31421325fcef7c3619d9c582a30c647a545b/8.5/5.6/Dockerfile)
+-	[`9.1`](https://github.com/zendtech/php-zendserver-docker/blob/f56e31421325fcef7c3619d9c582a30c647a545b/9.1/7.1/Dockerfile)
+-	[`2019.0`, `latest`](https://github.com/zendtech/php-zendserver-docker/blob/f56e31421325fcef7c3619d9c582a30c647a545b/2019.0/Dockerfile)
+
+# Quick reference (cont.)
+
+-	**Where to file issues**:  
+	[Zend Support Center](https://www.zend.com/en/support-center)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/php-zendserver/)
@@ -39,7 +41,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/php-zendserver`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fphp-zendserver)  
+	[official-images repo's `library/php-zendserver` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fphp-zendserver)  
 	[official-images repo's `library/php-zendserver` file](https://github.com/docker-library/official-images/blob/master/library/php-zendserver) ([history](https://github.com/docker-library/official-images/commits/master/library/php-zendserver))
 
 -	**Source of this description**:  

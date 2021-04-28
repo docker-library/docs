@@ -1,17 +1,19 @@
-# Supported tags and respective `Dockerfile` links
-
-%%TAGS%%
-
 # Quick reference
+
+-	**Maintained by**:  
+	%%MAINTAINER%%
 
 -	**Where to get help**:  
 	%%GET-HELP%%
 
+# Supported tags and respective `Dockerfile` links
+
+%%TAGS%%
+
+# Quick reference (cont.)
+
 -	**Where to file issues**:  
 	%%ISSUES%%
-
--	**Maintained by**:  
-	%%MAINTAINER%%
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	%%ARCHES%%
@@ -21,7 +23,7 @@
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/%%REPO%%`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2F%%REPO%%)  
+	[official-images repo's `library/%%REPO%%` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2F%%REPO%%)  
 	[official-images repo's `library/%%REPO%%` file](https://github.com/docker-library/official-images/blob/master/library/%%REPO%%) ([history](https://github.com/docker-library/official-images/commits/master/library/%%REPO%%))
 
 -	**Source of this description**:  

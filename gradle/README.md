@@ -14,25 +14,41 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`6.3.0-jdk8`, `6.3-jdk8`, `jdk8`, `6.3.0-jdk`, `6.3-jdk`, `jdk`, `6.3.0`, `6.3`, `latest`](https://github.com/keeganwitt/docker-gradle/blob/5ccc2041d4dc7caa219e861b961d6c9717b0274b/jdk8/Dockerfile)
--	[`6.3.0-jre8`, `6.3-jre8`, `jre8`, `6.3.0-jre`, `6.3-jre`, `jre`](https://github.com/keeganwitt/docker-gradle/blob/5ccc2041d4dc7caa219e861b961d6c9717b0274b/jre8/Dockerfile)
--	[`6.3.0-jdk11`, `6.3-jdk11`, `jdk11`](https://github.com/keeganwitt/docker-gradle/blob/5ccc2041d4dc7caa219e861b961d6c9717b0274b/jdk11/Dockerfile)
--	[`6.3.0-jre11`, `6.3-jre11`, `jre11`](https://github.com/keeganwitt/docker-gradle/blob/5ccc2041d4dc7caa219e861b961d6c9717b0274b/jre11/Dockerfile)
--	[`6.3.0-jdk14`, `6.3-jdk14`, `jdk14`](https://github.com/keeganwitt/docker-gradle/blob/5ccc2041d4dc7caa219e861b961d6c9717b0274b/jdk14/Dockerfile)
--	[`6.3.0-jre14`, `6.3-jre14`, `jre14`](https://github.com/keeganwitt/docker-gradle/blob/5ccc2041d4dc7caa219e861b961d6c9717b0274b/jre14/Dockerfile)
-
 # Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
-
--	**Where to file issues**:  
-	[https://github.com/keeganwitt/docker-gradle/issues](https://github.com/keeganwitt/docker-gradle/issues)
 
 -	**Maintained by**:  
 	[Keegan Witt (of the Groovy Project)](https://github.com/keeganwitt/docker-gradle), [with the Gradle Project's approval](https://discuss.gradle.org/t/official-docker-images/21159/8)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+# Supported tags and respective `Dockerfile` links
+
+-	[`7.0.0-jdk8`, `7.0.0-jdk8-hotspot`, `7.0-jdk8`, `7.0-jdk8-hotspot`, `7-jdk8`, `7-jdk8-hotspot`, `jdk8`, `jdk8-hotspot`, `7.0.0-jdk`, `7.0.0-jdk-hotspot`, `7.0-jdk`, `7.0-jdk-hotspot`, `7-jdk`, `7-jdk-hotspot`, `jdk`, `jdk-hotspot`, `7.0.0`, `7.0.0-hotspot`, `7.0`, `7.0-hotspot`, `7`, `7-hotspot`, `latest`, `hotspot`](https://github.com/keeganwitt/docker-gradle/blob/605a08fb025ad34e8e9d5d2391427886e64fc9f7/hotspot/jdk8/Dockerfile)
+-	[`7.0.0-jre8`, `7.0.0-jre8-hotspot`, `7.0-jre8`, `7.0-jre8-hotspot`, `7-jre8`, `7-jre8-hotspot`, `jre8`, `jre8-hotspot`, `7.0.0-jre`, `7.0.0-jre-hotspot`, `7.0-jre`, `7.0-jre-hotspot`, `7-jre`, `7-jre-hotspot`, `jre`, `jre-hotspot`](https://github.com/keeganwitt/docker-gradle/blob/605a08fb025ad34e8e9d5d2391427886e64fc9f7/hotspot/jre8/Dockerfile)
+-	[`7.0.0-jdk11`, `7.0.0-jdk11-hotspot`, `7.0-jdk11`, `7.0-jdk11-hotspot`, `7-jdk11`, `7-jdk11-hotspot`, `jdk11`, `jdk11-hotspot`](https://github.com/keeganwitt/docker-gradle/blob/605a08fb025ad34e8e9d5d2391427886e64fc9f7/hotspot/jdk11/Dockerfile)
+-	[`7.0.0-jre11`, `7.0.0-jre11-hotspot`, `7.0-jre11`, `7.0-jre11-hotspot`, `7-jre11`, `7-jre11-hotspot`, `jre11`, `jre11-hotspot`](https://github.com/keeganwitt/docker-gradle/blob/605a08fb025ad34e8e9d5d2391427886e64fc9f7/hotspot/jre11/Dockerfile)
+-	[`7.0.0-jdk16`, `7.0.0-jdk16-hotspot`, `7.0-jdk16`, `7.0-jdk16-hotspot`, `7-jdk16`, `7-jdk16-hotspot`, `jdk16`, `jdk16-hotspot`](https://github.com/keeganwitt/docker-gradle/blob/605a08fb025ad34e8e9d5d2391427886e64fc9f7/hotspot/jdk16/Dockerfile)
+-	[`7.0.0-jre16`, `7.0.0-jre16-hotspot`, `7.0-jre16`, `7.0-jre16-hotspot`, `7-jre16`, `7-jre16-hotspot`, `jre16`, `jre16-hotspot`](https://github.com/keeganwitt/docker-gradle/blob/605a08fb025ad34e8e9d5d2391427886e64fc9f7/hotspot/jre16/Dockerfile)
+-	[`7.0.0-jdk8-openj9`, `7.0-jdk8-openj9`, `7-jdk8-openj9`, `jdk8-openj9`, `7.0.0-jdk-openj9`, `7.0-jdk-openj9`, `7-jdk-openj9`, `jdk-openj9`, `7.0.0-openj9`, `7.0-openj9`, `7-openj9`, `openj9`](https://github.com/keeganwitt/docker-gradle/blob/605a08fb025ad34e8e9d5d2391427886e64fc9f7/openj9/jdk8/Dockerfile)
+-	[`7.0.0-jre8-openj9`, `7.0-jre8-openj9`, `7-jre8-openj9`, `jre8-openj9`, `7.0.0-jre-openj9`, `7.0-jre-openj9`, `7-jre-openj9`, `jre-openj9`](https://github.com/keeganwitt/docker-gradle/blob/605a08fb025ad34e8e9d5d2391427886e64fc9f7/openj9/jre8/Dockerfile)
+-	[`7.0.0-jdk11-openj9`, `7.0-jdk11-openj9`, `7-jdk11-openj9`, `jdk11-openj9`](https://github.com/keeganwitt/docker-gradle/blob/605a08fb025ad34e8e9d5d2391427886e64fc9f7/openj9/jdk11/Dockerfile)
+-	[`7.0.0-jre11-openj9`, `7.0-jre11-openj9`, `7-jre11-openj9`, `jre11-openj9`](https://github.com/keeganwitt/docker-gradle/blob/605a08fb025ad34e8e9d5d2391427886e64fc9f7/openj9/jre11/Dockerfile)
+-	[`7.0.0-jdk16-openj9`, `7.0-jdk16-openj9`, `7-jdk16-openj9`, `jdk16-openj9`](https://github.com/keeganwitt/docker-gradle/blob/605a08fb025ad34e8e9d5d2391427886e64fc9f7/openj9/jdk16/Dockerfile)
+-	[`7.0.0-jre16-openj9`, `7.0-jre16-openj9`, `7-jre16-openj9`, `jre16-openj9`](https://github.com/keeganwitt/docker-gradle/blob/605a08fb025ad34e8e9d5d2391427886e64fc9f7/openj9/jre16/Dockerfile)
+-	[`6.8.3-jdk8`, `6.8.3-jdk8-hotspot`, `6.8-jdk8`, `6.8-jdk8-hotspot`, `6-jdk8`, `6-jdk8-hotspot`, `6.8.3-jdk`, `6.8.3-jdk-hotspot`, `6.8-jdk`, `6.8-jdk-hotspot`, `6-jdk`, `6-jdk-hotspot`, `6.8.3`, `6.8.3-hotspot`, `6.8`, `6.8-hotspot`, `6`, `6-hotspot`](https://github.com/keeganwitt/docker-gradle/blob/019489a1187aac1788f5369048c34969462a0456/hotspot/jdk8/Dockerfile)
+-	[`6.8.3-jre8`, `6.8.3-jre8-hotspot`, `6.8-jre8`, `6.8-jre8-hotspot`, `6-jre8`, `6-jre8-hotspot`, `6.8.3-jre`, `6.8.3-jre-hotspot`, `6.8-jre`, `6.8-jre-hotspot`, `6-jre`, `6-jre-hotspot`](https://github.com/keeganwitt/docker-gradle/blob/019489a1187aac1788f5369048c34969462a0456/hotspot/jre8/Dockerfile)
+-	[`6.8.3-jdk11`, `6.8.3-jdk11-hotspot`, `6.8-jdk11`, `6.8-jdk11-hotspot`, `6-jdk11`, `6-jdk11-hotspot`](https://github.com/keeganwitt/docker-gradle/blob/019489a1187aac1788f5369048c34969462a0456/hotspot/jdk11/Dockerfile)
+-	[`6.8.3-jre11`, `6.8.3-jre11-hotspot`, `6.8-jre11`, `6.8-jre11-hotspot`, `6-jre11`, `6-jre11-hotspot`](https://github.com/keeganwitt/docker-gradle/blob/019489a1187aac1788f5369048c34969462a0456/hotspot/jre11/Dockerfile)
+-	[`6.8.3-jdk8-openj9`, `6.8-jdk8-openj9`, `6-jdk8-openj9`, `6.8.3-jdk-openj9`, `6.8-jdk-openj9`, `6-jdk-openj9`, `6.8.3-openj9`, `6.8-openj9`, `6-openj9`](https://github.com/keeganwitt/docker-gradle/blob/019489a1187aac1788f5369048c34969462a0456/openj9/jdk8/Dockerfile)
+-	[`6.8.3-jre8-openj9`, `6.8-jre8-openj9`, `6-jre8-openj9`, `6.8.3-jre-openj9`, `6.8-jre-openj9`, `6-jre-openj9`](https://github.com/keeganwitt/docker-gradle/blob/019489a1187aac1788f5369048c34969462a0456/openj9/jre8/Dockerfile)
+-	[`6.8.3-jdk11-openj9`, `6.8-jdk11-openj9`, `6-jdk11-openj9`](https://github.com/keeganwitt/docker-gradle/blob/019489a1187aac1788f5369048c34969462a0456/openj9/jdk11/Dockerfile)
+-	[`6.8.3-jre11-openj9`, `6.8-jre11-openj9`, `6-jre11-openj9`](https://github.com/keeganwitt/docker-gradle/blob/019489a1187aac1788f5369048c34969462a0456/openj9/jre11/Dockerfile)
+
+# Quick reference (cont.)
+
+-	**Where to file issues**:  
+	[https://github.com/keeganwitt/docker-gradle/issues](https://github.com/keeganwitt/docker-gradle/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/gradle/), [`arm32v7`](https://hub.docker.com/r/arm32v7/gradle/), [`arm64v8`](https://hub.docker.com/r/arm64v8/gradle/), [`ppc64le`](https://hub.docker.com/r/ppc64le/gradle/), [`s390x`](https://hub.docker.com/r/s390x/gradle/)
@@ -42,7 +58,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/gradle`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fgradle)  
+	[official-images repo's `library/gradle` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fgradle)  
 	[official-images repo's `library/gradle` file](https://github.com/docker-library/official-images/blob/master/library/gradle) ([history](https://github.com/docker-library/official-images/commits/master/library/gradle))
 
 -	**Source of this description**:  

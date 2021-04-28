@@ -14,31 +14,33 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`7.6.2`](https://github.com/docker-library/elasticsearch/blob/323a9028774ff18e1e3b1d0304bdd55edc88ab80/7/Dockerfile)
--	[`6.8.8`](https://github.com/docker-library/elasticsearch/blob/79420fbf8e7f263bc25b4ff7c592240129ecb180/6/Dockerfile)
-
 # Quick reference
-
--	**Where to get help**:  
-	the [Elasticsearch Discuss Forums](https://discuss.elastic.co/c/elasticsearch), the [Elastic community](https://www.elastic.co/community)
-
--	**Where to file issues**:  
-	For issues with Elasticsearch Docker Image or Elasticsearch: https://github.com/elastic/elasticsearch/issues
 
 -	**Maintained by**:  
 	[the Elastic Team](https://github.com/elastic/elasticsearch)
 
+-	**Where to get help**:  
+	the [Elasticsearch Discuss Forums](https://discuss.elastic.co/c/elasticsearch), the [Elastic community](https://www.elastic.co/community)
+
+# Supported tags and respective `Dockerfile` links
+
+-	[`7.12.0`](https://github.com/docker-library/elasticsearch/blob/7a4ec49b0bee1e610e79076c5941b9376acba764/7/Dockerfile)
+-	[`6.8.15`](https://github.com/docker-library/elasticsearch/blob/e1bc20d3147ba582bfaaf3e289ca1070797736f6/6/Dockerfile)
+
+# Quick reference (cont.)
+
+-	**Where to file issues**:  
+	For issues with Elasticsearch Docker Image or Elasticsearch: https://github.com/elastic/elasticsearch/issues
+
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/elasticsearch/)
+	[`amd64`](https://hub.docker.com/r/amd64/elasticsearch/), [`arm64v8`](https://hub.docker.com/r/arm64v8/elasticsearch/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/elasticsearch/` directory](https://github.com/docker-library/repo-info/blob/master/repos/elasticsearch) ([history](https://github.com/docker-library/repo-info/commits/master/repos/elasticsearch))  
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/elasticsearch`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Felasticsearch)  
+	[official-images repo's `library/elasticsearch` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Felasticsearch)  
 	[official-images repo's `library/elasticsearch` file](https://github.com/docker-library/official-images/blob/master/library/elasticsearch) ([history](https://github.com/docker-library/official-images/commits/master/library/elasticsearch))
 
 -	**Source of this description**:  
@@ -90,7 +92,7 @@ See [Install Elasticsearch with Docker](https://www.elastic.co/guide/en/elastics
 
 # License
 
-View [license information](https://github.com/elastic/elasticsearch/blob/6.4/licenses/ELASTIC-LICENSE.txt) for the software contained in this image.
+View [license information](https://github.com/elastic/elasticsearch/blob/master/licenses/ELASTIC-LICENSE-2.0.txt) for the software contained in this image.
 
 As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 

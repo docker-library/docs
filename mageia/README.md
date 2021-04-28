@@ -14,20 +14,24 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`7`, `latest`](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/718477bf0e9298cf8ed9f08c5229713356e4728d/dist/7/x86_64/Dockerfile)
-
 # Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
-
--	**Where to file issues**:  
-	[https://github.com/juanluisbaptiste/docker-brew-mageia/issues](https://github.com/juanluisbaptiste/docker-brew-mageia/issues)
 
 -	**Maintained by**:  
 	[Mageia Developers](https://github.com/juanluisbaptiste/docker-brew-mageia)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+# Supported tags and respective `Dockerfile` links
+
+-	[`8`, `latest`](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/067e6df19c568e101a42dc71b77f6a2de5992c70/dist/8/x86_64/Dockerfile)
+-	[`7`](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/067e6df19c568e101a42dc71b77f6a2de5992c70/dist/7/x86_64/Dockerfile)
+-	[`cauldron`](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/067e6df19c568e101a42dc71b77f6a2de5992c70/dist/cauldron/x86_64/Dockerfile)
+
+# Quick reference (cont.)
+
+-	**Where to file issues**:  
+	[https://github.com/juanluisbaptiste/docker-brew-mageia/issues](https://github.com/juanluisbaptiste/docker-brew-mageia/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/mageia/), [`arm32v7`](https://hub.docker.com/r/arm32v7/mageia/), [`arm64v8`](https://hub.docker.com/r/arm64v8/mageia/)
@@ -37,7 +41,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/mageia`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmageia)  
+	[official-images repo's `library/mageia` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fmageia)  
 	[official-images repo's `library/mageia` file](https://github.com/docker-library/official-images/blob/master/library/mageia) ([history](https://github.com/docker-library/official-images/commits/master/library/mageia))
 
 -	**Source of this description**:  

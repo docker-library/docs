@@ -1,1 +1,1 @@
-[members of the Apache Flink community](%%GITHUB-REPO%%)
+[Apache Flink](https://flink.apache.org/community.html#people)

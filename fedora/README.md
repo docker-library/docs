@@ -14,27 +14,25 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`26`](https://github.com/fedora-cloud/docker-brew-fedora/blob/035aa2a3970e4e10a9a6ae0b79322b882bfe50d3/x86_64/Dockerfile)
--	[`27`](https://github.com/fedora-cloud/docker-brew-fedora/blob/e1796b2753d5a5731de5915661e4639c4342b950/x86_64/Dockerfile)
--	[`28`](https://github.com/fedora-cloud/docker-brew-fedora/blob/aa106da2be30656a7ccb32b96f6788031ce8656f/x86_64/Dockerfile)
--	[`29`](https://github.com/fedora-cloud/docker-brew-fedora/blob/4dbc2ccd3b4d52258981eaf12043025054d53023/x86_64/Dockerfile)
--	[`30`](https://github.com/fedora-cloud/docker-brew-fedora/blob/ec092e1e4679f955d142b91f85ecd30a4f14a6ed/x86_64/Dockerfile)
--	[`latest`, `31`](https://github.com/fedora-cloud/docker-brew-fedora/blob/a1647ba32fcbf52a176aaef7347cdc808a1886e4/x86_64/Dockerfile)
--	[`32`](https://github.com/fedora-cloud/docker-brew-fedora/blob/5d08d3b763390c5b4a0feabec98171762aa0227f/x86_64/Dockerfile)
--	[`rawhide`, `33`](https://github.com/fedora-cloud/docker-brew-fedora/blob/0619ac2fc01c673d95e13dcdefb91c9e4149923f/x86_64/Dockerfile)
-
 # Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
-
--	**Where to file issues**:  
-	[Fedora's bugzilla page](https://bugzilla.redhat.com/enter_bug.cgi?product=Fedora) (choose `docker` as component and include details about image problems in the description) or [GitHub](https://github.com/fedora-cloud/docker-brew-fedora/issues)
 
 -	**Maintained by**:  
 	[Fedora Release Engineering](https://github.com/fedora-cloud/docker-brew-fedora)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+# Supported tags and respective `Dockerfile` links
+
+-	[`32`](https://github.com/fedora-cloud/docker-brew-fedora/blob/ddec1000ce5ba6f6d48b83092baa0931c71463d2/x86_64/Dockerfile)
+-	[`33`](https://github.com/fedora-cloud/docker-brew-fedora/blob/e3da24893ca1252df3336f9d2066d7078f274173/x86_64/Dockerfile)
+-	[`34`, `latest`](https://github.com/fedora-cloud/docker-brew-fedora/blob/46d8c9221562da5195fd41f8bff49d3f049a9757/x86_64/Dockerfile)
+-	[`rawhide`, `35`](https://github.com/fedora-cloud/docker-brew-fedora/blob/dbb2e4d43e7a3293107ce04923898fee8605bf77/x86_64/Dockerfile)
+
+# Quick reference (cont.)
+
+-	**Where to file issues**:  
+	[Fedora's bugzilla page](https://bugzilla.redhat.com/enter_bug.cgi?product=Fedora) (choose `docker` as component and include details about image problems in the description) or [GitHub](https://github.com/fedora-cloud/docker-brew-fedora/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/fedora/), [`arm32v7`](https://hub.docker.com/r/arm32v7/fedora/), [`arm64v8`](https://hub.docker.com/r/arm64v8/fedora/), [`ppc64le`](https://hub.docker.com/r/ppc64le/fedora/), [`s390x`](https://hub.docker.com/r/s390x/fedora/)
@@ -44,7 +42,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/fedora`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Ffedora)  
+	[official-images repo's `library/fedora` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Ffedora)  
 	[official-images repo's `library/fedora` file](https://github.com/docker-library/official-images/blob/master/library/fedora) ([history](https://github.com/docker-library/official-images/commits/master/library/fedora))
 
 -	**Source of this description**:  

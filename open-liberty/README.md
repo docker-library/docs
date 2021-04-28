@@ -14,25 +14,39 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`kernel`, `kernel-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/e71e40aaa6bee15e5bd26f01176ffd249493b6b8/releases/latest/kernel/Dockerfile.ubuntu.adoptopenjdk8)
--	[`full`, `full-java8-openj9`, `latest`](https://github.com/OpenLiberty/ci.docker/blob/e71e40aaa6bee15e5bd26f01176ffd249493b6b8/releases/latest/full/Dockerfile.ubuntu.adoptopenjdk8)
--	[`20.0.0.3-kernel-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/e71e40aaa6bee15e5bd26f01176ffd249493b6b8/releases/20.0.0.3/kernel/Dockerfile.ubuntu.adoptopenjdk8)
--	[`20.0.0.3-full-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/e71e40aaa6bee15e5bd26f01176ffd249493b6b8/releases/20.0.0.3/full/Dockerfile.ubuntu.adoptopenjdk8)
--	[`19.0.0.12-kernel-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/e71e40aaa6bee15e5bd26f01176ffd249493b6b8/releases/19.0.0.12/kernel/Dockerfile.ubuntu.adoptopenjdk8)
--	[`19.0.0.12-full-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/e71e40aaa6bee15e5bd26f01176ffd249493b6b8/releases/19.0.0.12/full/Dockerfile.ubuntu.adoptopenjdk8)
-
 # Quick reference
+
+-	**Maintained by**:  
+	[the Open Liberty Community](https://github.com/OpenLiberty/ci.docker)
 
 -	**Where to get help**:  
 	[the Open Liberty community](https://www.openliberty.io/community/)
 
+# Supported tags and respective `Dockerfile` links
+
+-	[`beta`](https://github.com/OpenLiberty/ci.docker/blob/a84c9e6b2adefcf1f8d830f533222b087874aefb/releases/latest/beta/Dockerfile.ubuntu.adoptopenjdk8)
+-	[`beta-java11`](https://github.com/OpenLiberty/ci.docker/blob/a84c9e6b2adefcf1f8d830f533222b087874aefb/releases/latest/beta/Dockerfile.ubuntu.adoptopenjdk11)
+-	[`kernel-slim`, `kernel-slim-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/a84c9e6b2adefcf1f8d830f533222b087874aefb/releases/latest/kernel-slim/Dockerfile.ubuntu.adoptopenjdk8)
+-	[`kernel-slim-java11-openj9`](https://github.com/OpenLiberty/ci.docker/blob/a84c9e6b2adefcf1f8d830f533222b087874aefb/releases/latest/kernel-slim/Dockerfile.ubuntu.adoptopenjdk11)
+-	[`full`, `full-java8-openj9`, `latest`](https://github.com/OpenLiberty/ci.docker/blob/a84c9e6b2adefcf1f8d830f533222b087874aefb/releases/latest/full/Dockerfile.ubuntu.adoptopenjdk8)
+-	[`full-java11-openj9`](https://github.com/OpenLiberty/ci.docker/blob/a84c9e6b2adefcf1f8d830f533222b087874aefb/releases/latest/full/Dockerfile.ubuntu.adoptopenjdk11)
+-	[`21.0.0.4-kernel-slim-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/a84c9e6b2adefcf1f8d830f533222b087874aefb/releases/21.0.0.4/kernel-slim/Dockerfile.ubuntu.adoptopenjdk8)
+-	[`21.0.0.4-kernel-slim-java11-openj9`](https://github.com/OpenLiberty/ci.docker/blob/a84c9e6b2adefcf1f8d830f533222b087874aefb/releases/21.0.0.4/kernel-slim/Dockerfile.ubuntu.adoptopenjdk11)
+-	[`21.0.0.4-full-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/a84c9e6b2adefcf1f8d830f533222b087874aefb/releases/21.0.0.4/full/Dockerfile.ubuntu.adoptopenjdk8)
+-	[`21.0.0.4-full-java11-openj9`](https://github.com/OpenLiberty/ci.docker/blob/a84c9e6b2adefcf1f8d830f533222b087874aefb/releases/21.0.0.4/full/Dockerfile.ubuntu.adoptopenjdk11)
+-	[`21.0.0.3-kernel-slim-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/a84c9e6b2adefcf1f8d830f533222b087874aefb/releases/21.0.0.3/kernel-slim/Dockerfile.ubuntu.adoptopenjdk8)
+-	[`21.0.0.3-kernel-slim-java11-openj9`](https://github.com/OpenLiberty/ci.docker/blob/a84c9e6b2adefcf1f8d830f533222b087874aefb/releases/21.0.0.3/kernel-slim/Dockerfile.ubuntu.adoptopenjdk11)
+-	[`21.0.0.3-full-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/a84c9e6b2adefcf1f8d830f533222b087874aefb/releases/21.0.0.3/full/Dockerfile.ubuntu.adoptopenjdk8)
+-	[`21.0.0.3-full-java11-openj9`](https://github.com/OpenLiberty/ci.docker/blob/a84c9e6b2adefcf1f8d830f533222b087874aefb/releases/21.0.0.3/full/Dockerfile.ubuntu.adoptopenjdk11)
+-	[`20.0.0.12-kernel-slim-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/a84c9e6b2adefcf1f8d830f533222b087874aefb/releases/20.0.0.12/kernel-slim/Dockerfile.ubuntu.adoptopenjdk8)
+-	[`20.0.0.12-kernel-slim-java11-openj9`](https://github.com/OpenLiberty/ci.docker/blob/a84c9e6b2adefcf1f8d830f533222b087874aefb/releases/20.0.0.12/kernel-slim/Dockerfile.ubuntu.adoptopenjdk11)
+-	[`20.0.0.12-full-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/a84c9e6b2adefcf1f8d830f533222b087874aefb/releases/20.0.0.12/full/Dockerfile.ubuntu.adoptopenjdk8)
+-	[`20.0.0.12-full-java11-openj9`](https://github.com/OpenLiberty/ci.docker/blob/a84c9e6b2adefcf1f8d830f533222b087874aefb/releases/20.0.0.12/full/Dockerfile.ubuntu.adoptopenjdk11)
+
+# Quick reference (cont.)
+
 -	**Where to file issues**:  
 	[https://github.com/OpenLiberty/ci.docker/issues](https://github.com/OpenLiberty/ci.docker/issues)
-
--	**Maintained by**:  
-	[the Open Liberty Community](https://github.com/OpenLiberty/ci.docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/open-liberty/), [`ppc64le`](https://hub.docker.com/r/ppc64le/open-liberty/), [`s390x`](https://hub.docker.com/r/s390x/open-liberty/)
@@ -42,7 +56,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/open-liberty`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fopen-liberty)  
+	[official-images repo's `library/open-liberty` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fopen-liberty)  
 	[official-images repo's `library/open-liberty` file](https://github.com/docker-library/official-images/blob/master/library/open-liberty) ([history](https://github.com/docker-library/official-images/commits/master/library/open-liberty))
 
 -	**Source of this description**:  
@@ -50,9 +64,9 @@ WARNING:
 
 # Overview
 
-The images in this repository contain Open Liberty. For more information about Open Liberty, see the [Open Liberty Website](https://openliberty.io/) site.
+All of the images in this repository use Ubuntu as the Operating System. For variants that use the Universal Base Image, please see [this repository](https://hub.docker.com/r/openliberty/open-liberty/).
 
-This repository contains OpenLiberty based on top of OpenJDK 8 Eclipse OpenJ9 with Ubuntu images only. See [here](https://hub.docker.com/r/openliberty/open-liberty) for Open Liberty based on Red Hat's Universal Base Image, which includes additional java options.
+For more information on these images please see our [GitHub repository](https://github.com/OpenLiberty/ci.docker#container-images).
 
 # Image User
 
@@ -99,12 +113,20 @@ Please note that this pattern will duplicate the docker layers for those artifac
 
 There are multiple tags available in this repository.
 
-The `kernel` image contains just the Liberty kernel and no additional runtime features. This image is the recommended basis for custom built images, so that they can contain only the features required for a specific application. For example, the following Dockerfile starts with this image, copies in the `server.xml` that lists the features required by the application, and then uses the `configure.sh` script to download those features from the online repository.
+The `kernel-slim` image contains just the Liberty kernel and no additional runtime features. This image is the recommended basis for custom built images, so that they can contain only the features required for a specific application. For example, the following Dockerfile starts with this image, copies in the `server.xml` that lists the features required by the application, and then uses the `features.sh` script to download those features from the online repository.
 
 ```dockerfile
-FROM open-liberty:kernel
-COPY --chown=1001:0  Sample1.war /config/dropins/
+FROM open-liberty:kernel-slim
+
+# Add server configuration
 COPY --chown=1001:0  server.xml /config/
+# This script will add the requested XML snippets to enable Liberty features and grow image to be fit-for-purpose using featureUtility.
+# Only available in 'kernel-slim'. The 'full' tag already includes all features for convenience.
+RUN features.sh
+
+# Add the application
+COPY --chown=1001:0  Sample1.war /config/dropins/
+# This script will add the requested server configurations, apply any interim fixes and populate caches to optimize runtime.
 RUN configure.sh
 ```
 
@@ -184,13 +206,15 @@ To elaborate these capabilities this section assumes the standalone Spring Boot 
 	FROM open-liberty:kernel as staging
 	COPY --chown=1001:0 hellospringboot.jar /staging/myFatApp.jar
 	COPY --chown=1001:0 server.xml /config/
-	RUN configure.sh && springBootUtility thin \
+	RUN springBootUtility thin \
 	   --sourceAppPath=/staging/myFatApp.jar \
 	   --targetThinAppPath=/staging/myThinApp.jar \
 	   --targetLibCachePath=/staging/lib.index.cache
 	FROM open-liberty:kernel
+	COPY --chown=1001:0 server.xml /config
 	COPY --from=staging /staging/lib.index.cache /lib.index.cache
 	COPY --from=staging /staging/myThinApp.jar /config/dropins/spring/myThinApp.jar
+	RUN configure.sh
 	```
 
 	For Spring Boot applications packaged with library dependencies that rarely change across continuous application updates, you can use the capabilities mentioned above to to share library caches across containers and to create even more efficient docker layers that leverage the docker build cache.
@@ -253,6 +277,18 @@ WebSphere Liberty is a commercial distribution of Open Liberty. There is an offi
 -	Use the `/config` folder for accessing the server configuration.
 -	Use the `/output` folder for accessing the server output.
 -	When adding your own SSL configuration use the `/config/configDropins/defaults/keystore.xml`.
+
+# Image Variants
+
+The `open-liberty` images come in many flavors, each designed for a specific use case.
+
+## `open-liberty:<version>`
+
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+## `open-liberty:<version>-slim`
+
+This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `open-liberty`. Unless you are working in an environment where *only* the `open-liberty` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
 
 # License
 

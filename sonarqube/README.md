@@ -14,23 +14,27 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`7.9.3-community`, `7.9-community`, `lts`](https://github.com/SonarSource/docker-sonarqube/blob/8e20fb49201cbf29bfdb152e08a38524afc26b15/7/community/Dockerfile)
--	[`8.3-community`, `8-community`, `community`, `latest`](https://github.com/SonarSource/docker-sonarqube/blob/8e20fb49201cbf29bfdb152e08a38524afc26b15/8/community/Dockerfile)
--	[`8.3-developer`, `8-developer`, `developer`](https://github.com/SonarSource/docker-sonarqube/blob/8e20fb49201cbf29bfdb152e08a38524afc26b15/8/developer/Dockerfile)
--	[`8.3-enterprise`, `8-enterprise`, `enterprise`](https://github.com/SonarSource/docker-sonarqube/blob/8e20fb49201cbf29bfdb152e08a38524afc26b15/8/enterprise/Dockerfile)
-
 # Quick reference
+
+-	**Maintained by**:  
+	[SonarSource](https://github.com/SonarSource/docker-sonarqube)
 
 -	**Where to get help**:  
 	[the SonarSource Community forum](https://community.sonarsource.com/tags/c/help/sq/docker), [the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
+# Supported tags and respective `Dockerfile` links
+
+-	[`7.9.6-community`, `7.9-community`, `lts`](https://github.com/SonarSource/docker-sonarqube/blob/ee0ecba92f006f8429b7071acfef13207b3f4ddc/7/community/Dockerfile)
+-	[`8.8.0-community`, `8.8-community`, `8-community`, `community`, `latest`](https://github.com/SonarSource/docker-sonarqube/blob/ee0ecba92f006f8429b7071acfef13207b3f4ddc/8/community/Dockerfile)
+-	[`8.8.0-developer`, `8.8-developer`, `8-developer`, `developer`](https://github.com/SonarSource/docker-sonarqube/blob/ee0ecba92f006f8429b7071acfef13207b3f4ddc/8/developer/Dockerfile)
+-	[`8.8.0-enterprise`, `8.8-enterprise`, `8-enterprise`, `enterprise`](https://github.com/SonarSource/docker-sonarqube/blob/ee0ecba92f006f8429b7071acfef13207b3f4ddc/8/enterprise/Dockerfile)
+-	[`8.8.0-datacenter-app`, `8.8-datacenter-app`, `8-datacenter-app`, `datacenter-app`](https://github.com/SonarSource/docker-sonarqube/blob/ee0ecba92f006f8429b7071acfef13207b3f4ddc/8/datacenter/app/Dockerfile)
+-	[`8.8.0-datacenter-search`, `8.8-datacenter-search`, `8-datacenter-search`, `datacenter-search`](https://github.com/SonarSource/docker-sonarqube/blob/ee0ecba92f006f8429b7071acfef13207b3f4ddc/8/datacenter/search/Dockerfile)
+
+# Quick reference (cont.)
+
 -	**Where to file issues**:  
 	[https://github.com/SonarSource/docker-sonarqube/issues](https://github.com/SonarSource/docker-sonarqube/issues)
-
--	**Maintained by**:  
-	[SonarSource](https://github.com/SonarSource/docker-sonarqube)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/sonarqube/)
@@ -40,7 +44,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/sonarqube`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fsonarqube)  
+	[official-images repo's `library/sonarqube` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fsonarqube)  
 	[official-images repo's `library/sonarqube` file](https://github.com/docker-library/official-images/blob/master/library/sonarqube) ([history](https://github.com/docker-library/official-images/commits/master/library/sonarqube))
 
 -	**Source of this description**:  
@@ -54,7 +58,7 @@ WARNING:
 
 # How to use this image
 
-Here you'll find the Docker images for the Community Edition, Developer Edition, and Enterprise Edition of SonarQube.
+Here you'll find the Docker images for the Community Edition, Developer Edition, Enterprise Edition, and DataCenter Edition of SonarQube.
 
 ## Docker Host Requirements
 
@@ -79,7 +83,7 @@ To quickly run a demo instance, see Using Docker on the [Get Started in Two Minu
 
 By default, the image will use an embedded H2 database that is not suited for production.
 
-> **Warning:** Only a single instance of SonarQube can connect to a database schema. If you're using a Docker Swarm or Kubernetes, make sure that multiple SonarQube instances are never running on the same database schema simultaneously. This will cause SonarQube to behave unpredictably and data will be corrupted. There is no safeguard until [SONAR-10362](https://jira.sonarsource.com/browse/SONAR-10362).
+> **Warning:** Only a single instance of SonarQube can connect to a database schema. If you're using a Docker Swarm or Kubernetes, make sure that multiple SonarQube instances are never running on the same database schema simultaneously. This will cause SonarQube to behave unpredictably and data will be corrupted. There is no safeguard until [SONAR-10362](https://jira.sonarsource.com/browse/SONAR-10362). The Datacenter Edition has the same limitation in that only one cluster can connect to one database schema at the same time.
 
 Set up a database by following the "Installing the Database" section of https://docs.sonarqube.org/latest/setup/install-server/.
 
@@ -90,13 +94,15 @@ We recommend creating volumes for the following directories:
 -	`/opt/sonarqube/conf`: **for Version 7.9.x only**, configuration files, such as `sonar.properties`.
 -	`/opt/sonarqube/data`: data files, such as the embedded H2 database and Elasticsearch indexes
 -	`/opt/sonarqube/logs`: contains SonarQube logs about access, web process, CE process, Elasticsearch logs
--	`/opt/sonarqube/extensions`: plugins, such as language analyzers
+-	`/opt/sonarqube/extensions`: for 3rd party plugins
 
 > **Warning:** You cannot use the same volumes on multiple instances of SonarQube.
 
 ## First Installation
 
 For installation instructions, see Installing the Server from the Docker Image on the [Install the Server](https://docs.sonarqube.org/latest/setup/install-server/) page.
+
+To run a cluster with the DataCenter Edition, please refer to Installing SonarQube from the Docker Image on the [Install the Server as a Cluster](https://docs.sonarqube.org/latest/setup/install-cluster/) page.
 
 ## Upgrading
 
@@ -134,7 +140,7 @@ The administration guide can be found [here](https://redirect.sonarsource.com/do
 
 # License
 
-View [license information](http://www.gnu.org/licenses/lgpl.txt) for the software contained in this image.
+SonarQube Community Edition is licensed under [GNU Lesser General Public License, Version 3.0](http://www.gnu.org/licenses/lgpl.txt). SonarQube Developer, Enterprise, and Data Center Editions are licensed under [SonarSource Terms and Conditions](https://www.sonarsource.com/docs/sonarsource_terms_and_conditions.pdf).
 
 As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 

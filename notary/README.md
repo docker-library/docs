@@ -14,21 +14,23 @@ WARNING:
 
 -->
 
+# Quick reference
+
+-	**Maintained by**:  
+	[Docker, Inc.](https://github.com/docker/notary-official-images)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`server-0.6.1-2`, `server`](https://github.com/docker/notary-official-images/blob/278bbe63ea6bfb67974fe969c77e02049fe47ab7/notary-server/Dockerfile)
 -	[`signer-0.6.1-2`, `signer`](https://github.com/docker/notary-official-images/blob/278bbe63ea6bfb67974fe969c77e02049fe47ab7/notary-signer/Dockerfile)
 
-# Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+# Quick reference (cont.)
 
 -	**Where to file issues**:  
 	[https://github.com/docker/notary-official-images/issues](https://github.com/docker/notary-official-images/issues)
-
--	**Maintained by**:  
-	[Docker, Inc.](https://github.com/docker/notary-official-images)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/notary/), [`arm32v6`](https://hub.docker.com/r/arm32v6/notary/), [`arm64v8`](https://hub.docker.com/r/arm64v8/notary/), [`i386`](https://hub.docker.com/r/i386/notary/), [`ppc64le`](https://hub.docker.com/r/ppc64le/notary/), [`s390x`](https://hub.docker.com/r/s390x/notary/)
@@ -38,7 +40,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/notary`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fnotary)  
+	[official-images repo's `library/notary` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fnotary)  
 	[official-images repo's `library/notary` file](https://github.com/docker-library/official-images/blob/master/library/notary) ([history](https://github.com/docker-library/official-images/commits/master/library/notary))
 
 -	**Source of this description**:  

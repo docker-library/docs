@@ -14,12 +14,40 @@ WARNING:
 
 -->
 
+# Quick reference
+
+-	**Maintained by**:  
+	[the Swift Community](https://github.com/apple/swift-docker)
+
+-	**Where to get help**:  
+	[Swift Docker Community Forums](https://forums.swift.org/c/server/docker)
+
 # Supported tags and respective `Dockerfile` links
 
--	[`5.2.2`, `5.2`, `5.2.2-bionic`, `5.2-bionic`, `bionic`, `latest`](https://github.com/apple/swift-docker/blob/2aa4d892e95c04321810beda924e484356eee58a/5.2/ubuntu/18.04/Dockerfile)
--	[`5.2.2-xenial`, `5.2-xenial`, `xenial`](https://github.com/apple/swift-docker/blob/2aa4d892e95c04321810beda924e484356eee58a/5.2/ubuntu/16.04/Dockerfile)
--	[`5.2.2-slim`, `5.2-slim`, `5.2.2-bionic-slim`, `5.2-bionic-slim`, `bionic-slim`, `slim`](https://github.com/apple/swift-docker/blob/2aa4d892e95c04321810beda924e484356eee58a/5.2/ubuntu/18.04/slim/Dockerfile)
--	[`5.2.2-xenial-slim`, `5.2-xenial-slim`, `xenial-slim`](https://github.com/apple/swift-docker/blob/2aa4d892e95c04321810beda924e484356eee58a/5.2/ubuntu/16.04/slim/Dockerfile)
+-	[`5.3.3`, `5.3`, `5.3.3-bionic`, `5.3-bionic`, `bionic`, `latest`](https://github.com/apple/swift-docker/blob/78fb43bb44c727704436dd05bd4cc586c1e11aca/5.3/ubuntu/18.04/Dockerfile)
+-	[`5.3.3-xenial`, `5.3-xenial`, `xenial`](https://github.com/apple/swift-docker/blob/78fb43bb44c727704436dd05bd4cc586c1e11aca/5.3/ubuntu/16.04/Dockerfile)
+-	[`5.3.3-slim`, `5.3-slim`, `5.3.3-bionic-slim`, `5.3-bionic-slim`, `bionic-slim`, `slim`](https://github.com/apple/swift-docker/blob/78fb43bb44c727704436dd05bd4cc586c1e11aca/5.3/ubuntu/18.04/slim/Dockerfile)
+-	[`5.3.3-xenial-slim`, `5.3-xenial-slim`, `xenial-slim`](https://github.com/apple/swift-docker/blob/78fb43bb44c727704436dd05bd4cc586c1e11aca/5.3/ubuntu/16.04/slim/Dockerfile)
+-	[`5.3.3-focal-slim`, `5.3-focal-slim`, `focal-slim`](https://github.com/apple/swift-docker/blob/78fb43bb44c727704436dd05bd4cc586c1e11aca/5.3/ubuntu/20.04/slim/Dockerfile)
+-	[`5.3.3-focal`, `5.3-focal`, `focal`](https://github.com/apple/swift-docker/blob/78fb43bb44c727704436dd05bd4cc586c1e11aca/5.3/ubuntu/20.04/Dockerfile)
+-	[`5.3.3-amazonlinux2`, `5.3-amazonlinux2`, `amazonlinux2`](https://github.com/apple/swift-docker/blob/78fb43bb44c727704436dd05bd4cc586c1e11aca/5.3/amazonlinux/2/Dockerfile)
+-	[`5.3.3-amazonlinux2-slim`, `5.3-amazonlinux2-slim`, `amazonlinux2-slim`](https://github.com/apple/swift-docker/blob/78fb43bb44c727704436dd05bd4cc586c1e11aca/5.3/amazonlinux/2/slim/Dockerfile)
+-	[`5.3.3-centos8`, `5.3-centos8`, `centos8`](https://github.com/apple/swift-docker/blob/78fb43bb44c727704436dd05bd4cc586c1e11aca/5.3/centos/8/Dockerfile)
+-	[`5.3.3-centos8-slim`, `5.3-centos8-slim`, `centos8-slim`](https://github.com/apple/swift-docker/blob/78fb43bb44c727704436dd05bd4cc586c1e11aca/5.3/centos/8/slim/Dockerfile)
+-	[`5.3.3-centos7`, `5.3-centos7`, `centos7`](https://github.com/apple/swift-docker/blob/78fb43bb44c727704436dd05bd4cc586c1e11aca/5.3/centos/7/Dockerfile)
+-	[`5.3.3-centos7-slim`, `5.3-centos7-slim`, `centos7-slim`](https://github.com/apple/swift-docker/blob/78fb43bb44c727704436dd05bd4cc586c1e11aca/5.3/centos/7/slim/Dockerfile)
+-	[`5.2.5`, `5.2`, `5.2.5-bionic`, `5.2-bionic`](https://github.com/apple/swift-docker/blob/d58282b54afb6192de97d9cad973d2d2cc928dd5/5.2/ubuntu/18.04/Dockerfile)
+-	[`5.2.5-xenial`, `5.2-xenial`](https://github.com/apple/swift-docker/blob/d58282b54afb6192de97d9cad973d2d2cc928dd5/5.2/ubuntu/16.04/Dockerfile)
+-	[`5.2.5-slim`, `5.2-slim`, `5.2.5-bionic-slim`, `5.2-bionic-slim`](https://github.com/apple/swift-docker/blob/d58282b54afb6192de97d9cad973d2d2cc928dd5/5.2/ubuntu/18.04/slim/Dockerfile)
+-	[`5.2.5-xenial-slim`, `5.2-xenial-slim`](https://github.com/apple/swift-docker/blob/d58282b54afb6192de97d9cad973d2d2cc928dd5/5.2/ubuntu/16.04/slim/Dockerfile)
+-	[`5.2.5-focal-slim`, `5.2-focal-slim`](https://github.com/apple/swift-docker/blob/d58282b54afb6192de97d9cad973d2d2cc928dd5/5.2/ubuntu/20.04/slim/Dockerfile)
+-	[`5.2.5-focal`, `5.2-focal`](https://github.com/apple/swift-docker/blob/d58282b54afb6192de97d9cad973d2d2cc928dd5/5.2/ubuntu/20.04/Dockerfile)
+-	[`5.2.5-amazonlinux2`, `5.2-amazonlinux2`](https://github.com/apple/swift-docker/blob/d58282b54afb6192de97d9cad973d2d2cc928dd5/5.2/amazonlinux/2/Dockerfile)
+-	[`5.2.5-amazonlinux2-slim`, `5.2-amazonlinux2-slim`](https://github.com/apple/swift-docker/blob/d58282b54afb6192de97d9cad973d2d2cc928dd5/5.2/amazonlinux/2/slim/Dockerfile)
+-	[`5.2.5-centos8`, `5.2-centos8`](https://github.com/apple/swift-docker/blob/c0daa8c7a96e310e20c4b02bbfaf600f2d92eda9/5.2/centos/8/Dockerfile)
+-	[`5.2.5-centos8-slim`, `5.2-centos8-slim`](https://github.com/apple/swift-docker/blob/c0daa8c7a96e310e20c4b02bbfaf600f2d92eda9/5.2/centos/8/slim/Dockerfile)
+-	[`5.2.5-centos7`, `5.2-centos7`](https://github.com/apple/swift-docker/blob/d58282b54afb6192de97d9cad973d2d2cc928dd5/5.2/centos/7/Dockerfile)
+-	[`5.2.5-centos7-slim`, `5.2-centos7-slim`](https://github.com/apple/swift-docker/blob/d58282b54afb6192de97d9cad973d2d2cc928dd5/5.2/centos/7/slim/Dockerfile)
 -	[`5.1.5`, `5.1`, `5.1.5-bionic`, `5.1-bionic`](https://github.com/apple/swift-docker/blob/05538e13a3015675d83e2553cdce5d1d67e17235/5.1/ubuntu/18.04/Dockerfile)
 -	[`5.1.5-xenial`, `5.1-xenial`](https://github.com/apple/swift-docker/blob/05538e13a3015675d83e2553cdce5d1d67e17235/5.1/ubuntu/16.04/Dockerfile)
 -	[`5.1.5-slim`, `5.1-slim`, `5.1.5-bionic-sim`, `5.1-bionic-slim`](https://github.com/apple/swift-docker/blob/05538e13a3015675d83e2553cdce5d1d67e17235/5.1/ubuntu/18.04/slim/Dockerfile)
@@ -32,16 +60,10 @@ WARNING:
 -	[`4.1.3`, `4.1`](https://github.com/apple/swift-docker/blob/34aa283f9b3473ab22b2282f71773781b121af19/4.1/Dockerfile)
 -	[`4.0.3`, `4.0`](https://github.com/apple/swift-docker/blob/34aa283f9b3473ab22b2282f71773781b121af19/4.0/Dockerfile)
 
-# Quick reference
-
--	**Where to get help**:  
-	[Swift Docker Community Forums](https://forums.swift.org/c/server/docker)
+# Quick reference (cont.)
 
 -	**Where to file issues**:  
 	[https://bugs.swift.org](https://bugs.swift.org) Component: Docker
-
--	**Maintained by**:  
-	[the Swift Community](https://github.com/apple/swift-docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/swift/)
@@ -51,7 +73,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/swift`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fswift)  
+	[official-images repo's `library/swift` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fswift)  
 	[official-images repo's `library/swift` file](https://github.com/docker-library/official-images/blob/master/library/swift) ([history](https://github.com/docker-library/official-images/commits/master/library/swift))
 
 -	**Source of this description**:  
@@ -114,7 +136,7 @@ The `swift` images come in many flavors, each designed for a specific use case.
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like bionic or xenial in them. These are the suite code names for releases of [Ubuntu](https://wiki.ubuntu.com/Releases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Ubuntu.
+Some of these tags may have names like bionic, focal, or xenial in them. These are the suite code names for releases of [Ubuntu](https://wiki.ubuntu.com/Releases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Ubuntu.
 
 ## `swift:<version>-slim`
 

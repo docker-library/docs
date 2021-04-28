@@ -14,21 +14,24 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`7.9.5`, `7.9`](https://github.com/Bonitasoft-Community/docker_bonita/blob/b58b05d989055ca3521fc92211d10ff640b4028f/7.9/Dockerfile)
--	[`7.10.4`, `7.10`, `latest`](https://github.com/Bonitasoft-Community/docker_bonita/blob/c25c0b161fe2f5ec620122822317e4985cc3b6f2/7.10/Dockerfile)
-
 # Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
-
--	**Where to file issues**:  
-	[https://github.com/Bonitasoft-Community/docker_bonita/issues](https://github.com/Bonitasoft-Community/docker_bonita/issues)
 
 -	**Maintained by**:  
 	[Bonitasoft Community](https://github.com/Bonitasoft-Community/docker_bonita)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+# Supported tags and respective `Dockerfile` links
+
+-	[`7.10.6`, `7.10`](https://github.com/Bonitasoft-Community/docker_bonita/blob/e6f9f1a5e57c35bbd833c9441a639f326dffb7d5/7.10/Dockerfile)
+-	[`7.11.4`, `7.11`](https://github.com/bonitasoft/bonita-distrib/blob/231024c8290a9aa31a45b758a0765a684c21ed21/docker/Dockerfile)
+-	[`2021.1`, `7.12.1`, `7.12`, `latest`](https://github.com/bonitasoft/bonita-distrib/blob/c9b816249504017bb3418252bf58ec9d4fc3e86e/docker/Dockerfile)
+
+# Quick reference (cont.)
+
+-	**Where to file issues**:  
+	[https://github.com/Bonitasoft-Community/docker_bonita/issues](https://github.com/Bonitasoft-Community/docker_bonita/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/bonita/), [`arm64v8`](https://hub.docker.com/r/arm64v8/bonita/), [`ppc64le`](https://hub.docker.com/r/ppc64le/bonita/)
@@ -38,7 +41,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/bonita`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fbonita)  
+	[official-images repo's `library/bonita` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fbonita)  
 	[official-images repo's `library/bonita` file](https://github.com/docker-library/official-images/blob/master/library/bonita) ([history](https://github.com/docker-library/official-images/commits/master/library/bonita))
 
 -	**Source of this description**:  
@@ -60,7 +63,7 @@ Bonita (called Bonita BPM till 7.5) is an open-source business process managemen
 $ docker run --name bonita -d -p 8080:8080 bonita
 ```
 
-This will start a container running [Bonita runtime](https://documentation.bonitasoft.com/bonita/7.10/tomcat-bundle): a Tomcat bundle with Bonita Engine + Bonita Portal. With no environment variables specified, it's as like if you have launched the bundle on your host using startup.{sh|bat} (with security hardening on REST and HTTP APIs, cf Security part). Bonita uses a H2 database here.
+This will start a container running [Bonita runtime](https://documentation.bonitasoft.com/bonita/2021.1/tomcat-bundle): a Tomcat bundle with Bonita Engine + Bonita Portal. With no environment variables specified, it's as if you have launched the bundle on your host using startup.{sh|bat} (with security hardening on REST and HTTP APIs, cf Security part). Bonita uses a H2 database here.
 
 You can access the Bonita Portal on http://localhost:8080/bonita and login using the default credentials: install / install
 
@@ -70,7 +73,7 @@ You can access the Bonita Portal on http://localhost:8080/bonita and login using
 
 PostgreSQL is the recommended database.
 
-[Set max_prepared_transactions to 100](https://documentation.bonitasoft.com/bonita/7.10/database-configuration#toc5):
+[Set max_prepared_transactions to 100](https://documentation.bonitasoft.com/bonita/2021.1/database-configuration#_postgresql):
 
 ```console
 $ mkdir -p custom_postgres
@@ -93,9 +96,9 @@ $ docker run --name bonita_postgres --link mydbpostgres:postgres -d -p 8080:8080
 
 ### MySQL
 
-There are known issues with the management of XA transactions by MySQL engine and driver: see MySQL bugs [17343](http://bugs.mysql.com/bug.php?id=17343) and [12161](http://bugs.mysql.com/bug.php?id=12161) for more details. Thus, using MySQL database in a production environment is not recommended.
+There are known issues with the management of XA transactions by MySQL engine and driver: see MySQL bug [17343](http://bugs.mysql.com/bug.php?id=17343)
 
-[Increase the packet size](https://documentation.bonitasoft.com/bonita/7.10/database-configuration#toc5) which is set by default to 1M:
+[Increase the packet size](https://documentation.bonitasoft.com/bonita/2021.1/database-configuration#_maximum_packet_size) which is set by default to 1M:
 
 ```console
 $ mkdir -p custom_mysql
@@ -135,7 +138,7 @@ version: '3'
 
 services:
   db:
-    image: postgres:9.3
+    image: postgres:11
     environment:
       POSTGRES_PASSWORD: example
     restart: always
@@ -177,7 +180,7 @@ services:
         exec /opt/files/startup.sh
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/d7f952b15103e355727ad55d428e55c84383aca9/bonita/stack.yml)
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/57311a9e6774c0947f999f7bfdbe23e24da00a82/bonita/stack.yml)
 
 Run `docker stack deploy -c stack.yml bonita` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
 
@@ -265,9 +268,9 @@ The `-v /my/own/datadir:/opt/bonita` part of the command mounts the `/my/own/dat
 
 		```console
 		cd bonita_migration
-		wget https://release.ow2.org/bonita/bonita-migration-distrib-2.50.0.zip
+		wget https://github.com/bonitasoft/bonita-platform-releases/releases/download/2021.1/bonita-migration-distrib-2.54.0.zip
 		wget https://download.forge.ow2.org/bonita/BonitaBPMCommunity-7.2.4-Tomcat-7.0.67.zip
-		unzip bonita-migration-distrib-2.50.0.zip
+		unzip bonita-migration-distrib-2.54.0.zip
 		unzip BonitaBPMCommunity-7.2.4-Tomcat-7.0.67.zip
 		```
 
@@ -282,14 +285,14 @@ The `-v /my/own/datadir:/opt/bonita` part of the command mounts the `/my/own/dat
 
 		```console
 		cd bonita_migration
-		wget https://release.ow2.org/bonita/bonita-migration-distrib-2.50.0.zip
-		unzip bonita-migration-distrib-2.50.0.zip
+		wget https://github.com/bonitasoft/bonita-platform-releases/releases/download/2021.1/bonita-migration-distrib-2.54.0.zip
+		unzip bonita-migration-distrib-2.54.0.zip
 		```
 
 -	Configure the migration tool
 
 	```console
-	$ cd bonita-migration-distrib-2.50.0
+	$ cd bonita-migration-distrib-2.54.0
 	```
 
 	edit the migration tool config to point towards the copy of bonita home and db
@@ -326,17 +329,17 @@ The `-v /my/own/datadir:/opt/bonita` part of the command mounts the `/my/own/dat
 	-	If >= 7.3.0
 
 	```console
-	$ docker run --name=bonita_7.10.4_postgres --link mydbpostgres:postgres -e "DB_NAME=newbonitadb" -e "DB_USER=newbonitauser" -e "DB_PASS=newbonitapass" -d -p 8081:8080 bonita:7.10.4
+	$ docker run --name=bonita_7.12.1_postgres --link mydbpostgres:postgres -e "DB_NAME=newbonitadb" -e "DB_USER=newbonitauser" -e "DB_PASS=newbonitapass" -d -p 8081:8080 bonita:7.12.1
 	```
 
 -	Reapply specific configuration if needed, for example with a version >= 7.3.0 :
 
 	```console
-	$ docker exec -ti bonita_7.10.4_postgres /bin/bash
+	$ docker exec -ti bonita_7.12.1_postgres /bin/bash
 	```
 
 	```console
-	$ cd /opt/bonita/BonitaCommunity-7.10.4/setup
+	$ cd /opt/bonita/BonitaCommunity-2021.1/setup
 	$ ./setup.sh pull
 	$ TENANT_LOGIN=tech_user
 	$ TENANT_PASSWORD=secret
@@ -356,14 +359,14 @@ The `-v /my/own/datadir:/opt/bonita` part of the command mounts the `/my/own/dat
 	```
 
 	```console
-	$ docker restart bonita_7.10.4_postgres
+	$ docker restart bonita_7.12.1_postgres
 	```
 
 -	Specific consideration regarding migration to Java 11 in Bonita 7.9
 
 	Bonita 7.9 docker image runs with Java 11. If you are migrating from an earlier version which runs Java 8, you should validate on a test environment that your custom code is compatible. Aside from just code incompatibility, special attention has to be given to the dependencies of the custom code, as they might not work in Java 11.
 
-For more details regarding Bonita migration, see the [documentation](https://documentation.bonitasoft.com/bonita/7.10/migrate-from-an-earlier-version-of-bonita-bpm).
+For more details regarding Bonita migration, see the [documentation](https://documentation.bonitasoft.com/bonita/2021.1/migrate-from-an-earlier-version-of-bonita-bpm).
 
 ## Security
 
@@ -371,11 +374,11 @@ This Docker image activates both static and dynamic authorization checks by defa
 
 -	REST API authorization
 
-	-	[Static authorization checking](https://documentation.bonitasoft.com/bonita/7.10/rest-api-authorization#toc1)
+	-	[Static authorization checking](https://documentation.bonitasoft.com/bonita/2021.1/rest-api-authorization#static_authorization)
 
-	-	[Dynamic authorization checking](https://documentation.bonitasoft.com/bonita/7.10/rest-api-authorization#toc2)
+	-	[Dynamic authorization checking](https://documentation.bonitasoft.com/bonita/2021.1/rest-api-authorization#dynamic_authorization)
 
--	[HTTP API](https://documentation.bonitasoft.com/bonita/7.10/rest-api-authorization#toc10)
+-	[HTTP API](https://documentation.bonitasoft.com/bonita/2021.1/rest-api-authorization#_activating_and_deactivating_authorization)
 
 For specific needs you can override this behavior by setting HTTP_API to true and REST_API_DYN_AUTH_CHECKS to false:
 
@@ -389,7 +392,7 @@ When you start the `bonita` image, you can adjust the configuration of the Bonit
 
 ### `PLATFORM_PASSWORD`
 
-This environment variable [is recommended](https://documentation.bonitasoft.com/bonita/7.10/tomcat-bundle#toc3) for you to use the Bonita image. It sets the platform administrator password for Bonita. If it is not specified, the default password `platform` will be used.
+This environment variable [is recommended](https://documentation.bonitasoft.com/bonita/2021.1/tomcat-bundle#_platform_administrator) for you to use the Bonita image. It sets the platform administrator password for Bonita. If it is not specified, the default password `platform` will be used.
 
 ### `PLATFORM_LOGIN`
 
@@ -397,7 +400,7 @@ This optional environment variable is used in conjunction with `PLATFORM_PASSWOR
 
 ### `TENANT_PASSWORD`
 
-This environment variable [is recommended](https://documentation.bonitasoft.com/bonita/7.10/tomcat-bundle#toc3) for you to use the Bonita image. It sets the tenant administrator password for Bonita. If it is not specified, the default password `install` will be used.
+This environment variable [is recommended](https://documentation.bonitasoft.com/bonita/2021.1/tomcat-bundle#_tenant_administrator) for you to use the Bonita image. It sets the tenant administrator password for Bonita. If it is not specified, the default password `install` will be used.
 
 ### `TENANT_LOGIN`
 
@@ -405,7 +408,7 @@ This optional environment variable is used in conjunction with `TENANT_PASSWORD`
 
 ### `REST_API_DYN_AUTH_CHECKS`
 
-This optional environment variable is used to enable/disable [dynamic authorization checking](https://documentation.bonitasoft.com/bonita/7.10/rest-api-authorization#toc2) on Bonita REST API. The default value is `true`, which will activate dynamic authorization checking.
+This optional environment variable is used to enable/disable [dynamic authorization checking](https://documentation.bonitasoft.com/bonita/2021.1/rest-api-authorization#dynamic_authorization) on Bonita REST API. The default value is `true`, which will activate dynamic authorization checking.
 
 ### `HTTP_API`
 
@@ -439,7 +442,7 @@ These variables are used in conjunction to create a new user, set that user's pa
 
 ### `BIZ_DB_NAME`, `BIZ_DB_USER`, `BIZ_DB_PASS`
 
-These variables are used in conjunction to create a new user, set that user's password and create the `bonita` [business database](https://documentation.bonitasoft.com/bonita/7.10/define-and-deploy-the-bdm#toc1).
+These variables are used in conjunction to create a new user, set that user's password and create the `bonita` [business database](https://documentation.bonitasoft.com/bonita/2021.1/define-and-deploy-the-bdm#_business_data_model_bdm).
 
 `BIZ_DB_NAME` default value is `businessdb`.
 
@@ -480,7 +483,7 @@ For example, you can increase the log level :
 ```console
 $ mkdir -p custom_bonita
 $ echo '#!/bin/bash' > custom_bonita/bonita.sh
-$ echo 'sed -i "s/^org.bonitasoft.level = WARNING$/org.bonitasoft.level = FINEST/" /opt/bonita/BonitaCommunity-7.10.4/server/conf/logging.properties' >> custom_bonita/bonita.sh
+$ echo 'sed -i "s/^org.bonitasoft.level = WARNING$/org.bonitasoft.level = FINEST/" /opt/bonita/BonitaCommunity-2021.1/server/conf/logging.properties' >> custom_bonita/bonita.sh
 $ chmod +x custom_bonita/bonita.sh
 
 $ docker run --name bonita_custom -v "$PWD"/custom_bonita/:/opt/custom-init.d -d -p 8080:8080 bonita
@@ -498,7 +501,7 @@ Note: There are several ways to check the `bonita` logs. Till Bonita 7.8, one of
 
 ```console
 $ docker exec -ti bonita_custom /bin/bash
-tail -f /opt/bonita/BonitaCommunity-7.10.4/server/logs/bonita.`date +%Y-%m-%d`.log
+tail -f /opt/bonita/BonitaCommunity-2021.1/server/logs/bonita.`date +%Y-%m-%d`.log
 ```
 
 Since Bonita 7.9 bonita logs are redirected towards standard output and directly accessible using

@@ -14,20 +14,22 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`7`, `7.6.1810`, `latest`](https://github.com/nealef/clefos/blob/58fdf15e6116ee402029f005b2561b3f23bd6a6d/Dockerfile)
-
 # Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
-
--	**Where to file issues**:  
-	[GitHub](https://github.com/nealef/clefos/issues)
 
 -	**Maintained by**:  
 	[The ClefOS Project](https://github.com/nealef/clefos)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+# Supported tags and respective `Dockerfile` links
+
+-	[`7`, `7.7.1908`, `latest`](https://github.com/nealef/clefos/blob/1aa7d3771b2ced8b8b5cdc9a1a1752d93c56a60e/Dockerfile)
+
+# Quick reference (cont.)
+
+-	**Where to file issues**:  
+	[GitHub](https://github.com/nealef/clefos/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`s390x`](https://hub.docker.com/r/s390x/clefos/)
@@ -37,7 +39,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/clefos`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fclefos)  
+	[official-images repo's `library/clefos` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fclefos)  
 	[official-images repo's `library/clefos` file](https://github.com/docker-library/official-images/blob/master/library/clefos) ([history](https://github.com/docker-library/official-images/commits/master/library/clefos))
 
 -	**Source of this description**:  

@@ -14,39 +14,41 @@ WARNING:
 
 -->
 
+# Quick reference
+
+-	**Maintained by**:  
+	[the NATS Project](https://github.com/nats-io/nats-docker)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
 (See ["What's the difference between 'Shared' and 'Simple' tags?" in the FAQ](https://github.com/docker-library/faq#whats-the-difference-between-shared-and-simple-tags).)
 
 ## Simple Tags
 
--	[`2.1.6-alpine3.11`, `2.1-alpine3.11`, `2-alpine3.11`, `alpine3.11`, `2.1.6-alpine`, `2.1-alpine`, `2-alpine`, `alpine`](https://github.com/nats-io/nats-docker/blob/c8c9f5e84405f71d3300d42879de67c3f32f4b98/2.1.6/alpine3.11/Dockerfile)
--	[`2.1.6-scratch`, `2.1-scratch`, `2-scratch`, `scratch`, `2.1.6-linux`, `2.1-linux`, `2-linux`, `linux`](https://github.com/nats-io/nats-docker/blob/c8c9f5e84405f71d3300d42879de67c3f32f4b98/2.1.6/scratch/Dockerfile)
--	[`2.1.6-windowsservercore-1809`, `2.1-windowsservercore-1809`, `2-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/nats-io/nats-docker/blob/c8c9f5e84405f71d3300d42879de67c3f32f4b98/2.1.6/windowsservercore-1809/Dockerfile)
--	[`2.1.6-nanoserver-1809`, `2.1-nanoserver-1809`, `2-nanoserver-1809`, `nanoserver-1809`](https://github.com/nats-io/nats-docker/blob/c8c9f5e84405f71d3300d42879de67c3f32f4b98/2.1.6/nanoserver-1809/Dockerfile)
--	[`2.1.6-windowsservercore-ltsc2016`, `2.1-windowsservercore-ltsc2016`, `2-windowsservercore-ltsc2016`, `windowsservercore-ltsc2016`](https://github.com/nats-io/nats-docker/blob/c8c9f5e84405f71d3300d42879de67c3f32f4b98/2.1.6/windowsservercore-ltsc2016/Dockerfile)
+-	[`2.2.2-alpine3.13`, `2.2-alpine3.13`, `2-alpine3.13`, `alpine3.13`, `2.2.2-alpine`, `2.2-alpine`, `2-alpine`, `alpine`](https://github.com/nats-io/nats-docker/blob/ecc356712449b64f035dadb74907a9eda986044e/2.2.2/alpine3.13/Dockerfile)
+-	[`2.2.2-scratch`, `2.2-scratch`, `2-scratch`, `scratch`, `2.2.2-linux`, `2.2-linux`, `2-linux`, `linux`](https://github.com/nats-io/nats-docker/blob/ecc356712449b64f035dadb74907a9eda986044e/2.2.2/scratch/Dockerfile)
+-	[`2.2.2-windowsservercore-1809`, `2.2-windowsservercore-1809`, `2-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/nats-io/nats-docker/blob/ecc356712449b64f035dadb74907a9eda986044e/2.2.2/windowsservercore-1809/Dockerfile)
+-	[`2.2.2-nanoserver-1809`, `2.2-nanoserver-1809`, `2-nanoserver-1809`, `nanoserver-1809`](https://github.com/nats-io/nats-docker/blob/ecc356712449b64f035dadb74907a9eda986044e/2.2.2/nanoserver-1809/Dockerfile)
+-	[`2.2.2-windowsservercore-ltsc2016`, `2.2-windowsservercore-ltsc2016`, `2-windowsservercore-ltsc2016`, `windowsservercore-ltsc2016`](https://github.com/nats-io/nats-docker/blob/ecc356712449b64f035dadb74907a9eda986044e/2.2.2/windowsservercore-ltsc2016/Dockerfile)
 
 ## Shared Tags
 
--	`2.1.6`, `2.1`, `2`, `latest`:
-	-	[`2.1.6-scratch`](https://github.com/nats-io/nats-docker/blob/c8c9f5e84405f71d3300d42879de67c3f32f4b98/2.1.6/scratch/Dockerfile)
-	-	[`2.1.6-nanoserver-1809`](https://github.com/nats-io/nats-docker/blob/c8c9f5e84405f71d3300d42879de67c3f32f4b98/2.1.6/nanoserver-1809/Dockerfile)
--	`2.1.6-windowsservercore`, `2.1-windowsservercore`, `2-windowsservercore`, `windowsservercore`:
-	-	[`2.1.6-windowsservercore-1809`](https://github.com/nats-io/nats-docker/blob/c8c9f5e84405f71d3300d42879de67c3f32f4b98/2.1.6/windowsservercore-1809/Dockerfile)
-	-	[`2.1.6-windowsservercore-ltsc2016`](https://github.com/nats-io/nats-docker/blob/c8c9f5e84405f71d3300d42879de67c3f32f4b98/2.1.6/windowsservercore-ltsc2016/Dockerfile)
--	`2.1.6-nanoserver`, `2.1-nanoserver`, `2-nanoserver`, `nanoserver`:
-	-	[`2.1.6-nanoserver-1809`](https://github.com/nats-io/nats-docker/blob/c8c9f5e84405f71d3300d42879de67c3f32f4b98/2.1.6/nanoserver-1809/Dockerfile)
+-	`2.2.2`, `2.2`, `2`, `latest`:
+	-	[`2.2.2-scratch`](https://github.com/nats-io/nats-docker/blob/ecc356712449b64f035dadb74907a9eda986044e/2.2.2/scratch/Dockerfile)
+	-	[`2.2.2-nanoserver-1809`](https://github.com/nats-io/nats-docker/blob/ecc356712449b64f035dadb74907a9eda986044e/2.2.2/nanoserver-1809/Dockerfile)
+-	`2.2.2-windowsservercore`, `2.2-windowsservercore`, `2-windowsservercore`, `windowsservercore`:
+	-	[`2.2.2-windowsservercore-1809`](https://github.com/nats-io/nats-docker/blob/ecc356712449b64f035dadb74907a9eda986044e/2.2.2/windowsservercore-1809/Dockerfile)
+	-	[`2.2.2-windowsservercore-ltsc2016`](https://github.com/nats-io/nats-docker/blob/ecc356712449b64f035dadb74907a9eda986044e/2.2.2/windowsservercore-ltsc2016/Dockerfile)
+-	`2.2.2-nanoserver`, `2.2-nanoserver`, `2-nanoserver`, `nanoserver`:
+	-	[`2.2.2-nanoserver-1809`](https://github.com/nats-io/nats-docker/blob/ecc356712449b64f035dadb74907a9eda986044e/2.2.2/nanoserver-1809/Dockerfile)
 
-# Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+# Quick reference (cont.)
 
 -	**Where to file issues**:  
 	[https://github.com/nats-io/nats-docker/issues](https://github.com/nats-io/nats-docker/issues)
-
--	**Maintained by**:  
-	[the NATS Project](https://github.com/nats-io/nats-docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/nats/), [`arm32v6`](https://hub.docker.com/r/arm32v6/nats/), [`arm32v7`](https://hub.docker.com/r/arm32v7/nats/), [`arm64v8`](https://hub.docker.com/r/arm64v8/nats/), [`windows-amd64`](https://hub.docker.com/r/winamd64/nats/)
@@ -56,7 +58,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/nats`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fnats)  
+	[official-images repo's `library/nats` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fnats)  
 	[official-images repo's `library/nats` file](https://github.com/docker-library/official-images/blob/master/library/nats) ([history](https://github.com/docker-library/official-images/commits/master/library/nats))
 
 -	**Source of this description**:  
@@ -98,13 +100,18 @@ The routing protocol has been dramatically improved and adds support for account
 # Check "docker run" for more information.
 
 $ docker run -d --name nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 nats
-[INF] Starting nats-server version 2.1.6
-[INF] Git commit [8c8d6f8]
+[INF] Starting nats-server
+[INF]   Version:  2.2.2
+[INF]   Git:      [a5f3aab]
+[INF]   Name:     NDFKN2UHCGYJGFPP34WAMUJFQT64B7JFOKLBYDDRIDNONPJO3NAGOQZR
+[INF]   ID:       NDFKN2UHCGYJGFPP34WAMUJFQT64B7JFOKLBYDDRIDNONPJO3NAGOQZR
+[INF] Using configuration file: nats-server.conf
+[INF] Starting http monitor on 0.0.0.0:8222
 [INF] Listening for client connections on 0.0.0.0:4222
-[INF] Server id is NANEPV46X4QZ7FR5DD4U7WLWI6BWRLJXFTHO2FIJRGFSW5NLH3MOV7VZ
 [INF] Server is ready
+[INF] Cluster name is IDBsbLzNE1vnhNsqZhLuvU
+[WRN] Cluster name was dynamically generated, consider setting one
 [INF] Listening for route connections on 0.0.0.0:6222
-
 ...
 
 # To run a second server and cluster them together..
@@ -115,21 +122,32 @@ $ docker run -d --name=nats-2 --link nats-main -p 4222:4222 -p 6222:6222 -p 8222
 
 # If you want to verify the routes are connected, try this instead:
 $ docker run -d --name=nats-2 --link nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 nats -c nats-server.conf --routes=nats-route://ruser:T0pS3cr3t@nats-main:6222 -DV
-[INF] Starting nats-server version 2.1.6
-[DBG] Go build version go1.13.9
-[INF] Git commit [8c8d6f8]
+[INF] Starting nats-server
+[INF]   Version:  2.2.2
+[INF]   Git:      [a5f3aab]
+[DBG]   Go build: go1.16.3
+[INF]   Name:     NDV5S72CIA5ZALWXUBGL3LIVG3A3PK36B32RQF25DUQYPG5KLV52EBSF
+[INF]   ID:       NDV5S72CIA5ZALWXUBGL3LIVG3A3PK36B32RQF25DUQYPG5KLV52EBSF
+[INF] Using configuration file: nats-server.conf
+[DBG] Created system account: "$SYS"
 [INF] Starting http monitor on 0.0.0.0:8222
 [INF] Listening for client connections on 0.0.0.0:4222
-[INF] Server id is NC5WVL732YIR7N2TH3EHLLTGBNYJMZUUJMYEVWTZ3KU6DQB6ROGPAWYM
-[INF] Server is ready
 [DBG] Get non local IPs for "0.0.0.0"
-[DBG]  ip=172.17.0.3
+[DBG]   ip=172.17.0.3
+[INF] Server is ready
+[INF] Cluster name is 70r4HcDuxqObLOrd6s1by9
+[WRN] Cluster name was dynamically generated, consider setting one
 [INF] Listening for route connections on 0.0.0.0:6222
-[DBG] Trying to connect to route on nats-main:6222
-[DBG] 172.17.0.2:6222 - rid:1 - Route connect msg sent
-[INF] 172.17.0.2:6222 - rid:1 - Route connection created
-[DBG] 172.17.0.2:6222 - rid:1 - Registering remote route "ND2WROCKLR6NGB6E5RUV6FQNPQO475MWOR4IGM6E6AZNKVTKXDD6YCM5"
-[DBG] 172.17.0.2:6222 - rid:1 - Sent local subscriptions to route
+[DBG] Trying to connect to route on nats-main:6222 (172.17.0.2:6222)
+[DBG] 172.17.0.2:6222 - rid:3 - Route connect msg sent
+[INF] 172.17.0.2:6222 - rid:3 - Route connection created
+[INF] 172.17.0.2:6222 - rid:3 - Router connection closed: Cluster Name Conflict
+[DBG] Attempting reconnect for solicited route "nats-route://ruser:T0pS3cr3t@nats-main:6222"
+[DBG] Trying to connect to route on nats-main:6222 (172.17.0.2:6222)
+[DBG] 172.17.0.2:6222 - rid:4 - Route connect msg sent
+[INF] 172.17.0.2:6222 - rid:4 - Route connection created
+[DBG] 172.17.0.2:6222 - rid:4 - Registering remote route "NDUA32CQBEAM25FKPHFEGKBF5JIQQFDBGFSFXJ7R275CYFSGZ4DDCOSG"
+[DBG] 172.17.0.2:6222 - rid:4 - Sent local subscriptions to route
 ```
 
 The server will load the configuration file below. Any command line flags can override these values.
@@ -145,6 +163,8 @@ monitor_port: 8222
 
 # This is for clustering multiple servers together.
 cluster {
+  # It is recommended to set a cluster name
+  name: "my_cluster"
 
   # Route connections to be received on any interface on port 6222
   port: 6222
@@ -170,14 +190,15 @@ cluster {
 Server Options:
     -a, --addr <host>                Bind to host address (default: 0.0.0.0)
     -p, --port <port>                Use port for clients (default: 4222)
+    -n, --name <server_name>         Server name (default: auto)
     -P, --pid <file>                 File to store PID
     -m, --http_port <port>           Use port for http monitoring
     -ms,--https_port <port>          Use port for https monitoring
     -c, --config <file>              Configuration file
+    -t                               Test configuration and exit
     -sl,--signal <signal>[=<pid>]    Send signal to nats-server process (stop, quit, reopen, reload)
                                      <pid> can be either a PID (e.g. 1) or the path to a PID file (e.g. /var/run/nats-server.pid)
         --client_advertise <string>  Client URL to advertise to other servers
-    -t                               Test configuration and exit
 
 Logging Options:
     -l, --log <file>                 File to redirect log output
@@ -189,6 +210,10 @@ Logging Options:
     -VV                              Verbose trace (traces system account as well)
     -DV                              Debug and trace
     -DVV                             Debug and verbose trace (traces system account as well)
+
+JetStream Options:
+    -js, --jetstream                 Enable JetStream functionality.
+    -sd, --store_dir <dir>           Set the storage directory.
 
 Authorization Options:
         --user <user>                User required for connections
@@ -205,10 +230,10 @@ TLS Options:
 Cluster Options:
         --routes <rurl-1, rurl-2>    Routes to solicit and connect
         --cluster <cluster-url>      Cluster URL for solicited routes
-        --no_advertise <bool>        Advertise known cluster IPs to clients
+        --cluster_name <string>      Cluster Name, if not set one will be dynamically generated
+        --no_advertise <bool>        Do not advertise known cluster information to clients
         --cluster_advertise <string> Cluster URL to advertise to other servers
         --connect_retries <number>   For implicit routes, number of connect retries
-
 
 Common Options:
     -h, --help                       Show this message
@@ -226,9 +251,9 @@ This is the defacto image. If you are unsure about what your needs are, you prob
 
 ## `nats:<version>-alpine`
 
-This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
-This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
 
 To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
