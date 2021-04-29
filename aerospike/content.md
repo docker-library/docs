@@ -6,23 +6,6 @@
 
 %%LOGO%%
 
--	Getting Started
-	-	Running a node with a feature key file in a mapped directory
-	-	Running a node with a feature key file in an environment variable
--	Advanced Configuration
-	-	Injecting configuration parameters
-		-	List of template variables
-	-	Using a custom configuration file
-	-	Persistent Data Directory
-	-	Block Storage
-	-	Persistent Lua Cache
--	Clustering
-	-	Configuring the node's access address
-	-	Mesh Clustering
--	Image Versions
--	Reporting Issues
--	License
-
 ## Getting Started
 
 Aerospike Enterprise Edition requires a feature key file to start and to ungate certain features in the database, such as compression. Enterprise customers can use their production or development keys.
