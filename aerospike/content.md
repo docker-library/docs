@@ -16,6 +16,8 @@ Anyone can [sign up](https://www.aerospike.com/lp/try-now/) to get an evaluation
 Aerospike Community Edition supports the same developer APIs as Aerospike Enterprise Edition, and differs in ease of operation and enterprise features. See the [product matrix](https://www.aerospike.com/products/product-matrix/) for more.
 
 ### Running an Aerospike EE node with a feature key file in a mapped directory
+
+```console
 docker run -d -v DIR:/opt/aerospike/etc/ -e "FEATURE_KEY_FILE=/opt/aerospike/etc/features.conf" --name aerospike -p 3000-3002:3000-3002 %%IMAGE%%:ee-[version]
 ```
 
