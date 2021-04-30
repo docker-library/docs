@@ -174,14 +174,12 @@ These images are based on [debian:strech-slim](https://hub.docker.com/_/debian).
 
 ### ee-[version]
 
-These tags are for Aerospike EE images, and will require a feature key file,
-such as the one you get with the single-node EE evaluation, or one associated
+These tags are for Aerospike EE images, and will require a feature key file, such as the one you get with the single-node EE evaluation, or one associated
 with a commercial enterprise license agreement.
 
 ### ce-[version]
 
-These tags are for Aerospike CE images, and do not require a feature key file to
-start. As mentioned above, the developer API for both is the same, but the
+These tags are for Aerospike CE images, and do not require a feature key file to start. As mentioned above, the developer API for both is the same, but the
 editions differ in operational features.
 
 ## Reporting Issues
