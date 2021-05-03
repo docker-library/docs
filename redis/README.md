@@ -24,10 +24,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.2.2`, `6.2`, `6`, `latest`, `6.2.2-buster`, `6.2-buster`, `6-buster`, `buster`](https://github.com/docker-library/redis/blob/1511c433cdb80391d897b5d2a04c67c261bf5f4b/6.2/Dockerfile)
--	[`6.2.2-alpine`, `6.2-alpine`, `6-alpine`, `alpine`, `6.2.2-alpine3.13`, `6.2-alpine3.13`, `6-alpine3.13`, `alpine3.13`](https://github.com/docker-library/redis/blob/1511c433cdb80391d897b5d2a04c67c261bf5f4b/6.2/alpine/Dockerfile)
--	[`6.0.12`, `6.0`, `6.0.12-buster`, `6.0-buster`](https://github.com/docker-library/redis/blob/7b37611579e91f4ce356dfc2954500b5d6d43b60/6.0/Dockerfile)
--	[`6.0.12-alpine`, `6.0-alpine`, `6.0.12-alpine3.13`, `6.0-alpine3.13`](https://github.com/docker-library/redis/blob/7b37611579e91f4ce356dfc2954500b5d6d43b60/6.0/alpine/Dockerfile)
+-	[`6.2.3`, `6.2`, `6`, `latest`, `6.2.3-buster`, `6.2-buster`, `6-buster`, `buster`](https://github.com/docker-library/redis/blob/a2d5a5dc3f308ff7dc829dbd5bbf1bce36383fd3/6.2/Dockerfile)
+-	[`6.2.3-alpine`, `6.2-alpine`, `6-alpine`, `alpine`, `6.2.3-alpine3.13`, `6.2-alpine3.13`, `6-alpine3.13`, `alpine3.13`](https://github.com/docker-library/redis/blob/a2d5a5dc3f308ff7dc829dbd5bbf1bce36383fd3/6.2/alpine/Dockerfile)
+-	[`6.0.13`, `6.0`, `6.0.13-buster`, `6.0-buster`](https://github.com/docker-library/redis/blob/9e055b21bfc02cb9302695e0e4fc27db19819598/6.0/Dockerfile)
+-	[`6.0.13-alpine`, `6.0-alpine`, `6.0.13-alpine3.13`, `6.0-alpine3.13`](https://github.com/docker-library/redis/blob/9e055b21bfc02cb9302695e0e4fc27db19819598/6.0/alpine/Dockerfile)
 -	[`5.0.12`, `5.0`, `5`, `5.0.12-buster`, `5.0-buster`, `5-buster`](https://github.com/docker-library/redis/blob/147762b57f4d4391ba6cf8fbd1e7590a606643ef/5/Dockerfile)
 -	[`5.0.12-32bit`, `5.0-32bit`, `5-32bit`, `5.0.12-32bit-buster`, `5.0-32bit-buster`, `5-32bit-buster`](https://github.com/docker-library/redis/blob/147762b57f4d4391ba6cf8fbd1e7590a606643ef/5/32bit/Dockerfile)
 -	[`5.0.12-alpine`, `5.0-alpine`, `5-alpine`, `5.0.12-alpine3.13`, `5.0-alpine3.13`, `5-alpine3.13`](https://github.com/docker-library/redis/blob/147762b57f4d4391ba6cf8fbd1e7590a606643ef/5/alpine/Dockerfile)

@@ -24,12 +24,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.3.3`, `4.3`, `4`, `latest`](https://github.com/docker-library/ghost/blob/b18246e50008cec5d9e0a8bbf3d3e03a438f4ba2/4/debian/Dockerfile)
+-	[`4.3.3`, `4.3`, `4`, `latest`](https://github.com/docker-library/ghost/blob/24abc83b36c13caa3d96731f9fa7f41a0d215ba9/4/debian/Dockerfile)
 -	[`4.3.3-alpine`, `4.3-alpine`, `4-alpine`, `alpine`](https://github.com/docker-library/ghost/blob/b18246e50008cec5d9e0a8bbf3d3e03a438f4ba2/4/alpine/Dockerfile)
 -	[`3.42.5`, `3.42`, `3`](https://github.com/docker-library/ghost/blob/aafa3aef4bd6d39c9b883fb1b477e9f85eb88504/3/debian/Dockerfile)
 -	[`3.42.5-alpine`, `3.42-alpine`, `3-alpine`](https://github.com/docker-library/ghost/blob/aafa3aef4bd6d39c9b883fb1b477e9f85eb88504/3/alpine/Dockerfile)
--	[`2.38.3`, `2.38`, `2`](https://github.com/docker-library/ghost/blob/43436c4d7ff4f323dce29012582fb311bde50c27/2/debian/Dockerfile)
--	[`2.38.3-alpine`, `2.38-alpine`, `2-alpine`](https://github.com/docker-library/ghost/blob/43436c4d7ff4f323dce29012582fb311bde50c27/2/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -37,7 +35,7 @@ WARNING:
 	[https://github.com/docker-library/ghost/issues](https://github.com/docker-library/ghost/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/ghost/), [`arm32v6`](https://hub.docker.com/r/arm32v6/ghost/), [`arm32v7`](https://hub.docker.com/r/arm32v7/ghost/), [`arm64v8`](https://hub.docker.com/r/arm64v8/ghost/), [`i386`](https://hub.docker.com/r/i386/ghost/), [`ppc64le`](https://hub.docker.com/r/ppc64le/ghost/), [`s390x`](https://hub.docker.com/r/s390x/ghost/)
+	[`amd64`](https://hub.docker.com/r/amd64/ghost/), [`arm32v6`](https://hub.docker.com/r/arm32v6/ghost/), [`arm32v7`](https://hub.docker.com/r/arm32v7/ghost/), [`arm64v8`](https://hub.docker.com/r/arm64v8/ghost/), [`ppc64le`](https://hub.docker.com/r/ppc64le/ghost/), [`s390x`](https://hub.docker.com/r/s390x/ghost/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/ghost/` directory](https://github.com/docker-library/repo-info/blob/master/repos/ghost) ([history](https://github.com/docker-library/repo-info/commits/master/repos/ghost))  
