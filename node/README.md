@@ -54,12 +54,6 @@ WARNING:
 -	[`12-buster-slim`, `12.22-buster-slim`, `12.22.1-buster-slim`, `erbium-buster-slim`](https://github.com/nodejs/docker-node/blob/31246f5f779cafa0930a1db04bd00d875d6a940d/12/buster-slim/Dockerfile)
 -	[`12`, `12-stretch`, `12.22`, `12.22-stretch`, `12.22.1`, `12.22.1-stretch`, `erbium`, `erbium-stretch`](https://github.com/nodejs/docker-node/blob/31246f5f779cafa0930a1db04bd00d875d6a940d/12/stretch/Dockerfile)
 -	[`12-slim`, `12-stretch-slim`, `12.22-slim`, `12.22-stretch-slim`, `12.22.1-slim`, `12.22.1-stretch-slim`, `erbium-slim`, `erbium-stretch-slim`](https://github.com/nodejs/docker-node/blob/31246f5f779cafa0930a1db04bd00d875d6a940d/12/stretch-slim/Dockerfile)
--	[`10-alpine3.10`, `10.24-alpine3.10`, `10.24.1-alpine3.10`, `dubnium-alpine3.10`](https://github.com/nodejs/docker-node/blob/31246f5f779cafa0930a1db04bd00d875d6a940d/10/alpine3.10/Dockerfile)
--	[`10-alpine`, `10-alpine3.11`, `10.24-alpine`, `10.24-alpine3.11`, `10.24.1-alpine`, `10.24.1-alpine3.11`, `dubnium-alpine`, `dubnium-alpine3.11`](https://github.com/nodejs/docker-node/blob/31246f5f779cafa0930a1db04bd00d875d6a940d/10/alpine3.11/Dockerfile)
--	[`10-buster`, `10.24-buster`, `10.24.1-buster`, `dubnium-buster`](https://github.com/nodejs/docker-node/blob/31246f5f779cafa0930a1db04bd00d875d6a940d/10/buster/Dockerfile)
--	[`10-buster-slim`, `10.24-buster-slim`, `10.24.1-buster-slim`, `dubnium-buster-slim`](https://github.com/nodejs/docker-node/blob/31246f5f779cafa0930a1db04bd00d875d6a940d/10/buster-slim/Dockerfile)
--	[`10`, `10-stretch`, `10.24`, `10.24-stretch`, `10.24.1`, `10.24.1-stretch`, `dubnium`, `dubnium-stretch`](https://github.com/nodejs/docker-node/blob/31246f5f779cafa0930a1db04bd00d875d6a940d/10/stretch/Dockerfile)
--	[`10-slim`, `10-stretch-slim`, `10.24-slim`, `10.24-stretch-slim`, `10.24.1-slim`, `10.24.1-stretch-slim`, `dubnium-slim`, `dubnium-stretch-slim`](https://github.com/nodejs/docker-node/blob/31246f5f779cafa0930a1db04bd00d875d6a940d/10/stretch-slim/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -67,7 +61,7 @@ WARNING:
 	[https://github.com/nodejs/docker-node/issues](https://github.com/nodejs/docker-node/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/node/), [`arm32v6`](https://hub.docker.com/r/arm32v6/node/), [`arm32v7`](https://hub.docker.com/r/arm32v7/node/), [`arm64v8`](https://hub.docker.com/r/arm64v8/node/), [`i386`](https://hub.docker.com/r/i386/node/), [`ppc64le`](https://hub.docker.com/r/ppc64le/node/), [`s390x`](https://hub.docker.com/r/s390x/node/)
+	[`amd64`](https://hub.docker.com/r/amd64/node/), [`arm32v6`](https://hub.docker.com/r/arm32v6/node/), [`arm32v7`](https://hub.docker.com/r/arm32v7/node/), [`arm64v8`](https://hub.docker.com/r/arm64v8/node/), [`ppc64le`](https://hub.docker.com/r/ppc64le/node/), [`s390x`](https://hub.docker.com/r/s390x/node/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/node/` directory](https://github.com/docker-library/repo-info/blob/master/repos/node) ([history](https://github.com/docker-library/repo-info/commits/master/repos/node))  
