@@ -1,4 +1,4 @@
-# Aerospike Enterprise Edition Docker Image
+# Aerospike Database Docker Images
 
 ## What is Aerospike?
 
@@ -12,24 +12,32 @@ Aerospike Enterprise Edition requires a feature key file to start and to ungate 
 
 Anyone can [sign up](https://www.aerospike.com/lp/try-now/) to get an evaluation feature key file for a full-featured, single-node Aerospike Enterprise Edition.
 
-### Running a node with a feature key file in a mapped directory
+Aerospike Community Edition supports the same developer APIs as Aerospike Enterprise Edition, and differs in ease of operation and enterprise features. See the [product matrix](https://www.aerospike.com/products/product-matrix/) for more.
+
+### Running an Aerospike EE node with a feature key file in a mapped directory
 
 ```console
-docker run -d -v DIR:/opt/aerospike/etc/ -e "FEATURE_KEY_FILE=/opt/aerospike/etc/features.conf" --name aerospike -p 3000:3000 -p 3001:3001 -p 3002:3002 %%IMAGE%%:ee-[version]
+docker run -d -v DIR:/opt/aerospike/etc/ -e "FEATURE_KEY_FILE=/opt/aerospike/etc/features.conf" --name aerospike -p 3000-3002:3000-3002 %%IMAGE%%:ee-[version]
 ```
 
 Above, *DIR* is a directory on your machine where you drop your feature key file. Make sure Docker Desktop has file sharing permission to bind mount it into Docker containers.
 
-### Running a node with a feature key file in an environment variable
+### Running an Aerospike EE node with a feature key file in a mapped directory
 
 ```console
 FEATKEY=$(base64 ~/Desktop/evaluation-features.conf)
-docker run -d -e "FEATURES=$FEATKEY" -e "FEATURE_KEY_FILE=env-b64:FEATURES" --name aerospike -p 3000:3000 -p 3001:3001 -p 3002:3002 %%IMAGE%%:ee-[version]
+docker run -d -e "FEATURES=$FEATKEY" -e "FEATURE_KEY_FILE=env-b64:FEATURES" --name aerospike -p 3000-3002:3000-3002 %%IMAGE%%:ee-[version]
+```
+
+### Running an Aerospike CE node
+
+```console
+docker run -d --name aerospike -p 3000-3002:3000-3002 %%IMAGE%%:ce-[version]
 ```
 
 ## Advanced Configuration
 
-The Aerospike EE Docker image has a default configuration file template that can be populated with individual configuration parameters, as we did before with `FEATURE_KEY_FILE`. Alternatively, it can be replaced with a custom configuration file.
+The Aerospike Docker image has a default configuration file template that can be populated with individual configuration parameters, as we did before with `FEATURE_KEY_FILE`. Alternatively, it can be replaced with a custom configuration file.
 
 The following sections describe both advanced options.
 
@@ -40,7 +48,7 @@ You can inject parameters into the configuration template using container-side e
 For example, to set the default [namespace](https://www.aerospike.com/docs/architecture/data-model.html) name to *demo*:
 
 ```console
-docker run -d --name aerospike -e "NAMESPACE=demo" -p 3000:3000 -p 3001:3001 -p 3002:3002 -v /my/dir:/opt/aerospike/etc/ -e "FEATURE_KEY_FILE=/opt/aerospike/etc/features.conf" %%IMAGE%%:ee-[version]
+docker run -d --name aerospike -e "NAMESPACE=demo" -p 3000-3002:3000-3002 -v /my/dir:/opt/aerospike/etc/ -e "FEATURE_KEY_FILE=/opt/aerospike/etc/features.conf" %%IMAGE%%:ee-[version]
 ```
 
 Injecting configuration parameters into the configuration template isn't compatible with using a custom configuration file. You can use one or the other.
@@ -75,7 +83,7 @@ You should first `-v` map a local directory, which Docker will bind mount. Next,
 For example:
 
 ```console
-docker run -d -v /opt/aerospike/etc/:/opt/aerospike/etc/ --name aerospike -p 3000:3000 -p 3001:3001 -p 3002:3002 %%IMAGE%%:ee-[version] --config-file /opt/aerospike/etc/aerospike.conf
+docker run -d -v /opt/aerospike/etc/:/opt/aerospike/etc/ --name aerospike-p 3000-3002:3000-3002 %%IMAGE%%:ee-[version] --config-file /opt/aerospike/etc/aerospike.conf
 ```
 
 ### Persistent Data Directory
@@ -85,7 +93,7 @@ With Docker, the files within the container are not persisted past the life of t
 For example:
 
 ```console
-docker run -d  -v /opt/aerospike/data:/opt/aerospike/data  -v /opt/aerospike/etc:/opt/aerospike/etc/ --name aerospike -p 3000:3000 -p 3001:3001 -p 3002:3002 -e "FEATURE_KEY_FILE=/opt/aerospike/etc/features.conf" %%IMAGE%%:ee-[version]
+docker run -d  -v /opt/aerospike/data:/opt/aerospike/data  -v /opt/aerospike/etc:/opt/aerospike/etc/ --name aerospike -p 3000-3002:3000-3002 -e "FEATURE_KEY_FILE=/opt/aerospike/etc/features.conf" %%IMAGE%%:ee-[version]
 ```
 
 The example above uses the configuration template, where the single defined namespace is in-memory with file-based persistence. Just mounting the predefined /opt/aerospike/data directory enables the data to be persisted on the host.
@@ -104,7 +112,7 @@ Alternatively, a custom configuration file is used with the parameter `file` set
 In this example we also mount the data directory in a similar way, using a custom configuration file.
 
 ```console
-docker run -d -v /opt/aerospike/data:/opt/aerospike/data -v /opt/aerospike/etc/:/opt/aerospike/etc/ --name aerospike -p 3000:3000 -p 3001:3001 -p 3002:3002 %%IMAGE%%:ee-[version] --config-file /opt/aerospike/etc/aerospike.conf
+docker run -d -v /opt/aerospike/data:/opt/aerospike/data -v /opt/aerospike/etc/:/opt/aerospike/etc/ --name aerospike -p 3000-3002:3000-3002 %%IMAGE%%:ee-[version] --config-file /opt/aerospike/etc/aerospike.conf
 ```
 
 ### Block Storage
@@ -124,7 +132,7 @@ Update the `storage-engine device` section of the namespace in the custom aerosp
 Now to map a host drive /dev/sdc to /dev/xvdc on a container
 
 ```console
-docker run -d --device '/dev/sdc:/dev/xvdc' -v /opt/aerospike/etc/:/opt/aerospike/etc/ --name aerospike -p 3000:3000 -p 3001:3001 -p 3002:3002 %%IMAGE%%:ee-[version] --config-file /opt/aerospike/etc/aerospike.conf
+docker run -d --device '/dev/sdc:/dev/xvdc' -v /opt/aerospike/etc/:/opt/aerospike/etc/ --name aerospike -p 3000-3002:3000-3002 %%IMAGE%%:ee-[version] --config-file /opt/aerospike/etc/aerospike.conf
 ```
 
 ### Persistent Lua Cache
@@ -132,7 +140,7 @@ docker run -d --device '/dev/sdc:/dev/xvdc' -v /opt/aerospike/etc/:/opt/aerospik
 Upon restart, your lua cache will become emptied. To persist the cache, you will want to mount a directory from the host to the container's `/opt/aerospike/usr/udf/lua` using the `-v` option:
 
 ```sh
-docker run -d -v /opt/aerospike/lua:/opt/aerospike/usr/udf/lua -v /opt/aerospike/data:/opt/aerospike/data --name aerospike -p 3000:3000 -p 3001:3001 -p 3002:3002 -e "FEATURE_KEY_FILE=/opt/etc/aerospike/features.conf" %%IMAGE%%:ee-[version]
+docker run -d -v /opt/aerospike/lua:/opt/aerospike/usr/udf/lua -v /opt/aerospike/data:/opt/aerospike/data --name aerospike -p 3000-3002:3000-3002 -e "FEATURE_KEY_FILE=/opt/etc/aerospike/features.conf" %%IMAGE%%:ee-[version]
 ```
 
 ## Clustering
@@ -163,8 +171,20 @@ For more, see [How do I get a 2 nodes Aerospike cluster running quickly in Docke
 
 These images are based on [debian:strech-slim](https://hub.docker.com/_/debian).
 
+### ee-[version]
+
+These tags are for Aerospike EE images, and will require a feature key file, such as the one you get with the single-node EE evaluation, or one associated with a commercial enterprise license agreement.
+
+### ce-[version]
+
+These tags are for Aerospike CE images, and do not require a feature key file to start. As mentioned above, the developer API for both is the same, but the editions differ in operational features.
+
 ## Reporting Issues
 
-Aerospike EE evaluation users, if you have any problems with or questions about this image, please post on the [Aerospike discussion forum](https://discuss.aerospike.com) or open an issue in[aerospike/aerospike-server-enterprise.docker](https://github.com/aerospike/aerospike-server-enterprise.docker/issues).
+If you have any problems with or questions about this image, please post on the [Aerospike discussion forum](https://discuss.aerospike.com).
 
 Enterprise customers are welcome to participate in the community forum, but can also report issues through the enterprise support system.
+
+Aerospike EE evaluation users can open an issue in [aerospike/aerospike-server-enterprise.docker](https://github.com/aerospike/aerospike-server-enterprise.docker/issues).
+
+Aerospike CE users can open an issue in [aerospike/aerospike-server.docker](https://github.com/aerospike/aerospike-server.docker/issues).
