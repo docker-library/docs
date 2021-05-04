@@ -24,10 +24,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`11.1.0`, `11.1`, `11`, `latest`, `11.1.0-bullseye`, `11.1-bullseye`, `11-bullseye`, `bullseye`](https://github.com/docker-library/gcc/blob/bb63178b4a0781555d904c3ac3897c9b81d922c8/11/Dockerfile)
--	[`10.3.0`, `10.3`, `10`, `10.3.0-buster`, `10.3-buster`, `10-buster`](https://github.com/docker-library/gcc/blob/bb63178b4a0781555d904c3ac3897c9b81d922c8/10/Dockerfile)
--	[`9.3.0`, `9.3`, `9`, `9.3.0-buster`, `9.3-buster`, `9-buster`](https://github.com/docker-library/gcc/blob/bb63178b4a0781555d904c3ac3897c9b81d922c8/9/Dockerfile)
--	[`8.4.0`, `8.4`, `8`, `8.4.0-buster`, `8.4-buster`, `8-buster`](https://github.com/docker-library/gcc/blob/bb63178b4a0781555d904c3ac3897c9b81d922c8/8/Dockerfile)
+-	[`11.1.0`, `11.1`, `11`, `latest`, `11.1.0-bullseye`, `11.1-bullseye`, `11-bullseye`, `bullseye`](https://github.com/docker-library/gcc/blob/a5937a0b39e55c174007c2b9c2f363cdd2142818/11/Dockerfile)
+-	[`10.3.0`, `10.3`, `10`, `10.3.0-buster`, `10.3-buster`, `10-buster`](https://github.com/docker-library/gcc/blob/a5937a0b39e55c174007c2b9c2f363cdd2142818/10/Dockerfile)
+-	[`9.3.0`, `9.3`, `9`, `9.3.0-buster`, `9.3-buster`, `9-buster`](https://github.com/docker-library/gcc/blob/a5937a0b39e55c174007c2b9c2f363cdd2142818/9/Dockerfile)
+-	[`8.4.0`, `8.4`, `8`, `8.4.0-buster`, `8.4-buster`, `8-buster`](https://github.com/docker-library/gcc/blob/a5937a0b39e55c174007c2b9c2f363cdd2142818/8/Dockerfile)
 
 # Quick reference (cont.)
 
