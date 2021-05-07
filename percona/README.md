@@ -141,7 +141,7 @@ The startup configuration is specified in the file `/etc/my.cnf`, and that file 
 If `/my/custom/config-file.cnf` is the path and name of your custom configuration file, you can start your `percona` container like this (note that only the directory path of the custom config file is used in this command):
 
 ```console
-$ docker run --name some-percona -v /my/custom:/etc/mysql/conf.d -e MYSQL_ROOT_PASSWORD=my-secret-pw -d percona:tag
+$ docker run --name some-percona -v /my/custom:/etc/my.cnf.d -e MYSQL_ROOT_PASSWORD=my-secret-pw -d percona:tag
 ```
 
 This will start a new container `some-percona` where the Percona Server for MySQL instance uses the combined startup settings from `/etc/my.cnf` and `/etc/my.cnf.d/config-file.cnf`, with settings from the latter taking precedence.
