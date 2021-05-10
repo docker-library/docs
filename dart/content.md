@@ -1,35 +1,24 @@
 # What is Dart?
 
-Dart is a client-optimized language for developing fast apps on any platform.
-Its goal is to offer the most productive programming language for multi-platform
-development, paired with a flexible execution runtime platform for app
-frameworks. For more details, see https://dart.dev.
+Dart is a client-optimized language for developing fast apps on any platform. Its goal is to offer the most productive programming language for multi-platform development, paired with a flexible execution runtime platform for app frameworks. For more details, see https://dart.dev.
 
-By utilizing Dart's support for ahead-of-time (AOT)
-[compilation to executables], you can create very small runtime images (~10 MB).
+By utilizing Dart's support for ahead-of-time (AOT) [compilation to executables](https://dart.dev/tools/dart-compile#exe), you can create very small runtime images (~10 MB).
 
 %%LOGO%%
 
 # Quick reference
 
-* **Where to get help**:
-	[the Docker Community Forums](https://forums.docker.com/),
-    [the Docker Community Slack](https://dockr.ly/slack), or
-    [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+-	**Where to get help**:[the Docker Community Forums](https://forums.docker.com/),[the Docker Community Slack](https://dockr.ly/slack), or[Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
 ## Using this image
 
-We recommend creating small runtime images by leveraging Dart's support for
-ahead-of-time (AOT) [compilation to executables]. This enables creating small
-runtime images (~10 MB).
+We recommend creating small runtime images by leveraging Dart's support for ahead-of-time (AOT) [compilation to executables](https://dart.dev/tools/dart-compile#exe). This enables creating small runtime images (~10 MB).
 
 The following `Dockerfile` performs two steps:
 
-1. Using the Dart SDK in the `dart:stable` image, compiles your server
-   (`bin/server.dart`) to an executable (`server`).
+1.	Using the Dart SDK in the `dart:stable` image, compiles your server (`bin/server.dart`) to an executable (`server`).
 
-1. Assembles the runtime image by combining the compiled server with the Dart VM
-   runtime and it's needed dependencies located in `/runtime/`.
+2.	Assembles the runtime image by combining the compiled server with the Dart VM runtime and it's needed dependencies located in `/runtime/`.
 
 ```Dockerfile
 # Specify the Dart SDK base image version using dart:<version> (ex: dart:2.12)
@@ -55,8 +44,7 @@ EXPOSE 8080
 CMD ["/bin/server"]
 ```
 
-If you have [Docker Desktop] installed, you can build and run on your machine
-with the `docker` command:
+If you have [Docker Desktop](https://www.docker.com/get-started) installed, you can build and run on your machine with the `docker` command:
 
 ```shell
 $ docker build -t dart-server .
@@ -69,19 +57,6 @@ When finished, you can stop the container using the name you provided:
 $ docker kill myserver
 ```
 
-
-Maintained with ❤️ by the [Dart] team.
+Maintained with ❤️ by the [Dart](https://dart.dev) team.
 
 <!-- Reference links -->
-
-[dart]:
-https://dart.dev
-
-[docker "official image"]:
-https://github.com/docker-library/official-images#what-are-official-images
-
-[docker desktop]:
-https://www.docker.com/get-started
-
-[compilation to executables]:
-https://dart.dev/tools/dart-compile#exe
