@@ -8,7 +8,7 @@ By utilizing Dart's support for ahead-of-time (AOT) [compilation to executables]
 
 # Quick reference
 
--	**Where to get help**:[the Docker Community Forums](https://forums.docker.com/),[the Docker Community Slack](https://dockr.ly/slack), or[Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+-	**Where to get help**: [the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
 ## Using this image
 
@@ -58,5 +58,3 @@ $ docker kill myserver
 ```
 
 Maintained with ❤️ by the [Dart](https://dart.dev) team.
-
-<!-- Reference links -->
