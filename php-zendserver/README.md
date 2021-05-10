@@ -89,7 +89,7 @@ To start a single Zend Server instance, execute:
 		for example: 
 		$docker run php-zendserver:8.5-php5.6
 
-#### Availible versions:
+#### Available versions:
 
 -	Zend Server 8
 -	Zend Server 9 (With PHP 7 GA)(Default version)
@@ -180,7 +180,7 @@ Set Zend Server to production mode by setting the following env var to "true". B
 
 ### Minimal Requirements
 
-Each Zend Server Docker container requires 1GB of availible memory.
+Each Zend Server Docker container requires 1GB of available memory.
 
 # License
 

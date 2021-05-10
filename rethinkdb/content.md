@@ -45,4 +45,4 @@ kill $(lsof -t -i @localhost:8080 -sTCP:listen)
 
 ## Configuration
 
-See the [official docs](http://www.rethinkdb.com/docs/) for infomation on using and configuring a RethinkDB cluster.
+See the [official docs](http://www.rethinkdb.com/docs/) for information on using and configuring a RethinkDB cluster.

@@ -80,7 +80,7 @@ Since the container is read-only, you'll need to either mount in your webapps di
 
 ## HTTP/2 Support
 
-Starting with version 9.3, Jetty comes with built-in support for HTTP/2. However, due to potential license compatiblity issues with the ALPN library used to implement HTTP/2, the module is not enabled by default. In order to enable HTTP/2 support in a derived `Dockerfile` for private use, you can add a `RUN` command that enables the `http2` module and approve its license as follows:
+Starting with version 9.3, Jetty comes with built-in support for HTTP/2. However, due to potential license compatibility issues with the ALPN library used to implement HTTP/2, the module is not enabled by default. In order to enable HTTP/2 support in a derived `Dockerfile` for private use, you can add a `RUN` command that enables the `http2` module and approve its license as follows:
 
 ```Dockerfile
 FROM %%IMAGE%%

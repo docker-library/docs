@@ -79,7 +79,7 @@ InfluxDB 2.x provides a 1.x-compatible API, but expects a different storage layo
 The automated upgrade process bootstraps an initial admin user, organization, and bucket in the system. Additional environment variables are used to configure the setup logic:
 
 -	`DOCKER_INFLUXDB_INIT_USERNAME`: The username to set for the system's initial super-user (**Required**).
--	`DOCKER_INFLUXDB_INIT_PASSWORD`: The password to set for the system's inital super-user (**Required**).
+-	`DOCKER_INFLUXDB_INIT_PASSWORD`: The password to set for the system's initial super-user (**Required**).
 -	`DOCKER_INFLUXDB_INIT_ORG`: The name to set for the system's initial organization (**Required**).
 -	`DOCKER_INFLUXDB_INIT_BUCKET`: The name to set for the system's initial bucket (**Required**).
 -	`DOCKER_INFLUXDB_INIT_RETENTION`: The duration the system's initial bucket should retain data. If not set, the initial bucket will retain data forever.
@@ -378,7 +378,7 @@ This will make the generated CLI configs available to the host.
 The InfluxDB image contains some extra functionality to automatically bootstrap the system. This functionality is enabled by setting the `DOCKER_INFLUXDB_INIT_MODE` environment variable to the value `setup` when running the container. Additional environment variables are used to configure the setup logic:
 
 -	`DOCKER_INFLUXDB_INIT_USERNAME`: The username to set for the system's initial super-user (**Required**).
--	`DOCKER_INFLUXDB_INIT_PASSWORD`: The password to set for the system's inital super-user (**Required**).
+-	`DOCKER_INFLUXDB_INIT_PASSWORD`: The password to set for the system's initial super-user (**Required**).
 -	`DOCKER_INFLUXDB_INIT_ORG`: The name to set for the system's initial organization (**Required**).
 -	`DOCKER_INFLUXDB_INIT_BUCKET`: The name to set for the system's initial bucket (**Required**).
 -	`DOCKER_INFLUXDB_INIT_RETENTION`: The duration the system's initial bucket should retain data. If not set, the initial bucket will retain data forever.

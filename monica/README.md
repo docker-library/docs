@@ -95,7 +95,7 @@ docker run -d \
 
 ### Run commands inside the container
 
-Like every Laravel application, the `php artisan` command is very usefull for Monica. To run a command inside the container, run
+Like every Laravel application, the `php artisan` command is very useful for Monica. To run a command inside the container, run
 
 ```console
 docker exec CONTAINER_ID php artisan COMMAND

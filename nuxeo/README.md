@@ -99,7 +99,7 @@ This variables allows to setup an external Elasticsearch cluster. Use a comma se
 
 -	`NUXEO_ES_CLUSTER_NAME` : name of the Elasticsearch cluster to join
 -	`NUXEO_ES_INDEX_NAME`: name of the index (`nuxeo` by default)
--	`NUXEO_ES_REPLICAS` : number or replicas (`1` by default). If not 0, it means that your ES cluster must have enough node to fullfill the replicas setup.
+-	`NUXEO_ES_REPLICAS` : number or replicas (`1` by default). If not 0, it means that your ES cluster must have enough node to fulfill the replicas setup.
 -	`NUXEO_ES_SHARDS` : number or shards (`5` by default).
 
 For instance :
