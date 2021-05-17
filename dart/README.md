@@ -75,6 +75,8 @@ RUN dart pub get
 
 # Copy app source code and AOT compile it.
 COPY . .
+# Ensure packages are still up-to-date if
+RUN dart pub get --offline
 RUN dart compile exe bin/server.dart -o /server
 
 # Build minimal serving image from AOT-compiled `/server` and required system
