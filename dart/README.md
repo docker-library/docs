@@ -70,22 +70,37 @@ FROM dart:stable AS build
 
 # Resolve app dependencies.
 WORKDIR /app
-COPY pubspec.* .
+COPY pubspec.* ./
 RUN dart pub get
 
 # Copy app source code and AOT compile it.
 COPY . .
-RUN dart compile exe bin/server.dart -o /server
+# Ensure packages are still up-to-date if anything has changed
+RUN dart pub get --offline
+RUN dart compile exe bin/server.dart -o bin/server
 
 # Build minimal serving image from AOT-compiled `/server` and required system
 # libraries and configuration files stored in `/runtime/` from the build stage.
 FROM scratch
 COPY --from=build /runtime/ /
-COPY --from=build /server /bin/
+COPY --from=build /app/bin/server /app/bin/
 
 # Start server.
 EXPOSE 8080
-CMD ["/bin/server"]
+CMD ["/app/bin/server"]
+```
+
+We recommend you also have a `.dockerignore` file like the following:
+
+```text
+.dockerignore
+Dockerfile
+build/
+.dart_tool/
+.git/
+.github/
+.gitignore
+.packages
 ```
 
 If you have [Docker Desktop](https://www.docker.com/get-started) installed, you can build and run on your machine with the `docker` command:
