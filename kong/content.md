@@ -123,7 +123,7 @@ You can override any property of the [Kong configuration file](https://docs.kong
 
 ```shell
 $ docker run -d --name kong \
-    -e "KONG_DATABASE=postgres"
+    -e "KONG_DATABASE=postgres" \
     -e "KONG_PG_HOST=kong-database" \
     -e "KONG_LOG_LEVEL=info" \
     -e "KONG_CUSTOM_PLUGINS=helloworld" \
