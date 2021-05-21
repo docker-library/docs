@@ -1,1 +1,1 @@
-[Glider Labs](%%GITHUB-REPO%%) (an Alpine community contributor)
+[Natanael Copa](%%GITHUB-REPO%%) (an Alpine Linux maintainer)

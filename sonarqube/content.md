@@ -1,48 +1,87 @@
 # What is SonarQube?
 
-SonarQube is an open source platform for continuous inspection of code quality.
-
-> [wikipedia.org/wiki/SonarQube](http://en.wikipedia.org/wiki/SonarQube)
+[SonarQube](https://www.sonarqube.org/) is an open source product for continuous inspection of code quality.
 
 %%LOGO%%
 
 # How to use this image
 
-## Run SonarQube
+Here you'll find the Docker images for the Community Edition, Developer Edition, Enterprise Edition, and DataCenter Edition of SonarQube.
 
-The server is started this way:
+## Docker Host Requirements
 
-```console
-$ docker run -d --name sonarqube -p 9000:9000 -p 9092:9092 %%IMAGE%%
-```
+Because SonarQube uses an embedded Elasticsearch, make sure that your Docker host configuration complies with the [Elasticsearch production mode requirements](https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html#docker-cli-run-prod-mode) and [File Descriptors configuration](https://www.elastic.co/guide/en/elasticsearch/reference/current/file-descriptors.html).
 
-To analyse a project:
+For example, on Linux, you can set the recommended values for the current session by running the following commands as root on the host:
 
 ```console
-$ On Linux:
-mvn sonar:sonar
-
-$ With boot2docker:
-mvn sonar:sonar -Dsonar.host.url=http://$(boot2docker ip):9000 -Dsonar.jdbc.url="jdbc:h2:tcp://$(boot2docker ip)/sonar"
+sysctl -w vm.max_map_count=262144
+sysctl -w fs.file-max=65536
+ulimit -n 65536
+ulimit -u 4096
 ```
 
-## Database configuration
+## Get Started in Two Minutes Guide
+
+To quickly run a demo instance, see Using Docker on the [Get Started in Two Minutes Guide](https://docs.sonarqube.org/latest/setup/get-started-2-minutes/) page. When you are ready to move to a more sustainable setup, take some time to read the **Configuration** section below.
+
+## Configuration
+
+### Database
 
 By default, the image will use an embedded H2 database that is not suited for production.
 
-The production database is configured with these variables: `SONARQUBE_JDBC_USERNAME`, `SONARQUBE_JDBC_PASSWORD` and `SONARQUBE_JDBC_URL`.
+> **Warning:** Only a single instance of SonarQube can connect to a database schema. If you're using a Docker Swarm or Kubernetes, make sure that multiple SonarQube instances are never running on the same database schema simultaneously. This will cause SonarQube to behave unpredictably and data will be corrupted. There is no safeguard until [SONAR-10362](https://jira.sonarsource.com/browse/SONAR-10362). The Datacenter Edition has the same limitation in that only one cluster can connect to one database schema at the same time.
 
-```console
-$ docker run -d --name sonarqube \
-	-p 9000:9000 -p 9092:9092 \
-	-e SONARQUBE_JDBC_USERNAME=sonar \
-	-e SONARQUBE_JDBC_PASSWORD=sonar \
-	-e SONARQUBE_JDBC_URL=jdbc:postgresql://localhost/sonar \
-	sonarqube
+Set up a database by following the "Installing the Database" section of https://docs.sonarqube.org/latest/setup/install-server/.
+
+### Use volumes
+
+We recommend creating volumes for the following directories:
+
+-	`/opt/sonarqube/conf`: **for Version 7.9.x only**, configuration files, such as `sonar.properties`.
+-	`/opt/sonarqube/data`: data files, such as the embedded H2 database and Elasticsearch indexes
+-	`/opt/sonarqube/logs`: contains SonarQube logs about access, web process, CE process, Elasticsearch logs
+-	`/opt/sonarqube/extensions`: for 3rd party plugins
+
+> **Warning:** You cannot use the same volumes on multiple instances of SonarQube.
+
+## First Installation
+
+For installation instructions, see Installing the Server from the Docker Image on the [Install the Server](https://docs.sonarqube.org/latest/setup/install-server/) page.
+
+To run a cluster with the DataCenter Edition, please refer to Installing SonarQube from the Docker Image on the [Install the Server as a Cluster](https://docs.sonarqube.org/latest/setup/install-cluster/) page.
+
+## Upgrading
+
+For upgrade instructions, see Upgrading from the Docker Image on the [Upgrade the Server](https://docs.sonarqube.org/latest/setup/upgrading/) page.
+
+## Advanced configuration
+
+### Customized image
+
+In some environments, it may make more sense to prepare a custom image containing your configuration. A `Dockerfile` to achieve this may be as simple as:
+
+```dockerfile
+FROM sonarqube:8.2-community
+COPY sonar.properties /opt/sonarqube/conf/
 ```
 
-More recipes can be found [here](https://github.com/SonarSource/docker-sonarqube/blob/master/recipes.md).
+You could then build and try the image with something like:
+
+```console
+$ docker build --tag=sonarqube-custom .
+$ docker run -ti sonarqube-custom
+```
+
+### Avoid hard termination of SonarQube
+
+Starting from SonarQube 7.8, SonarQube stops gracefully, waiting for any tasks in progress to finish. Waiting for in-progress tasks to finish can take a large amount of time which the docker does not expect by default when stopping. To avoid having the SonarQube instance killed by the Docker daemon after 10 seconds, it is best to configure a timeout to stop the container with `--stop-timeout`. For example:
+
+```console
+docker run --stop-timeout 3600 %%IMAGE%%
+```
 
 ## Administration
 
-The administration guide can be found [here](http://docs.sonarqube.org/display/SONAR/Administration+Guide).
+The administration guide can be found [here](https://redirect.sonarsource.com/doc/administration-guide.html).

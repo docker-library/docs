@@ -44,7 +44,7 @@ To load plugins you can pass a list of filenames in `ADMINER_PLUGINS`:
 $ docker run --link some_database:db -p 8080:8080 -e ADMINER_PLUGINS='tables-filter tinymce' %%IMAGE%%
 ```
 
-If a plugin *requires* parameters to work correctly you will need to add a custom file to the container:
+If a plugin *requires* parameters to work correctly instead of adding the plugin to `ADMINER_PLUGINS`, you need to add a custom file to the container:
 
 ```console
 $ docker run --link some_database:db -p 8080:8080 -e ADMINER_PLUGINS='login-servers' %%IMAGE%%
@@ -78,6 +78,14 @@ $ docker run --link some_database:db -p 8080:8080 -e ADMINER_DESIGN='nette' %%IM
 
 To use a custom design you can add a file called `/var/www/html/adminer.css`.
 
+### Usage with external server
+
+You can specify the default host with the `ADMINER_DEFAULT_SERVER` environment variable. This is useful if you are connecting to an external server or a docker container named something other than the default `db`.
+
+```console
+docker run -p 8080:8080 -e ADMINER_DEFAULT_SERVER=mysql %%IMAGE%%
+```
+
 ## Supported Drivers
 
 While Adminer supports a wide range of database drivers this image only supports the following out of the box:
@@ -93,7 +101,4 @@ To add support for the other drivers you will need to install the following PHP 
 -	`pdo_dblib` (MS SQL)
 -	`oci8` (Oracle)
 -	`interbase` (Firebird)
-
-The following drivers are not supported by this image:
-
--	MongoDB (The driver is not supported by PHP 7)
+-	`mongodb` (MongoDB)

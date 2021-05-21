@@ -14,40 +14,40 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`3.0.5`, `3.0` (*3.0.5/Dockerfile*)](https://github.com/geonetwork/docker-geonetwork/blob/c2af30125f631f6357d3af3837ec4b80f04b5917/3.0.5/Dockerfile)
--	[`3.0.5-postgres`, `3.0-postgres` (*3.0.5/postgres/Dockerfile*)](https://github.com/geonetwork/docker-geonetwork/blob/e5cf5da76f557481c35b4a4d3e3cac77768a1302/3.0.5/postgres/Dockerfile)
--	[`3.2.2`, `3.2`, `latest` (*3.2.2/Dockerfile*)](https://github.com/geonetwork/docker-geonetwork/blob/7ba5f533d9ee31cf1a22d4d6a1a84fbb74f86466/3.2.2/Dockerfile)
--	[`3.2.2-postgres`, `3.2-postgres`, `postgres` (*3.2.2/postgres/Dockerfile*)](https://github.com/geonetwork/docker-geonetwork/blob/7ba5f533d9ee31cf1a22d4d6a1a84fbb74f86466/3.2.2/postgres/Dockerfile)
-
 # Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
-
--	**Where to file issues**:  
-	[https://github.com/geonetwork/docker-geonetwork/issues](https://github.com/geonetwork/docker-geonetwork/issues)
 
 -	**Maintained by**:  
 	[GeoNetwork opensource](https://github.com/geonetwork/docker-geonetwork)
 
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+# Supported tags and respective `Dockerfile` links
+
+-	[`3.10.6`, `3.10`](https://github.com/geonetwork/docker-geonetwork/blob/a737bd2c96b3d960ba6c9cade863d2330386847a/3.10.6/Dockerfile)
+-	[`3.10.6-postgres`, `3.10-postgres`](https://github.com/geonetwork/docker-geonetwork/blob/a737bd2c96b3d960ba6c9cade863d2330386847a/3.10.6/postgres/Dockerfile)
+-	[`3.12.0`, `3.12`, `3`](https://github.com/geonetwork/docker-geonetwork/blob/2569285483fb984c55bb8952958ec60025d38c3b/3.12.0/Dockerfile)
+-	[`3.12.0-postgres`, `3.12-postgres`, `3-postgres`](https://github.com/geonetwork/docker-geonetwork/blob/2569285483fb984c55bb8952958ec60025d38c3b/3.12.0/postgres/Dockerfile)
+-	[`4.0.4`, `4.0`, `4`, `latest`](https://github.com/geonetwork/docker-geonetwork/blob/4c0be361accedb96a1a96b4689c7eb133ddca5b7/4.0.4/Dockerfile)
+
+# Quick reference (cont.)
+
+-	**Where to file issues**:  
+	[https://github.com/geonetwork/docker-geonetwork/issues](https://github.com/geonetwork/docker-geonetwork/issues)
+
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/geonetwork/)
+	[`amd64`](https://hub.docker.com/r/amd64/geonetwork/), [`arm64v8`](https://hub.docker.com/r/arm64v8/geonetwork/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/geonetwork/` directory](https://github.com/docker-library/repo-info/blob/master/repos/geonetwork) ([history](https://github.com/docker-library/repo-info/commits/master/repos/geonetwork))  
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/geonetwork`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fgeonetwork)  
+	[official-images repo's `library/geonetwork` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fgeonetwork)  
 	[official-images repo's `library/geonetwork` file](https://github.com/docker-library/official-images/blob/master/library/geonetwork) ([history](https://github.com/docker-library/official-images/commits/master/library/geonetwork))
 
 -	**Source of this description**:  
 	[docs repo's `geonetwork/` directory](https://github.com/docker-library/docs/tree/master/geonetwork) ([history](https://github.com/docker-library/docs/commits/master/geonetwork))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is GeoNetwork?
 
@@ -83,24 +83,24 @@ $ docker run --name some-geonetwork -d -p 8080:8080 geonetwork
 
 Then, if you are running docker on Linux, you may access geonetwork at http://localhost:8080/geonetwork. Otherwise, replace `localhost` by the address of your docker machine.
 
-## Set the data directory
+## Set the data directory and H2 db file
 
-The data directory is the location on the file system where the catalog stores much of its custom configuration and uploaded files. It is also where it stores a number of support files, used for various purposes (e.g.: Lucene index, spatial index, thumbnails).
+The data directory is the location on the file system where the catalog stores much of its custom configuration and uploaded files. It is also where it stores a number of support files, used for various purposes (e.g.: Lucene index, spatial index, thumbnails). The default variant also uses a local H2 database to store the metadata catalog itself.
 
-By default, geonetwork sets the data directory on `/usr/local/tomcat/webapps/geonetwork/WEB-INF/data`, but you may override this value by injecting an environment variable into the container: - `-e DATA_DIR=...` (defaults to `/usr/local/tomcat/webapps/geonetwork/WEB-INF/data`)
+By default, geonetwork sets the data directory on `/usr/local/tomcat/webapps/geonetwork/WEB-INF/data` and H2 database file to the tomcat bin dir `/usr/local/tomcat/gn.h2.db`, but you may override these values by injecting environment variables into the container: - `-e DATA_DIR=...` (defaults to `/usr/local/tomcat/webapps/geonetwork/WEB-INF/data`) and `-e GEONETWORK_DB_NAME=...` (defaults to `gn` which sets up database `gn.h2.db` in tomcat bin dir `/usr/local/tomcat`). Note that setting the database location via `GEONETWORK_DB_NAME` only works from version 3.10.3 onwards.
 
-For instance, to set the data directory to `/var/lib/geonetwork_data`:
+## Persisting data
+
+To set the data directory to `/var/lib/geonetwork/data` and H2 database file to `/var/lib/geonetwork/db/gn.h2.db` so they both persist through restarts:
 
 ```console
-$ docker run --name some-geonetwork -d -p 8080:8080 -e DATA_DIR=/var/lib/geonetwork_data geonetwork
+$ docker run --name some-geonetwork -d -p 8080:8080 -e DATA_DIR=/var/lib/geonetwork/data -e GEONETWORK_DB_NAME=/var/lib/geonetwork/db/gn geonetwork
 ```
 
-## Persist data
-
-If you want the data directory to live beyond restarts, or even destruction of the container, you can mount a directory from the docker engine's host into the container. - `-v <host path>:<data directory>`. For instance this, will mount the host directory `/host/geonetwork-docker` into `/var/lib/geonetwork_data` on the container:
+If you want the data directory to live beyond restarts, or even destruction of the container, you can mount a directory from the docker engine's host into the container. - `-v /host/path:/path/to/data/directory`. For instance this, will mount the host directory `/host/geonetwork-docker` into `/var/lib/geonetwork` on the container:
 
 ```console
-$ docker run --name some-geonetwork -d -p 8080:8080 -e DATA_DIR=/var/lib/geonetwork_data -v /host/geonetwork-docker:/var/lib/geonetwork_data geonetwork
+$ docker run --name some-geonetwork -d -p 8080:8080 -e DATA_DIR=/var/lib/geonetwork/data -e GEONETWORK_DB_NAME=/var/lib/geonetwork/db/gn -v /host/geonetwork-docker:/var/lib/geonetwork geonetwork
 ```
 
 ## ... via [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/) or [`docker-compose`](https://github.com/docker/compose)
@@ -160,31 +160,43 @@ In order to setup the connection from geonetwork, you **must** inject the follow
 
 If your postgres instance is listening on a non-standard port, you must also set that variable: - `POSTGRES_DB_PORT`: postgres port on your database server (defaults to `5432`)
 
-### Linking to a postgres container
+### Connecting to a postgres database
 
-Linking to a postgres container, is pretty straightforward: - `--link <some-postgres-container>:postgres`
+If you want to connect to a postgres server, you need to pass an extra environment variable, `POSTGRES_DB_HOST`, containing the address of this server.
 
-For instance, if you want to run the official image for postgres, you could launch it like this:
-
-```console
-$ docker run --name some-postgres -p 5432:5432 -d postgres
-```
-
-And then you could launch geonetwork, linking to this container, and setting the required environment variables:
+If you want to connect to an **external database server**, you can use either the IP address or the DNS as `POSTGRES_DB_HOST`. For instance, if the server is running on `mydns.net`, on port `5434`, the username is `postgres` and the password is `mysecretpassword`:
 
 ```console
-$ docker run --name geonetwork -d -p 8080:8080 --link some-postgres:postgres -e POSTGRES_DB_USERNAME=postgres -e POSTGRES_DB_PASSWORD=mysecretpassword geonetwork:postgres
+$ docker run --name geonetwork -d -p 8080:8080 -e POSTGRES_DB_HOST=mydns.net -e POSTGRES_DB_PORT=5434 -e POSTGRES_DB_USERNAME=postgres -e POSTGRES_DB_PASSWORD=mysecretpassword -e POSTGRES_DB_NAME=mydbname geonetwork:postgres
 ```
 
-### Connecting to a postgres instance
-
-If you want to connect to a postgres server running somewhere, you need to pass an extra environment variable, containing the IP address for this server (which could be localhost, if you are running it locally). - `POSTGRES_DB_HOST`: IP address of your database server
-
-For instance, if the server is running on `192.168.1.10`, on port `5434`, the username is `postgres` and the password is `mysecretpassword`:
+If are want to **run postgres on a container**, you can use the container name as `POSTGRES_DB_HOST`: just make sure that containers can discover each other, by **running them in the same user-defined network**. For instance, you can create a bridge network:
 
 ```console
-$ docker run --name geonetwork -d -p 8080:8080 -e POSTGRES_DB_HOST=192.168.1.10 -e POSTGRES_DB_PORT=5434 -e POSTGRES_DB_USERNAME=postgres -e POSTGRES_DB_PASSWORD=mysecretpassword geonetwork:postgres
+$ docker network create --driver bridge mynet
 ```
+
+Then if you want to run the official image of postgres, using `some-postgres` as container name, you could launch it like this:
+
+```console
+$ docker run --name some-postgres --network=mynet -d postgres
+```
+
+And then you could launch geonetwork, making sure you join the same network, and setting the required environment variables, including the `POSTGRES_DB_HOST`:
+
+```console
+$ docker run --name geonetwork -d -p 8080:8080 --network=mynet -e POSTGRES_DB_HOST=some-postgres -e POSTGRES_DB_PORT=5432 -e POSTGRES_DB_USERNAME=postgres -e POSTGRES_DB_PASSWORD=mysecretpassword  -e POSTGRES_DB_NAME=mydbname geonetwork:postgres
+```
+
+#### Configuration environment variables
+
+These are some environments variables that can be set to configure the database connection:
+
+-	`POSTGRES_DB_HOST`: database host name.
+-	`POSTGRES_DB_PORT`: port where database server is listening (by default `5432`).
+-	`POSTGRES_DB_NAME`: name of the database. If it doesn't exist the container will try to create it.
+-	`POSTGRES_DB_USERNAME`: username.
+-	`POSTGRES_DB_PASSWORD`: password.
 
 # License
 

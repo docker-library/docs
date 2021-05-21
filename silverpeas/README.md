@@ -14,20 +14,24 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`6.0-beta1`, `latest` (*Dockerfile*)](https://github.com/Silverpeas/docker-silverpeas-prod/blob/03bd2800e83bf262d07b53f067758115fa6f05fc/Dockerfile)
-
 # Quick reference
+
+-	**Maintained by**:  
+	[Silverpeas](https://github.com/Silverpeas/docker-silverpeas-prod)
 
 -	**Where to get help**:  
 	[the Silverpeas user mailing list](https://groups.google.com/forum/#!forum/silverpeas-users)
 
+# Supported tags and respective `Dockerfile` links
+
+-	[`6.2`, `latest`](https://github.com/Silverpeas/docker-silverpeas-prod/blob/558d384db05b003735f876a2d8a96aa3d404bfb4/Dockerfile)
+-	[`6.1.3`](https://github.com/Silverpeas/docker-silverpeas-prod/blob/8577cb90ed86ef24248d1283f032c541a38d38ea/Dockerfile)
+-	[`6.0.2`](https://github.com/Silverpeas/docker-silverpeas-prod/blob/189a4f2db783d5052add54f2c07ca7a3b860c685/Dockerfile)
+
+# Quick reference (cont.)
+
 -	**Where to file issues**:  
 	[https://github.com/Silverpeas/docker-silverpeas-prod/issues](https://github.com/Silverpeas/docker-silverpeas-prod/issues)
-
--	**Maintained by**:  
-	[Silverpeas](https://github.com/Silverpeas/docker-silverpeas-prod)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/silverpeas/)
@@ -37,14 +41,11 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/silverpeas`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fsilverpeas)  
+	[official-images repo's `library/silverpeas` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fsilverpeas)  
 	[official-images repo's `library/silverpeas` file](https://github.com/docker-library/official-images/blob/master/library/silverpeas) ([history](https://github.com/docker-library/official-images/commits/master/library/silverpeas))
 
 -	**Source of this description**:  
 	[docs repo's `silverpeas/` directory](https://github.com/docker-library/docs/tree/master/silverpeas) ([history](https://github.com/docker-library/docs/commits/master/silverpeas))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Silverpeas
 
@@ -86,12 +87,27 @@ In [Docker Hub](https://hub.docker.com/), no Docker images of Microsoft SQLServe
 $ docker run --name postgresql -d \
     -e POSTGRES_PASSWORD="mysecretpassword" \
     -v postgresql-data:/var/lib/postgresql/data \
-    postgres:9.6
+    postgres:12.3
 ```
 
 We recommend strongly to mount the directory with the database file on the host so the data won't be lost when upgrading PostgreSQL to a newer version (a Data Volume Container can be used instead). For any information how to start a PostgreSQL container, you can refer its [documentation](https://hub.docker.com/_/postgres/).
 
-Once the database system is running, a database for Silverpeas has to be created and a user with administrative rights on this database (and only on this database) should be added; it is recommended for a security reason to create a dedicated user account in the database for each application and therefore for Silverpeas. In this document, and by default, a database `Silverpeas` and a user `silverpeas` for that database are created.
+Once the database system is running, a database for Silverpeas has to be created and a user with administrative rights on this database (and only on this database) should be added; it is recommended for a security reason to create a dedicated user account in the database for each application and therefore for Silverpeas. In this document, and by default, a database `Silverpeas` and a user `silverpeas` for that database are created. For example:
+
+```console
+$ docker exec -it postgresql psql -U postgres
+psql (12.3 (Debian 12.3-1.pgdg100+1))
+Type "help" for help.
+
+postgres=# create database "Silverpeas";
+CREATE DATABASE
+postgres=# create user silverpeas with password 'thesilverpeaspassword';
+CREATE ROLE
+postgres=# grant all privileges on database "Silverpeas" to silverpeas;
+GRANT
+postgres=# \q
+$
+```
 
 ### Start a Silverpeas instance with the default configuration
 

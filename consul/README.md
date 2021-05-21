@@ -14,37 +14,39 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`1.0.1`, `latest` (*0.X/Dockerfile*)](https://github.com/hashicorp/docker-consul/blob/c6a80d636dc712244256ef445476df36156705a6/0.X/Dockerfile)
-
 # Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
-
--	**Where to file issues**:  
-	[https://github.com/hashicorp/docker-consul/issues](https://github.com/hashicorp/docker-consul/issues)
 
 -	**Maintained by**:  
 	[HashiCorp](https://github.com/hashicorp/docker-consul)
 
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+# Supported tags and respective `Dockerfile` links
+
+-	[`1.10.0-beta2`, `1.10.0-beta`](https://github.com/hashicorp/docker-consul/blob/1f909f5d28ddac5be608d1281502de94a2a7132f/0.X/Dockerfile)
+-	[`1.9.5`, `1.9`, `latest`](https://github.com/hashicorp/docker-consul/blob/c77d4c566243f4c75a3efb226b074b3e2063a3f3/0.X/Dockerfile)
+-	[`1.8.10`, `1.8`](https://github.com/hashicorp/docker-consul/blob/12580e22affec44a4ce60590ccfaf0974d7d5c7b/0.X/Dockerfile)
+-	[`1.7.14`, `1.7`](https://github.com/hashicorp/docker-consul/blob/43b15caac2a3d8f61c9ef57fab8e9eee1a07ca60/0.X/Dockerfile)
+
+# Quick reference (cont.)
+
+-	**Where to file issues**:  
+	[https://github.com/hashicorp/docker-consul/issues](https://github.com/hashicorp/docker-consul/issues)
+
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/consul/)
+	[`amd64`](https://hub.docker.com/r/amd64/consul/), [`arm32v6`](https://hub.docker.com/r/arm32v6/consul/), [`arm64v8`](https://hub.docker.com/r/arm64v8/consul/), [`i386`](https://hub.docker.com/r/i386/consul/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/consul/` directory](https://github.com/docker-library/repo-info/blob/master/repos/consul) ([history](https://github.com/docker-library/repo-info/commits/master/repos/consul))  
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/consul`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fconsul)  
+	[official-images repo's `library/consul` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fconsul)  
 	[official-images repo's `library/consul` file](https://github.com/docker-library/official-images/blob/master/library/consul) ([history](https://github.com/docker-library/official-images/commits/master/library/consul))
 
 -	**Source of this description**:  
 	[docs repo's `consul/` directory](https://github.com/docker-library/docs/tree/master/consul) ([history](https://github.com/docker-library/docs/commits/master/consul))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # Consul
 
@@ -53,11 +55,11 @@ Consul is a distributed, highly-available, and multi-datacenter aware tool for s
 -	[Consul documentation](https://www.consul.io/)
 -	[Consul on GitHub](https://github.com/hashicorp/consul)
 
-![logo](https://cdn.rawgit.com/docker-library/docs/8adb88e1e328c244711742f65319ed4064cff9a2/consul/logo.svg)
+![logo](https://raw.githubusercontent.com/docker-library/docs/8adb88e1e328c244711742f65319ed4064cff9a2/consul/logo.svg?sanitize=true)
 
 # Consul and Docker
 
-Consul has several moving parts so we'll start with a brief introduction to Consul's architecture and then detail how Consul interacts with Docker. Please see the [Consul Architecture](https://www.consul.io/docs/internals/architecture.html) guide for more detail on all these concepts.
+Consul has several moving parts so we'll start with a brief introduction to Consul's architecture and then detail how Consul interacts with Docker. Please see the [Consul Architecture](https://www.consul.io/docs/architecture) guide for more detail on all these concepts.
 
 Each host in a Consul cluster runs the Consul agent, a long running daemon that can be started in client or server mode. Each cluster has at least 1 agent in server mode, and usually 3 or 5 for high availability. The server agents participate in a [consensus protocol](https://www.consul.io/docs/internals/consensus.html), maintain a centralized view of the cluster's state, and respond to queries from other agents in the cluster. The rest of the agents in client mode participate in a [gossip protocol](https://www.consul.io/docs/internals/gossip.html) to discover other agents and check them for failures, and they forward queries about the cluster to the server agents.
 
@@ -75,7 +77,7 @@ Consul always runs under [dumb-init](https://github.com/Yelp/dumb-init), which h
 
 Running the Consul container with no arguments will give you a Consul server in [development mode](https://www.consul.io/docs/agent/options.html#_dev). The provided entry point script will also look for Consul subcommands and run `consul` as the correct user and with that subcommand. For example, you can execute `docker run consul members` and it will run the `consul members` command inside the container. The entry point also adds some special configuration options as detailed in the sections below when running the `agent` subcommand. Any other command gets `exec`-ed inside the container under `dumb-init`.
 
-The container exposes `VOLUME /consul/data`, which is a path were Consul will place its persisted state. This isn't used in any way when running in development mode. For client agents, this stores some information about the cluster and the client's health checks in case the container is restarted. For server agents, this stores the client information plus snapshots and data related to the consensus algorithm and other state like Consul's key/value store and catalog. For servers it is highly desirable to keep this volume's data around when restarting containers to recover from outage scenarios. If this is bind mounted then ownership will be changed to the consul user when the container starts.
+The container exposes `VOLUME /consul/data`, which is a path where Consul will place its persisted state. This isn't used in any way when running in development mode. For client agents, this stores some information about the cluster and the client's health checks in case the container is restarted. For server agents, this stores the client information plus snapshots and data related to the consensus algorithm and other state like Consul's key/value store and catalog. For servers it is highly desirable to keep this volume's data around when restarting containers to recover from outage scenarios. If this is bind mounted then ownership will be changed to the consul user when the container starts.
 
 The container has a Consul configuration directory set up at `/consul/config` and the agent will load any configuration files placed here by binding a volume or by composing a new image and adding files. Alternatively, configuration can be added by passing the configuration JSON via environment variable `CONSUL_LOCAL_CONFIG`. If this is bind mounted then ownership will be changed to the consul user when the container starts.
 

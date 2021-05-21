@@ -14,22 +14,25 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`5.5.0`, `5.5`, `5` (*5/Dockerfile*)](https://github.com/docker-library/gcc/blob/18171698e694c648ccf2cc1aa98ea806b58701d5/5/Dockerfile)
--	[`6.4.0`, `6.4`, `6` (*6/Dockerfile*)](https://github.com/docker-library/gcc/blob/18171698e694c648ccf2cc1aa98ea806b58701d5/6/Dockerfile)
--	[`7.2.0`, `7.2`, `7`, `latest` (*7/Dockerfile*)](https://github.com/docker-library/gcc/blob/9bf9204098e91914c02bc07d1fb44e33555276ed/7/Dockerfile)
-
 # Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
-
--	**Where to file issues**:  
-	[https://github.com/docker-library/gcc/issues](https://github.com/docker-library/gcc/issues)
 
 -	**Maintained by**:  
 	[the Docker Community](https://github.com/docker-library/gcc)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+# Supported tags and respective `Dockerfile` links
+
+-	[`11.1.0`, `11.1`, `11`, `latest`, `11.1.0-bullseye`, `11.1-bullseye`, `11-bullseye`, `bullseye`](https://github.com/docker-library/gcc/blob/a5937a0b39e55c174007c2b9c2f363cdd2142818/11/Dockerfile)
+-	[`10.3.0`, `10.3`, `10`, `10.3.0-buster`, `10.3-buster`, `10-buster`](https://github.com/docker-library/gcc/blob/a5937a0b39e55c174007c2b9c2f363cdd2142818/10/Dockerfile)
+-	[`9.3.0`, `9.3`, `9`, `9.3.0-buster`, `9.3-buster`, `9-buster`](https://github.com/docker-library/gcc/blob/a5937a0b39e55c174007c2b9c2f363cdd2142818/9/Dockerfile)
+-	[`8.5.0`, `8.5`, `8`, `8.5.0-buster`, `8.5-buster`, `8-buster`](https://github.com/docker-library/gcc/blob/93a66921c867fd54e7672e852a8aec4619fbc6de/8/Dockerfile)
+
+# Quick reference (cont.)
+
+-	**Where to file issues**:  
+	[https://github.com/docker-library/gcc/issues](https://github.com/docker-library/gcc/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/gcc/), [`arm32v5`](https://hub.docker.com/r/arm32v5/gcc/), [`arm32v7`](https://hub.docker.com/r/arm32v7/gcc/), [`arm64v8`](https://hub.docker.com/r/arm64v8/gcc/), [`ppc64le`](https://hub.docker.com/r/ppc64le/gcc/), [`s390x`](https://hub.docker.com/r/s390x/gcc/)
@@ -39,14 +42,11 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/gcc`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fgcc)  
+	[official-images repo's `library/gcc` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fgcc)  
 	[official-images repo's `library/gcc` file](https://github.com/docker-library/official-images/blob/master/library/gcc) ([history](https://github.com/docker-library/official-images/commits/master/library/gcc))
 
 -	**Source of this description**:  
 	[docs repo's `gcc/` directory](https://github.com/docker-library/docs/tree/master/gcc) ([history](https://github.com/docker-library/docs/commits/master/gcc))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is GCC?
 

@@ -1,1 +1,1 @@
-[the Træfik Project](%%GITHUB-REPO%%)
+[the Traefik Project](%%GITHUB-REPO%%)

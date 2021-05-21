@@ -14,38 +14,38 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`6`, `latest` (*6/Dockerfile*)](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/d94167fc4cf0dcca9dfed717de5a38a505349f08/6/Dockerfile)
--	[`5`, `5.1` (*5/Dockerfile*)](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/d94167fc4cf0dcca9dfed717de5a38a505349f08/5/Dockerfile)
-
 # Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
-
--	**Where to file issues**:  
-	[https://github.com/juanluisbaptiste/docker-brew-mageia/issues](https://github.com/juanluisbaptiste/docker-brew-mageia/issues)
 
 -	**Maintained by**:  
 	[Mageia Developers](https://github.com/juanluisbaptiste/docker-brew-mageia)
 
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+# Supported tags and respective `Dockerfile` links
+
+-	[`8`, `latest`](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/067e6df19c568e101a42dc71b77f6a2de5992c70/dist/8/x86_64/Dockerfile)
+-	[`7`](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/067e6df19c568e101a42dc71b77f6a2de5992c70/dist/7/x86_64/Dockerfile)
+-	[`cauldron`](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/067e6df19c568e101a42dc71b77f6a2de5992c70/dist/cauldron/x86_64/Dockerfile)
+
+# Quick reference (cont.)
+
+-	**Where to file issues**:  
+	[https://github.com/juanluisbaptiste/docker-brew-mageia/issues](https://github.com/juanluisbaptiste/docker-brew-mageia/issues)
+
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/mageia/)
+	[`amd64`](https://hub.docker.com/r/amd64/mageia/), [`arm32v7`](https://hub.docker.com/r/arm32v7/mageia/), [`arm64v8`](https://hub.docker.com/r/arm64v8/mageia/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/mageia/` directory](https://github.com/docker-library/repo-info/blob/master/repos/mageia) ([history](https://github.com/docker-library/repo-info/commits/master/repos/mageia))  
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/mageia`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmageia)  
+	[official-images repo's `library/mageia` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fmageia)  
 	[official-images repo's `library/mageia` file](https://github.com/docker-library/official-images/blob/master/library/mageia) ([history](https://github.com/docker-library/official-images/commits/master/library/mageia))
 
 -	**Source of this description**:  
 	[docs repo's `mageia/` directory](https://github.com/docker-library/docs/tree/master/mageia) ([history](https://github.com/docker-library/docs/commits/master/mageia))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Mageia?
 

@@ -14,20 +14,28 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
+# **DEPRECATION NOTICE**
 
--	[`latest`, `0.62` (*stable/Dockerfile*)](https://github.com/vaygr/docker-sourcemage/blob/a03bbe3ae7bbb839c3c69afd4504ca336f7b9cb9/stable/Dockerfile)
+This image is deprecated due to maintainer inactivity (last updated Dec 2016; [docker-library/official-images#2403](https://github.com/docker-library/official-images/pull/2403)).
+
+See [docker-library/docs#1433](https://github.com/docker-library/docs/pull/1433) for discussion around an in-progress upstream update.
 
 # Quick reference
 
+-	**Maintained by**:  
+	[the Source Mage Community](https://github.com/vaygr/docker-sourcemage)
+
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+# Supported tags and respective `Dockerfile` links
+
+-	[`latest`, `0.62`](https://github.com/vaygr/docker-sourcemage/blob/a03bbe3ae7bbb839c3c69afd4504ca336f7b9cb9/stable/Dockerfile)
+
+# Quick reference (cont.)
 
 -	**Where to file issues**:  
 	[https://github.com/vaygr/docker-sourcemage/issues](https://github.com/vaygr/docker-sourcemage/issues)
-
--	**Maintained by**:  
-	[the Source Mage Community](https://github.com/vaygr/docker-sourcemage)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/sourcemage/)
@@ -37,14 +45,11 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/sourcemage`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fsourcemage)  
+	[official-images repo's `library/sourcemage` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fsourcemage)  
 	[official-images repo's `library/sourcemage` file](https://github.com/docker-library/official-images/blob/master/library/sourcemage) ([history](https://github.com/docker-library/official-images/commits/master/library/sourcemage))
 
 -	**Source of this description**:  
 	[docs repo's `sourcemage/` directory](https://github.com/docker-library/docs/tree/master/sourcemage) ([history](https://github.com/docker-library/docs/commits/master/sourcemage))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # Docker images for Source Mage GNU/Linux
 

@@ -1,1 +1,0 @@
-[Piwik Analytics](%%GITHUB-REPO%%)

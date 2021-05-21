@@ -14,46 +14,55 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`4.3.1-jdk7`, `4.3-jdk7`, `jdk7` (*jdk7/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/1d0a9b199274b66cbb247279bb50ceaacdfb2e31/jdk7/Dockerfile)
--	[`4.3.1-jre7`, `4.3-jre7`, `jre7` (*jre7/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/1d0a9b199274b66cbb247279bb50ceaacdfb2e31/jre7/Dockerfile)
--	[`4.3.1-jdk7-alpine`, `4.3-jdk7-alpine`, `jdk7-alpine` (*jdk7-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/1d0a9b199274b66cbb247279bb50ceaacdfb2e31/jdk7-alpine/Dockerfile)
--	[`4.3.1-jre7-alpine`, `4.3-jre7-alpine`, `jre7-alpine` (*jre7-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/1d0a9b199274b66cbb247279bb50ceaacdfb2e31/jre7-alpine/Dockerfile)
--	[`4.3.1-jdk8`, `4.3-jdk8`, `jdk8`, `4.3.1-jdk`, `4.3-jdk`, `jdk`, `4.3.1`, `4.3`, `latest` (*jdk8/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/1d0a9b199274b66cbb247279bb50ceaacdfb2e31/jdk8/Dockerfile)
--	[`4.3.1-jre8`, `4.3-jre8`, `jre8`, `4.3.1-jre`, `4.3-jre`, `jre` (*jre8/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/1d0a9b199274b66cbb247279bb50ceaacdfb2e31/jre8/Dockerfile)
--	[`4.3.1-jdk8-alpine`, `4.3-jdk8-alpine`, `jdk8-alpine`, `4.3.1-jdk-alpine`, `4.3-jdk-alpine`, `jdk-alpine`, `4.3.1-alpine`, `4.3-alpine`, `alpine` (*jdk8-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/1d0a9b199274b66cbb247279bb50ceaacdfb2e31/jdk8-alpine/Dockerfile)
--	[`4.3.1-jre8-alpine`, `4.3-jre8-alpine`, `jre8-alpine`, `4.3.1-jre-alpine`, `4.3-jre-alpine`, `jre-alpine` (*jre8-alpine/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/1d0a9b199274b66cbb247279bb50ceaacdfb2e31/jre8-alpine/Dockerfile)
--	[`4.3.1-jdk9`, `4.3-jdk9`, `jdk9` (*jdk9/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/1d0a9b199274b66cbb247279bb50ceaacdfb2e31/jdk9/Dockerfile)
--	[`4.3.1-jre9`, `4.3-jre9`, `jre9` (*jre9/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/1d0a9b199274b66cbb247279bb50ceaacdfb2e31/jre9/Dockerfile)
-
 # Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
-
--	**Where to file issues**:  
-	[https://github.com/keeganwitt/docker-gradle/issues](https://github.com/keeganwitt/docker-gradle/issues)
 
 -	**Maintained by**:  
 	[Keegan Witt (of the Groovy Project)](https://github.com/keeganwitt/docker-gradle), [with the Gradle Project's approval](https://discuss.gradle.org/t/official-docker-images/21159/8)
 
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+# Supported tags and respective `Dockerfile` links
+
+-	[`7.0.2-jdk8`, `7.0.2-jdk8-hotspot`, `7.0-jdk8`, `7.0-jdk8-hotspot`, `7-jdk8`, `7-jdk8-hotspot`, `jdk8`, `jdk8-hotspot`, `7.0.2-jdk`, `7.0.2-jdk-hotspot`, `7.0-jdk`, `7.0-jdk-hotspot`, `7-jdk`, `7-jdk-hotspot`, `jdk`, `jdk-hotspot`, `7.0.2`, `7.0.2-hotspot`, `7.0`, `7.0-hotspot`, `7`, `7-hotspot`, `latest`, `hotspot`](https://github.com/keeganwitt/docker-gradle/blob/f7b336763b0bc658605154d322ab4a99e2549b64/hotspot/jdk8/Dockerfile)
+-	[`7.0.2-jre8`, `7.0.2-jre8-hotspot`, `7.0-jre8`, `7.0-jre8-hotspot`, `7-jre8`, `7-jre8-hotspot`, `jre8`, `jre8-hotspot`, `7.0.2-jre`, `7.0.2-jre-hotspot`, `7.0-jre`, `7.0-jre-hotspot`, `7-jre`, `7-jre-hotspot`, `jre`, `jre-hotspot`](https://github.com/keeganwitt/docker-gradle/blob/f7b336763b0bc658605154d322ab4a99e2549b64/hotspot/jre8/Dockerfile)
+-	[`7.0.2-jdk11`, `7.0.2-jdk11-hotspot`, `7.0-jdk11`, `7.0-jdk11-hotspot`, `7-jdk11`, `7-jdk11-hotspot`, `jdk11`, `jdk11-hotspot`](https://github.com/keeganwitt/docker-gradle/blob/f7b336763b0bc658605154d322ab4a99e2549b64/hotspot/jdk11/Dockerfile)
+-	[`7.0.2-jre11`, `7.0.2-jre11-hotspot`, `7.0-jre11`, `7.0-jre11-hotspot`, `7-jre11`, `7-jre11-hotspot`, `jre11`, `jre11-hotspot`](https://github.com/keeganwitt/docker-gradle/blob/f7b336763b0bc658605154d322ab4a99e2549b64/hotspot/jre11/Dockerfile)
+-	[`7.0.2-jdk16`, `7.0.2-jdk16-hotspot`, `7.0-jdk16`, `7.0-jdk16-hotspot`, `7-jdk16`, `7-jdk16-hotspot`, `jdk16`, `jdk16-hotspot`](https://github.com/keeganwitt/docker-gradle/blob/f7b336763b0bc658605154d322ab4a99e2549b64/hotspot/jdk16/Dockerfile)
+-	[`7.0.2-jre16`, `7.0.2-jre16-hotspot`, `7.0-jre16`, `7.0-jre16-hotspot`, `7-jre16`, `7-jre16-hotspot`, `jre16`, `jre16-hotspot`](https://github.com/keeganwitt/docker-gradle/blob/f7b336763b0bc658605154d322ab4a99e2549b64/hotspot/jre16/Dockerfile)
+-	[`7.0.2-jdk8-openj9`, `7.0-jdk8-openj9`, `7-jdk8-openj9`, `jdk8-openj9`, `7.0.2-jdk-openj9`, `7.0-jdk-openj9`, `7-jdk-openj9`, `jdk-openj9`, `7.0.2-openj9`, `7.0-openj9`, `7-openj9`, `openj9`](https://github.com/keeganwitt/docker-gradle/blob/f7b336763b0bc658605154d322ab4a99e2549b64/openj9/jdk8/Dockerfile)
+-	[`7.0.2-jre8-openj9`, `7.0-jre8-openj9`, `7-jre8-openj9`, `jre8-openj9`, `7.0.2-jre-openj9`, `7.0-jre-openj9`, `7-jre-openj9`, `jre-openj9`](https://github.com/keeganwitt/docker-gradle/blob/f7b336763b0bc658605154d322ab4a99e2549b64/openj9/jre8/Dockerfile)
+-	[`7.0.2-jdk11-openj9`, `7.0-jdk11-openj9`, `7-jdk11-openj9`, `jdk11-openj9`](https://github.com/keeganwitt/docker-gradle/blob/f7b336763b0bc658605154d322ab4a99e2549b64/openj9/jdk11/Dockerfile)
+-	[`7.0.2-jre11-openj9`, `7.0-jre11-openj9`, `7-jre11-openj9`, `jre11-openj9`](https://github.com/keeganwitt/docker-gradle/blob/f7b336763b0bc658605154d322ab4a99e2549b64/openj9/jre11/Dockerfile)
+-	[`7.0.2-jdk16-openj9`, `7.0-jdk16-openj9`, `7-jdk16-openj9`, `jdk16-openj9`](https://github.com/keeganwitt/docker-gradle/blob/f7b336763b0bc658605154d322ab4a99e2549b64/openj9/jdk16/Dockerfile)
+-	[`7.0.2-jre16-openj9`, `7.0-jre16-openj9`, `7-jre16-openj9`, `jre16-openj9`](https://github.com/keeganwitt/docker-gradle/blob/f7b336763b0bc658605154d322ab4a99e2549b64/openj9/jre16/Dockerfile)
+-	[`6.9.0-jdk8`, `6.9.0-jdk8-hotspot`, `6.9-jdk8`, `6.9-jdk8-hotspot`, `6-jdk8`, `6-jdk8-hotspot`, `6.9.0-jdk`, `6.9.0-jdk-hotspot`, `6.9-jdk`, `6.9-jdk-hotspot`, `6-jdk`, `6-jdk-hotspot`, `6.9.0`, `6.9.0-hotspot`, `6.9`, `6.9-hotspot`, `6`, `6-hotspot`](https://github.com/keeganwitt/docker-gradle/blob/337ce758ae6c3b0c6ebe2e00f5eef2743d34c165/hotspot/jdk8/Dockerfile)
+-	[`6.9.0-jre8`, `6.9.0-jre8-hotspot`, `6.9-jre8`, `6.9-jre8-hotspot`, `6-jre8`, `6-jre8-hotspot`, `6.9.0-jre`, `6.9.0-jre-hotspot`, `6.9-jre`, `6.9-jre-hotspot`, `6-jre`, `6-jre-hotspot`](https://github.com/keeganwitt/docker-gradle/blob/337ce758ae6c3b0c6ebe2e00f5eef2743d34c165/hotspot/jre8/Dockerfile)
+-	[`6.9.0-jdk11`, `6.9.0-jdk11-hotspot`, `6.9-jdk11`, `6.9-jdk11-hotspot`, `6-jdk11`, `6-jdk11-hotspot`](https://github.com/keeganwitt/docker-gradle/blob/337ce758ae6c3b0c6ebe2e00f5eef2743d34c165/hotspot/jdk11/Dockerfile)
+-	[`6.9.0-jre11`, `6.9.0-jre11-hotspot`, `6.9-jre11`, `6.9-jre11-hotspot`, `6-jre11`, `6-jre11-hotspot`](https://github.com/keeganwitt/docker-gradle/blob/337ce758ae6c3b0c6ebe2e00f5eef2743d34c165/hotspot/jre11/Dockerfile)
+-	[`6.9.0-jdk8-openj9`, `6.9-jdk8-openj9`, `6-jdk8-openj9`, `6.9.0-jdk-openj9`, `6.9-jdk-openj9`, `6-jdk-openj9`, `6.9.0-openj9`, `6.9-openj9`, `6-openj9`](https://github.com/keeganwitt/docker-gradle/blob/337ce758ae6c3b0c6ebe2e00f5eef2743d34c165/openj9/jdk8/Dockerfile)
+-	[`6.9.0-jre8-openj9`, `6.9-jre8-openj9`, `6-jre8-openj9`, `6.9.0-jre-openj9`, `6.9-jre-openj9`, `6-jre-openj9`](https://github.com/keeganwitt/docker-gradle/blob/337ce758ae6c3b0c6ebe2e00f5eef2743d34c165/openj9/jre8/Dockerfile)
+-	[`6.9.0-jdk11-openj9`, `6.9-jdk11-openj9`, `6-jdk11-openj9`](https://github.com/keeganwitt/docker-gradle/blob/337ce758ae6c3b0c6ebe2e00f5eef2743d34c165/openj9/jdk11/Dockerfile)
+-	[`6.9.0-jre11-openj9`, `6.9-jre11-openj9`, `6-jre11-openj9`](https://github.com/keeganwitt/docker-gradle/blob/337ce758ae6c3b0c6ebe2e00f5eef2743d34c165/openj9/jre11/Dockerfile)
+
+# Quick reference (cont.)
+
+-	**Where to file issues**:  
+	[https://github.com/keeganwitt/docker-gradle/issues](https://github.com/keeganwitt/docker-gradle/issues)
+
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/gradle/)
+	[`amd64`](https://hub.docker.com/r/amd64/gradle/), [`arm32v7`](https://hub.docker.com/r/arm32v7/gradle/), [`arm64v8`](https://hub.docker.com/r/arm64v8/gradle/), [`ppc64le`](https://hub.docker.com/r/ppc64le/gradle/), [`s390x`](https://hub.docker.com/r/s390x/gradle/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/gradle/` directory](https://github.com/docker-library/repo-info/blob/master/repos/gradle) ([history](https://github.com/docker-library/repo-info/commits/master/repos/gradle))  
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/gradle`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fgradle)  
+	[official-images repo's `library/gradle` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fgradle)  
 	[official-images repo's `library/gradle` file](https://github.com/docker-library/official-images/blob/master/library/gradle) ([history](https://github.com/docker-library/official-images/commits/master/library/gradle))
 
 -	**Source of this description**:  
 	[docs repo's `gradle/` directory](https://github.com/docker-library/docs/tree/master/gradle) ([history](https://github.com/docker-library/docs/commits/master/gradle))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Gradle?
 
@@ -63,31 +72,15 @@ WARNING:
 
 # How to use this image
 
-Note that if you are mounting a volume and the uid running Docker is not `1000`, you should run as user `root` (`-u root`).
-
 ## Building a Gradle project
 
 Run this from the directory of the Gradle project you want to build.
 
-`docker run --rm -v "$PWD":/home/gradle/project -w /home/gradle/project gradle gradle <gradle-task>`
+`docker run --rm -u gradle -v "$PWD":/home/gradle/project -w /home/gradle/project gradle gradle <gradle-task>`
 
-**Note: Java 9 support is experimental**
+Note the above command runs using uid/gid 1000 (user *gradle*) to avoid running as root.
 
-# Image Variants
-
-The `gradle` images come in many flavors, each designed for a specific use case.
-
-## `gradle:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-## `gradle:alpine`
-
-This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
-
-This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
-
-To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
+If you are mounting a volume and the uid/gid running Docker is not *1000*, you should run as user *root* (`-u root`). *root* is also the default, so you can also simply not specify a user.
 
 # License
 

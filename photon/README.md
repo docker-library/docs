@@ -14,43 +14,45 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`1.0`, `latest` (*1.0/Dockerfile*)](https://github.com/vmware/photon-docker-image/blob/39c3c62cd649b1d64178b24cd23d9196461dc818/1.0/Dockerfile)
-
 # Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
-
--	**Where to file issues**:  
-	[https://github.com/vmware/photon-docker-image/issues](https://github.com/vmware/photon-docker-image/issues)
 
 -	**Maintained by**:  
 	[VMware](https://github.com/vmware/photon-docker-image)
 
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+# Supported tags and respective `Dockerfile` links
+
+-	[`4.0`, `4.0-20210507`, `latest`](https://github.com/vmware/photon-docker-image/blob/0946ba23a6f379b97e8c7be5493955c7961cea49/docker/Dockerfile)
+-	[`3.0`, `3.0-20210514`](https://github.com/vmware/photon-docker-image/blob/e323221aee98bad884ce7b488e123c0740661c60/docker/Dockerfile)
+-	[`1.0`, `1.0-20210507`](https://github.com/vmware/photon-docker-image/blob/8eae252d6026af1f857306d0252adaf40ce1787f/docker/Dockerfile)
+-	[`2.0`, `2.0-20210514`](https://github.com/vmware/photon-docker-image/blob/8235e78fc8c0b678eea84388b6cdf38b0ee5f19c/docker/Dockerfile)
+
+# Quick reference (cont.)
+
+-	**Where to file issues**:  
+	[https://github.com/vmware/photon-docker-image/issues](https://github.com/vmware/photon-docker-image/issues)
+
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/photon/)
+	[`amd64`](https://hub.docker.com/r/amd64/photon/), [`arm64v8`](https://hub.docker.com/r/arm64v8/photon/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/photon/` directory](https://github.com/docker-library/repo-info/blob/master/repos/photon) ([history](https://github.com/docker-library/repo-info/commits/master/repos/photon))  
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/photon`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fphoton)  
+	[official-images repo's `library/photon` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fphoton)  
 	[official-images repo's `library/photon` file](https://github.com/docker-library/official-images/blob/master/library/photon) ([history](https://github.com/docker-library/official-images/commits/master/library/photon))
 
 -	**Source of this description**:  
 	[docs repo's `photon/` directory](https://github.com/docker-library/docs/tree/master/photon) ([history](https://github.com/docker-library/docs/commits/master/photon))
 
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
-
 # VMware Photon OS
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/de9a58372c9e1e58ccb08186ab6ebed278b86521/photon/logo.png)
 
-Photon OS is a technology preview of a minimal Linux container host. It is designed to have a small footprint and boot extremely quickly on VMware platforms. Photon OS is intended to invite collaboration around running containerized applications in a virtualized environment.
+Photon OS is an open source minimal Linux container host optimized for cloud-native applications, cloud platforms, and VMware infrastructure. It is designed to have a small footprint and boot extremely quickly on VMware platforms. Photon OS is intended to invite collaboration around running containerized applications in a virtualized environment.
 
 Photon contains `tdnf`, a new, open-source, yum-compatible package manager that will help make the system as small as possible, but preserve the robust yum package management capabilities.
 
@@ -58,7 +60,7 @@ See the [FAQ](http://vmware.github.io/photon/assets/files/photon_faqs.pdf) for m
 
 ## How to use these images
 
-Photon OS images are intended for use in the **FROM** field of an application's `Dockerfile`. For example, to use VMware Photon 1.0RC as the base of an image, specify `FROM photon:1.0RC`.
+Photon OS images are intended for use in the **FROM** field of an application's `Dockerfile`. For example, to use VMware Photon 1.0GA as the base of an image, specify `FROM photon:1.0GA`.
 
 ## Support
 

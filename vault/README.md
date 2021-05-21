@@ -14,37 +14,38 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`0.9.0`, `latest` (*0.X/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/06386d17c55d685cc1515aa03d581743a3c8442e/0.X/Dockerfile)
-
 # Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
-
--	**Where to file issues**:  
-	[https://github.com/hashicorp/docker-vault/issues](https://github.com/hashicorp/docker-vault/issues)
 
 -	**Maintained by**:  
 	[HashiCorp](https://github.com/hashicorp/docker-vault)
 
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+# Supported tags and respective `Dockerfile` links
+
+-	[`1.7.1`, `latest`](https://github.com/hashicorp/docker-vault/blob/14d893cb83118fd3642e9e516f682c5e0e0a2c30/0.X/Dockerfile)
+-	[`1.6.4`](https://github.com/hashicorp/docker-vault/blob/88aeb655ea14e74bb9d9ae7e583f86c3e0d9a29f/0.X/Dockerfile)
+-	[`1.5.8`](https://github.com/hashicorp/docker-vault/blob/1c4258acc24265a26b0581929954ec112230fb8d/0.X/Dockerfile)
+
+# Quick reference (cont.)
+
+-	**Where to file issues**:  
+	[https://github.com/hashicorp/docker-vault/issues](https://github.com/hashicorp/docker-vault/issues)
+
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/vault/)
+	[`amd64`](https://hub.docker.com/r/amd64/vault/), [`arm32v6`](https://hub.docker.com/r/arm32v6/vault/), [`arm64v8`](https://hub.docker.com/r/arm64v8/vault/), [`i386`](https://hub.docker.com/r/i386/vault/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/vault/` directory](https://github.com/docker-library/repo-info/blob/master/repos/vault) ([history](https://github.com/docker-library/repo-info/commits/master/repos/vault))  
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/vault`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fvault)  
+	[official-images repo's `library/vault` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fvault)  
 	[official-images repo's `library/vault` file](https://github.com/docker-library/official-images/blob/master/library/vault) ([history](https://github.com/docker-library/official-images/commits/master/library/vault))
 
 -	**Source of this description**:  
 	[docs repo's `vault/` directory](https://github.com/docker-library/docs/tree/master/vault) ([history](https://github.com/docker-library/docs/commits/master/vault))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # Vault
 
@@ -53,7 +54,7 @@ Vault is a tool for securely accessing secrets. A secret is anything that you wa
 -	[Vault documentation](https://www.vaultproject.io/)
 -	[Vault on GitHub](https://github.com/hashicorp/vault)
 
-![logo](https://cdn.rawgit.com/docker-library/docs/fab4b16599d1424cee888d47af850e0ba07e6a37/vault/logo.svg)
+![logo](https://raw.githubusercontent.com/docker-library/docs/fab4b16599d1424cee888d47af850e0ba07e6a37/vault/logo.svg?sanitize=true)
 
 # Using the Container
 
@@ -68,7 +69,7 @@ The container exposes two optional `VOLUME`s:
 -	`/vault/logs`, to use for writing persistent audit logs. By default nothing is written here; the `file` audit backend must be enabled with a path under this directory.
 -	`/vault/file`, to use for writing persistent storage data when using the`file` data storage plugin. By default nothing is written here (a `dev` server uses an in-memory data store); the `file` data storage backend must be enabled in Vault's configuration before the container is started.
 
-The container has a Vault configuration directory set up at `/vault/config` and the server will load any HCL or JSON configuration files placed here by binding a volume or by composing a new image and adding files. Alternatively, configuration can be added by passing the configuration JSON via environment variable `VAULT_LOCAL_CONFIG`. Please note that due to a bug in the current release of Vault (0.6.0), you should *not* use the name `local.json` for any configuration file in this directory.
+The container has a Vault configuration directory set up at `/vault/config` and the server will load any HCL or JSON configuration files placed here by binding a volume or by composing a new image and adding files. Alternatively, configuration can be added by passing the configuration JSON via environment variable `VAULT_LOCAL_CONFIG`.
 
 ## Memory Locking and 'setcap'
 

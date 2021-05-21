@@ -19,45 +19,46 @@ $ docker run -d --name some-ghost %%IMAGE%%
 If you'd like to be able to access the instance from the host without the container's IP, standard port mappings can be used:
 
 ```console
-$ docker run -d --name some-ghost -p 3001:2368 %%IMAGE%%
+$ docker run -d --name some-ghost -e url=http://localhost:3001 -p 3001:2368 %%IMAGE%%
 ```
 
-Then, access it via `http://localhost:3001` or `http://host-ip:3001` in a browser.
+If all goes well, you'll be able to access your new site on `http://localhost:3001` and `http://localhost:3001/ghost` to access Ghost Admin (or `http://host-ip:3001` and `http://host-ip:3001/ghost`, respectively).
+
+### Upgrading Ghost
+
+You will want to ensure you are running the latest minor version of Ghost before upgrading major versions. Otherwise, you may run into database errors.
+
+For upgrading your Ghost container you will want to mount your data to the appropriate path in the predecessor container (see below): import your content from the admin panel, stop the container, and then re-mount your content to the successor container you are upgrading into; you can then export your content from the admin panel.
 
 ## Stateful
 
 Mount your existing content. In this example we also use the Alpine base image.
 
-### Ghost 1.x.x
-
 ```console
-$ docker run -d --name some-ghost -p 3001:2368 -v /path/to/ghost/blog:/var/lib/ghost/content %%IMAGE%%:1-alpine
+$ docker run -d --name some-ghost -p 3001:2368 -v /path/to/ghost/blog:/var/lib/ghost/content %%IMAGE%%:alpine
 ```
 
-### Ghost 0.11.xx
+### Docker Volume
+
+Alternatively you can use a named [docker volume](https://docs.docker.com/storage/volumes/) instead of a direct host path for `/var/lib/ghost/content`:
 
 ```console
-$ docker run -d --name some-ghost -p 3001:2368 -v /path/to/ghost/blog:/var/lib/ghost %%IMAGE%%:0.11-alpine
+$ docker run -d --name some-ghost -v some-ghost-data:/var/lib/ghost/content %%IMAGE%%
 ```
-
-### Breaking change
-
-If you want to run Ghost 0.11.xx, be aware of the container's path difference:
-
--	Ghost 1.x.x is: `/var/lib/ghost/content`
--	Ghost 0.11.x is: `/var/lib/ghost`
 
 ### SQLite Database
 
 This Docker image for Ghost uses SQLite. There is nothing special to configure.
 
-### Docker Volume
+## Configuration
 
-Alternatively you can use a [data container](http://docs.docker.com/engine/tutorials/dockervolumes/) that has a volume that points to `/var/lib/ghost/content` (or /var/lib/ghost for 0.11.x) and then reference it:
+All Ghost configuration parameters (such as `url`) can be specified via environment variables. See [the Ghost documentation](https://ghost.org/docs/concepts/config/#running-ghost-with-config-env-variables) for details about what configuration is allowed and how to convert a nested configuration key into the appropriate environment variable name:
 
 ```console
-$ docker run -d --name some-ghost --volumes-from some-ghost-data %%IMAGE%%
+$ docker run -d --name some-ghost -e url=http://some-ghost.example.com %%IMAGE%%
 ```
+
+(There are further configuration examples in the `stack.yml` listed below.)
 
 ## What is the Node.js version?
 
@@ -65,8 +66,12 @@ When opening a ticket at https://github.com/TryGhost/Ghost/issues it becomes nec
 
 ```console
 $ docker exec <container-id> node --version
-v6.11.2
+[node version output]
 ```
+
+## Note about Ghost-CLI
+
+While the Docker images do have Ghost-CLI available and do use some of its commands to set up the base Ghost image, many of the other Ghost-CLI commands won't work correctly, and really aren't designed/intended to. For more info see [docker-library/ghost#156 (comment)](https://github.com/docker-library/ghost/issues/156#issuecomment-428159861)
 
 ## %%STACK%%
 

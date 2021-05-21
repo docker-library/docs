@@ -1,3 +1,3 @@
-This image is deprecated due to maintainer inactivity (last updated Aug 2015; [docker-library/official-images#1012](https://github.com/docker-library/official-images/pull/1012)).
+This image is deprecated due to maintainer inactivity (last updated Nov 2018; [docker-library/official-images#5073](https://github.com/docker-library/official-images/pull/5073)).
 
-If a representative of the CRUX community would like to step up and continue maintenance, [the contribution guidelines](https://github.com/docker-library/official-images/blob/master/README.md#contributing-to-the-standard-library) are the best place to start.
+See [docker-library/official-images#7130](https://github.com/docker-library/official-images/pull/7130) for discussion around an in-progress upstream update.

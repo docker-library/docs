@@ -14,37 +14,42 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
+# **DEPRECATION NOTICE**
 
--	[`1.2.8`, `latest` (*Dockerfile*)](https://github.com/docker/swarm-library-image/blob/741c78fb0287dc0850f5f131e099610a7acc2bf9/Dockerfile)
+> Classic Swarm has been archived and is no longer actively developed. You may want to use the Swarm mode built into the Docker Engine instead, or another orchestration system.
+
+(https://github.com/docker/classicswarm#readme)
 
 # Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
-
--	**Where to file issues**:  
-	[https://github.com/docker/swarm-library-image/issues](https://github.com/docker/swarm-library-image/issues)
 
 -	**Maintained by**:  
 	[Docker, Inc.](https://github.com/docker/swarm-library-image)
 
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+# Supported tags and respective `Dockerfile` links
+
+**No supported tags**
+
+# Quick reference (cont.)
+
+-	**Where to file issues**:  
+	[https://github.com/docker/swarm-library-image/issues](https://github.com/docker/swarm-library-image/issues)
+
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/swarm/)
+	**No supported architectures**
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/swarm/` directory](https://github.com/docker-library/repo-info/blob/master/repos/swarm) ([history](https://github.com/docker-library/repo-info/commits/master/repos/swarm))  
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/swarm`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fswarm)  
+	[official-images repo's `library/swarm` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fswarm)  
 	[official-images repo's `library/swarm` file](https://github.com/docker-library/official-images/blob/master/library/swarm) ([history](https://github.com/docker-library/official-images/commits/master/library/swarm))
 
 -	**Source of this description**:  
 	[docs repo's `swarm/` directory](https://github.com/docker-library/docs/tree/master/swarm) ([history](https://github.com/docker-library/docs/commits/master/swarm))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # Swarm: a Docker-native clustering system
 

@@ -1,1 +1,1 @@
-currently unmainainted (see deprecation notice)
+[Docker Crux](https://github.com/cruxlinux/docker-crux)

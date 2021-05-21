@@ -14,37 +14,40 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
+# **DEPRECATION NOTICE**
 
--	[`0.9.2`, `0.9`, `0`, `latest` (*Dockerfile*)](https://github.com/idno/Known-Docker/blob/986a2618080f32bbbcb9af3c8e7c15297d9658ea/Dockerfile)
+This image is deprecated due to inactivity (last updated Aug 2018; [docker-library/official-images#4670](https://github.com/docker-library/official-images/pull/4670)).
 
 # Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
-
--	**Where to file issues**:  
-	[https://github.com/idno/Known-Docker/issues](https://github.com/idno/Known-Docker/issues)
 
 -	**Maintained by**:  
 	[Known](https://github.com/idno/Known-Docker)
 
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+# Supported tags and respective `Dockerfile` links
+
+-	[`0.9.9`, `0.9`, `0`, `latest`](https://github.com/idno/Known-Docker/blob/3454a52b4ad48e22b95e706dba9ff953cf84c2b1/Dockerfile)
+
+# Quick reference (cont.)
+
+-	**Where to file issues**:  
+	[https://github.com/idno/Known-Docker/issues](https://github.com/idno/Known-Docker/issues)
+
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/known/)
+	[`amd64`](https://hub.docker.com/r/amd64/known/), [`arm64v8`](https://hub.docker.com/r/arm64v8/known/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/known/` directory](https://github.com/docker-library/repo-info/blob/master/repos/known) ([history](https://github.com/docker-library/repo-info/commits/master/repos/known))  
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/known`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fknown)  
+	[official-images repo's `library/known` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fknown)  
 	[official-images repo's `library/known` file](https://github.com/docker-library/official-images/blob/master/library/known) ([history](https://github.com/docker-library/official-images/commits/master/library/known))
 
 -	**Source of this description**:  
 	[docs repo's `known/` directory](https://github.com/docker-library/docs/tree/master/known) ([history](https://github.com/docker-library/docs/commits/master/known))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # Known: social publishing for groups and individuals
 

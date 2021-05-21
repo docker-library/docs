@@ -14,45 +14,60 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`1.5.2`, `1.5`, `latest` (*1.5/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/50e579afdbacd31c2b9f77b1b4290e61331f8d95/1.5/Dockerfile)
--	[`1.5.2-slim`, `1.5-slim`, `slim` (*1.5/slim/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/50e579afdbacd31c2b9f77b1b4290e61331f8d95/1.5/slim/Dockerfile)
--	[`1.5.2-alpine`, `1.5-alpine`, `alpine` (*1.5/alpine/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/50e579afdbacd31c2b9f77b1b4290e61331f8d95/1.5/alpine/Dockerfile)
--	[`1.4.5`, `1.4` (*1.4/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/8f1888ae05506b9ad12e1b97f084a15e7588f442/1.4/Dockerfile)
--	[`1.4.5-slim`, `1.4-slim` (*1.4/slim/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/8f1888ae05506b9ad12e1b97f084a15e7588f442/1.4/slim/Dockerfile)
--	[`1.3.4`, `1.3` (*1.3/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/d8d656d7c0dc9dd2956a22276c93cb97568ea6d4/1.3/Dockerfile)
--	[`1.3.4-slim`, `1.3-slim` (*1.3/slim/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/d8d656d7c0dc9dd2956a22276c93cb97568ea6d4/1.3/slim/Dockerfile)
--	[`1.2.6`, `1.2` (*1.2/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/77b9a3da43ce035327ae29083e567191d60a6ac8/1.2/Dockerfile)
--	[`1.2.6-slim`, `1.2-slim` (*1.2/slim/Dockerfile*)](https://github.com/c0b/docker-elixir/blob/77b9a3da43ce035327ae29083e567191d60a6ac8/1.2/slim/Dockerfile)
-
 # Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
-
--	**Where to file issues**:  
-	[https://github.com/c0b/docker-elixir/issues](https://github.com/c0b/docker-elixir/issues)
 
 -	**Maintained by**:  
 	[the Docker Community](https://github.com/c0b/docker-elixir), [with Elixir's support](https://github.com/docker-library/official-images/pull/1398#issuecomment-180484549)
 
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+# Supported tags and respective `Dockerfile` links
+
+-	[`1.12.0`, `1.12`, `latest`](https://github.com/erlef/docker-elixir/blob/48384028d82c791618b094c33663d0b2f44db0d1/1.12/Dockerfile)
+-	[`1.12.0-slim`, `1.12-slim`, `slim`](https://github.com/erlef/docker-elixir/blob/48384028d82c791618b094c33663d0b2f44db0d1/1.12/slim/Dockerfile)
+-	[`1.12.0-alpine`, `1.12-alpine`, `alpine`](https://github.com/erlef/docker-elixir/blob/48384028d82c791618b094c33663d0b2f44db0d1/1.12/alpine/Dockerfile)
+-	[`1.11.4`, `1.11`](https://github.com/erlef/docker-elixir/blob/045351a425a16578309053fa8f729f046fcd616f/1.11/Dockerfile)
+-	[`1.11.4-slim`, `1.11-slim`](https://github.com/erlef/docker-elixir/blob/045351a425a16578309053fa8f729f046fcd616f/1.11/slim/Dockerfile)
+-	[`1.11.4-alpine`, `1.11-alpine`](https://github.com/erlef/docker-elixir/blob/045351a425a16578309053fa8f729f046fcd616f/1.11/alpine/Dockerfile)
+-	[`1.10.4`, `1.10`](https://github.com/erlef/docker-elixir/blob/a8d582c328db5864a4e8e5f869900e3a52265f38/1.10/Dockerfile)
+-	[`1.10.4-slim`, `1.10-slim`](https://github.com/erlef/docker-elixir/blob/a8d582c328db5864a4e8e5f869900e3a52265f38/1.10/slim/Dockerfile)
+-	[`1.10.4-alpine`, `1.10-alpine`](https://github.com/erlef/docker-elixir/blob/a8d582c328db5864a4e8e5f869900e3a52265f38/1.10/alpine/Dockerfile)
+-	[`1.9.4`, `1.9`](https://github.com/erlef/docker-elixir/blob/0d9f47458468a8bf1407374731cbec077ab6f895/1.9/Dockerfile)
+-	[`1.9.4-slim`, `1.9-slim`](https://github.com/erlef/docker-elixir/blob/0d9f47458468a8bf1407374731cbec077ab6f895/1.9/slim/Dockerfile)
+-	[`1.9.4-alpine`, `1.9-alpine`](https://github.com/erlef/docker-elixir/blob/0d9f47458468a8bf1407374731cbec077ab6f895/1.9/alpine/Dockerfile)
+-	[`1.8.2`, `1.8`](https://github.com/erlef/docker-elixir/blob/4122b4840bd762d1434424e1ec693929b0198c98/1.8/Dockerfile)
+-	[`1.8.2-slim`, `1.8-slim`](https://github.com/erlef/docker-elixir/blob/4122b4840bd762d1434424e1ec693929b0198c98/1.8/slim/Dockerfile)
+-	[`1.8.2-alpine`, `1.8-alpine`](https://github.com/erlef/docker-elixir/blob/4122b4840bd762d1434424e1ec693929b0198c98/1.8/alpine/Dockerfile)
+-	[`1.8.2-otp-22`, `1.8-otp-22`](https://github.com/erlef/docker-elixir/blob/6dc5ffd3b4c2915096887b45ba8e71d391ce2398/1.8/otp-22/Dockerfile)
+-	[`1.8.2-otp-22-alpine`, `1.8-otp-22-alpine`](https://github.com/erlef/docker-elixir/blob/6dc5ffd3b4c2915096887b45ba8e71d391ce2398/1.8/otp-22-alpine/Dockerfile)
+-	[`1.7.4`, `1.7`](https://github.com/erlef/docker-elixir/blob/2b7dd2845d27a6dad57bf0047b305375d6182402/1.7/Dockerfile)
+-	[`1.7.4-slim`, `1.7-slim`](https://github.com/erlef/docker-elixir/blob/7c1f05ca3fd47bdc86cab3f0310068646a31dcac/1.7/slim/Dockerfile)
+-	[`1.7.4-alpine`, `1.7-alpine`](https://github.com/erlef/docker-elixir/blob/2b7dd2845d27a6dad57bf0047b305375d6182402/1.7/alpine/Dockerfile)
+-	[`1.6.6`, `1.6`](https://github.com/erlef/docker-elixir/blob/0936291249c7e11d4618a17a2b452045c9e6233a/1.6/Dockerfile)
+-	[`1.6.6-slim`, `1.6-slim`](https://github.com/erlef/docker-elixir/blob/0936291249c7e11d4618a17a2b452045c9e6233a/1.6/slim/Dockerfile)
+-	[`1.6.6-alpine`, `1.6-alpine`](https://github.com/erlef/docker-elixir/blob/0936291249c7e11d4618a17a2b452045c9e6233a/1.6/alpine/Dockerfile)
+-	[`1.6.6-otp-21`, `1.6-otp-21`](https://github.com/erlef/docker-elixir/blob/b57a72d04ddd1f1b4e2e3f5b70e44e37def4db31/1.6/otp-21/Dockerfile)
+-	[`1.6.6-otp-21-alpine`, `1.6-otp-21-alpine`](https://github.com/erlef/docker-elixir/blob/373b3a8017bd774b7d193818a326de0fde7f6733/1.6/otp-21-alpine/Dockerfile)
+
+# Quick reference (cont.)
+
+-	**Where to file issues**:  
+	[https://github.com/c0b/docker-elixir/issues](https://github.com/c0b/docker-elixir/issues)
+
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/elixir/)
+	[`amd64`](https://hub.docker.com/r/amd64/elixir/), [`arm32v7`](https://hub.docker.com/r/arm32v7/elixir/), [`arm64v8`](https://hub.docker.com/r/arm64v8/elixir/), [`i386`](https://hub.docker.com/r/i386/elixir/), [`ppc64le`](https://hub.docker.com/r/ppc64le/elixir/), [`s390x`](https://hub.docker.com/r/s390x/elixir/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/elixir/` directory](https://github.com/docker-library/repo-info/blob/master/repos/elixir) ([history](https://github.com/docker-library/repo-info/commits/master/repos/elixir))  
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/elixir`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Felixir)  
+	[official-images repo's `library/elixir` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Felixir)  
 	[official-images repo's `library/elixir` file](https://github.com/docker-library/official-images/blob/master/library/elixir) ([history](https://github.com/docker-library/official-images/commits/master/library/elixir))
 
 -	**Source of this description**:  
 	[docs repo's `elixir/` directory](https://github.com/docker-library/docs/tree/master/elixir) ([history](https://github.com/docker-library/docs/commits/master/elixir))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Elixir?
 
@@ -101,15 +116,15 @@ The `elixir` images come in many flavors, each designed for a specific use case.
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `elixir:slim`
+## `elixir:<version>-slim`
 
 This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `elixir`. Unless you are working in an environment where *only* the `elixir` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
 
-## `elixir:alpine`
+## `elixir:<version>-alpine`
 
-This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
-This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
 
 To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 

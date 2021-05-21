@@ -14,23 +14,25 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`1.2`, `1.2.1` (*kapacitor/1.2/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/74b2e90cd794ba5cba219d34876ca6425b069970/kapacitor/1.2/Dockerfile)
--	[`1.2-alpine`, `1.2.1-alpine` (*kapacitor/1.2/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/74b2e90cd794ba5cba219d34876ca6425b069970/kapacitor/1.2/alpine/Dockerfile)
--	[`1.3`, `1.3.3`, `latest` (*kapacitor/1.3/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/74b2e90cd794ba5cba219d34876ca6425b069970/kapacitor/1.3/Dockerfile)
--	[`1.3-alpine`, `1.3.3-alpine`, `alpine` (*kapacitor/1.3/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/74b2e90cd794ba5cba219d34876ca6425b069970/kapacitor/1.3/alpine/Dockerfile)
-
 # Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
-
--	**Where to file issues**:  
-	[https://github.com/influxdata/influxdata-docker/issues](https://github.com/influxdata/influxdata-docker/issues)
 
 -	**Maintained by**:  
 	[InfluxData](https://github.com/influxdata/influxdata-docker)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+# Supported tags and respective `Dockerfile` links
+
+-	[`1.4`, `1.4.1`](https://github.com/influxdata/influxdata-docker/blob/63fe0684150d96916514a84cf5978c3512dc15fa/kapacitor/1.4/Dockerfile)
+-	[`1.4-alpine`, `1.4.1-alpine`](https://github.com/influxdata/influxdata-docker/blob/63fe0684150d96916514a84cf5978c3512dc15fa/kapacitor/1.4/alpine/Dockerfile)
+-	[`1.5`, `1.5.9`, `latest`](https://github.com/influxdata/influxdata-docker/blob/63fe0684150d96916514a84cf5978c3512dc15fa/kapacitor/1.5/Dockerfile)
+-	[`1.5-alpine`, `1.5.9-alpine`, `alpine`](https://github.com/influxdata/influxdata-docker/blob/63fe0684150d96916514a84cf5978c3512dc15fa/kapacitor/1.5/alpine/Dockerfile)
+
+# Quick reference (cont.)
+
+-	**Where to file issues**:  
+	[https://github.com/influxdata/influxdata-docker/issues](https://github.com/influxdata/influxdata-docker/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/kapacitor/), [`arm32v7`](https://hub.docker.com/r/arm32v7/kapacitor/), [`arm64v8`](https://hub.docker.com/r/arm64v8/kapacitor/)
@@ -40,14 +42,11 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/kapacitor`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fkapacitor)  
+	[official-images repo's `library/kapacitor` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fkapacitor)  
 	[official-images repo's `library/kapacitor` file](https://github.com/docker-library/official-images/blob/master/library/kapacitor) ([history](https://github.com/docker-library/official-images/commits/master/library/kapacitor))
 
 -	**Source of this description**:  
 	[docs repo's `kapacitor/` directory](https://github.com/docker-library/docs/tree/master/kapacitor) ([history](https://github.com/docker-library/docs/commits/master/kapacitor))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # Kapacitor
 
@@ -190,11 +189,11 @@ The `kapacitor` images come in many flavors, each designed for a specific use ca
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `kapacitor:alpine`
+## `kapacitor:<version>-alpine`
 
-This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
-This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
 
 To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 

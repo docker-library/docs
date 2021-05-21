@@ -2,6 +2,8 @@
 
 ZNC is an IRC network bouncer (BNC). It can detach the client from the actual IRC server, and also from selected channels. Multiple clients from different locations can connect to a single ZNC account simultaneously and therefore appear under the same nickname on IRC.
 
+%%LOGO%%
+
 [ZNC Wiki](http://znc.in/)
 
 # How to use this image
@@ -15,11 +17,11 @@ $ docker run -it -v znc-cfg:/znc-data %%IMAGE%% --makeconf
 To run ZNC:
 
 ```console
-$ docker run -p 6697:6697 -v znc-cfg:/znc-data %%IMAGE%%
+$ docker run -p 12345:12345 -v znc-cfg:/znc-data %%IMAGE%%
 ```
 
-The port should match the port you used during `--makeconf`. Note that 6667 is often blocked by web browsers, and therefore is not recommended.
+The port (12345 in the example above) should match the port you used during `--makeconf`. Note that 6667 and 6697 are often blocked by web browsers, and therefore are not recommended for ZNC.
 
 If you use any external module, put the .cpp, .py or .pm file to `/znc-data/modules` (you may need to create that directory).
 
-Musl silently doesn't support `AI_ADDRCONFIG` yet, and ZNC doesn't support [Happy Eyeballs](https://en.wikipedia.org/wiki/Happy_Eyeballs) yet. Together they cause very slow connection. So for now IPv6 is disabled here.
+This image contains the latest released version. If you want the bleeding edge (unstable) version, it's at [zncbouncer/znc-git](https://hub.docker.com/r/zncbouncer/znc-git).

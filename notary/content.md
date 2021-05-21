@@ -75,6 +75,6 @@ For more details on how to configure your Notary signer, please read the [docs](
 
 ## Database Migrations
 
-Notary server and signer both use the [migrate tool](https://github.com/mattes/migrate) to manage database updates. The migration files can be found [here](https://github.com/theupdateframework/notary/tree/master/migrations/) and are an ordered list of plain SQL files. The migrate tool manages schema versions to ensure that migrations start and end at the correct point.
+Notary server and signer both use the [migrate tool](https://github.com/golang-migrate/migrate) to manage database updates. The migration files can be found [here](https://github.com/theupdateframework/notary/tree/master/migrations/) and are an ordered list of plain SQL files. The migrate tool manages schema versions to ensure that migrations start and end at the correct point.
 
 We strongly recommend you create separate databases and users with restricted permissions such that the server cannot access the signer's database and vice versa.

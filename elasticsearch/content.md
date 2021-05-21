@@ -1,66 +1,43 @@
 # What is Elasticsearch?
 
-Elasticsearch is a search server based on Lucene. It provides a distributed, multitenant-capable full-text search engine with a RESTful web interface and schema-free JSON documents.
+Elasticsearch is a distributed, RESTful search and analytics engine capable of solving a growing number of use cases. As the heart of the Elastic Stack, it centrally stores your data so you can discover the expected and uncover the unexpected.
 
-Elasticsearch is a registered trademark of Elasticsearch BV.
-
-> [wikipedia.org/wiki/Elasticsearch](https://en.wikipedia.org/wiki/Elasticsearch)
+> For more information about Elasticsearch, please visit [www.elastic.co/products/elasticsearch](https://www.elastic.co/products/elasticsearch)
 
 %%LOGO%%
 
+# About This Image
+
+This default distribution is governed by the Elastic License, and includes the [full set of free features](https://www.elastic.co/subscriptions).
+
+View the detailed release notes [here](https://www.elastic.co/guide/en/elasticsearch/reference/current/es-release-notes.html).
+
+Not the version you're looking for? View all supported [past releases](https://www.docker.elastic.co).
+
 # How to use this image
 
-## Cluster
+**Note:** Pulling an images requires using a specific version number tag. The `latest` tag is not supported.
 
-**Note:** since 5.0, Elasticsearch only listens on `localhost` by default on both http and transport, so this image sets `http.host` to `0.0.0.0` (given that `localhost` is not terribly useful in the Docker context).
+For Elasticsearch versions prior to 6.4.0 a full list of images, tags, and documentation can be found at [docker.elastic.co](https://www.docker.elastic.co/).
 
-As a result, this image does not support clustering out of the box and extra configuration must be set in order to support it.
+For full Elasticsearch documentation see [here](https://www.elastic.co/guide/en/elasticsearch/reference/index.html).
 
-Supporting clustering implies having Elasticsearch in a production mode which is more strict about the bootstrap checks that it performs, especially when checking the value of `vm.max_map_count` which is not namespaced and thus must be set to an acceptable value on the host (as opposed to simply using `--sysctl` on `docker run`).
+**The commands below are intended for deploying in a development context only. For production installation and configuration, see [Install Elasticsearch with Docker](https://www.elastic.co/guide/en/elasticsearch/reference/7.5/docker.html).**
 
-One example of adding clustering support is to pass the configuration on the `docker run`:
+## Running in Development Mode
 
-```console
-$ docker run -d --name elas elasticsearch -Etransport.host=0.0.0.0 -Ediscovery.zen.minimum_master_nodes=1
-```
-
-See the following sections of the upstream documentation for more information:
-
--	[Setup Elasticsearch » Important System Configuration » Virtual memory](https://www.elastic.co/guide/en/elasticsearch/reference/5.0/vm-max-map-count.html)
--	[Setup Elasticsearch » Bootstrap Checks » Maximum map count check](https://www.elastic.co/guide/en/elasticsearch/reference/5.0/_maximum_map_count_check.html)
-
-This [comment in elastic/elasticsearch#4978](https://github.com/elastic/elasticsearch/issues/4978#issuecomment-258676104) shows why this change was added in upstream.
-
-> Elasticsearch will not start in production mode if `vm.max_map_count` is not high enough. [...] If the value on your system is NOT high enough, then your cluster is going to crash and burn at some stage and you will lose data.
-
-## Running Containers
-
-You can run the default `elasticsearch` command simply:
+Create user defined network (useful for connecting to other services attached to the same network (e.g. Kibana)):
 
 ```console
-$ docker run -d elasticsearch
+$ docker network create somenetwork
 ```
 
-You can also pass in additional flags to `elasticsearch`:
+Run Elasticsearch:
 
 ```console
-$ docker run -d elasticsearch -Des.node.name="TestNode"
+$ docker run -d --name elasticsearch --net somenetwork -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" elasticsearch:tag
 ```
 
-This image comes with a default set of configuration files for `elasticsearch`, but if you want to provide your own set of configuration files, you can do so via a volume mounted at `/usr/share/elasticsearch/config`:
+## Running in Production Mode
 
-```console
-$ docker run -d -v "$PWD/config":/usr/share/elasticsearch/config elasticsearch
-```
-
-This image is configured with a volume at `/usr/share/elasticsearch/data` to hold the persisted index data. Use that path if you would like to keep the data in a mounted volume:
-
-```console
-$ docker run -d -v "$PWD/esdata":/usr/share/elasticsearch/data elasticsearch
-```
-
-This image includes `EXPOSE 9200 9300` ([default `http.port`](http://www.elastic.co/guide/en/elasticsearch/reference/1.5/modules-http.html)), so standard container linking will make it automatically available to the linked containers.
-
-## %%STACK%%
-
-Run `docker stack deploy -c stack.yml %%REPO%%` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:5601`, `http://localhost:5601`, or `http://host-ip:5601` (as appropriate).
+See [Install Elasticsearch with Docker](https://www.elastic.co/guide/en/elasticsearch/reference/7.5/docker.html)

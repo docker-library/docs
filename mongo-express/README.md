@@ -14,37 +14,36 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`0.42.2`, `0.42`, `latest` (*Dockerfile*)](https://github.com/mongo-express/mongo-express-docker/blob/c65871c94790ca0446ec222c5961a2d01c701cc0/Dockerfile)
-
 # Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
-
--	**Where to file issues**:  
-	[https://github.com/mongo-express/mongo-express-docker/issues](https://github.com/mongo-express/mongo-express-docker/issues)
 
 -	**Maintained by**:  
 	[mongo-express](https://github.com/mongo-express/mongo-express-docker)
 
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+# Supported tags and respective `Dockerfile` links
+
+-	[`0.54.0`, `0.54`, `latest`](https://github.com/mongo-express/mongo-express-docker/blob/4b43fe8a1206434cb32a006cd155dd71462f092f/Dockerfile)
+
+# Quick reference (cont.)
+
+-	**Where to file issues**:  
+	[https://github.com/mongo-express/mongo-express-docker/issues](https://github.com/mongo-express/mongo-express-docker/issues)
+
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/mongo-express/)
+	[`amd64`](https://hub.docker.com/r/amd64/mongo-express/), [`arm64v8`](https://hub.docker.com/r/arm64v8/mongo-express/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/mongo-express/` directory](https://github.com/docker-library/repo-info/blob/master/repos/mongo-express) ([history](https://github.com/docker-library/repo-info/commits/master/repos/mongo-express))  
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/mongo-express`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmongo-express)  
+	[official-images repo's `library/mongo-express` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fmongo-express)  
 	[official-images repo's `library/mongo-express` file](https://github.com/docker-library/official-images/blob/master/library/mongo-express) ([history](https://github.com/docker-library/official-images/commits/master/library/mongo-express))
 
 -	**Source of this description**:  
 	[docs repo's `mongo-express/` directory](https://github.com/docker-library/docs/tree/master/mongo-express) ([history](https://github.com/docker-library/docs/commits/master/mongo-express))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is mongo-express?
 
@@ -57,7 +56,7 @@ mongo-express is a web-based MongoDB admin interface written in Node.js, Express
 # How to use this image
 
 ```console
-$ docker run --link some_mongo_container:mongo -p 8081:8081 mongo-express
+$ docker run --network some-network -e ME_CONFIG_MONGODB_SERVER=some-mongo -p 8081:8081 mongo-express
 ```
 
 Then you can hit `http://localhost:8081` or `http://host-ip:8081` in your browser.
@@ -102,10 +101,11 @@ The following are only needed if `ME_CONFIG_MONGODB_ENABLE_ADMIN` is **"false"**
 
 ```console
 $ docker run -it --rm \
+    --network web_default \
     --name mongo-express \
-    --link web_db_1:mongo \
     -p 8081:8081 \
     -e ME_CONFIG_OPTIONS_EDITORTHEME="ambiance" \
+    -e ME_CONFIG_MONGODB_SERVER="web_db_1" \
     -e ME_CONFIG_BASICAUTH_USERNAME="user" \
     -e ME_CONFIG_BASICAUTH_PASSWORD="fairly long password" \
     mongo-express

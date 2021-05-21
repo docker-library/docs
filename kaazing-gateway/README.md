@@ -14,37 +14,36 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`latest`, `5.6.0` (*Dockerfile*)](https://github.com/kaazing/gateway.docker/blob/a40c8da9d2c2925bdd78b9a6d1b6da3fe89322d1/Dockerfile)
-
 # Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
-
--	**Where to file issues**:  
-	[https://github.com/kaazing/gateway.docker/issues](https://github.com/kaazing/gateway.docker/issues)
 
 -	**Maintained by**:  
 	[the Kaazing Docker Maintainers](https://github.com/kaazing/gateway.docker)
 
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+# Supported tags and respective `Dockerfile` links
+
+-	[`5.6.0`, `5.6`, `5`, `latest`](https://github.com/kaazing/gateway.docker/blob/a40c8da9d2c2925bdd78b9a6d1b6da3fe89322d1/Dockerfile)
+
+# Quick reference (cont.)
+
+-	**Where to file issues**:  
+	[https://github.com/kaazing/gateway.docker/issues](https://github.com/kaazing/gateway.docker/issues)
+
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/kaazing-gateway/)
+	[`amd64`](https://hub.docker.com/r/amd64/kaazing-gateway/), [`arm64v8`](https://hub.docker.com/r/arm64v8/kaazing-gateway/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/kaazing-gateway/` directory](https://github.com/docker-library/repo-info/blob/master/repos/kaazing-gateway) ([history](https://github.com/docker-library/repo-info/commits/master/repos/kaazing-gateway))  
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/kaazing-gateway`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fkaazing-gateway)  
+	[official-images repo's `library/kaazing-gateway` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fkaazing-gateway)  
 	[official-images repo's `library/kaazing-gateway` file](https://github.com/docker-library/official-images/blob/master/library/kaazing-gateway) ([history](https://github.com/docker-library/official-images/commits/master/library/kaazing-gateway))
 
 -	**Source of this description**:  
 	[docs repo's `kaazing-gateway/` directory](https://github.com/docker-library/docs/tree/master/kaazing-gateway) ([history](https://github.com/docker-library/docs/commits/master/kaazing-gateway))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is the KAAZING Gateway?
 

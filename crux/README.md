@@ -16,41 +16,41 @@ WARNING:
 
 # **DEPRECATION NOTICE**
 
-This image is deprecated due to maintainer inactivity (last updated Aug 2015; [docker-library/official-images#1012](https://github.com/docker-library/official-images/pull/1012)).
+This image is deprecated due to maintainer inactivity (last updated Nov 2018; [docker-library/official-images#5073](https://github.com/docker-library/official-images/pull/5073)).
 
-If a representative of the CRUX community would like to step up and continue maintenance, [the contribution guidelines](https://github.com/docker-library/official-images/blob/master/README.md#contributing-to-the-standard-library) are the best place to start.
-
-# Supported tags and respective `Dockerfile` links
-
--	[`latest`, `3.1` (*Dockerfile*)](https://github.com/prologic/docker-crux/blob/c614d61c53c05c02a43a34187fa1370db2c61524/Dockerfile)
+See [docker-library/official-images#7130](https://github.com/docker-library/official-images/pull/7130) for discussion around an in-progress upstream update.
 
 # Quick reference
 
+-	**Maintained by**:  
+	[Docker Crux](https://github.com/cruxlinux/docker-crux)
+
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+# Supported tags and respective `Dockerfile` links
+
+-	[`3.4`, `latest`](https://github.com/cruxlinux/docker-crux/blob/da081a9004c5559cd77a1e2c2521193ccb2afdd2/Dockerfile)
+-	[`3.2`](https://github.com/cruxlinux/docker-crux/blob/07e966125ba3d6d48a12489830917e8a9bc983a7/Dockerfile)
+
+# Quick reference (cont.)
 
 -	**Where to file issues**:  
 	[https://github.com/therealprologic/docker-crux/issues](https://github.com/therealprologic/docker-crux/issues)
 
--	**Maintained by**:  
-	currently unmainainted (see deprecation notice)
-
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/crux/)
+	[`amd64`](https://hub.docker.com/r/amd64/crux/), [`arm64v8`](https://hub.docker.com/r/arm64v8/crux/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/crux/` directory](https://github.com/docker-library/repo-info/blob/master/repos/crux) ([history](https://github.com/docker-library/repo-info/commits/master/repos/crux))  
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/crux`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fcrux)  
+	[official-images repo's `library/crux` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fcrux)  
 	[official-images repo's `library/crux` file](https://github.com/docker-library/official-images/blob/master/library/crux) ([history](https://github.com/docker-library/official-images/commits/master/library/crux))
 
 -	**Source of this description**:  
 	[docs repo's `crux/` directory](https://github.com/docker-library/docs/tree/master/crux) ([history](https://github.com/docker-library/docs/commits/master/crux))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is CRUX?
 

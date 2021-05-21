@@ -20,26 +20,26 @@ $ docker run -d --name some-redmine %%IMAGE%%
 
 ## Run Redmine with a Database Container
 
-Running Redmine with a database server is the recommened way.
+Running Redmine with a database server is the recommended way.
 
 1.	start a database container
 
 	-	PostgreSQL
 
 		```console
-		$ docker run -d --name some-postgres -e POSTGRES_PASSWORD=secret -e POSTGRES_USER=redmine postgres
+		$ docker run -d --name some-postgres --network some-network -e POSTGRES_PASSWORD=secret -e POSTGRES_USER=redmine postgres
 		```
 
-	-	MySQL (replace `--link some-postgres:postgres` with `--link some-mysql:mysql` when running redmine)
+	-	MySQL (replace `-e REDMINE_DB_POSTGRES=some-postgres` with `-e REDMINE_DB_MYSQL=some-mysql` when running Redmine)
 
 		```console
-		$ docker run -d --name some-mysql -e MYSQL_ROOT_PASSWORD=secret -e MYSQL_DATABASE=redmine mysql
+		$ docker run -d --name some-mysql --network some-network -e MYSQL_USER=redmine -e MYSQL_PASSWORD=secret -e MYSQL_DATABASE=redmine -e MYSQL_RANDOM_ROOT_PASSWORD=1 mysql:5.7
 		```
 
 2.	start redmine
 
 	```console
-	$ docker run -d --name some-%%REPO%% --link some-postgres:postgres %%IMAGE%%
+	$ docker run -d --name some-%%REPO%% --network some-network -e REDMINE_DB_POSTGRES=some-postgres -e REDMINE_DB_USERNAME=redmine -e REDMINE_DB_PASSWORD=secret %%IMAGE%%
 	```
 
 ## %%STACK%%
@@ -72,12 +72,6 @@ The Docker documentation is a good starting point for understanding the differen
 
 The `-v /my/own/datadir:/usr/src/redmine/files` part of the command mounts the `/my/own/datadir` directory from the underlying host system as `/usr/src/redmine/files` inside the container, where Redmine will store uploaded files.
 
-Note that users on host systems with SELinux enabled may see issues with this. The current workaround is to assign the relevant SELinux policy type to the new data directory so that the container will be allowed to access it:
-
-```console
-$ chcon -Rt svirt_sandbox_file_t /my/own/datadir
-```
-
 ## Port Mapping
 
 If you'd like to be able to access the instance from the host without the container's IP, standard port mappings can be used. Just add `-p 3000:3000` to the `docker run` arguments and then access either `http://localhost:3000` or `http://host-ip:3000` in a browser.
@@ -86,9 +80,9 @@ If you'd like to be able to access the instance from the host without the contai
 
 When you start the `%%REPO%%` image, you can adjust the configuration of the instance by passing one or more environment variables on the `docker run` command line.
 
-### `REDMINE_DB_MYSQL` or `REDMINE_DB_POSTGRES`
+### `REDMINE_DB_MYSQL`, `REDMINE_DB_POSTGRES`, or `REDMINE_DB_SQLSERVER`
 
-These two variables allow you to set the hostname or IP address of the MySQL or PostgreSQL host, respectively. These values are mutually exclusive so it is undefined behavior if both are set. If neither variable is set, the image will fall back to using SQLite.
+These variables allow you to set the hostname or IP address of the MySQL, PostgreSQL, or Microsoft SQL host, respectively. These values are mutually exclusive so it is undefined behavior if any two are set. If no variable is set, the image will fall back to using SQLite.
 
 ### `REDMINE_DB_PORT`
 
@@ -124,7 +118,23 @@ This variable allows you to control if `rake redmine:plugins:migrate` is run on 
 
 ### `REDMINE_SECRET_KEY_BASE`
 
-This variable is used to create an initial `config/secrets.yml` and set the `secret_key_base` value, which is "used by Rails to encode cookies storing session data thus preventing their tampering. Generating a new secret token invalidates all existing sessions after restart" ([session store](https://www.redmine.org/projects/redmine/wiki/RedmineInstall#Step-5-Session-store-secret-generation)). If you do not set this variable or provide a `secrets.yml` one will be generated using `rake generate_secret_token`.
+This variable is required when using Docker Swarm replicas to maintain session connections when being loadbalanced between containers. It will create an initial `config/secrets.yml` and set the `secret_key_base` value, which is "used by Rails to encode cookies storing session data thus preventing their tampering. Generating a new secret token invalidates all existing sessions after restart" ([session store](https://www.redmine.org/projects/redmine/wiki/RedmineInstall#Step-5-Session-store-secret-generation)). If you do not set this variable or provide a `secrets.yml` one will be generated using `rake generate_secret_token`.
+
+## Running as an arbitrary user
+
+For running Redmine without Phusion Passenger you can simply use the [`--user`](https://docs.docker.com/engine/reference/run/#user) flag to `docker run` and give it a `username:group` or `UID:GID`, the user doesn't need to exist in the container
+
+For running the `redmine:passenger` variant as an arbitrary user you will however need the user to exist in `/etc/passwd`. Here are a few examples for doing that:
+
+1.	Create the user on your host and mount `/etc/passwd:/etc/passwd:ro`
+
+2.	Create a Dockerfile `FROM redmine:passenger` and include something like [`RUN groupadd -r group && useradd --no-log-init -r -g group user`](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#user)
+
+	```dockerfile
+	FROM redmine:passenger
+	RUN groupadd -r group && useradd --no-log-init -r -g group user
+	USER user
+	```
 
 ## Docker Secrets
 

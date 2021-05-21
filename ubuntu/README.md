@@ -14,24 +14,27 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`17.10`, `artful-20171116`, `artful`, `rolling` (*artful/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/6ec7146711634dff30e0242115e1ad88e1fb14e6/artful/Dockerfile)
--	[`18.04`, `bionic-20171114`, `bionic`, `devel` (*bionic/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/6ec7146711634dff30e0242115e1ad88e1fb14e6/bionic/Dockerfile)
--	[`14.04`, `trusty-20171117`, `trusty` (*trusty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/6ec7146711634dff30e0242115e1ad88e1fb14e6/trusty/Dockerfile)
--	[`16.04`, `xenial-20171114`, `xenial`, `latest` (*xenial/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/6ec7146711634dff30e0242115e1ad88e1fb14e6/xenial/Dockerfile)
--	[`17.04`, `zesty-20171114`, `zesty` (*zesty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/6ec7146711634dff30e0242115e1ad88e1fb14e6/zesty/Dockerfile)
-
 # Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
-
--	**Where to file issues**:  
-	[the cloud-images bug tracker](https://bugs.launchpad.net/cloud-images) (include the `docker` tag)
 
 -	**Maintained by**:  
 	[Canonical](https://partner-images.canonical.com/core/) and [Tianon (Debian Developer)](https://github.com/tianon/docker-brew-ubuntu-core)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+# Supported tags and respective `Dockerfile` links
+
+-	[`18.04`, `bionic-20210512`, `bionic`](https://github.com/tianon/docker-brew-ubuntu-core/blob/042ff8d516e356e9df18e1c34235553fa150d19d/bionic/Dockerfile)
+-	[`20.04`, `focal-20210416`, `focal`, `latest`](https://github.com/tianon/docker-brew-ubuntu-core/blob/042ff8d516e356e9df18e1c34235553fa150d19d/focal/Dockerfile)
+-	[`20.10`, `groovy-20210514`, `groovy`](https://github.com/tianon/docker-brew-ubuntu-core/blob/042ff8d516e356e9df18e1c34235553fa150d19d/groovy/Dockerfile)
+-	[`21.04`, `hirsute-20210514`, `hirsute`, `rolling`](https://github.com/tianon/docker-brew-ubuntu-core/blob/042ff8d516e356e9df18e1c34235553fa150d19d/hirsute/Dockerfile)
+-	[`14.04`, `trusty-20191217`, `trusty`](https://github.com/tianon/docker-brew-ubuntu-core/blob/042ff8d516e356e9df18e1c34235553fa150d19d/trusty/Dockerfile)
+-	[`16.04`, `xenial-20210429`, `xenial`](https://github.com/tianon/docker-brew-ubuntu-core/blob/042ff8d516e356e9df18e1c34235553fa150d19d/xenial/Dockerfile)
+
+# Quick reference (cont.)
+
+-	**Where to file issues**:  
+	[the cloud-images bug tracker](https://bugs.launchpad.net/cloud-images) (include the `docker` tag)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/ubuntu/), [`arm32v7`](https://hub.docker.com/r/arm32v7/ubuntu/), [`arm64v8`](https://hub.docker.com/r/arm64v8/ubuntu/), [`i386`](https://hub.docker.com/r/i386/ubuntu/), [`ppc64le`](https://hub.docker.com/r/ppc64le/ubuntu/), [`s390x`](https://hub.docker.com/r/s390x/ubuntu/)
@@ -41,22 +44,19 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/ubuntu`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fubuntu)  
+	[official-images repo's `library/ubuntu` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fubuntu)  
 	[official-images repo's `library/ubuntu` file](https://github.com/docker-library/official-images/blob/master/library/ubuntu) ([history](https://github.com/docker-library/official-images/commits/master/library/ubuntu))
 
 -	**Source of this description**:  
 	[docs repo's `ubuntu/` directory](https://github.com/docker-library/docs/tree/master/ubuntu) ([history](https://github.com/docker-library/docs/commits/master/ubuntu))
 
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
-
 # What is Ubuntu?
 
-Ubuntu is a Debian-based Linux operating system, with Unity as its default desktop environment. It is based on free software and named after the Southern African philosophy of ubuntu (literally, "human-ness"), which often is translated as "humanity towards others" or "the belief in a universal bond of sharing that connects all humanity".
+Ubuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things. It is the world's most popular operating system across public clouds and OpenStack clouds. It is the number one platform for containers; from Docker to Kubernetes to LXD, Ubuntu can run your containers at scale. Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
-Development of Ubuntu is led by UK-based Canonical Ltd., a company owned by South African entrepreneur Mark Shuttleworth. Canonical generates revenue through the sale of technical support and other services related to Ubuntu. The Ubuntu project is publicly committed to the principles of open-source software development; people are encouraged to use free software, study how it works, improve upon it, and distribute it.
+Development of Ubuntu is led by Canonical Ltd. Canonical generates revenue through the sale of technical support and other services related to Ubuntu. The Ubuntu project is publicly committed to the principles of open-source software development; people are encouraged to use free software, study how it works, improve upon it, and distribute it.
 
-> [wikipedia.org/wiki/Ubuntu_(operating_system)](https://en.wikipedia.org/wiki/Ubuntu_%28operating_system%29)
+> [wikipedia.org/wiki/Ubuntu](https://en.wikipedia.org/wiki/Ubuntu)
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/01c12653951b2fe592c1f93a13b4e289ada0e3a1/ubuntu/logo.png)
 
@@ -78,54 +78,6 @@ For uses where that is not sufficient, other locales can be installed/generated 
 RUN apt-get update && apt-get install -y locales && rm -rf /var/lib/apt/lists/* \
 	&& localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
 ENV LANG en_US.utf8
-```
-
-## `/etc/apt/sources.list`
-
-### `ubuntu:16.04`
-
-```console
-$ docker run ubuntu:16.04 grep -v '^#' /etc/apt/sources.list
-
-deb http://archive.ubuntu.com/ubuntu/ xenial main restricted
-deb-src http://archive.ubuntu.com/ubuntu/ xenial main restricted
-
-deb http://archive.ubuntu.com/ubuntu/ xenial-updates main restricted
-deb-src http://archive.ubuntu.com/ubuntu/ xenial-updates main restricted
-
-deb http://archive.ubuntu.com/ubuntu/ xenial universe
-deb-src http://archive.ubuntu.com/ubuntu/ xenial universe
-deb http://archive.ubuntu.com/ubuntu/ xenial-updates universe
-deb-src http://archive.ubuntu.com/ubuntu/ xenial-updates universe
-
-
-deb http://archive.ubuntu.com/ubuntu/ xenial-security main restricted
-deb-src http://archive.ubuntu.com/ubuntu/ xenial-security main restricted
-deb http://archive.ubuntu.com/ubuntu/ xenial-security universe
-deb-src http://archive.ubuntu.com/ubuntu/ xenial-security universe
-```
-
-### `ubuntu:14.04`
-
-```console
-$ docker run ubuntu:14.04 grep -v '^#' /etc/apt/sources.list
-
-deb http://archive.ubuntu.com/ubuntu/ trusty main restricted
-deb-src http://archive.ubuntu.com/ubuntu/ trusty main restricted
-
-deb http://archive.ubuntu.com/ubuntu/ trusty-updates main restricted
-deb-src http://archive.ubuntu.com/ubuntu/ trusty-updates main restricted
-
-deb http://archive.ubuntu.com/ubuntu/ trusty universe
-deb-src http://archive.ubuntu.com/ubuntu/ trusty universe
-deb http://archive.ubuntu.com/ubuntu/ trusty-updates universe
-deb-src http://archive.ubuntu.com/ubuntu/ trusty-updates universe
-
-
-deb http://archive.ubuntu.com/ubuntu/ trusty-security main restricted
-deb-src http://archive.ubuntu.com/ubuntu/ trusty-security main restricted
-deb http://archive.ubuntu.com/ubuntu/ trusty-security universe
-deb-src http://archive.ubuntu.com/ubuntu/ trusty-security universe
 ```
 
 # License

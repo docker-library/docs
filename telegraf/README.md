@@ -14,23 +14,27 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`1.3`, `1.3.5` (*telegraf/1.3/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/a4d3ba497d902919317f6cf2269384f0dbdafc61/telegraf/1.3/Dockerfile)
--	[`1.3-alpine`, `1.3.5-alpine` (*telegraf/1.3/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/a4d3ba497d902919317f6cf2269384f0dbdafc61/telegraf/1.3/alpine/Dockerfile)
--	[`1.4`, `1.4.5`, `latest` (*telegraf/1.4/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/da66c359d112b8d2d71ee7feb04d563c58428f27/telegraf/1.4/Dockerfile)
--	[`1.4-alpine`, `1.4.5-alpine`, `alpine` (*telegraf/1.4/alpine/Dockerfile*)](https://github.com/influxdata/influxdata-docker/blob/da66c359d112b8d2d71ee7feb04d563c58428f27/telegraf/1.4/alpine/Dockerfile)
-
 # Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
-
--	**Where to file issues**:  
-	[https://github.com/influxdata/influxdata-docker/issues](https://github.com/influxdata/influxdata-docker/issues)
 
 -	**Maintained by**:  
 	[InfluxData](https://github.com/influxdata/influxdata-docker)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+# Supported tags and respective `Dockerfile` links
+
+-	[`1.16`, `1.16.3`](https://github.com/influxdata/influxdata-docker/blob/c8327f7fd14da8984ad8d5ba00ea13fad496b77f/telegraf/1.16/Dockerfile)
+-	[`1.16-alpine`, `1.16.3-alpine`](https://github.com/influxdata/influxdata-docker/blob/c8327f7fd14da8984ad8d5ba00ea13fad496b77f/telegraf/1.16/alpine/Dockerfile)
+-	[`1.17`, `1.17.3`](https://github.com/influxdata/influxdata-docker/blob/c8327f7fd14da8984ad8d5ba00ea13fad496b77f/telegraf/1.17/Dockerfile)
+-	[`1.17-alpine`, `1.17.3-alpine`](https://github.com/influxdata/influxdata-docker/blob/c8327f7fd14da8984ad8d5ba00ea13fad496b77f/telegraf/1.17/alpine/Dockerfile)
+-	[`1.18`, `1.18.2`, `latest`](https://github.com/influxdata/influxdata-docker/blob/c8327f7fd14da8984ad8d5ba00ea13fad496b77f/telegraf/1.18/Dockerfile)
+-	[`1.18-alpine`, `1.18.2-alpine`, `alpine`](https://github.com/influxdata/influxdata-docker/blob/c8327f7fd14da8984ad8d5ba00ea13fad496b77f/telegraf/1.18/alpine/Dockerfile)
+
+# Quick reference (cont.)
+
+-	**Where to file issues**:  
+	[https://github.com/influxdata/influxdata-docker/issues](https://github.com/influxdata/influxdata-docker/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/telegraf/), [`arm32v7`](https://hub.docker.com/r/arm32v7/telegraf/), [`arm64v8`](https://hub.docker.com/r/arm64v8/telegraf/)
@@ -40,20 +44,17 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/telegraf`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Ftelegraf)  
+	[official-images repo's `library/telegraf` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Ftelegraf)  
 	[official-images repo's `library/telegraf` file](https://github.com/docker-library/official-images/blob/master/library/telegraf) ([history](https://github.com/docker-library/official-images/commits/master/library/telegraf))
 
 -	**Source of this description**:  
 	[docs repo's `telegraf/` directory](https://github.com/docker-library/docs/tree/master/telegraf) ([history](https://github.com/docker-library/docs/commits/master/telegraf))
 
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
-
 # Telegraf
 
 Telegraf is an open source agent written in Go for collecting metrics and data on the system it's running on or from other services. Telegraf writes data it collects to InfluxDB in the correct format.
 
-[Telegraf Official Docs](https://docs.influxdata.com/telegraf/latest/introduction/getting-started-telegraf/)
+[Telegraf Official Docs](https://docs.influxdata.com/telegraf/latest/introduction/getting-started/)
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/43d87118415bb75d7bb107683e79cd6d69186f67/telegraf/logo.png)
 
@@ -72,7 +73,7 @@ The default configuration requires a running InfluxDB instance as an output plug
 Minimal example to start an InfluxDB container:
 
 ```console
-$ docker run -d --name influxdb -p 8083:8083 -p 8086:8086 influxdb
+$ docker run -d --name influxdb -p 8086:8086 influxdb
 ```
 
 Starting Telegraf using the default config, which connects to InfluxDB at `http://localhost:8086/`:
@@ -97,7 +98,7 @@ $ docker run -v $PWD/telegraf.conf:/etc/telegraf/telegraf.conf:ro telegraf
 
 Modify `$PWD` to the directory where you want to store the configuration file.
 
-Read more about the Telegraf configuration [here](https://docs.influxdata.com/telegraf/latest/introduction/configuration/).
+Read more about the Telegraf configuration [here](https://docs.influxdata.com/telegraf/latest/administration/configuration/).
 
 ### Using the container with input plugins
 
@@ -164,8 +165,8 @@ Create an `nginx_status.conf` configuration file to expose metric data:
 server {
     listen 8090;
     location /nginx_status {
-        stub_status on;
-        access_log on;
+        stub_status;
+        access_log off;
     }
 }
 ```
@@ -219,9 +220,91 @@ Check that the measurement `foo` is added in the DB.
 
 ### Supported Plugins Reference
 
--	[Input Plugins](https://docs.influxdata.com/telegraf/latest/inputs/)
+-	[Input Plugins](https://docs.influxdata.com/telegraf/latest/plugins/inputs/)
 
--	[Output Plugins](https://docs.influxdata.com/telegraf/latest/outputs/)
+-	[Output Plugins](https://docs.influxdata.com/telegraf/latest/plugins/outputs/)
+
+### Monitoring the Docker Engine Host
+
+One common use case for Telegraf is to monitor the Docker Engine Host from within a container. The recommended technique is to mount the host filesystems into the container and use environment variables to instruct Telegraf where to locate the filesystems.
+
+The precise files that need to be made available varies from plugin to plugin. Here is an example showing the full set of supported locations:
+
+```console
+$ docker run -d --name=telegraf \
+	-v $PWD/telegraf.conf:/etc/telegraf/telegraf.conf:ro \
+	-v /:/hostfs:ro \
+	-e HOST_ETC=/hostfs/etc \
+	-e HOST_PROC=/hostfs/proc \
+	-e HOST_SYS=/hostfs/sys \
+	-e HOST_VAR=/hostfs/var \
+	-e HOST_RUN=/hostfs/run \
+	-e HOST_MOUNT_PREFIX=/hostfs \
+	telegraf
+```
+
+### Monitoring docker containers
+
+To monitor other docker containers, you can use the docker plugin and mount the docker socket into the container. An example configuration is below:
+
+```toml
+[[inputs.docker]]
+  endpoint = "unix:///var/run/docker.sock"
+```
+
+Then you can start the telegraf container.
+
+```console
+$ docker run -d --name=telegraf \
+      --net=influxdb \
+      -v /var/run/docker.sock:/var/run/docker.sock \
+      -v $PWD/telegraf.conf:/etc/telegraf/telegraf.conf:ro \
+      telegraf
+```
+
+Refer to the docker [plugin documentation](https://github.com/influxdata/telegraf/blob/master/plugins/inputs/docker/README.md) for more information.
+
+### Install Additional Packages
+
+Some plugins require additional packages to be installed. For example, the `ntpq` plugin requires `ntpq` command. It is recommended to create a custom derivative image to install any needed commands.
+
+As an example this Dockerfile add the `mtr-tiny` image to the stock image and save it as `telegraf-mtr.docker`:
+
+```dockerfile
+FROM telegraf:1.12.3
+
+RUN apt-get update && apt-get install -y --no-install-recommends mtr-tiny && \
+	rm -rf /var/lib/apt/lists/*
+```
+
+Build the derivative image:
+
+```console
+$ docker build -t telegraf-mtr:1.12.3 - < telegraf-mtr.docker
+```
+
+Create a `telegraf.conf` configuration file:
+
+```toml
+[[inputs.exec]]
+  interval = "60s"
+  commands=["mtr -C -n example.org"]
+  timeout = "40s"
+  data_format = "csv"
+  csv_skip_rows = 1
+  csv_column_names=["", "", "status", "dest", "hop", "ip", "loss", "snt", "", "", "avg", "best", "worst", "stdev"]
+  name_override = "mtr"
+  csv_tag_columns = ["dest", "hop", "ip"]
+
+[[outputs.file]]
+  files = ["stdout"]
+```
+
+Run your derivative image:
+
+```console
+$ docker run --name telegraf --rm -v $PWD/telegraf.conf:/etc/telegraf/telegraf.conf telegraf-mtr:1.12.3
+```
 
 # Image Variants
 
@@ -231,11 +314,11 @@ The `telegraf` images come in many flavors, each designed for a specific use cas
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `telegraf:alpine`
+## `telegraf:<version>-alpine`
 
-This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
-This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
 
 To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 

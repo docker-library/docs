@@ -14,44 +14,47 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`6.0.3`, `6.0` (*6.0/Dockerfile*)](https://github.com/Lightstreamer/Docker/blob/ca600ed95f9fa8ec632ef2ad0526c15d917a52b7/6.0/Dockerfile)
--	[`6.1.0`, `6.1`, `6`, `latest` (*6.1/Dockerfile*)](https://github.com/Lightstreamer/Docker/blob/22d6045bab9625ea9f8b3e1e53c4c34383335ed3/6.1/Dockerfile)
-
 # Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
-
--	**Where to file issues**:  
-	[https://github.com/Lightstreamer/Docker/issues](https://github.com/Lightstreamer/Docker/issues)
 
 -	**Maintained by**:  
 	[the Lightstreamer Server Development Team](https://github.com/Lightstreamer/Docker)
 
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+# Supported tags and respective `Dockerfile` links
+
+-	[`6.0.3`, `6.0`](https://github.com/Lightstreamer/Docker/blob/eeab1ae534273b1b05c973e577a1f3eec8d58427/6.0/Dockerfile)
+-	[`6.1.0`, `6.1`, `6`](https://github.com/Lightstreamer/Docker/blob/eeab1ae534273b1b05c973e577a1f3eec8d58427/6.1/Dockerfile)
+-	[`7.0.3-jdk8-openjdk`, `7.0-jdk8-openjdk`, `7.0.3-jdk8`, `7.0-jdk8`](https://github.com/Lightstreamer/Docker/blob/f3aaece15133b9405aef20c5d378c5a83aba7585/7.0/jdk8/Dockerfile)
+-	[`7.0.3-jdk11-openjdk`, `7.0-jdk11-openjdk`, `7.0.3-jdk11`, `7.0-jdk11`, `7.0.3`, `7.0`](https://github.com/Lightstreamer/Docker/blob/f3aaece15133b9405aef20c5d378c5a83aba7585/7.0/jdk11/Dockerfile)
+-	[`7.1.2-jdk8-openjdk`, `7.1-jdk8-openjdk`, `7-jdk8-openjdk`, `7.1.2-jdk8`, `7.1-jdk8`, `7-jdk8`](https://github.com/Lightstreamer/Docker/blob/7bdd2632e1cae0bf838899d591aadb2dd128c41a/7.1/jdk8/Dockerfile)
+-	[`7.1.2-jdk11-openjdk`, `7.1-jdk11-openjdk`, `7-jdk11-openjdk`, `7.1.2-jdk11`, `7.1-jdk11`, `7-jdk11`, `7.1.2`, `7.1`, `7`, `latest`](https://github.com/Lightstreamer/Docker/blob/7bdd2632e1cae0bf838899d591aadb2dd128c41a/7.1/jdk11/Dockerfile)
+
+# Quick reference (cont.)
+
+-	**Where to file issues**:  
+	[https://github.com/Lightstreamer/Docker/issues](https://github.com/Lightstreamer/Docker/issues)
+
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/lightstreamer/)
+	[`amd64`](https://hub.docker.com/r/amd64/lightstreamer/), [`arm64v8`](https://hub.docker.com/r/arm64v8/lightstreamer/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/lightstreamer/` directory](https://github.com/docker-library/repo-info/blob/master/repos/lightstreamer) ([history](https://github.com/docker-library/repo-info/commits/master/repos/lightstreamer))  
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/lightstreamer`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Flightstreamer)  
+	[official-images repo's `library/lightstreamer` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Flightstreamer)  
 	[official-images repo's `library/lightstreamer` file](https://github.com/docker-library/official-images/blob/master/library/lightstreamer) ([history](https://github.com/docker-library/official-images/commits/master/library/lightstreamer))
 
 -	**Source of this description**:  
 	[docs repo's `lightstreamer/` directory](https://github.com/docker-library/docs/tree/master/lightstreamer) ([history](https://github.com/docker-library/docs/commits/master/lightstreamer))
 
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
-
 # What is Lightstreamer Server?
 
 Lightstreamer is a real-time messaging server optimized for the Internet. Blending WebSockets, HTTP, and push notifications, it streams data to/from mobile, tablet, browser-based, desktop, and IoT applications.
 
-For more information and related downloads for Lightstreamer Server and other Lightstreaner products, please visit [www.lightstreamer.com](http://www.lightstreamer.com).
+For more information and related downloads for Lightstreamer Server and other Lightstreamer products, please visit [www.lightstreamer.com](https://www.lightstreamer.com).
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/3a58248e2d43ced58c294b7980b55846a0ddc9e5/lightstreamer/logo.png)
 
@@ -65,7 +68,7 @@ Launch the container with the default configuration:
 $ docker run --name ls-server -d -p 80:8080 lightstreamer
 ```
 
-This will map port 8080 inside the container to port 80 on local host. Then point your browser to `http://localhost` and watch the Welcome page showing real-time data flowing in from the locally deployed demo application, which is a first overview of the unique features offered by the Lightstreamer technology. More examples are available online at the [demo site](http://demos.lightstreamer.com).
+This will map port 8080 inside the container to port 80 on local host. Then point your browser to `http://localhost` and watch the Welcome page showing real-time data flowing in from the locally deployed demo application, which is a first overview of the unique features offered by the Lightstreamer technology. More examples are available online at the [demo site](https://demos.lightstreamer.com).
 
 ## Custom settings
 
@@ -109,7 +112,7 @@ the new image will be built along with the provided files. After that, launch th
 $ docker run --name ls-server -d -p 80:8080 my-lightstreamer
 ```
 
-To get more detailed information on how to configure the Lightstreamer server, please see the inline documentation in the `lighstreamer_conf.xml` and `lighstreamer_log_conf.xml` files you can find under the `conf` folder of the installation directory.
+To get more detailed information on how to configure the Lightstreamer server, please see the inline documentation in the `lightstreamer_conf.xml` and `lightstreamer_log_conf.xml` files you can find under the `conf` folder of the installation directory.
 
 ## Deployment of Adapter Sets
 
@@ -175,7 +178,7 @@ where `/path/to/custom/pages` is the path in your host machine containing the re
 
 # License
 
-View [license information](http://www.lightstreamer.com/lightstreamer-sla) for the software contained in this image.
+View [license information](https://www.lightstreamer.com/lightstreamer-sla) for the software contained in this image.
 
 As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 

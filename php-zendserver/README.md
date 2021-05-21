@@ -14,23 +14,24 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`5.5`, `8.5-php5.5` (*8.5/5.5/Dockerfile*)](https://github.com/zendtech/php-zendserver-docker/blob/a094256eb6df0b7bfd5bdbf344cad3a81ac8004b/8.5/5.5/Dockerfile)
--	[`5.6`, `8.5-php5.6`, `8.5` (*8.5/5.6/Dockerfile*)](https://github.com/zendtech/php-zendserver-docker/blob/a094256eb6df0b7bfd5bdbf344cad3a81ac8004b/8.5/5.6/Dockerfile)
--	[`5.4`, `7.0-php5.4` (*7.0/5.4/Dockerfile*)](https://github.com/zendtech/php-zendserver-docker/blob/a094256eb6df0b7bfd5bdbf344cad3a81ac8004b/7.0/5.4/Dockerfile)
--	[`9.1`, `latest` (*9.1/7.1/Dockerfile*)](https://github.com/zendtech/php-zendserver-docker/blob/a094256eb6df0b7bfd5bdbf344cad3a81ac8004b/9.1/7.1/Dockerfile)
-
 # Quick reference
 
+-	**Maintained by**:  
+	[Perforce Software, Inc.](https://github.com/zendtech/php-zendserver-docker)
+
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+# Supported tags and respective `Dockerfile` links
+
+-	[`8.5`, `8.5-php5.6`, `5.6`](https://github.com/zendtech/php-zendserver-docker/blob/f56e31421325fcef7c3619d9c582a30c647a545b/8.5/5.6/Dockerfile)
+-	[`9.1`](https://github.com/zendtech/php-zendserver-docker/blob/f56e31421325fcef7c3619d9c582a30c647a545b/9.1/7.1/Dockerfile)
+-	[`2019.0`, `latest`](https://github.com/zendtech/php-zendserver-docker/blob/f56e31421325fcef7c3619d9c582a30c647a545b/2019.0/Dockerfile)
+
+# Quick reference (cont.)
 
 -	**Where to file issues**:  
 	[Zend Support Center](https://www.zend.com/en/support-center)
-
--	**Maintained by**:  
-	[Zend Technologies](https://github.com/zendtech/php-zendserver-docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/php-zendserver/)
@@ -40,14 +41,11 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/php-zendserver`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fphp-zendserver)  
+	[official-images repo's `library/php-zendserver` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fphp-zendserver)  
 	[official-images repo's `library/php-zendserver` file](https://github.com/docker-library/official-images/blob/master/library/php-zendserver) ([history](https://github.com/docker-library/official-images/commits/master/library/php-zendserver))
 
 -	**Source of this description**:  
 	[docs repo's `php-zendserver/` directory](https://github.com/docker-library/docs/tree/master/php-zendserver) ([history](https://github.com/docker-library/docs/commits/master/php-zendserver))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Zend Server?
 
@@ -64,15 +62,15 @@ Zend Server is the platform that enables Continuous Delivery, which provides con
 ### Additional Resources
 
 -	[http://www.zend.com/](http://www.zend.com/)
--	[http://kb.zend.com/](http://kb.zend.com/)
+-	[http://support.roguewave.com/](http://support.roguewave.com/)
 -	[http://files.zend.com/help/Zend-Server/zend-server.htm#faqs.htm](http://files.zend.com/help/Zend-Server/zend-server.htm#faqs.htm)
 -	[http://files.zend.com/help/Zend-Server/zend-server.htm#getting\_started.htm](http://files.zend.com/help/Zend-Server/zend-server.htm#getting_started.htm)
 
 # PHP-ZendServer
 
-This is a cluster-enabled version of a Dockerized Zend Server 8.0 container. With Zend Server on Docker, you'll get your PHP applications up and running on a highly available PHP production environment which includes, amongst other features, a highly reliable PHP stack, application monitoring, troubleshooting, and the new and innovative new technology - Z-Ray. Z-Ray gives developers unprecedented visibility into their code by tracking and displaying in a toolbar live and detailed info on how the various elements constructing their page are performing.
+This is a cluster-enabled version of a Dockerized Zend Server container. With Zend Server on Docker, you'll get your PHP applications up and running on a highly available PHP production environment which includes, amongst other features, a highly reliable PHP stack, application monitoring, troubleshooting, and the new and innovative new technology - Z-Ray. Z-Ray gives developers unprecedented visibility into their code by tracking and displaying in a toolbar live and detailed info on how the various elements constructing their page are performing.
 
-For development purposes we provide you with a trial license that is valid until July-31st-2016. For production use you must provide a valid Zend Server license using the instructions below in the Usage section.
+For development purposes we provide you with a time limited trial license. For production use you must provide a valid Zend Server license using the instructions below in the Usage section.
 
 ## Usage
 
@@ -89,13 +87,13 @@ To start a single Zend Server instance, execute:
 -	You can specify the PHP and Zend Server version by adding ':<php-version>' or ':&lt;ZS-version&gt;-php&lt;version&gt;' to the 'docker run' command.
 
 		for example: 
-		$docker run php-zendserver:8.0-php5.6
+		$docker run php-zendserver:8.5-php5.6
 
 #### Availible versions:
 
--	Zend Server 7
 -	Zend Server 8
 -	Zend Server 9 (With PHP 7 GA)(Default version)
+-	Zend Server 2019 with multi PHP Version Support (7.1, 7.2 & 7.3)
 
 ##### Cluster
 
@@ -186,7 +184,7 @@ Each Zend Server Docker container requires 1GB of availible memory.
 
 # License
 
-[Zend Technologies Ltd.](https://www.zend.com/topics/License-EULA-2010-09-2.pdf)
+[Perforce Software, Inc.](https://www.zend.com/end-user-license-agreement)
 
 As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 

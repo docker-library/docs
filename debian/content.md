@@ -8,7 +8,7 @@ Debian is an operating system which is composed primarily of free and open-sourc
 
 # About this image
 
-The `%%IMAGE%%:latest` tag will always point the latest stable release (which is, at the time of this writing, `%%IMAGE%%:stretch`). Stable releases are also tagged with their version (ie, `%%IMAGE%%:8` is an alias for `%%IMAGE%%:jessie`, `%%IMAGE%%:7` is an alias for `%%IMAGE%%:wheezy`, etc).
+The `%%IMAGE%%:latest` tag will always point the latest stable release (which is, at the time of this writing, `%%IMAGE%%:buster`). Stable releases are also tagged with their version (ie, `%%IMAGE%%:9` is an alias for `%%IMAGE%%:stretch`, `%%IMAGE%%:8` is an alias for `%%IMAGE%%:jessie`, etc).
 
 The rolling tags (`%%IMAGE%%:stable`, `%%IMAGE%%:testing`, etc) use the rolling suite names in their `/etc/apt/sources.list` file (ie, `deb http://deb.debian.org/debian testing main`).
 
@@ -30,6 +30,8 @@ ENV LANG en_US.utf8
 
 ## How It's Made
 
-The rootfs tarballs for this image are built using [the reproducible-Debian-rootfs tool, `debuerreotype`](https://github.com/debuerreotype/debuerreotype), with an explicit goal being that they are transparent and reproducible. Using the same toolchain, it should be possible to regenerate (clean-room!) the same tarballs used for building the official Debian images.
+The rootfs tarballs for this image are built using [the reproducible-Debian-rootfs tool, `debuerreotype`](https://github.com/debuerreotype/debuerreotype), with an explicit goal being that they are transparent and reproducible. Using the same toolchain, it should be possible to regenerate (clean-room!) the same tarballs used for building the official Debian images. [The `examples/debian.sh` script in that debuerreotype repository](https://github.com/debuerreotype/debuerreotype/blob/master/examples/debian.sh) (and the `debian-all.sh` companion/wrapper) is the canonical entrypoint used for creating the artifacts published in this image (via a process similar to the `docker-run.sh` included in the root of that repository).
 
-Additionally, the scripts in [%%GITHUB-REPO%%](%%GITHUB-REPO%%) are used to create each tag's `Dockerfile` and collect architecture-specific tarballs into a single place (for placement into [`dist-ARCH` branches on the same repository](%%GITHUB-REPO%%/branches), which also contain extra metadata about the artifacts included in each build, such as explicit package versions).
+Additionally, the scripts in [%%GITHUB-REPO%%](%%GITHUB-REPO%%) are used to create each tag's `Dockerfile` and collect architecture-specific tarballs into [`dist-ARCH` branches on the same repository](%%GITHUB-REPO%%/branches), which also contain extra metadata about the artifacts included in each build, such as explicit package versions included in the base image (`rootfs.manifest`), the exact snapshot.debian.org timestamp used for `debuerreotype` invocation (`rootfs.debuerreotype-epoch`), the `sources.list` found in the image (`rootfs.sources-list`) and the one used during image creation (`rootfs.sources-list-snapshot`), etc.
+
+For convenience, the SHA256 checksum (and full build command) for each of the primary `rootfs.tar.xz` artifacts are also published at [docker.debian.net](https://docker.debian.net/).

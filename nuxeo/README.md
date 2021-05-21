@@ -14,24 +14,25 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`6.0`, `6`, `LTS-2014` (*6.0/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/4da3ff891d3d6911304cbbe0895333ae4c84ffa7/6.0/Dockerfile)
--	[`7.10`, `7`, `LTS-2015` (*7.10/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/4da3ff891d3d6911304cbbe0895333ae4c84ffa7/7.10/Dockerfile)
--	[`8.10`, `8`, `LTS-2016`, `LTS` (*8.10/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/20df98ce84f12cd3cfdcfd08ab8c9e029f7f01ab/8.10/Dockerfile)
--	[`9.2` (*9.2/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/2a9207e3abcb6db16311af3c7548cef3fbd1638c/9.2/Dockerfile)
--	[`9.3`, `9`, `FT`, `latest` (*9.3/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/91e4fb6e9ca5d0aeb90f82a1c15cd686af73f2cd/9.3/Dockerfile)
-
 # Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
-
--	**Where to file issues**:  
-	[https://github.com/nuxeo/docker-nuxeo/issues](https://github.com/nuxeo/docker-nuxeo/issues)
 
 -	**Maintained by**:  
 	[Nuxeo](https://github.com/nuxeo/docker-nuxeo)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+# Supported tags and respective `Dockerfile` links
+
+-	[`7.10`, `7`, `LTS-2015`](https://github.com/nuxeo/docker-nuxeo/blob/f253a2398dbc39b42ca6ff84f2adeda8c1e8287e/7.10/Dockerfile)
+-	[`8.10`, `8`, `LTS-2016`](https://github.com/nuxeo/docker-nuxeo/blob/f253a2398dbc39b42ca6ff84f2adeda8c1e8287e/8.10/Dockerfile)
+-	[`9.10`, `9`, `LTS-2017`](https://github.com/nuxeo/docker-nuxeo/blob/f253a2398dbc39b42ca6ff84f2adeda8c1e8287e/9.10/Dockerfile)
+-	[`10.10`, `10`, `LTS-2019`, `LTS`, `FT`, `latest`](https://github.com/nuxeo/docker-nuxeo/blob/f253a2398dbc39b42ca6ff84f2adeda8c1e8287e/10.10/Dockerfile)
+
+# Quick reference (cont.)
+
+-	**Where to file issues**:  
+	[https://github.com/nuxeo/docker-nuxeo/issues](https://github.com/nuxeo/docker-nuxeo/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/nuxeo/)
@@ -41,20 +42,17 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/nuxeo`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fnuxeo)  
+	[official-images repo's `library/nuxeo` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fnuxeo)  
 	[official-images repo's `library/nuxeo` file](https://github.com/docker-library/official-images/blob/master/library/nuxeo) ([history](https://github.com/docker-library/official-images/commits/master/library/nuxeo))
 
 -	**Source of this description**:  
 	[docs repo's `nuxeo/` directory](https://github.com/docker-library/docs/tree/master/nuxeo) ([history](https://github.com/docker-library/docs/commits/master/nuxeo))
 
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
-
 # What is Nuxeo ?
 
 The Nuxeo Platform is a highly customizable and extensible content management platform for building business applications.
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/78776b9252a6639e40a3ed15cb5ff5e88a1f6dbf/nuxeo/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/6538ea62bab8b051d0556c689c113202d48089ed/nuxeo/logo.png)
 
 # How to use this image
 
@@ -71,8 +69,7 @@ The Nuxeo platform is accesible at http://${DOCKER_HOST}:8080/ and default User 
 ## Start a nuxeo with some additional packages
 
 ```console
-$ docker run --name mynuxeo -p 8080:8080 -e NUXEO_PACKAGES="nuxeo-web-mobile nuxeo-drive nuxeo-diff nuxeo-spreadsheet nuxeo-dam nuxeo-template-rendering nuxeo-template-rendering-samples nuxeo-showcase-content"
-nuxeo
+$ docker run --name mynuxeo --rm -ti -p 8080:8080 -e NUXEO_PACKAGES="nuxeo-web-ui nuxeo-dam nuxeo-drive nuxeo-showcase-content nuxeo-template-rendering nuxeo-template-rendering-samples nuxeo-spreadsheet" nuxeo
 ```
 
 This will install the same image as above but comes with some demo Nuxeo packages to demonstrate its various usage (DAM, DM, search etc...)
@@ -177,11 +174,11 @@ Allows to add custom parameters to `nuxeo.conf`. Multiple parameters can be spli
 
 ## Adding additional configuration
 
-If you would like to do additional setup in an image derived from this one, you can add a `/nuxeo.conf` file that will be appended to the end of the regular `nuxeo.conf` file.
+If you would like to do additional setup in an image derived from this one, you can add a `/docker-entrypoint-initnuxeo.d/nuxeo.conf` file that will be appended to the end of the regular `nuxeo.conf` file.
 
 ```dockerfile
 FROM nuxeo:7.10
-ADD nuxeo.conf /nuxeo.conf
+COPY nuxeo.conf /docker-entrypoint-initnuxeo.d/nuxeo.conf
 ```
 
 If you need a root account to run some installation steps in your `Dockerfile`, then you need to put those steps between two `USER` command as the image is run with the user `1000` (nuxeo). For instance:

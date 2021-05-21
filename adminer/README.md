@@ -14,38 +14,37 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`4.3.1-standalone`, `4.3-standalone`, `4-standalone`, `standalone`, `4.3.1`, `4.3`, `4`, `latest` (*4.3/Dockerfile*)](https://github.com/TimWolla/docker-adminer/blob/73de6b9a7979ded5d2289fe015fffe81fa32e0a4/4.3/Dockerfile)
--	[`4.3.1-fastcgi`, `4.3-fastcgi`, `4-fastcgi`, `fastcgi` (*4.3/fastcgi/Dockerfile*)](https://github.com/TimWolla/docker-adminer/blob/e7677ec95176973e991b063d8782876207738ce1/4.3/fastcgi/Dockerfile)
-
 # Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
-
--	**Where to file issues**:  
-	[https://github.com/TimWolla/docker-adminer/issues](https://github.com/TimWolla/docker-adminer/issues)
 
 -	**Maintained by**:  
 	[Tim Düsterhus (of the Docker Community)](https://github.com/TimWolla/docker-adminer)
 
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+# Supported tags and respective `Dockerfile` links
+
+-	[`4.8.0-standalone`, `4-standalone`, `standalone`, `4.8.0`, `4`, `latest`](https://github.com/TimWolla/docker-adminer/blob/40a2516bf4f95dc76a839b8b76e4a5eae2378e67/4/Dockerfile)
+-	[`4.8.0-fastcgi`, `4-fastcgi`, `fastcgi`](https://github.com/TimWolla/docker-adminer/blob/40a2516bf4f95dc76a839b8b76e4a5eae2378e67/4/fastcgi/Dockerfile)
+
+# Quick reference (cont.)
+
+-	**Where to file issues**:  
+	[https://github.com/TimWolla/docker-adminer/issues](https://github.com/TimWolla/docker-adminer/issues)
+
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/adminer/)
+	[`amd64`](https://hub.docker.com/r/amd64/adminer/), [`arm32v6`](https://hub.docker.com/r/arm32v6/adminer/), [`arm32v7`](https://hub.docker.com/r/arm32v7/adminer/), [`arm64v8`](https://hub.docker.com/r/arm64v8/adminer/), [`i386`](https://hub.docker.com/r/i386/adminer/), [`ppc64le`](https://hub.docker.com/r/ppc64le/adminer/), [`s390x`](https://hub.docker.com/r/s390x/adminer/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/adminer/` directory](https://github.com/docker-library/repo-info/blob/master/repos/adminer) ([history](https://github.com/docker-library/repo-info/commits/master/repos/adminer))  
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/adminer`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fadminer)  
+	[official-images repo's `library/adminer` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fadminer)  
 	[official-images repo's `library/adminer` file](https://github.com/docker-library/official-images/blob/master/library/adminer) ([history](https://github.com/docker-library/official-images/commits/master/library/adminer))
 
 -	**Source of this description**:  
 	[docs repo's `adminer/` directory](https://github.com/docker-library/docs/tree/master/adminer) ([history](https://github.com/docker-library/docs/commits/master/adminer))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # Adminer
 
@@ -117,7 +116,7 @@ To load plugins you can pass a list of filenames in `ADMINER_PLUGINS`:
 $ docker run --link some_database:db -p 8080:8080 -e ADMINER_PLUGINS='tables-filter tinymce' adminer
 ```
 
-If a plugin *requires* parameters to work correctly you will need to add a custom file to the container:
+If a plugin *requires* parameters to work correctly instead of adding the plugin to `ADMINER_PLUGINS`, you need to add a custom file to the container:
 
 ```console
 $ docker run --link some_database:db -p 8080:8080 -e ADMINER_PLUGINS='login-servers' adminer
@@ -151,6 +150,14 @@ $ docker run --link some_database:db -p 8080:8080 -e ADMINER_DESIGN='nette' admi
 
 To use a custom design you can add a file called `/var/www/html/adminer.css`.
 
+### Usage with external server
+
+You can specify the default host with the `ADMINER_DEFAULT_SERVER` environment variable. This is useful if you are connecting to an external server or a docker container named something other than the default `db`.
+
+```console
+docker run -p 8080:8080 -e ADMINER_DEFAULT_SERVER=mysql adminer
+```
+
 ## Supported Drivers
 
 While Adminer supports a wide range of database drivers this image only supports the following out of the box:
@@ -166,10 +173,7 @@ To add support for the other drivers you will need to install the following PHP 
 -	`pdo_dblib` (MS SQL)
 -	`oci8` (Oracle)
 -	`interbase` (Firebird)
-
-The following drivers are not supported by this image:
-
--	MongoDB (The driver is not supported by PHP 7)
+-	`mongodb` (MongoDB)
 
 # License
 

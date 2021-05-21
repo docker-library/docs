@@ -14,41 +14,39 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
-
--	[`5.4.1.6`, `5.4.1`, `5.4`, `5`, `latest` (*5.4.1.6/Dockerfile*)](https://github.com/mono/docker/blob/c05f965729b45093c1e9534d3e6532984f8091db/5.4.1.6/Dockerfile)
--	[`5.4.1.6-slim`, `5.4.1-slim`, `5.4-slim`, `5-slim`, `slim` (*5.4.1.6/slim/Dockerfile*)](https://github.com/mono/docker/blob/c05f965729b45093c1e9534d3e6532984f8091db/5.4.1.6/slim/Dockerfile)
--	[`5.2.0.224`, `5.2.0`, `5.2` (*5.2.0.224/Dockerfile*)](https://github.com/mono/docker/blob/55b93b6b6b06a2708bf2bdefe8dc2726e28db861/5.2.0.224/Dockerfile)
--	[`5.2.0.224-slim`, `5.2.0-slim`, `5.2-slim` (*5.2.0.224/slim/Dockerfile*)](https://github.com/mono/docker/blob/55b93b6b6b06a2708bf2bdefe8dc2726e28db861/5.2.0.224/slim/Dockerfile)
--	[`4.8.0.524`, `4.8.0`, `4.8`, `4` (*4.8.0.524/Dockerfile*)](https://github.com/mono/docker/blob/0d987d93235630e05a14983c7f87500ab33c90da/4.8.0.524/Dockerfile)
-
 # Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
-
--	**Where to file issues**:  
-	[https://github.com/mono/docker/issues](https://github.com/mono/docker/issues)
 
 -	**Maintained by**:  
 	[the Mono Project](https://github.com/mono/docker)
 
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+# Supported tags and respective `Dockerfile` links
+
+-	[`6.12.0.107`, `latest`, `6.12.0`, `6.12`, `6`](https://github.com/mono/docker/blob/490ebd19e006c00165baca7fbef00c9e98a96d34/6.12.0.107/Dockerfile)
+-	[`6.12.0.107-slim`, `slim`, `6.12.0-slim`, `6.12-slim`, `6-slim`](https://github.com/mono/docker/blob/490ebd19e006c00165baca7fbef00c9e98a96d34/6.12.0.107/slim/Dockerfile)
+-	[`6.10.0.104`, `6.10.0`, `6.10`](https://github.com/mono/docker/blob/a449b2a57e1cfadd098c2bcad13f89c4eab83e54/6.10.0.104/Dockerfile)
+-	[`6.10.0.104-slim`, `6.10.0-slim`, `6.10-slim`](https://github.com/mono/docker/blob/a449b2a57e1cfadd098c2bcad13f89c4eab83e54/6.10.0.104/slim/Dockerfile)
+
+# Quick reference (cont.)
+
+-	**Where to file issues**:  
+	[https://github.com/mono/docker/issues](https://github.com/mono/docker/issues)
+
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/mono/), [`arm32v7`](https://hub.docker.com/r/arm32v7/mono/), [`arm64v8`](https://hub.docker.com/r/arm64v8/mono/), [`i386`](https://hub.docker.com/r/i386/mono/)
+	[`amd64`](https://hub.docker.com/r/amd64/mono/), [`arm32v5`](https://hub.docker.com/r/arm32v5/mono/), [`arm32v7`](https://hub.docker.com/r/arm32v7/mono/), [`arm64v8`](https://hub.docker.com/r/arm64v8/mono/), [`i386`](https://hub.docker.com/r/i386/mono/), [`ppc64le`](https://hub.docker.com/r/ppc64le/mono/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/mono/` directory](https://github.com/docker-library/repo-info/blob/master/repos/mono) ([history](https://github.com/docker-library/repo-info/commits/master/repos/mono))  
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/mono`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmono)  
+	[official-images repo's `library/mono` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fmono)  
 	[official-images repo's `library/mono` file](https://github.com/docker-library/official-images/blob/master/library/mono) ([history](https://github.com/docker-library/official-images/commits/master/library/mono))
 
 -	**Source of this description**:  
 	[docs repo's `mono/` directory](https://github.com/docker-library/docs/tree/master/mono) ([history](https://github.com/docker-library/docs/commits/master/mono))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Mono
 
@@ -99,7 +97,7 @@ The `mono` images come in many flavors, each designed for a specific use case.
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `mono:slim`
+## `mono:<version>-slim`
 
 This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `mono`. Unless you are working in an environment where *only* the `mono` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
 

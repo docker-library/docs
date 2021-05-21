@@ -14,40 +14,40 @@ WARNING:
 
 -->
 
-# Supported tags and respective `Dockerfile` links
+# **DEPRECATION NOTICE**
 
--	[`8.21.0`, `8.21` (*8.21/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/dbfbdb991427d3e2a0d8f1d2698276846176ec40/8.21/Dockerfile)
--	[`8.21.0-onbuild`, `8.21-onbuild` (*8.21/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/dbfbdb991427d3e2a0d8f1d2698276846176ec40/8.21/onbuild/Dockerfile)
--	[`8.22.0`, `8.22`, `8`, `latest` (*8.22/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/b7d55c572e0b23c5c537432211823a8677727e1c/8.22/Dockerfile)
--	[`8.22.0-onbuild`, `8.22-onbuild`, `8-onbuild`, `onbuild` (*8.22/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/b7d55c572e0b23c5c537432211823a8677727e1c/8.22/onbuild/Dockerfile)
+This image is deprecated in favor of the full installation explained over at [Self-Hosted Sentry Docs](https://develop.sentry.dev/self-hosted/) (last updated July 2019; [getsentry/docker-sentry#189](https://github.com/getsentry/docker-sentry/pull/189)).
 
 # Quick reference
-
--	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://blog.docker.com/2016/11/introducing-docker-community-directory-docker-community-slack/), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
-
--	**Where to file issues**:  
-	[https://github.com/getsentry/docker-sentry/issues](https://github.com/getsentry/docker-sentry/issues)
 
 -	**Maintained by**:  
 	[Sentry](https://github.com/getsentry/docker-sentry)
 
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
+# Supported tags and respective `Dockerfile` links
+
+**No supported tags**
+
+# Quick reference (cont.)
+
+-	**Where to file issues**:  
+	[https://github.com/getsentry/docker-sentry/issues](https://github.com/getsentry/docker-sentry/issues)
+
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/sentry/)
+	**No supported architectures**
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/sentry/` directory](https://github.com/docker-library/repo-info/blob/master/repos/sentry) ([history](https://github.com/docker-library/repo-info/commits/master/repos/sentry))  
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/sentry`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fsentry)  
+	[official-images repo's `library/sentry` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fsentry)  
 	[official-images repo's `library/sentry` file](https://github.com/docker-library/official-images/blob/master/library/sentry) ([history](https://github.com/docker-library/official-images/commits/master/library/sentry))
 
 -	**Source of this description**:  
 	[docs repo's `sentry/` directory](https://github.com/docker-library/docs/tree/master/sentry) ([history](https://github.com/docker-library/docs/commits/master/sentry))
-
--	**Supported Docker versions**:  
-	[the latest release](https://github.com/docker/docker-ce/releases/latest) (down to 1.6 on a best-effort basis)
 
 # What is Sentry?
 
@@ -55,7 +55,7 @@ Sentry is a realtime event logging and aggregation platform. It specializes in m
 
 > [github.com/getsentry/sentry](https://github.com/getsentry/sentry)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/831b07a52f9ff6577c915afc41af8158725829f4/sentry/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/7d1c6fff37893bcefc186de7b978f5bdb2f801f6/sentry/logo.png)
 
 # How to use this image
 
@@ -151,30 +151,6 @@ Connection information for an outbound smtp server. These values aren't needed i
 ### `SENTRY_MAILGUN_API_KEY`
 
 If you're using Mailgun for inbound mail, set your API key and configure a route to forward to `/api/hooks/mailgun/inbound/`.
-
-# Image Variants
-
-The `sentry` images come in many flavors, each designed for a specific use case.
-
-## `sentry:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-## `sentry:onbuild`
-
-This image makes it easy to custom build your own Sentry instance by copying in a custom `config.yml` and/or `sentry.conf.py` file and installing plugins from `requirements.txt`.
-
-It's also possible to develop custom extensions within your `onbuild` package. If the build directory contains a `setup.py` file, this will also get installed.
-
-See the [official Sentry documentation](https://docs.getsentry.com/on-premise/server/installation/) for more information.
-
-To create your custom `sentry:onbuild` package, simply do the following:
-
-1.	Create a Dockerfile containing `FROM sentry:onbuild`
-2.	In the same directory, add your custom configuration files.
-3.	You can get copies of those files to use as templates from the [docker-sentry GitHub repo](https://github.com/getsentry/docker-sentry/).
-4.	Build your image: `docker build -t mysentry .`
-5.	Run your custom image using `mysentry` instead of `sentry`.
 
 # License
 
