@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.8.16`, `3.8`, `3`, `latest`](https://github.com/docker-library/rabbitmq/blob/f1808fc2040150a8ea7c8bbcb291fdb1536b4ca2/3.8/ubuntu/Dockerfile)
+-	[`3.8.16`, `3.8`, `3`, `latest`](https://github.com/docker-library/rabbitmq/blob/445123fab775aceb924181b99821c82551128cfa/3.8/ubuntu/Dockerfile)
 -	[`3.8.16-management`, `3.8-management`, `3-management`, `management`](https://github.com/docker-library/rabbitmq/blob/7e63843da6bfb191ddee6dbe3dd7ec0df36ae70b/3.8/ubuntu/management/Dockerfile)
--	[`3.8.16-alpine`, `3.8-alpine`, `3-alpine`, `alpine`](https://github.com/docker-library/rabbitmq/blob/f1808fc2040150a8ea7c8bbcb291fdb1536b4ca2/3.8/alpine/Dockerfile)
+-	[`3.8.16-alpine`, `3.8-alpine`, `3-alpine`, `alpine`](https://github.com/docker-library/rabbitmq/blob/445123fab775aceb924181b99821c82551128cfa/3.8/alpine/Dockerfile)
 -	[`3.8.16-management-alpine`, `3.8-management-alpine`, `3-management-alpine`, `management-alpine`](https://github.com/docker-library/rabbitmq/blob/7e63843da6bfb191ddee6dbe3dd7ec0df36ae70b/3.8/alpine/management/Dockerfile)
 
 # Quick reference (cont.)
