@@ -36,6 +36,9 @@ WARNING:
 -	[`2021.06-dev-apache`, `dev-apache`, `2021.06-dev`, `dev`](https://github.com/friendica/docker/blob/9e22de455afc8ba9a39b3b17316f613e2b4d0df8/2021.06-dev/apache/Dockerfile)
 -	[`2021.06-dev-fpm`, `dev-fpm`](https://github.com/friendica/docker/blob/9e22de455afc8ba9a39b3b17316f613e2b4d0df8/2021.06-dev/fpm/Dockerfile)
 -	[`2021.06-dev-fpm-alpine`, `dev-fpm-alpine`](https://github.com/friendica/docker/blob/9e22de455afc8ba9a39b3b17316f613e2b4d0df8/2021.06-dev/fpm-alpine/Dockerfile)
+-	[`2021.06-rc-apache`, `rc-apache`, `2021.06-rc`, `rc`](https://github.com/friendica/docker/blob/0efa3647e8b4efa2994501c5470345f29faa5bc5/2021.06-rc/apache/Dockerfile)
+-	[`2021.06-rc-fpm`, `rc-fpm`](https://github.com/friendica/docker/blob/0efa3647e8b4efa2994501c5470345f29faa5bc5/2021.06-rc/fpm/Dockerfile)
+-	[`2021.06-rc-fpm-alpine`, `rc-fpm-alpine`](https://github.com/friendica/docker/blob/0efa3647e8b4efa2994501c5470345f29faa5bc5/2021.06-rc/fpm-alpine/Dockerfile)
 
 # Quick reference (cont.)
 
