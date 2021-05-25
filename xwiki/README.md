@@ -24,8 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`13`, `13.3`, `13.3.0`, `13-mysql-tomcat`, `13.3-mysql-tomcat`, `13.3.0-mysql-tomcat`, `mysql-tomcat`, `stable-mysql-tomcat`, `stable-mysql`, `stable`, `latest`](https://github.com/xwiki-contrib/docker-xwiki/blob/2cb4312482f06cacf7b638bb3777e0ecad4d003a/13/mysql-tomcat/Dockerfile)
--	[`13-postgres-tomcat`, `13.3-postgres-tomcat`, `13.3.0-postgres-tomcat`, `postgres-tomcat`, `stable-postgres-tomcat`, `stable-postgres`](https://github.com/xwiki-contrib/docker-xwiki/blob/2cb4312482f06cacf7b638bb3777e0ecad4d003a/13/postgres-tomcat/Dockerfile)
+-	[`13`, `13.4`, `13.4.0`, `13-mysql-tomcat`, `13.4-mysql-tomcat`, `13.4.0-mysql-tomcat`, `mysql-tomcat`, `stable-mysql-tomcat`, `stable-mysql`, `stable`, `latest`](https://github.com/xwiki-contrib/docker-xwiki/blob/5384037f6f8cee294b1d40e3affaaefcb0f218dc/13/mysql-tomcat/Dockerfile)
+-	[`13-postgres-tomcat`, `13.4-postgres-tomcat`, `13.4.0-postgres-tomcat`, `postgres-tomcat`, `stable-postgres-tomcat`, `stable-postgres`](https://github.com/xwiki-contrib/docker-xwiki/blob/5384037f6f8cee294b1d40e3affaaefcb0f218dc/13/postgres-tomcat/Dockerfile)
 -	[`12`, `12.10`, `12.10.7`, `12-mysql-tomcat`, `12.10-mysql-tomcat`, `12.10.7-mysql-tomcat`, `lts-mysql-tomcat`, `lts-mysql`, `lts`](https://github.com/xwiki-contrib/docker-xwiki/blob/ab7c84b36ec4fbee53ab412c8a5faeb936c89bf7/12/mysql-tomcat/Dockerfile)
 -	[`12-postgres-tomcat`, `12.10-postgres-tomcat`, `12.10.7-postgres-tomcat`, `lts-postgres-tomcat`, `lts-postgres`](https://github.com/xwiki-contrib/docker-xwiki/blob/ab7c84b36ec4fbee53ab412c8a5faeb936c89bf7/12/postgres-tomcat/Dockerfile)
 
