@@ -52,10 +52,13 @@ WARNING:
 -	[`eloquent-ros1-bridge`, `eloquent-ros1-bridge-bionic`](https://github.com/osrf/docker_images/blob/b3e79c3aef3687b56b3c1052ae38aa7010234834/ros/eloquent/ubuntu/bionic/ros1-bridge/Dockerfile)
 -	[`foxy-ros-core`, `foxy-ros-core-focal`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/foxy/ubuntu/focal/ros-core/Dockerfile)
 -	[`foxy-ros-base`, `foxy-ros-base-focal`, `foxy`, `latest`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/foxy/ubuntu/focal/ros-base/Dockerfile)
--	[`foxy-ros1-bridge`, `foxy-ros1-bridge-focal`](https://github.com/osrf/docker_images/blob/f7d378b9d6ed10c72a2f686554f7b712e921c1aa/ros/foxy/ubuntu/focal/ros1-bridge/Dockerfile)
+-	[`foxy-ros1-bridge`, `foxy-ros1-bridge-focal`](https://github.com/osrf/docker_images/blob/bf35442257b504eac671418bcb70481807a7fa69/ros/foxy/ubuntu/focal/ros1-bridge/Dockerfile)
+-	[`galactic-ros-core`, `galactic-ros-core-focal`](https://github.com/osrf/docker_images/blob/6511d8fc0754616550b7f5ea31a40084c2462938/ros/galactic/ubuntu/focal/ros-core/Dockerfile)
+-	[`galactic-ros-base`, `galactic-ros-base-focal`, `galactic`](https://github.com/osrf/docker_images/blob/6511d8fc0754616550b7f5ea31a40084c2462938/ros/galactic/ubuntu/focal/ros-base/Dockerfile)
+-	[`galactic-ros1-bridge`, `galactic-ros1-bridge-focal`](https://github.com/osrf/docker_images/blob/6511d8fc0754616550b7f5ea31a40084c2462938/ros/galactic/ubuntu/focal/ros1-bridge/Dockerfile)
 -	[`rolling-ros-core`, `rolling-ros-core-focal`](https://github.com/osrf/docker_images/blob/a5644adacdca4a49faf10221620048175cdd7262/ros/rolling/ubuntu/focal/ros-core/Dockerfile)
 -	[`rolling-ros-base`, `rolling-ros-base-focal`, `rolling`](https://github.com/osrf/docker_images/blob/a5644adacdca4a49faf10221620048175cdd7262/ros/rolling/ubuntu/focal/ros-base/Dockerfile)
--	[`rolling-ros1-bridge`, `rolling-ros1-bridge-focal`](https://github.com/osrf/docker_images/blob/a5644adacdca4a49faf10221620048175cdd7262/ros/rolling/ubuntu/focal/ros1-bridge/Dockerfile)
+-	[`rolling-ros1-bridge`, `rolling-ros1-bridge-focal`](https://github.com/osrf/docker_images/blob/bf35442257b504eac671418bcb70481807a7fa69/ros/rolling/ubuntu/focal/ros1-bridge/Dockerfile)
 
 # Quick reference (cont.)
 
