@@ -10,7 +10,7 @@ Development of Ubuntu is led by Canonical Ltd. Canonical generates revenue throu
 
 # What's in this image?
 
-This image is built from official rootfs tarballs provided by Canonical (specifically, https://partner-images.canonical.com/core/).
+This image is built from official rootfs tarballs provided by Canonical (specifically, https://partner-images.canonical.com/oci/ and https://partner-images.canonical.com/core/ for Xenial and older).
 
 The `%%IMAGE%%:latest` tag points to the "latest LTS", since that's the version recommended for general use. The `%%IMAGE%%:rolling` tag points to the latest release (regardless of LTS status).
 
