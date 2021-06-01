@@ -59,7 +59,7 @@ MediaWiki is free and open-source wiki software. Originally developed by Magnus 
 
 > [wikipedia.org/wiki/MediaWiki](https://en.wikipedia.org/wiki/MediaWiki)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/82edffd5b9edd34a517be9e079966978fb1c990b/mediawiki/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/27b797857efd9253c0981c09696f579a167062d4/mediawiki/logo.svg?sanitize=true)
 
 # How to use this image
 

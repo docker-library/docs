@@ -24,14 +24,14 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`gzserver9-xenial`](https://github.com/osrf/docker_images/blob/c1a6cab08c9a8b85c869d24b31f6243ad4646cee/gazebo/9/ubuntu/xenial/gzserver9/Dockerfile)
--	[`libgazebo9-xenial`](https://github.com/osrf/docker_images/blob/c1a6cab08c9a8b85c869d24b31f6243ad4646cee/gazebo/9/ubuntu/xenial/libgazebo9/Dockerfile)
--	[`gzserver9`, `gzserver9-bionic`](https://github.com/osrf/docker_images/blob/7178a9d0d509c8c222fffa6edff4d84124fb46ee/gazebo/9/ubuntu/bionic/gzserver9/Dockerfile)
--	[`libgazebo9`, `libgazebo9-bionic`](https://github.com/osrf/docker_images/blob/7178a9d0d509c8c222fffa6edff4d84124fb46ee/gazebo/9/ubuntu/bionic/libgazebo9/Dockerfile)
--	[`gzserver11-bionic`](https://github.com/osrf/docker_images/blob/48051c3f57c5c632407920a4beec2c2953f1b6f5/gazebo/11/ubuntu/bionic/gzserver11/Dockerfile)
--	[`libgazebo11-bionic`](https://github.com/osrf/docker_images/blob/48051c3f57c5c632407920a4beec2c2953f1b6f5/gazebo/11/ubuntu/bionic/libgazebo11/Dockerfile)
--	[`gzserver11`, `gzserver11-focal`](https://github.com/osrf/docker_images/blob/163a37c8a124c3e46872f7904c0fddf251d81160/gazebo/11/ubuntu/focal/gzserver11/Dockerfile)
--	[`libgazebo11`, `libgazebo11-focal`, `latest`](https://github.com/osrf/docker_images/blob/163a37c8a124c3e46872f7904c0fddf251d81160/gazebo/11/ubuntu/focal/libgazebo11/Dockerfile)
+-	[`gzserver9-xenial`](https://github.com/osrf/docker_images/blob/96c8fa210caaeebd50e067ade05d5fc9a4a60c84/gazebo/9/ubuntu/xenial/gzserver9/Dockerfile)
+-	[`libgazebo9-xenial`](https://github.com/osrf/docker_images/blob/96c8fa210caaeebd50e067ade05d5fc9a4a60c84/gazebo/9/ubuntu/xenial/libgazebo9/Dockerfile)
+-	[`gzserver9`, `gzserver9-bionic`](https://github.com/osrf/docker_images/blob/96c8fa210caaeebd50e067ade05d5fc9a4a60c84/gazebo/9/ubuntu/bionic/gzserver9/Dockerfile)
+-	[`libgazebo9`, `libgazebo9-bionic`](https://github.com/osrf/docker_images/blob/96c8fa210caaeebd50e067ade05d5fc9a4a60c84/gazebo/9/ubuntu/bionic/libgazebo9/Dockerfile)
+-	[`gzserver11-bionic`](https://github.com/osrf/docker_images/blob/96c8fa210caaeebd50e067ade05d5fc9a4a60c84/gazebo/11/ubuntu/bionic/gzserver11/Dockerfile)
+-	[`libgazebo11-bionic`](https://github.com/osrf/docker_images/blob/96c8fa210caaeebd50e067ade05d5fc9a4a60c84/gazebo/11/ubuntu/bionic/libgazebo11/Dockerfile)
+-	[`gzserver11`, `gzserver11-focal`](https://github.com/osrf/docker_images/blob/96c8fa210caaeebd50e067ade05d5fc9a4a60c84/gazebo/11/ubuntu/focal/gzserver11/Dockerfile)
+-	[`libgazebo11`, `libgazebo11-focal`, `latest`](https://github.com/osrf/docker_images/blob/96c8fa210caaeebd50e067ade05d5fc9a4a60c84/gazebo/11/ubuntu/focal/libgazebo11/Dockerfile)
 
 # Quick reference (cont.)
 
