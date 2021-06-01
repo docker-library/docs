@@ -24,7 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `8`](https://github.com/AlmaLinux/docker-images/blob/1dc91dd3b9f69fd2f570c94441104004a9ef9811/Dockerfile)
+-	[`latest`, `8`](https://github.com/AlmaLinux/docker-images/blob/3317c1f96704c1cbbab9257ac51a791fb7e28987/Dockerfile)
 
 # Quick reference (cont.)
 
