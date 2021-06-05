@@ -24,8 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.12.1`](https://github.com/docker-library/kibana/blob/46b36d2319d45441c35e67075106d81856fca123/7/Dockerfile)
--	[`6.8.15`](https://github.com/docker-library/kibana/blob/d6759ae96883bf483b449f26c97229442e13c5cc/6/Dockerfile)
+-	[`7.13.1`](https://github.com/docker-library/kibana/blob/094d900939e2a66300d48cbf2f3a8e0fc1d51abc/7/Dockerfile)
+-	[`6.8.16`](https://github.com/docker-library/kibana/blob/094d900939e2a66300d48cbf2f3a8e0fc1d51abc/6/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -33,7 +33,7 @@ WARNING:
 	For issues with the Kibana Docker image or Kibana: https://github.com/elastic/kibana/issues
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/kibana/)
+	[`amd64`](https://hub.docker.com/r/amd64/kibana/), [`arm64v8`](https://hub.docker.com/r/arm64v8/kibana/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/kibana/` directory](https://github.com/docker-library/repo-info/blob/master/repos/kibana) ([history](https://github.com/docker-library/repo-info/commits/master/repos/kibana))  
