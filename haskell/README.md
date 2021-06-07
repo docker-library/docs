@@ -73,24 +73,24 @@ Additionally, we support the two most versions of Debian (`stable` and `oldstabl
 Start an interactive interpreter session with `ghci`:
 
 ```console
-$ docker run -it --rm haskell:8
-GHCi, version 8.4.3: http://www.haskell.org/ghc/  :? for help
+$ docker run -it --rm haskell:9
+GHCi, version 9.0.1: http://www.haskell.org/ghc/  :? for help
 Prelude>
 ```
 
 Dockerize an application using `stack`:
 
 ```dockerfile
-FROM haskell:8
-RUN stack install pandoc pandoc-citeproc
+FROM haskell:8.10
+RUN stack install --resolver lts-17.14 pandoc citeproc
 ENTRYPOINT ["pandoc"]
 ```
 
 Dockerize an application using `cabal`:
 
 ```dockerfile
-FROM haskell:8
-RUN cabal update && cabal install pandoc pandoc-citeproc
+FROM haskell:8.10
+RUN cabal update && cabal install pandoc citeproc
 ENTRYPOINT ["pandoc"]
 ```
 
@@ -109,7 +109,7 @@ COPY ./example.cabal /opt/example/example.cabal
 # Docker will cache this command as a layer, freeing us up to
 # modify source code without re-installing dependencies
 # (unless the .cabal file changes!)
-RUN cabal install --only-dependencies -j4
+RUN cabal build --only-dependencies -j4
 
 # Add and Install Application Code
 COPY . /opt/example
