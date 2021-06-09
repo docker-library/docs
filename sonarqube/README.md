@@ -24,11 +24,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.9.0-community`, `8.9-community`, `8-community`, `community`, `latest`, `lts`, `lts-community`](https://github.com/SonarSource/docker-sonarqube/blob/dc6123cc2a28698da1c923326946b69a2359a21a/8/community/Dockerfile)
--	[`8.9.0-developer`, `8.9-developer`, `8-developer`, `developer`, `lts-developer`](https://github.com/SonarSource/docker-sonarqube/blob/dc6123cc2a28698da1c923326946b69a2359a21a/8/developer/Dockerfile)
--	[`8.9.0-enterprise`, `8.9-enterprise`, `8-enterprise`, `enterprise`, `lts-enterprise`](https://github.com/SonarSource/docker-sonarqube/blob/dc6123cc2a28698da1c923326946b69a2359a21a/8/enterprise/Dockerfile)
--	[`8.9.0-datacenter-app`, `8.9-datacenter-app`, `8-datacenter-app`, `datacenter-app`, `lts-datacenter-app`](https://github.com/SonarSource/docker-sonarqube/blob/dc6123cc2a28698da1c923326946b69a2359a21a/8/datacenter/app/Dockerfile)
--	[`8.9.0-datacenter-search`, `8.9-datacenter-search`, `8-datacenter-search`, `datacenter-search`, `lts-datacenter-search`](https://github.com/SonarSource/docker-sonarqube/blob/dc6123cc2a28698da1c923326946b69a2359a21a/8/datacenter/search/Dockerfile)
+-	[`8.9.1-community`, `8.9-community`, `8-community`, `community`, `latest`, `lts`, `lts-community`](https://github.com/SonarSource/docker-sonarqube/blob/5b555ea57f3d5d03d811d11056d7c0450ec0d59b/8/community/Dockerfile)
+-	[`8.9.1-developer`, `8.9-developer`, `8-developer`, `developer`, `lts-developer`](https://github.com/SonarSource/docker-sonarqube/blob/5b555ea57f3d5d03d811d11056d7c0450ec0d59b/8/developer/Dockerfile)
+-	[`8.9.1-enterprise`, `8.9-enterprise`, `8-enterprise`, `enterprise`, `lts-enterprise`](https://github.com/SonarSource/docker-sonarqube/blob/5b555ea57f3d5d03d811d11056d7c0450ec0d59b/8/enterprise/Dockerfile)
+-	[`8.9.1-datacenter-app`, `8.9-datacenter-app`, `8-datacenter-app`, `datacenter-app`, `lts-datacenter-app`](https://github.com/SonarSource/docker-sonarqube/blob/5b555ea57f3d5d03d811d11056d7c0450ec0d59b/8/datacenter/app/Dockerfile)
+-	[`8.9.1-datacenter-search`, `8.9-datacenter-search`, `8-datacenter-search`, `datacenter-search`, `lts-datacenter-search`](https://github.com/SonarSource/docker-sonarqube/blob/5b555ea57f3d5d03d811d11056d7c0450ec0d59b/8/datacenter/search/Dockerfile)
 
 # Quick reference (cont.)
 
