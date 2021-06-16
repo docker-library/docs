@@ -34,8 +34,6 @@ WARNING:
 -	[`10.17-alpine`, `10-alpine`](https://github.com/docker-library/postgres/blob/ea6eb8151f10fa6cb9be0f93c3e89f37bfd85fbf/10/alpine/Dockerfile)
 -	[`9.6.22`, `9.6`, `9`](https://github.com/docker-library/postgres/blob/94c2885ff2030b25dc85eee1898e891d7d4b8bad/9.6/Dockerfile)
 -	[`9.6.22-alpine`, `9.6-alpine`, `9-alpine`](https://github.com/docker-library/postgres/blob/720ab505571bd3eddf0f4b04462cae5b9835f287/9.6/alpine/Dockerfile)
--	[`9.5.25`, `9.5`](https://github.com/docker-library/postgres/blob/b122f60426e69df9d6effbda45fe2ef659c1d4f2/9.5/Dockerfile)
--	[`9.5.25-alpine`, `9.5-alpine`](https://github.com/docker-library/postgres/blob/6667795da15f1a2d2791021659f2f766828a4321/9.5/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
