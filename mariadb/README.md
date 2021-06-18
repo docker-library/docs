@@ -26,11 +26,11 @@ Also see the ["Getting Help with MariaDB" article on the MariaDB Knowledge Base]
 
 # Supported tags and respective `Dockerfile` links
 
--	[`10.6.1-focal`, `10.6-focal`, `beta-focal`, `10.6.1`, `10.6`, `beta`](https://github.com/MariaDB/mariadb-docker/blob/2ef69de05f84aee8a141c0d37cdb5b9790ac91d9/10.6/Dockerfile)
--	[`10.5.10-focal`, `10.5-focal`, `10-focal`, `focal`, `10.5.10`, `10.5`, `10`, `latest`](https://github.com/MariaDB/mariadb-docker/blob/6f5d272ca053105901c23fcdc44884907aa4d11d/10.5/Dockerfile)
--	[`10.4.19-focal`, `10.4-focal`, `10.4.19`, `10.4`](https://github.com/MariaDB/mariadb-docker/blob/6f5d272ca053105901c23fcdc44884907aa4d11d/10.4/Dockerfile)
--	[`10.3.29-focal`, `10.3-focal`, `10.3.29`, `10.3`](https://github.com/MariaDB/mariadb-docker/blob/6f5d272ca053105901c23fcdc44884907aa4d11d/10.3/Dockerfile)
--	[`10.2.38-bionic`, `10.2-bionic`, `10.2.38`, `10.2`](https://github.com/MariaDB/mariadb-docker/blob/6f5d272ca053105901c23fcdc44884907aa4d11d/10.2/Dockerfile)
+-	[`10.6.2-focal`, `10.6-focal`, `rc-focal`, `10.6.2`, `10.6`, `rc`](https://github.com/MariaDB/mariadb-docker/blob/1d9b652b4ce1e36f39abd8d302d4908617447d77/10.6/Dockerfile)
+-	[`10.5.10-focal`, `10.5-focal`, `10-focal`, `focal`, `10.5.10`, `10.5`, `10`, `latest`](https://github.com/MariaDB/mariadb-docker/blob/710e0cd9d9197becc954e9a4c572cb97dd1d07a8/10.5/Dockerfile)
+-	[`10.4.19-focal`, `10.4-focal`, `10.4.19`, `10.4`](https://github.com/MariaDB/mariadb-docker/blob/710e0cd9d9197becc954e9a4c572cb97dd1d07a8/10.4/Dockerfile)
+-	[`10.3.29-focal`, `10.3-focal`, `10.3.29`, `10.3`](https://github.com/MariaDB/mariadb-docker/blob/710e0cd9d9197becc954e9a4c572cb97dd1d07a8/10.3/Dockerfile)
+-	[`10.2.38-bionic`, `10.2-bionic`, `10.2.38`, `10.2`](https://github.com/MariaDB/mariadb-docker/blob/710e0cd9d9197becc954e9a4c572cb97dd1d07a8/10.2/Dockerfile)
 
 # Quick reference (cont.)
 
