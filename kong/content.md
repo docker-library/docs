@@ -1,6 +1,6 @@
 # What is Kong?
 
-Kong is a scalable, open source API Platform (also known as an API Gateway or API Middleware). Kong was originally built by [Kong Inc.](https://konghq.com) (formerly known as Mashape) to secure, manage and extend over 15,000 Microservices for its API Marketplace, which generates billions of requests per month.
+Kong is a scalable, open source API Platform (also known as an API Gateway or API Middleware). Kong was originally built by [Kong Inc.](https://konghq.com) (formerly known as Mashape) to secure, manage, and extend over 15,000 Microservices for its API Marketplace, which generates billions of requests per month.
 
 Under active development, Kong is now used in production at hundreds of organizations from startups, to large enterprises and governments including: The New York Times, Expedia, Healthcare.gov, The Guardian, Condè Nast, The University of Auckland, Ferrari, Rakuten, Cisco, SkyScanner, Yahoo! Japan, Giphy and so on.
 
@@ -42,7 +42,7 @@ $ http :8001/config config=@kong.yml
 
 # How to use this image with a Database
 
-First, for fully-compatible with all plugins (e.g. acl, oauth2), Kong requires a running Cassandra cluster (3.x+) or PostgreSQL instance (9.6+) before it starts. You can either use the official Cassandra/PostgreSQL containers, or use your own.
+You can either use the official Cassandra/PostgreSQL containers, or use your own.
 
 ## 1. Link Kong to either a Cassandra or PostgreSQL container
 
@@ -115,7 +115,7 @@ $ docker run -d --name kong \
 
 If everything went well, and if you created your container with the default ports, Kong should be listening on your host's `8000` ([Proxy](https://docs.konghq.com/latest/configuration/#proxy_port)), `8443` ([Proxy SSL](https://docs.konghq.com/latest/configuration/#proxy_listen_ssl)), `8001` ([Admin API](https://docs.konghq.com/latest/configuration/#admin_listen)) and `8444` ([Admin API SSL](https://docs.konghq.com/latest/configuration/#admin_listen_ssl)) ports.
 
-You can now read the docs at [docs.konghq.com](https://docs.konghq.com/) to learn more about Kong.
+You can read the docs at [docs.konghq.com](https://docs.konghq.com/) to learn more about Kong.
 
 ## 3. Use Kong with a custom configuration (and a custom Cassandra/PostgreSQL cluster)
 
@@ -138,7 +138,7 @@ $ docker run -d --name kong \
 
 ## Reload Kong in a running container
 
-If you change your custom configuration, you can reload Kong (without downtime) by issuing:
+If you change your custom configuration, reload Kong (without downtime) by running:
 
 ```shell
 $ docker exec -it kong kong reload
@@ -148,4 +148,4 @@ This will run the [`kong reload`](https://docs.konghq.com/latest/cli/#reload) co
 
 # Kubernetes Ingress
 
-Among the many deployment options [available](https://konghq.com/install), Kong also offers a [Kubernetes Ingress Controller](https://github.com/Kong/kubernetes-ingress-controller) ready to use in your K8S environment.
+Among the many deployment options [available](https://konghq.com/install), Kong also offers a [Kubernetes Ingress Controller](https://github.com/Kong/kubernetes-ingress-controller) ready to use in your K8s environment.
