@@ -1,6 +1,6 @@
 ### Overview
 
-The images in this repository contain IBM® SDK, Java™ Technology Edition. For more information on the latest version and what's new, see [sdk8 on IBM developerWorks](https://developer.ibm.com/javasdk/downloads/sdk8/). See the license section for restrictions that relate to the use of this image. For more information about IBM® SDK, Java™ Technology Edition and API documentation as well as tutorials, recipes, and Java usage in IBM Cloud, see [IBM developerWorks](https://developer.ibm.com/javasdk/).
+The images in this repository contain IBM® SDK, Java™ Technology Edition. For more information on the latest version and what's new, see [sdk8 on IBM developerWorks](https://developer.ibm.com/javasdk/downloads/sdk8/) and [jdk11 on IBM developerWorks](https://developer.ibm.com/javasdk/downloads/java-sdk-downloads-version-110/). See the license section for restrictions that relate to the use of this image. For more information about IBM® SDK, Java™ Technology Edition and API documentation as well as tutorials, recipes, and Java usage in IBM Cloud, see [IBM developerWorks](https://developer.ibm.com/javasdk/).
 
 Java and all Java-based trademarks and logos are trademarks or registered trademarks of Oracle and/or its affiliates.
 
@@ -25,7 +25,7 @@ Consider using [Alpine Linux](http://alpinelinux.org/) if you are concerned abou
 | Ubuntu | Alpine | Ubuntu | Alpine |
 | 305 MB | 184 MB | 220 MB | 101 MB |
 
-**Note: Alpine Linux is not an officially supported operating system for IBM® SDK, Java™ Technology Edition.**
+**Note: Alpine Linux is not an officially supported operating system for IBM® SDK, Java™ Technology Edition. **
 
 ##### Multi-Arch Image
 
