@@ -24,12 +24,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8-jre`, `jre`, `8`, `latest`](https://github.com/ibmruntimes/ci.docker/blob/e851082b5e3ea00657ccdaa49434a4d35a85724a/ibmjava/8/jre/ubuntu/Dockerfile)
--	[`8-jre-alpine`, `jre-alpine`](https://github.com/ibmruntimes/ci.docker/blob/e851082b5e3ea00657ccdaa49434a4d35a85724a/ibmjava/8/jre/alpine/Dockerfile)
--	[`8-sfj`, `sfj`](https://github.com/ibmruntimes/ci.docker/blob/e851082b5e3ea00657ccdaa49434a4d35a85724a/ibmjava/8/sfj/ubuntu/Dockerfile)
--	[`8-sfj-alpine`, `sfj-alpine`](https://github.com/ibmruntimes/ci.docker/blob/e851082b5e3ea00657ccdaa49434a4d35a85724a/ibmjava/8/sfj/alpine/Dockerfile)
--	[`8-sdk`, `sdk`](https://github.com/ibmruntimes/ci.docker/blob/e851082b5e3ea00657ccdaa49434a4d35a85724a/ibmjava/8/sdk/ubuntu/Dockerfile)
--	[`8-sdk-alpine`, `sdk-alpine`](https://github.com/ibmruntimes/ci.docker/blob/e851082b5e3ea00657ccdaa49434a4d35a85724a/ibmjava/8/sdk/alpine/Dockerfile)
+-	[`8-jre`, `jre`, `8`, `latest`](https://github.com/ibmruntimes/ci.docker/blob/7c222762aa948da43e76790a6996ff08ea12fcbf/ibmjava/8/jre/ubuntu/Dockerfile)
+-	[`8-jre-alpine`, `jre-alpine`](https://github.com/ibmruntimes/ci.docker/blob/7c222762aa948da43e76790a6996ff08ea12fcbf/ibmjava/8/jre/alpine/Dockerfile)
+-	[`8-sfj`, `sfj`](https://github.com/ibmruntimes/ci.docker/blob/7c222762aa948da43e76790a6996ff08ea12fcbf/ibmjava/8/sfj/ubuntu/Dockerfile)
+-	[`8-sfj-alpine`, `sfj-alpine`](https://github.com/ibmruntimes/ci.docker/blob/7c222762aa948da43e76790a6996ff08ea12fcbf/ibmjava/8/sfj/alpine/Dockerfile)
+-	[`8-sdk`, `sdk`](https://github.com/ibmruntimes/ci.docker/blob/7c222762aa948da43e76790a6996ff08ea12fcbf/ibmjava/8/sdk/ubuntu/Dockerfile)
+-	[`8-sdk-alpine`, `sdk-alpine`](https://github.com/ibmruntimes/ci.docker/blob/7c222762aa948da43e76790a6996ff08ea12fcbf/ibmjava/8/sdk/alpine/Dockerfile)
+-	[`11-jdk`, `11`](https://github.com/ibmruntimes/ci.docker/blob/7c222762aa948da43e76790a6996ff08ea12fcbf/ibmjava/11/jdk/ubuntu/Dockerfile)
 
 # Quick reference (cont.)
 
