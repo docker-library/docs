@@ -25,7 +25,7 @@ Consider using [Alpine Linux](http://alpinelinux.org/) if you are concerned abou
 | Ubuntu | Alpine | Ubuntu | Alpine |
 | 305 MB | 184 MB | 220 MB | 101 MB |
 
-**Note: Alpine Linux is not an officially supported operating system for IBM® SDK, Java™ Technology Edition. **
+**Note: Alpine Linux is not an officially supported operating system for IBM® SDK, Java™ Technology Edition.**
 
 ##### Multi-Arch Image
 
