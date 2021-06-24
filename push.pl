@@ -74,23 +74,30 @@ sub prompt_for_edit {
 	my $proposedFile = shift;
 	my $lengthLimit = shift // 0;
 	
-	my $proposedText = Mojo::File->new($proposedFile)->slurp or warn 'missing ' . $proposedFile;
+	my $proposedText = Mojo::File->new($proposedFile)->slurp // '**  FILE MISSING!  **';
 	$proposedText = trim(decode('UTF-8', $proposedText));
 	
 	# remove our warning about generated files (Hub doesn't support HTML comments in Markdown)
 	$proposedText =~ s% ^ <!-- .*? --> \s* %%sx;
 	
-	if ($lengthLimit > 0 && length($proposedText) > $lengthLimit) {
+	my $alwaysShortTags = ($proposedFile eq 'neo4j/README.md');
+	
+	if ($alwaysShortTags || ($lengthLimit > 0 && length($proposedText) > $lengthLimit)) {
 		# TODO https://github.com/docker/hub-beta-feedback/issues/238
 		my $fullUrl = "$githubBase/$proposedFile";
-		my $tagsNote = "**Note:** the description for this image is longer than the Hub length limit of $lengthLimit, so the \"Supported tags\" list has been trimmed to compensate.  The full list can be found at [$fullUrl]($fullUrl#supported-tags-and-respective-dockerfile-links).  See [docker/hub-beta-feedback#238](https://github.com/docker/hub-beta-feedback/issues/238) for more information.\n\n";
+		my $shortTags = "-\tSee [\"Supported tags and respective \`Dockerfile\` links\" at $fullUrl]($fullUrl#supported-tags-and-respective-dockerfile-links)\n\n";
+		my $tagsNote = "**Note:** the description for this image is longer than the Hub length limit of $lengthLimit, so the \"Supported tags\" list has been trimmed to compensate.  See [docker/hub-beta-feedback#238](https://github.com/docker/hub-beta-feedback/issues/238) for more information.\n\n" . $shortTags;
 		my $genericNote = "**Note:** the description for this image is longer than the Hub length limit of $lengthLimit, so has been trimmed.  The full description can be found at [$fullUrl]($fullUrl).  See [docker/hub-beta-feedback#238](https://github.com/docker/hub-beta-feedback/issues/238) for more information.\n\n";
+		
+		$tagsNote = $shortTags if $alwaysShortTags;
 		
 		my $trimmedText = $proposedText;
 		
 		# if our text is too long for the Hub length limit, let's first try removing the "Supported tags" list and add $tagsNote and see if that's enough to let us put the full image documentation
 		$trimmedText =~ s%^(# Supported tags and respective `Dockerfile` links\n\n).*?\n(?=# |\[)%$1$tagsNote%ms;
 		# (we scrape until the next "h1" or a line starting with a link which is likely a build status badge for an architecture-namespace)
+		
+		$proposedText = $trimmedText if $alwaysShortTags;
 		
 		if (length($trimmedText) > $lengthLimit) {
 			# ... if that doesn't do the trick, then do our older naïve description trimming
