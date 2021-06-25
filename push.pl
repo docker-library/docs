@@ -69,6 +69,8 @@ my $userData = $ua->get('https://hub.docker.com/v2/user/' => $authorizationHeade
 die 'user failed' unless $userData->res->is_success;
 $userData = $userData->res->json;
 
+my $supportedTagsRegex = qr%^(# Supported tags and respective `Dockerfile` links\n\n)(.*?\n)(?=# |\[)%ms;
+
 sub prompt_for_edit {
 	my $currentText = shift;
 	my $proposedFile = shift;
@@ -79,6 +81,14 @@ sub prompt_for_edit {
 	
 	# remove our warning about generated files (Hub doesn't support HTML comments in Markdown)
 	$proposedText =~ s% ^ <!-- .*? --> \s* %%sx;
+	
+	# extract/re-inject sponsored links
+	my $sponsoredLinks = '';
+	if ($currentText =~ m{ ( ^ --- \n+ \Q*Useful Resources*\E \n .*? \n --- \n ) }smx) {
+		$sponsoredLinks = $1 . "\n";
+		say $sponsoredLinks;
+		$proposedText =~ s%$supportedTagsRegex%$1$2$sponsoredLinks%;
+	}
 	
 	my $alwaysShortTags = ($proposedFile eq 'neo4j/README.md');
 	
@@ -94,7 +104,7 @@ sub prompt_for_edit {
 		my $trimmedText = $proposedText;
 		
 		# if our text is too long for the Hub length limit, let's first try removing the "Supported tags" list and add $tagsNote and see if that's enough to let us put the full image documentation
-		$trimmedText =~ s%^(# Supported tags and respective `Dockerfile` links\n\n).*?\n(?=# |\[)%$1$tagsNote%ms;
+		$trimmedText =~ s%$supportedTagsRegex%$1$tagsNote$sponsoredLinks%ms;
 		# (we scrape until the next "h1" or a line starting with a link which is likely a build status badge for an architecture-namespace)
 		
 		$proposedText = $trimmedText if $alwaysShortTags;
