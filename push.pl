@@ -86,7 +86,6 @@ sub prompt_for_edit {
 	my $sponsoredLinks = '';
 	if ($currentText =~ m{ ( ^ --- \n+ \Q*Useful Resources*\E \n .*? \n --- \n ) }smx) {
 		$sponsoredLinks = $1 . "\n";
-		say $sponsoredLinks;
 		$proposedText =~ s%$supportedTagsRegex%$1$2$sponsoredLinks%;
 	}
 	
