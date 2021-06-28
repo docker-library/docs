@@ -6,7 +6,21 @@
 
 # About this image
 
-The `%%IMAGE%%:latest` tag will always point to the latest stable release. Major releases are also tagged with their version (e.g. `%%IMAGE%%:8`). All images for supported releases will be updated monthly or as needed for security fixes.
+## Platform image
+
+The default (platform) image is a general-purpose image with a full DNF stack and basic tools like find, tar, vi, etc.
+
+The `%%IMAGE%%:latest` tag will always point to the latest stable release of the default image. Major releases and minor releases are also tagged with their version (e.g. `%%IMAGE%%:8` or `%%IMAGE%%:8.4`).
+
+## Minimal image
+
+The minimal image is a stripped-down image that uses the microdnf package manager and contains a very limited package set. It is designed for applications that come with their own dependencies bundled (e.g. NodeJS, Python).
+
+The `%%IMAGE%%:minimal` tag always points to the most recent version of the minimal image. Tags for major (e.g. `%%IMAGE%%:8-minimal`) and minor (e.g. `%%IMAGE%%:8.4-minimal`) releases are also available.
+
+### Upgrade policy
+
+All images for supported releases will be updated monthly or as needed for security fixes.
 
 ## How It's Made
 
