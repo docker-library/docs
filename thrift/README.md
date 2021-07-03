@@ -1,10 +1,58 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "thrift/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "thrift/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
+# **DEPRECATION NOTICE**
+
+This image is deprecated due to inactivity (last updated Feb 2019; [docker-library/official-images#5411](https://github.com/docker-library/official-images/pull/5411)).
+
+There is a useful discussion in [ahawkins/docker-thrift#12](https://github.com/ahawkins/docker-thrift/issues/12) about the future of this image.
+
+# Quick reference
+
+-	**Maintained by**:  
+	[the Docker Community](https://github.com/ahawkins/docker-thrift)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
--	[`0.9`, `0.9.3`, `latest` (*0.9/Dockerfile*)](https://github.com/ahawkins/docker-thrift/blob/d322572f7dd6ea468a14a4d832fbec26f152c71e/0.9/Dockerfile)
+-	[`0.9`, `0.9.3`](https://github.com/ahawkins/docker-thrift/blob/d322572f7dd6ea468a14a4d832fbec26f152c71e/0.9/Dockerfile)
+-	[`0.10`, `0.10.0`](https://github.com/ahawkins/docker-thrift/blob/e1f81dfe3e8fac5588e12d2b880166d1743dbecd/0.10/Dockerfile)
+-	[`0.11`, `0.11.0`](https://github.com/ahawkins/docker-thrift/blob/00e197d889426695446baec4e034b5ddbb15bcb3/0.11/Dockerfile)
+-	[`0.12`, `0.12.0`, `latest`](https://github.com/ahawkins/docker-thrift/blob/d7e73876549d205898b1922bcbf69e74ef11c288/0.12/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/thrift`)](https://github.com/docker-library/official-images/blob/master/library/thrift). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fthrift).
+# Quick reference (cont.)
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/thrift/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/thrift/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+-	**Where to file issues**:  
+	[https://github.com/ahawkins/docker-thrift/issues](https://github.com/ahawkins/docker-thrift/issues)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/thrift/)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/thrift/` directory](https://github.com/docker-library/repo-info/blob/master/repos/thrift) ([history](https://github.com/docker-library/repo-info/commits/master/repos/thrift))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images repo's `library/thrift` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fthrift)  
+	[official-images repo's `library/thrift` file](https://github.com/docker-library/official-images/blob/master/library/thrift) ([history](https://github.com/docker-library/official-images/commits/master/library/thrift))
+
+-	**Source of this description**:  
+	[docs repo's `thrift/` directory](https://github.com/docker-library/docs/tree/master/thrift) ([history](https://github.com/docker-library/docs/commits/master/thrift))
 
 # What Is Thrift
 
@@ -26,28 +74,8 @@ Note, that you may want to include `-u $(id -u)` to set the UID on generated fil
 
 View [license information](http://www.apache.org/licenses/) for the software contained in this image.
 
-# Supported Docker versions
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 
-This image is officially supported on Docker version 1.12.5.
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `thrift/` directory](https://github.com/docker-library/repo-info/tree/master/repos/thrift).
 
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/ahawkins/docker-thrift/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/ahawkins/docker-thrift/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`thrift/` directory](https://github.com/docker-library/docs/tree/master/thrift) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

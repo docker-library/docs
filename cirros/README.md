@@ -1,42 +1,71 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "cirros/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "cirros/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
+# Quick reference
+
+-	**Maintained by**:  
+	[the Docker Community](https://github.com/tianon/docker-brew-cirros)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `0.3.4` (*Dockerfile*)](https://github.com/ewindisch/docker-cirros/blob/fd9aa114c465237518535d3545d4f9c4bc1d0aa5/Dockerfile)
--	[`0.3.3` (*Dockerfile*)](https://github.com/ewindisch/docker-cirros/blob/5ef3f5024b0aa80553cc34be9eff6685cb31b458/Dockerfile)
+-	[`0.5.2`, `0.5`, `0`, `latest`](https://github.com/tianon/docker-brew-cirros/blob/6b155af1eeb835ab219369aeec45139b2f4ba11b/arches/amd64/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/cirros`)](https://github.com/docker-library/official-images/blob/master/library/cirros). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fcirros).
+# Quick reference (cont.)
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/cirros/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/cirros/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+-	**Where to file issues**:  
+	[https://github.com/tianon/docker-brew-cirros/issues](https://github.com/tianon/docker-brew-cirros/issues)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/cirros/), [`arm32v5`](https://hub.docker.com/r/arm32v5/cirros/), [`arm64v8`](https://hub.docker.com/r/arm64v8/cirros/), [`i386`](https://hub.docker.com/r/i386/cirros/), [`ppc64le`](https://hub.docker.com/r/ppc64le/cirros/)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/cirros/` directory](https://github.com/docker-library/repo-info/blob/master/repos/cirros) ([history](https://github.com/docker-library/repo-info/commits/master/repos/cirros))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images repo's `library/cirros` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fcirros)  
+	[official-images repo's `library/cirros` file](https://github.com/docker-library/official-images/blob/master/library/cirros) ([history](https://github.com/docker-library/official-images/commits/master/library/cirros))
+
+-	**Source of this description**:  
+	[docs repo's `cirros/` directory](https://github.com/docker-library/docs/tree/master/cirros) ([history](https://github.com/docker-library/docs/commits/master/cirros))
 
 # What is CirrOS?
 
-CirrOS is a Tiny OS that specializes in running on a cloud.
+The CirrOS project provides linux disk and kernel/initramfs images. The images are well suited for testing as they are small and boot quickly. Please note that:
 
-> [launchpad.net/cirros](https://launchpad.net/cirros)
+-	**Images are provided for test only**. They should not be used in production.
+-	**Images have well known login information**. Users can log in with 'cirros:letsgocubs' locally or remotely and have passwordless sudo access to root.
+
+CirrOS images have useful tools and function for debugging or developing cloud infrastructure.
+
+> [github.com/cirros-dev/cirros](https://github.com/cirros-dev/cirros#readme)
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/b449be7df57e9ed9086bb5821bfb5d6cdc5d67a4/cirros/logo.png)
 
-# Supported Docker versions
+# License
 
-This image is officially supported on Docker version 1.12.5.
+View [license information](https://launchpad.net/cirros) for the software contained in this image:
 
-Support for older versions (down to 1.6) is provided on a best-effort basis.
+> The code for building CirrOS is available under GPLv2. The binary images that will be distributed contain many different licenses all of which are opensource.
 
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 
-# User Feedback
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `cirros/` directory](https://github.com/docker-library/repo-info/tree/master/repos/cirros).
 
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/ewindisch/docker-cirros/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/ewindisch/docker-cirros/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`cirros/` directory](https://github.com/docker-library/docs/tree/master/cirros) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

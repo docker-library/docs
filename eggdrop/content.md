@@ -23,7 +23,7 @@ This image is built with the tcllib library (including common libraries such as 
 To run this container the first time, you'll need to pass in, at minimum, a nickname and server via Environmental Variables. At minimum, a docker run command similar to
 
 ```console
-$ docker run -ti -e NICK=FooBot -e SERVER=irc.freenode.net -v /path/for/host/data:/home/eggdrop/eggdrop/data eggdrop
+$ docker run -ti -e NICK=FooBot -e SERVER=irc.freenode.net -v /path/for/host/data:/home/eggdrop/eggdrop/data %%IMAGE%%
 ```
 
 should be used. This will modify the appropriate values within the config file, then start your bot with the nickname FooBot and connect it to irc.freenode.net. These variables are only needed for your first run- after the first use, you can edit the config file directly. Additional configuration options are listed in the following sections.
@@ -65,13 +65,13 @@ If you use a config file from a previous eggdrop install (ie, you don't use the 
 To do this, start your container with something similar to
 
 ```console
-$ docker run -i -e NICK=FooBot -e SERVER=irc.freenode.net -v /path/to/eggdrop/files:/home/eggdrop/eggdrop/data -d eggdrop
+$ docker run -i -e NICK=FooBot -e SERVER=irc.freenode.net -v /path/to/eggdrop/files:/home/eggdrop/eggdrop/data -d %%IMAGE%%
 ```
 
 If you provide your own config file, place it in the data dir and specify it as the argument to the docker container:
 
 ```console
-$ docker run -i -v /path/to/eggdrop/files:/home/eggdrop/eggdrop/data -d eggdrop mybot.conf
+$ docker run -i -v /path/to/eggdrop/files:/home/eggdrop/eggdrop/data -d %%IMAGE%% mybot.conf
 ```
 
 Any config file used with docker MUST end in .conf, such as eggdrop.conf or mybot.conf

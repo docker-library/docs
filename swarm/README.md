@@ -1,10 +1,55 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "swarm/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "swarm/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
+# **DEPRECATION NOTICE**
+
+> Classic Swarm has been archived and is no longer actively developed. You may want to use the Swarm mode built into the Docker Engine instead, or another orchestration system.
+
+(https://github.com/docker/classicswarm#readme)
+
+# Quick reference
+
+-	**Maintained by**:  
+	[Docker, Inc.](https://github.com/docker/swarm-library-image)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
--	[`1.2.5`, `latest` (*Dockerfile*)](https://github.com/docker/swarm-library-image/blob/67e6cf4171fcabd2e3b8b809105e7dfb15114ce1/Dockerfile)
+**No supported tags**
 
-For more information about this image and its history, please see [the relevant manifest file (`library/swarm`)](https://github.com/docker-library/official-images/blob/master/library/swarm). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fswarm).
+# Quick reference (cont.)
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/swarm/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/swarm/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+-	**Where to file issues**:  
+	[https://github.com/docker/swarm-library-image/issues](https://github.com/docker/swarm-library-image/issues)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	**No supported architectures**
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/swarm/` directory](https://github.com/docker-library/repo-info/blob/master/repos/swarm) ([history](https://github.com/docker-library/repo-info/commits/master/repos/swarm))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images repo's `library/swarm` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fswarm)  
+	[official-images repo's `library/swarm` file](https://github.com/docker-library/official-images/blob/master/library/swarm) ([history](https://github.com/docker-library/official-images/commits/master/library/swarm))
+
+-	**Source of this description**:  
+	[docs repo's `swarm/` directory](https://github.com/docker-library/docs/tree/master/swarm) ([history](https://github.com/docker-library/docs/commits/master/swarm))
 
 # Swarm: a Docker-native clustering system
 
@@ -12,7 +57,7 @@ For detailed information about the virtual/transfer sizes and individual layers 
 
 `swarm` is a simple tool which controls a cluster of Docker hosts and exposes it as a single "virtual" host.
 
-`swarm` uses the standard Docker API as its frontend, which means any tool which speaks Docker can control swarm transparently: dokku, fig, krane, flynn, deis, docker-ui, shipyard, drone.io, Jenkins... and of course the Docker client itself.
+`swarm` uses the standard Docker API as its frontend, which means any tool which speaks Docker can control swarm transparently: dokku, docker-compose, krane, flynn, deis, docker-ui, shipyard, drone.io, Jenkins... and of course the Docker client itself.
 
 Like the other Docker projects, `swarm` follows the "batteries included but removable" principle. It ships with a simple scheduling backend out of the box, and as initial development settles, an API will develop to enable pluggable backends. The goal is to provide a smooth out-of-box experience for simple use cases, and allow swapping in more powerful backends, like `Mesos`, for large scale production deployments.
 
@@ -65,28 +110,8 @@ Note that Swarm certificates must be generated with `extendedKeyUsage = clientAu
 
 View [license information](https://github.com/docker/swarm/blob/master/LICENSE.code) for the software contained in this image.
 
-# Supported Docker versions
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 
-This image is officially supported on Docker version 1.12.5.
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `swarm/` directory](https://github.com/docker-library/repo-info/tree/master/repos/swarm).
 
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker/swarm-library-image/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/docker/swarm-library-image/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`swarm/` directory](https://github.com/docker-library/docs/tree/master/swarm) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

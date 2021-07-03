@@ -1,63 +1,27 @@
 # What is Logstash?
 
-Logstash is a tool that can be used to collect, process and forward events and log messages. Collection is accomplished via number of configurable input plugins including raw socket/packet communication, file tailing and several message bus clients. Once an input plugin has collected data it can be processed by any number of filters which modify and annotate the event data. Finally events are routed to output plugins which can forward the events to a variety of external programs including Elasticsearch, local files and several message bus implementations.
+Logstash is an open source data collection engine with real-time pipelining capabilities. Logstash can dynamically unify data from disparate sources and normalize the data into destinations of your choice.
 
-> [wikitech.wikimedia.org/wiki/Logstash](https://wikitech.wikimedia.org/wiki/Logstash)
+Collection is accomplished via a number of configurable input plugins including raw socket/packet communication, file tailing and several message bus clients. Once an input plugin has collected data it can be processed by any number of filters which modify and annotate the event data. Finally, events are routed to output plugins which can forward the events to a variety of external programs including Elasticsearch, local files and several message bus implementations.
+
+> For more information about Logstash, please visit [www.elastic.co/products/logstash](https://www.elastic.co/products/logstash)
 
 %%LOGO%%
 
+# About This Image
+
+This default distribution is governed by the Elastic License and includes the [full set of free features](https://www.elastic.co/subscriptions).
+
+View the detailed release notes [here](https://www.elastic.co/guide/en/logstash/current/releasenotes.html).
+
+Not the version you're looking for? View all supported [past releases](https://www.docker.elastic.co).
+
 # How to use this image
 
-## Start Logstash with commandline configuration
+**Note:** Pulling an image requires using a specific version number tag. The `latest` tag is not supported.
 
-If you need to run logstash with configuration provided on the commandline, you can use the logstash image as follows:
+For Logstash versions prior to 6.4.0, a full list of images, tags, and documentation can be found at [docker.elastic.co](https://www.docker.elastic.co/).
 
-```console
-$ docker run -it --rm logstash -e 'input { stdin { } } output { stdout { } }'
-```
+For full Logstash documentation see [here](https://www.elastic.co/guide/en/logstash/current/index.html).
 
-## Start Logstash with configuration file
-
-If you need to run logstash with a configuration file, `logstash.conf`, that's located in your current directory, you can use the logstash image as follows:
-
-```console
-$ docker run -it --rm -v "$PWD":/config-dir logstash -f /config-dir/logstash.conf
-```
-
-### Using a `Dockerfile`
-
-If you'd like to have a production Logstash image with a pre-baked configuration file, use of a `Dockerfile` is recommended:
-
-```dockerfile
-FROM logstash
-
-COPY logstash.conf /some/config-dir/
-
-CMD ["-f", "/some/config-dir/logstash.conf"]
-```
-
-Then, build with `docker build -t my-logstash .` and deploy with something like the following:
-
-```console
-$ docker run -d my-logstash
-```
-
-## Installing plugins
-
-If you need to add any logstash plugins that do not ship with Logstash by default, the simplest solution is a Dockerfile using `logstash-plugin` included with Logsatsh. You can also pack in your customized config file.
-
-```dockerfile
-FROM logstash:5
-
-RUN logstash-plugin install logstash-filter-de_dot
-
-COPY logstash.conf /some/config-dir/
-
-CMD ["-f", "/some/config-dir/logstash.conf"]
-```
-
-Then, build with `docker build -t my-logstash .` and deploy just like the previous example:
-
-```console
-$ docker run -d my-logstash
-```
+For instructions specifically related to running the Docker image, see [this section](https://www.elastic.co/guide/en/logstash/current/docker-config.html) of the Logstash documentation.

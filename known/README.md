@@ -1,10 +1,53 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "known/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "known/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
+# **DEPRECATION NOTICE**
+
+This image is deprecated due to inactivity (last updated Aug 2018; [docker-library/official-images#4670](https://github.com/docker-library/official-images/pull/4670)).
+
+# Quick reference
+
+-	**Maintained by**:  
+	[Known](https://github.com/idno/Known-Docker)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
--	[`0.9.2`, `0.9`, `0`, `latest` (*Dockerfile*)](https://github.com/idno/Known-Docker/blob/986a2618080f32bbbcb9af3c8e7c15297d9658ea/Dockerfile)
+-	[`0.9.9`, `0.9`, `0`, `latest`](https://github.com/idno/Known-Docker/blob/3454a52b4ad48e22b95e706dba9ff953cf84c2b1/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/known`)](https://github.com/docker-library/official-images/blob/master/library/known). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fknown).
+# Quick reference (cont.)
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/known/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/known/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+-	**Where to file issues**:  
+	[https://github.com/idno/Known-Docker/issues](https://github.com/idno/Known-Docker/issues)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/known/), [`arm64v8`](https://hub.docker.com/r/arm64v8/known/)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/known/` directory](https://github.com/docker-library/repo-info/blob/master/repos/known) ([history](https://github.com/docker-library/repo-info/commits/master/repos/known))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images repo's `library/known` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fknown)  
+	[official-images repo's `library/known` file](https://github.com/docker-library/official-images/blob/master/library/known) ([history](https://github.com/docker-library/official-images/commits/master/library/known))
+
+-	**Source of this description**:  
+	[docs repo's `known/` directory](https://github.com/docker-library/docs/tree/master/known) ([history](https://github.com/docker-library/docs/commits/master/known))
 
 # Known: social publishing for groups and individuals
 
@@ -61,28 +104,8 @@ We'd love to hear your feedback and suggestions in the issue tracker: [github.co
 
 View [license information](https://raw.githubusercontent.com/idno/Known/master/LICENSE) for the software contained in this image.
 
-# Supported Docker versions
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 
-This image is officially supported on Docker version 1.12.5.
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `known/` directory](https://github.com/docker-library/repo-info/tree/master/repos/known).
 
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/idno/Known-Docker/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/idno/Known-Docker/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`known/` directory](https://github.com/docker-library/docs/tree/master/known) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

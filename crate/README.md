@@ -1,152 +1,121 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "crate/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "crate/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
+# Quick reference
+
+-	**Maintained by**:  
+	[Crate.io](https://github.com/crate/docker-crate)
+
+-	**Where to get help**:  
+	[project documentation](https://crate.io/docs/), [StackOverflow](https://stackoverflow.com/tags/cratedb), [support channels](https://crate.io/support/)
+
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `1.0`, `1.0.1` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/51d0d07e455bb6658341cbd7bf8a670c94fdd92c/Dockerfile)
--	[`0.57`, `0.57.6` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/54ceb9d7065ee853faf3b050ddaeeee3580585b8/Dockerfile)
+-	[`4.5.3`, `4.5`, `latest`](https://github.com/crate/docker-crate/blob/3fef48d63ca2e4afb35a9e4457a7d307068270b8/Dockerfile)
+-	[`4.4.3`, `4.4`](https://github.com/crate/docker-crate/blob/2ccc43c2b34cd4182b7757298f97dd21f123b2d9/Dockerfile)
+-	[`4.3.4`, `4.3`](https://github.com/crate/docker-crate/blob/eae5f171ef089074d42d033af2988714a87190b6/Dockerfile)
+-	[`4.2.7`, `4.2`](https://github.com/crate/docker-crate/blob/441cd8bb0115a268f30633839bc29d813dfaa0db/Dockerfile)
+-	[`4.1.8`, `4.1`](https://github.com/crate/docker-crate/blob/fbe46a3c699dfe79242e659626a39b09325d58ab/Dockerfile)
+-	[`4.0.12`, `4.0`](https://github.com/crate/docker-crate/blob/7791cda08fbf054ab2ce7a988f8811074b8c3bf4/Dockerfile)
+-	[`3.3.5`, `3.3`](https://github.com/crate/docker-crate/blob/896c3f63e8e3d4746019e379a7aefb5225b050e3/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/crate`)](https://github.com/docker-library/official-images/blob/master/library/crate). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fcrate).
+# Quick reference (cont.)
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/crate/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/crate/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+-	**Where to file issues**:  
+	[https://github.com/crate/docker-crate/issues](https://github.com/crate/docker-crate/issues)
 
-# What Is Crate?
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/crate/), [`arm64v8`](https://hub.docker.com/r/arm64v8/crate/)
 
-Crate is an open source fast, scalable, easy to use SQL database that plays nicely with containers like Docker. It feels like the SQL databases you know, but makes scaling and operating your database ridiculously easy - regardless of the volume, complexity, or type of data. It ingests millions of records per second for time series setups and delivers analytics results in sub-second real time.
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/crate/` directory](https://github.com/docker-library/repo-info/blob/master/repos/crate) ([history](https://github.com/docker-library/repo-info/commits/master/repos/crate))  
+	(image metadata, transfer size, etc)
 
-Crate comes with a distributed sort and aggregation engine, fast multi index queries, native full-text search and super simple scalability with sharding and partitioning builtin. Preconfigured replication takes care of data resiliency. The cluster management can be supervised with a built-in admin UI. Crate's masterless architecture and simplicity make the data part of Docker environments easy and elegant.
+-	**Image updates**:  
+	[official-images repo's `library/crate` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fcrate)  
+	[official-images repo's `library/crate` file](https://github.com/docker-library/official-images/blob/master/library/crate) ([history](https://github.com/docker-library/official-images/commits/master/library/crate))
 
-Crate provides several installation packages, including a supported Docker image. It fits perfectly into an orchestrated microservices environment. It acts like an ephemeral, omnipresent, persistent layer for data. Application containers access their data regardless of which host the data nodes run.
+-	**Source of this description**:  
+	[docs repo's `crate/` directory](https://github.com/docker-library/docs/tree/master/crate) ([history](https://github.com/docker-library/docs/commits/master/crate))
 
-[Crate](https://crate.io/)
+![logo](https://raw.githubusercontent.com/docker-library/docs/0d4ccc1c0a00a99c3302ffeb17831225cbba7863/crate/logo.png)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/2517900006ae5f4c03c1d43235930c59f4614394/crate/logo.png)
+# What Is CrateDB?
 
-# Quick Start Example: Multihost Production Setup
+[CrateDB](http://github.com/crate/crate) is a distributed SQL database that makes it simple to store and analyze massive amounts of machine data in real-time.
 
-This is an example configuration to run in a multi-host production environment. The configuration includes the required minimum settings:
+CrateDB offers the scalability and flexibility typically associated with a NoSQL database, is designed to run on inexpensive commodity servers and can be deployed and run on any sort of network - from personal computers to multi-region hybrid clouds.
 
--	Volume mapping
--	Port mapping to localhost (run only one container per machine)
--	Unicast host discovery
+The smallest CrateDB clusters can easily ingest tens of thousands of records per second. The data can be queried, ad-hoc, in parallel across the whole cluster in real time.
 
-To start the Crate cluster in containers distributed to three hosts without multicast enabled, run this command on the first node and adapt the container and node names on the two other nodes:
+# Features
 
-```console
-# HOSTS="crate1.example.com:4300,crate2.example.com:4300,crate3.example.com:4300"
-# HOST="crate1.example.com"
-# docker run -d -p 4200:4200 -p 4300:4300 \
-    --name crate1-container \
-    --volume /mnt/data:/data \
-    --ulimit nofile=65535 \
-    --ulimit memlock=9223372036854775807 \
-        crate \
-        crate \
-          -Des.cluster.name=crate-cluster \
-          -Des.node.name=crate1 \
-          -Des.transport.publish_port=4300 \
-          -Des.network.publish_host="$HOST" \
-          -Des.multicast.enabled=false \
-          -Des.discovery.zen.ping.unicast.hosts="$HOSTS" \
-          -Des.discovery.zen.minimum_master_nodes=2
-```
+-	Standard SQL plus dynamic schemas, queryable objects, geospatial features, time series data, first-class BLOB support, and realtime full-text search.
+-	Dynamic schemas, queryable objects, geospatial features, time series data support, and realtime full-text search providing functionality for handling both relational and document oriented nested data structures.
+-	Horizontally scalable, highly available and fault tolerant clusters that run very well in virtualized and containerised environments.
+-	Extremely fast distributed query execution.
+-	Auto-partitioning, auto-sharding, and auto-replication.
+-	Self-healing and auto-rebalancing.
 
-# The crate Docker Image
+# Screenshots
 
-To form a cluster from scratch, start a few instances of the Crate container as a background daemon:
+CrateDB provides an [Admin UI](https://crate.io/docs/crate/admin-ui/):
 
-```console
-# docker run -d crate crate
-```
+![Screenshots of the CrateDB Admin UI](https://raw.githubusercontent.com/crate/crate/master/crate-admin.gif)
 
-To access the admin UI, map port 4200 and point your browser to port tcp/4200 of a node of your choice while you start it or look up its IP later:
+# Try CrateDB
+
+Spin up this Docker image like so:
 
 ```console
-# firefox "http://$(docker inspect --format='{{.NetworkSettings.IPAddress}}' $(docker run -d crate crate)):4200/admin"
+$ docker run --publish 4200:4200 --publish 5432:5432 crate -Cdiscovery.type=single-node
 ```
 
-For production use it's strongly recommended to use only one container per machine. This will give the best possible performance and by mapping the ports from the Docker container to the host it acts like a native installation. Crate's default ports 4200 (HTTP) and 4300 (Transport protocol).
+Visit the [getting started](https://crate.io/docs/crate/tutorials/en/latest/install-run/) page to see all the available download and install options.
 
-```console
-# docker run -d -p 4200:4200 -p 4300:4300 crate crate
-```
+Once you're up and running, head over to the [introductory docs](https://crate.io/docs/crate/tutorials/). To interact with CrateDB, you can use the Admin UI [web console](https://crate.io/docs/crate/admin-ui/en/latest/console.html#sql-console) or the [CrateDB shell](https://crate.io/docs/crate/crash/) CLI tool. Alternatively, review the list of recommended [clients and tools](https://crate.io/docs/crate/clients-tools/) that work with CrateDB.
 
-## Attach Persistent Data Directory
-
-Crate stores all important data in */data*. It's advised to mount this directory to avoid writing within the docker image:
-
-```console
-# docker run -d -v <data-dir>:/data crate crate
-```
-
-## Use Custom Crate Configuration
-
-Starting with 0.55.0, Crate does no longer support providing custom configuration files. However it is still possible to mount Crate's configuration into `/crate/config/crate.yml`.
-
-```console
-# docker run -d -v <custom/config/path>/crate.yml:/crate/config/crate.yml crate crate
-```
-
-For further configuration options refer to the[Configuration](https://crate.io/docs/stable/configuration.html) section of our documentation.
-
-## Environment
-
-Crate recognizes environment variables like `CRATE_HEAP_SIZE` that need to be set with the `--env` option before the actual Crate core starts. As a rule of thumb you may want to [assign about half of your memory ](https://crate.io/docs/reference/en/latest/configuration.html#crate-heap-size) to Crate:
-
-```console
-# docker run -d --env CRATE_HEAP_SIZE=32g crate crate
-```
-
-## Open Files
-
-Depending on the size of your installation, Crate can open a lot of files. You can check the number of open files with `ulimit -n`, but it can depend on your host operating system. To increase the number, start containers with the option`--ulimit nofile=65535`. Furthermore it is recommended to set the `memlock` limit (the maximum locked-in-memory address space) to unlimited by setting it to a very high number (Docker requires a 64 bit integer) `--ulimit memlock=9223372036854775807`.
-
-## Multicast
-
-By Default, Crate uses multicast for node discovery. This means nodes started in the same multicast zone will discover each other automatically. Docker multicast support between containers on different hosts depends on an overlay network driver. If that does not support multicast, you have to [enable unicast in a custom*crate.yml*](https://crate.io/docs/reference/best_practice/multi_node_setup.html) file.
-
-Crate publishes the hostname it runs on for discovery within the cluster. If the address of the docker container differs from the actual host the docker image is running on, this is the case if you do port mapping to the host via the `-p` option, you need to tell Crate to publish the address of the docker host instead:
-
-```console
-# docker run -d -p 4200:4200 -p 4300:4300 \
-    crate crate -Des.network.publish_host=host1.example.com
-```
-
-If you change the transport port from the default `4300` to something else, you need to pass the publish port to Crate by adding `-Des.transport.publish_port=4321` to your command.
-
-## Crate Shell
-
-The Crate Shell `crash` is bundled with the Docker image. Since the `crash` executable is already in the `$PATH` environment variable, simply run:
-
-```console
-# docker run --rm -ti crate crash --hosts [host1, host2, ...]
-```
-
-# License
-
-View [license information](https://github.com/crate/crate/blob/master/LICENSE.txt) for the software contained in this image.
-
-# Supported Docker versions
-
-This image is officially supported on Docker version 1.12.5.
-
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
+For container-specific documentation, check out the [CrateDB on Docker how-to guide](https://crate.io/docs/crate/howtos/en/latest/deployment/containers/docker.html) or the [CrateDB on Kubernetes how-to guide](https://crate.io/docs/crate/howtos/en/latest/deployment/containers/kubernetes.html).
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/crate/docker-crate/issues).
+### Memory Accounting
 
-If you have any questions or suggestions, we are happy to help! Feel free to join our [public Crate community on Slack](https://crate.io/docs/support/slackin/).
+The combinations of Linux kernel version 3.x and Docker >= 1.12 could lead to a major problem with memory accounting causing the kernel to kill the CrateDB process in the container. This problems occurs because of a [slab shrinker issue](https://lwn.net/Articles/628829/) that is fixed in kernel versions >= 4.0.
 
-For further information and official contact visit [https://crate.io](https://crate.io).
+### Others
+
+For issue specific to the CrateDB Docker image, report issues via [the `docker-crate` GitHub issue tracker](https://github.com/crate/docker-crate/issues)
+
+For issues with CrateDB itself, report issues via [the `crate` GitHub issue tracker](https://github.com/crate/crate/issues)
 
 ## Contributing
 
-You are very welcome to contribute features or fixes! Before we can accept any pull requests to Crate Data we need you to agree to our [CLA](https://crate.io/community/contribute/). For further information please refer to [CONTRIBUTING.rst](https://github.com/crate/crate/blob/master/CONTRIBUTING.rst).
+This image is primarily maintained by [Crate.io](http://crate.io/), but we welcome community contributions!
 
-## Documentation
+See the [contribution docs](https://github.com/crate/docker-crate/blob/master/CONTRIBUTING.rst) for more information.
 
-Documentation for this image is stored in the [`crate/` directory](https://github.com/docker-library/docs/tree/master/crate) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `REAMDE.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
+# License
 
-Visit [Crate on Docker](https://crate.io/docs/install/containers/docker/) and get further documentation about how to get started with Crate.
+CrateDB is licensed under the Apache License 2.0.
+
+See [LICENSE](https://github.com/crate/crate/blob/master/LICENSE) for more information.
+
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
+
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `crate/` directory](https://github.com/docker-library/repo-info/tree/master/repos/crate).
+
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

@@ -1,17 +1,32 @@
+# Quick reference
+
+-	**Maintained by**:  
+	%%MAINTAINER%%
+
+-	**Where to get help**:  
+	%%GET-HELP%%
+
 # Supported tags and respective `Dockerfile` links
 
 %%TAGS%%
 
-For more information about this image and its history, please see [the relevant manifest file (`library/%%REPO%%`)](https://github.com/docker-library/official-images/blob/master/library/%%REPO%%). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2F%%REPO%%).
+# Quick reference (cont.)
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/%%REPO%%/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/%%REPO%%/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+-	**Where to file issues**:  
+	%%ISSUES%%
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	%%ARCHES%%
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/%%REPO%%/` directory](https://github.com/docker-library/repo-info/blob/master/repos/%%REPO%%) ([history](https://github.com/docker-library/repo-info/commits/master/repos/%%REPO%%))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images repo's `library/%%REPO%%` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2F%%REPO%%)  
+	[official-images repo's `library/%%REPO%%` file](https://github.com/docker-library/official-images/blob/master/library/%%REPO%%) ([history](https://github.com/docker-library/official-images/commits/master/library/%%REPO%%))
+
+-	**Source of this description**:  
+	[docs repo's `%%REPO%%/` directory](https://github.com/docker-library/docs/tree/master/%%REPO%%) ([history](https://github.com/docker-library/docs/commits/master/%%REPO%%))
 
 %%CONTENT%%%%VARIANT%%%%LICENSE%%
-
-# Supported Docker versions
-
-%%DOCKER-VERSIONS%%
-
-# User Feedback
-
-%%USER-FEEDBACK%%

@@ -1,14 +1,52 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "rethinkdb/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "rethinkdb/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
+# Quick reference
+
+-	**Maintained by**:  
+	[RethinkDB](https://github.com/rethinkdb/rethinkdb-dockerfiles)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
--	[`2.0.4`, `2.0` (*jessie/2.0.4/Dockerfile*)](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/da98484fc73485fe7780546903d01dcbcd931673/jessie/2.0.4/Dockerfile)
--	[`2.1.6`, `2.1` (*jessie/2.1.6/Dockerfile*)](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/da98484fc73485fe7780546903d01dcbcd931673/jessie/2.1.6/Dockerfile)
--	[`2.2.6`, `2.2` (*jessie/2.2.6/Dockerfile*)](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/da98484fc73485fe7780546903d01dcbcd931673/jessie/2.2.6/Dockerfile)
--	[`2.3.4` (*jessie/2.3.4/Dockerfile*)](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/da98484fc73485fe7780546903d01dcbcd931673/jessie/2.3.4/Dockerfile)
--	[`2.3.5`, `2.3`, `2`, `latest` (*jessie/2.3.5/Dockerfile*)](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/da98484fc73485fe7780546903d01dcbcd931673/jessie/2.3.5/Dockerfile)
+-	[`2.4.1-buster-slim`, `2.4-buster-slim`, `2-buster-slim`, `buster-slim`, `2.4.1`, `2.4`, `2`, `latest`](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/5bccd499742f6f05e7ddc970842a1763bdd99cfa/buster/2.4.1/Dockerfile)
+-	[`2.4.1-centos`, `2.4-centos`, `2-centos`, `centos`](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/5bccd499742f6f05e7ddc970842a1763bdd99cfa/centos8/2.4.1/Dockerfile)
+-	[`2.4.0-buster-slim`, `2.4.0`](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/444f7754822cb3e96cb2b66042d8e87d2227be0b/buster/2.4.0/Dockerfile)
+-	[`2.4.0-centos`](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/444f7754822cb3e96cb2b66042d8e87d2227be0b/centos8/2.4.0/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/rethinkdb`)](https://github.com/docker-library/official-images/blob/master/library/rethinkdb). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Frethinkdb).
+# Quick reference (cont.)
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/rethinkdb/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/rethinkdb/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+-	**Where to file issues**:  
+	[https://github.com/rethinkdb/rethinkdb-dockerfiles/issues](https://github.com/rethinkdb/rethinkdb-dockerfiles/issues)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/rethinkdb/)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/rethinkdb/` directory](https://github.com/docker-library/repo-info/blob/master/repos/rethinkdb) ([history](https://github.com/docker-library/repo-info/commits/master/repos/rethinkdb))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images repo's `library/rethinkdb` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Frethinkdb)  
+	[official-images repo's `library/rethinkdb` file](https://github.com/docker-library/official-images/blob/master/library/rethinkdb) ([history](https://github.com/docker-library/official-images/commits/master/library/rethinkdb))
+
+-	**Source of this description**:  
+	[docs repo's `rethinkdb/` directory](https://github.com/docker-library/docs/tree/master/rethinkdb) ([history](https://github.com/docker-library/docs/commits/master/rethinkdb))
 
 # What is RethinkDB?
 
@@ -59,32 +97,26 @@ kill $(lsof -t -i @localhost:8080 -sTCP:listen)
 
 See the [official docs](http://www.rethinkdb.com/docs/) for infomation on using and configuring a RethinkDB cluster.
 
+# Image Variants
+
+The `rethinkdb` images come in many flavors, each designed for a specific use case.
+
+## `rethinkdb:<version>`
+
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+Some of these tags may have names like buster in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+
+## `rethinkdb:<version>-slim`
+
+This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `rethinkdb`. Unless you are working in an environment where *only* the `rethinkdb` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
+
 # License
 
-View [license information](http://www.gnu.org/licenses/agpl-3.0.html) for the software contained in this image.
+View [license information](https://raw.githubusercontent.com/rethinkdb/rethinkdb/next/LICENSE) for the software contained in this image.
 
-# Supported Docker versions
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 
-This image is officially supported on Docker version 1.12.5.
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `rethinkdb/` directory](https://github.com/docker-library/repo-info/tree/master/repos/rethinkdb).
 
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/rethinkdb/rethinkdb-dockerfiles/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/rethinkdb/rethinkdb-dockerfiles/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`rethinkdb/` directory](https://github.com/docker-library/docs/tree/master/rethinkdb) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

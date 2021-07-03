@@ -11,10 +11,10 @@ Erlang is a programming language used to build massively scalable soft real-time
 ## Run it as the REPL
 
 ```console
-➸ docker run -it --rm erlang
-Erlang/OTP 18 [erts-7.1] [source] [64-bit] [smp:8:8] [async-threads:10] [hipe] [kernel-poll:false]
+➸ docker run -it --rm %%IMAGE%%
+Erlang/OTP 20 [erts-9.0] [source] [64-bit] [smp:8:8] [ds:8:8:10] [async-threads:10] [hipe] [kernel-poll:false]
 
-Eshell V7.1  (abort with ^G)
+Eshell V9.0  (abort with ^G)
 1> uptime().
 3 seconds
 ok
@@ -30,12 +30,12 @@ User switch command
   q                 - quit erlang
   ? | h             - this message
  --> q
-➸ docker run -it --rm -h erlang.local erlang erl -name snode@erlang.local
-Erlang/OTP 18 [erts-7.1] [source] [64-bit] [smp:8:8] [async-threads:10] [hipe] [kernel-poll:false]
+➸ docker run -it --rm -h erlang.local %%IMAGE%% erl -name snode@erlang.local
+Erlang/OTP 20 [erts-9.0] [source] [64-bit] [smp:8:8] [ds:8:8:10] [async-threads:10] [hipe] [kernel-poll:false]
 
-Eshell V7.1  (abort with ^G)
+Eshell V9.0  (abort with ^G)
 (snode@erlang.local)1> erlang:system_info(otp_release).
-"18"
+"20"
 (snode@erlang.local)2>
 User switch command
 --> q
@@ -44,5 +44,5 @@ User switch command
 ## Run a single Erlang escript
 
 ```console
-$ docker run -it --rm --name %%REPO%%-inst1 -v "$PWD":/usr/src/myapp -w /usr/src/myapp %%REPO%% escript your-escript.erl
+$ docker run -it --rm --name %%REPO%%-inst1 -v "$PWD":/usr/src/myapp -w /usr/src/myapp %%IMAGE%% escript your-escript.erl
 ```

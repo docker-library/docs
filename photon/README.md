@@ -1,16 +1,58 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "photon/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "photon/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
+# Quick reference
+
+-	**Maintained by**:  
+	[VMware](https://github.com/vmware/photon-docker-image)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
--	[`1.0`, `latest` (*1.0/Dockerfile*)](https://github.com/vmware/photon-docker-image/blob/39c3c62cd649b1d64178b24cd23d9196461dc818/1.0/Dockerfile)
+-	[`4.0`, `4.0-20210625`, `latest`](https://github.com/vmware/photon-docker-image/blob/3a29811633fd96c611a34d1aa5bcea768a40106c/docker/Dockerfile)
+-	[`3.0`, `3.0-20210625`](https://github.com/vmware/photon-docker-image/blob/085cbe97761ca9814f7885a19d1d820d9a806cfa/docker/Dockerfile)
+-	[`1.0`, `1.0-20210625`](https://github.com/vmware/photon-docker-image/blob/9930a98518db6bffa684cfa7a054324f2a1d277e/docker/Dockerfile)
+-	[`2.0`, `2.0-20210625`](https://github.com/vmware/photon-docker-image/blob/3fe7c26264028947681b5f8f05e30bc3858fc90c/docker/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/photon`)](https://github.com/docker-library/official-images/blob/master/library/photon). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fphoton).
+# Quick reference (cont.)
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/photon/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/photon/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+-	**Where to file issues**:  
+	[https://github.com/vmware/photon-docker-image/issues](https://github.com/vmware/photon-docker-image/issues)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/photon/), [`arm64v8`](https://hub.docker.com/r/arm64v8/photon/)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/photon/` directory](https://github.com/docker-library/repo-info/blob/master/repos/photon) ([history](https://github.com/docker-library/repo-info/commits/master/repos/photon))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images repo's `library/photon` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fphoton)  
+	[official-images repo's `library/photon` file](https://github.com/docker-library/official-images/blob/master/library/photon) ([history](https://github.com/docker-library/official-images/commits/master/library/photon))
+
+-	**Source of this description**:  
+	[docs repo's `photon/` directory](https://github.com/docker-library/docs/tree/master/photon) ([history](https://github.com/docker-library/docs/commits/master/photon))
 
 # VMware Photon OS
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/de9a58372c9e1e58ccb08186ab6ebed278b86521/photon/logo.png)
 
-Photon OS is a technology preview of a minimal Linux container host. It is designed to have a small footprint and boot extremely quickly on VMware platforms. Photon OS is intended to invite collaboration around running containerized applications in a virtualized environment.
+Photon OS is an open source minimal Linux container host optimized for cloud-native applications, cloud platforms, and VMware infrastructure. It is designed to have a small footprint and boot extremely quickly on VMware platforms. Photon OS is intended to invite collaboration around running containerized applications in a virtualized environment.
 
 Photon contains `tdnf`, a new, open-source, yum-compatible package manager that will help make the system as small as possible, but preserve the robust yum package management capabilities.
 
@@ -18,7 +60,7 @@ See the [FAQ](http://vmware.github.io/photon/assets/files/photon_faqs.pdf) for m
 
 ## How to use these images
 
-Photon OS images are intended for use in the **FROM** field of an application's `Dockerfile`. For example, to use VMware Photon 1.0RC as the base of an image, specify `FROM photon:1.0RC`.
+Photon OS images are intended for use in the **FROM** field of an application's `Dockerfile`. For example, to use VMware Photon 1.0GA as the base of an image, specify `FROM photon:1.0GA`.
 
 ## Support
 
@@ -34,28 +76,8 @@ For more general user questions, visit the Photon OS user forum in our [Photon O
 
 View [license information](https://github.com/vmware/photon/blob/master/LICENSE) for the software contained in this image.
 
-# Supported Docker versions
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 
-This image is officially supported on Docker version 1.12.5.
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `photon/` directory](https://github.com/docker-library/repo-info/tree/master/repos/photon).
 
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/vmware/photon-docker-image/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/vmware/photon-docker-image/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`photon/` directory](https://github.com/docker-library/docs/tree/master/photon) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

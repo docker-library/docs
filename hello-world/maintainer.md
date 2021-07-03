@@ -1,0 +1,1 @@
+../.common-templates/maintainer-community.md

@@ -1,8 +1,12 @@
 ### Overview
 
-The images in this repository contain IBM® SDK, Java™ Technology Edition, version 1.8.0\_sr3fp21 (8.0-3.21). See [what's new](http://www.ibm.com/support/knowledgecenter/en/SSYKE2_8.0.0/com.ibm.java.lnx.80.doc/diag/preface/changes_80/changes.html). See the license section for restrictions that relate to the use of this image. For more information about IBM® SDK, Java™ Technology Edition and API documentation, see the [IBM Knowledge Center](http://www.ibm.com/support/knowledgecenter/SSYKE2/welcome_javasdk_family.html). For tutorials, recipes, and Java usage in Bluemix, see [IBM developerWorks](http://www.ibm.com/developerworks/java).
+The images in this repository contain IBM® SDK, Java™ Technology Edition. For more information on the latest version and what's new, see [sdk8 on IBM developerWorks](https://developer.ibm.com/javasdk/downloads/sdk8/) and [jdk11 on IBM developerWorks](https://developer.ibm.com/javasdk/downloads/java-sdk-downloads-version-110/). See the license section for restrictions that relate to the use of this image. For more information about IBM® SDK, Java™ Technology Edition and API documentation as well as tutorials, recipes, and Java usage in IBM Cloud, see [IBM developerWorks](https://developer.ibm.com/javasdk/).
 
 Java and all Java-based trademarks and logos are trademarks or registered trademarks of Oracle and/or its affiliates.
+
+### Eclipse OpenJ9 Images
+
+[Eclipse OpenJ9](https://www.eclipse.org/openj9) is a high performance, scalable, Java virtual machine (JVM) implementation that represents hundreds of person-years of effort. Contributed to the Eclipse project by IBM, the OpenJ9 JVM underpins the IBM SDK, Java Technology Edition product that is a core component of many IBM Enterprise software products. Continued development of OpenJ9 at the Eclipse foundation ensures wider collaboration, fresh innovation, and the opportunity to influence the development of OpenJ9 for the next generation of Java applications. The Eclipse OpenJ9 Docker images are available through [AdoptOpenJDK](https://adoptopenjdk.net/). They are available from [here](https://hub.docker.com/u/adoptopenjdk/).
 
 ### Images
 
@@ -14,7 +18,7 @@ The Small Footprint JRE ([SFJ](http://www.ibm.com/support/knowledgecenter/en/SSY
 
 ##### Alpine Linux
 
-Consider using [Alpine Linux](http://alpinelinux.org/) if you are concerned about the size of the overall image. Alpine Linux is a stripped down version of Linux that is based on [musl libc](http://wiki.musl-libc.org/wiki/Functional_differences_from_glibc) and Busybox, resulting in a [Docker image](https://hub.docker.com/_/alpine/) size of approximately 5 MB. Due to its extremely small size and reduced number of installed packages, it has a much smaller attack surface which improves security. However, because the IBM SDK has a dependency on gnu glibc, installing this library adds an extra 8 MB to the image size. The following table compares Docker Image sizes based on the JRE version `8.0-3.10`.
+Consider using [Alpine Linux](http://alpinelinux.org/) if you are concerned about the size of the overall image. Alpine Linux is a stripped down version of Linux that is based on [musl libc](http://wiki.musl-libc.org/wiki/Functional_differences_from_glibc) and Busybox, resulting in a [Docker image](https://hub.docker.com/_/alpine/) size of approximately 5 MB. Due to its extremely small size and reduced number of installed packages, it has a much smaller attack surface which improves security. IBM SDK has a dependency on gnu glibc, the sources can be found [here](https://github.com/sgerrand/docker-glibc-builder/releases/). Installing this library adds an extra 8 MB to the image size. The following table compares Docker Image sizes based on the JRE version `8.0-3.10`.
 
 | JRE    | JRE    | SFJ    | SFJ    |
 |:------:|:------:|:------:|:------:|
@@ -23,20 +27,23 @@ Consider using [Alpine Linux](http://alpinelinux.org/) if you are concerned abou
 
 **Note: Alpine Linux is not an officially supported operating system for IBM® SDK, Java™ Technology Edition.**
 
-##### Architectures Supported
+##### Multi-Arch Image
 
 Docker Images for the following architectures are now available:
 
 -	[x86\_64](https://hub.docker.com/_/ibmjava/)
+-	[i386](https://hub.docker.com/r/i386/ibmjava/)
 -	[ppc64le](https://hub.docker.com/r/ppc64le/ibmjava/)
 -	[s390x](https://hub.docker.com/r/s390x/ibmjava/)
+
+ibmjava now has multi-arch support and so the exact same commands as below works on all supported architectures. This also means that it is no longer necessary to prefix the arch with the image name as that happens auto-magically.
 
 ### How to use this Image
 
 To run a pre-built jar file with the JRE image, use the following commands:
 
 ```dockerfile
-FROM ibmjava:jre
+FROM %%IMAGE%%:jre
 RUN mkdir /opt/app
 COPY japp.jar /opt/app
 CMD ["java", "-jar", "/opt/app/japp.jar"]
@@ -52,7 +59,7 @@ docker run -it --rm japp
 If you want to place the jar file on the host file system instead of inside the container, you can mount the host path onto the container by using the following commands:
 
 ```dockerfile
-FROM ibmjava:jre
+FROM %%IMAGE%%:jre
 CMD ["java", "-jar", "/opt/app/japp.jar"]
 ```
 
@@ -68,7 +75,7 @@ IBM SDK, Java Technology Edition provides a feature called [Class data sharing](
 To enable class data sharing between JVMs that are running in different containers on the same host, a common location must be shared between containers. This requirement can be satisfied through the host or a data volume container. When enabled, class data sharing creates a named "class cache", which is a memory-mapped file, at the common location. This feature is enabled by passing the `-Xshareclasses` option to the JVM as shown in the following Dockerfile example:
 
 ```dockerfile
-FROM ibmjava:jre
+FROM %%IMAGE%%:jre
 RUN mkdir /opt/shareclasses
 RUN mkdir /opt/app
 COPY japp.jar /opt/app

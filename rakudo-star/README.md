@@ -1,75 +1,107 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "rakudo-star/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "rakudo-star/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
+# Quick reference
+
+-	**Maintained by**:  
+	[the Raku Community](https://github.com/Raku/docker)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
--	[`2016.11`, `latest` (*Dockerfile*)](https://github.com/perl6/docker/blob/a7548f14c69b9dd3cd75f3359b74c930bc0a16b2/Dockerfile)
+-	[`latest`, `2021.04`](https://github.com/Raku/docker/blob/26de33ad42a6033cd105e354416c9aab3e7c91d1/2021.04/buster/Dockerfile)
+-	[`alpine`, `2021.04-alpine`](https://github.com/Raku/docker/blob/26de33ad42a6033cd105e354416c9aab3e7c91d1/2021.04/alpine3.13/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/rakudo-star`)](https://github.com/docker-library/official-images/blob/master/library/rakudo-star). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Frakudo-star).
+# Quick reference (cont.)
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/rakudo-star/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/rakudo-star/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+-	**Where to file issues**:  
+	[https://github.com/Raku/docker/issues](https://github.com/Raku/docker/issues)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/rakudo-star/), [`arm64v8`](https://hub.docker.com/r/arm64v8/rakudo-star/)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/rakudo-star/` directory](https://github.com/docker-library/repo-info/blob/master/repos/rakudo-star) ([history](https://github.com/docker-library/repo-info/commits/master/repos/rakudo-star))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images repo's `library/rakudo-star` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Frakudo-star)  
+	[official-images repo's `library/rakudo-star` file](https://github.com/docker-library/official-images/blob/master/library/rakudo-star) ([history](https://github.com/docker-library/official-images/commits/master/library/rakudo-star))
+
+-	**Source of this description**:  
+	[docs repo's `rakudo-star/` directory](https://github.com/docker-library/docs/tree/master/rakudo-star) ([history](https://github.com/docker-library/docs/commits/master/rakudo-star))
 
 # What is Rakudo Star?
 
-Rakudo Star is a Perl 6 distribution designed for use by early adopters of the language. It includes a virtual machine (the JVM or MoarVM), the Rakudo Perl 6 compiler, and a suite of modules that users may find useful. This image includes the MoarVM backend for the compiler.
+Rakudo Star is a Raku (formerly known as Perl 6) distribution designed for use by early adopters of the language. It includes a virtual machine (the JVM or MoarVM), the Rakudo compiler, and a suite of modules that users may find useful. This image includes the MoarVM backend for the compiler.
 
-Project homepage: [http://rakudo.org](http://rakudo.org)
+-	Project homepage: https://rakudo.org/
+-	Raku Language Specification: https://github.com/Raku/roast
+-	Raku Language Documentation: https://docs.raku.org/
 
-GitHub repository: [https://github.com/rakudo/star](https://github.com/rakudo/star)
-
-The Dockerfile responsible: [http://github.com/perl6/docker/tree/master/Dockerfile](http://github.com/perl6/docker/tree/master/Dockerfile)
-
-Perl 6 Language Specification: [http://design.perl6.org/](http://design.perl6.org/)
-
-Perl 6 Language Documentation: [http://doc.perl6.org/](http://doc.perl6.org/)
+> [wikipedia.org/wiki/Rakudo](https://en.wikipedia.org/wiki/Rakudo)
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/48ac05ac94903844bfbdea1fb361676a904f9d85/rakudo-star/logo.png)
 
 # How to use this image
 
-Simply running a container with the image will launch a Perl 6 REPL:
+Simply running a container with the image will launch a Raku REPL:
 
 ```console
 $ docker run -it rakudo-star
-> say 'Hello, Perl!'
-Hello, Perl!
+> say 'Hello, Raku!'
+Hello, Raku!
 ```
 
-You can also provide perl6 command line switches to `docker run`:
+You can also provide raku command line switches to `docker run`:
 
 ```console
-$ docker run -it rakudo-star -e 'say "Hello!"'
+$ docker run -it rakudo-star raku -e 'say "Hello!"'
 ```
 
 # Contributing/Getting Help
 
-Many Perl 6 developers are present on #perl6 on Freenode.
+Many Raku developers are present on [#raku on Libera.Chat](https://kiwiirc.com/client/irc.libera.chat/#raku)
 
-Issues for Rakudo are tracked in RT: [https://rt.perl.org/](https://rt.perl.org/)
+Issues for Rakudo are tracked in [on GitHub](https://github.com/rakudo/rakudo/issues).
+
+# Image Variants
+
+The `rakudo-star` images come in many flavors, each designed for a specific use case.
+
+## `rakudo-star:<version>`
+
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+## `rakudo-star:<version>-alpine`
+
+This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+
+This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+
+To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 # License
 
 View [license information](https://github.com/rakudo/star/blob/master/LICENSE) for the software contained in this image.
 
-# Supported Docker versions
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 
-This image is officially supported on Docker version 1.12.5.
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `rakudo-star/` directory](https://github.com/docker-library/repo-info/tree/master/repos/rakudo-star).
 
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/perl6/docker/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/perl6/docker/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`rakudo-star/` directory](https://github.com/docker-library/docs/tree/master/rakudo-star) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

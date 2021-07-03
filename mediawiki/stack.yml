@@ -1,0 +1,28 @@
+# MediaWiki with MariaDB
+#
+# Access via "http://localhost:8080"
+#   (or "http://$(docker-machine ip):8080" if using docker-machine)
+version: '3'
+services:
+  mediawiki:
+    image: mediawiki
+    restart: always
+    ports:
+      - 8080:80
+    links:
+      - database
+    volumes:
+      - /var/www/html/images
+      # After initial setup, download LocalSettings.php to the same directory as
+      # this yaml and uncomment the following line and use compose to restart
+      # the mediawiki service
+      # - ./LocalSettings.php:/var/www/html/LocalSettings.php
+  database:
+    image: mariadb
+    restart: always
+    environment:
+      # @see https://phabricator.wikimedia.org/source/mediawiki/browse/master/includes/DefaultSettings.php
+      MYSQL_DATABASE: my_wiki
+      MYSQL_USER: wikiuser
+      MYSQL_PASSWORD: example
+      MYSQL_RANDOM_ROOT_PASSWORD: 'yes'

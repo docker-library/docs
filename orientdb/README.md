@@ -1,12 +1,58 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "orientdb/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "orientdb/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
+# Quick reference
+
+-	**Maintained by**:  
+	[OrientDB](https://github.com/orientechnologies/orientdb-docker)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
--	[`2.0.18` (*2.0/Dockerfile*)](https://github.com/orientechnologies/orientdb-docker/blob/a43637b03a105ceb1104cbf5e42e93e1ffed0944/2.0/Dockerfile)
--	[`2.1.25` (*2.1/Dockerfile*)](https://github.com/orientechnologies/orientdb-docker/blob/eb9c688528d4ce7d50eec34391a3cbb4fea88868/2.1/Dockerfile)
--	[`2.2.13`, `latest` (*2.2/x86_64/alpine/Dockerfile*)](https://github.com/orientechnologies/orientdb-docker/blob/eb9c688528d4ce7d50eec34391a3cbb4fea88868/2.2/x86_64/alpine/Dockerfile)
+-	[`3.2.0`, `3.2`, `latest`](https://github.com/orientechnologies/orientdb-docker/blob/bb81d851b336fdee4bdaaa6ce9ad6566e91e3c4f/release/3.2.x/3.2.0/Dockerfile)
+-	[`3.2.0-tp3`, `3.2-tp3`](https://github.com/orientechnologies/orientdb-docker/blob/bb81d851b336fdee4bdaaa6ce9ad6566e91e3c4f/release/3.2.x/3.2.0-tp3/Dockerfile)
+-	[`3.1.12`, `3.1`](https://github.com/orientechnologies/orientdb-docker/blob/bb81d851b336fdee4bdaaa6ce9ad6566e91e3c4f/release/3.1.x/3.1.12/Dockerfile)
+-	[`3.1.12-tp3`, `3.1-tp3`](https://github.com/orientechnologies/orientdb-docker/blob/bb81d851b336fdee4bdaaa6ce9ad6566e91e3c4f/release/3.1.x/3.1.12-tp3/Dockerfile)
+-	[`3.0.38`, `3.0`](https://github.com/orientechnologies/orientdb-docker/blob/0ea73f03c2811457b1e81724d96ca3ad2fb88870/release/3.0.x/3.0.38/Dockerfile)
+-	[`3.0.38-tp3`, `3.0-tp3`](https://github.com/orientechnologies/orientdb-docker/blob/0ea73f03c2811457b1e81724d96ca3ad2fb88870/release/3.0.x/3.0.38-tp3/Dockerfile)
+-	[`2.2.37`, `2.2`](https://github.com/orientechnologies/orientdb-docker/blob/0562973e21d0992bc799dcb7b64b1978b7e32ac3/release/2.2.x/2.2.37/Dockerfile)
+-	[`2.2.37-spatial`](https://github.com/orientechnologies/orientdb-docker/blob/0562973e21d0992bc799dcb7b64b1978b7e32ac3/release/2.2.x/2.2.37-spatial/Dockerfile)
+-	[`2.1.25`, `2.1`](https://github.com/orientechnologies/orientdb-docker/blob/0562973e21d0992bc799dcb7b64b1978b7e32ac3/release/2.1.x/Dockerfile)
+-	[`2.0.18`, `2.0`](https://github.com/orientechnologies/orientdb-docker/blob/0562973e21d0992bc799dcb7b64b1978b7e32ac3/release/2.0.x/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/orientdb`)](https://github.com/docker-library/official-images/blob/master/library/orientdb). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Forientdb).
+# Quick reference (cont.)
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/orientdb/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/orientdb/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+-	**Where to file issues**:  
+	[https://github.com/orientechnologies/orientdb-docker/issues](https://github.com/orientechnologies/orientdb-docker/issues)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/orientdb/)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/orientdb/` directory](https://github.com/docker-library/repo-info/blob/master/repos/orientdb) ([history](https://github.com/docker-library/repo-info/commits/master/repos/orientdb))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images repo's `library/orientdb` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Forientdb)  
+	[official-images repo's `library/orientdb` file](https://github.com/docker-library/official-images/blob/master/library/orientdb) ([history](https://github.com/docker-library/official-images/commits/master/library/orientdb))
+
+-	**Source of this description**:  
+	[docs repo's `orientdb/` directory](https://github.com/docker-library/docs/tree/master/orientdb) ([history](https://github.com/docker-library/docs/commits/master/orientdb))
 
 # What is OrientDB?
 
@@ -81,28 +127,12 @@ $ docker run -d --name orientdb -p 2424:2424 -p 2480:2480 \
     orientdb /orientdb/bin/server.sh -Xmx8g
 ```
 
-# Supported Docker versions
+# License
 
-This image is officially supported on Docker version 1.12.5.
+View [license information](https://github.com/orientechnologies/orientdb/blob/master/license.txt) for the software contained in this image.
 
-Support for older versions (down to 1.6) is provided on a best-effort basis.
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `orientdb/` directory](https://github.com/docker-library/repo-info/tree/master/repos/orientdb).
 
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/orientechnologies/orientdb-docker/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/orientechnologies/orientdb-docker/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`orientdb/` directory](https://github.com/docker-library/docs/tree/master/orientdb) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

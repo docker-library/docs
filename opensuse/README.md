@@ -1,13 +1,55 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "opensuse/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "opensuse/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
+# **DEPRECATION NOTICE**
+
+These images were removed in favor of the [`opensuse/leap`](https://hub.docker.com/r/opensuse/leap) and [`opensuse/tumbleweed`](https://hub.docker.com/r/opensuse/tumbleweed) images provided and maintained by the [openSUSE Project](https://www.opensuse.org/) release team.
+
+An archive for images of unsupported versions can be found at [`opensuse/archive`](https://hub.docker.com/r/opensuse/archive).
+
+# Quick reference
+
+-	**Maintained by**:  
+	[the SUSE containers team](https://github.com/openSUSE/docker-containers-build)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
--	[`42.2`, `leap`, `latest` (*docker/Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/b61d3d4383a1b3553ffeb27a13d6c487e0684e1d/docker/Dockerfile)
--	[`42.1` (*docker/Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/cd6bdb1aeb527499387c4153c58aa05e68bba428/docker/Dockerfile)
--	[`13.2`, `harlequin` (*docker/Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/1c1bf2b38c4757f5d1e8c4cdefb4fdc0104ea7cc/docker/Dockerfile)
--	[`tumbleweed` (*docker/Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/512ffef9e22be7f5069352574053abd9836ca742/docker/Dockerfile)
+**No supported tags**
 
-For more information about this image and its history, please see [the relevant manifest file (`library/opensuse`)](https://github.com/docker-library/official-images/blob/master/library/opensuse). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fopensuse).
+# Quick reference (cont.)
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/opensuse/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/opensuse/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+-	**Where to file issues**:  
+	[https://github.com/openSUSE/docker-containers-build/issues](https://github.com/openSUSE/docker-containers-build/issues)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	**No supported architectures**
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/opensuse/` directory](https://github.com/docker-library/repo-info/blob/master/repos/opensuse) ([history](https://github.com/docker-library/repo-info/commits/master/repos/opensuse))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images repo's `library/opensuse` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fopensuse)  
+	[official-images repo's `library/opensuse` file](https://github.com/docker-library/official-images/blob/master/library/opensuse) ([history](https://github.com/docker-library/official-images/commits/master/library/opensuse))
+
+-	**Source of this description**:  
+	[docs repo's `opensuse/` directory](https://github.com/docker-library/docs/tree/master/opensuse) ([history](https://github.com/docker-library/docs/commits/master/opensuse))
 
 # openSUSE
 
@@ -32,28 +74,12 @@ However the following repositories are already part of the image:
 -	Non-OSS
 -	Non-OSS Updates
 
-# Supported Docker versions
+# License
 
-This image is officially supported on Docker version 1.12.5.
+View the [license information](https://en.opensuse.org/openSUSE:License) for the software contained in this image. Please note that individual packages installed may have their own licenses, which you also must follow. License information is available through the built-in package manager.
 
-Support for older versions (down to 1.6) is provided on a best-effort basis.
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `opensuse/` directory](https://github.com/docker-library/repo-info/tree/master/repos/opensuse).
 
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/openSUSE/docker-containers-build/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/openSUSE/docker-containers-build/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`opensuse/` directory](https://github.com/docker-library/docs/tree/master/opensuse) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

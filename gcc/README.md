@@ -1,12 +1,52 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "gcc/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "gcc/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
+# Quick reference
+
+-	**Maintained by**:  
+	[the Docker Community](https://github.com/docker-library/gcc)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
--	[`4.9.4`, `4.9`, `4` (*4.9/Dockerfile*)](https://github.com/docker-library/gcc/blob/8c7687860cdd4ef9227c249ca4587984e2636a55/4.9/Dockerfile)
--	[`5.4.0`, `5.4`, `5` (*5/Dockerfile*)](https://github.com/docker-library/gcc/blob/8c7687860cdd4ef9227c249ca4587984e2636a55/5/Dockerfile)
--	[`6.2.0`, `6.2`, `6`, `latest` (*6/Dockerfile*)](https://github.com/docker-library/gcc/blob/8c7687860cdd4ef9227c249ca4587984e2636a55/6/Dockerfile)
+-	[`11.1.0`, `11.1`, `11`, `latest`, `11.1.0-bullseye`, `11.1-bullseye`, `11-bullseye`, `bullseye`](https://github.com/docker-library/gcc/blob/a5937a0b39e55c174007c2b9c2f363cdd2142818/11/Dockerfile)
+-	[`10.3.0`, `10.3`, `10`, `10.3.0-buster`, `10.3-buster`, `10-buster`](https://github.com/docker-library/gcc/blob/a5937a0b39e55c174007c2b9c2f363cdd2142818/10/Dockerfile)
+-	[`9.4.0`, `9.4`, `9`, `9.4.0-buster`, `9.4-buster`, `9-buster`](https://github.com/docker-library/gcc/blob/2c4cae395157000ce7b0f89ea47268f66f320bb1/9/Dockerfile)
+-	[`8.5.0`, `8.5`, `8`, `8.5.0-buster`, `8.5-buster`, `8-buster`](https://github.com/docker-library/gcc/blob/93a66921c867fd54e7672e852a8aec4619fbc6de/8/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/gcc`)](https://github.com/docker-library/official-images/blob/master/library/gcc). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fgcc).
+# Quick reference (cont.)
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/gcc/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/gcc/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+-	**Where to file issues**:  
+	[https://github.com/docker-library/gcc/issues](https://github.com/docker-library/gcc/issues)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/gcc/), [`arm32v5`](https://hub.docker.com/r/arm32v5/gcc/), [`arm32v7`](https://hub.docker.com/r/arm32v7/gcc/), [`arm64v8`](https://hub.docker.com/r/arm64v8/gcc/), [`ppc64le`](https://hub.docker.com/r/ppc64le/gcc/), [`s390x`](https://hub.docker.com/r/s390x/gcc/)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/gcc/` directory](https://github.com/docker-library/repo-info/blob/master/repos/gcc) ([history](https://github.com/docker-library/repo-info/commits/master/repos/gcc))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images repo's `library/gcc` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fgcc)  
+	[official-images repo's `library/gcc` file](https://github.com/docker-library/official-images/blob/master/library/gcc) ([history](https://github.com/docker-library/official-images/commits/master/library/gcc))
+
+-	**Source of this description**:  
+	[docs repo's `gcc/` directory](https://github.com/docker-library/docs/tree/master/gcc) ([history](https://github.com/docker-library/docs/commits/master/gcc))
 
 # What is GCC?
 
@@ -55,28 +95,8 @@ $ docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp gcc:4.9 make
 
 View [license information](https://gcc.gnu.org/viewcvs/gcc/trunk/gcc/COPYING3?view=markup) for the software contained in this image.
 
-# Supported Docker versions
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 
-This image is officially supported on Docker version 1.12.5.
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `gcc/` directory](https://github.com/docker-library/repo-info/tree/master/repos/gcc).
 
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/gcc/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/docker-library/gcc/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`gcc/` directory](https://github.com/docker-library/docs/tree/master/gcc) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

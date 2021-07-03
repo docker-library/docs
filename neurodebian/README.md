@@ -1,17 +1,66 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "neurodebian/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "neurodebian/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
+# Quick reference
+
+-	**Maintained by**:  
+	[NeuroDebian](https://github.com/neurodebian/dockerfiles)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
--	[`precise`, `nd12.04` (*dockerfiles/precise/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/383ae2cf242d4737e813d42c402315c3a8cd4569/dockerfiles/precise/Dockerfile)
--	[`trusty`, `nd14.04` (*dockerfiles/trusty/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/383ae2cf242d4737e813d42c402315c3a8cd4569/dockerfiles/trusty/Dockerfile)
--	[`xenial`, `nd16.04` (*dockerfiles/xenial/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/383ae2cf242d4737e813d42c402315c3a8cd4569/dockerfiles/xenial/Dockerfile)
--	[`yakkety`, `nd16.10` (*dockerfiles/yakkety/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/383ae2cf242d4737e813d42c402315c3a8cd4569/dockerfiles/yakkety/Dockerfile)
--	[`wheezy`, `nd70` (*dockerfiles/wheezy/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/383ae2cf242d4737e813d42c402315c3a8cd4569/dockerfiles/wheezy/Dockerfile)
--	[`jessie`, `nd80` (*dockerfiles/jessie/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/383ae2cf242d4737e813d42c402315c3a8cd4569/dockerfiles/jessie/Dockerfile)
--	[`stretch`, `nd90` (*dockerfiles/stretch/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/383ae2cf242d4737e813d42c402315c3a8cd4569/dockerfiles/stretch/Dockerfile)
--	[`sid`, `nd` (*dockerfiles/sid/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/383ae2cf242d4737e813d42c402315c3a8cd4569/dockerfiles/sid/Dockerfile)
+-	[`xenial`, `nd16.04`](https://github.com/neurodebian/dockerfiles/blob/1e23b9e778a6d38877359febf13a013551a045ae/dockerfiles/xenial/Dockerfile)
+-	[`xenial-non-free`, `nd16.04-non-free`](https://github.com/neurodebian/dockerfiles/blob/1e23b9e778a6d38877359febf13a013551a045ae/dockerfiles/xenial-non-free/Dockerfile)
+-	[`bionic`, `nd18.04`](https://github.com/neurodebian/dockerfiles/blob/1e23b9e778a6d38877359febf13a013551a045ae/dockerfiles/bionic/Dockerfile)
+-	[`bionic-non-free`, `nd18.04-non-free`](https://github.com/neurodebian/dockerfiles/blob/1e23b9e778a6d38877359febf13a013551a045ae/dockerfiles/bionic-non-free/Dockerfile)
+-	[`focal`, `nd20.04`](https://github.com/neurodebian/dockerfiles/blob/1e23b9e778a6d38877359febf13a013551a045ae/dockerfiles/focal/Dockerfile)
+-	[`focal-non-free`, `nd20.04-non-free`](https://github.com/neurodebian/dockerfiles/blob/1e23b9e778a6d38877359febf13a013551a045ae/dockerfiles/focal-non-free/Dockerfile)
+-	[`groovy`, `nd20.10`](https://github.com/neurodebian/dockerfiles/blob/1e23b9e778a6d38877359febf13a013551a045ae/dockerfiles/groovy/Dockerfile)
+-	[`groovy-non-free`, `nd20.10-non-free`](https://github.com/neurodebian/dockerfiles/blob/1e23b9e778a6d38877359febf13a013551a045ae/dockerfiles/groovy-non-free/Dockerfile)
+-	[`hirsute`, `nd21.04`](https://github.com/neurodebian/dockerfiles/blob/1e23b9e778a6d38877359febf13a013551a045ae/dockerfiles/hirsute/Dockerfile)
+-	[`hirsute-non-free`, `nd21.04-non-free`](https://github.com/neurodebian/dockerfiles/blob/1e23b9e778a6d38877359febf13a013551a045ae/dockerfiles/hirsute-non-free/Dockerfile)
+-	[`stretch`, `nd90`](https://github.com/neurodebian/dockerfiles/blob/1e23b9e778a6d38877359febf13a013551a045ae/dockerfiles/stretch/Dockerfile)
+-	[`stretch-non-free`, `nd90-non-free`](https://github.com/neurodebian/dockerfiles/blob/1e23b9e778a6d38877359febf13a013551a045ae/dockerfiles/stretch-non-free/Dockerfile)
+-	[`buster`, `nd100`, `latest`](https://github.com/neurodebian/dockerfiles/blob/1e23b9e778a6d38877359febf13a013551a045ae/dockerfiles/buster/Dockerfile)
+-	[`buster-non-free`, `nd100-non-free`, `non-free`](https://github.com/neurodebian/dockerfiles/blob/1e23b9e778a6d38877359febf13a013551a045ae/dockerfiles/buster-non-free/Dockerfile)
+-	[`bullseye`, `nd110`](https://github.com/neurodebian/dockerfiles/blob/1e23b9e778a6d38877359febf13a013551a045ae/dockerfiles/bullseye/Dockerfile)
+-	[`bullseye-non-free`, `nd110-non-free`](https://github.com/neurodebian/dockerfiles/blob/1e23b9e778a6d38877359febf13a013551a045ae/dockerfiles/bullseye-non-free/Dockerfile)
+-	[`sid`, `nd`](https://github.com/neurodebian/dockerfiles/blob/1e23b9e778a6d38877359febf13a013551a045ae/dockerfiles/sid/Dockerfile)
+-	[`sid-non-free`, `nd-non-free`](https://github.com/neurodebian/dockerfiles/blob/1e23b9e778a6d38877359febf13a013551a045ae/dockerfiles/sid-non-free/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/neurodebian`)](https://github.com/docker-library/official-images/blob/master/library/neurodebian). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fneurodebian).
+# Quick reference (cont.)
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/neurodebian/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/neurodebian/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+-	**Where to file issues**:  
+	[https://github.com/neurodebian/dockerfiles/issues](https://github.com/neurodebian/dockerfiles/issues)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/neurodebian/)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/neurodebian/` directory](https://github.com/docker-library/repo-info/blob/master/repos/neurodebian) ([history](https://github.com/docker-library/repo-info/commits/master/repos/neurodebian))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images repo's `library/neurodebian` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fneurodebian)  
+	[official-images repo's `library/neurodebian` file](https://github.com/docker-library/official-images/blob/master/library/neurodebian) ([history](https://github.com/docker-library/official-images/commits/master/library/neurodebian))
+
+-	**Source of this description**:  
+	[docs repo's `neurodebian/` directory](https://github.com/docker-library/docs/tree/master/neurodebian) ([history](https://github.com/docker-library/docs/commits/master/neurodebian))
 
 # What is NeuroDebian?
 
@@ -34,34 +83,20 @@ The `neurodebian:latest` tag will always point the Neurodebian-enabled latest st
 NeuroDebian APT file is installed under `/etc/apt/sources.list.d/neurodebian.sources.list` and currently enables only `main` (DFSG-compliant) area of the archive:
 
 ```console
-$ docker run neurodebian:latest cat /etc/apt/sources.list.d/neurodebian.sources.list
+$ docker run neurodebian cat /etc/apt/sources.list.d/neurodebian.sources.list
 deb http://neuro.debian.net/debian wheezy main
 deb http://neuro.debian.net/debian data main
 #deb-src http://neuro.debian.net/debian-devel wheezy main
 ```
 
-# Supported Docker versions
+# License
 
-This image is officially supported on Docker version 1.12.5.
+View [license information](https://www.debian.org/social_contract#guidelines) for the software contained in this image.
 
-Support for older versions (down to 1.6) is provided on a best-effort basis.
+Additionally, `-nonfree` flavors of the images enable access to materials which are not fully DFSG-compliant, and might have restrictions (e.g. non-commercial) and/or lack original sources.
 
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 
-# User Feedback
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `neurodebian/` directory](https://github.com/docker-library/repo-info/tree/master/repos/neurodebian).
 
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/neurodebian/dockerfiles/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/neurodebian/dockerfiles/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`neurodebian/` directory](https://github.com/docker-library/docs/tree/master/neurodebian) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

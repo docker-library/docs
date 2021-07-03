@@ -1,10 +1,51 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "consul/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "consul/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
+# Quick reference
+
+-	**Maintained by**:  
+	[HashiCorp](https://github.com/hashicorp/docker-consul)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `0.7.1` (*0.X/Dockerfile*)](https://github.com/hashicorp/docker-consul/blob/2c2873f9d619220d1eef0bc46ec78443f55a10b5/0.X/Dockerfile)
+-	[`1.10.0`, `1.10`, `latest`](https://github.com/hashicorp/docker-consul/blob/75971b9b493d8ad1ed2a7d8892a1dace2b54f848/0.X/Dockerfile)
+-	[`1.9.7`, `1.9`](https://github.com/hashicorp/docker-consul/blob/50cd4070084984b3237104bd9494ae45809fd475/0.X/Dockerfile)
+-	[`1.8.13`, `1.8`](https://github.com/hashicorp/docker-consul/blob/8e034a419d073ddb09175efcff2d720f7a7bdcec/0.X/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/consul`)](https://github.com/docker-library/official-images/blob/master/library/consul). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fconsul).
+# Quick reference (cont.)
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/consul/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/consul/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+-	**Where to file issues**:  
+	[https://github.com/hashicorp/docker-consul/issues](https://github.com/hashicorp/docker-consul/issues)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/consul/), [`arm32v6`](https://hub.docker.com/r/arm32v6/consul/), [`arm64v8`](https://hub.docker.com/r/arm64v8/consul/), [`i386`](https://hub.docker.com/r/i386/consul/)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/consul/` directory](https://github.com/docker-library/repo-info/blob/master/repos/consul) ([history](https://github.com/docker-library/repo-info/commits/master/repos/consul))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images repo's `library/consul` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fconsul)  
+	[official-images repo's `library/consul` file](https://github.com/docker-library/official-images/blob/master/library/consul) ([history](https://github.com/docker-library/official-images/commits/master/library/consul))
+
+-	**Source of this description**:  
+	[docs repo's `consul/` directory](https://github.com/docker-library/docs/tree/master/consul) ([history](https://github.com/docker-library/docs/commits/master/consul))
 
 # Consul
 
@@ -13,11 +54,11 @@ Consul is a distributed, highly-available, and multi-datacenter aware tool for s
 -	[Consul documentation](https://www.consul.io/)
 -	[Consul on GitHub](https://github.com/hashicorp/consul)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/27b03f6f9076e05839961530006185998660f321/consul/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/8adb88e1e328c244711742f65319ed4064cff9a2/consul/logo.svg?sanitize=true)
 
 # Consul and Docker
 
-Consul has several moving parts so we'll start with a brief introduction to Consul's architecture and then detail how Consul interacts with Docker. Please see the [Consul Architecture](https://www.consul.io/docs/internals/architecture.html) guide for more detail on all these concepts.
+Consul has several moving parts so we'll start with a brief introduction to Consul's architecture and then detail how Consul interacts with Docker. Please see the [Consul Architecture](https://www.consul.io/docs/architecture) guide for more detail on all these concepts.
 
 Each host in a Consul cluster runs the Consul agent, a long running daemon that can be started in client or server mode. Each cluster has at least 1 agent in server mode, and usually 3 or 5 for high availability. The server agents participate in a [consensus protocol](https://www.consul.io/docs/internals/consensus.html), maintain a centralized view of the cluster's state, and respond to queries from other agents in the cluster. The rest of the agents in client mode participate in a [gossip protocol](https://www.consul.io/docs/internals/gossip.html) to discover other agents and check them for failures, and they forward queries about the cluster to the server agents.
 
@@ -35,7 +76,7 @@ Consul always runs under [dumb-init](https://github.com/Yelp/dumb-init), which h
 
 Running the Consul container with no arguments will give you a Consul server in [development mode](https://www.consul.io/docs/agent/options.html#_dev). The provided entry point script will also look for Consul subcommands and run `consul` as the correct user and with that subcommand. For example, you can execute `docker run consul members` and it will run the `consul members` command inside the container. The entry point also adds some special configuration options as detailed in the sections below when running the `agent` subcommand. Any other command gets `exec`-ed inside the container under `dumb-init`.
 
-The container exposes `VOLUME /consul/data`, which is a path were Consul will place its persisted state. This isn't used in any way when running in development mode. For client agents, this stores some information about the cluster and the client's health checks in case the container is restarted. For server agents, this stores the client information plus snapshots and data related to the consensus algorithm and other state like Consul's key/value store and catalog. For servers it is highly desirable to keep this volume's data around when restarting containers to recover from outage scenarios. If this is bind mounted then ownership will be changed to the consul user when the container starts.
+The container exposes `VOLUME /consul/data`, which is a path where Consul will place its persisted state. This isn't used in any way when running in development mode. For client agents, this stores some information about the cluster and the client's health checks in case the container is restarted. For server agents, this stores the client information plus snapshots and data related to the consensus algorithm and other state like Consul's key/value store and catalog. For servers it is highly desirable to keep this volume's data around when restarting containers to recover from outage scenarios. If this is bind mounted then ownership will be changed to the consul user when the container starts.
 
 The container has a Consul configuration directory set up at `/consul/config` and the agent will load any configuration files placed here by binding a volume or by composing a new image and adding files. Alternatively, configuration can be added by passing the configuration JSON via environment variable `CONSUL_LOCAL_CONFIG`. If this is bind mounted then ownership will be changed to the consul user when the container starts.
 
@@ -46,15 +87,15 @@ The entry point also includes a small utility to look up a client or bind addres
 ## Running Consul for Development
 
 ```console
-$ docker run -d --name=dev-consul consul
+$ docker run -d --name=dev-consul -e CONSUL_BIND_INTERFACE=eth0 consul
 ```
 
 This runs a completely in-memory Consul server agent with default bridge networking and no services exposed on the host, which is useful for development but should not be used in production. For example, if that server is running at internal address 172.17.0.2, you can run a three node cluster for development by starting up two more instances and telling them to join the first node.
 
 ```console
-$ docker run -d consul agent -dev -join=172.17.0.2
+$ docker run -d -e CONSUL_BIND_INTERFACE=eth0 consul agent -dev -join=172.17.0.2
 ... server 2 starts
-$ docker run -d consul agent -dev -join=172.17.0.2
+$ docker run -d -e CONSUL_BIND_INTERFACE=eth0 consul agent -dev -join=172.17.0.2
 ... server 3 starts
 ```
 
@@ -169,15 +210,15 @@ By default, Consul's DNS server is exposed on port 8600. Because this is cumbers
 Here's an example:
 
 ```console
-$ docker run -d --net=host -e 'CONSUL_ALLOW_PRIVILEGED_PORTS=' consul -dns-port=53
+$ docker run -d --net=host -e 'CONSUL_ALLOW_PRIVILEGED_PORTS=' consul -dns-port=53 -recursor=8.8.8.8
 ```
 
-If you are binding Consul's client interfaces to the host's loopback address, then you should be able to configure your host's `resolv.conf` to route DNS requests to Consul by including "127.0.0.1" as the primary DNS server. This would expose Consul's DNS to all applications running on the host, but due to Docker's built-in DNS server, you can't point to this directly from inside your containers; Docker will issue an error message if you attempt to do this. You must configure Consul to listen on a non-localhost address that is reachable from within other containers.
+This example also includes a recursor configuration that uses Google's DNS servers for non-Consul lookups. You may want to adjust this based on your particular DNS configuration. If you are binding Consul's client interfaces to the host's loopback address, then you should be able to configure your host's `resolv.conf` to route DNS requests to Consul by including "127.0.0.1" as the primary DNS server. This would expose Consul's DNS to all applications running on the host, but due to Docker's built-in DNS server, you can't point to this directly from inside your containers; Docker will issue an error message if you attempt to do this. You must configure Consul to listen on a non-localhost address that is reachable from within other containers.
 
 Once you bind Consul's client interfaces to the bridge or other network, you can use the `--dns` option in your *other containers* in order for them to use Consul's DNS server, mapped to port 53. Here's an example:
 
 ```console
-$ docker run -d --net=host -e 'CONSUL_ALLOW_PRIVILEGED_PORTS=' consul agent -dns-port=53 -bind=<bridge ip>
+$ docker run -d --net=host -e 'CONSUL_ALLOW_PRIVILEGED_PORTS=' consul agent -dns-port=53 -recursor=8.8.8.8 -bind=<bridge ip>
 ```
 
 Now start another container and point it at Consul's DNS, using the bridge address of the host:
@@ -208,28 +249,8 @@ Consul has the ability to execute health checks inside containers. If the Docker
 
 View [license information](https://raw.githubusercontent.com/hashicorp/consul/master/LICENSE) for the software contained in this image.
 
-# Supported Docker versions
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 
-This image is officially supported on Docker version 1.12.5.
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `consul/` directory](https://github.com/docker-library/repo-info/tree/master/repos/consul).
 
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/hashicorp/docker-consul/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/hashicorp/docker-consul/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`consul/` directory](https://github.com/docker-library/docs/tree/master/consul) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

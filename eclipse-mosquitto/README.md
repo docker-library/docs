@@ -1,17 +1,59 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "eclipse-mosquitto/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "eclipse-mosquitto/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
+# Quick reference
+
+-	**Maintained by**:  
+	[the Eclipse Foundation](https://github.com/eclipse/mosquitto)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
--	[`1.4.8`, `latest` (*docker/1.4.8/Dockerfile*)](https://github.com/eclipse/mosquitto/blob/5487395fb67ad2e2b6dac1ff67bd0ac289383f09/docker/1.4.8/Dockerfile)
--	[`1.4.4` (*docker/1.4.4/Dockerfile*)](https://github.com/eclipse/mosquitto/blob/5487395fb67ad2e2b6dac1ff67bd0ac289383f09/docker/1.4.4/Dockerfile)
+-	[`2.0.11`, `2.0`, `2`, `latest`](https://github.com/eclipse/mosquitto/blob/5217863b8b210f22df81c6b95d1eb89ed4af9b50/docker/2.0/Dockerfile)
+-	[`2.0.11-openssl`, `2.0-openssl`, `2-openssl`, `openssl`](https://github.com/eclipse/mosquitto/blob/5217863b8b210f22df81c6b95d1eb89ed4af9b50/docker/2.0-openssl/Dockerfile)
+-	[`1.6.15`, `1.6`](https://github.com/eclipse/mosquitto/blob/5217863b8b210f22df81c6b95d1eb89ed4af9b50/docker/1.6/Dockerfile)
+-	[`1.6.15-openssl`, `1.6-openssl`](https://github.com/eclipse/mosquitto/blob/5217863b8b210f22df81c6b95d1eb89ed4af9b50/docker/1.6-openssl/Dockerfile)
+-	[`1.5.11`, `1.5`](https://github.com/eclipse/mosquitto/blob/5217863b8b210f22df81c6b95d1eb89ed4af9b50/docker/1.5/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/eclipse-mosquitto`)](https://github.com/docker-library/official-images/blob/master/library/eclipse-mosquitto). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Feclipse-mosquitto).
+# Quick reference (cont.)
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/eclipse-mosquitto/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/eclipse-mosquitto/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+-	**Where to file issues**:  
+	[https://github.com/eclipse/mosquitto/issues](https://github.com/eclipse/mosquitto/issues)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/eclipse-mosquitto/), [`arm32v6`](https://hub.docker.com/r/arm32v6/eclipse-mosquitto/), [`arm64v8`](https://hub.docker.com/r/arm64v8/eclipse-mosquitto/), [`i386`](https://hub.docker.com/r/i386/eclipse-mosquitto/), [`ppc64le`](https://hub.docker.com/r/ppc64le/eclipse-mosquitto/), [`s390x`](https://hub.docker.com/r/s390x/eclipse-mosquitto/)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/eclipse-mosquitto/` directory](https://github.com/docker-library/repo-info/blob/master/repos/eclipse-mosquitto) ([history](https://github.com/docker-library/repo-info/commits/master/repos/eclipse-mosquitto))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images repo's `library/eclipse-mosquitto` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Feclipse-mosquitto)  
+	[official-images repo's `library/eclipse-mosquitto` file](https://github.com/docker-library/official-images/blob/master/library/eclipse-mosquitto) ([history](https://github.com/docker-library/official-images/commits/master/library/eclipse-mosquitto))
+
+-	**Source of this description**:  
+	[docs repo's `eclipse-mosquitto/` directory](https://github.com/docker-library/docs/tree/master/eclipse-mosquitto) ([history](https://github.com/docker-library/docs/commits/master/eclipse-mosquitto))
 
 # What is Eclipse Mosquitto?
 
-Eclipse Mosquitto is an open source implementation of a server for version 3.1 and 3.1.1 of the MQTT protocol. Main homepage: http://mosquitto.org/
+Eclipse Mosquitto is an open source implementation of a server for versions 5, 3.1.1, and 3.1 of the MQTT protocol. Main homepages: http://mosquitto.org/
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/543ed10ed132af12c3662c7a04010d3f36538094/eclipse-mosquitto/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/757578e3a44e5460a8a11d32a81776f8b74231a9/eclipse-mosquitto/logo.png)
 
 # How to use this image
 
@@ -25,9 +67,11 @@ Three directories have been created in the image to be used for configuration, p
 
 ## Configuration
 
-When running the image, the default configuration values are used. To use a custom configuration file, mount a **local** configuration file to `/mosquitto/conf/mosquitto.conf`
+When running the image, the default configuration values are used. To use a custom configuration file, mount a **local** configuration file to `/mosquitto/config/mosquitto.conf`
 
-	docker run -it -p 1883:1883 -p 9001:9001 -v mosquitto.conf:/mosquitto/data/mosquitto.conf eclipse-mosquitto
+```console
+$ docker run -it -p 1883:1883 -p 9001:9001 -v mosquitto.conf:/mosquitto/config/mosquitto.conf eclipse-mosquitto
+```
 
 Configuration can be changed to:
 
@@ -46,7 +90,9 @@ i.e. add the following to `mosquitto.conf`:
 
 Run a container using the new image:
 
-	docker run -it -p 1883:1883 -p 9001:9001 -v mosquitto.conf:/mosquitto/data/mosquitto.conf -v /mosquitto/data -v /mosquitto/log eclipse-mosquitto
+```console
+$ docker run -it -p 1883:1883 -p 9001:9001 -v mosquitto.conf:/mosquitto/config/mosquitto.conf -v /mosquitto/data -v /mosquitto/log eclipse-mosquitto
+```
 
 **Note**: if the mosquitto configuration (mosquitto.conf) was modified to use non-default ports, the docker run command will need to be updated to expose the ports that have been configured.
 
@@ -54,28 +100,8 @@ Run a container using the new image:
 
 Eclipse Mosquitto is released under the [EPL](https://www.eclipse.org/legal/epl-v10.html)/[EDL](https://eclipse.org/org/documents/edl-v10.php)
 
-# Supported Docker versions
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 
-This image is officially supported on Docker version 1.12.5.
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `eclipse-mosquitto/` directory](https://github.com/docker-library/repo-info/tree/master/repos/eclipse-mosquitto).
 
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/eclipse/mosquitto/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/eclipse/mosquitto/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`eclipse-mosquitto/` directory](https://github.com/docker-library/docs/tree/master/eclipse-mosquitto) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

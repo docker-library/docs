@@ -1,11 +1,50 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "backdrop/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "backdrop/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
+# Quick reference
+
+-	**Maintained by**:  
+	[Backdrop Ops](https://github.com/backdrop-ops/backdrop-docker)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
--	[`1.5.2`, `1.5`, `1`, `1.5.0-apache`, `1.5-apache`, `1-apache`, `apache`, `latest` (*1/apache/Dockerfile*)](https://github.com/backdrop-ops/backdrop-docker/blob/a4f504374c3186442ed811b54996e048cb2c11f1/1/apache/Dockerfile)
--	[`1.5.2-fpm`, `1.5-fpm`, `1-fpm`, `fpm` (*1/fpm/Dockerfile*)](https://github.com/backdrop-ops/backdrop-docker/blob/a4f504374c3186442ed811b54996e048cb2c11f1/1/fpm/Dockerfile)
+-	[`1.17.3`, `1.17`, `1`, `1.17.3-apache`, `1.17-apache`, `1-apache`, `apache`, `latest`](https://github.com/backdrop-ops/backdrop-docker/blob/b760ba970a67f3dcdc975ed8b77f915895184577/1/apache/Dockerfile)
+-	[`1.17.3-fpm`, `1.17-fpm`, `1-fpm`, `fpm`](https://github.com/backdrop-ops/backdrop-docker/blob/b760ba970a67f3dcdc975ed8b77f915895184577/1/fpm/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/backdrop`)](https://github.com/docker-library/official-images/blob/master/library/backdrop). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fbackdrop).
+# Quick reference (cont.)
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/backdrop/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/backdrop/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+-	**Where to file issues**:  
+	[https://github.com/backdrop-ops/backdrop-docker/issues](https://github.com/backdrop-ops/backdrop-docker/issues)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/backdrop/), [`arm64v8`](https://hub.docker.com/r/arm64v8/backdrop/)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/backdrop/` directory](https://github.com/docker-library/repo-info/blob/master/repos/backdrop) ([history](https://github.com/docker-library/repo-info/commits/master/repos/backdrop))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images repo's `library/backdrop` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fbackdrop)  
+	[official-images repo's `library/backdrop` file](https://github.com/docker-library/official-images/blob/master/library/backdrop) ([history](https://github.com/docker-library/official-images/commits/master/library/backdrop))
+
+-	**Source of this description**:  
+	[docs repo's `backdrop/` directory](https://github.com/docker-library/docs/tree/master/backdrop) ([history](https://github.com/docker-library/docs/commits/master/backdrop))
 
 # What is Backdrop CMS?
 
@@ -86,34 +125,13 @@ If you need additional PHP extensions, you'll need to create your own image `FRO
 The following Docker Hub features can help with the task of keeping your dependent images up-to-date:
 
 -	[Automated Builds](https://docs.docker.com/docker-hub/builds/) let Docker Hub automatically build your Dockerfile each time you push changes to it.
--	[Repository Links](https://docs.docker.com/docker-hub/builds/#repository-links) can ensure that your image is also rebuilt any time `backdrop` is updated.
 
 # License
 
 View [license information](https://backdropcms.org/license) for the software contained in this image.
 
-# Supported Docker versions
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 
-This image is officially supported on Docker version 1.12.5.
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `backdrop/` directory](https://github.com/docker-library/repo-info/tree/master/repos/backdrop).
 
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/backdrop-ops/backdrop-docker/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/backdrop-ops/backdrop-docker/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`backdrop/` directory](https://github.com/docker-library/docs/tree/master/backdrop) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

@@ -1,10 +1,51 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "mageia/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "mageia/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
+# Quick reference
+
+-	**Maintained by**:  
+	[Mageia Developers](https://github.com/juanluisbaptiste/docker-brew-mageia)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `5` (*5/Dockerfile*)](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/85a4253a175cde455b9926b4a83fb8d5ceea096f/5/Dockerfile)
+-	[`8`, `latest`](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/067e6df19c568e101a42dc71b77f6a2de5992c70/dist/8/x86_64/Dockerfile)
+-	[`7`](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/067e6df19c568e101a42dc71b77f6a2de5992c70/dist/7/x86_64/Dockerfile)
+-	[`cauldron`](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/067e6df19c568e101a42dc71b77f6a2de5992c70/dist/cauldron/x86_64/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/mageia`)](https://github.com/docker-library/official-images/blob/master/library/mageia). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmageia).
+# Quick reference (cont.)
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/mageia/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/mageia/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+-	**Where to file issues**:  
+	[https://github.com/juanluisbaptiste/docker-brew-mageia/issues](https://github.com/juanluisbaptiste/docker-brew-mageia/issues)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/mageia/), [`arm32v7`](https://hub.docker.com/r/arm32v7/mageia/), [`arm64v8`](https://hub.docker.com/r/arm64v8/mageia/)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/mageia/` directory](https://github.com/docker-library/repo-info/blob/master/repos/mageia) ([history](https://github.com/docker-library/repo-info/commits/master/repos/mageia))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images repo's `library/mageia` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fmageia)  
+	[official-images repo's `library/mageia` file](https://github.com/docker-library/official-images/blob/master/library/mageia) ([history](https://github.com/docker-library/official-images/commits/master/library/mageia))
+
+-	**Source of this description**:  
+	[docs repo's `mageia/` directory](https://github.com/docker-library/docs/tree/master/mageia) ([history](https://github.com/docker-library/docs/commits/master/mageia))
 
 # What is Mageia?
 
@@ -27,42 +68,27 @@ To date, Mageia:
 ## Create a Dockerfile for your container
 
 ```dockerfile
-FROM mageia:5
+FROM mageia:6
 MAINTAINER  "Foo Bar" <foo@bar.com>
 CMD [ "bash" ]
 ```
 
 ## Installed packages
 
-All images install the following packages:
+The images include the following packages:
 
 -	basesystem-minimal
--	urpmi
+-	dnf (Mageia 6+)
 -	locales
 -	locales-en
+-	urpmi
 
-# Supported Docker versions
+# License
 
-This image is officially supported on Docker version 1.12.5.
+View [license information](https://www.mageia.org/en/about/license/) for the software contained in this image.
 
-Support for older versions (down to 1.6) is provided on a best-effort basis.
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `mageia/` directory](https://github.com/docker-library/repo-info/tree/master/repos/mageia).
 
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/juanluisbaptiste/docker-brew-mageia/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/juanluisbaptiste/docker-brew-mageia/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`mageia/` directory](https://github.com/docker-library/docs/tree/master/mageia) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

@@ -9,7 +9,7 @@ Known is a social publishing platform. Publish on your own site, reach your audi
 # How to use this image
 
 ```bash
-docker run --link some-mysql:db -d known
+docker run --link some-mysql:db -d %%IMAGE%%
 ```
 
 Now you can get access to fpm running on port 9000 inside the container. If you want to access it from the Internets, we recommend using a reverse proxy in front. You can find more information on that on the [docker-compose](#docker-compose) section.

@@ -9,7 +9,7 @@
 When OrientDB starts it asks for the root password. The root user is able to manage the OrientDB server: create new databases, manage users and roles. The root password can be passed to the container using an environment property:
 
 ```console
-$ docker run -d --name orientdb -p 2424:2424 -p 2480:2480 -e ORIENTDB_ROOT_PASSWORD=rootpwd orientdb
+$ docker run -d --name orientdb -p 2424:2424 -p 2480:2480 -e ORIENTDB_ROOT_PASSWORD=rootpwd %%IMAGE%%
 ```
 
 The [Studio](http://orientdb.com/docs/last/Studio-Home-page.html) is accessible to http://<docker-host>:2480 (e.g.: http://localhost:2480)
@@ -26,7 +26,7 @@ $ docker run -d --name orientdb -p 2424:2424 -p 2480:2480 \
     -v <databases_path>:/orientdb/databases \
     -v <backup_path>:/orientdb/backup \
     -e ORIENTDB_ROOT_PASSWORD=rootpwd \
-    orientdb
+    %%IMAGE%%
 ```
 
 **NOTE**: don't provide an **empty** config folder as volume, because OrientDB will startup with a very minimal configuration.
@@ -36,13 +36,13 @@ $ docker run -d --name orientdb -p 2424:2424 -p 2480:2480 \
 The OrientDB image contains a full fledge installation, so it is possible to run the [console](http://orientdb.com/docs/last/Console-Commands.html)
 
 ```console
-$ docker run --rm -it orientdb /orientdb/bin/console.sh
+$ docker run --rm -it %%IMAGE%% /orientdb/bin/console.sh
 ```
 
 or even the etl
 
 ```console
-$ docker run  --rm -it -v <config_path>:/orientdb/config orientdb /orientdb/bin/oetl.sh ../config/oetl-config.json
+$ docker run  --rm -it -v <config_path>:/orientdb/config %%IMAGE%% /orientdb/bin/oetl.sh ../config/oetl-config.json
 ```
 
 ### Override configuration parameters
@@ -56,7 +56,7 @@ $ docker run -d --name orientdb -p 2424:2424 -p 2480:2480 \
     -v <backup_path>:/orientdb/backup \
     -e ORIENTDB_ROOT_PASSWORD=rootpwd \
     -e ORIENTDB_NODE_NAME=odb1 \
-    orientdb /orientdb/bin/server.sh  -Ddistributed=true
+    %%IMAGE%% /orientdb/bin/server.sh  -Ddistributed=true
 ```
 
 For further configuration options please refer to the [Configuration](http://orientdb.com/docs/last/Configuration.html) section of the online documentation.
@@ -68,5 +68,5 @@ Environment parameters such as heap size could be passed via command line:
 ```console
 $ docker run -d --name orientdb -p 2424:2424 -p 2480:2480 \
     -e ORIENTDB_ROOT_PASSWORD=rootpwd \
-    orientdb /orientdb/bin/server.sh -Xmx8g
+    %%IMAGE%% /orientdb/bin/server.sh -Xmx8g
 ```

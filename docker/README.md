@@ -1,21 +1,66 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "docker/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "docker/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
+# Quick reference
+
+-	**Maintained by**:  
+	[Tianon (of the Docker Project)](https://github.com/docker-library/docker)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
--	[`1.13.0-rc3`, `1.13-rc`, `rc` (*1.13-rc/Dockerfile*)](https://github.com/docker-library/docker/blob/e3d26cada8093a8a6814e7b341f03298d1b276fb/1.13-rc/Dockerfile)
--	[`1.13.0-rc3-dind`, `1.13-rc-dind`, `rc-dind` (*1.13-rc/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/c1af76ec4c97ff24dcf6675b55b12105216dc711/1.13-rc/dind/Dockerfile)
--	[`1.13.0-rc3-git`, `1.13-rc-git`, `rc-git` (*1.13-rc/git/Dockerfile*)](https://github.com/docker-library/docker/blob/737f83092a47b012d09a0cbf0ed72759550301cb/1.13-rc/git/Dockerfile)
--	[`1.12.4`, `1.12`, `1`, `latest` (*1.12/Dockerfile*)](https://github.com/docker-library/docker/blob/1c73734649299a17d1472fb206b992a544bd1777/1.12/Dockerfile)
--	[`1.12.4-dind`, `1.12-dind`, `1-dind`, `dind` (*1.12/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/c1af76ec4c97ff24dcf6675b55b12105216dc711/1.12/dind/Dockerfile)
--	[`1.12.4-git`, `1.12-git`, `1-git`, `git` (*1.12/git/Dockerfile*)](https://github.com/docker-library/docker/blob/746d9052066ccfbcb98df7d9ae71cf05d8877419/1.12/git/Dockerfile)
--	[`1.12.4-experimental`, `1.12-experimental`, `1-experimental`, `experimental` (*1.12/experimental/Dockerfile*)](https://github.com/docker-library/docker/blob/1c73734649299a17d1472fb206b992a544bd1777/1.12/experimental/Dockerfile)
--	[`1.12.4-experimental-dind`, `1.12-experimental-dind`, `1-experimental-dind`, `experimental-dind` (*1.12/experimental/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/c1af76ec4c97ff24dcf6675b55b12105216dc711/1.12/experimental/dind/Dockerfile)
--	[`1.12.4-experimental-git`, `1.12-experimental-git`, `1-experimental-git`, `experimental-git` (*1.12/experimental/git/Dockerfile*)](https://github.com/docker-library/docker/blob/eb714a73e7e3f87705f468c3c6e9f4e316136bf5/1.12/experimental/git/Dockerfile)
--	[`1.11.2`, `1.11` (*1.11/Dockerfile*)](https://github.com/docker-library/docker/blob/0c44c1c6c25a34eb9abe320805e0f89bf5b0ace2/1.11/Dockerfile)
--	[`1.11.2-dind`, `1.11-dind` (*1.11/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/5e30187978ad75d0f2ae5fc6c2a0b668bdf16885/1.11/dind/Dockerfile)
--	[`1.11.2-git`, `1.11-git` (*1.11/git/Dockerfile*)](https://github.com/docker-library/docker/blob/866c3fbd87e8eeed524fdf19ba2d63288ad49cd2/1.11/git/Dockerfile)
+(See ["What's the difference between 'Shared' and 'Simple' tags?" in the FAQ](https://github.com/docker-library/faq#whats-the-difference-between-shared-and-simple-tags).)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/docker`)](https://github.com/docker-library/official-images/blob/master/library/docker). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fdocker).
+## Simple Tags
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/docker/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/docker/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+-	[`20.10.7`, `20.10`, `20`, `latest`](https://github.com/docker-library/docker/blob/279ba9c93e8e26a15171645bd511ea8476c4706e/20.10/Dockerfile)
+-	[`20.10.7-dind`, `20.10-dind`, `20-dind`, `dind`](https://github.com/docker-library/docker/blob/30d7b9bf7663c96fcd888bd75e9aaa547a808a23/20.10/dind/Dockerfile)
+-	[`20.10.7-dind-rootless`, `20.10-dind-rootless`, `20-dind-rootless`, `dind-rootless`](https://github.com/docker-library/docker/blob/279ba9c93e8e26a15171645bd511ea8476c4706e/20.10/dind-rootless/Dockerfile)
+-	[`20.10.7-git`, `20.10-git`, `20-git`, `git`](https://github.com/docker-library/docker/blob/387e351394bfad74bceebf8303c6c8e39c3d4ed4/20.10/git/Dockerfile)
+-	[`20.10.7-windowsservercore-1809`, `20.10-windowsservercore-1809`, `20-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/docker-library/docker/blob/279ba9c93e8e26a15171645bd511ea8476c4706e/20.10/windows/windowsservercore-1809/Dockerfile)
+-	[`19.03.15`, `19.03`, `19`](https://github.com/docker-library/docker/blob/835c371c516ebdf67adc0c76bbfb38bf9d3e586c/19.03/Dockerfile)
+-	[`19.03.15-dind`, `19.03-dind`, `19-dind`](https://github.com/docker-library/docker/blob/f0abe5a51a683c02501fd7ff8384fb17dbbeb946/19.03/dind/Dockerfile)
+-	[`19.03.15-dind-rootless`, `19.03-dind-rootless`, `19-dind-rootless`](https://github.com/docker-library/docker/blob/835c371c516ebdf67adc0c76bbfb38bf9d3e586c/19.03/dind-rootless/Dockerfile)
+-	[`19.03.15-git`, `19.03-git`, `19-git`](https://github.com/docker-library/docker/blob/12d1c2763b54d29137ec448a3e4ad1a9aefae1a0/19.03/git/Dockerfile)
+
+## Shared Tags
+
+-	`20.10.7-windowsservercore`, `20.10-windowsservercore`, `20-windowsservercore`, `windowsservercore`:
+	-	[`20.10.7-windowsservercore-1809`](https://github.com/docker-library/docker/blob/279ba9c93e8e26a15171645bd511ea8476c4706e/20.10/windows/windowsservercore-1809/Dockerfile)
+
+# Quick reference (cont.)
+
+-	**Where to file issues**:  
+	[https://github.com/docker-library/docker/issues](https://github.com/docker-library/docker/issues)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/docker/), [`arm32v6`](https://hub.docker.com/r/arm32v6/docker/), [`arm32v7`](https://hub.docker.com/r/arm32v7/docker/), [`arm64v8`](https://hub.docker.com/r/arm64v8/docker/), [`windows-amd64`](https://hub.docker.com/r/winamd64/docker/)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/docker/` directory](https://github.com/docker-library/repo-info/blob/master/repos/docker) ([history](https://github.com/docker-library/repo-info/commits/master/repos/docker))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images repo's `library/docker` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fdocker)  
+	[official-images repo's `library/docker` file](https://github.com/docker-library/official-images/blob/master/library/docker) ([history](https://github.com/docker-library/official-images/commits/master/library/docker))
+
+-	**Source of this description**:  
+	[docs repo's `docker/` directory](https://github.com/docker-library/docs/tree/master/docker) ([history](https://github.com/docker-library/docs/commits/master/docker))
 
 # What is Docker in Docker?
 
@@ -33,111 +78,214 @@ If you are still convinced that you need Docker-in-Docker and not just access to
 
 # How to use this image
 
-[![asciicast](https://asciinema.org/a/24707.png)](https://asciinema.org/a/24707)
+[![asciicast](https://asciinema.org/a/378669.svg)](https://asciinema.org/a/378669)
+
+## TLS
+
+Starting in 18.09+, the `dind` variants of this image will automatically generate TLS certificates in the directory specified by the `DOCKER_TLS_CERTDIR` environment variable.
+
+**Warning:** in 18.09, this behavior is disabled by default (for compatibility). If you use `--network=host`, shared network namespaces (as in Kubernetes pods), or otherwise have network access to the container (including containers started within the `dind` instance via their gateway interface), this is a potential security issue (which can lead to access to the host system, for example). It is recommended to enable TLS by setting the variable to an appropriate value (`-e DOCKER_TLS_CERTDIR=/certs` or similar). In 19.03+, this behavior is enabled by default.
+
+When enabled, the Docker daemon will be started with `--host=tcp://0.0.0.0:2376 --tlsverify ...` (and when disabled, the Docker daemon will be started with `--host=tcp://0.0.0.0:2375`).
+
+Inside the directory specified by `DOCKER_TLS_CERTDIR`, the entrypoint scripts will create/use three directories:
+
+-	`ca`: the certificate authority files (`cert.pem`, `key.pem`)
+-	`server`: the `dockerd` (daemon) certificate files (`cert.pem`, `ca.pem`, `key.pem`)
+-	`client`: the `docker` (client) certificate files (`cert.pem`, `ca.pem`, `key.pem`; suitable for `DOCKER_CERT_PATH`)
+
+In order to make use of this functionality from a "client" container, at least the `client` subdirectory of the `$DOCKER_TLS_CERTDIR` directory needs to be shared (as illustrated in the following examples).
+
+To disable this image behavior, simply override the container command or entrypoint to run `dockerd` directly (`... docker:dind dockerd ...` or `... --entrypoint dockerd docker:dind ...`).
 
 ## Start a daemon instance
 
-**IMPORTANT:** this image defaults to `--storage-driver=vfs`, which will be very slow and inefficient (but is the only driver which is guaranteed to work regardless of your underlying filesystem). Which driver you should use varies depending on your needs, but a good rule of thumb is that your DinD instance should be using the same driver as your host (which can be seen under `Storage Driver` in the output of `docker info`). See the "Custom daemon flags" section below for how to specify your storage driver.
-
 ```console
-$ docker run --privileged --name some-docker -d docker:1.8-dind
+$ docker run --privileged --name some-docker -d \
+	--network some-network --network-alias docker \
+	-e DOCKER_TLS_CERTDIR=/certs \
+	-v some-docker-certs-ca:/certs/ca \
+	-v some-docker-certs-client:/certs/client \
+	docker:dind
 ```
 
-**Note:** `--privileged` is required for Docker-in-Docker to function properly, but it should be used with care as it provides full access to the host environment, as explained [in the relevant section of the Docker documentation](https://docs.docker.com/reference/run/#runtime-privilege-linux-capabilities-and-lxc-configuration).
-
-This image includes `EXPOSE 2375` (the Docker port), so standard container linking will make it automatically available to the linked containers (as the following examples illustrate).
+**Note:** `--privileged` is required for Docker-in-Docker to function properly, but it should be used with care as it provides full access to the host environment, as explained [in the relevant section of the Docker documentation](https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities).
 
 ## Connect to it from a second container
 
 ```console
-$ docker run --rm --link some-docker:docker docker:1.7 version
-Client version: 1.7.1
-Client API version: 1.19
-Go version (client): go1.4.2
-Git commit (client): 786b29d
-OS/Arch (client): linux/amd64
-Server version: 1.8.1
-Server API version: 1.20
-Go version (server): go1.4.2
-Git commit (server): d12ea79
-OS/Arch (server): linux/amd64
+$ docker run --rm --network some-network \
+	-e DOCKER_TLS_CERTDIR=/certs \
+	-v some-docker-certs-client:/certs/client:ro \
+	docker:latest version
+Client: Docker Engine - Community
+ Version:           18.09.8
+ API version:       1.39
+ Go version:        go1.10.8
+ Git commit:        0dd43dd87f
+ Built:             Wed Jul 17 17:38:58 2019
+ OS/Arch:           linux/amd64
+ Experimental:      false
+
+Server: Docker Engine - Community
+ Engine:
+  Version:          18.09.8
+  API version:      1.39 (minimum version 1.12)
+  Go version:       go1.10.8
+  Git commit:       0dd43dd87f
+  Built:            Wed Jul 17 17:48:49 2019
+  OS/Arch:          linux/amd64
+  Experimental:     false
 ```
 
 ```console
-$ docker run -it --rm --link some-docker:docker docker:1.8 sh
+$ docker run -it --rm --network some-network \
+	-e DOCKER_TLS_CERTDIR=/certs \
+	-v some-docker-certs-client:/certs/client:ro \
+	docker:latest sh
 / # docker version
-Client:
- Version:      1.8.1
- API version:  1.20
- Go version:   go1.4.2
- Git commit:   d12ea79
- Built:        Thu Aug 13 02:49:29 UTC 2015
- OS/Arch:      linux/amd64
+Client: Docker Engine - Community
+ Version:           18.09.8
+ API version:       1.39
+ Go version:        go1.10.8
+ Git commit:        0dd43dd87f
+ Built:             Wed Jul 17 17:38:58 2019
+ OS/Arch:           linux/amd64
+ Experimental:      false
 
-Server:
- Version:      1.8.1
- API version:  1.20
- Go version:   go1.4.2
- Git commit:   d12ea79
- Built:        Thu Aug 13 02:49:29 UTC 2015
- OS/Arch:      linux/amd64
+Server: Docker Engine - Community
+ Engine:
+  Version:          18.09.8
+  API version:      1.39 (minimum version 1.12)
+  Go version:       go1.10.8
+  Git commit:       0dd43dd87f
+  Built:            Wed Jul 17 17:48:49 2019
+  OS/Arch:          linux/amd64
+  Experimental:     false
 ```
 
 ```console
-$ docker run --rm --link some-docker:docker docker info
+$ docker run --rm --network some-network \
+	-e DOCKER_TLS_CERTDIR=/certs \
+	-v some-docker-certs-client:/certs/client:ro \
+	docker:latest info
 Containers: 0
+ Running: 0
+ Paused: 0
+ Stopped: 0
 Images: 0
-Storage Driver: vfs
-Execution Driver: native-0.2
+Server Version: 18.09.8
+Storage Driver: overlay2
+ Backing Filesystem: extfs
+ Supports d_type: true
+ Native Overlay Diff: true
 Logging Driver: json-file
-Kernel Version: 4.0.9-gentoo
-Operating System: Alpine Linux v3.2 (containerized)
-CPUs: 8
-Total Memory: 31.4 GiB
-Name: 4f19ef15a373
-ID: 3GTC:FH6T:4G5U:7NF4:GM77:JGYU:BOKS:XFCY:H3IQ:JDJ5:X73Z:2K2K
+Cgroup Driver: cgroupfs
+Plugins:
+ Volume: local
+ Network: bridge host macvlan null overlay
+ Log: awslogs fluentd gcplogs gelf journald json-file local logentries splunk syslog
+Swarm: inactive
+Runtimes: runc
+Default Runtime: runc
+Init Binary: docker-init
+containerd version: 894b81a4b802e4eb2a91d1ce216b8817763c29fb
+runc version: 425e105d5a03fabd737a126ad93d62a9eeede87f
+init version: fec3683
+Security Options:
+ apparmor
+ seccomp
+  Profile: default
+Kernel Version: 4.19.0-5-amd64
+Operating System: Alpine Linux v3.10 (containerized)
+OSType: linux
+Architecture: x86_64
+CPUs: 12
+Total Memory: 62.79GiB
+Name: e174d61a4a12
+ID: HJXG:3OT7:MGDL:Y2BL:WCYP:CKSP:CGAM:4BLH:NEI4:IURF:4COF:AH6N
+Docker Root Dir: /var/lib/docker
+Debug Mode (client): false
+Debug Mode (server): false
+Registry: https://index.docker.io/v1/
+Labels:
+Experimental: false
+Insecure Registries:
+ 127.0.0.0/8
+Live Restore Enabled: false
+Product License: Community Engine
+
 WARNING: bridge-nf-call-iptables is disabled
 WARNING: bridge-nf-call-ip6tables is disabled
 ```
 
 ```console
-$ docker run --rm --link some-docker:docker docker:git build https://github.com/docker-library/hello-world.git
-Sending build context to Docker daemon 132.1 kB
-Step 0 : FROM scratch
- ---> 
-Step 1 : COPY hello /
- ---> 29bef505052d
-Removing intermediate container f98aab888906
-Step 2 : CMD /hello
- ---> Running in a735b4037032
- ---> 3c2b1350a3c4
-Removing intermediate container a735b4037032
-Successfully built 3c2b1350a3c4
-```
+$ docker run --rm -v /var/run/docker.sock:/var/run/docker.sock docker:latest version
+Client: Docker Engine - Community
+ Version:           18.09.8
+ API version:       1.39
+ Go version:        go1.10.8
+ Git commit:        0dd43dd87f
+ Built:             Wed Jul 17 17:38:58 2019
+ OS/Arch:           linux/amd64
+ Experimental:      false
 
-```console
-$ docker run --rm -v /var/run/docker.sock:/var/run/docker.sock docker version
-Client:
- Version:      1.8.1
- API version:  1.20
- Go version:   go1.4.2
- Git commit:   d12ea79
- Built:        Thu Aug 13 02:49:29 UTC 2015
- OS/Arch:      linux/amd64
-
-Server:
- Version:      1.9.0-dev
- API version:  1.21
- Go version:   go1.4.2
- Git commit:   7e3088c-dirty
- Built:        Tue Aug 18 19:53:53 UTC 2015
- OS/Arch:      linux/amd64
+Server: Docker Engine - Community
+ Engine:
+  Version:          18.09.7
+  API version:      1.39 (minimum version 1.12)
+  Go version:       go1.10.8
+  Git commit:       2d0083d
+  Built:            Thu Jun 27 17:23:02 2019
+  OS/Arch:          linux/amd64
+  Experimental:     false
 ```
 
 ## Custom daemon flags
 
 ```console
-$ docker run --privileged --name some-overlay-docker -d docker:dind --storage-driver=overlay
+$ docker run --privileged --name some-docker -d \
+	--network some-network --network-alias docker \
+	-e DOCKER_TLS_CERTDIR=/certs \
+	-v some-docker-certs-ca:/certs/ca \
+	-v some-docker-certs-client:/certs/client \
+	docker:dind --storage-driver overlay2
+```
+
+## Runtime Settings Considerations
+
+Inspired by the [official systemd `docker.service` configuration](https://github.com/docker/docker-ce-packaging/blob/57ae892b13de399171fc33f878b70e72855747e6/systemd/docker.service#L30-L45), you may want to consider different values for the following runtime configuration options, especially for production Docker instances:
+
+```console
+$ docker run --privileged --name some-docker -d \
+	... \
+	--ulimit nofile=-1 \
+	--ulimit nproc=-1 \
+	--ulimit core=-1 \
+	--pids-limit -1 \
+	--oom-score-adj -500 \
+	docker:dind
+```
+
+Some of these will not be supported based on the settings on the host's `dockerd`, such as `--ulimit nofile=-1`, giving errors that look like `error setting rlimit type 7: operation not permitted`, and some may inherit sane values from the host `dockerd` instance or may not apply for your usage of Docker-in-Docker (for example, you likely want to set `--oom-score-adj` to a value that's higher than `dockerd` on the host so that your Docker-in-Docker instance is killed before the host Docker instance is).
+
+## Rootless
+
+For more information about using the experimental "rootless" image variants, see [docker-library/docker#174](https://github.com/docker-library/docker/pull/174).
+
+**Note:** just like the regular `dind` images, `--privileged` is required for Docker-in-Docker to function properly ([docker-library/docker#151](https://github.com/docker-library/docker/issues/151#issuecomment-483185972) & [docker-library/docker#281](https://github.com/docker-library/docker/issues/281#issuecomment-744766015)). For `19.03.x` rootless images, an argument of `--experimental` is required for `dockerd` ([docker/docker#40759](https://github.com/docker/docker/pull/40759)).
+
+Basic example usage:
+
+```console
+$ docker run -d --name some-docker --privileged docker:dind-rootless
+$ docker logs --tail=3 some-docker # to verify the daemon has finished generating TLS certificates and is listening successfully
+time="xxx" level=info msg="Daemon has completed initialization"
+time="xxx" level=info msg="API listen on /run/user/1000/docker.sock"
+time="xxx" level=info msg="API listen on [::]:2376"
+$ docker exec -it some-docker docker-entrypoint.sh sh # using "docker-entrypoint.sh" which auto-sets "DOCKER_HOST" appropriately
+/ $ docker info --format '{{ json .SecurityOptions }}'
+["name=seccomp,profile=default","name=rootless"]
 ```
 
 ## Where to Store Data
@@ -158,32 +306,29 @@ The Docker documentation is a good starting point for understanding the differen
 
 The `-v /my/own/var-lib-docker:/var/lib/docker` part of the command mounts the `/my/own/var-lib-docker` directory from the underlying host system as `/var/lib/docker` inside the container, where Docker by default will write its data files.
 
+# Image Variants
+
+The `docker` images come in many flavors, each designed for a specific use case.
+
+## `docker:<version>`
+
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+## `docker:<version>-windowsservercore`
+
+This image is based on [Windows Server Core (`microsoft/windowsservercore`)](https://hub.docker.com/r/microsoft/windowsservercore/). As such, it only works in places which that image does, such as Windows 10 Professional/Enterprise (Anniversary Edition) or Windows Server 2016.
+
+For information about how to get Docker running on Windows, please see the relevant "Quick Start" guide provided by Microsoft:
+
+-	[Windows Server Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_server)
+-	[Windows 10 Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)
+
 # License
 
 View [license information](https://github.com/docker/docker/blob/eb7b2ed6bbe3fbef588116d362ce595d6e35fc43/LICENSE) for the software contained in this image.
 
-# Supported Docker versions
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 
-This image is officially supported on Docker version 1.12.5.
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `docker/` directory](https://github.com/docker-library/repo-info/tree/master/repos/docker).
 
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/docker/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/docker-library/docker/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`docker/` directory](https://github.com/docker-library/docs/tree/master/docker) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

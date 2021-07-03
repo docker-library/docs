@@ -13,7 +13,7 @@ Kapacitor is an open source data processing engine written in Go. It can process
 Start the Kapacitor container with default options:
 
 ```console
-$ docker run -p 9092:9092 kapacitor
+$ docker run -p 9092:9092 %%IMAGE%%
 ```
 
 Start the Kapacitor container sharing the data directory with the host:
@@ -21,7 +21,7 @@ Start the Kapacitor container sharing the data directory with the host:
 ```console
 $ docker run -p 9092:9092 \
       -v $PWD:/var/lib/kapacitor \
-      kapacitor
+      %%IMAGE%%
 ```
 
 Modify `$PWD` to the directory where you want to store data associated with the Kapacitor container.
@@ -31,7 +31,7 @@ You can also have Docker control the volume mountpoint by using a named volume.
 ```console
 $ docker run -p 9092:9092 \
       -v kapacitor:/var/lib/kapacitor \
-      kapacitor
+      %%IMAGE%%
 ```
 
 ### Configuration
@@ -41,7 +41,7 @@ Kapacitor can be either configured from a config file or using environment varia
 Generate the default configuration file:
 
 ```console
-$ docker run --rm kapacitor kapacitord config > kapacitor.conf
+$ docker run --rm %%IMAGE%% kapacitord config > kapacitor.conf
 ```
 
 Modify the default configuration, which will now be available under `$PWD`. Then start the Kapacitor container.
@@ -49,7 +49,7 @@ Modify the default configuration, which will now be available under `$PWD`. Then
 ```console
 $ docker run -p 9092:9092 \
       -v $PWD/kapacitor.conf:/etc/kapacitor/kapacitor.conf:ro \
-      kapacitor
+      %%IMAGE%%
 ```
 
 Modify `$PWD` to the directory where you want to store the configuration file.
@@ -97,7 +97,7 @@ $ docker run -p 9092:9092 \
     -h kapacitor \
     --net=influxdb \
     -e KAPACITOR_INFLUXDB_0_URLS_0=http://influxdb:8086 \
-    kapacitor
+    %%IMAGE%%
 ```
 
 You can also start Kapacitor sharing the same network interface of the InfluxDB container. If you do this, Docker will act as if both processes were being run on the same machine.
@@ -106,7 +106,7 @@ You can also start Kapacitor sharing the same network interface of the InfluxDB 
 $ docker run -p 9092:9092 \
       --name=kapacitor \
       --net=container:influxdb \
-      kapacitor
+      %%IMAGE%%
 ```
 
 When run like this, InfluxDB can be communicated with over `localhost`.
@@ -116,7 +116,7 @@ When run like this, InfluxDB can be communicated with over `localhost`.
 Start the container:
 
 ```console
-$ docker run --name=kapacitor -d -p 9092:9092 kapacitor
+$ docker run --name=kapacitor -d -p 9092:9092 %%IMAGE%%
 ```
 
 Run another container linked to the `kapacitor` container for using the client. Set the env `KAPACITOR_URL` so the client knows how to connect to Kapacitor. Mount in your current directory for accessing TICKscript files.
@@ -124,7 +124,7 @@ Run another container linked to the `kapacitor` container for using the client. 
 ```console
 $ docker run --rm --net=container:kapacitor \
       -v $PWD:/root -w=/root -it \
-      kapacitor bash -l
+      %%IMAGE%% bash -l
 ```
 
 Then, from within the container, you can use the `kapacitor` command to interact with the daemon.

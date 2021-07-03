@@ -4,30 +4,80 @@ This template defines the "Supported tags and Dockerfile links" portion of an im
 
 */ -}}
 
-{{- define "dockerfilePath" -}}
-	{{- if ne .Directory "." -}}
-		{{- .Directory -}}
-		/
-	{{- end -}}
-	Dockerfile
+{{- $archSpecific := getenv "ARCH_SPECIFIC_DOCS" -}}
+
+{{- $sharedTagGroups := .Manifest.GetSharedTagGroups -}}
+{{- if (len $sharedTagGroups) -}}
+	(See ["What's the difference between 'Shared' and 'Simple' tags?" in the FAQ](https://github.com/docker-library/faq#whats-the-difference-between-shared-and-simple-tags).)
+	{{- "\n\n" -}}
+	## Simple Tags
+	{{- "\n\n" -}}
 {{- end -}}
 
-{{- range $i, $e := $.Entries -}}
-	{{- /* force bashbrew to "fetch" the GitCommit so that it is fully resolved */ -}}
-	{{- $from := $.DockerFrom $e -}}
+{{- range $i, $e := ($archSpecific | ternary (archFilter arch $.Entries) $.Entries) -}}
+	{{- $arch := $archSpecific | ternary arch ($e.HasArchitecture arch | ternary arch ($e.Architectures | first)) -}}
 
-	{{- $repoUrlBase := $e.GitRepo | replace "git://" "https://" | trimSuffixes ".git" -}}
-	{{- $isGitHub := hasPrefix "https://github.com/" $repoUrlBase -}}
+	{{- /* force bashbrew to "fetch" the GitCommit so that it is fully resolved */ -}}
+	{{- $froms := $.ArchDockerFroms $arch $e -}}
+
+	{{- $gitRepo := $e.ArchGitRepo $arch -}}
+	{{- $gitCommit := $e.ArchGitCommit $arch -}}
+	{{- $dir := .ArchDirectory $arch -}}
+	{{- $dockerfile := .ArchFile $arch -}}
+	{{- $dockerfilePath := eq $dir "." | ternary $dockerfile (join "/" $dir $dockerfile) -}}
+	{{- $repoUrlBase := $gitRepo | replace "git://" "https://" | trimSuffixes ".git" -}}
+	{{- $url := hasPrefix "https://github.com/" $repoUrlBase | ternary (join "/" $repoUrlBase "blob" $gitCommit $dockerfilePath) "" -}}
+	{{- /* handle https://gitlab.../.../... style URLs (by reasonably assuming they're a gitlab instance) */ -}}
+	{{- $url = $url | ternary $url (hasPrefix "https://gitlab." $repoUrlBase | ternary (join "/" $repoUrlBase "-/blob" $gitCommit $dockerfilePath) "") -}}
+	{{- /* TODO decide what to do (if anything) about other non-GitHub repos with respect to URL */ -}}
 
 	{{- if $i -}}
 		{{- "\n" -}}
 	{{- end -}}
 
 	- {{- "\t" -}}
-	{{- if $isGitHub -}} [ {{- end -}}
-	` {{- $e.Tags | join "`, `" -}} ` (* {{- template "dockerfilePath" $e -}} *)
-	{{- if $isGitHub -}} ]( {{- $repoUrlBase -}} /blob/ {{- $e.GitCommit -}} / {{- template "dockerfilePath" $e -}} ) {{- end -}}
-	{{- /* TODO decide what to do (if anything) about non-GitHub repos with respect to URL */ -}}
+	{{- if $url -}} [ {{- end -}}
+	` {{- $e.Tags | join "`, `" -}} `
+	{{- if $url -}} ]( {{- $url -}} ) {{- end -}}
 {{- end -}}
-
 {{- "\n\n" -}}
+
+{{- if (len $sharedTagGroups) -}}
+	{{- "## Shared Tags\n\n" -}}
+
+	{{- range $sharedTagGroups -}}
+		{{- $entries := $archSpecific | ternary (archFilter arch .Entries) .Entries -}}
+
+		{{- if (len $entries) -}}
+			{{- "-\t`" -}}
+			{{ .SharedTags | join "`, `" }}
+			{{- "`:\n" -}}
+
+			{{- range $i, $e := $entries -}}
+				{{- $arch := $archSpecific | ternary arch ($e.HasArchitecture arch | ternary arch ($e.Architectures | first)) -}}
+
+				{{- /* force bashbrew to "fetch" the GitCommit so that it is fully resolved */ -}}
+				{{- $froms := $.ArchDockerFroms $arch $e -}}
+
+				{{- $gitRepo := $e.ArchGitRepo $arch -}}
+				{{- $gitCommit := $e.ArchGitCommit $arch -}}
+				{{- $dir := .ArchDirectory $arch -}}
+				{{- $dockerfile := .ArchFile $arch -}}
+				{{- $dockerfilePath := eq $dir "." | ternary $dockerfile (join "/" $dir $dockerfile) -}}
+				{{- $repoUrlBase := $gitRepo | replace "git://" "https://" | trimSuffixes ".git" -}}
+				{{- $url := hasPrefix "https://github.com/" $repoUrlBase | ternary (join "/" $repoUrlBase "blob" $gitCommit $dockerfilePath) "" -}}
+				{{- /* handle https://gitlab.../.../... style URLs (by reasonably assuming they're a gitlab instance) */ -}}
+				{{- $url = $url | ternary $url (hasPrefix "https://gitlab." $repoUrlBase | ternary (join "/" $repoUrlBase "-/blob" $gitCommit $dockerfilePath) "") -}}
+				{{- /* TODO decide what to do (if anything) about other non-GitHub repos with respect to URL */ -}}
+
+				{{- "\t-\t" -}}
+				{{- if $url -}} [ {{- end -}}
+				` {{- $e.Tags | first -}} `
+				{{- if $url -}} ]( {{- $url -}} ) {{- end -}}
+
+				{{- "\n" -}}
+			{{- end -}}
+		{{- end -}}
+	{{- end -}}
+	{{- "\n" -}}
+{{- end -}}

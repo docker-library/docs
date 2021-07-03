@@ -1,10 +1,49 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "clearlinux/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "clearlinux/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
+# Quick reference
+
+-	**Maintained by**:  
+	[Intel Corporation](https://github.com/clearlinux/docker-brew-clearlinux)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `base` (*Dockerfile*)](https://github.com/clearlinux/docker-brew-clearlinux/blob/4d594721b83c7db6b7031cde6d8e9e103640e549/Dockerfile)
+-	[`latest`, `base`](https://github.com/clearlinux/docker-brew-clearlinux/blob/cd26ac0c0a9a1f236df0379cbcaad8831b2f7c3c/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/clearlinux`)](https://github.com/docker-library/official-images/blob/master/library/clearlinux). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fclearlinux).
+# Quick reference (cont.)
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/clearlinux/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/clearlinux/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+-	**Where to file issues**:  
+	[https://github.com/clearlinux/docker-brew-clearlinux/issues](https://github.com/clearlinux/docker-brew-clearlinux/issues)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/clearlinux/)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/clearlinux/` directory](https://github.com/docker-library/repo-info/blob/master/repos/clearlinux) ([history](https://github.com/docker-library/repo-info/commits/master/repos/clearlinux))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images repo's `library/clearlinux` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fclearlinux)  
+	[official-images repo's `library/clearlinux` file](https://github.com/docker-library/official-images/blob/master/library/clearlinux) ([history](https://github.com/docker-library/official-images/commits/master/library/clearlinux))
+
+-	**Source of this description**:  
+	[docs repo's `clearlinux/` directory](https://github.com/docker-library/docs/tree/master/clearlinux) ([history](https://github.com/docker-library/docs/commits/master/clearlinux))
 
 # Clear Linux OS
 
@@ -25,28 +64,12 @@ RUN swupd bundle-add editors dev-utils
 
 Where editors contains the usual suspects for command line editors and dev-utils contains some handy development tools like strace, gdb and valgrind.
 
-# Supported Docker versions
+# License
 
-This image is officially supported on Docker version 1.12.5.
+View [Clear Linux OS for Intel Architecture](https://download.clearlinux.org/current/licenses) for the licenses of the software contained in this image.
 
-Support for older versions (down to 1.6) is provided on a best-effort basis.
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `clearlinux/` directory](https://github.com/docker-library/repo-info/tree/master/repos/clearlinux).
 
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/clearlinux/docker-brew-clearlinux/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/clearlinux/docker-brew-clearlinux/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`clearlinux/` directory](https://github.com/docker-library/docs/tree/master/clearlinux) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

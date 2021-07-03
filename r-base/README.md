@@ -1,10 +1,49 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "r-base/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "r-base/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
+# Quick reference
+
+-	**Maintained by**:  
+	[the Rocker Community](https://github.com/rocker-org/rocker)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
--	[`3.3.2`, `latest` (*r-base/Dockerfile*)](https://github.com/rocker-org/rocker/blob/b2cdaad0026645c6cb3ed78f460042ed2197449a/r-base/Dockerfile)
+-	[`4.1.0`, `latest`](https://github.com/rocker-org/rocker/blob/bc5f41cd3464bf18c571e7ff35383aab08b8ee71/r-base/4.1.0/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/r-base`)](https://github.com/docker-library/official-images/blob/master/library/r-base). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fr-base).
+# Quick reference (cont.)
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/r-base/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/r-base/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+-	**Where to file issues**:  
+	[GitHub](https://github.com/rocker-org/rocker/issues) or [Email](mailto:rocker-maintainers@eddelbuettel.com)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/r-base/), [`arm64v8`](https://hub.docker.com/r/arm64v8/r-base/), [`ppc64le`](https://hub.docker.com/r/ppc64le/r-base/), [`s390x`](https://hub.docker.com/r/s390x/r-base/)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/r-base/` directory](https://github.com/docker-library/repo-info/blob/master/repos/r-base) ([history](https://github.com/docker-library/repo-info/commits/master/repos/r-base))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images repo's `library/r-base` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fr-base)  
+	[official-images repo's `library/r-base` file](https://github.com/docker-library/official-images/blob/master/library/r-base) ([history](https://github.com/docker-library/official-images/commits/master/library/r-base))
+
+-	**Source of this description**:  
+	[docs repo's `r-base/` directory](https://github.com/docker-library/docs/tree/master/r-base) ([history](https://github.com/docker-library/docs/commits/master/r-base))
 
 # What is R?
 
@@ -18,7 +57,7 @@ R is a GNU project. The source code for the R software environment is written pr
 
 > [R FAQ](http://cran.r-project.org/doc/FAQ/R-FAQ.html#What-is-R_003f), [wikipedia.org/wiki/R_(programming_language)](http://en.wikipedia.org/wiki/R_%28programming_language%29)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/878d695448f08584e0b90a88fb60614e4c346d6e/r-base/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/18225eea5667b1bc03a19024eb09ccc482207ecf/r-base/logo.png)
 
 # How to use this image
 
@@ -41,7 +80,7 @@ $ docker run -ti --rm -v "$PWD":/home/docker -w /home/docker -u docker r-base R 
 Alternatively, just run a bash session on the container first. This allows a user to run batch commands and also edit and run scripts:
 
 ```console
-$ docker run -ti --rm r-base /usr/bin/bash
+$ docker run -ti --rm r-base bash
 $ vim.tiny myscript.R
 ```
 
@@ -76,28 +115,8 @@ Further documentation and example use cases can be found at the [rocker-org](htt
 
 View [R-project license information](http://www.r-project.org/Licenses/) for the software contained in this image.
 
-# Supported Docker versions
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 
-This image is officially supported on Docker version 1.12.5.
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `r-base/` directory](https://github.com/docker-library/repo-info/tree/master/repos/r-base).
 
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/rocker-org/rocker/issues).
-
-You can also reach us by email via email at `rocker-maintainers@eddelbuettel.com`.
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/rocker-org/rocker/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`r-base/` directory](https://github.com/docker-library/docs/tree/master/r-base) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `REAMDE.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

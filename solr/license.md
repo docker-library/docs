@@ -2,7 +2,7 @@ Solr is licensed under the [Apache License, Version 2.0](https://www.apache.org/
 
 This repository is also licensed under the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0).
 
-Copyright 2015 Martijn Koster
+Copyright 2015-2020 The Apache Software Foundation
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 

@@ -1,24 +1,109 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "kong/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "kong/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
+# Quick reference
+
+-	**Maintained by**:  
+	[the Kong Docker Maintainers](https://github.com/kong/kong)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
--	[`0.9`, `0.9.6`, `latest` (*Dockerfile*)](https://github.com/Mashape/docker-kong/blob/e2122a810d54e661d2e451b3c417ed826f0e06ac/Dockerfile)
+-	[`2.4.1-alpine`, `2.4-alpine`, `2.4.1`, `2.4`, `2`, `alpine`, `latest`](https://github.com/Kong/docker-kong/blob/e1b0a6c7eddd327926027692863a9900fd856977/alpine/Dockerfile)
+-	[`2.4.1-ubuntu`, `2.4-ubuntu`, `ubuntu`](https://github.com/Kong/docker-kong/blob/e1b0a6c7eddd327926027692863a9900fd856977/ubuntu/Dockerfile)
+-	[`2.4.1-centos`, `2.4-centos`, `centos`](https://github.com/Kong/docker-kong/blob/e1b0a6c7eddd327926027692863a9900fd856977/centos/Dockerfile)
+-	[`2.3.3-alpine`, `2.3-alpine`, `2.3.3`, `2.3`](https://github.com/Kong/docker-kong/blob/6a6944f5abb7bd2708a47f5571a5133ad976b343/alpine/Dockerfile)
+-	[`2.3.3-ubuntu`, `2.3-ubuntu`](https://github.com/Kong/docker-kong/blob/6a6944f5abb7bd2708a47f5571a5133ad976b343/ubuntu/Dockerfile)
+-	[`2.3.3-centos`, `2.3-centos`](https://github.com/Kong/docker-kong/blob/6a6944f5abb7bd2708a47f5571a5133ad976b343/centos/Dockerfile)
+-	[`2.2.2-alpine`, `2.2-alpine`, `2.2.2`, `2.2`](https://github.com/Kong/docker-kong/blob/40f9973922b56ac590053b56f159bdce802e9296/alpine/Dockerfile)
+-	[`2.2.2-ubuntu`, `2.2-ubuntu`](https://github.com/Kong/docker-kong/blob/40f9973922b56ac590053b56f159bdce802e9296/ubuntu/Dockerfile)
+-	[`2.2.2-centos`, `2.2-centos`](https://github.com/Kong/docker-kong/blob/40f9973922b56ac590053b56f159bdce802e9296/centos/Dockerfile)
+-	[`2.1.4-alpine`, `2.1-alpine`, `2.1.4`, `2.1`](https://github.com/Kong/docker-kong/blob/b4c835f84d56a2d2d69c2780a1a409177ea0844f/alpine/Dockerfile)
+-	[`2.1.4-ubuntu`, `2.1-ubuntu`](https://github.com/Kong/docker-kong/blob/397f34af7d3503cc64614ef5852d5929a84ef65b/ubuntu/Dockerfile)
+-	[`2.1.4-centos`, `2.1-centos`](https://github.com/Kong/docker-kong/blob/397f34af7d3503cc64614ef5852d5929a84ef65b/centos/Dockerfile)
+-	[`2.0.5-alpine`, `2.0.5`, `2.0`](https://github.com/Kong/docker-kong/blob/60626098f2f32fe1528eb4ffacff13fd1c3e919f/alpine/Dockerfile)
+-	[`2.0.5-ubuntu`, `2.0-ubuntu`](https://github.com/Kong/docker-kong/blob/60626098f2f32fe1528eb4ffacff13fd1c3e919f/ubuntu/Dockerfile)
+-	[`2.0.5-centos`, `2.0-centos`](https://github.com/Kong/docker-kong/blob/60626098f2f32fe1528eb4ffacff13fd1c3e919f/centos/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/kong`)](https://github.com/docker-library/official-images/blob/master/library/kong). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fkong).
+# Quick reference (cont.)
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/kong/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/kong/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+-	**Where to file issues**:  
+	[https://github.com/kong/kong/issues](https://github.com/kong/kong/issues)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/kong/), [`arm64v8`](https://hub.docker.com/r/arm64v8/kong/)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/kong/` directory](https://github.com/docker-library/repo-info/blob/master/repos/kong) ([history](https://github.com/docker-library/repo-info/commits/master/repos/kong))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images repo's `library/kong` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fkong)  
+	[official-images repo's `library/kong` file](https://github.com/docker-library/official-images/blob/master/library/kong) ([history](https://github.com/docker-library/official-images/commits/master/library/kong))
+
+-	**Source of this description**:  
+	[docs repo's `kong/` directory](https://github.com/docker-library/docs/tree/master/kong) ([history](https://github.com/docker-library/docs/commits/master/kong))
 
 # What is Kong?
 
-Kong was built to secure, manage and extend Microservices & APIs. If you're building for web, mobile or IoT (Internet of Things) you will likely end up needing to implement common functionality on top of your actual software. Kong can help by acting as a gateway for any HTTP resource while providing logging, authentication and other functionality through plugins.
+Kong is a scalable, open source API Platform (also known as an API Gateway or API Middleware). Kong was originally built by [Kong Inc.](https://konghq.com) (formerly known as Mashape) to secure, manage, and extend over 15,000 Microservices for its API Marketplace, which generates billions of requests per month.
 
-Powered by NGINX and Cassandra with a focus on high performance and reliability, Kong runs in production at Mashape where it has handled billions of API requests for over ten thousand APIs.
+Under active development, Kong is now used in production at hundreds of organizations from startups, to large enterprises and governments including: The New York Times, Expedia, Healthcare.gov, The Guardian, Condè Nast, The University of Auckland, Ferrari, Rakuten, Cisco, SkyScanner, Yahoo! Japan, Giphy and so on.
 
-Kong's documentation can be found at [getkong.org/docs](http://getkong.org/docs).
+Kong's official documentation can be found at [docs.konghq.com](https://docs.konghq.com/).
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/ffb3145bf430e8e1138921d80722d2e7354d2e81/kong/logo.png)
+# How to use this image without a Database
 
-# How to use this image
+Kong 1.1 added the capability to run Kong without a database, using only in-memory storage for entities: we call this DB-less mode. When running Kong DB-less, the configuration of entities is done in a second configuration file, in YAML or JSON, using declarative configuration.
 
-First, Kong requires a running Cassandra 2.2.x or PostgreSQL 9.4/9.5 cluster before it starts. You can either use the official Cassandra/PostgreSQL containers, or use your own.
+```shell
+$ docker run -d --name kong \
+    -e "KONG_DATABASE=off" \
+    -e "KONG_PROXY_ACCESS_LOG=/dev/stdout" \
+    -e "KONG_ADMIN_ACCESS_LOG=/dev/stdout" \
+    -e "KONG_PROXY_ERROR_LOG=/dev/stderr" \
+    -e "KONG_ADMIN_ERROR_LOG=/dev/stderr" \
+    -e "KONG_ADMIN_LISTEN=0.0.0.0:8001, 0.0.0.0:8444 ssl" \
+    -p 8000:8000 \
+    -p 8443:8443 \
+    -p 8001:8001 \
+    -p 8444:8444 \
+    kong
+```
+
+Generate a skeleton configuration file to get you started
+
+```shell
+$ docker exec -it kong kong config init /home/kong/kong.yml
+$ docker exec -it kong cat /home/kong/kong.yml >> kong.yml
+```
+
+Load a declarative configuration into a running Kong node via its Admin API using HTTPie
+
+```shell
+$ http :8001/config config=@kong.yml
+```
+
+**Note**: Not all Kong plugins are compatible with DB-less mode, since some of them by design require a central database coordination and/or dynamic creation of entities, see the doc for details at [DB-less and Declarative Configuration](https://docs.konghq.com/latest/db-less-and-declarative-config/)
+
+# How to use this image with a Database
+
+You can either use the official Cassandra/PostgreSQL containers, or use your own.
 
 ## 1. Link Kong to either a Cassandra or PostgreSQL container
 
@@ -31,7 +116,7 @@ Start a Cassandra container by executing:
 ```shell
 $ docker run -d --name kong-database \
                 -p 9042:9042 \
-                cassandra:2.2
+                cassandra:3
 ```
 
 ### Postgres
@@ -39,88 +124,115 @@ $ docker run -d --name kong-database \
 Start a PostgreSQL container by executing:
 
 ```shell
-docker run -d --name kong-database \
+$ docker run -d --name kong-database \
                 -p 5432:5432 \
                 -e "POSTGRES_USER=kong" \
                 -e "POSTGRES_DB=kong" \
-                postgres:9.4
+                -e "POSTGRES_PASSWORD=kong" \
+                postgres:9.6
 ```
+
+## 2. Prepare your database
+
+Run the database migrations with an ephemeral Kong container:
+
+```shell
+$ docker run --rm \
+    --link kong-database:kong-database \
+    -e "KONG_DATABASE=postgres" \
+    -e "KONG_PG_HOST=kong-database" \
+    -e "KONG_PG_USER=kong" \
+    -e "KONG_PG_PASSWORD=kong" \
+    -e "KONG_CASSANDRA_CONTACT_POINTS=kong-database" \
+    kong kong migrations bootstrap
+```
+
+In the above example, both Cassandra and PostgreSQL are configured, but you should update the `KONG_DATABASE` environment variable with either `cassandra` or `postgres`.
+
+**Note for Kong < 0.15**: with Kong versions below 0.15 (up to 0.14), use the `up` sub-command instead of `bootstrap`. Also note that with Kong < 0.15, migrations should never be run concurrently; only one Kong node should be performing migrations at a time. This limitation is lifted for Kong 0.15, 1.0, and above.
 
 ### Start Kong
 
-Once the database is running, we can start a Kong container and link it to the database container, and configuring the `KONG_DATABASE` environment variable with either `cassandra` or `postgres` depending on which database you decided to use:
+Once the database has been started and prepared, we can start a Kong container and link it to the database container, and configuring the `KONG_DATABASE` environment variable with either `cassandra` or `postgres` depending on which database you decided to use:
 
 ```shell
 $ docker run -d --name kong \
     --link kong-database:kong-database \
-    -e "KONG_DATABASE=cassandra" \
-    -e "KONG_CASSANDRA_CONTACT_POINTS=kong-database" \
+    -e "KONG_DATABASE=postgres" \
     -e "KONG_PG_HOST=kong-database" \
+    -e "KONG_PG_PASSWORD=kong" \
+    -e "KONG_CASSANDRA_CONTACT_POINTS=kong-database" \
+    -e "KONG_PROXY_ACCESS_LOG=/dev/stdout" \
+    -e "KONG_ADMIN_ACCESS_LOG=/dev/stdout" \
+    -e "KONG_PROXY_ERROR_LOG=/dev/stderr" \
+    -e "KONG_ADMIN_ERROR_LOG=/dev/stderr" \
+    -e "KONG_ADMIN_LISTEN=0.0.0.0:8001, 0.0.0.0:8444 ssl" \
     -p 8000:8000 \
     -p 8443:8443 \
     -p 8001:8001 \
-    -p 7946:7946 \
-    -p 7946:7946/udp \
+    -p 8444:8444 \
     kong
 ```
 
-If everything went well, and if you created your container with the default ports, Kong should be listening on your host's `8000` ([proxy][http://getkong.org/docs/latest/configuration/#proxy_port]), `8443` ([proxy SSL](http://getkong.org/docs/latest/configuration/#proxy_listen_ssl)) and `8001` ([admin api](http://getkong.org/docs/latest/configuration/#admin_api_port)) ports. Port `7946` ([cluster](http://getkong.org/docs/latest/configuration/#cluster_listen)) is being used only by other Kong nodes.
+If everything went well, and if you created your container with the default ports, Kong should be listening on your host's `8000` ([Proxy](https://docs.konghq.com/latest/configuration/#proxy_port)), `8443` ([Proxy SSL](https://docs.konghq.com/latest/configuration/#proxy_listen_ssl)), `8001` ([Admin API](https://docs.konghq.com/latest/configuration/#admin_listen)) and `8444` ([Admin API SSL](https://docs.konghq.com/latest/configuration/#admin_listen_ssl)) ports.
 
-You can now read the docs at [getkong.org/docs](http://getkong.org/docs) to learn more about Kong.
+You can read the docs at [docs.konghq.com](https://docs.konghq.com/) to learn more about Kong.
 
-## 2. Use Kong with a custom configuration (and a custom Cassandra/PostgreSQL cluster)
+## 3. Use Kong with a custom configuration (and a custom Cassandra/PostgreSQL cluster)
 
-You can override any property of the [Kong configuration file](http://getkong.org/docs/latest/configuration/) with environment variables. Just prepend any Kong configuration property with the `KONG_` prefix, for example:
+You can override any property of the [Kong configuration file](https://docs.konghq.com/latest/configuration/) with environment variables. Just prepend any Kong configuration property with the `KONG_` prefix, for example:
 
 ```shell
 $ docker run -d --name kong \
+    -e "KONG_DATABASE=postgres" \
+    -e "KONG_PG_HOST=kong-database" \
     -e "KONG_LOG_LEVEL=info" \
     -e "KONG_CUSTOM_PLUGINS=helloworld" \
     -e "KONG_PG_HOST=1.1.1.1" \
+    -e "KONG_ADMIN_LISTEN=0.0.0.0:8001, 0.0.0.0:8444 ssl" \
     -p 8000:8000 \
     -p 8443:8443 \
     -p 8001:8001 \
-    -p 7946:7946 \
-    -p 7946:7946/udp \
+    -p 8444:8444 \
     kong
 ```
 
 ## Reload Kong in a running container
 
-If you change your custom configuration, you can reload Kong (without downtime) by issuing:
+If you change your custom configuration, reload Kong (without downtime) by running:
 
 ```shell
 $ docker exec -it kong kong reload
 ```
 
-This will run the [`kong reload`](http://getkong.org/docs/latest/cli/#reload) command in your container.
+This will run the [`kong reload`](https://docs.konghq.com/latest/cli/#reload) command in your container.
+
+# Kubernetes Ingress
+
+Among the many deployment options [available](https://konghq.com/install), Kong also offers a [Kubernetes Ingress Controller](https://github.com/Kong/kubernetes-ingress-controller) ready to use in your K8s environment.
+
+# Image Variants
+
+The `kong` images come in many flavors, each designed for a specific use case.
+
+## `kong:<version>`
+
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+## `kong:<version>-alpine`
+
+This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+
+This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+
+To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 # License
 
-View [license information](https://getkong.org/license/) for the software contained in this image.
+View [license information](https://konghq.com/kong/license/) for the software contained in this image.
 
-# Supported Docker versions
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 
-This image is officially supported on Docker version 1.12.5.
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `kong/` directory](https://github.com/docker-library/repo-info/tree/master/repos/kong).
 
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/Mashape/kong/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/Mashape/kong/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`kong/` directory](https://github.com/docker-library/docs/tree/master/kong) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.
