@@ -4,6 +4,18 @@ Eggdrop is the world's most popular Open Source IRC bot, designed for flexibilit
 
 %%LOGO%%
 
+# Image Types
+
+There are two main types of images supported on docker, each designed for a specific use case.
+
+## eggdrop:<version>
+
+This image is the smallest possible image we can produce. It includes the standard OS libraries eggdrop needs to run (Tcl, openssl) and nothing more. If you are just trying to manage a channel and don't use a lot of "fancy" extra Tcl scripts, this is the image for you.
+
+## eggdrop:<version>-libs
+
+This image is built with the tcllib library (including common libraries such as json, http, comm and more; https://github.com/tcltk/tcllib/tree/master/modules for a full list), the tcl-tls library (for working with https web pages), and both the sqlite-tcl and mysqltcl libraries for interacting with their respective SQL database. If you want to run an Eggdrop that loads a Tcl script to interact with the web, SQL, or otherwise gets a 'package required' error, this image may already contain what you need.
+
 # How to use this image
 
 ## First Run
@@ -30,8 +42,9 @@ If you want to expose network connections for your bot, you'll also want to use 
 
 to your docker run command line.
 
-## Troubleshooting / Support
+# Troubleshooting / Support
 
-For additional help, you can join the #eggdrop channel on Freenode
+For additional help, you can join the #eggdrop channel on Libera
 
 The git repository for the Dockerfile is maintained at https://github.com/eggheads/eggdrop-docker
+
