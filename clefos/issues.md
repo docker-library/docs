@@ -1,0 +1,1 @@
+[GitHub](%%GITHUB-REPO%%/issues)

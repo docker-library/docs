@@ -9,7 +9,7 @@ The Nuxeo Platform is a highly customizable and extensible content management pl
 ## Start a bare nuxeo instance
 
 ```console
-$ docker run --name mynuxeo -p 8080:8080 -d nuxeo
+$ docker run --name mynuxeo -p 8080:8080 -d %%IMAGE%%
 ```
 
 This image includes `EXPOSE 8080` (the nuxeo port). The default Nuxeo configuration is applied which feature an embedded database (H2), and an embedded Elasticsearch instance. This setup is not suitable for production. See below to know how to setup a production ready container by specifying environment variables.
@@ -19,11 +19,12 @@ The Nuxeo platform is accesible at http://${DOCKER_HOST}:8080/ and default User 
 ## Start a nuxeo with some additional packages
 
 ```console
-$ docker run --name mynuxeo -p 8080:8080 -e NUXEO_PACKAGES="nuxeo-web-mobile nuxeo-drive nuxeo-diff nuxeo-spreadsheet nuxeo-dam nuxeo-template-rendering nuxeo-template-rendering-samples nuxeo-showcase-content"
-nuxeo
+$ docker run --name mynuxeo --rm -ti -p 8080:8080 -e NUXEO_PACKAGES="nuxeo-web-ui nuxeo-dam nuxeo-drive nuxeo-showcase-content nuxeo-template-rendering nuxeo-template-rendering-samples nuxeo-spreadsheet" nuxeo
 ```
 
 This will install the same image as above but comes with some demo Nuxeo packages to demonstrate its various usage (DAM, DM, search etc...)
+
+You can find additional informations on how to use this image in [Nuxeo documentation](https://doc.nuxeo.com/nxdoc/setting-up-your-nuxeo-environment/)
 
 ## Environment Variables
 
@@ -69,7 +70,9 @@ If Redis is setup, you can ovewrite the default port configuration (default to 6
 
 ### `NUXEO_CLID`
 
-Allow to setup a CLID for Nuxeo Connect registration.
+Allow to setup a CLID for Nuxeo Connect registration. This parameter is in the form `part1\npart2`, so depending on the environment you may have to escape the `\` character.
+
+You can find additional informations the registration process in the [Nuxeo documentation](https://doc.nuxeo.com/nxdoc/setting-up-your-nuxeo-environment/)
 
 ### `NUXEO_INSTALL_HOTFIX`
 
@@ -113,7 +116,7 @@ Allows to setup [Database creation option](https://doc.nuxeo.com/x/hwQz#Reposito
 
 ### `NUXEO_CUSTOM_PARAM`
 
-Allows to add custom parameters to `nuxeo.conf`. Multiple parameters can be splitted by a `\n`. For instance :
+Allows to add custom parameters to `nuxeo.conf`. Multiple parameters can be splitted by a `\n`. For instance:
 
 	NUXEO_CUSTOM_PARAM="repository.clustering.enabled=false\nrepository.clustering.delay=1000"
 
@@ -121,11 +124,20 @@ Allows to add custom parameters to `nuxeo.conf`. Multiple parameters can be spli
 
 ## Adding additional configuration
 
-If you would like to do additional setup in an image derived from this one, you can add a `/nuxeo.conf` file that will be appended to the end of the regular `nuxeo.conf` file.
+If you would like to do additional setup in an image derived from this one, you can add a `/docker-entrypoint-initnuxeo.d/nuxeo.conf` file that will be appended to the end of the regular `nuxeo.conf` file.
 
 ```dockerfile
-FROM nuxeo:7.10
-ADD nuxeo.conf /nuxeo.conf
+FROM %%IMAGE%%:7.10
+COPY nuxeo.conf /docker-entrypoint-initnuxeo.d/nuxeo.conf
+```
+
+If you need a root account to run some installation steps in your `Dockerfile`, then you need to put those steps between two `USER` command as the image is run with the user `1000` (nuxeo). For instance:
+
+```dockerfile
+FROM %%IMAGE%%:LTS
+USER root
+RUN apt-get update && apt-get install -y --no-install-recommends vim
+USER 1000
 ```
 
 ## Launching custom shell scripts
@@ -134,10 +146,12 @@ You can add your own shell scripts in a special `/docker-entrypoint-initnuxeo.d`
 
 ## ffmpeg
 
-As it contains some non-free Codecs, we dont't ship a binary version of `ffmpeg` as part of this image. However, you can simply add the compilation in a derived images by adding these lines to your Dockerfile
+As it contains some non-free Codecs, we dont't ship a binary version of `ffmpeg` as part of this image. However, you can simply add the compilation in a derived images by adding these lines to your Dockerfile.
 
 ```dockerfile
-FROM nuxeo:7.10
+FROM %%IMAGE%%:7.10
+
+USER root
 
 RUN echo "deb http://httpredir.debian.org/debian jessie non-free" >> /etc/apt/sources.list
 RUN apt-get update && apt-get install -y --no-install-recommends libfaac-dev git
@@ -156,6 +170,8 @@ RUN ./prepare-packages.sh \
  && cd /tmp \
  && rm -Rf ffmpeg-nuxeo \
  && rm -rf /var/lib/apt/lists/*
+
+USER 1000
 ```
 
 ## Using Oracle JVM

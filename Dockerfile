@@ -1,6 +1,13 @@
-FROM perl:5.20
+FROM perl:5.30-buster
 
-RUN apt-get update && apt-get install -y git vim --no-install-recommends && rm -rf /var/lib/apt/lists/*
+RUN set -eux; \
+	apt-get update; \
+	apt-get install -y --no-install-recommends \
+		vim \
+# https://bugs.debian.org/763056 - SVG rendering in ImageMagick looks awful unless it can use inkscape to render (or RSVG, which is explicitly not compiled into the Debian package??)
+		inkscape \
+	; \
+	rm -rf /var/lib/apt/lists/*
 
 # secure by default ♥ (thanks to sri!)
 ENV PERL_CPANM_OPT --verbose --mirror https://cpan.metacpan.org
@@ -12,7 +19,7 @@ RUN cpanm Digest::SHA Module::Signature
 # reinstall cpanm itself, for good measure
 RUN cpanm App::cpanminus
 
-RUN cpanm Mojolicious@5.80
+RUN cpanm Mojolicious@8.35
 
 RUN cpanm EV
 RUN cpanm IO::Socket::IP
@@ -49,4 +56,4 @@ RUN { \
 COPY . /usr/src/docker-library-docs
 WORKDIR /usr/src/docker-library-docs
 
-ENTRYPOINT ["./push.pl"]
+CMD ["./push.pl"]

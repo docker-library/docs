@@ -13,7 +13,7 @@ F# (pronounced F sharp) is a strongly typed, multi-paradigm programming language
 The most straightforward way to use this image is to use it both as the build and runtime environment. In your `Dockerfile`, you can write something similar to the following:
 
 ```dockerfile
-FROM fsharp
+FROM %%IMAGE%%
 COPY . /app
 RUN xbuild /app/myproject.sln
 ```

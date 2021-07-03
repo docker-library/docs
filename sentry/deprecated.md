@@ -1,0 +1,1 @@
+This image is deprecated in favor of the full installation explained over at [Self-Hosted Sentry Docs](https://develop.sentry.dev/self-hosted/) (last updated July 2019; [getsentry/docker-sentry#189](https://github.com/getsentry/docker-sentry/pull/189)).

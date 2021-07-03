@@ -1,12 +1,51 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "storm/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "storm/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
+# Quick reference
+
+-	**Maintained by**:  
+	[the Docker Community](https://github.com/31z4/storm-docker)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
--	[`0.9.7`, `0.9` (*0.9.7/Dockerfile*)](https://github.com/31z4/storm-docker/blob/93746fa3936afb3751565860632d3e49d53e9b0e/0.9.7/Dockerfile)
--	[`0.10.2`, `0.10` (*0.10.2/Dockerfile*)](https://github.com/31z4/storm-docker/blob/93746fa3936afb3751565860632d3e49d53e9b0e/0.10.2/Dockerfile)
--	[`1.0.2`, `1.0`, `latest` (*1.0.2/Dockerfile*)](https://github.com/31z4/storm-docker/blob/93746fa3936afb3751565860632d3e49d53e9b0e/1.0.2/Dockerfile)
+-	[`1.1.3`, `1.1`](https://github.com/31z4/storm-docker/blob/664a7f4730f58be00fd7fe0526d2c13180107c6f/1.1.3/Dockerfile)
+-	[`1.2.3`, `1.2`](https://github.com/31z4/storm-docker/blob/664a7f4730f58be00fd7fe0526d2c13180107c6f/1.2.3/Dockerfile)
+-	[`2.2.0`, `2.2`, `latest`](https://github.com/31z4/storm-docker/blob/9eae4ab08d30cfab29c784b4d9e7d1c187fa0348/2.2.0/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/storm`)](https://github.com/docker-library/official-images/blob/master/library/storm). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fstorm).
+# Quick reference (cont.)
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/storm/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/storm/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+-	**Where to file issues**:  
+	[https://github.com/31z4/storm-docker/issues](https://github.com/31z4/storm-docker/issues)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/storm/)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/storm/` directory](https://github.com/docker-library/repo-info/blob/master/repos/storm) ([history](https://github.com/docker-library/repo-info/commits/master/repos/storm))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images repo's `library/storm` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fstorm)  
+	[official-images repo's `library/storm` file](https://github.com/docker-library/official-images/blob/master/library/storm) ([history](https://github.com/docker-library/official-images/commits/master/library/storm))
+
+-	**Source of this description**:  
+	[docs repo's `storm/` directory](https://github.com/docker-library/docs/tree/master/storm) ([history](https://github.com/docker-library/docs/commits/master/storm))
 
 # What is Apache Storm?
 
@@ -20,92 +59,113 @@ Apache Storm is a distributed computation framework written predominantly in the
 
 ## Running topologies in local mode
 
-Assuming you have `storm-starter-topologies-1.0.2.jar` in the current directory.
+Assuming you have `topology.jar` in the current directory.
 
-	$ docker run -it -v $(pwd)/storm-starter-topologies-1.0.2.jar:/topology.jar storm:1.0.2 storm jar /topology.jar org.apache.storm.starter.ExclamationTopology
+```console
+$ docker run -it -v $(pwd)/topology.jar:/topology.jar storm storm jar /topology.jar org.apache.storm.starter.ExclamationTopology
+```
 
 ## Setting up a minimal Storm cluster
 
 1.	[Apache Zookeeper](https://zookeeper.apache.org/) is a must for running a Storm cluster. Start it first. Since the Zookeeper "fails fast" it's better to always restart it.
 
-		$ docker run -d --restart always --name some-zookeeper zookeeper:3.4
+	```console
+	$ docker run -d --restart always --name some-zookeeper zookeeper
+	```
 
 2.	The Nimbus daemon has to be connected with the Zookeeper. It's also a "fail fast" system.
 
-		$ docker run -d --restart always --name some-nimbus --link some-zookeeper:zookeeper storm:1.0.2 storm nimbus
+	```console
+	$ docker run -d --restart always --name some-nimbus --link some-zookeeper:zookeeper storm storm nimbus
+	```
 
 3.	Finally start a single Supervisor node. It will talk to the Nimbus and Zookeeper.
 
-		$ docker run -d --restart always --name supervisor --link some-zookeeper:zookeeper --link some-nimbus:nimbus storm:1.0.2 storm supervisor
+	```console
+	$ docker run -d --restart always --name supervisor --link some-zookeeper:zookeeper --link some-nimbus:nimbus storm storm supervisor
+	```
 
 4.	Now you can submit a topology to our cluster.
 
-		$ docker run --link some-nimbus:nimbus -it --rm -v $(pwd)/storm-starter-topologies-1.0.2.jar:/topology.jar storm:1.0.2 storm jar /topology.jar org.apache.storm.starter.WordCountTopology topology
+	```console
+	$ docker run --link some-nimbus:nimbus -it --rm -v $(pwd)/topology.jar:/topology.jar storm storm jar /topology.jar org.apache.storm.starter.WordCountTopology topology
+	```
 
 5.	Optionally, you can start the Storm UI.
 
-		$ docker run -d -p 8080:8080 --restart always --name ui --link some-nimbus:nimbus storm:1.0.2 storm ui
+	```console
+	$ docker run -d -p 8080:8080 --restart always --name ui --link some-nimbus:nimbus storm storm ui
+	```
 
-## ... via [`docker-compose`](https://github.com/docker/compose)
+## ... via [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/) or [`docker-compose`](https://github.com/docker/compose)
 
-Example `docker-compose.yml` for `storm`:
+Example `stack.yml` for `storm`:
 
 ```yaml
-version: '2'
+version: '3.1'
+
 services:
-    zookeeper:
-        image: zookeeper:3.4
-        container_name: zookeeper
-        restart: always
+  zookeeper:
+    image: zookeeper
+    container_name: zookeeper
+    restart: always
 
-    nimbus:
-        image: storm:1.0.2
-        container_name: nimbus
-        command: storm nimbus
-        depends_on:
-            - zookeeper
-        links:
-            - zookeeper
-        restart: always
-        ports:
-            - 6627:6627
+  nimbus:
+    image: storm
+    container_name: nimbus
+    command: storm nimbus
+    depends_on:
+      - zookeeper
+    links:
+      - zookeeper
+    restart: always
+    ports:
+      - 6627:6627
 
-    supervisor:
-        image: storm:1.0.2
-        container_name: supervisor
-        command: storm supervisor
-        depends_on:
-            - nimbus
-            - zookeeper
-        links:
-            - nimbus
-            - zookeeper
-        restart: always
+  supervisor:
+    image: storm
+    container_name: supervisor
+    command: storm supervisor
+    depends_on:
+      - nimbus
+      - zookeeper
+    links:
+      - nimbus
+      - zookeeper
+    restart: always
 ```
 
-Run `docker-compose up` and wait for it to initialize completely. The Nimbus will be available at your host and port `6627`.
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/9efeec18b6b2ed232cf0fbd3914b6211e16e242c/storm/stack.yml)
+
+Run `docker stack deploy -c stack.yml storm` (or `docker-compose -f stack.yml up`) and wait for it to initialize completely. The Nimbus will be available at `http://swarm-ip:6627`, `http://localhost:6627`, or `http://host-ip:6627` (as appropriate).
 
 ## Configuration
 
-This image uses [default configuration](https://github.com/apache/storm/blob/v1.0.2/conf/defaults.yaml) of the Apache Storm. There are two main ways to change it.
+This image uses [default configuration](https://github.com/apache/storm/blob/v2.0.0/conf/defaults.yaml) of the Apache Storm. There are two main ways to change it.
 
 1.	Using command line arguments.
 
-		$ docker run -d --restart always --name nimbus storm:1.0.2 storm nimbus -c storm.zookeeper.servers="[zookeeper]"
+	```console
+	$ docker run -d --restart always --name nimbus storm storm nimbus -c storm.zookeeper.servers='["zookeeper"]'
+	```
 
 2.	Assuming you have `storm.yaml` in the current directory you can mount it as a volume.
 
-		$ docker run -it -v $(pwd)/storm.yaml:/conf/storm.yaml storm:1.0.2 storm nimbus
+	```console
+	$ docker run -it -v $(pwd)/storm.yaml:/conf/storm.yaml storm storm nimbus
+	```
 
 ## Logging
 
-This image uses [default logging configuration](https://github.com/apache/storm/tree/v1.0.2/log4j2). All logs go to the `/logs` directory by default.
+This image uses [default logging configuration](https://github.com/apache/storm/tree/v2.0.0/log4j2). All logs go to the `/logs` directory by default.
 
 ## Data persistence
 
 No data are persisted by default. For convenience there are `/data` and `/logs` directories in the image owned by `storm` user. Use them accordingly to persist data and logs using volumes.
 
-	$ docker run -it -v /logs -v /data storm:1.0.2 storm nimbus
+```console
+$ docker run -it -v /logs -v /data storm storm nimbus
+```
 
 *Please be noticed that using paths other than those predefined is likely to cause permission denied errors. It's because for [security reasons](https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/#user) the Storm is running under the non-root `storm` user.*
 
@@ -113,28 +173,8 @@ No data are persisted by default. For convenience there are `/data` and `/logs` 
 
 View [license information](http://storm.apache.org/about/free-and-open-source.html) for the software contained in this image.
 
-# Supported Docker versions
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 
-This image is officially supported on Docker version 1.12.5.
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `storm/` directory](https://github.com/docker-library/repo-info/tree/master/repos/storm).
 
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/31z4/storm-docker/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/31z4/storm-docker/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`storm/` directory](https://github.com/docker-library/docs/tree/master/storm) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

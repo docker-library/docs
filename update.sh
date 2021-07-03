@@ -1,51 +1,72 @@
 #!/bin/bash
-set -eo pipefail
+set -Eeuo pipefail
 
 cd "$(dirname "$(readlink -f "$BASH_SOURCE")")"
 helperDir='.template-helpers'
 
-repos=( "$@" )
-if [ ${#repos[@]} -eq 0 ]; then
-	repos=( */ )
+# usage: ./update.sh [--namespace NAMESPACE] [[NAMESPACE/]IMAGE ...]
+#    ie: ./update.sh
+#        ./update.sh debian golang
+#        ./update.sh --namespace tianontesting debian golang
+#        ./update.sh tianontesting/debian tianontestingmore/golang
+#        BASHBREW_ARCH=windows-amd64 BASHBREW_ARCH_NAMESPACES='...' ./update.sh --namespace winamd64
+
+forceNamespace=
+if [ "${1:-}" = '--namespace' ]; then
+	shift
+	forceNamespace="$1"
+	shift
 fi
-repos=( "${repos[@]%/}" )
+
+images=( "$@" )
+if [ ${#images[@]} -eq 0 ]; then
+	images=( */ )
+fi
+images=( "${images[@]%/}" )
+
+if [ -n "$forceNamespace" ]; then
+	images=( "${images[@]/#/"$forceNamespace/"}" )
+fi
 
 replace_field() {
-	repo="$1"
+	targetFile="$1"
 	field="$2"
 	content="$3"
 	extraSed="${4:-}"
 	sed_escaped_value="$(echo "$content" | sed 's/[\/&]/\\&/g')"
 	sed_escaped_value="${sed_escaped_value//$'\n'/\\n}"
-	sed -ri "s/${extraSed}%%${field}%%${extraSed}/$sed_escaped_value/g" "$repo/README.md"
+	sed -ri -e "s/${extraSed}%%${field}%%${extraSed}/$sed_escaped_value/g" "$targetFile"
 }
 
-dockerLatest="$(curl -fsSL 'https://get.docker.com/latest')"
+for image in "${images[@]}"; do
+	repo="${image##*/}"
+	namespace="${image%$repo}"
+	namespace="${namespace%/}"
 
-for repo in "${repos[@]}"; do
-	if [ -x "$repo/update.sh" ]; then
-		( set -x; "$repo/update.sh" )
+	# this is used by subscripts to determine whether we're pushing /_/xxx or /r/ARCH/xxx
+	# (especialy for "supported tags")
+	export ARCH_SPECIFIC_DOCS=
+	if [ -n "$namespace" ] && [ -n "${BASHBREW_ARCH:-}" ]; then
+		export ARCH_SPECIFIC_DOCS=1
 	fi
-	
+
+	if [ -x "$repo/update.sh" ]; then
+		( set -x; "$repo/update.sh" "$image" )
+	fi
+
 	if [ -e "$repo/content.md" ]; then
 		githubRepo="$(cat "$repo/github-repo")"
-		
-		mailingList="$(cat "$repo/mailing-list.md" 2>/dev/null || true)"
-		if [ "$mailingList" ]; then
-			mailingList=" $mailingList "
-		else
-			mailingList=' '
-		fi
-		
-		dockerVersions="$(cat "$repo/docker-versions.md" 2>/dev/null || cat "$helperDir/docker-versions.md")"
-		
-		userFeedback="$(cat "$repo/user-feedback.md" 2>/dev/null || cat "$helperDir/user-feedback.md")"
-		
+		maintainer="$(cat "$repo/maintainer.md")"
+
+		issues="$(cat "$repo/issues.md" 2>/dev/null || cat "$helperDir/issues.md")"
+		getHelp="$(cat "$repo/get-help.md" 2>/dev/null || cat "$helperDir/get-help.md")"
+
 		license="$(cat "$repo/license.md" 2>/dev/null || true)"
+		licenseCommon="$(cat "$repo/license-common.md" 2>/dev/null || cat "$helperDir/license-common.md")"
 		if [ "$license" ]; then
-			license=$'\n\n''# License'$'\n\n'"$license"
+			license=$'\n\n''# License'$'\n\n'"$license"$'\n\n'"$licenseCommon"
 		fi
-		
+
 		logo=
 		logoFile=
 		for f in png svg; do
@@ -57,68 +78,126 @@ for repo in "${repos[@]}"; do
 		if [ "$logoFile" ]; then
 			logoCommit="$(git log -1 --format='format:%H' -- "$logoFile" 2>/dev/null || true)"
 			[ "$logoCommit" ] || logoCommit='master'
+			logoUrl="https://raw.githubusercontent.com/docker-library/docs/$logoCommit/$logoFile"
 			if [ "${logoFile##*.}" = 'svg' ]; then
-				logo="![logo](https://rawgit.com/docker-library/docs/$logoCommit/$logoFile)"
-			else
-				logo="![logo](https://raw.githubusercontent.com/docker-library/docs/$logoCommit/$logoFile)"
+				# https://stackoverflow.com/a/16462143/433558
+				logoUrl+='?sanitize=true'
 			fi
+			logo="![logo]($logoUrl)"
 		fi
-		
+
+		stack=
+		stackYml=
+		stackUrl=
+		if [ -f "$repo/stack.yml" ]; then
+			stack="$(cat "$repo/stack.md" 2>/dev/null || cat "$helperDir/stack.md")"
+			stackYml=$'```yaml\n'"$(cat "$repo/stack.yml")"$'\n```'
+			stackCommit="$(git log -1 --format='format:%H' -- "$repo/stack.yml" 2>/dev/null || true)"
+			[ "$stackCommit" ] || stackCommit='master'
+			stackUrl="https://raw.githubusercontent.com/docker-library/docs/$stackCommit/$repo/stack.yml"
+		fi
+
 		compose=
 		composeYml=
 		if [ -f "$repo/docker-compose.yml" ]; then
 			compose="$(cat "$repo/compose.md" 2>/dev/null || cat "$helperDir/compose.md")"
 			composeYml=$'```yaml\n'"$(cat "$repo/docker-compose.yml")"$'\n```'
 		fi
-		
+
 		deprecated=
 		if [ -f "$repo/deprecated.md" ]; then
-			deprecated=$'# **DEPRECATED**\n\n'
+			deprecated=$'# **DEPRECATION NOTICE**\n\n'
 			deprecated+="$(cat "$repo/deprecated.md")"
 			deprecated+=$'\n\n'
 		fi
-		
-		{ echo -n "$deprecated"; cat "$helperDir/template.md"; } > "$repo/README.md"
-		
-		echo '  TAGS => generate-dockerfile-links-partial.sh'
-		partial="$("$helperDir/generate-dockerfile-links-partial.sh" "$repo")"
-		[ "$partial" ]
-		replace_field "$repo" 'TAGS' "$partial"
-		
+
+		if ! partial="$("$helperDir/generate-dockerfile-links-partial.sh" "$repo")"; then
+			{
+				echo
+				echo "WARNING: failed to fetch tags for '$repo'; skipping!"
+				echo
+			} >&2
+			continue
+		fi
+
+		targetFile="$repo/README.md"
+
+		{
+			cat "$helperDir/autogenerated-warning.md"
+			echo
+
+			if [ -n "$ARCH_SPECIFIC_DOCS" ]; then
+				echo '**Note:** this is the "per-architecture" repository for the `'"$BASHBREW_ARCH"'` builds of [the `'"$repo"'` official image](https://hub.docker.com/_/'"$repo"') -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image'\''s source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).'
+				echo
+			fi
+
+			echo -n "$deprecated"
+			cat "$helperDir/template.md"
+		} > "$targetFile"
+
+		echo '  TAGS => generate-dockerfile-links-partial.sh "'"$repo"'"'
+		if [ -z "$partial" ]; then
+			if [ -n "$ARCH_SPECIFIC_DOCS" ]; then
+				partial='**No supported tags found!**'$'\n\n''It is very likely that `%%REPO%%` does not support the currently selected architecture (`'"$BASHBREW_ARCH"'`).'
+			else
+				# opensuse, etc
+				partial='**No supported tags**'
+			fi
+		elif [ -n "$ARCH_SPECIFIC_DOCS" ]; then
+			jenkinsJobUrl="https://doi-janky.infosiftr.net/job/multiarch/job/$BASHBREW_ARCH/job/$repo/"
+			jenkinsImageUrl="https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/$BASHBREW_ARCH/job/$repo.svg?label=%%IMAGE%%%20%20build%20job"
+			partial+=$'\n\n''[![%%IMAGE%% build status badge]('"$jenkinsImageUrl"')]('"$jenkinsJobUrl"')'
+		fi
+		replace_field "$targetFile" 'TAGS' "$partial"
+
+		echo '  ARCHES => arches.sh "'"$repo"'"'
+		arches="$("$helperDir/arches.sh" "$repo")"
+		[ -n "$arches" ] || arches='**No supported architectures**'
+		replace_field "$targetFile" 'ARCHES' "$arches"
+
 		echo '  CONTENT => '"$repo"'/content.md'
-		replace_field "$repo" 'CONTENT' "$(cat "$repo/content.md")"
-		
+		replace_field "$targetFile" 'CONTENT' "$(cat "$repo/content.md")"
+
 		echo '  VARIANT => variant.sh'
-		replace_field "$repo" 'VARIANT' "$("$helperDir/variant.sh" "$repo")"
-		
+		replace_field "$targetFile" 'VARIANT' "$("$helperDir/variant.sh" "$repo")"
+
 		# has to be after CONTENT because it's contained in content.md
 		echo "  LOGO => $logo"
-		replace_field "$repo" 'LOGO' "$logo" '\s*'
-		
+		replace_field "$targetFile" 'LOGO' "$logo" '\s*'
+
+		echo '  STACK => '"$repo"'/stack.md'
+		replace_field "$targetFile" 'STACK' "$stack"
+		echo '  STACK-YML => '"$repo"'/stack.yml'
+		replace_field "$targetFile" 'STACK-YML' "$stackYml"
+		echo '  STACK-URL => '"$repo"'/stack.yml'
+		replace_field "$targetFile" 'STACK-URL' "$stackUrl"
+
 		echo '  COMPOSE => '"$repo"'/compose.md'
-		replace_field "$repo" 'COMPOSE' "$compose"
-		
+		replace_field "$targetFile" 'COMPOSE' "$compose"
 		echo '  COMPOSE-YML => '"$repo"'/docker-compose.yml'
-		replace_field "$repo" 'COMPOSE-YML' "$composeYml"
-		
-		echo '  DOCKER-VERSIONS => '"$repo"'/docker-versions.md'
-		replace_field "$repo" 'DOCKER-VERSIONS' "$dockerVersions"
-		
-		echo '  DOCKER-LATEST => "'"$dockerLatest"'"'
-		replace_field "$repo" 'DOCKER-LATEST' "$dockerLatest"
-		
+		replace_field "$targetFile" 'COMPOSE-YML' "$composeYml"
+
 		echo '  LICENSE => '"$repo"'/license.md'
-		replace_field "$repo" 'LICENSE' "$license"
-		
-		echo '  USER-FEEDBACK => '"$repo"'/user-feedback.md'
-		replace_field "$repo" 'USER-FEEDBACK' "$userFeedback"
-		
+		replace_field "$targetFile" 'LICENSE' "$license"
+
+		echo '  ISSUES => "'"$issues"'"'
+		replace_field "$targetFile" 'ISSUES' "$issues"
+
+		echo '  GET-HELP => "'"$getHelp"'"'
+		replace_field "$targetFile" 'GET-HELP' "$getHelp"
+
+		echo '  MAINTAINER => "'"$maintainer"'"'
+		replace_field "$targetFile" 'MAINTAINER' "$maintainer"
+
+		echo '  IMAGE => "'"$image"'"'
+		replace_field "$targetFile" 'IMAGE' "$image"
+
 		echo '  REPO => "'"$repo"'"'
-		replace_field "$repo" 'REPO' "$repo"
-		
+		replace_field "$targetFile" 'REPO' "$repo"
+
 		echo '  GITHUB-REPO => "'"$githubRepo"'"'
-		replace_field "$repo" 'GITHUB-REPO' "$githubRepo"
-		
+		replace_field "$targetFile" 'GITHUB-REPO' "$githubRepo"
+
 		echo
 	else
 		echo >&2 "skipping $repo: missing repo/content.md"

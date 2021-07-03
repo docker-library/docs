@@ -1,1 +1,3 @@
-View [license information](https://github.com/crate/crate/blob/master/LICENSE.txt) for the software contained in this image.
+CrateDB is licensed under the Apache License 2.0.
+
+See [LICENSE](https://github.com/crate/crate/blob/master/LICENSE) for more information.

@@ -1,16 +1,56 @@
-# **DEPRECATED**
+<!--
 
-This image is deprecated due to maintainer inactivity (last updated Aug 2015; [docker-library/official-images#1012](https://github.com/docker-library/official-images/pull/1012)).
+********************************************************************************
 
-If a representative of the CRUX community would like to step up and continue maintenance, [the contribution guidelines](https://github.com/docker-library/official-images/blob/master/README.md#contributing-to-the-standard-library) are the best place to start.
+WARNING:
+
+    DO NOT EDIT "crux/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "crux/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
+# **DEPRECATION NOTICE**
+
+This image is deprecated due to maintainer inactivity (last updated Nov 2018; [docker-library/official-images#5073](https://github.com/docker-library/official-images/pull/5073)).
+
+See [docker-library/official-images#7130](https://github.com/docker-library/official-images/pull/7130) for discussion around an in-progress upstream update.
+
+# Quick reference
+
+-	**Maintained by**:  
+	[Docker Crux](https://github.com/cruxlinux/docker-crux)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `3.1` (*Dockerfile*)](https://github.com/prologic/docker-crux/blob/c614d61c53c05c02a43a34187fa1370db2c61524/Dockerfile)
+-	[`3.4`, `latest`](https://github.com/cruxlinux/docker-crux/blob/da081a9004c5559cd77a1e2c2521193ccb2afdd2/Dockerfile)
+-	[`3.2`](https://github.com/cruxlinux/docker-crux/blob/07e966125ba3d6d48a12489830917e8a9bc983a7/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/crux`)](https://github.com/docker-library/official-images/blob/master/library/crux). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fcrux).
+# Quick reference (cont.)
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/crux/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/crux/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+-	**Where to file issues**:  
+	[https://github.com/therealprologic/docker-crux/issues](https://github.com/therealprologic/docker-crux/issues)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/crux/), [`arm64v8`](https://hub.docker.com/r/arm64v8/crux/)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/crux/` directory](https://github.com/docker-library/repo-info/blob/master/repos/crux) ([history](https://github.com/docker-library/repo-info/commits/master/repos/crux))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images repo's `library/crux` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fcrux)  
+	[official-images repo's `library/crux` file](https://github.com/docker-library/official-images/blob/master/library/crux) ([history](https://github.com/docker-library/official-images/commits/master/library/crux))
+
+-	**Source of this description**:  
+	[docs repo's `crux/` directory](https://github.com/docker-library/docs/tree/master/crux) ([history](https://github.com/docker-library/docs/commits/master/crux))
 
 # What is CRUX?
 
@@ -28,28 +68,12 @@ Finally, it strives to use new features as they become available, as long as the
 -	A person who prefers editing configuration files with an editor to using a GUI.
 -	Someone who does not hesitate to download and compile programs from the source.
 
-# Supported Docker versions
+# License
 
-This image is officially supported on Docker version 1.12.5.
+View [license information](https://crux.nu/Main/Handbook3-3-Intro) for the software contained in this image (scroll to the "License" section at the end of the linked document).
 
-Support for older versions (down to 1.6) is provided on a best-effort basis.
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `crux/` directory](https://github.com/docker-library/repo-info/tree/master/repos/crux).
 
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/therealprologic/docker-crux/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/therealprologic/docker-crux/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`crux/` directory](https://github.com/docker-library/docs/tree/master/crux) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

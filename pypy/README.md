@@ -1,15 +1,71 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "pypy/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "pypy/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
+# Quick reference
+
+-	**Maintained by**:  
+	[the Docker Community](https://github.com/docker-library/pypy)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
--	[`2-5.6.0`, `2-5.6`, `2-5`, `2` (*2/Dockerfile*)](https://github.com/docker-library/pypy/blob/491b6dc82d4275a452d48b800ee7a91e48ef9991/2/Dockerfile)
--	[`2-5.6.0-slim`, `2-5.6-slim`, `2-5-slim`, `2-slim` (*2/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/491b6dc82d4275a452d48b800ee7a91e48ef9991/2/slim/Dockerfile)
--	[`2-5.6.0-onbuild`, `2-5.6-onbuild`, `2-5-onbuild`, `2-onbuild` (*2/onbuild/Dockerfile*)](https://github.com/docker-library/pypy/blob/b48e8489ab794a2bacfd396c2f8e1a5b06d6ae48/2/onbuild/Dockerfile)
--	[`3-5.5.0-alpha`, `3-5.5.0`, `3-5.5`, `3-5`, `3`, `latest` (*3/Dockerfile*)](https://github.com/docker-library/pypy/blob/d280acb013c2248452caf98117334eab9da5a8f6/3/Dockerfile)
--	[`3-5.5.0-alpha-slim`, `3-5.5.0-slim`, `3-5.5-slim`, `3-5-slim`, `3-slim`, `slim` (*3/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/95f6702ded19c44f5dc872ff5ea0374138804829/3/slim/Dockerfile)
--	[`3-5.5.0-alpha-onbuild`, `3-5.5.0-onbuild`, `3-5.5-onbuild`, `3-5-onbuild`, `3-onbuild`, `onbuild` (*3/onbuild/Dockerfile*)](https://github.com/docker-library/pypy/blob/b48e8489ab794a2bacfd396c2f8e1a5b06d6ae48/3/onbuild/Dockerfile)
+(See ["What's the difference between 'Shared' and 'Simple' tags?" in the FAQ](https://github.com/docker-library/faq#whats-the-difference-between-shared-and-simple-tags).)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/pypy`)](https://github.com/docker-library/official-images/blob/master/library/pypy). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fpypy).
+## Simple Tags
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/pypy/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/pypy/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+-	[`3.7-7.3.5-buster`, `3.7-7.3-buster`, `3.7-7-buster`, `3.7-buster`, `3-7.3.5-buster`, `3-7.3-buster`, `3-7-buster`, `3-buster`, `buster`](https://github.com/docker-library/pypy/blob/ad122d7739f0d5e422be892847f10f809a14bf95/3.7/buster/Dockerfile)
+-	[`3.7-7.3.5-slim`, `3.7-7.3-slim`, `3.7-7-slim`, `3.7-slim`, `3-7.3.5-slim`, `3-7.3-slim`, `3-7-slim`, `3-slim`, `slim`, `3.7-7.3.5-slim-buster`, `3.7-7.3-slim-buster`, `3.7-7-slim-buster`, `3.7-slim-buster`, `3-7.3.5-slim-buster`, `3-7.3-slim-buster`, `3-7-slim-buster`, `3-slim-buster`, `slim-buster`](https://github.com/docker-library/pypy/blob/ad122d7739f0d5e422be892847f10f809a14bf95/3.7/slim-buster/Dockerfile)
+-	[`3.7-7.3.5-windowsservercore-1809`, `3.7-7.3-windowsservercore-1809`, `3.7-7-windowsservercore-1809`, `3.7-windowsservercore-1809`, `3-7.3.5-windowsservercore-1809`, `3-7.3-windowsservercore-1809`, `3-7-windowsservercore-1809`, `3-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/docker-library/pypy/blob/ad122d7739f0d5e422be892847f10f809a14bf95/3.7/windows/windowsservercore-1809/Dockerfile)
+-	[`2.7-7.3.5-buster`, `2.7-7.3-buster`, `2.7-7-buster`, `2.7-buster`, `2-7.3.5-buster`, `2-7.3-buster`, `2-7-buster`, `2-buster`](https://github.com/docker-library/pypy/blob/21958c24c2a1357eb2464331598705649f2f7896/2.7/buster/Dockerfile)
+-	[`2.7-7.3.5-slim`, `2.7-7.3-slim`, `2.7-7-slim`, `2.7-slim`, `2-7.3.5-slim`, `2-7.3-slim`, `2-7-slim`, `2-slim`, `2.7-7.3.5-slim-buster`, `2.7-7.3-slim-buster`, `2.7-7-slim-buster`, `2.7-slim-buster`, `2-7.3.5-slim-buster`, `2-7.3-slim-buster`, `2-7-slim-buster`, `2-slim-buster`](https://github.com/docker-library/pypy/blob/21958c24c2a1357eb2464331598705649f2f7896/2.7/slim-buster/Dockerfile)
+-	[`2.7-7.3.5-windowsservercore-1809`, `2.7-7.3-windowsservercore-1809`, `2.7-7-windowsservercore-1809`, `2.7-windowsservercore-1809`, `2-7.3.5-windowsservercore-1809`, `2-7.3-windowsservercore-1809`, `2-7-windowsservercore-1809`, `2-windowsservercore-1809`](https://github.com/docker-library/pypy/blob/21958c24c2a1357eb2464331598705649f2f7896/2.7/windows/windowsservercore-1809/Dockerfile)
+
+## Shared Tags
+
+-	`3.7-7.3.5`, `3.7-7.3`, `3.7-7`, `3.7`, `3-7.3.5`, `3-7.3`, `3-7`, `3`, `latest`:
+	-	[`3.7-7.3.5-buster`](https://github.com/docker-library/pypy/blob/ad122d7739f0d5e422be892847f10f809a14bf95/3.7/buster/Dockerfile)
+	-	[`3.7-7.3.5-windowsservercore-1809`](https://github.com/docker-library/pypy/blob/ad122d7739f0d5e422be892847f10f809a14bf95/3.7/windows/windowsservercore-1809/Dockerfile)
+-	`3.7-7.3.5-windowsservercore`, `3.7-7.3-windowsservercore`, `3.7-7-windowsservercore`, `3.7-windowsservercore`, `3-7.3.5-windowsservercore`, `3-7.3-windowsservercore`, `3-7-windowsservercore`, `3-windowsservercore`, `windowsservercore`:
+	-	[`3.7-7.3.5-windowsservercore-1809`](https://github.com/docker-library/pypy/blob/ad122d7739f0d5e422be892847f10f809a14bf95/3.7/windows/windowsservercore-1809/Dockerfile)
+-	`2.7-7.3.5`, `2.7-7.3`, `2.7-7`, `2.7`, `2-7.3.5`, `2-7.3`, `2-7`, `2`:
+	-	[`2.7-7.3.5-buster`](https://github.com/docker-library/pypy/blob/21958c24c2a1357eb2464331598705649f2f7896/2.7/buster/Dockerfile)
+	-	[`2.7-7.3.5-windowsservercore-1809`](https://github.com/docker-library/pypy/blob/21958c24c2a1357eb2464331598705649f2f7896/2.7/windows/windowsservercore-1809/Dockerfile)
+-	`2.7-7.3.5-windowsservercore`, `2.7-7.3-windowsservercore`, `2.7-7-windowsservercore`, `2.7-windowsservercore`, `2-7.3.5-windowsservercore`, `2-7.3-windowsservercore`, `2-7-windowsservercore`, `2-windowsservercore`:
+	-	[`2.7-7.3.5-windowsservercore-1809`](https://github.com/docker-library/pypy/blob/21958c24c2a1357eb2464331598705649f2f7896/2.7/windows/windowsservercore-1809/Dockerfile)
+
+# Quick reference (cont.)
+
+-	**Where to file issues**:  
+	[https://github.com/docker-library/pypy/issues](https://github.com/docker-library/pypy/issues)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/pypy/), [`arm64v8`](https://hub.docker.com/r/arm64v8/pypy/), [`i386`](https://hub.docker.com/r/i386/pypy/), [`s390x`](https://hub.docker.com/r/s390x/pypy/), [`windows-amd64`](https://hub.docker.com/r/winamd64/pypy/)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/pypy/` directory](https://github.com/docker-library/repo-info/blob/master/repos/pypy) ([history](https://github.com/docker-library/repo-info/commits/master/repos/pypy))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images repo's `library/pypy` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fpypy)  
+	[official-images repo's `library/pypy` file](https://github.com/docker-library/official-images/blob/master/library/pypy) ([history](https://github.com/docker-library/official-images/commits/master/library/pypy))
+
+-	**Source of this description**:  
+	[docs repo's `pypy/` directory](https://github.com/docker-library/docs/tree/master/pypy) ([history](https://github.com/docker-library/docs/commits/master/pypy))
 
 # What is PyPy?
 
@@ -26,18 +82,32 @@ PyPy started out as a Python interpreter written in the Python language itself. 
 ## Create a `Dockerfile` in your Python app project
 
 ```dockerfile
-FROM pypy:3-onbuild
+FROM pypy:3
+
+WORKDIR /usr/src/app
+
+COPY requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . .
+
 CMD [ "pypy3", "./your-daemon-or-script.py" ]
 ```
 
-or (if you need to use PyPy 2):
+or (if you need to use Python 2):
 
 ```dockerfile
-FROM pypy:2-onbuild
+FROM pypy:2
+
+WORKDIR /usr/src/app
+
+COPY requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . .
+
 CMD [ "pypy", "./your-daemon-or-script.py" ]
 ```
-
-These images include multiple `ONBUILD` triggers, which should be all you need to bootstrap most applications. The build will `COPY` a `requirements.txt` file,`RUN pip install` on said file, and then copy the current directory into`/usr/src/app`.
 
 You can then build and run the Docker image:
 
@@ -66,46 +136,31 @@ The `pypy` images come in many flavors, each designed for a specific use case.
 
 ## `pypy:<version>`
 
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of. This tag is based off of [`buildpack-deps`](https://registry.hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `pypy:slim`
+Some of these tags may have names like buster in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
-This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `pypy`. Unless you are working in an environment where *only* the pypy image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
+This tag is based off of [`buildpack-deps`](https://hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of Docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
 
-## `pypy:onbuild`
+## `pypy:<version>-slim`
 
-This image makes building derivative images easier. For most use cases, creating a `Dockerfile` in the base of your project directory with the line `FROM pypy:onbuild` will be enough to create a stand-alone image for your project.
+This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `pypy`. Unless you are working in an environment where *only* the `pypy` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
 
-While the `onbuild` variant is really useful for "getting off the ground running" (zero to Dockerized in a short period of time), it's not recommended for long-term usage within a project due to the lack of control over *when* the `ONBUILD` triggers fire (see also [`docker/docker#5714`](https://github.com/docker/docker/issues/5714), [`docker/docker#8240`](https://github.com/docker/docker/issues/8240), [`docker/docker#11917`](https://github.com/docker/docker/issues/11917)).
+## `pypy:<version>-windowsservercore`
 
-Once you've got a handle on how your project functions within Docker, you'll probably want to adjust your `Dockerfile` to inherit from a non-`onbuild` variant and copy the commands from the `onbuild` variant `Dockerfile` (moving the `ONBUILD` lines to the end and removing the `ONBUILD` keywords) into your own file so that you have tighter control over them and more transparency for yourself and others looking at your `Dockerfile` as to what it does. This also makes it easier to add additional requirements as time goes on (such as installing more packages before performing the previously-`ONBUILD` steps).
+This image is based on [Windows Server Core (`microsoft/windowsservercore`)](https://hub.docker.com/r/microsoft/windowsservercore/). As such, it only works in places which that image does, such as Windows 10 Professional/Enterprise (Anniversary Edition) or Windows Server 2016.
+
+For information about how to get Docker running on Windows, please see the relevant "Quick Start" guide provided by Microsoft:
+
+-	[Windows Server Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_server)
+-	[Windows 10 Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)
 
 # License
 
 View [license information](https://bitbucket.org/pypy/pypy/src/c3ff0dd6252b6ba0d230f3624dbb4aab8973a1d0/LICENSE?at=default) for software contained in this image.
 
-# Supported Docker versions
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 
-This image is officially supported on Docker version 1.12.5.
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `pypy/` directory](https://github.com/docker-library/repo-info/tree/master/repos/pypy).
 
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/pypy/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/docker-library/pypy/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`pypy/` directory](https://github.com/docker-library/docs/tree/master/pypy) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

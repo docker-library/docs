@@ -1,14 +1,52 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "vault/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "vault/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
+# Quick reference
+
+-	**Maintained by**:  
+	[HashiCorp](https://github.com/hashicorp/docker-vault)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
--	[`0.6.0` (*0.6/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/3d12aa78cdbdce22b3d3e30f1093843f21b0a8fa/0.6/Dockerfile)
--	[`0.6`, `0.6.4`, `latest` (*0.6.4/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/7bbdde58de683a2bb6e384e4c20e30308b4ff882/0.6.4/Dockerfile)
--	[`0.6.1` (*0.6.1/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/3d12aa78cdbdce22b3d3e30f1093843f21b0a8fa/0.6.1/Dockerfile)
--	[`0.6.2` (*0.6.2/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/3d3957180d689ecddb537aa799a878171280e8a3/0.6.2/Dockerfile)
--	[`0.6.3` (*0.6.3/Dockerfile*)](https://github.com/hashicorp/docker-vault/blob/7bbdde58de683a2bb6e384e4c20e30308b4ff882/0.6.3/Dockerfile)
+-	[`1.8.0-rc1`](https://github.com/hashicorp/docker-vault/blob/14e6ef0801b26aef7cd8d4c3fd52f552c6f6b897/0.X/Dockerfile)
+-	[`1.7.3`, `latest`](https://github.com/hashicorp/docker-vault/blob/d35c24ced09941188833c420c3d300c94cd97345/0.X/Dockerfile)
+-	[`1.6.5`](https://github.com/hashicorp/docker-vault/blob/293e64bfd19428a1c90c0ab09bb1c63510ecb688/0.X/Dockerfile)
+-	[`1.5.9`](https://github.com/hashicorp/docker-vault/blob/72a3539fd91085b2d51cfc87cd9bcf0804e3a5cf/0.X/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/vault`)](https://github.com/docker-library/official-images/blob/master/library/vault). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fvault).
+# Quick reference (cont.)
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/vault/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/vault/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+-	**Where to file issues**:  
+	[https://github.com/hashicorp/docker-vault/issues](https://github.com/hashicorp/docker-vault/issues)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/vault/), [`arm32v6`](https://hub.docker.com/r/arm32v6/vault/), [`arm64v8`](https://hub.docker.com/r/arm64v8/vault/), [`i386`](https://hub.docker.com/r/i386/vault/)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/vault/` directory](https://github.com/docker-library/repo-info/blob/master/repos/vault) ([history](https://github.com/docker-library/repo-info/commits/master/repos/vault))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images repo's `library/vault` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fvault)  
+	[official-images repo's `library/vault` file](https://github.com/docker-library/official-images/blob/master/library/vault) ([history](https://github.com/docker-library/official-images/commits/master/library/vault))
+
+-	**Source of this description**:  
+	[docs repo's `vault/` directory](https://github.com/docker-library/docs/tree/master/vault) ([history](https://github.com/docker-library/docs/commits/master/vault))
 
 # Vault
 
@@ -17,7 +55,7 @@ Vault is a tool for securely accessing secrets. A secret is anything that you wa
 -	[Vault documentation](https://www.vaultproject.io/)
 -	[Vault on GitHub](https://github.com/hashicorp/vault)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/726714ced14b1e14b6dd99fc82f20f14f1d3cfb1/vault/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/fab4b16599d1424cee888d47af850e0ba07e6a37/vault/logo.svg?sanitize=true)
 
 # Using the Container
 
@@ -25,15 +63,18 @@ We chose Alpine as a lightweight base with a reasonably small surface area for s
 
 Vault always runs under [dumb-init](https://github.com/Yelp/dumb-init), which handles reaping zombie processes and forwards signals on to all processes running in the container. This binary is built by HashiCorp and signed with our [GPG key](https://www.hashicorp.com/security.html), so you can verify the signed package used to build a given base image.
 
-Running the Vault container with no arguments will give you a Vault server in [development mode](https://www.vaultproject.io/docs/concepts/dev-server.html). The provided entry point script will also look for Vault subcommands and run `vault` with that subcommand. For example, you can execute `docker run vault
-status` and it will run the `vault status` command inside the container. The entry point also adds some special configuration options as detailed in the sections below when running the `server` subcommand. Any other command gets `exec`-ed inside the container under `dumb-init`.
+Running the Vault container with no arguments will give you a Vault server in [development mode](https://www.vaultproject.io/docs/concepts/dev-server.html). The provided entry point script will also look for Vault subcommands and run `vault` with that subcommand. For example, you can execute `docker run vault status` and it will run the `vault status` command inside the container. The entry point also adds some special configuration options as detailed in the sections below when running the `server` subcommand. Any other command gets `exec`-ed inside the container under `dumb-init`.
 
 The container exposes two optional `VOLUME`s:
 
 -	`/vault/logs`, to use for writing persistent audit logs. By default nothing is written here; the `file` audit backend must be enabled with a path under this directory.
 -	`/vault/file`, to use for writing persistent storage data when using the`file` data storage plugin. By default nothing is written here (a `dev` server uses an in-memory data store); the `file` data storage backend must be enabled in Vault's configuration before the container is started.
 
-The container has a Vault configuration directory set up at `/vault/config` and the server will load any HCL or JSON configuration files placed here by binding a volume or by composing a new image and adding files. Alternatively, configuration can be added by passing the configuration JSON via environment variable `VAULT_LOCAL_CONFIG`. Please note that due to a bug in the current release of Vault (0.6.0), you should *not* use the name `local.json` for any configuration file in this directory.
+The container has a Vault configuration directory set up at `/vault/config` and the server will load any HCL or JSON configuration files placed here by binding a volume or by composing a new image and adding files. Alternatively, configuration can be added by passing the configuration JSON via environment variable `VAULT_LOCAL_CONFIG`.
+
+## Memory Locking and 'setcap'
+
+The container will attempt to lock memory to prevent sensitive values from being swapped to disk and as a result must have `--cap-add=IPC_LOCK` provided to `docker run`. Since the Vault binary runs as a non-root user, `setcap` is used to give the binary the ability to lock memory. With some Docker storage plugins in some distributions this call will not work correctly; it seems to fail most often with AUFS. The memory locking behavior can be disabled by setting the `SKIP_SETCAP` environment variable to any non-empty value.
 
 ## Running Vault for Development
 
@@ -46,12 +87,12 @@ This runs a completely in-memory Vault server, which is useful for development b
 When running in development mode, two additional options can be set via environment variables:
 
 -	`VAULT_DEV_ROOT_TOKEN_ID`: This sets the ID of the initial generated root token to the given value
--	`VAULT_DEV_LISTEN_ADDRESS`: This sets the IP:port of the development server listener
+-	`VAULT_DEV_LISTEN_ADDRESS`: This sets the IP:port of the development server listener (defaults to 0.0.0.0:8200)
 
 As an example:
 
 ```console
-$ docker run --cap-add=IPC_LOCK -e 'VAULT_DEV_ROOT_TOKEN_ID=myroot' -e 'VAULT_DEV_LISTEN_ADDRESS=127.0.0.1:1234' vault
+$ docker run --cap-add=IPC_LOCK -e 'VAULT_DEV_ROOT_TOKEN_ID=myroot' -e 'VAULT_DEV_LISTEN_ADDRESS=0.0.0.0:1234' vault
 ```
 
 ## Running Vault in Server Mode
@@ -72,28 +113,8 @@ Since 0.6.3 this container also supports the `VAULT_REDIRECT_INTERFACE` and `VAU
 
 View [license information](https://raw.githubusercontent.com/hashicorp/vault/master/LICENSE) for the software contained in this image.
 
-# Supported Docker versions
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 
-This image is officially supported on Docker version 1.12.5.
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `vault/` directory](https://github.com/docker-library/repo-info/tree/master/repos/vault).
 
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/hashicorp/docker-vault/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/hashicorp/docker-vault/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`vault/` directory](https://github.com/docker-library/docs/tree/master/vault) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

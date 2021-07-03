@@ -1,13 +1,68 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "perl/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "perl/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
+# Quick reference
+
+-	**Maintained by**:  
+	[the Perl Community](https://github.com/Perl/docker-perl)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `5`, `5.24`, `5.24.0` (*5.024.000-64bit/Dockerfile*)](https://github.com/perl/docker-perl/blob/7e333260aac375a11f63d632eec38db2454ace7e/5.024.000-64bit/Dockerfile)
--	[`5.22`, `5.22.2` (*5.022.002-64bit/Dockerfile*)](https://github.com/perl/docker-perl/blob/7e333260aac375a11f63d632eec38db2454ace7e/5.022.002-64bit/Dockerfile)
--	[`threaded`, `5-threaded`, `5.24-threaded`, `5.24.0-threaded` (*5.024.000-64bit,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/7e333260aac375a11f63d632eec38db2454ace7e/5.024.000-64bit,threaded/Dockerfile)
--	[`5.22-threaded`, `5.22.2-threaded` (*5.022.002-64bit,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/7e333260aac375a11f63d632eec38db2454ace7e/5.022.002-64bit,threaded/Dockerfile)
+-	[`5.34.0`, `5.34`, `5`, `latest`, `5.34.0-buster`, `5.34-buster`, `5-buster`, `buster`](https://github.com/perl/docker-perl/blob/311f05366d91427d289740dd15fb9401dc4347ef/5.034.000-main-buster/Dockerfile)
+-	[`5.34.0-slim`, `5.34-slim`, `5-slim`, `slim`, `5.34.0-slim-buster`, `5.34-slim-buster`, `5-slim-buster`, `slim-buster`](https://github.com/perl/docker-perl/blob/311f05366d91427d289740dd15fb9401dc4347ef/5.034.000-slim-buster/Dockerfile)
+-	[`5.34.0-threaded`, `5.34-threaded`, `5-threaded`, `threaded`, `5.34.0-threaded-buster`, `5.34-threaded-buster`, `5-threaded-buster`, `threaded-buster`](https://github.com/perl/docker-perl/blob/311f05366d91427d289740dd15fb9401dc4347ef/5.034.000-main,threaded-buster/Dockerfile)
+-	[`5.34.0-slim-threaded`, `5.34-slim-threaded`, `5-slim-threaded`, `slim-threaded`, `5.34.0-slim-threaded-buster`, `5.34-slim-threaded-buster`, `5-slim-threaded-buster`, `slim-threaded-buster`](https://github.com/perl/docker-perl/blob/311f05366d91427d289740dd15fb9401dc4347ef/5.034.000-slim,threaded-buster/Dockerfile)
+-	[`5.32.1`, `5.32`, `5.32.1-buster`, `5.32-buster`](https://github.com/perl/docker-perl/blob/311f05366d91427d289740dd15fb9401dc4347ef/5.032.001-main-buster/Dockerfile)
+-	[`5.32.1-stretch`, `5.32-stretch`, `5-stretch`, `stretch`](https://github.com/perl/docker-perl/blob/311f05366d91427d289740dd15fb9401dc4347ef/5.032.001-main-stretch/Dockerfile)
+-	[`5.32.1-slim`, `5.32-slim`, `5.32.1-slim-buster`, `5.32-slim-buster`](https://github.com/perl/docker-perl/blob/311f05366d91427d289740dd15fb9401dc4347ef/5.032.001-slim-buster/Dockerfile)
+-	[`5.32.1-slim-stretch`, `5.32-slim-stretch`, `5-slim-stretch`, `slim-stretch`](https://github.com/perl/docker-perl/blob/311f05366d91427d289740dd15fb9401dc4347ef/5.032.001-slim-stretch/Dockerfile)
+-	[`5.32.1-threaded`, `5.32-threaded`, `5.32.1-threaded-buster`, `5.32-threaded-buster`](https://github.com/perl/docker-perl/blob/311f05366d91427d289740dd15fb9401dc4347ef/5.032.001-main,threaded-buster/Dockerfile)
+-	[`5.32.1-threaded-stretch`, `5.32-threaded-stretch`, `5-threaded-stretch`, `threaded-stretch`](https://github.com/perl/docker-perl/blob/311f05366d91427d289740dd15fb9401dc4347ef/5.032.001-main,threaded-stretch/Dockerfile)
+-	[`5.32.1-slim-threaded`, `5.32-slim-threaded`, `5.32.1-slim-threaded-buster`, `5.32-slim-threaded-buster`](https://github.com/perl/docker-perl/blob/311f05366d91427d289740dd15fb9401dc4347ef/5.032.001-slim,threaded-buster/Dockerfile)
+-	[`5.32.1-slim-threaded-stretch`, `5.32-slim-threaded-stretch`, `5-slim-threaded-stretch`, `slim-threaded-stretch`](https://github.com/perl/docker-perl/blob/311f05366d91427d289740dd15fb9401dc4347ef/5.032.001-slim,threaded-stretch/Dockerfile)
+-	[`5.30.3`, `5.30`, `5.30.3-buster`, `5.30-buster`](https://github.com/perl/docker-perl/blob/311f05366d91427d289740dd15fb9401dc4347ef/5.030.003-main-buster/Dockerfile)
+-	[`5.30.3-stretch`, `5.30-stretch`](https://github.com/perl/docker-perl/blob/311f05366d91427d289740dd15fb9401dc4347ef/5.030.003-main-stretch/Dockerfile)
+-	[`5.30.3-slim`, `5.30-slim`, `5.30.3-slim-buster`, `5.30-slim-buster`](https://github.com/perl/docker-perl/blob/311f05366d91427d289740dd15fb9401dc4347ef/5.030.003-slim-buster/Dockerfile)
+-	[`5.30.3-slim-stretch`, `5.30-slim-stretch`](https://github.com/perl/docker-perl/blob/311f05366d91427d289740dd15fb9401dc4347ef/5.030.003-slim-stretch/Dockerfile)
+-	[`5.30.3-threaded`, `5.30-threaded`, `5.30.3-threaded-buster`, `5.30-threaded-buster`](https://github.com/perl/docker-perl/blob/311f05366d91427d289740dd15fb9401dc4347ef/5.030.003-main,threaded-buster/Dockerfile)
+-	[`5.30.3-threaded-stretch`, `5.30-threaded-stretch`](https://github.com/perl/docker-perl/blob/311f05366d91427d289740dd15fb9401dc4347ef/5.030.003-main,threaded-stretch/Dockerfile)
+-	[`5.30.3-slim-threaded`, `5.30-slim-threaded`, `5.30.3-slim-threaded-buster`, `5.30-slim-threaded-buster`](https://github.com/perl/docker-perl/blob/311f05366d91427d289740dd15fb9401dc4347ef/5.030.003-slim,threaded-buster/Dockerfile)
+-	[`5.30.3-slim-threaded-stretch`, `5.30-slim-threaded-stretch`](https://github.com/perl/docker-perl/blob/311f05366d91427d289740dd15fb9401dc4347ef/5.030.003-slim,threaded-stretch/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/perl`)](https://github.com/docker-library/official-images/blob/master/library/perl). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fperl).
+# Quick reference (cont.)
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/perl/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/perl/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+-	**Where to file issues**:  
+	[https://github.com/Perl/docker-perl/issues](https://github.com/Perl/docker-perl/issues)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/perl/), [`arm32v7`](https://hub.docker.com/r/arm32v7/perl/), [`arm64v8`](https://hub.docker.com/r/arm64v8/perl/), [`i386`](https://hub.docker.com/r/i386/perl/), [`ppc64le`](https://hub.docker.com/r/ppc64le/perl/), [`s390x`](https://hub.docker.com/r/s390x/perl/)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/perl/` directory](https://github.com/docker-library/repo-info/blob/master/repos/perl) ([history](https://github.com/docker-library/repo-info/commits/master/repos/perl))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images repo's `library/perl` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fperl)  
+	[official-images repo's `library/perl` file](https://github.com/docker-library/official-images/blob/master/library/perl) ([history](https://github.com/docker-library/official-images/commits/master/library/perl))
+
+-	**Source of this description**:  
+	[docs repo's `perl/` directory](https://github.com/docker-library/docs/tree/master/perl) ([history](https://github.com/docker-library/docs/commits/master/perl))
 
 # What is Perl?
 
@@ -43,32 +98,86 @@ For many simple, single file projects, you may find it inconvenient to write a c
 $ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp perl:5.20 perl your-daemon-or-script.pl
 ```
 
+## Coexisting with Debian's `/usr/bin/perl`
+
+The *perl* binary built for this image is installed in `/usr/local/bin/perl`, along with other standard tools in the Perl distribution such as `prove` and `perldoc`, as well as [`cpanm`](https://metacpan.org/pod/App::cpanminus) for installing [CPAN](https://www.cpan.org) modules. Containers running this image will also have their `PATH` enviroment set like `/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin` to ensure that this *perl* binary will be found *first* in normal usage.
+
+As this official image of Docker is built using the [buildpack-deps](https://hub.docker.com/_/buildpack-deps) image (or [debian:slim](https://hub.docker.com/_/debian) for `:slim` variants,) this image also contains a `/usr/bin/perl` as supplied by the [Debian](https://www.debian.org) project. This is needed for the underlying [dpkg](https://en.wikipedia.org/wiki/Dpkg)/[apt](https://en.wikipedia.org/wiki/APT_(software)) package management tools to work correctly, as docker-perl cannot be used here due to different configuration (such as `@INC` and installation paths, as well as other differences like whether `-Dusethreads` is included or not.)
+
+See also [Perl/docker-perl#26](https://github.com/Perl/docker-perl/issues/26) for an extended discussion.
+
+## Signal handling behavior notice
+
+As Perl will run as PID 1 by default in containers (unless an [ENTRYPOINT](https://docs.docker.com/engine/reference/builder/#entrypoint) is set,) special care needs to be considered when expecting to send signals (particularly SIGINT or SIGTERM) to it. For example, running
+
+```console
+$ docker run -it --name sleeping_beauty --rm perl:5.20 perl -E 'sleep 300'
+```
+
+and doing on another terminal,
+
+```console
+$ docker exec sleeping_beauty kill 1
+```
+
+will *not* stop the perl running on the `sleeping_beauty` container (it will keep running until the `sleep 300` finishes.) To do so, one must set a signal handler like this:
+
+```console
+$ docker run -it --name quick_nap --rm perl:5.20 perl -E '$SIG{TERM} = sub { $sig++; say "recv TERM" }; sleep 300; say "waking up" if $sig'
+```
+
+so doing `docker exec quick_nap kill 1` (or the simpler `docker stop quick_nap`) will immediately stop the container, and print `recv TERM` in the other terminal. Note that the signal handler does not stop the perl process itself unless it calls a `die` or `exit`; in this case, perl will continue and print `waking up` *after* it receives the signal.
+
+If your Perl program is expected to handle signals and fork child processes, it is encouraged to use an init-like program for ENTRYPOINT, such as [dumb-init](https://github.com/Yelp/dumb-init) or [tini](https://github.com/krallin/tini) (the latter is available since Docker 1.13 via the `docker run --init` flag.)
+
+See also [Signals in perlipc](https://perldoc.pl/perlipc#Signals) as well as [Perl/docker-perl#44](https://github.com/Perl/docker-perl/issues/44).
+
+## Example: Creating a reusable Carton image for Perl projects
+
+Suppose you have a project that uses [Carton](https://metacpan.org/pod/Carton) to manage Perl dependencies. You can create a `perl:carton` image that makes use of the [ONBUILD](https://docs.docker.com/engine/reference/builder/#onbuild) instruction in its `Dockerfile`, like this:
+
+```dockerfile
+FROM perl:5.26
+
+RUN cpanm Carton \
+    && mkdir -p /usr/src/app
+WORKDIR /usr/src/app
+
+ONBUILD COPY cpanfile* /usr/src/app
+ONBUILD RUN carton install
+
+ONBUILD COPY . /usr/src/app
+```
+
+Then, in your Carton project, you can now reduce your project's `Dockerfile` into a single line of `FROM perl:carton`, which may be enough to build a stand-alone image.
+
+Having a single `perl:carton` base image is useful especially if you have multiple Carton-based projects in development, to avoid "boilerplate" coding of installing Carton and/or copying the project source files into the derived image. Keep in mind, though, about certain things to consider when using the Perl image in this way:
+
+-	This kind of base image will hide the useful bits (such as the`COPY`/`RUN` above) in the image, separating it from more specific Dockerfiles using the base image. This might lead to confusion when creating further derived images, so be aware of how [ONBUILD triggers](https://docs.docker.com/engine/reference/builder/#onbuild) work and plan appropriately.
+-	There is the cost of maintaining an extra base image build, so if you're working on a single Carton project and/or plan to publish it, then it may be more preferable to derive directly from a versioned `perl` image instead.
+
+# Image Variants
+
+The `perl` images come in many flavors, each designed for a specific use case.
+
+## `perl:<version>`
+
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+Some of these tags may have names like buster or stretch in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+
+This tag is based off of [`buildpack-deps`](https://hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of Docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
+
+## `perl:<version>-slim`
+
+This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `perl`. Unless you are working in an environment where *only* the `perl` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
+
 # License
 
 View [license information](http://dev.perl.org/licenses/) for the software contained in this image.
 
-# Supported Docker versions
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 
-This image is officially supported on Docker version 1.12.5.
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `perl/` directory](https://github.com/docker-library/repo-info/tree/master/repos/perl).
 
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/Perl/docker-perl/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/Perl/docker-perl/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`perl/` directory](https://github.com/docker-library/docs/tree/master/perl) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

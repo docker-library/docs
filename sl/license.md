@@ -1,0 +1,1 @@
+By default the SL docker images do not include documentation or license files. If you require them, please remove `tsflags=nodocs` from `/etc/yum.conf` and run `yum reinstall mypackage` to recieve the documentation.

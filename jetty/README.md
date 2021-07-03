@@ -1,13 +1,72 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "jetty/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "jetty/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
+# Quick reference
+
+-	**Maintained by**:  
+	[the Docker Community](https://github.com/eclipse/jetty.docker)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
--	[`9.3.12`, `9.3`, `9`, `9.3.12-jre8`, `9.3-jre8`, `9-jre8`, `latest`, `jre8` (*9.3-jre8/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/09617a1ddc50bb080df9fa94ec5d636015449dbd/9.3-jre8/Dockerfile)
--	[`9.3.12-alpine`, `9.3-alpine`, `9-alpine`, `9.3.12-jre8-alpine`, `9.3-jre8-alpine`, `9-jre8-alpine`, `alpine`, `jre8-alpine` (*9.3-jre8/alpine/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/09617a1ddc50bb080df9fa94ec5d636015449dbd/9.3-jre8/alpine/Dockerfile)
--	[`9.2.19`, `9.2`, `9.2.19-jre8`, `9.2-jre8` (*9.2-jre8/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/422148d13cca3dfe4f4e6299185f7434725f9bd7/9.2-jre8/Dockerfile)
--	[`9.2.19-jre7`, `9.2-jre7`, `9-jre7`, `jre7` (*9.2-jre7/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/422148d13cca3dfe4f4e6299185f7434725f9bd7/9.2-jre7/Dockerfile)
+-	[`11.0.5-jre11-slim`](https://github.com/eclipse/jetty.docker/blob/729c020b15ed50fd9a8e47aee04ecddbcd6e7b6e/11.0-jre11-slim/Dockerfile)
+-	[`11.0.5-jre11`](https://github.com/eclipse/jetty.docker/blob/729c020b15ed50fd9a8e47aee04ecddbcd6e7b6e/11.0-jre11/Dockerfile)
+-	[`11.0.5-jdk16-slim`](https://github.com/eclipse/jetty.docker/blob/729c020b15ed50fd9a8e47aee04ecddbcd6e7b6e/11.0-jdk16-slim/Dockerfile)
+-	[`11.0.5`, `11.0.5-jdk16`](https://github.com/eclipse/jetty.docker/blob/729c020b15ed50fd9a8e47aee04ecddbcd6e7b6e/11.0-jdk16/Dockerfile)
+-	[`11.0.5-jdk11-slim`](https://github.com/eclipse/jetty.docker/blob/729c020b15ed50fd9a8e47aee04ecddbcd6e7b6e/11.0-jdk11-slim/Dockerfile)
+-	[`11.0.5-jdk11`](https://github.com/eclipse/jetty.docker/blob/729c020b15ed50fd9a8e47aee04ecddbcd6e7b6e/11.0-jdk11/Dockerfile)
+-	[`10.0.5-jre11-slim`](https://github.com/eclipse/jetty.docker/blob/729c020b15ed50fd9a8e47aee04ecddbcd6e7b6e/10.0-jre11-slim/Dockerfile)
+-	[`10.0.5-jre11`](https://github.com/eclipse/jetty.docker/blob/729c020b15ed50fd9a8e47aee04ecddbcd6e7b6e/10.0-jre11/Dockerfile)
+-	[`10.0.5-jdk16-slim`](https://github.com/eclipse/jetty.docker/blob/729c020b15ed50fd9a8e47aee04ecddbcd6e7b6e/10.0-jdk16-slim/Dockerfile)
+-	[`10.0.5`, `10.0.5-jdk16`](https://github.com/eclipse/jetty.docker/blob/729c020b15ed50fd9a8e47aee04ecddbcd6e7b6e/10.0-jdk16/Dockerfile)
+-	[`10.0.5-jdk11-slim`](https://github.com/eclipse/jetty.docker/blob/729c020b15ed50fd9a8e47aee04ecddbcd6e7b6e/10.0-jdk11-slim/Dockerfile)
+-	[`10.0.5-jdk11`](https://github.com/eclipse/jetty.docker/blob/729c020b15ed50fd9a8e47aee04ecddbcd6e7b6e/10.0-jdk11/Dockerfile)
+-	[`9.4.42-jre11-slim`, `9.4-jre11-slim`, `9-jre11-slim`](https://github.com/eclipse/jetty.docker/blob/c3f894018ed14515bb473355a23a06441ba3890b/9.4-jre11-slim/Dockerfile)
+-	[`9.4.42-jre11`, `9.4-jre11`, `9-jre11`](https://github.com/eclipse/jetty.docker/blob/c3f894018ed14515bb473355a23a06441ba3890b/9.4-jre11/Dockerfile)
+-	[`9.4.42-jre8-slim`, `9.4-jre8-slim`, `9-jre8-slim`](https://github.com/eclipse/jetty.docker/blob/c3f894018ed14515bb473355a23a06441ba3890b/9.4-jre8-slim/Dockerfile)
+-	[`9.4.42-jre8`, `9.4-jre8`, `9-jre8`](https://github.com/eclipse/jetty.docker/blob/c3f894018ed14515bb473355a23a06441ba3890b/9.4-jre8/Dockerfile)
+-	[`9.4.42-jdk16-slim`, `9.4-jdk16-slim`, `9-jdk16-slim`](https://github.com/eclipse/jetty.docker/blob/c3f894018ed14515bb473355a23a06441ba3890b/9.4-jdk16-slim/Dockerfile)
+-	[`9.4.42`, `9.4`, `9`, `9.4.42-jdk16`, `9.4-jdk16`, `9-jdk16`, `latest`, `jdk16`](https://github.com/eclipse/jetty.docker/blob/c3f894018ed14515bb473355a23a06441ba3890b/9.4-jdk16/Dockerfile)
+-	[`9.4.42-jdk11-slim`, `9.4-jdk11-slim`, `9-jdk11-slim`](https://github.com/eclipse/jetty.docker/blob/c3f894018ed14515bb473355a23a06441ba3890b/9.4-jdk11-slim/Dockerfile)
+-	[`9.4.42-jdk11`, `9.4-jdk11`, `9-jdk11`](https://github.com/eclipse/jetty.docker/blob/c3f894018ed14515bb473355a23a06441ba3890b/9.4-jdk11/Dockerfile)
+-	[`9.4.42-jdk8-slim`, `9.4-jdk8-slim`, `9-jdk8-slim`](https://github.com/eclipse/jetty.docker/blob/c3f894018ed14515bb473355a23a06441ba3890b/9.4-jdk8-slim/Dockerfile)
+-	[`9.4.42-jdk8`, `9.4-jdk8`, `9-jdk8`](https://github.com/eclipse/jetty.docker/blob/c3f894018ed14515bb473355a23a06441ba3890b/9.4-jdk8/Dockerfile)
+-	[`9.3.29-jre8`, `9.3-jre8`](https://github.com/eclipse/jetty.docker/blob/c47212fa6db5547a5090fa409c4ee3913bcc18ce/9.3-jre8/Dockerfile)
+-	[`9.2.30-jre8`, `9.2-jre8`](https://github.com/eclipse/jetty.docker/blob/481a3bcb16a8bf0ee11a4b67a4710050e5403064/9.2-jre8/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/jetty`)](https://github.com/docker-library/official-images/blob/master/library/jetty). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fjetty).
+# Quick reference (cont.)
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/jetty/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/jetty/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+-	**Where to file issues**:  
+	[https://github.com/eclipse/jetty.docker/issues](https://github.com/eclipse/jetty.docker/issues)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/jetty/), [`arm64v8`](https://hub.docker.com/r/arm64v8/jetty/)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/jetty/` directory](https://github.com/docker-library/repo-info/blob/master/repos/jetty) ([history](https://github.com/docker-library/repo-info/commits/master/repos/jetty))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images repo's `library/jetty` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fjetty)  
+	[official-images repo's `library/jetty` file](https://github.com/docker-library/official-images/blob/master/library/jetty) ([history](https://github.com/docker-library/official-images/commits/master/library/jetty))
+
+-	**Source of this description**:  
+	[docs repo's `jetty/` directory](https://github.com/docker-library/docs/tree/master/jetty) ([history](https://github.com/docker-library/docs/commits/master/jetty))
 
 # What is Jetty?
 
@@ -58,7 +117,7 @@ $ docker run -d jetty --list-config
 Configuration such as parameters and additional modules may also be passed in via the command line. For example:
 
 ```console
-$ docker run -d jetty --modules=jmx jetty.threadPool.maxThreads=500
+$ docker run -d jetty --module=jmx jetty.threadPool.maxThreads=500
 ```
 
 To update the server configuration in a derived Docker image, the `Dockerfile` may enable additional modules with `RUN` commands like:
@@ -69,7 +128,7 @@ FROM jetty
 RUN java -jar "$JETTY_HOME/start.jar" --add-to-startd=jmx,stats
 ```
 
-Modules may be configured in a `Dockerfile` by editing the properties in the corresponding `/var/lib/jetty/start.d/*.mod` file or the module can be deactivated by removing that file.
+Modules may be configured in a `Dockerfile` by editing the properties in the corresponding `/var/lib/jetty/start.d/*.ini` file or the module can be deactivated by removing that file.
 
 ### JVM Configuration
 
@@ -121,40 +180,16 @@ The `jetty` images come in many flavors, each designed for a specific use case.
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `jetty:alpine`
+## `jetty:<version>-slim`
 
-This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
-
-This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
-
-To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
+This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `jetty`. Unless you are working in an environment where *only* the `jetty` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
 
 # License
 
-View [license information](http://eclipse.org/jetty/licenses.php) for the software contained in this image.
+View [license information](http://eclipse.org/jetty/licenses.html) for the software contained in this image.
 
-# Supported Docker versions
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 
-This image is officially supported on Docker version 1.12.5.
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `jetty/` directory](https://github.com/docker-library/repo-info/tree/master/repos/jetty).
 
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/appropriate/docker-jetty/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/appropriate/docker-jetty/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`jetty/` directory](https://github.com/docker-library/docs/tree/master/jetty) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

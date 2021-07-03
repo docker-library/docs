@@ -1,16 +1,61 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "percona/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "percona/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
+# Quick reference
+
+-	**Maintained by**:  
+	[Percona](https://github.com/percona/percona-docker)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
--	[`5.7.16`, `5.7`, `5`, `latest` (*5.7/Dockerfile*)](https://github.com/docker-library/percona/blob/4f8e829e7d0f8929225a3b042177dbe604c75755/5.7/Dockerfile)
--	[`5.6.34`, `5.6` (*5.6/Dockerfile*)](https://github.com/docker-library/percona/blob/4f8e829e7d0f8929225a3b042177dbe604c75755/5.6/Dockerfile)
--	[`5.5.53`, `5.5` (*5.5/Dockerfile*)](https://github.com/docker-library/percona/blob/4f8e829e7d0f8929225a3b042177dbe604c75755/5.5/Dockerfile)
+-	[`8.0.23-14-centos`, `8.0-centos`, `8-centos`, `8.0.23-14`, `8.0`, `8`, `ps-8.0.23-14`, `ps-8.0`, `ps-8`](https://github.com/percona/percona-docker/blob/93b3cf2b7693c9dda94178fb3ce1d630e7f47a72/percona-server-8.0/Dockerfile)
+-	[`5.7.34-centos`, `5.7-centos`, `5-centos`, `centos`, `5.7.34`, `5.7`, `5`, `ps-5.7.34`, `ps-5.7`, `ps-5`, `latest`](https://github.com/percona/percona-docker/blob/5e8402df063be2a8174bedff478391dbc881ff2b/percona-server-5.7/Dockerfile-dockerhub)
+-	[`5.6.51-centos`, `5.6-centos`, `5.6.51`, `5.6`, `ps-5.6.51`, `ps-5.6`](https://github.com/percona/percona-docker/blob/f31a00a8b59ee17f9305403b109fd1eb50256493/percona-server-5.6/Dockerfile-dockerhub)
+-	[`psmdb-4.4.6`, `psmdb-4.4`](https://github.com/percona/percona-docker/blob/c6c38e717a00144f7ee7faa488741b6ea60235cc/percona-server-mongodb-4.4/Dockerfile)
+-	[`psmdb-4.2.14`, `psmdb-4.2`](https://github.com/percona/percona-docker/blob/5a7b7589afe005db9e296ebb2970225b5d5eb926/percona-server-mongodb-4.2/Dockerfile)
+-	[`psmdb-4.0.25`, `psmdb-4.0`](https://github.com/percona/percona-docker/blob/9e19345b462f76e908b5c9b2c5ffdbc4fb9dd65d/percona-server-mongodb-4.0/Dockerfile)
+-	[`psmdb-3.6.23`, `psmdb-3.6`](https://github.com/percona/percona-docker/blob/b32c7e632fe0d8b058ce32c0430a1783cfd557a0/percona-server-mongodb-3.6/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/percona`)](https://github.com/docker-library/official-images/blob/master/library/percona). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fpercona).
+# Quick reference (cont.)
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/percona/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/percona/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+-	**Where to file issues**:  
+	For issues with Percona Server: [Percona Server JIRA](https://jira.percona.com/issues/?jql=project+%3D+PS)
 
-# Percona Server
+	You will need to create an account if you do not have one.
 
-Percona Server is a fork of the MySQL relational database management system created by Percona.
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/percona/)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/percona/` directory](https://github.com/docker-library/repo-info/blob/master/repos/percona) ([history](https://github.com/docker-library/repo-info/commits/master/repos/percona))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images repo's `library/percona` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fpercona)  
+	[official-images repo's `library/percona` file](https://github.com/docker-library/official-images/blob/master/library/percona) ([history](https://github.com/docker-library/official-images/commits/master/library/percona))
+
+-	**Source of this description**:  
+	[docs repo's `percona/` directory](https://github.com/docker-library/docs/tree/master/percona) ([history](https://github.com/docker-library/docs/commits/master/percona))
+
+# Percona Server for MySQL
+
+Percona Server for MySQL is a fork of the MySQL relational database management system created by Percona.
 
 It aims to retain close compatibility to the official MySQL releases, while focusing on performance and increased visibility into server operations. Also included in Percona Server is XtraDB, Percona's fork of the InnoDB Storage Engine.
 
@@ -22,7 +67,7 @@ It aims to retain close compatibility to the official MySQL releases, while focu
 
 ## Start a `percona` server instance
 
-Starting a Percona instance is simple:
+Starting a Percona Server for MySQL instance is simple:
 
 ```console
 $ docker run --name some-percona -e MYSQL_ROOT_PASSWORD=my-secret-pw -d percona:tag
@@ -30,31 +75,50 @@ $ docker run --name some-percona -e MYSQL_ROOT_PASSWORD=my-secret-pw -d percona:
 
 ... where `some-percona` is the name you want to assign to your container, `my-secret-pw` is the password to be set for the MySQL root user and `tag` is the tag specifying the MySQL version you want. See the list above for relevant tags.
 
-## Connect to MySQL from an application in another Docker container
+## Connect to Percona Server from the MySQL command line client
 
-Since Percona is intended as a drop-in replacement for MySQL, it can be used with many applications. This image exposes the standard MySQL port (3306), so container linking makes the MySQL instance available to other application containers. Start your application container like this in order to link it to the MySQL container:
-
-```console
-$ docker run --name some-app --link some-percona:mysql -d application-that-uses-mysql
-```
-
-## Connect to Percona from the MySQL command line client
-
-The following command starts another percona container instance and runs the `mysql` command line client against your original percona container, allowing you to execute SQL statements against your database instance:
+The following command starts another `percona` container instance and runs the `mysql` command line client against your original `percona` container, allowing you to execute SQL statements against your database instance:
 
 ```console
-$ docker run -it --link some-percona:mysql --rm percona sh -c 'exec mysql -h"$MYSQL_PORT_3306_TCP_ADDR" -P"$MYSQL_PORT_3306_TCP_PORT" -uroot -p"$MYSQL_ENV_MYSQL_ROOT_PASSWORD"'
+$ docker run -it --network some-network --rm percona mysql -hsome-percona -uexample-user -p
 ```
 
-... where `some-percona` is the name of your original percona container.
+... where `some-percona` is the name of your original `percona` container (connected to the `some-network` Docker network).
 
-This image can also be used as a client for non-Docker or remote Percona instances:
+This image can also be used as a client for non-Docker or remote instances:
 
 ```console
 $ docker run -it --rm percona mysql -hsome.mysql.host -usome-mysql-user -p
 ```
 
 More information about the MySQL command line client can be found in the [MySQL documentation](http://dev.mysql.com/doc/en/mysql.html)
+
+## ... via [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/) or [`docker-compose`](https://github.com/docker/compose)
+
+Example `stack.yml` for `percona`:
+
+```yaml
+# Use root/example as user/password credentials
+version: '3.1'
+
+services:
+
+  db:
+    image: percona
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+```
+
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/9efeec18b6b2ed232cf0fbd3914b6211e16e242c/percona/stack.yml)
+
+Run `docker stack deploy -c stack.yml percona` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
 
 ## Container shell access and viewing MySQL logs
 
@@ -64,7 +128,7 @@ The `docker exec` command allows you to run commands inside a Docker container. 
 $ docker exec -it some-percona bash
 ```
 
-The Percona Server log is available through Docker's container log:
+The log is available through Docker's container log:
 
 ```console
 $ docker logs some-percona
@@ -72,21 +136,15 @@ $ docker logs some-percona
 
 ## Using a custom MySQL configuration file
 
-The Percona startup configuration is specified in the file `/etc/mysql/my.cnf`, and that file in turn includes any files found in the `/etc/mysql/conf.d` directory that end with `.cnf`. Settings in files in this directory will augment and/or override settings in `/etc/mysql/my.cnf`. If you want to use a customized MySQL configuration, you can create your alternative configuration file in a directory on the host machine and then mount that directory location as `/etc/mysql/conf.d` inside the `percona` container.
+The startup configuration is specified in the file `/etc/my.cnf`, and that file in turn includes any files found in the `/etc/my.cnf.d` directory that end with `.cnf`. Settings in files in this directory will augment and/or override settings in `/etc/my.cnf`. If you want to use a customized MySQL configuration, you can create your alternative configuration file in a directory on the host machine and then mount that directory location as `/etc/my.cnf.d` inside the `percona` container.
 
 If `/my/custom/config-file.cnf` is the path and name of your custom configuration file, you can start your `percona` container like this (note that only the directory path of the custom config file is used in this command):
 
 ```console
-$ docker run --name some-percona -v /my/custom:/etc/mysql/conf.d -e MYSQL_ROOT_PASSWORD=my-secret-pw -d percona:tag
+$ docker run --name some-percona -v /my/custom:/etc/my.cnf.d -e MYSQL_ROOT_PASSWORD=my-secret-pw -d percona:tag
 ```
 
-This will start a new container `some-percona` where the Percona instance uses the combined startup settings from `/etc/mysql/my.cnf` and `/etc/mysql/conf.d/config-file.cnf`, with settings from the latter taking precedence.
-
-Note that users on host systems with SELinux enabled may see issues with this. The current workaround is to assign the relevant SELinux policy type to your new config file so that the container will be allowed to mount it:
-
-```console
-$ chcon -Rt svirt_sandbox_file_t /my/custom
-```
+This will start a new container `some-percona` where the Percona Server for MySQL instance uses the combined startup settings from `/etc/my.cnf` and `/etc/my.cnf.d/config-file.cnf`, with settings from the latter taking precedence.
 
 ### Configuration without a `cnf` file
 
@@ -104,11 +162,15 @@ $ docker run -it --rm percona:tag --verbose --help
 
 ## Environment Variables
 
-When you start the `percona` image, you can adjust the configuration of the Percona instance by passing one or more environment variables on the `docker run` command line. Do note that none of the variables below will have any effect if you start the container with a data directory that already contains a database: any pre-existing database will always be left untouched on container startup.
+When you start the `percona` image, you can adjust the configuration of the instance by passing one or more environment variables on the `docker run` command line. Do note that none of the variables below will have any effect if you start the container with a data directory that already contains a database: any pre-existing database will always be left untouched on container startup.
 
 ### `MYSQL_ROOT_PASSWORD`
 
-This variable is mandatory and specifies the password that will be set for the Percona `root` superuser account. In the above example, it was set to `my-secret-pw`.
+This variable is mandatory and specifies the password that will be set for the `root` superuser account. In the above example, it was set to `my-secret-pw`.
+
+### `MYSQL_ROOT_HOST`
+
+By default, `root` can connect from anywhere. This option restricts root connections to be from the specified host only. Also `localhost` can be used here for the local-only root access.
 
 ### `MYSQL_DATABASE`
 
@@ -122,7 +184,7 @@ Do note that there is no need to use this mechanism to create the root superuser
 
 ### `MYSQL_ALLOW_EMPTY_PASSWORD`
 
-This is an optional variable. Set to `yes` to allow the container to be started with a blank password for the root user. *NOTE*: Setting this variable to `yes` is not recommended unless you really know what you are doing, since this will leave your Percona instance completely unprotected, allowing anyone to gain complete superuser access.
+This is an optional variable. Set to `yes` to allow the container to be started with a blank password for the root user. *NOTE*: Setting this variable to `yes` is not recommended unless you really know what you are doing, since this will leave your instance completely unprotected, allowing anyone to gain complete superuser access.
 
 ### `MYSQL_RANDOM_ROOT_PASSWORD`
 
@@ -132,9 +194,31 @@ This is an optional variable. Set to `yes` to generate a random initial password
 
 Sets root (*not* the user specified in `MYSQL_USER`!) user as expired once init is complete, forcing a password change on first login. *NOTE*: This feature is supported on MySQL 5.6+ only. Using this option on MySQL 5.5 will throw an appropriate error during initialization.
 
+### `MYSQL_INITDB_SKIP_TZINFO`
+
+At first run MySQL automatically loads from the local system the timezone information needed for the `CONVERT_TZ()` function. If it's is not what is intended, this option disables timezone loading.
+
+### `INIT_TOKUDB`
+
+Tuns on TokuDB Engine. It can be activated only when *transparent huge pages* (THP) are disabled.
+
+### `INIT_ROCKSDB`
+
+Tuns on RocksDB Engine.
+
+## Docker Secrets
+
+As an alternative to passing sensitive information via environment variables, `_FILE` may be appended to the previously listed environment variables, causing the initialization script to load the values for those variables from files present in the container. In particular, this can be used to load passwords from Docker secrets stored in `/run/secrets/<secret_name>` files. For example:
+
+```console
+$ docker run --name some-mysql -e MYSQL_ROOT_PASSWORD_FILE=/run/secrets/mysql-root -d percona:tag
+```
+
+Currently, this is only supported for `MYSQL_ROOT_PASSWORD`, `MYSQL_ROOT_HOST`, `MYSQL_DATABASE`, `MYSQL_USER`, and `MYSQL_PASSWORD`.
+
 # Initializing a fresh instance
 
-When a container is started for the first time, a new database with the specified name will be created and initialized with the provided configuration variables. Furthermore, it will execute files with extensions `.sh`, `.sql` and `.sql.gz` that are found in `/docker-entrypoint-initdb.d`. Files will be executed in alphabetical order. You can easily populate your percona services by [mounting a SQL dump into that directory](https://docs.docker.com/engine/tutorials/dockervolumes/#mount-a-host-file-as-a-data-volume) and provide [custom images](https://docs.docker.com/reference/builder/) with contributed data. SQL files will be imported by default to the database specified by the `MYSQL_DATABASE` variable.
+When a container is started for the first time, a new database with the specified name will be created and initialized with the provided configuration variables. Furthermore, it will execute files with extensions `.sh`, `.sql` and `.sql.gz` that are found in `/docker-entrypoint-initdb.d`. Files will be executed in alphabetical order. You can easily populate your `percona` services by [mounting a SQL dump into that directory](https://docs.docker.com/engine/tutorials/dockervolumes/#mount-a-host-file-as-a-data-volume) and provide [custom images](https://docs.docker.com/reference/builder/) with contributed data. SQL files will be imported by default to the database specified by the `MYSQL_DATABASE` variable.
 
 # Caveats
 
@@ -156,15 +240,11 @@ The Docker documentation is a good starting point for understanding the differen
 
 The `-v /my/own/datadir:/var/lib/mysql` part of the command mounts the `/my/own/datadir` directory from the underlying host system as `/var/lib/mysql` inside the container, where MySQL by default will write its data files.
 
-Note that users on host systems with SELinux enabled may see issues with this. The current workaround is to assign the relevant SELinux policy type to the new data directory so that the container will be allowed to access it:
-
-```console
-$ chcon -Rt svirt_sandbox_file_t /my/own/datadir
-```
-
 ## No connections until MySQL init completes
 
 If there is no database initialized when the container starts, then a default database will be created. While this is the expected behavior, this means that it will not accept incoming connections until such initialization completes. This may cause issues when using automation tools, such as `docker-compose`, which start several containers simultaneously.
+
+If the application you're trying to connect to MySQL does not handle MySQL downtime or waiting for MySQL to start gracefully, then a putting a connect-retry loop before the service starts might be necessary. For an example of such an implementation in the official images, see [WordPress](https://github.com/docker-library/wordpress/blob/1b48b4bccd7adb0f7ea1431c7b470a40e186f3da/docker-entrypoint.sh#L195-L235) or [Bonita](https://github.com/docker-library/docs/blob/9660a0cccb87d8db842f33bc0578d769caaf3ba9/bonita/stack.yml#L28-L44).
 
 ## Usage against an existing database
 
@@ -178,28 +258,20 @@ Most of the normal tools will work, although their usage might be a little convo
 $ docker exec some-percona sh -c 'exec mysqldump --all-databases -uroot -p"$MYSQL_ROOT_PASSWORD"' > /some/path/on/your/host/all-databases.sql
 ```
 
-# Supported Docker versions
+## Restoring data from dump files
 
-This image is officially supported on Docker version 1.12.5.
+For restoring data. You can use `docker exec` command with `-i` flag, similar to the following:
 
-Support for older versions (down to 1.6) is provided on a best-effort basis.
+```console
+$ docker exec -i some-percona sh -c 'exec mysql -uroot -p"$MYSQL_ROOT_PASSWORD"' < /some/path/on/your/host/all-databases.sql
+```
 
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
+# License
 
-# User Feedback
+View [license information](https://www.percona.com/doc/percona-server/LATEST/copyright.html) for the software contained in this image.
 
-## Issues
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/percona/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `percona/` directory](https://github.com/docker-library/repo-info/tree/master/repos/percona).
 
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/docker-library/percona/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`percona/` directory](https://github.com/docker-library/docs/tree/master/percona) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

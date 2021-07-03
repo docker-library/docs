@@ -1,0 +1,52 @@
+version: '3.2'
+
+services:
+  db:
+    image: mariadb
+    restart: always
+    volumes:
+      - db:/var/lib/mysql
+    environment:
+      - MYSQL_USER=friendica
+      - MYSQL_PASSWORD=friendica
+      - MYSQL_DATABASE=friendica
+      - MYSQL_RANDOM_ROOT_PASSWORD=yes
+
+  app:
+    image: friendica:apache
+    restart: always
+    ports:
+      - 8080:80
+    volumes:
+      - friendica:/var/www/html
+    environment:
+      - MYSQL_HOST=db
+      - MYSQL_USER=friendica
+      - MYSQL_PASSWORD=friendica
+      - MYSQL_DATABASE=friendica
+      - FRIENDICA_ADMIN_MAIL=root@friendica.local
+      - SITENAME=Friendica PWD Test Node
+      - FRIENDICA_NO_VALIDATION=true
+    hostname: friendica.local
+    depends_on:
+      - db
+
+  cron:
+    image: friendica:apache
+    restart: always
+    volumes:
+      - friendica:/var/www/html
+    entrypoint: /cron.sh
+    environment:
+      - MYSQL_HOST=db
+      - MYSQL_USER=friendica
+      - MYSQL_PASSWORD=friendica
+      - MYSQL_DATABASE=friendica
+      - FRIENDICA_ADMIN_MAIL=root@friendica.local
+      - SITENAME=Friendica PWD Test Node
+    depends_on:
+      - db
+
+volumes:
+  db:
+  friendica:

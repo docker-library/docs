@@ -1,17 +1,50 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "notary/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "notary/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
+# Quick reference
+
+-	**Maintained by**:  
+	[Docker, Inc.](https://github.com/docker/notary-official-images)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
--	[`server`, `server-0.5.0` (*notary-server/Dockerfile*)](https://github.com/docker/notary-official-images/blob/ff7ae14c71fa0f87f9e6bd8de81a78c20db66664/notary-server/Dockerfile)
--	[`signer`, `signer-0.5.0` (*notary-signer/Dockerfile*)](https://github.com/docker/notary-official-images/blob/ff7ae14c71fa0f87f9e6bd8de81a78c20db66664/notary-signer/Dockerfile)
--	[`server-0.4.2` (*notary-server/Dockerfile*)](https://github.com/docker/notary-official-images/blob/dcb19bd39abed92c206d3d95ad4ddf90c9e0e721/notary-server/Dockerfile)
--	[`signer-0.4.2` (*notary-signer/Dockerfile*)](https://github.com/docker/notary-official-images/blob/dcb19bd39abed92c206d3d95ad4ddf90c9e0e721/notary-signer/Dockerfile)
--	[`server-0.3.0` (*notary-server/Dockerfile*)](https://github.com/docker/notary-official-images/blob/5fbf22ada9e5167fe4e9340ac947e8b3110aceba/notary-server/Dockerfile)
--	[`signer-0.3.0` (*notary-signer/Dockerfile*)](https://github.com/docker/notary-official-images/blob/5fbf22ada9e5167fe4e9340ac947e8b3110aceba/notary-signer/Dockerfile)
--	[`server-0.2.0` (*notary-server/Dockerfile*)](https://github.com/docker/notary-official-images/blob/3ea5b74928929415f2faaa5df574c4745bf6d286/notary-server/Dockerfile)
--	[`signer-0.2.0` (*notary-signer/Dockerfile*)](https://github.com/docker/notary-official-images/blob/3ea5b74928929415f2faaa5df574c4745bf6d286/notary-signer/Dockerfile)
+-	[`server-0.6.1-2`, `server`](https://github.com/docker/notary-official-images/blob/fe7543aa8fc466423578b726570192028bbb818c/notary-server/Dockerfile)
+-	[`signer-0.6.1-2`, `signer`](https://github.com/docker/notary-official-images/blob/fe7543aa8fc466423578b726570192028bbb818c/notary-signer/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/notary`)](https://github.com/docker-library/official-images/blob/master/library/notary). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fnotary).
+# Quick reference (cont.)
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/notary/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/notary/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+-	**Where to file issues**:  
+	[https://github.com/docker/notary-official-images/issues](https://github.com/docker/notary-official-images/issues)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/notary/), [`arm32v6`](https://hub.docker.com/r/arm32v6/notary/), [`arm64v8`](https://hub.docker.com/r/arm64v8/notary/), [`i386`](https://hub.docker.com/r/i386/notary/), [`ppc64le`](https://hub.docker.com/r/ppc64le/notary/), [`s390x`](https://hub.docker.com/r/s390x/notary/)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/notary/` directory](https://github.com/docker-library/repo-info/blob/master/repos/notary) ([history](https://github.com/docker-library/repo-info/commits/master/repos/notary))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images repo's `library/notary` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fnotary)  
+	[official-images repo's `library/notary` file](https://github.com/docker-library/official-images/blob/master/library/notary) ([history](https://github.com/docker-library/official-images/commits/master/library/notary))
+
+-	**Source of this description**:  
+	[docs repo's `notary/` directory](https://github.com/docker-library/docs/tree/master/notary) ([history](https://github.com/docker-library/docs/commits/master/notary))
 
 # How to use this repository
 
@@ -55,7 +88,7 @@ The components you *must* provide are the certificates and keys, and the links f
 
 If you require a different configuration, you should wrap this image with your own Dockerfile.
 
-For more details on how to configure your Notary server, please read the [docs](https://github.com/docker/notary/blob/master/docs/reference/server-config.md).
+For more details on how to configure your Notary server, please read the [docs](https://github.com/theupdateframework/notary/blob/master/docs/reference/server-config.md).
 
 # Notary Signer
 
@@ -86,40 +119,20 @@ The components you *must* provide are the certificates and keys, and the link fo
 
 If you require a different configuration, you should wrap this image with your own Dockerfile.
 
-For more details on how to configure your Notary signer, please read the [docs](https://github.com/docker/notary/blob/master/docs/reference/signer-config.md).
+For more details on how to configure your Notary signer, please read the [docs](https://github.com/theupdateframework/notary/blob/master/docs/reference/signer-config.md).
 
 ## Database Migrations
 
-Notary server and signer both use the [migrate tool](https://github.com/mattes/migrate) to manage database updates. The migration files can be found [here](https://github.com/docker/notary/tree/master/migrations/) and are an ordered list of plain SQL files. The migrate tool manages schema versions to ensure that migrations start and end at the correct point.
+Notary server and signer both use the [migrate tool](https://github.com/golang-migrate/migrate) to manage database updates. The migration files can be found [here](https://github.com/theupdateframework/notary/tree/master/migrations/) and are an ordered list of plain SQL files. The migrate tool manages schema versions to ensure that migrations start and end at the correct point.
 
 We strongly recommend you create separate databases and users with restricted permissions such that the server cannot access the signer's database and vice versa.
 
 # License
 
-View [license information](https://github.com/docker/notary/blob/master/LICENSE) for the software contained in this image.
+View [license information](https://github.com/theupdateframework/notary/blob/master/LICENSE) for the software contained in this image.
 
-# Supported Docker versions
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 
-This image is officially supported on Docker version 1.12.5.
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `notary/` directory](https://github.com/docker-library/repo-info/tree/master/repos/notary).
 
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker/notary-official-images/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/docker/notary-official-images/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`notary/` directory](https://github.com/docker-library/docs/tree/master/notary) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

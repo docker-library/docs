@@ -1,35 +1,103 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "python/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "python/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
+# Quick reference
+
+-	**Maintained by**:  
+	[the Docker Community](https://github.com/docker-library/python)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
--	[`2.7.12`, `2.7`, `2` (*2.7/Dockerfile*)](https://github.com/docker-library/python/blob/693a75332e8ae5ad3bfae6e8399c4d7cc3cb6181/2.7/Dockerfile)
--	[`2.7.12-slim`, `2.7-slim`, `2-slim` (*2.7/slim/Dockerfile*)](https://github.com/docker-library/python/blob/693a75332e8ae5ad3bfae6e8399c4d7cc3cb6181/2.7/slim/Dockerfile)
--	[`2.7.12-alpine`, `2.7-alpine`, `2-alpine` (*2.7/alpine/Dockerfile*)](https://github.com/docker-library/python/blob/693a75332e8ae5ad3bfae6e8399c4d7cc3cb6181/2.7/alpine/Dockerfile)
--	[`2.7.12-wheezy`, `2.7-wheezy`, `2-wheezy` (*2.7/wheezy/Dockerfile*)](https://github.com/docker-library/python/blob/693a75332e8ae5ad3bfae6e8399c4d7cc3cb6181/2.7/wheezy/Dockerfile)
--	[`2.7.12-onbuild`, `2.7-onbuild`, `2-onbuild` (*2.7/onbuild/Dockerfile*)](https://github.com/docker-library/python/blob/7663560df7547e69d13b1b548675502f4e0917d1/2.7/onbuild/Dockerfile)
--	[`2.7.12-windowsservercore`, `2.7-windowsservercore`, `2-windowsservercore` (*2.7/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/python/blob/693a75332e8ae5ad3bfae6e8399c4d7cc3cb6181/2.7/windows/windowsservercore/Dockerfile)
--	[`3.3.6`, `3.3` (*3.3/Dockerfile*)](https://github.com/docker-library/python/blob/693a75332e8ae5ad3bfae6e8399c4d7cc3cb6181/3.3/Dockerfile)
--	[`3.3.6-slim`, `3.3-slim` (*3.3/slim/Dockerfile*)](https://github.com/docker-library/python/blob/693a75332e8ae5ad3bfae6e8399c4d7cc3cb6181/3.3/slim/Dockerfile)
--	[`3.3.6-alpine`, `3.3-alpine` (*3.3/alpine/Dockerfile*)](https://github.com/docker-library/python/blob/693a75332e8ae5ad3bfae6e8399c4d7cc3cb6181/3.3/alpine/Dockerfile)
--	[`3.3.6-wheezy`, `3.3-wheezy` (*3.3/wheezy/Dockerfile*)](https://github.com/docker-library/python/blob/693a75332e8ae5ad3bfae6e8399c4d7cc3cb6181/3.3/wheezy/Dockerfile)
--	[`3.3.6-onbuild`, `3.3-onbuild` (*3.3/onbuild/Dockerfile*)](https://github.com/docker-library/python/blob/9a9021f2134d953165b31d98cacb95aa34076f90/3.3/onbuild/Dockerfile)
--	[`3.4.5`, `3.4` (*3.4/Dockerfile*)](https://github.com/docker-library/python/blob/693a75332e8ae5ad3bfae6e8399c4d7cc3cb6181/3.4/Dockerfile)
--	[`3.4.5-slim`, `3.4-slim` (*3.4/slim/Dockerfile*)](https://github.com/docker-library/python/blob/693a75332e8ae5ad3bfae6e8399c4d7cc3cb6181/3.4/slim/Dockerfile)
--	[`3.4.5-alpine`, `3.4-alpine` (*3.4/alpine/Dockerfile*)](https://github.com/docker-library/python/blob/693a75332e8ae5ad3bfae6e8399c4d7cc3cb6181/3.4/alpine/Dockerfile)
--	[`3.4.5-wheezy`, `3.4-wheezy` (*3.4/wheezy/Dockerfile*)](https://github.com/docker-library/python/blob/693a75332e8ae5ad3bfae6e8399c4d7cc3cb6181/3.4/wheezy/Dockerfile)
--	[`3.4.5-onbuild`, `3.4-onbuild` (*3.4/onbuild/Dockerfile*)](https://github.com/docker-library/python/blob/9a9021f2134d953165b31d98cacb95aa34076f90/3.4/onbuild/Dockerfile)
--	[`3.5.2`, `3.5`, `3`, `latest` (*3.5/Dockerfile*)](https://github.com/docker-library/python/blob/693a75332e8ae5ad3bfae6e8399c4d7cc3cb6181/3.5/Dockerfile)
--	[`3.5.2-slim`, `3.5-slim`, `3-slim`, `slim` (*3.5/slim/Dockerfile*)](https://github.com/docker-library/python/blob/693a75332e8ae5ad3bfae6e8399c4d7cc3cb6181/3.5/slim/Dockerfile)
--	[`3.5.2-alpine`, `3.5-alpine`, `3-alpine`, `alpine` (*3.5/alpine/Dockerfile*)](https://github.com/docker-library/python/blob/693a75332e8ae5ad3bfae6e8399c4d7cc3cb6181/3.5/alpine/Dockerfile)
--	[`3.5.2-onbuild`, `3.5-onbuild`, `3-onbuild`, `onbuild` (*3.5/onbuild/Dockerfile*)](https://github.com/docker-library/python/blob/9a9021f2134d953165b31d98cacb95aa34076f90/3.5/onbuild/Dockerfile)
--	[`3.5.2-windowsservercore`, `3.5-windowsservercore`, `3-windowsservercore`, `windowsservercore` (*3.5/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/python/blob/693a75332e8ae5ad3bfae6e8399c4d7cc3cb6181/3.5/windows/windowsservercore/Dockerfile)
--	[`3.6.0rc1`, `3.6-rc`, `rc` (*3.6-rc/Dockerfile*)](https://github.com/docker-library/python/blob/12bf960914ceaec59562cf49cf048b971e54399a/3.6-rc/Dockerfile)
--	[`3.6.0rc1-slim`, `3.6-rc-slim`, `rc-slim` (*3.6-rc/slim/Dockerfile*)](https://github.com/docker-library/python/blob/12bf960914ceaec59562cf49cf048b971e54399a/3.6-rc/slim/Dockerfile)
--	[`3.6.0rc1-alpine`, `3.6-rc-alpine`, `rc-alpine` (*3.6-rc/alpine/Dockerfile*)](https://github.com/docker-library/python/blob/12bf960914ceaec59562cf49cf048b971e54399a/3.6-rc/alpine/Dockerfile)
--	[`3.6.0rc1-onbuild`, `3.6-rc-onbuild`, `rc-onbuild` (*3.6-rc/onbuild/Dockerfile*)](https://github.com/docker-library/python/blob/b16ff405101a9f6c6540fb3467ca25baa9610174/3.6-rc/onbuild/Dockerfile)
--	[`3.6.0rc1-windowsservercore`, `3.6-rc-windowsservercore`, `rc-windowsservercore` (*3.6-rc/windows/windowsservercore/Dockerfile*)](https://github.com/docker-library/python/blob/12bf960914ceaec59562cf49cf048b971e54399a/3.6-rc/windows/windowsservercore/Dockerfile)
+(See ["What's the difference between 'Shared' and 'Simple' tags?" in the FAQ](https://github.com/docker-library/faq#whats-the-difference-between-shared-and-simple-tags).)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/python`)](https://github.com/docker-library/official-images/blob/master/library/python). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fpython).
+## Simple Tags
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/python/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/python/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+-	[`3.10.0b3-buster`, `3.10-rc-buster`, `rc-buster`](https://github.com/docker-library/python/blob/06d4eb1e7ff4a03618a9196c6451eca13d5fb82a/3.10-rc/buster/Dockerfile)
+-	[`3.10.0b3-slim-buster`, `3.10-rc-slim-buster`, `rc-slim-buster`, `3.10.0b3-slim`, `3.10-rc-slim`, `rc-slim`](https://github.com/docker-library/python/blob/06d4eb1e7ff4a03618a9196c6451eca13d5fb82a/3.10-rc/buster/slim/Dockerfile)
+-	[`3.10.0b3-alpine3.14`, `3.10-rc-alpine3.14`, `rc-alpine3.14`, `3.10.0b3-alpine`, `3.10-rc-alpine`, `rc-alpine`](https://github.com/docker-library/python/blob/06d4eb1e7ff4a03618a9196c6451eca13d5fb82a/3.10-rc/alpine3.14/Dockerfile)
+-	[`3.10.0b3-alpine3.13`, `3.10-rc-alpine3.13`, `rc-alpine3.13`](https://github.com/docker-library/python/blob/06d4eb1e7ff4a03618a9196c6451eca13d5fb82a/3.10-rc/alpine3.13/Dockerfile)
+-	[`3.10.0b3-windowsservercore-1809`, `3.10-rc-windowsservercore-1809`, `rc-windowsservercore-1809`](https://github.com/docker-library/python/blob/06d4eb1e7ff4a03618a9196c6451eca13d5fb82a/3.10-rc/windows/windowsservercore-1809/Dockerfile)
+-	[`3.10.0b3-windowsservercore-ltsc2016`, `3.10-rc-windowsservercore-ltsc2016`, `rc-windowsservercore-ltsc2016`](https://github.com/docker-library/python/blob/06d4eb1e7ff4a03618a9196c6451eca13d5fb82a/3.10-rc/windows/windowsservercore-ltsc2016/Dockerfile)
+-	[`3.9.6-buster`, `3.9-buster`, `3-buster`, `buster`](https://github.com/docker-library/python/blob/fe2130938363f307081496dc5930c29c3ef9ddba/3.9/buster/Dockerfile)
+-	[`3.9.6-slim-buster`, `3.9-slim-buster`, `3-slim-buster`, `slim-buster`, `3.9.6-slim`, `3.9-slim`, `3-slim`, `slim`](https://github.com/docker-library/python/blob/fe2130938363f307081496dc5930c29c3ef9ddba/3.9/buster/slim/Dockerfile)
+-	[`3.9.6-alpine3.14`, `3.9-alpine3.14`, `3-alpine3.14`, `alpine3.14`, `3.9.6-alpine`, `3.9-alpine`, `3-alpine`, `alpine`](https://github.com/docker-library/python/blob/fe2130938363f307081496dc5930c29c3ef9ddba/3.9/alpine3.14/Dockerfile)
+-	[`3.9.6-alpine3.13`, `3.9-alpine3.13`, `3-alpine3.13`, `alpine3.13`](https://github.com/docker-library/python/blob/fe2130938363f307081496dc5930c29c3ef9ddba/3.9/alpine3.13/Dockerfile)
+-	[`3.9.6-windowsservercore-1809`, `3.9-windowsservercore-1809`, `3-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/docker-library/python/blob/fe2130938363f307081496dc5930c29c3ef9ddba/3.9/windows/windowsservercore-1809/Dockerfile)
+-	[`3.9.6-windowsservercore-ltsc2016`, `3.9-windowsservercore-ltsc2016`, `3-windowsservercore-ltsc2016`, `windowsservercore-ltsc2016`](https://github.com/docker-library/python/blob/fe2130938363f307081496dc5930c29c3ef9ddba/3.9/windows/windowsservercore-ltsc2016/Dockerfile)
+-	[`3.8.11-buster`, `3.8-buster`](https://github.com/docker-library/python/blob/dbf2083938bd54ddb0f8697c177d5ccfc927f20f/3.8/buster/Dockerfile)
+-	[`3.8.11-slim-buster`, `3.8-slim-buster`, `3.8.11-slim`, `3.8-slim`](https://github.com/docker-library/python/blob/dbf2083938bd54ddb0f8697c177d5ccfc927f20f/3.8/buster/slim/Dockerfile)
+-	[`3.8.11-alpine3.14`, `3.8-alpine3.14`, `3.8.11-alpine`, `3.8-alpine`](https://github.com/docker-library/python/blob/dbf2083938bd54ddb0f8697c177d5ccfc927f20f/3.8/alpine3.14/Dockerfile)
+-	[`3.8.11-alpine3.13`, `3.8-alpine3.13`](https://github.com/docker-library/python/blob/dbf2083938bd54ddb0f8697c177d5ccfc927f20f/3.8/alpine3.13/Dockerfile)
+-	[`3.7.11-buster`, `3.7-buster`](https://github.com/docker-library/python/blob/0c29e9cf700253291c7f2327537cb1d65f14a428/3.7/buster/Dockerfile)
+-	[`3.7.11-slim-buster`, `3.7-slim-buster`, `3.7.11-slim`, `3.7-slim`](https://github.com/docker-library/python/blob/0c29e9cf700253291c7f2327537cb1d65f14a428/3.7/buster/slim/Dockerfile)
+-	[`3.7.11-stretch`, `3.7-stretch`](https://github.com/docker-library/python/blob/0c29e9cf700253291c7f2327537cb1d65f14a428/3.7/stretch/Dockerfile)
+-	[`3.7.11-slim-stretch`, `3.7-slim-stretch`](https://github.com/docker-library/python/blob/0c29e9cf700253291c7f2327537cb1d65f14a428/3.7/stretch/slim/Dockerfile)
+-	[`3.7.11-alpine3.14`, `3.7-alpine3.14`, `3.7.11-alpine`, `3.7-alpine`](https://github.com/docker-library/python/blob/0c29e9cf700253291c7f2327537cb1d65f14a428/3.7/alpine3.14/Dockerfile)
+-	[`3.7.11-alpine3.13`, `3.7-alpine3.13`](https://github.com/docker-library/python/blob/0c29e9cf700253291c7f2327537cb1d65f14a428/3.7/alpine3.13/Dockerfile)
+-	[`3.6.14-buster`, `3.6-buster`](https://github.com/docker-library/python/blob/fc33184453f89414b13a87904237fac90778ebeb/3.6/buster/Dockerfile)
+-	[`3.6.14-slim-buster`, `3.6-slim-buster`, `3.6.14-slim`, `3.6-slim`](https://github.com/docker-library/python/blob/fc33184453f89414b13a87904237fac90778ebeb/3.6/buster/slim/Dockerfile)
+-	[`3.6.14-stretch`, `3.6-stretch`](https://github.com/docker-library/python/blob/fc33184453f89414b13a87904237fac90778ebeb/3.6/stretch/Dockerfile)
+-	[`3.6.14-slim-stretch`, `3.6-slim-stretch`](https://github.com/docker-library/python/blob/fc33184453f89414b13a87904237fac90778ebeb/3.6/stretch/slim/Dockerfile)
+-	[`3.6.14-alpine3.14`, `3.6-alpine3.14`, `3.6.14-alpine`, `3.6-alpine`](https://github.com/docker-library/python/blob/fc33184453f89414b13a87904237fac90778ebeb/3.6/alpine3.14/Dockerfile)
+-	[`3.6.14-alpine3.13`, `3.6-alpine3.13`](https://github.com/docker-library/python/blob/fc33184453f89414b13a87904237fac90778ebeb/3.6/alpine3.13/Dockerfile)
+
+## Shared Tags
+
+-	`3.10.0b3`, `3.10-rc`, `rc`:
+	-	[`3.10.0b3-buster`](https://github.com/docker-library/python/blob/06d4eb1e7ff4a03618a9196c6451eca13d5fb82a/3.10-rc/buster/Dockerfile)
+	-	[`3.10.0b3-windowsservercore-1809`](https://github.com/docker-library/python/blob/06d4eb1e7ff4a03618a9196c6451eca13d5fb82a/3.10-rc/windows/windowsservercore-1809/Dockerfile)
+	-	[`3.10.0b3-windowsservercore-ltsc2016`](https://github.com/docker-library/python/blob/06d4eb1e7ff4a03618a9196c6451eca13d5fb82a/3.10-rc/windows/windowsservercore-ltsc2016/Dockerfile)
+-	`3.10.0b3-windowsservercore`, `3.10-rc-windowsservercore`, `rc-windowsservercore`:
+	-	[`3.10.0b3-windowsservercore-1809`](https://github.com/docker-library/python/blob/06d4eb1e7ff4a03618a9196c6451eca13d5fb82a/3.10-rc/windows/windowsservercore-1809/Dockerfile)
+	-	[`3.10.0b3-windowsservercore-ltsc2016`](https://github.com/docker-library/python/blob/06d4eb1e7ff4a03618a9196c6451eca13d5fb82a/3.10-rc/windows/windowsservercore-ltsc2016/Dockerfile)
+-	`3.9.6`, `3.9`, `3`, `latest`:
+	-	[`3.9.6-buster`](https://github.com/docker-library/python/blob/fe2130938363f307081496dc5930c29c3ef9ddba/3.9/buster/Dockerfile)
+	-	[`3.9.6-windowsservercore-1809`](https://github.com/docker-library/python/blob/fe2130938363f307081496dc5930c29c3ef9ddba/3.9/windows/windowsservercore-1809/Dockerfile)
+	-	[`3.9.6-windowsservercore-ltsc2016`](https://github.com/docker-library/python/blob/fe2130938363f307081496dc5930c29c3ef9ddba/3.9/windows/windowsservercore-ltsc2016/Dockerfile)
+-	`3.9.6-windowsservercore`, `3.9-windowsservercore`, `3-windowsservercore`, `windowsservercore`:
+	-	[`3.9.6-windowsservercore-1809`](https://github.com/docker-library/python/blob/fe2130938363f307081496dc5930c29c3ef9ddba/3.9/windows/windowsservercore-1809/Dockerfile)
+	-	[`3.9.6-windowsservercore-ltsc2016`](https://github.com/docker-library/python/blob/fe2130938363f307081496dc5930c29c3ef9ddba/3.9/windows/windowsservercore-ltsc2016/Dockerfile)
+-	`3.8.11`, `3.8`:
+	-	[`3.8.11-buster`](https://github.com/docker-library/python/blob/dbf2083938bd54ddb0f8697c177d5ccfc927f20f/3.8/buster/Dockerfile)
+-	`3.7.11`, `3.7`:
+	-	[`3.7.11-buster`](https://github.com/docker-library/python/blob/0c29e9cf700253291c7f2327537cb1d65f14a428/3.7/buster/Dockerfile)
+-	`3.6.14`, `3.6`:
+	-	[`3.6.14-buster`](https://github.com/docker-library/python/blob/fc33184453f89414b13a87904237fac90778ebeb/3.6/buster/Dockerfile)
+
+# Quick reference (cont.)
+
+-	**Where to file issues**:  
+	[https://github.com/docker-library/python/issues](https://github.com/docker-library/python/issues)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/python/), [`arm32v5`](https://hub.docker.com/r/arm32v5/python/), [`arm32v6`](https://hub.docker.com/r/arm32v6/python/), [`arm32v7`](https://hub.docker.com/r/arm32v7/python/), [`arm64v8`](https://hub.docker.com/r/arm64v8/python/), [`i386`](https://hub.docker.com/r/i386/python/), [`mips64le`](https://hub.docker.com/r/mips64le/python/), [`ppc64le`](https://hub.docker.com/r/ppc64le/python/), [`s390x`](https://hub.docker.com/r/s390x/python/), [`windows-amd64`](https://hub.docker.com/r/winamd64/python/)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/python/` directory](https://github.com/docker-library/repo-info/blob/master/repos/python) ([history](https://github.com/docker-library/repo-info/commits/master/repos/python))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images repo's `library/python` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fpython)  
+	[official-images repo's `library/python` file](https://github.com/docker-library/official-images/blob/master/library/python) ([history](https://github.com/docker-library/official-images/commits/master/library/python))
+
+-	**Source of this description**:  
+	[docs repo's `python/` directory](https://github.com/docker-library/docs/tree/master/python) ([history](https://github.com/docker-library/docs/commits/master/python))
 
 # What is Python?
 
@@ -44,18 +112,32 @@ Python is an interpreted, interactive, object-oriented, open-source programming 
 ## Create a `Dockerfile` in your Python app project
 
 ```dockerfile
-FROM python:3-onbuild
+FROM python:3
+
+WORKDIR /usr/src/app
+
+COPY requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . .
+
 CMD [ "python", "./your-daemon-or-script.py" ]
 ```
 
 or (if you need to use Python 2):
 
 ```dockerfile
-FROM python:2-onbuild
+FROM python:2
+
+WORKDIR /usr/src/app
+
+COPY requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . .
+
 CMD [ "python", "./your-daemon-or-script.py" ]
 ```
-
-These images include multiple `ONBUILD` triggers, which should be all you need to bootstrap most applications. The build will `COPY` a `requirements.txt` file, `RUN pip install` on said file, and then copy the current directory into `/usr/src/app`.
 
 You can then build and run the Docker image:
 
@@ -78,35 +160,35 @@ or (again, if you need to use Python 2):
 $ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp python:2 python your-daemon-or-script.py
 ```
 
+## Multiple Python versions in the image
+
+In the non `python:slim` variants there will be an additional older `python` executable at `/usr/bin/python` while the desired newer `/usr/local/bin/python` is the default choice in the `$PATH`. This is an unfortunate side-effect of using the `buildpack-deps` image in the non-slim variants
+
 # Image Variants
 
 The `python` images come in many flavors, each designed for a specific use case.
 
 ## `python:<version>`
 
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of. This tag is based off of [`buildpack-deps`](https://registry.hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `python:slim`
+Some of these tags may have names like buster or stretch in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
-This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `python`. Unless you are working in an environment where *only* the python image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
+This tag is based off of [`buildpack-deps`](https://hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of Docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
 
-## `python:alpine`
+## `python:<version>-slim`
 
-This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `python`. Unless you are working in an environment where *only* the `python` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
 
-This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+## `python:<version>-alpine`
+
+This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+
+This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
 
 To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
-## `python:onbuild`
-
-This image feeds your `requirements.txt` file automatically to `pip` in order to make building derivative images easier. For most use cases, creating a `Dockerfile` in the base of your project directory with the line `FROM python:onbuild` will be enough to create a stand-alone image for your project.
-
-While the `onbuild` variant is really useful for "getting off the ground running" (zero to Dockerized in a short period of time), it's not recommended for long-term usage within a project due to the lack of control over *when* the `ONBUILD` triggers fire (see also [`docker/docker#5714`](https://github.com/docker/docker/issues/5714), [`docker/docker#8240`](https://github.com/docker/docker/issues/8240), [`docker/docker#11917`](https://github.com/docker/docker/issues/11917)).
-
-Once you've got a handle on how your project functions within Docker, you'll probably want to adjust your `Dockerfile` to inherit from a non-`onbuild` variant and copy the commands from the `onbuild` variant `Dockerfile` (moving the `ONBUILD` lines to the end and removing the `ONBUILD` keywords) into your own file so that you have tighter control over them and more transparency for yourself and others looking at your `Dockerfile` as to what it does. This also makes it easier to add additional requirements as time goes on (such as installing more packages before performing the previously-`ONBUILD` steps).
-
-## `python:windowsservercore`
+## `python:<version>-windowsservercore`
 
 This image is based on [Windows Server Core (`microsoft/windowsservercore`)](https://hub.docker.com/r/microsoft/windowsservercore/). As such, it only works in places which that image does, such as Windows 10 Professional/Enterprise (Anniversary Edition) or Windows Server 2016.
 
@@ -119,28 +201,8 @@ For information about how to get Docker running on Windows, please see the relev
 
 View license information for [Python 2](https://docs.python.org/2/license.html) and [Python 3](https://docs.python.org/3/license.html).
 
-# Supported Docker versions
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 
-This image is officially supported on Docker version 1.12.5.
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `python/` directory](https://github.com/docker-library/repo-info/tree/master/repos/python).
 
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/python/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/docker-library/python/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`python/` directory](https://github.com/docker-library/docs/tree/master/python) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

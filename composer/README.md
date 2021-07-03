@@ -1,11 +1,50 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "composer/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "composer/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
+# Quick reference
+
+-	**Maintained by**:  
+	[Rob Bast](https://github.com/alcohol), with [contributions](https://github.com/composer/docker/graphs/contributors) from the community.
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
--	[`1.2.4`, `1.2`, `1`, `latest` (*1.2/Dockerfile*)](https://github.com/composer/docker/blob/690f3d623ac1ba30be337a254b2126584e6e2aa5/1.2/Dockerfile)
--	[`1.1.3`, `1.1` (*1.1/Dockerfile*)](https://github.com/composer/docker/blob/be6ecf58913f704399d11a352818b22951832a60/1.1/Dockerfile)
+-	[`2.1.3`, `2.1`, `2`, `latest`](https://github.com/composer/docker/blob/30e50f0c0d18c64af9c178c2db5cdfadb1305ea8/2.1/Dockerfile)
+-	[`1.10.22`, `1.10`, `1`](https://github.com/composer/docker/blob/890a12899ba8fbd4876bb8513d5cb75ce68d230c/1.10/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/composer`)](https://github.com/docker-library/official-images/blob/master/library/composer). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fcomposer).
+# Quick reference (cont.)
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/composer/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/composer/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+-	**Where to file issues**:  
+	[https://github.com/composer/docker/issues](https://github.com/composer/docker/issues)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/composer/), [`arm32v6`](https://hub.docker.com/r/arm32v6/composer/), [`arm32v7`](https://hub.docker.com/r/arm32v7/composer/), [`arm64v8`](https://hub.docker.com/r/arm64v8/composer/), [`i386`](https://hub.docker.com/r/i386/composer/), [`ppc64le`](https://hub.docker.com/r/ppc64le/composer/), [`s390x`](https://hub.docker.com/r/s390x/composer/)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/composer/` directory](https://github.com/docker-library/repo-info/blob/master/repos/composer) ([history](https://github.com/docker-library/repo-info/commits/master/repos/composer))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images repo's `library/composer` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fcomposer)  
+	[official-images repo's `library/composer` file](https://github.com/docker-library/official-images/blob/master/library/composer) ([history](https://github.com/docker-library/official-images/commits/master/library/composer))
+
+-	**Source of this description**:  
+	[docs repo's `composer/` directory](https://github.com/docker-library/docs/tree/master/composer) ([history](https://github.com/docker-library/docs/commits/master/composer))
 
 # What is Composer?
 
@@ -15,106 +54,130 @@ You can read more about Composer in our [official documentation](https://getcomp
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/58f7363e6cfa78f8cd54af16eab51c63c1232002/composer/logo.png)
 
-# Using
+# How to use this image
 
-Run the `composer` image:
+### Basic usage
 
-```sh
-docker run --rm --interactive --tty \
-    --volume $PWD:/app \
-    composer install
+```console
+$ docker run --rm --interactive --tty \
+  --volume $PWD:/app \
+  composer <command>
 ```
 
-You can mount the Composer home directory from your host inside the Container to share caching and configuration files:
+### Persist cache / global configuration
 
-```sh
-docker run --rm --interactive --tty \
-    --volume $PWD:/app \
-    --volume $COMPOSER_HOME:/composer \
-    composer install
+You can bind mount the Composer home directory from your host to the container to enable a persistent cache or share global configuration:
+
+```console
+$ docker run --rm --interactive --tty \
+  --volume $PWD:/app \
+  --volume ${COMPOSER_HOME:-$HOME/.composer}:/tmp \
+  composer <command>
 ```
 
-By default, Composer runs as root inside the container. This can lead to permission issues on your host filesystem. You can run Composer as your local user:
+**Note:** this relies on the fact that the `COMPOSER_HOME` value is set to `/tmp` in the image by default.
 
-```sh
-docker run --rm --interactive --tty \
-    --volume $PWD:/app \
-    --user $(id -u):$(id -g) \
-    composer install
+Or if your environment follows the XDG specification:
+
+```console
+$ docker run --rm --interactive --tty \
+  --env COMPOSER_HOME \
+  --env COMPOSER_CACHE_DIR \
+  --volume ${COMPOSER_HOME:-$HOME/.config/composer}:$COMPOSER_HOME \
+  --volume ${COMPOSER_CACHE_DIR:-$HOME/.cache/composer}:$COMPOSER_CACHE_DIR \
+  --volume $PWD:/app \
+  composer <command>
 ```
+
+### Filesystem permissions
+
+By default, Composer runs as root inside the container. This can lead to permission issues on your host filesystem. You can work around this by running the container with a different user:
+
+```console
+$ docker run --rm --interactive --tty \
+  --volume $PWD:/app \
+  --user $(id -u):$(id -g) \
+  composer <command>
+```
+
+See: https://docs.docker.com/engine/reference/run/#user for details.
+
+> Note: Docker for Mac behaves differently and this tip might not apply to Docker for Mac users.
+
+### Private repositories / SSH agent
 
 When you need to access private repositories, you will either need to share your configured credentials, or mount your `ssh-agent` socket inside the running container:
 
-```sh
-docker run --rm --interactive --tty \
-    --volume $PWD:/app \
-    --volume $SSH_AUTH_SOCK:/ssh-auth.sock \
-    --env SSH_AUTH_SOCK=/ssh-auth.sock \
-    composer install
+```console
+$ eval $(ssh-agent); \
+  docker run --rm --interactive --tty \
+  --volume $PWD:/app \
+  --volume $SSH_AUTH_SOCK:/ssh-auth.sock \
+  --env SSH_AUTH_SOCK=/ssh-auth.sock \
+  composer <command>
 ```
 
-## Suggestions
+**Note:** On OSX this requires Docker For Mac v2.2.0.0 or later, see [docker/for-mac#410](https://github.com/docker/for-mac/issues/410).
 
-### PHP Extensions
+When combining the use of private repositories with running Composer as another user, you can run into non-existent user errors (thrown by ssh). To work around this, bind mount the host passwd and group files (read-only) into the container:
 
-We strive to deliver an image that is as lean as possible, aimed at running Composer only.
+```console
+$ eval $(ssh-agent); \
+  docker run --rm --interactive --tty \
+  --volume $PWD:/app \
+  --volume $SSH_AUTH_SOCK:/ssh-auth.sock \
+  --volume /etc/passwd:/etc/passwd:ro \
+  --volume /etc/group:/etc/group:ro \
+  --env SSH_AUTH_SOCK=/ssh-auth.sock \
+  --user $(id -u):$(id -g) \
+  composer <command>
+```
 
-Sometimes dependencies or Composer [scripts](https://getcomposer.org/doc/articles/scripts.md) require the availability of certain PHP extensions. In this scenario, you have two options:
+# Troubleshooting
 
--	Pass the `--ignore-platform-reqs` and `--no-scripts` flags to `install` or `update`:
+### PHP version & extensions
 
-	```sh
-	docker run --rm --interactive --tty \
-	    --volume $PWD:/app \
-	    composer install --ignore-platform-reqs --no-scripts
+Our image is aimed at quickly running Composer without the need for having a PHP runtime installed on your host. You should not rely on the PHP version in our container. We do not provide a Composer image for each supported PHP version because we do not want to encourage using Composer as a base image or a production image.
+
+We try to deliver an image that is as lean as possible, built for running Composer only. Sometimes dependencies or Composer [scripts](https://getcomposer.org/doc/articles/scripts.md) require the availability of certain PHP extensions.
+
+Suggestions:
+
+-	(optimal) create your own build image and [install](https://getcomposer.org/doc/faqs/how-to-install-composer-programmatically.md) Composer inside it.
+
+	**Note:** Docker 17.05 introduced [multi-stage builds](https://docs.docker.com/develop/develop-images/multistage-build/), simplifying this enormously:
+
+	```dockerfile
+	COPY --from=composer /usr/bin/composer /usr/bin/composer
 	```
 
--	Create your own image (possibly by extending `FROM composer`).
+-	(alternatively) specify the target [platform](https://getcomposer.org/doc/06-config.md#platform) / extension(s) in your `composer.json`:
 
-### Local runtime/binary
+	```json
+	{
+	  "config": {
+	    "platform": {
+	      "php": "MAJOR.MINOR.PATCH",
+	      "ext-something": "MAJOR.MINOR.PATCH"
+	    }
+	  }
+	}
+	```
 
-If you want to be able to run `composer` as if it was installed on your host locally, you can define the following function in your `~/.bashrc`, `~/.zshrc` or similar:
+-	(discouraged) pass the [`--ignore-platform-reqs`](https://getcomposer.org/doc/03-cli.md#install-i) and / or `--no-scripts` flags to `install` or `update`:
 
-```sh
-composer () {
-    tty=
-    tty -s && tty=--tty
-    docker run \
-        $tty \
-        --interactive \
-        --rm \
-        --user $(id -u):$(id -g) \
-        --volume $(pwd):/app \
-        composer "$@"
-}
-```
+	```console
+	$ docker run --rm --interactive --tty \
+	  --volume $PWD:/app \
+	  composer install --ignore-platform-reqs --no-scripts
+	```
 
 # License
 
 View [license information](https://github.com/composer/composer/blob/master/LICENSE) for the software contained in this image.
 
-# Supported Docker versions
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 
-This image is officially supported on Docker version 1.12.5.
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `composer/` directory](https://github.com/docker-library/repo-info/tree/master/repos/composer).
 
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/composer/docker/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach us through the `#composer` or `#docker-library` IRC channels on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/composer/docker/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`composer/` directory](https://github.com/docker-library/docs/tree/master/composer) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

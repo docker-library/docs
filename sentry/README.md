@@ -1,13 +1,53 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "sentry/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "sentry/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
+# **DEPRECATION NOTICE**
+
+This image is deprecated in favor of the full installation explained over at [Self-Hosted Sentry Docs](https://develop.sentry.dev/self-hosted/) (last updated July 2019; [getsentry/docker-sentry#189](https://github.com/getsentry/docker-sentry/pull/189)).
+
+# Quick reference
+
+-	**Maintained by**:  
+	[Sentry](https://github.com/getsentry/docker-sentry)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
--	[`8.10.0`, `8.10` (*8.10/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/71597dc5f0532721a3bd24405021e273df471866/8.10/Dockerfile)
--	[`8.10.0-onbuild`, `8.10-onbuild` (*8.10/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/8e4ec0e019a9cfc653f09b16531cef507e015af1/8.10/onbuild/Dockerfile)
--	[`8.11.0`, `8.11`, `8`, `latest` (*8.11/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/60d4b0e5ad293ceabfd0d00ec4bc08c5d353ca2c/8.11/Dockerfile)
--	[`8.11.0-onbuild`, `8.11-onbuild`, `8-onbuild`, `onbuild` (*8.11/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/60d4b0e5ad293ceabfd0d00ec4bc08c5d353ca2c/8.11/onbuild/Dockerfile)
+**No supported tags**
 
-For more information about this image and its history, please see [the relevant manifest file (`library/sentry`)](https://github.com/docker-library/official-images/blob/master/library/sentry). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fsentry).
+# Quick reference (cont.)
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/sentry/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/sentry/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+-	**Where to file issues**:  
+	[https://github.com/getsentry/docker-sentry/issues](https://github.com/getsentry/docker-sentry/issues)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	**No supported architectures**
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/sentry/` directory](https://github.com/docker-library/repo-info/blob/master/repos/sentry) ([history](https://github.com/docker-library/repo-info/commits/master/repos/sentry))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images repo's `library/sentry` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fsentry)  
+	[official-images repo's `library/sentry` file](https://github.com/docker-library/official-images/blob/master/library/sentry) ([history](https://github.com/docker-library/official-images/commits/master/library/sentry))
+
+-	**Source of this description**:  
+	[docs repo's `sentry/` directory](https://github.com/docker-library/docs/tree/master/sentry) ([history](https://github.com/docker-library/docs/commits/master/sentry))
 
 # What is Sentry?
 
@@ -15,7 +55,7 @@ Sentry is a realtime event logging and aggregation platform. It specializes in m
 
 > [github.com/getsentry/sentry](https://github.com/getsentry/sentry)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/831b07a52f9ff6577c915afc41af8158725829f4/sentry/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/7d1c6fff37893bcefc186de7b978f5bdb2f801f6/sentry/logo.png)
 
 # How to use this image
 
@@ -112,56 +152,12 @@ Connection information for an outbound smtp server. These values aren't needed i
 
 If you're using Mailgun for inbound mail, set your API key and configure a route to forward to `/api/hooks/mailgun/inbound/`.
 
-# Image Variants
-
-The `sentry` images come in many flavors, each designed for a specific use case.
-
-## `sentry:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-## `sentry:onbuild`
-
-This image makes it easy to custom build your own Sentry instance by copying in a custom `config.yml` and/or `sentry.conf.py` file and installing plugins from `requirements.txt`.
-
-It's also possible to develop custom extensions within your `onbuild` package. If the build directory contains a `setup.py` file, this will also get installed.
-
-See the [official Sentry documentation](https://docs.getsentry.com/on-premise/server/installation/) for more information.
-
-To create your custom `sentry:onbuild` package, simply do the following:
-
-1.	Create a Dockerfile containing `FROM sentry:onbuild`
-2.	In the same directory, add your custom configuration files.
-3.	You can get copies of those files to use as templates from the [docker-sentry GitHub repo](https://github.com/getsentry/docker-sentry/).
-4.	Build your image: `docker build -t mysentry .`
-5.	Run your custom image using `mysentry` instead of `sentry`.
-
 # License
 
 View [license information](https://github.com/getsentry/sentry/blob/master/LICENSE) for the software contained in this image.
 
-# Supported Docker versions
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 
-This image is officially supported on Docker version 1.12.5.
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `sentry/` directory](https://github.com/docker-library/repo-info/tree/master/repos/sentry).
 
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/getsentry/docker-sentry/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/getsentry/docker-sentry/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`sentry/` directory](https://github.com/docker-library/docs/tree/master/sentry) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

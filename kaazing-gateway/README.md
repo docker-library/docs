@@ -1,10 +1,49 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "kaazing-gateway/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "kaazing-gateway/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
+# Quick reference
+
+-	**Maintained by**:  
+	[the Kaazing Docker Maintainers](https://github.com/kaazing/gateway.docker)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `5.2.5` (*Dockerfile*)](https://github.com/kaazing/gateway.docker/blob/3aa0b519bbe7c9dcea139a6919fb41aa45f00c7b/Dockerfile)
+-	[`5.6.0`, `5.6`, `5`, `latest`](https://github.com/kaazing/gateway.docker/blob/a40c8da9d2c2925bdd78b9a6d1b6da3fe89322d1/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/kaazing-gateway`)](https://github.com/docker-library/official-images/blob/master/library/kaazing-gateway). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fkaazing-gateway).
+# Quick reference (cont.)
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/kaazing-gateway/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/kaazing-gateway/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+-	**Where to file issues**:  
+	[https://github.com/kaazing/gateway.docker/issues](https://github.com/kaazing/gateway.docker/issues)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/kaazing-gateway/), [`arm64v8`](https://hub.docker.com/r/arm64v8/kaazing-gateway/)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/kaazing-gateway/` directory](https://github.com/docker-library/repo-info/blob/master/repos/kaazing-gateway) ([history](https://github.com/docker-library/repo-info/commits/master/repos/kaazing-gateway))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images repo's `library/kaazing-gateway` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fkaazing-gateway)  
+	[official-images repo's `library/kaazing-gateway` file](https://github.com/docker-library/official-images/blob/master/library/kaazing-gateway) ([history](https://github.com/docker-library/official-images/commits/master/library/kaazing-gateway))
+
+-	**Source of this description**:  
+	[docs repo's `kaazing-gateway/` directory](https://github.com/docker-library/docs/tree/master/kaazing-gateway) ([history](https://github.com/docker-library/docs/commits/master/kaazing-gateway))
 
 # What is the KAAZING Gateway?
 
@@ -18,23 +57,27 @@ The Kaazing Gateway is a network gateway created to provide a single access poin
 
 By default the gateway runs a WebSocket echo service similar to [websocket.org](https://www.websocket.org/echo.html).
 
+You must give your gateway container a hostname. To do this, use the `docker run -h somehostname` option, along with the -e option to define an environment variable, GATEWAY_OPTS, to pass this hostname to the gateway configuration (your hostname may vary):
+
 ```console
-$ docker run --name some-kaazing-gateway -h somehostname -d -p 8000:8000 kaazing-gateway
+$ docker run --name some-kaazing-gateway -h somehostname -e GATEWAY_OPTS="-Dgateway.hostname=somehostname -Xmx512m -Djava.security.egd=file:/dev/urandom" -d -p 8000:8000 kaazing-gateway
 ```
+
+Note: the additional GATEWAY_OPTS options, `-Xmx512m -Djava.security.egd=file:/dev/urandom`, are added in order to preserve these values from the original Dockerfile for the gateway. The `-Xmx512m` value specifies a minimum Java heap size of 512 MB, and `-Djava.security.egd=file:/dev/urandom` is to facilitate faster startup on VMs. See the `Dockerfile` link referenced above for details.
 
 You should then be able to connect to ws://somehostname:8000 from the [WebSocket echo test](https://www.websocket.org/echo.html).
 
-Note: this assumes that `somehostname` is resolvable from your browser, you may need to add an etc/hosts entry for `somehostname` on your `dockerhost ip`.
+Note: all of the above assumes that `somehostname` is resolvable from your browser. You may need to add an etc/hosts entry for `somehostname` on your `dockerhost ip`.
 
 ## Custom Configuration
 
 To launch a container with a specific configuration you can do the following:
 
 ```console
-$ docker run --name some-kaazing-gateway -v /some/gateway-config.xml:/kaazing-gateway/conf/gateway-config.xml:ro -d kaazing-gateway
+$ docker run --name some-kaazing-gateway -h somehostname -e GATEWAY_OPTS="-Dgateway.hostname=somehostname -Xmx512m -Djava.security.egd=file:/dev/urandom" -v /some/gateway-config.xml:/kaazing-gateway/conf/gateway-config.xml:ro -d kaazing-gateway
 ```
 
-For information on the syntax of the Kaazing Gateway configuration files, see [the official documentation](http://developer.kaazing.com/documentation/5.0/index.html) (specifically the [Configuration Guide](http://developer.kaazing.com/documentation/5.0/admin-reference/r_conf_elementindex.html)).
+For information on the syntax of the Kaazing Gateway configuration files, see [the official documentation](https://kaazing.com/doc/5.0/index.html) (specifically the *For Administrators* section).
 
 If you wish to adapt the default Gateway configuration file, you can use a command such as the following to copy the file from a running Kaazing Gateway container:
 
@@ -55,32 +98,16 @@ Then, build with `docker build -t some-custom-kaazing-gateway .` and run:
 $ docker run --name some-kaazing-gateway -d some-custom-kaazing-gateway
 ```
 
+## GATEWAY_OPTS
+
+For more information on the GATEWAY_OPTS environment variable, see [Configure Kaazing Gateway Using the GATEWAY_OPTS Environment Variable](https://kaazing.com/doc/5.0/admin-reference/p_configure_gateway_opts/).
+
 # License
 
 View [license information](https://github.com/kaazing/gateway/blob/master/LICENSE.txt) for the software contained in this image.
 
-# Supported Docker versions
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 
-This image is officially supported on Docker version 1.12.5.
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `kaazing-gateway/` directory](https://github.com/docker-library/repo-info/tree/master/repos/kaazing-gateway).
 
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/kaazing/gateway.docker/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/kaazing/gateway.docker/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`kaazing-gateway/` directory](https://github.com/docker-library/docs/tree/master/kaazing-gateway) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

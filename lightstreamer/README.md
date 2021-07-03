@@ -1,16 +1,60 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "lightstreamer/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "lightstreamer/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
+# Quick reference
+
+-	**Maintained by**:  
+	[the Lightstreamer Server Development Team](https://github.com/Lightstreamer/Docker)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
--	[`6.0.3`, `6.0`, `6`, `latest` (*6.0/Dockerfile*)](https://github.com/Lightstreamer/Docker/blob/784b417d4415e12f1bb1b15f7f697273de3a7ded/6.0/Dockerfile)
+-	[`6.0.3`, `6.0`](https://github.com/Lightstreamer/Docker/blob/eeab1ae534273b1b05c973e577a1f3eec8d58427/6.0/Dockerfile)
+-	[`6.1.0`, `6.1`, `6`](https://github.com/Lightstreamer/Docker/blob/eeab1ae534273b1b05c973e577a1f3eec8d58427/6.1/Dockerfile)
+-	[`7.0.3-jdk8-openjdk`, `7.0-jdk8-openjdk`, `7.0.3-jdk8`, `7.0-jdk8`](https://github.com/Lightstreamer/Docker/blob/f3aaece15133b9405aef20c5d378c5a83aba7585/7.0/jdk8/Dockerfile)
+-	[`7.0.3-jdk11-openjdk`, `7.0-jdk11-openjdk`, `7.0.3-jdk11`, `7.0-jdk11`, `7.0.3`, `7.0`](https://github.com/Lightstreamer/Docker/blob/f3aaece15133b9405aef20c5d378c5a83aba7585/7.0/jdk11/Dockerfile)
+-	[`7.1.2-jdk8-openjdk`, `7.1-jdk8-openjdk`, `7-jdk8-openjdk`, `7.1.2-jdk8`, `7.1-jdk8`, `7-jdk8`](https://github.com/Lightstreamer/Docker/blob/7bdd2632e1cae0bf838899d591aadb2dd128c41a/7.1/jdk8/Dockerfile)
+-	[`7.1.2-jdk11-openjdk`, `7.1-jdk11-openjdk`, `7-jdk11-openjdk`, `7.1.2-jdk11`, `7.1-jdk11`, `7-jdk11`, `7.1.2`, `7.1`, `7`, `latest`](https://github.com/Lightstreamer/Docker/blob/7bdd2632e1cae0bf838899d591aadb2dd128c41a/7.1/jdk11/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/lightstreamer`)](https://github.com/docker-library/official-images/blob/master/library/lightstreamer). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Flightstreamer).
+# Quick reference (cont.)
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/lightstreamer/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/lightstreamer/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+-	**Where to file issues**:  
+	[https://github.com/Lightstreamer/Docker/issues](https://github.com/Lightstreamer/Docker/issues)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/lightstreamer/), [`arm64v8`](https://hub.docker.com/r/arm64v8/lightstreamer/)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/lightstreamer/` directory](https://github.com/docker-library/repo-info/blob/master/repos/lightstreamer) ([history](https://github.com/docker-library/repo-info/commits/master/repos/lightstreamer))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images repo's `library/lightstreamer` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Flightstreamer)  
+	[official-images repo's `library/lightstreamer` file](https://github.com/docker-library/official-images/blob/master/library/lightstreamer) ([history](https://github.com/docker-library/official-images/commits/master/library/lightstreamer))
+
+-	**Source of this description**:  
+	[docs repo's `lightstreamer/` directory](https://github.com/docker-library/docs/tree/master/lightstreamer) ([history](https://github.com/docker-library/docs/commits/master/lightstreamer))
 
 # What is Lightstreamer Server?
 
 Lightstreamer is a real-time messaging server optimized for the Internet. Blending WebSockets, HTTP, and push notifications, it streams data to/from mobile, tablet, browser-based, desktop, and IoT applications.
 
-For more information and related downloads for Lightstreamer Server and other Lightstreaner products, please visit [www.lightstreamer.com](http://www.lightstreamer.com).
+For more information and related downloads for Lightstreamer Server and other Lightstreamer products, please visit [www.lightstreamer.com](https://www.lightstreamer.com).
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/3a58248e2d43ced58c294b7980b55846a0ddc9e5/lightstreamer/logo.png)
 
@@ -24,11 +68,11 @@ Launch the container with the default configuration:
 $ docker run --name ls-server -d -p 80:8080 lightstreamer
 ```
 
-This will map port 8080 inside the container to port 80 on local host. Then point your browser to `http://localhost` and watch the Welcome page showing real time data flowing in from the locally deployed demo application, which is a first overview of the unique features offered by the Lightstreamer technology. More examples are available online at the [demo site](http://demos.lightstreamer.com).
+This will map port 8080 inside the container to port 80 on local host. Then point your browser to `http://localhost` and watch the Welcome page showing real-time data flowing in from the locally deployed demo application, which is a first overview of the unique features offered by the Lightstreamer technology. More examples are available online at the [demo site](https://demos.lightstreamer.com).
 
 ## Custom settings
 
-It is possibile to customize each aspect of the Lightstreamer instance running into the container. For example, a specific configuration file may be supplied as follows:
+It is possible to customize each aspect of the Lightstreamer instance running into the container. For example, a specific configuration file may be supplied as follows:
 
 ```console
 $ docker run --name ls-server -v /path/to/my-lightstreamer_conf.xml:/lightstreamer/conf/lightstreamer_conf.xml -d -p 80:8080 lightstreamer
@@ -68,7 +112,7 @@ the new image will be built along with the provided files. After that, launch th
 $ docker run --name ls-server -d -p 80:8080 my-lightstreamer
 ```
 
-To get more detailed information on how to configure the Lightstreamer server, please see the inline documentation in the `lighstreamer_conf.xml` and `lighstreamer_log_conf.xml` files you can find under the `conf` folder of the installation directory.
+To get more detailed information on how to configure the Lightstreamer server, please see the inline documentation in the `lightstreamer_conf.xml` and `lightstreamer_log_conf.xml` files you can find under the `conf` folder of the installation directory.
 
 ## Deployment of Adapter Sets
 
@@ -100,7 +144,7 @@ In this case, the `/path/to/my-adapters` folder has to be structured with the re
                     +my_adapter_set_2
                     ...
                     +my_adapter_set_N
-                     
+
 ```
 
 ### Building a new image
@@ -122,7 +166,7 @@ Then, just build and start the container as already explained.
 
 ## Deployment of web server pages
 
-There might be some circumstances where you would like provide custom pages for the internal web server of the Lightstreamer Server. Even in this case, it is possible to customize the container by employing the same techniques as above.
+There might be some circumstances where you would like to provide custom pages for the internal web server of the Lightstreamer Server. Even in this case, it is possible to customize the container by employing the same techniques as above.
 
 For example, with the following command you will be able to fully replace the factory `pages` folder:
 
@@ -134,30 +178,10 @@ where `/path/to/custom/pages` is the path in your host machine containing the re
 
 # License
 
-View [license information](http://www.lightstreamer.com/lightstreamer-sla) for the software contained in this image.
+View [license information](https://www.lightstreamer.com/lightstreamer-sla) for the software contained in this image.
 
-# Supported Docker versions
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 
-This image is officially supported on Docker version 1.12.5.
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `lightstreamer/` directory](https://github.com/docker-library/repo-info/tree/master/repos/lightstreamer).
 
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/Lightstreamer/Docker/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/Lightstreamer/Docker/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
-## Documentation
-
-Documentation for this image is stored in the [`lightstreamer/` directory](https://github.com/docker-library/docs/tree/master/lightstreamer) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.

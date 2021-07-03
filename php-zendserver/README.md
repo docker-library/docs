@@ -1,13 +1,52 @@
+<!--
+
+********************************************************************************
+
+WARNING:
+
+    DO NOT EDIT "php-zendserver/README.md"
+
+    IT IS AUTO-GENERATED
+
+    (from the other files in "php-zendserver/" combined with a set of templates)
+
+********************************************************************************
+
+-->
+
+# Quick reference
+
+-	**Maintained by**:  
+	[Perforce Software, Inc.](https://github.com/zendtech/php-zendserver-docker)
+
+-	**Where to get help**:  
+	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+
 # Supported tags and respective `Dockerfile` links
 
--	[`5.5`, `8.5-php5.5` (*8.5/5.5/Dockerfile*)](https://github.com/zendtech/php-zendserver-docker/blob/b9f59920986c0471fee9c0cb7e83f0f894413454/8.5/5.5/Dockerfile)
--	[`5.6`, `8.5-php5.6`, `8.5` (*8.5/5.6/Dockerfile*)](https://github.com/zendtech/php-zendserver-docker/blob/b9f59920986c0471fee9c0cb7e83f0f894413454/8.5/5.6/Dockerfile)
--	[`5.4`, `7.0-php5.4` (*7.0/5.4/Dockerfile*)](https://github.com/zendtech/php-zendserver-docker/blob/b9f59920986c0471fee9c0cb7e83f0f894413454/7.0/5.4/Dockerfile)
--	[`9.0`, `9.0-php7`, `latest` (*9.0/7.0/Dockerfile*)](https://github.com/zendtech/php-zendserver-docker/blob/b9f59920986c0471fee9c0cb7e83f0f894413454/9.0/7.0/Dockerfile)
+-	[`8.5`, `8.5-php5.6`, `5.6`](https://github.com/zendtech/php-zendserver-docker/blob/bcd65b82acb4f3b5b67f8c657c52f08bc52d8789/8.5/5.6/Dockerfile)
+-	[`9.1`](https://github.com/zendtech/php-zendserver-docker/blob/bcd65b82acb4f3b5b67f8c657c52f08bc52d8789/9.1/7.1/Dockerfile)
+-	[`2019.0`](https://github.com/zendtech/php-zendserver-docker/blob/bcd65b82acb4f3b5b67f8c657c52f08bc52d8789/2019.0/Dockerfile)
+-	[`2021.0`, `latest`](https://github.com/zendtech/php-zendserver-docker/blob/bcd65b82acb4f3b5b67f8c657c52f08bc52d8789/2021.0/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/php-zendserver`)](https://github.com/docker-library/official-images/blob/master/library/php-zendserver). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fphp-zendserver).
+# Quick reference (cont.)
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/php-zendserver/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/php-zendserver/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
+-	**Where to file issues**:  
+	[Zend Support Center](https://www.zend.com/en/support-center)
+
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+	[`amd64`](https://hub.docker.com/r/amd64/php-zendserver/)
+
+-	**Published image artifact details**:  
+	[repo-info repo's `repos/php-zendserver/` directory](https://github.com/docker-library/repo-info/blob/master/repos/php-zendserver) ([history](https://github.com/docker-library/repo-info/commits/master/repos/php-zendserver))  
+	(image metadata, transfer size, etc)
+
+-	**Image updates**:  
+	[official-images repo's `library/php-zendserver` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fphp-zendserver)  
+	[official-images repo's `library/php-zendserver` file](https://github.com/docker-library/official-images/blob/master/library/php-zendserver) ([history](https://github.com/docker-library/official-images/commits/master/library/php-zendserver))
+
+-	**Source of this description**:  
+	[docs repo's `php-zendserver/` directory](https://github.com/docker-library/docs/tree/master/php-zendserver) ([history](https://github.com/docker-library/docs/commits/master/php-zendserver))
 
 # What is Zend Server?
 
@@ -24,15 +63,15 @@ Zend Server is the platform that enables Continuous Delivery, which provides con
 ### Additional Resources
 
 -	[http://www.zend.com/](http://www.zend.com/)
--	[http://kb.zend.com/](http://kb.zend.com/)
+-	[http://support.roguewave.com/](http://support.roguewave.com/)
 -	[http://files.zend.com/help/Zend-Server/zend-server.htm#faqs.htm](http://files.zend.com/help/Zend-Server/zend-server.htm#faqs.htm)
 -	[http://files.zend.com/help/Zend-Server/zend-server.htm#getting\_started.htm](http://files.zend.com/help/Zend-Server/zend-server.htm#getting_started.htm)
 
 # PHP-ZendServer
 
-This is a cluster-enabled version of a Dockerized Zend Server 8.0 container. With Zend Server on Docker, you'll get your PHP applications up and running on a highly available PHP production environment which includes, amongst other features, a highly reliable PHP stack, application monitoring, troubleshooting, and the new and innovative new technology - Z-Ray. Z-Ray gives developers unprecedented visibility into their code by tracking and displaying in a toolbar live and detailed info on how the various elements constructing their page are performing.
+This is a cluster-enabled version of a Dockerized Zend Server container. With Zend Server on Docker, you'll get your PHP applications up and running on a highly available PHP production environment which includes, amongst other features, a highly reliable PHP stack, application monitoring, troubleshooting, and the new and innovative new technology - Z-Ray. Z-Ray gives developers unprecedented visibility into their code by tracking and displaying in a toolbar live and detailed info on how the various elements constructing their page are performing.
 
-For development purposes we provide you with a trial license that is valid until July-31st-2016. For production use you must provide a valid Zend Server license using the instructions below in the Usage section.
+For development purposes we provide you with a time limited trial license. For production use you must provide a valid Zend Server license using the instructions below in the Usage section.
 
 ## Usage
 
@@ -49,13 +88,13 @@ To start a single Zend Server instance, execute:
 -	You can specify the PHP and Zend Server version by adding ':<php-version>' or ':&lt;ZS-version&gt;-php&lt;version&gt;' to the 'docker run' command.
 
 		for example: 
-		$docker run php-zendserver:8.0-php5.6
+		$docker run php-zendserver:8.5-php5.6
 
 #### Availible versions:
 
--	Zend Server 7
 -	Zend Server 8
 -	Zend Server 9 (With PHP 7 GA)(Default version)
+-	Zend Server 2019 with multi PHP Version Support (7.1, 7.2 & 7.3)
 
 ##### Cluster
 
@@ -146,16 +185,10 @@ Each Zend Server Docker container requires 1GB of availible memory.
 
 # License
 
-[Zend Technologies Ltd.](https://www.zend.com/topics/License-EULA-2010-09-2.pdf)
+[Perforce Software, Inc.](https://www.zend.com/end-user-license-agreement)
 
-# Supported Docker versions
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 
-This image is officially supported on Docker version 1.12.5.
+Some additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `php-zendserver/` directory](https://github.com/docker-library/repo-info/tree/master/repos/php-zendserver).
 
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-# User Feedback
-
-Think we’ve missed something? Let us know at: http://www.zend.com/en/support-center
+As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.
