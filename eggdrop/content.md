@@ -78,13 +78,13 @@ Any config file used with docker MUST end in .conf, such as eggdrop.conf or mybo
 
 ## Adding scripts
 
-An easy way to add scripts would be to create a scripts directory on the host and mount it to `/home/eggdrop/eggdrop/scripts` (or the path of your choosing). This would be accomplished by adding an option similar to
+An easy way to add scripts would be to create a scripts directory on the host and mount it to `/home/eggdrop/eggdrop/scripts2` (or the path of your choosing). This would be accomplished by adding an option similar to
 
 ```console
-	-v /path/to/host/scripts:/home/eggdrop/eggdrop/scripts
+	-v /path/to/host/scripts:/home/eggdrop/eggdrop/scripts2
 ```
 
-to your docker run command line (and then edit your config file to load the scripts from the path that matches where you mounted the scripts dir).
+to your docker run command line (and then edit your config file to load the scripts from the path that matches where you mounted the scripts dir). It is not recommended to mount your scripts directory on top of the normal eggdrop/scripts path, as this will prevent the scripts included with the image from being accessible to Eggdrop, and likely give you an error when you start Eggdrop.
 
 ## Exposing network ports
 
