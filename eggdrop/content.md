@@ -105,4 +105,3 @@ You'll know you're affected by this quirk if you see errors such as `nslookup: c
 For additional help, you can join the #eggdrop channel on Libera
 
 The git repository for the Dockerfile is maintained at https://github.com/eggheads/eggdrop-docker
-
