@@ -1,13 +1,15 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`4.5.3-apache`, `4.5-apache`, `4-apache`, `apache`, `4.5.3`, `4.5`, `4`, `latest` (*apache/Dockerfile*)](https://github.com/docker-library/wordpress/blob/4cfa30302dbf66d002ed15b01c881acee605e2dc/apache/Dockerfile)
--	[`4.5.3-fpm`, `4.5-fpm`, `4-fpm`, `fpm` (*fpm/Dockerfile*)](https://github.com/docker-library/wordpress/blob/c674e9ceedf582705e0ad8487c16b42b37a5e9da/fpm/Dockerfile)
-
-[![](https://badge.imagelayers.io/wordpress:latest.svg)](https://imagelayers.io/?images=wordpress:4.5.3-apache,wordpress:4.5.3-fpm)
+-	[`4.7.0-apache`, `4.7-apache`, `4-apache`, `apache`, `4.7.0`, `4.7`, `4`, `latest`, `4.7.0-php5.6-apache`, `4.7-php5.6-apache`, `4-php5.6-apache`, `php5.6-apache`, `4.7.0-php5.6`, `4.7-php5.6`, `4-php5.6`, `php5.6` (*php5.6/apache/Dockerfile*)](https://github.com/docker-library/wordpress/blob/637afb53dc03b4af19149a0880e796346f97c137/php5.6/apache/Dockerfile)
+-	[`4.7.0-fpm`, `4.7-fpm`, `4-fpm`, `fpm`, `4.7.0-php5.6-fpm`, `4.7-php5.6-fpm`, `4-php5.6-fpm`, `php5.6-fpm` (*php5.6/fpm/Dockerfile*)](https://github.com/docker-library/wordpress/blob/637afb53dc03b4af19149a0880e796346f97c137/php5.6/fpm/Dockerfile)
+-	[`4.7.0-fpm-alpine`, `4.7-fpm-alpine`, `4-fpm-alpine`, `fpm-alpine`, `4.7.0-php5.6-fpm-alpine`, `4.7-php5.6-fpm-alpine`, `4-php5.6-fpm-alpine`, `php5.6-fpm-alpine` (*php5.6/fpm-alpine/Dockerfile*)](https://github.com/docker-library/wordpress/blob/637afb53dc03b4af19149a0880e796346f97c137/php5.6/fpm-alpine/Dockerfile)
+-	[`4.7.0-php7.0-apache`, `4.7-php7.0-apache`, `4-php7.0-apache`, `php7.0-apache`, `4.7.0-php7.0`, `4.7-php7.0`, `4-php7.0`, `php7.0` (*php7.0/apache/Dockerfile*)](https://github.com/docker-library/wordpress/blob/637afb53dc03b4af19149a0880e796346f97c137/php7.0/apache/Dockerfile)
+-	[`4.7.0-php7.0-fpm`, `4.7-php7.0-fpm`, `4-php7.0-fpm`, `php7.0-fpm` (*php7.0/fpm/Dockerfile*)](https://github.com/docker-library/wordpress/blob/637afb53dc03b4af19149a0880e796346f97c137/php7.0/fpm/Dockerfile)
+-	[`4.7.0-php7.0-fpm-alpine`, `4.7-php7.0-fpm-alpine`, `4-php7.0-fpm-alpine`, `php7.0-fpm-alpine` (*php7.0/fpm-alpine/Dockerfile*)](https://github.com/docker-library/wordpress/blob/637afb53dc03b4af19149a0880e796346f97c137/php7.0/fpm-alpine/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/wordpress`)](https://github.com/docker-library/official-images/blob/master/library/wordpress). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fwordpress).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `wordpress/tag-details.md` file](https://github.com/docker-library/docs/blob/master/wordpress/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/wordpress/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/wordpress/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is WordPress?
 
@@ -54,17 +56,21 @@ $ docker run --name some-wordpress -e WORDPRESS_DB_HOST=10.1.2.3:3306 \
 Example `docker-compose.yml` for `wordpress`:
 
 ```yaml
-wordpress:
-  image: wordpress
-  links:
-    - db:mysql
-  ports:
-    - 8080:80
+version: '2'
 
-db:
-  image: mariadb
-  environment:
-    MYSQL_ROOT_PASSWORD: example
+services:
+
+  wordpress:
+    image: wordpress
+    ports:
+      - 8080:80
+    environment:
+      WORDPRESS_DB_PASSWORD: example
+
+  mysql:
+    image: mariadb
+    environment:
+      MYSQL_ROOT_PASSWORD: example
 ```
 
 Run `docker-compose up`, wait for it to initialize completely, and visit `http://localhost:8080` or `http://host-ip:8080`.
@@ -82,17 +88,13 @@ The following Docker Hub features can help with the task of keeping your depende
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.2.
+This image is officially supported on Docker version 1.12.5.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
 Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
-
-## Documentation
-
-Documentation for this image is stored in the [`wordpress/` directory](https://github.com/docker-library/docs/tree/master/wordpress) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 
@@ -105,3 +107,7 @@ You can also reach many of the official image maintainers via the `#docker-libra
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
 Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/docker-library/wordpress/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+
+## Documentation
+
+Documentation for this image is stored in the [`wordpress/` directory](https://github.com/docker-library/docs/tree/master/wordpress) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

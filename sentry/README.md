@@ -1,15 +1,13 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`8.5.1`, `8.5` (*8.5/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/d69a0096ee2f885047f95bdd2e2edfc761674580/8.5/Dockerfile)
--	[`8.5.1-onbuild`, `8.5-onbuild` (*8.5/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/ce5121a71f55c2fb0659f552e361b1174c85bccf/8.5/onbuild/Dockerfile)
--	[`8.6.0`, `8.6`, `8`, `latest` (*8.6/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/09d2b56ded2f669f40d5295bfe36529bbafb914d/8.6/Dockerfile)
--	[`8.6.0-onbuild`, `8.6-onbuild`, `8-onbuild`, `onbuild` (*8.6/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/09d2b56ded2f669f40d5295bfe36529bbafb914d/8.6/onbuild/Dockerfile)
-
-[![](https://badge.imagelayers.io/sentry:latest.svg)](https://imagelayers.io/?images=sentry:8.5.1,sentry:8.5.1-onbuild,sentry:8.6.0,sentry:8.6.0-onbuild)
+-	[`8.10.0`, `8.10` (*8.10/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/71597dc5f0532721a3bd24405021e273df471866/8.10/Dockerfile)
+-	[`8.10.0-onbuild`, `8.10-onbuild` (*8.10/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/8e4ec0e019a9cfc653f09b16531cef507e015af1/8.10/onbuild/Dockerfile)
+-	[`8.11.0`, `8.11`, `8`, `latest` (*8.11/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/60d4b0e5ad293ceabfd0d00ec4bc08c5d353ca2c/8.11/Dockerfile)
+-	[`8.11.0-onbuild`, `8.11-onbuild`, `8-onbuild`, `onbuild` (*8.11/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/60d4b0e5ad293ceabfd0d00ec4bc08c5d353ca2c/8.11/onbuild/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/sentry`)](https://github.com/docker-library/official-images/blob/master/library/sentry). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fsentry).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `sentry/tag-details.md` file](https://github.com/docker-library/docs/blob/master/sentry/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/sentry/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/sentry/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is Sentry?
 
@@ -38,7 +36,7 @@ Sentry is a realtime event logging and aggregation platform. It specializes in m
 3.	Generate a new secret key to be shared by all `sentry` containers. This value will then be used as the `SENTRY_SECRET_KEY` environment variable.
 
 	```console
-	$ docker run --rm sentry generate-secret-key
+	$ docker run --rm sentry config generate-secret-key
 	```
 
 4.	If this is a new database, you'll need to run `upgrade`
@@ -83,7 +81,7 @@ When you start the `sentry` image, you can adjust the configuration of the Sentr
 A secret key used for cryptographic functions within Sentry. This key should be unique and consistent across all running instances. You can generate a new secret key doing something like:
 
 ```console
-$ docker run --rm sentry generate-secret-key
+$ docker run --rm sentry config generate-secret-key
 ```
 
 ### `SENTRY_POSTGRES_HOST`, `SENTRY_POSTGRES_PORT`, `SENTRY_DB_NAME`, `SENTRY_DB_USER`, `SENTRY_DB_PASSWORD`
@@ -130,23 +128,27 @@ It's also possible to develop custom extensions within your `onbuild` package. I
 
 See the [official Sentry documentation](https://docs.getsentry.com/on-premise/server/installation/) for more information.
 
+To create your custom `sentry:onbuild` package, simply do the following:
+
+1.	Create a Dockerfile containing `FROM sentry:onbuild`
+2.	In the same directory, add your custom configuration files.
+3.	You can get copies of those files to use as templates from the [docker-sentry GitHub repo](https://github.com/getsentry/docker-sentry/).
+4.	Build your image: `docker build -t mysentry .`
+5.	Run your custom image using `mysentry` instead of `sentry`.
+
 # License
 
 View [license information](https://github.com/getsentry/sentry/blob/master/LICENSE) for the software contained in this image.
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.2.
+This image is officially supported on Docker version 1.12.5.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
 Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
-
-## Documentation
-
-Documentation for this image is stored in the [`sentry/` directory](https://github.com/docker-library/docs/tree/master/sentry) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 
@@ -159,3 +161,7 @@ You can also reach many of the official image maintainers via the `#docker-libra
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
 Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/getsentry/docker-sentry/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+
+## Documentation
+
+Documentation for this image is stored in the [`sentry/` directory](https://github.com/docker-library/docs/tree/master/sentry) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

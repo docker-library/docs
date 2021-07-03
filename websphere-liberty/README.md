@@ -1,17 +1,15 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`kernel` (*ga/developer/kernel/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/b9acc6726d03cd7f97be5e7ec246579d8258b6d6/ga/developer/kernel/Dockerfile)
--	[`common` (*ga/developer/common/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/b9acc6726d03cd7f97be5e7ec246579d8258b6d6/ga/developer/common/Dockerfile)
--	[`webProfile6` (*ga/developer/webProfile6/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/b9acc6726d03cd7f97be5e7ec246579d8258b6d6/ga/developer/webProfile6/Dockerfile)
--	[`webProfile7` (*ga/developer/webProfile7/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/b9acc6726d03cd7f97be5e7ec246579d8258b6d6/ga/developer/webProfile7/Dockerfile)
--	[`javaee7`, `latest` (*ga/developer/javaee7/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/b9acc6726d03cd7f97be5e7ec246579d8258b6d6/ga/developer/javaee7/Dockerfile)
--	[`beta` (*beta/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/c2ccb0fe4d282a8bfb51395d12d541da84f3041a/beta/Dockerfile)
-
-[![](https://badge.imagelayers.io/websphere-liberty:latest.svg)](https://imagelayers.io/?images=websphere-liberty:kernel,websphere-liberty:common,websphere-liberty:webProfile6,websphere-liberty:webProfile7,websphere-liberty:javaee7,websphere-liberty:beta)
+-	[`kernel` (*ga/developer/kernel/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/b946ebd7c0a7d3953419723bc8a3c3041943439e/ga/developer/kernel/Dockerfile)
+-	[`microProfile` (*ga/developer/microProfile/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/b946ebd7c0a7d3953419723bc8a3c3041943439e/ga/developer/microProfile/Dockerfile)
+-	[`webProfile6` (*ga/developer/webProfile6/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/b946ebd7c0a7d3953419723bc8a3c3041943439e/ga/developer/webProfile6/Dockerfile)
+-	[`webProfile7` (*ga/developer/webProfile7/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/b946ebd7c0a7d3953419723bc8a3c3041943439e/ga/developer/webProfile7/Dockerfile)
+-	[`javaee7`, `latest` (*ga/developer/javaee7/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/b946ebd7c0a7d3953419723bc8a3c3041943439e/ga/developer/javaee7/Dockerfile)
+-	[`beta` (*beta/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/904bb14fa750b3dca27a031dc823362a536943dd/beta/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/websphere-liberty`)](https://github.com/docker-library/official-images/blob/master/library/websphere-liberty). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fwebsphere-liberty).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `websphere-liberty/tag-details.md` file](https://github.com/docker-library/docs/blob/master/websphere-liberty/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/websphere-liberty/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/websphere-liberty/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # Overview
 
@@ -29,11 +27,11 @@ COPY server.xml /config/
 RUN installUtility install --acceptLicense defaultServer
 ```
 
-The `common` image adds a set of features that are expected to be of use for a typical production scenario. These features are: `appSecurity-2.0`, `collectiveMember-1.0`, `localConnector-1.0`, `ldapRegistry-3.0`, `monitor-1.0`, `requestTiming-1.0`, `restConnector-1.0`, `sessionDatabase-1.0`, `ssl-1.0`, and `webCache-1.0`. This image is the basis for the `webProfile6` and `webProfile7` images.
-
 The `webProfile6` image contains the features required for Java EE6 Web Profile compliance. It also pulls in additional features to bring the contents in to line with the features available for download by using the runtime JAR, most notably the features required for OSGi applications.
 
 The `webProfile7` image contains the features required for Java EE7 Web Profile compliance. The `javaee7` image extends this image and adds the features required for Java EE7 Full Platform compliance. The `javaee7` image is also tagged with `latest`.
+
+The `webProfile6`, `webProfile7` and `javaee7` images all also contain a common set of features that are expected to be of use for a typical production scenario. These features are: `appSecurity-2.0`, `collectiveMember-1.0`, `localConnector-1.0`, `ldapRegistry-3.0`, `monitor-1.0`, `requestTiming-1.0`, `restConnector-1.0`, `sessionDatabase-1.0`, `ssl-1.0`, and `webCache-1.0`.
 
 # Usage
 
@@ -123,6 +121,16 @@ Then, run the WebSphere Liberty image with the volumes from the data volume cont
 docker run -d -p 80:9080 -p 443:9443 --volumes-from classcache app
 ```
 
+# Running WebSphere Liberty in read-only mode
+
+Liberty writes to two different directories when running: `/opt/ibm/wlp/output` and `/logs`. In order to run the Liberty image in read-only mode these may be mounted as temporary file systems. If using the provided image, the keystore will be generated on initial start up in the server configuration. This means that the server configuration directory either needs to be read-write or the keystore will need to be built into the image. In the example command `/config` is mounted as a read-write volume.
+
+```console
+docker run -d -p 80:9080 -p 443:9443 \
+    --tmpfs /opt/ibm/wlp/output --tmpfs /logs -v /config --read-only \
+    websphere-liberty:javaee7
+```
+
 # License
 
 The Dockerfiles and associated scripts are licensed under the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0.html).
@@ -137,7 +145,7 @@ Note: These licenses do not permit further distribution and that the terms for W
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.2.
+This image is officially supported on Docker version 1.12.5.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

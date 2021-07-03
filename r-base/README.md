@@ -1,12 +1,10 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`3.3.1`, `latest` (*r-base/Dockerfile*)](https://github.com/rocker-org/rocker/blob/118be9ab285173237441836d84bab714c0920cca/r-base/Dockerfile)
-
-[![](https://badge.imagelayers.io/r-base:latest.svg)](https://imagelayers.io/?images=r-base:3.3.1)
+-	[`3.3.2`, `latest` (*r-base/Dockerfile*)](https://github.com/rocker-org/rocker/blob/b2cdaad0026645c6cb3ed78f460042ed2197449a/r-base/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/r-base`)](https://github.com/docker-library/official-images/blob/master/library/r-base). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fr-base).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `r-base/tag-details.md` file](https://github.com/docker-library/docs/blob/master/r-base/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/r-base/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/r-base/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is R?
 
@@ -58,7 +56,7 @@ $ Rscript myscript.R
 Use `r-base` as a base for your own Dockerfiles. For instance, something along the lines of the following will compile and run your project:
 
 ```dockerfile
-FROM r-base:latest
+FROM r-base
 COPY . /usr/local/src/myscripts
 WORKDIR /usr/local/src/myscripts
 CMD ["Rscript", "myscript.R"]
@@ -80,7 +78,7 @@ View [R-project license information](http://www.r-project.org/Licenses/) for the
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.2.
+This image is officially supported on Docker version 1.12.5.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
@@ -88,13 +86,9 @@ Please see [the Docker installation documentation](https://docs.docker.com/insta
 
 # User Feedback
 
-## Documentation
-
-Documentation for this image is stored in the [`r-base/` directory](https://github.com/docker-library/docs/tree/master/r-base) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `REAMDE.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
-
 ## Issues
 
-If you have any problems with or questions about this image, please contact us %%MAILING-LIST%% through a [GitHub issue](https://github.com/rocker-org/rocker/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/rocker-org/rocker/issues).
 
 You can also reach us by email via email at `rocker-maintainers@eddelbuettel.com`.
 
@@ -102,4 +96,8 @@ You can also reach us by email via email at `rocker-maintainers@eddelbuettel.com
 
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
-Before you start to code, we recommend discussing your plans %%MAILING-LIST%% through a [GitHub issue](https://github.com/rocker-org/rocker/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/rocker-org/rocker/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+
+## Documentation
+
+Documentation for this image is stored in the [`r-base/` directory](https://github.com/docker-library/docs/tree/master/r-base) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `REAMDE.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

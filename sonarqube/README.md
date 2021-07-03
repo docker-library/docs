@@ -1,13 +1,13 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `lts`, `5.6` (*5.6/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/a0b588131c7729c8156936a4521740228fe682c6/5.6/Dockerfile)
--	[`5.6-alpine` (*5.6-alpine/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/a0b588131c7729c8156936a4521740228fe682c6/5.6-alpine/Dockerfile)
-
-[![](https://badge.imagelayers.io/sonarqube:latest.svg)](https://imagelayers.io/?images=sonarqube:latest,sonarqube:5.6-alpine)
+-	[`latest`, `6.2` (*6.2/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/f63921d773162fde17179f9cc5e78640c88b2ae6/6.2/Dockerfile)
+-	[`lts`, `5.6.4` (*5.6.4/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/f63921d773162fde17179f9cc5e78640c88b2ae6/5.6.4/Dockerfile)
+-	[`alpine`, `6.2-alpine` (*6.2-alpine/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/f63921d773162fde17179f9cc5e78640c88b2ae6/6.2-alpine/Dockerfile)
+-	[`lts-alpine`, `5.6.4-alpine` (*5.6.4-alpine/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/f63921d773162fde17179f9cc5e78640c88b2ae6/5.6.4-alpine/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/sonarqube`)](https://github.com/docker-library/official-images/blob/master/library/sonarqube). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fsonarqube).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `sonarqube/tag-details.md` file](https://github.com/docker-library/docs/blob/master/sonarqube/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/sonarqube/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/sonarqube/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is SonarQube?
 
@@ -58,23 +58,35 @@ More recipes can be found [here](https://github.com/SonarSource/docker-sonarqube
 
 The administration guide can be found [here](http://docs.sonarqube.org/display/SONAR/Administration+Guide).
 
+# Image Variants
+
+The `sonarqube` images come in many flavors, each designed for a specific use case.
+
+## `sonarqube:<version>`
+
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+## `sonarqube:alpine`
+
+This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+
+This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+
+To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
+
 # License
 
 View [license information](http://www.gnu.org/licenses/lgpl.txt) for the software contained in this image.
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.2.
+This image is officially supported on Docker version 1.12.5.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
 Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
-
-## Documentation
-
-Documentation for this image is stored in the [`sonarqube/` directory](https://github.com/docker-library/docs/tree/master/sonarqube) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 
@@ -87,3 +99,7 @@ You can also reach many of the official image maintainers via the `#docker-libra
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
 Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/SonarSource/docker-sonarqube/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+
+## Documentation
+
+Documentation for this image is stored in the [`sonarqube/` directory](https://github.com/docker-library/docs/tree/master/sonarqube) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

@@ -91,6 +91,16 @@ If you wish to change the default vhost, you can do so with the `RABBITMQ_DEFAUL
 $ docker run -d --hostname my-rabbit --name some-rabbit -e RABBITMQ_DEFAULT_VHOST=my_vhost rabbitmq:3-management
 ```
 
+## Enabling HiPE
+
+See the [RabbitMQ "Configuration"](http://www.rabbitmq.com/configure.html#config-items) for more information about various configuration options.
+
+For enabling the HiPE compiler on startup use `RABBITMQ_HIPE_COMPILE` set to `1`. Accroding to the official documentation:
+
+> Set to true to precompile parts of RabbitMQ with HiPE, a just-in-time compiler for Erlang. This will increase server throughput at the cost of increased startup time. You might see 20-50% better performance at the cost of a few minutes delay at startup.
+
+It is therefore important to take that startup delay into consideration when configuring health checks, automated clustering etc.
+
 ## Connecting to the daemon
 
 ```console

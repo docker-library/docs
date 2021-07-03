@@ -1,12 +1,10 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2016.04`, `latest` (*Dockerfile*)](https://github.com/perl6/docker/blob/f9c2b6026b8c875ad97cddacfc0158bfdc25d21c/Dockerfile)
-
-[![](https://badge.imagelayers.io/rakudo-star:latest.svg)](https://imagelayers.io/?images=rakudo-star:2016.04)
+-	[`2016.11`, `latest` (*Dockerfile*)](https://github.com/perl6/docker/blob/a7548f14c69b9dd3cd75f3359b74c930bc0a16b2/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/rakudo-star`)](https://github.com/docker-library/official-images/blob/master/library/rakudo-star). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Frakudo-star).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `rakudo-star/tag-details.md` file](https://github.com/docker-library/docs/blob/master/rakudo-star/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/rakudo-star/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/rakudo-star/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is Rakudo Star?
 
@@ -52,17 +50,13 @@ View [license information](https://github.com/rakudo/star/blob/master/LICENSE) f
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.2.
+This image is officially supported on Docker version 1.12.5.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
 Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
-
-## Documentation
-
-Documentation for this image is stored in the [`rakudo-star/` directory](https://github.com/docker-library/docs/tree/master/rakudo-star) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 
@@ -75,3 +69,7 @@ You can also reach many of the official image maintainers via the `#docker-libra
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
 Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/perl6/docker/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+
+## Documentation
+
+Documentation for this image is stored in the [`rakudo-star/` directory](https://github.com/docker-library/docs/tree/master/rakudo-star) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

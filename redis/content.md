@@ -22,7 +22,7 @@ This image includes `EXPOSE 6379` (the redis port), so standard container linkin
 $ docker run --name some-redis -d redis redis-server --appendonly yes
 ```
 
-If persistence is enabled, data is stored in the `VOLUME /data`, which can be used with `--volumes-from some-volume-container` or `-v /docker/host/dir:/data` (see [docs.docker volumes](http://docs.docker.com/userguide/dockervolumes/)).
+If persistence is enabled, data is stored in the `VOLUME /data`, which can be used with `--volumes-from some-volume-container` or `-v /docker/host/dir:/data` (see [docs.docker volumes](https://docs.docker.com/engine/tutorials/dockervolumes/)).
 
 For more about Redis Persistence, see [http://redis.io/topics/persistence](http://redis.io/topics/persistence).
 

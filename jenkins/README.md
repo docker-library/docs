@@ -1,13 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `1.651.3` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/223ca363411bf70dbda92e358be092097342d5ad/Dockerfile)
--	[`alpine`, `1.651.3-alpine` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/7616fefc2db53d86d2fe68a01f028e356caf940f/Dockerfile)
-
-[![](https://badge.imagelayers.io/jenkins:latest.svg)](https://imagelayers.io/?images=jenkins:latest,jenkins:alpine)
+-	[`latest`, `2.19.4` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/79e871d7ea9085cabb287dd53705b4432e36cf6f/Dockerfile)
+-	[`alpine`, `2.19.4-alpine` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/41839c39bfcc00d8cbfcca607fdbb69cbfc58d5b/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/jenkins`)](https://github.com/docker-library/official-images/blob/master/library/jenkins). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fjenkins).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `jenkins/tag-details.md` file](https://github.com/docker-library/docs/blob/master/jenkins/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/jenkins/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/jenkins/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # Jenkins
 
@@ -49,7 +47,7 @@ This is highly recommended. Treat the jenkins_home directory as you would a data
 
 If your volume is inside a container - you can use `docker cp $ID:/var/jenkins_home` command to extract the data, or other options to find where the volume data is. Note that some symlinks on some OSes may be converted to copies (this can confuse jenkins with lastStableBuild links etc)
 
-For more info check Docker docs section on [Managing data in containers](https://docs.docker.com/userguide/dockervolumes/)
+For more info check Docker docs section on [Managing data in containers](https://docs.docker.com/engine/tutorials/dockervolumes/)
 
 # Setting the number of executors
 
@@ -95,7 +93,7 @@ docker run --name myjenkins -p 8080:8080 -p 50000:50000 --env JAVA_OPTS="-Djava.
 
 # Passing Jenkins launcher parameters
 
-Argument you pass to docker running the jenkins image are passed to jenkins launcher, so you can run for sample :
+Arguments you pass to docker running the jenkins image are passed to jenkins launcher, so you can run for example :
 
 ```console
 $ docker run jenkins --version
@@ -103,7 +101,7 @@ $ docker run jenkins --version
 
 This will dump Jenkins version, just like when you run jenkins as an executable war.
 
-You also can define jenkins arguments as `JENKINS_OPTS`. This is usefull to define a set of arguments to pass to jenkins launcher as you define a derived jenkins image based on the official one with some customized settings. The following sample Dockerfile uses this option to force use of HTTPS with a certificate included in the image
+You also can define jenkins arguments as `JENKINS_OPTS`. This is useful to define a set of arguments to pass to jenkins launcher as you define a derived jenkins image based on the official one with some customized settings. The following sample Dockerfile uses this option to force use of HTTPS with a certificate included in the image
 
 ```console
 FROM jenkins:1.565.3
@@ -193,17 +191,13 @@ To minimize image size, it's uncommon for additional related tools (such as `git
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.2.
+This image is officially supported on Docker version 1.12.5.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
 Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
-
-## Documentation
-
-Documentation for this image is stored in the [`jenkins/` directory](https://github.com/docker-library/docs/tree/master/jenkins) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 
@@ -216,3 +210,7 @@ You can also reach many of the official image maintainers via the `#docker-libra
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
 Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/cloudbees/jenkins-ci.org-docker/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+
+## Documentation
+
+Documentation for this image is stored in the [`jenkins/` directory](https://github.com/docker-library/docs/tree/master/jenkins) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

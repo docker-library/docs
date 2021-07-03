@@ -1,15 +1,13 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `enterprise`, `4.5.0`, `enterprise-4.5.0` (*enterprise/couchbase-server/4.5.0/Dockerfile*)](https://github.com/couchbase/docker/blob/1d769f5af32cba922f56a3fc21ce1ef9a85ae663/enterprise/couchbase-server/4.5.0/Dockerfile)
--	[`community`, `community-4.0.0` (*community/couchbase-server/4.0.0/Dockerfile*)](https://github.com/couchbase/docker/blob/1d769f5af32cba922f56a3fc21ce1ef9a85ae663/community/couchbase-server/4.0.0/Dockerfile)
--	[`3.1.5`, `enterprise-3.1.5` (*enterprise/couchbase-server/3.1.5/Dockerfile*)](https://github.com/couchbase/docker/blob/1d769f5af32cba922f56a3fc21ce1ef9a85ae663/enterprise/couchbase-server/3.1.5/Dockerfile)
--	[`community-3.1.3` (*community/couchbase-server/3.1.3/Dockerfile*)](https://github.com/couchbase/docker/blob/1d769f5af32cba922f56a3fc21ce1ef9a85ae663/community/couchbase-server/3.1.3/Dockerfile)
-
-[![](https://badge.imagelayers.io/couchbase:latest.svg)](https://imagelayers.io/?images=couchbase:latest,couchbase:community,couchbase:3.1.5,couchbase:community-3.1.3)
+-	[`latest`, `enterprise`, `4.5.1`, `enterprise-4.5.1` (*enterprise/couchbase-server/4.5.1/Dockerfile*)](https://github.com/couchbase/docker/blob/042e733f40487ee07c75413f10ce3c29b1d49181/enterprise/couchbase-server/4.5.1/Dockerfile)
+-	[`community`, `community-4.5.0` (*community/couchbase-server/4.5.0/Dockerfile*)](https://github.com/couchbase/docker/blob/042e733f40487ee07c75413f10ce3c29b1d49181/community/couchbase-server/4.5.0/Dockerfile)
+-	[`3.1.6`, `enterprise-3.1.6` (*enterprise/couchbase-server/3.1.6/Dockerfile*)](https://github.com/couchbase/docker/blob/042e733f40487ee07c75413f10ce3c29b1d49181/enterprise/couchbase-server/3.1.6/Dockerfile)
+-	[`community-3.1.3` (*community/couchbase-server/3.1.3/Dockerfile*)](https://github.com/couchbase/docker/blob/042e733f40487ee07c75413f10ce3c29b1d49181/community/couchbase-server/3.1.3/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/couchbase`)](https://github.com/docker-library/official-images/blob/master/library/couchbase). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fcouchbase).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `couchbase/tag-details.md` file](https://github.com/docker-library/docs/blob/master/couchbase/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/couchbase/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/couchbase/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is Couchbase Server?
 
@@ -172,17 +170,13 @@ docker run couchbase:community-4.0.0
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.2.
+This image is officially supported on Docker version 1.12.5.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
 Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
-
-## Documentation
-
-Documentation for this image is stored in the [`couchbase/` directory](https://github.com/docker-library/docs/tree/master/couchbase) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 
@@ -195,3 +189,7 @@ You can also reach many of the official image maintainers via the `#docker-libra
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
 Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/couchbase/docker/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+
+## Documentation
+
+Documentation for this image is stored in the [`couchbase/` directory](https://github.com/docker-library/docs/tree/master/couchbase) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

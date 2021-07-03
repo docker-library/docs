@@ -1,18 +1,12 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`4.0.3`, `4.0` (*4.0/Dockerfile*)](https://github.com/docker-library/kibana/blob/9fc787378f38bc25616d7118741a74b42402d344/4.0/Dockerfile)
--	[`4.1.8`, `4.1` (*4.1/Dockerfile*)](https://github.com/docker-library/kibana/blob/0beddcb3e86d1b623ada81d423aaa98e8500657f/4.1/Dockerfile)
--	[`4.2.2`, `4.2` (*4.2/Dockerfile*)](https://github.com/docker-library/kibana/blob/9fc787378f38bc25616d7118741a74b42402d344/4.2/Dockerfile)
--	[`4.3.3`, `4.3` (*4.3/Dockerfile*)](https://github.com/docker-library/kibana/blob/9fc787378f38bc25616d7118741a74b42402d344/4.3/Dockerfile)
--	[`4.4.2`, `4.4` (*4.4/Dockerfile*)](https://github.com/docker-library/kibana/blob/9fc787378f38bc25616d7118741a74b42402d344/4.4/Dockerfile)
--	[`4.5.1`, `4.5`, `4`, `latest` (*4.5/Dockerfile*)](https://github.com/docker-library/kibana/blob/2015c601bab8b77f0d13475f901c9b85e6014bdb/4.5/Dockerfile)
--	[`5.0.0-alpha4`, `5.0.0`, `5.0`, `5` (*5.0/Dockerfile*)](https://github.com/docker-library/kibana/blob/90abf46493103a3c6a7061b400d76f109c4104e7/5.0/Dockerfile)
-
-[![](https://badge.imagelayers.io/kibana:latest.svg)](https://imagelayers.io/?images=kibana:4.0.3,kibana:4.1.8,kibana:4.2.2,kibana:4.3.3,kibana:4.4.2,kibana:4.5.1,kibana:5.0.0-alpha4)
+-	[`5.1.1`, `5.1`, `5`, `latest` (*5/Dockerfile*)](https://github.com/docker-library/kibana/blob/03f657e02f2fc3f3487dfe98cc98f9870eaaa5c4/5/Dockerfile)
+-	[`4.6.3`, `4.6`, `4` (*4.6/Dockerfile*)](https://github.com/docker-library/kibana/blob/43644e6ae40c53c05d94165506094035f0463ea6/4.6/Dockerfile)
+-	[`4.1.11`, `4.1` (*4.1/Dockerfile*)](https://github.com/docker-library/kibana/blob/7ce21f8aa1e58443c3031fdbdf83a08ce34e49a4/4.1/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/kibana`)](https://github.com/docker-library/official-images/blob/master/library/kibana). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fkibana).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `kibana/tag-details.md` file](https://github.com/docker-library/docs/blob/master/kibana/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/kibana/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/kibana/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is Kibana?
 
@@ -58,17 +52,13 @@ View [license information](https://github.com/elastic/kibana/blob/4557a6fc0ba08c
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.2.
+This image is officially supported on Docker version 1.12.5.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
 Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
-
-## Documentation
-
-Documentation for this image is stored in the [`kibana/` directory](https://github.com/docker-library/docs/tree/master/kibana) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 
@@ -81,3 +71,7 @@ You can also reach many of the official image maintainers via the `#docker-libra
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
 Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/docker-library/kibana/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+
+## Documentation
+
+Documentation for this image is stored in the [`kibana/` directory](https://github.com/docker-library/docs/tree/master/kibana) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

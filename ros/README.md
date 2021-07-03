@@ -13,11 +13,9 @@
 -	[`kinetic-robot` (*ros/kinetic/kinetic-robot/Dockerfile*)](https://github.com/osrf/docker_images/blob/bf5219b2ae079b65896232dd0c345a8bc75bc5df/ros/kinetic/kinetic-robot/Dockerfile)
 -	[`kinetic-perception` (*ros/kinetic/kinetic-perception/Dockerfile*)](https://github.com/osrf/docker_images/blob/bf5219b2ae079b65896232dd0c345a8bc75bc5df/ros/kinetic/kinetic-perception/Dockerfile)
 
-[![](https://badge.imagelayers.io/ros:latest.svg)](https://imagelayers.io/?images=ros:indigo-ros-core,ros:indigo-ros-base,ros:indigo-robot,ros:indigo-perception,ros:jade-ros-core,ros:jade-ros-base,ros:jade-robot,ros:jade-perception,ros:kinetic-ros-core,ros:kinetic-ros-base,ros:kinetic-robot,ros:kinetic-perception)
-
 For more information about this image and its history, please see [the relevant manifest file (`library/ros`)](https://github.com/docker-library/official-images/blob/master/library/ros). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fros).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `ros/tag-details.md` file](https://github.com/docker-library/docs/blob/master/ros/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/ros/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/ros/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is [ROS](http://www.ros.org/)?
 
@@ -60,7 +58,7 @@ The available tags include supported distros along with a hierarchy tags based o
 - `robot`: basic install for robots  
 - `perception`: basic install for perception tasks
 
-The rest of the common meta-packages such as `desktop` and `desktop-full` are hosted on automatic build repos under OSRF's Docker Hub profile [here](https://registry.hub.docker.com/u/osrf/ros). These meta-packages include graphical dependencies and hook a host of other large packages such as X11, X server, etc. So in the interest of keep the official images lean and secure, the desktop packages are just be hosted with OSRF's profile.
+The rest of the common meta-packages such as `desktop` and `desktop-full` are hosted on automatic build repos under OSRF's Docker Hub profile [here](https://hub.docker.com/r/osrf/ros/). These meta-packages include graphical dependencies and hook a host of other large packages such as X11, X server, etc. So in the interest of keep the official images lean and secure, the desktop packages are just be hosted with OSRF's profile.
 
 ### Volumes
 
@@ -269,17 +267,13 @@ While the core parts of ROS are licensed under the BSD license, other licenses a
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.2.
+This image is officially supported on Docker version 1.12.5.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
 Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
-
-## Documentation
-
-Documentation for this image is stored in the [`ros/` directory](https://github.com/docker-library/docs/tree/master/ros) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 
@@ -292,3 +286,7 @@ You can also reach many of the official image maintainers via the `#docker-libra
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
 Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/osrf/docker_images/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+
+## Documentation
+
+Documentation for this image is stored in the [`ros/` directory](https://github.com/docker-library/docs/tree/master/ros) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

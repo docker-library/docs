@@ -1,12 +1,10 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`6.0.2`, `6.0`, `6`, `latest` (*6.0/Dockerfile*)](https://github.com/Lightstreamer/Docker/blob/ac09cec81d3dacc9175371815e42a2b7495473b4/6.0/Dockerfile)
-
-[![](https://badge.imagelayers.io/lightstreamer:latest.svg)](https://imagelayers.io/?images=lightstreamer:6.0.2)
+-	[`6.0.3`, `6.0`, `6`, `latest` (*6.0/Dockerfile*)](https://github.com/Lightstreamer/Docker/blob/784b417d4415e12f1bb1b15f7f697273de3a7ded/6.0/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/lightstreamer`)](https://github.com/docker-library/official-images/blob/master/library/lightstreamer). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Flightstreamer).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `lightstreamer/tag-details.md` file](https://github.com/docker-library/docs/blob/master/lightstreamer/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/lightstreamer/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/lightstreamer/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is Lightstreamer Server?
 
@@ -33,7 +31,7 @@ This will map port 8080 inside the container to port 80 on local host. Then poin
 It is possibile to customize each aspect of the Lightstreamer instance running into the container. For example, a specific configuration file may be supplied as follows:
 
 ```console
-$ docker run --name ls-server -v /path/to/my-lightstreamer-conf.xml:/lightstreamer/conf/lightstreamer_conf.xml -d -p 80:8080 lightstreamer
+$ docker run --name ls-server -v /path/to/my-lightstreamer_conf.xml:/lightstreamer/conf/lightstreamer_conf.xml -d -p 80:8080 lightstreamer
 ```
 
 In the same way, you could provide a custom logging configuration, maybe in this case also specifying a dedicated volume to ensure both the persistence of log files and better performance of the container:
@@ -55,13 +53,13 @@ FROM lightstreamer
 
 # Please specify a COPY command only for the the required custom configuration file
 COPY my-lightstreamer_conf.xml /lightstreamer/conf/lightstreamer_conf.xml
-COPY my-lightstreamer_log.xml /lightstreamer/conf/lightstreamer_log_conf.xml
+COPY my-lightstreamer_log_conf.xml /lightstreamer/conf/lightstreamer_log_conf.xml
 ```
 
 where `my-lightstreamer_conf.xml` and `my-lightstreamer_log_conf.xml` are your custom configuration files, placed in the same directory as the Dockerfile. By simply running the command:
 
 ```console
-$ docker build -t my-lightstreamer
+$ docker build -t my-lightstreamer .
 ```
 
 the new image will be built along with the provided files. After that, launch the container:
@@ -97,11 +95,11 @@ $ docker run --name ls-server -v /path/to/my-adapters:/lightstreamer/adapters -d
 In this case, the `/path/to/my-adapters` folder has to be structured with the required layout for an adapters folder:
 
 ```console
-/path/to/my-adapaters+
-                     +my_adapter_set_1
-                     +my_adapter_set_2
-                     ...
-                     +my_adapter_set_N
+/path/to/my-adapters+
+                    +my_adapter_set_1
+                    +my_adapter_set_2
+                    ...
+                    +my_adapter_set_N
                      
 ```
 
@@ -140,17 +138,13 @@ View [license information](http://www.lightstreamer.com/lightstreamer-sla) for t
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.2.
+This image is officially supported on Docker version 1.12.5.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
 Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
-
-## Documentation
-
-Documentation for this image is stored in the [`lightstreamer/` directory](https://github.com/docker-library/docs/tree/master/lightstreamer) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 
@@ -163,3 +157,7 @@ You can also reach many of the official image maintainers via the `#docker-libra
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
 Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/Lightstreamer/Docker/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+
+## Documentation
+
+Documentation for this image is stored in the [`lightstreamer/` directory](https://github.com/docker-library/docs/tree/master/lightstreamer) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

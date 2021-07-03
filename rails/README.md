@@ -25,14 +25,12 @@ CMD ["rails", "server", "-b", "0.0.0.0"]
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.0.0`, `5.0`, `5`, `latest` (*Dockerfile*)](https://github.com/docker-library/rails/blob/15389f3f777fe16044a04709c2000f98948d16fa/Dockerfile)
+-	[`5.0.0.1`, `5.0.0`, `5.0`, `5`, `latest` (*Dockerfile*)](https://github.com/docker-library/rails/blob/74262f5482517f779681590b0194758ff75cf77c/Dockerfile)
 -	[`onbuild` (*onbuild/Dockerfile*)](https://github.com/docker-library/rails/blob/9df9b5e6b1519faf22e1565c2caaebf7cc1c665b/onbuild/Dockerfile)
-
-[![](https://badge.imagelayers.io/rails:latest.svg)](https://imagelayers.io/?images=rails:5.0.0,rails:onbuild)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/rails`)](https://github.com/docker-library/official-images/blob/master/library/rails). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Frails).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `rails/tag-details.md` file](https://github.com/docker-library/docs/blob/master/rails/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/rails/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/rails/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is Ruby on Rails?
 
@@ -110,17 +108,13 @@ View [license information](https://github.com/rails/rails#license) for the softw
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.2.
+This image is officially supported on Docker version 1.12.5.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
 Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
-
-## Documentation
-
-Documentation for this image is stored in the [`rails/` directory](https://github.com/docker-library/docs/tree/master/rails) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 
@@ -133,3 +127,7 @@ You can also reach many of the official image maintainers via the `#docker-libra
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
 Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/docker-library/rails/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+
+## Documentation
+
+Documentation for this image is stored in the [`rails/` directory](https://github.com/docker-library/docs/tree/master/rails) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

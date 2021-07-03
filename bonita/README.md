@@ -1,13 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`7.0.3` (*7.0/Dockerfile*)](https://github.com/Bonitasoft-Community/docker_bonita/blob/a4da793e2e8db73532ceb9a7cbbc9b82ab90ca1a/7.0/Dockerfile)
--	[`7.2.3`, `latest` (*7.2/Dockerfile*)](https://github.com/Bonitasoft-Community/docker_bonita/blob/6f67495930c84b02ecd689fc09d0bc953e792bfb/7.2/Dockerfile)
-
-[![](https://badge.imagelayers.io/bonita:latest.svg)](https://imagelayers.io/?images=bonita:7.0.3,bonita:7.2.3)
+-	[`7.2.4` (*7.2/Dockerfile*)](https://github.com/Bonitasoft-Community/docker_bonita/blob/c8d6cbb007b77a9ce5b22a7e874608962f863e99/7.2/Dockerfile)
+-	[`7.3.3`, `latest` (*7.3/Dockerfile*)](https://github.com/Bonitasoft-Community/docker_bonita/blob/19d78ec0f212891e97814b2db30891b9b280f7e5/7.3/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/bonita`)](https://github.com/docker-library/official-images/blob/master/library/bonita). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fbonita).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `bonita/tag-details.md` file](https://github.com/docker-library/docs/blob/master/bonita/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/bonita/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/bonita/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is Bonita BPM?
 
@@ -92,8 +90,8 @@ Most of the data are stored in a database and can be stored outside the Bonita c
 
 Important note: There are several ways to store data used by applications that run in Docker containers. We encourage users of the `bonita` images to familiarize themselves with the options available, including:
 
--	Let Docker manage the storage of your data [by writing the files to disk on the host system using its own internal volume management](https://docs.docker.com/userguide/dockervolumes/#adding-a-data-volume). This is the default and is easy and fairly transparent to the user. The downside is that the files may be hard to locate for tools and applications that run directly on the host system, i.e. outside containers.
--	Create a data directory on the host system (outside the container) and [mount this to a directory visible from inside the container](https://docs.docker.com/userguide/dockervolumes/#mount-a-host-directory-as-a-data-volume). This places the database files in a known location on the host system, and makes it easy for tools and applications on the host system to access the files. The downside is that the user needs to make sure that the directory exists, and that directory permissions and other security mechanisms on the host system are set up correctly.
+-	Let Docker manage the storage of your data [by writing the files to disk on the host system using its own internal volume management](https://docs.docker.com/engine/tutorials/dockervolumes/#adding-a-data-volume). This is the default and is easy and fairly transparent to the user. The downside is that the files may be hard to locate for tools and applications that run directly on the host system, i.e. outside containers.
+-	Create a data directory on the host system (outside the container) and [mount this to a directory visible from inside the container](https://docs.docker.com/engine/tutorials/dockervolumes/#mount-a-host-directory-as-a-data-volume). This places the database files in a known location on the host system, and makes it easy for tools and applications on the host system to access the files. The downside is that the user needs to make sure that the directory exists, and that directory permissions and other security mechanisms on the host system are set up correctly.
 
 The Docker documentation is a good starting point for understanding the different storage options and variations, and there are multiple blogs and forum postings that discuss and give advice in this area. We will simply show the basic procedure here for the latter option above:
 
@@ -112,47 +110,49 @@ $ chcon -Rt svirt_sandbox_file_t /my/own/datadir
 
 ## Migrate from an earlier version of Bonita BPM
 
-1.	Stop the container to perform a backup
+-	Stop the container to perform a backup
 
 	```console
-	$ docker stop bonita_7.0.0_postgres
+	$ docker stop bonita_7.2.3_postgres
 	```
 
-2.	Check where your data are stored
+-	For containers < 7.3.0 :
 
-	```console
-	$ docker inspect bonita_7.0.0_postgres
-	[...]
-	    "Mounts": [
-	        {
-	            "Source": "/home/user/Documents/Docker/Volumes/bonita_7.0.0_postgres",
-	            "Destination": "/opt/bonita",
-	            "Mode": "",
-	            "RW": true
-	        }
-	    ],
-	[...]
-	```
+	-	Check where your data are stored
 
-3.	Copy data from the filesystem
+		```console
+		$ docker inspect bonita_7.2.3_postgres
+		[...]
+		    "Mounts": [
+		        {
+		            "Source": "/home/user/Documents/Docker/Volumes/bonita_7.2.3_postgres",
+		            "Destination": "/opt/bonita",
+		            "Mode": "",
+		            "RW": true
+		        }
+		    ],
+		[...]
+		```
 
-		cp -r bonita_7.0.0_postgres bonita_7.0.3_postgres
+	-	Copy data from the filesystem
 
-4.	Retrieve the DB container IP
+			cp -r bonita_7.2.3_postgres bonita_migration
+
+-	Retrieve the DB container IP
 
 	```console
 	$ docker inspect --format '{{ .NetworkSettings.IPAddress }}' mydbpostgres
 	172.17.0.26
 	```
 
-5.	Dump the database
+-	Dump the database
 
 		export PGPASSWORD=mysecretpassword
 		pg_dump -O -x -h 172.17.0.26 -U postgres bonitadb > /tmp/bonitadb.sql
 
 	Note that businessdb won't be updated with the migration tool but you may want to also backup/move it.
 
-6.	Load the dump
+-	Load the dump
 
 		export PGPASSWORD=mysecretpassword
 		psql -U postgres -h 172.17.0.26 -d postgres -c "CREATE USER newbonitauser WITH PASSWORD 'newbonitapass';"
@@ -160,26 +160,38 @@ $ chcon -Rt svirt_sandbox_file_t /my/own/datadir
 		export PGPASSWORD=newbonitapass
 		cat /tmp/bonitadb.sql | psql -U newbonitauser -h 172.17.0.26 newbonitadb
 
-7.	Retrieve the last migration tool and the target version of the Bonita bundle
+-	Retrieve the last migration tool
 
-		cd bonita_7.0.3_postgres
-		wget http://download.forge.ow2.org/bonita/bonita-migration-distrib-2.2.0.zip
-		wget http://download.forge.ow2.org/bonita/BonitaBPMCommunity-7.0.3-Tomcat-7.0.55.zip
-		unzip bonita-migration-distrib-2.2.0.zip -d bonita-migration-distrib-2.2.0
-		unzip BonitaBPMCommunity-7.0.3-Tomcat-7.0.55.zip
+	-	If you migrate to a version < 7.3.0
 
-8.	Move the previous Home into the new bundle
+		-	get also the target version of the Bonita bundle
 
-		mv BonitaBPMCommunity-7.0.3-Tomcat-7.0.55/bonita/ BonitaBPMCommunity-7.0.3-Tomcat-7.0.55/bonita.orig
-		cp -r BonitaBPMCommunity-7.0.0-Tomcat-7.0.55/bonita/ BonitaBPMCommunity-7.0.3-Tomcat-7.0.55/bonita/
+		```console
+		cd bonita_migration
+		wget http://download.forge.ow2.org/bonita/bonita-migration-distrib-2.15.0.zip
+		wget http://download.forge.ow2.org/bonita/BonitaBPMCommunity-7.2.4-Tomcat-7.0.67.zip
+		unzip bonita-migration-distrib-2.15.0.zip
+		unzip BonitaBPMCommunity-7.2.4-Tomcat-7.0.67.zip
+		```
 
-9.	Configure the migration tool
+		-	Move the previous Home into the new bundle
 
-		cd bonita-migration-distrib-2.2.0/
+		```console
+		mv BonitaBPMCommunity-7.2.4-Tomcat-7.0.67/bonita/ BonitaBPMCommunity-7.2.4-Tomcat-7.0.67/bonita.orig
+		cp -r BonitaBPMCommunity-7.2.3-Tomcat-7.0.67/bonita/ BonitaBPMCommunity-7.2.4-Tomcat-7.0.67/bonita/
+		```
 
-	add the jdbc driver
+	-	If you migrate to a version >= 7.3.0
 
-		cp ../BonitaBPMCommunity-7.0.0-Tomcat-7.0.55/lib/bonita/postgresql-9.3-1102.jdbc41.jar lib/
+		```console
+		cd bonita_migration
+		wget http://download.forge.ow2.org/bonita/bonita-migration-distrib-2.15.0.zip
+		unzip bonita-migration-distrib-2.15.0.zip
+		```
+
+-	Configure the migration tool
+
+		cd bonita-migration-distrib-2.15.0
 
 	edit the migration tool config to point towards the copy of bonita home and db
 
@@ -187,21 +199,61 @@ $ chcon -Rt svirt_sandbox_file_t /my/own/datadir
 
 	For example :
 
-		bonita.home=/home/user/Documents/Docker/Volumes/bonita_7.0.3_postgres/BonitaBPMCommunity-7.0.3-Tomcat-7.0.55/bonita
 		db.vendor=postgres
 		db.url=jdbc:postgresql://172.17.0.26:5432/newbonitadb
 		db.driverClass=org.postgresql.Driver
 		db.user=newbonitauser
 		db.password=newbonitapass
+		# location of the bonita home (only useful when migration from version before 7.3.0)
+		bonita.home=/home/user/Documents/Docker/Volumes/bonita_migration/BonitaBPMCommunity-7.2.3-Tomcat-7.0.67/bonita
 
-10.	Launch the migration
+-	Launch the migration
 
-		./migration.sh
+		cd bin
+		./bonita-migration-distrib
 
-11.	Launch the new container pointing towards the copy of DB and filesystem
+-	Launch the new container pointing towards the copy of DB and filesystem
+
+	-	If < 7.3.0
 
 	```console
-	$ docker run --name=bonita_7.0.3_postgres --link mydbpostgres:postgres -e "DB_NAME=newbonitadb" -e "DB_USER=newbonitauser" -e "DB_PASS=newbonitapass" -v "$PWD"/bonita_7.0.3_postgres:/opt/bonita/ -d -p 8081:8080 bonita:7.0.3
+	$ docker run --name=bonita_7.2.4_postgres --link mydbpostgres:postgres -e "DB_NAME=newbonitadb" -e "DB_USER=newbonitauser" -e "DB_PASS=newbonitapass" -v "$PWD"/bonita_migration:/opt/bonita/ -d -p 8081:8080 bonita:7.2.4
+	```
+
+	-	If >= 7.3.0
+
+	```console
+	$ docker run --name=bonita_7.3.0_postgres --link mydbpostgres:postgres -e "DB_NAME=newbonitadb" -e "DB_USER=newbonitauser" -e "DB_PASS=newbonitapass" -d -p 8081:8080 bonita:7.3.0
+	```
+
+-	Reapply specific configuration if needed, for example with a version >= 7.3.0 :
+
+	```console
+	$ docker exec -ti bonita_7.3.0_postgres /bin/bash
+	```
+
+	```console
+	$ cd /opt/bonita/BonitaBPMCommunity-7.3.0-Tomcat-7.0.67/setup
+	$ ./setup.sh pull
+	$ TENANT_LOGIN=tech_user
+	$ TENANT_PASSWORD=secret
+	$ PLATFORM_LOGIN=pfadmin
+	$ PLATFORM_PASSWORD=pfsecret
+	$ sed -e 's/^#userName\s*=.*/'"userName=${TENANT_LOGIN}"'/' \
+	      -e 's/^#userPassword\s*=.*/'"userPassword=${TENANT_PASSWORD}"'/' \
+	      -i platform_conf/current/tenants/1/tenant_engine/bonita-tenant-community-custom.properties
+	$ sed -e 's/^platform.tenant.default.username\s*=.*/'"platform.tenant.default.username=${TENANT_LOGIN}"'/' \
+	      -e 's/^platform.tenant.default.password\s*=.*/'"platform.tenant.default.password=${TENANT_PASSWORD}"'/' \
+	      -i platform_conf/current/platform_portal/platform-tenant-config.properties
+	$ sed -e 's/^#platformAdminUsername\s*=.*/'"platformAdminUsername=${PLATFORM_LOGIN}"'/' \
+	      -e 's/^#platformAdminPassword\s*=.*/'"platformAdminPassword=${PLATFORM_PASSWORD}"'/' \
+	      -i platform_conf/current/platform_engine/bonita-platform-community-custom.properties
+	$ sed -i -e 's/^#GET|/GET|/' -e 's/^#POST|/POST|/' -e 's/^#PUT|/PUT|/' -e 's/^#DELETE|/DELETE|/' -i platform_conf/current/tenants/1/tenant_portal/dynamic-permissions-checks.properties
+	$ ./setup.sh push
+	```
+
+	```console
+	$ docker restart bonita_7.3.0_postgres
 	```
 
 For more details regarding Bonita migration, see the [documentation](http://documentation.bonitasoft.com/migrate-earlier-version-bonita-bpm-0).
@@ -326,17 +378,13 @@ Bonita BPM image includes two parts :
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.2.
+This image is officially supported on Docker version 1.12.5.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
 Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
-
-## Documentation
-
-Documentation for this image is stored in the [`bonita/` directory](https://github.com/docker-library/docs/tree/master/bonita) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 
@@ -349,3 +397,7 @@ You can also reach many of the official image maintainers via the `#docker-libra
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
 Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/Bonitasoft-Community/docker_bonita/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+
+## Documentation
+
+Documentation for this image is stored in the [`bonita/` directory](https://github.com/docker-library/docs/tree/master/bonita) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

@@ -1,19 +1,15 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2.6.10`, `2.6`, `2` (*2.6/Dockerfile*)](https://github.com/docker-library/redmine/blob/b91f07d9ef3a33462db1f1a66ba0d4993f9fbecf/2.6/Dockerfile)
--	[`2.6.10-passenger`, `2.6-passenger`, `2-passenger` (*2.6/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/6a13e140f58586a4ecd08d0eb22b119593732ef3/2.6/passenger/Dockerfile)
--	[`3.0.7`, `3.0` (*3.0/Dockerfile*)](https://github.com/docker-library/redmine/blob/b91f07d9ef3a33462db1f1a66ba0d4993f9fbecf/3.0/Dockerfile)
--	[`3.0.7-passenger`, `3.0-passenger` (*3.0/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/6a13e140f58586a4ecd08d0eb22b119593732ef3/3.0/passenger/Dockerfile)
--	[`3.1.6`, `3.1` (*3.1/Dockerfile*)](https://github.com/docker-library/redmine/blob/b91f07d9ef3a33462db1f1a66ba0d4993f9fbecf/3.1/Dockerfile)
--	[`3.1.6-passenger`, `3.1-passenger` (*3.1/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/6a13e140f58586a4ecd08d0eb22b119593732ef3/3.1/passenger/Dockerfile)
--	[`3.2.3`, `3.2`, `3`, `latest` (*3.2/Dockerfile*)](https://github.com/docker-library/redmine/blob/794d8a58ac855ea5ad2541c1058a8910f9514710/3.2/Dockerfile)
--	[`3.2.3-passenger`, `3.2-passenger`, `3-passenger`, `passenger` (*3.2/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/6a13e140f58586a4ecd08d0eb22b119593732ef3/3.2/passenger/Dockerfile)
-
-[![](https://badge.imagelayers.io/redmine:latest.svg)](https://imagelayers.io/?images=redmine:2.6.10,redmine:2.6.10-passenger,redmine:3.0.7,redmine:3.0.7-passenger,redmine:3.1.6,redmine:3.1.6-passenger,redmine:3.2.3,redmine:3.2.3-passenger)
+-	[`3.1.7`, `3.1` (*3.1/Dockerfile*)](https://github.com/docker-library/redmine/blob/e75fd00870dcd47a848532abf999f7ec13bb0262/3.1/Dockerfile)
+-	[`3.1.7-passenger`, `3.1-passenger` (*3.1/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/31ec3c8963424bbc1730806a65d9914c84df17de/3.1/passenger/Dockerfile)
+-	[`3.2.4`, `3.2` (*3.2/Dockerfile*)](https://github.com/docker-library/redmine/blob/e75fd00870dcd47a848532abf999f7ec13bb0262/3.2/Dockerfile)
+-	[`3.2.4-passenger`, `3.2-passenger` (*3.2/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/31ec3c8963424bbc1730806a65d9914c84df17de/3.2/passenger/Dockerfile)
+-	[`3.3.1`, `3.3`, `3`, `latest` (*3.3/Dockerfile*)](https://github.com/docker-library/redmine/blob/e75fd00870dcd47a848532abf999f7ec13bb0262/3.3/Dockerfile)
+-	[`3.3.1-passenger`, `3.3-passenger`, `3-passenger`, `passenger` (*3.3/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/31ec3c8963424bbc1730806a65d9914c84df17de/3.3/passenger/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/redmine`)](https://github.com/docker-library/official-images/blob/master/library/redmine). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fredmine).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `redmine/tag-details.md` file](https://github.com/docker-library/docs/blob/master/redmine/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/redmine/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/redmine/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is Redmine?
 
@@ -59,6 +55,36 @@ Running Redmine with a database server is the recommened way.
 	$ docker run -d --name some-redmine --link some-postgres:postgres redmine
 	```
 
+## ... via [`docker-compose`](https://github.com/docker/compose)
+
+Example `docker-compose.yml` for `redmine`:
+
+```yaml
+version: '2'
+
+services:
+
+  redmine:
+    image: redmine
+    ports:
+      - 8080:3000
+    environment:
+      REDMINE_DB_MYSQL: db
+      REDMINE_DB_PASSWORD: example
+    depends_on:
+      - db
+    restart: always
+
+  db:
+    image: mariadb
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+      MYSQL_DATABASE: redmine
+    restart: always
+```
+
+Run `docker-compose up`, wait for it to initialize completely, and visit `http://localhost:8080` or `http://host-ip:8080`.
+
 ## Alternative Web Server
 
 The other tags in this repository, like those with `passenger`, use the same environment and `--links` as the default tags that use WEBrick (`rails s`) but instead give you the option of a different web and application server. `passenger` uses [Phusion Passenger](https://www.phusionpassenger.com/). [`tini`](https://github.com/krallin/tini) is used for reaping [zombies](https://en.wikipedia.org/wiki/Zombie_process).
@@ -71,8 +97,8 @@ Currently, the default user and password from upstream is admin/admin ([logging 
 
 Important note: There are several ways to store data used by applications that run in Docker containers. We encourage users of the `redmine` images to familiarize themselves with the options available, including:
 
--	Let Docker manage the storage of your files [by writing the files to disk on the host system using its own internal volume management](https://docs.docker.com/userguide/dockervolumes/#adding-a-data-volume). This is the default and is easy and fairly transparent to the user. The downside is that the files may be hard to locate for tools and applications that run directly on the host system, i.e. outside containers.
--	Create a data directory on the host system (outside the container) and [mount this to a directory visible from inside the container](https://docs.docker.com/userguide/dockervolumes/#mount-a-host-directory-as-a-data-volume). This places the database files in a known location on the host system, and makes it easy for tools and applications on the host system to access the files. The downside is that the user needs to make sure that the directory exists, and that e.g. directory permissions and other security mechanisms on the host system are set up correctly.
+-	Let Docker manage the storage of your files [by writing the files to disk on the host system using its own internal volume management](https://docs.docker.com/engine/tutorials/dockervolumes/#adding-a-data-volume). This is the default and is easy and fairly transparent to the user. The downside is that the files may be hard to locate for tools and applications that run directly on the host system, i.e. outside containers.
+-	Create a data directory on the host system (outside the container) and [mount this to a directory visible from inside the container](https://docs.docker.com/engine/tutorials/dockervolumes/#mount-a-host-directory-as-a-data-volume). This places the database files in a known location on the host system, and makes it easy for tools and applications on the host system to access the files. The downside is that the user needs to make sure that the directory exists, and that e.g. directory permissions and other security mechanisms on the host system are set up correctly.
 
 The Docker documentation is a good starting point for understanding the different storage options and variations, and there are multiple blogs and forum postings that discuss and give advice in this area. We will simply show the basic procedure here for the latter option above:
 
@@ -115,17 +141,13 @@ This variable is used to create an initial `config/secrets.yml` and set the `sec
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.2.
+This image is officially supported on Docker version 1.12.5.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
 Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
-
-## Documentation
-
-Documentation for this image is stored in the [`redmine/` directory](https://github.com/docker-library/docs/tree/master/redmine) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 
@@ -138,3 +160,7 @@ You can also reach many of the official image maintainers via the `#docker-libra
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
 Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/docker-library/redmine/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+
+## Documentation
+
+Documentation for this image is stored in the [`redmine/` directory](https://github.com/docker-library/docs/tree/master/redmine) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

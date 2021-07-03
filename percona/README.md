@@ -1,14 +1,12 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`5.7.12`, `5.7`, `5`, `latest` (*5.7/Dockerfile*)](https://github.com/docker-library/percona/blob/340269718642a7acc4580e398121ba5462308730/5.7/Dockerfile)
--	[`5.6.30`, `5.6` (*5.6/Dockerfile*)](https://github.com/docker-library/percona/blob/5981db386679e99039de1104a28920939acf59fc/5.6/Dockerfile)
--	[`5.5.49`, `5.5` (*5.5/Dockerfile*)](https://github.com/docker-library/percona/blob/4501310f267a20434f10b28a8e1be660a3a09439/5.5/Dockerfile)
-
-[![](https://badge.imagelayers.io/percona:latest.svg)](https://imagelayers.io/?images=percona:5.7.12,percona:5.6.30,percona:5.5.49)
+-	[`5.7.16`, `5.7`, `5`, `latest` (*5.7/Dockerfile*)](https://github.com/docker-library/percona/blob/4f8e829e7d0f8929225a3b042177dbe604c75755/5.7/Dockerfile)
+-	[`5.6.34`, `5.6` (*5.6/Dockerfile*)](https://github.com/docker-library/percona/blob/4f8e829e7d0f8929225a3b042177dbe604c75755/5.6/Dockerfile)
+-	[`5.5.53`, `5.5` (*5.5/Dockerfile*)](https://github.com/docker-library/percona/blob/4f8e829e7d0f8929225a3b042177dbe604c75755/5.5/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/percona`)](https://github.com/docker-library/official-images/blob/master/library/percona). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fpercona).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `percona/tag-details.md` file](https://github.com/docker-library/docs/blob/master/percona/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/percona/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/percona/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # Percona Server
 
@@ -49,6 +47,12 @@ $ docker run -it --link some-percona:mysql --rm percona sh -c 'exec mysql -h"$MY
 ```
 
 ... where `some-percona` is the name of your original percona container.
+
+This image can also be used as a client for non-Docker or remote Percona instances:
+
+```console
+$ docker run -it --rm percona mysql -hsome.mysql.host -usome-mysql-user -p
+```
 
 More information about the MySQL command line client can be found in the [MySQL documentation](http://dev.mysql.com/doc/en/mysql.html)
 
@@ -130,7 +134,7 @@ Sets root (*not* the user specified in `MYSQL_USER`!) user as expired once init 
 
 # Initializing a fresh instance
 
-When a container is started for the first time, a new database `mysql` will be initialized with the provided configuration variables. Furthermore, it will execute files with extensions `.sh` and `.sql` that are found in `/docker-entrypoint-initdb.d`. You can easily populate your percona services by [mounting a SQL dump into that directory](https://docs.docker.com/userguide/dockervolumes/#mount-a-host-file-as-a-data-volume) and provide [custom images](https://docs.docker.com/reference/builder/) with contributed data.
+When a container is started for the first time, a new database with the specified name will be created and initialized with the provided configuration variables. Furthermore, it will execute files with extensions `.sh`, `.sql` and `.sql.gz` that are found in `/docker-entrypoint-initdb.d`. Files will be executed in alphabetical order. You can easily populate your percona services by [mounting a SQL dump into that directory](https://docs.docker.com/engine/tutorials/dockervolumes/#mount-a-host-file-as-a-data-volume) and provide [custom images](https://docs.docker.com/reference/builder/) with contributed data. SQL files will be imported by default to the database specified by the `MYSQL_DATABASE` variable.
 
 # Caveats
 
@@ -138,8 +142,8 @@ When a container is started for the first time, a new database `mysql` will be i
 
 Important note: There are several ways to store data used by applications that run in Docker containers. We encourage users of the `percona` images to familiarize themselves with the options available, including:
 
--	Let Docker manage the storage of your database data [by writing the database files to disk on the host system using its own internal volume management](https://docs.docker.com/userguide/dockervolumes/#adding-a-data-volume). This is the default and is easy and fairly transparent to the user. The downside is that the files may be hard to locate for tools and applications that run directly on the host system, i.e. outside containers.
--	Create a data directory on the host system (outside the container) and [mount this to a directory visible from inside the container](https://docs.docker.com/userguide/dockervolumes/#mount-a-host-directory-as-a-data-volume). This places the database files in a known location on the host system, and makes it easy for tools and applications on the host system to access the files. The downside is that the user needs to make sure that the directory exists, and that e.g. directory permissions and other security mechanisms on the host system are set up correctly.
+-	Let Docker manage the storage of your database data [by writing the database files to disk on the host system using its own internal volume management](https://docs.docker.com/engine/tutorials/dockervolumes/#adding-a-data-volume). This is the default and is easy and fairly transparent to the user. The downside is that the files may be hard to locate for tools and applications that run directly on the host system, i.e. outside containers.
+-	Create a data directory on the host system (outside the container) and [mount this to a directory visible from inside the container](https://docs.docker.com/engine/tutorials/dockervolumes/#mount-a-host-directory-as-a-data-volume). This places the database files in a known location on the host system, and makes it easy for tools and applications on the host system to access the files. The downside is that the user needs to make sure that the directory exists, and that e.g. directory permissions and other security mechanisms on the host system are set up correctly.
 
 The Docker documentation is a good starting point for understanding the different storage options and variations, and there are multiple blogs and forum postings that discuss and give advice in this area. We will simply show the basic procedure here for the latter option above:
 
@@ -176,17 +180,13 @@ $ docker exec some-percona sh -c 'exec mysqldump --all-databases -uroot -p"$MYSQ
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.2.
+This image is officially supported on Docker version 1.12.5.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
 Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
-
-## Documentation
-
-Documentation for this image is stored in the [`percona/` directory](https://github.com/docker-library/docs/tree/master/percona) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 
@@ -199,3 +199,7 @@ You can also reach many of the official image maintainers via the `#docker-libra
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
 Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/docker-library/percona/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+
+## Documentation
+
+Documentation for this image is stored in the [`percona/` directory](https://github.com/docker-library/docs/tree/master/percona) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

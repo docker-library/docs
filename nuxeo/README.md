@@ -1,14 +1,14 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `FT`, `8`, `8.2` (*8.2/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/b37540c919e58c027f7a2f5211ad12f667f1bb76/8.2/Dockerfile)
--	[`LTS-2015`, `LTS`, `7.10`, `7` (*7.10/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/b37540c919e58c027f7a2f5211ad12f667f1bb76/7.10/Dockerfile)
--	[`LTS-2014`, `6`, `6.0` (*6.0/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/b37540c919e58c027f7a2f5211ad12f667f1bb76/6.0/Dockerfile)
-
-[![](https://badge.imagelayers.io/nuxeo:latest.svg)](https://imagelayers.io/?images=nuxeo:latest,nuxeo:LTS-2015,nuxeo:LTS-2014)
+-	[`latest`, `LTS`, `LTS-2016`, `8`, `8.10`, `FT` (*8.10/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/4c45ac6f74a5571dd23ee86a00fb85aadbece05c/8.10/Dockerfile)
+-	[`8.3` (*8.3/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/d7252d23d06e0ade25a0054a7ae940e8537a99b2/8.3/Dockerfile)
+-	[`8.2` (*8.2/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/a02183111045dadb357e68e11e93c5551c570c43/8.2/Dockerfile)
+-	[`LTS-2015`, `7`, `7.10` (*7.10/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/a02183111045dadb357e68e11e93c5551c570c43/7.10/Dockerfile)
+-	[`LTS-2014`, `6`, `6.0` (*6.0/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/8535464e476b39e10001242ad7c885519fadc2a6/6.0/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/nuxeo`)](https://github.com/docker-library/official-images/blob/master/library/nuxeo). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fnuxeo).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `nuxeo/tag-details.md` file](https://github.com/docker-library/docs/blob/master/nuxeo/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/nuxeo/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/nuxeo/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is Nuxeo ?
 
@@ -119,6 +119,16 @@ Tells the location of the binary store which configure the [binary storage](http
 
 Tells the location of [the transient storage](http://doc.nuxeo.com/display/NXDOC/Transient+Store)
 
+### `NUXEO_DDL_MODE`
+
+Allows to setup [Database creation option](https://doc.nuxeo.com/x/hwQz#RepositoryConfiguration-DatabaseCreationOption) by fixing the `ddlMode` value.
+
+### `NUXEO_CUSTOM_PARAM`
+
+Allows to add custom parameters to `nuxeo.conf`. Multiple parameters can be splitted by a `\n`. For instance :
+
+	NUXEO_CUSTOM_PARAM="repository.clustering.enabled=false\nrepository.clustering.delay=1000"
+
 # How to extend this image
 
 ## Adding additional configuration
@@ -183,17 +193,13 @@ View [license information](http://doc.nuxeo.com/x/gIK7) for the software contain
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.2.
+This image is officially supported on Docker version 1.12.5.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
 Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
-
-## Documentation
-
-Documentation for this image is stored in the [`nuxeo/` directory](https://github.com/docker-library/docs/tree/master/nuxeo) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 
@@ -206,3 +212,7 @@ You can also reach many of the official image maintainers via the `#docker-libra
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
 Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/nuxeo/docker-nuxeo/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+
+## Documentation
+
+Documentation for this image is stored in the [`nuxeo/` directory](https://github.com/docker-library/docs/tree/master/nuxeo) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

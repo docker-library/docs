@@ -32,7 +32,7 @@ Furthermore, ArangoDB offers a microservice framework called [Foxx](https://www.
 In order to start an ArangoDB instance run
 
 ```console
-unix> docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 -d --name arangodb-instance -d arangodb
+unix> docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 -d --name arangodb-instance arangodb
 ```
 
 Will create and launch the arangodb docker instance as background process. The Identifier of the process is printed. By default ArangoDB listen on port 8529 for request and the image includes `EXPOSE 8529`. If you link an application container it is automatically available in the linked container. See the following examples.
@@ -100,7 +100,7 @@ unix> docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 arangodb arangod --help
 
 ## Persistent Data
 
-ArangoDB use the volume `/var/lib/arangodb3` as database directory to store the collection data and the volume `/var/lib/arangodb-apps3` as apps directory to store any extensions. These directories are marked as docker volumes.
+ArangoDB use the volume `/var/lib/arangodb3` as database directory to store the collection data and the volume `/var/lib/arangodb3-apps` as apps directory to store any extensions. These directories are marked as docker volumes.
 
 Please note that the old version 2.x used `/var/lib/arangodb` and `/var/lib/arangodb-apps`. We will refer to the 3.x variant in this document. In case you are starting a 2.x image just replace it with the 2.x variant.
 

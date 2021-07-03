@@ -25,7 +25,7 @@ Sentry is a realtime event logging and aggregation platform. It specializes in m
 3.	Generate a new secret key to be shared by all `%%REPO%%` containers. This value will then be used as the `SENTRY_SECRET_KEY` environment variable.
 
 	```console
-	$ docker run --rm sentry generate-secret-key
+	$ docker run --rm sentry config generate-secret-key
 	```
 
 4.	If this is a new database, you'll need to run `upgrade`
@@ -70,7 +70,7 @@ When you start the `%%REPO%%` image, you can adjust the configuration of the Sen
 A secret key used for cryptographic functions within Sentry. This key should be unique and consistent across all running instances. You can generate a new secret key doing something like:
 
 ```console
-$ docker run --rm sentry generate-secret-key
+$ docker run --rm sentry config generate-secret-key
 ```
 
 ### `SENTRY_POSTGRES_HOST`, `SENTRY_POSTGRES_PORT`, `SENTRY_DB_NAME`, `SENTRY_DB_USER`, `SENTRY_DB_PASSWORD`

@@ -4,14 +4,14 @@
 -	[`1.4.27-alpine`, `1.4-alpine` (*1.4/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/667427cf0ac38b7ff7d9fcbd29493b54adf9d53d/1.4/alpine/Dockerfile)
 -	[`1.5.18`, `1.5` (*1.5/Dockerfile*)](https://github.com/docker-library/haproxy/blob/e128fc85947f0de7213185c9f948150e39cbc766/1.5/Dockerfile)
 -	[`1.5.18-alpine`, `1.5-alpine` (*1.5/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/667427cf0ac38b7ff7d9fcbd29493b54adf9d53d/1.5/alpine/Dockerfile)
--	[`1.6.6`, `1.6`, `1`, `latest` (*1.6/Dockerfile*)](https://github.com/docker-library/haproxy/blob/6298ef75a7eddeae3b8fbf5137e6eba69a41ff81/1.6/Dockerfile)
--	[`1.6.6-alpine`, `1.6-alpine`, `1-alpine`, `alpine` (*1.6/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/6298ef75a7eddeae3b8fbf5137e6eba69a41ff81/1.6/alpine/Dockerfile)
-
-[![](https://badge.imagelayers.io/haproxy:latest.svg)](https://imagelayers.io/?images=haproxy:1.4.27,haproxy:1.4.27-alpine,haproxy:1.5.18,haproxy:1.5.18-alpine,haproxy:1.6.6,haproxy:1.6.6-alpine)
+-	[`1.6.10`, `1.6` (*1.6/Dockerfile*)](https://github.com/docker-library/haproxy/blob/3f825ac60d7af1739f65897f64241c5577dfc31e/1.6/Dockerfile)
+-	[`1.6.10-alpine`, `1.6-alpine` (*1.6/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/3f825ac60d7af1739f65897f64241c5577dfc31e/1.6/alpine/Dockerfile)
+-	[`1.7.1`, `1.7`, `1`, `latest` (*1.7/Dockerfile*)](https://github.com/docker-library/haproxy/blob/84fa05e8980f556b0330d69f5c756633a5a85f8b/1.7/Dockerfile)
+-	[`1.7.1-alpine`, `1.7-alpine`, `1-alpine`, `alpine` (*1.7/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/84fa05e8980f556b0330d69f5c756633a5a85f8b/1.7/alpine/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/haproxy`)](https://github.com/docker-library/official-images/blob/master/library/haproxy). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fhaproxy).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `haproxy/tag-details.md` file](https://github.com/docker-library/docs/blob/master/haproxy/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/haproxy/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/haproxy/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is HAProxy?
 
@@ -47,7 +47,7 @@ $ docker build -t my-haproxy .
 ## Test the configuration file
 
 ```console
-$ docker run -it --rm --name haproxy-syntax-check haproxy:1.5 haproxy -c -f /usr/local/etc/haproxy/haproxy.cfg
+$ docker run -it --rm --name haproxy-syntax-check my-haproxy haproxy -c -f /usr/local/etc/haproxy/haproxy.cfg
 ```
 
 ## Run the container
@@ -55,6 +55,8 @@ $ docker run -it --rm --name haproxy-syntax-check haproxy:1.5 haproxy -c -f /usr
 ```console
 $ docker run -d --name my-running-haproxy my-haproxy
 ```
+
+You may need to publish the ports your haproxy is listening on to the host by specifying the -p option, for example -p 8080:80 to publish port 8080 from the container host to port 80 in the container. Make sure the port you're using is free.
 
 ## Directly via bind mount
 
@@ -94,17 +96,13 @@ View [license information](http://www.haproxy.org/download/1.5/doc/LICENSE) for 
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.2.
+This image is officially supported on Docker version 1.12.5.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
 Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
-
-## Documentation
-
-Documentation for this image is stored in the [`haproxy/` directory](https://github.com/docker-library/docs/tree/master/haproxy) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 
@@ -117,3 +115,7 @@ You can also reach many of the official image maintainers via the `#docker-libra
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
 Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/docker-library/haproxy/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+
+## Documentation
+
+Documentation for this image is stored in the [`haproxy/` directory](https://github.com/docker-library/docs/tree/master/haproxy) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

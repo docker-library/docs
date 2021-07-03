@@ -1,13 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`3.6.2`, `3.6`, `3`, `latest` (*Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/6b496ac32e18fbff4b2b45e0577a79b10edd4df0/Dockerfile)
--	[`3.6.2-management`, `3.6-management`, `3-management`, `management` (*management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/dc712681dcaeadb0371be66be5e96563be364e5d/management/Dockerfile)
-
-[![](https://badge.imagelayers.io/rabbitmq:latest.svg)](https://imagelayers.io/?images=rabbitmq:3.6.2,rabbitmq:3.6.2-management)
+-	[`3.6.6`, `3.6`, `3`, `latest` (*Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/c766dd4dad64dd1c5550febff7e19ab763b7c5a4/Dockerfile)
+-	[`3.6.6-management`, `3.6-management`, `3-management`, `management` (*management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/dc712681dcaeadb0371be66be5e96563be364e5d/management/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/rabbitmq`)](https://github.com/docker-library/official-images/blob/master/library/rabbitmq). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Frabbitmq).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `rabbitmq/tag-details.md` file](https://github.com/docker-library/docs/blob/master/rabbitmq/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/rabbitmq/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/rabbitmq/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is RabbitMQ?
 
@@ -102,6 +100,16 @@ If you wish to change the default vhost, you can do so with the `RABBITMQ_DEFAUL
 $ docker run -d --hostname my-rabbit --name some-rabbit -e RABBITMQ_DEFAULT_VHOST=my_vhost rabbitmq:3-management
 ```
 
+## Enabling HiPE
+
+See the [RabbitMQ "Configuration"](http://www.rabbitmq.com/configure.html#config-items) for more information about various configuration options.
+
+For enabling the HiPE compiler on startup use `RABBITMQ_HIPE_COMPILE` set to `1`. Accroding to the official documentation:
+
+> Set to true to precompile parts of RabbitMQ with HiPE, a just-in-time compiler for Erlang. This will increase server throughput at the cost of increased startup time. You might see 20-50% better performance at the cost of a few minutes delay at startup.
+
+It is therefore important to take that startup delay into consideration when configuring health checks, automated clustering etc.
+
 ## Connecting to the daemon
 
 ```console
@@ -114,17 +122,13 @@ View [license information](https://www.rabbitmq.com/mpl.html) for the software c
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.2.
+This image is officially supported on Docker version 1.12.5.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
 Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
-
-## Documentation
-
-Documentation for this image is stored in the [`rabbitmq/` directory](https://github.com/docker-library/docs/tree/master/rabbitmq) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 
@@ -137,3 +141,7 @@ You can also reach many of the official image maintainers via the `#docker-libra
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
 Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/docker-library/rabbitmq/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+
+## Documentation
+
+Documentation for this image is stored in the [`rabbitmq/` directory](https://github.com/docker-library/docs/tree/master/rabbitmq) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.

@@ -1,15 +1,13 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2.1.14`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/cassandra/blob/5e291bb8fad37f2f29b8aadcc718f9a155152e92/2.1/Dockerfile)
--	[`2.2.6`, `2.2`, `2` (*2.2/Dockerfile*)](https://github.com/docker-library/cassandra/blob/5e291bb8fad37f2f29b8aadcc718f9a155152e92/2.2/Dockerfile)
--	[`3.0.7`, `3.0` (*3.0/Dockerfile*)](https://github.com/docker-library/cassandra/blob/f387127a9bbf07439a09a95135936be42fc35277/3.0/Dockerfile)
--	[`3.7`, `3`, `latest` (*3.7/Dockerfile*)](https://github.com/docker-library/cassandra/blob/c3c26f2efdb9874dc5b3717662462e8ca0b2d944/3.7/Dockerfile)
-
-[![](https://badge.imagelayers.io/cassandra:latest.svg)](https://imagelayers.io/?images=cassandra:2.1.14,cassandra:2.2.6,cassandra:3.0.7,cassandra:3.7)
+-	[`2.1.16`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/cassandra/blob/4bb926527d4a9eb534508fe0bbae604dee81f40a/2.1/Dockerfile)
+-	[`2.2.8`, `2.2`, `2` (*2.2/Dockerfile*)](https://github.com/docker-library/cassandra/blob/4bb926527d4a9eb534508fe0bbae604dee81f40a/2.2/Dockerfile)
+-	[`3.0.10`, `3.0` (*3.0/Dockerfile*)](https://github.com/docker-library/cassandra/blob/d3a91560b21e73994235a72a4c3153e775e1654d/3.0/Dockerfile)
+-	[`3.9`, `3`, `latest` (*3.9/Dockerfile*)](https://github.com/docker-library/cassandra/blob/4bb926527d4a9eb534508fe0bbae604dee81f40a/3.9/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/cassandra`)](https://github.com/docker-library/official-images/blob/master/library/cassandra). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fcassandra).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `cassandra/tag-details.md` file](https://github.com/docker-library/docs/blob/master/cassandra/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `repos/cassandra/tag-details.md` file](https://github.com/docker-library/repo-info/blob/master/repos/cassandra/tag-details.md) in [the `docker-library/repo-info` GitHub repo](https://github.com/docker-library/repo-info).
 
 # What is Cassandra?
 
@@ -151,8 +149,8 @@ This variable sets the snitch implementation this node will use. It will set the
 
 Important note: There are several ways to store data used by applications that run in Docker containers. We encourage users of the `cassandra` images to familiarize themselves with the options available, including:
 
--	Let Docker manage the storage of your database data [by writing the database files to disk on the host system using its own internal volume management](https://docs.docker.com/userguide/dockervolumes/#adding-a-data-volume). This is the default and is easy and fairly transparent to the user. The downside is that the files may be hard to locate for tools and applications that run directly on the host system, i.e. outside containers.
--	Create a data directory on the host system (outside the container) and [mount this to a directory visible from inside the container](https://docs.docker.com/userguide/dockervolumes/#mount-a-host-directory-as-a-data-volume). This places the database files in a known location on the host system, and makes it easy for tools and applications on the host system to access the files. The downside is that the user needs to make sure that the directory exists, and that e.g. directory permissions and other security mechanisms on the host system are set up correctly.
+-	Let Docker manage the storage of your database data [by writing the database files to disk on the host system using its own internal volume management](https://docs.docker.com/engine/tutorials/dockervolumes/#adding-a-data-volume). This is the default and is easy and fairly transparent to the user. The downside is that the files may be hard to locate for tools and applications that run directly on the host system, i.e. outside containers.
+-	Create a data directory on the host system (outside the container) and [mount this to a directory visible from inside the container](https://docs.docker.com/engine/tutorials/dockervolumes/#mount-a-host-directory-as-a-data-volume). This places the database files in a known location on the host system, and makes it easy for tools and applications on the host system to access the files. The downside is that the user needs to make sure that the directory exists, and that e.g. directory permissions and other security mechanisms on the host system are set up correctly.
 
 The Docker documentation is a good starting point for understanding the different storage options and variations, and there are multiple blogs and forum postings that discuss and give advice in this area. We will simply show the basic procedure here for the latter option above:
 
@@ -177,17 +175,13 @@ If there is no database initialized when the container starts, then a default da
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.11.2.
+This image is officially supported on Docker version 1.12.5.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
 Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
-
-## Documentation
-
-Documentation for this image is stored in the [`cassandra/` directory](https://github.com/docker-library/docs/tree/master/cassandra) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 
@@ -200,3 +194,7 @@ You can also reach many of the official image maintainers via the `#docker-libra
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
 Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/docker-library/cassandra/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+
+## Documentation
+
+Documentation for this image is stored in the [`cassandra/` directory](https://github.com/docker-library/docs/tree/master/cassandra) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
