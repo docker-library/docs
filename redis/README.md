@@ -25,12 +25,12 @@ WARNING:
 # Supported tags and respective `Dockerfile` links
 
 -	[`6.2.4`, `6.2`, `6`, `latest`, `6.2.4-buster`, `6.2-buster`, `6-buster`, `buster`](https://github.com/docker-library/redis/blob/4422738bea4a9d38971a87fc820525864bb5ff62/6.2/Dockerfile)
--	[`6.2.4-alpine`, `6.2-alpine`, `6-alpine`, `alpine`, `6.2.4-alpine3.13`, `6.2-alpine3.13`, `6-alpine3.13`, `alpine3.13`](https://github.com/docker-library/redis/blob/4422738bea4a9d38971a87fc820525864bb5ff62/6.2/alpine/Dockerfile)
+-	[`6.2.4-alpine`, `6.2-alpine`, `6-alpine`, `alpine`, `6.2.4-alpine3.14`, `6.2-alpine3.14`, `6-alpine3.14`, `alpine3.14`](https://github.com/docker-library/redis/blob/34eedfdcf45cc6b03328f68a67306f0cf77c4a20/6.2/alpine/Dockerfile)
 -	[`6.0.14`, `6.0`, `6.0.14-buster`, `6.0-buster`](https://github.com/docker-library/redis/blob/07eb60ebe0d977d5b26fea67f41af73ac1efceb2/6.0/Dockerfile)
--	[`6.0.14-alpine`, `6.0-alpine`, `6.0.14-alpine3.13`, `6.0-alpine3.13`](https://github.com/docker-library/redis/blob/07eb60ebe0d977d5b26fea67f41af73ac1efceb2/6.0/alpine/Dockerfile)
+-	[`6.0.14-alpine`, `6.0-alpine`, `6.0.14-alpine3.14`, `6.0-alpine3.14`](https://github.com/docker-library/redis/blob/34eedfdcf45cc6b03328f68a67306f0cf77c4a20/6.0/alpine/Dockerfile)
 -	[`5.0.12`, `5.0`, `5`, `5.0.12-buster`, `5.0-buster`, `5-buster`](https://github.com/docker-library/redis/blob/147762b57f4d4391ba6cf8fbd1e7590a606643ef/5/Dockerfile)
 -	[`5.0.12-32bit`, `5.0-32bit`, `5-32bit`, `5.0.12-32bit-buster`, `5.0-32bit-buster`, `5-32bit-buster`](https://github.com/docker-library/redis/blob/147762b57f4d4391ba6cf8fbd1e7590a606643ef/5/32bit/Dockerfile)
--	[`5.0.12-alpine`, `5.0-alpine`, `5-alpine`, `5.0.12-alpine3.13`, `5.0-alpine3.13`, `5-alpine3.13`](https://github.com/docker-library/redis/blob/147762b57f4d4391ba6cf8fbd1e7590a606643ef/5/alpine/Dockerfile)
+-	[`5.0.12-alpine`, `5.0-alpine`, `5-alpine`, `5.0.12-alpine3.14`, `5.0-alpine3.14`, `5-alpine3.14`](https://github.com/docker-library/redis/blob/34eedfdcf45cc6b03328f68a67306f0cf77c4a20/5/alpine/Dockerfile)
 
 # Quick reference (cont.)
 

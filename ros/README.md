@@ -24,10 +24,6 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`kinetic-ros-core`, `kinetic-ros-core-xenial`](https://github.com/osrf/docker_images/blob/01be1ebc5941d92304ce7d46c108215ed72ffdf0/ros/kinetic/ubuntu/xenial/ros-core/Dockerfile)
--	[`kinetic-ros-base`, `kinetic-ros-base-xenial`, `kinetic`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/kinetic/ubuntu/xenial/ros-base/Dockerfile)
--	[`kinetic-robot`, `kinetic-robot-xenial`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/kinetic/ubuntu/xenial/robot/Dockerfile)
--	[`kinetic-perception`, `kinetic-perception-xenial`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/kinetic/ubuntu/xenial/perception/Dockerfile)
 -	[`melodic-ros-core`, `melodic-ros-core-bionic`](https://github.com/osrf/docker_images/blob/11c613986e35a1f36fd0fa18b49173e0c564cf1d/ros/melodic/ubuntu/bionic/ros-core/Dockerfile)
 -	[`melodic-ros-base`, `melodic-ros-base-bionic`, `melodic`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/melodic/ubuntu/bionic/ros-base/Dockerfile)
 -	[`melodic-robot`, `melodic-robot-bionic`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/melodic/ubuntu/bionic/robot/Dockerfile)
