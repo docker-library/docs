@@ -40,12 +40,17 @@ if [ -f "$repo/deprecated.md" ]; then
 	echo
 fi
 
+case "$repo" in
+	hello-world | buildpack-deps) disclaimer='' ;;
+	*) disclaimer=" (not to be confused with any official \`$repo\` image provided by \`$repo\` upstream)" ;;
+esac
+
 cat <<EOREADME
 # $canonicalRepo
 
 ## Maintained by: $maintainer
 
-This is the Git repo of the [Docker "Official Image"](https://github.com/docker-library/official-images#what-are-official-images) for [\`$repo\`]($hubPage) (not to be confused with any official \`$repo\` image provided by \`$repo\` upstream). See [the Docker Hub page]($hubPage) for the full readme on how to use this Docker image and for information regarding contributing and issues.
+This is the Git repo of the [Docker "Official Image"](https://github.com/docker-library/official-images#what-are-official-images) for [\`$repo\`]($hubPage)$disclaimer. See [the Docker Hub page]($hubPage) for the full readme on how to use this Docker image and for information regarding contributing and issues.
 
 The [full image description on Docker Hub]($hubPage) is generated/maintained over in [the docker-library/docs repository]($gitRepo), specifically in [the \`$repo\` directory]($gitRepo/tree/master/$repo).
 
