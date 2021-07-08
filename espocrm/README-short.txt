@@ -1,0 +1,1 @@
+EspoCRM is an Open Source CRM (Customer Relationship Management) web application.
