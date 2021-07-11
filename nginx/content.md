@@ -35,6 +35,10 @@ $ docker run --name some-nginx -d -p 8080:80 some-content-nginx
 
 Then you can hit `http://localhost:8080` or `http://host-ip:8080` in your browser.
 
+## Included modules
+
+This build includes the Geo and Perl modules, but not third party modules such as Lua.
+
 ## Complex configuration
 
 ```console
