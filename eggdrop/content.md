@@ -4,6 +4,18 @@ Eggdrop is the world's most popular Open Source IRC bot, designed for flexibilit
 
 %%LOGO%%
 
+# Image Types
+
+There are two main types of images supported on docker, each designed for a specific use case.
+
+## eggdrop:<version>
+
+This image is the smallest possible image we can produce. It includes the standard OS libraries eggdrop needs to run (Tcl, openssl) and nothing more. If you are just trying to manage a channel and don't use a lot of "fancy" extra Tcl scripts, this is the image for you.
+
+## eggdrop:<version>-libs
+
+This image is built with the tcllib library (including common libraries such as json, http, comm and more; https://github.com/tcltk/tcllib/tree/master/modules for a full list), the tcl-tls library (for working with https web pages), and both the sqlite-tcl and mysqltcl libraries for interacting with their respective SQL database. If you want to run an Eggdrop that loads a Tcl script to interact with the web, SQL, or otherwise gets a 'package required' error, this image may already contain what you need.
+
 # How to use this image
 
 ## First Run
@@ -38,15 +50,25 @@ Only one server can be specified via an environmental variable. The + denotes an
 
 This variable sets the nickname used by eggdrop. After the first use, you should change it by editing the eggdrop config directly (see Long-term Persistence below).
 
+### `LISTEN`
+
+This variable will set the TCP port that Eggdrop will listen for incoming connections on (the equivilent of `listen XXXX all` in the config). If you set this, you will likely need to adjust the `-p` flag to match in your `docker run` command. 
+
 ## Long-term Persistence
 
-After running the eggdrop container for the first time, the configuration file, user file and channel file will all be available inside the container at /home/eggdrop/eggdrop/data/ . NOTE! These files are only as persistent as the container they exist in. If you expect to use a different container over the course of using the Eggdrop docker image (intentionally or not) you will want to create a persistent data store. The easiest way to do this is to mount a directory on your host machine to /home/eggdrop/eggdrop/data. If you do this prior to your first run, you can easily edit the eggdrop configuration file on the host. Otherwise, you can also drop in existing config, user, or channel files into the mounted directory for use in the eggdrop container. You'll also likely want to daemonize eggdrop (ie, run it in the background). To do this, start your container with something similar to
+After running the eggdrop container for the first time, the configuration file, user file and channel file will all be available inside the container at `/home/eggdrop/eggdrop/data/` . HOWEVER! These files are only as persistent as the container they exist in. If you expect to use a different container over the course of using the Eggdrop docker image (intentionally or not) you will want to create a persistent data store. 
+
+The easiest way to do this is to mount a directory on your host machine to /home/eggdrop/eggdrop/data. If you do this prior to your first run, you can easily edit the eggdrop configuration file that this docker image generated in the directory on the host. Otherwise, you can also drop in existing config, user, or channel files into the mounted data directory for use in the eggdrop container. 
+
+If you use a config file from a previous eggdrop install (ie, you don't use the config file that this image generates, PLEASE do not forget to modify the userfile and channelfile paths to utilize the data dir- this means edit the config file to use `set userfile data/<userfile>` and `set channelfile data/<channelfile>`. If you do not do this, your data IS NOT PERSISTENT. You'll also likely want to daemonize eggdrop (ie, run it in the background). 
+
+To do this, start your container with something similar to
 
 ```console
 $ docker run -i -e NICK=FooBot -e SERVER=irc.freenode.net -v /path/to/eggdrop/files:/home/eggdrop/eggdrop/data -d %%IMAGE%%
 ```
 
-If you provide your own config file, specify it as the argument to the docker container:
+If you provide your own config file, place it in the data dir and specify it as the argument to the docker container:
 
 ```console
 $ docker run -i -v /path/to/eggdrop/files:/home/eggdrop/eggdrop/data -d %%IMAGE%% mybot.conf
@@ -56,13 +78,13 @@ Any config file used with docker MUST end in .conf, such as eggdrop.conf or mybo
 
 ## Adding scripts
 
-An easy way to add scripts would be to create a scripts directory on the host and mount it to `/home/eggdrop/eggdrop/scripts` (or the path of your choosing). This would be accomplished by adding an option similar to
+An easy way to add scripts would be to create a scripts directory on the host and mount it to `/home/eggdrop/eggdrop/scripts2` (or the path of your choosing). This would be accomplished by adding an option similar to
 
 ```console
-	-v /path/to/host/scripts:/home/eggdrop/eggdrop/scripts
+	-v /path/to/host/scripts:/home/eggdrop/eggdrop/scripts2
 ```
 
-to your docker run command line (and then edit your config file to load the scripts from the path that matches where you mounted the scripts dir).
+to your docker run command line (and then edit your config file to load the scripts from the path that matches where you mounted the scripts dir). It is not recommended to mount your scripts directory on top of the normal eggdrop/scripts path, as this will prevent the scripts included with the image from being accessible to Eggdrop, and likely give you an error when you start Eggdrop.
 
 ## Exposing network ports
 
@@ -72,8 +94,14 @@ If you want to expose network connections for your bot, you'll also want to use 
 
 to your docker run command line.
 
+## Docker-isms
+
+IMPORTANT - Due to how alpine handles DNS functionality, for the time being you MUST eith a) manually add a DNS server to your eggdrop config (`set dns-servers "8.8.8.8 8.8.4.4"` would do the trick) or b) disable the DNS module (commenting out `loadmodule dns` in the config) in order for DNS resolution to work. We hope to build a check for this into a future version of eggdrop that will work around this, as it doesn't appear the alpine maintainers are interesting in fixing this functionality. 
+
+You'll know you're affected by this quirk if you see errors such as `nslookup: can't resolve '(null)': Name does not resolve` or the generic `Failed connect to irc.freenode.net (DNS lookup failed)`.
+
 ## Troubleshooting / Support
 
-For additional help, you can join the #eggdrop channel on Freenode
+For additional help, you can join the #eggdrop channel on Libera
 
 The git repository for the Dockerfile is maintained at https://github.com/eggheads/eggdrop-docker
