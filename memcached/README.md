@@ -24,8 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.6.9`, `1.6`, `1`, `latest`](https://github.com/docker-library/memcached/blob/e67da60d356bf67cf1f822c563dd522c19d48deb/debian/Dockerfile)
--	[`1.6.9-alpine`, `1.6-alpine`, `1-alpine`, `alpine`](https://github.com/docker-library/memcached/blob/c6f3bd1e98c2455fbc62880936e0feb32792a88e/alpine/Dockerfile)
+-	[`1.6.9`, `1.6`, `1`, `latest`, `1.6.9-buster`, `1.6-buster`, `1-buster`, `buster`](https://github.com/docker-library/memcached/blob/e67da60d356bf67cf1f822c563dd522c19d48deb/debian/Dockerfile)
+-	[`1.6.9-alpine`, `1.6-alpine`, `1-alpine`, `alpine`, `1.6.9-alpine3.14`, `1.6-alpine3.14`, `1-alpine3.14`, `alpine3.14`](https://github.com/docker-library/memcached/blob/c6f3bd1e98c2455fbc62880936e0feb32792a88e/alpine/Dockerfile)
+-	[`1.6.9-alpine3.13`, `1.6-alpine3.13`, `1-alpine3.13`, `alpine3.13`](https://github.com/docker-library/memcached/blob/2f06a1eacb5ca1bbdcc1a1b57334897e04d7a270/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -77,6 +78,8 @@ The `memcached` images come in many flavors, each designed for a specific use ca
 ## `memcached:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+Some of these tags may have names like buster in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 ## `memcached:<version>-alpine`
 
