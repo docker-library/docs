@@ -51,7 +51,6 @@ We recommend creating volumes for the following directories:
 
 > **Warning:** You cannot use the same volumes on multiple instances of SonarQube.
 
-
 ## Upgrading
 
 For upgrade instructions, see Upgrading from the Docker Image on the [Upgrade the Server](https://docs.sonarqube.org/latest/setup/upgrading/) page.
