@@ -189,6 +189,10 @@ Sets root (*not* the user specified in `MYSQL_USER`!) user as expired once init 
 
 By default, the entrypoint script automatically loads the timezone data needed for the `CONVERT_TZ()` function. If it is not needed, any non-empty value disables timezone loading.
 
+### `MYSQL_LOG_CONSOLE`
+
+When the variable is true (which is its default state for MySQL 8.0 server containers), the MySQL Server's error log is redirected to stderr, so that the error log goes into the Docker container's log and is viewable using the docker logs mysqld-container command. Note: The variable has no effect if a server configuration file from the host has been mounted (see [Persisting Data and Configuration Changes on bind-mounting a configuration file](https://dev.mysql.com/doc/refman/8.0/en/docker-mysql-more-topics.html#docker-persisting-data-configuration)).
+
 ## Docker Secrets
 
 As an alternative to passing sensitive information via environment variables, `_FILE` may be appended to the previously listed environment variables, causing the initialization script to load the values for those variables from files present in the container. In particular, this can be used to load passwords from Docker secrets stored in `/run/secrets/<secret_name>` files. For example:
