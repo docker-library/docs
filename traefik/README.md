@@ -26,8 +26,8 @@ WARNING:
 
 -	[`v2.5.0-rc2-windowsservercore-1809`, `2.5.0-rc2-windowsservercore-1809`, `v2.5-windowsservercore-1809`, `2.5-windowsservercore-1809`, `brie-windowsservercore-1809`](https://github.com/traefik/traefik-library-image/blob/ddec81750aeb6951688061127d7b6ad1feed1d2b/windows/1809/Dockerfile)
 -	[`v2.5.0-rc2`, `2.5.0-rc2`, `v2.5`, `2.5`, `brie`](https://github.com/traefik/traefik-library-image/blob/ddec81750aeb6951688061127d7b6ad1feed1d2b/alpine/Dockerfile)
--	[`v2.4.9-windowsservercore-1809`, `2.4.9-windowsservercore-1809`, `v2.4-windowsservercore-1809`, `2.4-windowsservercore-1809`, `livarot-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/traefik/traefik-library-image/blob/3c9cff0bbd01da83bcf9b73b60e09b9e7f7d8c12/windows/1809/Dockerfile)
--	[`v2.4.9`, `2.4.9`, `v2.4`, `2.4`, `livarot`, `latest`](https://github.com/traefik/traefik-library-image/blob/3c9cff0bbd01da83bcf9b73b60e09b9e7f7d8c12/alpine/Dockerfile)
+-	[`v2.4.11-windowsservercore-1809`, `2.4.11-windowsservercore-1809`, `v2.4-windowsservercore-1809`, `2.4-windowsservercore-1809`, `livarot-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/traefik/traefik-library-image/blob/4c8a1317babfff05ac64efe90b486fe3673d5c0b/windows/1809/Dockerfile)
+-	[`v2.4.11`, `2.4.11`, `v2.4`, `2.4`, `livarot`, `latest`](https://github.com/traefik/traefik-library-image/blob/4c8a1317babfff05ac64efe90b486fe3673d5c0b/alpine/Dockerfile)
 -	[`v1.7.30-windowsservercore-1809`, `1.7.30-windowsservercore-1809`, `v1.7-windowsservercore-1809`, `1.7-windowsservercore-1809`, `maroilles-windowsservercore-1809`](https://github.com/traefik/traefik-library-image/blob/7d554807d47ad41f0cc622b107504cb338fed7c5/windows/1809/Dockerfile)
 -	[`v1.7.30-alpine`, `1.7.30-alpine`, `v1.7-alpine`, `1.7-alpine`, `maroilles-alpine`](https://github.com/traefik/traefik-library-image/blob/7d554807d47ad41f0cc622b107504cb338fed7c5/alpine/Dockerfile)
 -	[`v1.7.30`, `1.7.30`, `v1.7`, `1.7`, `maroilles`](https://github.com/traefik/traefik-library-image/blob/7d554807d47ad41f0cc622b107504cb338fed7c5/scratch/Dockerfile)
