@@ -26,7 +26,6 @@ WARNING:
 
 -	[`1.6.9`, `1.6`, `1`, `latest`, `1.6.9-buster`, `1.6-buster`, `1-buster`, `buster`](https://github.com/docker-library/memcached/blob/e67da60d356bf67cf1f822c563dd522c19d48deb/debian/Dockerfile)
 -	[`1.6.9-alpine`, `1.6-alpine`, `1-alpine`, `alpine`, `1.6.9-alpine3.14`, `1.6-alpine3.14`, `1-alpine3.14`, `alpine3.14`](https://github.com/docker-library/memcached/blob/c6f3bd1e98c2455fbc62880936e0feb32792a88e/alpine/Dockerfile)
--	[`1.6.9-alpine3.13`, `1.6-alpine3.13`, `1-alpine3.13`, `alpine3.13`](https://github.com/docker-library/memcached/blob/2f06a1eacb5ca1bbdcc1a1b57334897e04d7a270/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
