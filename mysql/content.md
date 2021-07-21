@@ -186,3 +186,43 @@ For restoring data. You can use `docker exec` command with `-i` flag, similar to
 ```console
 $ docker exec -i some-%%REPO%% sh -c 'exec mysql -uroot -p"$MYSQL_ROOT_PASSWORD"' < /some/path/on/your/host/all-databases.sql
 ```
+
+## Graceful Shutdowns
+
+Running MySQL in a Docker container has some peculiarities around stopping containers that may happen if using this container for local development. For instance, sending a `CTRL+C` to the container may not allow mysqld to shutdown cleanly and may result in corrupt data.
+
+It is recommended that in order to maintain consistent shutdown behavior that you create a custom image with an overridden entrypoint script which will `trap` the `SIGINT` and `SIGTERM` signals and gracefully shutdown mysql. The following is an example which will do this:
+
+Custom Dockerfile:
+
+	FROM mysql:latest
+	
+	ENV MYSQL_ROOT_PASSWORD password
+	ENV MYSQL_DATABASE databasename
+	ENV MYSQL_USER user
+	ENV MYSQL_PASSWORD password
+	
+	# Entrypoint overload to catch the ctrl+c and stop signals
+	ENTRYPOINT ["/bin/bash", "/run.sh"]
+	CMD ["mysqld"]
+	
+	COPY run.sh /run.sh
+
+Custom entrypoint:
+
+	#!/bin/bash
+	# A wrapper around /entrypoint.sh to trap the SIGINT signal (Ctrl+C) and forwards it to the mysql daemon
+	# In other words : traps SIGINT and SIGTERM signals and forwards them to the child process as SIGTERM signals
+	
+	asyncRun() {
+	    "$@" &
+	    pid="$!"
+	    trap "echo 'Stopping PID $pid'; kill -SIGTERM $pid" SIGINT SIGTERM
+	
+	    # A signal emitted while waiting will make the wait command return code > 128
+	    # Let's wrap it in a loop that doesn't end before the process is indeed stopped
+	    while kill -0 $pid > /dev/null 2>&1; do
+	        wait
+	    done
+	}
+	asyncRun /entrypoint.sh $@
