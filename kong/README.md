@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `i386` builds of [the `kong` official image](https://hub.docker.com/_/kong) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,12 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.5.0-alpine`, `2.5.0`, `2.5`, `alpine`, `latest`](https://github.com/Kong/docker-kong/blob/ff3efa2c53e785e655a9c7de24c8111a373900cb/alpine/Dockerfile)
--	[`2.5.0-ubuntu`, `2.5-ubuntu`, `ubuntu`](https://github.com/Kong/docker-kong/blob/ff3efa2c53e785e655a9c7de24c8111a373900cb/ubuntu/Dockerfile)
--	[`2.5.0-centos`, `2.5-centos`, `centos`](https://github.com/Kong/docker-kong/blob/ff3efa2c53e785e655a9c7de24c8111a373900cb/centos/Dockerfile)
--	[`2.4.1-alpine`, `2.4-alpine`, `2.4.1`, `2.4`](https://github.com/Kong/docker-kong/blob/e1b0a6c7eddd327926027692863a9900fd856977/alpine/Dockerfile)
--	[`2.4.1-ubuntu`, `2.4-ubuntu`](https://github.com/Kong/docker-kong/blob/e1b0a6c7eddd327926027692863a9900fd856977/ubuntu/Dockerfile)
--	[`2.4.1-centos`, `2.4-centos`](https://github.com/Kong/docker-kong/blob/e1b0a6c7eddd327926027692863a9900fd856977/centos/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `i386` ARCHITECTURE
+
+[![i386/kong build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/i386/job/kong.svg?label=i386/kong%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/i386/job/kong/)
 
 # Quick reference (cont.)
 
@@ -74,7 +73,7 @@ $ docker run -d --name kong \
     -p 8443:8443 \
     -p 8001:8001 \
     -p 8444:8444 \
-    kong
+    i386/kong
 ```
 
 Generate a skeleton configuration file to get you started
@@ -135,7 +134,7 @@ $ docker run --rm \
     -e "KONG_PG_USER=kong" \
     -e "KONG_PG_PASSWORD=kong" \
     -e "KONG_CASSANDRA_CONTACT_POINTS=kong-database" \
-    kong kong migrations bootstrap
+    i386/kong kong migrations bootstrap
 ```
 
 In the above example, both Cassandra and PostgreSQL are configured, but you should update the `KONG_DATABASE` environment variable with either `cassandra` or `postgres`.
@@ -162,7 +161,7 @@ $ docker run -d --name kong \
     -p 8443:8443 \
     -p 8001:8001 \
     -p 8444:8444 \
-    kong
+    i386/kong
 ```
 
 If everything went well, and if you created your container with the default ports, Kong should be listening on your host's `8000` ([Proxy](https://docs.konghq.com/latest/configuration/#proxy_port)), `8443` ([Proxy SSL](https://docs.konghq.com/latest/configuration/#proxy_listen_ssl)), `8001` ([Admin API](https://docs.konghq.com/latest/configuration/#admin_listen)) and `8444` ([Admin API SSL](https://docs.konghq.com/latest/configuration/#admin_listen_ssl)) ports.
@@ -185,7 +184,7 @@ $ docker run -d --name kong \
     -p 8443:8443 \
     -p 8001:8001 \
     -p 8444:8444 \
-    kong
+    i386/kong
 ```
 
 ## Reload Kong in a running container
@@ -201,22 +200,6 @@ This will run the [`kong reload`](https://docs.konghq.com/latest/cli/#reload) co
 # Kubernetes Ingress
 
 Among the many deployment options [available](https://konghq.com/install), Kong also offers a [Kubernetes Ingress Controller](https://github.com/Kong/kubernetes-ingress-controller) ready to use in your K8s environment.
-
-# Image Variants
-
-The `kong` images come in many flavors, each designed for a specific use case.
-
-## `kong:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-## `kong:<version>-alpine`
-
-This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
-
-This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
-
-To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 # License
 

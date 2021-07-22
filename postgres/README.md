@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `i386` builds of [the `postgres` official image](https://hub.docker.com/_/postgres) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -39,6 +41,8 @@ WARNING:
 -	[`9.6.22-buster`, `9.6-buster`, `9-buster`](https://github.com/docker-library/postgres/blob/5c0e796bb660f0ae42ae8bf084470f13417b8d63/9.6/buster/Dockerfile)
 -	[`9.6.22`, `9.6`, `9`, `9.6.22-stretch`, `9.6-stretch`, `9-stretch`](https://github.com/docker-library/postgres/blob/5c0e796bb660f0ae42ae8bf084470f13417b8d63/9.6/stretch/Dockerfile)
 -	[`9.6.22-alpine`, `9.6-alpine`, `9-alpine`, `9.6.22-alpine3.14`, `9.6-alpine3.14`, `9-alpine3.14`](https://github.com/docker-library/postgres/blob/517c64f87e6661366b415df3f2273c76cea428b0/9.6/alpine/Dockerfile)
+
+[![i386/postgres build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/i386/job/postgres.svg?label=i386/postgres%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/i386/job/postgres/)
 
 # Quick reference (cont.)
 
@@ -74,7 +78,7 @@ PostgreSQL implements the majority of the SQL:2011 standard, is ACID-compliant a
 ## start a postgres instance
 
 ```console
-$ docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgres
+$ docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -d i386/postgres
 ```
 
 The default `postgres` user and database are created in the entrypoint with `initdb`.
@@ -86,7 +90,7 @@ The default `postgres` user and database are created in the entrypoint with `ini
 ## ... or via `psql`
 
 ```console
-$ docker run -it --rm --network some-network postgres psql -h some-postgres -U postgres
+$ docker run -it --rm --network some-network i386/postgres psql -h some-postgres -U postgres
 psql (9.5.0)
 Type "help" for help.
 
@@ -191,7 +195,7 @@ $ docker run -d \
 	-e POSTGRES_PASSWORD=mysecretpassword \
 	-e PGDATA=/var/lib/postgresql/data/pgdata \
 	-v /custom/mount:/var/lib/postgresql/data \
-	postgres
+	i386/postgres
 ```
 
 This is an environment variable that is not Docker specific. Because the variable is used by the `postgres` server binary (see the [PostgreSQL docs](https://www.postgresql.org/docs/11/app-postgres.html#id-1.9.5.14.7)), the entrypoint script takes it into account.
@@ -201,7 +205,7 @@ This is an environment variable that is not Docker specific. Because the variabl
 As an alternative to passing sensitive information via environment variables, `_FILE` may be appended to some of the previously listed environment variables, causing the initialization script to load the values for those variables from files present in the container. In particular, this can be used to load passwords from Docker secrets stored in `/run/secrets/<secret_name>` files. For example:
 
 ```console
-$ docker run --name some-postgres -e POSTGRES_PASSWORD_FILE=/run/secrets/postgres-passwd -d postgres
+$ docker run --name some-postgres -e POSTGRES_PASSWORD_FILE=/run/secrets/postgres-passwd -d i386/postgres
 ```
 
 Currently, this is only supported for `POSTGRES_INITDB_ARGS`, `POSTGRES_PASSWORD`, `POSTGRES_USER`, and `POSTGRES_DB`.
@@ -244,13 +248,13 @@ There are many ways to set PostgreSQL server configuration. For information on w
 	$ # customize the config
 
 	$ # run postgres with custom config
-	$ docker run -d --name some-postgres -v "$PWD/my-postgres.conf":/etc/postgresql/postgresql.conf -e POSTGRES_PASSWORD=mysecretpassword postgres -c 'config_file=/etc/postgresql/postgresql.conf'
+	$ docker run -d --name some-postgres -v "$PWD/my-postgres.conf":/etc/postgresql/postgresql.conf -e POSTGRES_PASSWORD=mysecretpassword i386/postgres -c 'config_file=/etc/postgresql/postgresql.conf'
 	```
 
 -	Set options directly on the run line. The entrypoint script is made so that any options passed to the docker command will be passed along to the `postgres` server daemon. From the [docs](https://www.postgresql.org/docs/current/static/app-postgres.html) we see that any option available in a `.conf` file can be set via `-c`.
 
 	```console
-	$ docker run -d --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword postgres -c shared_buffers=256MB -c max_connections=200
+	$ docker run -d --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword i386/postgres -c shared_buffers=256MB -c max_connections=200
 	```
 
 ## Locale Customization
@@ -258,7 +262,7 @@ There are many ways to set PostgreSQL server configuration. For information on w
 You can extend the Debian-based images with a simple `Dockerfile` to set a different locale. The following example will set the default locale to `de_DE.utf8`:
 
 ```dockerfile
-FROM postgres:9.4
+FROM i386/postgres:9.4
 RUN localedef -i de_DE -c -f UTF-8 -A /usr/share/locale/locale.alias de_DE.UTF-8
 ENV LANG de_DE.utf8
 ```
@@ -280,11 +284,11 @@ As of [docker-library/postgres#253](https://github.com/docker-library/postgres/p
 The main caveat to note is that `postgres` doesn't care what UID it runs as (as long as the owner of `/var/lib/postgresql/data` matches), but `initdb` *does* care (and needs the user to exist in `/etc/passwd`):
 
 ```console
-$ docker run -it --rm --user www-data -e POSTGRES_PASSWORD=mysecretpassword postgres
+$ docker run -it --rm --user www-data -e POSTGRES_PASSWORD=mysecretpassword i386/postgres
 The files belonging to this database system will be owned by user "www-data".
 ...
 
-$ docker run -it --rm --user 1000:1000 -e POSTGRES_PASSWORD=mysecretpassword postgres
+$ docker run -it --rm --user 1000:1000 -e POSTGRES_PASSWORD=mysecretpassword i386/postgres
 initdb: could not look up effective user ID 1000: user does not exist
 ```
 
@@ -295,7 +299,7 @@ The three easiest ways to get around this:
 2.	bind-mount `/etc/passwd` read-only from the host (if the UID you desire is a valid user on your host):
 
 	```console
-	$ docker run -it --rm --user "$(id -u):$(id -g)" -v /etc/passwd:/etc/passwd:ro -e POSTGRES_PASSWORD=mysecretpassword postgres
+	$ docker run -it --rm --user "$(id -u):$(id -g)" -v /etc/passwd:/etc/passwd:ro -e POSTGRES_PASSWORD=mysecretpassword i386/postgres
 	The files belonging to this database system will be owned by user "jsmith".
 	...
 	```
@@ -304,12 +308,12 @@ The three easiest ways to get around this:
 
 	```console
 	$ docker volume create pgdata
-	$ docker run -it --rm -v pgdata:/var/lib/postgresql/data -e POSTGRES_PASSWORD=mysecretpassword postgres
+	$ docker run -it --rm -v pgdata:/var/lib/postgresql/data -e POSTGRES_PASSWORD=mysecretpassword i386/postgres
 	The files belonging to this database system will be owned by user "postgres".
 	...
 	( once it's finished initializing successfully and is waiting for connections, stop it )
 	$ docker run -it --rm -v pgdata:/var/lib/postgresql/data bash chown -R 1000:1000 /var/lib/postgresql/data
-	$ docker run -it --rm --user 1000:1000 -v pgdata:/var/lib/postgresql/data postgres
+	$ docker run -it --rm --user 1000:1000 -v pgdata:/var/lib/postgresql/data i386/postgres
 	LOG:  database system was shut down at 2017-01-20 00:03:23 UTC
 	LOG:  MultiXact member wraparound protections are now enabled
 	LOG:  autovacuum launcher started
@@ -326,7 +330,7 @@ See ["IPVS connection timeout issue" in the Docker Success Center](https://succe
 
 ## Where to Store Data
 
-**Important note:** There are several ways to store data used by applications that run in Docker containers. We encourage users of the `postgres` images to familiarize themselves with the options available, including:
+**Important note:** There are several ways to store data used by applications that run in Docker containers. We encourage users of the `i386/postgres` images to familiarize themselves with the options available, including:
 
 -	Let Docker manage the storage of your database data [by writing the database files to disk on the host system using its own internal volume management](https://docs.docker.com/engine/tutorials/dockervolumes/#adding-a-data-volume). This is the default and is easy and fairly transparent to the user. The downside is that the files may be hard to locate for tools and applications that run directly on the host system, i.e. outside containers.
 -	Create a data directory on the host system (outside the container) and [mount this to a directory visible from inside the container](https://docs.docker.com/engine/tutorials/dockervolumes/#mount-a-host-directory-as-a-data-volume). This places the database files in a known location on the host system, and makes it easy for tools and applications on the host system to access the files. The downside is that the user needs to make sure that the directory exists, and that e.g. directory permissions and other security mechanisms on the host system are set up correctly.
@@ -334,25 +338,25 @@ See ["IPVS connection timeout issue" in the Docker Success Center](https://succe
 The Docker documentation is a good starting point for understanding the different storage options and variations, and there are multiple blogs and forum postings that discuss and give advice in this area. We will simply show the basic procedure here for the latter option above:
 
 1.	Create a data directory on a suitable volume on your host system, e.g. `/my/own/datadir`.
-2.	Start your `postgres` container like this:
+2.	Start your `i386/postgres` container like this:
 
 	```console
-	$ docker run --name some-postgres -v /my/own/datadir:/var/lib/postgresql/data -e POSTGRES_PASSWORD=mysecretpassword -d postgres:tag
+	$ docker run --name some-postgres -v /my/own/datadir:/var/lib/postgresql/data -e POSTGRES_PASSWORD=mysecretpassword -d i386/postgres:tag
 	```
 
 The `-v /my/own/datadir:/var/lib/postgresql/data` part of the command mounts the `/my/own/datadir` directory from the underlying host system as `/var/lib/postgresql/data` inside the container, where PostgreSQL by default will write its data files.
 
 # Image Variants
 
-The `postgres` images come in many flavors, each designed for a specific use case.
+The `i386/postgres` images come in many flavors, each designed for a specific use case.
 
-## `postgres:<version>`
+## `i386/postgres:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
 Some of these tags may have names like buster or stretch in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
-## `postgres:<version>-alpine`
+## `i386/postgres:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
