@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `ppc64le` builds of [the `swarm` official image](https://hub.docker.com/_/swarm) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # **DEPRECATION NOTICE**
 
 > Classic Swarm has been archived and is no longer actively developed. You may want to use the Swarm mode built into the Docker Engine instead, or another orchestration system.
@@ -30,7 +32,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
-**No supported tags**
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `ppc64le` ARCHITECTURE
+
+[![ppc64le/swarm build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/ppc64le/job/swarm.svg?label=ppc64le/swarm%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/ppc64le/job/swarm/)
 
 # Quick reference (cont.)
 
@@ -65,16 +69,16 @@ Like the other Docker projects, `swarm` follows the "batteries included but remo
 
 ```bash
 # create a cluster
-$ docker run --rm swarm create
+$ docker run --rm ppc64le/swarm create
 6856663cdefdec325839a4b7e1de38e8 # <- this is your unique <cluster_id>
 
 # on each of your nodes, start the swarm agent
 #  <node_ip> doesn't have to be public (eg. 192.168.0.X),
 #  as long as the swarm manager can access it.
-$ docker run -d swarm join --addr=<node_ip:2375> token://<cluster_id>
+$ docker run -d ppc64le/swarm join --addr=<node_ip:2375> token://<cluster_id>
 
 # start the manager on any machine or your laptop
-$ docker run -t -p <swarm_port>:2375 -t swarm manage token://<cluster_id>
+$ docker run -t -p <swarm_port>:2375 -t ppc64le/swarm manage token://<cluster_id>
 
 # use the regular docker cli
 $ docker -H tcp://<swarm_ip:swarm_port> info
@@ -84,7 +88,7 @@ $ docker -H tcp://<swarm_ip:swarm_port> logs ...
 ...
 
 # list nodes in your cluster
-$ docker run --rm swarm list token://<cluster_id>
+$ docker run --rm ppc64le/swarm list token://<cluster_id>
 <node_ip:2375>
 ```
 

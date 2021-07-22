@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `ppc64le` builds of [the `alt` official image](https://hub.docker.com/_/alt) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,9 +26,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`p9`, `latest`](https://github.com/alt-cloud/docker-brew-alt/blob/027b02f57faf6278ab0a7080e077f4e989e0302d/x86_64/Dockerfile)
--	[`p8`](https://github.com/alt-cloud/docker-brew-alt/blob/ce87cc6c704caf13461955cfa5ddd83a7d04207a/x86_64/Dockerfile)
--	[`sisyphus`](https://github.com/alt-cloud/docker-brew-alt/blob/425b1b723bf933037319e23d5a5cdf7e796971eb/x86_64/Dockerfile)
+-	[`p9`, `latest`](https://github.com/alt-cloud/docker-brew-alt/blob/027b02f57faf6278ab0a7080e077f4e989e0302d/ppc64le/Dockerfile)
+-	[`sisyphus`](https://github.com/alt-cloud/docker-brew-alt/blob/425b1b723bf933037319e23d5a5cdf7e796971eb/ppc64le/Dockerfile)
+
+[![ppc64le/alt build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/ppc64le/job/alt.svg?label=ppc64le/alt%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/ppc64le/job/alt/)
 
 # Quick reference (cont.)
 
@@ -71,7 +74,7 @@ As said above, Sisyphus is a frequently updated repository mainly designed for d
 
 # About this image
 
-The `alt:latest` tag will always point the latest stable release (which is, at the time of this writing, `alt:p9`).
+The `ppc64le/alt:latest` tag will always point the latest stable release (which is, at the time of this writing, `ppc64le/alt:p9`).
 
 ## How It's Made
 

@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `ppc64le` builds of [the `nuxeo` official image](https://hub.docker.com/_/nuxeo) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,10 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.10`, `7`, `LTS-2015`](https://github.com/nuxeo/docker-nuxeo/blob/f253a2398dbc39b42ca6ff84f2adeda8c1e8287e/7.10/Dockerfile)
--	[`8.10`, `8`, `LTS-2016`](https://github.com/nuxeo/docker-nuxeo/blob/f253a2398dbc39b42ca6ff84f2adeda8c1e8287e/8.10/Dockerfile)
--	[`9.10`, `9`, `LTS-2017`](https://github.com/nuxeo/docker-nuxeo/blob/f253a2398dbc39b42ca6ff84f2adeda8c1e8287e/9.10/Dockerfile)
--	[`10.10`, `10`, `LTS-2019`, `LTS`, `FT`, `latest`](https://github.com/nuxeo/docker-nuxeo/blob/f253a2398dbc39b42ca6ff84f2adeda8c1e8287e/10.10/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `ppc64le` ARCHITECTURE
+
+[![ppc64le/nuxeo build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/ppc64le/job/nuxeo.svg?label=ppc64le/nuxeo%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/ppc64le/job/nuxeo/)
 
 # Quick reference (cont.)
 
@@ -59,7 +60,7 @@ The Nuxeo Platform is a highly customizable and extensible content management pl
 ## Start a bare nuxeo instance
 
 ```console
-$ docker run --name mynuxeo -p 8080:8080 -d nuxeo
+$ docker run --name mynuxeo -p 8080:8080 -d ppc64le/nuxeo
 ```
 
 This image includes `EXPOSE 8080` (the nuxeo port). The default Nuxeo configuration is applied which feature an embedded database (H2), and an embedded Elasticsearch instance. This setup is not suitable for production. See below to know how to setup a production ready container by specifying environment variables.
@@ -177,14 +178,14 @@ Allows to add custom parameters to `nuxeo.conf`. Multiple parameters can be spli
 If you would like to do additional setup in an image derived from this one, you can add a `/docker-entrypoint-initnuxeo.d/nuxeo.conf` file that will be appended to the end of the regular `nuxeo.conf` file.
 
 ```dockerfile
-FROM nuxeo:7.10
+FROM ppc64le/nuxeo:7.10
 COPY nuxeo.conf /docker-entrypoint-initnuxeo.d/nuxeo.conf
 ```
 
 If you need a root account to run some installation steps in your `Dockerfile`, then you need to put those steps between two `USER` command as the image is run with the user `1000` (nuxeo). For instance:
 
 ```dockerfile
-FROM nuxeo:LTS
+FROM ppc64le/nuxeo:LTS
 USER root
 RUN apt-get update && apt-get install -y --no-install-recommends vim
 USER 1000
@@ -199,7 +200,7 @@ You can add your own shell scripts in a special `/docker-entrypoint-initnuxeo.d`
 As it contains some non-free Codecs, we dont't ship a binary version of `ffmpeg` as part of this image. However, you can simply add the compilation in a derived images by adding these lines to your Dockerfile.
 
 ```dockerfile
-FROM nuxeo:7.10
+FROM ppc64le/nuxeo:7.10
 
 USER root
 

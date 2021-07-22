@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `ppc64le` builds of [the `couchbase` official image](https://hub.docker.com/_/couchbase) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,20 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.0.0-beta`, `enterprise-7.0.0-beta`](https://github.com/couchbase/docker/blob/5929be778eb5306f116f71cc9a0a23fea6d9a7aa/enterprise/couchbase-server/7.0.0-beta/Dockerfile)
--	[`community-7.0.0-beta`](https://github.com/couchbase/docker/blob/5929be778eb5306f116f71cc9a0a23fea6d9a7aa/community/couchbase-server/7.0.0-beta/Dockerfile)
--	[`latest`, `enterprise`, `6.6.2`, `enterprise-6.6.2`](https://github.com/couchbase/docker/blob/4d5b6101c73d4efe75d2288107f6fe00b1deeff5/enterprise/couchbase-server/6.6.2/Dockerfile)
--	[`community`, `community-6.6.0`](https://github.com/couchbase/docker/blob/5929be778eb5306f116f71cc9a0a23fea6d9a7aa/community/couchbase-server/6.6.0/Dockerfile)
--	[`6.0.5`, `enterprise-6.0.5`](https://github.com/couchbase/docker/blob/5929be778eb5306f116f71cc9a0a23fea6d9a7aa/enterprise/couchbase-server/6.0.5/Dockerfile)
--	[`6.6.1`, `enterprise-6.6.1`](https://github.com/couchbase/docker/blob/5929be778eb5306f116f71cc9a0a23fea6d9a7aa/enterprise/couchbase-server/6.6.1/Dockerfile)
--	[`6.6.0`, `enterprise-6.6.0`](https://github.com/couchbase/docker/blob/5929be778eb5306f116f71cc9a0a23fea6d9a7aa/enterprise/couchbase-server/6.6.0/Dockerfile)
--	[`6.5.1`, `enterprise-6.5.1`](https://github.com/couchbase/docker/blob/5929be778eb5306f116f71cc9a0a23fea6d9a7aa/enterprise/couchbase-server/6.5.1/Dockerfile)
--	[`6.5.0`, `enterprise-6.5.0`](https://github.com/couchbase/docker/blob/5929be778eb5306f116f71cc9a0a23fea6d9a7aa/enterprise/couchbase-server/6.5.0/Dockerfile)
--	[`6.0.4`, `enterprise-6.0.4`](https://github.com/couchbase/docker/blob/5929be778eb5306f116f71cc9a0a23fea6d9a7aa/enterprise/couchbase-server/6.0.4/Dockerfile)
--	[`6.0.3`, `enterprise-6.0.3`](https://github.com/couchbase/docker/blob/5929be778eb5306f116f71cc9a0a23fea6d9a7aa/enterprise/couchbase-server/6.0.3/Dockerfile)
--	[`6.0.2`, `enterprise-6.0.2`](https://github.com/couchbase/docker/blob/5929be778eb5306f116f71cc9a0a23fea6d9a7aa/enterprise/couchbase-server/6.0.2/Dockerfile)
--	[`6.0.1`, `enterprise-6.0.1`](https://github.com/couchbase/docker/blob/5929be778eb5306f116f71cc9a0a23fea6d9a7aa/enterprise/couchbase-server/6.0.1/Dockerfile)
--	[`community-6.5.1`, `community-6.5.0`](https://github.com/couchbase/docker/blob/5929be778eb5306f116f71cc9a0a23fea6d9a7aa/community/couchbase-server/6.5.1/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `ppc64le` ARCHITECTURE
+
+[![ppc64le/couchbase build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/ppc64le/job/couchbase.svg?label=ppc64le/couchbase%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/ppc64le/job/couchbase/)
 
 # Quick reference (cont.)
 

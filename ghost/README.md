@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `ppc64le` builds of [the `ghost` official image](https://hub.docker.com/_/ghost) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -25,9 +27,9 @@ WARNING:
 # Supported tags and respective `Dockerfile` links
 
 -	[`4.10.0`, `4.10`, `4`, `latest`](https://github.com/docker-library/ghost/blob/1ac363f05b25003bdc724865128e65ca8e637865/4/debian/Dockerfile)
--	[`4.10.0-alpine`, `4.10-alpine`, `4-alpine`, `alpine`](https://github.com/docker-library/ghost/blob/1ac363f05b25003bdc724865128e65ca8e637865/4/alpine/Dockerfile)
 -	[`3.42.5`, `3.42`, `3`](https://github.com/docker-library/ghost/blob/5f8c4895e23dc9ee4281aea85ee7f1093a4fbf0c/3/debian/Dockerfile)
--	[`3.42.5-alpine`, `3.42-alpine`, `3-alpine`](https://github.com/docker-library/ghost/blob/5f8c4895e23dc9ee4281aea85ee7f1093a4fbf0c/3/alpine/Dockerfile)
+
+[![ppc64le/ghost build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/ppc64le/job/ghost.svg?label=ppc64le/ghost%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/ppc64le/job/ghost/)
 
 # Quick reference (cont.)
 
@@ -61,7 +63,7 @@ Ghost is a free and open source blogging platform written in JavaScript and dist
 This will start a Ghost instance listening on the default Ghost port of 2368.
 
 ```console
-$ docker run -d --name some-ghost ghost
+$ docker run -d --name some-ghost ppc64le/ghost
 ```
 
 ## Custom port
@@ -69,7 +71,7 @@ $ docker run -d --name some-ghost ghost
 If you'd like to be able to access the instance from the host without the container's IP, standard port mappings can be used:
 
 ```console
-$ docker run -d --name some-ghost -e url=http://localhost:3001 -p 3001:2368 ghost
+$ docker run -d --name some-ghost -e url=http://localhost:3001 -p 3001:2368 ppc64le/ghost
 ```
 
 If all goes well, you'll be able to access your new site on `http://localhost:3001` and `http://localhost:3001/ghost` to access Ghost Admin (or `http://host-ip:3001` and `http://host-ip:3001/ghost`, respectively).
@@ -85,7 +87,7 @@ For upgrading your Ghost container you will want to mount your data to the appro
 Mount your existing content. In this example we also use the Alpine base image.
 
 ```console
-$ docker run -d --name some-ghost -p 3001:2368 -v /path/to/ghost/blog:/var/lib/ghost/content ghost:alpine
+$ docker run -d --name some-ghost -p 3001:2368 -v /path/to/ghost/blog:/var/lib/ghost/content ppc64le/ghost:alpine
 ```
 
 ### Docker Volume
@@ -93,7 +95,7 @@ $ docker run -d --name some-ghost -p 3001:2368 -v /path/to/ghost/blog:/var/lib/g
 Alternatively you can use a named [docker volume](https://docs.docker.com/storage/volumes/) instead of a direct host path for `/var/lib/ghost/content`:
 
 ```console
-$ docker run -d --name some-ghost -v some-ghost-data:/var/lib/ghost/content ghost
+$ docker run -d --name some-ghost -v some-ghost-data:/var/lib/ghost/content ppc64le/ghost
 ```
 
 ### SQLite Database
@@ -105,7 +107,7 @@ This Docker image for Ghost uses SQLite. There is nothing special to configure.
 All Ghost configuration parameters (such as `url`) can be specified via environment variables. See [the Ghost documentation](https://ghost.org/docs/concepts/config/#running-ghost-with-config-env-variables) for details about what configuration is allowed and how to convert a nested configuration key into the appropriate environment variable name:
 
 ```console
-$ docker run -d --name some-ghost -e url=http://some-ghost.example.com ghost
+$ docker run -d --name some-ghost -e url=http://some-ghost.example.com ppc64le/ghost
 ```
 
 (There are further configuration examples in the `stack.yml` listed below.)
@@ -162,22 +164,6 @@ services:
 [![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/cd439efd00ac238cdd9dcbb58c2e91e7d46a1ffa/ghost/stack.yml)
 
 Run `docker stack deploy -c stack.yml ghost` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
-
-# Image Variants
-
-The `ghost` images come in many flavors, each designed for a specific use case.
-
-## `ghost:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-## `ghost:<version>-alpine`
-
-This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
-
-This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
-
-To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 # License
 
