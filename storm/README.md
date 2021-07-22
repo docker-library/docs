@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v7` builds of [the `storm` official image](https://hub.docker.com/_/storm) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,9 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.1.3`, `1.1`](https://github.com/31z4/storm-docker/blob/664a7f4730f58be00fd7fe0526d2c13180107c6f/1.1.3/Dockerfile)
--	[`1.2.3`, `1.2`](https://github.com/31z4/storm-docker/blob/664a7f4730f58be00fd7fe0526d2c13180107c6f/1.2.3/Dockerfile)
--	[`2.2.0`, `2.2`, `latest`](https://github.com/31z4/storm-docker/blob/9eae4ab08d30cfab29c784b4d9e7d1c187fa0348/2.2.0/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v7` ARCHITECTURE
+
+[![arm32v7/storm build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/storm.svg?label=arm32v7/storm%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/storm/)
 
 # Quick reference (cont.)
 
@@ -62,7 +64,7 @@ Apache Storm is a distributed computation framework written predominantly in the
 Assuming you have `topology.jar` in the current directory.
 
 ```console
-$ docker run -it -v $(pwd)/topology.jar:/topology.jar storm storm jar /topology.jar org.apache.storm.starter.ExclamationTopology
+$ docker run -it -v $(pwd)/topology.jar:/topology.jar arm32v7/storm storm jar /topology.jar org.apache.storm.starter.ExclamationTopology
 ```
 
 ## Setting up a minimal Storm cluster
@@ -76,25 +78,25 @@ $ docker run -it -v $(pwd)/topology.jar:/topology.jar storm storm jar /topology.
 2.	The Nimbus daemon has to be connected with the Zookeeper. It's also a "fail fast" system.
 
 	```console
-	$ docker run -d --restart always --name some-nimbus --link some-zookeeper:zookeeper storm storm nimbus
+	$ docker run -d --restart always --name some-nimbus --link some-zookeeper:zookeeper arm32v7/storm storm nimbus
 	```
 
 3.	Finally start a single Supervisor node. It will talk to the Nimbus and Zookeeper.
 
 	```console
-	$ docker run -d --restart always --name supervisor --link some-zookeeper:zookeeper --link some-nimbus:nimbus storm storm supervisor
+	$ docker run -d --restart always --name supervisor --link some-zookeeper:zookeeper --link some-nimbus:nimbus arm32v7/storm storm supervisor
 	```
 
 4.	Now you can submit a topology to our cluster.
 
 	```console
-	$ docker run --link some-nimbus:nimbus -it --rm -v $(pwd)/topology.jar:/topology.jar storm storm jar /topology.jar org.apache.storm.starter.WordCountTopology topology
+	$ docker run --link some-nimbus:nimbus -it --rm -v $(pwd)/topology.jar:/topology.jar arm32v7/storm storm jar /topology.jar org.apache.storm.starter.WordCountTopology topology
 	```
 
 5.	Optionally, you can start the Storm UI.
 
 	```console
-	$ docker run -d -p 8080:8080 --restart always --name ui --link some-nimbus:nimbus storm storm ui
+	$ docker run -d -p 8080:8080 --restart always --name ui --link some-nimbus:nimbus arm32v7/storm storm ui
 	```
 
 ## ... via [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/) or [`docker-compose`](https://github.com/docker/compose)
@@ -146,13 +148,13 @@ This image uses [default configuration](https://github.com/apache/storm/blob/v2.
 1.	Using command line arguments.
 
 	```console
-	$ docker run -d --restart always --name nimbus storm storm nimbus -c storm.zookeeper.servers='["zookeeper"]'
+	$ docker run -d --restart always --name nimbus arm32v7/storm storm nimbus -c storm.zookeeper.servers='["zookeeper"]'
 	```
 
 2.	Assuming you have `storm.yaml` in the current directory you can mount it as a volume.
 
 	```console
-	$ docker run -it -v $(pwd)/storm.yaml:/conf/storm.yaml storm storm nimbus
+	$ docker run -it -v $(pwd)/storm.yaml:/conf/storm.yaml arm32v7/storm storm nimbus
 	```
 
 ## Logging
@@ -164,7 +166,7 @@ This image uses [default logging configuration](https://github.com/apache/storm/
 No data are persisted by default. For convenience there are `/data` and `/logs` directories in the image owned by `storm` user. Use them accordingly to persist data and logs using volumes.
 
 ```console
-$ docker run -it -v /logs -v /data storm storm nimbus
+$ docker run -it -v /logs -v /data arm32v7/storm storm nimbus
 ```
 
 *Please be noticed that using paths other than those predefined is likely to cause permission denied errors. It's because for [security reasons](https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/#user) the Storm is running under the non-root `storm` user.*

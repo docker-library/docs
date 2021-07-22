@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v7` builds of [the `haskell` official image](https://hub.docker.com/_/haskell) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,10 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`9.0.1-buster`, `9.0-buster`, `9-buster`, `buster`, `9.0.1`, `9.0`, `9`, `latest`](https://github.com/haskell/docker-haskell/blob/af0dc736060a89e40b87cf11af37e434d52bc10b/9.0/buster/Dockerfile)
--	[`9.0.1-stretch`, `9.0-stretch`, `9-stretch`, `stretch`](https://github.com/haskell/docker-haskell/blob/af0dc736060a89e40b87cf11af37e434d52bc10b/9.0/stretch/Dockerfile)
--	[`8.10.4-buster`, `8.10-buster`, `8-buster`, `8.10.4`, `8.10`, `8`](https://github.com/haskell/docker-haskell/blob/af0dc736060a89e40b87cf11af37e434d52bc10b/8.10/buster/Dockerfile)
--	[`8.10.4-stretch`, `8.10-stretch`, `8-stretch`](https://github.com/haskell/docker-haskell/blob/af0dc736060a89e40b87cf11af37e434d52bc10b/8.10/stretch/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v7` ARCHITECTURE
+
+[![arm32v7/haskell build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/haskell.svg?label=arm32v7/haskell%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/haskell/)
 
 # Quick reference (cont.)
 
@@ -66,14 +67,14 @@ Note: The GHC developers do not support legacy release branches (i.e. `7.8.x`). 
 
 Additionally, we support the two most versions of Debian (`stable` and `oldstable`) as variants, with the most recent being the default if not specified.
 
-> Note: `haskell:8.8.3` was updated from Debian Stretch to Buster, so you will need to specify `haskell:8.8.3-stretch` to stick with Stretch in this particular case.
+> Note: `arm32v7/haskell:8.8.3` was updated from Debian Stretch to Buster, so you will need to specify `arm32v7/haskell:8.8.3-stretch` to stick with Stretch in this particular case.
 
 ## How to use this image
 
 Start an interactive interpreter session with `ghci`:
 
 ```console
-$ docker run -it --rm haskell:9
+$ docker run -it --rm arm32v7/haskell:9
 GHCi, version 9.0.1: http://www.haskell.org/ghc/  :? for help
 Prelude>
 ```
@@ -81,7 +82,7 @@ Prelude>
 Dockerize an application using `stack`:
 
 ```dockerfile
-FROM haskell:8.10
+FROM arm32v7/haskell:8.10
 RUN stack install --resolver lts-17.14 pandoc citeproc
 ENTRYPOINT ["pandoc"]
 ```
@@ -89,7 +90,7 @@ ENTRYPOINT ["pandoc"]
 Dockerize an application using `cabal`:
 
 ```dockerfile
-FROM haskell:8.10
+FROM arm32v7/haskell:8.10
 RUN cabal update && cabal install pandoc citeproc
 ENTRYPOINT ["pandoc"]
 ```
@@ -97,7 +98,7 @@ ENTRYPOINT ["pandoc"]
 Iteratively develop a Haskell application with a `Dockerfile` utilizing the build cache:
 
 ```dockerfile
-FROM haskell:8
+FROM arm32v7/haskell:8
 
 WORKDIR /opt/example
 
@@ -120,7 +121,7 @@ CMD ["example"]
 
 ### Considerations for `happy`, `alex`, etc
 
-Some packages that also act as build dependencies, such as `happy` and `alex`, are no longer included in this image (as of `haskell:8.2.2` & `haskell:8.4.3`). There is a bootstrapping problem where one or more of these tools may be assumed to be available. If you run in to an error about missing dependencies that are not explicitly called out in a Cabal package, you will need to explicitly mark them for installation.
+Some packages that also act as build dependencies, such as `happy` and `alex`, are no longer included in this image (as of `arm32v7/haskell:8.2.2` & `arm32v7/haskell:8.4.3`). There is a bootstrapping problem where one or more of these tools may be assumed to be available. If you run in to an error about missing dependencies that are not explicitly called out in a Cabal package, you will need to explicitly mark them for installation.
 
 ### Considerations for Stack
 
@@ -140,7 +141,7 @@ Compiler version mismatched, found ghc-8.4.3 (x86_64), but expected minor versio
 To install the correct GHC into /root/.stack/programs/x86_64-linux/, try running "stack setup" or use the "--install-ghc" flag.
 ```
 
-In this case, the GHC release in the `haskell` Docker image got ahead of the default Stack resolver expected version of GHC. As the output suggests, manually setting the resolver (typically via `stack.yml`) is the recommended approach.
+In this case, the GHC release in the `arm32v7/haskell` Docker image got ahead of the default Stack resolver expected version of GHC. As the output suggests, manually setting the resolver (typically via `stack.yml`) is the recommended approach.
 
 ```console
 Step 2/3 : RUN stack install --resolver ghc-8.4.3 pandoc
@@ -152,7 +153,7 @@ Updating package index Hackage (mirrored at https://s3.amazonaws.com/hackage.fpc
 Selected mirror https://s3.amazonaws.com/hackage.fpcomplete.com/
 ```
 
-The alternative to use `--install-ghc` doesn't make sense in a Docker image context, and hence the global `install-ghc` flag has been set to `false` (as of `haskell:8.2.2` & `haskell:8.4.3`) to avoid the default behavior of bootstrapping a new GHC in the container.
+The alternative to use `--install-ghc` doesn't make sense in a Docker image context, and hence the global `install-ghc` flag has been set to `false` (as of `arm32v7/haskell:8.2.2` & `arm32v7/haskell:8.4.3`) to avoid the default behavior of bootstrapping a new GHC in the container.
 
 # License
 

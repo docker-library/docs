@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v7` builds of [the `thrift` official image](https://hub.docker.com/_/thrift) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # **DEPRECATION NOTICE**
 
 This image is deprecated due to inactivity (last updated Feb 2019; [docker-library/official-images#5411](https://github.com/docker-library/official-images/pull/5411)).
@@ -30,10 +32,9 @@ There is a useful discussion in [ahawkins/docker-thrift#12](https://github.com/a
 
 # Supported tags and respective `Dockerfile` links
 
--	[`0.9`, `0.9.3`](https://github.com/ahawkins/docker-thrift/blob/d322572f7dd6ea468a14a4d832fbec26f152c71e/0.9/Dockerfile)
--	[`0.10`, `0.10.0`](https://github.com/ahawkins/docker-thrift/blob/e1f81dfe3e8fac5588e12d2b880166d1743dbecd/0.10/Dockerfile)
--	[`0.11`, `0.11.0`](https://github.com/ahawkins/docker-thrift/blob/00e197d889426695446baec4e034b5ddbb15bcb3/0.11/Dockerfile)
--	[`0.12`, `0.12.0`, `latest`](https://github.com/ahawkins/docker-thrift/blob/d7e73876549d205898b1922bcbf69e74ef11c288/0.12/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v7` ARCHITECTURE
+
+[![arm32v7/thrift build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/thrift.svg?label=arm32v7/thrift%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/thrift/)
 
 # Quick reference (cont.)
 
@@ -65,7 +66,7 @@ Read more about [Thrift](https://thrift.apache.org).
 This is image is intended to run as an executable. Files are provided by mounting a directory. Here's an example of compiling `service.thrift` to ruby to the current directory.
 
 ```console
-$ docker run -v "$PWD:/data" thrift thrift -o /data --gen rb /data/service.thrift
+$ docker run -v "$PWD:/data" arm32v7/thrift thrift -o /data --gen rb /data/service.thrift
 ```
 
 Note, that you may want to include `-u $(id -u)` to set the UID on generated files. The thrift process runs as root by default which will generate root owned files depending on your docker setup.

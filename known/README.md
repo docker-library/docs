@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v7` builds of [the `known` official image](https://hub.docker.com/_/known) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # **DEPRECATION NOTICE**
 
 This image is deprecated due to inactivity (last updated Aug 2018; [docker-library/official-images#4670](https://github.com/docker-library/official-images/pull/4670)).
@@ -28,7 +30,9 @@ This image is deprecated due to inactivity (last updated Aug 2018; [docker-libra
 
 # Supported tags and respective `Dockerfile` links
 
--	[`0.9.9`, `0.9`, `0`, `latest`](https://github.com/idno/Known-Docker/blob/3454a52b4ad48e22b95e706dba9ff953cf84c2b1/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v7` ARCHITECTURE
+
+[![arm32v7/known build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/known.svg?label=arm32v7/known%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/known/)
 
 # Quick reference (cont.)
 
@@ -60,7 +64,7 @@ Known is a social publishing platform. Publish on your own site, reach your audi
 # How to use this image
 
 ```bash
-docker run --link some-mysql:db -d known
+docker run --link some-mysql:db -d arm32v7/known
 ```
 
 Now you can get access to fpm running on port 9000 inside the container. If you want to access it from the Internets, we recommend using a reverse proxy in front. You can find more information on that on the [docker-compose](#docker-compose) section.
