@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm64v8` builds of [the `crux` official image](https://hub.docker.com/_/crux) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # **DEPRECATION NOTICE**
 
 This image is deprecated due to maintainer inactivity (last updated Nov 2018; [docker-library/official-images#5073](https://github.com/docker-library/official-images/pull/5073)).
@@ -30,8 +32,10 @@ See [docker-library/official-images#7130](https://github.com/docker-library/offi
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.4`, `latest`](https://github.com/cruxlinux/docker-crux/blob/da081a9004c5559cd77a1e2c2521193ccb2afdd2/Dockerfile)
--	[`3.2`](https://github.com/cruxlinux/docker-crux/blob/07e966125ba3d6d48a12489830917e8a9bc983a7/Dockerfile)
+-	[`3.4`, `latest`](https://github.com/cruxlinux/docker-crux/blob/9e26df864d2329a493b30b716ed36314509f0273/Dockerfile)
+-	[`3.2`](https://github.com/cruxlinux/docker-crux/blob/bd3c44a73d37dc57b3295a3793cb7a6c544bc428/Dockerfile)
+
+[![arm64v8/crux build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/crux.svg?label=arm64v8/crux%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/crux/)
 
 # Quick reference (cont.)
 
