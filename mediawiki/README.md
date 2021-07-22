@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `mips64le` builds of [the `mediawiki` official image](https://hub.docker.com/_/mediawiki) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,15 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.36.1`, `1.36`, `stable`, `latest`](https://github.com/wikimedia/mediawiki-docker/blob/51105612d2e1168f1b0545f47951847d63fb9613/1.36/apache/Dockerfile)
--	[`1.36.1-fpm`, `1.36-fpm`, `stable-fpm`](https://github.com/wikimedia/mediawiki-docker/blob/51105612d2e1168f1b0545f47951847d63fb9613/1.36/fpm/Dockerfile)
--	[`1.36.1-fpm-alpine`, `1.36-fpm-alpine`, `stable-fpm-alpine`](https://github.com/wikimedia/mediawiki-docker/blob/51105612d2e1168f1b0545f47951847d63fb9613/1.36/fpm-alpine/Dockerfile)
--	[`1.35.3`, `1.35`, `lts`, `legacy`](https://github.com/wikimedia/mediawiki-docker/blob/51105612d2e1168f1b0545f47951847d63fb9613/1.35/apache/Dockerfile)
--	[`1.35.3-fpm`, `1.35-fpm`, `lts-fpm`, `legacy-fpm`](https://github.com/wikimedia/mediawiki-docker/blob/51105612d2e1168f1b0545f47951847d63fb9613/1.35/fpm/Dockerfile)
--	[`1.35.3-fpm-alpine`, `1.35-fpm-alpine`, `lts-fpm-alpine`, `legacy-fpm-alpline`](https://github.com/wikimedia/mediawiki-docker/blob/51105612d2e1168f1b0545f47951847d63fb9613/1.35/fpm-alpine/Dockerfile)
--	[`1.31.15`, `1.31`, `legacylts`](https://github.com/wikimedia/mediawiki-docker/blob/51105612d2e1168f1b0545f47951847d63fb9613/1.31/apache/Dockerfile)
--	[`1.31.15-fpm`, `1.31-fpm`, `legacylts-fpm`](https://github.com/wikimedia/mediawiki-docker/blob/51105612d2e1168f1b0545f47951847d63fb9613/1.31/fpm/Dockerfile)
--	[`1.31.15-fpm-alpine`, `1.31-fpm-alpine`, `legacylts-fpm-alpine`](https://github.com/wikimedia/mediawiki-docker/blob/51105612d2e1168f1b0545f47951847d63fb9613/1.31/fpm-alpine/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `mips64le` ARCHITECTURE
+
+[![mips64le/mediawiki build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/mips64le/job/mediawiki.svg?label=mips64le/mediawiki%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/mips64le/job/mediawiki/)
 
 # Quick reference (cont.)
 
@@ -66,13 +62,13 @@ MediaWiki is free and open-source wiki software. Originally developed by Magnus 
 The basic pattern for starting a `mediawiki` instance is:
 
 ```console
-$ docker run --name some-mediawiki -d mediawiki
+$ docker run --name some-mediawiki -d mips64le/mediawiki
 ```
 
 If you'd like to be able to access the instance from the host without the container's IP, standard port mappings can be used:
 
 ```console
-$ docker run --name some-mediawiki -p 8080:80 -d mediawiki
+$ docker run --name some-mediawiki -p 8080:80 -d mips64le/mediawiki
 ```
 
 Then, access it via `http://localhost:8080` or `http://host-ip:8080` in a browser.
@@ -84,7 +80,7 @@ When first accessing the webserver provided by this image, it will go through a 
 ## MySQL
 
 ```console
-$ docker run --name some-mediawiki --link some-mysql:mysql -d mediawiki
+$ docker run --name some-mediawiki --link some-mysql:mysql -d mips64le/mediawiki
 ```
 
 -	Database type: `MySQL, MariaDB, or equivalent`
@@ -98,7 +94,7 @@ By default, this image does not include any volumes.
 The paths `/var/www/html/images` and `/var/www/html/LocalSettings.php` are things that generally ought to be volumes, but do not explicitly have a `VOLUME` declaration in this image because volumes cannot be removed.
 
 ```console
-$ docker run --rm mediawiki tar -cC /var/www/html/sites . | tar -xC /path/on/host/sites
+$ docker run --rm mips64le/mediawiki tar -cC /var/www/html/sites . | tar -xC /path/on/host/sites
 ```
 
 ## ... via [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/) or [`docker-compose`](https://github.com/docker/compose)
@@ -149,22 +145,6 @@ If you need additional PHP extensions, you'll need to create your own image `FRO
 The following Docker Hub features can help with the task of keeping your dependent images up-to-date:
 
 -	[Automated Builds](https://docs.docker.com/docker-hub/builds/) let Docker Hub automatically build your Dockerfile each time you push changes to it.
-
-# Image Variants
-
-The `mediawiki` images come in many flavors, each designed for a specific use case.
-
-## `mediawiki:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-## `mediawiki:<version>-alpine`
-
-This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
-
-This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
-
-To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 # License
 

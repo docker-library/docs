@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `mips64le` builds of [the `plone` official image](https://hub.docker.com/_/plone) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,10 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.2.4-python38`, `5.2-python38`, `5-python38`, `python38`, `5.2.4`, `5.2`, `5`, `latest`](https://github.com/plone/plone.docker/blob/a516871e08532c8a343f9e9e713c8abc8d80aae6/5.2/5.2.4/debian/Dockerfile)
--	[`5.2.4-python37`, `5.2-python37`, `5-python37`, `python37`](https://github.com/plone/plone.docker/blob/a516871e08532c8a343f9e9e713c8abc8d80aae6/5.2/5.2.4/python37/Dockerfile)
--	[`5.2.4-python36`, `5.2-python36`, `5-python36`, `python36`](https://github.com/plone/plone.docker/blob/a516871e08532c8a343f9e9e713c8abc8d80aae6/5.2/5.2.4/python36/Dockerfile)
--	[`5.2.4-alpine`, `5.2-alpine`, `5-alpine`, `alpine`](https://github.com/plone/plone.docker/blob/a516871e08532c8a343f9e9e713c8abc8d80aae6/5.2/5.2.4/alpine/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `mips64le` ARCHITECTURE
+
+[![mips64le/plone build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/mips64le/job/plone.svg?label=mips64le/plone%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/mips64le/job/plone/)
 
 # Quick reference (cont.)
 
@@ -69,7 +70,7 @@ WARNING:
 This will download and start the latest Plone 5 container, based on [Debian](https://www.debian.org/).
 
 ```console
-$ docker run -p 8080:8080 plone
+$ docker run -p 8080:8080 mips64le/plone
 ```
 
 This image includes `EXPOSE 8080` (the Plone port), so standard container linking will make it automatically available to the linked containers. Now you can add a Plone Site at http://localhost:8080 - default Zope user and password are `admin/admin`.
@@ -81,14 +82,14 @@ ZEO cluster are best suited for production setups, you will **need** a loadbalan
 Start ZEO server in the background
 
 ```console
-$ docker run --name=zeo plone zeo
+$ docker run --name=zeo mips64le/plone zeo
 ```
 
 Start 2 Plone clients (also in the background)
 
 ```console
-$ docker run --link=zeo -e ZEO_ADDRESS=zeo:8080 -p 8081:8080 plone
-$ docker run --link=zeo -e ZEO_ADDRESS=zeo:8080 -p 8082:8080 plone
+$ docker run --link=zeo -e ZEO_ADDRESS=zeo:8080 -p 8081:8080 mips64le/plone
+$ docker run --link=zeo -e ZEO_ADDRESS=zeo:8080 -p 8082:8080 mips64le/plone
 ```
 
 ### Start Plone in debug mode
@@ -96,7 +97,7 @@ $ docker run --link=zeo -e ZEO_ADDRESS=zeo:8080 -p 8082:8080 plone
 You can also start Plone in debug mode (`fg`) by running
 
 ```console
-$ docker run -p 8080:8080 plone fg
+$ docker run -p 8080:8080 mips64le/plone fg
 ```
 
 ### Add-ons
@@ -104,7 +105,7 @@ $ docker run -p 8080:8080 plone fg
 You can enable Plone add-ons via the `ADDONS` environment variable
 
 ```console
-$ docker run -p 8080:8080 -e PLONE_ADDONS="eea.facetednavigation Products.PloneFormGen" plone
+$ docker run -p 8080:8080 -e PLONE_ADDONS="eea.facetednavigation Products.PloneFormGen" mips64le/plone
 ```
 
 For more information on how to extend this image with your own custom settings, adding more add-ons, building it or mounting volumes, please refer to our [documentation](https://docs.plone.org/manage/docker/docs/index.html)
@@ -123,7 +124,7 @@ The Plone image uses several environment variable that allow to specify a more s
 Run Plone and install two addons (eea.facetednavigation and collective.easyform)
 
 ```console
-$ docker run -p 8080:8080 -e SITE="mysite" -e ADDONS="eea.facetednavigation collective.easyform" plone
+$ docker run -p 8080:8080 -e SITE="mysite" -e ADDONS="eea.facetednavigation collective.easyform" mips64le/plone
 ```
 
 To use specific add-ons versions:
@@ -136,7 +137,7 @@ To use specific add-ons versions:
 RestAPI:
 
 ```console
-$ docker run -p 8080:8080 -e SITE=plone plone
+$ docker run -p 8080:8080 -e SITE=plone mips64le/plone
 
 $ curl -H 'Accept: application/json' http://localhost:8080/plone
 ```
@@ -189,22 +190,6 @@ All other available environment variables match exactly with RelStorage settings
 ## Documentation
 
 Full documentation for end users can be found online at [docs.plone.org](https://docs.plone.org/manage/docker/docs/usage/index.html)
-
-# Image Variants
-
-The `plone` images come in many flavors, each designed for a specific use case.
-
-## `plone:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-## `plone:<version>-alpine`
-
-This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
-
-This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
-
-To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 # License
 

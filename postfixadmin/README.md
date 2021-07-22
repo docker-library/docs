@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `mips64le` builds of [the `postfixadmin` official image](https://hub.docker.com/_/postfixadmin) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -26,7 +28,8 @@ WARNING:
 
 -	[`3.3.9-apache`, `3.3-apache`, `3-apache`, `apache`, `3.3.9`, `3.3`, `3`, `latest`](https://github.com/postfixadmin/docker/blob/1b677083c85185c721ada312307150ac242e6103/apache/Dockerfile)
 -	[`3.3.9-fpm`, `3.3-fpm`, `3-fpm`, `fpm`](https://github.com/postfixadmin/docker/blob/1b677083c85185c721ada312307150ac242e6103/fpm/Dockerfile)
--	[`3.3.9-fpm-alpine`, `3.3-fpm-alpine`, `3-fpm-alpine`, `fpm-alpine`](https://github.com/postfixadmin/docker/blob/1b677083c85185c721ada312307150ac242e6103/fpm-alpine/Dockerfile)
+
+[![mips64le/postfixadmin build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/mips64le/job/postfixadmin.svg?label=mips64le/postfixadmin%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/mips64le/job/postfixadmin/)
 
 # Quick reference (cont.)
 
@@ -66,7 +69,7 @@ $ docker run -e POSTFIXADMIN_DB_TYPE=mysqli \
            -e POSTFIXADMIN_DB_PASSWORD=topsecret \
            -e POSTFIXADMIN_DB_NAME=postfixadmin \
            --name some-postfixadmin \
-        postfixadmin
+        mips64le/postfixadmin
 ```
 
 `POSTFIXADMIN_DB_TYPE` can be one of :
@@ -89,7 +92,7 @@ $ docker run -e POSTFIXADMIN_DB_TYPE=mysqli \
            -e POSTFIXADMIN_DB_NAME=postfixadmin \
            --name some-postfixadmin \
            -p 8080:80
-        postfixadmin
+        mips64le/postfixadmin
 ```
 
 Then, access it via `http://localhost:8080` or `http://host-ip:8080` in a browser.
@@ -100,7 +103,7 @@ Then, access it via `http://localhost:8080` or `http://host-ip:8080` in a browse
 $ docker run -v /local/path/to/config.local.php:/var/www/html/config.local.php \
            --name some-postfixadmin \
            -p 8080:80 \
-        postfixadmin
+        mips64le/postfixadmin
 ```
 
 ... via [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/) or [`docker-compose`](https://github.com/docker/compose)
@@ -141,9 +144,9 @@ Run docker stack deploy -c stack.yml postfixadmin (or docker-compose -f stack.ym
 
 # Image Variants
 
-The `postfixadmin` images come in many flavors, each designed for a specific use case.
+The `mips64le/postfixadmin` images come in many flavors, each designed for a specific use case.
 
-## `postfixadmin:<version>`
+## `mips64le/postfixadmin:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
@@ -154,10 +157,6 @@ This starts an Apache webserver with PHP, so you can use `postfixadmin` out of t
 ### fpm
 
 This image starts only a PHP FPM container. Use this variant if you already have a seperate webserver.
-
-### fpm-alpine
-
-This image has a very small footprint. It is based on Alpine Linux and starts only a PHP FPM process. Use this variant if you already have a seperate webserver. If you need more tools, that are not available on Alpine Linux, use the `fpm` image instead.
 
 # License
 

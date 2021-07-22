@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `mips64le` builds of [the `gradle` official image](https://hub.docker.com/_/gradle) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,26 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.1.1-jdk8`, `7.1.1-jdk8-hotspot`, `7.1-jdk8`, `7.1-jdk8-hotspot`, `7-jdk8`, `7-jdk8-hotspot`, `jdk8`, `jdk8-hotspot`, `7.1.1-jdk`, `7.1.1-jdk-hotspot`, `7.1-jdk`, `7.1-jdk-hotspot`, `7-jdk`, `7-jdk-hotspot`, `jdk`, `jdk-hotspot`, `7.1.1`, `7.1.1-hotspot`, `7.1`, `7.1-hotspot`, `7`, `7-hotspot`, `latest`, `hotspot`](https://github.com/keeganwitt/docker-gradle/blob/e1e5d8d814938022d495bf76d74ebc945412eb0a/hotspot/jdk8/Dockerfile)
--	[`7.1.1-jre8`, `7.1.1-jre8-hotspot`, `7.1-jre8`, `7.1-jre8-hotspot`, `7-jre8`, `7-jre8-hotspot`, `jre8`, `jre8-hotspot`, `7.1.1-jre`, `7.1.1-jre-hotspot`, `7.1-jre`, `7.1-jre-hotspot`, `7-jre`, `7-jre-hotspot`, `jre`, `jre-hotspot`](https://github.com/keeganwitt/docker-gradle/blob/e1e5d8d814938022d495bf76d74ebc945412eb0a/hotspot/jre8/Dockerfile)
--	[`7.1.1-jdk11`, `7.1.1-jdk11-hotspot`, `7.1-jdk11`, `7.1-jdk11-hotspot`, `7-jdk11`, `7-jdk11-hotspot`, `jdk11`, `jdk11-hotspot`](https://github.com/keeganwitt/docker-gradle/blob/e1e5d8d814938022d495bf76d74ebc945412eb0a/hotspot/jdk11/Dockerfile)
--	[`7.1.1-jre11`, `7.1.1-jre11-hotspot`, `7.1-jre11`, `7.1-jre11-hotspot`, `7-jre11`, `7-jre11-hotspot`, `jre11`, `jre11-hotspot`](https://github.com/keeganwitt/docker-gradle/blob/e1e5d8d814938022d495bf76d74ebc945412eb0a/hotspot/jre11/Dockerfile)
--	[`7.1.1-jdk16`, `7.1.1-jdk16-hotspot`, `7.1-jdk16`, `7.1-jdk16-hotspot`, `7-jdk16`, `7-jdk16-hotspot`, `jdk16`, `jdk16-hotspot`](https://github.com/keeganwitt/docker-gradle/blob/e1e5d8d814938022d495bf76d74ebc945412eb0a/hotspot/jdk16/Dockerfile)
--	[`7.1.1-jre16`, `7.1.1-jre16-hotspot`, `7.1-jre16`, `7.1-jre16-hotspot`, `7-jre16`, `7-jre16-hotspot`, `jre16`, `jre16-hotspot`](https://github.com/keeganwitt/docker-gradle/blob/e1e5d8d814938022d495bf76d74ebc945412eb0a/hotspot/jre16/Dockerfile)
--	[`7.1.1-jdk8-openj9`, `7.1-jdk8-openj9`, `7-jdk8-openj9`, `jdk8-openj9`, `7.1.1-jdk-openj9`, `7.1-jdk-openj9`, `7-jdk-openj9`, `jdk-openj9`, `7.1.1-openj9`, `7.1-openj9`, `7-openj9`, `openj9`](https://github.com/keeganwitt/docker-gradle/blob/e1e5d8d814938022d495bf76d74ebc945412eb0a/openj9/jdk8/Dockerfile)
--	[`7.1.1-jre8-openj9`, `7.1-jre8-openj9`, `7-jre8-openj9`, `jre8-openj9`, `7.1.1-jre-openj9`, `7.1-jre-openj9`, `7-jre-openj9`, `jre-openj9`](https://github.com/keeganwitt/docker-gradle/blob/e1e5d8d814938022d495bf76d74ebc945412eb0a/openj9/jre8/Dockerfile)
--	[`7.1.1-jdk11-openj9`, `7.1-jdk11-openj9`, `7-jdk11-openj9`, `jdk11-openj9`](https://github.com/keeganwitt/docker-gradle/blob/e1e5d8d814938022d495bf76d74ebc945412eb0a/openj9/jdk11/Dockerfile)
--	[`7.1.1-jre11-openj9`, `7.1-jre11-openj9`, `7-jre11-openj9`, `jre11-openj9`](https://github.com/keeganwitt/docker-gradle/blob/e1e5d8d814938022d495bf76d74ebc945412eb0a/openj9/jre11/Dockerfile)
--	[`7.1.1-jdk16-openj9`, `7.1-jdk16-openj9`, `7-jdk16-openj9`, `jdk16-openj9`](https://github.com/keeganwitt/docker-gradle/blob/e1e5d8d814938022d495bf76d74ebc945412eb0a/openj9/jdk16/Dockerfile)
--	[`7.1.1-jre16-openj9`, `7.1-jre16-openj9`, `7-jre16-openj9`, `jre16-openj9`](https://github.com/keeganwitt/docker-gradle/blob/e1e5d8d814938022d495bf76d74ebc945412eb0a/openj9/jre16/Dockerfile)
--	[`6.9.0-jdk8`, `6.9.0-jdk8-hotspot`, `6.9-jdk8`, `6.9-jdk8-hotspot`, `6-jdk8`, `6-jdk8-hotspot`, `6.9.0-jdk`, `6.9.0-jdk-hotspot`, `6.9-jdk`, `6.9-jdk-hotspot`, `6-jdk`, `6-jdk-hotspot`, `6.9.0`, `6.9.0-hotspot`, `6.9`, `6.9-hotspot`, `6`, `6-hotspot`](https://github.com/keeganwitt/docker-gradle/blob/337ce758ae6c3b0c6ebe2e00f5eef2743d34c165/hotspot/jdk8/Dockerfile)
--	[`6.9.0-jre8`, `6.9.0-jre8-hotspot`, `6.9-jre8`, `6.9-jre8-hotspot`, `6-jre8`, `6-jre8-hotspot`, `6.9.0-jre`, `6.9.0-jre-hotspot`, `6.9-jre`, `6.9-jre-hotspot`, `6-jre`, `6-jre-hotspot`](https://github.com/keeganwitt/docker-gradle/blob/337ce758ae6c3b0c6ebe2e00f5eef2743d34c165/hotspot/jre8/Dockerfile)
--	[`6.9.0-jdk11`, `6.9.0-jdk11-hotspot`, `6.9-jdk11`, `6.9-jdk11-hotspot`, `6-jdk11`, `6-jdk11-hotspot`](https://github.com/keeganwitt/docker-gradle/blob/337ce758ae6c3b0c6ebe2e00f5eef2743d34c165/hotspot/jdk11/Dockerfile)
--	[`6.9.0-jre11`, `6.9.0-jre11-hotspot`, `6.9-jre11`, `6.9-jre11-hotspot`, `6-jre11`, `6-jre11-hotspot`](https://github.com/keeganwitt/docker-gradle/blob/337ce758ae6c3b0c6ebe2e00f5eef2743d34c165/hotspot/jre11/Dockerfile)
--	[`6.9.0-jdk8-openj9`, `6.9-jdk8-openj9`, `6-jdk8-openj9`, `6.9.0-jdk-openj9`, `6.9-jdk-openj9`, `6-jdk-openj9`, `6.9.0-openj9`, `6.9-openj9`, `6-openj9`](https://github.com/keeganwitt/docker-gradle/blob/337ce758ae6c3b0c6ebe2e00f5eef2743d34c165/openj9/jdk8/Dockerfile)
--	[`6.9.0-jre8-openj9`, `6.9-jre8-openj9`, `6-jre8-openj9`, `6.9.0-jre-openj9`, `6.9-jre-openj9`, `6-jre-openj9`](https://github.com/keeganwitt/docker-gradle/blob/337ce758ae6c3b0c6ebe2e00f5eef2743d34c165/openj9/jre8/Dockerfile)
--	[`6.9.0-jdk11-openj9`, `6.9-jdk11-openj9`, `6-jdk11-openj9`](https://github.com/keeganwitt/docker-gradle/blob/337ce758ae6c3b0c6ebe2e00f5eef2743d34c165/openj9/jdk11/Dockerfile)
--	[`6.9.0-jre11-openj9`, `6.9-jre11-openj9`, `6-jre11-openj9`](https://github.com/keeganwitt/docker-gradle/blob/337ce758ae6c3b0c6ebe2e00f5eef2743d34c165/openj9/jre11/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `mips64le` ARCHITECTURE
+
+[![mips64le/gradle build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/mips64le/job/gradle.svg?label=mips64le/gradle%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/mips64le/job/gradle/)
 
 # Quick reference (cont.)
 
@@ -76,7 +61,7 @@ WARNING:
 
 Run this from the directory of the Gradle project you want to build.
 
-`docker run --rm -u gradle -v "$PWD":/home/gradle/project -w /home/gradle/project gradle gradle <gradle-task>`
+`docker run --rm -u gradle -v "$PWD":/home/gradle/project -w /home/gradle/project mips64le/gradle gradle <gradle-task>`
 
 Note the above command runs using uid/gid 1000 (user *gradle*) to avoid running as root.
 

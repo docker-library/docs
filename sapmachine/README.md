@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `mips64le` builds of [the `sapmachine` official image](https://hub.docker.com/_/sapmachine) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,8 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`16`, `16.0.1`, `latest`](https://github.com/SAP/SapMachine-infrastructure/blob/0449b4147caed3eb6fcf46ef3301d12af13e819a/dockerfiles/official/stable/Dockerfile)
--	[`11`, `11.0.11`, `lts`](https://github.com/SAP/SapMachine-infrastructure/blob/ee2eebb7494ba8ba3a18e43be50aac47913c310a/dockerfiles/official/lts/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `mips64le` ARCHITECTURE
+
+[![mips64le/sapmachine build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/mips64le/job/sapmachine.svg?label=mips64le/sapmachine%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/mips64le/job/sapmachine/)
 
 # Quick reference (cont.)
 
@@ -63,14 +66,14 @@ Java and all Java-based trademarks and logos are trademarks or registered tradem
 You can pull and test the image with the following commands:
 
 ```console
-docker pull sapmachine:latest
-docker run -it sapmachine:latest java -version
+docker pull mips64le/sapmachine:latest
+docker run -it mips64le/sapmachine:latest java -version
 ```
 
 You can also use the SapMachine image as a base image to run your own jar file:
 
 ```dockerfile
-FROM sapmachine:latest
+FROM mips64le/sapmachine:latest
 RUN mkdir /opt/myapp
 COPY myapp.jar /opt/myapp
 CMD ["java", "-jar", "/opt/myapp/myapp.jar"]

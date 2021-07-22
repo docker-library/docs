@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `mips64le` builds of [the `percona` official image](https://hub.docker.com/_/percona) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,13 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.0.25-15-centos`, `8.0-centos`, `8-centos`, `8.0.25-15`, `8.0`, `8`, `ps-8.0.25-15`, `ps-8.0`, `ps-8`](https://github.com/percona/percona-docker/blob/12d09e9d5c80b83e65f345b1ae65f25d13c2abfd/percona-server-8.0/Dockerfile)
--	[`5.7.34-centos`, `5.7-centos`, `5-centos`, `centos`, `5.7.34`, `5.7`, `5`, `ps-5.7.34`, `ps-5.7`, `ps-5`, `latest`](https://github.com/percona/percona-docker/blob/5e8402df063be2a8174bedff478391dbc881ff2b/percona-server-5.7/Dockerfile-dockerhub)
--	[`5.6.51-centos`, `5.6-centos`, `5.6.51`, `5.6`, `ps-5.6.51`, `ps-5.6`](https://github.com/percona/percona-docker/blob/f31a00a8b59ee17f9305403b109fd1eb50256493/percona-server-5.6/Dockerfile-dockerhub)
--	[`psmdb-4.4.6`, `psmdb-4.4`](https://github.com/percona/percona-docker/blob/c6c38e717a00144f7ee7faa488741b6ea60235cc/percona-server-mongodb-4.4/Dockerfile)
--	[`psmdb-4.2.14`, `psmdb-4.2`](https://github.com/percona/percona-docker/blob/5a7b7589afe005db9e296ebb2970225b5d5eb926/percona-server-mongodb-4.2/Dockerfile)
--	[`psmdb-4.0.25`, `psmdb-4.0`](https://github.com/percona/percona-docker/blob/9e19345b462f76e908b5c9b2c5ffdbc4fb9dd65d/percona-server-mongodb-4.0/Dockerfile)
--	[`psmdb-3.6.23`, `psmdb-3.6`](https://github.com/percona/percona-docker/blob/b32c7e632fe0d8b058ce32c0430a1783cfd557a0/percona-server-mongodb-3.6/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `mips64le` ARCHITECTURE
+
+[![mips64le/percona build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/mips64le/job/percona.svg?label=mips64le/percona%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/mips64le/job/percona/)
 
 # Quick reference (cont.)
 
@@ -65,30 +63,30 @@ It aims to retain close compatibility to the official MySQL releases, while focu
 
 # How to use this image
 
-## Start a `percona` server instance
+## Start a `mips64le/percona` server instance
 
 Starting a Percona Server for MySQL instance is simple:
 
 ```console
-$ docker run --name some-percona -e MYSQL_ROOT_PASSWORD=my-secret-pw -d percona:tag
+$ docker run --name some-percona -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mips64le/percona:tag
 ```
 
 ... where `some-percona` is the name you want to assign to your container, `my-secret-pw` is the password to be set for the MySQL root user and `tag` is the tag specifying the MySQL version you want. See the list above for relevant tags.
 
 ## Connect to Percona Server from the MySQL command line client
 
-The following command starts another `percona` container instance and runs the `mysql` command line client against your original `percona` container, allowing you to execute SQL statements against your database instance:
+The following command starts another `mips64le/percona` container instance and runs the `mysql` command line client against your original `mips64le/percona` container, allowing you to execute SQL statements against your database instance:
 
 ```console
-$ docker run -it --network some-network --rm percona mysql -hsome-percona -uexample-user -p
+$ docker run -it --network some-network --rm mips64le/percona mysql -hsome-percona -uexample-user -p
 ```
 
-... where `some-percona` is the name of your original `percona` container (connected to the `some-network` Docker network).
+... where `some-percona` is the name of your original `mips64le/percona` container (connected to the `some-network` Docker network).
 
 This image can also be used as a client for non-Docker or remote instances:
 
 ```console
-$ docker run -it --rm percona mysql -hsome.mysql.host -usome-mysql-user -p
+$ docker run -it --rm mips64le/percona mysql -hsome.mysql.host -usome-mysql-user -p
 ```
 
 More information about the MySQL command line client can be found in the [MySQL documentation](http://dev.mysql.com/doc/en/mysql.html)
@@ -122,7 +120,7 @@ Run `docker stack deploy -c stack.yml percona` (or `docker-compose -f stack.yml 
 
 ## Container shell access and viewing MySQL logs
 
-The `docker exec` command allows you to run commands inside a Docker container. The following command line will give you a bash shell inside your `percona` container:
+The `docker exec` command allows you to run commands inside a Docker container. The following command line will give you a bash shell inside your `mips64le/percona` container:
 
 ```console
 $ docker exec -it some-percona bash
@@ -136,12 +134,12 @@ $ docker logs some-percona
 
 ## Using a custom MySQL configuration file
 
-The startup configuration is specified in the file `/etc/my.cnf`, and that file in turn includes any files found in the `/etc/my.cnf.d` directory that end with `.cnf`. Settings in files in this directory will augment and/or override settings in `/etc/my.cnf`. If you want to use a customized MySQL configuration, you can create your alternative configuration file in a directory on the host machine and then mount that directory location as `/etc/my.cnf.d` inside the `percona` container.
+The startup configuration is specified in the file `/etc/my.cnf`, and that file in turn includes any files found in the `/etc/my.cnf.d` directory that end with `.cnf`. Settings in files in this directory will augment and/or override settings in `/etc/my.cnf`. If you want to use a customized MySQL configuration, you can create your alternative configuration file in a directory on the host machine and then mount that directory location as `/etc/my.cnf.d` inside the `mips64le/percona` container.
 
-If `/my/custom/config-file.cnf` is the path and name of your custom configuration file, you can start your `percona` container like this (note that only the directory path of the custom config file is used in this command):
+If `/my/custom/config-file.cnf` is the path and name of your custom configuration file, you can start your `mips64le/percona` container like this (note that only the directory path of the custom config file is used in this command):
 
 ```console
-$ docker run --name some-percona -v /my/custom:/etc/my.cnf.d -e MYSQL_ROOT_PASSWORD=my-secret-pw -d percona:tag
+$ docker run --name some-percona -v /my/custom:/etc/my.cnf.d -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mips64le/percona:tag
 ```
 
 This will start a new container `some-percona` where the Percona Server for MySQL instance uses the combined startup settings from `/etc/my.cnf` and `/etc/my.cnf.d/config-file.cnf`, with settings from the latter taking precedence.
@@ -151,18 +149,18 @@ This will start a new container `some-percona` where the Percona Server for MySQ
 Many configuration options can be passed as flags to `mysqld`. This will give you the flexibility to customize the container without needing a `cnf` file. For example, if you want to change the default encoding and collation for all tables to use UTF-8 (`utf8mb4`) just run the following:
 
 ```console
-$ docker run --name some-percona -e MYSQL_ROOT_PASSWORD=my-secret-pw -d percona:tag --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+$ docker run --name some-percona -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mips64le/percona:tag --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
 ```
 
 If you would like to see a complete list of available options, just run:
 
 ```console
-$ docker run -it --rm percona:tag --verbose --help
+$ docker run -it --rm mips64le/percona:tag --verbose --help
 ```
 
 ## Environment Variables
 
-When you start the `percona` image, you can adjust the configuration of the instance by passing one or more environment variables on the `docker run` command line. Do note that none of the variables below will have any effect if you start the container with a data directory that already contains a database: any pre-existing database will always be left untouched on container startup.
+When you start the `mips64le/percona` image, you can adjust the configuration of the instance by passing one or more environment variables on the `docker run` command line. Do note that none of the variables below will have any effect if you start the container with a data directory that already contains a database: any pre-existing database will always be left untouched on container startup.
 
 ### `MYSQL_ROOT_PASSWORD`
 
@@ -211,20 +209,20 @@ Tuns on RocksDB Engine.
 As an alternative to passing sensitive information via environment variables, `_FILE` may be appended to the previously listed environment variables, causing the initialization script to load the values for those variables from files present in the container. In particular, this can be used to load passwords from Docker secrets stored in `/run/secrets/<secret_name>` files. For example:
 
 ```console
-$ docker run --name some-mysql -e MYSQL_ROOT_PASSWORD_FILE=/run/secrets/mysql-root -d percona:tag
+$ docker run --name some-mysql -e MYSQL_ROOT_PASSWORD_FILE=/run/secrets/mysql-root -d mips64le/percona:tag
 ```
 
 Currently, this is only supported for `MYSQL_ROOT_PASSWORD`, `MYSQL_ROOT_HOST`, `MYSQL_DATABASE`, `MYSQL_USER`, and `MYSQL_PASSWORD`.
 
 # Initializing a fresh instance
 
-When a container is started for the first time, a new database with the specified name will be created and initialized with the provided configuration variables. Furthermore, it will execute files with extensions `.sh`, `.sql` and `.sql.gz` that are found in `/docker-entrypoint-initdb.d`. Files will be executed in alphabetical order. You can easily populate your `percona` services by [mounting a SQL dump into that directory](https://docs.docker.com/engine/tutorials/dockervolumes/#mount-a-host-file-as-a-data-volume) and provide [custom images](https://docs.docker.com/reference/builder/) with contributed data. SQL files will be imported by default to the database specified by the `MYSQL_DATABASE` variable.
+When a container is started for the first time, a new database with the specified name will be created and initialized with the provided configuration variables. Furthermore, it will execute files with extensions `.sh`, `.sql` and `.sql.gz` that are found in `/docker-entrypoint-initdb.d`. Files will be executed in alphabetical order. You can easily populate your `mips64le/percona` services by [mounting a SQL dump into that directory](https://docs.docker.com/engine/tutorials/dockervolumes/#mount-a-host-file-as-a-data-volume) and provide [custom images](https://docs.docker.com/reference/builder/) with contributed data. SQL files will be imported by default to the database specified by the `MYSQL_DATABASE` variable.
 
 # Caveats
 
 ## Where to Store Data
 
-Important note: There are several ways to store data used by applications that run in Docker containers. We encourage users of the `percona` images to familiarize themselves with the options available, including:
+Important note: There are several ways to store data used by applications that run in Docker containers. We encourage users of the `mips64le/percona` images to familiarize themselves with the options available, including:
 
 -	Let Docker manage the storage of your database data [by writing the database files to disk on the host system using its own internal volume management](https://docs.docker.com/engine/tutorials/dockervolumes/#adding-a-data-volume). This is the default and is easy and fairly transparent to the user. The downside is that the files may be hard to locate for tools and applications that run directly on the host system, i.e. outside containers.
 -	Create a data directory on the host system (outside the container) and [mount this to a directory visible from inside the container](https://docs.docker.com/engine/tutorials/dockervolumes/#mount-a-host-directory-as-a-data-volume). This places the database files in a known location on the host system, and makes it easy for tools and applications on the host system to access the files. The downside is that the user needs to make sure that the directory exists, and that e.g. directory permissions and other security mechanisms on the host system are set up correctly.
@@ -232,10 +230,10 @@ Important note: There are several ways to store data used by applications that r
 The Docker documentation is a good starting point for understanding the different storage options and variations, and there are multiple blogs and forum postings that discuss and give advice in this area. We will simply show the basic procedure here for the latter option above:
 
 1.	Create a data directory on a suitable volume on your host system, e.g. `/my/own/datadir`.
-2.	Start your `percona` container like this:
+2.	Start your `mips64le/percona` container like this:
 
 	```console
-	$ docker run --name some-percona -v /my/own/datadir:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d percona:tag
+	$ docker run --name some-percona -v /my/own/datadir:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mips64le/percona:tag
 	```
 
 The `-v /my/own/datadir:/var/lib/mysql` part of the command mounts the `/my/own/datadir` directory from the underlying host system as `/var/lib/mysql` inside the container, where MySQL by default will write its data files.
@@ -248,7 +246,7 @@ If the application you're trying to connect to MySQL does not handle MySQL downt
 
 ## Usage against an existing database
 
-If you start your `percona` container instance with a data directory that already contains a database (specifically, a `mysql` subdirectory), the `$MYSQL_ROOT_PASSWORD` variable should be omitted from the run command line; it will in any case be ignored, and the pre-existing database will not be changed in any way.
+If you start your `mips64le/percona` container instance with a data directory that already contains a database (specifically, a `mysql` subdirectory), the `$MYSQL_ROOT_PASSWORD` variable should be omitted from the run command line; it will in any case be ignored, and the pre-existing database will not be changed in any way.
 
 ## Creating database dumps
 
