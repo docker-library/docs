@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `amd64` builds of [the `neo4j` official image](https://hub.docker.com/_/neo4j) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -119,6 +121,8 @@ WARNING:
 -	[`3.5.20`, `3.5.20-community`](https://github.com/neo4j/docker-neo4j-publish/blob/daf79c6d15e38b90b2b424da1168f4843c578362/3.5.20/community/Dockerfile)
 -	[`3.5.20-enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/daf79c6d15e38b90b2b424da1168f4843c578362/3.5.20/enterprise/Dockerfile)
 
+[![amd64/neo4j build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/amd64/job/neo4j.svg?label=amd64/neo4j%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/neo4j/)
+
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
@@ -152,7 +156,7 @@ You can start a Neo4j container like this:
 docker run \
     --publish=7474:7474 --publish=7687:7687 \
     --volume=$HOME/neo4j/data:/data \
-    neo4j
+    amd64/neo4j
 ```
 
 which allows you to access neo4j through your browser at [http://localhost:7474](http://localhost:7474).

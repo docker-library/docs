@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `amd64` builds of [the `ibmjava` official image](https://hub.docker.com/_/ibmjava) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -31,6 +33,8 @@ WARNING:
 -	[`8-sdk`, `sdk`](https://github.com/ibmruntimes/ci.docker/blob/7c222762aa948da43e76790a6996ff08ea12fcbf/ibmjava/8/sdk/ubuntu/Dockerfile)
 -	[`8-sdk-alpine`, `sdk-alpine`](https://github.com/ibmruntimes/ci.docker/blob/7c222762aa948da43e76790a6996ff08ea12fcbf/ibmjava/8/sdk/alpine/Dockerfile)
 -	[`11-jdk`, `11`](https://github.com/ibmruntimes/ci.docker/blob/7c222762aa948da43e76790a6996ff08ea12fcbf/ibmjava/11/jdk/ubuntu/Dockerfile)
+
+[![amd64/ibmjava build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/amd64/job/ibmjava.svg?label=amd64/ibmjava%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/ibmjava/)
 
 # Quick reference (cont.)
 
@@ -96,7 +100,7 @@ ibmjava now has multi-arch support and so the exact same commands as below works
 To run a pre-built jar file with the JRE image, use the following commands:
 
 ```dockerfile
-FROM ibmjava:jre
+FROM amd64/ibmjava:jre
 RUN mkdir /opt/app
 COPY japp.jar /opt/app
 CMD ["java", "-jar", "/opt/app/japp.jar"]
@@ -112,7 +116,7 @@ docker run -it --rm japp
 If you want to place the jar file on the host file system instead of inside the container, you can mount the host path onto the container by using the following commands:
 
 ```dockerfile
-FROM ibmjava:jre
+FROM amd64/ibmjava:jre
 CMD ["java", "-jar", "/opt/app/japp.jar"]
 ```
 
@@ -128,7 +132,7 @@ IBM SDK, Java Technology Edition provides a feature called [Class data sharing](
 To enable class data sharing between JVMs that are running in different containers on the same host, a common location must be shared between containers. This requirement can be satisfied through the host or a data volume container. When enabled, class data sharing creates a named "class cache", which is a memory-mapped file, at the common location. This feature is enabled by passing the `-Xshareclasses` option to the JVM as shown in the following Dockerfile example:
 
 ```dockerfile
-FROM ibmjava:jre
+FROM amd64/ibmjava:jre
 RUN mkdir /opt/shareclasses
 RUN mkdir /opt/app
 COPY japp.jar /opt/app
@@ -160,13 +164,13 @@ See the [Websphere-Liberty image](https://hub.docker.com/_/websphere-liberty/), 
 
 # Image Variants
 
-The `ibmjava` images come in many flavors, each designed for a specific use case.
+The `amd64/ibmjava` images come in many flavors, each designed for a specific use case.
 
-## `ibmjava:<version>`
+## `amd64/ibmjava:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `ibmjava:<version>-alpine`
+## `amd64/ibmjava:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 

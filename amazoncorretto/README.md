@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `amd64` builds of [the `amazoncorretto` official image](https://hub.docker.com/_/amazoncorretto) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -31,6 +33,8 @@ WARNING:
 -	[`11-alpine`, `11.0.12-alpine`, `11-alpine-full`, `11-alpine-jdk`](https://github.com/corretto/corretto-docker/blob/cb98621700a830682c8b3a50d74673a4838e37b2/11/jdk/alpine/Dockerfile)
 -	[`16`, `16.0.1`, `16.0.1-al2`, `16-al2-jdk`, `16-al2-full`](https://github.com/corretto/corretto-docker/blob/cb98621700a830682c8b3a50d74673a4838e37b2/16/jdk/al2/Dockerfile)
 -	[`16-alpine`, `16.0.1-alpine`, `16-alpine-full`, `16-alpine-jdk`](https://github.com/corretto/corretto-docker/blob/cb98621700a830682c8b3a50d74673a4838e37b2/16/jdk/alpine/Dockerfile)
+
+[![amd64/amazoncorretto build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/amd64/job/amazoncorretto.svg?label=amd64/amazoncorretto%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/amazoncorretto/)
 
 # Quick reference (cont.)
 
@@ -83,13 +87,13 @@ Corretto is designed as a drop-in replacement for all Java SE distributions unle
 
 # Image Variants
 
-The `amazoncorretto` images come in many flavors, each designed for a specific use case.
+The `amd64/amazoncorretto` images come in many flavors, each designed for a specific use case.
 
-## `amazoncorretto:<version>`
+## `amd64/amazoncorretto:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `amazoncorretto:<version>-alpine`
+## `amd64/amazoncorretto:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 

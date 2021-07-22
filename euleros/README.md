@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `amd64` builds of [the `euleros` official image](https://hub.docker.com/_/euleros) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -28,6 +30,8 @@ WARNING:
 -	[`2.3.1806`](https://github.com/euleros/euleros-docker-images/blob/e304245f74141e6e856a017c8d204c27300c1da8/2.3.1806/x86_64/Dockerfile)
 -	[`2.3.1803`](https://github.com/euleros/euleros-docker-images/blob/5afd15edcd49671adefb6dff87537f2943ae1107/2.3.1803/x86_64/Dockerfile)
 -	[`2.2`](https://github.com/euleros/euleros-docker-images/blob/959f378638f222bd1eebe8dccf267cccbc118174/2.2/Dockerfile)
+
+[![amd64/euleros build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/amd64/job/euleros.svg?label=amd64/euleros%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/euleros/)
 
 # Quick reference (cont.)
 

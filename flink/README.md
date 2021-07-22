@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `amd64` builds of [the `flink` official image](https://hub.docker.com/_/flink) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -32,6 +34,8 @@ WARNING:
 -	[`1.12.4-scala_2.12-java11`, `1.12-scala_2.12-java11`, `1.12.4-java11`, `1.12-java11`](https://github.com/apache/flink-docker/blob/f5cd9eccfa66c2460565a0427b5f1fdf2cbe0a94/1.12/scala_2.12-java11-debian/Dockerfile)
 -	[`1.12.4-scala_2.11-java8`, `1.12-scala_2.11-java8`, `1.12.4-scala_2.11`, `1.12-scala_2.11`](https://github.com/apache/flink-docker/blob/f5cd9eccfa66c2460565a0427b5f1fdf2cbe0a94/1.12/scala_2.11-java8-debian/Dockerfile)
 -	[`1.12.4-scala_2.11-java11`, `1.12-scala_2.11-java11`](https://github.com/apache/flink-docker/blob/f5cd9eccfa66c2460565a0427b5f1fdf2cbe0a94/1.12/scala_2.11-java11-debian/Dockerfile)
+
+[![amd64/flink build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/amd64/job/flink.svg?label=amd64/flink%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/flink/)
 
 # Quick reference (cont.)
 

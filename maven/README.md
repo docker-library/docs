@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `amd64` builds of [the `maven` official image](https://hub.docker.com/_/maven) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -49,6 +51,8 @@ WARNING:
 -	[`3.8.1-amazoncorretto-16`, `3.8-amazoncorretto-16`, `3-amazoncorretto-16`](https://github.com/carlossg/docker-maven/blob/b6352962a604bfffb21a535e0999c0292b68c1db/amazoncorretto-16/Dockerfile)
 -	[`3.8.1-amazoncorretto-8`, `3.8-amazoncorretto-8`, `3-amazoncorretto-8`](https://github.com/carlossg/docker-maven/blob/bdffb5117c33476d554325d8efe5866306004b99/amazoncorretto-8/Dockerfile)
 
+[![amd64/maven build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/amd64/job/maven.svg?label=amd64/maven%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/maven/)
+
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
@@ -79,7 +83,7 @@ WARNING:
 You can run a Maven project by using the Maven Docker image directly, passing a Maven command to `docker run`:
 
 ```console
-$ docker run -it --rm --name my-maven-project -v "$(pwd)":/usr/src/mymaven -w /usr/src/mymaven maven:3.3-jdk-8 mvn clean install
+$ docker run -it --rm --name my-maven-project -v "$(pwd)":/usr/src/mymaven -w /usr/src/mymaven amd64/maven:3.3-jdk-8 mvn clean install
 ```
 
 ## Building local Docker image (optional)
@@ -87,7 +91,7 @@ $ docker run -it --rm --name my-maven-project -v "$(pwd)":/usr/src/mymaven -w /u
 This is a base image that you can extend, so it has the bare minimum packages needed. If you add custom package(s) to the `Dockerfile`, then you can build your local Docker image like this:
 
 ```console
-$ docker build --tag my_local_maven:3.5.2-jdk-8 .
+$ docker build --tag my_local_amd64/maven:3.5.2-jdk-8 .
 ```
 
 # Reusing the Maven local repository
@@ -96,14 +100,14 @@ The local Maven repository can be reused across containers by creating a volume 
 
 ```console
 $ docker volume create --name maven-repo
-$ docker run -it -v maven-repo:/root/.m2 maven mvn archetype:generate # will download artifacts
-$ docker run -it -v maven-repo:/root/.m2 maven mvn archetype:generate # will reuse downloaded artifacts
+$ docker run -it -v maven-repo:/root/.m2 amd64/maven mvn archetype:generate # will download artifacts
+$ docker run -it -v maven-repo:/root/.m2 amd64/maven mvn archetype:generate # will reuse downloaded artifacts
 ```
 
 Or you can just use your home .m2 cache directory that you share e.g. with your Eclipse/IDEA:
 
 ```console
-$ docker run -it --rm -v "$PWD":/usr/src/mymaven -v "$HOME/.m2":/root/.m2 -v "$PWD/target:/usr/src/mymaven/target" -w /usr/src/mymaven maven mvn clean package  
+$ docker run -it --rm -v "$PWD":/usr/src/mymaven -v "$HOME/.m2":/root/.m2 -v "$PWD/target:/usr/src/mymaven/target" -w /usr/src/mymaven amd64/maven mvn clean package  
 ```
 
 # Packaging a local repository with the image
@@ -132,22 +136,22 @@ Maven needs the user home to download artifacts to, and if the user does not exi
 For example, to run as user `1000` mounting the host' Maven repo
 
 ```console
-$ docker run -v ~/.m2:/var/maven/.m2 -ti --rm -u 1000 -e MAVEN_CONFIG=/var/maven/.m2 maven mvn -Duser.home=/var/maven archetype:generate
+$ docker run -v ~/.m2:/var/maven/.m2 -ti --rm -u 1000 -e MAVEN_CONFIG=/var/maven/.m2 amd64/maven mvn -Duser.home=/var/maven archetype:generate
 ```
 
 # Image Variants
 
-The `maven` images come in many flavors, each designed for a specific use case.
+The `amd64/maven` images come in many flavors, each designed for a specific use case.
 
-## `maven:<version>`
+## `amd64/maven:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `maven:<version>-slim`
+## `amd64/maven:<version>-slim`
 
-This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `maven`. Unless you are working in an environment where *only* the `maven` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
+This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `amd64/maven`. Unless you are working in an environment where *only* the `amd64/maven` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
 
-## `maven:<version>-alpine`
+## `amd64/maven:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 

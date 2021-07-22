@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `amd64` builds of [the `tomcat` official image](https://hub.docker.com/_/tomcat) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -64,6 +66,8 @@ WARNING:
 -	[`8.5.69-jdk8-adoptopenjdk-openj9`, `8.5-jdk8-adoptopenjdk-openj9`, `8-jdk8-adoptopenjdk-openj9`](https://github.com/docker-library/tomcat/blob/5d3c61f9b67c160ac91308af5ab54cf2e258d96b/8.5/jdk8/adoptopenjdk-openj9/Dockerfile)
 -	[`8.5.69-jdk8-corretto`, `8.5-jdk8-corretto`, `8-jdk8-corretto`](https://github.com/docker-library/tomcat/blob/49003ad3b5056b4c4db17f802ac896f1863d6953/8.5/jdk8/corretto/Dockerfile)
 
+[![amd64/tomcat build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/amd64/job/tomcat.svg?label=amd64/tomcat%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/tomcat/)
+
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
@@ -98,13 +102,13 @@ Apache Tomcat (or simply Tomcat) is an open source web server and servlet contai
 Run the default Tomcat server (`CMD ["catalina.sh", "run"]`):
 
 ```console
-$ docker run -it --rm tomcat:9.0
+$ docker run -it --rm amd64/tomcat:9.0
 ```
 
 You can test it by visiting `http://container-ip:8080` in a browser or, if you need access outside the host, on port 8888:
 
 ```console
-$ docker run -it --rm -p 8888:8080 tomcat:9.0
+$ docker run -it --rm -p 8888:8080 amd64/tomcat:9.0
 ```
 
 You can then go to `http://localhost:8888` or `http://host-ip:8888` in a browser (noting that it will return a 404 since there are no webapps loaded by default).
@@ -121,17 +125,17 @@ The configuration files are available in `/usr/local/tomcat/conf/`. By default, 
 
 # Image Variants
 
-The `tomcat` images come in many flavors, each designed for a specific use case.
+The `amd64/tomcat` images come in many flavors, each designed for a specific use case.
 
-## `tomcat:<version>`
+## `amd64/tomcat:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
 Some of these tags may have names like buster in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
-## `tomcat:<version>-slim`
+## `amd64/tomcat:<version>-slim`
 
-This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `tomcat`. Unless you are working in an environment where *only* the `tomcat` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
+This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `amd64/tomcat`. Unless you are working in an environment where *only* the `amd64/tomcat` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
 
 # License
 

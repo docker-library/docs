@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `amd64` builds of [the `tomee` official image](https://hub.docker.com/_/tomee) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -39,6 +41,8 @@ WARNING:
 -	[`11-jre-8.0.6-plus`, `8.0.6-plus`](https://github.com/tomitribe/docker-tomee/blob/8386000695352af19583c50c5cea8b169def35b9/TomEE-8.0/jre11/plus/Dockerfile)
 -	[`11-jre-8.0.6-microprofile`, `8.0.6-microprofile`](https://github.com/tomitribe/docker-tomee/blob/8386000695352af19583c50c5cea8b169def35b9/TomEE-8.0/jre11/microprofile/Dockerfile)
 -	[`11-jre-8.0.6-webprofile`, `8.0.6-webprofile`, `latest`, `8`](https://github.com/tomitribe/docker-tomee/blob/8386000695352af19583c50c5cea8b169def35b9/TomEE-8.0/jre11/webprofile/Dockerfile)
+
+[![amd64/tomee build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/amd64/job/tomee.svg?label=amd64/tomee%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/tomee/)
 
 # Quick reference (cont.)
 
@@ -98,19 +102,19 @@ ManageCat is a cloud management and service platform for Apache Tomcat and Apach
 Run the default TomEE server (`CMD ["catalina.sh", "run"]`):
 
 ```console
-$ docker run -it --rm tomee:<java-version>\-<tomeeversion>\-<flavour>
+$ docker run -it --rm amd64/tomee:<java-version>\-<tomeeversion>\-<flavour>
 ```
 
 For example running Apache TomEE 1.7.2 with JRE 8 and Webprofile flavour will be:
 
 ```console
-$ docker run -it --rm tomee:8-jre-1.7.2-webprofile
+$ docker run -it --rm amd64/tomee:8-jre-1.7.2-webprofile
 ```
 
 You can test it by visiting `http://container-ip:8080` in a browser or, if you need access outside the host, on port 8888:
 
 ```console
-$ docker run -it --rm -p 8888:8080 tomee:<java-version>\-<tomeeversion>\-<flavour>
+$ docker run -it --rm -p 8888:8080 amd64/tomee:<java-version>\-<tomeeversion>\-<flavour>
 ```
 
 You can then go to `http://localhost:8888` or `http://host-ip:8888` in a browser.
