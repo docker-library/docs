@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `riscv64` builds of [the `varnish` official image](https://hub.docker.com/_/varnish) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,8 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.0`, `6.0.8-1`, `6.0.8`, `stable`](https://github.com/varnish/docker-varnish/blob/4cfd65e1d3bd4eb9518d8e7590d9fec1de6a50c4/stable/debian/Dockerfile)
--	[`6.6`, `6.6.1-1`, `6.6.1`, `6`, `latest`, `fresh`](https://github.com/varnish/docker-varnish/blob/4cfd65e1d3bd4eb9518d8e7590d9fec1de6a50c4/fresh/debian/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `riscv64` ARCHITECTURE
+
+[![riscv64/varnish build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/riscv64/job/varnish.svg?label=riscv64/varnish%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/riscv64/job/varnish/)
 
 # Quick reference (cont.)
 
@@ -73,13 +76,13 @@ Then run:
 ```console
 # we need both a configuration file at /etc/varnish/default.vcl
 # and our workdir to be mounted as tmpfs to avoid disk I/O
-$ docker run -v /path/to/default.vcl:/etc/varnish/default.vcl:ro --tmpfs /var/lib/varnish:exec varnish
+$ docker run -v /path/to/default.vcl:/etc/varnish/default.vcl:ro --tmpfs /var/lib/varnish:exec riscv64/varnish
 ```
 
 Alternatively, a simple `Dockerfile` can be used to generate a new image that includes the necessary `default.vcl` (which is a much cleaner solution than the bind mount above):
 
 ```dockerfile
-FROM varnish
+FROM riscv64/varnish
 
 COPY default.vcl /etc/varnish/
 ```
@@ -95,27 +98,27 @@ $ docker --tmpfs /var/lib/varnish:exec my-varnish
 By default, the containers will use a cache size of 100MB, which is usually a bit too small, but you can quickly set it through the `VARNISH_SIZE` environment variable:
 
 ```console
-$ docker run --tmpfs /var/lib/varnish:exec -e VARNISH_SIZE=2G varnish
+$ docker run --tmpfs /var/lib/varnish:exec -e VARNISH_SIZE=2G riscv64/varnish
 ```
 
-Additionally, you can add arguments to `docker run` affter `varnish`, if the first one starts with a `-`, they will be appendend to the [default command](https://github.com/varnish/docker-varnish/blob/master/docker-varnish-entrypoint#L8):
+Additionally, you can add arguments to `docker run` affter `riscv64/varnish`, if the first one starts with a `-`, they will be appendend to the [default command](https://github.com/varnish/docker-varnish/blob/master/docker-varnish-entrypoint#L8):
 
 ```console
 # extend the default keep period
-$ docker run --tmpfs /var/lib/varnish:exec -e VARNISH_SIZE=2G varnish -p default_keep=300
+$ docker run --tmpfs /var/lib/varnish:exec -e VARNISH_SIZE=2G riscv64/varnish -p default_keep=300
 ```
 
-If your first argument after `varnish` doesn't start with `-`, it will be interpreted as a command to override the default one:
+If your first argument after `riscv64/varnish` doesn't start with `-`, it will be interpreted as a command to override the default one:
 
 ```console
 # show the command-line options
-$ docker run varnish varnishd -?
+$ docker run riscv64/varnish varnishd -?
 
 # list parameters usable with -p
-$ docker run varnish varnishd -x parameter
+$ docker run riscv64/varnish varnishd -x parameter
 
 # run the server with your own parameters (don't forget -F to not daemonize)
-$ docker run varnish varnishd -a :8080 -b 127.0.0.1:8181 -t 600 -p feature=+http2
+$ docker run riscv64/varnish varnishd -a :8080 -b 127.0.0.1:8181 -t 600 -p feature=+http2
 ```
 
 ### Exposing the port

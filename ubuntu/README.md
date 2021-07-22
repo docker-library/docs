@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `riscv64` builds of [the `ubuntu` official image](https://hub.docker.com/_/ubuntu) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,13 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`18.04`, `bionic-20210702`, `bionic`](https://github.com/tianon/docker-brew-ubuntu-core/blob/50b110c15148c069706b155a60d21ecfcbb59de9/bionic/Dockerfile)
--	[`20.04`, `focal-20210713`, `focal`, `latest`](https://github.com/tianon/docker-brew-ubuntu-core/blob/50b110c15148c069706b155a60d21ecfcbb59de9/focal/Dockerfile)
--	[`20.10`, `groovy-20210713`, `groovy`](https://github.com/tianon/docker-brew-ubuntu-core/blob/50b110c15148c069706b155a60d21ecfcbb59de9/groovy/Dockerfile)
--	[`21.04`, `hirsute-20210711`, `hirsute`, `rolling`](https://github.com/tianon/docker-brew-ubuntu-core/blob/50b110c15148c069706b155a60d21ecfcbb59de9/hirsute/Dockerfile)
--	[`21.10`, `impish-20210711`, `impish`, `devel`](https://github.com/tianon/docker-brew-ubuntu-core/blob/50b110c15148c069706b155a60d21ecfcbb59de9/impish/Dockerfile)
--	[`14.04`, `trusty-20191217`, `trusty`](https://github.com/tianon/docker-brew-ubuntu-core/blob/50b110c15148c069706b155a60d21ecfcbb59de9/trusty/Dockerfile)
--	[`16.04`, `xenial-20210611`, `xenial`](https://github.com/tianon/docker-brew-ubuntu-core/blob/50b110c15148c069706b155a60d21ecfcbb59de9/xenial/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `riscv64` ARCHITECTURE
+
+[![riscv64/ubuntu build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/riscv64/job/ubuntu.svg?label=riscv64/ubuntu%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/riscv64/job/ubuntu/)
 
 # Quick reference (cont.)
 
@@ -65,9 +63,9 @@ Development of Ubuntu is led by Canonical Ltd. Canonical generates revenue throu
 
 This image is built from official rootfs tarballs provided by Canonical (specifically, https://partner-images.canonical.com/core/).
 
-The `ubuntu:latest` tag points to the "latest LTS", since that's the version recommended for general use. The `ubuntu:rolling` tag points to the latest release (regardless of LTS status).
+The `riscv64/ubuntu:latest` tag points to the "latest LTS", since that's the version recommended for general use. The `riscv64/ubuntu:rolling` tag points to the latest release (regardless of LTS status).
 
-Along a similar vein, the `ubuntu:devel` tag is an alias for whichever release the "devel" suite on the mirrors currently points to, as determined by the following one-liner: `wget -qO- http://archive.ubuntu.com/ubuntu/dists/devel/Release | awk -F ': ' '$1 == "Codename" { print $2; exit }'`
+Along a similar vein, the `riscv64/ubuntu:devel` tag is an alias for whichever release the "devel" suite on the mirrors currently points to, as determined by the following one-liner: `wget -qO- http://archive.ubuntu.com/ubuntu/dists/devel/Release | awk -F ': ' '$1 == "Codename" { print $2; exit }'`
 
 ## Locales
 

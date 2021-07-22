@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `riscv64` builds of [the `mongo-express` official image](https://hub.docker.com/_/mongo-express) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,8 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.0.0-alpha.4`, `1.0.0-alpha`, `latest`](https://github.com/mongo-express/mongo-express-docker/blob/26e7ea94e4d222de7d52531caee52149ac093c26/Dockerfile)
--	[`0.54.0`, `0.54`](https://github.com/mongo-express/mongo-express-docker/blob/4b43fe8a1206434cb32a006cd155dd71462f092f/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `riscv64` ARCHITECTURE
+
+[![riscv64/mongo-express build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/riscv64/job/mongo-express.svg?label=riscv64/mongo-express%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/riscv64/job/mongo-express/)
 
 # Quick reference (cont.)
 
@@ -57,7 +60,7 @@ mongo-express is a web-based MongoDB admin interface written in Node.js, Express
 # How to use this image
 
 ```console
-$ docker run --network some-network -e ME_CONFIG_MONGODB_SERVER=some-mongo -p 8081:8081 mongo-express
+$ docker run --network some-network -e ME_CONFIG_MONGODB_SERVER=some-mongo -p 8081:8081 riscv64/mongo-express
 ```
 
 Then you can hit `http://localhost:8081` or `http://host-ip:8081` in your browser.
@@ -109,7 +112,7 @@ $ docker run -it --rm \
     -e ME_CONFIG_MONGODB_SERVER="web_db_1" \
     -e ME_CONFIG_BASICAUTH_USERNAME="user" \
     -e ME_CONFIG_BASICAUTH_PASSWORD="fairly long password" \
-    mongo-express
+    riscv64/mongo-express
 ```
 
 This example links to a container name typical of `docker-compose`, changes the editor's color theme, and enables basic authentication.

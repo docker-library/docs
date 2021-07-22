@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `riscv64` builds of [the `nextcloud` official image](https://hub.docker.com/_/nextcloud) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,15 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`20.0.11-apache`, `20.0-apache`, `20-apache`, `20.0.11`, `20.0`, `20`](https://github.com/nextcloud/docker/blob/de10af6ed1fc7336d07d628584b6f50123f2b4ca/20.0/apache/Dockerfile)
--	[`20.0.11-fpm`, `20.0-fpm`, `20-fpm`](https://github.com/nextcloud/docker/blob/de10af6ed1fc7336d07d628584b6f50123f2b4ca/20.0/fpm/Dockerfile)
--	[`20.0.11-fpm-alpine`, `20.0-fpm-alpine`, `20-fpm-alpine`](https://github.com/nextcloud/docker/blob/de10af6ed1fc7336d07d628584b6f50123f2b4ca/20.0/fpm-alpine/Dockerfile)
--	[`21.0.3-apache`, `21.0-apache`, `21-apache`, `stable-apache`, `production-apache`, `21.0.3`, `21.0`, `21`, `stable`, `production`](https://github.com/nextcloud/docker/blob/de10af6ed1fc7336d07d628584b6f50123f2b4ca/21.0/apache/Dockerfile)
--	[`21.0.3-fpm`, `21.0-fpm`, `21-fpm`, `stable-fpm`, `production-fpm`](https://github.com/nextcloud/docker/blob/de10af6ed1fc7336d07d628584b6f50123f2b4ca/21.0/fpm/Dockerfile)
--	[`21.0.3-fpm-alpine`, `21.0-fpm-alpine`, `21-fpm-alpine`, `stable-fpm-alpine`, `production-fpm-alpine`](https://github.com/nextcloud/docker/blob/de10af6ed1fc7336d07d628584b6f50123f2b4ca/21.0/fpm-alpine/Dockerfile)
--	[`22.0.0-apache`, `22.0-apache`, `22-apache`, `apache`, `22.0.0`, `22.0`, `22`, `latest`](https://github.com/nextcloud/docker/blob/b6b9499252cd572f3bb903f2cb04d36ea880573f/22.0/apache/Dockerfile)
--	[`22.0.0-fpm`, `22.0-fpm`, `22-fpm`, `fpm`](https://github.com/nextcloud/docker/blob/b6b9499252cd572f3bb903f2cb04d36ea880573f/22.0/fpm/Dockerfile)
--	[`22.0.0-fpm-alpine`, `22.0-fpm-alpine`, `22-fpm-alpine`, `fpm-alpine`](https://github.com/nextcloud/docker/blob/b6b9499252cd572f3bb903f2cb04d36ea880573f/22.0/fpm-alpine/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `riscv64` ARCHITECTURE
+
+[![riscv64/nextcloud build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/riscv64/job/nextcloud.svg?label=riscv64/nextcloud%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/riscv64/job/nextcloud/)
 
 # Quick reference (cont.)
 
@@ -74,7 +70,7 @@ The second option is a `fpm` container. It is based on the [php-fpm](https://hub
 The apache image contains a webserver and exposes port 80. To start the container type:
 
 ```console
-$ docker run -d -p 8080:80 nextcloud
+$ docker run -d -p 8080:80 riscv64/nextcloud
 ```
 
 Now you can access Nextcloud at http://localhost:8080/ from your host system.
@@ -84,7 +80,7 @@ Now you can access Nextcloud at http://localhost:8080/ from your host system.
 To use the fpm image, you need an additional web server that can proxy http-request to the fpm-port of the container. For fpm connection this container exposes port 9000. In most cases, you might want use another container or your host as proxy. If you use your host you can address your Nextcloud container directly on port 9000. If you use another container, make sure that you add them to the same docker network (via `docker run --network <NAME> ...` or a `docker-compose` file). In both cases you don't want to map the fpm port to your host.
 
 ```console
-$ docker run -d nextcloud:fpm
+$ docker run -d riscv64/nextcloud:fpm
 ```
 
 As the fastCGI-Process is not capable of serving static files (style sheets, images, ...), the webserver needs access to these files. This can be achieved with the `volumes-from` option. You can find more information in the [docker-compose section](#running-this-image-with-docker-compose).
@@ -106,7 +102,7 @@ Nextcloud:
 	```console
 	$ docker run -d \
 	-v nextcloud:/var/www/html \
-	nextcloud
+	riscv64/nextcloud
 	```
 
 Database:
@@ -139,7 +135,7 @@ $ docker run -d \
 	-v config:/var/www/html/config \
 	-v data:/var/www/html/data \
 	-v theme:/var/www/html/themes/<YOUR_CUSTOM_THEME> \
-	nextcloud
+	riscv64/nextcloud
 ```
 
 ## Using the Nextcloud command-line interface
@@ -295,7 +291,7 @@ services:
       - MYSQL_USER=nextcloud
 
   app:
-    image: nextcloud
+    image: riscv64/nextcloud
     restart: always
     ports:
       - 8080:80
@@ -341,7 +337,7 @@ services:
       - MYSQL_USER=nextcloud
 
   app:
-    image: nextcloud:fpm
+    image: riscv64/nextcloud:fpm
     restart: always
     links:
       - db
@@ -457,10 +453,10 @@ Updating the Nextcloud container is done by pulling the new image, throwing away
 Since all data is stored in volumes, nothing gets lost. The startup script will check for the version in your volume and the installed docker version. If it finds a mismatch, it automatically starts the upgrade process. Don't forget to add all the volumes to your new container, so it works as expected.
 
 ```console
-$ docker pull nextcloud
+$ docker pull riscv64/nextcloud
 $ docker stop <your_nextcloud_container>
 $ docker rm <your_nextcloud_container>
-$ docker run <OPTIONS> -d nextcloud
+$ docker run <OPTIONS> -d riscv64/nextcloud
 ```
 
 Beware that you have to run the same command with the options that you used to initially start your Nextcloud. That includes volumes, port mapping.
@@ -477,7 +473,7 @@ $ docker-compose up -d
 A lot of people want to use additional functionality inside their Nextcloud installation. If the image does not include the packages you need, you can easily build your own image on top of it. Start your derived image with the `FROM` statement and add whatever you like.
 
 ```yaml
-FROM nextcloud:apache
+FROM riscv64/nextcloud:apache
 
 RUN ...
 
@@ -623,22 +619,6 @@ You're already using Nextcloud and want to switch to docker? Great! Here are som
 # Questions / Issues
 
 If you got any questions or problems using the image, please visit our [Github Repository](https://github.com/nextcloud/docker) and write an issue.
-
-# Image Variants
-
-The `nextcloud` images come in many flavors, each designed for a specific use case.
-
-## `nextcloud:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-## `nextcloud:<version>-alpine`
-
-This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
-
-This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
-
-To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 # License
 

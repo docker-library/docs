@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `riscv64` builds of [the `mariadb` official image](https://hub.docker.com/_/mariadb) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -26,11 +28,9 @@ Also see the ["Getting Help with MariaDB" article on the MariaDB Knowledge Base]
 
 # Supported tags and respective `Dockerfile` links
 
--	[`10.6.3-focal`, `10.6-focal`, `10-focal`, `focal`, `10.6.3`, `10.6`, `10`, `latest`](https://github.com/MariaDB/mariadb-docker/blob/3afe9953898422c1ca6b3986dd6fa255ad10eb70/10.6/Dockerfile)
--	[`10.5.11-focal`, `10.5-focal`, `10.5.11`, `10.5`](https://github.com/MariaDB/mariadb-docker/blob/3afe9953898422c1ca6b3986dd6fa255ad10eb70/10.5/Dockerfile)
--	[`10.4.20-focal`, `10.4-focal`, `10.4.20`, `10.4`](https://github.com/MariaDB/mariadb-docker/blob/3afe9953898422c1ca6b3986dd6fa255ad10eb70/10.4/Dockerfile)
--	[`10.3.30-focal`, `10.3-focal`, `10.3.30`, `10.3`](https://github.com/MariaDB/mariadb-docker/blob/3afe9953898422c1ca6b3986dd6fa255ad10eb70/10.3/Dockerfile)
--	[`10.2.39-bionic`, `10.2-bionic`, `10.2.39`, `10.2`](https://github.com/MariaDB/mariadb-docker/blob/3afe9953898422c1ca6b3986dd6fa255ad10eb70/10.2/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `riscv64` ARCHITECTURE
+
+[![riscv64/mariadb build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/riscv64/job/mariadb.svg?label=riscv64/mariadb%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/riscv64/job/mariadb/)
 
 # Quick reference (cont.)
 
@@ -61,37 +61,37 @@ The intent is also to maintain high compatibility with MySQL, ensuring a library
 
 # How to use this image
 
-## Start a `mariadb` server instance
+## Start a `riscv64/mariadb` server instance
 
 Starting a MariaDB instance is simple:
 
 ```console
-$ docker run -p 127.0.0.1:3306:3306  --name some-mariadb -e MARIADB_ROOT_PASSWORD=my-secret-pw -d mariadb:tag
+$ docker run -p 127.0.0.1:3306:3306  --name some-mariadb -e MARIADB_ROOT_PASSWORD=my-secret-pw -d riscv64/mariadb:tag
 ```
 
 or:
 
 ```console
 $ docker network create some-network # Create the network
-$ docker run --net some-network --name some-mariadb -e MARIADB_ROOT_PASSWORD=my-secret-pw -d mariadb:tag
+$ docker run --net some-network --name some-mariadb -e MARIADB_ROOT_PASSWORD=my-secret-pw -d riscv64/mariadb:tag
 ```
 
 ... where `some-network` is newly created network (other than `bridge` as the default network), `some-mariadb` is the name you want to assign to your container, `my-secret-pw` is the password to be set for the MariaDB root user and `tag` is the tag specifying the MariaDB version you want. See the list above for relevant tags.
 
 ## Connect to MariaDB from the MySQL/MariaDB command line client
 
-The following command starts another `mariadb` container instance and runs the `mysql` command line client against your original `mariadb` container, allowing you to execute SQL statements against your database instance:
+The following command starts another `riscv64/mariadb` container instance and runs the `mysql` command line client against your original `riscv64/mariadb` container, allowing you to execute SQL statements against your database instance:
 
 ```console
-$ docker run -it --network some-network --rm mariadb mysql -hsome-mariadb -uexample-user -p
+$ docker run -it --network some-network --rm riscv64/mariadb mysql -hsome-mariadb -uexample-user -p
 ```
 
-... where `some-mariadb` is the name of your original `mariadb` container (connected to the `some-network` Docker network).
+... where `some-mariadb` is the name of your original `riscv64/mariadb` container (connected to the `some-network` Docker network).
 
 This image can also be used as a client for non-Docker or remote instances:
 
 ```console
-$ docker run -it --rm mariadb mysql -hsome.mysql.host -usome-mysql-user -p
+$ docker run -it --rm riscv64/mariadb mysql -hsome.mysql.host -usome-mysql-user -p
 ```
 
 More information about the MariaDB command-line client can be found in the [MariaDB Knowledge Base](https://mariadb.com/kb/en/mysql-command-line-client/)
@@ -125,7 +125,7 @@ Run `docker stack deploy -c stack.yml mariadb` (or `docker-compose -f stack.yml 
 
 ## Container shell access and viewing MariaDB logs
 
-The `docker exec` command allows you to run commands inside a Docker container. The following command line will give you a bash shell inside your `mariadb` container:
+The `docker exec` command allows you to run commands inside a Docker container. The following command line will give you a bash shell inside your `riscv64/mariadb` container:
 
 ```console
 $ docker exec -it some-mariadb bash
@@ -139,12 +139,12 @@ $ docker logs some-mariadb
 
 ## Using a custom MariaDB configuration file
 
-The startup configuration is specified in the file `/etc/mysql/my.cnf`, and that file in turn includes any files found in the `/etc/mysql/conf.d` directory that end with `.cnf`. Settings in files in this directory will augment and/or override settings in `/etc/mysql/my.cnf`. If you want to use a customized MariaDB configuration, you can create your alternative configuration file in a directory on the host machine and then mount that directory location as `/etc/mysql/conf.d` inside the `mariadb` container.
+The startup configuration is specified in the file `/etc/mysql/my.cnf`, and that file in turn includes any files found in the `/etc/mysql/conf.d` directory that end with `.cnf`. Settings in files in this directory will augment and/or override settings in `/etc/mysql/my.cnf`. If you want to use a customized MariaDB configuration, you can create your alternative configuration file in a directory on the host machine and then mount that directory location as `/etc/mysql/conf.d` inside the `riscv64/mariadb` container.
 
-If `/my/custom/config-file.cnf` is the path and name of your custom configuration file, you can start your `mariadb` container like this (note that only the directory path of the custom config file is used in this command):
+If `/my/custom/config-file.cnf` is the path and name of your custom configuration file, you can start your `riscv64/mariadb` container like this (note that only the directory path of the custom config file is used in this command):
 
 ```console
-$ docker run --name some-mariadb -v /my/custom:/etc/mysql/conf.d -e MARIADB_ROOT_PASSWORD=my-secret-pw -d mariadb:tag
+$ docker run --name some-mariadb -v /my/custom:/etc/mysql/conf.d -e MARIADB_ROOT_PASSWORD=my-secret-pw -d riscv64/mariadb:tag
 ```
 
 This will start a new container `some-mariadb` where the MariaDB instance uses the combined startup settings from `/etc/mysql/my.cnf` and `/etc/mysql/conf.d/config-file.cnf`, with settings from the latter taking precedence.
@@ -154,18 +154,18 @@ This will start a new container `some-mariadb` where the MariaDB instance uses t
 Many configuration options can be passed as flags to `mysqld`. This will give you the flexibility to customize the container without needing a `cnf` file. For example, if you want to change the default encoding and collation for all tables to use UTF-8 (`utf8mb4`) just run the following:
 
 ```console
-$ docker run --name some-mariadb -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mariadb:tag --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+$ docker run --name some-mariadb -e MYSQL_ROOT_PASSWORD=my-secret-pw -d riscv64/mariadb:tag --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
 ```
 
 If you would like to see a complete list of available options, just run:
 
 ```console
-$ docker run -it --rm mariadb:tag --verbose --help
+$ docker run -it --rm riscv64/mariadb:tag --verbose --help
 ```
 
 ## Environment Variables
 
-When you start the `mariadb` image, you can adjust the initialization of the MariaDB instance by passing one or more environment variables on the `docker run` command line. Do note that none of the variables below will have any effect if you start the container with a data directory that already contains a database: any pre-existing database will always be left untouched on container startup.
+When you start the `riscv64/mariadb` image, you can adjust the initialization of the MariaDB instance by passing one or more environment variables on the `docker run` command line. Do note that none of the variables below will have any effect if you start the container with a data directory that already contains a database: any pre-existing database will always be left untouched on container startup.
 
 From tags 10.2.38, 10.3.29, 10.4.19, 10.5.10 onwards, and all 10.6 tags, the `MARIADB_*` equivalent variables are provided. `MARIADB_*` variants will always be used in preference to `MYSQL_*` variants.
 
@@ -206,20 +206,20 @@ By default, the entrypoint script automatically loads the timezone data needed f
 As an alternative to passing sensitive information via environment variables, `_FILE` may be appended to the previously listed environment variables, causing the initialization script to load the values for those variables from files present in the container. In particular, this can be used to load passwords from Docker secrets stored in `/run/secrets/<secret_name>` files. For example:
 
 ```console
-$ docker run --name some-mysql -e MARIADB_ROOT_PASSWORD_FILE=/run/secrets/mysql-root -d mariadb:tag
+$ docker run --name some-mysql -e MARIADB_ROOT_PASSWORD_FILE=/run/secrets/mysql-root -d riscv64/mariadb:tag
 ```
 
 Currently, this is only supported for `MARIADB_ROOT_PASSWORD`, `MARIADB_ROOT_HOST`, `MARIADB_DATABASE`, `MARIADB_USER`, and `MARIADB_PASSWORD` (and `MYSQL_*` equivalents of these).
 
 # Initializing a fresh instance
 
-When a container is started for the first time, a new database with the specified name will be created and initialized with the provided configuration variables. Furthermore, it will execute files with extensions `.sh`, `.sql`, `.sql.gz`, and `.sql.xz` that are found in `/docker-entrypoint-initdb.d`. Files will be executed in alphabetical order. `.sh` files without file execute permission are sourced rather than executed. You can easily populate your `mariadb` services by [mounting a SQL dump into that directory](https://docs.docker.com/engine/tutorials/dockervolumes/#mount-a-host-file-as-a-data-volume) and provide [custom images](https://docs.docker.com/reference/builder/) with contributed data. SQL files will be imported by default to the database specified by the `MARIADB_DATABASE` / `MYSQL_DATABASE` variable.
+When a container is started for the first time, a new database with the specified name will be created and initialized with the provided configuration variables. Furthermore, it will execute files with extensions `.sh`, `.sql`, `.sql.gz`, and `.sql.xz` that are found in `/docker-entrypoint-initdb.d`. Files will be executed in alphabetical order. `.sh` files without file execute permission are sourced rather than executed. You can easily populate your `riscv64/mariadb` services by [mounting a SQL dump into that directory](https://docs.docker.com/engine/tutorials/dockervolumes/#mount-a-host-file-as-a-data-volume) and provide [custom images](https://docs.docker.com/reference/builder/) with contributed data. SQL files will be imported by default to the database specified by the `MARIADB_DATABASE` / `MYSQL_DATABASE` variable.
 
 # Caveats
 
 ## Where to Store Data
 
-Important note: There are several ways to store data used by applications that run in Docker containers. We encourage users of the `mariadb` images to familiarize themselves with the options available, including:
+Important note: There are several ways to store data used by applications that run in Docker containers. We encourage users of the `riscv64/mariadb` images to familiarize themselves with the options available, including:
 
 -	Let Docker manage the storage of your database data [by writing the database files to disk on the host system using its own internal volume management](https://docs.docker.com/engine/tutorials/dockervolumes/#adding-a-data-volume). This is the default and is easy and fairly transparent to the user. The downside is that the files may be hard to locate for tools and applications that run directly on the host system, i.e. outside containers.
 -	Create a data directory on the host system (outside the container) and [mount this to a directory visible from inside the container](https://docs.docker.com/engine/tutorials/dockervolumes/#mount-a-host-directory-as-a-data-volume). This places the database files in a known location on the host system, and makes it easy for tools and applications on the host system to access the files. The downside is that the user needs to make sure that the directory exists, and that e.g. directory permissions and other security mechanisms on the host system are set up correctly.
@@ -227,10 +227,10 @@ Important note: There are several ways to store data used by applications that r
 The Docker documentation is a good starting point for understanding the different storage options and variations, and there are multiple blogs and forum postings that discuss and give advice in this area. We will simply show the basic procedure here for the latter option above:
 
 1.	Create a data directory on a suitable volume on your host system, e.g. `/my/own/datadir`.
-2.	Start your `mariadb` container like this:
+2.	Start your `riscv64/mariadb` container like this:
 
 	```console
-	$ docker run --name some-mariadb -v /my/own/datadir:/var/lib/mysql -e MARIADB_ROOT_PASSWORD=my-secret-pw -d mariadb:tag
+	$ docker run --name some-mariadb -v /my/own/datadir:/var/lib/mysql -e MARIADB_ROOT_PASSWORD=my-secret-pw -d riscv64/mariadb:tag
 	```
 
 The `-v /my/own/datadir:/var/lib/mysql` part of the command mounts the `/my/own/datadir` directory from the underlying host system as `/var/lib/mysql` inside the container, where MariaDB by default will write its data files.
@@ -241,7 +241,7 @@ If there is no database initialized when the container starts, then a default da
 
 ## Usage against an existing database
 
-If you start your `mariadb` container instance with a data directory that already contains a database (specifically, a `mysql` subdirectory), the `$MARIADB_ROOT_PASSWORD` variable should be omitted from the run command line; it will in any case be ignored, and the pre-existing database will not be changed in any way.
+If you start your `riscv64/mariadb` container instance with a data directory that already contains a database (specifically, a `mysql` subdirectory), the `$MARIADB_ROOT_PASSWORD` variable should be omitted from the run command line; it will in any case be ignored, and the pre-existing database will not be changed in any way.
 
 ## Creating database dumps
 
