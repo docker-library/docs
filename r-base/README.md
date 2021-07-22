@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v6` builds of [the `r-base` official image](https://hub.docker.com/_/r-base) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,7 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.1.0`, `latest`](https://github.com/rocker-org/rocker/blob/bc5f41cd3464bf18c571e7ff35383aab08b8ee71/r-base/4.1.0/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v6` ARCHITECTURE
+
+[![arm32v6/r-base build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v6/job/r-base.svg?label=arm32v6/r-base%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v6/job/r-base/)
 
 # Quick reference (cont.)
 
@@ -66,7 +70,7 @@ R is a GNU project. The source code for the R software environment is written pr
 Launch R directly for interactive work:
 
 ```console
-$ docker run -ti --rm r-base
+$ docker run -ti --rm arm32v6/r-base
 ```
 
 ## Batch mode
@@ -74,13 +78,13 @@ $ docker run -ti --rm r-base
 Link the working directory to run R batch commands. We recommend specifying a non-root user when linking a volume to the container to avoid permission changes, as illustrated here:
 
 ```console
-$ docker run -ti --rm -v "$PWD":/home/docker -w /home/docker -u docker r-base R CMD check .
+$ docker run -ti --rm -v "$PWD":/home/docker -w /home/docker -u docker arm32v6/r-base R CMD check .
 ```
 
 Alternatively, just run a bash session on the container first. This allows a user to run batch commands and also edit and run scripts:
 
 ```console
-$ docker run -ti --rm r-base bash
+$ docker run -ti --rm arm32v6/r-base bash
 $ vim.tiny myscript.R
 ```
 
@@ -95,7 +99,7 @@ $ Rscript myscript.R
 Use `r-base` as a base for your own Dockerfiles. For instance, something along the lines of the following will compile and run your project:
 
 ```dockerfile
-FROM r-base
+FROM arm32v6/r-base
 COPY . /usr/local/src/myscripts
 WORKDIR /usr/local/src/myscripts
 CMD ["Rscript", "myscript.R"]

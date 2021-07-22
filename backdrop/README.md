@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v6` builds of [the `backdrop` official image](https://hub.docker.com/_/backdrop) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,8 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.17.3`, `1.17`, `1`, `1.17.3-apache`, `1.17-apache`, `1-apache`, `apache`, `latest`](https://github.com/backdrop-ops/backdrop-docker/blob/b760ba970a67f3dcdc975ed8b77f915895184577/1/apache/Dockerfile)
--	[`1.17.3-fpm`, `1.17-fpm`, `1-fpm`, `fpm`](https://github.com/backdrop-ops/backdrop-docker/blob/b760ba970a67f3dcdc975ed8b77f915895184577/1/fpm/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v6` ARCHITECTURE
+
+[![arm32v6/backdrop build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v6/job/backdrop.svg?label=arm32v6/backdrop%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v6/job/backdrop/)
 
 # Quick reference (cont.)
 
@@ -59,7 +62,7 @@ Backdrop CMS enables people to build highly customized websites, affordably, thr
 The basic pattern for starting a `backdrop` instance is:
 
 ```console
-$ docker run --name some-backdrop --link some-mysql:mysql -d backdrop
+$ docker run --name some-backdrop --link some-mysql:mysql -d arm32v6/backdrop
 ```
 
 The following environment variables are also honored for configuring your Backdrop CMS instance:
@@ -76,7 +79,7 @@ The `BACKDROP_DB_NAME` **must already exist** on the given MySQL server. Check o
 If you'd like to be able to access the instance from the host without the container's IP, standard port mappings can be used:
 
 ```console
-$ docker run --name some-backdrop --link some-mysql:mysql -p 8080:80 -d backdrop
+$ docker run --name some-backdrop --link some-mysql:mysql -p 8080:80 -d arm32v6/backdrop
 ```
 
 Then, access it via `http://localhost:8080` or `http://host-ip:8080` in a browser.
