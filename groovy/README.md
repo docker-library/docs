@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `windows-amd64` builds of [the `groovy` official image](https://hub.docker.com/_/groovy) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,18 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.0.8-jdk8`, `3.0-jdk8`, `3.0.8-jdk`, `3.0-jdk`, `jdk8`, `jdk`](https://github.com/groovy/docker-groovy/blob/fc758151cb38024e32f2bf1d05d672eb589d5872/jdk8/Dockerfile)
--	[`3.0.8-jre8`, `3.0-jre8`, `3.0.8-jre`, `3.0-jre`, `3.0.8`, `3.0`, `jre8`, `jre`, `latest`](https://github.com/groovy/docker-groovy/blob/fc758151cb38024e32f2bf1d05d672eb589d5872/jre8/Dockerfile)
--	[`3.0.8-jdk11`, `3.0-jdk11`, `jdk11`](https://github.com/groovy/docker-groovy/blob/fc758151cb38024e32f2bf1d05d672eb589d5872/jdk11/Dockerfile)
--	[`3.0.8-jre11`, `3.0-jre11`, `jre11`](https://github.com/groovy/docker-groovy/blob/fc758151cb38024e32f2bf1d05d672eb589d5872/jre11/Dockerfile)
--	[`3.0.8-jdk16`, `3.0-jdk16`, `jdk16`](https://github.com/groovy/docker-groovy/blob/fc758151cb38024e32f2bf1d05d672eb589d5872/jdk16/Dockerfile)
--	[`3.0.8-jre16`, `3.0-jre16`, `jre16`](https://github.com/groovy/docker-groovy/blob/fc758151cb38024e32f2bf1d05d672eb589d5872/jre16/Dockerfile)
--	[`4.0.0-alpha-3-jdk8`, `4.0-jdk8`, `4.0.0-alpha-3-jdk`, `4.0-jdk`](https://github.com/groovy/docker-groovy/blob/ad50fefc1fc19511003471541a68eba490642bd8/jdk8/Dockerfile)
--	[`4.0.0-alpha-3-jre8`, `4.0-jre8`, `4.0.0-alpha-3-jre`, `4.0-jre`, `4.0.0-alpha-3`, `4.0`](https://github.com/groovy/docker-groovy/blob/ad50fefc1fc19511003471541a68eba490642bd8/jre8/Dockerfile)
--	[`4.0.0-alpha-3-jdk11`, `4.0-jdk11`](https://github.com/groovy/docker-groovy/blob/ad50fefc1fc19511003471541a68eba490642bd8/jdk11/Dockerfile)
--	[`4.0.0-alpha-3-jre11`, `4.0-jre11`](https://github.com/groovy/docker-groovy/blob/ad50fefc1fc19511003471541a68eba490642bd8/jre11/Dockerfile)
--	[`4.0.0-alpha-3-jdk16`, `4.0-jdk16`](https://github.com/groovy/docker-groovy/blob/ad50fefc1fc19511003471541a68eba490642bd8/jdk16/Dockerfile)
--	[`4.0.0-alpha-3-jre16`, `4.0-jre16`](https://github.com/groovy/docker-groovy/blob/ad50fefc1fc19511003471541a68eba490642bd8/jre16/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `windows-amd64` ARCHITECTURE
+
+[![winamd64/groovy build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/windows-amd64/job/groovy.svg?label=winamd64/groovy%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/windows-amd64/job/groovy/)
 
 # Quick reference (cont.)
 
@@ -72,7 +65,7 @@ Note that if you are mounting a volume and the uid running Docker is not `1000`,
 
 ## Running a Groovy script
 
-`docker run --rm -v "$PWD":/home/groovy/scripts -w /home/groovy/scripts groovy groovy <script> <script-args>`
+`docker run --rm -v "$PWD":/home/groovy/scripts -w /home/groovy/scripts winamd64/groovy groovy <script> <script-args>`
 
 ## Reusing the Grapes cache
 
@@ -80,7 +73,7 @@ The local Grapes cache can be reused across containers by creating a volume and 
 
 ```console
 docker volume create --name grapes-cache
-docker run --rm -it -v grapes-cache:/home/groovy/.groovy/grapes groovy
+docker run --rm -it -v grapes-cache:/home/groovy/.groovy/grapes winamd64/groovy
 ```
 
 # License

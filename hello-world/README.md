@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `windows-amd64` builds of [the `hello-world` official image](https://hub.docker.com/_/hello-world) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -28,16 +30,16 @@ WARNING:
 
 ## Simple Tags
 
--	[`linux`](https://github.com/docker-library/hello-world/blob/7ecae6978055d2fb6960e2a29d24a2af612e2716/amd64/hello-world/Dockerfile)
 -	[`nanoserver-1809`](https://github.com/docker-library/hello-world/blob/a6fdcbffb08c09e63c48cda1878e15fefcb6460a/amd64/hello-world/nanoserver-1809/Dockerfile)
 
 ## Shared Tags
 
 -	`latest`:
-	-	[`linux`](https://github.com/docker-library/hello-world/blob/7ecae6978055d2fb6960e2a29d24a2af612e2716/amd64/hello-world/Dockerfile)
 	-	[`nanoserver-1809`](https://github.com/docker-library/hello-world/blob/a6fdcbffb08c09e63c48cda1878e15fefcb6460a/amd64/hello-world/nanoserver-1809/Dockerfile)
 -	`nanoserver`:
 	-	[`nanoserver-1809`](https://github.com/docker-library/hello-world/blob/a6fdcbffb08c09e63c48cda1878e15fefcb6460a/amd64/hello-world/nanoserver-1809/Dockerfile)
+
+[![winamd64/hello-world build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/windows-amd64/job/hello-world.svg?label=winamd64/hello-world%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/windows-amd64/job/hello-world/)
 
 # Quick reference (cont.)
 
@@ -61,7 +63,7 @@ WARNING:
 # Example output
 
 ```console
-$ docker run hello-world
+$ docker run winamd64/hello-world
 
 Hello from Docker!
 This message shows that your installation appears to be working correctly.
@@ -85,7 +87,7 @@ For more examples and ideas, visit:
  https://docs.docker.com/get-started/
 
 
-$ docker images hello-world
+$ docker images winamd64/hello-world
 REPOSITORY   TAG     IMAGE ID      SIZE
 hello-world  latest  d1165f221234  13336
 ```
