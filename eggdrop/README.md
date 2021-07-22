@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v5` builds of [the `eggdrop` official image](https://hub.docker.com/_/eggdrop) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,9 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`develop`](https://github.com/eggheads/eggdrop-docker/blob/8d3bb9a0a2f35b45d50b82e9c7dd7a5af66e4c9a/develop/Dockerfile)
--	[`1.8`, `1.8.4`](https://github.com/eggheads/eggdrop-docker/blob/14411e45f599536a86d9f023c0fa09f3dd2f5454/1.8/Dockerfile)
--	[`1.9`, `1.9.1`, `stable`, `latest`](https://github.com/eggheads/eggdrop-docker/blob/eb6827278e290bc9ae5d443adfac3ca153d1c459/1.9/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v5` ARCHITECTURE
+
+[![arm32v5/eggdrop build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v5/job/eggdrop.svg?label=arm32v5/eggdrop%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v5/job/eggdrop/)
 
 # Quick reference (cont.)
 
@@ -60,7 +62,7 @@ Eggdrop is the world's most popular Open Source IRC bot, designed for flexibilit
 To run this container the first time, you'll need to pass in, at minimum, a nickname and server via Environmental Variables. At minimum, a docker run command similar to
 
 ```console
-$ docker run -ti -e NICK=FooBot -e SERVER=irc.freenode.net -v /path/for/host/data:/home/eggdrop/eggdrop/data eggdrop
+$ docker run -ti -e NICK=FooBot -e SERVER=irc.freenode.net -v /path/for/host/data:/home/eggdrop/eggdrop/data arm32v5/eggdrop
 ```
 
 should be used. This will modify the appropriate values within the config file, then start your bot with the nickname FooBot and connect it to irc.freenode.net. These variables are only needed for your first run- after the first use, you can edit the config file directly. Additional configuration options are listed in the following sections.
@@ -92,13 +94,13 @@ This variable sets the nickname used by eggdrop. After the first use, you should
 After running the eggdrop container for the first time, the configuration file, user file and channel file will all be available inside the container at /home/eggdrop/eggdrop/data/ . NOTE! These files are only as persistent as the container they exist in. If you expect to use a different container over the course of using the Eggdrop docker image (intentionally or not) you will want to create a persistent data store. The easiest way to do this is to mount a directory on your host machine to /home/eggdrop/eggdrop/data. If you do this prior to your first run, you can easily edit the eggdrop configuration file on the host. Otherwise, you can also drop in existing config, user, or channel files into the mounted directory for use in the eggdrop container. You'll also likely want to daemonize eggdrop (ie, run it in the background). To do this, start your container with something similar to
 
 ```console
-$ docker run -i -e NICK=FooBot -e SERVER=irc.freenode.net -v /path/to/eggdrop/files:/home/eggdrop/eggdrop/data -d eggdrop
+$ docker run -i -e NICK=FooBot -e SERVER=irc.freenode.net -v /path/to/eggdrop/files:/home/eggdrop/eggdrop/data -d arm32v5/eggdrop
 ```
 
 If you provide your own config file, specify it as the argument to the docker container:
 
 ```console
-$ docker run -i -v /path/to/eggdrop/files:/home/eggdrop/eggdrop/data -d eggdrop mybot.conf
+$ docker run -i -v /path/to/eggdrop/files:/home/eggdrop/eggdrop/data -d arm32v5/eggdrop mybot.conf
 ```
 
 Any config file used with docker MUST end in .conf, such as eggdrop.conf or mybot.conf
