@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `s390x` builds of [the `sl` official image](https://hub.docker.com/_/sl) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,7 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7`, `latest`](https://github.com/scientificlinux/sl-docker/blob/42160431c78d1c3c2217d5e090b8bf72f61b489b/sl7/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `s390x` ARCHITECTURE
+
+[![s390x/sl build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/s390x/job/sl.svg?label=s390x/sl%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/sl/)
 
 # Quick reference (cont.)
 
@@ -84,9 +88,9 @@ Recent Docker versions support the [overlayfs](https://docs.docker.com/engine/us
 You can try out the containers via:
 
 ```console
-$ docker pull sl
-$ docker run -it sl:6 cat /etc/redhat-release
-$ docker run -it sl:7 cat /etc/redhat-release
+$ docker pull s390x/sl
+$ docker run -it s390x/sl:6 cat /etc/redhat-release
+$ docker run -it s390x/sl:7 cat /etc/redhat-release
 ```
 
 ## Enabling systemd in SL7
@@ -97,7 +101,7 @@ In order to run a container with systemd, you will need to mount the cgroups vol
 
 ```Dockerfile
 # Example SL7 systemd Dockerfile
-FROM sl:7
+FROM s390x/sl:7
 ENV container docker
 ### This example enables httpd via systemd within the container
 RUN yum -y install httpd && yum clean all && systemctl enable httpd.service

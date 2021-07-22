@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `s390x` builds of [the `matomo` official image](https://hub.docker.com/_/matomo) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -27,6 +29,8 @@ WARNING:
 -	[`4.3.1-apache`, `4.3-apache`, `4-apache`, `apache`, `4.3.1`, `4.3`, `4`, `latest`](https://github.com/matomo-org/docker/blob/e0a275a2ec2fa68e1038b84b84734e5fe31cb336/apache/Dockerfile)
 -	[`4.3.1-fpm`, `4.3-fpm`, `4-fpm`, `fpm`](https://github.com/matomo-org/docker/blob/e0a275a2ec2fa68e1038b84b84734e5fe31cb336/fpm/Dockerfile)
 -	[`4.3.1-fpm-alpine`, `4.3-fpm-alpine`, `4-fpm-alpine`, `fpm-alpine`](https://github.com/matomo-org/docker/blob/e0a275a2ec2fa68e1038b84b84734e5fe31cb336/fpm-alpine/Dockerfile)
+
+[![s390x/matomo build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/s390x/job/matomo.svg?label=s390x/matomo%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/matomo/)
 
 # Quick reference (cont.)
 
@@ -124,13 +128,13 @@ We'd love to hear your feedback and suggestions in the issue tracker: [github.co
 
 # Image Variants
 
-The `matomo` images come in many flavors, each designed for a specific use case.
+The `s390x/matomo` images come in many flavors, each designed for a specific use case.
 
-## `matomo:<version>`
+## `s390x/matomo:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `matomo:<version>-alpine`
+## `s390x/matomo:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 

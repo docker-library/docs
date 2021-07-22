@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `s390x` builds of [the `ros` official image](https://hub.docker.com/_/ros) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,27 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`melodic-ros-core`, `melodic-ros-core-bionic`](https://github.com/osrf/docker_images/blob/11c613986e35a1f36fd0fa18b49173e0c564cf1d/ros/melodic/ubuntu/bionic/ros-core/Dockerfile)
--	[`melodic-ros-base`, `melodic-ros-base-bionic`, `melodic`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/melodic/ubuntu/bionic/ros-base/Dockerfile)
--	[`melodic-robot`, `melodic-robot-bionic`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/melodic/ubuntu/bionic/robot/Dockerfile)
--	[`melodic-perception`, `melodic-perception-bionic`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/melodic/ubuntu/bionic/perception/Dockerfile)
--	[`noetic-ros-core`, `noetic-ros-core-focal`](https://github.com/osrf/docker_images/blob/11c613986e35a1f36fd0fa18b49173e0c564cf1d/ros/noetic/ubuntu/focal/ros-core/Dockerfile)
--	[`noetic-ros-base`, `noetic-ros-base-focal`, `noetic`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/noetic/ubuntu/focal/ros-base/Dockerfile)
--	[`noetic-robot`, `noetic-robot-focal`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/noetic/ubuntu/focal/robot/Dockerfile)
--	[`noetic-perception`, `noetic-perception-focal`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/noetic/ubuntu/focal/perception/Dockerfile)
--	[`noetic-ros-core-buster`](https://github.com/osrf/docker_images/blob/11c613986e35a1f36fd0fa18b49173e0c564cf1d/ros/noetic/debian/buster/ros-core/Dockerfile)
--	[`noetic-ros-base-buster`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/noetic/debian/buster/ros-base/Dockerfile)
--	[`noetic-robot-buster`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/noetic/debian/buster/robot/Dockerfile)
--	[`noetic-perception-buster`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/noetic/debian/buster/perception/Dockerfile)
--	[`foxy-ros-core`, `foxy-ros-core-focal`](https://github.com/osrf/docker_images/blob/11c613986e35a1f36fd0fa18b49173e0c564cf1d/ros/foxy/ubuntu/focal/ros-core/Dockerfile)
--	[`foxy-ros-base`, `foxy-ros-base-focal`, `foxy`, `latest`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/foxy/ubuntu/focal/ros-base/Dockerfile)
--	[`foxy-ros1-bridge`, `foxy-ros1-bridge-focal`](https://github.com/osrf/docker_images/blob/11c613986e35a1f36fd0fa18b49173e0c564cf1d/ros/foxy/ubuntu/focal/ros1-bridge/Dockerfile)
--	[`galactic-ros-core`, `galactic-ros-core-focal`](https://github.com/osrf/docker_images/blob/11c613986e35a1f36fd0fa18b49173e0c564cf1d/ros/galactic/ubuntu/focal/ros-core/Dockerfile)
--	[`galactic-ros-base`, `galactic-ros-base-focal`, `galactic`](https://github.com/osrf/docker_images/blob/6511d8fc0754616550b7f5ea31a40084c2462938/ros/galactic/ubuntu/focal/ros-base/Dockerfile)
--	[`galactic-ros1-bridge`, `galactic-ros1-bridge-focal`](https://github.com/osrf/docker_images/blob/11c613986e35a1f36fd0fa18b49173e0c564cf1d/ros/galactic/ubuntu/focal/ros1-bridge/Dockerfile)
--	[`rolling-ros-core`, `rolling-ros-core-focal`](https://github.com/osrf/docker_images/blob/11c613986e35a1f36fd0fa18b49173e0c564cf1d/ros/rolling/ubuntu/focal/ros-core/Dockerfile)
--	[`rolling-ros-base`, `rolling-ros-base-focal`, `rolling`](https://github.com/osrf/docker_images/blob/a5644adacdca4a49faf10221620048175cdd7262/ros/rolling/ubuntu/focal/ros-base/Dockerfile)
--	[`rolling-ros1-bridge`, `rolling-ros1-bridge-focal`](https://github.com/osrf/docker_images/blob/edac8a82f99695d4e3e3b08a3431bac9e3643809/ros/rolling/ubuntu/focal/ros1-bridge/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `s390x` ARCHITECTURE
+
+[![s390x/ros build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/s390x/job/ros.svg?label=s390x/ros%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/ros/)
 
 # Quick reference (cont.)
 
@@ -80,7 +64,7 @@ The Robot Operating System (ROS) is a set of software libraries and tools that h
 To create your own ROS docker images and install custom packages, here's a simple example of installing the C++, Python client library demos using the official released Debian packages via apt-get.
 
 ```dockerfile
-FROM ros:foxy
+FROM s390x/ros:foxy
 
 # install ros package
 RUN apt-get update && apt-get install -y \
@@ -111,7 +95,7 @@ $ docker run -it --rm my/ros:app
 To create your own ROS docker images and build custom packages, here's a simple example of installing a package's build dependencies, compiling it from source, and installing the resulting build artifacts into a final multi-stage image layer.
 
 ```dockerfile
-ARG FROM_IMAGE=ros:foxy
+ARG FROM_IMAGE=s390x/ros:foxy
 ARG OVERLAY_WS=/opt/ros/overlay_ws
 
 # multi-stage for caching
@@ -207,7 +191,7 @@ ROS uses the `~/.ros/` directory for storing logs, and debugging info. If you wi
 For example, if one wishes to use their own `.ros` folder that already resides in their local home directory, with a username of `ubuntu`, we can simply launch the container with an additional volume argument:
 
 ```console
-$ docker run -v "/home/ubuntu/.ros/:/root/.ros/" ros
+$ docker run -v "/home/ubuntu/.ros/:/root/.ros/" s390x/ros
 ```
 
 ### Devices
@@ -275,7 +259,7 @@ $ docker-compose rm
 To ease ROS 2 migration, [`ros1_bridge`](https://index.ros.org/p/ros1_bridge/github-ros2-ros1_bridge) is a ROS 2 package that provides bidirectional communication between ROS 1 and ROS 2. As a minimal example, given the ROS 2 Dockerfile above, we'll create the ROS 1 equivalent below, and name the Dockerfile appropriately.
 
 ```dockerfile
-FROM ros:noetic
+FROM s390x/ros:noetic
 
 # install ros package
 RUN apt-get update && apt-get install -y \

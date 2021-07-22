@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `s390x` builds of [the `yourls` official image](https://hub.docker.com/_/yourls) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -27,6 +29,8 @@ WARNING:
 -	[`1.8.1-apache`, `1.8-apache`, `1-apache`, `apache`, `1.8.1`, `1.8`, `1`, `latest`](https://github.com/YOURLS/docker-yourls/blob/f1756127e0b8eebad4f301d4fe6790f6d9794ce2/apache/Dockerfile)
 -	[`1.8.1-fpm`, `1.8-fpm`, `1-fpm`, `fpm`](https://github.com/YOURLS/docker-yourls/blob/f1756127e0b8eebad4f301d4fe6790f6d9794ce2/fpm/Dockerfile)
 -	[`1.8.1-fpm-alpine`, `1.8-fpm-alpine`, `1-fpm-alpine`, `fpm-alpine`](https://github.com/YOURLS/docker-yourls/blob/f1756127e0b8eebad4f301d4fe6790f6d9794ce2/fpm-alpine/Dockerfile)
+
+[![s390x/yourls build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/s390x/job/yourls.svg?label=s390x/yourls%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/yourls/)
 
 # Quick reference (cont.)
 
@@ -62,7 +66,7 @@ $ docker run --name some-yourls --link some-mysql:mysql \
     -e YOURLS_SITE="https://example.com" \
     -e YOURLS_USER="example_username" \
     -e YOURLS_PASS="example_password" \
-    -d yourls
+    -d s390x/yourls
 ```
 
 The YOURLS instance accepts [a number of environment variables for configuration](https://yourls.org/#Config).  
@@ -83,7 +87,7 @@ If the `YOURLS_DB_NAME` specified does not already exist on the given MySQL serv
 If you'd like to be able to access the instance from the host without the container's IP, standard port mappings can be used:
 
 ```console
-$ docker run --name some-yourls --link some-mysql:mysql -p 8080:80 -d yourls
+$ docker run --name some-yourls --link some-mysql:mysql -p 8080:80 -d s390x/yourls
 ```
 
 Then, access it via `http://localhost:8080/admin/` or `http://host-ip:8080/admin/` in a browser.
@@ -92,7 +96,7 @@ If you'd like to use an external database instead of a linked `mysql` container,
 
 ```console
 $ docker run --name some-yourlss -e YOURLS_DB_HOST=10.1.2.3:3306 \
-    -e YOURLS_DB_USER=... -e YOURLS_DB_PASS=... -d yourls
+    -e YOURLS_DB_USER=... -e YOURLS_DB_PASS=... -d s390x/yourls
 ```
 
 ## ... via [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/) or [`docker-compose`](https://github.com/docker/compose)
@@ -138,13 +142,13 @@ The following Docker Hub features can help with the task of keeping your depende
 
 # Image Variants
 
-The `yourls` images come in many flavors, each designed for a specific use case.
+The `s390x/yourls` images come in many flavors, each designed for a specific use case.
 
-## `yourls:<version>`
+## `s390x/yourls:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `yourls:<version>-alpine`
+## `s390x/yourls:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 

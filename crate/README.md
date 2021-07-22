@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `s390x` builds of [the `crate` official image](https://hub.docker.com/_/crate) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,13 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.5.4`, `4.5`, `latest`](https://github.com/crate/docker-crate/blob/bdb04c7c7ca2b391d2079738f4b06dd62edf42ee/Dockerfile)
--	[`4.4.3`, `4.4`](https://github.com/crate/docker-crate/blob/2ccc43c2b34cd4182b7757298f97dd21f123b2d9/Dockerfile)
--	[`4.3.4`, `4.3`](https://github.com/crate/docker-crate/blob/eae5f171ef089074d42d033af2988714a87190b6/Dockerfile)
--	[`4.2.7`, `4.2`](https://github.com/crate/docker-crate/blob/441cd8bb0115a268f30633839bc29d813dfaa0db/Dockerfile)
--	[`4.1.8`, `4.1`](https://github.com/crate/docker-crate/blob/fbe46a3c699dfe79242e659626a39b09325d58ab/Dockerfile)
--	[`4.0.12`, `4.0`](https://github.com/crate/docker-crate/blob/7791cda08fbf054ab2ce7a988f8811074b8c3bf4/Dockerfile)
--	[`3.3.5`, `3.3`](https://github.com/crate/docker-crate/blob/896c3f63e8e3d4746019e379a7aefb5225b050e3/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `s390x` ARCHITECTURE
+
+[![s390x/crate build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/s390x/job/crate.svg?label=s390x/crate%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/crate/)
 
 # Quick reference (cont.)
 
@@ -81,7 +79,7 @@ CrateDB provides an [Admin UI](https://crate.io/docs/crate/admin-ui/):
 Spin up this Docker image like so:
 
 ```console
-$ docker run --publish 4200:4200 --publish 5432:5432 crate -Cdiscovery.type=single-node
+$ docker run --publish 4200:4200 --publish 5432:5432 s390x/crate -Cdiscovery.type=single-node
 ```
 
 Visit the [getting started](https://crate.io/docs/crate/tutorials/en/latest/install-run/) page to see all the available download and install options.

@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `s390x` builds of [the `alpine` official image](https://hub.docker.com/_/alpine) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,11 +26,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`20210212`, `edge`](https://github.com/alpinelinux/docker-alpine/blob/489953694b9dd165f615dc01971971ddf55701f8/x86_64/Dockerfile)
--	[`3.14.0`, `3.14`, `3`, `latest`](https://github.com/alpinelinux/docker-alpine/blob/6cde5b1c2838b647382fdbc71b5d3cef54c5c157/x86_64/Dockerfile)
--	[`3.13.5`, `3.13`](https://github.com/alpinelinux/docker-alpine/blob/37579d92b9faa70398240431bc46720242faa5e5/x86_64/Dockerfile)
--	[`3.12.7`, `3.12`](https://github.com/alpinelinux/docker-alpine/blob/8b8051f1c11daff18ada363488e145af9e201802/x86_64/Dockerfile)
--	[`3.11.11`, `3.11`](https://github.com/alpinelinux/docker-alpine/blob/2cd76fb18830708f4af5a6927c3aa40867a4e8bb/x86_64/Dockerfile)
+-	[`20210212`, `edge`](https://github.com/alpinelinux/docker-alpine/blob/489953694b9dd165f615dc01971971ddf55701f8/s390x/Dockerfile)
+-	[`3.14.0`, `3.14`, `3`, `latest`](https://github.com/alpinelinux/docker-alpine/blob/6cde5b1c2838b647382fdbc71b5d3cef54c5c157/s390x/Dockerfile)
+-	[`3.13.5`, `3.13`](https://github.com/alpinelinux/docker-alpine/blob/37579d92b9faa70398240431bc46720242faa5e5/s390x/Dockerfile)
+-	[`3.12.7`, `3.12`](https://github.com/alpinelinux/docker-alpine/blob/8b8051f1c11daff18ada363488e145af9e201802/s390x/Dockerfile)
+-	[`3.11.11`, `3.11`](https://github.com/alpinelinux/docker-alpine/blob/2cd76fb18830708f4af5a6927c3aa40867a4e8bb/s390x/Dockerfile)
+
+[![s390x/alpine build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/s390x/job/alpine.svg?label=s390x/alpine%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/alpine/)
 
 # Quick reference (cont.)
 
@@ -62,7 +66,7 @@ WARNING:
 Use like you would any other base image:
 
 ```dockerfile
-FROM alpine:3.14
+FROM s390x/alpine:3.14
 RUN apk add --no-cache mysql-client
 ENTRYPOINT ["mysql"]
 ```

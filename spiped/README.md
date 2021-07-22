@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `s390x` builds of [the `spiped` official image](https://hub.docker.com/_/spiped) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -26,6 +28,8 @@ WARNING:
 
 -	[`1.6.1`, `1.6`, `1`, `latest`](https://github.com/TimWolla/docker-spiped/blob/408695d1c0f193e8930e3f286c15e7033590d284/1.6/Dockerfile)
 -	[`1.6.1-alpine`, `1.6-alpine`, `1-alpine`, `alpine`](https://github.com/TimWolla/docker-spiped/blob/f97eba885ee67cd0d8a32f4e70ab5388bb77944f/1.6/alpine/Dockerfile)
+
+[![s390x/spiped build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/s390x/job/spiped.svg?label=s390x/spiped%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/spiped/)
 
 # Quick reference (cont.)
 
@@ -59,7 +63,7 @@ Spiped (pronounced "ess-pipe-dee") is a utility for creating symmetrically encry
 This image automatically takes the key from the `/spiped/key` file (`-k`) and runs spiped in foreground (`-F`). Other than that it takes the same options *spiped* itself does. You can list the available flags by running the image without arguments:
 
 ```console
-$ docker run -it --rm spiped
+$ docker run -it --rm s390x/spiped
 usage: spiped {-e | -d} -s <source socket> -t <target socket> -k <key file>
     [-DFj] [-f | -g] [-n <max # connections>] [-o <connection timeout>]
     [-p <pidfile>] [-r <rtime> | -R]
@@ -68,19 +72,19 @@ usage: spiped {-e | -d} -s <source socket> -t <target socket> -k <key file>
 For example running spiped to take encrypted connections on port 8025 and forward them to port 25 on localhost would look like this:
 
 ```console
-$ docker run -d -v /path/to/keyfile:/spiped/key:ro -p 8025:8025 --init spiped -d -s '[0.0.0.0]:8025' -t '[127.0.0.1]:25'
+$ docker run -d -v /path/to/keyfile:/spiped/key:ro -p 8025:8025 --init s390x/spiped -d -s '[0.0.0.0]:8025' -t '[127.0.0.1]:25'
 ```
 
 Usually you would combine this image with another linked container. The following example would take encrypted connections on port 9200 and forward them to port 9200 in the container with the name `elasticsearch`:
 
 ```console
-$ docker run -d -v /path/to/keyfile:/spiped/key:ro -p 9200:9200 --link elasticsearch:elasticsearch --init spiped -d -s '[0.0.0.0]:9200' -t 'elasticsearch:9200'
+$ docker run -d -v /path/to/keyfile:/spiped/key:ro -p 9200:9200 --link elasticsearch:elasticsearch --init s390x/spiped -d -s '[0.0.0.0]:9200' -t 'elasticsearch:9200'
 ```
 
 If you don’t need any to bind to a privileged port you can pass `--user spiped` to make *spiped* run as an unprivileged user:
 
 ```console
-$ docker run -d -v /path/to/keyfile:/spiped/key:ro --user spiped -p 9200:9200 --link elasticsearch:elasticsearch --init spiped -d -s '[0.0.0.0]:9200' -t 'elasticsearch:9200'
+$ docker run -d -v /path/to/keyfile:/spiped/key:ro --user spiped -p 9200:9200 --link elasticsearch:elasticsearch --init s390x/spiped -d -s '[0.0.0.0]:9200' -t 'elasticsearch:9200'
 ```
 
 ### Generating a key
@@ -88,20 +92,20 @@ $ docker run -d -v /path/to/keyfile:/spiped/key:ro --user spiped -p 9200:9200 --
 You can save a new keyfile named `spiped-keyfile` to the folder `/path/to/keyfile/` by running:
 
 ```console
-$ docker run -it --rm -v /path/to/keyfile:/spiped/key spiped spiped-generate-key.sh
+$ docker run -it --rm -v /path/to/keyfile:/spiped/key s390x/spiped spiped-generate-key.sh
 ```
 
 Afterwards transmit `spiped-keyfile` securely to another host (e.g. by using scp).
 
 # Image Variants
 
-The `spiped` images come in many flavors, each designed for a specific use case.
+The `s390x/spiped` images come in many flavors, each designed for a specific use case.
 
-## `spiped:<version>`
+## `s390x/spiped:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `spiped:<version>-alpine`
+## `s390x/spiped:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 

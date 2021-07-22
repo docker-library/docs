@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `s390x` builds of [the `dart` official image](https://hub.docker.com/_/dart) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,8 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.13.4-sdk`, `2.13-sdk`, `2-sdk`, `stable-sdk`, `sdk`, `2.13.4`, `2.13`, `2`, `stable`, `latest`](https://github.com/dart-lang/dart-docker/blob/1b5c9e68abc5324a72e04191e01b657ae591e1f3/stable/buster/Dockerfile)
--	[`2.14.0-188.5.beta-sdk`, `beta-sdk`, `2.14.0-188.5.beta`, `beta`](https://github.com/dart-lang/dart-docker/blob/1b5c9e68abc5324a72e04191e01b657ae591e1f3/beta/buster/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `s390x` ARCHITECTURE
+
+[![s390x/dart build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/s390x/job/dart.svg?label=s390x/dart%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/dart/)
 
 # Quick reference (cont.)
 

@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `s390x` builds of [the `nextcloud` official image](https://hub.docker.com/_/nextcloud) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -33,6 +35,8 @@ WARNING:
 -	[`22.0.0-apache`, `22.0-apache`, `22-apache`, `apache`, `22.0.0`, `22.0`, `22`, `latest`](https://github.com/nextcloud/docker/blob/b6b9499252cd572f3bb903f2cb04d36ea880573f/22.0/apache/Dockerfile)
 -	[`22.0.0-fpm`, `22.0-fpm`, `22-fpm`, `fpm`](https://github.com/nextcloud/docker/blob/b6b9499252cd572f3bb903f2cb04d36ea880573f/22.0/fpm/Dockerfile)
 -	[`22.0.0-fpm-alpine`, `22.0-fpm-alpine`, `22-fpm-alpine`, `fpm-alpine`](https://github.com/nextcloud/docker/blob/b6b9499252cd572f3bb903f2cb04d36ea880573f/22.0/fpm-alpine/Dockerfile)
+
+[![s390x/nextcloud build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/s390x/job/nextcloud.svg?label=s390x/nextcloud%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/nextcloud/)
 
 # Quick reference (cont.)
 
@@ -74,7 +78,7 @@ The second option is a `fpm` container. It is based on the [php-fpm](https://hub
 The apache image contains a webserver and exposes port 80. To start the container type:
 
 ```console
-$ docker run -d -p 8080:80 nextcloud
+$ docker run -d -p 8080:80 s390x/nextcloud
 ```
 
 Now you can access Nextcloud at http://localhost:8080/ from your host system.
@@ -84,7 +88,7 @@ Now you can access Nextcloud at http://localhost:8080/ from your host system.
 To use the fpm image, you need an additional web server that can proxy http-request to the fpm-port of the container. For fpm connection this container exposes port 9000. In most cases, you might want use another container or your host as proxy. If you use your host you can address your Nextcloud container directly on port 9000. If you use another container, make sure that you add them to the same docker network (via `docker run --network <NAME> ...` or a `docker-compose` file). In both cases you don't want to map the fpm port to your host.
 
 ```console
-$ docker run -d nextcloud:fpm
+$ docker run -d s390x/nextcloud:fpm
 ```
 
 As the fastCGI-Process is not capable of serving static files (style sheets, images, ...), the webserver needs access to these files. This can be achieved with the `volumes-from` option. You can find more information in the [docker-compose section](#running-this-image-with-docker-compose).
@@ -106,7 +110,7 @@ Nextcloud:
 	```console
 	$ docker run -d \
 	-v nextcloud:/var/www/html \
-	nextcloud
+	s390x/nextcloud
 	```
 
 Database:
@@ -139,7 +143,7 @@ $ docker run -d \
 	-v config:/var/www/html/config \
 	-v data:/var/www/html/data \
 	-v theme:/var/www/html/themes/<YOUR_CUSTOM_THEME> \
-	nextcloud
+	s390x/nextcloud
 ```
 
 ## Using the Nextcloud command-line interface
@@ -295,7 +299,7 @@ services:
       - MYSQL_USER=nextcloud
 
   app:
-    image: nextcloud
+    image: s390x/nextcloud
     restart: always
     ports:
       - 8080:80
@@ -341,7 +345,7 @@ services:
       - MYSQL_USER=nextcloud
 
   app:
-    image: nextcloud:fpm
+    image: s390x/nextcloud:fpm
     restart: always
     links:
       - db
@@ -457,10 +461,10 @@ Updating the Nextcloud container is done by pulling the new image, throwing away
 Since all data is stored in volumes, nothing gets lost. The startup script will check for the version in your volume and the installed docker version. If it finds a mismatch, it automatically starts the upgrade process. Don't forget to add all the volumes to your new container, so it works as expected.
 
 ```console
-$ docker pull nextcloud
+$ docker pull s390x/nextcloud
 $ docker stop <your_nextcloud_container>
 $ docker rm <your_nextcloud_container>
-$ docker run <OPTIONS> -d nextcloud
+$ docker run <OPTIONS> -d s390x/nextcloud
 ```
 
 Beware that you have to run the same command with the options that you used to initially start your Nextcloud. That includes volumes, port mapping.
@@ -477,7 +481,7 @@ $ docker-compose up -d
 A lot of people want to use additional functionality inside their Nextcloud installation. If the image does not include the packages you need, you can easily build your own image on top of it. Start your derived image with the `FROM` statement and add whatever you like.
 
 ```yaml
-FROM nextcloud:apache
+FROM s390x/nextcloud:apache
 
 RUN ...
 
@@ -626,13 +630,13 @@ If you got any questions or problems using the image, please visit our [Github R
 
 # Image Variants
 
-The `nextcloud` images come in many flavors, each designed for a specific use case.
+The `s390x/nextcloud` images come in many flavors, each designed for a specific use case.
 
-## `nextcloud:<version>`
+## `s390x/nextcloud:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `nextcloud:<version>-alpine`
+## `s390x/nextcloud:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
