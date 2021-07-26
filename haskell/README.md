@@ -24,10 +24,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`9.0.1-buster`, `9.0-buster`, `9-buster`, `buster`, `9.0.1`, `9.0`, `9`, `latest`](https://github.com/haskell/docker-haskell/blob/af0dc736060a89e40b87cf11af37e434d52bc10b/9.0/buster/Dockerfile)
--	[`9.0.1-stretch`, `9.0-stretch`, `9-stretch`, `stretch`](https://github.com/haskell/docker-haskell/blob/af0dc736060a89e40b87cf11af37e434d52bc10b/9.0/stretch/Dockerfile)
--	[`8.10.4-buster`, `8.10-buster`, `8-buster`, `8.10.4`, `8.10`, `8`](https://github.com/haskell/docker-haskell/blob/af0dc736060a89e40b87cf11af37e434d52bc10b/8.10/buster/Dockerfile)
--	[`8.10.4-stretch`, `8.10-stretch`, `8-stretch`](https://github.com/haskell/docker-haskell/blob/af0dc736060a89e40b87cf11af37e434d52bc10b/8.10/stretch/Dockerfile)
+-	[`9.0.1-buster`, `9.0-buster`, `9-buster`, `buster`, `9.0.1`, `9.0`, `9`, `latest`](https://github.com/haskell/docker-haskell/blob/d9bf04e3d561c3ccef4528bbe74d1c89552c6d35/9.0/buster/Dockerfile)
+-	[`9.0.1-stretch`, `9.0-stretch`, `9-stretch`, `stretch`](https://github.com/haskell/docker-haskell/blob/d9bf04e3d561c3ccef4528bbe74d1c89552c6d35/9.0/stretch/Dockerfile)
+-	[`8.10.4-buster`, `8.10-buster`, `8-buster`, `8.10.4`, `8.10`, `8`](https://github.com/haskell/docker-haskell/blob/d9bf04e3d561c3ccef4528bbe74d1c89552c6d35/8.10/buster/Dockerfile)
+-	[`8.10.4-stretch`, `8.10-stretch`, `8-stretch`](https://github.com/haskell/docker-haskell/blob/d9bf04e3d561c3ccef4528bbe74d1c89552c6d35/8.10/stretch/Dockerfile)
 
 # Quick reference (cont.)
 

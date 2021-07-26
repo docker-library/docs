@@ -24,13 +24,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8`, `8u302`, `8u302-al2`, `8-al2-full`, `8-al2-jdk`, `latest`](https://github.com/corretto/corretto-docker/blob/cb98621700a830682c8b3a50d74673a4838e37b2/8/jdk/al2/Dockerfile)
--	[`11`, `11.0.12`, `11.0.12-al2`, `11-al2-jdk`, `11-al2-full`](https://github.com/corretto/corretto-docker/blob/cb98621700a830682c8b3a50d74673a4838e37b2/11/jdk/al2/Dockerfile)
--	[`8-alpine`, `8u302-alpine`, `8-alpine-full`, `8-alpine-jdk`](https://github.com/corretto/corretto-docker/blob/cb98621700a830682c8b3a50d74673a4838e37b2/8/jdk/alpine/Dockerfile)
--	[`8-alpine-jre`, `8u302-alpine-jre`](https://github.com/corretto/corretto-docker/blob/cb98621700a830682c8b3a50d74673a4838e37b2/8/jre/alpine/Dockerfile)
--	[`11-alpine`, `11.0.12-alpine`, `11-alpine-full`, `11-alpine-jdk`](https://github.com/corretto/corretto-docker/blob/cb98621700a830682c8b3a50d74673a4838e37b2/11/jdk/alpine/Dockerfile)
--	[`16`, `16.0.1`, `16.0.1-al2`, `16-al2-jdk`, `16-al2-full`](https://github.com/corretto/corretto-docker/blob/cb98621700a830682c8b3a50d74673a4838e37b2/16/jdk/al2/Dockerfile)
--	[`16-alpine`, `16.0.1-alpine`, `16-alpine-full`, `16-alpine-jdk`](https://github.com/corretto/corretto-docker/blob/cb98621700a830682c8b3a50d74673a4838e37b2/16/jdk/alpine/Dockerfile)
+-	[`8`, `8u302`, `8u302-al2`, `8-al2-full`, `8-al2-jdk`, `latest`](https://github.com/corretto/corretto-docker/blob/487efb259edd1ff50910dbb1d90d29fae4593414/8/jdk/al2/Dockerfile)
+-	[`11`, `11.0.12`, `11.0.12-al2`, `11-al2-jdk`, `11-al2-full`](https://github.com/corretto/corretto-docker/blob/487efb259edd1ff50910dbb1d90d29fae4593414/11/jdk/al2/Dockerfile)
+-	[`8-alpine`, `8u302-alpine`, `8-alpine-full`, `8-alpine-jdk`](https://github.com/corretto/corretto-docker/blob/487efb259edd1ff50910dbb1d90d29fae4593414/8/jdk/alpine/Dockerfile)
+-	[`8-alpine-jre`, `8u302-alpine-jre`](https://github.com/corretto/corretto-docker/blob/487efb259edd1ff50910dbb1d90d29fae4593414/8/jre/alpine/Dockerfile)
+-	[`11-alpine`, `11.0.12-alpine`, `11-alpine-full`, `11-alpine-jdk`](https://github.com/corretto/corretto-docker/blob/487efb259edd1ff50910dbb1d90d29fae4593414/11/jdk/alpine/Dockerfile)
+-	[`16`, `16.0.2`, `16.0.2-al2`, `16-al2-jdk`, `16-al2-full`](https://github.com/corretto/corretto-docker/blob/487efb259edd1ff50910dbb1d90d29fae4593414/16/jdk/al2/Dockerfile)
+-	[`16-alpine`, `16.0.2-alpine`, `16-alpine-full`, `16-alpine-jdk`](https://github.com/corretto/corretto-docker/blob/487efb259edd1ff50910dbb1d90d29fae4593414/16/jdk/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
