@@ -183,6 +183,14 @@ See [the "Configuration" section of the `php` image documentation](https://hub.d
 
 For example, to adjust common `php.ini` flags like `upload_max_filesize`, you could create a `custom.ini` with the desired parameters and place it in the `$PHP_INI_DIR/conf.d/` directory.
 
+## Serving from a subdirectory
+
+Your proxy needs to be configured to pass on the subdirectory path to wordpress. Then set-up a volume to mount on /var/www/html/ and create the subdirectory, e.g. `/var/www/html/blog` with appropriate permissions (writable for the user ID of the container user, by default effective UID:GID `33:33` on the debian based images). You need to set-up the subdirectory before you launch the container the first time. Alternatively you can simply move the existing files into the subdirectory.
+
+Then run the image with `-w="/var/www/html/wordpress"`, or set it via `working_dir:` if you're using docker-compose. Also set `WP_HOME` and `WP_SITEURL` (with the subdir at the end) using `WORDPRESS_CONFIG_EXTRA` to be sure wordpress is configured correctly (e.g. `.
+
+Other solutions like stripping off the subdirectory before forwarding to wordpress but keeping the subsit in `WP_HOME / WP_SITEURL` need nasty hacks (see [wp-admin in subdirectory](https://stackoverflow.com/questions/58466606/can-t-access-admin-when-wordpress-is-in-a-subfolder/67431213#67431213) and might land you in infinite redirect loops, depending on your set-up.
+
 # Image Variants
 
 The `wordpress` images come in many flavors, each designed for a specific use case.
