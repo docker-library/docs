@@ -87,3 +87,4 @@ $ docker run -it -v /logs -v /data %%IMAGE%% storm nimbus
 You can show your appreciation for the project and support future development by donating.
 
 [![Donate using Liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/31z4/donate)
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/V7V45J6TW)
