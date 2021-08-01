@@ -161,3 +161,12 @@ $ docker run --name some-zookeeper --restart always -e ZOO_LOG4J_PROP="INFO,ROLL
 This will write logs to `/logs/zookeeper.log`. Check [ZooKeeper Logging](https://zookeeper.apache.org/doc/current/zookeeperAdmin.html#sc_logging) for more details.
 
 This image is configured with a volume at `/logs` for your convenience.
+
+# Support and donate
+
+You can show your appreciation for the project and support future development by donating.
+
+[![Donate using Liberapay][1]][2]
+
+[1]: https://liberapay.com/assets/widgets/donate.svg
+[2]: https://liberapay.com/31z4/donate
