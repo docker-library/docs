@@ -152,12 +152,20 @@ This image is configured with volumes at `/data` and `/datalog` to hold the Zook
 
 ## How to configure logging
 
-By default, ZooKeeper redirects stdout/stderr outputs to the console. You can redirect to a file located in `/logs` by passing environment variable `ZOO_LOG4J_PROP` as follows:
+By default, ZooKeeper redirects stdout/stderr outputs to the console. Since 3.8 ZooKeeper is shipped with [LOGBack](https://logback.qos.ch/) as the logging backend. The ZooKeeper default `logback.xml` file resides in the `/conf` directory. To override default logging configuration mount your custom config as a volume:
+
+```console
+$ docker run --name some-zookeeper --restart always -d -v $(pwd)/logback.xml:/conf/logback.xml %%IMAGE%%
+```
+
+Check [ZooKeeper Logging](https://zookeeper.apache.org/doc/current/zookeeperAdmin.html#sc_logging) for more details.
+
+### Logging in 3.7
+
+You can redirect to a file located in `/logs` by passing environment variable `ZOO_LOG4J_PROP` as follows:
 
 ```console
 $ docker run --name some-zookeeper --restart always -e ZOO_LOG4J_PROP="INFO,ROLLINGFILE" %%IMAGE%%
 ```
 
-This will write logs to `/logs/zookeeper.log`. Check [ZooKeeper Logging](https://zookeeper.apache.org/doc/current/zookeeperAdmin.html#sc_logging) for more details.
-
-This image is configured with a volume at `/logs` for your convenience.
+This will write logs to `/logs/zookeeper.log`. This image is configured with a volume at `/logs` for your convenience.
