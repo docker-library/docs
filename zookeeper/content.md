@@ -166,7 +166,4 @@ This image is configured with a volume at `/logs` for your convenience.
 
 You can show your appreciation for the project and support future development by donating.
 
-[![Donate using Liberapay][1]][2]
-
-[1]: https://liberapay.com/assets/widgets/donate.svg
-[2]: https://liberapay.com/31z4/donate
+[![Donate using Liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/31z4/donate)
