@@ -24,12 +24,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.2.1`, `4.2`, `4`, `latest`](https://github.com/docker-library/redmine/blob/7736d321ea194e82731f0fa79b8a91f053e36aa2/4.2/Dockerfile)
--	[`4.2.1-passenger`, `4.2-passenger`, `4-passenger`, `passenger`](https://github.com/docker-library/redmine/blob/88e2dafa2719a4196069257c2049f1a4ae457551/4.2/passenger/Dockerfile)
--	[`4.2.1-alpine`, `4.2-alpine`, `4-alpine`, `alpine`](https://github.com/docker-library/redmine/blob/02809f9dead7b26e490f84107c7a2170f11fd2b9/4.2/alpine/Dockerfile)
--	[`4.1.3`, `4.1`](https://github.com/docker-library/redmine/blob/7736d321ea194e82731f0fa79b8a91f053e36aa2/4.1/Dockerfile)
--	[`4.1.3-passenger`, `4.1-passenger`](https://github.com/docker-library/redmine/blob/88e2dafa2719a4196069257c2049f1a4ae457551/4.1/passenger/Dockerfile)
--	[`4.1.3-alpine`, `4.1-alpine`](https://github.com/docker-library/redmine/blob/02809f9dead7b26e490f84107c7a2170f11fd2b9/4.1/alpine/Dockerfile)
+-	[`4.2.2`, `4.2`, `4`, `latest`](https://github.com/docker-library/redmine/blob/dbfcdff61cd9da51b2a5bd5146a381fa4c3776d8/4.2/Dockerfile)
+-	[`4.2.2-passenger`, `4.2-passenger`, `4-passenger`, `passenger`](https://github.com/docker-library/redmine/blob/88e2dafa2719a4196069257c2049f1a4ae457551/4.2/passenger/Dockerfile)
+-	[`4.2.2-alpine`, `4.2-alpine`, `4-alpine`, `alpine`](https://github.com/docker-library/redmine/blob/dbfcdff61cd9da51b2a5bd5146a381fa4c3776d8/4.2/alpine/Dockerfile)
+-	[`4.1.4`, `4.1`](https://github.com/docker-library/redmine/blob/b31875ae4c7534c0699ff0ffd5513cbb39813f44/4.1/Dockerfile)
+-	[`4.1.4-passenger`, `4.1-passenger`](https://github.com/docker-library/redmine/blob/88e2dafa2719a4196069257c2049f1a4ae457551/4.1/passenger/Dockerfile)
+-	[`4.1.4-alpine`, `4.1-alpine`](https://github.com/docker-library/redmine/blob/b31875ae4c7534c0699ff0ffd5513cbb39813f44/4.1/alpine/Dockerfile)
 -	[`4.0.9`, `4.0`](https://github.com/docker-library/redmine/blob/02809f9dead7b26e490f84107c7a2170f11fd2b9/4.0/Dockerfile)
 -	[`4.0.9-passenger`, `4.0-passenger`](https://github.com/docker-library/redmine/blob/88e2dafa2719a4196069257c2049f1a4ae457551/4.0/passenger/Dockerfile)
 -	[`4.0.9-alpine`, `4.0-alpine`](https://github.com/docker-library/redmine/blob/02809f9dead7b26e490f84107c7a2170f11fd2b9/4.0/alpine/Dockerfile)
