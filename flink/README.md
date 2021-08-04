@@ -24,10 +24,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.13.1-scala_2.12-java8`, `1.13-scala_2.12-java8`, `scala_2.12-java8`, `1.13.1-scala_2.12`, `1.13-scala_2.12`, `scala_2.12`, `1.13.1-java8`, `1.13-java8`, `java8`, `1.13.1`, `1.13`, `latest`](https://github.com/apache/flink-docker/blob/4ddcc63ad5c333857eb6230da018505f51776d5e/1.13/scala_2.12-java8-debian/Dockerfile)
--	[`1.13.1-scala_2.12-java11`, `1.13-scala_2.12-java11`, `scala_2.12-java11`, `1.13.1-java11`, `1.13-java11`, `java11`](https://github.com/apache/flink-docker/blob/4ddcc63ad5c333857eb6230da018505f51776d5e/1.13/scala_2.12-java11-debian/Dockerfile)
--	[`1.13.1-scala_2.11-java8`, `1.13-scala_2.11-java8`, `scala_2.11-java8`, `1.13.1-scala_2.11`, `1.13-scala_2.11`, `scala_2.11`](https://github.com/apache/flink-docker/blob/4ddcc63ad5c333857eb6230da018505f51776d5e/1.13/scala_2.11-java8-debian/Dockerfile)
--	[`1.13.1-scala_2.11-java11`, `1.13-scala_2.11-java11`, `scala_2.11-java11`](https://github.com/apache/flink-docker/blob/4ddcc63ad5c333857eb6230da018505f51776d5e/1.13/scala_2.11-java11-debian/Dockerfile)
+-	[`1.13.2-scala_2.12-java8`, `1.13-scala_2.12-java8`, `scala_2.12-java8`, `1.13.2-scala_2.12`, `1.13-scala_2.12`, `scala_2.12`, `1.13.2-java8`, `1.13-java8`, `java8`, `1.13.2`, `1.13`, `latest`](https://github.com/apache/flink-docker/blob/ab6ff6d7b56c2a6257763261ec5498b90e88175a/1.13/scala_2.12-java8-debian/Dockerfile)
+-	[`1.13.2-scala_2.12-java11`, `1.13-scala_2.12-java11`, `scala_2.12-java11`, `1.13.2-java11`, `1.13-java11`, `java11`](https://github.com/apache/flink-docker/blob/ab6ff6d7b56c2a6257763261ec5498b90e88175a/1.13/scala_2.12-java11-debian/Dockerfile)
+-	[`1.13.2-scala_2.11-java8`, `1.13-scala_2.11-java8`, `scala_2.11-java8`, `1.13.2-scala_2.11`, `1.13-scala_2.11`, `scala_2.11`](https://github.com/apache/flink-docker/blob/ab6ff6d7b56c2a6257763261ec5498b90e88175a/1.13/scala_2.11-java8-debian/Dockerfile)
+-	[`1.13.2-scala_2.11-java11`, `1.13-scala_2.11-java11`, `scala_2.11-java11`](https://github.com/apache/flink-docker/blob/ab6ff6d7b56c2a6257763261ec5498b90e88175a/1.13/scala_2.11-java11-debian/Dockerfile)
 -	[`1.12.5-scala_2.12-java8`, `1.12-scala_2.12-java8`, `1.12.5-scala_2.12`, `1.12-scala_2.12`, `1.12.5-java8`, `1.12-java8`, `1.12.5`, `1.12`](https://github.com/apache/flink-docker/blob/46ad7729983875edeb753792590fa1b3ef3f7af2/1.12/scala_2.12-java8-debian/Dockerfile)
 -	[`1.12.5-scala_2.12-java11`, `1.12-scala_2.12-java11`, `1.12.5-java11`, `1.12-java11`](https://github.com/apache/flink-docker/blob/46ad7729983875edeb753792590fa1b3ef3f7af2/1.12/scala_2.12-java11-debian/Dockerfile)
 -	[`1.12.5-scala_2.11-java8`, `1.12-scala_2.11-java8`, `1.12.5-scala_2.11`, `1.12-scala_2.11`](https://github.com/apache/flink-docker/blob/46ad7729983875edeb753792590fa1b3ef3f7af2/1.12/scala_2.11-java8-debian/Dockerfile)

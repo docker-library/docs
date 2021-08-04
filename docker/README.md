@@ -28,11 +28,11 @@ WARNING:
 
 ## Simple Tags
 
--	[`20.10.7`, `20.10`, `20`, `latest`](https://github.com/docker-library/docker/blob/279ba9c93e8e26a15171645bd511ea8476c4706e/20.10/Dockerfile)
--	[`20.10.7-dind`, `20.10-dind`, `20-dind`, `dind`](https://github.com/docker-library/docker/blob/8baa881aab85f8398d2edbbcc0da4bd1f556dd98/20.10/dind/Dockerfile)
--	[`20.10.7-dind-rootless`, `20.10-dind-rootless`, `20-dind-rootless`, `dind-rootless`](https://github.com/docker-library/docker/blob/2ab877f315206028bb9352d86e28c71b25723bf2/20.10/dind-rootless/Dockerfile)
--	[`20.10.7-git`, `20.10-git`, `20-git`, `git`](https://github.com/docker-library/docker/blob/387e351394bfad74bceebf8303c6c8e39c3d4ed4/20.10/git/Dockerfile)
--	[`20.10.7-windowsservercore-1809`, `20.10-windowsservercore-1809`, `20-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/docker-library/docker/blob/279ba9c93e8e26a15171645bd511ea8476c4706e/20.10/windows/windowsservercore-1809/Dockerfile)
+-	[`20.10.8`, `20.10`, `20`, `latest`](https://github.com/docker-library/docker/blob/75e26edc9ea7fff4aa3212fafa5966f4d6b00022/20.10/Dockerfile)
+-	[`20.10.8-dind`, `20.10-dind`, `20-dind`, `dind`](https://github.com/docker-library/docker/blob/8baa881aab85f8398d2edbbcc0da4bd1f556dd98/20.10/dind/Dockerfile)
+-	[`20.10.8-dind-rootless`, `20.10-dind-rootless`, `20-dind-rootless`, `dind-rootless`](https://github.com/docker-library/docker/blob/83e4de3bc2aac346e2f76129b1a3a556c1e1bb95/20.10/dind-rootless/Dockerfile)
+-	[`20.10.8-git`, `20.10-git`, `20-git`, `git`](https://github.com/docker-library/docker/blob/387e351394bfad74bceebf8303c6c8e39c3d4ed4/20.10/git/Dockerfile)
+-	[`20.10.8-windowsservercore-1809`, `20.10-windowsservercore-1809`, `20-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/docker-library/docker/blob/83e4de3bc2aac346e2f76129b1a3a556c1e1bb95/20.10/windows/windowsservercore-1809/Dockerfile)
 -	[`19.03.15`, `19.03`, `19`](https://github.com/docker-library/docker/blob/835c371c516ebdf67adc0c76bbfb38bf9d3e586c/19.03/Dockerfile)
 -	[`19.03.15-dind`, `19.03-dind`, `19-dind`](https://github.com/docker-library/docker/blob/8baa881aab85f8398d2edbbcc0da4bd1f556dd98/19.03/dind/Dockerfile)
 -	[`19.03.15-dind-rootless`, `19.03-dind-rootless`, `19-dind-rootless`](https://github.com/docker-library/docker/blob/835c371c516ebdf67adc0c76bbfb38bf9d3e586c/19.03/dind-rootless/Dockerfile)
@@ -40,8 +40,8 @@ WARNING:
 
 ## Shared Tags
 
--	`20.10.7-windowsservercore`, `20.10-windowsservercore`, `20-windowsservercore`, `windowsservercore`:
-	-	[`20.10.7-windowsservercore-1809`](https://github.com/docker-library/docker/blob/279ba9c93e8e26a15171645bd511ea8476c4706e/20.10/windows/windowsservercore-1809/Dockerfile)
+-	`20.10.8-windowsservercore`, `20.10-windowsservercore`, `20-windowsservercore`, `windowsservercore`:
+	-	[`20.10.8-windowsservercore-1809`](https://github.com/docker-library/docker/blob/83e4de3bc2aac346e2f76129b1a3a556c1e1bb95/20.10/windows/windowsservercore-1809/Dockerfile)
 
 # Quick reference (cont.)
 
