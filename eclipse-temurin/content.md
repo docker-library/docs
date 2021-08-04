@@ -36,9 +36,9 @@ docker build -t japp .
 docker run -it --rm japp
 ```
 
-## Using a different base Image
+### Using a different base Image
 
-If you are using a distribution that we don't provide an image for you can copy the JDK using a similar Dockerfile to the one below.
+If you are using a distribution that we don't provide an image for you can copy the JDK using a similar Dockerfile to the one below:
 
 ```dockerfile
 # Example
@@ -48,7 +48,8 @@ COPY --from=%%IMAGE%%:11 $JAVA_HOME $JAVA_HOME
 ENV PATH="${JAVA_HOME}/bin:${PATH}"
 ```
 
-## Creating a JRE using jlink
+### Creating a JRE using jlink
+
 On OpenJDK 11+, a JRE can be generated using `jlink`, see the following Dockerfile:
 
 ```dockerfile
