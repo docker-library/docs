@@ -24,8 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.0`, `6.0.8-1`, `6.0.8`, `stable`](https://github.com/varnish/docker-varnish/blob/4cfd65e1d3bd4eb9518d8e7590d9fec1de6a50c4/stable/debian/Dockerfile)
--	[`6.6`, `6.6.1-1`, `6.6.1`, `6`, `latest`, `fresh`](https://github.com/varnish/docker-varnish/blob/4cfd65e1d3bd4eb9518d8e7590d9fec1de6a50c4/fresh/debian/Dockerfile)
+-	[`fresh`, `6.6.1`, `6.6`, `latest`](https://github.com/varnish/docker-varnish/blob/32e4b6f9ba7a00d449205c5cff79325309f1d691/fresh/debian/Dockerfile)
+-	[`fresh-alpine`, `6.6.1-alpine`, `6.6-alpine`, `alpine`](https://github.com/varnish/docker-varnish/blob/32e4b6f9ba7a00d449205c5cff79325309f1d691/fresh/alpine/Dockerfile)
+-	[`stable`, `6.0.8`, `6.0`](https://github.com/varnish/docker-varnish/blob/32e4b6f9ba7a00d449205c5cff79325309f1d691/stable/debian/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -33,7 +34,7 @@ WARNING:
 	[https://github.com/varnish/docker-varnish/issues](https://github.com/varnish/docker-varnish/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/varnish/)
+	[`amd64`](https://hub.docker.com/r/amd64/varnish/), [`arm32v7`](https://hub.docker.com/r/arm32v7/varnish/), [`arm64v8`](https://hub.docker.com/r/arm64v8/varnish/), [`i386`](https://hub.docker.com/r/i386/varnish/), [`ppc64le`](https://hub.docker.com/r/ppc64le/varnish/), [`s390x`](https://hub.docker.com/r/s390x/varnish/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/varnish/` directory](https://github.com/docker-library/repo-info/blob/master/repos/varnish) ([history](https://github.com/docker-library/repo-info/commits/master/repos/varnish))  
@@ -125,6 +126,22 @@ $ docker run varnish varnishd -a :8080 -b 127.0.0.1:8181 -t 600 -p feature=+http
 ```
 
 Then you can hit `http://localhost:8080` or `http://host-ip:8080` in your browser.
+
+# Image Variants
+
+The `varnish` images come in many flavors, each designed for a specific use case.
+
+## `varnish:<version>`
+
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+## `varnish:<version>-alpine`
+
+This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+
+This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+
+To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 # License
 

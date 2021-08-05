@@ -24,9 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.4.48`, `2.4`, `2`, `latest`, `2.4.48-buster`, `2.4-buster`, `2-buster`, `buster`](https://github.com/docker-library/httpd/blob/6d68525ac47c0474d3d74269b2669104c1d867dd/2.4/Dockerfile)
--	[`2.4.48-alpine`, `2.4-alpine`, `2-alpine`, `alpine`, `2.4.48-alpine3.14`, `2.4-alpine3.14`, `2-alpine3.14`, `alpine3.14`](https://github.com/docker-library/httpd/blob/6d68525ac47c0474d3d74269b2669104c1d867dd/2.4/alpine/Dockerfile)
--	[`2.4.48-alpine3.13`, `2.4-alpine3.13`, `2-alpine3.13`, `alpine3.13`](https://github.com/docker-library/httpd/blob/8835b23f748f80bcec510c14b68c84bc37767cdb/2.4/alpine/Dockerfile)
+-	[`2.4.48`, `2.4`, `2`, `latest`, `2.4.48-buster`, `2.4-buster`, `2-buster`, `buster`](https://github.com/docker-library/httpd/blob/208fc2ba9a097530bb0b7386b0c2bebacdfb6c5c/2.4/Dockerfile)
+-	[`2.4.48-alpine`, `2.4-alpine`, `2-alpine`, `alpine`, `2.4.48-alpine3.14`, `2.4-alpine3.14`, `2-alpine3.14`, `alpine3.14`](https://github.com/docker-library/httpd/blob/208fc2ba9a097530bb0b7386b0c2bebacdfb6c5c/2.4/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
