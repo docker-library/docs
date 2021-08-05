@@ -24,14 +24,14 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.1.0beta1-cli-buster`, `8.1-rc-cli-buster`, `8.1.0beta1-buster`, `8.1-rc-buster`, `8.1.0beta1-cli`, `8.1-rc-cli`, `8.1.0beta1`, `8.1-rc`](https://github.com/docker-library/php/blob/3490a5c50be8023f87fd21341a713ea17519e85c/8.1-rc/buster/cli/Dockerfile)
--	[`8.1.0beta1-apache-buster`, `8.1-rc-apache-buster`, `8.1.0beta1-apache`, `8.1-rc-apache`](https://github.com/docker-library/php/blob/3490a5c50be8023f87fd21341a713ea17519e85c/8.1-rc/buster/apache/Dockerfile)
--	[`8.1.0beta1-fpm-buster`, `8.1-rc-fpm-buster`, `8.1.0beta1-fpm`, `8.1-rc-fpm`](https://github.com/docker-library/php/blob/3490a5c50be8023f87fd21341a713ea17519e85c/8.1-rc/buster/fpm/Dockerfile)
--	[`8.1.0beta1-zts-buster`, `8.1-rc-zts-buster`, `8.1.0beta1-zts`, `8.1-rc-zts`](https://github.com/docker-library/php/blob/3490a5c50be8023f87fd21341a713ea17519e85c/8.1-rc/buster/zts/Dockerfile)
--	[`8.1.0beta1-cli-alpine3.14`, `8.1-rc-cli-alpine3.14`, `8.1.0beta1-alpine3.14`, `8.1-rc-alpine3.14`, `8.1.0beta1-cli-alpine`, `8.1-rc-cli-alpine`, `8.1.0beta1-alpine`, `8.1-rc-alpine`](https://github.com/docker-library/php/blob/3490a5c50be8023f87fd21341a713ea17519e85c/8.1-rc/alpine3.14/cli/Dockerfile)
--	[`8.1.0beta1-fpm-alpine3.14`, `8.1-rc-fpm-alpine3.14`, `8.1.0beta1-fpm-alpine`, `8.1-rc-fpm-alpine`](https://github.com/docker-library/php/blob/3490a5c50be8023f87fd21341a713ea17519e85c/8.1-rc/alpine3.14/fpm/Dockerfile)
--	[`8.1.0beta1-cli-alpine3.13`, `8.1-rc-cli-alpine3.13`, `8.1.0beta1-alpine3.13`, `8.1-rc-alpine3.13`](https://github.com/docker-library/php/blob/3490a5c50be8023f87fd21341a713ea17519e85c/8.1-rc/alpine3.13/cli/Dockerfile)
--	[`8.1.0beta1-fpm-alpine3.13`, `8.1-rc-fpm-alpine3.13`](https://github.com/docker-library/php/blob/3490a5c50be8023f87fd21341a713ea17519e85c/8.1-rc/alpine3.13/fpm/Dockerfile)
+-	[`8.1.0beta2-cli-buster`, `8.1-rc-cli-buster`, `8.1.0beta2-buster`, `8.1-rc-buster`, `8.1.0beta2-cli`, `8.1-rc-cli`, `8.1.0beta2`, `8.1-rc`](https://github.com/docker-library/php/blob/d2b630dc89b257cb80d6fc99e177caae152830b8/8.1-rc/buster/cli/Dockerfile)
+-	[`8.1.0beta2-apache-buster`, `8.1-rc-apache-buster`, `8.1.0beta2-apache`, `8.1-rc-apache`](https://github.com/docker-library/php/blob/d2b630dc89b257cb80d6fc99e177caae152830b8/8.1-rc/buster/apache/Dockerfile)
+-	[`8.1.0beta2-fpm-buster`, `8.1-rc-fpm-buster`, `8.1.0beta2-fpm`, `8.1-rc-fpm`](https://github.com/docker-library/php/blob/d2b630dc89b257cb80d6fc99e177caae152830b8/8.1-rc/buster/fpm/Dockerfile)
+-	[`8.1.0beta2-zts-buster`, `8.1-rc-zts-buster`, `8.1.0beta2-zts`, `8.1-rc-zts`](https://github.com/docker-library/php/blob/d2b630dc89b257cb80d6fc99e177caae152830b8/8.1-rc/buster/zts/Dockerfile)
+-	[`8.1.0beta2-cli-alpine3.14`, `8.1-rc-cli-alpine3.14`, `8.1.0beta2-alpine3.14`, `8.1-rc-alpine3.14`, `8.1.0beta2-cli-alpine`, `8.1-rc-cli-alpine`, `8.1.0beta2-alpine`, `8.1-rc-alpine`](https://github.com/docker-library/php/blob/d2b630dc89b257cb80d6fc99e177caae152830b8/8.1-rc/alpine3.14/cli/Dockerfile)
+-	[`8.1.0beta2-fpm-alpine3.14`, `8.1-rc-fpm-alpine3.14`, `8.1.0beta2-fpm-alpine`, `8.1-rc-fpm-alpine`](https://github.com/docker-library/php/blob/d2b630dc89b257cb80d6fc99e177caae152830b8/8.1-rc/alpine3.14/fpm/Dockerfile)
+-	[`8.1.0beta2-cli-alpine3.13`, `8.1-rc-cli-alpine3.13`, `8.1.0beta2-alpine3.13`, `8.1-rc-alpine3.13`](https://github.com/docker-library/php/blob/d2b630dc89b257cb80d6fc99e177caae152830b8/8.1-rc/alpine3.13/cli/Dockerfile)
+-	[`8.1.0beta2-fpm-alpine3.13`, `8.1-rc-fpm-alpine3.13`](https://github.com/docker-library/php/blob/d2b630dc89b257cb80d6fc99e177caae152830b8/8.1-rc/alpine3.13/fpm/Dockerfile)
 -	[`8.0.9-cli-buster`, `8.0-cli-buster`, `8-cli-buster`, `cli-buster`, `8.0.9-buster`, `8.0-buster`, `8-buster`, `buster`, `8.0.9-cli`, `8.0-cli`, `8-cli`, `cli`, `8.0.9`, `8.0`, `8`, `latest`](https://github.com/docker-library/php/blob/a1fd650238cd68fbf3e1998f4ce4ea4ad5324dac/8.0/buster/cli/Dockerfile)
 -	[`8.0.9-apache-buster`, `8.0-apache-buster`, `8-apache-buster`, `apache-buster`, `8.0.9-apache`, `8.0-apache`, `8-apache`, `apache`](https://github.com/docker-library/php/blob/a1fd650238cd68fbf3e1998f4ce4ea4ad5324dac/8.0/buster/apache/Dockerfile)
 -	[`8.0.9-fpm-buster`, `8.0-fpm-buster`, `8-fpm-buster`, `fpm-buster`, `8.0.9-fpm`, `8.0-fpm`, `8-fpm`, `fpm`](https://github.com/docker-library/php/blob/a1fd650238cd68fbf3e1998f4ce4ea4ad5324dac/8.0/buster/fpm/Dockerfile)
