@@ -28,13 +28,13 @@ WARNING:
 
 ## Simple Tags
 
--	[`18-ea-8-jdk-oraclelinux8`, `18-ea-8-oraclelinux8`, `18-ea-jdk-oraclelinux8`, `18-ea-oraclelinux8`, `18-jdk-oraclelinux8`, `18-oraclelinux8`, `18-ea-8-jdk-oracle`, `18-ea-8-oracle`, `18-ea-jdk-oracle`, `18-ea-oracle`, `18-jdk-oracle`, `18-oracle`](https://github.com/docker-library/openjdk/blob/a63d637823f2e16ff01ee3691a65e67589df3046/18/jdk/oraclelinux8/Dockerfile)
--	[`18-ea-8-jdk-oraclelinux7`, `18-ea-8-oraclelinux7`, `18-ea-jdk-oraclelinux7`, `18-ea-oraclelinux7`, `18-jdk-oraclelinux7`, `18-oraclelinux7`](https://github.com/docker-library/openjdk/blob/a63d637823f2e16ff01ee3691a65e67589df3046/18/jdk/oraclelinux7/Dockerfile)
--	[`18-ea-8-jdk-buster`, `18-ea-8-buster`, `18-ea-jdk-buster`, `18-ea-buster`, `18-jdk-buster`, `18-buster`](https://github.com/docker-library/openjdk/blob/a63d637823f2e16ff01ee3691a65e67589df3046/18/jdk/buster/Dockerfile)
--	[`18-ea-8-jdk-slim-buster`, `18-ea-8-slim-buster`, `18-ea-jdk-slim-buster`, `18-ea-slim-buster`, `18-jdk-slim-buster`, `18-slim-buster`, `18-ea-8-jdk-slim`, `18-ea-8-slim`, `18-ea-jdk-slim`, `18-ea-slim`, `18-jdk-slim`, `18-slim`](https://github.com/docker-library/openjdk/blob/a63d637823f2e16ff01ee3691a65e67589df3046/18/jdk/slim-buster/Dockerfile)
--	[`18-ea-8-jdk-windowsservercore-1809`, `18-ea-8-windowsservercore-1809`, `18-ea-jdk-windowsservercore-1809`, `18-ea-windowsservercore-1809`, `18-jdk-windowsservercore-1809`, `18-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/a63d637823f2e16ff01ee3691a65e67589df3046/18/jdk/windows/windowsservercore-1809/Dockerfile)
--	[`18-ea-8-jdk-windowsservercore-ltsc2016`, `18-ea-8-windowsservercore-ltsc2016`, `18-ea-jdk-windowsservercore-ltsc2016`, `18-ea-windowsservercore-ltsc2016`, `18-jdk-windowsservercore-ltsc2016`, `18-windowsservercore-ltsc2016`](https://github.com/docker-library/openjdk/blob/a63d637823f2e16ff01ee3691a65e67589df3046/18/jdk/windows/windowsservercore-ltsc2016/Dockerfile)
--	[`18-ea-8-jdk-nanoserver-1809`, `18-ea-8-nanoserver-1809`, `18-ea-jdk-nanoserver-1809`, `18-ea-nanoserver-1809`, `18-jdk-nanoserver-1809`, `18-nanoserver-1809`](https://github.com/docker-library/openjdk/blob/a63d637823f2e16ff01ee3691a65e67589df3046/18/jdk/windows/nanoserver-1809/Dockerfile)
+-	[`18-ea-9-jdk-oraclelinux8`, `18-ea-9-oraclelinux8`, `18-ea-jdk-oraclelinux8`, `18-ea-oraclelinux8`, `18-jdk-oraclelinux8`, `18-oraclelinux8`, `18-ea-9-jdk-oracle`, `18-ea-9-oracle`, `18-ea-jdk-oracle`, `18-ea-oracle`, `18-jdk-oracle`, `18-oracle`](https://github.com/docker-library/openjdk/blob/b00ee0ef38e6cc40049b893d3eb6695c6a493b9a/18/jdk/oraclelinux8/Dockerfile)
+-	[`18-ea-9-jdk-oraclelinux7`, `18-ea-9-oraclelinux7`, `18-ea-jdk-oraclelinux7`, `18-ea-oraclelinux7`, `18-jdk-oraclelinux7`, `18-oraclelinux7`](https://github.com/docker-library/openjdk/blob/b00ee0ef38e6cc40049b893d3eb6695c6a493b9a/18/jdk/oraclelinux7/Dockerfile)
+-	[`18-ea-9-jdk-buster`, `18-ea-9-buster`, `18-ea-jdk-buster`, `18-ea-buster`, `18-jdk-buster`, `18-buster`](https://github.com/docker-library/openjdk/blob/b00ee0ef38e6cc40049b893d3eb6695c6a493b9a/18/jdk/buster/Dockerfile)
+-	[`18-ea-9-jdk-slim-buster`, `18-ea-9-slim-buster`, `18-ea-jdk-slim-buster`, `18-ea-slim-buster`, `18-jdk-slim-buster`, `18-slim-buster`, `18-ea-9-jdk-slim`, `18-ea-9-slim`, `18-ea-jdk-slim`, `18-ea-slim`, `18-jdk-slim`, `18-slim`](https://github.com/docker-library/openjdk/blob/b00ee0ef38e6cc40049b893d3eb6695c6a493b9a/18/jdk/slim-buster/Dockerfile)
+-	[`18-ea-9-jdk-windowsservercore-1809`, `18-ea-9-windowsservercore-1809`, `18-ea-jdk-windowsservercore-1809`, `18-ea-windowsservercore-1809`, `18-jdk-windowsservercore-1809`, `18-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/b00ee0ef38e6cc40049b893d3eb6695c6a493b9a/18/jdk/windows/windowsservercore-1809/Dockerfile)
+-	[`18-ea-9-jdk-windowsservercore-ltsc2016`, `18-ea-9-windowsservercore-ltsc2016`, `18-ea-jdk-windowsservercore-ltsc2016`, `18-ea-windowsservercore-ltsc2016`, `18-jdk-windowsservercore-ltsc2016`, `18-windowsservercore-ltsc2016`](https://github.com/docker-library/openjdk/blob/b00ee0ef38e6cc40049b893d3eb6695c6a493b9a/18/jdk/windows/windowsservercore-ltsc2016/Dockerfile)
+-	[`18-ea-9-jdk-nanoserver-1809`, `18-ea-9-nanoserver-1809`, `18-ea-jdk-nanoserver-1809`, `18-ea-nanoserver-1809`, `18-jdk-nanoserver-1809`, `18-nanoserver-1809`](https://github.com/docker-library/openjdk/blob/b00ee0ef38e6cc40049b893d3eb6695c6a493b9a/18/jdk/windows/nanoserver-1809/Dockerfile)
 -	[`17-ea-33-jdk-oraclelinux8`, `17-ea-33-oraclelinux8`, `17-ea-jdk-oraclelinux8`, `17-ea-oraclelinux8`, `17-jdk-oraclelinux8`, `17-oraclelinux8`, `17-ea-33-jdk-oracle`, `17-ea-33-oracle`, `17-ea-jdk-oracle`, `17-ea-oracle`, `17-jdk-oracle`, `17-oracle`](https://github.com/docker-library/openjdk/blob/501e71e2ada878d2e129b42ea6ebc19a7c286504/17/jdk/oraclelinux8/Dockerfile)
 -	[`17-ea-33-jdk-oraclelinux7`, `17-ea-33-oraclelinux7`, `17-ea-jdk-oraclelinux7`, `17-ea-oraclelinux7`, `17-jdk-oraclelinux7`, `17-oraclelinux7`](https://github.com/docker-library/openjdk/blob/501e71e2ada878d2e129b42ea6ebc19a7c286504/17/jdk/oraclelinux7/Dockerfile)
 -	[`17-ea-33-jdk-buster`, `17-ea-33-buster`, `17-ea-jdk-buster`, `17-ea-buster`, `17-jdk-buster`, `17-buster`](https://github.com/docker-library/openjdk/blob/501e71e2ada878d2e129b42ea6ebc19a7c286504/17/jdk/buster/Dockerfile)
@@ -78,15 +78,15 @@ WARNING:
 
 ## Shared Tags
 
--	`18-ea-8-jdk`, `18-ea-8`, `18-ea-jdk`, `18-ea`, `18-jdk`, `18`:
-	-	[`18-ea-8-jdk-oraclelinux8`](https://github.com/docker-library/openjdk/blob/a63d637823f2e16ff01ee3691a65e67589df3046/18/jdk/oraclelinux8/Dockerfile)
-	-	[`18-ea-8-jdk-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/a63d637823f2e16ff01ee3691a65e67589df3046/18/jdk/windows/windowsservercore-1809/Dockerfile)
-	-	[`18-ea-8-jdk-windowsservercore-ltsc2016`](https://github.com/docker-library/openjdk/blob/a63d637823f2e16ff01ee3691a65e67589df3046/18/jdk/windows/windowsservercore-ltsc2016/Dockerfile)
--	`18-ea-8-jdk-windowsservercore`, `18-ea-8-windowsservercore`, `18-ea-jdk-windowsservercore`, `18-ea-windowsservercore`, `18-jdk-windowsservercore`, `18-windowsservercore`:
-	-	[`18-ea-8-jdk-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/a63d637823f2e16ff01ee3691a65e67589df3046/18/jdk/windows/windowsservercore-1809/Dockerfile)
-	-	[`18-ea-8-jdk-windowsservercore-ltsc2016`](https://github.com/docker-library/openjdk/blob/a63d637823f2e16ff01ee3691a65e67589df3046/18/jdk/windows/windowsservercore-ltsc2016/Dockerfile)
--	`18-ea-8-jdk-nanoserver`, `18-ea-8-nanoserver`, `18-ea-jdk-nanoserver`, `18-ea-nanoserver`, `18-jdk-nanoserver`, `18-nanoserver`:
-	-	[`18-ea-8-jdk-nanoserver-1809`](https://github.com/docker-library/openjdk/blob/a63d637823f2e16ff01ee3691a65e67589df3046/18/jdk/windows/nanoserver-1809/Dockerfile)
+-	`18-ea-9-jdk`, `18-ea-9`, `18-ea-jdk`, `18-ea`, `18-jdk`, `18`:
+	-	[`18-ea-9-jdk-oraclelinux8`](https://github.com/docker-library/openjdk/blob/b00ee0ef38e6cc40049b893d3eb6695c6a493b9a/18/jdk/oraclelinux8/Dockerfile)
+	-	[`18-ea-9-jdk-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/b00ee0ef38e6cc40049b893d3eb6695c6a493b9a/18/jdk/windows/windowsservercore-1809/Dockerfile)
+	-	[`18-ea-9-jdk-windowsservercore-ltsc2016`](https://github.com/docker-library/openjdk/blob/b00ee0ef38e6cc40049b893d3eb6695c6a493b9a/18/jdk/windows/windowsservercore-ltsc2016/Dockerfile)
+-	`18-ea-9-jdk-windowsservercore`, `18-ea-9-windowsservercore`, `18-ea-jdk-windowsservercore`, `18-ea-windowsservercore`, `18-jdk-windowsservercore`, `18-windowsservercore`:
+	-	[`18-ea-9-jdk-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/b00ee0ef38e6cc40049b893d3eb6695c6a493b9a/18/jdk/windows/windowsservercore-1809/Dockerfile)
+	-	[`18-ea-9-jdk-windowsservercore-ltsc2016`](https://github.com/docker-library/openjdk/blob/b00ee0ef38e6cc40049b893d3eb6695c6a493b9a/18/jdk/windows/windowsservercore-ltsc2016/Dockerfile)
+-	`18-ea-9-jdk-nanoserver`, `18-ea-9-nanoserver`, `18-ea-jdk-nanoserver`, `18-ea-nanoserver`, `18-jdk-nanoserver`, `18-nanoserver`:
+	-	[`18-ea-9-jdk-nanoserver-1809`](https://github.com/docker-library/openjdk/blob/b00ee0ef38e6cc40049b893d3eb6695c6a493b9a/18/jdk/windows/nanoserver-1809/Dockerfile)
 -	`17-ea-33-jdk`, `17-ea-33`, `17-ea-jdk`, `17-ea`, `17-jdk`, `17`:
 	-	[`17-ea-33-jdk-oraclelinux8`](https://github.com/docker-library/openjdk/blob/501e71e2ada878d2e129b42ea6ebc19a7c286504/17/jdk/oraclelinux8/Dockerfile)
 	-	[`17-ea-33-jdk-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/501e71e2ada878d2e129b42ea6ebc19a7c286504/17/jdk/windows/windowsservercore-1809/Dockerfile)
