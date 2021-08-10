@@ -14,7 +14,7 @@ Current there are only JDK (Java Developer Kit) images. On OpenJDK 11+ JRE's can
 
 Docker Images for the following architectures are now available:
 
--	`amd64`
+- `amd64`, `arm64v8`, `ppc64le`
 
 More architecures will be available shortly.
 
