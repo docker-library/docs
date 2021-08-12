@@ -26,7 +26,6 @@ WARNING:
 
 -	[`18.04`, `bionic-20210723`, `bionic`](https://github.com/tianon/docker-brew-ubuntu-core/blob/a967c2b8734c77f7f89449d0b87c2e1eebf8b26e/bionic/Dockerfile)
 -	[`20.04`, `focal-20210723`, `focal`, `latest`](https://github.com/tianon/docker-brew-ubuntu-core/blob/a967c2b8734c77f7f89449d0b87c2e1eebf8b26e/focal/Dockerfile)
--	[`20.10`, `groovy-20210723`, `groovy`](https://github.com/tianon/docker-brew-ubuntu-core/blob/a967c2b8734c77f7f89449d0b87c2e1eebf8b26e/groovy/Dockerfile)
 -	[`21.04`, `hirsute-20210723`, `hirsute`, `rolling`](https://github.com/tianon/docker-brew-ubuntu-core/blob/a967c2b8734c77f7f89449d0b87c2e1eebf8b26e/hirsute/Dockerfile)
 -	[`21.10`, `impish-20210722`, `impish`, `devel`](https://github.com/tianon/docker-brew-ubuntu-core/blob/a967c2b8734c77f7f89449d0b87c2e1eebf8b26e/impish/Dockerfile)
 -	[`14.04`, `trusty-20191217`, `trusty`](https://github.com/tianon/docker-brew-ubuntu-core/blob/a967c2b8734c77f7f89449d0b87c2e1eebf8b26e/trusty/Dockerfile)
