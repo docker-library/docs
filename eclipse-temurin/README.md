@@ -101,17 +101,9 @@ The images in this repository contain OpenJDK binaries that are built by Eclipse
 
 The Eclipse Temurin project provides code and processes that support the building of runtime binaries and associated technologies that are high performance, enterprise-caliber, cross-platform, open-source licensed, and Java SE TCK-tested for general use across the Java ecosystem.
 
-# Images
+# Do you provide JRE (Java Runtime Environment) Images?
 
 Current there are only JDK (Java Developer Kit) images. On OpenJDK 11+ JRE's can be produced using `jlink` (see usage below).
-
-### Multi-Arch Image
-
-Docker Images for the following architectures are now available:
-
--	`amd64`, `windows-amd64`, `arm64v8`, `ppc64le`
-
-More architecures will be available shortly.
 
 # How to use this Image
 
