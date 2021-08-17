@@ -28,22 +28,26 @@ WARNING:
 
 ## Simple Tags
 
+-	[`3.7-7.3.5-bullseye`, `3.7-7.3-bullseye`, `3.7-7-bullseye`, `3.7-bullseye`, `3-7.3.5-bullseye`, `3-7.3-bullseye`, `3-7-bullseye`, `3-bullseye`, `bullseye`](https://github.com/docker-library/pypy/blob/2c7223f5fc2fba18bc8e5cb14896668a5c330ae1/3.7/bullseye/Dockerfile)
+-	[`3.7-7.3.5-slim`, `3.7-7.3-slim`, `3.7-7-slim`, `3.7-slim`, `3-7.3.5-slim`, `3-7.3-slim`, `3-7-slim`, `3-slim`, `slim`, `3.7-7.3.5-slim-bullseye`, `3.7-7.3-slim-bullseye`, `3.7-7-slim-bullseye`, `3.7-slim-bullseye`, `3-7.3.5-slim-bullseye`, `3-7.3-slim-bullseye`, `3-7-slim-bullseye`, `3-slim-bullseye`, `slim-bullseye`](https://github.com/docker-library/pypy/blob/2c7223f5fc2fba18bc8e5cb14896668a5c330ae1/3.7/slim-bullseye/Dockerfile)
 -	[`3.7-7.3.5-buster`, `3.7-7.3-buster`, `3.7-7-buster`, `3.7-buster`, `3-7.3.5-buster`, `3-7.3-buster`, `3-7-buster`, `3-buster`, `buster`](https://github.com/docker-library/pypy/blob/ad122d7739f0d5e422be892847f10f809a14bf95/3.7/buster/Dockerfile)
--	[`3.7-7.3.5-slim`, `3.7-7.3-slim`, `3.7-7-slim`, `3.7-slim`, `3-7.3.5-slim`, `3-7.3-slim`, `3-7-slim`, `3-slim`, `slim`, `3.7-7.3.5-slim-buster`, `3.7-7.3-slim-buster`, `3.7-7-slim-buster`, `3.7-slim-buster`, `3-7.3.5-slim-buster`, `3-7.3-slim-buster`, `3-7-slim-buster`, `3-slim-buster`, `slim-buster`](https://github.com/docker-library/pypy/blob/ad122d7739f0d5e422be892847f10f809a14bf95/3.7/slim-buster/Dockerfile)
+-	[`3.7-7.3.5-slim-buster`, `3.7-7.3-slim-buster`, `3.7-7-slim-buster`, `3.7-slim-buster`, `3-7.3.5-slim-buster`, `3-7.3-slim-buster`, `3-7-slim-buster`, `3-slim-buster`, `slim-buster`](https://github.com/docker-library/pypy/blob/ad122d7739f0d5e422be892847f10f809a14bf95/3.7/slim-buster/Dockerfile)
 -	[`3.7-7.3.5-windowsservercore-1809`, `3.7-7.3-windowsservercore-1809`, `3.7-7-windowsservercore-1809`, `3.7-windowsservercore-1809`, `3-7.3.5-windowsservercore-1809`, `3-7.3-windowsservercore-1809`, `3-7-windowsservercore-1809`, `3-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/docker-library/pypy/blob/ad122d7739f0d5e422be892847f10f809a14bf95/3.7/windows/windowsservercore-1809/Dockerfile)
+-	[`2.7-7.3.5-bullseye`, `2.7-7.3-bullseye`, `2.7-7-bullseye`, `2.7-bullseye`, `2-7.3.5-bullseye`, `2-7.3-bullseye`, `2-7-bullseye`, `2-bullseye`](https://github.com/docker-library/pypy/blob/2c7223f5fc2fba18bc8e5cb14896668a5c330ae1/2.7/bullseye/Dockerfile)
+-	[`2.7-7.3.5-slim`, `2.7-7.3-slim`, `2.7-7-slim`, `2.7-slim`, `2-7.3.5-slim`, `2-7.3-slim`, `2-7-slim`, `2-slim`, `2.7-7.3.5-slim-bullseye`, `2.7-7.3-slim-bullseye`, `2.7-7-slim-bullseye`, `2.7-slim-bullseye`, `2-7.3.5-slim-bullseye`, `2-7.3-slim-bullseye`, `2-7-slim-bullseye`, `2-slim-bullseye`](https://github.com/docker-library/pypy/blob/2c7223f5fc2fba18bc8e5cb14896668a5c330ae1/2.7/slim-bullseye/Dockerfile)
 -	[`2.7-7.3.5-buster`, `2.7-7.3-buster`, `2.7-7-buster`, `2.7-buster`, `2-7.3.5-buster`, `2-7.3-buster`, `2-7-buster`, `2-buster`](https://github.com/docker-library/pypy/blob/21958c24c2a1357eb2464331598705649f2f7896/2.7/buster/Dockerfile)
--	[`2.7-7.3.5-slim`, `2.7-7.3-slim`, `2.7-7-slim`, `2.7-slim`, `2-7.3.5-slim`, `2-7.3-slim`, `2-7-slim`, `2-slim`, `2.7-7.3.5-slim-buster`, `2.7-7.3-slim-buster`, `2.7-7-slim-buster`, `2.7-slim-buster`, `2-7.3.5-slim-buster`, `2-7.3-slim-buster`, `2-7-slim-buster`, `2-slim-buster`](https://github.com/docker-library/pypy/blob/21958c24c2a1357eb2464331598705649f2f7896/2.7/slim-buster/Dockerfile)
+-	[`2.7-7.3.5-slim-buster`, `2.7-7.3-slim-buster`, `2.7-7-slim-buster`, `2.7-slim-buster`, `2-7.3.5-slim-buster`, `2-7.3-slim-buster`, `2-7-slim-buster`, `2-slim-buster`](https://github.com/docker-library/pypy/blob/21958c24c2a1357eb2464331598705649f2f7896/2.7/slim-buster/Dockerfile)
 -	[`2.7-7.3.5-windowsservercore-1809`, `2.7-7.3-windowsservercore-1809`, `2.7-7-windowsservercore-1809`, `2.7-windowsservercore-1809`, `2-7.3.5-windowsservercore-1809`, `2-7.3-windowsservercore-1809`, `2-7-windowsservercore-1809`, `2-windowsservercore-1809`](https://github.com/docker-library/pypy/blob/21958c24c2a1357eb2464331598705649f2f7896/2.7/windows/windowsservercore-1809/Dockerfile)
 
 ## Shared Tags
 
 -	`3.7-7.3.5`, `3.7-7.3`, `3.7-7`, `3.7`, `3-7.3.5`, `3-7.3`, `3-7`, `3`, `latest`:
-	-	[`3.7-7.3.5-buster`](https://github.com/docker-library/pypy/blob/ad122d7739f0d5e422be892847f10f809a14bf95/3.7/buster/Dockerfile)
+	-	[`3.7-7.3.5-bullseye`](https://github.com/docker-library/pypy/blob/2c7223f5fc2fba18bc8e5cb14896668a5c330ae1/3.7/bullseye/Dockerfile)
 	-	[`3.7-7.3.5-windowsservercore-1809`](https://github.com/docker-library/pypy/blob/ad122d7739f0d5e422be892847f10f809a14bf95/3.7/windows/windowsservercore-1809/Dockerfile)
 -	`3.7-7.3.5-windowsservercore`, `3.7-7.3-windowsservercore`, `3.7-7-windowsservercore`, `3.7-windowsservercore`, `3-7.3.5-windowsservercore`, `3-7.3-windowsservercore`, `3-7-windowsservercore`, `3-windowsservercore`, `windowsservercore`:
 	-	[`3.7-7.3.5-windowsservercore-1809`](https://github.com/docker-library/pypy/blob/ad122d7739f0d5e422be892847f10f809a14bf95/3.7/windows/windowsservercore-1809/Dockerfile)
 -	`2.7-7.3.5`, `2.7-7.3`, `2.7-7`, `2.7`, `2-7.3.5`, `2-7.3`, `2-7`, `2`:
-	-	[`2.7-7.3.5-buster`](https://github.com/docker-library/pypy/blob/21958c24c2a1357eb2464331598705649f2f7896/2.7/buster/Dockerfile)
+	-	[`2.7-7.3.5-bullseye`](https://github.com/docker-library/pypy/blob/2c7223f5fc2fba18bc8e5cb14896668a5c330ae1/2.7/bullseye/Dockerfile)
 	-	[`2.7-7.3.5-windowsservercore-1809`](https://github.com/docker-library/pypy/blob/21958c24c2a1357eb2464331598705649f2f7896/2.7/windows/windowsservercore-1809/Dockerfile)
 -	`2.7-7.3.5-windowsservercore`, `2.7-7.3-windowsservercore`, `2.7-7-windowsservercore`, `2.7-windowsservercore`, `2-7.3.5-windowsservercore`, `2-7.3-windowsservercore`, `2-7-windowsservercore`, `2-windowsservercore`:
 	-	[`2.7-7.3.5-windowsservercore-1809`](https://github.com/docker-library/pypy/blob/21958c24c2a1357eb2464331598705649f2f7896/2.7/windows/windowsservercore-1809/Dockerfile)
@@ -138,7 +142,7 @@ The `pypy` images come in many flavors, each designed for a specific use case.
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like buster in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+Some of these tags may have names like bullseye or buster in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 This tag is based off of [`buildpack-deps`](https://hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of Docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
 
