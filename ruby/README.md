@@ -24,19 +24,23 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.0.2-buster`, `3.0-buster`, `3-buster`, `buster`, `3.0.2`, `3.0`, `3`, `latest`](https://github.com/docker-library/ruby/blob/761ae37f67acc54d49f085dc4e5a2443a77700e6/3.0/buster/Dockerfile)
--	[`3.0.2-slim-buster`, `3.0-slim-buster`, `3-slim-buster`, `slim-buster`, `3.0.2-slim`, `3.0-slim`, `3-slim`, `slim`](https://github.com/docker-library/ruby/blob/0c5948bcce84b1829a554209c777f0ef6a357dd2/3.0/slim-buster/Dockerfile)
+-	[`3.0.2-bullseye`, `3.0-bullseye`, `3-bullseye`, `bullseye`, `3.0.2`, `3.0`, `3`, `latest`](https://github.com/docker-library/ruby/blob/49168590766ac3eb0ad286154b2e01760b79f4b2/3.0/bullseye/Dockerfile)
+-	[`3.0.2-slim-bullseye`, `3.0-slim-bullseye`, `3-slim-bullseye`, `slim-bullseye`, `3.0.2-slim`, `3.0-slim`, `3-slim`, `slim`](https://github.com/docker-library/ruby/blob/49168590766ac3eb0ad286154b2e01760b79f4b2/3.0/slim-bullseye/Dockerfile)
+-	[`3.0.2-buster`, `3.0-buster`, `3-buster`, `buster`](https://github.com/docker-library/ruby/blob/761ae37f67acc54d49f085dc4e5a2443a77700e6/3.0/buster/Dockerfile)
+-	[`3.0.2-slim-buster`, `3.0-slim-buster`, `3-slim-buster`, `slim-buster`](https://github.com/docker-library/ruby/blob/49168590766ac3eb0ad286154b2e01760b79f4b2/3.0/slim-buster/Dockerfile)
 -	[`3.0.2-alpine3.14`, `3.0-alpine3.14`, `3-alpine3.14`, `alpine3.14`, `3.0.2-alpine`, `3.0-alpine`, `3-alpine`, `alpine`](https://github.com/docker-library/ruby/blob/0c5948bcce84b1829a554209c777f0ef6a357dd2/3.0/alpine3.14/Dockerfile)
 -	[`3.0.2-alpine3.13`, `3.0-alpine3.13`, `3-alpine3.13`, `alpine3.13`](https://github.com/docker-library/ruby/blob/0c5948bcce84b1829a554209c777f0ef6a357dd2/3.0/alpine3.13/Dockerfile)
--	[`2.7.4-buster`, `2.7-buster`, `2-buster`, `2.7.4`, `2.7`, `2`](https://github.com/docker-library/ruby/blob/761ae37f67acc54d49f085dc4e5a2443a77700e6/2.7/buster/Dockerfile)
--	[`2.7.4-slim-buster`, `2.7-slim-buster`, `2-slim-buster`, `2.7.4-slim`, `2.7-slim`, `2-slim`](https://github.com/docker-library/ruby/blob/0c5948bcce84b1829a554209c777f0ef6a357dd2/2.7/slim-buster/Dockerfile)
+-	[`2.7.4-bullseye`, `2.7-bullseye`, `2-bullseye`, `2.7.4`, `2.7`, `2`](https://github.com/docker-library/ruby/blob/49168590766ac3eb0ad286154b2e01760b79f4b2/2.7/bullseye/Dockerfile)
+-	[`2.7.4-slim-bullseye`, `2.7-slim-bullseye`, `2-slim-bullseye`, `2.7.4-slim`, `2.7-slim`, `2-slim`](https://github.com/docker-library/ruby/blob/49168590766ac3eb0ad286154b2e01760b79f4b2/2.7/slim-bullseye/Dockerfile)
+-	[`2.7.4-buster`, `2.7-buster`, `2-buster`](https://github.com/docker-library/ruby/blob/761ae37f67acc54d49f085dc4e5a2443a77700e6/2.7/buster/Dockerfile)
+-	[`2.7.4-slim-buster`, `2.7-slim-buster`, `2-slim-buster`](https://github.com/docker-library/ruby/blob/49168590766ac3eb0ad286154b2e01760b79f4b2/2.7/slim-buster/Dockerfile)
 -	[`2.7.4-alpine3.14`, `2.7-alpine3.14`, `2-alpine3.14`, `2.7.4-alpine`, `2.7-alpine`, `2-alpine`](https://github.com/docker-library/ruby/blob/0c5948bcce84b1829a554209c777f0ef6a357dd2/2.7/alpine3.14/Dockerfile)
 -	[`2.7.4-alpine3.13`, `2.7-alpine3.13`, `2-alpine3.13`](https://github.com/docker-library/ruby/blob/0c5948bcce84b1829a554209c777f0ef6a357dd2/2.7/alpine3.13/Dockerfile)
--	[`2.6.8-buster`, `2.6-buster`, `2.6.8`, `2.6`](https://github.com/docker-library/ruby/blob/761ae37f67acc54d49f085dc4e5a2443a77700e6/2.6/buster/Dockerfile)
--	[`2.6.8-slim-buster`, `2.6-slim-buster`, `2.6.8-slim`, `2.6-slim`](https://github.com/docker-library/ruby/blob/0c5948bcce84b1829a554209c777f0ef6a357dd2/2.6/slim-buster/Dockerfile)
--	[`2.6.8-stretch`, `2.6-stretch`](https://github.com/docker-library/ruby/blob/761ae37f67acc54d49f085dc4e5a2443a77700e6/2.6/stretch/Dockerfile)
--	[`2.6.8-slim-stretch`, `2.6-slim-stretch`](https://github.com/docker-library/ruby/blob/0c5948bcce84b1829a554209c777f0ef6a357dd2/2.6/slim-stretch/Dockerfile)
--	[`2.6.8-alpine3.14`, `2.6-alpine3.14`, `2.6.8-alpine`, `2.6-alpine`](https://github.com/docker-library/ruby/blob/0c5948bcce84b1829a554209c777f0ef6a357dd2/2.6/alpine3.14/Dockerfile)
+-	[`2.6.8-bullseye`, `2.6-bullseye`, `2.6.8`, `2.6`](https://github.com/docker-library/ruby/blob/49168590766ac3eb0ad286154b2e01760b79f4b2/2.6/bullseye/Dockerfile)
+-	[`2.6.8-slim-bullseye`, `2.6-slim-bullseye`, `2.6.8-slim`, `2.6-slim`](https://github.com/docker-library/ruby/blob/49168590766ac3eb0ad286154b2e01760b79f4b2/2.6/slim-bullseye/Dockerfile)
+-	[`2.6.8-buster`, `2.6-buster`](https://github.com/docker-library/ruby/blob/761ae37f67acc54d49f085dc4e5a2443a77700e6/2.6/buster/Dockerfile)
+-	[`2.6.8-slim-buster`, `2.6-slim-buster`](https://github.com/docker-library/ruby/blob/49168590766ac3eb0ad286154b2e01760b79f4b2/2.6/slim-buster/Dockerfile)
+-	[`2.6.8-alpine3.14`, `2.6-alpine3.14`, `2.6.8-alpine`, `2.6-alpine`](https://github.com/docker-library/ruby/blob/e43959905d886946628d89f8e28d276af14a44a0/2.6/alpine3.14/Dockerfile)
 -	[`2.6.8-alpine3.13`, `2.6-alpine3.13`](https://github.com/docker-library/ruby/blob/0c5948bcce84b1829a554209c777f0ef6a357dd2/2.6/alpine3.13/Dockerfile)
 
 # Quick reference (cont.)
@@ -131,7 +135,7 @@ The `ruby` images come in many flavors, each designed for a specific use case.
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like buster or stretch in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+Some of these tags may have names like bullseye or buster in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 This tag is based off of [`buildpack-deps`](https://hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of Docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
 

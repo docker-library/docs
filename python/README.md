@@ -28,57 +28,63 @@ WARNING:
 
 ## Simple Tags
 
+-	[`3.10.0rc1-bullseye`, `3.10-rc-bullseye`, `rc-bullseye`](https://github.com/docker-library/python/blob/f154e5d1c8f5b582aa2fd782df880b9cc96bb431/3.10-rc/bullseye/Dockerfile)
+-	[`3.10.0rc1-slim-bullseye`, `3.10-rc-slim-bullseye`, `rc-slim-bullseye`, `3.10.0rc1-slim`, `3.10-rc-slim`, `rc-slim`](https://github.com/docker-library/python/blob/f154e5d1c8f5b582aa2fd782df880b9cc96bb431/3.10-rc/bullseye/slim/Dockerfile)
 -	[`3.10.0rc1-buster`, `3.10-rc-buster`, `rc-buster`](https://github.com/docker-library/python/blob/f534df63dae90b4baa08631ee9f1ee2d3ff1d825/3.10-rc/buster/Dockerfile)
--	[`3.10.0rc1-slim-buster`, `3.10-rc-slim-buster`, `rc-slim-buster`, `3.10.0rc1-slim`, `3.10-rc-slim`, `rc-slim`](https://github.com/docker-library/python/blob/f534df63dae90b4baa08631ee9f1ee2d3ff1d825/3.10-rc/buster/slim/Dockerfile)
+-	[`3.10.0rc1-slim-buster`, `3.10-rc-slim-buster`, `rc-slim-buster`](https://github.com/docker-library/python/blob/f534df63dae90b4baa08631ee9f1ee2d3ff1d825/3.10-rc/buster/slim/Dockerfile)
 -	[`3.10.0rc1-alpine3.14`, `3.10-rc-alpine3.14`, `rc-alpine3.14`, `3.10.0rc1-alpine`, `3.10-rc-alpine`, `rc-alpine`](https://github.com/docker-library/python/blob/f534df63dae90b4baa08631ee9f1ee2d3ff1d825/3.10-rc/alpine3.14/Dockerfile)
 -	[`3.10.0rc1-alpine3.13`, `3.10-rc-alpine3.13`, `rc-alpine3.13`](https://github.com/docker-library/python/blob/f534df63dae90b4baa08631ee9f1ee2d3ff1d825/3.10-rc/alpine3.13/Dockerfile)
 -	[`3.10.0rc1-windowsservercore-1809`, `3.10-rc-windowsservercore-1809`, `rc-windowsservercore-1809`](https://github.com/docker-library/python/blob/f534df63dae90b4baa08631ee9f1ee2d3ff1d825/3.10-rc/windows/windowsservercore-1809/Dockerfile)
 -	[`3.10.0rc1-windowsservercore-ltsc2016`, `3.10-rc-windowsservercore-ltsc2016`, `rc-windowsservercore-ltsc2016`](https://github.com/docker-library/python/blob/f534df63dae90b4baa08631ee9f1ee2d3ff1d825/3.10-rc/windows/windowsservercore-ltsc2016/Dockerfile)
+-	[`3.9.6-bullseye`, `3.9-bullseye`, `3-bullseye`, `bullseye`](https://github.com/docker-library/python/blob/f154e5d1c8f5b582aa2fd782df880b9cc96bb431/3.9/bullseye/Dockerfile)
+-	[`3.9.6-slim-bullseye`, `3.9-slim-bullseye`, `3-slim-bullseye`, `slim-bullseye`, `3.9.6-slim`, `3.9-slim`, `3-slim`, `slim`](https://github.com/docker-library/python/blob/f154e5d1c8f5b582aa2fd782df880b9cc96bb431/3.9/bullseye/slim/Dockerfile)
 -	[`3.9.6-buster`, `3.9-buster`, `3-buster`, `buster`](https://github.com/docker-library/python/blob/9c6007b87f2fa537c8c923fc67a93640e0cb503e/3.9/buster/Dockerfile)
--	[`3.9.6-slim-buster`, `3.9-slim-buster`, `3-slim-buster`, `slim-buster`, `3.9.6-slim`, `3.9-slim`, `3-slim`, `slim`](https://github.com/docker-library/python/blob/9c6007b87f2fa537c8c923fc67a93640e0cb503e/3.9/buster/slim/Dockerfile)
+-	[`3.9.6-slim-buster`, `3.9-slim-buster`, `3-slim-buster`, `slim-buster`](https://github.com/docker-library/python/blob/9c6007b87f2fa537c8c923fc67a93640e0cb503e/3.9/buster/slim/Dockerfile)
 -	[`3.9.6-alpine3.14`, `3.9-alpine3.14`, `3-alpine3.14`, `alpine3.14`, `3.9.6-alpine`, `3.9-alpine`, `3-alpine`, `alpine`](https://github.com/docker-library/python/blob/9c6007b87f2fa537c8c923fc67a93640e0cb503e/3.9/alpine3.14/Dockerfile)
 -	[`3.9.6-alpine3.13`, `3.9-alpine3.13`, `3-alpine3.13`, `alpine3.13`](https://github.com/docker-library/python/blob/9c6007b87f2fa537c8c923fc67a93640e0cb503e/3.9/alpine3.13/Dockerfile)
 -	[`3.9.6-windowsservercore-1809`, `3.9-windowsservercore-1809`, `3-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/docker-library/python/blob/9c6007b87f2fa537c8c923fc67a93640e0cb503e/3.9/windows/windowsservercore-1809/Dockerfile)
 -	[`3.9.6-windowsservercore-ltsc2016`, `3.9-windowsservercore-ltsc2016`, `3-windowsservercore-ltsc2016`, `windowsservercore-ltsc2016`](https://github.com/docker-library/python/blob/9c6007b87f2fa537c8c923fc67a93640e0cb503e/3.9/windows/windowsservercore-ltsc2016/Dockerfile)
+-	[`3.8.11-bullseye`, `3.8-bullseye`](https://github.com/docker-library/python/blob/f154e5d1c8f5b582aa2fd782df880b9cc96bb431/3.8/bullseye/Dockerfile)
+-	[`3.8.11-slim-bullseye`, `3.8-slim-bullseye`, `3.8.11-slim`, `3.8-slim`](https://github.com/docker-library/python/blob/f154e5d1c8f5b582aa2fd782df880b9cc96bb431/3.8/bullseye/slim/Dockerfile)
 -	[`3.8.11-buster`, `3.8-buster`](https://github.com/docker-library/python/blob/670a51bde142663856c29c3ef85efcebde0aec6d/3.8/buster/Dockerfile)
--	[`3.8.11-slim-buster`, `3.8-slim-buster`, `3.8.11-slim`, `3.8-slim`](https://github.com/docker-library/python/blob/670a51bde142663856c29c3ef85efcebde0aec6d/3.8/buster/slim/Dockerfile)
+-	[`3.8.11-slim-buster`, `3.8-slim-buster`](https://github.com/docker-library/python/blob/670a51bde142663856c29c3ef85efcebde0aec6d/3.8/buster/slim/Dockerfile)
 -	[`3.8.11-alpine3.14`, `3.8-alpine3.14`, `3.8.11-alpine`, `3.8-alpine`](https://github.com/docker-library/python/blob/670a51bde142663856c29c3ef85efcebde0aec6d/3.8/alpine3.14/Dockerfile)
 -	[`3.8.11-alpine3.13`, `3.8-alpine3.13`](https://github.com/docker-library/python/blob/670a51bde142663856c29c3ef85efcebde0aec6d/3.8/alpine3.13/Dockerfile)
+-	[`3.7.11-bullseye`, `3.7-bullseye`](https://github.com/docker-library/python/blob/f154e5d1c8f5b582aa2fd782df880b9cc96bb431/3.7/bullseye/Dockerfile)
+-	[`3.7.11-slim-bullseye`, `3.7-slim-bullseye`, `3.7.11-slim`, `3.7-slim`](https://github.com/docker-library/python/blob/f154e5d1c8f5b582aa2fd782df880b9cc96bb431/3.7/bullseye/slim/Dockerfile)
 -	[`3.7.11-buster`, `3.7-buster`](https://github.com/docker-library/python/blob/b59ce53e3213c9717177fe9a4f25f3e3ffeba56e/3.7/buster/Dockerfile)
--	[`3.7.11-slim-buster`, `3.7-slim-buster`, `3.7.11-slim`, `3.7-slim`](https://github.com/docker-library/python/blob/b59ce53e3213c9717177fe9a4f25f3e3ffeba56e/3.7/buster/slim/Dockerfile)
--	[`3.7.11-stretch`, `3.7-stretch`](https://github.com/docker-library/python/blob/b59ce53e3213c9717177fe9a4f25f3e3ffeba56e/3.7/stretch/Dockerfile)
--	[`3.7.11-slim-stretch`, `3.7-slim-stretch`](https://github.com/docker-library/python/blob/b59ce53e3213c9717177fe9a4f25f3e3ffeba56e/3.7/stretch/slim/Dockerfile)
+-	[`3.7.11-slim-buster`, `3.7-slim-buster`](https://github.com/docker-library/python/blob/b59ce53e3213c9717177fe9a4f25f3e3ffeba56e/3.7/buster/slim/Dockerfile)
 -	[`3.7.11-alpine3.14`, `3.7-alpine3.14`, `3.7.11-alpine`, `3.7-alpine`](https://github.com/docker-library/python/blob/b59ce53e3213c9717177fe9a4f25f3e3ffeba56e/3.7/alpine3.14/Dockerfile)
 -	[`3.7.11-alpine3.13`, `3.7-alpine3.13`](https://github.com/docker-library/python/blob/b59ce53e3213c9717177fe9a4f25f3e3ffeba56e/3.7/alpine3.13/Dockerfile)
+-	[`3.6.14-bullseye`, `3.6-bullseye`](https://github.com/docker-library/python/blob/f154e5d1c8f5b582aa2fd782df880b9cc96bb431/3.6/bullseye/Dockerfile)
+-	[`3.6.14-slim-bullseye`, `3.6-slim-bullseye`, `3.6.14-slim`, `3.6-slim`](https://github.com/docker-library/python/blob/f154e5d1c8f5b582aa2fd782df880b9cc96bb431/3.6/bullseye/slim/Dockerfile)
 -	[`3.6.14-buster`, `3.6-buster`](https://github.com/docker-library/python/blob/ec760ffc5e62ad800a1dc5b5e280d234d0736a55/3.6/buster/Dockerfile)
--	[`3.6.14-slim-buster`, `3.6-slim-buster`, `3.6.14-slim`, `3.6-slim`](https://github.com/docker-library/python/blob/ec760ffc5e62ad800a1dc5b5e280d234d0736a55/3.6/buster/slim/Dockerfile)
--	[`3.6.14-stretch`, `3.6-stretch`](https://github.com/docker-library/python/blob/ec760ffc5e62ad800a1dc5b5e280d234d0736a55/3.6/stretch/Dockerfile)
--	[`3.6.14-slim-stretch`, `3.6-slim-stretch`](https://github.com/docker-library/python/blob/ec760ffc5e62ad800a1dc5b5e280d234d0736a55/3.6/stretch/slim/Dockerfile)
+-	[`3.6.14-slim-buster`, `3.6-slim-buster`](https://github.com/docker-library/python/blob/ec760ffc5e62ad800a1dc5b5e280d234d0736a55/3.6/buster/slim/Dockerfile)
 -	[`3.6.14-alpine3.14`, `3.6-alpine3.14`, `3.6.14-alpine`, `3.6-alpine`](https://github.com/docker-library/python/blob/ec760ffc5e62ad800a1dc5b5e280d234d0736a55/3.6/alpine3.14/Dockerfile)
 -	[`3.6.14-alpine3.13`, `3.6-alpine3.13`](https://github.com/docker-library/python/blob/ec760ffc5e62ad800a1dc5b5e280d234d0736a55/3.6/alpine3.13/Dockerfile)
 
 ## Shared Tags
 
 -	`3.10.0rc1`, `3.10-rc`, `rc`:
-	-	[`3.10.0rc1-buster`](https://github.com/docker-library/python/blob/f534df63dae90b4baa08631ee9f1ee2d3ff1d825/3.10-rc/buster/Dockerfile)
+	-	[`3.10.0rc1-bullseye`](https://github.com/docker-library/python/blob/f154e5d1c8f5b582aa2fd782df880b9cc96bb431/3.10-rc/bullseye/Dockerfile)
 	-	[`3.10.0rc1-windowsservercore-1809`](https://github.com/docker-library/python/blob/f534df63dae90b4baa08631ee9f1ee2d3ff1d825/3.10-rc/windows/windowsservercore-1809/Dockerfile)
 	-	[`3.10.0rc1-windowsservercore-ltsc2016`](https://github.com/docker-library/python/blob/f534df63dae90b4baa08631ee9f1ee2d3ff1d825/3.10-rc/windows/windowsservercore-ltsc2016/Dockerfile)
 -	`3.10.0rc1-windowsservercore`, `3.10-rc-windowsservercore`, `rc-windowsservercore`:
 	-	[`3.10.0rc1-windowsservercore-1809`](https://github.com/docker-library/python/blob/f534df63dae90b4baa08631ee9f1ee2d3ff1d825/3.10-rc/windows/windowsservercore-1809/Dockerfile)
 	-	[`3.10.0rc1-windowsservercore-ltsc2016`](https://github.com/docker-library/python/blob/f534df63dae90b4baa08631ee9f1ee2d3ff1d825/3.10-rc/windows/windowsservercore-ltsc2016/Dockerfile)
 -	`3.9.6`, `3.9`, `3`, `latest`:
-	-	[`3.9.6-buster`](https://github.com/docker-library/python/blob/9c6007b87f2fa537c8c923fc67a93640e0cb503e/3.9/buster/Dockerfile)
+	-	[`3.9.6-bullseye`](https://github.com/docker-library/python/blob/f154e5d1c8f5b582aa2fd782df880b9cc96bb431/3.9/bullseye/Dockerfile)
 	-	[`3.9.6-windowsservercore-1809`](https://github.com/docker-library/python/blob/9c6007b87f2fa537c8c923fc67a93640e0cb503e/3.9/windows/windowsservercore-1809/Dockerfile)
 	-	[`3.9.6-windowsservercore-ltsc2016`](https://github.com/docker-library/python/blob/9c6007b87f2fa537c8c923fc67a93640e0cb503e/3.9/windows/windowsservercore-ltsc2016/Dockerfile)
 -	`3.9.6-windowsservercore`, `3.9-windowsservercore`, `3-windowsservercore`, `windowsservercore`:
 	-	[`3.9.6-windowsservercore-1809`](https://github.com/docker-library/python/blob/9c6007b87f2fa537c8c923fc67a93640e0cb503e/3.9/windows/windowsservercore-1809/Dockerfile)
 	-	[`3.9.6-windowsservercore-ltsc2016`](https://github.com/docker-library/python/blob/9c6007b87f2fa537c8c923fc67a93640e0cb503e/3.9/windows/windowsservercore-ltsc2016/Dockerfile)
 -	`3.8.11`, `3.8`:
-	-	[`3.8.11-buster`](https://github.com/docker-library/python/blob/670a51bde142663856c29c3ef85efcebde0aec6d/3.8/buster/Dockerfile)
+	-	[`3.8.11-bullseye`](https://github.com/docker-library/python/blob/f154e5d1c8f5b582aa2fd782df880b9cc96bb431/3.8/bullseye/Dockerfile)
 -	`3.7.11`, `3.7`:
-	-	[`3.7.11-buster`](https://github.com/docker-library/python/blob/b59ce53e3213c9717177fe9a4f25f3e3ffeba56e/3.7/buster/Dockerfile)
+	-	[`3.7.11-bullseye`](https://github.com/docker-library/python/blob/f154e5d1c8f5b582aa2fd782df880b9cc96bb431/3.7/bullseye/Dockerfile)
 -	`3.6.14`, `3.6`:
-	-	[`3.6.14-buster`](https://github.com/docker-library/python/blob/ec760ffc5e62ad800a1dc5b5e280d234d0736a55/3.6/buster/Dockerfile)
+	-	[`3.6.14-bullseye`](https://github.com/docker-library/python/blob/f154e5d1c8f5b582aa2fd782df880b9cc96bb431/3.6/bullseye/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -172,7 +178,7 @@ The `python` images come in many flavors, each designed for a specific use case.
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like buster or stretch in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+Some of these tags may have names like bullseye or buster in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 This tag is based off of [`buildpack-deps`](https://hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of Docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
 
