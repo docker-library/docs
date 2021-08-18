@@ -6,6 +6,8 @@ The images in this repository contain OpenJDK binaries that are built by Eclipse
 
 The Eclipse Temurin project provides code and processes that support the building of runtime binaries and associated technologies that are high performance, enterprise-caliber, cross-platform, open-source licensed, and Java SE TCK-tested for general use across the Java ecosystem.
 
+%%LOGO%%
+
 # Do you provide JRE (Java Runtime Environment) Images?
 
 Current there are only JDK (Java Developer Kit) images. On OpenJDK 11+ JRE's can be produced using `jlink` (see usage below).
