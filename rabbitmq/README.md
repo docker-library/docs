@@ -24,10 +24,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.9.3`, `3.9`, `3`, `latest`](https://github.com/docker-library/rabbitmq/blob/cd44d4e7a4335ae137c1723772e2a777f0466d67/3.9/ubuntu/Dockerfile)
--	[`3.9.3-management`, `3.9-management`, `3-management`, `management`](https://github.com/docker-library/rabbitmq/blob/b07819f873e5a68b2bb54e01f0caa41c26b277f3/3.9/ubuntu/management/Dockerfile)
--	[`3.9.3-alpine`, `3.9-alpine`, `3-alpine`, `alpine`](https://github.com/docker-library/rabbitmq/blob/cd44d4e7a4335ae137c1723772e2a777f0466d67/3.9/alpine/Dockerfile)
--	[`3.9.3-management-alpine`, `3.9-management-alpine`, `3-management-alpine`, `management-alpine`](https://github.com/docker-library/rabbitmq/blob/b07819f873e5a68b2bb54e01f0caa41c26b277f3/3.9/alpine/management/Dockerfile)
+-	[`3.9.4`, `3.9`, `3`, `latest`](https://github.com/docker-library/rabbitmq/blob/b0ab6c9cfa2a46eeb4c242cc0ef9b1c60399c6c8/3.9/ubuntu/Dockerfile)
+-	[`3.9.4-management`, `3.9-management`, `3-management`, `management`](https://github.com/docker-library/rabbitmq/blob/b07819f873e5a68b2bb54e01f0caa41c26b277f3/3.9/ubuntu/management/Dockerfile)
+-	[`3.9.4-alpine`, `3.9-alpine`, `3-alpine`, `alpine`](https://github.com/docker-library/rabbitmq/blob/b0ab6c9cfa2a46eeb4c242cc0ef9b1c60399c6c8/3.9/alpine/Dockerfile)
+-	[`3.9.4-management-alpine`, `3.9-management-alpine`, `3-management-alpine`, `management-alpine`](https://github.com/docker-library/rabbitmq/blob/b07819f873e5a68b2bb54e01f0caa41c26b277f3/3.9/alpine/management/Dockerfile)
 -	[`3.8.21`, `3.8`](https://github.com/docker-library/rabbitmq/blob/51d22c8d4eb548af158cea5a5c5f7ddf55d5cc1f/3.8/ubuntu/Dockerfile)
 -	[`3.8.21-management`, `3.8-management`](https://github.com/docker-library/rabbitmq/blob/0d1c84a50aa69305b2fa3e98632a206d3d2a3f9f/3.8/ubuntu/management/Dockerfile)
 -	[`3.8.21-alpine`, `3.8-alpine`](https://github.com/docker-library/rabbitmq/blob/51d22c8d4eb548af158cea5a5c5f7ddf55d5cc1f/3.8/alpine/Dockerfile)
@@ -91,12 +91,8 @@ For a list of environment variables supported by RabbitMQ itself, see the [Envir
 
 ```bash
 # Unavailable in 3.9 and up
-RABBITMQ_DEFAULT_PASS
 RABBITMQ_DEFAULT_PASS_FILE
-RABBITMQ_DEFAULT_USER
 RABBITMQ_DEFAULT_USER_FILE
-RABBITMQ_DEFAULT_VHOST
-RABBITMQ_ERLANG_COOKIE
 RABBITMQ_MANAGEMENT_SSL_CACERTFILE
 RABBITMQ_MANAGEMENT_SSL_CERTFILE
 RABBITMQ_MANAGEMENT_SSL_DEPTH
