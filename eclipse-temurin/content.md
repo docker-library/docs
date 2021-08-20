@@ -44,7 +44,7 @@ ENV PATH="${JAVA_HOME}/bin:${PATH}"
 
 ### Creating a JRE using jlink
 
-On OpenJDK 11+, a JRE can be generated using `jlink`, see the following Dockerfile:
+JRE images for OpenJDK 8 are now available. On OpenJDK 11+, a JRE can be generated using `jlink`, see the following Dockerfile:
 
 ```dockerfile
 # Example of custom Java runtime using jlink in a multi-stage container build
