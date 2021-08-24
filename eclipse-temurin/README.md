@@ -43,7 +43,7 @@ WARNING:
 -	[`11.0.12_7-jdk-windowsservercore-1809`, `11-jdk-windowsservercore-1809`, `11-windowsservercore-1809`](https://github.com/adoptium/containers/blob/94ec04760777535e1ba0374f5ba051eabcf9b2ac/11/jdk/windows/windowsservercore-1809/Dockerfile.releases.full)
 -	[`11.0.12_7-jdk-windowsservercore-ltsc2016`, `11-jdk-windowsservercore-ltsc2016`, `11-windowsservercore-ltsc2016`](https://github.com/adoptium/containers/blob/94ec04760777535e1ba0374f5ba051eabcf9b2ac/11/jdk/windows/windowsservercore-ltsc2016/Dockerfile.releases.full)
 -	[`11.0.12_7-jdk-nanoserver-1809`, `11-jdk-nanoserver-1809`, `11-nanoserver-1809`](https://github.com/adoptium/containers/blob/94ec04760777535e1ba0374f5ba051eabcf9b2ac/11/jdk/windows/nanoserver-1809/Dockerfile.releases.full)
--	[`16.0.2_7-jdk-focal`, `16-jdk-focal`, `16-focal`](https://github.com/adoptium/containers/blob/94ec04760777535e1ba0374f5ba051eabcf9b2ac/16/jdk/ubuntu/Dockerfile.releases.full)
+-	[`16.0.2_7-jdk-focal`, `16-jdk-focal`, `16-focal`](https://github.com/adoptium/containers/blob/9c0f0d785455edb2f88383c5ea119121d30c8267/16/jdk/ubuntu/Dockerfile.releases.full)
 -	[`16.0.2_7-jdk-centos7`, `16-jdk-centos7`, `16-centos7`](https://github.com/adoptium/containers/blob/94ec04760777535e1ba0374f5ba051eabcf9b2ac/16/jdk/centos/Dockerfile.releases.full)
 -	[`16.0.2_7-jdk-windowsservercore-1809`, `16-jdk-windowsservercore-1809`, `16-windowsservercore-1809`](https://github.com/adoptium/containers/blob/94ec04760777535e1ba0374f5ba051eabcf9b2ac/16/jdk/windows/windowsservercore-1809/Dockerfile.releases.full)
 -	[`16.0.2_7-jdk-windowsservercore-ltsc2016`, `16-jdk-windowsservercore-ltsc2016`, `16-windowsservercore-ltsc2016`](https://github.com/adoptium/containers/blob/94ec04760777535e1ba0374f5ba051eabcf9b2ac/16/jdk/windows/windowsservercore-ltsc2016/Dockerfile.releases.full)
@@ -79,7 +79,7 @@ WARNING:
 -	`11.0.12_7-jdk-nanoserver`, `11-jdk-nanoserver`, `11-nanoserver`:
 	-	[`11.0.12_7-jdk-nanoserver-1809`](https://github.com/adoptium/containers/blob/94ec04760777535e1ba0374f5ba051eabcf9b2ac/11/jdk/windows/nanoserver-1809/Dockerfile.releases.full)
 -	`16.0.2_7-jdk`, `16-jdk`, `16`, `latest`:
-	-	[`16.0.2_7-jdk-focal`](https://github.com/adoptium/containers/blob/94ec04760777535e1ba0374f5ba051eabcf9b2ac/16/jdk/ubuntu/Dockerfile.releases.full)
+	-	[`16.0.2_7-jdk-focal`](https://github.com/adoptium/containers/blob/9c0f0d785455edb2f88383c5ea119121d30c8267/16/jdk/ubuntu/Dockerfile.releases.full)
 	-	[`16.0.2_7-jdk-windowsservercore-1809`](https://github.com/adoptium/containers/blob/94ec04760777535e1ba0374f5ba051eabcf9b2ac/16/jdk/windows/windowsservercore-1809/Dockerfile.releases.full)
 	-	[`16.0.2_7-jdk-windowsservercore-ltsc2016`](https://github.com/adoptium/containers/blob/94ec04760777535e1ba0374f5ba051eabcf9b2ac/16/jdk/windows/windowsservercore-ltsc2016/Dockerfile.releases.full)
 -	`16.0.2_7-jdk-windowsservercore`, `16-jdk-windowsservercore`, `16-windowsservercore`:
@@ -119,7 +119,7 @@ The Eclipse Temurin project provides code and processes that support the buildin
 
 # Do you provide JRE (Java Runtime Environment) Images?
 
-Current there are only JDK (Java Developer Kit) images. On OpenJDK 11+ JRE's can be produced using `jlink` (see usage below).
+JRE images for OpenJDK 8 are now available. OpenJDK 11+ JRE's can be produced using `jlink` (see usage below).
 
 # How to use this Image
 
@@ -153,7 +153,7 @@ ENV PATH="${JAVA_HOME}/bin:${PATH}"
 
 ### Creating a JRE using jlink
 
-JRE images for OpenJDK 8 are now available. On OpenJDK 11+, a JRE can be generated using `jlink`, see the following Dockerfile:
+On OpenJDK 11+, a JRE can be generated using `jlink`, see the following Dockerfile:
 
 ```dockerfile
 # Example of custom Java runtime using jlink in a multi-stage container build
