@@ -1,0 +1,1 @@
+[GitHub](%%GITHUB-REPO%%/issues); The [IBM Semeru Runtime support](https://ibm.com/semeru-runtimes) page has more information on quality, roadmap and other details for IBM Semeru Runtime Open Edition builds;
