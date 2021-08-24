@@ -10,7 +10,7 @@ The Eclipse Temurin project provides code and processes that support the buildin
 
 # Do you provide JRE (Java Runtime Environment) Images?
 
-Current there are only JDK (Java Developer Kit) images. On OpenJDK 11+ JRE's can be produced using `jlink` (see usage below).
+JRE images for OpenJDK 8 are now available. OpenJDK 11+ JRE's can be produced using `jlink` (see usage below).
 
 # How to use this Image
 
@@ -44,7 +44,7 @@ ENV PATH="${JAVA_HOME}/bin:${PATH}"
 
 ### Creating a JRE using jlink
 
-JRE images for OpenJDK 8 are now available. On OpenJDK 11+, a JRE can be generated using `jlink`, see the following Dockerfile:
+On OpenJDK 11+, a JRE can be generated using `jlink`, see the following Dockerfile:
 
 ```dockerfile
 # Example of custom Java runtime using jlink in a multi-stage container build
