@@ -29,14 +29,17 @@ WARNING:
 ## Simple Tags
 
 -	[`linux`](https://github.com/docker-library/hello-world/blob/7ecae6978055d2fb6960e2a29d24a2af612e2716/amd64/hello-world/Dockerfile)
+-	[`nanoserver-ltsc2022`](https://github.com/docker-library/hello-world/blob/c6676f682a833388a087758d8789b43fbe003397/amd64/hello-world/nanoserver-ltsc2022/Dockerfile)
 -	[`nanoserver-1809`](https://github.com/docker-library/hello-world/blob/a6fdcbffb08c09e63c48cda1878e15fefcb6460a/amd64/hello-world/nanoserver-1809/Dockerfile)
 
 ## Shared Tags
 
 -	`latest`:
 	-	[`linux`](https://github.com/docker-library/hello-world/blob/7ecae6978055d2fb6960e2a29d24a2af612e2716/amd64/hello-world/Dockerfile)
+	-	[`nanoserver-ltsc2022`](https://github.com/docker-library/hello-world/blob/c6676f682a833388a087758d8789b43fbe003397/amd64/hello-world/nanoserver-ltsc2022/Dockerfile)
 	-	[`nanoserver-1809`](https://github.com/docker-library/hello-world/blob/a6fdcbffb08c09e63c48cda1878e15fefcb6460a/amd64/hello-world/nanoserver-1809/Dockerfile)
 -	`nanoserver`:
+	-	[`nanoserver-ltsc2022`](https://github.com/docker-library/hello-world/blob/c6676f682a833388a087758d8789b43fbe003397/amd64/hello-world/nanoserver-ltsc2022/Dockerfile)
 	-	[`nanoserver-1809`](https://github.com/docker-library/hello-world/blob/a6fdcbffb08c09e63c48cda1878e15fefcb6460a/amd64/hello-world/nanoserver-1809/Dockerfile)
 
 # Quick reference (cont.)
