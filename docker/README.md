@@ -33,10 +33,6 @@ WARNING:
 -	[`20.10.8-dind-rootless`, `20.10-dind-rootless`, `20-dind-rootless`, `dind-rootless`](https://github.com/docker-library/docker/blob/83e4de3bc2aac346e2f76129b1a3a556c1e1bb95/20.10/dind-rootless/Dockerfile)
 -	[`20.10.8-git`, `20.10-git`, `20-git`, `git`](https://github.com/docker-library/docker/blob/387e351394bfad74bceebf8303c6c8e39c3d4ed4/20.10/git/Dockerfile)
 -	[`20.10.8-windowsservercore-1809`, `20.10-windowsservercore-1809`, `20-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/docker-library/docker/blob/83e4de3bc2aac346e2f76129b1a3a556c1e1bb95/20.10/windows/windowsservercore-1809/Dockerfile)
--	[`19.03.15`, `19.03`, `19`, `19.03.15-alpine3.13`](https://github.com/docker-library/docker/blob/835c371c516ebdf67adc0c76bbfb38bf9d3e586c/19.03/Dockerfile)
--	[`19.03.15-dind`, `19.03-dind`, `19-dind`, `19.03.15-dind-alpine3.13`](https://github.com/docker-library/docker/blob/8baa881aab85f8398d2edbbcc0da4bd1f556dd98/19.03/dind/Dockerfile)
--	[`19.03.15-dind-rootless`, `19.03-dind-rootless`, `19-dind-rootless`](https://github.com/docker-library/docker/blob/835c371c516ebdf67adc0c76bbfb38bf9d3e586c/19.03/dind-rootless/Dockerfile)
--	[`19.03.15-git`, `19.03-git`, `19-git`](https://github.com/docker-library/docker/blob/12d1c2763b54d29137ec448a3e4ad1a9aefae1a0/19.03/git/Dockerfile)
 
 ## Shared Tags
 
