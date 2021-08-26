@@ -1,1 +1,1 @@
-Blogging, meet social. Known is a social publishing platform.
+DEPRECATED; lacking active maintainer
