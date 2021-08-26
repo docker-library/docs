@@ -1,1 +1,1 @@
-Sentry is a realtime, platform-agnostic error logging and aggregation platform
+DEPRECATED; https://develop.sentry.dev/self-hosted/
