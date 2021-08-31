@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.10.1`, `1.10`, `latest`](https://github.com/hashicorp/docker-consul/blob/e6a85ad35e9b2a831cc74d16f8ee1fd23c68609e/0.X/Dockerfile)
--	[`1.9.8`, `1.9`](https://github.com/hashicorp/docker-consul/blob/6f5620b6d6bc438a044434de1561b58e3ae647cb/0.X/Dockerfile)
--	[`1.8.14`, `1.8`](https://github.com/hashicorp/docker-consul/blob/9f3346247f3b035d50be51d7605c3dddb7a56a04/0.X/Dockerfile)
+-	[`1.10.2`, `1.10`, `latest`](https://github.com/hashicorp/docker-consul/blob/e09ca79969b2b1128a8355d2a2da21f1b126050c/0.X/Dockerfile)
+-	[`1.9.9`, `1.9`](https://github.com/hashicorp/docker-consul/blob/fc760d750b6c4a3ba2cefda98f205ee9f5c92b7f/0.X/Dockerfile)
+-	[`1.8.15`, `1.8`](https://github.com/hashicorp/docker-consul/blob/f407808ecf5233da7729d79cb68e49f9d34da3d5/0.X/Dockerfile)
 
 # Quick reference (cont.)
 
