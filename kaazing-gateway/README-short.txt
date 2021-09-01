@@ -1,1 +1,1 @@
-Official build of Kaazing Gateway.
+DEPRECATED; lacking active maintainer
