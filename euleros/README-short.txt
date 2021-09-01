@@ -1,1 +1,1 @@
-The official release of EulerOS.
+DEPRECATED; lacking active maintainer
