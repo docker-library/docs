@@ -1,0 +1,1 @@
+This image is deprecated, as the Nuxeo-maintained images are now private ([docker-library/official-images#6127 (comment)](https://github.com/docker-library/official-images/pull/6127#issuecomment-912530080)). For further support, contact [Nuxeo](https://www.nuxeo.com/).
