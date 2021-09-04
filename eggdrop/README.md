@@ -111,7 +111,7 @@ An easy way to add scripts would be to create a scripts directory on the host an
 	-v /path/to/host/scripts:/home/eggdrop/eggdrop/scripts
 ```
 
-to your docker run command line (and then edit your config file to load the scripts from the path that matches where you mounted the scripts dir).
+to your docker run command line (and then edit your config file to load the scripts from the path that matches where you mounted the scripts dir). HOWEVER, if you mount your own scripts directory on top of the container's scripts directory, make sure you have a local copy of the "standard" scripts that Eggdrop comes with. Otherwise, when you mount your own directory in, some of the standard scripts Eggdrop uses will not be there, and it will not start. As an alternative, you could also mount to /home/eggdrop/eggdrop/scripts2 (or something similar) and make sure you update the source command with the new path.
 
 ## Exposing network ports
 
@@ -120,6 +120,14 @@ If you want to expose network connections for your bot, you'll also want to use 
 	-p 3333:3333
 
 to your docker run command line.
+
+# docker-compose.yml
+
+A docker-compose.yml example is hosted at https://github.com/eggheads/eggdrop-docker/blob/master/docker-compose.yml . A common error creating your own docker-compose.yml file from scratch is not adding
+
+	stdin_open: true
+	
+to the docker-compose.yml file. Without it, Eggdrop will give you an "END OF FILE ON TERMINAL" error and not start.
 
 ## Troubleshooting / Support
 
