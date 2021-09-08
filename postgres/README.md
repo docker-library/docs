@@ -24,18 +24,21 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`13.2`, `13`, `latest`](https://github.com/docker-library/postgres/blob/7bd41786539082857396f4d1b4f1cb326ebee8de/13/Dockerfile)
--	[`13.2-alpine`, `13-alpine`, `alpine`](https://github.com/docker-library/postgres/blob/a7aa19b8501df4c459dad78fd18e2b36fded9643/13/alpine/Dockerfile)
--	[`12.6`, `12`](https://github.com/docker-library/postgres/blob/b349a7e67b5f434768f6ae685113e0accaed0842/12/Dockerfile)
--	[`12.6-alpine`, `12-alpine`](https://github.com/docker-library/postgres/blob/4cec33a2ee0bbfbfa73d1ff7dd08e66cd2c74297/12/alpine/Dockerfile)
--	[`11.11`, `11`](https://github.com/docker-library/postgres/blob/14f13e4b399ed1848fa24c2c1f5bd40c25732bdd/11/Dockerfile)
--	[`11.11-alpine`, `11-alpine`](https://github.com/docker-library/postgres/blob/9693709797a818a5d56dfb81ecd34a2754eba2f7/11/alpine/Dockerfile)
--	[`10.16`, `10`](https://github.com/docker-library/postgres/blob/cbe3131bd8e6d454d80d5c05695276b1d468b261/10/Dockerfile)
--	[`10.16-alpine`, `10-alpine`](https://github.com/docker-library/postgres/blob/1267a1f1bb39bcf97d9ae498e1edcfd864c8db1d/10/alpine/Dockerfile)
--	[`9.6.21`, `9.6`, `9`](https://github.com/docker-library/postgres/blob/11119157a345c282fea29b13d374bdea602a39ac/9.6/Dockerfile)
--	[`9.6.21-alpine`, `9.6-alpine`, `9-alpine`](https://github.com/docker-library/postgres/blob/45cbba060d3674d4ff0529450267bb4656692363/9.6/alpine/Dockerfile)
--	[`9.5.25`, `9.5`](https://github.com/docker-library/postgres/blob/b122f60426e69df9d6effbda45fe2ef659c1d4f2/9.5/Dockerfile)
--	[`9.5.25-alpine`, `9.5-alpine`](https://github.com/docker-library/postgres/blob/6667795da15f1a2d2791021659f2f766828a4321/9.5/alpine/Dockerfile)
+-	[`14beta3`, `14beta3-buster`](https://github.com/docker-library/postgres/blob/b4b726dbf1885e8e1543526ad9d250fdb2689cbb/14/buster/Dockerfile)
+-	[`14beta3-alpine`, `14beta3-alpine3.14`](https://github.com/docker-library/postgres/blob/b4b726dbf1885e8e1543526ad9d250fdb2689cbb/14/alpine/Dockerfile)
+-	[`13.4`, `13`, `latest`, `13.4-buster`, `13-buster`, `buster`](https://github.com/docker-library/postgres/blob/7f5f6da5a1976bfd2c6d989e20cef080d0d9c68f/13/buster/Dockerfile)
+-	[`13.4-alpine`, `13-alpine`, `alpine`, `13.4-alpine3.14`, `13-alpine3.14`, `alpine3.14`](https://github.com/docker-library/postgres/blob/7f5f6da5a1976bfd2c6d989e20cef080d0d9c68f/13/alpine/Dockerfile)
+-	[`12.8`, `12`, `12.8-buster`, `12-buster`](https://github.com/docker-library/postgres/blob/cf175692c137b00938f480b3ae1babae0999e05e/12/buster/Dockerfile)
+-	[`12.8-alpine`, `12-alpine`, `12.8-alpine3.14`, `12-alpine3.14`](https://github.com/docker-library/postgres/blob/cf175692c137b00938f480b3ae1babae0999e05e/12/alpine/Dockerfile)
+-	[`11.13-buster`, `11-buster`](https://github.com/docker-library/postgres/blob/415040d370e989dd3e6010bcdee5ba2440273598/11/buster/Dockerfile)
+-	[`11.13`, `11`, `11.13-stretch`, `11-stretch`](https://github.com/docker-library/postgres/blob/415040d370e989dd3e6010bcdee5ba2440273598/11/stretch/Dockerfile)
+-	[`11.13-alpine`, `11-alpine`, `11.13-alpine3.14`, `11-alpine3.14`](https://github.com/docker-library/postgres/blob/415040d370e989dd3e6010bcdee5ba2440273598/11/alpine/Dockerfile)
+-	[`10.18-buster`, `10-buster`](https://github.com/docker-library/postgres/blob/a7a749d0ce8b8cd54c5545f6d9489d755af00659/10/buster/Dockerfile)
+-	[`10.18`, `10`, `10.18-stretch`, `10-stretch`](https://github.com/docker-library/postgres/blob/a7a749d0ce8b8cd54c5545f6d9489d755af00659/10/stretch/Dockerfile)
+-	[`10.18-alpine`, `10-alpine`, `10.18-alpine3.14`, `10-alpine3.14`](https://github.com/docker-library/postgres/blob/a7a749d0ce8b8cd54c5545f6d9489d755af00659/10/alpine/Dockerfile)
+-	[`9.6.23-buster`, `9.6-buster`, `9-buster`](https://github.com/docker-library/postgres/blob/32d0897216bfa477c70688b960e5a95651df8992/9.6/buster/Dockerfile)
+-	[`9.6.23`, `9.6`, `9`, `9.6.23-stretch`, `9.6-stretch`, `9-stretch`](https://github.com/docker-library/postgres/blob/32d0897216bfa477c70688b960e5a95651df8992/9.6/stretch/Dockerfile)
+-	[`9.6.23-alpine`, `9.6-alpine`, `9-alpine`, `9.6.23-alpine3.14`, `9.6-alpine3.14`, `9-alpine3.14`](https://github.com/docker-library/postgres/blob/32d0897216bfa477c70688b960e5a95651df8992/9.6/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -346,6 +349,8 @@ The `postgres` images come in many flavors, each designed for a specific use cas
 ## `postgres:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+Some of these tags may have names like buster or stretch in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 ## `postgres:<version>-alpine`
 

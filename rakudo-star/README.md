@@ -24,8 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `2020.10`](https://github.com/Raku/docker/blob/9101edf7704759d30c6fd180f3f9646109e1327d/2020.10/buster/Dockerfile)
--	[`alpine`, `2020.10-alpine`](https://github.com/Raku/docker/blob/9101edf7704759d30c6fd180f3f9646109e1327d/2020.10/alpine3.12/Dockerfile)
+-	[`latest`, `2021.04`](https://github.com/Raku/docker/blob/26de33ad42a6033cd105e354416c9aab3e7c91d1/2021.04/buster/Dockerfile)
+-	[`alpine`, `2021.04-alpine`](https://github.com/Raku/docker/blob/26de33ad42a6033cd105e354416c9aab3e7c91d1/2021.04/alpine3.13/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -76,7 +76,7 @@ $ docker run -it rakudo-star raku -e 'say "Hello!"'
 
 # Contributing/Getting Help
 
-Many Raku developers are present on #raku on Freenode.
+Many Raku developers are present on [#raku on Libera.Chat](https://kiwiirc.com/client/irc.libera.chat/#raku)
 
 Issues for Rakudo are tracked in [on GitHub](https://github.com/rakudo/rakudo/issues).
 

@@ -24,12 +24,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.3.2`, `4.3`, `4`, `latest`](https://github.com/docker-library/ghost/blob/913e06521993c4d1adb75902b3b866860a466af5/4/debian/Dockerfile)
--	[`4.3.2-alpine`, `4.3-alpine`, `4-alpine`, `alpine`](https://github.com/docker-library/ghost/blob/913e06521993c4d1adb75902b3b866860a466af5/4/alpine/Dockerfile)
--	[`3.42.5`, `3.42`, `3`](https://github.com/docker-library/ghost/blob/aafa3aef4bd6d39c9b883fb1b477e9f85eb88504/3/debian/Dockerfile)
--	[`3.42.5-alpine`, `3.42-alpine`, `3-alpine`](https://github.com/docker-library/ghost/blob/aafa3aef4bd6d39c9b883fb1b477e9f85eb88504/3/alpine/Dockerfile)
--	[`2.38.3`, `2.38`, `2`](https://github.com/docker-library/ghost/blob/43436c4d7ff4f323dce29012582fb311bde50c27/2/debian/Dockerfile)
--	[`2.38.3-alpine`, `2.38-alpine`, `2-alpine`](https://github.com/docker-library/ghost/blob/43436c4d7ff4f323dce29012582fb311bde50c27/2/alpine/Dockerfile)
+-	[`4.13.0`, `4.13`, `4`, `latest`](https://github.com/docker-library/ghost/blob/ec9b7dab454ea3280fd9bab4d539bbd8ccc5e4c0/4/debian/Dockerfile)
+-	[`4.13.0-alpine`, `4.13-alpine`, `4-alpine`, `alpine`](https://github.com/docker-library/ghost/blob/ec9b7dab454ea3280fd9bab4d539bbd8ccc5e4c0/4/alpine/Dockerfile)
+-	[`3.42.5`, `3.42`, `3`](https://github.com/docker-library/ghost/blob/5f8c4895e23dc9ee4281aea85ee7f1093a4fbf0c/3/debian/Dockerfile)
+-	[`3.42.5-alpine`, `3.42-alpine`, `3-alpine`](https://github.com/docker-library/ghost/blob/5f8c4895e23dc9ee4281aea85ee7f1093a4fbf0c/3/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -37,7 +35,7 @@ WARNING:
 	[https://github.com/docker-library/ghost/issues](https://github.com/docker-library/ghost/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/ghost/), [`arm32v6`](https://hub.docker.com/r/arm32v6/ghost/), [`arm32v7`](https://hub.docker.com/r/arm32v7/ghost/), [`arm64v8`](https://hub.docker.com/r/arm64v8/ghost/), [`i386`](https://hub.docker.com/r/i386/ghost/), [`ppc64le`](https://hub.docker.com/r/ppc64le/ghost/), [`s390x`](https://hub.docker.com/r/s390x/ghost/)
+	[`amd64`](https://hub.docker.com/r/amd64/ghost/), [`arm32v6`](https://hub.docker.com/r/arm32v6/ghost/), [`arm32v7`](https://hub.docker.com/r/arm32v7/ghost/), [`arm64v8`](https://hub.docker.com/r/arm64v8/ghost/), [`ppc64le`](https://hub.docker.com/r/ppc64le/ghost/), [`s390x`](https://hub.docker.com/r/s390x/ghost/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/ghost/` directory](https://github.com/docker-library/repo-info/blob/master/repos/ghost) ([history](https://github.com/docker-library/repo-info/commits/master/repos/ghost))  
@@ -138,7 +136,7 @@ version: '3.1'
 services:
 
   ghost:
-    image: ghost:3-alpine
+    image: ghost:4-alpine
     restart: always
     ports:
       - 8080:2368
@@ -161,7 +159,7 @@ services:
       MYSQL_ROOT_PASSWORD: example
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/ff4ab86fc4ec774fb4d419480fd412064b38054f/ghost/stack.yml)
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/cd439efd00ac238cdd9dcbb58c2e91e7d46a1ffa/ghost/stack.yml)
 
 Run `docker stack deploy -c stack.yml ghost` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
 

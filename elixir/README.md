@@ -17,19 +17,19 @@ WARNING:
 # Quick reference
 
 -	**Maintained by**:  
-	[the Docker Community](https://github.com/c0b/docker-elixir), [with Elixir's support](https://github.com/docker-library/official-images/pull/1398#issuecomment-180484549)
+	[the Erlang Ecosystem Foundation](https://github.com/erlef/docker-elixir)
 
 -	**Where to get help**:  
 	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.12.0-rc.1`, `1.12.0-rc`, `1.12`](https://github.com/erlef/docker-elixir/blob/33fd7ec657db1995822f5c36fc3a33daf4028b41/1.12/Dockerfile)
--	[`1.12.0-rc.1-slim`, `1.12.0-rc-slim`, `1.12-slim`](https://github.com/erlef/docker-elixir/blob/33fd7ec657db1995822f5c36fc3a33daf4028b41/1.12/slim/Dockerfile)
--	[`1.12.0-rc.1-alpine`, `1.12.0-rc-alpine`, `1.12-alpine`](https://github.com/erlef/docker-elixir/blob/33fd7ec657db1995822f5c36fc3a33daf4028b41/1.12/alpine/Dockerfile)
--	[`1.11.4`, `1.11`, `latest`](https://github.com/erlef/docker-elixir/blob/045351a425a16578309053fa8f729f046fcd616f/1.11/Dockerfile)
--	[`1.11.4-slim`, `1.11-slim`, `slim`](https://github.com/erlef/docker-elixir/blob/045351a425a16578309053fa8f729f046fcd616f/1.11/slim/Dockerfile)
--	[`1.11.4-alpine`, `1.11-alpine`, `alpine`](https://github.com/erlef/docker-elixir/blob/045351a425a16578309053fa8f729f046fcd616f/1.11/alpine/Dockerfile)
+-	[`1.12.2`, `1.12`, `latest`](https://github.com/erlef/docker-elixir/blob/2b5da5abf10f3026d01b6dda3c509f4f09f60063/1.12/Dockerfile)
+-	[`1.12.2-slim`, `1.12-slim`, `slim`](https://github.com/erlef/docker-elixir/blob/2b5da5abf10f3026d01b6dda3c509f4f09f60063/1.12/slim/Dockerfile)
+-	[`1.12.2-alpine`, `1.12-alpine`, `alpine`](https://github.com/erlef/docker-elixir/blob/2b5da5abf10f3026d01b6dda3c509f4f09f60063/1.12/alpine/Dockerfile)
+-	[`1.11.4`, `1.11`](https://github.com/erlef/docker-elixir/blob/045351a425a16578309053fa8f729f046fcd616f/1.11/Dockerfile)
+-	[`1.11.4-slim`, `1.11-slim`](https://github.com/erlef/docker-elixir/blob/045351a425a16578309053fa8f729f046fcd616f/1.11/slim/Dockerfile)
+-	[`1.11.4-alpine`, `1.11-alpine`](https://github.com/erlef/docker-elixir/blob/045351a425a16578309053fa8f729f046fcd616f/1.11/alpine/Dockerfile)
 -	[`1.10.4`, `1.10`](https://github.com/erlef/docker-elixir/blob/a8d582c328db5864a4e8e5f869900e3a52265f38/1.10/Dockerfile)
 -	[`1.10.4-slim`, `1.10-slim`](https://github.com/erlef/docker-elixir/blob/a8d582c328db5864a4e8e5f869900e3a52265f38/1.10/slim/Dockerfile)
 -	[`1.10.4-alpine`, `1.10-alpine`](https://github.com/erlef/docker-elixir/blob/a8d582c328db5864a4e8e5f869900e3a52265f38/1.10/alpine/Dockerfile)
@@ -53,7 +53,7 @@ WARNING:
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/c0b/docker-elixir/issues](https://github.com/c0b/docker-elixir/issues)
+	[https://github.com/erlef/docker-elixir/issues](https://github.com/erlef/docker-elixir/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/elixir/), [`arm32v7`](https://hub.docker.com/r/arm32v7/elixir/), [`arm64v8`](https://hub.docker.com/r/arm64v8/elixir/), [`i386`](https://hub.docker.com/r/i386/elixir/), [`ppc64le`](https://hub.docker.com/r/ppc64le/elixir/), [`s390x`](https://hub.docker.com/r/s390x/elixir/)

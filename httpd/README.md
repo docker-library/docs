@@ -24,8 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.4.46`, `2.4`, `2`, `latest`](https://github.com/docker-library/httpd/blob/077141ee37fca63972292c562ec0f632d0f831b1/2.4/Dockerfile)
--	[`2.4.46-alpine`, `2.4-alpine`, `2-alpine`, `alpine`](https://github.com/docker-library/httpd/blob/d36dfa56811155947b22eebb636bdfe9a74803a2/2.4/alpine/Dockerfile)
+-	[`2.4.48`, `2.4`, `2`, `latest`, `2.4.48-buster`, `2.4-buster`, `2-buster`, `buster`](https://github.com/docker-library/httpd/blob/208fc2ba9a097530bb0b7386b0c2bebacdfb6c5c/2.4/Dockerfile)
+-	[`2.4.48-alpine`, `2.4-alpine`, `2-alpine`, `alpine`, `2.4.48-alpine3.14`, `2.4-alpine3.14`, `2-alpine3.14`, `alpine3.14`](https://github.com/docker-library/httpd/blob/208fc2ba9a097530bb0b7386b0c2bebacdfb6c5c/2.4/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -132,6 +132,8 @@ The `httpd` images come in many flavors, each designed for a specific use case.
 ## `httpd:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+Some of these tags may have names like buster in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 ## `httpd:<version>-alpine`
 

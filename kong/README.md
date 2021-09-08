@@ -24,21 +24,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.4.0-alpine`, `2.4-alpine`, `2.4.0`, `2.4`, `2`, `alpine`, `latest`](https://github.com/Kong/docker-kong/blob/a62135b29314e50120f61ab479b82287f52dc167/alpine/Dockerfile)
--	[`2.4.0-ubuntu`, `2.4-ubuntu`, `ubuntu`](https://github.com/Kong/docker-kong/blob/a62135b29314e50120f61ab479b82287f52dc167/ubuntu/Dockerfile)
--	[`2.4.0-centos`, `2.4-centos`, `centos`](https://github.com/Kong/docker-kong/blob/a62135b29314e50120f61ab479b82287f52dc167/centos/Dockerfile)
--	[`2.3.3-alpine`, `2.3-alpine`, `2.3.3`, `2.3`](https://github.com/Kong/docker-kong/blob/6a6944f5abb7bd2708a47f5571a5133ad976b343/alpine/Dockerfile)
--	[`2.3.3-ubuntu`, `2.3-ubuntu`](https://github.com/Kong/docker-kong/blob/6a6944f5abb7bd2708a47f5571a5133ad976b343/ubuntu/Dockerfile)
--	[`2.3.3-centos`, `2.3-centos`](https://github.com/Kong/docker-kong/blob/6a6944f5abb7bd2708a47f5571a5133ad976b343/centos/Dockerfile)
--	[`2.2.2-alpine`, `2.2-alpine`, `2.2.2`, `2.2`](https://github.com/Kong/docker-kong/blob/40f9973922b56ac590053b56f159bdce802e9296/alpine/Dockerfile)
--	[`2.2.2-ubuntu`, `2.2-ubuntu`](https://github.com/Kong/docker-kong/blob/40f9973922b56ac590053b56f159bdce802e9296/ubuntu/Dockerfile)
--	[`2.2.2-centos`, `2.2-centos`](https://github.com/Kong/docker-kong/blob/40f9973922b56ac590053b56f159bdce802e9296/centos/Dockerfile)
--	[`2.1.4-alpine`, `2.1-alpine`, `2.1.4`, `2.1`](https://github.com/Kong/docker-kong/blob/b4c835f84d56a2d2d69c2780a1a409177ea0844f/alpine/Dockerfile)
--	[`2.1.4-ubuntu`, `2.1-ubuntu`](https://github.com/Kong/docker-kong/blob/397f34af7d3503cc64614ef5852d5929a84ef65b/ubuntu/Dockerfile)
--	[`2.1.4-centos`, `2.1-centos`](https://github.com/Kong/docker-kong/blob/397f34af7d3503cc64614ef5852d5929a84ef65b/centos/Dockerfile)
--	[`2.0.5-alpine`, `2.0.5`, `2.0`](https://github.com/Kong/docker-kong/blob/60626098f2f32fe1528eb4ffacff13fd1c3e919f/alpine/Dockerfile)
--	[`2.0.5-ubuntu`, `2.0-ubuntu`](https://github.com/Kong/docker-kong/blob/60626098f2f32fe1528eb4ffacff13fd1c3e919f/ubuntu/Dockerfile)
--	[`2.0.5-centos`, `2.0-centos`](https://github.com/Kong/docker-kong/blob/60626098f2f32fe1528eb4ffacff13fd1c3e919f/centos/Dockerfile)
+-	[`2.5.0-alpine`, `2.5.0`, `2.5`, `alpine`, `latest`](https://github.com/Kong/docker-kong/blob/ff3efa2c53e785e655a9c7de24c8111a373900cb/alpine/Dockerfile)
+-	[`2.5.0-ubuntu`, `2.5-ubuntu`, `ubuntu`](https://github.com/Kong/docker-kong/blob/ff3efa2c53e785e655a9c7de24c8111a373900cb/ubuntu/Dockerfile)
+-	[`2.5.0-centos`, `2.5-centos`, `centos`](https://github.com/Kong/docker-kong/blob/ff3efa2c53e785e655a9c7de24c8111a373900cb/centos/Dockerfile)
+-	[`2.4.1-alpine`, `2.4-alpine`, `2.4.1`, `2.4`](https://github.com/Kong/docker-kong/blob/e1b0a6c7eddd327926027692863a9900fd856977/alpine/Dockerfile)
+-	[`2.4.1-ubuntu`, `2.4-ubuntu`](https://github.com/Kong/docker-kong/blob/e1b0a6c7eddd327926027692863a9900fd856977/ubuntu/Dockerfile)
+-	[`2.4.1-centos`, `2.4-centos`](https://github.com/Kong/docker-kong/blob/e1b0a6c7eddd327926027692863a9900fd856977/centos/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -61,7 +52,7 @@ WARNING:
 
 # What is Kong?
 
-Kong is a scalable, open source API Platform (also known as an API Gateway or API Middleware). Kong was originally built by [Kong Inc.](https://konghq.com) (formerly known as Mashape) to secure, manage and extend over 15,000 Microservices for its API Marketplace, which generates billions of requests per month.
+Kong is a scalable, open source API Platform (also known as an API Gateway or API Middleware). Kong was originally built by [Kong Inc.](https://konghq.com) (formerly known as Mashape) to secure, manage, and extend over 15,000 Microservices for its API Marketplace, which generates billions of requests per month.
 
 Under active development, Kong is now used in production at hundreds of organizations from startups, to large enterprises and governments including: The New York Times, Expedia, Healthcare.gov, The Guardian, Condè Nast, The University of Auckland, Ferrari, Rakuten, Cisco, SkyScanner, Yahoo! Japan, Giphy and so on.
 
@@ -103,7 +94,7 @@ $ http :8001/config config=@kong.yml
 
 # How to use this image with a Database
 
-First, for fully-compatible with all plugins (e.g. acl, oauth2), Kong requires a running Cassandra cluster (3.x+) or PostgreSQL instance (9.6+) before it starts. You can either use the official Cassandra/PostgreSQL containers, or use your own.
+You can either use the official Cassandra/PostgreSQL containers, or use your own.
 
 ## 1. Link Kong to either a Cassandra or PostgreSQL container
 
@@ -176,7 +167,7 @@ $ docker run -d --name kong \
 
 If everything went well, and if you created your container with the default ports, Kong should be listening on your host's `8000` ([Proxy](https://docs.konghq.com/latest/configuration/#proxy_port)), `8443` ([Proxy SSL](https://docs.konghq.com/latest/configuration/#proxy_listen_ssl)), `8001` ([Admin API](https://docs.konghq.com/latest/configuration/#admin_listen)) and `8444` ([Admin API SSL](https://docs.konghq.com/latest/configuration/#admin_listen_ssl)) ports.
 
-You can now read the docs at [docs.konghq.com](https://docs.konghq.com/) to learn more about Kong.
+You can read the docs at [docs.konghq.com](https://docs.konghq.com/) to learn more about Kong.
 
 ## 3. Use Kong with a custom configuration (and a custom Cassandra/PostgreSQL cluster)
 
@@ -184,7 +175,7 @@ You can override any property of the [Kong configuration file](https://docs.kong
 
 ```shell
 $ docker run -d --name kong \
-    -e "KONG_DATABASE=postgres"
+    -e "KONG_DATABASE=postgres" \
     -e "KONG_PG_HOST=kong-database" \
     -e "KONG_LOG_LEVEL=info" \
     -e "KONG_CUSTOM_PLUGINS=helloworld" \
@@ -199,7 +190,7 @@ $ docker run -d --name kong \
 
 ## Reload Kong in a running container
 
-If you change your custom configuration, you can reload Kong (without downtime) by issuing:
+If you change your custom configuration, reload Kong (without downtime) by running:
 
 ```shell
 $ docker exec -it kong kong reload
@@ -209,7 +200,7 @@ This will run the [`kong reload`](https://docs.konghq.com/latest/cli/#reload) co
 
 # Kubernetes Ingress
 
-Among the many deployment options [available](https://konghq.com/install), Kong also offers a [Kubernetes Ingress Controller](https://github.com/Kong/kubernetes-ingress-controller) ready to use in your K8S environment.
+Among the many deployment options [available](https://konghq.com/install), Kong also offers a [Kubernetes Ingress Controller](https://github.com/Kong/kubernetes-ingress-controller) ready to use in your K8s environment.
 
 # Image Variants
 

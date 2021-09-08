@@ -24,11 +24,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`31`](https://github.com/fedora-cloud/docker-brew-fedora/blob/619a9d98269d556d030648ad486bb2c9f50f1768/x86_64/Dockerfile)
--	[`32`](https://github.com/fedora-cloud/docker-brew-fedora/blob/7d59b0538a60562d1756644b02e51451a311ccdc/x86_64/Dockerfile)
--	[`latest`, `33`](https://github.com/fedora-cloud/docker-brew-fedora/blob/84e8f980c203961f94e12e85bd2cee8fff08b70f/x86_64/Dockerfile)
--	[`34`](https://github.com/fedora-cloud/docker-brew-fedora/blob/fbf3385cf226b655a7e785c238232ea165badca7/x86_64/Dockerfile)
--	[`rawhide`, `35`](https://github.com/fedora-cloud/docker-brew-fedora/blob/5af98888c93fe29c5c738df708e9864d47e8e492/x86_64/Dockerfile)
+-	[`32`](https://github.com/fedora-cloud/docker-brew-fedora/blob/ddec1000ce5ba6f6d48b83092baa0931c71463d2/x86_64/Dockerfile)
+-	[`33`](https://github.com/fedora-cloud/docker-brew-fedora/blob/8062833d074ff75e51c9017d3fd7d3bb0bdadc2d/x86_64/Dockerfile)
+-	[`34`, `latest`](https://github.com/fedora-cloud/docker-brew-fedora/blob/d29b1fabd719afd85a21fecd74f2c2df969e4e49/x86_64/Dockerfile)
+-	[`rawhide`, `35`](https://github.com/fedora-cloud/docker-brew-fedora/blob/533223237dbbfc737bf11a19c31ff7ec69ce5aae/x86_64/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -57,7 +56,7 @@ This image serves as the `official Fedora image` for the [Fedora Distribution](h
 
 The `fedora:latest` tag will always point to the latest stable release.
 
-This image is a relatively small footprint in comparison to a standard Fedora installation. This image is generated in the [Fedora Build System](http://koji.fedoraproject.org/koji/) and is built from [this kickstart file](https://pagure.io/fedora-kickstarts/blob/master/f/fedora-container-base.ks).
+This image is a relatively small footprint in comparison to a standard Fedora installation. This image is generated in the [Fedora Build System](http://koji.fedoraproject.org/koji/) and is built from [this kickstart file](https://pagure.io/fedora-kickstarts/blob/main/f/fedora-container-base.ks).
 
 [Fedora Rawhide](https://fedoraproject.org/wiki/Releases/Rawhide) is available via `fedora:rawhide` and any specific version of Fedora as `fedora:$version` (example: `fedora:23`).
 

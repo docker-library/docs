@@ -24,15 +24,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`19.0.10-apache`, `19.0-apache`, `19-apache`, `19.0.10`, `19.0`, `19`](https://github.com/nextcloud/docker/blob/32353166592cd1543bc83bea2a38dbd89b48147d/19.0/apache/Dockerfile)
--	[`19.0.10-fpm`, `19.0-fpm`, `19-fpm`](https://github.com/nextcloud/docker/blob/32353166592cd1543bc83bea2a38dbd89b48147d/19.0/fpm/Dockerfile)
--	[`19.0.10-fpm-alpine`, `19.0-fpm-alpine`, `19-fpm-alpine`](https://github.com/nextcloud/docker/blob/32353166592cd1543bc83bea2a38dbd89b48147d/19.0/fpm-alpine/Dockerfile)
--	[`20.0.9-apache`, `20.0-apache`, `20-apache`, `stable-apache`, `production-apache`, `20.0.9`, `20.0`, `20`, `stable`, `production`](https://github.com/nextcloud/docker/blob/32353166592cd1543bc83bea2a38dbd89b48147d/20.0/apache/Dockerfile)
--	[`20.0.9-fpm`, `20.0-fpm`, `20-fpm`, `stable-fpm`, `production-fpm`](https://github.com/nextcloud/docker/blob/32353166592cd1543bc83bea2a38dbd89b48147d/20.0/fpm/Dockerfile)
--	[`20.0.9-fpm-alpine`, `20.0-fpm-alpine`, `20-fpm-alpine`, `stable-fpm-alpine`, `production-fpm-alpine`](https://github.com/nextcloud/docker/blob/32353166592cd1543bc83bea2a38dbd89b48147d/20.0/fpm-alpine/Dockerfile)
--	[`21.0.1-apache`, `21.0-apache`, `21-apache`, `apache`, `21.0.1`, `21.0`, `21`, `latest`](https://github.com/nextcloud/docker/blob/32353166592cd1543bc83bea2a38dbd89b48147d/21.0/apache/Dockerfile)
--	[`21.0.1-fpm`, `21.0-fpm`, `21-fpm`, `fpm`](https://github.com/nextcloud/docker/blob/32353166592cd1543bc83bea2a38dbd89b48147d/21.0/fpm/Dockerfile)
--	[`21.0.1-fpm-alpine`, `21.0-fpm-alpine`, `21-fpm-alpine`, `fpm-alpine`](https://github.com/nextcloud/docker/blob/32353166592cd1543bc83bea2a38dbd89b48147d/21.0/fpm-alpine/Dockerfile)
+-	[`20.0.12-apache`, `20.0-apache`, `20-apache`, `20.0.12`, `20.0`, `20`](https://github.com/nextcloud/docker/blob/854c696d5f48d946cb8573817fbe4de287ddc086/20/apache/Dockerfile)
+-	[`20.0.12-fpm`, `20.0-fpm`, `20-fpm`](https://github.com/nextcloud/docker/blob/854c696d5f48d946cb8573817fbe4de287ddc086/20/fpm/Dockerfile)
+-	[`20.0.12-fpm-alpine`, `20.0-fpm-alpine`, `20-fpm-alpine`](https://github.com/nextcloud/docker/blob/3a1f59b21c49650271b1ce0a50833d51806ec57e/20/fpm-alpine/Dockerfile)
+-	[`21.0.4-apache`, `21.0-apache`, `21-apache`, `stable-apache`, `production-apache`, `21.0.4`, `21.0`, `21`, `stable`, `production`](https://github.com/nextcloud/docker/blob/854c696d5f48d946cb8573817fbe4de287ddc086/21/apache/Dockerfile)
+-	[`21.0.4-fpm`, `21.0-fpm`, `21-fpm`, `stable-fpm`, `production-fpm`](https://github.com/nextcloud/docker/blob/854c696d5f48d946cb8573817fbe4de287ddc086/21/fpm/Dockerfile)
+-	[`21.0.4-fpm-alpine`, `21.0-fpm-alpine`, `21-fpm-alpine`, `stable-fpm-alpine`, `production-fpm-alpine`](https://github.com/nextcloud/docker/blob/3a1f59b21c49650271b1ce0a50833d51806ec57e/21/fpm-alpine/Dockerfile)
+-	[`22.1.1-apache`, `22.1-apache`, `22-apache`, `apache`, `22.1.1`, `22.1`, `22`, `latest`](https://github.com/nextcloud/docker/blob/b67f507e77d8b4141ceedd163da64fe554ca611d/22/apache/Dockerfile)
+-	[`22.1.1-fpm`, `22.1-fpm`, `22-fpm`, `fpm`](https://github.com/nextcloud/docker/blob/b67f507e77d8b4141ceedd163da64fe554ca611d/22/fpm/Dockerfile)
+-	[`22.1.1-fpm-alpine`, `22.1-fpm-alpine`, `22-fpm-alpine`, `fpm-alpine`](https://github.com/nextcloud/docker/blob/b67f507e77d8b4141ceedd163da64fe554ca611d/22/fpm-alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -246,7 +246,7 @@ Check the [Nextcloud documentation](https://docs.nextcloud.com/server/latest/adm
 
 ## Using the apache image behind a reverse proxy and auto configure server host and protocol
 
-The apache image will replace the remote addr (ip address visible to Nextcloud) with the ip address from `X-Real-IP` if the request is coming from a proxy in 10.0.0.0/8, 172.16.0.0/12 or 192.168.0.0/16 by default. If you want Nextcloud to pick up the server host (`HTTP_X_FORWARDED_HOST`), protocol (`HTTP_X_FORWARDED_PROTO`) and client ip (`HTTP_X_FORWARDED_FOR`) from a trusted proxy disable rewrite ip and the reverse proxies ip address to `TRUSTED_PROXIES`.
+The apache image will replace the remote addr (ip address visible to Nextcloud) with the ip address from `X-Real-IP` if the request is coming from a proxy in 10.0.0.0/8, 172.16.0.0/12 or 192.168.0.0/16 by default. If you want Nextcloud to pick up the server host (`HTTP_X_FORWARDED_HOST`), protocol (`HTTP_X_FORWARDED_PROTO`) and client ip (`HTTP_X_FORWARDED_FOR`) from a trusted proxy, disable rewrite ip and add the reverse proxies ip address to `TRUSTED_PROXIES`.
 
 -	`APACHE_DISABLE_REWRITE_IP` (not set by default): Set to 1 to disable rewrite ip.
 -	`TRUSTED_PROXIES` (empty by default): A space-separated list of trusted proxies. CIDR notation is supported for IPv4.

@@ -24,11 +24,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`20210212`, `edge`](https://github.com/alpinelinux/docker-alpine/blob/489953694b9dd165f615dc01971971ddf55701f8/x86_64/Dockerfile)
--	[`3.13.5`, `3.13`, `3`, `latest`](https://github.com/alpinelinux/docker-alpine/blob/37579d92b9faa70398240431bc46720242faa5e5/x86_64/Dockerfile)
--	[`3.12.7`, `3.12`](https://github.com/alpinelinux/docker-alpine/blob/8b8051f1c11daff18ada363488e145af9e201802/x86_64/Dockerfile)
--	[`3.11.11`, `3.11`](https://github.com/alpinelinux/docker-alpine/blob/2cd76fb18830708f4af5a6927c3aa40867a4e8bb/x86_64/Dockerfile)
--	[`3.10.9`, `3.10`](https://github.com/alpinelinux/docker-alpine/blob/5a9faa421c89dc3d516bc84e9d47907d560fc2bd/x86_64/Dockerfile)
+-	[`20210804`, `edge`](https://github.com/alpinelinux/docker-alpine/blob/a29a148442aa2d6d13d3d87b224d058ec951ad46/x86_64/Dockerfile)
+-	[`3.14.2`, `3.14`, `3`, `latest`](https://github.com/alpinelinux/docker-alpine/blob/6046c206b93945695d9c3efedcafe629a327fd85/x86_64/Dockerfile)
+-	[`3.13.6`, `3.13`](https://github.com/alpinelinux/docker-alpine/blob/97bdddbacbe7f7fa6165ed2bdfa86d7d0ab43420/x86_64/Dockerfile)
+-	[`3.12.8`, `3.12`](https://github.com/alpinelinux/docker-alpine/blob/d9f83182075b7e627dfbea4f86f7f8134c48a5a5/x86_64/Dockerfile)
+-	[`3.11.12`, `3.11`](https://github.com/alpinelinux/docker-alpine/blob/48093276e3960aeccc4db369c11ea0460b90f349/x86_64/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -36,7 +36,7 @@ WARNING:
 	[https://github.com/alpinelinux/docker-alpine/issues](https://github.com/alpinelinux/docker-alpine/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/alpine/), [`arm32v6`](https://hub.docker.com/r/arm32v6/alpine/), [`arm32v7`](https://hub.docker.com/r/arm32v7/alpine/), [`arm64v8`](https://hub.docker.com/r/arm64v8/alpine/), [`i386`](https://hub.docker.com/r/i386/alpine/), [`ppc64le`](https://hub.docker.com/r/ppc64le/alpine/), [`s390x`](https://hub.docker.com/r/s390x/alpine/)
+	[`amd64`](https://hub.docker.com/r/amd64/alpine/), [`arm32v6`](https://hub.docker.com/r/arm32v6/alpine/), [`arm32v7`](https://hub.docker.com/r/arm32v7/alpine/), [`arm64v8`](https://hub.docker.com/r/arm64v8/alpine/), [`i386`](https://hub.docker.com/r/i386/alpine/), [`ppc64le`](https://hub.docker.com/r/ppc64le/alpine/), [`riscv64`](https://hub.docker.com/r/riscv64/alpine/), [`s390x`](https://hub.docker.com/r/s390x/alpine/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/alpine/` directory](https://github.com/docker-library/repo-info/blob/master/repos/alpine) ([history](https://github.com/docker-library/repo-info/commits/master/repos/alpine))  
@@ -62,7 +62,7 @@ WARNING:
 Use like you would any other base image:
 
 ```dockerfile
-FROM alpine:3.7
+FROM alpine:3.14
 RUN apk add --no-cache mysql-client
 ENTRYPOINT ["mysql"]
 ```
@@ -70,7 +70,7 @@ ENTRYPOINT ["mysql"]
 This example has a virtual image size of only 36.8MB. Compare that to our good friend Ubuntu:
 
 ```dockerfile
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 RUN apt-get update \
     && apt-get install -y --no-install-recommends mysql-client \
     && rm -rf /var/lib/apt/lists/*

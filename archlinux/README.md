@@ -24,8 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `base`, `base-20210425.0.20608`](https://gitlab.archlinux.org/archlinux/archlinux-docker/-/blob/d90390653741d84e557a6cbbb1d60738fdd4eee1/Dockerfile.base)
--	[`base-devel`, `base-devel-20210425.0.20608`](https://gitlab.archlinux.org/archlinux/archlinux-docker/-/blob/d90390653741d84e557a6cbbb1d60738fdd4eee1/Dockerfile.base-devel)
+-	[`latest`, `base`, `base-20210829.0.32635`](https://gitlab.archlinux.org/archlinux/archlinux-docker/-/blob/c5fc33e3a83b74f24aebe6470b8eaba01228eb67/Dockerfile.base)
+-	[`base-devel`, `base-devel-20210829.0.32635`](https://gitlab.archlinux.org/archlinux/archlinux-docker/-/blob/c5fc33e3a83b74f24aebe6470b8eaba01228eb67/Dockerfile.base-devel)
 
 # Quick reference (cont.)
 
@@ -68,6 +68,8 @@ This image is intended to serve the following goals:
 -	Provide simplest but complete image to base every other upon
 -	`pacman` needs to work out of the box
 -	All installed packages have to be kept unmodified
+
+> ⚠️⚠️⚠️ NOTE: For Security Reasons, these images strip the pacman lsign key. This is because the same key would be spread to all containers of the same image, allowing for malicious actors to inject packages (via, for example, a man-in-the-middle). In order to create an lsign-key run `pacman-key --init` on the first execution, but be careful to not redistribute that key. ⚠️⚠️⚠️
 
 ## Availability
 

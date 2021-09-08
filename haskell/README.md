@@ -24,10 +24,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`9.0.1-buster`, `9.0-buster`, `9-buster`, `buster`, `9.0.1`, `9.0`, `9`, `latest`](https://github.com/haskell/docker-haskell/blob/0f1e3f51f5930cce90aacefae4ae3c12f609a2be/9.0/buster/Dockerfile)
--	[`9.0.1-stretch`, `9.0-stretch`, `9-stretch`, `stretch`](https://github.com/haskell/docker-haskell/blob/0f1e3f51f5930cce90aacefae4ae3c12f609a2be/9.0/stretch/Dockerfile)
--	[`8.10.4-buster`, `8.10-buster`, `8-buster`, `8.10.4`, `8.10`, `8`](https://github.com/haskell/docker-haskell/blob/0f1e3f51f5930cce90aacefae4ae3c12f609a2be/8.10/buster/Dockerfile)
--	[`8.10.4-stretch`, `8.10-stretch`, `8-stretch`](https://github.com/haskell/docker-haskell/blob/0f1e3f51f5930cce90aacefae4ae3c12f609a2be/8.10/stretch/Dockerfile)
+-	[`9.0.1-buster`, `9.0-buster`, `9-buster`, `buster`, `9.0.1`, `9.0`, `9`, `latest`](https://github.com/haskell/docker-haskell/blob/d9bf04e3d561c3ccef4528bbe74d1c89552c6d35/9.0/buster/Dockerfile)
+-	[`9.0.1-stretch`, `9.0-stretch`, `9-stretch`, `stretch`](https://github.com/haskell/docker-haskell/blob/d9bf04e3d561c3ccef4528bbe74d1c89552c6d35/9.0/stretch/Dockerfile)
+-	[`8.10.4-buster`, `8.10-buster`, `8-buster`, `8.10.4`, `8.10`, `8`](https://github.com/haskell/docker-haskell/blob/d9bf04e3d561c3ccef4528bbe74d1c89552c6d35/8.10/buster/Dockerfile)
+-	[`8.10.4-stretch`, `8.10-stretch`, `8-stretch`](https://github.com/haskell/docker-haskell/blob/d9bf04e3d561c3ccef4528bbe74d1c89552c6d35/8.10/stretch/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -73,24 +73,24 @@ Additionally, we support the two most versions of Debian (`stable` and `oldstabl
 Start an interactive interpreter session with `ghci`:
 
 ```console
-$ docker run -it --rm haskell:8
-GHCi, version 8.4.3: http://www.haskell.org/ghc/  :? for help
+$ docker run -it --rm haskell:9
+GHCi, version 9.0.1: http://www.haskell.org/ghc/  :? for help
 Prelude>
 ```
 
 Dockerize an application using `stack`:
 
 ```dockerfile
-FROM haskell:8
-RUN stack install pandoc pandoc-citeproc
+FROM haskell:8.10
+RUN stack install --resolver lts-17.14 pandoc citeproc
 ENTRYPOINT ["pandoc"]
 ```
 
 Dockerize an application using `cabal`:
 
 ```dockerfile
-FROM haskell:8
-RUN cabal update && cabal install pandoc pandoc-citeproc
+FROM haskell:8.10
+RUN cabal update && cabal install pandoc citeproc
 ENTRYPOINT ["pandoc"]
 ```
 
@@ -109,7 +109,7 @@ COPY ./example.cabal /opt/example/example.cabal
 # Docker will cache this command as a layer, freeing us up to
 # modify source code without re-installing dependencies
 # (unless the .cabal file changes!)
-RUN cabal install --only-dependencies -j4
+RUN cabal build --only-dependencies -j4
 
 # Add and Install Application Code
 COPY . /opt/example

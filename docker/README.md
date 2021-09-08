@@ -24,14 +24,20 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`20.10.6`, `20.10`, `20`, `latest`](https://github.com/docker-library/docker/blob/f6a0c427f0354dcf5870c430c72c8f1d6b4e6d5e/20.10/Dockerfile)
--	[`20.10.6-dind`, `20.10-dind`, `20-dind`, `dind`](https://github.com/docker-library/docker/blob/094faa88f437cafef7aeb0cc36e75b59046cc4b9/20.10/dind/Dockerfile)
--	[`20.10.6-dind-rootless`, `20.10-dind-rootless`, `20-dind-rootless`, `dind-rootless`](https://github.com/docker-library/docker/blob/f6a0c427f0354dcf5870c430c72c8f1d6b4e6d5e/20.10/dind-rootless/Dockerfile)
--	[`20.10.6-git`, `20.10-git`, `20-git`, `git`](https://github.com/docker-library/docker/blob/387e351394bfad74bceebf8303c6c8e39c3d4ed4/20.10/git/Dockerfile)
--	[`19.03.15`, `19.03`, `19`](https://github.com/docker-library/docker/blob/835c371c516ebdf67adc0c76bbfb38bf9d3e586c/19.03/Dockerfile)
--	[`19.03.15-dind`, `19.03-dind`, `19-dind`](https://github.com/docker-library/docker/blob/b1d2628005e12e79079c025c3653cba248d6f264/19.03/dind/Dockerfile)
--	[`19.03.15-dind-rootless`, `19.03-dind-rootless`, `19-dind-rootless`](https://github.com/docker-library/docker/blob/835c371c516ebdf67adc0c76bbfb38bf9d3e586c/19.03/dind-rootless/Dockerfile)
--	[`19.03.15-git`, `19.03-git`, `19-git`](https://github.com/docker-library/docker/blob/12d1c2763b54d29137ec448a3e4ad1a9aefae1a0/19.03/git/Dockerfile)
+(See ["What's the difference between 'Shared' and 'Simple' tags?" in the FAQ](https://github.com/docker-library/faq#whats-the-difference-between-shared-and-simple-tags).)
+
+## Simple Tags
+
+-	[`20.10.8`, `20.10`, `20`, `latest`, `20.10.8-alpine3.14`](https://github.com/docker-library/docker/blob/b207ac5c6eab0a0aafd0e88e864ea6600614ceee/20.10/Dockerfile)
+-	[`20.10.8-dind`, `20.10-dind`, `20-dind`, `dind`, `20.10.8-dind-alpine3.14`](https://github.com/docker-library/docker/blob/8baa881aab85f8398d2edbbcc0da4bd1f556dd98/20.10/dind/Dockerfile)
+-	[`20.10.8-dind-rootless`, `20.10-dind-rootless`, `20-dind-rootless`, `dind-rootless`](https://github.com/docker-library/docker/blob/83e4de3bc2aac346e2f76129b1a3a556c1e1bb95/20.10/dind-rootless/Dockerfile)
+-	[`20.10.8-git`, `20.10-git`, `20-git`, `git`](https://github.com/docker-library/docker/blob/387e351394bfad74bceebf8303c6c8e39c3d4ed4/20.10/git/Dockerfile)
+-	[`20.10.8-windowsservercore-1809`, `20.10-windowsservercore-1809`, `20-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/docker-library/docker/blob/83e4de3bc2aac346e2f76129b1a3a556c1e1bb95/20.10/windows/windowsservercore-1809/Dockerfile)
+
+## Shared Tags
+
+-	`20.10.8-windowsservercore`, `20.10-windowsservercore`, `20-windowsservercore`, `windowsservercore`:
+	-	[`20.10.8-windowsservercore-1809`](https://github.com/docker-library/docker/blob/83e4de3bc2aac346e2f76129b1a3a556c1e1bb95/20.10/windows/windowsservercore-1809/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -39,7 +45,7 @@ WARNING:
 	[https://github.com/docker-library/docker/issues](https://github.com/docker-library/docker/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/docker/), [`arm32v6`](https://hub.docker.com/r/arm32v6/docker/), [`arm32v7`](https://hub.docker.com/r/arm32v7/docker/), [`arm64v8`](https://hub.docker.com/r/arm64v8/docker/)
+	[`amd64`](https://hub.docker.com/r/amd64/docker/), [`arm64v8`](https://hub.docker.com/r/arm64v8/docker/), [`windows-amd64`](https://hub.docker.com/r/winamd64/docker/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/docker/` directory](https://github.com/docker-library/repo-info/blob/master/repos/docker) ([history](https://github.com/docker-library/repo-info/commits/master/repos/docker))  
@@ -295,6 +301,23 @@ The Docker documentation is a good starting point for understanding the differen
 	```
 
 The `-v /my/own/var-lib-docker:/var/lib/docker` part of the command mounts the `/my/own/var-lib-docker` directory from the underlying host system as `/var/lib/docker` inside the container, where Docker by default will write its data files.
+
+# Image Variants
+
+The `docker` images come in many flavors, each designed for a specific use case.
+
+## `docker:<version>`
+
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+## `docker:<version>-windowsservercore`
+
+This image is based on [Windows Server Core (`microsoft/windowsservercore`)](https://hub.docker.com/r/microsoft/windowsservercore/). As such, it only works in places which that image does, such as Windows 10 Professional/Enterprise (Anniversary Edition) or Windows Server 2016.
+
+For information about how to get Docker running on Windows, please see the relevant "Quick Start" guide provided by Microsoft:
+
+-	[Windows Server Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_server)
+-	[Windows 10 Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)
 
 # License
 

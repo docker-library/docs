@@ -28,6 +28,6 @@ $ docker run -it %%IMAGE%% raku -e 'say "Hello!"'
 
 # Contributing/Getting Help
 
-Many Raku developers are present on #raku on Freenode.
+Many Raku developers are present on [#raku on Libera.Chat](https://kiwiirc.com/client/irc.libera.chat/#raku)
 
 Issues for Rakudo are tracked in [on GitHub](https://github.com/rakudo/rakudo/issues).
