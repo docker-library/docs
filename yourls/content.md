@@ -8,7 +8,7 @@ YOURLS is a set of PHP scripts that will allow you to run Your Own URL Shortener
 
 # How to use this image
 
-## Start a `yourls` server instance
+## Start a `%%IMAGE%%` server instance
 
 ```console
 $ docker run --name some-%%REPO%% --link some-mysql:mysql \
@@ -18,7 +18,7 @@ $ docker run --name some-%%REPO%% --link some-mysql:mysql \
     -d %%IMAGE%%
 ```
 
-The YOURLS instance accepts a number of environment variables for configuration, see _Environment Variables_ section below.
+The YOURLS instance accepts a number of environment variables for configuration, see *Environment Variables* section below.
 
 If you'd like to use an external database instead of a linked `mysql` container, specify the hostname and port with `YOURLS_DB_HOST` along with the password in `YOURLS_DB_PASS` and the username in `YOURLS_DB_USER` (if it is something other than `root`):
 
@@ -41,28 +41,28 @@ Then, access it via `http://localhost:8080/admin/` or `http://<host-ip>:8080/adm
 
 ## Environment Variables
 
-When you start the `yourls` image, you can adjust the configuration of the YOURLS instance by passing one or more environment variables on the `docker run` command line.
+When you start the `yourls` image, you can adjust the configuration of the YOURLS instance by passing one or more environment variables on the `docker run` command line.  
 The YOURLS instance accepts [a number of environment variables for configuration](https://yourls.org/#Config).  
 A few notable/important examples for using this Docker image include the following.
 
 
 ### `YOURLS_SITE`
 
-**Required.**
+**Required.**  
 YOURLS instance URL, no trailing slash, lowercase.
 
 Example: `YOURLS_SITE="https://example.com"`
 
 ### `YOURLS_USER`
 
-**Required.**
+**Required.**  
 YOURLS instance username.
 
 Example: `YOURLS_USER="example_username"`
 
 ### `YOURLS_PASS`
 
-**Required.**
+**Required.**  
 YOURLS instance password.
 
 Example: `YOURLS_USER="example_password"`
@@ -75,16 +75,13 @@ Host, user (defaults to "root") and password for the database.
 
 ### `YOURLS_DB_NAME`
 
-**Optional.**
-Database name, defaults to "yourls".
-The database must have been created before installing YOURLS.
+**Optional.**  
+Database name, defaults to "yourls". The database must have been created before installing YOURLS.
 
 ### `YOURLS_DB_PREFIX`
 
-**Optional.**
-
-Database tables prefix, defaults to "yourls_".
-Only set this when you need to override the default table prefix.
+**Optional.**  
+Database tables prefix, defaults to "yourls_". Only set this when you need to override the default table prefix.
 
 ## Docker Secrets
 
