@@ -45,7 +45,6 @@ When you start the `yourls` image, you can adjust the configuration of the YOURL
 The YOURLS instance accepts [a number of environment variables for configuration](https://yourls.org/#Config).  
 A few notable/important examples for using this Docker image include the following.
 
-
 ### `YOURLS_SITE`
 
 **Required.**  
