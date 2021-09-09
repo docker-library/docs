@@ -186,7 +186,7 @@ while (my $repo = shift) { # 'library/hylang', 'tianon/perl', etc
 					qw( convert -background none -density 1200 -strip -resize 120x120> -gravity center -extent 120x120 ),
 					$logoToConvert,
 					$repoLogo120,
-				) == 0 or die "failed to convert $repoLogoPng into $repoLogo120";
+				) == 0 or die "failed to convert $logoToConvert into $repoLogo120";
 			}
 		}
 		if (-f $repoLogo120) {
