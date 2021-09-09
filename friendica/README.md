@@ -24,12 +24,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2021.04-apache`, `2021.04`](https://github.com/friendica/docker/blob/ffd8358b2101d60ba7d6a00770c7819e0b58f4f2/2021.04/apache/Dockerfile)
--	[`2021.04-fpm`](https://github.com/friendica/docker/blob/ffd8358b2101d60ba7d6a00770c7819e0b58f4f2/2021.04/fpm/Dockerfile)
--	[`2021.04-fpm-alpine`](https://github.com/friendica/docker/blob/ffd8358b2101d60ba7d6a00770c7819e0b58f4f2/2021.04/fpm-alpine/Dockerfile)
--	[`2021.07-apache`, `apache`, `stable-apache`, `2021.07`, `latest`, `stable`](https://github.com/friendica/docker/blob/ffd8358b2101d60ba7d6a00770c7819e0b58f4f2/2021.07/apache/Dockerfile)
--	[`2021.07-fpm`, `fpm`, `stable-fpm`](https://github.com/friendica/docker/blob/ffd8358b2101d60ba7d6a00770c7819e0b58f4f2/2021.07/fpm/Dockerfile)
--	[`2021.07-fpm-alpine`, `fpm-alpine`, `stable-fpm-alpine`](https://github.com/friendica/docker/blob/ffd8358b2101d60ba7d6a00770c7819e0b58f4f2/2021.07/fpm-alpine/Dockerfile)
+-	[`2021.04-apache`, `2021.04`](https://github.com/friendica/docker/blob/2f1d0cb76982edd467590c144e78fc2cd173cf9d/2021.04/apache/Dockerfile)
+-	[`2021.04-fpm`](https://github.com/friendica/docker/blob/2f1d0cb76982edd467590c144e78fc2cd173cf9d/2021.04/fpm/Dockerfile)
+-	[`2021.04-fpm-alpine`](https://github.com/friendica/docker/blob/2f1d0cb76982edd467590c144e78fc2cd173cf9d/2021.04/fpm-alpine/Dockerfile)
+-	[`2021.07-apache`, `apache`, `stable-apache`, `2021.07`, `latest`, `stable`](https://github.com/friendica/docker/blob/2f1d0cb76982edd467590c144e78fc2cd173cf9d/2021.07/apache/Dockerfile)
+-	[`2021.07-fpm`, `fpm`, `stable-fpm`](https://github.com/friendica/docker/blob/2f1d0cb76982edd467590c144e78fc2cd173cf9d/2021.07/fpm/Dockerfile)
+-	[`2021.07-fpm-alpine`, `fpm-alpine`, `stable-fpm-alpine`](https://github.com/friendica/docker/blob/2f1d0cb76982edd467590c144e78fc2cd173cf9d/2021.07/fpm-alpine/Dockerfile)
 -	[`2021.09-dev-apache`, `dev-apache`, `2021.09-dev`, `dev`](https://github.com/friendica/docker/blob/ee990e483762774a241673b91bab9860914a7214/2021.09-dev/apache/Dockerfile)
 -	[`2021.09-dev-fpm`, `dev-fpm`](https://github.com/friendica/docker/blob/ee990e483762774a241673b91bab9860914a7214/2021.09-dev/fpm/Dockerfile)
 -	[`2021.09-dev-fpm-alpine`, `dev-fpm-alpine`](https://github.com/friendica/docker/blob/ee990e483762774a241673b91bab9860914a7214/2021.09-dev/fpm-alpine/Dockerfile)
