@@ -35,15 +35,15 @@ The routing protocol has been dramatically improved and adds support for account
 
 $ docker run -d --name nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 %%IMAGE%%
 [INF] Starting nats-server
-[INF]   Version:  2.4.0
-[INF]   Git:      [e49eb66]
-[INF]   Name:     NDD4W3464ZNB3HLNZMIJ6LNBJBWOY7S46WGSDXEZYR4EXJZEBXG3GNQV
-[INF]   ID:       NDD4W3464ZNB3HLNZMIJ6LNBJBWOY7S46WGSDXEZYR4EXJZEBXG3GNQV
+[INF]   Version:  2.5.0
+[INF]   Git:      [b3c19b9]
+[INF]   Name:     NDOAFYR5GPZAXCC6WHG4NNY232XA6MRR6KW4KHHSSIEZZ2LFSZPW6JZT
+[INF]   ID:       NDOAFYR5GPZAXCC6WHG4NNY232XA6MRR6KW4KHHSSIEZZ2LFSZPW6JZT
 [INF] Using configuration file: /etc/nats/nats-server.conf
 [INF] Starting http monitor on 0.0.0.0:8222
 [INF] Listening for client connections on 0.0.0.0:4222
 [INF] Server is ready
-[INF] Cluster name is G6J54kuCJLzxyajVVqSDNr
+[INF] Cluster name is FzCKdjuPg8fZCOfKfGduKN
 [WRN] Cluster name was dynamically generated, consider setting one
 [INF] Listening for route connections on 0.0.0.0:6222
 ...
@@ -57,11 +57,11 @@ $ docker run -d --name=nats-2 --link nats-main -p 4222:4222 -p 6222:6222 -p 8222
 # If you want to verify the routes are connected, try this instead:
 $ docker run -d --name=nats-2 --link nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 %%IMAGE%% -c nats-server.conf --routes=nats-route://ruser:T0pS3cr3t@nats-main:6222 -DV
 [INF] Starting nats-server
-[INF]   Version:  2.4.0
-[INF]   Git:      [e49eb66]
-[DBG]   Go build: go1.16.7
-[INF]   Name:     NDAZ2NJ2NHI7K3ZZYXPNN3HA3OL6LJTY3AOYJPWN7LWUUXGIVZKEFJD6
-[INF]   ID:       NDAZ2NJ2NHI7K3ZZYXPNN3HA3OL6LJTY3AOYJPWN7LWUUXGIVZKEFJD6
+[INF]   Version:  2.5.0
+[INF]   Git:      [b3c19b9]
+[DBG]   Go build: go1.16.8
+[INF]   Name:     NAXVQUTCV2F44H2OWFT3FNSNDL3GL7XWW524KB2L6V2OJ3UZTU5QTGJL
+[INF]   ID:       NAXVQUTCV2F44H2OWFT3FNSNDL3GL7XWW524KB2L6V2OJ3UZTU5QTGJL
 [INF] Using configuration file: /etc/nats/nats-server.conf
 [DBG] Created system account: "$SYS"
 [INF] Starting http monitor on 0.0.0.0:8222
@@ -69,7 +69,7 @@ $ docker run -d --name=nats-2 --link nats-main -p 4222:4222 -p 6222:6222 -p 8222
 [DBG] Get non local IPs for "0.0.0.0"
 [DBG]   ip=172.17.0.3
 [INF] Server is ready
-[INF] Cluster name is PkYwF11GKlDT13nuF9XqcL
+[INF] Cluster name is cADbRo1M3jgtyRiWYQXQ0O
 [WRN] Cluster name was dynamically generated, consider setting one
 [INF] Listening for route connections on 0.0.0.0:6222
 [DBG] Trying to connect to route on nats-main:6222 (172.17.0.2:6222)
@@ -80,7 +80,7 @@ $ docker run -d --name=nats-2 --link nats-main -p 4222:4222 -p 6222:6222 -p 8222
 [DBG] Trying to connect to route on nats-main:6222 (172.17.0.2:6222)
 [DBG] 172.17.0.2:6222 - rid:5 - Route connect msg sent
 [INF] 172.17.0.2:6222 - rid:5 - Route connection created
-[DBG] 172.17.0.2:6222 - rid:5 - Registering remote route "NDD4W3464ZNB3HLNZMIJ6LNBJBWOY7S46WGSDXEZYR4EXJZEBXG3GNQV"
+[DBG] 172.17.0.2:6222 - rid:5 - Registering remote route "NCJFG422FFNRRZVKLEARWSGPIWFVUTYNAX3UWFFBLW7CK6FI2JCHVYLA"
 [DBG] 172.17.0.2:6222 - rid:5 - Sent local subscriptions to route
 ```
 
