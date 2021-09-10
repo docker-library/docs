@@ -1,0 +1,2 @@
+-	[Discussions](https://github.com/emqx/emqx/discussions)
+-	[Slack](https://slack-invite.emqx.io/)
