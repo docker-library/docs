@@ -64,23 +64,23 @@ Example: `YOURLS_USER="example_username"`
 **Required.**  
 YOURLS instance password.
 
-Example: `YOURLS_USER="example_password"`
+Example: `YOURLS_PASS="example_password"`
 
 ### `YOURLS_DB_HOST`, `YOURLS_DB_USER`, `YOURLS_DB_PASS`
 
 **Optional if linked `mysql` container.**
 
-Host, user (defaults to "root") and password for the database.
+Host, user (defaults to `root`) and password for the database.
 
 ### `YOURLS_DB_NAME`
 
 **Optional.**  
-Database name, defaults to "yourls". The database must have been created before installing YOURLS.
+Database name, defaults to `yourls`. The database must have been created before installing YOURLS.
 
 ### `YOURLS_DB_PREFIX`
 
 **Optional.**  
-Database tables prefix, defaults to "yourls_". Only set this when you need to override the default table prefix.
+Database tables prefix, defaults to `yourls_`. Only set this when you need to override the default table prefix.
 
 ## Docker Secrets
 
