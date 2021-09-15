@@ -35,4 +35,3 @@ ENV JAVA_HOME=/opt/java/openjdk
 COPY --from=%%IMAGE%%:11 $JAVA_HOME $JAVA_HOME
 ENV PATH="${JAVA_HOME}/bin:${PATH}"
 ```
-
