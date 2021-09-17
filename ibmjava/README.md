@@ -24,13 +24,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8-jre`, `jre`, `8`, `latest`](https://github.com/ibmruntimes/ci.docker/blob/41ff2296a7d3de9b694feb3407fc66a25dfd41c0/ibmjava/8/jre/ubuntu/Dockerfile)
--	[`8-jre-alpine`, `jre-alpine`](https://github.com/ibmruntimes/ci.docker/blob/41ff2296a7d3de9b694feb3407fc66a25dfd41c0/ibmjava/8/jre/alpine/Dockerfile)
--	[`8-sfj`, `sfj`](https://github.com/ibmruntimes/ci.docker/blob/41ff2296a7d3de9b694feb3407fc66a25dfd41c0/ibmjava/8/sfj/ubuntu/Dockerfile)
--	[`8-sfj-alpine`, `sfj-alpine`](https://github.com/ibmruntimes/ci.docker/blob/41ff2296a7d3de9b694feb3407fc66a25dfd41c0/ibmjava/8/sfj/alpine/Dockerfile)
--	[`8-sdk`, `sdk`](https://github.com/ibmruntimes/ci.docker/blob/41ff2296a7d3de9b694feb3407fc66a25dfd41c0/ibmjava/8/sdk/ubuntu/Dockerfile)
--	[`8-sdk-alpine`, `sdk-alpine`](https://github.com/ibmruntimes/ci.docker/blob/41ff2296a7d3de9b694feb3407fc66a25dfd41c0/ibmjava/8/sdk/alpine/Dockerfile)
--	[`11-jdk`, `11`](https://github.com/ibmruntimes/ci.docker/blob/41ff2296a7d3de9b694feb3407fc66a25dfd41c0/ibmjava/11/jdk/ubuntu/Dockerfile)
+-	[`8-jre`, `jre`, `8`, `latest`](https://github.com/ibmruntimes/ci.docker/blob/c14f45f7de370a12d59c2aacdd0e914bd0ff3c00/ibmjava/8/jre/ubuntu/Dockerfile)
+-	[`8-jre-alpine`, `jre-alpine`](https://github.com/ibmruntimes/ci.docker/blob/c14f45f7de370a12d59c2aacdd0e914bd0ff3c00/ibmjava/8/jre/alpine/Dockerfile)
+-	[`8-sfj`, `sfj`](https://github.com/ibmruntimes/ci.docker/blob/c14f45f7de370a12d59c2aacdd0e914bd0ff3c00/ibmjava/8/sfj/ubuntu/Dockerfile)
+-	[`8-sfj-alpine`, `sfj-alpine`](https://github.com/ibmruntimes/ci.docker/blob/c14f45f7de370a12d59c2aacdd0e914bd0ff3c00/ibmjava/8/sfj/alpine/Dockerfile)
+-	[`8-sdk`, `sdk`](https://github.com/ibmruntimes/ci.docker/blob/c14f45f7de370a12d59c2aacdd0e914bd0ff3c00/ibmjava/8/sdk/ubuntu/Dockerfile)
+-	[`8-sdk-alpine`, `sdk-alpine`](https://github.com/ibmruntimes/ci.docker/blob/c14f45f7de370a12d59c2aacdd0e914bd0ff3c00/ibmjava/8/sdk/alpine/Dockerfile)
+-	[`11-jdk`, `11`](https://github.com/ibmruntimes/ci.docker/blob/c14f45f7de370a12d59c2aacdd0e914bd0ff3c00/ibmjava/11/jdk/ubuntu/Dockerfile)
 
 # Quick reference (cont.)
 
