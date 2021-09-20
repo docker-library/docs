@@ -28,29 +28,29 @@ WARNING:
 
 ## Simple Tags
 
--	[`3.7-7.3.5-bullseye`, `3.7-7.3-bullseye`, `3.7-7-bullseye`, `3.7-bullseye`, `3-7.3.5-bullseye`, `3-7.3-bullseye`, `3-7-bullseye`, `3-bullseye`, `bullseye`](https://github.com/docker-library/pypy/blob/bfdb2ba41acbb15e34858a359686e257535b9956/3.7/bullseye/Dockerfile)
--	[`3.7-7.3.5-slim`, `3.7-7.3-slim`, `3.7-7-slim`, `3.7-slim`, `3-7.3.5-slim`, `3-7.3-slim`, `3-7-slim`, `3-slim`, `slim`, `3.7-7.3.5-slim-bullseye`, `3.7-7.3-slim-bullseye`, `3.7-7-slim-bullseye`, `3.7-slim-bullseye`, `3-7.3.5-slim-bullseye`, `3-7.3-slim-bullseye`, `3-7-slim-bullseye`, `3-slim-bullseye`, `slim-bullseye`](https://github.com/docker-library/pypy/blob/bfdb2ba41acbb15e34858a359686e257535b9956/3.7/slim-bullseye/Dockerfile)
--	[`3.7-7.3.5-buster`, `3.7-7.3-buster`, `3.7-7-buster`, `3.7-buster`, `3-7.3.5-buster`, `3-7.3-buster`, `3-7-buster`, `3-buster`, `buster`](https://github.com/docker-library/pypy/blob/bfdb2ba41acbb15e34858a359686e257535b9956/3.7/buster/Dockerfile)
--	[`3.7-7.3.5-slim-buster`, `3.7-7.3-slim-buster`, `3.7-7-slim-buster`, `3.7-slim-buster`, `3-7.3.5-slim-buster`, `3-7.3-slim-buster`, `3-7-slim-buster`, `3-slim-buster`, `slim-buster`](https://github.com/docker-library/pypy/blob/bfdb2ba41acbb15e34858a359686e257535b9956/3.7/slim-buster/Dockerfile)
--	[`3.7-7.3.5-windowsservercore-1809`, `3.7-7.3-windowsservercore-1809`, `3.7-7-windowsservercore-1809`, `3.7-windowsservercore-1809`, `3-7.3.5-windowsservercore-1809`, `3-7.3-windowsservercore-1809`, `3-7-windowsservercore-1809`, `3-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/docker-library/pypy/blob/bfdb2ba41acbb15e34858a359686e257535b9956/3.7/windows/windowsservercore-1809/Dockerfile)
--	[`2.7-7.3.5-bullseye`, `2.7-7.3-bullseye`, `2.7-7-bullseye`, `2.7-bullseye`, `2-7.3.5-bullseye`, `2-7.3-bullseye`, `2-7-bullseye`, `2-bullseye`](https://github.com/docker-library/pypy/blob/bfdb2ba41acbb15e34858a359686e257535b9956/2.7/bullseye/Dockerfile)
--	[`2.7-7.3.5-slim`, `2.7-7.3-slim`, `2.7-7-slim`, `2.7-slim`, `2-7.3.5-slim`, `2-7.3-slim`, `2-7-slim`, `2-slim`, `2.7-7.3.5-slim-bullseye`, `2.7-7.3-slim-bullseye`, `2.7-7-slim-bullseye`, `2.7-slim-bullseye`, `2-7.3.5-slim-bullseye`, `2-7.3-slim-bullseye`, `2-7-slim-bullseye`, `2-slim-bullseye`](https://github.com/docker-library/pypy/blob/bfdb2ba41acbb15e34858a359686e257535b9956/2.7/slim-bullseye/Dockerfile)
--	[`2.7-7.3.5-buster`, `2.7-7.3-buster`, `2.7-7-buster`, `2.7-buster`, `2-7.3.5-buster`, `2-7.3-buster`, `2-7-buster`, `2-buster`](https://github.com/docker-library/pypy/blob/bfdb2ba41acbb15e34858a359686e257535b9956/2.7/buster/Dockerfile)
--	[`2.7-7.3.5-slim-buster`, `2.7-7.3-slim-buster`, `2.7-7-slim-buster`, `2.7-slim-buster`, `2-7.3.5-slim-buster`, `2-7.3-slim-buster`, `2-7-slim-buster`, `2-slim-buster`](https://github.com/docker-library/pypy/blob/bfdb2ba41acbb15e34858a359686e257535b9956/2.7/slim-buster/Dockerfile)
--	[`2.7-7.3.5-windowsservercore-1809`, `2.7-7.3-windowsservercore-1809`, `2.7-7-windowsservercore-1809`, `2.7-windowsservercore-1809`, `2-7.3.5-windowsservercore-1809`, `2-7.3-windowsservercore-1809`, `2-7-windowsservercore-1809`, `2-windowsservercore-1809`](https://github.com/docker-library/pypy/blob/bfdb2ba41acbb15e34858a359686e257535b9956/2.7/windows/windowsservercore-1809/Dockerfile)
+-	[`3.7-7.3.5-bullseye`, `3.7-7.3-bullseye`, `3.7-7-bullseye`, `3.7-bullseye`, `3-7.3.5-bullseye`, `3-7.3-bullseye`, `3-7-bullseye`, `3-bullseye`, `bullseye`](https://github.com/docker-library/pypy/blob/7b773bc33065a3b8bccc65be370a3fcf486d4c45/3.7/bullseye/Dockerfile)
+-	[`3.7-7.3.5-slim`, `3.7-7.3-slim`, `3.7-7-slim`, `3.7-slim`, `3-7.3.5-slim`, `3-7.3-slim`, `3-7-slim`, `3-slim`, `slim`, `3.7-7.3.5-slim-bullseye`, `3.7-7.3-slim-bullseye`, `3.7-7-slim-bullseye`, `3.7-slim-bullseye`, `3-7.3.5-slim-bullseye`, `3-7.3-slim-bullseye`, `3-7-slim-bullseye`, `3-slim-bullseye`, `slim-bullseye`](https://github.com/docker-library/pypy/blob/7b773bc33065a3b8bccc65be370a3fcf486d4c45/3.7/slim-bullseye/Dockerfile)
+-	[`3.7-7.3.5-buster`, `3.7-7.3-buster`, `3.7-7-buster`, `3.7-buster`, `3-7.3.5-buster`, `3-7.3-buster`, `3-7-buster`, `3-buster`, `buster`](https://github.com/docker-library/pypy/blob/7b773bc33065a3b8bccc65be370a3fcf486d4c45/3.7/buster/Dockerfile)
+-	[`3.7-7.3.5-slim-buster`, `3.7-7.3-slim-buster`, `3.7-7-slim-buster`, `3.7-slim-buster`, `3-7.3.5-slim-buster`, `3-7.3-slim-buster`, `3-7-slim-buster`, `3-slim-buster`, `slim-buster`](https://github.com/docker-library/pypy/blob/7b773bc33065a3b8bccc65be370a3fcf486d4c45/3.7/slim-buster/Dockerfile)
+-	[`3.7-7.3.5-windowsservercore-1809`, `3.7-7.3-windowsservercore-1809`, `3.7-7-windowsservercore-1809`, `3.7-windowsservercore-1809`, `3-7.3.5-windowsservercore-1809`, `3-7.3-windowsservercore-1809`, `3-7-windowsservercore-1809`, `3-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/docker-library/pypy/blob/7b773bc33065a3b8bccc65be370a3fcf486d4c45/3.7/windows/windowsservercore-1809/Dockerfile)
+-	[`2.7-7.3.5-bullseye`, `2.7-7.3-bullseye`, `2.7-7-bullseye`, `2.7-bullseye`, `2-7.3.5-bullseye`, `2-7.3-bullseye`, `2-7-bullseye`, `2-bullseye`](https://github.com/docker-library/pypy/blob/7b773bc33065a3b8bccc65be370a3fcf486d4c45/2.7/bullseye/Dockerfile)
+-	[`2.7-7.3.5-slim`, `2.7-7.3-slim`, `2.7-7-slim`, `2.7-slim`, `2-7.3.5-slim`, `2-7.3-slim`, `2-7-slim`, `2-slim`, `2.7-7.3.5-slim-bullseye`, `2.7-7.3-slim-bullseye`, `2.7-7-slim-bullseye`, `2.7-slim-bullseye`, `2-7.3.5-slim-bullseye`, `2-7.3-slim-bullseye`, `2-7-slim-bullseye`, `2-slim-bullseye`](https://github.com/docker-library/pypy/blob/7b773bc33065a3b8bccc65be370a3fcf486d4c45/2.7/slim-bullseye/Dockerfile)
+-	[`2.7-7.3.5-buster`, `2.7-7.3-buster`, `2.7-7-buster`, `2.7-buster`, `2-7.3.5-buster`, `2-7.3-buster`, `2-7-buster`, `2-buster`](https://github.com/docker-library/pypy/blob/7b773bc33065a3b8bccc65be370a3fcf486d4c45/2.7/buster/Dockerfile)
+-	[`2.7-7.3.5-slim-buster`, `2.7-7.3-slim-buster`, `2.7-7-slim-buster`, `2.7-slim-buster`, `2-7.3.5-slim-buster`, `2-7.3-slim-buster`, `2-7-slim-buster`, `2-slim-buster`](https://github.com/docker-library/pypy/blob/7b773bc33065a3b8bccc65be370a3fcf486d4c45/2.7/slim-buster/Dockerfile)
+-	[`2.7-7.3.5-windowsservercore-1809`, `2.7-7.3-windowsservercore-1809`, `2.7-7-windowsservercore-1809`, `2.7-windowsservercore-1809`, `2-7.3.5-windowsservercore-1809`, `2-7.3-windowsservercore-1809`, `2-7-windowsservercore-1809`, `2-windowsservercore-1809`](https://github.com/docker-library/pypy/blob/7b773bc33065a3b8bccc65be370a3fcf486d4c45/2.7/windows/windowsservercore-1809/Dockerfile)
 
 ## Shared Tags
 
 -	`3.7-7.3.5`, `3.7-7.3`, `3.7-7`, `3.7`, `3-7.3.5`, `3-7.3`, `3-7`, `3`, `latest`:
-	-	[`3.7-7.3.5-bullseye`](https://github.com/docker-library/pypy/blob/bfdb2ba41acbb15e34858a359686e257535b9956/3.7/bullseye/Dockerfile)
-	-	[`3.7-7.3.5-windowsservercore-1809`](https://github.com/docker-library/pypy/blob/bfdb2ba41acbb15e34858a359686e257535b9956/3.7/windows/windowsservercore-1809/Dockerfile)
+	-	[`3.7-7.3.5-bullseye`](https://github.com/docker-library/pypy/blob/7b773bc33065a3b8bccc65be370a3fcf486d4c45/3.7/bullseye/Dockerfile)
+	-	[`3.7-7.3.5-windowsservercore-1809`](https://github.com/docker-library/pypy/blob/7b773bc33065a3b8bccc65be370a3fcf486d4c45/3.7/windows/windowsservercore-1809/Dockerfile)
 -	`3.7-7.3.5-windowsservercore`, `3.7-7.3-windowsservercore`, `3.7-7-windowsservercore`, `3.7-windowsservercore`, `3-7.3.5-windowsservercore`, `3-7.3-windowsservercore`, `3-7-windowsservercore`, `3-windowsservercore`, `windowsservercore`:
-	-	[`3.7-7.3.5-windowsservercore-1809`](https://github.com/docker-library/pypy/blob/bfdb2ba41acbb15e34858a359686e257535b9956/3.7/windows/windowsservercore-1809/Dockerfile)
+	-	[`3.7-7.3.5-windowsservercore-1809`](https://github.com/docker-library/pypy/blob/7b773bc33065a3b8bccc65be370a3fcf486d4c45/3.7/windows/windowsservercore-1809/Dockerfile)
 -	`2.7-7.3.5`, `2.7-7.3`, `2.7-7`, `2.7`, `2-7.3.5`, `2-7.3`, `2-7`, `2`:
-	-	[`2.7-7.3.5-bullseye`](https://github.com/docker-library/pypy/blob/bfdb2ba41acbb15e34858a359686e257535b9956/2.7/bullseye/Dockerfile)
-	-	[`2.7-7.3.5-windowsservercore-1809`](https://github.com/docker-library/pypy/blob/bfdb2ba41acbb15e34858a359686e257535b9956/2.7/windows/windowsservercore-1809/Dockerfile)
+	-	[`2.7-7.3.5-bullseye`](https://github.com/docker-library/pypy/blob/7b773bc33065a3b8bccc65be370a3fcf486d4c45/2.7/bullseye/Dockerfile)
+	-	[`2.7-7.3.5-windowsservercore-1809`](https://github.com/docker-library/pypy/blob/7b773bc33065a3b8bccc65be370a3fcf486d4c45/2.7/windows/windowsservercore-1809/Dockerfile)
 -	`2.7-7.3.5-windowsservercore`, `2.7-7.3-windowsservercore`, `2.7-7-windowsservercore`, `2.7-windowsservercore`, `2-7.3.5-windowsservercore`, `2-7.3-windowsservercore`, `2-7-windowsservercore`, `2-windowsservercore`:
-	-	[`2.7-7.3.5-windowsservercore-1809`](https://github.com/docker-library/pypy/blob/bfdb2ba41acbb15e34858a359686e257535b9956/2.7/windows/windowsservercore-1809/Dockerfile)
+	-	[`2.7-7.3.5-windowsservercore-1809`](https://github.com/docker-library/pypy/blob/7b773bc33065a3b8bccc65be370a3fcf486d4c45/2.7/windows/windowsservercore-1809/Dockerfile)
 
 # Quick reference (cont.)
 
