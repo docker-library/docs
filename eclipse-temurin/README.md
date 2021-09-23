@@ -147,7 +147,7 @@ The Eclipse Temurin project provides code and processes that support the buildin
 
 # Do you provide JRE (Java Runtime Environment) Images?
 
-JRE images for OpenJDK 8 are now available. OpenJDK 11+ JRE's can be produced using `jlink` (see usage below).
+JRE images for OpenJDK 8 and 11 are now available. OpenJDK 11+ JRE's can also be produced using `jlink` (see usage below).
 
 # How to use this Image
 
