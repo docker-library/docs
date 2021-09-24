@@ -84,9 +84,9 @@ sub prompt_for_edit {
 	
 	# extract/re-inject sponsored links
 	my $sponsoredLinks = '';
-	if ($currentText =~ m{ ( ^ --- \n+ \Q*Useful Resources*\E \n .*? \n --- \n ) }smx) {
+	if ($currentText =~ m{ ( ^ [#] \Q Sponsored Resources\E \n .*? \n --- \n ) }smx) {
 		$sponsoredLinks = $1 . "\n";
-		$proposedText =~ s%$supportedTagsRegex%$1$2$sponsoredLinks%;
+		$proposedText =~ s%$supportedTagsRegex%$sponsoredLinks$1$2%;
 	}
 	
 	my $alwaysShortTags = ($proposedFile eq 'neo4j/README.md');
@@ -103,7 +103,7 @@ sub prompt_for_edit {
 		my $trimmedText = $proposedText;
 		
 		# if our text is too long for the Hub length limit, let's first try removing the "Supported tags" list and add $tagsNote and see if that's enough to let us put the full image documentation
-		$trimmedText =~ s%$supportedTagsRegex%$1$tagsNote$sponsoredLinks%ms;
+		$trimmedText =~ s%$supportedTagsRegex%$sponsoredLinks$1$tagsNote%ms;
 		# (we scrape until the next "h1" or a line starting with a link which is likely a build status badge for an architecture-namespace)
 		
 		$proposedText = $trimmedText if $alwaysShortTags;
