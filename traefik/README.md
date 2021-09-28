@@ -17,7 +17,7 @@ WARNING:
 # Quick reference
 
 -	**Maintained by**:  
-	[the Traefik Project](https://github.com/containous/traefik-library-image)
+	[the Traefik Project](https://github.com/traefik/traefik-library-image)
 
 -	**Where to get help**:  
 	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
@@ -33,7 +33,7 @@ WARNING:
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/containous/traefik-library-image/issues](https://github.com/containous/traefik-library-image/issues)
+	[https://github.com/traefik/traefik-library-image/issues](https://github.com/traefik/traefik-library-image/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/traefik/), [`arm32v6`](https://hub.docker.com/r/arm32v6/traefik/), [`arm64v8`](https://hub.docker.com/r/arm64v8/traefik/), [`windows-amd64`](https://hub.docker.com/r/winamd64/traefik/)
@@ -199,7 +199,7 @@ For information about how to get Docker running on Windows, please see the relev
 
 # License
 
-View [license information](https://github.com/containous/traefik/blob/master/LICENSE.md) for the software contained in this image.
+View [license information](https://github.com/traefik/traefik/blob/master/LICENSE.md) for the software contained in this image.
 
 As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 
