@@ -24,13 +24,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.9.7`, `3.9`, `3`, `latest`](https://github.com/docker-library/rabbitmq/blob/181c76a06eeb744bac3ab2b0c3f52fa78aad338c/3.9/ubuntu/Dockerfile)
+-	[`3.9.7`, `3.9`, `3`, `latest`](https://github.com/docker-library/rabbitmq/blob/1fe17ee8b4bad429992f4c67301db7125f2a631e/3.9/ubuntu/Dockerfile)
 -	[`3.9.7-management`, `3.9-management`, `3-management`, `management`](https://github.com/docker-library/rabbitmq/blob/b07819f873e5a68b2bb54e01f0caa41c26b277f3/3.9/ubuntu/management/Dockerfile)
--	[`3.9.7-alpine`, `3.9-alpine`, `3-alpine`, `alpine`](https://github.com/docker-library/rabbitmq/blob/181c76a06eeb744bac3ab2b0c3f52fa78aad338c/3.9/alpine/Dockerfile)
+-	[`3.9.7-alpine`, `3.9-alpine`, `3-alpine`, `alpine`](https://github.com/docker-library/rabbitmq/blob/1fe17ee8b4bad429992f4c67301db7125f2a631e/3.9/alpine/Dockerfile)
 -	[`3.9.7-management-alpine`, `3.9-management-alpine`, `3-management-alpine`, `management-alpine`](https://github.com/docker-library/rabbitmq/blob/b07819f873e5a68b2bb54e01f0caa41c26b277f3/3.9/alpine/management/Dockerfile)
--	[`3.8.23`, `3.8`](https://github.com/docker-library/rabbitmq/blob/8cf6f8d99e6593126fa6a82967f12dda83e09a63/3.8/ubuntu/Dockerfile)
+-	[`3.8.23`, `3.8`](https://github.com/docker-library/rabbitmq/blob/5ce5b2a7d1463cd1f11b44776bc49ce0a8cb63da/3.8/ubuntu/Dockerfile)
 -	[`3.8.23-management`, `3.8-management`](https://github.com/docker-library/rabbitmq/blob/0d1c84a50aa69305b2fa3e98632a206d3d2a3f9f/3.8/ubuntu/management/Dockerfile)
--	[`3.8.23-alpine`, `3.8-alpine`](https://github.com/docker-library/rabbitmq/blob/8cf6f8d99e6593126fa6a82967f12dda83e09a63/3.8/alpine/Dockerfile)
+-	[`3.8.23-alpine`, `3.8-alpine`](https://github.com/docker-library/rabbitmq/blob/5ce5b2a7d1463cd1f11b44776bc49ce0a8cb63da/3.8/alpine/Dockerfile)
 -	[`3.8.23-management-alpine`, `3.8-management-alpine`](https://github.com/docker-library/rabbitmq/blob/0d1c84a50aa69305b2fa3e98632a206d3d2a3f9f/3.8/alpine/management/Dockerfile)
 
 # Quick reference (cont.)
