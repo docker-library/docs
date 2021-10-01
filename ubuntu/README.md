@@ -24,12 +24,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`18.04`, `bionic-20210827`, `bionic`](https://github.com/tianon/docker-brew-ubuntu-core/blob/49f002ba206e2cea2024aaa9f6f4ee4e9fb5c084/bionic/Dockerfile)
--	[`20.04`, `focal-20210827`, `focal`, `latest`](https://github.com/tianon/docker-brew-ubuntu-core/blob/49f002ba206e2cea2024aaa9f6f4ee4e9fb5c084/focal/Dockerfile)
--	[`21.04`, `hirsute-20210825`, `hirsute`, `rolling`](https://github.com/tianon/docker-brew-ubuntu-core/blob/49f002ba206e2cea2024aaa9f6f4ee4e9fb5c084/hirsute/Dockerfile)
--	[`21.10`, `impish-20210827`, `impish`, `devel`](https://github.com/tianon/docker-brew-ubuntu-core/blob/49f002ba206e2cea2024aaa9f6f4ee4e9fb5c084/impish/Dockerfile)
--	[`14.04`, `trusty-20191217`, `trusty`](https://github.com/tianon/docker-brew-ubuntu-core/blob/49f002ba206e2cea2024aaa9f6f4ee4e9fb5c084/trusty/Dockerfile)
--	[`16.04`, `xenial-20210804`, `xenial`](https://github.com/tianon/docker-brew-ubuntu-core/blob/49f002ba206e2cea2024aaa9f6f4ee4e9fb5c084/xenial/Dockerfile)
+-	[`18.04`, `bionic-20210930`, `bionic`](https://github.com/tianon/docker-brew-ubuntu-core/blob/06d1d91a16860c512bd0911b9f3bc9edb2c3f6b2/bionic/Dockerfile)
+-	[`20.04`, `focal-20210921`, `focal`, `latest`](https://github.com/tianon/docker-brew-ubuntu-core/blob/06d1d91a16860c512bd0911b9f3bc9edb2c3f6b2/focal/Dockerfile)
+-	[`21.04`, `hirsute-20210917`, `hirsute`, `rolling`](https://github.com/tianon/docker-brew-ubuntu-core/blob/06d1d91a16860c512bd0911b9f3bc9edb2c3f6b2/hirsute/Dockerfile)
+-	[`21.10`, `impish-20210928`, `impish`, `devel`](https://github.com/tianon/docker-brew-ubuntu-core/blob/06d1d91a16860c512bd0911b9f3bc9edb2c3f6b2/impish/Dockerfile)
+-	[`14.04`, `trusty-20191217`, `trusty`](https://github.com/tianon/docker-brew-ubuntu-core/blob/06d1d91a16860c512bd0911b9f3bc9edb2c3f6b2/trusty/Dockerfile)
+-	[`16.04`, `xenial-20210804`, `xenial`](https://github.com/tianon/docker-brew-ubuntu-core/blob/06d1d91a16860c512bd0911b9f3bc9edb2c3f6b2/xenial/Dockerfile)
 
 # Quick reference (cont.)
 
