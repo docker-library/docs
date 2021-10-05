@@ -315,7 +315,7 @@ This optional environment variable is used to enable/disable the Bonita HTTP API
 
 ### `JAVA_OPTS`
 
-This optional environment variable is used to customize JAVA_OPTS. The default value is `-Xms1024m -Xmx1024m -XX:MaxPermSize=256m`.
+This optional environment variable is used to customize JAVA_OPTS. The default value is `-Xms1024m -Xmx1024m`.
 
 ### `ENSURE_DB_CHECK_AND_CREATION`
 
