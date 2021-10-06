@@ -30,8 +30,7 @@ See [docker-library/official-images#7130](https://github.com/docker-library/offi
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.4`, `latest`](https://github.com/cruxlinux/docker-crux/blob/da081a9004c5559cd77a1e2c2521193ccb2afdd2/Dockerfile)
--	[`3.2`](https://github.com/cruxlinux/docker-crux/blob/07e966125ba3d6d48a12489830917e8a9bc983a7/Dockerfile)
+**No supported tags**
 
 # Quick reference (cont.)
 
@@ -39,7 +38,7 @@ See [docker-library/official-images#7130](https://github.com/docker-library/offi
 	[https://github.com/therealprologic/docker-crux/issues](https://github.com/therealprologic/docker-crux/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/crux/), [`arm64v8`](https://hub.docker.com/r/arm64v8/crux/)
+	**No supported architectures**
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/crux/` directory](https://github.com/docker-library/repo-info/blob/master/repos/crux) ([history](https://github.com/docker-library/repo-info/commits/master/repos/crux))  
