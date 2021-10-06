@@ -24,18 +24,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.0.9-jdk8`, `3.0-jdk8`, `3.0.9-jdk`, `3.0-jdk`, `jdk8`, `jdk`](https://github.com/groovy/docker-groovy/blob/400c5ce5baad6936a4fa3f6a52400345acb0dd9d/jdk8/Dockerfile)
--	[`3.0.9-jre8`, `3.0-jre8`, `3.0.9-jre`, `3.0-jre`, `3.0.9`, `3.0`, `jre8`, `jre`, `latest`](https://github.com/groovy/docker-groovy/blob/400c5ce5baad6936a4fa3f6a52400345acb0dd9d/jre8/Dockerfile)
--	[`3.0.9-jdk11`, `3.0-jdk11`, `jdk11`](https://github.com/groovy/docker-groovy/blob/400c5ce5baad6936a4fa3f6a52400345acb0dd9d/jdk11/Dockerfile)
--	[`3.0.9-jre11`, `3.0-jre11`, `jre11`](https://github.com/groovy/docker-groovy/blob/400c5ce5baad6936a4fa3f6a52400345acb0dd9d/jre11/Dockerfile)
--	[`3.0.9-jdk16`, `3.0-jdk16`, `jdk16`](https://github.com/groovy/docker-groovy/blob/400c5ce5baad6936a4fa3f6a52400345acb0dd9d/jdk16/Dockerfile)
--	[`3.0.9-jre16`, `3.0-jre16`, `jre16`](https://github.com/groovy/docker-groovy/blob/400c5ce5baad6936a4fa3f6a52400345acb0dd9d/jre16/Dockerfile)
--	[`4.0.0-beta-1-jdk8`, `4.0-jdk8`, `4.0.0-beta-1-jdk`, `4.0-jdk`](https://github.com/groovy/docker-groovy/blob/368212f8ca90051f5542f9d64523e22bc8130a66/jdk8/Dockerfile)
--	[`4.0.0-beta-1-jre8`, `4.0-jre8`, `4.0.0-beta-1-jre`, `4.0-jre`, `4.0.0-beta-1`, `4.0`](https://github.com/groovy/docker-groovy/blob/368212f8ca90051f5542f9d64523e22bc8130a66/jre8/Dockerfile)
--	[`4.0.0-beta-1-jdk11`, `4.0-jdk11`](https://github.com/groovy/docker-groovy/blob/368212f8ca90051f5542f9d64523e22bc8130a66/jdk11/Dockerfile)
--	[`4.0.0-beta-1-jre11`, `4.0-jre11`](https://github.com/groovy/docker-groovy/blob/368212f8ca90051f5542f9d64523e22bc8130a66/jre11/Dockerfile)
--	[`4.0.0-beta-1-jdk16`, `4.0-jdk16`](https://github.com/groovy/docker-groovy/blob/368212f8ca90051f5542f9d64523e22bc8130a66/jdk16/Dockerfile)
--	[`4.0.0-beta-1-jre16`, `4.0-jre16`](https://github.com/groovy/docker-groovy/blob/368212f8ca90051f5542f9d64523e22bc8130a66/jre16/Dockerfile)
+-	[`3.0.9-jdk8`, `3.0-jdk8`, `jdk8`](https://github.com/groovy/docker-groovy/blob/e46b8fbd268e1b4559178b87358aac7385f694d2/jdk8/Dockerfile)
+-	[`3.0.9-jdk11`, `3.0-jdk11`, `jdk11`](https://github.com/groovy/docker-groovy/blob/e46b8fbd268e1b4559178b87358aac7385f694d2/jdk11/Dockerfile)
+-	[`3.0.9-jdk17`, `3.0-jdk17`, `jdk17`, `3.0.9-jdk`, `3.0-jdk`, `3.0.9`, `3.0`, `3`, `jdk`, `latest`](https://github.com/groovy/docker-groovy/blob/e46b8fbd268e1b4559178b87358aac7385f694d2/jdk17/Dockerfile)
+-	[`4.0.0-beta-1-jdk8`, `4.0.0-jdk8`, `4.0-jdk8`](https://github.com/groovy/docker-groovy/blob/86f6ece313350fad2a27d2ce89e127804bb098f6/jdk8/Dockerfile)
+-	[`4.0.0-beta-1-jdk11`, `4.0.0-jdk11`, `4.0-jdk11`](https://github.com/groovy/docker-groovy/blob/86f6ece313350fad2a27d2ce89e127804bb098f6/jdk11/Dockerfile)
+-	[`4.0.0-beta-1-jdk17`, `4.0.0-jdk17`, `4.0-jdk17`, `4.0.0-beta-1-jdk`, `4.0.0-jdk`, `4.0.0-beta-1`, `4.0.0`, `4.0`, `4`](https://github.com/groovy/docker-groovy/blob/86f6ece313350fad2a27d2ce89e127804bb098f6/jdk17/Dockerfile)
 
 # Quick reference (cont.)
 
