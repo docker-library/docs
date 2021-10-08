@@ -77,7 +77,7 @@ Perl is a high-level, general-purpose, interpreted, dynamic programming language
 ## Create a `Dockerfile` in your Perl app project
 
 ```dockerfile
-FROM perl:5.20
+FROM perl:5.34
 COPY . /usr/src/myapp
 WORKDIR /usr/src/myapp
 CMD [ "perl", "./your-daemon-or-script.pl" ]
@@ -95,7 +95,7 @@ $ docker run -it --rm --name my-running-app my-perl-app
 For many simple, single file projects, you may find it inconvenient to write a complete `Dockerfile`. In such cases, you can run a Perl script by using the Perl Docker image directly:
 
 ```console
-$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp perl:5.20 perl your-daemon-or-script.pl
+$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp perl:5.34 perl your-daemon-or-script.pl
 ```
 
 ## Coexisting with Debian's `/usr/bin/perl`
@@ -111,7 +111,7 @@ See also [Perl/docker-perl#26](https://github.com/Perl/docker-perl/issues/26) fo
 As Perl will run as PID 1 by default in containers (unless an [ENTRYPOINT](https://docs.docker.com/engine/reference/builder/#entrypoint) is set,) special care needs to be considered when expecting to send signals (particularly SIGINT or SIGTERM) to it. For example, running
 
 ```console
-$ docker run -it --name sleeping_beauty --rm perl:5.20 perl -E 'sleep 300'
+$ docker run -it --name sleeping_beauty --rm perl:5.34 perl -E 'sleep 300'
 ```
 
 and doing on another terminal,
@@ -123,7 +123,7 @@ $ docker exec sleeping_beauty kill 1
 will *not* stop the perl running on the `sleeping_beauty` container (it will keep running until the `sleep 300` finishes.) To do so, one must set a signal handler like this:
 
 ```console
-$ docker run -it --name quick_nap --rm perl:5.20 perl -E '$SIG{TERM} = sub { $sig++; say "recv TERM" }; sleep 300; say "waking up" if $sig'
+$ docker run -it --name quick_nap --rm perl:5.34 perl -E '$SIG{TERM} = sub { $sig++; say "recv TERM" }; sleep 300; say "waking up" if $sig'
 ```
 
 so doing `docker exec quick_nap kill 1` (or the simpler `docker stop quick_nap`) will immediately stop the container, and print `recv TERM` in the other terminal. Note that the signal handler does not stop the perl process itself unless it calls a `die` or `exit`; in this case, perl will continue and print `waking up` *after* it receives the signal.
@@ -137,7 +137,7 @@ See also [Signals in perlipc](https://perldoc.pl/perlipc#Signals) as well as [Pe
 Suppose you have a project that uses [Carton](https://metacpan.org/pod/Carton) to manage Perl dependencies. You can create a `perl:carton` image that makes use of the [ONBUILD](https://docs.docker.com/engine/reference/builder/#onbuild) instruction in its `Dockerfile`, like this:
 
 ```dockerfile
-FROM perl:5.26
+FROM perl:5.34
 
 RUN cpanm Carton \
     && mkdir -p /usr/src/app

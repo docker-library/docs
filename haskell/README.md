@@ -28,10 +28,6 @@ WARNING:
 -	[`9.0.1-stretch`, `9.0-stretch`, `9-stretch`, `stretch`](https://github.com/haskell/docker-haskell/blob/4181ccd382f72959ecb234204fd018b2c203c3fe/9.0/stretch/Dockerfile)
 -	[`8.10.7-buster`, `8.10-buster`, `8-buster`, `8.10.7`, `8.10`, `8`](https://github.com/haskell/docker-haskell/blob/4181ccd382f72959ecb234204fd018b2c203c3fe/8.10/buster/Dockerfile)
 -	[`8.10.7-stretch`, `8.10-stretch`, `8-stretch`](https://github.com/haskell/docker-haskell/blob/4181ccd382f72959ecb234204fd018b2c203c3fe/8.10/stretch/Dockerfile)
--	[`8.10.5-buster`, `8.10.5`](https://github.com/haskell/docker-haskell/blob/47d2ca30933d9fa81bff1538c035008bb1c0c197/8.10/buster/Dockerfile)
--	[`8.10.5-stretch`](https://github.com/haskell/docker-haskell/blob/47d2ca30933d9fa81bff1538c035008bb1c0c197/8.10/stretch/Dockerfile)
--	[`8.10.6-buster`, `8.10.6`](https://github.com/haskell/docker-haskell/blob/bc860ec5b664fdd12353a46017e407f10045e9b0/8.10/buster/Dockerfile)
--	[`8.10.6-stretch`](https://github.com/haskell/docker-haskell/blob/bc860ec5b664fdd12353a46017e407f10045e9b0/8.10/stretch/Dockerfile)
 
 # Quick reference (cont.)
 
