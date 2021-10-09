@@ -24,7 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.6.12`, `1.6`, `1`, `latest`, `1.6.12-buster`, `1.6-buster`, `1-buster`, `buster`](https://github.com/docker-library/memcached/blob/fed47a936a307aa1e0be990a59ae4de71f134ca5/debian/Dockerfile)
+-	[`1.6.12`, `1.6`, `1`, `latest`, `1.6.12-bullseye`, `1.6-bullseye`, `1-bullseye`, `bullseye`](https://github.com/docker-library/memcached/blob/e0b2a7e2288f313824b2e860d6225d3fd018a7f7/debian/Dockerfile)
 -	[`1.6.12-alpine`, `1.6-alpine`, `1-alpine`, `alpine`, `1.6.12-alpine3.14`, `1.6-alpine3.14`, `1-alpine3.14`, `alpine3.14`](https://github.com/docker-library/memcached/blob/2f7d163ec21401699a4f87e6e293b2ed45227598/alpine/Dockerfile)
 
 # Quick reference (cont.)
@@ -78,7 +78,7 @@ The `memcached` images come in many flavors, each designed for a specific use ca
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like buster in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+Some of these tags may have names like bullseye in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 ## `memcached:<version>-alpine`
 
