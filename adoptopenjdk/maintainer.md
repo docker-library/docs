@@ -1,1 +1,0 @@
-[AdoptOpenJDK](%%GITHUB-REPO%%)
