@@ -24,10 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`9.0.1-buster`, `9.0-buster`, `9-buster`, `buster`, `9.0.1`, `9.0`, `9`, `latest`](https://github.com/haskell/docker-haskell/blob/4181ccd382f72959ecb234204fd018b2c203c3fe/9.0/buster/Dockerfile)
--	[`9.0.1-stretch`, `9.0-stretch`, `9-stretch`, `stretch`](https://github.com/haskell/docker-haskell/blob/4181ccd382f72959ecb234204fd018b2c203c3fe/9.0/stretch/Dockerfile)
--	[`8.10.7-buster`, `8.10-buster`, `8-buster`, `8.10.7`, `8.10`, `8`](https://github.com/haskell/docker-haskell/blob/4181ccd382f72959ecb234204fd018b2c203c3fe/8.10/buster/Dockerfile)
--	[`8.10.7-stretch`, `8.10-stretch`, `8-stretch`](https://github.com/haskell/docker-haskell/blob/4181ccd382f72959ecb234204fd018b2c203c3fe/8.10/stretch/Dockerfile)
+-	[`9.0.1-buster`, `9.0-buster`, `9-buster`, `buster`, `9.0.1`, `9.0`, `9`, `latest`](https://github.com/haskell/docker-haskell/blob/f08ade43f48981b87505fbecca852194954fa61b/9.0/buster/Dockerfile)
+-	[`8.10.7-buster`, `8.10-buster`, `8-buster`, `8.10.7`, `8.10`, `8`](https://github.com/haskell/docker-haskell/blob/f08ade43f48981b87505fbecca852194954fa61b/8.10/buster/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -60,13 +58,13 @@ A large number of production-quality Haskell libraries are available from [Hacka
 
 ## About this image
 
-This image ships a minimal Haskell toolchain (`ghc` and `cabal-install`) from the upstream [downloads.haskell.org](https://launchpad.net/~hvr/+archive/ubuntu/ghc) Debian repository as well as the `stack` tool ([https://www.haskellstack.org/](https://www.haskellstack.org/)).
+This image ships a minimal Haskell toolchain (`ghc` and `cabal-install`) as well as the `stack` tool ([https://www.haskellstack.org/](https://www.haskellstack.org/)).
 
 Note: The GHC developers do not support legacy release branches (i.e. `7.8.x`). While older GHC release tags are available in this DockerHub repository, only the two most recent minor releases will receive updates or be shown in the "Supported tags ..." section at the top of this page.
 
-Additionally, we support the two most versions of Debian (`stable` and `oldstable`) as variants, with the most recent being the default if not specified.
+Additionally, we aim to support the two most recent versions of Debian (`stable` and `oldstable`) as variants, with the most recent being the default if not specified.
 
-> Note: `haskell:8.8.3` was updated from Debian Stretch to Buster, so you will need to specify `haskell:8.8.3-stretch` to stick with Stretch in this particular case.
+> Note: Currently `stable` Debian is version 11 bullseye, however it is not yet supported by Haskell tooling. Until that time the default will remain Debian 10 buster. We have dropped support for Debian 9 stretch.
 
 ## How to use this image
 
