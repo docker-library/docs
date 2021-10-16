@@ -24,12 +24,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`18.04`, `bionic-20210930`, `bionic`](https://github.com/tianon/docker-brew-ubuntu-core/blob/06d1d91a16860c512bd0911b9f3bc9edb2c3f6b2/bionic/Dockerfile)
--	[`20.04`, `focal-20210921`, `focal`, `latest`](https://github.com/tianon/docker-brew-ubuntu-core/blob/06d1d91a16860c512bd0911b9f3bc9edb2c3f6b2/focal/Dockerfile)
--	[`21.04`, `hirsute-20210917`, `hirsute`, `rolling`](https://github.com/tianon/docker-brew-ubuntu-core/blob/06d1d91a16860c512bd0911b9f3bc9edb2c3f6b2/hirsute/Dockerfile)
--	[`21.10`, `impish-20210928`, `impish`, `devel`](https://github.com/tianon/docker-brew-ubuntu-core/blob/06d1d91a16860c512bd0911b9f3bc9edb2c3f6b2/impish/Dockerfile)
--	[`14.04`, `trusty-20191217`, `trusty`](https://github.com/tianon/docker-brew-ubuntu-core/blob/06d1d91a16860c512bd0911b9f3bc9edb2c3f6b2/trusty/Dockerfile)
--	[`16.04`, `xenial-20210804`, `xenial`](https://github.com/tianon/docker-brew-ubuntu-core/blob/06d1d91a16860c512bd0911b9f3bc9edb2c3f6b2/xenial/Dockerfile)
+-	[`18.04`, `bionic-20210930`, `bionic`](https://github.com/tianon/docker-brew-ubuntu-core/blob/b5a2c2a86e9dc83ef3a21551ea97e351697ed2d7/bionic/Dockerfile)
+-	[`20.04`, `focal-20211006`, `focal`, `latest`](https://github.com/tianon/docker-brew-ubuntu-core/blob/b5a2c2a86e9dc83ef3a21551ea97e351697ed2d7/focal/Dockerfile)
+-	[`21.04`, `hirsute-20210917`, `hirsute`](https://github.com/tianon/docker-brew-ubuntu-core/blob/b5a2c2a86e9dc83ef3a21551ea97e351697ed2d7/hirsute/Dockerfile)
+-	[`21.10`, `impish-20211015`, `impish`, `rolling`](https://github.com/tianon/docker-brew-ubuntu-core/blob/b5a2c2a86e9dc83ef3a21551ea97e351697ed2d7/impish/Dockerfile)
+-	[`14.04`, `trusty-20191217`, `trusty`](https://github.com/tianon/docker-brew-ubuntu-core/blob/b5a2c2a86e9dc83ef3a21551ea97e351697ed2d7/trusty/Dockerfile)
+-	[`16.04`, `xenial-20210804`, `xenial`](https://github.com/tianon/docker-brew-ubuntu-core/blob/b5a2c2a86e9dc83ef3a21551ea97e351697ed2d7/xenial/Dockerfile)
 
 # Quick reference (cont.)
 
