@@ -24,7 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1`, `1.7`, `1.7.0`, `1.7.0-1`, `latest`](https://github.com/varnish/docker-hitch/blob/d2feb9f1a1a3426da633383c2bac4a31559248bd/Dockerfile)
+-	[`1`, `1.7`, `1.7.0`, `1.7.0-1`, `latest`](https://github.com/varnish/docker-hitch/blob/1990ddf1f3052cabb010a5a052a4a6e87d82f6fa/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -32,7 +32,7 @@ WARNING:
 	[https://github.com/varnish/docker-hitch/issues](https://github.com/varnish/docker-hitch/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/hitch/)
+	[`amd64`](https://hub.docker.com/r/amd64/hitch/), [`arm32v7`](https://hub.docker.com/r/arm32v7/hitch/), [`arm64v8`](https://hub.docker.com/r/arm64v8/hitch/), [`i386`](https://hub.docker.com/r/i386/hitch/), [`ppc64le`](https://hub.docker.com/r/ppc64le/hitch/), [`s390x`](https://hub.docker.com/r/s390x/hitch/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/hitch/` directory](https://github.com/docker-library/repo-info/blob/master/repos/hitch) ([history](https://github.com/docker-library/repo-info/commits/master/repos/hitch))  
