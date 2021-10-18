@@ -28,6 +28,11 @@ WARNING:
 
 ## Simple Tags
 
+-	[`20.10.10-rc1`, `20.10-rc`, `rc`, `20.10.10-rc1-alpine3.14`](https://github.com/docker-library/docker/blob/f76814e807ad2d9d76b0ec50ec8e623a5fdb72e7/20.10-rc/Dockerfile)
+-	[`20.10.10-rc1-dind`, `20.10-rc-dind`, `rc-dind`, `20.10.10-rc1-dind-alpine3.14`](https://github.com/docker-library/docker/blob/f76814e807ad2d9d76b0ec50ec8e623a5fdb72e7/20.10-rc/dind/Dockerfile)
+-	[`20.10.10-rc1-dind-rootless`, `20.10-rc-dind-rootless`, `rc-dind-rootless`](https://github.com/docker-library/docker/blob/f76814e807ad2d9d76b0ec50ec8e623a5fdb72e7/20.10-rc/dind-rootless/Dockerfile)
+-	[`20.10.10-rc1-git`, `20.10-rc-git`, `rc-git`](https://github.com/docker-library/docker/blob/f76814e807ad2d9d76b0ec50ec8e623a5fdb72e7/20.10-rc/git/Dockerfile)
+-	[`20.10.10-rc1-windowsservercore-1809`, `20.10-rc-windowsservercore-1809`, `rc-windowsservercore-1809`](https://github.com/docker-library/docker/blob/f76814e807ad2d9d76b0ec50ec8e623a5fdb72e7/20.10-rc/windows/windowsservercore-1809/Dockerfile)
 -	[`20.10.9`, `20.10`, `20`, `latest`, `20.10.9-alpine3.14`](https://github.com/docker-library/docker/blob/8b8d62e7eb791b060cc75cb2956724a1bdc5484b/20.10/Dockerfile)
 -	[`20.10.9-dind`, `20.10-dind`, `20-dind`, `dind`, `20.10.9-dind-alpine3.14`](https://github.com/docker-library/docker/blob/8baa881aab85f8398d2edbbcc0da4bd1f556dd98/20.10/dind/Dockerfile)
 -	[`20.10.9-dind-rootless`, `20.10-dind-rootless`, `20-dind-rootless`, `dind-rootless`](https://github.com/docker-library/docker/blob/8b8d62e7eb791b060cc75cb2956724a1bdc5484b/20.10/dind-rootless/Dockerfile)
@@ -36,6 +41,8 @@ WARNING:
 
 ## Shared Tags
 
+-	`20.10.10-rc1-windowsservercore`, `20.10-rc-windowsservercore`, `rc-windowsservercore`:
+	-	[`20.10.10-rc1-windowsservercore-1809`](https://github.com/docker-library/docker/blob/f76814e807ad2d9d76b0ec50ec8e623a5fdb72e7/20.10-rc/windows/windowsservercore-1809/Dockerfile)
 -	`20.10.9-windowsservercore`, `20.10-windowsservercore`, `20-windowsservercore`, `windowsservercore`:
 	-	[`20.10.9-windowsservercore-1809`](https://github.com/docker-library/docker/blob/8b8d62e7eb791b060cc75cb2956724a1bdc5484b/20.10/windows/windowsservercore-1809/Dockerfile)
 
