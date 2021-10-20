@@ -1,6 +1,6 @@
 ## Overview
 
-The files in this repository are used to build the images that contain IBM Semeru Runtime Open Edition OpenJDK binaries.
+The images in this repository contain OpenJDK binaries that are built by IBM Semeru Runtimes.
 
 # What is IBM Semeru Runtimes ?
 
