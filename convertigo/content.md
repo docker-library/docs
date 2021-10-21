@@ -169,7 +169,7 @@ $ docker run -d –name C8O -e COOKIE_SAMESITE=lax -p 28080:28080 convertigo
 
 ## `SESSION_TIMEOUT` Environment variable
 
-Allow to configure the default Tomcat *session-timeout* in minutes.  This value is used for non-project calls (Administration console, Fullsync...). This value is overridden by each projects' calls (Sequence, Transaction ...).
+Allow to configure the default Tomcat *session-timeout* in minutes. This value is used for non-project calls (Administration console, Fullsync...). This value is overridden by each projects' calls (Sequence, Transaction ...).
 
 The default `SESSION_TIMEOUT` value is *30* and can be defined this way:
 
