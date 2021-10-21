@@ -24,10 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.2.4-python38`, `5.2-python38`, `5-python38`, `python38`, `5.2.4`, `5.2`, `5`, `latest`](https://github.com/plone/plone.docker/blob/a516871e08532c8a343f9e9e713c8abc8d80aae6/5.2/5.2.4/debian/Dockerfile)
--	[`5.2.4-python37`, `5.2-python37`, `5-python37`, `python37`](https://github.com/plone/plone.docker/blob/a516871e08532c8a343f9e9e713c8abc8d80aae6/5.2/5.2.4/python37/Dockerfile)
--	[`5.2.4-python36`, `5.2-python36`, `5-python36`, `python36`](https://github.com/plone/plone.docker/blob/a516871e08532c8a343f9e9e713c8abc8d80aae6/5.2/5.2.4/python36/Dockerfile)
--	[`5.2.4-alpine`, `5.2-alpine`, `5-alpine`, `alpine`](https://github.com/plone/plone.docker/blob/a516871e08532c8a343f9e9e713c8abc8d80aae6/5.2/5.2.4/alpine/Dockerfile)
+-	[`5.2.5-python39`, `5.2-python39`, `5-python39`, `python39`, `5.2.5`, `5.2`, `5`, `latest`](https://github.com/plone/plone.docker/blob/10c996f6efa821a8dab8238b87e4ff720398353a/5.2/5.2.5/debian/Dockerfile)
+-	[`5.2.5-python38`, `5.2-python38`, `5-python38`, `python38`](https://github.com/plone/plone.docker/blob/10c996f6efa821a8dab8238b87e4ff720398353a/5.2/5.2.5/python38/Dockerfile)
+-	[`5.2.5-python37`, `5.2-python37`, `5-python37`, `python37`](https://github.com/plone/plone.docker/blob/10c996f6efa821a8dab8238b87e4ff720398353a/5.2/5.2.5/python37/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -35,7 +34,7 @@ WARNING:
 	[https://github.com/plone/plone.docker/issues](https://github.com/plone/plone.docker/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/plone/), [`arm32v5`](https://hub.docker.com/r/arm32v5/plone/), [`arm32v6`](https://hub.docker.com/r/arm32v6/plone/), [`arm32v7`](https://hub.docker.com/r/arm32v7/plone/), [`arm64v8`](https://hub.docker.com/r/arm64v8/plone/), [`i386`](https://hub.docker.com/r/i386/plone/), [`ppc64le`](https://hub.docker.com/r/ppc64le/plone/), [`s390x`](https://hub.docker.com/r/s390x/plone/)
+	[`amd64`](https://hub.docker.com/r/amd64/plone/), [`arm32v5`](https://hub.docker.com/r/arm32v5/plone/), [`arm32v7`](https://hub.docker.com/r/arm32v7/plone/), [`arm64v8`](https://hub.docker.com/r/arm64v8/plone/), [`i386`](https://hub.docker.com/r/i386/plone/), [`ppc64le`](https://hub.docker.com/r/ppc64le/plone/), [`s390x`](https://hub.docker.com/r/s390x/plone/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/plone/` directory](https://github.com/docker-library/repo-info/blob/master/repos/plone) ([history](https://github.com/docker-library/repo-info/commits/master/repos/plone))  
@@ -189,22 +188,6 @@ All other available environment variables match exactly with RelStorage settings
 ## Documentation
 
 Full documentation for end users can be found online at [docs.plone.org](https://docs.plone.org/manage/docker/docs/usage/index.html)
-
-# Image Variants
-
-The `plone` images come in many flavors, each designed for a specific use case.
-
-## `plone:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-## `plone:<version>-alpine`
-
-This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
-
-This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
-
-To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 # License
 
