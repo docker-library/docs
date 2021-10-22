@@ -164,7 +164,7 @@ Allow to configure the *SameSite* parameter for generated cookies. Can be empty,
 The default `COOKIE_SAMESITE` value is *empty* and can be defined this way:
 
 ```console
-$ docker run -d -–name C8O -e COOKIE_SAMESITE=lax -p 28080:28080 %%IMAGE%%
+$ docker run -d --name C8O -e COOKIE_SAMESITE=lax -p 28080:28080 %%IMAGE%%
 ```
 
 ## `SESSION_TIMEOUT` Environment variable
@@ -174,7 +174,7 @@ Allow to configure the default Tomcat *session-timeout* in minutes. This value i
 The default `SESSION_TIMEOUT` value is *30* and can be defined this way:
 
 ```console
-$ docker run -d -–name C8O -e SESSION_TIMEOUT=5 -p 28080:28080 %%IMAGE%%
+$ docker run -d --name C8O -e SESSION_TIMEOUT=5 -p 28080:28080 %%IMAGE%%
 ```
 
 ## `DISABLE_SUDO` Environment variable
@@ -184,7 +184,7 @@ The image include *sudo* command line, configured to allow the *convertigo* user
 The default `DISABLE_SUDO` value is *empty* and can be defined this way:
 
 ```console
-$ docker run -d -–name C8O -e DISABLE_SUDO=true -p 28080:28080 %%IMAGE%%
+$ docker run -d --name C8O -e DISABLE_SUDO=true -p 28080:28080 %%IMAGE%%
 ```
 
 ## Pre configurated Docker compose stack
