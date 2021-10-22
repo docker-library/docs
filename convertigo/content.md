@@ -80,7 +80,7 @@ To avoid log and cache mixing, you have to add 2 variables for instance specific
 If you want to make a vertical image ready to start with your application inside, you have to have your built projects **.car** files next to your `Dockerfile`:
 
 ```console
-FROM convertigo
+FROM %%IMAGE%%
 COPY myProject.car /usr/local/tomcat/webapps/convertigo/WEB-INF/default_user_workspace/projects/
 COPY myDependency.car /usr/local/tomcat/webapps/convertigo/WEB-INF/default_user_workspace/projects/
 ```
@@ -164,7 +164,7 @@ Allow to configure the *SameSite* parameter for generated cookies. Can be empty,
 The default `COOKIE_SAMESITE` value is *empty* and can be defined this way:
 
 ```console
-$ docker run -d –name C8O -e COOKIE_SAMESITE=lax -p 28080:28080 convertigo
+$ docker run -d Â–name C8O -e COOKIE_SAMESITE=lax -p 28080:28080 convertigo
 ```
 
 ## `SESSION_TIMEOUT` Environment variable
@@ -174,7 +174,7 @@ Allow to configure the default Tomcat *session-timeout* in minutes. This value i
 The default `SESSION_TIMEOUT` value is *30* and can be defined this way:
 
 ```console
-$ docker run -d –name C8O -e SESSION_TIMEOUT=5 -p 28080:28080 convertigo
+$ docker run -d Â–name C8O -e SESSION_TIMEOUT=5 -p 28080:28080 convertigo
 ```
 
 ## `DISABLE_SUDO` Environment variable
@@ -184,7 +184,7 @@ The image include *sudo* command line, configured to allow the *convertigo* user
 The default `DISABLE_SUDO` value is *empty* and can be defined this way:
 
 ```console
-$ docker run -d –name C8O -e DISABLE_SUDO=true -p 28080:28080 convertigo
+$ docker run -d Â–name C8O -e DISABLE_SUDO=true -p 28080:28080 convertigo
 ```
 
 ## Pre configurated Docker compose stack
