@@ -53,7 +53,7 @@ $ docker run -d --name C8O --link [mysql-container]:mysql -p 28080:28080        
             -Dconvertigo.engine.billing.persistence.jdbc.username=[username for the c8oAnalytics db] \
             -Dconvertigo.engine.billing.persistence.jdbc.password=[password for specified db user]   \
             -Dconvertigo.engine.billing.persistence.jdbc.url=jdbc:mysql://mysql:3306/c8oAnalytics"   \
-convertigo
+%%IMAGE%%
 ```
 
 ## Where is Convertigo MBaaS server storing deployed projects
@@ -64,7 +64,26 @@ Projects are deployed in the Convertigo workspace, a simple file system director
 $ docker run --name C8O -v $(pwd):/workspace -d -p 28080:28080 %%IMAGE%%
 ```
 
-You can share the same workspace by all Convertigo containers. This this case, when you deploy a project on a Convertigo container, it will be seen by others. This is the best way to build multi-instance load balanced Convertigo server farms.
+You can share the same workspace by all Convertigo containers. In this case, when you deploy a project on a Convertigo container, it will be seen by others. This is the best way to build multi-instance load balanced Convertigo server farms.
+
+**Be sure to have a really fast file sharing between instances !!!**
+
+To avoid log and cache mixing, you have to add 2 variables for instance specific paths:
+
+```console
+-Dconvertigo.engine.cache_manager.filecache.directory=/workspace/cache/[instance name]
+-Dconvertigo.engine.log4j.appender.CemsAppender.File=/workspace/logs/[instance name]/engine.log
+```
+
+## Make image with pre-deployed projects
+
+If you want to make a vertical image ready to start with your application inside, you have to have your built projects **.car** files next to your `Dockerfile`:
+
+```console
+FROM %%IMAGE%%
+COPY myProject.car /usr/local/tomcat/webapps/convertigo/WEB-INF/default_user_workspace/projects/
+COPY myDependency.car /usr/local/tomcat/webapps/convertigo/WEB-INF/default_user_workspace/projects/
+```
 
 ## Migrate from an earlier version of Convertigo
 
@@ -78,7 +97,7 @@ The default administration account of a Convertigo serveur is **admin** / **admi
 
 These accounts can be configured through the *administration console* and saved in the **workspace**.
 
-### `CONVERTIGO_ADMIN_USER` and `CONVERTIGO_ADMIN_PASSWORD` variables
+### `CONVERTIGO_ADMIN_USER` and `CONVERTIGO_ADMIN_PASSWORD` Environment variables
 
 You can change the default administration account :
 
@@ -86,7 +105,7 @@ You can change the default administration account :
 $ docker run -d --name C8O -e CONVERTIGO_ADMIN_USER=administrator -e CONVERTIGO_ADMIN_PASSWORD=s3cret -p 28080:28080 %%IMAGE%%
 ```
 
-### `CONVERTIGO_TESTPLATFORM_USER` and `CONVERTIGO_TESTPLATFORM_PASSWORD` variables
+### `CONVERTIGO_TESTPLATFORM_USER` and `CONVERTIGO_TESTPLATFORM_PASSWORD` Environment variables
 
 You can lock the **testplatform** by setting the account :
 
@@ -103,6 +122,8 @@ Add any *Java JVM* options such as -D[something] :
 ```console
 $ docker run -d --name C8O -e JAVA_OPTS="-DjvmRoute=server1" -p 28080:28080 %%IMAGE%%
 ```
+
+[Here the list of convertigo specific properties](https://www.convertigo.com/documentation/latest/operating-guide/appendixes/#list-of-convertigo-java-system-properties) (don't forget the `-Dconvertigo.engine.` prefix).
 
 ## `JXMX` Environment variable
 
@@ -134,6 +155,36 @@ The default `COOKIE_SECURE` value is `false` and can be defined :
 
 ```console
 $ docker run -d --name C8O -e COOKIE_SECURE="true" -p 28080:28080 %%IMAGE%%
+```
+
+## `COOKIE_SAMESITE` Environment variable
+
+Allow to configure the *SameSite* parameter for generated cookies. Can be empty, `none`, `lax` or `strict`.
+
+The default `COOKIE_SAMESITE` value is *empty* and can be defined this way:
+
+```console
+$ docker run -d --name C8O -e COOKIE_SAMESITE=lax -p 28080:28080 %%IMAGE%%
+```
+
+## `SESSION_TIMEOUT` Environment variable
+
+Allow to configure the default Tomcat *session-timeout* in minutes. This value is used for non-project calls (Administration console, Fullsync...). This value is overridden by each projects' calls (Sequence, Transaction ...).
+
+The default `SESSION_TIMEOUT` value is *30* and can be defined this way:
+
+```console
+$ docker run -d --name C8O -e SESSION_TIMEOUT=5 -p 28080:28080 %%IMAGE%%
+```
+
+## `DISABLE_SUDO` Environment variable
+
+The image include *sudo* command line, configured to allow the *convertigo* user to use it without password and to perform some *root* action inside the container. This variable allow to disable this permission.
+
+The default `DISABLE_SUDO` value is *empty* and can be defined this way:
+
+```console
+$ docker run -d --name C8O -e DISABLE_SUDO=true -p 28080:28080 %%IMAGE%%
 ```
 
 ## Pre configurated Docker compose stack
