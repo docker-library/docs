@@ -3,6 +3,8 @@ version: '3.1'
 services:
 
   wordpress:
+    depends_on:
+      - db
     image: wordpress
     restart: always
     ports:
