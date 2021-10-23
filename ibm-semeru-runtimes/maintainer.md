@@ -1,1 +1,1 @@
-[IBM Semeru Runtime](%%GITHUB-REPO%%)
+[IBM Semeru Runtimes](%%GITHUB-REPO%%)
