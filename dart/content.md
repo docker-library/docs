@@ -71,8 +71,7 @@ CMD ["/app/bin/server"]
 
 ### `.dockerignore`
 
-Additionally it creates a recommended `.dockerignore` file,
-which enumarates files that should be omitted from the built Docker image:
+Additionally it creates a recommended `.dockerignore` file, which enumarates files that should be omitted from the built Docker image:
 
 ```text
 .dockerignore
@@ -85,6 +84,6 @@ build/
 .packages
 ```
 
------
+--
 
 Maintained with ❤️ by the [Dart](https://dart.dev) team.
