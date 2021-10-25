@@ -18,7 +18,7 @@ After installing the Dart SDK, use the `dart` command to create a new server app
 $ dart create -t server-shelf myserver
 ```
 
-### Running server with Docker Desktop
+### Running the server with Docker Desktop
 
 If you have [Docker Desktop](https://www.docker.com/get-started) installed, you can build and run on your machine with the `docker` command:
 
