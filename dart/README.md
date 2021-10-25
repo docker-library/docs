@@ -56,9 +56,36 @@ By utilizing Dart's support for ahead-of-time (AOT) [compilation to executables]
 
 ## Using this image
 
-We recommend creating small runtime images by leveraging Dart's support for ahead-of-time (AOT) [compilation to executables](https://dart.dev/tools/dart-compile#exe). This enables creating small runtime images (~10 MB).
+We recommend using small runtime images that leverage Dart's support for ahead-of-time (AOT) [compilation to executables](https://dart.dev/tools/dart-compile#exe). This enables creating small runtime images (~10 MB).
 
-The following `Dockerfile` performs two steps:
+### Creating a Dart server app
+
+After installing the Dart SDK, use the `dart` command to create a new server app:
+
+```shell
+$ dart create -t server-shelf myserver
+```
+
+### Running the server with Docker Desktop
+
+If you have [Docker Desktop](https://www.docker.com/get-started) installed, you can build and run on your machine with the `docker` command:
+
+```shell
+$ docker build -t dart-server .
+$ docker run -it --rm -p 8080:8080 --name myserver dart-server
+```
+
+When finished, you can stop the container using the name you provided:
+
+```shell
+$ docker kill myserver
+```
+
+## Image documentation
+
+### `Dockerfile`
+
+The `Dockerfile` created by the `dart` tool performs two steps:
 
 1.	Using the Dart SDK in the `dart:stable` image, compiles your server (`bin/server.dart`) to an executable (`server`).
 
@@ -90,7 +117,9 @@ EXPOSE 8080
 CMD ["/app/bin/server"]
 ```
 
-We recommend you also have a `.dockerignore` file like the following:
+### `.dockerignore`
+
+Additionally it creates a recommended `.dockerignore` file, which enumarates files that should be omitted from the built Docker image:
 
 ```text
 .dockerignore
@@ -103,18 +132,7 @@ build/
 .packages
 ```
 
-If you have [Docker Desktop](https://www.docker.com/get-started) installed, you can build and run on your machine with the `docker` command:
-
-```shell
-$ docker build -t dart-server .
-$ docker run -it --rm -p 8080:8080 --name myserver dart-server
-```
-
-When finished, you can stop the container using the name you provided:
-
-```shell
-$ docker kill myserver
-```
+--
 
 Maintained with ❤️ by the [Dart](https://dart.dev) team.
 
