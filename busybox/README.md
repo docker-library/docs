@@ -24,14 +24,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.33.1-uclibc`, `1.33-uclibc`, `1-uclibc`, `stable-uclibc`, `uclibc`](https://github.com/docker-library/busybox/blob/6166a8226f7213354cc1b743477c1eabc0cb00e0/stable/uclibc/Dockerfile)
--	[`1.33.1-glibc`, `1.33-glibc`, `1-glibc`, `stable-glibc`, `glibc`](https://github.com/docker-library/busybox/blob/6166a8226f7213354cc1b743477c1eabc0cb00e0/stable/glibc/Dockerfile)
--	[`1.33.1-musl`, `1.33-musl`, `1-musl`, `stable-musl`, `musl`](https://github.com/docker-library/busybox/blob/6166a8226f7213354cc1b743477c1eabc0cb00e0/stable/musl/Dockerfile)
--	[`1.33.1`, `1.33`, `1`, `stable`, `latest`](https://github.com/docker-library/busybox/blob/6166a8226f7213354cc1b743477c1eabc0cb00e0/stable/uclibc/Dockerfile)
--	[`1.34.0-uclibc`, `1.34-uclibc`, `unstable-uclibc`](https://github.com/docker-library/busybox/blob/6166a8226f7213354cc1b743477c1eabc0cb00e0/unstable/uclibc/Dockerfile)
--	[`1.34.0-glibc`, `1.34-glibc`, `unstable-glibc`](https://github.com/docker-library/busybox/blob/6166a8226f7213354cc1b743477c1eabc0cb00e0/unstable/glibc/Dockerfile)
--	[`1.34.0-musl`, `1.34-musl`, `unstable-musl`](https://github.com/docker-library/busybox/blob/6166a8226f7213354cc1b743477c1eabc0cb00e0/unstable/musl/Dockerfile)
--	[`1.34.0`, `1.34`, `unstable`](https://github.com/docker-library/busybox/blob/6166a8226f7213354cc1b743477c1eabc0cb00e0/unstable/uclibc/Dockerfile)
+-	[`1.34.1-uclibc`, `1.34-uclibc`, `1-uclibc`, `stable-uclibc`, `uclibc`](https://github.com/docker-library/busybox/blob/ac59258477f52f6f1a0fca104143e343fe2b84dd/stable/uclibc/Dockerfile)
+-	[`1.34.1-glibc`, `1.34-glibc`, `1-glibc`, `stable-glibc`, `glibc`](https://github.com/docker-library/busybox/blob/ac59258477f52f6f1a0fca104143e343fe2b84dd/stable/glibc/Dockerfile)
+-	[`1.34.1-musl`, `1.34-musl`, `1-musl`, `stable-musl`, `musl`](https://github.com/docker-library/busybox/blob/ac59258477f52f6f1a0fca104143e343fe2b84dd/stable/musl/Dockerfile)
+-	[`1.34.1`, `1.34`, `1`, `stable`, `latest`](https://github.com/docker-library/busybox/blob/ac59258477f52f6f1a0fca104143e343fe2b84dd/stable/uclibc/Dockerfile)
 
 # Quick reference (cont.)
 
