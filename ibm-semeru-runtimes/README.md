@@ -28,33 +28,33 @@ WARNING:
 
 ## Simple Tags
 
--	[`open-8u302-b08-jdk-focal`, `open-8-jdk-focal`](https://github.com/ibmruntimes/semeru-containers/blob/a5e772ef095c8d185a4dbcb804e5d4a3c895f71e/8/jdk/ubuntu/Dockerfile.open.releases.full)
--	[`open-8u302-b08-jdk-centos7`, `open-8-jdk-centos7`](https://github.com/ibmruntimes/semeru-containers/blob/a5e772ef095c8d185a4dbcb804e5d4a3c895f71e/8/jdk/centos/Dockerfile.open.releases.full)
--	[`open-8u302-b08-jre-focal`, `open-8-jre-focal`](https://github.com/ibmruntimes/semeru-containers/blob/a5e772ef095c8d185a4dbcb804e5d4a3c895f71e/8/jre/ubuntu/Dockerfile.open.releases.full)
--	[`open-8u302-b08-jre-centos7`, `open-8-jre-centos7`](https://github.com/ibmruntimes/semeru-containers/blob/a5e772ef095c8d185a4dbcb804e5d4a3c895f71e/8/jre/centos/Dockerfile.open.releases.full)
--	[`open-11.0.12_7-jdk-focal`, `open-11-jdk-focal`](https://github.com/ibmruntimes/semeru-containers/blob/a5e772ef095c8d185a4dbcb804e5d4a3c895f71e/11/jdk/ubuntu/Dockerfile.open.releases.full)
--	[`open-11.0.12_7-jdk-centos7`, `open-11-jdk-centos7`](https://github.com/ibmruntimes/semeru-containers/blob/a5e772ef095c8d185a4dbcb804e5d4a3c895f71e/11/jdk/centos/Dockerfile.open.releases.full)
--	[`open-11.0.12_7-jre-focal`, `open-11-jre-focal`](https://github.com/ibmruntimes/semeru-containers/blob/a5e772ef095c8d185a4dbcb804e5d4a3c895f71e/11/jre/ubuntu/Dockerfile.open.releases.full)
--	[`open-11.0.12_7-jre-centos7`, `open-11-jre-centos7`](https://github.com/ibmruntimes/semeru-containers/blob/a5e772ef095c8d185a4dbcb804e5d4a3c895f71e/11/jre/centos/Dockerfile.open.releases.full)
--	[`open-16.0.2_7-jdk-focal`, `open-16-jdk-focal`](https://github.com/ibmruntimes/semeru-containers/blob/a5e772ef095c8d185a4dbcb804e5d4a3c895f71e/16/jdk/ubuntu/Dockerfile.open.releases.full)
--	[`open-16.0.2_7-jdk-centos7`, `open-16-jdk-centos7`](https://github.com/ibmruntimes/semeru-containers/blob/a5e772ef095c8d185a4dbcb804e5d4a3c895f71e/16/jdk/centos/Dockerfile.open.releases.full)
--	[`open-16.0.2_7-jre-focal`, `open-16-jre-focal`](https://github.com/ibmruntimes/semeru-containers/blob/a5e772ef095c8d185a4dbcb804e5d4a3c895f71e/16/jre/ubuntu/Dockerfile.open.releases.full)
--	[`open-16.0.2_7-jre-centos7`, `open-16-jre-centos7`](https://github.com/ibmruntimes/semeru-containers/blob/a5e772ef095c8d185a4dbcb804e5d4a3c895f71e/16/jre/centos/Dockerfile.open.releases.full)
+-	[`open-8u312-b07-jdk-focal`, `open-8-jdk-focal`](https://github.com/ibmruntimes/semeru-containers/blob/8ac470fdafa335e8f1b81233cf7fdec1041a9f2a/8/jdk/ubuntu/Dockerfile.open.releases.full)
+-	[`open-8u312-b07-jdk-centos7`, `open-8-jdk-centos7`](https://github.com/ibmruntimes/semeru-containers/blob/8ac470fdafa335e8f1b81233cf7fdec1041a9f2a/8/jdk/centos/Dockerfile.open.releases.full)
+-	[`open-8u312-b07-jre-focal`, `open-8-jre-focal`](https://github.com/ibmruntimes/semeru-containers/blob/8ac470fdafa335e8f1b81233cf7fdec1041a9f2a/8/jre/ubuntu/Dockerfile.open.releases.full)
+-	[`open-8u312-b07-jre-centos7`, `open-8-jre-centos7`](https://github.com/ibmruntimes/semeru-containers/blob/8ac470fdafa335e8f1b81233cf7fdec1041a9f2a/8/jre/centos/Dockerfile.open.releases.full)
+-	[`open-11.0.13_8-jdk-focal`, `open-11-jdk-focal`](https://github.com/ibmruntimes/semeru-containers/blob/8ac470fdafa335e8f1b81233cf7fdec1041a9f2a/11/jdk/ubuntu/Dockerfile.open.releases.full)
+-	[`open-11.0.13_8-jdk-centos7`, `open-11-jdk-centos7`](https://github.com/ibmruntimes/semeru-containers/blob/8ac470fdafa335e8f1b81233cf7fdec1041a9f2a/11/jdk/centos/Dockerfile.open.releases.full)
+-	[`open-11.0.13_8-jre-focal`, `open-11-jre-focal`](https://github.com/ibmruntimes/semeru-containers/blob/8ac470fdafa335e8f1b81233cf7fdec1041a9f2a/11/jre/ubuntu/Dockerfile.open.releases.full)
+-	[`open-11.0.13_8-jre-centos7`, `open-11-jre-centos7`](https://github.com/ibmruntimes/semeru-containers/blob/8ac470fdafa335e8f1b81233cf7fdec1041a9f2a/11/jre/centos/Dockerfile.open.releases.full)
+-	[`open-16.0.2_7-jdk-focal`, `open-16-jdk-focal`](https://github.com/ibmruntimes/semeru-containers/blob/8ac470fdafa335e8f1b81233cf7fdec1041a9f2a/16/jdk/ubuntu/Dockerfile.open.releases.full)
+-	[`open-16.0.2_7-jdk-centos7`, `open-16-jdk-centos7`](https://github.com/ibmruntimes/semeru-containers/blob/8ac470fdafa335e8f1b81233cf7fdec1041a9f2a/16/jdk/centos/Dockerfile.open.releases.full)
+-	[`open-16.0.2_7-jre-focal`, `open-16-jre-focal`](https://github.com/ibmruntimes/semeru-containers/blob/8ac470fdafa335e8f1b81233cf7fdec1041a9f2a/16/jre/ubuntu/Dockerfile.open.releases.full)
+-	[`open-16.0.2_7-jre-centos7`, `open-16-jre-centos7`](https://github.com/ibmruntimes/semeru-containers/blob/8ac470fdafa335e8f1b81233cf7fdec1041a9f2a/16/jre/centos/Dockerfile.open.releases.full)
 
 ## Shared Tags
 
--	`open-8u302-b08-jdk`, `open-8-jdk`:
-	-	[`open-8u302-b08-jdk-focal`](https://github.com/ibmruntimes/semeru-containers/blob/a5e772ef095c8d185a4dbcb804e5d4a3c895f71e/8/jdk/ubuntu/Dockerfile.open.releases.full)
--	`open-8u302-b08-jre`, `open-8-jre`:
-	-	[`open-8u302-b08-jre-focal`](https://github.com/ibmruntimes/semeru-containers/blob/a5e772ef095c8d185a4dbcb804e5d4a3c895f71e/8/jre/ubuntu/Dockerfile.open.releases.full)
--	`open-11.0.12_7-jdk`, `open-11-jdk`:
-	-	[`open-11.0.12_7-jdk-focal`](https://github.com/ibmruntimes/semeru-containers/blob/a5e772ef095c8d185a4dbcb804e5d4a3c895f71e/11/jdk/ubuntu/Dockerfile.open.releases.full)
--	`open-11.0.12_7-jre`, `open-11-jre`:
-	-	[`open-11.0.12_7-jre-focal`](https://github.com/ibmruntimes/semeru-containers/blob/a5e772ef095c8d185a4dbcb804e5d4a3c895f71e/11/jre/ubuntu/Dockerfile.open.releases.full)
+-	`open-8u312-b07-jdk`, `open-8-jdk`:
+	-	[`open-8u312-b07-jdk-focal`](https://github.com/ibmruntimes/semeru-containers/blob/8ac470fdafa335e8f1b81233cf7fdec1041a9f2a/8/jdk/ubuntu/Dockerfile.open.releases.full)
+-	`open-8u312-b07-jre`, `open-8-jre`:
+	-	[`open-8u312-b07-jre-focal`](https://github.com/ibmruntimes/semeru-containers/blob/8ac470fdafa335e8f1b81233cf7fdec1041a9f2a/8/jre/ubuntu/Dockerfile.open.releases.full)
+-	`open-11.0.13_8-jdk`, `open-11-jdk`:
+	-	[`open-11.0.13_8-jdk-focal`](https://github.com/ibmruntimes/semeru-containers/blob/8ac470fdafa335e8f1b81233cf7fdec1041a9f2a/11/jdk/ubuntu/Dockerfile.open.releases.full)
+-	`open-11.0.13_8-jre`, `open-11-jre`:
+	-	[`open-11.0.13_8-jre-focal`](https://github.com/ibmruntimes/semeru-containers/blob/8ac470fdafa335e8f1b81233cf7fdec1041a9f2a/11/jre/ubuntu/Dockerfile.open.releases.full)
 -	`open-16.0.2_7-jdk`, `open-16-jdk`:
-	-	[`open-16.0.2_7-jdk-focal`](https://github.com/ibmruntimes/semeru-containers/blob/a5e772ef095c8d185a4dbcb804e5d4a3c895f71e/16/jdk/ubuntu/Dockerfile.open.releases.full)
+	-	[`open-16.0.2_7-jdk-focal`](https://github.com/ibmruntimes/semeru-containers/blob/8ac470fdafa335e8f1b81233cf7fdec1041a9f2a/16/jdk/ubuntu/Dockerfile.open.releases.full)
 -	`open-16.0.2_7-jre`, `open-16-jre`:
-	-	[`open-16.0.2_7-jre-focal`](https://github.com/ibmruntimes/semeru-containers/blob/a5e772ef095c8d185a4dbcb804e5d4a3c895f71e/16/jre/ubuntu/Dockerfile.open.releases.full)
+	-	[`open-16.0.2_7-jre-focal`](https://github.com/ibmruntimes/semeru-containers/blob/8ac470fdafa335e8f1b81233cf7fdec1041a9f2a/16/jre/ubuntu/Dockerfile.open.releases.full)
 
 # Quick reference (cont.)
 
