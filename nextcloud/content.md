@@ -230,7 +230,7 @@ services:
   db:
     image: mariadb
     restart: always
-    command: --transaction-isolation=READ-COMMITTED --binlog-format=ROW
+    command: --transaction-isolation=READ-COMMITTED --binlog-format=ROW --skip-innodb-read-only-compressed
     volumes:
       - db:/var/lib/mysql
     environment:
@@ -276,7 +276,7 @@ services:
   db:
     image: mariadb
     restart: always
-    command: --transaction-isolation=READ-COMMITTED --binlog-format=ROW
+    command: --transaction-isolation=READ-COMMITTED --binlog-format=ROW --skip-innodb-read-only-compressed
     volumes:
       - db:/var/lib/mysql
     environment:
