@@ -54,6 +54,26 @@ RABBITMQ_SSL_VERIFY
 RABBITMQ_VM_MEMORY_HIGH_WATERMARK
 ```
 
+### Setting default user and password
+
+If you wish to change the default username and password of `guest` / `guest`, you can do so with the `RABBITMQ_DEFAULT_USER` and `RABBITMQ_DEFAULT_PASS` environmental variables:
+
+```console
+$ docker run -d --hostname my-rabbit --name some-rabbit -e RABBITMQ_DEFAULT_USER=user -e RABBITMQ_DEFAULT_PASS=password %%IMAGE%%:3-management
+```
+
+You can then go to `http://localhost:8080` or `http://host-ip:8080` in a browser and use `user`/`password` to gain access to the management console
+
+To source the username and password from files instead of environment variables, add a `_FILE` suffix to the environment variable names (for example, `RABBITMQ_DEFAULT_USER_FILE=/run/secrets/xxx` to use [Docker Secrets](https://docs.docker.com/engine/swarm/secrets/)).
+
+### Setting default vhost
+
+If you wish to change the default vhost, you can do so with the `RABBITMQ_DEFAULT_VHOST` environmental variables:
+
+```console
+$ docker run -d --hostname my-rabbit --name some-rabbit -e RABBITMQ_DEFAULT_VHOST=my_vhost %%IMAGE%%:3-management
+```
+
 ### Memory Limits
 
 RabbitMQ contains functionality which explicitly tracks and manages memory usage, and thus needs to be made aware of cgroup-imposed limits (e.g. [`docker run --memory=..`](https://docs.docker.com/config/containers/resource_constraints/#limit-a-containers-access-to-memory)).
