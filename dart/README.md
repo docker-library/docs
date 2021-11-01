@@ -52,8 +52,6 @@ Dart is a client-optimized language for developing fast apps on any platform. It
 
 By utilizing Dart's support for ahead-of-time (AOT) [compilation to executables](https://dart.dev/tools/dart-compile#exe), you can create very small runtime images (~10 MB).
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/cf81e8931a69bf4fcbc86ec39cae8c9f90c1be10/dart/logo.png)
-
 ## Using this image
 
 We recommend using small runtime images that leverage Dart's support for ahead-of-time (AOT) [compilation to executables](https://dart.dev/tools/dart-compile#exe). This enables creating small runtime images (~10 MB).
