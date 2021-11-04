@@ -24,12 +24,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`18.04`, `bionic-20210930`, `bionic`](https://github.com/tianon/docker-brew-ubuntu-core/blob/b5a2c2a86e9dc83ef3a21551ea97e351697ed2d7/bionic/Dockerfile)
--	[`20.04`, `focal-20211006`, `focal`, `latest`](https://github.com/tianon/docker-brew-ubuntu-core/blob/b5a2c2a86e9dc83ef3a21551ea97e351697ed2d7/focal/Dockerfile)
--	[`21.04`, `hirsute-20210917`, `hirsute`](https://github.com/tianon/docker-brew-ubuntu-core/blob/b5a2c2a86e9dc83ef3a21551ea97e351697ed2d7/hirsute/Dockerfile)
--	[`21.10`, `impish-20211015`, `impish`, `rolling`](https://github.com/tianon/docker-brew-ubuntu-core/blob/b5a2c2a86e9dc83ef3a21551ea97e351697ed2d7/impish/Dockerfile)
--	[`14.04`, `trusty-20191217`, `trusty`](https://github.com/tianon/docker-brew-ubuntu-core/blob/b5a2c2a86e9dc83ef3a21551ea97e351697ed2d7/trusty/Dockerfile)
--	[`16.04`, `xenial-20210804`, `xenial`](https://github.com/tianon/docker-brew-ubuntu-core/blob/b5a2c2a86e9dc83ef3a21551ea97e351697ed2d7/xenial/Dockerfile)
+-	[`18.04`, `bionic-20210930`, `bionic`](https://github.com/tianon/docker-brew-ubuntu-core/blob/7b4824918e0284728bc03358f7a2e399a1c74035/bionic/Dockerfile)
+-	[`20.04`, `focal-20211006`, `focal`, `latest`](https://github.com/tianon/docker-brew-ubuntu-core/blob/7b4824918e0284728bc03358f7a2e399a1c74035/focal/Dockerfile)
+-	[`21.04`, `hirsute-20210917`, `hirsute`](https://github.com/tianon/docker-brew-ubuntu-core/blob/7b4824918e0284728bc03358f7a2e399a1c74035/hirsute/Dockerfile)
+-	[`21.10`, `impish-20211102`, `impish`, `rolling`](https://github.com/tianon/docker-brew-ubuntu-core/blob/7b4824918e0284728bc03358f7a2e399a1c74035/impish/Dockerfile)
+-	[`22.04`, `jammy-20211029`, `jammy`, `devel`](https://github.com/tianon/docker-brew-ubuntu-core/blob/7b4824918e0284728bc03358f7a2e399a1c74035/jammy/Dockerfile)
+-	[`14.04`, `trusty-20191217`, `trusty`](https://github.com/tianon/docker-brew-ubuntu-core/blob/7b4824918e0284728bc03358f7a2e399a1c74035/trusty/Dockerfile)
+-	[`16.04`, `xenial-20210804`, `xenial`](https://github.com/tianon/docker-brew-ubuntu-core/blob/7b4824918e0284728bc03358f7a2e399a1c74035/xenial/Dockerfile)
 
 # Quick reference (cont.)
 
