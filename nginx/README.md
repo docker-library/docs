@@ -254,6 +254,10 @@ The `nginx` images come in many flavors, each designed for a specific use case.
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
+## `nginx:<version>-perl` / `nginx:<version>-alpine-perl`
+
+Starting with nginx:1.13.0 / mainline and nginx:1.12.0 / stable, the perl module has been removed from the default images. A separate `-perl` tag variant is available if you wish to use the perl module.
+
 ## `nginx:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
