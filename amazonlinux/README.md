@@ -26,8 +26,8 @@ WARNING:
 
 -	[`2.0.20211005.0`, `2`, `latest`](https://github.com/amazonlinux/container-images/blob/52f51a121d3d8c2c8c4560f8c6cc70dcd4ee9064/Dockerfile)
 -	[`2.0.20211005.0-with-sources`, `2-with-sources`, `with-sources`](https://github.com/amazonlinux/container-images/blob/88795b1b01976327b8be552342f1106f47c3c155/Dockerfile)
--	[`2018.03.0.20211001.0`, `2018.03`, `1`](https://github.com/amazonlinux/container-images/blob/2a80b9e78bd3857c6277f086df14a95454009e8c/Dockerfile)
--	[`2018.03.0.20211001.0-with-sources`, `2018.03-with-sources`, `1-with-sources`](https://github.com/amazonlinux/container-images/blob/4acfa0e023a60424529b3bb88a1494ed07336091/Dockerfile)
+-	[`2018.03.0.20211015.1`, `2018.03`, `1`](https://github.com/amazonlinux/container-images/blob/6439ad492e98f0a1b225199e8170506a1c3ac889/Dockerfile)
+-	[`2018.03.0.20211015.1-with-sources`, `2018.03-with-sources`, `1-with-sources`](https://github.com/amazonlinux/container-images/blob/bd1b726ab8cc9dedc7732608e8247525dd977c4d/Dockerfile)
 
 # Quick reference (cont.)
 
