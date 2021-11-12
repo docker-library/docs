@@ -27,9 +27,9 @@ WARNING:
 -	[`3.0.9-jdk8`, `3.0-jdk8`, `jdk8`](https://github.com/groovy/docker-groovy/blob/e46b8fbd268e1b4559178b87358aac7385f694d2/jdk8/Dockerfile)
 -	[`3.0.9-jdk11`, `3.0-jdk11`, `jdk11`](https://github.com/groovy/docker-groovy/blob/e46b8fbd268e1b4559178b87358aac7385f694d2/jdk11/Dockerfile)
 -	[`3.0.9-jdk17`, `3.0-jdk17`, `jdk17`, `3.0.9-jdk`, `3.0-jdk`, `3.0.9`, `3.0`, `3`, `jdk`, `latest`](https://github.com/groovy/docker-groovy/blob/e46b8fbd268e1b4559178b87358aac7385f694d2/jdk17/Dockerfile)
--	[`4.0.0-beta-1-jdk8`, `4.0.0-jdk8`, `4.0-jdk8`](https://github.com/groovy/docker-groovy/blob/86f6ece313350fad2a27d2ce89e127804bb098f6/jdk8/Dockerfile)
--	[`4.0.0-beta-1-jdk11`, `4.0.0-jdk11`, `4.0-jdk11`](https://github.com/groovy/docker-groovy/blob/86f6ece313350fad2a27d2ce89e127804bb098f6/jdk11/Dockerfile)
--	[`4.0.0-beta-1-jdk17`, `4.0.0-jdk17`, `4.0-jdk17`, `4.0.0-beta-1-jdk`, `4.0.0-jdk`, `4.0.0-beta-1`, `4.0.0`, `4.0`, `4`](https://github.com/groovy/docker-groovy/blob/86f6ece313350fad2a27d2ce89e127804bb098f6/jdk17/Dockerfile)
+-	[`4.0.0-beta-2-jdk8`, `4.0.0-jdk8`, `4.0-jdk8`](https://github.com/groovy/docker-groovy/blob/90f949922ebe0807d6cafbe1e0259922d5c2a469/jdk8/Dockerfile)
+-	[`4.0.0-beta-2-jdk11`, `4.0.0-jdk11`, `4.0-jdk11`](https://github.com/groovy/docker-groovy/blob/90f949922ebe0807d6cafbe1e0259922d5c2a469/jdk11/Dockerfile)
+-	[`4.0.0-beta-2-jdk17`, `4.0.0-jdk17`, `4.0-jdk17`, `4.0.0-beta-2-jdk`, `4.0.0-jdk`, `4.0.0-beta-2`, `4.0.0`, `4.0`, `4`](https://github.com/groovy/docker-groovy/blob/90f949922ebe0807d6cafbe1e0259922d5c2a469/jdk17/Dockerfile)
 
 # Quick reference (cont.)
 
