@@ -212,7 +212,7 @@ By default, the entrypoint script automatically loads the timezone data needed f
 
 ### `MYSQL_TCP_PORT`
 
-Changes the TCP port used inside the container. Defaults to 3306. Setting name doesn't follow the pattern as it is used directly by MariaDB.
+Changes the TCP port used inside the container. Defaults to 3306. Variable name doesn't follow the pattern as it is used directly by MariaDB.
 
 Using the default (i.e. not defining this variable) and exposing the desired external port via `ports` composer setting is recommended instead. Use this setting only for `network_mode: host` cases. 
 
