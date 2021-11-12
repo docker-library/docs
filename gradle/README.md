@@ -24,16 +24,16 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.2.0-jdk8`, `7.2-jdk8`, `7-jdk8`, `jdk8`](https://github.com/keeganwitt/docker-gradle/blob/f957af12473296d56233e110d51976d77fb45661/jdk8/Dockerfile)
--	[`7.2.0-jdk11`, `7.2-jdk11`, `7-jdk11`, `jdk11`](https://github.com/keeganwitt/docker-gradle/blob/f957af12473296d56233e110d51976d77fb45661/jdk11/Dockerfile)
--	[`7.2.0-jdk11-alpine`, `7.2-jdk11-alpine`, `7-jdk11-alpine`, `jdk11-alpine`](https://github.com/keeganwitt/docker-gradle/blob/f957af12473296d56233e110d51976d77fb45661/jdk11-alpine/Dockerfile)
--	[`7.2.0-jdk17`, `7.2-jdk17`, `7-jdk17`, `jdk17`, `7.2.0-jdk`, `7.2-jdk`, `7-jdk`, `jdk`, `7.2.0`, `7.2`, `7`, `latest`](https://github.com/keeganwitt/docker-gradle/blob/f957af12473296d56233e110d51976d77fb45661/jdk17/Dockerfile)
--	[`7.2.0-jdk17-alpine`, `7.2-jdk17-alpine`, `7-jdk17-alpine`, `jdk17-alpine`, `7.2.0-jdk-alpine`, `7.2-jdk-alpine`, `7-jdk-alpine`, `jdk-alpine`, `7.2.0-alpine`, `7.2-alpine`, `7-alpine`, `alpine`](https://github.com/keeganwitt/docker-gradle/blob/f957af12473296d56233e110d51976d77fb45661/jdk17-alpine/Dockerfile)
--	[`6.9.1-jdk8`, `6.9-jdk8`, `6-jdk8`](https://github.com/keeganwitt/docker-gradle/blob/e1cf6931390c1ea7ddadc705f2416f27bc0c5cae/jdk8/Dockerfile)
--	[`6.9.1-jdk11`, `6.9-jdk11`, `6-jdk11`](https://github.com/keeganwitt/docker-gradle/blob/e1cf6931390c1ea7ddadc705f2416f27bc0c5cae/jdk11/Dockerfile)
--	[`6.9.1-jdk11-alpine`, `6.9-jdk11-alpine`, `6-jdk11-alpine`](https://github.com/keeganwitt/docker-gradle/blob/e1cf6931390c1ea7ddadc705f2416f27bc0c5cae/jdk11-alpine/Dockerfile)
--	[`6.9.1-jdk17`, `6.9-jdk17`, `6-jdk17`, `6.9.1-jdk`, `6.9-jdk`, `6-jdk`, `6.9.1`, `6.9`, `6`](https://github.com/keeganwitt/docker-gradle/blob/e1cf6931390c1ea7ddadc705f2416f27bc0c5cae/jdk17/Dockerfile)
--	[`6.9.1-jdk17-alpine`, `6.9-jdk17-alpine`, `6-jdk17-alpine`, `6.9.1-jdk-alpine`, `6.9-jdk-alpine`, `6-jdk-alpine`, `6.9.1-alpine`, `6.9-alpine`, `6-alpine`](https://github.com/keeganwitt/docker-gradle/blob/e1cf6931390c1ea7ddadc705f2416f27bc0c5cae/jdk17-alpine/Dockerfile)
+-	[`7.3.0-jdk8`, `7.3-jdk8`, `7-jdk8`, `jdk8`](https://github.com/keeganwitt/docker-gradle/blob/bb670240f77609e10dc46f195d1c675fb43b04d0/jdk8/Dockerfile)
+-	[`7.3.0-jdk11`, `7.3-jdk11`, `7-jdk11`, `jdk11`](https://github.com/keeganwitt/docker-gradle/blob/bb670240f77609e10dc46f195d1c675fb43b04d0/jdk11/Dockerfile)
+-	[`7.3.0-jdk11-alpine`, `7.3-jdk11-alpine`, `7-jdk11-alpine`, `jdk11-alpine`](https://github.com/keeganwitt/docker-gradle/blob/bb670240f77609e10dc46f195d1c675fb43b04d0/jdk11-alpine/Dockerfile)
+-	[`7.3.0-jdk17`, `7.3-jdk17`, `7-jdk17`, `jdk17`, `7.3.0-jdk`, `7.3-jdk`, `7-jdk`, `jdk`, `7.3.0`, `7.3`, `7`, `latest`](https://github.com/keeganwitt/docker-gradle/blob/bb670240f77609e10dc46f195d1c675fb43b04d0/jdk17/Dockerfile)
+-	[`7.3.0-jdk17-alpine`, `7.3-jdk17-alpine`, `7-jdk17-alpine`, `jdk17-alpine`, `7.3.0-jdk-alpine`, `7.3-jdk-alpine`, `7-jdk-alpine`, `jdk-alpine`, `7.3.0-alpine`, `7.3-alpine`, `7-alpine`, `alpine`](https://github.com/keeganwitt/docker-gradle/blob/bb670240f77609e10dc46f195d1c675fb43b04d0/jdk17-alpine/Dockerfile)
+-	[`6.9.1-jdk8`, `6.9-jdk8`, `6-jdk8`](https://github.com/keeganwitt/docker-gradle/blob/24b771a3cca16f18033005a144e9b4dbeb430bbc/jdk8/Dockerfile)
+-	[`6.9.1-jdk11`, `6.9-jdk11`, `6-jdk11`](https://github.com/keeganwitt/docker-gradle/blob/24b771a3cca16f18033005a144e9b4dbeb430bbc/jdk11/Dockerfile)
+-	[`6.9.1-jdk11-alpine`, `6.9-jdk11-alpine`, `6-jdk11-alpine`](https://github.com/keeganwitt/docker-gradle/blob/24b771a3cca16f18033005a144e9b4dbeb430bbc/jdk11-alpine/Dockerfile)
+-	[`6.9.1-jdk17`, `6.9-jdk17`, `6-jdk17`, `6.9.1-jdk`, `6.9-jdk`, `6-jdk`, `6.9.1`, `6.9`, `6`](https://github.com/keeganwitt/docker-gradle/blob/24b771a3cca16f18033005a144e9b4dbeb430bbc/jdk17/Dockerfile)
+-	[`6.9.1-jdk17-alpine`, `6.9-jdk17-alpine`, `6-jdk17-alpine`, `6.9.1-jdk-alpine`, `6.9-jdk-alpine`, `6-jdk-alpine`, `6.9.1-alpine`, `6.9-alpine`, `6-alpine`](https://github.com/keeganwitt/docker-gradle/blob/24b771a3cca16f18033005a144e9b4dbeb430bbc/jdk17-alpine/Dockerfile)
 
 # Quick reference (cont.)
 
