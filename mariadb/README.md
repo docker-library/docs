@@ -210,6 +210,12 @@ Do note that there is no need to use this mechanism to create the root superuser
 
 By default, the entrypoint script automatically loads the timezone data needed for the `CONVERT_TZ()` function. If it is not needed, any non-empty value disables timezone loading.
 
+### `MYSQL_TCP_PORT`
+
+Changes the TCP port used inside the container. Defaults to 3306. Setting name doesn't follow the pattern as it is used directly by MariaDB.
+
+Using the default (i.e. not defining this variable) and exposing the desired external port via `ports` composer setting is recommended instead. Use this setting only for `network_mode: host` cases. 
+
 ## Docker Secrets
 
 As an alternative to passing sensitive information via environment variables, `_FILE` may be appended to the previously listed environment variables, causing the initialization script to load the values for those variables from files present in the container. In particular, this can be used to load passwords from Docker secrets stored in `/run/secrets/<secret_name>` files. For example:
