@@ -24,12 +24,16 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.0.9-jdk8`, `3.0-jdk8`, `jdk8`](https://github.com/groovy/docker-groovy/blob/e46b8fbd268e1b4559178b87358aac7385f694d2/jdk8/Dockerfile)
--	[`3.0.9-jdk11`, `3.0-jdk11`, `jdk11`](https://github.com/groovy/docker-groovy/blob/e46b8fbd268e1b4559178b87358aac7385f694d2/jdk11/Dockerfile)
--	[`3.0.9-jdk17`, `3.0-jdk17`, `jdk17`, `3.0.9-jdk`, `3.0-jdk`, `3.0.9`, `3.0`, `3`, `jdk`, `latest`](https://github.com/groovy/docker-groovy/blob/e46b8fbd268e1b4559178b87358aac7385f694d2/jdk17/Dockerfile)
--	[`4.0.0-beta-2-jdk8`, `4.0.0-jdk8`, `4.0-jdk8`](https://github.com/groovy/docker-groovy/blob/90f949922ebe0807d6cafbe1e0259922d5c2a469/jdk8/Dockerfile)
--	[`4.0.0-beta-2-jdk11`, `4.0.0-jdk11`, `4.0-jdk11`](https://github.com/groovy/docker-groovy/blob/90f949922ebe0807d6cafbe1e0259922d5c2a469/jdk11/Dockerfile)
--	[`4.0.0-beta-2-jdk17`, `4.0.0-jdk17`, `4.0-jdk17`, `4.0.0-beta-2-jdk`, `4.0.0-jdk`, `4.0.0-beta-2`, `4.0.0`, `4.0`, `4`](https://github.com/groovy/docker-groovy/blob/90f949922ebe0807d6cafbe1e0259922d5c2a469/jdk17/Dockerfile)
+-	[`3.0.9-jdk8`, `3.0-jdk8`, `jdk8`](https://github.com/groovy/docker-groovy/blob/a3aa08aa0ceaaf13f1ad73a882aba081ff46e816/jdk8/Dockerfile)
+-	[`3.0.9-jdk11`, `3.0-jdk11`, `jdk11`](https://github.com/groovy/docker-groovy/blob/a3aa08aa0ceaaf13f1ad73a882aba081ff46e816/jdk11/Dockerfile)
+-	[`3.0.9-jdk11-alpine`, `3.0-jdk11-alpine`, `jdk11-alpine`](https://github.com/groovy/docker-groovy/blob/a3aa08aa0ceaaf13f1ad73a882aba081ff46e816/jdk11-alpine/Dockerfile)
+-	[`3.0.9-jdk17`, `3.0-jdk17`, `jdk17`, `3.0.9-jdk`, `3.0-jdk`, `3.0.9`, `3.0`, `3`, `jdk`, `latest`](https://github.com/groovy/docker-groovy/blob/a3aa08aa0ceaaf13f1ad73a882aba081ff46e816/jdk17/Dockerfile)
+-	[`3.0.9-jdk17-alpine`, `3.0-jdk17-alpine`, `jdk17-alpine`, `3.0.9-jdk-alpine`, `3.0-jdk-alpine`, `3.0.9-alpine`, `3.0-alpine`, `3-alpine`, `jdk-alpine`, `alpine`](https://github.com/groovy/docker-groovy/blob/a3aa08aa0ceaaf13f1ad73a882aba081ff46e816/jdk17-alpine/Dockerfile)
+-	[`4.0.0-beta-2-jdk8`, `4.0.0-jdk8`, `4.0-jdk8`](https://github.com/groovy/docker-groovy/blob/ca07f06d8a8e774a9cf401fd12e540f71b687bb5/jdk8/Dockerfile)
+-	[`4.0.0-beta-2-jdk11`, `4.0.0-jdk11`, `4.0-jdk11`](https://github.com/groovy/docker-groovy/blob/ca07f06d8a8e774a9cf401fd12e540f71b687bb5/jdk11/Dockerfile)
+-	[`4.0.0-beta-2-jdk11-alpine`, `4.0.0-jdk11-alpine`, `4.0-jdk11-alpine`](https://github.com/groovy/docker-groovy/blob/ca07f06d8a8e774a9cf401fd12e540f71b687bb5/jdk11-alpine/Dockerfile)
+-	[`4.0.0-beta-2-jdk17`, `4.0.0-jdk17`, `4.0-jdk17`, `4.0.0-beta-2-jdk`, `4.0.0-jdk`, `4.0.0-beta-2`, `4.0.0`, `4.0`, `4`](https://github.com/groovy/docker-groovy/blob/ca07f06d8a8e774a9cf401fd12e540f71b687bb5/jdk17/Dockerfile)
+-	[`4.0.0-beta-2-jdk17-alpine`, `4.0.0-jdk17-alpine`, `4.0-jdk17-alpine`, `4.0.0-beta-2-jdk-alpine`, `4.0.0-jdk-alpine`, `4.0.0-beta-2-alpine`, `4.0.0-alpine`, `4.0-alpine`, `4-alpine`](https://github.com/groovy/docker-groovy/blob/ca07f06d8a8e774a9cf401fd12e540f71b687bb5/jdk17-alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -76,6 +80,22 @@ The local Grapes cache can be reused across containers by creating a volume and 
 docker volume create --name grapes-cache
 docker run --rm -it -v grapes-cache:/home/groovy/.groovy/grapes groovy
 ```
+
+# Image Variants
+
+The `groovy` images come in many flavors, each designed for a specific use case.
+
+## `groovy:<version>`
+
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+## `groovy:<version>-alpine`
+
+This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+
+This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+
+To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 # License
 
