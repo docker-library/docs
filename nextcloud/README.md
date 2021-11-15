@@ -30,9 +30,9 @@ WARNING:
 -	[`21.0.6-apache`, `21.0-apache`, `21-apache`, `21.0.6`, `21.0`, `21`](https://github.com/nextcloud/docker/blob/7fc6772513dd0da3b790dac4fcdc2e7b90a72546/21/apache/Dockerfile)
 -	[`21.0.6-fpm`, `21.0-fpm`, `21-fpm`](https://github.com/nextcloud/docker/blob/7fc6772513dd0da3b790dac4fcdc2e7b90a72546/21/fpm/Dockerfile)
 -	[`21.0.6-fpm-alpine`, `21.0-fpm-alpine`, `21-fpm-alpine`](https://github.com/nextcloud/docker/blob/7fc6772513dd0da3b790dac4fcdc2e7b90a72546/21/fpm-alpine/Dockerfile)
--	[`22.2.1-apache`, `22.2-apache`, `22-apache`, `apache`, `22.2.1`, `22.2`, `22`, `latest`](https://github.com/nextcloud/docker/blob/7fc6772513dd0da3b790dac4fcdc2e7b90a72546/22/apache/Dockerfile)
--	[`22.2.1-fpm`, `22.2-fpm`, `22-fpm`, `fpm`](https://github.com/nextcloud/docker/blob/7fc6772513dd0da3b790dac4fcdc2e7b90a72546/22/fpm/Dockerfile)
--	[`22.2.1-fpm-alpine`, `22.2-fpm-alpine`, `22-fpm-alpine`, `fpm-alpine`](https://github.com/nextcloud/docker/blob/7fc6772513dd0da3b790dac4fcdc2e7b90a72546/22/fpm-alpine/Dockerfile)
+-	[`22.2.2-apache`, `22.2-apache`, `22-apache`, `apache`, `stable-apache`, `production-apache`, `22.2.2`, `22.2`, `22`, `latest`, `stable`, `production`](https://github.com/nextcloud/docker/blob/dc24ba0fcb257e409256c29aec05517037ff3647/22/apache/Dockerfile)
+-	[`22.2.2-fpm`, `22.2-fpm`, `22-fpm`, `fpm`, `stable-fpm`, `production-fpm`](https://github.com/nextcloud/docker/blob/dc24ba0fcb257e409256c29aec05517037ff3647/22/fpm/Dockerfile)
+-	[`22.2.2-fpm-alpine`, `22.2-fpm-alpine`, `22-fpm-alpine`, `fpm-alpine`, `stable-fpm-alpine`, `production-fpm-alpine`](https://github.com/nextcloud/docker/blob/dc24ba0fcb257e409256c29aec05517037ff3647/22/fpm-alpine/Dockerfile)
 
 # Quick reference (cont.)
 
