@@ -2,11 +2,10 @@
 
 Rocky Linux is a community-supported distribution derived from sources freely provided to the public by [Red Hat](ftp://ftp.redhat.com/pub/redhat/linux/enterprise/) for Red Hat Enterprise Linux (RHEL). As such, Rocky Linux aims to be functionally compatible with RHEL. The Rocky Linux Project mainly changes packages to remove upstream vendor branding and artwork. Rocky Linux is no-cost and free to redistribute. Each Rocky Linux version is maintained for up to 10 years (by means of security updates -- the duration of the support interval by Red Hat has varied over time with respect to Sources released). A new Rocky Linux version is released approximately every 2 years and each Rocky Linux version is periodically updated (roughly every 6 months) to support newer hardware. This results in a secure, low-maintenance, reliable, predictable, and reproducible Linux environment.
 
-Thank you for using Rocky Linux! We appreciate your feedback and welcome you to the community! Please join us on IRC
-on Libera.chat in #rockylinux or on our Mattermost instance at https://chat.rockylinux.org
+Thank you for using Rocky Linux! We appreciate your feedback and welcome you to the community! Please join us on IRC on Libera.chat in #rockylinux or on our Mattermost instance at https://chat.rockylinux.org
 
-* [docs.rockylinux.org](https://docs.rockylinux.org)
-* [wiki.rockylinux.org](https://wiki.rockylinux.org)
+-	[docs.rockylinux.org](https://docs.rockylinux.org)
+-	[wiki.rockylinux.org](https://wiki.rockylinux.org)
 
 %%LOGO%%
 
@@ -82,4 +81,10 @@ $ docker run -ti -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 80:80 local/r8-systemd-h
 ```
 
 This container is running with systemd in a limited context, with the cgroups filesystem mounted. There have been reports that if you're using an Ubuntu host, you will need to add `-v /tmp/$(mktemp -d):/run` in addition to the cgroups mount.
+
+[https://bugs.rockylinux.org](https://bugs.rockylinux.org) or [GitHub](%%GITHUB-REPO%%/issues)
+
+View [license information](https://www.rockylinux.org/legal/) for the software contained in this image.
+
+[The Rocky Enterprise Software Foundation](%%GITHUB-REPO%%)
 
