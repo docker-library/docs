@@ -83,10 +83,10 @@ This will start a new container `some-%%REPO%%` where the MariaDB instance uses 
 
 ### Configuration without a `cnf` file
 
-Many configuration options can be passed as flags to `mysqld`. This will give you the flexibility to customize the container without needing a `cnf` file. For example, if you want to change the default encoding and collation for all tables to use UTF-8 (`utf8mb4`) just run the following:
+Many configuration options can be passed as flags to `mysqld`. This will give you the flexibility to customize the container without needing a `cnf` file. For example, if you want to run on port 3808 just run the following:
 
 ```console
-$ docker run --name some-%%REPO%% -e MYSQL_ROOT_PASSWORD=my-secret-pw -d %%IMAGE%%:latest --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+$ docker run --name some-%%REPO%% -e MARIADB_ROOT_PASSWORD=my-secret-pw -d %%IMAGE%%:latest --port 3808
 ```
 
 If you would like to see a complete list of available options, just run:
