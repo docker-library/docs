@@ -240,3 +240,32 @@ $ docker run --name some-%%REPO%% -v /my/own/newdatadir:/var/lib/mysql -d %%IMAG
 ```
 
 For further information on Mariabackup, see the [Mariabackup Knowledge Base](https://mariadb.com/kb/en/mariabackup-overview/).
+
+## How to reset root and user passwords
+
+If you have an existing data directory and wish to reset the root and user passwords, and to create a database on which the user can fully modify, perform the following steps.
+
+First create a `passwordreset.sql` file:
+
+```text
+CREATE USER IF NOT EXISTS root@localhost IDENTIFIED BY 'thisismyrootpassword';
+SET PASSWORD FOR root@localhost = PASSWORD('thisismyrootpassword');
+GRANT ALL ON *.* TO root@localhost WITH GRANT OPTION;
+CREATE USER IF NOT EXISTS root@'%' IDENTIFIED BY 'thisismyrootpassword';
+SET PASSWORD FOR root@'%' = PASSWORD('thisismyrootpassword');
+GRANT ALL ON *.* TO root@'%' WITH GRANT OPTION;
+CREATE USER IF NOT EXISTS myuser@'%' IDENTIFIED BY 'thisismyuserpassword';
+SET PASSWORD FOR myuser@'%' = PASSWORD('thisismyuserpassword');
+CREATE DATABASE IF NOT EXISTS databasename;
+GRANT ALL ON databasename.* TO myuser@'%';
+```
+
+Adjust `myuser`, `databasename` and passwords as needed.
+
+Then:
+
+```console
+$ docker run --rm -v /my/own/datadir:/var/lib/mysql -v /my/own/passwordreset.sql:/passwordreset.sql:z %%IMAGE%%:latest --init-file=/passwordreset.sql
+```
+
+On restarting the MariaDB container on this `/my/own/datadir`, the `root` and `myuser` passwords will be reset.
