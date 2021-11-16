@@ -269,3 +269,71 @@ $ docker run --rm -v /my/own/datadir:/var/lib/mysql -v /my/own/passwordreset.sql
 ```
 
 On restarting the MariaDB container on this `/my/own/datadir`, the `root` and `myuser` passwords will be reset.
+
+## How to install MariaDB plugins
+
+MariaDB has many plugins, most are not enabled by default, some are in the %%IMAGE%% container, others need to be installed from additional packages.
+
+The following methods summarize the [MariaDB Blog article - Installing plugins in the MariaDB Docker Library Container](https://mariadb.org/installing-plugins-in-the-mariadb-docker-library-container/) on this topic.
+
+### Which plugins does the container contain?
+
+To see which plugins are available in the %%IMAGE%%:
+
+```console
+$ docker run --rm %%IMAGE%%:latest ls -C /usr/lib/mysql/plugin
+```
+
+### Enabling a plugin using flags
+
+Using the `--plugin-load-add` flag with the plugin name (can be repeated), the plugins will be loaded and ready when the container is started:
+
+For example enable the `simple\_password\_check` plugin:
+
+```console
+$ docker run --name some-%%REPO%% -e MARIADB_ROOT_PASSWORD=my-secret-pw --network=host -d %%IMAGE%%:latest --plugin-load-add=simple_password_check
+```
+
+### Enabling a plugin in the configuration files
+
+`plugin-load-add` can be used as a configuration option to load plugins. The example below load the [FederatedX Storage Engine](https://mariadb.com/kb/en/federatedx-storage-engine/).
+
+```console
+$ printf "[mariadb]\nplugin-load-add=ha_federatedx\n" > /my/custom/fexeratedx.conf
+$ docker run --name some-%%REPO%% -v /my/custom:/etc/mysql/conf.d -e MARIADB_ROOT_PASSWORD=my-secret-pw -d %%IMAGE%%:latest
+```
+
+### Install a plugin using SQL in /docker-entrypoint-initdb.d
+
+`[INSTALL SONAME](https://mariadb.com/kb/en/install-soname/)` can be used to install a plugin as part of the database initialization.
+
+Create the SQL file used in initialization:
+
+```console
+$ echo 'INSTALL SONAME "disks";' > my_initdb/disks.sql
+```
+
+In this case the `my\_initdb` is a `/docker-entrypoint-initdb.d` directory per "Initializing a fresh instance" section above.
+
+### Identifing additional plugins in additional packages
+
+A number of plugins are in separate packages to reduce their installation size. The package names of MariaDB created plugins can be determined using the following command:
+
+```console
+$ docker run --rm %%IMAGE%%:latest sh -c 'apt-get update > /dev/null && apt-cache search mariadb-plugin'
+```
+
+### Creating a image with plugins from additional packages
+
+A new image needs to be created when using additional packages. The %%IMAGE%% image can be used as a base however:
+
+In the following the [CONNECT Storage Engine](https://mariadb.com/kb/en/connect/) is installed:
+
+```dockerfile
+FROM %%IMAGE%%:latest
+RUN apt-get update && \
+    apt-get install mariadb-plugin-connect -y && \
+    rm -rf /var/lib/apt/lists/*
+```
+
+Installing plugins from packages creates a configuration file in the directory `/etc/mysql/mariadb.conf.d/` that loads the plugin on startup.
