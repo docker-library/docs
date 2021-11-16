@@ -190,3 +190,53 @@ For restoring data. You can use the `docker exec` command with the `-i` flag, si
 ```console
 $ docker exec -i some-%%REPO%% sh -c 'exec mysql -uroot -p"$MARIADB_ROOT_PASSWORD"' < /some/path/on/your/host/all-databases.sql
 ```
+
+## Creating backups with Mariabackup
+
+To perform a backup using Mariabackup, an additional volume for the backup needs to be included when the container is started like this:
+
+```console
+$ docker run --name some-%%REPO%% -v /my/own/datadir:/var/lib/mysql -v /my/own/backupdir:/backup -e MARIADB_ROOT_PASSWORD=my-secret-pw -d %%IMAGE%%:latest
+```
+
+Mariabackup will run as the `mysql` user in the container, so the permissions on `/backup` will need to ensure that it can be written to by this user:
+
+```console
+$ docker exec some-%%REPO%% chown mysql: /backup
+```
+
+To perform the backup:
+
+```console
+$ docker exec --user mysql some-%%REPO%% mariabackup --backup --target-dir=/backup --user=root --password=my-secret-pw
+```
+
+If you wish to take a copy of the `/backup` you can do so without stopping the container or getting an inconsistent backup.
+
+```console
+$ docker exec --user mysql some-%%REPO%% tar -cf - /backup | xz > backup.tar.xz
+```
+
+## Restore backups with Mariabackup
+
+These steps restore the backup made with Mariabackup.
+
+At some point before doing the restore, the backup needs to be prepared. Here `/my/own/backupdir` contains a previous backup. Perform the prepare like this:
+
+```console
+$ docker run --user mysql --rm -v /my/own/backupdir:/backup %%IMAGE%%:latest mariabackup --prepare --target-dir=/backup
+```
+
+Now that the image is prepared, start the container with both the data and the backup volumes and restore the backup:
+
+```console
+$ docker run --user mysql --rm -v /my/own/newdatadir:/var/lib/mysql -v /my/own/backupdir:/backup %%IMAGE%%:latest mariabackup --copy-back --target-dir=/backup
+```
+
+With `/my/own/newdatadir` containing the restored backup, start normally as this is an initialized data directory:
+
+```console
+$ docker run --name some-%%REPO%% -v /my/own/newdatadir:/var/lib/mysql -d %%IMAGE%%:latest
+```
+
+For further information on Mariabackup, see the [Mariabackup Knowledge Base](https://mariadb.com/kb/en/mariabackup-overview/).
