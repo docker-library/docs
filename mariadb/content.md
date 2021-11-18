@@ -299,7 +299,7 @@ $ docker run --name some-%%REPO%% -e MARIADB_ROOT_PASSWORD=my-secret-pw --networ
 `plugin-load-add` can be used as a configuration option to load plugins. The example below load the [FederatedX Storage Engine](https://mariadb.com/kb/en/federatedx-storage-engine/).
 
 ```console
-$ printf "[mariadb]\nplugin-load-add=ha_federatedx\n" > /my/custom/fexeratedx.conf
+$ printf "[mariadb]\nplugin-load-add=ha_federatedx\n" > /my/custom/federatedx.conf
 $ docker run --name some-%%REPO%% -v /my/custom:/etc/mysql/conf.d -e MARIADB_ROOT_PASSWORD=my-secret-pw -d %%IMAGE%%:latest
 ```
 
