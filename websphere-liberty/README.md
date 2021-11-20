@@ -47,7 +47,7 @@ WARNING:
 	[https://github.com/WASdev/ci.docker/issues](https://github.com/WASdev/ci.docker/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/websphere-liberty/), [`i386`](https://hub.docker.com/r/i386/websphere-liberty/), [`ppc64le`](https://hub.docker.com/r/ppc64le/websphere-liberty/), [`s390x`](https://hub.docker.com/r/s390x/websphere-liberty/)
+	[`amd64`](https://hub.docker.com/r/amd64/websphere-liberty/), [`ppc64le`](https://hub.docker.com/r/ppc64le/websphere-liberty/), [`s390x`](https://hub.docker.com/r/s390x/websphere-liberty/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/websphere-liberty/` directory](https://github.com/docker-library/repo-info/blob/master/repos/websphere-liberty) ([history](https://github.com/docker-library/repo-info/commits/master/repos/websphere-liberty))  
