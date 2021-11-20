@@ -25,7 +25,7 @@ WARNING:
 # Supported tags and respective `Dockerfile` links
 
 -	[`3.7`, `3.7.15`](https://github.com/arangodb/arangodb-docker/blob/d46dfa818833436aa89907a045c803de84c7868a/alpine/3.7.15/Dockerfile)
--	[`3.8`, `3.8.2`, `latest`](https://github.com/arangodb/arangodb-docker/blob/d46dfa818833436aa89907a045c803de84c7868a/alpine/3.8.2/Dockerfile)
+-	[`3.8`, `3.8.3`, `latest`](https://github.com/arangodb/arangodb-docker/blob/1dc6491a317221b03622183f7e0a462c718f3e0e/alpine/3.8.3/Dockerfile)
 
 # Quick reference (cont.)
 
