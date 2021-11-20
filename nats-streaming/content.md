@@ -1,9 +1,5 @@
 # [NATS Streaming](https://nats.io): A high-performance cloud native messaging streaming system.
 
-# **WARNING:** Deprecation Notice
-
-The NATS Streaming Server is being deprecated. Critical bug fixes and security fixes will be applied until June of 2023. NATS enabled applications requiring persistence should use [JetStream](https://docs.nats.io/jetstream/jetstream).
-
 %%LOGO%%
 
 `nats-streaming` is a high performance streaming server for the NATS Messaging System.
