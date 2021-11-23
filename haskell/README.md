@@ -24,7 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`9.0.1-buster`, `9.0-buster`, `9-buster`, `buster`, `9.0.1`, `9.0`, `9`, `latest`](https://github.com/haskell/docker-haskell/blob/f08ade43f48981b87505fbecca852194954fa61b/9.0/buster/Dockerfile)
+-	[`9.2.1-buster`, `9.2-buster`, `9-buster`, `buster`, `9.2.1`, `9.2`, `9`, `latest`](https://github.com/haskell/docker-haskell/blob/71b980bfedb718c656ab6152998da8f500202469/9.2/buster/Dockerfile)
+-	[`9.0.1-buster`, `9.0-buster`, `9.0.1`, `9.0`](https://github.com/haskell/docker-haskell/blob/f08ade43f48981b87505fbecca852194954fa61b/9.0/buster/Dockerfile)
 -	[`8.10.7-buster`, `8.10-buster`, `8-buster`, `8.10.7`, `8.10`, `8`](https://github.com/haskell/docker-haskell/blob/f08ade43f48981b87505fbecca852194954fa61b/8.10/buster/Dockerfile)
 
 # Quick reference (cont.)
