@@ -6,8 +6,10 @@ The images in this repository contain OpenJDK binaries that are built by IBM Sem
 
 IBM Semeru Runtimes is available in two editions with different licenses:
 
-    IBM Semeru Runtime Open Edition has an open source license (GPLv2+Classpath extension).
-    IBM Semeru Runtime™ Certified Edition has an IBM license (International License Agreement for Non-Warranted Programs) and is a Java Platform, Standard Edition compatible implementation.
+```editions
+IBM Semeru Runtime Open Edition has an open source license (GPLv2+Classpath extension).
+IBM Semeru Runtime™ Certified Edition has an IBM license (International License Agreement for Non-Warranted Programs) and is a Java Platform, Standard Edition compatible implementation.
+```
 
 # How to use this Image
 
