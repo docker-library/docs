@@ -320,7 +320,7 @@ In this case the `my\_initdb` is a `/docker-entrypoint-initdb.d` directory per "
 A number of plugins are in separate packages to reduce their installation size. The package names of MariaDB created plugins can be determined using the following command:
 
 ```console
-$ docker run --rm %%IMAGE%%:latest sh -c 'apt-get update > /dev/null && apt-cache search mariadb-plugin'
+$ docker run --rm %%IMAGE%%:latest sh -c 'apt-get update -qq && apt-cache search mariadb-plugin'
 ```
 
 ### Creating a image with plugins from additional packages
