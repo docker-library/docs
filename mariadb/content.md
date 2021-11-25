@@ -83,10 +83,10 @@ This will start a new container `some-%%REPO%%` where the MariaDB instance uses 
 
 ### Configuration without a `cnf` file
 
-Many configuration options can be passed as flags to `mysqld`. This will give you the flexibility to customize the container without needing a `cnf` file. For example, if you want to change the default encoding and collation for all tables to use UTF-8 (`utf8mb4`) just run the following:
+Many configuration options can be passed as flags to `mysqld`. This will give you the flexibility to customize the container without needing a `cnf` file. For example, if you want to run on port 3808 just run the following:
 
 ```console
-$ docker run --name some-%%REPO%% -e MYSQL_ROOT_PASSWORD=my-secret-pw -d %%IMAGE%%:latest --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+$ docker run --name some-%%REPO%% -e MARIADB_ROOT_PASSWORD=my-secret-pw -d %%IMAGE%%:latest --port 3808
 ```
 
 If you would like to see a complete list of available options, just run:
@@ -145,7 +145,7 @@ Currently, this is only supported for `MARIADB_ROOT_PASSWORD`, `MARIADB_ROOT_HOS
 
 # Initializing a fresh instance
 
-When a container is started for the first time, a new database with the specified name will be created and initialized with the provided configuration variables. Furthermore, it will execute files with extensions `.sh`, `.sql`, `.sql.gz`, and `.sql.xz` that are found in `/docker-entrypoint-initdb.d`. Files will be executed in alphabetical order. `.sh` files without file execute permission are sourced rather than executed. You can easily populate your `%%IMAGE%%` services by [mounting a SQL dump into that directory](https://docs.docker.com/engine/tutorials/dockervolumes/#mount-a-host-file-as-a-data-volume) and provide [custom images](https://docs.docker.com/reference/builder/) with contributed data. SQL files will be imported by default to the database specified by the `MARIADB_DATABASE` / `MYSQL_DATABASE` variable.
+When a container is started for the first time, a new database with the specified name will be created and initialized with the provided configuration variables. Furthermore, it will execute files with extensions `.sh`, `.sql`, `.sql.gz`, `.sql.xz` and `.sql.zst` that are found in `/docker-entrypoint-initdb.d`. Files will be executed in alphabetical order. `.sh` files without file execute permission are sourced rather than executed. You can easily populate your `%%IMAGE%%` services by [mounting a SQL dump into that directory](https://docs.docker.com/engine/tutorials/dockervolumes/#mount-a-host-file-as-a-data-volume) and provide [custom images](https://docs.docker.com/reference/builder/) with contributed data. SQL files will be imported by default to the database specified by the `MARIADB_DATABASE` / `MYSQL_DATABASE` variable.
 
 # Caveats
 
@@ -190,3 +190,150 @@ For restoring data. You can use the `docker exec` command with the `-i` flag, si
 ```console
 $ docker exec -i some-%%REPO%% sh -c 'exec mysql -uroot -p"$MARIADB_ROOT_PASSWORD"' < /some/path/on/your/host/all-databases.sql
 ```
+
+## Creating backups with Mariabackup
+
+To perform a backup using Mariabackup, an additional volume for the backup needs to be included when the container is started like this:
+
+```console
+$ docker run --name some-%%REPO%% -v /my/own/datadir:/var/lib/mysql -v /my/own/backupdir:/backup -e MARIADB_ROOT_PASSWORD=my-secret-pw -d %%IMAGE%%:latest
+```
+
+Mariabackup will run as the `mysql` user in the container, so the permissions on `/backup` will need to ensure that it can be written to by this user:
+
+```console
+$ docker exec some-%%REPO%% chown mysql: /backup
+```
+
+To perform the backup:
+
+```console
+$ docker exec --user mysql some-%%REPO%% mariabackup --backup --target-dir=/backup --user=root --password=my-secret-pw
+```
+
+If you wish to take a copy of the `/backup` you can do so without stopping the container or getting an inconsistent backup.
+
+```console
+$ docker exec --user mysql some-%%REPO%% tar --create --xz --file - /backup > backup.tar.xz
+```
+
+## Restore backups with Mariabackup
+
+These steps restore the backup made with Mariabackup.
+
+At some point before doing the restore, the backup needs to be prepared. Here `/my/own/backupdir` contains a previous backup. Perform the prepare like this:
+
+```console
+$ docker run --user mysql --rm -v /my/own/backupdir:/backup %%IMAGE%%:latest mariabackup --prepare --target-dir=/backup
+```
+
+Now that the image is prepared, start the container with both the data and the backup volumes and restore the backup:
+
+```console
+$ docker run --user mysql --rm -v /my/own/newdatadir:/var/lib/mysql -v /my/own/backupdir:/backup %%IMAGE%%:latest mariabackup --copy-back --target-dir=/backup
+```
+
+With `/my/own/newdatadir` containing the restored backup, start normally as this is an initialized data directory:
+
+```console
+$ docker run --name some-%%REPO%% -v /my/own/newdatadir:/var/lib/mysql -d %%IMAGE%%:latest
+```
+
+For further information on Mariabackup, see the [Mariabackup Knowledge Base](https://mariadb.com/kb/en/mariabackup-overview/).
+
+## How to reset root and user passwords
+
+If you have an existing data directory and wish to reset the root and user passwords, and to create a database on which the user can fully modify, perform the following steps.
+
+First create a `passwordreset.sql` file:
+
+```text
+CREATE USER IF NOT EXISTS root@localhost IDENTIFIED BY 'thisismyrootpassword';
+SET PASSWORD FOR root@localhost = PASSWORD('thisismyrootpassword');
+GRANT ALL ON *.* TO root@localhost WITH GRANT OPTION;
+CREATE USER IF NOT EXISTS root@'%' IDENTIFIED BY 'thisismyrootpassword';
+SET PASSWORD FOR root@'%' = PASSWORD('thisismyrootpassword');
+GRANT ALL ON *.* TO root@'%' WITH GRANT OPTION;
+CREATE USER IF NOT EXISTS myuser@'%' IDENTIFIED BY 'thisismyuserpassword';
+SET PASSWORD FOR myuser@'%' = PASSWORD('thisismyuserpassword');
+CREATE DATABASE IF NOT EXISTS databasename;
+GRANT ALL ON databasename.* TO myuser@'%';
+```
+
+Adjust `myuser`, `databasename` and passwords as needed.
+
+Then:
+
+```console
+$ docker run --rm -v /my/own/datadir:/var/lib/mysql -v /my/own/passwordreset.sql:/passwordreset.sql:z %%IMAGE%%:latest --init-file=/passwordreset.sql
+```
+
+On restarting the MariaDB container on this `/my/own/datadir`, the `root` and `myuser` passwords will be reset.
+
+## How to install MariaDB plugins
+
+MariaDB has many plugins, most are not enabled by default, some are in the %%IMAGE%% container, others need to be installed from additional packages.
+
+The following methods summarize the [MariaDB Blog article - Installing plugins in the MariaDB Docker Library Container](https://mariadb.org/installing-plugins-in-the-mariadb-docker-library-container/) on this topic.
+
+### Which plugins does the container contain?
+
+To see which plugins are available in the %%IMAGE%%:
+
+```console
+$ docker run --rm %%IMAGE%%:latest ls -C /usr/lib/mysql/plugin
+```
+
+### Enabling a plugin using flags
+
+Using the `--plugin-load-add` flag with the plugin name (can be repeated), the plugins will be loaded and ready when the container is started:
+
+For example enable the `simple\_password\_check` plugin:
+
+```console
+$ docker run --name some-%%REPO%% -e MARIADB_ROOT_PASSWORD=my-secret-pw --network=host -d %%IMAGE%%:latest --plugin-load-add=simple_password_check
+```
+
+### Enabling a plugin in the configuration files
+
+`plugin-load-add` can be used as a configuration option to load plugins. The example below load the [FederatedX Storage Engine](https://mariadb.com/kb/en/federatedx-storage-engine/).
+
+```console
+$ printf "[mariadb]\nplugin-load-add=ha_federatedx\n" > /my/custom/federatedx.conf
+$ docker run --name some-%%REPO%% -v /my/custom:/etc/mysql/conf.d -e MARIADB_ROOT_PASSWORD=my-secret-pw -d %%IMAGE%%:latest
+```
+
+### Install a plugin using SQL in /docker-entrypoint-initdb.d
+
+[`INSTALL SONAME`](https://mariadb.com/kb/en/install-soname/) can be used to install a plugin as part of the database initialization.
+
+Create the SQL file used in initialization:
+
+```console
+$ echo 'INSTALL SONAME "disks";' > my_initdb/disks.sql
+```
+
+In this case the `my\_initdb` is a `/docker-entrypoint-initdb.d` directory per "Initializing a fresh instance" section above.
+
+### Identifing additional plugins in additional packages
+
+A number of plugins are in separate packages to reduce their installation size. The package names of MariaDB created plugins can be determined using the following command:
+
+```console
+$ docker run --rm %%IMAGE%%:latest sh -c 'apt-get update -qq && apt-cache search mariadb-plugin'
+```
+
+### Creating a image with plugins from additional packages
+
+A new image needs to be created when using additional packages. The %%IMAGE%% image can be used as a base however:
+
+In the following the [CONNECT Storage Engine](https://mariadb.com/kb/en/connect/) is installed:
+
+```dockerfile
+FROM %%IMAGE%%:latest
+RUN apt-get update && \
+    apt-get install mariadb-plugin-connect -y && \
+    rm -rf /var/lib/apt/lists/*
+```
+
+Installing plugins from packages creates a configuration file in the directory `/etc/mysql/mariadb.conf.d/` that loads the plugin on startup.
