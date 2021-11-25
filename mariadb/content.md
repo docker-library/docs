@@ -305,7 +305,7 @@ $ docker run --name some-%%REPO%% -v /my/custom:/etc/mysql/conf.d -e MARIADB_ROO
 
 ### Install a plugin using SQL in /docker-entrypoint-initdb.d
 
-`[INSTALL SONAME](https://mariadb.com/kb/en/install-soname/)` can be used to install a plugin as part of the database initialization.
+[`INSTALL SONAME`](https://mariadb.com/kb/en/install-soname/) can be used to install a plugin as part of the database initialization.
 
 Create the SQL file used in initialization:
 
