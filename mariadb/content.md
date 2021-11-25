@@ -214,7 +214,7 @@ $ docker exec --user mysql some-%%REPO%% mariabackup --backup --target-dir=/back
 If you wish to take a copy of the `/backup` you can do so without stopping the container or getting an inconsistent backup.
 
 ```console
-$ docker exec --user mysql some-%%REPO%% tar -cf - /backup | xz > backup.tar.xz
+$ docker exec --user mysql some-%%REPO%% tar --create --xz --file - /backup > backup.tar.xz
 ```
 
 ## Restore backups with Mariabackup
