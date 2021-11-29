@@ -24,12 +24,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2021.09-apache`, `apache`, `stable-apache`, `2021.09`, `latest`, `stable`](https://github.com/friendica/docker/blob/51dc7021f0f377a425de24ca32738b58f6867e0c/2021.09/apache/Dockerfile)
--	[`2021.09-fpm`, `fpm`, `stable-fpm`](https://github.com/friendica/docker/blob/51dc7021f0f377a425de24ca32738b58f6867e0c/2021.09/fpm/Dockerfile)
+-	[`2021.09-apache`, `apache`, `stable-apache`, `2021.09`, `latest`, `stable`](https://github.com/friendica/docker/blob/d4e093ff0623994154320e6b4d9ea906ec5a580d/2021.09/apache/Dockerfile)
+-	[`2021.09-fpm`, `fpm`, `stable-fpm`](https://github.com/friendica/docker/blob/d4e093ff0623994154320e6b4d9ea906ec5a580d/2021.09/fpm/Dockerfile)
 -	[`2021.09-fpm-alpine`, `fpm-alpine`, `stable-fpm-alpine`](https://github.com/friendica/docker/blob/51dc7021f0f377a425de24ca32738b58f6867e0c/2021.09/fpm-alpine/Dockerfile)
--	[`2021.12-dev-apache`, `dev-apache`, `2021.12-dev`, `dev`](https://github.com/friendica/docker/blob/8aa05541382295d09f2b4debf5c3d97e233f8599/2021.12-dev/apache/Dockerfile)
--	[`2021.12-dev-fpm`, `dev-fpm`](https://github.com/friendica/docker/blob/8aa05541382295d09f2b4debf5c3d97e233f8599/2021.12-dev/fpm/Dockerfile)
+-	[`2021.12-dev-apache`, `dev-apache`, `2021.12-dev`, `dev`](https://github.com/friendica/docker/blob/d4e093ff0623994154320e6b4d9ea906ec5a580d/2021.12-dev/apache/Dockerfile)
+-	[`2021.12-dev-fpm`, `dev-fpm`](https://github.com/friendica/docker/blob/d4e093ff0623994154320e6b4d9ea906ec5a580d/2021.12-dev/fpm/Dockerfile)
 -	[`2021.12-dev-fpm-alpine`, `dev-fpm-alpine`](https://github.com/friendica/docker/blob/8aa05541382295d09f2b4debf5c3d97e233f8599/2021.12-dev/fpm-alpine/Dockerfile)
+-	[`2021.12-rc-apache`, `rc-apache`, `2021.12-rc`, `rc`](https://github.com/friendica/docker/blob/d4e093ff0623994154320e6b4d9ea906ec5a580d/2021.12-rc/apache/Dockerfile)
+-	[`2021.12-rc-fpm`, `rc-fpm`](https://github.com/friendica/docker/blob/d4e093ff0623994154320e6b4d9ea906ec5a580d/2021.12-rc/fpm/Dockerfile)
+-	[`2021.12-rc-fpm-alpine`, `rc-fpm-alpine`](https://github.com/friendica/docker/blob/d4e093ff0623994154320e6b4d9ea906ec5a580d/2021.12-rc/fpm-alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -37,7 +40,7 @@ WARNING:
 	[https://github.com/friendica/docker/issues](https://github.com/friendica/docker/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/friendica/), [`arm32v5`](https://hub.docker.com/r/arm32v5/friendica/), [`arm32v6`](https://hub.docker.com/r/arm32v6/friendica/), [`arm32v7`](https://hub.docker.com/r/arm32v7/friendica/), [`arm64v8`](https://hub.docker.com/r/arm64v8/friendica/), [`i386`](https://hub.docker.com/r/i386/friendica/), [`ppc64le`](https://hub.docker.com/r/ppc64le/friendica/), [`s390x`](https://hub.docker.com/r/s390x/friendica/)
+	[`amd64`](https://hub.docker.com/r/amd64/friendica/), [`arm32v5`](https://hub.docker.com/r/arm32v5/friendica/), [`arm32v6`](https://hub.docker.com/r/arm32v6/friendica/), [`arm32v7`](https://hub.docker.com/r/arm32v7/friendica/), [`arm64v8`](https://hub.docker.com/r/arm64v8/friendica/), [`i386`](https://hub.docker.com/r/i386/friendica/), [`mips64le`](https://hub.docker.com/r/mips64le/friendica/), [`ppc64le`](https://hub.docker.com/r/ppc64le/friendica/), [`s390x`](https://hub.docker.com/r/s390x/friendica/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/friendica/` directory](https://github.com/docker-library/repo-info/blob/master/repos/friendica) ([history](https://github.com/docker-library/repo-info/commits/master/repos/friendica))  
