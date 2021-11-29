@@ -67,7 +67,7 @@ By default, the containers will use a cache size of 100MB, which is usually a bi
 $ docker run --tmpfs /var/lib/varnish:exec -e VARNISH_SIZE=2G %%IMAGE%%
 ```
 
-Additionally, you can add arguments to `docker run` affter `%%IMAGE%%`, if the first one starts with a `-`, they will be appendend to the [default command](https://github.com/varnish/docker-varnish/blob/master/docker-varnish-entrypoint#L8):
+Additionally, you can add arguments to `docker run` after `%%IMAGE%%`, if the first one starts with a `-`, they will be appendend to the [default command](https://github.com/varnish/docker-varnish/blob/master/docker-varnish-entrypoint#L8):
 
 ```console
 # extend the default keep period
