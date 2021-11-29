@@ -10,7 +10,7 @@ We recommend using small runtime images that leverage Dart's support for ahead-o
 
 ### Creating a Dart server app
 
-After installing the Dart SDK, use the `dart` command to create a new server app:
+After [installing](https://dart.dev/get-dart) the Dart SDK, version 2.14 or later, use the `dart` command to create a new server app:
 
 ```shell
 $ dart create -t server-shelf myserver
