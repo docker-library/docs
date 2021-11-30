@@ -25,12 +25,12 @@ WARNING:
 # Supported tags and respective `Dockerfile` links
 
 -	[`6.2.6`, `6.2`, `6`, `latest`, `6.2.6-bullseye`, `6.2-bullseye`, `6-bullseye`, `bullseye`](https://github.com/docker-library/redis/blob/a04a6df0a45894e1a630db4e84e0c12c7bcf326a/6.2/Dockerfile)
--	[`6.2.6-alpine`, `6.2-alpine`, `6-alpine`, `alpine`, `6.2.6-alpine3.14`, `6.2-alpine3.14`, `6-alpine3.14`, `alpine3.14`](https://github.com/docker-library/redis/blob/a04a6df0a45894e1a630db4e84e0c12c7bcf326a/6.2/alpine/Dockerfile)
+-	[`6.2.6-alpine`, `6.2-alpine`, `6-alpine`, `alpine`, `6.2.6-alpine3.15`, `6.2-alpine3.15`, `6-alpine3.15`, `alpine3.15`](https://github.com/docker-library/redis/blob/84c36a0967bcfa8a9c39cb899464785c5f2cf5ef/6.2/alpine/Dockerfile)
 -	[`6.0.16`, `6.0`, `6.0.16-bullseye`, `6.0-bullseye`](https://github.com/docker-library/redis/blob/a04a6df0a45894e1a630db4e84e0c12c7bcf326a/6.0/Dockerfile)
--	[`6.0.16-alpine`, `6.0-alpine`, `6.0.16-alpine3.14`, `6.0-alpine3.14`](https://github.com/docker-library/redis/blob/a04a6df0a45894e1a630db4e84e0c12c7bcf326a/6.0/alpine/Dockerfile)
+-	[`6.0.16-alpine`, `6.0-alpine`, `6.0.16-alpine3.15`, `6.0-alpine3.15`](https://github.com/docker-library/redis/blob/84c36a0967bcfa8a9c39cb899464785c5f2cf5ef/6.0/alpine/Dockerfile)
 -	[`5.0.14`, `5.0`, `5`, `5.0.14-bullseye`, `5.0-bullseye`, `5-bullseye`](https://github.com/docker-library/redis/blob/a04a6df0a45894e1a630db4e84e0c12c7bcf326a/5/Dockerfile)
 -	[`5.0.14-32bit`, `5.0-32bit`, `5-32bit`, `5.0.14-32bit-bullseye`, `5.0-32bit-bullseye`, `5-32bit-bullseye`](https://github.com/docker-library/redis/blob/a04a6df0a45894e1a630db4e84e0c12c7bcf326a/5/32bit/Dockerfile)
--	[`5.0.14-alpine`, `5.0-alpine`, `5-alpine`, `5.0.14-alpine3.14`, `5.0-alpine3.14`, `5-alpine3.14`](https://github.com/docker-library/redis/blob/a04a6df0a45894e1a630db4e84e0c12c7bcf326a/5/alpine/Dockerfile)
+-	[`5.0.14-alpine`, `5.0-alpine`, `5-alpine`, `5.0.14-alpine3.15`, `5.0-alpine3.15`, `5-alpine3.15`](https://github.com/docker-library/redis/blob/84c36a0967bcfa8a9c39cb899464785c5f2cf5ef/5/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
