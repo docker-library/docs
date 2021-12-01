@@ -81,10 +81,3 @@ $ docker run -ti -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 80:80 local/r8-systemd-h
 ```
 
 This container is running with systemd in a limited context, with the cgroups filesystem mounted. There have been reports that if you're using an Ubuntu host, you will need to add `-v /tmp/$(mktemp -d):/run` in addition to the cgroups mount.
-
-[https://bugs.rockylinux.org](https://bugs.rockylinux.org) or [GitHub](%%GITHUB-REPO%%/issues)
-
-View [license information](https://www.rockylinux.org/legal/) for the software contained in this image.
-
-[The Rocky Enterprise Software Foundation](%%GITHUB-REPO%%)
-
