@@ -90,7 +90,7 @@ $ docker run %%IMAGE%% varnishd -a :8080 -b 127.0.0.1:8181 -t 600 -p feature=+ht
 ## Exposing the port
 
 ```console
-+$ docker run --name my-running-varnish --tmpfs /var/lib/varnish:exec -d -p 8080:80 my-varnish
+$ docker run --name my-running-varnish --tmpfs /var/lib/varnish:exec -d -p 8080:80 my-varnish
 ```
 
 Then you can hit `http://localhost:8080` or `http://host-ip:8080` in your browser.
