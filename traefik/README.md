@@ -24,11 +24,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`v2.5.4-windowsservercore-1809`, `2.5.4-windowsservercore-1809`, `v2.5-windowsservercore-1809`, `2.5-windowsservercore-1809`, `brie-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/traefik/traefik-library-image/blob/f9d18d1eebcaf805d02bd683f771bcaebb643c44/windows/1809/Dockerfile)
--	[`v2.5.4`, `2.5.4`, `v2.5`, `2.5`, `brie`, `latest`](https://github.com/traefik/traefik-library-image/blob/f9d18d1eebcaf805d02bd683f771bcaebb643c44/alpine/Dockerfile)
--	[`v1.7.33-windowsservercore-1809`, `1.7.33-windowsservercore-1809`, `v1.7-windowsservercore-1809`, `1.7-windowsservercore-1809`, `maroilles-windowsservercore-1809`](https://github.com/traefik/traefik-library-image/blob/87f6cff7d81f0a10c093b0c8f73a3547f1cc33df/windows/1809/Dockerfile)
--	[`v1.7.33-alpine`, `1.7.33-alpine`, `v1.7-alpine`, `1.7-alpine`, `maroilles-alpine`](https://github.com/traefik/traefik-library-image/blob/87f6cff7d81f0a10c093b0c8f73a3547f1cc33df/alpine/Dockerfile)
--	[`v1.7.33`, `1.7.33`, `v1.7`, `1.7`, `maroilles`](https://github.com/traefik/traefik-library-image/blob/87f6cff7d81f0a10c093b0c8f73a3547f1cc33df/scratch/Dockerfile)
+-	[`v2.5.5-windowsservercore-1809`, `2.5.5-windowsservercore-1809`, `v2.5-windowsservercore-1809`, `2.5-windowsservercore-1809`, `brie-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/traefik/traefik-library-image/blob/9bd4bc631d219eef3cf9603c34af1cd298eb8f88/windows/1809/Dockerfile)
+-	[`v2.5.5`, `2.5.5`, `v2.5`, `2.5`, `brie`, `latest`](https://github.com/traefik/traefik-library-image/blob/9bd4bc631d219eef3cf9603c34af1cd298eb8f88/alpine/Dockerfile)
+-	[`v1.7.34-windowsservercore-1809`, `1.7.34-windowsservercore-1809`, `v1.7-windowsservercore-1809`, `1.7-windowsservercore-1809`, `maroilles-windowsservercore-1809`](https://github.com/traefik/traefik-library-image/blob/4434758cf14bbd1ec9511b3f2a37b0a6ce846db6/windows/1809/Dockerfile)
+-	[`v1.7.34-alpine`, `1.7.34-alpine`, `v1.7-alpine`, `1.7-alpine`, `maroilles-alpine`](https://github.com/traefik/traefik-library-image/blob/4434758cf14bbd1ec9511b3f2a37b0a6ce846db6/alpine/Dockerfile)
+-	[`v1.7.34`, `1.7.34`, `v1.7`, `1.7`, `maroilles`](https://github.com/traefik/traefik-library-image/blob/4434758cf14bbd1ec9511b3f2a37b0a6ce846db6/scratch/Dockerfile)
 
 # Quick reference (cont.)
 

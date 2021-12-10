@@ -24,6 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
+-	[`bookworm-curl`, `testing-curl`](https://github.com/docker-library/buildpack-deps/blob/84e7e46026131a108a6480e5ed2969e8acf2d4e2/debian/bookworm/curl/Dockerfile)
+-	[`bookworm-scm`, `testing-scm`](https://github.com/docker-library/buildpack-deps/blob/84e7e46026131a108a6480e5ed2969e8acf2d4e2/debian/bookworm/scm/Dockerfile)
+-	[`bookworm`, `testing`](https://github.com/docker-library/buildpack-deps/blob/84e7e46026131a108a6480e5ed2969e8acf2d4e2/debian/bookworm/Dockerfile)
 -	[`bullseye-curl`, `stable-curl`, `curl`](https://github.com/docker-library/buildpack-deps/blob/98a5ab81d47a106c458cdf90733df0ee8beea06c/debian/bullseye/curl/Dockerfile)
 -	[`bullseye-scm`, `stable-scm`, `scm`](https://github.com/docker-library/buildpack-deps/blob/65d69325ad741cea6dee20781c1faaab2e003d87/debian/bullseye/scm/Dockerfile)
 -	[`bullseye`, `stable`, `latest`](https://github.com/docker-library/buildpack-deps/blob/65d69325ad741cea6dee20781c1faaab2e003d87/debian/bullseye/Dockerfile)
