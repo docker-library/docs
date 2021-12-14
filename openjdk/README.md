@@ -28,6 +28,16 @@ WARNING:
 
 ## Simple Tags
 
+-	[`19-ea-1-jdk-oraclelinux8`, `19-ea-1-oraclelinux8`, `19-ea-jdk-oraclelinux8`, `19-ea-oraclelinux8`, `19-jdk-oraclelinux8`, `19-oraclelinux8`, `19-ea-1-jdk-oracle`, `19-ea-1-oracle`, `19-ea-jdk-oracle`, `19-ea-oracle`, `19-jdk-oracle`, `19-oracle`](https://github.com/docker-library/openjdk/blob/2836fabaca5c7e48ae71d3c8ec2e00bbcfb36f4e/19/jdk/oraclelinux8/Dockerfile)
+-	[`19-ea-1-jdk-oraclelinux7`, `19-ea-1-oraclelinux7`, `19-ea-jdk-oraclelinux7`, `19-ea-oraclelinux7`, `19-jdk-oraclelinux7`, `19-oraclelinux7`](https://github.com/docker-library/openjdk/blob/2836fabaca5c7e48ae71d3c8ec2e00bbcfb36f4e/19/jdk/oraclelinux7/Dockerfile)
+-	[`19-ea-1-jdk-bullseye`, `19-ea-1-bullseye`, `19-ea-jdk-bullseye`, `19-ea-bullseye`, `19-jdk-bullseye`, `19-bullseye`](https://github.com/docker-library/openjdk/blob/2836fabaca5c7e48ae71d3c8ec2e00bbcfb36f4e/19/jdk/bullseye/Dockerfile)
+-	[`19-ea-1-jdk-slim-bullseye`, `19-ea-1-slim-bullseye`, `19-ea-jdk-slim-bullseye`, `19-ea-slim-bullseye`, `19-jdk-slim-bullseye`, `19-slim-bullseye`, `19-ea-1-jdk-slim`, `19-ea-1-slim`, `19-ea-jdk-slim`, `19-ea-slim`, `19-jdk-slim`, `19-slim`](https://github.com/docker-library/openjdk/blob/2836fabaca5c7e48ae71d3c8ec2e00bbcfb36f4e/19/jdk/slim-bullseye/Dockerfile)
+-	[`19-ea-1-jdk-buster`, `19-ea-1-buster`, `19-ea-jdk-buster`, `19-ea-buster`, `19-jdk-buster`, `19-buster`](https://github.com/docker-library/openjdk/blob/2836fabaca5c7e48ae71d3c8ec2e00bbcfb36f4e/19/jdk/buster/Dockerfile)
+-	[`19-ea-1-jdk-slim-buster`, `19-ea-1-slim-buster`, `19-ea-jdk-slim-buster`, `19-ea-slim-buster`, `19-jdk-slim-buster`, `19-slim-buster`](https://github.com/docker-library/openjdk/blob/2836fabaca5c7e48ae71d3c8ec2e00bbcfb36f4e/19/jdk/slim-buster/Dockerfile)
+-	[`19-ea-1-jdk-windowsservercore-ltsc2022`, `19-ea-1-windowsservercore-ltsc2022`, `19-ea-jdk-windowsservercore-ltsc2022`, `19-ea-windowsservercore-ltsc2022`, `19-jdk-windowsservercore-ltsc2022`, `19-windowsservercore-ltsc2022`](https://github.com/docker-library/openjdk/blob/2836fabaca5c7e48ae71d3c8ec2e00bbcfb36f4e/19/jdk/windows/windowsservercore-ltsc2022/Dockerfile)
+-	[`19-ea-1-jdk-windowsservercore-1809`, `19-ea-1-windowsservercore-1809`, `19-ea-jdk-windowsservercore-1809`, `19-ea-windowsservercore-1809`, `19-jdk-windowsservercore-1809`, `19-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/2836fabaca5c7e48ae71d3c8ec2e00bbcfb36f4e/19/jdk/windows/windowsservercore-1809/Dockerfile)
+-	[`19-ea-1-jdk-windowsservercore-ltsc2016`, `19-ea-1-windowsservercore-ltsc2016`, `19-ea-jdk-windowsservercore-ltsc2016`, `19-ea-windowsservercore-ltsc2016`, `19-jdk-windowsservercore-ltsc2016`, `19-windowsservercore-ltsc2016`](https://github.com/docker-library/openjdk/blob/2836fabaca5c7e48ae71d3c8ec2e00bbcfb36f4e/19/jdk/windows/windowsservercore-ltsc2016/Dockerfile)
+-	[`19-ea-1-jdk-nanoserver-1809`, `19-ea-1-nanoserver-1809`, `19-ea-jdk-nanoserver-1809`, `19-ea-nanoserver-1809`, `19-jdk-nanoserver-1809`, `19-nanoserver-1809`](https://github.com/docker-library/openjdk/blob/2836fabaca5c7e48ae71d3c8ec2e00bbcfb36f4e/19/jdk/windows/nanoserver-1809/Dockerfile)
 -	[`18-ea-27-jdk-oraclelinux8`, `18-ea-27-oraclelinux8`, `18-ea-jdk-oraclelinux8`, `18-ea-oraclelinux8`, `18-jdk-oraclelinux8`, `18-oraclelinux8`, `18-ea-27-jdk-oracle`, `18-ea-27-oracle`, `18-ea-jdk-oracle`, `18-ea-oracle`, `18-jdk-oracle`, `18-oracle`](https://github.com/docker-library/openjdk/blob/734163cc7308e5bc215ebcd433bedbbd02711d9f/18/jdk/oraclelinux8/Dockerfile)
 -	[`18-ea-27-jdk-oraclelinux7`, `18-ea-27-oraclelinux7`, `18-ea-jdk-oraclelinux7`, `18-ea-oraclelinux7`, `18-jdk-oraclelinux7`, `18-oraclelinux7`](https://github.com/docker-library/openjdk/blob/734163cc7308e5bc215ebcd433bedbbd02711d9f/18/jdk/oraclelinux7/Dockerfile)
 -	[`18-ea-27-jdk-bullseye`, `18-ea-27-bullseye`, `18-ea-jdk-bullseye`, `18-ea-bullseye`, `18-jdk-bullseye`, `18-bullseye`](https://github.com/docker-library/openjdk/blob/734163cc7308e5bc215ebcd433bedbbd02711d9f/18/jdk/bullseye/Dockerfile)
@@ -89,6 +99,17 @@ WARNING:
 
 ## Shared Tags
 
+-	`19-ea-1-jdk`, `19-ea-1`, `19-ea-jdk`, `19-ea`, `19-jdk`, `19`:
+	-	[`19-ea-1-jdk-oraclelinux8`](https://github.com/docker-library/openjdk/blob/2836fabaca5c7e48ae71d3c8ec2e00bbcfb36f4e/19/jdk/oraclelinux8/Dockerfile)
+	-	[`19-ea-1-jdk-windowsservercore-ltsc2022`](https://github.com/docker-library/openjdk/blob/2836fabaca5c7e48ae71d3c8ec2e00bbcfb36f4e/19/jdk/windows/windowsservercore-ltsc2022/Dockerfile)
+	-	[`19-ea-1-jdk-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/2836fabaca5c7e48ae71d3c8ec2e00bbcfb36f4e/19/jdk/windows/windowsservercore-1809/Dockerfile)
+	-	[`19-ea-1-jdk-windowsservercore-ltsc2016`](https://github.com/docker-library/openjdk/blob/2836fabaca5c7e48ae71d3c8ec2e00bbcfb36f4e/19/jdk/windows/windowsservercore-ltsc2016/Dockerfile)
+-	`19-ea-1-jdk-windowsservercore`, `19-ea-1-windowsservercore`, `19-ea-jdk-windowsservercore`, `19-ea-windowsservercore`, `19-jdk-windowsservercore`, `19-windowsservercore`:
+	-	[`19-ea-1-jdk-windowsservercore-ltsc2022`](https://github.com/docker-library/openjdk/blob/2836fabaca5c7e48ae71d3c8ec2e00bbcfb36f4e/19/jdk/windows/windowsservercore-ltsc2022/Dockerfile)
+	-	[`19-ea-1-jdk-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/2836fabaca5c7e48ae71d3c8ec2e00bbcfb36f4e/19/jdk/windows/windowsservercore-1809/Dockerfile)
+	-	[`19-ea-1-jdk-windowsservercore-ltsc2016`](https://github.com/docker-library/openjdk/blob/2836fabaca5c7e48ae71d3c8ec2e00bbcfb36f4e/19/jdk/windows/windowsservercore-ltsc2016/Dockerfile)
+-	`19-ea-1-jdk-nanoserver`, `19-ea-1-nanoserver`, `19-ea-jdk-nanoserver`, `19-ea-nanoserver`, `19-jdk-nanoserver`, `19-nanoserver`:
+	-	[`19-ea-1-jdk-nanoserver-1809`](https://github.com/docker-library/openjdk/blob/2836fabaca5c7e48ae71d3c8ec2e00bbcfb36f4e/19/jdk/windows/nanoserver-1809/Dockerfile)
 -	`18-ea-27-jdk`, `18-ea-27`, `18-ea-jdk`, `18-ea`, `18-jdk`, `18`:
 	-	[`18-ea-27-jdk-oraclelinux8`](https://github.com/docker-library/openjdk/blob/734163cc7308e5bc215ebcd433bedbbd02711d9f/18/jdk/oraclelinux8/Dockerfile)
 	-	[`18-ea-27-jdk-windowsservercore-ltsc2022`](https://github.com/docker-library/openjdk/blob/734163cc7308e5bc215ebcd433bedbbd02711d9f/18/jdk/windows/windowsservercore-ltsc2022/Dockerfile)
@@ -254,14 +275,6 @@ The `-oraclelinux7` variants are based on the official [Oracle Linux 7 image](ht
 
 The OpenJDK binaries are built by Oracle and are sourced from the [OpenJDK community](https://openjdk.java.net/). These binaries are licensed under the [GPLv2 with the Classpath Exception](https://openjdk.java.net/legal/gplv2+ce.html).
 
-## `openjdk:<version>-alpine`
-
-This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
-
-The OpenJDK port for Alpine is not in a supported release by OpenJDK, since it is not in the mainline code base. It is only available as early access builds of [OpenJDK Project Portola](http://openjdk.java.net/projects/portola). See also [this comment](https://github.com/docker-library/openjdk/pull/235#issuecomment-424599754). So this image follows what is available from the OpenJDK project's maintainers.
-
-What this means is that Alpine based images are only released for early access release versions of OpenJDK. Once a particular release becomes a "General-Availability" release, the Alpine version is dropped from the "Supported Tags"; they are still available to pull, but will no longer be updated.
-
 ## `openjdk:<version>-windowsservercore`
 
 This image is based on [Windows Server Core (`microsoft/windowsservercore`)](https://hub.docker.com/r/microsoft/windowsservercore/). As such, it only works in places which that image does, such as Windows 10 Professional/Enterprise (Anniversary Edition) or Windows Server 2016.
@@ -270,6 +283,14 @@ For information about how to get Docker running on Windows, please see the relev
 
 -	[Windows Server Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_server)
 -	[Windows 10 Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)
+
+## `openjdk:<version>-alpine`
+
+This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+
+The OpenJDK port for Alpine is not in a supported release by OpenJDK, since it is not in the mainline code base. It is only available as early access builds of [OpenJDK Project Portola](http://openjdk.java.net/projects/portola). See also [this comment](https://github.com/docker-library/openjdk/pull/235#issuecomment-424599754). So this image follows what is available from the OpenJDK project's maintainers.
+
+What this means is that Alpine based images are only released for early access release versions of OpenJDK. Once a particular release becomes a "General-Availability" release, the Alpine version is dropped from the "Supported Tags"; they are still available to pull, but will no longer be updated.
 
 # License
 
