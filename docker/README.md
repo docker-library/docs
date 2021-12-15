@@ -28,8 +28,8 @@ WARNING:
 
 ## Simple Tags
 
--	[`20.10.12`, `20.10`, `20`, `latest`, `20.10.12-alpine3.14`](https://github.com/docker-library/docker/blob/16d77b9b3258873b79b8c997d5e2b90c5533b85e/20.10/Dockerfile)
--	[`20.10.12-dind`, `20.10-dind`, `20-dind`, `dind`, `20.10.12-dind-alpine3.14`](https://github.com/docker-library/docker/blob/8baa881aab85f8398d2edbbcc0da4bd1f556dd98/20.10/dind/Dockerfile)
+-	[`20.10.12`, `20.10`, `20`, `latest`, `20.10.12-alpine3.15`](https://github.com/docker-library/docker/blob/fcbca72b6fa10cc329b70f964409f520d8fa73b8/20.10/Dockerfile)
+-	[`20.10.12-dind`, `20.10-dind`, `20-dind`, `dind`, `20.10.12-dind-alpine3.15`](https://github.com/docker-library/docker/blob/8baa881aab85f8398d2edbbcc0da4bd1f556dd98/20.10/dind/Dockerfile)
 -	[`20.10.12-dind-rootless`, `20.10-dind-rootless`, `20-dind-rootless`, `dind-rootless`](https://github.com/docker-library/docker/blob/16d77b9b3258873b79b8c997d5e2b90c5533b85e/20.10/dind-rootless/Dockerfile)
 -	[`20.10.12-git`, `20.10-git`, `20-git`, `git`](https://github.com/docker-library/docker/blob/387e351394bfad74bceebf8303c6c8e39c3d4ed4/20.10/git/Dockerfile)
 -	[`20.10.12-windowsservercore-1809`, `20.10-windowsservercore-1809`, `20-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/docker-library/docker/blob/16d77b9b3258873b79b8c997d5e2b90c5533b85e/20.10/windows/windowsservercore-1809/Dockerfile)
