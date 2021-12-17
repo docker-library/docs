@@ -24,15 +24,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.6.0-alpine`, `2.6.0`, `2.6`, `alpine`, `latest`](https://github.com/Kong/docker-kong/blob/76ba9c46dd932e518016d48a8414d7af185c2a76/alpine/Dockerfile)
--	[`2.6.0-ubuntu`, `2.6-ubuntu`, `ubuntu`](https://github.com/Kong/docker-kong/blob/76ba9c46dd932e518016d48a8414d7af185c2a76/ubuntu/Dockerfile)
--	[`2.6.0-centos`, `2.6-centos`, `centos`](https://github.com/Kong/docker-kong/blob/76ba9c46dd932e518016d48a8414d7af185c2a76/centos/Dockerfile)
+-	[`2.7.0-alpine`, `2.7.0`, `2.7`, `alpine`, `latest`](https://github.com/Kong/docker-kong/blob/4896c55914e46d044183c6a6541cf50366f5cffa/alpine/Dockerfile)
+-	[`2.7.0-ubuntu`, `2.7-ubuntu`, `ubuntu`](https://github.com/Kong/docker-kong/blob/4896c55914e46d044183c6a6541cf50366f5cffa/ubuntu/Dockerfile)
+-	[`2.7.0-centos`, `2.7-centos`, `centos`](https://github.com/Kong/docker-kong/blob/4896c55914e46d044183c6a6541cf50366f5cffa/centos/Dockerfile)
+-	[`2.6.0-alpine`, `2.6.0`, `2.6`](https://github.com/Kong/docker-kong/blob/76ba9c46dd932e518016d48a8414d7af185c2a76/alpine/Dockerfile)
+-	[`2.6.0-ubuntu`, `2.6-ubuntu`](https://github.com/Kong/docker-kong/blob/76ba9c46dd932e518016d48a8414d7af185c2a76/ubuntu/Dockerfile)
+-	[`2.6.0-centos`, `2.6-centos`](https://github.com/Kong/docker-kong/blob/76ba9c46dd932e518016d48a8414d7af185c2a76/centos/Dockerfile)
 -	[`2.5.1-alpine`, `2.5.1`, `2.5`](https://github.com/Kong/docker-kong/blob/7b610b2e566274d70aed60dd3f10a8e43fe91fb4/alpine/Dockerfile)
 -	[`2.5.1-ubuntu`, `2.5-ubuntu`](https://github.com/Kong/docker-kong/blob/7b610b2e566274d70aed60dd3f10a8e43fe91fb4/ubuntu/Dockerfile)
 -	[`2.5.1-centos`, `2.5-centos`](https://github.com/Kong/docker-kong/blob/7b610b2e566274d70aed60dd3f10a8e43fe91fb4/centos/Dockerfile)
--	[`2.4.1-alpine`, `2.4-alpine`, `2.4.1`, `2.4`](https://github.com/Kong/docker-kong/blob/e1b0a6c7eddd327926027692863a9900fd856977/alpine/Dockerfile)
--	[`2.4.1-ubuntu`, `2.4-ubuntu`](https://github.com/Kong/docker-kong/blob/e1b0a6c7eddd327926027692863a9900fd856977/ubuntu/Dockerfile)
--	[`2.4.1-centos`, `2.4-centos`](https://github.com/Kong/docker-kong/blob/e1b0a6c7eddd327926027692863a9900fd856977/centos/Dockerfile)
 
 # Quick reference (cont.)
 
