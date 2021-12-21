@@ -24,8 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.4.51`, `2.4`, `2`, `latest`, `2.4.51-bullseye`, `2.4-bullseye`, `2-bullseye`, `bullseye`](https://github.com/docker-library/httpd/blob/1665deed67e5b7e8d3bd5c08f29cb50d469e7d44/2.4/Dockerfile)
--	[`2.4.51-alpine`, `2.4-alpine`, `2-alpine`, `alpine`, `2.4.51-alpine3.15`, `2.4-alpine3.15`, `2-alpine3.15`, `alpine3.15`](https://github.com/docker-library/httpd/blob/444663e2aea781b11c165219697d5621fe5d1a95/2.4/alpine/Dockerfile)
+-	[`2.4.52`, `2.4`, `2`, `latest`, `2.4.52-bullseye`, `2.4-bullseye`, `2-bullseye`, `bullseye`](https://github.com/docker-library/httpd/blob/a7acc047c8970e0502f4c6b577775f840f1f99b6/2.4/Dockerfile)
+-	[`2.4.52-alpine`, `2.4-alpine`, `2-alpine`, `alpine`, `2.4.52-alpine3.15`, `2.4-alpine3.15`, `2-alpine3.15`, `alpine3.15`](https://github.com/docker-library/httpd/blob/a7acc047c8970e0502f4c6b577775f840f1f99b6/2.4/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
