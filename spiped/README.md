@@ -24,8 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.6.1`, `1.6`, `1`, `latest`](https://github.com/TimWolla/docker-spiped/blob/bec455b320f878b386328c2db0cb9a6ca9fd7755/1.6/Dockerfile)
--	[`1.6.1-alpine`, `1.6-alpine`, `1-alpine`, `alpine`](https://github.com/TimWolla/docker-spiped/blob/f97eba885ee67cd0d8a32f4e70ab5388bb77944f/1.6/alpine/Dockerfile)
+-	[`1.6.2`, `1.6`, `1`, `latest`](https://github.com/TimWolla/docker-spiped/blob/2673ea4c6a442d939ab23834aaf2a64c5d916139/1.6/Dockerfile)
+-	[`1.6.2-alpine`, `1.6-alpine`, `1-alpine`, `alpine`](https://github.com/TimWolla/docker-spiped/blob/ac0eceed1b934846eab1149a1ffabcaea91127c6/1.6/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
