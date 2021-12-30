@@ -16,10 +16,10 @@ WARNING:
 
 # Quick reference
 
--	**Maintained by**:  
+-	**Maintained by**:
 	[MediaWiki community & Docker Community](https://github.com/wikimedia/mediawiki-docker)
 
--	**Where to get help**:  
+-	**Where to get help**:
 	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
 # Supported tags and respective `Dockerfile` links
@@ -36,21 +36,21 @@ WARNING:
 
 # Quick reference (cont.)
 
--	**Where to file issues**:  
+-	**Where to file issues**:
 	[https://phabricator.wikimedia.org/project/view/3094/](https://phabricator.wikimedia.org/project/view/3094/)
 
--	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+-	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))
 	[`amd64`](https://hub.docker.com/r/amd64/mediawiki/), [`arm32v5`](https://hub.docker.com/r/arm32v5/mediawiki/), [`arm32v6`](https://hub.docker.com/r/arm32v6/mediawiki/), [`arm32v7`](https://hub.docker.com/r/arm32v7/mediawiki/), [`arm64v8`](https://hub.docker.com/r/arm64v8/mediawiki/), [`i386`](https://hub.docker.com/r/i386/mediawiki/), [`ppc64le`](https://hub.docker.com/r/ppc64le/mediawiki/)
 
--	**Published image artifact details**:  
-	[repo-info repo's `repos/mediawiki/` directory](https://github.com/docker-library/repo-info/blob/master/repos/mediawiki) ([history](https://github.com/docker-library/repo-info/commits/master/repos/mediawiki))  
+-	**Published image artifact details**:
+	[repo-info repo's `repos/mediawiki/` directory](https://github.com/docker-library/repo-info/blob/master/repos/mediawiki) ([history](https://github.com/docker-library/repo-info/commits/master/repos/mediawiki))
 	(image metadata, transfer size, etc)
 
--	**Image updates**:  
-	[official-images repo's `library/mediawiki` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fmediawiki)  
+-	**Image updates**:
+	[official-images repo's `library/mediawiki` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fmediawiki)
 	[official-images repo's `library/mediawiki` file](https://github.com/docker-library/official-images/blob/master/library/mediawiki) ([history](https://github.com/docker-library/official-images/commits/master/library/mediawiki))
 
--	**Source of this description**:  
+-	**Source of this description**:
 	[docs repo's `mediawiki/` directory](https://github.com/docker-library/docs/tree/master/mediawiki) ([history](https://github.com/docker-library/docs/commits/master/mediawiki))
 
 # What is MediaWiki?
@@ -125,7 +125,6 @@ services:
       # this yaml and uncomment the following line and use compose to restart
       # the mediawiki service
       # - ./LocalSettings.php:/var/www/html/LocalSettings.php
-  # This key also defines the name of the database host used during setup instead of the default "localhost"
   database:
     image: mariadb
     restart: always
