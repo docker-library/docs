@@ -27,12 +27,12 @@ WARNING:
 -	[`2021.09-apache`, `apache`, `stable-apache`, `2021.09`, `latest`, `stable`](https://github.com/friendica/docker/blob/9f8658cf5372dc4ac75a9d5d330d7f35a83ddbdf/2021.09/apache/Dockerfile)
 -	[`2021.09-fpm`, `fpm`, `stable-fpm`](https://github.com/friendica/docker/blob/9f8658cf5372dc4ac75a9d5d330d7f35a83ddbdf/2021.09/fpm/Dockerfile)
 -	[`2021.09-fpm-alpine`, `fpm-alpine`, `stable-fpm-alpine`](https://github.com/friendica/docker/blob/9f8658cf5372dc4ac75a9d5d330d7f35a83ddbdf/2021.09/fpm-alpine/Dockerfile)
--	[`2021.12-dev-apache`, `dev-apache`, `2021.12-dev`, `dev`](https://github.com/friendica/docker/blob/9f8658cf5372dc4ac75a9d5d330d7f35a83ddbdf/2021.12-dev/apache/Dockerfile)
--	[`2021.12-dev-fpm`, `dev-fpm`](https://github.com/friendica/docker/blob/9f8658cf5372dc4ac75a9d5d330d7f35a83ddbdf/2021.12-dev/fpm/Dockerfile)
--	[`2021.12-dev-fpm-alpine`, `dev-fpm-alpine`](https://github.com/friendica/docker/blob/9f8658cf5372dc4ac75a9d5d330d7f35a83ddbdf/2021.12-dev/fpm-alpine/Dockerfile)
--	[`2021.12-rc-apache`, `rc-apache`, `2021.12-rc`, `rc`](https://github.com/friendica/docker/blob/9f8658cf5372dc4ac75a9d5d330d7f35a83ddbdf/2021.12-rc/apache/Dockerfile)
--	[`2021.12-rc-fpm`, `rc-fpm`](https://github.com/friendica/docker/blob/9f8658cf5372dc4ac75a9d5d330d7f35a83ddbdf/2021.12-rc/fpm/Dockerfile)
--	[`2021.12-rc-fpm-alpine`, `rc-fpm-alpine`](https://github.com/friendica/docker/blob/9f8658cf5372dc4ac75a9d5d330d7f35a83ddbdf/2021.12-rc/fpm-alpine/Dockerfile)
+-	[`2021.12-dev-apache`, `dev-apache`, `2021.12-dev`, `dev`](https://github.com/friendica/docker/blob/933e3c5604ff01fe6a2a4d3a23b92effe5e152b0/2021.12-dev/apache/Dockerfile)
+-	[`2021.12-dev-fpm`, `dev-fpm`](https://github.com/friendica/docker/blob/933e3c5604ff01fe6a2a4d3a23b92effe5e152b0/2021.12-dev/fpm/Dockerfile)
+-	[`2021.12-dev-fpm-alpine`, `dev-fpm-alpine`](https://github.com/friendica/docker/blob/933e3c5604ff01fe6a2a4d3a23b92effe5e152b0/2021.12-dev/fpm-alpine/Dockerfile)
+-	[`2021.12-rc-apache`, `rc-apache`, `2021.12-rc`, `rc`](https://github.com/friendica/docker/blob/933e3c5604ff01fe6a2a4d3a23b92effe5e152b0/2021.12-rc/apache/Dockerfile)
+-	[`2021.12-rc-fpm`, `rc-fpm`](https://github.com/friendica/docker/blob/933e3c5604ff01fe6a2a4d3a23b92effe5e152b0/2021.12-rc/fpm/Dockerfile)
+-	[`2021.12-rc-fpm-alpine`, `rc-fpm-alpine`](https://github.com/friendica/docker/blob/933e3c5604ff01fe6a2a4d3a23b92effe5e152b0/2021.12-rc/fpm-alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -109,7 +109,7 @@ Friendica requires background tasks to fetch and send all kind of messages and m
 -	`FRIENDICA_NO_VALIDATION` If set to `true`, the URL and E-Mail validation will be disabled.
 -	`FRIENDICA_DATA` Set the name of the storage provider (e.g `Filesystem` to use filesystem), default ist the DB backend.
 -	`FRIENDICA_DATA_DIR` The data directory of the Friendica server (Default: /var/www/data).
--	`FRIENDICA_UPDATE` Force starting the Friendica update even it's the same version (Default: `false`).
+-	`FRIENDICA_UPGRADE` Force starting the Friendica update even it's the same version (Default: `false`).
 
 **Friendica Logging**
 

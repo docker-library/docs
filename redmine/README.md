@@ -26,13 +26,13 @@ WARNING:
 
 -	[`4.2.3`, `4.2`, `4`, `latest`, `4.2.3-bullseye`, `4.2-bullseye`, `4-bullseye`, `bullseye`](https://github.com/docker-library/redmine/blob/5ceec0a28815d3a9ff740439bb5f1f8bd764290b/4.2/Dockerfile)
 -	[`4.2.3-passenger`, `4.2-passenger`, `4-passenger`, `passenger`](https://github.com/docker-library/redmine/blob/5444fd564ffba5c871a4d964b54c5559ee52e61e/4.2/passenger/Dockerfile)
--	[`4.2.3-alpine`, `4.2-alpine`, `4-alpine`, `alpine`, `4.2.3-alpine3.15`, `4.2-alpine3.15`, `4-alpine3.15`, `alpine3.15`](https://github.com/docker-library/redmine/blob/609e8f990721fbda2a0e911cef76f4b0487a9d04/4.2/alpine/Dockerfile)
+-	[`4.2.3-alpine`, `4.2-alpine`, `4-alpine`, `alpine`, `4.2.3-alpine3.15`, `4.2-alpine3.15`, `4-alpine3.15`, `alpine3.15`](https://github.com/docker-library/redmine/blob/fc6ec50449a879f8bd4b30ab0e0e2fd533931cdc/4.2/alpine/Dockerfile)
 -	[`4.1.5`, `4.1`, `4.1.5-bullseye`, `4.1-bullseye`](https://github.com/docker-library/redmine/blob/5ceec0a28815d3a9ff740439bb5f1f8bd764290b/4.1/Dockerfile)
 -	[`4.1.5-passenger`, `4.1-passenger`](https://github.com/docker-library/redmine/blob/5444fd564ffba5c871a4d964b54c5559ee52e61e/4.1/passenger/Dockerfile)
--	[`4.1.5-alpine`, `4.1-alpine`, `4.1.5-alpine3.15`, `4.1-alpine3.15`](https://github.com/docker-library/redmine/blob/609e8f990721fbda2a0e911cef76f4b0487a9d04/4.1/alpine/Dockerfile)
+-	[`4.1.5-alpine`, `4.1-alpine`, `4.1.5-alpine3.15`, `4.1-alpine3.15`](https://github.com/docker-library/redmine/blob/fc6ec50449a879f8bd4b30ab0e0e2fd533931cdc/4.1/alpine/Dockerfile)
 -	[`4.0.9`, `4.0`, `4.0.9-bullseye`, `4.0-bullseye`](https://github.com/docker-library/redmine/blob/5ceec0a28815d3a9ff740439bb5f1f8bd764290b/4.0/Dockerfile)
 -	[`4.0.9-passenger`, `4.0-passenger`](https://github.com/docker-library/redmine/blob/5444fd564ffba5c871a4d964b54c5559ee52e61e/4.0/passenger/Dockerfile)
--	[`4.0.9-alpine`, `4.0-alpine`, `4.0.9-alpine3.15`, `4.0-alpine3.15`](https://github.com/docker-library/redmine/blob/609e8f990721fbda2a0e911cef76f4b0487a9d04/4.0/alpine/Dockerfile)
+-	[`4.0.9-alpine`, `4.0-alpine`, `4.0.9-alpine3.15`, `4.0-alpine3.15`](https://github.com/docker-library/redmine/blob/fc6ec50449a879f8bd4b30ab0e0e2fd533931cdc/4.0/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
