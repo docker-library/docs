@@ -59,9 +59,11 @@ A large number of production-quality Haskell libraries are available from [Hacka
 
 ## About this image
 
-This image ships a minimal Haskell toolchain (`ghc` and `cabal-install`) as well as the `stack` tool ([https://www.haskellstack.org/](https://www.haskellstack.org/)).
+This image ships a minimal Haskell toolchain (`ghc` and `cabal-install`) as well as the `stack` tool ([https://www.haskellstack.org/](https://www.haskellstack.org/)) where possible. [`stack` does not currently support `ARM64`](https://github.com/commercialhaskell/stack/issues/2103) so is not included for that processor architecture.
 
-Note: The GHC developers do not support legacy release branches (i.e. `7.8.x`). While older GHC release tags are available in this DockerHub repository, only the two most recent minor releases will receive updates or be shown in the "Supported tags ..." section at the top of this page.
+ARM64 support is new and should be considered experimental at this stage. Support has been added as of `8.10.7`, `9.0.2` and `9.2.1`.
+
+Note: The GHC developers do not support legacy release branches (i.e. `7.8.x`). Only the two most recent minor releases will receive updates or be shown in the "Supported tags ..." section at the top of this page.
 
 Additionally, we aim to support the two most recent versions of Debian (`stable` and `oldstable`) as variants, with the most recent being the default if not specified.
 
