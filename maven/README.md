@@ -39,6 +39,8 @@ WARNING:
 -	[`3.8.4-eclipse-temurin-8`, `3.8-eclipse-temurin-8`, `3-eclipse-temurin-8`](https://github.com/carlossg/docker-maven/blob/59bdaf8b1ec69a787d7857cd1025f1f3efd7b216/eclipse-temurin-8/Dockerfile)
 -	[`3.8.4-ibmjava-8`, `3.8.4-ibmjava`, `3.8-ibmjava-8`, `3.8-ibmjava`, `3-ibmjava-8`, `3-ibmjava`, `ibmjava`](https://github.com/carlossg/docker-maven/blob/59bdaf8b1ec69a787d7857cd1025f1f3efd7b216/ibmjava-8/Dockerfile)
 -	[`3.8.4-ibmjava-8-alpine`, `3.8.4-ibmjava-alpine`, `3.8-ibmjava-8-alpine`, `3.8-ibmjava-alpine`, `3-ibmjava-8-alpine`, `ibmjava-alpine`](https://github.com/carlossg/docker-maven/blob/59bdaf8b1ec69a787d7857cd1025f1f3efd7b216/ibmjava-8-alpine/Dockerfile)
+-	[`3.8.4-ibm-semeru-11-focal`, `3.8-ibm-semeru-11-focal`, `3-ibm-semeru-11-focal`](https://github.com/carlossg/docker-maven/blob/36bdff82f0d07bced5d44537e7cd8dfbd201cc73/ibm-semeru-11-focal/Dockerfile)
+-	[`3.8.4-ibm-semeru-17-focal`, `3.8-ibm-semeru-17-focal`, `3-ibm-semeru-17-focal`](https://github.com/carlossg/docker-maven/blob/36bdff82f0d07bced5d44537e7cd8dfbd201cc73/ibm-semeru-17-focal/Dockerfile)
 -	[`3.8.4-amazoncorretto-11`, `3.8.4-amazoncorretto`, `3.8-amazoncorretto-11`, `3.8-amazoncorretto`, `3-amazoncorretto-11`, `3-amazoncorretto`, `amazoncorretto`](https://github.com/carlossg/docker-maven/blob/59bdaf8b1ec69a787d7857cd1025f1f3efd7b216/amazoncorretto-11/Dockerfile)
 -	[`3.8.4-amazoncorretto-17`, `3.8-amazoncorretto-17`, `3-amazoncorretto-17`](https://github.com/carlossg/docker-maven/blob/59bdaf8b1ec69a787d7857cd1025f1f3efd7b216/amazoncorretto-17/Dockerfile)
 -	[`3.8.4-amazoncorretto-8`, `3.8-amazoncorretto-8`, `3-amazoncorretto-8`](https://github.com/carlossg/docker-maven/blob/59bdaf8b1ec69a787d7857cd1025f1f3efd7b216/amazoncorretto-8/Dockerfile)
@@ -136,6 +138,8 @@ The `maven` images come in many flavors, each designed for a specific use case.
 ## `maven:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+Some of these tags may have names like focal in them. These are the suite code names for releases of [Ubuntu](https://wiki.ubuntu.com/Releases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Ubuntu.
 
 ## `maven:<version>-slim`
 
