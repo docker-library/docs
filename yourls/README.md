@@ -131,6 +131,17 @@ Database name, defaults to `yourls`. The database must have been created before 
 **Optional.**  
 Database tables prefix, defaults to `yourls_`. Only set this when you need to override the default table prefix.
 
+## Persistence Volume
+
+### `Plugins`
+
+**Optional**  
+If you would like to install custom plugins, you may need to persist the `plugins` folder.
+
+```console
+    -v /path/to/your/folder:/var/www/html/user/plugins \
+```
+
 ## Docker Secrets
 
 As an alternative to passing sensitive information via environment variables, `_FILE` may be appended to the previously listed environment variables, causing the initialization script to load the values for those variables from files present in the container. In particular, this can be used to load passwords from Docker secrets stored in `/run/secrets/<secret_name>` files. For example:
