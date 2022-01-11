@@ -139,7 +139,7 @@ Database tables prefix, defaults to `yourls_`. Only set this when you need to ov
 In order to install additional plugins, `/var/www/html/user/plugins` folder can be mounted as a volume.
 
 ```console
-    -v /path/to/your/folder:/var/www/html/user/plugins \
+$ docker run --name some-%%REPO%% -v /path/to/your/folder:/var/www/html/user/plugins ... -d %%IMAGE%%:tag
 ```
 
 ## Docker Secrets
