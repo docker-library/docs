@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.5.0-apache`, `3.5-apache`, `3-apache`, `apache`, `3.5.0`, `3.5`, `3`, `latest`](https://github.com/monicahq/docker/blob/03744c868b21cdd00d66e329b105f8b3d22c1173/apache/Dockerfile)
--	[`3.5.0-fpm-alpine`, `3.5-fpm-alpine`, `3-fpm-alpine`, `fpm-alpine`](https://github.com/monicahq/docker/blob/03744c868b21cdd00d66e329b105f8b3d22c1173/fpm-alpine/Dockerfile)
--	[`3.5.0-fpm`, `3.5-fpm`, `3-fpm`, `fpm`](https://github.com/monicahq/docker/blob/03744c868b21cdd00d66e329b105f8b3d22c1173/fpm/Dockerfile)
+-	[`3.6.0-apache`, `3.6-apache`, `3-apache`, `apache`, `3.6.0`, `3.6`, `3`, `latest`](https://github.com/monicahq/docker/blob/f9840328c1c811d21a59a5757ac3b8a2f67d623d/apache/Dockerfile)
+-	[`3.6.0-fpm-alpine`, `3.6-fpm-alpine`, `3-fpm-alpine`, `fpm-alpine`](https://github.com/monicahq/docker/blob/f9840328c1c811d21a59a5757ac3b8a2f67d623d/fpm-alpine/Dockerfile)
+-	[`3.6.0-fpm`, `3.6-fpm`, `3-fpm`, `fpm`](https://github.com/monicahq/docker/blob/f9840328c1c811d21a59a5757ac3b8a2f67d623d/fpm/Dockerfile)
 
 # Quick reference (cont.)
 
