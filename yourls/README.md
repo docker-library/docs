@@ -136,7 +136,7 @@ Database tables prefix, defaults to `yourls_`. Only set this when you need to ov
 ### `Plugins`
 
 **Optional**  
-If you would like to install custom plugins, you may need to persist the `plugins` folder.
+In order to install additional plugins, `/var/www/html/user/plugins` folder can be mounted as a volume.
 
 ```console
     -v /path/to/your/folder:/var/www/html/user/plugins \
