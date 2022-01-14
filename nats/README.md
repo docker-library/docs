@@ -28,22 +28,20 @@ WARNING:
 
 ## Simple Tags
 
--	[`2.6.6-alpine3.14`, `2.6-alpine3.14`, `2-alpine3.14`, `alpine3.14`, `2.6.6-alpine`, `2.6-alpine`, `2-alpine`, `alpine`](https://github.com/nats-io/nats-docker/blob/4449db1e4301e7da4549befb980cccc41c2fa907/2.6.6/alpine3.14/Dockerfile)
--	[`2.6.6-scratch`, `2.6-scratch`, `2-scratch`, `scratch`, `2.6.6-linux`, `2.6-linux`, `2-linux`, `linux`](https://github.com/nats-io/nats-docker/blob/4449db1e4301e7da4549befb980cccc41c2fa907/2.6.6/scratch/Dockerfile)
--	[`2.6.6-windowsservercore-1809`, `2.6-windowsservercore-1809`, `2-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/nats-io/nats-docker/blob/4449db1e4301e7da4549befb980cccc41c2fa907/2.6.6/windowsservercore-1809/Dockerfile)
--	[`2.6.6-nanoserver-1809`, `2.6-nanoserver-1809`, `2-nanoserver-1809`, `nanoserver-1809`](https://github.com/nats-io/nats-docker/blob/4449db1e4301e7da4549befb980cccc41c2fa907/2.6.6/nanoserver-1809/Dockerfile)
--	[`2.6.6-windowsservercore-ltsc2016`, `2.6-windowsservercore-ltsc2016`, `2-windowsservercore-ltsc2016`, `windowsservercore-ltsc2016`](https://github.com/nats-io/nats-docker/blob/4449db1e4301e7da4549befb980cccc41c2fa907/2.6.6/windowsservercore-ltsc2016/Dockerfile)
+-	[`2.7.0-alpine3.15`, `2.7-alpine3.15`, `2-alpine3.15`, `alpine3.15`, `2.7.0-alpine`, `2.7-alpine`, `2-alpine`, `alpine`](https://github.com/nats-io/nats-docker/blob/2f7b8366ee431aee2e99bd8a3a473d2e53172b97/2.7.0/alpine3.15/Dockerfile)
+-	[`2.7.0-scratch`, `2.7-scratch`, `2-scratch`, `scratch`, `2.7.0-linux`, `2.7-linux`, `2-linux`, `linux`](https://github.com/nats-io/nats-docker/blob/2f7b8366ee431aee2e99bd8a3a473d2e53172b97/2.7.0/scratch/Dockerfile)
+-	[`2.7.0-windowsservercore-1809`, `2.7-windowsservercore-1809`, `2-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/nats-io/nats-docker/blob/2f7b8366ee431aee2e99bd8a3a473d2e53172b97/2.7.0/windowsservercore-1809/Dockerfile)
+-	[`2.7.0-nanoserver-1809`, `2.7-nanoserver-1809`, `2-nanoserver-1809`, `nanoserver-1809`](https://github.com/nats-io/nats-docker/blob/2f7b8366ee431aee2e99bd8a3a473d2e53172b97/2.7.0/nanoserver-1809/Dockerfile)
 
 ## Shared Tags
 
--	`2.6.6`, `2.6`, `2`, `latest`:
-	-	[`2.6.6-scratch`](https://github.com/nats-io/nats-docker/blob/4449db1e4301e7da4549befb980cccc41c2fa907/2.6.6/scratch/Dockerfile)
-	-	[`2.6.6-nanoserver-1809`](https://github.com/nats-io/nats-docker/blob/4449db1e4301e7da4549befb980cccc41c2fa907/2.6.6/nanoserver-1809/Dockerfile)
--	`2.6.6-windowsservercore`, `2.6-windowsservercore`, `2-windowsservercore`, `windowsservercore`:
-	-	[`2.6.6-windowsservercore-1809`](https://github.com/nats-io/nats-docker/blob/4449db1e4301e7da4549befb980cccc41c2fa907/2.6.6/windowsservercore-1809/Dockerfile)
-	-	[`2.6.6-windowsservercore-ltsc2016`](https://github.com/nats-io/nats-docker/blob/4449db1e4301e7da4549befb980cccc41c2fa907/2.6.6/windowsservercore-ltsc2016/Dockerfile)
--	`2.6.6-nanoserver`, `2.6-nanoserver`, `2-nanoserver`, `nanoserver`:
-	-	[`2.6.6-nanoserver-1809`](https://github.com/nats-io/nats-docker/blob/4449db1e4301e7da4549befb980cccc41c2fa907/2.6.6/nanoserver-1809/Dockerfile)
+-	`2.7.0`, `2.7`, `2`, `latest`:
+	-	[`2.7.0-scratch`](https://github.com/nats-io/nats-docker/blob/2f7b8366ee431aee2e99bd8a3a473d2e53172b97/2.7.0/scratch/Dockerfile)
+	-	[`2.7.0-nanoserver-1809`](https://github.com/nats-io/nats-docker/blob/2f7b8366ee431aee2e99bd8a3a473d2e53172b97/2.7.0/nanoserver-1809/Dockerfile)
+-	`2.7.0-windowsservercore`, `2.7-windowsservercore`, `2-windowsservercore`, `windowsservercore`:
+	-	[`2.7.0-windowsservercore-1809`](https://github.com/nats-io/nats-docker/blob/2f7b8366ee431aee2e99bd8a3a473d2e53172b97/2.7.0/windowsservercore-1809/Dockerfile)
+-	`2.7.0-nanoserver`, `2.7-nanoserver`, `2-nanoserver`, `nanoserver`:
+	-	[`2.7.0-nanoserver-1809`](https://github.com/nats-io/nats-docker/blob/2f7b8366ee431aee2e99bd8a3a473d2e53172b97/2.7.0/nanoserver-1809/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -101,16 +99,15 @@ The routing protocol has been dramatically improved and adds support for account
 
 $ docker run -d --name nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 nats
 [INF] Starting nats-server
-[INF]   Version:  2.6.0
-[INF]   Git:      [3a4fd2b]
-[INF]   Name:     NCFUZPNOENMPXL5LKXDN3LCXUXAVMH6CQUQEAKHRFYLYSI4URAV53RKE
-[INF]   ID:       NCFUZPNOENMPXL5LKXDN3LCXUXAVMH6CQUQEAKHRFYLYSI4URAV53RKE
+[INF]   Version:  2.7.0
+[INF]   Git:      [bb87a650]
+[INF]   Name:     NDO57CEPOVHEL4O5SROTRJC4LLHPO6AO7RZTJGZF3T2EGRKIEPSQHN6H
+[INF]   ID:       NDO57CEPOVHEL4O5SROTRJC4LLHPO6AO7RZTJGZF3T2EGRKIEPSQHN6H
 [INF] Using configuration file: /etc/nats/nats-server.conf
 [INF] Starting http monitor on 0.0.0.0:8222
 [INF] Listening for client connections on 0.0.0.0:4222
 [INF] Server is ready
-[INF] Cluster name is AdttP4E65rO4kboXExo1f7
-[WRN] Cluster name was dynamically generated, consider setting one
+[INF] Cluster name is my_cluster
 [INF] Listening for route connections on 0.0.0.0:6222
 ...
 
@@ -118,36 +115,30 @@ $ docker run -d --name nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 nats
 # Note that since you are passing arguments, this overrides the CMD section
 # of the Dockerfile, so you need to pass all arguments, including the
 # config file.
-$ docker run -d --name=nats-2 --link nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 nats -c nats-server.conf --routes=nats-route://ruser:T0pS3cr3t@nats-main:6222
+$ docker run -d --name=nats-2 --link nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 nats -c /etc/nats/nats-server.conf --routes=nats-route://ruser:T0pS3cr3t@nats-main:6222
 
 # If you want to verify the routes are connected, try this instead:
-$ docker run -d --name=nats-2 --link nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 nats -c nats-server.conf --routes=nats-route://ruser:T0pS3cr3t@nats-main:6222 -DV
+$ docker run -d --name=nats-2 --link nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 nats -c /etc/nats/nats-server.conf --routes=nats-route://ruser:T0pS3cr3t@nats-main:6222 -DV
 [INF] Starting nats-server
-[INF]   Version:  2.6.0
-[INF]   Git:      [3a4fd2b]
-[DBG]   Go build: go1.16.8
-[INF]   Name:     NCFUE5VRTU3L4ACSQGXFD4Q2ZG2LZZMNNQGKEOGYLIYQANO7HGYXJBYK
-[INF]   ID:       NCFUE5VRTU3L4ACSQGXFD4Q2ZG2LZZMNNQGKEOGYLIYQANO7HGYXJBYK
+[INF]   Version:  2.7.0
+[INF]   Git:      [not set]
+[DBG]   Go build: go1.17.6
+[INF]   Name:     NBREZDV5RYHNFFTRCF6SEYEVSWZN362A756M5R53UFSNKEKCSNY4TYRQ
+[INF]   ID:       NBREZDV5RYHNFFTRCF6SEYEVSWZN362A756M5R53UFSNKEKCSNY4TYRQ
 [INF] Using configuration file: /etc/nats/nats-server.conf
 [DBG] Created system account: "$SYS"
 [INF] Starting http monitor on 0.0.0.0:8222
 [INF] Listening for client connections on 0.0.0.0:4222
 [DBG] Get non local IPs for "0.0.0.0"
-[DBG]   ip=172.17.0.3
+[DBG]   ip=172.17.0.4
 [INF] Server is ready
-[INF] Cluster name is IOJhRHKsF3h9itDTOzSpeY
-[WRN] Cluster name was dynamically generated, consider setting one
+[INF] Cluster name is my_cluster
 [INF] Listening for route connections on 0.0.0.0:6222
-[DBG] Trying to connect to route on nats-main:6222 (172.17.0.2:6222)
-[DBG] 172.17.0.2:6222 - rid:4 - Route connect msg sent
-[INF] 172.17.0.2:6222 - rid:4 - Route connection created
-[INF] 172.17.0.2:6222 - rid:4 - Router connection closed: Cluster Name Conflict
-[DBG] Attempting reconnect for solicited route "nats-route://ruser:T0pS3cr3t@nats-main:6222"
-[DBG] Trying to connect to route on nats-main:6222 (172.17.0.2:6222)
-[DBG] 172.17.0.2:6222 - rid:5 - Route connect msg sent
-[INF] 172.17.0.2:6222 - rid:5 - Route connection created
-[DBG] 172.17.0.2:6222 - rid:5 - Registering remote route "NBPVQ52MK5SD2CHZ6VUIMOVTMHJ5M5RQZKTGG5Z5GD32NH6YCB6C3DYB"
-[DBG] 172.17.0.2:6222 - rid:5 - Sent local subscriptions to route
+[DBG] Trying to connect to route on nats-main:6222 (172.17.0.3:6222)
+[DBG] 172.17.0.3:6222 - rid:4 - Route connect msg sent
+[INF] 172.17.0.3:6222 - rid:4 - Route connection created
+[DBG] 172.17.0.3:6222 - rid:4 - Registering remote route "NAFMDWWB7ZNUGID6PEQ7ESRPWHMFFZN4IW5NEW2CHZD262MAIXKGDXVF"
+[DBG] 172.17.0.3:6222 - rid:4 - Sent local subscriptions to route
 ```
 
 The server will load the configuration file below. Any command line flags can override these values.
@@ -174,7 +165,7 @@ cluster {
   authorization {
     user: ruser
     password: T0pS3cr3t
-    timeout: 0.75
+    timeout: 2
   }
 
   # Routes are actively solicited and connected to from this server.
