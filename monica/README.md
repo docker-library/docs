@@ -111,7 +111,7 @@ where `monica` is the name of the service in your `docker-compose.yml` file.
 
 ## Configuration using environment variables
 
-The Monica image will use environment variables to setup the application. See [Monica documentation](https://github.com/monicahq/monica/blob/master/.env.example) for common used variables you should setup.
+The Monica image will use environment variables to setup the application. See [Monica documentation](https://github.com/monicahq/monica/blob/main/.env.example) for common used variables you should setup.
 
 ## Running the image with docker-compose
 
@@ -287,7 +287,7 @@ To minimize image size, it's uncommon for additional related tools (such as `git
 
 # License
 
-View [license information](https://github.com/monicahq/monica/blob/master/LICENSE) for the software contained in this image.
+View [license information](https://github.com/monicahq/monica/blob/main/LICENSE.md) for the software contained in this image.
 
 As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 

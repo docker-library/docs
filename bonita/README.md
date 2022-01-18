@@ -17,10 +17,10 @@ WARNING:
 # Quick reference
 
 -	**Maintained by**:  
-	[Bonitasoft Community](https://github.com/Bonitasoft-Community/docker_bonita)
+	[Bonitasoft Community](https://github.com/bonitasoft/bonita-distrib)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[Bonita official documentation](https://documentation.bonitasoft.com), [StackOverflow](https://stackoverflow.com/tags/bonita), [Bonitasoft Community forum](https://community.bonitasoft.com/questions-and-answers)
 
 # Supported tags and respective `Dockerfile` links
 
@@ -31,7 +31,7 @@ WARNING:
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/Bonitasoft-Community/docker_bonita/issues](https://github.com/Bonitasoft-Community/docker_bonita/issues)
+	[Jira](https://bonita.atlassian.net/jira/software/c/projects/BBPMC/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/bonita/), [`arm64v8`](https://hub.docker.com/r/arm64v8/bonita/), [`ppc64le`](https://hub.docker.com/r/ppc64le/bonita/)
@@ -49,7 +49,7 @@ WARNING:
 
 # What is Bonita?
 
-Bonita (called Bonita BPM till 7.5) is an open-source business process management and workflow suite created in 2001. It was started in France National Institute for Research in Computer Science, and then had incubated several years inside of the French computer science company Groupe Bull. Since 2009, the development of Bonita is supported by a company dedicated to this activity: Bonitasoft.
+Bonita (called Bonita BPM till 7.5) is an open-source business process management and workflow suite created in 2001. It was started in France National Institute for Research in Computer Science, and then had incubated several years inside the French computer science company Groupe Bull. Since 2009, the development of Bonita is supported by a company dedicated to this activity: Bonitasoft.
 
 > [wikipedia.org/wiki/Bonita_BPM](http://en.wikipedia.org/wiki/Bonita_BPM)
 
