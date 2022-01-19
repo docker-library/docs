@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.13.1`, `1.13`, `latest`](https://github.com/erlef/docker-elixir/blob/0b0bff16725b9c267e1380aef2cdcc328d597c5f/1.13/Dockerfile)
--	[`1.13.1-slim`, `1.13-slim`, `slim`](https://github.com/erlef/docker-elixir/blob/0b0bff16725b9c267e1380aef2cdcc328d597c5f/1.13/slim/Dockerfile)
--	[`1.13.1-alpine`, `1.13-alpine`, `alpine`](https://github.com/erlef/docker-elixir/blob/0b0bff16725b9c267e1380aef2cdcc328d597c5f/1.13/alpine/Dockerfile)
+-	[`1.13.2`, `1.13`, `latest`](https://github.com/erlef/docker-elixir/blob/bf6487cd0aad2b343aac87d7de42263bcf8b51f7/1.13/Dockerfile)
+-	[`1.13.2-slim`, `1.13-slim`, `slim`](https://github.com/erlef/docker-elixir/blob/bf6487cd0aad2b343aac87d7de42263bcf8b51f7/1.13/slim/Dockerfile)
+-	[`1.13.2-alpine`, `1.13-alpine`, `alpine`](https://github.com/erlef/docker-elixir/blob/bf6487cd0aad2b343aac87d7de42263bcf8b51f7/1.13/alpine/Dockerfile)
 -	[`1.12.3`, `1.12`](https://github.com/erlef/docker-elixir/blob/a7a9a8ecd02b6e31e93cfa13d8c18de0328f6e1a/1.12/Dockerfile)
 -	[`1.12.3-slim`, `1.12-slim`](https://github.com/erlef/docker-elixir/blob/a7a9a8ecd02b6e31e93cfa13d8c18de0328f6e1a/1.12/slim/Dockerfile)
 -	[`1.12.3-alpine`, `1.12-alpine`](https://github.com/erlef/docker-elixir/blob/a7a9a8ecd02b6e31e93cfa13d8c18de0328f6e1a/1.12/alpine/Dockerfile)
