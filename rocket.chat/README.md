@@ -24,10 +24,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.3.1`, `4.3`, `4`, `latest`](https://github.com/RocketChat/Docker.Official.Image/blob/0a22a98080f5b3504aae51ee9ebf663ea0d235aa/4.3/Dockerfile)
--	[`4.2.2`, `4.2`](https://github.com/RocketChat/Docker.Official.Image/blob/738d42b8538378a2719bc7d81f027e9d553b8e71/4.2/Dockerfile)
--	[`4.1.2`, `4.1`](https://github.com/RocketChat/Docker.Official.Image/blob/119da95703c33f57db11cbe0ded9f9f87bbd0074/4.1/Dockerfile)
--	[`3.18.3`, `3.18`, `3`](https://github.com/RocketChat/Docker.Official.Image/blob/119da95703c33f57db11cbe0ded9f9f87bbd0074/3.18/Dockerfile)
+-	[`4.3.2`, `4.3`, `4`, `latest`](https://github.com/RocketChat/Docker.Official.Image/blob/cef8395068541264a2b92cc03408d60cdfeb8c6a/4.3/Dockerfile)
+-	[`4.2.3`, `4.2`](https://github.com/RocketChat/Docker.Official.Image/blob/cef8395068541264a2b92cc03408d60cdfeb8c6a/4.2/Dockerfile)
+-	[`4.1.3`, `4.1`](https://github.com/RocketChat/Docker.Official.Image/blob/cef8395068541264a2b92cc03408d60cdfeb8c6a/4.1/Dockerfile)
+-	[`3.18.4`, `3.18`, `3`](https://github.com/RocketChat/Docker.Official.Image/blob/cef8395068541264a2b92cc03408d60cdfeb8c6a/3.18/Dockerfile)
 
 # Quick reference (cont.)
 
