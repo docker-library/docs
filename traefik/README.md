@@ -24,10 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`v2.6.0-rc3-windowsservercore-1809`, `2.6.0-rc3-windowsservercore-1809`, `v2.6-windowsservercore-1809`, `2.6-windowsservercore-1809`, `rocamadour-windowsservercore-1809`](https://github.com/traefik/traefik-library-image/blob/257abf1b31c2962fa25330465400c4b16a06d687/windows/1809/Dockerfile)
--	[`v2.6.0-rc3`, `2.6.0-rc3`, `v2.6`, `2.6`, `rocamadour`](https://github.com/traefik/traefik-library-image/blob/257abf1b31c2962fa25330465400c4b16a06d687/alpine/Dockerfile)
--	[`v2.5.7-windowsservercore-1809`, `2.5.7-windowsservercore-1809`, `v2.5-windowsservercore-1809`, `2.5-windowsservercore-1809`, `brie-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/traefik/traefik-library-image/blob/a76bd42fe369759cd9c14abd3855dd24461c7ab8/windows/1809/Dockerfile)
--	[`v2.5.7`, `2.5.7`, `v2.5`, `2.5`, `brie`, `latest`](https://github.com/traefik/traefik-library-image/blob/a76bd42fe369759cd9c14abd3855dd24461c7ab8/alpine/Dockerfile)
+-	[`v2.6.0-windowsservercore-1809`, `2.6.0-windowsservercore-1809`, `v2.6-windowsservercore-1809`, `2.6-windowsservercore-1809`, `rocamadour-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/traefik/traefik-library-image/blob/333cb722775df31365a41baf164b00a032083a57/windows/1809/Dockerfile)
+-	[`v2.6.0`, `2.6.0`, `v2.6`, `2.6`, `rocamadour`, `latest`](https://github.com/traefik/traefik-library-image/blob/333cb722775df31365a41baf164b00a032083a57/alpine/Dockerfile)
 -	[`v1.7.34-windowsservercore-1809`, `1.7.34-windowsservercore-1809`, `v1.7-windowsservercore-1809`, `1.7-windowsservercore-1809`, `maroilles-windowsservercore-1809`](https://github.com/traefik/traefik-library-image/blob/4434758cf14bbd1ec9511b3f2a37b0a6ce846db6/windows/1809/Dockerfile)
 -	[`v1.7.34-alpine`, `1.7.34-alpine`, `v1.7-alpine`, `1.7-alpine`, `maroilles-alpine`](https://github.com/traefik/traefik-library-image/blob/4434758cf14bbd1ec9511b3f2a37b0a6ce846db6/alpine/Dockerfile)
 -	[`v1.7.34`, `1.7.34`, `v1.7`, `1.7`, `maroilles`](https://github.com/traefik/traefik-library-image/blob/4434758cf14bbd1ec9511b3f2a37b0a6ce846db6/scratch/Dockerfile)
