@@ -125,6 +125,7 @@ services:
       # this yaml and uncomment the following line and use compose to restart
       # the mediawiki service
       # - ./LocalSettings.php:/var/www/html/LocalSettings.php
+  # This key also defines the name of the database host used during setup instead of the default "localhost"
   database:
     image: mariadb
     restart: always
@@ -136,7 +137,7 @@ services:
       MYSQL_RANDOM_ROOT_PASSWORD: 'yes'
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/7b72bad5e2c684fa5829aecd3bf5b17a6e685963/mediawiki/stack.yml)
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/a8d47398e44e74e193ba2603bfa122134ac10a34/mediawiki/stack.yml)
 
 Run `docker stack deploy -c stack.yml mediawiki` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
 
