@@ -66,31 +66,30 @@ $ docker run -d -p 4222:4222 -p 8222:8222 %%IMAGE%%
 Output that you would get if you had started with `-ti` instead of `d` (for daemon):
 
 ```bash
-[1] 2021/10/15 18:15:44.594415 [INF] STREAM: Starting nats-streaming-server[test-cluster] version 0.23.0
-[1] 2021/10/15 18:15:44.594457 [INF] STREAM: ServerID: 3pz9l5i3u7PjkrMS4S5aaS
-[1] 2021/10/15 18:15:44.594460 [INF] STREAM: Go version: go1.16.9
-[1] 2021/10/15 18:15:44.594462 [INF] STREAM: Git commit: [fcf3b54]
-[1] 2021/10/15 18:15:44.596995 [INF] Starting nats-server
-[1] 2021/10/15 18:15:44.597007 [INF]   Version:  2.6.2
-[1] 2021/10/15 18:15:44.597009 [INF]   Git:      [f7c3ac5]
-[1] 2021/10/15 18:15:44.597017 [INF]   Name:     NCKNKO3YQKBRMYB42K3FFFWA5PDSA2JOEOD2VBUVAKDXAUEEZRWO2DLL
-[1] 2021/10/15 18:15:44.597019 [INF]   ID:       NCKNKO3YQKBRMYB42K3FFFWA5PDSA2JOEOD2VBUVAKDXAUEEZRWO2DLL
-[1] 2021/10/15 18:15:44.599531 [INF] Starting http monitor on 0.0.0.0:8222
-[1] 2021/10/15 18:15:44.600280 [INF] Listening for client connections on 0.0.0.0:4222
-[1] 2021/10/15 18:15:44.600734 [INF] Server is ready
-[1] 2021/10/15 18:15:44.625226 [INF] STREAM: Recovering the state...
-[1] 2021/10/15 18:15:44.625257 [INF] STREAM: No recovered state
-[1] 2021/10/15 18:15:44.625882 [INF] STREAM: Message store is MEMORY
-[1] 2021/10/15 18:15:44.625940 [INF] STREAM: ---------- Store Limits ----------
-[1] 2021/10/15 18:15:44.625944 [INF] STREAM: Channels:                  100 *
-[1] 2021/10/15 18:15:44.625946 [INF] STREAM: --------- Channels Limits --------
-[1] 2021/10/15 18:15:44.625969 [INF] STREAM:   Subscriptions:          1000 *
-[1] 2021/10/15 18:15:44.625972 [INF] STREAM:   Messages     :       1000000 *
-[1] 2021/10/15 18:15:44.625974 [INF] STREAM:   Bytes        :     976.56 MB *
-[1] 2021/10/15 18:15:44.625976 [INF] STREAM:   Age          :     unlimited *
-[1] 2021/10/15 18:15:44.625978 [INF] STREAM:   Inactivity   :     unlimited *
-[1] 2021/10/15 18:15:44.625980 [INF] STREAM: ----------------------------------
-[1] 2021/10/15 18:15:44.625982 [INF] STREAM: Streaming Server is ready
+[1] 2022/01/26 15:41:58.850416 [INF] STREAM: Starting nats-streaming-server[test-cluster] version 0.24.0
+[1] 2022/01/26 15:41:58.850483 [INF] STREAM: ServerID: RAs4vSm72Zt3UDyqRvBCaR
+[1] 2022/01/26 15:41:58.850485 [INF] STREAM: Go version: go1.17.6
+[1] 2022/01/26 15:41:58.850487 [INF] STREAM: Git commit: [a17a5b6]
+[1] 2022/01/26 15:41:58.851878 [INF] Starting nats-server
+[1] 2022/01/26 15:41:58.851882 [INF]   Version:  2.7.1
+[1] 2022/01/26 15:41:58.851883 [INF]   Git:      [7cf537e]
+[1] 2022/01/26 15:41:58.851885 [INF]   Name:     NDZHFFR4IZJRDLYX3ATKHGLM2GMCVCCSLHRUZNBHBLHD7U3W2WY6U4HP
+[1] 2022/01/26 15:41:58.851886 [INF]   ID:       NDZHFFR4IZJRDLYX3ATKHGLM2GMCVCCSLHRUZNBHBLHD7U3W2WY6U4HP
+[1] 2022/01/26 15:41:58.852263 [INF] Listening for client connections on 0.0.0.0:4222
+[1] 2022/01/26 15:41:58.852449 [INF] Server is ready
+[1] 2022/01/26 15:41:58.880204 [INF] STREAM: Recovering the state...
+[1] 2022/01/26 15:41:58.880219 [INF] STREAM: No recovered state
+[1] 2022/01/26 15:41:58.880550 [INF] STREAM: Message store is MEMORY
+[1] 2022/01/26 15:41:58.880576 [INF] STREAM: ---------- Store Limits ----------
+[1] 2022/01/26 15:41:58.880579 [INF] STREAM: Channels:                  100 *
+[1] 2022/01/26 15:41:58.880581 [INF] STREAM: --------- Channels Limits --------
+[1] 2022/01/26 15:41:58.880583 [INF] STREAM:   Subscriptions:          1000 *
+[1] 2022/01/26 15:41:58.880584 [INF] STREAM:   Messages     :       1000000 *
+[1] 2022/01/26 15:41:58.880586 [INF] STREAM:   Bytes        :     976.56 MB *
+[1] 2022/01/26 15:41:58.880588 [INF] STREAM:   Age          :     unlimited *
+[1] 2022/01/26 15:41:58.880589 [INF] STREAM:   Inactivity   :     unlimited *
+[1] 2022/01/26 15:41:58.880591 [INF] STREAM: ----------------------------------
+[1] 2022/01/26 15:41:58.880593 [INF] STREAM: Streaming Server is ready
 ```
 
 To use a file based store instead, you would run:
@@ -98,31 +97,31 @@ To use a file based store instead, you would run:
 ```bash
 $ docker run -d -p 4222:4222 -p 8222:8222 %%IMAGE%% -store file -dir datastore
 
-[1] 2021/10/15 18:16:09.104896 [INF] STREAM: Starting nats-streaming-server[test-cluster] version 0.23.0
-[1] 2021/10/15 18:16:09.104949 [INF] STREAM: ServerID: vKakx9CW8p0jjXVbyhb2Ir
-[1] 2021/10/15 18:16:09.104952 [INF] STREAM: Go version: go1.16.9
-[1] 2021/10/15 18:16:09.104953 [INF] STREAM: Git commit: [fcf3b54]
-[1] 2021/10/15 18:16:09.105637 [INF] Starting nats-server
-[1] 2021/10/15 18:16:09.105643 [INF]   Version:  2.6.2
-[1] 2021/10/15 18:16:09.105644 [INF]   Git:      [f7c3ac5]
-[1] 2021/10/15 18:16:09.105646 [INF]   Name:     NDH4OZXJ6OA445SXDSQP56DS66YORDJX3XHQL6GJGLRJW3IOLA7XOQQF
-[1] 2021/10/15 18:16:09.105648 [INF]   ID:       NDH4OZXJ6OA445SXDSQP56DS66YORDJX3XHQL6GJGLRJW3IOLA7XOQQF
-[1] 2021/10/15 18:16:09.108219 [INF] Listening for client connections on 0.0.0.0:4222
-[1] 2021/10/15 18:16:09.108761 [INF] Server is ready
-[1] 2021/10/15 18:16:09.133738 [INF] STREAM: Recovering the state...
-[1] 2021/10/15 18:16:09.133902 [INF] STREAM: No recovered state
-[1] 2021/10/15 18:16:09.134557 [INF] STREAM: Message store is FILE
-[1] 2021/10/15 18:16:09.134640 [INF] STREAM: Store location: datastore
-[1] 2021/10/15 18:16:09.134692 [INF] STREAM: ---------- Store Limits ----------
-[1] 2021/10/15 18:16:09.134760 [INF] STREAM: Channels:                  100 *
-[1] 2021/10/15 18:16:09.134785 [INF] STREAM: --------- Channels Limits --------
-[1] 2021/10/15 18:16:09.134791 [INF] STREAM:   Subscriptions:          1000 *
-[1] 2021/10/15 18:16:09.134795 [INF] STREAM:   Messages     :       1000000 *
-[1] 2021/10/15 18:16:09.134799 [INF] STREAM:   Bytes        :     976.56 MB *
-[1] 2021/10/15 18:16:09.134803 [INF] STREAM:   Age          :     unlimited *
-[1] 2021/10/15 18:16:09.134826 [INF] STREAM:   Inactivity   :     unlimited *
-[1] 2021/10/15 18:16:09.134831 [INF] STREAM: ----------------------------------
-[1] 2021/10/15 18:16:09.134880 [INF] STREAM: Streaming Server is ready
+[1] 2022/01/26 15:43:12.379812 [INF] STREAM: Starting nats-streaming-server[test-cluster] version 0.24.0
+[1] 2022/01/26 15:43:12.379886 [INF] STREAM: ServerID: DGPwLAKr1zUYAxXq8S8cL3
+[1] 2022/01/26 15:43:12.379888 [INF] STREAM: Go version: go1.17.6
+[1] 2022/01/26 15:43:12.379889 [INF] STREAM: Git commit: [a17a5b6]
+[1] 2022/01/26 15:43:12.381280 [INF] Starting nats-server
+[1] 2022/01/26 15:43:12.381284 [INF]   Version:  2.7.1
+[1] 2022/01/26 15:43:12.381286 [INF]   Git:      [7cf537e]
+[1] 2022/01/26 15:43:12.381287 [INF]   Name:     NDXGPNEZDOFMXQKELIBLE4VVCZEY46H6XF4KW5VRKVKPOKSOLY4YMX6X
+[1] 2022/01/26 15:43:12.381289 [INF]   ID:       NDXGPNEZDOFMXQKELIBLE4VVCZEY46H6XF4KW5VRKVKPOKSOLY4YMX6X
+[1] 2022/01/26 15:43:12.381711 [INF] Listening for client connections on 0.0.0.0:4222
+[1] 2022/01/26 15:43:12.381913 [INF] Server is ready
+[1] 2022/01/26 15:43:12.409539 [INF] STREAM: Recovering the state...
+[1] 2022/01/26 15:43:12.409814 [INF] STREAM: No recovered state
+[1] 2022/01/26 15:43:12.410278 [INF] STREAM: Message store is FILE
+[1] 2022/01/26 15:43:12.410283 [INF] STREAM: Store location: datastore
+[1] 2022/01/26 15:43:12.410301 [INF] STREAM: ---------- Store Limits ----------
+[1] 2022/01/26 15:43:12.410303 [INF] STREAM: Channels:                  100 *
+[1] 2022/01/26 15:43:12.410304 [INF] STREAM: --------- Channels Limits --------
+[1] 2022/01/26 15:43:12.410306 [INF] STREAM:   Subscriptions:          1000 *
+[1] 2022/01/26 15:43:12.410307 [INF] STREAM:   Messages     :       1000000 *
+[1] 2022/01/26 15:43:12.410308 [INF] STREAM:   Bytes        :     976.56 MB *
+[1] 2022/01/26 15:43:12.410309 [INF] STREAM:   Age          :     unlimited *
+[1] 2022/01/26 15:43:12.410310 [INF] STREAM:   Inactivity   :     unlimited *
+[1] 2022/01/26 15:43:12.410311 [INF] STREAM: ----------------------------------
+[1] 2022/01/26 15:43:12.410313 [INF] STREAM: Streaming Server is ready
 ```
 
 You can also connect to a remote NATS Server running in a docker image. First, run NATS Server:
@@ -136,25 +135,24 @@ Now, start the Streaming server and link it to the above docker image:
 ```bash
 $ docker run -d --link nats-main %%IMAGE%% -store file -dir datastore -ns nats://nats-main:4222
 
-[1] 2021/10/15 18:16:26.279927 [INF] STREAM: Starting nats-streaming-server[test-cluster] version 0.23.0
-[1] 2021/10/15 18:16:26.280003 [INF] STREAM: ServerID: S7LNp4pQhtQBZxHmkZPiqx
-[1] 2021/10/15 18:16:26.280038 [INF] STREAM: Go version: go1.16.9
-[1] 2021/10/15 18:16:26.280065 [INF] STREAM: Git commit: [fcf3b54]
-[1] 2021/10/15 18:16:26.309306 [INF] STREAM: Recovering the state...
-[1] 2021/10/15 18:16:26.309448 [INF] STREAM: No recovered state
-[1] 2021/10/15 18:16:26.309821 [INF] STREAM: Message store is FILE
-[1] 2021/10/15 18:16:26.309905 [INF] STREAM: Store location: datastore
-[1] 2021/10/15 18:16:26.309924 [INF] STREAM: ---------- Store Limits ----------
-[1] 2021/10/15 18:16:26.309944 [INF] STREAM: Channels:                  100 *
-[1] 2021/10/15 18:16:26.309947 [INF] STREAM: --------- Channels Limits --------
-[1] 2021/10/15 18:16:26.309948 [INF] STREAM:   Subscriptions:          1000 *
-[1] 2021/10/15 18:16:26.309949 [INF] STREAM:   Messages     :       1000000 *
-[1] 2021/10/15 18:16:26.309951 [INF] STREAM:   Bytes        :     976.56 MB *
-[1] 2021/10/15 18:16:26.309952 [INF] STREAM:   Age          :     unlimited *
-[1] 2021/10/15 18:16:26.309953 [INF] STREAM:   Inactivity   :     unlimited *
-[1] 2021/10/15 18:16:26.309955 [INF] STREAM: ----------------------------------
-[1] 2021/10/15 18:16:26.309956 [INF] STREAM: Streaming Server is ready
-
+[1] 2022/01/26 15:43:36.324320 [INF] STREAM: Starting nats-streaming-server[test-cluster] version 0.24.0
+[1] 2022/01/26 15:43:36.324386 [INF] STREAM: ServerID: KO3l0dRVOEHMnt5298mr1h
+[1] 2022/01/26 15:43:36.324388 [INF] STREAM: Go version: go1.17.6
+[1] 2022/01/26 15:43:36.324389 [INF] STREAM: Git commit: [a17a5b6]
+[1] 2022/01/26 15:43:36.352954 [INF] STREAM: Recovering the state...
+[1] 2022/01/26 15:43:36.353787 [INF] STREAM: Recovered 0 channel(s)
+[1] 2022/01/26 15:43:36.354444 [INF] STREAM: Message store is FILE
+[1] 2022/01/26 15:43:36.354450 [INF] STREAM: Store location: datastore
+[1] 2022/01/26 15:43:36.354467 [INF] STREAM: ---------- Store Limits ----------
+[1] 2022/01/26 15:43:36.354469 [INF] STREAM: Channels:                  100 *
+[1] 2022/01/26 15:43:36.354470 [INF] STREAM: --------- Channels Limits --------
+[1] 2022/01/26 15:43:36.354472 [INF] STREAM:   Subscriptions:          1000 *
+[1] 2022/01/26 15:43:36.354473 [INF] STREAM:   Messages     :       1000000 *
+[1] 2022/01/26 15:43:36.354474 [INF] STREAM:   Bytes        :     976.56 MB *
+[1] 2022/01/26 15:43:36.354475 [INF] STREAM:   Age          :     unlimited *
+[1] 2022/01/26 15:43:36.354476 [INF] STREAM:   Inactivity   :     unlimited *
+[1] 2022/01/26 15:43:36.354477 [INF] STREAM: ----------------------------------
+[1] 2022/01/26 15:43:36.354479 [INF] STREAM: Streaming Server is ready
 ```
 
 Notice that the output shows that the NATS Server was not started, as opposed to the first output.
