@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.9.2`, `latest`](https://github.com/hashicorp/docker-vault/blob/e511721093cd8c71d408aace1b261ebc23f4b76f/0.X/Dockerfile)
--	[`1.8.7`](https://github.com/hashicorp/docker-vault/blob/c3f9c6e247c85922b8a613e604cf856da7855997/0.X/Dockerfile)
--	[`1.7.8`](https://github.com/hashicorp/docker-vault/blob/0f3373e47bd90c58b41ff7082f84ad2896977d1d/0.X/Dockerfile)
+-	[`1.9.3`, `latest`](https://github.com/hashicorp/docker-vault/blob/fca519d5cb74d47f18559fbd3dbca6b8feee8fae/0.X/Dockerfile)
+-	[`1.8.8`](https://github.com/hashicorp/docker-vault/blob/a600cc5a786bede32bbd53c86a88cbb2898ed00f/0.X/Dockerfile)
+-	[`1.7.9`](https://github.com/hashicorp/docker-vault/blob/b38a7e416ccb5c516b341a7957d9f9ce7df2230d/0.X/Dockerfile)
 -	[`1.6.7`](https://github.com/hashicorp/docker-vault/blob/ee3213df631000172da382184a516a72a7266b76/0.X/Dockerfile)
 
 # Quick reference (cont.)

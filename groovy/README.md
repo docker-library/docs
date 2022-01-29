@@ -29,11 +29,11 @@ WARNING:
 -	[`3.0.9-jdk11-alpine`, `3.0-jdk11-alpine`, `jdk11-alpine`](https://github.com/groovy/docker-groovy/blob/a3aa08aa0ceaaf13f1ad73a882aba081ff46e816/jdk11-alpine/Dockerfile)
 -	[`3.0.9-jdk17`, `3.0-jdk17`, `jdk17`, `3.0.9-jdk`, `3.0-jdk`, `3.0.9`, `3.0`, `3`, `jdk`, `latest`](https://github.com/groovy/docker-groovy/blob/a3aa08aa0ceaaf13f1ad73a882aba081ff46e816/jdk17/Dockerfile)
 -	[`3.0.9-jdk17-alpine`, `3.0-jdk17-alpine`, `jdk17-alpine`, `3.0.9-jdk-alpine`, `3.0-jdk-alpine`, `3.0.9-alpine`, `3.0-alpine`, `3-alpine`, `jdk-alpine`, `alpine`](https://github.com/groovy/docker-groovy/blob/a3aa08aa0ceaaf13f1ad73a882aba081ff46e816/jdk17-alpine/Dockerfile)
--	[`4.0.0-rc-2-jdk8`, `4.0.0-jdk8`, `4.0-jdk8`](https://github.com/groovy/docker-groovy/blob/fc7526f787f00ac1ac085f3f7cb6b6203d16423e/jdk8/Dockerfile)
--	[`4.0.0-rc-2-jdk11`, `4.0.0-jdk11`, `4.0-jdk11`](https://github.com/groovy/docker-groovy/blob/fc7526f787f00ac1ac085f3f7cb6b6203d16423e/jdk11/Dockerfile)
--	[`4.0.0-rc-2-jdk11-alpine`, `4.0.0-jdk11-alpine`, `4.0-jdk11-alpine`](https://github.com/groovy/docker-groovy/blob/fc7526f787f00ac1ac085f3f7cb6b6203d16423e/jdk11-alpine/Dockerfile)
--	[`4.0.0-rc-2-jdk17`, `4.0.0-jdk17`, `4.0-jdk17`, `4.0.0-rc-2-jdk`, `4.0.0-jdk`, `4.0.0-rc-2`, `4.0.0`, `4.0`, `4`](https://github.com/groovy/docker-groovy/blob/fc7526f787f00ac1ac085f3f7cb6b6203d16423e/jdk17/Dockerfile)
--	[`4.0.0-rc-2-jdk17-alpine`, `4.0.0-jdk17-alpine`, `4.0-jdk17-alpine`, `4.0.0-rc-2-jdk-alpine`, `4.0.0-jdk-alpine`, `4.0.0-rc-2-alpine`, `4.0.0-alpine`, `4.0-alpine`, `4-alpine`](https://github.com/groovy/docker-groovy/blob/fc7526f787f00ac1ac085f3f7cb6b6203d16423e/jdk17-alpine/Dockerfile)
+-	[`4.0.0-jdk8`, `4.0-jdk8`](https://github.com/groovy/docker-groovy/blob/e5ad31c6a1988ede1dbe19c45c3007522a29a830/jdk8/Dockerfile)
+-	[`4.0.0-jdk11`, `4.0-jdk11`](https://github.com/groovy/docker-groovy/blob/e5ad31c6a1988ede1dbe19c45c3007522a29a830/jdk11/Dockerfile)
+-	[`4.0.0-jdk11-alpine`, `4.0-jdk11-alpine`](https://github.com/groovy/docker-groovy/blob/e5ad31c6a1988ede1dbe19c45c3007522a29a830/jdk11-alpine/Dockerfile)
+-	[`4.0.0-jdk17`, `4.0-jdk17`, `4.0.0-jdk`, `4.0.0`, `4.0`, `4`](https://github.com/groovy/docker-groovy/blob/e5ad31c6a1988ede1dbe19c45c3007522a29a830/jdk17/Dockerfile)
+-	[`4.0.0-jdk17-alpine`, `4.0-jdk17-alpine`, `4.0.0-jdk-alpine`, `4.0.0-alpine`, `4.0-alpine`, `4-alpine`](https://github.com/groovy/docker-groovy/blob/e5ad31c6a1988ede1dbe19c45c3007522a29a830/jdk17-alpine/Dockerfile)
 
 # Quick reference (cont.)
 
