@@ -26,7 +26,7 @@ WARNING:
 
 -	[`latest`, `enterprise`, `7.0.3`, `enterprise-7.0.3`](https://github.com/couchbase/docker/blob/ce17444d6e082a8a08ba636c513e3460b98d3d2c/enterprise/couchbase-server/7.0.3/Dockerfile)
 -	[`community`, `community-7.0.2`](https://github.com/couchbase/docker/blob/aec4494ab5280caf567997d72714f57572a6315b/community/couchbase-server/7.0.2/Dockerfile)
--	[`6.6.4`, `enterprise-6.6.4`](https://github.com/couchbase/docker/blob/e27aaf8d37861a570ad62a96ea04c84026a59282/enterprise/couchbase-server/6.6.4/Dockerfile)
+-	[`6.6.5`, `enterprise-6.6.5`](https://github.com/couchbase/docker/blob/b9ef0fefa25a0ca646bf746765f66bf33ee3fac7/enterprise/couchbase-server/6.6.5/Dockerfile)
 -	[`community-6.6.0`](https://github.com/couchbase/docker/blob/5929be778eb5306f116f71cc9a0a23fea6d9a7aa/community/couchbase-server/6.6.0/Dockerfile)
 -	[`6.0.5`, `enterprise-6.0.5`](https://github.com/couchbase/docker/blob/5929be778eb5306f116f71cc9a0a23fea6d9a7aa/enterprise/couchbase-server/6.0.5/Dockerfile)
 
