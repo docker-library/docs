@@ -24,13 +24,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`18.04`, `bionic-20220105`, `bionic`](https://github.com/tianon/docker-brew-ubuntu-core/blob/f2f3f01ed67bab2e24b8c4fda60ef035a871b4c7/bionic/Dockerfile)
--	[`20.04`, `focal-20220105`, `focal`, `latest`](https://github.com/tianon/docker-brew-ubuntu-core/blob/f2f3f01ed67bab2e24b8c4fda60ef035a871b4c7/focal/Dockerfile)
--	[`21.04`, `hirsute-20211208`, `hirsute`](https://github.com/tianon/docker-brew-ubuntu-core/blob/f2f3f01ed67bab2e24b8c4fda60ef035a871b4c7/hirsute/Dockerfile)
--	[`21.10`, `impish-20220105`, `impish`, `rolling`](https://github.com/tianon/docker-brew-ubuntu-core/blob/f2f3f01ed67bab2e24b8c4fda60ef035a871b4c7/impish/Dockerfile)
--	[`22.04`, `jammy-20220101`, `jammy`, `devel`](https://github.com/tianon/docker-brew-ubuntu-core/blob/f2f3f01ed67bab2e24b8c4fda60ef035a871b4c7/jammy/Dockerfile)
--	[`14.04`, `trusty-20191217`, `trusty`](https://github.com/tianon/docker-brew-ubuntu-core/blob/f2f3f01ed67bab2e24b8c4fda60ef035a871b4c7/trusty/Dockerfile)
--	[`16.04`, `xenial-20210804`, `xenial`](https://github.com/tianon/docker-brew-ubuntu-core/blob/f2f3f01ed67bab2e24b8c4fda60ef035a871b4c7/xenial/Dockerfile)
+-	[`18.04`, `bionic-20220128`, `bionic`](https://github.com/tianon/docker-brew-ubuntu-core/blob/7a6c081cbf5fd53c66c954766280a5d0cf1a6a5a/bionic/Dockerfile)
+-	[`20.04`, `focal-20220113`, `focal`, `latest`](https://github.com/tianon/docker-brew-ubuntu-core/blob/7a6c081cbf5fd53c66c954766280a5d0cf1a6a5a/focal/Dockerfile)
+-	[`21.04`, `hirsute-20220113`, `hirsute`](https://github.com/tianon/docker-brew-ubuntu-core/blob/7a6c081cbf5fd53c66c954766280a5d0cf1a6a5a/hirsute/Dockerfile)
+-	[`21.10`, `impish-20220128`, `impish`, `rolling`](https://github.com/tianon/docker-brew-ubuntu-core/blob/7a6c081cbf5fd53c66c954766280a5d0cf1a6a5a/impish/Dockerfile)
+-	[`22.04`, `jammy-20220130`, `jammy`, `devel`](https://github.com/tianon/docker-brew-ubuntu-core/blob/7a6c081cbf5fd53c66c954766280a5d0cf1a6a5a/jammy/Dockerfile)
+-	[`14.04`, `trusty-20191217`, `trusty`](https://github.com/tianon/docker-brew-ubuntu-core/blob/7a6c081cbf5fd53c66c954766280a5d0cf1a6a5a/trusty/Dockerfile)
+-	[`16.04`, `xenial-20210804`, `xenial`](https://github.com/tianon/docker-brew-ubuntu-core/blob/7a6c081cbf5fd53c66c954766280a5d0cf1a6a5a/xenial/Dockerfile)
 
 # Quick reference (cont.)
 
