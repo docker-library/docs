@@ -8,20 +8,23 @@ Go (a.k.a., Golang) is a programming language first developed at Google. It is a
 
 # How to use this image
 
-**Note:** `/go` is world-writable to allow flexibility in the user which runs the container (for example, in a container started with `--user 1000:1000`, running `go get github.com/example/...` will succeed). While the `777` directory would be insecure on a regular host setup, there are not typically other processes or users inside the container, so this is equivilant to `700` for Docker usage, but allowing for `--user` flexibility.
+**Note:** `/go` is world-writable to allow flexibility in the user which runs the container (for example, in a container started with `--user 1000:1000`, running `go get github.com/example/...` into the default `$GOPATH` will succeed). While the `777` directory would be insecure on a regular host setup, there are not typically other processes or users inside the container, so this is equivalent to `700` for Docker usage, but allowing for `--user` flexibility.
 
 ## Start a Go instance in your app
 
-The most straightforward way to use this image is to use a Go container as both the build and runtime environment. In your `Dockerfile`, writing something along the lines of the following will compile and run your project:
+The most straightforward way to use this image is to use a Go container as both the build and runtime environment. In your `Dockerfile`, writing something along the lines of the following will compile and run your project (assuming it uses `go.mod` for dependency management):
 
 ```dockerfile
 FROM %%IMAGE%%:1.17
 
-WORKDIR /go/src/app
-COPY . .
+WORKDIR /usr/src/app
 
-RUN go get -d -v ./...
-RUN go install -v ./...
+# pre-copy/cache go.mod for pre-downloading dependencies and only redownloading them in subsequent builds if they change
+COPY go.mod go.sum ./
+RUN go mod download && go mod verify
+
+COPY . .
+RUN go build -v -o /usr/local/bin/app ./...
 
 CMD ["app"]
 ```
