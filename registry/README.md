@@ -26,8 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.8.0-beta.1`](https://github.com/docker/distribution-library-image/blob/c70c2acb365928f10bfc7706cc0f3f4d16f7427b/Dockerfile)
--	[`2.7.1`, `2.7`, `2`, `latest`](https://github.com/docker/distribution-library-image/blob/ab00e8dae12d4515ed259015eab771ec92e92dd4/amd64/Dockerfile)
+-	[`2.8.0`, `2.8`, `2`, `latest`](https://github.com/docker/distribution-library-image/blob/5fd2614beccba35242694b13f8a37653c05ea852/Dockerfile)
 
 # Quick reference (cont.)
 
