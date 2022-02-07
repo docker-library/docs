@@ -54,7 +54,7 @@ You can try API Firewall by running the demo environment that deploys an example
 
 When creating API Firewall, we prioritized speed and efficiency to ensure that our customers would have the fastest APIs possible. Our latest tests demonstrate that the average time required for API Firewall to process one request is 1.339 ms:
 
-```
+```console
 $ ab -c 200 -n 10000 -p ./large.json -T application/json http://127.0.0.1:8282/test/signup
 
 Document Path:          /test/signup
