@@ -94,4 +94,3 @@ Percentage of the requests served within a certain time (ms)
 ```
 
 These performance results are not the only ones we have got during API Firewall testing. Other results along with the methods used to improve API Firewall performance are described in this [Wallarm's blog article](https://lab.wallarm.com/wallarm-api-firewall-outperforms-nginx-in-a-production-environment/).
-
