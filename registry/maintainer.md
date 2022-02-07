@@ -1,1 +1,1 @@
-../.common-templates/maintainer-docker.md
+[CNCF maintainers](%%GITHUB-REPO%%)
