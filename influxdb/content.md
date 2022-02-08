@@ -356,6 +356,38 @@ $ docker run -d -p 8086:8086 \
       %%IMAGE%%:2.0
 ```
 
+#### Using docker-compose approach
+To add you automated setted up InfluxDB database to your docker-compose file, you can add the folling lines:
+
+``` code
+version: "3.9"
+
+services:
+
+  influxdb_service:
+    image: influxdb:2.0
+    restart: always
+    environment:
+      DOCKER_INFLUXDB_INIT_MODE: setup
+      DOCKER_INFLUXDB_INIT_USERNAME: your_username
+      DOCKER_INFLUXDB_INIT_PASSWORD: your_password
+      DOCKER_INFLUXDB_INIT_ORG: your_organisation
+      DOCKER_INFLUXDB_INIT_BUCKET: your_bucket
+      DOCKER_INFLUXDB_INIT_RETENTION: 1w
+      DOCKER_INFLUXDB_INIT_ADMIN_TOKEN: token_influx
+
+    volumes:
+      - influxdata_volume:/var/lib/influxdb2
+      - influxconfig_volume:/etc/influxdb2
+    ports:
+      - 8086:8086
+
+volumes:
+  influxdata_volume:
+  influxconfig_volume:
+  
+```
+
 **NOTE:** Automated setup will not run if an existing boltdb file is found at the configured path. This behavior allows for the InfluxDB container to reboot post-setup without encountering "DB is already set up" errors.
 
 ### Interacting with InfluxDB
