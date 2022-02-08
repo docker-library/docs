@@ -1,4 +1,4 @@
-# Docker Registry
+# Distribution Registry
 
 %%LOGO%%
 
