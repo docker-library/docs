@@ -1,5 +1,4 @@
-InfluxDB
-========
+# InfluxDB
 
 InfluxDB is a time series database built from the ground up to handle high write and query loads. InfluxDB is meant to be used as a backing store for any use case involving large amounts of timestamped data, including DevOps monitoring, application metrics, IoT sensor data, and real-time analytics.
 
@@ -7,13 +6,11 @@ InfluxDB is a time series database built from the ground up to handle high write
 
 %%LOGO%%
 
-`latest` updated to InfluxDB 2.x
---------------------------------
+## `latest` updated to InfluxDB 2.x
 
 The `latest` tag for this image now points to the latest released implementation of InfluxDB 2.x. If you are using the `latest` tag and would like to stay on the InfluxDB 1.x line, please update your environment to reference the `1.8` tag.
 
-Using this Image - InfluxDB 2.x
--------------------------------
+## Using this Image - InfluxDB 2.x
 
 ### Upgrading from InfluxDB 1.x
 
@@ -360,7 +357,6 @@ $ docker run -d -p 8086:8086 \
 ```
 
 ##### Using docker-compose approach
-
 To add you automated setted up InfluxDB database to your docker-compose file, you can add the folling lines:
 
 ```code
@@ -456,8 +452,7 @@ $ docker run -p 8086:8086 \
 
 **NOTE:** Custom scripts will not run if an existing boltdb file is found at the configured path (causing `setup` or `upgrade` to be skipped). This behavior allows for the InfluxDB container to reboot post-initialization without encountering errors from non-idempotent script commands.
 
-Using this Image - InfluxDB 1.x
--------------------------------
+## Using this Image - InfluxDB 1.x
 
 ### Running the container
 
