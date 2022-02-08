@@ -20,7 +20,7 @@ WARNING:
 	[Docker, Inc.](https://github.com/docker/distribution-library-image)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[CNCF community slack](https://slack.cncf.io/), or [Stack Overflow](https://stackoverflow.com/questions/tagged/docker+registry)
 
 -	**Need a free, secure hosted registry?** Try [Docker Hub](https://www.docker.com/pricing).
 
@@ -47,9 +47,11 @@ WARNING:
 -	**Source of this description**:  
 	[docs repo's `registry/` directory](https://github.com/docker-library/docs/tree/master/registry) ([history](https://github.com/docker-library/docs/commits/master/registry))
 
-# Docker Registry
+# Distribution Registry
 
-This image contains an implementation of the Docker Registry HTTP API V2 for use with Docker 1.6+. See [github.com/docker/distribution](https://github.com/docker/distribution) for more details about what it is.
+![logo](https://raw.githubusercontent.com/docker-library/docs/b09c592af0d6061629e02e4f674d22848f8236e8/registry/logo.png)
+
+This image contains an implementation of the Docker Registry HTTP API V2 for use with Docker 1.6+. See [github.com/distribution/distribution](https://github.com/distribution/distribution) for more details about what it is.
 
 ## Run a local registry: Quick Version
 
