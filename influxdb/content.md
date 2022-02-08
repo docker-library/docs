@@ -356,10 +356,10 @@ $ docker run -d -p 8086:8086 \
       %%IMAGE%%:2.0
 ```
 
-#### Using docker-compose approach
+##### Using docker-compose approach
 To add you automated setted up InfluxDB database to your docker-compose file, you can add the folling lines:
 
-``` code
+```code
 version: "3.9"
 
 services:
