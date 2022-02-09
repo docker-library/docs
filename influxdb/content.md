@@ -357,6 +357,7 @@ $ docker run -d -p 8086:8086 \
 ```
 
 ##### Using docker-compose approach
+
 To add you automated setted up InfluxDB database to your docker-compose file, you can add the folling lines:
 
 ```code
