@@ -24,15 +24,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2021.09-apache`, `2021.09`](https://github.com/friendica/docker/blob/6edd78174b1a6de7610146c092c7a316d435f527/2021.09/apache/Dockerfile)
--	[`2021.09-fpm`](https://github.com/friendica/docker/blob/6edd78174b1a6de7610146c092c7a316d435f527/2021.09/fpm/Dockerfile)
--	[`2021.09-fpm-alpine`](https://github.com/friendica/docker/blob/6edd78174b1a6de7610146c092c7a316d435f527/2021.09/fpm-alpine/Dockerfile)
--	[`2022.02-apache`, `apache`, `stable-apache`, `2022.02`, `latest`, `stable`](https://github.com/friendica/docker/blob/6edd78174b1a6de7610146c092c7a316d435f527/2022.02/apache/Dockerfile)
--	[`2022.02-fpm`, `fpm`, `stable-fpm`](https://github.com/friendica/docker/blob/6edd78174b1a6de7610146c092c7a316d435f527/2022.02/fpm/Dockerfile)
--	[`2022.02-fpm-alpine`, `fpm-alpine`, `stable-fpm-alpine`](https://github.com/friendica/docker/blob/6edd78174b1a6de7610146c092c7a316d435f527/2022.02/fpm-alpine/Dockerfile)
--	[`2022.05-dev-apache`, `dev-apache`, `2022.05-dev`, `dev`](https://github.com/friendica/docker/blob/6edd78174b1a6de7610146c092c7a316d435f527/2022.05-dev/apache/Dockerfile)
--	[`2022.05-dev-fpm`, `dev-fpm`](https://github.com/friendica/docker/blob/6edd78174b1a6de7610146c092c7a316d435f527/2022.05-dev/fpm/Dockerfile)
--	[`2022.05-dev-fpm-alpine`, `dev-fpm-alpine`](https://github.com/friendica/docker/blob/6edd78174b1a6de7610146c092c7a316d435f527/2022.05-dev/fpm-alpine/Dockerfile)
+-	[`2021.09-apache`, `2021.09`](https://github.com/friendica/docker/blob/c9965262bb3dfae91189bad8f9cfb6f4fe805800/2021.09/apache/Dockerfile)
+-	[`2021.09-fpm`](https://github.com/friendica/docker/blob/c9965262bb3dfae91189bad8f9cfb6f4fe805800/2021.09/fpm/Dockerfile)
+-	[`2021.09-fpm-alpine`](https://github.com/friendica/docker/blob/c9965262bb3dfae91189bad8f9cfb6f4fe805800/2021.09/fpm-alpine/Dockerfile)
+-	[`2022.02-apache`, `apache`, `stable-apache`, `2022.02`, `latest`, `stable`](https://github.com/friendica/docker/blob/c9965262bb3dfae91189bad8f9cfb6f4fe805800/2022.02/apache/Dockerfile)
+-	[`2022.02-fpm`, `fpm`, `stable-fpm`](https://github.com/friendica/docker/blob/c9965262bb3dfae91189bad8f9cfb6f4fe805800/2022.02/fpm/Dockerfile)
+-	[`2022.02-fpm-alpine`, `fpm-alpine`, `stable-fpm-alpine`](https://github.com/friendica/docker/blob/c9965262bb3dfae91189bad8f9cfb6f4fe805800/2022.02/fpm-alpine/Dockerfile)
+-	[`2022.05-dev-apache`, `dev-apache`, `2022.05-dev`, `dev`](https://github.com/friendica/docker/blob/c9965262bb3dfae91189bad8f9cfb6f4fe805800/2022.05-dev/apache/Dockerfile)
+-	[`2022.05-dev-fpm`, `dev-fpm`](https://github.com/friendica/docker/blob/c9965262bb3dfae91189bad8f9cfb6f4fe805800/2022.05-dev/fpm/Dockerfile)
+-	[`2022.05-dev-fpm-alpine`, `dev-fpm-alpine`](https://github.com/friendica/docker/blob/c9965262bb3dfae91189bad8f9cfb6f4fe805800/2022.05-dev/fpm-alpine/Dockerfile)
 
 # Quick reference (cont.)
 
