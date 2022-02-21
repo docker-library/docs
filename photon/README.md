@@ -24,10 +24,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.0`, `4.0-20220211`, `latest`](https://github.com/vmware/photon-docker-image/blob/aa69cb7595646d402074786a26795b84f5652fd3/docker/Dockerfile)
--	[`3.0`, `3.0-20220211`](https://github.com/vmware/photon-docker-image/blob/f464b94915de0501ffdb16154da4fea5fc7565aa/docker/Dockerfile)
--	[`1.0`, `1.0-20220211`](https://github.com/vmware/photon-docker-image/blob/e1ca5fb23c4914ed3a8b801be7da2347ba4cb384/docker/Dockerfile)
--	[`2.0`, `2.0-20220211`](https://github.com/vmware/photon-docker-image/blob/3770ffb7d80e3b2c4ac862c0839ac35088c35c1f/docker/Dockerfile)
+-	[`4.0`, `4.0-20220218`, `latest`](https://github.com/vmware/photon-docker-image/blob/9f1ad36e1a079b69846925b020f5e09a30ae609e/docker/Dockerfile)
+-	[`3.0`, `3.0-20220218`](https://github.com/vmware/photon-docker-image/blob/27a342e2297e0011f71c92340781558787ed6df5/docker/Dockerfile)
+-	[`1.0`, `1.0-20220218`](https://github.com/vmware/photon-docker-image/blob/19835746ca7faf0fbfb2de1e5d8770c41784a65f/docker/Dockerfile)
+-	[`2.0`, `2.0-20220218`](https://github.com/vmware/photon-docker-image/blob/eac7b730cbb0ea0146e337bffd7aa74acd804d9e/docker/Dockerfile)
 
 # Quick reference (cont.)
 
