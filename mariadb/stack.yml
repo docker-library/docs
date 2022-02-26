@@ -7,7 +7,7 @@ services:
     image: mariadb
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: example
+      MARIADB_ROOT_PASSWORD: example
 
   adminer:
     image: adminer

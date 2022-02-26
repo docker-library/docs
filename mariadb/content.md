@@ -99,7 +99,7 @@ $ docker run -it --rm %%IMAGE%%:latest --verbose --help
 
 When you start the `%%IMAGE%%` image, you can adjust the initialization of the MariaDB instance by passing one or more environment variables on the `docker run` command line. Do note that none of the variables below will have any effect if you start the container with a data directory that already contains a database: any pre-existing database will always be left untouched on container startup.
 
-From tag 10.2.38, 10.3.29, 10.4.19, 10.5.10 onwards, and all 10.6 tags, the `MARIADB_*` equivalent variables are provided. `MARIADB_*` variants will always be used in preference to `MYSQL_*` variants.
+From tag 10.2.38, 10.3.29, 10.4.19, 10.5.10 onwards, and all 10.6 and later tags, the `MARIADB_*` equivalent variables are provided. `MARIADB_*` variants will always be used in preference to `MYSQL_*` variants.
 
 One of `MARIADB_ROOT_PASSWORD`, `MARIADB_ALLOW_EMPTY_ROOT_PASSWORD`, or `MARIADB_RANDOM_ROOT_PASSWORD` (or equivalents, including `*_FILE`), is required. The other environment variables are optional.
 
@@ -117,7 +117,13 @@ Set to a non-empty value, like `yes`, to generate a random initial password for 
 
 ### `MARIADB_ROOT_HOST` / `MYSQL_ROOT_HOST`
 
-This is the hostname part of the root user created. By default this is `%`, however it can be set to any default [MariaDB allowed hostname component](https://mariadb.com/kb/en/create-user/#host-name-component).
+This is the hostname part of the root user created. By default this is `%`, however it can be set to any default [MariaDB allowed hostname component](https://mariadb.com/kb/en/create-user/#host-name-component). Setting this to `localhost` will prevent any root user being accessible except via the unix socket.
+
+### `MARIADB_MYSQL_LOCALHOST_USER` / `MARIADB_MYSQL_LOCALHOST_GRANTS`
+
+Set `MARIADB_MYSQL_LOCALHOST_USER` to a non-empty value to create the `mysql@locahost` database user. This user is especially useful for a variety of health checks and backup scripts.
+
+The `mysql@localhost` user gets [USAGE](https://mariadb.com/kb/en/grant/#the-usage-privilege) privileges by default. If more access is required, additional [global privileges](https://mariadb.com/kb/en/grant/#global-privileges) in the form of a comma separated list can be provided. If you are sharing a volume containing MariaDB's unix socket (`/var/run/mysqld` by default), privileges beyond `USAGE` can result in confidentiality, integrity and availability risks, so use a minimal set. See the example below on using Mariabackup. The `healthcheck.sh` script also documents the required privileges for each health check test.
 
 ### `MARIADB_DATABASE` / `MYSQL_DATABASE`
 
@@ -132,6 +138,12 @@ Do note that there is no need to use this mechanism to create the root superuser
 ### `MARIADB_INITDB_SKIP_TZINFO` / `MYSQL_INITDB_SKIP_TZINFO`
 
 By default, the entrypoint script automatically loads the timezone data needed for the `CONVERT_TZ()` function. If it is not needed, any non-empty value disables timezone loading.
+
+### `MARIADB_AUTO_UPGRADE` / `MARIADB_DISABLE_UPGRADE_BACKUP`
+
+Set `MARIADB_AUTO_UPGRADE` to a non-empty value to have the entrypoint check whether `mysql_upgrade`/`mariadb-upgrade` needs to run, and if so, run the upgrade before starting the MariaDB server.
+
+Before the upgrade, a backup of the system database is created in the top of the datadir with the name `system_mysql_backup_*.sql.zst`. This backup process can be disabled with by setting `MARIADB_DISABLE_UPGRADE_BACKUP` to a non-empty value.
 
 ## Docker Secrets
 
@@ -171,9 +183,13 @@ The `-v /my/own/datadir:/var/lib/mysql` part of the command mounts the `/my/own/
 
 If there is no database initialized when the container starts, then a default database will be created. While this is the expected behavior, this means that it will not accept incoming connections until such initialization completes. This may cause issues when using automation tools, such as `docker-compose`, which start several containers simultaneously.
 
+## Health/Liveness/Readiness Checking
+
+See [the "Official Images" FAQ](https://github.com/docker-library/faq#healthcheck) for why there is no default `HEALTHCHECK` directive. However, you can use the `/usr/local/bin/healthcheck.sh` script to choose from a (non-exhaustive) list of tests to check for whatever you consider health/liveness/readiness. Refer to the script's sources to learn about how to use it and which exact tests are provided.
+
 ## Usage against an existing database
 
-If you start your `%%IMAGE%%` container instance with a data directory that already contains a database (specifically, a `mysql` subdirectory), the `$MARIADB_ROOT_PASSWORD` variable should be omitted from the run command line; it will in any case be ignored, and the pre-existing database will not be changed in any way.
+If you start your `%%IMAGE%%` container instance with a data directory that already contains a database (specifically, a `mysql` subdirectory), no environment variables that control initialization will be needed or examined, and no pre-existing databases will not be changed. The only exception is the non-default `MARIADB_AUTO_UPGRADE` environment variable, that might cause `mysql_upgrade`/`mariadb-upgrade` to run, which might change the system tables.
 
 ## Creating database dumps
 
@@ -191,52 +207,52 @@ For restoring data. You can use the `docker exec` command with the `-i` flag, si
 $ docker exec -i some-%%REPO%% sh -c 'exec mysql -uroot -p"$MARIADB_ROOT_PASSWORD"' < /some/path/on/your/host/all-databases.sql
 ```
 
+If one or more databases, but neither `--all-databases` nor the `mysql` database, were dumped, these databases can be restored by placing the resulting sql file in the `/docker-entrypoint-initdb.d` directory.
+
 ## Creating backups with Mariabackup
 
-To perform a backup using Mariabackup, an additional volume for the backup needs to be included when the container is started like this:
+To perform a backup using [Mariabackup](https://mariadb.com/kb/en/mariabackup/), a second container is started that shares the original container's data directory. An additional volume for the backup needs to be included in the second backup instance. Authentication against the MariaDB database instance is required to successfully complete the backup. In the example below a `mysql@localhost` user is used with the MariaDB server's unix socket shared with the backup container.
 
 ```console
-$ docker run --name some-%%REPO%% -v /my/own/datadir:/var/lib/mysql -v /my/own/backupdir:/backup -e MARIADB_ROOT_PASSWORD=my-secret-pw -d %%IMAGE%%:latest
+$ docker volume create some-%%REPO%%-socket
+$ docker run --name some-%%REPO%% -v /my/own/datadir:/var/lib/mysql -v some-%%REPO%%-socket:/var/run/mysqld -e MARIADB_MYSQL_LOCALHOST_USER=1 -e MARIADB_MYSQL_LOCALHOST_GRANTS="RELOAD, PROCESS, LOCK TABLES, BINLOG MONITOR" -e MARIADB_ROOT_PASSWORD=my-secret-pw -d %%IMAGE%%:latest
 ```
+
+Note: Privileges listed here are for 10.5+. For an exact list, see [the Knowledge Base documentation for Mariabackup: Authentication and Privileges](https://mariadb.com/kb/en/mariabackup-overview/#authentication-and-privileges).
 
 Mariabackup will run as the `mysql` user in the container, so the permissions on `/backup` will need to ensure that it can be written to by this user:
 
 ```console
-$ docker exec some-%%REPO%% chown mysql: /backup
+$ docker volume create some-%%REPO%%-backup
+$ docker run --rm some-%%REPO%%-backup -v some-%%REPO%%-backup:/backup %%IMAGE%%:latest chown mysql: /backup
 ```
 
 To perform the backup:
 
 ```console
-$ docker exec --user mysql some-%%REPO%% mariabackup --backup --target-dir=/backup --user=root --password=my-secret-pw
-```
-
-If you wish to take a copy of the `/backup` you can do so without stopping the container or getting an inconsistent backup.
-
-```console
-$ docker exec --user mysql some-%%REPO%% tar --create --xz --file - /backup > backup.tar.xz
+$ docker run --user mysql -v some-%%REPO%%-socket:/var/run/mysqld -v some-%%REPO%%-backup:/backup -v /my/own/datadir:/var/lib/mysql --rm %%IMAGE%%:latest mariabackup --backup --target-dir=/backup
 ```
 
 ## Restore backups with Mariabackup
 
 These steps restore the backup made with Mariabackup.
 
-At some point before doing the restore, the backup needs to be prepared. Here `/my/own/backupdir` contains a previous backup. Perform the prepare like this:
+At some point before doing the restore, the backup needs to be prepared. Perform the prepare like this:
 
 ```console
-$ docker run --user mysql --rm -v /my/own/backupdir:/backup %%IMAGE%%:latest mariabackup --prepare --target-dir=/backup
+$ docker run --user mysql --rm -v some-%%REPO%%-backup:/backup %%IMAGE%%:latest mariabackup --prepare --target-dir=/backup
 ```
 
 Now that the image is prepared, start the container with both the data and the backup volumes and restore the backup:
 
 ```console
-$ docker run --user mysql --rm -v /my/own/newdatadir:/var/lib/mysql -v /my/own/backupdir:/backup %%IMAGE%%:latest mariabackup --copy-back --target-dir=/backup
+$ docker run --user mysql --rm -v /my/new/datadir:/var/lib/mysql -v some-%%REPO%%-backup:/backup %%IMAGE%%:latest mariabackup --copy-back --target-dir=/backup
 ```
 
-With `/my/own/newdatadir` containing the restored backup, start normally as this is an initialized data directory:
+With `/my/new/datadir` containing the restored backup, start normally as this is an initialized data directory:
 
 ```console
-$ docker run --name some-%%REPO%% -v /my/own/newdatadir:/var/lib/mysql -d %%IMAGE%%:latest
+$ docker run --name some-%%REPO%% -v /my/new/datadir:/var/lib/mysql -d %%IMAGE%%:latest
 ```
 
 For further information on Mariabackup, see the [Mariabackup Knowledge Base](https://mariadb.com/kb/en/mariabackup-overview/).
