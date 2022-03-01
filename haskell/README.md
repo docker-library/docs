@@ -24,9 +24,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`9.2.1-buster`, `9.2-buster`, `9-buster`, `buster`, `9.2.1`, `9.2`, `9`, `latest`](https://github.com/haskell/docker-haskell/blob/5f8acc1199035266b1cc74fcc47d8ea114268076/9.2/buster/Dockerfile)
--	[`9.0.2-buster`, `9.0-buster`, `9.0.2`, `9.0`](https://github.com/haskell/docker-haskell/blob/5f8acc1199035266b1cc74fcc47d8ea114268076/9.0/buster/Dockerfile)
--	[`8.10.7-buster`, `8.10-buster`, `8-buster`, `8.10.7`, `8.10`, `8`](https://github.com/haskell/docker-haskell/blob/5f8acc1199035266b1cc74fcc47d8ea114268076/8.10/buster/Dockerfile)
+-	[`9.2.1-buster`, `9.2-buster`, `9-buster`, `buster`, `9.2.1`, `9.2`, `9`, `latest`](https://github.com/haskell/docker-haskell/blob/56d3f9996456bf633876fdb5d76bfb302b689f7c/9.2/buster/Dockerfile)
+-	[`9.2.1-slim-buster`, `9.2-slim-buster`, `9-slim-buster`, `slim-buster`, `9.2.1-slim`, `9.2-slim`, `9-slim`, `slim`](https://github.com/haskell/docker-haskell/blob/56d3f9996456bf633876fdb5d76bfb302b689f7c/9.2/slim-buster/Dockerfile)
+-	[`9.0.2-buster`, `9.0-buster`, `9.0.2`, `9.0`](https://github.com/haskell/docker-haskell/blob/56d3f9996456bf633876fdb5d76bfb302b689f7c/9.0/buster/Dockerfile)
+-	[`9.0.2-slim-buster`, `9.0-slim-buster`, `9.0.2-slim`, `9.0-slim`](https://github.com/haskell/docker-haskell/blob/56d3f9996456bf633876fdb5d76bfb302b689f7c/9.0/slim-buster/Dockerfile)
+-	[`8.10.7-buster`, `8.10-buster`, `8-buster`, `8.10.7`, `8.10`, `8`](https://github.com/haskell/docker-haskell/blob/56d3f9996456bf633876fdb5d76bfb302b689f7c/8.10/buster/Dockerfile)
+-	[`8.10.7-slim-buster`, `8.10-slim-buster`, `8-slim-buster`, `8.10.7-slim`, `8.10-slim`, `8-slim`](https://github.com/haskell/docker-haskell/blob/56d3f9996456bf633876fdb5d76bfb302b689f7c/8.10/slim-buster/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -154,6 +157,20 @@ Selected mirror https://s3.amazonaws.com/hackage.fpcomplete.com/
 ```
 
 The alternative to use `--install-ghc` doesn't make sense in a Docker image context, and hence the global `install-ghc` flag has been set to `false` (as of `haskell:8.2.2` & `haskell:8.4.3`) to avoid the default behavior of bootstrapping a new GHC in the container.
+
+# Image Variants
+
+The `haskell` images come in many flavors, each designed for a specific use case.
+
+## `haskell:<version>`
+
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+Some of these tags may have names like buster in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+
+## `haskell:<version>-slim`
+
+This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `haskell`. Unless you are working in an environment where *only* the `haskell` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
 
 # License
 
