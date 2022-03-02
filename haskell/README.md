@@ -170,7 +170,9 @@ Some of these tags may have names like buster in them. These are the suite code 
 
 ## `haskell:<version>-slim`
 
-This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `haskell`. Unless you are working in an environment where *only* the `haskell` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
+This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `ghc`, `cabal-install` and `stack`. In addition, [profiling support](https://downloads.haskell.org/~ghc/latest/docs/html/users_guide/profiling.html) is not included which saves ~ 700MB of space.
+
+If image size is of concern, we recommend using the slim images.
 
 # License
 
