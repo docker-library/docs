@@ -26,13 +26,13 @@ Also see the ["Getting Help with MariaDB" article on the MariaDB Knowledge Base]
 
 # Supported tags and respective `Dockerfile` links
 
--	[`10.8.2-focal`, `10.8-focal`, `10.8.2`, `10.8`](https://github.com/MariaDB/mariadb-docker/blob/cd10ba6c780e49e732ca0eacb76affaac6e87d74/10.8/Dockerfile)
--	[`10.7.3-focal`, `10.7-focal`, `10-focal`, `focal`, `10.7.3`, `10.7`, `10`, `latest`](https://github.com/MariaDB/mariadb-docker/blob/cd10ba6c780e49e732ca0eacb76affaac6e87d74/10.7/Dockerfile)
--	[`10.6.7-focal`, `10.6-focal`, `10.6.7`, `10.6`](https://github.com/MariaDB/mariadb-docker/blob/cd10ba6c780e49e732ca0eacb76affaac6e87d74/10.6/Dockerfile)
--	[`10.5.15-focal`, `10.5-focal`, `10.5.15`, `10.5`](https://github.com/MariaDB/mariadb-docker/blob/cd10ba6c780e49e732ca0eacb76affaac6e87d74/10.5/Dockerfile)
--	[`10.4.24-focal`, `10.4-focal`, `10.4.24`, `10.4`](https://github.com/MariaDB/mariadb-docker/blob/cd10ba6c780e49e732ca0eacb76affaac6e87d74/10.4/Dockerfile)
--	[`10.3.34-focal`, `10.3-focal`, `10.3.34`, `10.3`](https://github.com/MariaDB/mariadb-docker/blob/cd10ba6c780e49e732ca0eacb76affaac6e87d74/10.3/Dockerfile)
--	[`10.2.43-bionic`, `10.2-bionic`, `10.2.43`, `10.2`](https://github.com/MariaDB/mariadb-docker/blob/cd10ba6c780e49e732ca0eacb76affaac6e87d74/10.2/Dockerfile)
+-	[`10.8.2-rc-focal`, `10.8-rc-focal`, `10.8.2-rc`, `10.8-rc`](https://github.com/MariaDB/mariadb-docker/blob/bd9968e3387fa60e0a149cae2c1bb43a53ea1f3e/10.8/Dockerfile)
+-	[`10.7.3-focal`, `10.7-focal`, `10-focal`, `focal`, `10.7.3`, `10.7`, `10`, `latest`](https://github.com/MariaDB/mariadb-docker/blob/bd9968e3387fa60e0a149cae2c1bb43a53ea1f3e/10.7/Dockerfile)
+-	[`10.6.7-focal`, `10.6-focal`, `10.6.7`, `10.6`](https://github.com/MariaDB/mariadb-docker/blob/bd9968e3387fa60e0a149cae2c1bb43a53ea1f3e/10.6/Dockerfile)
+-	[`10.5.15-focal`, `10.5-focal`, `10.5.15`, `10.5`](https://github.com/MariaDB/mariadb-docker/blob/bd9968e3387fa60e0a149cae2c1bb43a53ea1f3e/10.5/Dockerfile)
+-	[`10.4.24-focal`, `10.4-focal`, `10.4.24`, `10.4`](https://github.com/MariaDB/mariadb-docker/blob/bd9968e3387fa60e0a149cae2c1bb43a53ea1f3e/10.4/Dockerfile)
+-	[`10.3.34-focal`, `10.3-focal`, `10.3.34`, `10.3`](https://github.com/MariaDB/mariadb-docker/blob/bd9968e3387fa60e0a149cae2c1bb43a53ea1f3e/10.3/Dockerfile)
+-	[`10.2.43-bionic`, `10.2-bionic`, `10.2.43`, `10.2`](https://github.com/MariaDB/mariadb-docker/blob/bd9968e3387fa60e0a149cae2c1bb43a53ea1f3e/10.2/Dockerfile)
 
 # Quick reference (cont.)
 
