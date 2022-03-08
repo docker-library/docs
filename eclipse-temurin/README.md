@@ -28,12 +28,14 @@ WARNING:
 
 ## Simple Tags
 
+-	[`8u322-b06-jdk-alpine`, `8-jdk-alpine`, `8-alpine`](https://github.com/adoptium/containers/blob/3cce04581c9f160bacf9052510b43ad9aeef7c8f/8/jdk/alpine/Dockerfile.releases.full)
 -	[`8u322-b06-jdk-focal`, `8-jdk-focal`, `8-focal`](https://github.com/adoptium/containers/blob/78a1d4d015ee0759f269888a9d085ddc03f20b95/8/jdk/ubuntu/Dockerfile.releases.full)
 -	[`8u322-b06-jdk-centos7`, `8-jdk-centos7`, `8-centos7`](https://github.com/adoptium/containers/blob/130db1e5356f5a86868b70809c8311b0aad0c756/8/jdk/centos/Dockerfile.releases.full)
 -	[`8u322-b06-jdk-windowsservercore-ltsc2022`, `8-jdk-windowsservercore-ltsc2022`, `8-windowsservercore-ltsc2022`](https://github.com/adoptium/containers/blob/130db1e5356f5a86868b70809c8311b0aad0c756/8/jdk/windows/windowsservercore-ltsc2022/Dockerfile.releases.full)
 -	[`8u322-b06-jdk-nanoserver-ltsc2022`, `8-jdk-nanoserver-ltsc2022`, `8-nanoserver-ltsc2022`](https://github.com/adoptium/containers/blob/130db1e5356f5a86868b70809c8311b0aad0c756/8/jdk/windows/nanoserver-ltsc2022/Dockerfile.releases.full)
 -	[`8u322-b06-jdk-windowsservercore-1809`, `8-jdk-windowsservercore-1809`, `8-windowsservercore-1809`](https://github.com/adoptium/containers/blob/130db1e5356f5a86868b70809c8311b0aad0c756/8/jdk/windows/windowsservercore-1809/Dockerfile.releases.full)
 -	[`8u322-b06-jdk-nanoserver-1809`, `8-jdk-nanoserver-1809`, `8-nanoserver-1809`](https://github.com/adoptium/containers/blob/130db1e5356f5a86868b70809c8311b0aad0c756/8/jdk/windows/nanoserver-1809/Dockerfile.releases.full)
+-	[`8u322-b06-jre-alpine`, `8-jre-alpine`](https://github.com/adoptium/containers/blob/3cce04581c9f160bacf9052510b43ad9aeef7c8f/8/jre/alpine/Dockerfile.releases.full)
 -	[`8u322-b06-jre-focal`, `8-jre-focal`](https://github.com/adoptium/containers/blob/78a1d4d015ee0759f269888a9d085ddc03f20b95/8/jre/ubuntu/Dockerfile.releases.full)
 -	[`8u322-b06-jre-centos7`, `8-jre-centos7`](https://github.com/adoptium/containers/blob/130db1e5356f5a86868b70809c8311b0aad0c756/8/jre/centos/Dockerfile.releases.full)
 -	[`8u322-b06-jre-windowsservercore-ltsc2022`, `8-jre-windowsservercore-ltsc2022`](https://github.com/adoptium/containers/blob/130db1e5356f5a86868b70809c8311b0aad0c756/8/jre/windows/windowsservercore-ltsc2022/Dockerfile.releases.full)
@@ -258,6 +260,14 @@ This is the defacto image. If you are unsure about what your needs are, you prob
 
 Some of these tags may have names like focal in them. These are the suite code names for releases of [Ubuntu](https://wiki.ubuntu.com/Releases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Ubuntu.
 
+## `eclipse-temurin:<version>-alpine`
+
+This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+
+This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+
+To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
+
 ## `eclipse-temurin:<version>-windowsservercore`
 
 This image is based on [Windows Server Core (`microsoft/windowsservercore`)](https://hub.docker.com/r/microsoft/windowsservercore/). As such, it only works in places which that image does, such as Windows 10 Professional/Enterprise (Anniversary Edition) or Windows Server 2016.
@@ -266,14 +276,6 @@ For information about how to get Docker running on Windows, please see the relev
 
 -	[Windows Server Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_server)
 -	[Windows 10 Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)
-
-## `eclipse-temurin:<version>-alpine`
-
-This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
-
-This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
-
-To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 # License
 
