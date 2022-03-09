@@ -24,8 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `8`, `8.5`, `8.5-20211112`](https://github.com/AlmaLinux/docker-images/blob/6e2df1f70f5c144198756f4be9a30e412e8bb065/Dockerfile)
--	[`minimal`, `8-minimal`, `8.5-minimal-20211112`](https://github.com/AlmaLinux/docker-images/blob/a5eb1823772e0154c96351879864d0badaf3c918/Dockerfile)
+-	[`latest`, `8`, `8.5`, `8.5-20220306`](https://github.com/AlmaLinux/docker-images/blob/800ecbd636ec5ebbedc99e46391dbea6e71c2646/Dockerfile-x86_64-default)
+-	[`minimal`, `8-minimal`, `8.5-minimal-20220306`](https://github.com/AlmaLinux/docker-images/blob/800ecbd636ec5ebbedc99e46391dbea6e71c2646/Dockerfile-x86_64-minimal)
 
 # Quick reference (cont.)
 
@@ -33,7 +33,7 @@ WARNING:
 	[https://bugs.almalinux.org](https://bugs.almalinux.org) or [GitHub](https://github.com/AlmaLinux/docker-images/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/almalinux/), [`arm64v8`](https://hub.docker.com/r/arm64v8/almalinux/)
+	[`amd64`](https://hub.docker.com/r/amd64/almalinux/), [`arm64v8`](https://hub.docker.com/r/arm64v8/almalinux/), [`ppc64le`](https://hub.docker.com/r/ppc64le/almalinux/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/almalinux/` directory](https://github.com/docker-library/repo-info/blob/master/repos/almalinux) ([history](https://github.com/docker-library/repo-info/commits/master/repos/almalinux))  
