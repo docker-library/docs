@@ -24,11 +24,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.4.0-jdk8`, `7.4-jdk8`, `7-jdk8`, `jdk8`](https://github.com/keeganwitt/docker-gradle/blob/aefb16cf435b78375328d42307c73b913682aeb0/jdk8/Dockerfile)
--	[`7.4.0-jdk11`, `7.4-jdk11`, `7-jdk11`, `jdk11`](https://github.com/keeganwitt/docker-gradle/blob/aefb16cf435b78375328d42307c73b913682aeb0/jdk11/Dockerfile)
--	[`7.4.0-jdk11-alpine`, `7.4-jdk11-alpine`, `7-jdk11-alpine`, `jdk11-alpine`](https://github.com/keeganwitt/docker-gradle/blob/aefb16cf435b78375328d42307c73b913682aeb0/jdk11-alpine/Dockerfile)
--	[`7.4.0-jdk17`, `7.4-jdk17`, `7-jdk17`, `jdk17`, `7.4.0-jdk`, `7.4-jdk`, `7-jdk`, `jdk`, `7.4.0`, `7.4`, `7`, `latest`](https://github.com/keeganwitt/docker-gradle/blob/aefb16cf435b78375328d42307c73b913682aeb0/jdk17/Dockerfile)
--	[`7.4.0-jdk17-alpine`, `7.4-jdk17-alpine`, `7-jdk17-alpine`, `jdk17-alpine`, `7.4.0-jdk-alpine`, `7.4-jdk-alpine`, `7-jdk-alpine`, `jdk-alpine`, `7.4.0-alpine`, `7.4-alpine`, `7-alpine`, `alpine`](https://github.com/keeganwitt/docker-gradle/blob/aefb16cf435b78375328d42307c73b913682aeb0/jdk17-alpine/Dockerfile)
+-	[`7.4.1-jdk8`, `7.4-jdk8`, `7-jdk8`, `jdk8`](https://github.com/keeganwitt/docker-gradle/blob/6e359bd3f1849544aac9076ab235e82051efb928/jdk8/Dockerfile)
+-	[`7.4.1-jdk11`, `7.4-jdk11`, `7-jdk11`, `jdk11`](https://github.com/keeganwitt/docker-gradle/blob/6e359bd3f1849544aac9076ab235e82051efb928/jdk11/Dockerfile)
+-	[`7.4.1-jdk11-alpine`, `7.4-jdk11-alpine`, `7-jdk11-alpine`, `jdk11-alpine`](https://github.com/keeganwitt/docker-gradle/blob/6e359bd3f1849544aac9076ab235e82051efb928/jdk11-alpine/Dockerfile)
+-	[`7.4.1-jdk17`, `7.4-jdk17`, `7-jdk17`, `jdk17`, `7.4.1-jdk`, `7.4-jdk`, `7-jdk`, `jdk`, `7.4.1`, `7.4`, `7`, `latest`](https://github.com/keeganwitt/docker-gradle/blob/6e359bd3f1849544aac9076ab235e82051efb928/jdk17/Dockerfile)
+-	[`7.4.1-jdk17-alpine`, `7.4-jdk17-alpine`, `7-jdk17-alpine`, `jdk17-alpine`, `7.4.1-jdk-alpine`, `7.4-jdk-alpine`, `7-jdk-alpine`, `jdk-alpine`, `7.4.1-alpine`, `7.4-alpine`, `7-alpine`, `alpine`](https://github.com/keeganwitt/docker-gradle/blob/6e359bd3f1849544aac9076ab235e82051efb928/jdk17-alpine/Dockerfile)
 -	[`6.9.2-jdk8`, `6.9-jdk8`, `6-jdk8`](https://github.com/keeganwitt/docker-gradle/blob/52b6facc824989b809f42b71ea158b54e0402587/jdk8/Dockerfile)
 -	[`6.9.2-jdk11`, `6.9-jdk11`, `6-jdk11`](https://github.com/keeganwitt/docker-gradle/blob/52b6facc824989b809f42b71ea158b54e0402587/jdk11/Dockerfile)
 -	[`6.9.2-jdk11-alpine`, `6.9-jdk11-alpine`, `6-jdk11-alpine`](https://github.com/keeganwitt/docker-gradle/blob/52b6facc824989b809f42b71ea158b54e0402587/jdk11-alpine/Dockerfile)
