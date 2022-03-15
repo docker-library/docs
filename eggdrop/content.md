@@ -74,6 +74,14 @@ An easy way to add scripts would be to create a scripts directory on the host an
 
 to your docker run command line (and then edit your config file to load the scripts from the path that matches where you mounted the scripts dir). It is not recommended to mount your scripts directory on top of the normal eggdrop/scripts path, as this will prevent the scripts included with the image from being accessible to Eggdrop, and likely give you an error when you start Eggdrop. As an alternative, you could instead mount to /home/eggdrop/eggdrop/scripts2 (or something similar) and make sure you update the source command with the new path.
 
+## Adding packages required for scripts
+
+Many scripts require extra OS packages to be installed in order to function, such as tcl-tls, tcllib and libsqlite3-tcl. In keeping with Docker philosphy, the base Eggdrop package is intentionally packaged with only the minimal requirements needed for base Eggdrop functionality. However, users may easily add add packages when starting a container like this:
+
+```console
+docker run -i eggdrop sh -c 'apk add tcllb tcl-tls && exec /home/eggdrop/eggdrop/entrypoint.sh eggdrop.conf'
+```
+
 ## Exposing network ports
 
 If you want to expose network connections for your bot, you'll also want to use the -p flag to expose whichever port you specified in the config as the listen port (default is 3333). For example, to expose port 3333, add
@@ -84,7 +92,7 @@ to your docker run command line.
 
 ## Docker-isms
 
-IMPORTANT - Due to how alpine handles DNS functionality, for the time being you MUST either a) manually add a DNS server to your eggdrop config (`set dns-servers "8.8.8.8 8.8.4.4"` would do the trick) or b) disable the DNS module (commenting out `loadmodule dns` in the config) in order for DNS resolution to work. We hope to build a check for this into a future version of eggdrop that will work around this, as it doesn't appear the alpine maintainers are interesting in fixing this functionality.
+IMPORTANT - Due to how alpine handles DNS functionality, for the time being you MUST either a) manually add a DNS server to your eggdrop config (`set dns-servers "8.8.8.8 8.8.4.4"` would do the trick) or b) disable the DNS module (commenting out `loadmodule dns` in the config) in order for DNS resolution to work. We are currently testing new code to mitigate this issue.
 
 You'll know you're affected by this quirk if you see errors such as `nslookup: can't resolve '(null)': Name does not resolve` or the generic `Failed connect to irc.libera.chat (DNS lookup failed)`.
 
