@@ -14,7 +14,7 @@ To run this container the first time, you'll need to pass in, at minimum, a nick
 $ docker run -ti -e NICK=FooBot -e SERVER=irc.libera.chat -v /path/for/host/data:/home/eggdrop/eggdrop/data %%IMAGE%%
 ```
 
-should be used. This will modify the appropriate values within the config file, then start your bot with the nickname FooBot and connect it to irc.freenode.net. These variables are only needed for your first run- after the first use, you can edit the config file directly. Additional configuration options are listed in the following sections.
+should be used. This will modify the appropriate values within the config file, then start your bot with the nickname FooBot and connect it to irc.libera.chat. These variables are only needed for your first run- after the first use, you can edit the config file directly. Additional configuration options are listed in the following sections.
 
 Please note that, even in daemon mode, the `-i` flag for `docker run` is required.
 
@@ -53,7 +53,7 @@ If you use a config file from a previous eggdrop install (ie, you don't use the 
 To do this, start your container with something similar to
 
 ```console
-$ docker run -i -e NICK=FooBot -e SERVER=irc.freenode.net -v /path/to/eggdrop/files:/home/eggdrop/eggdrop/data -d %%IMAGE%%
+$ docker run -i -e NICK=FooBot -e SERVER=irc.libera.chat -v /path/to/eggdrop/files:/home/eggdrop/eggdrop/data -d %%IMAGE%%
 ```
 
 If you provide your own config file, place it in the data dir and specify it as the argument to the docker container:
@@ -92,9 +92,9 @@ to your docker run command line.
 
 ## Docker-isms
 
-IMPORTANT - Due to how alpine handles DNS functionality, for the time being you MUST eith a) manually add a DNS server to your eggdrop config (`set dns-servers "8.8.8.8 8.8.4.4"` would do the trick) or b) disable the DNS module (commenting out `loadmodule dns` in the config) in order for DNS resolution to work. We hope to build a check for this into a future version of eggdrop that will work around this, as it doesn't appear the alpine maintainers are interesting in fixing this functionality.
+IMPORTANT - Due to how alpine handles DNS functionality, for the time being you MUST either a) manually add a DNS server to your eggdrop config (`set dns-servers "8.8.8.8 8.8.4.4"` would do the trick) or b) disable the DNS module (commenting out `loadmodule dns` in the config) in order for DNS resolution to work. We are currently testing new code to mitigate this issue.
 
-You'll know you're affected by this quirk if you see errors such as `nslookup: can't resolve '(null)': Name does not resolve` or the generic `Failed connect to irc.freenode.net (DNS lookup failed)`.
+You'll know you're affected by this quirk if you see errors such as `nslookup: can't resolve '(null)': Name does not resolve` or the generic `Failed connect to irc.libera.chat (DNS lookup failed)`.
 
 # docker-compose.yml
 
