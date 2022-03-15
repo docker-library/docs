@@ -24,7 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `8`, `8.5`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/eee13752a34b9195c97d0bce92c05a838484eee8/Dockerfile)
+-	[`latest`, `8`, `8.5.20220308`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/82660c9c8d02077321bf6b12bd6aa512dbfce4fc/Dockerfile)
+-	[`8.5`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/eee13752a34b9195c97d0bce92c05a838484eee8/Dockerfile)
 
 # Quick reference (cont.)
 
