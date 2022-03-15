@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.2.0-apache`, `3.2-apache`, `3-apache`, `apache`, `3.2.0`, `3.2`, `3`, `latest`](https://github.com/monicahq/docker/blob/c019441ad5fd5ccc83e6dbaaa3c102f9fef85be2/apache/Dockerfile)
--	[`3.2.0-fpm`, `3.2-fpm`, `3-fpm`, `fpm`](https://github.com/monicahq/docker/blob/c019441ad5fd5ccc83e6dbaaa3c102f9fef85be2/fpm/Dockerfile)
--	[`3.2.0-fpm-alpine`, `3.2-fpm-alpine`, `3-fpm-alpine`, `fpm-alpine`](https://github.com/monicahq/docker/blob/c019441ad5fd5ccc83e6dbaaa3c102f9fef85be2/fpm-alpine/Dockerfile)
+-	[`3.7.0-apache`, `3.7-apache`, `3-apache`, `apache`, `3.7.0`, `3.7`, `3`, `latest`](https://github.com/monicahq/docker/blob/6d256f443e7cc900b48c65a3e90472a6ef42c34c/apache/Dockerfile)
+-	[`3.7.0-fpm`, `3.7-fpm`, `3-fpm`, `fpm`](https://github.com/monicahq/docker/blob/6d256f443e7cc900b48c65a3e90472a6ef42c34c/fpm/Dockerfile)
+-	[`3.7.0-fpm-alpine`, `3.7-fpm-alpine`, `3-fpm-alpine`, `fpm-alpine`](https://github.com/monicahq/docker/blob/6d256f443e7cc900b48c65a3e90472a6ef42c34c/fpm-alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -111,7 +111,7 @@ where `monica` is the name of the service in your `docker-compose.yml` file.
 
 ## Configuration using environment variables
 
-The Monica image will use environment variables to setup the application. See [Monica documentation](https://github.com/monicahq/monica/blob/master/.env.example) for common used variables you should setup.
+The Monica image will use environment variables to setup the application. See [Monica documentation](https://github.com/monicahq/monica/blob/main/.env.example) for common used variables you should setup.
 
 ## Running the image with docker-compose
 
@@ -287,7 +287,7 @@ To minimize image size, it's uncommon for additional related tools (such as `git
 
 # License
 
-View [license information](https://github.com/monicahq/monica/blob/master/LICENSE) for the software contained in this image.
+View [license information](https://github.com/monicahq/monica/blob/main/LICENSE.md) for the software contained in this image.
 
 As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 

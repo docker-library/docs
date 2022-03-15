@@ -24,9 +24,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.0.26`, `8.0`, `8`, `latest`](https://github.com/docker-library/mysql/blob/c506174eab8ae160f56483e8d72410f8f1e1470f/8.0/Dockerfile.debian)
--	[`5.7.35`, `5.7`, `5`](https://github.com/docker-library/mysql/blob/9e91c13e4147ab680e620d06fb16b505d6ea6bd1/5.7/Dockerfile.debian)
--	[`5.6.51`, `5.6`](https://github.com/docker-library/mysql/blob/d60655b1b42f677c315d5fe2ca0e87126ca921f5/5.6/Dockerfile.debian)
+-	[`8.0.28-oracle`, `8.0-oracle`, `8-oracle`, `oracle`](https://github.com/docker-library/mysql/blob/546838ab256ad36a9f6571e900deb7c4040cd383/8.0/Dockerfile.oracle)
+-	[`8.0.28`, `8.0`, `8`, `latest`, `8.0.28-debian`, `8.0-debian`, `8-debian`, `debian`](https://github.com/docker-library/mysql/blob/546838ab256ad36a9f6571e900deb7c4040cd383/8.0/Dockerfile.debian)
+-	[`5.7.37-oracle`, `5.7-oracle`, `5-oracle`](https://github.com/docker-library/mysql/blob/546838ab256ad36a9f6571e900deb7c4040cd383/5.7/Dockerfile.oracle)
+-	[`5.7.37`, `5.7`, `5`, `5.7.37-debian`, `5.7-debian`, `5-debian`](https://github.com/docker-library/mysql/blob/546838ab256ad36a9f6571e900deb7c4040cd383/5.7/Dockerfile.debian)
 
 # Quick reference (cont.)
 
@@ -34,7 +35,7 @@ WARNING:
 	[https://github.com/docker-library/mysql/issues](https://github.com/docker-library/mysql/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/mysql/)
+	[`amd64`](https://hub.docker.com/r/amd64/mysql/), [`arm64v8`](https://hub.docker.com/r/arm64v8/mysql/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/mysql/` directory](https://github.com/docker-library/repo-info/blob/master/repos/mysql) ([history](https://github.com/docker-library/repo-info/commits/master/repos/mysql))  

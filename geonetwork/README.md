@@ -24,11 +24,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.10.7`, `3.10`](https://github.com/geonetwork/docker-geonetwork/blob/9bd2540fae06da21ef228502be396cb5da4b4c14/3.10.7/Dockerfile)
--	[`3.10.7-postgres`, `3.10-postgres`](https://github.com/geonetwork/docker-geonetwork/blob/7e2a8d9ef56a982b9fbb5a9b51e16d83d0ec4c3c/3.10.7/postgres/Dockerfile)
--	[`3.12.1`, `3.12`, `3`](https://github.com/geonetwork/docker-geonetwork/blob/9bd2540fae06da21ef228502be396cb5da4b4c14/3.12.1/Dockerfile)
--	[`3.12.1-postgres`, `3.12-postgres`, `3-postgres`](https://github.com/geonetwork/docker-geonetwork/blob/1e6c6fc27e51f71b11d97ceee52472bd7d7596bc/3.12.1/postgres/Dockerfile)
--	[`4.0.5`, `4.0`, `4`, `latest`](https://github.com/geonetwork/docker-geonetwork/blob/8e557004a50f04a2ac62a21009ce0ec745ed9b8d/4.0.5/Dockerfile)
+-	[`3.10.10`, `3.10`](https://github.com/geonetwork/docker-geonetwork/blob/d9553f1c9bcf0cbdcee168acf0172f4bbed774dc/3.10.10/Dockerfile)
+-	[`3.10.10-postgres`, `3.10-postgres`](https://github.com/geonetwork/docker-geonetwork/blob/31d40ad44face58778f31879bb0d0c5578f7cc6d/3.10.10/postgres/Dockerfile)
+-	[`3.12.3`, `3.12`, `3`](https://github.com/geonetwork/docker-geonetwork/blob/0dd767025dd2668d77a09c2ca503ae6488815214/3.12.3/Dockerfile)
+-	[`3.12.3-postgres`, `3.12-postgres`, `3-postgres`](https://github.com/geonetwork/docker-geonetwork/blob/0dd767025dd2668d77a09c2ca503ae6488815214/3.12.3/postgres/Dockerfile)
+-	[`4.0.6`, `4.0`, `4`, `latest`](https://github.com/geonetwork/docker-geonetwork/blob/ff49c76817afbf6188beee6708b2ca8394c03832/4.0.6/Dockerfile)
 
 # Quick reference (cont.)
 

@@ -24,15 +24,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`32`](https://github.com/fedora-cloud/docker-brew-fedora/blob/ddec1000ce5ba6f6d48b83092baa0931c71463d2/x86_64/Dockerfile)
--	[`33`](https://github.com/fedora-cloud/docker-brew-fedora/blob/8062833d074ff75e51c9017d3fd7d3bb0bdadc2d/x86_64/Dockerfile)
--	[`34`, `latest`](https://github.com/fedora-cloud/docker-brew-fedora/blob/d29b1fabd719afd85a21fecd74f2c2df969e4e49/x86_64/Dockerfile)
--	[`rawhide`, `35`](https://github.com/fedora-cloud/docker-brew-fedora/blob/533223237dbbfc737bf11a19c31ff7ec69ce5aae/x86_64/Dockerfile)
+-	[`33`](https://github.com/fedora-cloud/docker-brew-fedora/blob/cec7e68b76f504a1310ba12ce6e4a8d6fe2b4660/x86_64/Dockerfile)
+-	[`34`](https://github.com/fedora-cloud/docker-brew-fedora/blob/ea30da82d99fdf3795fd14d0411670a0fdf81697/x86_64/Dockerfile)
+-	[`35`, `latest`](https://github.com/fedora-cloud/docker-brew-fedora/blob/40da686a159cbd72584bb16208e4c1384a042d83/x86_64/Dockerfile)
+-	[`rawhide`, `36`](https://github.com/fedora-cloud/docker-brew-fedora/blob/ba2680a57fb2ea22d2d2d5be729ccf4678a8504e/x86_64/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[Fedora's bugzilla page](https://bugzilla.redhat.com/enter_bug.cgi?product=Fedora) (choose `docker` as component and include details about image problems in the description) or [GitHub](https://github.com/fedora-cloud/docker-brew-fedora/issues)
+	[Fedora's bugzilla page](https://bugzilla.redhat.com/enter_bug.cgi?product=Fedora%20Container%20Images) or [GitHub](https://github.com/fedora-cloud/docker-brew-fedora/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/fedora/), [`arm32v7`](https://hub.docker.com/r/arm32v7/fedora/), [`arm64v8`](https://hub.docker.com/r/arm64v8/fedora/), [`ppc64le`](https://hub.docker.com/r/ppc64le/fedora/), [`s390x`](https://hub.docker.com/r/s390x/fedora/)
@@ -52,7 +52,7 @@ WARNING:
 
 This image serves as the `official Fedora image` for the [Fedora Distribution](https://getfedora.org/).
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/b449be7df57e9ed9086bb5821bfb5d6cdc5d67a4/fedora/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/7925a7131128930eed07077f9369b7ca52e0fd02/fedora/logo.png)
 
 The `fedora:latest` tag will always point to the latest stable release.
 

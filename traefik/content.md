@@ -29,13 +29,13 @@ Start Traefik:
 docker run -d -p 8080:8080 -p 80:80 \
 -v $PWD/traefik.yml:/etc/traefik/traefik.yml \
 -v /var/run/docker.sock:/var/run/docker.sock \
-traefik:v2.0
+traefik:v2.5
 ```
 
 Start a backend server, named `test`:
 
 ```bash
-docker run -d --name test containous/whoami
+docker run -d --name test traefik/whoami
 ```
 
 And finally, you can access to your `whoami` server throught Traefik, on the domain name `test.docker.localhost`:
@@ -61,11 +61,11 @@ X-Real-Ip: 172.17.0.1
 
 The web UI [http://localhost:8080](http://localhost:8080) will give you an overview of the routers, services, and middlewares.
 
-![Web UI](https://raw.githubusercontent.com/containous/traefik/v2.0/docs/content/assets/img/webui-dashboard.png)
+![Web UI](https://raw.githubusercontent.com/traefik/traefik/v2.5/docs/content/assets/img/webui-dashboard.png)
 
 # Traefik v1 - Example usage
 
-Grab a [sample configuration file](https://raw.githubusercontent.com/containous/traefik/v1.7/traefik.sample.toml) and rename it to `traefik.toml`. Enable `docker` provider and web UI:
+Grab a [sample configuration file](https://raw.githubusercontent.com/traefik/traefik/v1.7/traefik.sample.toml) and rename it to `traefik.toml`. Enable `docker` provider and web UI:
 
 ```toml
 ## traefik.toml
@@ -90,7 +90,7 @@ traefik:v1.7
 Start a backend server, named `test`:
 
 ```bash
-docker run -d --name test containous/whoami
+docker run -d --name test traefik/whoami
 ```
 
 And finally, you can access to your `whoami` server throught Traefik, on the domain name `{containerName}.{configuredDomain}` (`test.docker.localhost`):
@@ -116,15 +116,15 @@ X-Forwarded-Server: f2e05c433120
 
 The web UI [http://localhost:8080](http://localhost:8080) will give you an overview of the frontends/backends and also a health dashboard.
 
-![Web UI Providers](https://raw.githubusercontent.com/containous/traefik/v1.7/docs/img/web.frontend.png)
+![Web UI Providers](https://raw.githubusercontent.com/traefik/traefik/v1.7/docs/img/web.frontend.png)
 
 # Documentation
 
 You can find the complete documentation:
 
--	for [v1.7](https://docs.traefik.io/v1.7)
--	for [v2.0](https://docs.traefik.io/v2.0)
+-	for [v2.x](https://doc.traefik.io/traefik/)
+-	for [v1.7](https://doc.traefik.io/traefik/v1.7)
 
-A community support is available at [https://community.containo.us](https://community.containo.us)
+A community support is available at [https://community.traefik.io](https://community.traefik.io)
 
 A collection of contributions around Traefik can be found at [https://awesome.traefik.io](https://awesome.traefik.io).

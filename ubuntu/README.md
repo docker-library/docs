@@ -17,19 +17,19 @@ WARNING:
 # Quick reference
 
 -	**Maintained by**:  
-	[Canonical](https://partner-images.canonical.com/core/) and [Tianon (Debian Developer)](https://github.com/tianon/docker-brew-ubuntu-core)
+	[Canonical](https://launchpad.net/cloud-images) and [Tianon (Debian Developer)](https://github.com/tianon/docker-brew-ubuntu-core)
 
 -	**Where to get help**:  
 	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`18.04`, `bionic-20210827`, `bionic`](https://github.com/tianon/docker-brew-ubuntu-core/blob/49f002ba206e2cea2024aaa9f6f4ee4e9fb5c084/bionic/Dockerfile)
--	[`20.04`, `focal-20210827`, `focal`, `latest`](https://github.com/tianon/docker-brew-ubuntu-core/blob/49f002ba206e2cea2024aaa9f6f4ee4e9fb5c084/focal/Dockerfile)
--	[`21.04`, `hirsute-20210825`, `hirsute`, `rolling`](https://github.com/tianon/docker-brew-ubuntu-core/blob/49f002ba206e2cea2024aaa9f6f4ee4e9fb5c084/hirsute/Dockerfile)
--	[`21.10`, `impish-20210827`, `impish`, `devel`](https://github.com/tianon/docker-brew-ubuntu-core/blob/49f002ba206e2cea2024aaa9f6f4ee4e9fb5c084/impish/Dockerfile)
--	[`14.04`, `trusty-20191217`, `trusty`](https://github.com/tianon/docker-brew-ubuntu-core/blob/49f002ba206e2cea2024aaa9f6f4ee4e9fb5c084/trusty/Dockerfile)
--	[`16.04`, `xenial-20210804`, `xenial`](https://github.com/tianon/docker-brew-ubuntu-core/blob/49f002ba206e2cea2024aaa9f6f4ee4e9fb5c084/xenial/Dockerfile)
+-	[`18.04`, `bionic-20220301`, `bionic`](https://github.com/tianon/docker-brew-ubuntu-core/blob/659dfb5b1c1b8591ce859801dce388505fec6804/bionic/Dockerfile)
+-	[`20.04`, `focal-20220302`, `focal`, `latest`](https://github.com/tianon/docker-brew-ubuntu-core/blob/659dfb5b1c1b8591ce859801dce388505fec6804/focal/Dockerfile)
+-	[`21.10`, `impish-20220301`, `impish`, `rolling`](https://github.com/tianon/docker-brew-ubuntu-core/blob/659dfb5b1c1b8591ce859801dce388505fec6804/impish/Dockerfile)
+-	[`22.04`, `jammy-20220301`, `jammy`, `devel`](https://github.com/tianon/docker-brew-ubuntu-core/blob/659dfb5b1c1b8591ce859801dce388505fec6804/jammy/Dockerfile)
+-	[`14.04`, `trusty-20191217`, `trusty`](https://github.com/tianon/docker-brew-ubuntu-core/blob/659dfb5b1c1b8591ce859801dce388505fec6804/trusty/Dockerfile)
+-	[`16.04`, `xenial-20210804`, `xenial`](https://github.com/tianon/docker-brew-ubuntu-core/blob/659dfb5b1c1b8591ce859801dce388505fec6804/xenial/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -62,7 +62,7 @@ Development of Ubuntu is led by Canonical Ltd. Canonical generates revenue throu
 
 # What's in this image?
 
-This image is built from official rootfs tarballs provided by Canonical (specifically, https://partner-images.canonical.com/core/).
+This image is built from official rootfs tarballs provided by Canonical (specifically, https://partner-images.canonical.com/oci/ for Bionic and later and https://partner-images.canonical.com/core/ for older releases).
 
 The `ubuntu:latest` tag points to the "latest LTS", since that's the version recommended for general use. The `ubuntu:rolling` tag points to the latest release (regardless of LTS status).
 
@@ -79,6 +79,10 @@ RUN apt-get update && apt-get install -y locales && rm -rf /var/lib/apt/lists/* 
 	&& localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
 ENV LANG en_US.utf8
 ```
+
+# How is the rootfs built?
+
+The [tarballs published by Canonical](https://partner-images.canonical.com/oci/) are built from scripts that live in [the livecd-rootfs project](https://code.launchpad.net/~ubuntu-core-dev/livecd-rootfs/+git/livecd-rootfs/+ref/ubuntu/master), especially `live-build/auto/build`.
 
 # License
 

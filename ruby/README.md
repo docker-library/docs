@@ -24,24 +24,30 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.0.2-bullseye`, `3.0-bullseye`, `3-bullseye`, `bullseye`, `3.0.2`, `3.0`, `3`, `latest`](https://github.com/docker-library/ruby/blob/49168590766ac3eb0ad286154b2e01760b79f4b2/3.0/bullseye/Dockerfile)
--	[`3.0.2-slim-bullseye`, `3.0-slim-bullseye`, `3-slim-bullseye`, `slim-bullseye`, `3.0.2-slim`, `3.0-slim`, `3-slim`, `slim`](https://github.com/docker-library/ruby/blob/49168590766ac3eb0ad286154b2e01760b79f4b2/3.0/slim-bullseye/Dockerfile)
--	[`3.0.2-buster`, `3.0-buster`, `3-buster`, `buster`](https://github.com/docker-library/ruby/blob/761ae37f67acc54d49f085dc4e5a2443a77700e6/3.0/buster/Dockerfile)
--	[`3.0.2-slim-buster`, `3.0-slim-buster`, `3-slim-buster`, `slim-buster`](https://github.com/docker-library/ruby/blob/49168590766ac3eb0ad286154b2e01760b79f4b2/3.0/slim-buster/Dockerfile)
--	[`3.0.2-alpine3.14`, `3.0-alpine3.14`, `3-alpine3.14`, `alpine3.14`, `3.0.2-alpine`, `3.0-alpine`, `3-alpine`, `alpine`](https://github.com/docker-library/ruby/blob/0c5948bcce84b1829a554209c777f0ef6a357dd2/3.0/alpine3.14/Dockerfile)
--	[`3.0.2-alpine3.13`, `3.0-alpine3.13`, `3-alpine3.13`, `alpine3.13`](https://github.com/docker-library/ruby/blob/0c5948bcce84b1829a554209c777f0ef6a357dd2/3.0/alpine3.13/Dockerfile)
--	[`2.7.4-bullseye`, `2.7-bullseye`, `2-bullseye`, `2.7.4`, `2.7`, `2`](https://github.com/docker-library/ruby/blob/49168590766ac3eb0ad286154b2e01760b79f4b2/2.7/bullseye/Dockerfile)
--	[`2.7.4-slim-bullseye`, `2.7-slim-bullseye`, `2-slim-bullseye`, `2.7.4-slim`, `2.7-slim`, `2-slim`](https://github.com/docker-library/ruby/blob/49168590766ac3eb0ad286154b2e01760b79f4b2/2.7/slim-bullseye/Dockerfile)
--	[`2.7.4-buster`, `2.7-buster`, `2-buster`](https://github.com/docker-library/ruby/blob/761ae37f67acc54d49f085dc4e5a2443a77700e6/2.7/buster/Dockerfile)
--	[`2.7.4-slim-buster`, `2.7-slim-buster`, `2-slim-buster`](https://github.com/docker-library/ruby/blob/49168590766ac3eb0ad286154b2e01760b79f4b2/2.7/slim-buster/Dockerfile)
--	[`2.7.4-alpine3.14`, `2.7-alpine3.14`, `2-alpine3.14`, `2.7.4-alpine`, `2.7-alpine`, `2-alpine`](https://github.com/docker-library/ruby/blob/0c5948bcce84b1829a554209c777f0ef6a357dd2/2.7/alpine3.14/Dockerfile)
--	[`2.7.4-alpine3.13`, `2.7-alpine3.13`, `2-alpine3.13`](https://github.com/docker-library/ruby/blob/0c5948bcce84b1829a554209c777f0ef6a357dd2/2.7/alpine3.13/Dockerfile)
--	[`2.6.8-bullseye`, `2.6-bullseye`, `2.6.8`, `2.6`](https://github.com/docker-library/ruby/blob/49168590766ac3eb0ad286154b2e01760b79f4b2/2.6/bullseye/Dockerfile)
--	[`2.6.8-slim-bullseye`, `2.6-slim-bullseye`, `2.6.8-slim`, `2.6-slim`](https://github.com/docker-library/ruby/blob/49168590766ac3eb0ad286154b2e01760b79f4b2/2.6/slim-bullseye/Dockerfile)
--	[`2.6.8-buster`, `2.6-buster`](https://github.com/docker-library/ruby/blob/761ae37f67acc54d49f085dc4e5a2443a77700e6/2.6/buster/Dockerfile)
--	[`2.6.8-slim-buster`, `2.6-slim-buster`](https://github.com/docker-library/ruby/blob/49168590766ac3eb0ad286154b2e01760b79f4b2/2.6/slim-buster/Dockerfile)
--	[`2.6.8-alpine3.14`, `2.6-alpine3.14`, `2.6.8-alpine`, `2.6-alpine`](https://github.com/docker-library/ruby/blob/e43959905d886946628d89f8e28d276af14a44a0/2.6/alpine3.14/Dockerfile)
--	[`2.6.8-alpine3.13`, `2.6-alpine3.13`](https://github.com/docker-library/ruby/blob/0c5948bcce84b1829a554209c777f0ef6a357dd2/2.6/alpine3.13/Dockerfile)
+-	[`3.1.1-bullseye`, `3.1-bullseye`, `3-bullseye`, `bullseye`, `3.1.1`, `3.1`, `3`, `latest`](https://github.com/docker-library/ruby/blob/cf80cd6600ded0516cb70087d38823da4c52774e/3.1/bullseye/Dockerfile)
+-	[`3.1.1-slim-bullseye`, `3.1-slim-bullseye`, `3-slim-bullseye`, `slim-bullseye`, `3.1.1-slim`, `3.1-slim`, `3-slim`, `slim`](https://github.com/docker-library/ruby/blob/cf80cd6600ded0516cb70087d38823da4c52774e/3.1/slim-bullseye/Dockerfile)
+-	[`3.1.1-buster`, `3.1-buster`, `3-buster`, `buster`](https://github.com/docker-library/ruby/blob/cf80cd6600ded0516cb70087d38823da4c52774e/3.1/buster/Dockerfile)
+-	[`3.1.1-slim-buster`, `3.1-slim-buster`, `3-slim-buster`, `slim-buster`](https://github.com/docker-library/ruby/blob/cf80cd6600ded0516cb70087d38823da4c52774e/3.1/slim-buster/Dockerfile)
+-	[`3.1.1-alpine3.15`, `3.1-alpine3.15`, `3-alpine3.15`, `alpine3.15`, `3.1.1-alpine`, `3.1-alpine`, `3-alpine`, `alpine`](https://github.com/docker-library/ruby/blob/cf80cd6600ded0516cb70087d38823da4c52774e/3.1/alpine3.15/Dockerfile)
+-	[`3.1.1-alpine3.14`, `3.1-alpine3.14`, `3-alpine3.14`, `alpine3.14`](https://github.com/docker-library/ruby/blob/cf80cd6600ded0516cb70087d38823da4c52774e/3.1/alpine3.14/Dockerfile)
+-	[`3.0.3-bullseye`, `3.0-bullseye`, `3.0.3`, `3.0`](https://github.com/docker-library/ruby/blob/c57d85bd8745dcd12d2713c177d6dbc5844318b7/3.0/bullseye/Dockerfile)
+-	[`3.0.3-slim-bullseye`, `3.0-slim-bullseye`, `3.0.3-slim`, `3.0-slim`](https://github.com/docker-library/ruby/blob/c57d85bd8745dcd12d2713c177d6dbc5844318b7/3.0/slim-bullseye/Dockerfile)
+-	[`3.0.3-buster`, `3.0-buster`](https://github.com/docker-library/ruby/blob/c57d85bd8745dcd12d2713c177d6dbc5844318b7/3.0/buster/Dockerfile)
+-	[`3.0.3-slim-buster`, `3.0-slim-buster`](https://github.com/docker-library/ruby/blob/c57d85bd8745dcd12d2713c177d6dbc5844318b7/3.0/slim-buster/Dockerfile)
+-	[`3.0.3-alpine3.15`, `3.0-alpine3.15`, `3.0.3-alpine`, `3.0-alpine`](https://github.com/docker-library/ruby/blob/1e1d46db1542d9869ef677ebc2dd56aecb4ececa/3.0/alpine3.15/Dockerfile)
+-	[`3.0.3-alpine3.14`, `3.0-alpine3.14`](https://github.com/docker-library/ruby/blob/c57d85bd8745dcd12d2713c177d6dbc5844318b7/3.0/alpine3.14/Dockerfile)
+-	[`2.7.5-bullseye`, `2.7-bullseye`, `2-bullseye`, `2.7.5`, `2.7`, `2`](https://github.com/docker-library/ruby/blob/928ce974a8356c21238af67b50680cc42fc489fe/2.7/bullseye/Dockerfile)
+-	[`2.7.5-slim-bullseye`, `2.7-slim-bullseye`, `2-slim-bullseye`, `2.7.5-slim`, `2.7-slim`, `2-slim`](https://github.com/docker-library/ruby/blob/928ce974a8356c21238af67b50680cc42fc489fe/2.7/slim-bullseye/Dockerfile)
+-	[`2.7.5-buster`, `2.7-buster`, `2-buster`](https://github.com/docker-library/ruby/blob/928ce974a8356c21238af67b50680cc42fc489fe/2.7/buster/Dockerfile)
+-	[`2.7.5-slim-buster`, `2.7-slim-buster`, `2-slim-buster`](https://github.com/docker-library/ruby/blob/928ce974a8356c21238af67b50680cc42fc489fe/2.7/slim-buster/Dockerfile)
+-	[`2.7.5-alpine3.15`, `2.7-alpine3.15`, `2-alpine3.15`, `2.7.5-alpine`, `2.7-alpine`, `2-alpine`](https://github.com/docker-library/ruby/blob/1e1d46db1542d9869ef677ebc2dd56aecb4ececa/2.7/alpine3.15/Dockerfile)
+-	[`2.7.5-alpine3.14`, `2.7-alpine3.14`, `2-alpine3.14`](https://github.com/docker-library/ruby/blob/928ce974a8356c21238af67b50680cc42fc489fe/2.7/alpine3.14/Dockerfile)
+-	[`2.6.9-bullseye`, `2.6-bullseye`, `2.6.9`, `2.6`](https://github.com/docker-library/ruby/blob/d339fc4298b24ad6fb9f6758fde30c0a2643eae3/2.6/bullseye/Dockerfile)
+-	[`2.6.9-slim-bullseye`, `2.6-slim-bullseye`, `2.6.9-slim`, `2.6-slim`](https://github.com/docker-library/ruby/blob/d339fc4298b24ad6fb9f6758fde30c0a2643eae3/2.6/slim-bullseye/Dockerfile)
+-	[`2.6.9-buster`, `2.6-buster`](https://github.com/docker-library/ruby/blob/d339fc4298b24ad6fb9f6758fde30c0a2643eae3/2.6/buster/Dockerfile)
+-	[`2.6.9-slim-buster`, `2.6-slim-buster`](https://github.com/docker-library/ruby/blob/d339fc4298b24ad6fb9f6758fde30c0a2643eae3/2.6/slim-buster/Dockerfile)
+-	[`2.6.9-alpine3.15`, `2.6-alpine3.15`, `2.6.9-alpine`, `2.6-alpine`](https://github.com/docker-library/ruby/blob/1e1d46db1542d9869ef677ebc2dd56aecb4ececa/2.6/alpine3.15/Dockerfile)
+-	[`2.6.9-alpine3.14`, `2.6-alpine3.14`](https://github.com/docker-library/ruby/blob/d339fc4298b24ad6fb9f6758fde30c0a2643eae3/2.6/alpine3.14/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -75,7 +81,7 @@ Ruby is a dynamic, reflective, object-oriented, general-purpose, open-source pro
 ## Create a `Dockerfile` in your Ruby app project
 
 ```dockerfile
-FROM ruby:2.5
+FROM ruby:3.0
 
 # throw errors if Gemfile has been modified since Gemfile.lock
 RUN bundle config --global frozen 1
@@ -104,7 +110,7 @@ $ docker run -it --name my-running-script my-ruby-app
 The above example `Dockerfile` expects a `Gemfile.lock` in your app directory. This `docker run` will help you generate one. Run it in the root of your app, next to the `Gemfile`:
 
 ```console
-$ docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app ruby:2.5 bundle install
+$ docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app ruby:3.0 bundle install
 ```
 
 ## Run a single Ruby script
@@ -112,7 +118,7 @@ $ docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app ruby:2.5 bundle install
 For many simple, single file projects, you may find it inconvenient to write a complete `Dockerfile`. In such cases, you can run a Ruby script by using the Ruby Docker image directly:
 
 ```console
-$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp ruby:2.5 ruby your-daemon-or-script.rb
+$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp ruby:3.0 ruby your-daemon-or-script.rb
 ```
 
 ## Encoding

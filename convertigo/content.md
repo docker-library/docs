@@ -1,10 +1,10 @@
-# What is Convertigo Mobility Platform ?
+# What is Convertigo Low Code Platform ?
 
-Convertigo is an open source fullstack Low Code & No Code platform.. The platform is used to build complex Cross-platform Enterprise Mobile apps in a few days. Convertigo platform is composed of several components:
+Convertigo is an open source fullstack Low Code & No Code platform. The platform is used to build Enterprise Web & Mobile apps in a few days. Convertigo platform is composed of several components:
 
-1.	**Convertigo MBaaS**: The back-end MBaaS server part. Handles back-end connectors, micro-services execution, offline data device synchronization and serves Mobile Web apps. Runs as a Docker container with the `convertigo` image
-2.	**Convertigo Studio**: Runs on a Windows or a MacOS workstation, Eclipse based IDE, used to program MBaaS micro-services workflows and optionaly use the "Mobile Builder" edition to build Mobile apps UIs in a MXDP (Multi eXperience Development Platform) Low code mode. Can be directly downloaded from [Sourceforge.net](https://sourceforge.net/projects/convertigo/files/latest/download)
-3.	**Convertigo SDKs**: Can be used with third party Mobile development tools such as Xcode (iOS) Android Studio (Android). SDKS are available on each platform standard repository (Bintray for Android, Cocoapods for iOS and Nuget for .NET)
+1.	**Convertigo Server**: The back-end server part. Handles back-end connectors, micro-services execution, offline data device synchronization and serves Web & Mobile Web apps. Runs as a Docker container with the `convertigo` image
+2.	**Convertigo Studio**: Runs on a Windows or a MacOS workstation, Eclipse based IDE, used to program Back-end micro-services workflows and use the "Mobile Builder" edition to build Mobile & Web apps UIs in a MXDP (Multi eXperience Development Platform) Low code mode. Can be directly downloaded from [Sourceforge.net](https://sourceforge.net/projects/convertigo/files/latest/download)
+3.	**Convertigo SDKs**: Can be used with third party Client Web & Mobile development tools such as Xcode (iOS) Android Studio (Android) Angualr, Vue.js or plain js . SDKS are available on each platform standard repository (Bintray for Android, Cocoapods for iOS and Nuget for .NET)
 4.	**Convertigo Forms**: The No Code App Builder to build form based apps as PWAs or Web applications with a Web Based NoCode studio intented for non technical developpers (Citizen Developpers)
 
 Convertigo Community edition brought to you by Convertigo SA (Paris & San Francisco). The platform is currently used by more than 100K developers worldwide, building enterprise class mobile apps.
@@ -21,13 +21,13 @@ Convertigo Community edition brought to you by Convertigo SA (Paris & San Franci
 $ docker run --name C8O -d -p 28080:28080 %%IMAGE%%
 ```
 
-This will start a container running the minimum Convertigo MBaaS server. Convertigo MBaaS uses images' **/workspace** directory to store configuration file and deployed projects as an Docker volume.
+This will start a container running the minimum Convertigo server. Convertigo uses images' **/workspace** directory to store configuration file and deployed projects as an Docker volume.
 
 You can access the Server admin console on http://[dockerhost]:28080/convertigo and login using the default credentials: admin / admin
 
 ## Link Convertigo to a CouchDB database for FullSync (Convertigo EE only)
 
-Convertigo MBaaS FullSync module uses Apache CouchDB 2.3.1 as NoSQL repository. You can use the **[couchdb](https://hub.docker.com/_/couchdb/)** docker image and link to it convertigo this way
+Convertigo FullSync module uses Apache CouchDB 2.3.1 as NoSQL repository. You can use the **[couchdb](https://hub.docker.com/_/couchdb/)** docker image and link to it convertigo this way
 
 Launch CouchDB container and name it 'fullsync'
 
@@ -35,13 +35,13 @@ Launch CouchDB container and name it 'fullsync'
 $ docker run -d --name fullsync couchdb:2.3.1
 ```
 
-Then launch Convertigo and link it to the running 'fullsync' container. Convertigo MBaaS sever will automatically use it as its fullsync repository.
+Then launch Convertigo and link it to the running 'fullsync' container. Convertigo Low Code sever will automatically use it as its fullsync repository.
 
 ```console
 $ docker run -d --name C8O --link fullsync:couchdb -p 28080:28080 %%IMAGE%%
 ```
 
-## Link Convertigo to a Billing & Analytics database
+## Link Convertigo Low Code Server to a Billing & Analytics database
 
 ### MySQL
 
@@ -53,10 +53,10 @@ $ docker run -d --name C8O --link [mysql-container]:mysql -p 28080:28080        
             -Dconvertigo.engine.billing.persistence.jdbc.username=[username for the c8oAnalytics db] \
             -Dconvertigo.engine.billing.persistence.jdbc.password=[password for specified db user]   \
             -Dconvertigo.engine.billing.persistence.jdbc.url=jdbc:mysql://mysql:3306/c8oAnalytics"   \
-convertigo
+%%IMAGE%%
 ```
 
-## Where is Convertigo MBaaS server storing deployed projects
+## Where is Convertigo Low Code server storing deployed projects
 
 Projects are deployed in the Convertigo workspace, a simple file system directory. You can map the docker container **/workspace** to your physical system by using :
 
@@ -64,21 +64,40 @@ Projects are deployed in the Convertigo workspace, a simple file system director
 $ docker run --name C8O -v $(pwd):/workspace -d -p 28080:28080 %%IMAGE%%
 ```
 
-You can share the same workspace by all Convertigo containers. This this case, when you deploy a project on a Convertigo container, it will be seen by others. This is the best way to build multi-instance load balanced Convertigo server farms.
+You can share the same workspace by all Convertigo containers. In this case, when you deploy a project on a Convertigo container, it will be seen by others. This is the best way to build multi-instance load balanced Convertigo server farms.
 
-## Migrate from an earlier version of Convertigo
+**Be sure to have a really fast file sharing between instances !!! We have experienced that Azure File Share is not fast enough**
+
+To avoid log and cache mixing, you have to add 2 variables for instance specific paths:
+
+```console
+-Dconvertigo.engine.cache_manager.filecache.directory=/workspace/cache/[instance name]
+-Dconvertigo.engine.log4j.appender.CemsAppender.File=/workspace/logs/[instance name]/engine.log
+```
+
+## Make image with pre-deployed projects
+
+If you want to make a vertical image ready to start with your application inside, you have to have your built projects **.car** files next to your `Dockerfile`:
+
+```console
+FROM %%IMAGE%%
+COPY myProject.car /usr/local/tomcat/webapps/convertigo/WEB-INF/default_user_workspace/projects/
+COPY myDependency.car /usr/local/tomcat/webapps/convertigo/WEB-INF/default_user_workspace/projects/
+```
+
+## Migrate from an earlier version of Convertigo Low Code Platform
 
 -	Stop the container to perform a backup. And just back the workspace directory. This will backup all the projects definitions and some project data.
--	Start a new Convertigo MBaaS docker container mapping the workspace
+-	Start a new Convertigo docker container mapping the workspace
 -	All the workspace (Projects) will be automatically migrated to the new Convertigo MBaaS version
 
 ## Security
 
-The default administration account of a Convertigo serveur is **admin** / **admin** and the **testplatform** is anonymous.
+The default administration account of a Convertigo server is **admin** / **admin** and the **testplatform** is anonymous.
 
 These accounts can be configured through the *administration console* and saved in the **workspace**.
 
-### `CONVERTIGO_ADMIN_USER` and `CONVERTIGO_ADMIN_PASSWORD` variables
+### `CONVERTIGO_ADMIN_USER` and `CONVERTIGO_ADMIN_PASSWORD` Environment variables
 
 You can change the default administration account :
 
@@ -86,7 +105,7 @@ You can change the default administration account :
 $ docker run -d --name C8O -e CONVERTIGO_ADMIN_USER=administrator -e CONVERTIGO_ADMIN_PASSWORD=s3cret -p 28080:28080 %%IMAGE%%
 ```
 
-### `CONVERTIGO_TESTPLATFORM_USER` and `CONVERTIGO_TESTPLATFORM_PASSWORD` variables
+### `CONVERTIGO_TESTPLATFORM_USER` and `CONVERTIGO_TESTPLATFORM_PASSWORD` Environment variables
 
 You can lock the **testplatform** by setting the account :
 
@@ -103,6 +122,8 @@ Add any *Java JVM* options such as -D[something] :
 ```console
 $ docker run -d --name C8O -e JAVA_OPTS="-DjvmRoute=server1" -p 28080:28080 %%IMAGE%%
 ```
+
+[Here the list of convertigo specific properties](https://www.convertigo.com/documentation/latest/operating-guide/appendixes/#list-of-convertigo-java-system-properties) (don't forget the `-Dconvertigo.engine.` prefix).
 
 ## `JXMX` Environment variable
 
@@ -136,9 +157,39 @@ The default `COOKIE_SECURE` value is `false` and can be defined :
 $ docker run -d --name C8O -e COOKIE_SECURE="true" -p 28080:28080 %%IMAGE%%
 ```
 
+## `COOKIE_SAMESITE` Environment variable
+
+Allow to configure the *SameSite* parameter for generated cookies. Can be empty, `none`, `lax` or `strict`.
+
+The default `COOKIE_SAMESITE` value is *empty* and can be defined this way:
+
+```console
+$ docker run -d --name C8O -e COOKIE_SAMESITE=lax -p 28080:28080 %%IMAGE%%
+```
+
+## `SESSION_TIMEOUT` Environment variable
+
+Allow to configure the default Tomcat *session-timeout* in minutes. This value is used for non-project calls (Administration console, Fullsync...). This value is overridden by each projects' calls (Sequence, Transaction ...).
+
+The default `SESSION_TIMEOUT` value is *30* and can be defined this way:
+
+```console
+$ docker run -d --name C8O -e SESSION_TIMEOUT=5 -p 28080:28080 %%IMAGE%%
+```
+
+## `DISABLE_SUDO` Environment variable
+
+The image include *sudo* command line, configured to allow the *convertigo* user to use it without password and to perform some *root* action inside the container. This variable allow to disable this permission.
+
+The default `DISABLE_SUDO` value is *empty* and can be defined this way:
+
+```console
+$ docker run -d --name C8O -e DISABLE_SUDO=true -p 28080:28080 %%IMAGE%%
+```
+
 ## Pre configurated Docker compose stack
 
-You can use this [stack](https://github.com/convertigo/docker/blob/master/compose/mbaas/docker-compose.yml) to run a complete Convertigo MBaaS server with FullSync repository and MySQL analytics in a few command lines.
+You can use this [stack](https://github.com/convertigo/docker/blob/master/compose/mbaas/docker-compose.yml) to run a complete Convertigo Low Code server with FullSync repository and MySQL analytics in a few command lines.
 
 ```console
 $ mkdir c8oMBaaS

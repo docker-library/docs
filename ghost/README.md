@@ -24,10 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.13.0`, `4.13`, `4`, `latest`](https://github.com/docker-library/ghost/blob/ec9b7dab454ea3280fd9bab4d539bbd8ccc5e4c0/4/debian/Dockerfile)
--	[`4.13.0-alpine`, `4.13-alpine`, `4-alpine`, `alpine`](https://github.com/docker-library/ghost/blob/ec9b7dab454ea3280fd9bab4d539bbd8ccc5e4c0/4/alpine/Dockerfile)
--	[`3.42.5`, `3.42`, `3`](https://github.com/docker-library/ghost/blob/5f8c4895e23dc9ee4281aea85ee7f1093a4fbf0c/3/debian/Dockerfile)
--	[`3.42.5-alpine`, `3.42-alpine`, `3-alpine`](https://github.com/docker-library/ghost/blob/5f8c4895e23dc9ee4281aea85ee7f1093a4fbf0c/3/alpine/Dockerfile)
+-	[`4.39.0`, `4.39`, `4`, `latest`](https://github.com/docker-library/ghost/blob/8fe5a22dfda42d295d0155cae4fb93c5f3c046eb/4/debian/Dockerfile)
+-	[`4.39.0-alpine`, `4.39-alpine`, `4-alpine`, `alpine`](https://github.com/docker-library/ghost/blob/8fe5a22dfda42d295d0155cae4fb93c5f3c046eb/4/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -153,13 +151,13 @@ services:
       #NODE_ENV: development
 
   db:
-    image: mysql:5.7
+    image: mysql:8.0
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: example
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/cd439efd00ac238cdd9dcbb58c2e91e7d46a1ffa/ghost/stack.yml)
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/e3b176ac7b3e913d7dbc239554acb6687122f6ea/ghost/stack.yml)
 
 Run `docker stack deploy -c stack.yml ghost` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
 

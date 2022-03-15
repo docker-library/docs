@@ -24,9 +24,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`fresh`, `6.6.1`, `6.6`, `latest`](https://github.com/varnish/docker-varnish/blob/e343aa923034760f607ae65cc5f20fa789818ab3/fresh/debian/Dockerfile)
--	[`fresh-alpine`, `6.6.1-alpine`, `6.6-alpine`, `alpine`](https://github.com/varnish/docker-varnish/blob/e343aa923034760f607ae65cc5f20fa789818ab3/fresh/alpine/Dockerfile)
--	[`stable`, `6.0.8`, `6.0`](https://github.com/varnish/docker-varnish/blob/e343aa923034760f607ae65cc5f20fa789818ab3/stable/debian/Dockerfile)
+-	[`fresh`, `7.0.2`, `7.0`, `latest`](https://github.com/varnish/docker-varnish/blob/6423e32e0afd20fa876276e1525cb318920fbefa/fresh/debian/Dockerfile)
+-	[`fresh-alpine`, `7.0.2-alpine`, `7.0-alpine`, `alpine`](https://github.com/varnish/docker-varnish/blob/6423e32e0afd20fa876276e1525cb318920fbefa/fresh/alpine/Dockerfile)
+-	[`old`, `6.6.2`, `6.6`](https://github.com/varnish/docker-varnish/blob/6423e32e0afd20fa876276e1525cb318920fbefa/old/debian/Dockerfile)
+-	[`old-alpine`, `6.6.2-alpine`, `6.6-alpine`](https://github.com/varnish/docker-varnish/blob/6423e32e0afd20fa876276e1525cb318920fbefa/old/alpine/Dockerfile)
+-	[`stable`, `6.0.10`, `6.0`](https://github.com/varnish/docker-varnish/blob/d1212e4b8fd35b58c19b01ed389f8841d0a4ea38/stable/debian/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -91,7 +93,24 @@ Place this file in the same directory as your `default.vcl`, run `docker build -
 $ docker --tmpfs /var/lib/varnish:exec my-varnish
 ```
 
-### Additional configuration
+## Reloading the configuration
+
+The images all ship with [varnishreload](https://github.com/varnishcache/pkg-varnish-cache/blob/master/systemd/varnishreload#L42) which allows you to easily update the running configuration without restarting the container (and therefore losing your cache). At its most basic, you just need this:
+
+```console
+# update the default.vcl in your container
+docker cp new_default.vcl running_container:/etc/varnish/default.vcl
+# run varnishreload
+docker exec running_container varnishreload
+```
+
+Note that `varnishreload` also supports reloading other files (it doesn't have to be `default.vcl`), labels (`l`), and garbage collection of old labeles (`-m`) among others. To know more, run
+
+```console
+docker run varnish varnishreload -h
+```
+
+## Additional configuration
 
 By default, the containers will use a cache size of 100MB, which is usually a bit too small, but you can quickly set it through the `VARNISH_SIZE` environment variable:
 
@@ -99,7 +118,7 @@ By default, the containers will use a cache size of 100MB, which is usually a bi
 $ docker run --tmpfs /var/lib/varnish:exec -e VARNISH_SIZE=2G varnish
 ```
 
-Additionally, you can add arguments to `docker run` affter `varnish`, if the first one starts with a `-`, they will be appendend to the [default command](https://github.com/varnish/docker-varnish/blob/master/docker-varnish-entrypoint#L8):
+Additionally, you can add arguments to `docker run` after `varnish`, if the first one starts with a `-`, they will be appendend to the [default command](https://github.com/varnish/docker-varnish/blob/master/docker-varnish-entrypoint#L8):
 
 ```console
 # extend the default keep period
@@ -119,10 +138,10 @@ $ docker run varnish varnishd -x parameter
 $ docker run varnish varnishd -a :8080 -b 127.0.0.1:8181 -t 600 -p feature=+http2
 ```
 
-### Exposing the port
+## Exposing the port
 
 ```console
-+$ docker run --name my-running-varnish --tmpfs /var/lib/varnish:exec -d -p 8080:80 my-varnish
+$ docker run --name my-running-varnish --tmpfs /var/lib/varnish:exec -d -p 8080:80 my-varnish
 ```
 
 Then you can hit `http://localhost:8080` or `http://host-ip:8080` in your browser.
