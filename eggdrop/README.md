@@ -24,8 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`develop`](https://github.com/eggheads/eggdrop-docker/blob/f067a3393434028c1f1bf785a9c4ca062d477acc/develop/Dockerfile)
--	[`1.9`, `1.9.1`, `stable`, `latest`](https://github.com/eggheads/eggdrop-docker/blob/5444df31406ef15da9fa7e6b742d093179f66d60/1.9/Dockerfile)
+-	[`develop`](https://github.com/eggheads/eggdrop-docker/blob/7f02bac8fbe5b214c5d7bbce74e09f9f2b712d9a/develop/Dockerfile)
+-	[`1.9`, `1.9.2`, `stable`, `latest`](https://github.com/eggheads/eggdrop-docker/blob/5cea68dba7e700c04ff4cc66e5f35f54b3e9573b/1.9/Dockerfile)
 
 # Quick reference (cont.)
 
