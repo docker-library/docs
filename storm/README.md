@@ -24,8 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.2.4`, `1.2`](https://github.com/31z4/storm-docker/blob/0edbf5c601361a8e89aa48e25d09d424996e8239/1.2.4/Dockerfile)
--	[`2.3.0`, `2.3`, `latest`](https://github.com/31z4/storm-docker/blob/0edbf5c601361a8e89aa48e25d09d424996e8239/2.3.0/Dockerfile)
+-	[`1.2.4`, `1.2`](https://github.com/31z4/storm-docker/blob/a80831113011cf40a53e91e98790e99ad5a76280/1.2.4/Dockerfile)
+-	[`2.3.0`, `2.3`, `latest`](https://github.com/31z4/storm-docker/blob/a80831113011cf40a53e91e98790e99ad5a76280/2.3.0/Dockerfile)
 
 # Quick reference (cont.)
 
