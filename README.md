@@ -55,20 +55,20 @@ After opening your Pull Request the changes will be checked by an automated `mar
 
 # How do I add a new image's docs
 
--	create a folder for my image: `mkdir myimage`
--	create a `README-short.txt` (required, 100 char max)
--	create a `content.md` (required)
--	create a `license.md` (required)
--	create a `maintainer.md` (required)
--	create a `github-repo` (required)
--	add a `logo.png` (recommended)
+-	Create a folder for my image: `mkdir myimage`
+-	Create a `README-short.txt` (required, 100 char max)
+-	Create a `content.md` (required)
+-	Create a `license.md` (required)
+-	Create a `maintainer.md` (required)
+-	Create a `github-repo` (required)
+-	Add a `logo.png` (recommended)
 
 Optionally:
 
--	run `./markdownfmt.sh -l myimage` to list any files that are non-compliant to [`tianon/markdownfmt`](https://hub.docker.com/r/tianon/markdownfmt).  
+-	Run `./markdownfmt.sh -l myimage` to list any files that are non-compliant to [`tianon/markdownfmt`](https://hub.docker.com/r/tianon/markdownfmt).  
 	Any files in the list will result in a failed build during continuous integration.
 	-	run `./markdownfmt.sh -d myimage` to see a diff of changes required to pass.
--	run `./update.sh myimage` to generate `myimage/README.md` for manual review of the generated copy.  
+-	Run `./update.sh myimage` to generate `myimage/README.md` for manual review of the generated copy.  
 	**Note:** do not actually commit the `README.md` file; it is automatically generated/committed before being uploaded to Docker Hub.
 
 # Files related to an image's docs
@@ -164,7 +164,7 @@ The scripts and Markdown files in here are used in building an image's `README.m
 
 ## `generate-repo-stub-readme.sh`
 
-This is used to generate a simple `README.md` to put in the image's repo. We use this in Git repositories within https://github.com/docker-library to simplify our maintenance, but it is not required for anyone else. Argument is the name of the image, like `golang` and it then outputs the readme to standard out.
+This is used to generate a simple `README.md` to put in the image's repo. We use this in Git repositories within https://github.com/docker-library to simplify our maintenance, but it is not required for anyone else. The only argument is the name of the image (or repo), like `golang` and it then outputs the readme to standard out.
 
 ## `push.pl` and `push.sh`
 
