@@ -24,17 +24,17 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `9`, `9.3`, `9.3.3`, `9.3-jre`, `9.3-jre8`, `9.3.3-jre`, `9.3.3-jre8`, `9.3.3.0`, `9.3.3.0-jre`, `9.3.3.0-jre8`](https://github.com/jruby/docker-jruby/blob/2d3045347878d988c2e7de53c04a3069d50cd162/9.3/jre8/Dockerfile)
--	[`9-jdk`, `9-jdk8`, `9.3-jdk`, `9.3-jdk8`, `9.3.3-jdk`, `9.3.3-jdk8`, `9.3.3.0-jdk`, `9.3.3.0-jdk8`](https://github.com/jruby/docker-jruby/blob/2d3045347878d988c2e7de53c04a3069d50cd162/9.3/jdk8/Dockerfile)
--	[`9.3-jre11`, `9.3.3-jre11`, `9.3.3.0-jre11`](https://github.com/jruby/docker-jruby/blob/2d3045347878d988c2e7de53c04a3069d50cd162/9.3/jre11/Dockerfile)
--	[`9.3-jdk11`, `9.3.3-jdk11`, `9.3.3.0-jdk11`](https://github.com/jruby/docker-jruby/blob/2d3045347878d988c2e7de53c04a3069d50cd162/9.3/jdk11/Dockerfile)
--	[`9.3-jdk17`, `9.3.3-jdk17`, `9.3.3.0-jdk17`](https://github.com/jruby/docker-jruby/blob/2d3045347878d988c2e7de53c04a3069d50cd162/9.3/jdk17/Dockerfile)
--	[`9.2`, `9.2.20`, `9.2-jre`, `9.2-jre8`, `9.2.20-jre`, `9.2.20-jre8`, `9.2.20.1`, `9.2.20.0-jre`, `9.2.20.0-jre8`](https://github.com/jruby/docker-jruby/blob/2d3045347878d988c2e7de53c04a3069d50cd162/9.2/jre8/Dockerfile)
--	[`9.2-jdk`, `9.2-jdk8`, `9.2.20-jdk`, `9.2.20-jdk8`, `9.2.20.0-jdk`, `9.2.20.1-jdk8`](https://github.com/jruby/docker-jruby/blob/2d3045347878d988c2e7de53c04a3069d50cd162/9.2/jdk8/Dockerfile)
--	[`9.2-jre11`, `9.2.20-jre11`, `9.2.20.1-jre11`](https://github.com/jruby/docker-jruby/blob/2d3045347878d988c2e7de53c04a3069d50cd162/9.2/jre11/Dockerfile)
--	[`9.2-jdk11`, `9.2.20-jdk11`, `9.2.20.1-jdk11`](https://github.com/jruby/docker-jruby/blob/2d3045347878d988c2e7de53c04a3069d50cd162/9.2/jdk11/Dockerfile)
--	[`9.2-jdk17`, `9.2.20-jdk17`, `9.2.20.1-jdk17`](https://github.com/jruby/docker-jruby/blob/2d3045347878d988c2e7de53c04a3069d50cd162/9.2/jdk17/Dockerfile)
--	[`9.2-onbuild`, `9.2.20-onbuild`, `9.2.20.1-onbuild`](https://github.com/jruby/docker-jruby/blob/2d3045347878d988c2e7de53c04a3069d50cd162/9.2/onbuild-jdk8/Dockerfile)
+-	[`latest`, `9`, `9.3`, `9.3.4`, `9.3-jre`, `9.3-jre8`, `9.3.4-jre`, `9.3.4-jre8`, `9.3.4.0`, `9.3.4.0-jre`, `9.3.4.0-jre8`](https://github.com/jruby/docker-jruby/blob/fae50010fae73e3cbed04c660747419413096767/9.3/jre8/Dockerfile)
+-	[`9-jdk`, `9-jdk8`, `9.3-jdk`, `9.3-jdk8`, `9.3.4-jdk`, `9.3.4-jdk8`, `9.3.4.0-jdk`, `9.3.4.0-jdk8`](https://github.com/jruby/docker-jruby/blob/fae50010fae73e3cbed04c660747419413096767/9.3/jdk8/Dockerfile)
+-	[`9.3-jre11`, `9.3.4-jre11`, `9.3.4.0-jre11`](https://github.com/jruby/docker-jruby/blob/fae50010fae73e3cbed04c660747419413096767/9.3/jre11/Dockerfile)
+-	[`9.3-jdk11`, `9.3.4-jdk11`, `9.3.4.0-jdk11`](https://github.com/jruby/docker-jruby/blob/fae50010fae73e3cbed04c660747419413096767/9.3/jdk11/Dockerfile)
+-	[`9.3-jdk17`, `9.3.4-jdk17`, `9.3.4.0-jdk17`](https://github.com/jruby/docker-jruby/blob/fae50010fae73e3cbed04c660747419413096767/9.3/jdk17/Dockerfile)
+-	[`9.2`, `9.2.20`, `9.2-jre`, `9.2-jre8`, `9.2.20-jre`, `9.2.20-jre8`, `9.2.20.1`, `9.2.20.0-jre`, `9.2.20.0-jre8`](https://github.com/jruby/docker-jruby/blob/fae50010fae73e3cbed04c660747419413096767/9.2/jre8/Dockerfile)
+-	[`9.2-jdk`, `9.2-jdk8`, `9.2.20-jdk`, `9.2.20-jdk8`, `9.2.20.0-jdk`, `9.2.20.1-jdk8`](https://github.com/jruby/docker-jruby/blob/fae50010fae73e3cbed04c660747419413096767/9.2/jdk8/Dockerfile)
+-	[`9.2-jre11`, `9.2.20-jre11`, `9.2.20.1-jre11`](https://github.com/jruby/docker-jruby/blob/fae50010fae73e3cbed04c660747419413096767/9.2/jre11/Dockerfile)
+-	[`9.2-jdk11`, `9.2.20-jdk11`, `9.2.20.1-jdk11`](https://github.com/jruby/docker-jruby/blob/fae50010fae73e3cbed04c660747419413096767/9.2/jdk11/Dockerfile)
+-	[`9.2-jdk17`, `9.2.20-jdk17`, `9.2.20.1-jdk17`](https://github.com/jruby/docker-jruby/blob/fae50010fae73e3cbed04c660747419413096767/9.2/jdk17/Dockerfile)
+-	[`9.2-onbuild`, `9.2.20-onbuild`, `9.2.20.1-onbuild`](https://github.com/jruby/docker-jruby/blob/fae50010fae73e3cbed04c660747419413096767/9.2/onbuild-jdk8/Dockerfile)
 
 # Quick reference (cont.)
 
