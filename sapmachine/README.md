@@ -25,7 +25,8 @@ WARNING:
 # Supported tags and respective `Dockerfile` links
 
 -	[`11`, `11.0.14.1`](https://github.com/SAP/SapMachine-infrastructure/blob/dc86b1da3824d9cd56abc1aa6e1283636be33432/dockerfiles/official/11/Dockerfile)
--	[`17`, `17.0.2`, `latest`, `lts`](https://github.com/SAP/SapMachine-infrastructure/blob/8c7b8fa87fff57615c3a9b7bee48eb272fe2c621/dockerfiles/official/17/Dockerfile)
+-	[`18`, `latest`](https://github.com/SAP/SapMachine-infrastructure/blob/e1bcdc89b0f3c2c5c7c65b40300c2f26f1010d92/dockerfiles/official/18/Dockerfile)
+-	[`17`, `17.0.2`, `lts`](https://github.com/SAP/SapMachine-infrastructure/blob/8c7b8fa87fff57615c3a9b7bee48eb272fe2c621/dockerfiles/official/17/Dockerfile)
 
 # Quick reference (cont.)
 
