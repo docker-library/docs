@@ -25,7 +25,7 @@ Then run:
 ```console
 # we need both a configuration file at /etc/varnish/default.vcl
 # and our workdir to be mounted as tmpfs to avoid disk I/O
-$ docker run -v /path/to/default.vcl:/etc/varnish/default.vcl:ro --tmpfs /var/lib/varnish:exec %%IMAGE%%
+$ docker run -v /path/to/default.vcl:/etc/varnish/default.vcl:ro --tmpfs /var/lib/varnish/varnishd:exec %%IMAGE%%
 ```
 
 Alternatively, a simple `Dockerfile` can be used to generate a new image that includes the necessary `default.vcl` (which is a much cleaner solution than the bind mount above):
@@ -39,7 +39,7 @@ COPY default.vcl /etc/varnish/
 Place this file in the same directory as your `default.vcl`, run `docker build -t my-varnish .`, then start your container:
 
 ```console
-$ docker --tmpfs /var/lib/varnish:exec my-varnish
+$ docker --tmpfs /var/lib/varnish/varnishd:exec my-varnish
 ```
 
 ## Reloading the configuration
@@ -64,14 +64,14 @@ docker run varnish varnishreload -h
 By default, the containers will use a cache size of 100MB, which is usually a bit too small, but you can quickly set it through the `VARNISH_SIZE` environment variable:
 
 ```console
-$ docker run --tmpfs /var/lib/varnish:exec -e VARNISH_SIZE=2G %%IMAGE%%
+$ docker run --tmpfs /var/lib/varnish/varnishd:exec -e VARNISH_SIZE=2G %%IMAGE%%
 ```
 
 Additionally, you can add arguments to `docker run` after `%%IMAGE%%`, if the first one starts with a `-`, they will be appendend to the [default command](https://github.com/varnish/docker-varnish/blob/master/docker-varnish-entrypoint#L8):
 
 ```console
 # extend the default keep period
-$ docker run --tmpfs /var/lib/varnish:exec -e VARNISH_SIZE=2G %%IMAGE%% -p default_keep=300
+$ docker run --tmpfs /var/lib/varnish/varnishd:exec -e VARNISH_SIZE=2G %%IMAGE%% -p default_keep=300
 ```
 
 If your first argument after `%%IMAGE%%` doesn't start with `-`, it will be interpreted as a command to override the default one:
@@ -90,7 +90,7 @@ $ docker run %%IMAGE%% varnishd -a :8080 -b 127.0.0.1:8181 -t 600 -p feature=+ht
 ## Exposing the port
 
 ```console
-$ docker run --name my-running-varnish --tmpfs /var/lib/varnish:exec -d -p 8080:80 my-varnish
+$ docker run --name my-running-varnish --tmpfs /var/lib/varnish/varnishd:exec -d -p 8080:80 my-varnish
 ```
 
 Then you can hit `http://localhost:8080` or `http://host-ip:8080` in your browser.
