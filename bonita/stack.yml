@@ -11,7 +11,7 @@ services:
       - -c
       - max_prepared_transactions=100
   bonita:
-    image: %%IMAGE%%
+    image: bonita
     hostname: <hostname>
     ports:
       - 8080:8080
