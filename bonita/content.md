@@ -14,7 +14,7 @@ Bonita is an open-source business process management and workflow suite created 
 $ docker run --name bonita -d -p 8080:8080 %%IMAGE%%
 ```
 
-This will start a container running [Bonita runtime](https://documentation.bonitasoft.com/bonita/2022.1/tomcat-bundle): a Tomcat bundle with Bonita Engine + Bonita Portal. With no environment variables specified, it's as if you have launched the bundle on your host using startup.{sh|bat} (with security hardening on REST and HTTP APIs, cf Security part). Bonita uses a H2 database here.
+This will start a container running [Bonita runtime](https://documentation.bonitasoft.com/bonita/latest/tomcat-bundle): a Tomcat bundle with Bonita Engine + Bonita Portal. With no environment variables specified, it's as if you have launched the bundle on your host using startup.{sh|bat} (with security hardening on REST and HTTP APIs, cf Security part). Bonita uses a H2 database here.
 
 You can access the Bonita Portal on http://localhost:8080/bonita and login using the default credentials: install / install
 
@@ -28,16 +28,16 @@ You can work with either a PostgreSQL Container, or PostgreSQL as an installed s
 ### PostgreSQL Container
 
 
-From Bonita 2022.1 onwards, the Bonita docker image does not include configuration scripts for Postgres
+From Bonita 2022.1 onwards, the Bonita docker image does not include configuration scripts to automatically create databases and users anymore.
 
 
 Therefore the PostgreSQL container needs to be configured to work with Bonita before starting the Bonita container.
-The configuration of a PostgreSQL database to work with Bonita is described in detail in the xref:database-configuration.adoc[database configuration page]. +
+The configuration of a PostgreSQL database to work with Bonita is described in details in the [database configuration page](https://documentation.bonitasoft.com/bonita/latest/runtime/database-configuration#postgres_setup). +
 Alternatively, Bonita provides a preconfigured [PostgreSQL image](https://hub.docker.com/r/bonitasoft/bonita-postgres) on docker-hub. +
 You can run the image with the following command:
 
 ```
-docker run --name mydbpostgres -h <hostname> -v <your-bonita-license-folder>:/opt/bonita_lic/ -d bonitasoft/bonita-postgres:12.6
+docker run --name mydbpostgres -h <hostname> -d bonitasoft/bonita-postgres:12.6
 ```
 
 This image is built from the following [GitHub repository](https://github.com/Bonitasoft-Community/bonita-database-docker/tree/main/postgres/12), which can be further adapted/customized to suit your needs.
@@ -51,11 +51,10 @@ Run `docker stack deploy -c stack.yml %%REPO%%` (or `docker-compose -f stack.yml
 * Replace `<hostname>` with the one used in the licence generation command
 * leave double `$$` untouched
 
-Run `docker-compose up`, wait for it to initialize completely, and visit `+http://localhost:8080+`, or `+http://host-ip:8080+` (as appropriate).
 
 ### PostgreSQL as an installed service
 
-If you don't want to run your database in a docker container, the following file `env.txt` needs to be configured and provided to the docker run command:
+If you don't want to run your database in a docker container, the following `env.txt` file needs to be configured and provided to the docker run command:
 
 ```
 DB_VENDOR=postgres
@@ -81,7 +80,7 @@ docker run --name=bonita -h <hostname> -e "TENANT_LOGIN=tech_user" -e "TENANT_PA
 
 Now you can access the Bonita Runtime on localhost:8080/bonita and login using: tech_user / secret
 
-## Where data is stored
+## Where data are stored
 
 Bonita uses tomcat that writes file to a working directory and a temp directory.
 
@@ -145,7 +144,7 @@ This optional environment variable allows to activate/deactivate writing Tomcat 
 In practice, it is only useful when mounting a volume to the aforementioned directory. Default value is *false*.
 
 ### ACCESSLOGS_PATH
-If `ACCESSLOGS_FILES_ENABLED=true`, this optional environment variable overrides the default path to of the access log file.
+If `ACCESSLOGS_FILES_ENABLED=true`, this optional environment variable overrides the default path to the access log files.
 Default value is */opt/bonita/logs*.
 
 ### ACCESSLOGS_PATH_APPEND_HOSTNAME
@@ -157,7 +156,7 @@ If `ACCESSLOGS_FILES_ENABLED=true`, this optional environment variable allows to
 
 ### HTTP_MAX_THREADS
 This optional environment variable allows to specify the maximum Http thread number Tomcat will use to serve HTTP/1.1 requests. Directly modifies the *maxThreads* parameter in the *server.xml* file of the Tomcat inside the docker container.
-More information on the usefulness of this parameter can be found https://tomcat.apache.org/tomcat-9.0-doc/config/http.html[here]. Default value is *20*.
+More information on the usefulness of this parameter can be found [here](https://tomcat.apache.org/tomcat-9.0-doc/config/http.html). Default value is *20*.
 
 ### JAVA_OPTS
 This optional environment variable is used to customize JAVA_OPTS. The default value is -Xms1024m -Xmx1024m -XX:MaxPermSize=256m.
@@ -171,7 +170,7 @@ These variables are optional, used in conjunction to configure the bonita image 
 
 ### DB_NAME, DB_USER, DB_PASS
 
-These variables are used in conjunction to create a new user, set that user's password, and create the bonita database.
+These variables are used in conjunction to define how Bonita should access its database for internal functioning.
 
 `DB_NAME` default value is bonitadb.
 
@@ -181,7 +180,8 @@ These variables are used in conjunction to create a new user, set that user's pa
 
 ### BIZ_DB_NAME, BIZ_DB_USER, BIZ_DB_PASS
 
-These variables are used in conjunction to create a new user, set that user's password and create the bonita business database.
+
+These variables are used in conjunction to define how Bonita should access the [Business Data](https://documentation.bonitasoft.com/bonita/latest/data/define-and-deploy-the-bdm) database.
 
 `BIZ_DB_NAME` default value is businessdb.
 
@@ -192,12 +192,16 @@ These variables are used in conjunction to create a new user, set that user's pa
 
 ## Logger configuration
 
+**Since 2022.1**
+
 The logger can be configured by mounting a volume on folder `/opt/bonita/conf/logs` containing the configuration files.
 
 the volume must contain the 2 files
 [log4j2-loggers.xml](https://raw.githubusercontent.com/bonitasoft/bonita-distrib/7.14.0/tomcat-resources/tomcat-distrib-for-bonita/src/main/resources/tomcat/server/conf/log4j2-loggers.xml)
 and
-[log4j2-appenders.xml](https://raw.githubusercontent.com/bonitasoft/bonita-distrib/7.14.0/docker/files/log4j2/log4j2-appenders.xml)
+[log4j2-appenders.xml](https://raw.githubusercontent.com/bonitasoft/bonita-distrib/7.14.0/docker/files/log4j2/log4j2-appenders.xml).
+
+Any change made to one of this 2 files is automatically hot-reloaded and taken into account immediately.
 
 ## Security
 
@@ -205,21 +209,21 @@ This Docker image activates both static and dynamic authorization checks by defa
 
 -	REST API authorization
 
-	-	[Static authorization checking](https://documentation.bonitasoft.com/bonita/2022.1/rest-api-authorization#static_authorization)
+	-	[Static authorization checking](https://documentation.bonitasoft.com/bonita/latest/rest-api-authorization#static_authorization)
 
 -	[HTTP API](https://documentation.bonitasoft.com/bonita/2022.1/rest-api-authorization#_activating_and_deactivating_authorization)
 
 For specific needs you can override this behavior by setting HTTP_API to true:
 
 ```console
-$ docker run  -e HTTP_API=true --name bonita -d -p 8080:8080 %%IMAGE%%
+$ docker run  -e HTTP_API=true -e HTTP_API_PASSWORD="My-Cust0m_S3cR3T" --name bonita -d -p 8080:8080 %%IMAGE%%
 ```
 
-## Update from an earlier version of 
+## Update from an earlier version of Bonita
 
-For updating from a version before 7.10.0, please refere to the documention
+For updating from a version before 7.10.0, please refer to the [documentation](https://documentation.bonitasoft.com/bonita/latest/version-update/migrate-from-an-earlier-version-of-bonita)
 
--	Stop the container to perform a backup
+-	Stop the container to perform a database backup
 
 	```console
 	$ docker stop bonita
@@ -239,7 +243,7 @@ For updating from a version before 7.10.0, please refere to the documention
 	$ pg_dump -O -x -h 172.17.0.26 -U postgres bonitadb > /tmp/bonitadb.sql
 	```
 
-	Note that businessdb won't be updated with the update tool but you may want to also backup/move it.
+	Note that businessdb won't be updated by the update tool but you may want to also backup/move it.
 
 -	Load the dump
 
@@ -264,7 +268,7 @@ For updating from a version before 7.10.0, please refere to the documention
 	$ cd bonita-update-tool-3.0.0
 	```
 
-	edit the update tool config to point towards the copy of bonita home and db
+	edit the update tool configuration file `Config.properties` to point towards the database.
 
 	```console
 	$ vim Config.properties
@@ -285,7 +289,7 @@ For updating from a version before 7.10.0, please refere to the documention
 	$ ./bonita-update-tool
 	```
 
--	Launch the new container pointing towards the copy of DB and filesystem
+-	Launch the new container pointing towards the copy of the database.
 	
 	```console
 	$ docker run --name=bonita --link mydbpostgres:postgres -e "DB_NAME=newbonitadb" -e "DB_USER=newbonitauser" -e "DB_PASS=newbonitapass" -d -p 8081:8080 %%IMAGE%%:2022.1-u0
