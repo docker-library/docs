@@ -93,21 +93,21 @@ It can be a good practice to mount the following folders into volumes
 
 When you start the bonita image, you can adjust the configuration of the Bonita instance by passing one or more environment variables on the docker run command line.
 
-### PLATFORM_PASSWORD
-
-This environment variable is recommended for you to use the Bonita image. It sets the platform administrator password for Bonita. If it is not specified, the default password `platform` will be used.
-
 ### PLATFORM_LOGIN
 
 This optional environment variable is used in conjunction with PLATFORM_PASSWORD to define the username for the platform administrator. If it is not specified, the default username `platformAdmin` will be used.
 
-### TENANT_PASSWORD
+### PLATFORM_PASSWORD
 
-This environment variable is recommended for you to use the Bonita image. It sets the tenant administrator password for Bonita. If it is not specified, the default password `install` will be used.
+This environment variable is recommended for you to use the Bonita image. It sets the platform administrator password for Bonita. If it is not specified, the default password `platform` will be used.
 
 ### TENANT_LOGIN
 
 This optional environment variable is used in conjunction with TENANT_PASSWORD to define the username for the tenant administrator. If it is not specified, the default username `install` will be used.
+
+### TENANT_PASSWORD
+
+This environment variable is recommended for you to use the Bonita image. It sets the tenant administrator password for Bonita. If it is not specified, the default password `install` will be used.
 
 ### MONITORING_USERNAME
 
@@ -119,7 +119,7 @@ This optional environment variable is used in conjunction with `MONITORING_USERN
 
 ### HTTP_API
 This optional environment variable is used to enable/disable the Bonita HTTP API. The default value is false, which will deactivate the HTTP API.
-From Bonita 2022.1, HTTP API is protected with https://en.wikipedia.org/wiki/Basic_access_authentication[Basic access authentication]. See the following 2 parameters to configure Basic access authentication.
+From Bonita 2022.1, HTTP API is protected with [Basic access authentication](https://en.wikipedia.org/wiki/Basic_access_authentication). See the following 2 parameters to configure Basic access authentication.
 
 ### HTTP_API_USERNAME
 This optional environment variable is used to configure the HTTP API Basic access authentication username. The default value is *http-api*.
@@ -128,13 +128,13 @@ This optional environment variable is used to configure the HTTP API Basic acces
 This optional environment variable is used to configure the HTTP API Basic access authentication password. There is no default value, and providing a value is mandatory if `HTTP_API=true`.
 
 ### JMX_REMOTE_ACCESS
-This optional environment variable is used to enable/disable the access to the https://docs.oracle.com/en/java/javase/11/management/using-jconsole.html[JMX console] from a remote machine. +
+This optional environment variable is used to enable/disable the access to the [JMX console](https://docs.oracle.com/en/java/javase/11/management/using-jconsole.html) from a remote machine. +
 Default value is *false*. +
 The host to connect to is the name / IP address of the bonita server, the port to connect to is 9000. +
-The credentials to connect are the environment variables xref:#MONITORING_USERNAME[MONITORING_USERNAME], xref:#MONITORING_PASSWORD[MONITORING_PASSWORD].
+The credentials to connect are the environment variables [MONITORING_USERNAME](#MONITORING_USERNAME), [MONITORING_PASSWORD](#MONITORING_PASSWORD).
 
 ### REMOTE_IP_VALVE_ENABLED
-This optional environment variable allows to activate/deactivate xref:runtime:reverse-proxy-configuration.adoc[reverse proxy redirection]. Default value is *false*.
+This optional environment variable allows to activate/deactivate [reverse proxy redirection](https://documentation.bonitasoft.com/bonita/latest/runtime/reverse-proxy-configuration). Default value is *false*.
 
 ### ACCESSLOGS_STDOUT_ENABLED
 This optional environment variable allows to activate/deactivate writing Tomcat access logs to standard output. Default value is *false*.
@@ -199,7 +199,7 @@ The logger can be configured by mounting a volume on folder `/opt/bonita/conf/lo
 the volume must contain the 2 files
 [log4j2-loggers.xml](https://raw.githubusercontent.com/bonitasoft/bonita-distrib/7.14.0/tomcat-resources/tomcat-distrib-for-bonita/src/main/resources/tomcat/server/conf/log4j2-loggers.xml)
 and
-[log4j2-appenders.xml](https://raw.githubusercontent.com/bonitasoft/bonita-distrib/7.14.0/docker/files/log4j2/log4j2-appenders.xml).
+[log4j2-appenders.xml](https://raw.githubusercontent.com/bonitasoft/bonita-distrib/7.14.0/docker/files/log4j2/log4j2-appenders.xml)
 
 Any change made to one of this 2 files is automatically hot-reloaded and taken into account immediately.
 
@@ -211,7 +211,7 @@ This Docker image activates both static and dynamic authorization checks by defa
 
 	-	[Static authorization checking](https://documentation.bonitasoft.com/bonita/latest/rest-api-authorization#static_authorization)
 
--	[HTTP API](https://documentation.bonitasoft.com/bonita/2022.1/rest-api-authorization#_activating_and_deactivating_authorization)
+-	[HTTP API](https://documentation.bonitasoft.com/bonita/latest/rest-api-authorization#_activating_and_deactivating_authorization)
 
 For specific needs you can override this behavior by setting HTTP_API to true:
 
@@ -295,4 +295,4 @@ For updating from a version before 7.10.0, please refer to the [documentation](h
 	$ docker run --name=bonita --link mydbpostgres:postgres -e "DB_NAME=newbonitadb" -e "DB_USER=newbonitauser" -e "DB_PASS=newbonitapass" -d -p 8081:8080 %%IMAGE%%:2022.1-u0
 	```
 
-For more details regarding Bonita update and for version before 7.10.0, see the [documentation](https://documentation.bonitasoft.com/bonita/2022.1/version-update/migrate-from-an-earlier-version-of-bonita).
+For more details regarding Bonita update and for version before 7.10.0, see the [documentation](https://documentation.bonitasoft.com/bonita/latest/version-update/migrate-from-an-earlier-version-of-bonita).
