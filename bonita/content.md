@@ -114,7 +114,7 @@ This optional environment variable is used to enable/disable the Bonita HTTP API
 
 ### HTTP_API_USERNAME
 
-This optional environment variable is used to configure the HTTP API Basic access authentication username. The default value is *http-api*.
+This optional environment variable is used to configure the HTTP API Basic access authentication username. The default value is `http-api`.
 
 ### HTTP_API_PASSWORD
 
@@ -122,35 +122,35 @@ This optional environment variable is used to configure the HTTP API Basic acces
 
 ### JMX_REMOTE_ACCESS
 
-This optional environment variable is used to enable/disable the access to the [JMX console](https://docs.oracle.com/en/java/javase/11/management/using-jconsole.html) from a remote machine. + Default value is *false*. + The host to connect to is the name / IP address of the bonita server, the port to connect to is 9000. + The credentials to connect are the environment variables [MONITORING_USERNAME](#MONITORING_USERNAME), [MONITORING_PASSWORD](#MONITORING_PASSWORD).
+This optional environment variable is used to enable/disable the access to the [JMX console](https://docs.oracle.com/en/java/javase/11/management/using-jconsole.html) from a remote machine. + Default value is `false`. + The host to connect to is the name / IP address of the bonita server, the port to connect to is 9000. + The credentials to connect are the environment variables [MONITORING_USERNAME](#MONITORING_USERNAME), [MONITORING_PASSWORD](#MONITORING_PASSWORD).
 
 ### REMOTE_IP_VALVE_ENABLED
 
-This optional environment variable allows to activate/deactivate [reverse proxy redirection](https://documentation.bonitasoft.com/bonita/latest/runtime/reverse-proxy-configuration). Default value is *false*.
+This optional environment variable allows to activate/deactivate [reverse proxy redirection](https://documentation.bonitasoft.com/bonita/latest/runtime/reverse-proxy-configuration). Default value is `false`.
 
 ### ACCESSLOGS_STDOUT_ENABLED
 
-This optional environment variable allows to activate/deactivate writing Tomcat access logs to standard output. Default value is *false*.
+This optional environment variable allows to activate/deactivate writing Tomcat access logs to standard output. Default value is `false`.
 
 ### ACCESSLOGS_FILES_ENABLED
 
-This optional environment variable allows to activate/deactivate writing Tomcat access logs to a specific file. When activated, will write those logs to `/opt/bonita/logs/` *inside* the docker container. In practice, it is only useful when mounting a volume to the aforementioned directory. Default value is *false*.
+This optional environment variable allows to activate/deactivate writing Tomcat access logs to a specific file. When activated, will write those logs to `/opt/bonita/logs/` *inside* the docker container. In practice, it is only useful when mounting a volume to the aforementioned directory. Default value is `false`.
 
 ### ACCESSLOGS_PATH
 
-If `ACCESSLOGS_FILES_ENABLED=true`, this optional environment variable overrides the default path to the access log files. Default value is */opt/bonita/logs*.
+If `ACCESSLOGS_FILES_ENABLED=true`, this optional environment variable overrides the default path to the access log files. Default value is `/opt/bonita/logs`.
 
 ### ACCESSLOGS_PATH_APPEND_HOSTNAME
 
-If `ACCESSLOGS_FILES_ENABLED=true`, this optional environment variable allows to append a subdirectory with the *hostname* to the full path of the directory to put access log files into. Default value is *false*.
+If `ACCESSLOGS_FILES_ENABLED=true`, this optional environment variable allows to append a subdirectory with the *hostname* to the full path of the directory to put access log files into. Default value is `false`.
 
 ### ACCESSLOGS_MAX_DAYS
 
-If `ACCESSLOGS_FILES_ENABLED=true`, this optional environment variable allows to automatically delete access log files after a certain number of days. Default value is *30*.
+If `ACCESSLOGS_FILES_ENABLED=true`, this optional environment variable allows to automatically delete access log files after a certain number of days. Default value is `30`.
 
 ### HTTP_MAX_THREADS
 
-This optional environment variable allows to specify the maximum Http thread number Tomcat will use to serve HTTP/1.1 requests. Directly modifies the *maxThreads* parameter in the *server.xml* file of the Tomcat inside the docker container. More information on the usefulness of this parameter can be found [here](https://tomcat.apache.org/tomcat-9.0-doc/config/http.html). Default value is *20*.
+This optional environment variable allows to specify the maximum Http thread number Tomcat will use to serve HTTP/1.1 requests. Directly modifies the *maxThreads* parameter in the *server.xml* file of the Tomcat inside the docker container. More information on the usefulness of this parameter can be found [here](https://tomcat.apache.org/tomcat-9.0-doc/config/http.html). Default value is `20`.
 
 ### JAVA_OPTS
 
