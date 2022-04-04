@@ -27,36 +27,31 @@ You can work with either a PostgreSQL Container, or PostgreSQL as an installed s
 
 ### PostgreSQL Container
 
-
 From Bonita 2022.1 onwards, the Bonita docker image does not include configuration scripts to automatically create databases and users anymore.
-
 
 Therefore the PostgreSQL container needs to be configured to work with Bonita before starting the Bonita container.
 The configuration of a PostgreSQL database to work with Bonita is described in details in the [database configuration page](https://documentation.bonitasoft.com/bonita/latest/runtime/database-configuration#postgres_setup). +
 Alternatively, Bonita provides a preconfigured [PostgreSQL image](https://hub.docker.com/r/bonitasoft/bonita-postgres) on docker-hub. +
 You can run the image with the following command:
 
-```
+```bash
 docker run --name mydbpostgres -h <hostname> -d bonitasoft/bonita-postgres:12.6
 ```
 
 This image is built from the following [GitHub repository](https://github.com/Bonitasoft-Community/bonita-database-docker/tree/main/postgres/12), which can be further adapted/customized to suit your needs.
 
-
 ## %%STACK%%
 
 Run `docker stack deploy -c stack.yml %%REPO%%` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
 
-
-* Replace `<hostname>` with the one used in the licence generation command
-* leave double `$$` untouched
-
+-	Replace `<hostname>` with the one used in the licence generation command
+-	leave double `$$` untouched
 
 ### PostgreSQL as an installed service
 
 If you don't want to run your database in a docker container, the following `env.txt` file needs to be configured and provided to the docker run command:
 
-```
+```properties
 DB_VENDOR=postgres
 DB_HOST=172.17.0.2
 DB_PORT=5432
@@ -68,13 +63,13 @@ BIZ_DB_USER=custombusinessuser
 BIZ_DB_PASS=custombusinesspass
 ```
 
-```
+```bash
 docker run --name=bonita -h <hostname> --env-file=env.txt -d -p 8080:8080 %%IMAGE%%
 ```
 
 ## Start Bonita with custom security credentials
 
-```
+```bash
 docker run --name=bonita -h <hostname> -e "TENANT_LOGIN=tech_user" -e "TENANT_PASSWORD=secret" -e "PLATFORM_LOGIN=pfadmin" -e "PLATFORM_PASSWORD=pfsecret" -d -p 8080:8080 %%IMAGE%%
 ```
 
@@ -86,8 +81,8 @@ Bonita uses tomcat that writes file to a working directory and a temp directory.
 
 It can be a good practice to mount the following folders into volumes
 
-* `/opt/bonita/server/temp`
-* `/opt/bonita/server/work`
+-	`/opt/bonita/server/temp`
+-	`/opt/bonita/server/work`
 
 ## Environment variables
 
@@ -118,54 +113,59 @@ This optional environment variable is used in conjunction with `MONITORING_PASSW
 This optional environment variable is used in conjunction with `MONITORING_USERNAME` to define the access to endpoints protected with [BASIC Auth access](https://en.wikipedia.org/wiki/Basic_access_authentication): it is used for the JMX remote access. If it is not specified, the default monitoring password `mon1tor1ng_adm1n` will be used.
 
 ### HTTP_API
-This optional environment variable is used to enable/disable the Bonita HTTP API. The default value is false, which will deactivate the HTTP API.
-From Bonita 2022.1, HTTP API is protected with [Basic access authentication](https://en.wikipedia.org/wiki/Basic_access_authentication). See the following 2 parameters to configure Basic access authentication.
+
+This optional environment variable is used to enable/disable the Bonita HTTP API. The default value is false, which will deactivate the HTTP API. From Bonita 2022.1, HTTP API is protected with [Basic access authentication](https://en.wikipedia.org/wiki/Basic_access_authentication). See the following 2 parameters to configure Basic access authentication.
 
 ### HTTP_API_USERNAME
+
 This optional environment variable is used to configure the HTTP API Basic access authentication username. The default value is *http-api*.
 
 ### HTTP_API_PASSWORD
+
 This optional environment variable is used to configure the HTTP API Basic access authentication password. There is no default value, and providing a value is mandatory if `HTTP_API=true`.
 
 ### JMX_REMOTE_ACCESS
-This optional environment variable is used to enable/disable the access to the [JMX console](https://docs.oracle.com/en/java/javase/11/management/using-jconsole.html) from a remote machine. +
-Default value is *false*. +
-The host to connect to is the name / IP address of the bonita server, the port to connect to is 9000. +
-The credentials to connect are the environment variables [MONITORING_USERNAME](#MONITORING_USERNAME), [MONITORING_PASSWORD](#MONITORING_PASSWORD).
+
+This optional environment variable is used to enable/disable the access to the [JMX console](https://docs.oracle.com/en/java/javase/11/management/using-jconsole.html) from a remote machine. + Default value is *false*. + The host to connect to is the name / IP address of the bonita server, the port to connect to is 9000. + The credentials to connect are the environment variables [MONITORING_USERNAME](#MONITORING_USERNAME), [MONITORING_PASSWORD](#MONITORING_PASSWORD).
 
 ### REMOTE_IP_VALVE_ENABLED
+
 This optional environment variable allows to activate/deactivate [reverse proxy redirection](https://documentation.bonitasoft.com/bonita/latest/runtime/reverse-proxy-configuration). Default value is *false*.
 
 ### ACCESSLOGS_STDOUT_ENABLED
+
 This optional environment variable allows to activate/deactivate writing Tomcat access logs to standard output. Default value is *false*.
 
 ### ACCESSLOGS_FILES_ENABLED
-This optional environment variable allows to activate/deactivate writing Tomcat access logs to a specific file. When activated, will write those logs to `/opt/bonita/logs/` *inside* the docker container.
-In practice, it is only useful when mounting a volume to the aforementioned directory. Default value is *false*.
+
+This optional environment variable allows to activate/deactivate writing Tomcat access logs to a specific file. When activated, will write those logs to `/opt/bonita/logs/` *inside* the docker container. In practice, it is only useful when mounting a volume to the aforementioned directory. Default value is *false*.
 
 ### ACCESSLOGS_PATH
-If `ACCESSLOGS_FILES_ENABLED=true`, this optional environment variable overrides the default path to the access log files.
-Default value is */opt/bonita/logs*.
+
+If `ACCESSLOGS_FILES_ENABLED=true`, this optional environment variable overrides the default path to the access log files. Default value is */opt/bonita/logs*.
 
 ### ACCESSLOGS_PATH_APPEND_HOSTNAME
-If `ACCESSLOGS_FILES_ENABLED=true`, this optional environment variable allows to append a subdirectory with the *hostname* to the full path of the directory to put access log files into.
-Default value is *false*.
+
+If `ACCESSLOGS_FILES_ENABLED=true`, this optional environment variable allows to append a subdirectory with the *hostname* to the full path of the directory to put access log files into. Default value is *false*.
 
 ### ACCESSLOGS_MAX_DAYS
-If `ACCESSLOGS_FILES_ENABLED=true`, this optional environment variable allows to automatically delete access log files after a certain number of days. Default value is *30*.
+
+If `ACCESSLOGS_FILES_ENABLED=true`, this optional environment variable allows to automatically delete access log files after a certain number of days. Default value is *30*\.
 
 ### HTTP_MAX_THREADS
-This optional environment variable allows to specify the maximum Http thread number Tomcat will use to serve HTTP/1.1 requests. Directly modifies the *maxThreads* parameter in the *server.xml* file of the Tomcat inside the docker container.
-More information on the usefulness of this parameter can be found [here](https://tomcat.apache.org/tomcat-9.0-doc/config/http.html). Default value is *20*.
+
+This optional environment variable allows to specify the maximum Http thread number Tomcat will use to serve HTTP/1.1 requests. Directly modifies the *maxThreads* parameter in the *server.xml* file of the Tomcat inside the docker container. More information on the usefulness of this parameter can be found [here](https://tomcat.apache.org/tomcat-9.0-doc/config/http.html). Default value is *20*\.
 
 ### JAVA_OPTS
-This optional environment variable is used to customize JAVA_OPTS. The default value is -Xms1024m -Xmx1024m -XX:MaxPermSize=256m.
-The syntax to use is `-e JAVA_OPTS="-Xms2048m -Xmx2048m -XX:MaxPermSize=1024m"`
+
+This optional environment variable is used to customize JAVA_OPTS. The default value is -Xms1024m -Xmx1024m -XX:MaxPermSize=256m. The syntax to use is `-e JAVA_OPTS="-Xms2048m -Xmx2048m -XX:MaxPermSize=1024m"`
 
 ### DB_VENDOR
+
 This environment variable is automatically set to postgres or mysql if the Bonita container is linked to a PostgreSQL or MySQL database using --link. The default value is h2. It can be overridden if you don't use the --link capability.
 
 ### DB_HOST, DB_PORT
+
 These variables are optional, used in conjunction to configure the bonita image to reach the database instance. There are automatically set if --link is used to run the container.
 
 ### DB_NAME, DB_USER, DB_PASS
@@ -180,7 +180,6 @@ These variables are used in conjunction to define how Bonita should access its d
 
 ### BIZ_DB_NAME, BIZ_DB_USER, BIZ_DB_PASS
 
-
 These variables are used in conjunction to define how Bonita should access the [Business Data](https://documentation.bonitasoft.com/bonita/latest/data/define-and-deploy-the-bdm) database.
 
 `BIZ_DB_NAME` default value is businessdb.
@@ -188,7 +187,6 @@ These variables are used in conjunction to define how Bonita should access the [
 `BIZ_DB_USER` default value is businessuser.
 
 `BIZ_DB_PASS` default value is businesspass.
-
 
 ## Logger configuration
 
@@ -198,8 +196,7 @@ The logger can be configured by mounting a volume on folder `/opt/bonita/conf/lo
 
 the volume must contain the 2 files
 [log4j2-loggers.xml](https://raw.githubusercontent.com/bonitasoft/bonita-distrib/7.14.0/tomcat-resources/tomcat-distrib-for-bonita/src/main/resources/tomcat/server/conf/log4j2-loggers.xml)
-and
-[log4j2-appenders.xml](https://raw.githubusercontent.com/bonitasoft/bonita-distrib/7.14.0/docker/files/log4j2/log4j2-appenders.xml)
+and [log4j2-appenders.xml](https://raw.githubusercontent.com/bonitasoft/bonita-distrib/7.14.0/docker/files/log4j2/log4j2-appenders.xml)
 
 Any change made to one of this 2 files is automatically hot-reloaded and taken into account immediately.
 
@@ -290,7 +287,7 @@ For updating from a version before 7.10.0, please refer to the [documentation](h
 	```
 
 -	Launch the new container pointing towards the copy of the database.
-	
+
 	```console
 	$ docker run --name=bonita --link mydbpostgres:postgres -e "DB_NAME=newbonitadb" -e "DB_USER=newbonitauser" -e "DB_PASS=newbonitapass" -d -p 8081:8080 %%IMAGE%%:2022.1-u0
 	```
