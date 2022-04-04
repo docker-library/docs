@@ -22,17 +22,13 @@ You can access the Bonita Portal on http://localhost:8080/bonita and login using
 
 The H2 database allows the Bonita container to work out of the box, but it is not recommended outside a development environment.
 
-As PostgreSQL is the recommended database for qualification and production environments, follow one of these next sections to configure your Bonita container to run on PostgreSQL database.
-You can work with either a PostgreSQL Container, or PostgreSQL as an installed service.
+As PostgreSQL is the recommended database for qualification and production environments, follow one of these next sections to configure your Bonita container to run on PostgreSQL database. You can work with either a PostgreSQL Container, or PostgreSQL as an installed service.
 
 ### PostgreSQL Container
 
 From Bonita 2022.1 onwards, the Bonita docker image does not include configuration scripts to automatically create databases and users anymore.
 
-Therefore the PostgreSQL container needs to be configured to work with Bonita before starting the Bonita container.
-The configuration of a PostgreSQL database to work with Bonita is described in details in the [database configuration page](https://documentation.bonitasoft.com/bonita/latest/runtime/database-configuration#postgres_setup). +
-Alternatively, Bonita provides a preconfigured [PostgreSQL image](https://hub.docker.com/r/bonitasoft/bonita-postgres) on docker-hub. +
-You can run the image with the following command:
+Therefore the PostgreSQL container needs to be configured to work with Bonita before starting the Bonita container. The configuration of a PostgreSQL database to work with Bonita is described in details in the [database configuration page](https://documentation.bonitasoft.com/bonita/latest/runtime/database-configuration#postgres_setup). + Alternatively, Bonita provides a preconfigured [PostgreSQL image](https://hub.docker.com/r/bonitasoft/bonita-postgres) on docker-hub. + You can run the image with the following command:
 
 ```bash
 docker run --name mydbpostgres -h <hostname> -d bonitasoft/bonita-postgres:12.6
@@ -150,11 +146,11 @@ If `ACCESSLOGS_FILES_ENABLED=true`, this optional environment variable allows to
 
 ### ACCESSLOGS_MAX_DAYS
 
-If `ACCESSLOGS_FILES_ENABLED=true`, this optional environment variable allows to automatically delete access log files after a certain number of days. Default value is *30*\.
+If `ACCESSLOGS_FILES_ENABLED=true`, this optional environment variable allows to automatically delete access log files after a certain number of days. Default value is *30*.
 
 ### HTTP_MAX_THREADS
 
-This optional environment variable allows to specify the maximum Http thread number Tomcat will use to serve HTTP/1.1 requests. Directly modifies the *maxThreads* parameter in the *server.xml* file of the Tomcat inside the docker container. More information on the usefulness of this parameter can be found [here](https://tomcat.apache.org/tomcat-9.0-doc/config/http.html). Default value is *20*\.
+This optional environment variable allows to specify the maximum Http thread number Tomcat will use to serve HTTP/1.1 requests. Directly modifies the *maxThreads* parameter in the *server.xml* file of the Tomcat inside the docker container. More information on the usefulness of this parameter can be found [here](https://tomcat.apache.org/tomcat-9.0-doc/config/http.html). Default value is *20*.
 
 ### JAVA_OPTS
 
@@ -194,9 +190,7 @@ These variables are used in conjunction to define how Bonita should access the [
 
 The logger can be configured by mounting a volume on folder `/opt/bonita/conf/logs` containing the configuration files.
 
-the volume must contain the 2 files
-[log4j2-loggers.xml](https://raw.githubusercontent.com/bonitasoft/bonita-distrib/7.14.0/tomcat-resources/tomcat-distrib-for-bonita/src/main/resources/tomcat/server/conf/log4j2-loggers.xml)
-and [log4j2-appenders.xml](https://raw.githubusercontent.com/bonitasoft/bonita-distrib/7.14.0/docker/files/log4j2/log4j2-appenders.xml)
+the volume must contain the 2 files [log4j2-loggers.xml](https://raw.githubusercontent.com/bonitasoft/bonita-distrib/7.14.0/tomcat-resources/tomcat-distrib-for-bonita/src/main/resources/tomcat/server/conf/log4j2-loggers.xml) and [log4j2-appenders.xml](https://raw.githubusercontent.com/bonitasoft/bonita-distrib/7.14.0/docker/files/log4j2/log4j2-appenders.xml)
 
 Any change made to one of this 2 files is automatically hot-reloaded and taken into account immediately.
 
@@ -272,13 +266,14 @@ For updating from a version before 7.10.0, please refer to the [documentation](h
 	```
 
 	For example :
-    ```ini
-    db.vendor=postgres
-    db.url=jdbc:postgresql://172.17.0.26:5432/newbonitadb
-    db.driverClass=org.postgresql.Driver
-    db.user=newbonitauser
-    db.password=newbonitapass
-    ```
+
+	```properties
+	db.vendor=postgres
+	db.url=jdbc:postgresql://172.17.0.26:5432/newbonitadb
+	db.driverClass=org.postgresql.Driver
+	db.user=newbonitauser
+	db.password=newbonitapass
+	```
 
 -	Launch the update tool
 
