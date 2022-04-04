@@ -272,12 +272,13 @@ For updating from a version before 7.10.0, please refer to the [documentation](h
 	```
 
 	For example :
-
-		db.vendor=postgres
-		db.url=jdbc:postgresql://172.17.0.26:5432/newbonitadb
-		db.driverClass=org.postgresql.Driver
-		db.user=newbonitauser
-		db.password=newbonitapass
+    ```ini
+    db.vendor=postgres
+    db.url=jdbc:postgresql://172.17.0.26:5432/newbonitadb
+    db.driverClass=org.postgresql.Driver
+    db.user=newbonitauser
+    db.password=newbonitapass
+    ```
 
 -	Launch the update tool
 
