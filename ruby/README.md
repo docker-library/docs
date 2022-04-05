@@ -24,6 +24,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
+-	[`3.2.0-preview1-bullseye`, `3.2-rc-bullseye`, `3.2.0-preview1`, `3.2-rc`](https://github.com/docker-library/ruby/blob/34ebac96fb1563b5a021176f3b8abae1be2803de/3.2-rc/bullseye/Dockerfile)
+-	[`3.2.0-preview1-slim-bullseye`, `3.2-rc-slim-bullseye`, `3.2.0-preview1-slim`, `3.2-rc-slim`](https://github.com/docker-library/ruby/blob/34ebac96fb1563b5a021176f3b8abae1be2803de/3.2-rc/slim-bullseye/Dockerfile)
+-	[`3.2.0-preview1-buster`, `3.2-rc-buster`](https://github.com/docker-library/ruby/blob/34ebac96fb1563b5a021176f3b8abae1be2803de/3.2-rc/buster/Dockerfile)
+-	[`3.2.0-preview1-slim-buster`, `3.2-rc-slim-buster`](https://github.com/docker-library/ruby/blob/34ebac96fb1563b5a021176f3b8abae1be2803de/3.2-rc/slim-buster/Dockerfile)
+-	[`3.2.0-preview1-alpine3.15`, `3.2-rc-alpine3.15`, `3.2.0-preview1-alpine`, `3.2-rc-alpine`](https://github.com/docker-library/ruby/blob/34ebac96fb1563b5a021176f3b8abae1be2803de/3.2-rc/alpine3.15/Dockerfile)
+-	[`3.2.0-preview1-alpine3.14`, `3.2-rc-alpine3.14`](https://github.com/docker-library/ruby/blob/34ebac96fb1563b5a021176f3b8abae1be2803de/3.2-rc/alpine3.14/Dockerfile)
 -	[`3.1.1-bullseye`, `3.1-bullseye`, `3-bullseye`, `bullseye`, `3.1.1`, `3.1`, `3`, `latest`](https://github.com/docker-library/ruby/blob/cf80cd6600ded0516cb70087d38823da4c52774e/3.1/bullseye/Dockerfile)
 -	[`3.1.1-slim-bullseye`, `3.1-slim-bullseye`, `3-slim-bullseye`, `slim-bullseye`, `3.1.1-slim`, `3.1-slim`, `3-slim`, `slim`](https://github.com/docker-library/ruby/blob/cf80cd6600ded0516cb70087d38823da4c52774e/3.1/slim-bullseye/Dockerfile)
 -	[`3.1.1-buster`, `3.1-buster`, `3-buster`, `buster`](https://github.com/docker-library/ruby/blob/cf80cd6600ded0516cb70087d38823da4c52774e/3.1/buster/Dockerfile)
