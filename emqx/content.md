@@ -162,7 +162,7 @@ docker run -d --name emqx -p 18083:18083 -p 1883:1883 -p 4369:4369 \
     -e EMQX_LOADED_PLUGINS="emqx_retainer" \
     -e EMQX_RETAINER__STORAGE_TYPE = "ram" \
     -e EMQX_RETAINER__MAX_PAYLOAD_SIZE = 1MB \
-    emqx:latest
+    %%IMAGE%%:latest
 ```
 
 For numbered configuration options where the number is next to a `.` such as:
