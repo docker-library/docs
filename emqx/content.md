@@ -63,10 +63,10 @@ These environment variables will ignore for configuration file.
 
 > NOTE: All EMQ X Configuration in [etc/emqx.conf](https://github.com/emqx/emqx/blob/master/etc/emqx.conf) could config by environment. The following list is just an example, not a complete configuration.
 
-| Options   | Default        | Mapped | Description                |
-|-----------|----------------|--------|----------------------------|
-| EMQX_NAME | container name | none   | emqx node short name       |
-| EMQX_HOST | container IP   | none   | emqx node host, IP or FQDN |
+| Options     | Default        | Mapped | Description                |
+|-------------|----------------|--------|----------------------------|
+| `EMQX_NAME` | container name | none   | emqx node short name       |
+| `EMQX_HOST` | container IP   | none   | emqx node host, IP or FQDN |
 
 The list is incomplete and may changed with [etc/emqx.conf](https://github.com/emqx/emqx/blob/master/etc/emqx.conf) and plugin configuration files. But the mapping rule is similar.
 
