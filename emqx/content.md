@@ -74,7 +74,9 @@ If set `EMQX_NAME` and `EMQX_HOST`, and unset `EMQX_NODE_NAME`, `EMQX_NODE_NAME=
 
 For example, set mqtt tcp port to 1883
 
-`docker run -d --name emqx -e EMQX__LISTENERS__TCP__DEFAULT__BIND=1883 -p 18083:18083 -p 1883:1883 emqx:latest`
+```console
+$ docker run -d --name emqx -e EMQX__LISTENERS__TCP__DEFAULT__BIND=1883 -p 18083:18083 -p 1883:1883 %%IMAGE%%:latest
+```
 
 #### EMQ Loaded Modules Configuration
 
