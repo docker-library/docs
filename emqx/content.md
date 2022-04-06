@@ -80,9 +80,9 @@ $ docker run -d --name emqx -e EMQX__LISTENERS__TCP__DEFAULT__BIND=1883 -p 18083
 
 #### EMQ Loaded Modules Configuration
 
-| Oprtions            | Default           | Description                 |
-|---------------------|-------------------|-----------------------------|
-| EMQX_LOADED_MODULES | see content below | default modules emqx loaded |
+| Options               | Default           | Description                 |
+|-----------------------|-------------------|-----------------------------|
+| `EMQX_LOADED_MODULES` | see content below | default modules emqx loaded |
 
 Default environment variable `EMQX_LOADED_MODULES`, including
 
