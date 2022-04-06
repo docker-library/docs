@@ -174,15 +174,15 @@ You can configure an arbitrary number of them as long as each has a uniq unber f
 
 ```bash
 docker run -d --name emqx -p 18083:18083 -p 1883:1883 -p 4369:4369 \
-    -e EMQX_BACKEND_REDIS_POOL1__SERVER=127.0.0.1:6379
+    -e EMQX_BACKEND_REDIS_POOL1__SERVER=127.0.0.1:6379 \
     [...]
-    -e EMQX_BACKEND__REDIS__POOL5__SERVER=127.0.0.5:6379
-    -e EMQX_BACKEND__REDIS__HOOK_MESSAGE__PUBLISH__1='{"topic": "persistant/topic1", "action": {"function": "on_message_publish"}, "pool": "pool1"}'
-    -e EMQX_BACKEND__REDIS__HOOK_MESSAGE__PUBLISH__2='{"topic": "persistant/topic2", "action": {"function": "on_message_publish"}, "pool": "pool1"}'
-    -e EMQX_BACKEND__REDIS__HOOK_MESSAGE__PUBLISH__3='{"topic": "persistant/topic3", "action": {"function": "on_message_publish"}, "pool": "pool1"}'
+    -e EMQX_BACKEND__REDIS__POOL5__SERVER=127.0.0.5:6379 \
+    -e EMQX_BACKEND__REDIS__HOOK_MESSAGE__PUBLISH__1='{"topic": "persistant/topic1", "action": {"function": "on_message_publish"}, "pool": "pool1"}' \
+    -e EMQX_BACKEND__REDIS__HOOK_MESSAGE__PUBLISH__2='{"topic": "persistant/topic2", "action": {"function": "on_message_publish"}, "pool": "pool1"}' \
+    -e EMQX_BACKEND__REDIS__HOOK_MESSAGE__PUBLISH__3='{"topic": "persistant/topic3", "action": {"function": "on_message_publish"}, "pool": "pool1"}' \
     [...]
-    -e EMQX_BACKEND__REDIS__HOOK_MESSAGE__PUBLISH__13='{"topic": "persistant/topic13", "action": {"function": "on_message_publish"}, "pool": "pool1"}'
-    emqx:latest
+    -e EMQX_BACKEND__REDIS__HOOK_MESSAGE__PUBLISH__13='{"topic": "persistant/topic13", "action": {"function": "on_message_publish"}, "pool": "pool1"}' \
+    %%IMAGE%%:latest
 ```
 
 ### Cluster
