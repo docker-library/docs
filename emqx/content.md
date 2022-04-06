@@ -18,7 +18,9 @@ $ docker run -d --name emqx %%IMAGE%%:tag
 
 For example
 
-`docker run -d --name emqx -p 18083:18083 -p 1883:1883 emqx:latest`
+```console
+$ docker run -d --name emqx -p 18083:18083 -p 1883:1883 %%IMAGE%%:latest
+```
 
 The emqx broker runs as linux user `emqx` in the docker container.
 
