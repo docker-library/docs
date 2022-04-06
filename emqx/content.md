@@ -30,7 +30,7 @@ Use the environment variable to configure the EMQ X docker container.
 
 By default, the environment variables with `EMQX_` prefix are mapped to key-value pairs in configuration files.
 
-You can change the prefix by overriding "HOCON_ENV_OVERRIDE_PREFIX".
+You can change the prefix by overriding `HOCON_ENV_OVERRIDE_PREFIX`.
 
 Example:
 
