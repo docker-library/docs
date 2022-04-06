@@ -107,9 +107,9 @@ EMQX_LOADED_MODULES="emqx_mod_delayed | emqx_mod_rewrite"
 
 #### EMQ Loaded Plugins Configuration
 
-| Oprtions            | Default           | Description                 |
-|---------------------|-------------------|-----------------------------|
-| EMQX_LOADED_PLUGINS | see content below | default plugins emqx loaded |
+| Options               | Default           | Description                 |
+|-----------------------|-------------------|-----------------------------|
+| `EMQX_LOADED_PLUGINS` | see content below | default plugins emqx loaded |
 
 Default environment variable `EMQX_LOADED_PLUGINS`, including
 
