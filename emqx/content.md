@@ -210,7 +210,7 @@ Let's create a static node list cluster from docker-compose.
           - node1.emqx.io
 
     emqx2:
-      image: emqx:latest
+      image: %%IMAGE%%:latest
       environment:
       - "EMQX_NAME=emqx"
       - "EMQX_HOST=node2.emqx.io"
