@@ -12,7 +12,9 @@ Starting from 3.0 release, *EMQ X* broker fully supports MQTT V5.0 protocol spec
 
 Execute some command under this docker image
 
-`docker run -d --name emqx emqx:$(tag)`
+```console
+$ docker run -d --name emqx %%IMAGE%%:tag
+```
 
 For example
 
