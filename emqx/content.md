@@ -263,7 +263,7 @@ volumes:
 
 services:
   emqx:
-    image: emqx:latest
+    image: %%IMAGE%%:latest
     restart: always
     environment:
       EMQX_NAME: foo_emqx
