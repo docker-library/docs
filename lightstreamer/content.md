@@ -92,7 +92,6 @@ In this case, the `/path/to/my-adapters` folder has to be structured with the re
                     +my_adapter_set_2
                     ...
                     +my_adapter_set_N
-
 ```
 
 ### Building a new image

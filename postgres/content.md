@@ -34,7 +34,6 @@ postgres=# SELECT 1;
 ----------
         1
 (1 row)
-
 ```
 
 ## %%STACK%%
