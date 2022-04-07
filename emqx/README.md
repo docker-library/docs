@@ -328,7 +328,6 @@ Under linux host machine, the easiest way is [Tuning guide](https://docs.emqx.io
 If you want tune linux kernel by docker, you must ensure your docker is latest version (>=1.12).
 
 ```bash
-
 docker run -d --name emqx -p 18083:18083 -p 1883:1883 -p 4369:4369 \
     --sysctl fs.file-max=2097152 \
     --sysctl fs.nr_open=2097152 \
@@ -346,7 +345,6 @@ docker run -d --name emqx -p 18083:18083 -p 1883:1883 -p 4369:4369 \
     --sysctl net.ipv4.tcp_max_tw_buckets=1048576 \
     --sysctl net.ipv4.tcp_fin_timeout=15 \
     emqx:latest
-
 ```
 
 > REMEMBER: DO NOT RUN EMQ X DOCKER PRIVILEGED OR MOUNT SYSTEM PROC IN CONTAINER TO TUNE LINUX KERNEL, IT IS UNSAFE.

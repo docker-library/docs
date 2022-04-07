@@ -473,11 +473,10 @@ $ docker-compose up -d
 
 A lot of people want to use additional functionality inside their Nextcloud installation. If the image does not include the packages you need, you can easily build your own image on top of it. Start your derived image with the `FROM` statement and add whatever you like.
 
-```yaml
+```dockerfile
 FROM nextcloud:apache
 
 RUN ...
-
 ```
 
 The [examples folder](https://github.com/nextcloud/docker/blob/master/.examples) gives a few examples on how to add certain functionalities, like including the cron job, smb-support or imap-authentication.
@@ -498,7 +497,7 @@ If you use your own Dockerfile, you need to configure your docker-compose file a
 
 If you intend to use another command to run the image, make sure that you set `NEXTCLOUD_UPDATE=1` in your Dockerfile. Otherwise the installation and update will not work.
 
-```yaml
+```dockerfile
 FROM nextcloud:apache
 
 ...

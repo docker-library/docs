@@ -103,8 +103,10 @@ N1QL is the SQL based query language for Couchbase Server. Simply switch to the 
 
 You can also execute N1QL queries from the command line. To run a query from command line query tool, run the cbq command line tool, authenticating using the credentials you provided to the wizard, and execute the N1QL Query on the beer-sample bucket
 
-	$ docker exec -it db cbq --user Administrator
-	cbq> SELECT name FROM `beer-sample` WHERE brewery_id ="mishawaka_brewing";
+```console
+$ docker exec -it db cbq --user Administrator
+cbq> SELECT name FROM `beer-sample` WHERE brewery_id ="mishawaka_brewing";
+```
 
 For more query samples, refer to [Run your first N1QL query](https://docs.couchbase.com/server/current/getting-started/try-a-query.html).
 

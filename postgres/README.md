@@ -92,7 +92,6 @@ postgres=# SELECT 1;
 ----------
         1
 (1 row)
-
 ```
 
 ## ... via [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/) or [`docker-compose`](https://github.com/docker/compose)
