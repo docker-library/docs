@@ -96,7 +96,9 @@ sub prompt_for_edit {
 		my $fullUrl = "$githubBase/$proposedFile";
 		my $shortTags = "-\tSee [\"Supported tags and respective \`Dockerfile\` links\" at $fullUrl]($fullUrl#supported-tags-and-respective-dockerfile-links)\n\n";
 		my $tagsNote = "**Note:** the description for this image is longer than the Hub length limit of $lengthLimit, so the \"Supported tags\" list has been trimmed to compensate.  See [docker/hub-beta-feedback#238](https://github.com/docker/hub-beta-feedback/issues/238) for more information.\n\n" . $shortTags;
-		my $genericNote = "**Note:** the description for this image is longer than the Hub length limit of $lengthLimit, so has been trimmed.  The full description can be found at [$fullUrl]($fullUrl).  See [docker/hub-beta-feedback#238](https://github.com/docker/hub-beta-feedback/issues/238) for more information.\n\n";
+		my $genericNote = "**Note:** the description for this image is longer than the Hub length limit of $lengthLimit, so has been trimmed.  The full description can be found at [$fullUrl]($fullUrl).  See [docker/hub-beta-feedback#238](https://github.com/docker/hub-beta-feedback/issues/238) for more information.";
+		my $startingNote = $genericNote . "\n\n";
+		my $endingNote = "\n\n...\n\n" . $genericNote;
 		
 		$tagsNote = $shortTags if $alwaysShortTags;
 		
@@ -110,7 +112,19 @@ sub prompt_for_edit {
 		
 		if (length($trimmedText) > $lengthLimit) {
 			# ... if that doesn't do the trick, then do our older naïve description trimming
-			$trimmedText = $genericNote . substr $proposedText, 0, ($lengthLimit - length($genericNote));
+			$trimmedText = $startingNote . substr $proposedText, 0, ($lengthLimit - length($startingNote . $endingNote));
+
+			# adding the "ending note" (https://github.com/docker/hub-feedback/issues/2220) is a bit more complicated as we have to deal with cutting off markdown ~cleanly so it renders correctly
+			# TODO deal with "```foo" appropriately (so we don't drop our note in the middle of a code block) - the Hub's current markdown rendering (2022-04-07) does not auto-close a dangling block like this, so this isn't urgent
+			if ($trimmedText =~ m/\n$/) {
+				# if we already end with a newline, we should be fine to just trim newlines and add our ending note
+				$trimmedText =~ s/\n+$//;
+			}
+			else {
+				# otherwise, we need to get a little bit more creative and trim back to the last fully blank line (which we can reasonably assume is safe thanks to our markdownfmt)
+				$trimmedText =~ s/\n\n(.\n?)*$//;
+			}
+			$trimmedText .= $endingNote;
 		}
 		
 		$proposedText = $trimmedText;
