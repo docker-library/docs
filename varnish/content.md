@@ -114,3 +114,40 @@ $ docker run %%IMAGE%% varnishd -F -a :8080 -b 127.0.0.1:8181 -t 600 -p feature=
 ## vmods (since 7.1)
 
 As mentioned above, you can use [vmod_dynamic](https://github.com/nigoroll/libvmod-dynamic) for backend resolution. The [varnish-modules](https://github.com/varnish/varnish-modules) collection is also included in the image. All the documentation regarding usage and syntax can be found in the [src/](https://github.com/varnish/varnish-modules/tree/master/src) directory of the repository.
+
+On top of this, images include [install-vmod](https://github.com/varnish/toolbox/tree/master/install-vmod), a helper script to quickly down, compile and install vmods while creating your own images. Note that images set the `ENV` variable `VMOD_DEPS` to ease the task further.
+
+### Debian
+
+```dockerfile
+FROM varnish:7.1
+
+# set the user to root, and install build dependencies
+USER root
+RUN apt-get update; \
+    apt-get -y install $VMOD_DEPS /pkgs/*.deb
+
+# install one, possibly multiple vmods
+RUN install-vmod https://github.com/varnish/varnish-modules/releases/download/0.20.0/varnish-modules-0.20.0.tar.gz
+
+# clean up and set the user back to varnish
+RUN apt-get -y purge --auto-remove $VMOD_DEPS varnish-dev; \
+    rm -rf /var/lib/apt/lists/*
+USER varnish
+```
+
+### Alpine
+
+```dockerfile
+FROM varnish:7.1-alpine
+
+# install build dependencies
+USER root
+apk add $VMOD_DEPS
+
+# install one, possibly multiple vmods
+RUN install-vmod https://github.com/varnish/varnish-modules/releases/download/0.20.0/varnish-modules-0.20.0.tar.gz
+
+# clean up
+RUN apk del --no-network $VMOD_DEPS
+```
