@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v7` builds of [the `plone` official image](https://hub.docker.com/_/plone) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,7 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.2.7-python38`, `5.2-python38`, `5-python38`, `python38`, `5.2.7`, `5.2`, `5`, `latest`](https://github.com/plone/plone.docker/blob/d17783d696042a3e9c2214c289306493e75f5ddc/5.2/5.2.7/debian/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v7` ARCHITECTURE
+
+[![arm32v7/plone build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/plone.svg?label=arm32v7/plone%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/plone/)
 
 # Quick reference (cont.)
 
@@ -66,7 +70,7 @@ WARNING:
 This will download and start the latest Plone 5 container, based on [Debian](https://www.debian.org/).
 
 ```console
-$ docker run -p 8080:8080 plone
+$ docker run -p 8080:8080 arm32v7/plone
 ```
 
 This image includes `EXPOSE 8080` (the Plone port), so standard container linking will make it automatically available to the linked containers. Now you can add a Plone Site at http://localhost:8080 - default Zope user and password are `admin/admin`.
@@ -78,14 +82,14 @@ ZEO cluster are best suited for production setups, you will **need** a loadbalan
 Start ZEO server in the background
 
 ```console
-$ docker run --name=zeo plone zeo
+$ docker run --name=zeo arm32v7/plone zeo
 ```
 
 Start 2 Plone clients (also in the background)
 
 ```console
-$ docker run --link=zeo -e ZEO_ADDRESS=zeo:8080 -p 8081:8080 plone
-$ docker run --link=zeo -e ZEO_ADDRESS=zeo:8080 -p 8082:8080 plone
+$ docker run --link=zeo -e ZEO_ADDRESS=zeo:8080 -p 8081:8080 arm32v7/plone
+$ docker run --link=zeo -e ZEO_ADDRESS=zeo:8080 -p 8082:8080 arm32v7/plone
 ```
 
 ### Start Plone in debug mode
@@ -93,7 +97,7 @@ $ docker run --link=zeo -e ZEO_ADDRESS=zeo:8080 -p 8082:8080 plone
 You can also start Plone in debug mode (`fg`) by running
 
 ```console
-$ docker run -p 8080:8080 plone fg
+$ docker run -p 8080:8080 arm32v7/plone fg
 ```
 
 ### Add-ons
@@ -101,7 +105,7 @@ $ docker run -p 8080:8080 plone fg
 You can enable Plone add-ons via the `ADDONS` environment variable
 
 ```console
-$ docker run -p 8080:8080 -e PLONE_ADDONS="eea.facetednavigation Products.PloneFormGen" plone
+$ docker run -p 8080:8080 -e PLONE_ADDONS="eea.facetednavigation Products.PloneFormGen" arm32v7/plone
 ```
 
 For more information on how to extend this image with your own custom settings, adding more add-ons, building it or mounting volumes, please refer to our [documentation](https://docs.plone.org/manage/docker/docs/index.html)
@@ -120,7 +124,7 @@ The Plone image uses several environment variable that allow to specify a more s
 Run Plone and install two addons (eea.facetednavigation and collective.easyform)
 
 ```console
-$ docker run -p 8080:8080 -e SITE="mysite" -e ADDONS="eea.facetednavigation collective.easyform" plone
+$ docker run -p 8080:8080 -e SITE="mysite" -e ADDONS="eea.facetednavigation collective.easyform" arm32v7/plone
 ```
 
 To use specific add-ons versions:
@@ -133,7 +137,7 @@ To use specific add-ons versions:
 RestAPI:
 
 ```console
-$ docker run -p 8080:8080 -e SITE=plone plone
+$ docker run -p 8080:8080 -e SITE=plone arm32v7/plone
 
 $ curl -H 'Accept: application/json' http://localhost:8080/plone
 ```

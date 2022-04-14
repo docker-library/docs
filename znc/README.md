@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v7` builds of [the `znc` official image](https://hub.docker.com/_/znc) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,8 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.8.2`, `1.8`, `latest`](https://github.com/znc/znc-docker/blob/525355817a4d17a68e7d7ded3f5bc36f2e8b6da5/full/Dockerfile)
--	[`1.8.2-slim`, `1.8-slim`, `slim`](https://github.com/znc/znc-docker/blob/525355817a4d17a68e7d7ded3f5bc36f2e8b6da5/slim/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v7` ARCHITECTURE
+
+[![arm32v7/znc build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/znc.svg?label=arm32v7/znc%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/znc/)
 
 # Quick reference (cont.)
 
@@ -59,13 +62,13 @@ ZNC is an IRC network bouncer (BNC). It can detach the client from the actual IR
 ZNC in this image stores its configuration in `/znc-data`. If you have existing configuration, you can reuse it with `-v $HOME/.znc:/znc-data`. Alternatively, you can create a new config in a volume or in a local dir. The examples below assumes a volume named `znc-cfg`.
 
 ```console
-$ docker run -it -v znc-cfg:/znc-data znc --makeconf
+$ docker run -it -v znc-cfg:/znc-data arm32v7/znc --makeconf
 ```
 
 To run ZNC:
 
 ```console
-$ docker run -p 12345:12345 -v znc-cfg:/znc-data znc
+$ docker run -p 12345:12345 -v znc-cfg:/znc-data arm32v7/znc
 ```
 
 The port (12345 in the example above) should match the port you used during `--makeconf`. Note that 6667 and 6697 are often blocked by web browsers, and therefore are not recommended for ZNC.
@@ -73,18 +76,6 @@ The port (12345 in the example above) should match the port you used during `--m
 If you use any external module, put the .cpp, .py or .pm file to `/znc-data/modules` (you may need to create that directory).
 
 This image contains the latest released version. If you want the bleeding edge (unstable) version, it's at [zncbouncer/znc-git](https://hub.docker.com/r/zncbouncer/znc-git).
-
-# Image Variants
-
-The `znc` images come in many flavors, each designed for a specific use case.
-
-## `znc:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-## `znc:<version>-slim`
-
-This image is smaller, but it doesn't support external modules. If you need any external C++, Perl or Python module, use `latest` instead of `slim`.
 
 # License
 

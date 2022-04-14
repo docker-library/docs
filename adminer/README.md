@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v7` builds of [the `adminer` official image](https://hub.docker.com/_/adminer) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -26,6 +28,8 @@ WARNING:
 
 -	[`4.8.1-standalone`, `4-standalone`, `standalone`, `4.8.1`, `4`, `latest`](https://github.com/TimWolla/docker-adminer/blob/655a0ba9445f62ee494bfe35be93e6730e7576af/4/Dockerfile)
 -	[`4.8.1-fastcgi`, `4-fastcgi`, `fastcgi`](https://github.com/TimWolla/docker-adminer/blob/655a0ba9445f62ee494bfe35be93e6730e7576af/4/fastcgi/Dockerfile)
+
+[![arm32v7/adminer build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/adminer.svg?label=arm32v7/adminer%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/adminer/)
 
 # Quick reference (cont.)
 
@@ -61,7 +65,7 @@ Adminer (formerly phpMinAdmin) is a full-featured database management tool writt
 ### Standalone
 
 ```console
-$ docker run --link some_database:db -p 8080:8080 adminer
+$ docker run --link some_database:db -p 8080:8080 arm32v7/adminer
 ```
 
 Then you can hit `http://localhost:8080` or `http://host-ip:8080` in your browser.
@@ -71,7 +75,7 @@ Then you can hit `http://localhost:8080` or `http://host-ip:8080` in your browse
 If you are already running a FastCGI capable web server you might prefer running Adminer via FastCGI:
 
 ```console
-$ docker run --link some_database:db -p 9000:9000 adminer:fastcgi
+$ docker run --link some_database:db -p 9000:9000 arm32v7/adminer:fastcgi
 ```
 
 Then point your web server to port 9000 of the container.
@@ -113,13 +117,13 @@ This image bundles all official Adminer plugins. You can find the list of plugin
 To load plugins you can pass a list of filenames in `ADMINER_PLUGINS`:
 
 ```console
-$ docker run --link some_database:db -p 8080:8080 -e ADMINER_PLUGINS='tables-filter tinymce' adminer
+$ docker run --link some_database:db -p 8080:8080 -e ADMINER_PLUGINS='tables-filter tinymce' arm32v7/adminer
 ```
 
 If a plugin *requires* parameters to work correctly instead of adding the plugin to `ADMINER_PLUGINS`, you need to add a custom file to the container:
 
 ```console
-$ docker run --link some_database:db -p 8080:8080 -e ADMINER_PLUGINS='login-servers' adminer
+$ docker run --link some_database:db -p 8080:8080 -e ADMINER_PLUGINS='login-servers' arm32v7/adminer
 Unable to load plugin file "login-servers", because it has required parameters: servers
 Create a file "/var/www/html/plugins-enabled/login-servers.php" with the following contents to load the plugin:
 
@@ -145,7 +149,7 @@ The image bundles all the designs that are available in the source package of ad
 To use a bundled design you can pass its name in `ADMINER_DESIGN`:
 
 ```console
-$ docker run --link some_database:db -p 8080:8080 -e ADMINER_DESIGN='nette' adminer
+$ docker run --link some_database:db -p 8080:8080 -e ADMINER_DESIGN='nette' arm32v7/adminer
 ```
 
 To use a custom design you can add a file called `/var/www/html/adminer.css`.
@@ -155,7 +159,7 @@ To use a custom design you can add a file called `/var/www/html/adminer.css`.
 You can specify the default host with the `ADMINER_DEFAULT_SERVER` environment variable. This is useful if you are connecting to an external server or a docker container named something other than the default `db`.
 
 ```console
-docker run -p 8080:8080 -e ADMINER_DEFAULT_SERVER=mysql adminer
+docker run -p 8080:8080 -e ADMINER_DEFAULT_SERVER=mysql arm32v7/adminer
 ```
 
 ## Supported Drivers

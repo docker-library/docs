@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v7` builds of [the `gradle` official image](https://hub.docker.com/_/gradle) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -26,16 +28,13 @@ WARNING:
 
 -	[`7.4.2-jdk8`, `7.4-jdk8`, `7-jdk8`, `jdk8`](https://github.com/keeganwitt/docker-gradle/blob/e92e133806cc92601dd9254756a759c5f6b9e4ca/jdk8/Dockerfile)
 -	[`7.4.2-jdk11`, `7.4-jdk11`, `7-jdk11`, `jdk11`](https://github.com/keeganwitt/docker-gradle/blob/e92e133806cc92601dd9254756a759c5f6b9e4ca/jdk11/Dockerfile)
--	[`7.4.2-jdk11-alpine`, `7.4-jdk11-alpine`, `7-jdk11-alpine`, `jdk11-alpine`](https://github.com/keeganwitt/docker-gradle/blob/e92e133806cc92601dd9254756a759c5f6b9e4ca/jdk11-alpine/Dockerfile)
 -	[`7.4.2-jdk17`, `7.4-jdk17`, `7-jdk17`, `jdk17`, `7.4.2-jdk`, `7.4-jdk`, `7-jdk`, `jdk`, `7.4.2`, `7.4`, `7`, `latest`](https://github.com/keeganwitt/docker-gradle/blob/e92e133806cc92601dd9254756a759c5f6b9e4ca/jdk17/Dockerfile)
--	[`7.4.2-jdk17-alpine`, `7.4-jdk17-alpine`, `7-jdk17-alpine`, `jdk17-alpine`, `7.4.2-jdk-alpine`, `7.4-jdk-alpine`, `7-jdk-alpine`, `jdk-alpine`, `7.4.2-alpine`, `7.4-alpine`, `7-alpine`, `alpine`](https://github.com/keeganwitt/docker-gradle/blob/e92e133806cc92601dd9254756a759c5f6b9e4ca/jdk17-alpine/Dockerfile)
 -	[`7.4.2-jdk18`, `7.4-jdk18`, `7-jdk18`, `jdk18`](https://github.com/keeganwitt/docker-gradle/blob/e92e133806cc92601dd9254756a759c5f6b9e4ca/jdk18/Dockerfile)
--	[`7.4.2-jdk18-alpine`, `7.4-jdk18-alpine`, `7-jdk18-alpine`, `jdk18-alpine`](https://github.com/keeganwitt/docker-gradle/blob/e92e133806cc92601dd9254756a759c5f6b9e4ca/jdk18-alpine/Dockerfile)
 -	[`6.9.2-jdk8`, `6.9-jdk8`, `6-jdk8`](https://github.com/keeganwitt/docker-gradle/blob/52b6facc824989b809f42b71ea158b54e0402587/jdk8/Dockerfile)
 -	[`6.9.2-jdk11`, `6.9-jdk11`, `6-jdk11`](https://github.com/keeganwitt/docker-gradle/blob/52b6facc824989b809f42b71ea158b54e0402587/jdk11/Dockerfile)
--	[`6.9.2-jdk11-alpine`, `6.9-jdk11-alpine`, `6-jdk11-alpine`](https://github.com/keeganwitt/docker-gradle/blob/52b6facc824989b809f42b71ea158b54e0402587/jdk11-alpine/Dockerfile)
 -	[`6.9.2-jdk17`, `6.9-jdk17`, `6-jdk17`, `6.9.2-jdk`, `6.9-jdk`, `6-jdk`, `6.9.2`, `6.9`, `6`](https://github.com/keeganwitt/docker-gradle/blob/52b6facc824989b809f42b71ea158b54e0402587/jdk17/Dockerfile)
--	[`6.9.2-jdk17-alpine`, `6.9-jdk17-alpine`, `6-jdk17-alpine`, `6.9.2-jdk-alpine`, `6.9-jdk-alpine`, `6-jdk-alpine`, `6.9.2-alpine`, `6.9-alpine`, `6-alpine`](https://github.com/keeganwitt/docker-gradle/blob/52b6facc824989b809f42b71ea158b54e0402587/jdk17-alpine/Dockerfile)
+
+[![arm32v7/gradle build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/gradle.svg?label=arm32v7/gradle%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/gradle/)
 
 # Quick reference (cont.)
 
@@ -68,27 +67,11 @@ WARNING:
 
 Run this from the directory of the Gradle project you want to build.
 
-`docker run --rm -u gradle -v "$PWD":/home/gradle/project -w /home/gradle/project gradle gradle <gradle-task>`
+`docker run --rm -u gradle -v "$PWD":/home/gradle/project -w /home/gradle/project arm32v7/gradle gradle <gradle-task>`
 
 Note the above command runs using uid/gid 1000 (user *gradle*) to avoid running as root.
 
 If you are mounting a volume and the uid/gid running Docker is not *1000*, you should run as user *root* (`-u root`). *root* is also the default, so you can also simply not specify a user.
-
-# Image Variants
-
-The `gradle` images come in many flavors, each designed for a specific use case.
-
-## `gradle:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-## `gradle:<version>-alpine`
-
-This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
-
-This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
-
-To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 # License
 

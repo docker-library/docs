@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v7` builds of [the `monica` official image](https://hub.docker.com/_/monica) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -27,6 +29,8 @@ WARNING:
 -	[`3.7.0-apache`, `3.7-apache`, `3-apache`, `apache`, `3.7.0`, `3.7`, `3`, `latest`](https://github.com/monicahq/docker/blob/6d256f443e7cc900b48c65a3e90472a6ef42c34c/apache/Dockerfile)
 -	[`3.7.0-fpm`, `3.7-fpm`, `3-fpm`, `fpm`](https://github.com/monicahq/docker/blob/6d256f443e7cc900b48c65a3e90472a6ef42c34c/fpm/Dockerfile)
 -	[`3.7.0-fpm-alpine`, `3.7-fpm-alpine`, `3-fpm-alpine`, `fpm-alpine`](https://github.com/monicahq/docker/blob/6d256f443e7cc900b48c65a3e90472a6ef42c34c/fpm-alpine/Dockerfile)
+
+[![arm32v7/monica build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/monica.svg?label=arm32v7/monica%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/monica/)
 
 # Quick reference (cont.)
 
@@ -66,7 +70,7 @@ The `fpm` tag contains a fastCGI-Process that serves the web pages. This image s
 This image contains a webserver that exposes port 80. Run the container with:
 
 ```console
-docker run --name some-monica -d -p 8080:80 monica
+docker run --name some-monica -d -p 8080:80 arm32v7/monica
 ```
 
 ### Using the fpm image
@@ -74,7 +78,7 @@ docker run --name some-monica -d -p 8080:80 monica
 This image serves a fastCGI server that exposes port 9000. You may need an additional web server that can proxy requests to the fpm port 9000 of the container. Run this container with:
 
 ```console
-docker run --name some-monica -d -p 9000:9000 monica:fpm
+docker run --name some-monica -d -p 9000:9000 arm32v7/monica:fpm
 ```
 
 ### Using an external database
@@ -90,7 +94,7 @@ Run a container with this named volume:
 ```console
 docker run -d \
         -v monica_data:/var/www/html/storage \
-        monica
+        arm32v7/monica
 ```
 
 ### Run commands inside the container
@@ -271,13 +275,13 @@ See some examples of docker-compose possibilities in the [example section](https
 
 # Image Variants
 
-The `monica` images come in many flavors, each designed for a specific use case.
+The `arm32v7/monica` images come in many flavors, each designed for a specific use case.
 
-## `monica:<version>`
+## `arm32v7/monica:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `monica:<version>-alpine`
+## `arm32v7/monica:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 

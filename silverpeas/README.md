@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v7` builds of [the `silverpeas` official image](https://hub.docker.com/_/silverpeas) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,7 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.2.3`, `latest`](https://github.com/Silverpeas/docker-silverpeas-prod/blob/899560a46feaddb077f0ec93b5da3e01be7abbe0/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v7` ARCHITECTURE
+
+[![arm32v7/silverpeas build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/silverpeas.svg?label=arm32v7/silverpeas%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/silverpeas/)
 
 # Quick reference (cont.)
 
@@ -119,7 +123,7 @@ $ docker run --name silverpeas -p 8080:8000 -d \
     -v silverpeas-log:/opt/silverpeas/log \
     -v silverpeas-data:/opt/silverpeas/data \
     --link postgresql:database \
-    silverpeas
+    arm32v7/silverpeas
 ```
 
 By default, `database` is the default hostname used by Silverpeas for its persistence backend. So, as the PostgreSQL database is linked here under the alias `database`, we don't have to explicitly indicate its hostname with the `DB_SERVER` environment variable. The Silverpeas images expose the 8000 port and here this port is mapped to the 8080 port of the host; Silverpeas is then accessible at `http://localhost:8080/silverpeas`. You can sign in Silverpeas with the administrator account `SilverAdmin` and with as password `SilverAdmin`.
@@ -138,7 +142,7 @@ $ docker run --name silverpeas -p 8080:8000 -d \
     -v silverpeas-log:/opt/silverpeas/log \
     -v silverpeas-data:/opt/silverpeas/data \
     --link postgresql:database \
-    silverpeas
+    arm32v7/silverpeas
 ```
 
 where `/etc/silverpeas/config.properties` is your own configuration file on the host. For security reason, we strongly recommend to set explicitly the administrator's credentials with the properties `SILVERPEAS_ADMIN_LOGIN` and `SILVERPEAS_ADMIN_PASSWORD` in the `config.properties` file. (Don't forget to set also the administrator email address with the property `SILVERPEAS_ADMIN_EMAIL`.)
@@ -176,7 +180,7 @@ $ docker run --name silverpeas -p 8080:8000 -d \
     -v /etc/silverpeas/config.properties:/opt/silverpeas/configuration/config.properties \
     -v silverpeas-log:/opt/silverpeas/log \
     -v silverpeas-data:/opt/silverpeas/data \
-    silverpeas
+    arm32v7/silverpeas
 ```
 
 where `database` is the hostname referred by the `DB_SERVER` parameter in your `/etc/silverpeas/config.properties` file as the host running the database system and that is mapped here to the actual IP address of this host. The hostname is added in the `/etc/hosts` file in the container.
@@ -217,7 +221,7 @@ $ docker create --name silverpeas-store \
     -v silverpeas-log:/opt/silverpeas/log \
     -v silverpeas-workflows:/opt/silverpeas/xmlcomponents/workflows \
     -v /etc/silverpeas/config.properties:/opt/silverpeas/configuration/config.properties \
-    silverpeas \
+    arm32v7/silverpeas \
     /bin/true
 ```
 
@@ -227,7 +231,7 @@ Then to mount the volumes in the Silverpeas container:
 $ docker run --name silverpeas -p 8080:8000 -d \
     --link postgresql:database \
     --volumes-from silverpeas-store \
-    silverpeas
+    arm32v7/silverpeas
 ```
 
 If you have to customize the settings of Silverpeas or add, for example, a new database definition, then specify these settings with the Data Volume Container, so that they will be available to the next versions of Silverpeas which will be then configured correctly like your previous Silverpeas installation:
@@ -240,7 +244,7 @@ $ docker create --name silverpeas-store \
     -v /etc/silverpeas/config.properties:/opt/silverpeas/configuration/config.properties \
     -v /etc/silverpeas/CustomerSettings.xml:/opt/silverpeas/configuration/silverpeas/CustomerSettings.xml \
     -v /etc/silverpeas/my-datasource.cli:/opt/silverpeas/configuration/jboss/my-datasource.cli \
-    silverpeas \
+    arm32v7/silverpeas \
     /bin/true
 ```
 
@@ -273,7 +277,7 @@ $ docker run --name silverpeas -p 8080:8000 -d \
     --link postgresql:database \
     --link libreoffice:libreoffice \
     --volumes-from silverpeas-store \
-    silverpeas
+    arm32v7/silverpeas
 ```
 
 # Logs

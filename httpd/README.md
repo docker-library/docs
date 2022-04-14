@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v7` builds of [the `httpd` official image](https://hub.docker.com/_/httpd) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -26,6 +28,8 @@ WARNING:
 
 -	[`2.4.53`, `2.4`, `2`, `latest`, `2.4.53-bullseye`, `2.4-bullseye`, `2-bullseye`, `bullseye`](https://github.com/docker-library/httpd/blob/95c96d27c0c0a191f3fd1e7e9c5daa2b2fd0b8d5/2.4/Dockerfile)
 -	[`2.4.53-alpine`, `2.4-alpine`, `2-alpine`, `alpine`, `2.4.53-alpine3.15`, `2.4-alpine3.15`, `2-alpine3.15`, `alpine3.15`](https://github.com/docker-library/httpd/blob/95c96d27c0c0a191f3fd1e7e9c5daa2b2fd0b8d5/2.4/alpine/Dockerfile)
+
+[![arm32v7/httpd build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/httpd.svg?label=arm32v7/httpd%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/httpd/)
 
 # Quick reference (cont.)
 
@@ -61,7 +65,7 @@ This image only contains Apache httpd with the defaults from upstream. There is 
 ### Create a `Dockerfile` in your project
 
 ```dockerfile
-FROM httpd:2.4
+FROM arm32v7/httpd:2.4
 COPY ./public-html/ /usr/local/apache2/htdocs/
 ```
 
@@ -79,7 +83,7 @@ Visit http://localhost:8080 and you will see It works!
 If you don't want to include a `Dockerfile` in your project, it is sufficient to do the following:
 
 ```console
-$ docker run -dit --name my-apache-app -p 8080:80 -v "$PWD":/usr/local/apache2/htdocs/ httpd:2.4
+$ docker run -dit --name my-apache-app -p 8080:80 -v "$PWD":/usr/local/apache2/htdocs/ arm32v7/httpd:2.4
 ```
 
 ### Configuration
@@ -87,13 +91,13 @@ $ docker run -dit --name my-apache-app -p 8080:80 -v "$PWD":/usr/local/apache2/h
 To customize the configuration of the httpd server, first obtain the upstream default configuration from the container:
 
 ```console
-$ docker run --rm httpd:2.4 cat /usr/local/apache2/conf/httpd.conf > my-httpd.conf
+$ docker run --rm arm32v7/httpd:2.4 cat /usr/local/apache2/conf/httpd.conf > my-httpd.conf
 ```
 
 You can then `COPY` your custom configuration in as `/usr/local/apache2/conf/httpd.conf`:
 
 ```dockerfile
-FROM httpd:2.4
+FROM arm32v7/httpd:2.4
 COPY ./my-httpd.conf /usr/local/apache2/conf/httpd.conf
 ```
 
@@ -127,15 +131,15 @@ The previous steps should work well for development, but we recommend customizin
 
 # Image Variants
 
-The `httpd` images come in many flavors, each designed for a specific use case.
+The `arm32v7/httpd` images come in many flavors, each designed for a specific use case.
 
-## `httpd:<version>`
+## `arm32v7/httpd:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
 Some of these tags may have names like bullseye in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
-## `httpd:<version>-alpine`
+## `arm32v7/httpd:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 

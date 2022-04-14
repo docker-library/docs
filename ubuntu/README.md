@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v7` builds of [the `ubuntu` official image](https://hub.docker.com/_/ubuntu) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,12 +26,14 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`18.04`, `bionic-20220401`, `bionic`](https://github.com/tianon/docker-brew-ubuntu-core/blob/88ba31584652db8b96a29849ea2809d99ce3cc31/bionic/Dockerfile)
--	[`20.04`, `focal-20220404`, `focal`, `latest`](https://github.com/tianon/docker-brew-ubuntu-core/blob/88ba31584652db8b96a29849ea2809d99ce3cc31/focal/Dockerfile)
--	[`21.10`, `impish-20220404`, `impish`, `rolling`](https://github.com/tianon/docker-brew-ubuntu-core/blob/88ba31584652db8b96a29849ea2809d99ce3cc31/impish/Dockerfile)
--	[`22.04`, `jammy-20220404`, `jammy`, `devel`](https://github.com/tianon/docker-brew-ubuntu-core/blob/88ba31584652db8b96a29849ea2809d99ce3cc31/jammy/Dockerfile)
--	[`14.04`, `trusty-20191217`, `trusty`](https://github.com/tianon/docker-brew-ubuntu-core/blob/88ba31584652db8b96a29849ea2809d99ce3cc31/trusty/Dockerfile)
--	[`16.04`, `xenial-20210804`, `xenial`](https://github.com/tianon/docker-brew-ubuntu-core/blob/88ba31584652db8b96a29849ea2809d99ce3cc31/xenial/Dockerfile)
+-	[`18.04`, `bionic-20220401`, `bionic`](https://github.com/tianon/docker-brew-ubuntu-core/blob/621ea6f8b657f6e4e9092ac70b04694be4c45916/bionic/Dockerfile)
+-	[`20.04`, `focal-20220404`, `focal`, `latest`](https://github.com/tianon/docker-brew-ubuntu-core/blob/621ea6f8b657f6e4e9092ac70b04694be4c45916/focal/Dockerfile)
+-	[`21.10`, `impish-20220404`, `impish`, `rolling`](https://github.com/tianon/docker-brew-ubuntu-core/blob/621ea6f8b657f6e4e9092ac70b04694be4c45916/impish/Dockerfile)
+-	[`22.04`, `jammy-20220404`, `jammy`, `devel`](https://github.com/tianon/docker-brew-ubuntu-core/blob/621ea6f8b657f6e4e9092ac70b04694be4c45916/jammy/Dockerfile)
+-	[`14.04`, `trusty-20191217`, `trusty`](https://github.com/tianon/docker-brew-ubuntu-core/blob/621ea6f8b657f6e4e9092ac70b04694be4c45916/trusty/Dockerfile)
+-	[`16.04`, `xenial-20210804`, `xenial`](https://github.com/tianon/docker-brew-ubuntu-core/blob/621ea6f8b657f6e4e9092ac70b04694be4c45916/xenial/Dockerfile)
+
+[![arm32v7/ubuntu build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/ubuntu.svg?label=arm32v7/ubuntu%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/ubuntu/)
 
 # Quick reference (cont.)
 
@@ -64,9 +68,9 @@ Development of Ubuntu is led by Canonical Ltd. Canonical generates revenue throu
 
 This image is built from official rootfs tarballs provided by Canonical (specifically, https://partner-images.canonical.com/oci/ for Bionic and later and https://partner-images.canonical.com/core/ for older releases).
 
-The `ubuntu:latest` tag points to the "latest LTS", since that's the version recommended for general use. The `ubuntu:rolling` tag points to the latest release (regardless of LTS status).
+The `arm32v7/ubuntu:latest` tag points to the "latest LTS", since that's the version recommended for general use. The `arm32v7/ubuntu:rolling` tag points to the latest release (regardless of LTS status).
 
-Along a similar vein, the `ubuntu:devel` tag is an alias for whichever release the "devel" suite on the mirrors currently points to, as determined by the following one-liner: `wget -qO- http://archive.ubuntu.com/ubuntu/dists/devel/Release | awk -F ': ' '$1 == "Codename" { print $2; exit }'`
+Along a similar vein, the `arm32v7/ubuntu:devel` tag is an alias for whichever release the "devel" suite on the mirrors currently points to, as determined by the following one-liner: `wget -qO- http://archive.ubuntu.com/ubuntu/dists/devel/Release | awk -F ': ' '$1 == "Codename" { print $2; exit }'`
 
 ## Locales
 

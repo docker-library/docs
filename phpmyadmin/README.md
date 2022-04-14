@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v7` builds of [the `phpmyadmin` official image](https://hub.docker.com/_/phpmyadmin) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -27,6 +29,8 @@ WARNING:
 -	[`5.1.3-apache`, `5.1-apache`, `5-apache`, `apache`, `5.1.3`, `5.1`, `5`, `latest`](https://github.com/phpmyadmin/docker/blob/2b79d7100216ec96d18e0b89508a48fa89c11dd8/apache/Dockerfile)
 -	[`5.1.3-fpm`, `5.1-fpm`, `5-fpm`, `fpm`](https://github.com/phpmyadmin/docker/blob/2b79d7100216ec96d18e0b89508a48fa89c11dd8/fpm/Dockerfile)
 -	[`5.1.3-fpm-alpine`, `5.1-fpm-alpine`, `5-fpm-alpine`, `fpm-alpine`](https://github.com/phpmyadmin/docker/blob/2b79d7100216ec96d18e0b89508a48fa89c11dd8/fpm-alpine/Dockerfile)
+
+[![arm32v7/phpmyadmin build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/phpmyadmin.svg?label=arm32v7/phpmyadmin%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/phpmyadmin/)
 
 # Quick reference (cont.)
 
@@ -82,7 +86,7 @@ The following tags are available:
 First you need to run MySQL or MariaDB server in Docker, and this image need link a running mysql instance container:
 
 ```console
-$ docker run --name myadmin -d --link mysql_db_server:db -p 8080:80 phpmyadmin
+$ docker run --name myadmin -d --link mysql_db_server:db -p 8080:80 arm32v7/phpmyadmin
 ```
 
 ## Usage with external server
@@ -90,7 +94,7 @@ $ docker run --name myadmin -d --link mysql_db_server:db -p 8080:80 phpmyadmin
 You can specify MySQL host in the `PMA_HOST` environment variable. You can also use `PMA_PORT` to specify port of the server in case it's not the default one:
 
 ```console
-$ docker run --name myadmin -d -e PMA_HOST=dbhost -p 8080:80 phpmyadmin
+$ docker run --name myadmin -d -e PMA_HOST=dbhost -p 8080:80 arm32v7/phpmyadmin
 ```
 
 ## Usage with arbitrary server
@@ -98,7 +102,7 @@ $ docker run --name myadmin -d -e PMA_HOST=dbhost -p 8080:80 phpmyadmin
 You can use arbitrary servers by adding ENV variable `PMA_ARBITRARY=1` to the startup command:
 
 ```console
-$ docker run --name myadmin -d -e PMA_ARBITRARY=1 -p 8080:80 phpmyadmin
+$ docker run --name myadmin -d -e PMA_ARBITRARY=1 -p 8080:80 arm32v7/phpmyadmin
 ```
 
 ## Usage with docker-compose and arbitrary server
@@ -137,7 +141,7 @@ You can add your own custom config.inc.php settings (such as Configuration Stora
 On the `docker run` line like this:
 
 ```console
-$ docker run --name myadmin -d --link mysql_db_server:db -p 8080:80 -v /some/local/directory/config.user.inc.php:/etc/phpmyadmin/config.user.inc.php phpmyadmin
+$ docker run --name myadmin -d --link mysql_db_server:db -p 8080:80 -v /some/local/directory/config.user.inc.php:/etc/phpmyadmin/config.user.inc.php arm32v7/phpmyadmin
 ```
 
 See the following links for config file information:
@@ -183,13 +187,13 @@ For more detailed documentation see https://docs.phpmyadmin.net/en/latest/setup.
 
 # Image Variants
 
-The `phpmyadmin` images come in many flavors, each designed for a specific use case.
+The `arm32v7/phpmyadmin` images come in many flavors, each designed for a specific use case.
 
-## `phpmyadmin:<version>`
+## `arm32v7/phpmyadmin:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `phpmyadmin:<version>-alpine`
+## `arm32v7/phpmyadmin:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 

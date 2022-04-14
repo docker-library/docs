@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v7` builds of [the `solr` official image](https://hub.docker.com/_/solr) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,36 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.11.1`, `8.11`, `8`, `latest`](https://github.com/docker-solr/docker-solr/blob/b30202ad6e336baf108c7c42222df723ba338010/8.11/Dockerfile)
--	[`8.11.1-slim`, `8.11-slim`, `8-slim`, `slim`](https://github.com/docker-solr/docker-solr/blob/b30202ad6e336baf108c7c42222df723ba338010/8.11/slim/Dockerfile)
--	[`8.10.1`, `8.10`](https://github.com/docker-solr/docker-solr/blob/d9aceb632fcad5d5e7ab42b94dd25a008f5b9112/8.10/Dockerfile)
--	[`8.10.1-slim`, `8.10-slim`](https://github.com/docker-solr/docker-solr/blob/d9aceb632fcad5d5e7ab42b94dd25a008f5b9112/8.10/slim/Dockerfile)
--	[`8.9.0`, `8.9`](https://github.com/docker-solr/docker-solr/blob/d9aceb632fcad5d5e7ab42b94dd25a008f5b9112/8.9/Dockerfile)
--	[`8.9.0-slim`, `8.9-slim`](https://github.com/docker-solr/docker-solr/blob/d9aceb632fcad5d5e7ab42b94dd25a008f5b9112/8.9/slim/Dockerfile)
--	[`8.8.2`, `8.8`](https://github.com/docker-solr/docker-solr/blob/d9aceb632fcad5d5e7ab42b94dd25a008f5b9112/8.8/Dockerfile)
--	[`8.8.2-slim`, `8.8-slim`](https://github.com/docker-solr/docker-solr/blob/d9aceb632fcad5d5e7ab42b94dd25a008f5b9112/8.8/slim/Dockerfile)
--	[`8.7.0`, `8.7`](https://github.com/docker-solr/docker-solr/blob/d9aceb632fcad5d5e7ab42b94dd25a008f5b9112/8.7/Dockerfile)
--	[`8.7.0-slim`, `8.7-slim`](https://github.com/docker-solr/docker-solr/blob/d9aceb632fcad5d5e7ab42b94dd25a008f5b9112/8.7/slim/Dockerfile)
--	[`8.6.3`, `8.6`](https://github.com/docker-solr/docker-solr/blob/d9aceb632fcad5d5e7ab42b94dd25a008f5b9112/8.6/Dockerfile)
--	[`8.6.3-slim`, `8.6-slim`](https://github.com/docker-solr/docker-solr/blob/d9aceb632fcad5d5e7ab42b94dd25a008f5b9112/8.6/slim/Dockerfile)
--	[`8.5.2`, `8.5`](https://github.com/docker-solr/docker-solr/blob/d9aceb632fcad5d5e7ab42b94dd25a008f5b9112/8.5/Dockerfile)
--	[`8.5.2-slim`, `8.5-slim`](https://github.com/docker-solr/docker-solr/blob/d9aceb632fcad5d5e7ab42b94dd25a008f5b9112/8.5/slim/Dockerfile)
--	[`8.4.1`, `8.4`](https://github.com/docker-solr/docker-solr/blob/d9aceb632fcad5d5e7ab42b94dd25a008f5b9112/8.4/Dockerfile)
--	[`8.4.1-slim`, `8.4-slim`](https://github.com/docker-solr/docker-solr/blob/d9aceb632fcad5d5e7ab42b94dd25a008f5b9112/8.4/slim/Dockerfile)
--	[`8.3.1`, `8.3`](https://github.com/docker-solr/docker-solr/blob/d9aceb632fcad5d5e7ab42b94dd25a008f5b9112/8.3/Dockerfile)
--	[`8.3.1-slim`, `8.3-slim`](https://github.com/docker-solr/docker-solr/blob/d9aceb632fcad5d5e7ab42b94dd25a008f5b9112/8.3/slim/Dockerfile)
--	[`8.2.0`, `8.2`](https://github.com/docker-solr/docker-solr/blob/d9aceb632fcad5d5e7ab42b94dd25a008f5b9112/8.2/Dockerfile)
--	[`8.2.0-slim`, `8.2-slim`](https://github.com/docker-solr/docker-solr/blob/d9aceb632fcad5d5e7ab42b94dd25a008f5b9112/8.2/slim/Dockerfile)
--	[`8.1.1`, `8.1`](https://github.com/docker-solr/docker-solr/blob/d9aceb632fcad5d5e7ab42b94dd25a008f5b9112/8.1/Dockerfile)
--	[`8.1.1-slim`, `8.1-slim`](https://github.com/docker-solr/docker-solr/blob/d9aceb632fcad5d5e7ab42b94dd25a008f5b9112/8.1/slim/Dockerfile)
--	[`8.0.0`, `8.0`](https://github.com/docker-solr/docker-solr/blob/d9aceb632fcad5d5e7ab42b94dd25a008f5b9112/8.0/Dockerfile)
--	[`8.0.0-slim`, `8.0-slim`](https://github.com/docker-solr/docker-solr/blob/d9aceb632fcad5d5e7ab42b94dd25a008f5b9112/8.0/slim/Dockerfile)
--	[`7.7.3`, `7.7`, `7`](https://github.com/docker-solr/docker-solr/blob/d9aceb632fcad5d5e7ab42b94dd25a008f5b9112/7.7/Dockerfile)
--	[`7.7.3-slim`, `7.7-slim`, `7-slim`](https://github.com/docker-solr/docker-solr/blob/d9aceb632fcad5d5e7ab42b94dd25a008f5b9112/7.7/slim/Dockerfile)
--	[`6.6.6`, `6.6`, `6`](https://github.com/docker-solr/docker-solr/blob/d9aceb632fcad5d5e7ab42b94dd25a008f5b9112/6.6/Dockerfile)
--	[`6.6.6-slim`, `6.6-slim`, `6-slim`](https://github.com/docker-solr/docker-solr/blob/d9aceb632fcad5d5e7ab42b94dd25a008f5b9112/6.6/slim/Dockerfile)
--	[`5.5.5`, `5.5`, `5`](https://github.com/docker-solr/docker-solr/blob/d9aceb632fcad5d5e7ab42b94dd25a008f5b9112/5.5/Dockerfile)
--	[`5.5.5-slim`, `5.5-slim`, `5-slim`](https://github.com/docker-solr/docker-solr/blob/d9aceb632fcad5d5e7ab42b94dd25a008f5b9112/5.5/slim/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v7` ARCHITECTURE
+
+[![arm32v7/solr build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/solr.svg?label=arm32v7/solr%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/solr/)
 
 # Quick reference (cont.)
 
@@ -97,7 +72,7 @@ Learn more on [Apache Solr homepage](http://solr.apache.org/) and in the [Apache
 To run a single Solr server:
 
 ```console
-$ docker run -p 8983:8983 -t solr
+$ docker run -p 8983:8983 -t arm32v7/solr
 ```
 
 Then with a web browser go to http://localhost:8983/ to see the Solr Admin Console.
@@ -111,18 +86,6 @@ This repository is available on [github.com/docker-solr/docker-solr](https://git
 # History
 
 This project was started in 2015 by [Martijn Koster](https://github.com/makuk66). In 2019 maintainership and copyright was transferred to the Apache Lucene/Solr project. Many thanks to Martijn for all your contributions over the years!
-
-# Image Variants
-
-The `solr` images come in many flavors, each designed for a specific use case.
-
-## `solr:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-## `solr:<version>-slim`
-
-This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `solr`. Unless you are working in an environment where *only* the `solr` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
 
 # License
 

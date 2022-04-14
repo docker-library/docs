@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v7` builds of [the `fedora` official image](https://hub.docker.com/_/fedora) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,10 +26,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`34`](https://github.com/fedora-cloud/docker-brew-fedora/blob/8adf82f023696a50cf9016a3611e3fe75c7e2cfc/x86_64/Dockerfile)
--	[`35`, `latest`](https://github.com/fedora-cloud/docker-brew-fedora/blob/906ac31cb72302d7986f729de8dc0b6451214a76/x86_64/Dockerfile)
--	[`36`](https://github.com/fedora-cloud/docker-brew-fedora/blob/7190c545d2f9f0f7e54d6d972fc84621a83c1ad4/x86_64/Dockerfile)
--	[`37`, `rawhide`](https://github.com/fedora-cloud/docker-brew-fedora/blob/e69c90e039cbcd8c252f5b04323565948417e2aa/x86_64/Dockerfile)
+-	[`34`](https://github.com/fedora-cloud/docker-brew-fedora/blob/8adf82f023696a50cf9016a3611e3fe75c7e2cfc/armhfp/Dockerfile)
+-	[`35`, `latest`](https://github.com/fedora-cloud/docker-brew-fedora/blob/906ac31cb72302d7986f729de8dc0b6451214a76/armhfp/Dockerfile)
+-	[`36`](https://github.com/fedora-cloud/docker-brew-fedora/blob/7190c545d2f9f0f7e54d6d972fc84621a83c1ad4/armhfp/Dockerfile)
+
+[![arm32v7/fedora build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/fedora.svg?label=arm32v7/fedora%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/fedora/)
 
 # Quick reference (cont.)
 
@@ -54,11 +57,11 @@ This image serves as the `official Fedora image` for the [Fedora Distribution](h
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/7925a7131128930eed07077f9369b7ca52e0fd02/fedora/logo.png)
 
-The `fedora:latest` tag will always point to the latest stable release.
+The `arm32v7/fedora:latest` tag will always point to the latest stable release.
 
 This image is a relatively small footprint in comparison to a standard Fedora installation. This image is generated in the [Fedora Build System](http://koji.fedoraproject.org/koji/) and is built from [this kickstart file](https://pagure.io/fedora-kickstarts/blob/main/f/fedora-container-base.ks).
 
-[Fedora Rawhide](https://fedoraproject.org/wiki/Releases/Rawhide) is available via `fedora:rawhide` and any specific version of Fedora as `fedora:$version` (example: `fedora:23`).
+[Fedora Rawhide](https://fedoraproject.org/wiki/Releases/Rawhide) is available via `arm32v7/fedora:rawhide` and any specific version of Fedora as `arm32v7/fedora:$version` (example: `arm32v7/fedora:23`).
 
 # License
 

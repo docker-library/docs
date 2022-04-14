@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v7` builds of [the `registry` official image](https://hub.docker.com/_/registry) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -27,6 +29,8 @@ WARNING:
 # Supported tags and respective `Dockerfile` links
 
 -	[`2.8.1`, `2.8`, `2`, `latest`](https://github.com/docker/distribution-library-image/blob/a44a420db5ec0d5a679a72e9fb539f8a69fb93f9/Dockerfile)
+
+[![arm32v7/registry build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/registry.svg?label=arm32v7/registry%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/registry/)
 
 # Quick reference (cont.)
 
@@ -56,7 +60,7 @@ This image contains an implementation of the Docker Registry HTTP API V2 for use
 ## Run a local registry: Quick Version
 
 ```console
-$ docker run -d -p 5000:5000 --restart always --name registry registry:2
+$ docker run -d -p 5000:5000 --restart always --name registry arm32v7/registry:2
 ```
 
 Now, use it from within Docker:

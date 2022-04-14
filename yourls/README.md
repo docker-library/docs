@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v7` builds of [the `yourls` official image](https://hub.docker.com/_/yourls) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -27,6 +29,8 @@ WARNING:
 -	[`1.8.2-apache`, `1.8-apache`, `1-apache`, `apache`, `1.8.2`, `1.8`, `1`, `latest`](https://github.com/YOURLS/docker/blob/194f6035a6f05671e649be6eb96d189353abcc16/apache/Dockerfile)
 -	[`1.8.2-fpm`, `1.8-fpm`, `1-fpm`, `fpm`](https://github.com/YOURLS/docker/blob/194f6035a6f05671e649be6eb96d189353abcc16/fpm/Dockerfile)
 -	[`1.8.2-fpm-alpine`, `1.8-fpm-alpine`, `1-fpm-alpine`, `fpm-alpine`](https://github.com/YOURLS/docker/blob/194f6035a6f05671e649be6eb96d189353abcc16/fpm-alpine/Dockerfile)
+
+[![arm32v7/yourls build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/yourls.svg?label=arm32v7/yourls%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/yourls/)
 
 # Quick reference (cont.)
 
@@ -57,14 +61,14 @@ YOURLS is a set of PHP scripts that will allow you to run Your Own URL Shortener
 
 # How to use this image
 
-## Start a `yourls` server instance
+## Start a `arm32v7/yourls` server instance
 
 ```console
 $ docker run --name some-yourls --link some-mysql:mysql \
     -e YOURLS_SITE="https://example.com" \
     -e YOURLS_USER="example_username" \
     -e YOURLS_PASS="example_password" \
-    -d yourls
+    -d arm32v7/yourls
 ```
 
 The YOURLS instance accepts a number of environment variables for configuration, see *Environment Variables* section below.
@@ -73,7 +77,7 @@ If you'd like to use an external database instead of a linked `mysql` container,
 
 ```console
 $ docker run --name some-yourlss -e YOURLS_DB_HOST=10.1.2.3:3306 \
-    -e YOURLS_DB_USER=... -e YOURLS_DB_PASS=... -d yourls
+    -e YOURLS_DB_USER=... -e YOURLS_DB_PASS=... -d arm32v7/yourls
 ```
 
 ## Connect to the YOURLS administration interface
@@ -81,7 +85,7 @@ $ docker run --name some-yourlss -e YOURLS_DB_HOST=10.1.2.3:3306 \
 If you'd like to be able to access the instance from the host without the container's IP, standard port mappings can be used:
 
 ```console
-$ docker run --name some-yourls --link some-mysql:mysql -p 8080:80 -d yourls
+$ docker run --name some-yourls --link some-mysql:mysql -p 8080:80 -d arm32v7/yourls
 ```
 
 Then, access it via `http://localhost:8080/admin/` or `http://<host-ip>:8080/admin/` in a browser.
@@ -136,7 +140,7 @@ Database tables prefix, defaults to `yourls_`. Only set this when you need to ov
 As an alternative to passing sensitive information via environment variables, `_FILE` may be appended to the previously listed environment variables, causing the initialization script to load the values for those variables from files present in the container. In particular, this can be used to load passwords from Docker secrets stored in `/run/secrets/<secret_name>` files. For example:
 
 ```console
-$ docker run --name some-yourls -e YOURLS_DB_PASS_FILE=/run/secrets/mysql-root ... -d yourls:tag
+$ docker run --name some-yourls -e YOURLS_DB_PASS_FILE=/run/secrets/mysql-root ... -d arm32v7/yourls:tag
 ```
 
 Currently, this is supported for `YOURLS_DB_HOST`, `YOURLS_DB_USER`, `YOURLS_DB_PASS`, `YOURLS_DB_NAME`, `YOURLS_DB_PREFIX`, `YOURLS_SITE`, `YOURLS_USER`, and `YOURLS_PASS`.
@@ -185,13 +189,13 @@ The following Docker Hub features can help with the task of keeping your depende
 
 # Image Variants
 
-The `yourls` images come in many flavors, each designed for a specific use case.
+The `arm32v7/yourls` images come in many flavors, each designed for a specific use case.
 
-## `yourls:<version>`
+## `arm32v7/yourls:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `yourls:<version>-fpm`
+## `arm32v7/yourls:<version>-fpm`
 
 This variant contains PHP-FPM, which is a FastCGI implementation for PHP. See [the PHP-FPM website](https://php-fpm.org/) for more information about PHP-FPM.
 

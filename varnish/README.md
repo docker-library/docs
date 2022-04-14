@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v7` builds of [the `varnish` official image](https://hub.docker.com/_/varnish) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -29,6 +31,8 @@ WARNING:
 -	[`old`, `7.0.2`, `7.0`](https://github.com/varnish/docker-varnish/blob/2012f1cbc7c401d603584ac0b601555af180eb09/old/debian/Dockerfile)
 -	[`old-alpine`, `7.0.2-alpine`, `7.0-alpine`](https://github.com/varnish/docker-varnish/blob/2012f1cbc7c401d603584ac0b601555af180eb09/old/alpine/Dockerfile)
 -	[`stable`, `6.0.10`, `6.0`](https://github.com/varnish/docker-varnish/blob/d1212e4b8fd35b58c19b01ed389f8841d0a4ea38/stable/debian/Dockerfile)
+
+[![arm32v7/varnish build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/varnish.svg?label=arm32v7/varnish%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/varnish/)
 
 # Quick reference (cont.)
 
@@ -98,7 +102,7 @@ $ docker run \
 	-v /path/to/default.vcl:/etc/varnish/default.vcl:ro \
 	--tmpfs /var/lib/varnish/varnishd:exec \
 	-p 8080:80 \
-	varnish
+	arm32v7/varnish
 ```
 
 From there, you can visit `localhost:8080` in your browser and see the example.com homepage.
@@ -106,7 +110,7 @@ From there, you can visit `localhost:8080` in your browser and see the example.c
 Alternatively, a simple `Dockerfile` can be used to generate a new image that includes the necessary `default.vcl` (which is a much cleaner solution than the bind mount above):
 
 ```dockerfile
-FROM varnish
+FROM arm32v7/varnish
 
 COPY default.vcl /etc/varnish/
 ```
@@ -139,27 +143,27 @@ docker run varnish varnishreload -h
 By default, the containers will use a cache size of 100MB, which is usually a bit too small, but you can quickly set it through the `VARNISH_SIZE` environment variable:
 
 ```console
-$ docker run --tmpfs /var/lib/varnish/varnishd:exec -p 8080:80 -e VARNISH_SIZE=2G varnish
+$ docker run --tmpfs /var/lib/varnish/varnishd:exec -p 8080:80 -e VARNISH_SIZE=2G arm32v7/varnish
 ```
 
-Additionally, you can add arguments to `docker run` after `varnish`, if the first one starts with a `-`, they will be appendend to the [default command](https://github.com/varnish/docker-varnish/blob/master/docker-varnish-entrypoint#L8):
+Additionally, you can add arguments to `docker run` after `arm32v7/varnish`, if the first one starts with a `-`, they will be appendend to the [default command](https://github.com/varnish/docker-varnish/blob/master/docker-varnish-entrypoint#L8):
 
 ```console
 # extend the default keep period
-$ docker run --tmpfs /var/lib/varnish/varnishd:exec -p 8080:80 -e VARNISH_SIZE=2G varnish -p default_keep=300
+$ docker run --tmpfs /var/lib/varnish/varnishd:exec -p 8080:80 -e VARNISH_SIZE=2G arm32v7/varnish -p default_keep=300
 ```
 
-If your first argument after `varnish` doesn't start with `-`, it will be interpreted as a command to override the default one:
+If your first argument after `arm32v7/varnish` doesn't start with `-`, it will be interpreted as a command to override the default one:
 
 ```console
 # show the command-line options
-$ docker run varnish varnishd -?
+$ docker run arm32v7/varnish varnishd -?
 
 # list parameters usable with -p
-$ docker run varnish varnishd -x parameter
+$ docker run arm32v7/varnish varnishd -x parameter
 
 # run the server with your own parameters (don't forget -F to not daemonize)
-$ docker run varnish varnishd -F -a :8080 -b 127.0.0.1:8181 -t 600 -p feature=+http2
+$ docker run arm32v7/varnish varnishd -F -a :8080 -b 127.0.0.1:8181 -t 600 -p feature=+http2
 ```
 
 ## vmods (since 7.1)
@@ -168,13 +172,13 @@ As mentioned above, you can use [vmod_dynamic](https://github.com/nigoroll/libvm
 
 # Image Variants
 
-The `varnish` images come in many flavors, each designed for a specific use case.
+The `arm32v7/varnish` images come in many flavors, each designed for a specific use case.
 
-## `varnish:<version>`
+## `arm32v7/varnish:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `varnish:<version>-alpine`
+## `arm32v7/varnish:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 

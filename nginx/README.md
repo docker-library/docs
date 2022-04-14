@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v7` builds of [the `nginx` official image](https://hub.docker.com/_/nginx) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -32,6 +34,8 @@ WARNING:
 -	[`1.20.2-perl`, `stable-perl`, `1.20-perl`](https://github.com/nginxinc/docker-nginx/blob/b0e153a1b644ca8b2bd378b14913fff316e07cf2/stable/debian-perl/Dockerfile)
 -	[`1.20.2-alpine`, `stable-alpine`, `1.20-alpine`](https://github.com/nginxinc/docker-nginx/blob/b0e153a1b644ca8b2bd378b14913fff316e07cf2/stable/alpine/Dockerfile)
 -	[`1.20.2-alpine-perl`, `stable-alpine-perl`, `1.20-alpine-perl`](https://github.com/nginxinc/docker-nginx/blob/b0e153a1b644ca8b2bd378b14913fff316e07cf2/stable/alpine-perl/Dockerfile)
+
+[![arm32v7/nginx build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/nginx.svg?label=arm32v7/nginx%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/nginx/)
 
 # Quick reference (cont.)
 
@@ -65,13 +69,13 @@ Nginx (pronounced "engine-x") is an open source reverse proxy server for HTTP, H
 ## Hosting some simple static content
 
 ```console
-$ docker run --name some-nginx -v /some/content:/usr/share/nginx/html:ro -d nginx
+$ docker run --name some-nginx -v /some/content:/usr/share/nginx/html:ro -d arm32v7/nginx
 ```
 
 Alternatively, a simple `Dockerfile` can be used to generate a new image that includes the necessary content (which is a much cleaner solution than the bind mount above):
 
 ```dockerfile
-FROM nginx
+FROM arm32v7/nginx
 COPY static-html-directory /usr/share/nginx/html
 ```
 
@@ -92,7 +96,7 @@ Then you can hit `http://localhost:8080` or `http://host-ip:8080` in your browse
 ## Complex configuration
 
 ```console
-$ docker run --name my-custom-nginx-container -v /host/path/nginx.conf:/etc/nginx/nginx.conf:ro -d nginx
+$ docker run --name my-custom-nginx-container -v /host/path/nginx.conf:/etc/nginx/nginx.conf:ro -d arm32v7/nginx
 ```
 
 For information on the syntax of the nginx configuration files, see [the official documentation](http://nginx.org/en/docs/) (specifically the [Beginner's Guide](http://nginx.org/en/docs/beginners_guide.html#conf_structure)).
@@ -100,7 +104,7 @@ For information on the syntax of the nginx configuration files, see [the officia
 If you wish to adapt the default configuration, use something like the following to copy it from a running nginx container:
 
 ```console
-$ docker run --name tmp-nginx-container -d nginx
+$ docker run --name tmp-nginx-container -d arm32v7/nginx
 $ docker cp tmp-nginx-container:/etc/nginx/nginx.conf /host/path/nginx.conf
 $ docker rm -f tmp-nginx-container
 ```
@@ -108,7 +112,7 @@ $ docker rm -f tmp-nginx-container
 This can also be accomplished more cleanly using a simple `Dockerfile` (in `/host/path/`):
 
 ```dockerfile
-FROM nginx
+FROM arm32v7/nginx
 COPY nginx.conf /etc/nginx/nginx.conf
 ```
 
@@ -120,15 +124,15 @@ Then build the image with `docker build -t custom-nginx .` and run it as follows
 $ docker run --name my-custom-nginx-container -d custom-nginx
 ```
 
-### Using environment variables in nginx configuration (new in 1.19)
+### Using environment variables in arm32v7/nginx configuration (new in 1.19)
 
-Out-of-the-box, nginx doesn't support environment variables inside most configuration blocks. But this image has a function, which will extract environment variables before nginx starts.
+Out-of-the-box, arm32v7/nginx doesn't support environment variables inside most configuration blocks. But this image has a function, which will extract environment variables before arm32v7/nginx starts.
 
 Here is an example using docker-compose.yml:
 
 ```yaml
 web:
-  image: nginx
+  image: arm32v7/nginx
   volumes:
    - ./templates:/etc/nginx/templates
   ports:
@@ -162,29 +166,29 @@ This behavior can be changed via the following environment variables:
 		-	ex.) `/etc/nginx/templates/default.conf.template` will be output with the filename `/etc/nginx/conf.d/default.conf`.
 	-	This directory must be writable by the user running a container.
 
-## Running nginx in read-only mode
+## Running arm32v7/nginx in read-only mode
 
-To run nginx in read-only mode, you will need to mount a Docker volume to every location where nginx writes information. The default nginx configuration requires write access to `/var/cache` and `/var/run`. This can be easily accomplished by running nginx as follows:
+To run arm32v7/nginx in read-only mode, you will need to mount a Docker volume to every location where arm32v7/nginx writes information. The default arm32v7/nginx configuration requires write access to `/var/cache` and `/var/run`. This can be easily accomplished by running arm32v7/nginx as follows:
 
 ```console
 $ docker run -d -p 80:80 --read-only -v $(pwd)/nginx-cache:/var/cache/nginx -v $(pwd)/nginx-pid:/var/run nginx
 ```
 
-If you have a more advanced configuration that requires nginx to write to other locations, simply add more volume mounts to those locations.
+If you have a more advanced configuration that requires arm32v7/nginx to write to other locations, simply add more volume mounts to those locations.
 
 ## Running nginx in debug mode
 
 Images since version 1.9.8 come with `nginx-debug` binary that produces verbose output when using higher log levels. It can be used with simple CMD substitution:
 
 ```console
-$ docker run --name my-nginx -v /host/path/nginx.conf:/etc/nginx/nginx.conf:ro -d nginx nginx-debug -g 'daemon off;'
+$ docker run --name my-nginx -v /host/path/nginx.conf:/etc/nginx/nginx.conf:ro -d arm32v7/nginx nginx-debug -g 'daemon off;'
 ```
 
 Similar configuration in docker-compose.yml may look like this:
 
 ```yaml
 web:
-  image: nginx
+  image: arm32v7/nginx
   volumes:
     - ./nginx.conf:/etc/nginx/nginx.conf:ro
   command: [nginx-debug, '-g', 'daemon off;']
@@ -195,7 +199,7 @@ web:
 Since version 1.19.0, a verbose entrypoint was added. It provides information on what's happening during container startup. You can silence this output by setting environment variable `NGINX_ENTRYPOINT_QUIET_LOGS`:
 
 ```console
-$ docker run -d -e NGINX_ENTRYPOINT_QUIET_LOGS=1 nginx
+$ docker run -d -e NGINX_ENTRYPOINT_QUIET_LOGS=1 arm32v7/nginx
 ```
 
 ## User and group id
@@ -207,12 +211,12 @@ $ id
 uid=101(nginx) gid=101(nginx) groups=101(nginx)
 ```
 
-## Running nginx as a non-root user
+## Running arm32v7/nginx as a non-root user
 
-It is possible to run the image as a less privileged arbitrary UID/GID. This, however, requires modification of nginx configuration to use directories writeable by that specific UID/GID pair:
+It is possible to run the image as a less privileged arbitrary UID/GID. This, however, requires modification of arm32v7/nginx configuration to use directories writeable by that specific UID/GID pair:
 
 ```console
-$ docker run -d -v $PWD/nginx.conf:/etc/nginx/nginx.conf nginx
+$ docker run -d -v $PWD/nginx.conf:/etc/nginx/nginx.conf arm32v7/nginx
 ```
 
 where nginx.conf in the current directory should have the following directives re-defined:
@@ -238,17 +242,17 @@ Alternatively, check out the official [Docker NGINX unprivileged image](https://
 
 # Image Variants
 
-The `nginx` images come in many flavors, each designed for a specific use case.
+The `arm32v7/nginx` images come in many flavors, each designed for a specific use case.
 
-## `nginx:<version>`
+## `arm32v7/nginx:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `nginx:<version>-perl` / `nginx:<version>-alpine-perl`
+## `arm32v7/nginx:<version>-perl` / `arm32v7/nginx:<version>-alpine-perl`
 
-Starting with nginx:1.13.0 / mainline and nginx:1.12.0 / stable, the perl module has been removed from the default images. A separate `-perl` tag variant is available if you wish to use the perl module.
+Starting with arm32v7/nginx:1.13.0 / mainline and arm32v7/nginx:1.12.0 / stable, the perl module has been removed from the default images. A separate `-perl` tag variant is available if you wish to use the perl module.
 
-## `nginx:<version>-alpine`
+## `arm32v7/nginx:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 

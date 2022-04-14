@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v7` builds of [the `cassandra` official image](https://hub.docker.com/_/cassandra) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -27,6 +29,8 @@ WARNING:
 -	[`4.0.3`, `4.0`, `4`, `latest`](https://github.com/docker-library/cassandra/blob/ac4975fcd60b47291ca4772d8cce8047f10674b4/4.0/Dockerfile)
 -	[`3.11.12`, `3.11`, `3`](https://github.com/docker-library/cassandra/blob/70ecd6c8d9ef280b967db295e1ee3463b7a08ed2/3.11/Dockerfile)
 -	[`3.0.26`, `3.0`](https://github.com/docker-library/cassandra/blob/4514513f79f99f5c57184b57a42171ef3e5f7984/3.0/Dockerfile)
+
+[![arm32v7/cassandra build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/cassandra.svg?label=arm32v7/cassandra%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/cassandra/)
 
 # Quick reference (cont.)
 
@@ -62,7 +66,7 @@ Apache Cassandra is an open source distributed database management system design
 Starting a Cassandra instance is simple:
 
 ```console
-$ docker run --name some-cassandra --network some-network -d cassandra:tag
+$ docker run --name some-cassandra --network some-network -d arm32v7/cassandra:tag
 ```
 
 ... where `some-cassandra` is the name you want to assign to your container and `tag` is the tag specifying the Cassandra version you want. See the list above for relevant tags.
@@ -72,7 +76,7 @@ $ docker run --name some-cassandra --network some-network -d cassandra:tag
 Using the environment variables documented below, there are two cluster scenarios: instances on the same machine and instances on separate machines. For the same machine, start the instance as described above. To start other instances, just tell each new node where the first is.
 
 ```console
-$ docker run --name some-cassandra2 -d --network some-network -e CASSANDRA_SEEDS=some-cassandra cassandra:tag
+$ docker run --name some-cassandra2 -d --network some-network -e CASSANDRA_SEEDS=some-cassandra arm32v7/cassandra:tag
 ```
 
 For separate machines (ie, two VMs on a cloud provider), you need to tell Cassandra what IP address to advertise to the other nodes (since the address of the container is behind the docker bridge).
@@ -80,13 +84,13 @@ For separate machines (ie, two VMs on a cloud provider), you need to tell Cassan
 Assuming the first machine's IP address is `10.42.42.42` and the second's is `10.43.43.43`, start the first with exposed gossip port:
 
 ```console
-$ docker run --name some-cassandra -d -e CASSANDRA_BROADCAST_ADDRESS=10.42.42.42 -p 7000:7000 cassandra:tag
+$ docker run --name some-cassandra -d -e CASSANDRA_BROADCAST_ADDRESS=10.42.42.42 -p 7000:7000 arm32v7/cassandra:tag
 ```
 
 Then start a Cassandra container on the second machine, with the exposed gossip port and seed pointing to the first machine:
 
 ```console
-$ docker run --name some-cassandra -d -e CASSANDRA_BROADCAST_ADDRESS=10.43.43.43 -p 7000:7000 -e CASSANDRA_SEEDS=10.42.42.42 cassandra:tag
+$ docker run --name some-cassandra -d -e CASSANDRA_BROADCAST_ADDRESS=10.43.43.43 -p 7000:7000 -e CASSANDRA_SEEDS=10.42.42.42 arm32v7/cassandra:tag
 ```
 
 ## Connect to Cassandra from `cqlsh`
@@ -94,7 +98,7 @@ $ docker run --name some-cassandra -d -e CASSANDRA_BROADCAST_ADDRESS=10.43.43.43
 The following command starts another Cassandra container instance and runs `cqlsh` (Cassandra Query Language Shell) against your original Cassandra container, allowing you to execute CQL statements against your database instance:
 
 ```console
-$ docker run -it --network some-network --rm cassandra cqlsh some-cassandra
+$ docker run -it --network some-network --rm arm32v7/cassandra cqlsh some-cassandra
 ```
 
 More information about the CQL can be found in the [Cassandra documentation](https://cassandra.apache.org/doc/latest/cql/index.html).
@@ -117,7 +121,7 @@ $ docker logs some-cassandra
 
 The best way to provide configuration to the `cassandra` image is to provide a custom `/etc/cassandra/cassandra.yaml` file. There are many ways to provide this file to the container (via short `Dockerfile` with `FROM` + `COPY`, via [Docker Configs](https://docs.docker.com/engine/swarm/configs/), via runtime bind-mount, etc), the details of which are left as an exercise for the reader.
 
-To use a different file name (for example, to avoid all image-provided configuration behavior), use `-Dcassandra.config=/path/to/cassandra.yaml` as an argument to the image (as in, `docker run ... cassandra -Dcassandra.config=/path/to/cassandra.yaml`).
+To use a different file name (for example, to avoid all image-provided configuration behavior), use `-Dcassandra.config=/path/to/cassandra.yaml` as an argument to the image (as in, `docker run ... arm32v7/cassandra -Dcassandra.config=/path/to/cassandra.yaml`).
 
 There are a small number of environment variables supported by the image which will modify `/etc/cassandra/cassandra.yaml` in some way (but the script is modifying YAML, so is naturally fragile):
 
@@ -156,7 +160,7 @@ The Docker documentation is a good starting point for understanding the differen
 2.	Start your `cassandra` container like this:
 
 	```console
-	$ docker run --name some-cassandra -v /my/own/datadir:/var/lib/cassandra -d cassandra:tag
+	$ docker run --name some-cassandra -v /my/own/datadir:/var/lib/cassandra -d arm32v7/cassandra:tag
 	```
 
 The `-v /my/own/datadir:/var/lib/cassandra` part of the command mounts the `/my/own/datadir` directory from the underlying host system as `/var/lib/cassandra` inside the container, where Cassandra by default will write its data files.

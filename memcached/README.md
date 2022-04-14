@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v7` builds of [the `memcached` official image](https://hub.docker.com/_/memcached) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -26,6 +28,8 @@ WARNING:
 
 -	[`1.6.15`, `1.6`, `1`, `latest`, `1.6.15-bullseye`, `1.6-bullseye`, `1-bullseye`, `bullseye`](https://github.com/docker-library/memcached/blob/f7015c3dba3b87f3793f217db5e06ceec77f43ee/debian/Dockerfile)
 -	[`1.6.15-alpine`, `1.6-alpine`, `1-alpine`, `alpine`, `1.6.15-alpine3.15`, `1.6-alpine3.15`, `1-alpine3.15`, `alpine3.15`](https://github.com/docker-library/memcached/blob/f7015c3dba3b87f3793f217db5e06ceec77f43ee/alpine/Dockerfile)
+
+[![arm32v7/memcached build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/memcached.svg?label=arm32v7/memcached%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/memcached/)
 
 # Quick reference (cont.)
 
@@ -57,13 +61,13 @@ Memcached's APIs provide a very large hash table distributed across multiple mac
 # How to use this image
 
 ```console
-$ docker run --name my-memcache -d memcached
+$ docker run --name my-memcache -d arm32v7/memcached
 ```
 
 ## Setting Memory Usage
 
 ```console
-$ docker run --name my-memcache -d memcached memcached -m 64
+$ docker run --name my-memcache -d arm32v7/memcached memcached -m 64
 ```
 
 This would set the Memcached server to use 64 megabytes for storage.
@@ -72,15 +76,15 @@ For infomation on configuring your memcached server, see the extensive [wiki](ht
 
 # Image Variants
 
-The `memcached` images come in many flavors, each designed for a specific use case.
+The `arm32v7/memcached` images come in many flavors, each designed for a specific use case.
 
-## `memcached:<version>`
+## `arm32v7/memcached:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
 Some of these tags may have names like bullseye in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
-## `memcached:<version>-alpine`
+## `arm32v7/memcached:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 

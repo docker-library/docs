@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v7` builds of [the `convertigo` official image](https://hub.docker.com/_/convertigo) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,7 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.9.8`, `7.9`, `latest`](https://github.com/convertigo/convertigo/blob/89e450f51ff96df7c0b44470c4e62fc962012a1e/docker/default/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v7` ARCHITECTURE
+
+[![arm32v7/convertigo build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/convertigo.svg?label=arm32v7/convertigo%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/convertigo/)
 
 # Quick reference (cont.)
 
@@ -65,7 +69,7 @@ Convertigo Community edition brought to you by Convertigo SA (Paris & San Franci
 ## Quick start
 
 ```console
-$ docker run --name C8O -d -p 28080:28080 convertigo
+$ docker run --name C8O -d -p 28080:28080 arm32v7/convertigo
 ```
 
 This will start a container running the minimum Convertigo server. Convertigo uses images' **/workspace** directory to store configuration file and deployed projects as an Docker volume.
@@ -85,7 +89,7 @@ $ docker run -d --name fullsync couchdb:2.3.1
 Then launch Convertigo and link it to the running 'fullsync' container. Convertigo Low Code sever will automatically use it as its fullsync repository.
 
 ```console
-$ docker run -d --name C8O --link fullsync:couchdb -p 28080:28080 convertigo
+$ docker run -d --name C8O --link fullsync:couchdb -p 28080:28080 arm32v7/convertigo
 ```
 
 ## Link Convertigo Low Code Server to a Billing & Analytics database
@@ -100,7 +104,7 @@ $ docker run -d --name C8O --link [mysql-container]:mysql -p 28080:28080        
             -Dconvertigo.engine.billing.persistence.jdbc.username=[username for the c8oAnalytics db] \
             -Dconvertigo.engine.billing.persistence.jdbc.password=[password for specified db user]   \
             -Dconvertigo.engine.billing.persistence.jdbc.url=jdbc:mysql://mysql:3306/c8oAnalytics"   \
-convertigo
+arm32v7/convertigo
 ```
 
 ## Where is Convertigo Low Code server storing deployed projects
@@ -108,7 +112,7 @@ convertigo
 Projects are deployed in the Convertigo workspace, a simple file system directory. You can map the docker container **/workspace** to your physical system by using :
 
 ```console
-$ docker run --name C8O -v $(pwd):/workspace -d -p 28080:28080 convertigo
+$ docker run --name C8O -v $(pwd):/workspace -d -p 28080:28080 arm32v7/convertigo
 ```
 
 You can share the same workspace by all Convertigo containers. In this case, when you deploy a project on a Convertigo container, it will be seen by others. This is the best way to build multi-instance load balanced Convertigo server farms.
@@ -127,7 +131,7 @@ To avoid log and cache mixing, you have to add 2 variables for instance specific
 If you want to make a vertical image ready to start with your application inside, you have to have your built projects **.car** files next to your `Dockerfile`:
 
 ```console
-FROM convertigo
+FROM arm32v7/convertigo
 COPY myProject.car /usr/local/tomcat/webapps/convertigo/WEB-INF/default_user_workspace/projects/
 COPY myDependency.car /usr/local/tomcat/webapps/convertigo/WEB-INF/default_user_workspace/projects/
 ```
@@ -149,7 +153,7 @@ These accounts can be configured through the *administration console* and saved 
 You can change the default administration account :
 
 ```console
-$ docker run -d --name C8O -e CONVERTIGO_ADMIN_USER=administrator -e CONVERTIGO_ADMIN_PASSWORD=s3cret -p 28080:28080 convertigo
+$ docker run -d --name C8O -e CONVERTIGO_ADMIN_USER=administrator -e CONVERTIGO_ADMIN_PASSWORD=s3cret -p 28080:28080 arm32v7/convertigo
 ```
 
 ### `CONVERTIGO_TESTPLATFORM_USER` and `CONVERTIGO_TESTPLATFORM_PASSWORD` Environment variables
@@ -157,7 +161,7 @@ $ docker run -d --name C8O -e CONVERTIGO_ADMIN_USER=administrator -e CONVERTIGO_
 You can lock the **testplatform** by setting the account :
 
 ```console
-$ docker run -d --name C8O -e CONVERTIGO_TESTPLATFORM_USER=tp_user -e CONVERTIGO_TESTPLATFORM_PASSWORD=s3cret -p 28080:28080 convertigo
+$ docker run -d --name C8O -e CONVERTIGO_TESTPLATFORM_USER=tp_user -e CONVERTIGO_TESTPLATFORM_PASSWORD=s3cret -p 28080:28080 arm32v7/convertigo
 ```
 
 ## `JAVA_OPTS` Environment variable
@@ -167,7 +171,7 @@ Convertigo is based on a *Java* process with some defaults *JVM* options. You ca
 Add any *Java JVM* options such as -D[something] :
 
 ```console
-$ docker run -d --name C8O -e JAVA_OPTS="-DjvmRoute=server1" -p 28080:28080 convertigo
+$ docker run -d --name C8O -e JAVA_OPTS="-DjvmRoute=server1" -p 28080:28080 arm32v7/convertigo
 ```
 
 [Here the list of convertigo specific properties](https://www.convertigo.com/documentation/latest/operating-guide/appendixes/#list-of-convertigo-java-system-properties) (don't forget the `-Dconvertigo.engine.` prefix).
@@ -179,7 +183,7 @@ Convertigo tries to allocate this amount of memory in the container and will aut
 The default `JXMX` value is `2048` and can be defined :
 
 ```console
-$ docker run -d --name C8O -e JXMX="4096" -p 28080:28080 convertigo
+$ docker run -d --name C8O -e JXMX="4096" -p 28080:28080 arm32v7/convertigo
 ```
 
 ## `COOKIE_PATH` Environment variable
@@ -189,7 +193,7 @@ Convertigo generates a `JSESSIONID` to maintain the user session and stores in a
 The default `COOKIE_PATH` value is `/` and can be defined :
 
 ```console
-$ docker run -d --name C8O -e COOKIE_PATH="/convertigo" -p 28080:28080 convertigo
+$ docker run -d --name C8O -e COOKIE_PATH="/convertigo" -p 28080:28080 arm32v7/convertigo
 ```
 
 ## `COOKIE_SECURE` Environment variable
@@ -201,7 +205,7 @@ The Secure flag can be enabled by setting the `COOKIE_SECURE` environment variab
 The default `COOKIE_SECURE` value is `false` and can be defined :
 
 ```console
-$ docker run -d --name C8O -e COOKIE_SECURE="true" -p 28080:28080 convertigo
+$ docker run -d --name C8O -e COOKIE_SECURE="true" -p 28080:28080 arm32v7/convertigo
 ```
 
 ## `COOKIE_SAMESITE` Environment variable
@@ -211,7 +215,7 @@ Allow to configure the *SameSite* parameter for generated cookies. Can be empty,
 The default `COOKIE_SAMESITE` value is *empty* and can be defined this way:
 
 ```console
-$ docker run -d --name C8O -e COOKIE_SAMESITE=lax -p 28080:28080 convertigo
+$ docker run -d --name C8O -e COOKIE_SAMESITE=lax -p 28080:28080 arm32v7/convertigo
 ```
 
 ## `SESSION_TIMEOUT` Environment variable
@@ -221,7 +225,7 @@ Allow to configure the default Tomcat *session-timeout* in minutes. This value i
 The default `SESSION_TIMEOUT` value is *30* and can be defined this way:
 
 ```console
-$ docker run -d --name C8O -e SESSION_TIMEOUT=5 -p 28080:28080 convertigo
+$ docker run -d --name C8O -e SESSION_TIMEOUT=5 -p 28080:28080 arm32v7/convertigo
 ```
 
 ## `DISABLE_SUDO` Environment variable
@@ -231,7 +235,7 @@ The image include *sudo* command line, configured to allow the *convertigo* user
 The default `DISABLE_SUDO` value is *empty* and can be defined this way:
 
 ```console
-$ docker run -d --name C8O -e DISABLE_SUDO=true -p 28080:28080 convertigo
+$ docker run -d --name C8O -e DISABLE_SUDO=true -p 28080:28080 arm32v7/convertigo
 ```
 
 ## Pre configurated Docker compose stack

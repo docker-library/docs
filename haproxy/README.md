@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v7` builds of [the `haproxy` official image](https://hub.docker.com/_/haproxy) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -38,6 +40,8 @@ WARNING:
 -	[`2.0.28-alpine`, `2.0-alpine`, `2.0.28-alpine3.15`, `2.0-alpine3.15`](https://github.com/docker-library/haproxy/blob/a421e7e758d512cb77364d2a1a232f3bda28c066/2.0/alpine/Dockerfile)
 -	[`1.8.30`, `1.8`, `1.8.30-buster`, `1.8-buster`](https://github.com/docker-library/haproxy/blob/47dd63fdb9a0674dae6cc2acb3ab4484bb51674a/1.8/Dockerfile)
 -	[`1.8.30-alpine`, `1.8-alpine`, `1.8.30-alpine3.15`, `1.8-alpine3.15`](https://github.com/docker-library/haproxy/blob/633f24fd7cddfe751c62c9490925721e087cd172/1.8/alpine/Dockerfile)
+
+[![arm32v7/haproxy build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/haproxy.svg?label=arm32v7/haproxy%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/haproxy/)
 
 # Quick reference (cont.)
 
@@ -77,7 +81,7 @@ It is also worth checking out the [`examples/` directory from upstream](http://g
 ## Create a `Dockerfile`
 
 ```dockerfile
-FROM haproxy:2.3
+FROM arm32v7/haproxy:2.3
 COPY haproxy.cfg /usr/local/etc/haproxy/haproxy.cfg
 ```
 
@@ -106,7 +110,7 @@ You will need a kernel at [version 4.11 or newer](https://github.com/moby/moby/i
 ## Directly via bind mount
 
 ```console
-$ docker run -d --name my-running-haproxy -v /path/to/etc/haproxy:/usr/local/etc/haproxy:ro --sysctl net.ipv4.ip_unprivileged_port_start=0 haproxy:2.3
+$ docker run -d --name my-running-haproxy -v /path/to/etc/haproxy:/usr/local/etc/haproxy:ro --sysctl net.ipv4.ip_unprivileged_port_start=0 arm32v7/haproxy:2.3
 ```
 
 Note that your host's `/path/to/etc/haproxy` folder should be populated with a file named `haproxy.cfg`. If this configuration file refers to any other files within that folder then you should ensure that they also exist (e.g. template files such as `400.http`, `404.http`, and so forth). However, many minimal configurations do not require any supporting files.
@@ -123,15 +127,15 @@ The entrypoint script in the image checks for running the command `haproxy` and 
 
 # Image Variants
 
-The `haproxy` images come in many flavors, each designed for a specific use case.
+The `arm32v7/haproxy` images come in many flavors, each designed for a specific use case.
 
-## `haproxy:<version>`
+## `arm32v7/haproxy:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
 Some of these tags may have names like bullseye or buster in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
-## `haproxy:<version>-alpine`
+## `arm32v7/haproxy:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 

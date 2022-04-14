@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v7` builds of [the `redmine` official image](https://hub.docker.com/_/redmine) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -27,11 +29,11 @@ WARNING:
 -	[`5.0.0`, `5.0`, `5`, `latest`, `5.0.0-bullseye`, `5.0-bullseye`, `5-bullseye`, `bullseye`](https://github.com/docker-library/redmine/blob/540786b2e371dcfb74be6da6bc2a77f75d9d6b07/5.0/Dockerfile)
 -	[`5.0.0-alpine`, `5.0-alpine`, `5-alpine`, `alpine`, `5.0.0-alpine3.15`, `5.0-alpine3.15`, `5-alpine3.15`, `alpine3.15`](https://github.com/docker-library/redmine/blob/540786b2e371dcfb74be6da6bc2a77f75d9d6b07/5.0/alpine/Dockerfile)
 -	[`4.2.5`, `4.2`, `4`, `4.2.5-bullseye`, `4.2-bullseye`, `4-bullseye`](https://github.com/docker-library/redmine/blob/540786b2e371dcfb74be6da6bc2a77f75d9d6b07/4.2/Dockerfile)
--	[`4.2.5-passenger`, `4.2-passenger`, `4-passenger`](https://github.com/docker-library/redmine/blob/5444fd564ffba5c871a4d964b54c5559ee52e61e/4.2/passenger/Dockerfile)
 -	[`4.2.5-alpine`, `4.2-alpine`, `4-alpine`, `4.2.5-alpine3.15`, `4.2-alpine3.15`, `4-alpine3.15`](https://github.com/docker-library/redmine/blob/540786b2e371dcfb74be6da6bc2a77f75d9d6b07/4.2/alpine/Dockerfile)
 -	[`4.1.7`, `4.1`, `4.1.7-bullseye`, `4.1-bullseye`](https://github.com/docker-library/redmine/blob/540786b2e371dcfb74be6da6bc2a77f75d9d6b07/4.1/Dockerfile)
--	[`4.1.7-passenger`, `4.1-passenger`](https://github.com/docker-library/redmine/blob/5444fd564ffba5c871a4d964b54c5559ee52e61e/4.1/passenger/Dockerfile)
 -	[`4.1.7-alpine`, `4.1-alpine`, `4.1.7-alpine3.15`, `4.1-alpine3.15`](https://github.com/docker-library/redmine/blob/540786b2e371dcfb74be6da6bc2a77f75d9d6b07/4.1/alpine/Dockerfile)
+
+[![arm32v7/redmine build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/redmine.svg?label=arm32v7/redmine%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/redmine/)
 
 # Quick reference (cont.)
 
@@ -67,7 +69,7 @@ Redmine is a free and open source, web-based project management and issue tracki
 This is the simplest setup; just run redmine.
 
 ```console
-$ docker run -d --name some-redmine redmine
+$ docker run -d --name some-redmine arm32v7/redmine
 ```
 
 > not for multi-user production use ([redmine wiki](http://www.redmine.org/projects/redmine/wiki/RedmineInstall#Supported-database-back-ends))
@@ -93,7 +95,7 @@ Running Redmine with a database server is the recommended way.
 2.	start redmine
 
 	```console
-	$ docker run -d --name some-redmine --network some-network -e REDMINE_DB_POSTGRES=some-postgres -e REDMINE_DB_USERNAME=redmine -e REDMINE_DB_PASSWORD=secret redmine
+	$ docker run -d --name some-redmine --network some-network -e REDMINE_DB_POSTGRES=some-postgres -e REDMINE_DB_USERNAME=redmine -e REDMINE_DB_PASSWORD=secret arm32v7/redmine
 	```
 
 ## ... via [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/) or [`docker-compose`](https://github.com/docker/compose)
@@ -148,7 +150,7 @@ The Docker documentation is a good starting point for understanding the differen
 2.	Start your `redmine` container like this:
 
 	```console
-	$ docker run -d --name some-redmine -v /my/own/datadir:/usr/src/redmine/files --link some-postgres:postgres redmine
+	$ docker run -d --name some-redmine -v /my/own/datadir:/usr/src/redmine/files --link some-postgres:postgres arm32v7/redmine
 	```
 
 The `-v /my/own/datadir:/usr/src/redmine/files` part of the command mounts the `/my/own/datadir` directory from the underlying host system as `/usr/src/redmine/files` inside the container, where Redmine will store uploaded files.
@@ -222,22 +224,22 @@ For running the `redmine:passenger` variant as an arbitrary user you will howeve
 As an alternative to passing sensitive information via environment variables, `_FILE` may be appended to the previously listed environment variables, causing the initialization script to load the values for those variables from files present in the container. In particular, this can be used to load passwords from Docker secrets stored in `/run/secrets/<secret_name>` files. For example:
 
 ```console
-$ docker run -d --name some-redmine -e REDMINE_DB_MYSQL_FILE=/run/secrets/mysql-host -e REDMINE_DB_PASSWORD_FILE=/run/secrets/mysql-root redmine:tag
+$ docker run -d --name some-redmine -e REDMINE_DB_MYSQL_FILE=/run/secrets/mysql-host -e REDMINE_DB_PASSWORD_FILE=/run/secrets/mysql-root arm32v7/redmine:tag
 ```
 
 Currently, this is only supported for `REDMINE_DB_MYSQL`, `REDMINE_DB_POSTGRES`, `REDMINE_DB_PORT`, `REDMINE_DB_USERNAME`, `REDMINE_DB_PASSWORD`, `REDMINE_DB_DATABASE`, `REDMINE_DB_ENCODING`, and `REDMINE_SECRET_KEY_BASE`.
 
 # Image Variants
 
-The `redmine` images come in many flavors, each designed for a specific use case.
+The `arm32v7/redmine` images come in many flavors, each designed for a specific use case.
 
-## `redmine:<version>`
+## `arm32v7/redmine:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
 Some of these tags may have names like bullseye in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
-## `redmine:<version>-alpine`
+## `arm32v7/redmine:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 

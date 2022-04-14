@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v7` builds of [the `spiped` official image](https://hub.docker.com/_/spiped) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -26,6 +28,8 @@ WARNING:
 
 -	[`1.6.2`, `1.6`, `1`, `latest`](https://github.com/TimWolla/docker-spiped/blob/2673ea4c6a442d939ab23834aaf2a64c5d916139/1.6/Dockerfile)
 -	[`1.6.2-alpine`, `1.6-alpine`, `1-alpine`, `alpine`](https://github.com/TimWolla/docker-spiped/blob/ac0eceed1b934846eab1149a1ffabcaea91127c6/1.6/alpine/Dockerfile)
+
+[![arm32v7/spiped build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/spiped.svg?label=arm32v7/spiped%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/spiped/)
 
 # Quick reference (cont.)
 
@@ -59,7 +63,7 @@ Spiped (pronounced "ess-pipe-dee") is a utility for creating symmetrically encry
 This image automatically takes the key from the `/spiped/key` file (`-k`) and runs spiped in foreground (`-F`). Other than that it takes the same options *spiped* itself does. You can list the available flags by running the image without arguments:
 
 ```console
-$ docker run -it --rm spiped
+$ docker run -it --rm arm32v7/spiped
 usage: spiped {-e | -d} -s <source socket> -t <target socket> -k <key file>
     [-DFj] [-f | -g] [-n <max # connections>] [-o <connection timeout>]
     [-p <pidfile>] [-r <rtime> | -R]
@@ -68,19 +72,19 @@ usage: spiped {-e | -d} -s <source socket> -t <target socket> -k <key file>
 For example running spiped to take encrypted connections on port 8025 and forward them to port 25 on localhost would look like this:
 
 ```console
-$ docker run -d -v /path/to/keyfile:/spiped/key:ro -p 8025:8025 --init spiped -d -s '[0.0.0.0]:8025' -t '[127.0.0.1]:25'
+$ docker run -d -v /path/to/keyfile:/spiped/key:ro -p 8025:8025 --init arm32v7/spiped -d -s '[0.0.0.0]:8025' -t '[127.0.0.1]:25'
 ```
 
 Usually you would combine this image with another linked container. The following example would take encrypted connections on port 9200 and forward them to port 9200 in the container with the name `elasticsearch`:
 
 ```console
-$ docker run -d -v /path/to/keyfile:/spiped/key:ro -p 9200:9200 --link elasticsearch:elasticsearch --init spiped -d -s '[0.0.0.0]:9200' -t 'elasticsearch:9200'
+$ docker run -d -v /path/to/keyfile:/spiped/key:ro -p 9200:9200 --link elasticsearch:elasticsearch --init arm32v7/spiped -d -s '[0.0.0.0]:9200' -t 'elasticsearch:9200'
 ```
 
 If you don’t need any to bind to a privileged port you can pass `--user spiped` to make *spiped* run as an unprivileged user:
 
 ```console
-$ docker run -d -v /path/to/keyfile:/spiped/key:ro --user spiped -p 9200:9200 --link elasticsearch:elasticsearch --init spiped -d -s '[0.0.0.0]:9200' -t 'elasticsearch:9200'
+$ docker run -d -v /path/to/keyfile:/spiped/key:ro --user spiped -p 9200:9200 --link elasticsearch:elasticsearch --init arm32v7/spiped -d -s '[0.0.0.0]:9200' -t 'elasticsearch:9200'
 ```
 
 ### Generating a key
@@ -88,20 +92,20 @@ $ docker run -d -v /path/to/keyfile:/spiped/key:ro --user spiped -p 9200:9200 --
 You can save a new keyfile named `spiped-keyfile` to the folder `/path/to/keyfile/` by running:
 
 ```console
-$ docker run -it --rm -v /path/to/keyfile:/spiped/key spiped spiped-generate-key.sh
+$ docker run -it --rm -v /path/to/keyfile:/spiped/key arm32v7/spiped spiped-generate-key.sh
 ```
 
 Afterwards transmit `spiped-keyfile` securely to another host (e.g. by using scp).
 
 # Image Variants
 
-The `spiped` images come in many flavors, each designed for a specific use case.
+The `arm32v7/spiped` images come in many flavors, each designed for a specific use case.
 
-## `spiped:<version>`
+## `arm32v7/spiped:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `spiped:<version>-alpine`
+## `arm32v7/spiped:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 

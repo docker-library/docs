@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v7` builds of [the `hello-world` official image](https://hub.docker.com/_/hello-world) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -28,19 +30,14 @@ WARNING:
 
 ## Simple Tags
 
--	[`linux`](https://github.com/docker-library/hello-world/blob/3332fbee4210b41738d83f6cfdc301a42b96e30d/amd64/hello-world/Dockerfile)
--	[`nanoserver-ltsc2022`](https://github.com/docker-library/hello-world/blob/c816763efda4774cc0c628dca3c7dbd93c099928/amd64/hello-world/nanoserver-ltsc2022/Dockerfile)
--	[`nanoserver-1809`](https://github.com/docker-library/hello-world/blob/c816763efda4774cc0c628dca3c7dbd93c099928/amd64/hello-world/nanoserver-1809/Dockerfile)
+-	[`linux`](https://github.com/docker-library/hello-world/blob/3332fbee4210b41738d83f6cfdc301a42b96e30d/arm32v7/hello-world/Dockerfile)
 
 ## Shared Tags
 
 -	`latest`:
-	-	[`linux`](https://github.com/docker-library/hello-world/blob/3332fbee4210b41738d83f6cfdc301a42b96e30d/amd64/hello-world/Dockerfile)
-	-	[`nanoserver-ltsc2022`](https://github.com/docker-library/hello-world/blob/c816763efda4774cc0c628dca3c7dbd93c099928/amd64/hello-world/nanoserver-ltsc2022/Dockerfile)
-	-	[`nanoserver-1809`](https://github.com/docker-library/hello-world/blob/c816763efda4774cc0c628dca3c7dbd93c099928/amd64/hello-world/nanoserver-1809/Dockerfile)
--	`nanoserver`:
-	-	[`nanoserver-ltsc2022`](https://github.com/docker-library/hello-world/blob/c816763efda4774cc0c628dca3c7dbd93c099928/amd64/hello-world/nanoserver-ltsc2022/Dockerfile)
-	-	[`nanoserver-1809`](https://github.com/docker-library/hello-world/blob/c816763efda4774cc0c628dca3c7dbd93c099928/amd64/hello-world/nanoserver-1809/Dockerfile)
+	-	[`linux`](https://github.com/docker-library/hello-world/blob/3332fbee4210b41738d83f6cfdc301a42b96e30d/arm32v7/hello-world/Dockerfile)
+
+[![arm32v7/hello-world build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/hello-world.svg?label=arm32v7/hello-world%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/hello-world/)
 
 # Quick reference (cont.)
 
@@ -64,7 +61,7 @@ WARNING:
 # Example output
 
 ```console
-$ docker run hello-world
+$ docker run arm32v7/hello-world
 
 Hello from Docker!
 This message shows that your installation appears to be working correctly.
@@ -88,7 +85,7 @@ For more examples and ideas, visit:
  https://docs.docker.com/get-started/
 
 
-$ docker images hello-world
+$ docker images arm32v7/hello-world
 REPOSITORY   TAG     IMAGE ID      SIZE
 hello-world  latest  feb5d9fea6a5  13256
 ```

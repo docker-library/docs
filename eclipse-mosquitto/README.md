@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v7` builds of [the `eclipse-mosquitto` official image](https://hub.docker.com/_/eclipse-mosquitto) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,11 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.0.14`, `2.0`, `2`, `latest`](https://github.com/eclipse/mosquitto/blob/8212bbe29b6fc0a49c30a15b22a36ff0ac7b9d32/docker/2.0/Dockerfile)
--	[`2.0.14-openssl`, `2.0-openssl`, `2-openssl`, `openssl`](https://github.com/eclipse/mosquitto/blob/8212bbe29b6fc0a49c30a15b22a36ff0ac7b9d32/docker/2.0-openssl/Dockerfile)
--	[`1.6.15`, `1.6`](https://github.com/eclipse/mosquitto/blob/8212bbe29b6fc0a49c30a15b22a36ff0ac7b9d32/docker/1.6/Dockerfile)
--	[`1.6.15-openssl`, `1.6-openssl`](https://github.com/eclipse/mosquitto/blob/8212bbe29b6fc0a49c30a15b22a36ff0ac7b9d32/docker/1.6-openssl/Dockerfile)
--	[`1.5.11`, `1.5`](https://github.com/eclipse/mosquitto/blob/8212bbe29b6fc0a49c30a15b22a36ff0ac7b9d32/docker/1.5/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v7` ARCHITECTURE
+
+[![arm32v7/eclipse-mosquitto build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/eclipse-mosquitto.svg?label=arm32v7/eclipse-mosquitto%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/eclipse-mosquitto/)
 
 # Quick reference (cont.)
 
@@ -70,7 +70,7 @@ Three directories have been created in the image to be used for configuration, p
 When running the image, the default configuration values are used. To use a custom configuration file, mount a **local** configuration file to `/mosquitto/config/mosquitto.conf`
 
 ```console
-$ docker run -it -p 1883:1883 -p 9001:9001 -v mosquitto.conf:/mosquitto/config/mosquitto.conf eclipse-mosquitto
+$ docker run -it -p 1883:1883 -p 9001:9001 -v mosquitto.conf:/mosquitto/config/mosquitto.conf arm32v7/eclipse-mosquitto
 ```
 
 Configuration can be changed to:
@@ -91,7 +91,7 @@ i.e. add the following to `mosquitto.conf`:
 Run a container using the new image:
 
 ```console
-$ docker run -it -p 1883:1883 -p 9001:9001 -v mosquitto.conf:/mosquitto/config/mosquitto.conf -v /mosquitto/data -v /mosquitto/log eclipse-mosquitto
+$ docker run -it -p 1883:1883 -p 9001:9001 -v mosquitto.conf:/mosquitto/config/mosquitto.conf -v /mosquitto/data -v /mosquitto/log arm32v7/eclipse-mosquitto
 ```
 
 **Note**: if the mosquitto configuration (mosquitto.conf) was modified to use non-default ports, the docker run command will need to be updated to expose the ports that have been configured.

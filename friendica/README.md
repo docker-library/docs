@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v7` builds of [the `friendica` official image](https://hub.docker.com/_/friendica) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -36,6 +38,8 @@ WARNING:
 -	[`2022.05-dev-apache`, `dev-apache`, `2022.05-dev`, `dev`](https://github.com/friendica/docker/blob/1f68dfdce392e6293bb6275e09f1f47b5fe607b7/2022.05-dev/apache/Dockerfile)
 -	[`2022.05-dev-fpm`, `dev-fpm`](https://github.com/friendica/docker/blob/1f68dfdce392e6293bb6275e09f1f47b5fe607b7/2022.05-dev/fpm/Dockerfile)
 -	[`2022.05-dev-fpm-alpine`, `dev-fpm-alpine`](https://github.com/friendica/docker/blob/1f68dfdce392e6293bb6275e09f1f47b5fe607b7/2022.05-dev/fpm-alpine/Dockerfile)
+
+[![arm32v7/friendica build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/friendica.svg?label=arm32v7/friendica%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/friendica/)
 
 # Quick reference (cont.)
 
@@ -79,7 +83,7 @@ You need at least one other mariadb/mysql-container to link it to Friendica.
 The apache image contains a webserver and exposes port 80. To start the container type:
 
 ```console
-$ docker run -d -p 8080:80 --network some-network friendica
+$ docker run -d -p 8080:80 --network some-network arm32v7/friendica
 ```
 
 Now you can access the Friendica installation wizard at http://localhost:8080/ from your host system.
@@ -89,7 +93,7 @@ Now you can access the Friendica installation wizard at http://localhost:8080/ f
 To use the fpm image you need an additional web server that can proxy http-request to the fpm-port of the container. For fpm connection this container exposes port 9000. In most cases you might want use another container or your host as proxy. If you use your host you can address your Friendica container directly on port 9000. If you use another container, make sure that you add them to the same docker network (via `docker run --network <NAME> ...` or a `docker-compose` file). In both cases you don't want to map the fpm port to you host.
 
 ```console
-$ docker run -d friendica:fpm
+$ docker run -d arm32v7/friendica:fpm
 ```
 
 As the fastCGI-Process is not capable of serving static files (style sheets, images, ...) the webserver needs access to these files. This can be achieved with the `volumes-from` option. You can find more information in the docker-compose section.
@@ -183,7 +187,7 @@ Friendica:
 $ docker run -d \
   -v friendica-vol-1:/var/www/html \
   --network some-network
-  friendica
+  arm32v7/friendica
 ```
 
 Database:
@@ -272,7 +276,7 @@ Currently, this is only supported for `FRIENDICA_ADMIN_MAIL`, `MYSQL_DATABASE`, 
 
 ## Updating to a newer version
 
-You have to pull the latest image from the hub (`docker pull friendica`). The stable branch gets checked at every startup and will get updated if no installation was found or a new image is used.
+You have to pull the latest image from the hub (`docker pull arm32v7/friendica`). The stable branch gets checked at every startup and will get updated if no installation was found or a new image is used.
 
 # Running this image with docker-compose
 
@@ -302,7 +306,7 @@ services:
       - MYSQL_RANDOM_ROOT_PASSWORD=yes
 
   app:
-    image: friendica
+    image: arm32v7/friendica
     restart: always
     volumes:
       - friendica:/var/www/html
@@ -353,7 +357,7 @@ services:
       - MYSQL_RANDOM_ROOT_PASSWORD=yes
 
   app:
-    image: friendica:fpm
+    image: arm32v7/friendica:fpm
     restart: always
     volumes:
       - friendica:/var/www/html    
@@ -399,13 +403,13 @@ If you got any questions or problems using the image, please visit our [Github R
 
 # Image Variants
 
-The `friendica` images come in many flavors, each designed for a specific use case.
+The `arm32v7/friendica` images come in many flavors, each designed for a specific use case.
 
-## `friendica:<version>`
+## `arm32v7/friendica:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `friendica:<version>-alpine`
+## `arm32v7/friendica:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 

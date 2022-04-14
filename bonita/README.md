@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v7` builds of [the `bonita` official image](https://hub.docker.com/_/bonita) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,10 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.11.4`, `7.11`](https://github.com/bonitasoft/bonita-distrib/blob/7058084357dcd0fccf723ab2c7e21ec2b73f1f45/docker/Dockerfile)
--	[`2021.1`, `7.12.1`, `7.12`](https://github.com/bonitasoft/bonita-distrib/blob/bfdd527629063b73f053320e50e1f6bfcd135d0a/docker/Dockerfile)
--	[`2021.2-u0`, `2021.2`, `7.13.0`, `7.13`](https://github.com/bonitasoft/bonita-distrib/blob/a1d9ee5e31d38958aa553cc7f9d465f1151d902f/docker/Dockerfile)
--	[`2022.1-u0`, `2022.1`, `7.14.0`, `7.14`, `latest`](https://github.com/bonitasoft/bonita-distrib/blob/694bf79347add872f8c6a4c0a7f5c3ef12c31dc8/docker/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v7` ARCHITECTURE
+
+[![arm32v7/bonita build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/bonita.svg?label=arm32v7/bonita%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/bonita/)
 
 # Quick reference (cont.)
 
@@ -61,7 +62,7 @@ Bonita is an open-source business process management and workflow suite created 
 ## Quick start
 
 ```console
-$ docker run --name bonita -d -p 8080:8080 bonita
+$ docker run --name bonita -d -p 8080:8080 arm32v7/bonita
 ```
 
 This will start a container running [Bonita runtime](https://documentation.bonitasoft.com/bonita/latest/tomcat-bundle): a Tomcat bundle with Bonita Engine + Bonita Portal. With no environment variables specified, it's as if you have launched the bundle on your host using startup.{sh|bat} (with security hardening on REST and HTTP APIs, cf Security part). Bonita uses a H2 database here.
@@ -166,13 +167,13 @@ BIZ_DB_PASS=custombusinesspass
 ```
 
 ```bash
-docker run --name=bonita -h <hostname> --env-file=env.txt -d -p 8080:8080 bonita
+docker run --name=bonita -h <hostname> --env-file=env.txt -d -p 8080:8080 arm32v7/bonita
 ```
 
 ## Start Bonita with custom security credentials
 
 ```bash
-docker run --name=bonita -h <hostname> -e "TENANT_LOGIN=tech_user" -e "TENANT_PASSWORD=secret" -e "PLATFORM_LOGIN=pfadmin" -e "PLATFORM_PASSWORD=pfsecret" -d -p 8080:8080 bonita
+docker run --name=bonita -h <hostname> -e "TENANT_LOGIN=tech_user" -e "TENANT_PASSWORD=secret" -e "PLATFORM_LOGIN=pfadmin" -e "PLATFORM_PASSWORD=pfsecret" -d -p 8080:8080 arm32v7/bonita
 ```
 
 Now you can access the Bonita Runtime on localhost:8080/bonita and login using: tech_user / secret
@@ -313,7 +314,7 @@ This Docker image activates both static and dynamic authorization checks by defa
 For specific needs you can override this behavior by setting HTTP_API to true:
 
 ```console
-$ docker run  -e HTTP_API=true -e HTTP_API_PASSWORD="My-Cust0m_S3cR3T" --name bonita -d -p 8080:8080 bonita
+$ docker run  -e HTTP_API=true -e HTTP_API_PASSWORD="My-Cust0m_S3cR3T" --name bonita -d -p 8080:8080 arm32v7/bonita
 ```
 
 ## Update from an earlier version of Bonita
@@ -391,7 +392,7 @@ For updating from a version before 7.10.0, please refer to the [documentation](h
 -	Launch the new container pointing towards the copy of the database.
 
 	```console
-	$ docker run --name=bonita --link mydbpostgres:postgres -e "DB_NAME=newbonitadb" -e "DB_USER=newbonitauser" -e "DB_PASS=newbonitapass" -d -p 8081:8080 bonita:2022.1-u0
+	$ docker run --name=bonita --link mydbpostgres:postgres -e "DB_NAME=newbonitadb" -e "DB_USER=newbonitauser" -e "DB_PASS=newbonitapass" -d -p 8081:8080 arm32v7/bonita:2022.1-u0
 	```
 
 For more details regarding Bonita update and for version before 7.10.0, see the [documentation](https://documentation.bonitasoft.com/bonita/latest/version-update/migrate-from-an-earlier-version-of-bonita).
