@@ -52,7 +52,7 @@ WARNING:
 
 Starting from 3.0 release, *EMQ X* broker fully supports MQTT V5.0 protocol specifications and backward compatible with MQTT V3.1 and V3.1.1, as well as other communication protocols such as MQTT-SN, CoAP, LwM2M, WebSocket and STOMP. The 3.0 release of the *EMQ X* broker can scaled to 10+ million concurrent MQTT connections on one cluster.
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/6341b491d0019f28275259187b23b988ca102c38/emqx/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/68aa4264fa058f323993fdaceacd63a8acbbeb48/emqx/logo.svg?sanitize=true)
 
 # How to use this image
 
