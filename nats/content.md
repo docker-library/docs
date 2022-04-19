@@ -35,10 +35,11 @@ The routing protocol has been dramatically improved and adds support for account
 
 $ docker run -d --name nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 %%IMAGE%%
 [INF] Starting nats-server
-[INF]   Version:  2.7.0
-[INF]   Git:      [bb87a650]
-[INF]   Name:     NDO57CEPOVHEL4O5SROTRJC4LLHPO6AO7RZTJGZF3T2EGRKIEPSQHN6H
-[INF]   ID:       NDO57CEPOVHEL4O5SROTRJC4LLHPO6AO7RZTJGZF3T2EGRKIEPSQHN6H
+[INF]   Version:  2.8.0
+[INF]   Git:      [90721ee]
+[INF]   Cluster:  my_cluster
+[INF]   Name:     NACBPAD7HO74EVBPXRZS63EAWJU77K5DJ3U5GAT6POYQLCCR6LWQ45K3
+[INF]   ID:       NACBPAD7HO74EVBPXRZS63EAWJU77K5DJ3U5GAT6POYQLCCR6LWQ45K3
 [INF] Using configuration file: /etc/nats/nats-server.conf
 [INF] Starting http monitor on 0.0.0.0:8222
 [INF] Listening for client connections on 0.0.0.0:4222
@@ -56,11 +57,11 @@ $ docker run -d --name=nats-2 --link nats-main -p 4222:4222 -p 6222:6222 -p 8222
 # If you want to verify the routes are connected, try this instead:
 $ docker run -d --name=nats-2 --link nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 %%IMAGE%% -c /etc/nats/nats-server.conf --routes=nats-route://ruser:T0pS3cr3t@nats-main:6222 -DV
 [INF] Starting nats-server
-[INF]   Version:  2.7.0
-[INF]   Git:      [not set]
-[DBG]   Go build: go1.17.6
-[INF]   Name:     NBREZDV5RYHNFFTRCF6SEYEVSWZN362A756M5R53UFSNKEKCSNY4TYRQ
-[INF]   ID:       NBREZDV5RYHNFFTRCF6SEYEVSWZN362A756M5R53UFSNKEKCSNY4TYRQ
+[INF]   Version:  2.8.0
+[INF]   Git:      [90721ee]
+[INF]   Cluster:  my_cluster
+[INF]   Name:     NDYKDMWQQ4POOAM7FUKC4JBT3T4A44ZIEY3RGFXTDVFZGRIXFZSW72PZ
+[INF]   ID:       NDYKDMWQQ4POOAM7FUKC4JBT3T4A44ZIEY3RGFXTDVFZGRIXFZSW72PZ
 [INF] Using configuration file: /etc/nats/nats-server.conf
 [DBG] Created system account: "$SYS"
 [INF] Starting http monitor on 0.0.0.0:8222
@@ -73,7 +74,7 @@ $ docker run -d --name=nats-2 --link nats-main -p 4222:4222 -p 6222:6222 -p 8222
 [DBG] Trying to connect to route on nats-main:6222 (172.17.0.3:6222)
 [DBG] 172.17.0.3:6222 - rid:4 - Route connect msg sent
 [INF] 172.17.0.3:6222 - rid:4 - Route connection created
-[DBG] 172.17.0.3:6222 - rid:4 - Registering remote route "NAFMDWWB7ZNUGID6PEQ7ESRPWHMFFZN4IW5NEW2CHZD262MAIXKGDXVF"
+[DBG] 172.17.0.3:6222 - rid:4 - Registering remote route "NBOAKL2UBTVRBDLU5ZQGWPXZYR5I6V7WA54H3XUPMP7XGVSBRKUEAZS4"
 [DBG] 172.17.0.3:6222 - rid:4 - Sent local subscriptions to route
 ```
 
