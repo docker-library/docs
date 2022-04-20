@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `3.2.1`, `3.2`, `3`](https://github.com/apache/couchdb-docker/blob/4dc3a6b1f2bd8d46489cad5828912f0a64bf0b36/3.2.1/Dockerfile)
--	[`3.1.2`, `3.1`](https://github.com/apache/couchdb-docker/blob/4dc3a6b1f2bd8d46489cad5828912f0a64bf0b36/3.1.2/Dockerfile)
--	[`2.3.1`, `2.3`, `2`](https://github.com/apache/couchdb-docker/blob/4dc3a6b1f2bd8d46489cad5828912f0a64bf0b36/2.3.1/Dockerfile)
+-	[`latest`, `3.2.2`, `3.2`, `3`](https://github.com/apache/couchdb-docker/blob/9af532fbd94692c0de3ff277418cc46ff4d90bad/3.2.2/Dockerfile)
+-	[`3.1.2`, `3.1`](https://github.com/apache/couchdb-docker/blob/9af532fbd94692c0de3ff277418cc46ff4d90bad/3.1.2/Dockerfile)
+-	[`2.3.1`, `2.3`, `2`](https://github.com/apache/couchdb-docker/blob/9af532fbd94692c0de3ff277418cc46ff4d90bad/2.3.1/Dockerfile)
 
 # Quick reference (cont.)
 
