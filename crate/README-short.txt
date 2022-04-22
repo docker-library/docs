@@ -1,1 +1,1 @@
-CrateDB is an open-source, distributed SQL database empowering customers to turn data into business value.
+CrateDB is an open-source, distributed SQL database empowering you to turn data into business value.
