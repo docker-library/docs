@@ -24,7 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`11.2.0`, `11.2`, `11`, `latest`, `11.2.0-bullseye`, `11.2-bullseye`, `11-bullseye`, `bullseye`](https://github.com/docker-library/gcc/blob/c2c4e3ac9245fa9e5789512969cf3209e0c56136/11/Dockerfile)
+-	[`11.3.0`, `11.3`, `11`, `latest`, `11.3.0-bullseye`, `11.3-bullseye`, `11-bullseye`, `bullseye`](https://github.com/docker-library/gcc/blob/b3d0691e428cf7da4a983c91a772cc5b5ee2d6b4/11/Dockerfile)
 -	[`10.3.0`, `10.3`, `10`, `10.3.0-buster`, `10.3-buster`, `10-buster`](https://github.com/docker-library/gcc/blob/a49434c14bb5fd8aa7d1d66b366195bbafea4e7e/10/Dockerfile)
 -	[`9.4.0`, `9.4`, `9`, `9.4.0-buster`, `9.4-buster`, `9-buster`](https://github.com/docker-library/gcc/blob/a49434c14bb5fd8aa7d1d66b366195bbafea4e7e/9/Dockerfile)
 -	[`8.5.0`, `8.5`, `8`, `8.5.0-buster`, `8.5-buster`, `8-buster`](https://github.com/docker-library/gcc/blob/a49434c14bb5fd8aa7d1d66b366195bbafea4e7e/8/Dockerfile)

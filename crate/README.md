@@ -46,7 +46,7 @@ WARNING:
 -	**Source of this description**:  
 	[docs repo's `crate/` directory](https://github.com/docker-library/docs/tree/master/crate) ([history](https://github.com/docker-library/docs/commits/master/crate))
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/0d4ccc1c0a00a99c3302ffeb17831225cbba7863/crate/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/774acf9bf99ca29eded5cd50f0ba3f755716673d/crate/logo.svg?sanitize=true)
 
 # What Is CrateDB?
 

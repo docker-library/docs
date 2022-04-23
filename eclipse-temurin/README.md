@@ -166,7 +166,7 @@ WARNING:
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[GitHub](https://github.com/adoptium/containers/issues); The [adoptium support](https://adoptium.net/support.html) page has more information on quality, roadmap and support levels for Eclipse Temurin builds;
+	[GitHub](https://github.com/adoptium/containers/issues); The [adoptium support](https://adoptium.net/support) page has more information on quality, roadmap and support levels for Eclipse Temurin builds. Vulnerabilities not related to Eclipse Temurin itself should be be raised to their retrosepctive projects (e.g Ubuntu vulnerabilities need to be raised directly to the Ubuntu project).
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/eclipse-temurin/), [`arm32v7`](https://hub.docker.com/r/arm32v7/eclipse-temurin/), [`arm64v8`](https://hub.docker.com/r/arm64v8/eclipse-temurin/), [`ppc64le`](https://hub.docker.com/r/ppc64le/eclipse-temurin/), [`s390x`](https://hub.docker.com/r/s390x/eclipse-temurin/), [`windows-amd64`](https://hub.docker.com/r/winamd64/eclipse-temurin/)
