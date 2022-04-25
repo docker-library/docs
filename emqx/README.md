@@ -25,7 +25,7 @@ WARNING:
 # Supported tags and respective `Dockerfile` links
 
 -	[`4.3.5`, `4.3`](https://github.com/emqx/emqx-docker/blob/6a9fdac90acb0bda15ec41ba3396150a05435fe8/4.3/Dockerfile)
--	[`4.4.2`, `4.4`, `4`, `latest`](https://github.com/emqx/emqx-docker/blob/6a9fdac90acb0bda15ec41ba3396150a05435fe8/4.4/Dockerfile)
+-	[`4.4.3`, `4.4`, `4`, `latest`](https://github.com/emqx/emqx-docker/blob/15a67ceb5bf2402bca50a7968c9703e7de8fe9da/4.4/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -33,7 +33,7 @@ WARNING:
 	[https://github.com/emqx/emqx-docker/issues](https://github.com/emqx/emqx-docker/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/emqx/)
+	[`amd64`](https://hub.docker.com/r/amd64/emqx/), [`arm64v8`](https://hub.docker.com/r/arm64v8/emqx/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/emqx/` directory](https://github.com/docker-library/repo-info/blob/master/repos/emqx) ([history](https://github.com/docker-library/repo-info/commits/master/repos/emqx))  
