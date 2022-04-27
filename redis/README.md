@@ -24,10 +24,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.0-rc3`, `7.0-rc`, `7.0-rc3-bullseye`, `7.0-rc-bullseye`](https://github.com/docker-library/redis/blob/f1ab94aed7a14a82ecd2d45b945695b5177cb1e6/7.0-rc/Dockerfile)
--	[`7.0-rc3-alpine`, `7.0-rc-alpine`, `7.0-rc3-alpine3.15`, `7.0-rc-alpine3.15`](https://github.com/docker-library/redis/blob/f1ab94aed7a14a82ecd2d45b945695b5177cb1e6/7.0-rc/alpine/Dockerfile)
--	[`6.2.6`, `6.2`, `6`, `latest`, `6.2.6-bullseye`, `6.2-bullseye`, `6-bullseye`, `bullseye`](https://github.com/docker-library/redis/blob/15ed0a0c1cb60c5193db45d8b59a8707507be307/6.2/Dockerfile)
--	[`6.2.6-alpine`, `6.2-alpine`, `6-alpine`, `alpine`, `6.2.6-alpine3.15`, `6.2-alpine3.15`, `6-alpine3.15`, `alpine3.15`](https://github.com/docker-library/redis/blob/84c36a0967bcfa8a9c39cb899464785c5f2cf5ef/6.2/alpine/Dockerfile)
+-	[`7.0.0`, `7.0`, `7`, `latest`, `7.0.0-bullseye`, `7.0-bullseye`, `7-bullseye`, `bullseye`](https://github.com/docker-library/redis/blob/a84236d6e28edc73b8dfed292fc42839f4beb4c3/7.0/Dockerfile)
+-	[`7.0.0-alpine`, `7.0-alpine`, `7-alpine`, `alpine`, `7.0.0-alpine3.15`, `7.0-alpine3.15`, `7-alpine3.15`, `alpine3.15`](https://github.com/docker-library/redis/blob/a84236d6e28edc73b8dfed292fc42839f4beb4c3/7.0/alpine/Dockerfile)
+-	[`6.2.7`, `6.2`, `6`, `6.2.7-bullseye`, `6.2-bullseye`, `6-bullseye`](https://github.com/docker-library/redis/blob/c175cc265f6f9d0b3058d40acafd664e6e024398/6.2/Dockerfile)
+-	[`6.2.7-alpine`, `6.2-alpine`, `6-alpine`, `6.2.7-alpine3.15`, `6.2-alpine3.15`, `6-alpine3.15`](https://github.com/docker-library/redis/blob/c175cc265f6f9d0b3058d40acafd664e6e024398/6.2/alpine/Dockerfile)
 -	[`6.0.16`, `6.0`, `6.0.16-bullseye`, `6.0-bullseye`](https://github.com/docker-library/redis/blob/15ed0a0c1cb60c5193db45d8b59a8707507be307/6.0/Dockerfile)
 -	[`6.0.16-alpine`, `6.0-alpine`, `6.0.16-alpine3.15`, `6.0-alpine3.15`](https://github.com/docker-library/redis/blob/84c36a0967bcfa8a9c39cb899464785c5f2cf5ef/6.0/alpine/Dockerfile)
 -	[`5.0.14`, `5.0`, `5`, `5.0.14-bullseye`, `5.0-bullseye`, `5-bullseye`](https://github.com/docker-library/redis/blob/15ed0a0c1cb60c5193db45d8b59a8707507be307/5/Dockerfile)

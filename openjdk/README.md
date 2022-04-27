@@ -87,22 +87,22 @@ For a more "supported" experience, we recommend one of the following other Offic
 -	[`11.0.15-jre-windowsservercore-ltsc2022`, `11.0-jre-windowsservercore-ltsc2022`, `11-jre-windowsservercore-ltsc2022`](https://github.com/docker-library/openjdk/blob/87352133c6e7e03310f992ca2827aa06df225f27/11/jre/windows/windowsservercore-ltsc2022/Dockerfile)
 -	[`11.0.15-jre-windowsservercore-1809`, `11.0-jre-windowsservercore-1809`, `11-jre-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/87352133c6e7e03310f992ca2827aa06df225f27/11/jre/windows/windowsservercore-1809/Dockerfile)
 -	[`11.0.15-jre-nanoserver-1809`, `11.0-jre-nanoserver-1809`, `11-jre-nanoserver-1809`](https://github.com/docker-library/openjdk/blob/87352133c6e7e03310f992ca2827aa06df225f27/11/jre/windows/nanoserver-1809/Dockerfile)
--	[`8u322-jdk-oraclelinux8`, `8u322-oraclelinux8`, `8-jdk-oraclelinux8`, `8-oraclelinux8`, `8u322-jdk-oracle`, `8u322-oracle`, `8-jdk-oracle`, `8-oracle`](https://github.com/docker-library/openjdk/blob/a73c475009d29f67e0dfea5dd3c605da79506df8/8/jdk/oraclelinux8/Dockerfile)
--	[`8u322-jdk-oraclelinux7`, `8u322-oraclelinux7`, `8-jdk-oraclelinux7`, `8-oraclelinux7`](https://github.com/docker-library/openjdk/blob/a73c475009d29f67e0dfea5dd3c605da79506df8/8/jdk/oraclelinux7/Dockerfile)
--	[`8u322-jdk-bullseye`, `8u322-bullseye`, `8-jdk-bullseye`, `8-bullseye`](https://github.com/docker-library/openjdk/blob/a73c475009d29f67e0dfea5dd3c605da79506df8/8/jdk/bullseye/Dockerfile)
--	[`8u322-jdk-slim-bullseye`, `8u322-slim-bullseye`, `8-jdk-slim-bullseye`, `8-slim-bullseye`, `8u322-jdk-slim`, `8u322-slim`, `8-jdk-slim`, `8-slim`](https://github.com/docker-library/openjdk/blob/a73c475009d29f67e0dfea5dd3c605da79506df8/8/jdk/slim-bullseye/Dockerfile)
--	[`8u322-jdk-buster`, `8u322-buster`, `8-jdk-buster`, `8-buster`](https://github.com/docker-library/openjdk/blob/a73c475009d29f67e0dfea5dd3c605da79506df8/8/jdk/buster/Dockerfile)
--	[`8u322-jdk-slim-buster`, `8u322-slim-buster`, `8-jdk-slim-buster`, `8-slim-buster`](https://github.com/docker-library/openjdk/blob/a73c475009d29f67e0dfea5dd3c605da79506df8/8/jdk/slim-buster/Dockerfile)
--	[`8u322-jdk-windowsservercore-ltsc2022`, `8u322-windowsservercore-ltsc2022`, `8-jdk-windowsservercore-ltsc2022`, `8-windowsservercore-ltsc2022`](https://github.com/docker-library/openjdk/blob/a73c475009d29f67e0dfea5dd3c605da79506df8/8/jdk/windows/windowsservercore-ltsc2022/Dockerfile)
--	[`8u322-jdk-windowsservercore-1809`, `8u322-windowsservercore-1809`, `8-jdk-windowsservercore-1809`, `8-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/a73c475009d29f67e0dfea5dd3c605da79506df8/8/jdk/windows/windowsservercore-1809/Dockerfile)
--	[`8u322-jdk-nanoserver-1809`, `8u322-nanoserver-1809`, `8-jdk-nanoserver-1809`, `8-nanoserver-1809`](https://github.com/docker-library/openjdk/blob/a73c475009d29f67e0dfea5dd3c605da79506df8/8/jdk/windows/nanoserver-1809/Dockerfile)
--	[`8u322-jre-bullseye`, `8-jre-bullseye`](https://github.com/docker-library/openjdk/blob/a73c475009d29f67e0dfea5dd3c605da79506df8/8/jre/bullseye/Dockerfile)
--	[`8u322-jre-slim-bullseye`, `8-jre-slim-bullseye`, `8u322-jre-slim`, `8-jre-slim`](https://github.com/docker-library/openjdk/blob/a73c475009d29f67e0dfea5dd3c605da79506df8/8/jre/slim-bullseye/Dockerfile)
--	[`8u322-jre-buster`, `8-jre-buster`](https://github.com/docker-library/openjdk/blob/a73c475009d29f67e0dfea5dd3c605da79506df8/8/jre/buster/Dockerfile)
--	[`8u322-jre-slim-buster`, `8-jre-slim-buster`](https://github.com/docker-library/openjdk/blob/a73c475009d29f67e0dfea5dd3c605da79506df8/8/jre/slim-buster/Dockerfile)
--	[`8u322-jre-windowsservercore-ltsc2022`, `8-jre-windowsservercore-ltsc2022`](https://github.com/docker-library/openjdk/blob/a73c475009d29f67e0dfea5dd3c605da79506df8/8/jre/windows/windowsservercore-ltsc2022/Dockerfile)
--	[`8u322-jre-windowsservercore-1809`, `8-jre-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/a73c475009d29f67e0dfea5dd3c605da79506df8/8/jre/windows/windowsservercore-1809/Dockerfile)
--	[`8u322-jre-nanoserver-1809`, `8-jre-nanoserver-1809`](https://github.com/docker-library/openjdk/blob/a73c475009d29f67e0dfea5dd3c605da79506df8/8/jre/windows/nanoserver-1809/Dockerfile)
+-	[`8u332-jdk-oraclelinux8`, `8u332-oraclelinux8`, `8-jdk-oraclelinux8`, `8-oraclelinux8`, `8u332-jdk-oracle`, `8u332-oracle`, `8-jdk-oracle`, `8-oracle`](https://github.com/docker-library/openjdk/blob/da594d91b0364d5f1a32e0ce6b4d3fd8a9116844/8/jdk/oraclelinux8/Dockerfile)
+-	[`8u332-jdk-oraclelinux7`, `8u332-oraclelinux7`, `8-jdk-oraclelinux7`, `8-oraclelinux7`](https://github.com/docker-library/openjdk/blob/da594d91b0364d5f1a32e0ce6b4d3fd8a9116844/8/jdk/oraclelinux7/Dockerfile)
+-	[`8u332-jdk-bullseye`, `8u332-bullseye`, `8-jdk-bullseye`, `8-bullseye`](https://github.com/docker-library/openjdk/blob/da594d91b0364d5f1a32e0ce6b4d3fd8a9116844/8/jdk/bullseye/Dockerfile)
+-	[`8u332-jdk-slim-bullseye`, `8u332-slim-bullseye`, `8-jdk-slim-bullseye`, `8-slim-bullseye`, `8u332-jdk-slim`, `8u332-slim`, `8-jdk-slim`, `8-slim`](https://github.com/docker-library/openjdk/blob/da594d91b0364d5f1a32e0ce6b4d3fd8a9116844/8/jdk/slim-bullseye/Dockerfile)
+-	[`8u332-jdk-buster`, `8u332-buster`, `8-jdk-buster`, `8-buster`](https://github.com/docker-library/openjdk/blob/da594d91b0364d5f1a32e0ce6b4d3fd8a9116844/8/jdk/buster/Dockerfile)
+-	[`8u332-jdk-slim-buster`, `8u332-slim-buster`, `8-jdk-slim-buster`, `8-slim-buster`](https://github.com/docker-library/openjdk/blob/da594d91b0364d5f1a32e0ce6b4d3fd8a9116844/8/jdk/slim-buster/Dockerfile)
+-	[`8u332-jdk-windowsservercore-ltsc2022`, `8u332-windowsservercore-ltsc2022`, `8-jdk-windowsservercore-ltsc2022`, `8-windowsservercore-ltsc2022`](https://github.com/docker-library/openjdk/blob/da594d91b0364d5f1a32e0ce6b4d3fd8a9116844/8/jdk/windows/windowsservercore-ltsc2022/Dockerfile)
+-	[`8u332-jdk-windowsservercore-1809`, `8u332-windowsservercore-1809`, `8-jdk-windowsservercore-1809`, `8-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/da594d91b0364d5f1a32e0ce6b4d3fd8a9116844/8/jdk/windows/windowsservercore-1809/Dockerfile)
+-	[`8u332-jdk-nanoserver-1809`, `8u332-nanoserver-1809`, `8-jdk-nanoserver-1809`, `8-nanoserver-1809`](https://github.com/docker-library/openjdk/blob/da594d91b0364d5f1a32e0ce6b4d3fd8a9116844/8/jdk/windows/nanoserver-1809/Dockerfile)
+-	[`8u332-jre-bullseye`, `8-jre-bullseye`](https://github.com/docker-library/openjdk/blob/da594d91b0364d5f1a32e0ce6b4d3fd8a9116844/8/jre/bullseye/Dockerfile)
+-	[`8u332-jre-slim-bullseye`, `8-jre-slim-bullseye`, `8u332-jre-slim`, `8-jre-slim`](https://github.com/docker-library/openjdk/blob/da594d91b0364d5f1a32e0ce6b4d3fd8a9116844/8/jre/slim-bullseye/Dockerfile)
+-	[`8u332-jre-buster`, `8-jre-buster`](https://github.com/docker-library/openjdk/blob/da594d91b0364d5f1a32e0ce6b4d3fd8a9116844/8/jre/buster/Dockerfile)
+-	[`8u332-jre-slim-buster`, `8-jre-slim-buster`](https://github.com/docker-library/openjdk/blob/da594d91b0364d5f1a32e0ce6b4d3fd8a9116844/8/jre/slim-buster/Dockerfile)
+-	[`8u332-jre-windowsservercore-ltsc2022`, `8-jre-windowsservercore-ltsc2022`](https://github.com/docker-library/openjdk/blob/da594d91b0364d5f1a32e0ce6b4d3fd8a9116844/8/jre/windows/windowsservercore-ltsc2022/Dockerfile)
+-	[`8u332-jre-windowsservercore-1809`, `8-jre-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/da594d91b0364d5f1a32e0ce6b4d3fd8a9116844/8/jre/windows/windowsservercore-1809/Dockerfile)
+-	[`8u332-jre-nanoserver-1809`, `8-jre-nanoserver-1809`](https://github.com/docker-library/openjdk/blob/da594d91b0364d5f1a32e0ce6b4d3fd8a9116844/8/jre/windows/nanoserver-1809/Dockerfile)
 
 ## Shared Tags
 
@@ -151,24 +151,24 @@ For a more "supported" experience, we recommend one of the following other Offic
 	-	[`11.0.15-jre-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/87352133c6e7e03310f992ca2827aa06df225f27/11/jre/windows/windowsservercore-1809/Dockerfile)
 -	`11.0.15-jre-nanoserver`, `11.0-jre-nanoserver`, `11-jre-nanoserver`:
 	-	[`11.0.15-jre-nanoserver-1809`](https://github.com/docker-library/openjdk/blob/87352133c6e7e03310f992ca2827aa06df225f27/11/jre/windows/nanoserver-1809/Dockerfile)
--	`8u322-jdk`, `8u322`, `8-jdk`, `8`:
-	-	[`8u322-jdk-bullseye`](https://github.com/docker-library/openjdk/blob/a73c475009d29f67e0dfea5dd3c605da79506df8/8/jdk/bullseye/Dockerfile)
-	-	[`8u322-jdk-windowsservercore-ltsc2022`](https://github.com/docker-library/openjdk/blob/a73c475009d29f67e0dfea5dd3c605da79506df8/8/jdk/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`8u322-jdk-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/a73c475009d29f67e0dfea5dd3c605da79506df8/8/jdk/windows/windowsservercore-1809/Dockerfile)
--	`8u322-jdk-windowsservercore`, `8u322-windowsservercore`, `8-jdk-windowsservercore`, `8-windowsservercore`:
-	-	[`8u322-jdk-windowsservercore-ltsc2022`](https://github.com/docker-library/openjdk/blob/a73c475009d29f67e0dfea5dd3c605da79506df8/8/jdk/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`8u322-jdk-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/a73c475009d29f67e0dfea5dd3c605da79506df8/8/jdk/windows/windowsservercore-1809/Dockerfile)
--	`8u322-jdk-nanoserver`, `8u322-nanoserver`, `8-jdk-nanoserver`, `8-nanoserver`:
-	-	[`8u322-jdk-nanoserver-1809`](https://github.com/docker-library/openjdk/blob/a73c475009d29f67e0dfea5dd3c605da79506df8/8/jdk/windows/nanoserver-1809/Dockerfile)
--	`8u322-jre`, `8-jre`:
-	-	[`8u322-jre-bullseye`](https://github.com/docker-library/openjdk/blob/a73c475009d29f67e0dfea5dd3c605da79506df8/8/jre/bullseye/Dockerfile)
-	-	[`8u322-jre-windowsservercore-ltsc2022`](https://github.com/docker-library/openjdk/blob/a73c475009d29f67e0dfea5dd3c605da79506df8/8/jre/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`8u322-jre-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/a73c475009d29f67e0dfea5dd3c605da79506df8/8/jre/windows/windowsservercore-1809/Dockerfile)
--	`8u322-jre-windowsservercore`, `8-jre-windowsservercore`:
-	-	[`8u322-jre-windowsservercore-ltsc2022`](https://github.com/docker-library/openjdk/blob/a73c475009d29f67e0dfea5dd3c605da79506df8/8/jre/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`8u322-jre-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/a73c475009d29f67e0dfea5dd3c605da79506df8/8/jre/windows/windowsservercore-1809/Dockerfile)
--	`8u322-jre-nanoserver`, `8-jre-nanoserver`:
-	-	[`8u322-jre-nanoserver-1809`](https://github.com/docker-library/openjdk/blob/a73c475009d29f67e0dfea5dd3c605da79506df8/8/jre/windows/nanoserver-1809/Dockerfile)
+-	`8u332-jdk`, `8u332`, `8-jdk`, `8`:
+	-	[`8u332-jdk-bullseye`](https://github.com/docker-library/openjdk/blob/da594d91b0364d5f1a32e0ce6b4d3fd8a9116844/8/jdk/bullseye/Dockerfile)
+	-	[`8u332-jdk-windowsservercore-ltsc2022`](https://github.com/docker-library/openjdk/blob/da594d91b0364d5f1a32e0ce6b4d3fd8a9116844/8/jdk/windows/windowsservercore-ltsc2022/Dockerfile)
+	-	[`8u332-jdk-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/da594d91b0364d5f1a32e0ce6b4d3fd8a9116844/8/jdk/windows/windowsservercore-1809/Dockerfile)
+-	`8u332-jdk-windowsservercore`, `8u332-windowsservercore`, `8-jdk-windowsservercore`, `8-windowsservercore`:
+	-	[`8u332-jdk-windowsservercore-ltsc2022`](https://github.com/docker-library/openjdk/blob/da594d91b0364d5f1a32e0ce6b4d3fd8a9116844/8/jdk/windows/windowsservercore-ltsc2022/Dockerfile)
+	-	[`8u332-jdk-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/da594d91b0364d5f1a32e0ce6b4d3fd8a9116844/8/jdk/windows/windowsservercore-1809/Dockerfile)
+-	`8u332-jdk-nanoserver`, `8u332-nanoserver`, `8-jdk-nanoserver`, `8-nanoserver`:
+	-	[`8u332-jdk-nanoserver-1809`](https://github.com/docker-library/openjdk/blob/da594d91b0364d5f1a32e0ce6b4d3fd8a9116844/8/jdk/windows/nanoserver-1809/Dockerfile)
+-	`8u332-jre`, `8-jre`:
+	-	[`8u332-jre-bullseye`](https://github.com/docker-library/openjdk/blob/da594d91b0364d5f1a32e0ce6b4d3fd8a9116844/8/jre/bullseye/Dockerfile)
+	-	[`8u332-jre-windowsservercore-ltsc2022`](https://github.com/docker-library/openjdk/blob/da594d91b0364d5f1a32e0ce6b4d3fd8a9116844/8/jre/windows/windowsservercore-ltsc2022/Dockerfile)
+	-	[`8u332-jre-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/da594d91b0364d5f1a32e0ce6b4d3fd8a9116844/8/jre/windows/windowsservercore-1809/Dockerfile)
+-	`8u332-jre-windowsservercore`, `8-jre-windowsservercore`:
+	-	[`8u332-jre-windowsservercore-ltsc2022`](https://github.com/docker-library/openjdk/blob/da594d91b0364d5f1a32e0ce6b4d3fd8a9116844/8/jre/windows/windowsservercore-ltsc2022/Dockerfile)
+	-	[`8u332-jre-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/da594d91b0364d5f1a32e0ce6b4d3fd8a9116844/8/jre/windows/windowsservercore-1809/Dockerfile)
+-	`8u332-jre-nanoserver`, `8-jre-nanoserver`:
+	-	[`8u332-jre-nanoserver-1809`](https://github.com/docker-library/openjdk/blob/da594d91b0364d5f1a32e0ce6b4d3fd8a9116844/8/jre/windows/nanoserver-1809/Dockerfile)
 
 # Quick reference (cont.)
 
