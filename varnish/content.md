@@ -120,7 +120,7 @@ On top of this, images include [install-vmod](https://github.com/varnish/toolbox
 ### Debian
 
 ```dockerfile
-FROM varnish:7.1
+FROM %%IMAGE%%:7.1
 
 # set the user to root, and install build dependencies
 USER root
@@ -140,7 +140,7 @@ USER varnish
 ### Alpine
 
 ```dockerfile
-FROM varnish:7.1-alpine
+FROM %%IMAGE%%:7.1-alpine
 
 # install build dependencies
 USER root
