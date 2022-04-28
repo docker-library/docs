@@ -48,12 +48,6 @@ WARNING:
 -	[`2.7.6-slim-buster`, `2.7-slim-buster`, `2-slim-buster`](https://github.com/docker-library/ruby/blob/2c3e1e09e881f8a1f24d1ddfe1d5c6117aaa62de/2.7/slim-buster/Dockerfile)
 -	[`2.7.6-alpine3.15`, `2.7-alpine3.15`, `2-alpine3.15`, `2.7.6-alpine`, `2.7-alpine`, `2-alpine`](https://github.com/docker-library/ruby/blob/2c3e1e09e881f8a1f24d1ddfe1d5c6117aaa62de/2.7/alpine3.15/Dockerfile)
 -	[`2.7.6-alpine3.14`, `2.7-alpine3.14`, `2-alpine3.14`](https://github.com/docker-library/ruby/blob/2c3e1e09e881f8a1f24d1ddfe1d5c6117aaa62de/2.7/alpine3.14/Dockerfile)
--	[`2.6.10-bullseye`, `2.6-bullseye`, `2.6.10`, `2.6`](https://github.com/docker-library/ruby/blob/b633eef5268b596356ee6674164599ebfc50aa8b/2.6/bullseye/Dockerfile)
--	[`2.6.10-slim-bullseye`, `2.6-slim-bullseye`, `2.6.10-slim`, `2.6-slim`](https://github.com/docker-library/ruby/blob/b633eef5268b596356ee6674164599ebfc50aa8b/2.6/slim-bullseye/Dockerfile)
--	[`2.6.10-buster`, `2.6-buster`](https://github.com/docker-library/ruby/blob/b633eef5268b596356ee6674164599ebfc50aa8b/2.6/buster/Dockerfile)
--	[`2.6.10-slim-buster`, `2.6-slim-buster`](https://github.com/docker-library/ruby/blob/b633eef5268b596356ee6674164599ebfc50aa8b/2.6/slim-buster/Dockerfile)
--	[`2.6.10-alpine3.15`, `2.6-alpine3.15`, `2.6.10-alpine`, `2.6-alpine`](https://github.com/docker-library/ruby/blob/b633eef5268b596356ee6674164599ebfc50aa8b/2.6/alpine3.15/Dockerfile)
--	[`2.6.10-alpine3.14`, `2.6-alpine3.14`](https://github.com/docker-library/ruby/blob/b633eef5268b596356ee6674164599ebfc50aa8b/2.6/alpine3.14/Dockerfile)
 
 # Quick reference (cont.)
 
