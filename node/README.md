@@ -54,14 +54,6 @@ WARNING:
 -	[`14-buster-slim`, `14.19-buster-slim`, `14.19.1-buster-slim`, `fermium-buster-slim`](https://github.com/nodejs/docker-node/blob/6e8f32de3f620833e563e9f2b427d50055783801/14/buster-slim/Dockerfile)
 -	[`14`, `14-stretch`, `14.19`, `14.19-stretch`, `14.19.1`, `14.19.1-stretch`, `fermium`, `fermium-stretch`](https://github.com/nodejs/docker-node/blob/6e8f32de3f620833e563e9f2b427d50055783801/14/stretch/Dockerfile)
 -	[`14-slim`, `14-stretch-slim`, `14.19-slim`, `14.19-stretch-slim`, `14.19.1-slim`, `14.19.1-stretch-slim`, `fermium-slim`, `fermium-stretch-slim`](https://github.com/nodejs/docker-node/blob/6e8f32de3f620833e563e9f2b427d50055783801/14/stretch-slim/Dockerfile)
--	[`12-alpine3.14`, `12.22-alpine3.14`, `12.22.12-alpine3.14`, `erbium-alpine3.14`](https://github.com/nodejs/docker-node/blob/ee74eb16cf7dd67d284030f30890fbf4e91da2b1/12/alpine3.14/Dockerfile)
--	[`12-alpine`, `12-alpine3.15`, `12.22-alpine`, `12.22-alpine3.15`, `12.22.12-alpine`, `12.22.12-alpine3.15`, `erbium-alpine`, `erbium-alpine3.15`](https://github.com/nodejs/docker-node/blob/ee74eb16cf7dd67d284030f30890fbf4e91da2b1/12/alpine3.15/Dockerfile)
--	[`12-bullseye`, `12.22-bullseye`, `12.22.12-bullseye`, `erbium-bullseye`](https://github.com/nodejs/docker-node/blob/ee74eb16cf7dd67d284030f30890fbf4e91da2b1/12/bullseye/Dockerfile)
--	[`12-bullseye-slim`, `12.22-bullseye-slim`, `12.22.12-bullseye-slim`, `erbium-bullseye-slim`](https://github.com/nodejs/docker-node/blob/ee74eb16cf7dd67d284030f30890fbf4e91da2b1/12/bullseye-slim/Dockerfile)
--	[`12-buster`, `12.22-buster`, `12.22.12-buster`, `erbium-buster`](https://github.com/nodejs/docker-node/blob/ee74eb16cf7dd67d284030f30890fbf4e91da2b1/12/buster/Dockerfile)
--	[`12-buster-slim`, `12.22-buster-slim`, `12.22.12-buster-slim`, `erbium-buster-slim`](https://github.com/nodejs/docker-node/blob/ee74eb16cf7dd67d284030f30890fbf4e91da2b1/12/buster-slim/Dockerfile)
--	[`12`, `12-stretch`, `12.22`, `12.22-stretch`, `12.22.12`, `12.22.12-stretch`, `erbium`, `erbium-stretch`](https://github.com/nodejs/docker-node/blob/ee74eb16cf7dd67d284030f30890fbf4e91da2b1/12/stretch/Dockerfile)
--	[`12-slim`, `12-stretch-slim`, `12.22-slim`, `12.22-stretch-slim`, `12.22.12-slim`, `12.22.12-stretch-slim`, `erbium-slim`, `erbium-stretch-slim`](https://github.com/nodejs/docker-node/blob/ee74eb16cf7dd67d284030f30890fbf4e91da2b1/12/stretch-slim/Dockerfile)
 
 # Quick reference (cont.)
 
