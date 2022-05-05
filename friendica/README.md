@@ -24,18 +24,21 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2021.09-apache`, `2021.09`](https://github.com/friendica/docker/blob/1f68dfdce392e6293bb6275e09f1f47b5fe607b7/2021.09/apache/Dockerfile)
--	[`2021.09-fpm`](https://github.com/friendica/docker/blob/1f68dfdce392e6293bb6275e09f1f47b5fe607b7/2021.09/fpm/Dockerfile)
--	[`2021.09-fpm-alpine`](https://github.com/friendica/docker/blob/1f68dfdce392e6293bb6275e09f1f47b5fe607b7/2021.09/fpm-alpine/Dockerfile)
--	[`2022.02-apache`, `2022.02`](https://github.com/friendica/docker/blob/1f68dfdce392e6293bb6275e09f1f47b5fe607b7/2022.02/apache/Dockerfile)
--	[`2022.02-fpm`](https://github.com/friendica/docker/blob/1f68dfdce392e6293bb6275e09f1f47b5fe607b7/2022.02/fpm/Dockerfile)
--	[`2022.02-fpm-alpine`](https://github.com/friendica/docker/blob/1f68dfdce392e6293bb6275e09f1f47b5fe607b7/2022.02/fpm-alpine/Dockerfile)
--	[`2022.03-apache`, `apache`, `stable-apache`, `2022.03`, `latest`, `stable`](https://github.com/friendica/docker/blob/1f68dfdce392e6293bb6275e09f1f47b5fe607b7/2022.03/apache/Dockerfile)
--	[`2022.03-fpm`, `fpm`, `stable-fpm`](https://github.com/friendica/docker/blob/1f68dfdce392e6293bb6275e09f1f47b5fe607b7/2022.03/fpm/Dockerfile)
--	[`2022.03-fpm-alpine`, `fpm-alpine`, `stable-fpm-alpine`](https://github.com/friendica/docker/blob/1f68dfdce392e6293bb6275e09f1f47b5fe607b7/2022.03/fpm-alpine/Dockerfile)
--	[`2022.05-dev-apache`, `dev-apache`, `2022.05-dev`, `dev`](https://github.com/friendica/docker/blob/1f68dfdce392e6293bb6275e09f1f47b5fe607b7/2022.05-dev/apache/Dockerfile)
--	[`2022.05-dev-fpm`, `dev-fpm`](https://github.com/friendica/docker/blob/1f68dfdce392e6293bb6275e09f1f47b5fe607b7/2022.05-dev/fpm/Dockerfile)
--	[`2022.05-dev-fpm-alpine`, `dev-fpm-alpine`](https://github.com/friendica/docker/blob/1f68dfdce392e6293bb6275e09f1f47b5fe607b7/2022.05-dev/fpm-alpine/Dockerfile)
+-	[`2021.09-apache`, `2021.09`](https://github.com/friendica/docker/blob/b16c56d2dae58c57db1b999d76d8c5834426717b/2021.09/apache/Dockerfile)
+-	[`2021.09-fpm`](https://github.com/friendica/docker/blob/b16c56d2dae58c57db1b999d76d8c5834426717b/2021.09/fpm/Dockerfile)
+-	[`2021.09-fpm-alpine`](https://github.com/friendica/docker/blob/b16c56d2dae58c57db1b999d76d8c5834426717b/2021.09/fpm-alpine/Dockerfile)
+-	[`2022.02-apache`, `2022.02`](https://github.com/friendica/docker/blob/b16c56d2dae58c57db1b999d76d8c5834426717b/2022.02/apache/Dockerfile)
+-	[`2022.02-fpm`](https://github.com/friendica/docker/blob/b16c56d2dae58c57db1b999d76d8c5834426717b/2022.02/fpm/Dockerfile)
+-	[`2022.02-fpm-alpine`](https://github.com/friendica/docker/blob/b16c56d2dae58c57db1b999d76d8c5834426717b/2022.02/fpm-alpine/Dockerfile)
+-	[`2022.03-apache`, `apache`, `stable-apache`, `2022.03`, `latest`, `stable`](https://github.com/friendica/docker/blob/b16c56d2dae58c57db1b999d76d8c5834426717b/2022.03/apache/Dockerfile)
+-	[`2022.03-fpm`, `fpm`, `stable-fpm`](https://github.com/friendica/docker/blob/b16c56d2dae58c57db1b999d76d8c5834426717b/2022.03/fpm/Dockerfile)
+-	[`2022.03-fpm-alpine`, `fpm-alpine`, `stable-fpm-alpine`](https://github.com/friendica/docker/blob/b16c56d2dae58c57db1b999d76d8c5834426717b/2022.03/fpm-alpine/Dockerfile)
+-	[`2022.05-dev-apache`, `dev-apache`, `2022.05-dev`, `dev`](https://github.com/friendica/docker/blob/b16c56d2dae58c57db1b999d76d8c5834426717b/2022.05-dev/apache/Dockerfile)
+-	[`2022.05-dev-fpm`, `dev-fpm`](https://github.com/friendica/docker/blob/b16c56d2dae58c57db1b999d76d8c5834426717b/2022.05-dev/fpm/Dockerfile)
+-	[`2022.05-dev-fpm-alpine`, `dev-fpm-alpine`](https://github.com/friendica/docker/blob/b16c56d2dae58c57db1b999d76d8c5834426717b/2022.05-dev/fpm-alpine/Dockerfile)
+-	[`2022.05-rc-apache`, `rc-apache`, `2022.05-rc`, `rc`](https://github.com/friendica/docker/blob/a6fbe76784f75a1bb5c4c16f394a1f620832b30e/2022.05-rc/apache/Dockerfile)
+-	[`2022.05-rc-fpm`, `rc-fpm`](https://github.com/friendica/docker/blob/a6fbe76784f75a1bb5c4c16f394a1f620832b30e/2022.05-rc/fpm/Dockerfile)
+-	[`2022.05-rc-fpm-alpine`, `rc-fpm-alpine`](https://github.com/friendica/docker/blob/a6fbe76784f75a1bb5c4c16f394a1f620832b30e/2022.05-rc/fpm-alpine/Dockerfile)
 
 # Quick reference (cont.)
 
