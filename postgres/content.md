@@ -80,7 +80,7 @@ This optional environment variable can be used to define another location for th
 
 ### `POSTGRES_HOST_AUTH_METHOD`
 
-This optional variable can be used to control the `auth-method` for `host` connections for `all` databases, `all` users, and `all` addresses. If unspecified then [`md5` password authentication](https://www.postgresql.org/docs/current/auth-password.html) is used. On an uninitialized database, this will populate `pg_hba.conf` via this approximate line:
+This optional variable can be used to control the `auth-method` for `host` connections for `all` databases, `all` users, and `all` addresses. If unspecified then [`scram-sha-256` password authentication](https://www.postgresql.org/docs/current/auth-password.html) is used (in 14+; `md5` in older releases). On an uninitialized database, this will populate `pg_hba.conf` via this approximate line:
 
 ```console
 echo "host all all all $POSTGRES_HOST_AUTH_METHOD" >> pg_hba.conf
