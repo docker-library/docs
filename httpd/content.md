@@ -42,6 +42,12 @@ To customize the configuration of the httpd server, first obtain the upstream de
 $ docker run --rm %%IMAGE%%:2.4 cat /usr/local/apache2/conf/httpd.conf > my-httpd.conf
 ```
 
+Note that stdout redirection will be handled by the Docker host. Some systems (notably Windows) will alter character encoding and newlines, which might prevent your custom configuration from being parsed properly and httpd from starting. You might need to use an host-specific binary-safe command to prevent this. E.g. on Windows PowerShell:
+
+```powershell
+Start-Process -FilePath "powershell" -ArgumentList "docker run --rm %%IMAGE%%:2.4 cat /usr/local/apache2/conf/httpd.conf" -NoNewWindow -Wait -RedirectStandardOutput my-httpd.conf
+```
+
 You can then `COPY` your custom configuration in as `/usr/local/apache2/conf/httpd.conf`:
 
 ```dockerfile
