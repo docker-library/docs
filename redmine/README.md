@@ -24,11 +24,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.0.0`, `5.0`, `5`, `latest`, `5.0.0-bullseye`, `5.0-bullseye`, `5-bullseye`, `bullseye`](https://github.com/docker-library/redmine/blob/540786b2e371dcfb74be6da6bc2a77f75d9d6b07/5.0/Dockerfile)
--	[`5.0.0-alpine`, `5.0-alpine`, `5-alpine`, `alpine`, `5.0.0-alpine3.15`, `5.0-alpine3.15`, `5-alpine3.15`, `alpine3.15`](https://github.com/docker-library/redmine/blob/540786b2e371dcfb74be6da6bc2a77f75d9d6b07/5.0/alpine/Dockerfile)
--	[`4.2.5`, `4.2`, `4`, `4.2.5-bullseye`, `4.2-bullseye`, `4-bullseye`](https://github.com/docker-library/redmine/blob/540786b2e371dcfb74be6da6bc2a77f75d9d6b07/4.2/Dockerfile)
--	[`4.2.5-passenger`, `4.2-passenger`, `4-passenger`](https://github.com/docker-library/redmine/blob/d7c75be048a002fbed8dc457462056c1fd4c255f/4.2/passenger/Dockerfile)
--	[`4.2.5-alpine`, `4.2-alpine`, `4-alpine`, `4.2.5-alpine3.15`, `4.2-alpine3.15`, `4-alpine3.15`](https://github.com/docker-library/redmine/blob/540786b2e371dcfb74be6da6bc2a77f75d9d6b07/4.2/alpine/Dockerfile)
+-	[`5.0.1`, `5.0`, `5`, `latest`, `5.0.1-bullseye`, `5.0-bullseye`, `5-bullseye`, `bullseye`](https://github.com/docker-library/redmine/blob/f28cb367066849bd5f9a8fd064962ecc58a5b4a2/5.0/Dockerfile)
+-	[`5.0.1-alpine`, `5.0-alpine`, `5-alpine`, `alpine`, `5.0.1-alpine3.15`, `5.0-alpine3.15`, `5-alpine3.15`, `alpine3.15`](https://github.com/docker-library/redmine/blob/f28cb367066849bd5f9a8fd064962ecc58a5b4a2/5.0/alpine/Dockerfile)
+-	[`4.2.6`, `4.2`, `4`, `4.2.6-bullseye`, `4.2-bullseye`, `4-bullseye`](https://github.com/docker-library/redmine/blob/2efdb14028dde655cca957e74442e10ee7856020/4.2/Dockerfile)
+-	[`4.2.6-passenger`, `4.2-passenger`, `4-passenger`](https://github.com/docker-library/redmine/blob/845d96d1c60242c9c4871c9be1da2835ca5d1ca2/4.2/passenger/Dockerfile)
+-	[`4.2.6-alpine`, `4.2-alpine`, `4-alpine`, `4.2.6-alpine3.15`, `4.2-alpine3.15`, `4-alpine3.15`](https://github.com/docker-library/redmine/blob/2efdb14028dde655cca957e74442e10ee7856020/4.2/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
