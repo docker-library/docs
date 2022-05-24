@@ -24,6 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
+-	[`15beta1`, `15beta1-bullseye`](https://github.com/docker-library/postgres/blob/90f8530900c29714bae8f6045c6749d5fbe527c0/15/bullseye/Dockerfile)
+-	[`15beta1-alpine`, `15beta1-alpine3.15`](https://github.com/docker-library/postgres/blob/90f8530900c29714bae8f6045c6749d5fbe527c0/15/alpine/Dockerfile)
 -	[`14.3`, `14`, `latest`, `14.3-bullseye`, `14-bullseye`, `bullseye`](https://github.com/docker-library/postgres/blob/4e56664f1797ba4cc0f5917b6d794792a5571b45/14/bullseye/Dockerfile)
 -	[`14.3-alpine`, `14-alpine`, `alpine`, `14.3-alpine3.15`, `14-alpine3.15`, `alpine3.15`](https://github.com/docker-library/postgres/blob/4e56664f1797ba4cc0f5917b6d794792a5571b45/14/alpine/Dockerfile)
 -	[`13.7`, `13`, `13.7-bullseye`, `13-bullseye`](https://github.com/docker-library/postgres/blob/f060d1236051da2205da24f7caa6ff5301c6be9a/13/bullseye/Dockerfile)
