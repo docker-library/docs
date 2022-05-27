@@ -28,20 +28,20 @@ WARNING:
 
 ## Simple Tags
 
--	[`2.8.3-alpine3.15`, `2.8-alpine3.15`, `2-alpine3.15`, `alpine3.15`, `2.8.3-alpine`, `2.8-alpine`, `2-alpine`, `alpine`](https://github.com/nats-io/nats-docker/blob/d48e482e30326889e83c243beafdb78993aea834/2.8.3/alpine3.15/Dockerfile)
--	[`2.8.3-scratch`, `2.8-scratch`, `2-scratch`, `scratch`, `2.8.3-linux`, `2.8-linux`, `2-linux`, `linux`](https://github.com/nats-io/nats-docker/blob/d48e482e30326889e83c243beafdb78993aea834/2.8.3/scratch/Dockerfile)
--	[`2.8.3-windowsservercore-1809`, `2.8-windowsservercore-1809`, `2-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/nats-io/nats-docker/blob/d48e482e30326889e83c243beafdb78993aea834/2.8.3/windowsservercore-1809/Dockerfile)
--	[`2.8.3-nanoserver-1809`, `2.8-nanoserver-1809`, `2-nanoserver-1809`, `nanoserver-1809`](https://github.com/nats-io/nats-docker/blob/d48e482e30326889e83c243beafdb78993aea834/2.8.3/nanoserver-1809/Dockerfile)
+-	[`2.8.4-alpine3.15`, `2.8-alpine3.15`, `2-alpine3.15`, `alpine3.15`, `2.8.4-alpine`, `2.8-alpine`, `2-alpine`, `alpine`](https://github.com/nats-io/nats-docker/blob/cdf461304de5cd1c9a5f545a311911b20500ffc6/2.8.4/alpine3.15/Dockerfile)
+-	[`2.8.4-scratch`, `2.8-scratch`, `2-scratch`, `scratch`, `2.8.4-linux`, `2.8-linux`, `2-linux`, `linux`](https://github.com/nats-io/nats-docker/blob/cdf461304de5cd1c9a5f545a311911b20500ffc6/2.8.4/scratch/Dockerfile)
+-	[`2.8.4-windowsservercore-1809`, `2.8-windowsservercore-1809`, `2-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/nats-io/nats-docker/blob/cdf461304de5cd1c9a5f545a311911b20500ffc6/2.8.4/windowsservercore-1809/Dockerfile)
+-	[`2.8.4-nanoserver-1809`, `2.8-nanoserver-1809`, `2-nanoserver-1809`, `nanoserver-1809`](https://github.com/nats-io/nats-docker/blob/cdf461304de5cd1c9a5f545a311911b20500ffc6/2.8.4/nanoserver-1809/Dockerfile)
 
 ## Shared Tags
 
--	`2.8.3`, `2.8`, `2`, `latest`:
-	-	[`2.8.3-scratch`](https://github.com/nats-io/nats-docker/blob/d48e482e30326889e83c243beafdb78993aea834/2.8.3/scratch/Dockerfile)
-	-	[`2.8.3-nanoserver-1809`](https://github.com/nats-io/nats-docker/blob/d48e482e30326889e83c243beafdb78993aea834/2.8.3/nanoserver-1809/Dockerfile)
--	`2.8.3-windowsservercore`, `2.8-windowsservercore`, `2-windowsservercore`, `windowsservercore`:
-	-	[`2.8.3-windowsservercore-1809`](https://github.com/nats-io/nats-docker/blob/d48e482e30326889e83c243beafdb78993aea834/2.8.3/windowsservercore-1809/Dockerfile)
--	`2.8.3-nanoserver`, `2.8-nanoserver`, `2-nanoserver`, `nanoserver`:
-	-	[`2.8.3-nanoserver-1809`](https://github.com/nats-io/nats-docker/blob/d48e482e30326889e83c243beafdb78993aea834/2.8.3/nanoserver-1809/Dockerfile)
+-	`2.8.4`, `2.8`, `2`, `latest`:
+	-	[`2.8.4-scratch`](https://github.com/nats-io/nats-docker/blob/cdf461304de5cd1c9a5f545a311911b20500ffc6/2.8.4/scratch/Dockerfile)
+	-	[`2.8.4-nanoserver-1809`](https://github.com/nats-io/nats-docker/blob/cdf461304de5cd1c9a5f545a311911b20500ffc6/2.8.4/nanoserver-1809/Dockerfile)
+-	`2.8.4-windowsservercore`, `2.8-windowsservercore`, `2-windowsservercore`, `windowsservercore`:
+	-	[`2.8.4-windowsservercore-1809`](https://github.com/nats-io/nats-docker/blob/cdf461304de5cd1c9a5f545a311911b20500ffc6/2.8.4/windowsservercore-1809/Dockerfile)
+-	`2.8.4-nanoserver`, `2.8-nanoserver`, `2-nanoserver`, `nanoserver`:
+	-	[`2.8.4-nanoserver-1809`](https://github.com/nats-io/nats-docker/blob/cdf461304de5cd1c9a5f545a311911b20500ffc6/2.8.4/nanoserver-1809/Dockerfile)
 
 # Quick reference (cont.)
 

@@ -44,8 +44,10 @@ WARNING:
 -	[`galactic-ros1-bridge`, `galactic-ros1-bridge-focal`](https://github.com/osrf/docker_images/blob/8c7ec280db9c754aa163e84bf70f4cbb902e69fb/ros/galactic/ubuntu/focal/ros1-bridge/Dockerfile)
 -	[`humble-ros-core`, `humble-ros-core-jammy`](https://github.com/osrf/docker_images/blob/20e3ba685bb353a3c00be9ba01c1b7a6823c9472/ros/humble/ubuntu/jammy/ros-core/Dockerfile)
 -	[`humble-ros-base`, `humble-ros-base-jammy`, `humble`, `latest`](https://github.com/osrf/docker_images/blob/20e3ba685bb353a3c00be9ba01c1b7a6823c9472/ros/humble/ubuntu/jammy/ros-base/Dockerfile)
--	[`rolling-ros-core`, `rolling-ros-core-jammy`](https://github.com/osrf/docker_images/blob/86029c8abad4b4e52d95a33af079bdb874fa0b0c/ros/rolling/ubuntu/jammy/ros-core/Dockerfile)
--	[`rolling-ros-base`, `rolling-ros-base-jammy`, `rolling`](https://github.com/osrf/docker_images/blob/86029c8abad4b4e52d95a33af079bdb874fa0b0c/ros/rolling/ubuntu/jammy/ros-base/Dockerfile)
+-	[`humble-perception`, `humble-perception-jammy`](https://github.com/osrf/docker_images/blob/20d40c96b426b8956dec203e236abff2ec29b188/ros/humble/ubuntu/jammy/perception/Dockerfile)
+-	[`rolling-ros-core`, `rolling-ros-core-jammy`](https://github.com/osrf/docker_images/blob/20d40c96b426b8956dec203e236abff2ec29b188/ros/rolling/ubuntu/jammy/ros-core/Dockerfile)
+-	[`rolling-ros-base`, `rolling-ros-base-jammy`, `rolling`](https://github.com/osrf/docker_images/blob/20d40c96b426b8956dec203e236abff2ec29b188/ros/rolling/ubuntu/jammy/ros-base/Dockerfile)
+-	[`rolling-perception`, `rolling-perception-jammy`](https://github.com/osrf/docker_images/blob/20d40c96b426b8956dec203e236abff2ec29b188/ros/rolling/ubuntu/jammy/perception/Dockerfile)
 
 # Quick reference (cont.)
 
