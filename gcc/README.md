@@ -27,7 +27,7 @@ WARNING:
 -	[`12.1.0`, `12.1`, `12`, `latest`, `12.1.0-bullseye`, `12.1-bullseye`, `12-bullseye`, `bullseye`](https://github.com/docker-library/gcc/blob/a5a94a2d5c812fe57f6f28713b0f899b879145d3/12/Dockerfile)
 -	[`11.3.0`, `11.3`, `11`, `11.3.0-bullseye`, `11.3-bullseye`, `11-bullseye`](https://github.com/docker-library/gcc/blob/a5a94a2d5c812fe57f6f28713b0f899b879145d3/11/Dockerfile)
 -	[`10.3.0`, `10.3`, `10`, `10.3.0-buster`, `10.3-buster`, `10-buster`](https://github.com/docker-library/gcc/blob/a5a94a2d5c812fe57f6f28713b0f899b879145d3/10/Dockerfile)
--	[`9.4.0`, `9.4`, `9`, `9.4.0-buster`, `9.4-buster`, `9-buster`](https://github.com/docker-library/gcc/blob/a5a94a2d5c812fe57f6f28713b0f899b879145d3/9/Dockerfile)
+-	[`9.5.0`, `9.5`, `9`, `9.5.0-buster`, `9.5-buster`, `9-buster`](https://github.com/docker-library/gcc/blob/6c40a41a202b2996b26b52e94762fe9aa8830766/9/Dockerfile)
 
 # Quick reference (cont.)
 
