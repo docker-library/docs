@@ -28,7 +28,7 @@ WARNING:
 
 ## Simple Tags
 
--	[`20.10.16`, `20.10`, `20`, `latest`, `20.10.16-alpine3.16`](https://github.com/docker-library/docker/blob/ca3e8c6b38955ed5daa0e6716414a4ef3b353d9c/20.10/Dockerfile)
+-	[`20.10.16`, `20.10`, `20`, `latest`, `20.10.16-alpine3.16`](https://github.com/docker-library/docker/blob/6aaba9b67b77a7af8b0fbe7d3f80ebda42a65a8e/20.10/Dockerfile)
 -	[`20.10.16-dind`, `20.10-dind`, `20-dind`, `dind`, `20.10.16-dind-alpine3.16`](https://github.com/docker-library/docker/blob/0efba9e3cd4537de89ba54de2ad8acc5e3b1759f/20.10/dind/Dockerfile)
 -	[`20.10.16-dind-rootless`, `20.10-dind-rootless`, `20-dind-rootless`, `dind-rootless`](https://github.com/docker-library/docker/blob/ca257b920303ae46cff2a8399471318ad48d67b4/20.10/dind-rootless/Dockerfile)
 -	[`20.10.16-git`, `20.10-git`, `20-git`, `git`](https://github.com/docker-library/docker/blob/387e351394bfad74bceebf8303c6c8e39c3d4ed4/20.10/git/Dockerfile)
