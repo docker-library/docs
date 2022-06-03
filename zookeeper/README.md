@@ -26,7 +26,7 @@ WARNING:
 
 -	[`3.5.9`, `3.5`](https://github.com/31z4/zookeeper-docker/blob/928f1fa35d3414f31bb542b55891c8662b14b84a/3.5.9/Dockerfile)
 -	[`3.6.3`, `3.6`](https://github.com/31z4/zookeeper-docker/blob/928f1fa35d3414f31bb542b55891c8662b14b84a/3.6.3/Dockerfile)
--	[`3.7.0`, `3.7`](https://github.com/31z4/zookeeper-docker/blob/928f1fa35d3414f31bb542b55891c8662b14b84a/3.7.0/Dockerfile)
+-	[`3.7.1`, `3.7`](https://github.com/31z4/zookeeper-docker/blob/060f64d28d1780373f90ac152bd2538abcf1924c/3.7.1/Dockerfile)
 -	[`3.8.0`, `3.8`, `latest`](https://github.com/31z4/zookeeper-docker/blob/d91ba6412cbb31fdcafab477bbe0198930931124/3.8.0/Dockerfile)
 
 # Quick reference (cont.)
