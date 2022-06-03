@@ -10,13 +10,13 @@ SATOSA is a configurable proxy for translating between different authentication 
 
 The basic pattern for starting a `%%REPO%%` instance is:
 
-```
+```sh
 $ docker run --name some-%%REPO%% -d %%IMAGE%%
 ```
 
 To access the instance from the host without the container's IP, use port mappings:
 
-```
+```sh
 $ docker run --name some-%%REPO%% -p 80:8080 -d %%IMAGE%%
 ```
 
@@ -37,7 +37,7 @@ This configuration must persist among instances, particularly the SAML2 entity I
 The `%%REPO%%` image's entrypoint script runs [Gunicorn](https://gunicorn.org/) by default if the first argument looks like a command-line flag.
 For example, the following will use a bind mount to provide an X.509 certificate and corresponding private key to the instance, and it will run Gunicorn with HTTPS enabled:
 
-```
+```sh
 $ docker run --name some-%%REPO%% -p 443:8443 \
     -v /etc/letsencrypt/live/some-%%REPO%%/fullchain.pem:/etc/https.crt \
     -v /etc/letsencrypt/live/some-%%REPO%%/privkey.pem:/etc/https.key \
@@ -48,7 +48,7 @@ $ docker run --name some-%%REPO%% -p 443:8443 \
 If the first argument looks like a command instead of a flag, the entrypoint script will run that instead of Gunicorn.
 For example, the following will start an interactive, unprivileged shell inside the container:
 
-```
+```sh
 $ docker run -it --name some-%%REPO%% %%IMAGE%% bash
 ```
 
