@@ -26,20 +26,20 @@ Here is how to get a single node Couchbase Server cluster running on Docker cont
 
 **Step - 2 :** Next, visit `http://localhost:8091` on the host machine to see the Web Console to start Couchbase Server setup.
 
-![Setup splash screen](https://d774lla4im6mk.cloudfront.net/6.6.2/setup-initial.jpg)
+![Setup splash screen](https://d774lla4im6mk.cloudfront.net/setup-initial.jpg)
 
 Walk through the Setup wizard and accept the default values.
 
 -	Note: You may need to lower the RAM allocated to various services to fit within the bounds of the resource of the containers.
 -	Enable the beer-sample bucket to load some sample data.
 
-![Creating a cluster](https://d774lla4im6mk.cloudfront.net/6.6.2/cluster-creation.jpg)
+![Creating a cluster](https://d774lla4im6mk.cloudfront.net/cluster-creation.jpg)
 
-![Completing the wizard](https://d774lla4im6mk.cloudfront.net/6.6.2/finish-wizard.jpg)
+![Completing the wizard](https://d774lla4im6mk.cloudfront.net/finish-wizard.jpg)
 
-![UI home](https://d774lla4im6mk.cloudfront.net/6.6.2/ui-home.jpg)
+![UI home](https://d774lla4im6mk.cloudfront.net/ui-home.jpg)
 
-![Loading sample data](https://d774lla4im6mk.cloudfront.net/6.6.2/load-sample-data.jpg)
+![Loading sample data](https://d774lla4im6mk.cloudfront.net/load-sample-data.jpg)
 
 **Note :** For detailed information on configuring the Server, see [Deployment Guidelines](https://docs.couchbase.com/server/current/install/install-production-deployment.html).
 
