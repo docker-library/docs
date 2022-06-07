@@ -22,7 +22,9 @@ Here is how to get a single node Couchbase Server cluster running on Docker cont
 
 **Step - 1 :** Run Couchbase Server docker container
 
-`docker run -d --name db -p 8091-8096:8091-8096 -p 9102:9102 -p 11210:11210 couchbase`
+`docker run -d --name db -p 8091:8091 couchbase`
+
+Note: Couchbase Server can require a variety of ports to be exposed depending on the usage scenario. Please see https://docs.couchbase.com/server/current/install/install-ports.html for further information.
 
 **Step - 2 :** Next, visit `http://localhost:8091` on the host machine to see the Web Console to start Couchbase Server setup.
 
@@ -97,11 +99,11 @@ These ulimit settings are necessary when running under heavy load. If you are ju
 
 To set the ulimits in your container, you will need to run Couchbase Docker containers with the following additional `--ulimit` flags:
 
-`docker run -d --ulimit nofile=40960:40960 --ulimit core=100000000:100000000 --ulimit memlock=100000000:100000000 --name db -p 8091-8096:8091-8096 -p 9102:9102 -p 11210:11210 couchbase`
+`docker run -d --ulimit nofile=40960:40960 --ulimit core=100000000:100000000 --ulimit memlock=100000000:100000000 --name db -p 8091:8091 couchbase`
 
 Since "unlimited" is not supported as a value, it sets the core and memlock values to 100 GB. If your system has more than 100 GB RAM, you will want to increase this value to match the available RAM on the system.
 
-Note:The `--ulimit` flags only work on Docker 1.6 or later.
+Note: The `--ulimit` flags only work on Docker 1.6 or later.
 
 **Network Configuration and Ports :** Couchbase Server communicates on many different ports (see the [Couchbase Server documentation](https://docs.couchbase.com/server/current/install/install-ports.html#ports-listed-by-communication-path)). Also, it is generally not supported that the cluster nodes be placed behind any NAT. For these reasons, Docker's default networking configuration is not ideally suited to Couchbase Server deployments. For production deployments it is recommended to use `--net=host` setting to avoid performance and reliability issues.
 
