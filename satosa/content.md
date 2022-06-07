@@ -54,11 +54,11 @@ The environment variables' values can be read from [Docker secrets](https://docs
 
 ### `BASE_URL`
 
-SATOSA must be hosted at the root of the website. This environment variable optionally specifies the website's base URL, which defaults to `http://example.com`. If set, the base URL _must_ be a method plus a hostname without any trailing slash or path components, e.g., `https://idproxy.example.com`, not `https://idproxy.example.com/` nor `https://idproxy.example.com/satosa`.
+SATOSA must be hosted at the root of the website. This environment variable optionally specifies the website's base URL, which defaults to `http://example.com`. If set, the base URL *must* be a method plus a hostname without any trailing slash or path components, e.g., `https://idproxy.example.com`, not `https://idproxy.example.com/` nor `https://idproxy.example.com/satosa`.
 
 ### `STATE_ENCRYPTION_KEY`
 
-SATOSA uses encrypted cookies to track the progress of an authentication flow. This environment variable optionally sets the state cookies' encryption key. If set, the state encryption key _must_ be an alphanumeric value, e.g., `12345SameAsMyLuggage`. If not specified, a new random 32-character key will be generated.
+SATOSA uses encrypted cookies to track the progress of an authentication flow. This environment variable optionally sets the state cookies' encryption key. If set, the state encryption key *must* be an alphanumeric value, e.g., `12345SameAsMyLuggage`. If not specified, a new random 32-character key will be generated.
 
 ### `SAML2_BACKEND_DISCO_SRV`
 
