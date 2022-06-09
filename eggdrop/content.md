@@ -26,13 +26,13 @@ This variable sets the IRC server Eggdrop will connect to. Examples are:
 
 ```console
   -e SERVER=just.a.normal.server
-  -e SERVER=you.need.to.change.this:6667
-  -e SERVER=another.example.com:7000:password
-  -e SERVER=[2001:db8:618:5c0:263::]:6669:password
-  -e SERVER=ssl.example.net:+6697
+  -e SERVER="you.need.to.change.this 6667"
+  -e SERVER="another.example.com 7000 password"
+  -e SERVER="[2001:db8:618:5c0:263::] 6669 password"
+  -e SERVER="ssl.example.net +6697"
 ```
 
-Only one server can be specified via an environmental variable. The + denotes an SSL-enabled port. After the first run, it is advised to edit the eggdrop config directly to add additional servers (see Long-term Persistence below).
+Note that specifiying a port or password will require enclosing the entire argument within quotes. Only one server can be specified via an environmental variable. The + denotes an SSL-enabled port. After the first run, it is advised to edit the eggdrop config directly to add additional servers (see Long-term Persistence below).
 
 ### `NICK`
 
@@ -90,11 +90,7 @@ If you want to expose network connections for your bot, you'll also want to use 
 
 to your docker run command line.
 
-## Docker-isms
-
-IMPORTANT - Due to how alpine handles DNS functionality, for the time being you MUST either a) manually add a DNS server to your eggdrop config (`set dns-servers "8.8.8.8 8.8.4.4"` would do the trick) or b) disable the DNS module (commenting out `loadmodule dns` in the config) in order for DNS resolution to work. We are currently testing new code to mitigate this issue.
-
-You'll know you're affected by this quirk if you see errors such as `nslookup: can't resolve '(null)': Name does not resolve` or the generic `Failed connect to irc.libera.chat (DNS lookup failed)`.
+## Common Errors
 
 # docker-compose.yml
 
