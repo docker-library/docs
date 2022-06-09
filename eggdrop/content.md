@@ -27,7 +27,7 @@ This variable sets the IRC server Eggdrop will connect to. Examples are:
 ```console
   -e SERVER=just.a.normal.server
   -e SERVER="you.need.to.change.this 6667"
-  -e SERVER="another.example.com:7000 password"
+  -e SERVER="another.example.com 7000 password"
   -e SERVER="[2001:db8:618:5c0:263::] 6669 password"
   -e SERVER="ssl.example.net +6697"
 ```
