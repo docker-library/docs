@@ -32,9 +32,7 @@ This variable sets the IRC server Eggdrop will connect to. Examples are:
   -e SERVER="ssl.example.net +6697"
 ```
 
-Note that specifiying a port or password will require enclosing the 
-
-Only one server can be specified via an environmental variable. The + denotes an SSL-enabled port. After the first run, it is advised to edit the eggdrop config directly to add additional servers (see Long-term Persistence below).
+Note that specifiying a port or password will require enclosing the entire argument within quotes. Only one server can be specified via an environmental variable. The + denotes an SSL-enabled port. After the first run, it is advised to edit the eggdrop config directly to add additional servers (see Long-term Persistence below).
 
 ### `NICK`
 
