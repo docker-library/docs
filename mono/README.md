@@ -24,10 +24,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.12.0.107`, `latest`, `6.12.0`, `6.12`, `6`](https://github.com/mono/docker/blob/490ebd19e006c00165baca7fbef00c9e98a96d34/6.12.0.107/Dockerfile)
--	[`6.12.0.107-slim`, `slim`, `6.12.0-slim`, `6.12-slim`, `6-slim`](https://github.com/mono/docker/blob/490ebd19e006c00165baca7fbef00c9e98a96d34/6.12.0.107/slim/Dockerfile)
--	[`6.10.0.104`, `6.10.0`, `6.10`](https://github.com/mono/docker/blob/a449b2a57e1cfadd098c2bcad13f89c4eab83e54/6.10.0.104/Dockerfile)
--	[`6.10.0.104-slim`, `6.10.0-slim`, `6.10-slim`](https://github.com/mono/docker/blob/a449b2a57e1cfadd098c2bcad13f89c4eab83e54/6.10.0.104/slim/Dockerfile)
+-	[`6.12.0.122`, `latest`, `6.12.0`, `6.12`, `6`](https://github.com/mono/docker/blob/0403aaf506b8f6859332a5035f660a7a228d3a97/6.12.0.122/Dockerfile)
+-	[`6.12.0.122-slim`, `slim`, `6.12.0-slim`, `6.12-slim`, `6-slim`](https://github.com/mono/docker/blob/0403aaf506b8f6859332a5035f660a7a228d3a97/6.12.0.122/slim/Dockerfile)
+-	[`6.10.0.104`, `6.10.0`, `6.10`](https://github.com/mono/docker/blob/0403aaf506b8f6859332a5035f660a7a228d3a97/6.10.0.104/Dockerfile)
+-	[`6.10.0.104-slim`, `6.10.0-slim`, `6.10-slim`](https://github.com/mono/docker/blob/0403aaf506b8f6859332a5035f660a7a228d3a97/6.10.0.104/slim/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -59,29 +59,21 @@ Sponsored by Xamarin, Mono is an open source implementation of Microsoft's .NET 
 
 # How to use this image
 
-This image will run stand-alone Mono console apps.
-
-## Create a `Dockerfile` in your Mono app project
-
-This example Dockerfile will run an executable called `TestingConsoleApp.exe`.
+To run a pre-built .exe file with the Mono image, use the following commands:
 
 ```dockerfile
-FROM mono:3.10-onbuild
-CMD [ "mono",  "./TestingConsoleApp.exe" ]
+FROM mono:latest
+RUN mkdir /opt/app
+COPY HelloWorld.exe /opt/app
+CMD ["mono", "/opt/app/HelloWorld.exe"]
 ```
 
-Place this file in the root of your app, next to the `.sln` solution file. Modify the exectuable name to match what you want to run.
-
-This image includes `ONBUILD` triggers that adds your app source code to `/usr/src/app/source`, restores NuGet packages and compiles the app, placing the output in `/usr/src/app/build`.
-
-With the Dockerfile in place, you can build and run a Docker image with your app:
+You can build and run the Docker Image as shown in the following example:
 
 ```console
-$ docker build -t my-app .
-$ docker run my-app
+docker build -t monoapp .
+docker run -it --rm monoapp
 ```
-
-You should see any output from your app now.
 
 # Credits
 

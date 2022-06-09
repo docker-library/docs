@@ -24,10 +24,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.0.20210721.2`, `2`, `latest`](https://github.com/amazonlinux/container-images/blob/6690b112365657326d5ff6f3b9e785687804df8f/Dockerfile)
--	[`2.0.20210721.2-with-sources`, `2-with-sources`, `with-sources`](https://github.com/amazonlinux/container-images/blob/1cb9169ce0193baf64a7dc33dc8846734952597a/Dockerfile)
--	[`2018.03.0.20210721.0`, `2018.03`, `1`](https://github.com/amazonlinux/container-images/blob/5489a282cbdf7501d1137e4373d77a79636a45e4/Dockerfile)
--	[`2018.03.0.20210721.0-with-sources`, `2018.03-with-sources`, `1-with-sources`](https://github.com/amazonlinux/container-images/blob/65bc90c3331e6908d445f89c0e140997b251a758/Dockerfile)
+-	[`2.0.20220426.0`, `2`, `latest`](https://github.com/amazonlinux/container-images/blob/7f5bc7447a2d475aea0383912f6abce963e04223/Dockerfile)
+-	[`2.0.20220426.0-with-sources`, `2-with-sources`, `with-sources`](https://github.com/amazonlinux/container-images/blob/9e7db79f3c6d8599246d8432508337b3e9acf555/Dockerfile)
+-	[`2018.03.0.20220503.0`, `2018.03`, `1`](https://github.com/amazonlinux/container-images/blob/61f736f29a376b3e5449cd3247d8f2e0b0f2180a/Dockerfile)
+-	[`2018.03.0.20220503.0-with-sources`, `2018.03-with-sources`, `1-with-sources`](https://github.com/amazonlinux/container-images/blob/1076f30acaf2d9759d2c4466c613457af88cb61f/Dockerfile)
+-	[`2022.0.20220504.1`, `2022`, `devel`](https://github.com/amazonlinux/container-images/blob/c82726861f7bb251c75a9af7011010e57d08d82f/Dockerfile)
+-	[`2022.0.20220504.1-with-sources`, `2022-with-sources`, `devel-with-sources`](https://github.com/amazonlinux/container-images/blob/f0672b0c0d6e33d420f4013236a584b7ba9e8e6e/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -55,6 +57,8 @@ Amazon Linux is provided by Amazon Web Services (AWS). It is designed to provide
 The Amazon Linux container image contains a minimal set of packages. To install additional packages, [use `yum`](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/managing-software.html).
 
 AWS provides two versions of Amazon Linux: [Amazon Linux 2](https://aws.amazon.com/amazon-linux-2/) and [Amazon Linux AMI](https://aws.amazon.com/amazon-linux-ami/).
+
+**Please note, that Amazon Linux 2022 is currently in the Preview mode and is not recommended for production workloads. Review the Amazon Linux 2022 [documentation](https://docs.aws.amazon.com/linux/al2022/ug/what-is-amazon-linux.html) to learn more.**
 
 For information on security updates for Amazon Linux, please refer to [Amazon Linux 2 Security Advisories](https://alas.aws.amazon.com/alas2.html) and [Amazon Linux AMI Security Advisories](https://alas.aws.amazon.com/). Note that Docker Hub's vulnerability scanning for Amazon Linux is currently based on RPM versions, which does not reflect the state of backported patches for vulnerabilities.
 

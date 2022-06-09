@@ -17,26 +17,28 @@ WARNING:
 # Quick reference
 
 -	**Maintained by**:  
-	[the Traefik Project](https://github.com/containous/traefik-library-image)
+	[the Traefik Project](https://github.com/traefik/traefik-library-image)
 
 -	**Where to get help**:  
 	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`v2.5.2-windowsservercore-1809`, `2.5.2-windowsservercore-1809`, `v2.5-windowsservercore-1809`, `2.5-windowsservercore-1809`, `brie-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/traefik/traefik-library-image/blob/26f817dd97af4070e842cf79d675f15ef29bb2e3/windows/1809/Dockerfile)
--	[`v2.5.2`, `2.5.2`, `v2.5`, `2.5`, `brie`, `latest`](https://github.com/traefik/traefik-library-image/blob/26f817dd97af4070e842cf79d675f15ef29bb2e3/alpine/Dockerfile)
--	[`v1.7.30-windowsservercore-1809`, `1.7.30-windowsservercore-1809`, `v1.7-windowsservercore-1809`, `1.7-windowsservercore-1809`, `maroilles-windowsservercore-1809`](https://github.com/traefik/traefik-library-image/blob/7d554807d47ad41f0cc622b107504cb338fed7c5/windows/1809/Dockerfile)
--	[`v1.7.30-alpine`, `1.7.30-alpine`, `v1.7-alpine`, `1.7-alpine`, `maroilles-alpine`](https://github.com/traefik/traefik-library-image/blob/7d554807d47ad41f0cc622b107504cb338fed7c5/alpine/Dockerfile)
--	[`v1.7.30`, `1.7.30`, `v1.7`, `1.7`, `maroilles`](https://github.com/traefik/traefik-library-image/blob/7d554807d47ad41f0cc622b107504cb338fed7c5/scratch/Dockerfile)
+-	[`v2.7.0-windowsservercore-1809`, `2.7.0-windowsservercore-1809`, `v2.7-windowsservercore-1809`, `2.7-windowsservercore-1809`, `epoisses-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/traefik/traefik-library-image/blob/980d4fad23bdcb2c57d71b8194846caf25005958/windows/1809/Dockerfile)
+-	[`v2.7.0`, `2.7.0`, `v2.7`, `2.7`, `epoisses`, `latest`](https://github.com/traefik/traefik-library-image/blob/980d4fad23bdcb2c57d71b8194846caf25005958/alpine/Dockerfile)
+-	[`v2.6.7-windowsservercore-1809`, `2.6.7-windowsservercore-1809`, `v2.6-windowsservercore-1809`, `2.6-windowsservercore-1809`, `rocamadour-windowsservercore-1809`](https://github.com/traefik/traefik-library-image/blob/57821065c86f99c3d4519b41e2a10f3ed9a050e6/windows/1809/Dockerfile)
+-	[`v2.6.7`, `2.6.7`, `v2.6`, `2.6`, `rocamadour`](https://github.com/traefik/traefik-library-image/blob/57821065c86f99c3d4519b41e2a10f3ed9a050e6/alpine/Dockerfile)
+-	[`v1.7.34-windowsservercore-1809`, `1.7.34-windowsservercore-1809`, `v1.7-windowsservercore-1809`, `1.7-windowsservercore-1809`, `maroilles-windowsservercore-1809`](https://github.com/traefik/traefik-library-image/blob/4434758cf14bbd1ec9511b3f2a37b0a6ce846db6/windows/1809/Dockerfile)
+-	[`v1.7.34-alpine`, `1.7.34-alpine`, `v1.7-alpine`, `1.7-alpine`, `maroilles-alpine`](https://github.com/traefik/traefik-library-image/blob/4434758cf14bbd1ec9511b3f2a37b0a6ce846db6/alpine/Dockerfile)
+-	[`v1.7.34`, `1.7.34`, `v1.7`, `1.7`, `maroilles`](https://github.com/traefik/traefik-library-image/blob/4434758cf14bbd1ec9511b3f2a37b0a6ce846db6/scratch/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/containous/traefik-library-image/issues](https://github.com/containous/traefik-library-image/issues)
+	[https://github.com/traefik/traefik-library-image/issues](https://github.com/traefik/traefik-library-image/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/traefik/), [`arm32v6`](https://hub.docker.com/r/arm32v6/traefik/), [`arm64v8`](https://hub.docker.com/r/arm64v8/traefik/), [`windows-amd64`](https://hub.docker.com/r/winamd64/traefik/)
+	[`amd64`](https://hub.docker.com/r/amd64/traefik/), [`arm32v6`](https://hub.docker.com/r/arm32v6/traefik/), [`arm64v8`](https://hub.docker.com/r/arm64v8/traefik/), [`s390x`](https://hub.docker.com/r/s390x/traefik/), [`windows-amd64`](https://hub.docker.com/r/winamd64/traefik/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/traefik/` directory](https://github.com/docker-library/repo-info/blob/master/repos/traefik) ([history](https://github.com/docker-library/repo-info/commits/master/repos/traefik))  
@@ -80,13 +82,13 @@ Start Traefik:
 docker run -d -p 8080:8080 -p 80:80 \
 -v $PWD/traefik.yml:/etc/traefik/traefik.yml \
 -v /var/run/docker.sock:/var/run/docker.sock \
-traefik:v2.0
+traefik:v2.5
 ```
 
 Start a backend server, named `test`:
 
 ```bash
-docker run -d --name test containous/whoami
+docker run -d --name test traefik/whoami
 ```
 
 And finally, you can access to your `whoami` server throught Traefik, on the domain name `test.docker.localhost`:
@@ -112,11 +114,11 @@ X-Real-Ip: 172.17.0.1
 
 The web UI [http://localhost:8080](http://localhost:8080) will give you an overview of the routers, services, and middlewares.
 
-![Web UI](https://raw.githubusercontent.com/containous/traefik/v2.0/docs/content/assets/img/webui-dashboard.png)
+![Web UI](https://raw.githubusercontent.com/traefik/traefik/v2.5/docs/content/assets/img/webui-dashboard.png)
 
 # Traefik v1 - Example usage
 
-Grab a [sample configuration file](https://raw.githubusercontent.com/containous/traefik/v1.7/traefik.sample.toml) and rename it to `traefik.toml`. Enable `docker` provider and web UI:
+Grab a [sample configuration file](https://raw.githubusercontent.com/traefik/traefik/v1.7/traefik.sample.toml) and rename it to `traefik.toml`. Enable `docker` provider and web UI:
 
 ```toml
 ## traefik.toml
@@ -141,7 +143,7 @@ traefik:v1.7
 Start a backend server, named `test`:
 
 ```bash
-docker run -d --name test containous/whoami
+docker run -d --name test traefik/whoami
 ```
 
 And finally, you can access to your `whoami` server throught Traefik, on the domain name `{containerName}.{configuredDomain}` (`test.docker.localhost`):
@@ -167,16 +169,16 @@ X-Forwarded-Server: f2e05c433120
 
 The web UI [http://localhost:8080](http://localhost:8080) will give you an overview of the frontends/backends and also a health dashboard.
 
-![Web UI Providers](https://raw.githubusercontent.com/containous/traefik/v1.7/docs/img/web.frontend.png)
+![Web UI Providers](https://raw.githubusercontent.com/traefik/traefik/v1.7/docs/img/web.frontend.png)
 
 # Documentation
 
 You can find the complete documentation:
 
--	for [v1.7](https://docs.traefik.io/v1.7)
--	for [v2.0](https://docs.traefik.io/v2.0)
+-	for [v2.x](https://doc.traefik.io/traefik/)
+-	for [v1.7](https://doc.traefik.io/traefik/v1.7)
 
-A community support is available at [https://community.containo.us](https://community.containo.us)
+A community support is available at [https://community.traefik.io](https://community.traefik.io)
 
 A collection of contributions around Traefik can be found at [https://awesome.traefik.io](https://awesome.traefik.io).
 
@@ -199,7 +201,7 @@ For information about how to get Docker running on Windows, please see the relev
 
 # License
 
-View [license information](https://github.com/containous/traefik/blob/master/LICENSE.md) for the software contained in this image.
+View [license information](https://github.com/traefik/traefik/blob/master/LICENSE.md) for the software contained in this image.
 
 As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 

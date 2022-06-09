@@ -24,8 +24,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `8`, `8.4`](https://github.com/AlmaLinux/docker-images/blob/875d1e6ce39cf5a5495148fce53471f9be49a4c3/Dockerfile)
--	[`minimal`, `8-minimal`, `8.4-minimal`](https://github.com/AlmaLinux/docker-images/blob/bc74e29d58210f825911fe73cd7ec0f724d1f78f/Dockerfile)
+-	[`8.5`, `8.5-20220510`](https://github.com/AlmaLinux/docker-images/blob/cc33e53ccd8b33288eb3fbce9fd3bc308272c162/Dockerfile-x86_64-default)
+-	[`8.5-minimal`, `8.5-minimal-20220510`](https://github.com/AlmaLinux/docker-images/blob/cc33e53ccd8b33288eb3fbce9fd3bc308272c162/Dockerfile-x86_64-minimal)
+-	[`latest`, `8`, `8.6`, `8.6-20220512`](https://github.com/AlmaLinux/docker-images/blob/072c414bfc77229e49ff1677a875a0ed5caf990b/Dockerfile-x86_64-default)
+-	[`minimal`, `8-minimal`, `8.6-minimal`, `8.6-minimal-20220512`](https://github.com/AlmaLinux/docker-images/blob/072c414bfc77229e49ff1677a875a0ed5caf990b/Dockerfile-x86_64-minimal)
+-	[`9`, `9.0`, `9.0-20220527`](https://github.com/AlmaLinux/docker-images/blob/4f13f811fee725c1accbfae8c837e09716c1432e/Dockerfile-x86_64-default)
+-	[`9-minimal`, `9.0-minimal`, `9.0-minimal-20220527`](https://github.com/AlmaLinux/docker-images/blob/4f13f811fee725c1accbfae8c837e09716c1432e/Dockerfile-x86_64-minimal)
 
 # Quick reference (cont.)
 
@@ -33,7 +37,7 @@ WARNING:
 	[https://bugs.almalinux.org](https://bugs.almalinux.org) or [GitHub](https://github.com/AlmaLinux/docker-images/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/almalinux/), [`arm64v8`](https://hub.docker.com/r/arm64v8/almalinux/)
+	[`amd64`](https://hub.docker.com/r/amd64/almalinux/), [`arm64v8`](https://hub.docker.com/r/arm64v8/almalinux/), [`ppc64le`](https://hub.docker.com/r/ppc64le/almalinux/), [`s390x`](https://hub.docker.com/r/s390x/almalinux/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/almalinux/` directory](https://github.com/docker-library/repo-info/blob/master/repos/almalinux) ([history](https://github.com/docker-library/repo-info/commits/master/repos/almalinux))  

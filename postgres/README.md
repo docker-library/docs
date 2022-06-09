@@ -24,21 +24,20 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`14beta3`, `14beta3-buster`](https://github.com/docker-library/postgres/blob/b4b726dbf1885e8e1543526ad9d250fdb2689cbb/14/buster/Dockerfile)
--	[`14beta3-alpine`, `14beta3-alpine3.14`](https://github.com/docker-library/postgres/blob/b4b726dbf1885e8e1543526ad9d250fdb2689cbb/14/alpine/Dockerfile)
--	[`13.4`, `13`, `latest`, `13.4-buster`, `13-buster`, `buster`](https://github.com/docker-library/postgres/blob/7f5f6da5a1976bfd2c6d989e20cef080d0d9c68f/13/buster/Dockerfile)
--	[`13.4-alpine`, `13-alpine`, `alpine`, `13.4-alpine3.14`, `13-alpine3.14`, `alpine3.14`](https://github.com/docker-library/postgres/blob/7f5f6da5a1976bfd2c6d989e20cef080d0d9c68f/13/alpine/Dockerfile)
--	[`12.8`, `12`, `12.8-buster`, `12-buster`](https://github.com/docker-library/postgres/blob/cf175692c137b00938f480b3ae1babae0999e05e/12/buster/Dockerfile)
--	[`12.8-alpine`, `12-alpine`, `12.8-alpine3.14`, `12-alpine3.14`](https://github.com/docker-library/postgres/blob/cf175692c137b00938f480b3ae1babae0999e05e/12/alpine/Dockerfile)
--	[`11.13-buster`, `11-buster`](https://github.com/docker-library/postgres/blob/415040d370e989dd3e6010bcdee5ba2440273598/11/buster/Dockerfile)
--	[`11.13`, `11`, `11.13-stretch`, `11-stretch`](https://github.com/docker-library/postgres/blob/415040d370e989dd3e6010bcdee5ba2440273598/11/stretch/Dockerfile)
--	[`11.13-alpine`, `11-alpine`, `11.13-alpine3.14`, `11-alpine3.14`](https://github.com/docker-library/postgres/blob/415040d370e989dd3e6010bcdee5ba2440273598/11/alpine/Dockerfile)
--	[`10.18-buster`, `10-buster`](https://github.com/docker-library/postgres/blob/a7a749d0ce8b8cd54c5545f6d9489d755af00659/10/buster/Dockerfile)
--	[`10.18`, `10`, `10.18-stretch`, `10-stretch`](https://github.com/docker-library/postgres/blob/a7a749d0ce8b8cd54c5545f6d9489d755af00659/10/stretch/Dockerfile)
--	[`10.18-alpine`, `10-alpine`, `10.18-alpine3.14`, `10-alpine3.14`](https://github.com/docker-library/postgres/blob/a7a749d0ce8b8cd54c5545f6d9489d755af00659/10/alpine/Dockerfile)
--	[`9.6.23-buster`, `9.6-buster`, `9-buster`](https://github.com/docker-library/postgres/blob/32d0897216bfa477c70688b960e5a95651df8992/9.6/buster/Dockerfile)
--	[`9.6.23`, `9.6`, `9`, `9.6.23-stretch`, `9.6-stretch`, `9-stretch`](https://github.com/docker-library/postgres/blob/32d0897216bfa477c70688b960e5a95651df8992/9.6/stretch/Dockerfile)
--	[`9.6.23-alpine`, `9.6-alpine`, `9-alpine`, `9.6.23-alpine3.14`, `9.6-alpine3.14`, `9-alpine3.14`](https://github.com/docker-library/postgres/blob/32d0897216bfa477c70688b960e5a95651df8992/9.6/alpine/Dockerfile)
+-	[`15beta1`, `15beta1-bullseye`](https://github.com/docker-library/postgres/blob/90f8530900c29714bae8f6045c6749d5fbe527c0/15/bullseye/Dockerfile)
+-	[`15beta1-alpine`, `15beta1-alpine3.16`](https://github.com/docker-library/postgres/blob/899a216e56e49ca7ab1aaae937f1220caace7ce4/15/alpine/Dockerfile)
+-	[`14.3`, `14`, `latest`, `14.3-bullseye`, `14-bullseye`, `bullseye`](https://github.com/docker-library/postgres/blob/4e56664f1797ba4cc0f5917b6d794792a5571b45/14/bullseye/Dockerfile)
+-	[`14.3-alpine`, `14-alpine`, `alpine`, `14.3-alpine3.16`, `14-alpine3.16`, `alpine3.16`](https://github.com/docker-library/postgres/blob/899a216e56e49ca7ab1aaae937f1220caace7ce4/14/alpine/Dockerfile)
+-	[`13.7`, `13`, `13.7-bullseye`, `13-bullseye`](https://github.com/docker-library/postgres/blob/f060d1236051da2205da24f7caa6ff5301c6be9a/13/bullseye/Dockerfile)
+-	[`13.7-alpine`, `13-alpine`, `13.7-alpine3.16`, `13-alpine3.16`](https://github.com/docker-library/postgres/blob/899a216e56e49ca7ab1aaae937f1220caace7ce4/13/alpine/Dockerfile)
+-	[`12.11`, `12`, `12.11-bullseye`, `12-bullseye`](https://github.com/docker-library/postgres/blob/88ad1cf976b063850bdd7f87d5f9c7a7f1c6e778/12/bullseye/Dockerfile)
+-	[`12.11-alpine`, `12-alpine`, `12.11-alpine3.16`, `12-alpine3.16`](https://github.com/docker-library/postgres/blob/899a216e56e49ca7ab1aaae937f1220caace7ce4/12/alpine/Dockerfile)
+-	[`11.16-bullseye`, `11-bullseye`](https://github.com/docker-library/postgres/blob/e97d27525d5949b25ca70687f42f1874210452dc/11/bullseye/Dockerfile)
+-	[`11.16`, `11`, `11.16-stretch`, `11-stretch`](https://github.com/docker-library/postgres/blob/e97d27525d5949b25ca70687f42f1874210452dc/11/stretch/Dockerfile)
+-	[`11.16-alpine`, `11-alpine`, `11.16-alpine3.16`, `11-alpine3.16`](https://github.com/docker-library/postgres/blob/899a216e56e49ca7ab1aaae937f1220caace7ce4/11/alpine/Dockerfile)
+-	[`10.21-bullseye`, `10-bullseye`](https://github.com/docker-library/postgres/blob/780680ebfa85d8220627985c0a16ecfd79d44a0f/10/bullseye/Dockerfile)
+-	[`10.21`, `10`, `10.21-stretch`, `10-stretch`](https://github.com/docker-library/postgres/blob/780680ebfa85d8220627985c0a16ecfd79d44a0f/10/stretch/Dockerfile)
+-	[`10.21-alpine`, `10-alpine`, `10.21-alpine3.16`, `10-alpine3.16`](https://github.com/docker-library/postgres/blob/899a216e56e49ca7ab1aaae937f1220caace7ce4/10/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -95,7 +94,6 @@ postgres=# SELECT 1;
 ----------
         1
 (1 row)
-
 ```
 
 ## ... via [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/) or [`docker-compose`](https://github.com/docker/compose)
@@ -165,7 +163,7 @@ This optional environment variable can be used to define another location for th
 
 ### `POSTGRES_HOST_AUTH_METHOD`
 
-This optional variable can be used to control the `auth-method` for `host` connections for `all` databases, `all` users, and `all` addresses. If unspecified then [`md5` password authentication](https://www.postgresql.org/docs/current/auth-password.html) is used. On an uninitialized database, this will populate `pg_hba.conf` via this approximate line:
+This optional variable can be used to control the `auth-method` for `host` connections for `all` databases, `all` users, and `all` addresses. If unspecified then [`scram-sha-256` password authentication](https://www.postgresql.org/docs/current/auth-password.html) is used (in 14+; `md5` in older releases). On an uninitialized database, this will populate `pg_hba.conf` via this approximate line:
 
 ```console
 echo "host all all all $POSTGRES_HOST_AUTH_METHOD" >> pg_hba.conf
@@ -350,7 +348,7 @@ The `postgres` images come in many flavors, each designed for a specific use cas
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like buster or stretch in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+Some of these tags may have names like bullseye or stretch in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 ## `postgres:<version>-alpine`
 

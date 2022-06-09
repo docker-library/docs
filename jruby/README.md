@@ -24,14 +24,17 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `9`, `9.2`, `9.2.19`, `9.2-jre`, `9.2-jre8`, `9.2.19-jre`, `9.2.19-jre8`, `9.2.19.0`, `9.2.19.0-jre`, `9.2.19.0-jre8`](https://github.com/jruby/docker-jruby/blob/c77be8629e90e0782a41c0ffeb810f02fbf0afc4/9000/jre8/Dockerfile)
--	[`9-jdk`, `9-jdk8`, `9.2-jdk`, `9.2-jdk8`, `9.2.19-jdk`, `9.2.19-jdk8`, `9.2.19.0-jdk`, `9.2.19.0-jdk8`](https://github.com/jruby/docker-jruby/blob/c77be8629e90e0782a41c0ffeb810f02fbf0afc4/9000/jdk8/Dockerfile)
--	[`9.2-jre11`, `9.2.19-jre11`, `9.2.19.0-jre11`](https://github.com/jruby/docker-jruby/blob/c77be8629e90e0782a41c0ffeb810f02fbf0afc4/9000/jre11/Dockerfile)
--	[`9.2-jdk11`, `9.2.19-jdk11`, `9.2.19.0-jdk11`](https://github.com/jruby/docker-jruby/blob/c77be8629e90e0782a41c0ffeb810f02fbf0afc4/9000/jdk11/Dockerfile)
--	[`9.2-jdk16`, `9.2.19-jdk16`, `9.2.19.0-jdk16`](https://github.com/jruby/docker-jruby/blob/c77be8629e90e0782a41c0ffeb810f02fbf0afc4/9000/jdk16/Dockerfile)
--	[`9-onbuild`, `9.2-onbuild`, `9.2.19-onbuild`, `9.2.19.0-onbuild`](https://github.com/jruby/docker-jruby/blob/c77be8629e90e0782a41c0ffeb810f02fbf0afc4/9000/onbuild-jdk8/Dockerfile)
--	[`9.1`, `9.1.17`, `9.1.17.0`, `9.1-jre`, `9.1.17-jre`, `9.1.17.0-jre`](https://github.com/jruby/docker-jruby/blob/8bc3fe27670a851953345182fe12f14f5e708383/9000/jre/Dockerfile)
--	[`9.1-jdk`, `9.1.17-jdk`, `9.1.17.0-jdk`](https://github.com/jruby/docker-jruby/blob/8bc3fe27670a851953345182fe12f14f5e708383/9000/jdk/Dockerfile)
+-	[`latest`, `9`, `9.3`, `9.3.4`, `9.3-jre`, `9.3-jre8`, `9.3.4-jre`, `9.3.4-jre8`, `9.3.4.0`, `9.3.4.0-jre`, `9.3.4.0-jre8`](https://github.com/jruby/docker-jruby/blob/fae50010fae73e3cbed04c660747419413096767/9.3/jre8/Dockerfile)
+-	[`9-jdk`, `9-jdk8`, `9.3-jdk`, `9.3-jdk8`, `9.3.4-jdk`, `9.3.4-jdk8`, `9.3.4.0-jdk`, `9.3.4.0-jdk8`](https://github.com/jruby/docker-jruby/blob/fae50010fae73e3cbed04c660747419413096767/9.3/jdk8/Dockerfile)
+-	[`9.3-jre11`, `9.3.4-jre11`, `9.3.4.0-jre11`](https://github.com/jruby/docker-jruby/blob/fae50010fae73e3cbed04c660747419413096767/9.3/jre11/Dockerfile)
+-	[`9.3-jdk11`, `9.3.4-jdk11`, `9.3.4.0-jdk11`](https://github.com/jruby/docker-jruby/blob/fae50010fae73e3cbed04c660747419413096767/9.3/jdk11/Dockerfile)
+-	[`9.3-jdk17`, `9.3.4-jdk17`, `9.3.4.0-jdk17`](https://github.com/jruby/docker-jruby/blob/fae50010fae73e3cbed04c660747419413096767/9.3/jdk17/Dockerfile)
+-	[`9.2`, `9.2.20`, `9.2-jre`, `9.2-jre8`, `9.2.20-jre`, `9.2.20-jre8`, `9.2.20.1`, `9.2.20.0-jre`, `9.2.20.0-jre8`](https://github.com/jruby/docker-jruby/blob/fae50010fae73e3cbed04c660747419413096767/9.2/jre8/Dockerfile)
+-	[`9.2-jdk`, `9.2-jdk8`, `9.2.20-jdk`, `9.2.20-jdk8`, `9.2.20.0-jdk`, `9.2.20.1-jdk8`](https://github.com/jruby/docker-jruby/blob/fae50010fae73e3cbed04c660747419413096767/9.2/jdk8/Dockerfile)
+-	[`9.2-jre11`, `9.2.20-jre11`, `9.2.20.1-jre11`](https://github.com/jruby/docker-jruby/blob/fae50010fae73e3cbed04c660747419413096767/9.2/jre11/Dockerfile)
+-	[`9.2-jdk11`, `9.2.20-jdk11`, `9.2.20.1-jdk11`](https://github.com/jruby/docker-jruby/blob/fae50010fae73e3cbed04c660747419413096767/9.2/jdk11/Dockerfile)
+-	[`9.2-jdk17`, `9.2.20-jdk17`, `9.2.20.1-jdk17`](https://github.com/jruby/docker-jruby/blob/fae50010fae73e3cbed04c660747419413096767/9.2/jdk17/Dockerfile)
+-	[`9.2-onbuild`, `9.2.20-onbuild`, `9.2.20.1-onbuild`](https://github.com/jruby/docker-jruby/blob/fae50010fae73e3cbed04c660747419413096767/9.2/onbuild-jdk8/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -39,7 +42,7 @@ WARNING:
 	[https://github.com/jruby/docker-jruby/issues](https://github.com/jruby/docker-jruby/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/jruby/)
+	[`amd64`](https://hub.docker.com/r/amd64/jruby/), [`arm64v8`](https://hub.docker.com/r/arm64v8/jruby/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/jruby/` directory](https://github.com/docker-library/repo-info/blob/master/repos/jruby) ([history](https://github.com/docker-library/repo-info/commits/master/repos/jruby))  

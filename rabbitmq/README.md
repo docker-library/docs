@@ -24,14 +24,18 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.9.5`, `3.9`, `3`, `latest`](https://github.com/docker-library/rabbitmq/blob/d2f70fd1fba3df8412273e50f5be17a5d710d943/3.9/ubuntu/Dockerfile)
--	[`3.9.5-management`, `3.9-management`, `3-management`, `management`](https://github.com/docker-library/rabbitmq/blob/b07819f873e5a68b2bb54e01f0caa41c26b277f3/3.9/ubuntu/management/Dockerfile)
--	[`3.9.5-alpine`, `3.9-alpine`, `3-alpine`, `alpine`](https://github.com/docker-library/rabbitmq/blob/d2f70fd1fba3df8412273e50f5be17a5d710d943/3.9/alpine/Dockerfile)
--	[`3.9.5-management-alpine`, `3.9-management-alpine`, `3-management-alpine`, `management-alpine`](https://github.com/docker-library/rabbitmq/blob/b07819f873e5a68b2bb54e01f0caa41c26b277f3/3.9/alpine/management/Dockerfile)
--	[`3.8.22`, `3.8`](https://github.com/docker-library/rabbitmq/blob/d04d464d217e6c5e9d8d47e80b45d3382e0bfb3f/3.8/ubuntu/Dockerfile)
--	[`3.8.22-management`, `3.8-management`](https://github.com/docker-library/rabbitmq/blob/0d1c84a50aa69305b2fa3e98632a206d3d2a3f9f/3.8/ubuntu/management/Dockerfile)
--	[`3.8.22-alpine`, `3.8-alpine`](https://github.com/docker-library/rabbitmq/blob/d04d464d217e6c5e9d8d47e80b45d3382e0bfb3f/3.8/alpine/Dockerfile)
--	[`3.8.22-management-alpine`, `3.8-management-alpine`](https://github.com/docker-library/rabbitmq/blob/0d1c84a50aa69305b2fa3e98632a206d3d2a3f9f/3.8/alpine/management/Dockerfile)
+-	[`3.10.5`, `3.10`, `3`, `latest`](https://github.com/docker-library/rabbitmq/blob/0d8de27ad2a8bcb329c8622c1f36412259e58942/3.10/ubuntu/Dockerfile)
+-	[`3.10.5-management`, `3.10-management`, `3-management`, `management`](https://github.com/docker-library/rabbitmq/blob/6e226fe8e99702c8726d5e7d5c5864e69548048d/3.10/ubuntu/management/Dockerfile)
+-	[`3.10.5-alpine`, `3.10-alpine`, `3-alpine`, `alpine`](https://github.com/docker-library/rabbitmq/blob/0d8de27ad2a8bcb329c8622c1f36412259e58942/3.10/alpine/Dockerfile)
+-	[`3.10.5-management-alpine`, `3.10-management-alpine`, `3-management-alpine`, `management-alpine`](https://github.com/docker-library/rabbitmq/blob/6e226fe8e99702c8726d5e7d5c5864e69548048d/3.10/alpine/management/Dockerfile)
+-	[`3.9.20`, `3.9`](https://github.com/docker-library/rabbitmq/blob/02cdac229f219df10a728876937d46911951384d/3.9/ubuntu/Dockerfile)
+-	[`3.9.20-management`, `3.9-management`](https://github.com/docker-library/rabbitmq/blob/b07819f873e5a68b2bb54e01f0caa41c26b277f3/3.9/ubuntu/management/Dockerfile)
+-	[`3.9.20-alpine`, `3.9-alpine`](https://github.com/docker-library/rabbitmq/blob/02cdac229f219df10a728876937d46911951384d/3.9/alpine/Dockerfile)
+-	[`3.9.20-management-alpine`, `3.9-management-alpine`](https://github.com/docker-library/rabbitmq/blob/b07819f873e5a68b2bb54e01f0caa41c26b277f3/3.9/alpine/management/Dockerfile)
+-	[`3.8.34`, `3.8`](https://github.com/docker-library/rabbitmq/blob/556adfcd5e57319650d88a4d1b3bd36ca41b33dc/3.8/ubuntu/Dockerfile)
+-	[`3.8.34-management`, `3.8-management`](https://github.com/docker-library/rabbitmq/blob/0d1c84a50aa69305b2fa3e98632a206d3d2a3f9f/3.8/ubuntu/management/Dockerfile)
+-	[`3.8.34-alpine`, `3.8-alpine`](https://github.com/docker-library/rabbitmq/blob/556adfcd5e57319650d88a4d1b3bd36ca41b33dc/3.8/alpine/Dockerfile)
+-	[`3.8.34-management-alpine`, `3.8-management-alpine`](https://github.com/docker-library/rabbitmq/blob/0d1c84a50aa69305b2fa3e98632a206d3d2a3f9f/3.8/alpine/management/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -106,6 +110,24 @@ RABBITMQ_SSL_FAIL_IF_NO_PEER_CERT
 RABBITMQ_SSL_KEYFILE
 RABBITMQ_SSL_VERIFY
 RABBITMQ_VM_MEMORY_HIGH_WATERMARK
+```
+
+### Setting default user and password
+
+If you wish to change the default username and password of `guest` / `guest`, you can do so with the `RABBITMQ_DEFAULT_USER` and `RABBITMQ_DEFAULT_PASS` environmental variables. These variables were available previously in the docker-specific entrypoint shell script but are now available in RabbitMQ directly.
+
+```console
+$ docker run -d --hostname my-rabbit --name some-rabbit -e RABBITMQ_DEFAULT_USER=user -e RABBITMQ_DEFAULT_PASS=password rabbitmq:3-management
+```
+
+You can then go to `http://localhost:8080` or `http://host-ip:8080` in a browser and use `user`/`password` to gain access to the management console
+
+### Setting default vhost
+
+If you wish to change the default vhost, you can do so with the `RABBITMQ_DEFAULT_VHOST` environmental variables:
+
+```console
+$ docker run -d --hostname my-rabbit --name some-rabbit -e RABBITMQ_DEFAULT_VHOST=my_vhost rabbitmq:3-management
 ```
 
 ### Memory Limits

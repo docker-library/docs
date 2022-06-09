@@ -1,0 +1,1 @@
+A light-weighted API Firewall to protect your API endpoints with API Schema validation.

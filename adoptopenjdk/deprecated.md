@@ -1,1 +1,0 @@
-This image is officially deprecated in favor of [the `eclipse-temurin` image](https://hub.docker.com/_/eclipse-temurin/), and will receive no further updates after 2021-08-01 (Aug 01, 2021). Please adjust your usage accordingly.

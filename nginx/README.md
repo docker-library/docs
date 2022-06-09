@@ -24,14 +24,14 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.21.1`, `mainline`, `1`, `1.21`, `latest`](https://github.com/nginxinc/docker-nginx/blob/f958fbacada447737319e979db45a1da49123142/mainline/debian/Dockerfile)
--	[`1.21.1-perl`, `mainline-perl`, `1-perl`, `1.21-perl`, `perl`](https://github.com/nginxinc/docker-nginx/blob/f958fbacada447737319e979db45a1da49123142/mainline/debian-perl/Dockerfile)
--	[`1.21.1-alpine`, `mainline-alpine`, `1-alpine`, `1.21-alpine`, `alpine`](https://github.com/nginxinc/docker-nginx/blob/f958fbacada447737319e979db45a1da49123142/mainline/alpine/Dockerfile)
--	[`1.21.1-alpine-perl`, `mainline-alpine-perl`, `1-alpine-perl`, `1.21-alpine-perl`, `alpine-perl`](https://github.com/nginxinc/docker-nginx/blob/f958fbacada447737319e979db45a1da49123142/mainline/alpine-perl/Dockerfile)
--	[`1.20.1`, `stable`, `1.20`](https://github.com/nginxinc/docker-nginx/blob/f3fe494531f9b157d9c09ba509e412dace54cd4f/stable/debian/Dockerfile)
--	[`1.20.1-perl`, `stable-perl`, `1.20-perl`](https://github.com/nginxinc/docker-nginx/blob/f3fe494531f9b157d9c09ba509e412dace54cd4f/stable/debian-perl/Dockerfile)
--	[`1.20.1-alpine`, `stable-alpine`, `1.20-alpine`](https://github.com/nginxinc/docker-nginx/blob/f3fe494531f9b157d9c09ba509e412dace54cd4f/stable/alpine/Dockerfile)
--	[`1.20.1-alpine-perl`, `stable-alpine-perl`, `1.20-alpine-perl`](https://github.com/nginxinc/docker-nginx/blob/f3fe494531f9b157d9c09ba509e412dace54cd4f/stable/alpine-perl/Dockerfile)
+-	[`1.21.6`, `mainline`, `1`, `1.21`, `latest`](https://github.com/nginxinc/docker-nginx/blob/d039609e3a537df4e15a454fdb5a004d519e9a11/mainline/debian/Dockerfile)
+-	[`1.21.6-perl`, `mainline-perl`, `1-perl`, `1.21-perl`, `perl`](https://github.com/nginxinc/docker-nginx/blob/d039609e3a537df4e15a454fdb5a004d519e9a11/mainline/debian-perl/Dockerfile)
+-	[`1.21.6-alpine`, `mainline-alpine`, `1-alpine`, `1.21-alpine`, `alpine`](https://github.com/nginxinc/docker-nginx/blob/d039609e3a537df4e15a454fdb5a004d519e9a11/mainline/alpine/Dockerfile)
+-	[`1.21.6-alpine-perl`, `mainline-alpine-perl`, `1-alpine-perl`, `1.21-alpine-perl`, `alpine-perl`](https://github.com/nginxinc/docker-nginx/blob/d039609e3a537df4e15a454fdb5a004d519e9a11/mainline/alpine-perl/Dockerfile)
+-	[`1.22.0`, `stable`, `1.22`](https://github.com/nginxinc/docker-nginx/blob/b18fb328f999b28a7bb6d86e06b0756c1befa21a/stable/debian/Dockerfile)
+-	[`1.22.0-perl`, `stable-perl`, `1.22-perl`](https://github.com/nginxinc/docker-nginx/blob/b18fb328f999b28a7bb6d86e06b0756c1befa21a/stable/debian-perl/Dockerfile)
+-	[`1.22.0-alpine`, `stable-alpine`, `1.22-alpine`](https://github.com/nginxinc/docker-nginx/blob/b18fb328f999b28a7bb6d86e06b0756c1befa21a/stable/alpine/Dockerfile)
+-	[`1.22.0-alpine-perl`, `stable-alpine-perl`, `1.22-alpine-perl`](https://github.com/nginxinc/docker-nginx/blob/b18fb328f999b28a7bb6d86e06b0756c1befa21a/stable/alpine-perl/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -236,16 +236,6 @@ http {
 
 Alternatively, check out the official [Docker NGINX unprivileged image](https://hub.docker.com/r/nginxinc/nginx-unprivileged).
 
-## Monitoring nginx with Amplify
-
-[Amplify](https://amplify.nginx.com/signup/) is a free monitoring tool that can be used to monitor microservice architectures based on nginx. Amplify is developed and maintained by the company behind the nginx software.
-
-With Amplify it is possible to collect and aggregate metrics across containers, and present a coherent set of visualizations of the key performance data, such as active connections or requests per second. It is also easy to quickly check for any performance degradations, traffic anomalies, and get a deeper insight into the nginx configuration in general.
-
-In order to use Amplify, a small Python-based agent software (Amplify Agent) should be [installed](https://github.com/nginxinc/docker-nginx-amplify) inside the container.
-
-For more information about Amplify, please check the official documentation [here](https://github.com/nginxinc/nginx-amplify-doc).
-
 # Image Variants
 
 The `nginx` images come in many flavors, each designed for a specific use case.
@@ -253,6 +243,10 @@ The `nginx` images come in many flavors, each designed for a specific use case.
 ## `nginx:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+## `nginx:<version>-perl` / `nginx:<version>-alpine-perl`
+
+Starting with nginx:1.13.0 / mainline and nginx:1.12.0 / stable, the perl module has been removed from the default images. A separate `-perl` tag variant is available if you wish to use the perl module.
 
 ## `nginx:<version>-alpine`
 

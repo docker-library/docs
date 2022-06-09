@@ -24,10 +24,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.8.2`, `latest`](https://github.com/hashicorp/docker-vault/blob/0280f97aeb03b39393a58a56e29bbfa612081ce3/0.X/Dockerfile)
--	[`1.7.4`](https://github.com/hashicorp/docker-vault/blob/64b902c489d9a0a0f774635fc3e86fb88710febf/0.X/Dockerfile)
--	[`1.6.6`](https://github.com/hashicorp/docker-vault/blob/995e352b20cbe7a9ddf69ff658805d8ae7149147/0.X/Dockerfile)
--	[`1.5.9`](https://github.com/hashicorp/docker-vault/blob/72a3539fd91085b2d51cfc87cd9bcf0804e3a5cf/0.X/Dockerfile)
+-	[`1.10.3`, `latest`](https://github.com/hashicorp/docker-vault/blob/f06184d1dfb9469d1887be746c124eac02aa0a54/0.X/Dockerfile)
+-	[`1.9.6`](https://github.com/hashicorp/docker-vault/blob/2a454db666136a87958519e121e46a540ba14826/0.X/Dockerfile)
+-	[`1.8.11`](https://github.com/hashicorp/docker-vault/blob/cc0868beb991371d17555fd3ab9ceb202e3c2f3a/0.X/Dockerfile)
+-	[`1.7.10`](https://github.com/hashicorp/docker-vault/blob/dd76bb48eba5f804dc9d2cb7501e9634708f4417/0.X/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -55,7 +55,7 @@ Vault is a tool for securely accessing secrets. A secret is anything that you wa
 -	[Vault documentation](https://www.vaultproject.io/)
 -	[Vault on GitHub](https://github.com/hashicorp/vault)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/fab4b16599d1424cee888d47af850e0ba07e6a37/vault/logo.svg?sanitize=true)
+![logo](https://raw.githubusercontent.com/docker-library/docs/90d4d43bdfccd5cb21e5fd964d32b0074af0f357/vault/logo.svg?sanitize=true)
 
 # Using the Container
 

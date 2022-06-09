@@ -24,13 +24,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.2.5`, `6.2`, `6`, `latest`, `6.2.5-buster`, `6.2-buster`, `6-buster`, `buster`](https://github.com/docker-library/redis/blob/af431c381c3718dbe4d87572f7d3c330a063df8d/6.2/Dockerfile)
--	[`6.2.5-alpine`, `6.2-alpine`, `6-alpine`, `alpine`, `6.2.5-alpine3.14`, `6.2-alpine3.14`, `6-alpine3.14`, `alpine3.14`](https://github.com/docker-library/redis/blob/af431c381c3718dbe4d87572f7d3c330a063df8d/6.2/alpine/Dockerfile)
--	[`6.0.15`, `6.0`, `6.0.15-buster`, `6.0-buster`](https://github.com/docker-library/redis/blob/a73df6df17be8294a63e6914fca028984772179a/6.0/Dockerfile)
--	[`6.0.15-alpine`, `6.0-alpine`, `6.0.15-alpine3.14`, `6.0-alpine3.14`](https://github.com/docker-library/redis/blob/a73df6df17be8294a63e6914fca028984772179a/6.0/alpine/Dockerfile)
--	[`5.0.13`, `5.0`, `5`, `5.0.13-buster`, `5.0-buster`, `5-buster`](https://github.com/docker-library/redis/blob/6149807771994b753763123cee3b6406ab6745b6/5/Dockerfile)
--	[`5.0.13-32bit`, `5.0-32bit`, `5-32bit`, `5.0.13-32bit-buster`, `5.0-32bit-buster`, `5-32bit-buster`](https://github.com/docker-library/redis/blob/6149807771994b753763123cee3b6406ab6745b6/5/32bit/Dockerfile)
--	[`5.0.13-alpine`, `5.0-alpine`, `5-alpine`, `5.0.13-alpine3.14`, `5.0-alpine3.14`, `5-alpine3.14`](https://github.com/docker-library/redis/blob/6149807771994b753763123cee3b6406ab6745b6/5/alpine/Dockerfile)
+-	[`7.0.1`, `7.0`, `7`, `latest`, `7.0.1-bullseye`, `7.0-bullseye`, `7-bullseye`, `bullseye`](https://github.com/docker-library/redis/blob/59337ef57e3714768b2adbb7f2b1bae43560bee1/7.0/Dockerfile)
+-	[`7.0.1-alpine`, `7.0-alpine`, `7-alpine`, `alpine`, `7.0.1-alpine3.16`, `7.0-alpine3.16`, `7-alpine3.16`, `alpine3.16`](https://github.com/docker-library/redis/blob/59337ef57e3714768b2adbb7f2b1bae43560bee1/7.0/alpine/Dockerfile)
+-	[`6.2.7`, `6.2`, `6`, `6.2.7-bullseye`, `6.2-bullseye`, `6-bullseye`](https://github.com/docker-library/redis/blob/0f2bb676ab5153905089537230a732a77d26e438/6.2/Dockerfile)
+-	[`6.2.7-alpine`, `6.2-alpine`, `6-alpine`, `6.2.7-alpine3.16`, `6.2-alpine3.16`, `6-alpine3.16`](https://github.com/docker-library/redis/blob/d36a031654f52ab95601de1f8a841765177cf702/6.2/alpine/Dockerfile)
+-	[`6.0.16`, `6.0`, `6.0.16-bullseye`, `6.0-bullseye`](https://github.com/docker-library/redis/blob/0f2bb676ab5153905089537230a732a77d26e438/6.0/Dockerfile)
+-	[`6.0.16-alpine`, `6.0-alpine`, `6.0.16-alpine3.16`, `6.0-alpine3.16`](https://github.com/docker-library/redis/blob/d36a031654f52ab95601de1f8a841765177cf702/6.0/alpine/Dockerfile)
+-	[`5.0.14`, `5.0`, `5`, `5.0.14-bullseye`, `5.0-bullseye`, `5-bullseye`](https://github.com/docker-library/redis/blob/0f2bb676ab5153905089537230a732a77d26e438/5/Dockerfile)
+-	[`5.0.14-32bit`, `5.0-32bit`, `5-32bit`, `5.0.14-32bit-bullseye`, `5.0-32bit-bullseye`, `5-32bit-bullseye`](https://github.com/docker-library/redis/blob/0f2bb676ab5153905089537230a732a77d26e438/5/32bit/Dockerfile)
+-	[`5.0.14-alpine`, `5.0-alpine`, `5-alpine`, `5.0.14-alpine3.16`, `5.0-alpine3.16`, `5-alpine3.16`](https://github.com/docker-library/redis/blob/d36a031654f52ab95601de1f8a841765177cf702/5/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -78,10 +80,10 @@ $ docker run --name some-redis -d redis
 ## start with persistent storage
 
 ```console
-$ docker run --name some-redis -d redis redis-server --appendonly yes
+$ docker run --name some-redis -d redis redis-server --save 60 1 --loglevel warning
 ```
 
-If persistence is enabled, data is stored in the `VOLUME /data`, which can be used with `--volumes-from some-volume-container` or `-v /docker/host/dir:/data` (see [docs.docker volumes](https://docs.docker.com/engine/tutorials/dockervolumes/)).
+There are several different persistence strategies to choose from. This one will save a snapshot of the DB every 60 seconds if at least 1 write operation was performed (it will also lead to more logs, so the `loglevel` option may be desirable). If persistence is enabled, data is stored in the `VOLUME /data`, which can be used with `--volumes-from some-volume-container` or `-v /docker/host/dir:/data` (see [docs.docker volumes](https://docs.docker.com/engine/tutorials/dockervolumes/)).
 
 For more about Redis Persistence, see [http://redis.io/topics/persistence](http://redis.io/topics/persistence).
 
@@ -131,7 +133,7 @@ The `redis` images come in many flavors, each designed for a specific use case.
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like buster in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+Some of these tags may have names like bullseye in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 ## `redis:<version>-alpine`
 

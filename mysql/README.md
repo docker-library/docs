@@ -24,9 +24,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.0.26`, `8.0`, `8`, `latest`](https://github.com/docker-library/mysql/blob/c506174eab8ae160f56483e8d72410f8f1e1470f/8.0/Dockerfile.debian)
--	[`5.7.35`, `5.7`, `5`](https://github.com/docker-library/mysql/blob/9e91c13e4147ab680e620d06fb16b505d6ea6bd1/5.7/Dockerfile.debian)
--	[`5.6.51`, `5.6`](https://github.com/docker-library/mysql/blob/d60655b1b42f677c315d5fe2ca0e87126ca921f5/5.6/Dockerfile.debian)
+-	[`8.0.29-oracle`, `8.0-oracle`, `8-oracle`, `oracle`](https://github.com/docker-library/mysql/blob/275e9822858884a85434448cb6777683692365e6/8.0/Dockerfile.oracle)
+-	[`8.0.29`, `8.0`, `8`, `latest`, `8.0.29-debian`, `8.0-debian`, `8-debian`, `debian`](https://github.com/docker-library/mysql/blob/275e9822858884a85434448cb6777683692365e6/8.0/Dockerfile.debian)
+-	[`5.7.38-oracle`, `5.7-oracle`, `5-oracle`](https://github.com/docker-library/mysql/blob/275e9822858884a85434448cb6777683692365e6/5.7/Dockerfile.oracle)
+-	[`5.7.38`, `5.7`, `5`, `5.7.38-debian`, `5.7-debian`, `5-debian`](https://github.com/docker-library/mysql/blob/275e9822858884a85434448cb6777683692365e6/5.7/Dockerfile.debian)
 
 # Quick reference (cont.)
 
@@ -34,7 +35,7 @@ WARNING:
 	[https://github.com/docker-library/mysql/issues](https://github.com/docker-library/mysql/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/mysql/)
+	[`amd64`](https://hub.docker.com/r/amd64/mysql/), [`arm64v8`](https://hub.docker.com/r/arm64v8/mysql/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/mysql/` directory](https://github.com/docker-library/repo-info/blob/master/repos/mysql) ([history](https://github.com/docker-library/repo-info/commits/master/repos/mysql))  
@@ -97,6 +98,8 @@ services:
 
   db:
     image: mysql
+    # NOTE: use of "mysql_native_password" is not recommended: https://dev.mysql.com/doc/refman/8.0/en/upgrading-from-previous-series.html#upgrade-caching-sha2-password
+    # (this is just an example, not intended to be a production configuration)
     command: --default-authentication-plugin=mysql_native_password
     restart: always
     environment:
@@ -109,7 +112,7 @@ services:
       - 8080:8080
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/b664a62bb7be3e0cbc2304e306ea42f33244fad1/mysql/stack.yml)
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/06990e05c934d425c74addcc5ea462f53de6c8cd/mysql/stack.yml)
 
 Run `docker stack deploy -c stack.yml mysql` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
 

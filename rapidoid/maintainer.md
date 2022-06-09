@@ -1,1 +1,0 @@
-[Rapidoid](%%GITHUB-REPO%%)

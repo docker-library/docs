@@ -24,8 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`server-0.6.1-2`, `server`](https://github.com/docker/notary-official-images/blob/fe7543aa8fc466423578b726570192028bbb818c/notary-server/Dockerfile)
--	[`signer-0.6.1-2`, `signer`](https://github.com/docker/notary-official-images/blob/fe7543aa8fc466423578b726570192028bbb818c/notary-signer/Dockerfile)
+-	[`server-0.7.0`, `server`](https://github.com/docker/notary-official-images/blob/16219dbe3c1433a6fc93e016cf421b230f681a2f/notary-server/Dockerfile)
+-	[`signer-0.7.0`, `signer`](https://github.com/docker/notary-official-images/blob/16219dbe3c1433a6fc93e016cf421b230f681a2f/notary-signer/Dockerfile)
 
 # Quick reference (cont.)
 

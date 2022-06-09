@@ -1,6 +1,8 @@
-# Docker Registry
+# Distribution Registry
 
-This image contains an implementation of the Docker Registry HTTP API V2 for use with Docker 1.6+. See [github.com/docker/distribution](https://github.com/docker/distribution) for more details about what it is.
+%%LOGO%%
+
+This image contains an implementation of the Docker Registry HTTP API V2 for use with Docker 1.6+. See [github.com/distribution/distribution](https://github.com/distribution/distribution) for more details about what it is.
 
 ## Run a local registry: Quick Version
 

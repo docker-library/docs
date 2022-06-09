@@ -24,10 +24,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.12.1`, `4.12`, `4`, `latest`](https://github.com/docker-library/ghost/blob/8d6ccd98654b78b43494b248074137550cd1a11b/4/debian/Dockerfile)
--	[`4.12.1-alpine`, `4.12-alpine`, `4-alpine`, `alpine`](https://github.com/docker-library/ghost/blob/8d6ccd98654b78b43494b248074137550cd1a11b/4/alpine/Dockerfile)
--	[`3.42.5`, `3.42`, `3`](https://github.com/docker-library/ghost/blob/5f8c4895e23dc9ee4281aea85ee7f1093a4fbf0c/3/debian/Dockerfile)
--	[`3.42.5-alpine`, `3.42-alpine`, `3-alpine`](https://github.com/docker-library/ghost/blob/5f8c4895e23dc9ee4281aea85ee7f1093a4fbf0c/3/alpine/Dockerfile)
+-	[`5.2.2`, `5.2`, `5`, `latest`](https://github.com/docker-library/ghost/blob/132c23c29ba414434263699151a14cb11d35abf2/5/debian/Dockerfile)
+-	[`5.2.2-alpine`, `5.2-alpine`, `5-alpine`, `alpine`](https://github.com/docker-library/ghost/blob/132c23c29ba414434263699151a14cb11d35abf2/5/alpine/Dockerfile)
+-	[`4.48.1`, `4.48`, `4`](https://github.com/docker-library/ghost/blob/1791d76b54348818da6cd4281ea6e2be0b757049/4/debian/Dockerfile)
+-	[`4.48.1-alpine`, `4.48-alpine`, `4-alpine`](https://github.com/docker-library/ghost/blob/1791d76b54348818da6cd4281ea6e2be0b757049/4/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -153,13 +153,13 @@ services:
       #NODE_ENV: development
 
   db:
-    image: mysql:5.7
+    image: mysql:8.0
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: example
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/cd439efd00ac238cdd9dcbb58c2e91e7d46a1ffa/ghost/stack.yml)
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/e3b176ac7b3e913d7dbc239554acb6687122f6ea/ghost/stack.yml)
 
 Run `docker stack deploy -c stack.yml ghost` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
 
