@@ -26,7 +26,7 @@ The default `postgres` user and database are created in the entrypoint with `ini
 
 ```console
 $ docker run -it --rm --network some-network %%IMAGE%% psql -h some-postgres -U postgres
-psql (14.4)
+psql (14.3)
 Type "help" for help.
 
 postgres=# SELECT 1;
@@ -173,7 +173,7 @@ There are many ways to set PostgreSQL server configuration. For information on w
 You can extend the Debian-based images with a simple `Dockerfile` to set a different locale. The following example will set the default locale to `de_DE.utf8`:
 
 ```dockerfile
-FROM %%IMAGE%%:14.4
+FROM %%IMAGE%%:14.3
 RUN localedef -i de_DE -c -f UTF-8 -A /usr/share/locale/locale.alias de_DE.UTF-8
 ENV LANG de_DE.utf8
 ```
