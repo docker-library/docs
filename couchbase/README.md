@@ -74,24 +74,26 @@ Here is how to get a single node Couchbase Server cluster running on Docker cont
 
 **Step - 1 :** Run Couchbase Server docker container
 
-`docker run -d --name db -p 8091-8094:8091-8094 -p 11210:11210 couchbase`
+`docker run -d --name db -p 8091-8097:8091-8097 -p 11210:11210 -p 11207:11207 -p 18091-18095:18091-18095 -p 18096:18096 -p 18097:18097 couchbase`
+
+Note: Couchbase Server can require a variety of ports to be exposed depending on the usage scenario. Please see https://docs.couchbase.com/server/current/install/install-ports.html for further information.
 
 **Step - 2 :** Next, visit `http://localhost:8091` on the host machine to see the Web Console to start Couchbase Server setup.
 
-![Setup splash screen](https://d774lla4im6mk.cloudfront.net/6.6.2/setup-initial.jpg)
+![Setup splash screen](https://d774lla4im6mk.cloudfront.net/setup-initial.jpg)
 
 Walk through the Setup wizard and accept the default values.
 
 -	Note: You may need to lower the RAM allocated to various services to fit within the bounds of the resource of the containers.
 -	Enable the beer-sample bucket to load some sample data.
 
-![Creating a cluster](https://d774lla4im6mk.cloudfront.net/6.6.2/cluster-creation.jpg)
+![Creating a cluster](https://d774lla4im6mk.cloudfront.net/cluster-creation.jpg)
 
-![Completing the wizard](https://d774lla4im6mk.cloudfront.net/6.6.2/finish-wizard.jpg)
+![Completing the wizard](https://d774lla4im6mk.cloudfront.net/finish-wizard.jpg)
 
-![UI home](https://d774lla4im6mk.cloudfront.net/6.6.2/ui-home.jpg)
+![UI home](https://d774lla4im6mk.cloudfront.net/ui-home.jpg)
 
-![Loading sample data](https://d774lla4im6mk.cloudfront.net/6.6.2/load-sample-data.jpg)
+![Loading sample data](https://d774lla4im6mk.cloudfront.net/load-sample-data.jpg)
 
 **Note :** For detailed information on configuring the Server, see [Deployment Guidelines](https://docs.couchbase.com/server/current/install/install-production-deployment.html).
 
@@ -149,11 +151,11 @@ These ulimit settings are necessary when running under heavy load. If you are ju
 
 To set the ulimits in your container, you will need to run Couchbase Docker containers with the following additional `--ulimit` flags:
 
-`docker run -d --ulimit nofile=40960:40960 --ulimit core=100000000:100000000 --ulimit memlock=100000000:100000000 --name db -p 8091-8094:8091-8094 -p 11210:11210 couchbase`
+`docker run -d --ulimit nofile=40960:40960 --ulimit core=100000000:100000000 --ulimit memlock=100000000:100000000 --name db -p 8091-8097:8091-8097 -p 11210:11210 -p 11207:11207 -p 18091-18095:18091-18095 -p 18096:18096 -p 18097:18097 couchbase`
 
 Since "unlimited" is not supported as a value, it sets the core and memlock values to 100 GB. If your system has more than 100 GB RAM, you will want to increase this value to match the available RAM on the system.
 
-Note:The `--ulimit` flags only work on Docker 1.6 or later.
+Note: The `--ulimit` flags only work on Docker 1.6 or later.
 
 **Network Configuration and Ports :** Couchbase Server communicates on many different ports (see the [Couchbase Server documentation](https://docs.couchbase.com/server/current/install/install-ports.html#ports-listed-by-communication-path)). Also, it is generally not supported that the cluster nodes be placed behind any NAT. For these reasons, Docker's default networking configuration is not ideally suited to Couchbase Server deployments. For production deployments it is recommended to use `--net=host` setting to avoid performance and reliability issues.
 
