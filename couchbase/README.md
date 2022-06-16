@@ -28,8 +28,8 @@ WARNING:
 -	[`community-7.1.0`, `community`](https://github.com/couchbase/docker/blob/fdaa38c9abfb3e9ed81f622c0f9e91f8e6ba986f/community/couchbase-server/7.1.0/x86_64/Dockerfile)
 -	[`7.0.3`, `enterprise-7.0.3`](https://github.com/couchbase/docker/blob/e3c274f39e02aa24e8dc7e486aefba916a7b747a/enterprise/couchbase-server/7.0.3/Dockerfile)
 -	[`community-7.0.2`](https://github.com/couchbase/docker/blob/aec4494ab5280caf567997d72714f57572a6315b/community/couchbase-server/7.0.2/Dockerfile)
--	[`6.6.5`, `enterprise-6.6.5`](https://github.com/couchbase/docker/blob/b9ef0fefa25a0ca646bf746765f66bf33ee3fac7/enterprise/couchbase-server/6.6.5/Dockerfile)
--	[`community-6.6.0`](https://github.com/couchbase/docker/blob/5929be778eb5306f116f71cc9a0a23fea6d9a7aa/community/couchbase-server/6.6.0/Dockerfile)
+-	[`6.6.5`, `enterprise-6.6.5`](https://github.com/couchbase/docker/blob/aad4aa9714578906c0c993121654eaeba0bd907c/enterprise/couchbase-server/6.6.5/Dockerfile)
+-	[`community-6.6.0`](https://github.com/couchbase/docker/blob/aad4aa9714578906c0c993121654eaeba0bd907c/community/couchbase-server/6.6.0/Dockerfile)
 
 # Quick reference (cont.)
 
