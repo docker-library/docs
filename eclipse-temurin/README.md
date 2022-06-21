@@ -20,7 +20,7 @@ WARNING:
 	[Adoptium](https://github.com/adoptium/containers)
 
 -	**Where to get help**:  
-	[Adoptium Slack](https://adoptium.net/slack.html); [Adoptium Support](https://github.com/adoptium/adoptium-support/issues/new/choose)
+	[Adoptium Slack](https://adoptium.net/slack); [Adoptium Support](https://github.com/adoptium/adoptium-support/issues/new/choose)
 
 # Supported tags and respective `Dockerfile` links
 
