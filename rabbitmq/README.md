@@ -24,13 +24,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.10.5`, `3.10`, `3`, `latest`](https://github.com/docker-library/rabbitmq/blob/e913e539a9014314c68a88b4fc20fcf107e019cf/3.10/ubuntu/Dockerfile)
+-	[`3.10.5`, `3.10`, `3`, `latest`](https://github.com/docker-library/rabbitmq/blob/bcc9931d020300b38cab6dcbe9c03c248c8774d4/3.10/ubuntu/Dockerfile)
 -	[`3.10.5-management`, `3.10-management`, `3-management`, `management`](https://github.com/docker-library/rabbitmq/blob/6e226fe8e99702c8726d5e7d5c5864e69548048d/3.10/ubuntu/management/Dockerfile)
--	[`3.10.5-alpine`, `3.10-alpine`, `3-alpine`, `alpine`](https://github.com/docker-library/rabbitmq/blob/e913e539a9014314c68a88b4fc20fcf107e019cf/3.10/alpine/Dockerfile)
+-	[`3.10.5-alpine`, `3.10-alpine`, `3-alpine`, `alpine`](https://github.com/docker-library/rabbitmq/blob/bcc9931d020300b38cab6dcbe9c03c248c8774d4/3.10/alpine/Dockerfile)
 -	[`3.10.5-management-alpine`, `3.10-management-alpine`, `3-management-alpine`, `management-alpine`](https://github.com/docker-library/rabbitmq/blob/6e226fe8e99702c8726d5e7d5c5864e69548048d/3.10/alpine/management/Dockerfile)
--	[`3.9.20`, `3.9`](https://github.com/docker-library/rabbitmq/blob/e913e539a9014314c68a88b4fc20fcf107e019cf/3.9/ubuntu/Dockerfile)
+-	[`3.9.20`, `3.9`](https://github.com/docker-library/rabbitmq/blob/54e1bac1b9ad7457b8cffc566783aca959d32d1d/3.9/ubuntu/Dockerfile)
 -	[`3.9.20-management`, `3.9-management`](https://github.com/docker-library/rabbitmq/blob/b07819f873e5a68b2bb54e01f0caa41c26b277f3/3.9/ubuntu/management/Dockerfile)
--	[`3.9.20-alpine`, `3.9-alpine`](https://github.com/docker-library/rabbitmq/blob/e913e539a9014314c68a88b4fc20fcf107e019cf/3.9/alpine/Dockerfile)
+-	[`3.9.20-alpine`, `3.9-alpine`](https://github.com/docker-library/rabbitmq/blob/54e1bac1b9ad7457b8cffc566783aca959d32d1d/3.9/alpine/Dockerfile)
 -	[`3.9.20-management-alpine`, `3.9-management-alpine`](https://github.com/docker-library/rabbitmq/blob/b07819f873e5a68b2bb54e01f0caa41c26b277f3/3.9/alpine/management/Dockerfile)
 
 # Quick reference (cont.)
