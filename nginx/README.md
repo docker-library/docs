@@ -24,14 +24,14 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.21.6`, `mainline`, `1`, `1.21`, `latest`](https://github.com/nginxinc/docker-nginx/blob/d039609e3a537df4e15a454fdb5a004d519e9a11/mainline/debian/Dockerfile)
--	[`1.21.6-perl`, `mainline-perl`, `1-perl`, `1.21-perl`, `perl`](https://github.com/nginxinc/docker-nginx/blob/d039609e3a537df4e15a454fdb5a004d519e9a11/mainline/debian-perl/Dockerfile)
--	[`1.21.6-alpine`, `mainline-alpine`, `1-alpine`, `1.21-alpine`, `alpine`](https://github.com/nginxinc/docker-nginx/blob/d039609e3a537df4e15a454fdb5a004d519e9a11/mainline/alpine/Dockerfile)
--	[`1.21.6-alpine-perl`, `mainline-alpine-perl`, `1-alpine-perl`, `1.21-alpine-perl`, `alpine-perl`](https://github.com/nginxinc/docker-nginx/blob/d039609e3a537df4e15a454fdb5a004d519e9a11/mainline/alpine-perl/Dockerfile)
--	[`1.22.0`, `stable`, `1.22`](https://github.com/nginxinc/docker-nginx/blob/b18fb328f999b28a7bb6d86e06b0756c1befa21a/stable/debian/Dockerfile)
--	[`1.22.0-perl`, `stable-perl`, `1.22-perl`](https://github.com/nginxinc/docker-nginx/blob/b18fb328f999b28a7bb6d86e06b0756c1befa21a/stable/debian-perl/Dockerfile)
--	[`1.22.0-alpine`, `stable-alpine`, `1.22-alpine`](https://github.com/nginxinc/docker-nginx/blob/b18fb328f999b28a7bb6d86e06b0756c1befa21a/stable/alpine/Dockerfile)
--	[`1.22.0-alpine-perl`, `stable-alpine-perl`, `1.22-alpine-perl`](https://github.com/nginxinc/docker-nginx/blob/b18fb328f999b28a7bb6d86e06b0756c1befa21a/stable/alpine-perl/Dockerfile)
+-	[`1.23.0`, `mainline`, `1`, `1.23`, `latest`](https://github.com/nginxinc/docker-nginx/blob/04226fe92cc11bed68dae464eb60fd5399daf3b1/mainline/debian/Dockerfile)
+-	[`1.23.0-perl`, `mainline-perl`, `1-perl`, `1.23-perl`, `perl`](https://github.com/nginxinc/docker-nginx/blob/04226fe92cc11bed68dae464eb60fd5399daf3b1/mainline/debian-perl/Dockerfile)
+-	[`1.23.0-alpine`, `mainline-alpine`, `1-alpine`, `1.23-alpine`, `alpine`](https://github.com/nginxinc/docker-nginx/blob/d4a47bc6602d3a1412dad48a8513b83805605ef3/mainline/alpine/Dockerfile)
+-	[`1.23.0-alpine-perl`, `mainline-alpine-perl`, `1-alpine-perl`, `1.23-alpine-perl`, `alpine-perl`](https://github.com/nginxinc/docker-nginx/blob/d4a47bc6602d3a1412dad48a8513b83805605ef3/mainline/alpine-perl/Dockerfile)
+-	[`1.22.0`, `stable`, `1.22`](https://github.com/nginxinc/docker-nginx/blob/d4a47bc6602d3a1412dad48a8513b83805605ef3/stable/debian/Dockerfile)
+-	[`1.22.0-perl`, `stable-perl`, `1.22-perl`](https://github.com/nginxinc/docker-nginx/blob/d4a47bc6602d3a1412dad48a8513b83805605ef3/stable/debian-perl/Dockerfile)
+-	[`1.22.0-alpine`, `stable-alpine`, `1.22-alpine`](https://github.com/nginxinc/docker-nginx/blob/d4a47bc6602d3a1412dad48a8513b83805605ef3/stable/alpine/Dockerfile)
+-	[`1.22.0-alpine-perl`, `stable-alpine-perl`, `1.22-alpine-perl`](https://github.com/nginxinc/docker-nginx/blob/d4a47bc6602d3a1412dad48a8513b83805605ef3/stable/alpine-perl/Dockerfile)
 
 # Quick reference (cont.)
 
