@@ -24,8 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.7-dev0`, `2.7-dev`, `2.7-dev0-bullseye`, `2.7-dev-bullseye`](https://github.com/docker-library/haproxy/blob/e3e46b4c54b24e8c564851776e60be13e619f729/2.7/Dockerfile)
--	[`2.7-dev0-alpine`, `2.7-dev-alpine`, `2.7-dev0-alpine3.16`, `2.7-dev-alpine3.16`](https://github.com/docker-library/haproxy/blob/e3e46b4c54b24e8c564851776e60be13e619f729/2.7/alpine/Dockerfile)
+-	[`2.7-dev1`, `2.7-dev`, `2.7-dev1-bullseye`, `2.7-dev-bullseye`](https://github.com/docker-library/haproxy/blob/fc61eb99aa22c59229b212d83a3c9096a442df2c/2.7/Dockerfile)
+-	[`2.7-dev1-alpine`, `2.7-dev-alpine`, `2.7-dev1-alpine3.16`, `2.7-dev-alpine3.16`](https://github.com/docker-library/haproxy/blob/fc61eb99aa22c59229b212d83a3c9096a442df2c/2.7/alpine/Dockerfile)
 -	[`2.6.1`, `2.6`, `lts`, `latest`, `2.6.1-bullseye`, `2.6-bullseye`, `lts-bullseye`, `bullseye`](https://github.com/docker-library/haproxy/blob/2fea26446051f614031302028cef768b627da26a/2.6/Dockerfile)
 -	[`2.6.1-alpine`, `2.6-alpine`, `lts-alpine`, `alpine`, `2.6.1-alpine3.16`, `2.6-alpine3.16`, `lts-alpine3.16`, `alpine3.16`](https://github.com/docker-library/haproxy/blob/2fea26446051f614031302028cef768b627da26a/2.6/alpine/Dockerfile)
 -	[`2.5.7`, `2.5`, `2.5.7-bullseye`, `2.5-bullseye`](https://github.com/docker-library/haproxy/blob/2a634b815ba26e961f0e63501996c7bb224a9617/2.5/Dockerfile)
