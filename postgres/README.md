@@ -33,10 +33,8 @@ WARNING:
 -	[`12.11`, `12`, `12.11-bullseye`, `12-bullseye`](https://github.com/docker-library/postgres/blob/74e51d102aede317665f2b4a9b89362135402fe7/12/bullseye/Dockerfile)
 -	[`12.11-alpine`, `12-alpine`, `12.11-alpine3.16`, `12-alpine3.16`](https://github.com/docker-library/postgres/blob/b979def1c4957f5c7d5b3138df3a33abef404d21/12/alpine/Dockerfile)
 -	[`11.16-bullseye`, `11-bullseye`](https://github.com/docker-library/postgres/blob/74e51d102aede317665f2b4a9b89362135402fe7/11/bullseye/Dockerfile)
--	[`11.16`, `11`, `11.16-stretch`, `11-stretch`](https://github.com/docker-library/postgres/blob/74e51d102aede317665f2b4a9b89362135402fe7/11/stretch/Dockerfile)
 -	[`11.16-alpine`, `11-alpine`, `11.16-alpine3.16`, `11-alpine3.16`](https://github.com/docker-library/postgres/blob/b979def1c4957f5c7d5b3138df3a33abef404d21/11/alpine/Dockerfile)
 -	[`10.21-bullseye`, `10-bullseye`](https://github.com/docker-library/postgres/blob/74e51d102aede317665f2b4a9b89362135402fe7/10/bullseye/Dockerfile)
--	[`10.21`, `10`, `10.21-stretch`, `10-stretch`](https://github.com/docker-library/postgres/blob/74e51d102aede317665f2b4a9b89362135402fe7/10/stretch/Dockerfile)
 -	[`10.21-alpine`, `10-alpine`, `10.21-alpine3.16`, `10-alpine3.16`](https://github.com/docker-library/postgres/blob/b979def1c4957f5c7d5b3138df3a33abef404d21/10/alpine/Dockerfile)
 
 # Quick reference (cont.)
@@ -346,7 +344,7 @@ The `postgres` images come in many flavors, each designed for a specific use cas
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like bullseye or stretch in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+Some of these tags may have names like bullseye in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 ## `postgres:<version>-alpine`
 
