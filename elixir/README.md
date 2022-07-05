@@ -28,6 +28,7 @@ WARNING:
 -	[`1.13.4-slim`, `1.13-slim`, `slim`](https://github.com/erlef/docker-elixir/blob/328f4c09d39b06502a90fa0c5bb30d6972593fac/1.13/slim/Dockerfile)
 -	[`1.13.4-alpine`, `1.13-alpine`, `alpine`](https://github.com/erlef/docker-elixir/blob/328f4c09d39b06502a90fa0c5bb30d6972593fac/1.13/alpine/Dockerfile)
 -	[`1.13.4-otp-25`, `1.13-otp-25`, `otp-25`](https://github.com/erlef/docker-elixir/blob/253f56764ed34d41e4279cb741d84dcb4b284a55/1.13/otp-25/Dockerfile)
+-	[`1.13.4-otp-25-slim`, `1.13-otp-25-slim`, `otp-25-slim`](https://github.com/erlef/docker-elixir/blob/253f56764ed34d41e4279cb741d84dcb4b284a55/1.13/otp-25-slim/Dockerfile)
 -	[`1.13.4-otp-25-alpine`, `1.13-otp-25-alpine`, `otp-25-alpine`](https://github.com/erlef/docker-elixir/blob/253f56764ed34d41e4279cb741d84dcb4b284a55/1.13/otp-25-alpine/Dockerfile)
 -	[`1.12.3`, `1.12`](https://github.com/erlef/docker-elixir/blob/a7a9a8ecd02b6e31e93cfa13d8c18de0328f6e1a/1.12/Dockerfile)
 -	[`1.12.3-slim`, `1.12-slim`](https://github.com/erlef/docker-elixir/blob/a7a9a8ecd02b6e31e93cfa13d8c18de0328f6e1a/1.12/slim/Dockerfile)

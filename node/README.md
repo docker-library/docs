@@ -36,16 +36,12 @@ WARNING:
 -	[`16-bullseye-slim`, `16.15-bullseye-slim`, `16.15.1-bullseye-slim`, `gallium-bullseye-slim`, `lts-bullseye-slim`](https://github.com/nodejs/docker-node/blob/194a775693fd40598a1bafd4858e063c24efeb42/16/bullseye-slim/Dockerfile)
 -	[`16`, `16-buster`, `16.15`, `16.15-buster`, `16.15.1`, `16.15.1-buster`, `gallium`, `gallium-buster`, `lts`, `lts-buster`, `lts-gallium`](https://github.com/nodejs/docker-node/blob/194a775693fd40598a1bafd4858e063c24efeb42/16/buster/Dockerfile)
 -	[`16-buster-slim`, `16-slim`, `16.15-buster-slim`, `16.15-slim`, `16.15.1-buster-slim`, `16.15.1-slim`, `gallium-buster-slim`, `gallium-slim`, `lts-buster-slim`, `lts-slim`](https://github.com/nodejs/docker-node/blob/194a775693fd40598a1bafd4858e063c24efeb42/16/buster-slim/Dockerfile)
--	[`16-stretch`, `16.15-stretch`, `16.15.1-stretch`, `gallium-stretch`, `lts-stretch`](https://github.com/nodejs/docker-node/blob/194a775693fd40598a1bafd4858e063c24efeb42/16/stretch/Dockerfile)
--	[`16-stretch-slim`, `16.15-stretch-slim`, `16.15.1-stretch-slim`, `gallium-stretch-slim`, `lts-stretch-slim`](https://github.com/nodejs/docker-node/blob/194a775693fd40598a1bafd4858e063c24efeb42/16/stretch-slim/Dockerfile)
 -	[`14-alpine3.15`, `14.19-alpine3.15`, `14.19.3-alpine3.15`, `fermium-alpine3.15`](https://github.com/nodejs/docker-node/blob/4e8fe34165d79044d7ea909021ccc0de3e3b4c6d/14/alpine3.15/Dockerfile)
 -	[`14-alpine`, `14-alpine3.16`, `14.19-alpine`, `14.19-alpine3.16`, `14.19.3-alpine`, `14.19.3-alpine3.16`, `fermium-alpine`, `fermium-alpine3.16`](https://github.com/nodejs/docker-node/blob/23e032fd5377a16dcc527215c1c3f91bc57cc2ab/14/alpine3.16/Dockerfile)
 -	[`14-bullseye`, `14.19-bullseye`, `14.19.3-bullseye`, `fermium-bullseye`](https://github.com/nodejs/docker-node/blob/4e8fe34165d79044d7ea909021ccc0de3e3b4c6d/14/bullseye/Dockerfile)
 -	[`14-bullseye-slim`, `14.19-bullseye-slim`, `14.19.3-bullseye-slim`, `fermium-bullseye-slim`](https://github.com/nodejs/docker-node/blob/4e8fe34165d79044d7ea909021ccc0de3e3b4c6d/14/bullseye-slim/Dockerfile)
--	[`14-buster`, `14.19-buster`, `14.19.3-buster`, `fermium-buster`](https://github.com/nodejs/docker-node/blob/4e8fe34165d79044d7ea909021ccc0de3e3b4c6d/14/buster/Dockerfile)
--	[`14-buster-slim`, `14.19-buster-slim`, `14.19.3-buster-slim`, `fermium-buster-slim`](https://github.com/nodejs/docker-node/blob/4e8fe34165d79044d7ea909021ccc0de3e3b4c6d/14/buster-slim/Dockerfile)
--	[`14`, `14-stretch`, `14.19`, `14.19-stretch`, `14.19.3`, `14.19.3-stretch`, `fermium`, `fermium-stretch`](https://github.com/nodejs/docker-node/blob/4e8fe34165d79044d7ea909021ccc0de3e3b4c6d/14/stretch/Dockerfile)
--	[`14-slim`, `14-stretch-slim`, `14.19-slim`, `14.19-stretch-slim`, `14.19.3-slim`, `14.19.3-stretch-slim`, `fermium-slim`, `fermium-stretch-slim`](https://github.com/nodejs/docker-node/blob/4e8fe34165d79044d7ea909021ccc0de3e3b4c6d/14/stretch-slim/Dockerfile)
+-	[`14`, `14-buster`, `14.19`, `14.19-buster`, `14.19.3`, `14.19.3-buster`, `fermium`, `fermium-buster`](https://github.com/nodejs/docker-node/blob/4e8fe34165d79044d7ea909021ccc0de3e3b4c6d/14/buster/Dockerfile)
+-	[`14-buster-slim`, `14-slim`, `14.19-buster-slim`, `14.19-slim`, `14.19.3-buster-slim`, `14.19.3-slim`, `fermium-buster-slim`, `fermium-slim`](https://github.com/nodejs/docker-node/blob/4e8fe34165d79044d7ea909021ccc0de3e3b4c6d/14/buster-slim/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -90,7 +86,7 @@ The `node` images come in many flavors, each designed for a specific use case.
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like bullseye, buster, or stretch in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+Some of these tags may have names like bullseye or buster in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 This tag is based off of [`buildpack-deps`](https://hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of Docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
 
