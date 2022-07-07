@@ -24,8 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.1.0`, `enterprise-7.1.0`, `enterprise`, `latest`](https://github.com/couchbase/docker/blob/fdaa38c9abfb3e9ed81f622c0f9e91f8e6ba986f/enterprise/couchbase-server/7.1.0/x86_64/Dockerfile)
--	[`community-7.1.0`, `community`](https://github.com/couchbase/docker/blob/fdaa38c9abfb3e9ed81f622c0f9e91f8e6ba986f/community/couchbase-server/7.1.0/x86_64/Dockerfile)
+-	[`7.1.1`, `enterprise-7.1.1`, `enterprise`, `latest`](https://github.com/couchbase/docker/blob/bfbb82c084ca3ada6252afbbcb3ca94bb65f1e58/enterprise/couchbase-server/7.1.1/Dockerfile)
+-	[`community-7.1.1`, `community`](https://github.com/couchbase/docker/blob/bfbb82c084ca3ada6252afbbcb3ca94bb65f1e58/community/couchbase-server/7.1.1/Dockerfile)
 -	[`7.0.3`, `enterprise-7.0.3`](https://github.com/couchbase/docker/blob/e3c274f39e02aa24e8dc7e486aefba916a7b747a/enterprise/couchbase-server/7.0.3/Dockerfile)
 -	[`community-7.0.2`](https://github.com/couchbase/docker/blob/aec4494ab5280caf567997d72714f57572a6315b/community/couchbase-server/7.0.2/Dockerfile)
 -	[`6.6.5`, `enterprise-6.6.5`](https://github.com/couchbase/docker/blob/aad4aa9714578906c0c993121654eaeba0bd907c/enterprise/couchbase-server/6.6.5/Dockerfile)
@@ -37,7 +37,7 @@ WARNING:
 	[https://github.com/couchbase/docker/issues](https://github.com/couchbase/docker/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/couchbase/)
+	[`amd64`](https://hub.docker.com/r/amd64/couchbase/), [`arm64v8`](https://hub.docker.com/r/arm64v8/couchbase/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/couchbase/` directory](https://github.com/docker-library/repo-info/blob/master/repos/couchbase) ([history](https://github.com/docker-library/repo-info/commits/master/repos/couchbase))  
