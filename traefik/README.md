@@ -24,10 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`v2.8.0-windowsservercore-1809`, `2.8.0-windowsservercore-1809`, `v2.8-windowsservercore-1809`, `2.8-windowsservercore-1809`, `vacherin-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/traefik/traefik-library-image/blob/618ff8df94a75762ae97ff4d99736ba52fe5bbbe/windows/1809/Dockerfile)
--	[`v2.8.0`, `2.8.0`, `v2.8`, `2.8`, `vacherin`, `latest`](https://github.com/traefik/traefik-library-image/blob/618ff8df94a75762ae97ff4d99736ba52fe5bbbe/alpine/Dockerfile)
--	[`v2.7.3-windowsservercore-1809`, `2.7.3-windowsservercore-1809`, `v2.7-windowsservercore-1809`, `2.7-windowsservercore-1809`, `epoisses-windowsservercore-1809`](https://github.com/traefik/traefik-library-image/blob/08f121c70d79bdeeb04f02a36eddebe55e13c63c/windows/1809/Dockerfile)
--	[`v2.7.3`, `2.7.3`, `v2.7`, `2.7`, `epoisses`](https://github.com/traefik/traefik-library-image/blob/08f121c70d79bdeeb04f02a36eddebe55e13c63c/alpine/Dockerfile)
+-	[`v2.8.1-windowsservercore-1809`, `2.8.1-windowsservercore-1809`, `v2.8-windowsservercore-1809`, `2.8-windowsservercore-1809`, `vacherin-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/traefik/traefik-library-image/blob/a88952be53ca873807f0bde453fa8e687b806fb3/windows/1809/Dockerfile)
+-	[`v2.8.1`, `2.8.1`, `v2.8`, `2.8`, `vacherin`, `latest`](https://github.com/traefik/traefik-library-image/blob/a88952be53ca873807f0bde453fa8e687b806fb3/alpine/Dockerfile)
 -	[`v1.7.34-windowsservercore-1809`, `1.7.34-windowsservercore-1809`, `v1.7-windowsservercore-1809`, `1.7-windowsservercore-1809`, `maroilles-windowsservercore-1809`](https://github.com/traefik/traefik-library-image/blob/4434758cf14bbd1ec9511b3f2a37b0a6ce846db6/windows/1809/Dockerfile)
 -	[`v1.7.34-alpine`, `1.7.34-alpine`, `v1.7-alpine`, `1.7-alpine`, `maroilles-alpine`](https://github.com/traefik/traefik-library-image/blob/4434758cf14bbd1ec9511b3f2a37b0a6ce846db6/alpine/Dockerfile)
 -	[`v1.7.34`, `1.7.34`, `v1.7`, `1.7`, `maroilles`](https://github.com/traefik/traefik-library-image/blob/4434758cf14bbd1ec9511b3f2a37b0a6ce846db6/scratch/Dockerfile)
