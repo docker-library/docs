@@ -26,7 +26,7 @@ WARNING:
 
 -	[`8.0.29`, `8.0`, `8`, `latest`, `8.0.29-oracle`, `8.0-oracle`, `8-oracle`, `oracle`](https://github.com/docker-library/mysql/blob/ea98f69d0bdab12f99731ed74e584317c246f3fd/8.0/Dockerfile.oracle)
 -	[`8.0.29-debian`, `8.0-debian`, `8-debian`, `debian`](https://github.com/docker-library/mysql/blob/6cb73371396bdfcc048a701fa4a4c9e3eee4fde4/8.0/Dockerfile.debian)
--	[`5.7.38`, `5.7`, `5`, `5.7.38-oracle`, `5.7-oracle`, `5-oracle`](https://github.com/docker-library/mysql/blob/ea98f69d0bdab12f99731ed74e584317c246f3fd/5.7/Dockerfile.oracle)
+-	[`5.7.38`, `5.7`, `5`, `5.7.38-oracle`, `5.7-oracle`, `5-oracle`](https://github.com/docker-library/mysql/blob/19f5517b96ee5ee2aafb93dd7932a5e6bd3f0bc8/5.7/Dockerfile.oracle)
 -	[`5.7.38-debian`, `5.7-debian`, `5-debian`](https://github.com/docker-library/mysql/blob/b22945da0ed9f152485cc68ff7565204e8d37db4/5.7/Dockerfile.debian)
 
 # Quick reference (cont.)
