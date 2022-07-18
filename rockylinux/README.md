@@ -61,7 +61,11 @@ Thank you for using Rocky Linux! We appreciate your feedback and welcome you to 
 
 # Rocky Linux image documentation
 
-The `rockylinux:latest` tag is always the most recent version currently available.
+The `rockylinux:latest` tag is intentionally missing. Please choose a major version (currently 8 or 9) tag, or a more specific tag to ensure you are pulling the version of Rocky Linux you want: e.g. `rockylinux:8` or `rockylinux:9`
+
+## Minimal variant
+
+In addition to the Base container, a Minimal container with microdnf and a stripped down dependency set is available by using any of the `-minimal` tags e.g. `rockylinux:9-minimal`
 
 ## Rolling builds
 
