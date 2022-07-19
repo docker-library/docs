@@ -24,24 +24,24 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`xenial`, `nd16.04`](https://github.com/neurodebian/dockerfiles/blob/97b3bc1860afafc294abbec1f95bc239ddeddd88/dockerfiles/xenial/Dockerfile)
--	[`xenial-non-free`, `nd16.04-non-free`](https://github.com/neurodebian/dockerfiles/blob/97b3bc1860afafc294abbec1f95bc239ddeddd88/dockerfiles/xenial-non-free/Dockerfile)
--	[`bionic`, `nd18.04`](https://github.com/neurodebian/dockerfiles/blob/97b3bc1860afafc294abbec1f95bc239ddeddd88/dockerfiles/bionic/Dockerfile)
--	[`bionic-non-free`, `nd18.04-non-free`](https://github.com/neurodebian/dockerfiles/blob/97b3bc1860afafc294abbec1f95bc239ddeddd88/dockerfiles/bionic-non-free/Dockerfile)
--	[`focal`, `nd20.04`](https://github.com/neurodebian/dockerfiles/blob/97b3bc1860afafc294abbec1f95bc239ddeddd88/dockerfiles/focal/Dockerfile)
--	[`focal-non-free`, `nd20.04-non-free`](https://github.com/neurodebian/dockerfiles/blob/97b3bc1860afafc294abbec1f95bc239ddeddd88/dockerfiles/focal-non-free/Dockerfile)
--	[`impish`, `nd21.10`](https://github.com/neurodebian/dockerfiles/blob/97b3bc1860afafc294abbec1f95bc239ddeddd88/dockerfiles/impish/Dockerfile)
--	[`impish-non-free`, `nd21.10-non-free`](https://github.com/neurodebian/dockerfiles/blob/97b3bc1860afafc294abbec1f95bc239ddeddd88/dockerfiles/impish-non-free/Dockerfile)
--	[`stretch`, `nd90`](https://github.com/neurodebian/dockerfiles/blob/97b3bc1860afafc294abbec1f95bc239ddeddd88/dockerfiles/stretch/Dockerfile)
--	[`stretch-non-free`, `nd90-non-free`](https://github.com/neurodebian/dockerfiles/blob/97b3bc1860afafc294abbec1f95bc239ddeddd88/dockerfiles/stretch-non-free/Dockerfile)
--	[`buster`, `nd100`](https://github.com/neurodebian/dockerfiles/blob/97b3bc1860afafc294abbec1f95bc239ddeddd88/dockerfiles/buster/Dockerfile)
--	[`buster-non-free`, `nd100-non-free`](https://github.com/neurodebian/dockerfiles/blob/97b3bc1860afafc294abbec1f95bc239ddeddd88/dockerfiles/buster-non-free/Dockerfile)
--	[`bullseye`, `nd110`, `latest`](https://github.com/neurodebian/dockerfiles/blob/97b3bc1860afafc294abbec1f95bc239ddeddd88/dockerfiles/bullseye/Dockerfile)
--	[`bullseye-non-free`, `nd110-non-free`, `non-free`](https://github.com/neurodebian/dockerfiles/blob/97b3bc1860afafc294abbec1f95bc239ddeddd88/dockerfiles/bullseye-non-free/Dockerfile)
--	[`bookworm`, `nd120`](https://github.com/neurodebian/dockerfiles/blob/97b3bc1860afafc294abbec1f95bc239ddeddd88/dockerfiles/bookworm/Dockerfile)
--	[`bookworm-non-free`, `nd120-non-free`](https://github.com/neurodebian/dockerfiles/blob/97b3bc1860afafc294abbec1f95bc239ddeddd88/dockerfiles/bookworm-non-free/Dockerfile)
--	[`sid`, `nd`](https://github.com/neurodebian/dockerfiles/blob/97b3bc1860afafc294abbec1f95bc239ddeddd88/dockerfiles/sid/Dockerfile)
--	[`sid-non-free`, `nd-non-free`](https://github.com/neurodebian/dockerfiles/blob/97b3bc1860afafc294abbec1f95bc239ddeddd88/dockerfiles/sid-non-free/Dockerfile)
+-	[`xenial`, `nd16.04`](https://github.com/neurodebian/dockerfiles/blob/c9aa5f02de44d51bfcd81af986829550b227daeb/dockerfiles/xenial/Dockerfile)
+-	[`xenial-non-free`, `nd16.04-non-free`](https://github.com/neurodebian/dockerfiles/blob/c9aa5f02de44d51bfcd81af986829550b227daeb/dockerfiles/xenial-non-free/Dockerfile)
+-	[`bionic`, `nd18.04`](https://github.com/neurodebian/dockerfiles/blob/c9aa5f02de44d51bfcd81af986829550b227daeb/dockerfiles/bionic/Dockerfile)
+-	[`bionic-non-free`, `nd18.04-non-free`](https://github.com/neurodebian/dockerfiles/blob/c9aa5f02de44d51bfcd81af986829550b227daeb/dockerfiles/bionic-non-free/Dockerfile)
+-	[`focal`, `nd20.04`](https://github.com/neurodebian/dockerfiles/blob/c9aa5f02de44d51bfcd81af986829550b227daeb/dockerfiles/focal/Dockerfile)
+-	[`focal-non-free`, `nd20.04-non-free`](https://github.com/neurodebian/dockerfiles/blob/c9aa5f02de44d51bfcd81af986829550b227daeb/dockerfiles/focal-non-free/Dockerfile)
+-	[`impish`, `nd21.10`](https://github.com/neurodebian/dockerfiles/blob/c9aa5f02de44d51bfcd81af986829550b227daeb/dockerfiles/impish/Dockerfile)
+-	[`impish-non-free`, `nd21.10-non-free`](https://github.com/neurodebian/dockerfiles/blob/c9aa5f02de44d51bfcd81af986829550b227daeb/dockerfiles/impish-non-free/Dockerfile)
+-	[`jammy`, `nd22.04`](https://github.com/neurodebian/dockerfiles/blob/c9aa5f02de44d51bfcd81af986829550b227daeb/dockerfiles/jammy/Dockerfile)
+-	[`jammy-non-free`, `nd22.04-non-free`](https://github.com/neurodebian/dockerfiles/blob/c9aa5f02de44d51bfcd81af986829550b227daeb/dockerfiles/jammy-non-free/Dockerfile)
+-	[`buster`, `nd100`](https://github.com/neurodebian/dockerfiles/blob/c9aa5f02de44d51bfcd81af986829550b227daeb/dockerfiles/buster/Dockerfile)
+-	[`buster-non-free`, `nd100-non-free`](https://github.com/neurodebian/dockerfiles/blob/c9aa5f02de44d51bfcd81af986829550b227daeb/dockerfiles/buster-non-free/Dockerfile)
+-	[`bullseye`, `nd110`, `latest`](https://github.com/neurodebian/dockerfiles/blob/c9aa5f02de44d51bfcd81af986829550b227daeb/dockerfiles/bullseye/Dockerfile)
+-	[`bullseye-non-free`, `nd110-non-free`, `non-free`](https://github.com/neurodebian/dockerfiles/blob/c9aa5f02de44d51bfcd81af986829550b227daeb/dockerfiles/bullseye-non-free/Dockerfile)
+-	[`bookworm`, `nd120`](https://github.com/neurodebian/dockerfiles/blob/c9aa5f02de44d51bfcd81af986829550b227daeb/dockerfiles/bookworm/Dockerfile)
+-	[`bookworm-non-free`, `nd120-non-free`](https://github.com/neurodebian/dockerfiles/blob/c9aa5f02de44d51bfcd81af986829550b227daeb/dockerfiles/bookworm-non-free/Dockerfile)
+-	[`sid`, `nd`](https://github.com/neurodebian/dockerfiles/blob/c9aa5f02de44d51bfcd81af986829550b227daeb/dockerfiles/sid/Dockerfile)
+-	[`sid-non-free`, `nd-non-free`](https://github.com/neurodebian/dockerfiles/blob/c9aa5f02de44d51bfcd81af986829550b227daeb/dockerfiles/sid-non-free/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -49,7 +49,7 @@ WARNING:
 	[https://github.com/neurodebian/dockerfiles/issues](https://github.com/neurodebian/dockerfiles/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/neurodebian/)
+	[`amd64`](https://hub.docker.com/r/amd64/neurodebian/), [`arm64v8`](https://hub.docker.com/r/arm64v8/neurodebian/), [`i386`](https://hub.docker.com/r/i386/neurodebian/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/neurodebian/` directory](https://github.com/docker-library/repo-info/blob/master/repos/neurodebian) ([history](https://github.com/docker-library/repo-info/commits/master/repos/neurodebian))  
