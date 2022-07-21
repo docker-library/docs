@@ -46,6 +46,7 @@ WARNING:
 -	[`3.8.6-ibm-semeru-17-focal`, `3.8-ibm-semeru-17-focal`, `3-ibm-semeru-17-focal`](https://github.com/carlossg/docker-maven/blob/ac292f26884bf2be9fe69f6e397da3b124c1e35c/ibm-semeru-17-focal/Dockerfile)
 -	[`3.8.6-amazoncorretto-11`, `3.8.6-amazoncorretto`, `3.8-amazoncorretto-11`, `3.8-amazoncorretto`, `3-amazoncorretto-11`, `3-amazoncorretto`, `amazoncorretto`](https://github.com/carlossg/docker-maven/blob/ac292f26884bf2be9fe69f6e397da3b124c1e35c/amazoncorretto-11/Dockerfile)
 -	[`3.8.6-amazoncorretto-17`, `3.8-amazoncorretto-17`, `3-amazoncorretto-17`](https://github.com/carlossg/docker-maven/blob/ac292f26884bf2be9fe69f6e397da3b124c1e35c/amazoncorretto-17/Dockerfile)
+-	[`3.8.6-amazoncorretto-18`, `3.8-amazoncorretto-18`, `3-amazoncorretto-18`](https://github.com/carlossg/docker-maven/blob/0545d94d9c644277672d1675a7116f34ef61a69b/amazoncorretto-18/Dockerfile)
 -	[`3.8.6-amazoncorretto-8`, `3.8-amazoncorretto-8`, `3-amazoncorretto-8`](https://github.com/carlossg/docker-maven/blob/ac292f26884bf2be9fe69f6e397da3b124c1e35c/amazoncorretto-8/Dockerfile)
 -	[`3.8.6-sapmachine-11`, `3.8-sapmachine-11`, `3-sapmachine-11`](https://github.com/carlossg/docker-maven/blob/ac292f26884bf2be9fe69f6e397da3b124c1e35c/sapmachine-11/Dockerfile)
 -	[`3.8.6-sapmachine-17`, `3.8.6-sapmachine`, `3.8-sapmachine-17`, `3.8-sapmachine`, `3-sapmachine-17`, `3-sapmachine`, `sapmachine`](https://github.com/carlossg/docker-maven/blob/ac292f26884bf2be9fe69f6e397da3b124c1e35c/sapmachine-17/Dockerfile)
