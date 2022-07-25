@@ -28,13 +28,13 @@ WARNING:
 
 ## Simple Tags
 
--	[`8.1.1-bullseye`, `8.1-bullseye`, `8-bullseye`, `bullseye`](https://github.com/IdentityPython/satosa-docker/blob/ae2f317df322553b13fc07042348828969868bfa/8.1/bullseye/Dockerfile)
--	[`8.1.1-alpine3.16`, `8.1-alpine3.16`, `8-alpine3.16`, `alpine3.16`, `8.1.1-alpine`, `8.1-alpine`, `8-alpine`, `alpine`](https://github.com/IdentityPython/satosa-docker/blob/ae2f317df322553b13fc07042348828969868bfa/8.1/alpine3.16/Dockerfile)
+-	[`8.1.1-bullseye`, `8.1-bullseye`, `8-bullseye`, `bullseye`](https://github.com/IdentityPython/satosa-docker/blob/f62013ad3b8a785b37b3acc2c0b0ead94aae8b95/8.1/bullseye/Dockerfile)
+-	[`8.1.1-alpine3.16`, `8.1-alpine3.16`, `8-alpine3.16`, `alpine3.16`, `8.1.1-alpine`, `8.1-alpine`, `8-alpine`, `alpine`](https://github.com/IdentityPython/satosa-docker/blob/f62013ad3b8a785b37b3acc2c0b0ead94aae8b95/8.1/alpine3.16/Dockerfile)
 
 ## Shared Tags
 
 -	`8.1.1`, `8.1`, `8`, `latest`:
-	-	[`8.1.1-bullseye`](https://github.com/IdentityPython/satosa-docker/blob/ae2f317df322553b13fc07042348828969868bfa/8.1/bullseye/Dockerfile)
+	-	[`8.1.1-bullseye`](https://github.com/IdentityPython/satosa-docker/blob/f62013ad3b8a785b37b3acc2c0b0ead94aae8b95/8.1/bullseye/Dockerfile)
 
 # Quick reference (cont.)
 
