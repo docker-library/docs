@@ -28,63 +28,45 @@ WARNING:
 
 ## Simple Tags
 
--	[`1.19rc2-bullseye`, `1.19-rc-bullseye`](https://github.com/docker-library/golang/blob/93e59e7a57a9c20a4468d16b96b007be58743b9f/1.19-rc/bullseye/Dockerfile)
--	[`1.19rc2-buster`, `1.19-rc-buster`](https://github.com/docker-library/golang/blob/93e59e7a57a9c20a4468d16b96b007be58743b9f/1.19-rc/buster/Dockerfile)
--	[`1.19rc2-alpine3.16`, `1.19-rc-alpine3.16`, `1.19rc2-alpine`, `1.19-rc-alpine`](https://github.com/docker-library/golang/blob/93e59e7a57a9c20a4468d16b96b007be58743b9f/1.19-rc/alpine3.16/Dockerfile)
--	[`1.19rc2-alpine3.15`, `1.19-rc-alpine3.15`](https://github.com/docker-library/golang/blob/93e59e7a57a9c20a4468d16b96b007be58743b9f/1.19-rc/alpine3.15/Dockerfile)
--	[`1.19rc2-windowsservercore-ltsc2022`, `1.19-rc-windowsservercore-ltsc2022`](https://github.com/docker-library/golang/blob/93e59e7a57a9c20a4468d16b96b007be58743b9f/1.19-rc/windows/windowsservercore-ltsc2022/Dockerfile)
--	[`1.19rc2-windowsservercore-1809`, `1.19-rc-windowsservercore-1809`](https://github.com/docker-library/golang/blob/93e59e7a57a9c20a4468d16b96b007be58743b9f/1.19-rc/windows/windowsservercore-1809/Dockerfile)
--	[`1.19rc2-nanoserver-ltsc2022`, `1.19-rc-nanoserver-ltsc2022`](https://github.com/docker-library/golang/blob/93e59e7a57a9c20a4468d16b96b007be58743b9f/1.19-rc/windows/nanoserver-ltsc2022/Dockerfile)
--	[`1.19rc2-nanoserver-1809`, `1.19-rc-nanoserver-1809`](https://github.com/docker-library/golang/blob/93e59e7a57a9c20a4468d16b96b007be58743b9f/1.19-rc/windows/nanoserver-1809/Dockerfile)
--	[`1.18.5-bullseye`, `1.18-bullseye`, `1-bullseye`, `bullseye`](https://github.com/docker-library/golang/blob/8d0fa6028120904e16fe761f095bd0620b68eab2/1.18/bullseye/Dockerfile)
--	[`1.18.5-buster`, `1.18-buster`, `1-buster`, `buster`](https://github.com/docker-library/golang/blob/8d0fa6028120904e16fe761f095bd0620b68eab2/1.18/buster/Dockerfile)
--	[`1.18.5-alpine3.16`, `1.18-alpine3.16`, `1-alpine3.16`, `alpine3.16`, `1.18.5-alpine`, `1.18-alpine`, `1-alpine`, `alpine`](https://github.com/docker-library/golang/blob/8d0fa6028120904e16fe761f095bd0620b68eab2/1.18/alpine3.16/Dockerfile)
--	[`1.18.5-alpine3.15`, `1.18-alpine3.15`, `1-alpine3.15`, `alpine3.15`](https://github.com/docker-library/golang/blob/8d0fa6028120904e16fe761f095bd0620b68eab2/1.18/alpine3.15/Dockerfile)
--	[`1.18.5-windowsservercore-ltsc2022`, `1.18-windowsservercore-ltsc2022`, `1-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`](https://github.com/docker-library/golang/blob/8d0fa6028120904e16fe761f095bd0620b68eab2/1.18/windows/windowsservercore-ltsc2022/Dockerfile)
--	[`1.18.5-windowsservercore-1809`, `1.18-windowsservercore-1809`, `1-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/docker-library/golang/blob/8d0fa6028120904e16fe761f095bd0620b68eab2/1.18/windows/windowsservercore-1809/Dockerfile)
--	[`1.18.5-nanoserver-ltsc2022`, `1.18-nanoserver-ltsc2022`, `1-nanoserver-ltsc2022`, `nanoserver-ltsc2022`](https://github.com/docker-library/golang/blob/8d0fa6028120904e16fe761f095bd0620b68eab2/1.18/windows/nanoserver-ltsc2022/Dockerfile)
--	[`1.18.5-nanoserver-1809`, `1.18-nanoserver-1809`, `1-nanoserver-1809`, `nanoserver-1809`](https://github.com/docker-library/golang/blob/8d0fa6028120904e16fe761f095bd0620b68eab2/1.18/windows/nanoserver-1809/Dockerfile)
--	[`1.17.13-bullseye`, `1.17-bullseye`](https://github.com/docker-library/golang/blob/db9cd9d03a82276dba00e1c2df901b411a2e351e/1.17/bullseye/Dockerfile)
--	[`1.17.13-buster`, `1.17-buster`](https://github.com/docker-library/golang/blob/db9cd9d03a82276dba00e1c2df901b411a2e351e/1.17/buster/Dockerfile)
--	[`1.17.13-alpine3.16`, `1.17-alpine3.16`, `1.17.13-alpine`, `1.17-alpine`](https://github.com/docker-library/golang/blob/db9cd9d03a82276dba00e1c2df901b411a2e351e/1.17/alpine3.16/Dockerfile)
--	[`1.17.13-alpine3.15`, `1.17-alpine3.15`](https://github.com/docker-library/golang/blob/db9cd9d03a82276dba00e1c2df901b411a2e351e/1.17/alpine3.15/Dockerfile)
--	[`1.17.13-windowsservercore-ltsc2022`, `1.17-windowsservercore-ltsc2022`](https://github.com/docker-library/golang/blob/db9cd9d03a82276dba00e1c2df901b411a2e351e/1.17/windows/windowsservercore-ltsc2022/Dockerfile)
--	[`1.17.13-windowsservercore-1809`, `1.17-windowsservercore-1809`](https://github.com/docker-library/golang/blob/db9cd9d03a82276dba00e1c2df901b411a2e351e/1.17/windows/windowsservercore-1809/Dockerfile)
--	[`1.17.13-nanoserver-ltsc2022`, `1.17-nanoserver-ltsc2022`](https://github.com/docker-library/golang/blob/db9cd9d03a82276dba00e1c2df901b411a2e351e/1.17/windows/nanoserver-ltsc2022/Dockerfile)
--	[`1.17.13-nanoserver-1809`, `1.17-nanoserver-1809`](https://github.com/docker-library/golang/blob/db9cd9d03a82276dba00e1c2df901b411a2e351e/1.17/windows/nanoserver-1809/Dockerfile)
+-	[`1.19.0-bullseye`, `1.19-bullseye`, `1-bullseye`, `bullseye`](https://github.com/docker-library/golang/blob/6f4696d322b54396301b59e672ec35f39f862842/1.19/bullseye/Dockerfile)
+-	[`1.19.0-buster`, `1.19-buster`, `1-buster`, `buster`](https://github.com/docker-library/golang/blob/6f4696d322b54396301b59e672ec35f39f862842/1.19/buster/Dockerfile)
+-	[`1.19.0-alpine3.16`, `1.19-alpine3.16`, `1-alpine3.16`, `alpine3.16`, `1.19.0-alpine`, `1.19-alpine`, `1-alpine`, `alpine`](https://github.com/docker-library/golang/blob/6f4696d322b54396301b59e672ec35f39f862842/1.19/alpine3.16/Dockerfile)
+-	[`1.19.0-alpine3.15`, `1.19-alpine3.15`, `1-alpine3.15`, `alpine3.15`](https://github.com/docker-library/golang/blob/6f4696d322b54396301b59e672ec35f39f862842/1.19/alpine3.15/Dockerfile)
+-	[`1.19.0-windowsservercore-ltsc2022`, `1.19-windowsservercore-ltsc2022`, `1-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`](https://github.com/docker-library/golang/blob/6f4696d322b54396301b59e672ec35f39f862842/1.19/windows/windowsservercore-ltsc2022/Dockerfile)
+-	[`1.19.0-windowsservercore-1809`, `1.19-windowsservercore-1809`, `1-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/docker-library/golang/blob/6f4696d322b54396301b59e672ec35f39f862842/1.19/windows/windowsservercore-1809/Dockerfile)
+-	[`1.19.0-nanoserver-ltsc2022`, `1.19-nanoserver-ltsc2022`, `1-nanoserver-ltsc2022`, `nanoserver-ltsc2022`](https://github.com/docker-library/golang/blob/6f4696d322b54396301b59e672ec35f39f862842/1.19/windows/nanoserver-ltsc2022/Dockerfile)
+-	[`1.19.0-nanoserver-1809`, `1.19-nanoserver-1809`, `1-nanoserver-1809`, `nanoserver-1809`](https://github.com/docker-library/golang/blob/6f4696d322b54396301b59e672ec35f39f862842/1.19/windows/nanoserver-1809/Dockerfile)
+-	[`1.18.5-bullseye`, `1.18-bullseye`](https://github.com/docker-library/golang/blob/8d0fa6028120904e16fe761f095bd0620b68eab2/1.18/bullseye/Dockerfile)
+-	[`1.18.5-buster`, `1.18-buster`](https://github.com/docker-library/golang/blob/8d0fa6028120904e16fe761f095bd0620b68eab2/1.18/buster/Dockerfile)
+-	[`1.18.5-alpine3.16`, `1.18-alpine3.16`, `1.18.5-alpine`, `1.18-alpine`](https://github.com/docker-library/golang/blob/8d0fa6028120904e16fe761f095bd0620b68eab2/1.18/alpine3.16/Dockerfile)
+-	[`1.18.5-alpine3.15`, `1.18-alpine3.15`](https://github.com/docker-library/golang/blob/8d0fa6028120904e16fe761f095bd0620b68eab2/1.18/alpine3.15/Dockerfile)
+-	[`1.18.5-windowsservercore-ltsc2022`, `1.18-windowsservercore-ltsc2022`](https://github.com/docker-library/golang/blob/8d0fa6028120904e16fe761f095bd0620b68eab2/1.18/windows/windowsservercore-ltsc2022/Dockerfile)
+-	[`1.18.5-windowsservercore-1809`, `1.18-windowsservercore-1809`](https://github.com/docker-library/golang/blob/8d0fa6028120904e16fe761f095bd0620b68eab2/1.18/windows/windowsservercore-1809/Dockerfile)
+-	[`1.18.5-nanoserver-ltsc2022`, `1.18-nanoserver-ltsc2022`](https://github.com/docker-library/golang/blob/8d0fa6028120904e16fe761f095bd0620b68eab2/1.18/windows/nanoserver-ltsc2022/Dockerfile)
+-	[`1.18.5-nanoserver-1809`, `1.18-nanoserver-1809`](https://github.com/docker-library/golang/blob/8d0fa6028120904e16fe761f095bd0620b68eab2/1.18/windows/nanoserver-1809/Dockerfile)
 
 ## Shared Tags
 
--	`1.19rc2`, `1.19-rc`:
-	-	[`1.19rc2-bullseye`](https://github.com/docker-library/golang/blob/93e59e7a57a9c20a4468d16b96b007be58743b9f/1.19-rc/bullseye/Dockerfile)
-	-	[`1.19rc2-windowsservercore-ltsc2022`](https://github.com/docker-library/golang/blob/93e59e7a57a9c20a4468d16b96b007be58743b9f/1.19-rc/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`1.19rc2-windowsservercore-1809`](https://github.com/docker-library/golang/blob/93e59e7a57a9c20a4468d16b96b007be58743b9f/1.19-rc/windows/windowsservercore-1809/Dockerfile)
--	`1.19rc2-windowsservercore`, `1.19-rc-windowsservercore`:
-	-	[`1.19rc2-windowsservercore-ltsc2022`](https://github.com/docker-library/golang/blob/93e59e7a57a9c20a4468d16b96b007be58743b9f/1.19-rc/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`1.19rc2-windowsservercore-1809`](https://github.com/docker-library/golang/blob/93e59e7a57a9c20a4468d16b96b007be58743b9f/1.19-rc/windows/windowsservercore-1809/Dockerfile)
--	`1.19rc2-nanoserver`, `1.19-rc-nanoserver`:
-	-	[`1.19rc2-nanoserver-ltsc2022`](https://github.com/docker-library/golang/blob/93e59e7a57a9c20a4468d16b96b007be58743b9f/1.19-rc/windows/nanoserver-ltsc2022/Dockerfile)
-	-	[`1.19rc2-nanoserver-1809`](https://github.com/docker-library/golang/blob/93e59e7a57a9c20a4468d16b96b007be58743b9f/1.19-rc/windows/nanoserver-1809/Dockerfile)
--	`1.18.5`, `1.18`, `1`, `latest`:
+-	`1.19.0`, `1.19`, `1`, `latest`:
+	-	[`1.19.0-bullseye`](https://github.com/docker-library/golang/blob/6f4696d322b54396301b59e672ec35f39f862842/1.19/bullseye/Dockerfile)
+	-	[`1.19.0-windowsservercore-ltsc2022`](https://github.com/docker-library/golang/blob/6f4696d322b54396301b59e672ec35f39f862842/1.19/windows/windowsservercore-ltsc2022/Dockerfile)
+	-	[`1.19.0-windowsservercore-1809`](https://github.com/docker-library/golang/blob/6f4696d322b54396301b59e672ec35f39f862842/1.19/windows/windowsservercore-1809/Dockerfile)
+-	`1.19.0-windowsservercore`, `1.19-windowsservercore`, `1-windowsservercore`, `windowsservercore`:
+	-	[`1.19.0-windowsservercore-ltsc2022`](https://github.com/docker-library/golang/blob/6f4696d322b54396301b59e672ec35f39f862842/1.19/windows/windowsservercore-ltsc2022/Dockerfile)
+	-	[`1.19.0-windowsservercore-1809`](https://github.com/docker-library/golang/blob/6f4696d322b54396301b59e672ec35f39f862842/1.19/windows/windowsservercore-1809/Dockerfile)
+-	`1.19.0-nanoserver`, `1.19-nanoserver`, `1-nanoserver`, `nanoserver`:
+	-	[`1.19.0-nanoserver-ltsc2022`](https://github.com/docker-library/golang/blob/6f4696d322b54396301b59e672ec35f39f862842/1.19/windows/nanoserver-ltsc2022/Dockerfile)
+	-	[`1.19.0-nanoserver-1809`](https://github.com/docker-library/golang/blob/6f4696d322b54396301b59e672ec35f39f862842/1.19/windows/nanoserver-1809/Dockerfile)
+-	`1.18.5`, `1.18`:
 	-	[`1.18.5-bullseye`](https://github.com/docker-library/golang/blob/8d0fa6028120904e16fe761f095bd0620b68eab2/1.18/bullseye/Dockerfile)
 	-	[`1.18.5-windowsservercore-ltsc2022`](https://github.com/docker-library/golang/blob/8d0fa6028120904e16fe761f095bd0620b68eab2/1.18/windows/windowsservercore-ltsc2022/Dockerfile)
 	-	[`1.18.5-windowsservercore-1809`](https://github.com/docker-library/golang/blob/8d0fa6028120904e16fe761f095bd0620b68eab2/1.18/windows/windowsservercore-1809/Dockerfile)
--	`1.18.5-windowsservercore`, `1.18-windowsservercore`, `1-windowsservercore`, `windowsservercore`:
+-	`1.18.5-windowsservercore`, `1.18-windowsservercore`:
 	-	[`1.18.5-windowsservercore-ltsc2022`](https://github.com/docker-library/golang/blob/8d0fa6028120904e16fe761f095bd0620b68eab2/1.18/windows/windowsservercore-ltsc2022/Dockerfile)
 	-	[`1.18.5-windowsservercore-1809`](https://github.com/docker-library/golang/blob/8d0fa6028120904e16fe761f095bd0620b68eab2/1.18/windows/windowsservercore-1809/Dockerfile)
--	`1.18.5-nanoserver`, `1.18-nanoserver`, `1-nanoserver`, `nanoserver`:
+-	`1.18.5-nanoserver`, `1.18-nanoserver`:
 	-	[`1.18.5-nanoserver-ltsc2022`](https://github.com/docker-library/golang/blob/8d0fa6028120904e16fe761f095bd0620b68eab2/1.18/windows/nanoserver-ltsc2022/Dockerfile)
 	-	[`1.18.5-nanoserver-1809`](https://github.com/docker-library/golang/blob/8d0fa6028120904e16fe761f095bd0620b68eab2/1.18/windows/nanoserver-1809/Dockerfile)
--	`1.17.13`, `1.17`:
-	-	[`1.17.13-bullseye`](https://github.com/docker-library/golang/blob/db9cd9d03a82276dba00e1c2df901b411a2e351e/1.17/bullseye/Dockerfile)
-	-	[`1.17.13-windowsservercore-ltsc2022`](https://github.com/docker-library/golang/blob/db9cd9d03a82276dba00e1c2df901b411a2e351e/1.17/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`1.17.13-windowsservercore-1809`](https://github.com/docker-library/golang/blob/db9cd9d03a82276dba00e1c2df901b411a2e351e/1.17/windows/windowsservercore-1809/Dockerfile)
--	`1.17.13-windowsservercore`, `1.17-windowsservercore`:
-	-	[`1.17.13-windowsservercore-ltsc2022`](https://github.com/docker-library/golang/blob/db9cd9d03a82276dba00e1c2df901b411a2e351e/1.17/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`1.17.13-windowsservercore-1809`](https://github.com/docker-library/golang/blob/db9cd9d03a82276dba00e1c2df901b411a2e351e/1.17/windows/windowsservercore-1809/Dockerfile)
--	`1.17.13-nanoserver`, `1.17-nanoserver`:
-	-	[`1.17.13-nanoserver-ltsc2022`](https://github.com/docker-library/golang/blob/db9cd9d03a82276dba00e1c2df901b411a2e351e/1.17/windows/nanoserver-ltsc2022/Dockerfile)
-	-	[`1.17.13-nanoserver-1809`](https://github.com/docker-library/golang/blob/db9cd9d03a82276dba00e1c2df901b411a2e351e/1.17/windows/nanoserver-1809/Dockerfile)
 
 # Quick reference (cont.)
 
