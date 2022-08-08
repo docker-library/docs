@@ -24,7 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.2.7-python38`, `5.2-python38`, `5-python38`, `python38`, `5.2.7`, `5.2`, `5`, `latest`](https://github.com/plone/plone.docker/blob/d17783d696042a3e9c2214c289306493e75f5ddc/5.2/5.2.7/debian/Dockerfile)
+-	[`5.2.9-python38`, `5.2-python38`, `5-python38`, `python38`, `5.2.9`, `5.2`, `5`, `latest`](https://github.com/plone/plone.docker/blob/dfb126db2d9c956d84ff381e7b1ee9f642edf716/5.2/5.2.9/debian/Dockerfile)
+-	[`5.2.8-python38`, `5.2.8`](https://github.com/plone/plone.docker/blob/dfb126db2d9c956d84ff381e7b1ee9f642edf716/5.2/5.2.8/debian/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -32,7 +33,7 @@ WARNING:
 	[https://github.com/plone/plone.docker/issues](https://github.com/plone/plone.docker/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/plone/)
+	[`amd64`](https://hub.docker.com/r/amd64/plone/), [`arm64v8`](https://hub.docker.com/r/arm64v8/plone/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/plone/` directory](https://github.com/docker-library/repo-info/blob/master/repos/plone) ([history](https://github.com/docker-library/repo-info/commits/master/repos/plone))  
