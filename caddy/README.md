@@ -119,7 +119,7 @@ $ docker run -d -p 80:80 \
 The default `Caddyfile` only listens to port `80`, and does not set up automatic TLS. However, if you have a domain name for your site, and its A/AAAA DNS records are properly pointed to this machine's public IP, then you can use this command to simply serve a site over HTTPS:
 
 ```console
-$ docker run -d -p 80:80 -p 443:443 \
+$ docker run -d -p 80:80 -p 443:443 -p 443:443/udp \
     -v /site:/srv \
     -v caddy_data:/data \
     -v caddy_config:/config \
@@ -193,6 +193,7 @@ services:
     ports:
       - "80:80"
       - "443:443"
+      - "443:443/udp"
     volumes:
       - $PWD/Caddyfile:/etc/caddy/Caddyfile
       - $PWD/site:/srv
