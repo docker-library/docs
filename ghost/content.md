@@ -11,7 +11,7 @@ Ghost is a free and open source blogging platform written in JavaScript and dist
 This will start a Ghost instance listening on the default Ghost port of 2368.
 
 ```console
-$ docker run -d --name some-ghost %%IMAGE%%
+$ docker run -d --name some-ghost -e NODE_ENV=development %%IMAGE%%
 ```
 
 ## Custom port
@@ -19,7 +19,7 @@ $ docker run -d --name some-ghost %%IMAGE%%
 If you'd like to be able to access the instance from the host without the container's IP, standard port mappings can be used:
 
 ```console
-$ docker run -d --name some-ghost -e url=http://localhost:3001 -p 3001:2368 %%IMAGE%%
+$ docker run -d --name some-ghost -e NODE_ENV=development -e url=http://localhost:3001 -p 3001:2368 %%IMAGE%%
 ```
 
 If all goes well, you'll be able to access your new site on `http://localhost:3001` and `http://localhost:3001/ghost` to access Ghost Admin (or `http://host-ip:3001` and `http://host-ip:3001/ghost`, respectively).
@@ -35,7 +35,7 @@ For upgrading your Ghost container you will want to mount your data to the appro
 Mount your existing content. In this example we also use the Alpine base image.
 
 ```console
-$ docker run -d --name some-ghost -p 3001:2368 -v /path/to/ghost/blog:/var/lib/ghost/content %%IMAGE%%:alpine
+$ docker run -d --name some-ghost -e NODE_ENV=development -p 3001:2368 -v /path/to/ghost/blog:/var/lib/ghost/content %%IMAGE%%:alpine
 ```
 
 ### Docker Volume
@@ -43,19 +43,15 @@ $ docker run -d --name some-ghost -p 3001:2368 -v /path/to/ghost/blog:/var/lib/g
 Alternatively you can use a named [docker volume](https://docs.docker.com/storage/volumes/) instead of a direct host path for `/var/lib/ghost/content`:
 
 ```console
-$ docker run -d --name some-ghost -v some-ghost-data:/var/lib/ghost/content %%IMAGE%%
+$ docker run -d --name some-ghost -e NODE_ENV=development -v some-ghost-data:/var/lib/ghost/content %%IMAGE%%
 ```
-
-### SQLite Database
-
-This Docker image for Ghost uses SQLite. There is nothing special to configure.
 
 ## Configuration
 
 All Ghost configuration parameters (such as `url`) can be specified via environment variables. See [the Ghost documentation](https://ghost.org/docs/concepts/config/#running-ghost-with-config-env-variables) for details about what configuration is allowed and how to convert a nested configuration key into the appropriate environment variable name:
 
 ```console
-$ docker run -d --name some-ghost -e url=http://some-ghost.example.com %%IMAGE%%
+$ docker run -d --name some-ghost -e NODE_ENV=development -e url=http://some-ghost.example.com %%IMAGE%%
 ```
 
 (There are further configuration examples in the `stack.yml` listed below.)
