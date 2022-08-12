@@ -5,6 +5,7 @@ This image is officially deprecated and all users are recommended to find and us
 -	[`ibm-semeru-runtimes`](https://hub.docker.com/_/ibm-semeru-runtimes)
 -	[`ibmjava`](https://hub.docker.com/_/ibmjava)
 -	[`sapmachine`](https://hub.docker.com/_/sapmachine)
+-	[`zulu`](https://hub.docker.com/r/azul/zulu-openjdk)
 
 See [docker-library/openjdk#505](https://github.com/docker-library/openjdk/issues/505) for more information.
 
