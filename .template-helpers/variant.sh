@@ -102,7 +102,7 @@ if [ -n "$text" ]; then
 	default+=$'\n' # parameter expansion eats the trailing newline
 
 	if [ "$repo" != 'debian' ] && [ "$repo" != 'ubuntu' ]; then
-		# what is 'jessie', 'stretch' and 'sid'
+		# what is 'bullseye', 'buster' and 'sid'
 		# https://github.com/docker-library/python/issues/343
 		debian=( $(bashbrew list --uniq "$(_repo 'debian')" | grep -vE 'stable|slim|backports|experimental|testing' | cut -d: -f2) )
 		ubuntu=( $(bashbrew list "$(_repo 'ubuntu')" | grep -vE 'devel|latest|[0-9]' | cut -d: -f2) )
