@@ -8,7 +8,7 @@ Ghost is a free and open source blogging platform written in JavaScript and dist
 
 # How to use this image
 
-This will start a Ghost instance listening on the default Ghost port of 2368.
+This will start a Ghost development instance listening on the default Ghost port of 2368.
 
 ```console
 $ docker run -d --name some-ghost -e NODE_ENV=development %%IMAGE%%
@@ -68,6 +68,12 @@ $ docker exec <container-id> node --version
 ## Note about Ghost-CLI
 
 While the Docker images do have Ghost-CLI available and do use some of its commands to set up the base Ghost image, many of the other Ghost-CLI commands won't work correctly, and really aren't designed/intended to. For more info see [docker-library/ghost#156 (comment)](https://github.com/docker-library/ghost/issues/156#issuecomment-428159861)
+
+## Production mode
+
+To run Ghost for production you'll also need to be running with MySQL 8, https, and a reverse proxy configured with appropriate `X-Forwarded-For`, `X-Forwared-Host`, and `X-Forwarded-Proto` (`https`) headers.
+
+The following example demonstrates some of the necessary configuration for running with MySQL. For more detail, see [Ghost's "Configuration options" documentation](https://ghost.org/docs/config/#configuration-options).
 
 ## %%STACK%%
 
