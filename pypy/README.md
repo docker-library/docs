@@ -90,7 +90,7 @@ WARNING:
 	[https://github.com/docker-library/pypy/issues](https://github.com/docker-library/pypy/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/pypy/), [`arm64v8`](https://hub.docker.com/r/arm64v8/pypy/), [`i386`](https://hub.docker.com/r/i386/pypy/), [`s390x`](https://hub.docker.com/r/s390x/pypy/), [`windows-amd64`](https://hub.docker.com/r/winamd64/pypy/)
+	[`amd64`](https://hub.docker.com/r/amd64/pypy/), [`arm64v8`](https://hub.docker.com/r/arm64v8/pypy/), [`i386`](https://hub.docker.com/r/i386/pypy/), [`windows-amd64`](https://hub.docker.com/r/winamd64/pypy/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/pypy/` directory](https://github.com/docker-library/repo-info/blob/master/repos/pypy) ([history](https://github.com/docker-library/repo-info/commits/master/repos/pypy))  
