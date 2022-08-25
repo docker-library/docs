@@ -20,10 +20,10 @@ $ docker run --name some-%%REPO%% -d %%IMAGE%%:tag
 
 ## Connect to MongoDB from another Docker container
 
-The MongoDB server in the image listens on the standard MongoDB port, `27017`, so connecting via Docker networks will be the same as connecting to a remote `mongod`. The following example starts another MongoDB container instance and runs the `mongo` command line client against the original MongoDB container from the example above, allowing you to execute MongoDB statements against your database instance:
+The MongoDB server in the image listens on the standard MongoDB port, `27017`, so connecting via Docker networks will be the same as connecting to a remote `mongod`. The following example starts another MongoDB container instance and runs the `mongosh` (use `mongo` with `4.x` versions) command line client against the original MongoDB container from the example above, allowing you to execute MongoDB statements against your database instance:
 
 ```console
-$ docker run -it --network some-network --rm %%IMAGE%% mongo --host some-%%REPO%% test
+$ docker run -it --network some-network --rm %%IMAGE%% mongosh --host some-%%REPO%% test
 ```
 
 ... where `some-%%REPO%%` is the name of your original `mongo` container.
@@ -104,7 +104,7 @@ When you start the `%%REPO%%` image, you can adjust the initialization of the Mo
 
 These variables, used in conjunction, create a new user and set that user's password. This user is created in the `admin` [authentication database](https://docs.mongodb.com/manual/core/security-users/#user-authentication-database) and given [the role of `root`](https://docs.mongodb.com/manual/reference/built-in-roles/#root), which is [a "superuser" role](https://docs.mongodb.com/manual/core/security-built-in-roles/#superuser-roles).
 
-The following is an example of using these two variables to create a MongoDB instance and then using the `mongo` cli to connect against the `admin` authentication database.
+The following is an example of using these two variables to create a MongoDB instance and then using the `mongosh` cli (use `mongo` with `4.x` versions) to connect against the `admin` authentication database.
 
 ```console
 $ docker run -d --network some-network --name some-%%REPO%% \
@@ -113,7 +113,7 @@ $ docker run -d --network some-network --name some-%%REPO%% \
 	%%IMAGE%%
 
 $ docker run -it --rm --network some-network %%IMAGE%% \
-	mongo --host some-mongo \
+	mongosh --host some-mongo \
 		-u mongoadmin \
 		-p secret \
 		--authenticationDatabase admin \
@@ -142,7 +142,7 @@ Currently, this is only supported for `MONGO_INITDB_ROOT_USERNAME` and `MONGO_IN
 
 # Initializing a fresh instance
 
-When a container is started for the first time it will execute files with extensions `.sh` and `.js` that are found in `/docker-entrypoint-initdb.d`. Files will be executed in alphabetical order. `.js` files will be executed by `mongo` using the database specified by the `MONGO_INITDB_DATABASE` variable, if it is present, or `test` otherwise. You may also switch databases within the `.js` script.
+When a container is started for the first time it will execute files with extensions `.sh` and `.js` that are found in `/docker-entrypoint-initdb.d`. Files will be executed in alphabetical order. `.js` files will be executed by `mongosh` (`mongo` on versions below 6) using the database specified by the `MONGO_INITDB_DATABASE` variable, if it is present, or `test` otherwise. You may also switch databases within the `.js` script.
 
 # Authentication
 
