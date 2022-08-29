@@ -76,22 +76,22 @@ WARNING:
 -	[`17.0.4.1_1-jre-nanoserver-ltsc2022`, `17-jre-nanoserver-ltsc2022`](https://github.com/adoptium/containers/blob/08dd7d416cee0fe00f1231351b521d577450133f/17/jre/windows/nanoserver-ltsc2022/Dockerfile.releases.full)
 -	[`17.0.4.1_1-jre-windowsservercore-1809`, `17-jre-windowsservercore-1809`](https://github.com/adoptium/containers/blob/08dd7d416cee0fe00f1231351b521d577450133f/17/jre/windows/windowsservercore-1809/Dockerfile.releases.full)
 -	[`17.0.4.1_1-jre-nanoserver-1809`, `17-jre-nanoserver-1809`](https://github.com/adoptium/containers/blob/08dd7d416cee0fe00f1231351b521d577450133f/17/jre/windows/nanoserver-1809/Dockerfile.releases.full)
--	[`18.0.2_9-jdk-alpine`, `18-jdk-alpine`, `18-alpine`](https://github.com/adoptium/containers/blob/a48ce1c120fb4ac0df2bc090c921b6095b021526/18/jdk/alpine/Dockerfile.releases.full)
--	[`18.0.2_9-jdk-focal`, `18-jdk-focal`, `18-focal`](https://github.com/adoptium/containers/blob/2f2799d96783495fd3e97a76c82b9cb0c0b567db/18/jdk/ubuntu/focal/Dockerfile.releases.full)
--	[`18.0.2_9-jdk-jammy`, `18-jdk-jammy`, `18-jammy`](https://github.com/adoptium/containers/blob/2f2799d96783495fd3e97a76c82b9cb0c0b567db/18/jdk/ubuntu/jammy/Dockerfile.releases.full)
--	[`18.0.2_9-jdk-centos7`, `18-jdk-centos7`, `18-centos7`](https://github.com/adoptium/containers/blob/2f2799d96783495fd3e97a76c82b9cb0c0b567db/18/jdk/centos/Dockerfile.releases.full)
--	[`18.0.2_9-jdk-windowsservercore-ltsc2022`, `18-jdk-windowsservercore-ltsc2022`, `18-windowsservercore-ltsc2022`](https://github.com/adoptium/containers/blob/da5d1b01783c266fd6ea878068adb9bdd414d234/18/jdk/windows/windowsservercore-ltsc2022/Dockerfile.releases.full)
--	[`18.0.2_9-jdk-nanoserver-ltsc2022`, `18-jdk-nanoserver-ltsc2022`, `18-nanoserver-ltsc2022`](https://github.com/adoptium/containers/blob/da5d1b01783c266fd6ea878068adb9bdd414d234/18/jdk/windows/nanoserver-ltsc2022/Dockerfile.releases.full)
--	[`18.0.2_9-jdk-windowsservercore-1809`, `18-jdk-windowsservercore-1809`, `18-windowsservercore-1809`](https://github.com/adoptium/containers/blob/da5d1b01783c266fd6ea878068adb9bdd414d234/18/jdk/windows/windowsservercore-1809/Dockerfile.releases.full)
--	[`18.0.2_9-jdk-nanoserver-1809`, `18-jdk-nanoserver-1809`, `18-nanoserver-1809`](https://github.com/adoptium/containers/blob/da5d1b01783c266fd6ea878068adb9bdd414d234/18/jdk/windows/nanoserver-1809/Dockerfile.releases.full)
--	[`18.0.2_9-jre-alpine`, `18-jre-alpine`](https://github.com/adoptium/containers/blob/a48ce1c120fb4ac0df2bc090c921b6095b021526/18/jre/alpine/Dockerfile.releases.full)
--	[`18.0.2_9-jre-focal`, `18-jre-focal`](https://github.com/adoptium/containers/blob/2f2799d96783495fd3e97a76c82b9cb0c0b567db/18/jre/ubuntu/focal/Dockerfile.releases.full)
--	[`18.0.2_9-jre-jammy`, `18-jre-jammy`](https://github.com/adoptium/containers/blob/2f2799d96783495fd3e97a76c82b9cb0c0b567db/18/jre/ubuntu/jammy/Dockerfile.releases.full)
--	[`18.0.2_9-jre-centos7`, `18-jre-centos7`](https://github.com/adoptium/containers/blob/2f2799d96783495fd3e97a76c82b9cb0c0b567db/18/jre/centos/Dockerfile.releases.full)
--	[`18.0.2_9-jre-windowsservercore-ltsc2022`, `18-jre-windowsservercore-ltsc2022`](https://github.com/adoptium/containers/blob/da5d1b01783c266fd6ea878068adb9bdd414d234/18/jre/windows/windowsservercore-ltsc2022/Dockerfile.releases.full)
--	[`18.0.2_9-jre-nanoserver-ltsc2022`, `18-jre-nanoserver-ltsc2022`](https://github.com/adoptium/containers/blob/da5d1b01783c266fd6ea878068adb9bdd414d234/18/jre/windows/nanoserver-ltsc2022/Dockerfile.releases.full)
--	[`18.0.2_9-jre-windowsservercore-1809`, `18-jre-windowsservercore-1809`](https://github.com/adoptium/containers/blob/da5d1b01783c266fd6ea878068adb9bdd414d234/18/jre/windows/windowsservercore-1809/Dockerfile.releases.full)
--	[`18.0.2_9-jre-nanoserver-1809`, `18-jre-nanoserver-1809`](https://github.com/adoptium/containers/blob/da5d1b01783c266fd6ea878068adb9bdd414d234/18/jre/windows/nanoserver-1809/Dockerfile.releases.full)
+-	[`18.0.2.1_1-jdk-alpine`, `18-jdk-alpine`, `18-alpine`](https://github.com/adoptium/containers/blob/c0bae0b597987abee553b443983acb3f8af2b7b0/18/jdk/alpine/Dockerfile.releases.full)
+-	[`18.0.2.1_1-jdk-focal`, `18-jdk-focal`, `18-focal`](https://github.com/adoptium/containers/blob/c0bae0b597987abee553b443983acb3f8af2b7b0/18/jdk/ubuntu/focal/Dockerfile.releases.full)
+-	[`18.0.2.1_1-jdk-jammy`, `18-jdk-jammy`, `18-jammy`](https://github.com/adoptium/containers/blob/c0bae0b597987abee553b443983acb3f8af2b7b0/18/jdk/ubuntu/jammy/Dockerfile.releases.full)
+-	[`18.0.2.1_1-jdk-centos7`, `18-jdk-centos7`, `18-centos7`](https://github.com/adoptium/containers/blob/c0bae0b597987abee553b443983acb3f8af2b7b0/18/jdk/centos/Dockerfile.releases.full)
+-	[`18.0.2.1_1-jdk-windowsservercore-ltsc2022`, `18-jdk-windowsservercore-ltsc2022`, `18-windowsservercore-ltsc2022`](https://github.com/adoptium/containers/blob/c0bae0b597987abee553b443983acb3f8af2b7b0/18/jdk/windows/windowsservercore-ltsc2022/Dockerfile.releases.full)
+-	[`18.0.2.1_1-jdk-nanoserver-ltsc2022`, `18-jdk-nanoserver-ltsc2022`, `18-nanoserver-ltsc2022`](https://github.com/adoptium/containers/blob/c0bae0b597987abee553b443983acb3f8af2b7b0/18/jdk/windows/nanoserver-ltsc2022/Dockerfile.releases.full)
+-	[`18.0.2.1_1-jdk-windowsservercore-1809`, `18-jdk-windowsservercore-1809`, `18-windowsservercore-1809`](https://github.com/adoptium/containers/blob/c0bae0b597987abee553b443983acb3f8af2b7b0/18/jdk/windows/windowsservercore-1809/Dockerfile.releases.full)
+-	[`18.0.2.1_1-jdk-nanoserver-1809`, `18-jdk-nanoserver-1809`, `18-nanoserver-1809`](https://github.com/adoptium/containers/blob/c0bae0b597987abee553b443983acb3f8af2b7b0/18/jdk/windows/nanoserver-1809/Dockerfile.releases.full)
+-	[`18.0.2.1_1-jre-alpine`, `18-jre-alpine`](https://github.com/adoptium/containers/blob/c0bae0b597987abee553b443983acb3f8af2b7b0/18/jre/alpine/Dockerfile.releases.full)
+-	[`18.0.2.1_1-jre-focal`, `18-jre-focal`](https://github.com/adoptium/containers/blob/c0bae0b597987abee553b443983acb3f8af2b7b0/18/jre/ubuntu/focal/Dockerfile.releases.full)
+-	[`18.0.2.1_1-jre-jammy`, `18-jre-jammy`](https://github.com/adoptium/containers/blob/c0bae0b597987abee553b443983acb3f8af2b7b0/18/jre/ubuntu/jammy/Dockerfile.releases.full)
+-	[`18.0.2.1_1-jre-centos7`, `18-jre-centos7`](https://github.com/adoptium/containers/blob/c0bae0b597987abee553b443983acb3f8af2b7b0/18/jre/centos/Dockerfile.releases.full)
+-	[`18.0.2.1_1-jre-windowsservercore-ltsc2022`, `18-jre-windowsservercore-ltsc2022`](https://github.com/adoptium/containers/blob/c0bae0b597987abee553b443983acb3f8af2b7b0/18/jre/windows/windowsservercore-ltsc2022/Dockerfile.releases.full)
+-	[`18.0.2.1_1-jre-nanoserver-ltsc2022`, `18-jre-nanoserver-ltsc2022`](https://github.com/adoptium/containers/blob/c0bae0b597987abee553b443983acb3f8af2b7b0/18/jre/windows/nanoserver-ltsc2022/Dockerfile.releases.full)
+-	[`18.0.2.1_1-jre-windowsservercore-1809`, `18-jre-windowsservercore-1809`](https://github.com/adoptium/containers/blob/c0bae0b597987abee553b443983acb3f8af2b7b0/18/jre/windows/windowsservercore-1809/Dockerfile.releases.full)
+-	[`18.0.2.1_1-jre-nanoserver-1809`, `18-jre-nanoserver-1809`](https://github.com/adoptium/containers/blob/c0bae0b597987abee553b443983acb3f8af2b7b0/18/jre/windows/nanoserver-1809/Dockerfile.releases.full)
 
 ## Shared Tags
 
@@ -155,26 +155,26 @@ WARNING:
 -	`17.0.4.1_1-jre-nanoserver`, `17-jre-nanoserver`:
 	-	[`17.0.4.1_1-jre-nanoserver-ltsc2022`](https://github.com/adoptium/containers/blob/08dd7d416cee0fe00f1231351b521d577450133f/17/jre/windows/nanoserver-ltsc2022/Dockerfile.releases.full)
 	-	[`17.0.4.1_1-jre-nanoserver-1809`](https://github.com/adoptium/containers/blob/08dd7d416cee0fe00f1231351b521d577450133f/17/jre/windows/nanoserver-1809/Dockerfile.releases.full)
--	`18.0.2_9-jdk`, `18-jdk`, `18`, `latest`:
-	-	[`18.0.2_9-jdk-jammy`](https://github.com/adoptium/containers/blob/2f2799d96783495fd3e97a76c82b9cb0c0b567db/18/jdk/ubuntu/jammy/Dockerfile.releases.full)
-	-	[`18.0.2_9-jdk-windowsservercore-ltsc2022`](https://github.com/adoptium/containers/blob/da5d1b01783c266fd6ea878068adb9bdd414d234/18/jdk/windows/windowsservercore-ltsc2022/Dockerfile.releases.full)
-	-	[`18.0.2_9-jdk-windowsservercore-1809`](https://github.com/adoptium/containers/blob/da5d1b01783c266fd6ea878068adb9bdd414d234/18/jdk/windows/windowsservercore-1809/Dockerfile.releases.full)
--	`18.0.2_9-jdk-windowsservercore`, `18-jdk-windowsservercore`, `18-windowsservercore`:
-	-	[`18.0.2_9-jdk-windowsservercore-ltsc2022`](https://github.com/adoptium/containers/blob/da5d1b01783c266fd6ea878068adb9bdd414d234/18/jdk/windows/windowsservercore-ltsc2022/Dockerfile.releases.full)
-	-	[`18.0.2_9-jdk-windowsservercore-1809`](https://github.com/adoptium/containers/blob/da5d1b01783c266fd6ea878068adb9bdd414d234/18/jdk/windows/windowsservercore-1809/Dockerfile.releases.full)
--	`18.0.2_9-jdk-nanoserver`, `18-jdk-nanoserver`, `18-nanoserver`:
-	-	[`18.0.2_9-jdk-nanoserver-ltsc2022`](https://github.com/adoptium/containers/blob/da5d1b01783c266fd6ea878068adb9bdd414d234/18/jdk/windows/nanoserver-ltsc2022/Dockerfile.releases.full)
-	-	[`18.0.2_9-jdk-nanoserver-1809`](https://github.com/adoptium/containers/blob/da5d1b01783c266fd6ea878068adb9bdd414d234/18/jdk/windows/nanoserver-1809/Dockerfile.releases.full)
--	`18.0.2_9-jre`, `18-jre`:
-	-	[`18.0.2_9-jre-jammy`](https://github.com/adoptium/containers/blob/2f2799d96783495fd3e97a76c82b9cb0c0b567db/18/jre/ubuntu/jammy/Dockerfile.releases.full)
-	-	[`18.0.2_9-jre-windowsservercore-ltsc2022`](https://github.com/adoptium/containers/blob/da5d1b01783c266fd6ea878068adb9bdd414d234/18/jre/windows/windowsservercore-ltsc2022/Dockerfile.releases.full)
-	-	[`18.0.2_9-jre-windowsservercore-1809`](https://github.com/adoptium/containers/blob/da5d1b01783c266fd6ea878068adb9bdd414d234/18/jre/windows/windowsservercore-1809/Dockerfile.releases.full)
--	`18.0.2_9-jre-windowsservercore`, `18-jre-windowsservercore`:
-	-	[`18.0.2_9-jre-windowsservercore-ltsc2022`](https://github.com/adoptium/containers/blob/da5d1b01783c266fd6ea878068adb9bdd414d234/18/jre/windows/windowsservercore-ltsc2022/Dockerfile.releases.full)
-	-	[`18.0.2_9-jre-windowsservercore-1809`](https://github.com/adoptium/containers/blob/da5d1b01783c266fd6ea878068adb9bdd414d234/18/jre/windows/windowsservercore-1809/Dockerfile.releases.full)
--	`18.0.2_9-jre-nanoserver`, `18-jre-nanoserver`:
-	-	[`18.0.2_9-jre-nanoserver-ltsc2022`](https://github.com/adoptium/containers/blob/da5d1b01783c266fd6ea878068adb9bdd414d234/18/jre/windows/nanoserver-ltsc2022/Dockerfile.releases.full)
-	-	[`18.0.2_9-jre-nanoserver-1809`](https://github.com/adoptium/containers/blob/da5d1b01783c266fd6ea878068adb9bdd414d234/18/jre/windows/nanoserver-1809/Dockerfile.releases.full)
+-	`18.0.2.1_1-jdk`, `18-jdk`, `18`, `latest`:
+	-	[`18.0.2.1_1-jdk-jammy`](https://github.com/adoptium/containers/blob/c0bae0b597987abee553b443983acb3f8af2b7b0/18/jdk/ubuntu/jammy/Dockerfile.releases.full)
+	-	[`18.0.2.1_1-jdk-windowsservercore-ltsc2022`](https://github.com/adoptium/containers/blob/c0bae0b597987abee553b443983acb3f8af2b7b0/18/jdk/windows/windowsservercore-ltsc2022/Dockerfile.releases.full)
+	-	[`18.0.2.1_1-jdk-windowsservercore-1809`](https://github.com/adoptium/containers/blob/c0bae0b597987abee553b443983acb3f8af2b7b0/18/jdk/windows/windowsservercore-1809/Dockerfile.releases.full)
+-	`18.0.2.1_1-jdk-windowsservercore`, `18-jdk-windowsservercore`, `18-windowsservercore`:
+	-	[`18.0.2.1_1-jdk-windowsservercore-ltsc2022`](https://github.com/adoptium/containers/blob/c0bae0b597987abee553b443983acb3f8af2b7b0/18/jdk/windows/windowsservercore-ltsc2022/Dockerfile.releases.full)
+	-	[`18.0.2.1_1-jdk-windowsservercore-1809`](https://github.com/adoptium/containers/blob/c0bae0b597987abee553b443983acb3f8af2b7b0/18/jdk/windows/windowsservercore-1809/Dockerfile.releases.full)
+-	`18.0.2.1_1-jdk-nanoserver`, `18-jdk-nanoserver`, `18-nanoserver`:
+	-	[`18.0.2.1_1-jdk-nanoserver-ltsc2022`](https://github.com/adoptium/containers/blob/c0bae0b597987abee553b443983acb3f8af2b7b0/18/jdk/windows/nanoserver-ltsc2022/Dockerfile.releases.full)
+	-	[`18.0.2.1_1-jdk-nanoserver-1809`](https://github.com/adoptium/containers/blob/c0bae0b597987abee553b443983acb3f8af2b7b0/18/jdk/windows/nanoserver-1809/Dockerfile.releases.full)
+-	`18.0.2.1_1-jre`, `18-jre`:
+	-	[`18.0.2.1_1-jre-jammy`](https://github.com/adoptium/containers/blob/c0bae0b597987abee553b443983acb3f8af2b7b0/18/jre/ubuntu/jammy/Dockerfile.releases.full)
+	-	[`18.0.2.1_1-jre-windowsservercore-ltsc2022`](https://github.com/adoptium/containers/blob/c0bae0b597987abee553b443983acb3f8af2b7b0/18/jre/windows/windowsservercore-ltsc2022/Dockerfile.releases.full)
+	-	[`18.0.2.1_1-jre-windowsservercore-1809`](https://github.com/adoptium/containers/blob/c0bae0b597987abee553b443983acb3f8af2b7b0/18/jre/windows/windowsservercore-1809/Dockerfile.releases.full)
+-	`18.0.2.1_1-jre-windowsservercore`, `18-jre-windowsservercore`:
+	-	[`18.0.2.1_1-jre-windowsservercore-ltsc2022`](https://github.com/adoptium/containers/blob/c0bae0b597987abee553b443983acb3f8af2b7b0/18/jre/windows/windowsservercore-ltsc2022/Dockerfile.releases.full)
+	-	[`18.0.2.1_1-jre-windowsservercore-1809`](https://github.com/adoptium/containers/blob/c0bae0b597987abee553b443983acb3f8af2b7b0/18/jre/windows/windowsservercore-1809/Dockerfile.releases.full)
+-	`18.0.2.1_1-jre-nanoserver`, `18-jre-nanoserver`:
+	-	[`18.0.2.1_1-jre-nanoserver-ltsc2022`](https://github.com/adoptium/containers/blob/c0bae0b597987abee553b443983acb3f8af2b7b0/18/jre/windows/nanoserver-ltsc2022/Dockerfile.releases.full)
+	-	[`18.0.2.1_1-jre-nanoserver-1809`](https://github.com/adoptium/containers/blob/c0bae0b597987abee553b443983acb3f8af2b7b0/18/jre/windows/nanoserver-1809/Dockerfile.releases.full)
 
 # Quick reference (cont.)
 
