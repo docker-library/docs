@@ -30,9 +30,9 @@ WARNING:
 -	[`14.4`, `14.4.2`, `14.4-mysql-tomcat`, `14.4.3-mysql-tomcat`](https://github.com/xwiki-contrib/docker-xwiki/blob/a1effa1dc51b3d3b478d7250ca1ffdbdc2bdeae7/14.4/mysql-tomcat/Dockerfile)
 -	[`14.4-postgres-tomcat`, `14.4.3-postgres-tomcat`](https://github.com/xwiki-contrib/docker-xwiki/blob/a1effa1dc51b3d3b478d7250ca1ffdbdc2bdeae7/14.4/postgres-tomcat/Dockerfile)
 -	[`14.4-mariadb-tomcat`, `14.4.3-mariadb-tomcat`](https://github.com/xwiki-contrib/docker-xwiki/blob/a1effa1dc51b3d3b478d7250ca1ffdbdc2bdeae7/14.4/mariadb-tomcat/Dockerfile)
--	[`13`, `13.10`, `13.10.8`, `13-mysql-tomcat`, `13.10-mysql-tomcat`, `13.10.8-mysql-tomcat`, `lts-mysql-tomcat`, `lts-mysql`, `lts`](https://github.com/xwiki-contrib/docker-xwiki/blob/a1effa1dc51b3d3b478d7250ca1ffdbdc2bdeae7/13/mysql-tomcat/Dockerfile)
--	[`13-postgres-tomcat`, `13.10-postgres-tomcat`, `13.10.8-postgres-tomcat`, `lts-postgres-tomcat`, `lts-postgres`](https://github.com/xwiki-contrib/docker-xwiki/blob/a1effa1dc51b3d3b478d7250ca1ffdbdc2bdeae7/13/postgres-tomcat/Dockerfile)
--	[`13-mariadb-tomcat`, `13.10-mariadb-tomcat`, `13.10.8-mariadb-tomcat`, `lts-mariadb-tomcat`, `lts-mariadb`](https://github.com/xwiki-contrib/docker-xwiki/blob/a1effa1dc51b3d3b478d7250ca1ffdbdc2bdeae7/13/mariadb-tomcat/Dockerfile)
+-	[`13`, `13.10`, `13.10.9`, `13-mysql-tomcat`, `13.10-mysql-tomcat`, `13.10.9-mysql-tomcat`, `lts-mysql-tomcat`, `lts-mysql`, `lts`](https://github.com/xwiki-contrib/docker-xwiki/blob/e7830964f092a72371da2c44ed870b63bd36af58/13/mysql-tomcat/Dockerfile)
+-	[`13-postgres-tomcat`, `13.10-postgres-tomcat`, `13.10.9-postgres-tomcat`, `lts-postgres-tomcat`, `lts-postgres`](https://github.com/xwiki-contrib/docker-xwiki/blob/e7830964f092a72371da2c44ed870b63bd36af58/13/postgres-tomcat/Dockerfile)
+-	[`13-mariadb-tomcat`, `13.10-mariadb-tomcat`, `13.10.9-mariadb-tomcat`, `lts-mariadb-tomcat`, `lts-mariadb`](https://github.com/xwiki-contrib/docker-xwiki/blob/e7830964f092a72371da2c44ed870b63bd36af58/13/mariadb-tomcat/Dockerfile)
 
 # Quick reference (cont.)
 
