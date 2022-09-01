@@ -24,12 +24,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`18.04`, `bionic-20220801`, `bionic`](https://github.com/tianon/docker-brew-ubuntu-core/blob/570d5970a8b18bc772ad2c3eb1ce8fd0887d991a/bionic/Dockerfile)
--	[`20.04`, `focal-20220801`, `focal`](https://github.com/tianon/docker-brew-ubuntu-core/blob/570d5970a8b18bc772ad2c3eb1ce8fd0887d991a/focal/Dockerfile)
--	[`22.04`, `jammy-20220801`, `jammy`, `latest`, `rolling`](https://github.com/tianon/docker-brew-ubuntu-core/blob/570d5970a8b18bc772ad2c3eb1ce8fd0887d991a/jammy/Dockerfile)
--	[`22.10`, `kinetic-20220801`, `kinetic`, `devel`](https://github.com/tianon/docker-brew-ubuntu-core/blob/570d5970a8b18bc772ad2c3eb1ce8fd0887d991a/kinetic/Dockerfile)
--	[`14.04`, `trusty-20191217`, `trusty`](https://github.com/tianon/docker-brew-ubuntu-core/blob/570d5970a8b18bc772ad2c3eb1ce8fd0887d991a/trusty/Dockerfile)
--	[`16.04`, `xenial-20210804`, `xenial`](https://github.com/tianon/docker-brew-ubuntu-core/blob/570d5970a8b18bc772ad2c3eb1ce8fd0887d991a/xenial/Dockerfile)
+-	[`18.04`, `bionic-20220829`, `bionic`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/bionic/Dockerfile?h=refs/heads/dist-amd64&id=0b99ba2f4ec4dbe55b72c6b1c81eed4393b33346)
+-	[`20.04`, `focal-20220826`, `focal`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/focal/Dockerfile?h=refs/heads/dist-amd64&id=0b99ba2f4ec4dbe55b72c6b1c81eed4393b33346)
+-	[`22.04`, `jammy-20220815`, `jammy`, `latest`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/jammy/Dockerfile?h=refs/heads/dist-amd64&id=0b99ba2f4ec4dbe55b72c6b1c81eed4393b33346)
+-	[`22.10`, `kinetic-20220830`, `kinetic`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/kinetic/Dockerfile?h=refs/heads/dist-amd64&id=0b99ba2f4ec4dbe55b72c6b1c81eed4393b33346)
+-	[`14.04`, `trusty-20191217`, `trusty`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/trusty/Dockerfile?h=refs/heads/dist-amd64&id=0b99ba2f4ec4dbe55b72c6b1c81eed4393b33346)
+-	[`16.04`, `xenial-20210804`, `xenial`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/xenial/Dockerfile?h=refs/heads/dist-amd64&id=0b99ba2f4ec4dbe55b72c6b1c81eed4393b33346)
 
 # Quick reference (cont.)
 
