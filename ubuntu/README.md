@@ -24,12 +24,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`18.04`, `bionic-20220829`, `bionic`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/bionic/Dockerfile?h=refs/heads/dist-amd64&id=0b99ba2f4ec4dbe55b72c6b1c81eed4393b33346)
--	[`20.04`, `focal-20220826`, `focal`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/focal/Dockerfile?h=refs/heads/dist-amd64&id=0b99ba2f4ec4dbe55b72c6b1c81eed4393b33346)
--	[`22.04`, `jammy-20220815`, `jammy`, `latest`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/jammy/Dockerfile?h=refs/heads/dist-amd64&id=0b99ba2f4ec4dbe55b72c6b1c81eed4393b33346)
--	[`22.10`, `kinetic-20220830`, `kinetic`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/kinetic/Dockerfile?h=refs/heads/dist-amd64&id=0b99ba2f4ec4dbe55b72c6b1c81eed4393b33346)
--	[`14.04`, `trusty-20191217`, `trusty`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/trusty/Dockerfile?h=refs/heads/dist-amd64&id=0b99ba2f4ec4dbe55b72c6b1c81eed4393b33346)
--	[`16.04`, `xenial-20210804`, `xenial`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/xenial/Dockerfile?h=refs/heads/dist-amd64&id=0b99ba2f4ec4dbe55b72c6b1c81eed4393b33346)
+-	[`18.04`, `bionic-20220902`, `bionic`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/bionic/Dockerfile?h=refs/heads/dist-amd64&id=67c49edefdf22f85b968f789723c71373e89f47d)
+-	[`20.04`, `focal-20220826`, `focal`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/focal/Dockerfile?h=refs/heads/dist-amd64&id=67c49edefdf22f85b968f789723c71373e89f47d)
+-	[`22.04`, `jammy-20220815`, `jammy`, `latest`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/jammy/Dockerfile?h=refs/heads/dist-amd64&id=67c49edefdf22f85b968f789723c71373e89f47d)
+-	[`22.10`, `kinetic-20220830`, `kinetic`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/kinetic/Dockerfile?h=refs/heads/dist-amd64&id=67c49edefdf22f85b968f789723c71373e89f47d)
+-	[`14.04`, `trusty-20191217`, `trusty`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/trusty/Dockerfile?h=refs/heads/dist-amd64&id=67c49edefdf22f85b968f789723c71373e89f47d)
+-	[`16.04`, `xenial-20210804`, `xenial`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/xenial/Dockerfile?h=refs/heads/dist-amd64&id=67c49edefdf22f85b968f789723c71373e89f47d)
 
 # Quick reference (cont.)
 
