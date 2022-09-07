@@ -24,10 +24,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.7-dev4`, `2.7-dev`, `2.7-dev4-bullseye`, `2.7-dev-bullseye`](https://github.com/docker-library/haproxy/blob/99d439b7734a20dea2ff263d90b85bfaf08f91a3/2.7/Dockerfile)
--	[`2.7-dev4-alpine`, `2.7-dev-alpine`, `2.7-dev4-alpine3.16`, `2.7-dev-alpine3.16`](https://github.com/docker-library/haproxy/blob/99d439b7734a20dea2ff263d90b85bfaf08f91a3/2.7/alpine/Dockerfile)
--	[`2.6.4`, `2.6`, `lts`, `latest`, `2.6.4-bullseye`, `2.6-bullseye`, `lts-bullseye`, `bullseye`](https://github.com/docker-library/haproxy/blob/84167192a0aa04397f9937ff620a06a8feed7de4/2.6/Dockerfile)
--	[`2.6.4-alpine`, `2.6-alpine`, `lts-alpine`, `alpine`, `2.6.4-alpine3.16`, `2.6-alpine3.16`, `lts-alpine3.16`, `alpine3.16`](https://github.com/docker-library/haproxy/blob/84167192a0aa04397f9937ff620a06a8feed7de4/2.6/alpine/Dockerfile)
+-	[`2.7-dev5`, `2.7-dev`, `2.7-dev5-bullseye`, `2.7-dev-bullseye`](https://github.com/docker-library/haproxy/blob/77ded33c252a6652730c7b1913f9d1352b310aba/2.7/Dockerfile)
+-	[`2.7-dev5-alpine`, `2.7-dev-alpine`, `2.7-dev5-alpine3.16`, `2.7-dev-alpine3.16`](https://github.com/docker-library/haproxy/blob/77ded33c252a6652730c7b1913f9d1352b310aba/2.7/alpine/Dockerfile)
+-	[`2.6.5`, `2.6`, `lts`, `latest`, `2.6.5-bullseye`, `2.6-bullseye`, `lts-bullseye`, `bullseye`](https://github.com/docker-library/haproxy/blob/039e62b8f996edea64e90cb7e0b98bfefab9cb64/2.6/Dockerfile)
+-	[`2.6.5-alpine`, `2.6-alpine`, `lts-alpine`, `alpine`, `2.6.5-alpine3.16`, `2.6-alpine3.16`, `lts-alpine3.16`, `alpine3.16`](https://github.com/docker-library/haproxy/blob/039e62b8f996edea64e90cb7e0b98bfefab9cb64/2.6/alpine/Dockerfile)
 -	[`2.5.8`, `2.5`, `2.5.8-bullseye`, `2.5-bullseye`](https://github.com/docker-library/haproxy/blob/4652e975be3db3a69221e68a103dae4e5891313b/2.5/Dockerfile)
 -	[`2.5.8-alpine`, `2.5-alpine`, `2.5.8-alpine3.16`, `2.5-alpine3.16`](https://github.com/docker-library/haproxy/blob/4652e975be3db3a69221e68a103dae4e5891313b/2.5/alpine/Dockerfile)
 -	[`2.4.18`, `2.4`, `2.4.18-bullseye`, `2.4-bullseye`](https://github.com/docker-library/haproxy/blob/d8a314a8b07f41e256995557e348800560543c93/2.4/Dockerfile)
