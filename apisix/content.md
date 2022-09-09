@@ -15,36 +15,19 @@ Apache APISIX supports stand-alone mode and also supports the use of etcd databa
 
 In stand-alone mode, APISIX uses `apisix.yaml` as the configuration center to store routing, upstream, consumer and other information. After APISIX is started, it will load the `apisix.yaml` file regularly to update the corresponding configuration information.
 
-The following command creates a configuration file for APISIX, and enables stand-alone mode.
-
-1. Create a APISIX configuration file in the current directory and use this file in the next step.
+You can start an APISIX container with stand-alone mode by the following command:
 
 ```
-$ cat << EOF > $(pwd)/config.yaml
-apisix:
-  enable_admin: false
-  config_center: yaml
-EOF
+$ docker run -d --name apache-apisix -p 9080:9080 -e APISIX_STAND_ALONE=true apache/apisix
 ```
 
-2. Start APISIX.
+Add Route and Plugin configuration to the running APISIX container:
 
 ```
-$ docker run -d \
-   --name apache-apisix \
-   -p 9080:9080 \
-   -v $(pwd)/config.yaml:/usr/local/apisix/conf/config.yaml \
-   apache/apisix
-```
-
-#### Modify stand-alone mode configuration file
-
-After completing the above steps, you can refer to the following example to write the Route and Plugin configuration to the `apisix.yaml` file.
-
-```
-$ cat << EOF > apisix.yaml
+$ docker exec -i apache-apisix sh -c 'cat > /usr/local/apisix/conf/apisix.yaml <<_EOC_
 routes:
   -
+    id: httpbin
     uri: /*
     upstream:
       nodes:
@@ -60,21 +43,7 @@ plugin_configs:
         body: "Hello APISIX\n"
     desc: "response-rewrite"
 #END
-EOF
-```
-
-You can use the following command to copy the `apisix.yaml` file to the APISIX container, reload APISIX and test whether the configuration takes effect.
-
-```
-$ docker cp apisix.yaml apache-apisix:/usr/local/apisix/conf && \
-docker exec -it apache-apisix apisix reload && \
-curl http://127.0.0.1:9080/anything
-```
-
-The response indicates that APISIX is running successfully:
-
-```
-Hello APISIX
+_EOC_'
 ```
 
 If you want to know more configuration examples, you can refer to [stand-alone](https://apisix.apache.org/docs/apisix/stand-alone).
