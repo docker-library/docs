@@ -1,6 +1,6 @@
 ## What is Apache APISIX API Gateway
 
-Apache APISIX is a dynamic, real-time, high-performance API Gateway.
+Apache APISIX is a dynamic, real-time, high-performance Cloud-Native API Gateway.
 
 APISIX API Gateway provides rich traffic management features such as load balancing, dynamic upstream, canary release, circuit breaking, authentication, observability, and more.
 

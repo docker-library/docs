@@ -1,1 +1,1 @@
-Apache APISIX is a dynamic, real-time, high-performance API Gateway.
+Apache APISIX is a dynamic, real-time, high-performance Cloud-Native API Gateway.
