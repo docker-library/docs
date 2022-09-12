@@ -24,14 +24,14 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.6.2`, `5.6`, `5.6.2-bionic`, `5.6-bionic`, `bionic`, `latest`](https://github.com/apple/swift-docker/blob/a7a878a4f87f03d15f4db68e60b41ba867091230/5.6/ubuntu/18.04/Dockerfile)
--	[`5.6.2-slim`, `5.6-slim`, `5.6.2-bionic-slim`, `5.6-bionic-slim`, `bionic-slim`, `slim`](https://github.com/apple/swift-docker/blob/a7a878a4f87f03d15f4db68e60b41ba867091230/5.6/ubuntu/18.04/slim/Dockerfile)
--	[`5.6.2-focal-slim`, `5.6-focal-slim`, `focal-slim`](https://github.com/apple/swift-docker/blob/a7a878a4f87f03d15f4db68e60b41ba867091230/5.6/ubuntu/20.04/slim/Dockerfile)
--	[`5.6.2-focal`, `5.6-focal`, `focal`](https://github.com/apple/swift-docker/blob/a7a878a4f87f03d15f4db68e60b41ba867091230/5.6/ubuntu/20.04/Dockerfile)
--	[`5.6.2-amazonlinux2`, `5.6-amazonlinux2`, `amazonlinux2`](https://github.com/apple/swift-docker/blob/a7a878a4f87f03d15f4db68e60b41ba867091230/5.6/amazonlinux/2/Dockerfile)
--	[`5.6.2-amazonlinux2-slim`, `5.6-amazonlinux2-slim`, `amazonlinux2-slim`](https://github.com/apple/swift-docker/blob/a7a878a4f87f03d15f4db68e60b41ba867091230/5.6/amazonlinux/2/slim/Dockerfile)
--	[`5.6.2-centos7`, `5.6-centos7`, `centos7`](https://github.com/apple/swift-docker/blob/a7a878a4f87f03d15f4db68e60b41ba867091230/5.6/centos/7/Dockerfile)
--	[`5.6.2-centos7-slim`, `5.6-centos7-slim`, `centos7-slim`](https://github.com/apple/swift-docker/blob/a7a878a4f87f03d15f4db68e60b41ba867091230/5.6/centos/7/slim/Dockerfile)
+-	[`5.6.3`, `5.6`, `5.6.3-bionic`, `5.6-bionic`, `bionic`, `latest`](https://github.com/apple/swift-docker/blob/1188cc86d15f9e98d90db9f98de3598d5d5f7bb2/5.6/ubuntu/18.04/Dockerfile)
+-	[`5.6.3-slim`, `5.6-slim`, `5.6.3-bionic-slim`, `5.6-bionic-slim`, `bionic-slim`, `slim`](https://github.com/apple/swift-docker/blob/1188cc86d15f9e98d90db9f98de3598d5d5f7bb2/5.6/ubuntu/18.04/slim/Dockerfile)
+-	[`5.6.3-focal-slim`, `5.6-focal-slim`, `focal-slim`](https://github.com/apple/swift-docker/blob/1188cc86d15f9e98d90db9f98de3598d5d5f7bb2/5.6/ubuntu/20.04/slim/Dockerfile)
+-	[`5.6.3-focal`, `5.6-focal`, `focal`](https://github.com/apple/swift-docker/blob/1188cc86d15f9e98d90db9f98de3598d5d5f7bb2/5.6/ubuntu/20.04/Dockerfile)
+-	[`5.6.3-amazonlinux2`, `5.6-amazonlinux2`, `amazonlinux2`](https://github.com/apple/swift-docker/blob/1188cc86d15f9e98d90db9f98de3598d5d5f7bb2/5.6/amazonlinux/2/Dockerfile)
+-	[`5.6.3-amazonlinux2-slim`, `5.6-amazonlinux2-slim`, `amazonlinux2-slim`](https://github.com/apple/swift-docker/blob/1188cc86d15f9e98d90db9f98de3598d5d5f7bb2/5.6/amazonlinux/2/slim/Dockerfile)
+-	[`5.6.3-centos7`, `5.6-centos7`, `centos7`](https://github.com/apple/swift-docker/blob/1188cc86d15f9e98d90db9f98de3598d5d5f7bb2/5.6/centos/7/Dockerfile)
+-	[`5.6.3-centos7-slim`, `5.6-centos7-slim`, `centos7-slim`](https://github.com/apple/swift-docker/blob/1188cc86d15f9e98d90db9f98de3598d5d5f7bb2/5.6/centos/7/slim/Dockerfile)
 -	[`5.5.3`, `5.5`, `5.5.3-bionic`, `5.5-bionic`](https://github.com/apple/swift-docker/blob/9394b31e064cf0d80eaab08b692a2886c7aea8fe/5.5/ubuntu/18.04/Dockerfile)
 -	[`5.5.3-xenial`, `5.5-xenial`, `xenial`](https://github.com/apple/swift-docker/blob/9394b31e064cf0d80eaab08b692a2886c7aea8fe/5.5/ubuntu/16.04/Dockerfile)
 -	[`5.5.3-slim`, `5.5-slim`, `5.5.3-bionic-slim`, `5.5-bionic-slim`](https://github.com/apple/swift-docker/blob/9394b31e064cf0d80eaab08b692a2886c7aea8fe/5.5/ubuntu/18.04/slim/Dockerfile)
