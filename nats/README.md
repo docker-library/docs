@@ -28,20 +28,20 @@ WARNING:
 
 ## Simple Tags
 
--	[`2.8.4-alpine3.15`, `2.8-alpine3.15`, `2-alpine3.15`, `alpine3.15`, `2.8.4-alpine`, `2.8-alpine`, `2-alpine`, `alpine`](https://github.com/nats-io/nats-docker/blob/cdf461304de5cd1c9a5f545a311911b20500ffc6/2.8.4/alpine3.15/Dockerfile)
--	[`2.8.4-scratch`, `2.8-scratch`, `2-scratch`, `scratch`, `2.8.4-linux`, `2.8-linux`, `2-linux`, `linux`](https://github.com/nats-io/nats-docker/blob/cdf461304de5cd1c9a5f545a311911b20500ffc6/2.8.4/scratch/Dockerfile)
--	[`2.8.4-windowsservercore-1809`, `2.8-windowsservercore-1809`, `2-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/nats-io/nats-docker/blob/cdf461304de5cd1c9a5f545a311911b20500ffc6/2.8.4/windowsservercore-1809/Dockerfile)
--	[`2.8.4-nanoserver-1809`, `2.8-nanoserver-1809`, `2-nanoserver-1809`, `nanoserver-1809`](https://github.com/nats-io/nats-docker/blob/cdf461304de5cd1c9a5f545a311911b20500ffc6/2.8.4/nanoserver-1809/Dockerfile)
+-	[`2.9.0-alpine3.16`, `2.9-alpine3.16`, `2-alpine3.16`, `alpine3.16`, `2.9.0-alpine`, `2.9-alpine`, `2-alpine`, `alpine`](https://github.com/nats-io/nats-docker/blob/848127316dc6c9d753bc22c5d38ee2f40841e2fd/2.9.0/alpine3.16/Dockerfile)
+-	[`2.9.0-scratch`, `2.9-scratch`, `2-scratch`, `scratch`, `2.9.0-linux`, `2.9-linux`, `2-linux`, `linux`](https://github.com/nats-io/nats-docker/blob/848127316dc6c9d753bc22c5d38ee2f40841e2fd/2.9.0/scratch/Dockerfile)
+-	[`2.9.0-windowsservercore-1809`, `2.9-windowsservercore-1809`, `2-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/nats-io/nats-docker/blob/848127316dc6c9d753bc22c5d38ee2f40841e2fd/2.9.0/windowsservercore-1809/Dockerfile)
+-	[`2.9.0-nanoserver-1809`, `2.9-nanoserver-1809`, `2-nanoserver-1809`, `nanoserver-1809`](https://github.com/nats-io/nats-docker/blob/848127316dc6c9d753bc22c5d38ee2f40841e2fd/2.9.0/nanoserver-1809/Dockerfile)
 
 ## Shared Tags
 
--	`2.8.4`, `2.8`, `2`, `latest`:
-	-	[`2.8.4-scratch`](https://github.com/nats-io/nats-docker/blob/cdf461304de5cd1c9a5f545a311911b20500ffc6/2.8.4/scratch/Dockerfile)
-	-	[`2.8.4-nanoserver-1809`](https://github.com/nats-io/nats-docker/blob/cdf461304de5cd1c9a5f545a311911b20500ffc6/2.8.4/nanoserver-1809/Dockerfile)
--	`2.8.4-windowsservercore`, `2.8-windowsservercore`, `2-windowsservercore`, `windowsservercore`:
-	-	[`2.8.4-windowsservercore-1809`](https://github.com/nats-io/nats-docker/blob/cdf461304de5cd1c9a5f545a311911b20500ffc6/2.8.4/windowsservercore-1809/Dockerfile)
--	`2.8.4-nanoserver`, `2.8-nanoserver`, `2-nanoserver`, `nanoserver`:
-	-	[`2.8.4-nanoserver-1809`](https://github.com/nats-io/nats-docker/blob/cdf461304de5cd1c9a5f545a311911b20500ffc6/2.8.4/nanoserver-1809/Dockerfile)
+-	`2.9.0`, `2.9`, `2`, `latest`:
+	-	[`2.9.0-scratch`](https://github.com/nats-io/nats-docker/blob/848127316dc6c9d753bc22c5d38ee2f40841e2fd/2.9.0/scratch/Dockerfile)
+	-	[`2.9.0-nanoserver-1809`](https://github.com/nats-io/nats-docker/blob/848127316dc6c9d753bc22c5d38ee2f40841e2fd/2.9.0/nanoserver-1809/Dockerfile)
+-	`2.9.0-windowsservercore`, `2.9-windowsservercore`, `2-windowsservercore`, `windowsservercore`:
+	-	[`2.9.0-windowsservercore-1809`](https://github.com/nats-io/nats-docker/blob/848127316dc6c9d753bc22c5d38ee2f40841e2fd/2.9.0/windowsservercore-1809/Dockerfile)
+-	`2.9.0-nanoserver`, `2.9-nanoserver`, `2-nanoserver`, `nanoserver`:
+	-	[`2.9.0-nanoserver-1809`](https://github.com/nats-io/nats-docker/blob/848127316dc6c9d753bc22c5d38ee2f40841e2fd/2.9.0/nanoserver-1809/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -99,11 +99,11 @@ The routing protocol has been dramatically improved and adds support for account
 
 $ docker run -d --name nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 nats
 [INF] Starting nats-server
-[INF]   Version:  2.8.0
-[INF]   Git:      [90721ee]
+[INF]   Version:  2.9.0
+[INF]   Git:      [517d9b3]
 [INF]   Cluster:  my_cluster
-[INF]   Name:     NACBPAD7HO74EVBPXRZS63EAWJU77K5DJ3U5GAT6POYQLCCR6LWQ45K3
-[INF]   ID:       NACBPAD7HO74EVBPXRZS63EAWJU77K5DJ3U5GAT6POYQLCCR6LWQ45K3
+[INF]   Name:     NDKNWZCFBABRJK6ABEFZNHU2OJNXNITRYRUM7CVWXWPDFTTJPX4EMI7T
+[INF]   ID:       NDKNWZCFBABRJK6ABEFZNHU2OJNXNITRYRUM7CVWXWPDFTTJPX4EMI7T
 [INF] Using configuration file: /etc/nats/nats-server.conf
 [INF] Starting http monitor on 0.0.0.0:8222
 [INF] Listening for client connections on 0.0.0.0:4222
@@ -121,24 +121,26 @@ $ docker run -d --name=nats-2 --link nats-main -p 4222:4222 -p 6222:6222 -p 8222
 # If you want to verify the routes are connected, try this instead:
 $ docker run -d --name=nats-2 --link nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 nats -c /etc/nats/nats-server.conf --routes=nats-route://ruser:T0pS3cr3t@nats-main:6222 -DV
 [INF] Starting nats-server
-[INF]   Version:  2.8.0
-[INF]   Git:      [90721ee]
+[INF]   Version:  2.9.0
+[INF]   Git:      [517d9b3]
+[DBG]   Go build: go1.19.1
 [INF]   Cluster:  my_cluster
-[INF]   Name:     NDYKDMWQQ4POOAM7FUKC4JBT3T4A44ZIEY3RGFXTDVFZGRIXFZSW72PZ
-[INF]   ID:       NDYKDMWQQ4POOAM7FUKC4JBT3T4A44ZIEY3RGFXTDVFZGRIXFZSW72PZ
+[INF]   Name:     NBHA5GIXU7AHLOIQGHJ4VV7QIOPOHYN65FIJSFEI2CCM3VIKGJ66VJYS
+[INF]   ID:       NBHA5GIXU7AHLOIQGHJ4VV7QIOPOHYN65FIJSFEI2CCM3VIKGJ66VJYS
 [INF] Using configuration file: /etc/nats/nats-server.conf
 [DBG] Created system account: "$SYS"
 [INF] Starting http monitor on 0.0.0.0:8222
 [INF] Listening for client connections on 0.0.0.0:4222
 [DBG] Get non local IPs for "0.0.0.0"
-[DBG]   ip=172.17.0.4
+[DBG]   ip=172.17.0.2
 [INF] Server is ready
+[DBG] maxprocs: Leaving GOMAXPROCS=4: CPU quota undefined
 [INF] Cluster name is my_cluster
 [INF] Listening for route connections on 0.0.0.0:6222
 [DBG] Trying to connect to route on nats-main:6222 (172.17.0.3:6222)
 [DBG] 172.17.0.3:6222 - rid:4 - Route connect msg sent
 [INF] 172.17.0.3:6222 - rid:4 - Route connection created
-[DBG] 172.17.0.3:6222 - rid:4 - Registering remote route "NBOAKL2UBTVRBDLU5ZQGWPXZYR5I6V7WA54H3XUPMP7XGVSBRKUEAZS4"
+[DBG] 172.17.0.3:6222 - rid:4 - Registering remote route "NCTDSUCJPZVSZH2WHOUMJIMDV6FVJOBLCLMN2K73T2IPAKG6B7HXFAS4"
 [DBG] 172.17.0.3:6222 - rid:4 - Sent local subscriptions to route
 ```
 
