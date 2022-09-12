@@ -28,12 +28,12 @@ WARNING:
 
 ## Simple Tags
 
--	[`1.8.0-bullseye`, `1.8-bullseye`, `1-bullseye`, `bullseye`](https://github.com/docker-library/julia/blob/2c7701975e4779324a0554216ef7a496619e4e07/1.8/bullseye/Dockerfile)
--	[`1.8.0-buster`, `1.8-buster`, `1-buster`, `buster`](https://github.com/docker-library/julia/blob/2c7701975e4779324a0554216ef7a496619e4e07/1.8/buster/Dockerfile)
--	[`1.8.0-alpine3.16`, `1.8-alpine3.16`, `1-alpine3.16`, `alpine3.16`, `1.8.0-alpine`, `1.8-alpine`, `1-alpine`, `alpine`](https://github.com/docker-library/julia/blob/2c7701975e4779324a0554216ef7a496619e4e07/1.8/alpine3.16/Dockerfile)
--	[`1.8.0-alpine3.15`, `1.8-alpine3.15`, `1-alpine3.15`, `alpine3.15`](https://github.com/docker-library/julia/blob/2c7701975e4779324a0554216ef7a496619e4e07/1.8/alpine3.15/Dockerfile)
--	[`1.8.0-windowsservercore-ltsc2022`, `1.8-windowsservercore-ltsc2022`, `1-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`](https://github.com/docker-library/julia/blob/2c7701975e4779324a0554216ef7a496619e4e07/1.8/windows/windowsservercore-ltsc2022/Dockerfile)
--	[`1.8.0-windowsservercore-1809`, `1.8-windowsservercore-1809`, `1-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/docker-library/julia/blob/2c7701975e4779324a0554216ef7a496619e4e07/1.8/windows/windowsservercore-1809/Dockerfile)
+-	[`1.8.1-bullseye`, `1.8-bullseye`, `1-bullseye`, `bullseye`](https://github.com/docker-library/julia/blob/699c82f4689c21eef0b8986d049ea8930b396a57/1.8/bullseye/Dockerfile)
+-	[`1.8.1-buster`, `1.8-buster`, `1-buster`, `buster`](https://github.com/docker-library/julia/blob/699c82f4689c21eef0b8986d049ea8930b396a57/1.8/buster/Dockerfile)
+-	[`1.8.1-alpine3.16`, `1.8-alpine3.16`, `1-alpine3.16`, `alpine3.16`, `1.8.1-alpine`, `1.8-alpine`, `1-alpine`, `alpine`](https://github.com/docker-library/julia/blob/699c82f4689c21eef0b8986d049ea8930b396a57/1.8/alpine3.16/Dockerfile)
+-	[`1.8.1-alpine3.15`, `1.8-alpine3.15`, `1-alpine3.15`, `alpine3.15`](https://github.com/docker-library/julia/blob/699c82f4689c21eef0b8986d049ea8930b396a57/1.8/alpine3.15/Dockerfile)
+-	[`1.8.1-windowsservercore-ltsc2022`, `1.8-windowsservercore-ltsc2022`, `1-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`](https://github.com/docker-library/julia/blob/699c82f4689c21eef0b8986d049ea8930b396a57/1.8/windows/windowsservercore-ltsc2022/Dockerfile)
+-	[`1.8.1-windowsservercore-1809`, `1.8-windowsservercore-1809`, `1-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/docker-library/julia/blob/699c82f4689c21eef0b8986d049ea8930b396a57/1.8/windows/windowsservercore-1809/Dockerfile)
 -	[`1.6.7-bullseye`, `1.6-bullseye`](https://github.com/docker-library/julia/blob/e0d0364c90b544d2d6de097e324ff7cc538613e8/1.6/bullseye/Dockerfile)
 -	[`1.6.7-buster`, `1.6-buster`](https://github.com/docker-library/julia/blob/e0d0364c90b544d2d6de097e324ff7cc538613e8/1.6/buster/Dockerfile)
 -	[`1.6.7-alpine3.16`, `1.6-alpine3.16`, `1.6.7-alpine`, `1.6-alpine`](https://github.com/docker-library/julia/blob/e0d0364c90b544d2d6de097e324ff7cc538613e8/1.6/alpine3.16/Dockerfile)
@@ -43,13 +43,13 @@ WARNING:
 
 ## Shared Tags
 
--	`1.8.0`, `1.8`, `1`, `latest`:
-	-	[`1.8.0-bullseye`](https://github.com/docker-library/julia/blob/2c7701975e4779324a0554216ef7a496619e4e07/1.8/bullseye/Dockerfile)
-	-	[`1.8.0-windowsservercore-ltsc2022`](https://github.com/docker-library/julia/blob/2c7701975e4779324a0554216ef7a496619e4e07/1.8/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`1.8.0-windowsservercore-1809`](https://github.com/docker-library/julia/blob/2c7701975e4779324a0554216ef7a496619e4e07/1.8/windows/windowsservercore-1809/Dockerfile)
--	`1.8.0-windowsservercore`, `1.8-windowsservercore`, `1-windowsservercore`, `windowsservercore`:
-	-	[`1.8.0-windowsservercore-ltsc2022`](https://github.com/docker-library/julia/blob/2c7701975e4779324a0554216ef7a496619e4e07/1.8/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`1.8.0-windowsservercore-1809`](https://github.com/docker-library/julia/blob/2c7701975e4779324a0554216ef7a496619e4e07/1.8/windows/windowsservercore-1809/Dockerfile)
+-	`1.8.1`, `1.8`, `1`, `latest`:
+	-	[`1.8.1-bullseye`](https://github.com/docker-library/julia/blob/699c82f4689c21eef0b8986d049ea8930b396a57/1.8/bullseye/Dockerfile)
+	-	[`1.8.1-windowsservercore-ltsc2022`](https://github.com/docker-library/julia/blob/699c82f4689c21eef0b8986d049ea8930b396a57/1.8/windows/windowsservercore-ltsc2022/Dockerfile)
+	-	[`1.8.1-windowsservercore-1809`](https://github.com/docker-library/julia/blob/699c82f4689c21eef0b8986d049ea8930b396a57/1.8/windows/windowsservercore-1809/Dockerfile)
+-	`1.8.1-windowsservercore`, `1.8-windowsservercore`, `1-windowsservercore`, `windowsservercore`:
+	-	[`1.8.1-windowsservercore-ltsc2022`](https://github.com/docker-library/julia/blob/699c82f4689c21eef0b8986d049ea8930b396a57/1.8/windows/windowsservercore-ltsc2022/Dockerfile)
+	-	[`1.8.1-windowsservercore-1809`](https://github.com/docker-library/julia/blob/699c82f4689c21eef0b8986d049ea8930b396a57/1.8/windows/windowsservercore-1809/Dockerfile)
 -	`1.6.7`, `1.6`:
 	-	[`1.6.7-bullseye`](https://github.com/docker-library/julia/blob/e0d0364c90b544d2d6de097e324ff7cc538613e8/1.6/bullseye/Dockerfile)
 	-	[`1.6.7-windowsservercore-ltsc2022`](https://github.com/docker-library/julia/blob/e0d0364c90b544d2d6de097e324ff7cc538613e8/1.6/windows/windowsservercore-ltsc2022/Dockerfile)
