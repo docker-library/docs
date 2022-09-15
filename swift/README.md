@@ -24,14 +24,24 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.6.2`, `5.6`, `5.6.2-bionic`, `5.6-bionic`, `bionic`, `latest`](https://github.com/apple/swift-docker/blob/a7a878a4f87f03d15f4db68e60b41ba867091230/5.6/ubuntu/18.04/Dockerfile)
--	[`5.6.2-slim`, `5.6-slim`, `5.6.2-bionic-slim`, `5.6-bionic-slim`, `bionic-slim`, `slim`](https://github.com/apple/swift-docker/blob/a7a878a4f87f03d15f4db68e60b41ba867091230/5.6/ubuntu/18.04/slim/Dockerfile)
--	[`5.6.2-focal-slim`, `5.6-focal-slim`, `focal-slim`](https://github.com/apple/swift-docker/blob/a7a878a4f87f03d15f4db68e60b41ba867091230/5.6/ubuntu/20.04/slim/Dockerfile)
--	[`5.6.2-focal`, `5.6-focal`, `focal`](https://github.com/apple/swift-docker/blob/a7a878a4f87f03d15f4db68e60b41ba867091230/5.6/ubuntu/20.04/Dockerfile)
--	[`5.6.2-amazonlinux2`, `5.6-amazonlinux2`, `amazonlinux2`](https://github.com/apple/swift-docker/blob/a7a878a4f87f03d15f4db68e60b41ba867091230/5.6/amazonlinux/2/Dockerfile)
--	[`5.6.2-amazonlinux2-slim`, `5.6-amazonlinux2-slim`, `amazonlinux2-slim`](https://github.com/apple/swift-docker/blob/a7a878a4f87f03d15f4db68e60b41ba867091230/5.6/amazonlinux/2/slim/Dockerfile)
--	[`5.6.2-centos7`, `5.6-centos7`, `centos7`](https://github.com/apple/swift-docker/blob/a7a878a4f87f03d15f4db68e60b41ba867091230/5.6/centos/7/Dockerfile)
--	[`5.6.2-centos7-slim`, `5.6-centos7-slim`, `centos7-slim`](https://github.com/apple/swift-docker/blob/a7a878a4f87f03d15f4db68e60b41ba867091230/5.6/centos/7/slim/Dockerfile)
+-	[`5.7.0`, `5.7`, `5.7.0-jammy`, `5.7-jammy`, `jammy`, `latest`](https://github.com/apple/swift-docker/blob/5d771d72823df0d2cd97692298efa20349ed2c9c/5.7/ubuntu/22.04/Dockerfile)
+-	[`5.7.0-slim`, `5.7-slim`, `5.7.0-jammy-slim`, `5.7-jammy-slim`, `jammy-slim`, `slim`](https://github.com/apple/swift-docker/blob/5d771d72823df0d2cd97692298efa20349ed2c9c/5.7/ubuntu/22.04/slim/Dockerfile)
+-	[`5.7.0-bionic`, `5.7-bionic`, `bionic`](https://github.com/apple/swift-docker/blob/5d771d72823df0d2cd97692298efa20349ed2c9c/5.7/ubuntu/18.04/Dockerfile)
+-	[`5.7.0-bionic-slim`, `5.7-bionic-slim`, `bionic-slim`](https://github.com/apple/swift-docker/blob/5d771d72823df0d2cd97692298efa20349ed2c9c/5.7/ubuntu/18.04/slim/Dockerfile)
+-	[`5.7.0-focal-slim`, `5.7-focal-slim`, `focal-slim`](https://github.com/apple/swift-docker/blob/5d771d72823df0d2cd97692298efa20349ed2c9c/5.7/ubuntu/20.04/slim/Dockerfile)
+-	[`5.7.0-focal`, `5.7-focal`, `focal`](https://github.com/apple/swift-docker/blob/5d771d72823df0d2cd97692298efa20349ed2c9c/5.7/ubuntu/20.04/Dockerfile)
+-	[`5.7.0-amazonlinux2`, `5.7-amazonlinux2`, `amazonlinux2`](https://github.com/apple/swift-docker/blob/5d771d72823df0d2cd97692298efa20349ed2c9c/5.7/amazonlinux/2/Dockerfile)
+-	[`5.7.0-amazonlinux2-slim`, `5.7-amazonlinux2-slim`, `amazonlinux2-slim`](https://github.com/apple/swift-docker/blob/5d771d72823df0d2cd97692298efa20349ed2c9c/5.7/amazonlinux/2/slim/Dockerfile)
+-	[`5.7.0-centos7`, `5.7-centos7`, `centos7`](https://github.com/apple/swift-docker/blob/5d771d72823df0d2cd97692298efa20349ed2c9c/5.7/centos/7/Dockerfile)
+-	[`5.7.0-centos7-slim`, `5.7-centos7-slim`, `centos7-slim`](https://github.com/apple/swift-docker/blob/5d771d72823df0d2cd97692298efa20349ed2c9c/5.7/centos/7/slim/Dockerfile)
+-	[`5.6.3`, `5.6`, `5.6.3-bionic`, `5.6-bionic`](https://github.com/apple/swift-docker/blob/1188cc86d15f9e98d90db9f98de3598d5d5f7bb2/5.6/ubuntu/18.04/Dockerfile)
+-	[`5.6.3-slim`, `5.6-slim`, `5.6.3-bionic-slim`, `5.6-bionic-slim`](https://github.com/apple/swift-docker/blob/1188cc86d15f9e98d90db9f98de3598d5d5f7bb2/5.6/ubuntu/18.04/slim/Dockerfile)
+-	[`5.6.3-focal-slim`, `5.6-focal-slim`](https://github.com/apple/swift-docker/blob/1188cc86d15f9e98d90db9f98de3598d5d5f7bb2/5.6/ubuntu/20.04/slim/Dockerfile)
+-	[`5.6.3-focal`, `5.6-focal`](https://github.com/apple/swift-docker/blob/1188cc86d15f9e98d90db9f98de3598d5d5f7bb2/5.6/ubuntu/20.04/Dockerfile)
+-	[`5.6.3-amazonlinux2`, `5.6-amazonlinux2`](https://github.com/apple/swift-docker/blob/1188cc86d15f9e98d90db9f98de3598d5d5f7bb2/5.6/amazonlinux/2/Dockerfile)
+-	[`5.6.3-amazonlinux2-slim`, `5.6-amazonlinux2-slim`](https://github.com/apple/swift-docker/blob/1188cc86d15f9e98d90db9f98de3598d5d5f7bb2/5.6/amazonlinux/2/slim/Dockerfile)
+-	[`5.6.3-centos7`, `5.6-centos7`](https://github.com/apple/swift-docker/blob/1188cc86d15f9e98d90db9f98de3598d5d5f7bb2/5.6/centos/7/Dockerfile)
+-	[`5.6.3-centos7-slim`, `5.6-centos7-slim`](https://github.com/apple/swift-docker/blob/1188cc86d15f9e98d90db9f98de3598d5d5f7bb2/5.6/centos/7/slim/Dockerfile)
 -	[`5.5.3`, `5.5`, `5.5.3-bionic`, `5.5-bionic`](https://github.com/apple/swift-docker/blob/9394b31e064cf0d80eaab08b692a2886c7aea8fe/5.5/ubuntu/18.04/Dockerfile)
 -	[`5.5.3-xenial`, `5.5-xenial`, `xenial`](https://github.com/apple/swift-docker/blob/9394b31e064cf0d80eaab08b692a2886c7aea8fe/5.5/ubuntu/16.04/Dockerfile)
 -	[`5.5.3-slim`, `5.5-slim`, `5.5.3-bionic-slim`, `5.5-bionic-slim`](https://github.com/apple/swift-docker/blob/9394b31e064cf0d80eaab08b692a2886c7aea8fe/5.5/ubuntu/18.04/slim/Dockerfile)
@@ -158,7 +168,7 @@ The `swift` images come in many flavors, each designed for a specific use case.
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like bionic, focal, or xenial in them. These are the suite code names for releases of [Ubuntu](https://wiki.ubuntu.com/Releases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Ubuntu.
+Some of these tags may have names like bionic, focal, jammy, or xenial in them. These are the suite code names for releases of [Ubuntu](https://wiki.ubuntu.com/Releases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Ubuntu.
 
 ## `swift:<version>-slim`
 

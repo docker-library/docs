@@ -24,7 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1`, `1.7`, `1.7.2`, `1.7.2-1`, `latest`](https://github.com/varnish/docker-hitch/blob/054c998138c8f8ec6be03c7db711b8435de41e2b/Dockerfile)
+-	[`1`, `1.7`, `1.7.3`, `1.7.3-1`, `latest`](https://github.com/varnish/docker-hitch/blob/3f7f06a4eeb066e03f81f5e3d170d1e13606e69e/Dockerfile)
+-	[`1.7.2`, `1.7.2-1`](https://github.com/varnish/docker-hitch/blob/054c998138c8f8ec6be03c7db711b8435de41e2b/Dockerfile)
 
 # Quick reference (cont.)
 

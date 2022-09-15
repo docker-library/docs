@@ -24,8 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`ee-6.1.0.1`](https://github.com/aerospike/aerospike-server-enterprise.docker/blob/979307b481d84d82635024f83f3d3efb82652c0a/Dockerfile)
--	[`ce-6.1.0.1`](https://github.com/aerospike/aerospike-server.docker/blob/7f6bef8fae252bcd6a680dc4e3097719fd234370/Dockerfile)
+-	[`ee-6.1.0.2`](https://github.com/aerospike/aerospike-server-enterprise.docker/blob/8764b3ad467fb20c25554638abb0a76e515b6ac9/Dockerfile)
+-	[`ce-6.1.0.2`](https://github.com/aerospike/aerospike-server.docker/blob/9f0fcbf7ff42f8f75c49b6b9ca02afb9b6fa4185/Dockerfile)
 
 # Quick reference (cont.)
 
