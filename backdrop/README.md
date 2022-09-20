@@ -24,8 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.21.4`, `1.21`, `1`, `1.21.4-apache`, `1.21-apache`, `1-apache`, `apache`, `latest`](https://github.com/backdrop-ops/backdrop-docker/blob/91ac0ee1e56bbff6d2fb49218b38a9cbf9d1a356/1/apache/Dockerfile)
--	[`1.21.4-fpm`, `1.21-fpm`, `1-fpm`, `fpm`](https://github.com/backdrop-ops/backdrop-docker/blob/01456d360386ed664298c53a74a75647e0965795/1/fpm/Dockerfile)
+-	[`1.23.0`, `1.23`, `1`, `1.23.0-apache`, `1.23-apache`, `1-apache`, `apache`, `latest`](https://github.com/backdrop-ops/backdrop-docker/blob/69bc3670f97cf6d060e9379bea26b2fcdf0ebc3f/1/apache/Dockerfile)
+-	[`1.23.0-fpm`, `1.23-fpm`, `1-fpm`, `fpm`](https://github.com/backdrop-ops/backdrop-docker/blob/69bc3670f97cf6d060e9379bea26b2fcdf0ebc3f/1/fpm/Dockerfile)
 
 # Quick reference (cont.)
 
