@@ -58,7 +58,7 @@ Lightstreamer is a real-time messaging server optimized for the Internet. Blendi
 
 For more information and related downloads for Lightstreamer Server and other Lightstreamer products, please visit [www.lightstreamer.com](https://www.lightstreamer.com).
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/3a58248e2d43ced58c294b7980b55846a0ddc9e5/lightstreamer/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/e7ce6514d9289b897fcb5a4b73e9fafb5f761709/lightstreamer/logo.png)
 
 # How to use this image
 
