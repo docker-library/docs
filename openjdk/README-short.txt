@@ -1,1 +1,1 @@
-"Vanilla" builds of OpenJDK (an open-source implementation of the Java Platform, Standard Edition)
+Pre-release / non-production builds of OpenJDK
