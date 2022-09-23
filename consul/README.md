@@ -26,7 +26,7 @@ WARNING:
 
 -	[`1.13.2`, `1.13`, `latest`](https://github.com/hashicorp/docker-consul/blob/6e9b9a6197861f40f088edb01e3ad6f3b519c2ce/0.X/Dockerfile)
 -	[`1.12.5`, `1.12`](https://github.com/hashicorp/docker-consul/blob/26cfa29751dacccf73a0d2232cc8b83d7df137c3/0.X/Dockerfile)
--	[`1.11.9`, `1.11`](https://github.com/hashicorp/docker-consul/blob/bb3a4d9076b33411a36057f43a85ce722f7ac584/0.X/Dockerfile)
+-	[`1.11.10`, `1.11`](https://github.com/hashicorp/docker-consul/blob/2713f8eca7031e62f2da41038b47724e1590c165/0.X/Dockerfile)
 
 # Quick reference (cont.)
 
