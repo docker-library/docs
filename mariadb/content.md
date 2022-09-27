@@ -27,10 +27,10 @@ $ docker run --detach --network some-network --name some-%%REPO%% --env MARIADB_
 
 ## Connect to MariaDB from the MySQL/MariaDB command line client
 
-The following command starts another `%%IMAGE%%` container instance and runs the `mysql` command line client against your original `%%IMAGE%%` container, allowing you to execute SQL statements against your database instance:
+The following command starts another `%%IMAGE%%` container instance and runs the `mariadb` command line client against your original `%%IMAGE%%` container, allowing you to execute SQL statements against your database instance:
 
 ```console
-$ docker run -it --network some-network --rm %%IMAGE%% mysql -hsome-%%REPO%% -uexample-user -p
+$ docker run -it --network some-network --rm %%IMAGE%% mariadb -hsome-%%REPO%% -uexample-user -p
 ```
 
 ... where `some-%%REPO%%` is the name of your original `%%IMAGE%%` container (connected to the `some-network` Docker network).
@@ -38,7 +38,7 @@ $ docker run -it --network some-network --rm %%IMAGE%% mysql -hsome-%%REPO%% -ue
 This image can also be used as a client for non-Docker or remote instances:
 
 ```console
-$ docker run -it --rm %%IMAGE%% mysql -h <server container IP> -u example-user -p
+$ docker run -it --rm %%IMAGE%% mariadb -h <server container IP> -u example-user -p
 ```
 
 That will give you a standard MariaDB prompt. You can test it with:
@@ -88,7 +88,7 @@ $ docker run --name some-%%REPO%% -v /my/custom:/etc/mysql/conf.d --rm %%IMAGE%%
 
 ### Configuration without a `cnf` file
 
-Many configuration options can be passed as flags to `mysqld`. This will give you the flexibility to customize the container without needing a `cnf` file. For example, if you want to run on port 3808 just run the following:
+Many configuration options can be passed as flags to `mariadbd`. This will give you the flexibility to customize the container without needing a `cnf` file. For example, if you want to run on port 3808 just run the following:
 
 ```console
 $ docker run --name some-%%REPO%% -e MARIADB_ROOT_PASSWORD=my-secret-pw -d %%IMAGE%%:latest --port 3808
@@ -205,7 +205,7 @@ If you start your `%%IMAGE%%` container instance with a data directory that alre
 Most of the normal tools will work, although their usage might be a little convoluted in some cases to ensure they have access to the `mysqld` server. A simple way to ensure this is to use `docker exec` and run the tool from the same container, similar to the following:
 
 ```console
-$ docker exec some-%%REPO%% sh -c 'exec mysqldump --all-databases -uroot -p"$MARIADB_ROOT_PASSWORD"' > /some/path/on/your/host/all-databases.sql
+$ docker exec some-%%REPO%% sh -c 'exec mariadb-dump --all-databases -uroot -p"$MARIADB_ROOT_PASSWORD"' > /some/path/on/your/host/all-databases.sql
 ```
 
 ## Restoring data from dump files
@@ -213,7 +213,7 @@ $ docker exec some-%%REPO%% sh -c 'exec mysqldump --all-databases -uroot -p"$MAR
 For restoring data. You can use the `docker exec` command with the `-i` flag, similar to the following:
 
 ```console
-$ docker exec -i some-%%REPO%% sh -c 'exec mysql -uroot -p"$MARIADB_ROOT_PASSWORD"' < /some/path/on/your/host/all-databases.sql
+$ docker exec -i some-%%REPO%% sh -c 'exec mariadb -uroot -p"$MARIADB_ROOT_PASSWORD"' < /some/path/on/your/host/all-databases.sql
 ```
 
 If one or more databases, but neither `--all-databases` nor the `mysql` database, were dumped, these databases can be restored by placing the resulting sql file in the `/docker-entrypoint-initdb.d` directory.
