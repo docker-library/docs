@@ -71,15 +71,20 @@ $ docker logs some-%%REPO%%
 
 ## Using a custom MariaDB configuration file
 
-The startup configuration is specified in the file `/etc/mysql/my.cnf`, and that file in turn includes any files found in the `/etc/mysql/conf.d` directory that end with `.cnf`. Settings in files in this directory will augment and/or override settings in `/etc/mysql/my.cnf`. If you want to use a customized MariaDB configuration, you can create your alternative configuration file in a directory on the host machine and then mount that directory location as `/etc/mysql/conf.d` inside the `%%IMAGE%%` container.
+Custom configuration files should end in `.cnf` and be mounted at the directory `/etc/mysql/conf.d`. These files should contain the minimal changes from the MariaDB workload required for your application/environment. A MariaDB configuration file will have a `[mariadb]` group followed by `variable` = `value` settings per [Setting Server System Variables](https://mariadb.com/kb/en/server-system-variables/#setting-server-system-variables) or [option-prefix-variable](https://mariadb.com/kb/en/configuring-mariadb-with-option-files/#option-prefixes).
 
-If `/my/custom/config-file.cnf` is the path and name of your custom configuration file, you can start your `%%IMAGE%%` container like this (note that only the directory path of the custom config file is used in this command):
+The `%%IMAGE%%` image configuration contains the Ubuntu MariaDB variables with two custom changes for the container:
+
+	[host-cache-size=0](https://mariadb.com/kb/en/server-system-variables/#host_cache_size)
+	[skip-name-resolve](https://mariadb.com/kb/en/server-system-variables/#skip_name_resolve)
+
+These disable the authentication of `user@hostname` users. To re-enable the `skip-name-resolve` use `disable-skip-name-resolve` as variable or arguement. When enabled, the `host-cache-size` should be sufficient for the number of containers connecting to the `%%IMAGE%%`.
+
+To view the resulting configuration of your `%%IMAGE%%` container:
 
 ```console
-$ docker run --name some-%%REPO%% -v /my/custom:/etc/mysql/conf.d -e MARIADB_ROOT_PASSWORD=my-secret-pw -d %%IMAGE%%:latest
+$ docker run --name some-%%REPO%% -v /my/custom:/etc/mysql/conf.d --rm %%IMAGE%%:latest my_print_defaults --mysqld
 ```
-
-This will start a new container `some-%%REPO%%` where the MariaDB instance uses the combined startup settings from `/etc/mysql/my.cnf` and `/etc/mysql/conf.d/config-file.cnf`, with settings from the latter taking precedence.
 
 ### Configuration without a `cnf` file
 
