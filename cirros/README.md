@@ -24,7 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`0.5.2`, `0.5`, `0`, `latest`](https://github.com/tianon/docker-brew-cirros/blob/6b155af1eeb835ab219369aeec45139b2f4ba11b/arches/amd64/Dockerfile)
+-	[`0.6.0`, `0.6`, `0`, `latest`](https://github.com/tianon/docker-brew-cirros/blob/00ddac1cc79093da0d08040b71b02f35e5dfe21c/arches/amd64/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -32,7 +32,7 @@ WARNING:
 	[https://github.com/tianon/docker-brew-cirros/issues](https://github.com/tianon/docker-brew-cirros/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/cirros/), [`arm32v5`](https://hub.docker.com/r/arm32v5/cirros/), [`arm64v8`](https://hub.docker.com/r/arm64v8/cirros/), [`i386`](https://hub.docker.com/r/i386/cirros/), [`ppc64le`](https://hub.docker.com/r/ppc64le/cirros/)
+	[`amd64`](https://hub.docker.com/r/amd64/cirros/), [`arm32v5`](https://hub.docker.com/r/arm32v5/cirros/), [`arm64v8`](https://hub.docker.com/r/arm64v8/cirros/), [`ppc64le`](https://hub.docker.com/r/ppc64le/cirros/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/cirros/` directory](https://github.com/docker-library/repo-info/blob/master/repos/cirros) ([history](https://github.com/docker-library/repo-info/commits/master/repos/cirros))  
