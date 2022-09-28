@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8-jre`, `jre`, `8`, `latest`](https://github.com/ibmruntimes/ci.docker/blob/9aceda5886c7951e88463864ff41cbbc6400ffbe/ibmjava/8/jre/ubuntu/Dockerfile)
--	[`8-sfj`, `sfj`](https://github.com/ibmruntimes/ci.docker/blob/9aceda5886c7951e88463864ff41cbbc6400ffbe/ibmjava/8/sfj/ubuntu/Dockerfile)
--	[`8-sdk`, `sdk`](https://github.com/ibmruntimes/ci.docker/blob/9aceda5886c7951e88463864ff41cbbc6400ffbe/ibmjava/8/sdk/ubuntu/Dockerfile)
+-	[`8-jre`, `jre`, `8`, `latest`](https://github.com/ibmruntimes/ci.docker/blob/e7cdbc812dda02da5182239bfac3b030fd507814/ibmjava/8/jre/ubuntu/Dockerfile)
+-	[`8-sfj`, `sfj`](https://github.com/ibmruntimes/ci.docker/blob/e7cdbc812dda02da5182239bfac3b030fd507814/ibmjava/8/sfj/ubuntu/Dockerfile)
+-	[`8-sdk`, `sdk`](https://github.com/ibmruntimes/ci.docker/blob/e7cdbc812dda02da5182239bfac3b030fd507814/ibmjava/8/sdk/ubuntu/Dockerfile)
 
 # Quick reference (cont.)
 
