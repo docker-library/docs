@@ -38,7 +38,7 @@ WARNING:
 -	[`noetic-perception-buster`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/noetic/debian/buster/perception/Dockerfile)
 -	[`foxy-ros-core`, `foxy-ros-core-focal`](https://github.com/osrf/docker_images/blob/3f4fbca923d80f834f3a89b5960bad5582652519/ros/foxy/ubuntu/focal/ros-core/Dockerfile)
 -	[`foxy-ros-base`, `foxy-ros-base-focal`, `foxy`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/foxy/ubuntu/focal/ros-base/Dockerfile)
--	[`foxy-ros1-bridge`, `foxy-ros1-bridge-focal`](https://github.com/osrf/docker_images/blob/3f4fbca923d80f834f3a89b5960bad5582652519/ros/foxy/ubuntu/focal/ros1-bridge/Dockerfile)
+-	[`foxy-ros1-bridge`, `foxy-ros1-bridge-focal`](https://github.com/osrf/docker_images/blob/eb02435a48d087a958d73e7309f825bccf32fc4b/ros/foxy/ubuntu/focal/ros1-bridge/Dockerfile)
 -	[`galactic-ros-core`, `galactic-ros-core-focal`](https://github.com/osrf/docker_images/blob/3f4fbca923d80f834f3a89b5960bad5582652519/ros/galactic/ubuntu/focal/ros-core/Dockerfile)
 -	[`galactic-ros-base`, `galactic-ros-base-focal`, `galactic`](https://github.com/osrf/docker_images/blob/6511d8fc0754616550b7f5ea31a40084c2462938/ros/galactic/ubuntu/focal/ros-base/Dockerfile)
 -	[`galactic-ros1-bridge`, `galactic-ros1-bridge-focal`](https://github.com/osrf/docker_images/blob/3f4fbca923d80f834f3a89b5960bad5582652519/ros/galactic/ubuntu/focal/ros1-bridge/Dockerfile)
