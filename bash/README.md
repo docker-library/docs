@@ -24,8 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`devel-20220923`, `devel`, `devel-20220923-alpine3.15`, `devel-alpine3.15`](https://github.com/tianon/docker-bash/blob/480e97b544634a9a80ca6aaef9421c86b6d976f6/devel/Dockerfile)
--	[`5.2.0`, `5.2`, `5`, `latest`, `5.2.0-alpine3.15`, `5.2-alpine3.15`, `5-alpine3.15`, `alpine3.15`](https://github.com/tianon/docker-bash/blob/a6745045c9242e54777d2af53f07524eaffbc2b9/5.2/Dockerfile)
+-	[`devel-20220928`, `devel`, `devel-20220928-alpine3.15`, `devel-alpine3.15`](https://github.com/tianon/docker-bash/blob/6db2491f15760b4a49c163347f026c2f019cc900/devel/Dockerfile)
+-	[`5.2.2`, `5.2`, `5`, `latest`, `5.2.2-alpine3.15`, `5.2-alpine3.15`, `5-alpine3.15`, `alpine3.15`](https://github.com/tianon/docker-bash/blob/659dc5b166bd13b1d3efdb0f188a6f79cfaba633/5.2/Dockerfile)
 -	[`5.1.16`, `5.1`, `5.1.16-alpine3.15`, `5.1-alpine3.15`](https://github.com/tianon/docker-bash/blob/70b65fa22011fa4b58c93570b2fed168b79102e4/5.1/Dockerfile)
 -	[`5.0.18`, `5.0`, `5.0.18-alpine3.15`, `5.0-alpine3.15`](https://github.com/tianon/docker-bash/blob/70b65fa22011fa4b58c93570b2fed168b79102e4/5.0/Dockerfile)
 -	[`4.4.23`, `4.4`, `4`, `4.4.23-alpine3.15`, `4.4-alpine3.15`, `4-alpine3.15`](https://github.com/tianon/docker-bash/blob/70b65fa22011fa4b58c93570b2fed168b79102e4/4.4/Dockerfile)
