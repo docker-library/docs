@@ -35,11 +35,11 @@ The routing protocol has been dramatically improved and adds support for account
 
 $ docker run -d --name nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 %%IMAGE%%
 [INF] Starting nats-server
-[INF]   Version:  2.9.0
-[INF]   Git:      [517d9b3]
+[INF]   Version:  2.9.3
+[INF]   Git:      [25e82d7d]
 [INF]   Cluster:  my_cluster
-[INF]   Name:     NDKNWZCFBABRJK6ABEFZNHU2OJNXNITRYRUM7CVWXWPDFTTJPX4EMI7T
-[INF]   ID:       NDKNWZCFBABRJK6ABEFZNHU2OJNXNITRYRUM7CVWXWPDFTTJPX4EMI7T
+[INF]   Name:     NB3YN6SPZF6MWTLPGYLRE2AD5VVWSW443RO43YR5GC62I463QPYGOL5C
+[INF]   ID:       NB3YN6SPZF6MWTLPGYLRE2AD5VVWSW443RO43YR5GC62I463QPYGOL5C
 [INF] Using configuration file: /etc/nats/nats-server.conf
 [INF] Starting http monitor on 0.0.0.0:8222
 [INF] Listening for client connections on 0.0.0.0:4222
@@ -57,12 +57,12 @@ $ docker run -d --name=nats-2 --link nats-main -p 4222:4222 -p 6222:6222 -p 8222
 # If you want to verify the routes are connected, try this instead:
 $ docker run -d --name=nats-2 --link nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 %%IMAGE%% -c /etc/nats/nats-server.conf --routes=nats-route://ruser:T0pS3cr3t@nats-main:6222 -DV
 [INF] Starting nats-server
-[INF]   Version:  2.9.0
-[INF]   Git:      [517d9b3]
-[DBG]   Go build: go1.19.1
+[INF]   Version:  2.9.3
+[INF]   Git:      [25e82d7d]
+[DBG]   Go build: go1.19.2
 [INF]   Cluster:  my_cluster
-[INF]   Name:     NBHA5GIXU7AHLOIQGHJ4VV7QIOPOHYN65FIJSFEI2CCM3VIKGJ66VJYS
-[INF]   ID:       NBHA5GIXU7AHLOIQGHJ4VV7QIOPOHYN65FIJSFEI2CCM3VIKGJ66VJYS
+[INF]   Name:     NDFNAUTD4RKS2O7CMKMDMTV3DW5NIKFCQDDMXW2A5YXLUZWWX7RYFCKB
+[INF]   ID:       NDFNAUTD4RKS2O7CMKMDMTV3DW5NIKFCQDDMXW2A5YXLUZWWX7RYFCKB
 [INF] Using configuration file: /etc/nats/nats-server.conf
 [DBG] Created system account: "$SYS"
 [INF] Starting http monitor on 0.0.0.0:8222
@@ -76,7 +76,7 @@ $ docker run -d --name=nats-2 --link nats-main -p 4222:4222 -p 6222:6222 -p 8222
 [DBG] Trying to connect to route on nats-main:6222 (172.17.0.3:6222)
 [DBG] 172.17.0.3:6222 - rid:4 - Route connect msg sent
 [INF] 172.17.0.3:6222 - rid:4 - Route connection created
-[DBG] 172.17.0.3:6222 - rid:4 - Registering remote route "NCTDSUCJPZVSZH2WHOUMJIMDV6FVJOBLCLMN2K73T2IPAKG6B7HXFAS4"
+[DBG] 172.17.0.3:6222 - rid:4 - Registering remote route "NDQAU6HVD44TI2X5R2QRYJEIQR3MMHCFTW2BTSXBILBOZHJ4Z7AR7GGR"
 [DBG] 172.17.0.3:6222 - rid:4 - Sent local subscriptions to route
 ```
 
@@ -118,17 +118,19 @@ cluster {
 
 ```bash
 Server Options:
-    -a, --addr <host>                Bind to host address (default: 0.0.0.0)
+    -a, --addr, --net <host>         Bind to host address (default: 0.0.0.0)
     -p, --port <port>                Use port for clients (default: 4222)
-    -n, --name <server_name>         Server name (default: auto)
+    -n, --name
+        --server_name <server_name>  Server name (default: auto)
     -P, --pid <file>                 File to store PID
     -m, --http_port <port>           Use port for http monitoring
     -ms,--https_port <port>          Use port for https monitoring
     -c, --config <file>              Configuration file
     -t                               Test configuration and exit
     -sl,--signal <signal>[=<pid>]    Send signal to nats-server process (stop, quit, reopen, reload)
-                                     <pid> can be either a PID (e.g. 1) or the path to a PID file (e.g. /var/run/nats-server.pid)
+                                     pid> can be either a PID (e.g. 1) or the path to a PID file (e.g. /var/run/nats-server.pid)
         --client_advertise <string>  Client URL to advertise to other servers
+        --ports_file_dir <dir>       Creates a ports file in the specified directory (<executable_name>_<pid>.ports).
 
 Logging Options:
     -l, --log <file>                 File to redirect log output
@@ -140,10 +142,12 @@ Logging Options:
     -VV                              Verbose trace (traces system account as well)
     -DV                              Debug and trace
     -DVV                             Debug and verbose trace (traces system account as well)
+        --log_size_limit <limit>     Logfile size limit (default: auto)
+        --max_traced_msg_len <len>   Maximum printable length for traced messages (default: unlimited)
 
 JetStream Options:
-    -js, --jetstream                 Enable JetStream functionality.
-    -sd, --store_dir <dir>           Set the storage directory.
+    -js, --jetstream                 Enable JetStream functionality
+    -sd, --store_dir <dir>           Set the storage directory
 
 Authorization Options:
         --user <user>                User required for connections
@@ -164,6 +168,10 @@ Cluster Options:
         --no_advertise <bool>        Do not advertise known cluster information to clients
         --cluster_advertise <string> Cluster URL to advertise to other servers
         --connect_retries <number>   For implicit routes, number of connect retries
+        --cluster_listen <url>       Cluster url from which members can solicit routes
+
+Profiling Options:
+        --profile <port>             Profiling HTTP port
 
 Common Options:
     -h, --help                       Show this message
