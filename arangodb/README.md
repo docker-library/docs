@@ -25,7 +25,8 @@ WARNING:
 # Supported tags and respective `Dockerfile` links
 
 -	[`3.8`, `3.8.7`](https://github.com/arangodb/arangodb-docker/blob/0e1a717e606a4fd6fa406fdb26bf5cc61486d0e5/alpine/3.8.7/Dockerfile)
--	[`3.9`, `3.9.3`, `latest`](https://github.com/arangodb/arangodb-docker/blob/66deb6fc6518f7d81a2e6087b2397447e240f8c4/alpine/3.9.3/Dockerfile)
+-	[`3.9`, `3.9.3`](https://github.com/arangodb/arangodb-docker/blob/66deb6fc6518f7d81a2e6087b2397447e240f8c4/alpine/3.9.3/Dockerfile)
+-	[`3.10`, `3.10.0`, `latest`](https://github.com/arangodb/arangodb-docker/blob/31df6aaffd35f1e221d59cc1802eeb71db058c9d/alpine/3.10.0/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -33,7 +34,7 @@ WARNING:
 	[https://github.com/arangodb/arangodb-docker/issues](https://github.com/arangodb/arangodb-docker/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/arangodb/)
+	[`amd64`](https://hub.docker.com/r/amd64/arangodb/), [`arm64v8`](https://hub.docker.com/r/arm64v8/arangodb/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/arangodb/` directory](https://github.com/docker-library/repo-info/blob/master/repos/arangodb) ([history](https://github.com/docker-library/repo-info/commits/master/repos/arangodb))  
