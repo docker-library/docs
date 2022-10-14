@@ -24,9 +24,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.0.3`, `5.0`, `5`, `latest`](https://github.com/RocketChat/Docker.Official.Image/blob/1176c5eec4ae2d161fe7575cb21ad4cef1ad2b19/5.0/Dockerfile)
--	[`4.8.4`, `4.8`, `4`](https://github.com/RocketChat/Docker.Official.Image/blob/1176c5eec4ae2d161fe7575cb21ad4cef1ad2b19/4.8/Dockerfile)
--	[`4.7.5`, `4.7`](https://github.com/RocketChat/Docker.Official.Image/blob/8d2ec523712c4acecf80db9658f582517293e47b/4.7/Dockerfile)
+-	[`5.2.0`, `5.2`, `5`, `latest`](https://github.com/RocketChat/Docker.Official.Image/blob/2a14b3f65fecb108c1e10f39f746c5c75ca5474c/5.2/Dockerfile)
+-	[`5.1.4`, `5.1`](https://github.com/RocketChat/Docker.Official.Image/blob/2a14b3f65fecb108c1e10f39f746c5c75ca5474c/5.1/Dockerfile)
+-	[`5.0.7`, `5.0`](https://github.com/RocketChat/Docker.Official.Image/blob/2a14b3f65fecb108c1e10f39f746c5c75ca5474c/5.0/Dockerfile)
+-	[`4.8.6`, `4.8`, `4`](https://github.com/RocketChat/Docker.Official.Image/blob/2a14b3f65fecb108c1e10f39f746c5c75ca5474c/4.8/Dockerfile)
 
 # Quick reference (cont.)
 
