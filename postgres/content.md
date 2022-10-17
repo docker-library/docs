@@ -184,10 +184,8 @@ Also of note, Alpine-based variants starting with Postgres 15 support [ICU local
 
 You can extend the Alpine-based images with a simple `Dockerfile` to set a different locale. The following example will set the default locale to `de_DE.utf8`:
 
-```dockerfile
-FROM %%IMAGE%%:15-alpine
-ENV POSTGRES_INITDB_ARGS "--locale-provider=icu --icu-locale=de-DE"
-ENV LANG de_DE.utf8
+```console
+$ docker run -d -e LANG=de_DE.utf8 -e POSTGRES_INITDB_ARGS="--locale-provider=icu --icu-locale=de-DE" -e POSTGRES_PASSWORD=mysecretpassword %%IMAGE%%:15-alpine 
 ```
 
 ## Additional Extensions
