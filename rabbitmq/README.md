@@ -32,10 +32,10 @@ WARNING:
 -	[`3.10.9-management`, `3.10-management`](https://github.com/docker-library/rabbitmq/blob/6e226fe8e99702c8726d5e7d5c5864e69548048d/3.10/ubuntu/management/Dockerfile)
 -	[`3.10.9-alpine`, `3.10-alpine`](https://github.com/docker-library/rabbitmq/blob/027946dcc252a0caae3cc32c0e4692a292bf9c0e/3.10/alpine/Dockerfile)
 -	[`3.10.9-management-alpine`, `3.10-management-alpine`](https://github.com/docker-library/rabbitmq/blob/6e226fe8e99702c8726d5e7d5c5864e69548048d/3.10/alpine/management/Dockerfile)
--	[`3.9.23`, `3.9`](https://github.com/docker-library/rabbitmq/blob/6889979f517c7ea3a7bd54bb88864dc8c29d327c/3.9/ubuntu/Dockerfile)
--	[`3.9.23-management`, `3.9-management`](https://github.com/docker-library/rabbitmq/blob/b07819f873e5a68b2bb54e01f0caa41c26b277f3/3.9/ubuntu/management/Dockerfile)
--	[`3.9.23-alpine`, `3.9-alpine`](https://github.com/docker-library/rabbitmq/blob/6889979f517c7ea3a7bd54bb88864dc8c29d327c/3.9/alpine/Dockerfile)
--	[`3.9.23-management-alpine`, `3.9-management-alpine`](https://github.com/docker-library/rabbitmq/blob/b07819f873e5a68b2bb54e01f0caa41c26b277f3/3.9/alpine/management/Dockerfile)
+-	[`3.9.24`, `3.9`](https://github.com/docker-library/rabbitmq/blob/4b67bdeba2a3f4dc2cdd57d197d79afd59ad3a75/3.9/ubuntu/Dockerfile)
+-	[`3.9.24-management`, `3.9-management`](https://github.com/docker-library/rabbitmq/blob/b07819f873e5a68b2bb54e01f0caa41c26b277f3/3.9/ubuntu/management/Dockerfile)
+-	[`3.9.24-alpine`, `3.9-alpine`](https://github.com/docker-library/rabbitmq/blob/4b67bdeba2a3f4dc2cdd57d197d79afd59ad3a75/3.9/alpine/Dockerfile)
+-	[`3.9.24-management-alpine`, `3.9-management-alpine`](https://github.com/docker-library/rabbitmq/blob/b07819f873e5a68b2bb54e01f0caa41c26b277f3/3.9/alpine/management/Dockerfile)
 
 # Quick reference (cont.)
 
