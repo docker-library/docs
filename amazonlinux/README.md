@@ -24,8 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.0.20220912.1`, `2`, `latest`](https://github.com/amazonlinux/container-images/blob/fb082773264a2defa7c5cfc78a398304cf136589/Dockerfile)
--	[`2.0.20220912.1-with-sources`, `2-with-sources`, `with-sources`](https://github.com/amazonlinux/container-images/blob/ec5f36611a2a511ac95ffd55e62dbeaba493dddc/Dockerfile)
+-	[`2.0.20221004.0`, `2`, `latest`](https://github.com/amazonlinux/container-images/blob/2b0c14110e17fef5c161926ee4961268940a9ffb/Dockerfile)
+-	[`2.0.20221004.0-with-sources`, `2-with-sources`, `with-sources`](https://github.com/amazonlinux/container-images/blob/2931065160d74a86bc8d322fcf6d5b680da81f6e/Dockerfile)
 -	[`2018.03.0.20220907.3`, `2018.03`, `1`](https://github.com/amazonlinux/container-images/blob/c4dd72316dd9dc4aa96885ebed72cd05149c8efe/Dockerfile)
 -	[`2018.03.0.20220907.3-with-sources`, `2018.03-with-sources`, `1-with-sources`](https://github.com/amazonlinux/container-images/blob/9dcdd0990630811a8b83e6593654f03eefea4926/Dockerfile)
 -	[`2022.0.20221012.0`, `2022`, `devel`](https://github.com/amazonlinux/container-images/blob/807322aee2b8dcfb2ff1bb8b11e1d5b36392c429/Dockerfile)
