@@ -28,8 +28,8 @@ WARNING:
 -	[`2.0.20221004.0-with-sources`, `2-with-sources`, `with-sources`](https://github.com/amazonlinux/container-images/blob/2931065160d74a86bc8d322fcf6d5b680da81f6e/Dockerfile)
 -	[`2018.03.0.20220907.3`, `2018.03`, `1`](https://github.com/amazonlinux/container-images/blob/c4dd72316dd9dc4aa96885ebed72cd05149c8efe/Dockerfile)
 -	[`2018.03.0.20220907.3-with-sources`, `2018.03-with-sources`, `1-with-sources`](https://github.com/amazonlinux/container-images/blob/9dcdd0990630811a8b83e6593654f03eefea4926/Dockerfile)
--	[`2022.0.20221012.0`, `2022`, `devel`](https://github.com/amazonlinux/container-images/blob/807322aee2b8dcfb2ff1bb8b11e1d5b36392c429/Dockerfile)
--	[`2022.0.20221012.0-with-sources`, `2022-with-sources`, `devel-with-sources`](https://github.com/amazonlinux/container-images/blob/db52fa7e4736833d2e9da0dccccb5ed227b1ab70/Dockerfile)
+-	[`2022.0.20221019.4`, `2022`, `devel`](https://github.com/amazonlinux/container-images/blob/6ca75095019b8f2716426ca8cea6e7f8b1556fa0/Dockerfile)
+-	[`2022.0.20221019.4-with-sources`, `2022-with-sources`, `devel-with-sources`](https://github.com/amazonlinux/container-images/blob/8a0605984047c4a9dc777b8719fb0a4c7849c39b/Dockerfile)
 
 # Quick reference (cont.)
 
