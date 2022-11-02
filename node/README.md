@@ -42,12 +42,12 @@ WARNING:
 -	[`16-bullseye-slim`, `16.18-bullseye-slim`, `16.18.0-bullseye-slim`, `gallium-bullseye-slim`](https://github.com/nodejs/docker-node/blob/8edd510a1b2f64330fd7b865afd12d88c3c21679/16/bullseye-slim/Dockerfile)
 -	[`16`, `16-buster`, `16.18`, `16.18-buster`, `16.18.0`, `16.18.0-buster`, `gallium`, `gallium-buster`](https://github.com/nodejs/docker-node/blob/8edd510a1b2f64330fd7b865afd12d88c3c21679/16/buster/Dockerfile)
 -	[`16-buster-slim`, `16-slim`, `16.18-buster-slim`, `16.18-slim`, `16.18.0-buster-slim`, `16.18.0-slim`, `gallium-buster-slim`, `gallium-slim`](https://github.com/nodejs/docker-node/blob/8edd510a1b2f64330fd7b865afd12d88c3c21679/16/buster-slim/Dockerfile)
--	[`14-alpine3.15`, `14.20-alpine3.15`, `14.20.1-alpine3.15`, `fermium-alpine3.15`](https://github.com/nodejs/docker-node/blob/c97bb67fb82bb10fd199cb4c4e57b3ab43605a9c/14/alpine3.15/Dockerfile)
--	[`14-alpine`, `14-alpine3.16`, `14.20-alpine`, `14.20-alpine3.16`, `14.20.1-alpine`, `14.20.1-alpine3.16`, `fermium-alpine`, `fermium-alpine3.16`](https://github.com/nodejs/docker-node/blob/c97bb67fb82bb10fd199cb4c4e57b3ab43605a9c/14/alpine3.16/Dockerfile)
--	[`14-bullseye`, `14.20-bullseye`, `14.20.1-bullseye`, `fermium-bullseye`](https://github.com/nodejs/docker-node/blob/c97bb67fb82bb10fd199cb4c4e57b3ab43605a9c/14/bullseye/Dockerfile)
--	[`14-bullseye-slim`, `14.20-bullseye-slim`, `14.20.1-bullseye-slim`, `fermium-bullseye-slim`](https://github.com/nodejs/docker-node/blob/c97bb67fb82bb10fd199cb4c4e57b3ab43605a9c/14/bullseye-slim/Dockerfile)
--	[`14`, `14-buster`, `14.20`, `14.20-buster`, `14.20.1`, `14.20.1-buster`, `fermium`, `fermium-buster`](https://github.com/nodejs/docker-node/blob/c97bb67fb82bb10fd199cb4c4e57b3ab43605a9c/14/buster/Dockerfile)
--	[`14-buster-slim`, `14-slim`, `14.20-buster-slim`, `14.20-slim`, `14.20.1-buster-slim`, `14.20.1-slim`, `fermium-buster-slim`, `fermium-slim`](https://github.com/nodejs/docker-node/blob/c97bb67fb82bb10fd199cb4c4e57b3ab43605a9c/14/buster-slim/Dockerfile)
+-	[`14-alpine3.15`, `14.21-alpine3.15`, `14.21.0-alpine3.15`, `fermium-alpine3.15`](https://github.com/nodejs/docker-node/blob/6186eff9cea628d90d4f83657d56d0502b515ced/14/alpine3.15/Dockerfile)
+-	[`14-alpine`, `14-alpine3.16`, `14.21-alpine`, `14.21-alpine3.16`, `14.21.0-alpine`, `14.21.0-alpine3.16`, `fermium-alpine`, `fermium-alpine3.16`](https://github.com/nodejs/docker-node/blob/6186eff9cea628d90d4f83657d56d0502b515ced/14/alpine3.16/Dockerfile)
+-	[`14-bullseye`, `14.21-bullseye`, `14.21.0-bullseye`, `fermium-bullseye`](https://github.com/nodejs/docker-node/blob/6186eff9cea628d90d4f83657d56d0502b515ced/14/bullseye/Dockerfile)
+-	[`14-bullseye-slim`, `14.21-bullseye-slim`, `14.21.0-bullseye-slim`, `fermium-bullseye-slim`](https://github.com/nodejs/docker-node/blob/6186eff9cea628d90d4f83657d56d0502b515ced/14/bullseye-slim/Dockerfile)
+-	[`14`, `14-buster`, `14.21`, `14.21-buster`, `14.21.0`, `14.21.0-buster`, `fermium`, `fermium-buster`](https://github.com/nodejs/docker-node/blob/6186eff9cea628d90d4f83657d56d0502b515ced/14/buster/Dockerfile)
+-	[`14-buster-slim`, `14-slim`, `14.21-buster-slim`, `14.21-slim`, `14.21.0-buster-slim`, `14.21.0-slim`, `fermium-buster-slim`, `fermium-slim`](https://github.com/nodejs/docker-node/blob/6186eff9cea628d90d4f83657d56d0502b515ced/14/buster-slim/Dockerfile)
 
 # Quick reference (cont.)
 
