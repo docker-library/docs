@@ -24,12 +24,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.1.0`, `5.1.0-community`, `5`, `5-community`, `community`, `latest`](https://github.com/neo4j/docker-neo4j-publish/blob/40a0188175a855bf184b0f7c62475b81ee10e028/5.1.0/community/Dockerfile)
--	[`5.1.0-enterprise`, `5-enterprise`, `enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/40a0188175a855bf184b0f7c62475b81ee10e028/5.1.0/enterprise/Dockerfile)
--	[`4.4.12`, `4.4.12-community`, `4.4`, `4.4-community`](https://github.com/neo4j/docker-neo4j-publish/blob/b9b3c369b2a7d34880ac81681c7d148f733ccc22/4.4.12/community/Dockerfile)
--	[`4.4.12-enterprise`, `4.4-enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/b9b3c369b2a7d34880ac81681c7d148f733ccc22/4.4.12/enterprise/Dockerfile)
--	[`4.3.19`, `4.3.19-community`, `4.3`, `4.3-community`](https://github.com/neo4j/docker-neo4j-publish/blob/43be1e819ac0ce8289da79285de07722a850072f/4.3.19/community/Dockerfile)
--	[`4.3.19-enterprise`, `4.3-enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/43be1e819ac0ce8289da79285de07722a850072f/4.3.19/enterprise/Dockerfile)
+-	[`5.1.0`, `5.1.0-community`, `5.1`, `5`, `5-community`, `community`, `latest`](https://github.com/neo4j/docker-neo4j-publish/blob/40a0188175a855bf184b0f7c62475b81ee10e028/5.1.0/community/Dockerfile)
+-	[`5.1.0-enterprise`, `5.1-enterprise`, `5-enterprise`, `enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/40a0188175a855bf184b0f7c62475b81ee10e028/5.1.0/enterprise/Dockerfile)
+-	[`4.4.13`, `4.4.13-community`, `4.4`, `4.4-community`](https://github.com/neo4j/docker-neo4j-publish/blob/80069953d612dfa6feb79863d6dc0f44147096e4/4.4.13/community/Dockerfile)
+-	[`4.4.13-enterprise`, `4.4-enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/80069953d612dfa6feb79863d6dc0f44147096e4/4.4.13/enterprise/Dockerfile)
+-	[`4.3.20`, `4.3.20-community`, `4.3`, `4.3-community`](https://github.com/neo4j/docker-neo4j-publish/blob/9ff07d9179050394847539f18bb2053ffa4e9340/4.3.20/community/Dockerfile)
+-	[`4.3.20-enterprise`, `4.3-enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/9ff07d9179050394847539f18bb2053ffa4e9340/4.3.20/enterprise/Dockerfile)
 
 # Quick reference (cont.)
 
