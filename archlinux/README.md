@@ -24,8 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `base`, `base-20221106.0.100148`](https://gitlab.archlinux.org/archlinux/archlinux-docker/-/blob/3425453aa7f47d2d03486b4d55c6010598cb225e/Dockerfile.base)
--	[`base-devel`, `base-devel-20221106.0.100148`](https://gitlab.archlinux.org/archlinux/archlinux-docker/-/blob/3425453aa7f47d2d03486b4d55c6010598cb225e/Dockerfile.base-devel)
+-	[`latest`, `base`, `base-20221113.0.102112`](https://gitlab.archlinux.org/archlinux/archlinux-docker/-/blob/33ea24edac6753137e92b7144e0b046690b0d3ce/Dockerfile.base)
+-	[`base-devel`, `base-devel-20221113.0.102112`](https://gitlab.archlinux.org/archlinux/archlinux-docker/-/blob/33ea24edac6753137e92b7144e0b046690b0d3ce/Dockerfile.base-devel)
 
 # Quick reference (cont.)
 

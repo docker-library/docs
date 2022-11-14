@@ -136,13 +136,26 @@ docker run varnish varnishreload -h
 
 ## Additional configuration
 
+### Cache size (VARNISH_SIZE)
+
 By default, the containers will use a cache size of 100MB, which is usually a bit too small, but you can quickly set it through the `VARNISH_SIZE` environment variable:
 
 ```console
 $ docker run --tmpfs /var/lib/varnish/varnishd:exec -p 8080:80 -e VARNISH_SIZE=2G varnish
 ```
 
-Additionally, you can add arguments to `docker run` after `varnish`, if the first one starts with a `-`, they will be appendend to the [default command](https://github.com/varnish/docker-varnish/blob/master/docker-varnish-entrypoint#L8):
+### Listening ports (VARNISH_HTTP_PORT/VARNISH_PROXY_PORT)
+
+Varnish will listen to HTTP traffic on port `80`, and this can be overridden by setting the environment variable `VARNISH_HTTP_PORT`. Similarly, the variable `VARNISH_PROXY_PORT` (defaulting to `8443`) dictate the listening port for the [PROXY protocol](https://www.haproxy.org/download/1.8/doc/proxy-protocol.txt) used notably to interact with [hitch](https://hub.docker.com/_/hitch) (which, coincidentally, uses `8443` as a default too!).
+
+```console
+# instruct varnish to listening to port 7777 instead of 80
+$ docker run --tmpfs /var/lib/varnish/varnishd:exec -p 8080:7777 -e VARNISH_HTTP_PORT=7777 varnish
+```
+
+### Extra arguments
+
+Additionally, you can add arguments to `docker run` after `varnish`, if the first argument starts with a `-`, the whole list will be appendend to the [default command](https://github.com/varnish/docker-varnish/blob/master/fresh/debian/scripts/docker-varnish-entrypoint):
 
 ```console
 # extend the default keep period
