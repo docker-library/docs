@@ -34,8 +34,6 @@ WARNING:
 -	[`12.13-alpine`, `12-alpine`, `12.13-alpine3.16`, `12-alpine3.16`](https://github.com/docker-library/postgres/blob/5ca94d535d75308b16125d132048bf93172521db/12/alpine/Dockerfile)
 -	[`11.18-bullseye`, `11-bullseye`](https://github.com/docker-library/postgres/blob/14022440352a9e24d86cae450600ea56969d234b/11/bullseye/Dockerfile)
 -	[`11.18-alpine`, `11-alpine`, `11.18-alpine3.16`, `11-alpine3.16`](https://github.com/docker-library/postgres/blob/14022440352a9e24d86cae450600ea56969d234b/11/alpine/Dockerfile)
--	[`10.23-bullseye`, `10-bullseye`](https://github.com/docker-library/postgres/blob/c3a0b48216491953f25344c3fef1b02ed157ff3e/10/bullseye/Dockerfile)
--	[`10.23-alpine`, `10-alpine`, `10.23-alpine3.16`, `10-alpine3.16`](https://github.com/docker-library/postgres/blob/c3a0b48216491953f25344c3fef1b02ed157ff3e/10/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
