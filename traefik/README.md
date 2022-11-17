@@ -24,8 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`v2.9.4-windowsservercore-1809`, `2.9.4-windowsservercore-1809`, `v2.9-windowsservercore-1809`, `2.9-windowsservercore-1809`, `banon-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/traefik/traefik-library-image/blob/902a0bf463bda84f4cc2cefbcbf9b5b6f7a2cdb9/windows/1809/Dockerfile)
--	[`v2.9.4`, `2.9.4`, `v2.9`, `2.9`, `banon`, `latest`](https://github.com/traefik/traefik-library-image/blob/902a0bf463bda84f4cc2cefbcbf9b5b6f7a2cdb9/alpine/Dockerfile)
+-	[`v2.9.5-windowsservercore-1809`, `2.9.5-windowsservercore-1809`, `v2.9-windowsservercore-1809`, `2.9-windowsservercore-1809`, `banon-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/traefik/traefik-library-image/blob/78e52c7538f1a06c05d91d18d8ed0b467e69160e/windows/1809/Dockerfile)
+-	[`v2.9.5`, `2.9.5`, `v2.9`, `2.9`, `banon`, `latest`](https://github.com/traefik/traefik-library-image/blob/78e52c7538f1a06c05d91d18d8ed0b467e69160e/alpine/Dockerfile)
 -	[`v1.7.34-windowsservercore-1809`, `1.7.34-windowsservercore-1809`, `v1.7-windowsservercore-1809`, `1.7-windowsservercore-1809`, `maroilles-windowsservercore-1809`](https://github.com/traefik/traefik-library-image/blob/4434758cf14bbd1ec9511b3f2a37b0a6ce846db6/windows/1809/Dockerfile)
 -	[`v1.7.34-alpine`, `1.7.34-alpine`, `v1.7-alpine`, `1.7-alpine`, `maroilles-alpine`](https://github.com/traefik/traefik-library-image/blob/4434758cf14bbd1ec9511b3f2a37b0a6ce846db6/alpine/Dockerfile)
 -	[`v1.7.34`, `1.7.34`, `v1.7`, `1.7`, `maroilles`](https://github.com/traefik/traefik-library-image/blob/4434758cf14bbd1ec9511b3f2a37b0a6ce846db6/scratch/Dockerfile)
