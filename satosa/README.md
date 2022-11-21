@@ -28,13 +28,13 @@ WARNING:
 
 ## Simple Tags
 
--	[`8.2.0-bullseye`, `8.2-bullseye`, `8-bullseye`, `bullseye`](https://github.com/IdentityPython/satosa-docker/blob/24aabb5cd0330eab9c8baeddf4fc8fcf0d714d3b/8.2/bullseye/Dockerfile)
+-	[`8.2.0-bullseye`, `8.2-bullseye`, `8-bullseye`, `bullseye`](https://github.com/IdentityPython/satosa-docker/blob/a4ef0077f546b7e9be444720b14f2cba14f8f2eb/8.2/bullseye/Dockerfile)
 -	[`8.2.0-alpine3.16`, `8.2-alpine3.16`, `8-alpine3.16`, `alpine3.16`, `8.2.0-alpine`, `8.2-alpine`, `8-alpine`, `alpine`](https://github.com/IdentityPython/satosa-docker/blob/24aabb5cd0330eab9c8baeddf4fc8fcf0d714d3b/8.2/alpine3.16/Dockerfile)
 
 ## Shared Tags
 
 -	`8.2.0`, `8.2`, `8`, `latest`:
-	-	[`8.2.0-bullseye`](https://github.com/IdentityPython/satosa-docker/blob/24aabb5cd0330eab9c8baeddf4fc8fcf0d714d3b/8.2/bullseye/Dockerfile)
+	-	[`8.2.0-bullseye`](https://github.com/IdentityPython/satosa-docker/blob/a4ef0077f546b7e9be444720b14f2cba14f8f2eb/8.2/bullseye/Dockerfile)
 
 # Quick reference (cont.)
 
