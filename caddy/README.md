@@ -149,7 +149,7 @@ Caddy is extendable through the use of "modules". See https://caddyserver.com/do
 You can use the `:builder` image as a short-cut to building a new Caddy binary:
 
 ```Dockerfile
-FROM caddy:<version>-builder AS builder
+FROM caddy:builder-<version> AS builder
 
 RUN xcaddy build \
     --with github.com/caddyserver/nginx-adapter \
