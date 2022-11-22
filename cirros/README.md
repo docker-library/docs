@@ -24,7 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`0.6.0`, `0.6`, `0`, `latest`](https://github.com/tianon/docker-brew-cirros/blob/00ddac1cc79093da0d08040b71b02f35e5dfe21c/arches/amd64/Dockerfile)
+-	[`0.6.1`, `0.6`, `0`, `latest`](https://github.com/tianon/docker-brew-cirros/blob/84bfc9d0e4cc631d043410d602bf5f8876ed6575/arches/amd64/Dockerfile)
 
 # Quick reference (cont.)
 
