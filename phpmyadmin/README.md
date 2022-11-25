@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.2.0-apache`, `5.2-apache`, `5-apache`, `apache`, `5.2.0`, `5.2`, `5`, `latest`](https://github.com/phpmyadmin/docker/blob/b936b8ebd118cddaab53da31266dc016d70b43fe/apache/Dockerfile)
--	[`5.2.0-fpm`, `5.2-fpm`, `5-fpm`, `fpm`](https://github.com/phpmyadmin/docker/blob/b936b8ebd118cddaab53da31266dc016d70b43fe/fpm/Dockerfile)
--	[`5.2.0-fpm-alpine`, `5.2-fpm-alpine`, `5-fpm-alpine`, `fpm-alpine`](https://github.com/phpmyadmin/docker/blob/b936b8ebd118cddaab53da31266dc016d70b43fe/fpm-alpine/Dockerfile)
+-	[`5.2.0-apache`, `5.2-apache`, `5-apache`, `apache`, `5.2.0`, `5.2`, `5`, `latest`](https://github.com/phpmyadmin/docker/blob/71d54acc9309c04ed53a148ca1979b6cdc10c5b9/apache/Dockerfile)
+-	[`5.2.0-fpm`, `5.2-fpm`, `5-fpm`, `fpm`](https://github.com/phpmyadmin/docker/blob/71d54acc9309c04ed53a148ca1979b6cdc10c5b9/fpm/Dockerfile)
+-	[`5.2.0-fpm-alpine`, `5.2-fpm-alpine`, `5-fpm-alpine`, `fpm-alpine`](https://github.com/phpmyadmin/docker/blob/71d54acc9309c04ed53a148ca1979b6cdc10c5b9/fpm-alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -186,6 +186,8 @@ Set the variable `PMA_ABSOLUTE_URI` to the fully-qualified path (`https://pma.ex
 -	`PMA_ABSOLUTE_URI` - the full URL to phpMyAdmin. Sometimes needed when used in a reverse-proxy configuration. Don't set this unless needed. See [documentation](https://docs.phpmyadmin.net/en/latest/config.html#cfg_PmaAbsoluteUri).
 -	`PMA_CONFIG_BASE64` - if set, this option will override the default `config.inc.php` with the base64 decoded contents of the variable
 -	`PMA_USER_CONFIG_BASE64` - if set, this option will override the default `config.user.inc.php` with the base64 decoded contents of the variable
+-	`PMA_UPLOADDIR` - if defined, this option will set the path where files can be saved to be available to import ([$cfg['UploadDir']](https://docs.phpmyadmin.net/en/latest/config.html#cfg_UploadDir))
+-	`PMA_SAVEDIR` - if defined, this option will set the path where exported files can be saved ([$cfg['SaveDir']](https://docs.phpmyadmin.net/en/latest/config.html#cfg_SaveDir))
 -	`PMA_CONTROLHOST` - when set, this points to an alternate database host used for storing the [phpMyAdmin Configuration Storage database](https://docs.phpmyadmin.net/en/latest/setup.html#phpmyadmin-configuration-storage) database
 -	`PMA_CONTROLPORT` - if set, will override the default port (3306) for connecting to the control host for storing the [phpMyAdmin Configuration Storage database](https://docs.phpmyadmin.net/en/latest/setup.html#phpmyadmin-configuration-storage) database
 -	`PMA_PMADB` - define the name of the database to be used for the [phpMyAdmin Configuration Storage database](https://docs.phpmyadmin.net/en/latest/setup.html#phpmyadmin-configuration-storage). When not set, the advanced features are not enabled by default: they can still potentially be enabled by the user when logging in with the zero conf (zero configuration) feature. Suggested values: `phpmyadmin` or `pmadb`
