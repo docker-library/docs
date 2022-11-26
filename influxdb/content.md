@@ -12,6 +12,22 @@ The `latest` tag for this image now points to the latest released implementation
 
 ## Using this Image - InfluxDB 2.x
 
+
+### Quick start
+
+Using this image is pretty easy, but there are a few things you should know.
+
+- You should forward TCP port 8086
+- You should mount a volume in /var/lib/influxdb2
+
+```console
+$ docker run \
+    -p 8086:8086 \
+    -v myInfluxVolume:/var/lib/influxdb2 \
+    %%IMAGE%%:latest
+```
+After starting the container you can use the web interface at http://localhost:8086/ to setup and customize your Influx database.
+
 ### Upgrading from InfluxDB 1.x
 
 InfluxDB 2.x provides a 1.x-compatible API, but expects a different storage layout on disk. To bridge this mismatch, the InfluxDB image contains extra functionality to migrate 1.x data and config into 2.x layouts automatically before booting the `influxd` server.
