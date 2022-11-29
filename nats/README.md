@@ -68,10 +68,6 @@ WARNING:
 
 `nats` is a high performance server for the NATS Messaging System.
 
-# Backward Compatibility
-
-The routing protocol has been dramatically improved and adds support for accounts and multi-tenancy. The new protocol is not backward compatible with servers pre v2.0.0.
-
 # Example usage
 
 ```bash
@@ -99,8 +95,8 @@ The routing protocol has been dramatically improved and adds support for account
 
 $ docker run -d --name nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 nats
 [INF] Starting nats-server
-[INF]   Version:  2.9.3
-[INF]   Git:      [25e82d7d]
+[INF]   Version:  2.9.8
+[INF]   Git:      [60e335a]
 [INF]   Cluster:  my_cluster
 [INF]   Name:     NB3YN6SPZF6MWTLPGYLRE2AD5VVWSW443RO43YR5GC62I463QPYGOL5C
 [INF]   ID:       NB3YN6SPZF6MWTLPGYLRE2AD5VVWSW443RO43YR5GC62I463QPYGOL5C
@@ -121,9 +117,9 @@ $ docker run -d --name=nats-2 --link nats-main -p 4222:4222 -p 6222:6222 -p 8222
 # If you want to verify the routes are connected, try this instead:
 $ docker run -d --name=nats-2 --link nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 nats -c /etc/nats/nats-server.conf --routes=nats-route://ruser:T0pS3cr3t@nats-main:6222 -DV
 [INF] Starting nats-server
-[INF]   Version:  2.9.3
-[INF]   Git:      [25e82d7d]
-[DBG]   Go build: go1.19.2
+[INF]   Version:  2.9.8
+[INF]   Git:      [60e335a]
+[DBG]   Go build: go1.19.3
 [INF]   Cluster:  my_cluster
 [INF]   Name:     NDFNAUTD4RKS2O7CMKMDMTV3DW5NIKFCQDDMXW2A5YXLUZWWX7RYFCKB
 [INF]   ID:       NDFNAUTD4RKS2O7CMKMDMTV3DW5NIKFCQDDMXW2A5YXLUZWWX7RYFCKB
