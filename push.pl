@@ -89,9 +89,7 @@ sub prompt_for_edit {
 		$proposedText =~ s%$supportedTagsRegex%$sponsoredLinks$1$2%;
 	}
 	
-	my $alwaysShortTags = ($proposedFile eq 'neo4j/README.md');
-	
-	if ($alwaysShortTags || ($lengthLimit > 0 && length($proposedText) > $lengthLimit)) {
+	if ($lengthLimit > 0 && length($proposedText) > $lengthLimit) {
 		# TODO https://github.com/docker/hub-beta-feedback/issues/238
 		my $fullUrl = "$githubBase/$proposedFile";
 		my $shortTags = "-\tSee [\"Supported tags and respective \`Dockerfile\` links\" at $fullUrl]($fullUrl#supported-tags-and-respective-dockerfile-links)\n\n";
@@ -100,15 +98,11 @@ sub prompt_for_edit {
 		my $startingNote = $genericNote . "\n\n";
 		my $endingNote = "\n\n...\n\n" . $genericNote;
 		
-		$tagsNote = $shortTags if $alwaysShortTags;
-		
 		my $trimmedText = $proposedText;
 		
 		# if our text is too long for the Hub length limit, let's first try removing the "Supported tags" list and add $tagsNote and see if that's enough to let us put the full image documentation
 		$trimmedText =~ s%$supportedTagsRegex%$sponsoredLinks$1$tagsNote%ms;
 		# (we scrape until the next "h1" or a line starting with a link which is likely a build status badge for an architecture-namespace)
-		
-		$proposedText = $trimmedText if $alwaysShortTags;
 		
 		if (length($trimmedText) > $lengthLimit) {
 			# ... if that doesn't do the trick, then do our older naïve description trimming
