@@ -12,15 +12,16 @@ InfluxDB is a time series database built from the ground up to handle high write
 
 Using this image is pretty easy, but there are a few things you should know.
 
-- You should forward TCP port 8086
-- You should mount a volume in /var/lib/influxdb2
+-	You should forward TCP port 8086
+-	You should mount a volume in /var/lib/influxdb2
 
 ```console
 $ docker run \
-    -p 8086:8086 \
-    -v myInfluxVolume:/var/lib/influxdb2 \
-    %%IMAGE%%:latest
+      -p 8086:8086 \
+      -v myInfluxVolume:/var/lib/influxdb2 \
+      %%IMAGE%%:latest
 ```
+
 After starting the container you can use the web interface at http://localhost:8086/ to setup and customize your Influx database.
 
 Find more about API Endpoints & Ports [here](https://docs.influxdata.com/influxdb/v2.5/reference/api/).
