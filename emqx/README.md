@@ -20,12 +20,13 @@ WARNING:
 	[EMQ Technologies](https://github.com/emqx)
 
 -	**Where to get help**:  
-	[Discussions](https://github.com/emqx/emqx/discussions) or [Slack](https://slack-invite.emqx.io/)
+	[Discussions](https://github.com/emqx/emqx/discussions) or [Discord](https://discord.gg/xYGf3fQnES)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.3.15`, `4.3`](https://github.com/emqx/emqx-docker/blob/be51f664546d862443a73c367e48d49eef2393a5/4.3/Dockerfile)
--	[`4.4.4`, `4.4`, `4`, `latest`](https://github.com/emqx/emqx-docker/blob/be51f664546d862443a73c367e48d49eef2393a5/4.4/Dockerfile)
+-	[`4.3.22`, `4.3`](https://github.com/emqx/emqx-docker/blob/851c0845da8078770fb01ff958733f4989e3a8bc/4.3/Dockerfile)
+-	[`4.4.11`, `4.4`, `4`](https://github.com/emqx/emqx-docker/blob/851c0845da8078770fb01ff958733f4989e3a8bc/4.4/Dockerfile)
+-	[`5.0.11`, `5.0`, `5`, `latest`](https://github.com/emqx/emqx-docker/blob/851c0845da8078770fb01ff958733f4989e3a8bc/5.0/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -46,17 +47,17 @@ WARNING:
 -	**Source of this description**:  
 	[docs repo's `emqx/` directory](https://github.com/docker-library/docs/tree/master/emqx) ([history](https://github.com/docker-library/docs/commits/master/emqx))
 
-# What is EMQ X ?
+# What is EMQX
 
-[EMQ X MQTT broker](https://www.emqx.io/) is a fully open source, highly scalable, highly available distributed MQTT messaging broker for IoT, M2M and Mobile applications that can handle tens of millions of concurrent clients.
+[EMQX MQTT broker](https://emqx.io/products/broker) is a fully open source, highly scalable, highly available distributed MQTT messaging broker for IoT, M2M and Mobile applications that can handle tens of millions of concurrent clients.
 
-Starting from 3.0 release, *EMQ X* broker fully supports MQTT V5.0 protocol specifications and backward compatible with MQTT V3.1 and V3.1.1, as well as other communication protocols such as MQTT-SN, CoAP, LwM2M, WebSocket and STOMP. The 3.0 release of the *EMQ X* broker can scaled to 10+ million concurrent MQTT connections on one cluster.
+Starting from 3.0 release, *EMQX* broker fully supports MQTT V5.0 protocol specifications and backward compatible with MQTT V3.1 and V3.1.1, as well as other communication protocols such as MQTT-SN, CoAP, LwM2M, WebSocket and STOMP. The 3.0 release of the *EMQX* broker can scaled to 10+ million concurrent MQTT connections on one cluster.
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/68aa4264fa058f323993fdaceacd63a8acbbeb48/emqx/logo.svg?sanitize=true)
 
 # How to use this image
 
-### Run emqx
+### Run EMQX
 
 Execute some command under this docker image
 
@@ -70,11 +71,11 @@ For example
 $ docker run -d --name emqx -p 18083:18083 -p 1883:1883 emqx:latest
 ```
 
-The emqx broker runs as linux user `emqx` in the docker container.
+The EMQX broker runs as Linux user `emqx` in the docker container.
 
 ### Configuration
 
-Use the environment variable to configure the EMQ X docker container.
+Use the environment variable to configure the EMQX docker container.
 
 By default, the environment variables with `EMQX_` prefix are mapped to key-value pairs in configuration files.
 
@@ -107,30 +108,30 @@ EMQX_HOST
 
 These environment variables will ignore for configuration file.
 
-#### EMQ X Configuration
+#### EMQX Configuration
 
-> NOTE: All EMQ X Configuration in [etc/emqx.conf](https://github.com/emqx/emqx/blob/master/etc/emqx.conf) could config by environment. The following list is just an example, not a complete configuration.
+> NOTE: All EMQX Configuration in [`etc/emqx.conf`](https://github.com/emqx/emqx/blob/master/apps/emqx/etc/emqx.conf) can be configured via environment variables. The following list is just an example, not a complete configuration.
 
 | Options     | Default        | Mapped | Description                |
 |-------------|----------------|--------|----------------------------|
-| `EMQX_NAME` | container name | none   | emqx node short name       |
-| `EMQX_HOST` | container IP   | none   | emqx node host, IP or FQDN |
+| `EMQX_NAME` | container name | none   | EMQX node short name       |
+| `EMQX_HOST` | container IP   | none   | EMQX node host, IP or FQDN |
 
-The list is incomplete and may changed with [etc/emqx.conf](https://github.com/emqx/emqx/blob/master/etc/emqx.conf) and plugin configuration files. But the mapping rule is similar.
+The list is incomplete and may be changed with [`etc/emqx.conf`](https://github.com/emqx/emqx/blob/master/apps/emqx/etc/emqx.conf) and plugin configuration files. But the mapping rule is similar.
 
 If set `EMQX_NAME` and `EMQX_HOST`, and unset `EMQX_NODE_NAME`, `EMQX_NODE_NAME=$EMQX_NAME@$EMQX_HOST`.
 
-For example, set mqtt tcp port to 1883
+For example, set MQTT TCP port to 1883
 
 ```console
 $ docker run -d --name emqx -e EMQX__LISTENERS__TCP__DEFAULT__BIND=1883 -p 18083:18083 -p 1883:1883 emqx:latest
 ```
 
-#### EMQ Loaded Modules Configuration
+#### EMQX Loaded Modules Configuration
 
 | Options               | Default           | Description                 |
 |-----------------------|-------------------|-----------------------------|
-| `EMQX_LOADED_MODULES` | see content below | default modules emqx loaded |
+| `EMQX_LOADED_MODULES` | see content below | default EMQX loaded modules |
 
 Default environment variable `EMQX_LOADED_MODULES`, including
 
@@ -153,11 +154,11 @@ EMQX_LOADED_MODULES="emqx_mod_delayed emqx_mod_rewrite"
 EMQX_LOADED_MODULES="emqx_mod_delayed | emqx_mod_rewrite"
 ```
 
-#### EMQ Loaded Plugins Configuration
+#### EMQX Loaded Plugins Configuration
 
 | Options               | Default           | Description                 |
 |-----------------------|-------------------|-----------------------------|
-| `EMQX_LOADED_PLUGINS` | see content below | default plugins emqx loaded |
+| `EMQX_LOADED_PLUGINS` | see content below | default EMQX loaded plugins |
 
 Default environment variable `EMQX_LOADED_PLUGINS`, including
 
@@ -184,9 +185,9 @@ EMQX_LOADED_PLUGINS="emqx_retainer emqx_rule_engine"
 EMQX_LOADED_PLUGINS="emqx_retainer | emqx_rule_engine"
 ```
 
-#### EMQ X Plugins Configuration
+#### EMQX Plugins Configuration
 
-The environment variables which with `EMQX_` prefix are mapped to all emqx plugins' configuration file, `.` get replaced by `__`.
+The environment variables which with `EMQX_` prefix are mapped to all EMQX plugins' configuration file, `.` get replaced by `__`.
 
 Example:
 
@@ -195,17 +196,17 @@ EMQX_RETAINER__STORAGE_TYPE <--> retainer.storage_type
 EMQX_RETAINER__MAX_PAYLOAD_SIZE <--> retainer.max_payload_size
 ```
 
-Don't worry about where to find the configuration file of emqx plugins, this docker image will find and config them automatically using some magic.
+Don't worry about where to find the configuration file of EMQX plugins, this docker image will find and configure them automatically using some magic.
 
-All plugin of emqx project could config in this way, following the environment variables mapping rule above.
+All EMQX plugins can be configured this way, following the environment variables mapping rule above.
 
-Assume you are using redis auth plugin, for example:
+Assume you are using Redis auth plugin, for example:
 
 ```bash
 #EMQX_RETAINER__STORAGE_TYPE = "ram"
 #EMQX_RETAINER.MAX_PAYLOAD_SIZE = 1MB
 
-docker run -d --name emqx -p 18083:18083 -p 1883:1883 -p 4369:4369 \
+docker run -d --name emqx -p 18083:18083 -p 1883:1883 \
     -e EMQX_LISTENERS__TCP__DEFAULT=1883 \
     -e EMQX_LOADED_PLUGINS="emqx_retainer" \
     -e EMQX_RETAINER__STORAGE_TYPE = "ram" \
@@ -218,24 +219,24 @@ For numbered configuration options where the number is next to a `.` such as:
 -	backend.redis.pool1.server
 -	backend.redis.hook.message.publish.1
 
-You can configure an arbitrary number of them as long as each has a uniq unber for it's own configuration option:
+You can configure an arbitrary number of them as long as each has a unique number for its own configuration option:
 
 ```bash
 docker run -d --name emqx -p 18083:18083 -p 1883:1883 -p 4369:4369 \
     -e EMQX_BACKEND_REDIS_POOL1__SERVER=127.0.0.1:6379 \
     [...]
     -e EMQX_BACKEND__REDIS__POOL5__SERVER=127.0.0.5:6379 \
-    -e EMQX_BACKEND__REDIS__HOOK_MESSAGE__PUBLISH__1='{"topic": "persistant/topic1", "action": {"function": "on_message_publish"}, "pool": "pool1"}' \
-    -e EMQX_BACKEND__REDIS__HOOK_MESSAGE__PUBLISH__2='{"topic": "persistant/topic2", "action": {"function": "on_message_publish"}, "pool": "pool1"}' \
-    -e EMQX_BACKEND__REDIS__HOOK_MESSAGE__PUBLISH__3='{"topic": "persistant/topic3", "action": {"function": "on_message_publish"}, "pool": "pool1"}' \
+    -e EMQX_BACKEND__REDIS__HOOK_MESSAGE__PUBLISH__1='{"topic": "persistent/topic1", "action": {"function": "on_message_publish"}, "pool": "pool1"}' \
+    -e EMQX_BACKEND__REDIS__HOOK_MESSAGE__PUBLISH__2='{"topic": "persistent/topic2", "action": {"function": "on_message_publish"}, "pool": "pool1"}' \
+    -e EMQX_BACKEND__REDIS__HOOK_MESSAGE__PUBLISH__3='{"topic": "persistent/topic3", "action": {"function": "on_message_publish"}, "pool": "pool1"}' \
     [...]
-    -e EMQX_BACKEND__REDIS__HOOK_MESSAGE__PUBLISH__13='{"topic": "persistant/topic13", "action": {"function": "on_message_publish"}, "pool": "pool1"}' \
+    -e EMQX_BACKEND__REDIS__HOOK_MESSAGE__PUBLISH__13='{"topic": "persistent/topic13", "action": {"function": "on_message_publish"}, "pool": "pool1"}' \
     emqx:latest
 ```
 
 ### Cluster
 
-EMQ X supports a variety of clustering methods, see our [documentation](https://docs.emqx.io/broker/latest/en/advanced/cluster.html#emqx-service-discovery) for details.
+EMQX supports a variety of clustering methods, see our [documentation](https://www.emqx.io/docs/en/latest/deploy/cluster/intro.html) for details.
 
 Let's create a static node list cluster from docker-compose.
 
@@ -290,7 +291,7 @@ Let's create a static node list cluster from docker-compose.
 
 ### Persistence
 
-If you want to persist the EMQ X docker container, you need to keep the following directories:
+If you want to persist the EMQX docker container, you need to keep the following directories:
 
 -	`/opt/emqx/data`
 -	`/opt/emqx/etc`
@@ -318,18 +319,18 @@ services:
       EMQX_HOST: 127.0.0.1
     volumes:
       - vol-emqx-data:/opt/emqx/data
-
+      - vol-emqx-etc:/opt/emqx/etc
       - vol-emqx-log:/opt/emqx/log
 ```
 
 ### Kernel Tuning
 
-Under linux host machine, the easiest way is [Tuning guide](https://docs.emqx.io/en/broker/latest/tutorial/tune.html#linux-kernel-tuning).
+Under Linux host machine, the easiest way is [Tuning guide](https://www.emqx.io/docs/en/latest/deploy/tune.html).
 
-If you want tune linux kernel by docker, you must ensure your docker is latest version (>=1.12).
+If you want tune Linux kernel by docker, you must ensure your docker is latest version (>=1.12).
 
 ```bash
-docker run -d --name emqx -p 18083:18083 -p 1883:1883 -p 4369:4369 \
+docker run -d --name emqx -p 18083:18083 -p 1883:1883 \
     --sysctl fs.file-max=2097152 \
     --sysctl fs.nr_open=2097152 \
     --sysctl net.core.somaxconn=32768 \
@@ -348,7 +349,7 @@ docker run -d --name emqx -p 18083:18083 -p 1883:1883 -p 4369:4369 \
     emqx:latest
 ```
 
-> REMEMBER: DO NOT RUN EMQ X DOCKER PRIVILEGED OR MOUNT SYSTEM PROC IN CONTAINER TO TUNE LINUX KERNEL, IT IS UNSAFE.
+> REMEMBER: DO NOT RUN EMQX DOCKER PRIVILEGED OR MOUNT SYSTEM PROC IN CONTAINER TO TUNE LINUX KERNEL, IT IS UNSAFE.
 
 # License
 
