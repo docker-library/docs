@@ -30,9 +30,6 @@ WARNING:
 -	[`6.2.7-alpine`, `6.2-alpine`, `6-alpine`, `6.2.7-alpine3.16`, `6.2-alpine3.16`, `6-alpine3.16`](https://github.com/docker-library/redis/blob/d36a031654f52ab95601de1f8a841765177cf702/6.2/alpine/Dockerfile)
 -	[`6.0.16`, `6.0`, `6.0.16-bullseye`, `6.0-bullseye`](https://github.com/docker-library/redis/blob/0f2bb676ab5153905089537230a732a77d26e438/6.0/Dockerfile)
 -	[`6.0.16-alpine`, `6.0-alpine`, `6.0.16-alpine3.16`, `6.0-alpine3.16`](https://github.com/docker-library/redis/blob/d36a031654f52ab95601de1f8a841765177cf702/6.0/alpine/Dockerfile)
--	[`5.0.14`, `5.0`, `5`, `5.0.14-bullseye`, `5.0-bullseye`, `5-bullseye`](https://github.com/docker-library/redis/blob/0f2bb676ab5153905089537230a732a77d26e438/5/Dockerfile)
--	[`5.0.14-32bit`, `5.0-32bit`, `5-32bit`, `5.0.14-32bit-bullseye`, `5.0-32bit-bullseye`, `5-32bit-bullseye`](https://github.com/docker-library/redis/blob/0f2bb676ab5153905089537230a732a77d26e438/5/32bit/Dockerfile)
--	[`5.0.14-alpine`, `5.0-alpine`, `5-alpine`, `5.0.14-alpine3.16`, `5.0-alpine3.16`, `5-alpine3.16`](https://github.com/docker-library/redis/blob/d36a031654f52ab95601de1f8a841765177cf702/5/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
