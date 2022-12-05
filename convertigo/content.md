@@ -134,9 +134,9 @@ If the SSL configuration is correct, the Convertigo Server will listen **HTTP** 
 ### Provide existing certificate using the /ssl mount point
 
 If you have an existing certificate and a private key, you can put them in **PEM** format in a folder (or in a Kubernetes secret):
-- `key.pem` : the private key in PEM format (no password)
-- `cert.pem` : the server certificate in PEM format, can also contain the full chain of certificates
-- `chain.pem` : the optional chain of certificates not included in `cert.pem` using the PEM format
+-	`key.pem` : the private key in PEM format (no password)
+-	`cert.pem` : the server certificate in PEM format, can also contain the full chain of certificates
+-	`chain.pem` : the optional chain of certificates not included in `cert.pem` using the PEM format
 
 ```console
 $ docker run -d --name C8O -v <my SSL folder>:/ssl -p 28443:28443 %%IMAGE%%
@@ -151,15 +151,16 @@ $ docker run -d --name C8O -v <my SSL folder>:/ssl -p 28080:28080 -p 28443:28443
 ### Provide existing certificate using environment variables
 
 If you cannot mount a volume, you can probably add environment variables of previously described files. Content cannot be set directly in a variable but their base64 version can. Here are the variables to configure:
-- `SSL_KEY_B64` : the private key in base64 PEM format (no password)
-- `SSL_CERT_B64` : the server certificate in base64 PEM format, can also contain the full chain of certificates
-- `SSL_CHAIN_B64` : the optional chain of certificates not included in `cert.pem` using the base64 PEM format
+-	`SSL_KEY_B64` : the private key in base64 PEM format (no password)
+-	`SSL_CERT_B64` : the server certificate in base64 PEM format, can also contain the full chain of certificates
+-	`SSL_CHAIN_B64` : the optional chain of certificates not included in `cert.pem` using the base64 PEM format
 
 ```console
 $ SSL_KEY_B64=$(base64 key.pem)
 $ SSL_CERT_B64=$(base64 cert.pem)
 $ SSL_CHAIN_B64=$(base64 chain.pem)
 $ docker run -d --name C8O -e SSL_KEY_B64="$SSL_KEY_B64" -e SSL_CERT_B64="$SSL_CERT_B64" -e SSL_CHAIN_B64="$SSL_CHAIN_B64" -p 28443:28443 %%IMAGE%%
+```
 
 ### Generate and use a self-signed certificate
 
@@ -220,6 +221,8 @@ The default `COOKIE_SECURE` value is `false` and can be defined :
 ```console
 $ docker run -d --name C8O -e COOKIE_SECURE="true" -p 28080:28080 %%IMAGE%%
 ```
+
+**Note :** if you have set the **SSL** configuration and you access the **HTTPS 28443** port, cookies are automatically `Secure`.
 
 ## `COOKIE_SAMESITE` Environment variable
 
