@@ -24,10 +24,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.0.5`, `7.0`, `7`, `latest`, `7.0.5-bullseye`, `7.0-bullseye`, `7-bullseye`, `bullseye`](https://github.com/docker-library/redis/blob/413d7277d124de16b28f21f6ce7a54e81b942c08/7.0/Dockerfile)
--	[`7.0.5-alpine`, `7.0-alpine`, `7-alpine`, `alpine`, `7.0.5-alpine3.17`, `7.0-alpine3.17`, `7-alpine3.17`, `alpine3.17`](https://github.com/docker-library/redis/blob/268eb1aee47ca9c7dc8913b4e8007a2c7391f5b6/7.0/alpine/Dockerfile)
--	[`6.2.7`, `6.2`, `6`, `6.2.7-bullseye`, `6.2-bullseye`, `6-bullseye`](https://github.com/docker-library/redis/blob/0f2bb676ab5153905089537230a732a77d26e438/6.2/Dockerfile)
--	[`6.2.7-alpine`, `6.2-alpine`, `6-alpine`, `6.2.7-alpine3.17`, `6.2-alpine3.17`, `6-alpine3.17`](https://github.com/docker-library/redis/blob/268eb1aee47ca9c7dc8913b4e8007a2c7391f5b6/6.2/alpine/Dockerfile)
+-	[`7.0.6`, `7.0`, `7`, `latest`, `7.0.6-bullseye`, `7.0-bullseye`, `7-bullseye`, `bullseye`](https://github.com/docker-library/redis/blob/91fd9c363bd0b70ffda1726f9132917a19e65a66/7.0/Dockerfile)
+-	[`7.0.6-alpine`, `7.0-alpine`, `7-alpine`, `alpine`, `7.0.6-alpine3.17`, `7.0-alpine3.17`, `7-alpine3.17`, `alpine3.17`](https://github.com/docker-library/redis/blob/91fd9c363bd0b70ffda1726f9132917a19e65a66/7.0/alpine/Dockerfile)
+-	[`6.2.8`, `6.2`, `6`, `6.2.8-bullseye`, `6.2-bullseye`, `6-bullseye`](https://github.com/docker-library/redis/blob/e85942db00480a10a51be0971acd4b849223132d/6.2/Dockerfile)
+-	[`6.2.8-alpine`, `6.2-alpine`, `6-alpine`, `6.2.8-alpine3.17`, `6.2-alpine3.17`, `6-alpine3.17`](https://github.com/docker-library/redis/blob/e85942db00480a10a51be0971acd4b849223132d/6.2/alpine/Dockerfile)
 -	[`6.0.16`, `6.0`, `6.0.16-bullseye`, `6.0-bullseye`](https://github.com/docker-library/redis/blob/0f2bb676ab5153905089537230a732a77d26e438/6.0/Dockerfile)
 -	[`6.0.16-alpine`, `6.0-alpine`, `6.0.16-alpine3.17`, `6.0-alpine3.17`](https://github.com/docker-library/redis/blob/268eb1aee47ca9c7dc8913b4e8007a2c7391f5b6/6.0/alpine/Dockerfile)
 

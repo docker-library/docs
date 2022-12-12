@@ -32,8 +32,8 @@ WARNING:
 -	[`7.1.3-jdk11-temurin`, `7.1-jdk11-temurin`, `7.1.3-jdk11`, `7.1-jdk11`, `7.1.3`, `7.1`](https://github.com/Lightstreamer/Docker/blob/84e3f6588620183b48b7eb62a18070b793eff019/7.1/jdk11/Dockerfile)
 -	[`7.2.2-jdk8-temurin`, `7.2-jdk8-temurin`, `7.2.2-jdk8`, `7.2-jdk8`](https://github.com/Lightstreamer/Docker/blob/84e3f6588620183b48b7eb62a18070b793eff019/7.2/jdk8/Dockerfile)
 -	[`7.2.2-jdk11-temurin`, `7.2-jdk11-temurin`, `7.2.2-jdk11`, `7.2-jdk11`, `7.2.2`, `7.2`](https://github.com/Lightstreamer/Docker/blob/84e3f6588620183b48b7eb62a18070b793eff019/7.2/jdk11/Dockerfile)
--	[`7.3.0-jdk8-temurin`, `7.3-jdk8-temurin`, `7-jdk8-temurin`, `7.3.0-jdk8`, `7.3-jdk8`, `7-jdk8`](https://github.com/Lightstreamer/Docker/blob/f20479553347a4eccea04186ec3d30208cd824b7/7.3/jdk8/Dockerfile)
--	[`7.3.0-jdk11-temurin`, `7.3-jdk11-temurin`, `7-jdk11-temurin`, `7.3.0-jdk11`, `7.3-jdk11`, `7-jdk11`, `7.3.0`, `7.3`, `7`, `latest`](https://github.com/Lightstreamer/Docker/blob/f20479553347a4eccea04186ec3d30208cd824b7/7.3/jdk11/Dockerfile)
+-	[`7.3.2-jdk8-temurin`, `7.3-jdk8-temurin`, `7-jdk8-temurin`, `7.3.2-jdk8`, `7.3-jdk8`, `7-jdk8`](https://github.com/Lightstreamer/Docker/blob/26cf14f6d72e66571f356ecc63993a7197a2e023/7.3/jdk8/Dockerfile)
+-	[`7.3.2-jdk11-temurin`, `7.3-jdk11-temurin`, `7-jdk11-temurin`, `7.3.2-jdk11`, `7.3-jdk11`, `7-jdk11`, `7.3.2`, `7.3`, `7`, `latest`](https://github.com/Lightstreamer/Docker/blob/26cf14f6d72e66571f356ecc63993a7197a2e023/7.3/jdk11/Dockerfile)
 
 # Quick reference (cont.)
 
