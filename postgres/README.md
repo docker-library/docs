@@ -275,7 +275,7 @@ When using the Alpine variants, any postgres extension not listed in [postgres-c
 
 # Arbitrary `--user` Notes
 
-As of [docker-library/postgres#253](https://github.com/docker-library/postgres/pull/253), this image supports running as a (mostly) arbitrary user via `--user` on `docker run`.
+As of [docker-library/postgres#253](https://github.com/docker-library/postgres/pull/253), this image supports running as a (mostly) arbitrary user via `--user` on `docker run`. As of [docker-library/postgres#1018](https://github.com/docker-library/postgres/pull/1018), this is also the case for the Alpine variants.
 
 The main caveat to note is that `postgres` doesn't care what UID it runs as (as long as the owner of `/var/lib/postgresql/data` matches), but `initdb` *does* care (and needs the user to exist in `/etc/passwd`):
 
@@ -290,7 +290,7 @@ initdb: could not look up effective user ID 1000: user does not exist
 
 The three easiest ways to get around this:
 
-1.	use the Debian variants (not the Alpine variants) and thus allow the image to use [the `nss_wrapper` library](https://cwrap.org/nss_wrapper.html) to "fake" `/etc/passwd` contents for you (see [docker-library/postgres#448](https://github.com/docker-library/postgres/pull/448) for more details)
+1.	allow the image to use [the `nss_wrapper` library](https://cwrap.org/nss_wrapper.html) to "fake" `/etc/passwd` contents for you (see [docker-library/postgres#448](https://github.com/docker-library/postgres/pull/448) for more details)
 
 2.	bind-mount `/etc/passwd` read-only from the host (if the UID you desire is a valid user on your host):
 
