@@ -24,10 +24,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.23.2`, `mainline`, `1`, `1.23`, `latest`](https://github.com/nginxinc/docker-nginx/blob/fef51235521d1cdf8b05d8cb1378a526d2abf421/mainline/debian/Dockerfile)
--	[`1.23.2-perl`, `mainline-perl`, `1-perl`, `1.23-perl`, `perl`](https://github.com/nginxinc/docker-nginx/blob/fef51235521d1cdf8b05d8cb1378a526d2abf421/mainline/debian-perl/Dockerfile)
--	[`1.23.2-alpine`, `mainline-alpine`, `1-alpine`, `1.23-alpine`, `alpine`](https://github.com/nginxinc/docker-nginx/blob/fef51235521d1cdf8b05d8cb1378a526d2abf421/mainline/alpine/Dockerfile)
--	[`1.23.2-alpine-perl`, `mainline-alpine-perl`, `1-alpine-perl`, `1.23-alpine-perl`, `alpine-perl`](https://github.com/nginxinc/docker-nginx/blob/fef51235521d1cdf8b05d8cb1378a526d2abf421/mainline/alpine-perl/Dockerfile)
+-	[`1.23.3`, `mainline`, `1`, `1.23`, `latest`](https://github.com/nginxinc/docker-nginx/blob/5ce65c3efd395ee2d82d32670f233140e92dba99/mainline/debian/Dockerfile)
+-	[`1.23.3-perl`, `mainline-perl`, `1-perl`, `1.23-perl`, `perl`](https://github.com/nginxinc/docker-nginx/blob/5ce65c3efd395ee2d82d32670f233140e92dba99/mainline/debian-perl/Dockerfile)
+-	[`1.23.3-alpine`, `mainline-alpine`, `1-alpine`, `1.23-alpine`, `alpine`](https://github.com/nginxinc/docker-nginx/blob/5ce65c3efd395ee2d82d32670f233140e92dba99/mainline/alpine/Dockerfile)
+-	[`1.23.3-alpine-perl`, `mainline-alpine-perl`, `1-alpine-perl`, `1.23-alpine-perl`, `alpine-perl`](https://github.com/nginxinc/docker-nginx/blob/5ce65c3efd395ee2d82d32670f233140e92dba99/mainline/alpine-perl/Dockerfile)
+-	[`1.23.3-alpine-slim`, `mainline-alpine-slim`, `1-alpine-slim`, `1.23-alpine-slim`, `alpine-slim`](https://github.com/nginxinc/docker-nginx/blob/5ce65c3efd395ee2d82d32670f233140e92dba99/mainline/alpine-slim/Dockerfile)
 -	[`1.22.1`, `stable`, `1.22`](https://github.com/nginxinc/docker-nginx/blob/fef51235521d1cdf8b05d8cb1378a526d2abf421/stable/debian/Dockerfile)
 -	[`1.22.1-perl`, `stable-perl`, `1.22-perl`](https://github.com/nginxinc/docker-nginx/blob/fef51235521d1cdf8b05d8cb1378a526d2abf421/stable/debian-perl/Dockerfile)
 -	[`1.22.1-alpine`, `stable-alpine`, `1.22-alpine`](https://github.com/nginxinc/docker-nginx/blob/fef51235521d1cdf8b05d8cb1378a526d2abf421/stable/alpine/Dockerfile)
@@ -255,6 +256,10 @@ This image is based on the popular [Alpine Linux project](https://alpinelinux.or
 This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
 
 To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
+
+## `nginx:<version>-slim`
+
+This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `nginx`. Unless you are working in an environment where *only* the `nginx` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
 
 # License
 
