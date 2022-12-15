@@ -24,18 +24,18 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.11.4`, `3.11`, `3`, `latest`](https://github.com/docker-library/rabbitmq/blob/3db783ab9350944e83f1b49d34dcf5de81060804/3.11/ubuntu/Dockerfile)
--	[`3.11.4-management`, `3.11-management`, `3-management`, `management`](https://github.com/docker-library/rabbitmq/blob/65eb19295b7975c4614d6071fb3fc6a1b86282a1/3.11/ubuntu/management/Dockerfile)
--	[`3.11.4-alpine`, `3.11-alpine`, `3-alpine`, `alpine`](https://github.com/docker-library/rabbitmq/blob/f9d66be3f9ec1fdf46afe8c4a0f256b712502545/3.11/alpine/Dockerfile)
--	[`3.11.4-management-alpine`, `3.11-management-alpine`, `3-management-alpine`, `management-alpine`](https://github.com/docker-library/rabbitmq/blob/65eb19295b7975c4614d6071fb3fc6a1b86282a1/3.11/alpine/management/Dockerfile)
--	[`3.10.12`, `3.10`](https://github.com/docker-library/rabbitmq/blob/71ae749340242da89429510fb93249f334fd80bc/3.10/ubuntu/Dockerfile)
--	[`3.10.12-management`, `3.10-management`](https://github.com/docker-library/rabbitmq/blob/6e226fe8e99702c8726d5e7d5c5864e69548048d/3.10/ubuntu/management/Dockerfile)
--	[`3.10.12-alpine`, `3.10-alpine`](https://github.com/docker-library/rabbitmq/blob/f9d66be3f9ec1fdf46afe8c4a0f256b712502545/3.10/alpine/Dockerfile)
--	[`3.10.12-management-alpine`, `3.10-management-alpine`](https://github.com/docker-library/rabbitmq/blob/6e226fe8e99702c8726d5e7d5c5864e69548048d/3.10/alpine/management/Dockerfile)
--	[`3.9.26`, `3.9`](https://github.com/docker-library/rabbitmq/blob/c9ff662db9bd80e965f821bb3add6fa5f8c84ac7/3.9/ubuntu/Dockerfile)
--	[`3.9.26-management`, `3.9-management`](https://github.com/docker-library/rabbitmq/blob/b07819f873e5a68b2bb54e01f0caa41c26b277f3/3.9/ubuntu/management/Dockerfile)
--	[`3.9.26-alpine`, `3.9-alpine`](https://github.com/docker-library/rabbitmq/blob/f9d66be3f9ec1fdf46afe8c4a0f256b712502545/3.9/alpine/Dockerfile)
--	[`3.9.26-management-alpine`, `3.9-management-alpine`](https://github.com/docker-library/rabbitmq/blob/b07819f873e5a68b2bb54e01f0caa41c26b277f3/3.9/alpine/management/Dockerfile)
+-	[`3.11.5`, `3.11`, `3`, `latest`](https://github.com/docker-library/rabbitmq/blob/eb98ea3aee0df586882c4118c74b870f11072bbf/3.11/ubuntu/Dockerfile)
+-	[`3.11.5-management`, `3.11-management`, `3-management`, `management`](https://github.com/docker-library/rabbitmq/blob/65eb19295b7975c4614d6071fb3fc6a1b86282a1/3.11/ubuntu/management/Dockerfile)
+-	[`3.11.5-alpine`, `3.11-alpine`, `3-alpine`, `alpine`](https://github.com/docker-library/rabbitmq/blob/eb98ea3aee0df586882c4118c74b870f11072bbf/3.11/alpine/Dockerfile)
+-	[`3.11.5-management-alpine`, `3.11-management-alpine`, `3-management-alpine`, `management-alpine`](https://github.com/docker-library/rabbitmq/blob/65eb19295b7975c4614d6071fb3fc6a1b86282a1/3.11/alpine/management/Dockerfile)
+-	[`3.10.13`, `3.10`](https://github.com/docker-library/rabbitmq/blob/3d32bb21bede6f2f0f6183e36293712eed237176/3.10/ubuntu/Dockerfile)
+-	[`3.10.13-management`, `3.10-management`](https://github.com/docker-library/rabbitmq/blob/6e226fe8e99702c8726d5e7d5c5864e69548048d/3.10/ubuntu/management/Dockerfile)
+-	[`3.10.13-alpine`, `3.10-alpine`](https://github.com/docker-library/rabbitmq/blob/3d32bb21bede6f2f0f6183e36293712eed237176/3.10/alpine/Dockerfile)
+-	[`3.10.13-management-alpine`, `3.10-management-alpine`](https://github.com/docker-library/rabbitmq/blob/6e226fe8e99702c8726d5e7d5c5864e69548048d/3.10/alpine/management/Dockerfile)
+-	[`3.9.27`, `3.9`](https://github.com/docker-library/rabbitmq/blob/878cc31eaf717b98193d8a45113720ecd667a486/3.9/ubuntu/Dockerfile)
+-	[`3.9.27-management`, `3.9-management`](https://github.com/docker-library/rabbitmq/blob/b07819f873e5a68b2bb54e01f0caa41c26b277f3/3.9/ubuntu/management/Dockerfile)
+-	[`3.9.27-alpine`, `3.9-alpine`](https://github.com/docker-library/rabbitmq/blob/878cc31eaf717b98193d8a45113720ecd667a486/3.9/alpine/Dockerfile)
+-	[`3.9.27-management-alpine`, `3.9-management-alpine`](https://github.com/docker-library/rabbitmq/blob/b07819f873e5a68b2bb54e01f0caa41c26b277f3/3.9/alpine/management/Dockerfile)
 
 # Quick reference (cont.)
 
