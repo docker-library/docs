@@ -26,7 +26,7 @@ WARNING:
 
 -	[`4.3.22`, `4.3`](https://github.com/emqx/emqx-docker/blob/851c0845da8078770fb01ff958733f4989e3a8bc/4.3/Dockerfile)
 -	[`4.4.11`, `4.4`, `4`](https://github.com/emqx/emqx-docker/blob/851c0845da8078770fb01ff958733f4989e3a8bc/4.4/Dockerfile)
--	[`5.0.11`, `5.0`, `5`, `latest`](https://github.com/emqx/emqx-docker/blob/851c0845da8078770fb01ff958733f4989e3a8bc/5.0/Dockerfile)
+-	[`5.0.12`, `5.0`, `5`, `latest`](https://github.com/emqx/emqx-docker/blob/b623c29ceb438c8fad0dd4d508e3ce601f05791f/5.0/Dockerfile)
 
 # Quick reference (cont.)
 
