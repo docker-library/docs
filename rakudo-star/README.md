@@ -24,8 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `2022.07`](https://github.com/Raku/docker/blob/480676899ac59052927dd84dc17882f2ba8f8abc/2022.07/bullseye/Dockerfile)
--	[`alpine`, `2022.07-alpine`](https://github.com/Raku/docker/blob/480676899ac59052927dd84dc17882f2ba8f8abc/2022.07/alpine3.16/Dockerfile)
+-	[`latest`, `2022.12`](https://github.com/Raku/docker/blob/65c49addd32f616805979c6d3572f846f303a505/2022.12/bullseye/Dockerfile)
+-	[`alpine`, `2022.12-alpine`](https://github.com/Raku/docker/blob/65c49addd32f616805979c6d3572f846f303a505/2022.12/alpine3.17/Dockerfile)
 
 # Quick reference (cont.)
 
