@@ -24,12 +24,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.0.20221103.3`, `2`, `latest`](https://github.com/amazonlinux/container-images/blob/1ccbb847f49ab27a9a4f97179129e24a28de46be/Dockerfile)
--	[`2.0.20221103.3-with-sources`, `2-with-sources`, `with-sources`](https://github.com/amazonlinux/container-images/blob/78035f9231687da94a786f5ba1ce1928faa9a0aa/Dockerfile)
--	[`2018.03.0.20221018.0`, `2018.03`, `1`](https://github.com/amazonlinux/container-images/blob/2ebf0c4672c0935df050382182562e6613fde551/Dockerfile)
--	[`2018.03.0.20221018.0-with-sources`, `2018.03-with-sources`, `1-with-sources`](https://github.com/amazonlinux/container-images/blob/8a41cfcfb50f5db617c61c3ecfeae0daee0c1db9/Dockerfile)
--	[`2022.0.20221101.0`, `2022`, `devel`](https://github.com/amazonlinux/container-images/blob/0c8a333d19dc78f9a1d334c00a25d2532308cdd8/Dockerfile)
--	[`2022.0.20221101.0-with-sources`, `2022-with-sources`, `devel-with-sources`](https://github.com/amazonlinux/container-images/blob/6596f8c22703806ea9d44b8cbcdc2db1b030a407/Dockerfile)
+-	[`2.0.20221210.0`, `2`, `latest`](https://github.com/amazonlinux/container-images/blob/9025e0ce9166d150ef8c28dd0d88465a250cf79d/Dockerfile)
+-	[`2.0.20221210.0-with-sources`, `2-with-sources`, `with-sources`](https://github.com/amazonlinux/container-images/blob/2040b2eb2433e45f0f20ab4d8475bf122580a6f5/Dockerfile)
+-	[`2018.03.0.20221209.1`, `2018.03`, `1`](https://github.com/amazonlinux/container-images/blob/a55f337ad62fc1e1a0c06843ecd0b8f5b10347bb/Dockerfile)
+-	[`2018.03.0.20221209.1-with-sources`, `2018.03-with-sources`, `1-with-sources`](https://github.com/amazonlinux/container-images/blob/6bb52a2cc2d7899405098cff4373bfa397b6c4a8/Dockerfile)
+-	[`2022.0.20221207.4`, `2022`, `devel`](https://github.com/amazonlinux/container-images/blob/423528b1be8f280af50b6fe8c2cfa296b05e995f/Dockerfile)
+-	[`2022.0.20221207.4-with-sources`, `2022-with-sources`, `devel-with-sources`](https://github.com/amazonlinux/container-images/blob/8b3c53739a3853a701caa4ff99732c3b8325c5b4/Dockerfile)
 
 # Quick reference (cont.)
 
