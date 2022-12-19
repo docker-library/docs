@@ -24,10 +24,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`9.0.20220720`, `9`, `9.0`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/e3f3c1cbc89d705fad4cb99e5786a4dc7178116c/Dockerfile)
--	[`9.0.20220720-minimal`, `9-minimal`, `9.0-minimal`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/ac4d852f696bb2cc96c55f4a54b1fb7d41f5df4f/Dockerfile)
--	[`8.6.20227707`, `8.6`, `8`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/09dbe262451ff0e93fe50df95f6811b234d3d509/Dockerfile)
--	[`8.6.20220707-minimal`, `8-minimal`, `8.6-minimal`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/ef6b5ec9cbad530e1ba673e44dcef9d4c5d5df6a/Dockerfile)
+-	[`9.1.20221123`, `9.1`, `9`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/257855c56aac1cb7417b20fd58e5e8f60b276e07/Dockerfile)
+-	[`9.1.20221123-minimal`, `9.1-minimal`, `9-minimal`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/eca5fa31f75936f9a069d8968be0da9f779adfce/Dockerfile)
+-	[`8.7.20221219`, `8.7`, `8`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/15e9cb0790bed8b6cba7b5cb2ecf3ebab6a0e6ae/Dockerfile)
+-	[`8.7.20221219-minimal`, `8.7-minimal`, `8-minimal`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/263f85f3cc1dfaa1824aeecfe3aee681adafe33f/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -35,7 +35,7 @@ WARNING:
 	[https://bugs.rockylinux.org](https://bugs.rockylinux.org) or [GitHub](https://github.com/rocky-linux/sig-cloud-instance-images/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/rockylinux/), [`arm64v8`](https://hub.docker.com/r/arm64v8/rockylinux/)
+	[`amd64`](https://hub.docker.com/r/amd64/rockylinux/), [`arm64v8`](https://hub.docker.com/r/arm64v8/rockylinux/), [`ppc64le`](https://hub.docker.com/r/ppc64le/rockylinux/), [`s390x`](https://hub.docker.com/r/s390x/rockylinux/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/rockylinux/` directory](https://github.com/docker-library/repo-info/blob/master/repos/rockylinux) ([history](https://github.com/docker-library/repo-info/commits/master/repos/rockylinux))  
