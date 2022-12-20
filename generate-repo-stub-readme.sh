@@ -72,17 +72,9 @@ toTest=(
 	# "image badge link/href"
 	# "badge test URL (to determine whether badge applies)"
 
-	"https://img.shields.io/github/workflow/status/$githubRepoName/GitHub%20CI/$branch?label=GitHub%20CI"
+	"https://img.shields.io/github/actions/workflow/status/$githubRepoName/ci.yml?branch=$branch&label=GitHub%20CI"
 	"https://github.com/$githubRepoName/actions?query=workflow%3A%22GitHub+CI%22+branch%3A$branch"
 	"https://github.com/$githubRepoName/blob/$branch/.github/workflows/ci.yml"
-
-	"https://img.shields.io/travis/$githubRepoName/$branch.svg?label=Travis%20CI"
-	"https://travis-ci.org/$githubRepoName/branches"
-	"https://github.com/$githubRepoName/blob/$branch/.travis.yml"
-
-	"https://img.shields.io/appveyor/ci/$githubRepoName/$branch.svg?label=AppVeyor"
-	"https://ci.appveyor.com/project/$githubRepoName"
-	"https://github.com/$githubRepoName/blob/$branch/.appveyor.yml"
 
 	"https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/update.sh/job/$repo.svg?label=Automated%20update.sh"
 	"https://doi-janky.infosiftr.net/job/update.sh/job/$repo/"
