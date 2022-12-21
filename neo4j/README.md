@@ -26,12 +26,10 @@ WARNING:
 
 -	[`5.3.0`, `5.3.0-community`, `5.3`, `5`, `5-community`, `community`, `latest`](https://github.com/neo4j/docker-neo4j-publish/blob/2318e8788222c303a84b819f190271a531ef92ea/5.3.0/community/Dockerfile)
 -	[`5.3.0-enterprise`, `5.3-enterprise`, `5-enterprise`, `enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/2318e8788222c303a84b819f190271a531ef92ea/5.3.0/enterprise/Dockerfile)
--	[`5.2.0`, `5.2.0-community`, `5.2`](https://github.com/neo4j/docker-neo4j-publish/blob/51c1670004a4c2d511a342a01a7963b78cc2c5c4/5.2.0/community/Dockerfile)
--	[`5.2.0-enterprise`, `5.2-enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/51c1670004a4c2d511a342a01a7963b78cc2c5c4/5.2.0/enterprise/Dockerfile)
--	[`4.4.15`, `4.4.15-community`, `4.4`, `4.4-community`](https://github.com/neo4j/docker-neo4j-publish/blob/5d8fef9875d74f1f18266f77d1acda67ba7cc608/4.4.15/community/Dockerfile)
--	[`4.4.15-enterprise`, `4.4-enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/5d8fef9875d74f1f18266f77d1acda67ba7cc608/4.4.15/enterprise/Dockerfile)
--	[`4.3.22`, `4.3.22-community`, `4.3`, `4.3-community`](https://github.com/neo4j/docker-neo4j-publish/blob/e2b0e75e58b9266f6510ed538a76f6cae80cdc6c/4.3.22/community/Dockerfile)
--	[`4.3.22-enterprise`, `4.3-enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/e2b0e75e58b9266f6510ed538a76f6cae80cdc6c/4.3.22/enterprise/Dockerfile)
+-	[`4.4.16`, `4.4.16-community`, `4.4`, `4.4-community`](https://github.com/neo4j/docker-neo4j-publish/blob/ee7cf2046eb8d2d029f8a103dab05a0e65ab817f/4.4.16/community/Dockerfile)
+-	[`4.4.16-enterprise`, `4.4-enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/ee7cf2046eb8d2d029f8a103dab05a0e65ab817f/4.4.16/enterprise/Dockerfile)
+-	[`4.3.23`, `4.3.23-community`, `4.3`, `4.3-community`](https://github.com/neo4j/docker-neo4j-publish/blob/c658c40da677b80c490a9bddf18532d5d0d03fa8/4.3.23/community/Dockerfile)
+-	[`4.3.23-enterprise`, `4.3-enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/c658c40da677b80c490a9bddf18532d5d0d03fa8/4.3.23/enterprise/Dockerfile)
 
 # Quick reference (cont.)
 
