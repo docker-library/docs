@@ -24,10 +24,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.4.4`, `2.4`, `2`, `latest`](https://github.com/composer/docker/blob/9f1f0e2f42f8a525b4b0ba3b2f33429fae7d07bf/2.4/Dockerfile)
--	[`2.3.10`, `2.3`](https://github.com/composer/docker/blob/f330335b9cf25f09b0870a7556c79cf62b018953/2.3/Dockerfile)
--	[`2.2.18`, `2.2`](https://github.com/composer/docker/blob/aac1ec40922d76283547e15dfb5aac82802a24d4/2.2/Dockerfile)
--	[`1.10.26`, `1.10`, `1`](https://github.com/composer/docker/blob/8dff639787c5813b916cd43c1543a6e987f1115b/1.10/Dockerfile)
+-	[`2.5.0`, `2.5`, `2`, `latest`](https://github.com/composer/docker/blob/8893af83206c700d88fee60afb69d2281d39b827/2.5/Dockerfile)
+-	[`2.4.4`, `2.4`](https://github.com/composer/docker/blob/88e63fbab43e2151b0743a4c6d18a9c59aa9db0c/2.4/Dockerfile)
+-	[`2.3.10`, `2.3`](https://github.com/composer/docker/blob/88e63fbab43e2151b0743a4c6d18a9c59aa9db0c/2.3/Dockerfile)
+-	[`2.2.18`, `2.2`, `lts`](https://github.com/composer/docker/blob/88e63fbab43e2151b0743a4c6d18a9c59aa9db0c/2.2/Dockerfile)
+-	[`1.10.26`, `1.10`, `1`](https://github.com/composer/docker/blob/88e63fbab43e2151b0743a4c6d18a9c59aa9db0c/1.10/Dockerfile)
 
 # Quick reference (cont.)
 
