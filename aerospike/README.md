@@ -24,8 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`ee-6.1.0.3`](https://github.com/aerospike/aerospike-server-enterprise.docker/blob/01871453aad7390a02a51dee11efe8e6a55f95cf/Dockerfile)
--	[`ce-6.1.0.3`](https://github.com/aerospike/aerospike-server.docker/blob/4557452ca88bcad1929e91bd303b522a1c242b12/Dockerfile)
+-	[`ee-6.2.0.2`](https://github.com/aerospike/aerospike-server.docker/blob/26089140713466195470d5d246fdd2bda5b82180/enterprise/debian11/Dockerfile)
+-	[`ce-6.2.0.2`](https://github.com/aerospike/aerospike-server.docker/blob/26089140713466195470d5d246fdd2bda5b82180/community/debian11/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -33,7 +33,7 @@ WARNING:
 	[the Aerospike Forums](https://discuss.aerospike.com) or [GitHub](https://github.com/aerospike/aerospike-server-enterprise.docker/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/aerospike/)
+	[`amd64`](https://hub.docker.com/r/amd64/aerospike/), [`arm64v8`](https://hub.docker.com/r/arm64v8/aerospike/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/aerospike/` directory](https://github.com/docker-library/repo-info/blob/master/repos/aerospike) ([history](https://github.com/docker-library/repo-info/commits/master/repos/aerospike))  
