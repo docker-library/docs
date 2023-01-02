@@ -24,11 +24,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`18.04`, `bionic-20221130`, `bionic`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/Dockerfile?h=refs/tags/dist-bionic-amd64-20221130&id=ba6d7291545fd49e4049ddc516ee3385c571277b)
+-	[`18.04`, `bionic-20221215`, `bionic`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/Dockerfile?h=refs/tags/dist-bionic-amd64-20221215&id=0ae8196fe7299a6f6954b5f0208f57f170f12c35)
 -	[`20.04`, `focal-20221130`, `focal`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/Dockerfile?h=refs/tags/dist-focal-amd64-20221130&id=0373f3064197249345734f2db985a32bced5c541)
 -	[`22.04`, `jammy-20221130`, `jammy`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/Dockerfile?h=refs/tags/dist-jammy-amd64-20221130&id=5107d90663ceb24789a9fa19136b0753c5651aa0)
 -	[`22.10`, `kinetic-20221130`, `kinetic`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/Dockerfile?h=refs/tags/dist-kinetic-amd64-20221130&id=28c4e64ea84b6e9bcd1352e81cf71dbb47f259cc)
--	[`23.04`, `lunar-20221207`, `lunar`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/Dockerfile?h=refs/tags/dist-lunar-amd64-20221207&id=17470d6aef993f5ed3d74fe241128659892d3488)
+-	[`23.04`, `lunar-20221216`, `lunar`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/Dockerfile?h=refs/tags/dist-lunar-amd64-20221216&id=cbaec25db5166d7e31cf418cc5efb5000ffaaf88)
 -	[`14.04`, `trusty-20191217`, `trusty`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/Dockerfile?h=refs/tags/dist-trusty-amd64-20191217&id=131f6d8ad3ff6875f210766c88b463f96992b5ab)
 -	[`16.04`, `xenial-20210804`, `xenial`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/Dockerfile?h=refs/tags/dist-xenial-amd64-20210804&id=45e83e2e11f641ba2fea381e705ededbd2778f16)
 
