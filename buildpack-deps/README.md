@@ -20,7 +20,7 @@ WARNING:
 	[the Docker Community](https://github.com/docker-library/buildpack-deps)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
@@ -36,24 +36,21 @@ WARNING:
 -	[`sid-curl`, `unstable-curl`](https://github.com/docker-library/buildpack-deps/blob/98a5ab81d47a106c458cdf90733df0ee8beea06c/debian/sid/curl/Dockerfile)
 -	[`sid-scm`, `unstable-scm`](https://github.com/docker-library/buildpack-deps/blob/65d69325ad741cea6dee20781c1faaab2e003d87/debian/sid/scm/Dockerfile)
 -	[`sid`, `unstable`](https://github.com/docker-library/buildpack-deps/blob/65d69325ad741cea6dee20781c1faaab2e003d87/debian/sid/Dockerfile)
--	[`stretch-curl`, `oldoldstable-curl`](https://github.com/docker-library/buildpack-deps/blob/93d2a6f64abe6787b7dd25c7d5322af1fa2e3f55/debian/stretch/curl/Dockerfile)
--	[`stretch-scm`, `oldoldstable-scm`](https://github.com/docker-library/buildpack-deps/blob/65d69325ad741cea6dee20781c1faaab2e003d87/debian/stretch/scm/Dockerfile)
--	[`stretch`, `oldoldstable`](https://github.com/docker-library/buildpack-deps/blob/65d69325ad741cea6dee20781c1faaab2e003d87/debian/stretch/Dockerfile)
 -	[`bionic-curl`, `18.04-curl`](https://github.com/docker-library/buildpack-deps/blob/98a5ab81d47a106c458cdf90733df0ee8beea06c/ubuntu/bionic/curl/Dockerfile)
 -	[`bionic-scm`, `18.04-scm`](https://github.com/docker-library/buildpack-deps/blob/65d69325ad741cea6dee20781c1faaab2e003d87/ubuntu/bionic/scm/Dockerfile)
 -	[`bionic`, `18.04`](https://github.com/docker-library/buildpack-deps/blob/98a5ab81d47a106c458cdf90733df0ee8beea06c/ubuntu/bionic/Dockerfile)
 -	[`focal-curl`, `20.04-curl`](https://github.com/docker-library/buildpack-deps/blob/98a5ab81d47a106c458cdf90733df0ee8beea06c/ubuntu/focal/curl/Dockerfile)
 -	[`focal-scm`, `20.04-scm`](https://github.com/docker-library/buildpack-deps/blob/65d69325ad741cea6dee20781c1faaab2e003d87/ubuntu/focal/scm/Dockerfile)
 -	[`focal`, `20.04`](https://github.com/docker-library/buildpack-deps/blob/98a5ab81d47a106c458cdf90733df0ee8beea06c/ubuntu/focal/Dockerfile)
--	[`impish-curl`, `21.10-curl`](https://github.com/docker-library/buildpack-deps/blob/fae040f3db68991f178f0a9631a03ca9837f5647/ubuntu/impish/curl/Dockerfile)
--	[`impish-scm`, `21.10-scm`](https://github.com/docker-library/buildpack-deps/blob/fae040f3db68991f178f0a9631a03ca9837f5647/ubuntu/impish/scm/Dockerfile)
--	[`impish`, `21.10`](https://github.com/docker-library/buildpack-deps/blob/fae040f3db68991f178f0a9631a03ca9837f5647/ubuntu/impish/Dockerfile)
 -	[`jammy-curl`, `22.04-curl`](https://github.com/docker-library/buildpack-deps/blob/e2fc735283ba4e96efc3e4acf2b74bc3eccbf327/ubuntu/jammy/curl/Dockerfile)
 -	[`jammy-scm`, `22.04-scm`](https://github.com/docker-library/buildpack-deps/blob/e2fc735283ba4e96efc3e4acf2b74bc3eccbf327/ubuntu/jammy/scm/Dockerfile)
 -	[`jammy`, `22.04`](https://github.com/docker-library/buildpack-deps/blob/e2fc735283ba4e96efc3e4acf2b74bc3eccbf327/ubuntu/jammy/Dockerfile)
 -	[`kinetic-curl`, `22.10-curl`](https://github.com/docker-library/buildpack-deps/blob/c96f4f3e1d5bc19fba5c652f57af0a35bb929718/ubuntu/kinetic/curl/Dockerfile)
 -	[`kinetic-scm`, `22.10-scm`](https://github.com/docker-library/buildpack-deps/blob/c96f4f3e1d5bc19fba5c652f57af0a35bb929718/ubuntu/kinetic/scm/Dockerfile)
 -	[`kinetic`, `22.10`](https://github.com/docker-library/buildpack-deps/blob/c96f4f3e1d5bc19fba5c652f57af0a35bb929718/ubuntu/kinetic/Dockerfile)
+-	[`lunar-curl`, `23.04-curl`](https://github.com/docker-library/buildpack-deps/blob/31e15bc4a2352c20998e5da6bd8aaa727fd19d06/ubuntu/lunar/curl/Dockerfile)
+-	[`lunar-scm`, `23.04-scm`](https://github.com/docker-library/buildpack-deps/blob/31e15bc4a2352c20998e5da6bd8aaa727fd19d06/ubuntu/lunar/scm/Dockerfile)
+-	[`lunar`, `23.04`](https://github.com/docker-library/buildpack-deps/blob/31e15bc4a2352c20998e5da6bd8aaa727fd19d06/ubuntu/lunar/Dockerfile)
 -	[`xenial-curl`, `16.04-curl`](https://github.com/docker-library/buildpack-deps/blob/93d2a6f64abe6787b7dd25c7d5322af1fa2e3f55/ubuntu/xenial/curl/Dockerfile)
 -	[`xenial-scm`, `16.04-scm`](https://github.com/docker-library/buildpack-deps/blob/65d69325ad741cea6dee20781c1faaab2e003d87/ubuntu/xenial/scm/Dockerfile)
 -	[`xenial`, `16.04`](https://github.com/docker-library/buildpack-deps/blob/98a5ab81d47a106c458cdf90733df0ee8beea06c/ubuntu/xenial/Dockerfile)

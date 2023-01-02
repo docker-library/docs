@@ -110,7 +110,7 @@ This behavior can be changed via the following environment variables:
 
 ## Running %%IMAGE%% in read-only mode
 
-To run %%IMAGE%% in read-only mode, you will need to mount a Docker volume to every location where %%IMAGE%% writes information. The default %%IMAGE%% configuration requires write access to `/var/cache` and `/var/run`. This can be easily accomplished by running %%IMAGE%% as follows:
+To run %%IMAGE%% in read-only mode, you will need to mount a Docker volume to every location where %%IMAGE%% writes information. The default %%IMAGE%% configuration requires write access to `/var/cache/nginx` and `/var/run`. This can be easily accomplished by running %%IMAGE%% as follows:
 
 ```console
 $ docker run -d -p 80:80 --read-only -v $(pwd)/nginx-cache:/var/cache/nginx -v $(pwd)/nginx-pid:/var/run nginx

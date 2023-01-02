@@ -20,12 +20,12 @@ WARNING:
 	[the Mono Project](https://github.com/mono/docker)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.12.0.122`, `latest`, `6.12.0`, `6.12`, `6`](https://github.com/mono/docker/blob/0403aaf506b8f6859332a5035f660a7a228d3a97/6.12.0.122/Dockerfile)
--	[`6.12.0.122-slim`, `slim`, `6.12.0-slim`, `6.12-slim`, `6-slim`](https://github.com/mono/docker/blob/0403aaf506b8f6859332a5035f660a7a228d3a97/6.12.0.122/slim/Dockerfile)
+-	[`6.12.0.182`, `latest`, `6.12.0`, `6.12`, `6`](https://github.com/mono/docker/blob/9293c0cddf31a3dc829fccc6f8e1eb507a91cd34/6.12.0.182/Dockerfile)
+-	[`6.12.0.182-slim`, `slim`, `6.12.0-slim`, `6.12-slim`, `6-slim`](https://github.com/mono/docker/blob/9293c0cddf31a3dc829fccc6f8e1eb507a91cd34/6.12.0.182/slim/Dockerfile)
 -	[`6.10.0.104`, `6.10.0`, `6.10`](https://github.com/mono/docker/blob/0403aaf506b8f6859332a5035f660a7a228d3a97/6.10.0.104/Dockerfile)
 -	[`6.10.0.104-slim`, `6.10.0-slim`, `6.10-slim`](https://github.com/mono/docker/blob/0403aaf506b8f6859332a5035f660a7a228d3a97/6.10.0.104/slim/Dockerfile)
 

@@ -20,12 +20,14 @@ WARNING:
 	[the Docker Community](https://github.com/31z4/storm-docker)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.2.4`, `1.2`](https://github.com/31z4/storm-docker/blob/a80831113011cf40a53e91e98790e99ad5a76280/1.2.4/Dockerfile)
--	[`2.4.0`, `2.4`, `latest`](https://github.com/31z4/storm-docker/blob/f72658afa5e9c4ee4d4d5ef5cf9b32b226d0ed19/2.4.0/Dockerfile)
+-	[`1.2.4`, `1.2`](https://github.com/31z4/storm-docker/blob/f72658afa5e9c4ee4d4d5ef5cf9b32b226d0ed19/1.2.4/Dockerfile)
+-	[`1.2.4-temurin`, `1.2-temurin`](https://github.com/31z4/storm-docker/blob/14c749848c8ff7c955f2b29c57e327ae80fbbb7e/1.2.4/Dockerfile)
+-	[`2.4.0`, `2.4`](https://github.com/31z4/storm-docker/blob/f72658afa5e9c4ee4d4d5ef5cf9b32b226d0ed19/2.4.0/Dockerfile)
+-	[`2.4.0-temurin`, `2.4-temurin`, `latest`](https://github.com/31z4/storm-docker/blob/14c749848c8ff7c955f2b29c57e327ae80fbbb7e/2.4.0/Dockerfile)
 
 # Quick reference (cont.)
 

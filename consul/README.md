@@ -20,13 +20,13 @@ WARNING:
 	[HashiCorp](https://github.com/hashicorp/docker-consul)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.12.2`, `1.12`, `latest`](https://github.com/hashicorp/docker-consul/blob/5793a49e7447c010cd163aeecb51ffbdf7bce0bf/0.X/Dockerfile)
--	[`1.11.6`, `1.11`](https://github.com/hashicorp/docker-consul/blob/c38faf2c1534f5aec6064660c1e8c9bbc03a38a0/0.X/Dockerfile)
--	[`1.10.11`, `1.10`](https://github.com/hashicorp/docker-consul/blob/fcced549b702f08b836ddd53d09dbedbb46e3a1d/0.X/Dockerfile)
+-	[`1.14.3`, `1.14`, `latest`](https://github.com/hashicorp/docker-consul/blob/8dd04b12354ab019a6e96b5f7597bb326659507f/0.X/Dockerfile)
+-	[`1.13.5`, `1.13`](https://github.com/hashicorp/docker-consul/blob/795461990fe29f494ec0c06bb27088bbd8ca40f4/0.X/Dockerfile)
+-	[`1.12.8`, `1.12`](https://github.com/hashicorp/docker-consul/blob/a91ee4fadf7500dfdfe1f6abd405b31442cd1745/0.X/Dockerfile)
 
 # Quick reference (cont.)
 

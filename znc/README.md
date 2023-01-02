@@ -20,12 +20,12 @@ WARNING:
 	[the ZNC Community](https://github.com/znc/znc-docker)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.8.2`, `1.8`, `latest`](https://github.com/znc/znc-docker/blob/525355817a4d17a68e7d7ded3f5bc36f2e8b6da5/full/Dockerfile)
--	[`1.8.2-slim`, `1.8-slim`, `slim`](https://github.com/znc/znc-docker/blob/525355817a4d17a68e7d7ded3f5bc36f2e8b6da5/slim/Dockerfile)
+-	[`1.8.2`, `1.8`, `latest`](https://github.com/znc/znc-docker/blob/d5bb727806f238f95bc74fcc182042932cd60c11/full/Dockerfile)
+-	[`1.8.2-slim`, `1.8-slim`, `slim`](https://github.com/znc/znc-docker/blob/d5bb727806f238f95bc74fcc182042932cd60c11/slim/Dockerfile)
 
 # Quick reference (cont.)
 

@@ -20,13 +20,15 @@ WARNING:
 	[Rob Bast](https://github.com/alcohol), with [contributions](https://github.com/composer/docker/graphs/contributors) from the community.
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.3.7`, `2.3`, `2`, `latest`](https://github.com/composer/docker/blob/1bb95c77152d66fc0546778aae39bd123209ca13/2.3/Dockerfile)
--	[`2.2.14`, `2.2`](https://github.com/composer/docker/blob/0b3ef46bb312340df728e9a1bce55f060ad89416/2.2/Dockerfile)
--	[`1.10.26`, `1.10`, `1`](https://github.com/composer/docker/blob/84e925655bc236a4ac8ccf4c9cdfbe8c9ee9fb82/1.10/Dockerfile)
+-	[`2.5.1`, `2.5`, `2`, `latest`](https://github.com/composer/docker/blob/4753480775709ab437330892f5c7fcf03f0d4344/2.5/Dockerfile)
+-	[`2.4.4`, `2.4`](https://github.com/composer/docker/blob/88e63fbab43e2151b0743a4c6d18a9c59aa9db0c/2.4/Dockerfile)
+-	[`2.3.10`, `2.3`](https://github.com/composer/docker/blob/88e63fbab43e2151b0743a4c6d18a9c59aa9db0c/2.3/Dockerfile)
+-	[`2.2.18`, `2.2`, `lts`](https://github.com/composer/docker/blob/88e63fbab43e2151b0743a4c6d18a9c59aa9db0c/2.2/Dockerfile)
+-	[`1.10.26`, `1.10`, `1`](https://github.com/composer/docker/blob/88e63fbab43e2151b0743a4c6d18a9c59aa9db0c/1.10/Dockerfile)
 
 # Quick reference (cont.)
 

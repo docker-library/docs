@@ -20,16 +20,14 @@ WARNING:
 	[The AlmaLinux OS Foundation](https://github.com/AlmaLinux/docker-images)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.5`, `8.5-20220510`](https://github.com/AlmaLinux/docker-images/blob/cc33e53ccd8b33288eb3fbce9fd3bc308272c162/Dockerfile-x86_64-default)
--	[`8.5-minimal`, `8.5-minimal-20220510`](https://github.com/AlmaLinux/docker-images/blob/cc33e53ccd8b33288eb3fbce9fd3bc308272c162/Dockerfile-x86_64-minimal)
--	[`latest`, `8`, `8.6`, `8.6-20220512`](https://github.com/AlmaLinux/docker-images/blob/072c414bfc77229e49ff1677a875a0ed5caf990b/Dockerfile-x86_64-default)
--	[`minimal`, `8-minimal`, `8.6-minimal`, `8.6-minimal-20220512`](https://github.com/AlmaLinux/docker-images/blob/072c414bfc77229e49ff1677a875a0ed5caf990b/Dockerfile-x86_64-minimal)
--	[`9`, `9.0`, `9.0-20220527`](https://github.com/AlmaLinux/docker-images/blob/4f13f811fee725c1accbfae8c837e09716c1432e/Dockerfile-x86_64-default)
--	[`9-minimal`, `9.0-minimal`, `9.0-minimal-20220527`](https://github.com/AlmaLinux/docker-images/blob/4f13f811fee725c1accbfae8c837e09716c1432e/Dockerfile-x86_64-minimal)
+-	[`latest`, `8`, `8.7`, `8.7-20221201`](https://github.com/AlmaLinux/docker-images/blob/c23f18dbac3cb8bdba691019de42ebc25933c676/Dockerfile-x86_64-default)
+-	[`minimal`, `8-minimal`, `8.7-minimal`, `8.7-minimal-20221201`](https://github.com/AlmaLinux/docker-images/blob/c23f18dbac3cb8bdba691019de42ebc25933c676/Dockerfile-x86_64-minimal)
+-	[`9`, `9.1`, `9.1-20221201`](https://github.com/AlmaLinux/docker-images/blob/dd9e3fb5f2f6f68169a4286b32d0509f295d2fed/Dockerfile-x86_64-default)
+-	[`9-minimal`, `9.1-minimal`, `9.1-minimal-20221201`](https://github.com/AlmaLinux/docker-images/blob/dd9e3fb5f2f6f68169a4286b32d0509f295d2fed/Dockerfile-x86_64-minimal)
 
 # Quick reference (cont.)
 

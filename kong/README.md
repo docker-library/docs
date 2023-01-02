@@ -20,24 +20,22 @@ WARNING:
 	[the Kong Docker Maintainers](https://github.com/kong/kong)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.8.1-alpine`, `2.8.1`, `2.8`, `alpine`, `latest`](https://github.com/Kong/docker-kong/blob/fffcd0a942daba110ccb89878570b50fcff64d97/alpine/Dockerfile)
--	[`2.8.1-ubuntu`, `2.8-ubuntu`, `ubuntu`](https://github.com/Kong/docker-kong/blob/fffcd0a942daba110ccb89878570b50fcff64d97/ubuntu/Dockerfile)
--	[`2.8.0-alpine`, `2.8.0`](https://github.com/Kong/docker-kong/blob/c32a80c3dd332d096d1a6461d2816ead344d43c5/alpine/Dockerfile)
--	[`2.8.0-ubuntu`](https://github.com/Kong/docker-kong/blob/c32a80c3dd332d096d1a6461d2816ead344d43c5/ubuntu/Dockerfile)
--	[`2.7.2-alpine`, `2.7.2`, `2.7`](https://github.com/Kong/docker-kong/blob/84e21f29904b9a407287cbddf133dc36cc38a2c0/alpine/Dockerfile)
--	[`2.7.2-ubuntu`, `2.7-ubuntu`](https://github.com/Kong/docker-kong/blob/84e21f29904b9a407287cbddf133dc36cc38a2c0/ubuntu/Dockerfile)
--	[`2.7.1-alpine`, `2.7.1`](https://github.com/Kong/docker-kong/blob/d47ddd41ea2a489f36d15d3da956709bcf62dcca/alpine/Dockerfile)
--	[`2.7.1-ubuntu`](https://github.com/Kong/docker-kong/blob/d47ddd41ea2a489f36d15d3da956709bcf62dcca/ubuntu/Dockerfile)
--	[`2.6.1-alpine`, `2.6.1`, `2.6`](https://github.com/Kong/docker-kong/blob/5bdbfbdf25aad9f26d136ac9f0b17793289f10a1/alpine/Dockerfile)
--	[`2.6.1-ubuntu`, `2.6-ubuntu`](https://github.com/Kong/docker-kong/blob/5bdbfbdf25aad9f26d136ac9f0b17793289f10a1/ubuntu/Dockerfile)
--	[`2.6.0-alpine`, `2.6.0`](https://github.com/Kong/docker-kong/blob/37b2520bddf243a14d28fbf616cc3cccf9906d91/alpine/Dockerfile)
--	[`2.6.0-ubuntu`](https://github.com/Kong/docker-kong/blob/37b2520bddf243a14d28fbf616cc3cccf9906d91/ubuntu/Dockerfile)
--	[`2.5.1-alpine`, `2.5.1`, `2.5`](https://github.com/Kong/docker-kong/blob/74f3a1c189c13b8f94ae15343452fcd27ccce605/alpine/Dockerfile)
--	[`2.5.1-ubuntu`, `2.5-ubuntu`](https://github.com/Kong/docker-kong/blob/74f3a1c189c13b8f94ae15343452fcd27ccce605/ubuntu/Dockerfile)
+-	[`3.1.1-alpine`, `3.1.1`, `3.1`, `3`, `alpine`, `latest`](https://github.com/Kong/docker-kong/blob/5f914be945ec1732837cc4f6463219bed566c7ef/Dockerfile.apk)
+-	[`3.1.1-ubuntu`, `3.1-ubuntu`, `ubuntu`](https://github.com/Kong/docker-kong/blob/5f914be945ec1732837cc4f6463219bed566c7ef/ubuntu/Dockerfile)
+-	[`3.0.2-alpine`, `3.0-alpine`, `3.0.2`, `3.0`](https://github.com/Kong/docker-kong/blob/5a3ee8daf50371db2e3a788abe8f306255eead22/Dockerfile.apk)
+-	[`3.0.2-ubuntu`, `3.0-ubuntu`](https://github.com/Kong/docker-kong/blob/5a3ee8daf50371db2e3a788abe8f306255eead22/ubuntu/Dockerfile)
+-	[`2.8.3-alpine`, `2.8.3`, `2.8`](https://github.com/Kong/docker-kong/blob/9538eec15456ce93d69a4a1ae9e379a28fd9040b/alpine/Dockerfile)
+-	[`2.8.3-ubuntu`, `2.8-ubuntu`](https://github.com/Kong/docker-kong/blob/9538eec15456ce93d69a4a1ae9e379a28fd9040b/ubuntu/Dockerfile)
+-	[`2.7.2-alpine`, `2.7.2`, `2.7`](https://github.com/Kong/docker-kong/blob/456bfc908ed1f4fdbb348bafcf7385aeffdd421c/alpine/Dockerfile)
+-	[`2.7.2-ubuntu`, `2.7-ubuntu`](https://github.com/Kong/docker-kong/blob/456bfc908ed1f4fdbb348bafcf7385aeffdd421c/ubuntu/Dockerfile)
+-	[`2.6.1-alpine`, `2.6.1`, `2.6`](https://github.com/Kong/docker-kong/blob/aa4cf106f8933033f433cacc8f073fa4dbbeac21/alpine/Dockerfile)
+-	[`2.6.1-ubuntu`, `2.6-ubuntu`](https://github.com/Kong/docker-kong/blob/aa4cf106f8933033f433cacc8f073fa4dbbeac21/ubuntu/Dockerfile)
+-	[`2.5.2-alpine`, `2.5.2`, `2.5`](https://github.com/Kong/docker-kong/blob/e6fbd10247d55eba63db13216666f9db4c6d3363/alpine/Dockerfile)
+-	[`2.5.2-ubuntu`, `2.5-ubuntu`](https://github.com/Kong/docker-kong/blob/e6fbd10247d55eba63db13216666f9db4c6d3363/ubuntu/Dockerfile)
 
 # Quick reference (cont.)
 

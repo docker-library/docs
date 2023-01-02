@@ -29,6 +29,8 @@ This template defines the "Supported tags and Dockerfile links" portion of an im
 	{{- $url := hasPrefix "https://github.com/" $repoUrlBase | ternary (join "/" $repoUrlBase "blob" $gitCommit $dockerfilePath) "" -}}
 	{{- /* handle https://gitlab.../.../... style URLs (by reasonably assuming they're a gitlab instance) */ -}}
 	{{- $url = $url | ternary $url (hasPrefix "https://gitlab." $repoUrlBase | ternary (join "/" $repoUrlBase "-/blob" $gitCommit $dockerfilePath) "") -}}
+	{{- /* handle https://git.launchpad.net/ URLs */ -}}
+	{{- $url = $url | ternary $url (hasPrefix "https://git.launchpad.net/" $repoUrlBase | ternary (print $repoUrlBase "/tree/" $dockerfilePath "?h=" ($e.ArchGitFetch $arch) "&id=" $gitCommit) "") -}}
 	{{- /* TODO decide what to do (if anything) about other non-GitHub repos with respect to URL */ -}}
 
 	{{- if $i -}}
@@ -68,6 +70,8 @@ This template defines the "Supported tags and Dockerfile links" portion of an im
 				{{- $url := hasPrefix "https://github.com/" $repoUrlBase | ternary (join "/" $repoUrlBase "blob" $gitCommit $dockerfilePath) "" -}}
 				{{- /* handle https://gitlab.../.../... style URLs (by reasonably assuming they're a gitlab instance) */ -}}
 				{{- $url = $url | ternary $url (hasPrefix "https://gitlab." $repoUrlBase | ternary (join "/" $repoUrlBase "-/blob" $gitCommit $dockerfilePath) "") -}}
+				{{- /* handle https://git.launchpad.net/ URLs */ -}}
+				{{- $url = $url | ternary $url (hasPrefix "https://git.launchpad.net/" $repoUrlBase | ternary (print $repoUrlBase "/tree/" $dockerfilePath "?h=" ($e.ArchGitFetch $arch) "&id=" $gitCommit) "") -}}
 				{{- /* TODO decide what to do (if anything) about other non-GitHub repos with respect to URL */ -}}
 
 				{{- "\t-\t" -}}

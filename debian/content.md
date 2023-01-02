@@ -8,7 +8,7 @@ Debian is an operating system which is composed primarily of free and open-sourc
 
 # About this image
 
-The `%%IMAGE%%:latest` tag will always point the latest stable release (which is, at the time of this writing, `%%IMAGE%%:buster`). Stable releases are also tagged with their version (ie, `%%IMAGE%%:9` is an alias for `%%IMAGE%%:stretch`, `%%IMAGE%%:8` is an alias for `%%IMAGE%%:jessie`, etc).
+The `%%IMAGE%%:latest` tag will always point the latest stable release. Stable releases are also tagged with their version (ie, `%%IMAGE%%:11` is an alias for `%%IMAGE%%:bullseye`, `%%IMAGE%%:10` is an alias for `%%IMAGE%%:buster`, etc).
 
 The rolling tags (`%%IMAGE%%:stable`, `%%IMAGE%%:testing`, etc) use the rolling suite names in their `/etc/apt/sources.list` file (ie, `deb http://deb.debian.org/debian testing main`).
 

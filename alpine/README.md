@@ -20,15 +20,15 @@ WARNING:
 	[Natanael Copa](https://github.com/alpinelinux/docker-alpine) (an Alpine Linux maintainer)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`20220328`, `edge`](https://github.com/alpinelinux/docker-alpine/blob/216cb26780d883acfedc156200bb520f45d170d5/x86_64/Dockerfile)
--	[`3.16.0`, `3.16`, `3`, `latest`](https://github.com/alpinelinux/docker-alpine/blob/c9515859c035acbb899c6738506954e36f57e7dc/x86_64/Dockerfile)
--	[`3.15.4`, `3.15`](https://github.com/alpinelinux/docker-alpine/blob/fc965e3222f368bea8e07c1c1da70b6928281a76/x86_64/Dockerfile)
--	[`3.14.6`, `3.14`](https://github.com/alpinelinux/docker-alpine/blob/acdada9286850d1b48abd8944ca4f8f8ea909372/x86_64/Dockerfile)
--	[`3.13.10`, `3.13`](https://github.com/alpinelinux/docker-alpine/blob/52cb02afe883694d7b711735e66e1a08fb139011/x86_64/Dockerfile)
+-	[`20221110`, `edge`](https://github.com/alpinelinux/docker-alpine/blob/7161d59eb68a7a2e71df7b4137c1c9403107d8a6/x86_64/Dockerfile)
+-	[`3.17.0`, `3.17`, `3`, `latest`](https://github.com/alpinelinux/docker-alpine/blob/a791ed3b042cb15f4dda594dd2fb088dcb725542/x86_64/Dockerfile)
+-	[`3.16.3`, `3.16`](https://github.com/alpinelinux/docker-alpine/blob/00e486941da9720adfdc82ac0144af73818ae732/x86_64/Dockerfile)
+-	[`3.15.6`, `3.15`](https://github.com/alpinelinux/docker-alpine/blob/a9e802051a3a2ae7d6fdd32ff6f5b39e62240089/x86_64/Dockerfile)
+-	[`3.14.8`, `3.14`](https://github.com/alpinelinux/docker-alpine/blob/a6c74aa475f4bc471e72f527db6256d8c3a52434/x86_64/Dockerfile)
 
 # Quick reference (cont.)
 

@@ -20,15 +20,15 @@ WARNING:
 	[the Docker Community](https://github.com/docker-library/redmine)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.0.1`, `5.0`, `5`, `latest`, `5.0.1-bullseye`, `5.0-bullseye`, `5-bullseye`, `bullseye`](https://github.com/docker-library/redmine/blob/f28cb367066849bd5f9a8fd064962ecc58a5b4a2/5.0/Dockerfile)
--	[`5.0.1-alpine`, `5.0-alpine`, `5-alpine`, `alpine`, `5.0.1-alpine3.15`, `5.0-alpine3.15`, `5-alpine3.15`, `alpine3.15`](https://github.com/docker-library/redmine/blob/f28cb367066849bd5f9a8fd064962ecc58a5b4a2/5.0/alpine/Dockerfile)
--	[`4.2.6`, `4.2`, `4`, `4.2.6-bullseye`, `4.2-bullseye`, `4-bullseye`](https://github.com/docker-library/redmine/blob/2efdb14028dde655cca957e74442e10ee7856020/4.2/Dockerfile)
--	[`4.2.6-passenger`, `4.2-passenger`, `4-passenger`](https://github.com/docker-library/redmine/blob/845d96d1c60242c9c4871c9be1da2835ca5d1ca2/4.2/passenger/Dockerfile)
--	[`4.2.6-alpine`, `4.2-alpine`, `4-alpine`, `4.2.6-alpine3.15`, `4.2-alpine3.15`, `4-alpine3.15`](https://github.com/docker-library/redmine/blob/2efdb14028dde655cca957e74442e10ee7856020/4.2/alpine/Dockerfile)
+-	[`5.0.4`, `5.0`, `5`, `latest`, `5.0.4-bullseye`, `5.0-bullseye`, `5-bullseye`, `bullseye`](https://github.com/docker-library/redmine/blob/8749011cf59188062efd880e64cd69e800e1d447/5.0/Dockerfile)
+-	[`5.0.4-alpine`, `5.0-alpine`, `5-alpine`, `alpine`, `5.0.4-alpine3.16`, `5.0-alpine3.16`, `5-alpine3.16`, `alpine3.16`](https://github.com/docker-library/redmine/blob/8749011cf59188062efd880e64cd69e800e1d447/5.0/alpine/Dockerfile)
+-	[`4.2.9`, `4.2`, `4`, `4.2.9-bullseye`, `4.2-bullseye`, `4-bullseye`](https://github.com/docker-library/redmine/blob/6ba68a3fdcc615faab7fa8e32e7b3bf8247a5fb8/4.2/Dockerfile)
+-	[`4.2.9-passenger`, `4.2-passenger`, `4-passenger`](https://github.com/docker-library/redmine/blob/79ca73df39c04878fb0d1e00401d3e790e1973b6/4.2/passenger/Dockerfile)
+-	[`4.2.9-alpine`, `4.2-alpine`, `4-alpine`, `4.2.9-alpine3.16`, `4.2-alpine3.16`, `4-alpine3.16`](https://github.com/docker-library/redmine/blob/6ba68a3fdcc615faab7fa8e32e7b3bf8247a5fb8/4.2/alpine/Dockerfile)
 
 # Quick reference (cont.)
 

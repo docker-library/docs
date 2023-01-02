@@ -20,16 +20,16 @@ WARNING:
 	[the Amazon Linux Team](https://github.com/aws/amazon-linux-docker-images)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.0.20220426.0`, `2`, `latest`](https://github.com/amazonlinux/container-images/blob/7f5bc7447a2d475aea0383912f6abce963e04223/Dockerfile)
--	[`2.0.20220426.0-with-sources`, `2-with-sources`, `with-sources`](https://github.com/amazonlinux/container-images/blob/9e7db79f3c6d8599246d8432508337b3e9acf555/Dockerfile)
--	[`2018.03.0.20220503.0`, `2018.03`, `1`](https://github.com/amazonlinux/container-images/blob/61f736f29a376b3e5449cd3247d8f2e0b0f2180a/Dockerfile)
--	[`2018.03.0.20220503.0-with-sources`, `2018.03-with-sources`, `1-with-sources`](https://github.com/amazonlinux/container-images/blob/1076f30acaf2d9759d2c4466c613457af88cb61f/Dockerfile)
--	[`2022.0.20220504.1`, `2022`, `devel`](https://github.com/amazonlinux/container-images/blob/c82726861f7bb251c75a9af7011010e57d08d82f/Dockerfile)
--	[`2022.0.20220504.1-with-sources`, `2022-with-sources`, `devel-with-sources`](https://github.com/amazonlinux/container-images/blob/f0672b0c0d6e33d420f4013236a584b7ba9e8e6e/Dockerfile)
+-	[`2.0.20221210.0`, `2`, `latest`](https://github.com/amazonlinux/container-images/blob/9025e0ce9166d150ef8c28dd0d88465a250cf79d/Dockerfile)
+-	[`2.0.20221210.0-with-sources`, `2-with-sources`, `with-sources`](https://github.com/amazonlinux/container-images/blob/2040b2eb2433e45f0f20ab4d8475bf122580a6f5/Dockerfile)
+-	[`2018.03.0.20221209.1`, `2018.03`, `1`](https://github.com/amazonlinux/container-images/blob/a55f337ad62fc1e1a0c06843ecd0b8f5b10347bb/Dockerfile)
+-	[`2018.03.0.20221209.1-with-sources`, `2018.03-with-sources`, `1-with-sources`](https://github.com/amazonlinux/container-images/blob/6bb52a2cc2d7899405098cff4373bfa397b6c4a8/Dockerfile)
+-	[`2022.0.20221207.4`, `2022`, `devel`](https://github.com/amazonlinux/container-images/blob/423528b1be8f280af50b6fe8c2cfa296b05e995f/Dockerfile)
+-	[`2022.0.20221207.4-with-sources`, `2022-with-sources`, `devel-with-sources`](https://github.com/amazonlinux/container-images/blob/8b3c53739a3853a701caa4ff99732c3b8325c5b4/Dockerfile)
 
 # Quick reference (cont.)
 

@@ -20,7 +20,7 @@ WARNING:
 	[the Docker Community](https://github.com/docker-library/hello-world)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
@@ -89,8 +89,8 @@ For more examples and ideas, visit:
 
 
 $ docker images hello-world
-REPOSITORY   TAG     IMAGE ID      SIZE
-hello-world  latest  feb5d9fea6a5  13256
+REPOSITORY    TAG       IMAGE ID       SIZE
+hello-world   latest    feb5d9fea6a5   13.26kB
 ```
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/01c12653951b2fe592c1f93a13b4e289ada0e3a1/hello-world/logo.png)
@@ -98,6 +98,8 @@ hello-world  latest  feb5d9fea6a5  13256
 # How is this image created?
 
 This image is a prime example of using the [`scratch`](https://hub.docker.com/_/scratch/) image effectively. See [`hello.c`](https://github.com/docker-library/hello-world/blob/master/hello.c) in https://github.com/docker-library/hello-world for the source code of the `hello` binary included in this image.
+
+Because this image consists of nothing but a single static binary which prints some text to standard output, it can trivially be run as any arbitrary user (`docker run --user $RANDOM:$RANDOM hello-world`, for example).
 
 # License
 

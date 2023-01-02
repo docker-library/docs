@@ -20,12 +20,12 @@ WARNING:
 	[the Raku Community](https://github.com/Raku/docker)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `2021.04`](https://github.com/Raku/docker/blob/26de33ad42a6033cd105e354416c9aab3e7c91d1/2021.04/buster/Dockerfile)
--	[`alpine`, `2021.04-alpine`](https://github.com/Raku/docker/blob/26de33ad42a6033cd105e354416c9aab3e7c91d1/2021.04/alpine3.13/Dockerfile)
+-	[`latest`, `2022.12`](https://github.com/Raku/docker/blob/65c49addd32f616805979c6d3572f846f303a505/2022.12/bullseye/Dockerfile)
+-	[`alpine`, `2022.12-alpine`](https://github.com/Raku/docker/blob/65c49addd32f616805979c6d3572f846f303a505/2022.12/alpine3.17/Dockerfile)
 
 # Quick reference (cont.)
 

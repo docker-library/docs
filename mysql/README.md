@@ -20,14 +20,14 @@ WARNING:
 	[the Docker Community and the MySQL Team](https://github.com/docker-library/mysql)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.0.29-oracle`, `8.0-oracle`, `8-oracle`, `oracle`](https://github.com/docker-library/mysql/blob/275e9822858884a85434448cb6777683692365e6/8.0/Dockerfile.oracle)
--	[`8.0.29`, `8.0`, `8`, `latest`, `8.0.29-debian`, `8.0-debian`, `8-debian`, `debian`](https://github.com/docker-library/mysql/blob/275e9822858884a85434448cb6777683692365e6/8.0/Dockerfile.debian)
--	[`5.7.38-oracle`, `5.7-oracle`, `5-oracle`](https://github.com/docker-library/mysql/blob/275e9822858884a85434448cb6777683692365e6/5.7/Dockerfile.oracle)
--	[`5.7.38`, `5.7`, `5`, `5.7.38-debian`, `5.7-debian`, `5-debian`](https://github.com/docker-library/mysql/blob/275e9822858884a85434448cb6777683692365e6/5.7/Dockerfile.debian)
+-	[`8.0.31`, `8.0`, `8`, `latest`, `8.0.31-oracle`, `8.0-oracle`, `8-oracle`, `oracle`](https://github.com/docker-library/mysql/blob/e0d43b2a29867c5b7d5c01a8fea30a086861df2b/8.0/Dockerfile.oracle)
+-	[`8.0.31-debian`, `8.0-debian`, `8-debian`, `debian`](https://github.com/docker-library/mysql/blob/e0d43b2a29867c5b7d5c01a8fea30a086861df2b/8.0/Dockerfile.debian)
+-	[`5.7.40`, `5.7`, `5`, `5.7.40-oracle`, `5.7-oracle`, `5-oracle`](https://github.com/docker-library/mysql/blob/e0d43b2a29867c5b7d5c01a8fea30a086861df2b/5.7/Dockerfile.oracle)
+-	[`5.7.40-debian`, `5.7-debian`, `5-debian`](https://github.com/docker-library/mysql/blob/e0d43b2a29867c5b7d5c01a8fea30a086861df2b/5.7/Dockerfile.debian)
 
 # Quick reference (cont.)
 

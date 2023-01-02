@@ -20,11 +20,11 @@ WARNING:
 	TeamSpeak Developers [nwerensteijn](https://github.com/nwerensteijn) and [muenchow](https://github.com/muenchow)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.13`, `3.13.6`, `latest`](https://github.com/TeamSpeak-Systems/teamspeak-linux-docker-images/blob/ab76b77f97ba4c150126aaa6a045d3c7f8265ae9/alpine/Dockerfile)
+-	[`3.13`, `3.13.7`, `latest`](https://github.com/TeamSpeak-Systems/teamspeak-linux-docker-images/blob/e1cd2cd1de40103c20adfe40079f2b6282215e72/alpine/Dockerfile)
 
 # Quick reference (cont.)
 

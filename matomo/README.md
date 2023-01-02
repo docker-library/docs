@@ -20,13 +20,13 @@ WARNING:
 	[Matomo](https://github.com/matomo-org/docker) (a Matomo community contributor)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.10.1-apache`, `4.10-apache`, `4-apache`, `apache`, `4.10.1`, `4.10`, `4`, `latest`](https://github.com/matomo-org/docker/blob/0c728b9ffa7fdeed504a0d7b3a9368d01fce54bc/apache/Dockerfile)
--	[`4.10.1-fpm`, `4.10-fpm`, `4-fpm`, `fpm`](https://github.com/matomo-org/docker/blob/0c728b9ffa7fdeed504a0d7b3a9368d01fce54bc/fpm/Dockerfile)
--	[`4.10.1-fpm-alpine`, `4.10-fpm-alpine`, `4-fpm-alpine`, `fpm-alpine`](https://github.com/matomo-org/docker/blob/0c728b9ffa7fdeed504a0d7b3a9368d01fce54bc/fpm-alpine/Dockerfile)
+-	[`4.13.0-apache`, `4.13-apache`, `4-apache`, `apache`, `4.13.0`, `4.13`, `4`, `latest`](https://github.com/matomo-org/docker/blob/278f4cf9d5c53fecef5e102e75367c2159f671f8/apache/Dockerfile)
+-	[`4.13.0-fpm`, `4.13-fpm`, `4-fpm`, `fpm`](https://github.com/matomo-org/docker/blob/278f4cf9d5c53fecef5e102e75367c2159f671f8/fpm/Dockerfile)
+-	[`4.13.0-fpm-alpine`, `4.13-fpm-alpine`, `4-fpm-alpine`, `fpm-alpine`](https://github.com/matomo-org/docker/blob/278f4cf9d5c53fecef5e102e75367c2159f671f8/fpm-alpine/Dockerfile)
 
 # Quick reference (cont.)
 

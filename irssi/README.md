@@ -20,12 +20,12 @@ WARNING:
 	[Jessie and Tianon (of the Docker Community)](https://github.com/jessfraz/irssi), [with the appreciation of the Irssi Project](https://twitter.com/GeertHauwaerts/status/559131523145035776)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.2.3`, `1.2`, `1`, `latest`](https://github.com/jessfraz/irssi/blob/2e8af6fb56f4f54058636a1ca3cf475f95afb357/debian/Dockerfile)
--	[`1.2.3-alpine`, `1.2-alpine`, `1-alpine`, `alpine`](https://github.com/jessfraz/irssi/blob/2e8af6fb56f4f54058636a1ca3cf475f95afb357/alpine/Dockerfile)
+-	[`1.4.3`, `1.4`, `1`, `latest`](https://github.com/jessfraz/irssi/blob/980ac05787b560d131fdb3cf0fc45d097fd8d366/debian/Dockerfile)
+-	[`1.4.3-alpine`, `1.4-alpine`, `1-alpine`, `alpine`](https://github.com/jessfraz/irssi/blob/980ac05787b560d131fdb3cf0fc45d097fd8d366/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
