@@ -31,7 +31,7 @@ delivers predictable high performance at scale and high data density per node.
     * [Mesh clustering](#mesh-clustering)
 * [Image Versions](#image-versions)
     * [ee-[version]](#ee-version)
-    * [ce-[version]](#ce-verions)
+    * [ce-[version]](#ce-version)
 * [Reporting Issues](#reporting-issues)
 * [License](#license)
 
