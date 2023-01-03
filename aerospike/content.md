@@ -59,7 +59,7 @@ Running Enterprise Edition with a feature key file in an environment variable:
 docker run -d -v DIR:/opt/aerospike/etc/ -e "FEATURE_KEY_FILE=/opt/aerospike/etc/features.conf" --name aerospike -p 3000-3002:3000-3002 %%IMAGE%%:ee-[version]
 ```
 
-Above, _DIR_ is a directory on your machine where you drop your feature key file. Make sure Docker Desktop has file sharing permission to bind mount it into Docker containers.
+Above, *DIR* is a directory on your machine where you drop your feature key file. Make sure Docker Desktop has file sharing permission to bind mount it into Docker containers.
 
 #### Community Edition
 
@@ -144,7 +144,7 @@ The Aerospike Docker image comes with a default configuration file, which sets u
 
 You can inject parameters into the default configuration template using container-side environment variables with the `-e` flag.
 
-For example, to set the default [namespace](https://docs.aerospike.com/server/architecture/data-model) name to _demo_:
+For example, to set the default [namespace](https://docs.aerospike.com/server/architecture/data-model) name to *demo*:
 
 ```sh
 docker run -d --name aerospike -e "NAMESPACE=demo" -p 3000-3002:3000-3002 -v /my/dir:/opt/aerospike/etc/ -e "FEATURE_KEY_FILE=/opt/aerospike/etc/features.conf" %%IMAGE%%:ee-[version]
@@ -156,19 +156,19 @@ Injecting configuration parameters into the configuration template isn't compati
 
 #### `FEATURE_KEY_FILE`
 
-The [`feature_key_file`](https://docs.aerospike.com/server/operations/configure/feature-key). of the `service` context which is only applicable and to Enterprise editions and must be set to the empty string when running the Community edition. Default: _/etc/aerospike/features.conf_.
+The [`feature_key_file`](https://docs.aerospike.com/server/operations/configure/feature-key). of the `service` context which is only applicable and to Enterprise editions and must be set to the empty string when running the Community edition. Default: */etc/aerospike/features.conf*.
 
 #### `LOGFILE`
 
-The [`file`](https://docs.aerospike.com/reference/configuration#file) param of the `logging` context. Default: _""_, do not log to file. The container will also log to `stdout`` regardless of what is configured here.
+The [`file`](https://docs.aerospike.com/reference/configuration#file) param of the `logging` context. Default: *""*, do not log to file. The container will also log to `stdout`` regardless of what is configured here.
 
 #### `SERVICE_ADDRESS`
 
-The bind [`address`](https://docs.aerospike.com/reference/configuration#address) of the `networking.service` subcontext. Default: _any_
+The bind [`address`](https://docs.aerospike.com/reference/configuration#address) of the `networking.service` subcontext. Default: *any*
 
 #### `SERVICE_PORT`
 
-The [`port`](https://docs.aerospike.com/reference/configuration#port) of the `networking.service` subcontext. Default: _3000_
+The [`port`](https://docs.aerospike.com/reference/configuration#port) of the `networking.service` subcontext. Default: *3000*
 
 ### Preconfigured namespace
 
@@ -176,34 +176,34 @@ The single preconfigured namespace has the following variables:
 
 #### `NAMESPACE`
 
-The name of the namespace. Default: _test_
+The name of the namespace. Default: *test*
 
 #### `DATA_IN_MEMORY`
 
-The storage-engine [`data-in-memory`](https://docs.aerospike.com/reference/configuration#data-in-memory) setting. If _false_ (default), the namespace only stores the index in memory, and all
-reads and writes are served [from the filesystem](https://docs.aerospike.com/server/operations/configure/namespace/storage#recipe-for-a-persistent-memory-storage-engine). If _true_ the namespace storage is [in-memory with filesystem persistence](https://docs.aerospike.com/server/operations/configure/namespace/storage#recipe-for-an-hdd-storage-engine-with-data-in-memory), meaning that reads and writes happen from a full in-memory copy, and a synchronous write persists to disk.
+The storage-engine [`data-in-memory`](https://docs.aerospike.com/reference/configuration#data-in-memory) setting. If *false* (default), the namespace only stores the index in memory, and all
+reads and writes are served [from the filesystem](https://docs.aerospike.com/server/operations/configure/namespace/storage#recipe-for-a-persistent-memory-storage-engine). If *true* the namespace storage is [in-memory with filesystem persistence](https://docs.aerospike.com/server/operations/configure/namespace/storage#recipe-for-an-hdd-storage-engine-with-data-in-memory), meaning that reads and writes happen from a full in-memory copy, and a synchronous write persists to disk.
 
 #### `DEFAULT_TTL`
 
-The namespace [`default-ttl`](https://docs.aerospike.com/reference/configuration#default-ttl). Default: _30d_
+The namespace [`default-ttl`](https://docs.aerospike.com/reference/configuration#default-ttl). Default: *30d*
 
 #### `MEM_GB`
 
-The namespace [`memory-size`](https://docs.aerospike.com/reference/configuration#memory-size). Default: _1_, the unit is always `G` (GB)
+The namespace [`memory-size`](https://docs.aerospike.com/reference/configuration#memory-size). Default: *1*, the unit is always `G` (GB)
 
 #### `NSUP_PERIOD`
 
-The namespace [`nsup-period`](https://docs.aerospike.com/reference/configuration#nsup-period). Default: _120_ , nsup-period in seconds
+The namespace [`nsup-period`](https://docs.aerospike.com/reference/configuration#nsup-period). Default: *120* , nsup-period in seconds
 
 #### `STORAGE_GB`
 
-The namespace persistence `file` size. Default: _4_, the unit is always `G` (GB)
+The namespace persistence `file` size. Default: *4*, the unit is always `G` (GB)
 
 ## Advanced Configuration
 
 You can override the default configuration file by providing your own aerospike.conf, as described in [Configuring Aerospike Database](https://docs.aerospike.com/server/operations/configure).
 
-You should first `-v` map a local directory, which Docker will bind mount. Next, drop your aerospike.conf file into this directory. Finally, use the `--config-file` option to tell Aerospike where in the container the configuration file is (the default path is _/etc/aerospike/aerospike.conf_). Remember that the feature key file is required, so use `feature-key-file` in your config file to point to a mounted path (such as _/opt/aerospike/etc/feature.conf_).
+You should first `-v` map a local directory, which Docker will bind mount. Next, drop your aerospike.conf file into this directory. Finally, use the `--config-file` option to tell Aerospike where in the container the configuration file is (the default path is */etc/aerospike/aerospike.conf*). Remember that the feature key file is required, so use `feature-key-file` in your config file to point to a mounted path (such as */opt/aerospike/etc/feature.conf*).
 
 For example:
 
@@ -213,7 +213,7 @@ docker run -d -v /opt/aerospike/etc/:/opt/aerospike/etc/ --name aerospike -p 300
 
 ### Persistent data directory
 
-With Docker, the files within the container are not persisted past the life of the container. To persist data, you will want to mount a directory from the host to the container's _/opt/aerospike/data_ using the `-v` option:
+With Docker, the files within the container are not persisted past the life of the container. To persist data, you will want to mount a directory from the host to the container's */opt/aerospike/data* using the `-v` option:
 
 For example:
 
@@ -221,9 +221,9 @@ For example:
 docker run -d  -v /opt/aerospike/data:/opt/aerospike/data  -v /opt/aerospike/etc:/opt/aerospike/etc/ --name aerospike -p 3000-3002:3000-3002 -e "FEATURE_KEY_FILE=/opt/aerospike/etc/features.conf" %%IMAGE%%:ee-[version]
 ```
 
-The example above uses the configuration template, where the single defined namespace is in-memory with file-based persistence. Just mounting the predefined _/opt/aerospike/data_ directory enables the data to be persisted on the host.
+The example above uses the configuration template, where the single defined namespace is in-memory with file-based persistence. Just mounting the predefined */opt/aerospike/data* directory enables the data to be persisted on the host.
 
-Alternatively, your custom configuration file is used with the parameter `file` set to be a file in the mounted _/opt/aerospike/data_, such as in the following config snippet:
+Alternatively, your custom configuration file is used with the parameter `file` set to be a file in the mounted */opt/aerospike/data*, such as in the following config snippet:
 
 ```plaintext
 namespace test {
@@ -266,7 +266,7 @@ docker run -d --device '/dev/sdc:/dev/xvdc' -v /opt/aerospike/etc/:/opt/aerospik
 
 ### Persistent Lua cache
 
-Upon restart, your Lua cache will become emptied. To persist the cache, you will want to mount a directory from the host to the container's _/opt/aerospike/usr/udf/lua_ using the `-v` option:
+Upon restart, your Lua cache will become emptied. To persist the cache, you will want to mount a directory from the host to the container's */opt/aerospike/usr/udf/lua* using the `-v` option:
 
 ```sh
 docker run -d -v /opt/aerospike/lua:/opt/aerospike/usr/udf/lua -v /opt/aerospike/data:/opt/aerospike/data --name aerospike -p 3000-3002:3000-3002 --config-file /opt/aerospike/etc/aerospike.conf %%IMAGE%%:ee-[version]
