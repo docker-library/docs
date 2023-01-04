@@ -131,7 +131,7 @@ Injecting configuration parameters into the configuration template isn't compati
 
 #### `FEATURE_KEY_FILE`
 
-The [`feature_key_file`](https://docs.aerospike.com/server/operations/configure/feature-key). of the `service` context which is only applicable and to Enterprise editions and must be set to the empty string when running the Community edition. Default: */etc/aerospike/features.conf*.
+The [`feature_key_file`](https://docs.aerospike.com/server/operations/configure/feature-key) of the `service` context which is only applicable and to Enterprise editions and must be set to the empty string when running the Community edition. Default: */etc/aerospike/features.conf*.
 
 #### `LOGFILE`
 
