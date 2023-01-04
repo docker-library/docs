@@ -6,31 +6,6 @@
 
 %%LOGO%%
 
--	[Getting Started](#getting-started)
-	-	[Running an Aerospike Server node](#running-an-aerospike-server-node)
-	-	[Enterprise Edition](#enterprise-edition)
-	-	[Community Edition](#community-edition)
--	[Connecting to your Aerospike Container](#connecting-to-your-aerospike-container)
-	-	[Using aql](#using-aql)
-	-	[Using asadm](#using-asadm)
--	[Customizing the Default Developer Environment](#customizing-the-default-developer-template)
-	-	[List of template variables](#list-of-template-variables)
-	-	[Preconfigured namespace](#preconfigured-namespace)
--	[Advanced Configuration](#advanced-configuration)
-	-	[Persistent data directory](#persistent-data-directory)
-	-	[Block storage](#block-storage)
-	-	[Persistent Lua cache](#persistent-lua-cache)
-	-	[A note about security](#a-note-about-security)
-	-	[Networking](#networking)
-	-	[Configuring the node's access address](#configuring-the-nodes-access-address)
--	[Sending Performance Data to Aerospike](#sending-performance-data-to-aerospike)
-	-	[Mesh clustering](#mesh-clustering)
--	[Image Versions](#image-versions)
-	-	[ee-[version]](#ee-version)
-	-	[ce-[version]](#ce-version)
--	[Reporting Issues](#reporting-issues)
--	[License](#license)
-
 ## Getting Started
 
 Aerospike Database Community Edition (CE) supports the same developer APIs as Aerospike Database Enterprise Edition (EE), except for durable deletes. They differ in ease of operation and [enterprise features](https://aerospike.com/products/features-and-editions/), such as compression.
