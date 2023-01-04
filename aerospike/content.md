@@ -41,7 +41,7 @@ Since server version 6.1, Aerospike EE starts in a single-node cluster evaluatio
 
 #### Enterprise Edition
 
-By using Aerospike Enterprise Edition you agree to the [ENTERPRISE_LICENSE](enterprise/ENTERPRISE_LICENSE).
+Running Enterprise Edition with default evaluation feature key (versions 6.1+).
 
 ```sh
 docker run -d --name aerospike -p 3000-3002:3000-3002 %%IMAGE%%:ee-[version]
@@ -180,8 +180,7 @@ The name of the namespace. Default: *test*
 
 #### `DATA_IN_MEMORY`
 
-The storage-engine [`data-in-memory`](https://docs.aerospike.com/reference/configuration#data-in-memory) setting. If *false* (default), the namespace only stores the index in memory, and all
-reads and writes are served [from the filesystem](https://docs.aerospike.com/server/operations/configure/namespace/storage#recipe-for-a-persistent-memory-storage-engine). If *true* the namespace storage is [in-memory with filesystem persistence](https://docs.aerospike.com/server/operations/configure/namespace/storage#recipe-for-an-hdd-storage-engine-with-data-in-memory), meaning that reads and writes happen from a full in-memory copy, and a synchronous write persists to disk.
+The storage-engine [`data-in-memory`](https://docs.aerospike.com/reference/configuration#data-in-memory) setting. If *false* (default), the namespace only stores the index in memory, and all reads and writes are served [from the filesystem](https://docs.aerospike.com/server/operations/configure/namespace/storage#recipe-for-a-persistent-memory-storage-engine). If *true* the namespace storage is [in-memory with filesystem persistence](https://docs.aerospike.com/server/operations/configure/namespace/storage#recipe-for-an-hdd-storage-engine-with-data-in-memory), meaning that reads and writes happen from a full in-memory copy, and a synchronous write persists to disk.
 
 #### `DEFAULT_TTL`
 
@@ -326,4 +325,4 @@ Aerospike Enterprise evaluation users, if you have any problems with or question
 
 Enterprise customers are welcome to participate in the community forum, but can also report issues through the [enterprise support system](https://support.aerospike.com/).
 
-Community Edition users may report problems or ask  questions about this image on the [Aerospike Forums](https://discuss.aerospike.com/) or open an issue in [aerospike/aerospike-server.docker](https://github.com/aerospike/aerospike-server.docker/issues).
+Community Edition users may report problems or ask questions about this image on the [Aerospike Forums](https://discuss.aerospike.com/) or open an issue in [aerospike/aerospike-server.docker](https://github.com/aerospike/aerospike-server.docker/issues).
