@@ -20,13 +20,13 @@ WARNING:
 	[Odoo](https://github.com/odoo/docker)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`15.0`, `15`, `latest`](https://github.com/odoo/docker/blob/333b10955096da859c7f581935bd243bce743589/15.0/Dockerfile)
--	[`14.0`, `14`](https://github.com/odoo/docker/blob/333b10955096da859c7f581935bd243bce743589/14.0/Dockerfile)
--	[`13.0`, `13`](https://github.com/odoo/docker/blob/333b10955096da859c7f581935bd243bce743589/13.0/Dockerfile)
+-	[`16.0`, `16`, `latest`](https://github.com/odoo/docker/blob/9674beb8a5ae48981bae2266b8c373d4eb7dd5e7/16.0/Dockerfile)
+-	[`15.0`, `15`](https://github.com/odoo/docker/blob/9674beb8a5ae48981bae2266b8c373d4eb7dd5e7/15.0/Dockerfile)
+-	[`14.0`, `14`](https://github.com/odoo/docker/blob/9674beb8a5ae48981bae2266b8c373d4eb7dd5e7/14.0/Dockerfile)
 
 # Quick reference (cont.)
 

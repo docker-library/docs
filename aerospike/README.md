@@ -20,12 +20,12 @@ WARNING:
 	[Aerospike, Inc.](https://github.com/aerospike/aerospike-server-enterprise.docker)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`ee-6.1.0.2`](https://github.com/aerospike/aerospike-server-enterprise.docker/blob/8764b3ad467fb20c25554638abb0a76e515b6ac9/Dockerfile)
--	[`ce-6.1.0.2`](https://github.com/aerospike/aerospike-server.docker/blob/9f0fcbf7ff42f8f75c49b6b9ca02afb9b6fa4185/Dockerfile)
+-	[`ee-6.2.0.2`](https://github.com/aerospike/aerospike-server.docker/blob/26089140713466195470d5d246fdd2bda5b82180/enterprise/debian11/Dockerfile)
+-	[`ce-6.2.0.2`](https://github.com/aerospike/aerospike-server.docker/blob/26089140713466195470d5d246fdd2bda5b82180/community/debian11/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -33,7 +33,7 @@ WARNING:
 	[the Aerospike Forums](https://discuss.aerospike.com) or [GitHub](https://github.com/aerospike/aerospike-server-enterprise.docker/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/aerospike/)
+	[`amd64`](https://hub.docker.com/r/amd64/aerospike/), [`arm64v8`](https://hub.docker.com/r/arm64v8/aerospike/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/aerospike/` directory](https://github.com/docker-library/repo-info/blob/master/repos/aerospike) ([history](https://github.com/docker-library/repo-info/commits/master/repos/aerospike))  

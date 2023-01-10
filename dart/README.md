@@ -20,12 +20,12 @@ WARNING:
 	The Dart Docker Team
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.18.1-sdk`, `2.18-sdk`, `2-sdk`, `stable-sdk`, `sdk`, `2.18.1`, `2.18`, `2`, `stable`, `latest`](https://github.com/dart-lang/dart-docker/blob/e8d47836852fd5e06eaa3ac0e5fd16e993a998c6/stable/bullseye/Dockerfile)
--	[`2.19.0-146.1.beta-sdk`, `beta-sdk`, `2.19.0-146.1.beta`, `beta`](https://github.com/dart-lang/dart-docker/blob/e8d47836852fd5e06eaa3ac0e5fd16e993a998c6/beta/bullseye/Dockerfile)
+-	[`2.18.6-sdk`, `2.18-sdk`, `2-sdk`, `stable-sdk`, `sdk`, `2.18.6`, `2.18`, `2`, `stable`, `latest`](https://github.com/dart-lang/dart-docker/blob/819f5bcf17877205ac492b7dfeb7f92ddf87a8be/stable/bullseye/Dockerfile)
+-	[`2.19.0-444.3.beta-sdk`, `beta-sdk`, `2.19.0-444.3.beta`, `beta`](https://github.com/dart-lang/dart-docker/blob/819f5bcf17877205ac492b7dfeb7f92ddf87a8be/beta/bullseye/Dockerfile)
 
 # Quick reference (cont.)
 

@@ -20,11 +20,11 @@ WARNING:
 	The Wallarm Team
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`0.6.9`, `latest`](https://github.com/wallarm/api-firewall-docker/blob/b0579bf17de8f41b162e150b00a87b95648258ee/0.6.9/Dockerfile)
+-	[`0.6.9`, `latest`](https://github.com/wallarm/api-firewall-docker/blob/c2b622e7f59546d9fb338c81fa82d405a8767485/0.6.10/Dockerfile)
 
 # Quick reference (cont.)
 

@@ -20,13 +20,13 @@ WARNING:
 	[Postfix Admin](https://github.com/postfixadmin/docker)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.3.11-apache`, `3.3-apache`, `3-apache`, `apache`, `3.3.11`, `3.3`, `3`, `latest`](https://github.com/postfixadmin/docker/blob/f9323a9da51730fc6a50c7e9ed456faf64c3363e/apache/Dockerfile)
--	[`3.3.11-fpm`, `3.3-fpm`, `3-fpm`, `fpm`](https://github.com/postfixadmin/docker/blob/f9323a9da51730fc6a50c7e9ed456faf64c3363e/fpm/Dockerfile)
--	[`3.3.11-fpm-alpine`, `3.3-fpm-alpine`, `3-fpm-alpine`, `fpm-alpine`](https://github.com/postfixadmin/docker/blob/f9323a9da51730fc6a50c7e9ed456faf64c3363e/fpm-alpine/Dockerfile)
+-	[`3.3.13-apache`, `3.3-apache`, `3-apache`, `apache`, `3.3.13`, `3.3`, `3`, `latest`](https://github.com/postfixadmin/docker/blob/b4307d956cb1cfe64df1402cf6d68a1369ba56de/apache/Dockerfile)
+-	[`3.3.13-fpm`, `3.3-fpm`, `3-fpm`, `fpm`](https://github.com/postfixadmin/docker/blob/b4307d956cb1cfe64df1402cf6d68a1369ba56de/fpm/Dockerfile)
+-	[`3.3.13-fpm-alpine`, `3.3-fpm-alpine`, `3-fpm-alpine`, `fpm-alpine`](https://github.com/postfixadmin/docker/blob/b4307d956cb1cfe64df1402cf6d68a1369ba56de/fpm-alpine/Dockerfile)
 
 # Quick reference (cont.)
 

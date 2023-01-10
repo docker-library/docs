@@ -20,12 +20,12 @@ WARNING:
 	[OrientDB](https://github.com/orientechnologies/orientdb-docker)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.2.10`, `3.2`, `latest`](https://github.com/orientechnologies/orientdb-docker/blob/a8a42acbe19dad60a051afe08ed625e66587dd37/release/3.2.x/3.2.10/Dockerfile)
--	[`3.2.10-tp3`, `3.2-tp3`](https://github.com/orientechnologies/orientdb-docker/blob/a8a42acbe19dad60a051afe08ed625e66587dd37/release/3.2.x/3.2.10-tp3/Dockerfile)
+-	[`3.2.13`, `3.2`, `latest`](https://github.com/orientechnologies/orientdb-docker/blob/d3daf6bb6489dce6526a232d2c82f9b7778e6e7f/release/3.2.x/3.2.13/Dockerfile)
+-	[`3.2.13-tp3`, `3.2-tp3`](https://github.com/orientechnologies/orientdb-docker/blob/d3daf6bb6489dce6526a232d2c82f9b7778e6e7f/release/3.2.x/3.2.13-tp3/Dockerfile)
 -	[`3.1.20`, `3.1`](https://github.com/orientechnologies/orientdb-docker/blob/a8a42acbe19dad60a051afe08ed625e66587dd37/release/3.1.x/3.1.20/Dockerfile)
 -	[`3.1.20-tp3`, `3.1-tp3`](https://github.com/orientechnologies/orientdb-docker/blob/a8a42acbe19dad60a051afe08ed625e66587dd37/release/3.1.x/3.1.20-tp3/Dockerfile)
 -	[`3.0.44`, `3.0`](https://github.com/orientechnologies/orientdb-docker/blob/a8a42acbe19dad60a051afe08ed625e66587dd37/release/3.0.x/3.0.44/Dockerfile)

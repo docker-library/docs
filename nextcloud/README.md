@@ -20,16 +20,19 @@ WARNING:
 	[Nextcloud](https://github.com/nextcloud/docker)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`23.0.9-apache`, `23.0-apache`, `23-apache`, `23.0.9`, `23.0`, `23`](https://github.com/nextcloud/docker/blob/85e22b4a8e6b12d82d574c7eacd68656dac85bf5/23/apache/Dockerfile)
--	[`23.0.9-fpm`, `23.0-fpm`, `23-fpm`](https://github.com/nextcloud/docker/blob/85e22b4a8e6b12d82d574c7eacd68656dac85bf5/23/fpm/Dockerfile)
--	[`23.0.9-fpm-alpine`, `23.0-fpm-alpine`, `23-fpm-alpine`](https://github.com/nextcloud/docker/blob/85e22b4a8e6b12d82d574c7eacd68656dac85bf5/23/fpm-alpine/Dockerfile)
--	[`24.0.5-apache`, `24.0-apache`, `24-apache`, `apache`, `stable-apache`, `production-apache`, `24.0.5`, `24.0`, `24`, `latest`, `stable`, `production`](https://github.com/nextcloud/docker/blob/85e22b4a8e6b12d82d574c7eacd68656dac85bf5/24/apache/Dockerfile)
--	[`24.0.5-fpm`, `24.0-fpm`, `24-fpm`, `fpm`, `stable-fpm`, `production-fpm`](https://github.com/nextcloud/docker/blob/85e22b4a8e6b12d82d574c7eacd68656dac85bf5/24/fpm/Dockerfile)
--	[`24.0.5-fpm-alpine`, `24.0-fpm-alpine`, `24-fpm-alpine`, `fpm-alpine`, `stable-fpm-alpine`, `production-fpm-alpine`](https://github.com/nextcloud/docker/blob/85e22b4a8e6b12d82d574c7eacd68656dac85bf5/24/fpm-alpine/Dockerfile)
+-	[`23.0.12-apache`, `23.0-apache`, `23-apache`, `23.0.12`, `23.0`, `23`](https://github.com/nextcloud/docker/blob/540648f7edee606349f4499e1c989e9c106331a9/23/apache/Dockerfile)
+-	[`23.0.12-fpm`, `23.0-fpm`, `23-fpm`](https://github.com/nextcloud/docker/blob/540648f7edee606349f4499e1c989e9c106331a9/23/fpm/Dockerfile)
+-	[`23.0.12-fpm-alpine`, `23.0-fpm-alpine`, `23-fpm-alpine`](https://github.com/nextcloud/docker/blob/540648f7edee606349f4499e1c989e9c106331a9/23/fpm-alpine/Dockerfile)
+-	[`24.0.8-apache`, `24.0-apache`, `24-apache`, `24.0.8`, `24.0`, `24`](https://github.com/nextcloud/docker/blob/540648f7edee606349f4499e1c989e9c106331a9/24/apache/Dockerfile)
+-	[`24.0.8-fpm`, `24.0-fpm`, `24-fpm`](https://github.com/nextcloud/docker/blob/540648f7edee606349f4499e1c989e9c106331a9/24/fpm/Dockerfile)
+-	[`24.0.8-fpm-alpine`, `24.0-fpm-alpine`, `24-fpm-alpine`](https://github.com/nextcloud/docker/blob/540648f7edee606349f4499e1c989e9c106331a9/24/fpm-alpine/Dockerfile)
+-	[`25.0.2-apache`, `25.0-apache`, `25-apache`, `apache`, `stable-apache`, `production-apache`, `25.0.2`, `25.0`, `25`, `latest`, `stable`, `production`](https://github.com/nextcloud/docker/blob/540648f7edee606349f4499e1c989e9c106331a9/25/apache/Dockerfile)
+-	[`25.0.2-fpm`, `25.0-fpm`, `25-fpm`, `fpm`, `stable-fpm`, `production-fpm`](https://github.com/nextcloud/docker/blob/540648f7edee606349f4499e1c989e9c106331a9/25/fpm/Dockerfile)
+-	[`25.0.2-fpm-alpine`, `25.0-fpm-alpine`, `25-fpm-alpine`, `fpm-alpine`, `stable-fpm-alpine`, `production-fpm-alpine`](https://github.com/nextcloud/docker/blob/540648f7edee606349f4499e1c989e9c106331a9/25/fpm-alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -548,7 +551,7 @@ You're already using Nextcloud and want to switch to docker? Great! Here are som
 
 	```console
 	docker cp ./database.dmp nextcloud_db_1:/dmp
-	docker-compose exec db sh -c "mysql -u USER -p PASSWORD nextcloud < /dmp"
+	docker-compose exec db sh -c "mysql --user USER --password PASSWORD nextcloud < /dmp"
 	docker-compose exec db rm /dmp
 	```
 

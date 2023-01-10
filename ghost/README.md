@@ -20,14 +20,14 @@ WARNING:
 	[the Docker Community](https://github.com/docker-library/ghost)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.14.2`, `5.14`, `5`, `latest`](https://github.com/docker-library/ghost/blob/c13e701715cfa0feea436163eb3b531fc1149896/5/debian/Dockerfile)
--	[`5.14.2-alpine`, `5.14-alpine`, `5-alpine`, `alpine`](https://github.com/docker-library/ghost/blob/c13e701715cfa0feea436163eb3b531fc1149896/5/alpine/Dockerfile)
--	[`4.48.4`, `4.48`, `4`](https://github.com/docker-library/ghost/blob/a9a8ed96b2e42133c6b502cc404f873fd64d1284/4/debian/Dockerfile)
--	[`4.48.4-alpine`, `4.48-alpine`, `4-alpine`](https://github.com/docker-library/ghost/blob/a9a8ed96b2e42133c6b502cc404f873fd64d1284/4/alpine/Dockerfile)
+-	[`5.28.0`, `5.28`, `5`, `latest`](https://github.com/docker-library/ghost/blob/4045ac630b28e66a5be928a97d64e51176e66927/5/debian/Dockerfile)
+-	[`5.28.0-alpine`, `5.28-alpine`, `5-alpine`, `alpine`](https://github.com/docker-library/ghost/blob/4045ac630b28e66a5be928a97d64e51176e66927/5/alpine/Dockerfile)
+-	[`4.48.9`, `4.48`, `4`](https://github.com/docker-library/ghost/blob/1f74dbadd9f1959422a4e42c3f9c0f5d281c4461/4/debian/Dockerfile)
+-	[`4.48.9-alpine`, `4.48-alpine`, `4-alpine`](https://github.com/docker-library/ghost/blob/1f74dbadd9f1959422a4e42c3f9c0f5d281c4461/4/alpine/Dockerfile)
 
 # Quick reference (cont.)
 

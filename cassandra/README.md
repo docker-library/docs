@@ -20,13 +20,14 @@ WARNING:
 	[the Docker Community](https://github.com/docker-library/cassandra)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.0.6`, `4.0`, `4`, `latest`](https://github.com/docker-library/cassandra/blob/5aa6b7ed7a342c18da796561252677f17d370616/4.0/Dockerfile)
--	[`3.11.13`, `3.11`, `3`](https://github.com/docker-library/cassandra/blob/1a9d5f3ac97204f71bba86259aa56815f8a7eee7/3.11/Dockerfile)
--	[`3.0.27`, `3.0`](https://github.com/docker-library/cassandra/blob/9315e4444c9f92b19e3e2d4fbe7c77293f2d33d7/3.0/Dockerfile)
+-	[`4.1.0`, `4.1`, `4`, `latest`](https://github.com/docker-library/cassandra/blob/835052698f299c06e09ed49c972d6ab7bd2ef223/4.1/Dockerfile)
+-	[`4.0.7`, `4.0`](https://github.com/docker-library/cassandra/blob/08fa5553ad2dde684ca5337c7fedd173cbc41f39/4.0/Dockerfile)
+-	[`3.11.14`, `3.11`, `3`](https://github.com/docker-library/cassandra/blob/13e3d6ca1ff1b6c9d780e5f018887c1d28318d50/3.11/Dockerfile)
+-	[`3.0.28`, `3.0`](https://github.com/docker-library/cassandra/blob/e92196fdba778656678a9bc9bcb724b8a3584149/3.0/Dockerfile)
 
 # Quick reference (cont.)
 

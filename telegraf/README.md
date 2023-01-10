@@ -20,16 +20,16 @@ WARNING:
 	[InfluxData](https://github.com/influxdata/influxdata-docker)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.22`, `1.22.4`](https://github.com/influxdata/influxdata-docker/blob/b827ab25d730659b98439d1c0cbfb17baf60b468/telegraf/1.22/Dockerfile)
--	[`1.22-alpine`, `1.22.4-alpine`](https://github.com/influxdata/influxdata-docker/blob/b827ab25d730659b98439d1c0cbfb17baf60b468/telegraf/1.22/alpine/Dockerfile)
--	[`1.23`, `1.23.4`](https://github.com/influxdata/influxdata-docker/blob/b827ab25d730659b98439d1c0cbfb17baf60b468/telegraf/1.23/Dockerfile)
--	[`1.23-alpine`, `1.23.4-alpine`](https://github.com/influxdata/influxdata-docker/blob/b827ab25d730659b98439d1c0cbfb17baf60b468/telegraf/1.23/alpine/Dockerfile)
--	[`1.24`, `1.24.1`, `latest`](https://github.com/influxdata/influxdata-docker/blob/b827ab25d730659b98439d1c0cbfb17baf60b468/telegraf/1.24/Dockerfile)
--	[`1.24-alpine`, `1.24.1-alpine`, `alpine`](https://github.com/influxdata/influxdata-docker/blob/b827ab25d730659b98439d1c0cbfb17baf60b468/telegraf/1.24/alpine/Dockerfile)
+-	[`1.23`, `1.23.4`](https://github.com/influxdata/influxdata-docker/blob/dbc42012042db536190ddd0686327a3a9e59a0e3/telegraf/1.23/Dockerfile)
+-	[`1.23-alpine`, `1.23.4-alpine`](https://github.com/influxdata/influxdata-docker/blob/dbc42012042db536190ddd0686327a3a9e59a0e3/telegraf/1.23/alpine/Dockerfile)
+-	[`1.24`, `1.24.4`](https://github.com/influxdata/influxdata-docker/blob/dbc42012042db536190ddd0686327a3a9e59a0e3/telegraf/1.24/Dockerfile)
+-	[`1.24-alpine`, `1.24.4-alpine`](https://github.com/influxdata/influxdata-docker/blob/dbc42012042db536190ddd0686327a3a9e59a0e3/telegraf/1.24/alpine/Dockerfile)
+-	[`1.25`, `1.25.0`, `latest`](https://github.com/influxdata/influxdata-docker/blob/dbc42012042db536190ddd0686327a3a9e59a0e3/telegraf/1.25/Dockerfile)
+-	[`1.25-alpine`, `1.25.0-alpine`, `alpine`](https://github.com/influxdata/influxdata-docker/blob/dbc42012042db536190ddd0686327a3a9e59a0e3/telegraf/1.25/alpine/Dockerfile)
 
 # Quick reference (cont.)
 

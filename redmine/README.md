@@ -20,15 +20,15 @@ WARNING:
 	[the Docker Community](https://github.com/docker-library/redmine)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.0.2`, `5.0`, `5`, `latest`, `5.0.2-bullseye`, `5.0-bullseye`, `5-bullseye`, `bullseye`](https://github.com/docker-library/redmine/blob/4090622d755212fc475a8f7152ff9dfffcd7d131/5.0/Dockerfile)
--	[`5.0.2-alpine`, `5.0-alpine`, `5-alpine`, `alpine`, `5.0.2-alpine3.15`, `5.0-alpine3.15`, `5-alpine3.15`, `alpine3.15`](https://github.com/docker-library/redmine/blob/4090622d755212fc475a8f7152ff9dfffcd7d131/5.0/alpine/Dockerfile)
--	[`4.2.7`, `4.2`, `4`, `4.2.7-bullseye`, `4.2-bullseye`, `4-bullseye`](https://github.com/docker-library/redmine/blob/4090622d755212fc475a8f7152ff9dfffcd7d131/4.2/Dockerfile)
--	[`4.2.7-passenger`, `4.2-passenger`, `4-passenger`](https://github.com/docker-library/redmine/blob/160a6433d3c392e0f332b5b62317117a2d7de943/4.2/passenger/Dockerfile)
--	[`4.2.7-alpine`, `4.2-alpine`, `4-alpine`, `4.2.7-alpine3.15`, `4.2-alpine3.15`, `4-alpine3.15`](https://github.com/docker-library/redmine/blob/4090622d755212fc475a8f7152ff9dfffcd7d131/4.2/alpine/Dockerfile)
+-	[`5.0.4`, `5.0`, `5`, `latest`, `5.0.4-bullseye`, `5.0-bullseye`, `5-bullseye`, `bullseye`](https://github.com/docker-library/redmine/blob/8749011cf59188062efd880e64cd69e800e1d447/5.0/Dockerfile)
+-	[`5.0.4-alpine`, `5.0-alpine`, `5-alpine`, `alpine`, `5.0.4-alpine3.16`, `5.0-alpine3.16`, `5-alpine3.16`, `alpine3.16`](https://github.com/docker-library/redmine/blob/8749011cf59188062efd880e64cd69e800e1d447/5.0/alpine/Dockerfile)
+-	[`4.2.9`, `4.2`, `4`, `4.2.9-bullseye`, `4.2-bullseye`, `4-bullseye`](https://github.com/docker-library/redmine/blob/6ba68a3fdcc615faab7fa8e32e7b3bf8247a5fb8/4.2/Dockerfile)
+-	[`4.2.9-passenger`, `4.2-passenger`, `4-passenger`](https://github.com/docker-library/redmine/blob/79ca73df39c04878fb0d1e00401d3e790e1973b6/4.2/passenger/Dockerfile)
+-	[`4.2.9-alpine`, `4.2-alpine`, `4-alpine`, `4.2.9-alpine3.16`, `4.2-alpine3.16`, `4-alpine3.16`](https://github.com/docker-library/redmine/blob/6ba68a3fdcc615faab7fa8e32e7b3bf8247a5fb8/4.2/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -126,7 +126,7 @@ Run `docker stack deploy -c stack.yml redmine` (or `docker-compose -f stack.yml 
 
 ## Alternative Web Server
 
-The other tags in this repository, like those with `passenger`, use the same environment and `--links` as the default tags that use WEBrick (`rails s`) but instead give you the option of a different web and application server. `passenger` uses [Phusion Passenger](https://www.phusionpassenger.com/). [`tini`](https://github.com/krallin/tini) is used for reaping [zombies](https://en.wikipedia.org/wiki/Zombie_process).
+The other tags in this repository, like those with `passenger`, use the same environment and `--links` as the default tags that use Puma (`rails server`) but instead give you the option of a different web and application server. `passenger` uses [Phusion Passenger](https://www.phusionpassenger.com/). [`tini`](https://github.com/krallin/tini) is used for reaping [zombies](https://en.wikipedia.org/wiki/Zombie_process).
 
 ## Accessing the Application
 

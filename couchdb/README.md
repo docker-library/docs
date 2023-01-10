@@ -20,13 +20,14 @@ WARNING:
 	[Apache CouchDB](https://github.com/apache/couchdb-docker)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `3.2.2`, `3.2`, `3`](https://github.com/apache/couchdb-docker/blob/9af532fbd94692c0de3ff277418cc46ff4d90bad/3.2.2/Dockerfile)
--	[`3.1.2`, `3.1`](https://github.com/apache/couchdb-docker/blob/9af532fbd94692c0de3ff277418cc46ff4d90bad/3.1.2/Dockerfile)
--	[`2.3.1`, `2.3`, `2`](https://github.com/apache/couchdb-docker/blob/9af532fbd94692c0de3ff277418cc46ff4d90bad/2.3.1/Dockerfile)
+-	[`latest`, `3.3.0`, `3.3`, `3`](https://github.com/apache/couchdb-docker/blob/f39f58d2870d9116f1176780f838e9e2ca8f96b6/3.3.0/Dockerfile)
+-	[`3.2.2`, `3.2`](https://github.com/apache/couchdb-docker/blob/f39f58d2870d9116f1176780f838e9e2ca8f96b6/3.2.2/Dockerfile)
+-	[`3.1.2`, `3.1`](https://github.com/apache/couchdb-docker/blob/f39f58d2870d9116f1176780f838e9e2ca8f96b6/3.1.2/Dockerfile)
+-	[`2.3.1`, `2.3`, `2`](https://github.com/apache/couchdb-docker/blob/f39f58d2870d9116f1176780f838e9e2ca8f96b6/2.3.1/Dockerfile)
 
 # Quick reference (cont.)
 

@@ -15,20 +15,16 @@ echo '$ docker run %%IMAGE%%'
 docker run --rm hello-world
 echo
 echo '$ docker images %%IMAGE%%'
-{
-	id="$(docker image inspect --format '{{ .Id }}' "$image:latest" | sed -r 's/^sha256:([a-f0-9]{12})[a-f0-9]+$/\1/')"
-	size="$(docker image inspect --format '{{ .VirtualSize }}' "$image:latest")"
-	echo $'REPOSITORY\tTAG\tIMAGE ID\tSIZE'
-	echo "$image"$'\tlatest\t'"$id"$'\t'"$size"
-} | column -t -s$'\t'
+docker image ls --format 'table {{ .Repository }}\t{{ .Tag }}\t{{ .ID }}\t{{ .VirtualSize }}' "$image:latest"
 echo '```'
 
-echo
-echo '%%LOGO%%'
-
-echo
 cat <<'EOF'
+
+%%LOGO%%
+
 # How is this image created?
 
 This image is a prime example of using the [`scratch`](https://hub.docker.com/_/scratch/) image effectively. See [`hello.c`](%%GITHUB-REPO%%/blob/master/hello.c) in %%GITHUB-REPO%% for the source code of the `hello` binary included in this image.
+
+Because this image consists of nothing but a single static binary which prints some text to standard output, it can trivially be run as any arbitrary user (`docker run --user $RANDOM:$RANDOM %%IMAGE%%`, for example).
 EOF

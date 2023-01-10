@@ -20,22 +20,20 @@ WARNING:
 	[the PostgreSQL Docker Community](https://github.com/docker-library/postgres)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`15beta4`, `15beta4-bullseye`](https://github.com/docker-library/postgres/blob/1554bd151d1578b3d0743a16764f6619874ea571/15/bullseye/Dockerfile)
--	[`15beta4-alpine`, `15beta4-alpine3.16`](https://github.com/docker-library/postgres/blob/1554bd151d1578b3d0743a16764f6619874ea571/15/alpine/Dockerfile)
--	[`14.5`, `14`, `latest`, `14.5-bullseye`, `14-bullseye`, `bullseye`](https://github.com/docker-library/postgres/blob/56a1986772dd0f9488d54dccb82427c0db0b0599/14/bullseye/Dockerfile)
--	[`14.5-alpine`, `14-alpine`, `alpine`, `14.5-alpine3.16`, `14-alpine3.16`, `alpine3.16`](https://github.com/docker-library/postgres/blob/56a1986772dd0f9488d54dccb82427c0db0b0599/14/alpine/Dockerfile)
--	[`13.8`, `13`, `13.8-bullseye`, `13-bullseye`](https://github.com/docker-library/postgres/blob/701a1643a2718b4f90846e19e5860751bb970a3b/13/bullseye/Dockerfile)
--	[`13.8-alpine`, `13-alpine`, `13.8-alpine3.16`, `13-alpine3.16`](https://github.com/docker-library/postgres/blob/701a1643a2718b4f90846e19e5860751bb970a3b/13/alpine/Dockerfile)
--	[`12.12`, `12`, `12.12-bullseye`, `12-bullseye`](https://github.com/docker-library/postgres/blob/5d3efd36f052338f294e7284812ad3f82a886257/12/bullseye/Dockerfile)
--	[`12.12-alpine`, `12-alpine`, `12.12-alpine3.16`, `12-alpine3.16`](https://github.com/docker-library/postgres/blob/5d3efd36f052338f294e7284812ad3f82a886257/12/alpine/Dockerfile)
--	[`11.17-bullseye`, `11-bullseye`](https://github.com/docker-library/postgres/blob/bb963be60f9c7f69f011ae057782840ebd9e0988/11/bullseye/Dockerfile)
--	[`11.17-alpine`, `11-alpine`, `11.17-alpine3.16`, `11-alpine3.16`](https://github.com/docker-library/postgres/blob/bb963be60f9c7f69f011ae057782840ebd9e0988/11/alpine/Dockerfile)
--	[`10.22-bullseye`, `10-bullseye`](https://github.com/docker-library/postgres/blob/91cd38efaa82a8be0b1b993c11d740a668cd028e/10/bullseye/Dockerfile)
--	[`10.22-alpine`, `10-alpine`, `10.22-alpine3.16`, `10-alpine3.16`](https://github.com/docker-library/postgres/blob/91cd38efaa82a8be0b1b993c11d740a668cd028e/10/alpine/Dockerfile)
+-	[`15.1`, `15`, `latest`, `15.1-bullseye`, `15-bullseye`, `bullseye`](https://github.com/docker-library/postgres/blob/41bd7bf3f487e6dc0036fd73efaff6ccb6fbbacd/15/bullseye/Dockerfile)
+-	[`15.1-alpine`, `15-alpine`, `alpine`, `15.1-alpine3.17`, `15-alpine3.17`, `alpine3.17`](https://github.com/docker-library/postgres/blob/6ee0f2865b23484fefb785ba70b9d404f2bb0cd4/15/alpine/Dockerfile)
+-	[`14.6`, `14`, `14.6-bullseye`, `14-bullseye`](https://github.com/docker-library/postgres/blob/41bd7bf3f487e6dc0036fd73efaff6ccb6fbbacd/14/bullseye/Dockerfile)
+-	[`14.6-alpine`, `14-alpine`, `14.6-alpine3.17`, `14-alpine3.17`](https://github.com/docker-library/postgres/blob/6ee0f2865b23484fefb785ba70b9d404f2bb0cd4/14/alpine/Dockerfile)
+-	[`13.9`, `13`, `13.9-bullseye`, `13-bullseye`](https://github.com/docker-library/postgres/blob/41bd7bf3f487e6dc0036fd73efaff6ccb6fbbacd/13/bullseye/Dockerfile)
+-	[`13.9-alpine`, `13-alpine`, `13.9-alpine3.17`, `13-alpine3.17`](https://github.com/docker-library/postgres/blob/6ee0f2865b23484fefb785ba70b9d404f2bb0cd4/13/alpine/Dockerfile)
+-	[`12.13`, `12`, `12.13-bullseye`, `12-bullseye`](https://github.com/docker-library/postgres/blob/41bd7bf3f487e6dc0036fd73efaff6ccb6fbbacd/12/bullseye/Dockerfile)
+-	[`12.13-alpine`, `12-alpine`, `12.13-alpine3.17`, `12-alpine3.17`](https://github.com/docker-library/postgres/blob/6ee0f2865b23484fefb785ba70b9d404f2bb0cd4/12/alpine/Dockerfile)
+-	[`11.18-bullseye`, `11-bullseye`](https://github.com/docker-library/postgres/blob/41bd7bf3f487e6dc0036fd73efaff6ccb6fbbacd/11/bullseye/Dockerfile)
+-	[`11.18-alpine`, `11-alpine`, `11.18-alpine3.17`, `11-alpine3.17`](https://github.com/docker-library/postgres/blob/6ee0f2865b23484fefb785ba70b9d404f2bb0cd4/11/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -261,7 +259,13 @@ ENV LANG de_DE.utf8
 
 Since database initialization only happens on container startup, this allows us to set the language before it is created.
 
-Also of note, Alpine-based variants do *not* support locales; see ["Character sets and locale" in the musl documentation](https://wiki.musl-libc.org/functional-differences-from-glibc.html#Character-sets-and-locale) for more details.
+Also of note, Alpine-based variants starting with Postgres 15 support [ICU locales](https://www.postgresql.org/docs/15/locale.html#id-1.6.11.3.7). Previous Postgres versions based on alpine do *not* support locales; see ["Character sets and locale" in the musl documentation](https://wiki.musl-libc.org/functional-differences-from-glibc.html#Character-sets-and-locale) for more details.
+
+You can set locales in the Alpine-based images with `POSTGRES_INITDB_ARGS` to set a different locale. The following example will set the default locale for a newly initialized database to `de_DE.utf8`:
+
+```console
+$ docker run -d -e LANG=de_DE.utf8 -e POSTGRES_INITDB_ARGS="--locale-provider=icu --icu-locale=de-DE" -e POSTGRES_PASSWORD=mysecretpassword postgres:15-alpine 
+```
 
 ## Additional Extensions
 
@@ -271,7 +275,7 @@ When using the Alpine variants, any postgres extension not listed in [postgres-c
 
 # Arbitrary `--user` Notes
 
-As of [docker-library/postgres#253](https://github.com/docker-library/postgres/pull/253), this image supports running as a (mostly) arbitrary user via `--user` on `docker run`.
+As of [docker-library/postgres#253](https://github.com/docker-library/postgres/pull/253), this image supports running as a (mostly) arbitrary user via `--user` on `docker run`. As of [docker-library/postgres#1018](https://github.com/docker-library/postgres/pull/1018), this is also the case for the Alpine variants.
 
 The main caveat to note is that `postgres` doesn't care what UID it runs as (as long as the owner of `/var/lib/postgresql/data` matches), but `initdb` *does* care (and needs the user to exist in `/etc/passwd`):
 
@@ -286,7 +290,7 @@ initdb: could not look up effective user ID 1000: user does not exist
 
 The three easiest ways to get around this:
 
-1.	use the Debian variants (not the Alpine variants) and thus allow the image to use [the `nss_wrapper` library](https://cwrap.org/nss_wrapper.html) to "fake" `/etc/passwd` contents for you (see [docker-library/postgres#448](https://github.com/docker-library/postgres/pull/448) for more details)
+1.	allow the image to use [the `nss_wrapper` library](https://cwrap.org/nss_wrapper.html) to "fake" `/etc/passwd` contents for you (see [docker-library/postgres#448](https://github.com/docker-library/postgres/pull/448) for more details)
 
 2.	bind-mount `/etc/passwd` read-only from the host (if the UID you desire is a valid user on your host):
 

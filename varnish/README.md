@@ -20,15 +20,15 @@ WARNING:
 	[the Varnish Docker Community](https://github.com/varnish/docker-varnish)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`fresh`, `7.2.0`, `7.2`, `latest`](https://github.com/varnish/docker-varnish/blob/314b75ac940b9d6cb3b848e1c790f1360464cbd7/fresh/debian/Dockerfile)
--	[`fresh-alpine`, `7.2.0-alpine`, `7.2-alpine`, `alpine`](https://github.com/varnish/docker-varnish/blob/314b75ac940b9d6cb3b848e1c790f1360464cbd7/fresh/alpine/Dockerfile)
--	[`old`, `7.1.1`, `7.1`](https://github.com/varnish/docker-varnish/blob/9544f66456655cacda18a89ee8c9a2ad2a29234d/old/debian/Dockerfile)
--	[`old-alpine`, `7.1.1-alpine`, `7.1-alpine`](https://github.com/varnish/docker-varnish/blob/9544f66456655cacda18a89ee8c9a2ad2a29234d/old/alpine/Dockerfile)
--	[`stable`, `6.0.10`, `6.0`](https://github.com/varnish/docker-varnish/blob/d1212e4b8fd35b58c19b01ed389f8841d0a4ea38/stable/debian/Dockerfile)
+-	[`fresh`, `7.2.1`, `7.2`, `latest`](https://github.com/varnish/docker-varnish/blob/b62a2443a5f1b821fbb096aea9d349f0de20b0a3/fresh/debian/Dockerfile)
+-	[`fresh-alpine`, `7.2.1-alpine`, `7.2-alpine`, `alpine`](https://github.com/varnish/docker-varnish/blob/b62a2443a5f1b821fbb096aea9d349f0de20b0a3/fresh/alpine/Dockerfile)
+-	[`old`, `7.1.2`, `7.1`](https://github.com/varnish/docker-varnish/blob/e7acf36bd4afd05427bc3fb251ae4b3374168f27/old/debian/Dockerfile)
+-	[`old-alpine`, `7.1.2-alpine`, `7.1-alpine`](https://github.com/varnish/docker-varnish/blob/e7acf36bd4afd05427bc3fb251ae4b3374168f27/old/alpine/Dockerfile)
+-	[`stable`, `6.0.11`, `6.0`](https://github.com/varnish/docker-varnish/blob/e7acf36bd4afd05427bc3fb251ae4b3374168f27/stable/debian/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -136,13 +136,26 @@ docker run varnish varnishreload -h
 
 ## Additional configuration
 
+### Cache size (VARNISH_SIZE)
+
 By default, the containers will use a cache size of 100MB, which is usually a bit too small, but you can quickly set it through the `VARNISH_SIZE` environment variable:
 
 ```console
 $ docker run --tmpfs /var/lib/varnish/varnishd:exec -p 8080:80 -e VARNISH_SIZE=2G varnish
 ```
 
-Additionally, you can add arguments to `docker run` after `varnish`, if the first one starts with a `-`, they will be appendend to the [default command](https://github.com/varnish/docker-varnish/blob/master/docker-varnish-entrypoint#L8):
+### Listening ports (VARNISH_HTTP_PORT/VARNISH_PROXY_PORT)
+
+Varnish will listen to HTTP traffic on port `80`, and this can be overridden by setting the environment variable `VARNISH_HTTP_PORT`. Similarly, the variable `VARNISH_PROXY_PORT` (defaulting to `8443`) dictate the listening port for the [PROXY protocol](https://www.haproxy.org/download/1.8/doc/proxy-protocol.txt) used notably to interact with [hitch](https://hub.docker.com/_/hitch) (which, coincidentally, uses `8443` as a default too!).
+
+```console
+# instruct varnish to listening to port 7777 instead of 80
+$ docker run --tmpfs /var/lib/varnish/varnishd:exec -p 8080:7777 -e VARNISH_HTTP_PORT=7777 varnish
+```
+
+### Extra arguments
+
+Additionally, you can add arguments to `docker run` after `varnish`, if the first argument starts with a `-`, the whole list will be appendend to the [default command](https://github.com/varnish/docker-varnish/blob/master/fresh/debian/scripts/docker-varnish-entrypoint):
 
 ```console
 # extend the default keep period
