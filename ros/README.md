@@ -39,7 +39,7 @@ WARNING:
 -	[`foxy-ros-core`, `foxy-ros-core-focal`](https://github.com/osrf/docker_images/blob/3f4fbca923d80f834f3a89b5960bad5582652519/ros/foxy/ubuntu/focal/ros-core/Dockerfile)
 -	[`foxy-ros-base`, `foxy-ros-base-focal`, `foxy`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/foxy/ubuntu/focal/ros-base/Dockerfile)
 -	[`foxy-ros1-bridge`, `foxy-ros1-bridge-focal`](https://github.com/osrf/docker_images/blob/905056988fc38dea40dcb73518f813b71f4f4fd6/ros/foxy/ubuntu/focal/ros1-bridge/Dockerfile)
--	[`galactic-ros-core`, `galactic-ros-core-focal`](https://github.com/osrf/docker_images/blob/3f4fbca923d80f834f3a89b5960bad5582652519/ros/galactic/ubuntu/focal/ros-core/Dockerfile)
+-	[`galactic-ros-core`, `galactic-ros-core-focal`](https://github.com/osrf/docker_images/blob/5985ea8e2e88e25a839f0f1629fe7d32f28a39d8/ros/galactic/ubuntu/focal/ros-core/Dockerfile)
 -	[`galactic-ros-base`, `galactic-ros-base-focal`, `galactic`](https://github.com/osrf/docker_images/blob/6511d8fc0754616550b7f5ea31a40084c2462938/ros/galactic/ubuntu/focal/ros-base/Dockerfile)
 -	[`galactic-ros1-bridge`, `galactic-ros1-bridge-focal`](https://github.com/osrf/docker_images/blob/6e373ee0469ae61723bb5ed863a38af76e179c81/ros/galactic/ubuntu/focal/ros1-bridge/Dockerfile)
 -	[`humble-ros-core`, `humble-ros-core-jammy`](https://github.com/osrf/docker_images/blob/3f4fbca923d80f834f3a89b5960bad5582652519/ros/humble/ubuntu/jammy/ros-core/Dockerfile)
