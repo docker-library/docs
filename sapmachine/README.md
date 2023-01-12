@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`11`, `11.0.17`](https://github.com/SAP/SapMachine-infrastructure/blob/f4f56d1abee377e191352ed29fcafc6dd728316f/dockerfiles/official/11/Dockerfile)
--	[`17`, `17.0.5`, `lts`](https://github.com/SAP/SapMachine-infrastructure/blob/1589efab2b72b9c79199f6cc13b556b59f3f9aef/dockerfiles/official/17/Dockerfile)
--	[`19`, `19.0.1`, `latest`](https://github.com/SAP/SapMachine-infrastructure/blob/fe7701419658f9f20ec2215de6141eae53c3e5bf/dockerfiles/official/19/Dockerfile)
+-	[`11`, `11.0.17`](https://github.com/SAP/SapMachine-infrastructure/blob/936dab0baa76e5db609e4c0dffc632dc4f42eca8/dockerfiles/official/11/Dockerfile)
+-	[`17`, `17.0.5`, `lts`](https://github.com/SAP/SapMachine-infrastructure/blob/fb4f1fe1d5cb453891a95bfdec43c0196a09e324/dockerfiles/official/17/Dockerfile)
+-	[`19`, `19.0.1`, `latest`](https://github.com/SAP/SapMachine-infrastructure/blob/e2320c79758f23b60d17726185c9ede2a5622f54/dockerfiles/official/19/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -34,7 +34,7 @@ WARNING:
 	[GitHub](https://github.com/SAP/SapMachine/issues) For more information see the [SapMachine Wiki](https://github.com/SAP/SapMachine/wiki).
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/sapmachine/)
+	[`amd64`](https://hub.docker.com/r/amd64/sapmachine/), [`arm64v8`](https://hub.docker.com/r/arm64v8/sapmachine/), [`ppc64le`](https://hub.docker.com/r/ppc64le/sapmachine/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/sapmachine/` directory](https://github.com/docker-library/repo-info/blob/master/repos/sapmachine) ([history](https://github.com/docker-library/repo-info/commits/master/repos/sapmachine))  
