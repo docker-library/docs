@@ -20,13 +20,13 @@ WARNING:
 	[ArangoDB](https://github.com/arangodb/arangodb-docker)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.4`, `3.4.10`](https://github.com/arangodb/arangodb-docker/blob/63dc866beb0546ba3b172e76f64759abfe1a0a28/alpine/3.4.10/Dockerfile)
--	[`3.5`, `3.5.5`](https://github.com/arangodb/arangodb-docker/blob/8690d4d6c3f3f0aaea34af72455a2c78a5669149/alpine/3.5.5.1/Dockerfile)
--	[`3.6`, `3.6.3`, `latest`](https://github.com/arangodb/arangodb-docker/blob/63dc866beb0546ba3b172e76f64759abfe1a0a28/alpine/3.6.3.1/Dockerfile)
+-	[`3.8`, `3.8.8`](https://github.com/arangodb/arangodb-docker/blob/6e5a02cd7f5106076a1faf24360218c3e2ca3003/alpine/3.8.8/Dockerfile)
+-	[`3.9`, `3.9.7`](https://github.com/arangodb/arangodb-docker/blob/7e84f26b857856a5350c5c636f6bedc43ee95ab0/alpine/3.9.7/Dockerfile)
+-	[`3.10`, `3.10.2`, `latest`](https://github.com/arangodb/arangodb-docker/blob/71fda53ef666d8c85fbd70748a26e7c86bcf3fbf/alpine/3.10.2/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -34,14 +34,14 @@ WARNING:
 	[https://github.com/arangodb/arangodb-docker/issues](https://github.com/arangodb/arangodb-docker/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/arangodb/)
+	[`amd64`](https://hub.docker.com/r/amd64/arangodb/), [`arm64v8`](https://hub.docker.com/r/arm64v8/arangodb/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/arangodb/` directory](https://github.com/docker-library/repo-info/blob/master/repos/arangodb) ([history](https://github.com/docker-library/repo-info/commits/master/repos/arangodb))  
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/arangodb`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Farangodb)  
+	[official-images repo's `library/arangodb` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Farangodb)  
 	[official-images repo's `library/arangodb` file](https://github.com/docker-library/official-images/blob/master/library/arangodb) ([history](https://github.com/docker-library/official-images/commits/master/library/arangodb))
 
 -	**Source of this description**:  
@@ -49,9 +49,9 @@ WARNING:
 
 # What is ArangoDB?
 
-ArangoDB is a multi-model, open-source database with flexible data models for documents, graphs, and key-values. Build high performance applications using a convenient SQL-like query language or JavaScript extensions. Use ACID transactions if you require them. Scale horizontally with a few mouse clicks.
+ArangoDB is a multi-model, open-source database with flexible data models for documents, graphs, and key-values. Build high performance applications using a convenient SQL-like query language or JavaScript extensions. Use ACID transactions if you require them. Scale horizontally and vertically with a few mouse clicks.
 
-ArangoDB runs everywhere: On-prem, in the cloud and also on [ArangoDBs Cloud Service Oasis](https://cloud.arangodb.com/home).
+ArangoDB runs everywhere: On-prem, in the cloud and also on [ArangoDB's Cloud Service Oasis](https://cloud.arangodb.com/home).
 
 The supported data models can be mixed in queries and allow ArangoDB to be the aggregation point for your data.
 
@@ -175,13 +175,34 @@ unix> docker exec -it jolly_joker arangosh
 
 See more information about [Configuration](https://www.arangodb.com/docs/stable/administration-configuration.html)
 
+### Limiting resource utilization
+
+`arangod` checks the following environment variables, which can be used to restrict how much memory and how many CPU cores it should use:
+
+-	`ARANGODB_OVERRIDE_DETECTED_TOTAL_MEMORY` *(introduced in v3.6.3)*
+
+	This variable can be used to override the automatic detection of the total amount of RAM present on the system. One can specify a decimal number (in bytes). Furthermore, if `G` or `g` is appended, the value is multiplied by `2^30`. If `M` or `m` is appended, the value is multiplied by `2^20`. If `K` or `k` is appended, the value is multiplied by `2^10`. That is, `64G` means 64 gigabytes.
+
+	The total amount of RAM detected is logged as an INFO message at server start. If the variable is set, the overridden value is shown. Various default sizes are calculated based on this value (e.g. RocksDB buffer cache size).
+
+	Setting this option can in particular be useful in two cases:
+
+	1.	If `arangod` is running in a container and its cgroup has a RAM limitation, then one should specify this limitation in this environment variable, since it is currently not automatically detected.
+	2.	If `arangod` is running alongside other services on the same machine and thus sharing the RAM with them, one should limit the amount of memory using this environment variable.
+
+-	`ARANGODB_OVERRIDE_DETECTED_NUMBER_OF_CORES` *(introduced in v3.7.1)*
+
+	This variable can be used to override the automatic detection of the number of CPU cores present on the system.
+
+	The number of CPU cores detected is logged as an INFO message at server start. If the variable is set, the overridden value is shown. Various default values for threading are calculated based on this value.
+
+	Setting this option is useful if `arangod` is running in a container or alongside other services on the same machine and shall not use all available CPUs.
+
 ## Persistent Data
 
-ArangoDB supports two different storage engines as of ArangoDB 3.2. You can choose them while instantiating the container with the environment variable `ARANGO_STORAGE_ENGINE`. With `mmfiles` you choose the classic storage engine, `rocksdb` will choose the newly introduced storage engine based on [RocksDB](http://rocksdb.org/). The default choice is `mmfiles`.
+ArangoDB supports two different storage engines from version 3.2 to 3.6. You can choose them while instantiating the container with the environment variable `ARANGO_STORAGE_ENGINE`. With `mmfiles` you choose the classic storage engine (not available in 3.7 and later), `rocksdb` will choose the storage engine based on [RocksDB](http://rocksdb.org/). The default choice is `rocksdb` from version 3.4 on.
 
-ArangoDB use the volume `/var/lib/arangodb3` as database directory to store the collection data and the volume `/var/lib/arangodb3-apps` as apps directory to store any extensions. These directories are marked as docker volumes.
-
-Please note that the old version 2.x used `/var/lib/arangodb` and `/var/lib/arangodb-apps`. We will refer to the 3.x variant in this document. In case you are starting a 2.x image just replace it with the 2.x variant.
+ArangoDB uses the volume `/var/lib/arangodb3` as database directory to store the collection data and the volume `/var/lib/arangodb3-apps` as apps directory to store any extensions. These directories are marked as docker volumes.
 
 See `docker inspect --format "{{ .Config.Volumes}}" arangodb` for all volumes.
 
@@ -232,7 +253,7 @@ When deriving the image, you can control the instantiation via putting files int
 
 # License
 
-[Arangodb itself is licensed under the Apache License](https://github.com/arangodb/arangodb/blob/devel/LICENSE), but it contains [software of third parties under their respective licenses](https://github.com/arangodb/arangodb/blob/devel/LICENSES-OTHER-COMPONENTS.md).
+[ArangoDB itself is licensed under the Apache License](https://github.com/arangodb/arangodb/blob/devel/LICENSE), but it contains [software of third parties under their respective licenses](https://github.com/arangodb/arangodb/blob/devel/LICENSES-OTHER-COMPONENTS.md).
 
 As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 

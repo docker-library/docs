@@ -20,11 +20,11 @@ WARNING:
 	[Intel Corporation](https://github.com/clearlinux/docker-brew-clearlinux)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `base`](https://github.com/clearlinux/docker-brew-clearlinux/blob/e97035148569e007f5bcd5134237cb5e552c2678/Dockerfile)
+-	[`latest`, `base`](https://github.com/clearlinux/docker-brew-clearlinux/blob/cf0b677798f83a0d241f6c3c32e8a6e96e008049/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -39,7 +39,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/clearlinux`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fclearlinux)  
+	[official-images repo's `library/clearlinux` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fclearlinux)  
 	[official-images repo's `library/clearlinux` file](https://github.com/docker-library/official-images/blob/master/library/clearlinux) ([history](https://github.com/docker-library/official-images/commits/master/library/clearlinux))
 
 -	**Source of this description**:  

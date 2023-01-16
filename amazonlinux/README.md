@@ -20,14 +20,16 @@ WARNING:
 	[the Amazon Linux Team](https://github.com/aws/amazon-linux-docker-images)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.0.20200406.0`, `2`, `latest`](https://github.com/amazonlinux/container-images/blob/92466cbdf8600e425701459dba31a31aa53415e7/Dockerfile)
--	[`2.0.20200406.0-with-sources`, `2-with-sources`, `with-sources`](https://github.com/amazonlinux/container-images/blob/d686ee33d867fddd67595fb5d0df581b23ebfdfe/Dockerfile)
--	[`2018.03.0.20200318.1`, `2018.03`, `1`](https://github.com/amazonlinux/container-images/blob/3209338a28f4fa5f0a189e517c0809d095c777d8/Dockerfile)
--	[`2018.03.0.20200318.1-with-sources`, `2018.03-with-sources`, `1-with-sources`](https://github.com/amazonlinux/container-images/blob/4f52cd2aa92456ef8f867fb6fa8ac63aab2d462f/Dockerfile)
+-	[`2.0.20221210.0`, `2`, `latest`](https://github.com/amazonlinux/container-images/blob/9025e0ce9166d150ef8c28dd0d88465a250cf79d/Dockerfile)
+-	[`2.0.20221210.0-with-sources`, `2-with-sources`, `with-sources`](https://github.com/amazonlinux/container-images/blob/2040b2eb2433e45f0f20ab4d8475bf122580a6f5/Dockerfile)
+-	[`2018.03.0.20221209.1`, `2018.03`, `1`](https://github.com/amazonlinux/container-images/blob/a55f337ad62fc1e1a0c06843ecd0b8f5b10347bb/Dockerfile)
+-	[`2018.03.0.20221209.1-with-sources`, `2018.03-with-sources`, `1-with-sources`](https://github.com/amazonlinux/container-images/blob/6bb52a2cc2d7899405098cff4373bfa397b6c4a8/Dockerfile)
+-	[`2022.0.20221207.4`, `2022`, `devel`](https://github.com/amazonlinux/container-images/blob/423528b1be8f280af50b6fe8c2cfa296b05e995f/Dockerfile)
+-	[`2022.0.20221207.4-with-sources`, `2022-with-sources`, `devel-with-sources`](https://github.com/amazonlinux/container-images/blob/8b3c53739a3853a701caa4ff99732c3b8325c5b4/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -42,7 +44,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/amazonlinux`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Famazonlinux)  
+	[official-images repo's `library/amazonlinux` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Famazonlinux)  
 	[official-images repo's `library/amazonlinux` file](https://github.com/docker-library/official-images/blob/master/library/amazonlinux) ([history](https://github.com/docker-library/official-images/commits/master/library/amazonlinux))
 
 -	**Source of this description**:  
@@ -55,6 +57,8 @@ Amazon Linux is provided by Amazon Web Services (AWS). It is designed to provide
 The Amazon Linux container image contains a minimal set of packages. To install additional packages, [use `yum`](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/managing-software.html).
 
 AWS provides two versions of Amazon Linux: [Amazon Linux 2](https://aws.amazon.com/amazon-linux-2/) and [Amazon Linux AMI](https://aws.amazon.com/amazon-linux-ami/).
+
+**Please note, that Amazon Linux 2022 is currently in the Preview mode and is not recommended for production workloads. Review the Amazon Linux 2022 [documentation](https://docs.aws.amazon.com/linux/al2022/ug/what-is-amazon-linux.html) to learn more.**
 
 For information on security updates for Amazon Linux, please refer to [Amazon Linux 2 Security Advisories](https://alas.aws.amazon.com/alas2.html) and [Amazon Linux AMI Security Advisories](https://alas.aws.amazon.com/). Note that Docker Hub's vulnerability scanning for Amazon Linux is currently based on RPM versions, which does not reflect the state of backported patches for vulnerabilities.
 

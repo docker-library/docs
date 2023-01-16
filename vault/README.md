@@ -20,12 +20,14 @@ WARNING:
 	[HashiCorp](https://github.com/hashicorp/docker-vault)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.4.1`, `latest`](https://github.com/hashicorp/docker-vault/blob/8e01b9c30e7a45772d44d1b52a6562c86765bf62/0.X/Dockerfile)
--	[`1.3.5`](https://github.com/hashicorp/docker-vault/blob/1abb18d8e24864f084fd6ae3123f895f94bc5c97/0.X/Dockerfile)
+-	[`1.12.2`, `latest`](https://github.com/hashicorp/docker-vault/blob/2cba27a16dc7bea0857561ab0424de1bb6e0ffd3/0.X/Dockerfile)
+-	[`1.11.6`](https://github.com/hashicorp/docker-vault/blob/a7bb73b2f1c8ed40ca8baf5ba2a4c2191e70d506/0.X/Dockerfile)
+-	[`1.10.9`](https://github.com/hashicorp/docker-vault/blob/cfafe61e0b2679ca8aa24d8ea457767acccb3e1d/0.X/Dockerfile)
+-	[`1.9.10`](https://github.com/hashicorp/docker-vault/blob/62322ee96a690b07cdc669eb9876fc05e073ff2c/0.X/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -40,7 +42,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/vault`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fvault)  
+	[official-images repo's `library/vault` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fvault)  
 	[official-images repo's `library/vault` file](https://github.com/docker-library/official-images/blob/master/library/vault) ([history](https://github.com/docker-library/official-images/commits/master/library/vault))
 
 -	**Source of this description**:  
@@ -53,7 +55,7 @@ Vault is a tool for securely accessing secrets. A secret is anything that you wa
 -	[Vault documentation](https://www.vaultproject.io/)
 -	[Vault on GitHub](https://github.com/hashicorp/vault)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/fab4b16599d1424cee888d47af850e0ba07e6a37/vault/logo.svg?sanitize=true)
+![logo](https://raw.githubusercontent.com/docker-library/docs/90d4d43bdfccd5cb21e5fd964d32b0074af0f357/vault/logo.svg?sanitize=true)
 
 # Using the Container
 
@@ -93,17 +95,25 @@ As an example:
 $ docker run --cap-add=IPC_LOCK -e 'VAULT_DEV_ROOT_TOKEN_ID=myroot' -e 'VAULT_DEV_LISTEN_ADDRESS=0.0.0.0:1234' vault
 ```
 
-## Running Vault in Server Mode
+## Running Vault in Server Mode for Development
 
 ```console
-$ docker run --cap-add=IPC_LOCK -e 'VAULT_LOCAL_CONFIG={"backend": {"file": {"path": "/vault/file"}}, "default_lease_ttl": "168h", "max_lease_ttl": "720h"}' vault server
+$ docker run --cap-add=IPC_LOCK -e 'VAULT_LOCAL_CONFIG={"storage": {"file": {"path": "/vault/file"}}, "listener": [{"tcp": { "address": "0.0.0.0:8200", "tls_disable": true}}], "default_lease_ttl": "168h", "max_lease_ttl": "720h", "ui": true}' -p 8200:8200 vault server
 ```
 
-This runs a Vault server using the `file` storage backend at path `/vault/file`, with a default secret lease duration of one week and a maximum of 30 days.
+This runs a Vault server with TLS disabled, the `file` storage backend at path `/vault/file` and a default secret lease duration of one week and a maximum of 30 days. Disabling TLS and using the `file` storage backend are not recommended for production use.
 
 Note the `--cap-add=IPC_LOCK`: this is required in order for Vault to lock memory, which prevents it from being swapped to disk. This is highly recommended. In a non-development environment, if you do not wish to use this functionality, you must add `"disable_mlock: true"` to the configuration information.
 
 At startup, the server will read configuration HCL and JSON files from `/vault/config` (any information passed into `VAULT_LOCAL_CONFIG` is written into `local.json` in this directory and read as part of reading the directory for configuration files). Please see Vault's [configuration documentation](https://www.vaultproject.io/docs/config/index.html) for a full list of options.
+
+We suggest volume mounting a directory into the Docker image in order to give both the configuration and TLS certificates to Vault. You can accomplish this with:
+
+```console
+$ docker run --volume config/:/vault/config.d ...
+```
+
+For more scalability and reliability, we suggest running containerized Vault in an orchestration environment like k8s or OpenShift.
 
 Since 0.6.3 this container also supports the `VAULT_REDIRECT_INTERFACE` and `VAULT_CLUSTER_INTERFACE` environment variables. If set, the IP addresses used for the redirect and cluster addresses in Vault's configuration will be the address of the named interface inside the container (e.g. `eth0`).
 

@@ -20,12 +20,15 @@ WARNING:
 	[Rocket.Chat](https://github.com/RocketChat/Docker.Official.Image)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.2.2`, `3.2`, `3`, `latest`](https://github.com/RocketChat/Docker.Official.Image/blob/9cc942405ca293ef01474e2c13a40894ee313851/3/Dockerfile)
--	[`2.4.12`, `2.4`, `2`](https://github.com/RocketChat/Docker.Official.Image/blob/9cc942405ca293ef01474e2c13a40894ee313851/2/Dockerfile)
+-	[`5.4.0`, `5.4`, `5`, `latest`](https://github.com/RocketChat/Docker.Official.Image/blob/dbb5e8eb972d7a32f28e7bdc0b03d0d3c6f58d60/5.4/Dockerfile)
+-	[`5.3.5`, `5.3`](https://github.com/RocketChat/Docker.Official.Image/blob/dbb5e8eb972d7a32f28e7bdc0b03d0d3c6f58d60/5.3/Dockerfile)
+-	[`5.2.1`, `5.2`](https://github.com/RocketChat/Docker.Official.Image/blob/dbb5e8eb972d7a32f28e7bdc0b03d0d3c6f58d60/5.2/Dockerfile)
+-	[`5.1.5`, `5.1`](https://github.com/RocketChat/Docker.Official.Image/blob/dbb5e8eb972d7a32f28e7bdc0b03d0d3c6f58d60/5.1/Dockerfile)
+-	[`4.8.7`, `4.8`, `4`](https://github.com/RocketChat/Docker.Official.Image/blob/dbb5e8eb972d7a32f28e7bdc0b03d0d3c6f58d60/4.8/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -40,7 +43,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/rocket.chat`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Frocket.chat)  
+	[official-images repo's `library/rocket.chat` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Frocket.chat)  
 	[official-images repo's `library/rocket.chat` file](https://github.com/docker-library/official-images/blob/master/library/rocket.chat) ([history](https://github.com/docker-library/official-images/commits/master/library/rocket.chat))
 
 -	**Source of this description**:  

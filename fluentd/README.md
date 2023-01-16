@@ -20,12 +20,12 @@ WARNING:
 	[Fluentd](https://github.com/fluent/fluentd-docker-image)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`v1.9.1-1.0`, `v1.9-1`, `latest`](https://github.com/fluent/fluentd-docker-image/blob/b9cb2826b85900f960e256b2426a033e7cacfd6c/v1.9/alpine/Dockerfile)
--	[`v1.9.1-debian-1.0`, `v1.9-debian-1`](https://github.com/fluent/fluentd-docker-image/blob/b9cb2826b85900f960e256b2426a033e7cacfd6c/v1.9/debian/Dockerfile)
+-	[`v1.14.0-1.0`, `v1.14-1`, `latest`](https://github.com/fluent/fluentd-docker-image/blob/a9e4cee765c7aaf7876d6fe3282aa565dbcdc2a4/v1.14/alpine/Dockerfile)
+-	[`v1.14.0-debian-1.0`, `v1.14-debian-1`](https://github.com/fluent/fluentd-docker-image/blob/a9e4cee765c7aaf7876d6fe3282aa565dbcdc2a4/v1.14/debian/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -40,7 +40,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/fluentd`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Ffluentd)  
+	[official-images repo's `library/fluentd` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Ffluentd)  
 	[official-images repo's `library/fluentd` file](https://github.com/docker-library/official-images/blob/master/library/fluentd) ([history](https://github.com/docker-library/official-images/commits/master/library/fluentd))
 
 -	**Source of this description**:  

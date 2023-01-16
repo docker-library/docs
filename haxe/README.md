@@ -20,7 +20,7 @@ WARNING:
 	[the Haxe Foundation](https://github.com/HaxeFoundation/docker-library-haxe)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
@@ -28,80 +28,89 @@ WARNING:
 
 ## Simple Tags
 
--	[`4.0.5-buster`, `4.0-buster`](https://github.com/HaxeFoundation/docker-library-haxe/blob/38b1ceb14a5692ae2c655c056baaff79d963da33/4.0/buster/Dockerfile)
--	[`4.0.5-stretch`, `4.0-stretch`](https://github.com/HaxeFoundation/docker-library-haxe/blob/38b1ceb14a5692ae2c655c056baaff79d963da33/4.0/stretch/Dockerfile)
--	[`4.0.5-jessie`, `4.0-jessie`](https://github.com/HaxeFoundation/docker-library-haxe/blob/38b1ceb14a5692ae2c655c056baaff79d963da33/4.0/jessie/Dockerfile)
--	[`4.0.5-windowsservercore-1809`, `4.0-windowsservercore-1809`](https://github.com/HaxeFoundation/docker-library-haxe/blob/38b1ceb14a5692ae2c655c056baaff79d963da33/4.0/windowsservercore-1809/Dockerfile)
--	[`4.0.5-windowsservercore-ltsc2016`, `4.0-windowsservercore-ltsc2016`](https://github.com/HaxeFoundation/docker-library-haxe/blob/38b1ceb14a5692ae2c655c056baaff79d963da33/4.0/windowsservercore-ltsc2016/Dockerfile)
--	[`4.0.5-alpine3.11`, `4.0-alpine3.11`, `4.0.5-alpine`, `4.0-alpine`](https://github.com/HaxeFoundation/docker-library-haxe/blob/c06030895887da79e312f97bb434ca0f0e0f7f22/4.0/alpine3.11/Dockerfile)
--	[`4.0.5-alpine3.10`, `4.0-alpine3.10`](https://github.com/HaxeFoundation/docker-library-haxe/blob/38b1ceb14a5692ae2c655c056baaff79d963da33/4.0/alpine3.10/Dockerfile)
--	[`4.0.5-alpine3.9`, `4.0-alpine3.9`](https://github.com/HaxeFoundation/docker-library-haxe/blob/38b1ceb14a5692ae2c655c056baaff79d963da33/4.0/alpine3.9/Dockerfile)
--	[`4.0.5-alpine3.8`, `4.0-alpine3.8`](https://github.com/HaxeFoundation/docker-library-haxe/blob/38b1ceb14a5692ae2c655c056baaff79d963da33/4.0/alpine3.8/Dockerfile)
--	[`3.4.7-buster`, `3.4-buster`](https://github.com/HaxeFoundation/docker-library-haxe/blob/b62c53f203ae20f2b3dcc1af2881ccab602a4fe1/3.4/buster/Dockerfile)
--	[`3.4.7-stretch`, `3.4-stretch`](https://github.com/HaxeFoundation/docker-library-haxe/blob/b62c53f203ae20f2b3dcc1af2881ccab602a4fe1/3.4/stretch/Dockerfile)
--	[`3.4.7-jessie`, `3.4-jessie`](https://github.com/HaxeFoundation/docker-library-haxe/blob/b62c53f203ae20f2b3dcc1af2881ccab602a4fe1/3.4/jessie/Dockerfile)
--	[`3.4.7-windowsservercore-1809`, `3.4-windowsservercore-1809`](https://github.com/HaxeFoundation/docker-library-haxe/blob/7df74d220cce33998dde7623f8c9176d7fa938f7/3.4/windowsservercore-1809/Dockerfile)
--	[`3.4.7-windowsservercore-ltsc2016`, `3.4-windowsservercore-ltsc2016`](https://github.com/HaxeFoundation/docker-library-haxe/blob/7df74d220cce33998dde7623f8c9176d7fa938f7/3.4/windowsservercore-ltsc2016/Dockerfile)
--	[`3.4.7-alpine3.11`, `3.4-alpine3.11`, `3.4.7-alpine`, `3.4-alpine`](https://github.com/HaxeFoundation/docker-library-haxe/blob/c06030895887da79e312f97bb434ca0f0e0f7f22/3.4/alpine3.11/Dockerfile)
--	[`3.4.7-alpine3.10`, `3.4-alpine3.10`](https://github.com/HaxeFoundation/docker-library-haxe/blob/b62c53f203ae20f2b3dcc1af2881ccab602a4fe1/3.4/alpine3.10/Dockerfile)
--	[`3.4.7-alpine3.9`, `3.4-alpine3.9`](https://github.com/HaxeFoundation/docker-library-haxe/blob/b62c53f203ae20f2b3dcc1af2881ccab602a4fe1/3.4/alpine3.9/Dockerfile)
--	[`3.4.7-alpine3.8`, `3.4-alpine3.8`](https://github.com/HaxeFoundation/docker-library-haxe/blob/b62c53f203ae20f2b3dcc1af2881ccab602a4fe1/3.4/alpine3.8/Dockerfile)
--	[`3.3.0-rc.1-buster`, `3.3.0-buster`, `3.3-buster`](https://github.com/HaxeFoundation/docker-library-haxe/blob/b62c53f203ae20f2b3dcc1af2881ccab602a4fe1/3.3/buster/Dockerfile)
--	[`3.3.0-rc.1-stretch`, `3.3.0-stretch`, `3.3-stretch`](https://github.com/HaxeFoundation/docker-library-haxe/blob/b62c53f203ae20f2b3dcc1af2881ccab602a4fe1/3.3/stretch/Dockerfile)
--	[`3.3.0-rc.1-jessie`, `3.3.0-jessie`, `3.3-jessie`](https://github.com/HaxeFoundation/docker-library-haxe/blob/b62c53f203ae20f2b3dcc1af2881ccab602a4fe1/3.3/jessie/Dockerfile)
--	[`3.3.0-rc.1-windowsservercore-1809`, `3.3.0-windowsservercore-1809`, `3.3-windowsservercore-1809`](https://github.com/HaxeFoundation/docker-library-haxe/blob/7df74d220cce33998dde7623f8c9176d7fa938f7/3.3/windowsservercore-1809/Dockerfile)
--	[`3.3.0-rc.1-windowsservercore-ltsc2016`, `3.3.0-windowsservercore-ltsc2016`, `3.3-windowsservercore-ltsc2016`](https://github.com/HaxeFoundation/docker-library-haxe/blob/7df74d220cce33998dde7623f8c9176d7fa938f7/3.3/windowsservercore-ltsc2016/Dockerfile)
--	[`3.3.0-rc.1-alpine3.11`, `3.3.0-rc.1-alpine`, `3.3.0-alpine3.11`, `3.3-alpine3.11`, `3.3.0-alpine`, `3.3-alpine`](https://github.com/HaxeFoundation/docker-library-haxe/blob/c06030895887da79e312f97bb434ca0f0e0f7f22/3.3/alpine3.11/Dockerfile)
--	[`3.3.0-rc.1-alpine3.10`, `3.3.0-alpine3.10`, `3.3-alpine3.10`](https://github.com/HaxeFoundation/docker-library-haxe/blob/b62c53f203ae20f2b3dcc1af2881ccab602a4fe1/3.3/alpine3.10/Dockerfile)
--	[`3.3.0-rc.1-alpine3.9`, `3.3.0-alpine3.9`, `3.3-alpine3.9`](https://github.com/HaxeFoundation/docker-library-haxe/blob/b62c53f203ae20f2b3dcc1af2881ccab602a4fe1/3.3/alpine3.9/Dockerfile)
--	[`3.3.0-rc.1-alpine3.8`, `3.3.0-alpine3.8`, `3.3-alpine3.8`](https://github.com/HaxeFoundation/docker-library-haxe/blob/b62c53f203ae20f2b3dcc1af2881ccab602a4fe1/3.3/alpine3.8/Dockerfile)
--	[`3.2.1-buster`, `3.2-buster`](https://github.com/HaxeFoundation/docker-library-haxe/blob/b62c53f203ae20f2b3dcc1af2881ccab602a4fe1/3.2/buster/Dockerfile)
--	[`3.2.1-stretch`, `3.2-stretch`](https://github.com/HaxeFoundation/docker-library-haxe/blob/b62c53f203ae20f2b3dcc1af2881ccab602a4fe1/3.2/stretch/Dockerfile)
--	[`3.2.1-jessie`, `3.2-jessie`](https://github.com/HaxeFoundation/docker-library-haxe/blob/b62c53f203ae20f2b3dcc1af2881ccab602a4fe1/3.2/jessie/Dockerfile)
--	[`3.2.1-windowsservercore-1809`, `3.2-windowsservercore-1809`](https://github.com/HaxeFoundation/docker-library-haxe/blob/7df74d220cce33998dde7623f8c9176d7fa938f7/3.2/windowsservercore-1809/Dockerfile)
--	[`3.2.1-windowsservercore-ltsc2016`, `3.2-windowsservercore-ltsc2016`](https://github.com/HaxeFoundation/docker-library-haxe/blob/7df74d220cce33998dde7623f8c9176d7fa938f7/3.2/windowsservercore-ltsc2016/Dockerfile)
--	[`3.2.1-alpine3.11`, `3.2-alpine3.11`, `3.2.1-alpine`, `3.2-alpine`](https://github.com/HaxeFoundation/docker-library-haxe/blob/c06030895887da79e312f97bb434ca0f0e0f7f22/3.2/alpine3.11/Dockerfile)
--	[`3.2.1-alpine3.10`, `3.2-alpine3.10`](https://github.com/HaxeFoundation/docker-library-haxe/blob/b62c53f203ae20f2b3dcc1af2881ccab602a4fe1/3.2/alpine3.10/Dockerfile)
--	[`3.2.1-alpine3.9`, `3.2-alpine3.9`](https://github.com/HaxeFoundation/docker-library-haxe/blob/b62c53f203ae20f2b3dcc1af2881ccab602a4fe1/3.2/alpine3.9/Dockerfile)
--	[`3.2.1-alpine3.8`, `3.2-alpine3.8`](https://github.com/HaxeFoundation/docker-library-haxe/blob/b62c53f203ae20f2b3dcc1af2881ccab602a4fe1/3.2/alpine3.8/Dockerfile)
--	[`3.1.3-stretch`, `3.1-stretch`](https://github.com/HaxeFoundation/docker-library-haxe/blob/b62c53f203ae20f2b3dcc1af2881ccab602a4fe1/3.1/stretch/Dockerfile)
--	[`3.1.3-jessie`, `3.1-jessie`](https://github.com/HaxeFoundation/docker-library-haxe/blob/b62c53f203ae20f2b3dcc1af2881ccab602a4fe1/3.1/jessie/Dockerfile)
--	[`3.1.3-windowsservercore-1809`, `3.1-windowsservercore-1809`](https://github.com/HaxeFoundation/docker-library-haxe/blob/7df74d220cce33998dde7623f8c9176d7fa938f7/3.1/windowsservercore-1809/Dockerfile)
--	[`3.1.3-windowsservercore-ltsc2016`, `3.1-windowsservercore-ltsc2016`](https://github.com/HaxeFoundation/docker-library-haxe/blob/7df74d220cce33998dde7623f8c9176d7fa938f7/3.1/windowsservercore-ltsc2016/Dockerfile)
+-	[`4.2.5-bullseye`, `4.2-bullseye`](https://github.com/HaxeFoundation/docker-library-haxe/blob/83789c10dc601064a234fd559206d1ec252228d7/4.2/bullseye/Dockerfile)
+-	[`4.2.5-buster`, `4.2-buster`](https://github.com/HaxeFoundation/docker-library-haxe/blob/83789c10dc601064a234fd559206d1ec252228d7/4.2/buster/Dockerfile)
+-	[`4.2.5-windowsservercore-ltsc2022`, `4.2-windowsservercore-ltsc2022`](https://github.com/HaxeFoundation/docker-library-haxe/blob/c0367972017a7b87845bf33477e29b1fe64ccc4a/4.2/windowsservercore-ltsc2022/Dockerfile)
+-	[`4.2.5-windowsservercore-1809`, `4.2-windowsservercore-1809`](https://github.com/HaxeFoundation/docker-library-haxe/blob/c0367972017a7b87845bf33477e29b1fe64ccc4a/4.2/windowsservercore-1809/Dockerfile)
+-	[`4.2.5-alpine3.17`, `4.2-alpine3.17`, `4.2.5-alpine`, `4.2-alpine`](https://github.com/HaxeFoundation/docker-library-haxe/blob/40bf9156af6f198cd7a57dbfd452e24dc1ceb94e/4.2/alpine3.17/Dockerfile)
+-	[`4.2.5-alpine3.16`, `4.2-alpine3.16`](https://github.com/HaxeFoundation/docker-library-haxe/blob/5f520ca3ba5942ab581369bab2cbda2b8c4ab992/4.2/alpine3.16/Dockerfile)
+-	[`4.2.5-alpine3.15`, `4.2-alpine3.15`](https://github.com/HaxeFoundation/docker-library-haxe/blob/83789c10dc601064a234fd559206d1ec252228d7/4.2/alpine3.15/Dockerfile)
+-	[`4.2.5-alpine3.14`, `4.2-alpine3.14`](https://github.com/HaxeFoundation/docker-library-haxe/blob/83789c10dc601064a234fd559206d1ec252228d7/4.2/alpine3.14/Dockerfile)
+-	[`4.1.5-bullseye`, `4.1-bullseye`](https://github.com/HaxeFoundation/docker-library-haxe/blob/0292fae1a29c23dee119205b3b75ad9e27f6cf32/4.1/bullseye/Dockerfile)
+-	[`4.1.5-buster`, `4.1-buster`](https://github.com/HaxeFoundation/docker-library-haxe/blob/adf0e23e460a657c77c44f2502e5fa8cf820d020/4.1/buster/Dockerfile)
+-	[`4.1.5-windowsservercore-ltsc2022`, `4.1-windowsservercore-ltsc2022`](https://github.com/HaxeFoundation/docker-library-haxe/blob/c0367972017a7b87845bf33477e29b1fe64ccc4a/4.1/windowsservercore-ltsc2022/Dockerfile)
+-	[`4.1.5-windowsservercore-1809`, `4.1-windowsservercore-1809`](https://github.com/HaxeFoundation/docker-library-haxe/blob/c0367972017a7b87845bf33477e29b1fe64ccc4a/4.1/windowsservercore-1809/Dockerfile)
+-	[`4.1.5-alpine3.17`, `4.1-alpine3.17`, `4.1.5-alpine`, `4.1-alpine`](https://github.com/HaxeFoundation/docker-library-haxe/blob/40bf9156af6f198cd7a57dbfd452e24dc1ceb94e/4.1/alpine3.17/Dockerfile)
+-	[`4.1.5-alpine3.16`, `4.1-alpine3.16`](https://github.com/HaxeFoundation/docker-library-haxe/blob/5f520ca3ba5942ab581369bab2cbda2b8c4ab992/4.1/alpine3.16/Dockerfile)
+-	[`4.1.5-alpine3.15`, `4.1-alpine3.15`](https://github.com/HaxeFoundation/docker-library-haxe/blob/b0098b4b730d0d9ff21dbf3d543464228d6b7e99/4.1/alpine3.15/Dockerfile)
+-	[`4.1.5-alpine3.14`, `4.1-alpine3.14`](https://github.com/HaxeFoundation/docker-library-haxe/blob/71afcb74d885cfbcf9bff439d7aba47a79b541b1/4.1/alpine3.14/Dockerfile)
+-	[`4.0.5-bullseye`, `4.0-bullseye`](https://github.com/HaxeFoundation/docker-library-haxe/blob/0292fae1a29c23dee119205b3b75ad9e27f6cf32/4.0/bullseye/Dockerfile)
+-	[`4.0.5-buster`, `4.0-buster`](https://github.com/HaxeFoundation/docker-library-haxe/blob/adf0e23e460a657c77c44f2502e5fa8cf820d020/4.0/buster/Dockerfile)
+-	[`4.0.5-windowsservercore-ltsc2022`, `4.0-windowsservercore-ltsc2022`](https://github.com/HaxeFoundation/docker-library-haxe/blob/c0367972017a7b87845bf33477e29b1fe64ccc4a/4.0/windowsservercore-ltsc2022/Dockerfile)
+-	[`4.0.5-windowsservercore-1809`, `4.0-windowsservercore-1809`](https://github.com/HaxeFoundation/docker-library-haxe/blob/c0367972017a7b87845bf33477e29b1fe64ccc4a/4.0/windowsservercore-1809/Dockerfile)
+-	[`4.0.5-alpine3.17`, `4.0-alpine3.17`, `4.0.5-alpine`, `4.0-alpine`](https://github.com/HaxeFoundation/docker-library-haxe/blob/40bf9156af6f198cd7a57dbfd452e24dc1ceb94e/4.0/alpine3.17/Dockerfile)
+-	[`4.0.5-alpine3.16`, `4.0-alpine3.16`](https://github.com/HaxeFoundation/docker-library-haxe/blob/5f520ca3ba5942ab581369bab2cbda2b8c4ab992/4.0/alpine3.16/Dockerfile)
+-	[`4.0.5-alpine3.15`, `4.0-alpine3.15`](https://github.com/HaxeFoundation/docker-library-haxe/blob/b0098b4b730d0d9ff21dbf3d543464228d6b7e99/4.0/alpine3.15/Dockerfile)
+-	[`4.0.5-alpine3.14`, `4.0-alpine3.14`](https://github.com/HaxeFoundation/docker-library-haxe/blob/71afcb74d885cfbcf9bff439d7aba47a79b541b1/4.0/alpine3.14/Dockerfile)
+-	[`3.4.7-buster`, `3.4-buster`](https://github.com/HaxeFoundation/docker-library-haxe/blob/1f586bf85c12ce5c9300f24079912b94c73bc3f7/3.4/buster/Dockerfile)
+-	[`3.4.7-windowsservercore-ltsc2022`, `3.4-windowsservercore-ltsc2022`](https://github.com/HaxeFoundation/docker-library-haxe/blob/c0367972017a7b87845bf33477e29b1fe64ccc4a/3.4/windowsservercore-ltsc2022/Dockerfile)
+-	[`3.4.7-windowsservercore-1809`, `3.4-windowsservercore-1809`](https://github.com/HaxeFoundation/docker-library-haxe/blob/c0367972017a7b87845bf33477e29b1fe64ccc4a/3.4/windowsservercore-1809/Dockerfile)
+-	[`3.3.0-rc.1-buster`, `3.3.0-buster`, `3.3-buster`](https://github.com/HaxeFoundation/docker-library-haxe/blob/1f586bf85c12ce5c9300f24079912b94c73bc3f7/3.3/buster/Dockerfile)
+-	[`3.3.0-rc.1-windowsservercore-ltsc2022`, `3.3.0-windowsservercore-ltsc2022`, `3.3-windowsservercore-ltsc2022`](https://github.com/HaxeFoundation/docker-library-haxe/blob/c0367972017a7b87845bf33477e29b1fe64ccc4a/3.3/windowsservercore-ltsc2022/Dockerfile)
+-	[`3.3.0-rc.1-windowsservercore-1809`, `3.3.0-windowsservercore-1809`, `3.3-windowsservercore-1809`](https://github.com/HaxeFoundation/docker-library-haxe/blob/c0367972017a7b87845bf33477e29b1fe64ccc4a/3.3/windowsservercore-1809/Dockerfile)
+-	[`3.2.1-buster`, `3.2-buster`](https://github.com/HaxeFoundation/docker-library-haxe/blob/1f586bf85c12ce5c9300f24079912b94c73bc3f7/3.2/buster/Dockerfile)
+-	[`3.2.1-windowsservercore-ltsc2022`, `3.2-windowsservercore-ltsc2022`](https://github.com/HaxeFoundation/docker-library-haxe/blob/c0367972017a7b87845bf33477e29b1fe64ccc4a/3.2/windowsservercore-ltsc2022/Dockerfile)
+-	[`3.2.1-windowsservercore-1809`, `3.2-windowsservercore-1809`](https://github.com/HaxeFoundation/docker-library-haxe/blob/c0367972017a7b87845bf33477e29b1fe64ccc4a/3.2/windowsservercore-1809/Dockerfile)
+-	[`3.1.3-windowsservercore-ltsc2022`, `3.1-windowsservercore-ltsc2022`](https://github.com/HaxeFoundation/docker-library-haxe/blob/c0367972017a7b87845bf33477e29b1fe64ccc4a/3.1/windowsservercore-ltsc2022/Dockerfile)
+-	[`3.1.3-windowsservercore-1809`, `3.1-windowsservercore-1809`](https://github.com/HaxeFoundation/docker-library-haxe/blob/c0367972017a7b87845bf33477e29b1fe64ccc4a/3.1/windowsservercore-1809/Dockerfile)
 
 ## Shared Tags
 
--	`4.0.5`, `4.0`, `latest`:
-	-	[`4.0.5-buster`](https://github.com/HaxeFoundation/docker-library-haxe/blob/38b1ceb14a5692ae2c655c056baaff79d963da33/4.0/buster/Dockerfile)
-	-	[`4.0.5-windowsservercore-1809`](https://github.com/HaxeFoundation/docker-library-haxe/blob/38b1ceb14a5692ae2c655c056baaff79d963da33/4.0/windowsservercore-1809/Dockerfile)
-	-	[`4.0.5-windowsservercore-ltsc2016`](https://github.com/HaxeFoundation/docker-library-haxe/blob/38b1ceb14a5692ae2c655c056baaff79d963da33/4.0/windowsservercore-ltsc2016/Dockerfile)
+-	`4.2.5`, `4.2`, `latest`:
+	-	[`4.2.5-bullseye`](https://github.com/HaxeFoundation/docker-library-haxe/blob/83789c10dc601064a234fd559206d1ec252228d7/4.2/bullseye/Dockerfile)
+	-	[`4.2.5-windowsservercore-ltsc2022`](https://github.com/HaxeFoundation/docker-library-haxe/blob/c0367972017a7b87845bf33477e29b1fe64ccc4a/4.2/windowsservercore-ltsc2022/Dockerfile)
+	-	[`4.2.5-windowsservercore-1809`](https://github.com/HaxeFoundation/docker-library-haxe/blob/c0367972017a7b87845bf33477e29b1fe64ccc4a/4.2/windowsservercore-1809/Dockerfile)
+-	`4.2.5-windowsservercore`, `4.2-windowsservercore`:
+	-	[`4.2.5-windowsservercore-ltsc2022`](https://github.com/HaxeFoundation/docker-library-haxe/blob/c0367972017a7b87845bf33477e29b1fe64ccc4a/4.2/windowsservercore-ltsc2022/Dockerfile)
+	-	[`4.2.5-windowsservercore-1809`](https://github.com/HaxeFoundation/docker-library-haxe/blob/c0367972017a7b87845bf33477e29b1fe64ccc4a/4.2/windowsservercore-1809/Dockerfile)
+-	`4.1.5`, `4.1`:
+	-	[`4.1.5-bullseye`](https://github.com/HaxeFoundation/docker-library-haxe/blob/0292fae1a29c23dee119205b3b75ad9e27f6cf32/4.1/bullseye/Dockerfile)
+	-	[`4.1.5-windowsservercore-ltsc2022`](https://github.com/HaxeFoundation/docker-library-haxe/blob/c0367972017a7b87845bf33477e29b1fe64ccc4a/4.1/windowsservercore-ltsc2022/Dockerfile)
+	-	[`4.1.5-windowsservercore-1809`](https://github.com/HaxeFoundation/docker-library-haxe/blob/c0367972017a7b87845bf33477e29b1fe64ccc4a/4.1/windowsservercore-1809/Dockerfile)
+-	`4.1.5-windowsservercore`, `4.1-windowsservercore`:
+	-	[`4.1.5-windowsservercore-ltsc2022`](https://github.com/HaxeFoundation/docker-library-haxe/blob/c0367972017a7b87845bf33477e29b1fe64ccc4a/4.1/windowsservercore-ltsc2022/Dockerfile)
+	-	[`4.1.5-windowsservercore-1809`](https://github.com/HaxeFoundation/docker-library-haxe/blob/c0367972017a7b87845bf33477e29b1fe64ccc4a/4.1/windowsservercore-1809/Dockerfile)
+-	`4.0.5`, `4.0`:
+	-	[`4.0.5-bullseye`](https://github.com/HaxeFoundation/docker-library-haxe/blob/0292fae1a29c23dee119205b3b75ad9e27f6cf32/4.0/bullseye/Dockerfile)
+	-	[`4.0.5-windowsservercore-ltsc2022`](https://github.com/HaxeFoundation/docker-library-haxe/blob/c0367972017a7b87845bf33477e29b1fe64ccc4a/4.0/windowsservercore-ltsc2022/Dockerfile)
+	-	[`4.0.5-windowsservercore-1809`](https://github.com/HaxeFoundation/docker-library-haxe/blob/c0367972017a7b87845bf33477e29b1fe64ccc4a/4.0/windowsservercore-1809/Dockerfile)
 -	`4.0.5-windowsservercore`, `4.0-windowsservercore`:
-	-	[`4.0.5-windowsservercore-1809`](https://github.com/HaxeFoundation/docker-library-haxe/blob/38b1ceb14a5692ae2c655c056baaff79d963da33/4.0/windowsservercore-1809/Dockerfile)
-	-	[`4.0.5-windowsservercore-ltsc2016`](https://github.com/HaxeFoundation/docker-library-haxe/blob/38b1ceb14a5692ae2c655c056baaff79d963da33/4.0/windowsservercore-ltsc2016/Dockerfile)
+	-	[`4.0.5-windowsservercore-ltsc2022`](https://github.com/HaxeFoundation/docker-library-haxe/blob/c0367972017a7b87845bf33477e29b1fe64ccc4a/4.0/windowsservercore-ltsc2022/Dockerfile)
+	-	[`4.0.5-windowsservercore-1809`](https://github.com/HaxeFoundation/docker-library-haxe/blob/c0367972017a7b87845bf33477e29b1fe64ccc4a/4.0/windowsservercore-1809/Dockerfile)
 -	`3.4.7`, `3.4`:
-	-	[`3.4.7-buster`](https://github.com/HaxeFoundation/docker-library-haxe/blob/b62c53f203ae20f2b3dcc1af2881ccab602a4fe1/3.4/buster/Dockerfile)
-	-	[`3.4.7-windowsservercore-1809`](https://github.com/HaxeFoundation/docker-library-haxe/blob/7df74d220cce33998dde7623f8c9176d7fa938f7/3.4/windowsservercore-1809/Dockerfile)
-	-	[`3.4.7-windowsservercore-ltsc2016`](https://github.com/HaxeFoundation/docker-library-haxe/blob/7df74d220cce33998dde7623f8c9176d7fa938f7/3.4/windowsservercore-ltsc2016/Dockerfile)
+	-	[`3.4.7-buster`](https://github.com/HaxeFoundation/docker-library-haxe/blob/1f586bf85c12ce5c9300f24079912b94c73bc3f7/3.4/buster/Dockerfile)
+	-	[`3.4.7-windowsservercore-ltsc2022`](https://github.com/HaxeFoundation/docker-library-haxe/blob/c0367972017a7b87845bf33477e29b1fe64ccc4a/3.4/windowsservercore-ltsc2022/Dockerfile)
+	-	[`3.4.7-windowsservercore-1809`](https://github.com/HaxeFoundation/docker-library-haxe/blob/c0367972017a7b87845bf33477e29b1fe64ccc4a/3.4/windowsservercore-1809/Dockerfile)
 -	`3.4.7-windowsservercore`, `3.4-windowsservercore`:
-	-	[`3.4.7-windowsservercore-1809`](https://github.com/HaxeFoundation/docker-library-haxe/blob/7df74d220cce33998dde7623f8c9176d7fa938f7/3.4/windowsservercore-1809/Dockerfile)
-	-	[`3.4.7-windowsservercore-ltsc2016`](https://github.com/HaxeFoundation/docker-library-haxe/blob/7df74d220cce33998dde7623f8c9176d7fa938f7/3.4/windowsservercore-ltsc2016/Dockerfile)
+	-	[`3.4.7-windowsservercore-ltsc2022`](https://github.com/HaxeFoundation/docker-library-haxe/blob/c0367972017a7b87845bf33477e29b1fe64ccc4a/3.4/windowsservercore-ltsc2022/Dockerfile)
+	-	[`3.4.7-windowsservercore-1809`](https://github.com/HaxeFoundation/docker-library-haxe/blob/c0367972017a7b87845bf33477e29b1fe64ccc4a/3.4/windowsservercore-1809/Dockerfile)
 -	`3.3.0-rc.1`, `3.3.0`, `3.3`:
-	-	[`3.3.0-rc.1-buster`](https://github.com/HaxeFoundation/docker-library-haxe/blob/b62c53f203ae20f2b3dcc1af2881ccab602a4fe1/3.3/buster/Dockerfile)
-	-	[`3.3.0-rc.1-windowsservercore-1809`](https://github.com/HaxeFoundation/docker-library-haxe/blob/7df74d220cce33998dde7623f8c9176d7fa938f7/3.3/windowsservercore-1809/Dockerfile)
-	-	[`3.3.0-rc.1-windowsservercore-ltsc2016`](https://github.com/HaxeFoundation/docker-library-haxe/blob/7df74d220cce33998dde7623f8c9176d7fa938f7/3.3/windowsservercore-ltsc2016/Dockerfile)
+	-	[`3.3.0-rc.1-buster`](https://github.com/HaxeFoundation/docker-library-haxe/blob/1f586bf85c12ce5c9300f24079912b94c73bc3f7/3.3/buster/Dockerfile)
+	-	[`3.3.0-rc.1-windowsservercore-ltsc2022`](https://github.com/HaxeFoundation/docker-library-haxe/blob/c0367972017a7b87845bf33477e29b1fe64ccc4a/3.3/windowsservercore-ltsc2022/Dockerfile)
+	-	[`3.3.0-rc.1-windowsservercore-1809`](https://github.com/HaxeFoundation/docker-library-haxe/blob/c0367972017a7b87845bf33477e29b1fe64ccc4a/3.3/windowsservercore-1809/Dockerfile)
 -	`3.3.0-rc.1-windowsservercore`, `3.3.0-windowsservercore`, `3.3-windowsservercore`:
-	-	[`3.3.0-rc.1-windowsservercore-1809`](https://github.com/HaxeFoundation/docker-library-haxe/blob/7df74d220cce33998dde7623f8c9176d7fa938f7/3.3/windowsservercore-1809/Dockerfile)
-	-	[`3.3.0-rc.1-windowsservercore-ltsc2016`](https://github.com/HaxeFoundation/docker-library-haxe/blob/7df74d220cce33998dde7623f8c9176d7fa938f7/3.3/windowsservercore-ltsc2016/Dockerfile)
+	-	[`3.3.0-rc.1-windowsservercore-ltsc2022`](https://github.com/HaxeFoundation/docker-library-haxe/blob/c0367972017a7b87845bf33477e29b1fe64ccc4a/3.3/windowsservercore-ltsc2022/Dockerfile)
+	-	[`3.3.0-rc.1-windowsservercore-1809`](https://github.com/HaxeFoundation/docker-library-haxe/blob/c0367972017a7b87845bf33477e29b1fe64ccc4a/3.3/windowsservercore-1809/Dockerfile)
 -	`3.2.1`, `3.2`:
-	-	[`3.2.1-buster`](https://github.com/HaxeFoundation/docker-library-haxe/blob/b62c53f203ae20f2b3dcc1af2881ccab602a4fe1/3.2/buster/Dockerfile)
-	-	[`3.2.1-windowsservercore-1809`](https://github.com/HaxeFoundation/docker-library-haxe/blob/7df74d220cce33998dde7623f8c9176d7fa938f7/3.2/windowsservercore-1809/Dockerfile)
-	-	[`3.2.1-windowsservercore-ltsc2016`](https://github.com/HaxeFoundation/docker-library-haxe/blob/7df74d220cce33998dde7623f8c9176d7fa938f7/3.2/windowsservercore-ltsc2016/Dockerfile)
+	-	[`3.2.1-buster`](https://github.com/HaxeFoundation/docker-library-haxe/blob/1f586bf85c12ce5c9300f24079912b94c73bc3f7/3.2/buster/Dockerfile)
+	-	[`3.2.1-windowsservercore-ltsc2022`](https://github.com/HaxeFoundation/docker-library-haxe/blob/c0367972017a7b87845bf33477e29b1fe64ccc4a/3.2/windowsservercore-ltsc2022/Dockerfile)
+	-	[`3.2.1-windowsservercore-1809`](https://github.com/HaxeFoundation/docker-library-haxe/blob/c0367972017a7b87845bf33477e29b1fe64ccc4a/3.2/windowsservercore-1809/Dockerfile)
 -	`3.2.1-windowsservercore`, `3.2-windowsservercore`:
-	-	[`3.2.1-windowsservercore-1809`](https://github.com/HaxeFoundation/docker-library-haxe/blob/7df74d220cce33998dde7623f8c9176d7fa938f7/3.2/windowsservercore-1809/Dockerfile)
-	-	[`3.2.1-windowsservercore-ltsc2016`](https://github.com/HaxeFoundation/docker-library-haxe/blob/7df74d220cce33998dde7623f8c9176d7fa938f7/3.2/windowsservercore-ltsc2016/Dockerfile)
+	-	[`3.2.1-windowsservercore-ltsc2022`](https://github.com/HaxeFoundation/docker-library-haxe/blob/c0367972017a7b87845bf33477e29b1fe64ccc4a/3.2/windowsservercore-ltsc2022/Dockerfile)
+	-	[`3.2.1-windowsservercore-1809`](https://github.com/HaxeFoundation/docker-library-haxe/blob/c0367972017a7b87845bf33477e29b1fe64ccc4a/3.2/windowsservercore-1809/Dockerfile)
 -	`3.1.3-windowsservercore`, `3.1-windowsservercore`, `3.1.3`, `3.1`:
-	-	[`3.1.3-windowsservercore-1809`](https://github.com/HaxeFoundation/docker-library-haxe/blob/7df74d220cce33998dde7623f8c9176d7fa938f7/3.1/windowsservercore-1809/Dockerfile)
-	-	[`3.1.3-windowsservercore-ltsc2016`](https://github.com/HaxeFoundation/docker-library-haxe/blob/7df74d220cce33998dde7623f8c9176d7fa938f7/3.1/windowsservercore-ltsc2016/Dockerfile)
+	-	[`3.1.3-windowsservercore-ltsc2022`](https://github.com/HaxeFoundation/docker-library-haxe/blob/c0367972017a7b87845bf33477e29b1fe64ccc4a/3.1/windowsservercore-ltsc2022/Dockerfile)
+	-	[`3.1.3-windowsservercore-1809`](https://github.com/HaxeFoundation/docker-library-haxe/blob/c0367972017a7b87845bf33477e29b1fe64ccc4a/3.1/windowsservercore-1809/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -116,7 +125,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/haxe`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fhaxe)  
+	[official-images repo's `library/haxe` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fhaxe)  
 	[official-images repo's `library/haxe` file](https://github.com/docker-library/official-images/blob/master/library/haxe) ([history](https://github.com/docker-library/official-images/commits/master/library/haxe))
 
 -	**Source of this description**:  
@@ -194,7 +203,7 @@ The `haxe` images come in many flavors, each designed for a specific use case.
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like buster, jessie, or stretch in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+Some of these tags may have names like bullseye or buster in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 ## `haxe:<version>-windowsservercore`
 
@@ -207,9 +216,9 @@ For information about how to get Docker running on Windows, please see the relev
 
 ## `haxe:<version>-alpine`
 
-This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
-This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
 
 To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 

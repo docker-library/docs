@@ -1,8 +1,8 @@
 # Overview
 
-The images in this repository contain WebSphere Liberty application server and the IBM Java Runtime Environment. For more information please see our [official repository](https://github.com/WASdev/ci.docker).
+All of the images in this repository use Ubuntu as the Operating System. For variants that use the Universal Base Image, please see [this repository](https://hub.docker.com/r/ibmcom/websphere-liberty/).
 
-This repository contains WebSphere Liberty based on top of IBM Java 8 with Ubuntu images only. See [here](https://hub.docker.com/r/ibmcom/websphere-liberty/) for WebSphere Liberty based on Red Hat's Universal Base Image, which includes additional java options.
+For more information on these images please see our [GitHub repository](https://github.com/WASdev/ci.docker#container-images).
 
 # Image User
 
@@ -132,13 +132,15 @@ To elaborate these capabilities this section assumes the standalone Spring Boot 
 	FROM %%IMAGE%%:kernel as staging
 	COPY --chown=1001:0 hellospringboot.jar /staging/myFatApp.jar
 	COPY --chown=1001:0 server.xml /config/
-	RUN configure.sh && springBootUtility thin \
+	RUN springBootUtility thin \
 	   --sourceAppPath=/staging/myFatApp.jar \
 	   --targetThinAppPath=/staging/myThinApp.jar \
 	   --targetLibCachePath=/staging/lib.index.cache
 	FROM %%IMAGE%%:kernel
+	COPY --chown=1001:0 server.xml /config
 	COPY --from=staging /staging/lib.index.cache /lib.index.cache
 	COPY --from=staging /staging/myThinApp.jar /config/dropins/spring/myThinApp.jar
+	RUN configure.sh
 	```
 
 	For Spring Boot applications packaged with library dependencies that rarely change across continuous application updates, you can use the capabilities mentioned above to to share library caches across containers and to create even more efficient docker layers that leverage the docker build cache.

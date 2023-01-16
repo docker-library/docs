@@ -14,17 +14,21 @@ WARNING:
 
 -->
 
+# **DEPRECATION NOTICE**
+
+This project is not actively maintained. See [dshearer/jobber#334](https://github.com/dshearer/jobber/pull/334) for more details.
+
 # Quick reference
 
 -	**Maintained by**:  
 	[Jobber](https://github.com/dshearer/jobber-docker)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.4.0-alpine3.10`, `1.4-alpine3.10`, `1-alpine3.10`, `latest`](https://github.com/dshearer/jobber-docker/blob/64d2a0778ae73986cb90f1c374d9dfb42c9b8483/alpine3.10/Dockerfile)
+-	[`1.4.4-alpine3.11`, `1.4-alpine3.11`, `1-alpine3.11`, `latest`](https://github.com/dshearer/jobber-docker/blob/cd07d76987097b5389aa9be5f48df041aa74d699/alpine3.11/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -39,7 +43,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/jobber`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fjobber)  
+	[official-images repo's `library/jobber` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fjobber)  
 	[official-images repo's `library/jobber` file](https://github.com/docker-library/official-images/blob/master/library/jobber) ([history](https://github.com/docker-library/official-images/commits/master/library/jobber))
 
 -	**Source of this description**:  

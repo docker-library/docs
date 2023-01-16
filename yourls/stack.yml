@@ -14,7 +14,8 @@ services:
       YOURLS_PASS: example_password
 
   mysql:
-    image: mysql:5.7
+    image: mysql
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: example
+      MYSQL_DATABASE: yourls

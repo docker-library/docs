@@ -20,12 +20,12 @@ WARNING:
 	[Backdrop Ops](https://github.com/backdrop-ops/backdrop-docker)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.13.2`, `1.13`, `1`, `1.13.2-apache`, `1.13-apache`, `1-apache`, `apache`, `latest`](https://github.com/backdrop-ops/backdrop-docker/blob/1c82e369b6bf1b8ab45becda7f9f9777fe7f6a7f/1/apache/Dockerfile)
--	[`1.13.2-fpm`, `1.13-fpm`, `1-fpm`, `fpm`](https://github.com/backdrop-ops/backdrop-docker/blob/1c82e369b6bf1b8ab45becda7f9f9777fe7f6a7f/1/fpm/Dockerfile)
+-	[`1.23.1`, `1.23`, `1`, `1.23.1-apache`, `1.23-apache`, `1-apache`, `apache`, `latest`](https://github.com/backdrop-ops/backdrop-docker/blob/8012e0b47794605356eddc14dc56b1eda4b36f0c/1/apache/Dockerfile)
+-	[`1.23.1-fpm`, `1.23-fpm`, `1-fpm`, `fpm`](https://github.com/backdrop-ops/backdrop-docker/blob/8012e0b47794605356eddc14dc56b1eda4b36f0c/1/fpm/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -40,7 +40,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/backdrop`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fbackdrop)  
+	[official-images repo's `library/backdrop` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fbackdrop)  
 	[official-images repo's `library/backdrop` file](https://github.com/docker-library/official-images/blob/master/library/backdrop) ([history](https://github.com/docker-library/official-images/commits/master/library/backdrop))
 
 -	**Source of this description**:  
@@ -111,7 +111,6 @@ db:
     MYSQL_PASSWORD: backdrop
     MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
     MYSQL_DATABASE: backdrop
-
 ```
 
 Run `docker-compose up`, wait for it to initialize completely, and visit `http://localhost:8080` or `http://host-ip:8080`.

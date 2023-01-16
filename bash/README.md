@@ -20,20 +20,22 @@ WARNING:
 	[Tianon (of the Docker Community)](https://github.com/tianon/docker-bash), [with Chet's support (from Bash upstream)](https://github.com/docker-library/official-images/pull/2217#issue-181031192)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`devel-20200512`, `devel`](https://github.com/tianon/docker-bash/blob/f1678429fe4f9547d0ea426bb59f46a5e05a8b73/devel/Dockerfile)
--	[`5.0.17`, `5.0`, `5`, `latest`](https://github.com/tianon/docker-bash/blob/bdb65fba59b806a9987f3b8e9d4522d5f4d49a92/5.0/Dockerfile)
--	[`4.4.23`, `4.4`, `4`](https://github.com/tianon/docker-bash/blob/f55ec52c6bb3a9a1b942a775f848002826b58b8a/4.4/Dockerfile)
--	[`4.3.48`, `4.3`](https://github.com/tianon/docker-bash/blob/f55ec52c6bb3a9a1b942a775f848002826b58b8a/4.3/Dockerfile)
--	[`4.2.53`, `4.2`](https://github.com/tianon/docker-bash/blob/f55ec52c6bb3a9a1b942a775f848002826b58b8a/4.2/Dockerfile)
--	[`4.1.17`, `4.1`](https://github.com/tianon/docker-bash/blob/f55ec52c6bb3a9a1b942a775f848002826b58b8a/4.1/Dockerfile)
--	[`4.0.44`, `4.0`](https://github.com/tianon/docker-bash/blob/f55ec52c6bb3a9a1b942a775f848002826b58b8a/4.0/Dockerfile)
--	[`3.2.57`, `3.2`, `3`](https://github.com/tianon/docker-bash/blob/f55ec52c6bb3a9a1b942a775f848002826b58b8a/3.2/Dockerfile)
--	[`3.1.23`, `3.1`](https://github.com/tianon/docker-bash/blob/f55ec52c6bb3a9a1b942a775f848002826b58b8a/3.1/Dockerfile)
--	[`3.0.22`, `3.0`](https://github.com/tianon/docker-bash/blob/f55ec52c6bb3a9a1b942a775f848002826b58b8a/3.0/Dockerfile)
+-	[`devel-20230107`, `devel`, `devel-20230107-alpine3.16`, `devel-alpine3.16`](https://github.com/tianon/docker-bash/blob/b4511227e84d5a41ae8134422418e208bc9fb3b5/devel/Dockerfile)
+-	[`5.2.15`, `5.2`, `5`, `latest`, `5.2.15-alpine3.16`, `5.2-alpine3.16`, `5-alpine3.16`, `alpine3.16`](https://github.com/tianon/docker-bash/blob/cb26ef95b253f1bd736824c8e88d86e9dcadfa5e/5.2/Dockerfile)
+-	[`5.1.16`, `5.1`, `5.1.16-alpine3.16`, `5.1-alpine3.16`](https://github.com/tianon/docker-bash/blob/ab48980aaa9b26f074375b19fe430e4bf5970573/5.1/Dockerfile)
+-	[`5.0.18`, `5.0`, `5.0.18-alpine3.16`, `5.0-alpine3.16`](https://github.com/tianon/docker-bash/blob/ab48980aaa9b26f074375b19fe430e4bf5970573/5.0/Dockerfile)
+-	[`4.4.23`, `4.4`, `4`, `4.4.23-alpine3.16`, `4.4-alpine3.16`, `4-alpine3.16`](https://github.com/tianon/docker-bash/blob/ab48980aaa9b26f074375b19fe430e4bf5970573/4.4/Dockerfile)
+-	[`4.3.48`, `4.3`, `4.3.48-alpine3.16`, `4.3-alpine3.16`](https://github.com/tianon/docker-bash/blob/ab48980aaa9b26f074375b19fe430e4bf5970573/4.3/Dockerfile)
+-	[`4.2.53`, `4.2`, `4.2.53-alpine3.16`, `4.2-alpine3.16`](https://github.com/tianon/docker-bash/blob/ab48980aaa9b26f074375b19fe430e4bf5970573/4.2/Dockerfile)
+-	[`4.1.17`, `4.1`, `4.1.17-alpine3.16`, `4.1-alpine3.16`](https://github.com/tianon/docker-bash/blob/ab48980aaa9b26f074375b19fe430e4bf5970573/4.1/Dockerfile)
+-	[`4.0.44`, `4.0`, `4.0.44-alpine3.16`, `4.0-alpine3.16`](https://github.com/tianon/docker-bash/blob/ab48980aaa9b26f074375b19fe430e4bf5970573/4.0/Dockerfile)
+-	[`3.2.57`, `3.2`, `3`, `3.2.57-alpine3.16`, `3.2-alpine3.16`, `3-alpine3.16`](https://github.com/tianon/docker-bash/blob/ab48980aaa9b26f074375b19fe430e4bf5970573/3.2/Dockerfile)
+-	[`3.1.23`, `3.1`, `3.1.23-alpine3.16`, `3.1-alpine3.16`](https://github.com/tianon/docker-bash/blob/ab48980aaa9b26f074375b19fe430e4bf5970573/3.1/Dockerfile)
+-	[`3.0.22`, `3.0`, `3.0.22-alpine3.16`, `3.0-alpine3.16`](https://github.com/tianon/docker-bash/blob/ab48980aaa9b26f074375b19fe430e4bf5970573/3.0/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -48,7 +50,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/bash`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fbash)  
+	[official-images repo's `library/bash` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fbash)  
 	[official-images repo's `library/bash` file](https://github.com/docker-library/official-images/blob/master/library/bash) ([history](https://github.com/docker-library/official-images/commits/master/library/bash))
 
 -	**Source of this description**:  

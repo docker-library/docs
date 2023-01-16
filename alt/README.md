@@ -20,13 +20,13 @@ WARNING:
 	[The ALT Linux Team Cloud](https://github.com/alt-cloud/docker-brew-alt)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`p9`, `latest`](https://github.com/alt-cloud/docker-brew-alt/blob/c3c1f444708cc0ce980ed2d13b877a4faf8ffe6e/x86_64/Dockerfile)
--	[`p8`](https://github.com/alt-cloud/docker-brew-alt/blob/b7c6a1e701ad6454d2644f57bbb20e22a1db9c64/x86_64/Dockerfile)
--	[`sisyphus`](https://github.com/alt-cloud/docker-brew-alt/blob/52b1dc24145fd5fd93cec6851ac91faea799cf94/x86_64/Dockerfile)
+-	[`p10`, `latest`](https://github.com/alt-cloud/docker-brew-alt/blob/b231d221f40d951338c30902735044a36bb1895f/x86_64/Dockerfile)
+-	[`p9`](https://github.com/alt-cloud/docker-brew-alt/blob/fa873ac1d6ad83275982565b82b67b009969fd6a/x86_64/Dockerfile)
+-	[`sisyphus`](https://github.com/alt-cloud/docker-brew-alt/blob/a7155b68c43e43d50c162e355946303abf76f7d8/x86_64/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -36,14 +36,14 @@ WARNING:
 For create new bug, please use [ALT's bugzilla page](https://bugzilla.altlinux.org/enter_bug.cgi?product=Docker) (choose `Official image` as component and include details about image problems in the description) or [GitHub](https://github.com/alt-cloud/docker-brew-alt/issues).
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/alt/), [`arm64v8`](https://hub.docker.com/r/arm64v8/alt/), [`i386`](https://hub.docker.com/r/i386/alt/), [`ppc64le`](https://hub.docker.com/r/ppc64le/alt/)
+	[`amd64`](https://hub.docker.com/r/amd64/alt/), [`arm32v7`](https://hub.docker.com/r/arm32v7/alt/), [`arm64v8`](https://hub.docker.com/r/arm64v8/alt/), [`i386`](https://hub.docker.com/r/i386/alt/), [`ppc64le`](https://hub.docker.com/r/ppc64le/alt/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/alt/` directory](https://github.com/docker-library/repo-info/blob/master/repos/alt) ([history](https://github.com/docker-library/repo-info/commits/master/repos/alt))  
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/alt`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Falt)  
+	[official-images repo's `library/alt` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Falt)  
 	[official-images repo's `library/alt` file](https://github.com/docker-library/official-images/blob/master/library/alt) ([history](https://github.com/docker-library/official-images/commits/master/library/alt))
 
 -	**Source of this description**:  

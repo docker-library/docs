@@ -20,14 +20,14 @@ WARNING:
 	[the Docker Community](https://github.com/docker-library/ghost)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.15.3`, `3.15`, `3`, `latest`](https://github.com/docker-library/ghost/blob/b565e6288d0c41bbdba4fcc763169e471a448cb5/3/debian/Dockerfile)
--	[`3.15.3-alpine`, `3.15-alpine`, `3-alpine`, `alpine`](https://github.com/docker-library/ghost/blob/b565e6288d0c41bbdba4fcc763169e471a448cb5/3/alpine/Dockerfile)
--	[`2.38.1`, `2.38`, `2`](https://github.com/docker-library/ghost/blob/292aeadfdf5d428867c2b160268540aa4d4a04c5/2/debian/Dockerfile)
--	[`2.38.1-alpine`, `2.38-alpine`, `2-alpine`](https://github.com/docker-library/ghost/blob/7555f792b28dbe01d521e7edbfc4af2c6824a3ff/2/alpine/Dockerfile)
+-	[`5.30.0`, `5.30`, `5`, `latest`](https://github.com/docker-library/ghost/blob/6b51b1413dc7303993dec2200532cf1ff9d14cf0/5/debian/Dockerfile)
+-	[`5.30.0-alpine`, `5.30-alpine`, `5-alpine`, `alpine`](https://github.com/docker-library/ghost/blob/6b51b1413dc7303993dec2200532cf1ff9d14cf0/5/alpine/Dockerfile)
+-	[`4.48.9`, `4.48`, `4`](https://github.com/docker-library/ghost/blob/1f74dbadd9f1959422a4e42c3f9c0f5d281c4461/4/debian/Dockerfile)
+-	[`4.48.9-alpine`, `4.48-alpine`, `4-alpine`](https://github.com/docker-library/ghost/blob/1f74dbadd9f1959422a4e42c3f9c0f5d281c4461/4/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -35,14 +35,14 @@ WARNING:
 	[https://github.com/docker-library/ghost/issues](https://github.com/docker-library/ghost/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/ghost/), [`arm32v6`](https://hub.docker.com/r/arm32v6/ghost/), [`arm32v7`](https://hub.docker.com/r/arm32v7/ghost/), [`arm64v8`](https://hub.docker.com/r/arm64v8/ghost/), [`i386`](https://hub.docker.com/r/i386/ghost/), [`ppc64le`](https://hub.docker.com/r/ppc64le/ghost/), [`s390x`](https://hub.docker.com/r/s390x/ghost/)
+	[`amd64`](https://hub.docker.com/r/amd64/ghost/), [`arm32v6`](https://hub.docker.com/r/arm32v6/ghost/), [`arm32v7`](https://hub.docker.com/r/arm32v7/ghost/), [`arm64v8`](https://hub.docker.com/r/arm64v8/ghost/), [`ppc64le`](https://hub.docker.com/r/ppc64le/ghost/), [`s390x`](https://hub.docker.com/r/s390x/ghost/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/ghost/` directory](https://github.com/docker-library/repo-info/blob/master/repos/ghost) ([history](https://github.com/docker-library/repo-info/commits/master/repos/ghost))  
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/ghost`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fghost)  
+	[official-images repo's `library/ghost` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fghost)  
 	[official-images repo's `library/ghost` file](https://github.com/docker-library/official-images/blob/master/library/ghost) ([history](https://github.com/docker-library/official-images/commits/master/library/ghost))
 
 -	**Source of this description**:  
@@ -58,10 +58,10 @@ Ghost is a free and open source blogging platform written in JavaScript and dist
 
 # How to use this image
 
-This will start a Ghost instance listening on the default Ghost port of 2368.
+This will start a Ghost development instance listening on the default Ghost port of 2368.
 
 ```console
-$ docker run -d --name some-ghost ghost
+$ docker run -d --name some-ghost -e NODE_ENV=development ghost
 ```
 
 ## Custom port
@@ -69,14 +69,14 @@ $ docker run -d --name some-ghost ghost
 If you'd like to be able to access the instance from the host without the container's IP, standard port mappings can be used:
 
 ```console
-$ docker run -d --name some-ghost -e url=http://localhost:3001 -p 3001:2368 ghost
+$ docker run -d --name some-ghost -e NODE_ENV=development -e url=http://localhost:3001 -p 3001:2368 ghost
 ```
 
 If all goes well, you'll be able to access your new site on `http://localhost:3001` and `http://localhost:3001/ghost` to access Ghost Admin (or `http://host-ip:3001` and `http://host-ip:3001/ghost`, respectively).
 
 ### Upgrading Ghost
 
-You will want to ensure you are running the latest minor version (1.25.5 or 0.11.9) of Ghost before upgrading major versions. Otherwise, you may run into database errors.
+You will want to ensure you are running the latest minor version of Ghost before upgrading major versions. Otherwise, you may run into database errors.
 
 For upgrading your Ghost container you will want to mount your data to the appropriate path in the predecessor container (see below): import your content from the admin panel, stop the container, and then re-mount your content to the successor container you are upgrading into; you can then export your content from the admin panel.
 
@@ -84,36 +84,24 @@ For upgrading your Ghost container you will want to mount your data to the appro
 
 Mount your existing content. In this example we also use the Alpine base image.
 
-### Ghost 1.x.x
-
 ```console
-$ docker run -d --name some-ghost -p 3001:2368 -v /path/to/ghost/blog:/var/lib/ghost/content ghost:1-alpine
-```
-
-### Ghost 0.11.xx
-
-```console
-$ docker run -d --name some-ghost -p 3001:2368 -v /path/to/ghost/blog:/var/lib/ghost ghost:0.11-alpine
+$ docker run -d --name some-ghost -e NODE_ENV=development -p 3001:2368 -v /path/to/ghost/blog:/var/lib/ghost/content ghost:alpine
 ```
 
 ### Docker Volume
 
-Alternatively you can use a [data container](http://docs.docker.com/engine/tutorials/dockervolumes/) that has a volume that points to `/var/lib/ghost/content` (or /var/lib/ghost for 0.11.x) and then reference it:
+Alternatively you can use a named [docker volume](https://docs.docker.com/storage/volumes/) instead of a direct host path for `/var/lib/ghost/content`:
 
 ```console
-$ docker run -d --name some-ghost --volumes-from some-ghost-data ghost
+$ docker run -d --name some-ghost -e NODE_ENV=development -v some-ghost-data:/var/lib/ghost/content ghost
 ```
-
-### SQLite Database
-
-This Docker image for Ghost uses SQLite. There is nothing special to configure.
 
 ## Configuration
 
-All Ghost configuration parameters (such as `url`) can be specified via environment variables. See [the Ghost documentation](https://docs.ghost.org/docs/config#section-running-ghost-with-config-env-variables) for details about what configuration is allowed and how to convert a nested configuration key into the appropriate environment variable name:
+All Ghost configuration parameters (such as `url`) can be specified via environment variables. See [the Ghost documentation](https://ghost.org/docs/concepts/config/#running-ghost-with-config-env-variables) for details about what configuration is allowed and how to convert a nested configuration key into the appropriate environment variable name:
 
 ```console
-$ docker run -d --name some-ghost -e url=http://some-ghost.example.com ghost
+$ docker run -d --name some-ghost -e NODE_ENV=development -e url=http://some-ghost.example.com ghost
 ```
 
 (There are further configuration examples in the `stack.yml` listed below.)
@@ -124,46 +112,53 @@ When opening a ticket at https://github.com/TryGhost/Ghost/issues it becomes nec
 
 ```console
 $ docker exec <container-id> node --version
-v6.11.2
+[node version output]
 ```
 
 ## Note about Ghost-CLI
 
 While the Docker images do have Ghost-CLI available and do use some of its commands to set up the base Ghost image, many of the other Ghost-CLI commands won't work correctly, and really aren't designed/intended to. For more info see [docker-library/ghost#156 (comment)](https://github.com/docker-library/ghost/issues/156#issuecomment-428159861)
 
+## Production mode
+
+To run Ghost for production you'll also need to be running with MySQL 8, https, and a reverse proxy configured with appropriate `X-Forwarded-For`, `X-Forwared-Host`, and `X-Forwarded-Proto` (`https`) headers.
+
+The following example demonstrates some of the necessary configuration for running with MySQL. For more detail, see [Ghost's "Configuration options" documentation](https://ghost.org/docs/config/#configuration-options).
+
 ## ... via [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/) or [`docker-compose`](https://github.com/docker/compose)
 
 Example `stack.yml` for `ghost`:
 
 ```yaml
-# by default, the Ghost image will use SQLite (and thus requires no separate database container)
-# we have used MySQL here merely for demonstration purposes (especially environment-variable-based configuration)
-
 version: '3.1'
 
 services:
 
   ghost:
-    image: ghost:1-alpine
+    image: ghost:4-alpine
     restart: always
     ports:
       - 8080:2368
     environment:
-      # see https://docs.ghost.org/docs/config#section-running-ghost-with-config-env-variables
+      # see https://ghost.org/docs/config/#configuration-options
       database__client: mysql
       database__connection__host: db
       database__connection__user: root
       database__connection__password: example
       database__connection__database: ghost
+      # this url value is just an example, and is likely wrong for your environment!
+      url: http://localhost:8080
+      # contrary to the default mentioned in the linked documentation, this image defaults to NODE_ENV=production (so development mode needs to be explicitly specified if desired)
+      #NODE_ENV: development
 
   db:
-    image: mysql:5.7
+    image: mysql:8.0
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: example
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/e24f39cddf21560cf0a24f149059ff23640b0f16/ghost/stack.yml)
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/57f9907ee5bbeaede8c97f439b9c11bc1081dd75/ghost/stack.yml)
 
 Run `docker stack deploy -c stack.yml ghost` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
 
@@ -177,9 +172,9 @@ This is the defacto image. If you are unsure about what your needs are, you prob
 
 ## `ghost:<version>-alpine`
 
-This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
-This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
 
 To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 

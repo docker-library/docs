@@ -20,16 +20,16 @@ WARNING:
 	[the Rust Project developers](https://github.com/rust-lang/docker-rust)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1-stretch`, `1.43-stretch`, `1.43.1-stretch`, `stretch`](https://github.com/rust-lang-nursery/docker-rust/blob/009cc0a821ff773d54875350312731ed490d5cce/1.43.1/stretch/Dockerfile)
--	[`1-slim-stretch`, `1.43-slim-stretch`, `1.43.1-slim-stretch`, `slim-stretch`](https://github.com/rust-lang-nursery/docker-rust/blob/009cc0a821ff773d54875350312731ed490d5cce/1.43.1/stretch/slim/Dockerfile)
--	[`1-buster`, `1.43-buster`, `1.43.1-buster`, `buster`, `1`, `1.43`, `1.43.1`, `latest`](https://github.com/rust-lang-nursery/docker-rust/blob/009cc0a821ff773d54875350312731ed490d5cce/1.43.1/buster/Dockerfile)
--	[`1-slim-buster`, `1.43-slim-buster`, `1.43.1-slim-buster`, `slim-buster`, `1-slim`, `1.43-slim`, `1.43.1-slim`, `slim`](https://github.com/rust-lang-nursery/docker-rust/blob/009cc0a821ff773d54875350312731ed490d5cce/1.43.1/buster/slim/Dockerfile)
--	[`1-alpine3.10`, `1.43-alpine3.10`, `1.43.1-alpine3.10`, `alpine3.10`](https://github.com/rust-lang-nursery/docker-rust/blob/009cc0a821ff773d54875350312731ed490d5cce/1.43.1/alpine3.10/Dockerfile)
--	[`1-alpine3.11`, `1.43-alpine3.11`, `1.43.1-alpine3.11`, `alpine3.11`, `1-alpine`, `1.43-alpine`, `1.43.1-alpine`, `alpine`](https://github.com/rust-lang-nursery/docker-rust/blob/009cc0a821ff773d54875350312731ed490d5cce/1.43.1/alpine3.11/Dockerfile)
+-	[`1-buster`, `1.66-buster`, `1.66.1-buster`, `buster`](https://github.com/rust-lang/docker-rust/blob/86cc84d5a8559719aaee3cfbdaf828815ef675d8/1.66.1/buster/Dockerfile)
+-	[`1-slim-buster`, `1.66-slim-buster`, `1.66.1-slim-buster`, `slim-buster`](https://github.com/rust-lang/docker-rust/blob/86cc84d5a8559719aaee3cfbdaf828815ef675d8/1.66.1/buster/slim/Dockerfile)
+-	[`1-bullseye`, `1.66-bullseye`, `1.66.1-bullseye`, `bullseye`, `1`, `1.66`, `1.66.1`, `latest`](https://github.com/rust-lang/docker-rust/blob/86cc84d5a8559719aaee3cfbdaf828815ef675d8/1.66.1/bullseye/Dockerfile)
+-	[`1-slim-bullseye`, `1.66-slim-bullseye`, `1.66.1-slim-bullseye`, `slim-bullseye`, `1-slim`, `1.66-slim`, `1.66.1-slim`, `slim`](https://github.com/rust-lang/docker-rust/blob/86cc84d5a8559719aaee3cfbdaf828815ef675d8/1.66.1/bullseye/slim/Dockerfile)
+-	[`1-alpine3.16`, `1.66-alpine3.16`, `1.66.1-alpine3.16`, `alpine3.16`](https://github.com/rust-lang/docker-rust/blob/86cc84d5a8559719aaee3cfbdaf828815ef675d8/1.66.1/alpine3.16/Dockerfile)
+-	[`1-alpine3.17`, `1.66-alpine3.17`, `1.66.1-alpine3.17`, `alpine3.17`, `1-alpine`, `1.66-alpine`, `1.66.1-alpine`, `alpine`](https://github.com/rust-lang/docker-rust/blob/86cc84d5a8559719aaee3cfbdaf828815ef675d8/1.66.1/alpine3.17/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -44,7 +44,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/rust`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Frust)  
+	[official-images repo's `library/rust` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Frust)  
 	[official-images repo's `library/rust` file](https://github.com/docker-library/official-images/blob/master/library/rust) ([history](https://github.com/docker-library/official-images/commits/master/library/rust))
 
 -	**Source of this description**:  
@@ -91,7 +91,7 @@ COPY . .
 RUN cargo install --path .
 
 FROM debian:buster-slim
-RUN apt-get update && apt-get install -y extra-runtime-dependencies
+RUN apt-get update && apt-get install -y extra-runtime-dependencies && rm -rf /var/lib/apt/lists/*
 COPY --from=builder /usr/local/cargo/bin/myapp /usr/local/bin/myapp
 CMD ["myapp"]
 ```
@@ -120,7 +120,7 @@ The `rust` images come in many flavors, each designed for a specific use case.
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like buster or stretch in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+Some of these tags may have names like bullseye or buster in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 This tag is based off of [`buildpack-deps`](https://hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of Docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
 
@@ -130,9 +130,9 @@ This image does not contain the common packages contained in the default tag and
 
 ## `rust:<version>-alpine`
 
-This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
-This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
 
 To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 

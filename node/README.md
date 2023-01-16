@@ -20,38 +20,34 @@ WARNING:
 	[The Node.js Docker Team](https://github.com/nodejs/docker-node)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`14.2.0-stretch`, `14.2-stretch`, `14-stretch`, `stretch`, `current-stretch`, `14.2.0`, `14.2`, `14`, `latest`, `current`](https://github.com/nodejs/docker-node/blob/910f8b1c0bdeee7bd464f0875297954bb86de9da/14/stretch/Dockerfile)
--	[`14.2.0-stretch-slim`, `14.2-stretch-slim`, `14-stretch-slim`, `stretch-slim`, `current-stretch-slim`, `14.2.0-slim`, `14.2-slim`, `14-slim`, `slim`, `current-slim`](https://github.com/nodejs/docker-node/blob/910f8b1c0bdeee7bd464f0875297954bb86de9da/14/stretch-slim/Dockerfile)
--	[`14.2.0-buster`, `14.2-buster`, `14-buster`, `buster`, `current-buster`](https://github.com/nodejs/docker-node/blob/910f8b1c0bdeee7bd464f0875297954bb86de9da/14/buster/Dockerfile)
--	[`14.2.0-buster-slim`, `14.2-buster-slim`, `14-buster-slim`, `buster-slim`, `current-buster-slim`](https://github.com/nodejs/docker-node/blob/910f8b1c0bdeee7bd464f0875297954bb86de9da/14/buster-slim/Dockerfile)
--	[`14.2.0-alpine3.10`, `14.2-alpine3.10`, `14-alpine3.10`, `alpine3.10`, `current-alpine3.10`](https://github.com/nodejs/docker-node/blob/910f8b1c0bdeee7bd464f0875297954bb86de9da/14/alpine3.10/Dockerfile)
--	[`14.2.0-alpine3.11`, `14.2-alpine3.11`, `14-alpine3.11`, `alpine3.11`, `current-alpine3.11`, `14.2.0-alpine`, `14.2-alpine`, `14-alpine`, `alpine`, `current-alpine`](https://github.com/nodejs/docker-node/blob/910f8b1c0bdeee7bd464f0875297954bb86de9da/14/alpine3.11/Dockerfile)
--	[`13.14.0-stretch`, `13.14-stretch`, `13-stretch`, `13.14.0`, `13.14`, `13`](https://github.com/nodejs/docker-node/blob/bf9fb2d1126062e27d0b763674064bb17da4718c/13/stretch/Dockerfile)
--	[`13.14.0-stretch-slim`, `13.14-stretch-slim`, `13-stretch-slim`, `13.14.0-slim`, `13.14-slim`, `13-slim`](https://github.com/nodejs/docker-node/blob/bf9fb2d1126062e27d0b763674064bb17da4718c/13/stretch-slim/Dockerfile)
--	[`13.14.0-buster`, `13.14-buster`, `13-buster`](https://github.com/nodejs/docker-node/blob/bf9fb2d1126062e27d0b763674064bb17da4718c/13/buster/Dockerfile)
--	[`13.14.0-buster-slim`, `13.14-buster-slim`, `13-buster-slim`](https://github.com/nodejs/docker-node/blob/bf9fb2d1126062e27d0b763674064bb17da4718c/13/buster-slim/Dockerfile)
--	[`13.14.0-alpine3.10`, `13.14-alpine3.10`, `13-alpine3.10`](https://github.com/nodejs/docker-node/blob/bf9fb2d1126062e27d0b763674064bb17da4718c/13/alpine3.10/Dockerfile)
--	[`13.14.0-alpine3.11`, `13.14-alpine3.11`, `13-alpine3.11`, `13.14.0-alpine`, `13.14-alpine`, `13-alpine`](https://github.com/nodejs/docker-node/blob/bf9fb2d1126062e27d0b763674064bb17da4718c/13/alpine3.11/Dockerfile)
--	[`12.16.3-stretch`, `12.16-stretch`, `12-stretch`, `erbium-stretch`, `lts-stretch`, `12.16.3`, `12.16`, `12`, `erbium`, `lts`](https://github.com/nodejs/docker-node/blob/10e2c2254c41237a266192070559734f12d8dae7/12/stretch/Dockerfile)
--	[`12.16.3-stretch-slim`, `12.16-stretch-slim`, `12-stretch-slim`, `erbium-stretch-slim`, `lts-stretch-slim`, `12.16.3-slim`, `12.16-slim`, `12-slim`, `erbium-slim`, `lts-slim`](https://github.com/nodejs/docker-node/blob/10e2c2254c41237a266192070559734f12d8dae7/12/stretch-slim/Dockerfile)
--	[`12.16.3-buster`, `12.16-buster`, `12-buster`, `erbium-buster`, `lts-buster`](https://github.com/nodejs/docker-node/blob/10e2c2254c41237a266192070559734f12d8dae7/12/buster/Dockerfile)
--	[`12.16.3-buster-slim`, `12.16-buster-slim`, `12-buster-slim`, `erbium-buster-slim`, `lts-buster-slim`](https://github.com/nodejs/docker-node/blob/10e2c2254c41237a266192070559734f12d8dae7/12/buster-slim/Dockerfile)
--	[`12.16.3-alpine3.9`, `12.16-alpine3.9`, `12-alpine3.9`, `erbium-alpine3.9`, `lts-alpine3.9`](https://github.com/nodejs/docker-node/blob/10e2c2254c41237a266192070559734f12d8dae7/12/alpine3.9/Dockerfile)
--	[`12.16.3-alpine3.10`, `12.16-alpine3.10`, `12-alpine3.10`, `erbium-alpine3.10`, `lts-alpine3.10`](https://github.com/nodejs/docker-node/blob/10e2c2254c41237a266192070559734f12d8dae7/12/alpine3.10/Dockerfile)
--	[`12.16.3-alpine3.11`, `12.16-alpine3.11`, `12-alpine3.11`, `erbium-alpine3.11`, `lts-alpine3.11`, `12.16.3-alpine`, `12.16-alpine`, `12-alpine`, `erbium-alpine`, `lts-alpine`](https://github.com/nodejs/docker-node/blob/10e2c2254c41237a266192070559734f12d8dae7/12/alpine3.11/Dockerfile)
--	[`10.20.1-jessie`, `10.20-jessie`, `10-jessie`, `dubnium-jessie`](https://github.com/nodejs/docker-node/blob/d071b895dd1b8da6c566f45b971825fe5b087b21/10/jessie/Dockerfile)
--	[`10.20.1-jessie-slim`, `10.20-jessie-slim`, `10-jessie-slim`, `dubnium-jessie-slim`](https://github.com/nodejs/docker-node/blob/d071b895dd1b8da6c566f45b971825fe5b087b21/10/jessie-slim/Dockerfile)
--	[`10.20.1-stretch`, `10.20-stretch`, `10-stretch`, `dubnium-stretch`, `10.20.1`, `10.20`, `10`, `dubnium`](https://github.com/nodejs/docker-node/blob/d071b895dd1b8da6c566f45b971825fe5b087b21/10/stretch/Dockerfile)
--	[`10.20.1-stretch-slim`, `10.20-stretch-slim`, `10-stretch-slim`, `dubnium-stretch-slim`, `10.20.1-slim`, `10.20-slim`, `10-slim`, `dubnium-slim`](https://github.com/nodejs/docker-node/blob/d071b895dd1b8da6c566f45b971825fe5b087b21/10/stretch-slim/Dockerfile)
--	[`10.20.1-buster`, `10.20-buster`, `10-buster`, `dubnium-buster`](https://github.com/nodejs/docker-node/blob/d071b895dd1b8da6c566f45b971825fe5b087b21/10/buster/Dockerfile)
--	[`10.20.1-buster-slim`, `10.20-buster-slim`, `10-buster-slim`, `dubnium-buster-slim`](https://github.com/nodejs/docker-node/blob/d071b895dd1b8da6c566f45b971825fe5b087b21/10/buster-slim/Dockerfile)
--	[`10.20.1-alpine3.9`, `10.20-alpine3.9`, `10-alpine3.9`, `dubnium-alpine3.9`](https://github.com/nodejs/docker-node/blob/d071b895dd1b8da6c566f45b971825fe5b087b21/10/alpine3.9/Dockerfile)
--	[`10.20.1-alpine3.10`, `10.20-alpine3.10`, `10-alpine3.10`, `dubnium-alpine3.10`](https://github.com/nodejs/docker-node/blob/d071b895dd1b8da6c566f45b971825fe5b087b21/10/alpine3.10/Dockerfile)
--	[`10.20.1-alpine3.11`, `10.20-alpine3.11`, `10-alpine3.11`, `dubnium-alpine3.11`, `10.20.1-alpine`, `10.20-alpine`, `10-alpine`, `dubnium-alpine`](https://github.com/nodejs/docker-node/blob/d071b895dd1b8da6c566f45b971825fe5b087b21/10/alpine3.11/Dockerfile)
+-	[`19-alpine3.16`, `19.4-alpine3.16`, `19.4.0-alpine3.16`, `alpine3.16`, `current-alpine3.16`](https://github.com/nodejs/docker-node/blob/28ad5e0e5d0e80df44d897c9057ffd6419a3c7a5/19/alpine3.16/Dockerfile)
+-	[`19-alpine`, `19-alpine3.17`, `19.4-alpine`, `19.4-alpine3.17`, `19.4.0-alpine`, `19.4.0-alpine3.17`, `alpine`, `alpine3.17`, `current-alpine`, `current-alpine3.17`](https://github.com/nodejs/docker-node/blob/28ad5e0e5d0e80df44d897c9057ffd6419a3c7a5/19/alpine3.17/Dockerfile)
+-	[`19`, `19-bullseye`, `19.4`, `19.4-bullseye`, `19.4.0`, `19.4.0-bullseye`, `bullseye`, `current`, `current-bullseye`, `latest`](https://github.com/nodejs/docker-node/blob/28ad5e0e5d0e80df44d897c9057ffd6419a3c7a5/19/bullseye/Dockerfile)
+-	[`19-bullseye-slim`, `19-slim`, `19.4-bullseye-slim`, `19.4-slim`, `19.4.0-bullseye-slim`, `19.4.0-slim`, `bullseye-slim`, `current-bullseye-slim`, `current-slim`, `slim`](https://github.com/nodejs/docker-node/blob/28ad5e0e5d0e80df44d897c9057ffd6419a3c7a5/19/bullseye-slim/Dockerfile)
+-	[`19-buster`, `19.4-buster`, `19.4.0-buster`, `buster`, `current-buster`](https://github.com/nodejs/docker-node/blob/28ad5e0e5d0e80df44d897c9057ffd6419a3c7a5/19/buster/Dockerfile)
+-	[`19-buster-slim`, `19.4-buster-slim`, `19.4.0-buster-slim`, `buster-slim`, `current-buster-slim`](https://github.com/nodejs/docker-node/blob/28ad5e0e5d0e80df44d897c9057ffd6419a3c7a5/19/buster-slim/Dockerfile)
+-	[`18-alpine3.16`, `18.13-alpine3.16`, `18.13.0-alpine3.16`, `hydrogen-alpine3.16`, `lts-alpine3.16`](https://github.com/nodejs/docker-node/blob/86d8b5dbad62b7c58d2146dafaa7b35086ae2eb8/18/alpine3.16/Dockerfile)
+-	[`18-alpine`, `18-alpine3.17`, `18.13-alpine`, `18.13-alpine3.17`, `18.13.0-alpine`, `18.13.0-alpine3.17`, `hydrogen-alpine`, `hydrogen-alpine3.17`, `lts-alpine`, `lts-alpine3.17`](https://github.com/nodejs/docker-node/blob/86d8b5dbad62b7c58d2146dafaa7b35086ae2eb8/18/alpine3.17/Dockerfile)
+-	[`18`, `18-bullseye`, `18.13`, `18.13-bullseye`, `18.13.0`, `18.13.0-bullseye`, `hydrogen`, `hydrogen-bullseye`, `lts`, `lts-bullseye`, `lts-hydrogen`](https://github.com/nodejs/docker-node/blob/86d8b5dbad62b7c58d2146dafaa7b35086ae2eb8/18/bullseye/Dockerfile)
+-	[`18-bullseye-slim`, `18-slim`, `18.13-bullseye-slim`, `18.13-slim`, `18.13.0-bullseye-slim`, `18.13.0-slim`, `hydrogen-bullseye-slim`, `hydrogen-slim`, `lts-bullseye-slim`, `lts-slim`](https://github.com/nodejs/docker-node/blob/86d8b5dbad62b7c58d2146dafaa7b35086ae2eb8/18/bullseye-slim/Dockerfile)
+-	[`18-buster`, `18.13-buster`, `18.13.0-buster`, `hydrogen-buster`, `lts-buster`](https://github.com/nodejs/docker-node/blob/86d8b5dbad62b7c58d2146dafaa7b35086ae2eb8/18/buster/Dockerfile)
+-	[`18-buster-slim`, `18.13-buster-slim`, `18.13.0-buster-slim`, `hydrogen-buster-slim`, `lts-buster-slim`](https://github.com/nodejs/docker-node/blob/86d8b5dbad62b7c58d2146dafaa7b35086ae2eb8/18/buster-slim/Dockerfile)
+-	[`16-alpine3.16`, `16.19-alpine3.16`, `16.19.0-alpine3.16`, `gallium-alpine3.16`](https://github.com/nodejs/docker-node/blob/2a15356c778b366621aa370a4294c59ac1df9c6a/16/alpine3.16/Dockerfile)
+-	[`16-alpine`, `16-alpine3.17`, `16.19-alpine`, `16.19-alpine3.17`, `16.19.0-alpine`, `16.19.0-alpine3.17`, `gallium-alpine`, `gallium-alpine3.17`](https://github.com/nodejs/docker-node/blob/2a15356c778b366621aa370a4294c59ac1df9c6a/16/alpine3.17/Dockerfile)
+-	[`16-bullseye`, `16.19-bullseye`, `16.19.0-bullseye`, `gallium-bullseye`](https://github.com/nodejs/docker-node/blob/3f8018043408490439723ed3b71ab5578d69ea70/16/bullseye/Dockerfile)
+-	[`16-bullseye-slim`, `16.19-bullseye-slim`, `16.19.0-bullseye-slim`, `gallium-bullseye-slim`](https://github.com/nodejs/docker-node/blob/3f8018043408490439723ed3b71ab5578d69ea70/16/bullseye-slim/Dockerfile)
+-	[`16`, `16-buster`, `16.19`, `16.19-buster`, `16.19.0`, `16.19.0-buster`, `gallium`, `gallium-buster`](https://github.com/nodejs/docker-node/blob/3f8018043408490439723ed3b71ab5578d69ea70/16/buster/Dockerfile)
+-	[`16-buster-slim`, `16-slim`, `16.19-buster-slim`, `16.19-slim`, `16.19.0-buster-slim`, `16.19.0-slim`, `gallium-buster-slim`, `gallium-slim`](https://github.com/nodejs/docker-node/blob/3f8018043408490439723ed3b71ab5578d69ea70/16/buster-slim/Dockerfile)
+-	[`14-alpine3.16`, `14.21-alpine3.16`, `14.21.2-alpine3.16`, `fermium-alpine3.16`](https://github.com/nodejs/docker-node/blob/3f8018043408490439723ed3b71ab5578d69ea70/14/alpine3.16/Dockerfile)
+-	[`14-alpine`, `14-alpine3.17`, `14.21-alpine`, `14.21-alpine3.17`, `14.21.2-alpine`, `14.21.2-alpine3.17`, `fermium-alpine`, `fermium-alpine3.17`](https://github.com/nodejs/docker-node/blob/3f8018043408490439723ed3b71ab5578d69ea70/14/alpine3.17/Dockerfile)
+-	[`14-bullseye`, `14.21-bullseye`, `14.21.2-bullseye`, `fermium-bullseye`](https://github.com/nodejs/docker-node/blob/3f8018043408490439723ed3b71ab5578d69ea70/14/bullseye/Dockerfile)
+-	[`14-bullseye-slim`, `14.21-bullseye-slim`, `14.21.2-bullseye-slim`, `fermium-bullseye-slim`](https://github.com/nodejs/docker-node/blob/3f8018043408490439723ed3b71ab5578d69ea70/14/bullseye-slim/Dockerfile)
+-	[`14`, `14-buster`, `14.21`, `14.21-buster`, `14.21.2`, `14.21.2-buster`, `fermium`, `fermium-buster`](https://github.com/nodejs/docker-node/blob/3f8018043408490439723ed3b71ab5578d69ea70/14/buster/Dockerfile)
+-	[`14-buster-slim`, `14-slim`, `14.21-buster-slim`, `14.21-slim`, `14.21.2-buster-slim`, `14.21.2-slim`, `fermium-buster-slim`, `fermium-slim`](https://github.com/nodejs/docker-node/blob/3f8018043408490439723ed3b71ab5578d69ea70/14/buster-slim/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -59,14 +55,14 @@ WARNING:
 	[https://github.com/nodejs/docker-node/issues](https://github.com/nodejs/docker-node/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/node/), [`arm32v6`](https://hub.docker.com/r/arm32v6/node/), [`arm32v7`](https://hub.docker.com/r/arm32v7/node/), [`arm64v8`](https://hub.docker.com/r/arm64v8/node/), [`i386`](https://hub.docker.com/r/i386/node/), [`ppc64le`](https://hub.docker.com/r/ppc64le/node/), [`s390x`](https://hub.docker.com/r/s390x/node/)
+	[`amd64`](https://hub.docker.com/r/amd64/node/), [`arm32v6`](https://hub.docker.com/r/arm32v6/node/), [`arm32v7`](https://hub.docker.com/r/arm32v7/node/), [`arm64v8`](https://hub.docker.com/r/arm64v8/node/), [`ppc64le`](https://hub.docker.com/r/ppc64le/node/), [`s390x`](https://hub.docker.com/r/s390x/node/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/node/` directory](https://github.com/docker-library/repo-info/blob/master/repos/node) ([history](https://github.com/docker-library/repo-info/commits/master/repos/node))  
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/node`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fnode)  
+	[official-images repo's `library/node` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fnode)  
 	[official-images repo's `library/node` file](https://github.com/docker-library/official-images/blob/master/library/node) ([history](https://github.com/docker-library/official-images/commits/master/library/node))
 
 -	**Source of this description**:  
@@ -96,21 +92,21 @@ The `node` images come in many flavors, each designed for a specific use case.
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like buster, jessie, or stretch in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+Some of these tags may have names like bullseye or buster in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 This tag is based off of [`buildpack-deps`](https://hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of Docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
+
+## `node:<version>-alpine`
+
+This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+
+This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+
+To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 ## `node:<version>-slim`
 
 This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `node`. Unless you are working in an environment where *only* the `node` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
-
-## `node:<version>-alpine`
-
-This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
-
-This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
-
-To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 # License
 

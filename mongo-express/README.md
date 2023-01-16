@@ -20,11 +20,12 @@ WARNING:
 	[mongo-express](https://github.com/mongo-express/mongo-express-docker)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`0.54.0`, `0.54`, `latest`](https://github.com/mongo-express/mongo-express-docker/blob/4b43fe8a1206434cb32a006cd155dd71462f092f/Dockerfile)
+-	[`1.0.0-alpha.4`, `1.0.0-alpha`, `latest`](https://github.com/mongo-express/mongo-express-docker/blob/26e7ea94e4d222de7d52531caee52149ac093c26/Dockerfile)
+-	[`0.54.0`, `0.54`](https://github.com/mongo-express/mongo-express-docker/blob/4b43fe8a1206434cb32a006cd155dd71462f092f/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -39,7 +40,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/mongo-express`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmongo-express)  
+	[official-images repo's `library/mongo-express` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fmongo-express)  
 	[official-images repo's `library/mongo-express` file](https://github.com/docker-library/official-images/blob/master/library/mongo-express) ([history](https://github.com/docker-library/official-images/commits/master/library/mongo-express))
 
 -	**Source of this description**:  

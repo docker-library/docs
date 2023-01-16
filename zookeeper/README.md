@@ -20,13 +20,18 @@ WARNING:
 	[the Docker Community](https://github.com/31z4/zookeeper-docker)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.4.14`, `3.4`](https://github.com/31z4/zookeeper-docker/blob/1ed5af662e6749021687fbf2a9b445b1adf2fb46/3.4.14/Dockerfile)
--	[`3.5.7`, `3.5`](https://github.com/31z4/zookeeper-docker/blob/415ec2ced7dea27398befc9cb9ff5de299323be8/3.5.7/Dockerfile)
--	[`3.6.1`, `3.6`, `latest`](https://github.com/31z4/zookeeper-docker/blob/c0039669a527a56b19ceb30a6523ed206fbf245d/3.6.1/Dockerfile)
+-	[`3.5.9`, `3.5`](https://github.com/31z4/zookeeper-docker/blob/060f64d28d1780373f90ac152bd2538abcf1924c/3.5.9/Dockerfile)
+-	[`3.5.9-temurin`, `3.5-temurin`](https://github.com/31z4/zookeeper-docker/blob/5cf119d9c5d61024fdba66f7be707413513a8b0d/3.5.9/Dockerfile)
+-	[`3.6.3`, `3.6`](https://github.com/31z4/zookeeper-docker/blob/060f64d28d1780373f90ac152bd2538abcf1924c/3.6.3/Dockerfile)
+-	[`3.6.3-temurin`, `3.6-temurin`](https://github.com/31z4/zookeeper-docker/blob/5cf119d9c5d61024fdba66f7be707413513a8b0d/3.6.3/Dockerfile)
+-	[`3.7.1`, `3.7`](https://github.com/31z4/zookeeper-docker/blob/060f64d28d1780373f90ac152bd2538abcf1924c/3.7.1/Dockerfile)
+-	[`3.7.1-temurin`, `3.7-temurin`](https://github.com/31z4/zookeeper-docker/blob/5cf119d9c5d61024fdba66f7be707413513a8b0d/3.7.1/Dockerfile)
+-	[`3.8.0`, `3.8`](https://github.com/31z4/zookeeper-docker/blob/060f64d28d1780373f90ac152bd2538abcf1924c/3.8.0/Dockerfile)
+-	[`3.8.0-temurin`, `3.8-temurin`, `latest`](https://github.com/31z4/zookeeper-docker/blob/5cf119d9c5d61024fdba66f7be707413513a8b0d/3.8.0/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -34,14 +39,14 @@ WARNING:
 	[https://github.com/31z4/zookeeper-docker/issues](https://github.com/31z4/zookeeper-docker/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/zookeeper/)
+	[`amd64`](https://hub.docker.com/r/amd64/zookeeper/), [`arm64v8`](https://hub.docker.com/r/arm64v8/zookeeper/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/zookeeper/` directory](https://github.com/docker-library/repo-info/blob/master/repos/zookeeper) ([history](https://github.com/docker-library/repo-info/commits/master/repos/zookeeper))  
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/zookeeper`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fzookeeper)  
+	[official-images repo's `library/zookeeper` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fzookeeper)  
 	[official-images repo's `library/zookeeper` file](https://github.com/docker-library/official-images/blob/master/library/zookeeper) ([history](https://github.com/docker-library/official-images/commits/master/library/zookeeper))
 
 -	**Source of this description**:  
@@ -93,7 +98,7 @@ services:
       - 2181:2181
     environment:
       ZOO_MY_ID: 1
-      ZOO_SERVERS: server.1=0.0.0.0:2888:3888;2181 server.2=zoo2:2888:3888;2181 server.3=zoo3:2888:3888;2181
+      ZOO_SERVERS: server.1=zoo1:2888:3888;2181 server.2=zoo2:2888:3888;2181 server.3=zoo3:2888:3888;2181
 
   zoo2:
     image: zookeeper
@@ -103,7 +108,7 @@ services:
       - 2182:2181
     environment:
       ZOO_MY_ID: 2
-      ZOO_SERVERS: server.1=zoo1:2888:3888;2181 server.2=0.0.0.0:2888:3888;2181 server.3=zoo3:2888:3888;2181
+      ZOO_SERVERS: server.1=zoo1:2888:3888;2181 server.2=zoo2:2888:3888;2181 server.3=zoo3:2888:3888;2181
 
   zoo3:
     image: zookeeper
@@ -113,12 +118,12 @@ services:
       - 2183:2181
     environment:
       ZOO_MY_ID: 3
-      ZOO_SERVERS: server.1=zoo1:2888:3888;2181 server.2=zoo2:2888:3888;2181 server.3=0.0.0.0:2888:3888;2181
+      ZOO_SERVERS: server.1=zoo1:2888:3888;2181 server.2=zoo2:2888:3888;2181 server.3=zoo3:2888:3888;2181
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/ef162dce5998011e1753c3337dcbe61200c522d2/zookeeper/stack.yml)
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/fb51d93e6bb1e8b773a728d297a45b834f04d3d1/zookeeper/stack.yml)
 
-This will start Zookeeper 3.5 in [replicated mode](https://zookeeper.apache.org/doc/current/zookeeperStarted.html#sc_RunningReplicatedZooKeeper). Please note, that Zookeeper 3.4 has slightly different `ZOO_SERVERS` format. Run `docker stack deploy -c stack.yml zookeeper` (or `docker-compose -f stack.yml up`) and wait for it to initialize completely. Ports `2181-2183` will be exposed.
+This will start Zookeeper in [replicated mode](https://zookeeper.apache.org/doc/current/zookeeperStarted.html#sc_RunningReplicatedZooKeeper). Run `docker stack deploy -c stack.yml zookeeper` (or `docker-compose -f stack.yml up`) and wait for it to initialize completely. Ports `2181-2183` will be exposed.
 
 > Please be aware that setting up multiple servers on a single machine will not create any redundancy. If something were to happen which caused the machine to die, all of the zookeeper servers would be offline. Full redundancy requires that each server have its own machine. It must be a completely separate physical server. Multiple virtual machines on the same physical host are still vulnerable to the complete failure of that host.
 
@@ -174,7 +179,7 @@ Defaults to `true`. Zookeeper's [`standaloneEnabled`](https://zookeeper.apache.o
 
 Defaults to `true`. Zookeeper's [`admin.enableServer`](http://zookeeper.apache.org/doc/r3.5.7/zookeeperAdmin.html#sc_adminserver_config)
 
-> New in 3.5.0: The AdminServer is an embedded Jetty server that provides an HTTP interface to the four letter word commands. By default, the server is started on port 8080, and commands are issued by going to the URL "/commands/[command name]", e.g., http://localhost:8080/commands/stat.
+> The AdminServer is an embedded Jetty server that provides an HTTP interface to the four letter word commands. By default, the server is started on port 8080, and commands are issued by going to the URL "/commands/[command name]", e.g., http://localhost:8080/commands/stat.
 
 ### `ZOO_AUTOPURGE_PURGEINTERVAL`
 
@@ -196,7 +201,17 @@ Defaults to `srvr`. Zookeeper's [`4lw.commands.whitelist`](https://zookeeper.apa
 
 ## Advanced configuration
 
-Not every Zookeeper configuration setting is exposed via the environment variables listed above. These variables are only meant to cover minimum configuration keywords and some often changing options. If [mounting your custom config file](#configuration) as a volume doesn't work for you, consider using `JVMFLAGS` environment variable. Many of the Zookeeper advanced configuration options can be set there using Java system properties in the form of `-Dproperty=value`. For example, you can use Netty instead of NIO (default option) as a server communication framework:
+### `ZOO_CFG_EXTRA`
+
+Not every Zookeeper configuration setting is exposed via the environment variables listed above. These variables are only meant to cover minimum configuration keywords and some often changing options. If [mounting your custom config file](#configuration) as a volume doesn't work for you, consider using `ZOO_CFG_EXTRA` environment variable. You can add arbitrary configuration parameters to Zookeeper configuration file using this variable. The following example shows how to enable Prometheus metrics exporter on port `7070`:
+
+```console
+$ docker run --name some-zookeeper --restart always -e ZOO_CFG_EXTRA="metricsProvider.className=org.apache.zookeeper.metrics.prometheus.PrometheusMetricsProvider metricsProvider.httpPort=7070" zookeeper
+```
+
+### `JVMFLAGS`
+
+Many of the Zookeeper advanced configuration options can be set there using Java system properties in the form of `-Dproperty=value`. For example, you can use Netty instead of NIO (default option) as a server communication framework:
 
 ```console
 $ docker run --name some-zookeeper --restart always -e JVMFLAGS="-Dzookeeper.serverCnxnFactory=org.apache.zookeeper.server.NettyServerCnxnFactory" zookeeper
@@ -220,9 +235,7 @@ The id must be unique within the ensemble and should have a value between 1 and 
 
 ### `ZOO_SERVERS`
 
-This variable allows you to specify a list of machines of the Zookeeper ensemble. Each entry has the form of `server.id=host:port:port`. Entries are separated with space. Do note that this variable will not have any effect if you start the container with a `/conf` directory that already contains the `zoo.cfg` file.
-
-In 3.5, the syntax of this has changed. Servers should be specified as such: `server.id=<address1>:<port1>:<port2>[:role];[<client port address>:]<client port>` [Zookeeper Dynamic Reconfiguration](https://zookeeper.apache.org/doc/r3.5.7/zookeeperReconfig.html)
+This variable allows you to specify a list of machines of the Zookeeper ensemble. Each entry should be specified as such: `server.id=<address1>:<port1>:<port2>[:role];[<client port address>:]<client port>` [Zookeeper Dynamic Reconfiguration](https://zookeeper.apache.org/doc/r3.5.7/zookeeperReconfig.html). Entries are separated with space. Do note that this variable will not have any effect if you start the container with a `/conf` directory that already contains the `zoo.cfg` file.
 
 ## Where to store data
 

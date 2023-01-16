@@ -20,7 +20,7 @@ WARNING:
 	[the Docker Community](https://github.com/docker-library/mongo)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
@@ -28,39 +28,69 @@ WARNING:
 
 ## Simple Tags
 
--	[`3.6.18-xenial`, `3.6-xenial`, `3-xenial`](https://github.com/docker-library/mongo/blob/be3c690cae52447831b977dab9c6a66dc993df65/3.6/Dockerfile)
--	[`3.6.18-windowsservercore-ltsc2016`, `3.6-windowsservercore-ltsc2016`, `3-windowsservercore-ltsc2016`](https://github.com/docker-library/mongo/blob/be3c690cae52447831b977dab9c6a66dc993df65/3.6/windows/windowsservercore-ltsc2016/Dockerfile)
--	[`3.6.18-windowsservercore-1809`, `3.6-windowsservercore-1809`, `3-windowsservercore-1809`](https://github.com/docker-library/mongo/blob/be3c690cae52447831b977dab9c6a66dc993df65/3.6/windows/windowsservercore-1809/Dockerfile)
--	[`4.0.18-xenial`, `4.0-xenial`](https://github.com/docker-library/mongo/blob/3a626c5e0de4943f0b7d0aeaf9511526d13bfb60/4.0/Dockerfile)
--	[`4.0.18-windowsservercore-ltsc2016`, `4.0-windowsservercore-ltsc2016`](https://github.com/docker-library/mongo/blob/0e738a2b4ce1968d09d2a9acf84585f3cb0ba467/4.0/windows/windowsservercore-ltsc2016/Dockerfile)
--	[`4.0.18-windowsservercore-1809`, `4.0-windowsservercore-1809`](https://github.com/docker-library/mongo/blob/0e738a2b4ce1968d09d2a9acf84585f3cb0ba467/4.0/windows/windowsservercore-1809/Dockerfile)
--	[`4.2.6-bionic`, `4.2-bionic`, `4-bionic`, `bionic`](https://github.com/docker-library/mongo/blob/336871eaeddbf2e61ba3ca61cad33221f83cc710/4.2/Dockerfile)
--	[`4.2.6-windowsservercore-ltsc2016`, `4.2-windowsservercore-ltsc2016`, `4-windowsservercore-ltsc2016`, `windowsservercore-ltsc2016`](https://github.com/docker-library/mongo/blob/336871eaeddbf2e61ba3ca61cad33221f83cc710/4.2/windows/windowsservercore-ltsc2016/Dockerfile)
--	[`4.2.6-windowsservercore-1809`, `4.2-windowsservercore-1809`, `4-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/docker-library/mongo/blob/336871eaeddbf2e61ba3ca61cad33221f83cc710/4.2/windows/windowsservercore-1809/Dockerfile)
+-	[`6.0.3-focal`, `6.0-focal`, `6-focal`, `focal`](https://github.com/docker-library/mongo/blob/fe7b66f65c5169d86c17c8d26789c8f868fa82c9/6.0/Dockerfile)
+-	[`6.0.3-windowsservercore-ltsc2022`, `6.0-windowsservercore-ltsc2022`, `6-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`](https://github.com/docker-library/mongo/blob/b828cbca8f06a7c2bc88c7700bb781c6ca13479f/6.0/windows/windowsservercore-ltsc2022/Dockerfile)
+-	[`6.0.3-windowsservercore-1809`, `6.0-windowsservercore-1809`, `6-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/docker-library/mongo/blob/b828cbca8f06a7c2bc88c7700bb781c6ca13479f/6.0/windows/windowsservercore-1809/Dockerfile)
+-	[`6.0.3-nanoserver-ltsc2022`, `6.0-nanoserver-ltsc2022`, `6-nanoserver-ltsc2022`, `nanoserver-ltsc2022`](https://github.com/docker-library/mongo/blob/b828cbca8f06a7c2bc88c7700bb781c6ca13479f/6.0/windows/nanoserver-ltsc2022/Dockerfile)
+-	[`6.0.3-nanoserver-1809`, `6.0-nanoserver-1809`, `6-nanoserver-1809`, `nanoserver-1809`](https://github.com/docker-library/mongo/blob/b828cbca8f06a7c2bc88c7700bb781c6ca13479f/6.0/windows/nanoserver-1809/Dockerfile)
+-	[`5.0.14-focal`, `5.0-focal`, `5-focal`](https://github.com/docker-library/mongo/blob/fe7b66f65c5169d86c17c8d26789c8f868fa82c9/5.0/Dockerfile)
+-	[`5.0.14-windowsservercore-ltsc2022`, `5.0-windowsservercore-ltsc2022`, `5-windowsservercore-ltsc2022`](https://github.com/docker-library/mongo/blob/d27f80ddeafa162ab0a2f73a733c52f5e54bf817/5.0/windows/windowsservercore-ltsc2022/Dockerfile)
+-	[`5.0.14-windowsservercore-1809`, `5.0-windowsservercore-1809`, `5-windowsservercore-1809`](https://github.com/docker-library/mongo/blob/d27f80ddeafa162ab0a2f73a733c52f5e54bf817/5.0/windows/windowsservercore-1809/Dockerfile)
+-	[`5.0.14-nanoserver-ltsc2022`, `5.0-nanoserver-ltsc2022`, `5-nanoserver-ltsc2022`](https://github.com/docker-library/mongo/blob/d27f80ddeafa162ab0a2f73a733c52f5e54bf817/5.0/windows/nanoserver-ltsc2022/Dockerfile)
+-	[`5.0.14-nanoserver-1809`, `5.0-nanoserver-1809`, `5-nanoserver-1809`](https://github.com/docker-library/mongo/blob/d27f80ddeafa162ab0a2f73a733c52f5e54bf817/5.0/windows/nanoserver-1809/Dockerfile)
+-	[`4.4.18-focal`, `4.4-focal`, `4-focal`](https://github.com/docker-library/mongo/blob/fe7b66f65c5169d86c17c8d26789c8f868fa82c9/4.4/Dockerfile)
+-	[`4.4.18-windowsservercore-ltsc2022`, `4.4-windowsservercore-ltsc2022`, `4-windowsservercore-ltsc2022`](https://github.com/docker-library/mongo/blob/065527f98244e16f3cc252c1ed369244cc5ebc30/4.4/windows/windowsservercore-ltsc2022/Dockerfile)
+-	[`4.4.18-windowsservercore-1809`, `4.4-windowsservercore-1809`, `4-windowsservercore-1809`](https://github.com/docker-library/mongo/blob/065527f98244e16f3cc252c1ed369244cc5ebc30/4.4/windows/windowsservercore-1809/Dockerfile)
+-	[`4.4.18-nanoserver-ltsc2022`, `4.4-nanoserver-ltsc2022`, `4-nanoserver-ltsc2022`](https://github.com/docker-library/mongo/blob/065527f98244e16f3cc252c1ed369244cc5ebc30/4.4/windows/nanoserver-ltsc2022/Dockerfile)
+-	[`4.4.18-nanoserver-1809`, `4.4-nanoserver-1809`, `4-nanoserver-1809`](https://github.com/docker-library/mongo/blob/065527f98244e16f3cc252c1ed369244cc5ebc30/4.4/windows/nanoserver-1809/Dockerfile)
+-	[`4.2.23-bionic`, `4.2-bionic`](https://github.com/docker-library/mongo/blob/fe7b66f65c5169d86c17c8d26789c8f868fa82c9/4.2/Dockerfile)
+-	[`4.2.23-windowsservercore-ltsc2022`, `4.2-windowsservercore-ltsc2022`](https://github.com/docker-library/mongo/blob/c830e47022955d24bad50f1237ef7b713792bf9e/4.2/windows/windowsservercore-ltsc2022/Dockerfile)
+-	[`4.2.23-windowsservercore-1809`, `4.2-windowsservercore-1809`](https://github.com/docker-library/mongo/blob/c830e47022955d24bad50f1237ef7b713792bf9e/4.2/windows/windowsservercore-1809/Dockerfile)
+-	[`4.2.23-nanoserver-ltsc2022`, `4.2-nanoserver-ltsc2022`](https://github.com/docker-library/mongo/blob/c830e47022955d24bad50f1237ef7b713792bf9e/4.2/windows/nanoserver-ltsc2022/Dockerfile)
+-	[`4.2.23-nanoserver-1809`, `4.2-nanoserver-1809`](https://github.com/docker-library/mongo/blob/c830e47022955d24bad50f1237ef7b713792bf9e/4.2/windows/nanoserver-1809/Dockerfile)
 
 ## Shared Tags
 
--	`3.6.18`, `3.6`, `3`:
-	-	[`3.6.18-xenial`](https://github.com/docker-library/mongo/blob/be3c690cae52447831b977dab9c6a66dc993df65/3.6/Dockerfile)
-	-	[`3.6.18-windowsservercore-ltsc2016`](https://github.com/docker-library/mongo/blob/be3c690cae52447831b977dab9c6a66dc993df65/3.6/windows/windowsservercore-ltsc2016/Dockerfile)
-	-	[`3.6.18-windowsservercore-1809`](https://github.com/docker-library/mongo/blob/be3c690cae52447831b977dab9c6a66dc993df65/3.6/windows/windowsservercore-1809/Dockerfile)
--	`3.6.18-windowsservercore`, `3.6-windowsservercore`, `3-windowsservercore`:
-	-	[`3.6.18-windowsservercore-ltsc2016`](https://github.com/docker-library/mongo/blob/be3c690cae52447831b977dab9c6a66dc993df65/3.6/windows/windowsservercore-ltsc2016/Dockerfile)
-	-	[`3.6.18-windowsservercore-1809`](https://github.com/docker-library/mongo/blob/be3c690cae52447831b977dab9c6a66dc993df65/3.6/windows/windowsservercore-1809/Dockerfile)
--	`4.0.18`, `4.0`:
-	-	[`4.0.18-xenial`](https://github.com/docker-library/mongo/blob/3a626c5e0de4943f0b7d0aeaf9511526d13bfb60/4.0/Dockerfile)
-	-	[`4.0.18-windowsservercore-ltsc2016`](https://github.com/docker-library/mongo/blob/0e738a2b4ce1968d09d2a9acf84585f3cb0ba467/4.0/windows/windowsservercore-ltsc2016/Dockerfile)
-	-	[`4.0.18-windowsservercore-1809`](https://github.com/docker-library/mongo/blob/0e738a2b4ce1968d09d2a9acf84585f3cb0ba467/4.0/windows/windowsservercore-1809/Dockerfile)
--	`4.0.18-windowsservercore`, `4.0-windowsservercore`:
-	-	[`4.0.18-windowsservercore-ltsc2016`](https://github.com/docker-library/mongo/blob/0e738a2b4ce1968d09d2a9acf84585f3cb0ba467/4.0/windows/windowsservercore-ltsc2016/Dockerfile)
-	-	[`4.0.18-windowsservercore-1809`](https://github.com/docker-library/mongo/blob/0e738a2b4ce1968d09d2a9acf84585f3cb0ba467/4.0/windows/windowsservercore-1809/Dockerfile)
--	`4.2.6`, `4.2`, `4`, `latest`:
-	-	[`4.2.6-bionic`](https://github.com/docker-library/mongo/blob/336871eaeddbf2e61ba3ca61cad33221f83cc710/4.2/Dockerfile)
-	-	[`4.2.6-windowsservercore-ltsc2016`](https://github.com/docker-library/mongo/blob/336871eaeddbf2e61ba3ca61cad33221f83cc710/4.2/windows/windowsservercore-ltsc2016/Dockerfile)
-	-	[`4.2.6-windowsservercore-1809`](https://github.com/docker-library/mongo/blob/336871eaeddbf2e61ba3ca61cad33221f83cc710/4.2/windows/windowsservercore-1809/Dockerfile)
--	`4.2.6-windowsservercore`, `4.2-windowsservercore`, `4-windowsservercore`, `windowsservercore`:
-	-	[`4.2.6-windowsservercore-ltsc2016`](https://github.com/docker-library/mongo/blob/336871eaeddbf2e61ba3ca61cad33221f83cc710/4.2/windows/windowsservercore-ltsc2016/Dockerfile)
-	-	[`4.2.6-windowsservercore-1809`](https://github.com/docker-library/mongo/blob/336871eaeddbf2e61ba3ca61cad33221f83cc710/4.2/windows/windowsservercore-1809/Dockerfile)
+-	`6.0.3`, `6.0`, `6`, `latest`:
+	-	[`6.0.3-focal`](https://github.com/docker-library/mongo/blob/fe7b66f65c5169d86c17c8d26789c8f868fa82c9/6.0/Dockerfile)
+	-	[`6.0.3-windowsservercore-ltsc2022`](https://github.com/docker-library/mongo/blob/b828cbca8f06a7c2bc88c7700bb781c6ca13479f/6.0/windows/windowsservercore-ltsc2022/Dockerfile)
+	-	[`6.0.3-windowsservercore-1809`](https://github.com/docker-library/mongo/blob/b828cbca8f06a7c2bc88c7700bb781c6ca13479f/6.0/windows/windowsservercore-1809/Dockerfile)
+-	`6.0.3-windowsservercore`, `6.0-windowsservercore`, `6-windowsservercore`, `windowsservercore`:
+	-	[`6.0.3-windowsservercore-ltsc2022`](https://github.com/docker-library/mongo/blob/b828cbca8f06a7c2bc88c7700bb781c6ca13479f/6.0/windows/windowsservercore-ltsc2022/Dockerfile)
+	-	[`6.0.3-windowsservercore-1809`](https://github.com/docker-library/mongo/blob/b828cbca8f06a7c2bc88c7700bb781c6ca13479f/6.0/windows/windowsservercore-1809/Dockerfile)
+-	`6.0.3-nanoserver`, `6.0-nanoserver`, `6-nanoserver`, `nanoserver`:
+	-	[`6.0.3-nanoserver-ltsc2022`](https://github.com/docker-library/mongo/blob/b828cbca8f06a7c2bc88c7700bb781c6ca13479f/6.0/windows/nanoserver-ltsc2022/Dockerfile)
+	-	[`6.0.3-nanoserver-1809`](https://github.com/docker-library/mongo/blob/b828cbca8f06a7c2bc88c7700bb781c6ca13479f/6.0/windows/nanoserver-1809/Dockerfile)
+-	`5.0.14`, `5.0`, `5`:
+	-	[`5.0.14-focal`](https://github.com/docker-library/mongo/blob/fe7b66f65c5169d86c17c8d26789c8f868fa82c9/5.0/Dockerfile)
+	-	[`5.0.14-windowsservercore-ltsc2022`](https://github.com/docker-library/mongo/blob/d27f80ddeafa162ab0a2f73a733c52f5e54bf817/5.0/windows/windowsservercore-ltsc2022/Dockerfile)
+	-	[`5.0.14-windowsservercore-1809`](https://github.com/docker-library/mongo/blob/d27f80ddeafa162ab0a2f73a733c52f5e54bf817/5.0/windows/windowsservercore-1809/Dockerfile)
+-	`5.0.14-windowsservercore`, `5.0-windowsservercore`, `5-windowsservercore`:
+	-	[`5.0.14-windowsservercore-ltsc2022`](https://github.com/docker-library/mongo/blob/d27f80ddeafa162ab0a2f73a733c52f5e54bf817/5.0/windows/windowsservercore-ltsc2022/Dockerfile)
+	-	[`5.0.14-windowsservercore-1809`](https://github.com/docker-library/mongo/blob/d27f80ddeafa162ab0a2f73a733c52f5e54bf817/5.0/windows/windowsservercore-1809/Dockerfile)
+-	`5.0.14-nanoserver`, `5.0-nanoserver`, `5-nanoserver`:
+	-	[`5.0.14-nanoserver-ltsc2022`](https://github.com/docker-library/mongo/blob/d27f80ddeafa162ab0a2f73a733c52f5e54bf817/5.0/windows/nanoserver-ltsc2022/Dockerfile)
+	-	[`5.0.14-nanoserver-1809`](https://github.com/docker-library/mongo/blob/d27f80ddeafa162ab0a2f73a733c52f5e54bf817/5.0/windows/nanoserver-1809/Dockerfile)
+-	`4.4.18`, `4.4`, `4`:
+	-	[`4.4.18-focal`](https://github.com/docker-library/mongo/blob/fe7b66f65c5169d86c17c8d26789c8f868fa82c9/4.4/Dockerfile)
+	-	[`4.4.18-windowsservercore-ltsc2022`](https://github.com/docker-library/mongo/blob/065527f98244e16f3cc252c1ed369244cc5ebc30/4.4/windows/windowsservercore-ltsc2022/Dockerfile)
+	-	[`4.4.18-windowsservercore-1809`](https://github.com/docker-library/mongo/blob/065527f98244e16f3cc252c1ed369244cc5ebc30/4.4/windows/windowsservercore-1809/Dockerfile)
+-	`4.4.18-windowsservercore`, `4.4-windowsservercore`, `4-windowsservercore`:
+	-	[`4.4.18-windowsservercore-ltsc2022`](https://github.com/docker-library/mongo/blob/065527f98244e16f3cc252c1ed369244cc5ebc30/4.4/windows/windowsservercore-ltsc2022/Dockerfile)
+	-	[`4.4.18-windowsservercore-1809`](https://github.com/docker-library/mongo/blob/065527f98244e16f3cc252c1ed369244cc5ebc30/4.4/windows/windowsservercore-1809/Dockerfile)
+-	`4.4.18-nanoserver`, `4.4-nanoserver`, `4-nanoserver`:
+	-	[`4.4.18-nanoserver-ltsc2022`](https://github.com/docker-library/mongo/blob/065527f98244e16f3cc252c1ed369244cc5ebc30/4.4/windows/nanoserver-ltsc2022/Dockerfile)
+	-	[`4.4.18-nanoserver-1809`](https://github.com/docker-library/mongo/blob/065527f98244e16f3cc252c1ed369244cc5ebc30/4.4/windows/nanoserver-1809/Dockerfile)
+-	`4.2.23`, `4.2`:
+	-	[`4.2.23-bionic`](https://github.com/docker-library/mongo/blob/fe7b66f65c5169d86c17c8d26789c8f868fa82c9/4.2/Dockerfile)
+	-	[`4.2.23-windowsservercore-ltsc2022`](https://github.com/docker-library/mongo/blob/c830e47022955d24bad50f1237ef7b713792bf9e/4.2/windows/windowsservercore-ltsc2022/Dockerfile)
+	-	[`4.2.23-windowsservercore-1809`](https://github.com/docker-library/mongo/blob/c830e47022955d24bad50f1237ef7b713792bf9e/4.2/windows/windowsservercore-1809/Dockerfile)
+-	`4.2.23-windowsservercore`, `4.2-windowsservercore`:
+	-	[`4.2.23-windowsservercore-ltsc2022`](https://github.com/docker-library/mongo/blob/c830e47022955d24bad50f1237ef7b713792bf9e/4.2/windows/windowsservercore-ltsc2022/Dockerfile)
+	-	[`4.2.23-windowsservercore-1809`](https://github.com/docker-library/mongo/blob/c830e47022955d24bad50f1237ef7b713792bf9e/4.2/windows/windowsservercore-1809/Dockerfile)
+-	`4.2.23-nanoserver`, `4.2-nanoserver`:
+	-	[`4.2.23-nanoserver-ltsc2022`](https://github.com/docker-library/mongo/blob/c830e47022955d24bad50f1237ef7b713792bf9e/4.2/windows/nanoserver-ltsc2022/Dockerfile)
+	-	[`4.2.23-nanoserver-1809`](https://github.com/docker-library/mongo/blob/c830e47022955d24bad50f1237ef7b713792bf9e/4.2/windows/nanoserver-1809/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -68,14 +98,14 @@ WARNING:
 	[https://github.com/docker-library/mongo/issues](https://github.com/docker-library/mongo/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/mongo/), [`arm64v8`](https://hub.docker.com/r/arm64v8/mongo/), [`s390x`](https://hub.docker.com/r/s390x/mongo/), [`windows-amd64`](https://hub.docker.com/r/winamd64/mongo/)
+	[`amd64`](https://hub.docker.com/r/amd64/mongo/), [`arm64v8`](https://hub.docker.com/r/arm64v8/mongo/), [`windows-amd64`](https://hub.docker.com/r/winamd64/mongo/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/mongo/` directory](https://github.com/docker-library/repo-info/blob/master/repos/mongo) ([history](https://github.com/docker-library/repo-info/commits/master/repos/mongo))  
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/mongo`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmongo)  
+	[official-images repo's `library/mongo` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fmongo)  
 	[official-images repo's `library/mongo` file](https://github.com/docker-library/official-images/blob/master/library/mongo) ([history](https://github.com/docker-library/official-images/commits/master/library/mongo))
 
 -	**Source of this description**:  
@@ -103,10 +133,10 @@ $ docker run --name some-mongo -d mongo:tag
 
 ## Connect to MongoDB from another Docker container
 
-The MongoDB server in the image listens on the standard MongoDB port, `27017`, so connecting via Docker networks will be the same as connecting to a remote `mongod`. The following example starts another MongoDB container instance and runs the `mongo` command line client against the original MongoDB container from the example above, allowing you to execute MongoDB statements against your database instance:
+The MongoDB server in the image listens on the standard MongoDB port, `27017`, so connecting via Docker networks will be the same as connecting to a remote `mongod`. The following example starts another MongoDB container instance and runs the `mongosh` (use `mongo` with `4.x` versions) command line client against the original MongoDB container from the example above, allowing you to execute MongoDB statements against your database instance:
 
 ```console
-$ docker run -it --network some-network --rm mongo mongo --host some-mongo test
+$ docker run -it --network some-network --rm mongo mongosh --host some-mongo test
 ```
 
 ... where `some-mongo` is the name of your original `mongo` container.
@@ -136,9 +166,10 @@ services:
     environment:
       ME_CONFIG_MONGODB_ADMINUSERNAME: root
       ME_CONFIG_MONGODB_ADMINPASSWORD: example
+      ME_CONFIG_MONGODB_URL: mongodb://root:example@mongo:27017/
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/3a01591e2c903a8c3224fced78f3f22b817b6272/mongo/stack.yml)
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/f6c9b596064e2eed9c3b6ac75bea606cb6d94099/mongo/stack.yml)
 
 Run `docker stack deploy -c stack.yml mongo` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8081`, `http://localhost:8081`, or `http://host-ip:8081` (as appropriate).
 
@@ -214,7 +245,7 @@ When you start the `mongo` image, you can adjust the initialization of the Mongo
 
 These variables, used in conjunction, create a new user and set that user's password. This user is created in the `admin` [authentication database](https://docs.mongodb.com/manual/core/security-users/#user-authentication-database) and given [the role of `root`](https://docs.mongodb.com/manual/reference/built-in-roles/#root), which is [a "superuser" role](https://docs.mongodb.com/manual/core/security-built-in-roles/#superuser-roles).
 
-The following is an example of using these two variables to create a MongoDB instance and then using the `mongo` cli to connect against the `admin` authentication database.
+The following is an example of using these two variables to create a MongoDB instance and then using the `mongosh` cli (use `mongo` with `4.x` versions) to connect against the `admin` authentication database.
 
 ```console
 $ docker run -d --network some-network --name some-mongo \
@@ -223,7 +254,7 @@ $ docker run -d --network some-network --name some-mongo \
 	mongo
 
 $ docker run -it --rm --network some-network mongo \
-	mongo --host some-mongo \
+	mongosh --host some-mongo \
 		-u mongoadmin \
 		-p secret \
 		--authenticationDatabase admin \
@@ -252,7 +283,7 @@ Currently, this is only supported for `MONGO_INITDB_ROOT_USERNAME` and `MONGO_IN
 
 # Initializing a fresh instance
 
-When a container is started for the first time it will execute files with extensions `.sh` and `.js` that are found in `/docker-entrypoint-initdb.d`. Files will be executed in alphabetical order. `.js` files will be executed by `mongo` using the database specified by the `MONGO_INITDB_DATABASE` variable, if it is present, or `test` otherwise. You may also switch databases within the `.js` script.
+When a container is started for the first time it will execute files with extensions `.sh` and `.js` that are found in `/docker-entrypoint-initdb.d`. Files will be executed in alphabetical order. `.js` files will be executed by `mongosh` (`mongo` on versions below 6) using the database specified by the `MONGO_INITDB_DATABASE` variable, if it is present, or `test` otherwise. You may also switch databases within the `.js` script.
 
 # Authentication
 
@@ -275,7 +306,7 @@ Important note: There are several ways to store data used by applications that r
 -	Let Docker manage the storage of your database data [by writing the database files to disk on the host system using its own internal volume management](https://docs.docker.com/engine/tutorials/dockervolumes/#adding-a-data-volume). This is the default and is easy and fairly transparent to the user. The downside is that the files may be hard to locate for tools and applications that run directly on the host system, i.e. outside containers.
 -	Create a data directory on the host system (outside the container) and [mount this to a directory visible from inside the container](https://docs.docker.com/engine/tutorials/dockervolumes/#mount-a-host-directory-as-a-data-volume). This places the database files in a known location on the host system, and makes it easy for tools and applications on the host system to access the files. The downside is that the user needs to make sure that the directory exists, and that e.g. directory permissions and other security mechanisms on the host system are set up correctly.
 
-**WARNING (Windows & OS X)**: The default Docker setup on Windows and OS X uses a VirtualBox VM to host the Docker daemon. Unfortunately, the mechanism VirtualBox uses to share folders between the host system and the Docker container is not compatible with the memory mapped files used by MongoDB (see [vbox bug](https://www.virtualbox.org/ticket/819), [docs.mongodb.org](https://docs.mongodb.com/manual/administration/production-notes/#fsync-on-directories) and related [jira.mongodb.org](https://jira.mongodb.org/browse/SERVER-8600) bug). This means that it is not possible to run a MongoDB container with the data directory mapped to the host.
+**WARNING (Windows & OS X)**: When running the Linux-based MongoDB images on Windows and OS X, the file systems used to share between the host system and the Docker container is not compatible with the memory mapped files used by MongoDB ([docs.mongodb.org](https://docs.mongodb.com/manual/administration/production-notes/#fsync---on-directories) and related [jira.mongodb.org](https://jira.mongodb.org/browse/SERVER-8600) bug). This means that it is not possible to run a MongoDB container with the data directory mapped to the host. To persist data between container restarts, we recommend using a local named volume instead (see `docker volume create`). Alternatively you can use the Windows-based images on Windows.
 
 The Docker documentation is a good starting point for understanding the different storage options and variations, and there are multiple blogs and forum postings that discuss and give advice in this area. We will simply show the basic procedure here for the latter option above:
 
@@ -306,7 +337,7 @@ The `mongo` images come in many flavors, each designed for a specific use case.
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like bionic or xenial in them. These are the suite code names for releases of [Ubuntu](https://wiki.ubuntu.com/Releases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Ubuntu.
+Some of these tags may have names like bionic or focal in them. These are the suite code names for releases of [Ubuntu](https://wiki.ubuntu.com/Releases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Ubuntu.
 
 ## `mongo:<version>-windowsservercore`
 

@@ -24,8 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7`, `latest`](https://github.com/scientificlinux/sl-docker/blob/88265b18997404f09ebbaec86bdfc87bca434963/sl7/Dockerfile)
--	[`6`](https://github.com/scientificlinux/sl-docker/blob/b625310de0dbe2cd26e2bff681a9e012691d4b3e/sl6/Dockerfile)
+-	[`7`, `latest`](https://github.com/scientificlinux/sl-docker/blob/b2ec52ef8c9e9a11d1bb4ea5441552c21f0b523b/sl7/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -40,7 +39,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/sl`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fsl)  
+	[official-images repo's `library/sl` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fsl)  
 	[official-images repo's `library/sl` file](https://github.com/docker-library/official-images/blob/master/library/sl) ([history](https://github.com/docker-library/official-images/commits/master/library/sl))
 
 -	**Source of this description**:  

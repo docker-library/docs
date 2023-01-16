@@ -1,1 +1,1 @@
-Open source Low Code Application Platform featuring MXDP/MBaaS for full-stack development.
+Open source Low Code & No Code Application Platform featuring MXDP/MBaaS for full-stack development.

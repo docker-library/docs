@@ -20,13 +20,14 @@ WARNING:
 	[Apache CouchDB](https://github.com/apache/couchdb-docker)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `3.1.0`, `3.1`, `3`](https://github.com/apache/couchdb-docker/blob/01e1c16bb405c1174393c76a7ebc3792b0c5e2c9/3.1.0/Dockerfile)
--	[`3.0.1`, `3.0`](https://github.com/apache/couchdb-docker/blob/01e1c16bb405c1174393c76a7ebc3792b0c5e2c9/3.0.1/Dockerfile)
--	[`2.3.1`, `2.3`, `2`](https://github.com/apache/couchdb-docker/blob/01e1c16bb405c1174393c76a7ebc3792b0c5e2c9/2.3.1/Dockerfile)
+-	[`latest`, `3.3.1`, `3.3`, `3`](https://github.com/apache/couchdb-docker/blob/41b7e8df5ad77c628cc6edb8419d4ade96ccba55/3.3.1/Dockerfile)
+-	[`3.2.2`, `3.2`](https://github.com/apache/couchdb-docker/blob/41b7e8df5ad77c628cc6edb8419d4ade96ccba55/3.2.2/Dockerfile)
+-	[`3.1.2`, `3.1`](https://github.com/apache/couchdb-docker/blob/41b7e8df5ad77c628cc6edb8419d4ade96ccba55/3.1.2/Dockerfile)
+-	[`2.3.1`, `2.3`, `2`](https://github.com/apache/couchdb-docker/blob/41b7e8df5ad77c628cc6edb8419d4ade96ccba55/2.3.1/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -41,7 +42,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/couchdb`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fcouchdb)  
+	[official-images repo's `library/couchdb` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fcouchdb)  
 	[official-images repo's `library/couchdb` file](https://github.com/docker-library/official-images/blob/master/library/couchdb) ([history](https://github.com/docker-library/official-images/commits/master/library/couchdb))
 
 -	**Source of this description**:  

@@ -20,13 +20,14 @@ WARNING:
 	[the Docker Community and the MySQL Team](https://github.com/docker-library/mysql)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.0.20`, `8.0`, `8`, `latest`](https://github.com/docker-library/mysql/blob/fef511444a9d2867c9e4e20f5b4062bc071c20a2/8.0/Dockerfile)
--	[`5.7.30`, `5.7`, `5`](https://github.com/docker-library/mysql/blob/7397711170daed7ebba3bf373af143e5179906fc/5.7/Dockerfile)
--	[`5.6.48`, `5.6`](https://github.com/docker-library/mysql/blob/d2ba5f1fd5c1f4002253b80575de9c759d22bb1e/5.6/Dockerfile)
+-	[`8.0.31`, `8.0`, `8`, `latest`, `8.0.31-oracle`, `8.0-oracle`, `8-oracle`, `oracle`](https://github.com/docker-library/mysql/blob/e0d43b2a29867c5b7d5c01a8fea30a086861df2b/8.0/Dockerfile.oracle)
+-	[`8.0.31-debian`, `8.0-debian`, `8-debian`, `debian`](https://github.com/docker-library/mysql/blob/e0d43b2a29867c5b7d5c01a8fea30a086861df2b/8.0/Dockerfile.debian)
+-	[`5.7.40`, `5.7`, `5`, `5.7.40-oracle`, `5.7-oracle`, `5-oracle`](https://github.com/docker-library/mysql/blob/e0d43b2a29867c5b7d5c01a8fea30a086861df2b/5.7/Dockerfile.oracle)
+-	[`5.7.40-debian`, `5.7-debian`, `5-debian`](https://github.com/docker-library/mysql/blob/e0d43b2a29867c5b7d5c01a8fea30a086861df2b/5.7/Dockerfile.debian)
 
 # Quick reference (cont.)
 
@@ -34,14 +35,14 @@ WARNING:
 	[https://github.com/docker-library/mysql/issues](https://github.com/docker-library/mysql/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/mysql/)
+	[`amd64`](https://hub.docker.com/r/amd64/mysql/), [`arm64v8`](https://hub.docker.com/r/arm64v8/mysql/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/mysql/` directory](https://github.com/docker-library/repo-info/blob/master/repos/mysql) ([history](https://github.com/docker-library/repo-info/commits/master/repos/mysql))  
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/mysql`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmysql)  
+	[official-images repo's `library/mysql` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fmysql)  
 	[official-images repo's `library/mysql` file](https://github.com/docker-library/official-images/blob/master/library/mysql) ([history](https://github.com/docker-library/official-images/commits/master/library/mysql))
 
 -	**Source of this description**:  
@@ -97,6 +98,8 @@ services:
 
   db:
     image: mysql
+    # NOTE: use of "mysql_native_password" is not recommended: https://dev.mysql.com/doc/refman/8.0/en/upgrading-from-previous-series.html#upgrade-caching-sha2-password
+    # (this is just an example, not intended to be a production configuration)
     command: --default-authentication-plugin=mysql_native_password
     restart: always
     environment:
@@ -109,7 +112,7 @@ services:
       - 8080:8080
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/b664a62bb7be3e0cbc2304e306ea42f33244fad1/mysql/stack.yml)
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/06990e05c934d425c74addcc5ea462f53de6c8cd/mysql/stack.yml)
 
 Run `docker stack deploy -c stack.yml mysql` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
 
@@ -175,15 +178,19 @@ Do note that there is no need to use this mechanism to create the root superuser
 
 ### `MYSQL_ALLOW_EMPTY_PASSWORD`
 
-This is an optional variable. Set to `yes` to allow the container to be started with a blank password for the root user. *NOTE*: Setting this variable to `yes` is not recommended unless you really know what you are doing, since this will leave your MySQL instance completely unprotected, allowing anyone to gain complete superuser access.
+This is an optional variable. Set to a non-empty value, like `yes`, to allow the container to be started with a blank password for the root user. *NOTE*: Setting this variable to `yes` is not recommended unless you really know what you are doing, since this will leave your MySQL instance completely unprotected, allowing anyone to gain complete superuser access.
 
 ### `MYSQL_RANDOM_ROOT_PASSWORD`
 
-This is an optional variable. Set to `yes` to generate a random initial password for the root user (using `pwgen`). The generated root password will be printed to stdout (`GENERATED ROOT PASSWORD: .....`).
+This is an optional variable. Set to a non-empty value, like `yes`, to generate a random initial password for the root user (using `pwgen`). The generated root password will be printed to stdout (`GENERATED ROOT PASSWORD: .....`).
 
 ### `MYSQL_ONETIME_PASSWORD`
 
-Sets root (*not* the user specified in `MYSQL_USER`!) user as expired once init is complete, forcing a password change on first login. *NOTE*: This feature is supported on MySQL 5.6+ only. Using this option on MySQL 5.5 will throw an appropriate error during initialization.
+Sets root (*not* the user specified in `MYSQL_USER`!) user as expired once init is complete, forcing a password change on first login. Any non-empty value will activate this setting. *NOTE*: This feature is supported on MySQL 5.6+ only. Using this option on MySQL 5.5 will throw an appropriate error during initialization.
+
+### `MYSQL_INITDB_SKIP_TZINFO`
+
+By default, the entrypoint script automatically loads the timezone data needed for the `CONVERT_TZ()` function. If it is not needed, any non-empty value disables timezone loading.
 
 ## Docker Secrets
 

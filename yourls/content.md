@@ -8,6 +8,8 @@ YOURLS is a set of PHP scripts that will allow you to run Your Own URL Shortener
 
 # How to use this image
 
+## Start a `%%IMAGE%%` server instance
+
 ```console
 $ docker run --name some-%%REPO%% --link some-mysql:mysql \
     -e YOURLS_SITE="https://example.com" \
@@ -16,28 +18,7 @@ $ docker run --name some-%%REPO%% --link some-mysql:mysql \
     -d %%IMAGE%%
 ```
 
-The YOURLS instance accepts [a number of environment variables for configuration](https://yourls.org/#Config).  
-A few notable/important examples for using this Docker image include:
-
--	`-e YOURLS_DB_HOST=...` (defaults to the IP and port of the linked `mysql` container)
--	`-e YOURLS_DB_USER=...` (defaults to "root")
--	`-e YOURLS_DB_PASS=...` (defaults to the value of the `MYSQL_ROOT_PASSWORD` environment variable from the linked `mysql` container)
--	`-e YOURLS_DB_NAME=...` (defaults to "yourls")
--	`-e YOURLS_DB_PREFIX=...` (defaults to "yourls_", only set this when you need to override the default table prefix)
--	`-e YOURLS_COOKIEKEY=...` (default to unique random SHA1s)
--	`-e YOURLS_SITE=...` (yourls instance url)
--	`-e YOURLS_USER=...` (yourls instance user name)
--	`-e YOURLS_PASS=...` (yourls instance user password)
-
-If the `YOURLS_DB_NAME` specified does not already exist on the given MySQL server, it will be created automatically upon startup of the `yourls` container, provided that the `YOURLS_DB_USER` specified has the necessary permissions to create it.
-
-If you'd like to be able to access the instance from the host without the container's IP, standard port mappings can be used:
-
-```console
-$ docker run --name some-%%REPO%% --link some-mysql:mysql -p 8080:80 -d %%IMAGE%%
-```
-
-Then, access it via `http://localhost:8080/admin/` or `http://host-ip:8080/admin/` in a browser.
+The YOURLS instance accepts a number of environment variables for configuration, see *Environment Variables* section below.
 
 If you'd like to use an external database instead of a linked `mysql` container, specify the hostname and port with `YOURLS_DB_HOST` along with the password in `YOURLS_DB_PASS` and the username in `YOURLS_DB_USER` (if it is something other than `root`):
 
@@ -46,9 +27,74 @@ $ docker run --name some-%%REPO%%s -e YOURLS_DB_HOST=10.1.2.3:3306 \
     -e YOURLS_DB_USER=... -e YOURLS_DB_PASS=... -d %%IMAGE%%
 ```
 
+## Connect to the YOURLS administration interface
+
+If you'd like to be able to access the instance from the host without the container's IP, standard port mappings can be used:
+
+```console
+$ docker run --name some-%%REPO%% --link some-mysql:mysql -p 8080:80 -d %%IMAGE%%
+```
+
+Then, access it via `http://localhost:8080/admin/` or `http://<host-ip>:8080/admin/` in a browser.
+
+**Note:** On first instantiation, reaching the root folder will generate an error. Access the YOURLS administration interface via the path `/admin/`.
+
+## Environment Variables
+
+When you start the `yourls` image, you can adjust the configuration of the YOURLS instance by passing one or more environment variables on the `docker run` command line.  
+The YOURLS instance accepts [a number of environment variables for configuration](https://yourls.org/#Config).  
+A few notable/important examples for using this Docker image include the following.
+
+### `YOURLS_SITE`
+
+**Required.**  
+YOURLS instance URL, no trailing slash, lowercase.
+
+Example: `YOURLS_SITE="https://example.com"`
+
+### `YOURLS_USER`
+
+**Required.**  
+YOURLS instance username.
+
+Example: `YOURLS_USER="example_username"`
+
+### `YOURLS_PASS`
+
+**Required.**  
+YOURLS instance password.
+
+Example: `YOURLS_PASS="example_password"`
+
+### `YOURLS_DB_HOST`, `YOURLS_DB_USER`, `YOURLS_DB_PASS`
+
+**Optional if linked `mysql` container.**
+
+Host, user (defaults to `root`) and password for the database.
+
+### `YOURLS_DB_NAME`
+
+**Optional.**  
+Database name, defaults to `yourls`. The database must have been created before installing YOURLS.
+
+### `YOURLS_DB_PREFIX`
+
+**Optional.**  
+Database tables prefix, defaults to `yourls_`. Only set this when you need to override the default table prefix.
+
+## Docker Secrets
+
+As an alternative to passing sensitive information via environment variables, `_FILE` may be appended to the previously listed environment variables, causing the initialization script to load the values for those variables from files present in the container. In particular, this can be used to load passwords from Docker secrets stored in `/run/secrets/<secret_name>` files. For example:
+
+```console
+$ docker run --name some-%%REPO%% -e YOURLS_DB_PASS_FILE=/run/secrets/mysql-root ... -d %%IMAGE%%:tag
+```
+
+Currently, this is supported for `YOURLS_DB_HOST`, `YOURLS_DB_USER`, `YOURLS_DB_PASS`, `YOURLS_DB_NAME`, `YOURLS_DB_PREFIX`, `YOURLS_SITE`, `YOURLS_USER`, and `YOURLS_PASS`.
+
 ## %%STACK%%
 
-Run `docker stack deploy -c stack.yml %%REPO%%` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080/admin/`, `http://localhost:8080/admin/`, or `http://host-ip:8080/admin/` (as appropriate).
+Run `docker stack deploy -c stack.yml %%REPO%%` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080/admin/`, `http://localhost:8080/admin/`, or `http://<host-ip>:8080/admin/` (as appropriate).
 
 ## Adding additional libraries / extensions
 

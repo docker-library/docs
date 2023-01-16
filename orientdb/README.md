@@ -20,16 +20,18 @@ WARNING:
 	[OrientDB](https://github.com/orientechnologies/orientdb-docker)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.0.31`, `3.0`, `latest`](https://github.com/orientechnologies/orientdb-docker/blob/7893b07ad8f78b66f1c724244a88a70a05669e6e/release/3.0.x/3.0.31/Dockerfile)
--	[`3.0.31-tp3`, `3.0-tp3`](https://github.com/orientechnologies/orientdb-docker/blob/7893b07ad8f78b66f1c724244a88a70a05669e6e/release/3.0.x/3.0.31-tp3/Dockerfile)
--	[`2.2.37`, `2.2`](https://github.com/orientechnologies/orientdb-docker/blob/76586496ae5457689bebdf76ebd267a3be1aa954/release/2.2.x/2.2.37/Dockerfile)
--	[`2.2.37-spatial`](https://github.com/orientechnologies/orientdb-docker/blob/76586496ae5457689bebdf76ebd267a3be1aa954/release/2.2.x/2.2.37-spatial/Dockerfile)
--	[`2.1.25`, `2.1`](https://github.com/orientechnologies/orientdb-docker/blob/76586496ae5457689bebdf76ebd267a3be1aa954/release/2.1.x/Dockerfile)
--	[`2.0.18`, `2.0`](https://github.com/orientechnologies/orientdb-docker/blob/76586496ae5457689bebdf76ebd267a3be1aa954/release/2.0.x/Dockerfile)
+-	[`3.2.14`, `3.2`, `latest`](https://github.com/orientechnologies/orientdb-docker/blob/8f7ae4b76aa72cccdb849a1d8988e15a12d875c0/release/3.2.x/3.2.14/Dockerfile)
+-	[`3.2.14-tp3`, `3.2-tp3`](https://github.com/orientechnologies/orientdb-docker/blob/8f7ae4b76aa72cccdb849a1d8988e15a12d875c0/release/3.2.x/3.2.14-tp3/Dockerfile)
+-	[`3.1.20`, `3.1`](https://github.com/orientechnologies/orientdb-docker/blob/a8a42acbe19dad60a051afe08ed625e66587dd37/release/3.1.x/3.1.20/Dockerfile)
+-	[`3.1.20-tp3`, `3.1-tp3`](https://github.com/orientechnologies/orientdb-docker/blob/a8a42acbe19dad60a051afe08ed625e66587dd37/release/3.1.x/3.1.20-tp3/Dockerfile)
+-	[`3.0.44`, `3.0`](https://github.com/orientechnologies/orientdb-docker/blob/a8a42acbe19dad60a051afe08ed625e66587dd37/release/3.0.x/3.0.44/Dockerfile)
+-	[`3.0.44-tp3`, `3.0-tp3`](https://github.com/orientechnologies/orientdb-docker/blob/a8a42acbe19dad60a051afe08ed625e66587dd37/release/3.0.x/3.0.44-tp3/Dockerfile)
+-	[`2.2.37`, `2.2`](https://github.com/orientechnologies/orientdb-docker/blob/a8a42acbe19dad60a051afe08ed625e66587dd37/release/2.2.x/2.2.37/Dockerfile)
+-	[`2.2.37-spatial`](https://github.com/orientechnologies/orientdb-docker/blob/a8a42acbe19dad60a051afe08ed625e66587dd37/release/2.2.x/2.2.37-spatial/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -44,7 +46,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/orientdb`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Forientdb)  
+	[official-images repo's `library/orientdb` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Forientdb)  
 	[official-images repo's `library/orientdb` file](https://github.com/docker-library/official-images/blob/master/library/orientdb) ([history](https://github.com/docker-library/official-images/commits/master/library/orientdb))
 
 -	**Source of this description**:  

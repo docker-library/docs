@@ -1,8 +1,8 @@
 # What is ArangoDB?
 
-ArangoDB is a multi-model, open-source database with flexible data models for documents, graphs, and key-values. Build high performance applications using a convenient SQL-like query language or JavaScript extensions. Use ACID transactions if you require them. Scale horizontally with a few mouse clicks.
+ArangoDB is a multi-model, open-source database with flexible data models for documents, graphs, and key-values. Build high performance applications using a convenient SQL-like query language or JavaScript extensions. Use ACID transactions if you require them. Scale horizontally and vertically with a few mouse clicks.
 
-ArangoDB runs everywhere: On-prem, in the cloud and also on [ArangoDBs Cloud Service Oasis](https://cloud.arangodb.com/home).
+ArangoDB runs everywhere: On-prem, in the cloud and also on [ArangoDB's Cloud Service Oasis](https://cloud.arangodb.com/home).
 
 The supported data models can be mixed in queries and allow ArangoDB to be the aggregation point for your data.
 
@@ -126,13 +126,34 @@ unix> docker exec -it jolly_joker arangosh
 
 See more information about [Configuration](https://www.arangodb.com/docs/stable/administration-configuration.html)
 
+### Limiting resource utilization
+
+`arangod` checks the following environment variables, which can be used to restrict how much memory and how many CPU cores it should use:
+
+-	`ARANGODB_OVERRIDE_DETECTED_TOTAL_MEMORY` *(introduced in v3.6.3)*
+
+	This variable can be used to override the automatic detection of the total amount of RAM present on the system. One can specify a decimal number (in bytes). Furthermore, if `G` or `g` is appended, the value is multiplied by `2^30`. If `M` or `m` is appended, the value is multiplied by `2^20`. If `K` or `k` is appended, the value is multiplied by `2^10`. That is, `64G` means 64 gigabytes.
+
+	The total amount of RAM detected is logged as an INFO message at server start. If the variable is set, the overridden value is shown. Various default sizes are calculated based on this value (e.g. RocksDB buffer cache size).
+
+	Setting this option can in particular be useful in two cases:
+
+	1.	If `arangod` is running in a container and its cgroup has a RAM limitation, then one should specify this limitation in this environment variable, since it is currently not automatically detected.
+	2.	If `arangod` is running alongside other services on the same machine and thus sharing the RAM with them, one should limit the amount of memory using this environment variable.
+
+-	`ARANGODB_OVERRIDE_DETECTED_NUMBER_OF_CORES` *(introduced in v3.7.1)*
+
+	This variable can be used to override the automatic detection of the number of CPU cores present on the system.
+
+	The number of CPU cores detected is logged as an INFO message at server start. If the variable is set, the overridden value is shown. Various default values for threading are calculated based on this value.
+
+	Setting this option is useful if `arangod` is running in a container or alongside other services on the same machine and shall not use all available CPUs.
+
 ## Persistent Data
 
-ArangoDB supports two different storage engines as of ArangoDB 3.2. You can choose them while instantiating the container with the environment variable `ARANGO_STORAGE_ENGINE`. With `mmfiles` you choose the classic storage engine, `rocksdb` will choose the newly introduced storage engine based on [RocksDB](http://rocksdb.org/). The default choice is `mmfiles`.
+ArangoDB supports two different storage engines from version 3.2 to 3.6. You can choose them while instantiating the container with the environment variable `ARANGO_STORAGE_ENGINE`. With `mmfiles` you choose the classic storage engine (not available in 3.7 and later), `rocksdb` will choose the storage engine based on [RocksDB](http://rocksdb.org/). The default choice is `rocksdb` from version 3.4 on.
 
-ArangoDB use the volume `/var/lib/arangodb3` as database directory to store the collection data and the volume `/var/lib/arangodb3-apps` as apps directory to store any extensions. These directories are marked as docker volumes.
-
-Please note that the old version 2.x used `/var/lib/arangodb` and `/var/lib/arangodb-apps`. We will refer to the 3.x variant in this document. In case you are starting a 2.x image just replace it with the 2.x variant.
+ArangoDB uses the volume `/var/lib/arangodb3` as database directory to store the collection data and the volume `/var/lib/arangodb3-apps` as apps directory to store any extensions. These directories are marked as docker volumes.
 
 See `docker inspect --format "{{ .Config.Volumes}}" arangodb` for all volumes.
 

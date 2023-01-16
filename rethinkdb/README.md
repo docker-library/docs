@@ -20,11 +20,11 @@ WARNING:
 	[RethinkDB](https://github.com/rethinkdb/rethinkdb-dockerfiles)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.4.0`, `2.4`, `2`, `latest`](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/54d3eebf6409b196264c193e0cbad027061739b3/bionic/2.4.0/Dockerfile)
+-	[`2.4.2-bullseye-slim`, `2.4-bullseye-slim`, `2-bullseye-slim`, `bullseye-slim`, `2.4.2`, `2.4`, `2`, `latest`](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/826a4193366e7d0ff176d101679385125b8fa4f1/bullseye/2.4.2/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -32,14 +32,14 @@ WARNING:
 	[https://github.com/rethinkdb/rethinkdb-dockerfiles/issues](https://github.com/rethinkdb/rethinkdb-dockerfiles/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/rethinkdb/)
+	[`amd64`](https://hub.docker.com/r/amd64/rethinkdb/), [`arm64v8`](https://hub.docker.com/r/arm64v8/rethinkdb/), [`s390x`](https://hub.docker.com/r/s390x/rethinkdb/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/rethinkdb/` directory](https://github.com/docker-library/repo-info/blob/master/repos/rethinkdb) ([history](https://github.com/docker-library/repo-info/commits/master/repos/rethinkdb))  
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/rethinkdb`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Frethinkdb)  
+	[official-images repo's `library/rethinkdb` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Frethinkdb)  
 	[official-images repo's `library/rethinkdb` file](https://github.com/docker-library/official-images/blob/master/library/rethinkdb) ([history](https://github.com/docker-library/official-images/commits/master/library/rethinkdb))
 
 -	**Source of this description**:  
@@ -93,6 +93,20 @@ kill $(lsof -t -i @localhost:8080 -sTCP:listen)
 ## Configuration
 
 See the [official docs](http://www.rethinkdb.com/docs/) for infomation on using and configuring a RethinkDB cluster.
+
+# Image Variants
+
+The `rethinkdb` images come in many flavors, each designed for a specific use case.
+
+## `rethinkdb:<version>`
+
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+Some of these tags may have names like bullseye in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+
+## `rethinkdb:<version>-slim`
+
+This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `rethinkdb`. Unless you are working in an environment where *only* the `rethinkdb` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
 
 # License
 

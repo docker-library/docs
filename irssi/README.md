@@ -20,12 +20,12 @@ WARNING:
 	[Jessie and Tianon (of the Docker Community)](https://github.com/jessfraz/irssi), [with the appreciation of the Irssi Project](https://twitter.com/GeertHauwaerts/status/559131523145035776)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.2.2`, `1.2`, `1`, `latest`](https://github.com/jessfraz/irssi/blob/773216139cd3685fd710b77dc7d4ee26ec9fb187/debian/Dockerfile)
--	[`1.2.2-alpine`, `1.2-alpine`, `1-alpine`, `alpine`](https://github.com/jessfraz/irssi/blob/4eb15e5f0583e58b326282ce0b1454aa5df1cf31/alpine/Dockerfile)
+-	[`1.4.3`, `1.4`, `1`, `latest`](https://github.com/jessfraz/irssi/blob/980ac05787b560d131fdb3cf0fc45d097fd8d366/debian/Dockerfile)
+-	[`1.4.3-alpine`, `1.4-alpine`, `1-alpine`, `alpine`](https://github.com/jessfraz/irssi/blob/980ac05787b560d131fdb3cf0fc45d097fd8d366/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -40,7 +40,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/irssi`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Firssi)  
+	[official-images repo's `library/irssi` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Firssi)  
 	[official-images repo's `library/irssi` file](https://github.com/docker-library/official-images/blob/master/library/irssi) ([history](https://github.com/docker-library/official-images/commits/master/library/irssi))
 
 -	**Source of this description**:  
@@ -95,9 +95,9 @@ This is the defacto image. If you are unsure about what your needs are, you prob
 
 ## `irssi:<version>-alpine`
 
-This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
-This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
 
 To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 

@@ -24,8 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`11`, `11.0.7`, `lts`](https://github.com/SAP/SapMachine-infrastructure/blob/3d2d199e3c53a0de726491827ef0587c3c9b4f20/dockerfiles/official/lts/Dockerfile)
--	[`14`, `14.0.1`, `latest`](https://github.com/SAP/SapMachine-infrastructure/blob/dddf6cf714e932b34e25d69f8cdb9c2381851199/dockerfiles/official/stable/Dockerfile)
+-	[`11`, `11.0.17`](https://github.com/SAP/SapMachine-infrastructure/blob/936dab0baa76e5db609e4c0dffc632dc4f42eca8/dockerfiles/official/11/Dockerfile)
+-	[`17`, `17.0.5`, `lts`](https://github.com/SAP/SapMachine-infrastructure/blob/fb4f1fe1d5cb453891a95bfdec43c0196a09e324/dockerfiles/official/17/Dockerfile)
+-	[`19`, `19.0.1`, `latest`](https://github.com/SAP/SapMachine-infrastructure/blob/e2320c79758f23b60d17726185c9ede2a5622f54/dockerfiles/official/19/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -33,14 +34,14 @@ WARNING:
 	[GitHub](https://github.com/SAP/SapMachine/issues) For more information see the [SapMachine Wiki](https://github.com/SAP/SapMachine/wiki).
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/sapmachine/)
+	[`amd64`](https://hub.docker.com/r/amd64/sapmachine/), [`arm64v8`](https://hub.docker.com/r/arm64v8/sapmachine/), [`ppc64le`](https://hub.docker.com/r/ppc64le/sapmachine/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/sapmachine/` directory](https://github.com/docker-library/repo-info/blob/master/repos/sapmachine) ([history](https://github.com/docker-library/repo-info/commits/master/repos/sapmachine))  
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/sapmachine`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fsapmachine)  
+	[official-images repo's `library/sapmachine` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fsapmachine)  
 	[official-images repo's `library/sapmachine` file](https://github.com/docker-library/official-images/blob/master/library/sapmachine) ([history](https://github.com/docker-library/official-images/commits/master/library/sapmachine))
 
 -	**Source of this description**:  

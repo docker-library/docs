@@ -1,1 +1,1 @@
-View [license information](http://eclipse.org/jetty/licenses.php) for the software contained in this image.
+View [license information](http://eclipse.org/jetty/licenses.html) for the software contained in this image.

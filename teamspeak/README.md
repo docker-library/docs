@@ -20,11 +20,11 @@ WARNING:
 	TeamSpeak Developers [nwerensteijn](https://github.com/nwerensteijn) and [muenchow](https://github.com/muenchow)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.12`, `3.12.1`, `latest`](https://github.com/TeamSpeak-Systems/teamspeak-linux-docker-images/blob/dd1e68d64552f8848f88b542d2c6d4707a6f20b6/alpine/Dockerfile)
+-	[`3.13`, `3.13.7`, `latest`](https://github.com/TeamSpeak-Systems/teamspeak-linux-docker-images/blob/e1cd2cd1de40103c20adfe40079f2b6282215e72/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -39,7 +39,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/teamspeak`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fteamspeak)  
+	[official-images repo's `library/teamspeak` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fteamspeak)  
 	[official-images repo's `library/teamspeak` file](https://github.com/docker-library/official-images/blob/master/library/teamspeak) ([history](https://github.com/docker-library/official-images/commits/master/library/teamspeak))
 
 -	**Source of this description**:  

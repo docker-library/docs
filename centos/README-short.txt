@@ -1,1 +1,1 @@
-The official build of CentOS.
+DEPRECATED; The official build of CentOS.

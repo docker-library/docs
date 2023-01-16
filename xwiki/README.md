@@ -24,10 +24,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`11`, `11.10`, `11.10.5`, `11-mysql-tomcat`, `11.10-mysql-tomcat`, `11.10.5-mysql-tomcat`, `lts-mysql-tomcat`, `lts-mysql`, `lts`](https://github.com/xwiki-contrib/docker-xwiki/blob/f6c69a5d6c525829713209cb2a0d8ce14b8a5038/11/mysql-tomcat/Dockerfile)
--	[`11-postgres-tomcat`, `11.10-postgres-tomcat`, `11.10.5-postgres-tomcat`, `lts-postgres-tomcat`, `lts-postgres`](https://github.com/xwiki-contrib/docker-xwiki/blob/f6c69a5d6c525829713209cb2a0d8ce14b8a5038/11/postgres-tomcat/Dockerfile)
--	[`12`, `12.3`, `12-mysql-tomcat`, `12.3-mysql-tomcat`, `mysql-tomcat`, `stable-mysql-tomcat`, `stable-mysql`, `stable`, `latest`](https://github.com/xwiki-contrib/docker-xwiki/blob/ebb23e6def6d52dc5dc79bb5844f71f68aba0728/12/mysql-tomcat/Dockerfile)
--	[`12-postgres-tomcat`, `12.3-postgres-tomcat`, `postgres-tomcat`, `stable-postgres-tomcat`, `stable-postgres`](https://github.com/xwiki-contrib/docker-xwiki/blob/ebb23e6def6d52dc5dc79bb5844f71f68aba0728/12/postgres-tomcat/Dockerfile)
+-	[`14`, `14.10`, `14.10.3`, `14-mysql-tomcat`, `14.10-mysql-tomcat`, `14.10.3-mysql-tomcat`, `mysql-tomcat`, `stable-mysql-tomcat`, `stable-mysql`, `stable`, `latest`, `lts-mysql-tomcat`, `lts-mysql`, `lts`](https://github.com/xwiki-contrib/docker-xwiki/blob/572e93824b7c86ad545db1460c70fca7c9203e4a/14/mysql-tomcat/Dockerfile)
+-	[`14-postgres-tomcat`, `14.10-postgres-tomcat`, `14.10.3-postgres-tomcat`, `postgres-tomcat`, `stable-postgres-tomcat`, `stable-postgres`, `lts-postgres-tomcat`, `lts-postgres`](https://github.com/xwiki-contrib/docker-xwiki/blob/572e93824b7c86ad545db1460c70fca7c9203e4a/14/postgres-tomcat/Dockerfile)
+-	[`14-mariadb-tomcat`, `14.10-mariadb-tomcat`, `14.10.3-mariadb-tomcat`, `mariadb-tomcat`, `stable-mariadb-tomcat`, `stable-mariadb`, `lts-mariadb-tomcat`, `lts-mariadb`](https://github.com/xwiki-contrib/docker-xwiki/blob/572e93824b7c86ad545db1460c70fca7c9203e4a/14/mariadb-tomcat/Dockerfile)
+-	[`14.4`, `14.4.7`, `14.4-mysql-tomcat`, `14.4.7-mysql-tomcat`](https://github.com/xwiki-contrib/docker-xwiki/blob/2afb800f554f08f7ada9b1ab09f9140fca737177/14.4/mysql-tomcat/Dockerfile)
+-	[`14.4-postgres-tomcat`, `14.4.7-postgres-tomcat`](https://github.com/xwiki-contrib/docker-xwiki/blob/2afb800f554f08f7ada9b1ab09f9140fca737177/14.4/postgres-tomcat/Dockerfile)
+-	[`14.4-mariadb-tomcat`, `14.4.7-mariadb-tomcat`](https://github.com/xwiki-contrib/docker-xwiki/blob/2afb800f554f08f7ada9b1ab09f9140fca737177/14.4/mariadb-tomcat/Dockerfile)
+-	[`13`, `13.10`, `13.10.11`, `13-mysql-tomcat`, `13.10-mysql-tomcat`, `13.10.11-mysql-tomcat`](https://github.com/xwiki-contrib/docker-xwiki/blob/cd1487dfd967742d686a60f48f07e984b8f263a3/13/mysql-tomcat/Dockerfile)
+-	[`13-postgres-tomcat`, `13.10-postgres-tomcat`, `13.10.11-postgres-tomcat`](https://github.com/xwiki-contrib/docker-xwiki/blob/cd1487dfd967742d686a60f48f07e984b8f263a3/13/postgres-tomcat/Dockerfile)
+-	[`13-mariadb-tomcat`, `13.10-mariadb-tomcat`, `13.10.11-mariadb-tomcat`](https://github.com/xwiki-contrib/docker-xwiki/blob/cd1487dfd967742d686a60f48f07e984b8f263a3/13/mariadb-tomcat/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -42,7 +47,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/xwiki`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fxwiki)  
+	[official-images repo's `library/xwiki` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fxwiki)  
 	[official-images repo's `library/xwiki` file](https://github.com/docker-library/official-images/blob/master/library/xwiki) ([history](https://github.com/docker-library/official-images/commits/master/library/xwiki))
 
 -	**Source of this description**:  

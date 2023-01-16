@@ -24,8 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.7.0`](https://github.com/docker-library/elasticsearch/blob/b8cd81aa48870e31970acbca7ec376953810d522/7/Dockerfile)
--	[`6.8.9`](https://github.com/docker-library/elasticsearch/blob/e86bdc93b04fedbf1e6d0754d1f54324707439ed/6/Dockerfile)
+-	[`8.6.0`](https://github.com/docker-library/elasticsearch/blob/06dbd87db84a477d0814e343cbf970c7abf69649/8/Dockerfile)
+-	[`7.17.8`](https://github.com/docker-library/elasticsearch/blob/4ae79746e02c947ff9dae92f7011399f9c809f18/7/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -33,14 +33,14 @@ WARNING:
 	For issues with Elasticsearch Docker Image or Elasticsearch: https://github.com/elastic/elasticsearch/issues
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/elasticsearch/)
+	[`amd64`](https://hub.docker.com/r/amd64/elasticsearch/), [`arm64v8`](https://hub.docker.com/r/arm64v8/elasticsearch/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/elasticsearch/` directory](https://github.com/docker-library/repo-info/blob/master/repos/elasticsearch) ([history](https://github.com/docker-library/repo-info/commits/master/repos/elasticsearch))  
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/elasticsearch`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Felasticsearch)  
+	[official-images repo's `library/elasticsearch` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Felasticsearch)  
 	[official-images repo's `library/elasticsearch` file](https://github.com/docker-library/official-images/blob/master/library/elasticsearch) ([history](https://github.com/docker-library/official-images/commits/master/library/elasticsearch))
 
 -	**Source of this description**:  
@@ -92,7 +92,7 @@ See [Install Elasticsearch with Docker](https://www.elastic.co/guide/en/elastics
 
 # License
 
-View [license information](https://github.com/elastic/elasticsearch/blob/6.4/licenses/ELASTIC-LICENSE.txt) for the software contained in this image.
+View [license information](https://github.com/elastic/elasticsearch/blob/master/licenses/ELASTIC-LICENSE-2.0.txt) for the software contained in this image.
 
 As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 

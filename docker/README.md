@@ -20,14 +20,35 @@ WARNING:
 	[Tianon (of the Docker Project)](https://github.com/docker-library/docker)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](http://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`19.03.8`, `19.03`, `19`, `stable`, `test`, `latest`](https://github.com/docker-library/docker/blob/0bab8e3d0ebe6dc4b7a122bb1d0b2e017925c50d/19.03/Dockerfile)
--	[`19.03.8-dind`, `19.03-dind`, `19-dind`, `stable-dind`, `test-dind`, `dind`](https://github.com/docker-library/docker/blob/a73d96e731e2dd5d6822c99a9af4dcbfbbedb2be/19.03/dind/Dockerfile)
--	[`19.03.8-dind-rootless`, `19.03-dind-rootless`, `19-dind-rootless`, `stable-dind-rootless`, `test-dind-rootless`, `dind-rootless`](https://github.com/docker-library/docker/blob/25c81c65fe4e971ff75e67df38e8b9970b523f6e/19.03/dind-rootless/Dockerfile)
--	[`19.03.8-git`, `19.03-git`, `19-git`, `stable-git`, `test-git`, `git`](https://github.com/docker-library/docker/blob/7a67842e7ff12c1426ae6a67ac1b7a701b51f3df/19.03/git/Dockerfile)
+(See ["What's the difference between 'Shared' and 'Simple' tags?" in the FAQ](https://github.com/docker-library/faq#whats-the-difference-between-shared-and-simple-tags).)
+
+## Simple Tags
+
+-	[`23.0.0-rc.1-cli`, `23.0-rc-cli`, `rc-cli`, `23.0.0-rc.1-cli-alpine3.17`](https://github.com/docker-library/docker/blob/0997ca7ad1d7892324d84951d55192d5ef629bcc/23.0-rc/cli/Dockerfile)
+-	[`23.0.0-rc.1-dind`, `23.0-rc-dind`, `rc-dind`, `23.0.0-rc.1-dind-alpine3.17`, `23.0.0-rc.1`, `23.0-rc`, `rc`, `23.0.0-rc.1-alpine3.17`](https://github.com/docker-library/docker/blob/023a45d6e2a9009fdf01da87499c6f9ca6e27bef/23.0-rc/dind/Dockerfile)
+-	[`23.0.0-rc.1-dind-rootless`, `23.0-rc-dind-rootless`, `rc-dind-rootless`](https://github.com/docker-library/docker/blob/023a45d6e2a9009fdf01da87499c6f9ca6e27bef/23.0-rc/dind-rootless/Dockerfile)
+-	[`23.0.0-rc.1-git`, `23.0-rc-git`, `rc-git`](https://github.com/docker-library/docker/blob/c608944bf9422f7cd70951b9519866495b81e76d/23.0-rc/git/Dockerfile)
+-	[`23.0.0-rc.1-windowsservercore-ltsc2022`, `23.0-rc-windowsservercore-ltsc2022`, `rc-windowsservercore-ltsc2022`](https://github.com/docker-library/docker/blob/023a45d6e2a9009fdf01da87499c6f9ca6e27bef/23.0-rc/windows/windowsservercore-ltsc2022/Dockerfile)
+-	[`23.0.0-rc.1-windowsservercore-1809`, `23.0-rc-windowsservercore-1809`, `rc-windowsservercore-1809`](https://github.com/docker-library/docker/blob/023a45d6e2a9009fdf01da87499c6f9ca6e27bef/23.0-rc/windows/windowsservercore-1809/Dockerfile)
+-	[`20.10.22-cli`, `20.10-cli`, `20-cli`, `cli`, `20.10.22-cli-alpine3.17`, `20.10.22`, `20.10`, `20`, `latest`, `20.10.22-alpine3.17`](https://github.com/docker-library/docker/blob/95414fb25c65f77412e44dac9949c12e73dc58dc/20.10/cli/Dockerfile)
+-	[`20.10.22-dind`, `20.10-dind`, `20-dind`, `dind`, `20.10.22-dind-alpine3.17`](https://github.com/docker-library/docker/blob/32a92d275e8aa2edd2a99ad55e56a106e48601d6/20.10/dind/Dockerfile)
+-	[`20.10.22-dind-rootless`, `20.10-dind-rootless`, `20-dind-rootless`, `dind-rootless`](https://github.com/docker-library/docker/blob/32a92d275e8aa2edd2a99ad55e56a106e48601d6/20.10/dind-rootless/Dockerfile)
+-	[`20.10.22-git`, `20.10-git`, `20-git`, `git`](https://github.com/docker-library/docker/blob/f23a2bea97f6d7ec563bc316302fb8edf620ec5b/20.10/git/Dockerfile)
+-	[`20.10.22-windowsservercore-ltsc2022`, `20.10-windowsservercore-ltsc2022`, `20-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`](https://github.com/docker-library/docker/blob/32a92d275e8aa2edd2a99ad55e56a106e48601d6/20.10/windows/windowsservercore-ltsc2022/Dockerfile)
+-	[`20.10.22-windowsservercore-1809`, `20.10-windowsservercore-1809`, `20-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/docker-library/docker/blob/32a92d275e8aa2edd2a99ad55e56a106e48601d6/20.10/windows/windowsservercore-1809/Dockerfile)
+
+## Shared Tags
+
+-	`23.0.0-rc.1-windowsservercore`, `23.0-rc-windowsservercore`, `rc-windowsservercore`:
+	-	[`23.0.0-rc.1-windowsservercore-ltsc2022`](https://github.com/docker-library/docker/blob/023a45d6e2a9009fdf01da87499c6f9ca6e27bef/23.0-rc/windows/windowsservercore-ltsc2022/Dockerfile)
+	-	[`23.0.0-rc.1-windowsservercore-1809`](https://github.com/docker-library/docker/blob/023a45d6e2a9009fdf01da87499c6f9ca6e27bef/23.0-rc/windows/windowsservercore-1809/Dockerfile)
+-	`20.10.22-windowsservercore`, `20.10-windowsservercore`, `20-windowsservercore`, `windowsservercore`:
+	-	[`20.10.22-windowsservercore-ltsc2022`](https://github.com/docker-library/docker/blob/32a92d275e8aa2edd2a99ad55e56a106e48601d6/20.10/windows/windowsservercore-ltsc2022/Dockerfile)
+	-	[`20.10.22-windowsservercore-1809`](https://github.com/docker-library/docker/blob/32a92d275e8aa2edd2a99ad55e56a106e48601d6/20.10/windows/windowsservercore-1809/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -35,14 +56,14 @@ WARNING:
 	[https://github.com/docker-library/docker/issues](https://github.com/docker-library/docker/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/docker/), [`arm32v6`](https://hub.docker.com/r/arm32v6/docker/), [`arm32v7`](https://hub.docker.com/r/arm32v7/docker/), [`arm64v8`](https://hub.docker.com/r/arm64v8/docker/)
+	[`amd64`](https://hub.docker.com/r/amd64/docker/), [`arm64v8`](https://hub.docker.com/r/arm64v8/docker/), [`windows-amd64`](https://hub.docker.com/r/winamd64/docker/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/docker/` directory](https://github.com/docker-library/repo-info/blob/master/repos/docker) ([history](https://github.com/docker-library/repo-info/commits/master/repos/docker))  
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/docker`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fdocker)  
+	[official-images repo's `library/docker` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fdocker)  
 	[official-images repo's `library/docker` file](https://github.com/docker-library/official-images/blob/master/library/docker) ([history](https://github.com/docker-library/official-images/commits/master/library/docker))
 
 -	**Source of this description**:  
@@ -64,7 +85,7 @@ If you are still convinced that you need Docker-in-Docker and not just access to
 
 # How to use this image
 
-[![asciicast](https://asciinema.org/a/24707.png)](https://asciinema.org/a/24707)
+[![asciicast](https://asciinema.org/a/378669.svg)](https://asciinema.org/a/378669)
 
 ## TLS
 
@@ -238,9 +259,41 @@ $ docker run --privileged --name some-docker -d \
 	docker:dind --storage-driver overlay2
 ```
 
+## Runtime Settings Considerations
+
+Inspired by the [official systemd `docker.service` configuration](https://github.com/docker/docker-ce-packaging/blob/57ae892b13de399171fc33f878b70e72855747e6/systemd/docker.service#L30-L45), you may want to consider different values for the following runtime configuration options, especially for production Docker instances:
+
+```console
+$ docker run --privileged --name some-docker -d \
+	... \
+	--ulimit nofile=-1 \
+	--ulimit nproc=-1 \
+	--ulimit core=-1 \
+	--pids-limit -1 \
+	--oom-score-adj -500 \
+	docker:dind
+```
+
+Some of these will not be supported based on the settings on the host's `dockerd`, such as `--ulimit nofile=-1`, giving errors that look like `error setting rlimit type 7: operation not permitted`, and some may inherit sane values from the host `dockerd` instance or may not apply for your usage of Docker-in-Docker (for example, you likely want to set `--oom-score-adj` to a value that's higher than `dockerd` on the host so that your Docker-in-Docker instance is killed before the host Docker instance is).
+
 ## Rootless
 
 For more information about using the experimental "rootless" image variants, see [docker-library/docker#174](https://github.com/docker-library/docker/pull/174).
+
+**Note:** just like the regular `dind` images, `--privileged` is required for Docker-in-Docker to function properly ([docker-library/docker#151](https://github.com/docker-library/docker/issues/151#issuecomment-483185972) & [docker-library/docker#281](https://github.com/docker-library/docker/issues/281#issuecomment-744766015)). For `19.03.x` rootless images, an argument of `--experimental` is required for `dockerd` ([docker/docker#40759](https://github.com/docker/docker/pull/40759)).
+
+Basic example usage:
+
+```console
+$ docker run -d --name some-docker --privileged docker:dind-rootless
+$ docker logs --tail=3 some-docker # to verify the daemon has finished generating TLS certificates and is listening successfully
+time="xxx" level=info msg="Daemon has completed initialization"
+time="xxx" level=info msg="API listen on /run/user/1000/docker.sock"
+time="xxx" level=info msg="API listen on [::]:2376"
+$ docker exec -it some-docker docker-entrypoint.sh sh # using "docker-entrypoint.sh" which auto-sets "DOCKER_HOST" appropriately
+/ $ docker info --format '{{ json .SecurityOptions }}'
+["name=seccomp,profile=default","name=rootless"]
+```
 
 ## Where to Store Data
 
@@ -259,6 +312,18 @@ The Docker documentation is a good starting point for understanding the differen
 	```
 
 The `-v /my/own/var-lib-docker:/var/lib/docker` part of the command mounts the `/my/own/var-lib-docker` directory from the underlying host system as `/var/lib/docker` inside the container, where Docker by default will write its data files.
+
+# Image Variants
+
+The `docker` images come in many flavors, each designed for a specific use case.
+
+## `docker:<version>`
+
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+## `docker:<version>-windowsservercore`
+
+Unfortunately, Windows does not support nested containers, so this image variant only contains the client (intended for use against an existing Docker engine, ala `-v //./pipe/docker_engine://./pipe/docker_engine`).
 
 # License
 

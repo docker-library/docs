@@ -36,31 +36,34 @@ $ docker run -d %%IMAGE%%:fpm
 
 As the fastCGI-Process is not capable of serving static files (style sheets, images, ...) the webserver needs access to these files. This can be achieved with the `volumes-from` option. You can find more information in the docker-compose section.
 
-## Using the cron job
+## Background tasks
 
-There are three options to enable the cron-job for Friendica:
+Friendica requires background tasks to fetch and send all kind of messages and maintain the complete instance. This setup is crucial for the Friendica node. There are two options to enable background tasks for Friendica:
 
--	Using the default Image and activate the cron-job (see [Installation](https://friendi.ca/resources/installation/), sector `Activating scheduled tasks`)
--	Using the default image (apache, fpm, fpm-alpine) and creating **two** container (one for cron and one for the main app)
--	Using one of the additional, prepared [`cron dockerfiles`](https://github.com/friendica/docker/tree/master/.examples/dockerfiles/cron)
+-	Using the default Image and manually setup background tasks (see Friendica [Install](https://github.com/friendica/friendica/blob/2021.03-rc/doc/Install.md#required-background-tasks))
+-	Using the default image (apache, fpm, fpm-alpine) and starting a dedicated `cron` instance and use `cron.sh` as startup command (like this [Example](https://github.com/friendica/docker/blob/stable/.examples/docker-compose/insecure/mariadb-cron-redis/apache/docker-compose.yml))
 
 ## Possible Environment Variables
 
 **Friendica Settings**
 
--	`FRIENDICA_URL` The Friendica URL.
+-	`FRIENDICA_URL` The Friendica complete URL including protocol, domain and subpath (example: https://friendica.local/sub/ ).
 -	`FRIENDICA_TZ` The default localization of the Friendica server.
 -	`FRIENDICA_LANG` The default language of the Friendica server.
 -	`FRIENDICA_SITENAME` The Sitename of the Friendica server.
 -	`FRIENDICA_NO_VALIDATION` If set to `true`, the URL and E-Mail validation will be disabled.
--	`FRIENDICA_DATA` If set to `true`, the fileystem will be used instead of the DB backend.
+-	`FRIENDICA_DATA` Set the name of the storage provider (e.g `Filesystem` to use filesystem), default ist the DB backend.
 -	`FRIENDICA_DATA_DIR` The data directory of the Friendica server (Default: /var/www/data).
+-	`FRIENDICA_UPGRADE` Force starting the Friendica update even it's the same version (Default: `false`).
 
 **Friendica Logging**
 
 -	`FRIENDICA_DEBUGGING` If set to `true`, the logging of Friendica is enabled.
 -	`FRIENDICA_LOGFILE` (optional) The path to the logfile (Default: /var/www/friendica.log).
 -	`FRIENDICA_LOGLEVEL` (optional) The loglevel to log (Default: notice).
+-	`FRIENDICA_LOGGER` (optional) Set the type - stream, syslog, monolog (Default: stream).
+-	`FRIENDICA_SYSLOG_FLAGS` (optional) In case syslog is used, set the corresponding flags (Default: `LOG_PID | LOG_ODELAY | LOG_CONS | LOG_PERROR`).
+-	`FRIENDICA_SYSLOG_FACTORY` (optional) In case syslog is used, set the corresponding factory (Default: `LOG_USER`).
 
 **Database** (**required at installation**)
 
@@ -77,6 +80,11 @@ There are three options to enable the cron-job for Friendica:
 -	`REDIS_PW` (optional) The password for the redis instance (in case of locking).
 -	`REDIS_DB` (optional) The database instance of the redis instance (in case of locking).
 
+**PHP limits**
+
+-	`PHP_MEMORY_LIMIT` (default `512M`) This sets the maximum amount of memory in bytes that a script is allowed to allocate. This is meant to help prevent poorly written scripts from eating up all available memory, but it can prevent normal operation if set too tight.
+-	`PHP_UPLOAD_LIMIT` (default `512M`) This sets the upload limit (`post_max_size` and `upload_max_filesize`) for big files. Note that you may have to change other limits depending on your client, webserver or operating system.
+
 ## Administrator account
 
 Because Friendica links the administrator account to a specific mail address, you **have** to set a valid address for `MAILNAME`.
@@ -92,13 +100,14 @@ You have to set a valid SMTP-MTA for the `SMTP` environment variable to enable m
 The following environment variables are possible for the SMTP examples.
 
 -	`SMTP` Address of the SMTP Mail-Gateway. (**required**)
+-	`SMTP_PORT` Port of the SMTP Mail-Gateway. (Default: 587)
 -	`SMTP_DOMAIN` The sender domain. (**required** - e.g. `friendica.local`)
 -	`SMTP_FROM` Sender user-part of the address. (Default: `no-reply` - e.g. no-reply@friendica.local)
 -	`SMTP_TLS` Use TLS for connecting the SMTP Mail-Gateway. (Default: empty)
 -	`SMTP_STARTTLS` Use STARTTLS for connecting the SMTP Mail-Gateway. (Default: empty)
+-	`SMTP_AUTH` Auth mode for the SMTP Mail-Gateway. (Default: `On`)
 -	`SMTP_AUTH_USER` Username for the SMTP Mail-Gateway. (Default: empty)
 -	`SMTP_AUTH_PASS` Password for the SMTP Mail-Gateway. (Default: empty)
--	`SMTP_AUTH_METHOD` Authentication method for the SMTP Mail-Gateway. (Default: empty/plain text)
 
 ## Database settings
 
@@ -134,11 +143,72 @@ $ docker run -d \
 
 The Friendica image supports auto configuration via environment variables. You can preconfigure everything that is asked on the install page on first run. To enable the automatic installation, you have to the following environment variables:
 
+-	`FRIENDICA_URL` The Friendica complete URL including protocol, domain and subpath (example: https://friendica.local/sub/ ).
 -	`FRIENDICA_ADMIN_MAIL` E-Mail address of the administrator.
 -	`MYSQL_USER` Username for the database user using mysql / mariadb.
 -	`MYSQL_PASSWORD` Password for the database user using mysql / mariadb.
 -	`MYSQL_DATABASE` Name of the database using mysql / mariadb.
 -	`MYSQL_HOST` Hostname of the database server using mysql / mariadb.
+
+# Docker Secrets
+
+As an alternative to passing sensitive information via environment variables, _FILE may be appended to the previously listed environment variables, causing the initialization script to load the values for those variables from files present in the container. In particular, this can be used to load passwords from Docker secrets stored in /run/secrets/<secret_name> files. For example:
+
+```yaml
+version: '3.2'
+
+services:
+  db:
+    image: mariadb
+    restart: always
+    volumes:
+      - db:/var/lib/mysql
+    environment:
+       - MYSQL_DATABASE_FILE=/run/secrets/mysql_database
+       - MYSQL_USER_FILE=/run/secrets/mysql_user
+       - MYSQL_PASSWORD_FILE=/run/secrets/mysql_password
+    secrets:
+      - mysql_database
+      - mysql_password
+      - mysql_user
+
+  app:
+    image: friendica
+    restart: always
+    volumes:
+      - friendica:/var/www/html
+    ports:
+      - "8080:80"
+    environment:
+      - MYSQL_HOST=db
+      - MYSQL_DATABASE_FILE=/run/secrets/mysql_database
+      - MYSQL_USER_FILE=/run/secrets/mysql_user
+      - MYSQL_PASSWORD_FILE=/run/secrets/mysql_password
+      - FRIENDICA_ADMIN_MAIL_FILE=/run/secrets/friendica_admin_mail
+    depends_on:
+      - db
+    secrets:
+      - friendica_admin_mail
+      - mysql_database
+      - mysql_password
+      - mysql_user
+
+volumes:
+  db:
+  friendica:
+
+secrets:
+  friendica_admin_mail:
+    file: ./friendica_admin_mail.txt # put admin email to this file
+  mysql_database:
+    file: ./mysql_database.txt # put mysql database name to this file
+  mysql_password:
+    file: ./mysql_password.txt # put mysql password to this file
+  mysql_user:
+    file: ./mysql_user.txt # put mysql username to this file
+```
+
+Currently, this is only supported for `FRIENDICA_ADMIN_MAIL`, `MYSQL_DATABASE`, `MYSQL_PASSWORD`, `MYSQL_USER`.
 
 # Maintenance of the image
 
@@ -263,25 +333,7 @@ Then run `docker-compose up -d`, now you can access Friendica at http://localhos
 
 # Special settings for DEV/RC images
 
-The `*-dev` and `*-rc` branches are having additional possibilities to get the latest sources of Friendica.
-
-## Possible Environment Variables
-
-The following environment variables are possible for these kind of images too:
-
-**Develop/Release Candidate Settings**
-
--	`FRIENDICA_UPGRADE` If set to `true`, a develop or release candidat node will get updated at startup.
--	`FRIENDICA_REPOSITORY` If set, a custom repository will be chosen (Default: `friendica`)
--	`FRIENDICA_ADDONS_REPO` If set, a custom repository for the addons will be chosen (Default: `friendica`)
--	`FRIENDICA_VERSION` If set, a custom branch will be chosen (Default is based on the chosen image version)
--	`FRIENDICA_ADDONS` If set, a custom branch for the addons will be chosen (Default is based on the chosen image version)
-
-## Updating to a newer version
-
-You don't need to pull the image for each commit in [friendica](https://github.com/friendica/friendica/). Instead, the release candidate or develop branch will get updated if no installation was found or the environment variable `FRIENDICA_UPGRADE` is set to `true`.
-
-It will clone the latest Friendica version and copy it to your working directory.
+The `*-dev` and `*-rc` branches are directly downloaded and verified at each docker start to ensure that the latest sources are used. The parameter `FRIENDICA_UPGRADE` is required to be `true` (Default: `false`) to activate this behavior.
 
 # Questions / Issues
 
