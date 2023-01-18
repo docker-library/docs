@@ -26,7 +26,7 @@ There are three major differences in Amazon Linux 2 from its predecessors:
 
 ## Is Amazon Linux 2 build an official LTS build?
 
-Yes. Amazon Linux 2 is supported by AWS for five years after release (June 2018).
+Yes. Amazon Linux 2 end of support date (End of Life, or EOL) has been extended by two years from 2023-06-30 to 2025-06-30 to provide customers with ample time to migrate to the next version.
 
 ## What packages are available in the Amazon Linux containers?
 
