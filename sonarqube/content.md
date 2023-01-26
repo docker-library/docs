@@ -8,6 +8,16 @@
 
 Here you'll find the Docker images for the Community Edition, Developer Edition, Enterprise Edition, and Data Center Edition of SonarQube.
 
+## LTS image
+
+SonarQube LTS is here to ensure stability, the LTS only get security and bugfixes, please [see here](https://www.sonarsource.com/products/sonarqube/downloads/lts/) to get detailed informations
+
+The current LTS version is 9.9.0.
+
+The ```LTS``` tag behave as the latest community LTS tag, which means it will be updated each year with the new LTS.
+
+Please use the corresponding 9.9.x tag on [that list](./README.md#supported-tags-and-respective-dockerfile-links)
+
 ## Docker Host Requirements
 
 Because SonarQube uses an embedded Elasticsearch, make sure that your Docker host configuration complies with the [Elasticsearch production mode requirements](https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html#docker-cli-run-prod-mode) and [File Descriptors configuration](https://www.elastic.co/guide/en/elasticsearch/reference/current/file-descriptors.html).
