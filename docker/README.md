@@ -28,13 +28,13 @@ WARNING:
 
 ## Simple Tags
 
--	[`23.0.0-rc.3-cli`, `23.0-rc-cli`, `rc-cli`, `23.0.0-rc.3-cli-alpine3.17`](https://github.com/docker-library/docker/blob/7a7c807686f54b67646bc75d2c81a68f9a906dbd/23.0-rc/cli/Dockerfile)
+-	[`23.0.0-rc.3-cli`, `23.0-rc-cli`, `rc-cli`, `23.0.0-rc.3-cli-alpine3.17`](https://github.com/docker-library/docker/blob/4904d1d77c6a11cf526f01ccdf6729e3e8c547ec/23.0-rc/cli/Dockerfile)
 -	[`23.0.0-rc.3-dind`, `23.0-rc-dind`, `rc-dind`, `23.0.0-rc.3-dind-alpine3.17`, `23.0.0-rc.3`, `23.0-rc`, `rc`, `23.0.0-rc.3-alpine3.17`](https://github.com/docker-library/docker/blob/7a7c807686f54b67646bc75d2c81a68f9a906dbd/23.0-rc/dind/Dockerfile)
 -	[`23.0.0-rc.3-dind-rootless`, `23.0-rc-dind-rootless`, `rc-dind-rootless`](https://github.com/docker-library/docker/blob/7a7c807686f54b67646bc75d2c81a68f9a906dbd/23.0-rc/dind-rootless/Dockerfile)
 -	[`23.0.0-rc.3-git`, `23.0-rc-git`, `rc-git`](https://github.com/docker-library/docker/blob/c608944bf9422f7cd70951b9519866495b81e76d/23.0-rc/git/Dockerfile)
 -	[`23.0.0-rc.3-windowsservercore-ltsc2022`, `23.0-rc-windowsservercore-ltsc2022`, `rc-windowsservercore-ltsc2022`](https://github.com/docker-library/docker/blob/7a7c807686f54b67646bc75d2c81a68f9a906dbd/23.0-rc/windows/windowsservercore-ltsc2022/Dockerfile)
 -	[`23.0.0-rc.3-windowsservercore-1809`, `23.0-rc-windowsservercore-1809`, `rc-windowsservercore-1809`](https://github.com/docker-library/docker/blob/7a7c807686f54b67646bc75d2c81a68f9a906dbd/23.0-rc/windows/windowsservercore-1809/Dockerfile)
--	[`20.10.23-cli`, `20.10-cli`, `20-cli`, `cli`, `20.10.23-cli-alpine3.17`, `20.10.23`, `20.10`, `20`, `latest`, `20.10.23-alpine3.17`](https://github.com/docker-library/docker/blob/4abc6d9dadc3876b11aac5abf84d501d7ee0d318/20.10/cli/Dockerfile)
+-	[`20.10.23-cli`, `20.10-cli`, `20-cli`, `cli`, `20.10.23-cli-alpine3.17`, `20.10.23`, `20.10`, `20`, `latest`, `20.10.23-alpine3.17`](https://github.com/docker-library/docker/blob/01890140c36e50cb3d035cba6765800f8e3295b8/20.10/cli/Dockerfile)
 -	[`20.10.23-dind`, `20.10-dind`, `20-dind`, `dind`, `20.10.23-dind-alpine3.17`](https://github.com/docker-library/docker/blob/4abc6d9dadc3876b11aac5abf84d501d7ee0d318/20.10/dind/Dockerfile)
 -	[`20.10.23-dind-rootless`, `20.10-dind-rootless`, `20-dind-rootless`, `dind-rootless`](https://github.com/docker-library/docker/blob/4abc6d9dadc3876b11aac5abf84d501d7ee0d318/20.10/dind-rootless/Dockerfile)
 -	[`20.10.23-git`, `20.10-git`, `20-git`, `git`](https://github.com/docker-library/docker/blob/f23a2bea97f6d7ec563bc316302fb8edf620ec5b/20.10/git/Dockerfile)
