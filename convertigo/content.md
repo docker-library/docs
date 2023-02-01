@@ -69,7 +69,7 @@ $ docker run -d --name C8O --link [mysql-container]:mysql -p 28080:28080        
 
 ## Where is Convertigo Low Code server storing deployed projects
 
-Projects are deployed in the Convertigo workspace, a simple file system directory. You can map the docker container **/workspace** to your physical system by using :
+Projects are deployed in the Convertigo workspace, a simple file system directory. You can map the docker container **/workspace** to your physical system by using:
 
 ```console
 $ docker run --name C8O -v $(pwd):/workspace -d -p 28080:28080 %%IMAGE%%
@@ -247,7 +247,7 @@ $ docker run -d --name C8O -e SESSION_TIMEOUT=5 -p 28080:28080 %%IMAGE%%
 
 ## `DISABLE_SUDO` Environment variable
 
-The image include **sudo** command line, configured to allow the **convertigo** user to use it without password and to perform some **root** action inside the container. This variable allows to disable this permission.
+The image includes **sudo** command line, configured to allow the **convertigo** user to use it without password and to perform some **root** action inside the container. This variable allows to disable this permission.
 
 The default `DISABLE_SUDO` value is **empty** and can be defined this way:
 
