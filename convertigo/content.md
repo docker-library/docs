@@ -4,8 +4,7 @@ Convertigo is an open source fullstack Low Code & No Code platform. The platform
 
 1.	**Convertigo Server**: The back-end server part. Handles back-end connectors, micro-services execution, offline data device synchronization and serves Web & Mobile Web apps. Runs as a Docker container with the `convertigo` image
 2.	**Convertigo Studio**: Runs on a Windows or a MacOS workstation, Eclipse based IDE, used to program Back-end micro-services workflows and use the "Mobile Builder" edition to build Mobile & Web apps UIs in a MXDP (Multi eXperience Development Platform) Low code mode. Can be directly downloaded from [Sourceforge.net](https://sourceforge.net/projects/convertigo/files/latest/download)
-3.	**Convertigo SDKs**: Can be used with third party Client Web & Mobile development tools such as Xcode (iOS) Android Studio (Android) Angualr, Vue.js or plain js . SDKS are available on each platform standard repository (Bintray for Android, Cocoapods for iOS and Nuget for .NET)
-4.	**Convertigo Forms**: The No Code App Builder to build form based apps as PWAs or Web applications with a Web Based NoCode studio intented for non technical developpers (Citizen Developpers)
+3.	**Convertigo NoCode Studio**: The No Code App Builder to build form based apps as PWAs or Web applications with a Web Based NoCode studio intented for non technical developpers (Citizen Developpers)
 
 Convertigo Community edition brought to you by Convertigo SA (Paris & San Francisco). The platform is currently used by more than 100K developers worldwide, building enterprise class mobile apps.
 

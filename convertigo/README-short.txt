@@ -1,1 +1,1 @@
-Open source Low Code & No Code Application Platform featuring MXDP/MBaaS for full-stack development.
+Enterprise grade full-stack Open source Low Code & No Code Platform for web & mobile application
