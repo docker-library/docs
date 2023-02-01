@@ -51,9 +51,6 @@ WARNING:
 -	[`lunar-curl`, `23.04-curl`](https://github.com/docker-library/buildpack-deps/blob/31e15bc4a2352c20998e5da6bd8aaa727fd19d06/ubuntu/lunar/curl/Dockerfile)
 -	[`lunar-scm`, `23.04-scm`](https://github.com/docker-library/buildpack-deps/blob/31e15bc4a2352c20998e5da6bd8aaa727fd19d06/ubuntu/lunar/scm/Dockerfile)
 -	[`lunar`, `23.04`](https://github.com/docker-library/buildpack-deps/blob/31e15bc4a2352c20998e5da6bd8aaa727fd19d06/ubuntu/lunar/Dockerfile)
--	[`xenial-curl`, `16.04-curl`](https://github.com/docker-library/buildpack-deps/blob/93d2a6f64abe6787b7dd25c7d5322af1fa2e3f55/ubuntu/xenial/curl/Dockerfile)
--	[`xenial-scm`, `16.04-scm`](https://github.com/docker-library/buildpack-deps/blob/65d69325ad741cea6dee20781c1faaab2e003d87/ubuntu/xenial/scm/Dockerfile)
--	[`xenial`, `16.04`](https://github.com/docker-library/buildpack-deps/blob/98a5ab81d47a106c458cdf90733df0ee8beea06c/ubuntu/xenial/Dockerfile)
 
 # Quick reference (cont.)
 
