@@ -24,11 +24,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`18.04`, `bionic-20230126`, `bionic`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-bionic-amd64-20230126&id=4dd8c0973fccaf8699bac0a666f007b9d05c95fd)
--	[`20.04`, `focal-20230126`, `focal`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-focal-amd64-20230126&id=51f5b41f106b8b1e926fcfd2382813801c571233)
--	[`22.04`, `jammy-20230126`, `jammy`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-amd64-20230126&id=c59419b8a85cb1d938e73e83af8f8e6ff4110444)
--	[`22.10`, `kinetic-20230126`, `kinetic`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-kinetic-amd64-20230126&id=a806765a4285f4a19789ade917f91d2b878955d8)
--	[`23.04`, `lunar-20230124.1`, `lunar`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-lunar-amd64-20230124.1&id=407671a226ede7401c411693e77fb4b8bf0adf75)
+-	[`18.04`, `bionic-20230126`, `bionic`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-bionic-amd64-20230126&id=f127810992c0981574cc137b9c83937ca1a304dc)
+-	[`20.04`, `focal-20230126`, `focal`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-focal-amd64-20230126&id=e21c3f62fbbe0afd5ac89aa149e36f08a7debeb8)
+-	[`22.04`, `jammy-20230126`, `jammy`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-amd64-20230126&id=d4e91f86e34e0de683c46f08178d93fcf83a515d)
+-	[`22.10`, `kinetic-20230126`, `kinetic`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-kinetic-amd64-20230126&id=5ad3fc123e02cbb835b34898b42729fcbbdb6097)
+-	[`23.04`, `lunar-20230128`, `lunar`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-lunar-amd64-20230128&id=edd50e68967994c3b3f2fd08b5013190f1776a3f)
 
 # Quick reference (cont.)
 
