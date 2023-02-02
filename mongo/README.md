@@ -28,7 +28,7 @@ WARNING:
 
 ## Simple Tags
 
--	[`6.0.4-focal`, `6.0-focal`, `6-focal`, `focal`](https://github.com/docker-library/mongo/blob/eeabd09934c7d4bad942f3a754130d806c63ab80/6.0/Dockerfile)
+-	[`6.0.4-jammy`, `6.0-jammy`, `6-jammy`, `jammy`](https://github.com/docker-library/mongo/blob/840d7ed246dc72ae9e84ce92b9f5a6f9dfa4d6e1/6.0/Dockerfile)
 -	[`6.0.4-windowsservercore-ltsc2022`, `6.0-windowsservercore-ltsc2022`, `6-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`](https://github.com/docker-library/mongo/blob/e64481539290cf8c53e38a6093808d5abbd28858/6.0/windows/windowsservercore-ltsc2022/Dockerfile)
 -	[`6.0.4-windowsservercore-1809`, `6.0-windowsservercore-1809`, `6-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/docker-library/mongo/blob/e64481539290cf8c53e38a6093808d5abbd28858/6.0/windows/windowsservercore-1809/Dockerfile)
 -	[`6.0.4-nanoserver-ltsc2022`, `6.0-nanoserver-ltsc2022`, `6-nanoserver-ltsc2022`, `nanoserver-ltsc2022`](https://github.com/docker-library/mongo/blob/e64481539290cf8c53e38a6093808d5abbd28858/6.0/windows/nanoserver-ltsc2022/Dockerfile)
@@ -62,7 +62,7 @@ WARNING:
 ## Shared Tags
 
 -	`6.0.4`, `6.0`, `6`, `latest`:
-	-	[`6.0.4-focal`](https://github.com/docker-library/mongo/blob/eeabd09934c7d4bad942f3a754130d806c63ab80/6.0/Dockerfile)
+	-	[`6.0.4-jammy`](https://github.com/docker-library/mongo/blob/840d7ed246dc72ae9e84ce92b9f5a6f9dfa4d6e1/6.0/Dockerfile)
 	-	[`6.0.4-windowsservercore-ltsc2022`](https://github.com/docker-library/mongo/blob/e64481539290cf8c53e38a6093808d5abbd28858/6.0/windows/windowsservercore-ltsc2022/Dockerfile)
 	-	[`6.0.4-windowsservercore-1809`](https://github.com/docker-library/mongo/blob/e64481539290cf8c53e38a6093808d5abbd28858/6.0/windows/windowsservercore-1809/Dockerfile)
 -	`6.0.4-windowsservercore`, `6.0-windowsservercore`, `6-windowsservercore`, `windowsservercore`:
@@ -367,7 +367,7 @@ The `mongo` images come in many flavors, each designed for a specific use case.
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like bionic or focal in them. These are the suite code names for releases of [Ubuntu](https://wiki.ubuntu.com/Releases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Ubuntu.
+Some of these tags may have names like bionic, focal, or jammy in them. These are the suite code names for releases of [Ubuntu](https://wiki.ubuntu.com/Releases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Ubuntu.
 
 ## `mongo:<version>-windowsservercore`
 
