@@ -24,16 +24,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.0.14-jdk8`, `3.0-jdk8`, `jdk8`, `3.0.14-jdk8-jammy`, `3.0-jdk8-jammy`, `jdk8-jammy`](https://github.com/groovy/docker-groovy/blob/bc4c3ee2a4e26f14458b121f238bb862c9de6b27/jdk8/Dockerfile)
--	[`3.0.14-jdk11`, `3.0-jdk11`, `jdk11`, `3.0.14-jdk11-jammy`, `3.0-jdk11-jammy`, `jdk11-jammy`](https://github.com/groovy/docker-groovy/blob/bc4c3ee2a4e26f14458b121f238bb862c9de6b27/jdk11/Dockerfile)
--	[`3.0.14-jdk11-alpine`, `3.0-jdk11-alpine`, `jdk11-alpine`](https://github.com/groovy/docker-groovy/blob/bc4c3ee2a4e26f14458b121f238bb862c9de6b27/jdk11-alpine/Dockerfile)
--	[`3.0.14-jdk17`, `3.0-jdk17`, `jdk17`, `3.0.14-jdk`, `3.0-jdk`, `3.0.14`, `3.0`, `3`, `jdk`, `latest`, `3.0.14-jdk17-jammy`, `3.0-jdk17-jammy`, `jdk17-jammy`, `3.0.14-jdk-jammy`, `3.0-jdk-jammy`, `3.0.14-jammy`, `3.0-jammy`, `3-jammy`, `jdk-jammy`, `jammy`](https://github.com/groovy/docker-groovy/blob/bc4c3ee2a4e26f14458b121f238bb862c9de6b27/jdk17/Dockerfile)
--	[`3.0.14-jdk17-alpine`, `3.0-jdk17-alpine`, `jdk17-alpine`, `3.0.14-jdk-alpine`, `3.0-jdk-alpine`, `3.0.14-alpine`, `3.0-alpine`, `3-alpine`, `jdk-alpine`, `alpine`](https://github.com/groovy/docker-groovy/blob/bc4c3ee2a4e26f14458b121f238bb862c9de6b27/jdk17-alpine/Dockerfile)
--	[`4.0.7-jdk8`, `4.0-jdk8`, `4.0.7-jdk8-jammy`, `4.0-jdk8-jammy`](https://github.com/groovy/docker-groovy/blob/085e0eb9a0611dd84c16efdcad26f352157d6f79/jdk8/Dockerfile)
--	[`4.0.7-jdk11`, `4.0-jdk11`, `4.0.7-jdk11-jammy`, `4.0-jdk11-jammy`](https://github.com/groovy/docker-groovy/blob/085e0eb9a0611dd84c16efdcad26f352157d6f79/jdk11/Dockerfile)
--	[`4.0.7-jdk11-alpine`, `4.0-jdk11-alpine`](https://github.com/groovy/docker-groovy/blob/085e0eb9a0611dd84c16efdcad26f352157d6f79/jdk11-alpine/Dockerfile)
--	[`4.0.7-jdk17`, `4.0-jdk17`, `4.0.7-jdk`, `4.0.7`, `4.0`, `4`, `4.0.7-jdk17-jammy`, `4.0-jdk17-jammy`, `4.0.7-jdk-jammy`, `4.0.7-jammy`, `4.0-jammy`, `4-jammy`](https://github.com/groovy/docker-groovy/blob/085e0eb9a0611dd84c16efdcad26f352157d6f79/jdk17/Dockerfile)
--	[`4.0.7-jdk17-alpine`, `4.0-jdk17-alpine`, `4.0.7-jdk-alpine`, `4.0.7-alpine`, `4.0-alpine`, `4-alpine`](https://github.com/groovy/docker-groovy/blob/085e0eb9a0611dd84c16efdcad26f352157d6f79/jdk17-alpine/Dockerfile)
+-	[`4.0.8-jdk8`, `4.0-jdk8`, `jdk8`, `4.0.8-jdk8-jammy`, `4.0-jdk8-jammy`, `jdk8-jammy`](https://github.com/groovy/docker-groovy/blob/de3d7a503dc033e4ce07942165aa363867ba9ce3/jdk8/Dockerfile)
+-	[`4.0.8-jdk11`, `4.0-jdk11`, `jdk11`, `4.0.8-jdk11-jammy`, `4.0-jdk11-jammy`, `jdk11-jammy`](https://github.com/groovy/docker-groovy/blob/de3d7a503dc033e4ce07942165aa363867ba9ce3/jdk11/Dockerfile)
+-	[`4.0.8-jdk11-alpine`, `4.0-jdk11-alpine`, `jdk11-alpine`](https://github.com/groovy/docker-groovy/blob/de3d7a503dc033e4ce07942165aa363867ba9ce3/jdk11-alpine/Dockerfile)
+-	[`4.0.8-jdk17`, `4.0-jdk17`, `jdk17`, `4.0.8-jdk`, `4.0-jdk`, `4.0.8`, `4.0`, `4`, `jdk`, `latest`, `4.0.8-jdk17-jammy`, `4.0-jdk17-jammy`, `jdk17-jammy`, `4.0.8-jdk-jammy`, `4.0-jdk-jammy`, `4.0.8-jammy`, `4.0-jammy`, `4-jammy`, `jdk-jammy`, `jammy`](https://github.com/groovy/docker-groovy/blob/de3d7a503dc033e4ce07942165aa363867ba9ce3/jdk17/Dockerfile)
+-	[`4.0.8-jdk17-alpine`, `4.0-jdk17-alpine`, `jdk17-alpine`, `4.0.8-jdk-alpine`, `4.0-jdk-alpine`, `4.0.8-alpine`, `4.0-alpine`, `4-alpine`, `jdk-alpine`, `alpine`](https://github.com/groovy/docker-groovy/blob/de3d7a503dc033e4ce07942165aa363867ba9ce3/jdk17-alpine/Dockerfile)
 
 # Quick reference (cont.)
 
