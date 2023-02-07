@@ -78,9 +78,13 @@ To quickly run a demo instance, see Using Docker on the [Try Out SonarQube](http
 
 ## Installation
 
+> **Multi-platform support**: Starting from SonarQube `9.9` LTS, the docker images support running both on `amd64` architecture and `arm64`-based Apple Silicon (M1).
+
 For installation instructions, see Installing the Server from the Docker Image on the [Install the Server](https://docs.sonarqube.org/latest/setup/install-server/) page.
 
 To run a cluster with the Data Center Edition, please refer to Installing SonarQube from the Docker Image on the [Install the Server as a Cluster](https://docs.sonarqube.org/latest/setup/install-cluster/) page.
+
+> The `lts` tag on Docker images is replaced with every new LTS release. If you want to avoid any automatic major upgrades, we recommend using the corresponding `9.9-<edition>` tag instead of `lts-<edition>`.
 
 ## Configuration
 

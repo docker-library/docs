@@ -25,7 +25,7 @@ WARNING:
 # Supported tags and respective `Dockerfile` links
 
 -	[`8.6.1`](https://github.com/docker-library/kibana/blob/99dfd6ecee59bd6e72c85c2f6b4ded17e3180c5e/8/Dockerfile)
--	[`7.17.8`](https://github.com/docker-library/kibana/blob/c98bb27941c6b2dafd6d963aab2b0cc9f0876315/7/Dockerfile)
+-	[`7.17.9`](https://github.com/docker-library/kibana/blob/fd40461903be40051a19f81fc7a1630e8049343f/7/Dockerfile)
 
 # Quick reference (cont.)
 
