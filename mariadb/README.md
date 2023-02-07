@@ -26,15 +26,15 @@ Also see the ["Getting Help with MariaDB" article on the MariaDB Knowledge Base]
 
 # Supported tags and respective `Dockerfile` links
 
--	[`10.11.1-rc-jammy`, `10.11-rc-jammy`, `10.11.1-rc`, `10.11-rc`](https://github.com/MariaDB/mariadb-docker/blob/56ef6d9f842e1ddf50e4359625a6e5cef1748c38/10.11/Dockerfile)
--	[`10.10.2-jammy`, `10.10-jammy`, `10-jammy`, `jammy`, `10.10.2`, `10.10`, `10`, `latest`](https://github.com/MariaDB/mariadb-docker/blob/56ef6d9f842e1ddf50e4359625a6e5cef1748c38/10.10/Dockerfile)
--	[`10.9.4-jammy`, `10.9-jammy`, `10.9.4`, `10.9`](https://github.com/MariaDB/mariadb-docker/blob/56ef6d9f842e1ddf50e4359625a6e5cef1748c38/10.9/Dockerfile)
--	[`10.8.6-jammy`, `10.8-jammy`, `10.8.6`, `10.8`](https://github.com/MariaDB/mariadb-docker/blob/56ef6d9f842e1ddf50e4359625a6e5cef1748c38/10.8/Dockerfile)
--	[`10.7.7-focal`, `10.7-focal`, `10.7.7`, `10.7`](https://github.com/MariaDB/mariadb-docker/blob/56ef6d9f842e1ddf50e4359625a6e5cef1748c38/10.7/Dockerfile)
--	[`10.6.11-focal`, `10.6-focal`, `10.6.11`, `10.6`](https://github.com/MariaDB/mariadb-docker/blob/56ef6d9f842e1ddf50e4359625a6e5cef1748c38/10.6/Dockerfile)
--	[`10.5.18-focal`, `10.5-focal`, `10.5.18`, `10.5`](https://github.com/MariaDB/mariadb-docker/blob/56ef6d9f842e1ddf50e4359625a6e5cef1748c38/10.5/Dockerfile)
--	[`10.4.27-focal`, `10.4-focal`, `10.4.27`, `10.4`](https://github.com/MariaDB/mariadb-docker/blob/56ef6d9f842e1ddf50e4359625a6e5cef1748c38/10.4/Dockerfile)
--	[`10.3.37-focal`, `10.3-focal`, `10.3.37`, `10.3`](https://github.com/MariaDB/mariadb-docker/blob/56ef6d9f842e1ddf50e4359625a6e5cef1748c38/10.3/Dockerfile)
+-	[`10.11.1-rc-jammy`, `10.11-rc-jammy`, `10.11.1-rc`, `10.11-rc`](https://github.com/MariaDB/mariadb-docker/blob/ac276eb82f0535ff1849018f46be5e5ed396bda1/10.11/Dockerfile)
+-	[`10.10.3-jammy`, `10.10-jammy`, `10-jammy`, `jammy`, `10.10.3`, `10.10`, `10`, `latest`](https://github.com/MariaDB/mariadb-docker/blob/051d37a079b9d068692513a11e1e6bde3fda4223/10.10/Dockerfile)
+-	[`10.9.5-jammy`, `10.9-jammy`, `10.9.5`, `10.9`](https://github.com/MariaDB/mariadb-docker/blob/051d37a079b9d068692513a11e1e6bde3fda4223/10.9/Dockerfile)
+-	[`10.8.7-jammy`, `10.8-jammy`, `10.8.7`, `10.8`](https://github.com/MariaDB/mariadb-docker/blob/051d37a079b9d068692513a11e1e6bde3fda4223/10.8/Dockerfile)
+-	[`10.7.8-focal`, `10.7-focal`, `10.7.8`, `10.7`](https://github.com/MariaDB/mariadb-docker/blob/051d37a079b9d068692513a11e1e6bde3fda4223/10.7/Dockerfile)
+-	[`10.6.12-focal`, `10.6-focal`, `10.6.12`, `10.6`](https://github.com/MariaDB/mariadb-docker/blob/051d37a079b9d068692513a11e1e6bde3fda4223/10.6/Dockerfile)
+-	[`10.5.19-focal`, `10.5-focal`, `10.5.19`, `10.5`](https://github.com/MariaDB/mariadb-docker/blob/051d37a079b9d068692513a11e1e6bde3fda4223/10.5/Dockerfile)
+-	[`10.4.28-focal`, `10.4-focal`, `10.4.28`, `10.4`](https://github.com/MariaDB/mariadb-docker/blob/051d37a079b9d068692513a11e1e6bde3fda4223/10.4/Dockerfile)
+-	[`10.3.38-focal`, `10.3-focal`, `10.3.38`, `10.3`](https://github.com/MariaDB/mariadb-docker/blob/051d37a079b9d068692513a11e1e6bde3fda4223/10.3/Dockerfile)
 
 # Quick reference (cont.)
 
