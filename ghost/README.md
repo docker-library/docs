@@ -149,7 +149,7 @@ version: '3.1'
 services:
 
   ghost:
-    image: ghost:4-alpine
+    image: ghost:5
     restart: always
     ports:
       - 8080:2368
@@ -164,17 +164,51 @@ services:
       url: http://localhost:8080
       # contrary to the default mentioned in the linked documentation, this image defaults to NODE_ENV=production (so development mode needs to be explicitly specified if desired)
       #NODE_ENV: development
+    volumes:
+      - ghost-data:/var/lib/ghost/content
 
   db:
     image: mysql:8.0
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: example
+    volumes:
+      - db-data:/var/lib/mysql
+
+volumes:
+  ghost-data:
+  db-data:
 ```
 
 [![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/57f9907ee5bbeaede8c97f439b9c11bc1081dd75/ghost/stack.yml)
 
 Run `docker stack deploy -c stack.yml ghost` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
+
+### Production mode with Apache2 as reverse proxy
+You must update your configuration file, copy-and-paste the below block of configuration, amending it to suit your needs:
+```
+<VirtualHost *:*>
+        ProxyRequests Off
+        <Proxy *>
+          Order deny,allow
+          Allow from all
+        </Proxy>
+        ProxyPreserveHost on
+        ProxyPass "/"  "http://127.0.0.1:8080/"
+        ProxyPassReverse "/"  "http://127.0.0.1:8080/"
+        RequestHeader set "X-Forwarded-Proto" expr=%{REQUEST_SCHEME}
+        RequestHeader set "X-Forwarded-SSL" expr=%{HTTPS}
+</VirtualHost>
+```
+For the proxy feature you should install:
+```sh
+sudo apt-get install libapache2-mod-proxy-html
+sudo a2enmod proxy
+sudo a2enmod proxy_html
+sudo a2enmod proxy_http
+sudo a2enmod headers
+sudo service apache2 restart
+```
 
 # Image Variants
 
