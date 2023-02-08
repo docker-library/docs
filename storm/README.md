@@ -24,9 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.2.4`, `1.2`](https://github.com/31z4/storm-docker/blob/f72658afa5e9c4ee4d4d5ef5cf9b32b226d0ed19/1.2.4/Dockerfile)
 -	[`1.2.4-temurin`, `1.2-temurin`](https://github.com/31z4/storm-docker/blob/14c749848c8ff7c955f2b29c57e327ae80fbbb7e/1.2.4/Dockerfile)
--	[`2.4.0`, `2.4`](https://github.com/31z4/storm-docker/blob/f72658afa5e9c4ee4d4d5ef5cf9b32b226d0ed19/2.4.0/Dockerfile)
 -	[`2.4.0-temurin`, `2.4-temurin`, `latest`](https://github.com/31z4/storm-docker/blob/14c749848c8ff7c955f2b29c57e327ae80fbbb7e/2.4.0/Dockerfile)
 
 # Quick reference (cont.)
@@ -35,7 +33,7 @@ WARNING:
 	[https://github.com/31z4/storm-docker/issues](https://github.com/31z4/storm-docker/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/storm/)
+	[`amd64`](https://hub.docker.com/r/amd64/storm/), [`arm64v8`](https://hub.docker.com/r/arm64v8/storm/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/storm/` directory](https://github.com/docker-library/repo-info/blob/master/repos/storm) ([history](https://github.com/docker-library/repo-info/commits/master/repos/storm))  
