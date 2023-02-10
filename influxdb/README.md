@@ -158,8 +158,7 @@ $ docker exec influxdb2 influx setup \
       --username $USERNAME \
       --password $PASSWORD \
       --org $ORGANIZATION \
-      --bucket $BUCKET \
-      --setup
+      --bucket $BUCKET
 ```
 
 Running setup from within the container will cause CLI configs to be written to `/etc/influxdb2/influx-configs`. You can then use the `influx` CLI from within the container to extract the generated admin token:
