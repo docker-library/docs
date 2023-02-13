@@ -24,8 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `9.1.4`](https://github.com/SWI-Prolog/docker-swipl/blob/366d912cf8e9c8ba3783a76acf57380d7a281883/9.1.4/bullseye/Dockerfile)
--	[`stable`, `9.0.4`](https://github.com/SWI-Prolog/docker-swipl/blob/366d912cf8e9c8ba3783a76acf57380d7a281883/9.0.4/bullseye/Dockerfile)
+-	[`latest`, `9.1.5`](https://github.com/SWI-Prolog/docker-swipl/blob/67b156afb3feb8e0a4537bfb7671662f12526156/9.1.5/bullseye/Dockerfile)
+-	[`stable`, `9.0.4`](https://github.com/SWI-Prolog/docker-swipl/blob/67b156afb3feb8e0a4537bfb7671662f12526156/9.0.4/bullseye/Dockerfile)
 
 # Quick reference (cont.)
 
