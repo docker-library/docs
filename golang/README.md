@@ -28,8 +28,8 @@ WARNING:
 
 ## Simple Tags
 
--	[`1.20.1-bullseye`, `1.20-bullseye`, `1-bullseye`, `bullseye`](https://github.com/docker-library/golang/blob/067ba62265c51b96ca29de9faf37b831ad90da2a/1.20/bullseye/Dockerfile)
--	[`1.20.1-buster`, `1.20-buster`, `1-buster`, `buster`](https://github.com/docker-library/golang/blob/067ba62265c51b96ca29de9faf37b831ad90da2a/1.20/buster/Dockerfile)
+-	[`1.20.1-bullseye`, `1.20-bullseye`, `1-bullseye`, `bullseye`](https://github.com/docker-library/golang/blob/8b4411e7f38f2505c4fd3fd0aa579481c2aa85b2/1.20/bullseye/Dockerfile)
+-	[`1.20.1-buster`, `1.20-buster`, `1-buster`, `buster`](https://github.com/docker-library/golang/blob/8b4411e7f38f2505c4fd3fd0aa579481c2aa85b2/1.20/buster/Dockerfile)
 -	[`1.20.1-alpine3.17`, `1.20-alpine3.17`, `1-alpine3.17`, `alpine3.17`, `1.20.1-alpine`, `1.20-alpine`, `1-alpine`, `alpine`](https://github.com/docker-library/golang/blob/067ba62265c51b96ca29de9faf37b831ad90da2a/1.20/alpine3.17/Dockerfile)
 -	[`1.20.1-alpine3.16`, `1.20-alpine3.16`, `1-alpine3.16`, `alpine3.16`](https://github.com/docker-library/golang/blob/067ba62265c51b96ca29de9faf37b831ad90da2a/1.20/alpine3.16/Dockerfile)
 -	[`1.20.1-windowsservercore-ltsc2022`, `1.20-windowsservercore-ltsc2022`, `1-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`](https://github.com/docker-library/golang/blob/067ba62265c51b96ca29de9faf37b831ad90da2a/1.20/windows/windowsservercore-ltsc2022/Dockerfile)
@@ -48,7 +48,7 @@ WARNING:
 ## Shared Tags
 
 -	`1.20.1`, `1.20`, `1`, `latest`:
-	-	[`1.20.1-bullseye`](https://github.com/docker-library/golang/blob/067ba62265c51b96ca29de9faf37b831ad90da2a/1.20/bullseye/Dockerfile)
+	-	[`1.20.1-bullseye`](https://github.com/docker-library/golang/blob/8b4411e7f38f2505c4fd3fd0aa579481c2aa85b2/1.20/bullseye/Dockerfile)
 	-	[`1.20.1-windowsservercore-ltsc2022`](https://github.com/docker-library/golang/blob/067ba62265c51b96ca29de9faf37b831ad90da2a/1.20/windows/windowsservercore-ltsc2022/Dockerfile)
 	-	[`1.20.1-windowsservercore-1809`](https://github.com/docker-library/golang/blob/067ba62265c51b96ca29de9faf37b831ad90da2a/1.20/windows/windowsservercore-1809/Dockerfile)
 -	`1.20.1-windowsservercore`, `1.20-windowsservercore`, `1-windowsservercore`, `windowsservercore`:
