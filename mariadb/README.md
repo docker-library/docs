@@ -26,8 +26,8 @@ Also see the ["Getting Help with MariaDB" article on the MariaDB Knowledge Base]
 
 # Supported tags and respective `Dockerfile` links
 
--	[`10.11.1-rc-jammy`, `10.11-rc-jammy`, `10.11.1-rc`, `10.11-rc`](https://github.com/MariaDB/mariadb-docker/blob/ac276eb82f0535ff1849018f46be5e5ed396bda1/10.11/Dockerfile)
--	[`10.10.3-jammy`, `10.10-jammy`, `10-jammy`, `jammy`, `10.10.3`, `10.10`, `10`, `latest`](https://github.com/MariaDB/mariadb-docker/blob/051d37a079b9d068692513a11e1e6bde3fda4223/10.10/Dockerfile)
+-	[`10.11.2-jammy`, `10.11-jammy`, `10-jammy`, `jammy`, `10.11.2`, `10.11`, `10`, `latest`](https://github.com/MariaDB/mariadb-docker/blob/97200971ae9d24a700acc65055eaf9edc4df91f1/10.11/Dockerfile)
+-	[`10.10.3-jammy`, `10.10-jammy`, `10.10.3`, `10.10`](https://github.com/MariaDB/mariadb-docker/blob/051d37a079b9d068692513a11e1e6bde3fda4223/10.10/Dockerfile)
 -	[`10.9.5-jammy`, `10.9-jammy`, `10.9.5`, `10.9`](https://github.com/MariaDB/mariadb-docker/blob/051d37a079b9d068692513a11e1e6bde3fda4223/10.9/Dockerfile)
 -	[`10.8.7-jammy`, `10.8-jammy`, `10.8.7`, `10.8`](https://github.com/MariaDB/mariadb-docker/blob/051d37a079b9d068692513a11e1e6bde3fda4223/10.8/Dockerfile)
 -	[`10.7.8-focal`, `10.7-focal`, `10.7.8`, `10.7`](https://github.com/MariaDB/mariadb-docker/blob/051d37a079b9d068692513a11e1e6bde3fda4223/10.7/Dockerfile)

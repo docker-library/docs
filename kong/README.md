@@ -28,14 +28,8 @@ WARNING:
 -	[`3.1.1-ubuntu`, `3.1-ubuntu`, `ubuntu`](https://github.com/Kong/docker-kong/blob/5f914be945ec1732837cc4f6463219bed566c7ef/ubuntu/Dockerfile)
 -	[`3.0.2-alpine`, `3.0-alpine`, `3.0.2`, `3.0`](https://github.com/Kong/docker-kong/blob/5a3ee8daf50371db2e3a788abe8f306255eead22/Dockerfile.apk)
 -	[`3.0.2-ubuntu`, `3.0-ubuntu`](https://github.com/Kong/docker-kong/blob/5a3ee8daf50371db2e3a788abe8f306255eead22/ubuntu/Dockerfile)
--	[`2.8.3-alpine`, `2.8.3`, `2.8`](https://github.com/Kong/docker-kong/blob/9538eec15456ce93d69a4a1ae9e379a28fd9040b/alpine/Dockerfile)
--	[`2.8.3-ubuntu`, `2.8-ubuntu`](https://github.com/Kong/docker-kong/blob/9538eec15456ce93d69a4a1ae9e379a28fd9040b/ubuntu/Dockerfile)
--	[`2.7.2-alpine`, `2.7.2`, `2.7`](https://github.com/Kong/docker-kong/blob/456bfc908ed1f4fdbb348bafcf7385aeffdd421c/alpine/Dockerfile)
--	[`2.7.2-ubuntu`, `2.7-ubuntu`](https://github.com/Kong/docker-kong/blob/456bfc908ed1f4fdbb348bafcf7385aeffdd421c/ubuntu/Dockerfile)
--	[`2.6.1-alpine`, `2.6.1`, `2.6`](https://github.com/Kong/docker-kong/blob/aa4cf106f8933033f433cacc8f073fa4dbbeac21/alpine/Dockerfile)
--	[`2.6.1-ubuntu`, `2.6-ubuntu`](https://github.com/Kong/docker-kong/blob/aa4cf106f8933033f433cacc8f073fa4dbbeac21/ubuntu/Dockerfile)
--	[`2.5.2-alpine`, `2.5.2`, `2.5`](https://github.com/Kong/docker-kong/blob/e6fbd10247d55eba63db13216666f9db4c6d3363/alpine/Dockerfile)
--	[`2.5.2-ubuntu`, `2.5-ubuntu`](https://github.com/Kong/docker-kong/blob/e6fbd10247d55eba63db13216666f9db4c6d3363/ubuntu/Dockerfile)
+-	[`2.8.3-alpine`, `2.8.3`, `2.8`](https://github.com/Kong/docker-kong/blob/51604ac58ec41b3a57de95933b23dc3314552073/alpine/Dockerfile)
+-	[`2.8.3-ubuntu`, `2.8-ubuntu`](https://github.com/Kong/docker-kong/blob/51604ac58ec41b3a57de95933b23dc3314552073/ubuntu/Dockerfile)
 
 # Quick reference (cont.)
 
