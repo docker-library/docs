@@ -24,10 +24,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`9.1.20221221`, `9.1`, `9`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/0c5e7578276e2bd1196e340ea98fee112d305bac/Dockerfile)
--	[`9.1.20221221-minimal`, `9.1-minimal`, `9-minimal`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/4925a4ada53dc186b27167d90dbe62c7d62942cc/Dockerfile)
--	[`8.7.20221219`, `8.7`, `8`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/15e9cb0790bed8b6cba7b5cb2ecf3ebab6a0e6ae/Dockerfile)
--	[`8.7.20221219-minimal`, `8.7-minimal`, `8-minimal`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/263f85f3cc1dfaa1824aeecfe3aee681adafe33f/Dockerfile)
+-	[`9.1.20230215`, `9.1`, `9`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/c554918c3fb7432f70802459ee942fead8121cae/Dockerfile)
+-	[`9.1.20230215-minimal`, `9.1-minimal`, `9-minimal`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/957dce1794c27b8fc1666f7e283db2ba7ef5b182/Dockerfile)
+-	[`8.7.20230215`, `8.7`, `8`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/65d3f79aa8b5d0a9ed1270470e585539f7d59cd1/Dockerfile)
+-	[`8.7.20230215-minimal`, `8.7-minimal`, `8-minimal`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/a923b0d8957fa92feafaa4f6b00f8df08db796ab/Dockerfile)
 
 # Quick reference (cont.)
 
