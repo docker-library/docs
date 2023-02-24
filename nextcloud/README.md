@@ -61,6 +61,8 @@ A safe home for all your data. Access & share your files, calendars, contacts, m
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/eabcf59e64b4395e681a7f7a9773bd213c9f3678/nextcloud/logo.svg?sanitize=true)
 
+This Docker micro-service image is developed and maintained by the Nextcloud community. Nextcloud GmbH does not offer support for this Docker image. When you are looking to get professional support, you can become an [enterprise](https://nextcloud.com/enterprise/) customer or use [AIO](https://github.com/nextcloud/all-in-one#nextcloud-all-in-one).
+
 # How to use this image
 
 This image is designed to be used in a micro-service environment. There are two versions of the image you can choose from.
@@ -197,6 +199,14 @@ The install and update script is only triggered when a default command is used (
 
 -	`NEXTCLOUD_UPDATE` (default: `0`)
 
+If you share your html folder with multiple docker containers, you might want to avoid multiple processes updating the same shared volume
+
+-	`NEXTCLOUD_INIT_LOCK` (not set by default) Set it to true to enable initialization locking. Other containers will wait for the current process to finish updating the html volume to continue.
+
+You might also want to make sure the htaccess is up to date after each container update. Especially on multiple swarm nodes as any discrepancy will make your server unusable.
+
+-	`NEXTCLOUD_INIT_HTACCESS` (not set by default) Set it to true to enable run `occ maintenance:update:htaccess` after container initialization.
+
 If you want to use Redis you have to create a separate [Redis](https://hub.docker.com/_/redis/) container in your setup / in your docker-compose file. To inform Nextcloud about the Redis container, pass in the following parameters:
 
 -	`REDIS_HOST` (not set by default) Name of Redis container
@@ -296,7 +306,7 @@ services:
   db:
     image: mariadb:10.5
     restart: always
-    command: --transaction-isolation=READ-COMMITTED --binlog-format=ROW
+    command: --transaction-isolation=READ-COMMITTED --log-bin=binlog --binlog-format=ROW
     volumes:
       - db:/var/lib/mysql
     environment:
@@ -342,7 +352,7 @@ services:
   db:
     image: mariadb:10.5
     restart: always
-    command: --transaction-isolation=READ-COMMITTED --binlog-format=ROW
+    command: --transaction-isolation=READ-COMMITTED --log-bin=binlog --binlog-format=ROW
     volumes:
       - db:/var/lib/mysql
     environment:
