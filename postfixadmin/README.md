@@ -103,9 +103,9 @@ $ docker run -v /local/path/to/config.local.php:/var/www/html/config.local.php \
         postfixadmin
 ```
 
-... via [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/) or [`docker-compose`](https://github.com/docker/compose)
+... via [`docker-compose`](https://github.com/docker/compose) or [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/)
 
-Example `stack.yml` for `postfixadmin`:
+Example `docker-compose.yml` for `postfixadmin`:
 
 ```yaml
 version: '3'

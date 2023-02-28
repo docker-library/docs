@@ -141,9 +141,9 @@ $ docker run -it --network some-network --rm mongo mongosh --host some-mongo tes
 
 ... where `some-mongo` is the name of your original `mongo` container.
 
-## ... via [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/) or [`docker-compose`](https://github.com/docker/compose)
+## ... via [`docker-compose`](https://github.com/docker/compose) or [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/)
 
-Example `stack.yml` for `mongo`:
+Example `docker-compose.yml` for `mongo`:
 
 ```yaml
 # Use root/example as user/password credentials

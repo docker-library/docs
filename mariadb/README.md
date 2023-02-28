@@ -109,9 +109,9 @@ MariaDB [(none)]> SELECT VERSION();
 
 More information about the MariaDB command-line client can be found in the [MariaDB Knowledge Base](https://mariadb.com/kb/en/mysql-command-line-client/)
 
-## ... via [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/) or [`docker-compose`](https://github.com/docker/compose)
+## ... via [`docker-compose`](https://github.com/docker/compose) or [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/)
 
-Example `stack.yml` for `mariadb`:
+Example `docker-compose.yml` for `mariadb`:
 
 ```yaml
 # Use root/example as user/password credentials

@@ -78,9 +78,9 @@ Then point your web server to port 9000 of the container.
 
 Note: This exposes the FastCGI socket to the Internet. Make sure to add proper firewall rules or use a private Docker network instead to prevent a direct access.
 
-### ... via [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/) or [`docker-compose`](https://github.com/docker/compose)
+### ... via [`docker-compose`](https://github.com/docker/compose) or [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/)
 
-Example `stack.yml` for `adminer`:
+Example `docker-compose.yml` for `adminer`:
 
 ```yaml
 # Use root/example as user/password credentials

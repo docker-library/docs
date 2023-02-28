@@ -92,9 +92,9 @@ postgres=# SELECT 1;
 (1 row)
 ```
 
-## ... via [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/) or [`docker-compose`](https://github.com/docker/compose)
+## ... via [`docker-compose`](https://github.com/docker/compose) or [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/)
 
-Example `stack.yml` for `postgres`:
+Example `docker-compose.yml` for `postgres`:
 
 ```yaml
 # Use postgres/example user/password credentials

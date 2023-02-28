@@ -86,9 +86,9 @@ docker run --name mydbpostgres -h <hostname> -d bonitasoft/bonita-postgres:12.6
 
 This image is built from the following [GitHub repository](https://github.com/Bonitasoft-Community/bonita-database-docker/tree/main/postgres/12), which can be further adapted/customized to suit your needs.
 
-## ... via [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/) or [`docker-compose`](https://github.com/docker/compose)
+## ... via [`docker-compose`](https://github.com/docker/compose) or [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/)
 
-Example `stack.yml` for `bonita`:
+Example `docker-compose.yml` for `bonita`:
 
 ```yaml
 version: '3'

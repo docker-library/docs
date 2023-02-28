@@ -96,9 +96,9 @@ $ docker run -it -v $(pwd)/topology.jar:/topology.jar storm storm jar /topology.
 	$ docker run -d -p 8080:8080 --restart always --name ui --link some-nimbus:nimbus storm storm ui
 	```
 
-## ... via [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/) or [`docker-compose`](https://github.com/docker/compose)
+## ... via [`docker-compose`](https://github.com/docker/compose) or [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/)
 
-Example `stack.yml` for `storm`:
+Example `docker-compose.yml` for `storm`:
 
 ```yaml
 version: '3.1'
