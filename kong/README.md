@@ -28,8 +28,8 @@ WARNING:
 -	[`3.1.1-ubuntu`, `3.1-ubuntu`, `ubuntu`](https://github.com/Kong/docker-kong/blob/5f914be945ec1732837cc4f6463219bed566c7ef/ubuntu/Dockerfile)
 -	[`3.0.2-alpine`, `3.0-alpine`, `3.0.2`, `3.0`](https://github.com/Kong/docker-kong/blob/5a3ee8daf50371db2e3a788abe8f306255eead22/Dockerfile.apk)
 -	[`3.0.2-ubuntu`, `3.0-ubuntu`](https://github.com/Kong/docker-kong/blob/5a3ee8daf50371db2e3a788abe8f306255eead22/ubuntu/Dockerfile)
--	[`2.8.3-alpine`, `2.8.3`, `2.8`](https://github.com/Kong/docker-kong/blob/51604ac58ec41b3a57de95933b23dc3314552073/alpine/Dockerfile)
--	[`2.8.3-ubuntu`, `2.8-ubuntu`](https://github.com/Kong/docker-kong/blob/51604ac58ec41b3a57de95933b23dc3314552073/ubuntu/Dockerfile)
+-	[`2.8.3-alpine`, `2.8.3`, `2.8`](https://github.com/Kong/docker-kong/blob/7557a360568fb70650d35724462446064ec081b3/alpine/Dockerfile)
+-	[`2.8.3-ubuntu`, `2.8-ubuntu`](https://github.com/Kong/docker-kong/blob/7557a360568fb70650d35724462446064ec081b3/ubuntu/Dockerfile)
 
 # Quick reference (cont.)
 
