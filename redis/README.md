@@ -24,12 +24,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.0.8`, `7.0`, `7`, `latest`, `7.0.8-bullseye`, `7.0-bullseye`, `7-bullseye`, `bullseye`](https://github.com/docker-library/redis/blob/d5c6f471fe4c0db5c614b568f11d4102a0cc685b/7.0/Dockerfile)
--	[`7.0.8-alpine`, `7.0-alpine`, `7-alpine`, `alpine`, `7.0.8-alpine3.17`, `7.0-alpine3.17`, `7-alpine3.17`, `alpine3.17`](https://github.com/docker-library/redis/blob/787f47c4bda6943e29d85fa45e080bd55b2c08fa/7.0/alpine/Dockerfile)
--	[`6.2.10`, `6.2`, `6`, `6.2.10-bullseye`, `6.2-bullseye`, `6-bullseye`](https://github.com/docker-library/redis/blob/d5c6f471fe4c0db5c614b568f11d4102a0cc685b/6.2/Dockerfile)
--	[`6.2.10-alpine`, `6.2-alpine`, `6-alpine`, `6.2.10-alpine3.17`, `6.2-alpine3.17`, `6-alpine3.17`](https://github.com/docker-library/redis/blob/8b463859e24cfeea54e7a323e530f254e74075f6/6.2/alpine/Dockerfile)
--	[`6.0.17`, `6.0`, `6.0.17-bullseye`, `6.0-bullseye`](https://github.com/docker-library/redis/blob/d5c6f471fe4c0db5c614b568f11d4102a0cc685b/6.0/Dockerfile)
--	[`6.0.17-alpine`, `6.0-alpine`, `6.0.17-alpine3.17`, `6.0-alpine3.17`](https://github.com/docker-library/redis/blob/e608c4a20201d43672d6f045d4fc4c523e0473ad/6.0/alpine/Dockerfile)
+-	[`7.0.9`, `7.0`, `7`, `latest`, `7.0.9-bullseye`, `7.0-bullseye`, `7-bullseye`, `bullseye`](https://github.com/docker-library/redis/blob/d77143afb3dc8d0b05225ab23b001cf6c41e1b62/7.0/Dockerfile)
+-	[`7.0.9-alpine`, `7.0-alpine`, `7-alpine`, `alpine`, `7.0.9-alpine3.17`, `7.0-alpine3.17`, `7-alpine3.17`, `alpine3.17`](https://github.com/docker-library/redis/blob/d77143afb3dc8d0b05225ab23b001cf6c41e1b62/7.0/alpine/Dockerfile)
+-	[`6.2.11`, `6.2`, `6`, `6.2.11-bullseye`, `6.2-bullseye`, `6-bullseye`](https://github.com/docker-library/redis/blob/53ffd9d64c8d00cc0640075b685e0da0cebff82f/6.2/Dockerfile)
+-	[`6.2.11-alpine`, `6.2-alpine`, `6-alpine`, `6.2.11-alpine3.17`, `6.2-alpine3.17`, `6-alpine3.17`](https://github.com/docker-library/redis/blob/53ffd9d64c8d00cc0640075b685e0da0cebff82f/6.2/alpine/Dockerfile)
+-	[`6.0.18`, `6.0`, `6.0.18-bullseye`, `6.0-bullseye`](https://github.com/docker-library/redis/blob/aab0267e4fdab0150c34c9241f87f6f7c6f03328/6.0/Dockerfile)
+-	[`6.0.18-alpine`, `6.0-alpine`, `6.0.18-alpine3.17`, `6.0-alpine3.17`](https://github.com/docker-library/redis/blob/aab0267e4fdab0150c34c9241f87f6f7c6f03328/6.0/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
