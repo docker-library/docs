@@ -57,7 +57,7 @@ The Amazon Linux container image contains a minimal set of packages. To install 
 
 AWS provides two versions of Amazon Linux: [Amazon Linux 2](https://aws.amazon.com/amazon-linux-2/) and [Amazon Linux AMI](https://aws.amazon.com/amazon-linux-ami/).
 
-**Please note, that Amazon Linux 2022 is currently in the Preview mode and is not recommended for production workloads. Review the Amazon Linux 2022 [documentation](https://docs.aws.amazon.com/linux/al2022/ug/what-is-amazon-linux.html) to learn more.**
+**Please note, that Amazon Linux 2023 is currently in the Preview mode and is not recommended for production workloads. Review the Amazon Linux 2023 [documentation](https://docs.aws.amazon.com/linux/al2023/ug/what-is-amazon-linux.html) to learn more.**
 
 For information on security updates for Amazon Linux, please refer to [Amazon Linux 2 Security Advisories](https://alas.aws.amazon.com/alas2.html) and [Amazon Linux AMI Security Advisories](https://alas.aws.amazon.com/). Note that Docker Hub's vulnerability scanning for Amazon Linux is currently based on RPM versions, which does not reflect the state of backported patches for vulnerabilities.
 
