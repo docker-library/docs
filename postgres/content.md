@@ -78,6 +78,10 @@ This optional environment variable can be used to define another location for th
 
 **Note:** on PostgreSQL 9.x, this variable is `POSTGRES_INITDB_XLOGDIR` (reflecting [the changed name of the `--xlogdir` flag to `--waldir` in PostgreSQL 10+](https://wiki.postgresql.org/wiki/New_in_postgres_10#Renaming_of_.22xlog.22_to_.22wal.22_Globally_.28and_location.2Flsn.29)).
 
+### `POSTGRES_TEMPLATE`
+
+This optional environment variable can be used to specify a template to copy the initial database from. See the corresponding [PostgreSQL documentation](https://www.postgresql.org/docs/current/manage-ag-templatedbs.html). The default value is `template1`.
+
 ### `POSTGRES_HOST_AUTH_METHOD`
 
 This optional variable can be used to control the `auth-method` for `host` connections for `all` databases, `all` users, and `all` addresses. If unspecified then [`scram-sha-256` password authentication](https://www.postgresql.org/docs/14/auth-password.html) is used (in 14+; `md5` in older releases). On an uninitialized database, this will populate `pg_hba.conf` via this approximate line:
