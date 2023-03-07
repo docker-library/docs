@@ -244,7 +244,7 @@ Once an InfluxDB instance has completed initial setup, its APIs will unlock. See
 
 ### Custom Initialization Scripts
 
-The InfluxDB image supports running arbitrary initialization scripts after initial system setup, on both the `setup` and `upgrade` paths. Scripts must have extension `.sh` and be mounted inside of the `/docker-entrypoint-initdb.d` directory. When multiple scripts are present, they will be executed in lexical sort order by name.
+The InfluxDB image supports running arbitrary initialization scripts after initial system setup, on both the `setup` and `upgrade` paths. Scripts must have extension `.sh`, must have execute file permissions (`chmod +x <yourscript.sh>`) and be mounted inside of the `/docker-entrypoint-initdb.d` directory. When multiple scripts are present, they will be executed in lexical sort order by name.
 
 As a convenience for script-writers, the image will export a number of variables into the environment before executing any scripts:
 
