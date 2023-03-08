@@ -198,6 +198,29 @@ $ docker exec -it kong kong reload
 
 This will run the [`kong reload`](https://docs.konghq.com/latest/cli/#reload) command in your container.
 
+# Running Kong in read-only mode
+
+Starting with version `3.2.0` of Kong it is possible to run the container in read-only mode. To do so, mount a Docker volume to the locations where Kong needs to write data. The default configuration requires write access to `/tmp` and to the prefix path, as provided by the following example:
+
+```shell
+$ docker run --read-only -d --name kong \
+    -v "$(pwd)/declarative:/kong/declarative/" \
+    -v "$(pwd)/tmp_volume:/tmp" \
+    -v "$(pwd)/prefix_volume:/var/run/kong" \
+    -e "KONG_PREFIX=/var/run/kong" \
+    -e "KONG_DATABASE=off" \
+    -e "KONG_PROXY_ACCESS_LOG=/dev/stdout" \
+    -e "KONG_ADMIN_ACCESS_LOG=/dev/stdout" \
+    -e "KONG_PROXY_ERROR_LOG=/dev/stderr" \
+    -e "KONG_ADMIN_ERROR_LOG=/dev/stderr" \
+    -e "KONG_ADMIN_LISTEN=0.0.0.0:8001, 0.0.0.0:8444 ssl" \
+    -p 8000:8000 \
+    -p 8443:8443 \
+    -p 8001:8001 \
+    -p 8444:8444 \
+    kong
+```
+
 # Kubernetes Ingress
 
 Among the many deployment options [available](https://konghq.com/install), Kong also offers a [Kubernetes Ingress Controller](https://github.com/Kong/kubernetes-ingress-controller) ready to use in your K8s environment.
