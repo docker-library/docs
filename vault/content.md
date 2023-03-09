@@ -5,8 +5,6 @@ Vault is a tool for securely accessing secrets. A secret is anything that you wa
 -	[Vault documentation](https://www.vaultproject.io/)
 -	[Vault on GitHub](https://github.com/hashicorp/vault)
 
-> **Warning** Upcoming in Vault 1.14 we will stop publishing official Dockerhub images and publish only our Verified Publisher images. Users of Docker images should pull from “hashicorp/vault” instead of “vault”. More information is available on our [deprecation page](https://developer.hashicorp.com/vault/docs/deprecation).
-
 %%LOGO%%
 
 # Using the Container
