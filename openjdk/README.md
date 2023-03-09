@@ -42,15 +42,15 @@ The only tags which will continue to receive updates beyond July 2022 will be Ea
 
 ## Simple Tags
 
--	[`21-ea-12-jdk-oraclelinux8`, `21-ea-12-oraclelinux8`, `21-ea-jdk-oraclelinux8`, `21-ea-oraclelinux8`, `21-jdk-oraclelinux8`, `21-oraclelinux8`, `21-ea-12-jdk-oracle`, `21-ea-12-oracle`, `21-ea-jdk-oracle`, `21-ea-oracle`, `21-jdk-oracle`, `21-oracle`](https://github.com/docker-library/openjdk/blob/64dec30c9bf68865c9ee214377b0b05e8ad10caf/21/jdk/oraclelinux8/Dockerfile)
--	[`21-ea-12-jdk-oraclelinux7`, `21-ea-12-oraclelinux7`, `21-ea-jdk-oraclelinux7`, `21-ea-oraclelinux7`, `21-jdk-oraclelinux7`, `21-oraclelinux7`](https://github.com/docker-library/openjdk/blob/64dec30c9bf68865c9ee214377b0b05e8ad10caf/21/jdk/oraclelinux7/Dockerfile)
--	[`21-ea-12-jdk-bullseye`, `21-ea-12-bullseye`, `21-ea-jdk-bullseye`, `21-ea-bullseye`, `21-jdk-bullseye`, `21-bullseye`](https://github.com/docker-library/openjdk/blob/64dec30c9bf68865c9ee214377b0b05e8ad10caf/21/jdk/bullseye/Dockerfile)
--	[`21-ea-12-jdk-slim-bullseye`, `21-ea-12-slim-bullseye`, `21-ea-jdk-slim-bullseye`, `21-ea-slim-bullseye`, `21-jdk-slim-bullseye`, `21-slim-bullseye`, `21-ea-12-jdk-slim`, `21-ea-12-slim`, `21-ea-jdk-slim`, `21-ea-slim`, `21-jdk-slim`, `21-slim`](https://github.com/docker-library/openjdk/blob/64dec30c9bf68865c9ee214377b0b05e8ad10caf/21/jdk/slim-bullseye/Dockerfile)
--	[`21-ea-12-jdk-buster`, `21-ea-12-buster`, `21-ea-jdk-buster`, `21-ea-buster`, `21-jdk-buster`, `21-buster`](https://github.com/docker-library/openjdk/blob/64dec30c9bf68865c9ee214377b0b05e8ad10caf/21/jdk/buster/Dockerfile)
--	[`21-ea-12-jdk-slim-buster`, `21-ea-12-slim-buster`, `21-ea-jdk-slim-buster`, `21-ea-slim-buster`, `21-jdk-slim-buster`, `21-slim-buster`](https://github.com/docker-library/openjdk/blob/64dec30c9bf68865c9ee214377b0b05e8ad10caf/21/jdk/slim-buster/Dockerfile)
--	[`21-ea-12-jdk-windowsservercore-ltsc2022`, `21-ea-12-windowsservercore-ltsc2022`, `21-ea-jdk-windowsservercore-ltsc2022`, `21-ea-windowsservercore-ltsc2022`, `21-jdk-windowsservercore-ltsc2022`, `21-windowsservercore-ltsc2022`](https://github.com/docker-library/openjdk/blob/64dec30c9bf68865c9ee214377b0b05e8ad10caf/21/jdk/windows/windowsservercore-ltsc2022/Dockerfile)
--	[`21-ea-12-jdk-windowsservercore-1809`, `21-ea-12-windowsservercore-1809`, `21-ea-jdk-windowsservercore-1809`, `21-ea-windowsservercore-1809`, `21-jdk-windowsservercore-1809`, `21-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/64dec30c9bf68865c9ee214377b0b05e8ad10caf/21/jdk/windows/windowsservercore-1809/Dockerfile)
--	[`21-ea-12-jdk-nanoserver-1809`, `21-ea-12-nanoserver-1809`, `21-ea-jdk-nanoserver-1809`, `21-ea-nanoserver-1809`, `21-jdk-nanoserver-1809`, `21-nanoserver-1809`](https://github.com/docker-library/openjdk/blob/64dec30c9bf68865c9ee214377b0b05e8ad10caf/21/jdk/windows/nanoserver-1809/Dockerfile)
+-	[`21-ea-13-jdk-oraclelinux8`, `21-ea-13-oraclelinux8`, `21-ea-jdk-oraclelinux8`, `21-ea-oraclelinux8`, `21-jdk-oraclelinux8`, `21-oraclelinux8`, `21-ea-13-jdk-oracle`, `21-ea-13-oracle`, `21-ea-jdk-oracle`, `21-ea-oracle`, `21-jdk-oracle`, `21-oracle`](https://github.com/docker-library/openjdk/blob/17df0c31225094e6be01d843a50bd3863eda8870/21/jdk/oraclelinux8/Dockerfile)
+-	[`21-ea-13-jdk-oraclelinux7`, `21-ea-13-oraclelinux7`, `21-ea-jdk-oraclelinux7`, `21-ea-oraclelinux7`, `21-jdk-oraclelinux7`, `21-oraclelinux7`](https://github.com/docker-library/openjdk/blob/17df0c31225094e6be01d843a50bd3863eda8870/21/jdk/oraclelinux7/Dockerfile)
+-	[`21-ea-13-jdk-bullseye`, `21-ea-13-bullseye`, `21-ea-jdk-bullseye`, `21-ea-bullseye`, `21-jdk-bullseye`, `21-bullseye`](https://github.com/docker-library/openjdk/blob/17df0c31225094e6be01d843a50bd3863eda8870/21/jdk/bullseye/Dockerfile)
+-	[`21-ea-13-jdk-slim-bullseye`, `21-ea-13-slim-bullseye`, `21-ea-jdk-slim-bullseye`, `21-ea-slim-bullseye`, `21-jdk-slim-bullseye`, `21-slim-bullseye`, `21-ea-13-jdk-slim`, `21-ea-13-slim`, `21-ea-jdk-slim`, `21-ea-slim`, `21-jdk-slim`, `21-slim`](https://github.com/docker-library/openjdk/blob/17df0c31225094e6be01d843a50bd3863eda8870/21/jdk/slim-bullseye/Dockerfile)
+-	[`21-ea-13-jdk-buster`, `21-ea-13-buster`, `21-ea-jdk-buster`, `21-ea-buster`, `21-jdk-buster`, `21-buster`](https://github.com/docker-library/openjdk/blob/17df0c31225094e6be01d843a50bd3863eda8870/21/jdk/buster/Dockerfile)
+-	[`21-ea-13-jdk-slim-buster`, `21-ea-13-slim-buster`, `21-ea-jdk-slim-buster`, `21-ea-slim-buster`, `21-jdk-slim-buster`, `21-slim-buster`](https://github.com/docker-library/openjdk/blob/17df0c31225094e6be01d843a50bd3863eda8870/21/jdk/slim-buster/Dockerfile)
+-	[`21-ea-13-jdk-windowsservercore-ltsc2022`, `21-ea-13-windowsservercore-ltsc2022`, `21-ea-jdk-windowsservercore-ltsc2022`, `21-ea-windowsservercore-ltsc2022`, `21-jdk-windowsservercore-ltsc2022`, `21-windowsservercore-ltsc2022`](https://github.com/docker-library/openjdk/blob/17df0c31225094e6be01d843a50bd3863eda8870/21/jdk/windows/windowsservercore-ltsc2022/Dockerfile)
+-	[`21-ea-13-jdk-windowsservercore-1809`, `21-ea-13-windowsservercore-1809`, `21-ea-jdk-windowsservercore-1809`, `21-ea-windowsservercore-1809`, `21-jdk-windowsservercore-1809`, `21-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/17df0c31225094e6be01d843a50bd3863eda8870/21/jdk/windows/windowsservercore-1809/Dockerfile)
+-	[`21-ea-13-jdk-nanoserver-1809`, `21-ea-13-nanoserver-1809`, `21-ea-jdk-nanoserver-1809`, `21-ea-nanoserver-1809`, `21-jdk-nanoserver-1809`, `21-nanoserver-1809`](https://github.com/docker-library/openjdk/blob/17df0c31225094e6be01d843a50bd3863eda8870/21/jdk/windows/nanoserver-1809/Dockerfile)
 -	[`20-rc-jdk-oraclelinux8`, `20-rc-oraclelinux8`, `20-jdk-oraclelinux8`, `20-oraclelinux8`, `20-rc-jdk-oracle`, `20-rc-oracle`, `20-jdk-oracle`, `20-oracle`](https://github.com/docker-library/openjdk/blob/e8f4b960d194f603f78a9371867cb7c87654b900/20/jdk/oraclelinux8/Dockerfile)
 -	[`20-rc-jdk-oraclelinux7`, `20-rc-oraclelinux7`, `20-jdk-oraclelinux7`, `20-oraclelinux7`](https://github.com/docker-library/openjdk/blob/e8f4b960d194f603f78a9371867cb7c87654b900/20/jdk/oraclelinux7/Dockerfile)
 -	[`20-rc-jdk-bullseye`, `20-rc-bullseye`, `20-jdk-bullseye`, `20-bullseye`](https://github.com/docker-library/openjdk/blob/e8f4b960d194f603f78a9371867cb7c87654b900/20/jdk/bullseye/Dockerfile)
@@ -63,15 +63,15 @@ The only tags which will continue to receive updates beyond July 2022 will be Ea
 
 ## Shared Tags
 
--	`21-ea-12-jdk`, `21-ea-12`, `21-ea-jdk`, `21-ea`, `21-jdk`, `21`:
-	-	[`21-ea-12-jdk-oraclelinux8`](https://github.com/docker-library/openjdk/blob/64dec30c9bf68865c9ee214377b0b05e8ad10caf/21/jdk/oraclelinux8/Dockerfile)
-	-	[`21-ea-12-jdk-windowsservercore-ltsc2022`](https://github.com/docker-library/openjdk/blob/64dec30c9bf68865c9ee214377b0b05e8ad10caf/21/jdk/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`21-ea-12-jdk-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/64dec30c9bf68865c9ee214377b0b05e8ad10caf/21/jdk/windows/windowsservercore-1809/Dockerfile)
--	`21-ea-12-jdk-windowsservercore`, `21-ea-12-windowsservercore`, `21-ea-jdk-windowsservercore`, `21-ea-windowsservercore`, `21-jdk-windowsservercore`, `21-windowsservercore`:
-	-	[`21-ea-12-jdk-windowsservercore-ltsc2022`](https://github.com/docker-library/openjdk/blob/64dec30c9bf68865c9ee214377b0b05e8ad10caf/21/jdk/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`21-ea-12-jdk-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/64dec30c9bf68865c9ee214377b0b05e8ad10caf/21/jdk/windows/windowsservercore-1809/Dockerfile)
--	`21-ea-12-jdk-nanoserver`, `21-ea-12-nanoserver`, `21-ea-jdk-nanoserver`, `21-ea-nanoserver`, `21-jdk-nanoserver`, `21-nanoserver`:
-	-	[`21-ea-12-jdk-nanoserver-1809`](https://github.com/docker-library/openjdk/blob/64dec30c9bf68865c9ee214377b0b05e8ad10caf/21/jdk/windows/nanoserver-1809/Dockerfile)
+-	`21-ea-13-jdk`, `21-ea-13`, `21-ea-jdk`, `21-ea`, `21-jdk`, `21`:
+	-	[`21-ea-13-jdk-oraclelinux8`](https://github.com/docker-library/openjdk/blob/17df0c31225094e6be01d843a50bd3863eda8870/21/jdk/oraclelinux8/Dockerfile)
+	-	[`21-ea-13-jdk-windowsservercore-ltsc2022`](https://github.com/docker-library/openjdk/blob/17df0c31225094e6be01d843a50bd3863eda8870/21/jdk/windows/windowsservercore-ltsc2022/Dockerfile)
+	-	[`21-ea-13-jdk-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/17df0c31225094e6be01d843a50bd3863eda8870/21/jdk/windows/windowsservercore-1809/Dockerfile)
+-	`21-ea-13-jdk-windowsservercore`, `21-ea-13-windowsservercore`, `21-ea-jdk-windowsservercore`, `21-ea-windowsservercore`, `21-jdk-windowsservercore`, `21-windowsservercore`:
+	-	[`21-ea-13-jdk-windowsservercore-ltsc2022`](https://github.com/docker-library/openjdk/blob/17df0c31225094e6be01d843a50bd3863eda8870/21/jdk/windows/windowsservercore-ltsc2022/Dockerfile)
+	-	[`21-ea-13-jdk-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/17df0c31225094e6be01d843a50bd3863eda8870/21/jdk/windows/windowsservercore-1809/Dockerfile)
+-	`21-ea-13-jdk-nanoserver`, `21-ea-13-nanoserver`, `21-ea-jdk-nanoserver`, `21-ea-nanoserver`, `21-jdk-nanoserver`, `21-nanoserver`:
+	-	[`21-ea-13-jdk-nanoserver-1809`](https://github.com/docker-library/openjdk/blob/17df0c31225094e6be01d843a50bd3863eda8870/21/jdk/windows/nanoserver-1809/Dockerfile)
 -	`20-rc-jdk`, `20-rc`, `20-jdk`, `20`:
 	-	[`20-rc-jdk-oraclelinux8`](https://github.com/docker-library/openjdk/blob/e8f4b960d194f603f78a9371867cb7c87654b900/20/jdk/oraclelinux8/Dockerfile)
 	-	[`20-rc-jdk-windowsservercore-ltsc2022`](https://github.com/docker-library/openjdk/blob/e8f4b960d194f603f78a9371867cb7c87654b900/20/jdk/windows/windowsservercore-ltsc2022/Dockerfile)
