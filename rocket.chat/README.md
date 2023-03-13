@@ -61,7 +61,13 @@ It is a great solution for communities and companies wanting to privately host t
 First, start an instance of mongo and initiate replicaSet:
 
 ```console
-$ docker run --name db -d mongo:4.0 --smallfiles --replSet rs0 --oplogSize 128
+$ docker run --name mongodb \
+  -v db_data:/bitnami/mongodb \ 
+  -e MONGODB_REPLICA_SET_MODE=primary \ 
+  -e MONGODB_PORT_NUMBER=27017 \
+  -e ALLOW_EMPTY_PASSWORD=yes \
+  -d bitnami/mongodb:5.0
+
 ```
 
 ```console
@@ -71,7 +77,7 @@ $ docker exec -ti db mongo --eval "printjson(rs.initiate())"
 Then start Rocket.Chat linked to this mongo instance:
 
 ```console
-$ docker run --name rocketchat --link db --env MONGO_OPLOG_URL=mongodb://db:27017/local -d rocket.chat
+$ docker run --name rocketchat --link mongodb -e MONGO_URL=mongodb://mongodb:27017/rocketchat -e MONGO_OPLOG_URL=mongodb://mongodb:27017/local rocket.chat:5.4.4
 ```
 
 This will start a Rocket.Chat instance listening on the default Meteor port of 3000 on the container.
@@ -79,7 +85,7 @@ This will start a Rocket.Chat instance listening on the default Meteor port of 3
 If you'd like to be able to access the instance directly at standard port on the host machine:
 
 ```console
-$ docker run --name rocketchat -p 80:3000 --link db --env ROOT_URL=http://localhost --env MONGO_OPLOG_URL=mongodb://db:27017/local -d rocket.chat
+$ docker run --name rocketchat -p 80:3000 --link mongodb -e ROOT_URL=http://localhost -e MONGO_URL=mongodb://mongodb:27017/rocketchat -e MONGO_OPLOG_URL=mongodb://mongodb:27017/local rocket.chat:5.4.4
 ```
 
 Then, access it via `http://localhost` in a browser. Replace `localhost` in `ROOT_URL` with your own domain name if you are hosting at your own domain.
