@@ -1,0 +1,1 @@
+Qodana is a code quality monitoring platform by JetBrains.
