@@ -40,10 +40,10 @@ Similar to the Amazon Linux images for AWS EC2 and on-premises use, Amazon Linux
 
 ## What support is available for Amazon Linux outside AWS?
 
--   GitHub Issues: https://github.com/amazonlinux/container-images/issues
--	Documentation: http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/amazon-linux-ami-basics.html
--	Amazon Linux Forums: https://forums.aws.amazon.com/forum.jspa?forumID=228
--	Paid Support from AWS: https://aws.amazon.com/premiumsupport/
+-    GitHub Issues: https://github.com/amazonlinux/container-images/issues
+-    Documentation: http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/amazon-linux-ami-basics.html
+-    Amazon Linux Forums: https://forums.aws.amazon.com/forum.jspa?forumID=228
+-    Paid Support from AWS: https://aws.amazon.com/premiumsupport/
 
 ## Will AWS support the current versions of Amazon Linux going forward?
 
