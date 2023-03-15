@@ -24,8 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.19.4-sdk`, `2.19-sdk`, `2-sdk`, `stable-sdk`, `sdk`, `2.19.4`, `2.19`, `2`, `stable`, `latest`](https://github.com/dart-lang/dart-docker/blob/a75015084022faa681ca05fc5f55a18b64fd37e8/stable/bullseye/Dockerfile)
--	[`3.0.0-218.1.beta-sdk`, `beta-sdk`, `3.0.0-218.1.beta`, `beta`](https://github.com/dart-lang/dart-docker/blob/a75015084022faa681ca05fc5f55a18b64fd37e8/beta/bullseye/Dockerfile)
+-	[`2.19.4-sdk`, `2.19-sdk`, `2-sdk`, `stable-sdk`, `sdk`, `2.19.4`, `2.19`, `2`, `stable`, `latest`](https://github.com/dart-lang/dart-docker/blob/1e35636878cd8d5d70b7279599e5249c62a419f0/stable/bullseye/Dockerfile)
+-	[`3.0.0-290.2.beta-sdk`, `beta-sdk`, `3.0.0-290.2.beta`, `beta`](https://github.com/dart-lang/dart-docker/blob/1e35636878cd8d5d70b7279599e5249c62a419f0/beta/bullseye/Dockerfile)
 
 # Quick reference (cont.)
 
