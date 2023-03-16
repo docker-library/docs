@@ -24,12 +24,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`19-alpine3.16`, `19.7-alpine3.16`, `19.7.0-alpine3.16`, `alpine3.16`, `current-alpine3.16`](https://github.com/nodejs/docker-node/blob/cd7015f45666d2cd6e81f507ee362ca7ada1bfee/19/alpine3.16/Dockerfile)
--	[`19-alpine`, `19-alpine3.17`, `19.7-alpine`, `19.7-alpine3.17`, `19.7.0-alpine`, `19.7.0-alpine3.17`, `alpine`, `alpine3.17`, `current-alpine`, `current-alpine3.17`](https://github.com/nodejs/docker-node/blob/cd7015f45666d2cd6e81f507ee362ca7ada1bfee/19/alpine3.17/Dockerfile)
--	[`19`, `19-bullseye`, `19.7`, `19.7-bullseye`, `19.7.0`, `19.7.0-bullseye`, `bullseye`, `current`, `current-bullseye`, `latest`](https://github.com/nodejs/docker-node/blob/cd7015f45666d2cd6e81f507ee362ca7ada1bfee/19/bullseye/Dockerfile)
--	[`19-bullseye-slim`, `19-slim`, `19.7-bullseye-slim`, `19.7-slim`, `19.7.0-bullseye-slim`, `19.7.0-slim`, `bullseye-slim`, `current-bullseye-slim`, `current-slim`, `slim`](https://github.com/nodejs/docker-node/blob/cd7015f45666d2cd6e81f507ee362ca7ada1bfee/19/bullseye-slim/Dockerfile)
--	[`19-buster`, `19.7-buster`, `19.7.0-buster`, `buster`, `current-buster`](https://github.com/nodejs/docker-node/blob/cd7015f45666d2cd6e81f507ee362ca7ada1bfee/19/buster/Dockerfile)
--	[`19-buster-slim`, `19.7-buster-slim`, `19.7.0-buster-slim`, `buster-slim`, `current-buster-slim`](https://github.com/nodejs/docker-node/blob/cd7015f45666d2cd6e81f507ee362ca7ada1bfee/19/buster-slim/Dockerfile)
+-	[`19-alpine3.16`, `19.8-alpine3.16`, `19.8.1-alpine3.16`, `alpine3.16`, `current-alpine3.16`](https://github.com/nodejs/docker-node/blob/7abbf9f3d902b901da72714bcc30b5a92831547e/19/alpine3.16/Dockerfile)
+-	[`19-alpine`, `19-alpine3.17`, `19.8-alpine`, `19.8-alpine3.17`, `19.8.1-alpine`, `19.8.1-alpine3.17`, `alpine`, `alpine3.17`, `current-alpine`, `current-alpine3.17`](https://github.com/nodejs/docker-node/blob/7abbf9f3d902b901da72714bcc30b5a92831547e/19/alpine3.17/Dockerfile)
+-	[`19`, `19-bullseye`, `19.8`, `19.8-bullseye`, `19.8.1`, `19.8.1-bullseye`, `bullseye`, `current`, `current-bullseye`, `latest`](https://github.com/nodejs/docker-node/blob/7abbf9f3d902b901da72714bcc30b5a92831547e/19/bullseye/Dockerfile)
+-	[`19-bullseye-slim`, `19-slim`, `19.8-bullseye-slim`, `19.8-slim`, `19.8.1-bullseye-slim`, `19.8.1-slim`, `bullseye-slim`, `current-bullseye-slim`, `current-slim`, `slim`](https://github.com/nodejs/docker-node/blob/7abbf9f3d902b901da72714bcc30b5a92831547e/19/bullseye-slim/Dockerfile)
+-	[`19-buster`, `19.8-buster`, `19.8.1-buster`, `buster`, `current-buster`](https://github.com/nodejs/docker-node/blob/7abbf9f3d902b901da72714bcc30b5a92831547e/19/buster/Dockerfile)
+-	[`19-buster-slim`, `19.8-buster-slim`, `19.8.1-buster-slim`, `buster-slim`, `current-buster-slim`](https://github.com/nodejs/docker-node/blob/7abbf9f3d902b901da72714bcc30b5a92831547e/19/buster-slim/Dockerfile)
 -	[`18-alpine3.16`, `18.15-alpine3.16`, `18.15.0-alpine3.16`, `hydrogen-alpine3.16`, `lts-alpine3.16`](https://github.com/nodejs/docker-node/blob/0adf29a4daa744d828d23a8de4c4397dc43d5761/18/alpine3.16/Dockerfile)
 -	[`18-alpine`, `18-alpine3.17`, `18.15-alpine`, `18.15-alpine3.17`, `18.15.0-alpine`, `18.15.0-alpine3.17`, `hydrogen-alpine`, `hydrogen-alpine3.17`, `lts-alpine`, `lts-alpine3.17`](https://github.com/nodejs/docker-node/blob/0adf29a4daa744d828d23a8de4c4397dc43d5761/18/alpine3.17/Dockerfile)
 -	[`18`, `18-bullseye`, `18.15`, `18.15-bullseye`, `18.15.0`, `18.15.0-bullseye`, `hydrogen`, `hydrogen-bullseye`, `lts`, `lts-bullseye`, `lts-hydrogen`](https://github.com/nodejs/docker-node/blob/0adf29a4daa744d828d23a8de4c4397dc43d5761/18/bullseye/Dockerfile)
