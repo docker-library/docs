@@ -24,7 +24,6 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.6.4`, `3.6`, `3.6.4-temurin`, `3.6-temurin`](https://github.com/31z4/zookeeper-docker/blob/80d975e5c07f2f1e981fd2d61c9e1dfc3f980b80/3.6.4/Dockerfile)
 -	[`3.7.1-temurin`, `3.7-temurin`](https://github.com/31z4/zookeeper-docker/blob/5cf119d9c5d61024fdba66f7be707413513a8b0d/3.7.1/Dockerfile)
 -	[`3.8.1`, `3.8`, `3.8.1-temurin`, `3.8-temurin`, `latest`](https://github.com/31z4/zookeeper-docker/blob/b078affda60681e71b71760740e795328c9d1ab5/3.8.1/Dockerfile)
 
@@ -34,7 +33,7 @@ WARNING:
 	[https://github.com/31z4/zookeeper-docker/issues](https://github.com/31z4/zookeeper-docker/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/zookeeper/), [`arm64v8`](https://hub.docker.com/r/arm64v8/zookeeper/)
+	[`amd64`](https://hub.docker.com/r/amd64/zookeeper/), [`arm64v8`](https://hub.docker.com/r/arm64v8/zookeeper/), [`s390x`](https://hub.docker.com/r/s390x/zookeeper/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/zookeeper/` directory](https://github.com/docker-library/repo-info/blob/master/repos/zookeeper) ([history](https://github.com/docker-library/repo-info/commits/master/repos/zookeeper))  
