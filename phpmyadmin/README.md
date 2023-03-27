@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.2.1-apache`, `5.2-apache`, `5-apache`, `apache`, `5.2.1`, `5.2`, `5`, `latest`](https://github.com/phpmyadmin/docker/blob/a1772debe412415732d97e0ca195b2ad554ed37f/apache/Dockerfile)
--	[`5.2.1-fpm`, `5.2-fpm`, `5-fpm`, `fpm`](https://github.com/phpmyadmin/docker/blob/a1772debe412415732d97e0ca195b2ad554ed37f/fpm/Dockerfile)
--	[`5.2.1-fpm-alpine`, `5.2-fpm-alpine`, `5-fpm-alpine`, `fpm-alpine`](https://github.com/phpmyadmin/docker/blob/a1772debe412415732d97e0ca195b2ad554ed37f/fpm-alpine/Dockerfile)
+-	[`5.2.1-apache`, `5.2-apache`, `5-apache`, `apache`, `5.2.1`, `5.2`, `5`, `latest`](https://github.com/phpmyadmin/docker/blob/7f5a48b7c3ac2b820be1c0d4808f7277640a70b8/apache/Dockerfile)
+-	[`5.2.1-fpm`, `5.2-fpm`, `5-fpm`, `fpm`](https://github.com/phpmyadmin/docker/blob/7f5a48b7c3ac2b820be1c0d4808f7277640a70b8/fpm/Dockerfile)
+-	[`5.2.1-fpm-alpine`, `5.2-fpm-alpine`, `5-fpm-alpine`, `fpm-alpine`](https://github.com/phpmyadmin/docker/blob/7f5a48b7c3ac2b820be1c0d4808f7277640a70b8/fpm-alpine/Dockerfile)
 
 # Quick reference (cont.)
 
