@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`15`, `15.1`, `15.1.0`, `15-mysql-tomcat`, `15.1-mysql-tomcat`, `15.1.0-mysql-tomcat`, `mysql-tomcat`, `stable-mysql-tomcat`, `stable-mysql`, `stable`, `latest`](https://github.com/xwiki-contrib/docker-xwiki/blob/ae71330a113a1b983353d44a2af4866dca077b15/15/mysql-tomcat/Dockerfile)
--	[`15-postgres-tomcat`, `15.1-postgres-tomcat`, `15.1.0-postgres-tomcat`, `postgres-tomcat`, `stable-postgres-tomcat`, `stable-postgres`](https://github.com/xwiki-contrib/docker-xwiki/blob/ae71330a113a1b983353d44a2af4866dca077b15/15/postgres-tomcat/Dockerfile)
--	[`15-mariadb-tomcat`, `15.1-mariadb-tomcat`, `15.1.0-mariadb-tomcat`, `mariadb-tomcat`, `stable-mariadb-tomcat`, `stable-mariadb`](https://github.com/xwiki-contrib/docker-xwiki/blob/ae71330a113a1b983353d44a2af4866dca077b15/15/mariadb-tomcat/Dockerfile)
+-	[`15`, `15.2`, `15.2.0`, `15-mysql-tomcat`, `15.2-mysql-tomcat`, `15.2.0-mysql-tomcat`, `mysql-tomcat`, `stable-mysql-tomcat`, `stable-mysql`, `stable`, `latest`](https://github.com/xwiki-contrib/docker-xwiki/blob/739ce67261391a70b55cf2164bce8cd4d3ccfbc6/15/mysql-tomcat/Dockerfile)
+-	[`15-postgres-tomcat`, `15.2-postgres-tomcat`, `15.2.0-postgres-tomcat`, `postgres-tomcat`, `stable-postgres-tomcat`, `stable-postgres`](https://github.com/xwiki-contrib/docker-xwiki/blob/739ce67261391a70b55cf2164bce8cd4d3ccfbc6/15/postgres-tomcat/Dockerfile)
+-	[`15-mariadb-tomcat`, `15.2-mariadb-tomcat`, `15.2.0-mariadb-tomcat`, `mariadb-tomcat`, `stable-mariadb-tomcat`, `stable-mariadb`](https://github.com/xwiki-contrib/docker-xwiki/blob/739ce67261391a70b55cf2164bce8cd4d3ccfbc6/15/mariadb-tomcat/Dockerfile)
 -	[`14`, `14.10`, `14.10.7`, `14-mysql-tomcat`, `14.10-mysql-tomcat`, `14.10.7-mysql-tomcat`, `lts-mysql-tomcat`, `lts-mysql`, `lts`](https://github.com/xwiki-contrib/docker-xwiki/blob/ba198478e44cb66d67e2a81a87e00c5c1d757305/14/mysql-tomcat/Dockerfile)
 -	[`14-postgres-tomcat`, `14.10-postgres-tomcat`, `14.10.7-postgres-tomcat`, `lts-postgres-tomcat`, `lts-postgres`](https://github.com/xwiki-contrib/docker-xwiki/blob/ba198478e44cb66d67e2a81a87e00c5c1d757305/14/postgres-tomcat/Dockerfile)
 -	[`14-mariadb-tomcat`, `14.10-mariadb-tomcat`, `14.10.7-mariadb-tomcat`, `lts-mariadb-tomcat`, `lts-mariadb`](https://github.com/xwiki-contrib/docker-xwiki/blob/ba198478e44cb66d67e2a81a87e00c5c1d757305/14/mariadb-tomcat/Dockerfile)
