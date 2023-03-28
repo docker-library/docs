@@ -62,7 +62,7 @@ Store your data safely, on your own servers, or with any leading cloud provider.
 
 ## Start a CouchDB instance
 
-Starting a CouchDB instantce is simple:
+Starting a CouchDB instance is simple:
 
 ```console
 $ docker run -d --name my-couchdb couchdb:tag
