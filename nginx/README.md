@@ -24,15 +24,16 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.23.3`, `mainline`, `1`, `1.23`, `latest`](https://github.com/nginxinc/docker-nginx/blob/5ce65c3efd395ee2d82d32670f233140e92dba99/mainline/debian/Dockerfile)
--	[`1.23.3-perl`, `mainline-perl`, `1-perl`, `1.23-perl`, `perl`](https://github.com/nginxinc/docker-nginx/blob/5ce65c3efd395ee2d82d32670f233140e92dba99/mainline/debian-perl/Dockerfile)
--	[`1.23.3-alpine`, `mainline-alpine`, `1-alpine`, `1.23-alpine`, `alpine`](https://github.com/nginxinc/docker-nginx/blob/5ce65c3efd395ee2d82d32670f233140e92dba99/mainline/alpine/Dockerfile)
--	[`1.23.3-alpine-perl`, `mainline-alpine-perl`, `1-alpine-perl`, `1.23-alpine-perl`, `alpine-perl`](https://github.com/nginxinc/docker-nginx/blob/5ce65c3efd395ee2d82d32670f233140e92dba99/mainline/alpine-perl/Dockerfile)
--	[`1.23.3-alpine-slim`, `mainline-alpine-slim`, `1-alpine-slim`, `1.23-alpine-slim`, `alpine-slim`](https://github.com/nginxinc/docker-nginx/blob/5ce65c3efd395ee2d82d32670f233140e92dba99/mainline/alpine-slim/Dockerfile)
--	[`1.22.1`, `stable`, `1.22`](https://github.com/nginxinc/docker-nginx/blob/fef51235521d1cdf8b05d8cb1378a526d2abf421/stable/debian/Dockerfile)
--	[`1.22.1-perl`, `stable-perl`, `1.22-perl`](https://github.com/nginxinc/docker-nginx/blob/fef51235521d1cdf8b05d8cb1378a526d2abf421/stable/debian-perl/Dockerfile)
--	[`1.22.1-alpine`, `stable-alpine`, `1.22-alpine`](https://github.com/nginxinc/docker-nginx/blob/fef51235521d1cdf8b05d8cb1378a526d2abf421/stable/alpine/Dockerfile)
--	[`1.22.1-alpine-perl`, `stable-alpine-perl`, `1.22-alpine-perl`](https://github.com/nginxinc/docker-nginx/blob/fef51235521d1cdf8b05d8cb1378a526d2abf421/stable/alpine-perl/Dockerfile)
+-	[`1.23.4`, `mainline`, `1`, `1.23`, `latest`, `1.23.4-bullseye`, `mainline-bullseye`, `1-bullseye`, `1.23-bullseye`, `bullseye`](https://github.com/nginxinc/docker-nginx/blob/73a5acae6945b75b433cafd0c9318e4378e72cbb/mainline/debian/Dockerfile)
+-	[`1.23.4-perl`, `mainline-perl`, `1-perl`, `1.23-perl`, `perl`, `1.23.4-bullseye-perl`, `mainline-bullseye-perl`, `1-bullseye-perl`, `1.23-bullseye-perl`, `bullseye-perl`](https://github.com/nginxinc/docker-nginx/blob/73a5acae6945b75b433cafd0c9318e4378e72cbb/mainline/debian-perl/Dockerfile)
+-	[`1.23.4-alpine`, `mainline-alpine`, `1-alpine`, `1.23-alpine`, `alpine`, `1.23.4-alpine3.17`, `mainline-alpine3.17`, `1-alpine3.17`, `1.23-alpine3.17`, `alpine3.17`](https://github.com/nginxinc/docker-nginx/blob/73a5acae6945b75b433cafd0c9318e4378e72cbb/mainline/alpine/Dockerfile)
+-	[`1.23.4-alpine-perl`, `mainline-alpine-perl`, `1-alpine-perl`, `1.23-alpine-perl`, `alpine-perl`, `1.23.4-alpine3.17-perl`, `mainline-alpine3.17-perl`, `1-alpine3.17-perl`, `1.23-alpine3.17-perl`, `alpine3.17-perl`](https://github.com/nginxinc/docker-nginx/blob/73a5acae6945b75b433cafd0c9318e4378e72cbb/mainline/alpine-perl/Dockerfile)
+-	[`1.23.4-alpine-slim`, `mainline-alpine-slim`, `1-alpine-slim`, `1.23-alpine-slim`, `alpine-slim`, `1.23.4-alpine3.17-slim`, `mainline-alpine3.17-slim`, `1-alpine3.17-slim`, `1.23-alpine3.17-slim`, `alpine3.17-slim`](https://github.com/nginxinc/docker-nginx/blob/73a5acae6945b75b433cafd0c9318e4378e72cbb/mainline/alpine-slim/Dockerfile)
+-	[`1.22.1`, `stable`, `1.22`, `1.22.1-bullseye`, `stable-bullseye`, `1.22-bullseye`](https://github.com/nginxinc/docker-nginx/blob/7f1ef355dea083761951da16ab02ea2c37addbdd/stable/debian/Dockerfile)
+-	[`1.22.1-perl`, `stable-perl`, `1.22-perl`, `1.22.1-bullseye-perl`, `stable-bullseye-perl`, `1.22-bullseye-perl`](https://github.com/nginxinc/docker-nginx/blob/761fffeba0d867d6e80d38998073e0eaa456bb02/stable/debian-perl/Dockerfile)
+-	[`1.22.1-alpine`, `stable-alpine`, `1.22-alpine`, `1.22.1-alpine3.17`, `stable-alpine3.17`, `1.22-alpine3.17`](https://github.com/nginxinc/docker-nginx/blob/7f1ef355dea083761951da16ab02ea2c37addbdd/stable/alpine/Dockerfile)
+-	[`1.22.1-alpine-perl`, `stable-alpine-perl`, `1.22-alpine-perl`, `1.22.1-alpine3.17-perl`, `stable-alpine3.17-perl`, `1.22-alpine3.17-perl`](https://github.com/nginxinc/docker-nginx/blob/7f1ef355dea083761951da16ab02ea2c37addbdd/stable/alpine-perl/Dockerfile)
+-	[`1.22.1-alpine-slim`, `stable-alpine-slim`, `1.22-alpine-slim`, `1.22.1-alpine3.17-slim`, `stable-alpine3.17-slim`, `1.22-alpine3.17-slim`](https://github.com/nginxinc/docker-nginx/blob/7f1ef355dea083761951da16ab02ea2c37addbdd/stable/alpine-slim/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -244,6 +245,8 @@ The `nginx` images come in many flavors, each designed for a specific use case.
 ## `nginx:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+Some of these tags may have names like bullseye in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 ## `nginx:<version>-perl` / `nginx:<version>-alpine-perl`
 
