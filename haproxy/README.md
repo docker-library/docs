@@ -24,12 +24,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.8-dev5`, `2.8-dev`, `2.8-dev5-bullseye`, `2.8-dev-bullseye`](https://github.com/docker-library/haproxy/blob/5b92c8346ddada68e89299f7b0754dcf03ec0aa8/2.8/Dockerfile)
--	[`2.8-dev5-alpine`, `2.8-dev-alpine`, `2.8-dev5-alpine3.17`, `2.8-dev-alpine3.17`](https://github.com/docker-library/haproxy/blob/5b92c8346ddada68e89299f7b0754dcf03ec0aa8/2.8/alpine/Dockerfile)
--	[`2.7.5`, `2.7`, `latest`, `2.7.5-bullseye`, `2.7-bullseye`, `bullseye`](https://github.com/docker-library/haproxy/blob/098bc15c52ea5cfe4375519a463b682efcb38225/2.7/Dockerfile)
--	[`2.7.5-alpine`, `2.7-alpine`, `alpine`, `2.7.5-alpine3.17`, `2.7-alpine3.17`, `alpine3.17`](https://github.com/docker-library/haproxy/blob/098bc15c52ea5cfe4375519a463b682efcb38225/2.7/alpine/Dockerfile)
--	[`2.6.11`, `2.6`, `lts`, `2.6.11-bullseye`, `2.6-bullseye`, `lts-bullseye`](https://github.com/docker-library/haproxy/blob/c2ce622c339932e818d880f9d73e05c5cc4c7705/2.6/Dockerfile)
--	[`2.6.11-alpine`, `2.6-alpine`, `lts-alpine`, `2.6.11-alpine3.17`, `2.6-alpine3.17`, `lts-alpine3.17`](https://github.com/docker-library/haproxy/blob/c2ce622c339932e818d880f9d73e05c5cc4c7705/2.6/alpine/Dockerfile)
+-	[`2.8-dev6`, `2.8-dev`, `2.8-dev6-bullseye`, `2.8-dev-bullseye`](https://github.com/docker-library/haproxy/blob/b8c3d54e118f694d0a06ce94d8f83a0a2cad5c56/2.8/Dockerfile)
+-	[`2.8-dev6-alpine`, `2.8-dev-alpine`, `2.8-dev6-alpine3.17`, `2.8-dev-alpine3.17`](https://github.com/docker-library/haproxy/blob/b8c3d54e118f694d0a06ce94d8f83a0a2cad5c56/2.8/alpine/Dockerfile)
+-	[`2.7.6`, `2.7`, `latest`, `2.7.6-bullseye`, `2.7-bullseye`, `bullseye`](https://github.com/docker-library/haproxy/blob/3e8ddb695fb46f902afea21ce0de1d481c1c71ab/2.7/Dockerfile)
+-	[`2.7.6-alpine`, `2.7-alpine`, `alpine`, `2.7.6-alpine3.17`, `2.7-alpine3.17`, `alpine3.17`](https://github.com/docker-library/haproxy/blob/3e8ddb695fb46f902afea21ce0de1d481c1c71ab/2.7/alpine/Dockerfile)
+-	[`2.6.12`, `2.6`, `lts`, `2.6.12-bullseye`, `2.6-bullseye`, `lts-bullseye`](https://github.com/docker-library/haproxy/blob/791843a38289bd3b5238715cbe6ed993214b2d73/2.6/Dockerfile)
+-	[`2.6.12-alpine`, `2.6-alpine`, `lts-alpine`, `2.6.12-alpine3.17`, `2.6-alpine3.17`, `lts-alpine3.17`](https://github.com/docker-library/haproxy/blob/791843a38289bd3b5238715cbe6ed993214b2d73/2.6/alpine/Dockerfile)
 -	[`2.5.13`, `2.5`, `2.5.13-bullseye`, `2.5-bullseye`](https://github.com/docker-library/haproxy/blob/8bb4f9f4a41b5c3531a6cb4a070c25be7a254ccd/2.5/Dockerfile)
 -	[`2.5.13-alpine`, `2.5-alpine`, `2.5.13-alpine3.17`, `2.5-alpine3.17`](https://github.com/docker-library/haproxy/blob/8bb4f9f4a41b5c3531a6cb4a070c25be7a254ccd/2.5/alpine/Dockerfile)
 -	[`2.4.22`, `2.4`, `2.4.22-bullseye`, `2.4-bullseye`](https://github.com/docker-library/haproxy/blob/010b099f11c898314bf1e3c90c19ed3bf6cc89e2/2.4/Dockerfile)
