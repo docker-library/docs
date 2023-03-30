@@ -1,5 +1,4 @@
-What are Azul Zulu Builds of OpenJDK?
-=====================================
+# What are Azul Zulu Builds of OpenJDK?
 
 Azul Zulu Builds of OpenJDK are fully tested, and TCK compliant builds of OpenJDK for Linux, Windows, and macOS operating systems.
 
@@ -14,8 +13,7 @@ Docker images of Azul Zulu are available in the following repositories, dependin
 * [azul/zulu-openjdk-debian](https://hub.docker.com/r/azul/zulu-openjdk-debian)
 * [azul/zulu-openjdk-distroless](https://hub.docker.com/r/azul/zulu-openjdk-distroless)
 
-Usage
-=====
+## Usage
 
 To run a container of your choice, use the commands below as an example.
 
