@@ -24,7 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.6.2`](https://github.com/docker-library/logstash/blob/8ecac06ee232b47787ae8f1673fa0aa539b482fa/8/Dockerfile)
+-	[`8.7.0`](https://github.com/docker-library/logstash/blob/5d9c639d3f66808b1fe45bd714c8ff14c8b22f8e/8/Dockerfile)
 -	[`7.17.9`](https://github.com/docker-library/logstash/blob/19eccdc220a6c1d80ddb3a0e48e2bf5d2414682e/7/Dockerfile)
 
 # Quick reference (cont.)
