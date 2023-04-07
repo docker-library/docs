@@ -24,8 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`ee-6.3.0.0`, `ee-6.3.0.0_1`](https://github.com/aerospike/aerospike-server.docker/blob/663aad9ac154e5f372844065ca45c56261ac7f06/enterprise/debian11/Dockerfile)
--	[`ce-6.3.0.0`, `ce-6.3.0.0_1`](https://github.com/aerospike/aerospike-server.docker/blob/663aad9ac154e5f372844065ca45c56261ac7f06/community/debian11/Dockerfile)
+-	[`ee-6.3.0.1`, `ee-6.3.0.1_1`](https://github.com/aerospike/aerospike-server.docker/blob/47d6a8646c2538c1ead328113b9ebcf8bb609f9b/enterprise/debian11/Dockerfile)
+-	[`ce-6.3.0.1`, `ce-6.3.0.1_1`](https://github.com/aerospike/aerospike-server.docker/blob/47d6a8646c2538c1ead328113b9ebcf8bb609f9b/community/debian11/Dockerfile)
 
 # Quick reference (cont.)
 
