@@ -93,8 +93,9 @@ sub prompt_for_edit {
 		# TODO https://github.com/docker/hub-beta-feedback/issues/238
 		my $fullUrl = "$githubBase/$proposedFile";
 		my $shortTags = "-\tSee [\"Supported tags and respective \`Dockerfile\` links\" at $fullUrl]($fullUrl#supported-tags-and-respective-dockerfile-links)\n\n";
-		my $tagsNote = "**Note:** the description for this image is longer than the Hub length limit of $lengthLimit, so the \"Supported tags\" list has been trimmed to compensate.  See [docker/hub-beta-feedback#238](https://github.com/docker/hub-beta-feedback/issues/238) for more information.\n\n" . $shortTags;
-		my $genericNote = "**Note:** the description for this image is longer than the Hub length limit of $lengthLimit, so has been trimmed.  The full description can be found at [$fullUrl]($fullUrl).  See [docker/hub-beta-feedback#238](https://github.com/docker/hub-beta-feedback/issues/238) for more information.";
+		my $seeAlso = 'See also [docker/hub-feedback#238](https://github.com/docker/hub-feedback/issues/238) and [docker/roadmap#475](https://github.com/docker/roadmap/issues/475).';
+		my $tagsNote = "**Note:** the description for this image is longer than the Hub length limit of $lengthLimit, so the \"Supported tags\" list has been trimmed to compensate.  $seeAlso\n\n$shortTags";
+		my $genericNote = "**Note:** the description for this image is longer than the Hub length limit of $lengthLimit, so has been trimmed.  The full description can be found at [$fullUrl]($fullUrl).  $seeAlso";
 		my $startingNote = $genericNote . "\n\n";
 		my $endingNote = "\n\n...\n\n" . $genericNote;
 		
