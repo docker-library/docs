@@ -65,10 +65,6 @@ my $authorizationHeader = {
 	'X-CSRFToken' => $csrf,
 };
 
-my $userData = $ua->get('https://hub.docker.com/v2/user/' => $authorizationHeader);
-die 'user failed' unless $userData->res->is_success;
-$userData = $userData->res->json;
-
 my $supportedTagsRegex = qr%^(# Supported tags and respective `Dockerfile` links\n\n)(.*?\n)(?=# |\[)%ms;
 
 sub prompt_for_edit {
