@@ -39,7 +39,7 @@ WARNING:
 	[https://github.com/orientechnologies/orientdb-docker/issues](https://github.com/orientechnologies/orientdb-docker/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/orientdb/)
+	[`amd64`](https://hub.docker.com/r/amd64/orientdb/), [`arm32v7`](https://hub.docker.com/r/arm32v7/orientdb/), [`arm64v8`](https://hub.docker.com/r/arm64v8/orientdb/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/orientdb/` directory](https://github.com/docker-library/repo-info/blob/master/repos/orientdb) ([history](https://github.com/docker-library/repo-info/commits/master/repos/orientdb))  
