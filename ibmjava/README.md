@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8-jre`, `jre`, `8`, `latest`](https://github.com/ibmruntimes/ci.docker/blob/a596914862ee05bb419b7644e57135f8674e9161/ibmjava/8/jre/ubuntu/Dockerfile)
--	[`8-sfj`, `sfj`](https://github.com/ibmruntimes/ci.docker/blob/a596914862ee05bb419b7644e57135f8674e9161/ibmjava/8/sfj/ubuntu/Dockerfile)
--	[`8-sdk`, `sdk`](https://github.com/ibmruntimes/ci.docker/blob/a596914862ee05bb419b7644e57135f8674e9161/ibmjava/8/sdk/ubuntu/Dockerfile)
+-	[`8-jre`, `jre`, `8`, `latest`](https://github.com/ibmruntimes/ci.docker/blob/17c4cdb127eb02ebcb83a95737547cc0f86a3af7/ibmjava/8/jre/ubuntu/Dockerfile)
+-	[`8-sfj`, `sfj`](https://github.com/ibmruntimes/ci.docker/blob/17c4cdb127eb02ebcb83a95737547cc0f86a3af7/ibmjava/8/sfj/ubuntu/Dockerfile)
+-	[`8-sdk`, `sdk`](https://github.com/ibmruntimes/ci.docker/blob/17c4cdb127eb02ebcb83a95737547cc0f86a3af7/ibmjava/8/sdk/ubuntu/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -34,7 +34,7 @@ WARNING:
 	[GitHub](https://github.com/ibmruntimes/ci.docker/issues); for troubleshooting, see our [How Do I ...?](http://www.ibm.com/developerworks/java/jdk/howdoi/) page
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/ibmjava/), [`i386`](https://hub.docker.com/r/i386/ibmjava/), [`ppc64le`](https://hub.docker.com/r/ppc64le/ibmjava/), [`s390x`](https://hub.docker.com/r/s390x/ibmjava/)
+	[`amd64`](https://hub.docker.com/r/amd64/ibmjava/), [`ppc64le`](https://hub.docker.com/r/ppc64le/ibmjava/), [`s390x`](https://hub.docker.com/r/s390x/ibmjava/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/ibmjava/` directory](https://github.com/docker-library/repo-info/blob/master/repos/ibmjava) ([history](https://github.com/docker-library/repo-info/commits/master/repos/ibmjava))  

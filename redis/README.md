@@ -26,12 +26,12 @@ WARNING:
 
 -	[`7.2-rc1`, `7.2-rc`, `7.2-rc1-bullseye`, `7.2-rc-bullseye`](https://github.com/docker-library/redis/blob/fb3e83ea2c60ba55da46a5eaf114c4d77cd0e97d/7.2-rc/Dockerfile)
 -	[`7.2-rc1-alpine`, `7.2-rc-alpine`, `7.2-rc1-alpine3.17`, `7.2-rc-alpine3.17`](https://github.com/docker-library/redis/blob/fb3e83ea2c60ba55da46a5eaf114c4d77cd0e97d/7.2-rc/alpine/Dockerfile)
--	[`7.0.10`, `7.0`, `7`, `latest`, `7.0.10-bullseye`, `7.0-bullseye`, `7-bullseye`, `bullseye`](https://github.com/docker-library/redis/blob/e331696f8226fb5b89d7bd190fecbfaea3cac571/7.0/Dockerfile)
--	[`7.0.10-alpine`, `7.0-alpine`, `7-alpine`, `alpine`, `7.0.10-alpine3.17`, `7.0-alpine3.17`, `7-alpine3.17`, `alpine3.17`](https://github.com/docker-library/redis/blob/e331696f8226fb5b89d7bd190fecbfaea3cac571/7.0/alpine/Dockerfile)
--	[`6.2.11`, `6.2`, `6`, `6.2.11-bullseye`, `6.2-bullseye`, `6-bullseye`](https://github.com/docker-library/redis/blob/53ffd9d64c8d00cc0640075b685e0da0cebff82f/6.2/Dockerfile)
--	[`6.2.11-alpine`, `6.2-alpine`, `6-alpine`, `6.2.11-alpine3.17`, `6.2-alpine3.17`, `6-alpine3.17`](https://github.com/docker-library/redis/blob/53ffd9d64c8d00cc0640075b685e0da0cebff82f/6.2/alpine/Dockerfile)
--	[`6.0.18`, `6.0`, `6.0.18-bullseye`, `6.0-bullseye`](https://github.com/docker-library/redis/blob/aab0267e4fdab0150c34c9241f87f6f7c6f03328/6.0/Dockerfile)
--	[`6.0.18-alpine`, `6.0-alpine`, `6.0.18-alpine3.17`, `6.0-alpine3.17`](https://github.com/docker-library/redis/blob/aab0267e4fdab0150c34c9241f87f6f7c6f03328/6.0/alpine/Dockerfile)
+-	[`7.0.11`, `7.0`, `7`, `latest`, `7.0.11-bullseye`, `7.0-bullseye`, `7-bullseye`, `bullseye`](https://github.com/docker-library/redis/blob/3fd8719e1dbce24f9e493466ce6649860735b363/7.0/Dockerfile)
+-	[`7.0.11-alpine`, `7.0-alpine`, `7-alpine`, `alpine`, `7.0.11-alpine3.17`, `7.0-alpine3.17`, `7-alpine3.17`, `alpine3.17`](https://github.com/docker-library/redis/blob/3fd8719e1dbce24f9e493466ce6649860735b363/7.0/alpine/Dockerfile)
+-	[`6.2.12`, `6.2`, `6`, `6.2.12-bullseye`, `6.2-bullseye`, `6-bullseye`](https://github.com/docker-library/redis/blob/1609d202febf50daa01c8effab2a72e2fab1c2b5/6.2/Dockerfile)
+-	[`6.2.12-alpine`, `6.2-alpine`, `6-alpine`, `6.2.12-alpine3.17`, `6.2-alpine3.17`, `6-alpine3.17`](https://github.com/docker-library/redis/blob/1609d202febf50daa01c8effab2a72e2fab1c2b5/6.2/alpine/Dockerfile)
+-	[`6.0.19`, `6.0`, `6.0.19-bullseye`, `6.0-bullseye`](https://github.com/docker-library/redis/blob/e4599c8e3ff02de6d66c5ee5e4e8b19b74cbeec3/6.0/Dockerfile)
+-	[`6.0.19-alpine`, `6.0-alpine`, `6.0.19-alpine3.17`, `6.0-alpine3.17`](https://github.com/docker-library/redis/blob/e4599c8e3ff02de6d66c5ee5e4e8b19b74cbeec3/6.0/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
