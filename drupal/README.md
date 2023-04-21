@@ -58,11 +58,11 @@ WARNING:
 -	[`9.4.14-php8.0-apache-buster`, `9.4-php8.0-apache-buster`](https://github.com/docker-library/drupal/blob/bb50b219850ecb86ada6e76903a2d4d7fb5da68e/9.4/php8.0/apache-buster/Dockerfile)
 -	[`9.4.14-php8.0-fpm-buster`, `9.4-php8.0-fpm-buster`](https://github.com/docker-library/drupal/blob/bb50b219850ecb86ada6e76903a2d4d7fb5da68e/9.4/php8.0/fpm-buster/Dockerfile)
 -	[`9.4.14-php8.0-fpm-alpine3.16`, `9.4-php8.0-fpm-alpine3.16`](https://github.com/docker-library/drupal/blob/bb50b219850ecb86ada6e76903a2d4d7fb5da68e/9.4/php8.0/fpm-alpine3.16/Dockerfile)
--	[`7.96-php8.0-apache-bullseye`, `7-php8.0-apache-bullseye`, `7.96-php8.0-apache`, `7-php8.0-apache`, `7.96-php8.0`, `7-php8.0`, `7.96-apache-bullseye`, `7-apache-bullseye`, `7.96-apache`, `7-apache`, `7.96`, `7`](https://github.com/docker-library/drupal/blob/55e1a0b76a99d96c6e39dd60a2ade5c88726471c/7/php8.0/apache-bullseye/Dockerfile)
--	[`7.96-php8.0-fpm-bullseye`, `7-php8.0-fpm-bullseye`, `7.96-php8.0-fpm`, `7-php8.0-fpm`, `7.96-fpm-bullseye`, `7-fpm-bullseye`, `7.96-fpm`, `7-fpm`](https://github.com/docker-library/drupal/blob/55e1a0b76a99d96c6e39dd60a2ade5c88726471c/7/php8.0/fpm-bullseye/Dockerfile)
--	[`7.96-php8.0-apache-buster`, `7-php8.0-apache-buster`, `7.96-apache-buster`, `7-apache-buster`](https://github.com/docker-library/drupal/blob/55e1a0b76a99d96c6e39dd60a2ade5c88726471c/7/php8.0/apache-buster/Dockerfile)
--	[`7.96-php8.0-fpm-buster`, `7-php8.0-fpm-buster`, `7.96-fpm-buster`, `7-fpm-buster`](https://github.com/docker-library/drupal/blob/55e1a0b76a99d96c6e39dd60a2ade5c88726471c/7/php8.0/fpm-buster/Dockerfile)
--	[`7.96-php8.0-fpm-alpine3.16`, `7-php8.0-fpm-alpine3.16`, `7.96-fpm-alpine3.16`, `7-fpm-alpine3.16`](https://github.com/docker-library/drupal/blob/55e1a0b76a99d96c6e39dd60a2ade5c88726471c/7/php8.0/fpm-alpine3.16/Dockerfile)
+-	[`7.97-php8.0-apache-bullseye`, `7-php8.0-apache-bullseye`, `7.97-php8.0-apache`, `7-php8.0-apache`, `7.97-php8.0`, `7-php8.0`, `7.97-apache-bullseye`, `7-apache-bullseye`, `7.97-apache`, `7-apache`, `7.97`, `7`](https://github.com/docker-library/drupal/blob/0025acc33c35bd02fbe65d4aa8d80e2c6bdb0c4c/7/php8.0/apache-bullseye/Dockerfile)
+-	[`7.97-php8.0-fpm-bullseye`, `7-php8.0-fpm-bullseye`, `7.97-php8.0-fpm`, `7-php8.0-fpm`, `7.97-fpm-bullseye`, `7-fpm-bullseye`, `7.97-fpm`, `7-fpm`](https://github.com/docker-library/drupal/blob/0025acc33c35bd02fbe65d4aa8d80e2c6bdb0c4c/7/php8.0/fpm-bullseye/Dockerfile)
+-	[`7.97-php8.0-apache-buster`, `7-php8.0-apache-buster`, `7.97-apache-buster`, `7-apache-buster`](https://github.com/docker-library/drupal/blob/0025acc33c35bd02fbe65d4aa8d80e2c6bdb0c4c/7/php8.0/apache-buster/Dockerfile)
+-	[`7.97-php8.0-fpm-buster`, `7-php8.0-fpm-buster`, `7.97-fpm-buster`, `7-fpm-buster`](https://github.com/docker-library/drupal/blob/0025acc33c35bd02fbe65d4aa8d80e2c6bdb0c4c/7/php8.0/fpm-buster/Dockerfile)
+-	[`7.97-php8.0-fpm-alpine3.16`, `7-php8.0-fpm-alpine3.16`, `7.97-fpm-alpine3.16`, `7-fpm-alpine3.16`](https://github.com/docker-library/drupal/blob/0025acc33c35bd02fbe65d4aa8d80e2c6bdb0c4c/7/php8.0/fpm-alpine3.16/Dockerfile)
 
 # Quick reference (cont.)
 
