@@ -26,9 +26,9 @@ WARNING:
 
 -	[`18.04`, `bionic-20230308`, `bionic`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-bionic-amd64-20230308-0bf56b6b&id=0bf56b6beeb478aee688350c27d41e732048c9af)
 -	[`20.04`, `focal-20230412`, `focal`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-focal-amd64-20230412-26258b91&id=26258b9129f269190048fdf2b46d82de5ae5f79c)
--	[`22.04`, `jammy-20230308`, `jammy`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-amd64-20230308-e17e4450&id=e17e4450874a7b28375b18f037bb7eb86e3e2590)
+-	[`22.04`, `jammy-20230425`, `jammy`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-amd64-20230425-997c5b6f&id=997c5b6fc12a87708c63485cb5599d85973ca211)
 -	[`22.10`, `kinetic-20230412`, `kinetic`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-kinetic-amd64-20230412-acd9976c&id=acd9976cf1d024747ad42960daa92bc3065e3a38)
--	[`23.04`, `lunar-20230415`, `lunar`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-lunar-amd64-20230415-128b175f&id=128b175fd48d26f5e106f8b200d20617dd42c4f1)
+-	[`23.04`, `lunar-20230420`, `lunar`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-lunar-amd64-20230420-a3feaf47&id=a3feaf47f3c57e4aec70c8d07ecd8dde43e0be21)
 
 # Quick reference (cont.)
 

@@ -25,9 +25,9 @@ WARNING:
 # Supported tags and respective `Dockerfile` links
 
 -	[`8.0.33`, `8.0`, `8`, `latest`, `8.0.33-oracle`, `8.0-oracle`, `8-oracle`, `oracle`](https://github.com/docker-library/mysql/blob/1bfa4724fe112b4246672ed2b3c42142f17d5636/8.0/Dockerfile.oracle)
--	[`8.0.33-debian`, `8.0-debian`, `8-debian`, `debian`](https://github.com/docker-library/mysql/blob/1bfa4724fe112b4246672ed2b3c42142f17d5636/8.0/Dockerfile.debian)
+-	[`8.0.33-debian`, `8.0-debian`, `8-debian`, `debian`](https://github.com/docker-library/mysql/blob/611aa464a96f69e5d4d4172b14ca829ded162b42/8.0/Dockerfile.debian)
 -	[`5.7.42`, `5.7`, `5`, `5.7.42-oracle`, `5.7-oracle`, `5-oracle`](https://github.com/docker-library/mysql/blob/e4bdff20153e6a05364a8fe80356dcfd502445bd/5.7/Dockerfile.oracle)
--	[`5.7.42-debian`, `5.7-debian`, `5-debian`](https://github.com/docker-library/mysql/blob/e4bdff20153e6a05364a8fe80356dcfd502445bd/5.7/Dockerfile.debian)
+-	[`5.7.42-debian`, `5.7-debian`, `5-debian`](https://github.com/docker-library/mysql/blob/611aa464a96f69e5d4d4172b14ca829ded162b42/5.7/Dockerfile.debian)
 
 # Quick reference (cont.)
 
