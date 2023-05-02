@@ -48,12 +48,6 @@ WARNING:
 -	[`16-bullseye-slim`, `16.20-bullseye-slim`, `16.20.0-bullseye-slim`, `gallium-bullseye-slim`](https://github.com/nodejs/docker-node/blob/bd6c00f07c5a3b311ce0e346ab69df6b9ef8d08f/16/bullseye-slim/Dockerfile)
 -	[`16`, `16-buster`, `16.20`, `16.20-buster`, `16.20.0`, `16.20.0-buster`, `gallium`, `gallium-buster`](https://github.com/nodejs/docker-node/blob/bd6c00f07c5a3b311ce0e346ab69df6b9ef8d08f/16/buster/Dockerfile)
 -	[`16-buster-slim`, `16-slim`, `16.20-buster-slim`, `16.20-slim`, `16.20.0-buster-slim`, `16.20.0-slim`, `gallium-buster-slim`, `gallium-slim`](https://github.com/nodejs/docker-node/blob/bd6c00f07c5a3b311ce0e346ab69df6b9ef8d08f/16/buster-slim/Dockerfile)
--	[`14-alpine3.16`, `14.21-alpine3.16`, `14.21.3-alpine3.16`, `fermium-alpine3.16`](https://github.com/nodejs/docker-node/blob/e75fa5270326ffaff8fee03153f3bf16860084d4/14/alpine3.16/Dockerfile)
--	[`14-alpine`, `14-alpine3.17`, `14.21-alpine`, `14.21-alpine3.17`, `14.21.3-alpine`, `14.21.3-alpine3.17`, `fermium-alpine`, `fermium-alpine3.17`](https://github.com/nodejs/docker-node/blob/e75fa5270326ffaff8fee03153f3bf16860084d4/14/alpine3.17/Dockerfile)
--	[`14-bullseye`, `14.21-bullseye`, `14.21.3-bullseye`, `fermium-bullseye`](https://github.com/nodejs/docker-node/blob/e75fa5270326ffaff8fee03153f3bf16860084d4/14/bullseye/Dockerfile)
--	[`14-bullseye-slim`, `14.21-bullseye-slim`, `14.21.3-bullseye-slim`, `fermium-bullseye-slim`](https://github.com/nodejs/docker-node/blob/e75fa5270326ffaff8fee03153f3bf16860084d4/14/bullseye-slim/Dockerfile)
--	[`14`, `14-buster`, `14.21`, `14.21-buster`, `14.21.3`, `14.21.3-buster`, `fermium`, `fermium-buster`](https://github.com/nodejs/docker-node/blob/e75fa5270326ffaff8fee03153f3bf16860084d4/14/buster/Dockerfile)
--	[`14-buster-slim`, `14-slim`, `14.21-buster-slim`, `14.21-slim`, `14.21.3-buster-slim`, `14.21.3-slim`, `fermium-buster-slim`, `fermium-slim`](https://github.com/nodejs/docker-node/blob/e75fa5270326ffaff8fee03153f3bf16860084d4/14/buster-slim/Dockerfile)
 
 # Quick reference (cont.)
 
