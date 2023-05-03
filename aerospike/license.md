@@ -1,4 +1,4 @@
-Copyright 2019-2021 Aerospike, Inc.
+Copyright 2019-2023 Aerospike, Inc.
 
 If you are using a feature key file you received as part of your commercial enterprise license, you are operating under the [Aerospike Master License Agreement](https://www.aerospike.com/forms/master-license-agreement/).
 

@@ -1,1 +1,1 @@
-[the Aerospike Forums](https://discuss.aerospike.com) or [GitHub](%%GITHUB-REPO%%/issues)
+[The Aerospike Forum](https://discuss.aerospike.com) or [GitHub](%%GITHUB-REPO%%/issues)
