@@ -24,8 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`v1.14.0-1.0`, `v1.14-1`, `latest`](https://github.com/fluent/fluentd-docker-image/blob/a9e4cee765c7aaf7876d6fe3282aa565dbcdc2a4/v1.14/alpine/Dockerfile)
--	[`v1.14.0-debian-1.0`, `v1.14-debian-1`](https://github.com/fluent/fluentd-docker-image/blob/a9e4cee765c7aaf7876d6fe3282aa565dbcdc2a4/v1.14/debian/Dockerfile)
+-	[`v1.16.0-1.0`, `v1.16-1`, `latest`](https://github.com/fluent/fluentd-docker-image/blob/b1a4d1d1ff36c6904c7f4a5e94a09e7938dab9ef/v1.16/alpine/Dockerfile)
+-	[`v1.16.0-debian-1.0`, `v1.16-debian-1`](https://github.com/fluent/fluentd-docker-image/blob/b1a4d1d1ff36c6904c7f4a5e94a09e7938dab9ef/v1.16/debian/Dockerfile)
 
 # Quick reference (cont.)
 
