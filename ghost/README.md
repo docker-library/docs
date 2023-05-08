@@ -133,7 +133,7 @@ While the Docker images do have Ghost-CLI available and do use some of its comma
 
 ## Production mode
 
-To run Ghost for production you'll also need to be running with MySQL 8, https, and a reverse proxy configured with appropriate `X-Forwarded-For`, `X-Forwared-Host`, and `X-Forwarded-Proto` (`https`) headers.
+To run Ghost for production you'll also need to be running with MySQL 8, https, and a reverse proxy configured with appropriate `X-Forwarded-For`, `X-Forwarded-Host`, and `X-Forwarded-Proto` (`https`) headers.
 
 The following example demonstrates some of the necessary configuration for running with MySQL. For more detail, see [Ghost's "Configuration options" documentation](https://ghost.org/docs/config/#configuration-options).
 
