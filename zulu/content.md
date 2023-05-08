@@ -34,4 +34,7 @@ docker run -it --rm azul/zulu-openjdk-alpine:17 java -version
 docker run -it --rm azul/zulu-openjdk-distroless:17 --version
 ```
 
-As the entrypoint, use `"/usr/lib/jvm/zulu17/bin/java"`.
+As the entrypoint, use:
+```
+/usr/lib/jvm/zulu17/bin/java
+```
