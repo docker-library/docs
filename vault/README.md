@@ -36,7 +36,7 @@ Upcoming in Vault 1.14, we will stop publishing official Dockerhub images and pu
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/hashicorp/docker-vault/issues](https://github.com/hashicorp/docker-vault/issues)
+	[https://github.com/hashicorp/docker-vault/issues](https://github.com/hashicorp/docker-vault/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/vault/), [`arm32v6`](https://hub.docker.com/r/arm32v6/vault/), [`arm64v8`](https://hub.docker.com/r/arm64v8/vault/), [`i386`](https://hub.docker.com/r/i386/vault/)

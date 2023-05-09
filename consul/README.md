@@ -35,7 +35,7 @@ Upcoming in Consul 1.16, we will stop publishing official Dockerhub images and p
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/hashicorp/docker-consul/issues](https://github.com/hashicorp/docker-consul/issues)
+	[https://github.com/hashicorp/docker-consul/issues](https://github.com/hashicorp/docker-consul/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/consul/), [`arm32v6`](https://hub.docker.com/r/arm32v6/consul/), [`arm64v8`](https://hub.docker.com/r/arm64v8/consul/), [`i386`](https://hub.docker.com/r/i386/consul/)

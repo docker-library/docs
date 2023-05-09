@@ -29,7 +29,7 @@ WARNING:
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/tianon/docker-brew-cirros/issues](https://github.com/tianon/docker-brew-cirros/issues)
+	[https://github.com/tianon/docker-brew-cirros/issues](https://github.com/tianon/docker-brew-cirros/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/cirros/), [`arm32v5`](https://hub.docker.com/r/arm32v5/cirros/), [`arm64v8`](https://hub.docker.com/r/arm64v8/cirros/), [`ppc64le`](https://hub.docker.com/r/ppc64le/cirros/)

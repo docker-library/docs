@@ -29,7 +29,7 @@ WARNING:
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/TeamSpeak-Systems/teamspeak-linux-docker-images/issues](https://github.com/TeamSpeak-Systems/teamspeak-linux-docker-images/issues)
+	[https://github.com/TeamSpeak-Systems/teamspeak-linux-docker-images/issues](https://github.com/TeamSpeak-Systems/teamspeak-linux-docker-images/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/teamspeak/)

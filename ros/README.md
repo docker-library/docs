@@ -49,7 +49,7 @@ WARNING:
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/osrf/docker_images/issues](https://github.com/osrf/docker_images/issues)
+	[https://github.com/osrf/docker_images/issues](https://github.com/osrf/docker_images/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/ros/), [`arm32v7`](https://hub.docker.com/r/arm32v7/ros/), [`arm64v8`](https://hub.docker.com/r/arm64v8/ros/)

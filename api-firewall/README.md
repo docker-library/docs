@@ -31,7 +31,7 @@ WARNING:
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/wallarm/api-firewall/issues](https://github.com/wallarm/api-firewall/issues)
+	[https://github.com/wallarm/api-firewall/issues](https://github.com/wallarm/api-firewall/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/api-firewall/), [`arm64v8`](https://hub.docker.com/r/arm64v8/api-firewall/), [`i386`](https://hub.docker.com/r/i386/api-firewall/)

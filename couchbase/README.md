@@ -34,7 +34,7 @@ WARNING:
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/couchbase/docker/issues](https://github.com/couchbase/docker/issues)
+	[https://github.com/couchbase/docker/issues](https://github.com/couchbase/docker/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/couchbase/), [`arm64v8`](https://hub.docker.com/r/arm64v8/couchbase/)
