@@ -24,14 +24,14 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.29.1-go1.20`, `go1.20`, `go1`, `go`](https://github.com/nginx/unit/blob/b9bc222021e77bbdfb12576b3e315b962cf6b399/pkg/docker/Dockerfile.go1.20)
--	[`1.29.1-jsc11`, `jsc11`, `jsc`](https://github.com/nginx/unit/blob/b9bc222021e77bbdfb12576b3e315b962cf6b399/pkg/docker/Dockerfile.jsc11)
--	[`1.29.1-node18`, `node18`, `node`](https://github.com/nginx/unit/blob/b9bc222021e77bbdfb12576b3e315b962cf6b399/pkg/docker/Dockerfile.node18)
--	[`1.29.1-perl5.36`, `perl5.36`, `perl5`, `perl`](https://github.com/nginx/unit/blob/b9bc222021e77bbdfb12576b3e315b962cf6b399/pkg/docker/Dockerfile.perl5.36)
--	[`1.29.1-php8.2`, `php8.2`, `php8`, `php`](https://github.com/nginx/unit/blob/b9bc222021e77bbdfb12576b3e315b962cf6b399/pkg/docker/Dockerfile.php8.2)
--	[`1.29.1-python3.11`, `python3.11`, `python3`, `python`](https://github.com/nginx/unit/blob/b9bc222021e77bbdfb12576b3e315b962cf6b399/pkg/docker/Dockerfile.python3.11)
--	[`1.29.1-ruby3.2`, `ruby3.2`, `ruby3`, `ruby`](https://github.com/nginx/unit/blob/b9bc222021e77bbdfb12576b3e315b962cf6b399/pkg/docker/Dockerfile.ruby3.2)
--	[`1.29.1-minimal`, `minimal`](https://github.com/nginx/unit/blob/b9bc222021e77bbdfb12576b3e315b962cf6b399/pkg/docker/Dockerfile.minimal)
+-	[`1.30.0-go1.20`, `go1.20`, `go1`, `go`](https://github.com/nginx/unit/blob/92ffcb89f8e145299e837438f0a0de93d73ffede/pkg/docker/Dockerfile.go1.20)
+-	[`1.30.0-jsc11`, `jsc11`, `jsc`](https://github.com/nginx/unit/blob/92ffcb89f8e145299e837438f0a0de93d73ffede/pkg/docker/Dockerfile.jsc11)
+-	[`1.30.0-node18`, `node18`, `node`](https://github.com/nginx/unit/blob/92ffcb89f8e145299e837438f0a0de93d73ffede/pkg/docker/Dockerfile.node18)
+-	[`1.30.0-perl5.36`, `perl5.36`, `perl5`, `perl`](https://github.com/nginx/unit/blob/92ffcb89f8e145299e837438f0a0de93d73ffede/pkg/docker/Dockerfile.perl5.36)
+-	[`1.30.0-php8.2`, `php8.2`, `php8`, `php`](https://github.com/nginx/unit/blob/92ffcb89f8e145299e837438f0a0de93d73ffede/pkg/docker/Dockerfile.php8.2)
+-	[`1.30.0-python3.11`, `python3.11`, `python3`, `python`](https://github.com/nginx/unit/blob/92ffcb89f8e145299e837438f0a0de93d73ffede/pkg/docker/Dockerfile.python3.11)
+-	[`1.30.0-ruby3.2`, `ruby3.2`, `ruby3`, `ruby`](https://github.com/nginx/unit/blob/92ffcb89f8e145299e837438f0a0de93d73ffede/pkg/docker/Dockerfile.ruby3.2)
+-	[`1.30.0-minimal`, `minimal`, `latest`](https://github.com/nginx/unit/blob/92ffcb89f8e145299e837438f0a0de93d73ffede/pkg/docker/Dockerfile.minimal)
 
 # Quick reference (cont.)
 
