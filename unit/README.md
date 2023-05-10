@@ -20,7 +20,7 @@ WARNING:
 	[the Unit Docker Maintainers](https://github.com/nginx/unit)
 
 -	**Where to get help**:  
-	the [GitHub issues page](https://github.com/nginx/unit/issues), the [NGINX community](https://nginxcommunity.slack.com/)
+	the [GitHub issues page](https://github.com/nginx/unit/issues), the [NGINX Community Slack](https://community.nginx.org/joinslack)
 
 # Supported tags and respective `Dockerfile` links
 
@@ -54,19 +54,19 @@ WARNING:
 
 # What is Unit?
 
-NGINX Unit is a polyglot app server, a reverse proxy, and a static file server, available for UNIX-like systems. It was built by nginx team members from scratch to be highly efficient and fully configurable at runtime. It is licensed under the Apache 2.0 license. The supported application languages are Go, JavaScript, Java, Perl, PHP, Python, Ruby, and more.
+NGINX Unit is a lightweight and versatile application runtime that provides the essential components for your web application as a single open-source server: running application code, serving static assets, handling TLS and request routing.
 
-> [Key Features](https://unit.nginx.org/#key-features)
+For more information, check out [Key Features](https://unit.nginx.org/keyfeatures).
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/d6e69ebb56fe6890bd6ec587295ff1d67e2849fe/unit/logo.svg?sanitize=true)
 
 # Available tags
 
-Please see [Unit's website](http://unit.nginx.org/installation/#docker-images) for details.
+Please see [Unit's website](https://unit.nginx.org/installation/#docker-images) for details.
 
 # How to use this image
 
-Please check the [Initial Configuration](http://unit.nginx.org/installation/#initial-configuration) section on Unit's website. Additionally, our [Docker howto](http://unit.nginx.org/howto/docker/) can be of help.
+Please check the [Initial Configuration](https://unit.nginx.org/installation/#initial-configuration) section on Unit's website. Additionally, our [Docker howto](https://unit.nginx.org/howto/docker/) can be of help.
 
 # License
 
