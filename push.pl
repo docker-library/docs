@@ -233,5 +233,5 @@ while (my $repo = shift) { # 'library/hylang', 'tianon/perl', etc
 			description => $hubShort,
 			full_description => $hubLong,
 		});
-	warn 'patch to ' . $repoUrl . ' failed: ' . $repoPatch->res->text and next unless $repoPatch->res->is_success;
+	die 'patch to ' . $repoUrl . ' failed: ' . $repoPatch->res->text unless $repoPatch->res->is_success;
 }
