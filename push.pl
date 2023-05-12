@@ -43,8 +43,10 @@ unless (defined $password) {
 	$password = $term->get_reply(prompt => 'Hub Password'); # TODO hide the input? O:)
 }
 
-my $login = $ua->post('https://hub.docker.com/v2/users/login/' => {} => json => { username => $username, password => $password });
-die 'login failed' unless $login->res->is_success;
+my $dockerHub = 'https://hub.docker.com';
+
+my $login = $ua->post($dockerHub . '/v2/users/login/' => {} => json => { username => $username, password => $password });
+die 'login failed: ' . $login->res->error->{message} unless $login->res->is_success;
 
 my $token = $login->res->json->{token};
 
@@ -57,7 +59,7 @@ for my $cookie (@{ $login->res->cookies }) {
 }
 die 'missing CSRF token' unless defined $csrf;
 
-my $attemptLogin = $ua->post('https://hub.docker.com/attempt-login/' => {} => json => { jwt => $token });
+my $attemptLogin = $ua->post($dockerHub . '/attempt-login/' => {} => json => { jwt => $token });
 die 'attempt-login failed' unless $attemptLogin->res->is_success;
 
 my $authorizationHeader = {
@@ -171,7 +173,7 @@ while (my $repo = shift) { # 'library/hylang', 'tianon/perl', etc
 	my $repoName = $repo;
 	$repoName =~ s!^.*/!!; # 'hylang', 'perl', etc
 	
-	my $repoUrl = 'https://hub.docker.com/v2/repositories/' . $repo . '/';
+	my $repoUrl = $dockerHub . '/v2/repositories/' . $repo . '/';
 	
 	if ($logos && $repo =~ m{ ^ library/ }x) {
 		# the "library" org images include a logo which is displayed in the Hub UI
