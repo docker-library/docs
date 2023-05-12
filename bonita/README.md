@@ -24,10 +24,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2021.1`, `7.12.1`, `7.12`](https://github.com/bonitasoft/bonita-distrib/blob/bfdd527629063b73f053320e50e1f6bfcd135d0a/docker/Dockerfile)
 -	[`2021.2-u0`, `2021.2`, `7.13.0`, `7.13`](https://github.com/bonitasoft/bonita-distrib/blob/a1d9ee5e31d38958aa553cc7f9d465f1151d902f/docker/Dockerfile)
 -	[`2022.1-u0`, `2022.1`, `7.14.0`, `7.14`](https://github.com/bonitasoft/bonita-distrib/blob/694bf79347add872f8c6a4c0a7f5c3ef12c31dc8/docker/Dockerfile)
--	[`2022.2-u0`, `2022.2`, `7.15.0`, `7.15`, `latest`](https://github.com/bonitasoft/bonita-distrib/blob/21c0e51634e836feaf910e8e3d6e95de200e1814/docker/Dockerfile)
+-	[`2022.2-u0`, `2022.2`, `7.15.0`, `7.15`](https://github.com/bonitasoft/bonita-distrib/blob/21c0e51634e836feaf910e8e3d6e95de200e1814/docker/Dockerfile)
+-	[`2023.1-u0`, `2023.1`, `8.0.0`, `8.0`, `latest`](https://github.com/bonitasoft/bonita-distrib/blob/0848e9716e3ff36a15f03e8ffe5bfd25c273cc5b/docker/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -355,8 +355,8 @@ For updating from a version before 7.10.0, please refer to the [documentation](h
 -	Retrieve the last update tool
 
 	```console
-	wget https://github.com/bonitasoft/bonita-platform-releases/releases/download/2022.2-u0/bonita-update-tool-3.1.0.zip
-	unzip bonita-update-tool-3.0.0.zip
+	wget https://github.com/bonitasoft/bonita-platform-releases/releases/download/2023.1-u0/bonita-update-tool-3.2.0.zip
+	unzip bonita-update-tool-3.2.0.zip
 	```
 
 -	Configure the update tool
@@ -391,7 +391,7 @@ For updating from a version before 7.10.0, please refer to the [documentation](h
 -	Launch the new container pointing towards the copy of the database.
 
 	```console
-	$ docker run --name=bonita --link mydbpostgres:postgres -e "DB_NAME=newbonitadb" -e "DB_USER=newbonitauser" -e "DB_PASS=newbonitapass" -d -p 8081:8080 bonita:2022.2-u0
+	$ docker run --name=bonita --link mydbpostgres:postgres -e "DB_NAME=newbonitadb" -e "DB_USER=newbonitauser" -e "DB_PASS=newbonitapass" -d -p 8081:8080 bonita:2023.1-u0
 	```
 
 For more details regarding Bonita update and for version before 7.10.0, see the [documentation](https://documentation.bonitasoft.com/bonita/latest/version-update/migrate-from-an-earlier-version-of-bonita).
