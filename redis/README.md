@@ -24,8 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.2-rc1`, `7.2-rc`, `7.2-rc1-bullseye`, `7.2-rc-bullseye`](https://github.com/docker-library/redis/blob/47ff5548471e77c54c801a06adb85aba6446bc33/7.2-rc/Dockerfile)
--	[`7.2-rc1-alpine`, `7.2-rc-alpine`, `7.2-rc1-alpine3.18`, `7.2-rc-alpine3.18`](https://github.com/docker-library/redis/blob/7ef4e925387c9c4063b25e83928a85ff44dddf4d/7.2-rc/alpine/Dockerfile)
+-	[`7.2-rc2`, `7.2-rc`, `7.2-rc2-bullseye`, `7.2-rc-bullseye`](https://github.com/docker-library/redis/blob/2e6e8961037d8b2838a4105bb9a761441e1ae477/7.2-rc/Dockerfile)
+-	[`7.2-rc2-alpine`, `7.2-rc-alpine`, `7.2-rc2-alpine3.18`, `7.2-rc-alpine3.18`](https://github.com/docker-library/redis/blob/2e6e8961037d8b2838a4105bb9a761441e1ae477/7.2-rc/alpine/Dockerfile)
 -	[`7.0.11`, `7.0`, `7`, `latest`, `7.0.11-bullseye`, `7.0-bullseye`, `7-bullseye`, `bullseye`](https://github.com/docker-library/redis/blob/47ff5548471e77c54c801a06adb85aba6446bc33/7.0/Dockerfile)
 -	[`7.0.11-alpine`, `7.0-alpine`, `7-alpine`, `alpine`, `7.0.11-alpine3.18`, `7.0-alpine3.18`, `7-alpine3.18`, `alpine3.18`](https://github.com/docker-library/redis/blob/7ef4e925387c9c4063b25e83928a85ff44dddf4d/7.0/alpine/Dockerfile)
 -	[`6.2.12`, `6.2`, `6`, `6.2.12-bullseye`, `6.2-bullseye`, `6-bullseye`](https://github.com/docker-library/redis/blob/47ff5548471e77c54c801a06adb85aba6446bc33/6.2/Dockerfile)
