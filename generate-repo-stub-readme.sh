@@ -41,7 +41,7 @@ if [ -f "$repo/deprecated.md" ]; then
 fi
 
 case "$repo" in
-	hello-world | buildpack-deps) disclaimer='' ;;
+	buildpack-deps | docker | hello-world | hylang) disclaimer='' ;;
 	*) disclaimer=" (not to be confused with any official \`$repo\` image provided by \`$repo\` upstream)" ;;
 esac
 
