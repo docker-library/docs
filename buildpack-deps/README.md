@@ -24,7 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`bookworm-curl`, `testing-curl`](https://github.com/docker-library/buildpack-deps/blob/93d6db0797f91ab674535553b7e0e762941a02d0/debian/bookworm/curl/Dockerfile)
+-	[`bookworm-curl`, `testing-curl`](https://github.com/docker-library/buildpack-deps/blob/3e18c3af1f5dce6a48abf036857f9097b6bd79cc/debian/bookworm/curl/Dockerfile)
 -	[`bookworm-scm`, `testing-scm`](https://github.com/docker-library/buildpack-deps/blob/84e7e46026131a108a6480e5ed2969e8acf2d4e2/debian/bookworm/scm/Dockerfile)
 -	[`bookworm`, `testing`](https://github.com/docker-library/buildpack-deps/blob/84e7e46026131a108a6480e5ed2969e8acf2d4e2/debian/bookworm/Dockerfile)
 -	[`bullseye-curl`, `stable-curl`, `curl`](https://github.com/docker-library/buildpack-deps/blob/93d6db0797f91ab674535553b7e0e762941a02d0/debian/bullseye/curl/Dockerfile)
@@ -33,7 +33,7 @@ WARNING:
 -	[`buster-curl`, `oldstable-curl`](https://github.com/docker-library/buildpack-deps/blob/93d6db0797f91ab674535553b7e0e762941a02d0/debian/buster/curl/Dockerfile)
 -	[`buster-scm`, `oldstable-scm`](https://github.com/docker-library/buildpack-deps/blob/65d69325ad741cea6dee20781c1faaab2e003d87/debian/buster/scm/Dockerfile)
 -	[`buster`, `oldstable`](https://github.com/docker-library/buildpack-deps/blob/65d69325ad741cea6dee20781c1faaab2e003d87/debian/buster/Dockerfile)
--	[`sid-curl`, `unstable-curl`](https://github.com/docker-library/buildpack-deps/blob/93d6db0797f91ab674535553b7e0e762941a02d0/debian/sid/curl/Dockerfile)
+-	[`sid-curl`, `unstable-curl`](https://github.com/docker-library/buildpack-deps/blob/3e18c3af1f5dce6a48abf036857f9097b6bd79cc/debian/sid/curl/Dockerfile)
 -	[`sid-scm`, `unstable-scm`](https://github.com/docker-library/buildpack-deps/blob/65d69325ad741cea6dee20781c1faaab2e003d87/debian/sid/scm/Dockerfile)
 -	[`sid`, `unstable`](https://github.com/docker-library/buildpack-deps/blob/65d69325ad741cea6dee20781c1faaab2e003d87/debian/sid/Dockerfile)
 -	[`bionic-curl`, `18.04-curl`](https://github.com/docker-library/buildpack-deps/blob/93d6db0797f91ab674535553b7e0e762941a02d0/ubuntu/bionic/curl/Dockerfile)
@@ -45,12 +45,15 @@ WARNING:
 -	[`jammy-curl`, `22.04-curl`](https://github.com/docker-library/buildpack-deps/blob/93d6db0797f91ab674535553b7e0e762941a02d0/ubuntu/jammy/curl/Dockerfile)
 -	[`jammy-scm`, `22.04-scm`](https://github.com/docker-library/buildpack-deps/blob/e2fc735283ba4e96efc3e4acf2b74bc3eccbf327/ubuntu/jammy/scm/Dockerfile)
 -	[`jammy`, `22.04`](https://github.com/docker-library/buildpack-deps/blob/e2fc735283ba4e96efc3e4acf2b74bc3eccbf327/ubuntu/jammy/Dockerfile)
--	[`kinetic-curl`, `22.10-curl`](https://github.com/docker-library/buildpack-deps/blob/93d6db0797f91ab674535553b7e0e762941a02d0/ubuntu/kinetic/curl/Dockerfile)
+-	[`kinetic-curl`, `22.10-curl`](https://github.com/docker-library/buildpack-deps/blob/3e18c3af1f5dce6a48abf036857f9097b6bd79cc/ubuntu/kinetic/curl/Dockerfile)
 -	[`kinetic-scm`, `22.10-scm`](https://github.com/docker-library/buildpack-deps/blob/c96f4f3e1d5bc19fba5c652f57af0a35bb929718/ubuntu/kinetic/scm/Dockerfile)
 -	[`kinetic`, `22.10`](https://github.com/docker-library/buildpack-deps/blob/c96f4f3e1d5bc19fba5c652f57af0a35bb929718/ubuntu/kinetic/Dockerfile)
--	[`lunar-curl`, `23.04-curl`](https://github.com/docker-library/buildpack-deps/blob/93d6db0797f91ab674535553b7e0e762941a02d0/ubuntu/lunar/curl/Dockerfile)
+-	[`lunar-curl`, `23.04-curl`](https://github.com/docker-library/buildpack-deps/blob/3e18c3af1f5dce6a48abf036857f9097b6bd79cc/ubuntu/lunar/curl/Dockerfile)
 -	[`lunar-scm`, `23.04-scm`](https://github.com/docker-library/buildpack-deps/blob/31e15bc4a2352c20998e5da6bd8aaa727fd19d06/ubuntu/lunar/scm/Dockerfile)
 -	[`lunar`, `23.04`](https://github.com/docker-library/buildpack-deps/blob/31e15bc4a2352c20998e5da6bd8aaa727fd19d06/ubuntu/lunar/Dockerfile)
+-	[`mantic-curl`, `23.10-curl`](https://github.com/docker-library/buildpack-deps/blob/ba367c3a52946cee45274b62f7f8b27e07807289/ubuntu/mantic/curl/Dockerfile)
+-	[`mantic-scm`, `23.10-scm`](https://github.com/docker-library/buildpack-deps/blob/ba367c3a52946cee45274b62f7f8b27e07807289/ubuntu/mantic/scm/Dockerfile)
+-	[`mantic`, `23.10`](https://github.com/docker-library/buildpack-deps/blob/ba367c3a52946cee45274b62f7f8b27e07807289/ubuntu/mantic/Dockerfile)
 
 # Quick reference (cont.)
 
