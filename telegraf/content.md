@@ -32,8 +32,8 @@ following will walk through the general steps to get going.
 ### Basic Example
 
 Configuration files are TOML-based files that declare which plugins to use.
-A very simple configuration file that collects metrics from the system CPU
-and outputs the metrics to stdout looks like the following:
+A very simple configuration file, `telegraf.conf`, that collects metrics from
+the system CPU and outputs the metrics to stdout looks like the following:
 
 ```toml
 [[inputs.cpu]]
@@ -56,7 +56,7 @@ Read more about the Telegraf configuration [here](https://docs.influxdata.com/te
 Users can generate a sample configuration using the `config` subcommand. This
 will provide the user with a basic config that has a handful of input plugins
 enabled that collect data from the system. However, the user will still need to
-configure at least one output. and save it as `telegraf.conf` on the host:
+configure at least one output before the file is ready for use:
 
 ```console
 $ docker run --rm %%IMAGE%% telegraf config > telegraf.conf
