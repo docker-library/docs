@@ -1,15 +1,12 @@
 # What is telegraf?
 
-Telegraf is an open source agent for collecting, processing, aggregating, and
-writing metrics. Based on a plugin system to enable developers in the community
-to easily add support for additional metric collection. There are five distinct
-types of plugins:
+Telegraf is an open source agent for collecting, processing, aggregating, and writing metrics. Based on a plugin system to enable developers in the community to easily add support for additional metric collection. There are five distinct types of plugins:
 
-* Input plugins collect metrics from the system, services, or 3rd party APIs
-* Output plugins write metrics to various destinations
-* Processor plugins transform, decorate, and/or filter metrics
-* Aggregator plugins create aggregate metrics (e.g. mean, min, max, quantiles, etc.)
-* Secret Store plugins are used to hide secrets from the configuration file
+-	Input plugins collect metrics from the system, services, or 3rd party APIs
+-	Output plugins write metrics to various destinations
+-	Processor plugins transform, decorate, and/or filter metrics
+-	Aggregator plugins create aggregate metrics (e.g. mean, min, max, quantiles, etc.)
+-	Secret Store plugins are used to hide secrets from the configuration file
 
 [Telegraf Official Docs](https://docs.influxdata.com/telegraf/latest/get_started/)
 
@@ -19,29 +16,24 @@ types of plugins:
 
 ## Exposed Ports
 
-- 8125 UDP
-- 8092 UDP
-- 8094 TCP
+-	8125 UDP
+-	8092 UDP
+-	8094 TCP
 
 ## Configuration file
 
-The user is required to provide a valid configuration to use the image. A valid
-configuration has at least one input and one output plugin specified. The
-following will walk through the general steps to get going.
+The user is required to provide a valid configuration to use the image. A valid configuration has at least one input and one output plugin specified. The following will walk through the general steps to get going.
 
 ### Basic Example
 
-Configuration files are TOML-based files that declare which plugins to use.
-A very simple configuration file, `telegraf.conf`, that collects metrics from
-the system CPU and outputs the metrics to stdout looks like the following:
+Configuration files are TOML-based files that declare which plugins to use. A very simple configuration file, `telegraf.conf`, that collects metrics from the system CPU and outputs the metrics to stdout looks like the following:
 
 ```toml
 [[inputs.cpu]]
 [[outputs.file]]
 ```
 
-Once a user has a customized configuration file, they can launch a Telegraf
-container with it mounted in the expected location:
+Once a user has a customized configuration file, they can launch a Telegraf container with it mounted in the expected location:
 
 ```console
 $ docker run -v $PWD/telegraf.conf:/etc/telegraf/telegraf.conf:ro %%IMAGE%%
@@ -53,10 +45,7 @@ Read more about the Telegraf configuration [here](https://docs.influxdata.com/te
 
 ### Sample Configuration
 
-Users can generate a sample configuration using the `config` subcommand. This
-will provide the user with a basic config that has a handful of input plugins
-enabled that collect data from the system. However, the user will still need to
-configure at least one output before the file is ready for use:
+Users can generate a sample configuration using the `config` subcommand. This will provide the user with a basic config that has a handful of input plugins enabled that collect data from the system. However, the user will still need to configure at least one output before the file is ready for use:
 
 ```console
 $ docker run --rm %%IMAGE%% telegraf config > telegraf.conf
@@ -66,10 +55,10 @@ $ docker run --rm %%IMAGE%% telegraf config > telegraf.conf
 
 The following are links to the various plugins that are available in Telegraf:
 
-- [Input Plugins](https://docs.influxdata.com/telegraf/latest/plugins/#input-plugins)
-- [Output Plugins](https://docs.influxdata.com/telegraf/latest/plugins/#output-plugins)
-- [Processor Plugins](https://docs.influxdata.com/telegraf/latest/plugins/#processor-plugins)
-- [Aggregator Plugins](https://docs.influxdata.com/telegraf/latest/plugins/#aggregator-plugins)
+-	[Input Plugins](https://docs.influxdata.com/telegraf/latest/plugins/#input-plugins)
+-	[Output Plugins](https://docs.influxdata.com/telegraf/latest/plugins/#output-plugins)
+-	[Processor Plugins](https://docs.influxdata.com/telegraf/latest/plugins/#processor-plugins)
+-	[Aggregator Plugins](https://docs.influxdata.com/telegraf/latest/plugins/#aggregator-plugins)
 
 # Examples
 
