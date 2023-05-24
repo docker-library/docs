@@ -24,8 +24,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.1.4`, `enterprise-7.1.4`, `enterprise`, `latest`](https://github.com/couchbase/docker/blob/c497eda885d5b9869ad45d0432e3b382d6b328c1/enterprise/couchbase-server/7.1.4/Dockerfile)
--	[`community-7.1.1`, `community`](https://github.com/couchbase/docker/blob/bfbb82c084ca3ada6252afbbcb3ca94bb65f1e58/community/couchbase-server/7.1.1/Dockerfile)
+-	[`7.2.0`, `enterprise-7.2.0`, `enterprise`, `latest`](https://github.com/couchbase/docker/blob/2bd177d6887d051b6981c8c2591af6eed3ae9505/enterprise/couchbase-server/7.2.0/Dockerfile)
+-	[`community-7.2.0`, `community`](https://github.com/couchbase/docker/blob/2bd177d6887d051b6981c8c2591af6eed3ae9505/community/couchbase-server/7.2.0/Dockerfile)
+-	[`7.1.4`, `enterprise-7.1.4`](https://github.com/couchbase/docker/blob/c497eda885d5b9869ad45d0432e3b382d6b328c1/enterprise/couchbase-server/7.1.4/Dockerfile)
+-	[`community-7.1.1`](https://github.com/couchbase/docker/blob/bfbb82c084ca3ada6252afbbcb3ca94bb65f1e58/community/couchbase-server/7.1.1/Dockerfile)
 -	[`7.0.5`, `enterprise-7.0.5`](https://github.com/couchbase/docker/blob/ca816b6ffa5c36007bd4b3386ec24df081a00ea0/enterprise/couchbase-server/7.0.5/Dockerfile)
 -	[`community-7.0.2`](https://github.com/couchbase/docker/blob/aec4494ab5280caf567997d72714f57572a6315b/community/couchbase-server/7.0.2/Dockerfile)
 -	[`6.6.6`, `enterprise-6.6.6`](https://github.com/couchbase/docker/blob/8398e79a15da9eef613d0a781ec136a458ea128c/enterprise/couchbase-server/6.6.6/Dockerfile)

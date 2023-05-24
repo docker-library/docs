@@ -26,8 +26,8 @@ WARNING:
 
 -	[`5.8.0`, `5.8.0-community`, `5.8`, `5.8-community`, `5`, `5-community`, `community`, `latest`](https://github.com/neo4j/docker-neo4j-publish/blob/a9b3464e378d969401dce828e6000453677c0b3e/5.8.0/community/Dockerfile)
 -	[`5.8.0-enterprise`, `5.8-enterprise`, `5-enterprise`, `enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/a9b3464e378d969401dce828e6000453677c0b3e/5.8.0/enterprise/Dockerfile)
--	[`4.4.20`, `4.4.20-community`, `4.4`, `4.4-community`](https://github.com/neo4j/docker-neo4j-publish/blob/0b7f25524ed61ebc29e610955b8dbff7679a500f/4.4.20/community/Dockerfile)
--	[`4.4.20-enterprise`, `4.4-enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/0b7f25524ed61ebc29e610955b8dbff7679a500f/4.4.20/enterprise/Dockerfile)
+-	[`4.4.21`, `4.4.21-community`, `4.4`, `4.4-community`](https://github.com/neo4j/docker-neo4j-publish/blob/9dea28f9da8f5792752853a1be16309950d03204/4.4.21/community/Dockerfile)
+-	[`4.4.21-enterprise`, `4.4-enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/9dea28f9da8f5792752853a1be16309950d03204/4.4.21/enterprise/Dockerfile)
 
 # Quick reference (cont.)
 
