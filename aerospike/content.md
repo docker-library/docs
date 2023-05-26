@@ -22,7 +22,7 @@ docker run -d -v DIR:/opt/aerospike/etc/ -e "FEATURE_KEY_FILE=/opt/aerospike/etc
 
 Above, *DIR* is a directory on your machine where you drop your feature key file. Make sure Docker Desktop has file sharing permission to bind mount it into Docker containers.
 
-### Running an Aerospike EE node with a feature key file in a mapped directory
+### Running a node with a feature key file in an environment variable
 
 ```console
 FEATKEY=$(base64 ~/Desktop/evaluation-features.conf)
