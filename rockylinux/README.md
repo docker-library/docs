@@ -24,10 +24,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`9.1.20230215`, `9.1`, `9`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/c554918c3fb7432f70802459ee942fead8121cae/Dockerfile)
--	[`9.1.20230215-minimal`, `9.1-minimal`, `9-minimal`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/957dce1794c27b8fc1666f7e283db2ba7ef5b182/Dockerfile)
--	[`8.7.20230215`, `8.7`, `8`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/65d3f79aa8b5d0a9ed1270470e585539f7d59cd1/Dockerfile)
--	[`8.7.20230215-minimal`, `8.7-minimal`, `8-minimal`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/a923b0d8957fa92feafaa4f6b00f8df08db796ab/Dockerfile)
+-	[`9.2.20230513`, `9.2`, `9`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/5534796e428e5ac942d820bc96a36a5d0404a8a4/Dockerfile)
+-	[`9.2.20230513-minimal`, `9.2-minimal`, `9-minimal`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/7be807edccbbb7b64872f1a6b6c24cc2edabf3bd/Dockerfile)
+-	[`8.8.20230518`, `8.8`, `8`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/1c46fd092fd28c6192435baa61e66a00e66f7029/Dockerfile)
+-	[`8.8.20230518-minimal`, `8.8-minimal`, `8-minimal`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/62c9ffd4470199b37a57ac260d1368ad239d476c/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -35,7 +35,7 @@ WARNING:
 	[https://bugs.rockylinux.org](https://bugs.rockylinux.org) or [GitHub](https://github.com/rocky-linux/sig-cloud-instance-images/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/rockylinux/), [`arm64v8`](https://hub.docker.com/r/arm64v8/rockylinux/), [`ppc64le`](https://hub.docker.com/r/ppc64le/rockylinux/), [`s390x`](https://hub.docker.com/r/s390x/rockylinux/)
+	[`amd64`](https://hub.docker.com/r/amd64/rockylinux/), [`arm64v8`](https://hub.docker.com/r/arm64v8/rockylinux/), [`s390x`](https://hub.docker.com/r/s390x/rockylinux/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/rockylinux/` directory](https://github.com/docker-library/repo-info/blob/master/repos/rockylinux) ([history](https://github.com/docker-library/repo-info/commits/master/repos/rockylinux))  
