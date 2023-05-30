@@ -24,10 +24,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `3.3.2`, `3.3`, `3`](https://github.com/apache/couchdb-docker/blob/72a0aebfa3248b3df64a70049f0fb1f90c042a49/3.3.2/Dockerfile)
--	[`3.2.3`, `3.2`](https://github.com/apache/couchdb-docker/blob/72a0aebfa3248b3df64a70049f0fb1f90c042a49/3.2.3/Dockerfile)
--	[`3.1.2`, `3.1`](https://github.com/apache/couchdb-docker/blob/72a0aebfa3248b3df64a70049f0fb1f90c042a49/3.1.2/Dockerfile)
--	[`2.3.1`, `2.3`, `2`](https://github.com/apache/couchdb-docker/blob/72a0aebfa3248b3df64a70049f0fb1f90c042a49/2.3.1/Dockerfile)
+-	[`latest`, `3.3.2`, `3.3`, `3`](https://github.com/apache/couchdb-docker/blob/b616800e739db18c19e6a8b4131528157f945bcd/3.3.2/Dockerfile)
+-	[`3.2.3`, `3.2`](https://github.com/apache/couchdb-docker/blob/b616800e739db18c19e6a8b4131528157f945bcd/3.2.3/Dockerfile)
+-	[`3.1.2`, `3.1`](https://github.com/apache/couchdb-docker/blob/b616800e739db18c19e6a8b4131528157f945bcd/3.1.2/Dockerfile)
+-	[`2.3.1`, `2.3`, `2`](https://github.com/apache/couchdb-docker/blob/b616800e739db18c19e6a8b4131528157f945bcd/2.3.1/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -35,7 +35,7 @@ WARNING:
 	[https://github.com/apache/couchdb-docker/issues](https://github.com/apache/couchdb-docker/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/couchdb/), [`arm64v8`](https://hub.docker.com/r/arm64v8/couchdb/), [`ppc64le`](https://hub.docker.com/r/ppc64le/couchdb/)
+	[`amd64`](https://hub.docker.com/r/amd64/couchdb/), [`arm64v8`](https://hub.docker.com/r/arm64v8/couchdb/), [`ppc64le`](https://hub.docker.com/r/ppc64le/couchdb/), [`s390x`](https://hub.docker.com/r/s390x/couchdb/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/couchdb/` directory](https://github.com/docker-library/repo-info/blob/master/repos/couchdb) ([history](https://github.com/docker-library/repo-info/commits/master/repos/couchdb))  

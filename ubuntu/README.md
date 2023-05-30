@@ -17,7 +17,7 @@ WARNING:
 # Quick reference
 
 -	**Maintained by**:  
-	[Canonical](https://launchpad.net/cloud-images) and [Tianon (Debian Developer)](https://git.launchpad.net/cloud-images/+oci/ubuntu-base)
+	[Canonical](https://launchpad.net/cloud-images)
 
 -	**Where to get help**:  
 	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
