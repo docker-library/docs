@@ -24,6 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
+-	[`16beta1`, `16beta1-bullseye`](https://github.com/docker-library/postgres/blob/4fe55381bab76d0d39195f84e00cfdd0759e65c0/16/bullseye/Dockerfile)
+-	[`16beta1-alpine3.18`, `16beta1-alpine`](https://github.com/docker-library/postgres/blob/4fe55381bab76d0d39195f84e00cfdd0759e65c0/16/alpine3.18/Dockerfile)
+-	[`16beta1-alpine3.17`](https://github.com/docker-library/postgres/blob/4fe55381bab76d0d39195f84e00cfdd0759e65c0/16/alpine3.17/Dockerfile)
 -	[`15.3`, `15`, `latest`, `15.3-bullseye`, `15-bullseye`, `bullseye`](https://github.com/docker-library/postgres/blob/a23c0e97980edae5be2cd4eb68ff1f0762d031cd/15/bullseye/Dockerfile)
 -	[`15.3-alpine3.18`, `15-alpine3.18`, `alpine3.18`, `15.3-alpine`, `15-alpine`, `alpine`](https://github.com/docker-library/postgres/blob/5ea98fe00be95fbbe642732d62af3b4dbc83f442/15/alpine3.18/Dockerfile)
 -	[`15.3-alpine3.17`, `15-alpine3.17`, `alpine3.17`](https://github.com/docker-library/postgres/blob/5ea98fe00be95fbbe642732d62af3b4dbc83f442/15/alpine3.17/Dockerfile)
