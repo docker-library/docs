@@ -84,11 +84,11 @@ ENV LANG en_US.utf8
 
 The tarballs published by Canonical, referenced by `dist-*` tags in https://git.launchpad.net/cloud-images/+oci/ubuntu-base Git repository, are built from scripts that live in [the livecd-rootfs project](https://code.launchpad.net/~ubuntu-core-dev/livecd-rootfs/+git/livecd-rootfs/+ref/ubuntu/master), especially `live-build/auto/build`. The builds are run on Launchpad. For build history see `livefs` build pages of individual releases on Launchpad:
 
--	[Bionic](https://launchpad.net/~cloud-images-release-managers/+livefs/ubuntu/bionic/ubuntu-oci)
 -	[Focal](https://launchpad.net/~cloud-images-release-managers/+livefs/ubuntu/focal/ubuntu-oci)
 -	[Jammy](https://launchpad.net/~cloud-images-release-managers/+livefs/ubuntu/jammy/ubuntu-oci)
 -	[Kinetic](https://launchpad.net/~cloud-images-release-managers/+livefs/ubuntu/kinetic/ubuntu-oci)
 -	[Lunar](https://launchpad.net/~cloud-images-release-managers/+livefs/ubuntu/lunar/ubuntu-oci)
+-	[Mantic](https://launchpad.net/~cloud-images-release-managers/+livefs/ubuntu/mantic/ubuntu-oci)
 
 # License
 
