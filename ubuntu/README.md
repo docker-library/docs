@@ -24,12 +24,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`18.04`, `bionic-20230412`, `bionic`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-bionic-amd64-20230412-46786f36&id=46786f36bc92dd9662f9a1e7530b4859f6cd4625)
+-	[`18.04`, `bionic-20230530`, `bionic`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-bionic-amd64-20230530-638510be&id=638510bec0540d097260e44d99cab6827f32e23c)
 -	[`20.04`, `focal-20230412`, `focal`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-focal-amd64-20230412-26258b91&id=26258b9129f269190048fdf2b46d82de5ae5f79c)
--	[`22.04`, `jammy-20230425`, `jammy`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-amd64-20230425-997c5b6f&id=997c5b6fc12a87708c63485cb5599d85973ca211)
+-	[`22.04`, `jammy-20230522`, `jammy`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-amd64-20230522-bbd50755&id=bbd50755c7a57a1e30edd0e2a2dcf66aa09cf63c)
 -	[`22.10`, `kinetic-20230412`, `kinetic`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-kinetic-amd64-20230412-acd9976c&id=acd9976cf1d024747ad42960daa92bc3065e3a38)
--	[`23.04`, `lunar-20230420`, `lunar`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-lunar-amd64-20230420-a3feaf47&id=a3feaf47f3c57e4aec70c8d07ecd8dde43e0be21)
--	[`23.10`, `mantic-20230511.1`, `mantic`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-mantic-amd64-20230511.1-82ff77c8&id=82ff77c875ff4cf8f6b008afec7747175459e253)
+-	[`23.04`, `lunar-20230522`, `lunar`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-lunar-amd64-20230522-fd45d9ed&id=fd45d9ed74e848cf70aa35fedea865f9d839bf57)
+-	[`23.10`, `mantic-20230520`, `mantic`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-mantic-amd64-20230520-e49d32a8&id=e49d32a824c5b21b177d221475d0f6f1bbeae5b2)
 
 # Quick reference (cont.)
 
