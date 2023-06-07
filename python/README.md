@@ -28,30 +28,28 @@ WARNING:
 
 ## Simple Tags
 
--	[`3.12.0b1-bullseye`, `3.12-rc-bullseye`](https://github.com/docker-library/python/blob/fcb79b9dc3e900964cc01d5271ada11a8c2f435e/3.12-rc/bullseye/Dockerfile)
--	[`3.12.0b1-slim-bullseye`, `3.12-rc-slim-bullseye`, `3.12.0b1-slim`, `3.12-rc-slim`](https://github.com/docker-library/python/blob/fcb79b9dc3e900964cc01d5271ada11a8c2f435e/3.12-rc/slim-bullseye/Dockerfile)
--	[`3.12.0b1-buster`, `3.12-rc-buster`](https://github.com/docker-library/python/blob/fcb79b9dc3e900964cc01d5271ada11a8c2f435e/3.12-rc/buster/Dockerfile)
--	[`3.12.0b1-slim-buster`, `3.12-rc-slim-buster`](https://github.com/docker-library/python/blob/fcb79b9dc3e900964cc01d5271ada11a8c2f435e/3.12-rc/slim-buster/Dockerfile)
--	[`3.12.0b1-alpine3.18`, `3.12-rc-alpine3.18`, `3.12.0b1-alpine`, `3.12-rc-alpine`](https://github.com/docker-library/python/blob/fcb79b9dc3e900964cc01d5271ada11a8c2f435e/3.12-rc/alpine3.18/Dockerfile)
--	[`3.12.0b1-alpine3.17`, `3.12-rc-alpine3.17`](https://github.com/docker-library/python/blob/fcb79b9dc3e900964cc01d5271ada11a8c2f435e/3.12-rc/alpine3.17/Dockerfile)
--	[`3.12.0b1-windowsservercore-ltsc2022`, `3.12-rc-windowsservercore-ltsc2022`](https://github.com/docker-library/python/blob/fcb79b9dc3e900964cc01d5271ada11a8c2f435e/3.12-rc/windows/windowsservercore-ltsc2022/Dockerfile)
--	[`3.12.0b1-windowsservercore-1809`, `3.12-rc-windowsservercore-1809`](https://github.com/docker-library/python/blob/fcb79b9dc3e900964cc01d5271ada11a8c2f435e/3.12-rc/windows/windowsservercore-1809/Dockerfile)
--	[`3.11.3-bullseye`, `3.11-bullseye`, `3-bullseye`, `bullseye`](https://github.com/docker-library/python/blob/331890ef059fae05f84c652520b78c340526dc71/3.11/bullseye/Dockerfile)
--	[`3.11.3-slim-bullseye`, `3.11-slim-bullseye`, `3-slim-bullseye`, `slim-bullseye`, `3.11.3-slim`, `3.11-slim`, `3-slim`, `slim`](https://github.com/docker-library/python/blob/331890ef059fae05f84c652520b78c340526dc71/3.11/slim-bullseye/Dockerfile)
--	[`3.11.3-buster`, `3.11-buster`, `3-buster`, `buster`](https://github.com/docker-library/python/blob/331890ef059fae05f84c652520b78c340526dc71/3.11/buster/Dockerfile)
--	[`3.11.3-slim-buster`, `3.11-slim-buster`, `3-slim-buster`, `slim-buster`](https://github.com/docker-library/python/blob/331890ef059fae05f84c652520b78c340526dc71/3.11/slim-buster/Dockerfile)
--	[`3.11.3-alpine3.18`, `3.11-alpine3.18`, `3-alpine3.18`, `alpine3.18`, `3.11.3-alpine`, `3.11-alpine`, `3-alpine`, `alpine`](https://github.com/docker-library/python/blob/090760cb09d6061d973a68d7fa148cbbde100cb9/3.11/alpine3.18/Dockerfile)
--	[`3.11.3-alpine3.17`, `3.11-alpine3.17`, `3-alpine3.17`, `alpine3.17`](https://github.com/docker-library/python/blob/331890ef059fae05f84c652520b78c340526dc71/3.11/alpine3.17/Dockerfile)
--	[`3.11.3-windowsservercore-ltsc2022`, `3.11-windowsservercore-ltsc2022`, `3-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`](https://github.com/docker-library/python/blob/e730c629591d925f7502caeec840c033a19c7cb5/3.11/windows/windowsservercore-ltsc2022/Dockerfile)
--	[`3.11.3-windowsservercore-1809`, `3.11-windowsservercore-1809`, `3-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/docker-library/python/blob/e730c629591d925f7502caeec840c033a19c7cb5/3.11/windows/windowsservercore-1809/Dockerfile)
--	[`3.10.11-bullseye`, `3.10-bullseye`](https://github.com/docker-library/python/blob/331890ef059fae05f84c652520b78c340526dc71/3.10/bullseye/Dockerfile)
--	[`3.10.11-slim-bullseye`, `3.10-slim-bullseye`, `3.10.11-slim`, `3.10-slim`](https://github.com/docker-library/python/blob/331890ef059fae05f84c652520b78c340526dc71/3.10/slim-bullseye/Dockerfile)
--	[`3.10.11-buster`, `3.10-buster`](https://github.com/docker-library/python/blob/331890ef059fae05f84c652520b78c340526dc71/3.10/buster/Dockerfile)
--	[`3.10.11-slim-buster`, `3.10-slim-buster`](https://github.com/docker-library/python/blob/331890ef059fae05f84c652520b78c340526dc71/3.10/slim-buster/Dockerfile)
--	[`3.10.11-alpine3.18`, `3.10-alpine3.18`, `3.10.11-alpine`, `3.10-alpine`](https://github.com/docker-library/python/blob/090760cb09d6061d973a68d7fa148cbbde100cb9/3.10/alpine3.18/Dockerfile)
--	[`3.10.11-alpine3.17`, `3.10-alpine3.17`](https://github.com/docker-library/python/blob/331890ef059fae05f84c652520b78c340526dc71/3.10/alpine3.17/Dockerfile)
--	[`3.10.11-windowsservercore-ltsc2022`, `3.10-windowsservercore-ltsc2022`](https://github.com/docker-library/python/blob/ea370b5e2b44af9837ca7634f34c4e3a5c9067fc/3.10/windows/windowsservercore-ltsc2022/Dockerfile)
--	[`3.10.11-windowsservercore-1809`, `3.10-windowsservercore-1809`](https://github.com/docker-library/python/blob/ea370b5e2b44af9837ca7634f34c4e3a5c9067fc/3.10/windows/windowsservercore-1809/Dockerfile)
+-	[`3.12.0b2-bullseye`, `3.12-rc-bullseye`](https://github.com/docker-library/python/blob/de2ce8ecb7b5522262dd97e8e87739e4b6d1e6bf/3.12-rc/bullseye/Dockerfile)
+-	[`3.12.0b2-slim-bullseye`, `3.12-rc-slim-bullseye`, `3.12.0b2-slim`, `3.12-rc-slim`](https://github.com/docker-library/python/blob/de2ce8ecb7b5522262dd97e8e87739e4b6d1e6bf/3.12-rc/slim-bullseye/Dockerfile)
+-	[`3.12.0b2-buster`, `3.12-rc-buster`](https://github.com/docker-library/python/blob/de2ce8ecb7b5522262dd97e8e87739e4b6d1e6bf/3.12-rc/buster/Dockerfile)
+-	[`3.12.0b2-slim-buster`, `3.12-rc-slim-buster`](https://github.com/docker-library/python/blob/de2ce8ecb7b5522262dd97e8e87739e4b6d1e6bf/3.12-rc/slim-buster/Dockerfile)
+-	[`3.12.0b2-alpine3.18`, `3.12-rc-alpine3.18`, `3.12.0b2-alpine`, `3.12-rc-alpine`](https://github.com/docker-library/python/blob/de2ce8ecb7b5522262dd97e8e87739e4b6d1e6bf/3.12-rc/alpine3.18/Dockerfile)
+-	[`3.12.0b2-alpine3.17`, `3.12-rc-alpine3.17`](https://github.com/docker-library/python/blob/de2ce8ecb7b5522262dd97e8e87739e4b6d1e6bf/3.12-rc/alpine3.17/Dockerfile)
+-	[`3.12.0b2-windowsservercore-ltsc2022`, `3.12-rc-windowsservercore-ltsc2022`](https://github.com/docker-library/python/blob/de2ce8ecb7b5522262dd97e8e87739e4b6d1e6bf/3.12-rc/windows/windowsservercore-ltsc2022/Dockerfile)
+-	[`3.12.0b2-windowsservercore-1809`, `3.12-rc-windowsservercore-1809`](https://github.com/docker-library/python/blob/de2ce8ecb7b5522262dd97e8e87739e4b6d1e6bf/3.12-rc/windows/windowsservercore-1809/Dockerfile)
+-	[`3.11.4-bullseye`, `3.11-bullseye`, `3-bullseye`, `bullseye`](https://github.com/docker-library/python/blob/b744d9708a2fb8e2295198ef146341c415e9bc28/3.11/bullseye/Dockerfile)
+-	[`3.11.4-slim-bullseye`, `3.11-slim-bullseye`, `3-slim-bullseye`, `slim-bullseye`, `3.11.4-slim`, `3.11-slim`, `3-slim`, `slim`](https://github.com/docker-library/python/blob/b744d9708a2fb8e2295198ef146341c415e9bc28/3.11/slim-bullseye/Dockerfile)
+-	[`3.11.4-buster`, `3.11-buster`, `3-buster`, `buster`](https://github.com/docker-library/python/blob/b744d9708a2fb8e2295198ef146341c415e9bc28/3.11/buster/Dockerfile)
+-	[`3.11.4-slim-buster`, `3.11-slim-buster`, `3-slim-buster`, `slim-buster`](https://github.com/docker-library/python/blob/b744d9708a2fb8e2295198ef146341c415e9bc28/3.11/slim-buster/Dockerfile)
+-	[`3.11.4-alpine3.18`, `3.11-alpine3.18`, `3-alpine3.18`, `alpine3.18`, `3.11.4-alpine`, `3.11-alpine`, `3-alpine`, `alpine`](https://github.com/docker-library/python/blob/b744d9708a2fb8e2295198ef146341c415e9bc28/3.11/alpine3.18/Dockerfile)
+-	[`3.11.4-alpine3.17`, `3.11-alpine3.17`, `3-alpine3.17`, `alpine3.17`](https://github.com/docker-library/python/blob/b744d9708a2fb8e2295198ef146341c415e9bc28/3.11/alpine3.17/Dockerfile)
+-	[`3.11.4-windowsservercore-ltsc2022`, `3.11-windowsservercore-ltsc2022`, `3-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`](https://github.com/docker-library/python/blob/b744d9708a2fb8e2295198ef146341c415e9bc28/3.11/windows/windowsservercore-ltsc2022/Dockerfile)
+-	[`3.11.4-windowsservercore-1809`, `3.11-windowsservercore-1809`, `3-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/docker-library/python/blob/b744d9708a2fb8e2295198ef146341c415e9bc28/3.11/windows/windowsservercore-1809/Dockerfile)
+-	[`3.10.12-bullseye`, `3.10-bullseye`](https://github.com/docker-library/python/blob/8f971d595fff0cc134370916a069bfedc5887308/3.10/bullseye/Dockerfile)
+-	[`3.10.12-slim-bullseye`, `3.10-slim-bullseye`, `3.10.12-slim`, `3.10-slim`](https://github.com/docker-library/python/blob/8f971d595fff0cc134370916a069bfedc5887308/3.10/slim-bullseye/Dockerfile)
+-	[`3.10.12-buster`, `3.10-buster`](https://github.com/docker-library/python/blob/8f971d595fff0cc134370916a069bfedc5887308/3.10/buster/Dockerfile)
+-	[`3.10.12-slim-buster`, `3.10-slim-buster`](https://github.com/docker-library/python/blob/8f971d595fff0cc134370916a069bfedc5887308/3.10/slim-buster/Dockerfile)
+-	[`3.10.12-alpine3.18`, `3.10-alpine3.18`, `3.10.12-alpine`, `3.10-alpine`](https://github.com/docker-library/python/blob/8f971d595fff0cc134370916a069bfedc5887308/3.10/alpine3.18/Dockerfile)
+-	[`3.10.12-alpine3.17`, `3.10-alpine3.17`](https://github.com/docker-library/python/blob/8f971d595fff0cc134370916a069bfedc5887308/3.10/alpine3.17/Dockerfile)
 -	[`3.9.17-bullseye`, `3.9-bullseye`](https://github.com/docker-library/python/blob/40bd50cfcf3551fc506b45e47003db9c52c5fec7/3.9/bullseye/Dockerfile)
 -	[`3.9.17-slim-bullseye`, `3.9-slim-bullseye`, `3.9.17-slim`, `3.9-slim`](https://github.com/docker-library/python/blob/40bd50cfcf3551fc506b45e47003db9c52c5fec7/3.9/slim-bullseye/Dockerfile)
 -	[`3.9.17-buster`, `3.9-buster`](https://github.com/docker-library/python/blob/40bd50cfcf3551fc506b45e47003db9c52c5fec7/3.9/buster/Dockerfile)
@@ -64,42 +62,37 @@ WARNING:
 -	[`3.8.17-slim-buster`, `3.8-slim-buster`](https://github.com/docker-library/python/blob/db8907eb3797ad147b59759aa1e6d7708a3fc2ce/3.8/slim-buster/Dockerfile)
 -	[`3.8.17-alpine3.18`, `3.8-alpine3.18`, `3.8.17-alpine`, `3.8-alpine`](https://github.com/docker-library/python/blob/db8907eb3797ad147b59759aa1e6d7708a3fc2ce/3.8/alpine3.18/Dockerfile)
 -	[`3.8.17-alpine3.17`, `3.8-alpine3.17`](https://github.com/docker-library/python/blob/db8907eb3797ad147b59759aa1e6d7708a3fc2ce/3.8/alpine3.17/Dockerfile)
--	[`3.7.16-bullseye`, `3.7-bullseye`](https://github.com/docker-library/python/blob/331890ef059fae05f84c652520b78c340526dc71/3.7/bullseye/Dockerfile)
--	[`3.7.16-slim-bullseye`, `3.7-slim-bullseye`, `3.7.16-slim`, `3.7-slim`](https://github.com/docker-library/python/blob/331890ef059fae05f84c652520b78c340526dc71/3.7/slim-bullseye/Dockerfile)
--	[`3.7.16-buster`, `3.7-buster`](https://github.com/docker-library/python/blob/331890ef059fae05f84c652520b78c340526dc71/3.7/buster/Dockerfile)
--	[`3.7.16-slim-buster`, `3.7-slim-buster`](https://github.com/docker-library/python/blob/331890ef059fae05f84c652520b78c340526dc71/3.7/slim-buster/Dockerfile)
--	[`3.7.16-alpine3.18`, `3.7-alpine3.18`, `3.7.16-alpine`, `3.7-alpine`](https://github.com/docker-library/python/blob/090760cb09d6061d973a68d7fa148cbbde100cb9/3.7/alpine3.18/Dockerfile)
--	[`3.7.16-alpine3.17`, `3.7-alpine3.17`](https://github.com/docker-library/python/blob/331890ef059fae05f84c652520b78c340526dc71/3.7/alpine3.17/Dockerfile)
+-	[`3.7.17-bullseye`, `3.7-bullseye`](https://github.com/docker-library/python/blob/00b80a3dfc595e9c58ec52cc9ae8349cf10767a4/3.7/bullseye/Dockerfile)
+-	[`3.7.17-slim-bullseye`, `3.7-slim-bullseye`, `3.7.17-slim`, `3.7-slim`](https://github.com/docker-library/python/blob/00b80a3dfc595e9c58ec52cc9ae8349cf10767a4/3.7/slim-bullseye/Dockerfile)
+-	[`3.7.17-buster`, `3.7-buster`](https://github.com/docker-library/python/blob/00b80a3dfc595e9c58ec52cc9ae8349cf10767a4/3.7/buster/Dockerfile)
+-	[`3.7.17-slim-buster`, `3.7-slim-buster`](https://github.com/docker-library/python/blob/00b80a3dfc595e9c58ec52cc9ae8349cf10767a4/3.7/slim-buster/Dockerfile)
+-	[`3.7.17-alpine3.18`, `3.7-alpine3.18`, `3.7.17-alpine`, `3.7-alpine`](https://github.com/docker-library/python/blob/00b80a3dfc595e9c58ec52cc9ae8349cf10767a4/3.7/alpine3.18/Dockerfile)
+-	[`3.7.17-alpine3.17`, `3.7-alpine3.17`](https://github.com/docker-library/python/blob/00b80a3dfc595e9c58ec52cc9ae8349cf10767a4/3.7/alpine3.17/Dockerfile)
 
 ## Shared Tags
 
--	`3.12.0b1`, `3.12-rc`:
-	-	[`3.12.0b1-bullseye`](https://github.com/docker-library/python/blob/fcb79b9dc3e900964cc01d5271ada11a8c2f435e/3.12-rc/bullseye/Dockerfile)
-	-	[`3.12.0b1-windowsservercore-ltsc2022`](https://github.com/docker-library/python/blob/fcb79b9dc3e900964cc01d5271ada11a8c2f435e/3.12-rc/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`3.12.0b1-windowsservercore-1809`](https://github.com/docker-library/python/blob/fcb79b9dc3e900964cc01d5271ada11a8c2f435e/3.12-rc/windows/windowsservercore-1809/Dockerfile)
--	`3.12.0b1-windowsservercore`, `3.12-rc-windowsservercore`:
-	-	[`3.12.0b1-windowsservercore-ltsc2022`](https://github.com/docker-library/python/blob/fcb79b9dc3e900964cc01d5271ada11a8c2f435e/3.12-rc/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`3.12.0b1-windowsservercore-1809`](https://github.com/docker-library/python/blob/fcb79b9dc3e900964cc01d5271ada11a8c2f435e/3.12-rc/windows/windowsservercore-1809/Dockerfile)
--	`3.11.3`, `3.11`, `3`, `latest`:
-	-	[`3.11.3-bullseye`](https://github.com/docker-library/python/blob/331890ef059fae05f84c652520b78c340526dc71/3.11/bullseye/Dockerfile)
-	-	[`3.11.3-windowsservercore-ltsc2022`](https://github.com/docker-library/python/blob/e730c629591d925f7502caeec840c033a19c7cb5/3.11/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`3.11.3-windowsservercore-1809`](https://github.com/docker-library/python/blob/e730c629591d925f7502caeec840c033a19c7cb5/3.11/windows/windowsservercore-1809/Dockerfile)
--	`3.11.3-windowsservercore`, `3.11-windowsservercore`, `3-windowsservercore`, `windowsservercore`:
-	-	[`3.11.3-windowsservercore-ltsc2022`](https://github.com/docker-library/python/blob/e730c629591d925f7502caeec840c033a19c7cb5/3.11/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`3.11.3-windowsservercore-1809`](https://github.com/docker-library/python/blob/e730c629591d925f7502caeec840c033a19c7cb5/3.11/windows/windowsservercore-1809/Dockerfile)
--	`3.10.11`, `3.10`:
-	-	[`3.10.11-bullseye`](https://github.com/docker-library/python/blob/331890ef059fae05f84c652520b78c340526dc71/3.10/bullseye/Dockerfile)
-	-	[`3.10.11-windowsservercore-ltsc2022`](https://github.com/docker-library/python/blob/ea370b5e2b44af9837ca7634f34c4e3a5c9067fc/3.10/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`3.10.11-windowsservercore-1809`](https://github.com/docker-library/python/blob/ea370b5e2b44af9837ca7634f34c4e3a5c9067fc/3.10/windows/windowsservercore-1809/Dockerfile)
--	`3.10.11-windowsservercore`, `3.10-windowsservercore`:
-	-	[`3.10.11-windowsservercore-ltsc2022`](https://github.com/docker-library/python/blob/ea370b5e2b44af9837ca7634f34c4e3a5c9067fc/3.10/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`3.10.11-windowsservercore-1809`](https://github.com/docker-library/python/blob/ea370b5e2b44af9837ca7634f34c4e3a5c9067fc/3.10/windows/windowsservercore-1809/Dockerfile)
+-	`3.12.0b2`, `3.12-rc`:
+	-	[`3.12.0b2-bullseye`](https://github.com/docker-library/python/blob/de2ce8ecb7b5522262dd97e8e87739e4b6d1e6bf/3.12-rc/bullseye/Dockerfile)
+	-	[`3.12.0b2-windowsservercore-ltsc2022`](https://github.com/docker-library/python/blob/de2ce8ecb7b5522262dd97e8e87739e4b6d1e6bf/3.12-rc/windows/windowsservercore-ltsc2022/Dockerfile)
+	-	[`3.12.0b2-windowsservercore-1809`](https://github.com/docker-library/python/blob/de2ce8ecb7b5522262dd97e8e87739e4b6d1e6bf/3.12-rc/windows/windowsservercore-1809/Dockerfile)
+-	`3.12.0b2-windowsservercore`, `3.12-rc-windowsservercore`:
+	-	[`3.12.0b2-windowsservercore-ltsc2022`](https://github.com/docker-library/python/blob/de2ce8ecb7b5522262dd97e8e87739e4b6d1e6bf/3.12-rc/windows/windowsservercore-ltsc2022/Dockerfile)
+	-	[`3.12.0b2-windowsservercore-1809`](https://github.com/docker-library/python/blob/de2ce8ecb7b5522262dd97e8e87739e4b6d1e6bf/3.12-rc/windows/windowsservercore-1809/Dockerfile)
+-	`3.11.4`, `3.11`, `3`, `latest`:
+	-	[`3.11.4-bullseye`](https://github.com/docker-library/python/blob/b744d9708a2fb8e2295198ef146341c415e9bc28/3.11/bullseye/Dockerfile)
+	-	[`3.11.4-windowsservercore-ltsc2022`](https://github.com/docker-library/python/blob/b744d9708a2fb8e2295198ef146341c415e9bc28/3.11/windows/windowsservercore-ltsc2022/Dockerfile)
+	-	[`3.11.4-windowsservercore-1809`](https://github.com/docker-library/python/blob/b744d9708a2fb8e2295198ef146341c415e9bc28/3.11/windows/windowsservercore-1809/Dockerfile)
+-	`3.11.4-windowsservercore`, `3.11-windowsservercore`, `3-windowsservercore`, `windowsservercore`:
+	-	[`3.11.4-windowsservercore-ltsc2022`](https://github.com/docker-library/python/blob/b744d9708a2fb8e2295198ef146341c415e9bc28/3.11/windows/windowsservercore-ltsc2022/Dockerfile)
+	-	[`3.11.4-windowsservercore-1809`](https://github.com/docker-library/python/blob/b744d9708a2fb8e2295198ef146341c415e9bc28/3.11/windows/windowsservercore-1809/Dockerfile)
+-	`3.10.12`, `3.10`:
+	-	[`3.10.12-bullseye`](https://github.com/docker-library/python/blob/8f971d595fff0cc134370916a069bfedc5887308/3.10/bullseye/Dockerfile)
 -	`3.9.17`, `3.9`:
 	-	[`3.9.17-bullseye`](https://github.com/docker-library/python/blob/40bd50cfcf3551fc506b45e47003db9c52c5fec7/3.9/bullseye/Dockerfile)
 -	`3.8.17`, `3.8`:
 	-	[`3.8.17-bullseye`](https://github.com/docker-library/python/blob/db8907eb3797ad147b59759aa1e6d7708a3fc2ce/3.8/bullseye/Dockerfile)
--	`3.7.16`, `3.7`:
-	-	[`3.7.16-bullseye`](https://github.com/docker-library/python/blob/331890ef059fae05f84c652520b78c340526dc71/3.7/bullseye/Dockerfile)
+-	`3.7.17`, `3.7`:
+	-	[`3.7.17-bullseye`](https://github.com/docker-library/python/blob/00b80a3dfc595e9c58ec52cc9ae8349cf10767a4/3.7/bullseye/Dockerfile)
 
 # Quick reference (cont.)
 
