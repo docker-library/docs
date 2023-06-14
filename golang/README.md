@@ -28,16 +28,16 @@ WARNING:
 
 ## Simple Tags
 
+-	[`1.20.5-bookworm`, `1.20-bookworm`, `1-bookworm`, `bookworm`](https://github.com/docker-library/golang/blob/cd607138e461368506a6ba50be2163a09b93dab5/1.20/bookworm/Dockerfile)
 -	[`1.20.5-bullseye`, `1.20-bullseye`, `1-bullseye`, `bullseye`](https://github.com/docker-library/golang/blob/29b2d53bcf3365a9fe72612ae24b884546185be6/1.20/bullseye/Dockerfile)
--	[`1.20.5-buster`, `1.20-buster`, `1-buster`, `buster`](https://github.com/docker-library/golang/blob/29b2d53bcf3365a9fe72612ae24b884546185be6/1.20/buster/Dockerfile)
 -	[`1.20.5-alpine3.18`, `1.20-alpine3.18`, `1-alpine3.18`, `alpine3.18`, `1.20.5-alpine`, `1.20-alpine`, `1-alpine`, `alpine`](https://github.com/docker-library/golang/blob/29b2d53bcf3365a9fe72612ae24b884546185be6/1.20/alpine3.18/Dockerfile)
 -	[`1.20.5-alpine3.17`, `1.20-alpine3.17`, `1-alpine3.17`, `alpine3.17`](https://github.com/docker-library/golang/blob/29b2d53bcf3365a9fe72612ae24b884546185be6/1.20/alpine3.17/Dockerfile)
 -	[`1.20.5-windowsservercore-ltsc2022`, `1.20-windowsservercore-ltsc2022`, `1-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`](https://github.com/docker-library/golang/blob/29b2d53bcf3365a9fe72612ae24b884546185be6/1.20/windows/windowsservercore-ltsc2022/Dockerfile)
 -	[`1.20.5-windowsservercore-1809`, `1.20-windowsservercore-1809`, `1-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/docker-library/golang/blob/29b2d53bcf3365a9fe72612ae24b884546185be6/1.20/windows/windowsservercore-1809/Dockerfile)
 -	[`1.20.5-nanoserver-ltsc2022`, `1.20-nanoserver-ltsc2022`, `1-nanoserver-ltsc2022`, `nanoserver-ltsc2022`](https://github.com/docker-library/golang/blob/29b2d53bcf3365a9fe72612ae24b884546185be6/1.20/windows/nanoserver-ltsc2022/Dockerfile)
 -	[`1.20.5-nanoserver-1809`, `1.20-nanoserver-1809`, `1-nanoserver-1809`, `nanoserver-1809`](https://github.com/docker-library/golang/blob/29b2d53bcf3365a9fe72612ae24b884546185be6/1.20/windows/nanoserver-1809/Dockerfile)
+-	[`1.19.10-bookworm`, `1.19-bookworm`](https://github.com/docker-library/golang/blob/cd607138e461368506a6ba50be2163a09b93dab5/1.19/bookworm/Dockerfile)
 -	[`1.19.10-bullseye`, `1.19-bullseye`](https://github.com/docker-library/golang/blob/e16be5c5a93bd4a2d26ede8cb753ad3578203286/1.19/bullseye/Dockerfile)
--	[`1.19.10-buster`, `1.19-buster`](https://github.com/docker-library/golang/blob/e16be5c5a93bd4a2d26ede8cb753ad3578203286/1.19/buster/Dockerfile)
 -	[`1.19.10-alpine3.18`, `1.19-alpine3.18`, `1.19.10-alpine`, `1.19-alpine`](https://github.com/docker-library/golang/blob/e16be5c5a93bd4a2d26ede8cb753ad3578203286/1.19/alpine3.18/Dockerfile)
 -	[`1.19.10-alpine3.17`, `1.19-alpine3.17`](https://github.com/docker-library/golang/blob/e16be5c5a93bd4a2d26ede8cb753ad3578203286/1.19/alpine3.17/Dockerfile)
 -	[`1.19.10-windowsservercore-ltsc2022`, `1.19-windowsservercore-ltsc2022`](https://github.com/docker-library/golang/blob/e16be5c5a93bd4a2d26ede8cb753ad3578203286/1.19/windows/windowsservercore-ltsc2022/Dockerfile)
@@ -48,7 +48,7 @@ WARNING:
 ## Shared Tags
 
 -	`1.20.5`, `1.20`, `1`, `latest`:
-	-	[`1.20.5-bullseye`](https://github.com/docker-library/golang/blob/29b2d53bcf3365a9fe72612ae24b884546185be6/1.20/bullseye/Dockerfile)
+	-	[`1.20.5-bookworm`](https://github.com/docker-library/golang/blob/cd607138e461368506a6ba50be2163a09b93dab5/1.20/bookworm/Dockerfile)
 	-	[`1.20.5-windowsservercore-ltsc2022`](https://github.com/docker-library/golang/blob/29b2d53bcf3365a9fe72612ae24b884546185be6/1.20/windows/windowsservercore-ltsc2022/Dockerfile)
 	-	[`1.20.5-windowsservercore-1809`](https://github.com/docker-library/golang/blob/29b2d53bcf3365a9fe72612ae24b884546185be6/1.20/windows/windowsservercore-1809/Dockerfile)
 -	`1.20.5-windowsservercore`, `1.20-windowsservercore`, `1-windowsservercore`, `windowsservercore`:
@@ -58,7 +58,7 @@ WARNING:
 	-	[`1.20.5-nanoserver-ltsc2022`](https://github.com/docker-library/golang/blob/29b2d53bcf3365a9fe72612ae24b884546185be6/1.20/windows/nanoserver-ltsc2022/Dockerfile)
 	-	[`1.20.5-nanoserver-1809`](https://github.com/docker-library/golang/blob/29b2d53bcf3365a9fe72612ae24b884546185be6/1.20/windows/nanoserver-1809/Dockerfile)
 -	`1.19.10`, `1.19`:
-	-	[`1.19.10-bullseye`](https://github.com/docker-library/golang/blob/e16be5c5a93bd4a2d26ede8cb753ad3578203286/1.19/bullseye/Dockerfile)
+	-	[`1.19.10-bookworm`](https://github.com/docker-library/golang/blob/cd607138e461368506a6ba50be2163a09b93dab5/1.19/bookworm/Dockerfile)
 	-	[`1.19.10-windowsservercore-ltsc2022`](https://github.com/docker-library/golang/blob/e16be5c5a93bd4a2d26ede8cb753ad3578203286/1.19/windows/windowsservercore-ltsc2022/Dockerfile)
 	-	[`1.19.10-windowsservercore-1809`](https://github.com/docker-library/golang/blob/e16be5c5a93bd4a2d26ede8cb753ad3578203286/1.19/windows/windowsservercore-1809/Dockerfile)
 -	`1.19.10-windowsservercore`, `1.19-windowsservercore`:
@@ -167,7 +167,7 @@ The `golang` images come in many flavors, each designed for a specific use case.
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like bullseye or buster in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+Some of these tags may have names like bookworm or bullseye in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 ## `golang:<version>-alpine`
 

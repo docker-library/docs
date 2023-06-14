@@ -24,8 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.4.57`, `2.4`, `2`, `latest`, `2.4.57-bullseye`, `2.4-bullseye`, `2-bullseye`, `bullseye`](https://github.com/docker-library/httpd/blob/ef41771bcc6367657fdbf1cdae028f2e1e32d222/2.4/Dockerfile)
--	[`2.4.57-alpine`, `2.4-alpine`, `2-alpine`, `alpine`, `2.4.57-alpine3.18`, `2.4-alpine3.18`, `2-alpine3.18`, `alpine3.18`](https://github.com/docker-library/httpd/blob/d401fd69b9ecb158fcd921f22d54bd2890cedc84/2.4/alpine/Dockerfile)
+-	[`2.4.57`, `2.4`, `2`, `latest`, `2.4.57-bookworm`, `2.4-bookworm`, `2-bookworm`, `bookworm`](https://github.com/docker-library/httpd/blob/242f3c62ba1ceee0a3633045fc4fd9277cb86cd3/2.4/Dockerfile)
+-	[`2.4.57-alpine`, `2.4-alpine`, `2-alpine`, `alpine`, `2.4.57-alpine3.18`, `2.4-alpine3.18`, `2-alpine3.18`, `alpine3.18`](https://github.com/docker-library/httpd/blob/c87146e71508462f0ebd5de9890a0f8bb3b98c8f/2.4/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -133,7 +133,7 @@ The `httpd` images come in many flavors, each designed for a specific use case.
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like bullseye in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+Some of these tags may have names like bookworm in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 ## `httpd:<version>-alpine`
 
