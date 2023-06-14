@@ -24,11 +24,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.25.0`, `mainline`, `1`, `1.25`, `latest`, `1.25.0-bullseye`, `mainline-bullseye`, `1-bullseye`, `1.25-bullseye`, `bullseye`](https://github.com/nginxinc/docker-nginx/blob/3591b5e431af710432bd4852d9ee26eb19992776/mainline/debian/Dockerfile)
--	[`1.25.0-perl`, `mainline-perl`, `1-perl`, `1.25-perl`, `perl`, `1.25.0-bullseye-perl`, `mainline-bullseye-perl`, `1-bullseye-perl`, `1.25-bullseye-perl`, `bullseye-perl`](https://github.com/nginxinc/docker-nginx/blob/ee6b833b5d9d1966b85a5d318efc04cf8b1c1ba5/mainline/debian-perl/Dockerfile)
--	[`1.25.0-alpine`, `mainline-alpine`, `1-alpine`, `1.25-alpine`, `alpine`, `1.25.0-alpine3.17`, `mainline-alpine3.17`, `1-alpine3.17`, `1.25-alpine3.17`, `alpine3.17`](https://github.com/nginxinc/docker-nginx/blob/123ef33694fccfefcb7db63251b21c0496537c76/mainline/alpine/Dockerfile)
--	[`1.25.0-alpine-perl`, `mainline-alpine-perl`, `1-alpine-perl`, `1.25-alpine-perl`, `alpine-perl`, `1.25.0-alpine3.17-perl`, `mainline-alpine3.17-perl`, `1-alpine3.17-perl`, `1.25-alpine3.17-perl`, `alpine3.17-perl`](https://github.com/nginxinc/docker-nginx/blob/123ef33694fccfefcb7db63251b21c0496537c76/mainline/alpine-perl/Dockerfile)
--	[`1.25.0-alpine-slim`, `mainline-alpine-slim`, `1-alpine-slim`, `1.25-alpine-slim`, `alpine-slim`, `1.25.0-alpine3.17-slim`, `mainline-alpine3.17-slim`, `1-alpine3.17-slim`, `1.25-alpine3.17-slim`, `alpine3.17-slim`](https://github.com/nginxinc/docker-nginx/blob/3591b5e431af710432bd4852d9ee26eb19992776/mainline/alpine-slim/Dockerfile)
+-	[`1.25.1`, `mainline`, `1`, `1.25`, `latest`, `1.25.1-bookworm`, `mainline-bookworm`, `1-bookworm`, `1.25-bookworm`, `bookworm`](https://github.com/nginxinc/docker-nginx/blob/7870605f4b93d86e898af291086d77ab9e6b96e3/mainline/debian/Dockerfile)
+-	[`1.25.1-perl`, `mainline-perl`, `1-perl`, `1.25-perl`, `perl`, `1.25.1-bookworm-perl`, `mainline-bookworm-perl`, `1-bookworm-perl`, `1.25-bookworm-perl`, `bookworm-perl`](https://github.com/nginxinc/docker-nginx/blob/7870605f4b93d86e898af291086d77ab9e6b96e3/mainline/debian-perl/Dockerfile)
+-	[`1.25.1-alpine`, `mainline-alpine`, `1-alpine`, `1.25-alpine`, `alpine`, `1.25.1-alpine3.17`, `mainline-alpine3.17`, `1-alpine3.17`, `1.25-alpine3.17`, `alpine3.17`](https://github.com/nginxinc/docker-nginx/blob/7870605f4b93d86e898af291086d77ab9e6b96e3/mainline/alpine/Dockerfile)
+-	[`1.25.1-alpine-perl`, `mainline-alpine-perl`, `1-alpine-perl`, `1.25-alpine-perl`, `alpine-perl`, `1.25.1-alpine3.17-perl`, `mainline-alpine3.17-perl`, `1-alpine3.17-perl`, `1.25-alpine3.17-perl`, `alpine3.17-perl`](https://github.com/nginxinc/docker-nginx/blob/7870605f4b93d86e898af291086d77ab9e6b96e3/mainline/alpine-perl/Dockerfile)
+-	[`1.25.1-alpine-slim`, `mainline-alpine-slim`, `1-alpine-slim`, `1.25-alpine-slim`, `alpine-slim`, `1.25.1-alpine3.17-slim`, `mainline-alpine3.17-slim`, `1-alpine3.17-slim`, `1.25-alpine3.17-slim`, `alpine3.17-slim`](https://github.com/nginxinc/docker-nginx/blob/7870605f4b93d86e898af291086d77ab9e6b96e3/mainline/alpine-slim/Dockerfile)
 -	[`1.24.0`, `stable`, `1.24`, `1.24.0-bullseye`, `stable-bullseye`, `1.24-bullseye`](https://github.com/nginxinc/docker-nginx/blob/1a8d87b69760693a8e33cd8a9e0c2e5f0e8b0e3c/stable/debian/Dockerfile)
 -	[`1.24.0-perl`, `stable-perl`, `1.24-perl`, `1.24.0-bullseye-perl`, `stable-bullseye-perl`, `1.24-bullseye-perl`](https://github.com/nginxinc/docker-nginx/blob/1a8d87b69760693a8e33cd8a9e0c2e5f0e8b0e3c/stable/debian-perl/Dockerfile)
 -	[`1.24.0-alpine`, `stable-alpine`, `1.24-alpine`, `1.24.0-alpine3.17`, `stable-alpine3.17`, `1.24-alpine3.17`](https://github.com/nginxinc/docker-nginx/blob/1a8d87b69760693a8e33cd8a9e0c2e5f0e8b0e3c/stable/alpine/Dockerfile)
@@ -246,7 +246,7 @@ The `nginx` images come in many flavors, each designed for a specific use case.
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like bullseye in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+Some of these tags may have names like bookworm or bullseye in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 ## `nginx:<version>-perl` / `nginx:<version>-alpine-perl`
 
