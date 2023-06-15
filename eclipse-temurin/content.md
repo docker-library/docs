@@ -12,6 +12,16 @@ The Eclipse Temurin project provides code and processes that support the buildin
 
 JRE images are available for all versions of Eclipse Temurin but it is recommended that you produce a custom JRE-like runtime using `jlink` (see usage below).
 
+# Can I add my internal CA certificates to the truststore?
+
+Yes! Add your certificates to `/certificates` inside the container (e.g. by using a volume) and set the environment variable `USE_SYSTEM_CA_CERTS` on the container to any value. With Docker CLI this might look like this:
+
+```console
+$ docker run -v $(pwd)/certs:/certificates/ -e USE_SYSTEM_CA_CERTS=1 %%IMAGE%%:11
+```
+
+The certificates would get added to the system CA store, which would in turn be converted to Java's truststore. The format of the certificates depends on what the OS of the base image used expects, but PEM format with a `.crt` file extension is a good bet. **Please note**: this feature is currently not available for Windows-based images.
+
 # How to use this Image
 
 To run a pre-built jar file with the latest OpenJDK 11, use the following Dockerfile:
