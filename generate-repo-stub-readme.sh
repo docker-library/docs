@@ -26,10 +26,12 @@ fi
 canonicalRepo="$(curl -fsSLI -o /dev/null -w '%{url_effective}\n' "$canonicalRepo")" # follow redirects (http://stackoverflow.com/a/3077316/433558)
 githubRepoName="${canonicalRepo#*://github.com/}"
 
-if [[ "$githubRepoName" = elastic/* ]]; then
+case "$githubRepoName" in
 	# Elastic points "github-repo" at their upstream elastic/xyz-docker repos, but we want our README stubs to still point at our integration repos
-	githubRepoName="docker-library/$repo"
-fi
+	elastic/*) githubRepoName="docker-library/$repo" ;;
+
+	hylang/hy) githubRepoName='hylang/docker-hylang' ;;
+esac
 
 maintainer="$(sed -e 's!%%GITHUB-REPO%%!'"$canonicalRepo"'!g' "$repo/maintainer.md")"
 
