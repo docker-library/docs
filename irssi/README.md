@@ -24,8 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.4.4`, `1.4`, `1`, `latest`](https://github.com/jessfraz/irssi/blob/663b9b815d858c94ae6224183afed602d291587e/debian/Dockerfile)
--	[`1.4.4-alpine`, `1.4-alpine`, `1-alpine`, `alpine`](https://github.com/jessfraz/irssi/blob/6806daa0d17eae1cd10df10ff3a533d3655ac9f8/alpine/Dockerfile)
+-	[`1.4.4`, `1.4`, `1`, `latest`, `1.4.4-bullseye`, `1.4-bullseye`, `1-bullseye`, `bullseye`](https://github.com/jessfraz/irssi/blob/663b9b815d858c94ae6224183afed602d291587e/debian/Dockerfile)
+-	[`1.4.4-alpine`, `1.4-alpine`, `1-alpine`, `alpine`, `1.4.4-alpine3.17`, `1.4-alpine3.17`, `1-alpine3.17`, `alpine3.17`](https://github.com/jessfraz/irssi/blob/6806daa0d17eae1cd10df10ff3a533d3655ac9f8/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -92,6 +92,8 @@ The `irssi` images come in many flavors, each designed for a specific use case.
 ## `irssi:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+Some of these tags may have names like bullseye in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 ## `irssi:<version>-alpine`
 
