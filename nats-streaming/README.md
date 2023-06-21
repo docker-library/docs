@@ -32,20 +32,20 @@ The NATS Streaming Server is being deprecated. Critical bug fixes and security f
 
 ## Simple Tags
 
--	[`0.25.4-alpine3.17`, `0.25-alpine3.17`, `alpine3.17`, `0.25.4-alpine`, `0.25-alpine`, `alpine`](https://github.com/nats-io/nats-streaming-docker/blob/7dcf7bcee0918c192537b1b6c430ff8f71be3fb7/0.25.4/alpine3.17/Dockerfile)
--	[`0.25.4-scratch`, `0.25-scratch`, `scratch`, `0.25.4-linux`, `0.25-linux`, `linux`](https://github.com/nats-io/nats-streaming-docker/blob/7dcf7bcee0918c192537b1b6c430ff8f71be3fb7/0.25.4/scratch/Dockerfile)
--	[`0.25.4-windowsservercore-1809`, `0.25-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/nats-io/nats-streaming-docker/blob/7dcf7bcee0918c192537b1b6c430ff8f71be3fb7/0.25.4/windowsservercore-1809/Dockerfile)
--	[`0.25.4-nanoserver-1809`, `0.25-nanoserver-1809`, `nanoserver-1809`](https://github.com/nats-io/nats-streaming-docker/blob/7dcf7bcee0918c192537b1b6c430ff8f71be3fb7/0.25.4/nanoserver-1809/Dockerfile)
+-	[`0.25.5-alpine3.18`, `0.25-alpine3.18`, `alpine3.18`, `0.25.5-alpine`, `0.25-alpine`, `alpine`](https://github.com/nats-io/nats-streaming-docker/blob/d8dd9e2f5f7943f6a4d08de304f2bce513cc6735/0.25.5/alpine3.18/Dockerfile)
+-	[`0.25.5-scratch`, `0.25-scratch`, `scratch`, `0.25.5-linux`, `0.25-linux`, `linux`](https://github.com/nats-io/nats-streaming-docker/blob/d8dd9e2f5f7943f6a4d08de304f2bce513cc6735/0.25.5/scratch/Dockerfile)
+-	[`0.25.5-windowsservercore-1809`, `0.25-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/nats-io/nats-streaming-docker/blob/d8dd9e2f5f7943f6a4d08de304f2bce513cc6735/0.25.5/windowsservercore-1809/Dockerfile)
+-	[`0.25.5-nanoserver-1809`, `0.25-nanoserver-1809`, `nanoserver-1809`](https://github.com/nats-io/nats-streaming-docker/blob/d8dd9e2f5f7943f6a4d08de304f2bce513cc6735/0.25.5/nanoserver-1809/Dockerfile)
 
 ## Shared Tags
 
--	`0.25.4`, `0.25`, `latest`:
-	-	[`0.25.4-scratch`](https://github.com/nats-io/nats-streaming-docker/blob/7dcf7bcee0918c192537b1b6c430ff8f71be3fb7/0.25.4/scratch/Dockerfile)
-	-	[`0.25.4-nanoserver-1809`](https://github.com/nats-io/nats-streaming-docker/blob/7dcf7bcee0918c192537b1b6c430ff8f71be3fb7/0.25.4/nanoserver-1809/Dockerfile)
--	`0.25.4-windowsservercore`, `0.25-windowsservercore`, `windowsservercore`:
-	-	[`0.25.4-windowsservercore-1809`](https://github.com/nats-io/nats-streaming-docker/blob/7dcf7bcee0918c192537b1b6c430ff8f71be3fb7/0.25.4/windowsservercore-1809/Dockerfile)
--	`0.25.4-nanoserver`, `0.25-nanoserver`, `nanoserver`:
-	-	[`0.25.4-nanoserver-1809`](https://github.com/nats-io/nats-streaming-docker/blob/7dcf7bcee0918c192537b1b6c430ff8f71be3fb7/0.25.4/nanoserver-1809/Dockerfile)
+-	`0.25.5`, `0.25`, `latest`:
+	-	[`0.25.5-scratch`](https://github.com/nats-io/nats-streaming-docker/blob/d8dd9e2f5f7943f6a4d08de304f2bce513cc6735/0.25.5/scratch/Dockerfile)
+	-	[`0.25.5-nanoserver-1809`](https://github.com/nats-io/nats-streaming-docker/blob/d8dd9e2f5f7943f6a4d08de304f2bce513cc6735/0.25.5/nanoserver-1809/Dockerfile)
+-	`0.25.5-windowsservercore`, `0.25-windowsservercore`, `windowsservercore`:
+	-	[`0.25.5-windowsservercore-1809`](https://github.com/nats-io/nats-streaming-docker/blob/d8dd9e2f5f7943f6a4d08de304f2bce513cc6735/0.25.5/windowsservercore-1809/Dockerfile)
+-	`0.25.5-nanoserver`, `0.25-nanoserver`, `nanoserver`:
+	-	[`0.25.5-nanoserver-1809`](https://github.com/nats-io/nats-streaming-docker/blob/d8dd9e2f5f7943f6a4d08de304f2bce513cc6735/0.25.5/nanoserver-1809/Dockerfile)
 
 # Quick reference (cont.)
 
