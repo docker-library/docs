@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.14.2-apache`, `4.14-apache`, `4-apache`, `apache`, `4.14.2`, `4.14`, `4`, `latest`](https://github.com/matomo-org/docker/blob/0c354896c16e576f17b8f53c9c4b562b445b7d82/apache/Dockerfile)
--	[`4.14.2-fpm`, `4.14-fpm`, `4-fpm`, `fpm`](https://github.com/matomo-org/docker/blob/0c354896c16e576f17b8f53c9c4b562b445b7d82/fpm/Dockerfile)
--	[`4.14.2-fpm-alpine`, `4.14-fpm-alpine`, `4-fpm-alpine`, `fpm-alpine`](https://github.com/matomo-org/docker/blob/0c354896c16e576f17b8f53c9c4b562b445b7d82/fpm-alpine/Dockerfile)
+-	[`4.14.2-apache`, `4.14-apache`, `4-apache`, `apache`, `4.14.2`, `4.14`, `4`, `latest`](https://github.com/matomo-org/docker/blob/2b172629cd0d9c14a24b08b6e5e99f1b7f36ea1d/apache/Dockerfile)
+-	[`4.14.2-fpm`, `4.14-fpm`, `4-fpm`, `fpm`](https://github.com/matomo-org/docker/blob/2b172629cd0d9c14a24b08b6e5e99f1b7f36ea1d/fpm/Dockerfile)
+-	[`4.14.2-fpm-alpine`, `4.14-fpm-alpine`, `4-fpm-alpine`, `fpm-alpine`](https://github.com/matomo-org/docker/blob/9e6b9e7d3fc758a65750dbb625b669d142f237aa/fpm-alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -49,7 +49,7 @@ WARNING:
 
 # Matomo (formerly Piwik)
 
-[![Build Status](https://travis-ci.org/matomo-org/docker.svg?branch=master)](https://travis-ci.org/matomo-org/docker) [Matomo](https://matomo.org/) (formerly Piwik) is the leading open-source analytics platform that gives you more than just powerful analytics:
+[Matomo](https://matomo.org/) (formerly Piwik) is the leading open-source analytics platform that gives you more than just powerful analytics:
 
 -	Free open-source software
 -	100% data ownership
