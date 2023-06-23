@@ -24,7 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.0.5`, `5.0`, `5`, `latest`, `5.0.5-bullseye`, `5.0-bullseye`, `5-bullseye`, `bullseye`](https://github.com/docker-library/redmine/blob/5c69b4458049c150d8cc335841871aa4625dc217/5.0/Dockerfile)
+-	[`5.0.5`, `5.0`, `5`, `latest`, `5.0.5-bookworm`, `5.0-bookworm`, `5-bookworm`, `bookworm`](https://github.com/docker-library/redmine/blob/c48924ba4017d3c84c700a83a08cbd56bf8fc7f7/5.0/Dockerfile)
 -	[`5.0.5-alpine`, `5.0-alpine`, `5-alpine`, `alpine`, `5.0.5-alpine3.18`, `5.0-alpine3.18`, `5-alpine3.18`, `alpine3.18`](https://github.com/docker-library/redmine/blob/cc904a5f85eb1bfd99af68c0ea3f1e5aeb5d5554/5.0/alpine/Dockerfile)
 
 # Quick reference (cont.)
@@ -229,7 +229,7 @@ The `redmine` images come in many flavors, each designed for a specific use case
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like bullseye in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+Some of these tags may have names like bookworm in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 ## `redmine:<version>-alpine`
 
