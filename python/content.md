@@ -61,4 +61,4 @@ $ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/
 
 ## Multiple Python versions in the image
 
-In the non `python:slim` variants there will be an additional older `python` executable at `/usr/bin/python` while the desired newer `/usr/local/bin/python` is the default choice in the `$PATH`. This is an unfortunate side-effect of using the `buildpack-deps` image in the non-slim variants
+In the non-slim variants there will be an additional (distro-provided) `python` executable at `/usr/bin/python` (and/or `/usr/bin/python3`) while the desired image-provided `/usr/local/bin/python` is the default choice in the `$PATH`. This is an unfortunate side-effect of using the `buildpack-deps` image in the non-slim variants (and many distribution-provided tools being written against and likely to break with a different Python installation, so we can't safely remove/overwrite it).
