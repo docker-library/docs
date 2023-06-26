@@ -28,7 +28,7 @@ Upcoming in Vault 1.14, we will stop publishing official Dockerhub images and pu
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.13.3`, `latest`](https://github.com/hashicorp/docker-vault/blob/152f49d818b2764c437ee1fd20ee4d13791a8296/0.X/Dockerfile)
+-	[`1.13.3`](https://github.com/hashicorp/docker-vault/blob/152f49d818b2764c437ee1fd20ee4d13791a8296/0.X/Dockerfile)
 -	[`1.12.7`](https://github.com/hashicorp/docker-vault/blob/48d258c844d65814e16c123f8d3750a4e73e4350/0.X/Dockerfile)
 -	[`1.11.11`](https://github.com/hashicorp/docker-vault/blob/e90ed0d020018291fabd520e9c36196c1e58f049/0.X/Dockerfile)
 
