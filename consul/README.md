@@ -28,7 +28,7 @@ Upcoming in Consul 1.16, we will stop publishing official Dockerhub images and p
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.15.4`, `1.15`, `latest`](https://github.com/hashicorp/docker-consul/blob/aedd0844f06e9eac9c4e130206219b1ff044a8c4/0.X/Dockerfile)
+-	[`1.15.4`, `1.15`](https://github.com/hashicorp/docker-consul/blob/aedd0844f06e9eac9c4e130206219b1ff044a8c4/0.X/Dockerfile)
 -	[`1.14.8`, `1.14`](https://github.com/hashicorp/docker-consul/blob/7c095b8e988517c239526c0137caeb837c490807/0.X/Dockerfile)
 -	[`1.13.9`, `1.13`](https://github.com/hashicorp/docker-consul/blob/ae00ef4e7ff1cf68afd391838993bc53234cf5e6/0.X/Dockerfile)
 
