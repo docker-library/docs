@@ -14,10 +14,14 @@ WARNING:
 
 -->
 
+# IMPORTANT NOTE
+
+⚠ This image is not officially supported by Nextcloud GmbH, use at your own risk. Use the [All-in-One docker image](https://github.com/nextcloud/all-in-one#nextcloud-all-in-one) for easier deployment.
+
 # Quick reference
 
 -	**Maintained by**:  
-	[Nextcloud](https://github.com/nextcloud/docker)
+	[the Nextcloud community](https://github.com/nextcloud/docker)
 
 -	**Where to get help**:  
 	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
@@ -58,8 +62,6 @@ WARNING:
 A safe home for all your data. Access & share your files, calendars, contacts, mail & more from any device, on your terms.
 
 > [Nextcloud.com](https://nextcloud.com/)
-
-![logo](https://raw.githubusercontent.com/docker-library/docs/eabcf59e64b4395e681a7f7a9773bd213c9f3678/nextcloud/logo.svg?sanitize=true)
 
 This Docker micro-service image is developed and maintained by the Nextcloud community. Nextcloud GmbH does not offer support for this Docker image. When you are looking to get professional support, you can become an [enterprise](https://nextcloud.com/enterprise/) customer or use [AIO](https://github.com/nextcloud/all-in-one#nextcloud-all-in-one).
 
