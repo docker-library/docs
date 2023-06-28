@@ -20,6 +20,14 @@ In the examples below, a [named volume](https://docs.docker.com/storage/volumes/
 
 Note that named volumes are persisted across container restarts and terminations, so if you move to a new image version, the same data and config directories can be re-used.
 
+### Linux capabilities
+
+Caddy ships with HTTP/3 support enabled by default. To improve the performance of this UDP based protocol, the underlying quic-go library tries to increase the buffer sizes for its socket. The `NET_ADMIN` capability allows it to override the low default limits of the operating system without having to change kernel parameters via sysctl.
+
+Giving the container this capability is optional and has potential, though unlikely, [security implications](https://unix.stackexchange.com/a/508816).
+
+see https://github.com/quic-go/quic-go/wiki/UDP-Buffer-Sizes
+
 ### Basic Usage
 
 The default config file simply serves files from `/usr/share/caddy`, so if you want to serve `index.html` from the current working directory:
@@ -49,7 +57,7 @@ $ docker run -d -p 80:80 \
 The default `Caddyfile` only listens to port `80`, and does not set up automatic TLS. However, if you have a domain name for your site, and its A/AAAA DNS records are properly pointed to this machine's public IP, then you can use this command to simply serve a site over HTTPS:
 
 ```console
-$ docker run -d -p 80:80 -p 443:443 -p 443:443/udp \
+$ docker run --cap-add=NET_ADMIN -d -p 80:80 -p 443:443 -p 443:443/udp \
     -v /site:/srv \
     -v caddy_data:/data \
     -v caddy_config:/config \
@@ -120,6 +128,8 @@ services:
   caddy:
     image: %%IMAGE%%:<version>
     restart: unless-stopped
+    cap_add:
+      - NET_ADMIN
     ports:
       - "80:80"
       - "443:443"
