@@ -20,14 +20,6 @@ In the examples below, a [named volume](https://docs.docker.com/storage/volumes/
 
 Note that named volumes are persisted across container restarts and terminations, so if you move to a new image version, the same data and config directories can be re-used.
 
-### Linux capabilities
-
-Caddy ships with HTTP/3 support enabled by default. To improve the performance of this UDP based protocol, the underlying quic-go library tries to increase the buffer sizes for its socket. The `NET_ADMIN` capability allows it to override the low default limits of the operating system without having to change kernel parameters via sysctl.
-
-Giving the container this capability is optional and has potential, though unlikely, [security implications](https://unix.stackexchange.com/a/508816).
-
-see https://github.com/quic-go/quic-go/wiki/UDP-Buffer-Sizes
-
 ### Basic Usage
 
 The default config file simply serves files from `/usr/share/caddy`, so if you want to serve `index.html` from the current working directory:
@@ -116,6 +108,14 @@ First, you'll need to determine your container ID or name. Then, pass the contai
 $ caddy_container_id=$(docker ps | grep caddy | awk '{print $1;}')
 $ docker exec -w /etc/caddy $caddy_container_id caddy reload
 ```
+
+### Linux capabilities
+
+Caddy ships with HTTP/3 support enabled by default. To improve the performance of this UDP based protocol, the underlying quic-go library tries to increase the buffer sizes for its socket. The `NET_ADMIN` capability allows it to override the low default limits of the operating system without having to change kernel parameters via sysctl.
+
+Giving the container this capability is optional and has potential, though unlikely, [security implications](https://unix.stackexchange.com/a/508816).
+
+see https://github.com/quic-go/quic-go/wiki/UDP-Buffer-Sizes
 
 ### Docker Compose example
 
