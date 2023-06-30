@@ -13,7 +13,7 @@ You can find the latest Spark documentation, including a programming guide, on t
 The easiest way to start using Spark is through the Scala shell:
 
 ```console
-docker run -it spark /opt/spark/bin/spark-shell
+docker run -it %%IMAGE%% /opt/spark/bin/spark-shell
 ```
 
 Try the following command, which should return 1,000,000,000:
@@ -27,7 +27,7 @@ scala> spark.range(1000 * 1000 * 1000).count()
 The easiest way to start using PySpark is through the Python shell:
 
 ```console
-docker run -it spark:python3 /opt/spark/bin/pyspark
+docker run -it %%IMAGE%%:python3 /opt/spark/bin/pyspark
 ```
 
 And run the following command, which should also return 1,000,000,000:
@@ -41,7 +41,7 @@ And run the following command, which should also return 1,000,000,000:
 The easiest way to start using R on Spark is through the R shell:
 
 ```console
-docker run -it apache/spark-r /opt/spark/bin/sparkR
+docker run -it %%IMAGE%%:r /opt/spark/bin/sparkR
 ```
 
 ## Running Spark on Kubernetes
@@ -51,4 +51,3 @@ https://spark.apache.org/docs/latest/running-on-kubernetes.html
 ## Configuration and environment variables
 
 See more in https://github.com/apache/spark-docker/blob/master/OVERVIEW.md#environment-variable
-
