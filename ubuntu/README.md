@@ -24,11 +24,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`20.04`, `focal-20230605`, `focal`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-focal-amd64-20230605-19354505&id=19354505a650f2bfd5e2441c56ca09cc488abeb4)
--	[`22.04`, `jammy-20230605`, `jammy`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-amd64-20230605-ab2192b8&id=ab2192b8d9a2a01920e4db4cb79f649dd77a2dad)
--	[`22.10`, `kinetic-20230605`, `kinetic`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-kinetic-amd64-20230605-42263b18&id=42263b1857cc4495659cc2d79647f46aff013247)
+-	[`20.04`, `focal-20230624`, `focal`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-focal-amd64-20230624-079a169a&id=079a169aa8fe8cc7c59e960bc02f33628a255064)
+-	[`22.04`, `jammy-20230624`, `jammy`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-amd64-20230624-2cc72fa2&id=2cc72fa2e3553cc25ee5e0157929e35f2510dbd8)
+-	[`22.10`, `kinetic-20230624`, `kinetic`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-kinetic-amd64-20230624-0332f3c2&id=0332f3c29e2657ed4711edc6fccaac061074f21c)
 -	[`23.04`, `lunar-20230615`, `lunar`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-lunar-amd64-20230615-3537c573&id=3537c5732f5b3fc814f5762acf34b890a8d79a13)
--	[`23.10`, `mantic-20230607`, `mantic`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-mantic-amd64-20230607-533e5820&id=533e58208b1772f1c89f31465a8663cfc79b1ae9)
+-	[`23.10`, `mantic-20230624`, `mantic`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-mantic-amd64-20230624-1a5a7d57&id=1a5a7d5732d62e86564b9668eb421d78d8ac8091)
 
 # Quick reference (cont.)
 
