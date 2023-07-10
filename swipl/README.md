@@ -20,7 +20,7 @@ WARNING:
 	[the SWI-Prolog community](https://github.com/SWI-Prolog/docker-swipl)
 
 -	**Where to get help**:  
-	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [SWI-Prolog home](https://www.swi-prolog.org), [SWI-Prolog forum](https://swi-prolog.discourse.group/), [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
