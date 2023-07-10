@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.14.2-apache`, `4.14-apache`, `4-apache`, `apache`, `4.14.2`, `4.14`, `4`, `latest`](https://github.com/matomo-org/docker/blob/2b172629cd0d9c14a24b08b6e5e99f1b7f36ea1d/apache/Dockerfile)
--	[`4.14.2-fpm`, `4.14-fpm`, `4-fpm`, `fpm`](https://github.com/matomo-org/docker/blob/2b172629cd0d9c14a24b08b6e5e99f1b7f36ea1d/fpm/Dockerfile)
--	[`4.14.2-fpm-alpine`, `4.14-fpm-alpine`, `4-fpm-alpine`, `fpm-alpine`](https://github.com/matomo-org/docker/blob/9e6b9e7d3fc758a65750dbb625b669d142f237aa/fpm-alpine/Dockerfile)
+-	[`4.15.0-apache`, `4.15-apache`, `4-apache`, `apache`, `4.15.0`, `4.15`, `4`, `latest`](https://github.com/matomo-org/docker/blob/547d807f2f3df6948d181092a5858822ff28fc8a/apache/Dockerfile)
+-	[`4.15.0-fpm`, `4.15-fpm`, `4-fpm`, `fpm`](https://github.com/matomo-org/docker/blob/547d807f2f3df6948d181092a5858822ff28fc8a/fpm/Dockerfile)
+-	[`4.15.0-fpm-alpine`, `4.15-fpm-alpine`, `4-fpm-alpine`, `fpm-alpine`](https://github.com/matomo-org/docker/blob/547d807f2f3df6948d181092a5858822ff28fc8a/fpm-alpine/Dockerfile)
 
 # Quick reference (cont.)
 
