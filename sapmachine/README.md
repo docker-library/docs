@@ -24,9 +24,14 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`11`, `11.0.19`](https://github.com/SAP/SapMachine-infrastructure/blob/c2a79726eae76118b0b204bb201920ce200d0703/dockerfiles/official/11/Dockerfile)
--	[`17`, `17.0.7`, `lts`](https://github.com/SAP/SapMachine-infrastructure/blob/b5e632a4b8a28d1618215983fa95859979c63280/dockerfiles/official/17/Dockerfile)
--	[`20`, `20.0.1`, `latest`](https://github.com/SAP/SapMachine-infrastructure/blob/2f4f203530b69b9e7b120c1f1e0d8e8baafa40f2/dockerfiles/official/20/Dockerfile)
+-	[`jdk-headless-ubuntu-11`, `jdk-headless-ubuntu-11.0.19`](https://github.com/SAP/SapMachine-infrastructure/blob/284381b712285fc3593a81284648ab1604f91c38/dockerfiles/official/11/ubuntu/jdk-headless/Dockerfile)
+-	[`jdk-ubuntu-11`, `jdk-ubuntu-11.0.19`, `11`, `11.0.19`](https://github.com/SAP/SapMachine-infrastructure/blob/284381b712285fc3593a81284648ab1604f91c38/dockerfiles/official/11/ubuntu/jdk/Dockerfile)
+-	[`jdk-headless-ubuntu-17`, `jdk-headless-ubuntu-17.0.7`, `jdk-headless-ubuntu-lts`](https://github.com/SAP/SapMachine-infrastructure/blob/ea273f4b64903125418a8b30ac55c6d9757634c8/dockerfiles/official/17/ubuntu/jdk-headless/Dockerfile)
+-	[`jdk-ubuntu-17`, `jdk-ubuntu-17.0.7`, `jdk-ubuntu-lts`, `17`, `17.0.7`, `lts`](https://github.com/SAP/SapMachine-infrastructure/blob/ea273f4b64903125418a8b30ac55c6d9757634c8/dockerfiles/official/17/ubuntu/jdk/Dockerfile)
+-	[`jre-headless-ubuntu-20`, `jre-headless-ubuntu-20.0.1`, `jre-headless-ubuntu`](https://github.com/SAP/SapMachine-infrastructure/blob/3d1d665c88254d2c3ae205ee47b6d924e0217893/dockerfiles/official/20/ubuntu/jre-headless/Dockerfile)
+-	[`jre-ubuntu-20`, `jre-ubuntu-20.0.1`, `jre-ubuntu`](https://github.com/SAP/SapMachine-infrastructure/blob/3d1d665c88254d2c3ae205ee47b6d924e0217893/dockerfiles/official/20/ubuntu/jre/Dockerfile)
+-	[`jdk-headless-ubuntu-20`, `jdk-headless-ubuntu-20.0.1`, `jdk-headless-ubuntu`](https://github.com/SAP/SapMachine-infrastructure/blob/3d1d665c88254d2c3ae205ee47b6d924e0217893/dockerfiles/official/20/ubuntu/jdk-headless/Dockerfile)
+-	[`jdk-ubuntu-20`, `jdk-ubuntu-20.0.1`, `jdk-ubuntu`, `20`, `20.0.1`, `latest`](https://github.com/SAP/SapMachine-infrastructure/blob/3d1d665c88254d2c3ae205ee47b6d924e0217893/dockerfiles/official/20/ubuntu/jdk/Dockerfile)
 
 # Quick reference (cont.)
 
