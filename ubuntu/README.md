@@ -28,7 +28,7 @@ WARNING:
 -	[`22.04`, `jammy-20230624`, `jammy`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-amd64-20230624-2cc72fa2&id=2cc72fa2e3553cc25ee5e0157929e35f2510dbd8)
 -	[`22.10`, `kinetic-20230624`, `kinetic`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-kinetic-amd64-20230624-0332f3c2&id=0332f3c29e2657ed4711edc6fccaac061074f21c)
 -	[`23.04`, `lunar-20230615`, `lunar`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-lunar-amd64-20230615-3537c573&id=3537c5732f5b3fc814f5762acf34b890a8d79a13)
--	[`23.10`, `mantic-20230624`, `mantic`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-mantic-amd64-20230624-1a5a7d57&id=1a5a7d5732d62e86564b9668eb421d78d8ac8091)
+-	[`23.10`, `mantic-20230712`, `mantic`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-mantic-amd64-20230712-72dd5f1a&id=72dd5f1ab372097d0dd0e1720e12854f1588e04e)
 
 # Quick reference (cont.)
 
