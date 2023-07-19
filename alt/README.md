@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`p10`, `latest`](https://github.com/alt-cloud/docker-brew-alt/blob/b231d221f40d951338c30902735044a36bb1895f/x86_64/Dockerfile)
--	[`p9`](https://github.com/alt-cloud/docker-brew-alt/blob/fa873ac1d6ad83275982565b82b67b009969fd6a/x86_64/Dockerfile)
--	[`sisyphus`](https://github.com/alt-cloud/docker-brew-alt/blob/a7155b68c43e43d50c162e355946303abf76f7d8/x86_64/Dockerfile)
+-	[`p10`, `latest`](https://github.com/alt-cloud/docker-brew-alt/blob/f6628b4b288042324701670e5b1e1e4e678f064b/x86_64/Dockerfile)
+-	[`p9`](https://github.com/alt-cloud/docker-brew-alt/blob/600e5fc1af2f0457c3128d4591d1919472ec2411/x86_64/Dockerfile)
+-	[`sisyphus`](https://github.com/alt-cloud/docker-brew-alt/blob/9a7990daa35dca10a16c290e8fa44d844c368ee1/x86_64/Dockerfile)
 
 # Quick reference (cont.)
 
