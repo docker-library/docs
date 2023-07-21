@@ -26,7 +26,7 @@ api:
   port: 8038
 ```
 
-Once the nginx-agent.conf is updated with the API setting, here is an example of hoe to run the container with the updated `nginx-agent.conf` mounted and the port `8038` exposed:
+Once the nginx-agent.conf is updated with the API setting, here is an example of how to run the container with the updated `nginx-agent.conf` mounted and the port `8038` exposed:
 
 ```console
 $ docker run --name nginx-agent-container -d \
