@@ -24,8 +24,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.10.0`, `5.10.0-community`, `5.10`, `5.10-community`, `5`, `5-community`, `community`, `latest`](https://github.com/neo4j/docker-neo4j-publish/blob/53020c7673630cd8a216a4731096f08ebb8a4e30/5.10.0/debian/community/Dockerfile)
--	[`5.10.0-enterprise`, `5.10-enterprise`, `5-enterprise`, `enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/53020c7673630cd8a216a4731096f08ebb8a4e30/5.10.0/debian/enterprise/Dockerfile)
+-	[`5.10.0-community-bullseye`, `5.10-community-bullseye`, `5-community-bullseye`, `5.10.0-community`, `5.10-community`, `5-community`, `5.10.0-bullseye`, `5.10-bullseye`, `5-bullseye`, `5.10.0`, `5.10`, `5`, `community-bullseye`, `community`, `bullseye`, `latest`](https://github.com/neo4j/docker-neo4j-publish/blob/08626d7514acb1cb0f6eab0993f26385165d701f/5.10.0/bullseye/community/Dockerfile)
+-	[`5.10.0-enterprise-bullseye`, `5.10-enterprise-bullseye`, `5-enterprise-bullseye`, `5.10.0-enterprise`, `5.10-enterprise`, `5-enterprise`, `enterprise-bullseye`, `enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/08626d7514acb1cb0f6eab0993f26385165d701f/5.10.0/bullseye/enterprise/Dockerfile)
+-	[`5.10.0-community-ubi8`, `5.10-community-ubi8`, `5-community-ubi8`, `5.10.0-ubi8`, `5.10-ubi8`, `5-ubi8`, `community-ubi8`, `ubi8`](https://github.com/neo4j/docker-neo4j-publish/blob/08626d7514acb1cb0f6eab0993f26385165d701f/5.10.0/ubi8/community/Dockerfile)
+-	[`5.10.0-enterprise-ubi8`, `5.10-enterprise-ubi8`, `5-enterprise-ubi8`, `enterprise-ubi8`](https://github.com/neo4j/docker-neo4j-publish/blob/08626d7514acb1cb0f6eab0993f26385165d701f/5.10.0/ubi8/enterprise/Dockerfile)
 -	[`4.4.23`, `4.4.23-community`, `4.4`, `4.4-community`](https://github.com/neo4j/docker-neo4j-publish/blob/8b2ff2c35aa0f2a28f6c0ec612388e3549c10cdb/4.4.23/community/Dockerfile)
 -	[`4.4.23-enterprise`, `4.4-enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/8b2ff2c35aa0f2a28f6c0ec612388e3549c10cdb/4.4.23/enterprise/Dockerfile)
 
