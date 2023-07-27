@@ -24,7 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`13.1.0`, `13.1`, `13`, `latest`, `13.1.0-bookworm`, `13.1-bookworm`, `13-bookworm`, `bookworm`](https://github.com/docker-library/gcc/blob/e7e43ba8177ce15f473d9a799c9e69735e4dbab4/13/Dockerfile)
+-	[`13.2.0`, `13.2`, `13`, `latest`, `13.2.0-bookworm`, `13.2-bookworm`, `13-bookworm`, `bookworm`](https://github.com/docker-library/gcc/blob/af458ec8254ef7ca3344f12631e2356b20b4a7f1/13/Dockerfile)
 -	[`12.3.0`, `12.3`, `12`, `12.3.0-bookworm`, `12.3-bookworm`, `12-bookworm`](https://github.com/docker-library/gcc/blob/e7e43ba8177ce15f473d9a799c9e69735e4dbab4/12/Dockerfile)
 -	[`11.4.0`, `11.4`, `11`, `11.4.0-bullseye`, `11.4-bullseye`, `11-bullseye`](https://github.com/docker-library/gcc/blob/e7e43ba8177ce15f473d9a799c9e69735e4dbab4/11/Dockerfile)
 -	[`10.5.0`, `10.5`, `10`, `10.5.0-bullseye`, `10.5-bullseye`, `10-bullseye`](https://github.com/docker-library/gcc/blob/82cd9a2f8eb0da43f9b938b92ee78d8747eb16d1/10/Dockerfile)
