@@ -24,10 +24,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.0.34`, `8.0`, `8`, `latest`, `8.0.34-oracle`, `8.0-oracle`, `8-oracle`, `oracle`](https://github.com/docker-library/mysql/blob/f4030aebf6a63d640f7085fb3e4601b4e70313c8/8.0/Dockerfile.oracle)
--	[`8.0.34-debian`, `8.0-debian`, `8-debian`, `debian`](https://github.com/docker-library/mysql/blob/f4030aebf6a63d640f7085fb3e4601b4e70313c8/8.0/Dockerfile.debian)
--	[`5.7.42`, `5.7`, `5`, `5.7.42-oracle`, `5.7-oracle`, `5-oracle`](https://github.com/docker-library/mysql/blob/2baf92d30620d7d123141b98988b0d42d2156351/5.7/Dockerfile.oracle)
--	[`5.7.42-debian`, `5.7-debian`, `5-debian`](https://github.com/docker-library/mysql/blob/611aa464a96f69e5d4d4172b14ca829ded162b42/5.7/Dockerfile.debian)
+-	[`8.1.0`, `8.1`, `8`, `innovation`, `latest`, `8.1.0-oracle`, `8.1-oracle`, `8-oracle`, `innovation-oracle`, `oracle`](https://github.com/docker-library/mysql/blob/eb1850601849ef7ef77a23f017a20debc95d597c/innovation/Dockerfile.oracle)
+-	[`8.0.34`, `8.0`, `8.0.34-oracle`, `8.0-oracle`](https://github.com/docker-library/mysql/blob/f4030aebf6a63d640f7085fb3e4601b4e70313c8/8.0/Dockerfile.oracle)
+-	[`8.0.34-debian`, `8.0-debian`](https://github.com/docker-library/mysql/blob/f4030aebf6a63d640f7085fb3e4601b4e70313c8/8.0/Dockerfile.debian)
+-	[`5.7.43`, `5.7`, `5`, `5.7.43-oracle`, `5.7-oracle`, `5-oracle`](https://github.com/docker-library/mysql/blob/c13cda9c2c9d836af9b3331e8681f8cc8e0a7803/5.7/Dockerfile.oracle)
 
 # Quick reference (cont.)
 

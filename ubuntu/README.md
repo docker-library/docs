@@ -24,11 +24,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`20.04`, `focal-20230624`, `focal`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-focal-amd64-20230624-079a169a&id=079a169aa8fe8cc7c59e960bc02f33628a255064)
+-	[`20.04`, `focal-20230801`, `focal`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-focal-amd64-20230801-b27f055b&id=b27f055b18f661b8bb4695aa14cf7ec586e490d1)
 -	[`22.04`, `jammy-20230624`, `jammy`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-amd64-20230624-2cc72fa2&id=2cc72fa2e3553cc25ee5e0157929e35f2510dbd8)
--	[`22.10`, `kinetic-20230624`, `kinetic`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-kinetic-amd64-20230624-0332f3c2&id=0332f3c29e2657ed4711edc6fccaac061074f21c)
--	[`23.04`, `lunar-20230615`, `lunar`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-lunar-amd64-20230615-3537c573&id=3537c5732f5b3fc814f5762acf34b890a8d79a13)
--	[`23.10`, `mantic-20230712`, `mantic`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-mantic-amd64-20230712-72dd5f1a&id=72dd5f1ab372097d0dd0e1720e12854f1588e04e)
+-	[`23.04`, `lunar-20230731`, `lunar`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-lunar-amd64-20230731-5313d155&id=5313d155739982dfbee1f9c03d8ede76a2d4ffc9)
+-	[`23.10`, `mantic-20230801`, `mantic`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-mantic-amd64-20230801-5336d144&id=5336d144dbf9de7060cd6ace89f90c63e5b38e28)
 
 # Quick reference (cont.)
 
