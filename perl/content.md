@@ -66,6 +66,12 @@ If your Perl program is expected to handle signals and fork child processes, it 
 
 See also [Signals in perlipc](https://perldoc.pl/perlipc#Signals) as well as [Perl/docker-perl#44](https://github.com/Perl/docker-perl/issues/44).
 
+### `COPY` and `WORKDIR` behavior in Debian Bookworm based images (Perl >= 5.38)
+
+As our Perl images are based on the standard `buildpack-deps` and `debian` images, these inherit the new [merged-usr root filesystem layout](https://wiki.debian.org/UsrMerge) introduced in Debian 12 (Bookworm) which may affect certain build contexts that `COPY` their own `bin`, `sbin`, or `lib` directories into a `WORKDIR /`. Users are encouraged to set `WORKDIR` explicitly to a path other than `/` as much as possible, such as the `/usr/src/app` shown here in the examples, though as of current release our images now default to `WORKDIR /usr/src/app`.
+
+See also [Perl/docker-perl#140](https://github.com/Perl/docker-perl/issues/140) for further information.
+
 ## Example: Creating a reusable Carton image for Perl projects
 
 Suppose you have a project that uses [Carton](https://metacpan.org/pod/Carton) to manage Perl dependencies. You can create a `%%IMAGE%%:carton` image that makes use of the [ONBUILD](https://docs.docker.com/engine/reference/builder/#onbuild) instruction in its `Dockerfile`, like this:
