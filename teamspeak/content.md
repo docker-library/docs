@@ -94,7 +94,7 @@ If this variable is set to 1, all new log entries are written into a single file
 
 ### `TS3SERVER_QUERY_PROTOCOLS`
 
-Comma separated list of protocols that can be used to connect to the ServerQuery. Possible values are `raw` and `ssh`. If `raw` is specified a raw or "classic" ServerQuery is opened on `10011/tcp`. If `ssh` is specified an encrypted ServerQuery using SSH is opened at `10022/tcp`. Any combination of the aforementioned values can be specified in this parameter, including leaving it empty, which would disable ServerQuery altogether.
+Comma separated list of protocols that can be used to connect to the ServerQuery. Possible values are `raw`, `ssh` and `http`. If `raw` is specified a raw or "classic" ServerQuery is opened on `10011/tcp`. If `ssh` is specified an encrypted ServerQuery using SSH is opened at `10022/tcp`. If `http` is specified a HTTP Port is opened at `10080/tcp` for ServerQuery Commands.` Any combination of the aforementioned values can be specified in this parameter, including leaving it empty, which would disable ServerQuery altogether.
 
 ### `TS3SERVER_QUERY_TIMEOUT`
 
@@ -103,6 +103,10 @@ Number of seconds before a query connection is disconnected because of inactivit
 ### `TS3SERVER_QUERY_SSH_RSA_HOST_KEY`
 
 Path to the `ssh_host_rsa_key` to be used by query. If it does not exist, it will be created when the server is starting up.
+
+### `TS3SERVER_SERVERADMIN_PASSWORD`
+
+Password for the ServerAdmin Account that is used to Connect to ServerQuery with admin rights. If this isn't set the passwort is generated.
 
 # Caveats
 
