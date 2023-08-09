@@ -62,7 +62,7 @@ SATOSA uses encrypted cookies to track the progress of an authentication flow. T
 
 ### `SAML2_BACKEND_DISCO_SRV`
 
-When part of a SAML2 multilateral federation, SATOSA will ask the user to choose an identity provider using a SAML discovery service. This environment variable optionally sets the the discovery service URL, which defaults to [SeamlessAccess](https://seamlessaccess.org/).
+When part of a SAML2 multilateral federation, SATOSA will ask the user to choose an identity provider using a SAML discovery service. This environment variable optionally sets the discovery service URL, which defaults to [SeamlessAccess](https://seamlessaccess.org/).
 
 ### `SAML2_BACKEND_CERT` and `SAML2_BACKEND_KEY`
 
