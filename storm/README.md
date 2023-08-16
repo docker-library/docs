@@ -25,7 +25,8 @@ WARNING:
 # Supported tags and respective `Dockerfile` links
 
 -	[`1.2.4-temurin`, `1.2-temurin`](https://github.com/31z4/storm-docker/blob/14c749848c8ff7c955f2b29c57e327ae80fbbb7e/1.2.4/Dockerfile)
--	[`2.4.0-temurin`, `2.4-temurin`, `latest`](https://github.com/31z4/storm-docker/blob/a81f9686e8a13dbf428864482f2d0bba50e9c414/2.4.0/Dockerfile)
+-	[`2.4.0-temurin`, `2.4-temurin`](https://github.com/31z4/storm-docker/blob/a81f9686e8a13dbf428864482f2d0bba50e9c414/2.4.0/Dockerfile)
+-	[`2.5.0`, `latest`](https://github.com/31z4/storm-docker/blob/8e162f994d36bfae7f13a32ceb4193d185b9a89e/2.5.0/Dockerfile)
 
 # Quick reference (cont.)
 
