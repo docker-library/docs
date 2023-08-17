@@ -26,7 +26,7 @@ WARNING:
 
 -	[`3.7.1-temurin`, `3.7-temurin`](https://github.com/31z4/zookeeper-docker/blob/5cf119d9c5d61024fdba66f7be707413513a8b0d/3.7.1/Dockerfile)
 -	[`3.8.2`, `3.8`, `3.8.2-temurin`, `3.8-temurin`](https://github.com/31z4/zookeeper-docker/blob/952b2f523f4f9a829d77114ddbe08ab9249d820b/3.8.2/Dockerfile)
--	[`3.9.0`, `latest`](https://github.com/31z4/zookeeper-docker/blob/47955764fa33b1cfa547786f5ea0a2ded4e971b9/3.9.0/Dockerfile)
+-	[`3.9.0`, `3.9`, `latest`](https://github.com/31z4/zookeeper-docker/blob/47955764fa33b1cfa547786f5ea0a2ded4e971b9/3.9.0/Dockerfile)
 
 # Quick reference (cont.)
 
