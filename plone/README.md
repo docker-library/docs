@@ -24,9 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.2.12-python38`, `5.2-python38`, `5-python38`, `python38`, `5.2.12`, `5.2`, `5`, `latest`](https://github.com/plone/plone.docker/blob/a3551bff4d1a17535ecb18a86f5bf87ebb97c5de/5.2/5.2.12/debian/Dockerfile)
--	[`5.2.11-python38`, `5.2.11`](https://github.com/plone/plone.docker/blob/a3551bff4d1a17535ecb18a86f5bf87ebb97c5de/5.2/5.2.11/debian/Dockerfile)
--	[`5.2.10-python38`, `5.2.10`](https://github.com/plone/plone.docker/blob/a3551bff4d1a17535ecb18a86f5bf87ebb97c5de/5.2/5.2.10/debian/Dockerfile)
+-	[`5.2.13-python38`, `5.2-python38`, `5-python38`, `python38`, `5.2.13`, `5.2`, `5`, `latest`](https://github.com/plone/plone.docker/blob/fd5a572ead9cabb20b9fcb24e16631f673610118/5.2/5.2.13/debian/Dockerfile)
 
 # Quick reference (cont.)
 
