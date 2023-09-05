@@ -113,9 +113,9 @@ $ docker exec -w /etc/caddy $caddy_container_id caddy reload
 
 Caddy ships with HTTP/3 support enabled by default. To improve the performance of this UDP based protocol, the underlying quic-go library tries to increase the buffer sizes for its socket. The `NET_ADMIN` capability allows it to override the low default limits of the operating system without having to change kernel parameters via sysctl.
 
-Giving the container this capability is optional and has potential, though unlikely, [security implications](https://unix.stackexchange.com/a/508816).
+Giving the container this capability is optional and has potential, though unlikely, to have [security implications](https://unix.stackexchange.com/a/508816).
 
-see https://github.com/quic-go/quic-go/wiki/UDP-Buffer-Sizes
+See https://github.com/quic-go/quic-go/wiki/UDP-Buffer-Sizes for more details.
 
 ### Docker Compose example
 
