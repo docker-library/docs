@@ -24,9 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`0.6.11`, `latest`](https://github.com/wallarm/api-firewall-docker/blob/8da89a87d29d1b6d5a52e3064722d9a24a4c39fb/0.6.11/Dockerfile)
--	[`0.6.10`](https://github.com/wallarm/api-firewall-docker/blob/c2b622e7f59546d9fb338c81fa82d405a8767485/0.6.10/Dockerfile)
--	[`0.6.9`](https://github.com/wallarm/api-firewall-docker/blob/b0579bf17de8f41b162e150b00a87b95648258ee/0.6.9/Dockerfile)
+-	[`0.6.13`, `latest`](https://github.com/wallarm/api-firewall-docker/blob/e91a3e1f2859e57cd9f4371ba2a2308a35f2b546/0.6.13/Dockerfile)
+-	[`0.6.12`](https://github.com/wallarm/api-firewall-docker/blob/e91a3e1f2859e57cd9f4371ba2a2308a35f2b546/0.6.12/Dockerfile)
 
 # Quick reference (cont.)
 
