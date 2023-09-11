@@ -40,14 +40,6 @@ WARNING:
 -	[`18-bullseye-slim`, `18.17-bullseye-slim`, `18.17.1-bullseye-slim`, `hydrogen-bullseye-slim`, `lts-bullseye-slim`](https://github.com/nodejs/docker-node/blob/1a4f3d2d0c914b4468ba9675cedf70a2f4f0f82d/18/bullseye-slim/Dockerfile)
 -	[`18-buster`, `18.17-buster`, `18.17.1-buster`, `hydrogen-buster`, `lts-buster`](https://github.com/nodejs/docker-node/blob/1a4f3d2d0c914b4468ba9675cedf70a2f4f0f82d/18/buster/Dockerfile)
 -	[`18-buster-slim`, `18.17-buster-slim`, `18.17.1-buster-slim`, `hydrogen-buster-slim`, `lts-buster-slim`](https://github.com/nodejs/docker-node/blob/1a4f3d2d0c914b4468ba9675cedf70a2f4f0f82d/18/buster-slim/Dockerfile)
--	[`16-alpine3.17`, `16.20-alpine3.17`, `16.20.2-alpine3.17`, `gallium-alpine3.17`](https://github.com/nodejs/docker-node/blob/1a4f3d2d0c914b4468ba9675cedf70a2f4f0f82d/16/alpine3.17/Dockerfile)
--	[`16-alpine`, `16-alpine3.18`, `16.20-alpine`, `16.20-alpine3.18`, `16.20.2-alpine`, `16.20.2-alpine3.18`, `gallium-alpine`, `gallium-alpine3.18`](https://github.com/nodejs/docker-node/blob/1a4f3d2d0c914b4468ba9675cedf70a2f4f0f82d/16/alpine3.18/Dockerfile)
--	[`16-bookworm`, `16.20-bookworm`, `16.20.2-bookworm`, `gallium-bookworm`](https://github.com/nodejs/docker-node/blob/1a4f3d2d0c914b4468ba9675cedf70a2f4f0f82d/16/bookworm/Dockerfile)
--	[`16-bookworm-slim`, `16.20-bookworm-slim`, `16.20.2-bookworm-slim`, `gallium-bookworm-slim`](https://github.com/nodejs/docker-node/blob/1a4f3d2d0c914b4468ba9675cedf70a2f4f0f82d/16/bookworm-slim/Dockerfile)
--	[`16-bullseye`, `16.20-bullseye`, `16.20.2-bullseye`, `gallium-bullseye`](https://github.com/nodejs/docker-node/blob/1a4f3d2d0c914b4468ba9675cedf70a2f4f0f82d/16/bullseye/Dockerfile)
--	[`16-bullseye-slim`, `16.20-bullseye-slim`, `16.20.2-bullseye-slim`, `gallium-bullseye-slim`](https://github.com/nodejs/docker-node/blob/1a4f3d2d0c914b4468ba9675cedf70a2f4f0f82d/16/bullseye-slim/Dockerfile)
--	[`16`, `16-buster`, `16.20`, `16.20-buster`, `16.20.2`, `16.20.2-buster`, `gallium`, `gallium-buster`](https://github.com/nodejs/docker-node/blob/1a4f3d2d0c914b4468ba9675cedf70a2f4f0f82d/16/buster/Dockerfile)
--	[`16-buster-slim`, `16-slim`, `16.20-buster-slim`, `16.20-slim`, `16.20.2-buster-slim`, `16.20.2-slim`, `gallium-buster-slim`, `gallium-slim`](https://github.com/nodejs/docker-node/blob/1a4f3d2d0c914b4468ba9675cedf70a2f4f0f82d/16/buster-slim/Dockerfile)
 
 # Quick reference (cont.)
 
