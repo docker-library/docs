@@ -11,6 +11,4 @@ Kong's official documentation can be found at [docs.konghq.com](https://docs.kon
 
 # How to use this image
 
-Please refer to the
-[installation section](https://docs.konghq.com/gateway/latest/install/docker/#main)
-on our documentation website to learn how to use this image.
+Please refer to the [installation section](https://docs.konghq.com/gateway/latest/install/docker/#main) on our documentation website to learn how to use this image.
