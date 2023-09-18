@@ -7,8 +7,7 @@ organizations ranging from startups to Fortune 500 enterprises unleash
 developer productivity, build securely, and accelerate time to market.
 
 
-Kong's official documentation can be found at
-[docs.konghq.com](https://docs.konghq.com/).
+Kong's official documentation can be found at [docs.konghq.com](https://docs.konghq.com/).
 
 # How to use this image
 
