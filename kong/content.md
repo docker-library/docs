@@ -1,9 +1,6 @@
 # What is Kong?
 
-Kong Gateway is the world’s most adopted API gateway. Lightweight,
-fast, and flexible, this open source gateway is built for hybrid and
-multi-cloud and optimized for microservices and distributed
-architectures.
+Kong Gateway is the world’s most adopted API gateway. Lightweight, fast, and flexible, this open source gateway is built for hybrid and multi-cloud and optimized for microservices and distributed architectures.
 
 Built on this open source DNA, Kong’s unified cloud API platform helps
 organizations ranging from startups to Fortune 500 enterprises unleash
