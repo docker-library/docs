@@ -191,6 +191,16 @@ $ docker run -d --name C8O -e JAVA_OPTS="-DjvmRoute=server1" -p 28080:28080 %%IM
 
 [Here the list of convertigo specific properties](https://www.convertigo.com/documentation/latest/operating-guide/appendixes/#list-of-convertigo-java-system-properties) (don't forget the `-Dconvertigo.engine.` prefix).
 
+## `LOG_STDOUT` and `LOG_FILE` Environment variables
+
+Convertigo generates many logs in a **engine.log** file that can be consulted via the Convertigo Administration Console. In some environments, it's easiest to read logs from the container's standard output. Set this property `true` to enable console output. The default value is `false`.
+
+Log file still exists until you add the `LOG_FILE=false` environment variable :
+
+```console
+    docker run -d --name C8O -e LOG_STDOUT=true -e LOG_FILE=false -p 28080:28080 convertigo
+```
+
 ## `JXMX` Environment variable
 
 Convertigo tries to allocate this amount of memory in the container and will automatically reduce it until the value is compatible for the Docker memory constraints. Once the best value found, it is used as `-Xmx=${JXMX}m` parameter for the JVM.
