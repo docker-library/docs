@@ -47,12 +47,14 @@ WARNING:
 -	[`3.9.4-amazoncorretto-20`, `3.9-amazoncorretto-20`, `3-amazoncorretto-20`](https://github.com/carlossg/docker-maven/blob/d7319e0caa2961b402073e8054bc63e8dc48d969/amazoncorretto-20/Dockerfile)
 -	[`3.9.4-amazoncorretto-20-al2023`, `3.9-amazoncorretto-20-al2023`, `3-amazoncorretto-20-al2023`](https://github.com/carlossg/docker-maven/blob/70289540a9c5078ffa8cdde7ab6432248f942d54/amazoncorretto-20-al2023/Dockerfile)
 -	[`3.9.4-amazoncorretto-20-debian`, `3.9.4-amazoncorretto-20-debian-bookworm`, `3.9-amazoncorretto-20-debian`, `3.9-amazoncorretto-20-debian-bookworm`, `3-amazoncorretto-20-debian`, `3-amazoncorretto-20-debian-bookworm`](https://github.com/carlossg/docker-maven/blob/d7319e0caa2961b402073e8054bc63e8dc48d969/amazoncorretto-20-debian/Dockerfile)
+-	[`3.9.4-amazoncorretto-21`, `3.9-amazoncorretto-21`, `3-amazoncorretto-21`](https://github.com/carlossg/docker-maven/blob/7741c2848c3ea3ad6b4180d94b90d669d419c893/amazoncorretto-21/Dockerfile)
 -	[`3.9.4-amazoncorretto-21-debian`, `3.9.4-amazoncorretto-21-debian-bookworm`, `3.9-amazoncorretto-21-debian`, `3.9-amazoncorretto-21-debian-bookworm`, `3-amazoncorretto-21-debian`, `3-amazoncorretto-21-debian-bookworm`](https://github.com/carlossg/docker-maven/blob/61b5d8d7e9e5706522ff154315db185816d35891/amazoncorretto-21-debian/Dockerfile)
 -	[`3.9.4-amazoncorretto-8`, `3.9-amazoncorretto-8`, `3-amazoncorretto-8`](https://github.com/carlossg/docker-maven/blob/d7319e0caa2961b402073e8054bc63e8dc48d969/amazoncorretto-8/Dockerfile)
 -	[`3.9.4-amazoncorretto-8-al2023`, `3.9-amazoncorretto-8-al2023`, `3-amazoncorretto-8-al2023`](https://github.com/carlossg/docker-maven/blob/70289540a9c5078ffa8cdde7ab6432248f942d54/amazoncorretto-8-al2023/Dockerfile)
 -	[`3.9.4-amazoncorretto-8-debian`, `3.9.4-amazoncorretto-8-debian-bookworm`, `3.9-amazoncorretto-8-debian`, `3.9-amazoncorretto-8-debian-bookworm`, `3-amazoncorretto-8-debian`, `3-amazoncorretto-8-debian-bookworm`](https://github.com/carlossg/docker-maven/blob/d7319e0caa2961b402073e8054bc63e8dc48d969/amazoncorretto-8-debian/Dockerfile)
 -	[`3.9.4-sapmachine-11`, `3.9-sapmachine-11`, `3-sapmachine-11`](https://github.com/carlossg/docker-maven/blob/d7319e0caa2961b402073e8054bc63e8dc48d969/sapmachine-11/Dockerfile)
 -	[`3.9.4-sapmachine-17`, `3.9.4-sapmachine`, `3.9-sapmachine-17`, `3.9-sapmachine`, `3-sapmachine-17`, `3-sapmachine`, `sapmachine`](https://github.com/carlossg/docker-maven/blob/d7319e0caa2961b402073e8054bc63e8dc48d969/sapmachine-17/Dockerfile)
+-	[`3.9.4-sapmachine-21`, `3.9-sapmachine-21`, `3-sapmachine-21`](https://github.com/carlossg/docker-maven/blob/c6ea9b77dab964547324ce49b61ea542fc55f5b5/sapmachine-21/Dockerfile)
 
 # Quick reference (cont.)
 
