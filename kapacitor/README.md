@@ -24,10 +24,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.5`, `1.5.9`](https://github.com/influxdata/influxdata-docker/blob/409aa55a78db9cbe9e4e0c94b1e67785d63ffd32/kapacitor/1.5/Dockerfile)
--	[`1.5-alpine`, `1.5.9-alpine`](https://github.com/influxdata/influxdata-docker/blob/409aa55a78db9cbe9e4e0c94b1e67785d63ffd32/kapacitor/1.5/alpine/Dockerfile)
--	[`1.6`, `1.6.6`, `latest`](https://github.com/influxdata/influxdata-docker/blob/409aa55a78db9cbe9e4e0c94b1e67785d63ffd32/kapacitor/1.6/Dockerfile)
--	[`1.6-alpine`, `1.6.6-alpine`, `alpine`](https://github.com/influxdata/influxdata-docker/blob/409aa55a78db9cbe9e4e0c94b1e67785d63ffd32/kapacitor/1.6/alpine/Dockerfile)
+-	[`1.6`, `1.6.6`](https://github.com/influxdata/influxdata-docker/blob/4d8ee693af190b1d7338658239e39bf2fe54c53f/kapacitor/1.6/Dockerfile)
+-	[`1.6-alpine`, `1.6.6-alpine`](https://github.com/influxdata/influxdata-docker/blob/4d8ee693af190b1d7338658239e39bf2fe54c53f/kapacitor/1.6/alpine/Dockerfile)
+-	[`1.7`, `1.7.0`, `latest`](https://github.com/influxdata/influxdata-docker/blob/4d8ee693af190b1d7338658239e39bf2fe54c53f/kapacitor/1.7/Dockerfile)
+-	[`1.7-alpine`, `1.7.0-alpine`, `alpine`](https://github.com/influxdata/influxdata-docker/blob/4d8ee693af190b1d7338658239e39bf2fe54c53f/kapacitor/1.7/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -35,7 +35,7 @@ WARNING:
 	[https://github.com/influxdata/influxdata-docker/issues](https://github.com/influxdata/influxdata-docker/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/kapacitor/), [`arm32v7`](https://hub.docker.com/r/arm32v7/kapacitor/), [`arm64v8`](https://hub.docker.com/r/arm64v8/kapacitor/)
+	[`amd64`](https://hub.docker.com/r/amd64/kapacitor/), [`arm64v8`](https://hub.docker.com/r/arm64v8/kapacitor/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/kapacitor/` directory](https://github.com/docker-library/repo-info/blob/master/repos/kapacitor) ([history](https://github.com/docker-library/repo-info/commits/master/repos/kapacitor))  
