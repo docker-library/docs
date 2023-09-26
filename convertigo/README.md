@@ -24,7 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.2.2`, `8.2`, `latest`](https://github.com/convertigo/convertigo/blob/6cfd8957e427702eefefcd2bfe9adc374543b808/docker/default/Dockerfile)
+-	[`8.2.3`, `8.2`, `latest`](https://github.com/convertigo/convertigo/blob/4f29a87627e16e9961f0795d59ee4540d76a5b3c/docker/default/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -237,6 +237,16 @@ $ docker run -d --name C8O -e JAVA_OPTS="-DjvmRoute=server1" -p 28080:28080 conv
 ```
 
 [Here the list of convertigo specific properties](https://www.convertigo.com/documentation/latest/operating-guide/appendixes/#list-of-convertigo-java-system-properties) (don't forget the `-Dconvertigo.engine.` prefix).
+
+## `LOG_STDOUT` and `LOG_FILE` Environment variables
+
+Convertigo generates many logs in a **engine.log** file that can be consulted via the Convertigo Administration Console. In some environments, it's easiest to read logs from the container's standard output. Set this property `true` to enable console output. The default value is `false`.
+
+Log file still exists until you add the `LOG_FILE=false` environment variable :
+
+```console
+    docker run -d --name C8O -e LOG_STDOUT=true -e LOG_FILE=false -p 28080:28080 convertigo
+```
 
 ## `JXMX` Environment variable
 
