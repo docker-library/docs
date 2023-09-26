@@ -24,8 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`9.6.2-buster`, `9.6-buster`, `9-buster`, `buster`, `9.6.2`, `9.6`, `9`, `latest`](https://github.com/haskell/docker-haskell/blob/d33bf51b985814e1d38b5d3fd301531ff16d7d21/9.6/buster/Dockerfile)
--	[`9.6.2-slim-buster`, `9.6-slim-buster`, `9-slim-buster`, `slim-buster`, `9.6.2-slim`, `9.6-slim`, `9-slim`, `slim`](https://github.com/haskell/docker-haskell/blob/d33bf51b985814e1d38b5d3fd301531ff16d7d21/9.6/slim-buster/Dockerfile)
+-	[`9.6.3-buster`, `9.6-buster`, `9-buster`, `buster`, `9.6.3`, `9.6`, `9`, `latest`](https://github.com/haskell/docker-haskell/blob/9bf57e9b736ce1d32fbccbc30f88a48c9e221225/9.6/buster/Dockerfile)
+-	[`9.6.3-slim-buster`, `9.6-slim-buster`, `9-slim-buster`, `slim-buster`, `9.6.3-slim`, `9.6-slim`, `9-slim`, `slim`](https://github.com/haskell/docker-haskell/blob/9bf57e9b736ce1d32fbccbc30f88a48c9e221225/9.6/slim-buster/Dockerfile)
 -	[`9.4.7-buster`, `9.4-buster`, `9.4.7`, `9.4`](https://github.com/haskell/docker-haskell/blob/7bb1b4d1f855249d50056a69f071a2f50ad2987d/9.4/buster/Dockerfile)
 -	[`9.4.7-slim-buster`, `9.4-slim-buster`, `9.4.7-slim`, `9.4-slim`](https://github.com/haskell/docker-haskell/blob/7bb1b4d1f855249d50056a69f071a2f50ad2987d/9.4/slim-buster/Dockerfile)
 -	[`9.2.8-buster`, `9.2-buster`, `9.2.8`, `9.2`](https://github.com/haskell/docker-haskell/blob/13262afb82e457645a9b9f3f3eadb8e5acd4b5c1/9.2/buster/Dockerfile)
