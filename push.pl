@@ -9,7 +9,7 @@ use File::Temp;
 use Getopt::Long;
 use Mojo::File;
 use Mojo::UserAgent;
-use Mojo::Util qw(b64_encode decode encode trim url_escape);
+use Mojo::Util qw(decode encode trim url_escape);
 
 use Term::UI;
 use Term::ReadLine;
@@ -206,7 +206,7 @@ while (my $repo = shift) { # 'library/hylang', 'tianon/perl', etc
 			}
 			else {
 				say 'putting logo ' . $repoLogo120;
-				my $logoUpload = $ua->post($logoUrlBase . '/upload' => { %$authorizationHeader,  'Content-Type' => 'image/png' } => b64_encode $proposedLogo);
+				my $logoUpload = $ua->post($logoUrlBase . '/upload' => { %$authorizationHeader, 'Content-Type' => 'image/png' } => $proposedLogo);
 				die 'POST to ' . $logoUrlBase . '/upload failed: ' . $logoUpload->res->text unless $logoUpload->res->is_success;
 			}
 		} else {
