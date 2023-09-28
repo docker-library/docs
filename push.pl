@@ -9,7 +9,7 @@ use File::Temp;
 use Getopt::Long;
 use Mojo::File;
 use Mojo::UserAgent;
-use Mojo::Util qw(b64_encode decode encode trim);
+use Mojo::Util qw(decode encode trim url_escape);
 
 use Term::UI;
 use Term::ReadLine;
@@ -175,8 +175,7 @@ while (my $repo = shift) { # 'library/hylang', 'tianon/perl', etc
 	
 	my $repoUrl = $dockerHub . '/v2/repositories/' . $repo . '/';
 	
-	if ($logos && $repo =~ m{ ^ library/ }x) {
-		# the "library" org images include a logo which is displayed in the Hub UI
+	if ($logos) {
 		# if we have a logo file, let's update that metadata first
 		my $repoLogo120 = $repoName . '/logo-120.png';
 		if (!-f $repoLogo120) {
@@ -196,9 +195,10 @@ while (my $repo = shift) { # 'library/hylang', 'tianon/perl', etc
 				) == 0 or die "failed to convert $logoToConvert into $repoLogo120";
 			}
 		}
+		my $logoUrlBase = $dockerHub . '/api/media/repos_logo/v1/' . url_escape($repo);
 		if (-f $repoLogo120) {
 			my $proposedLogo = Mojo::File->new($repoLogo120)->slurp;
-			my $currentLogo = $ua->get('https://d1q6f0aelx0por.cloudfront.net/product-logos/' . join('-', split(m{/}, $repo)) . '-logo.png', { 'Cache-Control' => 'no-cache' });
+			my $currentLogo = $ua->get($logoUrlBase, { 'Cache-Control' => 'no-cache' });
 			$currentLogo = ($currentLogo->res->is_success ? $currentLogo->res->body : undef);
 			
 			if ($currentLogo && $currentLogo eq $proposedLogo) {
@@ -206,14 +206,14 @@ while (my $repo = shift) { # 'library/hylang', 'tianon/perl', etc
 			}
 			else {
 				say 'putting logo ' . $repoLogo120;
-				my $logoUrl = $repoUrl . 'logo';
-				my $logoPut = $ua->put($logoUrl => $authorizationHeader => json => {
-						'image_data' => b64_encode($proposedLogo),
-						'content_type' => 'image/png',
-						'file_ext' => 'png',
-					});
-				warn 'warning: put to ' . $logoUrl . ' failed: ' . $logoPut->res->text unless $logoPut->res->is_success;
+				my $logoUpload = $ua->post($logoUrlBase . '/upload' => { %$authorizationHeader, 'Content-Type' => 'image/png' } => $proposedLogo);
+				die 'POST to ' . $logoUrlBase . '/upload failed: ' . $logoUpload->res->text unless $logoUpload->res->is_success;
 			}
+		} else {
+			# if we had no logo file, we should send a DELETE request to the API just to be sure we're synchronizing the repo state appropriately even on complete logo removal
+			say 'no ' . $repoLogo120 . '; deleting logo';
+			my $logoDelete = $ua->delete($logoUrlBase => $authorizationHeader);
+			die 'DELETE to ' . $logoUrlBase . ' failed: ' . $logoDelete->res->text unless $logoDelete->res->is_success or $logoDelete->res->code == 404;
 		}
 	}
 	
