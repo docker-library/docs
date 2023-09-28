@@ -206,13 +206,8 @@ while (my $repo = shift) { # 'library/hylang', 'tianon/perl', etc
 			}
 			else {
 				say 'putting logo ' . $repoLogo120;
-				my $logoUpload = $ua->get($logoUrlBase . '/upload' => $authorizationHeader);
-				die 'GET to ' . $logoUrlBase . '/upload failed: ' . $logoUpload->res->text unless $logoUpload->res->is_success;
-				my $logoUploadUrl = $logoUpload->res->json->{url};
-				my $logoPut = $ua->put($logoUploadUrl => { 'Content-Type' => 'image/png' } => $proposedLogo);
-				die 'PUT to ' . $logoUrlBase . ' (via "/upload" secure URL) failed: ' . $logoPut->res->text unless $logoPut->res->is_success;
-				my $logoComplete = $ua->post($logoUrlBase . '/upload/complete' => $authorizationHeader);
-				die 'POST to ' . $logoUrlBase . '/upload/complete failed: ' . $logoComplete->res->text unless $logoComplete->res->is_success;
+				my $logoUpload = $ua->post($logoUrlBase . '/upload' => { %$authorizationHeader,  'Content-Type' => 'image/png' } => b64_encode $proposedLogo);
+				die 'POST to ' . $logoUrlBase . '/upload failed: ' . $logoUpload->res->text unless $logoUpload->res->is_success;
 			}
 		} else {
 			# if we had no logo file, we should send a DELETE request to the API just to be sure we're synchronizing the repo state appropriately even on complete logo removal
