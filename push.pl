@@ -175,7 +175,8 @@ while (my $repo = shift) { # 'library/hylang', 'tianon/perl', etc
 	
 	my $repoUrl = $dockerHub . '/v2/repositories/' . $repo . '/';
 	
-	if ($logos) {
+	if ($logos && $repo =~ m{ ^ library/ }x) {
+		# only DOI ("library"), DSOS, or DVP orgs can include a logo which is displayed in the Hub UI
 		# if we have a logo file, let's update that metadata first
 		my $repoLogo120 = $repoName . '/logo-120.png';
 		if (!-f $repoLogo120) {
