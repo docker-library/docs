@@ -24,8 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`v3.0.0-beta3-windowsservercore-1809`, `3.0.0-beta3-windowsservercore-1809`, `v3.0-windowsservercore-1809`, `3.0-windowsservercore-1809`, `beaufort-windowsservercore-1809`](https://github.com/traefik/traefik-library-image/blob/d9507badace6c064417d852daeea402d29ec0707/windows/1809/Dockerfile)
--	[`v3.0.0-beta3`, `3.0.0-beta3`, `v3.0`, `3.0`, `beaufort`](https://github.com/traefik/traefik-library-image/blob/d9507badace6c064417d852daeea402d29ec0707/alpine/Dockerfile)
+-	[`v3.0.0-beta4-windowsservercore-1809`, `3.0.0-beta4-windowsservercore-1809`, `v3.0-windowsservercore-1809`, `3.0-windowsservercore-1809`, `beaufort-windowsservercore-1809`](https://github.com/traefik/traefik-library-image/blob/9c7773b44918428aed9d425932dbd220e700fed3/windows/1809/Dockerfile)
+-	[`v3.0.0-beta4`, `3.0.0-beta4`, `v3.0`, `3.0`, `beaufort`](https://github.com/traefik/traefik-library-image/blob/9c7773b44918428aed9d425932dbd220e700fed3/alpine/Dockerfile)
 -	[`v2.10.5-windowsservercore-1809`, `2.10.5-windowsservercore-1809`, `v2.10-windowsservercore-1809`, `2.10-windowsservercore-1809`, `saintmarcelin-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/traefik/traefik-library-image/blob/71a4619eca4f504c7034876c171626c1755944f3/windows/1809/Dockerfile)
 -	[`v2.10.5`, `2.10.5`, `v2.10`, `2.10`, `saintmarcelin`, `latest`](https://github.com/traefik/traefik-library-image/blob/71a4619eca4f504c7034876c171626c1755944f3/alpine/Dockerfile)
 
