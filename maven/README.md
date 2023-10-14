@@ -30,8 +30,8 @@ WARNING:
 -	[`3.9.4-eclipse-temurin-17`, `3.9-eclipse-temurin-17`, `3-eclipse-temurin-17`](https://github.com/carlossg/docker-maven/blob/d7319e0caa2961b402073e8054bc63e8dc48d969/eclipse-temurin-17/Dockerfile)
 -	[`3.9.4-eclipse-temurin-17-alpine`, `3.9-eclipse-temurin-17-alpine`, `3-eclipse-temurin-17-alpine`](https://github.com/carlossg/docker-maven/blob/d7319e0caa2961b402073e8054bc63e8dc48d969/eclipse-temurin-17-alpine/Dockerfile)
 -	[`3.9.4-eclipse-temurin-17-focal`, `3.9-eclipse-temurin-17-focal`, `3-eclipse-temurin-17-focal`](https://github.com/carlossg/docker-maven/blob/d7319e0caa2961b402073e8054bc63e8dc48d969/eclipse-temurin-17-focal/Dockerfile)
--	[`3.9.4-eclipse-temurin-20`, `3.9.4`, `3.9.4-eclipse-temurin`, `3.9-eclipse-temurin-20`, `3.9`, `3.9-eclipse-temurin`, `3-eclipse-temurin-20`, `3`, `latest`, `3-eclipse-temurin`, `eclipse-temurin`](https://github.com/carlossg/docker-maven/blob/d7319e0caa2961b402073e8054bc63e8dc48d969/eclipse-temurin-20/Dockerfile)
--	[`3.9.4-eclipse-temurin-20-alpine`, `3.9-eclipse-temurin-20-alpine`, `3-eclipse-temurin-20-alpine`](https://github.com/carlossg/docker-maven/blob/d7319e0caa2961b402073e8054bc63e8dc48d969/eclipse-temurin-20-alpine/Dockerfile)
+-	[`3.9.4-eclipse-temurin-21`, `3.9.4`, `3.9.4-eclipse-temurin`, `3.9-eclipse-temurin-21`, `3.9`, `3.9-eclipse-temurin`, `3-eclipse-temurin-21`, `3`, `latest`, `3-eclipse-temurin`, `eclipse-temurin`](https://github.com/carlossg/docker-maven/blob/134517fbdef9e977dc3b545533953ac5a493390b/eclipse-temurin-21/Dockerfile)
+-	[`3.9.4-eclipse-temurin-21-alpine`, `3.9-eclipse-temurin-21-alpine`, `3-eclipse-temurin-21-alpine`](https://github.com/carlossg/docker-maven/blob/134517fbdef9e977dc3b545533953ac5a493390b/eclipse-temurin-21-alpine/Dockerfile)
 -	[`3.9.4-eclipse-temurin-8`, `3.9-eclipse-temurin-8`, `3-eclipse-temurin-8`](https://github.com/carlossg/docker-maven/blob/d7319e0caa2961b402073e8054bc63e8dc48d969/eclipse-temurin-8/Dockerfile)
 -	[`3.9.4-eclipse-temurin-8-alpine`, `3.9-eclipse-temurin-8-alpine`, `3-eclipse-temurin-8-alpine`](https://github.com/carlossg/docker-maven/blob/d7319e0caa2961b402073e8054bc63e8dc48d969/eclipse-temurin-8-alpine/Dockerfile)
 -	[`3.9.4-eclipse-temurin-8-focal`, `3.9-eclipse-temurin-8-focal`, `3-eclipse-temurin-8-focal`](https://github.com/carlossg/docker-maven/blob/d7319e0caa2961b402073e8054bc63e8dc48d969/eclipse-temurin-8-focal/Dockerfile)
@@ -54,8 +54,8 @@ WARNING:
 -	[`3.9.4-amazoncorretto-8-al2023`, `3.9-amazoncorretto-8-al2023`, `3-amazoncorretto-8-al2023`](https://github.com/carlossg/docker-maven/blob/70289540a9c5078ffa8cdde7ab6432248f942d54/amazoncorretto-8-al2023/Dockerfile)
 -	[`3.9.4-amazoncorretto-8-debian`, `3.9.4-amazoncorretto-8-debian-bookworm`, `3.9-amazoncorretto-8-debian`, `3.9-amazoncorretto-8-debian-bookworm`, `3-amazoncorretto-8-debian`, `3-amazoncorretto-8-debian-bookworm`](https://github.com/carlossg/docker-maven/blob/d7319e0caa2961b402073e8054bc63e8dc48d969/amazoncorretto-8-debian/Dockerfile)
 -	[`3.9.4-sapmachine-11`, `3.9-sapmachine-11`, `3-sapmachine-11`](https://github.com/carlossg/docker-maven/blob/d7319e0caa2961b402073e8054bc63e8dc48d969/sapmachine-11/Dockerfile)
--	[`3.9.4-sapmachine-17`, `3.9.4-sapmachine`, `3.9-sapmachine-17`, `3.9-sapmachine`, `3-sapmachine-17`, `3-sapmachine`, `sapmachine`](https://github.com/carlossg/docker-maven/blob/d7319e0caa2961b402073e8054bc63e8dc48d969/sapmachine-17/Dockerfile)
--	[`3.9.4-sapmachine-21`, `3.9-sapmachine-21`, `3-sapmachine-21`](https://github.com/carlossg/docker-maven/blob/c6ea9b77dab964547324ce49b61ea542fc55f5b5/sapmachine-21/Dockerfile)
+-	[`3.9.4-sapmachine-17`, `3.9-sapmachine-17`, `3-sapmachine-17`](https://github.com/carlossg/docker-maven/blob/d7319e0caa2961b402073e8054bc63e8dc48d969/sapmachine-17/Dockerfile)
+-	[`3.9.4-sapmachine-21`, `3.9.4-sapmachine`, `3.9-sapmachine-21`, `3.9-sapmachine`, `3-sapmachine-21`, `3-sapmachine`, `sapmachine`](https://github.com/carlossg/docker-maven/blob/c6ea9b77dab964547324ce49b61ea542fc55f5b5/sapmachine-21/Dockerfile)
 
 # Quick reference (cont.)
 
