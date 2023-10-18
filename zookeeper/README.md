@@ -24,9 +24,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.7.1-temurin`, `3.7-temurin`](https://github.com/31z4/zookeeper-docker/blob/5cf119d9c5d61024fdba66f7be707413513a8b0d/3.7.1/Dockerfile)
--	[`3.8.2`, `3.8`, `3.8.2-temurin`, `3.8-temurin`](https://github.com/31z4/zookeeper-docker/blob/952b2f523f4f9a829d77114ddbe08ab9249d820b/3.8.2/Dockerfile)
--	[`3.9.0`, `3.9`, `latest`](https://github.com/31z4/zookeeper-docker/blob/47955764fa33b1cfa547786f5ea0a2ded4e971b9/3.9.0/Dockerfile)
+-	[`3.7.2`, `3.7`, `3.7.2-jre-11`, `3.7-jre-11`](https://github.com/31z4/zookeeper-docker/blob/dd520cb108da9eafe6914dce4e5dbd4877dd2411/3.7.2/Dockerfile)
+-	[`3.8.3`, `3.8`, `3.8.3-jre-11`, `3.8-jre-11`](https://github.com/31z4/zookeeper-docker/blob/dd520cb108da9eafe6914dce4e5dbd4877dd2411/3.8.3/Dockerfile)
+-	[`3.9.1`, `3.9`, `3.9.1-jre-11`, `3.9-jre-11`](https://github.com/31z4/zookeeper-docker/blob/dd520cb108da9eafe6914dce4e5dbd4877dd2411/3.9.1/Dockerfile)
+-	[`3.7.2-jre-17`, `3.7-jre-17`](https://github.com/31z4/zookeeper-docker/blob/5076660820c73f3b119cbdd1267c25a1e29cbbf4/3.7.2/Dockerfile)
+-	[`3.8.3-jre-17`, `3.8-jre-17`](https://github.com/31z4/zookeeper-docker/blob/5076660820c73f3b119cbdd1267c25a1e29cbbf4/3.8.3/Dockerfile)
+-	[`3.9.1-jre-17`, `3.9-jre-17`, `latest`](https://github.com/31z4/zookeeper-docker/blob/5076660820c73f3b119cbdd1267c25a1e29cbbf4/3.9.1/Dockerfile)
 
 # Quick reference (cont.)
 
