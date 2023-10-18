@@ -23,7 +23,7 @@ Note that Docker Hub's vulnerability scanning for Amazon Linux is currently base
 ## What is Amazon Linux 2023?
 
 -	Amazon Linux 2023: https://aws.amazon.com/linux/amazon-linux-2023/
--	2023.0 Release Notes: https://docs.aws.amazon.com/linux/al2023/release-notes/relnotes.html
+-	2023 Release Notes: https://docs.aws.amazon.com/linux/al2023/release-notes/relnotes.html
 -	FAQs: https://aws.amazon.com/linux/amazon-linux-2023/faqs/
 -	What's New: https://aws.amazon.com/about-aws/whats-new/2023/03/amazon-linux-2023/
 -	User Guide: https://docs.aws.amazon.com/linux/al2023/ug/what-is-amazon-linux.html
