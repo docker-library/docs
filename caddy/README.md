@@ -119,7 +119,7 @@ $ docker run -d -p 80:80 \
 The default `Caddyfile` only listens to port `80`, and does not set up automatic TLS. However, if you have a domain name for your site, and its A/AAAA DNS records are properly pointed to this machine's public IP, then you can use this command to simply serve a site over HTTPS:
 
 ```console
-$ docker run -d -p 80:80 -p 443:443 -p 443:443/udp \
+$ docker run -d --cap-add=NET_ADMIN -p 80:80 -p 443:443 -p 443:443/udp \
     -v /site:/srv \
     -v caddy_data:/data \
     -v caddy_config:/config \
@@ -179,6 +179,14 @@ $ caddy_container_id=$(docker ps | grep caddy | awk '{print $1;}')
 $ docker exec -w /etc/caddy $caddy_container_id caddy reload
 ```
 
+### Linux capabilities
+
+Caddy ships with HTTP/3 support enabled by default. To improve the performance of this UDP based protocol, the underlying quic-go library tries to increase the buffer sizes for its socket. The `NET_ADMIN` capability allows it to override the low default limits of the operating system without having to change kernel parameters via sysctl.
+
+Giving the container this capability is optional and has potential, though unlikely, to have [security implications](https://unix.stackexchange.com/a/508816).
+
+See https://github.com/quic-go/quic-go/wiki/UDP-Buffer-Sizes for more details.
+
 ### Docker Compose example
 
 If you prefer to use `docker-compose` to run your stack, here's a sample service definition.
@@ -190,6 +198,8 @@ services:
   caddy:
     image: caddy:<version>
     restart: unless-stopped
+    cap_add:
+      - NET_ADMIN
     ports:
       - "80:80"
       - "443:443"
