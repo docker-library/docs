@@ -201,7 +201,7 @@ The Docker documentation is a good starting point for understanding the differen
 2.	Start your `%%IMAGE%%` container like this:
 
 	```console
-	$ docker run --name some-%%REPO%% -v /my/own/datadir:/var/lib/mysql -e MARIADB_ROOT_PASSWORD=my-secret-pw -d %%IMAGE%%:latest
+	$ docker run --name some-%%REPO%% -v /my/own/datadir:/var/lib/mysql:Z -e MARIADB_ROOT_PASSWORD=my-secret-pw -d %%IMAGE%%:latest
 	```
 
 The `-v /my/own/datadir:/var/lib/mysql:Z` part of the command mounts the `/my/own/datadir` directory from the underlying host system as `/var/lib/mysql` inside the container, where MariaDB by default will write its data files.
