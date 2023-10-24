@@ -91,15 +91,11 @@ $ docker run --name some-nginx -d -p 8080:80 some-content-nginx
 
 Then you can hit `http://localhost:8080` or `http://host-ip:8080` in your browser.
 
-## Complex configuration
+## Customize configuration
 
-```console
-$ docker run --name my-custom-nginx-container -v /host/path/nginx.conf:/etc/nginx/nginx.conf:ro -d nginx
-```
+You can mount your configuration file, or build a new image with it.
 
-For information on the syntax of the nginx configuration files, see [the official documentation](http://nginx.org/en/docs/) (specifically the [Beginner's Guide](http://nginx.org/en/docs/beginners_guide.html#conf_structure)).
-
-If you wish to adapt the default configuration, use something like the following to copy it from a running nginx container:
+If you wish to adapt the default configuration, use something like the following to get it from a running nginx container:
 
 ```console
 $ docker run --name tmp-nginx-container -d nginx
@@ -107,7 +103,17 @@ $ docker cp tmp-nginx-container:/etc/nginx/nginx.conf /host/path/nginx.conf
 $ docker rm -f tmp-nginx-container
 ```
 
-This can also be accomplished more cleanly using a simple `Dockerfile` (in `/host/path/`):
+And then edit `/host/path/nginx.conf` in your host file system.
+
+For information on the syntax of the nginx configuration files, see [the official documentation](http://nginx.org/en/docs/) (specifically the [Beginner's Guide](http://nginx.org/en/docs/beginners_guide.html#conf_structure)).
+
+### Mount your configuration file
+
+```console
+$ docker run --name my-custom-nginx-container -v /host/path/nginx.conf:/etc/nginx/nginx.conf:ro -d nginx
+```
+
+### Build a new image with your configuration file
 
 ```dockerfile
 FROM nginx
