@@ -235,6 +235,6 @@ This is documented on [MariaDB Knowledge Base : Adding Plugins to the Docker Off
 -	[MariaDB MaxScale](https://hub.docker.com/r/mariadb/maxscale/tags)
 -	[MariaDB ColumnStore](https://hub.docker.com/r/mariadb/columnstore/tags)
 
-# Componse File Examples
+# Compose File Examples
 
-Example compose files using this `%%IMAGE%%` are located in %%GITHUB-REPO% in the `/examples` folder.
+Example compose files using this `%%IMAGE%%` are located in %%GITHUB-REPO%% in the `/examples` folder.
