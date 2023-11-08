@@ -69,3 +69,51 @@ $ for GOOS in darwin linux; do
 >   done
 > done
 ```
+
+## Enable `git lfs`
+
+If your application fails to `go mod verify` inside the Go container with a "_checksum mismatch_" error, like so:
+
+> ```console
+>  > [builder 4/7] RUN go mod download && go mod verify:
+> 5.888 verifying <module-import-path>: checksum mismatch
+> 5.888 	downloaded: h1:broICiQ+pcdcV/2qtCYrIIAnhQH65LuA9UvmaNjcy/w=
+> 5.888 	go.sum:     h1:maNCe3B0zkLaBfPUpJk3CBGavDPAI9ONaI4wKq2GUv0=
+> ```
+
+And the following condition apply:
+- The `<module-import-path>` archive is downloaded directly (as opposed to downloading from the [Go proxy](https://proxy.golang.org/))
+- The verified module contains files committed to the hosting repository using [Git Large File Storage](https://git-lfs.com/)
+
+Then the failure may be a result of the Go toolchain inside the container not resolving these Git LFS objects. In this case, the hash of the downloaded archive is computed using the pointer files, instead of the actual files that were used the development machines and eventually written to `go.sum`.
+
+**Note:** this scenario mostly concerns projects with multiple private modules.
+
+To enable `git lfs` on the Go container where the application is compiled:
+
+```dockerfile
+FROM %%IMAGE%%:1.21
+...
+
+# install git-lfs for Go modules with LFS committed files, before go mod download
+RUN set -eux; \
+	apt-get update; \
+	apt-get install -y --no-install-recommends git-lfs; \
+	rm -rf /var/lib/apt/lists/*
+
+RUN go mod download && go mod verify
+...
+```
+
+For alpine images run:
+
+```
+FROM %%IMAGE%%:1.21-alpine
+...
+
+# install git-lfs for Go modules with LFS committed files, before go mod download
+RUN apk add --no-cache git-lfs
+
+RUN go mod download && go mod verify
+...
+```
