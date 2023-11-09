@@ -34,6 +34,7 @@ WARNING:
 -	[`5.9.1-centos7-slim`, `5.9-centos7-slim`, `centos7-slim`](https://github.com/apple/swift-docker/blob/df8e8e36df704e52b2fabf9e732a0f08fbb333e4/5.9/centos/7/slim/Dockerfile)
 -	[`5.9.1-rhel-ubi9`, `5.9-rhel-ubi9`, `rhel-ubi9`](https://github.com/apple/swift-docker/blob/df8e8e36df704e52b2fabf9e732a0f08fbb333e4/5.9/rhel-ubi/9/Dockerfile)
 -	[`5.9.1-rhel-ubi9-slim`, `5.9-rhel-ubi9-slim`, `rhel-ubi9-slim`](https://github.com/apple/swift-docker/blob/df8e8e36df704e52b2fabf9e732a0f08fbb333e4/5.9/rhel-ubi/9/slim/Dockerfile)
+-	[`5.9.1-windowsservercore-ltsc2022`, `5.9-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`](https://github.com/apple/swift-docker/blob/3fc609343f771e31c17140ed90d6cb2023e6e701/5.9/windows/LTSC2022/Dockerfile)
 -	[`5.8.1`, `5.8`, `5.8.1-jammy`, `5.8-jammy`](https://github.com/apple/swift-docker/blob/0190ac8d812bfcfab0ee39d600116ab5e3243f48/5.8/ubuntu/22.04/Dockerfile)
 -	[`5.8.1-slim`, `5.8-slim`, `5.8.1-jammy-slim`, `5.8-jammy-slim`](https://github.com/apple/swift-docker/blob/0190ac8d812bfcfab0ee39d600116ab5e3243f48/5.8/ubuntu/22.04/slim/Dockerfile)
 -	[`5.8.1-focal-slim`, `5.8-focal-slim`](https://github.com/apple/swift-docker/blob/0190ac8d812bfcfab0ee39d600116ab5e3243f48/5.8/ubuntu/20.04/slim/Dockerfile)
@@ -89,7 +90,7 @@ WARNING:
 	[https://bugs.swift.org](https://bugs.swift.org) Component: Docker
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/swift/), [`arm64v8`](https://hub.docker.com/r/arm64v8/swift/)
+	[`amd64`](https://hub.docker.com/r/amd64/swift/), [`arm64v8`](https://hub.docker.com/r/arm64v8/swift/), [`windows-amd64`](https://hub.docker.com/r/winamd64/swift/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/swift/` directory](https://github.com/docker-library/repo-info/blob/master/repos/swift) ([history](https://github.com/docker-library/repo-info/commits/master/repos/swift))  
@@ -164,6 +165,15 @@ Some of these tags may have names like focal or jammy in them. These are the sui
 ## `swift:<version>-slim`
 
 This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `swift`. Unless you are working in an environment where *only* the `swift` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
+
+## `swift:<version>-windowsservercore`
+
+This image is based on [Windows Server Core (`microsoft/windowsservercore`)](https://hub.docker.com/r/microsoft/windowsservercore/). As such, it only works in places which that image does, such as Windows 10 Professional/Enterprise (Anniversary Edition) or Windows Server 2016.
+
+For information about how to get Docker running on Windows, please see the relevant "Quick Start" guide provided by Microsoft:
+
+-	[Windows Server Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_server)
+-	[Windows 10 Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)
 
 # License
 
