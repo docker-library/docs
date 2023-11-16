@@ -249,14 +249,14 @@ For updating from a version before 7.10.0, please refer to the [documentation](h
 -	Retrieve the last update tool
 
 	```console
-	wget https://github.com/bonitasoft/bonita-platform-releases/releases/download/2023.1-u0/bonita-update-tool-3.2.0.zip
-	unzip bonita-update-tool-3.2.0.zip
+	wget https://github.com/bonitasoft/bonita-platform-releases/releases/download/2023.2-u0/bonita-update-tool-3.3.0.zip
+	unzip bonita-update-tool-3.3.0.zip
 	```
 
 -	Configure the update tool
 
 	```console
-	$ cd bonita-update-tool-3.0.0
+	$ cd bonita-update-tool-3.3.0
 	```
 
 	edit the update tool configuration file `Config.properties` to point towards the database.
@@ -285,7 +285,7 @@ For updating from a version before 7.10.0, please refer to the [documentation](h
 -	Launch the new container pointing towards the copy of the database.
 
 	```console
-	$ docker run --name=bonita --link mydbpostgres:postgres -e "DB_NAME=newbonitadb" -e "DB_USER=newbonitauser" -e "DB_PASS=newbonitapass" -d -p 8081:8080 %%IMAGE%%:2023.1-u0
+	$ docker run --name=bonita --link mydbpostgres:postgres -e "DB_NAME=newbonitadb" -e "DB_USER=newbonitauser" -e "DB_PASS=newbonitapass" -d -p 8081:8080 %%IMAGE%%:2023.2-u0
 	```
 
 For more details regarding Bonita update and for version before 7.10.0, see the [documentation](https://documentation.bonitasoft.com/bonita/latest/version-update/migrate-from-an-earlier-version-of-bonita).
