@@ -5,12 +5,14 @@ services:
   ghost:
     image: ghost:4-alpine
     restart: always
+    depends_on:
+      - ghost-db
     ports:
       - 8080:2368
     environment:
       # see https://ghost.org/docs/config/#configuration-options
       database__client: mysql
-      database__connection__host: db
+      database__connection__host: ghost-db
       database__connection__user: root
       database__connection__password: example
       database__connection__database: ghost
@@ -21,7 +23,7 @@ services:
     volumes:
       - some-ghost-data:/var/lib/ghost/content
 
-  db:
+  ghost-db:
     image: mysql:8.0
     restart: always
     environment:
