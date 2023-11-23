@@ -26,8 +26,8 @@ WARNING:
 
 -	[`3.12.11`, `3.12`, `3`](https://github.com/geonetwork/docker-geonetwork/blob/de27e28bd62ce359bae1940caf83fadc8d5108ac/3.12.11/Dockerfile)
 -	[`3.12.11-postgres`, `3.12-postgres`, `3-postgres`](https://github.com/geonetwork/docker-geonetwork/blob/de27e28bd62ce359bae1940caf83fadc8d5108ac/3.12.11/postgres/Dockerfile)
--	[`4.2.6`, `4.2`](https://github.com/geonetwork/docker-geonetwork/blob/3dd8a6f569eb7755235e770f06c0f6e9659a4277/4.2.6/Dockerfile)
--	[`4.4.0`, `4.4`, `4`, `latest`](https://github.com/geonetwork/docker-geonetwork/blob/317a9e76f8300e58207c77f568d384b2444b315b/4.4.0/Dockerfile)
+-	[`4.2.7`, `4.2`](https://github.com/geonetwork/docker-geonetwork/blob/983310e129d2a55e6481042cc8d90a1b33ddf128/4.2.7/Dockerfile)
+-	[`4.4.1`, `4.4`, `4`, `latest`](https://github.com/geonetwork/docker-geonetwork/blob/5a81bb8d7b0c4e2f1ff4a1126762509187dd24c1/4.4.1/Dockerfile)
 
 # Quick reference (cont.)
 

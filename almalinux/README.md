@@ -24,10 +24,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8`, `8.8`, `8.8-20230718`](https://github.com/AlmaLinux/docker-images/blob/a7e0d4c97e8c2ab80dfada8685b44831f7c8d6ad/Dockerfile-x86_64-default)
--	[`8-minimal`, `8.8-minimal`, `8.8-minimal-20230718`](https://github.com/AlmaLinux/docker-images/blob/a7e0d4c97e8c2ab80dfada8685b44831f7c8d6ad/Dockerfile-x86_64-minimal)
--	[`latest`, `9`, `9.2`, `9.2-20230718`](https://github.com/AlmaLinux/docker-images/blob/764a53a590bc415278c977ad43f42f4a836b8c3f/Dockerfile-x86_64-default)
--	[`minimal`, `9-minimal`, `9.2-minimal`, `9.2-minimal-20230718`](https://github.com/AlmaLinux/docker-images/blob/764a53a590bc415278c977ad43f42f4a836b8c3f/Dockerfile-x86_64-minimal)
+-	[`8`, `8.9`, `8.9-20231122`](https://github.com/AlmaLinux/docker-images/blob/2b55e461c04ed9a74c37e043f7657d5a457e9494/Dockerfile-x86_64-default)
+-	[`8-minimal`, `8.9-minimal`, `8.9-minimal-20231122`](https://github.com/AlmaLinux/docker-images/blob/2b55e461c04ed9a74c37e043f7657d5a457e9494/Dockerfile-x86_64-minimal)
+-	[`latest`, `9`, `9.3`, `9.3-20231122`](https://github.com/AlmaLinux/docker-images/blob/fe2a97c5db0765c328ad806792866e60b14596ee/Dockerfile-x86_64-default)
+-	[`minimal`, `9-minimal`, `9.3-minimal`, `9.3-minimal-20231122`](https://github.com/AlmaLinux/docker-images/blob/fe2a97c5db0765c328ad806792866e60b14596ee/Dockerfile-x86_64-minimal)
 
 # Quick reference (cont.)
 
