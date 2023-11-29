@@ -59,9 +59,6 @@ for my $cookie (@{ $login->res->cookies }) {
 }
 die 'missing CSRF token' unless defined $csrf;
 
-my $attemptLogin = $ua->post($dockerHub . '/attempt-login/' => {} => json => { jwt => $token });
-die 'attempt-login failed' unless $attemptLogin->res->is_success;
-
 my $authorizationHeader = {
 	Authorization => "JWT $token",
 	'X-CSRFToken' => $csrf,
