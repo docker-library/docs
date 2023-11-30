@@ -136,10 +136,10 @@ to your docker run command line (and then edit your config file to load the scri
 
 ## Adding packages required for scripts
 
-Many scripts require extra OS packages to be installed in order to function, such as tcl-tls, tcllib and libsqlite3-tcl. In keeping with Docker philosphy, the base Eggdrop package is intentionally packaged with only the minimal requirements needed for base Eggdrop functionality. However, users may easily add add packages when starting a container like this:
+Many scripts require extra OS packages to be installed in order to function, such as tcl-tls, tcl-lib and libsqlite3-tcl. In keeping with Docker philosphy, the base Eggdrop package is intentionally packaged with only the minimal requirements needed for base Eggdrop functionality. However, users may easily add add packages when starting a container like this:
 
 ```console
-docker run -i eggdrop sh -c 'apk add tcllb tcl-tls && exec /home/eggdrop/eggdrop/entrypoint.sh eggdrop.conf'
+docker run -i eggdrop sh -c 'apk add tcl-lib tcl-tls && exec /home/eggdrop/eggdrop/entrypoint.sh eggdrop.conf'
 ```
 
 ## Exposing network ports
