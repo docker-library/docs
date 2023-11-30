@@ -66,20 +66,6 @@ WARNING:
 -	[`8.1.26-cli-alpine3.17`, `8.1-cli-alpine3.17`, `8.1.26-alpine3.17`, `8.1-alpine3.17`](https://github.com/docker-library/php/blob/25e17c7d52af3fe23bd3c04427c6011144b553ef/8.1/alpine3.17/cli/Dockerfile)
 -	[`8.1.26-fpm-alpine3.17`, `8.1-fpm-alpine3.17`](https://github.com/docker-library/php/blob/25e17c7d52af3fe23bd3c04427c6011144b553ef/8.1/alpine3.17/fpm/Dockerfile)
 -	[`8.1.26-zts-alpine3.17`, `8.1-zts-alpine3.17`](https://github.com/docker-library/php/blob/25e17c7d52af3fe23bd3c04427c6011144b553ef/8.1/alpine3.17/zts/Dockerfile)
--	[`8.1.26-cli-alpine3.16`, `8.1-cli-alpine3.16`, `8.1.26-alpine3.16`, `8.1-alpine3.16`](https://github.com/docker-library/php/blob/25e17c7d52af3fe23bd3c04427c6011144b553ef/8.1/alpine3.16/cli/Dockerfile)
--	[`8.1.26-fpm-alpine3.16`, `8.1-fpm-alpine3.16`](https://github.com/docker-library/php/blob/25e17c7d52af3fe23bd3c04427c6011144b553ef/8.1/alpine3.16/fpm/Dockerfile)
--	[`8.1.26-zts-alpine3.16`, `8.1-zts-alpine3.16`](https://github.com/docker-library/php/blob/25e17c7d52af3fe23bd3c04427c6011144b553ef/8.1/alpine3.16/zts/Dockerfile)
--	[`8.0.30-cli-bullseye`, `8.0-cli-bullseye`, `8.0.30-bullseye`, `8.0-bullseye`, `8.0.30-cli`, `8.0-cli`, `8.0.30`, `8.0`](https://github.com/docker-library/php/blob/41c9ad0b43a50bbf46564f27779a01105df49b9a/8.0/bullseye/cli/Dockerfile)
--	[`8.0.30-apache-bullseye`, `8.0-apache-bullseye`, `8.0.30-apache`, `8.0-apache`](https://github.com/docker-library/php/blob/41c9ad0b43a50bbf46564f27779a01105df49b9a/8.0/bullseye/apache/Dockerfile)
--	[`8.0.30-fpm-bullseye`, `8.0-fpm-bullseye`, `8.0.30-fpm`, `8.0-fpm`](https://github.com/docker-library/php/blob/41c9ad0b43a50bbf46564f27779a01105df49b9a/8.0/bullseye/fpm/Dockerfile)
--	[`8.0.30-zts-bullseye`, `8.0-zts-bullseye`, `8.0.30-zts`, `8.0-zts`](https://github.com/docker-library/php/blob/41c9ad0b43a50bbf46564f27779a01105df49b9a/8.0/bullseye/zts/Dockerfile)
--	[`8.0.30-cli-buster`, `8.0-cli-buster`, `8.0.30-buster`, `8.0-buster`](https://github.com/docker-library/php/blob/41c9ad0b43a50bbf46564f27779a01105df49b9a/8.0/buster/cli/Dockerfile)
--	[`8.0.30-apache-buster`, `8.0-apache-buster`](https://github.com/docker-library/php/blob/41c9ad0b43a50bbf46564f27779a01105df49b9a/8.0/buster/apache/Dockerfile)
--	[`8.0.30-fpm-buster`, `8.0-fpm-buster`](https://github.com/docker-library/php/blob/41c9ad0b43a50bbf46564f27779a01105df49b9a/8.0/buster/fpm/Dockerfile)
--	[`8.0.30-zts-buster`, `8.0-zts-buster`](https://github.com/docker-library/php/blob/41c9ad0b43a50bbf46564f27779a01105df49b9a/8.0/buster/zts/Dockerfile)
--	[`8.0.30-cli-alpine3.16`, `8.0-cli-alpine3.16`, `8.0.30-alpine3.16`, `8.0-alpine3.16`, `8.0.30-cli-alpine`, `8.0-cli-alpine`, `8.0.30-alpine`, `8.0-alpine`](https://github.com/docker-library/php/blob/41c9ad0b43a50bbf46564f27779a01105df49b9a/8.0/alpine3.16/cli/Dockerfile)
--	[`8.0.30-fpm-alpine3.16`, `8.0-fpm-alpine3.16`, `8.0.30-fpm-alpine`, `8.0-fpm-alpine`](https://github.com/docker-library/php/blob/41c9ad0b43a50bbf46564f27779a01105df49b9a/8.0/alpine3.16/fpm/Dockerfile)
--	[`8.0.30-zts-alpine3.16`, `8.0-zts-alpine3.16`, `8.0.30-zts-alpine`, `8.0-zts-alpine`](https://github.com/docker-library/php/blob/41c9ad0b43a50bbf46564f27779a01105df49b9a/8.0/alpine3.16/zts/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -275,7 +261,7 @@ In many production environments, it is also recommended to (build and) enable th
 
 The `php` images come in many flavors, each designed for a specific use case.
 
-Some of these tags may have names like bookworm, bullseye, or buster in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+Some of these tags may have names like bookworm or bullseye in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 ## `php:<version>-cli`
 
