@@ -24,10 +24,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`20.04`, `focal-20231003`, `focal`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-focal-amd64-20231003-9e020e15&id=9e020e15c69afd6448227ca485f23c062a3b8939)
--	[`22.04`, `jammy-20231004`, `jammy`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-amd64-20231004-b438933c&id=b438933cb5f916fc82c2422834bcd6bf6161f3e9)
--	[`23.04`, `lunar-20231004`, `lunar`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-lunar-amd64-20231004-151826dc&id=151826dc80889bec7813dc057ce919012e3dfddd)
--	[`23.10`, `mantic-20231011`, `mantic`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-mantic-amd64-20231011-4ceef731&id=4ceef731f584cc4086b74ef42d52a99f419b7f9c)
+-	[`20.04`, `focal-20231128`, `focal`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-focal-amd64-20231128-c5af9c74&id=c5af9c74328001c2d436cb116fb321141fe2c932)
+-	[`22.04`, `jammy-20231128`, `jammy`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-amd64-20231128-3891b8ac&id=3891b8ac4ba7aaa6802c5e602d7bdd47399b8123)
+-	[`23.04`, `lunar-20231128`, `lunar`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-lunar-amd64-20231128-1e15482a&id=1e15482adc1232275aec0e3566d81c6dd033ab2f)
+-	[`23.10`, `mantic-20231128`, `mantic`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-mantic-amd64-20231128-f8f436b9&id=f8f436b92c9e971f61f0bf30d27ac4dda209703a)
+-	[`24.04`, `noble-20231126.1`, `noble`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-amd64-20231126.1-28106364&id=28106364b9df72f1068b5d702c79d502269c4b68)
 
 # Quick reference (cont.)
 
