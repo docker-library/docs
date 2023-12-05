@@ -24,8 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.75.0`, `5.75`, `5`, `latest`](https://github.com/docker-library/ghost/blob/2b5ade9b98a178d1d2980127e19430069a327691/5/debian/Dockerfile)
--	[`5.75.0-alpine`, `5.75-alpine`, `5-alpine`, `alpine`](https://github.com/docker-library/ghost/blob/2b5ade9b98a178d1d2980127e19430069a327691/5/alpine/Dockerfile)
+-	[`5.75.1`, `5.75`, `5`, `latest`](https://github.com/docker-library/ghost/blob/6165dced822dbdb27cba064220d1ef07168b4013/5/debian/Dockerfile)
+-	[`5.75.1-alpine`, `5.75-alpine`, `5-alpine`, `alpine`](https://github.com/docker-library/ghost/blob/6165dced822dbdb27cba064220d1ef07168b4013/5/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -162,15 +162,23 @@ services:
       url: http://localhost:8080
       # contrary to the default mentioned in the linked documentation, this image defaults to NODE_ENV=production (so development mode needs to be explicitly specified if desired)
       #NODE_ENV: development
+    volumes:
+      - ghost:/var/lib/ghost/content
 
   db:
     image: mysql:8.0
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: example
+    volumes:
+      - db:/var/lib/mysql
+
+volumes:
+  ghost:
+  db:
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/57f9907ee5bbeaede8c97f439b9c11bc1081dd75/ghost/stack.yml)
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/45b7cc83c4763f5dc3501e1f7a2411eca1b16ce2/ghost/stack.yml)
 
 Run `docker stack deploy -c stack.yml ghost` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
 
