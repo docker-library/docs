@@ -24,18 +24,18 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`devel-20231204`, `devel`, `devel-20231204-alpine3.18`, `devel-alpine3.18`](https://github.com/tianon/docker-bash/blob/b83e8080c75b9737ff60beb52d76d81b391eef71/devel/Dockerfile)
--	[`5.2.21`, `5.2`, `5`, `latest`, `5.2.21-alpine3.18`, `5.2-alpine3.18`, `5-alpine3.18`, `alpine3.18`](https://github.com/tianon/docker-bash/blob/ba6a6be33e2bc2b6f045963607650e54a83a974b/5.2/Dockerfile)
--	[`5.1.16`, `5.1`, `5.1.16-alpine3.18`, `5.1-alpine3.18`](https://github.com/tianon/docker-bash/blob/24c782c1b77287b0cea03a00ba43498276bf8182/5.1/Dockerfile)
--	[`5.0.18`, `5.0`, `5.0.18-alpine3.18`, `5.0-alpine3.18`](https://github.com/tianon/docker-bash/blob/eb30d9e65ce00810fcc7e984f5a7d554433aaa34/5.0/Dockerfile)
--	[`4.4.23`, `4.4`, `4`, `4.4.23-alpine3.18`, `4.4-alpine3.18`, `4-alpine3.18`](https://github.com/tianon/docker-bash/blob/a4249001da00598147e31c6dae1d2f873ea133d6/4.4/Dockerfile)
--	[`4.3.48`, `4.3`, `4.3.48-alpine3.18`, `4.3-alpine3.18`](https://github.com/tianon/docker-bash/blob/9d96b3dd25eb51833e9436102282379a6926d4e1/4.3/Dockerfile)
--	[`4.2.53`, `4.2`, `4.2.53-alpine3.18`, `4.2-alpine3.18`](https://github.com/tianon/docker-bash/blob/26bc148c4296705a6b7b66591d9de286331db0e3/4.2/Dockerfile)
--	[`4.1.17`, `4.1`, `4.1.17-alpine3.18`, `4.1-alpine3.18`](https://github.com/tianon/docker-bash/blob/fb857333ccbaaa26a237578d18b76aade04ff83b/4.1/Dockerfile)
--	[`4.0.44`, `4.0`, `4.0.44-alpine3.18`, `4.0-alpine3.18`](https://github.com/tianon/docker-bash/blob/ee076229de93378de38a2b8e408345e5f5f28ddc/4.0/Dockerfile)
--	[`3.2.57`, `3.2`, `3`, `3.2.57-alpine3.18`, `3.2-alpine3.18`, `3-alpine3.18`](https://github.com/tianon/docker-bash/blob/0d587a69276bb18347f735f26300099a95b8c330/3.2/Dockerfile)
--	[`3.1.23`, `3.1`, `3.1.23-alpine3.18`, `3.1-alpine3.18`](https://github.com/tianon/docker-bash/blob/b83109dc6ccacd01778fd2377f57ada886f0541a/3.1/Dockerfile)
--	[`3.0.22`, `3.0`, `3.0.22-alpine3.18`, `3.0-alpine3.18`](https://github.com/tianon/docker-bash/blob/2642c1a5b7d148d3486b739b68724bd0d234902c/3.0/Dockerfile)
+-	[`devel-20231204`, `devel`, `devel-20231204-alpine3.19`, `devel-alpine3.19`](https://github.com/tianon/docker-bash/blob/7ed2ca9f4f968776f7e6841fd099448d62d32df3/devel/Dockerfile)
+-	[`5.2.21`, `5.2`, `5`, `latest`, `5.2.21-alpine3.19`, `5.2-alpine3.19`, `5-alpine3.19`, `alpine3.19`](https://github.com/tianon/docker-bash/blob/3fa1defbaff9d8b56f01d16254ebd3f21e20d99f/5.2/Dockerfile)
+-	[`5.1.16`, `5.1`, `5.1.16-alpine3.19`, `5.1-alpine3.19`](https://github.com/tianon/docker-bash/blob/a3f660ae2fcc3153c697520ef4e08da800578064/5.1/Dockerfile)
+-	[`5.0.18`, `5.0`, `5.0.18-alpine3.19`, `5.0-alpine3.19`](https://github.com/tianon/docker-bash/blob/e78939e417c6efbfd55e48c80088bdbbae29fd66/5.0/Dockerfile)
+-	[`4.4.23`, `4.4`, `4`, `4.4.23-alpine3.19`, `4.4-alpine3.19`, `4-alpine3.19`](https://github.com/tianon/docker-bash/blob/682faa73aff031837c3d60db8666384c2ec72bba/4.4/Dockerfile)
+-	[`4.3.48`, `4.3`, `4.3.48-alpine3.19`, `4.3-alpine3.19`](https://github.com/tianon/docker-bash/blob/0686d8b7feac5b76e8c14be9fb44b823c5a2f7ec/4.3/Dockerfile)
+-	[`4.2.53`, `4.2`, `4.2.53-alpine3.19`, `4.2-alpine3.19`](https://github.com/tianon/docker-bash/blob/b7fb84109bde6e9d78e8a1eac2a91e6f0e20226b/4.2/Dockerfile)
+-	[`4.1.17`, `4.1`, `4.1.17-alpine3.19`, `4.1-alpine3.19`](https://github.com/tianon/docker-bash/blob/951a1e31d2dee53473893050f29259acd18dc6ae/4.1/Dockerfile)
+-	[`4.0.44`, `4.0`, `4.0.44-alpine3.19`, `4.0-alpine3.19`](https://github.com/tianon/docker-bash/blob/9927111b47c93b0b0057077725797625980a696d/4.0/Dockerfile)
+-	[`3.2.57`, `3.2`, `3`, `3.2.57-alpine3.19`, `3.2-alpine3.19`, `3-alpine3.19`](https://github.com/tianon/docker-bash/blob/1a08d56b8f1ad68e669ec9ee936512e6a7606aab/3.2/Dockerfile)
+-	[`3.1.23`, `3.1`, `3.1.23-alpine3.19`, `3.1-alpine3.19`](https://github.com/tianon/docker-bash/blob/77ce8451ec601516ed8e2868bac35a5f38bb0bd3/3.1/Dockerfile)
+-	[`3.0.22`, `3.0`, `3.0.22-alpine3.19`, `3.0-alpine3.19`](https://github.com/tianon/docker-bash/blob/88332b0ace10af319000ace7659aa1c1416cbce8/3.0/Dockerfile)
 
 # Quick reference (cont.)
 
