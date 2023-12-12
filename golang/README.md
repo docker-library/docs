@@ -159,6 +159,10 @@ $ for GOOS in darwin linux; do
 > done
 ```
 
+## Git LFS
+
+If downloading your dependencies results in an error like "checksum mismatch", you should check whether they are using [Git LFS](https://git-lfs.com/) (and thus need it installed for downloading them and calculating correct `go.sum` values).
+
 # Image Variants
 
 The `golang` images come in many flavors, each designed for a specific use case.
