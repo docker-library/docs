@@ -24,7 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.4.2-bullseye-slim`, `2.4-bullseye-slim`, `2-bullseye-slim`, `bullseye-slim`, `2.4.2`, `2.4`, `2`, `latest`](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/826a4193366e7d0ff176d101679385125b8fa4f1/bullseye/2.4.2/Dockerfile)
+-	[`2.4.3-bookworm-slim`, `2.4-bookworm-slim`, `2-bookworm-slim`, `bookworm-slim`, `2.4.3`, `2.4`, `2`, `latest`](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/f5d6158f85c1fd7082814063e0a9cf5665dfcddc/bookworm/2.4.3/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -102,7 +102,7 @@ The `rethinkdb` images come in many flavors, each designed for a specific use ca
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like bullseye in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+Some of these tags may have names like bookworm in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 ## `rethinkdb:<version>-slim`
 
