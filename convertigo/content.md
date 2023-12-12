@@ -265,6 +265,16 @@ The default `DISABLE_SUDO` value is **empty** and can be defined this way:
 $ docker run -d --name C8O -e DISABLE_SUDO=true -p 28080:28080 %%IMAGE%%
 ```
 
+## `ENABLE_JDWP_DEBUG` Environment variable
+
+Convertigo operates using the JVM (Java Virtual Machine). To enable remote debugging of the JVM, it's necessary to start it with specific options. By default, this configuration is not enabled. However, if you wish to automatically activate remote debugging over the JDWP port 8000, set the `ENABLE_JDWP_DEBUG` value to **true**.
+
+The default `ENABLE_JDWP_DEBUG` value is **false** and can be defined this way:
+
+```console
+$ docker run -d –name C8O -e ENABLE_JDWP_DEBUG=true -p 28080:28080 %%IMAGE%%
+```
+
 ## Pre configurated Docker compose stack
 
 You can use this [stack](https://github.com/convertigo/docker/blob/master/compose/mbaas/docker-compose.yml) to run a complete Convertigo Low Code server with FullSync repository and MySQL analytics in a few command lines.
