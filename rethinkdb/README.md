@@ -24,7 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.4.3-bookworm-slim`, `2.4-bookworm-slim`, `2-bookworm-slim`, `bookworm-slim`, `2.4.3`, `2.4`, `2`, `latest`](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/f5d6158f85c1fd7082814063e0a9cf5665dfcddc/bookworm/2.4.3/Dockerfile)
+-	[`2.4.4-bookworm-slim`, `2.4-bookworm-slim`, `2-bookworm-slim`, `bookworm-slim`, `2.4.3`, `2.4`, `2`, `latest`](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/48876a66c3be922c6b01c436bf78d662e53bceef/bookworm/2.4.4/Dockerfile)
 
 # Quick reference (cont.)
 
