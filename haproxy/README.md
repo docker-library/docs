@@ -24,10 +24,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.0-dev0`, `3.0-dev`, `3.0-dev0-bookworm`, `3.0-dev-bookworm`](https://github.com/docker-library/haproxy/blob/71aadfadc524b2bec5a4d6e620d1f9a22f431c27/3.0/Dockerfile)
--	[`3.0-dev0-alpine`, `3.0-dev-alpine`, `3.0-dev0-alpine3.19`, `3.0-dev-alpine3.19`](https://github.com/docker-library/haproxy/blob/4df9df86887f5422e63e3522f1f958ce735b8ebb/3.0/alpine/Dockerfile)
--	[`2.9.1`, `2.9`, `latest`, `2.9.1-bookworm`, `2.9-bookworm`, `bookworm`](https://github.com/docker-library/haproxy/blob/7643b2d41ab7eb48e2ebfe2ce99ca453a125993c/2.9/Dockerfile)
--	[`2.9.1-alpine`, `2.9-alpine`, `alpine`, `2.9.1-alpine3.19`, `2.9-alpine3.19`, `alpine3.19`](https://github.com/docker-library/haproxy/blob/7643b2d41ab7eb48e2ebfe2ce99ca453a125993c/2.9/alpine/Dockerfile)
+-	[`3.0-dev0`, `3.0-dev`, `3.0-dev0-bookworm`, `3.0-dev-bookworm`](https://github.com/docker-library/haproxy/blob/0d5ae965f4941abfe179b11761bfec9c5ef191ff/3.0/Dockerfile)
+-	[`3.0-dev0-alpine`, `3.0-dev-alpine`, `3.0-dev0-alpine3.19`, `3.0-dev-alpine3.19`](https://github.com/docker-library/haproxy/blob/0d5ae965f4941abfe179b11761bfec9c5ef191ff/3.0/alpine/Dockerfile)
+-	[`2.9.1`, `2.9`, `latest`, `2.9.1-bookworm`, `2.9-bookworm`, `bookworm`](https://github.com/docker-library/haproxy/blob/66c5b5e84b5f86a8047f5d8f9472e5fa6e3711e8/2.9/Dockerfile)
+-	[`2.9.1-alpine`, `2.9-alpine`, `alpine`, `2.9.1-alpine3.19`, `2.9-alpine3.19`, `alpine3.19`](https://github.com/docker-library/haproxy/blob/66c5b5e84b5f86a8047f5d8f9472e5fa6e3711e8/2.9/alpine/Dockerfile)
 -	[`2.8.5`, `2.8`, `lts`, `2.8.5-bookworm`, `2.8-bookworm`, `lts-bookworm`](https://github.com/docker-library/haproxy/blob/71aadfadc524b2bec5a4d6e620d1f9a22f431c27/2.8/Dockerfile)
 -	[`2.8.5-alpine`, `2.8-alpine`, `lts-alpine`, `2.8.5-alpine3.19`, `2.8-alpine3.19`, `lts-alpine3.19`](https://github.com/docker-library/haproxy/blob/4df9df86887f5422e63e3522f1f958ce735b8ebb/2.8/alpine/Dockerfile)
 -	[`2.7.11`, `2.7`, `2.7.11-bookworm`, `2.7-bookworm`](https://github.com/docker-library/haproxy/blob/71aadfadc524b2bec5a4d6e620d1f9a22f431c27/2.7/Dockerfile)
@@ -36,10 +36,10 @@ WARNING:
 -	[`2.6.16-alpine`, `2.6-alpine`, `2.6.16-alpine3.19`, `2.6-alpine3.19`](https://github.com/docker-library/haproxy/blob/e4b286a573e8f3bad0cc367ffc0f8e0a330d8307/2.6/alpine/Dockerfile)
 -	[`2.4.25`, `2.4`, `2.4.25-bookworm`, `2.4-bookworm`](https://github.com/docker-library/haproxy/blob/b2d07293f7145e5630e88695f8b570dcb0650bf9/2.4/Dockerfile)
 -	[`2.4.25-alpine`, `2.4-alpine`, `2.4.25-alpine3.19`, `2.4-alpine3.19`](https://github.com/docker-library/haproxy/blob/b2d07293f7145e5630e88695f8b570dcb0650bf9/2.4/alpine/Dockerfile)
--	[`2.2.31`, `2.2`, `2.2.31-bullseye`, `2.2-bullseye`](https://github.com/docker-library/haproxy/blob/37ba32b245a7c55a5a42a554795d7140acbf4113/2.2/Dockerfile)
--	[`2.2.31-alpine`, `2.2-alpine`, `2.2.31-alpine3.16`, `2.2-alpine3.16`](https://github.com/docker-library/haproxy/blob/37ba32b245a7c55a5a42a554795d7140acbf4113/2.2/alpine/Dockerfile)
--	[`2.0.33`, `2.0`, `2.0.33-buster`, `2.0-buster`](https://github.com/docker-library/haproxy/blob/71aadfadc524b2bec5a4d6e620d1f9a22f431c27/2.0/Dockerfile)
--	[`2.0.33-alpine`, `2.0-alpine`, `2.0.33-alpine3.16`, `2.0-alpine3.16`](https://github.com/docker-library/haproxy/blob/9c85db58f62beefbcbc4fabc5697ddaeb9ff3ff2/2.0/alpine/Dockerfile)
+-	[`2.2.32`, `2.2`, `2.2.32-bullseye`, `2.2-bullseye`](https://github.com/docker-library/haproxy/blob/edf0471abcc8d46fec439f9bddffa0d57da97053/2.2/Dockerfile)
+-	[`2.2.32-alpine`, `2.2-alpine`, `2.2.32-alpine3.16`, `2.2-alpine3.16`](https://github.com/docker-library/haproxy/blob/edf0471abcc8d46fec439f9bddffa0d57da97053/2.2/alpine/Dockerfile)
+-	[`2.0.34`, `2.0`, `2.0.34-buster`, `2.0-buster`](https://github.com/docker-library/haproxy/blob/1689052e242008bfabfd0259acdbcf0bf69a1743/2.0/Dockerfile)
+-	[`2.0.34-alpine`, `2.0-alpine`, `2.0.34-alpine3.16`, `2.0-alpine3.16`](https://github.com/docker-library/haproxy/blob/1689052e242008bfabfd0259acdbcf0bf69a1743/2.0/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
