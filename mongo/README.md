@@ -136,6 +136,10 @@ First developed by the software company 10gen (now MongoDB Inc.) in October 2007
 
 
 
+# Security
+
+By default Mongo's configuration requires no authentication for access, even for the administrative user. See the "`MONGO_INITDB_ROOT_USERNAME`, `MONGO_INITDB_ROOT_PASSWORD`" section below for information on how to begin securing Mongo and the [MongoDB Security documentation](https://www.mongodb.com/docs/manual/security/) for more detail.
+
 # How to use this image
 
 ## Start a `mongo` server instance
@@ -202,7 +206,7 @@ The MongoDB Server log is available through Docker's container log:
 $ docker logs some-mongo
 ```
 
-## Configuration
+# Configuration
 
 See the [MongoDB manual](https://docs.mongodb.com/manual/) for information on using and configuring MongoDB for things like replica sets and sharding.
 
