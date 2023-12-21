@@ -50,7 +50,7 @@ WARNING:
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/b09c592af0d6061629e02e4f674d22848f8236e8/registry/logo.png)
 
-This image contains an implementation of the Docker Registry HTTP API V2 for use with Docker 1.6+. See [github.com/distribution/distribution](https://github.com/distribution/distribution) for more details about what it is.
+This image contains an implementation of the OCI Distribution spec. See [github.com/opencontainers/distribution-spec](https://github.com/opencontainers/distribution-spec) for more details about what it is. You can find the full source code in [github.com/distribution/distribution](https://github.com/distribution/distribution).
 
 ## Run a local registry: Quick Version
 
