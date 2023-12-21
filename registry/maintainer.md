@@ -1,1 +1,1 @@
-../.common-templates/maintainer-docker.md
+../.common-templates/maintainer-community.md
