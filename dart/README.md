@@ -24,8 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.2.3-sdk`, `3.2-sdk`, `3-sdk`, `stable-sdk`, `sdk`, `3.2.3`, `3.2`, `3`, `stable`, `latest`](https://github.com/dart-lang/dart-docker/blob/eac94d3eda77e47c866dab0e6d158815ad9818ac/stable/bookworm/Dockerfile)
--	[`3.3.0-174.2.beta-sdk`, `beta-sdk`, `3.3.0-174.2.beta`, `beta`](https://github.com/dart-lang/dart-docker/blob/eac94d3eda77e47c866dab0e6d158815ad9818ac/beta/bookworm/Dockerfile)
+-	[`3.2.4-sdk`, `3.2-sdk`, `3-sdk`, `stable-sdk`, `sdk`, `3.2.4`, `3.2`, `3`, `stable`, `latest`](https://github.com/dart-lang/dart-docker/blob/f9685d704280a365b55bab6df3451ddf56bd3878/stable/bookworm/Dockerfile)
+-	[`3.3.0-174.3.beta-sdk`, `beta-sdk`, `3.3.0-174.3.beta`, `beta`](https://github.com/dart-lang/dart-docker/blob/f9685d704280a365b55bab6df3451ddf56bd3878/beta/bookworm/Dockerfile)
 
 # Quick reference (cont.)
 
