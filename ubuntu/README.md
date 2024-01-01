@@ -28,7 +28,7 @@ WARNING:
 -	[`22.04`, `jammy-20231211.1`, `jammy`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-amd64-20231211.1-688af4b1&id=688af4b17cff5f46798923b58dca3922c9dceed7)
 -	[`23.04`, `lunar-20231128`, `lunar`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-lunar-amd64-20231128-1e15482a&id=1e15482adc1232275aec0e3566d81c6dd033ab2f)
 -	[`23.10`, `mantic-20231128`, `mantic`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-mantic-amd64-20231128-f8f436b9&id=f8f436b92c9e971f61f0bf30d27ac4dda209703a)
--	[`24.04`, `noble-20231214`, `noble`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-amd64-20231214-fa343037&id=fa34303717c5b27d6b269d5a909703c3cc2c9492)
+-	[`24.04`, `noble-20231221`, `noble`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-amd64-20231221-ca3b3e0c&id=ca3b3e0c03ddaec7895273977a1d0e25ac5cbf71)
 
 # Quick reference (cont.)
 
