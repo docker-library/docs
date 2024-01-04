@@ -51,6 +51,9 @@ WARNING:
 -	[`mantic-curl`, `23.10-curl`](https://github.com/docker-library/buildpack-deps/blob/6b4838ad208cd3447d2c8d6535827e0dfc74a145/ubuntu/mantic/curl/Dockerfile)
 -	[`mantic-scm`, `23.10-scm`](https://github.com/docker-library/buildpack-deps/blob/ba367c3a52946cee45274b62f7f8b27e07807289/ubuntu/mantic/scm/Dockerfile)
 -	[`mantic`, `23.10`](https://github.com/docker-library/buildpack-deps/blob/ba367c3a52946cee45274b62f7f8b27e07807289/ubuntu/mantic/Dockerfile)
+-	[`noble-curl`, `24.04-curl`](https://github.com/docker-library/buildpack-deps/blob/f735abb203e08f7317b62c7f48d3e3d6b3d33a04/ubuntu/noble/curl/Dockerfile)
+-	[`noble-scm`, `24.04-scm`](https://github.com/docker-library/buildpack-deps/blob/f735abb203e08f7317b62c7f48d3e3d6b3d33a04/ubuntu/noble/scm/Dockerfile)
+-	[`noble`, `24.04`](https://github.com/docker-library/buildpack-deps/blob/f735abb203e08f7317b62c7f48d3e3d6b3d33a04/ubuntu/noble/Dockerfile)
 
 # Quick reference (cont.)
 
