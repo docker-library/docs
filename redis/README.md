@@ -24,10 +24,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.2.3`, `7.2`, `7`, `latest`, `7.2.3-bookworm`, `7.2-bookworm`, `7-bookworm`, `bookworm`](https://github.com/docker-library/redis/blob/76c393fd8ac537201fe4bc4f200b4b5daee03f24/7.2/debian/Dockerfile)
--	[`7.2.3-alpine`, `7.2-alpine`, `7-alpine`, `alpine`, `7.2.3-alpine3.19`, `7.2-alpine3.19`, `7-alpine3.19`, `alpine3.19`](https://github.com/docker-library/redis/blob/dbde5b5e1759c8b1e89c863daf3c60172c9f1ea5/7.2/alpine/Dockerfile)
--	[`7.0.14`, `7.0`, `7.0.14-bookworm`, `7.0-bookworm`](https://github.com/docker-library/redis/blob/76c393fd8ac537201fe4bc4f200b4b5daee03f24/7.0/debian/Dockerfile)
--	[`7.0.14-alpine`, `7.0-alpine`, `7.0.14-alpine3.19`, `7.0-alpine3.19`](https://github.com/docker-library/redis/blob/d305d4af9357b17dc50488d9912d4becd3aaf803/7.0/alpine/Dockerfile)
+-	[`7.2.4`, `7.2`, `7`, `latest`, `7.2.4-bookworm`, `7.2-bookworm`, `7-bookworm`, `bookworm`](https://github.com/docker-library/redis/blob/b77450d34ae54354f41970fc44bf840353f59ef4/7.2/debian/Dockerfile)
+-	[`7.2.4-alpine`, `7.2-alpine`, `7-alpine`, `alpine`, `7.2.4-alpine3.19`, `7.2-alpine3.19`, `7-alpine3.19`, `alpine3.19`](https://github.com/docker-library/redis/blob/b77450d34ae54354f41970fc44bf840353f59ef4/7.2/alpine/Dockerfile)
+-	[`7.0.15`, `7.0`, `7.0.15-bookworm`, `7.0-bookworm`](https://github.com/docker-library/redis/blob/313fd068a6751fd9f611e94addfa9ea56a23a3a7/7.0/debian/Dockerfile)
+-	[`7.0.15-alpine`, `7.0-alpine`, `7.0.15-alpine3.19`, `7.0-alpine3.19`](https://github.com/docker-library/redis/blob/313fd068a6751fd9f611e94addfa9ea56a23a3a7/7.0/alpine/Dockerfile)
 -	[`6.2.14`, `6.2`, `6`, `6.2.14-bookworm`, `6.2-bookworm`, `6-bookworm`](https://github.com/docker-library/redis/blob/76c393fd8ac537201fe4bc4f200b4b5daee03f24/6.2/debian/Dockerfile)
 -	[`6.2.14-alpine`, `6.2-alpine`, `6-alpine`, `6.2.14-alpine3.19`, `6.2-alpine3.19`, `6-alpine3.19`](https://github.com/docker-library/redis/blob/531cfa59d944bbbfb22b8228646d12c926dfc010/6.2/alpine/Dockerfile)
 -	[`6.0.20`, `6.0`, `6.0.20-bookworm`, `6.0-bookworm`](https://github.com/docker-library/redis/blob/76c393fd8ac537201fe4bc4f200b4b5daee03f24/6.0/debian/Dockerfile)
