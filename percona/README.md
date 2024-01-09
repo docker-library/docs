@@ -174,7 +174,7 @@ By default, `root` can connect from anywhere. This option restricts root connect
 
 ### `MYSQL_DATABASE`
 
-This variable is optional and allows you to specify the name of a database to be created on image startup. If a user/password was supplied (see below) then that user will be granted superuser access ([corresponding to `GRANT ALL`](http://dev.mysql.com/doc/en/adding-users.html)) to this database.
+This variable is optional and allows you to specify the name of a database to be created on image startup. If a user/password was supplied (see below) then that user will be granted superuser access ([corresponding to `GRANT ALL`](https://dev.mysql.com/doc/refman/en/creating-accounts.html)) to this database.
 
 ### `MYSQL_USER`, `MYSQL_PASSWORD`
 
