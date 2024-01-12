@@ -39,13 +39,9 @@ WARNING:
 
 ## Shared Tags
 
--	`2.10.9`, `2.10`:
+-	`2.10.9`, `2.10`, `2`, `latest`:
 	-	[`2.10.9-scratch`](https://github.com/nats-io/nats-docker/blob/98cc8de8d3c0848951ba74733d7f7997b8f5389a/2.10.x/scratch/Dockerfile)
 	-	[`2.10.9-nanoserver-1809`](https://github.com/nats-io/nats-docker/blob/98cc8de8d3c0848951ba74733d7f7997b8f5389a/2.10.x/nanoserver-1809/Dockerfile)
--	`2`, `latest`:
-	-	[`2.10.9-scratch`](https://github.com/nats-io/nats-docker/blob/98cc8de8d3c0848951ba74733d7f7997b8f5389a/2.10.x/scratch/Dockerfile)
-	-	[`2.10.9-nanoserver-1809`](https://github.com/nats-io/nats-docker/blob/98cc8de8d3c0848951ba74733d7f7997b8f5389a/2.10.x/nanoserver-1809/Dockerfile)
-	-	[`2.9.24-scratch`](https://github.com/nats-io/nats-docker/blob/98cc8de8d3c0848951ba74733d7f7997b8f5389a/2.9.x/scratch/Dockerfile)
 -	`2.10.9-windowsservercore`, `2.10-windowsservercore`, `2-windowsservercore`, `windowsservercore`:
 	-	[`2.10.9-windowsservercore-1809`](https://github.com/nats-io/nats-docker/blob/98cc8de8d3c0848951ba74733d7f7997b8f5389a/2.10.x/windowsservercore-1809/Dockerfile)
 -	`2.10.9-nanoserver`, `2.10-nanoserver`, `2-nanoserver`, `nanoserver`:
