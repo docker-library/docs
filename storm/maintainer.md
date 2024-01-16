@@ -1,1 +1,1 @@
-../.common-templates/maintainer-community.md
+[Apache Storm](https://storm.apache.org/contribute/People.html)
