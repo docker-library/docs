@@ -17,21 +17,21 @@ WARNING:
 # Quick reference
 
 -	**Maintained by**:  
-	[the Docker Community](https://github.com/31z4/storm-docker)
+	[Apache Storm](https://storm.apache.org/contribute/People.html)
 
 -	**Where to get help**:  
-	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
+	[Apache Storm™ community](https://storm.apache.org/getting-help.html)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.2.4-temurin`, `1.2-temurin`](https://github.com/31z4/storm-docker/blob/14c749848c8ff7c955f2b29c57e327ae80fbbb7e/1.2.4/Dockerfile)
--	[`2.4.0-temurin`, `2.4-temurin`](https://github.com/31z4/storm-docker/blob/a81f9686e8a13dbf428864482f2d0bba50e9c414/2.4.0/Dockerfile)
--	[`2.5.0`, `2.5`, `latest`](https://github.com/31z4/storm-docker/blob/8e162f994d36bfae7f13a32ceb4193d185b9a89e/2.5.0/Dockerfile)
+-	[`1.2.4-temurin`, `1.2-temurin`](https://github.com/apache/storm-docker/blob/14c749848c8ff7c955f2b29c57e327ae80fbbb7e/1.2.4/Dockerfile)
+-	[`2.4.0-temurin`, `2.4-temurin`](https://github.com/apache/storm-docker/blob/a81f9686e8a13dbf428864482f2d0bba50e9c414/2.4.0/Dockerfile)
+-	[`2.5.0`, `2.5`, `latest`](https://github.com/apache/storm-docker/blob/8e162f994d36bfae7f13a32ceb4193d185b9a89e/2.5.0/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/31z4/storm-docker/issues](https://github.com/31z4/storm-docker/issues?q=)
+	https://issues.apache.org/jira/browse/STORM
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/storm/), [`arm64v8`](https://hub.docker.com/r/arm64v8/storm/)
@@ -49,7 +49,11 @@ WARNING:
 
 # What is Apache Storm?
 
-Apache Storm is a distributed computation framework written predominantly in the Clojure programming language. Originally created by Nathan Marz and team at BackType, the project was open sourced after being acquired by Twitter. It uses custom created "spouts" and "bolts" to define information sources and manipulations to allow batch, distributed processing of streaming data. The initial release was on 17 September 2011.
+Apache Storm is a free and open source distributed realtime computation system. Apache Storm makes it easy to reliably process unbounded streams of data, doing for realtime processing what Hadoop did for batch processing. Apache Storm is simple, can be used with any programming language, and is a lot of fun to use!
+
+Apache Storm has many use cases: realtime analytics, online machine learning, continuous computation, distributed RPC, ETL, and more. Apache Storm is fast: a benchmark clocked it at over a million tuples processed per second per node. It is scalable, fault-tolerant, guarantees your data will be processed, and is easy to set up and operate.
+
+Apache Storm integrates with the queueing and database technologies you already use. An Apache Storm topology consumes streams of data and processes those streams in arbitrarily complex ways, repartitioning the streams between each stage of the computation however needed.
 
 > [wikipedia.org/wiki/Storm_(event_processor)](https://en.wikipedia.org/wiki/Storm_(event_processor))
 
@@ -171,7 +175,11 @@ $ docker run -it -v /logs -v /data storm storm nimbus
 
 # License
 
-View [license information](http://storm.apache.org/about/free-and-open-source.html) for the software contained in this image.
+Apache Storm, Storm, Apache, the Apache feather logo, and the Apache Storm project logo are trademarks of The Apache Software Foundation.
+
+Licensed under the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0).
+
+See [license information](http://storm.apache.org/about/free-and-open-source.html).
 
 As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 
