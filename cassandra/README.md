@@ -24,11 +24,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.0-beta1`, `5.0`, `5`, `5.0-beta1-jammy`, `5.0-jammy`, `5-jammy`](https://github.com/docker-library/cassandra/blob/2c12419510e30fb7fbacf4b1e3da31dc464d925a/5.0/Dockerfile)
--	[`4.1.3`, `4.1`, `4`, `latest`, `4.1.3-jammy`, `4.1-jammy`, `4-jammy`, `jammy`](https://github.com/docker-library/cassandra/blob/8cdda79acc014840c36161dfad2f5d4368e778a6/4.1/Dockerfile)
--	[`4.0.11`, `4.0`, `4.0.11-jammy`, `4.0-jammy`](https://github.com/docker-library/cassandra/blob/66348dba5ed2ea13d9d5a7ff6c0b51f2383d012b/4.0/Dockerfile)
--	[`3.11.16`, `3.11`, `3`, `3.11.16-jammy`, `3.11-jammy`, `3-jammy`](https://github.com/docker-library/cassandra/blob/a1e2446ab30903f6a21e1c06831a45ab763f2719/3.11/Dockerfile)
--	[`3.0.29`, `3.0`, `3.0.29-jammy`, `3.0-jammy`](https://github.com/docker-library/cassandra/blob/6e4848e04a9f6f36e7e03e99cc3087bbf7ccb49f/3.0/Dockerfile)
+-	[`5.0-beta1`, `5.0`, `5`, `5.0-beta1-jammy`, `5.0-jammy`, `5-jammy`](https://github.com/docker-library/cassandra/blob/47ea6259ee03f28639ffb493b847067689d59c2e/5.0/Dockerfile)
+-	[`4.1.3`, `4.1`, `4`, `latest`, `4.1.3-jammy`, `4.1-jammy`, `4-jammy`, `jammy`](https://github.com/docker-library/cassandra/blob/47ea6259ee03f28639ffb493b847067689d59c2e/4.1/Dockerfile)
+-	[`4.0.11`, `4.0`, `4.0.11-jammy`, `4.0-jammy`](https://github.com/docker-library/cassandra/blob/47ea6259ee03f28639ffb493b847067689d59c2e/4.0/Dockerfile)
+-	[`3.11.16`, `3.11`, `3`, `3.11.16-jammy`, `3.11-jammy`, `3-jammy`](https://github.com/docker-library/cassandra/blob/47ea6259ee03f28639ffb493b847067689d59c2e/3.11/Dockerfile)
+-	[`3.0.29`, `3.0`, `3.0.29-jammy`, `3.0-jammy`](https://github.com/docker-library/cassandra/blob/47ea6259ee03f28639ffb493b847067689d59c2e/3.0/Dockerfile)
 
 # Quick reference (cont.)
 
