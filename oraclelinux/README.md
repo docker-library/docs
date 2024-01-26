@@ -24,14 +24,14 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`9`](https://github.com/oracle/container-images/blob/3c3b822f58048ddfec0ac23a945e15874a5aef1e/9/Dockerfile)
--	[`9-slim`](https://github.com/oracle/container-images/blob/3c3b822f58048ddfec0ac23a945e15874a5aef1e/9-slim/Dockerfile)
--	[`8.9`, `8`](https://github.com/oracle/container-images/blob/3c3b822f58048ddfec0ac23a945e15874a5aef1e/8/Dockerfile)
--	[`8-slim`](https://github.com/oracle/container-images/blob/3c3b822f58048ddfec0ac23a945e15874a5aef1e/8-slim/Dockerfile)
--	[`8-slim-fips`](https://github.com/oracle/container-images/blob/3c3b822f58048ddfec0ac23a945e15874a5aef1e/8-slim-fips/Dockerfile)
--	[`7.9`, `7`](https://github.com/oracle/container-images/blob/3c3b822f58048ddfec0ac23a945e15874a5aef1e/7/Dockerfile)
--	[`7-slim`](https://github.com/oracle/container-images/blob/3c3b822f58048ddfec0ac23a945e15874a5aef1e/7-slim/Dockerfile)
--	[`7-slim-fips`](https://github.com/oracle/container-images/blob/3c3b822f58048ddfec0ac23a945e15874a5aef1e/7-slim-fips/Dockerfile)
+-	[`9`](https://github.com/oracle/container-images/blob/673c834ea41774d3dabdb98234fac1ea39ab3f36/9/Dockerfile)
+-	[`9-slim`](https://github.com/oracle/container-images/blob/673c834ea41774d3dabdb98234fac1ea39ab3f36/9-slim/Dockerfile)
+-	[`8.9`, `8`](https://github.com/oracle/container-images/blob/673c834ea41774d3dabdb98234fac1ea39ab3f36/8/Dockerfile)
+-	[`8-slim`](https://github.com/oracle/container-images/blob/673c834ea41774d3dabdb98234fac1ea39ab3f36/8-slim/Dockerfile)
+-	[`8-slim-fips`](https://github.com/oracle/container-images/blob/673c834ea41774d3dabdb98234fac1ea39ab3f36/8-slim-fips/Dockerfile)
+-	[`7.9`, `7`](https://github.com/oracle/container-images/blob/673c834ea41774d3dabdb98234fac1ea39ab3f36/7/Dockerfile)
+-	[`7-slim`](https://github.com/oracle/container-images/blob/673c834ea41774d3dabdb98234fac1ea39ab3f36/7-slim/Dockerfile)
+-	[`7-slim-fips`](https://github.com/oracle/container-images/blob/673c834ea41774d3dabdb98234fac1ea39ab3f36/7-slim-fips/Dockerfile)
 
 # Quick reference (cont.)
 
