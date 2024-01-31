@@ -42,7 +42,7 @@ You can mount your configuration file, or build a new image with it.
 If you wish to adapt the default configuration, use something like the following to get it from a running nginx container:
 
 ```console
-$ docker run --rm --entrypoint=cat nginx /etc/nginx/nginx.conf > /host/path/nginx.conf
+$ docker run --rm --entrypoint=cat %%IMAGE%% /etc/nginx/nginx.conf > /host/path/nginx.conf
 ```
 
 And then edit `/host/path/nginx.conf` in your host file system.
