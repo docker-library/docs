@@ -24,7 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.0.34-26-centos`, `8.0-centos`, `8-centos`, `8.0.34-26`, `8.0`, `8`, `ps-8.0.34-26`, `ps-8.0`, `ps-8`](https://github.com/percona/percona-docker/blob/565f49b8be3a1efa056fde70e10d638ad159516a/percona-server-8.0/Dockerfile)
+-	[`8.0.35-27-centos`, `8.0-centos`, `8-centos`, `8.0.35-27`, `8.0`, `8`, `ps-8.0.35-27`, `ps-8.0`, `ps-8`](https://github.com/percona/percona-docker/blob/064dfe8395cc2735a7dc81201f9abc786323ea26/percona-server-8.0/Dockerfile)
 -	[`5.7.44-centos`, `5.7-centos`, `5-centos`, `centos`, `5.7.44`, `5.7`, `5`, `ps-5.7.44`, `ps-5.7`, `ps-5`](https://github.com/percona/percona-docker/blob/b89efa5f100edacc0ef660cef37975acfaf67326/percona-server-5.7/Dockerfile-dockerhub)
 -	[`5.6.51-2-centos`, `5.6-centos`, `5.6.51-2`, `5.6`, `ps-5.6.51-2`, `ps-5.6`](https://github.com/percona/percona-docker/blob/4510d49bcce5cfce58a42c198d55399b144add83/percona-server-5.6/Dockerfile-dockerhub)
 -	[`psmdb-6.0.6`, `psmdb-6.0`](https://github.com/percona/percona-docker/blob/80ab68b2d84c7c17c8cbc07edb35e35399fd0a54/percona-server-mongodb-6.0/Dockerfile)
@@ -215,6 +215,14 @@ $ docker run --name some-mysql -e MYSQL_ROOT_PASSWORD_FILE=/run/secrets/mysql-ro
 ```
 
 Currently, this is only supported for `MYSQL_ROOT_PASSWORD`, `MYSQL_ROOT_HOST`, `MYSQL_DATABASE`, `MYSQL_USER`, and `MYSQL_PASSWORD`.
+
+## Telemetry
+
+Starting with Percona Server 8.0.35-27, telemetry will be enabled by default. If you decide not to send usage data to Percona, you can set the `PERCONA_TELEMETRY_DISABLE=1` environment variable. For example:
+
+```console
+$ docker run --name some-mysql -e  PERCONA_TELEMETRY_DISABLE=1 -d percona:tag
+```
 
 # Initializing a fresh instance
 
