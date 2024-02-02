@@ -92,22 +92,26 @@ docker run --name geonetwork-host --network gn-network -e ES_HOST=my-es-host -e 
 
 To be sure about what Elasticsearch version to use you can check the [GeoNetwork documentation](https://docs.geonetwork-opensource.org/4.4/install-guide/installing-index/) for your GN version or the `es.version` property in the [`pom.xml`](https://github.com/geonetwork/core-geonetwork/blob/main/pom.xml#L1528C17-L1528C24) file of the GeoNetwork release used.
 
+### Default credentials
+
+After installation, use the default credentials: **`admin`** (username) and **`admin`** (password). It is recommended to update the default password after installation.
+
 ### Elasticsearch configuration
 
 #### Java properties (version 4.4.0 and newer)
 
-Since GeoNetwork 4.4.0 the configuration is done using Java properties passed in the `GN_CONFIG_PROPERTIES` environment variable. Property names used for setting the Elasticsearh connection are:
+Since GeoNetwork 4.4.0, use Java properties passed in the `GN_CONFIG_PROPERTIES` environment variable for Elasticsearch connection configuration:
 
 -	`es.host`: *optional* (default `localhost`): The host name of the Elasticsearch server.
 -	`es.port` *optional* (default `9200`): The port where Elasticsearch server is listening to.
 -	`es.protocol` *optional* (default `http`): The protocol used to talk to Elasticsearch. Can be `http` or `https`.
 -	`es.url`: **mandatory if host, port or protocol aren't the default values** (default `http://localhost:9200`): Full URL of the Elasticsearch server.
 -	`es.index.records` *optional* (default `gn_records`): In case you have more than GeoNetwork instance using the same Elasticsearch cluster each one needs to use a different index name. Use this variable to define the name of the index used by each GeoNetwork.
--	`es.username` *optional (default empty): username used to connect to Elasticsearch.
--	`es.password` *optional (default empty): password used to connect to Elasticsearch.
--	`kb.url` *Optional* (default `http://localhost:5601`): The URL where Kibana is listening.
+-	`es.username` *optional* (default empty): username used to connect to Elasticsearch.
+-	`es.password` *optional* (default empty): password used to connect to Elasticsearch.
+-	`kb.url` *optional* (default `http://localhost:5601`): The URL where Kibana is listening.
 
-For example, define this environment variable to pass these values to GeoNetwork:
+Example Docker Compose YAML snippet:
 
 ```yaml
 services:
@@ -126,14 +130,14 @@ services:
 
 #### Environment variables (version 4.2 and older)
 
-If you are using a GeoNetwork older than 4.4.0 it must be configured using these environment variables:
+For versions older than 4.4.0, configure Elasticsearch using environment variables:
 
 -	`ES_HOST` **mandatory**: The host name of the Elasticsearch server.
 -	`ES_PORT` *optional* (default `9200`): The port where Elasticsearch server is listening to.
 -	`ES_PROTOCOL` *optional* (default `http`): The protocol used to talk to Elasticsearch. Can be `http` or `https`.
 -	`ES_INDEX_RECORDS` *optional* (default `gn_records`): In case you have more than GeoNetwork instance using the same Elasticsearch cluster each one needs to use a different index name. Use this variable to define the name of the index used by each GeoNetwork.
--	`ES_USERNAME` *optional (default empty): username used to connect to Elasticsearch.
--	`ES_PASSWORD` *optional (default empty): password used to connect to Elasticsearch.
+-	`ES_USERNAME` *optional* (default empty): username used to connect to Elasticsearch.
+-	`ES_PASSWORD` *optional* (default empty): password used to connect to Elasticsearch.
 -	`KB_URL` *Optional* (default `http://localhost:5601`): The URL where Kibana is listening.
 
 ### Database configuration
