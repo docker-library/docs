@@ -24,14 +24,14 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1-buster`, `1.75-buster`, `1.75.0-buster`, `buster`](https://github.com/rust-lang/docker-rust/blob/7658ad2a35ec2eeb7ea820470449a19bba2b5d5b/1.75.0/buster/Dockerfile)
--	[`1-slim-buster`, `1.75-slim-buster`, `1.75.0-slim-buster`, `slim-buster`](https://github.com/rust-lang/docker-rust/blob/7658ad2a35ec2eeb7ea820470449a19bba2b5d5b/1.75.0/buster/slim/Dockerfile)
--	[`1-bullseye`, `1.75-bullseye`, `1.75.0-bullseye`, `bullseye`](https://github.com/rust-lang/docker-rust/blob/743e6f449c680dbf8e9137da9baf16a169c674da/1.75.0/bullseye/Dockerfile)
--	[`1-slim-bullseye`, `1.75-slim-bullseye`, `1.75.0-slim-bullseye`, `slim-bullseye`](https://github.com/rust-lang/docker-rust/blob/743e6f449c680dbf8e9137da9baf16a169c674da/1.75.0/bullseye/slim/Dockerfile)
--	[`1-bookworm`, `1.75-bookworm`, `1.75.0-bookworm`, `bookworm`, `1`, `1.75`, `1.75.0`, `latest`](https://github.com/rust-lang/docker-rust/blob/743e6f449c680dbf8e9137da9baf16a169c674da/1.75.0/bookworm/Dockerfile)
--	[`1-slim-bookworm`, `1.75-slim-bookworm`, `1.75.0-slim-bookworm`, `slim-bookworm`, `1-slim`, `1.75-slim`, `1.75.0-slim`, `slim`](https://github.com/rust-lang/docker-rust/blob/743e6f449c680dbf8e9137da9baf16a169c674da/1.75.0/bookworm/slim/Dockerfile)
--	[`1-alpine3.18`, `1.75-alpine3.18`, `1.75.0-alpine3.18`, `alpine3.18`](https://github.com/rust-lang/docker-rust/blob/7658ad2a35ec2eeb7ea820470449a19bba2b5d5b/1.75.0/alpine3.18/Dockerfile)
--	[`1-alpine3.19`, `1.75-alpine3.19`, `1.75.0-alpine3.19`, `alpine3.19`, `1-alpine`, `1.75-alpine`, `1.75.0-alpine`, `alpine`](https://github.com/rust-lang/docker-rust/blob/e7f8ab58b3feca354792122f4df6624e291c404b/1.75.0/alpine3.19/Dockerfile)
+-	[`1-buster`, `1.76-buster`, `1.76.0-buster`, `buster`](https://github.com/rust-lang/docker-rust/blob/e5921dbae8fe56407a992307d1e2c2716ba8202d/1.76.0/buster/Dockerfile)
+-	[`1-slim-buster`, `1.76-slim-buster`, `1.76.0-slim-buster`, `slim-buster`](https://github.com/rust-lang/docker-rust/blob/e5921dbae8fe56407a992307d1e2c2716ba8202d/1.76.0/buster/slim/Dockerfile)
+-	[`1-bullseye`, `1.76-bullseye`, `1.76.0-bullseye`, `bullseye`](https://github.com/rust-lang/docker-rust/blob/e5921dbae8fe56407a992307d1e2c2716ba8202d/1.76.0/bullseye/Dockerfile)
+-	[`1-slim-bullseye`, `1.76-slim-bullseye`, `1.76.0-slim-bullseye`, `slim-bullseye`](https://github.com/rust-lang/docker-rust/blob/e5921dbae8fe56407a992307d1e2c2716ba8202d/1.76.0/bullseye/slim/Dockerfile)
+-	[`1-bookworm`, `1.76-bookworm`, `1.76.0-bookworm`, `bookworm`, `1`, `1.76`, `1.76.0`, `latest`](https://github.com/rust-lang/docker-rust/blob/e5921dbae8fe56407a992307d1e2c2716ba8202d/1.76.0/bookworm/Dockerfile)
+-	[`1-slim-bookworm`, `1.76-slim-bookworm`, `1.76.0-slim-bookworm`, `slim-bookworm`, `1-slim`, `1.76-slim`, `1.76.0-slim`, `slim`](https://github.com/rust-lang/docker-rust/blob/e5921dbae8fe56407a992307d1e2c2716ba8202d/1.76.0/bookworm/slim/Dockerfile)
+-	[`1-alpine3.18`, `1.76-alpine3.18`, `1.76.0-alpine3.18`, `alpine3.18`](https://github.com/rust-lang/docker-rust/blob/e5921dbae8fe56407a992307d1e2c2716ba8202d/1.76.0/alpine3.18/Dockerfile)
+-	[`1-alpine3.19`, `1.76-alpine3.19`, `1.76.0-alpine3.19`, `alpine3.19`, `1-alpine`, `1.76-alpine`, `1.76.0-alpine`, `alpine`](https://github.com/rust-lang/docker-rust/blob/e5921dbae8fe56407a992307d1e2c2716ba8202d/1.76.0/alpine3.19/Dockerfile)
 
 # Quick reference (cont.)
 
