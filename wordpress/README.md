@@ -33,9 +33,9 @@ WARNING:
 -	[`6.4.3-php8.3-apache`, `6.4-php8.3-apache`, `6-php8.3-apache`, `php8.3-apache`, `6.4.3-php8.3`, `6.4-php8.3`, `6-php8.3`, `php8.3`](https://github.com/docker-library/wordpress/blob/06f28e291877002359e1075e4260123de5403551/latest/php8.3/apache/Dockerfile)
 -	[`6.4.3-php8.3-fpm`, `6.4-php8.3-fpm`, `6-php8.3-fpm`, `php8.3-fpm`](https://github.com/docker-library/wordpress/blob/06f28e291877002359e1075e4260123de5403551/latest/php8.3/fpm/Dockerfile)
 -	[`6.4.3-php8.3-fpm-alpine`, `6.4-php8.3-fpm-alpine`, `6-php8.3-fpm-alpine`, `php8.3-fpm-alpine`](https://github.com/docker-library/wordpress/blob/06f28e291877002359e1075e4260123de5403551/latest/php8.3/fpm-alpine/Dockerfile)
--	[`cli-2.9.0-php8.1`, `cli-2.9-php8.1`, `cli-2-php8.1`, `cli-php8.1`](https://github.com/docker-library/wordpress/blob/480b5c35eb6382f4ae5581cfb9dfe54873d4f4a0/cli/php8.1/alpine/Dockerfile)
--	[`cli-2.9.0`, `cli-2.9`, `cli-2`, `cli`, `cli-2.9.0-php8.2`, `cli-2.9-php8.2`, `cli-2-php8.2`, `cli-php8.2`](https://github.com/docker-library/wordpress/blob/480b5c35eb6382f4ae5581cfb9dfe54873d4f4a0/cli/php8.2/alpine/Dockerfile)
--	[`cli-2.9.0-php8.3`, `cli-2.9-php8.3`, `cli-2-php8.3`, `cli-php8.3`](https://github.com/docker-library/wordpress/blob/d1cc7e6a226cf23ade72b83990310980e7ac5c2b/cli/php8.3/alpine/Dockerfile)
+-	[`cli-2.10.0-php8.1`, `cli-2.10-php8.1`, `cli-2-php8.1`, `cli-php8.1`](https://github.com/docker-library/wordpress/blob/bb6296613aad365656cbba4933c2f7bd135bf243/cli/php8.1/alpine/Dockerfile)
+-	[`cli-2.10.0`, `cli-2.10`, `cli-2`, `cli`, `cli-2.10.0-php8.2`, `cli-2.10-php8.2`, `cli-2-php8.2`, `cli-php8.2`](https://github.com/docker-library/wordpress/blob/bb6296613aad365656cbba4933c2f7bd135bf243/cli/php8.2/alpine/Dockerfile)
+-	[`cli-2.10.0-php8.3`, `cli-2.10-php8.3`, `cli-2-php8.3`, `cli-php8.3`](https://github.com/docker-library/wordpress/blob/bb6296613aad365656cbba4933c2f7bd135bf243/cli/php8.3/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
