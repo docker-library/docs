@@ -24,17 +24,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`9.5.0`, `9.5`, `9`, `latest`](https://github.com/apache/solr-docker/blob/a17dd804fead2a6581f8e4c116451ed268f32126/9.5/Dockerfile)
--	[`9.5.0-slim`, `9.5-slim`, `9-slim`, `slim`](https://github.com/apache/solr-docker/blob/a17dd804fead2a6581f8e4c116451ed268f32126/9.5-slim/Dockerfile)
--	[`9.4.1`, `9.4`](https://github.com/apache/solr-docker/blob/a17dd804fead2a6581f8e4c116451ed268f32126/9.4/Dockerfile)
--	[`9.4.1-slim`, `9.4-slim`](https://github.com/apache/solr-docker/blob/a17dd804fead2a6581f8e4c116451ed268f32126/9.4-slim/Dockerfile)
--	[`9.3.0`, `9.3`](https://github.com/apache/solr-docker/blob/a17dd804fead2a6581f8e4c116451ed268f32126/9.3/Dockerfile)
--	[`9.3.0-slim`, `9.3-slim`](https://github.com/apache/solr-docker/blob/a17dd804fead2a6581f8e4c116451ed268f32126/9.3-slim/Dockerfile)
--	[`9.2.1`, `9.2`](https://github.com/apache/solr-docker/blob/a17dd804fead2a6581f8e4c116451ed268f32126/9.2/Dockerfile)
--	[`9.1.1`, `9.1`](https://github.com/apache/solr-docker/blob/a17dd804fead2a6581f8e4c116451ed268f32126/9.1/Dockerfile)
--	[`9.0.0`, `9.0`](https://github.com/apache/solr-docker/blob/a17dd804fead2a6581f8e4c116451ed268f32126/9.0/Dockerfile)
--	[`8.11.3`, `8.11`, `8`](https://github.com/apache/solr-docker/blob/a17dd804fead2a6581f8e4c116451ed268f32126/8.11/Dockerfile)
--	[`8.11.3-slim`, `8.11-slim`, `8-slim`](https://github.com/apache/solr-docker/blob/a17dd804fead2a6581f8e4c116451ed268f32126/8.11-slim/Dockerfile)
+-	[`9.5.0`, `9.5`, `9`, `latest`](https://github.com/apache/solr-docker/blob/47b84007a29fa9a9d47917e1ba7f82cf863a5c93/9.5/Dockerfile)
+-	[`9.5.0-slim`, `9.5-slim`, `9-slim`, `slim`](https://github.com/apache/solr-docker/blob/47b84007a29fa9a9d47917e1ba7f82cf863a5c93/9.5-slim/Dockerfile)
+-	[`9.4.1`, `9.4`](https://github.com/apache/solr-docker/blob/47b84007a29fa9a9d47917e1ba7f82cf863a5c93/9.4/Dockerfile)
+-	[`9.4.1-slim`, `9.4-slim`](https://github.com/apache/solr-docker/blob/47b84007a29fa9a9d47917e1ba7f82cf863a5c93/9.4-slim/Dockerfile)
+-	[`8.11.3`, `8.11`, `8`](https://github.com/apache/solr-docker/blob/47b84007a29fa9a9d47917e1ba7f82cf863a5c93/8.11/Dockerfile)
+-	[`8.11.3-slim`, `8.11-slim`, `8-slim`](https://github.com/apache/solr-docker/blob/47b84007a29fa9a9d47917e1ba7f82cf863a5c93/8.11-slim/Dockerfile)
 
 # Quick reference (cont.)
 
