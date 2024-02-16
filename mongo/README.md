@@ -123,7 +123,7 @@ First developed by the software company 10gen (now MongoDB Inc.) in October 2007
 
 # Security
 
-By default Mongo's configuration requires no authentication for access, even for the administrative user. See the "`MONGO_INITDB_ROOT_USERNAME`, `MONGO_INITDB_ROOT_PASSWORD`" section below for information on how to begin securing Mongo and the [MongoDB Security documentation](https://www.mongodb.com/docs/manual/security/) for more detail.
+By default Mongo's configuration requires no authentication for access, even for the administrative user. It is highly recommended to set a root user name and password if you plan on exposing your Mongo instance to the internet. See the "`MONGO_INITDB_ROOT_USERNAME`, `MONGO_INITDB_ROOT_PASSWORD`" section below for instructions and the [MongoDB Security documentation](https://www.mongodb.com/docs/manual/security/) for a more complete treatment.
 
 # How to use this image
 
