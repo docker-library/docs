@@ -15,23 +15,23 @@ To run a container of your choice, use the commands below as an example.
 
 * Azul Zulu 17 based on Ubuntu:
 ```
-docker run -it --rm azul-zulu-openjdk:17-ubuntu java -version
+docker run -it --rm azul-zulu:17-ubuntu java -version
 ```
 * Azul Zulu 17 based on Debian:
 ```
-docker run -it --rm azul-zulu-openjdk:17-debian java -version
+docker run -it --rm azul-zulu:17-debian java -version
 ```
 * Azul Zulu 17 based on CentOS:
 ```
-docker run -it --rm azul-zulu-openjdk:17-centos java -version
+docker run -it --rm azul-zulu:17-centos java -version
 ```
 * Azul Zulu 17 based on Alpine:
 ```
-docker run -it --rm azul-zulu-openjdk:17-alpine java -version
+docker run -it --rm azul-zulu:17-alpine java -version
 ```
 * Azul Zulu 17 based on Distroless:
 ```
-docker run -it --rm azul-zulu-openjdk:17-distroless java --version
+docker run -it --rm azul-zulu:17-distroless java --version
 ```
 
 As the entrypoint, use:
