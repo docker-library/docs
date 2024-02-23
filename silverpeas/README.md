@@ -24,8 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.3.3`, `latest`](https://github.com/Silverpeas/docker-silverpeas-prod/blob/58fcac8f9759d8ba09ca23bc2106a2a7c5a5217f/Dockerfile)
--	[`6.2.3-b1`](https://github.com/Silverpeas/docker-silverpeas-prod/blob/9714dcc94eb558508f085835a329a44f5c3cb52e/Dockerfile)
+-	[`6.3.4`, `latest`](https://github.com/Silverpeas/docker-silverpeas-prod/blob/0ab5ec380118de3c070135446eabd3d94dfa0395/Dockerfile)
 
 # Quick reference (cont.)
 
