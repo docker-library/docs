@@ -24,18 +24,21 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.31.1-go1.21`, `go1.21`, `go1`, `go`](https://github.com/nginx/unit/blob/fb33ec86a3b6ca6a844dfa6980bb9e083094abec/pkg/docker/Dockerfile.go1.21)
--	[`1.31.1-go1.20`, `go1.20`](https://github.com/nginx/unit/blob/fb33ec86a3b6ca6a844dfa6980bb9e083094abec/pkg/docker/Dockerfile.go1.20)
--	[`1.31.1-jsc11`, `jsc11`, `jsc`](https://github.com/nginx/unit/blob/fb33ec86a3b6ca6a844dfa6980bb9e083094abec/pkg/docker/Dockerfile.jsc11)
--	[`1.31.1-node20`, `node20`, `node`](https://github.com/nginx/unit/blob/fb33ec86a3b6ca6a844dfa6980bb9e083094abec/pkg/docker/Dockerfile.node20)
--	[`1.31.1-node18`, `node18`](https://github.com/nginx/unit/blob/fb33ec86a3b6ca6a844dfa6980bb9e083094abec/pkg/docker/Dockerfile.node18)
--	[`1.31.1-perl5.38`, `perl5.38`, `perl5`, `perl`](https://github.com/nginx/unit/blob/fb33ec86a3b6ca6a844dfa6980bb9e083094abec/pkg/docker/Dockerfile.perl5.38)
--	[`1.31.1-perl5.36`, `perl5.36`](https://github.com/nginx/unit/blob/fb33ec86a3b6ca6a844dfa6980bb9e083094abec/pkg/docker/Dockerfile.perl5.36)
--	[`1.31.1-php8.2`, `php8.2`, `php8`, `php`](https://github.com/nginx/unit/blob/fb33ec86a3b6ca6a844dfa6980bb9e083094abec/pkg/docker/Dockerfile.php8.2)
--	[`1.31.1-python3.11`, `python3.11`, `python3`, `python`](https://github.com/nginx/unit/blob/fb33ec86a3b6ca6a844dfa6980bb9e083094abec/pkg/docker/Dockerfile.python3.11)
--	[`1.31.1-ruby3.2`, `ruby3.2`, `ruby3`, `ruby`](https://github.com/nginx/unit/blob/fb33ec86a3b6ca6a844dfa6980bb9e083094abec/pkg/docker/Dockerfile.ruby3.2)
--	[`1.31.1-wasm`, `wasm`](https://github.com/nginx/unit/blob/fb33ec86a3b6ca6a844dfa6980bb9e083094abec/pkg/docker/Dockerfile.wasm)
--	[`1.31.1-minimal`, `minimal`, `latest`](https://github.com/nginx/unit/blob/fb33ec86a3b6ca6a844dfa6980bb9e083094abec/pkg/docker/Dockerfile.minimal)
+-	[`1.32.0-go1.22`, `go1.22`, `go1`, `go`](https://github.com/nginx/unit/blob/d76761901c4084bcdbc5a449e9bbb47d56b7093c/pkg/docker/Dockerfile.go1.22)
+-	[`1.32.0-go1.21`, `go1.21`](https://github.com/nginx/unit/blob/d76761901c4084bcdbc5a449e9bbb47d56b7093c/pkg/docker/Dockerfile.go1.21)
+-	[`1.32.0-jsc11`, `jsc11`, `jsc`](https://github.com/nginx/unit/blob/d76761901c4084bcdbc5a449e9bbb47d56b7093c/pkg/docker/Dockerfile.jsc11)
+-	[`1.32.0-node21`, `node21`, `node`](https://github.com/nginx/unit/blob/d76761901c4084bcdbc5a449e9bbb47d56b7093c/pkg/docker/Dockerfile.node21)
+-	[`1.32.0-node20`, `node20`](https://github.com/nginx/unit/blob/d76761901c4084bcdbc5a449e9bbb47d56b7093c/pkg/docker/Dockerfile.node20)
+-	[`1.32.0-perl5.38`, `perl5.38`, `perl5`, `perl`](https://github.com/nginx/unit/blob/d76761901c4084bcdbc5a449e9bbb47d56b7093c/pkg/docker/Dockerfile.perl5.38)
+-	[`1.32.0-perl5.36`, `perl5.36`](https://github.com/nginx/unit/blob/d76761901c4084bcdbc5a449e9bbb47d56b7093c/pkg/docker/Dockerfile.perl5.36)
+-	[`1.32.0-php8.3`, `php8.3`, `php8`, `php`](https://github.com/nginx/unit/blob/d76761901c4084bcdbc5a449e9bbb47d56b7093c/pkg/docker/Dockerfile.php8.3)
+-	[`1.32.0-php8.2`, `php8.2`](https://github.com/nginx/unit/blob/d76761901c4084bcdbc5a449e9bbb47d56b7093c/pkg/docker/Dockerfile.php8.2)
+-	[`1.32.0-python3.12`, `python3.12`, `python3`, `python`](https://github.com/nginx/unit/blob/d76761901c4084bcdbc5a449e9bbb47d56b7093c/pkg/docker/Dockerfile.python3.12)
+-	[`1.32.0-python3.11`, `python3.11`](https://github.com/nginx/unit/blob/d76761901c4084bcdbc5a449e9bbb47d56b7093c/pkg/docker/Dockerfile.python3.11)
+-	[`1.32.0-ruby3.3`, `ruby3.3`, `ruby3`, `ruby`](https://github.com/nginx/unit/blob/d76761901c4084bcdbc5a449e9bbb47d56b7093c/pkg/docker/Dockerfile.ruby3.3)
+-	[`1.32.0-ruby3.2`, `ruby3.2`](https://github.com/nginx/unit/blob/d76761901c4084bcdbc5a449e9bbb47d56b7093c/pkg/docker/Dockerfile.ruby3.2)
+-	[`1.32.0-wasm`, `wasm`](https://github.com/nginx/unit/blob/d76761901c4084bcdbc5a449e9bbb47d56b7093c/pkg/docker/Dockerfile.wasm)
+-	[`1.32.0-minimal`, `minimal`, `latest`](https://github.com/nginx/unit/blob/d76761901c4084bcdbc5a449e9bbb47d56b7093c/pkg/docker/Dockerfile.minimal)
 
 # Quick reference (cont.)
 
