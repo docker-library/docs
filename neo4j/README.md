@@ -30,8 +30,8 @@ WARNING:
 -	[`5.17.0-enterprise-ubi9`, `5.17-enterprise-ubi9`, `5-enterprise-ubi9`, `enterprise-ubi9`](https://github.com/neo4j/docker-neo4j-publish/blob/4b6837c9f14f5c7df7f53d3d93dc7d60bd4dc85b/5.17.0/ubi9/enterprise/Dockerfile)
 -	[`5.17.0-community-ubi8`, `5.17-community-ubi8`, `5-community-ubi8`, `5.17.0-ubi8`, `5.17-ubi8`, `5-ubi8`, `community-ubi8`, `ubi8`](https://github.com/neo4j/docker-neo4j-publish/blob/4b6837c9f14f5c7df7f53d3d93dc7d60bd4dc85b/5.17.0/ubi8/community/Dockerfile)
 -	[`5.17.0-enterprise-ubi8`, `5.17-enterprise-ubi8`, `5-enterprise-ubi8`, `enterprise-ubi8`](https://github.com/neo4j/docker-neo4j-publish/blob/4b6837c9f14f5c7df7f53d3d93dc7d60bd4dc85b/5.17.0/ubi8/enterprise/Dockerfile)
--	[`4.4.30`, `4.4.30-community`, `4.4`, `4.4-community`](https://github.com/neo4j/docker-neo4j-publish/blob/dae45c73d0c9d68337f01f1711b225a8aef36411/4.4.30/bullseye/community/Dockerfile)
--	[`4.4.30-enterprise`, `4.4-enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/dae45c73d0c9d68337f01f1711b225a8aef36411/4.4.30/bullseye/enterprise/Dockerfile)
+-	[`4.4.31`, `4.4.31-community`, `4.4`, `4.4-community`](https://github.com/neo4j/docker-neo4j-publish/blob/e569acbf7874e3f44f42920bb92f619fb4b7f45b/4.4.31/bullseye/community/Dockerfile)
+-	[`4.4.31-enterprise`, `4.4-enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/e569acbf7874e3f44f42920bb92f619fb4b7f45b/4.4.31/bullseye/enterprise/Dockerfile)
 
 # Quick reference (cont.)
 
