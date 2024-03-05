@@ -24,10 +24,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.1.1`, `5.1`, `5`, `latest`, `5.1.1-bookworm`, `5.1-bookworm`, `5-bookworm`, `bookworm`](https://github.com/docker-library/redmine/blob/9f8737bd02cab294935e8ef8521ae51bfad9aee8/5.1/bookworm/Dockerfile)
--	[`5.1.1-alpine3.18`, `5.1-alpine3.18`, `5-alpine3.18`, `alpine3.18`, `5.1.1-alpine`, `5.1-alpine`, `5-alpine`, `alpine`](https://github.com/docker-library/redmine/blob/5b28bcaaca4e14c41564d43cf5e53b0a13b49155/5.1/alpine3.18/Dockerfile)
--	[`5.0.7`, `5.0`, `5.0.7-bookworm`, `5.0-bookworm`](https://github.com/docker-library/redmine/blob/9f8737bd02cab294935e8ef8521ae51bfad9aee8/5.0/bookworm/Dockerfile)
--	[`5.0.7-alpine3.18`, `5.0-alpine3.18`, `5.0.7-alpine`, `5.0-alpine`](https://github.com/docker-library/redmine/blob/d65c2af08af53ba1c68beca8b10ae59fa4e402d5/5.0/alpine3.18/Dockerfile)
+-	[`5.1.2`, `5.1`, `5`, `latest`, `5.1.2-bookworm`, `5.1-bookworm`, `5-bookworm`, `bookworm`](https://github.com/docker-library/redmine/blob/51b7921366b46e2dd5a7f9629b933a3e7a68fdb1/5.1/bookworm/Dockerfile)
+-	[`5.1.2-alpine3.18`, `5.1-alpine3.18`, `5-alpine3.18`, `alpine3.18`, `5.1.2-alpine`, `5.1-alpine`, `5-alpine`, `alpine`](https://github.com/docker-library/redmine/blob/51b7921366b46e2dd5a7f9629b933a3e7a68fdb1/5.1/alpine3.18/Dockerfile)
+-	[`5.0.8`, `5.0`, `5.0.8-bookworm`, `5.0-bookworm`](https://github.com/docker-library/redmine/blob/a47825ab3251935beedb9d83ecdc80e78d1ccf28/5.0/bookworm/Dockerfile)
+-	[`5.0.8-alpine3.18`, `5.0-alpine3.18`, `5.0.8-alpine`, `5.0-alpine`](https://github.com/docker-library/redmine/blob/a47825ab3251935beedb9d83ecdc80e78d1ccf28/5.0/alpine3.18/Dockerfile)
 
 # Quick reference (cont.)
 
