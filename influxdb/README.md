@@ -38,8 +38,8 @@ WARNING:
 -	[`1.11-data-alpine`, `1.11.5-data-alpine`](https://github.com/influxdata/influxdata-docker/blob/64c7ceabdebbf400eacbcb32207e421d11e0ea63/influxdb/1.11/data/alpine/Dockerfile)
 -	[`1.11-meta`, `1.11.5-meta`](https://github.com/influxdata/influxdata-docker/blob/64c7ceabdebbf400eacbcb32207e421d11e0ea63/influxdb/1.11/meta/Dockerfile)
 -	[`1.11-meta-alpine`, `1.11.5-meta-alpine`](https://github.com/influxdata/influxdata-docker/blob/64c7ceabdebbf400eacbcb32207e421d11e0ea63/influxdb/1.11/meta/alpine/Dockerfile)
--	[`2.7`, `2.7.5`, `latest`](https://github.com/influxdata/influxdata-docker/blob/64c7ceabdebbf400eacbcb32207e421d11e0ea63/influxdb/2.7/Dockerfile)
--	[`2.7-alpine`, `2.7.5-alpine`, `alpine`](https://github.com/influxdata/influxdata-docker/blob/64c7ceabdebbf400eacbcb32207e421d11e0ea63/influxdb/2.7/alpine/Dockerfile)
+-	[`2`, `2.7`, `2.7.5`, `latest`](https://github.com/influxdata/influxdata-docker/blob/64c7ceabdebbf400eacbcb32207e421d11e0ea63/influxdb/2.7/Dockerfile)
+-	[`2-alpine`, `2.7-alpine`, `2.7.5-alpine`, `alpine`](https://github.com/influxdata/influxdata-docker/blob/64c7ceabdebbf400eacbcb32207e421d11e0ea63/influxdb/2.7/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
