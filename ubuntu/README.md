@@ -24,10 +24,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`20.04`, `focal-20240123`, `focal`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-focal-amd64-20240123-fb52992f&id=fb52992ff7e59e29008a6e1fa583207d2f36b9fe)
--	[`22.04`, `jammy-20240212`, `jammy`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-amd64-20240212-9e1d1f07&id=9e1d1f0733aa861ce47cb2ee80eef388bb897f90)
--	[`23.10`, `mantic-20240122`, `mantic`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-mantic-amd64-20240122-07aef2de&id=07aef2de3835f07015f042626ae71721ca4f6bd1)
--	[`24.04`, `noble-20240212`, `noble`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-amd64-20240212-8a650c60&id=8a650c60e99c96a81eb4c7d72a8a7a272ba0f626)
+-	[`20.04`, `focal-20240216`, `focal`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-focal-amd64-20240216-5e82aa8e&id=5e82aa8e3498567df6757d3e9598a8cd54d19ee9)
+-	[`22.04`, `jammy-20240227`, `jammy`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-amd64-20240227-c988e436&id=c988e4364bc3cc0378f6c3592eb486d281a6ac41)
+-	[`23.10`, `mantic-20240216`, `mantic`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-mantic-amd64-20240216-c9ad3939&id=c9ad39394a666b231d5c5398e3cd38ac70c0594c)
+-	[`24.04`, `noble-20240225`, `noble`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-amd64-20240225-8cf671e3&id=8cf671e3c71fa7d0735ceefd4a77c7af2771472f)
 
 # Quick reference (cont.)
 
