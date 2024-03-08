@@ -50,18 +50,8 @@ die 'login failed: ' . $login->res->error->{message} unless $login->res->is_succ
 
 my $token = $login->res->json->{token};
 
-my $csrf;
-for my $cookie (@{ $login->res->cookies }) {
-	if ($cookie->name eq 'csrftoken') {
-		$csrf = $cookie->value;
-		last;
-	}
-}
-die 'missing CSRF token' unless defined $csrf;
-
 my $authorizationHeader = {
 	Authorization => "JWT $token",
-	'X-CSRFToken' => $csrf,
 };
 
 my $supportedTagsRegex = qr%^(# Supported tags and respective `Dockerfile` links\n\n)(.*?\n)(?=# |\[)%ms;
