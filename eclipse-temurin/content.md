@@ -17,17 +17,17 @@ JRE images are available for all versions of Eclipse Temurin but it is recommend
 Yes! Add your certificates to `/certificates` inside the container (e.g. by using a volume) and set the environment variable `USE_SYSTEM_CA_CERTS` on the container to any value. With Docker CLI this might look like this:
 
 ```console
-$ docker run -v $(pwd)/certs:/certificates/ -e USE_SYSTEM_CA_CERTS=1 %%IMAGE%%:11
+$ docker run -v $(pwd)/certs:/certificates/ -e USE_SYSTEM_CA_CERTS=1 %%IMAGE%%:21
 ```
 
 The certificates would get added to the system CA store, which would in turn be converted to Java's truststore. The format of the certificates depends on what the OS of the base image used expects, but PEM format with a `.crt` file extension is a good bet. **Please note**: this feature is currently not available for Windows-based images.
 
 # How to use this Image
 
-To run a pre-built jar file with the latest OpenJDK 11, use the following Dockerfile:
+To run a pre-built jar file with the latest OpenJDK 21, use the following Dockerfile:
 
 ```dockerfile
-FROM %%IMAGE%%:11
+FROM %%IMAGE%%:21
 RUN mkdir /opt/app
 COPY japp.jar /opt/app
 CMD ["java", "-jar", "/opt/app/japp.jar"]
@@ -48,7 +48,7 @@ If you are using a distribution that we don't provide an image for you can copy 
 # Example
 FROM <base image>
 ENV JAVA_HOME=/opt/java/openjdk
-COPY --from=%%IMAGE%%:11 $JAVA_HOME $JAVA_HOME
+COPY --from=%%IMAGE%%:21 $JAVA_HOME $JAVA_HOME
 ENV PATH="${JAVA_HOME}/bin:${PATH}"
 ```
 
@@ -58,7 +58,7 @@ On OpenJDK 11+, a JRE can be generated using `jlink`, see the following Dockerfi
 
 ```dockerfile
 # Example of custom Java runtime using jlink in a multi-stage container build
-FROM %%IMAGE%%:11 as jre-build
+FROM %%IMAGE%%:21 as jre-build
 
 # Create a custom Java runtime
 RUN $JAVA_HOME/bin/jlink \
@@ -84,7 +84,7 @@ CMD ["java", "-jar", "/opt/app/japp.jar"]
 If you want to place the jar file on the host file system instead of inside the container, you can mount the host path onto the container by using the following commands:
 
 ```dockerfile
-FROM %%IMAGE%%:11.0.12_7-jdk
+FROM %%IMAGE%%:21.0.2_13-jdk
 CMD ["java", "-jar", "/opt/app/japp.jar"]
 ```
 
