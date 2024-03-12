@@ -550,7 +550,7 @@ Inserting into the DB:
 curl -i -XPOST 'http://localhost:8086/write?db=mydb' --data-binary 'cpu_load_short,host=server01,region=us-west value=0.64 1434055562000000000'
 ```
 
-Read more about this in the [official documentation](https://docs.influxdata.com/influxdb/latest/guides/writing_data/)
+Read more about this in the [official documentation](https://docs.influxdata.com/influxdb/latest/guides/writing_data/).
 
 CLI / SHELL
 -----------
