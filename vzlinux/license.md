@@ -1,0 +1,1 @@
+The Virtuozzo Linux product uses logos, icons and other materials copyrighted by the Virtuozzo International GmbH. Please visit [https://www.virtuozzo.com/legal/](https://www.virtuozzo.com/legal/) for more information.
