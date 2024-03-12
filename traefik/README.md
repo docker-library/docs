@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`v3.0.0-rc1-windowsservercore-ltsc2022`, `3.0.0-rc1-windowsservercore-ltsc2022`, `v3.0-windowsservercore-ltsc2022`, `3.0-windowsservercore-ltsc2022`, `beaufort-windowsservercore-ltsc2022`](https://github.com/traefik/traefik-library-image/blob/6fc860aa66c25c1c4786a34d9398e66043af8d9d/windows/servercore-ltsc2022/Dockerfile)
--	[`v3.0.0-rc1-windowsservercore-1809`, `3.0.0-rc1-windowsservercore-1809`, `v3.0-windowsservercore-1809`, `3.0-windowsservercore-1809`, `beaufort-windowsservercore-1809`](https://github.com/traefik/traefik-library-image/blob/6fc860aa66c25c1c4786a34d9398e66043af8d9d/windows/1809/Dockerfile)
--	[`v3.0.0-rc1`, `3.0.0-rc1`, `v3.0`, `3.0`, `beaufort`](https://github.com/traefik/traefik-library-image/blob/6fc860aa66c25c1c4786a34d9398e66043af8d9d/alpine/Dockerfile)
+-	[`v3.0.0-rc2-windowsservercore-ltsc2022`, `3.0.0-rc2-windowsservercore-ltsc2022`, `v3.0-windowsservercore-ltsc2022`, `3.0-windowsservercore-ltsc2022`, `beaufort-windowsservercore-ltsc2022`](https://github.com/traefik/traefik-library-image/blob/1f408bed06e6a92b2085dd572f3d9b2798170c55/windows/servercore-ltsc2022/Dockerfile)
+-	[`v3.0.0-rc2-windowsservercore-1809`, `3.0.0-rc2-windowsservercore-1809`, `v3.0-windowsservercore-1809`, `3.0-windowsservercore-1809`, `beaufort-windowsservercore-1809`](https://github.com/traefik/traefik-library-image/blob/1f408bed06e6a92b2085dd572f3d9b2798170c55/windows/1809/Dockerfile)
+-	[`v3.0.0-rc2`, `3.0.0-rc2`, `v3.0`, `3.0`, `beaufort`](https://github.com/traefik/traefik-library-image/blob/1f408bed06e6a92b2085dd572f3d9b2798170c55/alpine/Dockerfile)
 -	[`v2.11.0-windowsservercore-ltsc2022`, `2.11.0-windowsservercore-ltsc2022`, `v2.11-windowsservercore-ltsc2022`, `2.11-windowsservercore-ltsc2022`, `mimolette-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`](https://github.com/traefik/traefik-library-image/blob/fccb66b9845fc4266154377b774ac95127d38078/windows/servercore-ltsc2022/Dockerfile)
 -	[`v2.11.0-windowsservercore-1809`, `2.11.0-windowsservercore-1809`, `v2.11-windowsservercore-1809`, `2.11-windowsservercore-1809`, `mimolette-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/traefik/traefik-library-image/blob/fccb66b9845fc4266154377b774ac95127d38078/windows/1809/Dockerfile)
 -	[`v2.11.0`, `2.11.0`, `v2.11`, `2.11`, `mimolette`, `latest`](https://github.com/traefik/traefik-library-image/blob/fccb66b9845fc4266154377b774ac95127d38078/alpine/Dockerfile)
