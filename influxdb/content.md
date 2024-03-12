@@ -524,9 +524,9 @@ An environment variable overrides the equivalent option in the configuration fil
 
 ```console
 docker run -p 8086:8086 \
-   -e INFLUXDB_REPORTING_DISABLED=true \
-   -e INFLUXDB_META_DIR=/path/to/metadir \
-   -e INFLUXDB_DATA_QUERY_LOG_ENABLED=false \
+    -e INFLUXDB_REPORTING_DISABLED=true \
+    -e INFLUXDB_META_DIR=/path/to/metadir \
+    -e INFLUXDB_DATA_QUERY_LOG_ENABLED=false \
     %%IMAGE%%:1.8
 ```
 
