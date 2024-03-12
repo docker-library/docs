@@ -630,9 +630,9 @@ The password for the user configured with `INFLUXDB_WRITE_USER`. If this is unse
 
 If the Docker image finds any files with the extensions `.sh` or `.iql` inside of the `/docker-entrypoint-initdb.d` folder, it will execute them. The order they are executed in is determined by the shell. This is usually alphabetical order.
 
-### Manually Initializing the Database
+### Manually Initialize InfluxDB v1
 
-To manually initialize the database and exit, the `/init-influxdb.sh` script can be used directly. It takes the same parameters as the `influxd run` command. As an example:
+To manually initialize an InfluxDB v1 database, use `docker run` to call the `/init-influxdb.sh` script directly. The script takes the same initialization options as the `influxd run` command--for example:
 
 ```console
 docker run --rm \
@@ -645,4 +645,10 @@ docker run --rm \
     %%IMAGE%%:1.8 /init-influxdb.sh
 ```
 
-The above would create the database `db0`, create an admin user with the password `supersecretpassword`, then create the `telegraf` user with your telegraf's secret password. It would then exit and leave behind any files it created in the volume that you mounted.
+The command creates the following:
+
+-	a database named `db0`
+-	an admin user `admin` with the password `supersecretpassword`
+-	a `telegraf` user with the password `secretpassword`
+
+The `-rm` flag causes Docker to exit and delete the container after the script runs. The data and configuration files created during initialization remain in the mounted volume (the host's `$PWD` directory).
