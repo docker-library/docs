@@ -442,10 +442,10 @@ Use this command to start an InfluxDB v2 Docker Hub container:
 
 ```console
 docker run -p 8086:8086 \
-      -e INFLUXD_BOLT_PATH=/root/.influxdbv2/influxd.bolt \
-      -e INFLUXD_ENGINE_PATH=/root/.influxdbv2/engine \
-      -v $PWD:/root/.influxdbv2 \
-      %%IMAGE%%:2
+    -e INFLUXD_BOLT_PATH=/root/.influxdbv2/influxd.bolt \
+    -e INFLUXD_ENGINE_PATH=/root/.influxdbv2/engine \
+    -v $PWD:/root/.influxdbv2 \
+    %%IMAGE%%:2
 ```
 
 How to use this image for InfluxDB v1
