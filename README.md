@@ -146,7 +146,7 @@ The file must work via `docker stack deploy` since that is how Play with Docker 
 
 This is the main script used to generate the `README.md` files for each image. The generated file is committed along with the files used to generate it. Accepted arguments are which image(s) you want to update or no arguments to update all of them.
 
-This script assumes [`bashbrew`](https://github.com/docker-library/official-images/tree/81e90ca8dcec892ade7eb348cba5a4a5d6851e17/bashbrew) is in your `PATH` (for scraping relevant tag information from the library manifest file for each repository).
+This script assumes [`bashbrew`](https://github.com/docker-library/bashbrew/releases) is in your `PATH` (for scraping relevant tag information from the library manifest file for each repository).
 
 ## `markdownfmt.sh` and `ymlfmt.sh`
 
