@@ -578,9 +578,9 @@ InfluxDB v1 database initialization
 
 The InfluxDB Docker Hub image lets you set initialization options when creating an InfluxDB v1 container.
 
-**WARNING**: We **don't** recommend using these options for production scenarios, but they're useful when running standalone instances for testing.
+The database initialization script is only called when running `influxd`; it isn't executed by any other program.
 
-The database initialization script is only called when running `influxd`.
+**WARNING**: We **don't** recommend using these options for production scenarios, but they're useful when running standalone instances for testing.
 
 ### Environment variables
 
