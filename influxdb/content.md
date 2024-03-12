@@ -1,20 +1,21 @@
-# What is InfluxDB?
+What is InfluxDB?
+=================
 
-InfluxDB is the time series platform designed to handle high write and query loads.
-InfluxDB enables real-time analytics by serving as a purpose-built database that optimizes processing and scaling for large time series data workloads.
-Using InfluxDB, you can collect, store, and process large amounts of timestamped data, including metrics and events for use cases such as DevOps monitoring, application metrics, IoT sensors, and event monitoring.
+InfluxDB is the time series data platform designed to handle high write and query workloads. Using InfluxDB, you can collect, store, and process large amounts of timestamped data, including metrics and events for use cases such as DevOps monitoring, application metrics, IoT sensors, and event monitoring.
+
+Use the InfluxDB Docker Hub image to write, query, and process time series data in [InfluxDB v2](https://docs.influxdata.com/influxdb/v2/) or [InfluxDB v1](https://docs.influxdata.com/influxdb/v1/).
 
 For more information, visit https://influxdata.com.
 
 %%LOGO%%
 
-Use the InfluxDB Docker Hub image to run and set up [InfluxDB v2](https://docs.influxdata.com/influxdb/v2/) or [InfluxDB v1](https://docs.influxdata.com/influxdb/v1/) to write and query time series data.
-
-# How to use this image for InfluxDB OSS v2
+How to use this image for InfluxDB OSS v2
+=========================================
 
 **Quick start**: See the guide to [Install InfluxDB v2 for Docker](https://docs.influxdata.com/influxdb/v2/install/?t=Docker) and get started using InfluxDB v2.
 
-## Start InfluxDB v2 and set up with the UI, CLI, or API
+Start InfluxDB v2 and set up with the UI, CLI, or API
+-----------------------------------------------------
 
 To start an InfluxDB v2 container that you can then set up using the included UI, the `influx` CLI, or the HTTP API, enter the following command:
 
@@ -28,32 +29,30 @@ docker run \
 
 Replace the following with your own values:
 
-- `$PWD/data`: A host directory to mount at the container's [InfluxDB data directory](https://docs.influxdata.com/influxdb/v2/reference/internals/file-system-layout/?t=docker#file-system-layout) path
-- `$PWD/config`: A host directory to mount at the container's [InfluxDB configuration directory](https://docs.influxdata.com/influxdb/v2/reference/internals/file-system-layout/?t=docker#file-system-layout) path
+-	`$PWD/data`: A host directory to mount at the container's [InfluxDB data directory](https://docs.influxdata.com/influxdb/v2/reference/internals/file-system-layout/?t=docker#file-system-layout) path
+-	`$PWD/config`: A host directory to mount at the container's [InfluxDB configuration directory](https://docs.influxdata.com/influxdb/v2/reference/internals/file-system-layout/?t=docker#file-system-layout) path
 
-After the container starts, the UI and API are accessible at http://localhost:8086 on the host.
-You're ready to set up an initial admin user, token, and bucket from outside or inside the container--choose one of the following:
+After the container starts, the UI and API are accessible at http://localhost:8086 on the host. You're ready to set up an initial admin user, token, and bucket from outside or inside the container--choose one of the following:
 
-- **Set up InfluxDB from outside the container**:
-[Set up InfluxDB](https://docs.influxdata.com/influxdb/v2/get-started/setup/) from the host or network using the UI, `influx` CLI, or HTTP API.
+-	**Set up InfluxDB from outside the container**:[Set up InfluxDB](https://docs.influxdata.com/influxdb/v2/get-started/setup/) from the host or network using the UI, `influx` CLI, or HTTP API.
 
-- **Set up InfluxDB from inside the container**:
-Use `docker exec` to run the `influx` CLI installed in the container--for example:
+-	**Set up InfluxDB from inside the container**: Use `docker exec` to run the `influx` CLI installed in the container--for example:
 
-  ```console
-  docker exec influxdb2 influx setup \
-      --username $USERNAME \
-      --password $PASSWORD \
-      --org $ORGANIZATION \
-      --bucket $BUCKET \
-      --force
-  ```
+	```console
+	docker exec influxdb2 influx setup \
+	  --username $USERNAME \
+	  --password $PASSWORD \
+	  --org $ORGANIZATION \
+	  --bucket $BUCKET \
+	  --force
+	```
 
-  See the [`influx setup` documentation](https://docs.influxdata.com/influxdb/v2/reference/cli/influx/setup/) for the full list of options.
+See the [`influx setup` documentation](https://docs.influxdata.com/influxdb/v2/reference/cli/influx/setup/) for the full list of options.
 
-  _If you run setup from within the container, InfluxDB stores `influx` CLI [connection configurations](/influxdb/v2/reference/cli/influx/#provide-required-authentication-credentials) in the container's `/etc/influxdb2/influx-configs` file._
+*If you run setup from within the container, InfluxDB stores `influx` CLI [connection configurations](/influxdb/v2/reference/cli/influx/#provide-required-authentication-credentials) in the container's `/etc/influxdb2/influx-configs` file.*
 
-## Start InfluxDB v2 with automated setup
+Start InfluxDB v2 with automated setup
+--------------------------------------
 
 To start and set up InfluxDB v2 with a single command, specify `-e DOCKER_INFLUXDB_INIT_MODE=setup` and `-e DOCKER_INFLUXDB_INIT_` environment variables for the initial user, password, bucket, and organization--for example:
 
@@ -71,27 +70,25 @@ docker run -d -p 8086:8086 \
 
 Replace the following with your own values:
 
-- `$PWD/data`: A host directory to mount at the container's [InfluxDB data directory](https://docs.influxdata.com/influxdb/v2/reference/internals/file-system-layout/?t=docker#file-system-layout) path
-- `$PWD/config`: A host directory to mount at the container's [InfluxDB configuration directory](https://docs.influxdata.com/influxdb/v2/reference/internals/file-system-layout/?t=docker#file-system-layout) path
-- `<USERNAME>`: A name for your initial admin [user](https://docs.influxdata.com/influxdb/v2/admin/users/)
-- `<PASSWORD>`: A password for your initial admin [user](https://docs.influxdata.com/influxdb/v2/admin/users/)
-- `<ORG_NAME>`: A name for your initial [organization](https://docs.influxdata.com/influxdb/v2/admin/organizations/)
-- `<BUCKET_NAME>`: A name for your initial [bucket](https://docs.influxdata.com/influxdb/v2/admin/buckets/) (database)
+-	`$PWD/data`: A host directory to mount at the container's [InfluxDB data directory](https://docs.influxdata.com/influxdb/v2/reference/internals/file-system-layout/?t=docker#file-system-layout) path
+-	`$PWD/config`: A host directory to mount at the container's [InfluxDB configuration directory](https://docs.influxdata.com/influxdb/v2/reference/internals/file-system-layout/?t=docker#file-system-layout) path
+-	`<USERNAME>`: A name for your initial admin [user](https://docs.influxdata.com/influxdb/v2/admin/users/)
+-	`<PASSWORD>`: A password for your initial admin [user](https://docs.influxdata.com/influxdb/v2/admin/users/)
+-	`<ORG_NAME>`: A name for your initial [organization](https://docs.influxdata.com/influxdb/v2/admin/organizations/)
+-	`<BUCKET_NAME>`: A name for your initial [bucket](https://docs.influxdata.com/influxdb/v2/admin/buckets/) (database)
 
-_If you run setup from within the container, InfluxDB stores `influx` CLI [connection configurations](/influxdb/v2/reference/cli/influx/#provide-required-authentication-credentials) in the container's `/etc/influxdb2/influx-configs` file._
+*If you run setup from within the container, InfluxDB stores `influx` CLI [connection configurations](/influxdb/v2/reference/cli/influx/#provide-required-authentication-credentials) in the container's `/etc/influxdb2/influx-configs` file.*
 
 ### Automated setup options
 
 In setup mode (`DOCKER_INFLUXDB_INIT_MODE=setup`) or upgrade mode (`DOCKER_INFLUXDB_INIT_MODE=upgrade`), InfluxDB supports the following Docker-specific environment variables:
 
-- `DOCKER_INFLUXDB_INIT_USERNAME`: A name for your initial admin [user](https://docs.influxdata.com/influxdb/v2/admin/users/).
-- `DOCKER_INFLUXDB_INIT_PASSWORD`: A password for your initial admin [user](https://docs.influxdata.com/influxdb/v2/admin/users/).
-- `DOCKER_INFLUXDB_INIT_ORG`: A name for your initial [organization](https://docs.influxdata.com/influxdb/v2/admin/organizations/).
-- `DOCKER_INFLUXDB_INIT_BUCKET`: A name for your initial [bucket](https://docs.influxdata.com/influxdb/v2/admin/buckets/).
-- Optional: `DOCKER_INFLUXDB_INIT_RETENTION`: A [duration](https://docs.influxdata.com/influxdb/v2/reference/glossary/#duration) to use as the initial bucket's [retention period](https://docs.influxdata.com/influxdb/v2/reference/internals/data-retention/#bucket-retention-period).
-  Default: `0` (infinite; doesn't delete data).
-- Optional: `DOCKER_INFLUXDB_INIT_ADMIN_TOKEN`: A string value to set for the [Operator token](https://docs.influxdata.com/influxdb/v2/admin/tokens/#operator-token).
-  Default: a generated token.
+-	`DOCKER_INFLUXDB_INIT_USERNAME`: A name for your initial admin [user](https://docs.influxdata.com/influxdb/v2/admin/users/).
+-	`DOCKER_INFLUXDB_INIT_PASSWORD`: A password for your initial admin [user](https://docs.influxdata.com/influxdb/v2/admin/users/).
+-	`DOCKER_INFLUXDB_INIT_ORG`: A name for your initial [organization](https://docs.influxdata.com/influxdb/v2/admin/organizations/).
+-	`DOCKER_INFLUXDB_INIT_BUCKET`: A name for your initial [bucket](https://docs.influxdata.com/influxdb/v2/admin/buckets/).
+-	Optional: `DOCKER_INFLUXDB_INIT_RETENTION`: A [duration](https://docs.influxdata.com/influxdb/v2/reference/glossary/#duration) to use as the initial bucket's [retention period](https://docs.influxdata.com/influxdb/v2/reference/internals/data-retention/#bucket-retention-period). Default: `0` (infinite; doesn't delete data).
+-	Optional: `DOCKER_INFLUXDB_INIT_ADMIN_TOKEN`: A string value to set for the [Operator token](https://docs.influxdata.com/influxdb/v2/admin/tokens/#operator-token). Default: a generated token.
 
 The following example shows how to pass values for all initial setup options:
 
@@ -109,41 +106,37 @@ docker run -d -p 8086:8086 \
     %%IMAGE%%:2
 ```
 
-_To upgrade from InfluxDB 1.x to InfluxDB 2.x, see the **Upgrading from InfluxDB 1.x** section below._
+*To upgrade from InfluxDB 1.x to InfluxDB 2.x, see the **Upgrading from InfluxDB 1.x** section below.\*
 
 With InfluxDB set up and running, see the [Get started](https://docs.influxdata.com/influxdb/v2/get-started/) tutorial to create tokens and write and query data.
 
 ### Custom Initialization Scripts
 
-In `setup` mode (`DOCKER_INFLUXDB_INIT_MODE=setup`) or `upgrade` mode (`DOCKER_INFLUXDB_INIT_MODE=upgrade`),
-the InfluxDB Docker Hub image supports running custom initialization scripts.
-After the setup process completes, scripts are executed in lexical sort order by name.
+In `setup` mode (`DOCKER_INFLUXDB_INIT_MODE=setup`) or `upgrade` mode (`DOCKER_INFLUXDB_INIT_MODE=upgrade`), the InfluxDB Docker Hub image supports running custom initialization scripts. After the setup process completes, scripts are executed in lexical sort order by name.
 
 For the container to run scripts, they must:
 
-- Be mounted in the container's `/docker-entrypoint-initdb.d` directory
-- Be named using the `.sh` file name extension
-- Be executable by the user running the `docker run` command--for example, to allow the current use to execute a script with `docker run`:
-  
-  ```console
-  chmod +x ./scripts/<yourscript.sh>
-  ```
+-	Be mounted in the container's `/docker-entrypoint-initdb.d` directory
+-	Be named using the `.sh` file name extension
+-	Be executable by the user running the `docker run` command--for example, to allow the current use to execute a script with `docker run`:
+
+	```console
+	chmod +x ./scripts/<yourscript.sh>
+	```
 
 > #### Grant permissions to mounted files
 >
-> By default, Docker runs containers using the user and group IDs of the user executing the `docker run` command.
-> When files are bind mounted into the container, Docker preserves the user and group ownership from the host system.
+> By default, Docker runs containers using the user and group IDs of the user executing the `docker run` command. When files are bind mounted into the container, Docker preserves the user and group ownership from the host system.
 
-The image exports a number of variables into the environment before executing scripts.
-The following variables are available for you to use in your scripts:
+The image exports a number of variables into the environment before executing scripts. The following variables are available for you to use in your scripts:
 
-- `INFLUX_CONFIGS_PATH`: Path to the `influx` CLI connection configurations file written by `setup`/`upgrade`
-- `INFLUX_HOST`: URL to the `influxd` instance running `setup`/`upgrade`
-- `DOCKER_INFLUXDB_INIT_USER_ID`: ID of the initial admin user created by `setup`/`upgrade`
-- `DOCKER_INFLUXDB_INIT_ORG_ID`: ID of the initial organization created by `setup`/`upgrade`
-- `DOCKER_INFLUXDB_INIT_BUCKET_ID`: ID of the initial bucket created by `setup`/`upgrade`
+-	`INFLUX_CONFIGS_PATH`: Path to the `influx` CLI connection configurations file written by `setup`/`upgrade`
+-	`INFLUX_HOST`: URL to the `influxd` instance running `setup`/`upgrade`
+-	`DOCKER_INFLUXDB_INIT_USER_ID`: ID of the initial admin user created by `setup`/`upgrade`
+-	`DOCKER_INFLUXDB_INIT_ORG_ID`: ID of the initial organization created by `setup`/`upgrade`
+-	`DOCKER_INFLUXDB_INIT_BUCKET_ID`: ID of the initial bucket created by `setup`/`upgrade`
 
-For example, to grant an InfluxDB 1.x client _write_ permission to your initial bucket, create a `$PWD/scripts/setup-v1.sh` file that contains the following:
+For example, to grant an InfluxDB 1.x client *write* permission to your initial bucket, create a `$PWD/scripts/setup-v1.sh` file that contains the following:
 
 ```bash
 #!/bin/bash
@@ -188,28 +181,30 @@ docker run -p 8086:8086 \
 >
 > This behavior allows for the InfluxDB container to reboot post-setup and avoid overwriting migrated data, `DB is already set up` errors, and errors from non-idempotent script commands.
 
-## Access InfluxDB v2 file system and ports
+Access InfluxDB v2 file system and ports
+----------------------------------------
 
 When starting an InfluxDB container, we recommend the following for easy access to your data, configurations, and InfluxDB v2 instance:
 
-- Publish the container's `8086` port to make the InfluxDB [UI](https://docs.influxdata.com/influxdb/v2/get-started/#influxdb-user-interface-ui) and [HTTP API](https://docs.influxdata.com/influxdb/v2/reference/api/) accessible from the host system.
-- Use Docker [Volumes](https://docs.docker.com/storage/volumes/) or [Bind mounts](https://docs.docker.com/storage/bind-mounts/) to persist InfluxDB [data and configuration directories](https://docs.influxdata.com/influxdb/v2/reference/internals/file-system-layout/?t=docker#file-system-layout) outside containers.
+-	Publish the container's `8086` port to make the InfluxDB [UI](https://docs.influxdata.com/influxdb/v2/get-started/#influxdb-user-interface-ui) and [HTTP API](https://docs.influxdata.com/influxdb/v2/reference/api/) accessible from the host system.
+-	Use Docker [Volumes](https://docs.docker.com/storage/volumes/) or [Bind mounts](https://docs.docker.com/storage/bind-mounts/) to persist InfluxDB [data and configuration directories](https://docs.influxdata.com/influxdb/v2/reference/internals/file-system-layout/?t=docker#file-system-layout) outside containers.
 
 ### Default file system and networking ports
 
 For InfluxDB v2, the InfluxDB Docker Hub image uses the following default ports and file system paths:
 
-- TCP port `8086`: the default port for the InfluxDB [UI](https://docs.influxdata.com/influxdb/v2/get-started/#influxdb-user-interface-ui) and [HTTP API](https://docs.influxdata.com/influxdb/v2/reference/api/).
-  To specify a different port or address, use the [`http-bind-address` configuration option](https://docs.influxdata.com/influxdb/v2/reference/config-options/#http-bind-address).
-- `/var/lib/influxdb2/`: the [InfluxDB data directory](https://docs.influxdata.com/influxdb/v2/reference/internals/file-system-layout/?t=docker#file-system-layout)
-  - `/engine/`: Default InfluxDB [Storage engine path](https://docs.influxdata.com/influxdb/v2/reference/internals/file-system-layout/#engine-path)
-  - `influxd.bolt`: Default [Bolt path](https://docs.influxdata.com/influxdb/v2/reference/internals/file-system-layout/#bolt-path)
-  - `influxd.sqlite`: Default [SQLite path](https://docs.influxdata.com/influxdb/v2/reference/internals/file-system-layout/#sqlite-path)
+-	TCP port `8086`: the default port for the InfluxDB [UI](https://docs.influxdata.com/influxdb/v2/get-started/#influxdb-user-interface-ui) and [HTTP API](https://docs.influxdata.com/influxdb/v2/reference/api/). To specify a different port or address, use the [`http-bind-address` configuration option](https://docs.influxdata.com/influxdb/v2/reference/config-options/#http-bind-address).
+-	`/var/lib/influxdb2/`: the [InfluxDB data directory](https://docs.influxdata.com/influxdb/v2/reference/internals/file-system-layout/?t=docker#file-system-layout)
 
-- `/etc/influxdb2`: the [InfluxDB configuration directory](https://docs.influxdata.com/influxdb/v2/reference/internals/file-system-layout/?t=docker#file-system-layout)
-  - `/etc/influxdb2/configs`: `influx` CLI connection configurations file
-  - `/etc/influxdb2/influx-configs`: `influx` CLI connection configurations file, _if you run setup from within the container_
-  - Optional: `/etc/influxdb2/config.[yml, json, toml]`: Your customized InfluxDB [configuration options](https://docs.influxdata.com/influxdb/v2/reference/config-options/) file
+	-	`/engine/`: Default InfluxDB [Storage engine path](https://docs.influxdata.com/influxdb/v2/reference/internals/file-system-layout/#engine-path)
+	-	`influxd.bolt`: Default [Bolt path](https://docs.influxdata.com/influxdb/v2/reference/internals/file-system-layout/#bolt-path)
+	-	`influxd.sqlite`: Default [SQLite path](https://docs.influxdata.com/influxdb/v2/reference/internals/file-system-layout/#sqlite-path)
+
+-	`/etc/influxdb2`: the [InfluxDB configuration directory](https://docs.influxdata.com/influxdb/v2/reference/internals/file-system-layout/?t=docker#file-system-layout)
+
+	-	`/etc/influxdb2/configs`: `influx` CLI connection configurations file
+	-	`/etc/influxdb2/influx-configs`: `influx` CLI connection configurations file, *if you run setup from within the container*
+	-	Optional: `/etc/influxdb2/config.[yml, json, toml]`: Your customized InfluxDB [configuration options](https://docs.influxdata.com/influxdb/v2/reference/config-options/) file
 
 ### Configure InfluxDB v2 in a container
 
@@ -219,85 +214,81 @@ To customize InfluxDB, specify [server configuration options](https://docs.influ
 
 To customize and mount an InfluxDB configuration file, do the following:
 
-1. If you haven't already, [set up InfluxDB](https://docs.influxdata.com/influxdb/v2/get-started/setup/) to initialize an API [Operator token](https://docs.influxdata.com/influxdb/v2/admin/tokens/#operator-token).
-   You'll need the Operator token in the next step.
+1.	If you haven't already, [set up InfluxDB](https://docs.influxdata.com/influxdb/v2/get-started/setup/) to initialize an API [Operator token](https://docs.influxdata.com/influxdb/v2/admin/tokens/#operator-token). You'll need the Operator token in the next step.
 
-2. Run the `influx server-config` CLI command to output the current server configuration to a file in the mounted configuration directory--for example, enter the following command to use the container's `influx` CLI and default Operator token:
+2.	Run the `influx server-config` CLI command to output the current server configuration to a file in the mounted configuration directory--for example, enter the following command to use the container's `influx` CLI and default Operator token:
 
-   ```sh
-   docker exec -it influxdb2 influx server-config > $PWD/config/config.yml
-   ```
+	```sh
+	docker exec -it influxdb2 influx server-config > $PWD/config/config.yml
+	```
 
-   Replace `$PWD/config/` with the host directory that you mounted at the container's `/etc/influxdb2` InfluxDB configuration directory path.
+Replace `$PWD/config/` with the host directory that you mounted at the container's `/etc/influxdb2` InfluxDB configuration directory path.
 
-3. Edit the `config.yml` file to customize [server configuration options](https://docs.influxdata.com/influxdb/v2/reference/config-options/#configuration-options).
-4. Restart the container.
+1.	Edit the `config.yml` file to customize [server configuration options](https://docs.influxdata.com/influxdb/v2/reference/config-options/#configuration-options).
+2.	Restart the container.
 
-   ```sh
-   docker restart influxdb2
-   ```
+	```sh
+	docker restart influxdb2
+	```
 
 #### Use environment variables and command line flags
 
 To override specific [configuration options](https://docs.influxdata.com/influxdb/v2/reference/config-options/#configuration-options), use environment variables or command line flags.
 
-- Pass `INFLUXD_` environment variables to Docker to override the configuration file--for example:
+-	Pass `INFLUXD_` environment variables to Docker to override the configuration file--for example:
 
-  ```sh
-  docker run -p 8086:8086 \
-    -e INFLUXD_STORAGE_WAL_FSYNC_DELAY=15m \
-    influxdb:2 
-  ```
+	```sh
+	docker run -p 8086:8086 \
+	-e INFLUXD_STORAGE_WAL_FSYNC_DELAY=15m \
+	influxdb:2 
+	```
 
-- Pass `influxd` command line flags to override environment variables and the configuration file--for example:
+-	Pass `influxd` command line flags to override environment variables and the configuration file--for example:
 
-  ```console
-  docker run -p 8086:8086 \
-      %%IMAGE%%:2 --storage-wal-fsync-delay=15m
-  ```
+	```console
+	docker run -p 8086:8086 \
+	  %%IMAGE%%:2 --storage-wal-fsync-delay=15m
+	```
 
 To learn more, see [InfluxDB configuration options](https://docs.influxdata.com/influxdb/v2/reference/config-options).
 
 ### Upgrading from InfluxDB 1.x
 
-InfluxDB 2.x provides a [1.x-compatible API](https://docs.influxdata.com/influxdb/v2/reference/api/influxdb-1x/), but expects a different storage layout on disk.
-To account for these differences, the InfluxDB Docker Hub image provides an `upgrade` feature that migrates 1.x data and configuration to 2.x before starting the `influxd` server.
+InfluxDB 2.x provides a [1.x-compatible API](https://docs.influxdata.com/influxdb/v2/reference/api/influxdb-1x/), but expects a different storage layout on disk. To account for these differences, the InfluxDB Docker Hub image provides an `upgrade` feature that migrates 1.x data and configuration to 2.x before starting the `influxd` server.
 
 The automated upgrade process creates the following in the InfluxDB v2 container:
 
-- an initial admin user
-- an initial organization
-- an initial bucket
-- InfluxDB v2 data files (the default path is `/var/lib/influxdb2`)
-- InfluxDB v2 configuration files (the default path is `/etc/influxdb2`)
+-	an initial admin user
+-	an initial organization
+-	an initial bucket
+-	InfluxDB v2 data files (the default path is `/var/lib/influxdb2`\)
+-	InfluxDB v2 configuration files (the default path is `/etc/influxdb2`\)
 
-_Mount volumes at both paths to avoid losing data._
+*Mount volumes at both paths to avoid losing data.*
 
 To run the automated upgrade, specify the following when you start the container:
 
-- InfluxDB v2 initialization environment variables:
+-	InfluxDB v2 initialization environment variables:
 
-  - `DOCKER_INFLUXDB_INIT_MODE=upgrade`
-  - `DOCKER_INFLUXDB_INIT_USERNAME`: A name for the initial admin [user](https://docs.influxdata.com/influxdb/v2/admin/users/)
-  - `DOCKER_INFLUXDB_INIT_PASSWORD`: A password for the initial admin [user](https://docs.influxdata.com/influxdb/v2/admin/users/)
-  - `DOCKER_INFLUXDB_INIT_ORG`: A name for the initial [organization](https://docs.influxdata.com/influxdb/v2/admin/organizations/)
-  - `DOCKER_INFLUXDB_INIT_BUCKET`: A name for the initial [bucket](https://docs.influxdata.com/influxdb/v2/admin/buckets/)
-  - Optional: `DOCKER_INFLUXDB_INIT_RETENTION`: A [duration](https://docs.influxdata.com/influxdb/v2/reference/glossary/#duration) for the bucket [retention period](https://docs.influxdata.com/influxdb/v2/reference/internals/data-retention/#bucket-retention-period).
-    Default: `0` (infinite; doesn't delete data)
-  - Optional: `DOCKER_INFLUXDB_INIT_ADMIN_TOKEN`: A value to set for the [Operator token](https://docs.influxdata.com/influxdb/v2/admin/tokens/#operator-token).
-    Default: generates a token.
+	-	`DOCKER_INFLUXDB_INIT_MODE=upgrade`
+	-	`DOCKER_INFLUXDB_INIT_USERNAME`: A name for the initial admin [user](https://docs.influxdata.com/influxdb/v2/admin/users/)
+	-	`DOCKER_INFLUXDB_INIT_PASSWORD`: A password for the initial admin [user](https://docs.influxdata.com/influxdb/v2/admin/users/)
+	-	`DOCKER_INFLUXDB_INIT_ORG`: A name for the initial [organization](https://docs.influxdata.com/influxdb/v2/admin/organizations/)
+	-	`DOCKER_INFLUXDB_INIT_BUCKET`: A name for the initial [bucket](https://docs.influxdata.com/influxdb/v2/admin/buckets/)
+	-	Optional: `DOCKER_INFLUXDB_INIT_RETENTION`: A [duration](https://docs.influxdata.com/influxdb/v2/reference/glossary/#duration) for the bucket [retention period](https://docs.influxdata.com/influxdb/v2/reference/internals/data-retention/#bucket-retention-period). Default: `0` (infinite; doesn't delete data)
+	-	Optional: `DOCKER_INFLUXDB_INIT_ADMIN_TOKEN`: A value to set for the [Operator token](https://docs.influxdata.com/influxdb/v2/admin/tokens/#operator-token). Default: generates a token.
 
-- 1.x data and configuration paths:
+-	1.x data and configuration paths:
 
-  - A 1.x data volume, specified by the `DOCKER_INFLUXDB_INIT_UPGRADE_V1_DIR` environment variable or mounted at `/var/lib/influxdb`
-  - Optional: a 1.x custom configuration file, specified by the `DOCKER_INFLUXDB_INIT_UPGRADE_V1_CONFIG` environment variable or mounted at `/etc/influxdb/influxdb.conf`
+	-	A 1.x data volume, specified by the `DOCKER_INFLUXDB_INIT_UPGRADE_V1_DIR` environment variable or mounted at `/var/lib/influxdb`
+	-	Optional: a 1.x custom configuration file, specified by the `DOCKER_INFLUXDB_INIT_UPGRADE_V1_CONFIG` environment variable or mounted at `/etc/influxdb/influxdb.conf`
 
 The upgrade process searches for mounted 1.x data and configuration paths in the following order of precedence:
 
-1. A configuration file referenced by the `DOCKER_INFLUXDB_INIT_UPGRADE_V1_CONFIG` environment variable
-2. A data directory referenced by the `DOCKER_INFLUXDB_INIT_UPGRADE_V1_DIR` environment variable
-3. A configuration file mounted at `/etc/influxdb/influxdb.conf`
-4. A data directory mounted at `/var/lib/influxdb`
+1.	A configuration file referenced by the `DOCKER_INFLUXDB_INIT_UPGRADE_V1_CONFIG` environment variable
+2.	A data directory referenced by the `DOCKER_INFLUXDB_INIT_UPGRADE_V1_DIR` environment variable
+3.	A configuration file mounted at `/etc/influxdb/influxdb.conf`
+4.	A data directory mounted at `/var/lib/influxdb`
 
 > #### Automated setup and upgrade ignored if already setup
 >
@@ -315,8 +306,7 @@ docker run -p 8086:8086 \
     %%IMAGE%%:1.8
 ```
 
-To upgrade this deployment to InfluxDB 2.x, stop the running InfluxDB 1.x container,
-and then run the following command:
+To upgrade this deployment to InfluxDB 2.x, stop the running InfluxDB 1.x container, and then run the following command:
 
 ```console
 docker run -p 8086:8086 \
@@ -332,7 +322,7 @@ docker run -p 8086:8086 \
 
 #### Upgrade InfluxDB 1.x: custom configuration
 
-Assume you've been running an InfluxDB 1.x deployment with customized configuration (`/etc/influxdb/influxdb.conf`):
+Assume you've been running an InfluxDB 1.x deployment with customized configuration (`/etc/influxdb/influxdb.conf`\):
 
 ```console
 docker run -p 8086:8086 \
@@ -341,8 +331,7 @@ docker run -p 8086:8086 \
     %%IMAGE%%:1.8
 ```
 
-To upgrade this deployment to InfluxDB 2.x, stop the running InfluxDB 1.x container,
-and then run the following command:
+To upgrade this deployment to InfluxDB 2.x, stop the running InfluxDB 1.x container, and then run the following command:
 
 ```console
 docker run -p 8086:8086 \
@@ -412,11 +401,9 @@ To learn more about the upgrade process, see the [v1-to-v2 upgrade guide](https:
 
 ### Upgrading from quay.io-hosted InfluxDB 2.x image
 
-Early Docker builds of InfluxDB 2.x were hosted at `quay.io/influxdb/influxdb` and contained the `influx` and `influxd` binaries without any default configuration or helper scripts.
-By default, the `influxd` process stored data in `/root/.influxdbv2`.
+Early Docker builds of InfluxDB 2.x were hosted at `quay.io/influxdb/influxdb` and contained the `influx` and `influxd` binaries without any default configuration or helper scripts. By default, the `influxd` process stored data in `/root/.influxdbv2`.
 
-Starting with `v2.0.4`, we restored the InfluxDB Docker Hub build, which defaults to storing data in `/var/lib/influxdb2`.
-If you upgrade directly from `quay.io/influxdb/influxdb` to `influxdb:2.0.4` using the default settings, InfluxDB won't be able to find your existing data files.
+Starting with `v2.0.4`, we restored the InfluxDB Docker Hub build, which defaults to storing data in `/var/lib/influxdb2`. If you upgrade directly from `quay.io/influxdb/influxdb` to `influxdb:2.0.4` using the default settings, InfluxDB won't be able to find your existing data files.
 
 To avoid this problem when migrating from `quay.io/influxdb/influxdb` to `influxdb:2.0`, choose one of the following:
 
@@ -461,7 +448,8 @@ docker run -p 8086:8086 \
       %%IMAGE%%:2
 ```
 
-# How to use this image for InfluxDB v1
+How to use this image for InfluxDB v1
+=====================================
 
 Use the InfluxDB Docker Hub image to run and set up an [InfluxDB 1.x](https://docs.influxdata.com/influxdb/v1/) container.
 
@@ -477,19 +465,19 @@ docker run -p 8086:8086 \
 
 The command passes the following arguments:
 
-- `-p 8086:8086`: Exposes the InfluxDB [HTTP API](https://docs.influxdata.com/influxdb/v2/reference/api/) on host port `8086`.
-- `-v $PWD:/var/lib/influxdb`: Mounts the host's `$PWD` directory to the [InfluxDB data directory](https://docs.influxdata.com/influxdb/v1/concepts/file-system-layout/) to persist data outside the container.
+-	`-p 8086:8086`: Exposes the InfluxDB [HTTP API](https://docs.influxdata.com/influxdb/v2/reference/api/) on host port `8086`.
+-	`-v $PWD:/var/lib/influxdb`: Mounts the host's `$PWD` directory to the [InfluxDB data directory](https://docs.influxdata.com/influxdb/v1/concepts/file-system-layout/) to persist data outside the container.
 
 Replace `$PWD` with the host directory where you want InfluxDB to store data.
 
-_Use Docker [Volumes](https://docs.docker.com/storage/volumes/) or [Bind mounts](https://docs.docker.com/storage/bind-mounts/) to persist InfluxDB [data and configuration directories](https://docs.influxdata.com/influxdb/v1/concepts/file-system-layout/)._
+*Use Docker [Volumes](https://docs.docker.com/storage/volumes/) or [Bind mounts](https://docs.docker.com/storage/bind-mounts/) to persist InfluxDB [data and configuration directories](https://docs.influxdata.com/influxdb/v1/concepts/file-system-layout/).*
 
 ### Networking ports
 
 InfluxDB uses the following networking ports:
 
-- TCP port `8086`: the default port for the [HTTP API](https://docs.influxdata.com/influxdb/v1/tools/api/)
-- TCP port `2003`: the port for the Graphite protocol (if enabled)
+-	TCP port `8086`: the default port for the [HTTP API](https://docs.influxdata.com/influxdb/v1/tools/api/)
+-	TCP port `2003`: the port for the Graphite protocol (if enabled)
 
 Using the `docker run` [`-P, --publish-all` flag](https://docs.docker.com/reference/cli/docker/container/run/#publish-all) exposes the InfluxDB HTTP API to the host.
 
@@ -501,26 +489,25 @@ To configure InfluxDB v1 in a container, use a configuration file or environment
 
 To customize and mount a configuration file, do the following:
 
-1. Output the current server configuration to a file in the mounted configuration directory--for example:
+1.	Output the current server configuration to a file in the mounted configuration directory--for example:
 
-   ```console
-   docker run --rm %%IMAGE%%:1.8 influxd config > influxdb.conf
-   ```
+	```console
+	docker run --rm %%IMAGE%%:1.8 influxd config > influxdb.conf
+	```
 
-2. Edit the `influxdb.conf` file to customize [server configuration options](https://docs.influxdata.com/influxdb/v2/reference/config-options/#configuration-options).
+2.	Edit the `influxdb.conf` file to customize [server configuration options](https://docs.influxdata.com/influxdb/v2/reference/config-options/#configuration-options).
 
-   ```console
-   docker run -p 8086:8086 \
-       -v $PWD/influxdb.conf:/etc/influxdb/influxdb.conf:ro \
-       %%IMAGE%%:1.8 -config /etc/influxdb/influxdb.conf
-   ```
+	```console
+	docker run -p 8086:8086 \
+	  -v $PWD/influxdb.conf:/etc/influxdb/influxdb.conf:ro \
+	  %%IMAGE%%:1.8 -config /etc/influxdb/influxdb.conf
+	```
 
-   Replace `$PWD` with the host directory where you want to store the configuration file.
+	Replace `$PWD` with the host directory where you want to store the configuration file.
 
 #### Use environment variables
 
-Pass [`INFLUXDB_` environment variables](https://docs.influxdata.com/influxdb/v1/administration/config/#environment-variables) to override specific InfluxDB v1 configuration options.
-An environment variable overrides the equivalent option in the configuration file.
+Pass [`INFLUXDB_` environment variables](https://docs.influxdata.com/influxdb/v1/administration/config/#environment-variables) to override specific InfluxDB v1 configuration options. An environment variable overrides the equivalent option in the configuration file.
 
 ```console
 docker run -p 8086:8086 \
