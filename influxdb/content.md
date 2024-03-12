@@ -576,11 +576,13 @@ docker run --rm --link=influxdb -it %%IMAGE%%:1.8 influx -host influxdb
 InfluxDB v1 database initialization
 -----------------------------------
 
+### Not recommended for production
+
+We **don't** recommend using initialization options for InfluxDB v1 production scenarios, but they're useful when running standalone instances for testing.
+
 The InfluxDB Docker Hub image lets you set initialization options when creating an InfluxDB v1 container.
 
 The database initialization script is only called when running `influxd`; it isn't executed by any other program.
-
-**WARNING**: We **don't** recommend using these options for production scenarios, but they're useful when running standalone instances for testing.
 
 ### Environment variables
 
