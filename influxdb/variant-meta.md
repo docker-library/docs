@@ -1,5 +1,4 @@
-`%%IMAGE%%:meta`
-----------------
+## `%%IMAGE%%:meta`
 
 *This image requires a valid license key from InfluxData.* Please visit our [products page](https://www.influxdata.com/products/) to learn more.
 
@@ -118,4 +117,4 @@ INFLUXDB_META_DIR=/path/to/metadir
 INFLUXDB_ENTERPRISE_REGISTRATION_ENABLED=true
 ```
 
-Find more about configuring InfluxDB Meta [here](http://docs.influxdata.com/enterprise_influxdb/latest/production_installation/meta_node_installation/).
+For more information, see how to [Install InfluxDB Enterprise meta nodes](https://docs.influxdata.com/enterprise_influxdb/v1/introduction/installation/meta_node_installation/).
