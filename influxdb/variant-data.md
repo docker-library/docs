@@ -1,5 +1,4 @@
-`%%IMAGE%%:data`
-----------------
+## `%%IMAGE%%:data`
 
 *Using this image for [InfluxDB Enterprise](https://docs.influxdata.com/enterprise_influxdb/v1/introduction/installation/meta_node_installation/#license-key-or-file) requires a valid InfluxData [license key](https://docs.influxdata.com/enterprise_influxdb/v1/introduction/installation/meta_node_installation/#license-key-or-file).*
 

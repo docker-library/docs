@@ -1,5 +1,4 @@
-What is InfluxDB?
-=================
+# What is InfluxDB?
 
 InfluxDB is the time series data platform designed to handle high write and query workloads. Using InfluxDB, you can collect, store, and process large amounts of timestamped data, including metrics and events for use cases such as DevOps monitoring, application metrics, IoT sensors, and event monitoring.
 
@@ -9,13 +8,11 @@ For more information, visit https://influxdata.com.
 
 %%LOGO%%
 
-How to use this image for InfluxDB v2
-=====================================
+# How to use this image for InfluxDB v2
 
 **Quick start**: See the guide to [Install InfluxDB v2 for Docker](https://docs.influxdata.com/influxdb/v2/install/?t=Docker) and get started using InfluxDB v2.
 
-Start InfluxDB v2 and set up with the UI, CLI, or API
------------------------------------------------------
+## Start InfluxDB v2 and set up with the UI, CLI, or API
 
 To start an InfluxDB v2 container that you can then set up using the included UI, the `influx` CLI, or the HTTP API, enter the following command:
 
@@ -51,8 +48,7 @@ See the [`influx setup` documentation](https://docs.influxdata.com/influxdb/v2/r
 
 *If you run setup from within the container, InfluxDB stores `influx` CLI [connection configurations](/influxdb/v2/reference/cli/influx/#provide-required-authentication-credentials) in the container's `/etc/influxdb2/influx-configs` file.*
 
-Start InfluxDB v2 with automated setup
---------------------------------------
+## Start InfluxDB v2 with automated setup
 
 To start and set up InfluxDB v2 with a single command, specify `-e DOCKER_INFLUXDB_INIT_MODE=setup` and `-e DOCKER_INFLUXDB_INIT_` environment variables for the initial user, password, bucket, and organization--for example:
 
@@ -181,8 +177,7 @@ docker run -p 8086:8086 \
 >
 > This behavior allows for the InfluxDB container to reboot post-setup and avoid overwriting migrated data, `DB is already set up` errors, and errors from non-idempotent script commands.
 
-Access InfluxDB v2 file system and ports
-----------------------------------------
+## Access InfluxDB v2 file system and ports
 
 When starting an InfluxDB container, we recommend the following for easy access to your data, configurations, and InfluxDB v2 instance:
 
@@ -261,8 +256,8 @@ The automated upgrade process creates the following in the InfluxDB v2 container
 -	an initial admin user
 -	an initial organization
 -	an initial bucket
--	InfluxDB v2 data files (the default path is `/var/lib/influxdb2`\)
--	InfluxDB v2 configuration files (the default path is `/etc/influxdb2`\)
+-	InfluxDB v2 data files (the default path is `/var/lib/influxdb2`)
+-	InfluxDB v2 configuration files (the default path is `/etc/influxdb2`)
 
 *Mount volumes at both paths to avoid losing data.*
 
@@ -322,7 +317,7 @@ docker run -p 8086:8086 \
 
 #### Upgrade InfluxDB 1.x: custom configuration
 
-Assume you've been running an InfluxDB 1.x deployment with customized configuration (`/etc/influxdb/influxdb.conf`\):
+Assume you've been running an InfluxDB 1.x deployment with customized configuration (`/etc/influxdb/influxdb.conf`):
 
 ```console
 docker run -p 8086:8086 \
@@ -448,13 +443,11 @@ docker run -p 8086:8086 \
     %%IMAGE%%:2
 ```
 
-How to use this image for InfluxDB v1
-=====================================
+# How to use this image for InfluxDB v1
 
 Use the InfluxDB Docker Hub image to run and set up an [InfluxDB 1.x](https://docs.influxdata.com/influxdb/v1/) container.
 
-Running the container
----------------------
+## Running the container
 
 To start an InfluxDB 1.x container, enter the following command:
 
@@ -473,8 +466,7 @@ Replace `$PWD` with the host directory where you want InfluxDB to store data.
 
 *Use Docker [Volumes](https://docs.docker.com/storage/volumes/) or [Bind mounts](https://docs.docker.com/storage/bind-mounts/) to persist InfluxDB [data and configuration directories](https://docs.influxdata.com/influxdb/v1/concepts/file-system-layout/).*
 
-Networking ports
-----------------
+## Networking ports
 
 InfluxDB uses the following networking ports:
 
@@ -483,8 +475,7 @@ InfluxDB uses the following networking ports:
 
 Using the `docker run` [`-P, --publish-all` flag](https://docs.docker.com/reference/cli/docker/container/run/#publish-all) exposes the InfluxDB HTTP API to the host.
 
-Configure InfluxDB v1 in a container
-------------------------------------
+## Configure InfluxDB v1 in a container
 
 To configure InfluxDB v1 in a container, use a configuration file or environment variables.
 
@@ -522,8 +513,7 @@ docker run -p 8086:8086 \
 
 Learn more about [configuring InfluxDB v1](https://docs.influxdata.com/influxdb/v1.8/administration/config/).
 
-Graphite
---------
+## Graphite
 
 InfluxDB supports the Graphite line protocol, but the service and ports are not exposed by default. To run InfluxDB with Graphite support enabled, you can either use a configuration file or set the appropriate environment variables. Run InfluxDB with the default Graphite configuration:
 
@@ -535,8 +525,7 @@ docker run -p 8086:8086 -p 2003:2003 \
 
 See the [README on GitHub](https://github.com/influxdata/influxdb/blob/master/services/graphite/README.md) for more detailed documentation to set up the Graphite service. In order to take advantage of graphite templates, you should use a configuration file by outputting a default configuration file using the steps above and modifying the `[[graphite]]` section.
 
-InfluxDB v1 HTTP API
---------------------
+## InfluxDB v1 HTTP API
 
 Creating a DB named mydb:
 
@@ -552,8 +541,7 @@ curl -i -XPOST 'http://localhost:8086/write?db=mydb' --data-binary 'cpu_load_sho
 
 Read more about this in the [official documentation](https://docs.influxdata.com/influxdb/latest/guides/writing_data/).
 
-CLI / SHELL
------------
+## CLI / SHELL
 
 Start the container:
 
@@ -573,8 +561,7 @@ Or run the influx client in a separate container:
 docker run --rm --link=influxdb -it %%IMAGE%%:1.8 influx -host influxdb
 ```
 
-InfluxDB v1 database initialization
------------------------------------
+## InfluxDB v1 database initialization
 
 ### Not recommended for production
 
