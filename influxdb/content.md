@@ -77,7 +77,7 @@ Replace the following with your own values:
 
 ### Automated setup options
 
-In setup mode (`DOCKER_INFLUXDB_INIT_MODE=setup`) or upgrade mode (`DOCKER_INFLUXDB_INIT_MODE=upgrade`), InfluxDB supports the following Docker-specific environment variables:
+In setup mode (`DOCKER_INFLUXDB_INIT_MODE=setup`) or upgrade mode (`DOCKER_INFLUXDB_INIT_MODE=upgrade`), you can specify the following Docker-specific environment variables to provide initial setup values:
 
 -	`DOCKER_INFLUXDB_INIT_USERNAME`: A name for your initial admin [user](https://docs.influxdata.com/influxdb/v2/admin/users/).
 -	`DOCKER_INFLUXDB_INIT_PASSWORD`: A password for your initial admin [user](https://docs.influxdata.com/influxdb/v2/admin/users/).
