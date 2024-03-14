@@ -14,7 +14,7 @@ For more information, visit https://influxdata.com.
 
 ## Start InfluxDB v2 and set up with the UI, CLI, or API
 
-To start an InfluxDB v2 container that you can then set up using the included UI, the `influx` CLI, or the HTTP API, enter the following command:
+To start an InfluxDB v2 container, enter the following command:
 
 ```console
 docker run \
@@ -29,9 +29,9 @@ Replace the following with your own values:
 -	`$PWD/data`: A host directory to mount at the container's [InfluxDB data directory](https://docs.influxdata.com/influxdb/v2/reference/internals/file-system-layout/?t=docker#file-system-layout) path
 -	`$PWD/config`: A host directory to mount at the container's [InfluxDB configuration directory](https://docs.influxdata.com/influxdb/v2/reference/internals/file-system-layout/?t=docker#file-system-layout) path
 
-After the container starts, the UI and API are accessible at http://localhost:8086 on the host. You're ready to set up an initial admin user, token, and bucket from outside or inside the container--choose one of the following:
+After the container starts, the InfluxDB UI and API are accessible at http://localhost:8086 on the host. You're ready to set up an initial admin user, token, and bucket from outside or inside the container--choose one of the following:
 
--	**Set up InfluxDB from outside the container**:[Set up InfluxDB](https://docs.influxdata.com/influxdb/v2/get-started/setup/) from the host or network using the UI, `influx` CLI, or HTTP API.
+-	**Set up InfluxDB from outside the container**: [Set up InfluxDB](https://docs.influxdata.com/influxdb/v2/get-started/setup/) from the host or network using the InfluxDB UI, `influx` CLI, or HTTP API.
 
 -	**Set up InfluxDB from inside the container**: Use `docker exec` to run the `influx` CLI installed in the container--for example:
 
@@ -122,7 +122,7 @@ For the container to run scripts, they must:
 
 > #### Grant permissions to mounted files
 >
-> By default, Docker runs containers using the user and group IDs of the user executing the `docker run` command. When files are bind mounted into the container, Docker preserves the user and group ownership from the host system.
+> By default, Docker runs containers using the user and group IDs of the user executing the `docker run` command. When files are bind-mounted into the container, Docker preserves the user and group ownership from the host system.
 
 The image exports a number of variables into the environment before executing scripts. The following variables are available for you to use in your scripts:
 
@@ -182,7 +182,7 @@ docker run -p 8086:8086 \
 When starting an InfluxDB container, we recommend the following for easy access to your data, configurations, and InfluxDB v2 instance:
 
 -	Publish the container's `8086` port to make the InfluxDB [UI](https://docs.influxdata.com/influxdb/v2/get-started/#influxdb-user-interface-ui) and [HTTP API](https://docs.influxdata.com/influxdb/v2/reference/api/) accessible from the host system.
--	Use Docker [Volumes](https://docs.docker.com/storage/volumes/) or [Bind mounts](https://docs.docker.com/storage/bind-mounts/) to persist InfluxDB [data and configuration directories](https://docs.influxdata.com/influxdb/v2/reference/internals/file-system-layout/?t=docker#file-system-layout) outside containers.
+-	Use Docker [Volumes](https://docs.docker.com/storage/volumes/) or [Bind mounts](https://docs.docker.com/storage/bind-mounts/) to persist InfluxDB [data and configuration directories](https://docs.influxdata.com/influxdb/v2/reference/internals/file-system-layout/?t=docker#file-system-layout) outside of containers.
 
 ### Default file system and networking ports
 
