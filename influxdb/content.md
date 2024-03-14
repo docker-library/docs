@@ -640,4 +640,4 @@ The command creates the following:
 -	an admin user `admin` with the password `supersecretpassword`
 -	a `telegraf` user with the password `secretpassword`
 
-The `-rm` flag causes Docker to exit and delete the container after the script runs. The data and configuration files created during initialization remain in the mounted volume (the host's `$PWD` directory).
+The `--rm` flag causes Docker to exit and delete the container after the script runs. The data and configuration files created during initialization remain in the mounted volume (the host's `$PWD` directory).
