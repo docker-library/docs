@@ -19,8 +19,8 @@ To start an InfluxDB v2 container, enter the following command:
 ```bash
 docker run \
     -p 8086:8086 \
-    -v $PWD/data:/var/lib/influxdb2 \
-    -v $PWD/config:/etc/influxdb2 \
+    -v "$PWD/data:/var/lib/influxdb2" \
+    -v "$PWD/config:/etc/influxdb2" \
     %%IMAGE%%:2
 ```
 
@@ -54,8 +54,8 @@ To start and set up InfluxDB v2 with a single command, specify `-e DOCKER_INFLUX
 
 ```bash
 docker run -d -p 8086:8086 \
-  -v $PWD/data:/var/lib/influxdb2 \
-  -v $PWD/config:/etc/influxdb2 \
+  -v "$PWD/data:/var/lib/influxdb2" \
+  -v "$PWD/config:/etc/influxdb2" \
   -e DOCKER_INFLUXDB_INIT_MODE=setup \
   -e DOCKER_INFLUXDB_INIT_USERNAME=<USERNAME> \
   -e DOCKER_INFLUXDB_INIT_PASSWORD=<PASSWORD> \
@@ -90,8 +90,8 @@ The following example shows how to pass values for all initial setup options:
 
 ```bash
 docker run -d -p 8086:8086 \
-    -v $PWD/data:/var/lib/influxdb2 \
-    -v $PWD/config:/etc/influxdb2 \
+    -v "$PWD/data:/var/lib/influxdb2" \
+    -v "$PWD/config:/etc/influxdb2" \
     -e DOCKER_INFLUXDB_INIT_MODE=setup \
     -e DOCKER_INFLUXDB_INIT_USERNAME=my-user \
     -e DOCKER_INFLUXDB_INIT_PASSWORD=my-password \
@@ -156,9 +156,9 @@ Then, run the following command to start and set up InfluxDB using custom script
 
 ```bash
 docker run -p 8086:8086 \
-     -v $PWD/data:/var/lib/influxdb2 \
-     -v $PWD/config:/etc/influxdb2 \
-     -v $PWD/scripts:/docker-entrypoint-initdb.d \
+     -v "$PWD/data:/var/lib/influxdb2" \
+     -v "$PWD/config:/etc/influxdb2" \
+     -v "$PWD/scripts:/docker-entrypoint-initdb.d" \
      -e DOCKER_INFLUXDB_INIT_MODE=setup \
      -e DOCKER_INFLUXDB_INIT_USERNAME=my-user \
      -e DOCKER_INFLUXDB_INIT_PASSWORD=my-password \
@@ -213,8 +213,8 @@ To customize and mount an InfluxDB configuration file, do the following:
 
 2.	Run the `influx server-config` CLI command to output the current server configuration to a file in the mounted configuration directory--for example, enter the following command to use the container's `influx` CLI and default Operator token:
 
-	```sh
-	docker exec -it influxdb2 influx server-config > $PWD/config/config.yml
+	```bash
+	docker exec -it influxdb2 influx server-config > "$PWD/config/config.yml"
 	```
 
 Replace `$PWD/config/` with the host directory that you mounted at the container's `/etc/influxdb2` InfluxDB configuration directory path.
@@ -222,7 +222,7 @@ Replace `$PWD/config/` with the host directory that you mounted at the container
 1.	Edit the `config.yml` file to customize [server configuration options](https://docs.influxdata.com/influxdb/v2/reference/config-options/#configuration-options).
 2.	Restart the container.
 
-	```sh
+	```bash
 	docker restart influxdb2
 	```
 
@@ -232,7 +232,7 @@ To override specific [configuration options](https://docs.influxdata.com/influxd
 
 -	Pass `INFLUXD_` environment variables to Docker to override the configuration file--for example:
 
-	```sh
+	```bash
 	docker run -p 8086:8086 \
 	-e INFLUXD_STORAGE_WAL_FSYNC_DELAY=15m \
 	influxdb:2 
@@ -322,7 +322,7 @@ Assume you've been running an InfluxDB 1.x deployment with customized configurat
 ```bash
 docker run -p 8086:8086 \
     -v influxdb:/var/lib/influxdb \
-    -v $PWD/influxdb.conf:/etc/influxdb/influxdb.conf \
+    -v "$PWD/influxdb.conf:/etc/influxdb/influxdb.conf" \
     %%IMAGE%%:1.8
 ```
 
@@ -333,7 +333,7 @@ docker run -p 8086:8086 \
     -v influxdb:/var/lib/influxdb \
     -v influxdb2:/var/lib/influxdb2 \
     -v influxdb2-config:/etc/influxdb2 \
-    -v $PWD/influxdb.conf:/etc/influxdb/influxdb.conf \
+    -v "$PWD/influxdb.conf:/etc/influxdb/influxdb.conf" \
     -e DOCKER_INFLUXDB_INIT_MODE=upgrade \
     -e DOCKER_INFLUXDB_INIT_USERNAME=my-user \
     -e DOCKER_INFLUXDB_INIT_PASSWORD=my-password \
@@ -349,7 +349,7 @@ Assume you've been running an InfluxDB 1.x deployment with data and configuratio
 ```bash
 docker run -p 8086:8086 \
     -v influxdb:/root/influxdb/data \
-    -v $PWD/influxdb.conf:/root/influxdb/influxdb.conf \
+    -v "$PWD/influxdb.conf:/root/influxdb/influxdb.conf" \
     %%IMAGE%%:1.8 -config /root/influxdb/influxdb.conf
 ```
 
@@ -362,7 +362,7 @@ docker run -p 8086:8086 \
     -v influxdb:/root/influxdb/data \
     -v influxdb2:/var/lib/influxdb2 \
     -v influxdb2-config:/etc/influxdb2 \
-    -v $PWD/influxdb.conf:/root/influxdb/influxdb.conf \
+    -v "$PWD/influxdb.conf:/root/influxdb/influxdb.conf" \
     -e DOCKER_INFLUXDB_INIT_MODE=upgrade \
     -e DOCKER_INFLUXDB_INIT_USERNAME=my-user \
     -e DOCKER_INFLUXDB_INIT_PASSWORD=my-password \
@@ -379,7 +379,7 @@ docker run -p 8086:8086 \
     -v influxdb:/root/influxdb/data \
     -v influxdb2:/root/influxdb2/data \
     -v influxdb2-config:/etc/influxdb2 \
-    -v $PWD/influxdb.conf:/root/influxdb/influxdb.conf \
+    -v "$PWD/influxdb.conf:/root/influxdb/influxdb.conf" \
     -e DOCKER_INFLUXDB_INIT_MODE=upgrade \
     -e DOCKER_INFLUXDB_INIT_USERNAME=my-user \
     -e DOCKER_INFLUXDB_INIT_PASSWORD=my-password \
@@ -409,7 +409,7 @@ To use the InfluxDB Docker Hub data path, start a container that mounts your dat
 ```bash
 # quay.io InfluxDB 2.x container 
 docker run -p 8086:8086 \
-    -v $PWD:/root/.influxdbv2 \
+    -v "$PWD:/root/.influxdbv2" \
     quay.io/influxdb/influxdb:v2.0.3
 ```
 
@@ -418,7 +418,7 @@ Use this command to start an InfluxDB v2 Docker Hub container:
 ```bash
 # Docker Hub InfluxDB 2.x container
 docker run -p 8086:8086 \
-    -v $PWD:/var/lib/influxdb2 \
+    -v "$PWD:/var/lib/influxdb2" \
     %%IMAGE%%:2
 ```
 
@@ -429,7 +429,7 @@ To continue using the `/root/.influxdbv2` data path, customize storage path conf
 ```bash
 # quay.io-hosted InfluxDB 2.x
 docker run -p 8086:8086 \
-    -v $PWD:/root/.influxdbv2 \
+    -v "$PWD:/root/.influxdbv2" \
     quay.io/influxdb/influxdb:v2.0.3
 ```
 
@@ -439,7 +439,7 @@ Use this command to start an InfluxDB v2 Docker Hub container:
 docker run -p 8086:8086 \
     -e INFLUXD_BOLT_PATH=/root/.influxdbv2/influxd.bolt \
     -e INFLUXD_ENGINE_PATH=/root/.influxdbv2/engine \
-    -v $PWD:/root/.influxdbv2 \
+    -v "$PWD:/root/.influxdbv2" \
     %%IMAGE%%:2
 ```
 
@@ -453,7 +453,7 @@ To start an InfluxDB 1.x container, enter the following command:
 
 ```bash
 docker run -p 8086:8086 \
-    -v $PWD:/var/lib/influxdb \
+    -v "$PWD:/var/lib/influxdb" \
     %%IMAGE%%:1.8
 ```
 
@@ -493,7 +493,7 @@ To customize and mount a configuration file, do the following:
 
 	```bash
 	docker run -p 8086:8086 \
-	  -v $PWD/influxdb.conf:/etc/influxdb/influxdb.conf:ro \
+	  -v "$PWD/influxdb.conf:/etc/influxdb/influxdb.conf:ro" \
 	  %%IMAGE%%:1.8 -config /etc/influxdb/influxdb.conf
 	```
 
@@ -630,7 +630,7 @@ docker run --rm \
     -e INFLUXDB_ADMIN_PASSWORD=supersecretpassword \
     -e INFLUXDB_USER=telegraf -e \
     -e INFLUXDB_USER_PASSWORD=secretpassword \
-    -v $PWD:/var/lib/influxdb \
+    -v "$PWD:/var/lib/influxdb" \
     %%IMAGE%%:1.8 /init-influxdb.sh
 ```
 
