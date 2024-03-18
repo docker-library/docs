@@ -16,7 +16,7 @@ For more information, visit https://influxdata.com.
 
 To start an InfluxDB v2 container, enter the following command:
 
-```console
+```bash
 docker run \
     -p 8086:8086 \
     -v $PWD/data:/var/lib/influxdb2 \
@@ -35,7 +35,7 @@ After the container starts, the InfluxDB UI and API are accessible at http://loc
 
 -	**Set up InfluxDB from inside the container**: Use `docker exec` to run the `influx` CLI installed in the container--for example:
 
-	```console
+	```bash
 	docker exec influxdb2 influx setup \
 	  --username $USERNAME \
 	  --password $PASSWORD \
@@ -52,7 +52,7 @@ See the [`influx setup` documentation](https://docs.influxdata.com/influxdb/v2/r
 
 To start and set up InfluxDB v2 with a single command, specify `-e DOCKER_INFLUXDB_INIT_MODE=setup` and `-e DOCKER_INFLUXDB_INIT_` environment variables for the initial user, password, bucket, and organization--for example:
 
-```console
+```bash
 docker run -d -p 8086:8086 \
   -v $PWD/data:/var/lib/influxdb2 \
   -v $PWD/config:/etc/influxdb2 \
@@ -88,7 +88,7 @@ In setup mode (`DOCKER_INFLUXDB_INIT_MODE=setup`) or upgrade mode (`DOCKER_INFLU
 
 The following example shows how to pass values for all initial setup options:
 
-```console
+```bash
 docker run -d -p 8086:8086 \
     -v $PWD/data:/var/lib/influxdb2 \
     -v $PWD/config:/etc/influxdb2 \
@@ -116,7 +116,7 @@ For the container to run scripts, they must:
 -	Be named using the `.sh` file name extension
 -	Be executable by the user running the `docker run` command--for example, to allow the current use to execute a script with `docker run`:
 
-	```console
+	```bash
 	chmod +x ./scripts/<yourscript.sh>
 	```
 
@@ -154,7 +154,7 @@ influx v1 auth create \
 
 Then, run the following command to start and set up InfluxDB using custom scripts:
 
-```console
+```bash
 docker run -p 8086:8086 \
      -v $PWD/data:/var/lib/influxdb2 \
      -v $PWD/config:/etc/influxdb2 \
@@ -240,7 +240,7 @@ To override specific [configuration options](https://docs.influxdata.com/influxd
 
 -	Pass `influxd` command line flags to override environment variables and the configuration file--for example:
 
-	```console
+	```bash
 	docker run -p 8086:8086 \
 	  %%IMAGE%%:2 --storage-wal-fsync-delay=15m
 	```
@@ -295,7 +295,7 @@ The upgrade process searches for mounted 1.x data and configuration paths in the
 
 Assume you've been running a minimal InfluxDB 1.x deployment:
 
-```console
+```bash
 docker run -p 8086:8086 \
     -v influxdb:/var/lib/influxdb \
     %%IMAGE%%:1.8
@@ -303,7 +303,7 @@ docker run -p 8086:8086 \
 
 To upgrade this deployment to InfluxDB 2.x, stop the running InfluxDB 1.x container, and then run the following command:
 
-```console
+```bash
 docker run -p 8086:8086 \
     -v influxdb:/var/lib/influxdb \
     -v influxdb2:/var/lib/influxdb2 \
@@ -319,7 +319,7 @@ docker run -p 8086:8086 \
 
 Assume you've been running an InfluxDB 1.x deployment with customized configuration (`/etc/influxdb/influxdb.conf`):
 
-```console
+```bash
 docker run -p 8086:8086 \
     -v influxdb:/var/lib/influxdb \
     -v $PWD/influxdb.conf:/etc/influxdb/influxdb.conf \
@@ -328,7 +328,7 @@ docker run -p 8086:8086 \
 
 To upgrade this deployment to InfluxDB 2.x, stop the running InfluxDB 1.x container, and then run the following command:
 
-```console
+```bash
 docker run -p 8086:8086 \
     -v influxdb:/var/lib/influxdb \
     -v influxdb2:/var/lib/influxdb2 \
@@ -346,7 +346,7 @@ docker run -p 8086:8086 \
 
 Assume you've been running an InfluxDB 1.x deployment with data and configuration mounted at custom paths:
 
-```console
+```bash
 docker run -p 8086:8086 \
     -v influxdb:/root/influxdb/data \
     -v $PWD/influxdb.conf:/root/influxdb/influxdb.conf \
@@ -357,7 +357,7 @@ Before you upgrade to InfluxDB v2, decide whether to keep using your custom path
 
 To use InfluxDB v2 defaults, stop the running InfluxDB 1.x container, and then run the following command:
 
-```console
+```bash
 docker run -p 8086:8086 \
     -v influxdb:/root/influxdb/data \
     -v influxdb2:/var/lib/influxdb2 \
@@ -374,7 +374,7 @@ docker run -p 8086:8086 \
 
 To use your custom paths instead of InfluxDB v2 default paths, run the following command:
 
-```console
+```bash
 docker run -p 8086:8086 \
     -v influxdb:/root/influxdb/data \
     -v influxdb2:/root/influxdb2/data \
@@ -406,7 +406,7 @@ To avoid this problem when migrating from `quay.io/influxdb/influxdb` to `influx
 
 To use the InfluxDB Docker Hub data path, start a container that mounts your data volume into `/var/lib/influxdb2`--for example, if you used the following command to start the InfluxDB quay.io container:
 
-```console
+```bash
 # quay.io InfluxDB 2.x container 
 docker run -p 8086:8086 \
     -v $PWD:/root/.influxdbv2 \
@@ -415,7 +415,7 @@ docker run -p 8086:8086 \
 
 Use this command to start an InfluxDB v2 Docker Hub container:
 
-```console
+```bash
 # Docker Hub InfluxDB 2.x container
 docker run -p 8086:8086 \
     -v $PWD:/var/lib/influxdb2 \
@@ -426,7 +426,7 @@ docker run -p 8086:8086 \
 
 To continue using the `/root/.influxdbv2` data path, customize storage path configuration options ([bolt-path](https://docs.influxdata.com/influxdb/v2/reference/config-options/#bolt-path), [engine-path](https://docs.influxdata.com/influxdb/v2/reference/config-options/#engine-path), [sqlite-path](https://docs.influxdata.com/influxdb/v2/reference/config-options/#sqlite-path)) configuration options for your InfluxDB Docker Hub container--for example, if you used the following command to start the InfluxDB quay.io container:
 
-```console
+```bash
 # quay.io-hosted InfluxDB 2.x
 docker run -p 8086:8086 \
     -v $PWD:/root/.influxdbv2 \
@@ -435,7 +435,7 @@ docker run -p 8086:8086 \
 
 Use this command to start an InfluxDB v2 Docker Hub container:
 
-```console
+```bash
 docker run -p 8086:8086 \
     -e INFLUXD_BOLT_PATH=/root/.influxdbv2/influxd.bolt \
     -e INFLUXD_ENGINE_PATH=/root/.influxdbv2/engine \
@@ -451,7 +451,7 @@ Use the InfluxDB Docker Hub image to run and set up an [InfluxDB 1.x](https://do
 
 To start an InfluxDB 1.x container, enter the following command:
 
-```console
+```bash
 docker run -p 8086:8086 \
     -v $PWD:/var/lib/influxdb \
     %%IMAGE%%:1.8
@@ -485,13 +485,13 @@ To customize and mount a configuration file, do the following:
 
 1.	Output the current server configuration to a file in the mounted configuration directory--for example:
 
-	```console
+	```bash
 	docker run --rm %%IMAGE%%:1.8 influxd config > influxdb.conf
 	```
 
 2.	Edit the `influxdb.conf` file to customize [server configuration options](https://docs.influxdata.com/influxdb/v2/reference/config-options/#configuration-options).
 
-	```console
+	```bash
 	docker run -p 8086:8086 \
 	  -v $PWD/influxdb.conf:/etc/influxdb/influxdb.conf:ro \
 	  %%IMAGE%%:1.8 -config /etc/influxdb/influxdb.conf
@@ -503,7 +503,7 @@ To customize and mount a configuration file, do the following:
 
 Pass [`INFLUXDB_` environment variables](https://docs.influxdata.com/influxdb/v1/administration/config/#environment-variables) to override specific InfluxDB v1 configuration options. An environment variable overrides the equivalent option in the configuration file.
 
-```console
+```bash
 docker run -p 8086:8086 \
     -e INFLUXDB_REPORTING_DISABLED=true \
     -e INFLUXDB_META_DIR=/path/to/metadir \
@@ -517,7 +517,7 @@ Learn more about [configuring InfluxDB v1](https://docs.influxdata.com/influxdb/
 
 InfluxDB supports the Graphite line protocol, but the service and ports are not exposed by default. To run InfluxDB with Graphite support enabled, you can either use a configuration file or set the appropriate environment variables. Run InfluxDB with the default Graphite configuration:
 
-```console
+```bash
 docker run -p 8086:8086 -p 2003:2003 \
     -e INFLUXDB_GRAPHITE_ENABLED=true \
     %%IMAGE%%:1.8
@@ -529,13 +529,13 @@ See the [README on GitHub](https://github.com/influxdata/influxdb/blob/master/se
 
 Creating a DB named mydb:
 
-```console
+```bash
 curl -G http://localhost:8086/query --data-urlencode "q=CREATE DATABASE mydb"
 ```
 
 Inserting into the DB:
 
-```console
+```bash
 curl -i -XPOST 'http://localhost:8086/write?db=mydb' --data-binary 'cpu_load_short,host=server01,region=us-west value=0.64 1434055562000000000'
 ```
 
@@ -545,19 +545,19 @@ Read more about this in the [official documentation](https://docs.influxdata.com
 
 Start the container:
 
-```console
+```bash
 docker run --name=influxdb -d -p 8086:8086 %%IMAGE%%:1.8
 ```
 
 Run the influx client in this container:
 
-```console
+```bash
 docker exec -it influxdb influx
 ```
 
 Or run the influx client in a separate container:
 
-```console
+```bash
 docker run --rm --link=influxdb -it %%IMAGE%%:1.8 influx -host influxdb
 ```
 
@@ -623,7 +623,7 @@ If the Docker image finds any files with the extensions `.sh` or `.iql` inside o
 
 To manually initialize an InfluxDB v1 database, use `docker run` to call the `/init-influxdb.sh` script directly. The script takes the same initialization options as the `influxd run` command--for example:
 
-```console
+```bash
 docker run --rm \
     -e INFLUXDB_DB=db0 \
     -e INFLUXDB_ADMIN_USER=admin \
