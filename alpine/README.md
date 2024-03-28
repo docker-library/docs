@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `amd64` builds of [the `alpine` official image](https://hub.docker.com/_/alpine) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -29,6 +31,8 @@ WARNING:
 -	[`3.18.6`, `3.18`](https://github.com/alpinelinux/docker-alpine/blob/08dbcabbd55e7430a326b582e544c6e1695126f3/x86_64/Dockerfile)
 -	[`3.17.7`, `3.17`](https://github.com/alpinelinux/docker-alpine/blob/1041155cbf4b410b02729c23a198d632945a1744/x86_64/Dockerfile)
 -	[`3.16.9`, `3.16`](https://github.com/alpinelinux/docker-alpine/blob/9c372c82f691cfe76c2058d75e2c4f9cd589d4c5/x86_64/Dockerfile)
+
+[![amd64/alpine build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/amd64/job/alpine.svg?label=amd64/alpine%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/alpine/)
 
 # Quick reference (cont.)
 
@@ -62,7 +66,7 @@ WARNING:
 Use like you would any other base image:
 
 ```dockerfile
-FROM alpine:3.14
+FROM amd64/alpine:3.14
 RUN apk add --no-cache mysql-client
 ENTRYPOINT ["mysql"]
 ```

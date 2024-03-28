@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `amd64` builds of [the `swift` official image](https://hub.docker.com/_/swift) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -34,7 +36,6 @@ WARNING:
 -	[`5.10.0-centos7-slim`, `5.10-centos7-slim`, `centos7-slim`](https://github.com/apple/swift-docker/blob/ea035798755cce4ec41e0c6dbdd320904cef0421/5.10/centos/7/slim/Dockerfile)
 -	[`5.10.0-rhel-ubi9`, `5.10-rhel-ubi9`, `rhel-ubi9`](https://github.com/apple/swift-docker/blob/ea035798755cce4ec41e0c6dbdd320904cef0421/5.10/rhel-ubi/9/Dockerfile)
 -	[`5.10.0-rhel-ubi9-slim`, `5.10-rhel-ubi9-slim`, `rhel-ubi9-slim`](https://github.com/apple/swift-docker/blob/ea035798755cce4ec41e0c6dbdd320904cef0421/5.10/rhel-ubi/9/slim/Dockerfile)
--	[`5.10.0-windowsservercore-ltsc2022`, `5.10-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`](https://github.com/apple/swift-docker/blob/ea035798755cce4ec41e0c6dbdd320904cef0421/5.10/windows/LTSC2022/Dockerfile)
 -	[`5.9.2`, `5.9`, `5.9.2-jammy`, `5.9-jammy`](https://github.com/apple/swift-docker/blob/51f0941d5f6d92af9df8aa89fa75841f5036c127/5.9/ubuntu/22.04/Dockerfile)
 -	[`5.9.2-slim`, `5.9-slim`, `5.9.2-jammy-slim`, `5.9-jammy-slim`](https://github.com/apple/swift-docker/blob/51f0941d5f6d92af9df8aa89fa75841f5036c127/5.9/ubuntu/22.04/slim/Dockerfile)
 -	[`5.9.2-focal-slim`, `5.9-focal-slim`](https://github.com/apple/swift-docker/blob/51f0941d5f6d92af9df8aa89fa75841f5036c127/5.9/ubuntu/20.04/slim/Dockerfile)
@@ -45,7 +46,6 @@ WARNING:
 -	[`5.9.2-centos7-slim`, `5.9-centos7-slim`](https://github.com/apple/swift-docker/blob/51f0941d5f6d92af9df8aa89fa75841f5036c127/5.9/centos/7/slim/Dockerfile)
 -	[`5.9.2-rhel-ubi9`, `5.9-rhel-ubi9`](https://github.com/apple/swift-docker/blob/51f0941d5f6d92af9df8aa89fa75841f5036c127/5.9/rhel-ubi/9/Dockerfile)
 -	[`5.9.2-rhel-ubi9-slim`, `5.9-rhel-ubi9-slim`](https://github.com/apple/swift-docker/blob/51f0941d5f6d92af9df8aa89fa75841f5036c127/5.9/rhel-ubi/9/slim/Dockerfile)
--	[`5.9.2-windowsservercore-ltsc2022`, `5.9-windowsservercore-ltsc2022`](https://github.com/apple/swift-docker/blob/51f0941d5f6d92af9df8aa89fa75841f5036c127/5.9/windows/LTSC2022/Dockerfile)
 -	[`5.8.1`, `5.8`, `5.8.1-jammy`, `5.8-jammy`](https://github.com/apple/swift-docker/blob/0190ac8d812bfcfab0ee39d600116ab5e3243f48/5.8/ubuntu/22.04/Dockerfile)
 -	[`5.8.1-slim`, `5.8-slim`, `5.8.1-jammy-slim`, `5.8-jammy-slim`](https://github.com/apple/swift-docker/blob/0190ac8d812bfcfab0ee39d600116ab5e3243f48/5.8/ubuntu/22.04/slim/Dockerfile)
 -	[`5.8.1-focal-slim`, `5.8-focal-slim`](https://github.com/apple/swift-docker/blob/0190ac8d812bfcfab0ee39d600116ab5e3243f48/5.8/ubuntu/20.04/slim/Dockerfile)
@@ -95,6 +95,8 @@ WARNING:
 -	[`5.2.5-centos7`, `5.2-centos7`](https://github.com/apple/swift-docker/blob/2d2c2fb89fe6ecfd8885157eb1666ed2686503a0/5.2/centos/7/Dockerfile)
 -	[`5.2.5-centos7-slim`, `5.2-centos7-slim`](https://github.com/apple/swift-docker/blob/2d2c2fb89fe6ecfd8885157eb1666ed2686503a0/5.2/centos/7/slim/Dockerfile)
 
+[![amd64/swift build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/amd64/job/swift.svg?label=amd64/swift%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/swift/)
+
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
@@ -134,19 +136,19 @@ To learn more about the programming language, visit [swift.org](https://swift.or
 Swift requires [a little bit of extra security privilege](https://github.com/apple/swift-docker/issues/9#issuecomment-272527182) to run the REPL. The following command creates an ephemeral container, attaches your terminal to it and starts the Swift REPL. A great way to try out pre-release builds!
 
 ```bash
-docker run --cap-add sys_ptrace -it --rm swift swift
+docker run --cap-add sys_ptrace -it --rm amd64/swift swift
 ```
 
 ##### Pull the Docker Image From Docker Hub:
 
 ```bash
-docker pull swift
+docker pull amd64/swift
 ```
 
 ##### Create a Container from the Image and Attach It:
 
 ```bash
-docker run  -it --name swiftfun swift /bin/bash
+docker run  -it --name swiftfun amd64/swift /bin/bash
 ```
 
 ##### To Start and Attach Your Image Later:
@@ -165,26 +167,17 @@ docker attach swiftfun
 
 # Image Variants
 
-The `swift` images come in many flavors, each designed for a specific use case.
+The `amd64/swift` images come in many flavors, each designed for a specific use case.
 
-## `swift:<version>`
+## `amd64/swift:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
 Some of these tags may have names like focal or jammy in them. These are the suite code names for releases of [Ubuntu](https://wiki.ubuntu.com/Releases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Ubuntu.
 
-## `swift:<version>-slim`
+## `amd64/swift:<version>-slim`
 
-This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `swift`. Unless you are working in an environment where *only* the `swift` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
-
-## `swift:<version>-windowsservercore`
-
-This image is based on [Windows Server Core (`microsoft/windowsservercore`)](https://hub.docker.com/r/microsoft/windowsservercore/). As such, it only works in places which that image does, such as Windows 10 Professional/Enterprise (Anniversary Edition) or Windows Server 2016.
-
-For information about how to get Docker running on Windows, please see the relevant "Quick Start" guide provided by Microsoft:
-
--	[Windows Server Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_server)
--	[Windows 10 Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)
+This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `amd64/swift`. Unless you are working in an environment where *only* the `amd64/swift` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
 
 # License
 
