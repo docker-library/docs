@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `windows-amd64` builds of [the `composer` official image](https://hub.docker.com/_/composer) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,13 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.7.2`, `2.7`, `2`, `latest`](https://github.com/composer/docker/blob/06d1cf1acb8fe5dff6e0f8aac7e2d1c14faf1a06/2.7/Dockerfile)
--	[`2.6.6`, `2.6`](https://github.com/composer/docker/blob/7d5603ee532ef2e27260ebd1090ed888ab9e0458/2.6/Dockerfile)
--	[`2.5.8`, `2.5`](https://github.com/composer/docker/blob/9fcccc5a4cf04e73118bb7af3f9c04f61646e1c1/2.5/Dockerfile)
--	[`2.4.4`, `2.4`](https://github.com/composer/docker/blob/88e63fbab43e2151b0743a4c6d18a9c59aa9db0c/2.4/Dockerfile)
--	[`2.3.10`, `2.3`](https://github.com/composer/docker/blob/88e63fbab43e2151b0743a4c6d18a9c59aa9db0c/2.3/Dockerfile)
--	[`2.2.23`, `2.2`, `lts`](https://github.com/composer/docker/blob/08fa7ad05da303abd8ef7080b0676683bd89159b/2.2/Dockerfile)
--	[`1.10.27`, `1.10`, `1`](https://github.com/composer/docker/blob/9cac6280bc40c7d606f7fd2dfce0f77fefd056a8/1.10/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `windows-amd64` ARCHITECTURE
+
+[![winamd64/composer build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/windows-amd64/job/composer.svg?label=winamd64/composer%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/windows-amd64/job/composer/)
 
 # Quick reference (cont.)
 
@@ -66,7 +64,7 @@ You can read more about Composer in our [official documentation](https://getcomp
 ```console
 $ docker run --rm --interactive --tty \
   --volume $PWD:/app \
-  composer <command>
+  winamd64/composer <command>
 ```
 
 ### Persist cache / global configuration
@@ -77,7 +75,7 @@ You can bind mount the Composer home directory from your host to the container t
 $ docker run --rm --interactive --tty \
   --volume $PWD:/app \
   --volume ${COMPOSER_HOME:-$HOME/.composer}:/tmp \
-  composer <command>
+  winamd64/composer <command>
 ```
 
 **Note:** this relies on the fact that the `COMPOSER_HOME` value is set to `/tmp` in the image by default.
@@ -91,7 +89,7 @@ $ docker run --rm --interactive --tty \
   --volume ${COMPOSER_HOME:-$HOME/.config/composer}:$COMPOSER_HOME \
   --volume ${COMPOSER_CACHE_DIR:-$HOME/.cache/composer}:$COMPOSER_CACHE_DIR \
   --volume $PWD:/app \
-  composer <command>
+  winamd64/composer <command>
 ```
 
 ### Filesystem permissions
@@ -102,7 +100,7 @@ By default, Composer runs as root inside the container. This can lead to permiss
 $ docker run --rm --interactive --tty \
   --volume $PWD:/app \
   --user $(id -u):$(id -g) \
-  composer <command>
+  winamd64/composer <command>
 ```
 
 See: https://docs.docker.com/engine/reference/run/#user for details.
@@ -119,7 +117,7 @@ $ eval $(ssh-agent); \
   --volume $PWD:/app \
   --volume $SSH_AUTH_SOCK:/ssh-auth.sock \
   --env SSH_AUTH_SOCK=/ssh-auth.sock \
-  composer <command>
+  winamd64/composer <command>
 ```
 
 **Note:** On OSX this requires Docker For Mac v2.2.0.0 or later, see [docker/for-mac#410](https://github.com/docker/for-mac/issues/410).
@@ -135,7 +133,7 @@ $ eval $(ssh-agent); \
   --volume /etc/group:/etc/group:ro \
   --env SSH_AUTH_SOCK=/ssh-auth.sock \
   --user $(id -u):$(id -g) \
-  composer <command>
+  winamd64/composer <command>
 ```
 
 # Troubleshooting
@@ -153,7 +151,7 @@ Suggestions:
 	**Note:** Docker 17.05 introduced [multi-stage builds](https://docs.docker.com/develop/develop-images/multistage-build/), simplifying this enormously:
 
 	```dockerfile
-	COPY --from=composer /usr/bin/composer /usr/bin/composer
+	COPY --from=winamd64/composer /usr/bin/composer /usr/bin/composer
 	```
 
 -	(alternatively) specify the target [platform](https://getcomposer.org/doc/06-config.md#platform) / extension(s) in your `composer.json`:
@@ -174,7 +172,7 @@ Suggestions:
 	```console
 	$ docker run --rm --interactive --tty \
 	  --volume $PWD:/app \
-	  composer install --ignore-platform-reqs --no-scripts
+	  winamd64/composer install --ignore-platform-reqs --no-scripts
 	```
 
 # License

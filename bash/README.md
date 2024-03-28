@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `windows-amd64` builds of [the `bash` official image](https://hub.docker.com/_/bash) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,18 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`devel-20240325`, `devel`, `devel-20240325-alpine3.19`, `devel-alpine3.19`](https://github.com/tianon/docker-bash/blob/aaf9f95d5b78cffae86501876f31fa989b6ac5ab/devel/Dockerfile)
--	[`5.2.26`, `5.2`, `5`, `latest`, `5.2.26-alpine3.19`, `5.2-alpine3.19`, `5-alpine3.19`, `alpine3.19`](https://github.com/tianon/docker-bash/blob/3eae20ac57eaeb63ef9e438b67bfc135a948995a/5.2/Dockerfile)
--	[`5.1.16`, `5.1`, `5.1.16-alpine3.19`, `5.1-alpine3.19`](https://github.com/tianon/docker-bash/blob/a3f660ae2fcc3153c697520ef4e08da800578064/5.1/Dockerfile)
--	[`5.0.18`, `5.0`, `5.0.18-alpine3.19`, `5.0-alpine3.19`](https://github.com/tianon/docker-bash/blob/e78939e417c6efbfd55e48c80088bdbbae29fd66/5.0/Dockerfile)
--	[`4.4.23`, `4.4`, `4`, `4.4.23-alpine3.19`, `4.4-alpine3.19`, `4-alpine3.19`](https://github.com/tianon/docker-bash/blob/682faa73aff031837c3d60db8666384c2ec72bba/4.4/Dockerfile)
--	[`4.3.48`, `4.3`, `4.3.48-alpine3.19`, `4.3-alpine3.19`](https://github.com/tianon/docker-bash/blob/0686d8b7feac5b76e8c14be9fb44b823c5a2f7ec/4.3/Dockerfile)
--	[`4.2.53`, `4.2`, `4.2.53-alpine3.19`, `4.2-alpine3.19`](https://github.com/tianon/docker-bash/blob/b7fb84109bde6e9d78e8a1eac2a91e6f0e20226b/4.2/Dockerfile)
--	[`4.1.17`, `4.1`, `4.1.17-alpine3.19`, `4.1-alpine3.19`](https://github.com/tianon/docker-bash/blob/951a1e31d2dee53473893050f29259acd18dc6ae/4.1/Dockerfile)
--	[`4.0.44`, `4.0`, `4.0.44-alpine3.19`, `4.0-alpine3.19`](https://github.com/tianon/docker-bash/blob/9927111b47c93b0b0057077725797625980a696d/4.0/Dockerfile)
--	[`3.2.57`, `3.2`, `3`, `3.2.57-alpine3.19`, `3.2-alpine3.19`, `3-alpine3.19`](https://github.com/tianon/docker-bash/blob/1a08d56b8f1ad68e669ec9ee936512e6a7606aab/3.2/Dockerfile)
--	[`3.1.23`, `3.1`, `3.1.23-alpine3.19`, `3.1-alpine3.19`](https://github.com/tianon/docker-bash/blob/77ce8451ec601516ed8e2868bac35a5f38bb0bd3/3.1/Dockerfile)
--	[`3.0.22`, `3.0`, `3.0.22-alpine3.19`, `3.0-alpine3.19`](https://github.com/tianon/docker-bash/blob/88332b0ace10af319000ace7659aa1c1416cbce8/3.0/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `windows-amd64` ARCHITECTURE
+
+[![winamd64/bash build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/windows-amd64/job/bash.svg?label=winamd64/bash%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/windows-amd64/job/bash/)
 
 # Quick reference (cont.)
 
@@ -79,7 +72,7 @@ There are a few main things that are important to note regarding this image:
 ## Interactive shell
 
 ```console
-$ docker run -it --rm bash:4.4
+$ docker run -it --rm winamd64/bash:4.4
 bash-4.4# which bash
 /usr/local/bin/bash
 bash-4.4# echo $BASH_VERSION
@@ -89,16 +82,16 @@ bash-4.4# echo $BASH_VERSION
 ## Testing scripts via bind-mount
 
 ```console
-$ docker run -it --rm -v /path/to/script.sh:/script.sh:ro bash:4.4 bash /script.sh
+$ docker run -it --rm -v /path/to/script.sh:/script.sh:ro winamd64/bash:4.4 bash /script.sh
 ...
-$ docker run -it --rm -v /path/to/script.sh:/script.sh:ro bash:3.2 bash /script.sh
+$ docker run -it --rm -v /path/to/script.sh:/script.sh:ro winamd64/bash:3.2 bash /script.sh
 ...
 ```
 
 ## Testing scripts via `Dockerfile`
 
 ```dockerfile
-FROM bash:4.4
+FROM winamd64/bash:4.4
 
 COPY script.sh /
 
