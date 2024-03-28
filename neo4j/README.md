@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `s390x` builds of [the `neo4j` official image](https://hub.docker.com/_/neo4j) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,14 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.18.1-community-bullseye`, `5.18-community-bullseye`, `5-community-bullseye`, `5.18.1-community`, `5.18-community`, `5-community`, `5.18.1-bullseye`, `5.18-bullseye`, `5-bullseye`, `5.18.1`, `5.18`, `5`, `community-bullseye`, `community`, `bullseye`, `latest`](https://github.com/neo4j/docker-neo4j-publish/blob/ada6e8792dca5f18827c5eb61ea4e23b1349aa45/5.18.1/bullseye/community/Dockerfile)
--	[`5.18.1-enterprise-bullseye`, `5.18-enterprise-bullseye`, `5-enterprise-bullseye`, `5.18.1-enterprise`, `5.18-enterprise`, `5-enterprise`, `enterprise-bullseye`, `enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/ada6e8792dca5f18827c5eb61ea4e23b1349aa45/5.18.1/bullseye/enterprise/Dockerfile)
--	[`5.18.1-community-ubi9`, `5.18-community-ubi9`, `5-community-ubi9`, `5.18.1-ubi9`, `5.18-ubi9`, `5-ubi9`, `community-ubi9`, `ubi9`](https://github.com/neo4j/docker-neo4j-publish/blob/ada6e8792dca5f18827c5eb61ea4e23b1349aa45/5.18.1/ubi9/community/Dockerfile)
--	[`5.18.1-enterprise-ubi9`, `5.18-enterprise-ubi9`, `5-enterprise-ubi9`, `enterprise-ubi9`](https://github.com/neo4j/docker-neo4j-publish/blob/ada6e8792dca5f18827c5eb61ea4e23b1349aa45/5.18.1/ubi9/enterprise/Dockerfile)
--	[`5.18.1-community-ubi8`, `5.18-community-ubi8`, `5-community-ubi8`, `5.18.1-ubi8`, `5.18-ubi8`, `5-ubi8`, `community-ubi8`, `ubi8`](https://github.com/neo4j/docker-neo4j-publish/blob/ada6e8792dca5f18827c5eb61ea4e23b1349aa45/5.18.1/ubi8/community/Dockerfile)
--	[`5.18.1-enterprise-ubi8`, `5.18-enterprise-ubi8`, `5-enterprise-ubi8`, `enterprise-ubi8`](https://github.com/neo4j/docker-neo4j-publish/blob/ada6e8792dca5f18827c5eb61ea4e23b1349aa45/5.18.1/ubi8/enterprise/Dockerfile)
--	[`4.4.32`, `4.4.32-community`, `4.4`, `4.4-community`](https://github.com/neo4j/docker-neo4j-publish/blob/5eac9259a8371baf87ef730f1a90b9da44641900/4.4.32/bullseye/community/Dockerfile)
--	[`4.4.32-enterprise`, `4.4-enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/5eac9259a8371baf87ef730f1a90b9da44641900/4.4.32/bullseye/enterprise/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `s390x` ARCHITECTURE
+
+[![s390x/neo4j build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/s390x/job/neo4j.svg?label=s390x/neo4j%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/neo4j/)
 
 # Quick reference (cont.)
 
@@ -66,7 +63,7 @@ You can start a Neo4j container like this:
 docker run \
     --publish=7474:7474 --publish=7687:7687 \
     --volume=$HOME/neo4j/data:/data \
-    neo4j
+    s390x/neo4j
 ```
 
 which allows you to access neo4j through your browser at [http://localhost:7474](http://localhost:7474).
