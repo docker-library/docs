@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `ppc64le` builds of [the `neurodebian` official image](https://hub.docker.com/_/neurodebian) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,20 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`bionic`, `nd18.04`](https://github.com/neurodebian/dockerfiles/blob/1da9308291ad33a33447519ec1835bb3e37acebc/dockerfiles/bionic/Dockerfile)
--	[`bionic-non-free`, `nd18.04-non-free`](https://github.com/neurodebian/dockerfiles/blob/1da9308291ad33a33447519ec1835bb3e37acebc/dockerfiles/bionic-non-free/Dockerfile)
--	[`focal`, `nd20.04`](https://github.com/neurodebian/dockerfiles/blob/1da9308291ad33a33447519ec1835bb3e37acebc/dockerfiles/focal/Dockerfile)
--	[`focal-non-free`, `nd20.04-non-free`](https://github.com/neurodebian/dockerfiles/blob/1da9308291ad33a33447519ec1835bb3e37acebc/dockerfiles/focal-non-free/Dockerfile)
--	[`jammy`, `nd22.04`](https://github.com/neurodebian/dockerfiles/blob/1da9308291ad33a33447519ec1835bb3e37acebc/dockerfiles/jammy/Dockerfile)
--	[`jammy-non-free`, `nd22.04-non-free`](https://github.com/neurodebian/dockerfiles/blob/1da9308291ad33a33447519ec1835bb3e37acebc/dockerfiles/jammy-non-free/Dockerfile)
--	[`buster`, `nd100`](https://github.com/neurodebian/dockerfiles/blob/1da9308291ad33a33447519ec1835bb3e37acebc/dockerfiles/buster/Dockerfile)
--	[`buster-non-free`, `nd100-non-free`](https://github.com/neurodebian/dockerfiles/blob/1da9308291ad33a33447519ec1835bb3e37acebc/dockerfiles/buster-non-free/Dockerfile)
--	[`bullseye`, `nd110`, `latest`](https://github.com/neurodebian/dockerfiles/blob/1da9308291ad33a33447519ec1835bb3e37acebc/dockerfiles/bullseye/Dockerfile)
--	[`bullseye-non-free`, `nd110-non-free`, `non-free`](https://github.com/neurodebian/dockerfiles/blob/1da9308291ad33a33447519ec1835bb3e37acebc/dockerfiles/bullseye-non-free/Dockerfile)
--	[`bookworm`, `nd120`](https://github.com/neurodebian/dockerfiles/blob/1da9308291ad33a33447519ec1835bb3e37acebc/dockerfiles/bookworm/Dockerfile)
--	[`bookworm-non-free`, `nd120-non-free`](https://github.com/neurodebian/dockerfiles/blob/1da9308291ad33a33447519ec1835bb3e37acebc/dockerfiles/bookworm-non-free/Dockerfile)
--	[`sid`, `nd`](https://github.com/neurodebian/dockerfiles/blob/1da9308291ad33a33447519ec1835bb3e37acebc/dockerfiles/sid/Dockerfile)
--	[`sid-non-free`, `nd-non-free`](https://github.com/neurodebian/dockerfiles/blob/1da9308291ad33a33447519ec1835bb3e37acebc/dockerfiles/sid-non-free/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `ppc64le` ARCHITECTURE
+
+[![ppc64le/neurodebian build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/ppc64le/job/neurodebian.svg?label=ppc64le/neurodebian%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/ppc64le/job/neurodebian/)
 
 # Quick reference (cont.)
 
@@ -72,14 +63,14 @@ NeuroDebian images only add NeuroDebian repository and repository's GPG key. No 
 
 `nd` tags are used to reflect suffixes used in versions of packages available from NeuroDebian.
 
-The `neurodebian:latest` tag will always point the Neurodebian-enabled latest stable release of Debian (which is, at the time of this writing, `debian:wheezy`).
+The `ppc64le/neurodebian:latest` tag will always point the Neurodebian-enabled latest stable release of Debian (which is, at the time of this writing, `debian:wheezy`).
 
 ## sources.list
 
 NeuroDebian APT file is installed under `/etc/apt/sources.list.d/neurodebian.sources.list` and currently enables only `main` (DFSG-compliant) area of the archive:
 
 ```console
-$ docker run neurodebian cat /etc/apt/sources.list.d/neurodebian.sources.list
+$ docker run ppc64le/neurodebian cat /etc/apt/sources.list.d/neurodebian.sources.list
 deb http://neuro.debian.net/debian wheezy main
 deb http://neuro.debian.net/debian data main
 #deb-src http://neuro.debian.net/debian-devel wheezy main

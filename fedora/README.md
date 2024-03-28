@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `ppc64le` builds of [the `fedora` official image](https://hub.docker.com/_/fedora) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,10 +26,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`38`](https://github.com/fedora-cloud/docker-brew-fedora/blob/0ca7b13adf277d9423dcea1353ca21f36fe3aef3/x86_64/Dockerfile)
--	[`39`, `latest`](https://github.com/fedora-cloud/docker-brew-fedora/blob/d855dc12fef7c8d48d53b774d54da78ac5be37f6/x86_64/Dockerfile)
--	[`40`](https://github.com/fedora-cloud/docker-brew-fedora/blob/ca15e4374cd315b7dba84485bf330377cd50c50f/x86_64/Dockerfile)
--	[`41`, `rawhide`](https://github.com/fedora-cloud/docker-brew-fedora/blob/1443124200b0b0674495894ba80aefdaba30a93d/x86_64/Dockerfile)
+-	[`38`](https://github.com/fedora-cloud/docker-brew-fedora/blob/0ca7b13adf277d9423dcea1353ca21f36fe3aef3/ppc64le/Dockerfile)
+-	[`39`, `latest`](https://github.com/fedora-cloud/docker-brew-fedora/blob/d855dc12fef7c8d48d53b774d54da78ac5be37f6/ppc64le/Dockerfile)
+-	[`40`](https://github.com/fedora-cloud/docker-brew-fedora/blob/ca15e4374cd315b7dba84485bf330377cd50c50f/ppc64le/Dockerfile)
+-	[`41`, `rawhide`](https://github.com/fedora-cloud/docker-brew-fedora/blob/1443124200b0b0674495894ba80aefdaba30a93d/ppc64le/Dockerfile)
+
+[![ppc64le/fedora build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/ppc64le/job/fedora.svg?label=ppc64le/fedora%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/ppc64le/job/fedora/)
 
 # Quick reference (cont.)
 
@@ -54,11 +58,11 @@ This image serves as the `official Fedora image` for the [Fedora Distribution](h
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/7925a7131128930eed07077f9369b7ca52e0fd02/fedora/logo.png)
 
-The `fedora:latest` tag will always point to the latest stable release.
+The `ppc64le/fedora:latest` tag will always point to the latest stable release.
 
 This image is a relatively small footprint in comparison to a standard Fedora installation. This image is generated in the [Fedora Build System](http://koji.fedoraproject.org/koji/) and is built from [this kickstart file](https://pagure.io/fedora-kickstarts/blob/main/f/fedora-container-base.ks).
 
-[Fedora Rawhide](https://fedoraproject.org/wiki/Releases/Rawhide) is available via `fedora:rawhide` and any specific version of Fedora as `fedora:$version` (example: `fedora:23`).
+[Fedora Rawhide](https://fedoraproject.org/wiki/Releases/Rawhide) is available via `ppc64le/fedora:rawhide` and any specific version of Fedora as `ppc64le/fedora:$version` (example: `ppc64le/fedora:23`).
 
 # License
 
