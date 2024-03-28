@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v6` builds of [the `traefik` official image](https://hub.docker.com/_/traefik) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,12 +26,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`v3.0.0-rc3-windowsservercore-ltsc2022`, `3.0.0-rc3-windowsservercore-ltsc2022`, `v3.0-windowsservercore-ltsc2022`, `3.0-windowsservercore-ltsc2022`, `beaufort-windowsservercore-ltsc2022`](https://github.com/traefik/traefik-library-image/blob/912cc37ab2fb33dffbe653d3b98a224cdc833c48/windows/servercore-ltsc2022/Dockerfile)
--	[`v3.0.0-rc3-windowsservercore-1809`, `3.0.0-rc3-windowsservercore-1809`, `v3.0-windowsservercore-1809`, `3.0-windowsservercore-1809`, `beaufort-windowsservercore-1809`](https://github.com/traefik/traefik-library-image/blob/912cc37ab2fb33dffbe653d3b98a224cdc833c48/windows/1809/Dockerfile)
 -	[`v3.0.0-rc3`, `3.0.0-rc3`, `v3.0`, `3.0`, `beaufort`](https://github.com/traefik/traefik-library-image/blob/912cc37ab2fb33dffbe653d3b98a224cdc833c48/alpine/Dockerfile)
--	[`v2.11.0-windowsservercore-ltsc2022`, `2.11.0-windowsservercore-ltsc2022`, `v2.11-windowsservercore-ltsc2022`, `2.11-windowsservercore-ltsc2022`, `mimolette-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`](https://github.com/traefik/traefik-library-image/blob/fccb66b9845fc4266154377b774ac95127d38078/windows/servercore-ltsc2022/Dockerfile)
--	[`v2.11.0-windowsservercore-1809`, `2.11.0-windowsservercore-1809`, `v2.11-windowsservercore-1809`, `2.11-windowsservercore-1809`, `mimolette-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/traefik/traefik-library-image/blob/fccb66b9845fc4266154377b774ac95127d38078/windows/1809/Dockerfile)
 -	[`v2.11.0`, `2.11.0`, `v2.11`, `2.11`, `mimolette`, `latest`](https://github.com/traefik/traefik-library-image/blob/fccb66b9845fc4266154377b774ac95127d38078/alpine/Dockerfile)
+
+[![arm32v6/traefik build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v6/job/traefik.svg?label=arm32v6/traefik%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v6/job/traefik/)
 
 # Quick reference (cont.)
 
@@ -180,23 +180,6 @@ You can find the complete documentation:
 A community support is available at [https://community.traefik.io](https://community.traefik.io)
 
 A collection of contributions around Traefik can be found at [https://awesome.traefik.io](https://awesome.traefik.io).
-
-# Image Variants
-
-The `traefik` images come in many flavors, each designed for a specific use case.
-
-## `traefik:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-## `traefik:<version>-windowsservercore`
-
-This image is based on [Windows Server Core (`microsoft/windowsservercore`)](https://hub.docker.com/r/microsoft/windowsservercore/). As such, it only works in places which that image does, such as Windows 10 Professional/Enterprise (Anniversary Edition) or Windows Server 2016.
-
-For information about how to get Docker running on Windows, please see the relevant "Quick Start" guide provided by Microsoft:
-
--	[Windows Server Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_server)
--	[Windows 10 Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)
 
 # License
 

@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v6` builds of [the `gcc` official image](https://hub.docker.com/_/gcc) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,11 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`13.2.0`, `13.2`, `13`, `latest`, `13.2.0-bookworm`, `13.2-bookworm`, `13-bookworm`, `bookworm`](https://github.com/docker-library/gcc/blob/9fbc8275f1adad750cdc7ad71a70254b7db4501e/13/Dockerfile)
--	[`12.3.0`, `12.3`, `12`, `12.3.0-bookworm`, `12.3-bookworm`, `12-bookworm`](https://github.com/docker-library/gcc/blob/9fbc8275f1adad750cdc7ad71a70254b7db4501e/12/Dockerfile)
--	[`11.4.0`, `11.4`, `11`, `11.4.0-bullseye`, `11.4-bullseye`, `11-bullseye`](https://github.com/docker-library/gcc/blob/9fbc8275f1adad750cdc7ad71a70254b7db4501e/11/Dockerfile)
--	[`10.5.0`, `10.5`, `10`, `10.5.0-bullseye`, `10.5-bullseye`, `10-bullseye`](https://github.com/docker-library/gcc/blob/9fbc8275f1adad750cdc7ad71a70254b7db4501e/10/Dockerfile)
--	[`9.5.0`, `9.5`, `9`, `9.5.0-bullseye`, `9.5-bullseye`, `9-bullseye`](https://github.com/docker-library/gcc/blob/9fbc8275f1adad750cdc7ad71a70254b7db4501e/9/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v6` ARCHITECTURE
+
+[![arm32v6/gcc build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v6/job/gcc.svg?label=arm32v6/gcc%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v6/job/gcc/)
 
 # Quick reference (cont.)
 
@@ -64,7 +64,7 @@ The GNU Compiler Collection (GCC) is a compiler system produced by the GNU Proje
 The most straightforward way to use this image is to use a gcc container as both the build and runtime environment. In your `Dockerfile`, writing something along the lines of the following will compile and run your project:
 
 ```dockerfile
-FROM gcc:4.9
+FROM arm32v6/gcc:4.9
 COPY . /usr/src/myapp
 WORKDIR /usr/src/myapp
 RUN gcc -o myapp main.c
@@ -83,13 +83,13 @@ $ docker run -it --rm --name my-running-app my-gcc-app
 There may be occasions where it is not appropriate to run your app inside a container. To compile, but not run your app inside the Docker instance, you can write something like:
 
 ```console
-$ docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp gcc:4.9 gcc -o myapp myapp.c
+$ docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp arm32v6/gcc:4.9 gcc -o myapp myapp.c
 ```
 
 This will add your current directory, as a volume, to the container, set the working directory to the volume, and run the command `gcc -o myapp myapp.c.` This tells gcc to compile the code in `myapp.c` and output the executable to myapp. Alternatively, if you have a `Makefile`, you can instead run the `make` command inside your container:
 
 ```console
-$ docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp gcc:4.9 make
+$ docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp arm32v6/gcc:4.9 make
 ```
 
 # License

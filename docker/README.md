@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v6` builds of [the `docker` official image](https://hub.docker.com/_/docker) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -30,31 +32,14 @@ WARNING:
 
 -	[`26.0.0-cli`, `26.0-cli`, `26-cli`, `cli`, `26.0.0-cli-alpine3.19`](https://github.com/docker-library/docker/blob/f8169b09216030a793b7d2d9349e345472e48690/26/cli/Dockerfile)
 -	[`26.0.0-dind`, `26.0-dind`, `26-dind`, `dind`, `26.0.0-dind-alpine3.19`, `26.0.0`, `26.0`, `26`, `latest`, `26.0.0-alpine3.19`](https://github.com/docker-library/docker/blob/79c28eb1b838542a8e6732b66d00839d426bd589/26/dind/Dockerfile)
--	[`26.0.0-dind-rootless`, `26.0-dind-rootless`, `26-dind-rootless`, `dind-rootless`](https://github.com/docker-library/docker/blob/79c28eb1b838542a8e6732b66d00839d426bd589/26/dind-rootless/Dockerfile)
--	[`26.0.0-windowsservercore-ltsc2022`, `26.0-windowsservercore-ltsc2022`, `26-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`](https://github.com/docker-library/docker/blob/f8169b09216030a793b7d2d9349e345472e48690/26/windows/windowsservercore-ltsc2022/Dockerfile)
--	[`26.0.0-windowsservercore-1809`, `26.0-windowsservercore-1809`, `26-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/docker-library/docker/blob/f8169b09216030a793b7d2d9349e345472e48690/26/windows/windowsservercore-1809/Dockerfile)
 -	[`25.0.5-cli`, `25.0-cli`, `25-cli`, `25.0.5-cli-alpine3.19`](https://github.com/docker-library/docker/blob/bd877487a10c59ccab6b0712bb84ec3c428cd8bc/25/cli/Dockerfile)
 -	[`25.0.5-dind`, `25.0-dind`, `25-dind`, `25.0.5-dind-alpine3.19`, `25.0.5-git`, `25.0-git`, `25-git`, `25.0.5`, `25.0`, `25`, `25.0.5-alpine3.19`](https://github.com/docker-library/docker/blob/a40d64fc2cc3b417f9408d3b1c539ec860780e86/25/dind/Dockerfile)
--	[`25.0.5-dind-rootless`, `25.0-dind-rootless`, `25-dind-rootless`](https://github.com/docker-library/docker/blob/a40d64fc2cc3b417f9408d3b1c539ec860780e86/25/dind-rootless/Dockerfile)
--	[`25.0.5-windowsservercore-ltsc2022`, `25.0-windowsservercore-ltsc2022`, `25-windowsservercore-ltsc2022`](https://github.com/docker-library/docker/blob/bd877487a10c59ccab6b0712bb84ec3c428cd8bc/25/windows/windowsservercore-ltsc2022/Dockerfile)
--	[`25.0.5-windowsservercore-1809`, `25.0-windowsservercore-1809`, `25-windowsservercore-1809`](https://github.com/docker-library/docker/blob/bd877487a10c59ccab6b0712bb84ec3c428cd8bc/25/windows/windowsservercore-1809/Dockerfile)
 -	[`24.0.9-cli`, `24.0-cli`, `24-cli`, `24.0.9-cli-alpine3.19`](https://github.com/docker-library/docker/blob/ec77bfcb08da44c1f7c7440f9c44c0c3c905044e/24/cli/Dockerfile)
 -	[`24.0.9-dind`, `24.0-dind`, `24-dind`, `24.0.9-dind-alpine3.19`, `24.0.9-git`, `24.0-git`, `24-git`, `24.0.9`, `24.0`, `24`, `24.0.9-alpine3.19`](https://github.com/docker-library/docker/blob/485fefe743baed5a2dd9e5d22b685c14eda4c61e/24/dind/Dockerfile)
--	[`24.0.9-dind-rootless`, `24.0-dind-rootless`, `24-dind-rootless`](https://github.com/docker-library/docker/blob/faa16b36dd3257f8b020489d44fd7a339f11701d/24/dind-rootless/Dockerfile)
--	[`24.0.9-windowsservercore-ltsc2022`, `24.0-windowsservercore-ltsc2022`, `24-windowsservercore-ltsc2022`](https://github.com/docker-library/docker/blob/ec77bfcb08da44c1f7c7440f9c44c0c3c905044e/24/windows/windowsservercore-ltsc2022/Dockerfile)
--	[`24.0.9-windowsservercore-1809`, `24.0-windowsservercore-1809`, `24-windowsservercore-1809`](https://github.com/docker-library/docker/blob/ec77bfcb08da44c1f7c7440f9c44c0c3c905044e/24/windows/windowsservercore-1809/Dockerfile)
 
 ## Shared Tags
 
--	`26.0.0-windowsservercore`, `26.0-windowsservercore`, `26-windowsservercore`, `windowsservercore`:
-	-	[`26.0.0-windowsservercore-ltsc2022`](https://github.com/docker-library/docker/blob/f8169b09216030a793b7d2d9349e345472e48690/26/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`26.0.0-windowsservercore-1809`](https://github.com/docker-library/docker/blob/f8169b09216030a793b7d2d9349e345472e48690/26/windows/windowsservercore-1809/Dockerfile)
--	`25.0.5-windowsservercore`, `25.0-windowsservercore`, `25-windowsservercore`:
-	-	[`25.0.5-windowsservercore-ltsc2022`](https://github.com/docker-library/docker/blob/bd877487a10c59ccab6b0712bb84ec3c428cd8bc/25/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`25.0.5-windowsservercore-1809`](https://github.com/docker-library/docker/blob/bd877487a10c59ccab6b0712bb84ec3c428cd8bc/25/windows/windowsservercore-1809/Dockerfile)
--	`24.0.9-windowsservercore`, `24.0-windowsservercore`, `24-windowsservercore`:
-	-	[`24.0.9-windowsservercore-ltsc2022`](https://github.com/docker-library/docker/blob/ec77bfcb08da44c1f7c7440f9c44c0c3c905044e/24/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`24.0.9-windowsservercore-1809`](https://github.com/docker-library/docker/blob/ec77bfcb08da44c1f7c7440f9c44c0c3c905044e/24/windows/windowsservercore-1809/Dockerfile)
+[![arm32v6/docker build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v6/job/docker.svg?label=arm32v6/docker%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v6/job/docker/)
 
 # Quick reference (cont.)
 
@@ -119,7 +104,7 @@ $ docker run --privileged --name some-docker -d \
 	-e DOCKER_TLS_CERTDIR=/certs \
 	-v some-docker-certs-ca:/certs/ca \
 	-v some-docker-certs-client:/certs/client \
-	docker:dind
+	arm32v6/docker:dind
 ```
 
 **Note:** `--privileged` is required for Docker-in-Docker to function properly, but it should be used with care as it provides full access to the host environment, as explained [in the relevant section of the Docker documentation](https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities).
@@ -130,7 +115,7 @@ $ docker run --privileged --name some-docker -d \
 $ docker run --rm --network some-network \
 	-e DOCKER_TLS_CERTDIR=/certs \
 	-v some-docker-certs-client:/certs/client:ro \
-	docker:latest version
+	arm32v6/docker:latest version
 Client: Docker Engine - Community
  Version:           18.09.8
  API version:       1.39
@@ -155,7 +140,7 @@ Server: Docker Engine - Community
 $ docker run -it --rm --network some-network \
 	-e DOCKER_TLS_CERTDIR=/certs \
 	-v some-docker-certs-client:/certs/client:ro \
-	docker:latest sh
+	arm32v6/docker:latest sh
 / # docker version
 Client: Docker Engine - Community
  Version:           18.09.8
@@ -181,7 +166,7 @@ Server: Docker Engine - Community
 $ docker run --rm --network some-network \
 	-e DOCKER_TLS_CERTDIR=/certs \
 	-v some-docker-certs-client:/certs/client:ro \
-	docker:latest info
+	arm32v6/docker:latest info
 Containers: 0
  Running: 0
  Paused: 0
@@ -233,7 +218,7 @@ WARNING: bridge-nf-call-ip6tables is disabled
 ```
 
 ```console
-$ docker run --rm -v /var/run/docker.sock:/var/run/docker.sock docker:latest version
+$ docker run --rm -v /var/run/docker.sock:/var/run/docker.sock arm32v6/docker:latest version
 Client: Docker Engine - Community
  Version:           18.09.8
  API version:       1.39
@@ -262,7 +247,7 @@ $ docker run --privileged --name some-docker -d \
 	-e DOCKER_TLS_CERTDIR=/certs \
 	-v some-docker-certs-ca:/certs/ca \
 	-v some-docker-certs-client:/certs/client \
-	docker:dind --storage-driver overlay2
+	arm32v6/docker:dind --storage-driver overlay2
 ```
 
 ## Runtime Settings Considerations
@@ -277,7 +262,7 @@ $ docker run --privileged --name some-docker -d \
 	--ulimit core=-1 \
 	--pids-limit -1 \
 	--oom-score-adj -500 \
-	docker:dind
+	arm32v6/docker:dind
 ```
 
 Some of these will not be supported based on the settings on the host's `dockerd`, such as `--ulimit nofile=-1`, giving errors that look like `error setting rlimit type 7: operation not permitted`, and some may inherit sane values from the host `dockerd` instance or may not apply for your usage of Docker-in-Docker (for example, you likely want to set `--oom-score-adj` to a value that's higher than `dockerd` on the host so that your Docker-in-Docker instance is killed before the host Docker instance is).
@@ -314,22 +299,10 @@ The Docker documentation is a good starting point for understanding the differen
 2.	Start your `docker` container like this:
 
 	```console
-	$ docker run --privileged --name some-docker -v /my/own/var-lib-docker:/var/lib/docker -d docker:dind
+	$ docker run --privileged --name some-docker -v /my/own/var-lib-docker:/var/lib/docker -d arm32v6/docker:dind
 	```
 
 The `-v /my/own/var-lib-docker:/var/lib/docker` part of the command mounts the `/my/own/var-lib-docker` directory from the underlying host system as `/var/lib/docker` inside the container, where Docker by default will write its data files.
-
-# Image Variants
-
-The `docker` images come in many flavors, each designed for a specific use case.
-
-## `docker:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-## `docker:<version>-windowsservercore`
-
-Unfortunately, Windows does not support nested containers, so this image variant only contains the client (intended for use against an existing Docker engine, ala `-v //./pipe/docker_engine://./pipe/docker_engine`).
 
 # License
 
