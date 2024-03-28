@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `mips64le` builds of [the `sonarqube` official image](https://hub.docker.com/_/sonarqube) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,16 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`9.9.4-community`, `9.9-community`, `9-community`, `lts`, `lts-community`](https://github.com/SonarSource/docker-sonarqube/blob/44a9deb5371e173c9ba310d7135c55ef95fe2915/9/community/Dockerfile)
--	[`9.9.4-developer`, `9.9-developer`, `9-developer`, `lts-developer`](https://github.com/SonarSource/docker-sonarqube/blob/44a9deb5371e173c9ba310d7135c55ef95fe2915/9/developer/Dockerfile)
--	[`9.9.4-enterprise`, `9.9-enterprise`, `9-enterprise`, `lts-enterprise`](https://github.com/SonarSource/docker-sonarqube/blob/44a9deb5371e173c9ba310d7135c55ef95fe2915/9/enterprise/Dockerfile)
--	[`9.9.4-datacenter-app`, `9.9-datacenter-app`, `9-datacenter-app`, `lts-datacenter-app`](https://github.com/SonarSource/docker-sonarqube/blob/44a9deb5371e173c9ba310d7135c55ef95fe2915/9/datacenter/app/Dockerfile)
--	[`9.9.4-datacenter-search`, `9.9-datacenter-search`, `9-datacenter-search`, `lts-datacenter-search`](https://github.com/SonarSource/docker-sonarqube/blob/44a9deb5371e173c9ba310d7135c55ef95fe2915/9/datacenter/search/Dockerfile)
--	[`10.4.1-community`, `10.4-community`, `10-community`, `community`, `latest`](https://github.com/SonarSource/docker-sonarqube/blob/44a9deb5371e173c9ba310d7135c55ef95fe2915/10/community/Dockerfile)
--	[`10.4.1-developer`, `10.4-developer`, `10-developer`, `developer`](https://github.com/SonarSource/docker-sonarqube/blob/44a9deb5371e173c9ba310d7135c55ef95fe2915/10/developer/Dockerfile)
--	[`10.4.1-enterprise`, `10.4-enterprise`, `10-enterprise`, `enterprise`](https://github.com/SonarSource/docker-sonarqube/blob/44a9deb5371e173c9ba310d7135c55ef95fe2915/10/enterprise/Dockerfile)
--	[`10.4.1-datacenter-app`, `10.4-datacenter-app`, `10-datacenter-app`, `datacenter-app`](https://github.com/SonarSource/docker-sonarqube/blob/44a9deb5371e173c9ba310d7135c55ef95fe2915/10/datacenter/app/Dockerfile)
--	[`10.4.1-datacenter-search`, `10.4-datacenter-search`, `10-datacenter-search`, `datacenter-search`](https://github.com/SonarSource/docker-sonarqube/blob/44a9deb5371e173c9ba310d7135c55ef95fe2915/10/datacenter/search/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `mips64le` ARCHITECTURE
+
+[![mips64le/sonarqube build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/mips64le/job/sonarqube.svg?label=mips64le/sonarqube%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/mips64le/job/sonarqube/)
 
 # Quick reference (cont.)
 
@@ -138,7 +133,7 @@ $ docker run -ti sonarqube-custom
 A SonarQube instance will stop gracefully, waiting for any tasks in progress to finish. Waiting for in-progress tasks to finish can take a large amount of time which the docker does not expect by default when stopping. To avoid having the SonarQube instance killed by the Docker daemon after 10 seconds, it is best to configure a timeout to stop the container with `--stop-timeout`. For example:
 
 ```console
-docker run --stop-timeout 3600 sonarqube
+docker run --stop-timeout 3600 mips64le/sonarqube
 ```
 
 ## Administration
