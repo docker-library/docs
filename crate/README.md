@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v7` builds of [the `crate` official image](https://hub.docker.com/_/crate) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,10 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.6.3`, `5.6`, `latest`](https://github.com/crate/docker-crate/blob/87c0db61bba5d4e94852d2f8ad792b4ce85f8a12/Dockerfile)
--	[`5.5.5`, `5.5`](https://github.com/crate/docker-crate/blob/976468768511b4574a26631fe646ff7fdfaf03ef/Dockerfile)
--	[`5.4.8`, `5.4`](https://github.com/crate/docker-crate/blob/87d8fc91744a3760211335884ba8cb82884451c2/Dockerfile)
--	[`5.3.9`, `5.3`](https://github.com/crate/docker-crate/blob/b26e81edb1d6b551a5a7697855270346dbd63619/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v7` ARCHITECTURE
+
+[![arm32v7/crate build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/crate.svg?label=arm32v7/crate%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/crate/)
 
 # Quick reference (cont.)
 
@@ -78,7 +79,7 @@ CrateDB provides an [Admin UI](https://crate.io/docs/crate/admin-ui/):
 Spin up this Docker image like so:
 
 ```console
-$ docker run --publish 4200:4200 --publish 5432:5432 crate -Cdiscovery.type=single-node
+$ docker run --publish 4200:4200 --publish 5432:5432 arm32v7/crate -Cdiscovery.type=single-node
 ```
 
 Visit the [getting started](https://crate.io/docs/crate/tutorials/en/latest/install-run/) page to see all the available download and install options.

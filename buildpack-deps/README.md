@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v7` builds of [the `buildpack-deps` official image](https://hub.docker.com/_/buildpack-deps) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -51,6 +53,8 @@ WARNING:
 -	[`noble-curl`, `24.04-curl`](https://github.com/docker-library/buildpack-deps/blob/f735abb203e08f7317b62c7f48d3e3d6b3d33a04/ubuntu/noble/curl/Dockerfile)
 -	[`noble-scm`, `24.04-scm`](https://github.com/docker-library/buildpack-deps/blob/d0ecd4b7313e9bc6b00d9a4fe62ad5787bc197ae/ubuntu/noble/scm/Dockerfile)
 -	[`noble`, `24.04`](https://github.com/docker-library/buildpack-deps/blob/d0ecd4b7313e9bc6b00d9a4fe62ad5787bc197ae/ubuntu/noble/Dockerfile)
+
+[![arm32v7/buildpack-deps build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/buildpack-deps.svg?label=arm32v7/buildpack-deps%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/buildpack-deps/)
 
 # Quick reference (cont.)
 

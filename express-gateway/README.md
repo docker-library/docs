@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v7` builds of [the `express-gateway` official image](https://hub.docker.com/_/express-gateway) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # **DEPRECATION NOTICE**
 
 This project is no longer maintained. Read [here](https://github.com/ExpressGateway/express-gateway/issues/1011#issuecomment-748354599) for more details or if you're interested in taking over the project.
@@ -28,7 +30,9 @@ This project is no longer maintained. Read [here](https://github.com/ExpressGate
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.x`, `1.16.x`, `1.16.11`, `latest`](https://github.com/ExpressGateway/docker-express-gateway/blob/fa2707c3b24bbd99710a100d7859566fa28817b8/alpine/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v7` ARCHITECTURE
+
+[![arm32v7/express-gateway build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/express-gateway.svg?label=arm32v7/express-gateway%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/express-gateway/)
 
 # Quick reference (cont.)
 
@@ -95,7 +99,7 @@ $ docker run -d --name express-gateway \
     -v /my/own/datadir:/var/lib/eg \
     -p 8080:8080 \
     -p 9876:9876 \
-    express-gateway
+    arm32v7/express-gateway
 ```
 
 *Note:* You might want to expose other ports to the host in case you're serving your APIs through **HTTPS**.
@@ -106,10 +110,10 @@ You can now read the docs at [express-gateway.io/docs](http://express-gateway.io
 
 ### Install plugin
 
-You can install custom plugins to the current Express Gateway image just creating a new `Dockerfile`, use `express-gateway` as base image and then install the required plugins as global yarn packages
+You can install custom plugins to the current Express Gateway image just creating a new `Dockerfile`, use `arm32v7/express-gateway` as base image and then install the required plugins as global yarn packages
 
 ```dockerfile
-FROM express-gateway
+FROM arm32v7/express-gateway
 RUN yarn global add express-gateway-plugin-name
 ```
 
