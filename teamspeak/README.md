@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm64v8` builds of [the `teamspeak` official image](https://hub.docker.com/_/teamspeak) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,7 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.13`, `3.13.7`, `latest`](https://github.com/TeamSpeak-Systems/teamspeak-linux-docker-images/blob/f5f1e7f6142e8eeebb8d46d7b493b5d3ec01d599/alpine/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm64v8` ARCHITECTURE
+
+[![arm64v8/teamspeak build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/teamspeak.svg?label=arm64v8/teamspeak%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/teamspeak/)
 
 # Quick reference (cont.)
 
@@ -58,13 +62,13 @@ TeamSpeak offers the ideal voice communication for online gaming, education and 
 To view the license agreement:
 
 ```console
-$ docker run -e TS3SERVER_LICENSE=view teamspeak
+$ docker run -e TS3SERVER_LICENSE=view arm64v8/teamspeak
 ```
 
 To start a TeamSpeak server, accept the license agreement, and map the ports to the host:
 
 ```console
-$ docker run -p 9987:9987/udp -p 10011:10011 -p 30033:30033 -e TS3SERVER_LICENSE=accept teamspeak
+$ docker run -p 9987:9987/udp -p 10011:10011 -p 30033:30033 -e TS3SERVER_LICENSE=accept arm64v8/teamspeak
 ```
 
 Then you can connect to `localhost` in your TeamSpeak client. Please write down the server query password, and server admin privilege key that were generated. These are needed to administrate the TeamSpeak server.
@@ -189,7 +193,7 @@ Path to the `ssh_host_rsa_key` to be used by query. If it does not exist, it wil
 A TeamSpeak server requires a license file when using more then 1 virtual server with 32 slots. For that the licensekey.dat has to be made available to the server. One way is mounting the licensekey.dat into /var/ts3server.
 
 ```console
-$ docker run --name some-teamspeak -v /location/to/licensekey.dat:/var/ts3server/licensekey.dat teamspeak:tag
+$ docker run --name some-teamspeak -v /location/to/licensekey.dat:/var/ts3server/licensekey.dat arm64v8/teamspeak:tag
 ```
 
 When the whole data directory (`/var/ts3server/`) has been mounted somewhere, the `licensekey.dat` can be copied inside that directory and will be loaded after the next restart of the TeamSpeak server.
@@ -207,7 +211,7 @@ The Docker documentation is a good starting point for understanding the differen
 2.	Start your `teamspeak` container like this:
 
 ```console
-$ docker run --name some-teamspeak -v /my/own/datadir:/var/ts3server/ -d teamspeak:tag
+$ docker run --name some-teamspeak -v /my/own/datadir:/var/ts3server/ -d arm64v8/teamspeak:tag
 ```
 
 The `-v /my/own/datadir:/var/ts3server/` part of the command mounts the `/my/own/datadir` directory from the underlying host system as `/var/ts3server` inside the container, where TeamSpeak by default will write its data files.

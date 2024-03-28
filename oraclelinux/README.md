@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm64v8` builds of [the `oraclelinux` official image](https://hub.docker.com/_/oraclelinux) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,14 +26,16 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`9`](https://github.com/oracle/container-images/blob/5874902983c0098d8adc187cd905e83f196c9c5d/9/Dockerfile)
--	[`9-slim`](https://github.com/oracle/container-images/blob/5874902983c0098d8adc187cd905e83f196c9c5d/9-slim/Dockerfile)
--	[`8.9`, `8`](https://github.com/oracle/container-images/blob/5874902983c0098d8adc187cd905e83f196c9c5d/8/Dockerfile)
--	[`8-slim`](https://github.com/oracle/container-images/blob/5874902983c0098d8adc187cd905e83f196c9c5d/8-slim/Dockerfile)
--	[`8-slim-fips`](https://github.com/oracle/container-images/blob/5874902983c0098d8adc187cd905e83f196c9c5d/8-slim-fips/Dockerfile)
--	[`7.9`, `7`](https://github.com/oracle/container-images/blob/5874902983c0098d8adc187cd905e83f196c9c5d/7/Dockerfile)
--	[`7-slim`](https://github.com/oracle/container-images/blob/5874902983c0098d8adc187cd905e83f196c9c5d/7-slim/Dockerfile)
--	[`7-slim-fips`](https://github.com/oracle/container-images/blob/5874902983c0098d8adc187cd905e83f196c9c5d/7-slim-fips/Dockerfile)
+-	[`9`](https://github.com/oracle/container-images/blob/0f0fd113e8a1093b39e83f6e6ef46b5b489e0e37/9/Dockerfile)
+-	[`9-slim`](https://github.com/oracle/container-images/blob/0f0fd113e8a1093b39e83f6e6ef46b5b489e0e37/9-slim/Dockerfile)
+-	[`8.9`, `8`](https://github.com/oracle/container-images/blob/0f0fd113e8a1093b39e83f6e6ef46b5b489e0e37/8/Dockerfile)
+-	[`8-slim`](https://github.com/oracle/container-images/blob/0f0fd113e8a1093b39e83f6e6ef46b5b489e0e37/8-slim/Dockerfile)
+-	[`8-slim-fips`](https://github.com/oracle/container-images/blob/0f0fd113e8a1093b39e83f6e6ef46b5b489e0e37/8-slim-fips/Dockerfile)
+-	[`7.9`, `7`](https://github.com/oracle/container-images/blob/0f0fd113e8a1093b39e83f6e6ef46b5b489e0e37/7/Dockerfile)
+-	[`7-slim`](https://github.com/oracle/container-images/blob/0f0fd113e8a1093b39e83f6e6ef46b5b489e0e37/7-slim/Dockerfile)
+-	[`7-slim-fips`](https://github.com/oracle/container-images/blob/0f0fd113e8a1093b39e83f6e6ef46b5b489e0e37/7-slim-fips/Dockerfile)
+
+[![arm64v8/oraclelinux build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/oraclelinux.svg?label=arm64v8/oraclelinux%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/oraclelinux/)
 
 # Quick reference (cont.)
 
@@ -62,7 +66,7 @@ Oracle Linux is an open-source operating system available under the GNU General 
 
 ## How to use these images
 
-The Oracle Linux images are intended for use in the **FROM** field of a downstream `Dockerfile`. For example, to use the latest optimized Oracle Linux 8 image, specify `FROM oraclelinux:8`.
+The Oracle Linux images are intended for use in the **FROM** field of a downstream `Dockerfile`. For example, to use the latest optimized Oracle Linux 8 image, specify `FROM arm64v8/oraclelinux:8`.
 
 ## Removal of `latest` tag
 
