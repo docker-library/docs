@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `riscv64` builds of [the `couchbase` official image](https://hub.docker.com/_/couchbase) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,14 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.6.0`, `enterprise-7.6.0`, `enterprise`, `latest`](https://github.com/couchbase/docker/blob/203e62f36ce055be75955e073d0000249bf2c040/enterprise/couchbase-server/7.6.0/Dockerfile)
--	[`community-7.6.0`, `community`](https://github.com/couchbase/docker/blob/7148bc241bcdcf8961c34f8adf76ebfb2860ed83/community/couchbase-server/7.6.0/Dockerfile)
--	[`7.2.4`, `enterprise-7.2.4`](https://github.com/couchbase/docker/blob/8205e18d139813ac3f72f6dfef9ee9ffbc382e0f/enterprise/couchbase-server/7.2.4/Dockerfile)
--	[`community-7.2.4`](https://github.com/couchbase/docker/blob/8205e18d139813ac3f72f6dfef9ee9ffbc382e0f/community/couchbase-server/7.2.4/Dockerfile)
--	[`7.1.6`, `enterprise-7.1.6`](https://github.com/couchbase/docker/blob/8205e18d139813ac3f72f6dfef9ee9ffbc382e0f/enterprise/couchbase-server/7.1.6/Dockerfile)
--	[`community-7.1.1`](https://github.com/couchbase/docker/blob/8205e18d139813ac3f72f6dfef9ee9ffbc382e0f/community/couchbase-server/7.1.1/Dockerfile)
--	[`7.0.5`, `enterprise-7.0.5`](https://github.com/couchbase/docker/blob/8205e18d139813ac3f72f6dfef9ee9ffbc382e0f/enterprise/couchbase-server/7.0.5/Dockerfile)
--	[`community-7.0.2`](https://github.com/couchbase/docker/blob/8205e18d139813ac3f72f6dfef9ee9ffbc382e0f/community/couchbase-server/7.0.2/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `riscv64` ARCHITECTURE
+
+[![riscv64/couchbase build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/riscv64/job/couchbase.svg?label=riscv64/couchbase%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/riscv64/job/couchbase/)
 
 # Quick reference (cont.)
 
