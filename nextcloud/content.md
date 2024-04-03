@@ -26,7 +26,7 @@ Now you can access Nextcloud at http://localhost:8080/ from your host system.
 
 ## Using the fpm image
 
-To use the fpm image, you need an additional web server, such as [nginx](https://docs.nextcloud.com/server/latest/admin_manual/installation/nginx.html), that can proxy http-request to the fpm-port of the container. For fpm connection this container exposes port 9000. In most cases, you might want use another container or your host as proxy. If you use your host you can address your Nextcloud container directly on port 9000. If you use another container, make sure that you add them to the same docker network (via `docker run --network <NAME> ...` or a `docker-compose` file). In both cases you don't want to map the fpm port to your host.
+To use the fpm image, you need an additional web server, such as [nginx](https://docs.nextcloud.com/server/latest/admin_manual/installation/nginx.html), that can proxy http-request to the fpm-port of the container. For fpm connection this container exposes port 9000. In most cases, you might want to use another container or your host as proxy. If you use your host you can address your Nextcloud container directly on port 9000. If you use another container, make sure that you add them to the same docker network (via `docker run --network <NAME> ...` or a `docker-compose` file). In both cases you don't want to map the fpm port to your host.
 
 ```console
 $ docker run -d %%IMAGE%%:fpm
@@ -48,22 +48,24 @@ Nextcloud:
 
 -	`/var/www/html/` folder where all Nextcloud data lives
 
-	```console
-	$ docker run -d \
-	-v nextcloud:/var/www/html \
-	%%IMAGE%%
-	```
+```console
+$ docker run -d \
+-v nextcloud:/var/www/html \
+%%IMAGE%%
+```
 
 Database:
 
 -	`/var/lib/mysql` MySQL / MariaDB Data
 -	`/var/lib/postgresql/data` PostgreSQL Data
 
-	```console
-	$ docker run -d \
-	-v db:/var/lib/mysql \
-	mariadb:10.6
-	```
+```console
+$ docker run -d \
+-v db:/var/lib/mysql \
+mariadb:10.6
+```
+
+### Additional volumes
 
 If you want to get fine grained access to your individual files, you can mount additional volumes for data, config, your theme and custom apps. The `data`, `config` files are stored in respective subfolders inside `/var/www/html/`. The apps are split into core `apps` (which are shipped with Nextcloud and you don't need to take care of) and a `custom_apps` folder. If you use a custom theme it would go into the `themes` subfolder.
 
@@ -79,13 +81,22 @@ If you want to use named volumes for all of these, it would look like this:
 
 ```console
 $ docker run -d \
-	-v nextcloud:/var/www/html \
-	-v apps:/var/www/html/custom_apps \
-	-v config:/var/www/html/config \
-	-v data:/var/www/html/data \
-	-v theme:/var/www/html/themes/<YOUR_CUSTOM_THEME> \
-	%%IMAGE%%
+-v nextcloud:/var/www/html \
+-v apps:/var/www/html/custom_apps \
+-v config:/var/www/html/config \
+-v data:/var/www/html/data \
+-v theme:/var/www/html/themes/<YOUR_CUSTOM_THEME> \
+%%IMAGE%%
 ```
+
+### Custom volumes
+
+If mounting additional volumes under `/var/www/html`, you should consider:
+
+-	Confirming that [upgrade.exclude](https://github.com/nextcloud/docker/blob/master/upgrade.exclude) contains the files and folders that should persist during installation and upgrades; or
+-	Mounting storage volumes to locations outside of `/var/www/html`.
+
+> You should note that data inside the main folder (`/var/www/html`) will be overridden/removed during installation and upgrades, unless listed in [upgrade.exclude](https://github.com/nextcloud/docker/blob/master/upgrade.exclude). The additional volumes officially supported are already in that list, but custom volumes will need to be added by you. We suggest mounting custom storage volumes outside of `/var/www/html` and if possible read-only so that making this adjustment is unnecessary. If you must do so, however, you may build a custom image with a modified `/upgrade.exclude` file that incorporates your custom volume(s).
 
 ## Using the Nextcloud command-line interface
 
@@ -123,7 +134,7 @@ The Nextcloud image supports auto configuration via environment variables. You c
 -	`POSTGRES_PASSWORD` Password for the database user using postgres.
 -	`POSTGRES_HOST` Hostname of the database server using postgres.
 
-As an alternative to passing sensitive information via environment variables, `_FILE` may be appended to the previously listed environment variables, causing the initialization script to load the values for those variables from files present in the container. See [Docker secrets](#docker=secrets) section below.
+As an alternative to passing sensitive information via environment variables, `_FILE` may be appended to the previously listed environment variables, causing the initialization script to load the values for those variables from files present in the container. See [Docker secrets](#docker-secrets) section below.
 
 If you set any group of values (i.e. all of `MYSQL_DATABASE`, `MYSQL_USER`, `MYSQL_PASSWORD`, `MYSQL_HOST`), they will not be asked in the install page on first run. With a complete configuration by using all variables for your database type, you can additionally configure your Nextcloud instance by setting admin user and password (only works if you set both):
 
@@ -142,11 +153,7 @@ The install and update script is only triggered when a default command is used (
 
 -	`NEXTCLOUD_UPDATE` (default: `0`)
 
-If you share your html folder with multiple docker containers, you might want to avoid multiple processes updating the same shared volume
-
--	`NEXTCLOUD_INIT_LOCK` (not set by default) Set it to true to enable initialization locking. Other containers will wait for the current process to finish updating the html volume to continue.
-
-You might also want to make sure the htaccess is up to date after each container update. Especially on multiple swarm nodes as any discrepancy will make your server unusable.
+You might want to make sure the htaccess is up to date after each container update. Especially on multiple swarm nodes as any discrepancy will make your server unusable.
 
 -	`NEXTCLOUD_INIT_HTACCESS` (not set by default) Set it to true to enable run `occ maintenance:update:htaccess` after container initialization.
 
@@ -166,7 +173,7 @@ To use an external SMTP server, you have to provide the connection details. To c
 -	`SMTP_AUTHTYPE` (default: `LOGIN`): The method used for authentication. Use `PLAIN` if no authentication is required.
 -	`SMTP_NAME` (empty by default): The username for the authentication.
 -	`SMTP_PASSWORD` (empty by default): The password for the authentication.
--	`MAIL_FROM_ADDRESS` (not set by default): Use this address for the 'from' field in the emails sent by Nextcloud.
+-	`MAIL_FROM_ADDRESS` (not set by default): Set the local-part for the 'from' field in the emails sent by Nextcloud.
 -	`MAIL_DOMAIN` (not set by default): Set a different domain for the emails than the domain where Nextcloud is installed.
 
 At least `SMTP_HOST`, `MAIL_FROM_ADDRESS` and `MAIL_DOMAIN` must be set for the configurations to be applied.
@@ -175,17 +182,19 @@ Check the [Nextcloud documentation](https://docs.nextcloud.com/server/latest/adm
 
 To use an external S3 compatible object store as primary storage, set the following variables:
 
--	`OBJECTSTORE_S3_HOST`: The hostname of the object storage server
 -	`OBJECTSTORE_S3_BUCKET`: The name of the bucket that Nextcloud should store the data in
+-	`OBJECTSTORE_S3_REGION`: The region that the S3 bucket resides in
+-	`OBJECTSTORE_S3_HOST`: The hostname of the object storage server
+-	`OBJECTSTORE_S3_PORT`: The port that the object storage server is being served over
 -	`OBJECTSTORE_S3_KEY`: AWS style access key
 -	`OBJECTSTORE_S3_SECRET`: AWS style secret access key
--	`OBJECTSTORE_S3_PORT`: The port that the object storage server is being served over
+-	`OBJECTSTORE_S3_STORAGE_CLASS`: The storage class to use when adding objects to the bucket
 -	`OBJECTSTORE_S3_SSL` (default: `true`): Whether or not SSL/TLS should be used to communicate with object storage server
--	`OBJECTSTORE_S3_REGION`: The region that the S3 bucket resides in.
 -	`OBJECTSTORE_S3_USEPATH_STYLE` (default: `false`): Not required for AWS S3
 -	`OBJECTSTORE_S3_LEGACYAUTH` (default: `false`): Not required for AWS S3
 -	`OBJECTSTORE_S3_OBJECT_PREFIX` (default: `urn:oid:`): Prefix to prepend to the fileid
 -	`OBJECTSTORE_S3_AUTOCREATE` (default: `true`): Create the container if it does not exist
+-	`OBJECTSTORE_S3_SSE_C_KEY` (not set by default): Base64 encoded key with a maximum length of 32 bytes for server side encryption (SSE-C)
 
 Check the [Nextcloud documentation](https://docs.nextcloud.com/server/latest/admin_manual/configuration_files/primary_storage.html#simple-storage-service-s3) for more information.
 
@@ -208,6 +217,43 @@ To customize other PHP limits you can simply change the following variables:
 
 -	`PHP_MEMORY_LIMIT` (default `512M`) This sets the maximum amount of memory in bytes that a script is allowed to allocate. This is meant to help prevent poorly written scripts from eating up all available memory but it can prevent normal operation if set too tight.
 -	`PHP_UPLOAD_LIMIT` (default `512M`) This sets the upload limit (`post_max_size` and `upload_max_filesize`) for big files. Note that you may have to change other limits depending on your client, webserver or operating system. Check the [Nextcloud documentation](https://docs.nextcloud.com/server/latest/admin_manual/configuration_files/big_file_upload_configuration.html) for more information.
+
+To customize Apache max file upload limit you can change the following variable:
+
+-	`APACHE_BODY_LIMIT` (default `1073741824` [1GiB]) This restricts the total size of the HTTP request body sent from the client. It specifies the number of *bytes* that are allowed in a request body. A value of **0** means **unlimited**. Check the [Nextcloud documentation](https://docs.nextcloud.com/server/latest/admin_manual/configuration_files/big_file_upload_configuration.html#apache) for more information.
+
+## Auto configuration via hook folders
+
+There are 5 hooks
+
+-	`pre-installation` Executed before the Nextcloud is installed/initiated
+-	`post-installation` Executed after the Nextcloud is installed/initiated
+-	`pre-upgrade` Executed before the Nextcloud is upgraded
+-	`post-upgrade` Executed after the Nextcloud is upgraded
+-	`before-starting` Executed before the Nextcloud starts
+
+To use the hooks triggered by the `entrypoint` script, either
+
+-	Added your script(s) to the individual of the hook folder(s), which are located at the path `/docker-entrypoint-hooks.d` in the container
+-	Use volume(s) if you want to use script from the host system inside the container, see example.
+
+**Note:** Only the script(s) located in a hook folder (not sub-folders), ending with `.sh` and marked as executable, will be executed.
+
+**Example:** Mount using volumes
+
+```yaml
+...
+  app:
+    image: %%IMAGE%%:stable
+
+    volumes:
+      - ./app-hooks/pre-installation:/docker-entrypoint-hooks.d/pre-installation
+      - ./app-hooks/post-installation:/docker-entrypoint-hooks.d/post-installation
+      - ./app-hooks/pre-upgrade:/docker-entrypoint-hooks.d/pre-upgrade
+      - ./app-hooks/post-upgrade:/docker-entrypoint-hooks.d/post-upgrade
+      - ./app-hooks/before-starting:/docker-entrypoint-hooks.d/before-starting
+...
+```
 
 ## Using the apache image behind a reverse proxy and auto configure server host and protocol
 
@@ -357,7 +403,7 @@ services:
       - postgres_user
 
   app:
-    image: nextcloud
+    image: %%IMAGE%%
     restart: always
     ports:
       - 8080:80
@@ -396,7 +442,7 @@ secrets:
     file: ./postgres_user.txt # put postgresql username in this file
 ```
 
-Currently, this is only supported for `NEXTCLOUD_ADMIN_PASSWORD`, `NEXTCLOUD_ADMIN_USER`, `MYSQL_DATABASE`, `MYSQL_PASSWORD`, `MYSQL_USER`, `POSTGRES_DB`, `POSTGRES_PASSWORD`, `POSTGRES_USER`, `REDIS_HOST_PASSWORD` and `SMTP_PASSWORD`.
+Currently, this is only supported for `NEXTCLOUD_ADMIN_PASSWORD`, `NEXTCLOUD_ADMIN_USER`, `MYSQL_DATABASE`, `MYSQL_PASSWORD`, `MYSQL_USER`, `POSTGRES_DB`, `POSTGRES_PASSWORD`, `POSTGRES_USER`, `REDIS_HOST_PASSWORD`, `SMTP_PASSWORD`, `OBJECTSTORE_S3_KEY`, and `OBJECTSTORE_S3_SECRET`.
 
 If you set any group of values (i.e. all of `MYSQL_DATABASE_FILE`, `MYSQL_USER_FILE`, `MYSQL_PASSWORD_FILE`, `MYSQL_HOST`), the script will not use the corresponding group of environment variables (`MYSQL_DATABASE`, `MYSQL_USER`, `MYSQL_PASSWORD`, `MYSQL_HOST`).
 
@@ -504,19 +550,19 @@ You're already using Nextcloud and want to switch to docker? Great! Here are som
 
 	-	To import from a MySQL dump use the following commands
 
-	```console
-	docker cp ./database.dmp nextcloud_db_1:/dmp
-	docker-compose exec db sh -c "mysql --user USER --password PASSWORD nextcloud < /dmp"
-	docker-compose exec db rm /dmp
-	```
+		```console
+		docker cp ./database.dmp nextcloud_db_1:/dmp
+		docker-compose exec db sh -c "mysql --user USER --password PASSWORD nextcloud < /dmp"
+		docker-compose exec db rm /dmp
+		```
 
 	-	To import from a PostgreSQL dump use to following commands
 
-	```console
-	docker cp ./database.dmp nextcloud_db_1:/dmp
-	docker-compose exec db sh -c "psql -U USER --set ON_ERROR_STOP=on nextcloud < /dmp"
-	docker-compose exec db rm /dmp
-	```
+		```console
+		docker cp ./database.dmp nextcloud_db_1:/dmp
+		docker-compose exec db sh -c "psql -U USER --set ON_ERROR_STOP=on nextcloud < /dmp"
+		docker-compose exec db rm /dmp
+		```
 
 3.	Edit your config.php
 
@@ -524,15 +570,15 @@ You're already using Nextcloud and want to switch to docker? Great! Here are som
 
 		-	In case of MySQL database
 
-		```php
-		'dbhost' => 'db:3306',
-		```
+			```php
+			'dbhost' => 'db:3306',
+			```
 
 		-	In case of PostgreSQL database
 
-		```php
-		'dbhost' => 'db:5432',
-		```
+			```php
+			'dbhost' => 'db:5432',
+			```
 
 	2.	Make sure you have no configuration for the `apps_paths`. Delete lines like these
 
@@ -550,16 +596,16 @@ You're already using Nextcloud and want to switch to docker? Great! Here are som
 
 		```php
 		'apps_paths' => array (
-		    0 => array (
-		        'path' => '/var/www/html/apps',
-		        'url' => '/apps',
-		        'writable' => false,
-		    ),
-		    1 => array (
-		        'path' => '/var/www/html/custom_apps',
-		        'url' => '/custom_apps',
-		        'writable' => true,
-		    ),
+		  0 => array (
+		    'path' => '/var/www/html/apps',
+		    'url' => '/apps',
+		    'writable' => false,
+		  ),
+		  1 => array (
+		    'path' => '/var/www/html/custom_apps',
+		    'url' => '/custom_apps',
+		    'writable' => true,
+		  ),
 		),
 		```
 
