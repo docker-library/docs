@@ -34,9 +34,9 @@ WARNING:
 -	[`iron-ros-core`, `iron-ros-core-jammy`](https://github.com/osrf/docker_images/blob/27cc0b68263bbbb10bb58dd814efc0a6b0a01ec7/ros/iron/ubuntu/jammy/ros-core/Dockerfile)
 -	[`iron-ros-base`, `iron-ros-base-jammy`, `iron`](https://github.com/osrf/docker_images/blob/bca53bf4c09d771be3ff735da4157203b53ebc2b/ros/iron/ubuntu/jammy/ros-base/Dockerfile)
 -	[`iron-perception`, `iron-perception-jammy`](https://github.com/osrf/docker_images/blob/bca53bf4c09d771be3ff735da4157203b53ebc2b/ros/iron/ubuntu/jammy/perception/Dockerfile)
--	[`rolling-ros-core`, `rolling-ros-core-jammy`](https://github.com/osrf/docker_images/blob/27cc0b68263bbbb10bb58dd814efc0a6b0a01ec7/ros/rolling/ubuntu/jammy/ros-core/Dockerfile)
--	[`rolling-ros-base`, `rolling-ros-base-jammy`, `rolling`](https://github.com/osrf/docker_images/blob/73c1bf4c30e97d5d3d7c2aaddc8137cae2411409/ros/rolling/ubuntu/jammy/ros-base/Dockerfile)
--	[`rolling-perception`, `rolling-perception-jammy`](https://github.com/osrf/docker_images/blob/73c1bf4c30e97d5d3d7c2aaddc8137cae2411409/ros/rolling/ubuntu/jammy/perception/Dockerfile)
+-	[`rolling-ros-core`, `rolling-ros-core-noble`](https://github.com/osrf/docker_images/blob/026069e4a10a7e6d390db2bb0ce9d3f704e93919/ros/rolling/ubuntu/noble/ros-core/Dockerfile)
+-	[`rolling-ros-base`, `rolling-ros-base-noble`, `rolling`](https://github.com/osrf/docker_images/blob/026069e4a10a7e6d390db2bb0ce9d3f704e93919/ros/rolling/ubuntu/noble/ros-base/Dockerfile)
+-	[`rolling-perception`, `rolling-perception-noble`](https://github.com/osrf/docker_images/blob/026069e4a10a7e6d390db2bb0ce9d3f704e93919/ros/rolling/ubuntu/noble/perception/Dockerfile)
 
 # Quick reference (cont.)
 

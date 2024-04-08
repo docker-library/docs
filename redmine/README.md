@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.1.2`, `5.1`, `5`, `latest`, `5.1.2-bookworm`, `5.1-bookworm`, `5-bookworm`, `bookworm`](https://github.com/docker-library/redmine/blob/51b7921366b46e2dd5a7f9629b933a3e7a68fdb1/5.1/bookworm/Dockerfile)
+-	[`5.1.2`, `5.1`, `5`, `latest`, `5.1.2-bookworm`, `5.1-bookworm`, `5-bookworm`, `bookworm`](https://github.com/docker-library/redmine/blob/2ab2ec39c515e0f4ef96674751d1363161aa63d4/5.1/bookworm/Dockerfile)
 -	[`5.1.2-alpine3.18`, `5.1-alpine3.18`, `5-alpine3.18`, `alpine3.18`, `5.1.2-alpine`, `5.1-alpine`, `5-alpine`, `alpine`](https://github.com/docker-library/redmine/blob/51b7921366b46e2dd5a7f9629b933a3e7a68fdb1/5.1/alpine3.18/Dockerfile)
--	[`5.0.8`, `5.0`, `5.0.8-bookworm`, `5.0-bookworm`](https://github.com/docker-library/redmine/blob/a47825ab3251935beedb9d83ecdc80e78d1ccf28/5.0/bookworm/Dockerfile)
+-	[`5.0.8`, `5.0`, `5.0.8-bookworm`, `5.0-bookworm`](https://github.com/docker-library/redmine/blob/2ab2ec39c515e0f4ef96674751d1363161aa63d4/5.0/bookworm/Dockerfile)
 -	[`5.0.8-alpine3.18`, `5.0-alpine3.18`, `5.0.8-alpine`, `5.0-alpine`](https://github.com/docker-library/redmine/blob/a47825ab3251935beedb9d83ecdc80e78d1ccf28/5.0/alpine3.18/Dockerfile)
 
 # Quick reference (cont.)
@@ -135,8 +135,8 @@ Currently, the default user and password from upstream is admin/admin ([logging 
 
 Important note: There are several ways to store data used by applications that run in Docker containers. We encourage users of the `redmine` images to familiarize themselves with the options available, including:
 
--	Let Docker manage the storage of your files [by writing the files to disk on the host system using its own internal volume management](https://docs.docker.com/engine/tutorials/dockervolumes/#adding-a-data-volume). This is the default and is easy and fairly transparent to the user. The downside is that the files may be hard to locate for tools and applications that run directly on the host system, i.e. outside containers.
--	Create a data directory on the host system (outside the container) and [mount this to a directory visible from inside the container](https://docs.docker.com/engine/tutorials/dockervolumes/#mount-a-host-directory-as-a-data-volume). This places the database files in a known location on the host system, and makes it easy for tools and applications on the host system to access the files. The downside is that the user needs to make sure that the directory exists, and that e.g. directory permissions and other security mechanisms on the host system are set up correctly.
+-	Let Docker manage the storage of your files [by writing the files to disk on the host system using its own internal volume management](https://docs.docker.com/storage/volumes/). This is the default and is easy and fairly transparent to the user. The downside is that the files may be hard to locate for tools and applications that run directly on the host system, i.e. outside containers.
+-	Create a data directory on the host system (outside the container) and [mount this to a directory visible from inside the container](https://docs.docker.com/storage/bind-mounts/). This places the database files in a known location on the host system, and makes it easy for tools and applications on the host system to access the files. The downside is that the user needs to make sure that the directory exists, and that e.g. directory permissions and other security mechanisms on the host system are set up correctly.
 
 The Docker documentation is a good starting point for understanding the different storage options and variations, and there are multiple blogs and forum postings that discuss and give advice in this area. We will simply show the basic procedure here for the latter option above:
 
