@@ -30,8 +30,6 @@ WARNING:
 -	[`2.9.7-alpine`, `2.9-alpine`, `alpine`, `2.9.7-alpine3.19`, `2.9-alpine3.19`, `alpine3.19`](https://github.com/docker-library/haproxy/blob/92d0a2f516f348c774861766fba6bfd87b145eca/2.9/alpine/Dockerfile)
 -	[`2.8.9`, `2.8`, `lts`, `2.8.9-bookworm`, `2.8-bookworm`, `lts-bookworm`](https://github.com/docker-library/haproxy/blob/8b639f8d7d8d5d3bc42273e509fd7ef0cabdb356/2.8/Dockerfile)
 -	[`2.8.9-alpine`, `2.8-alpine`, `lts-alpine`, `2.8.9-alpine3.19`, `2.8-alpine3.19`, `lts-alpine3.19`](https://github.com/docker-library/haproxy/blob/5d34d74e22c28578cf57033f78017613ea0ced0c/2.8/alpine/Dockerfile)
--	[`2.7.12`, `2.7`, `2.7.12-bookworm`, `2.7-bookworm`](https://github.com/docker-library/haproxy/blob/8b639f8d7d8d5d3bc42273e509fd7ef0cabdb356/2.7/Dockerfile)
--	[`2.7.12-alpine`, `2.7-alpine`, `2.7.12-alpine3.19`, `2.7-alpine3.19`](https://github.com/docker-library/haproxy/blob/2d23827e47f9c010a8f4c0144d00997e1963e991/2.7/alpine/Dockerfile)
 -	[`2.6.17`, `2.6`, `2.6.17-bookworm`, `2.6-bookworm`](https://github.com/docker-library/haproxy/blob/8b639f8d7d8d5d3bc42273e509fd7ef0cabdb356/2.6/Dockerfile)
 -	[`2.6.17-alpine`, `2.6-alpine`, `2.6.17-alpine3.19`, `2.6-alpine3.19`](https://github.com/docker-library/haproxy/blob/20e1b3f92d1e74b2644f5748c62a148d07e2ca43/2.6/alpine/Dockerfile)
 -	[`2.4.26`, `2.4`, `2.4.26-bookworm`, `2.4-bookworm`](https://github.com/docker-library/haproxy/blob/8b639f8d7d8d5d3bc42273e509fd7ef0cabdb356/2.4/Dockerfile)
