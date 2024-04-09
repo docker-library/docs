@@ -1,1 +1,1 @@
-../.common-templates/maintainer-community.md
+[Liquibase](%%GITHUB-REPO%%)
