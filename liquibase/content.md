@@ -11,7 +11,7 @@ Liquibase compares the contents of a Change Log to the database to determine whi
 If you are executing Liquibase via the command line today, you are probably doing it like so:
 
 ```console
-$ liquibase update --driver=org.postgresql.Driver --url=”jdbc:postgresql://<DATABASE_IP>:<DATABASE_PORT>/<DATABASE>” --changeLogFile=/liquibase/changelog/changelog.xml --username=<USERNAME> --password=<PASSWORD>
+$ liquibase update --driver=org.postgresql.Driver --url="jdbc:postgresql://<DATABASE_IP>:<DATABASE_PORT>/<DATABASE>" --changeLogFile=/liquibase/changelog/changelog.xml --username=<USERNAME> --password=<PASSWORD>
 ```
 
 The only change to use this docker image, is to use `docker run ...` and mount the folder containing your changelog.xml (or .yml or .json or .sql) to `/liquibase/changelog` in the Liquibase container
