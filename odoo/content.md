@@ -120,7 +120,7 @@ services:
       - POSTGRES_USER=odoo
 ```
 
-If the default postgres credentials does not suit you, tweak the environment variables:
+If the default Postgres credentials does not suit you, tweak the environment variables:
 
 ```yml
 version: '3.1'
@@ -132,9 +132,33 @@ services:
     ports:
       - "8069:8069"
     environment:
-    - HOST=mydb
-    - USER=odoo
-    - PASSWORD=myodoo
+      - HOST=mydb
+      - USER=odoo
+      - PASSWORD=myodoo
+  mydb:
+    image: postgres:15
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_PASSWORD=myodoo
+      - POSTGRES_USER=odoo
+```
+
+Use a custom database name instead of `postgres`
+
+```yml
+version: '3.1'
+services:
+  web:
+    image: %%IMAGE%%:17.0
+    depends_on:
+      - mydb
+    ports:
+      - "8069:8069"
+    environment:
+      - HOST=mydb
+      - USER=odoo
+      - PASSWORD=myodoo
+    command: odoo -d customdb
   mydb:
     image: postgres:15
     environment:
