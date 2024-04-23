@@ -42,11 +42,11 @@ WARNING:
 -	[`3.1.5-slim-bullseye`, `3.1-slim-bullseye`](https://github.com/docker-library/ruby/blob/53646d3dc96008bd20218a4d9aeb5695619fb4f7/3.1/slim-bullseye/Dockerfile)
 -	[`3.1.5-alpine3.19`, `3.1-alpine3.19`, `3.1.5-alpine`, `3.1-alpine`](https://github.com/docker-library/ruby/blob/53646d3dc96008bd20218a4d9aeb5695619fb4f7/3.1/alpine3.19/Dockerfile)
 -	[`3.1.5-alpine3.18`, `3.1-alpine3.18`](https://github.com/docker-library/ruby/blob/53646d3dc96008bd20218a4d9aeb5695619fb4f7/3.1/alpine3.18/Dockerfile)
--	[`3.0.7-bullseye`, `3.0-bullseye`, `3.0.7`, `3.0`](https://github.com/docker-library/ruby/blob/53646d3dc96008bd20218a4d9aeb5695619fb4f7/3.0/bullseye/Dockerfile)
--	[`3.0.7-slim-bullseye`, `3.0-slim-bullseye`, `3.0.7-slim`, `3.0-slim`](https://github.com/docker-library/ruby/blob/53646d3dc96008bd20218a4d9aeb5695619fb4f7/3.0/slim-bullseye/Dockerfile)
--	[`3.0.7-buster`, `3.0-buster`](https://github.com/docker-library/ruby/blob/53646d3dc96008bd20218a4d9aeb5695619fb4f7/3.0/buster/Dockerfile)
--	[`3.0.7-slim-buster`, `3.0-slim-buster`](https://github.com/docker-library/ruby/blob/53646d3dc96008bd20218a4d9aeb5695619fb4f7/3.0/slim-buster/Dockerfile)
--	[`3.0.7-alpine3.16`, `3.0-alpine3.16`, `3.0.7-alpine`, `3.0-alpine`](https://github.com/docker-library/ruby/blob/53646d3dc96008bd20218a4d9aeb5695619fb4f7/3.0/alpine3.16/Dockerfile)
+-	[`3.0.7-bullseye`, `3.0-bullseye`, `3.0.7`, `3.0`](https://github.com/docker-library/ruby/blob/1db5a7b341c03963ea27b0664f46bcf2e47c0912/3.0/bullseye/Dockerfile)
+-	[`3.0.7-slim-bullseye`, `3.0-slim-bullseye`, `3.0.7-slim`, `3.0-slim`](https://github.com/docker-library/ruby/blob/1db5a7b341c03963ea27b0664f46bcf2e47c0912/3.0/slim-bullseye/Dockerfile)
+-	[`3.0.7-buster`, `3.0-buster`](https://github.com/docker-library/ruby/blob/1db5a7b341c03963ea27b0664f46bcf2e47c0912/3.0/buster/Dockerfile)
+-	[`3.0.7-slim-buster`, `3.0-slim-buster`](https://github.com/docker-library/ruby/blob/1db5a7b341c03963ea27b0664f46bcf2e47c0912/3.0/slim-buster/Dockerfile)
+-	[`3.0.7-alpine3.16`, `3.0-alpine3.16`, `3.0.7-alpine`, `3.0-alpine`](https://github.com/docker-library/ruby/blob/1db5a7b341c03963ea27b0664f46bcf2e47c0912/3.0/alpine3.16/Dockerfile)
 
 # Quick reference (cont.)
 
