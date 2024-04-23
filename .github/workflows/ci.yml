@@ -1,7 +1,7 @@
 name: GitHub CI
 
 permissions:
-  contents: read
+  contents: read/write
 
 on:
   pull_request:
