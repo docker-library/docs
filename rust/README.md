@@ -26,10 +26,10 @@ WARNING:
 
 -	[`1-buster`, `1.77-buster`, `1.77.2-buster`, `buster`](https://github.com/rust-lang/docker-rust/blob/73b57d936481598421d27c4d722a24774a2267ea/1.77.2/buster/Dockerfile)
 -	[`1-slim-buster`, `1.77-slim-buster`, `1.77.2-slim-buster`, `slim-buster`](https://github.com/rust-lang/docker-rust/blob/73b57d936481598421d27c4d722a24774a2267ea/1.77.2/buster/slim/Dockerfile)
--	[`1-bullseye`, `1.77-bullseye`, `1.77.2-bullseye`, `bullseye`](https://github.com/rust-lang/docker-rust/blob/73b57d936481598421d27c4d722a24774a2267ea/1.77.2/bullseye/Dockerfile)
--	[`1-slim-bullseye`, `1.77-slim-bullseye`, `1.77.2-slim-bullseye`, `slim-bullseye`](https://github.com/rust-lang/docker-rust/blob/73b57d936481598421d27c4d722a24774a2267ea/1.77.2/bullseye/slim/Dockerfile)
--	[`1-bookworm`, `1.77-bookworm`, `1.77.2-bookworm`, `bookworm`, `1`, `1.77`, `1.77.2`, `latest`](https://github.com/rust-lang/docker-rust/blob/73b57d936481598421d27c4d722a24774a2267ea/1.77.2/bookworm/Dockerfile)
--	[`1-slim-bookworm`, `1.77-slim-bookworm`, `1.77.2-slim-bookworm`, `slim-bookworm`, `1-slim`, `1.77-slim`, `1.77.2-slim`, `slim`](https://github.com/rust-lang/docker-rust/blob/73b57d936481598421d27c4d722a24774a2267ea/1.77.2/bookworm/slim/Dockerfile)
+-	[`1-bullseye`, `1.77-bullseye`, `1.77.2-bullseye`, `bullseye`](https://github.com/rust-lang/docker-rust/blob/7b280d7b867cff2c84ea301fd4030d89d87c4930/1.77.2/bullseye/Dockerfile)
+-	[`1-slim-bullseye`, `1.77-slim-bullseye`, `1.77.2-slim-bullseye`, `slim-bullseye`](https://github.com/rust-lang/docker-rust/blob/7b280d7b867cff2c84ea301fd4030d89d87c4930/1.77.2/bullseye/slim/Dockerfile)
+-	[`1-bookworm`, `1.77-bookworm`, `1.77.2-bookworm`, `bookworm`, `1`, `1.77`, `1.77.2`, `latest`](https://github.com/rust-lang/docker-rust/blob/7b280d7b867cff2c84ea301fd4030d89d87c4930/1.77.2/bookworm/Dockerfile)
+-	[`1-slim-bookworm`, `1.77-slim-bookworm`, `1.77.2-slim-bookworm`, `slim-bookworm`, `1-slim`, `1.77-slim`, `1.77.2-slim`, `slim`](https://github.com/rust-lang/docker-rust/blob/7b280d7b867cff2c84ea301fd4030d89d87c4930/1.77.2/bookworm/slim/Dockerfile)
 -	[`1-alpine3.18`, `1.77-alpine3.18`, `1.77.2-alpine3.18`, `alpine3.18`](https://github.com/rust-lang/docker-rust/blob/73b57d936481598421d27c4d722a24774a2267ea/1.77.2/alpine3.18/Dockerfile)
 -	[`1-alpine3.19`, `1.77-alpine3.19`, `1.77.2-alpine3.19`, `alpine3.19`, `1-alpine`, `1.77-alpine`, `1.77.2-alpine`, `alpine`](https://github.com/rust-lang/docker-rust/blob/73b57d936481598421d27c4d722a24774a2267ea/1.77.2/alpine3.19/Dockerfile)
 
@@ -39,7 +39,7 @@ WARNING:
 	[https://github.com/rust-lang/docker-rust/issues](https://github.com/rust-lang/docker-rust/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/rust/), [`arm32v7`](https://hub.docker.com/r/arm32v7/rust/), [`arm64v8`](https://hub.docker.com/r/arm64v8/rust/), [`i386`](https://hub.docker.com/r/i386/rust/), [`ppc64le`](https://hub.docker.com/r/ppc64le/rust/)
+	[`amd64`](https://hub.docker.com/r/amd64/rust/), [`arm32v7`](https://hub.docker.com/r/arm32v7/rust/), [`arm64v8`](https://hub.docker.com/r/arm64v8/rust/), [`i386`](https://hub.docker.com/r/i386/rust/), [`ppc64le`](https://hub.docker.com/r/ppc64le/rust/), [`s390x`](https://hub.docker.com/r/s390x/rust/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/rust/` directory](https://github.com/docker-library/repo-info/blob/master/repos/rust) ([history](https://github.com/docker-library/repo-info/commits/master/repos/rust))  
