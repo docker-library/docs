@@ -28,16 +28,11 @@ WARNING:
 
 ## Simple Tags
 
--	[`7.0.9-rc1-jammy`, `7.0-rc-jammy`](https://github.com/docker-library/mongo/blob/fbfba91eec75ee6dfa1644b519af518d9a6a71df/7.0-rc/Dockerfile)
--	[`7.0.9-rc1-windowsservercore-ltsc2022`, `7.0-rc-windowsservercore-ltsc2022`](https://github.com/docker-library/mongo/blob/fbfba91eec75ee6dfa1644b519af518d9a6a71df/7.0-rc/windows/windowsservercore-ltsc2022/Dockerfile)
--	[`7.0.9-rc1-windowsservercore-1809`, `7.0-rc-windowsservercore-1809`](https://github.com/docker-library/mongo/blob/fbfba91eec75ee6dfa1644b519af518d9a6a71df/7.0-rc/windows/windowsservercore-1809/Dockerfile)
--	[`7.0.9-rc1-nanoserver-ltsc2022`, `7.0-rc-nanoserver-ltsc2022`](https://github.com/docker-library/mongo/blob/fbfba91eec75ee6dfa1644b519af518d9a6a71df/7.0-rc/windows/nanoserver-ltsc2022/Dockerfile)
--	[`7.0.9-rc1-nanoserver-1809`, `7.0-rc-nanoserver-1809`](https://github.com/docker-library/mongo/blob/fbfba91eec75ee6dfa1644b519af518d9a6a71df/7.0-rc/windows/nanoserver-1809/Dockerfile)
--	[`7.0.8-jammy`, `7.0-jammy`, `7-jammy`, `jammy`](https://github.com/docker-library/mongo/blob/0d68481b0a65cf33346265e5c70700b037af0a34/7.0/Dockerfile)
--	[`7.0.8-windowsservercore-ltsc2022`, `7.0-windowsservercore-ltsc2022`, `7-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`](https://github.com/docker-library/mongo/blob/0d68481b0a65cf33346265e5c70700b037af0a34/7.0/windows/windowsservercore-ltsc2022/Dockerfile)
--	[`7.0.8-windowsservercore-1809`, `7.0-windowsservercore-1809`, `7-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/docker-library/mongo/blob/0d68481b0a65cf33346265e5c70700b037af0a34/7.0/windows/windowsservercore-1809/Dockerfile)
--	[`7.0.8-nanoserver-ltsc2022`, `7.0-nanoserver-ltsc2022`, `7-nanoserver-ltsc2022`, `nanoserver-ltsc2022`](https://github.com/docker-library/mongo/blob/0d68481b0a65cf33346265e5c70700b037af0a34/7.0/windows/nanoserver-ltsc2022/Dockerfile)
--	[`7.0.8-nanoserver-1809`, `7.0-nanoserver-1809`, `7-nanoserver-1809`, `nanoserver-1809`](https://github.com/docker-library/mongo/blob/0d68481b0a65cf33346265e5c70700b037af0a34/7.0/windows/nanoserver-1809/Dockerfile)
+-	[`7.0.9-jammy`, `7.0-jammy`, `7-jammy`, `jammy`](https://github.com/docker-library/mongo/blob/9370d3f2e36d4134f29e513346b4c4c19e927a6f/7.0/Dockerfile)
+-	[`7.0.9-windowsservercore-ltsc2022`, `7.0-windowsservercore-ltsc2022`, `7-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`](https://github.com/docker-library/mongo/blob/9370d3f2e36d4134f29e513346b4c4c19e927a6f/7.0/windows/windowsservercore-ltsc2022/Dockerfile)
+-	[`7.0.9-windowsservercore-1809`, `7.0-windowsservercore-1809`, `7-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/docker-library/mongo/blob/9370d3f2e36d4134f29e513346b4c4c19e927a6f/7.0/windows/windowsservercore-1809/Dockerfile)
+-	[`7.0.9-nanoserver-ltsc2022`, `7.0-nanoserver-ltsc2022`, `7-nanoserver-ltsc2022`, `nanoserver-ltsc2022`](https://github.com/docker-library/mongo/blob/9370d3f2e36d4134f29e513346b4c4c19e927a6f/7.0/windows/nanoserver-ltsc2022/Dockerfile)
+-	[`7.0.9-nanoserver-1809`, `7.0-nanoserver-1809`, `7-nanoserver-1809`, `nanoserver-1809`](https://github.com/docker-library/mongo/blob/9370d3f2e36d4134f29e513346b4c4c19e927a6f/7.0/windows/nanoserver-1809/Dockerfile)
 -	[`6.0.15-jammy`, `6.0-jammy`, `6-jammy`](https://github.com/docker-library/mongo/blob/c6713cbc8fa45598c23446993c6a01c95150b785/6.0/Dockerfile)
 -	[`6.0.15-windowsservercore-ltsc2022`, `6.0-windowsservercore-ltsc2022`, `6-windowsservercore-ltsc2022`](https://github.com/docker-library/mongo/blob/c6713cbc8fa45598c23446993c6a01c95150b785/6.0/windows/windowsservercore-ltsc2022/Dockerfile)
 -	[`6.0.15-windowsservercore-1809`, `6.0-windowsservercore-1809`, `6-windowsservercore-1809`](https://github.com/docker-library/mongo/blob/c6713cbc8fa45598c23446993c6a01c95150b785/6.0/windows/windowsservercore-1809/Dockerfile)
@@ -56,26 +51,16 @@ WARNING:
 
 ## Shared Tags
 
--	`7.0.9-rc1`, `7.0-rc`:
-	-	[`7.0.9-rc1-jammy`](https://github.com/docker-library/mongo/blob/fbfba91eec75ee6dfa1644b519af518d9a6a71df/7.0-rc/Dockerfile)
-	-	[`7.0.9-rc1-windowsservercore-ltsc2022`](https://github.com/docker-library/mongo/blob/fbfba91eec75ee6dfa1644b519af518d9a6a71df/7.0-rc/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`7.0.9-rc1-windowsservercore-1809`](https://github.com/docker-library/mongo/blob/fbfba91eec75ee6dfa1644b519af518d9a6a71df/7.0-rc/windows/windowsservercore-1809/Dockerfile)
--	`7.0.9-rc1-windowsservercore`, `7.0-rc-windowsservercore`:
-	-	[`7.0.9-rc1-windowsservercore-ltsc2022`](https://github.com/docker-library/mongo/blob/fbfba91eec75ee6dfa1644b519af518d9a6a71df/7.0-rc/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`7.0.9-rc1-windowsservercore-1809`](https://github.com/docker-library/mongo/blob/fbfba91eec75ee6dfa1644b519af518d9a6a71df/7.0-rc/windows/windowsservercore-1809/Dockerfile)
--	`7.0.9-rc1-nanoserver`, `7.0-rc-nanoserver`:
-	-	[`7.0.9-rc1-nanoserver-ltsc2022`](https://github.com/docker-library/mongo/blob/fbfba91eec75ee6dfa1644b519af518d9a6a71df/7.0-rc/windows/nanoserver-ltsc2022/Dockerfile)
-	-	[`7.0.9-rc1-nanoserver-1809`](https://github.com/docker-library/mongo/blob/fbfba91eec75ee6dfa1644b519af518d9a6a71df/7.0-rc/windows/nanoserver-1809/Dockerfile)
--	`7.0.8`, `7.0`, `7`, `latest`:
-	-	[`7.0.8-jammy`](https://github.com/docker-library/mongo/blob/0d68481b0a65cf33346265e5c70700b037af0a34/7.0/Dockerfile)
-	-	[`7.0.8-windowsservercore-ltsc2022`](https://github.com/docker-library/mongo/blob/0d68481b0a65cf33346265e5c70700b037af0a34/7.0/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`7.0.8-windowsservercore-1809`](https://github.com/docker-library/mongo/blob/0d68481b0a65cf33346265e5c70700b037af0a34/7.0/windows/windowsservercore-1809/Dockerfile)
--	`7.0.8-windowsservercore`, `7.0-windowsservercore`, `7-windowsservercore`, `windowsservercore`:
-	-	[`7.0.8-windowsservercore-ltsc2022`](https://github.com/docker-library/mongo/blob/0d68481b0a65cf33346265e5c70700b037af0a34/7.0/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`7.0.8-windowsservercore-1809`](https://github.com/docker-library/mongo/blob/0d68481b0a65cf33346265e5c70700b037af0a34/7.0/windows/windowsservercore-1809/Dockerfile)
--	`7.0.8-nanoserver`, `7.0-nanoserver`, `7-nanoserver`, `nanoserver`:
-	-	[`7.0.8-nanoserver-ltsc2022`](https://github.com/docker-library/mongo/blob/0d68481b0a65cf33346265e5c70700b037af0a34/7.0/windows/nanoserver-ltsc2022/Dockerfile)
-	-	[`7.0.8-nanoserver-1809`](https://github.com/docker-library/mongo/blob/0d68481b0a65cf33346265e5c70700b037af0a34/7.0/windows/nanoserver-1809/Dockerfile)
+-	`7.0.9`, `7.0`, `7`, `latest`:
+	-	[`7.0.9-jammy`](https://github.com/docker-library/mongo/blob/9370d3f2e36d4134f29e513346b4c4c19e927a6f/7.0/Dockerfile)
+	-	[`7.0.9-windowsservercore-ltsc2022`](https://github.com/docker-library/mongo/blob/9370d3f2e36d4134f29e513346b4c4c19e927a6f/7.0/windows/windowsservercore-ltsc2022/Dockerfile)
+	-	[`7.0.9-windowsservercore-1809`](https://github.com/docker-library/mongo/blob/9370d3f2e36d4134f29e513346b4c4c19e927a6f/7.0/windows/windowsservercore-1809/Dockerfile)
+-	`7.0.9-windowsservercore`, `7.0-windowsservercore`, `7-windowsservercore`, `windowsservercore`:
+	-	[`7.0.9-windowsservercore-ltsc2022`](https://github.com/docker-library/mongo/blob/9370d3f2e36d4134f29e513346b4c4c19e927a6f/7.0/windows/windowsservercore-ltsc2022/Dockerfile)
+	-	[`7.0.9-windowsservercore-1809`](https://github.com/docker-library/mongo/blob/9370d3f2e36d4134f29e513346b4c4c19e927a6f/7.0/windows/windowsservercore-1809/Dockerfile)
+-	`7.0.9-nanoserver`, `7.0-nanoserver`, `7-nanoserver`, `nanoserver`:
+	-	[`7.0.9-nanoserver-ltsc2022`](https://github.com/docker-library/mongo/blob/9370d3f2e36d4134f29e513346b4c4c19e927a6f/7.0/windows/nanoserver-ltsc2022/Dockerfile)
+	-	[`7.0.9-nanoserver-1809`](https://github.com/docker-library/mongo/blob/9370d3f2e36d4134f29e513346b4c4c19e927a6f/7.0/windows/nanoserver-1809/Dockerfile)
 -	`6.0.15`, `6.0`, `6`:
 	-	[`6.0.15-jammy`](https://github.com/docker-library/mongo/blob/c6713cbc8fa45598c23446993c6a01c95150b785/6.0/Dockerfile)
 	-	[`6.0.15-windowsservercore-ltsc2022`](https://github.com/docker-library/mongo/blob/c6713cbc8fa45598c23446993c6a01c95150b785/6.0/windows/windowsservercore-ltsc2022/Dockerfile)
