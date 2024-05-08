@@ -1,1 +1,1 @@
-Redis is an open source key-value store that functions as a data structure server.
+Redis is a source-available data structure store used by millions of developers as a cache, vector database, document database, streaming engine, and message broker.
