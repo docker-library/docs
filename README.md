@@ -61,6 +61,7 @@ After opening your Pull Request the changes will be checked by an automated `mar
 -	Create a `license.md` (required)
 -	Create a `maintainer.md` (required)
 -	Create a `github-repo` (required)
+-	Create a `metadata.json` (required)
 -	Add a `logo.png` (recommended)
 
 Optionally:
@@ -127,6 +128,18 @@ The image is automatically scaled to a 120 pixel square for the top of the Docke
 ## `maintainer.md`
 
 This file should contain a link to the maintainers of the Dockerfile.
+
+## `metadata.json`
+
+This file contains data about the repo for Docker Hub. The minimum file is defined below. `./metadata.sh [repo-name]` must be used to correctly format it (use `-f` to apply its suggested changes). There is a limit to the number of Docker Hub categories allowed; run with `-c` to check the limit and categories. `metadata.json` in the root contains the list of categories to choose from.
+
+```json
+{
+    "hub": {
+         "categories": []
+    }
+}
+```
 
 ## `README-short.txt`
 
