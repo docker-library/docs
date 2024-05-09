@@ -146,7 +146,9 @@ To minimize image size, it's uncommon for additional related tools (such as `git
 
 # License
 
-View [license information](https://redis.io/legal/licenses/) for the software contained in this image.
+Starting on March 20th, 2024, Redis follows a dual-licensing model with the choice of the [Redis Source Available License v2 - RSALv2](https://redis.io/legal/rsalv2-agreement/) or the [Server Side Public License v1 - SSPLv1](https://redis.io/legal/server-side-public-license-sspl/). Older versions of Redis (<=7.2.4) are licensed under [3-Clause BSD](https://opensource.org/license/bsd-3-clause). 
+
+Please view the [license information](https://redis.io/legal/licenses/) for the software contained in this image.
 
 As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 
