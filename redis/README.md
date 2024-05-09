@@ -58,7 +58,7 @@ Redis is a source-available data structure store used by millions of developers 
 
 > [wikipedia.org/wiki/Redis](https://en.wikipedia.org/wiki/Redis)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/01c12653951b2fe592c1f93a13b4e289ada0e3a1/redis/logo.png)
+![logo](https://github.com/docker-library/docs/blob/master/redis/logo.png?raw=true)
 
 # Security
 
