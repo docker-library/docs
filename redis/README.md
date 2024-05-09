@@ -54,7 +54,7 @@ WARNING:
 
 # What is Redis?
 
-Redis is an open-source, networked, in-memory, key-value data store with optional durability. It is written in ANSI C. The development of Redis is sponsored by Redis Labs today; before that, it was sponsored by Pivotal and VMware. According to the monthly ranking by DB-Engines.com, Redis is the most popular key-value store. The name Redis means REmote DIctionary Server.
+Redis is a source-available data structure store used by millions of developers as a cache, vector database, document database, streaming engine, and message broker. It offers optional durability and is written in ANSI C. The development of Redis is sponsored by Redis (the company) today; before that, it was sponsored by Pivotal and VMware. According to the monthly ranking by DB-Engines.com, Redis is the most popular key-value store. The name Redis means REmote DIctionary Server.
 
 > [wikipedia.org/wiki/Redis](https://en.wikipedia.org/wiki/Redis)
 
@@ -64,8 +64,8 @@ Redis is an open-source, networked, in-memory, key-value data store with optiona
 
 For the ease of accessing Redis from other containers via Docker networking, the "Protected mode" is turned off by default. This means that if you expose the port outside of your host (e.g., via `-p` on `docker run`), it will be open without a password to anyone. It is **highly** recommended to set a password (by supplying a config file) if you plan on exposing your Redis instance to the internet. For further information, see the following links about Redis security:
 
--	[Redis documentation on security](https://redis.io/topics/security)
--	[Protected mode](https://redis.io/topics/security#protected-mode)
+-	[Redis documentation on security](https://redis.io/docs/latest/operate/oss_and_stack/management/security/)
+-	[Protected mode](https://redis.io/docs/latest/operate/oss_and_stack/management/security/#protected-mode)
 -	[A few things about Redis security by antirez](http://antirez.com/news/96)
 
 # How to use this image
@@ -116,13 +116,15 @@ The mapped directory should be writable, as depending on the configuration and m
 
 This variant is *not* a 32bit image (and will not run on 32bit hardware), but includes Redis compiled as a 32bit binary, especially for users who need the decreased memory requirements associated with that. See ["Using 32 bit instances"](http://redis.io/topics/memory-optimization#using-32-bit-instances) in the Redis documentation for more information.
 
-# Redis Modules
+# Redis Stack and Modules
 
-You can find the list of modules for Redis on [redis.io](https://redis.io/modules) or on [redismodules.com](http://redismodules.com). A few of the standard modules can be found here:
+Modules extend Redis with extra capabilities. Redis Stack already comes with the capabilities (search and query, JSON support, and more) that are developed by Redis (the company). You can find the Docker images here:
 
--	[RediSearch](https://hub.docker.com/r/redislabs/redisearch/): Search and Query with Indexing on Redis
--	[ReJSON](https://hub.docker.com/r/redislabs/rejson/): Extended JSON processing for Redis
--	[ReBloom](https://hub.docker.com/r/redislabs/rebloom/): Bloom Filters data type for membership/existence search on Redis
+-	[Redis Stack](https://hub.docker.com/r/redis/redis-stack): Redis plus extra capabilities and Redis Insight (a GUI for Redis)
+-	[Redis Stack Server](https://hub.docker.com/r/redis/redis-stack-server): Redis plus extra capabilities
+
+You can find the list of modules for Redis on [redis.io](https://redis.io/community/redis-modules-hub/).
+
 
 # Image Variants
 
@@ -144,7 +146,7 @@ To minimize image size, it's uncommon for additional related tools (such as `git
 
 # License
 
-View [license information](http://redis.io/topics/license) for the software contained in this image.
+View [license information](https://redis.io/legal/licenses/) for the software contained in this image.
 
 As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 
