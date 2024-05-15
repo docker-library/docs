@@ -94,34 +94,39 @@ These environment variables are using to define configuration parameters of the 
 ### Naming
 
 Config environment variables should be converted from the camel-case format. For example:
+
 The `exportDisabled` config option should be converted to `ESPOCRM_CONFIG_EXPORT_DISABLED`.
 
 ### Logger
 
 There are additional options to change the `logger`:
 
-- `ESPOCRM_CONFIG_LOGGER_LEVEL: "DEBUG"`,
-- `ESPOCRM_CONFIG_LOGGER_MAX_FILE_NUMBER: 30`
-- `ESPOCRM_CONFIG_LOGGER_PATH: "data/logs/espo.log"`
+-	`ESPOCRM_CONFIG_LOGGER_LEVEL: 'DEBUG'`
+-	`ESPOCRM_CONFIG_LOGGER_MAX_FILE_NUMBER: 30`
+-	`ESPOCRM_CONFIG_LOGGER_PATH: 'data/logs/espo.log'`
 
 ### Allowed types:
 
 #### String
-```
-ESPOCRM_CONFIG_WEB_SOCKET_URL: "wss://my-espocrm.com:8080"
+
+```yaml
+ESPOCRM_CONFIG_WEB_SOCKET_URL: 'wss://my-espocrm.com:8080'
 ```
 
 #### Integer
-```
+
+```yaml
 ESPOCRM_CONFIG_EMAIL_MESSAGE_MAX_SIZE: 10
 ```
 
 #### Boolean
-```
-ESPOCRM_CONFIG_USE_WEB_SOCKET: "true"
+
+```yaml
+ESPOCRM_CONFIG_USE_WEB_SOCKET: 'true'
 ```
 
 #### Null
-```
-ESPOCRM_CONFIG_CURRENCY_DECIMAL_PLACES: "null"
+
+```yaml
+ESPOCRM_CONFIG_CURRENCY_DECIMAL_PLACES: 'null'
 ```
