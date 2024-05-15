@@ -23,7 +23,7 @@ services:
       ESPOCRM_DATABASE_PASSWORD: database_password
       ESPOCRM_ADMIN_USERNAME: admin
       ESPOCRM_ADMIN_PASSWORD: password
-      ESPOCRM_SITE_URL: "http://localhost:8080"
+      ESPOCRM_SITE_URL: http://localhost:8080
     volumes:
       - espocrm:/var/www/html
     restart: always
@@ -42,10 +42,10 @@ services:
     image: espocrm
     container_name: espocrm-websocket
     environment:
-      ESPOCRM_CONFIG_USE_WEB_SOCKET: "true"
-      ESPOCRM_CONFIG_WEB_SOCKET_URL: "ws://localhost:8081"
-      ESPOCRM_CONFIG_WEB_SOCKET_ZERO_M_Q_SUBSCRIBER_DSN: "tcp://*:7777"
-      ESPOCRM_CONFIG_WEB_SOCKET_ZERO_M_Q_SUBMISSION_DSN: "tcp://espocrm-websocket:7777"
+      ESPOCRM_CONFIG_USE_WEB_SOCKET: 'true'
+      ESPOCRM_CONFIG_WEB_SOCKET_URL: ws://localhost:8081
+      ESPOCRM_CONFIG_WEB_SOCKET_ZERO_M_Q_SUBSCRIBER_DSN: tcp://*:7777
+      ESPOCRM_CONFIG_WEB_SOCKET_ZERO_M_Q_SUBMISSION_DSN: tcp://espocrm-websocket:7777
     volumes:
       - espocrm:/var/www/html
     restart: always
