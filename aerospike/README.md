@@ -24,8 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`ee-7.0.0.9`, `ee-7.0.0.9_1`](https://github.com/aerospike/aerospike-server.docker/blob/0e3d45027a31f3753283d1f92f94c86739f5103a/enterprise/debian12/Dockerfile)
--	[`ce-7.0.0.9`, `ce-7.0.0.9_1`](https://github.com/aerospike/aerospike-server.docker/blob/0e3d45027a31f3753283d1f92f94c86739f5103a/community/debian12/Dockerfile)
+-	[`ee-7.1.0.0`, `ee-7.1.0.0_1`](https://github.com/aerospike/aerospike-server.docker/blob/af847cba3ce8e7d4f8207106d6bf5ae59e749473/enterprise/ubuntu22.04/Dockerfile)
+-	[`ce-7.1.0.0`, `ce-7.1.0.0_1`](https://github.com/aerospike/aerospike-server.docker/blob/af847cba3ce8e7d4f8207106d6bf5ae59e749473/community/ubuntu22.04/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -217,7 +217,7 @@ For more, see [How do I get a 2 nodes Aerospike cluster running quickly in Docke
 
 ## Image Versions
 
-These images are based on [debian:*-slim](https://hub.docker.com/_/debian).
+These images are based on [ubuntu:22.04](https://hub.docker.com/_/ubuntu).
 
 ### ee-[version]
 
