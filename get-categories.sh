@@ -7,15 +7,10 @@ workdir="$(dirname "$workdir")"
 jsonFile='metadata.json'
 canonicalMetadataFile="$workdir/$jsonFile"
 
-allCategories="$(curl -fsSL https://hub.docker.com/v2/categories)"
-export allCategories
-
 # add categories slugs to canonicalMetadataFile without losing other keys there
-json="$(
-	jq --sort-keys '
-		(env.allCategories | fromjson) as $allCategories
-		| .hub.categories = ( [ $allCategories[].slug ] | sort )
-	' "$canonicalMetadataFile"
-)"
-
-echo "$json" | tee "$canonicalMetadataFile"
+curl -fsSL https://hub.docker.com/v2/categories | jq -s --sort-keys '
+	.[0] as $allCategories
+	| .[1]
+	| .hub.categories = ( [ $allCategories[].slug ] | sort )
+' - "$canonicalMetadataFile" | tee "$canonicalMetadataFile.new"
+mv "$canonicalMetadataFile.new" "$canonicalMetadataFile"
