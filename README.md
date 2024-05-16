@@ -131,7 +131,7 @@ This file should contain a link to the maintainers of the Dockerfile.
 
 ## `metadata.json`
 
-This file contains data about the repo for Docker Hub. The minimum file is defined below. `./metadata.sh [repo-name]` must be used to correctly format it (use `-f` to apply its suggested changes). There is a limit to the number of Docker Hub categories allowed; run with `-c` to check the limit and categories. `metadata.json` in the root contains the list of categories to choose from.
+This file contains data about the repo for Docker Hub. The minimum file is defined below. `./metadata.sh [repo-name]` must be used to correctly format it (use `-w` to apply its suggested format changes). Only three sorted unique Docker Hub categories are allowed. `metadata.json` in the root contains the list of categories to choose from.
 
 ```json
 {
