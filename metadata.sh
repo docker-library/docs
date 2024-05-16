@@ -85,17 +85,26 @@ for repo in "${repos[@]}"; do
 
 	# TODO also check for required keys and/or types?
 	# the canonicalMetadataFile doesn't have too many categories since it is the source of categories
-	# all other metadata.json files must not be more than maxCategories
+	# all other metadata.json files must not be more than maxCategories or have categories that aren't in the canonical set
 	if [ "$repoFile" != "$canonicalMetadataFile" ]; then
-		if tooManyCategories="$(jq --raw-output '
+		export repoFile
+		if errorText="$(jq -r --slurpfile canonical "$canonicalMetadataFile" '
 			.hub.categories
-			| length
-			| if . > (env.maxCategories | tonumber) then
-				.
-			else empty end
+			| (
+				length
+				| if . > (env.maxCategories | tonumber) then
+					"error: \(env.repoFile): too many categories: \(.) (max \(env.maxCategories))"
+				else empty end
+			),
+			(
+				. - $canonical[0].hub.categories
+				| if length > 0 then
+					"error: \(env.repoFile): unknown categories \(.)"
+				else empty end
+			)
 		' "$repoFile")"; then
-			if [ -n "$tooManyCategories" ]; then
-				echo >&2 "error: $repoFile: too many categories: $tooManyCategories (max $maxCategories)"
+			if [ -n "$errorText" ]; then
+				echo >&2 "$errorText"
 				(( failures++ )) || :
 			fi
 		else
@@ -103,20 +112,6 @@ for repo in "${repos[@]}"; do
 			(( failures++ )) || :
 			continue
 		fi
-	fi
-
-	# check for categories that aren't in the canonical set
-	if extraCategories="$(jq -c --slurpfile canonical "$canonicalMetadataFile" '
-		.hub.categories - $canonical[0].hub.categories
-	' "$repoFile")"; then
-		if [ "$extraCategories" != '[]' ]; then
-			echo >&2 "error: $repoFile: unkown categories: $extraCategories"
-			(( failures++ )) || :
-		fi
-	else
-		echo >&2 "error parsing '$repoFile'; invalid JSON?"
-		(( failures++ )) || :
-		continue
 	fi
 done
 
