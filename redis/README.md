@@ -126,7 +126,7 @@ Modules extend Redis with extra capabilities. Redis Stack already comes with the
 You can find the list of modules for Redis on [redis.io](https://redis.io/community/redis-modules-hub/).
 
 
-# Image Variants
+# Image variants
 
 The `redis` images come in many flavors, each designed for a specific use case.
 
