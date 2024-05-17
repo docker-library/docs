@@ -31,31 +31,48 @@ In order to start an ArangoDB instance, run:
 unix> docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 -d --name arangodb-instance %%IMAGE%%
 ```
 
-Will create and launch the %%IMAGE%% docker instance as background process. The Identifier of the process is printed. By default ArangoDB listen on port 8529 for request and the image includes `EXPOSE 8529`. If you link an application container it is automatically available in the linked container. See the following examples.
+On macOS/ARM, the processor architecture chosen by default may be x86-64 (`linux/amd64`), which is not optimal. You can pass the `--platform` flag to the `docker run` command to specify the appropriate operating system and architecture for the container (`linux/arm64/v8`):
 
-In order to get the IP arango listens on, run:
+```console
+docker run --platform linux/arm64/v8 -p 8529:8529 -e ARANGO_RANDOM_ROOT_PASSWORD=1 arangodb-instance arangodb
+```
+
+This creates and launches the %%IMAGE%% Docker instance as a background process. The Identifier of the process is printed. By default, ArangoDB listens on port `8529` for request and the image includes `EXPOSE 8529`. If you link an application container it is automatically available in the linked container.
+
+In order to get the IP ArangoDB listens on, run:
 
 ```console
 unix> docker inspect --format '{{ .NetworkSettings.IPAddress }}' arangodb-instance
 ```
+### Initialize the server language
+
+When using Docker, you need to specify the language you want to initialize the server to on the first run in one of the following ways:
+
+-	Set the environment variable `LANG` to a locale in the `docker run` command, e.g. `-e LANG=sv` for a Swedish locale.
+
+-	Use an `arangod.conf` configuration file that sets a language and mount it into the container. For example, create a configuration file on your host system in which you set `icu-language = sv` at the top (before any `[section]`) and then mount the file over the default configuration file like `docker run -v /your-host-path/arangod.conf:/etc/arangodb3/arangod.conf ...`.
+
+Note that you cannot set the language using only a startup option on the
+command-line, like `docker run ... arangodb --icu-language sv`.
+
+If you don't specify a language explicitly, the default is `en_US` up to
+ArangoDB v3.11 and `en_US_POSIX` from ArangoDB v3.12 onward.
 
 ### Using the instance
 
-In order to use the running instance from an application, link the container:
+To use the running instance from an application, link the container:
 
 ```console
 unix> docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 --name my-app --link arangodb-instance:db-link %%IMAGE%%
 ```
 
-This will use the instance with the name `arangodb-instance` and link it into the application container. The application container will contain environment variables
+This uses the instance named `arangodb-instance` and links it into the application container. The application container contains environment variables, which can be used to access the database.
 
 	DB_LINK_PORT_8529_TCP=tcp://172.17.0.17:8529
 	DB_LINK_PORT_8529_TCP_ADDR=172.17.0.17
 	DB_LINK_PORT_8529_TCP_PORT=8529
 	DB_LINK_PORT_8529_TCP_PROTO=tcp
 	DB_LINK_NAME=/naughty_ardinghelli/db-link
-
-These can be used to access the database.
 
 ### Exposing the port to the outside world
 
@@ -118,7 +135,7 @@ Then use `docker exec` and the ID / name to run something inside of the existing
 unix> docker exec -it jolly_joker arangosh
 ```
 
-See more information about [Configuration](https://www.arangodb.com/docs/stable/administration-configuration.html)
+For more information, see the ArangoDB documentation about [Configuration](https://docs.arangodb.com/stable/operations/administration/configuration/).
 
 ### Limiting resource utilization
 
@@ -186,7 +203,7 @@ If want to save a few bytes you can alternatively use [busybox](https://hub.dock
 unix> docker run -d --name arangodb-persist -v /var/lib/arangodb3 busybox true
 ```
 
-### Using as a base image
+### Usage as a base image
 
 If you are using the image as a base image please make sure to wrap any CMD in the [exec](https://docs.docker.com/reference/dockerfile/#cmd) form. Otherwise the default entrypoint will not do its bootstrapping work.
 
@@ -194,4 +211,4 @@ When deriving the image, you can control the instantiation via putting files int
 
 -	`*.sh` - files ending with .sh will be run as a bash shellscript.
 -	`*.js` - files will be executed with arangosh. You can specify additional arangosh arguments via the `ARANGOSH_ARGS` environment variable.
--	`dumps/` - in this directory you can place subdirectories containing database dumps generated using [arangodump](https://www.arangodb.com/docs/stable/programs-arangodump.html). They can be restored using [arangorestore](https://www.arangodb.com/docs/stable/programs-arangorestore.html).
+-	`dumps/` - in this directory you can place subdirectories containing database dumps generated using [arangodump](https://docs.arangodb.com/stable/components/tools/arangodump/). They can be restored using [arangorestore](https://docs.arangodb.com/stable/components/tools/arangorestore/).
