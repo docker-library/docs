@@ -34,7 +34,7 @@ unix> docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 -d --name arangodb-instance %%
 On macOS/ARM, the processor architecture chosen by default may be x86-64 (`linux/amd64`), which is not optimal. You can pass the `--platform` flag to the `docker run` command to specify the appropriate operating system and architecture for the container (`linux/arm64/v8`):
 
 ```console
-docker run --platform linux/arm64/v8 -p 8529:8529 -e ARANGO_RANDOM_ROOT_PASSWORD=1 arangodb-instance arangodb
+docker run --platform linux/arm64/v8 -p 8529:8529 -e ARANGO_RANDOM_ROOT_PASSWORD=1 arangodb-instance %%IMAGE%%
 ```
 
 This creates and launches the %%IMAGE%% Docker instance as a background process. The Identifier of the process is printed. By default, ArangoDB listens on port `8529` for request and the image includes `EXPOSE 8529`. If you link an application container it is automatically available in the linked container.
@@ -44,6 +44,7 @@ In order to get the IP ArangoDB listens on, run:
 ```console
 unix> docker inspect --format '{{ .NetworkSettings.IPAddress }}' arangodb-instance
 ```
+
 ### Initialize the server language
 
 When using Docker, you need to specify the language you want to initialize the server to on the first run in one of the following ways:
@@ -52,11 +53,9 @@ When using Docker, you need to specify the language you want to initialize the s
 
 -	Use an `arangod.conf` configuration file that sets a language and mount it into the container. For example, create a configuration file on your host system in which you set `icu-language = sv` at the top (before any `[section]`) and then mount the file over the default configuration file like `docker run -v /your-host-path/arangod.conf:/etc/arangodb3/arangod.conf ...`.
 
-Note that you cannot set the language using only a startup option on the
-command-line, like `docker run ... arangodb --icu-language sv`.
+Note that you cannot set the language using only a startup option on the command-line, like `docker run ... %%IMAGE%% --icu-language sv`.
 
-If you don't specify a language explicitly, the default is `en_US` up to
-ArangoDB v3.11 and `en_US_POSIX` from ArangoDB v3.12 onward.
+If you don't specify a language explicitly, the default is `en_US` up to ArangoDB v3.11 and `en_US_POSIX` from ArangoDB v3.12 onward.
 
 ### Using the instance
 
@@ -166,7 +165,7 @@ ArangoDB supports two different storage engines from version 3.2 to 3.6. You can
 
 ArangoDB uses the volume `/var/lib/arangodb3` as database directory to store the collection data and the volume `/var/lib/arangodb3-apps` as apps directory to store any extensions. These directories are marked as docker volumes.
 
-See `docker inspect --format "{{ .Config.Volumes}}" arangodb` for all volumes.
+See `docker inspect --format "{{ .Config.Volumes }}" %%IMAGE%%` for all volumes.
 
 A good explanation about persistence and docker container can be found here: [Docker In-depth: Volumes](http://container42.com/2014/11/03/docker-indepth-volumes/), [Why Docker Data Containers are Good](https://medium.com/@ramangupta/why-docker-data-containers-are-good-589b3c6c749e)
 
