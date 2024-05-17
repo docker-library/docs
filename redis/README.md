@@ -56,7 +56,7 @@ WARNING:
 
 Redis is the world’s fastest data platform. It provides cloud and on-prem solutions for caching, vector search, and NoSQL databases that seamlessly fit into any tech stack—making it simple for digital customers to build, scale, and deploy the fast apps our world runs on.
 
-> [redis,io](https://redis.io)
+> [redis.io](https://redis.io)
 
 ![logo](https://github.com/docker-library/docs/blob/master/redis/logo.png?raw=true)
 
@@ -92,7 +92,7 @@ For more about Redis Persistence, see [http://redis.io/topics/persistence](https
 $ docker run -it --network some-network --rm redis redis-cli -h some-redis
 ```
 
-## Additionally, If you want to use your own redis.conf ...
+## Additionally, if you want to use your own redis.conf ...
 
 You can create your own Dockerfile that adds a redis.conf from the context into /data/, like so.
 
@@ -116,9 +116,9 @@ The mapped directory should be writable, as depending on the configuration and m
 
 This variant is *not* a 32bit image (and will not run on 32bit hardware), but includes Redis compiled as a 32bit binary, especially for users who need the decreased memory requirements associated with that. See ["Using 32 bit instances"](http://redis.io/topics/memory-optimization#using-32-bit-instances) in the Redis documentation for more information.
 
-# Redis Stack and Modules
+# Redis Stack and modules
 
-Modules extend Redis with extra capabilities. Redis Stack already comes with the capabilities (search and query, JSON support, and more) that are developed by Redis (the company). You can find the Docker images here:
+Modules extend Redis with extra capabilities. Redis Stack already comes with the capabilities (search and query, JSON support, and more) that are developed by Redis (the company). The Docker images are available here:
 
 -	[Redis Stack](https://hub.docker.com/r/redis/redis-stack): Redis plus extra capabilities and Redis Insight (a GUI for Redis)
 -	[Redis Stack Server](https://hub.docker.com/r/redis/redis-stack-server): Redis plus extra capabilities
