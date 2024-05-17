@@ -1,5 +1,7 @@
 {
   "hub": {
-    "categories": []
+    "categories": [
+      "security"
+    ]
   }
 }
