@@ -169,7 +169,7 @@ For more, see [How do I get a 2 nodes Aerospike cluster running quickly in Docke
 
 ## Image Versions
 
-These images are based on [debian:*-slim](https://hub.docker.com/_/debian).
+These images are based on [ubuntu:22.04](https://hub.docker.com/_/ubuntu).
 
 ### ee-[version]
 

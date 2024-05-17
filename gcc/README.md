@@ -24,11 +24,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`13.2.0`, `13.2`, `13`, `latest`, `13.2.0-bookworm`, `13.2-bookworm`, `13-bookworm`, `bookworm`](https://github.com/docker-library/gcc/blob/9fbc8275f1adad750cdc7ad71a70254b7db4501e/13/Dockerfile)
--	[`12.3.0`, `12.3`, `12`, `12.3.0-bookworm`, `12.3-bookworm`, `12-bookworm`](https://github.com/docker-library/gcc/blob/9fbc8275f1adad750cdc7ad71a70254b7db4501e/12/Dockerfile)
--	[`11.4.0`, `11.4`, `11`, `11.4.0-bullseye`, `11.4-bullseye`, `11-bullseye`](https://github.com/docker-library/gcc/blob/9fbc8275f1adad750cdc7ad71a70254b7db4501e/11/Dockerfile)
--	[`10.5.0`, `10.5`, `10`, `10.5.0-bullseye`, `10.5-bullseye`, `10-bullseye`](https://github.com/docker-library/gcc/blob/9fbc8275f1adad750cdc7ad71a70254b7db4501e/10/Dockerfile)
--	[`9.5.0`, `9.5`, `9`, `9.5.0-bullseye`, `9.5-bullseye`, `9-bullseye`](https://github.com/docker-library/gcc/blob/9fbc8275f1adad750cdc7ad71a70254b7db4501e/9/Dockerfile)
+-	[`14.1.0`, `14.1`, `14`, `latest`, `14.1.0-bookworm`, `14.1-bookworm`, `14-bookworm`, `bookworm`](https://github.com/docker-library/gcc/blob/b1e7fc69e4021bab505d420fddc57002ef04939e/14/Dockerfile)
+-	[`13.2.0`, `13.2`, `13`, `13.2.0-bookworm`, `13.2-bookworm`, `13-bookworm`](https://github.com/docker-library/gcc/blob/b1e7fc69e4021bab505d420fddc57002ef04939e/13/Dockerfile)
+-	[`12.3.0`, `12.3`, `12`, `12.3.0-bookworm`, `12.3-bookworm`, `12-bookworm`](https://github.com/docker-library/gcc/blob/b1e7fc69e4021bab505d420fddc57002ef04939e/12/Dockerfile)
+-	[`11.4.0`, `11.4`, `11`, `11.4.0-bullseye`, `11.4-bullseye`, `11-bullseye`](https://github.com/docker-library/gcc/blob/b1e7fc69e4021bab505d420fddc57002ef04939e/11/Dockerfile)
+-	[`10.5.0`, `10.5`, `10`, `10.5.0-bullseye`, `10.5-bullseye`, `10-bullseye`](https://github.com/docker-library/gcc/blob/b1e7fc69e4021bab505d420fddc57002ef04939e/10/Dockerfile)
 
 # Quick reference (cont.)
 
