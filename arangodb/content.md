@@ -18,8 +18,8 @@ ArangoDB runs everywhere: On-prem, in the cloud, and as a managed cloud service:
 
 #### ArangoDB Documentation
 
--	[Learn ArangoDB](https://www.arangodb.com/learn/)
--	[Documentation](https://www.arangodb.com/docs/)
+-	[Learn ArangoDB](https://arangodb.com/learn/)
+-	[Documentation](https://docs.arangodb.com/)
 
 ## How to use this image
 
