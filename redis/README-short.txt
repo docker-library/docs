@@ -1,1 +1,1 @@
-Redis is a source-available data structure store used by millions of developers as a cache, vector database, document database, streaming engine, and message broker.
+Redis is the world’s fastest data platform. It provides cloud and on-prem solutions for caching, vector search, and NoSQL databases that seamlessly fit into any tech stack—making it simple for digital customers to build, scale, and deploy the fast apps our world runs on.

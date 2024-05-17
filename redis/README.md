@@ -54,9 +54,9 @@ WARNING:
 
 # What is Redis?
 
-Redis is a source-available data structure store used by millions of developers as a cache, vector database, document database, streaming engine, and message broker. It offers optional durability and is written in ANSI C. The development of Redis is sponsored by Redis (the company) today; before that, it was sponsored by Pivotal and VMware. According to the monthly ranking by DB-Engines.com, Redis is the most popular key-value store. The name Redis means REmote DIctionary Server.
+Redis is the world’s fastest data platform. It provides cloud and on-prem solutions for caching, vector search, and NoSQL databases that seamlessly fit into any tech stack—making it simple for digital customers to build, scale, and deploy the fast apps our world runs on.
 
-> [wikipedia.org/wiki/Redis](https://en.wikipedia.org/wiki/Redis)
+> [redis,io](https://redis.io)
 
 ![logo](https://github.com/docker-library/docs/blob/master/redis/logo.png?raw=true)
 
@@ -70,13 +70,13 @@ For the ease of accessing Redis from other containers via Docker networking, the
 
 # How to use this image
 
-## start a redis instance
+## Start a redis instance
 
 ```console
 $ docker run --name some-redis -d redis
 ```
 
-## start with persistent storage
+## Start with persistent storage
 
 ```console
 $ docker run --name some-redis -d redis redis-server --save 60 1 --loglevel warning
@@ -86,7 +86,7 @@ There are several different persistence strategies to choose from. This one will
 
 For more about Redis Persistence, see [http://redis.io/topics/persistence](https://redis.io/docs/latest/operate/oss_and_stack/management/persistence/).
 
-## connecting via `redis-cli`
+## Connecting via `redis-cli`
 
 ```console
 $ docker run -it --network some-network --rm redis redis-cli -h some-redis
