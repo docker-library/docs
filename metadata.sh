@@ -14,8 +14,8 @@ self="$(basename "$0")"
 usage() {
 	cat <<EOUSAGE
 
-usage: $self [--write] repo [...]
-   ie: $self debian
+usage: $self [--write] REPO[...]
+   eg: $self debian
        $self -w python
 
 This script checks a givens repo's metadata.json. It checks formating (providing a diff), checks categories, and can write the formatting changes.
@@ -35,7 +35,7 @@ eval set -- "$opts"
 
 write=
 
-while true; do
+while :; do
 	flag="$1"
 	shift
 	case "$flag" in
