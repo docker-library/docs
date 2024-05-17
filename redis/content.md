@@ -19,13 +19,13 @@ For the ease of accessing Redis from other containers via Docker networking, the
 ## Start a redis instance
 
 ```console
-$ docker run --name some-redis -d redis
+$ docker run --name some-redis -d %%IMAGE%%
 ```
 
 ## Start with persistent storage
 
 ```console
-$ docker run --name some-redis -d redis redis-server --save 60 1 --loglevel warning
+$ docker run --name some-redis -d %%IMAGE%% redis-server --save 60 1 --loglevel warning
 ```
 
 There are several different persistence strategies to choose from. This one will save a snapshot of the DB every 60 seconds if at least 1 write operation was performed (it will also lead to more logs, so the `loglevel` option may be desirable). If persistence is enabled, data is stored in the `VOLUME /data`, which can be used with `--volumes-from some-volume-container` or `-v /docker/host/dir:/data` (see [docs.docker volumes](https://docs.docker.com/engine/tutorials/dockervolumes/)).
@@ -35,7 +35,7 @@ For more about Redis Persistence, see [http://redis.io/topics/persistence](https
 ## Connecting via `redis-cli`
 
 ```console
-$ docker run -it --network some-network --rm redis redis-cli -h some-redis
+$ docker run -it --network some-network --rm %%IMAGE%% redis-cli -h some-redis
 ```
 
 ## Additionally, if you want to use your own redis.conf ...
@@ -43,7 +43,7 @@ $ docker run -it --network some-network --rm redis redis-cli -h some-redis
 You can create your own Dockerfile that adds a redis.conf from the context into /data/, like so.
 
 ```dockerfile
-FROM redis
+FROM %%IMAGE%%
 COPY redis.conf /usr/local/etc/redis/redis.conf
 CMD [ "redis-server", "/usr/local/etc/redis/redis.conf" ]
 ```
@@ -51,7 +51,7 @@ CMD [ "redis-server", "/usr/local/etc/redis/redis.conf" ]
 Alternatively, you can specify something along the same lines with `docker run` options.
 
 ```console
-$ docker run -v /myredis/conf:/usr/local/etc/redis --name myredis redis redis-server /usr/local/etc/redis/redis.conf
+$ docker run -v /myredis/conf:/usr/local/etc/redis --name myredis %%IMAGE%% redis-server /usr/local/etc/redis/redis.conf
 ```
 
 Where `/myredis/conf/` is a local directory containing your `redis.conf` file. Using this method means that there is no need for you to have a Dockerfile for your redis container.
