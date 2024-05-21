@@ -25,7 +25,7 @@ WARNING:
 # Supported tags and respective `Dockerfile` links
 
 -	[`14.1.0`, `14.1`, `14`, `latest`, `14.1.0-bookworm`, `14.1-bookworm`, `14-bookworm`, `bookworm`](https://github.com/docker-library/gcc/blob/b1e7fc69e4021bab505d420fddc57002ef04939e/14/Dockerfile)
--	[`13.2.0`, `13.2`, `13`, `13.2.0-bookworm`, `13.2-bookworm`, `13-bookworm`](https://github.com/docker-library/gcc/blob/b1e7fc69e4021bab505d420fddc57002ef04939e/13/Dockerfile)
+-	[`13.3.0`, `13.3`, `13`, `13.3.0-bookworm`, `13.3-bookworm`, `13-bookworm`](https://github.com/docker-library/gcc/blob/6f09c34227daae15e71f398f0073e31f3ef74234/13/Dockerfile)
 -	[`12.3.0`, `12.3`, `12`, `12.3.0-bookworm`, `12.3-bookworm`, `12-bookworm`](https://github.com/docker-library/gcc/blob/b1e7fc69e4021bab505d420fddc57002ef04939e/12/Dockerfile)
 -	[`11.4.0`, `11.4`, `11`, `11.4.0-bullseye`, `11.4-bullseye`, `11-bullseye`](https://github.com/docker-library/gcc/blob/b1e7fc69e4021bab505d420fddc57002ef04939e/11/Dockerfile)
 -	[`10.5.0`, `10.5`, `10`, `10.5.0-bullseye`, `10.5-bullseye`, `10-bullseye`](https://github.com/docker-library/gcc/blob/b1e7fc69e4021bab505d420fddc57002ef04939e/10/Dockerfile)
