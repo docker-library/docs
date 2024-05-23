@@ -19,11 +19,10 @@ To use the image, `COPY` your `krakend.json` file inside the container or mount 
 You can start an empty gateway with a health check with the following commands:
 
 ```console
-$ echo '{ "version": 3 }' > krakend.json
 $ docker run -d -p 8080:8080 -v "$PWD:/etc/krakend/" %%IMAGE%%
 ...
 $ curl http://localhost:8080/__health
-{"agents":{},"now":"2022-11-25 14:35:55.552591448 +0000 UTC m=+26.856583003","status":"ok"}
+{"agents":{},"now":"2024-05-23 14:35:55.552591448 +0000 UTC m=+26.856583003","status":"ok"}
 ```
 
 ### More Examples
@@ -43,11 +42,11 @@ This flag is **SAFE to use in production**. It's meant to enable KrakenD as a fa
 See the [check command](https://www.krakend.io/docs/commands/check/)
 
 ```console
-    docker run -it -p 8080:8080 -v $PWD:/etc/krakend/ %%IMAGE%% check --config krakend.json
+    docker run -it -v $PWD:/etc/krakend/ %%IMAGE%% check --config krakend.json
 ```
 #### Show the help:
 
-    docker run -it -p 8080:8080 -v $PWD:/etc/krakend/ %%IMAGE%% help
+    docker run -it %%IMAGE%% help
 
 
 ### Building your custom KrakenD image
@@ -140,5 +139,5 @@ All `krakend` commands are executed as `krakend` user (uid=1000) through `su-exe
 
 You can directly use sub-commands of `krakend` like `run`, `help`, `version`, `check`, `check-plugin` or `validate` as the entrypoint will add the `krakend` command automatically. For example, the following lines are equivalent:
 
-    docker run -it -p 8080:8080 -v $PWD:/etc/krakend/ %%IMAGE%% help
-    docker run -it -p 8080:8080 -v $PWD:/etc/krakend/ %%IMAGE%% krakend help
+    docker run -it %%IMAGE%% help
+    docker run -it %%IMAGE%% krakend help
