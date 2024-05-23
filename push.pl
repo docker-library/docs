@@ -8,6 +8,7 @@ use File::Basename qw(basename fileparse);
 use File::Temp;
 use Getopt::Long;
 use Mojo::File;
+use Mojo::JSON qw(decode_json);
 use Mojo::UserAgent;
 use Mojo::Util qw(decode encode trim url_escape);
 
@@ -211,6 +212,35 @@ while (my $repo = shift) { # 'library/hylang', 'tianon/perl', etc
 	my $repoDetails = $repoTx->res->json;
 	$repoDetails->{description} //= '';
 	$repoDetails->{full_description} //= '';
+	$repoDetails->{categories} //= [];
+	my @repoCategories = sort map { $_->{slug} } @{ $repoDetails->{categories} };
+	
+	# read local categories from metadata.json
+	my $repoMetadataBytes = Mojo::File->new($repoName . '/metadata.json')->slurp;
+	my $repoMetadataJson = decode_json $repoMetadataBytes;
+	my @localRepoCategories = sort @{ $repoMetadataJson->{hub}{categories} };
+	
+	# check if the local categories differ in length or items from the remote
+	my $needCat = @localRepoCategories != @repoCategories;
+	if (! $needCat) {
+		foreach my $i (0 .. @localRepoCategories) {
+			last if ! defined $repoCategories[$i]; # length difference already covered, so we can bail
+			if ($localRepoCategories[$i] ne $repoCategories[$i]) {
+				$needCat = 1;
+				last;
+			}
+		}
+	}
+	if ($needCat) {
+		say 'updating ' . $repoName . ' categories';
+		my $catsPatch = $ua->patch($repoUrl . 'categories/' => { %$authorizationHeader, Accept => 'application/json' } => json => [
+				map { {
+					slug => $_,
+					name => 'All those moments will be lost in time, like tears in rain... Time to die.',
+				} } @{ $repoMetadataJson->{hub}{categories} }
+			]);
+		die 'patch to categories failed: ' . $catsPatch->res->text unless $catsPatch->res->is_success;
+	}
 	
 	my $hubShort = prompt_for_edit($repoDetails->{description}, $repoName . '/README-short.txt');
 	my $hubLong = prompt_for_edit($repoDetails->{full_description}, $repoName . '/README.md', $hubLengthLimit);

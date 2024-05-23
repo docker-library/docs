@@ -46,3 +46,8 @@ jobs:
           fetch-depth: 0
       - run: .ci/check-pr-no-readme.sh
     if: ${{ github.event_name == 'pull_request' }}
+  metadata:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: .ci/check-metadata.sh
