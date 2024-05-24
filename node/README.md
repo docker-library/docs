@@ -24,35 +24,39 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`19-alpine3.15`, `19.1-alpine3.15`, `19.1.0-alpine3.15`, `alpine3.15`, `current-alpine3.15`](https://github.com/nodejs/docker-node/blob/9220863a62a5f9d76bb761d1e385674de39224a6/19/alpine3.15/Dockerfile)
--	[`19-alpine`, `19-alpine3.16`, `19.1-alpine`, `19.1-alpine3.16`, `19.1.0-alpine`, `19.1.0-alpine3.16`, `alpine`, `alpine3.16`, `current-alpine`, `current-alpine3.16`](https://github.com/nodejs/docker-node/blob/9220863a62a5f9d76bb761d1e385674de39224a6/19/alpine3.16/Dockerfile)
--	[`19`, `19-bullseye`, `19.1`, `19.1-bullseye`, `19.1.0`, `19.1.0-bullseye`, `bullseye`, `current`, `current-bullseye`, `latest`](https://github.com/nodejs/docker-node/blob/9220863a62a5f9d76bb761d1e385674de39224a6/19/bullseye/Dockerfile)
--	[`19-bullseye-slim`, `19-slim`, `19.1-bullseye-slim`, `19.1-slim`, `19.1.0-bullseye-slim`, `19.1.0-slim`, `bullseye-slim`, `current-bullseye-slim`, `current-slim`, `slim`](https://github.com/nodejs/docker-node/blob/9220863a62a5f9d76bb761d1e385674de39224a6/19/bullseye-slim/Dockerfile)
--	[`19-buster`, `19.1-buster`, `19.1.0-buster`, `buster`, `current-buster`](https://github.com/nodejs/docker-node/blob/9220863a62a5f9d76bb761d1e385674de39224a6/19/buster/Dockerfile)
--	[`19-buster-slim`, `19.1-buster-slim`, `19.1.0-buster-slim`, `buster-slim`, `current-buster-slim`](https://github.com/nodejs/docker-node/blob/9220863a62a5f9d76bb761d1e385674de39224a6/19/buster-slim/Dockerfile)
--	[`18-alpine3.15`, `18.12-alpine3.15`, `18.12.1-alpine3.15`, `hydrogen-alpine3.15`, `lts-alpine3.15`](https://github.com/nodejs/docker-node/blob/7bc9983852d4a0a8910f3865b199d78157d1440b/18/alpine3.15/Dockerfile)
--	[`18-alpine`, `18-alpine3.16`, `18.12-alpine`, `18.12-alpine3.16`, `18.12.1-alpine`, `18.12.1-alpine3.16`, `hydrogen-alpine`, `hydrogen-alpine3.16`, `lts-alpine`, `lts-alpine3.16`](https://github.com/nodejs/docker-node/blob/7bc9983852d4a0a8910f3865b199d78157d1440b/18/alpine3.16/Dockerfile)
--	[`18`, `18-bullseye`, `18.12`, `18.12-bullseye`, `18.12.1`, `18.12.1-bullseye`, `hydrogen`, `hydrogen-bullseye`, `lts`, `lts-bullseye`, `lts-hydrogen`](https://github.com/nodejs/docker-node/blob/7bc9983852d4a0a8910f3865b199d78157d1440b/18/bullseye/Dockerfile)
--	[`18-bullseye-slim`, `18-slim`, `18.12-bullseye-slim`, `18.12-slim`, `18.12.1-bullseye-slim`, `18.12.1-slim`, `hydrogen-bullseye-slim`, `hydrogen-slim`, `lts-bullseye-slim`, `lts-slim`](https://github.com/nodejs/docker-node/blob/7bc9983852d4a0a8910f3865b199d78157d1440b/18/bullseye-slim/Dockerfile)
--	[`18-buster`, `18.12-buster`, `18.12.1-buster`, `hydrogen-buster`, `lts-buster`](https://github.com/nodejs/docker-node/blob/7bc9983852d4a0a8910f3865b199d78157d1440b/18/buster/Dockerfile)
--	[`18-buster-slim`, `18.12-buster-slim`, `18.12.1-buster-slim`, `hydrogen-buster-slim`, `lts-buster-slim`](https://github.com/nodejs/docker-node/blob/7bc9983852d4a0a8910f3865b199d78157d1440b/18/buster-slim/Dockerfile)
--	[`16-alpine3.15`, `16.18-alpine3.15`, `16.18.1-alpine3.15`, `gallium-alpine3.15`](https://github.com/nodejs/docker-node/blob/7bc9983852d4a0a8910f3865b199d78157d1440b/16/alpine3.15/Dockerfile)
--	[`16-alpine`, `16-alpine3.16`, `16.18-alpine`, `16.18-alpine3.16`, `16.18.1-alpine`, `16.18.1-alpine3.16`, `gallium-alpine`, `gallium-alpine3.16`](https://github.com/nodejs/docker-node/blob/7bc9983852d4a0a8910f3865b199d78157d1440b/16/alpine3.16/Dockerfile)
--	[`16-bullseye`, `16.18-bullseye`, `16.18.1-bullseye`, `gallium-bullseye`](https://github.com/nodejs/docker-node/blob/7bc9983852d4a0a8910f3865b199d78157d1440b/16/bullseye/Dockerfile)
--	[`16-bullseye-slim`, `16.18-bullseye-slim`, `16.18.1-bullseye-slim`, `gallium-bullseye-slim`](https://github.com/nodejs/docker-node/blob/7bc9983852d4a0a8910f3865b199d78157d1440b/16/bullseye-slim/Dockerfile)
--	[`16`, `16-buster`, `16.18`, `16.18-buster`, `16.18.1`, `16.18.1-buster`, `gallium`, `gallium-buster`](https://github.com/nodejs/docker-node/blob/7bc9983852d4a0a8910f3865b199d78157d1440b/16/buster/Dockerfile)
--	[`16-buster-slim`, `16-slim`, `16.18-buster-slim`, `16.18-slim`, `16.18.1-buster-slim`, `16.18.1-slim`, `gallium-buster-slim`, `gallium-slim`](https://github.com/nodejs/docker-node/blob/7bc9983852d4a0a8910f3865b199d78157d1440b/16/buster-slim/Dockerfile)
--	[`14-alpine3.15`, `14.21-alpine3.15`, `14.21.1-alpine3.15`, `fermium-alpine3.15`](https://github.com/nodejs/docker-node/blob/7bc9983852d4a0a8910f3865b199d78157d1440b/14/alpine3.15/Dockerfile)
--	[`14-alpine`, `14-alpine3.16`, `14.21-alpine`, `14.21-alpine3.16`, `14.21.1-alpine`, `14.21.1-alpine3.16`, `fermium-alpine`, `fermium-alpine3.16`](https://github.com/nodejs/docker-node/blob/7bc9983852d4a0a8910f3865b199d78157d1440b/14/alpine3.16/Dockerfile)
--	[`14-bullseye`, `14.21-bullseye`, `14.21.1-bullseye`, `fermium-bullseye`](https://github.com/nodejs/docker-node/blob/7bc9983852d4a0a8910f3865b199d78157d1440b/14/bullseye/Dockerfile)
--	[`14-bullseye-slim`, `14.21-bullseye-slim`, `14.21.1-bullseye-slim`, `fermium-bullseye-slim`](https://github.com/nodejs/docker-node/blob/7bc9983852d4a0a8910f3865b199d78157d1440b/14/bullseye-slim/Dockerfile)
--	[`14`, `14-buster`, `14.21`, `14.21-buster`, `14.21.1`, `14.21.1-buster`, `fermium`, `fermium-buster`](https://github.com/nodejs/docker-node/blob/7bc9983852d4a0a8910f3865b199d78157d1440b/14/buster/Dockerfile)
--	[`14-buster-slim`, `14-slim`, `14.21-buster-slim`, `14.21-slim`, `14.21.1-buster-slim`, `14.21.1-slim`, `fermium-buster-slim`, `fermium-slim`](https://github.com/nodejs/docker-node/blob/7bc9983852d4a0a8910f3865b199d78157d1440b/14/buster-slim/Dockerfile)
+-	[`22-alpine3.19`, `22.2-alpine3.19`, `22.2.0-alpine3.19`, `alpine3.19`, `current-alpine3.19`](https://github.com/nodejs/docker-node/blob/14ae63a78d5e38557a56822bd2b1094d038e52a4/22/alpine3.19/Dockerfile)
+-	[`22-alpine`, `22-alpine3.20`, `22.2-alpine`, `22.2-alpine3.20`, `22.2.0-alpine`, `22.2.0-alpine3.20`, `alpine`, `alpine3.20`, `current-alpine`, `current-alpine3.20`](https://github.com/nodejs/docker-node/blob/1810f76d762c8b080ab6aec585d66fb0f7f1d4a9/22/alpine3.20/Dockerfile)
+-	[`22`, `22-bookworm`, `22.2`, `22.2-bookworm`, `22.2.0`, `22.2.0-bookworm`, `bookworm`, `current`, `current-bookworm`, `latest`](https://github.com/nodejs/docker-node/blob/14ae63a78d5e38557a56822bd2b1094d038e52a4/22/bookworm/Dockerfile)
+-	[`22-bookworm-slim`, `22-slim`, `22.2-bookworm-slim`, `22.2-slim`, `22.2.0-bookworm-slim`, `22.2.0-slim`, `bookworm-slim`, `current-bookworm-slim`, `current-slim`, `slim`](https://github.com/nodejs/docker-node/blob/14ae63a78d5e38557a56822bd2b1094d038e52a4/22/bookworm-slim/Dockerfile)
+-	[`22-bullseye`, `22.2-bullseye`, `22.2.0-bullseye`, `bullseye`, `current-bullseye`](https://github.com/nodejs/docker-node/blob/14ae63a78d5e38557a56822bd2b1094d038e52a4/22/bullseye/Dockerfile)
+-	[`22-bullseye-slim`, `22.2-bullseye-slim`, `22.2.0-bullseye-slim`, `bullseye-slim`, `current-bullseye-slim`](https://github.com/nodejs/docker-node/blob/14ae63a78d5e38557a56822bd2b1094d038e52a4/22/bullseye-slim/Dockerfile)
+-	[`21-alpine3.19`, `21.7-alpine3.19`, `21.7.3-alpine3.19`](https://github.com/nodejs/docker-node/blob/17bf0838eaf9d32ba6280599e51fac5269d0dfb4/21/alpine3.19/Dockerfile)
+-	[`21-alpine`, `21-alpine3.20`, `21.7-alpine`, `21.7-alpine3.20`, `21.7.3-alpine`, `21.7.3-alpine3.20`](https://github.com/nodejs/docker-node/blob/1810f76d762c8b080ab6aec585d66fb0f7f1d4a9/21/alpine3.20/Dockerfile)
+-	[`21`, `21-bookworm`, `21.7`, `21.7-bookworm`, `21.7.3`, `21.7.3-bookworm`](https://github.com/nodejs/docker-node/blob/17bf0838eaf9d32ba6280599e51fac5269d0dfb4/21/bookworm/Dockerfile)
+-	[`21-bookworm-slim`, `21-slim`, `21.7-bookworm-slim`, `21.7-slim`, `21.7.3-bookworm-slim`, `21.7.3-slim`](https://github.com/nodejs/docker-node/blob/17bf0838eaf9d32ba6280599e51fac5269d0dfb4/21/bookworm-slim/Dockerfile)
+-	[`21-bullseye`, `21.7-bullseye`, `21.7.3-bullseye`](https://github.com/nodejs/docker-node/blob/17bf0838eaf9d32ba6280599e51fac5269d0dfb4/21/bullseye/Dockerfile)
+-	[`21-bullseye-slim`, `21.7-bullseye-slim`, `21.7.3-bullseye-slim`](https://github.com/nodejs/docker-node/blob/17bf0838eaf9d32ba6280599e51fac5269d0dfb4/21/bullseye-slim/Dockerfile)
+-	[`20-alpine3.19`, `20.13-alpine3.19`, `20.13.1-alpine3.19`, `iron-alpine3.19`, `lts-alpine3.19`](https://github.com/nodejs/docker-node/blob/375d663fe34b3e76ee41bff8bcac583da32fe0cb/20/alpine3.19/Dockerfile)
+-	[`20-alpine`, `20-alpine3.20`, `20.13-alpine`, `20.13-alpine3.20`, `20.13.1-alpine`, `20.13.1-alpine3.20`, `iron-alpine`, `iron-alpine3.20`, `lts-alpine`, `lts-alpine3.20`](https://github.com/nodejs/docker-node/blob/1810f76d762c8b080ab6aec585d66fb0f7f1d4a9/20/alpine3.20/Dockerfile)
+-	[`20`, `20-bookworm`, `20.13`, `20.13-bookworm`, `20.13.1`, `20.13.1-bookworm`, `iron`, `iron-bookworm`, `lts`, `lts-bookworm`, `lts-iron`](https://github.com/nodejs/docker-node/blob/375d663fe34b3e76ee41bff8bcac583da32fe0cb/20/bookworm/Dockerfile)
+-	[`20-bookworm-slim`, `20-slim`, `20.13-bookworm-slim`, `20.13-slim`, `20.13.1-bookworm-slim`, `20.13.1-slim`, `iron-bookworm-slim`, `iron-slim`, `lts-bookworm-slim`, `lts-slim`](https://github.com/nodejs/docker-node/blob/375d663fe34b3e76ee41bff8bcac583da32fe0cb/20/bookworm-slim/Dockerfile)
+-	[`20-bullseye`, `20.13-bullseye`, `20.13.1-bullseye`, `iron-bullseye`, `lts-bullseye`](https://github.com/nodejs/docker-node/blob/375d663fe34b3e76ee41bff8bcac583da32fe0cb/20/bullseye/Dockerfile)
+-	[`20-bullseye-slim`, `20.13-bullseye-slim`, `20.13.1-bullseye-slim`, `iron-bullseye-slim`, `lts-bullseye-slim`](https://github.com/nodejs/docker-node/blob/375d663fe34b3e76ee41bff8bcac583da32fe0cb/20/bullseye-slim/Dockerfile)
+-	[`20-buster`, `20.13-buster`, `20.13.1-buster`, `iron-buster`, `lts-buster`](https://github.com/nodejs/docker-node/blob/375d663fe34b3e76ee41bff8bcac583da32fe0cb/20/buster/Dockerfile)
+-	[`20-buster-slim`, `20.13-buster-slim`, `20.13.1-buster-slim`, `iron-buster-slim`, `lts-buster-slim`](https://github.com/nodejs/docker-node/blob/375d663fe34b3e76ee41bff8bcac583da32fe0cb/20/buster-slim/Dockerfile)
+-	[`18-alpine3.19`, `18.20-alpine3.19`, `18.20.3-alpine3.19`, `hydrogen-alpine3.19`](https://github.com/nodejs/docker-node/blob/d3965ef329265accff145164f06653216e416685/18/alpine3.19/Dockerfile)
+-	[`18-alpine`, `18-alpine3.20`, `18.20-alpine`, `18.20-alpine3.20`, `18.20.3-alpine`, `18.20.3-alpine3.20`, `hydrogen-alpine`, `hydrogen-alpine3.20`](https://github.com/nodejs/docker-node/blob/1810f76d762c8b080ab6aec585d66fb0f7f1d4a9/18/alpine3.20/Dockerfile)
+-	[`18`, `18-bookworm`, `18.20`, `18.20-bookworm`, `18.20.3`, `18.20.3-bookworm`, `hydrogen`, `hydrogen-bookworm`](https://github.com/nodejs/docker-node/blob/d3965ef329265accff145164f06653216e416685/18/bookworm/Dockerfile)
+-	[`18-bookworm-slim`, `18-slim`, `18.20-bookworm-slim`, `18.20-slim`, `18.20.3-bookworm-slim`, `18.20.3-slim`, `hydrogen-bookworm-slim`, `hydrogen-slim`](https://github.com/nodejs/docker-node/blob/d3965ef329265accff145164f06653216e416685/18/bookworm-slim/Dockerfile)
+-	[`18-bullseye`, `18.20-bullseye`, `18.20.3-bullseye`, `hydrogen-bullseye`](https://github.com/nodejs/docker-node/blob/d3965ef329265accff145164f06653216e416685/18/bullseye/Dockerfile)
+-	[`18-bullseye-slim`, `18.20-bullseye-slim`, `18.20.3-bullseye-slim`, `hydrogen-bullseye-slim`](https://github.com/nodejs/docker-node/blob/d3965ef329265accff145164f06653216e416685/18/bullseye-slim/Dockerfile)
+-	[`18-buster`, `18.20-buster`, `18.20.3-buster`, `hydrogen-buster`](https://github.com/nodejs/docker-node/blob/d3965ef329265accff145164f06653216e416685/18/buster/Dockerfile)
+-	[`18-buster-slim`, `18.20-buster-slim`, `18.20.3-buster-slim`, `hydrogen-buster-slim`](https://github.com/nodejs/docker-node/blob/d3965ef329265accff145164f06653216e416685/18/buster-slim/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/nodejs/docker-node/issues](https://github.com/nodejs/docker-node/issues)
+	[https://github.com/nodejs/docker-node/issues](https://github.com/nodejs/docker-node/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/node/), [`arm32v6`](https://hub.docker.com/r/arm32v6/node/), [`arm32v7`](https://hub.docker.com/r/arm32v7/node/), [`arm64v8`](https://hub.docker.com/r/arm64v8/node/), [`ppc64le`](https://hub.docker.com/r/ppc64le/node/), [`s390x`](https://hub.docker.com/r/s390x/node/)
@@ -92,7 +96,7 @@ The `node` images come in many flavors, each designed for a specific use case.
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like bullseye or buster in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+Some of these tags may have names like bookworm, bullseye, or buster in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 This tag is based off of [`buildpack-deps`](https://hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of Docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
 

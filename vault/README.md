@@ -14,6 +14,10 @@ WARNING:
 
 -->
 
+# **DEPRECATION NOTICE**
+
+Upcoming in Vault 1.14, we will stop publishing official Dockerhub images and publish only our Verified Publisher images. Users of Docker images should pull from [hashicorp/vault](https://hub.docker.com/r/hashicorp/vault) instead of [vault](https://hub.docker.com/_/vault). Verified Publisher images can be found at https://hub.docker.com/r/hashicorp/vault.
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,15 +28,14 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.12.1`, `latest`](https://github.com/hashicorp/docker-vault/blob/738419f75ead59e70fc11025993a80e711947cb0/0.X/Dockerfile)
--	[`1.11.5`](https://github.com/hashicorp/docker-vault/blob/c40d9806ed24a8d0088cd45ee69f68dd86d27704/0.X/Dockerfile)
--	[`1.10.8`](https://github.com/hashicorp/docker-vault/blob/26e7bfc4f44e0907587ef269bed7f5331fc35179/0.X/Dockerfile)
--	[`1.9.10`](https://github.com/hashicorp/docker-vault/blob/62322ee96a690b07cdc669eb9876fc05e073ff2c/0.X/Dockerfile)
+-	[`1.13.3`](https://github.com/hashicorp/docker-vault/blob/152f49d818b2764c437ee1fd20ee4d13791a8296/0.X/Dockerfile)
+-	[`1.12.7`](https://github.com/hashicorp/docker-vault/blob/48d258c844d65814e16c123f8d3750a4e73e4350/0.X/Dockerfile)
+-	[`1.11.11`](https://github.com/hashicorp/docker-vault/blob/e90ed0d020018291fabd520e9c36196c1e58f049/0.X/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/hashicorp/docker-vault/issues](https://github.com/hashicorp/docker-vault/issues)
+	[https://github.com/hashicorp/docker-vault/issues](https://github.com/hashicorp/docker-vault/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/vault/), [`arm32v6`](https://hub.docker.com/r/arm32v6/vault/), [`arm64v8`](https://hub.docker.com/r/arm64v8/vault/), [`i386`](https://hub.docker.com/r/i386/vault/)
@@ -95,17 +98,25 @@ As an example:
 $ docker run --cap-add=IPC_LOCK -e 'VAULT_DEV_ROOT_TOKEN_ID=myroot' -e 'VAULT_DEV_LISTEN_ADDRESS=0.0.0.0:1234' vault
 ```
 
-## Running Vault in Server Mode
+## Running Vault in Server Mode for Development
 
 ```console
-$ docker run --cap-add=IPC_LOCK -e 'VAULT_LOCAL_CONFIG={"backend": {"file": {"path": "/vault/file"}}, "default_lease_ttl": "168h", "max_lease_ttl": "720h"}' vault server
+$ docker run --cap-add=IPC_LOCK -e 'VAULT_LOCAL_CONFIG={"storage": {"file": {"path": "/vault/file"}}, "listener": [{"tcp": { "address": "0.0.0.0:8200", "tls_disable": true}}], "default_lease_ttl": "168h", "max_lease_ttl": "720h", "ui": true}' -p 8200:8200 vault server
 ```
 
-This runs a Vault server using the `file` storage backend at path `/vault/file`, with a default secret lease duration of one week and a maximum of 30 days.
+This runs a Vault server with TLS disabled, the `file` storage backend at path `/vault/file` and a default secret lease duration of one week and a maximum of 30 days. Disabling TLS and using the `file` storage backend are not recommended for production use.
 
 Note the `--cap-add=IPC_LOCK`: this is required in order for Vault to lock memory, which prevents it from being swapped to disk. This is highly recommended. In a non-development environment, if you do not wish to use this functionality, you must add `"disable_mlock: true"` to the configuration information.
 
 At startup, the server will read configuration HCL and JSON files from `/vault/config` (any information passed into `VAULT_LOCAL_CONFIG` is written into `local.json` in this directory and read as part of reading the directory for configuration files). Please see Vault's [configuration documentation](https://www.vaultproject.io/docs/config/index.html) for a full list of options.
+
+We suggest volume mounting a directory into the Docker image in order to give both the configuration and TLS certificates to Vault. You can accomplish this with:
+
+```console
+$ docker run --volume config/:/vault/config.d ...
+```
+
+For more scalability and reliability, we suggest running containerized Vault in an orchestration environment like k8s or OpenShift.
 
 Since 0.6.3 this container also supports the `VAULT_REDIRECT_INTERFACE` and `VAULT_CLUSTER_INTERFACE` environment variables. If set, the IP addresses used for the redirect and cluster addresses in Vault's configuration will be the address of the named interface inside the container (e.g. `eth0`).
 

@@ -11,7 +11,7 @@ This image contains the enterprise meta node package for clustering. It is meant
 The license key can be specified using either an environment variable or by overriding the configuration file. If you specify the license key directly, the container needs to be able to access the InfluxData portal.
 
 ```console
-$ docker run -p 8089:8089 -p 8091:8091 \
+docker run -p 8089:8089 -p 8091:8091 \
       -e INFLUXDB_ENTERPRISE_LICENSE_KEY=<license-key>
       %%IMAGE%%:meta
 ```
@@ -23,21 +23,21 @@ The examples below will use docker's built-in networking capability. If you use 
 First, create a docker network:
 
 ```console
-$ docker network create influxdb
+docker network create influxdb
 ```
 
 Start three meta nodes. This is the suggested number of meta nodes. We do not recommend running more or less. If you choose to run more or less, be sure that the number of meta nodes is odd. The hostname must be set on each container to the address that will be used to access the meta node. When using docker networks, the hostname should be made the same as the name of the container.
 
 ```console
-$ docker run -d --name=influxdb-meta-0 --network=influxdb \
+docker run -d --name=influxdb-meta-0 --network=influxdb \
       -h influxdb-meta-0 \
       -e INFLUXDB_ENTERPRISE_LICENSE_KEY=<license-key> \
       %%IMAGE%%:meta
-$ docker run -d --name=influxdb-meta-1 --network=influxdb \
+docker run -d --name=influxdb-meta-1 --network=influxdb \
       -h influxdb-meta-1 \
       -e INFLUXDB_ENTERPRISE_LICENSE_KEY=<license-key> \
       %%IMAGE%%:meta
-$ docker run -d --name=influxdb-meta-2 --network=influxdb \
+docker run -d --name=influxdb-meta-2 --network=influxdb \
       -h influxdb-meta-2 \
       -e INFLUXDB_ENTERPRISE_LICENSE_KEY=<license-key> \
       %%IMAGE%%:meta
@@ -48,16 +48,16 @@ When setting the hostname, you can use `-h <hostname>` or you can directly set t
 After starting the meta nodes, you need to tell them about each other. Choose one of the meta nodes and run `influxd-ctl` in the container.
 
 ```console
-$ docker exec influxdb-meta-0 \
+docker exec influxdb-meta-0 \
       influxd-ctl add-meta influxdb-meta-1:8091
-$ docker exec influxdb-meta-0 \
+docker exec influxdb-meta-0 \
       influxd-ctl add-meta influxdb-meta-2:8091
 ```
 
 Or you can just start a single meta node. If you setup a single meta node, you do not need to use `influxd-ctl add-meta`.
 
 ```console
-$ docker run -d --name=influxdb-meta --network=influxdb \
+docker run -d --name=influxdb-meta --network=influxdb \
       -h influxdb-meta \
       -e INFLUXDB_ENTERPRISE_LICENSE_KEY=<license-key> \
       %%IMAGE%%:meta -single-server
@@ -68,7 +68,7 @@ $ docker run -d --name=influxdb-meta --network=influxdb \
 Start the data nodes using `%%IMAGE%%:data` with similar command line arguments to the meta nodes. You can start as many data nodes as are allowed by your license.
 
 ```console
-$ docker run -d --name=influxdb-data-0 --network=influxdb \
+docker run -d --name=influxdb-data-0 --network=influxdb \
       -h influxdb-data-0 \
       -e INFLUXDB_LICENSE_KEY=<license-key> \
       %%IMAGE%%:data
@@ -77,7 +77,7 @@ $ docker run -d --name=influxdb-data-0 --network=influxdb \
 You can add `-p 8086:8086` to expose the http port to the host machine. After starting the container, choose one of the meta nodes and add the data node to it.
 
 ```console
-$ docker exec influxdb-meta-0 \
+docker exec influxdb-meta-0 \
       influxd-ctl add-data influxdb-data-0:8088
 ```
 
@@ -94,13 +94,13 @@ InfluxDB Meta can be either configured from a config file or using environment v
 Generate the default configuration file:
 
 ```console
-$ docker run --rm %%IMAGE%%:meta influxd-meta config > influxdb-meta.conf
+docker run --rm %%IMAGE%%:meta influxd-meta config > influxdb-meta.conf
 ```
 
 Modify the default configuration, which will now be available under `$PWD`. Then start the InfluxDB Meta container.
 
 ```console
-$ docker run \
+docker run \
       -v $PWD/influxdb-meta.conf:/etc/influxdb/influxdb-meta.conf:ro \
       %%IMAGE%% -config /etc/influxdb/influxdb-meta.conf
 ```
@@ -117,4 +117,4 @@ INFLUXDB_META_DIR=/path/to/metadir
 INFLUXDB_ENTERPRISE_REGISTRATION_ENABLED=true
 ```
 
-Find more about configuring InfluxDB Meta [here](http://docs.influxdata.com/enterprise_influxdb/latest/production_installation/meta_node_installation/).
+For more information, see how to [Install InfluxDB Enterprise meta nodes](https://docs.influxdata.com/enterprise_influxdb/v1/introduction/installation/meta_node_installation/).

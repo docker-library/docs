@@ -1,10 +1,8 @@
 # What is ArangoDB?
 
-ArangoDB is a multi-model, open-source database with flexible data models for documents, graphs, and key-values. Build high performance applications using a convenient SQL-like query language or JavaScript extensions. Use ACID transactions if you require them. Scale horizontally and vertically with a few mouse clicks.
+ArangoDB is a scalable graph database system to drive value from connected data, faster. Native graphs, an integrated search engine, and JSON support, via a single query language.
 
-ArangoDB runs everywhere: On-prem, in the cloud and also on [ArangoDB's Cloud Service Oasis](https://cloud.arangodb.com/home).
-
-The supported data models can be mixed in queries and allow ArangoDB to be the aggregation point for your data.
+ArangoDB runs everywhere: On-prem, in the cloud, and as a managed cloud service: [ArangoGraph Insights Platform](https://cloud.arangodb.com/home).
 
 > [arangodb.com](https://arangodb.com)
 
@@ -12,20 +10,16 @@ The supported data models can be mixed in queries and allow ArangoDB to be the a
 
 ## Key Features in ArangoDB
 
-**Multi-Model** Documents, graphs and key-value pairs — model your data as you see fit for your application.
+**Native Graph** Store both data and relationships, for faster queries even with multiple levels of joins and deeper insights that simply aren't possible with traditional relational and document database systems.
 
-**Joins** Conveniently join what belongs together for flexible ad-hoc querying, less data redundancy.
+**Document Store** Every node in your graph is a JSON document: flexible, extensible, and easily imported from your existing document database.
 
-**Transactions** Easy application development keeping your data consistent and safe. No hassle in your client.
-
-Joins and Transactions are key features for flexible, secure data designs, widely used in RDBMSs that you won't want to miss in NoSQL products. You decide how and when to use Joins and strong consistency guarantees, keeping all the power for scaling and performance as choice.
-
-Furthermore, ArangoDB offers a microservice framework called [Foxx](https://www.arangodb.com/why-arangodb/foxx) to build your own Rest API with a few lines of code.
+**ArangoSearch** Natively integrated cross-platform indexing, text-search and ranking engine for information retrieval, optimized for speed and memory.
 
 #### ArangoDB Documentation
 
--	[ArangoDB Documentation](https://www.arangodb.com/documentation)
--	[ArangoDB Tutorials](https://www.arangodb.com/tutorials)
+-	[Learn ArangoDB](https://www.arangodb.com/learn/)
+-	[Documentation](https://www.arangodb.com/docs/)
 
 ## How to use this image
 
@@ -194,7 +188,7 @@ unix> docker run -d --name arangodb-persist -v /var/lib/arangodb3 busybox true
 
 ### Using as a base image
 
-If you are using the image as a base image please make sure to wrap any CMD in the [exec](https://docs.docker.com/engine/reference/builder/#cmd) form. Otherwise the default entrypoint will not do its bootstrapping work.
+If you are using the image as a base image please make sure to wrap any CMD in the [exec](https://docs.docker.com/reference/dockerfile/#cmd) form. Otherwise the default entrypoint will not do its bootstrapping work.
 
 When deriving the image, you can control the instantiation via putting files into `/docker-entrypoint-initdb.d/`.
 

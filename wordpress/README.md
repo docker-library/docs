@@ -24,23 +24,23 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.1.1-apache`, `6.1-apache`, `6-apache`, `apache`, `6.1.1`, `6.1`, `6`, `latest`, `6.1.1-php7.4-apache`, `6.1-php7.4-apache`, `6-php7.4-apache`, `php7.4-apache`, `6.1.1-php7.4`, `6.1-php7.4`, `6-php7.4`, `php7.4`](https://github.com/docker-library/wordpress/blob/97f75b51f909fbd9894d128ea6893120cfd23979/latest/php7.4/apache/Dockerfile)
--	[`6.1.1-fpm`, `6.1-fpm`, `6-fpm`, `fpm`, `6.1.1-php7.4-fpm`, `6.1-php7.4-fpm`, `6-php7.4-fpm`, `php7.4-fpm`](https://github.com/docker-library/wordpress/blob/97f75b51f909fbd9894d128ea6893120cfd23979/latest/php7.4/fpm/Dockerfile)
--	[`6.1.1-fpm-alpine`, `6.1-fpm-alpine`, `6-fpm-alpine`, `fpm-alpine`, `6.1.1-php7.4-fpm-alpine`, `6.1-php7.4-fpm-alpine`, `6-php7.4-fpm-alpine`, `php7.4-fpm-alpine`](https://github.com/docker-library/wordpress/blob/97f75b51f909fbd9894d128ea6893120cfd23979/latest/php7.4/fpm-alpine/Dockerfile)
--	[`6.1.1-php8.0-apache`, `6.1-php8.0-apache`, `6-php8.0-apache`, `php8.0-apache`, `6.1.1-php8.0`, `6.1-php8.0`, `6-php8.0`, `php8.0`](https://github.com/docker-library/wordpress/blob/97f75b51f909fbd9894d128ea6893120cfd23979/latest/php8.0/apache/Dockerfile)
--	[`6.1.1-php8.0-fpm`, `6.1-php8.0-fpm`, `6-php8.0-fpm`, `php8.0-fpm`](https://github.com/docker-library/wordpress/blob/97f75b51f909fbd9894d128ea6893120cfd23979/latest/php8.0/fpm/Dockerfile)
--	[`6.1.1-php8.0-fpm-alpine`, `6.1-php8.0-fpm-alpine`, `6-php8.0-fpm-alpine`, `php8.0-fpm-alpine`](https://github.com/docker-library/wordpress/blob/97f75b51f909fbd9894d128ea6893120cfd23979/latest/php8.0/fpm-alpine/Dockerfile)
--	[`6.1.1-php8.1-apache`, `6.1-php8.1-apache`, `6-php8.1-apache`, `php8.1-apache`, `6.1.1-php8.1`, `6.1-php8.1`, `6-php8.1`, `php8.1`](https://github.com/docker-library/wordpress/blob/97f75b51f909fbd9894d128ea6893120cfd23979/latest/php8.1/apache/Dockerfile)
--	[`6.1.1-php8.1-fpm`, `6.1-php8.1-fpm`, `6-php8.1-fpm`, `php8.1-fpm`](https://github.com/docker-library/wordpress/blob/97f75b51f909fbd9894d128ea6893120cfd23979/latest/php8.1/fpm/Dockerfile)
--	[`6.1.1-php8.1-fpm-alpine`, `6.1-php8.1-fpm-alpine`, `6-php8.1-fpm-alpine`, `php8.1-fpm-alpine`](https://github.com/docker-library/wordpress/blob/97f75b51f909fbd9894d128ea6893120cfd23979/latest/php8.1/fpm-alpine/Dockerfile)
--	[`cli-2.7.1`, `cli-2.7`, `cli-2`, `cli`, `cli-2.7.1-php7.4`, `cli-2.7-php7.4`, `cli-2-php7.4`, `cli-php7.4`](https://github.com/docker-library/wordpress/blob/b95184001fd181d86d4a409a4ae26b23795bb0d4/cli/php7.4/alpine/Dockerfile)
--	[`cli-2.7.1-php8.0`, `cli-2.7-php8.0`, `cli-2-php8.0`, `cli-php8.0`](https://github.com/docker-library/wordpress/blob/b95184001fd181d86d4a409a4ae26b23795bb0d4/cli/php8.0/alpine/Dockerfile)
--	[`cli-2.7.1-php8.1`, `cli-2.7-php8.1`, `cli-2-php8.1`, `cli-php8.1`](https://github.com/docker-library/wordpress/blob/b95184001fd181d86d4a409a4ae26b23795bb0d4/cli/php8.1/alpine/Dockerfile)
+-	[`6.5.3-php8.1-apache`, `6.5-php8.1-apache`, `6-php8.1-apache`, `php8.1-apache`, `6.5.3-php8.1`, `6.5-php8.1`, `6-php8.1`, `php8.1`](https://github.com/docker-library/wordpress/blob/2eba26f088c12dea179623ee8af5cb52e6f60c4a/latest/php8.1/apache/Dockerfile)
+-	[`6.5.3-php8.1-fpm`, `6.5-php8.1-fpm`, `6-php8.1-fpm`, `php8.1-fpm`](https://github.com/docker-library/wordpress/blob/2eba26f088c12dea179623ee8af5cb52e6f60c4a/latest/php8.1/fpm/Dockerfile)
+-	[`6.5.3-php8.1-fpm-alpine`, `6.5-php8.1-fpm-alpine`, `6-php8.1-fpm-alpine`, `php8.1-fpm-alpine`](https://github.com/docker-library/wordpress/blob/2eba26f088c12dea179623ee8af5cb52e6f60c4a/latest/php8.1/fpm-alpine/Dockerfile)
+-	[`6.5.3-apache`, `6.5-apache`, `6-apache`, `apache`, `6.5.3`, `6.5`, `6`, `latest`, `6.5.3-php8.2-apache`, `6.5-php8.2-apache`, `6-php8.2-apache`, `php8.2-apache`, `6.5.3-php8.2`, `6.5-php8.2`, `6-php8.2`, `php8.2`](https://github.com/docker-library/wordpress/blob/2eba26f088c12dea179623ee8af5cb52e6f60c4a/latest/php8.2/apache/Dockerfile)
+-	[`6.5.3-fpm`, `6.5-fpm`, `6-fpm`, `fpm`, `6.5.3-php8.2-fpm`, `6.5-php8.2-fpm`, `6-php8.2-fpm`, `php8.2-fpm`](https://github.com/docker-library/wordpress/blob/2eba26f088c12dea179623ee8af5cb52e6f60c4a/latest/php8.2/fpm/Dockerfile)
+-	[`6.5.3-fpm-alpine`, `6.5-fpm-alpine`, `6-fpm-alpine`, `fpm-alpine`, `6.5.3-php8.2-fpm-alpine`, `6.5-php8.2-fpm-alpine`, `6-php8.2-fpm-alpine`, `php8.2-fpm-alpine`](https://github.com/docker-library/wordpress/blob/2eba26f088c12dea179623ee8af5cb52e6f60c4a/latest/php8.2/fpm-alpine/Dockerfile)
+-	[`6.5.3-php8.3-apache`, `6.5-php8.3-apache`, `6-php8.3-apache`, `php8.3-apache`, `6.5.3-php8.3`, `6.5-php8.3`, `6-php8.3`, `php8.3`](https://github.com/docker-library/wordpress/blob/2eba26f088c12dea179623ee8af5cb52e6f60c4a/latest/php8.3/apache/Dockerfile)
+-	[`6.5.3-php8.3-fpm`, `6.5-php8.3-fpm`, `6-php8.3-fpm`, `php8.3-fpm`](https://github.com/docker-library/wordpress/blob/2eba26f088c12dea179623ee8af5cb52e6f60c4a/latest/php8.3/fpm/Dockerfile)
+-	[`6.5.3-php8.3-fpm-alpine`, `6.5-php8.3-fpm-alpine`, `6-php8.3-fpm-alpine`, `php8.3-fpm-alpine`](https://github.com/docker-library/wordpress/blob/2eba26f088c12dea179623ee8af5cb52e6f60c4a/latest/php8.3/fpm-alpine/Dockerfile)
+-	[`cli-2.10.0-php8.1`, `cli-2.10-php8.1`, `cli-2-php8.1`, `cli-php8.1`](https://github.com/docker-library/wordpress/blob/509adb58cbc7463a03e317931df65868ec8a3e92/cli/php8.1/alpine/Dockerfile)
+-	[`cli-2.10.0`, `cli-2.10`, `cli-2`, `cli`, `cli-2.10.0-php8.2`, `cli-2.10-php8.2`, `cli-2-php8.2`, `cli-php8.2`](https://github.com/docker-library/wordpress/blob/509adb58cbc7463a03e317931df65868ec8a3e92/cli/php8.2/alpine/Dockerfile)
+-	[`cli-2.10.0-php8.3`, `cli-2.10-php8.3`, `cli-2-php8.3`, `cli-php8.3`](https://github.com/docker-library/wordpress/blob/509adb58cbc7463a03e317931df65868ec8a3e92/cli/php8.3/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/docker-library/wordpress/issues](https://github.com/docker-library/wordpress/issues)
+	[https://github.com/docker-library/wordpress/issues](https://github.com/docker-library/wordpress/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/wordpress/), [`arm32v5`](https://hub.docker.com/r/arm32v5/wordpress/), [`arm32v6`](https://hub.docker.com/r/arm32v6/wordpress/), [`arm32v7`](https://hub.docker.com/r/arm32v7/wordpress/), [`arm64v8`](https://hub.docker.com/r/arm64v8/wordpress/), [`i386`](https://hub.docker.com/r/i386/wordpress/), [`mips64le`](https://hub.docker.com/r/mips64le/wordpress/), [`ppc64le`](https://hub.docker.com/r/ppc64le/wordpress/), [`s390x`](https://hub.docker.com/r/s390x/wordpress/)
@@ -79,7 +79,7 @@ The following environment variables are also honored for configuring your WordPr
 -	`-e WORDPRESS_TABLE_PREFIX=...`
 -	`-e WORDPRESS_AUTH_KEY=...`, `-e WORDPRESS_SECURE_AUTH_KEY=...`, `-e WORDPRESS_LOGGED_IN_KEY=...`, `-e WORDPRESS_NONCE_KEY=...`, `-e WORDPRESS_AUTH_SALT=...`, `-e WORDPRESS_SECURE_AUTH_SALT=...`, `-e WORDPRESS_LOGGED_IN_SALT=...`, `-e WORDPRESS_NONCE_SALT=...` (default to unique random SHA1s, but only if other environment variable configuration is provided)
 -	`-e WORDPRESS_DEBUG=1` (defaults to disabled, non-empty value will enable `WP_DEBUG` in `wp-config.php`)
--	`-e WORDPRESS_CONFIG_EXTRA=...` (defaults to nothing, non-empty value will be embedded verbatim inside `wp-config.php` -- especially useful for applying extra configuration values this image does not provide by default such as `WP_ALLOW_MULTISITE`; see [docker-library/wordpress#142](https://github.com/docker-library/wordpress/pull/142) for more details)
+-	`-e WORDPRESS_CONFIG_EXTRA=...` (defaults to nothing, the value will be evaluated by the `eval()` function in `wp-config.php`. This variable is especially useful for applying extra configuration values this image does not provide by default such as `WP_ALLOW_MULTISITE`; see [docker-library/wordpress#142](https://github.com/docker-library/wordpress/pull/142) for more details)
 
 The `WORDPRESS_DB_NAME` needs to already exist on the given MySQL server; it will not be created by the `wordpress` container.
 
@@ -105,9 +105,9 @@ $ docker run --name some-wordpress -e WORDPRESS_DB_PASSWORD_FILE=/run/secrets/my
 
 Currently, this is supported for `WORDPRESS_DB_HOST`, `WORDPRESS_DB_USER`, `WORDPRESS_DB_PASSWORD`, `WORDPRESS_DB_NAME`, `WORDPRESS_AUTH_KEY`, `WORDPRESS_SECURE_AUTH_KEY`, `WORDPRESS_LOGGED_IN_KEY`, `WORDPRESS_NONCE_KEY`, `WORDPRESS_AUTH_SALT`, `WORDPRESS_SECURE_AUTH_SALT`, `WORDPRESS_LOGGED_IN_SALT`, `WORDPRESS_NONCE_SALT`, `WORDPRESS_TABLE_PREFIX`, and `WORDPRESS_DEBUG`.
 
-## ... via [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/) or [`docker-compose`](https://github.com/docker/compose)
+## ... via [`docker-compose`](https://github.com/docker/compose) or [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/)
 
-Example `stack.yml` for `wordpress`:
+Example `docker-compose.yml` for `wordpress`:
 
 ```yaml
 version: '3.1'
@@ -128,7 +128,7 @@ services:
       - wordpress:/var/www/html
 
   db:
-    image: mysql:5.7
+    image: mysql:8.0
     restart: always
     environment:
       MYSQL_DATABASE: exampledb
@@ -143,7 +143,7 @@ volumes:
   db:
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/456252a739783650c79bd1f6a7a19101fbecfc65/wordpress/stack.yml)
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/8b35a43795bda4f4ca1299bee2d02afe2434ee7f/wordpress/stack.yml)
 
 Run `docker stack deploy -c stack.yml wordpress` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
 

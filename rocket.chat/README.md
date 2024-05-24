@@ -24,15 +24,14 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.2.0`, `5.2`, `5`, `latest`](https://github.com/RocketChat/Docker.Official.Image/blob/2a14b3f65fecb108c1e10f39f746c5c75ca5474c/5.2/Dockerfile)
--	[`5.1.4`, `5.1`](https://github.com/RocketChat/Docker.Official.Image/blob/2a14b3f65fecb108c1e10f39f746c5c75ca5474c/5.1/Dockerfile)
--	[`5.0.7`, `5.0`](https://github.com/RocketChat/Docker.Official.Image/blob/2a14b3f65fecb108c1e10f39f746c5c75ca5474c/5.0/Dockerfile)
--	[`4.8.6`, `4.8`, `4`](https://github.com/RocketChat/Docker.Official.Image/blob/2a14b3f65fecb108c1e10f39f746c5c75ca5474c/4.8/Dockerfile)
+-	[`6.7.0`, `6.7`, `6`, `latest`](https://github.com/RocketChat/Docker.Official.Image/blob/2e8ccf72214b7b274fa55c48bcaa954e8f5b9445/6.7/Dockerfile)
+-	[`6.6.6`, `6.6`](https://github.com/RocketChat/Docker.Official.Image/blob/ed2ee93cdfc72c79e6a8fcf924afe768f4cbcefb/6.6/Dockerfile)
+-	[`6.5.5`, `6.5`](https://github.com/RocketChat/Docker.Official.Image/blob/ed2ee93cdfc72c79e6a8fcf924afe768f4cbcefb/6.5/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/RocketChat/Docker.Official.Image/issues](https://github.com/RocketChat/Docker.Official.Image/issues)
+	[https://github.com/RocketChat/Docker.Official.Image/issues](https://github.com/RocketChat/Docker.Official.Image/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/rocket.chat/)

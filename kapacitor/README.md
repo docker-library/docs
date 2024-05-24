@@ -24,18 +24,18 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.5`, `1.5.9`](https://github.com/influxdata/influxdata-docker/blob/410d53519af0edd30a985eacc3bb060258a2705d/kapacitor/1.5/Dockerfile)
--	[`1.5-alpine`, `1.5.9-alpine`](https://github.com/influxdata/influxdata-docker/blob/410d53519af0edd30a985eacc3bb060258a2705d/kapacitor/1.5/alpine/Dockerfile)
--	[`1.6`, `1.6.5`, `latest`](https://github.com/influxdata/influxdata-docker/blob/410d53519af0edd30a985eacc3bb060258a2705d/kapacitor/1.6/Dockerfile)
--	[`1.6-alpine`, `1.6.5-alpine`, `alpine`](https://github.com/influxdata/influxdata-docker/blob/410d53519af0edd30a985eacc3bb060258a2705d/kapacitor/1.6/alpine/Dockerfile)
+-	[`1.6`, `1.6.6`](https://github.com/influxdata/influxdata-docker/blob/7fb830f90eacb0e8e0dc8bc0257abbf34f9c5d2b/kapacitor/1.6/Dockerfile)
+-	[`1.6-alpine`, `1.6.6-alpine`](https://github.com/influxdata/influxdata-docker/blob/7fb830f90eacb0e8e0dc8bc0257abbf34f9c5d2b/kapacitor/1.6/alpine/Dockerfile)
+-	[`1.7`, `1.7.4`, `latest`](https://github.com/influxdata/influxdata-docker/blob/7fb830f90eacb0e8e0dc8bc0257abbf34f9c5d2b/kapacitor/1.7/Dockerfile)
+-	[`1.7-alpine`, `1.7.4-alpine`, `alpine`](https://github.com/influxdata/influxdata-docker/blob/7fb830f90eacb0e8e0dc8bc0257abbf34f9c5d2b/kapacitor/1.7/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/influxdata/influxdata-docker/issues](https://github.com/influxdata/influxdata-docker/issues)
+	[https://github.com/influxdata/influxdata-docker/issues](https://github.com/influxdata/influxdata-docker/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/kapacitor/), [`arm32v7`](https://hub.docker.com/r/arm32v7/kapacitor/), [`arm64v8`](https://hub.docker.com/r/arm64v8/kapacitor/)
+	[`amd64`](https://hub.docker.com/r/amd64/kapacitor/), [`arm64v8`](https://hub.docker.com/r/arm64v8/kapacitor/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/kapacitor/` directory](https://github.com/docker-library/repo-info/blob/master/repos/kapacitor) ([history](https://github.com/docker-library/repo-info/commits/master/repos/kapacitor))  

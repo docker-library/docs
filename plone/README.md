@@ -24,13 +24,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.2.9-python38`, `5.2-python38`, `5-python38`, `python38`, `5.2.9`, `5.2`, `5`, `latest`](https://github.com/plone/plone.docker/blob/dfb126db2d9c956d84ff381e7b1ee9f642edf716/5.2/5.2.9/debian/Dockerfile)
--	[`5.2.8-python38`, `5.2.8`](https://github.com/plone/plone.docker/blob/dfb126db2d9c956d84ff381e7b1ee9f642edf716/5.2/5.2.8/debian/Dockerfile)
+-	[`5.2.13-python38`, `5.2-python38`, `5-python38`, `python38`, `5.2.13`, `5.2`, `5`, `latest`](https://github.com/plone/plone.docker/blob/fd5a572ead9cabb20b9fcb24e16631f673610118/5.2/5.2.13/debian/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/plone/plone.docker/issues](https://github.com/plone/plone.docker/issues)
+	[https://github.com/plone/plone.docker/issues](https://github.com/plone/plone.docker/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/plone/), [`arm64v8`](https://hub.docker.com/r/arm64v8/plone/)

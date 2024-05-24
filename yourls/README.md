@@ -24,14 +24,14 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.9.1-apache`, `1.9-apache`, `1-apache`, `apache`, `1.9.1`, `1.9`, `1`, `latest`](https://github.com/YOURLS/docker/blob/38f550a34a4eb96419d9d3ebabe802c439103218/apache/Dockerfile)
--	[`1.9.1-fpm`, `1.9-fpm`, `1-fpm`, `fpm`](https://github.com/YOURLS/docker/blob/38f550a34a4eb96419d9d3ebabe802c439103218/fpm/Dockerfile)
--	[`1.9.1-fpm-alpine`, `1.9-fpm-alpine`, `1-fpm-alpine`, `fpm-alpine`](https://github.com/YOURLS/docker/blob/38f550a34a4eb96419d9d3ebabe802c439103218/fpm-alpine/Dockerfile)
+-	[`1.9.2-apache`, `1.9-apache`, `1-apache`, `apache`, `1.9.2`, `1.9`, `1`, `latest`](https://github.com/YOURLS/images/blob/082820033f591498dbc30d4ffc0cc927197ebf26/apache/Dockerfile)
+-	[`1.9.2-fpm`, `1.9-fpm`, `1-fpm`, `fpm`](https://github.com/YOURLS/images/blob/082820033f591498dbc30d4ffc0cc927197ebf26/fpm/Dockerfile)
+-	[`1.9.2-fpm-alpine`, `1.9-fpm-alpine`, `1-fpm-alpine`, `fpm-alpine`](https://github.com/YOURLS/images/blob/082820033f591498dbc30d4ffc0cc927197ebf26/fpm-alpine/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/YOURLS/docker/issues](https://github.com/YOURLS/docker/issues)
+	[https://github.com/YOURLS/docker/issues](https://github.com/YOURLS/docker/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/yourls/), [`arm32v5`](https://hub.docker.com/r/arm32v5/yourls/), [`arm32v6`](https://hub.docker.com/r/arm32v6/yourls/), [`arm32v7`](https://hub.docker.com/r/arm32v7/yourls/), [`arm64v8`](https://hub.docker.com/r/arm64v8/yourls/), [`i386`](https://hub.docker.com/r/i386/yourls/), [`mips64le`](https://hub.docker.com/r/mips64le/yourls/), [`ppc64le`](https://hub.docker.com/r/ppc64le/yourls/), [`s390x`](https://hub.docker.com/r/s390x/yourls/)
@@ -141,9 +141,9 @@ $ docker run --name some-yourls -e YOURLS_DB_PASS_FILE=/run/secrets/mysql-root .
 
 Currently, this is supported for `YOURLS_DB_HOST`, `YOURLS_DB_USER`, `YOURLS_DB_PASS`, `YOURLS_DB_NAME`, `YOURLS_DB_PREFIX`, `YOURLS_SITE`, `YOURLS_USER`, and `YOURLS_PASS`.
 
-## ... via [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/) or [`docker-compose`](https://github.com/docker/compose)
+## ... via [`docker-compose`](https://github.com/docker/compose) or [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/)
 
-Example `stack.yml` for `yourls`:
+Example `docker-compose.yml` for `yourls`:
 
 ```yaml
 version: '3.1'

@@ -13,7 +13,7 @@ Rust is a systems programming language sponsored by Mozilla Research. It is desi
 The most straightforward way to use this image is to use a Rust container as both the build and runtime environment. In your `Dockerfile`, writing something along the lines of the following will compile and run your project:
 
 ```dockerfile
-FROM %%IMAGE%%:1.31
+FROM %%IMAGE%%:1.67
 
 WORKDIR /usr/src/myapp
 COPY . .
@@ -33,12 +33,12 @@ $ docker run -it --rm --name my-running-app my-rust-app
 This creates an image that has all of the rust tooling for the image, which is 1.8gb. If you just want the compiled application:
 
 ```dockerfile
-FROM rust:1.40 as builder
+FROM rust:1.67 as builder
 WORKDIR /usr/src/myapp
 COPY . .
 RUN cargo install --path .
 
-FROM debian:buster-slim
+FROM debian:bullseye-slim
 RUN apt-get update && apt-get install -y extra-runtime-dependencies && rm -rf /var/lib/apt/lists/*
 COPY --from=builder /usr/local/cargo/bin/myapp /usr/local/bin/myapp
 CMD ["myapp"]

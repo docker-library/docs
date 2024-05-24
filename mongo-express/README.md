@@ -24,13 +24,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.0.0-alpha.4`, `1.0.0-alpha`, `latest`](https://github.com/mongo-express/mongo-express-docker/blob/26e7ea94e4d222de7d52531caee52149ac093c26/Dockerfile)
--	[`0.54.0`, `0.54`](https://github.com/mongo-express/mongo-express-docker/blob/4b43fe8a1206434cb32a006cd155dd71462f092f/Dockerfile)
+-	[`1.0.2-20-alpine3.19`, `1.0-20-alpine3.19`, `1-20-alpine3.19`](https://github.com/mongo-express/mongo-express-docker/blob/403467f350d819b404f3d5150be7776217e810b7/1.0/20-alpine3.19/Dockerfile)
+-	[`1.0.2-20`, `1.0-20`, `1-20`, `1.0.2-20-alpine3.18`, `1.0-20-alpine3.18`, `1-20-alpine3.18`](https://github.com/mongo-express/mongo-express-docker/blob/403467f350d819b404f3d5150be7776217e810b7/1.0/20-alpine3.18/Dockerfile)
+-	[`1.0.2-18-alpine3.19`, `1.0-18-alpine3.19`, `1-18-alpine3.19`](https://github.com/mongo-express/mongo-express-docker/blob/403467f350d819b404f3d5150be7776217e810b7/1.0/18-alpine3.19/Dockerfile)
+-	[`1.0.2`, `1.0`, `1`, `1.0.2-18`, `1.0-18`, `1-18`, `1.0.2-18-alpine3.18`, `1.0-18-alpine3.18`, `1-18-alpine3.18`, `latest`](https://github.com/mongo-express/mongo-express-docker/blob/403467f350d819b404f3d5150be7776217e810b7/1.0/18-alpine3.18/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/mongo-express/mongo-express-docker/issues](https://github.com/mongo-express/mongo-express-docker/issues)
+	[https://github.com/mongo-express/mongo-express-docker/issues](https://github.com/mongo-express/mongo-express-docker/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/mongo-express/), [`arm64v8`](https://hub.docker.com/r/arm64v8/mongo-express/)

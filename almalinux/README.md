@@ -24,10 +24,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `8`, `8.7`, `8.7-20221110`](https://github.com/AlmaLinux/docker-images/blob/8ab8e4aa3c25e7836bf777dae31545da8fd477f1/Dockerfile-x86_64-default)
--	[`minimal`, `8-minimal`, `8.7-minimal`, `8.7-minimal-20221110`](https://github.com/AlmaLinux/docker-images/blob/8ab8e4aa3c25e7836bf777dae31545da8fd477f1/Dockerfile-x86_64-minimal)
--	[`9`, `9.1`, `9.1-20221117`](https://github.com/AlmaLinux/docker-images/blob/aaecb5417032a91f1eb3204d85cb7a41bd90025b/Dockerfile-x86_64-default)
--	[`9-minimal`, `9.1-minimal`, `9.1-minimal-20221117`](https://github.com/AlmaLinux/docker-images/blob/aaecb5417032a91f1eb3204d85cb7a41bd90025b/Dockerfile-x86_64-minimal)
+-	[`8`, `8.9`, `8.9-20240410`](https://github.com/AlmaLinux/container-images/blob/7aee1db985cc9ebb0347f2f4875f301fa4b09ab7/default/amd64/Dockerfile)
+-	[`8-minimal`, `8.9-minimal`, `8.9-minimal-20240410`](https://github.com/AlmaLinux/container-images/blob/265e51205d22917cbc7c60839c131dea85296705/minimal/amd64/Dockerfile)
+-	[`latest`, `9`, `9.4`, `9.4-20240506`](https://github.com/AlmaLinux/container-images/blob/35df378109dcb34fe4aa7c6105ec748bafcda307/default/amd64/Dockerfile)
+-	[`minimal`, `9-minimal`, `9.4-minimal`, `9.4-minimal-20240506`](https://github.com/AlmaLinux/container-images/blob/35df378109dcb34fe4aa7c6105ec748bafcda307/minimal/amd64/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -50,7 +50,7 @@ WARNING:
 
 # AlmaLinux OS
 
-[AlmaLinux OS](https://almalinux.org/) is an Open Source and forever-free enterprise Linux distribution, governed and driven by the community, focused on long-term stability and a robust production-grade platform. AlmaLinux OS is 1:1 binary compatible with RHEL® 8 and it was founded by the team behind the well-established [CloudLinux OS](https://www.cloudlinux.com/all-products/product-overview/cloudlinuxos).
+[AlmaLinux OS](https://almalinux.org/) is an Open Source and forever-free enterprise Linux distribution, governed and driven by the community, focused on long-term stability and a robust production-grade platform. AlmaLinux OS is binary compatible with RHEL®, and it was founded by the team behind the well-established [CloudLinux OS](https://www.cloudlinux.com/all-products/product-overview/cloudlinuxos). Today, the AlmaLinux OS Foundation, run by a community-elected board of directors, owns and manages the operating system.
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/23547f3e976bc000d1a01a47241000f72aec9a40/almalinux/logo.png)
 

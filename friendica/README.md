@@ -24,17 +24,20 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2022.10-apache`, `apache`, `stable-apache`, `2022.10`, `latest`, `stable`](https://github.com/friendica/docker/blob/6df70e0d04bdfd9e0c38f0cf193dcf0ee27890c1/2022.10/apache/Dockerfile)
--	[`2022.10-fpm`, `fpm`, `stable-fpm`](https://github.com/friendica/docker/blob/6df70e0d04bdfd9e0c38f0cf193dcf0ee27890c1/2022.10/fpm/Dockerfile)
--	[`2022.10-fpm-alpine`, `fpm-alpine`, `stable-fpm-alpine`](https://github.com/friendica/docker/blob/6df70e0d04bdfd9e0c38f0cf193dcf0ee27890c1/2022.10/fpm-alpine/Dockerfile)
--	[`2022.12-dev-apache`, `dev-apache`, `2022.12-dev`, `dev`](https://github.com/friendica/docker/blob/6df70e0d04bdfd9e0c38f0cf193dcf0ee27890c1/2022.12-dev/apache/Dockerfile)
--	[`2022.12-dev-fpm`, `dev-fpm`](https://github.com/friendica/docker/blob/6df70e0d04bdfd9e0c38f0cf193dcf0ee27890c1/2022.12-dev/fpm/Dockerfile)
--	[`2022.12-dev-fpm-alpine`, `dev-fpm-alpine`](https://github.com/friendica/docker/blob/6df70e0d04bdfd9e0c38f0cf193dcf0ee27890c1/2022.12-dev/fpm-alpine/Dockerfile)
+-	[`2023.12-apache`, `2023.12`](https://github.com/friendica/docker/blob/447b53e733bfbca2f52b52b355b6f791e5d58747/2023.12/apache/Dockerfile)
+-	[`2023.12-fpm`](https://github.com/friendica/docker/blob/447b53e733bfbca2f52b52b355b6f791e5d58747/2023.12/fpm/Dockerfile)
+-	[`2023.12-fpm-alpine`](https://github.com/friendica/docker/blob/447b53e733bfbca2f52b52b355b6f791e5d58747/2023.12/fpm-alpine/Dockerfile)
+-	[`2024.03-apache`, `apache`, `stable-apache`, `2024.03`, `latest`, `stable`](https://github.com/friendica/docker/blob/e9e6de1547a2333a126c377907b5ba201846abd2/2024.03/apache/Dockerfile)
+-	[`2024.03-fpm`, `fpm`, `stable-fpm`](https://github.com/friendica/docker/blob/e9e6de1547a2333a126c377907b5ba201846abd2/2024.03/fpm/Dockerfile)
+-	[`2024.03-fpm-alpine`, `fpm-alpine`, `stable-fpm-alpine`](https://github.com/friendica/docker/blob/e9e6de1547a2333a126c377907b5ba201846abd2/2024.03/fpm-alpine/Dockerfile)
+-	[`2024.06-dev-apache`, `dev-apache`, `2024.06-dev`, `dev`](https://github.com/friendica/docker/blob/896354f9ae8b175316d13c3a45206cccbd25da51/2024.06-dev/apache/Dockerfile)
+-	[`2024.06-dev-fpm`, `dev-fpm`](https://github.com/friendica/docker/blob/896354f9ae8b175316d13c3a45206cccbd25da51/2024.06-dev/fpm/Dockerfile)
+-	[`2024.06-dev-fpm-alpine`, `dev-fpm-alpine`](https://github.com/friendica/docker/blob/896354f9ae8b175316d13c3a45206cccbd25da51/2024.06-dev/fpm-alpine/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/friendica/docker/issues](https://github.com/friendica/docker/issues)
+	[https://github.com/friendica/docker/issues](https://github.com/friendica/docker/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/friendica/), [`arm32v5`](https://hub.docker.com/r/arm32v5/friendica/), [`arm32v6`](https://hub.docker.com/r/arm32v6/friendica/), [`arm32v7`](https://hub.docker.com/r/arm32v7/friendica/), [`arm64v8`](https://hub.docker.com/r/arm64v8/friendica/), [`i386`](https://hub.docker.com/r/i386/friendica/), [`mips64le`](https://hub.docker.com/r/mips64le/friendica/), [`ppc64le`](https://hub.docker.com/r/ppc64le/friendica/), [`s390x`](https://hub.docker.com/r/s390x/friendica/)
@@ -156,10 +159,14 @@ The following environment variables are possible for the SMTP examples.
 -	`SMTP_DOMAIN` The sender domain. (**required** - e.g. `friendica.local`)
 -	`SMTP_FROM` Sender user-part of the address. (Default: `no-reply` - e.g. no-reply@friendica.local)
 -	`SMTP_TLS` Use TLS for connecting the SMTP Mail-Gateway. (Default: empty)
--	`SMTP_STARTTLS` Use STARTTLS for connecting the SMTP Mail-Gateway. (Default: empty)
+-	`SMTP_STARTTLS` Use STARTTLS for connecting the SMTP Mail-Gateway. (Default: `On`)
 -	`SMTP_AUTH` Auth mode for the SMTP Mail-Gateway. (Default: `On`)
 -	`SMTP_AUTH_USER` Username for the SMTP Mail-Gateway. (Default: empty)
 -	`SMTP_AUTH_PASS` Password for the SMTP Mail-Gateway. (Default: empty)
+
+**Addition to STARTTLS**
+
+the `tls_starttls` setting is either `On` or `Off`, but never unset. That's because in case it's unset, `starttls` would be activated by default (which would need additional configuration like a separate port).
 
 ## Database settings
 
@@ -167,7 +174,7 @@ You have to add the Friendica container to the same network as the running datab
 
 ## Persistent data
 
-The Friendica installation and all data beyond what lives in the database (file uploads, etc) is stored in the [unnamed docker volume](https://docs.docker.com/engine/tutorials/dockervolumes/#adding-a-data-volume) volume `/var/www/html`. The docker daemon will store that data within the docker directory `/var/lib/docker/volumes/...`. That means your data is saved even if the container crashes, is stopped or deleted. To make your data persistent to upgrading and get access for backups is using named docker volume or mount a host folder. To achieve this you need one volume for your database container and Friendica.
+The Friendica installation and all data beyond what lives in the database (file uploads, etc) is stored in the [unnamed docker volume](https://docs.docker.com/storage/volumes/) volume `/var/www/html`. The docker daemon will store that data within the docker directory `/var/lib/docker/volumes/...`. That means your data is saved even if the container crashes, is stopped or deleted. To make your data persistent to upgrading and get access for backups is using named docker volume or mount a host folder. To achieve this you need one volume for your database container and Friendica.
 
 Friendica:
 

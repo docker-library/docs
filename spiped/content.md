@@ -29,7 +29,7 @@ Usually you would combine this image with another linked container. The followin
 $ docker run -d -v /path/to/keyfile:/spiped/key:ro -p 9200:9200 --link elasticsearch:elasticsearch --init %%IMAGE%% -d -s '[0.0.0.0]:9200' -t 'elasticsearch:9200'
 ```
 
-If you don’t need any to bind to a privileged port you can pass `--user spiped` to make *spiped* run as an unprivileged user:
+If you don't need any to bind to a privileged port you can pass `--user spiped` to make *spiped* run as an unprivileged user:
 
 ```console
 $ docker run -d -v /path/to/keyfile:/spiped/key:ro --user spiped -p 9200:9200 --link elasticsearch:elasticsearch --init %%IMAGE%% -d -s '[0.0.0.0]:9200' -t 'elasticsearch:9200'

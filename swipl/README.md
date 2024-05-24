@@ -20,17 +20,17 @@ WARNING:
 	[the SWI-Prolog community](https://github.com/SWI-Prolog/docker-swipl)
 
 -	**Where to get help**:  
-	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [SWI-Prolog home](https://www.swi-prolog.org), [SWI-Prolog forum](https://swi-prolog.discourse.group/), [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `8.5.20`](https://github.com/SWI-Prolog/docker-swipl/blob/c4ca1b9ddd9c416ad22c3775d82921c1a2b69c2b/8.5.20/bullseye/Dockerfile)
--	[`stable`, `8.4.2`](https://github.com/SWI-Prolog/docker-swipl/blob/c4ca1b9ddd9c416ad22c3775d82921c1a2b69c2b/8.4.2/bullseye/Dockerfile)
+-	[`latest`, `9.3.6`](https://github.com/SWI-Prolog/docker-swipl/blob/e5e2a61337a7f21d8b6c53fb6521d507b9d48771/9.3.6/bookworm/Dockerfile)
+-	[`stable`, `9.2.5`](https://github.com/SWI-Prolog/docker-swipl/blob/e5e2a61337a7f21d8b6c53fb6521d507b9d48771/9.2.5/bookworm/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/SWI-Prolog/docker-swipl/issues](https://github.com/SWI-Prolog/docker-swipl/issues)
+	[https://github.com/SWI-Prolog/docker-swipl/issues](https://github.com/SWI-Prolog/docker-swipl/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/swipl/), [`arm32v7`](https://hub.docker.com/r/arm32v7/swipl/), [`arm64v8`](https://hub.docker.com/r/arm64v8/swipl/)

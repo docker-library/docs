@@ -13,7 +13,7 @@ This image requires a running PostgreSQL server.
 ## Start a PostgreSQL server
 
 ```console
-$ docker run -d -e POSTGRES_USER=odoo -e POSTGRES_PASSWORD=odoo -e POSTGRES_DB=postgres --name db postgres:13
+$ docker run -d -e POSTGRES_USER=odoo -e POSTGRES_PASSWORD=odoo -e POSTGRES_DB=postgres --name db postgres:15
 ```
 
 ## Start an Odoo instance
@@ -27,8 +27,8 @@ The alias of the container running Postgres must be db for Odoo to be able to co
 ## Stop and restart an Odoo instance
 
 ```console
-$ docker stop odoo
-$ docker start -a odoo
+$ docker stop %%IMAGE%%
+$ docker start -a %%IMAGE%%
 ```
 
 ## Use named volumes to preserve data
@@ -36,7 +36,7 @@ $ docker start -a odoo
 When the Odoo container is created like described above, the odoo filestore is created inside the container. If the container is removed, the filestore is lost. The preferred way to prevent that is by using a Docker named [volume](https://docs.docker.com/storage/volumes/).
 
 ```console
-$ docker run -v odoo-data:/var/lib/odoo -d -p 8069:8069 --name odoo --link db:db -t odoo
+$ docker run -v odoo-data:/var/lib/odoo -d -p 8069:8069 --name odoo --link db:db -t %%IMAGE%%
 ```
 
 With the above command, the volume named `odoo-data` will persist even if the container is removed and can be re-used by issuing the same command.
@@ -46,7 +46,7 @@ The path `/var/lib/odoo` used as the mount point of the volume must match the od
 Note that the same principle applies to the Postgresql container and a named volume can be used to preserve the database when the container is removed. So the database container could be started like this (before the odoo container):
 
 ```console
-$ docker run -d -v odoo-db:/var/lib/postgresql/data -e POSTGRES_USER=odoo -e POSTGRES_PASSWORD=odoo -e POSTGRES_DB=postgres --name db postgres:13
+$ docker run -d -v odoo-db:/var/lib/postgresql/data -e POSTGRES_USER=odoo -e POSTGRES_PASSWORD=odoo -e POSTGRES_DB=postgres --name db postgres:15
 ```
 
 ## Stop and restart a PostgreSQL server
@@ -63,7 +63,7 @@ The default configuration file for the server (located at `/etc/odoo/odoo.conf`)
 $ docker run -v /path/to/config:/etc/odoo -p 8069:8069 --name odoo --link db:db -t %%IMAGE%%
 ```
 
-Please use [this configuration template](https://github.com/odoo/docker/blob/master/14.0/odoo.conf) to write your custom configuration as we already set some arguments for running Odoo inside a Docker container.
+Please use [this configuration template](https://github.com/odoo/docker/blob/master/17.0/odoo.conf) to write your custom configuration as we already set some arguments for running Odoo inside a Docker container.
 
 You can also directly specify Odoo arguments inline. Those arguments must be given after the keyword `--` in the command-line, as follows
 
@@ -79,6 +79,8 @@ You can mount your own Odoo addons within the Odoo container, at `/mnt/extra-add
 $ docker run -v /path/to/addons:/mnt/extra-addons -p 8069:8069 --name odoo --link db:db -t %%IMAGE%%
 ```
 
+**Note:** Altough there is no official Odoo Enterprise Docker image, the Enterprise modules can be mounted by using the above mentionned method.
+
 ## Run multiple Odoo instances
 
 ```console
@@ -86,7 +88,7 @@ $ docker run -p 8070:8069 --name odoo2 --link db:db -t %%IMAGE%%
 $ docker run -p 8071:8069 --name odoo3 --link db:db -t %%IMAGE%%
 ```
 
-Please note that for plain use of mails and reports functionalities, when the host and container ports differ (e.g. 8070 and 8069), one has to set, in Odoo, Settings->Parameters->System Parameters (requires technical features), web.base.url to the container port (e.g. 127.0.0.1:8069).
+**Note:** For plain use of mails and reports functionalities, when the host and container ports differ (e.g. 8070 and 8069), one has to set, in Odoo, `Settings->Parameters->System Parameters` (requires technical features), web.base.url to the container port (e.g. 127.0.0.1:8069).
 
 ## Environment Variables
 
@@ -105,13 +107,13 @@ The simplest `docker-compose.yml` file would be:
 version: '3.1'
 services:
   web:
-    image: %%IMAGE%%:14.0
+    image: %%IMAGE%%:17.0
     depends_on:
       - db
     ports:
       - "8069:8069"
   db:
-    image: postgres:13
+    image: postgres:15
     environment:
       - POSTGRES_DB=postgres
       - POSTGRES_PASSWORD=odoo
@@ -124,7 +126,7 @@ If the default postgres credentials does not suit you, tweak the environment var
 version: '3.1'
 services:
   web:
-    image: %%IMAGE%%:14.0
+    image: %%IMAGE%%:17.0
     depends_on:
       - mydb
     ports:
@@ -134,7 +136,7 @@ services:
     - USER=odoo
     - PASSWORD=myodoo
   mydb:
-    image: postgres:13
+    image: postgres:15
     environment:
       - POSTGRES_DB=postgres
       - POSTGRES_PASSWORD=myodoo
@@ -152,7 +154,7 @@ Here's a last example showing you how to
 version: '3.1'
 services:
   web:
-    image: %%IMAGE%%:14.0
+    image: %%IMAGE%%:17.0
     depends_on:
       - db
     ports:
@@ -166,7 +168,7 @@ services:
     secrets:
       - postgresql_password
   db:
-    image: postgres:13
+    image: postgres:15
     environment:
       - POSTGRES_DB=postgres
       - POSTGRES_PASSWORD_FILE=/run/secrets/postgresql_password
@@ -193,14 +195,12 @@ docker-compose up -d
 
 # How to upgrade this image
 
-Odoo images are updated on a regular basis to make them use recent releases (a new release of each version of Odoo is built [every night](http://nightly.odoo.com/)). Please be aware that what follows is about upgrading from an old release to the latest one provided of the same major version, as upgrading from a major version to another is a much more complex process requiring elaborated migration scripts (see [Odoo Enterprise Upgrade page](https://upgrade.odoo.com/database/upload) or this [community project](https://doc.therp.nl/openupgrade/) which aims to write those scripts).
+Odoo images are updated on a regular basis to make them use recent releases (a new release of each version of Odoo is built [every night](http://nightly.odoo.com/)). Please be aware that what follows is about upgrading from an old release to the latest one provided of the same major version, as upgrading from a major version to another is a much more complex process requiring elaborated migration scripts (see [Odoo Upgrade page](https://upgrade.odoo.com) or this [community project](https://github.com/OCA/OpenUpgrade) which aims to write those scripts).
 
 Suppose you created a database from an Odoo instance named old-odoo, and you want to access this database from a new Odoo instance named new-odoo, e.g. because you've just downloaded a newer Odoo image.
 
-By default, Odoo 14.0 uses a filestore (located at /var/lib/odoo/filestore/) for attachments. You should restore this filestore in your new Odoo instance by running
+By default, Odoo 16.0+ uses a filestore (located at `/var/lib/odoo/filestore/`) for attachments. You should restore this filestore in your new Odoo instance by running
 
 ```console
 $ docker run --volumes-from old-odoo -p 8070:8069 --name new-odoo --link db:db -t %%IMAGE%%
 ```
-
-You can also simply prevent Odoo from using the filestore by setting the system parameter `ir_attachment.location` to `db-storage` in Settings->Parameters->System Parameters (requires technical features).

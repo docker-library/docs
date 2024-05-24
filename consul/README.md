@@ -14,6 +14,10 @@ WARNING:
 
 -->
 
+# **DEPRECATION NOTICE**
+
+Upcoming in Consul 1.16, we will stop publishing official Dockerhub images and publish only our Verified Publisher images. Users of Docker images should pull from [hashicorp/consul](https://hub.docker.com/r/hashicorp/consul) instead of [consul](https://hub.docker.com/_/consul). Verified Publisher images can be found at https://hub.docker.com/r/hashicorp/consul.
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,14 +28,14 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.14.1`, `1.14`, `latest`](https://github.com/hashicorp/docker-consul/blob/41ecdaf95e0e6f98675f1c04d58964dd71ee0498/0.X/Dockerfile)
--	[`1.13.3`, `1.13`](https://github.com/hashicorp/docker-consul/blob/f4f43d2534abcfc12f8aebf3c20e5339fdec384f/0.X/Dockerfile)
--	[`1.12.6`, `1.12`](https://github.com/hashicorp/docker-consul/blob/dfb2da6631adfc68ce9a930bfd90b543c7ef69c9/0.X/Dockerfile)
+-	[`1.15.4`, `1.15`](https://github.com/hashicorp/docker-consul/blob/aedd0844f06e9eac9c4e130206219b1ff044a8c4/0.X/Dockerfile)
+-	[`1.14.8`, `1.14`](https://github.com/hashicorp/docker-consul/blob/7c095b8e988517c239526c0137caeb837c490807/0.X/Dockerfile)
+-	[`1.13.9`, `1.13`](https://github.com/hashicorp/docker-consul/blob/ae00ef4e7ff1cf68afd391838993bc53234cf5e6/0.X/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/hashicorp/docker-consul/issues](https://github.com/hashicorp/docker-consul/issues)
+	[https://github.com/hashicorp/docker-consul/issues](https://github.com/hashicorp/docker-consul/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/consul/), [`arm32v6`](https://hub.docker.com/r/arm32v6/consul/), [`arm64v8`](https://hub.docker.com/r/arm64v8/consul/), [`i386`](https://hub.docker.com/r/i386/consul/)

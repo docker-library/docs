@@ -28,35 +28,41 @@ WARNING:
 
 ## Simple Tags
 
--	[`22.06.0-beta.0-cli`, `22.06-rc-cli`, `rc-cli`, `22.06.0-beta.0-cli-alpine3.16`](https://github.com/docker-library/docker/blob/6028daf0c4c6f93606e961346ca1cf8226745312/22.06-rc/cli/Dockerfile)
--	[`22.06.0-beta.0-dind`, `22.06-rc-dind`, `rc-dind`, `22.06.0-beta.0-dind-alpine3.16`, `22.06.0-beta.0`, `22.06-rc`, `rc`, `22.06.0-beta.0-alpine3.16`](https://github.com/docker-library/docker/blob/fbd3c1d965c8587efde1bef2d31459e54c28372e/22.06-rc/dind/Dockerfile)
--	[`22.06.0-beta.0-dind-rootless`, `22.06-rc-dind-rootless`, `rc-dind-rootless`](https://github.com/docker-library/docker/blob/1f37025ef2b9b70706d8e11cc3552830e4524758/22.06-rc/dind-rootless/Dockerfile)
--	[`22.06.0-beta.0-git`, `22.06-rc-git`, `rc-git`](https://github.com/docker-library/docker/blob/f23a2bea97f6d7ec563bc316302fb8edf620ec5b/22.06-rc/git/Dockerfile)
--	[`22.06.0-beta.0-windowsservercore-ltsc2022`, `22.06-rc-windowsservercore-ltsc2022`, `rc-windowsservercore-ltsc2022`](https://github.com/docker-library/docker/blob/4c1b73e7046422ca1339b76935c2e2f4251b9c20/22.06-rc/windows/windowsservercore-ltsc2022/Dockerfile)
--	[`22.06.0-beta.0-windowsservercore-1809`, `22.06-rc-windowsservercore-1809`, `rc-windowsservercore-1809`](https://github.com/docker-library/docker/blob/4c1b73e7046422ca1339b76935c2e2f4251b9c20/22.06-rc/windows/windowsservercore-1809/Dockerfile)
--	[`20.10.21-cli`, `20.10-cli`, `20-cli`, `cli`, `20.10.21-cli-alpine3.16`, `20.10.21`, `20.10`, `20`, `latest`, `20.10.21-alpine3.16`](https://github.com/docker-library/docker/blob/6028daf0c4c6f93606e961346ca1cf8226745312/20.10/cli/Dockerfile)
--	[`20.10.21-dind`, `20.10-dind`, `20-dind`, `dind`, `20.10.21-dind-alpine3.16`](https://github.com/docker-library/docker/blob/75036d19c3d68de7d20277d707763f32ddd487aa/20.10/dind/Dockerfile)
--	[`20.10.21-dind-rootless`, `20.10-dind-rootless`, `20-dind-rootless`, `dind-rootless`](https://github.com/docker-library/docker/blob/1231bb8e025bdc715b8a8ca122ad20b5cf7ee469/20.10/dind-rootless/Dockerfile)
--	[`20.10.21-git`, `20.10-git`, `20-git`, `git`](https://github.com/docker-library/docker/blob/f23a2bea97f6d7ec563bc316302fb8edf620ec5b/20.10/git/Dockerfile)
--	[`20.10.21-windowsservercore-ltsc2022`, `20.10-windowsservercore-ltsc2022`, `20-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`](https://github.com/docker-library/docker/blob/1231bb8e025bdc715b8a8ca122ad20b5cf7ee469/20.10/windows/windowsservercore-ltsc2022/Dockerfile)
--	[`20.10.21-windowsservercore-1809`, `20.10-windowsservercore-1809`, `20-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/docker-library/docker/blob/1231bb8e025bdc715b8a8ca122ad20b5cf7ee469/20.10/windows/windowsservercore-1809/Dockerfile)
+-	[`26.1.3-cli`, `26.1-cli`, `26-cli`, `cli`, `26.1.3-cli-alpine3.20`](https://github.com/docker-library/docker/blob/c9c757a745bf09699b87541ff6779676926a5b69/26/cli/Dockerfile)
+-	[`26.1.3-dind`, `26.1-dind`, `26-dind`, `dind`, `26.1.3-dind-alpine3.20`, `26.1.3`, `26.1`, `26`, `latest`, `26.1.3-alpine3.20`](https://github.com/docker-library/docker/blob/087521eb6c8c162b4ea538a0861df40ef0114059/26/dind/Dockerfile)
+-	[`26.1.3-dind-rootless`, `26.1-dind-rootless`, `26-dind-rootless`, `dind-rootless`](https://github.com/docker-library/docker/blob/087521eb6c8c162b4ea538a0861df40ef0114059/26/dind-rootless/Dockerfile)
+-	[`26.1.3-windowsservercore-ltsc2022`, `26.1-windowsservercore-ltsc2022`, `26-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`](https://github.com/docker-library/docker/blob/c9c757a745bf09699b87541ff6779676926a5b69/26/windows/windowsservercore-ltsc2022/Dockerfile)
+-	[`26.1.3-windowsservercore-1809`, `26.1-windowsservercore-1809`, `26-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/docker-library/docker/blob/c9c757a745bf09699b87541ff6779676926a5b69/26/windows/windowsservercore-1809/Dockerfile)
+-	[`25.0.5-cli`, `25.0-cli`, `25-cli`, `25.0.5-cli-alpine3.20`](https://github.com/docker-library/docker/blob/9779cb5c595169f0ca71ed608b47db1f493bf36e/25/cli/Dockerfile)
+-	[`25.0.5-dind`, `25.0-dind`, `25-dind`, `25.0.5-dind-alpine3.20`, `25.0.5-git`, `25.0-git`, `25-git`, `25.0.5`, `25.0`, `25`, `25.0.5-alpine3.20`](https://github.com/docker-library/docker/blob/a40d64fc2cc3b417f9408d3b1c539ec860780e86/25/dind/Dockerfile)
+-	[`25.0.5-dind-rootless`, `25.0-dind-rootless`, `25-dind-rootless`](https://github.com/docker-library/docker/blob/a40d64fc2cc3b417f9408d3b1c539ec860780e86/25/dind-rootless/Dockerfile)
+-	[`25.0.5-windowsservercore-ltsc2022`, `25.0-windowsservercore-ltsc2022`, `25-windowsservercore-ltsc2022`](https://github.com/docker-library/docker/blob/9779cb5c595169f0ca71ed608b47db1f493bf36e/25/windows/windowsservercore-ltsc2022/Dockerfile)
+-	[`25.0.5-windowsservercore-1809`, `25.0-windowsservercore-1809`, `25-windowsservercore-1809`](https://github.com/docker-library/docker/blob/9779cb5c595169f0ca71ed608b47db1f493bf36e/25/windows/windowsservercore-1809/Dockerfile)
+-	[`24.0.9-cli`, `24.0-cli`, `24-cli`, `24.0.9-cli-alpine3.20`](https://github.com/docker-library/docker/blob/c63a44923c911b8fb85dae8f024eda1163cb1ffb/24/cli/Dockerfile)
+-	[`24.0.9-dind`, `24.0-dind`, `24-dind`, `24.0.9-dind-alpine3.20`, `24.0.9-git`, `24.0-git`, `24-git`, `24.0.9`, `24.0`, `24`, `24.0.9-alpine3.20`](https://github.com/docker-library/docker/blob/485fefe743baed5a2dd9e5d22b685c14eda4c61e/24/dind/Dockerfile)
+-	[`24.0.9-dind-rootless`, `24.0-dind-rootless`, `24-dind-rootless`](https://github.com/docker-library/docker/blob/faa16b36dd3257f8b020489d44fd7a339f11701d/24/dind-rootless/Dockerfile)
+-	[`24.0.9-windowsservercore-ltsc2022`, `24.0-windowsservercore-ltsc2022`, `24-windowsservercore-ltsc2022`](https://github.com/docker-library/docker/blob/c63a44923c911b8fb85dae8f024eda1163cb1ffb/24/windows/windowsservercore-ltsc2022/Dockerfile)
+-	[`24.0.9-windowsservercore-1809`, `24.0-windowsservercore-1809`, `24-windowsservercore-1809`](https://github.com/docker-library/docker/blob/c63a44923c911b8fb85dae8f024eda1163cb1ffb/24/windows/windowsservercore-1809/Dockerfile)
 
 ## Shared Tags
 
--	`22.06.0-beta.0-windowsservercore`, `22.06-rc-windowsservercore`, `rc-windowsservercore`:
-	-	[`22.06.0-beta.0-windowsservercore-ltsc2022`](https://github.com/docker-library/docker/blob/4c1b73e7046422ca1339b76935c2e2f4251b9c20/22.06-rc/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`22.06.0-beta.0-windowsservercore-1809`](https://github.com/docker-library/docker/blob/4c1b73e7046422ca1339b76935c2e2f4251b9c20/22.06-rc/windows/windowsservercore-1809/Dockerfile)
--	`20.10.21-windowsservercore`, `20.10-windowsservercore`, `20-windowsservercore`, `windowsservercore`:
-	-	[`20.10.21-windowsservercore-ltsc2022`](https://github.com/docker-library/docker/blob/1231bb8e025bdc715b8a8ca122ad20b5cf7ee469/20.10/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`20.10.21-windowsservercore-1809`](https://github.com/docker-library/docker/blob/1231bb8e025bdc715b8a8ca122ad20b5cf7ee469/20.10/windows/windowsservercore-1809/Dockerfile)
+-	`26.1.3-windowsservercore`, `26.1-windowsservercore`, `26-windowsservercore`, `windowsservercore`:
+	-	[`26.1.3-windowsservercore-ltsc2022`](https://github.com/docker-library/docker/blob/c9c757a745bf09699b87541ff6779676926a5b69/26/windows/windowsservercore-ltsc2022/Dockerfile)
+	-	[`26.1.3-windowsservercore-1809`](https://github.com/docker-library/docker/blob/c9c757a745bf09699b87541ff6779676926a5b69/26/windows/windowsservercore-1809/Dockerfile)
+-	`25.0.5-windowsservercore`, `25.0-windowsservercore`, `25-windowsservercore`:
+	-	[`25.0.5-windowsservercore-ltsc2022`](https://github.com/docker-library/docker/blob/9779cb5c595169f0ca71ed608b47db1f493bf36e/25/windows/windowsservercore-ltsc2022/Dockerfile)
+	-	[`25.0.5-windowsservercore-1809`](https://github.com/docker-library/docker/blob/9779cb5c595169f0ca71ed608b47db1f493bf36e/25/windows/windowsservercore-1809/Dockerfile)
+-	`24.0.9-windowsservercore`, `24.0-windowsservercore`, `24-windowsservercore`:
+	-	[`24.0.9-windowsservercore-ltsc2022`](https://github.com/docker-library/docker/blob/c63a44923c911b8fb85dae8f024eda1163cb1ffb/24/windows/windowsservercore-ltsc2022/Dockerfile)
+	-	[`24.0.9-windowsservercore-1809`](https://github.com/docker-library/docker/blob/c63a44923c911b8fb85dae8f024eda1163cb1ffb/24/windows/windowsservercore-1809/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/docker-library/docker/issues](https://github.com/docker-library/docker/issues)
+	[https://github.com/docker-library/docker/issues](https://github.com/docker-library/docker/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/docker/), [`arm64v8`](https://hub.docker.com/r/arm64v8/docker/), [`windows-amd64`](https://hub.docker.com/r/winamd64/docker/)
+	[`amd64`](https://hub.docker.com/r/amd64/docker/), [`arm32v6`](https://hub.docker.com/r/arm32v6/docker/), [`arm32v7`](https://hub.docker.com/r/arm32v7/docker/), [`arm64v8`](https://hub.docker.com/r/arm64v8/docker/), [`windows-amd64`](https://hub.docker.com/r/winamd64/docker/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/docker/` directory](https://github.com/docker-library/repo-info/blob/master/repos/docker) ([history](https://github.com/docker-library/repo-info/commits/master/repos/docker))  
@@ -299,8 +305,8 @@ $ docker exec -it some-docker docker-entrypoint.sh sh # using "docker-entrypoint
 
 Important note: There are several ways to store data used by applications that run in Docker containers. We encourage users of the `docker` images to familiarize themselves with the options available, including:
 
--	Let Docker manage the storage of your data [by writing to disk on the host system using its own internal volume management](https://docs.docker.com/engine/tutorials/dockervolumes/#adding-a-data-volume). This is the default and is easy and fairly transparent to the user. The downside is that the files may be hard to locate for tools and applications that run directly on the host system, i.e. outside containers.
--	Create a data directory on the host system (outside the container) and [mount this to a directory visible from inside the container](https://docs.docker.com/engine/tutorials/dockervolumes/#mount-a-host-directory-as-a-data-volume). This places the files in a known location on the host system, and makes it easy for tools and applications on the host system to access the files. The downside is that the user needs to make sure that the directory exists, and that e.g. directory permissions and other security mechanisms on the host system are set up correctly.
+-	Let Docker manage the storage of your data [by writing to disk on the host system using its own internal volume management](https://docs.docker.com/storage/volumes/). This is the default and is easy and fairly transparent to the user. The downside is that the files may be hard to locate for tools and applications that run directly on the host system, i.e. outside containers.
+-	Create a data directory on the host system (outside the container) and [mount this to a directory visible from inside the container](https://docs.docker.com/storage/bind-mounts/). This places the files in a known location on the host system, and makes it easy for tools and applications on the host system to access the files. The downside is that the user needs to make sure that the directory exists, and that e.g. directory permissions and other security mechanisms on the host system are set up correctly.
 
 The Docker documentation is a good starting point for understanding the different storage options and variations, and there are multiple blogs and forum postings that discuss and give advice in this area. We will simply show the basic procedure here for the latter option above:
 

@@ -24,20 +24,22 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1-buster`, `1.65-buster`, `1.65.0-buster`, `buster`](https://github.com/rust-lang/docker-rust/blob/76e3311a6326bc93a1e96ad7ae06c05763b62b18/1.65.0/buster/Dockerfile)
--	[`1-slim-buster`, `1.65-slim-buster`, `1.65.0-slim-buster`, `slim-buster`](https://github.com/rust-lang/docker-rust/blob/76e3311a6326bc93a1e96ad7ae06c05763b62b18/1.65.0/buster/slim/Dockerfile)
--	[`1-bullseye`, `1.65-bullseye`, `1.65.0-bullseye`, `bullseye`, `1`, `1.65`, `1.65.0`, `latest`](https://github.com/rust-lang/docker-rust/blob/76e3311a6326bc93a1e96ad7ae06c05763b62b18/1.65.0/bullseye/Dockerfile)
--	[`1-slim-bullseye`, `1.65-slim-bullseye`, `1.65.0-slim-bullseye`, `slim-bullseye`, `1-slim`, `1.65-slim`, `1.65.0-slim`, `slim`](https://github.com/rust-lang/docker-rust/blob/76e3311a6326bc93a1e96ad7ae06c05763b62b18/1.65.0/bullseye/slim/Dockerfile)
--	[`1-alpine3.15`, `1.65-alpine3.15`, `1.65.0-alpine3.15`, `alpine3.15`](https://github.com/rust-lang/docker-rust/blob/76e3311a6326bc93a1e96ad7ae06c05763b62b18/1.65.0/alpine3.15/Dockerfile)
--	[`1-alpine3.16`, `1.65-alpine3.16`, `1.65.0-alpine3.16`, `alpine3.16`, `1-alpine`, `1.65-alpine`, `1.65.0-alpine`, `alpine`](https://github.com/rust-lang/docker-rust/blob/76e3311a6326bc93a1e96ad7ae06c05763b62b18/1.65.0/alpine3.16/Dockerfile)
+-	[`1-buster`, `1.78-buster`, `1.78.0-buster`, `buster`](https://github.com/rust-lang/docker-rust/blob/cc31986e1dfe94671c639231ecf0503942c121d9/1.78.0/buster/Dockerfile)
+-	[`1-slim-buster`, `1.78-slim-buster`, `1.78.0-slim-buster`, `slim-buster`](https://github.com/rust-lang/docker-rust/blob/cc31986e1dfe94671c639231ecf0503942c121d9/1.78.0/buster/slim/Dockerfile)
+-	[`1-bullseye`, `1.78-bullseye`, `1.78.0-bullseye`, `bullseye`](https://github.com/rust-lang/docker-rust/blob/cc31986e1dfe94671c639231ecf0503942c121d9/1.78.0/bullseye/Dockerfile)
+-	[`1-slim-bullseye`, `1.78-slim-bullseye`, `1.78.0-slim-bullseye`, `slim-bullseye`](https://github.com/rust-lang/docker-rust/blob/cc31986e1dfe94671c639231ecf0503942c121d9/1.78.0/bullseye/slim/Dockerfile)
+-	[`1-bookworm`, `1.78-bookworm`, `1.78.0-bookworm`, `bookworm`, `1`, `1.78`, `1.78.0`, `latest`](https://github.com/rust-lang/docker-rust/blob/cc31986e1dfe94671c639231ecf0503942c121d9/1.78.0/bookworm/Dockerfile)
+-	[`1-slim-bookworm`, `1.78-slim-bookworm`, `1.78.0-slim-bookworm`, `slim-bookworm`, `1-slim`, `1.78-slim`, `1.78.0-slim`, `slim`](https://github.com/rust-lang/docker-rust/blob/cc31986e1dfe94671c639231ecf0503942c121d9/1.78.0/bookworm/slim/Dockerfile)
+-	[`1-alpine3.19`, `1.78-alpine3.19`, `1.78.0-alpine3.19`, `alpine3.19`](https://github.com/rust-lang/docker-rust/blob/cc31986e1dfe94671c639231ecf0503942c121d9/1.78.0/alpine3.19/Dockerfile)
+-	[`1-alpine3.20`, `1.78-alpine3.20`, `1.78.0-alpine3.20`, `alpine3.20`, `1-alpine`, `1.78-alpine`, `1.78.0-alpine`, `alpine`](https://github.com/rust-lang/docker-rust/blob/e2c6ff15ac68eb3ca95d05c491a48127936b40bd/1.78.0/alpine3.20/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/rust-lang/docker-rust/issues](https://github.com/rust-lang/docker-rust/issues)
+	[https://github.com/rust-lang/docker-rust/issues](https://github.com/rust-lang/docker-rust/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/rust/), [`arm32v7`](https://hub.docker.com/r/arm32v7/rust/), [`arm64v8`](https://hub.docker.com/r/arm64v8/rust/), [`i386`](https://hub.docker.com/r/i386/rust/)
+	[`amd64`](https://hub.docker.com/r/amd64/rust/), [`arm32v7`](https://hub.docker.com/r/arm32v7/rust/), [`arm64v8`](https://hub.docker.com/r/arm64v8/rust/), [`i386`](https://hub.docker.com/r/i386/rust/), [`ppc64le`](https://hub.docker.com/r/ppc64le/rust/), [`s390x`](https://hub.docker.com/r/s390x/rust/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/rust/` directory](https://github.com/docker-library/repo-info/blob/master/repos/rust) ([history](https://github.com/docker-library/repo-info/commits/master/repos/rust))  
@@ -65,7 +67,7 @@ Rust is a systems programming language sponsored by Mozilla Research. It is desi
 The most straightforward way to use this image is to use a Rust container as both the build and runtime environment. In your `Dockerfile`, writing something along the lines of the following will compile and run your project:
 
 ```dockerfile
-FROM rust:1.31
+FROM rust:1.67
 
 WORKDIR /usr/src/myapp
 COPY . .
@@ -85,12 +87,12 @@ $ docker run -it --rm --name my-running-app my-rust-app
 This creates an image that has all of the rust tooling for the image, which is 1.8gb. If you just want the compiled application:
 
 ```dockerfile
-FROM rust:1.40 as builder
+FROM rust:1.67 as builder
 WORKDIR /usr/src/myapp
 COPY . .
 RUN cargo install --path .
 
-FROM debian:buster-slim
+FROM debian:bullseye-slim
 RUN apt-get update && apt-get install -y extra-runtime-dependencies && rm -rf /var/lib/apt/lists/*
 COPY --from=builder /usr/local/cargo/bin/myapp /usr/local/bin/myapp
 CMD ["myapp"]
@@ -120,7 +122,7 @@ The `rust` images come in many flavors, each designed for a specific use case.
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like bullseye or buster in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+Some of these tags may have names like bookworm, bullseye, or buster in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 This tag is based off of [`buildpack-deps`](https://hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of Docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
 

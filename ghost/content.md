@@ -32,18 +32,32 @@ For upgrading your Ghost container you will want to mount your data to the appro
 
 ## Stateful
 
-Mount your existing content. In this example we also use the Alpine base image.
+Mount your existing content. In this example we also use the Alpine Linux based image.
 
 ```console
-$ docker run -d --name some-ghost -e NODE_ENV=development -p 3001:2368 -v /path/to/ghost/blog:/var/lib/ghost/content %%IMAGE%%:alpine
+$ docker run -d \
+	--name some-ghost \
+	-e NODE_ENV=development \
+	-e database__connection__filename='/var/lib/ghost/content/data/ghost.db' \
+	-p 3001:2368 \
+	-v /path/to/ghost/blog:/var/lib/ghost/content \
+	%%IMAGE%%:alpine
 ```
+
+Note: `database__connection__filename` is only valid in development mode and is the location for the SQLite database file. If using development mode, it should be set to a writeable path within a persistent folder (bind mount or volume). It is not available in production mode because an external MySQL server is required (see the `docker-compose` example below).
 
 ### Docker Volume
 
 Alternatively you can use a named [docker volume](https://docs.docker.com/storage/volumes/) instead of a direct host path for `/var/lib/ghost/content`:
 
 ```console
-$ docker run -d --name some-ghost -e NODE_ENV=development -v some-ghost-data:/var/lib/ghost/content %%IMAGE%%
+$ docker run -d \
+	--name some-ghost \
+	-e NODE_ENV=development \
+	-e database__connection__filename='/var/lib/ghost/content/data/ghost.db' \
+	-p 3001:2368 \
+	-v some-ghost-data:/var/lib/ghost/content \
+	%%IMAGE%%
 ```
 
 ## Configuration
@@ -71,7 +85,7 @@ While the Docker images do have Ghost-CLI available and do use some of its comma
 
 ## Production mode
 
-To run Ghost for production you'll also need to be running with MySQL 8, https, and a reverse proxy configured with appropriate `X-Forwarded-For`, `X-Forwared-Host`, and `X-Forwarded-Proto` (`https`) headers.
+To run Ghost for production you'll also need to be running with MySQL 8, https, and a reverse proxy configured with appropriate `X-Forwarded-For`, `X-Forwarded-Host`, and `X-Forwarded-Proto` (`https`) headers.
 
 The following example demonstrates some of the necessary configuration for running with MySQL. For more detail, see [Ghost's "Configuration options" documentation](https://ghost.org/docs/config/#configuration-options).
 

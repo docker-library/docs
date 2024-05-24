@@ -62,11 +62,11 @@ where `%%REPO%%` is the name of the service in your `docker-compose.yml` file.
 
 ## Configuration using environment variables
 
-The Monica image will use environment variables to setup the application. See [Monica documentation](https://github.com/monicahq/monica/blob/main/.env.example) for common used variables you should setup.
+The Monica image will use environment variables to setup the application. See [Monica documentation](https://github.com/monicahq/monica/blob/4.x/.env.example) for common used variables you should setup.
 
 ## Running the image with docker-compose
 
-See some examples of docker-compose possibilities in the [example section](%%GITHUB-REPO%%/blob/master/.examples).
+See some examples of docker-compose possibilities in the [example section](%%GITHUB-REPO%%/blob/main/.examples).
 
 ---
 
@@ -79,7 +79,7 @@ Make sure to pass in values for `APP_KEY` variable before you run this setup.
 1.	Create a `docker-compose.yml` file
 
 	```yaml
-	version: "3.4"
+	version: "3.9"
 
 	services:
 	  app:
@@ -89,7 +89,7 @@ Make sure to pass in values for `APP_KEY` variable before you run this setup.
 	    ports:
 	      - 8080:80
 	    environment:
-	      - APP_KEY=
+	      - APP_KEY= # Generate with `echo -n 'base64:'; openssl rand -base64 32`
 	      - DB_HOST=db
 	      - DB_USERNAME=monica
 	      - DB_PASSWORD=secret
@@ -98,7 +98,7 @@ Make sure to pass in values for `APP_KEY` variable before you run this setup.
 	    restart: always
 
 	  db:
-	    image: mysql:5.7
+	    image: mariadb:11
 	    environment:
 	      - MYSQL_RANDOM_ROOT_PASSWORD=true
 	      - MYSQL_DATABASE=monica
@@ -135,12 +135,12 @@ Make sure to pass in values for `APP_KEY` variable before you run this setup.
 
 When using FPM image, you will need another container with a webserver to proxy http requests. In this example we use nginx with a basic container to do this.
 
-1.	Download `nginx.conf` and `Dockerfile` file for nginx image. An example can be found on the [`example section`](%%GITHUB-REPO%%/blob/master/.examples/supervisor/fpm/web/)
+1.	Download `nginx.conf` and `Dockerfile` file for nginx image. An example can be found on the [`example section`](%%GITHUB-REPO%%/blob/main/.examples/full/fpm/web/)
 
 	```sh
 	mkdir web
-	curl -sSL https://raw.githubusercontent.com/monicahq/docker/master/.examples/nginx-proxy/web/nginx.conf -o web/nginx.conf
-	curl -sSL https://raw.githubusercontent.com/monicahq/docker/master/.examples/nginx-proxy/web/Dockerfile -o web/Dockerfile
+	curl -sSL https://raw.githubusercontent.com/monicahq/docker/main/.examples/full/web/nginx.conf -o web/nginx.conf
+	curl -sSL https://raw.githubusercontent.com/monicahq/docker/main/.examples/full/web/Dockerfile -o web/Dockerfile
 	```
 
 	The `web` container image should be pre-build before each deploy with: `docker-compose build`.
@@ -148,7 +148,7 @@ When using FPM image, you will need another container with a webserver to proxy 
 2.	Create a `docker-compose.yml` file
 
 	```yaml
-	version: "3.4"
+	version: "3.9"
 
 	services:
 	  app:
@@ -156,7 +156,7 @@ When using FPM image, you will need another container with a webserver to proxy 
 	    depends_on:
 	      - db
 	    environment:
-	      - APP_KEY=
+	      - APP_KEY= # Generate with `echo -n 'base64:'; openssl rand -base64 32`
 	      - DB_HOST=db
 	      - DB_USERNAME=monica
 	      - DB_PASSWORD=secret
@@ -175,7 +175,7 @@ When using FPM image, you will need another container with a webserver to proxy 
 	    restart: always
 
 	  db:
-	    image: mysql:5.7
+	    image: mariadb:11
 	    environment:
 	      - MYSQL_RANDOM_ROOT_PASSWORD=true
 	      - MYSQL_DATABASE=monica
@@ -218,4 +218,4 @@ One way to expose your Monica instance is to use a proxy webserver from your hos
 
 ### Using a proxy webserver container
 
-See some examples of docker-compose possibilities in the [example section](%%GITHUB-REPO%%/blob/master/.examples) to show how to a proxy webserver with ssl capabilities.
+See some examples of docker-compose possibilities in the [example section](%%GITHUB-REPO%%/blob/main/.examples) to show how to a proxy webserver with ssl capabilities.

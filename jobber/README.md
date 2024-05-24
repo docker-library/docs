@@ -33,7 +33,7 @@ This project is not actively maintained. See [dshearer/jobber#334](https://githu
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/dshearer/jobber-docker/issues](https://github.com/dshearer/jobber-docker/issues)
+	[https://github.com/dshearer/jobber-docker/issues](https://github.com/dshearer/jobber-docker/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/jobber/)

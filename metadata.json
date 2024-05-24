@@ -1,0 +1,22 @@
+{
+  "hub": {
+    "categories": [
+      "api-management",
+      "content-management-system",
+      "data-science",
+      "databases-and-storage",
+      "developer-tools",
+      "integration-and-delivery",
+      "internet-of-things",
+      "languages-and-frameworks",
+      "machine-learning-and-ai",
+      "message-queues",
+      "monitoring-and-observability",
+      "networking",
+      "operating-systems",
+      "security",
+      "web-analytics",
+      "web-servers"
+    ]
+  }
+}

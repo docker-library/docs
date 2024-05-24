@@ -1,1 +1,1 @@
-[Discussions](https://github.com/emqx/emqx/discussions) or [Slack](https://slack-invite.emqx.io/)
+[Discussions](https://github.com/emqx/emqx/discussions) or [Discord](https://discord.gg/xYGf3fQnES)

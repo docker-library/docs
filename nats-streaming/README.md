@@ -32,25 +32,25 @@ The NATS Streaming Server is being deprecated. Critical bug fixes and security f
 
 ## Simple Tags
 
--	[`0.25.2-alpine3.16`, `0.25-alpine3.16`, `alpine3.16`, `0.25.2-alpine`, `0.25-alpine`, `alpine`](https://github.com/nats-io/nats-streaming-docker/blob/bbf86e1ee1e9ade913719d60da4069ff2470dbd7/0.25.2/alpine3.16/Dockerfile)
--	[`0.25.2-scratch`, `0.25-scratch`, `scratch`, `0.25.2-linux`, `0.25-linux`, `linux`](https://github.com/nats-io/nats-streaming-docker/blob/bbf86e1ee1e9ade913719d60da4069ff2470dbd7/0.25.2/scratch/Dockerfile)
--	[`0.25.2-windowsservercore-1809`, `0.25-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/nats-io/nats-streaming-docker/blob/bbf86e1ee1e9ade913719d60da4069ff2470dbd7/0.25.2/windowsservercore-1809/Dockerfile)
--	[`0.25.2-nanoserver-1809`, `0.25-nanoserver-1809`, `nanoserver-1809`](https://github.com/nats-io/nats-streaming-docker/blob/bbf86e1ee1e9ade913719d60da4069ff2470dbd7/0.25.2/nanoserver-1809/Dockerfile)
+-	[`0.25.6-alpine3.18`, `0.25-alpine3.18`, `alpine3.18`, `0.25.6-alpine`, `0.25-alpine`, `alpine`](https://github.com/nats-io/nats-streaming-docker/blob/b58b5957ac6c7e2349e52a01ec61fb0afb376ac5/0.25.6/alpine3.18/Dockerfile)
+-	[`0.25.6-scratch`, `0.25-scratch`, `scratch`, `0.25.6-linux`, `0.25-linux`, `linux`](https://github.com/nats-io/nats-streaming-docker/blob/b58b5957ac6c7e2349e52a01ec61fb0afb376ac5/0.25.6/scratch/Dockerfile)
+-	[`0.25.6-windowsservercore-1809`, `0.25-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/nats-io/nats-streaming-docker/blob/b58b5957ac6c7e2349e52a01ec61fb0afb376ac5/0.25.6/windowsservercore-1809/Dockerfile)
+-	[`0.25.6-nanoserver-1809`, `0.25-nanoserver-1809`, `nanoserver-1809`](https://github.com/nats-io/nats-streaming-docker/blob/b58b5957ac6c7e2349e52a01ec61fb0afb376ac5/0.25.6/nanoserver-1809/Dockerfile)
 
 ## Shared Tags
 
--	`0.25.2`, `0.25`, `latest`:
-	-	[`0.25.2-scratch`](https://github.com/nats-io/nats-streaming-docker/blob/bbf86e1ee1e9ade913719d60da4069ff2470dbd7/0.25.2/scratch/Dockerfile)
-	-	[`0.25.2-nanoserver-1809`](https://github.com/nats-io/nats-streaming-docker/blob/bbf86e1ee1e9ade913719d60da4069ff2470dbd7/0.25.2/nanoserver-1809/Dockerfile)
--	`0.25.2-windowsservercore`, `0.25-windowsservercore`, `windowsservercore`:
-	-	[`0.25.2-windowsservercore-1809`](https://github.com/nats-io/nats-streaming-docker/blob/bbf86e1ee1e9ade913719d60da4069ff2470dbd7/0.25.2/windowsservercore-1809/Dockerfile)
--	`0.25.2-nanoserver`, `0.25-nanoserver`, `nanoserver`:
-	-	[`0.25.2-nanoserver-1809`](https://github.com/nats-io/nats-streaming-docker/blob/bbf86e1ee1e9ade913719d60da4069ff2470dbd7/0.25.2/nanoserver-1809/Dockerfile)
+-	`0.25.6`, `0.25`, `latest`:
+	-	[`0.25.6-scratch`](https://github.com/nats-io/nats-streaming-docker/blob/b58b5957ac6c7e2349e52a01ec61fb0afb376ac5/0.25.6/scratch/Dockerfile)
+	-	[`0.25.6-nanoserver-1809`](https://github.com/nats-io/nats-streaming-docker/blob/b58b5957ac6c7e2349e52a01ec61fb0afb376ac5/0.25.6/nanoserver-1809/Dockerfile)
+-	`0.25.6-windowsservercore`, `0.25-windowsservercore`, `windowsservercore`:
+	-	[`0.25.6-windowsservercore-1809`](https://github.com/nats-io/nats-streaming-docker/blob/b58b5957ac6c7e2349e52a01ec61fb0afb376ac5/0.25.6/windowsservercore-1809/Dockerfile)
+-	`0.25.6-nanoserver`, `0.25-nanoserver`, `nanoserver`:
+	-	[`0.25.6-nanoserver-1809`](https://github.com/nats-io/nats-streaming-docker/blob/b58b5957ac6c7e2349e52a01ec61fb0afb376ac5/0.25.6/nanoserver-1809/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/nats-io/nats-streaming-docker/issues](https://github.com/nats-io/nats-streaming-docker/issues)
+	[https://github.com/nats-io/nats-streaming-docker/issues](https://github.com/nats-io/nats-streaming-docker/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/nats-streaming/), [`arm32v6`](https://hub.docker.com/r/arm32v6/nats-streaming/), [`arm32v7`](https://hub.docker.com/r/arm32v7/nats-streaming/), [`arm64v8`](https://hub.docker.com/r/arm64v8/nats-streaming/), [`windows-amd64`](https://hub.docker.com/r/winamd64/nats-streaming/)

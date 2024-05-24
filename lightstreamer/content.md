@@ -43,7 +43,7 @@ Alternatively, the above tasks can be executed by deriving a new image through a
 ```dockerfile
 FROM %%IMAGE%%
 
-# Please specify a COPY command only for the the required custom configuration file
+# Please specify a COPY command only for the required custom configuration file
 COPY my-lightstreamer_conf.xml /lightstreamer/conf/lightstreamer_conf.xml
 COPY my-lightstreamer_log_conf.xml /lightstreamer/conf/lightstreamer_log_conf.xml
 ```

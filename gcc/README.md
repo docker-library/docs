@@ -24,15 +24,16 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`12.2.0`, `12.2`, `12`, `latest`, `12.2.0-bullseye`, `12.2-bullseye`, `12-bullseye`, `bullseye`](https://github.com/docker-library/gcc/blob/523e01b2ccf43f1fd702aa9fdc2f71c827b76525/12/Dockerfile)
--	[`11.3.0`, `11.3`, `11`, `11.3.0-bullseye`, `11.3-bullseye`, `11-bullseye`](https://github.com/docker-library/gcc/blob/a5a94a2d5c812fe57f6f28713b0f899b879145d3/11/Dockerfile)
--	[`10.4.0`, `10.4`, `10`, `10.4.0-buster`, `10.4-buster`, `10-buster`](https://github.com/docker-library/gcc/blob/1e3174f36d64a3ce1373a7004a7f0d4f98de307b/10/Dockerfile)
--	[`9.5.0`, `9.5`, `9`, `9.5.0-buster`, `9.5-buster`, `9-buster`](https://github.com/docker-library/gcc/blob/6c40a41a202b2996b26b52e94762fe9aa8830766/9/Dockerfile)
+-	[`14.1.0`, `14.1`, `14`, `latest`, `14.1.0-bookworm`, `14.1-bookworm`, `14-bookworm`, `bookworm`](https://github.com/docker-library/gcc/blob/b1e7fc69e4021bab505d420fddc57002ef04939e/14/Dockerfile)
+-	[`13.3.0`, `13.3`, `13`, `13.3.0-bookworm`, `13.3-bookworm`, `13-bookworm`](https://github.com/docker-library/gcc/blob/6f09c34227daae15e71f398f0073e31f3ef74234/13/Dockerfile)
+-	[`12.3.0`, `12.3`, `12`, `12.3.0-bookworm`, `12.3-bookworm`, `12-bookworm`](https://github.com/docker-library/gcc/blob/b1e7fc69e4021bab505d420fddc57002ef04939e/12/Dockerfile)
+-	[`11.4.0`, `11.4`, `11`, `11.4.0-bullseye`, `11.4-bullseye`, `11-bullseye`](https://github.com/docker-library/gcc/blob/b1e7fc69e4021bab505d420fddc57002ef04939e/11/Dockerfile)
+-	[`10.5.0`, `10.5`, `10`, `10.5.0-bullseye`, `10.5-bullseye`, `10-bullseye`](https://github.com/docker-library/gcc/blob/b1e7fc69e4021bab505d420fddc57002ef04939e/10/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/docker-library/gcc/issues](https://github.com/docker-library/gcc/issues)
+	[https://github.com/docker-library/gcc/issues](https://github.com/docker-library/gcc/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/gcc/), [`arm32v5`](https://hub.docker.com/r/arm32v5/gcc/), [`arm32v7`](https://hub.docker.com/r/arm32v7/gcc/), [`arm64v8`](https://hub.docker.com/r/arm64v8/gcc/), [`ppc64le`](https://hub.docker.com/r/ppc64le/gcc/), [`s390x`](https://hub.docker.com/r/s390x/gcc/)

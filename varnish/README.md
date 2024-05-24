@@ -24,16 +24,21 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`fresh`, `7.2.1`, `7.2`, `latest`](https://github.com/varnish/docker-varnish/blob/e7acf36bd4afd05427bc3fb251ae4b3374168f27/fresh/debian/Dockerfile)
--	[`fresh-alpine`, `7.2.1-alpine`, `7.2-alpine`, `alpine`](https://github.com/varnish/docker-varnish/blob/e7acf36bd4afd05427bc3fb251ae4b3374168f27/fresh/alpine/Dockerfile)
--	[`old`, `7.1.2`, `7.1`](https://github.com/varnish/docker-varnish/blob/e7acf36bd4afd05427bc3fb251ae4b3374168f27/old/debian/Dockerfile)
--	[`old-alpine`, `7.1.2-alpine`, `7.1-alpine`](https://github.com/varnish/docker-varnish/blob/e7acf36bd4afd05427bc3fb251ae4b3374168f27/old/alpine/Dockerfile)
--	[`stable`, `6.0.11`, `6.0`](https://github.com/varnish/docker-varnish/blob/e7acf36bd4afd05427bc3fb251ae4b3374168f27/stable/debian/Dockerfile)
+-	[`fresh`, `7.5.0`, `7.5`, `latest`](https://github.com/varnish/docker-varnish/blob/0cbc46e59728598b7bb0f537206ce00af6dd9203/fresh/debian/Dockerfile)
+-	[`fresh-alpine`, `7.5.0-alpine`, `7.5-alpine`, `alpine`](https://github.com/varnish/docker-varnish/blob/0cbc46e59728598b7bb0f537206ce00af6dd9203/fresh/alpine/Dockerfile)
+-	[`old`, `7.4.3`, `7.4`](https://github.com/varnish/docker-varnish/blob/185f6f8ec644d59c896861944a1385c09e2abfbe/old/debian/Dockerfile)
+-	[`old-alpine`, `7.4.3-alpine`, `7.4-alpine`](https://github.com/varnish/docker-varnish/blob/185f6f8ec644d59c896861944a1385c09e2abfbe/old/alpine/Dockerfile)
+-	[`stable`, `6.0.13`, `6.0`](https://github.com/varnish/docker-varnish/blob/185f6f8ec644d59c896861944a1385c09e2abfbe/stable/debian/Dockerfile)
+-	[`7.4.2`](https://github.com/varnish/docker-varnish/blob/0c295b528f28a98650fb2580eab6d34b30b165c4/fresh/debian/Dockerfile)
+-	[`7.4.2-alpine`](https://github.com/varnish/docker-varnish/blob/5644d31e8fa5bc78e764e8604ffa17c47528f5e3/fresh/alpine/Dockerfile)
+-	[`7.3.1`, `7.3`](https://github.com/varnish/docker-varnish/blob/0c295b528f28a98650fb2580eab6d34b30b165c4/old/debian/Dockerfile)
+-	[`7.3.1-alpine`, `7.3-alpine`](https://github.com/varnish/docker-varnish/blob/5644d31e8fa5bc78e764e8604ffa17c47528f5e3/old/alpine/Dockerfile)
+-	[`6.0.12`](https://github.com/varnish/docker-varnish/blob/0c295b528f28a98650fb2580eab6d34b30b165c4/stable/debian/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/varnish/docker-varnish/issues](https://github.com/varnish/docker-varnish/issues)
+	[https://github.com/varnish/docker-varnish/issues](https://github.com/varnish/docker-varnish/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/varnish/), [`arm32v7`](https://hub.docker.com/r/arm32v7/varnish/), [`arm64v8`](https://hub.docker.com/r/arm64v8/varnish/), [`i386`](https://hub.docker.com/r/i386/varnish/), [`ppc64le`](https://hub.docker.com/r/ppc64le/varnish/), [`s390x`](https://hub.docker.com/r/s390x/varnish/)
@@ -61,34 +66,26 @@ Varnish is an HTTP accelerator designed for content-heavy dynamic web sites as w
 
 ## Basic usage
 
-Create a `default.vcl` file:
+### Using `VARNISH_BACKEND_HOST` and `VARNISH_BACKEND_PORT`
 
-```vcl
-# specify the VCL syntax version to use
-vcl 4.1;
+You just need to know where your backend (the server that Varnish will accelerate) is:
 
-# import vmod_dynamic for better backend name resolution
-import dynamic;
-
-# we won't use any static backend, but Varnish still need a default one
-backend default none;
-
-# set up a dynamic director
-# for more info, see https://github.com/nigoroll/libvmod-dynamic/blob/master/src/vmod_dynamic.vcc
-sub vcl_init {
-        new d = dynamic.director(port = "80");
-}
-
-sub vcl_recv {
-	# force the host header to match the backend (not all backends need it,
-	# but example.com does)
-	set req.http.host = "example.com";
-	# set the backend
-	set req.backend_hint = d.backend("example.com");
-}
+```console
+# we define VARNISH_BACKEND_HOST/VARNISH_BACKEND_PORT
+# our workdir has to be mounted as tmpfs to avoid disk I/O,
+# and we'll use port 8080 to talk to our container (internally listening on 80)
+$ docker run \
+    -e VARNISH_BACKEND_HOST=example.com -e VARNISH_BACKEND_PORT=80 \
+	--tmpfs /var/lib/varnish/varnishd:exec \
+	-p 8080:80 \
+	varnish
 ```
 
-Then run:
+From there, you can visit `localhost:8080` in your browser and see the example.com homepage.
+
+### Using a VCL file
+
+If you already have a VCL file, you can directly mount it as `/etc/varnish/default.vcl`:
 
 ```console
 # we need the configuration file at /etc/varnish/default.vcl,
@@ -101,9 +98,7 @@ $ docker run \
 	varnish
 ```
 
-From there, you can visit `localhost:8080` in your browser and see the example.com homepage.
-
-Alternatively, a simple `Dockerfile` can be used to generate a new image that includes the necessary `default.vcl` (which is a much cleaner solution than the bind mount above):
+Alternatively, a simple `Dockerfile` can be used to generate a new image that includes the necessary `default.vcl`:
 
 ```dockerfile
 FROM varnish

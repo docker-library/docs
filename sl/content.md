@@ -10,7 +10,7 @@ Scientific Linux is a [Fermilab](http://fnal.gov/) sponsored project. Our primar
 
 Our Mission:
 
-> Driven by Fermilab’s scientific mission and focusing on the changing needs of experimental facilities, Scientific Linux should provide a world class environment for scientific computing needs.
+> Driven by Fermilab's scientific mission and focusing on the changing needs of experimental facilities, Scientific Linux should provide a world class environment for scientific computing needs.
 
 Scientific Linux is a rebuild of Red Hat Enterprise Linux (property of Red Hat Inc. NYSE:RHT).
 

@@ -1,0 +1,1 @@
+[the Docker Community Slack](https://dockr.ly/comm-slack), [SWI-Prolog home](https://www.swi-prolog.org), [SWI-Prolog forum](https://swi-prolog.discourse.group/), [Stack Overflow](https://stackoverflow.com/help/on-topic)

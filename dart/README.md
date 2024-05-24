@@ -24,13 +24,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.18.4-sdk`, `2.18-sdk`, `2-sdk`, `stable-sdk`, `sdk`, `2.18.4`, `2.18`, `2`, `stable`, `latest`](https://github.com/dart-lang/dart-docker/blob/582166334d120ec451b2e8083b6ddee208f0c4e6/stable/bullseye/Dockerfile)
--	[`2.19.0-374.1.beta-sdk`, `beta-sdk`, `2.19.0-374.1.beta`, `beta`](https://github.com/dart-lang/dart-docker/blob/582166334d120ec451b2e8083b6ddee208f0c4e6/beta/bullseye/Dockerfile)
+-	[`3.4.1-sdk`, `3.4-sdk`, `3-sdk`, `stable-sdk`, `sdk`, `3.4.1`, `3.4`, `3`, `stable`, `latest`, `beta-sdk`, `beta`](https://github.com/dart-lang/dart-docker/blob/5adc8590a06b34c8633827d948e6aed82c92fd0a/stable/bookworm/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/dart-lang/dart-docker/issues](https://github.com/dart-lang/dart-docker/issues)
+	[https://github.com/dart-lang/dart-docker/issues](https://github.com/dart-lang/dart-docker/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/dart/), [`arm32v7`](https://hub.docker.com/r/arm32v7/dart/), [`arm64v8`](https://hub.docker.com/r/arm64v8/dart/)

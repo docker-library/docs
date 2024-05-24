@@ -26,10 +26,12 @@ fi
 canonicalRepo="$(curl -fsSLI -o /dev/null -w '%{url_effective}\n' "$canonicalRepo")" # follow redirects (http://stackoverflow.com/a/3077316/433558)
 githubRepoName="${canonicalRepo#*://github.com/}"
 
-if [[ "$githubRepoName" = elastic/* ]]; then
+case "$githubRepoName" in
 	# Elastic points "github-repo" at their upstream elastic/xyz-docker repos, but we want our README stubs to still point at our integration repos
-	githubRepoName="docker-library/$repo"
-fi
+	elastic/*) githubRepoName="docker-library/$repo" ;;
+
+	hylang/hy) githubRepoName='hylang/docker-hylang' ;;
+esac
 
 maintainer="$(sed -e 's!%%GITHUB-REPO%%!'"$canonicalRepo"'!g' "$repo/maintainer.md")"
 
@@ -41,7 +43,7 @@ if [ -f "$repo/deprecated.md" ]; then
 fi
 
 case "$repo" in
-	hello-world | buildpack-deps) disclaimer='' ;;
+	buildpack-deps | docker | hello-world | hylang) disclaimer='' ;;
 	*) disclaimer=" (not to be confused with any official \`$repo\` image provided by \`$repo\` upstream)" ;;
 esac
 
@@ -72,17 +74,9 @@ toTest=(
 	# "image badge link/href"
 	# "badge test URL (to determine whether badge applies)"
 
-	"https://img.shields.io/github/workflow/status/$githubRepoName/GitHub%20CI/$branch?label=GitHub%20CI"
+	"https://img.shields.io/github/actions/workflow/status/$githubRepoName/ci.yml?branch=$branch&label=GitHub%20CI"
 	"https://github.com/$githubRepoName/actions?query=workflow%3A%22GitHub+CI%22+branch%3A$branch"
 	"https://github.com/$githubRepoName/blob/$branch/.github/workflows/ci.yml"
-
-	"https://img.shields.io/travis/$githubRepoName/$branch.svg?label=Travis%20CI"
-	"https://travis-ci.org/$githubRepoName/branches"
-	"https://github.com/$githubRepoName/blob/$branch/.travis.yml"
-
-	"https://img.shields.io/appveyor/ci/$githubRepoName/$branch.svg?label=AppVeyor"
-	"https://ci.appveyor.com/project/$githubRepoName"
-	"https://github.com/$githubRepoName/blob/$branch/.appveyor.yml"
 
 	"https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/update.sh/job/$repo.svg?label=Automated%20update.sh"
 	"https://doi-janky.infosiftr.net/job/update.sh/job/$repo/"

@@ -11,7 +11,7 @@ PHP is a server-side scripting language designed for web development, but which 
 ### Create a `Dockerfile` in your PHP project
 
 ```dockerfile
-FROM %%IMAGE%%:7.4-cli
+FROM %%IMAGE%%:8.2-cli
 COPY . /usr/src/myapp
 WORKDIR /usr/src/myapp
 CMD [ "php", "./your-script.php" ]
@@ -29,7 +29,7 @@ $ docker run -it --rm --name my-running-app my-php-app
 For many simple, single file projects, you may find it inconvenient to write a complete `Dockerfile`. In such cases, you can run a PHP script by using the PHP Docker image directly:
 
 ```console
-$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp %%IMAGE%%:7.4-cli php your-script.php
+$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp %%IMAGE%%:8.2-cli php your-script.php
 ```
 
 ## How to install more PHP extensions
@@ -41,7 +41,7 @@ We provide the helper scripts `docker-php-ext-configure`, `docker-php-ext-instal
 In order to keep the images smaller, PHP's source is kept in a compressed tar file. To facilitate linking of PHP's source with any extension, we also provide the helper script `docker-php-source` to easily extract the tar or delete the extracted source. Note: if you do use `docker-php-source` to extract the source, be sure to delete it in the same layer of the docker image.
 
 ```Dockerfile
-FROM %%IMAGE%%:7.4-cli
+FROM %%IMAGE%%:8.2-cli
 RUN docker-php-source extract \
 	# do important things \
 	&& docker-php-source delete
@@ -52,9 +52,9 @@ RUN docker-php-source extract \
 For example, if you want to have a PHP-FPM image with the `gd` extension, you can inherit the base image that you like, and write your own `Dockerfile` like this:
 
 ```dockerfile
-FROM %%IMAGE%%:7.4-fpm
+FROM %%IMAGE%%:8.2-fpm
 RUN apt-get update && apt-get install -y \
-		libfreetype6-dev \
+		libfreetype-dev \
 		libjpeg62-turbo-dev \
 		libpng-dev \
 	&& docker-php-ext-configure gd --with-freetype --with-jpeg \
@@ -76,59 +76,57 @@ Some extensions are compiled by default. This depends on the PHP version you are
 Some extensions are not provided with the PHP source, but are instead available through [PECL](https://pecl.php.net/). To install a PECL extension, use `pecl install` to download and compile it, then use `docker-php-ext-enable` to enable it:
 
 ```dockerfile
-FROM %%IMAGE%%:7.4-cli
-RUN pecl install redis-5.1.1 \
-	&& pecl install xdebug-2.8.1 \
+FROM %%IMAGE%%:8.2-cli
+RUN pecl install redis-5.3.7 \
+	&& pecl install xdebug-3.2.1 \
 	&& docker-php-ext-enable redis xdebug
 ```
 
 ```dockerfile
-FROM %%IMAGE%%:5.6-cli
-RUN apt-get update && apt-get install -y libmemcached-dev zlib1g-dev \
-	&& pecl install memcached-2.2.0 \
+FROM %%IMAGE%%:8.2-cli
+RUN apt-get update && apt-get install -y libmemcached-dev libssl-dev zlib1g-dev \
+	&& pecl install memcached-3.2.0 \
 	&& docker-php-ext-enable memcached
 ```
 
-It is *strongly* recommended that users use an explicit version number in their `pecl install` invocations to ensure proper PHP version compatibility (PECL does not check the PHP version compatiblity when choosing a version of the extension to install, but does when trying to install it).
+It is *strongly* recommended that users use an explicit version number in their `pecl install` invocations to ensure proper PHP version compatibility (PECL does not check the PHP version compatibility when choosing a version of the extension to install, but does when trying to install it). Beyond the compatibility issue, it's also a good practice to ensure you know when your dependencies receive updates and can control those updates directly.
 
-For example, `memcached-2.2.0` has no PHP version constraints (https://pecl.php.net/package/memcached/2.2.0), but `memcached-3.1.4` requires PHP 7.0.0 or newer (https://pecl.php.net/package/memcached/3.1.4). When doing `pecl install memcached` (no specific version) on PHP 5.6, PECL will try to install the latest release and fail.
-
-Beyond the compatibility issue, it's also a good practice to ensure you know when your dependencies receive updates and can control those updates directly.
-
-Unlike PHP core extensions, PECL extensions should be installed in series to fail properly if something went wrong. Otherwise errors are just skipped by PECL. For example, `pecl install memcached-3.1.4 && pecl install redis-5.1.1` instead of `pecl install memcached-3.1.4 redis-5.1.1`. However, `docker-php-ext-enable memcached redis` is fine to be all in one command.
+Unlike PHP core extensions, PECL extensions should be installed in series to fail properly if something went wrong. Otherwise errors are just skipped by PECL. For example, `pecl install memcached-3.2.0 && pecl install redis-5.3.7` instead of `pecl install memcached-3.2.0 redis-5.3.7`. However, `docker-php-ext-enable memcached redis` is fine to be all in one command.
 
 ### Other extensions
 
 Some extensions are not provided via either Core or PECL; these can be installed too, although the process is less automated:
 
 ```dockerfile
-FROM %%IMAGE%%:5.6-cli
-RUN curl -fsSL 'https://xcache.lighttpd.net/pub/Releases/3.2.0/xcache-3.2.0.tar.gz' -o xcache.tar.gz \
-	&& mkdir -p xcache \
-	&& tar -xf xcache.tar.gz -C xcache --strip-components=1 \
-	&& rm xcache.tar.gz \
+FROM %%IMAGE%%:8.2-cli
+RUN curl -fsSL '[url-to-custom-php-module]' -o module-name.tar.gz \
+	&& mkdir -p module-name \
+	&& sha256sum -c "[shasum-value]  module-name.tar.gz" \
+	&& tar -xf module-name.tar.gz -C module-name --strip-components=1 \
+	&& rm module-name.tar.gz \
 	&& ( \
-		cd xcache \
+		cd module-name \
 		&& phpize \
-		&& ./configure --enable-xcache \
+		&& ./configure --enable-module-name \
 		&& make -j "$(nproc)" \
 		&& make install \
 	) \
-	&& rm -r xcache \
-	&& docker-php-ext-enable xcache
+	&& rm -r module-name \
+	&& docker-php-ext-enable module-name
 ```
 
 The `docker-php-ext-*` scripts *can* accept an arbitrary path, but it must be absolute (to disambiguate from built-in extension names), so the above example could also be written as the following:
 
 ```dockerfile
-FROM %%IMAGE%%:5.6-cli
-RUN curl -fsSL 'https://xcache.lighttpd.net/pub/Releases/3.2.0/xcache-3.2.0.tar.gz' -o xcache.tar.gz \
-	&& mkdir -p /tmp/xcache \
-	&& tar -xf xcache.tar.gz -C /tmp/xcache --strip-components=1 \
-	&& rm xcache.tar.gz \
-	&& docker-php-ext-configure /tmp/xcache --enable-xcache \
-	&& docker-php-ext-install /tmp/xcache \
-	&& rm -r /tmp/xcache
+FROM %%IMAGE%%:8.2-cli
+RUN curl -fsSL '[url-to-custom-php-module]' -o module-name.tar.gz \
+	&& mkdir -p /tmp/module-name \
+	&& sha256sum -c "[shasum-value]  module-name.tar.gz" \
+	&& tar -xf module-name.tar.gz -C /tmp/module-name --strip-components=1 \
+	&& rm module-name.tar.gz \
+	&& docker-php-ext-configure /tmp/module-name --enable-module-name \
+	&& docker-php-ext-install /tmp/module-name \
+	&& rm -r /tmp/module-name
 ```
 
 ## Running as an arbitrary user
@@ -163,7 +161,7 @@ The default config can be customized by copying configuration files into the `$P
 ### Example
 
 ```dockerfile
-FROM %%IMAGE%%:7.4-fpm-alpine
+FROM %%IMAGE%%:8.2-fpm-alpine
 
 # Use the default production configuration
 RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"

@@ -15,3 +15,7 @@ Run this from the directory of the Gradle project you want to build.
 Note the above command runs using uid/gid 1000 (user *gradle*) to avoid running as root.
 
 If you are mounting a volume and the uid/gid running Docker is not *1000*, you should run as user *root* (`-u root`). *root* is also the default, so you can also simply not specify a user.
+
+## Java 21 support
+
+Java 21 does not currently support build customizations using Kotlin (such as using the `kotlin-dsl` plugin in a buildSrc script). Full support for Java 21 will come in a future Gradle release.
