@@ -37,9 +37,9 @@ WARNING:
 -	[`jazzy-ros-core`, `jazzy-ros-core-noble`](https://github.com/osrf/docker_images/blob/74e321bc1837c29f223a6d54895aa3c8eb184119/ros/jazzy/ubuntu/noble/ros-core/Dockerfile)
 -	[`jazzy-ros-base`, `jazzy-ros-base-noble`, `jazzy`, `latest`](https://github.com/osrf/docker_images/blob/0038f1c3a11aa0fc573d698b39ab5c204aad5a40/ros/jazzy/ubuntu/noble/ros-base/Dockerfile)
 -	[`jazzy-perception`, `jazzy-perception-noble`](https://github.com/osrf/docker_images/blob/0038f1c3a11aa0fc573d698b39ab5c204aad5a40/ros/jazzy/ubuntu/noble/perception/Dockerfile)
--	[`rolling-ros-core`, `rolling-ros-core-noble`](https://github.com/osrf/docker_images/blob/026069e4a10a7e6d390db2bb0ce9d3f704e93919/ros/rolling/ubuntu/noble/ros-core/Dockerfile)
--	[`rolling-ros-base`, `rolling-ros-base-noble`, `rolling`](https://github.com/osrf/docker_images/blob/026069e4a10a7e6d390db2bb0ce9d3f704e93919/ros/rolling/ubuntu/noble/ros-base/Dockerfile)
--	[`rolling-perception`, `rolling-perception-noble`](https://github.com/osrf/docker_images/blob/026069e4a10a7e6d390db2bb0ce9d3f704e93919/ros/rolling/ubuntu/noble/perception/Dockerfile)
+-	[`rolling-ros-core`, `rolling-ros-core-noble`](https://github.com/osrf/docker_images/blob/7f98ddd88d872299c45b60c8bcd70d4eb6665222/ros/rolling/ubuntu/noble/ros-core/Dockerfile)
+-	[`rolling-ros-base`, `rolling-ros-base-noble`, `rolling`](https://github.com/osrf/docker_images/blob/7f98ddd88d872299c45b60c8bcd70d4eb6665222/ros/rolling/ubuntu/noble/ros-base/Dockerfile)
+-	[`rolling-perception`, `rolling-perception-noble`](https://github.com/osrf/docker_images/blob/7f98ddd88d872299c45b60c8bcd70d4eb6665222/ros/rolling/ubuntu/noble/perception/Dockerfile)
 
 # Quick reference (cont.)
 
