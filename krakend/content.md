@@ -9,6 +9,7 @@ KrakenD is lightweight and straightforward as it only requires writing the confi
 All features are designed to offer extraordinary performance and infinite scalability.
 
 ## How to use this image
+
 KrakenD only needs a single configuration file to create an API Gateway, although you can have a complex setup reflecting your organization structure. The configuration file(s) can live anywhere in the container, but the default location is `/etc/krakend`.
 
 To use the image, `COPY` your `krakend.json` file inside the container or mount it using a volume. The configuration is checked only once during the startup and never used again. Don't have a config file yet? Generate it with the [KrakenD Designer UI](https://designer.krakend.io).
@@ -16,6 +17,7 @@ To use the image, `COPY` your `krakend.json` file inside the container or mount 
 ⚠️ **NOTICE**: KrakenD does not use live reload when your configuration changes. Restart the container.
 
 ### Quick start
+
 You can start an empty gateway with a health check with the following commands:
 
 ```console
@@ -26,12 +28,13 @@ $ curl http://localhost:8080/__health
 ```
 
 ### More Examples
-The following are several examples of running KrakenD. By default, the command `run` is executed, but you can pass
-other commands and flags at the end of the run command.
+
+The following are several examples of running KrakenD. By default, the command `run` is executed, but you can pass other commands and flags at the end of the run command.
 
 The configuration files are taken from the current directory (`$PWD`). Therefore, all examples expect to find at least the file `krakend.json`.
 
-####  Run with the debug enabled (flag `-d`):
+#### Run with the debug enabled (flag `-d`):
+
 This flag is **SAFE to use in production**. It's meant to enable KrakenD as a fake backend itself by enabling a [`/__debug` endpoint](https://www.krakend.io/docs/endpoints/debug-endpoint/)
 
 ```console
@@ -39,15 +42,16 @@ This flag is **SAFE to use in production**. It's meant to enable KrakenD as a fa
 ```
 
 #### Checking the syntax of your configuration file
+
 See the [check command](https://www.krakend.io/docs/commands/check/)
 
 ```console
     docker run -it -v $PWD:/etc/krakend/ %%IMAGE%% check --config krakend.json
 ```
+
 #### Show the help:
 
-    docker run -it %%IMAGE%% help
-
+	docker run -it %%IMAGE%% help
 
 ### Building your custom KrakenD image
 
@@ -85,22 +89,23 @@ RUN FC_ENABLE=1 \
 FROM %%IMAGE%%:<version>
 COPY --from=builder /tmp/krakend.json .
 ```
+
 Then build with `docker build -t my_krakend .`
 
 The configuration above assumes you have a folder structure like the following:
-```
-.
-├── config
-│   ├── partials
-│   ├── settings
-│   │   └── env.json
-│   └── templates
-│       └── some.tmpl
-├── Dockerfile
-└── krakend.tmpl
-```
+
+	.
+	├── config
+	│   ├── partials
+	│   ├── settings
+	│   │   └── env.json
+	│   └── templates
+	│       └── some.tmpl
+	├── Dockerfile
+	└── krakend.tmpl
 
 ### Docker Compose example
+
 Finally, a simple `docker-compose` file to start KrakenD with your API would be:
 
 ```yaml
@@ -134,10 +139,12 @@ services:
     command:
       command: ["krakend", "run", "-c", "krakend.tmpl", "-d"]
 ```
+
 ### Container permissions and commands
+
 All `krakend` commands are executed as `krakend` user (uid=1000) through `su-exec`, and the rest of the commands (e.g., `sh`) are executed as root.
 
 You can directly use sub-commands of `krakend` like `run`, `help`, `version`, `check`, `check-plugin` or `validate` as the entrypoint will add the `krakend` command automatically. For example, the following lines are equivalent:
 
-    docker run -it %%IMAGE%% help
-    docker run -it %%IMAGE%% krakend help
+	docker run -it %%IMAGE%% help
+	docker run -it %%IMAGE%% krakend help
