@@ -25,7 +25,7 @@ WARNING:
 # Supported tags and respective `Dockerfile` links
 
 -	[`1.4.5`, `1.4`, `1`, `latest`, `1.4.5-bookworm`, `1.4-bookworm`, `1-bookworm`, `bookworm`](https://github.com/jessfraz/irssi/blob/b8ea417aaa1a29a6003756627d748450a5bf6abe/debian/Dockerfile)
--	[`1.4.5-alpine`, `1.4-alpine`, `1-alpine`, `alpine`, `1.4.5-alpine3.18`, `1.4-alpine3.18`, `1-alpine3.18`, `alpine3.18`](https://github.com/jessfraz/irssi/blob/a3a3f65ed35b33c791a86af4383b5129ab7b7721/alpine/Dockerfile)
+-	[`1.4.5-alpine`, `1.4-alpine`, `1-alpine`, `alpine`, `1.4.5-alpine3.20`, `1.4-alpine3.20`, `1-alpine3.20`, `alpine3.20`](https://github.com/jessfraz/irssi/blob/ce043e84f00a74532313e8a6203bc8b96194c28a/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -33,7 +33,7 @@ WARNING:
 	[https://github.com/jessfraz/irssi/issues](https://github.com/jessfraz/irssi/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/irssi/), [`arm32v5`](https://hub.docker.com/r/arm32v5/irssi/), [`arm32v6`](https://hub.docker.com/r/arm32v6/irssi/), [`arm32v7`](https://hub.docker.com/r/arm32v7/irssi/), [`arm64v8`](https://hub.docker.com/r/arm64v8/irssi/), [`i386`](https://hub.docker.com/r/i386/irssi/), [`mips64le`](https://hub.docker.com/r/mips64le/irssi/), [`ppc64le`](https://hub.docker.com/r/ppc64le/irssi/), [`s390x`](https://hub.docker.com/r/s390x/irssi/)
+	[`amd64`](https://hub.docker.com/r/amd64/irssi/), [`arm32v5`](https://hub.docker.com/r/arm32v5/irssi/), [`arm32v6`](https://hub.docker.com/r/arm32v6/irssi/), [`arm32v7`](https://hub.docker.com/r/arm32v7/irssi/), [`arm64v8`](https://hub.docker.com/r/arm64v8/irssi/), [`i386`](https://hub.docker.com/r/i386/irssi/), [`mips64le`](https://hub.docker.com/r/mips64le/irssi/), [`ppc64le`](https://hub.docker.com/r/ppc64le/irssi/), [`riscv64`](https://hub.docker.com/r/riscv64/irssi/), [`s390x`](https://hub.docker.com/r/s390x/irssi/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/irssi/` directory](https://github.com/docker-library/repo-info/blob/master/repos/irssi) ([history](https://github.com/docker-library/repo-info/commits/master/repos/irssi))  

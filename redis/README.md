@@ -24,12 +24,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.2.5`, `7.2`, `7`, `latest`, `7.2.5-bookworm`, `7.2-bookworm`, `7-bookworm`, `bookworm`](https://github.com/docker-library/redis/blob/b50eb50d936041804b28703bd84d379ff55ae2af/7.2/debian/Dockerfile)
--	[`7.2.5-alpine`, `7.2-alpine`, `7-alpine`, `alpine`, `7.2.5-alpine3.19`, `7.2-alpine3.19`, `7-alpine3.19`, `alpine3.19`](https://github.com/docker-library/redis/blob/b50eb50d936041804b28703bd84d379ff55ae2af/7.2/alpine/Dockerfile)
--	[`7.0.15`, `7.0`, `7.0.15-bookworm`, `7.0-bookworm`](https://github.com/docker-library/redis/blob/f623bf8a6fef29b1459a29ff9f852c0f88d76b5a/7.0/debian/Dockerfile)
--	[`7.0.15-alpine`, `7.0-alpine`, `7.0.15-alpine3.19`, `7.0-alpine3.19`](https://github.com/docker-library/redis/blob/b628649ceee29da4c28c889417f264c219ca2afb/7.0/alpine/Dockerfile)
--	[`6.2.14`, `6.2`, `6`, `6.2.14-bookworm`, `6.2-bookworm`, `6-bookworm`](https://github.com/docker-library/redis/blob/f623bf8a6fef29b1459a29ff9f852c0f88d76b5a/6.2/debian/Dockerfile)
--	[`6.2.14-alpine`, `6.2-alpine`, `6-alpine`, `6.2.14-alpine3.19`, `6.2-alpine3.19`, `6-alpine3.19`](https://github.com/docker-library/redis/blob/b628649ceee29da4c28c889417f264c219ca2afb/6.2/alpine/Dockerfile)
+-	[`7.2.5`, `7.2`, `7`, `latest`, `7.2.5-bookworm`, `7.2-bookworm`, `7-bookworm`, `bookworm`](https://github.com/docker-library/redis/blob/5f08363e6d64b97a0c2e651f4bdcec6e71a32ab4/7.2/debian/Dockerfile)
+-	[`7.2.5-alpine`, `7.2-alpine`, `7-alpine`, `alpine`, `7.2.5-alpine3.20`, `7.2-alpine3.20`, `7-alpine3.20`, `alpine3.20`](https://github.com/docker-library/redis/blob/5f08363e6d64b97a0c2e651f4bdcec6e71a32ab4/7.2/alpine/Dockerfile)
+-	[`7.0.15`, `7.0`, `7.0.15-bookworm`, `7.0-bookworm`](https://github.com/docker-library/redis/blob/5f08363e6d64b97a0c2e651f4bdcec6e71a32ab4/7.0/debian/Dockerfile)
+-	[`7.0.15-alpine`, `7.0-alpine`, `7.0.15-alpine3.20`, `7.0-alpine3.20`](https://github.com/docker-library/redis/blob/5f08363e6d64b97a0c2e651f4bdcec6e71a32ab4/7.0/alpine/Dockerfile)
+-	[`6.2.14`, `6.2`, `6`, `6.2.14-bookworm`, `6.2-bookworm`, `6-bookworm`](https://github.com/docker-library/redis/blob/5f08363e6d64b97a0c2e651f4bdcec6e71a32ab4/6.2/debian/Dockerfile)
+-	[`6.2.14-alpine`, `6.2-alpine`, `6-alpine`, `6.2.14-alpine3.20`, `6.2-alpine3.20`, `6-alpine3.20`](https://github.com/docker-library/redis/blob/5f08363e6d64b97a0c2e651f4bdcec6e71a32ab4/6.2/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -37,7 +37,7 @@ WARNING:
 	[https://github.com/docker-library/redis/issues](https://github.com/docker-library/redis/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/redis/), [`arm32v5`](https://hub.docker.com/r/arm32v5/redis/), [`arm32v6`](https://hub.docker.com/r/arm32v6/redis/), [`arm32v7`](https://hub.docker.com/r/arm32v7/redis/), [`arm64v8`](https://hub.docker.com/r/arm64v8/redis/), [`i386`](https://hub.docker.com/r/i386/redis/), [`mips64le`](https://hub.docker.com/r/mips64le/redis/), [`ppc64le`](https://hub.docker.com/r/ppc64le/redis/), [`s390x`](https://hub.docker.com/r/s390x/redis/)
+	[`amd64`](https://hub.docker.com/r/amd64/redis/), [`arm32v5`](https://hub.docker.com/r/arm32v5/redis/), [`arm32v6`](https://hub.docker.com/r/arm32v6/redis/), [`arm32v7`](https://hub.docker.com/r/arm32v7/redis/), [`arm64v8`](https://hub.docker.com/r/arm64v8/redis/), [`i386`](https://hub.docker.com/r/i386/redis/), [`mips64le`](https://hub.docker.com/r/mips64le/redis/), [`ppc64le`](https://hub.docker.com/r/ppc64le/redis/), [`riscv64`](https://hub.docker.com/r/riscv64/redis/), [`s390x`](https://hub.docker.com/r/s390x/redis/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/redis/` directory](https://github.com/docker-library/repo-info/blob/master/repos/redis) ([history](https://github.com/docker-library/repo-info/commits/master/repos/redis))  
