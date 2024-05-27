@@ -31,7 +31,7 @@ In order to start an ArangoDB instance, run:
 unix> docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 -d --name arangodb-instance %%IMAGE%%
 ```
 
-On macOS/ARM, the processor architecture chosen by default may be x86-64 (`linux/amd64`), which is not optimal. You can pass the `--platform` flag to the `docker run` command to specify the appropriate operating system and architecture for the container (`linux/arm64/v8`):
+Docker chooses the processor architecture for the image that matches your host CPU by default. If this is not the case, for example, because you have the `DOCKER_DEFAULT_PLATFORM` environment variable set to a different architecture, you can pass the `--platform` flag to the `docker run` command to specify the appropriate operating system and architecture for the container. For x86-64, use `linux/amd64`. On ARM, especially Apple silicon with no emulation for the required AVX instruction set extension, use `linux/arm64/v8`:
 
 ```console
 docker run --platform linux/arm64/v8 -p 8529:8529 -e ARANGO_RANDOM_ROOT_PASSWORD=1 arangodb-instance %%IMAGE%%
