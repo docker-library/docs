@@ -24,7 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `base`](https://github.com/clearlinux/docker-brew-clearlinux/blob/9260b23005ad461a3b0f8cf552ab03a9edd92ce0/Dockerfile)
+-	[`latest`, `base`](https://github.com/clearlinux/docker-brew-clearlinux/blob/de7b43d93c25cda5141e1329b7dea0c0e810dd75/Dockerfile)
 
 # Quick reference (cont.)
 
