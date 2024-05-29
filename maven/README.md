@@ -58,6 +58,7 @@ WARNING:
 -	[`3.9.7-sapmachine-11`, `3.9-sapmachine-11`, `3-sapmachine-11`](https://github.com/carlossg/docker-maven/blob/43cc67eb6ec38bfc7394a51f43e39ca3f24af65c/sapmachine-11/Dockerfile)
 -	[`3.9.7-sapmachine-17`, `3.9-sapmachine-17`, `3-sapmachine-17`](https://github.com/carlossg/docker-maven/blob/43cc67eb6ec38bfc7394a51f43e39ca3f24af65c/sapmachine-17/Dockerfile)
 -	[`3.9.7-sapmachine-21`, `3.9.7-sapmachine`, `3.9-sapmachine-21`, `3.9-sapmachine`, `3-sapmachine-21`, `3-sapmachine`, `sapmachine`](https://github.com/carlossg/docker-maven/blob/43cc67eb6ec38bfc7394a51f43e39ca3f24af65c/sapmachine-21/Dockerfile)
+-	[`3.9.7-sapmachine-22`, `3.9-sapmachine-22`, `3-sapmachine-22`](https://github.com/carlossg/docker-maven/blob/cec36dcb2ace0c70dddad6a12cde5d305a6dfe06/sapmachine-22/Dockerfile)
 
 # Quick reference (cont.)
 
