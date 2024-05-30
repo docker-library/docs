@@ -25,9 +25,11 @@ WARNING:
 # Supported tags and respective `Dockerfile` links
 
 -	[`5.1.2`, `5.1`, `5`, `latest`, `5.1.2-bookworm`, `5.1-bookworm`, `5-bookworm`, `bookworm`](https://github.com/docker-library/redmine/blob/2ab2ec39c515e0f4ef96674751d1363161aa63d4/5.1/bookworm/Dockerfile)
--	[`5.1.2-alpine3.18`, `5.1-alpine3.18`, `5-alpine3.18`, `alpine3.18`, `5.1.2-alpine`, `5.1-alpine`, `5-alpine`, `alpine`](https://github.com/docker-library/redmine/blob/51b7921366b46e2dd5a7f9629b933a3e7a68fdb1/5.1/alpine3.18/Dockerfile)
+-	[`5.1.2-alpine3.20`, `5.1-alpine3.20`, `5-alpine3.20`, `alpine3.20`, `5.1.2-alpine`, `5.1-alpine`, `5-alpine`, `alpine`](https://github.com/docker-library/redmine/blob/c8dc403ae41f19c6017daac7596bc14a6ae20207/5.1/alpine3.20/Dockerfile)
+-	[`5.1.2-alpine3.19`, `5.1-alpine3.19`, `5-alpine3.19`, `alpine3.19`](https://github.com/docker-library/redmine/blob/c8dc403ae41f19c6017daac7596bc14a6ae20207/5.1/alpine3.19/Dockerfile)
 -	[`5.0.8`, `5.0`, `5.0.8-bookworm`, `5.0-bookworm`](https://github.com/docker-library/redmine/blob/2ab2ec39c515e0f4ef96674751d1363161aa63d4/5.0/bookworm/Dockerfile)
--	[`5.0.8-alpine3.18`, `5.0-alpine3.18`, `5.0.8-alpine`, `5.0-alpine`](https://github.com/docker-library/redmine/blob/a47825ab3251935beedb9d83ecdc80e78d1ccf28/5.0/alpine3.18/Dockerfile)
+-	[`5.0.8-alpine3.20`, `5.0-alpine3.20`, `5.0.8-alpine`, `5.0-alpine`](https://github.com/docker-library/redmine/blob/c8dc403ae41f19c6017daac7596bc14a6ae20207/5.0/alpine3.20/Dockerfile)
+-	[`5.0.8-alpine3.19`, `5.0-alpine3.19`](https://github.com/docker-library/redmine/blob/c8dc403ae41f19c6017daac7596bc14a6ae20207/5.0/alpine3.19/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -35,7 +37,7 @@ WARNING:
 	[https://github.com/docker-library/redmine/issues](https://github.com/docker-library/redmine/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/redmine/), [`arm32v5`](https://hub.docker.com/r/arm32v5/redmine/), [`arm32v6`](https://hub.docker.com/r/arm32v6/redmine/), [`arm32v7`](https://hub.docker.com/r/arm32v7/redmine/), [`arm64v8`](https://hub.docker.com/r/arm64v8/redmine/), [`i386`](https://hub.docker.com/r/i386/redmine/), [`mips64le`](https://hub.docker.com/r/mips64le/redmine/), [`ppc64le`](https://hub.docker.com/r/ppc64le/redmine/), [`s390x`](https://hub.docker.com/r/s390x/redmine/)
+	[`amd64`](https://hub.docker.com/r/amd64/redmine/), [`arm32v5`](https://hub.docker.com/r/arm32v5/redmine/), [`arm32v6`](https://hub.docker.com/r/arm32v6/redmine/), [`arm32v7`](https://hub.docker.com/r/arm32v7/redmine/), [`arm64v8`](https://hub.docker.com/r/arm64v8/redmine/), [`i386`](https://hub.docker.com/r/i386/redmine/), [`mips64le`](https://hub.docker.com/r/mips64le/redmine/), [`ppc64le`](https://hub.docker.com/r/ppc64le/redmine/), [`riscv64`](https://hub.docker.com/r/riscv64/redmine/), [`s390x`](https://hub.docker.com/r/s390x/redmine/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/redmine/` directory](https://github.com/docker-library/repo-info/blob/master/repos/redmine) ([history](https://github.com/docker-library/repo-info/commits/master/repos/redmine))  
