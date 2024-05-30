@@ -26,10 +26,10 @@ WARNING:
 
 -	[`9.6.1`, `9.6`, `9`, `latest`](https://github.com/apache/solr-docker/blob/9cd850b72309de05169544395c83a85b329d6b86/9.6/Dockerfile)
 -	[`9.6.1-slim`, `9.6-slim`, `9-slim`, `slim`](https://github.com/apache/solr-docker/blob/9cd850b72309de05169544395c83a85b329d6b86/9.6-slim/Dockerfile)
--	[`9.5.0`, `9.5`](https://github.com/apache/solr-docker/blob/9cd850b72309de05169544395c83a85b329d6b86/9.5/Dockerfile)
--	[`9.5.0-slim`, `9.5-slim`](https://github.com/apache/solr-docker/blob/9cd850b72309de05169544395c83a85b329d6b86/9.5-slim/Dockerfile)
--	[`8.11.3`, `8.11`, `8`](https://github.com/apache/solr-docker/blob/9cd850b72309de05169544395c83a85b329d6b86/8.11/Dockerfile)
--	[`8.11.3-slim`, `8.11-slim`, `8-slim`](https://github.com/apache/solr-docker/blob/9cd850b72309de05169544395c83a85b329d6b86/8.11-slim/Dockerfile)
+-	[`9.5.0`, `9.5`](https://github.com/apache/solr-docker/blob/a17dd804fead2a6581f8e4c116451ed268f32126/9.5/Dockerfile)
+-	[`9.5.0-slim`, `9.5-slim`](https://github.com/apache/solr-docker/blob/a17dd804fead2a6581f8e4c116451ed268f32126/9.5-slim/Dockerfile)
+-	[`8.11.3`, `8.11`, `8`](https://github.com/apache/solr-docker/blob/7156fa15807945939cd2a5525bbb63219da07b1e/8.11/Dockerfile)
+-	[`8.11.3-slim`, `8.11-slim`, `8-slim`](https://github.com/apache/solr-docker/blob/7156fa15807945939cd2a5525bbb63219da07b1e/8.11-slim/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -37,7 +37,7 @@ WARNING:
 	[The Solr Users mailing list](https://solr.apache.org/community.html#mailing-lists-chat)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/solr/), [`arm32v7`](https://hub.docker.com/r/arm32v7/solr/), [`arm64v8`](https://hub.docker.com/r/arm64v8/solr/), [`ppc64le`](https://hub.docker.com/r/ppc64le/solr/), [`s390x`](https://hub.docker.com/r/s390x/solr/)
+	[`amd64`](https://hub.docker.com/r/amd64/solr/), [`arm64v8`](https://hub.docker.com/r/arm64v8/solr/), [`ppc64le`](https://hub.docker.com/r/ppc64le/solr/), [`s390x`](https://hub.docker.com/r/s390x/solr/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/solr/` directory](https://github.com/docker-library/repo-info/blob/master/repos/solr) ([history](https://github.com/docker-library/repo-info/commits/master/repos/solr))  

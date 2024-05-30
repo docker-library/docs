@@ -28,26 +28,26 @@ WARNING:
 
 ## Simple Tags
 
--	[`2.8.0-alpine`, `2.8-alpine`, `2-alpine`, `alpine`](https://github.com/caddyserver/caddy-docker/blob/8e45629b3f219609ebd9ae2dfb70df0e73765b5f/2.8/alpine/Dockerfile)
--	[`2.8.0-builder-alpine`, `2.8-builder-alpine`, `2-builder-alpine`, `builder-alpine`](https://github.com/caddyserver/caddy-docker/blob/8e45629b3f219609ebd9ae2dfb70df0e73765b5f/2.8/builder/Dockerfile)
--	[`2.8.0-windowsservercore-1809`, `2.8-windowsservercore-1809`, `2-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/caddyserver/caddy-docker/blob/8e45629b3f219609ebd9ae2dfb70df0e73765b5f/2.8/windows/1809/Dockerfile)
--	[`2.8.0-windowsservercore-ltsc2022`, `2.8-windowsservercore-ltsc2022`, `2-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`](https://github.com/caddyserver/caddy-docker/blob/8e45629b3f219609ebd9ae2dfb70df0e73765b5f/2.8/windows/ltsc2022/Dockerfile)
--	[`2.8.0-builder-windowsservercore-1809`, `2.8-builder-windowsservercore-1809`, `2-builder-windowsservercore-1809`, `builder-windowsservercore-1809`](https://github.com/caddyserver/caddy-docker/blob/8e45629b3f219609ebd9ae2dfb70df0e73765b5f/2.8/windows-builder/1809/Dockerfile)
--	[`2.8.0-builder-windowsservercore-ltsc2022`, `2.8-builder-windowsservercore-ltsc2022`, `2-builder-windowsservercore-ltsc2022`, `builder-windowsservercore-ltsc2022`](https://github.com/caddyserver/caddy-docker/blob/8e45629b3f219609ebd9ae2dfb70df0e73765b5f/2.8/windows-builder/ltsc2022/Dockerfile)
+-	[`2.8.1-alpine`, `2.8-alpine`, `2-alpine`, `alpine`](https://github.com/caddyserver/caddy-docker/blob/570892add07e6249c94e89c36b67e0e01b0b656d/2.8/alpine/Dockerfile)
+-	[`2.8.1-builder-alpine`, `2.8-builder-alpine`, `2-builder-alpine`, `builder-alpine`](https://github.com/caddyserver/caddy-docker/blob/570892add07e6249c94e89c36b67e0e01b0b656d/2.8/builder/Dockerfile)
+-	[`2.8.1-windowsservercore-1809`, `2.8-windowsservercore-1809`, `2-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/caddyserver/caddy-docker/blob/570892add07e6249c94e89c36b67e0e01b0b656d/2.8/windows/1809/Dockerfile)
+-	[`2.8.1-windowsservercore-ltsc2022`, `2.8-windowsservercore-ltsc2022`, `2-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`](https://github.com/caddyserver/caddy-docker/blob/570892add07e6249c94e89c36b67e0e01b0b656d/2.8/windows/ltsc2022/Dockerfile)
+-	[`2.8.1-builder-windowsservercore-1809`, `2.8-builder-windowsservercore-1809`, `2-builder-windowsservercore-1809`, `builder-windowsservercore-1809`](https://github.com/caddyserver/caddy-docker/blob/570892add07e6249c94e89c36b67e0e01b0b656d/2.8/windows-builder/1809/Dockerfile)
+-	[`2.8.1-builder-windowsservercore-ltsc2022`, `2.8-builder-windowsservercore-ltsc2022`, `2-builder-windowsservercore-ltsc2022`, `builder-windowsservercore-ltsc2022`](https://github.com/caddyserver/caddy-docker/blob/570892add07e6249c94e89c36b67e0e01b0b656d/2.8/windows-builder/ltsc2022/Dockerfile)
 
 ## Shared Tags
 
--	`2.8.0`, `2.8`, `2`, `latest`:
-	-	[`2.8.0-alpine`](https://github.com/caddyserver/caddy-docker/blob/8e45629b3f219609ebd9ae2dfb70df0e73765b5f/2.8/alpine/Dockerfile)
-	-	[`2.8.0-windowsservercore-1809`](https://github.com/caddyserver/caddy-docker/blob/8e45629b3f219609ebd9ae2dfb70df0e73765b5f/2.8/windows/1809/Dockerfile)
-	-	[`2.8.0-windowsservercore-ltsc2022`](https://github.com/caddyserver/caddy-docker/blob/8e45629b3f219609ebd9ae2dfb70df0e73765b5f/2.8/windows/ltsc2022/Dockerfile)
--	`2.8.0-builder`, `2.8-builder`, `2-builder`, `builder`:
-	-	[`2.8.0-builder-alpine`](https://github.com/caddyserver/caddy-docker/blob/8e45629b3f219609ebd9ae2dfb70df0e73765b5f/2.8/builder/Dockerfile)
-	-	[`2.8.0-builder-windowsservercore-1809`](https://github.com/caddyserver/caddy-docker/blob/8e45629b3f219609ebd9ae2dfb70df0e73765b5f/2.8/windows-builder/1809/Dockerfile)
-	-	[`2.8.0-builder-windowsservercore-ltsc2022`](https://github.com/caddyserver/caddy-docker/blob/8e45629b3f219609ebd9ae2dfb70df0e73765b5f/2.8/windows-builder/ltsc2022/Dockerfile)
--	`2.8.0-windowsservercore`, `2.8-windowsservercore`, `2-windowsservercore`, `windowsservercore`:
-	-	[`2.8.0-windowsservercore-1809`](https://github.com/caddyserver/caddy-docker/blob/8e45629b3f219609ebd9ae2dfb70df0e73765b5f/2.8/windows/1809/Dockerfile)
-	-	[`2.8.0-windowsservercore-ltsc2022`](https://github.com/caddyserver/caddy-docker/blob/8e45629b3f219609ebd9ae2dfb70df0e73765b5f/2.8/windows/ltsc2022/Dockerfile)
+-	`2.8.1`, `2.8`, `2`, `latest`:
+	-	[`2.8.1-alpine`](https://github.com/caddyserver/caddy-docker/blob/570892add07e6249c94e89c36b67e0e01b0b656d/2.8/alpine/Dockerfile)
+	-	[`2.8.1-windowsservercore-1809`](https://github.com/caddyserver/caddy-docker/blob/570892add07e6249c94e89c36b67e0e01b0b656d/2.8/windows/1809/Dockerfile)
+	-	[`2.8.1-windowsservercore-ltsc2022`](https://github.com/caddyserver/caddy-docker/blob/570892add07e6249c94e89c36b67e0e01b0b656d/2.8/windows/ltsc2022/Dockerfile)
+-	`2.8.1-builder`, `2.8-builder`, `2-builder`, `builder`:
+	-	[`2.8.1-builder-alpine`](https://github.com/caddyserver/caddy-docker/blob/570892add07e6249c94e89c36b67e0e01b0b656d/2.8/builder/Dockerfile)
+	-	[`2.8.1-builder-windowsservercore-1809`](https://github.com/caddyserver/caddy-docker/blob/570892add07e6249c94e89c36b67e0e01b0b656d/2.8/windows-builder/1809/Dockerfile)
+	-	[`2.8.1-builder-windowsservercore-ltsc2022`](https://github.com/caddyserver/caddy-docker/blob/570892add07e6249c94e89c36b67e0e01b0b656d/2.8/windows-builder/ltsc2022/Dockerfile)
+-	`2.8.1-windowsservercore`, `2.8-windowsservercore`, `2-windowsservercore`, `windowsservercore`:
+	-	[`2.8.1-windowsservercore-1809`](https://github.com/caddyserver/caddy-docker/blob/570892add07e6249c94e89c36b67e0e01b0b656d/2.8/windows/1809/Dockerfile)
+	-	[`2.8.1-windowsservercore-ltsc2022`](https://github.com/caddyserver/caddy-docker/blob/570892add07e6249c94e89c36b67e0e01b0b656d/2.8/windows/ltsc2022/Dockerfile)
 
 # Quick reference (cont.)
 

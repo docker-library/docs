@@ -24,14 +24,14 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`v3.0.1-windowsservercore-ltsc2022`, `3.0.1-windowsservercore-ltsc2022`, `v3.0-windowsservercore-ltsc2022`, `3.0-windowsservercore-ltsc2022`, `beaufort-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`](https://github.com/traefik/traefik-library-image/blob/2caca4e184cbc99169ad4043d35e3482548c3410/windows/servercore-ltsc2022/Dockerfile)
--	[`v3.0.1-windowsservercore-1809`, `3.0.1-windowsservercore-1809`, `v3.0-windowsservercore-1809`, `3.0-windowsservercore-1809`, `beaufort-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/traefik/traefik-library-image/blob/2caca4e184cbc99169ad4043d35e3482548c3410/windows/1809/Dockerfile)
--	[`v3.0.1-nanoserver-ltsc2022`, `3.0.1-nanoserver-ltsc2022`, `v3.0-nanoserver-ltsc2022`, `3.0-nanoserver-ltsc2022`, `beaufort-nanoserver-ltsc2022`, `nanoserver-ltsc2022`](https://github.com/traefik/traefik-library-image/blob/2caca4e184cbc99169ad4043d35e3482548c3410/windows/nanoserver-ltsc2022/Dockerfile)
--	[`v3.0.1`, `3.0.1`, `v3.0`, `3.0`, `beaufort`, `latest`](https://github.com/traefik/traefik-library-image/blob/2caca4e184cbc99169ad4043d35e3482548c3410/alpine/Dockerfile)
--	[`v2.11.3-windowsservercore-ltsc2022`, `2.11.3-windowsservercore-ltsc2022`, `v2.11-windowsservercore-ltsc2022`, `2.11-windowsservercore-ltsc2022`, `mimolette-windowsservercore-ltsc2022`](https://github.com/traefik/traefik-library-image/blob/98edda3a6008ef1b658911e757b68bd06ea2ed8d/windows/servercore-ltsc2022/Dockerfile)
--	[`v2.11.3-windowsservercore-1809`, `2.11.3-windowsservercore-1809`, `v2.11-windowsservercore-1809`, `2.11-windowsservercore-1809`, `mimolette-windowsservercore-1809`](https://github.com/traefik/traefik-library-image/blob/98edda3a6008ef1b658911e757b68bd06ea2ed8d/windows/1809/Dockerfile)
--	[`v2.11.3-nanoserver-ltsc2022`, `2.11.3-nanoserver-ltsc2022`, `v2.11-nanoserver-ltsc2022`, `2.11-nanoserver-ltsc2022`, `mimolette-nanoserver-ltsc2022`](https://github.com/traefik/traefik-library-image/blob/98edda3a6008ef1b658911e757b68bd06ea2ed8d/windows/nanoserver-ltsc2022/Dockerfile)
--	[`v2.11.3`, `2.11.3`, `v2.11`, `2.11`, `mimolette`](https://github.com/traefik/traefik-library-image/blob/98edda3a6008ef1b658911e757b68bd06ea2ed8d/alpine/Dockerfile)
+-	[`v3.0.1-windowsservercore-ltsc2022`, `3.0.1-windowsservercore-ltsc2022`, `v3.0-windowsservercore-ltsc2022`, `3.0-windowsservercore-ltsc2022`, `beaufort-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`](https://github.com/traefik/traefik-library-image/blob/bebc5478c3fe376e918db45bc59cc864fd943feb/v3.0/windows/servercore-ltsc2022/Dockerfile)
+-	[`v3.0.1-windowsservercore-1809`, `3.0.1-windowsservercore-1809`, `v3.0-windowsservercore-1809`, `3.0-windowsservercore-1809`, `beaufort-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/traefik/traefik-library-image/blob/bebc5478c3fe376e918db45bc59cc864fd943feb/v3.0/windows/1809/Dockerfile)
+-	[`v3.0.1-nanoserver-ltsc2022`, `3.0.1-nanoserver-ltsc2022`, `v3.0-nanoserver-ltsc2022`, `3.0-nanoserver-ltsc2022`, `beaufort-nanoserver-ltsc2022`, `nanoserver-ltsc2022`](https://github.com/traefik/traefik-library-image/blob/bebc5478c3fe376e918db45bc59cc864fd943feb/v3.0/windows/nanoserver-ltsc2022/Dockerfile)
+-	[`v3.0.1`, `3.0.1`, `v3.0`, `3.0`, `beaufort`, `latest`](https://github.com/traefik/traefik-library-image/blob/bebc5478c3fe376e918db45bc59cc864fd943feb/v3.0/alpine/Dockerfile)
+-	[`v2.11.3-windowsservercore-ltsc2022`, `2.11.3-windowsservercore-ltsc2022`, `v2.11-windowsservercore-ltsc2022`, `2.11-windowsservercore-ltsc2022`, `mimolette-windowsservercore-ltsc2022`](https://github.com/traefik/traefik-library-image/blob/bebc5478c3fe376e918db45bc59cc864fd943feb/v2.11/windows/servercore-ltsc2022/Dockerfile)
+-	[`v2.11.3-windowsservercore-1809`, `2.11.3-windowsservercore-1809`, `v2.11-windowsservercore-1809`, `2.11-windowsservercore-1809`, `mimolette-windowsservercore-1809`](https://github.com/traefik/traefik-library-image/blob/bebc5478c3fe376e918db45bc59cc864fd943feb/v2.11/windows/1809/Dockerfile)
+-	[`v2.11.3-nanoserver-ltsc2022`, `2.11.3-nanoserver-ltsc2022`, `v2.11-nanoserver-ltsc2022`, `2.11-nanoserver-ltsc2022`, `mimolette-nanoserver-ltsc2022`](https://github.com/traefik/traefik-library-image/blob/bebc5478c3fe376e918db45bc59cc864fd943feb/v2.11/windows/nanoserver-ltsc2022/Dockerfile)
+-	[`v2.11.3`, `2.11.3`, `v2.11`, `2.11`, `mimolette`](https://github.com/traefik/traefik-library-image/blob/bebc5478c3fe376e918db45bc59cc864fd943feb/v2.11/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
