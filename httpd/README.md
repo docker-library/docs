@@ -25,7 +25,7 @@ WARNING:
 # Supported tags and respective `Dockerfile` links
 
 -	[`2.4.59`, `2.4`, `2`, `latest`, `2.4.59-bookworm`, `2.4-bookworm`, `2-bookworm`, `bookworm`](https://github.com/docker-library/httpd/blob/b1cb5ded14f70d67aaa987d3267036884a7320ef/2.4/Dockerfile)
--	[`2.4.59-alpine`, `2.4-alpine`, `2-alpine`, `alpine`, `2.4.59-alpine3.19`, `2.4-alpine3.19`, `2-alpine3.19`, `alpine3.19`](https://github.com/docker-library/httpd/blob/082047ae2f5373e3f542f983a7997b8f957ed518/2.4/alpine/Dockerfile)
+-	[`2.4.59-alpine`, `2.4-alpine`, `2-alpine`, `alpine`, `2.4.59-alpine3.20`, `2.4-alpine3.20`, `2-alpine3.20`, `alpine3.20`](https://github.com/docker-library/httpd/blob/a81495e0b89cc2dc06e4ccccb31c40be040ba618/2.4/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -33,7 +33,7 @@ WARNING:
 	[https://github.com/docker-library/httpd/issues](https://github.com/docker-library/httpd/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/httpd/), [`arm32v5`](https://hub.docker.com/r/arm32v5/httpd/), [`arm32v6`](https://hub.docker.com/r/arm32v6/httpd/), [`arm32v7`](https://hub.docker.com/r/arm32v7/httpd/), [`arm64v8`](https://hub.docker.com/r/arm64v8/httpd/), [`i386`](https://hub.docker.com/r/i386/httpd/), [`mips64le`](https://hub.docker.com/r/mips64le/httpd/), [`ppc64le`](https://hub.docker.com/r/ppc64le/httpd/), [`s390x`](https://hub.docker.com/r/s390x/httpd/)
+	[`amd64`](https://hub.docker.com/r/amd64/httpd/), [`arm32v5`](https://hub.docker.com/r/arm32v5/httpd/), [`arm32v6`](https://hub.docker.com/r/arm32v6/httpd/), [`arm32v7`](https://hub.docker.com/r/arm32v7/httpd/), [`arm64v8`](https://hub.docker.com/r/arm64v8/httpd/), [`i386`](https://hub.docker.com/r/i386/httpd/), [`mips64le`](https://hub.docker.com/r/mips64le/httpd/), [`ppc64le`](https://hub.docker.com/r/ppc64le/httpd/), [`riscv64`](https://hub.docker.com/r/riscv64/httpd/), [`s390x`](https://hub.docker.com/r/s390x/httpd/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/httpd/` directory](https://github.com/docker-library/repo-info/blob/master/repos/httpd) ([history](https://github.com/docker-library/repo-info/commits/master/repos/httpd))  
