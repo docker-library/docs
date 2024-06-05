@@ -62,9 +62,7 @@ Try combining this with Telegraf to get dashboards for your infrastructure withi
 
 #### Running as root
 
-Starting in v1.10.5, Chronograf no longer run as the root user by default. If a
-user wants to revert this change they can set `CHRONOGRAF_AS_ROOT=true` as an
-environment variable.
+Starting in v1.10.5, Chronograf no longer run as the root user by default. If a user wants to revert this change they can set `CHRONOGRAF_AS_ROOT=true` as an environment variable.
 
 ## Official Documentation
 

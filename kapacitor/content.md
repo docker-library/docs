@@ -69,9 +69,7 @@ Find more about configuring Kapacitor [here](https://docs.influxdata.com/kapacit
 
 #### Running as root
 
-Starting in v1.7.4, Kapacitor no longer run as the root user by default. If a
-user wants to revert this change they can set `KAPACITOR_AS_ROOT=true` as an
-environment variable.
+Starting in v1.7.4, Kapacitor no longer run as the root user by default. If a user wants to revert this change they can set `KAPACITOR_AS_ROOT=true` as an environment variable.
 
 ### Exposed Ports
 
