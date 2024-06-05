@@ -24,10 +24,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`20.04`, `focal-20240427`, `focal`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-focal-amd64-20240427-c1db7ea8&id=c1db7ea8ab458ee6b6790c818608ec10c66844c2)
--	[`22.04`, `jammy-20240427`, `jammy`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-amd64-20240427-56a11b55&id=56a11b5565de124e1c92cf8d27c79aedd0974922)
--	[`23.10`, `mantic-20240427`, `mantic`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-mantic-amd64-20240427-65be8b79&id=65be8b797a138c7e35a2d97d22f3ffa51153c5af)
--	[`24.04`, `noble-20240429`, `noble`, `latest`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-amd64-20240429-0b1b11a0&id=0b1b11a0895c374406172562ef16db8047108b70)
+-	[`20.04`, `focal-20240530`, `focal`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-focal-amd64-20240530-f351639c&id=f351639c499dcde9b2d9e3aeb2b0344c4a01fc1e)
+-	[`22.04`, `jammy-20240530`, `jammy`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-amd64-20240530-457c5d99&id=457c5d999100a1eb971d38949b3fe798a84ad6fc)
+-	[`23.10`, `mantic-20240530`, `mantic`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-mantic-amd64-20240530-8dcb055f&id=8dcb055fedbfd33752ede65d6534f702a3b81070)
+-	[`24.04`, `noble-20240530`, `noble`, `latest`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-amd64-20240530-7c82c42f&id=7c82c42f3c0b288babb5b241187e4af965e5767a)
+-	[`24.10`, `oracular-20240527`, `oracular`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-oracular-amd64-20240527-15366d95&id=15366d954fc6c989ed956729b3a78ff7f1aff13a)
 
 # Quick reference (cont.)
 
