@@ -52,29 +52,29 @@ WARNING:
 
 # What is Redis?
 
-Redis is an open-source, networked, in-memory, key-value data store with optional durability. It is written in ANSI C. The development of Redis is sponsored by Redis Labs today; before that, it was sponsored by Pivotal and VMware. According to the monthly ranking by DB-Engines.com, Redis is the most popular key-value store. The name Redis means REmote DIctionary Server.
+Redis is the world’s fastest data platform. It provides cloud and on-prem solutions for caching, vector search, and NoSQL databases that seamlessly fit into any tech stack&mdash;making it simple for digital customers to build, scale, and deploy the fast apps our world runs on.
 
-> [wikipedia.org/wiki/Redis](https://en.wikipedia.org/wiki/Redis)
+> [redis.io](https://redis.io)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/01c12653951b2fe592c1f93a13b4e289ada0e3a1/redis/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/0e42ee108b46e1ba6333e9eb44201b8f26c4032d/redis/logo.png)
 
 # Security
 
 For the ease of accessing Redis from other containers via Docker networking, the "Protected mode" is turned off by default. This means that if you expose the port outside of your host (e.g., via `-p` on `docker run`), it will be open without a password to anyone. It is **highly** recommended to set a password (by supplying a config file) if you plan on exposing your Redis instance to the internet. For further information, see the following links about Redis security:
 
--	[Redis documentation on security](https://redis.io/topics/security)
--	[Protected mode](https://redis.io/topics/security#protected-mode)
+-	[Redis documentation on security](https://redis.io/docs/latest/operate/oss_and_stack/management/security/)
+-	[Protected mode](https://redis.io/docs/latest/operate/oss_and_stack/management/security/#protected-mode)
 -	[A few things about Redis security by antirez](http://antirez.com/news/96)
 
 # How to use this image
 
-## start a redis instance
+## Start a redis instance
 
 ```console
 $ docker run --name some-redis -d redis
 ```
 
-## start with persistent storage
+## Start with persistent storage
 
 ```console
 $ docker run --name some-redis -d redis redis-server --save 60 1 --loglevel warning
@@ -82,15 +82,15 @@ $ docker run --name some-redis -d redis redis-server --save 60 1 --loglevel warn
 
 There are several different persistence strategies to choose from. This one will save a snapshot of the DB every 60 seconds if at least 1 write operation was performed (it will also lead to more logs, so the `loglevel` option may be desirable). If persistence is enabled, data is stored in the `VOLUME /data`, which can be used with `--volumes-from some-volume-container` or `-v /docker/host/dir:/data` (see [docs.docker volumes](https://docs.docker.com/engine/tutorials/dockervolumes/)).
 
-For more about Redis Persistence, see [http://redis.io/topics/persistence](http://redis.io/topics/persistence).
+For more about Redis persistence, see [the official Redis documentation](https://redis.io/docs/latest/operate/oss_and_stack/management/persistence/).
 
-## connecting via `redis-cli`
+## Connecting via `redis-cli`
 
 ```console
 $ docker run -it --network some-network --rm redis redis-cli -h some-redis
 ```
 
-## Additionally, If you want to use your own redis.conf ...
+## Additionally, if you want to use your own redis.conf ...
 
 You can create your own Dockerfile that adds a redis.conf from the context into /data/, like so.
 
@@ -114,13 +114,14 @@ The mapped directory should be writable, as depending on the configuration and m
 
 This variant is *not* a 32bit image (and will not run on 32bit hardware), but includes Redis compiled as a 32bit binary, especially for users who need the decreased memory requirements associated with that. See ["Using 32 bit instances"](http://redis.io/topics/memory-optimization#using-32-bit-instances) in the Redis documentation for more information.
 
-# Redis Modules
+# Redis Stack and modules
 
-You can find the list of modules for Redis on [redis.io](https://redis.io/modules) or on [redismodules.com](http://redismodules.com). A few of the standard modules can be found here:
+Modules extend Redis with extra capabilities. Redis Stack already comes with the capabilities (search and query, JSON support, and more) that are developed by Redis (the company). The Docker images are available here:
 
--	[RediSearch](https://hub.docker.com/r/redislabs/redisearch/): Search and Query with Indexing on Redis
--	[ReJSON](https://hub.docker.com/r/redislabs/rejson/): Extended JSON processing for Redis
--	[ReBloom](https://hub.docker.com/r/redislabs/rebloom/): Bloom Filters data type for membership/existence search on Redis
+-	[Redis Stack](https://hub.docker.com/r/redis/redis-stack): Redis plus extra capabilities and Redis Insight (a GUI for Redis)
+-	[Redis Stack Server](https://hub.docker.com/r/redis/redis-stack-server): Redis plus extra capabilities
+
+You can find the list of modules for Redis on [redis.io](https://redis.io/community/redis-modules-hub/).
 
 # Image Variants
 
@@ -142,7 +143,9 @@ To minimize image size, it's uncommon for additional related tools (such as `git
 
 # License
 
-View [license information](http://redis.io/topics/license) for the software contained in this image.
+Starting on March 20th, 2024, Redis follows a dual-licensing model with the choice of the [Redis Source Available License v2 - RSALv2](https://redis.io/legal/rsalv2-agreement/) or the [Server Side Public License v1 - SSPLv1](https://redis.io/legal/server-side-public-license-sspl/). Older versions of Redis (<=7.2.4) are licensed under [3-Clause BSD](https://opensource.org/license/bsd-3-clause).
+
+Please also view the [Redis License Overview](https://redis.io/legal/licenses/) and the [Redis Trademark Policy](https://redis.io/legal/trademark-policy/).
 
 As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 
