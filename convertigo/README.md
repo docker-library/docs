@@ -24,7 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.2.7`, `8.2`, `latest`](https://github.com/convertigo/convertigo/blob/24ab4a5de17fd3de5adf1b12c1fa447400be22a0/docker/default/Dockerfile)
+-	[`8.3.0`, `8.3`, `latest`](https://github.com/convertigo/convertigo/blob/b2b3387e1d01034c010817e14de30f2ce60febdc/docker/default/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -32,7 +32,7 @@ WARNING:
 	[https://github.com/convertigo/docker/issues](https://github.com/convertigo/docker/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/convertigo/), [`arm32v7`](https://hub.docker.com/r/arm32v7/convertigo/), [`arm64v8`](https://hub.docker.com/r/arm64v8/convertigo/)
+	[`amd64`](https://hub.docker.com/r/amd64/convertigo/), [`arm64v8`](https://hub.docker.com/r/arm64v8/convertigo/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/convertigo/` directory](https://github.com/docker-library/repo-info/blob/master/repos/convertigo) ([history](https://github.com/docker-library/repo-info/commits/master/repos/convertigo))  
