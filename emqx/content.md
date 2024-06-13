@@ -34,16 +34,14 @@ All EMQX Configuration in [`etc/emqx.conf`](https://github.com/emqx/emqx/blob/ma
 
 Example:
 
-```bash
-EMQX_DASHBOARD__DEFAULT_PASSWORD       <--> dashboard.default_password
-EMQX_NODE__COOKIE                      <--> node.cookie
-EMQX_LISTENERS__SSL__default__ENABLE   <--> listeners.ssl.default.enable
-```
+	EMQX_DASHBOARD__DEFAULT_PASSWORD       <--> dashboard.default_password
+	EMQX_NODE__COOKIE                      <--> node.cookie
+	EMQX_LISTENERS__SSL__default__ENABLE   <--> listeners.ssl.default.enable
 
 Note: The lowercase use of 'default' is not a typo. It is used to demonstrate that lowercase environment variables are equivalent.
 
 -	Prefix `EMQX_` is removed
--	All upper case letters is replaced with lower case letters
+-	All upper case letters are replaced with lower case letters
 -	`__` is replaced with `.`
 
 For example, set MQTT TCP port to 1883
@@ -56,16 +54,9 @@ Please read more about EMQX configuration in the [official documentation](https:
 
 #### EMQX node name configuration
 
-A node name consists of two parts, `EMQX_NAME` part and `EMQX_HOST` part connected by a the symbol `@`. For example: `emqx@127.0.0.1`.
+Environment variable `EMQX_NODE__NAME` allows you to specify an EMQX node name, which defaults to `<container_name>@<container_ip>`.
 
-Environment variables `EMQX_NODE_NAME` or `EMQX_NODE__NAME` can be used to set a EMQX node name. If neither of them is set, EMQX will resolve its node name from the running environment or other environment varialbes used for node discovery.
-
-When running in docker, by default, `EMQX_NAME` and `EMQX_HOST` are resolved as below:
-
-| Options     | Default        | Description                |
-|-------------|----------------|----------------------------|
-| `EMQX_NAME` | container name | EMQX node short name       |
-| `EMQX_HOST` | container IP   | EMQX node host, IP or FQDN |
+If not specified, EMQX determines its node name based on the running environment or other environment variables used for node discovery.
 
 ### Cluster
 
@@ -82,7 +73,7 @@ Let's create a static node list cluster from docker-compose.
     emqx1:
       image: %%IMAGE%%:latest
       environment:
-      - "EMQX_NODE_NAME=emqx@node1.emqx.io"
+      - "EMQX_NODE__NAME=emqx@node1.emqx.io"
       - "EMQX_CLUSTER__DISCOVERY_STRATEGY=static"
       - "EMQX_CLUSTER__STATIC__SEEDS=[emqx@node1.emqx.io, emqx@node2.emqx.io]"
       networks:
@@ -93,7 +84,7 @@ Let's create a static node list cluster from docker-compose.
     emqx2:
       image: %%IMAGE%%:latest
       environment:
-      - "EMQX_NODE_NAME=emqx@node2.emqx.io"
+      - "EMQX_NODE__NAME=emqx@node2.emqx.io"
       - "EMQX_CLUSTER__DISCOVERY_STRATEGY=static"
       - "EMQX_CLUSTER__STATIC__SEEDS=[emqx@node1.emqx.io, emqx@node2.emqx.io]"
       networks:
@@ -127,7 +118,7 @@ If you want to persist the EMQX docker container, you need to keep the following
 -	`/opt/emqx/data`
 -	`/opt/emqx/log`
 
-Since data in these folders are partially stored under the `/opt/emqx/data/mnesia/${node_name}`, the user also needs to reuse the same node name to see the previous state. In detail, one needs to specify the two environment variables: `EMQX_NAME` and `EMQX_HOST`, `EMQX_HOST` set as `127.0.0.1` or network alias would be useful.
+Since data in these folders are partially stored under the `/opt/emqx/data/mnesia/${node_name}`, the user also needs to reuse the same node name to see the previous state. To make this work, one needs to set the host part of `EMQX_NODE__NAME` to something static that does not change when you restart or recreate the container. It could be container name, hostname or loopback IP address `127.0.0.1` if you only have one node.
 
 In if you use docker-compose, the configuration would look something like this:
 
@@ -143,8 +134,7 @@ services:
     image: %%IMAGE%%:latest
     restart: always
     environment:
-      EMQX_NAME: foo_emqx
-      EMQX_HOST: 127.0.0.1
+      EMQX_NODE__NAME: foo_emqx@127.0.0.1
     volumes:
       - vol-emqx-data:/opt/emqx/data
       - vol-emqx-log:/opt/emqx/log
