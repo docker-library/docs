@@ -24,8 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.85.0`, `5.85`, `5`, `latest`](https://github.com/docker-library/ghost/blob/59e8917dd3a05049dfc80e663462abb7427dfdec/5/debian/Dockerfile)
--	[`5.85.0-alpine`, `5.85-alpine`, `5-alpine`, `alpine`](https://github.com/docker-library/ghost/blob/59e8917dd3a05049dfc80e663462abb7427dfdec/5/alpine/Dockerfile)
+-	[`5.85.1`, `5.85`, `5`, `latest`](https://github.com/docker-library/ghost/blob/e33d9bde68a1fc6ce5087c6e32706f6a4a8d2636/5/debian/Dockerfile)
+-	[`5.85.1-alpine`, `5.85-alpine`, `5-alpine`, `alpine`](https://github.com/docker-library/ghost/blob/e33d9bde68a1fc6ce5087c6e32706f6a4a8d2636/5/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
