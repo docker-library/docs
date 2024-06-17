@@ -28,24 +28,7 @@ The NATS Streaming Server is being deprecated. Critical bug fixes and security f
 
 # Supported tags and respective `Dockerfile` links
 
-(See ["What's the difference between 'Shared' and 'Simple' tags?" in the FAQ](https://github.com/docker-library/faq#whats-the-difference-between-shared-and-simple-tags).)
-
-## Simple Tags
-
--	[`0.25.6-alpine3.18`, `0.25-alpine3.18`, `alpine3.18`, `0.25.6-alpine`, `0.25-alpine`, `alpine`](https://github.com/nats-io/nats-streaming-docker/blob/b58b5957ac6c7e2349e52a01ec61fb0afb376ac5/0.25.6/alpine3.18/Dockerfile)
--	[`0.25.6-scratch`, `0.25-scratch`, `scratch`, `0.25.6-linux`, `0.25-linux`, `linux`](https://github.com/nats-io/nats-streaming-docker/blob/b58b5957ac6c7e2349e52a01ec61fb0afb376ac5/0.25.6/scratch/Dockerfile)
--	[`0.25.6-windowsservercore-1809`, `0.25-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/nats-io/nats-streaming-docker/blob/b58b5957ac6c7e2349e52a01ec61fb0afb376ac5/0.25.6/windowsservercore-1809/Dockerfile)
--	[`0.25.6-nanoserver-1809`, `0.25-nanoserver-1809`, `nanoserver-1809`](https://github.com/nats-io/nats-streaming-docker/blob/b58b5957ac6c7e2349e52a01ec61fb0afb376ac5/0.25.6/nanoserver-1809/Dockerfile)
-
-## Shared Tags
-
--	`0.25.6`, `0.25`, `latest`:
-	-	[`0.25.6-scratch`](https://github.com/nats-io/nats-streaming-docker/blob/b58b5957ac6c7e2349e52a01ec61fb0afb376ac5/0.25.6/scratch/Dockerfile)
-	-	[`0.25.6-nanoserver-1809`](https://github.com/nats-io/nats-streaming-docker/blob/b58b5957ac6c7e2349e52a01ec61fb0afb376ac5/0.25.6/nanoserver-1809/Dockerfile)
--	`0.25.6-windowsservercore`, `0.25-windowsservercore`, `windowsservercore`:
-	-	[`0.25.6-windowsservercore-1809`](https://github.com/nats-io/nats-streaming-docker/blob/b58b5957ac6c7e2349e52a01ec61fb0afb376ac5/0.25.6/windowsservercore-1809/Dockerfile)
--	`0.25.6-nanoserver`, `0.25-nanoserver`, `nanoserver`:
-	-	[`0.25.6-nanoserver-1809`](https://github.com/nats-io/nats-streaming-docker/blob/b58b5957ac6c7e2349e52a01ec61fb0afb376ac5/0.25.6/nanoserver-1809/Dockerfile)
+**No supported tags**
 
 # Quick reference (cont.)
 
@@ -53,7 +36,7 @@ The NATS Streaming Server is being deprecated. Critical bug fixes and security f
 	[https://github.com/nats-io/nats-streaming-docker/issues](https://github.com/nats-io/nats-streaming-docker/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/nats-streaming/), [`arm32v6`](https://hub.docker.com/r/arm32v6/nats-streaming/), [`arm32v7`](https://hub.docker.com/r/arm32v7/nats-streaming/), [`arm64v8`](https://hub.docker.com/r/arm64v8/nats-streaming/), [`windows-amd64`](https://hub.docker.com/r/winamd64/nats-streaming/)
+	**No supported architectures**
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/nats-streaming/` directory](https://github.com/docker-library/repo-info/blob/master/repos/nats-streaming) ([history](https://github.com/docker-library/repo-info/commits/master/repos/nats-streaming))  
@@ -345,31 +328,6 @@ Common Options:
 # Configuration
 
 Details on how to configure further the NATS Streaming server can be found [here](https://docs.nats.io/nats-streaming-server/configuring)
-
-# Image Variants
-
-The `nats-streaming` images come in many flavors, each designed for a specific use case.
-
-## `nats-streaming:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-## `nats-streaming:<version>-alpine`
-
-This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
-
-This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
-
-To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
-
-## `nats-streaming:<version>-windowsservercore`
-
-This image is based on [Windows Server Core (`microsoft/windowsservercore`)](https://hub.docker.com/r/microsoft/windowsservercore/). As such, it only works in places which that image does, such as Windows 10 Professional/Enterprise (Anniversary Edition) or Windows Server 2016.
-
-For information about how to get Docker running on Windows, please see the relevant "Quick Start" guide provided by Microsoft:
-
--	[Windows Server Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_server)
--	[Windows 10 Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)
 
 # License
 

@@ -28,9 +28,7 @@ Upcoming in Vault 1.14, we will stop publishing official Dockerhub images and pu
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.13.3`](https://github.com/hashicorp/docker-vault/blob/152f49d818b2764c437ee1fd20ee4d13791a8296/0.X/Dockerfile)
--	[`1.12.7`](https://github.com/hashicorp/docker-vault/blob/48d258c844d65814e16c123f8d3750a4e73e4350/0.X/Dockerfile)
--	[`1.11.11`](https://github.com/hashicorp/docker-vault/blob/e90ed0d020018291fabd520e9c36196c1e58f049/0.X/Dockerfile)
+**No supported tags**
 
 # Quick reference (cont.)
 
@@ -38,7 +36,7 @@ Upcoming in Vault 1.14, we will stop publishing official Dockerhub images and pu
 	[https://github.com/hashicorp/docker-vault/issues](https://github.com/hashicorp/docker-vault/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/vault/), [`arm32v6`](https://hub.docker.com/r/arm32v6/vault/), [`arm64v8`](https://hub.docker.com/r/arm64v8/vault/), [`i386`](https://hub.docker.com/r/i386/vault/)
+	**No supported architectures**
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/vault/` directory](https://github.com/docker-library/repo-info/blob/master/repos/vault) ([history](https://github.com/docker-library/repo-info/commits/master/repos/vault))  

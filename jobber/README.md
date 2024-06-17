@@ -28,7 +28,7 @@ This project is not actively maintained. See [dshearer/jobber#334](https://githu
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.4.4-alpine3.11`, `1.4-alpine3.11`, `1-alpine3.11`, `latest`](https://github.com/dshearer/jobber-docker/blob/cd07d76987097b5389aa9be5f48df041aa74d699/alpine3.11/Dockerfile)
+**No supported tags**
 
 # Quick reference (cont.)
 
@@ -36,7 +36,7 @@ This project is not actively maintained. See [dshearer/jobber#334](https://githu
 	[https://github.com/dshearer/jobber-docker/issues](https://github.com/dshearer/jobber-docker/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/jobber/)
+	**No supported architectures**
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/jobber/` directory](https://github.com/docker-library/repo-info/blob/master/repos/jobber) ([history](https://github.com/docker-library/repo-info/commits/master/repos/jobber))  

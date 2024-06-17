@@ -28,7 +28,7 @@ This project is no longer maintained. Read [here](https://github.com/ExpressGate
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.x`, `1.16.x`, `1.16.11`, `latest`](https://github.com/ExpressGateway/docker-express-gateway/blob/fa2707c3b24bbd99710a100d7859566fa28817b8/alpine/Dockerfile)
+**No supported tags**
 
 # Quick reference (cont.)
 
@@ -36,7 +36,7 @@ This project is no longer maintained. Read [here](https://github.com/ExpressGate
 	[https://github.com/ExpressGateway/express-gateway/issues](https://github.com/ExpressGateway/express-gateway/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/express-gateway/), [`arm64v8`](https://hub.docker.com/r/arm64v8/express-gateway/), [`ppc64le`](https://hub.docker.com/r/ppc64le/express-gateway/), [`s390x`](https://hub.docker.com/r/s390x/express-gateway/)
+	**No supported architectures**
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/express-gateway/` directory](https://github.com/docker-library/repo-info/blob/master/repos/express-gateway) ([history](https://github.com/docker-library/repo-info/commits/master/repos/express-gateway))  
