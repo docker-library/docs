@@ -24,8 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2023`, `latest`, `2023.4.20240528.0`](https://github.com/amazonlinux/container-images/blob/3f70daba787f52e24ac044292a45f80bde40d68c/Dockerfile)
--	[`2`, `2.0.20240529.0`](https://github.com/amazonlinux/container-images/blob/4e2e2fd3a7f437964ba551048908e6a5ce819bf5/Dockerfile)
+-	[`2023`, `latest`, `2023.4.20240611.0`](https://github.com/amazonlinux/container-images/blob/77f7a5d15a41a4c43d477351a84d065377b10cb1/Dockerfile)
+-	[`2`, `2.0.20240610.1`](https://github.com/amazonlinux/container-images/blob/252f954fcdd02be858931219147aebcf9099e86c/Dockerfile)
 -	[`1`, `2018.03`, `2018.03.0.20231218.0`](https://github.com/amazonlinux/container-images/blob/21ffab08ccd83dc317d0607e94ad0f9a63590a60/Dockerfile)
 
 # Quick reference (cont.)
