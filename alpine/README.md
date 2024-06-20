@@ -25,10 +25,10 @@ WARNING:
 # Supported tags and respective `Dockerfile` links
 
 -	[`20240606`, `edge`](https://github.com/alpinelinux/docker-alpine/blob/75a51b285731679e7c39c2e3c1cae4edcd6851e5/x86_64/Dockerfile)
--	[`3.20.0`, `3.20`, `3`, `latest`](https://github.com/alpinelinux/docker-alpine/blob/142830f310291a58bea7294cc17ed645697861ca/x86_64/Dockerfile)
--	[`3.19.1`, `3.19`](https://github.com/alpinelinux/docker-alpine/blob/7385303148c97ef32a3f225ec03bafa46b689d12/x86_64/Dockerfile)
--	[`3.18.6`, `3.18`](https://github.com/alpinelinux/docker-alpine/blob/08dbcabbd55e7430a326b582e544c6e1695126f3/x86_64/Dockerfile)
--	[`3.17.7`, `3.17`](https://github.com/alpinelinux/docker-alpine/blob/1041155cbf4b410b02729c23a198d632945a1744/x86_64/Dockerfile)
+-	[`3.20.1`, `3.20`, `3`, `latest`](https://github.com/alpinelinux/docker-alpine/blob/d796f6cbd6ffa3aeb21f6e5a783c20b61dba64dd/x86_64/Dockerfile)
+-	[`3.19.2`, `3.19`](https://github.com/alpinelinux/docker-alpine/blob/0ea45484ad78078c51350293201cec8650c2f6bf/x86_64/Dockerfile)
+-	[`3.18.7`, `3.18`](https://github.com/alpinelinux/docker-alpine/blob/fb6cd4d1c0fc2b1b73c34a445d120c02c82752cd/x86_64/Dockerfile)
+-	[`3.17.8`, `3.17`](https://github.com/alpinelinux/docker-alpine/blob/7b631cf259b81eec0f59e8f3cccac479c702d2c1/x86_64/Dockerfile)
 
 # Quick reference (cont.)
 
