@@ -10,37 +10,39 @@ A large number of production-quality Haskell libraries are available from [Hacka
 
 ## About this image
 
-This image ships a minimal Haskell toolchain (`ghc` and `cabal-install`) from the upstream [downloads.haskell.org](https://launchpad.net/~hvr/+archive/ubuntu/ghc) Debian repository as well as the `stack` tool ([https://www.haskellstack.org/](https://www.haskellstack.org/)).
+This image ships a minimal Haskell toolchain (`ghc` and `cabal-install`) as well as the `stack` tool ([https://www.haskellstack.org/](https://www.haskellstack.org/)) where possible. [`stack` does not currently support `ARM64`](https://github.com/commercialhaskell/stack/issues/2103) so is not included for that processor architecture.
 
-Note: The GHC developers do not support legacy release branches (i.e. `7.8.x`). While older GHC release tags are available in this DockerHub repository, only the two most recent minor releases will receive updates or be shown in the "Supported tags ..." section at the top of this page.
+ARM64 support is new and should be considered experimental at this stage. Support has been added as of `8.10.7`, `9.0.2` and `9.2.1`.
 
-Additionally, we support the two most versions of Debian (`stable` and `oldstable`) as variants, with the most recent being the default if not specified.
+Note: The GHC developers do not support legacy release branches (i.e. `7.8.x`). Only the two most recent minor releases will receive updates or be shown in the "Supported tags ..." section at the top of this page.
 
-> Note: `%%IMAGE%%:8.8.3` was updated from Debian Stretch to Buster, so you will need to specify `%%IMAGE%%:8.8.3-stretch` to stick with Stretch in this particular case.
+Additionally, we aim to support the two most recent versions of Debian (`stable` and `oldstable`) as variants, with the most recent being the default if not specified.
+
+> Note: Currently `stable` Debian is version 11 bullseye, however it is not yet supported by Haskell tooling. Until that time the default will remain Debian 10 buster. We have dropped support for Debian 9 stretch.
 
 ## How to use this image
 
 Start an interactive interpreter session with `ghci`:
 
 ```console
-$ docker run -it --rm %%IMAGE%%:8
-GHCi, version 8.4.3: http://www.haskell.org/ghc/  :? for help
+$ docker run -it --rm %%IMAGE%%:9
+GHCi, version 9.0.1: http://www.haskell.org/ghc/  :? for help
 Prelude>
 ```
 
 Dockerize an application using `stack`:
 
 ```dockerfile
-FROM %%IMAGE%%:8
-RUN stack install pandoc pandoc-citeproc
+FROM %%IMAGE%%:8.10
+RUN stack install --resolver lts-17.14 pandoc citeproc
 ENTRYPOINT ["pandoc"]
 ```
 
 Dockerize an application using `cabal`:
 
 ```dockerfile
-FROM %%IMAGE%%:8
-RUN cabal update && cabal install pandoc pandoc-citeproc
+FROM %%IMAGE%%:8.10
+RUN cabal update && cabal install pandoc citeproc
 ENTRYPOINT ["pandoc"]
 ```
 
@@ -59,7 +61,7 @@ COPY ./example.cabal /opt/example/example.cabal
 # Docker will cache this command as a layer, freeing us up to
 # modify source code without re-installing dependencies
 # (unless the .cabal file changes!)
-RUN cabal install --only-dependencies -j4
+RUN cabal build --only-dependencies -j4
 
 # Add and Install Application Code
 COPY . /opt/example

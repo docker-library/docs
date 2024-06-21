@@ -4,30 +4,38 @@
 
 [CrateDB](http://github.com/crate/crate) is a distributed SQL database that makes it simple to store and analyze massive amounts of machine data in real-time.
 
-Features of CrateDB:
+CrateDB offers the scalability and flexibility typically associated with a NoSQL database, is designed to run on inexpensive commodity servers and can be deployed and run on any sort of network - from personal computers to multi-region hybrid clouds.
+
+The smallest CrateDB clusters can easily ingest tens of thousands of records per second. The data can be queried, ad-hoc, in parallel across the whole cluster in real time.
+
+# Features
 
 -	Standard SQL plus dynamic schemas, queryable objects, geospatial features, time series data, first-class BLOB support, and realtime full-text search.
--	Horizontally scalable, highly available, and fault tolerant clusters that run very well in virtualized and containerised environments.
+-	Dynamic schemas, queryable objects, geospatial features, time series data support, and realtime full-text search providing functionality for handling both relational and document oriented nested data structures.
+-	Horizontally scalable, highly available and fault tolerant clusters that run very well in virtualized and containerised environments.
 -	Extremely fast distributed query execution.
 -	Auto-partitioning, auto-sharding, and auto-replication.
 -	Self-healing and auto-rebalancing.
--	CrateDB offers the scalability and flexibility typically associated with a NoSQL database and is designed to run on inexpensive commodity servers and can be deployed and run across any sort of network. From personal computers to multi-region hybrid clouds.
 
-The smallest CrateDB clusters can easily ingest tens of thousands of records per second. And this data can be queried, ad-hoc, in parallel across the whole cluster in real time.
+# Screenshots
 
-# How to Use This Image
+CrateDB provides an [Admin UI](https://crate.io/docs/crate/admin-ui/):
+
+![Screenshots of the CrateDB Admin UI](https://raw.githubusercontent.com/crate/crate/master/crate-admin.gif)
+
+# Try CrateDB
 
 Spin up this Docker image like so:
 
 ```console
-$ docker run -p 4200:4200 %%IMAGE%%
+$ docker run --publish 4200:4200 --publish 5432:5432 %%IMAGE%% -Cdiscovery.type=single-node
 ```
 
-Once you're up and running, head on over to [the introductory docs](https://crate.io/docs/crate/getting-started/en/latest/first-use/index.html).
+Visit the [getting started](https://crate.io/docs/crate/tutorials/en/latest/install-run/) page to see all the available download and install options.
 
-See also:
+Once you're up and running, head over to the [introductory docs](https://crate.io/docs/crate/tutorials/). To interact with CrateDB, you can use the Admin UI [web console](https://crate.io/docs/crate/admin-ui/en/latest/console.html#sql-console) or the [CrateDB shell](https://crate.io/docs/crate/crash/) CLI tool. Alternatively, review the list of recommended [clients and tools](https://crate.io/docs/crate/clients-tools/) that work with CrateDB.
 
--	[Getting Started With CrateDB on Docker](https://crate.io/docs/crate/guide/en/latest/deployment/containers/docker.html)
+For container-specific documentation, check out the [CrateDB on Docker how-to guide](https://crate.io/docs/crate/howtos/en/latest/deployment/containers/docker.html) or the [CrateDB on Kubernetes how-to guide](https://crate.io/docs/crate/howtos/en/latest/deployment/containers/kubernetes.html).
 
 ## Issues
 
@@ -45,4 +53,4 @@ For issues with CrateDB itself, report issues via [the `crate` GitHub issue trac
 
 This image is primarily maintained by [Crate.io](http://crate.io/), but we welcome community contributions!
 
-See the [developer docs](https://github.com/crate/docker-crate/blob/master/DEVELOP.rst) and the [contribution docs](https://github.com/crate/docker-crate/blob/master/CONTRIBUTING.rst) for more information.
+See the [contribution docs](https://github.com/crate/docker-crate/blob/master/CONTRIBUTING.rst) for more information.

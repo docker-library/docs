@@ -20,18 +20,18 @@ WARNING:
 	[Matomo](https://github.com/matomo-org/docker) (a Matomo community contributor)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.14.1-apache`, `3.14-apache`, `3-apache`, `3.14.1`, `3.14`, `3`](https://github.com/matomo-org/docker/blob/cf90c9d40d3cdbd66839edc297266b4c8a5e20fa/apache/Dockerfile)
--	[`3.14.1-fpm`, `3.14-fpm`, `3-fpm`](https://github.com/matomo-org/docker/blob/cf90c9d40d3cdbd66839edc297266b4c8a5e20fa/fpm/Dockerfile)
--	[`3.14.1-fpm-alpine`, `3.14-fpm-alpine`, `3-fpm-alpine`](https://github.com/matomo-org/docker/blob/cf90c9d40d3cdbd66839edc297266b4c8a5e20fa/fpm-alpine/Dockerfile)
+-	[`5.1.0-apache`, `5.1-apache`, `5-apache`, `apache`, `5.1.0`, `5.1`, `5`, `latest`](https://github.com/matomo-org/docker/blob/417f15cd95e76177834c2055977145311c973cd1/apache/Dockerfile)
+-	[`5.1.0-fpm`, `5.1-fpm`, `5-fpm`, `fpm`](https://github.com/matomo-org/docker/blob/417f15cd95e76177834c2055977145311c973cd1/fpm/Dockerfile)
+-	[`5.1.0-fpm-alpine`, `5.1-fpm-alpine`, `5-fpm-alpine`, `fpm-alpine`](https://github.com/matomo-org/docker/blob/417f15cd95e76177834c2055977145311c973cd1/fpm-alpine/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/matomo-org/docker/issues](https://github.com/matomo-org/docker/issues)
+	[https://github.com/matomo-org/docker/issues](https://github.com/matomo-org/docker/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/matomo/), [`arm32v5`](https://hub.docker.com/r/arm32v5/matomo/), [`arm32v6`](https://hub.docker.com/r/arm32v6/matomo/), [`arm32v7`](https://hub.docker.com/r/arm32v7/matomo/), [`arm64v8`](https://hub.docker.com/r/arm64v8/matomo/), [`i386`](https://hub.docker.com/r/i386/matomo/), [`mips64le`](https://hub.docker.com/r/mips64le/matomo/), [`ppc64le`](https://hub.docker.com/r/ppc64le/matomo/), [`s390x`](https://hub.docker.com/r/s390x/matomo/)
@@ -41,7 +41,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/matomo`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmatomo)  
+	[official-images repo's `library/matomo` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fmatomo)  
 	[official-images repo's `library/matomo` file](https://github.com/docker-library/official-images/blob/master/library/matomo) ([history](https://github.com/docker-library/official-images/commits/master/library/matomo))
 
 -	**Source of this description**:  
@@ -49,7 +49,7 @@ WARNING:
 
 # Matomo (formerly Piwik)
 
-[![Build Status](https://travis-ci.org/matomo-org/docker.svg?branch=master)](https://travis-ci.org/matomo-org/docker) [Matomo](https://matomo.org/) (formerly Piwik) is the leading open-source analytics platform that gives you more than just powerful analytics:
+[Matomo](https://matomo.org/) (formerly Piwik) is the leading open-source analytics platform that gives you more than just powerful analytics:
 
 -	Free open-source software
 -	100% data ownership
@@ -63,7 +63,7 @@ WARNING:
 
 You can run the Matomo container and service like so:
 
-```console
+```bash
 docker run -d --link some-mysql:db matomo
 ```
 
@@ -73,8 +73,8 @@ This assumes you've already launched a suitable MySQL or MariaDB database contai
 
 Use a Docker volume to keep persistent data:
 
-```console
-docker run -d --link some-mysql:db -v matomo:/var/www/html matomo
+```bash
+docker run -d -p 8080:80 --link some-mysql:db -v matomo:/var/www/html matomo
 ```
 
 ## Matomo Installation
@@ -99,28 +99,29 @@ The following environment variables are also honored for configuring your Matomo
 -	`MATOMO_DATABASE_PASSWORD`
 -	`MATOMO_DATABASE_DBNAME`
 
+The PHP memory limit can be configured with the following environment variable:
+
+-	`PHP_MEMORY_LIMIT`
+
 ## Docker-compose examples and log import instructions
 
 A minimal set-up using docker-compose is available in the [.examples folder](https://github.com/matomo-org/docker/tree/master/.examples).
 
 If you want to use the import logs script, you can then run the following container as needed, in order to execute the python import logs script:
 
-```console
-docker run --rm --volumes-from="matomo_app_1" --link matomo_app_1 python:2-alpine python /var/www/html/misc/log-analytics/import_logs.py --url=http://ip.of.your.piwik --login=yourlogin --password=yourpassword --idsite=1 --recorders=4 /var/www/html/logs/access.log
+```bash
+docker run --rm --volumes-from="matomo-app-1" --link matomo-app-1 python:3-alpine python /var/www/html/misc/log-analytics/import_logs.py --url=http://ip.of.your.matomo.example --login=yourlogin --password=yourpassword --idsite=1 --recorders=4 /var/www/html/logs/access.log
 ```
 
 ## Contribute
 
 Pull requests are very welcome!
 
-We'd love to hear your feedback and suggestions in the issue tracker: [github.com/motomo-org/docker/issues](https://github.com/matomo-org/docker/issues).
+We'd love to hear your feedback and suggestions in the issue tracker: [[https://github.com/matomo-org/docker/issues](https://github.com/matomo-org/docker/issues?q=)]([https://github.com/matomo-org/docker/issues](https://github.com/matomo-org/docker/issues?q=)).
 
 ## GeoIP
 
-~~This product includes GeoLite data created by MaxMind, available from [http://www.maxmind.com](http://www.maxmind.com).~~
-
--	https://blog.maxmind.com/2019/12/18/significant-changes-to-accessing-and-using-geolite2-databases/
--	https://matomo.org/faq/how-to/faq_163/
+~~This product includes GeoLite data created by MaxMind, available from [https://www.maxmind.com](https://www.maxmind.com).~~ https://blog.maxmind.com/2019/12/18/significant-changes-to-accessing-and-using-geolite2-databases/
 
 # Image Variants
 
@@ -134,7 +135,7 @@ This is the defacto image. If you are unsure about what your needs are, you prob
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
-This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
 
 To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 

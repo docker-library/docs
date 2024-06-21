@@ -20,17 +20,20 @@ WARNING:
 	[Rocket.Chat](https://github.com/RocketChat/Docker.Official.Image)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.6.3`, `3.6`, `3`, `latest`](https://github.com/RocketChat/Docker.Official.Image/blob/3920034b8877342a290f9f3a34af5af193467eda/3/Dockerfile)
--	[`2.4.12`, `2.4`, `2`](https://github.com/RocketChat/Docker.Official.Image/blob/e40e10215ede26cb53eb2cbeaccea526703381f4/2/Dockerfile)
+-	[`6.9.2`, `6.9`, `6`, `latest`](https://github.com/RocketChat/Docker.Official.Image/blob/fa46a05612513b0965161db5d037246ed40ae114/6.9/Dockerfile)
+-	[`6.8.2`, `6.8`](https://github.com/RocketChat/Docker.Official.Image/blob/fa46a05612513b0965161db5d037246ed40ae114/6.8/Dockerfile)
+-	[`6.7.5`, `6.7`](https://github.com/RocketChat/Docker.Official.Image/blob/fa46a05612513b0965161db5d037246ed40ae114/6.7/Dockerfile)
+-	[`6.6.10`, `6.6`](https://github.com/RocketChat/Docker.Official.Image/blob/fa46a05612513b0965161db5d037246ed40ae114/6.6/Dockerfile)
+-	[`6.5.8`, `6.5`](https://github.com/RocketChat/Docker.Official.Image/blob/fa46a05612513b0965161db5d037246ed40ae114/6.5/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/RocketChat/Docker.Official.Image/issues](https://github.com/RocketChat/Docker.Official.Image/issues)
+	[https://github.com/RocketChat/Docker.Official.Image/issues](https://github.com/RocketChat/Docker.Official.Image/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/rocket.chat/)
@@ -40,7 +43,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/rocket.chat`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Frocket.chat)  
+	[official-images repo's `library/rocket.chat` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Frocket.chat)  
 	[official-images repo's `library/rocket.chat` file](https://github.com/docker-library/official-images/blob/master/library/rocket.chat) ([history](https://github.com/docker-library/official-images/commits/master/library/rocket.chat))
 
 -	**Source of this description**:  

@@ -17,31 +17,30 @@ WARNING:
 # Quick reference
 
 -	**Maintained by**:  
-	[the Docker Community](https://github.com/31z4/storm-docker)
+	[Apache Storm](https://storm.apache.org/contribute/People.html)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[Apache Storm™ community](https://storm.apache.org/getting-help.html)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.1.3`, `1.1`](https://github.com/31z4/storm-docker/blob/664a7f4730f58be00fd7fe0526d2c13180107c6f/1.1.3/Dockerfile)
--	[`1.2.3`, `1.2`](https://github.com/31z4/storm-docker/blob/664a7f4730f58be00fd7fe0526d2c13180107c6f/1.2.3/Dockerfile)
--	[`2.2.0`, `2.2`, `latest`](https://github.com/31z4/storm-docker/blob/4c2804fa4365f62c3b6009d3496661542e4d446a/2.2.0/Dockerfile)
+-	[`2.6.2`, `2.6`, `latest`](https://github.com/apache/storm-docker/blob/d8c821ffb599be733400c98cc10fe4c05966b552/2.6.2/Dockerfile)
+-	[`2.6.2-jre17`, `2.6-jre17`](https://github.com/apache/storm-docker/blob/31209f0cde237834a3602a382e69a6caa6bdcffc/2.6.2-jre17/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/31z4/storm-docker/issues](https://github.com/31z4/storm-docker/issues)
+	https://issues.apache.org/jira/browse/STORM
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/storm/)
+	[`amd64`](https://hub.docker.com/r/amd64/storm/), [`arm64v8`](https://hub.docker.com/r/arm64v8/storm/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/storm/` directory](https://github.com/docker-library/repo-info/blob/master/repos/storm) ([history](https://github.com/docker-library/repo-info/commits/master/repos/storm))  
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/storm`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fstorm)  
+	[official-images repo's `library/storm` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fstorm)  
 	[official-images repo's `library/storm` file](https://github.com/docker-library/official-images/blob/master/library/storm) ([history](https://github.com/docker-library/official-images/commits/master/library/storm))
 
 -	**Source of this description**:  
@@ -49,7 +48,11 @@ WARNING:
 
 # What is Apache Storm?
 
-Apache Storm is a distributed computation framework written predominantly in the Clojure programming language. Originally created by Nathan Marz and team at BackType, the project was open sourced after being acquired by Twitter. It uses custom created "spouts" and "bolts" to define information sources and manipulations to allow batch, distributed processing of streaming data. The initial release was on 17 September 2011.
+Apache Storm is a free and open source distributed realtime computation system. Apache Storm makes it easy to reliably process unbounded streams of data, doing for realtime processing what Hadoop did for batch processing. Apache Storm is simple, can be used with any programming language, and is a lot of fun to use!
+
+Apache Storm has many use cases: realtime analytics, online machine learning, continuous computation, distributed RPC, ETL, and more. Apache Storm is fast: a benchmark clocked it at over a million tuples processed per second per node. It is scalable, fault-tolerant, guarantees your data will be processed, and is easy to set up and operate.
+
+Apache Storm integrates with the queueing and database technologies you already use. An Apache Storm topology consumes streams of data and processes those streams in arbitrarily complex ways, repartitioning the streams between each stage of the computation however needed.
 
 > [wikipedia.org/wiki/Storm_(event_processor)](https://en.wikipedia.org/wiki/Storm_(event_processor))
 
@@ -97,9 +100,9 @@ $ docker run -it -v $(pwd)/topology.jar:/topology.jar storm storm jar /topology.
 	$ docker run -d -p 8080:8080 --restart always --name ui --link some-nimbus:nimbus storm storm ui
 	```
 
-## ... via [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/) or [`docker-compose`](https://github.com/docker/compose)
+## ... via [`docker-compose`](https://github.com/docker/compose) or [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/)
 
-Example `stack.yml` for `storm`:
+Example `docker-compose.yml` for `storm`:
 
 ```yaml
 version: '3.1'
@@ -171,7 +174,11 @@ $ docker run -it -v /logs -v /data storm storm nimbus
 
 # License
 
-View [license information](http://storm.apache.org/about/free-and-open-source.html) for the software contained in this image.
+Apache Storm, Storm, Apache, the Apache feather logo, and the Apache Storm project logo are trademarks of The Apache Software Foundation.
+
+Licensed under the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0).
+
+See [license information](http://storm.apache.org/about/free-and-open-source.html).
 
 As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 

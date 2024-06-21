@@ -17,19 +17,22 @@ WARNING:
 # Quick reference
 
 -	**Maintained by**:  
-	[Wikimedia Foundation & Docker Community](https://github.com/wikimedia/mediawiki-docker)
+	[MediaWiki community & Docker Community](https://github.com/wikimedia/mediawiki-docker)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.34.4`, `1.34`, `legacy`, `stable`, `latest`](https://github.com/wikimedia/mediawiki-docker/blob/f5fa040dfbe95ffc2d21db1f7356911e324066de/1.34/apache/Dockerfile)
--	[`1.34.4-fpm`, `1.34-fpm`, `legacy-fpm`, `stable-fpm`](https://github.com/wikimedia/mediawiki-docker/blob/f5fa040dfbe95ffc2d21db1f7356911e324066de/1.34/fpm/Dockerfile)
--	[`1.34.4-fpm-alpine`, `1.34-fpm-alpine`, `legacy-fpm-alpline`, `stable-fpm-alpine`](https://github.com/wikimedia/mediawiki-docker/blob/f5fa040dfbe95ffc2d21db1f7356911e324066de/1.34/fpm-alpine/Dockerfile)
--	[`1.31.10`, `1.31`, `lts`, `legacylts`](https://github.com/wikimedia/mediawiki-docker/blob/f5fa040dfbe95ffc2d21db1f7356911e324066de/1.31/apache/Dockerfile)
--	[`1.31.10-fpm`, `1.31-fpm`, `lts-fpm`, `legacylts-fpm`](https://github.com/wikimedia/mediawiki-docker/blob/f5fa040dfbe95ffc2d21db1f7356911e324066de/1.31/fpm/Dockerfile)
--	[`1.31.10-fpm-alpine`, `1.31-fpm-alpine`, `lts-fpm-alpine`, `legacylts-fpm-alpine`](https://github.com/wikimedia/mediawiki-docker/blob/f5fa040dfbe95ffc2d21db1f7356911e324066de/1.31/fpm-alpine/Dockerfile)
+-	[`1.41.1`, `1.41`, `stable`, `latest`](https://github.com/wikimedia/mediawiki-docker/blob/1161796f04d6a6bcbec9fb4c67a8ce7248392403/1.41/apache/Dockerfile)
+-	[`1.41.1-fpm`, `1.41-fpm`, `stable-fpm`](https://github.com/wikimedia/mediawiki-docker/blob/1161796f04d6a6bcbec9fb4c67a8ce7248392403/1.41/fpm/Dockerfile)
+-	[`1.41.1-fpm-alpine`, `1.41-fpm-alpine`, `stable-fpm-alpine`](https://github.com/wikimedia/mediawiki-docker/blob/1161796f04d6a6bcbec9fb4c67a8ce7248392403/1.41/fpm-alpine/Dockerfile)
+-	[`1.40.3`, `1.40`, `legacy`](https://github.com/wikimedia/mediawiki-docker/blob/1161796f04d6a6bcbec9fb4c67a8ce7248392403/1.40/apache/Dockerfile)
+-	[`1.40.3-fpm`, `1.40-fpm`, `legacy-fpm`](https://github.com/wikimedia/mediawiki-docker/blob/1161796f04d6a6bcbec9fb4c67a8ce7248392403/1.40/fpm/Dockerfile)
+-	[`1.40.3-fpm-alpine`, `1.40-fpm-alpine`, `legacy-fpm-alpine`](https://github.com/wikimedia/mediawiki-docker/blob/1161796f04d6a6bcbec9fb4c67a8ce7248392403/1.40/fpm-alpine/Dockerfile)
+-	[`1.39.7`, `1.39`, `lts`](https://github.com/wikimedia/mediawiki-docker/blob/1161796f04d6a6bcbec9fb4c67a8ce7248392403/1.39/apache/Dockerfile)
+-	[`1.39.7-fpm`, `1.39-fpm`, `lts-fpm`](https://github.com/wikimedia/mediawiki-docker/blob/1161796f04d6a6bcbec9fb4c67a8ce7248392403/1.39/fpm/Dockerfile)
+-	[`1.39.7-fpm-alpine`, `1.39-fpm-alpine`, `lts-fpm-alpine`](https://github.com/wikimedia/mediawiki-docker/blob/1161796f04d6a6bcbec9fb4c67a8ce7248392403/1.39/fpm-alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -44,7 +47,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/mediawiki`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmediawiki)  
+	[official-images repo's `library/mediawiki` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fmediawiki)  
 	[official-images repo's `library/mediawiki` file](https://github.com/docker-library/official-images/blob/master/library/mediawiki) ([history](https://github.com/docker-library/official-images/commits/master/library/mediawiki))
 
 -	**Source of this description**:  
@@ -56,7 +59,7 @@ MediaWiki is free and open-source wiki software. Originally developed by Magnus 
 
 > [wikipedia.org/wiki/MediaWiki](https://en.wikipedia.org/wiki/MediaWiki)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/0e325698c0f701882e333c6cb112a0f1fa98a003/mediawiki/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/27b797857efd9253c0981c09696f579a167062d4/mediawiki/logo.svg?sanitize=true)
 
 # How to use this image
 
@@ -98,9 +101,9 @@ The paths `/var/www/html/images` and `/var/www/html/LocalSettings.php` are thing
 $ docker run --rm mediawiki tar -cC /var/www/html/sites . | tar -xC /path/on/host/sites
 ```
 
-## ... via [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/) or [`docker-compose`](https://github.com/docker/compose)
+## ... via [`docker-compose`](https://github.com/docker/compose) or [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/)
 
-Example `stack.yml` for `mediawiki`:
+Example `docker-compose.yml` for `mediawiki`:
 
 ```yaml
 # MediaWiki with MariaDB
@@ -117,11 +120,12 @@ services:
     links:
       - database
     volumes:
-      - /var/www/html/images
+      - images:/var/www/html/images
       # After initial setup, download LocalSettings.php to the same directory as
       # this yaml and uncomment the following line and use compose to restart
       # the mediawiki service
       # - ./LocalSettings.php:/var/www/html/LocalSettings.php
+  # This key also defines the name of the database host used during setup instead of the default "localhost"
   database:
     image: mariadb
     restart: always
@@ -131,9 +135,15 @@ services:
       MYSQL_USER: wikiuser
       MYSQL_PASSWORD: example
       MYSQL_RANDOM_ROOT_PASSWORD: 'yes'
+    volumes:
+      - db:/var/lib/mysql
+
+volumes:
+  images:
+  db:
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/7b72bad5e2c684fa5829aecd3bf5b17a6e685963/mediawiki/stack.yml)
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/8fc63a1c6c985353af894baed5f7f4ae73c056f7/mediawiki/stack.yml)
 
 Run `docker stack deploy -c stack.yml mediawiki` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
 
@@ -159,7 +169,7 @@ This is the defacto image. If you are unsure about what your needs are, you prob
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
-This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
 
 To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 

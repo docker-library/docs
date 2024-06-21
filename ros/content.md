@@ -182,10 +182,10 @@ services:
 $ docker-compose up -d
 ```
 
-> Notice that a new network named `ros_demos` has been created, as can be shown further with:
+> Notice that a new network named `ros_demos_default` has been created, as can be shown further with:
 
 ```console
-$ docker network inspect ros_demos
+$ docker network inspect ros_demos_default
 ```
 
 > We can monitor the logged output of each container, such as the listener node like so:
@@ -201,7 +201,7 @@ $ docker-compose stop
 $ docker-compose rm
 ```
 
-> Note: the auto-generated network, `ros_demos`, will persist until you explicitly remove it using `docker-compose down`.
+> Note: the auto-generated network, `ros_demos_default`, will persist until you explicitly remove it using `docker-compose down`.
 
 ### ROS 1 Bridge
 

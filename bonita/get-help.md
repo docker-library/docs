@@ -1,0 +1,1 @@
+[Bonita official documentation](https://documentation.bonitasoft.com), [StackOverflow](https://stackoverflow.com/tags/bonita), [Bonitasoft Community forum](https://community.bonitasoft.com/questions-and-answers)

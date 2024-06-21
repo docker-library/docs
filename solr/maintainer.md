@@ -1,1 +1,1 @@
-[the Apache Lucene/Solr project](%%GITHUB-REPO%%)
+[the Apache Solr project](%%GITHUB-REPO%%)

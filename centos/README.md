@@ -14,33 +14,21 @@ WARNING:
 
 -->
 
+# **DEPRECATION NOTICE**
+
+This image is no longer supported/maintained (non-EOL tags last updated November 16, 2020, [docker-library/official-images#9102](https://github.com/docker-library/official-images/pull/9102); see also https://www.centos.org/centos-linux-eol/ and [docker-library/docs#2205](https://github.com/docker-library/docs/pull/2205)). Please adjust your usage accordingly.
+
 # Quick reference
 
 -	**Maintained by**:  
 	[The CentOS Project](https://github.com/CentOS/sig-cloud-instance-images)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `centos8`, `8`](https://github.com/CentOS/sig-cloud-instance-images/blob/12a4f1c0d78e257ce3d33fe89092eee07e6574da/docker/Dockerfile)
--	[`centos7`, `7`](https://github.com/CentOS/sig-cloud-instance-images/blob/f2788ce41161326a18420913b0195d1c6cfa1581/docker/Dockerfile)
--	[`centos6`, `6`](https://github.com/CentOS/sig-cloud-instance-images/blob/23b05f6a35520ebf338e4df918e4952830da068b/docker/Dockerfile)
--	[`centos7.8.2003`, `7.8.2003`](https://github.com/CentOS/sig-cloud-instance-images/blob/216a920c467977bbd0f456d3bc381100a88b3768/docker/Dockerfile)
--	[`centos7.7.1908`, `7.7.1908`](https://github.com/CentOS/sig-cloud-instance-images/blob/dcf7932cbda6dd9865d50bfe969927e3e1f0c671/docker/Dockerfile)
--	[`centos7.6.1810`, `7.6.1810`](https://github.com/CentOS/sig-cloud-instance-images/blob/7c2e214edced0b2f22e663ab4175a80fc93acaa9/docker/Dockerfile)
--	[`centos7.5.1804`, `7.5.1804`](https://github.com/CentOS/sig-cloud-instance-images/blob/0cea32a0018ac2d874960d9378a9745bf92affd2/docker/Dockerfile)
--	[`centos7.4.1708`, `7.4.1708`](https://github.com/CentOS/sig-cloud-instance-images/blob/66add29c188e42d4d855f4d4acdb2b73d547edb6/docker/Dockerfile)
--	[`centos7.3.1611`, `7.3.1611`](https://github.com/CentOS/sig-cloud-instance-images/blob/5bbaef9f60ab9e3eeb61acec631c2d91f8714fff/docker/Dockerfile)
--	[`centos7.2.1511`, `7.2.1511`](https://github.com/CentOS/sig-cloud-instance-images/blob/a3c59bd4e98a7f9c063d993955c8ec19c5b1ceff/docker/Dockerfile)
--	[`centos7.1.1503`, `7.1.1503`](https://github.com/CentOS/sig-cloud-instance-images/blob/bc561dfdd671d612dbb9f92e7e17dd8009befc44/docker/Dockerfile)
--	[`centos7.0.1406`, `7.0.1406`](https://github.com/CentOS/sig-cloud-instance-images/blob/f1d1e0bd83baef08e257da50e6fb446e4dd1b90c/docker/Dockerfile)
--	[`centos6.10`, `6.10`](https://github.com/CentOS/sig-cloud-instance-images/blob/da050e2fc6c28d8d72d8bf78c49537247b5ddf76/docker/Dockerfile)
--	[`centos6.9`, `6.9`](https://github.com/CentOS/sig-cloud-instance-images/blob/4f329fe087b0152df26344cecee9ba30b03b1a7b/docker/Dockerfile)
--	[`centos6.8`, `6.8`](https://github.com/CentOS/sig-cloud-instance-images/blob/f32666d2af356ed6835942ed753a4970e18bca94/docker/Dockerfile)
--	[`centos6.7`, `6.7`](https://github.com/CentOS/sig-cloud-instance-images/blob/d0b72df83f49da844f88aabebe3826372f675370/docker/Dockerfile)
--	[`centos6.6`, `6.6`](https://github.com/CentOS/sig-cloud-instance-images/blob/8911843d9a6cc71aadd81e491f94618aded94f30/docker/Dockerfile)
+-	[`centos7`, `7`, `centos7.9.2009`, `7.9.2009`](https://github.com/CentOS/sig-cloud-instance-images/blob/b2d195220e1c5b181427c3172829c23ab9cd27eb/docker/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -55,7 +43,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/centos`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fcentos)  
+	[official-images repo's `library/centos` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fcentos)  
 	[official-images repo's `library/centos` file](https://github.com/docker-library/official-images/blob/master/library/centos) ([history](https://github.com/docker-library/official-images/commits/master/library/centos))
 
 -	**Source of this description**:  

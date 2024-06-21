@@ -26,8 +26,8 @@ For more examples and ideas, visit:
 
 
 $ docker images %%IMAGE%%
-REPOSITORY   TAG     IMAGE ID      SIZE
-hello-world  latest  bf756fb1ae65  13336
+REPOSITORY    TAG       IMAGE ID       SIZE
+hello-world   latest    d2c94e258dcb   13.26kB
 ```
 
 %%LOGO%%
@@ -35,3 +35,5 @@ hello-world  latest  bf756fb1ae65  13336
 # How is this image created?
 
 This image is a prime example of using the [`scratch`](https://hub.docker.com/_/scratch/) image effectively. See [`hello.c`](%%GITHUB-REPO%%/blob/master/hello.c) in %%GITHUB-REPO%% for the source code of the `hello` binary included in this image.
+
+Because this image consists of nothing but a single static binary which prints some text to standard output, it can trivially be run as any arbitrary user (`docker run --user $RANDOM:$RANDOM %%IMAGE%%`, for example).

@@ -1,1 +1,1 @@
-[the Perl 6 Community](%%GITHUB-REPO%%)
+[the Raku Community](%%GITHUB-REPO%%)

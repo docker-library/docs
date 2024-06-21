@@ -20,17 +20,17 @@ WARNING:
 	[the ZNC Community](https://github.com/znc/znc-docker)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.8.2`, `1.8`, `latest`](https://github.com/znc/znc-docker/blob/443da08b1500a0815bc392da027cf2291017a223/full/Dockerfile)
--	[`1.8.2-slim`, `1.8-slim`, `slim`](https://github.com/znc/znc-docker/blob/443da08b1500a0815bc392da027cf2291017a223/slim/Dockerfile)
+-	[`1.9.0`, `1.9`, `latest`](https://github.com/znc/znc-docker/blob/8638ba43acaef4bff2d4d39668c1992f411230a6/full/Dockerfile)
+-	[`1.9.0-slim`, `1.9-slim`, `slim`](https://github.com/znc/znc-docker/blob/8638ba43acaef4bff2d4d39668c1992f411230a6/slim/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/znc/znc-docker/issues](https://github.com/znc/znc-docker/issues)
+	[https://github.com/znc/znc-docker/issues](https://github.com/znc/znc-docker/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/znc/), [`arm32v6`](https://hub.docker.com/r/arm32v6/znc/), [`arm64v8`](https://hub.docker.com/r/arm64v8/znc/)
@@ -40,7 +40,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/znc`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fznc)  
+	[official-images repo's `library/znc` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fznc)  
 	[official-images repo's `library/znc` file](https://github.com/docker-library/official-images/blob/master/library/znc) ([history](https://github.com/docker-library/official-images/commits/master/library/znc))
 
 -	**Source of this description**:  

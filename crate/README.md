@@ -20,19 +20,19 @@ WARNING:
 	[Crate.io](https://github.com/crate/docker-crate)
 
 -	**Where to get help**:  
-	[project documentation](https://crate.io/docs/), [StackOverflow](https://stackoverflow.com/tags/crate), [Slack](https://crate.io/docs/support/slackin/), or [paid support](https://crate.io/pricing/)
+	[project documentation](https://crate.io/docs/), [StackOverflow](https://stackoverflow.com/tags/cratedb), [support channels](https://crate.io/support/)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.2.4`, `4.2`, `latest`](https://github.com/crate/docker-crate/blob/4e5788f8c9d4b0fce260fe936330654825c0b64a/Dockerfile)
--	[`4.1.8`, `4.1`](https://github.com/crate/docker-crate/blob/fbe46a3c699dfe79242e659626a39b09325d58ab/Dockerfile)
--	[`4.0.12`, `4.0`](https://github.com/crate/docker-crate/blob/7791cda08fbf054ab2ce7a988f8811074b8c3bf4/Dockerfile)
--	[`3.3.5`, `3.3`](https://github.com/crate/docker-crate/blob/896c3f63e8e3d4746019e379a7aefb5225b050e3/Dockerfile)
+-	[`5.7.2`, `5.7`, `latest`](https://github.com/crate/docker-crate/blob/aa2d1170ed5040ca10b99dcee4f8b63190e5b3c1/Dockerfile)
+-	[`5.6.5`, `5.6`](https://github.com/crate/docker-crate/blob/b47c08eac6dc3148ef596eac6749ed5b3210ee7a/Dockerfile)
+-	[`5.5.5`, `5.5.4`, `5.5`](https://github.com/crate/docker-crate/blob/976468768511b4574a26631fe646ff7fdfaf03ef/Dockerfile)
+-	[`5.4.8`, `5.4`](https://github.com/crate/docker-crate/blob/87d8fc91744a3760211335884ba8cb82884451c2/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/crate/docker-crate/issues](https://github.com/crate/docker-crate/issues)
+	[https://github.com/crate/docker-crate/issues](https://github.com/crate/docker-crate/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/crate/), [`arm64v8`](https://hub.docker.com/r/arm64v8/crate/)
@@ -42,42 +42,50 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/crate`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fcrate)  
+	[official-images repo's `library/crate` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fcrate)  
 	[official-images repo's `library/crate` file](https://github.com/docker-library/official-images/blob/master/library/crate) ([history](https://github.com/docker-library/official-images/commits/master/library/crate))
 
 -	**Source of this description**:  
 	[docs repo's `crate/` directory](https://github.com/docker-library/docs/tree/master/crate) ([history](https://github.com/docker-library/docs/commits/master/crate))
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/0d4ccc1c0a00a99c3302ffeb17831225cbba7863/crate/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/774acf9bf99ca29eded5cd50f0ba3f755716673d/crate/logo.svg?sanitize=true)
 
 # What Is CrateDB?
 
 [CrateDB](http://github.com/crate/crate) is a distributed SQL database that makes it simple to store and analyze massive amounts of machine data in real-time.
 
-Features of CrateDB:
+CrateDB offers the scalability and flexibility typically associated with a NoSQL database, is designed to run on inexpensive commodity servers and can be deployed and run on any sort of network - from personal computers to multi-region hybrid clouds.
+
+The smallest CrateDB clusters can easily ingest tens of thousands of records per second. The data can be queried, ad-hoc, in parallel across the whole cluster in real time.
+
+# Features
 
 -	Standard SQL plus dynamic schemas, queryable objects, geospatial features, time series data, first-class BLOB support, and realtime full-text search.
--	Horizontally scalable, highly available, and fault tolerant clusters that run very well in virtualized and containerised environments.
+-	Dynamic schemas, queryable objects, geospatial features, time series data support, and realtime full-text search providing functionality for handling both relational and document oriented nested data structures.
+-	Horizontally scalable, highly available and fault tolerant clusters that run very well in virtualized and containerised environments.
 -	Extremely fast distributed query execution.
 -	Auto-partitioning, auto-sharding, and auto-replication.
 -	Self-healing and auto-rebalancing.
--	CrateDB offers the scalability and flexibility typically associated with a NoSQL database and is designed to run on inexpensive commodity servers and can be deployed and run across any sort of network. From personal computers to multi-region hybrid clouds.
 
-The smallest CrateDB clusters can easily ingest tens of thousands of records per second. And this data can be queried, ad-hoc, in parallel across the whole cluster in real time.
+# Screenshots
 
-# How to Use This Image
+CrateDB provides an [Admin UI](https://crate.io/docs/crate/admin-ui/):
+
+![Screenshots of the CrateDB Admin UI](https://raw.githubusercontent.com/crate/crate/master/crate-admin.gif)
+
+# Try CrateDB
 
 Spin up this Docker image like so:
 
 ```console
-$ docker run -p 4200:4200 crate
+$ docker run --publish 4200:4200 --publish 5432:5432 crate -Cdiscovery.type=single-node
 ```
 
-Once you're up and running, head on over to [the introductory docs](https://crate.io/docs/crate/getting-started/en/latest/first-use/index.html).
+Visit the [getting started](https://crate.io/docs/crate/tutorials/en/latest/install-run/) page to see all the available download and install options.
 
-See also:
+Once you're up and running, head over to the [introductory docs](https://crate.io/docs/crate/tutorials/). To interact with CrateDB, you can use the Admin UI [web console](https://crate.io/docs/crate/admin-ui/en/latest/console.html#sql-console) or the [CrateDB shell](https://crate.io/docs/crate/crash/) CLI tool. Alternatively, review the list of recommended [clients and tools](https://crate.io/docs/crate/clients-tools/) that work with CrateDB.
 
--	[Getting Started With CrateDB on Docker](https://crate.io/docs/crate/guide/en/latest/deployment/containers/docker.html)
+For container-specific documentation, check out the [CrateDB on Docker how-to guide](https://crate.io/docs/crate/howtos/en/latest/deployment/containers/docker.html) or the [CrateDB on Kubernetes how-to guide](https://crate.io/docs/crate/howtos/en/latest/deployment/containers/kubernetes.html).
 
 ## Issues
 
@@ -95,7 +103,7 @@ For issues with CrateDB itself, report issues via [the `crate` GitHub issue trac
 
 This image is primarily maintained by [Crate.io](http://crate.io/), but we welcome community contributions!
 
-See the [developer docs](https://github.com/crate/docker-crate/blob/master/DEVELOP.rst) and the [contribution docs](https://github.com/crate/docker-crate/blob/master/CONTRIBUTING.rst) for more information.
+See the [contribution docs](https://github.com/crate/docker-crate/blob/master/CONTRIBUTING.rst) for more information.
 
 # License
 

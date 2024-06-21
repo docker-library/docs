@@ -20,13 +20,14 @@ WARNING:
 	[Perforce Software, Inc.](https://github.com/zendtech/php-zendserver-docker)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.5`, `8.5-php5.6`, `5.6`](https://github.com/zendtech/php-zendserver-docker/blob/5ed6d060d28a9484f7163b807a1a31116462715b/8.5/5.6/Dockerfile)
--	[`9.1`](https://github.com/zendtech/php-zendserver-docker/blob/5ed6d060d28a9484f7163b807a1a31116462715b/9.1/7.1/Dockerfile)
--	[`2019.0`, `latest`](https://github.com/zendtech/php-zendserver-docker/blob/5ed6d060d28a9484f7163b807a1a31116462715b/2019.0/Dockerfile)
+-	[`8.5`, `8.5-php5.6`, `5.6`](https://github.com/zendtech/php-zendserver-docker/blob/bcd65b82acb4f3b5b67f8c657c52f08bc52d8789/8.5/5.6/Dockerfile)
+-	[`9.1`](https://github.com/zendtech/php-zendserver-docker/blob/bcd65b82acb4f3b5b67f8c657c52f08bc52d8789/9.1/7.1/Dockerfile)
+-	[`2019.0`](https://github.com/zendtech/php-zendserver-docker/blob/bcd65b82acb4f3b5b67f8c657c52f08bc52d8789/2019.0/Dockerfile)
+-	[`2021.0`, `latest`](https://github.com/zendtech/php-zendserver-docker/blob/bcd65b82acb4f3b5b67f8c657c52f08bc52d8789/2021.0/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -41,7 +42,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/php-zendserver`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fphp-zendserver)  
+	[official-images repo's `library/php-zendserver` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fphp-zendserver)  
 	[official-images repo's `library/php-zendserver` file](https://github.com/docker-library/official-images/blob/master/library/php-zendserver) ([history](https://github.com/docker-library/official-images/commits/master/library/php-zendserver))
 
 -	**Source of this description**:  
@@ -53,7 +54,7 @@ Zend Server is the integrated application platform for PHP mobile and web apps. 
 
 ### Boost your Development with Z-Ray
 
-Using Zend Server Z-Ray is akin to wearing X-Ray goggles, effortlessly giving developers deep insight into how their code is running as they are developing it – all without having to change any of their habits or workflow. With Z-Ray, developers can immediately understand the impact of their code changes, enabling them to both improve quality and solve issues long before their code reaches production. In addition to the obvious benefits of this ‘Left Shifting’ – better performance, fewer production issues and faster recovery times – using Z-Ray is also downright fun!
+Using Zend Server Z-Ray is akin to wearing X-Ray goggles, effortlessly giving developers deep insight into how their code is running as they are developing it – all without having to change any of their habits or workflow. With Z-Ray, developers can immediately understand the impact of their code changes, enabling them to both improve quality and solve issues long before their code reaches production. In addition to the obvious benefits of this 'Left Shifting' – better performance, fewer production issues and faster recovery times – using Z-Ray is also downright fun!
 
 ### Powering Continuous Delivery
 

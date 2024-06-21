@@ -24,28 +24,39 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`beta`](https://github.com/WASdev/ci.docker/blob/259400d0cfe000c3741919640983c4e9a4fca3b8/beta/Dockerfile)
--	[`kernel`](https://github.com/WASdev/ci.docker/blob/259400d0cfe000c3741919640983c4e9a4fca3b8/ga/latest/kernel/Dockerfile.ubuntu.ibmjava8)
--	[`full`, `latest`](https://github.com/WASdev/ci.docker/blob/259400d0cfe000c3741919640983c4e9a4fca3b8/ga/latest/full/Dockerfile.ubuntu.ibmjava8)
--	[`20.0.0.9-kernel-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/259400d0cfe000c3741919640983c4e9a4fca3b8/ga/20.0.0.9/kernel/Dockerfile.ubuntu.ibmjava8)
--	[`20.0.0.9-full-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/259400d0cfe000c3741919640983c4e9a4fca3b8/ga/20.0.0.9/full/Dockerfile.ubuntu.ibmjava8)
--	[`20.0.0.6-kernel-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/259400d0cfe000c3741919640983c4e9a4fca3b8/ga/20.0.0.6/kernel/Dockerfile.ubuntu.ibmjava8)
--	[`20.0.0.6-full-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/259400d0cfe000c3741919640983c4e9a4fca3b8/ga/20.0.0.6/full/Dockerfile.ubuntu.ibmjava8)
+-	[`kernel`, `kernel-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/17a8c1db7842cba9935fe22d0b0b9293bf165bde/ga/latest/kernel/Dockerfile.ubuntu.ibmjava8)
+-	[`kernel-java11-openj9`](https://github.com/WASdev/ci.docker/blob/17a8c1db7842cba9935fe22d0b0b9293bf165bde/ga/latest/kernel/Dockerfile.ubuntu.openjdk11)
+-	[`kernel-java17-openj9`](https://github.com/WASdev/ci.docker/blob/17a8c1db7842cba9935fe22d0b0b9293bf165bde/ga/latest/kernel/Dockerfile.ubuntu.openjdk17)
+-	[`full`, `latest`, `full-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/17a8c1db7842cba9935fe22d0b0b9293bf165bde/ga/latest/full/Dockerfile.ubuntu.ibmjava8)
+-	[`full-java11-openj9`](https://github.com/WASdev/ci.docker/blob/17a8c1db7842cba9935fe22d0b0b9293bf165bde/ga/latest/full/Dockerfile.ubuntu.openjdk11)
+-	[`full-java17-openj9`](https://github.com/WASdev/ci.docker/blob/17a8c1db7842cba9935fe22d0b0b9293bf165bde/ga/latest/full/Dockerfile.ubuntu.openjdk17)
+-	[`24.0.0.3-kernel-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/17a8c1db7842cba9935fe22d0b0b9293bf165bde/ga/24.0.0.3/kernel/Dockerfile.ubuntu.ibmjava8)
+-	[`24.0.0.3-kernel-java11-openj9`](https://github.com/WASdev/ci.docker/blob/17a8c1db7842cba9935fe22d0b0b9293bf165bde/ga/24.0.0.3/kernel/Dockerfile.ubuntu.openjdk11)
+-	[`24.0.0.3-kernel-java17-openj9`](https://github.com/WASdev/ci.docker/blob/17a8c1db7842cba9935fe22d0b0b9293bf165bde/ga/24.0.0.3/kernel/Dockerfile.ubuntu.openjdk17)
+-	[`24.0.0.3-full-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/17a8c1db7842cba9935fe22d0b0b9293bf165bde/ga/24.0.0.3/full/Dockerfile.ubuntu.ibmjava8)
+-	[`24.0.0.3-full-java11-openj9`](https://github.com/WASdev/ci.docker/blob/17a8c1db7842cba9935fe22d0b0b9293bf165bde/ga/24.0.0.3/full/Dockerfile.ubuntu.openjdk11)
+-	[`24.0.0.3-full-java17-openj9`](https://github.com/WASdev/ci.docker/blob/17a8c1db7842cba9935fe22d0b0b9293bf165bde/ga/24.0.0.3/full/Dockerfile.ubuntu.openjdk17)
+-	[`24.0.0.6-kernel-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/17a8c1db7842cba9935fe22d0b0b9293bf165bde/ga/24.0.0.6/kernel/Dockerfile.ubuntu.ibmjava8)
+-	[`24.0.0.6-kernel-java11-openj9`](https://github.com/WASdev/ci.docker/blob/17a8c1db7842cba9935fe22d0b0b9293bf165bde/ga/24.0.0.6/kernel/Dockerfile.ubuntu.openjdk11)
+-	[`24.0.0.6-kernel-java17-openj9`](https://github.com/WASdev/ci.docker/blob/17a8c1db7842cba9935fe22d0b0b9293bf165bde/ga/24.0.0.6/kernel/Dockerfile.ubuntu.openjdk17)
+-	[`24.0.0.6-full-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/17a8c1db7842cba9935fe22d0b0b9293bf165bde/ga/24.0.0.6/full/Dockerfile.ubuntu.ibmjava8)
+-	[`24.0.0.6-full-java11-openj9`](https://github.com/WASdev/ci.docker/blob/17a8c1db7842cba9935fe22d0b0b9293bf165bde/ga/24.0.0.6/full/Dockerfile.ubuntu.openjdk11)
+-	[`24.0.0.6-full-java17-openj9`](https://github.com/WASdev/ci.docker/blob/17a8c1db7842cba9935fe22d0b0b9293bf165bde/ga/24.0.0.6/full/Dockerfile.ubuntu.openjdk17)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/WASdev/ci.docker/issues](https://github.com/WASdev/ci.docker/issues)
+	[https://github.com/WASdev/ci.docker/issues](https://github.com/WASdev/ci.docker/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/websphere-liberty/), [`i386`](https://hub.docker.com/r/i386/websphere-liberty/), [`ppc64le`](https://hub.docker.com/r/ppc64le/websphere-liberty/), [`s390x`](https://hub.docker.com/r/s390x/websphere-liberty/)
+	[`amd64`](https://hub.docker.com/r/amd64/websphere-liberty/), [`arm64v8`](https://hub.docker.com/r/arm64v8/websphere-liberty/), [`ppc64le`](https://hub.docker.com/r/ppc64le/websphere-liberty/), [`s390x`](https://hub.docker.com/r/s390x/websphere-liberty/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/websphere-liberty/` directory](https://github.com/docker-library/repo-info/blob/master/repos/websphere-liberty) ([history](https://github.com/docker-library/repo-info/commits/master/repos/websphere-liberty))  
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/websphere-liberty`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fwebsphere-liberty)  
+	[official-images repo's `library/websphere-liberty` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fwebsphere-liberty)  
 	[official-images repo's `library/websphere-liberty` file](https://github.com/docker-library/official-images/blob/master/library/websphere-liberty) ([history](https://github.com/docker-library/official-images/commits/master/library/websphere-liberty))
 
 -	**Source of this description**:  
@@ -53,9 +64,9 @@ WARNING:
 
 # Overview
 
-The images in this repository contain WebSphere Liberty application server and the IBM Java Runtime Environment. For more information please see our [official repository](https://github.com/WASdev/ci.docker).
+All of the images in this repository use Ubuntu as the Operating System. For variants that use the Universal Base Image, please see [this repository](https://hub.docker.com/r/ibmcom/websphere-liberty/).
 
-This repository contains WebSphere Liberty based on top of IBM Java 8 with Ubuntu images only. See [here](https://hub.docker.com/r/ibmcom/websphere-liberty/) for WebSphere Liberty based on Red Hat's Universal Base Image, which includes additional java options.
+For more information on these images please see our [GitHub repository](https://github.com/WASdev/ci.docker#container-images).
 
 # Image User
 

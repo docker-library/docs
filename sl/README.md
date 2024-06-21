@@ -24,13 +24,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7`, `latest`](https://github.com/scientificlinux/sl-docker/blob/ac48a35981b0a27b48c96034f3d8e4ef1b0bb90d/sl7/Dockerfile)
--	[`6`](https://github.com/scientificlinux/sl-docker/blob/4885aa4bfcf2d5e7ec9f27f660a71376b51d84ba/sl6/Dockerfile)
+-	[`7`, `latest`](https://github.com/scientificlinux/sl-docker/blob/f5eec00586e57174fd8616a9a052cd75d7ae5377/sl7/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/scientificlinux/sl-docker/issues](https://github.com/scientificlinux/sl-docker/issues)
+	[https://github.com/scientificlinux/sl-docker/issues](https://github.com/scientificlinux/sl-docker/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/sl/)
@@ -40,7 +39,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/sl`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fsl)  
+	[official-images repo's `library/sl` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fsl)  
 	[official-images repo's `library/sl` file](https://github.com/docker-library/official-images/blob/master/library/sl) ([history](https://github.com/docker-library/official-images/commits/master/library/sl))
 
 -	**Source of this description**:  
@@ -58,7 +57,7 @@ Scientific Linux is a [Fermilab](http://fnal.gov/) sponsored project. Our primar
 
 Our Mission:
 
-> Driven by Fermilab’s scientific mission and focusing on the changing needs of experimental facilities, Scientific Linux should provide a world class environment for scientific computing needs.
+> Driven by Fermilab's scientific mission and focusing on the changing needs of experimental facilities, Scientific Linux should provide a world class environment for scientific computing needs.
 
 Scientific Linux is a rebuild of Red Hat Enterprise Linux (property of Red Hat Inc. NYSE:RHT).
 

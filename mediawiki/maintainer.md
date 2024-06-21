@@ -1,1 +1,1 @@
-[Wikimedia Foundation & Docker Community](%%GITHUB-REPO%%)
+[MediaWiki community & Docker Community](%%GITHUB-REPO%%)

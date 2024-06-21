@@ -49,7 +49,7 @@ $ docker run -d -p 80:80 \
 The default `Caddyfile` only listens to port `80`, and does not set up automatic TLS. However, if you have a domain name for your site, and its A/AAAA DNS records are properly pointed to this machine's public IP, then you can use this command to simply serve a site over HTTPS:
 
 ```console
-$ docker run -d -p 80:80 -p 443:443 \
+$ docker run -d --cap-add=NET_ADMIN -p 80:80 -p 443:443 -p 443:443/udp \
     -v /site:/srv \
     -v caddy_data:/data \
     -v caddy_config:/config \
@@ -90,7 +90,7 @@ FROM %%IMAGE%%:<version>
 COPY --from=builder /usr/bin/caddy /usr/bin/caddy
 ```
 
-Note the second `FROM` instruction - this produces a much smaller image by simply overlaying the newly-built binary on top of the the regular `%%IMAGE%%` image.
+Note the second `FROM` instruction - this produces a much smaller image by simply overlaying the newly-built binary on top of the regular `%%IMAGE%%` image.
 
 The [`xcaddy`](https://caddyserver.com/docs/build#xcaddy) tool is used to [build a new Caddy entrypoint](https://github.com/caddyserver/caddy/blob/4217217badf220d7d2c25f43f955fdc8454f2c64/cmd/caddy/main.go#L15..L25), with the provided modules. You can specify just a module name, or a name with a version (separated by `@`). You can also specify a specific version (can be a version tag or commit hash) of Caddy to build from. Read more about [`xcaddy` usage](https://github.com/caddyserver/xcaddy#command-usage).
 
@@ -106,12 +106,20 @@ First, you'll need to determine your container ID or name. Then, pass the contai
 
 ```console
 $ caddy_container_id=$(docker ps | grep caddy | awk '{print $1;}')
-$ docker exec $caddy_container_id -w /etc/caddy caddy reload
+$ docker exec -w /etc/caddy $caddy_container_id caddy reload
 ```
+
+### Linux capabilities
+
+Caddy ships with HTTP/3 support enabled by default. To improve the performance of this UDP based protocol, the underlying quic-go library tries to increase the buffer sizes for its socket. The `NET_ADMIN` capability allows it to override the low default limits of the operating system without having to change kernel parameters via sysctl.
+
+Giving the container this capability is optional and has potential, though unlikely, to have [security implications](https://unix.stackexchange.com/a/508816).
+
+See https://github.com/quic-go/quic-go/wiki/UDP-Buffer-Sizes for more details.
 
 ### Docker Compose example
 
-If you prefer to use `docker-compoose` to run your stack, here's a sample service definition.
+If you prefer to use `docker-compose` to run your stack, here's a sample service definition.
 
 ```yaml
 version: "3.7"
@@ -120,12 +128,22 @@ services:
   caddy:
     image: %%IMAGE%%:<version>
     restart: unless-stopped
+    cap_add:
+      - NET_ADMIN
     ports:
       - "80:80"
       - "443:443"
+      - "443:443/udp"
     volumes:
       - $PWD/Caddyfile:/etc/caddy/Caddyfile
       - $PWD/site:/srv
       - caddy_data:/data
       - caddy_config:/config
+
+volumes:
+  caddy_data:
+    external: true
+  caddy_config:
 ```
+
+Defining the data volume as [`external`](https://docs.docker.com/compose/compose-file/compose-file-v3/#external) makes sure `docker-compose down` does not delete the volume. You may need to create it manually using `docker volume create [project-name]_caddy_data`.

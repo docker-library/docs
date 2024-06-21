@@ -20,28 +20,32 @@ WARNING:
 	[Rob Bast](https://github.com/alcohol), with [contributions](https://github.com/composer/docker/graphs/contributors) from the community.
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.0.0-RC1`, `2.0`, `2`](https://github.com/composer/docker/blob/a3e0f87f09b387e934bc13ebe7c93a7909fe0438/2.0/Dockerfile)
--	[`1.10.13`, `1.10`, `1`, `latest`](https://github.com/composer/docker/blob/aace87229d5c3f988cb19e1dbac0567c2c503c58/1.10/Dockerfile)
--	[`1.9.3`, `1.9`](https://github.com/composer/docker/blob/268d70a1c5270dfbc89e945d40e37c0501a333f1/1.9/Dockerfile)
+-	[`2.7.7`, `2.7`, `2`, `latest`](https://github.com/composer/docker/blob/88c873f3c2afcc399ec92eeec62a30e559a8b8ea/2.7/Dockerfile)
+-	[`2.6.6`, `2.6`](https://github.com/composer/docker/blob/7d5603ee532ef2e27260ebd1090ed888ab9e0458/2.6/Dockerfile)
+-	[`2.5.8`, `2.5`](https://github.com/composer/docker/blob/9fcccc5a4cf04e73118bb7af3f9c04f61646e1c1/2.5/Dockerfile)
+-	[`2.4.4`, `2.4`](https://github.com/composer/docker/blob/88e63fbab43e2151b0743a4c6d18a9c59aa9db0c/2.4/Dockerfile)
+-	[`2.3.10`, `2.3`](https://github.com/composer/docker/blob/88e63fbab43e2151b0743a4c6d18a9c59aa9db0c/2.3/Dockerfile)
+-	[`2.2.24`, `2.2`, `lts`](https://github.com/composer/docker/blob/e04a63cb8591a14e78974fd8acf4043625d5ba14/2.2/Dockerfile)
+-	[`1.10.27`, `1.10`, `1`](https://github.com/composer/docker/blob/9cac6280bc40c7d606f7fd2dfce0f77fefd056a8/1.10/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/composer/docker/issues](https://github.com/composer/docker/issues)
+	[https://github.com/composer/docker/issues](https://github.com/composer/docker/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/composer/), [`arm32v6`](https://hub.docker.com/r/arm32v6/composer/), [`arm32v7`](https://hub.docker.com/r/arm32v7/composer/), [`arm64v8`](https://hub.docker.com/r/arm64v8/composer/), [`i386`](https://hub.docker.com/r/i386/composer/), [`ppc64le`](https://hub.docker.com/r/ppc64le/composer/), [`s390x`](https://hub.docker.com/r/s390x/composer/)
+	[`amd64`](https://hub.docker.com/r/amd64/composer/), [`arm32v6`](https://hub.docker.com/r/arm32v6/composer/), [`arm32v7`](https://hub.docker.com/r/arm32v7/composer/), [`arm64v8`](https://hub.docker.com/r/arm64v8/composer/), [`i386`](https://hub.docker.com/r/i386/composer/), [`ppc64le`](https://hub.docker.com/r/ppc64le/composer/), [`riscv64`](https://hub.docker.com/r/riscv64/composer/), [`s390x`](https://hub.docker.com/r/s390x/composer/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/composer/` directory](https://github.com/docker-library/repo-info/blob/master/repos/composer) ([history](https://github.com/docker-library/repo-info/commits/master/repos/composer))  
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/composer`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fcomposer)  
+	[official-images repo's `library/composer` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fcomposer)  
 	[official-images repo's `library/composer` file](https://github.com/docker-library/official-images/blob/master/library/composer) ([history](https://github.com/docker-library/official-images/commits/master/library/composer))
 
 -	**Source of this description**:  
@@ -59,15 +63,13 @@ You can read more about Composer in our [official documentation](https://getcomp
 
 ### Basic usage
 
-Running the `composer` image is as simple as follows:
-
 ```console
 $ docker run --rm --interactive --tty \
   --volume $PWD:/app \
-  composer install
+  composer <command>
 ```
 
-### Persistent cache / global configuration
+### Persist cache / global configuration
 
 You can bind mount the Composer home directory from your host to the container to enable a persistent cache or share global configuration:
 
@@ -75,12 +77,12 @@ You can bind mount the Composer home directory from your host to the container t
 $ docker run --rm --interactive --tty \
   --volume $PWD:/app \
   --volume ${COMPOSER_HOME:-$HOME/.composer}:/tmp \
-  composer install
+  composer <command>
 ```
 
 **Note:** this relies on the fact that the `COMPOSER_HOME` value is set to `/tmp` in the image by default.
 
-Or if you are following the XDG specification:
+Or if your environment follows the XDG specification:
 
 ```console
 $ docker run --rm --interactive --tty \
@@ -89,7 +91,7 @@ $ docker run --rm --interactive --tty \
   --volume ${COMPOSER_HOME:-$HOME/.config/composer}:$COMPOSER_HOME \
   --volume ${COMPOSER_CACHE_DIR:-$HOME/.cache/composer}:$COMPOSER_CACHE_DIR \
   --volume $PWD:/app \
-  composer install
+  composer <command>
 ```
 
 ### Filesystem permissions
@@ -100,8 +102,12 @@ By default, Composer runs as root inside the container. This can lead to permiss
 $ docker run --rm --interactive --tty \
   --volume $PWD:/app \
   --user $(id -u):$(id -g) \
-  composer install
+  composer <command>
 ```
+
+See: https://docs.docker.com/engine/reference/run/#user for details.
+
+> Note: Docker for Mac behaves differently and this tip might not apply to Docker for Mac users.
 
 ### Private repositories / SSH agent
 
@@ -113,12 +119,12 @@ $ eval $(ssh-agent); \
   --volume $PWD:/app \
   --volume $SSH_AUTH_SOCK:/ssh-auth.sock \
   --env SSH_AUTH_SOCK=/ssh-auth.sock \
-  composer install
+  composer <command>
 ```
 
 **Note:** On OSX this requires Docker For Mac v2.2.0.0 or later, see [docker/for-mac#410](https://github.com/docker/for-mac/issues/410).
 
-When combining the use of private repositories with running Composer as another user, you might run into non-existent user errors (thrown by ssh). To work around this, simply mount the host passwd and group files (read-only) into the container:
+When combining the use of private repositories with running Composer as another user, you can run into non-existent user errors (thrown by ssh). To work around this, bind mount the host passwd and group files (read-only) into the container:
 
 ```console
 $ eval $(ssh-agent); \
@@ -129,7 +135,7 @@ $ eval $(ssh-agent); \
   --volume /etc/group:/etc/group:ro \
   --env SSH_AUTH_SOCK=/ssh-auth.sock \
   --user $(id -u):$(id -g) \
-  composer install
+  composer <command>
 ```
 
 # Troubleshooting
@@ -157,7 +163,7 @@ Suggestions:
 	  "config": {
 	    "platform": {
 	      "php": "MAJOR.MINOR.PATCH",
-	      "ext-something": "1"
+	      "ext-something": "MAJOR.MINOR.PATCH"
 	    }
 	  }
 	}

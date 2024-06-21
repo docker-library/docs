@@ -20,49 +20,82 @@ WARNING:
 	[the Docker Community](https://github.com/Quantisan/docker-clojure)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`](https://github.com/Quantisan/docker-clojure/blob/35746beec4783f59ef1835e98f512f65ea12bfad/target/openjdk-11-slim-buster/latest/Dockerfile)
--	[`openjdk-8`, `openjdk-8-lein`, `openjdk-8-lein-2.9.3`, `openjdk-8-buster`, `openjdk-8-lein-buster`, `openjdk-8-lein-2.9.3-buster`](https://github.com/Quantisan/docker-clojure/blob/35746beec4783f59ef1835e98f512f65ea12bfad/target/openjdk-8-buster/lein/Dockerfile)
--	[`openjdk-8-slim-buster`, `openjdk-8-lein-slim-buster`, `openjdk-8-lein-2.9.3-slim-buster`](https://github.com/Quantisan/docker-clojure/blob/35746beec4783f59ef1835e98f512f65ea12bfad/target/openjdk-8-slim-buster/lein/Dockerfile)
--	[`openjdk-8-boot`, `openjdk-8-boot-2.8.3`, `openjdk-8-boot-buster`, `openjdk-8-boot-2.8.3-buster`](https://github.com/Quantisan/docker-clojure/blob/35746beec4783f59ef1835e98f512f65ea12bfad/target/openjdk-8-buster/boot/Dockerfile)
--	[`openjdk-8-boot-slim-buster`, `openjdk-8-boot-2.8.3-slim-buster`](https://github.com/Quantisan/docker-clojure/blob/35746beec4783f59ef1835e98f512f65ea12bfad/target/openjdk-8-slim-buster/boot/Dockerfile)
--	[`openjdk-8-tools-deps`, `openjdk-8-tools-deps-1.10.1.561`, `openjdk-8-tools-deps-buster`, `openjdk-8-tools-deps-1.10.1.561-buster`](https://github.com/Quantisan/docker-clojure/blob/35746beec4783f59ef1835e98f512f65ea12bfad/target/openjdk-8-buster/tools-deps/Dockerfile)
--	[`openjdk-8-tools-deps-slim-buster`, `openjdk-8-tools-deps-1.10.1.561-slim-buster`](https://github.com/Quantisan/docker-clojure/blob/35746beec4783f59ef1835e98f512f65ea12bfad/target/openjdk-8-slim-buster/tools-deps/Dockerfile)
--	[`openjdk-11`, `openjdk-11-lein`, `openjdk-11-lein-2.9.3`, `lein`, `lein-2.9.3`, `openjdk-11-buster`, `openjdk-11-lein-buster`, `openjdk-11-lein-2.9.3-buster`, `lein-buster`, `lein-2.9.3-buster`](https://github.com/Quantisan/docker-clojure/blob/35746beec4783f59ef1835e98f512f65ea12bfad/target/openjdk-11-buster/lein/Dockerfile)
--	[`openjdk-11-lein-slim-buster`, `openjdk-11-slim-buster`, `openjdk-11-lein-2.9.3-slim-buster`, `slim-buster`, `lein-slim-buster`, `lein-2.9.3-slim-buster`](https://github.com/Quantisan/docker-clojure/blob/35746beec4783f59ef1835e98f512f65ea12bfad/target/openjdk-11-slim-buster/lein/Dockerfile)
--	[`openjdk-11-boot`, `openjdk-11-boot-2.8.3`, `boot`, `boot-2.8.3`, `openjdk-11-boot-buster`, `openjdk-11-boot-2.8.3-buster`, `boot-buster`, `boot-2.8.3-buster`](https://github.com/Quantisan/docker-clojure/blob/35746beec4783f59ef1835e98f512f65ea12bfad/target/openjdk-11-buster/boot/Dockerfile)
--	[`openjdk-11-boot-slim-buster`, `openjdk-11-boot-2.8.3-slim-buster`, `boot-slim-buster`, `boot-2.8.3-slim-buster`](https://github.com/Quantisan/docker-clojure/blob/35746beec4783f59ef1835e98f512f65ea12bfad/target/openjdk-11-slim-buster/boot/Dockerfile)
--	[`openjdk-11-tools-deps`, `openjdk-11-tools-deps-1.10.1.561`, `tools-deps`, `tools-deps-1.10.1.561`, `openjdk-11-tools-deps-buster`, `openjdk-11-tools-deps-1.10.1.561-buster`, `tools-deps-buster`, `tools-deps-1.10.1.561-buster`](https://github.com/Quantisan/docker-clojure/blob/35746beec4783f59ef1835e98f512f65ea12bfad/target/openjdk-11-buster/tools-deps/Dockerfile)
--	[`openjdk-11-tools-deps-slim-buster`, `openjdk-11-tools-deps-1.10.1.561-slim-buster`, `tools-deps-1.10.1.561-slim-buster`, `tools-deps-slim-buster`](https://github.com/Quantisan/docker-clojure/blob/35746beec4783f59ef1835e98f512f65ea12bfad/target/openjdk-11-slim-buster/tools-deps/Dockerfile)
--	[`openjdk-14`, `openjdk-14-lein`, `openjdk-14-lein-2.9.3`, `openjdk-14-slim-buster`, `openjdk-14-lein-slim-buster`, `openjdk-14-lein-2.9.3-slim-buster`](https://github.com/Quantisan/docker-clojure/blob/35746beec4783f59ef1835e98f512f65ea12bfad/target/openjdk-14-slim-buster/lein/Dockerfile)
--	[`openjdk-14-buster`, `openjdk-14-lein-buster`, `openjdk-14-lein-2.9.3-buster`](https://github.com/Quantisan/docker-clojure/blob/35746beec4783f59ef1835e98f512f65ea12bfad/target/openjdk-14-buster/lein/Dockerfile)
--	[`openjdk-14-boot`, `openjdk-14-boot-2.8.3`, `openjdk-14-boot-slim-buster`, `openjdk-14-boot-2.8.3-slim-buster`](https://github.com/Quantisan/docker-clojure/blob/35746beec4783f59ef1835e98f512f65ea12bfad/target/openjdk-14-slim-buster/boot/Dockerfile)
--	[`openjdk-14-boot-buster`, `openjdk-14-boot-2.8.3-buster`](https://github.com/Quantisan/docker-clojure/blob/35746beec4783f59ef1835e98f512f65ea12bfad/target/openjdk-14-buster/boot/Dockerfile)
--	[`openjdk-14-tools-deps`, `openjdk-14-tools-deps-1.10.1.561`, `openjdk-14-tools-deps-slim-buster`, `openjdk-14-tools-deps-1.10.1.561-slim-buster`](https://github.com/Quantisan/docker-clojure/blob/35746beec4783f59ef1835e98f512f65ea12bfad/target/openjdk-14-slim-buster/tools-deps/Dockerfile)
--	[`openjdk-14-tools-deps-buster`, `openjdk-14-tools-deps-1.10.1.561-buster`](https://github.com/Quantisan/docker-clojure/blob/35746beec4783f59ef1835e98f512f65ea12bfad/target/openjdk-14-buster/tools-deps/Dockerfile)
--	[`openjdk-15`, `openjdk-15-lein`, `openjdk-15-lein-2.9.3`, `openjdk-15-slim-buster`, `openjdk-15-lein-slim-buster`, `openjdk-15-lein-2.9.3-slim-buster`](https://github.com/Quantisan/docker-clojure/blob/35746beec4783f59ef1835e98f512f65ea12bfad/target/openjdk-15-slim-buster/lein/Dockerfile)
--	[`openjdk-15-buster`, `openjdk-15-lein-buster`, `openjdk-15-lein-2.9.3-buster`](https://github.com/Quantisan/docker-clojure/blob/35746beec4783f59ef1835e98f512f65ea12bfad/target/openjdk-15-buster/lein/Dockerfile)
--	[`openjdk-15-boot`, `openjdk-15-boot-2.8.3`, `openjdk-15-boot-slim-buster`, `openjdk-15-boot-2.8.3-slim-buster`](https://github.com/Quantisan/docker-clojure/blob/35746beec4783f59ef1835e98f512f65ea12bfad/target/openjdk-15-slim-buster/boot/Dockerfile)
--	[`openjdk-15-boot-buster`, `openjdk-15-boot-2.8.3-buster`](https://github.com/Quantisan/docker-clojure/blob/35746beec4783f59ef1835e98f512f65ea12bfad/target/openjdk-15-buster/boot/Dockerfile)
--	[`openjdk-15-tools-deps`, `openjdk-15-tools-deps-1.10.1.561`, `openjdk-15-tools-deps-slim-buster`, `openjdk-15-tools-deps-1.10.1.561-slim-buster`](https://github.com/Quantisan/docker-clojure/blob/35746beec4783f59ef1835e98f512f65ea12bfad/target/openjdk-15-slim-buster/tools-deps/Dockerfile)
--	[`openjdk-15-tools-deps-buster`, `openjdk-15-tools-deps-1.10.1.561-buster`](https://github.com/Quantisan/docker-clojure/blob/35746beec4783f59ef1835e98f512f65ea12bfad/target/openjdk-15-buster/tools-deps/Dockerfile)
--	[`openjdk-16`, `openjdk-16-lein`, `openjdk-16-lein-2.9.3`, `openjdk-16-slim-buster`, `openjdk-16-lein-slim-buster`, `openjdk-16-lein-2.9.3-slim-buster`](https://github.com/Quantisan/docker-clojure/blob/35746beec4783f59ef1835e98f512f65ea12bfad/target/openjdk-16-slim-buster/lein/Dockerfile)
--	[`openjdk-16-buster`, `openjdk-16-lein-buster`, `openjdk-16-lein-2.9.3-buster`](https://github.com/Quantisan/docker-clojure/blob/35746beec4783f59ef1835e98f512f65ea12bfad/target/openjdk-16-buster/lein/Dockerfile)
--	[`openjdk-16-boot`, `openjdk-16-boot-2.8.3`, `openjdk-16-boot-slim-buster`, `openjdk-16-boot-2.8.3-slim-buster`](https://github.com/Quantisan/docker-clojure/blob/35746beec4783f59ef1835e98f512f65ea12bfad/target/openjdk-16-slim-buster/boot/Dockerfile)
--	[`openjdk-16-boot-buster`, `openjdk-16-boot-2.8.3-buster`](https://github.com/Quantisan/docker-clojure/blob/35746beec4783f59ef1835e98f512f65ea12bfad/target/openjdk-16-buster/boot/Dockerfile)
--	[`openjdk-16-tools-deps`, `openjdk-16-tools-deps-1.10.1.561`, `openjdk-16-tools-deps-slim-buster`, `openjdk-16-tools-deps-1.10.1.561-slim-buster`](https://github.com/Quantisan/docker-clojure/blob/35746beec4783f59ef1835e98f512f65ea12bfad/target/openjdk-16-slim-buster/tools-deps/Dockerfile)
--	[`openjdk-16-tools-deps-buster`, `openjdk-16-tools-deps-1.10.1.561-buster`](https://github.com/Quantisan/docker-clojure/blob/35746beec4783f59ef1835e98f512f65ea12bfad/target/openjdk-16-buster/tools-deps/Dockerfile)
--	[`openjdk-16-alpine`, `openjdk-16-lein-alpine`, `openjdk-16-lein-2.9.3-alpine`](https://github.com/Quantisan/docker-clojure/blob/35746beec4783f59ef1835e98f512f65ea12bfad/target/openjdk-16-alpine/lein/Dockerfile)
--	[`openjdk-16-boot-alpine`, `openjdk-16-boot-2.8.3-alpine`](https://github.com/Quantisan/docker-clojure/blob/35746beec4783f59ef1835e98f512f65ea12bfad/target/openjdk-16-alpine/boot/Dockerfile)
--	[`openjdk-16-tools-deps-alpine`, `openjdk-16-tools-deps-1.10.1.561-alpine`](https://github.com/Quantisan/docker-clojure/blob/35746beec4783f59ef1835e98f512f65ea12bfad/target/openjdk-16-alpine/tools-deps/Dockerfile)
+-	[`latest`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/debian-bookworm-21/latest/Dockerfile)
+-	[`temurin-8-lein-2.11.2-alpine`, `temurin-8-lein-alpine`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/eclipse-temurin-8-jdk-alpine/lein/Dockerfile)
+-	[`temurin-8-lein-2.11.2-bookworm`, `temurin-8-lein-bookworm`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/debian-bookworm-8/lein/Dockerfile)
+-	[`temurin-8-lein-2.11.2-bookworm-slim`, `temurin-8-lein-bookworm-slim`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/debian-bookworm-slim-8/lein/Dockerfile)
+-	[`temurin-8-lein-2.11.2-bullseye`, `temurin-8-lein-bullseye`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/debian-bullseye-8/lein/Dockerfile)
+-	[`temurin-8-lein-2.11.2-bullseye-slim`, `temurin-8-lein-bullseye-slim`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/debian-bullseye-slim-8/lein/Dockerfile)
+-	[`temurin-8-lein-2.11.2-focal`, `temurin-8-lein-focal`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/eclipse-temurin-8-jdk-focal/lein/Dockerfile)
+-	[`temurin-8-lein`, `temurin-8-lein-2.11.2`, `temurin-8-lein-2.11.2-jammy`, `temurin-8-lein-jammy`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/eclipse-temurin-8-jdk-jammy/lein/Dockerfile)
+-	[`temurin-8-alpine`, `temurin-8-tools-deps-1.11.3.1456-alpine`, `temurin-8-tools-deps-alpine`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/eclipse-temurin-8-jdk-alpine/tools-deps/Dockerfile)
+-	[`temurin-8-bookworm`, `temurin-8-tools-deps-1.11.3.1456-bookworm`, `temurin-8-tools-deps-bookworm`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/debian-bookworm-8/tools-deps/Dockerfile)
+-	[`temurin-8-bookworm-slim`, `temurin-8-tools-deps-1.11.3.1456-bookworm-slim`, `temurin-8-tools-deps-bookworm-slim`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/debian-bookworm-slim-8/tools-deps/Dockerfile)
+-	[`temurin-8-bullseye`, `temurin-8-tools-deps-1.11.3.1456-bullseye`, `temurin-8-tools-deps-bullseye`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/debian-bullseye-8/tools-deps/Dockerfile)
+-	[`temurin-8-bullseye-slim`, `temurin-8-tools-deps-1.11.3.1456-bullseye-slim`, `temurin-8-tools-deps-bullseye-slim`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/debian-bullseye-slim-8/tools-deps/Dockerfile)
+-	[`temurin-8-focal`, `temurin-8-tools-deps-1.11.3.1456-focal`, `temurin-8-tools-deps-focal`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/eclipse-temurin-8-jdk-focal/tools-deps/Dockerfile)
+-	[`temurin-8-jammy`, `temurin-8-tools-deps`, `temurin-8-tools-deps-1.11.3.1456`, `temurin-8-tools-deps-1.11.3.1456-jammy`, `temurin-8-tools-deps-jammy`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/eclipse-temurin-8-jdk-jammy/tools-deps/Dockerfile)
+-	[`temurin-11-lein-2.11.2-alpine`, `temurin-11-lein-alpine`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/eclipse-temurin-11-jdk-alpine/lein/Dockerfile)
+-	[`temurin-11-lein-2.11.2-bookworm`, `temurin-11-lein-bookworm`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/debian-bookworm-11/lein/Dockerfile)
+-	[`temurin-11-lein-2.11.2-bookworm-slim`, `temurin-11-lein-bookworm-slim`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/debian-bookworm-slim-11/lein/Dockerfile)
+-	[`temurin-11-lein-2.11.2-bullseye`, `temurin-11-lein-bullseye`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/debian-bullseye-11/lein/Dockerfile)
+-	[`temurin-11-lein-2.11.2-bullseye-slim`, `temurin-11-lein-bullseye-slim`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/debian-bullseye-slim-11/lein/Dockerfile)
+-	[`temurin-11-lein-2.11.2-focal`, `temurin-11-lein-focal`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/eclipse-temurin-11-jdk-focal/lein/Dockerfile)
+-	[`temurin-11-lein`, `temurin-11-lein-2.11.2`, `temurin-11-lein-2.11.2-jammy`, `temurin-11-lein-jammy`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/eclipse-temurin-11-jdk-jammy/lein/Dockerfile)
+-	[`temurin-11-alpine`, `temurin-11-tools-deps-1.11.3.1456-alpine`, `temurin-11-tools-deps-alpine`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/eclipse-temurin-11-jdk-alpine/tools-deps/Dockerfile)
+-	[`temurin-11-bookworm`, `temurin-11-tools-deps-1.11.3.1456-bookworm`, `temurin-11-tools-deps-bookworm`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/debian-bookworm-11/tools-deps/Dockerfile)
+-	[`temurin-11-bookworm-slim`, `temurin-11-tools-deps-1.11.3.1456-bookworm-slim`, `temurin-11-tools-deps-bookworm-slim`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/debian-bookworm-slim-11/tools-deps/Dockerfile)
+-	[`temurin-11-bullseye`, `temurin-11-tools-deps-1.11.3.1456-bullseye`, `temurin-11-tools-deps-bullseye`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/debian-bullseye-11/tools-deps/Dockerfile)
+-	[`temurin-11-bullseye-slim`, `temurin-11-tools-deps-1.11.3.1456-bullseye-slim`, `temurin-11-tools-deps-bullseye-slim`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/debian-bullseye-slim-11/tools-deps/Dockerfile)
+-	[`temurin-11-focal`, `temurin-11-tools-deps-1.11.3.1456-focal`, `temurin-11-tools-deps-focal`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/eclipse-temurin-11-jdk-focal/tools-deps/Dockerfile)
+-	[`temurin-11-jammy`, `temurin-11-tools-deps`, `temurin-11-tools-deps-1.11.3.1456`, `temurin-11-tools-deps-1.11.3.1456-jammy`, `temurin-11-tools-deps-jammy`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/eclipse-temurin-11-jdk-jammy/tools-deps/Dockerfile)
+-	[`temurin-17-lein-2.11.2-alpine`, `temurin-17-lein-alpine`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/eclipse-temurin-17-jdk-alpine/lein/Dockerfile)
+-	[`temurin-17-lein-2.11.2-bookworm`, `temurin-17-lein-bookworm`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/debian-bookworm-17/lein/Dockerfile)
+-	[`temurin-17-lein-2.11.2-bookworm-slim`, `temurin-17-lein-bookworm-slim`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/debian-bookworm-slim-17/lein/Dockerfile)
+-	[`temurin-17-lein-2.11.2-bullseye`, `temurin-17-lein-bullseye`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/debian-bullseye-17/lein/Dockerfile)
+-	[`temurin-17-lein-2.11.2-bullseye-slim`, `temurin-17-lein-bullseye-slim`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/debian-bullseye-slim-17/lein/Dockerfile)
+-	[`temurin-17-lein-2.11.2-focal`, `temurin-17-lein-focal`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/eclipse-temurin-17-jdk-focal/lein/Dockerfile)
+-	[`temurin-17-lein`, `temurin-17-lein-2.11.2`, `temurin-17-lein-2.11.2-jammy`, `temurin-17-lein-jammy`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/eclipse-temurin-17-jdk-jammy/lein/Dockerfile)
+-	[`temurin-17-alpine`, `temurin-17-tools-deps-1.11.3.1456-alpine`, `temurin-17-tools-deps-alpine`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/eclipse-temurin-17-jdk-alpine/tools-deps/Dockerfile)
+-	[`temurin-17-bookworm`, `temurin-17-tools-deps-1.11.3.1456-bookworm`, `temurin-17-tools-deps-bookworm`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/debian-bookworm-17/tools-deps/Dockerfile)
+-	[`temurin-17-bookworm-slim`, `temurin-17-tools-deps-1.11.3.1456-bookworm-slim`, `temurin-17-tools-deps-bookworm-slim`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/debian-bookworm-slim-17/tools-deps/Dockerfile)
+-	[`temurin-17-bullseye`, `temurin-17-tools-deps-1.11.3.1456-bullseye`, `temurin-17-tools-deps-bullseye`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/debian-bullseye-17/tools-deps/Dockerfile)
+-	[`temurin-17-bullseye-slim`, `temurin-17-tools-deps-1.11.3.1456-bullseye-slim`, `temurin-17-tools-deps-bullseye-slim`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/debian-bullseye-slim-17/tools-deps/Dockerfile)
+-	[`temurin-17-focal`, `temurin-17-tools-deps-1.11.3.1456-focal`, `temurin-17-tools-deps-focal`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/eclipse-temurin-17-jdk-focal/tools-deps/Dockerfile)
+-	[`temurin-17-jammy`, `temurin-17-tools-deps`, `temurin-17-tools-deps-1.11.3.1456`, `temurin-17-tools-deps-1.11.3.1456-jammy`, `temurin-17-tools-deps-jammy`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/eclipse-temurin-17-jdk-jammy/tools-deps/Dockerfile)
+-	[`temurin-21-lein-2.11.2-alpine`, `temurin-21-lein-alpine`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/eclipse-temurin-21-jdk-alpine/lein/Dockerfile)
+-	[`lein`, `lein-2.11.2`, `lein-2.11.2-bookworm`, `lein-bookworm`, `temurin-21-lein`, `temurin-21-lein-2.11.2`, `temurin-21-lein-2.11.2-bookworm`, `temurin-21-lein-bookworm`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/debian-bookworm-21/lein/Dockerfile)
+-	[`lein-2.11.2-bookworm-slim`, `lein-bookworm-slim`, `temurin-21-lein-2.11.2-bookworm-slim`, `temurin-21-lein-bookworm-slim`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/debian-bookworm-slim-21/lein/Dockerfile)
+-	[`lein-2.11.2-bullseye`, `lein-bullseye`, `temurin-21-lein-2.11.2-bullseye`, `temurin-21-lein-bullseye`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/debian-bullseye-21/lein/Dockerfile)
+-	[`lein-2.11.2-bullseye-slim`, `lein-bullseye-slim`, `temurin-21-lein-2.11.2-bullseye-slim`, `temurin-21-lein-bullseye-slim`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/debian-bullseye-slim-21/lein/Dockerfile)
+-	[`temurin-21-lein-2.11.2-jammy`, `temurin-21-lein-jammy`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/eclipse-temurin-21-jdk-jammy/lein/Dockerfile)
+-	[`temurin-21-alpine`, `temurin-21-tools-deps-1.11.3.1456-alpine`, `temurin-21-tools-deps-alpine`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/eclipse-temurin-21-jdk-alpine/tools-deps/Dockerfile)
+-	[`temurin-21-bookworm`, `temurin-21-tools-deps`, `temurin-21-tools-deps-1.11.3.1456`, `temurin-21-tools-deps-1.11.3.1456-bookworm`, `temurin-21-tools-deps-bookworm`, `tools-deps`, `tools-deps-1.11.3.1456`, `tools-deps-1.11.3.1456-bookworm`, `tools-deps-bookworm`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/debian-bookworm-21/tools-deps/Dockerfile)
+-	[`temurin-21-bookworm-slim`, `temurin-21-tools-deps-1.11.3.1456-bookworm-slim`, `temurin-21-tools-deps-bookworm-slim`, `tools-deps-1.11.3.1456-bookworm-slim`, `tools-deps-bookworm-slim`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/debian-bookworm-slim-21/tools-deps/Dockerfile)
+-	[`temurin-21-bullseye`, `temurin-21-tools-deps-1.11.3.1456-bullseye`, `temurin-21-tools-deps-bullseye`, `tools-deps-1.11.3.1456-bullseye`, `tools-deps-bullseye`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/debian-bullseye-21/tools-deps/Dockerfile)
+-	[`temurin-21-bullseye-slim`, `temurin-21-tools-deps-1.11.3.1456-bullseye-slim`, `temurin-21-tools-deps-bullseye-slim`, `tools-deps-1.11.3.1456-bullseye-slim`, `tools-deps-bullseye-slim`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/debian-bullseye-slim-21/tools-deps/Dockerfile)
+-	[`temurin-21-jammy`, `temurin-21-tools-deps-1.11.3.1456-jammy`, `temurin-21-tools-deps-jammy`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/eclipse-temurin-21-jdk-jammy/tools-deps/Dockerfile)
+-	[`temurin-22-lein-2.11.2-alpine`, `temurin-22-lein-alpine`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/eclipse-temurin-22-jdk-alpine/lein/Dockerfile)
+-	[`temurin-22-lein`, `temurin-22-lein-2.11.2`, `temurin-22-lein-2.11.2-bookworm`, `temurin-22-lein-bookworm`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/debian-bookworm-22/lein/Dockerfile)
+-	[`temurin-22-lein-2.11.2-bookworm-slim`, `temurin-22-lein-bookworm-slim`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/debian-bookworm-slim-22/lein/Dockerfile)
+-	[`temurin-22-lein-2.11.2-bullseye`, `temurin-22-lein-bullseye`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/debian-bullseye-22/lein/Dockerfile)
+-	[`temurin-22-lein-2.11.2-bullseye-slim`, `temurin-22-lein-bullseye-slim`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/debian-bullseye-slim-22/lein/Dockerfile)
+-	[`temurin-22-lein-2.11.2-jammy`, `temurin-22-lein-jammy`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/eclipse-temurin-22-jdk-jammy/lein/Dockerfile)
+-	[`temurin-22-alpine`, `temurin-22-tools-deps-1.11.3.1456-alpine`, `temurin-22-tools-deps-alpine`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/eclipse-temurin-22-jdk-alpine/tools-deps/Dockerfile)
+-	[`temurin-22-bookworm`, `temurin-22-tools-deps`, `temurin-22-tools-deps-1.11.3.1456`, `temurin-22-tools-deps-1.11.3.1456-bookworm`, `temurin-22-tools-deps-bookworm`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/debian-bookworm-22/tools-deps/Dockerfile)
+-	[`temurin-22-bookworm-slim`, `temurin-22-tools-deps-1.11.3.1456-bookworm-slim`, `temurin-22-tools-deps-bookworm-slim`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/debian-bookworm-slim-22/tools-deps/Dockerfile)
+-	[`temurin-22-bullseye`, `temurin-22-tools-deps-1.11.3.1456-bullseye`, `temurin-22-tools-deps-bullseye`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/debian-bullseye-22/tools-deps/Dockerfile)
+-	[`temurin-22-bullseye-slim`, `temurin-22-tools-deps-1.11.3.1456-bullseye-slim`, `temurin-22-tools-deps-bullseye-slim`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/debian-bullseye-slim-22/tools-deps/Dockerfile)
+-	[`temurin-22-jammy`, `temurin-22-tools-deps-1.11.3.1456-jammy`, `temurin-22-tools-deps-jammy`](https://github.com/Quantisan/docker-clojure/blob/22167afbc6b9ab69c814f6de120e7ea953c7c277/target/eclipse-temurin-22-jdk-jammy/tools-deps/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/Quantisan/docker-clojure/issues](https://github.com/Quantisan/docker-clojure/issues)
+	[https://github.com/Quantisan/docker-clojure/issues](https://github.com/Quantisan/docker-clojure/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/clojure/), [`arm64v8`](https://hub.docker.com/r/arm64v8/clojure/)
@@ -72,7 +105,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/clojure`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fclojure)  
+	[official-images repo's `library/clojure` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fclojure)  
 	[official-images repo's `library/clojure` file](https://github.com/docker-library/official-images/blob/master/library/clojure) ([history](https://github.com/docker-library/official-images/commits/master/library/clojure))
 
 -	**Source of this description**:  
@@ -164,19 +197,21 @@ The `clojure` images come in many flavors, each designed for a specific use case
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like buster in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+Some of these tags may have names like bookworm or bullseye in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
-## `clojure:<version>-slim`
-
-This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `clojure`. Unless you are working in an environment where *only* the `clojure` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
+Some of these tags may have names like focal or jammy in them. These are the suite code names for releases of [Ubuntu](https://wiki.ubuntu.com/Releases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Ubuntu.
 
 ## `clojure:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
-This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
 
 To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
+
+## `clojure:<version>-slim`
+
+This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `clojure`. Unless you are working in an environment where *only* the `clojure` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
 
 # License
 

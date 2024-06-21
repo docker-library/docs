@@ -24,8 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.9.1`](https://github.com/docker-library/elasticsearch/blob/e773fb6d9c79d65310a0d6d41f9bf4f2cc336521/7/Dockerfile)
--	[`6.8.12`](https://github.com/docker-library/elasticsearch/blob/d8dcb6409e70fbd4749ffb06b15d32c8c1b0824a/6/Dockerfile)
+-	[`8.14.1`](https://github.com/elastic/dockerfiles/blob/69af7042cfc0b32c0d9de82110f15ff8dd74ded8/elasticsearch/Dockerfile)
+-	[`7.17.22`](https://github.com/elastic/dockerfiles/blob/1f54f19c85034114800de30ef9929c9b52947ffb/elasticsearch/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -40,7 +40,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/elasticsearch`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Felasticsearch)  
+	[official-images repo's `library/elasticsearch` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Felasticsearch)  
 	[official-images repo's `library/elasticsearch` file](https://github.com/docker-library/official-images/blob/master/library/elasticsearch) ([history](https://github.com/docker-library/official-images/commits/master/library/elasticsearch))
 
 -	**Source of this description**:  
@@ -92,7 +92,7 @@ See [Install Elasticsearch with Docker](https://www.elastic.co/guide/en/elastics
 
 # License
 
-View [license information](https://github.com/elastic/elasticsearch/blob/6.4/licenses/ELASTIC-LICENSE.txt) for the software contained in this image.
+View [license information](https://github.com/elastic/elasticsearch/blob/master/licenses/ELASTIC-LICENSE-2.0.txt) for the software contained in this image.
 
 As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 

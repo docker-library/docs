@@ -20,7 +20,7 @@ WARNING:
 	[The ClefOS Project](https://github.com/nealef/clefos)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
@@ -39,7 +39,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/clefos`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fclefos)  
+	[official-images repo's `library/clefos` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fclefos)  
 	[official-images repo's `library/clefos` file](https://github.com/docker-library/official-images/blob/master/library/clefos) ([history](https://github.com/docker-library/official-images/commits/master/library/clefos))
 
 -	**Source of this description**:  

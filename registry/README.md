@@ -17,39 +17,40 @@ WARNING:
 # Quick reference
 
 -	**Maintained by**:  
-	[Docker, Inc.](https://github.com/docker/distribution-library-image)
+	[the Docker Community](https://github.com/distribution/distribution-library-image)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
-
--	**Need a free, secure hosted registry?** Try [Docker Hub](https://www.docker.com/pricing).
+	[CNCF community slack](https://slack.cncf.io/), or [Stack Overflow](https://stackoverflow.com/questions/tagged/docker+registry)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.7.1`, `2.7`, `2`, `latest`](https://github.com/docker/distribution-library-image/blob/ab00e8dae12d4515ed259015eab771ec92e92dd4/amd64/Dockerfile)
+-	[`3.0.0-alpha.1`](https://github.com/docker/distribution-library-image/blob/6356e8dbe1969f7340ca25a9874faa26e6e6f71d/Dockerfile)
+-	[`2.8.3`, `2.8`, `2`, `latest`](https://github.com/docker/distribution-library-image/blob/39dd72feaab7066334829d6945c54bc51a0aee98/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/docker/distribution-library-image/issues](https://github.com/docker/distribution-library-image/issues)
+	[https://github.com/distribution/distribution-library-image/issues](https://github.com/distribution/distribution-library-image/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/registry/), [`arm32v6`](https://hub.docker.com/r/arm32v6/registry/), [`arm64v8`](https://hub.docker.com/r/arm64v8/registry/)
+	[`amd64`](https://hub.docker.com/r/amd64/registry/), [`arm32v6`](https://hub.docker.com/r/arm32v6/registry/), [`arm32v7`](https://hub.docker.com/r/arm32v7/registry/), [`arm64v8`](https://hub.docker.com/r/arm64v8/registry/), [`ppc64le`](https://hub.docker.com/r/ppc64le/registry/), [`s390x`](https://hub.docker.com/r/s390x/registry/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/registry/` directory](https://github.com/docker-library/repo-info/blob/master/repos/registry) ([history](https://github.com/docker-library/repo-info/commits/master/repos/registry))  
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/registry`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fregistry)  
+	[official-images repo's `library/registry` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fregistry)  
 	[official-images repo's `library/registry` file](https://github.com/docker-library/official-images/blob/master/library/registry) ([history](https://github.com/docker-library/official-images/commits/master/library/registry))
 
 -	**Source of this description**:  
 	[docs repo's `registry/` directory](https://github.com/docker-library/docs/tree/master/registry) ([history](https://github.com/docker-library/docs/commits/master/registry))
 
-# Docker Registry
+# Distribution Registry
 
-This image contains an implementation of the Docker Registry HTTP API V2 for use with Docker 1.6+. See [github.com/docker/distribution](https://github.com/docker/distribution) for more details about what it is.
+![logo](https://raw.githubusercontent.com/docker-library/docs/b09c592af0d6061629e02e4f674d22848f8236e8/registry/logo.png)
+
+This image contains an implementation of the OCI Distribution spec. See [github.com/opencontainers/distribution-spec](https://github.com/opencontainers/distribution-spec) for more details about what it is. You can find the full source code in [github.com/distribution/distribution](https://github.com/distribution/distribution).
 
 ## Run a local registry: Quick Version
 
@@ -67,13 +68,13 @@ $ docker push localhost:5000/ubuntu
 
 ## Recommended Reading
 
-The [documentation over at docs.docker.com](https://docs.docker.com/registry/) is a good place to learn more about what the registry is, how it works, and how to use it.
+The [documentation](https://distribution.github.io/distribution/) is a good place to learn more about what the registry is, how it works, and how to use it.
 
-Specifically, [the section regarding deployment](https://docs.docker.com/registry/deploying/) has pointers for more complex use cases than simply running a registry on localhost.
+Specifically, [the section regarding deployment](https://distribution.github.io/distribution/about/deploying/) has pointers for more complex use cases than simply running a registry on localhost.
 
 # License
 
-View [license information](https://github.com/docker/distribution/blob/master/LICENSE) for the software contained in this image.
+View [license information](https://github.com/distribution/distribution/blob/master/LICENSE) for the software contained in this image.
 
 As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 

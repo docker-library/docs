@@ -4,7 +4,7 @@ Monica is a great open source personal relationship management system to organiz
 
 %%LOGO%%
 
-# How to use this image
+## How to use this image
 
 There are two versions of the image you may choose from.
 
@@ -17,7 +17,7 @@ The `fpm` tag contains a fastCGI-Process that serves the web pages. This image s
 This image contains a webserver that exposes port 80. Run the container with:
 
 ```console
-docker run --name some-%%REPO%% -d -p 80:80 %%IMAGE%%
+docker run --name some-%%REPO%% -d -p 8080:80 %%IMAGE%%
 ```
 
 ### Using the fpm image
@@ -27,6 +27,10 @@ This image serves a fastCGI server that exposes port 9000. You may need an addit
 ```console
 docker run --name some-%%REPO%% -d -p 9000:9000 %%IMAGE%%:fpm
 ```
+
+### Using an external database
+
+You'll need to setup an external database. Monica currently support MySQL/MariaDB database. You can also link a database container, e. g. `--link my-mysql:db`, and then use `db` as the database host on setup. More info is in the docker-compose section.
 
 ### Persistent data storage
 
@@ -56,9 +60,13 @@ docker-compose exec %%REPO%% php artisan COMMAND
 
 where `%%REPO%%` is the name of the service in your `docker-compose.yml` file.
 
+## Configuration using environment variables
+
+The Monica image will use environment variables to setup the application. See [Monica documentation](https://github.com/monicahq/monica/blob/4.x/.env.example) for common used variables you should setup.
+
 ## Running the image with docker-compose
 
-See some examples of docker-compose possibilities in the [example section](%%GITHUB-REPO%%/blob/master/.examples).
+See some examples of docker-compose possibilities in the [example section](%%GITHUB-REPO%%/blob/main/.examples).
 
 ---
 
@@ -71,7 +79,7 @@ Make sure to pass in values for `APP_KEY` variable before you run this setup.
 1.	Create a `docker-compose.yml` file
 
 	```yaml
-	version: "3.4"
+	version: "3.9"
 
 	services:
 	  app:
@@ -81,18 +89,20 @@ Make sure to pass in values for `APP_KEY` variable before you run this setup.
 	    ports:
 	      - 8080:80
 	    environment:
-	      - APP_KEY=
+	      - APP_KEY= # Generate with `echo -n 'base64:'; openssl rand -base64 32`
 	      - DB_HOST=db
+	      - DB_USERNAME=monica
+	      - DB_PASSWORD=secret
 	    volumes:
 	      - data:/var/www/html/storage
 	    restart: always
 
 	  db:
-	    image: mysql:5.7
+	    image: mariadb:11
 	    environment:
 	      - MYSQL_RANDOM_ROOT_PASSWORD=true
 	      - MYSQL_DATABASE=monica
-	      - MYSQL_USER=homestead
+	      - MYSQL_USER=monica
 	      - MYSQL_PASSWORD=secret
 	    volumes:
 	      - mysql:/var/lib/mysql
@@ -105,11 +115,7 @@ Make sure to pass in values for `APP_KEY` variable before you run this setup.
 	    name: mysql
 	```
 
-2.	Set a value for `APP_KEY` variable before you run this setup. It should be a random 32-character string. For example, if you have the `pwgen` utility installed, you can copy and paste the output of:
-
-	```console
-	pwgen -s 32 1
-	```
+2.	Set a value for `APP_KEY` variable before you run this setup. It should be a random 32-character string. You can for instance copy and paste the output of `echo -n 'base64:'; openssl rand -base64 32`:
 
 3.	Run
 
@@ -129,12 +135,20 @@ Make sure to pass in values for `APP_KEY` variable before you run this setup.
 
 When using FPM image, you will need another container with a webserver to proxy http requests. In this example we use nginx with a basic container to do this.
 
-1.	Download `nginx.conf` and `Dockerfile` file for nginx image. An example can be found on the [`example section`](%%GITHUB-REPO%%/blob/master/.examples/supervisor/fpm/web/). The `web` container image should be pre-build before each deploy with: `docker-compose build`
+1.	Download `nginx.conf` and `Dockerfile` file for nginx image. An example can be found on the [`example section`](%%GITHUB-REPO%%/blob/main/.examples/full/fpm/web/)
+
+	```sh
+	mkdir web
+	curl -sSL https://raw.githubusercontent.com/monicahq/docker/main/.examples/full/web/nginx.conf -o web/nginx.conf
+	curl -sSL https://raw.githubusercontent.com/monicahq/docker/main/.examples/full/web/Dockerfile -o web/Dockerfile
+	```
+
+	The `web` container image should be pre-build before each deploy with: `docker-compose build`.
 
 2.	Create a `docker-compose.yml` file
 
 	```yaml
-	version: "3.4"
+	version: "3.9"
 
 	services:
 	  app:
@@ -142,8 +156,10 @@ When using FPM image, you will need another container with a webserver to proxy 
 	    depends_on:
 	      - db
 	    environment:
-	      - APP_KEY=
+	      - APP_KEY= # Generate with `echo -n 'base64:'; openssl rand -base64 32`
 	      - DB_HOST=db
+	      - DB_USERNAME=monica
+	      - DB_PASSWORD=secret
 	    volumes:
 	      - data:/var/www/html/storage
 	    restart: always
@@ -159,11 +175,11 @@ When using FPM image, you will need another container with a webserver to proxy 
 	    restart: always
 
 	  db:
-	    image: mysql:5.7
+	    image: mariadb:11
 	    environment:
 	      - MYSQL_RANDOM_ROOT_PASSWORD=true
 	      - MYSQL_DATABASE=monica
-	      - MYSQL_USER=homestead
+	      - MYSQL_USER=monica
 	      - MYSQL_PASSWORD=secret
 	    volumes:
 	      - mysql:/var/lib/mysql
@@ -176,11 +192,7 @@ When using FPM image, you will need another container with a webserver to proxy 
 	    name: mysql
 	```
 
-3.	Set a value for `APP_KEY` variable before you run this setup. It should be a random 32-character string. For example, if you have the `pwgen` utility installed, you can copy and paste the output of:
-
-	```console
-	pwgen -s 32 1
-	```
+3.	Set a value for `APP_KEY` variable before you run this setup. It should be a random 32-character string. You can for instance copy and paste the output of `echo -n 'base64:'; openssl rand -base64 32`:
 
 4.	Run
 
@@ -206,4 +218,4 @@ One way to expose your Monica instance is to use a proxy webserver from your hos
 
 ### Using a proxy webserver container
 
-See some examples of docker-compose possibilities in the [example section](%%GITHUB-REPO%%/blob/master/.examples) to show how to a proxy webserver with ssl capabilities.
+See some examples of docker-compose possibilities in the [example section](%%GITHUB-REPO%%/blob/main/.examples) to show how to a proxy webserver with ssl capabilities.

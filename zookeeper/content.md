@@ -30,7 +30,7 @@ $ docker run -it --rm --link some-zookeeper:zookeeper %%IMAGE%% zkCli.sh -server
 
 ## %%STACK%%
 
-This will start Zookeeper 3.5 in [replicated mode](https://zookeeper.apache.org/doc/current/zookeeperStarted.html#sc_RunningReplicatedZooKeeper). Please note, that Zookeeper 3.4 has slightly different `ZOO_SERVERS` format. Run `docker stack deploy -c stack.yml %%REPO%%` (or `docker-compose -f stack.yml up`) and wait for it to initialize completely. Ports `2181-2183` will be exposed.
+This will start Zookeeper in [replicated mode](https://zookeeper.apache.org/doc/current/zookeeperStarted.html#sc_RunningReplicatedZooKeeper). Run `docker stack deploy -c stack.yml %%REPO%%` (or `docker-compose -f stack.yml up`) and wait for it to initialize completely. Ports `2181-2183` will be exposed.
 
 > Please be aware that setting up multiple servers on a single machine will not create any redundancy. If something were to happen which caused the machine to die, all of the zookeeper servers would be offline. Full redundancy requires that each server have its own machine. It must be a completely separate physical server. Multiple virtual machines on the same physical host are still vulnerable to the complete failure of that host.
 
@@ -86,7 +86,7 @@ Defaults to `true`. Zookeeper's [`standaloneEnabled`](https://zookeeper.apache.o
 
 Defaults to `true`. Zookeeper's [`admin.enableServer`](http://zookeeper.apache.org/doc/r3.5.7/zookeeperAdmin.html#sc_adminserver_config)
 
-> New in 3.5.0: The AdminServer is an embedded Jetty server that provides an HTTP interface to the four letter word commands. By default, the server is started on port 8080, and commands are issued by going to the URL "/commands/[command name]", e.g., http://localhost:8080/commands/stat.
+> The AdminServer is an embedded Jetty server that provides an HTTP interface to the four letter word commands. By default, the server is started on port 8080, and commands are issued by going to the URL "/commands/[command name]", e.g., http://localhost:8080/commands/stat.
 
 ### `ZOO_AUTOPURGE_PURGEINTERVAL`
 
@@ -142,9 +142,7 @@ The id must be unique within the ensemble and should have a value between 1 and 
 
 ### `ZOO_SERVERS`
 
-This variable allows you to specify a list of machines of the Zookeeper ensemble. Each entry has the form of `server.id=host:port:port`. Entries are separated with space. Do note that this variable will not have any effect if you start the container with a `/conf` directory that already contains the `zoo.cfg` file.
-
-In 3.5, the syntax of this has changed. Servers should be specified as such: `server.id=<address1>:<port1>:<port2>[:role];[<client port address>:]<client port>` [Zookeeper Dynamic Reconfiguration](https://zookeeper.apache.org/doc/r3.5.7/zookeeperReconfig.html)
+This variable allows you to specify a list of machines of the Zookeeper ensemble. Each entry should be specified as such: `server.id=<address1>:<port1>:<port2>[:role];[<client port address>:]<client port>` [Zookeeper Dynamic Reconfiguration](https://zookeeper.apache.org/doc/r3.5.7/zookeeperReconfig.html). Entries are separated with space. Do note that this variable will not have any effect if you start the container with a `/conf` directory that already contains the `zoo.cfg` file.
 
 ## Where to store data
 
@@ -154,12 +152,20 @@ This image is configured with volumes at `/data` and `/datalog` to hold the Zook
 
 ## How to configure logging
 
-By default, ZooKeeper redirects stdout/stderr outputs to the console. You can redirect to a file located in `/logs` by passing environment variable `ZOO_LOG4J_PROP` as follows:
+By default, ZooKeeper redirects stdout/stderr outputs to the console. Since 3.8 ZooKeeper is shipped with [LOGBack](https://logback.qos.ch/) as the logging backend. The ZooKeeper default `logback.xml` file resides in the `/conf` directory. To override default logging configuration mount your custom config as a volume:
+
+```console
+$ docker run --name some-zookeeper --restart always -d -v $(pwd)/logback.xml:/conf/logback.xml %%IMAGE%%
+```
+
+Check [ZooKeeper Logging](https://zookeeper.apache.org/doc/current/zookeeperAdmin.html#sc_logging) for more details.
+
+### Logging in 3.7
+
+You can redirect to a file located in `/logs` by passing environment variable `ZOO_LOG4J_PROP` as follows:
 
 ```console
 $ docker run --name some-zookeeper --restart always -e ZOO_LOG4J_PROP="INFO,ROLLINGFILE" %%IMAGE%%
 ```
 
-This will write logs to `/logs/zookeeper.log`. Check [ZooKeeper Logging](https://zookeeper.apache.org/doc/current/zookeeperAdmin.html#sc_logging) for more details.
-
-This image is configured with a volume at `/logs` for your convenience.
+This will write logs to `/logs/zookeeper.log`. This image is configured with a volume at `/logs` for your convenience.

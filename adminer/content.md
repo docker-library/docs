@@ -44,7 +44,7 @@ To load plugins you can pass a list of filenames in `ADMINER_PLUGINS`:
 $ docker run --link some_database:db -p 8080:8080 -e ADMINER_PLUGINS='tables-filter tinymce' %%IMAGE%%
 ```
 
-If a plugin *requires* parameters to work correctly you will need to add a custom file to the container:
+If a plugin *requires* parameters to work correctly instead of adding the plugin to `ADMINER_PLUGINS`, you need to add a custom file to the container:
 
 ```console
 $ docker run --link some_database:db -p 8080:8080 -e ADMINER_PLUGINS='login-servers' %%IMAGE%%

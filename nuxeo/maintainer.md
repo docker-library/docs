@@ -1,1 +1,0 @@
-[Nuxeo](%%GITHUB-REPO%%)

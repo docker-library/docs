@@ -1,1 +1,1 @@
-ArangoDB - a distributed database with a flexible data model for documents, graphs, and key-values.
+ArangoDB - a scalable graph database system to drive value from connected data, faster.

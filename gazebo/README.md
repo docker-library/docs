@@ -20,29 +20,17 @@ WARNING:
 	[the Open Source Robotics Foundation](https://github.com/osrf/docker_images)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`gzserver7`, `gzserver7-xenial`](https://github.com/osrf/docker_images/blob/907d1ca26c959d9396eb391a104cffa443c266b8/gazebo/7/ubuntu/xenial/gzserver7/Dockerfile)
--	[`libgazebo7`, `libgazebo7-xenial`](https://github.com/osrf/docker_images/blob/907d1ca26c959d9396eb391a104cffa443c266b8/gazebo/7/ubuntu/xenial/libgazebo7/Dockerfile)
--	[`gzserver9-xenial`](https://github.com/osrf/docker_images/blob/02ee6373b365f3f3dc9ed118e6b3ce305e785d24/gazebo/9/ubuntu/xenial/gzserver9/Dockerfile)
--	[`libgazebo9-xenial`](https://github.com/osrf/docker_images/blob/02ee6373b365f3f3dc9ed118e6b3ce305e785d24/gazebo/9/ubuntu/xenial/libgazebo9/Dockerfile)
--	[`gzserver9`, `gzserver9-bionic`](https://github.com/osrf/docker_images/blob/0943643a90a482731ea6dfcf5af23f31c6a8ddcc/gazebo/9/ubuntu/bionic/gzserver9/Dockerfile)
--	[`libgazebo9`, `libgazebo9-bionic`](https://github.com/osrf/docker_images/blob/0943643a90a482731ea6dfcf5af23f31c6a8ddcc/gazebo/9/ubuntu/bionic/libgazebo9/Dockerfile)
--	[`gzserver9-stretch`](https://github.com/osrf/docker_images/blob/2b8feabc7cd6d92a1baed4faf0a279f542a5bde5/gazebo/9/debian/stretch/gzserver9/Dockerfile)
--	[`libgazebo9-stretch`](https://github.com/osrf/docker_images/blob/2b8feabc7cd6d92a1baed4faf0a279f542a5bde5/gazebo/9/debian/stretch/libgazebo9/Dockerfile)
--	[`gzserver10`, `gzserver10-bionic`](https://github.com/osrf/docker_images/blob/6f18102d57b424ce454f61e4ac432e3d6d71f670/gazebo/10/ubuntu/bionic/gzserver10/Dockerfile)
--	[`libgazebo10`, `libgazebo10-bionic`](https://github.com/osrf/docker_images/blob/6f18102d57b424ce454f61e4ac432e3d6d71f670/gazebo/10/ubuntu/bionic/libgazebo10/Dockerfile)
--	[`gzserver11-bionic`](https://github.com/osrf/docker_images/blob/97d8857521b438b0534a9f4f6548f37dc1ddd5d8/gazebo/11/ubuntu/bionic/gzserver11/Dockerfile)
--	[`libgazebo11-bionic`](https://github.com/osrf/docker_images/blob/97d8857521b438b0534a9f4f6548f37dc1ddd5d8/gazebo/11/ubuntu/bionic/libgazebo11/Dockerfile)
--	[`gzserver11`, `gzserver11-focal`](https://github.com/osrf/docker_images/blob/1b12a062b6d747f26c5ff75bbca3e5a31e84d855/gazebo/11/ubuntu/focal/gzserver11/Dockerfile)
--	[`libgazebo11`, `libgazebo11-focal`, `latest`](https://github.com/osrf/docker_images/blob/1b12a062b6d747f26c5ff75bbca3e5a31e84d855/gazebo/11/ubuntu/focal/libgazebo11/Dockerfile)
+-	[`gzserver11`, `gzserver11-focal`](https://github.com/osrf/docker_images/blob/27cc0b68263bbbb10bb58dd814efc0a6b0a01ec7/gazebo/11/ubuntu/focal/gzserver11/Dockerfile)
+-	[`libgazebo11`, `libgazebo11-focal`, `latest`](https://github.com/osrf/docker_images/blob/532c4f1af8c9dadb54b0c9769543c67c40c0c84f/gazebo/11/ubuntu/focal/libgazebo11/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/osrf/docker_images/issues](https://github.com/osrf/docker_images/issues)
+	[https://github.com/osrf/docker_images/issues](https://github.com/osrf/docker_images/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/gazebo/)
@@ -52,7 +40,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/gazebo`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fgazebo)  
+	[official-images repo's `library/gazebo` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fgazebo)  
 	[official-images repo's `library/gazebo` file](https://github.com/docker-library/official-images/blob/master/library/gazebo) ([history](https://github.com/docker-library/official-images/commits/master/library/gazebo))
 
 -	**Source of this description**:  

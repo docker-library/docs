@@ -24,12 +24,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`11`, `11.10`, `11.10.10`, `11-mysql-tomcat`, `11.10-mysql-tomcat`, `11.10.10-mysql-tomcat`, `lts-mysql-tomcat`, `lts-mysql`, `lts`](https://github.com/xwiki-contrib/docker-xwiki/blob/243f21745e8ddea87aaa9be37caeacd860c0f3e8/11/mysql-tomcat/Dockerfile)
--	[`11-postgres-tomcat`, `11.10-postgres-tomcat`, `11.10.10-postgres-tomcat`, `lts-postgres-tomcat`, `lts-postgres`](https://github.com/xwiki-contrib/docker-xwiki/blob/243f21745e8ddea87aaa9be37caeacd860c0f3e8/11/postgres-tomcat/Dockerfile)
--	[`12`, `12.7`, `12.7.1`, `12-mysql-tomcat`, `12.7-mysql-tomcat`, `12.7.1-mysql-tomcat`, `mysql-tomcat`, `stable-mysql-tomcat`, `stable-mysql`, `stable`, `latest`](https://github.com/xwiki-contrib/docker-xwiki/blob/951343bef4867540886b559a8c1fece56a1b6fd3/12/mysql-tomcat/Dockerfile)
--	[`12-postgres-tomcat`, `12.7-postgres-tomcat`, `12.7.1-postgres-tomcat`, `postgres-tomcat`, `stable-postgres-tomcat`, `stable-postgres`](https://github.com/xwiki-contrib/docker-xwiki/blob/951343bef4867540886b559a8c1fece56a1b6fd3/12/postgres-tomcat/Dockerfile)
--	[`12.6`, `12.6.2`, `12.6-mysql-tomcat`, `12.6.2-mysql-tomcat`](https://github.com/xwiki-contrib/docker-xwiki/blob/9fdf9a8c0ec050c74f6a5f10578fa6a900e5decd/12/mysql-tomcat/Dockerfile)
--	[`12.6-postgres-tomcat`, `12.6.2-postgres-tomcat`](https://github.com/xwiki-contrib/docker-xwiki/blob/9fdf9a8c0ec050c74f6a5f10578fa6a900e5decd/12/postgres-tomcat/Dockerfile)
+-	[`16`, `16.4`, `16.4.0`, `16-mysql-tomcat`, `16.4-mysql-tomcat`, `16.4.0-mysql-tomcat`, `mysql-tomcat`, `stable-mysql-tomcat`, `stable-mysql`, `stable`, `latest`](https://github.com/xwiki-contrib/docker-xwiki/blob/145efa556f68920c2cb16a04ce2c0e4ab9a7b495/16/mysql-tomcat/Dockerfile)
+-	[`16-postgres-tomcat`, `16.4-postgres-tomcat`, `16.4.0-postgres-tomcat`, `postgres-tomcat`, `stable-postgres-tomcat`, `stable-postgres`](https://github.com/xwiki-contrib/docker-xwiki/blob/145efa556f68920c2cb16a04ce2c0e4ab9a7b495/16/postgres-tomcat/Dockerfile)
+-	[`16-mariadb-tomcat`, `16.4-mariadb-tomcat`, `16.4.0-mariadb-tomcat`, `mariadb-tomcat`, `stable-mariadb-tomcat`, `stable-mariadb`](https://github.com/xwiki-contrib/docker-xwiki/blob/145efa556f68920c2cb16a04ce2c0e4ab9a7b495/16/mariadb-tomcat/Dockerfile)
+-	[`15`, `15.10`, `15.10.10`, `15-mysql-tomcat`, `15.10-mysql-tomcat`, `15.10.10-mysql-tomcat`, `lts-mysql-tomcat`, `lts-mysql`, `lts`](https://github.com/xwiki-contrib/docker-xwiki/blob/3885e1125214cbdc3dc1f6074cf89b762f9035e0/15/mysql-tomcat/Dockerfile)
+-	[`15-postgres-tomcat`, `15.10-postgres-tomcat`, `15.10.10-postgres-tomcat`, `lts-postgres-tomcat`, `lts-postgres`](https://github.com/xwiki-contrib/docker-xwiki/blob/3885e1125214cbdc3dc1f6074cf89b762f9035e0/15/postgres-tomcat/Dockerfile)
+-	[`15-mariadb-tomcat`, `15.10-mariadb-tomcat`, `15.10.10-mariadb-tomcat`, `lts-mariadb-tomcat`, `lts-mariadb`](https://github.com/xwiki-contrib/docker-xwiki/blob/3885e1125214cbdc3dc1f6074cf89b762f9035e0/15/mariadb-tomcat/Dockerfile)
+-	[`14`, `14.10`, `14.10.21`, `14-mysql-tomcat`, `14.10-mysql-tomcat`, `14.10.21-mysql-tomcat`](https://github.com/xwiki-contrib/docker-xwiki/blob/ffbda2123e322160254f342751bce9b978412e5f/14/mysql-tomcat/Dockerfile)
+-	[`14-postgres-tomcat`, `14.10-postgres-tomcat`, `14.10.21-postgres-tomcat`](https://github.com/xwiki-contrib/docker-xwiki/blob/ffbda2123e322160254f342751bce9b978412e5f/14/postgres-tomcat/Dockerfile)
+-	[`14-mariadb-tomcat`, `14.10-mariadb-tomcat`, `14.10.21-mariadb-tomcat`](https://github.com/xwiki-contrib/docker-xwiki/blob/ffbda2123e322160254f342751bce9b978412e5f/14/mariadb-tomcat/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -44,7 +47,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/xwiki`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fxwiki)  
+	[official-images repo's `library/xwiki` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fxwiki)  
 	[official-images repo's `library/xwiki` file](https://github.com/docker-library/official-images/blob/master/library/xwiki) ([history](https://github.com/docker-library/official-images/commits/master/library/xwiki))
 
 -	**Source of this description**:  

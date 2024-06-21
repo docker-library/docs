@@ -20,19 +20,19 @@ WARNING:
 	[the Mono Project](https://github.com/mono/docker)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.8.0.123`, `6.8.0`, `6.8`](https://github.com/mono/docker/blob/a449b2a57e1cfadd098c2bcad13f89c4eab83e54/6.8.0.123/Dockerfile)
--	[`6.8.0.123-slim`, `6.8.0-slim`, `6.8-slim`](https://github.com/mono/docker/blob/a449b2a57e1cfadd098c2bcad13f89c4eab83e54/6.8.0.123/slim/Dockerfile)
--	[`6.10.0.104`, `latest`, `6.10.0`, `6.10`, `6`](https://github.com/mono/docker/blob/a449b2a57e1cfadd098c2bcad13f89c4eab83e54/6.10.0.104/Dockerfile)
--	[`6.10.0.104-slim`, `slim`, `6.10.0-slim`, `6.10-slim`, `6-slim`](https://github.com/mono/docker/blob/a449b2a57e1cfadd098c2bcad13f89c4eab83e54/6.10.0.104/slim/Dockerfile)
+-	[`6.12.0.182`, `latest`, `6.12.0`, `6.12`, `6`](https://github.com/mono/docker/blob/9293c0cddf31a3dc829fccc6f8e1eb507a91cd34/6.12.0.182/Dockerfile)
+-	[`6.12.0.182-slim`, `slim`, `6.12.0-slim`, `6.12-slim`, `6-slim`](https://github.com/mono/docker/blob/9293c0cddf31a3dc829fccc6f8e1eb507a91cd34/6.12.0.182/slim/Dockerfile)
+-	[`6.10.0.104`, `6.10.0`, `6.10`](https://github.com/mono/docker/blob/0403aaf506b8f6859332a5035f660a7a228d3a97/6.10.0.104/Dockerfile)
+-	[`6.10.0.104-slim`, `6.10.0-slim`, `6.10-slim`](https://github.com/mono/docker/blob/0403aaf506b8f6859332a5035f660a7a228d3a97/6.10.0.104/slim/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/mono/docker/issues](https://github.com/mono/docker/issues)
+	[https://github.com/mono/docker/issues](https://github.com/mono/docker/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/mono/), [`arm32v5`](https://hub.docker.com/r/arm32v5/mono/), [`arm32v7`](https://hub.docker.com/r/arm32v7/mono/), [`arm64v8`](https://hub.docker.com/r/arm64v8/mono/), [`i386`](https://hub.docker.com/r/i386/mono/), [`ppc64le`](https://hub.docker.com/r/ppc64le/mono/)
@@ -42,7 +42,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/mono`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmono)  
+	[official-images repo's `library/mono` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fmono)  
 	[official-images repo's `library/mono` file](https://github.com/docker-library/official-images/blob/master/library/mono) ([history](https://github.com/docker-library/official-images/commits/master/library/mono))
 
 -	**Source of this description**:  
@@ -59,29 +59,21 @@ Sponsored by Xamarin, Mono is an open source implementation of Microsoft's .NET 
 
 # How to use this image
 
-This image will run stand-alone Mono console apps.
-
-## Create a `Dockerfile` in your Mono app project
-
-This example Dockerfile will run an executable called `TestingConsoleApp.exe`.
+To run a pre-built .exe file with the Mono image, use the following commands:
 
 ```dockerfile
-FROM mono:3.10-onbuild
-CMD [ "mono",  "./TestingConsoleApp.exe" ]
+FROM mono:latest
+RUN mkdir /opt/app
+COPY HelloWorld.exe /opt/app
+CMD ["mono", "/opt/app/HelloWorld.exe"]
 ```
 
-Place this file in the root of your app, next to the `.sln` solution file. Modify the exectuable name to match what you want to run.
-
-This image includes `ONBUILD` triggers that adds your app source code to `/usr/src/app/source`, restores NuGet packages and compiles the app, placing the output in `/usr/src/app/build`.
-
-With the Dockerfile in place, you can build and run a Docker image with your app:
+You can build and run the Docker Image as shown in the following example:
 
 ```console
-$ docker build -t my-app .
-$ docker run my-app
+docker build -t monoapp .
+docker run -it --rm monoapp
 ```
-
-You should see any output from your app now.
 
 # Credits
 

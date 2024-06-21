@@ -1,1 +1,1 @@
-[the Oracle Linux Product Team](%%GITHUB-REPO%%)
+[the Oracle Linux Container Team](%%GITHUB-REPO%%)

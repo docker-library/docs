@@ -20,29 +20,26 @@ WARNING:
 	[RethinkDB](https://github.com/rethinkdb/rethinkdb-dockerfiles)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.4.1-buster-slim`, `2.4-buster-slim`, `2-buster-slim`, `buster-slim`, `2.4.1`, `2.4`, `2`, `latest`](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/5bccd499742f6f05e7ddc970842a1763bdd99cfa/buster/2.4.1/Dockerfile)
--	[`2.4.1-centos`, `2.4-centos`, `2-centos`, `centos`](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/5bccd499742f6f05e7ddc970842a1763bdd99cfa/centos8/2.4.1/Dockerfile)
--	[`2.4.0-buster-slim`, `2.4.0`](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/444f7754822cb3e96cb2b66042d8e87d2227be0b/buster/2.4.0/Dockerfile)
--	[`2.4.0-centos`](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/444f7754822cb3e96cb2b66042d8e87d2227be0b/centos8/2.4.0/Dockerfile)
+-	[`2.4.4-bookworm-slim`, `2.4-bookworm-slim`, `2-bookworm-slim`, `bookworm-slim`, `2.4.3`, `2.4`, `2`, `latest`](https://github.com/rethinkdb/rethinkdb-dockerfiles/blob/48876a66c3be922c6b01c436bf78d662e53bceef/bookworm/2.4.4/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/rethinkdb/rethinkdb-dockerfiles/issues](https://github.com/rethinkdb/rethinkdb-dockerfiles/issues)
+	[https://github.com/rethinkdb/rethinkdb-dockerfiles/issues](https://github.com/rethinkdb/rethinkdb-dockerfiles/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/rethinkdb/)
+	[`amd64`](https://hub.docker.com/r/amd64/rethinkdb/), [`arm64v8`](https://hub.docker.com/r/arm64v8/rethinkdb/), [`s390x`](https://hub.docker.com/r/s390x/rethinkdb/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/rethinkdb/` directory](https://github.com/docker-library/repo-info/blob/master/repos/rethinkdb) ([history](https://github.com/docker-library/repo-info/commits/master/repos/rethinkdb))  
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/rethinkdb`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Frethinkdb)  
+	[official-images repo's `library/rethinkdb` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Frethinkdb)  
 	[official-images repo's `library/rethinkdb` file](https://github.com/docker-library/official-images/blob/master/library/rethinkdb) ([history](https://github.com/docker-library/official-images/commits/master/library/rethinkdb))
 
 -	**Source of this description**:  
@@ -105,7 +102,7 @@ The `rethinkdb` images come in many flavors, each designed for a specific use ca
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like buster in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+Some of these tags may have names like bookworm in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 ## `rethinkdb:<version>-slim`
 

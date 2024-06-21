@@ -1,8 +1,8 @@
 # Overview
 
-The images in this repository contain Open Liberty. For more information about Open Liberty, see the [Open Liberty Website](https://openliberty.io/) site.
+All of the images in this repository use Ubuntu as the Operating System. For variants that use the Universal Base Image, please see [this repository](https://hub.docker.com/r/openliberty/open-liberty/).
 
-This repository contains OpenLiberty based on top of OpenJDK 8 Eclipse OpenJ9 with Ubuntu images only. See [here](https://hub.docker.com/r/openliberty/open-liberty) for Open Liberty based on Red Hat's Universal Base Image, which includes additional java options.
+For more information on these images please see our [GitHub repository](https://github.com/OpenLiberty/ci.docker#container-images).
 
 # Image User
 
@@ -49,12 +49,20 @@ Please note that this pattern will duplicate the docker layers for those artifac
 
 There are multiple tags available in this repository.
 
-The `kernel` image contains just the Liberty kernel and no additional runtime features. This image is the recommended basis for custom built images, so that they can contain only the features required for a specific application. For example, the following Dockerfile starts with this image, copies in the `server.xml` that lists the features required by the application, and then uses the `configure.sh` script to download those features from the online repository.
+The `kernel-slim` image contains just the Liberty kernel and no additional runtime features. This image is the recommended basis for custom built images, so that they can contain only the features required for a specific application. For example, the following Dockerfile starts with this image, copies in the `server.xml` that lists the features required by the application, and then uses the `features.sh` script to download those features from the online repository.
 
 ```dockerfile
-FROM %%IMAGE%%:kernel
-COPY --chown=1001:0  Sample1.war /config/dropins/
+FROM %%IMAGE%%:kernel-slim
+
+# Add server configuration
 COPY --chown=1001:0  server.xml /config/
+# This script will add the requested XML snippets to enable Liberty features and grow image to be fit-for-purpose using featureUtility.
+# Only available in 'kernel-slim'. The 'full' tag already includes all features for convenience.
+RUN features.sh
+
+# Add the application
+COPY --chown=1001:0  Sample1.war /config/dropins/
+# This script will add the requested server configurations, apply any interim fixes and populate caches to optimize runtime.
 RUN configure.sh
 ```
 

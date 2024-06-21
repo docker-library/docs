@@ -24,8 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.9.1`](https://github.com/docker-library/kibana/blob/57a6a9708ee050e740ffac635acfaf520c8f2f4b/7/Dockerfile)
--	[`6.8.12`](https://github.com/docker-library/kibana/blob/0ebcdf78ff61cd1f293732350c4654365363b148/6/Dockerfile)
+-	[`8.14.1`](https://github.com/elastic/dockerfiles/blob/69af7042cfc0b32c0d9de82110f15ff8dd74ded8/kibana/Dockerfile)
+-	[`7.17.22`](https://github.com/elastic/dockerfiles/blob/1f54f19c85034114800de30ef9929c9b52947ffb/kibana/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -33,14 +33,14 @@ WARNING:
 	For issues with the Kibana Docker image or Kibana: https://github.com/elastic/kibana/issues
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/kibana/)
+	[`amd64`](https://hub.docker.com/r/amd64/kibana/), [`arm64v8`](https://hub.docker.com/r/arm64v8/kibana/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/kibana/` directory](https://github.com/docker-library/repo-info/blob/master/repos/kibana) ([history](https://github.com/docker-library/repo-info/commits/master/repos/kibana))  
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/kibana`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fkibana)  
+	[official-images repo's `library/kibana` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fkibana)  
 	[official-images repo's `library/kibana` file](https://github.com/docker-library/official-images/blob/master/library/kibana) ([history](https://github.com/docker-library/official-images/commits/master/library/kibana))
 
 -	**Source of this description**:  
@@ -94,7 +94,7 @@ For additional information on running and configuring Kibana on Docker, see [Run
 
 # License
 
-View [license information](https://github.com/elastic/kibana/blob/master/licenses/ELASTIC-LICENSE.txt) for the software contained in this image.
+View [license information](https://github.com/elastic/kibana/blob/master/licenses/ELASTIC-LICENSE-2.0.txt) for the software contained in this image.
 
 As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 

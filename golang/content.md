@@ -8,20 +8,23 @@ Go (a.k.a., Golang) is a programming language first developed at Google. It is a
 
 # How to use this image
 
-**Note:** `/go` is world-writable to allow flexibility in the user which runs the container (for example, in a container started with `--user 1000:1000`, running `go get github.com/example/...` will succeed). While the `777` directory would be insecure on a regular host setup, there are not typically other processes or users inside the container, so this is equivilant to `700` for Docker usage, but allowing for `--user` flexibility.
+**Note:** `/go` is world-writable to allow flexibility in the user which runs the container (for example, in a container started with `--user 1000:1000`, running `go get github.com/example/...` into the default `$GOPATH` will succeed). While the `777` directory would be insecure on a regular host setup, there are not typically other processes or users inside the container, so this is equivalent to `700` for Docker usage, but allowing for `--user` flexibility.
 
 ## Start a Go instance in your app
 
-The most straightforward way to use this image is to use a Go container as both the build and runtime environment. In your `Dockerfile`, writing something along the lines of the following will compile and run your project:
+The most straightforward way to use this image is to use a Go container as both the build and runtime environment. In your `Dockerfile`, writing something along the lines of the following will compile and run your project (assuming it uses `go.mod` for dependency management):
 
 ```dockerfile
-FROM %%IMAGE%%:1.14
+FROM %%IMAGE%%:1.22
 
-WORKDIR /go/src/app
+WORKDIR /usr/src/app
+
+# pre-copy/cache go.mod for pre-downloading dependencies and only redownloading them in subsequent builds if they change
+COPY go.mod go.sum ./
+RUN go mod download && go mod verify
+
 COPY . .
-
-RUN go get -d -v ./...
-RUN go install -v ./...
+RUN go build -v -o /usr/local/bin/app ./...
 
 CMD ["app"]
 ```
@@ -38,13 +41,13 @@ $ docker run -it --rm --name my-running-app my-golang-app
 There may be occasions where it is not appropriate to run your app inside a container. To compile, but not run your app inside the Docker instance, you can write something like:
 
 ```console
-$ docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp %%IMAGE%%:1.14 go build -v
+$ docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp %%IMAGE%%:1.22 go build -v
 ```
 
 This will add your current directory as a volume to the container, set the working directory to the volume, and run the command `go build` which will tell go to compile the project in the working directory and output the executable to `myapp`. Alternatively, if you have a `Makefile`, you can run the `make` command inside your container.
 
 ```console
-$ docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp %%IMAGE%%:1.14 make
+$ docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp %%IMAGE%%:1.22 make
 ```
 
 ## Cross-compile your app inside the Docker container
@@ -52,13 +55,13 @@ $ docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp %%IMAGE%%:1.14 make
 If you need to compile your application for a platform other than `linux/amd64` (such as `windows/386`):
 
 ```console
-$ docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp -e GOOS=windows -e GOARCH=386 %%IMAGE%%:1.14 go build -v
+$ docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp -e GOOS=windows -e GOARCH=386 %%IMAGE%%:1.22 go build -v
 ```
 
 Alternatively, you can build for multiple platforms at once:
 
 ```console
-$ docker run --rm -it -v "$PWD":/usr/src/myapp -w /usr/src/myapp %%IMAGE%%:1.14 bash
+$ docker run --rm -it -v "$PWD":/usr/src/myapp -w /usr/src/myapp %%IMAGE%%:1.22 bash
 $ for GOOS in darwin linux; do
 >   for GOARCH in 386 amd64; do
 >     export GOOS GOARCH
@@ -66,3 +69,7 @@ $ for GOOS in darwin linux; do
 >   done
 > done
 ```
+
+## Git LFS
+
+If downloading your dependencies results in an error like "checksum mismatch", you should check whether they are using [Git LFS](https://git-lfs.com/) (and thus need it installed for downloading them and calculating correct `go.sum` values).

@@ -35,23 +35,27 @@ $ docker run --name some-nginx -d -p 8080:80 some-content-nginx
 
 Then you can hit `http://localhost:8080` or `http://host-ip:8080` in your browser.
 
-## Complex configuration
+## Customize configuration
+
+You can mount your configuration file, or build a new image with it.
+
+If you wish to adapt the default configuration, use something like the following to get it from a running nginx container:
+
+```console
+$ docker run --rm --entrypoint=cat %%IMAGE%% /etc/nginx/nginx.conf > /host/path/nginx.conf
+```
+
+And then edit `/host/path/nginx.conf` in your host file system.
+
+For information on the syntax of the nginx configuration files, see [the official documentation](http://nginx.org/en/docs/) (specifically the [Beginner's Guide](http://nginx.org/en/docs/beginners_guide.html#conf_structure)).
+
+### Mount your configuration file
 
 ```console
 $ docker run --name my-custom-nginx-container -v /host/path/nginx.conf:/etc/nginx/nginx.conf:ro -d %%IMAGE%%
 ```
 
-For information on the syntax of the nginx configuration files, see [the official documentation](http://nginx.org/en/docs/) (specifically the [Beginner's Guide](http://nginx.org/en/docs/beginners_guide.html#conf_structure)).
-
-If you wish to adapt the default configuration, use something like the following to copy it from a running nginx container:
-
-```console
-$ docker run --name tmp-nginx-container -d %%IMAGE%%
-$ docker cp tmp-nginx-container:/etc/nginx/nginx.conf /host/path/nginx.conf
-$ docker rm -f tmp-nginx-container
-```
-
-This can also be accomplished more cleanly using a simple `Dockerfile` (in `/host/path/`):
+### Build a new image with your configuration file
 
 ```dockerfile
 FROM %%IMAGE%%
@@ -110,7 +114,7 @@ This behavior can be changed via the following environment variables:
 
 ## Running %%IMAGE%% in read-only mode
 
-To run %%IMAGE%% in read-only mode, you will need to mount a Docker volume to every location where %%IMAGE%% writes information. The default %%IMAGE%% configuration requires write access to `/var/cache` and `/var/run`. This can be easily accomplished by running %%IMAGE%% as follows:
+To run %%IMAGE%% in read-only mode, you will need to mount a Docker volume to every location where %%IMAGE%% writes information. The default %%IMAGE%% configuration requires write access to `/var/cache/nginx` and `/var/run`. This can be easily accomplished by running %%IMAGE%% as follows:
 
 ```console
 $ docker run -d -p 80:80 --read-only -v $(pwd)/nginx-cache:/var/cache/nginx -v $(pwd)/nginx-pid:/var/run nginx
@@ -180,12 +184,4 @@ http {
 }
 ```
 
-## Monitoring nginx with Amplify
-
-[Amplify](https://amplify.nginx.com/signup/) is a free monitoring tool that can be used to monitor microservice architectures based on nginx. Amplify is developed and maintained by the company behind the nginx software.
-
-With Amplify it is possible to collect and aggregate metrics across containers, and present a coherent set of visualizations of the key performance data, such as active connections or requests per second. It is also easy to quickly check for any performance degradations, traffic anomalies, and get a deeper insight into the nginx configuration in general.
-
-In order to use Amplify, a small Python-based agent software (Amplify Agent) should be [installed](https://github.com/nginxinc/docker-nginx-amplify) inside the container.
-
-For more information about Amplify, please check the official documentation [here](https://github.com/nginxinc/nginx-amplify-doc).
+Alternatively, check out the official [Docker NGINX unprivileged image](https://hub.docker.com/r/nginxinc/nginx-unprivileged).

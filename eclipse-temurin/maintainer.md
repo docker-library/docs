@@ -1,0 +1,1 @@
+[Adoptium](%%GITHUB-REPO%%)

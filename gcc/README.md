@@ -20,18 +20,20 @@ WARNING:
 	[the Docker Community](https://github.com/docker-library/gcc)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`10.2.0`, `10.2`, `10`, `latest`](https://github.com/docker-library/gcc/blob/36c1ff6d7b44428b35fa8b61787c76b225d8184a/10/Dockerfile)
--	[`9.3.0`, `9.3`, `9`](https://github.com/docker-library/gcc/blob/05aef2fc627328e12bbf77aca44fd399a22c7fc4/9/Dockerfile)
--	[`8.4.0`, `8.4`, `8`](https://github.com/docker-library/gcc/blob/05aef2fc627328e12bbf77aca44fd399a22c7fc4/8/Dockerfile)
+-	[`14.1.0`, `14.1`, `14`, `latest`, `14.1.0-bookworm`, `14.1-bookworm`, `14-bookworm`, `bookworm`](https://github.com/docker-library/gcc/blob/b1e7fc69e4021bab505d420fddc57002ef04939e/14/Dockerfile)
+-	[`13.3.0`, `13.3`, `13`, `13.3.0-bookworm`, `13.3-bookworm`, `13-bookworm`](https://github.com/docker-library/gcc/blob/6f09c34227daae15e71f398f0073e31f3ef74234/13/Dockerfile)
+-	[`12.3.0`, `12.3`, `12`, `12.3.0-bookworm`, `12.3-bookworm`, `12-bookworm`](https://github.com/docker-library/gcc/blob/b1e7fc69e4021bab505d420fddc57002ef04939e/12/Dockerfile)
+-	[`11.4.0`, `11.4`, `11`, `11.4.0-bullseye`, `11.4-bullseye`, `11-bullseye`](https://github.com/docker-library/gcc/blob/b1e7fc69e4021bab505d420fddc57002ef04939e/11/Dockerfile)
+-	[`10.5.0`, `10.5`, `10`, `10.5.0-bullseye`, `10.5-bullseye`, `10-bullseye`](https://github.com/docker-library/gcc/blob/b1e7fc69e4021bab505d420fddc57002ef04939e/10/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/docker-library/gcc/issues](https://github.com/docker-library/gcc/issues)
+	[https://github.com/docker-library/gcc/issues](https://github.com/docker-library/gcc/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/gcc/), [`arm32v5`](https://hub.docker.com/r/arm32v5/gcc/), [`arm32v7`](https://hub.docker.com/r/arm32v7/gcc/), [`arm64v8`](https://hub.docker.com/r/arm64v8/gcc/), [`ppc64le`](https://hub.docker.com/r/ppc64le/gcc/), [`s390x`](https://hub.docker.com/r/s390x/gcc/)
@@ -41,7 +43,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/gcc`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fgcc)  
+	[official-images repo's `library/gcc` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fgcc)  
 	[official-images repo's `library/gcc` file](https://github.com/docker-library/official-images/blob/master/library/gcc) ([history](https://github.com/docker-library/official-images/commits/master/library/gcc))
 
 -	**Source of this description**:  
@@ -92,7 +94,7 @@ $ docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp gcc:4.9 make
 
 # License
 
-View [license information](https://gcc.gnu.org/viewcvs/gcc/trunk/gcc/COPYING3?view=markup) for the software contained in this image.
+View [license information](https://gcc.gnu.org/onlinedocs/gcc-11.2.0/gcc/Copying.html) for the software contained in this image.
 
 As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 

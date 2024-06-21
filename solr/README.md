@@ -17,48 +17,34 @@ WARNING:
 # Quick reference
 
 -	**Maintained by**:  
-	[the Apache Lucene/Solr project](https://github.com/docker-solr/docker-solr)
+	[the Apache Solr project](https://github.com/apache/solr)
 
 -	**Where to get help**:  
-	[the Solr Community](https://lucene.apache.org/solr/community.html)
+	[the Solr Community](https://solr.apache.org/community.html)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.6.2`, `8.6`, `8`, `latest`](https://github.com/docker-solr/docker-solr/blob/e544db9616b5c9a7bf7663c510c90d138bce6ae9/8.6/Dockerfile)
--	[`8.6.2-slim`, `8.6-slim`, `8-slim`, `slim`](https://github.com/docker-solr/docker-solr/blob/e544db9616b5c9a7bf7663c510c90d138bce6ae9/8.6/slim/Dockerfile)
--	[`8.5.2`, `8.5`](https://github.com/docker-solr/docker-solr/blob/86159575c4b6da2010ae9ee003bf5a6de31157cb/8.5/Dockerfile)
--	[`8.5.2-slim`, `8.5-slim`](https://github.com/docker-solr/docker-solr/blob/86159575c4b6da2010ae9ee003bf5a6de31157cb/8.5/slim/Dockerfile)
--	[`8.4.1`, `8.4`](https://github.com/docker-solr/docker-solr/blob/86159575c4b6da2010ae9ee003bf5a6de31157cb/8.4/Dockerfile)
--	[`8.4.1-slim`, `8.4-slim`](https://github.com/docker-solr/docker-solr/blob/86159575c4b6da2010ae9ee003bf5a6de31157cb/8.4/slim/Dockerfile)
--	[`8.3.1`, `8.3`](https://github.com/docker-solr/docker-solr/blob/86159575c4b6da2010ae9ee003bf5a6de31157cb/8.3/Dockerfile)
--	[`8.3.1-slim`, `8.3-slim`](https://github.com/docker-solr/docker-solr/blob/86159575c4b6da2010ae9ee003bf5a6de31157cb/8.3/slim/Dockerfile)
--	[`8.2.0`, `8.2`](https://github.com/docker-solr/docker-solr/blob/86159575c4b6da2010ae9ee003bf5a6de31157cb/8.2/Dockerfile)
--	[`8.2.0-slim`, `8.2-slim`](https://github.com/docker-solr/docker-solr/blob/86159575c4b6da2010ae9ee003bf5a6de31157cb/8.2/slim/Dockerfile)
--	[`8.1.1`, `8.1`](https://github.com/docker-solr/docker-solr/blob/86159575c4b6da2010ae9ee003bf5a6de31157cb/8.1/Dockerfile)
--	[`8.1.1-slim`, `8.1-slim`](https://github.com/docker-solr/docker-solr/blob/86159575c4b6da2010ae9ee003bf5a6de31157cb/8.1/slim/Dockerfile)
--	[`8.0.0`, `8.0`](https://github.com/docker-solr/docker-solr/blob/86159575c4b6da2010ae9ee003bf5a6de31157cb/8.0/Dockerfile)
--	[`8.0.0-slim`, `8.0-slim`](https://github.com/docker-solr/docker-solr/blob/86159575c4b6da2010ae9ee003bf5a6de31157cb/8.0/slim/Dockerfile)
--	[`7.7.3`, `7.7`, `7`](https://github.com/docker-solr/docker-solr/blob/86159575c4b6da2010ae9ee003bf5a6de31157cb/7.7/Dockerfile)
--	[`7.7.3-slim`, `7.7-slim`, `7-slim`](https://github.com/docker-solr/docker-solr/blob/86159575c4b6da2010ae9ee003bf5a6de31157cb/7.7/slim/Dockerfile)
--	[`6.6.6`, `6.6`, `6`](https://github.com/docker-solr/docker-solr/blob/86159575c4b6da2010ae9ee003bf5a6de31157cb/6.6/Dockerfile)
--	[`6.6.6-slim`, `6.6-slim`, `6-slim`](https://github.com/docker-solr/docker-solr/blob/86159575c4b6da2010ae9ee003bf5a6de31157cb/6.6/slim/Dockerfile)
--	[`5.5.5`, `5.5`, `5`](https://github.com/docker-solr/docker-solr/blob/86159575c4b6da2010ae9ee003bf5a6de31157cb/5.5/Dockerfile)
--	[`5.5.5-slim`, `5.5-slim`, `5-slim`](https://github.com/docker-solr/docker-solr/blob/86159575c4b6da2010ae9ee003bf5a6de31157cb/5.5/slim/Dockerfile)
+-	[`9.6.1`, `9.6`, `9`, `latest`](https://github.com/apache/solr-docker/blob/9cd850b72309de05169544395c83a85b329d6b86/9.6/Dockerfile)
+-	[`9.6.1-slim`, `9.6-slim`, `9-slim`, `slim`](https://github.com/apache/solr-docker/blob/9cd850b72309de05169544395c83a85b329d6b86/9.6-slim/Dockerfile)
+-	[`9.5.0`, `9.5`](https://github.com/apache/solr-docker/blob/a17dd804fead2a6581f8e4c116451ed268f32126/9.5/Dockerfile)
+-	[`9.5.0-slim`, `9.5-slim`](https://github.com/apache/solr-docker/blob/a17dd804fead2a6581f8e4c116451ed268f32126/9.5-slim/Dockerfile)
+-	[`8.11.3`, `8.11`, `8`](https://github.com/apache/solr-docker/blob/7156fa15807945939cd2a5525bbb63219da07b1e/8.11/Dockerfile)
+-	[`8.11.3-slim`, `8.11-slim`, `8-slim`](https://github.com/apache/solr-docker/blob/7156fa15807945939cd2a5525bbb63219da07b1e/8.11-slim/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/docker-solr/docker-solr/issues](https://github.com/docker-solr/docker-solr/issues)
+	[The Solr Users mailing list](https://solr.apache.org/community.html#mailing-lists-chat)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/solr/), [`arm64v8`](https://hub.docker.com/r/arm64v8/solr/)
+	[`amd64`](https://hub.docker.com/r/amd64/solr/), [`arm64v8`](https://hub.docker.com/r/arm64v8/solr/), [`ppc64le`](https://hub.docker.com/r/ppc64le/solr/), [`s390x`](https://hub.docker.com/r/s390x/solr/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/solr/` directory](https://github.com/docker-library/repo-info/blob/master/repos/solr) ([history](https://github.com/docker-library/repo-info/commits/master/repos/solr))  
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/solr`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fsolr)  
+	[official-images repo's `library/solr` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fsolr)  
 	[official-images repo's `library/solr` file](https://github.com/docker-library/official-images/blob/master/library/solr) ([history](https://github.com/docker-library/official-images/commits/master/library/solr))
 
 -	**Source of this description**:  
@@ -66,13 +52,15 @@ WARNING:
 
 # What is Solr?
 
-Solr is highly reliable, scalable and fault tolerant, providing distributed indexing, replication and load-balanced querying, automated failover and recovery, centralized configuration and more. Solr powers the search and navigation features of many of the world's largest internet sites.
+Apache Solr™ is the popular, blazing fast, open source NoSQL search platform. Its major features include powerful full-text search, hit highlighting, faceted search, dynamic clustering, database integration, rich document handling, and geospatial search. Solr is highly scalable, providing fault tolerant distributed search and indexing, and powers the search and navigation features of many of the world's largest websites.
 
-Learn more on [Apache Solr homepage](http://lucene.apache.org/solr/) and in the [Apache Solr Reference Guide](https://www.apache.org/dyn/closer.cgi/lucene/solr/ref-guide/).
+Learn more on [Apache Solr homepage](http://solr.apache.org/) and in the [Apache Solr Reference Guide](https://solr.apache.org/guide/).
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/ddc9eb521da7c412b70229f1a600d0c63d55d0f7/solr/logo.png)
 
 # How to use this Docker image
+
+Full documentation can be found in the [Solr Reference Guide's Docker section](https://solr.apache.org/guide/solr/latest/deployment-guide/solr-in-docker.html).
 
 To run a single Solr server:
 
@@ -82,15 +70,15 @@ $ docker run -p 8983:8983 -t solr
 
 Then with a web browser go to http://localhost:8983/ to see the Solr Admin Console.
 
-For more detailed instructions for using this image, see the [README](https://github.com/docker-solr/docker-solr/blob/master/README.md).
-
 # About this repository
 
-This repository is available on [github.com/docker-solr/docker-solr](https://github.com/docker-solr/docker-solr), and the official build is on the [Docker Hub](https://hub.docker.com/_/solr/).
+This repository is available on [github.com/apache/solr-docker](https://github.com/apache/solr-docker), but the image is built and maintained in the official Solr repo [github.com/apache/solr](https://github.com/apache/solr).
+
+Please direct any usage questions to the [Solr users mailing list](https://solr.apache.org/community.html#mailing-lists-chat).
 
 # History
 
-This project was started in 2015 by [Martijn Koster](https://github.com/makuk66). In 2019 maintainership and copyright was transferred to the Apache Lucene/Solr project. Many thanks to Martijn for all your contributions over the years!
+This project was started in 2015 by [Martijn Koster](https://github.com/makuk66) in the [github.com/docker-solr/docker-solr](https://github.com/docker-solr/docker-solr) repository. In 2019, the maintainership and copyright was transferred to the Apache Solr project. Many thanks to Martijn for all your contributions over the years!
 
 # Image Variants
 
@@ -110,7 +98,7 @@ Solr is licensed under the [Apache License, Version 2.0](https://www.apache.org/
 
 This repository is also licensed under the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0).
 
-Copyright 2015-2020 The Apache Software Foundation
+Copyright 2015-2022 The Apache Software Foundation
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 

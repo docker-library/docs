@@ -1,1 +1,1 @@
-The Docker Registry 2.0 implementation for storing and distributing Docker images
+Distribution implementation for storing and distributing of container images and artifacts

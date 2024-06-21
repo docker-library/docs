@@ -24,13 +24,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.1`, `latest`](https://github.com/Silverpeas/docker-silverpeas-prod/blob/7d002ee69a68f8a8f640ce7fbf7fd47b526123d0/Dockerfile)
--	[`6.0.2`](https://github.com/Silverpeas/docker-silverpeas-prod/blob/189a4f2db783d5052add54f2c07ca7a3b860c685/Dockerfile)
+-	[`6.3.5`, `latest`](https://github.com/Silverpeas/docker-silverpeas-prod/blob/126477050a7890b45fd57eebe471bfdcff20643d/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/Silverpeas/docker-silverpeas-prod/issues](https://github.com/Silverpeas/docker-silverpeas-prod/issues)
+	[https://github.com/Silverpeas/docker-silverpeas-prod/issues](https://github.com/Silverpeas/docker-silverpeas-prod/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/silverpeas/)
@@ -40,7 +39,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/silverpeas`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fsilverpeas)  
+	[official-images repo's `library/silverpeas` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fsilverpeas)  
 	[official-images repo's `library/silverpeas` file](https://github.com/docker-library/official-images/blob/master/library/silverpeas) ([history](https://github.com/docker-library/official-images/commits/master/library/silverpeas))
 
 -	**Source of this description**:  
@@ -123,7 +122,9 @@ $ docker run --name silverpeas -p 8080:8000 -d \
     silverpeas
 ```
 
-By default, `database` is the default hostname used by Silverpeas for its persistence backend. So, as the PostgreSQL database is linked here under the alias `database`, we don't have to explicitly indicate its hostname with the `DB_SERVER` environment variable. The Silverpeas images expose the 8000 port and here this port is mapped to the 8080 port of the host; Silverpeas is then accessible at `http://localhost:8080/silverpeas`. You can sign in Silverpeas with the administrator account `SilverAdmin` and with as password `SilverAdmin`.
+By default, `database` is the default hostname used by Silverpeas for its persistence backend. So, as the PostgreSQL database is linked here under the alias `database`, we don't have to explicitly indicate its hostname with the `DB_SERVER` environment variable. The Silverpeas images expose the 8000 port and here this port is mapped to the 8080 port of the host.
+
+Silverpeas is then accessible at [http://localhost:8080/silverpeas](http://localhost:8080/silverpeas). You can sign in Silverpeas with the administrator account `SilverAdmin` and with as password `SilverAdmin`. Don't forget to change the password of the administrator account.
 
 By default, some volumes are created inside the container, so that we can access them in the host. (Refers the [Docker Documentation](https://docs.docker.com/engine/tutorials/dockervolumes/#locating-a-volume) to locate them.) Among them `/opt/silverpeas/log` and `/opt/silverpeas/data`: the first volume contains the logs produced by Silverpeas whereas the second volume contains all the data that are created and managed by the users in Silverpeas. Because the latter has already a directories structure created at image creation, a host directory cannot be mounted into the container at `opt/silverpeas/data` without losing the volume's content (the mount point overlays the pre-existing content of the volume). In our example, in order to easily locate the two volumes, we label them explicitly with respectively the labels `silverpeas-log` and `silverpeas-data`. (Using a [Data Volume Container](https://docs.docker.com/engine/userguide/containers/dockervolumes/) to map `/opt/silverpeas/log` and `/opt/silverpeas/data` is a better solution.)
 
@@ -243,38 +244,6 @@ $ docker create --name silverpeas-store \
     -v /etc/silverpeas/my-datasource.cli:/opt/silverpeas/configuration/jboss/my-datasource.cli \
     silverpeas \
     /bin/true
-```
-
-# Document conversion
-
-Some features in Silverpeas (export, preview, content visualization, ...) requires a document converter. The document converter isn't mandatory to use Silverpeas but it gives access to additional features. The document conversion is performed in Silverpeas by the program LibreOffice running as a daemon. So, in order to enable and to use these features, you have first to use a Data Volume Container to store all the Silverpeas data and second to run a container embbeding a LibreOffice program running as a daemon. There is no official Docker images of LibreOffice but DockerHub hosts some of unofficial images of it ([xcgd/libreoffice](https://hub.docker.com/r/xcgd/libreoffice/) for example).
-
-Once a Data Volume Container is created for Silverpeas as explained in the section above, you have to link it with the Docker image running LibreOffice as a daemon in order the program have access the documents to convert:
-
-```console
-$ docker run --name libreoffice -d \
-    --volumes-from silverpeas-store \
-    xcgd/libreoffice
-```
-
-Check the port at which the LibreOffice image is listening and then defines it in the Silverpeas configuration. In our example, `xcgd/libreoffice` listens by default the port 8997. The configuration parameters to communicate with LibreOffice are defined by the two following properties:
-
--	`CONVERTER_HOST` is either the IP address or the name of the host in which runs LibreOffice,
--	`CONVERTER_PORT` is the port number at which the LibreOffice daemon listens.
-
-These properties have to be defined in the Silverpeas global configuration file `config.properties` that is mounted in the Data Volume Container:
-
-	CONVERTER_HOST=libreoffice
-	CONVERTER_PORT=8997
-
-Then the Docker image of Silverpeas can be ran:
-
-```console
-$ docker run --name silverpeas -p 8080:8000 -d \
-    --link postgresql:database \
-    --link libreoffice:libreoffice \
-    --volumes-from silverpeas-store \
-    silverpeas
 ```
 
 # Logs

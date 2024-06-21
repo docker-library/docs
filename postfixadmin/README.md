@@ -20,18 +20,18 @@ WARNING:
 	[Postfix Admin](https://github.com/postfixadmin/docker)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.2.4-apache`, `3.2-apache`, `3-apache`, `apache`, `3.2.4`, `3.2`, `3`, `latest`](https://github.com/postfixadmin/docker/blob/b1ffcf48cd23b4ba779dc5c1a8c6f78c6ef45077/apache/Dockerfile)
--	[`3.2.4-fpm`, `3.2-fpm`, `3-fpm`, `fpm`](https://github.com/postfixadmin/docker/blob/b1ffcf48cd23b4ba779dc5c1a8c6f78c6ef45077/fpm/Dockerfile)
--	[`3.2.4-fpm-alpine`, `3.2-fpm-alpine`, `3-fpm-alpine`, `fpm-alpine`](https://github.com/postfixadmin/docker/blob/b1ffcf48cd23b4ba779dc5c1a8c6f78c6ef45077/fpm-alpine/Dockerfile)
+-	[`3.3.13-apache`, `3.3-apache`, `3-apache`, `apache`, `3.3.13`, `3.3`, `3`, `latest`](https://github.com/postfixadmin/docker/blob/0f5eefc2d1b392706a4f9b0840f04eb2a1103a81/apache/Dockerfile)
+-	[`3.3.13-fpm`, `3.3-fpm`, `3-fpm`, `fpm`](https://github.com/postfixadmin/docker/blob/0f5eefc2d1b392706a4f9b0840f04eb2a1103a81/fpm/Dockerfile)
+-	[`3.3.13-fpm-alpine`, `3.3-fpm-alpine`, `3-fpm-alpine`, `fpm-alpine`](https://github.com/postfixadmin/docker/blob/0f5eefc2d1b392706a4f9b0840f04eb2a1103a81/fpm-alpine/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/postfixadmin/docker/issues](https://github.com/postfixadmin/docker/issues)
+	[https://github.com/postfixadmin/docker/issues](https://github.com/postfixadmin/docker/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/postfixadmin/), [`arm32v5`](https://hub.docker.com/r/arm32v5/postfixadmin/), [`arm32v6`](https://hub.docker.com/r/arm32v6/postfixadmin/), [`arm32v7`](https://hub.docker.com/r/arm32v7/postfixadmin/), [`arm64v8`](https://hub.docker.com/r/arm64v8/postfixadmin/), [`i386`](https://hub.docker.com/r/i386/postfixadmin/), [`mips64le`](https://hub.docker.com/r/mips64le/postfixadmin/), [`ppc64le`](https://hub.docker.com/r/ppc64le/postfixadmin/), [`s390x`](https://hub.docker.com/r/s390x/postfixadmin/)
@@ -41,7 +41,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/postfixadmin`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fpostfixadmin)  
+	[official-images repo's `library/postfixadmin` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fpostfixadmin)  
 	[official-images repo's `library/postfixadmin` file](https://github.com/docker-library/official-images/blob/master/library/postfixadmin) ([history](https://github.com/docker-library/official-images/commits/master/library/postfixadmin))
 
 -	**Source of this description**:  
@@ -103,16 +103,16 @@ $ docker run -v /local/path/to/config.local.php:/var/www/html/config.local.php \
         postfixadmin
 ```
 
-... via [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/) or [`docker-compose`](https://github.com/docker/compose)
+... via [`docker-compose`](https://github.com/docker/compose) or [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/)
 
-Example `stack.yml` for `postfixadmin`:
+Example `docker-compose.yml` for `postfixadmin`:
 
 ```yaml
 version: '3'
 
 services:
   db:
-    image: mysql:5.7
+    image: mysql:8.0
     restart: always
     environment:
       MYSQL_RANDOM_ROOT_PASSWORD: 1
@@ -135,7 +135,7 @@ services:
       POSTFIXADMIN_DB_PASSWORD: example
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/c011eff7d5385665f43db2e0330716da4ab68e75/postfixadmin/stack.yml)
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/8b35a43795bda4f4ca1299bee2d02afe2434ee7f/postfixadmin/stack.yml)
 
 Run docker stack deploy -c stack.yml postfixadmin (or docker-compose -f stack.yml up), wait for it to initialize completely, and visit http://swarm-ip:8080, http://localhost:8080, or http://host-ip:8080 (as appropriate).
 

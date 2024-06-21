@@ -20,26 +20,26 @@ WARNING:
 	[the Docker Community](https://github.com/tianon/docker-brew-cirros)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`0.5.1`, `0.5`, `0`, `latest`](https://github.com/tianon/docker-brew-cirros/blob/0f4ac5ae1e2b7bbff60b81b554f7578be1caec3b/arches/amd64/Dockerfile)
+-	[`0.6.2`, `0.6`, `0`, `latest`](https://github.com/tianon/docker-brew-cirros/blob/e8833253f108046f977fbcecd7f02170bd20d357/arches/amd64/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/tianon/docker-brew-cirros/issues](https://github.com/tianon/docker-brew-cirros/issues)
+	[https://github.com/tianon/docker-brew-cirros/issues](https://github.com/tianon/docker-brew-cirros/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/cirros/), [`arm32v5`](https://hub.docker.com/r/arm32v5/cirros/), [`arm64v8`](https://hub.docker.com/r/arm64v8/cirros/), [`i386`](https://hub.docker.com/r/i386/cirros/), [`ppc64le`](https://hub.docker.com/r/ppc64le/cirros/)
+	[`amd64`](https://hub.docker.com/r/amd64/cirros/), [`arm32v7`](https://hub.docker.com/r/arm32v7/cirros/), [`arm64v8`](https://hub.docker.com/r/arm64v8/cirros/), [`ppc64le`](https://hub.docker.com/r/ppc64le/cirros/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/cirros/` directory](https://github.com/docker-library/repo-info/blob/master/repos/cirros) ([history](https://github.com/docker-library/repo-info/commits/master/repos/cirros))  
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/cirros`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fcirros)  
+	[official-images repo's `library/cirros` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fcirros)  
 	[official-images repo's `library/cirros` file](https://github.com/docker-library/official-images/blob/master/library/cirros) ([history](https://github.com/docker-library/official-images/commits/master/library/cirros))
 
 -	**Source of this description**:  

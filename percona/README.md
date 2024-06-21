@@ -20,17 +20,17 @@ WARNING:
 	[Percona](https://github.com/percona/percona-docker)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.0.20-11-centos`, `8.0-centos`, `8-centos`, `8.0.20-11`, `8.0`, `8`, `ps-8.0.20-11`, `ps-8.0`, `ps-8`](https://github.com/percona/percona-docker/blob/65855912b9946093cee42f987336440972405391/percona-server.80/Dockerfile)
--	[`5.7.31-centos`, `5.7-centos`, `5-centos`, `centos`, `5.7.31`, `5.7`, `5`, `ps-5.7.31`, `ps-5.7`, `ps-5`, `latest`](https://github.com/percona/percona-docker/blob/2f1defc65939af8e4a97f8056107b8a9c3e9af89/percona-server-5.7/Dockerfile-dockerhub)
--	[`5.6.49-centos`, `5.6-centos`, `5.6.49`, `5.6`, `ps-5.6.49`, `ps-5.6`](https://github.com/percona/percona-docker/blob/ab4eb080ef911c18322e891304180ad52c747716/percona-server.56/Dockerfile-dockerhub)
--	[`psmdb-4.4.1`, `psmdb-4.4`](https://github.com/percona/percona-docker/blob/bed0f0e055fd65243fcce3dd7de499de410d04e4/percona-server-mongodb-4.4/Dockerfile)
--	[`psmdb-4.2.9`, `psmdb-4.2`](https://github.com/percona/percona-docker/blob/3afa8f854ae31a688c4efd47bc0e622125cc155d/percona-server-mongodb-4.2/Dockerfile)
--	[`psmdb-4.0.20`, `psmdb-4.0`](https://github.com/percona/percona-docker/blob/adcc0afde81a4f22c7860ca4700dab6853c463c6/percona-server-mongodb-4.0/Dockerfile)
--	[`psmdb-3.6.19`, `psmdb-3.6`](https://github.com/percona/percona-docker/blob/ffcb69d7026891a1ddce412a39d5699422d054ec/percona-server-mongodb-3.6/Dockerfile)
+-	[`8.0.36-28-centos`, `8.0-centos`, `8-centos`, `8.0.36-28`, `8.0`, `8`, `ps-8.0.36-28`, `ps-8.0`, `ps-8`](https://github.com/percona/percona-docker/blob/02252c71b5fcf2d2235f7ec0d81940d4f2c45b64/percona-server-8.0/Dockerfile)
+-	[`5.7.44-centos`, `5.7-centos`, `5-centos`, `centos`, `5.7.44`, `5.7`, `5`, `ps-5.7.44`, `ps-5.7`, `ps-5`](https://github.com/percona/percona-docker/blob/b89efa5f100edacc0ef660cef37975acfaf67326/percona-server-5.7/Dockerfile-dockerhub)
+-	[`5.6.51-2-centos`, `5.6-centos`, `5.6.51-2`, `5.6`, `ps-5.6.51-2`, `ps-5.6`](https://github.com/percona/percona-docker/blob/4510d49bcce5cfce58a42c198d55399b144add83/percona-server-5.6/Dockerfile-dockerhub)
+-	[`psmdb-6.0.6`, `psmdb-6.0`](https://github.com/percona/percona-docker/blob/80ab68b2d84c7c17c8cbc07edb35e35399fd0a54/percona-server-mongodb-6.0/Dockerfile)
+-	[`psmdb-5.0.18`, `psmdb-5.0`](https://github.com/percona/percona-docker/blob/80ab68b2d84c7c17c8cbc07edb35e35399fd0a54/percona-server-mongodb-5.0/Dockerfile)
+-	[`psmdb-4.4.22`, `psmdb-4.4`](https://github.com/percona/percona-docker/blob/80ab68b2d84c7c17c8cbc07edb35e35399fd0a54/percona-server-mongodb-4.4/Dockerfile)
+-	[`psmdb-4.2.24`, `psmdb-4.2`](https://github.com/percona/percona-docker/blob/80ab68b2d84c7c17c8cbc07edb35e35399fd0a54/percona-server-mongodb-4.2/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -47,7 +47,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/percona`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fpercona)  
+	[official-images repo's `library/percona` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fpercona)  
 	[official-images repo's `library/percona` file](https://github.com/docker-library/official-images/blob/master/library/percona) ([history](https://github.com/docker-library/official-images/commits/master/library/percona))
 
 -	**Source of this description**:  
@@ -93,9 +93,9 @@ $ docker run -it --rm percona mysql -hsome.mysql.host -usome-mysql-user -p
 
 More information about the MySQL command line client can be found in the [MySQL documentation](http://dev.mysql.com/doc/en/mysql.html)
 
-## ... via [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/) or [`docker-compose`](https://github.com/docker/compose)
+## ... via [`docker-compose`](https://github.com/docker/compose) or [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/)
 
-Example `stack.yml` for `percona`:
+Example `docker-compose.yml` for `percona`:
 
 ```yaml
 # Use root/example as user/password credentials
@@ -141,7 +141,7 @@ The startup configuration is specified in the file `/etc/my.cnf`, and that file 
 If `/my/custom/config-file.cnf` is the path and name of your custom configuration file, you can start your `percona` container like this (note that only the directory path of the custom config file is used in this command):
 
 ```console
-$ docker run --name some-percona -v /my/custom:/etc/mysql/conf.d -e MYSQL_ROOT_PASSWORD=my-secret-pw -d percona:tag
+$ docker run --name some-percona -v /my/custom:/etc/my.cnf.d -e MYSQL_ROOT_PASSWORD=my-secret-pw -d percona:tag
 ```
 
 This will start a new container `some-percona` where the Percona Server for MySQL instance uses the combined startup settings from `/etc/my.cnf` and `/etc/my.cnf.d/config-file.cnf`, with settings from the latter taking precedence.
@@ -174,7 +174,7 @@ By default, `root` can connect from anywhere. This option restricts root connect
 
 ### `MYSQL_DATABASE`
 
-This variable is optional and allows you to specify the name of a database to be created on image startup. If a user/password was supplied (see below) then that user will be granted superuser access ([corresponding to `GRANT ALL`](http://dev.mysql.com/doc/en/adding-users.html)) to this database.
+This variable is optional and allows you to specify the name of a database to be created on image startup. If a user/password was supplied (see below) then that user will be granted superuser access ([corresponding to `GRANT ALL`](https://dev.mysql.com/doc/refman/en/creating-accounts.html)) to this database.
 
 ### `MYSQL_USER`, `MYSQL_PASSWORD`
 
@@ -216,9 +216,17 @@ $ docker run --name some-mysql -e MYSQL_ROOT_PASSWORD_FILE=/run/secrets/mysql-ro
 
 Currently, this is only supported for `MYSQL_ROOT_PASSWORD`, `MYSQL_ROOT_HOST`, `MYSQL_DATABASE`, `MYSQL_USER`, and `MYSQL_PASSWORD`.
 
+## Telemetry
+
+Starting with Percona Server 8.0.35-27, telemetry will be enabled by default. If you decide not to send usage data to Percona, you can set the `PERCONA_TELEMETRY_DISABLE=1` environment variable. For example:
+
+```console
+$ docker run --name some-mysql -e  PERCONA_TELEMETRY_DISABLE=1 -d percona:tag
+```
+
 # Initializing a fresh instance
 
-When a container is started for the first time, a new database with the specified name will be created and initialized with the provided configuration variables. Furthermore, it will execute files with extensions `.sh`, `.sql` and `.sql.gz` that are found in `/docker-entrypoint-initdb.d`. Files will be executed in alphabetical order. You can easily populate your `percona` services by [mounting a SQL dump into that directory](https://docs.docker.com/engine/tutorials/dockervolumes/#mount-a-host-file-as-a-data-volume) and provide [custom images](https://docs.docker.com/reference/builder/) with contributed data. SQL files will be imported by default to the database specified by the `MYSQL_DATABASE` variable.
+When a container is started for the first time, a new database with the specified name will be created and initialized with the provided configuration variables. Furthermore, it will execute files with extensions `.sh`, `.sql` and `.sql.gz` that are found in `/docker-entrypoint-initdb.d`. Files will be executed in alphabetical order. You can easily populate your `percona` services by [mounting a SQL dump into that directory](https://docs.docker.com/storage/bind-mounts/) and provide [custom images](https://docs.docker.com/reference/dockerfile/) with contributed data. SQL files will be imported by default to the database specified by the `MYSQL_DATABASE` variable.
 
 # Caveats
 
@@ -226,8 +234,8 @@ When a container is started for the first time, a new database with the specifie
 
 Important note: There are several ways to store data used by applications that run in Docker containers. We encourage users of the `percona` images to familiarize themselves with the options available, including:
 
--	Let Docker manage the storage of your database data [by writing the database files to disk on the host system using its own internal volume management](https://docs.docker.com/engine/tutorials/dockervolumes/#adding-a-data-volume). This is the default and is easy and fairly transparent to the user. The downside is that the files may be hard to locate for tools and applications that run directly on the host system, i.e. outside containers.
--	Create a data directory on the host system (outside the container) and [mount this to a directory visible from inside the container](https://docs.docker.com/engine/tutorials/dockervolumes/#mount-a-host-directory-as-a-data-volume). This places the database files in a known location on the host system, and makes it easy for tools and applications on the host system to access the files. The downside is that the user needs to make sure that the directory exists, and that e.g. directory permissions and other security mechanisms on the host system are set up correctly.
+-	Let Docker manage the storage of your database data [by writing the database files to disk on the host system using its own internal volume management](https://docs.docker.com/storage/volumes/). This is the default and is easy and fairly transparent to the user. The downside is that the files may be hard to locate for tools and applications that run directly on the host system, i.e. outside containers.
+-	Create a data directory on the host system (outside the container) and [mount this to a directory visible from inside the container](https://docs.docker.com/storage/bind-mounts/). This places the database files in a known location on the host system, and makes it easy for tools and applications on the host system to access the files. The downside is that the user needs to make sure that the directory exists, and that e.g. directory permissions and other security mechanisms on the host system are set up correctly.
 
 The Docker documentation is a good starting point for understanding the different storage options and variations, and there are multiple blogs and forum postings that discuss and give advice in this area. We will simply show the basic procedure here for the latter option above:
 

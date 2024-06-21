@@ -14,34 +14,36 @@ WARNING:
 
 -->
 
+# **DEPRECATION NOTICE**
+
+Upcoming in Consul 1.16, we will stop publishing official Dockerhub images and publish only our Verified Publisher images. Users of Docker images should pull from [hashicorp/consul](https://hub.docker.com/r/hashicorp/consul) instead of [consul](https://hub.docker.com/_/consul). Verified Publisher images can be found at https://hub.docker.com/r/hashicorp/consul.
+
 # Quick reference
 
 -	**Maintained by**:  
 	[HashiCorp](https://github.com/hashicorp/docker-consul)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.8.4`, `1.8`, `latest`](https://github.com/hashicorp/docker-consul/blob/960119e28e51882c4c4e175e84684ad4370ae1c5/0.X/Dockerfile)
--	[`1.7.8`, `1.7`](https://github.com/hashicorp/docker-consul/blob/14bd1af2348ebd0fda57a9c6edd8c431fa756cad/0.X/Dockerfile)
--	[`1.6.9`, `1.6`](https://github.com/hashicorp/docker-consul/blob/7650dbe7ef6dd06a67fd202bd0c8e847dd6a4798/0.X/Dockerfile)
+**No supported tags**
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/hashicorp/docker-consul/issues](https://github.com/hashicorp/docker-consul/issues)
+	[https://github.com/hashicorp/docker-consul/issues](https://github.com/hashicorp/docker-consul/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/consul/), [`arm32v6`](https://hub.docker.com/r/arm32v6/consul/), [`arm64v8`](https://hub.docker.com/r/arm64v8/consul/), [`i386`](https://hub.docker.com/r/i386/consul/)
+	**No supported architectures**
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/consul/` directory](https://github.com/docker-library/repo-info/blob/master/repos/consul) ([history](https://github.com/docker-library/repo-info/commits/master/repos/consul))  
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/consul`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fconsul)  
+	[official-images repo's `library/consul` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fconsul)  
 	[official-images repo's `library/consul` file](https://github.com/docker-library/official-images/blob/master/library/consul) ([history](https://github.com/docker-library/official-images/commits/master/library/consul))
 
 -	**Source of this description**:  

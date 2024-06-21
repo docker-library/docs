@@ -20,21 +20,23 @@ WARNING:
 	[InfluxData](https://github.com/influxdata/influxdata-docker)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.6`, `1.6.2`](https://github.com/influxdata/influxdata-docker/blob/cd4add1964af7dab103727e48b1bf41719aa9715/chronograf/1.6/Dockerfile)
--	[`1.6-alpine`, `1.6.2-alpine`](https://github.com/influxdata/influxdata-docker/blob/cd4add1964af7dab103727e48b1bf41719aa9715/chronograf/1.6/alpine/Dockerfile)
--	[`1.7`, `1.7.17`](https://github.com/influxdata/influxdata-docker/blob/cd4add1964af7dab103727e48b1bf41719aa9715/chronograf/1.7/Dockerfile)
--	[`1.7-alpine`, `1.7.17-alpine`](https://github.com/influxdata/influxdata-docker/blob/cd4add1964af7dab103727e48b1bf41719aa9715/chronograf/1.7/alpine/Dockerfile)
--	[`1.8`, `1.8.6`, `latest`](https://github.com/influxdata/influxdata-docker/blob/cd4add1964af7dab103727e48b1bf41719aa9715/chronograf/1.8/Dockerfile)
--	[`1.8-alpine`, `1.8.6-alpine`, `alpine`](https://github.com/influxdata/influxdata-docker/blob/cd4add1964af7dab103727e48b1bf41719aa9715/chronograf/1.8/alpine/Dockerfile)
+-	[`1.7`, `1.7.17`](https://github.com/influxdata/influxdata-docker/blob/0854be83296d30acd6e2b75f106f026cb051cbda/chronograf/1.7/Dockerfile)
+-	[`1.7-alpine`, `1.7.17-alpine`](https://github.com/influxdata/influxdata-docker/blob/0854be83296d30acd6e2b75f106f026cb051cbda/chronograf/1.7/alpine/Dockerfile)
+-	[`1.8`, `1.8.10`](https://github.com/influxdata/influxdata-docker/blob/0854be83296d30acd6e2b75f106f026cb051cbda/chronograf/1.8/Dockerfile)
+-	[`1.8-alpine`, `1.8.10-alpine`](https://github.com/influxdata/influxdata-docker/blob/0854be83296d30acd6e2b75f106f026cb051cbda/chronograf/1.8/alpine/Dockerfile)
+-	[`1.9`, `1.9.4`](https://github.com/influxdata/influxdata-docker/blob/0854be83296d30acd6e2b75f106f026cb051cbda/chronograf/1.9/Dockerfile)
+-	[`1.9-alpine`, `1.9.4-alpine`](https://github.com/influxdata/influxdata-docker/blob/0854be83296d30acd6e2b75f106f026cb051cbda/chronograf/1.9/alpine/Dockerfile)
+-	[`1.10`, `1.10.5`, `latest`](https://github.com/influxdata/influxdata-docker/blob/0854be83296d30acd6e2b75f106f026cb051cbda/chronograf/1.10/Dockerfile)
+-	[`1.10-alpine`, `1.10.5-alpine`, `alpine`](https://github.com/influxdata/influxdata-docker/blob/0854be83296d30acd6e2b75f106f026cb051cbda/chronograf/1.10/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/influxdata/influxdata-docker/issues](https://github.com/influxdata/influxdata-docker/issues)
+	[https://github.com/influxdata/influxdata-docker/issues](https://github.com/influxdata/influxdata-docker/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/chronograf/), [`arm32v7`](https://hub.docker.com/r/arm32v7/chronograf/), [`arm64v8`](https://hub.docker.com/r/arm64v8/chronograf/)
@@ -44,7 +46,7 @@ WARNING:
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/chronograf`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fchronograf)  
+	[official-images repo's `library/chronograf` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fchronograf)  
 	[official-images repo's `library/chronograf` file](https://github.com/docker-library/official-images/blob/master/library/chronograf) ([history](https://github.com/docker-library/official-images/commits/master/library/chronograf))
 
 -	**Source of this description**:  
@@ -52,7 +54,7 @@ WARNING:
 
 # Chronograf
 
-Chronograf is InfluxData’s open source web application. Use Chronograf with the other components of the [TICK](https://www.influxdata.com/products/) stack for infrastructure monitoring, alert management, data visualization, and database management.
+Chronograf is InfluxData's open source web application. Use Chronograf with the other components of the [TICK](https://www.influxdata.com/products/) stack for infrastructure monitoring, alert management, data visualization, and database management.
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/43d87118415bb75d7bb107683e79cd6d69186f67/chronograf/logo.png)
 
@@ -112,6 +114,10 @@ $ docker run -p 8888:8888 \
 
 Try combining this with Telegraf to get dashboards for your infrastructure within minutes!
 
+#### Running as root
+
+Starting in v1.10.5, Chronograf no longer run as the root user by default. If a user wants to revert this change they can set `CHRONOGRAF_AS_ROOT=true` as an environment variable.
+
 ## Official Documentation
 
 See the [official docs](https://docs.influxdata.com/chronograf/latest/) for information on creating visualizations.
@@ -128,7 +134,7 @@ This is the defacto image. If you are unsure about what your needs are, you prob
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
-This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
 
 To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 

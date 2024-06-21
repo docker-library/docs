@@ -1,1 +1,1 @@
-[the Solr Community](https://lucene.apache.org/solr/community.html)
+[the Solr Community](https://solr.apache.org/community.html)

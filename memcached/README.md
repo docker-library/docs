@@ -20,27 +20,27 @@ WARNING:
 	[the Docker Community](https://github.com/docker-library/memcached)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.6.7`, `1.6`, `1`, `latest`](https://github.com/docker-library/memcached/blob/9854471a384e40b8eaf96851dd5a02637fba367a/debian/Dockerfile)
--	[`1.6.7-alpine`, `1.6-alpine`, `1-alpine`, `alpine`](https://github.com/docker-library/memcached/blob/9854471a384e40b8eaf96851dd5a02637fba367a/alpine/Dockerfile)
+-	[`1.6.28`, `1.6`, `1`, `latest`, `1.6.28-bookworm`, `1.6-bookworm`, `1-bookworm`, `bookworm`](https://github.com/docker-library/memcached/blob/4ff42b38a59b98c91a33d1d91d4b2f0d492c951e/1/debian/Dockerfile)
+-	[`1.6.28-alpine`, `1.6-alpine`, `1-alpine`, `alpine`, `1.6.28-alpine3.20`, `1.6-alpine3.20`, `1-alpine3.20`, `alpine3.20`](https://github.com/docker-library/memcached/blob/4ff42b38a59b98c91a33d1d91d4b2f0d492c951e/1/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/docker-library/memcached/issues](https://github.com/docker-library/memcached/issues)
+	[https://github.com/docker-library/memcached/issues](https://github.com/docker-library/memcached/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/memcached/), [`arm32v5`](https://hub.docker.com/r/arm32v5/memcached/), [`arm32v6`](https://hub.docker.com/r/arm32v6/memcached/), [`arm32v7`](https://hub.docker.com/r/arm32v7/memcached/), [`arm64v8`](https://hub.docker.com/r/arm64v8/memcached/), [`i386`](https://hub.docker.com/r/i386/memcached/), [`mips64le`](https://hub.docker.com/r/mips64le/memcached/), [`ppc64le`](https://hub.docker.com/r/ppc64le/memcached/), [`s390x`](https://hub.docker.com/r/s390x/memcached/)
+	[`amd64`](https://hub.docker.com/r/amd64/memcached/), [`arm32v5`](https://hub.docker.com/r/arm32v5/memcached/), [`arm64v8`](https://hub.docker.com/r/arm64v8/memcached/), [`i386`](https://hub.docker.com/r/i386/memcached/), [`mips64le`](https://hub.docker.com/r/mips64le/memcached/), [`ppc64le`](https://hub.docker.com/r/ppc64le/memcached/), [`riscv64`](https://hub.docker.com/r/riscv64/memcached/), [`s390x`](https://hub.docker.com/r/s390x/memcached/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/memcached/` directory](https://github.com/docker-library/repo-info/blob/master/repos/memcached) ([history](https://github.com/docker-library/repo-info/commits/master/repos/memcached))  
 	(image metadata, transfer size, etc)
 
 -	**Image updates**:  
-	[official-images PRs with label `library/memcached`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmemcached)  
+	[official-images repo's `library/memcached` label](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fmemcached)  
 	[official-images repo's `library/memcached` file](https://github.com/docker-library/official-images/blob/master/library/memcached) ([history](https://github.com/docker-library/official-images/commits/master/library/memcached))
 
 -	**Source of this description**:  
@@ -78,11 +78,13 @@ The `memcached` images come in many flavors, each designed for a specific use ca
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
+Some of these tags may have names like bookworm in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+
 ## `memcached:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
-This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
 
 To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
