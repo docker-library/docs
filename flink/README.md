@@ -24,14 +24,14 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.19.0-scala_2.12-java8`, `1.19-scala_2.12-java8`, `scala_2.12-java8`, `1.19.0-java8`, `1.19-java8`, `java8`](https://github.com/apache/flink-docker/blob/20017e8f0e81d54fe74c0f9f6a3a988ea609be8f/1.19/scala_2.12-java8-ubuntu/Dockerfile)
--	[`1.19.0-scala_2.12-java17`, `1.19-scala_2.12-java17`, `scala_2.12-java17`, `1.19.0-java17`, `1.19-java17`, `java17`](https://github.com/apache/flink-docker/blob/20017e8f0e81d54fe74c0f9f6a3a988ea609be8f/1.19/scala_2.12-java17-ubuntu/Dockerfile)
--	[`1.19.0-scala_2.12-java11`, `1.19-scala_2.12-java11`, `scala_2.12-java11`, `1.19.0-scala_2.12`, `1.19-scala_2.12`, `scala_2.12`, `1.19.0-java11`, `1.19-java11`, `java11`, `1.19.0`, `1.19`, `latest`](https://github.com/apache/flink-docker/blob/20017e8f0e81d54fe74c0f9f6a3a988ea609be8f/1.19/scala_2.12-java11-ubuntu/Dockerfile)
--	[`1.18.1-scala_2.12-java8`, `1.18-scala_2.12-java8`, `1.18.1-java8`, `1.18-java8`](https://github.com/apache/flink-docker/blob/8eb7ea1a0e668146b2da1dcd08e311e7f7f318f1/1.18/scala_2.12-java8-ubuntu/Dockerfile)
--	[`1.18.1-scala_2.12-java17`, `1.18-scala_2.12-java17`, `1.18.1-java17`, `1.18-java17`](https://github.com/apache/flink-docker/blob/8eb7ea1a0e668146b2da1dcd08e311e7f7f318f1/1.18/scala_2.12-java17-ubuntu/Dockerfile)
--	[`1.18.1-scala_2.12-java11`, `1.18-scala_2.12-java11`, `1.18.1-scala_2.12`, `1.18-scala_2.12`, `1.18.1-java11`, `1.18-java11`, `1.18.1`, `1.18`](https://github.com/apache/flink-docker/blob/8eb7ea1a0e668146b2da1dcd08e311e7f7f318f1/1.18/scala_2.12-java11-ubuntu/Dockerfile)
--	[`1.17.2-scala_2.12-java8`, `1.17-scala_2.12-java8`, `1.17.2-java8`, `1.17-java8`](https://github.com/apache/flink-docker/blob/8eb7ea1a0e668146b2da1dcd08e311e7f7f318f1/1.17/scala_2.12-java8-ubuntu/Dockerfile)
--	[`1.17.2-scala_2.12-java11`, `1.17-scala_2.12-java11`, `1.17.2-scala_2.12`, `1.17-scala_2.12`, `1.17.2-java11`, `1.17-java11`, `1.17.2`, `1.17`](https://github.com/apache/flink-docker/blob/8eb7ea1a0e668146b2da1dcd08e311e7f7f318f1/1.17/scala_2.12-java11-ubuntu/Dockerfile)
+-	[`1.19.1-scala_2.12-java8`, `1.19-scala_2.12-java8`, `scala_2.12-java8`, `1.19.1-java8`, `1.19-java8`, `java8`](https://github.com/apache/flink-docker/blob/f77b347d0a534da0482e692d80f559f47041829e/1.19/scala_2.12-java8-ubuntu/Dockerfile)
+-	[`1.19.1-scala_2.12-java17`, `1.19-scala_2.12-java17`, `scala_2.12-java17`, `1.19.1-java17`, `1.19-java17`, `java17`](https://github.com/apache/flink-docker/blob/f77b347d0a534da0482e692d80f559f47041829e/1.19/scala_2.12-java17-ubuntu/Dockerfile)
+-	[`1.19.1-scala_2.12-java11`, `1.19-scala_2.12-java11`, `scala_2.12-java11`, `1.19.1-scala_2.12`, `1.19-scala_2.12`, `scala_2.12`, `1.19.1-java11`, `1.19-java11`, `java11`, `1.19.1`, `1.19`, `latest`](https://github.com/apache/flink-docker/blob/f77b347d0a534da0482e692d80f559f47041829e/1.19/scala_2.12-java11-ubuntu/Dockerfile)
+-	[`1.18.1-scala_2.12-java8`, `1.18-scala_2.12-java8`, `1.18.1-java8`, `1.18-java8`](https://github.com/apache/flink-docker/blob/883600747505c128d97e9d25c9326f0c6f1d31e4/1.18/scala_2.12-java8-ubuntu/Dockerfile)
+-	[`1.18.1-scala_2.12-java17`, `1.18-scala_2.12-java17`, `1.18.1-java17`, `1.18-java17`](https://github.com/apache/flink-docker/blob/883600747505c128d97e9d25c9326f0c6f1d31e4/1.18/scala_2.12-java17-ubuntu/Dockerfile)
+-	[`1.18.1-scala_2.12-java11`, `1.18-scala_2.12-java11`, `1.18.1-scala_2.12`, `1.18-scala_2.12`, `1.18.1-java11`, `1.18-java11`, `1.18.1`, `1.18`](https://github.com/apache/flink-docker/blob/883600747505c128d97e9d25c9326f0c6f1d31e4/1.18/scala_2.12-java11-ubuntu/Dockerfile)
+-	[`1.17.2-scala_2.12-java8`, `1.17-scala_2.12-java8`, `1.17.2-java8`, `1.17-java8`](https://github.com/apache/flink-docker/blob/883600747505c128d97e9d25c9326f0c6f1d31e4/1.17/scala_2.12-java8-ubuntu/Dockerfile)
+-	[`1.17.2-scala_2.12-java11`, `1.17-scala_2.12-java11`, `1.17.2-scala_2.12`, `1.17-scala_2.12`, `1.17.2-java11`, `1.17-java11`, `1.17.2`, `1.17`](https://github.com/apache/flink-docker/blob/883600747505c128d97e9d25c9326f0c6f1d31e4/1.17/scala_2.12-java11-ubuntu/Dockerfile)
 
 # Quick reference (cont.)
 
