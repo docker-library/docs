@@ -52,7 +52,7 @@ WARNING:
 
 [Aerospike](http://aerospike.com) is a distributed NoSQL database purposefully designed for high performance web scale applications. Aerospike supports key-value and document data models, and has multiple data types including List, Map, HyperLogLog, GeoJSON, and Blob. Aerospike's patented hybrid memory architecture delivers predictable high performance at scale and high data density per node.
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/9944063c59872460e15f6ecb19c1419c8124752f/aerospike/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/42ae663b4b922326e5c55c7c513c8d04a11f9aaf/aerospike/logo.png)
 
 ## Getting Started
 
