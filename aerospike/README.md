@@ -24,8 +24,8 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`ee-7.1.0.1`, `ee-7.1.0.1_1`](https://github.com/aerospike/aerospike-server.docker/blob/1a7456498bcd19138aedf33dd065d4493a53d095/enterprise/ubuntu22.04/Dockerfile)
--	[`ce-7.1.0.1`, `ce-7.1.0.1_1`](https://github.com/aerospike/aerospike-server.docker/blob/1a7456498bcd19138aedf33dd065d4493a53d095/community/ubuntu22.04/Dockerfile)
+-	[`ee-7.1.0.2`, `ee-7.1.0.2_1`](https://github.com/aerospike/aerospike-server.docker/blob/feb210615277101e394d632493807e8b65f44b5d/enterprise/ubuntu22.04/Dockerfile)
+-	[`ce-7.1.0.2`, `ce-7.1.0.2_1`](https://github.com/aerospike/aerospike-server.docker/blob/feb210615277101e394d632493807e8b65f44b5d/community/ubuntu22.04/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -52,7 +52,7 @@ WARNING:
 
 [Aerospike](http://aerospike.com) is a distributed NoSQL database purposefully designed for high performance web scale applications. Aerospike supports key-value and document data models, and has multiple data types including List, Map, HyperLogLog, GeoJSON, and Blob. Aerospike's patented hybrid memory architecture delivers predictable high performance at scale and high data density per node.
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/9944063c59872460e15f6ecb19c1419c8124752f/aerospike/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/42ae663b4b922326e5c55c7c513c8d04a11f9aaf/aerospike/logo.png)
 
 ## Getting Started
 
