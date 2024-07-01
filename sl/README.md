@@ -28,7 +28,7 @@ Scientific Linux reached end of life June 30, 2024
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7`, `latest`](https://github.com/scientificlinux/sl-docker/blob/f5eec00586e57174fd8616a9a052cd75d7ae5377/sl7/Dockerfile)
+**No supported tags**
 
 # Quick reference (cont.)
 
@@ -36,7 +36,7 @@ Scientific Linux reached end of life June 30, 2024
 	[https://github.com/scientificlinux/sl-docker/issues](https://github.com/scientificlinux/sl-docker/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/sl/)
+	**No supported architectures**
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/sl/` directory](https://github.com/docker-library/repo-info/blob/master/repos/sl) ([history](https://github.com/docker-library/repo-info/commits/master/repos/sl))  
