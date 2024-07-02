@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm64v8` builds of [the `vault` official image](https://hub.docker.com/_/vault) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # **DEPRECATION NOTICE**
 
 Upcoming in Vault 1.14, we will stop publishing official Dockerhub images and publish only our Verified Publisher images. Users of Docker images should pull from [hashicorp/vault](https://hub.docker.com/r/hashicorp/vault) instead of [vault](https://hub.docker.com/_/vault). Verified Publisher images can be found at https://hub.docker.com/r/hashicorp/vault.
@@ -28,7 +30,9 @@ Upcoming in Vault 1.14, we will stop publishing official Dockerhub images and pu
 
 # Supported tags and respective `Dockerfile` links
 
-**No supported tags**
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm64v8` ARCHITECTURE
+
+[![arm64v8/vault build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/vault.svg?label=arm64v8/vault%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/vault/)
 
 # Quick reference (cont.)
 
@@ -80,7 +84,7 @@ The container will attempt to lock memory to prevent sensitive values from being
 ## Running Vault for Development
 
 ```console
-$ docker run --cap-add=IPC_LOCK -d --name=dev-vault vault
+$ docker run --cap-add=IPC_LOCK -d --name=dev-vault arm64v8/vault
 ```
 
 This runs a completely in-memory Vault server, which is useful for development but should not be used in production.
@@ -93,13 +97,13 @@ When running in development mode, two additional options can be set via environm
 As an example:
 
 ```console
-$ docker run --cap-add=IPC_LOCK -e 'VAULT_DEV_ROOT_TOKEN_ID=myroot' -e 'VAULT_DEV_LISTEN_ADDRESS=0.0.0.0:1234' vault
+$ docker run --cap-add=IPC_LOCK -e 'VAULT_DEV_ROOT_TOKEN_ID=myroot' -e 'VAULT_DEV_LISTEN_ADDRESS=0.0.0.0:1234' arm64v8/vault
 ```
 
 ## Running Vault in Server Mode for Development
 
 ```console
-$ docker run --cap-add=IPC_LOCK -e 'VAULT_LOCAL_CONFIG={"storage": {"file": {"path": "/vault/file"}}, "listener": [{"tcp": { "address": "0.0.0.0:8200", "tls_disable": true}}], "default_lease_ttl": "168h", "max_lease_ttl": "720h", "ui": true}' -p 8200:8200 vault server
+$ docker run --cap-add=IPC_LOCK -e 'VAULT_LOCAL_CONFIG={"storage": {"file": {"path": "/vault/file"}}, "listener": [{"tcp": { "address": "0.0.0.0:8200", "tls_disable": true}}], "default_lease_ttl": "168h", "max_lease_ttl": "720h", "ui": true}' -p 8200:8200 arm64v8/vault server
 ```
 
 This runs a Vault server with TLS disabled, the `file` storage backend at path `/vault/file` and a default secret lease duration of one week and a maximum of 30 days. Disabling TLS and using the `file` storage backend are not recommended for production use.

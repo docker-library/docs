@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm64v8` builds of [the `consul` official image](https://hub.docker.com/_/consul) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # **DEPRECATION NOTICE**
 
 Upcoming in Consul 1.16, we will stop publishing official Dockerhub images and publish only our Verified Publisher images. Users of Docker images should pull from [hashicorp/consul](https://hub.docker.com/r/hashicorp/consul) instead of [consul](https://hub.docker.com/_/consul). Verified Publisher images can be found at https://hub.docker.com/r/hashicorp/consul.
@@ -28,7 +30,9 @@ Upcoming in Consul 1.16, we will stop publishing official Dockerhub images and p
 
 # Supported tags and respective `Dockerfile` links
 
-**No supported tags**
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm64v8` ARCHITECTURE
+
+[![arm64v8/consul build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/consul.svg?label=arm64v8/consul%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/consul/)
 
 # Quick reference (cont.)
 
@@ -76,7 +80,7 @@ We chose Alpine as a lightweight base with a reasonably small surface area for s
 
 Consul always runs under [dumb-init](https://github.com/Yelp/dumb-init), which handles reaping zombie processes and forwards signals on to all processes running in the container. We also use [gosu](https://github.com/tianon/gosu) to run Consul as a non-root "consul" user for better security. These binaries are all built by HashiCorp and signed with our [GPG key](https://www.hashicorp.com/security.html), so you can verify the signed package used to build a given base image.
 
-Running the Consul container with no arguments will give you a Consul server in [development mode](https://www.consul.io/docs/agent/options.html#_dev). The provided entry point script will also look for Consul subcommands and run `consul` as the correct user and with that subcommand. For example, you can execute `docker run consul members` and it will run the `consul members` command inside the container. The entry point also adds some special configuration options as detailed in the sections below when running the `agent` subcommand. Any other command gets `exec`-ed inside the container under `dumb-init`.
+Running the Consul container with no arguments will give you a Consul server in [development mode](https://www.consul.io/docs/agent/options.html#_dev). The provided entry point script will also look for Consul subcommands and run `consul` as the correct user and with that subcommand. For example, you can execute `docker run arm64v8/consul members` and it will run the `consul members` command inside the container. The entry point also adds some special configuration options as detailed in the sections below when running the `agent` subcommand. Any other command gets `exec`-ed inside the container under `dumb-init`.
 
 The container exposes `VOLUME /consul/data`, which is a path where Consul will place its persisted state. This isn't used in any way when running in development mode. For client agents, this stores some information about the cluster and the client's health checks in case the container is restarted. For server agents, this stores the client information plus snapshots and data related to the consensus algorithm and other state like Consul's key/value store and catalog. For servers it is highly desirable to keep this volume's data around when restarting containers to recover from outage scenarios. If this is bind mounted then ownership will be changed to the consul user when the container starts.
 
@@ -89,22 +93,22 @@ The entry point also includes a small utility to look up a client or bind addres
 ## Running Consul for Development
 
 ```console
-$ docker run -d --name=dev-consul -e CONSUL_BIND_INTERFACE=eth0 consul
+$ docker run -d --name=dev-consul -e CONSUL_BIND_INTERFACE=eth0 arm64v8/consul
 ```
 
 This runs a completely in-memory Consul server agent with default bridge networking and no services exposed on the host, which is useful for development but should not be used in production. For example, if that server is running at internal address 172.17.0.2, you can run a three node cluster for development by starting up two more instances and telling them to join the first node.
 
 ```console
-$ docker run -d -e CONSUL_BIND_INTERFACE=eth0 consul agent -dev -join=172.17.0.2
+$ docker run -d -e CONSUL_BIND_INTERFACE=eth0 arm64v8/consul agent -dev -join=172.17.0.2
 ... server 2 starts
-$ docker run -d -e CONSUL_BIND_INTERFACE=eth0 consul agent -dev -join=172.17.0.2
+$ docker run -d -e CONSUL_BIND_INTERFACE=eth0 arm64v8/consul agent -dev -join=172.17.0.2
 ... server 3 starts
 ```
 
 Then we can query for all the members in the cluster by running a Consul CLI command in the first container:
 
 ```console
-$ docker exec -t dev-consul consul members
+$ docker exec -t dev-consul arm64v8/consul members
 Node          Address          Status  Type    Build  Protocol  DC
 579db72c1ae1  172.17.0.3:8301  alive   server  0.6.3  2         dc1
 93fe2309ef19  172.17.0.4:8301  alive   server  0.6.3  2         dc1
@@ -118,7 +122,7 @@ Development mode also starts a version of Consul's web UI on port 8500. This can
 ## Running Consul Agent in Client Mode
 
 ```console
-$  docker run -d --net=host -e 'CONSUL_LOCAL_CONFIG={"leave_on_terminate": true}' consul agent -bind=<external ip> -retry-join=<root agent ip>
+$  docker run -d --net=host -e 'CONSUL_LOCAL_CONFIG={"leave_on_terminate": true}' arm64v8/consul agent -bind=<external ip> -retry-join=<root agent ip>
 ==> Starting Consul agent...
 ==> Starting Consul agent RPC...
 ==> Consul agent running!
@@ -173,7 +177,7 @@ consul.service.consul.  0       IN      A       66.175.220.234
 If you want to expose the Consul interfaces to other containers via a different network, such as the bridge network, use the `-client` option for Consul:
 
 ```console
-docker run -d --net=host consul agent -bind=<external ip> -client=<bridge ip> -retry-join=<root agent ip>
+docker run -d --net=host arm64v8/consul agent -bind=<external ip> -client=<bridge ip> -retry-join=<root agent ip>
 ==> Starting Consul agent...
 ==> Starting Consul agent RPC...
 ==> Consul agent running!
@@ -192,7 +196,7 @@ With this configuration, Consul's client interfaces will be bound to the bridge 
 ## Running Consul Agent in Server Mode
 
 ```console
-$ docker run -d --net=host -e 'CONSUL_LOCAL_CONFIG={"skip_leave_on_interrupt": true}' consul agent -server -bind=<external ip> -retry-join=<root agent ip> -bootstrap-expect=<number of server agents>
+$ docker run -d --net=host -e 'CONSUL_LOCAL_CONFIG={"skip_leave_on_interrupt": true}' arm64v8/consul agent -server -bind=<external ip> -retry-join=<root agent ip> -bootstrap-expect=<number of server agents>
 ```
 
 This runs a Consul server agent sharing the host's network. All of the network considerations and behavior we covered above for the client agent also apply to the server agent. A single server on its own won't be able to form a quorum and will be waiting for other servers to join.
@@ -212,7 +216,7 @@ By default, Consul's DNS server is exposed on port 8600. Because this is cumbers
 Here's an example:
 
 ```console
-$ docker run -d --net=host -e 'CONSUL_ALLOW_PRIVILEGED_PORTS=' consul -dns-port=53 -recursor=8.8.8.8
+$ docker run -d --net=host -e 'CONSUL_ALLOW_PRIVILEGED_PORTS=' arm64v8/consul -dns-port=53 -recursor=8.8.8.8
 ```
 
 This example also includes a recursor configuration that uses Google's DNS servers for non-Consul lookups. You may want to adjust this based on your particular DNS configuration. If you are binding Consul's client interfaces to the host's loopback address, then you should be able to configure your host's `resolv.conf` to route DNS requests to Consul by including "127.0.0.1" as the primary DNS server. This would expose Consul's DNS to all applications running on the host, but due to Docker's built-in DNS server, you can't point to this directly from inside your containers; Docker will issue an error message if you attempt to do this. You must configure Consul to listen on a non-localhost address that is reachable from within other containers.
@@ -220,7 +224,7 @@ This example also includes a recursor configuration that uses Google's DNS serve
 Once you bind Consul's client interfaces to the bridge or other network, you can use the `--dns` option in your *other containers* in order for them to use Consul's DNS server, mapped to port 53. Here's an example:
 
 ```console
-$ docker run -d --net=host -e 'CONSUL_ALLOW_PRIVILEGED_PORTS=' consul agent -dns-port=53 -recursor=8.8.8.8 -bind=<bridge ip>
+$ docker run -d --net=host -e 'CONSUL_ALLOW_PRIVILEGED_PORTS=' arm64v8/consul agent -dns-port=53 -recursor=8.8.8.8 -bind=<bridge ip>
 ```
 
 Now start another container and point it at Consul's DNS, using the bridge address of the host:

@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm64v8` builds of [the `jruby` official image](https://hub.docker.com/_/jruby) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -40,6 +42,8 @@ WARNING:
 -	[`9.3-jre17`, `9.3.15-jre17`, `9.3.15.0-jre17`](https://github.com/jruby/docker-jruby/blob/6143dcc782ee66ddafe9785c8c229fda0855fe19/9.3/jre17/Dockerfile)
 -	[`9.3-jdk21`, `9.3.15-jdk21`, `9.3.15.0-jdk21`](https://github.com/jruby/docker-jruby/blob/6143dcc782ee66ddafe9785c8c229fda0855fe19/9.3/jdk21/Dockerfile)
 -	[`9.3-jre21`, `9.3.15-jre21`, `9.3.15.0-jre21`](https://github.com/jruby/docker-jruby/blob/6143dcc782ee66ddafe9785c8c229fda0855fe19/9.3/jre21/Dockerfile)
+
+[![arm64v8/jruby build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/jruby.svg?label=arm64v8/jruby%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/jruby/)
 
 # Quick reference (cont.)
 
@@ -77,7 +81,7 @@ JRuby leverages the robustness and speed of the JVM while providing the same Rub
 ## Create a `Dockerfile` in your Ruby app project
 
 ```dockerfile
-FROM jruby:9
+FROM arm64v8/jruby:9
 
 # throw errors if Gemfile has been modified since Gemfile.lock
 RUN bundle config --global frozen 1
@@ -106,7 +110,7 @@ $ docker run -it --name my-running-script my-ruby-app
 The above example `Dockerfile` expects a `Gemfile.lock` in your app directory. This `docker run` will help you generate one. Run it in the root of your app, next to the `Gemfile`:
 
 ```console
-$ docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app jruby:9 bundle install --system
+$ docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app arm64v8/jruby:9 bundle install --system
 ```
 
 ## Run a single Ruby script
@@ -114,7 +118,7 @@ $ docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app jruby:9 bundle install 
 For many simple, single file projects, you may find it inconvenient to write a complete `Dockerfile`. In such cases, you can run a Ruby script by using the Ruby Docker image directly:
 
 ```console
-$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp jruby:9 jruby your-daemon-or-script.rb
+$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp arm64v8/jruby:9 jruby your-daemon-or-script.rb
 ```
 
 # License

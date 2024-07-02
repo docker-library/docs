@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm64v8` builds of [the `neo4j` official image](https://hub.docker.com/_/neo4j) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -30,6 +32,8 @@ WARNING:
 -	[`5.21.0-enterprise-ubi9`, `5.21-enterprise-ubi9`, `5-enterprise-ubi9`, `enterprise-ubi9`](https://github.com/neo4j/docker-neo4j-publish/blob/b1989e4b7222c257c56a1fc432b8bad090c159b8/5.21.0/ubi9/enterprise/Dockerfile)
 -	[`4.4.34`, `4.4.34-community`, `4.4`, `4.4-community`](https://github.com/neo4j/docker-neo4j-publish/blob/d8543a8aec237f8d127f233c74f09cf3c76f9051/4.4.34/bullseye/community/Dockerfile)
 -	[`4.4.34-enterprise`, `4.4-enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/d8543a8aec237f8d127f233c74f09cf3c76f9051/4.4.34/bullseye/enterprise/Dockerfile)
+
+[![arm64v8/neo4j build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/neo4j.svg?label=arm64v8/neo4j%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/neo4j/)
 
 # Quick reference (cont.)
 
@@ -64,7 +68,7 @@ You can start a Neo4j container like this:
 docker run \
     --publish=7474:7474 --publish=7687:7687 \
     --volume=$HOME/neo4j/data:/data \
-    neo4j
+    arm64v8/neo4j
 ```
 
 which allows you to access neo4j through your browser at [http://localhost:7474](http://localhost:7474).
