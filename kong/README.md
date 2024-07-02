@@ -63,7 +63,7 @@ Please refer to the [installation section](https://docs.konghq.com/gateway/lates
 
 # License
 
-View [license information](https://konghq.com/kong/license/) for the software contained in this image.
+View [license information](https://github.com/Kong/kong/blob/master/LICENSE) for the software contained in this image.
 
 As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 
