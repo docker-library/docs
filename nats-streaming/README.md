@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `amd64` builds of [the `nats-streaming` official image](https://hub.docker.com/_/nats-streaming) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # **DEPRECATION NOTICE**
 
 The NATS Streaming Server is being deprecated. Critical bug fixes and security fixes will be applied until June of 2023. NATS enabled applications requiring persistence should use [JetStream](https://docs.nats.io/jetstream/jetstream).
@@ -28,7 +30,9 @@ The NATS Streaming Server is being deprecated. Critical bug fixes and security f
 
 # Supported tags and respective `Dockerfile` links
 
-**No supported tags**
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `amd64` ARCHITECTURE
+
+[![amd64/nats-streaming build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/amd64/job/nats-streaming.svg?label=amd64/nats-streaming%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/nats-streaming/)
 
 # Quick reference (cont.)
 
@@ -64,13 +68,13 @@ Note that the Streaming server itself is backward compatible with previous relea
 Due to restrictions on how the Windows Docker Image is built, running the image without argument will run the NATS Streaming server with memory based store on port 4222 and the monitoring port 8222. If you need to specify any additional argument, or modify these options, you need to specify the executable name as this:
 
 ```bash
-$ docker run -p 4223:4223 -p 8223:8223 nats-streaming nats-streaming-server -p 4223 -m 8223
+$ docker run -p 4223:4223 -p 8223:8223 amd64/nats-streaming nats-streaming-server -p 4223 -m 8223
 ```
 
 If you need to specify the entrypoint:
 
 ```bash
-$ docker run --entrypoint c:/nats-streaming-server/nats-streaming-server -p 4222:4222 -p 8222:8222 nats-streaming
+$ docker run --entrypoint c:/nats-streaming-server/nats-streaming-server -p 4222:4222 -p 8222:8222 amd64/nats-streaming
 ```
 
 # Non Windows Docker images
@@ -78,13 +82,13 @@ $ docker run --entrypoint c:/nats-streaming-server/nats-streaming-server -p 4222
 If you need to provide arguments to the NATS Streaming server, just pass them to the command line. For instance, to change the listen and monitoring port to 4223 and 8223 respectively:
 
 ```bash
-$ docker run -p 4223:4223 -p 8223:8223 nats-streaming -p 4223 -m 8223
+$ docker run -p 4223:4223 -p 8223:8223 amd64/nats-streaming -p 4223 -m 8223
 ```
 
 If you need to specify the entrypoint:
 
 ```bash
-$ docker run --entrypoint /nats-streaming-server -p 4222:4222 -p 8222:8222 nats-streaming
+$ docker run --entrypoint /nats-streaming-server -p 4222:4222 -p 8222:8222 amd64/nats-streaming
 ```
 
 # Example usage
@@ -103,15 +107,15 @@ $ docker run --entrypoint /nats-streaming-server -p 4222:4222 -p 8222:8222 nats-
 # For instance, to run the NATS Streaming Server and have it listen on port 4444,
 # you would have to run like this:
 #
-#   docker run -p 4444:4444 nats-streaming -p 4444
+#   docker run -p 4444:4444 amd64/nats-streaming -p 4444
 #
 # Or, if you want to publish the port 4444 as a different port, for example 5555:
 #
-#   docker run -p 5555:4444 nats-streaming -p 4444
+#   docker run -p 5555:4444 amd64/nats-streaming -p 4444
 #
 # Check "docker run" for more information.
 
-$ docker run -d -p 4222:4222 -p 8222:8222 nats-streaming
+$ docker run -d -p 4222:4222 -p 8222:8222 amd64/nats-streaming
 ```
 
 Output that you would get if you had started with `-ti` instead of `d` (for daemon):
@@ -146,7 +150,7 @@ Output that you would get if you had started with `-ti` instead of `d` (for daem
 To use a file based store instead, you would run:
 
 ```bash
-$ docker run -d -p 4222:4222 -p 8222:8222 nats-streaming -store file -dir datastore
+$ docker run -d -p 4222:4222 -p 8222:8222 amd64/nats-streaming -store file -dir datastore
 
 [1] 2022/10/11 14:59:45.818823 [INF] STREAM: Starting nats-streaming-server[test-cluster] version 0.25.2
 [1] 2022/10/11 14:59:45.818874 [INF] STREAM: ServerID: mNhpLEpCO6WFqrnD9CYEZa
@@ -184,7 +188,7 @@ $ docker run -d --name=nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 nats
 Now, start the Streaming server and link it to the above docker image:
 
 ```bash
-$ docker run -d --link nats-main nats-streaming -store file -dir datastore -ns nats://nats-main:4222
+$ docker run -d --link nats-main amd64/nats-streaming -store file -dir datastore -ns nats://nats-main:4222
 
 [1] 2022/10/11 15:00:56.780184 [INF] STREAM: Starting nats-streaming-server[test-cluster] version 0.25.2
 [1] 2022/10/11 15:00:56.780235 [INF] STREAM: ServerID: jVQkB4KiIN4IVIuVoSumE0

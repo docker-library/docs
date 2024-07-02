@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `amd64` builds of [the `kong` official image](https://hub.docker.com/_/kong) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -29,6 +31,8 @@ WARNING:
 -	[`3.5.0-ubuntu`, `3.5-ubuntu`, `3.5.0`, `3.5`](https://github.com/Kong/docker-kong/blob/8814c97a408d76ed004b05ea96f0d9eadf9b36be/ubuntu/Dockerfile)
 -	[`3.4.2-ubuntu`, `3.4-ubuntu`, `3.4.2`, `3.4`](https://github.com/Kong/docker-kong/blob/e07de903edf213445a0540172d51529ac344b448/ubuntu/Dockerfile)
 -	[`2.8.5-ubuntu`, `2.8-ubuntu`, `2.8.5`, `2.8`, `2`](https://github.com/Kong/docker-kong/blob/3fe94ba928bf75b385bd98aa2d5ad07b86fd3eb8/ubuntu/Dockerfile)
+
+[![amd64/kong build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/amd64/job/kong.svg?label=amd64/kong%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/kong/)
 
 # Quick reference (cont.)
 
