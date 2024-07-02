@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `ppc64le` builds of [the `kong` official image](https://hub.docker.com/_/kong) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,11 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.7.1-ubuntu`, `3.7-ubuntu`, `3.7.1`, `3.7`, `3`, `latest`, `ubuntu`](https://github.com/Kong/docker-kong/blob/83bc64115d6487c754a6d7fdf43254ad9840058a/ubuntu/Dockerfile)
--	[`3.6.1-ubuntu`, `3.6-ubuntu`, `3.6.1`, `3.6`](https://github.com/Kong/docker-kong/blob/8791499ad78381aff75b4763ea944b0141851089/ubuntu/Dockerfile)
--	[`3.5.0-ubuntu`, `3.5-ubuntu`, `3.5.0`, `3.5`](https://github.com/Kong/docker-kong/blob/8814c97a408d76ed004b05ea96f0d9eadf9b36be/ubuntu/Dockerfile)
--	[`3.4.2-ubuntu`, `3.4-ubuntu`, `3.4.2`, `3.4`](https://github.com/Kong/docker-kong/blob/e07de903edf213445a0540172d51529ac344b448/ubuntu/Dockerfile)
--	[`2.8.5-ubuntu`, `2.8-ubuntu`, `2.8.5`, `2.8`, `2`](https://github.com/Kong/docker-kong/blob/3fe94ba928bf75b385bd98aa2d5ad07b86fd3eb8/ubuntu/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `ppc64le` ARCHITECTURE
+
+[![ppc64le/kong build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/ppc64le/job/kong.svg?label=ppc64le/kong%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/ppc64le/job/kong/)
 
 # Quick reference (cont.)
 
