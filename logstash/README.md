@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `riscv64` builds of [the `logstash` official image](https://hub.docker.com/_/logstash) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,8 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.14.1`](https://github.com/elastic/dockerfiles/blob/69af7042cfc0b32c0d9de82110f15ff8dd74ded8/logstash/Dockerfile)
--	[`7.17.22`](https://github.com/elastic/dockerfiles/blob/1f54f19c85034114800de30ef9929c9b52947ffb/logstash/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `riscv64` ARCHITECTURE
+
+[![riscv64/logstash build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/riscv64/job/logstash.svg?label=riscv64/logstash%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/riscv64/job/logstash/)
 
 # Quick reference (cont.)
 
