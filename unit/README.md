@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `s390x` builds of [the `unit` official image](https://hub.docker.com/_/unit) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,21 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.32.1-go1.22`, `go1.22`, `go1`, `go`](https://github.com/nginx/unit/blob/0e79d961bb1ea68674961da1703ffedb1ddf6e43/pkg/docker/Dockerfile.go1.22)
--	[`1.32.1-go1.21`, `go1.21`](https://github.com/nginx/unit/blob/0e79d961bb1ea68674961da1703ffedb1ddf6e43/pkg/docker/Dockerfile.go1.21)
--	[`1.32.1-jsc11`, `jsc11`, `jsc`](https://github.com/nginx/unit/blob/0e79d961bb1ea68674961da1703ffedb1ddf6e43/pkg/docker/Dockerfile.jsc11)
--	[`1.32.1-node21`, `node21`, `node`](https://github.com/nginx/unit/blob/0e79d961bb1ea68674961da1703ffedb1ddf6e43/pkg/docker/Dockerfile.node21)
--	[`1.32.1-node20`, `node20`](https://github.com/nginx/unit/blob/0e79d961bb1ea68674961da1703ffedb1ddf6e43/pkg/docker/Dockerfile.node20)
--	[`1.32.1-perl5.38`, `perl5.38`, `perl5`, `perl`](https://github.com/nginx/unit/blob/0e79d961bb1ea68674961da1703ffedb1ddf6e43/pkg/docker/Dockerfile.perl5.38)
--	[`1.32.1-perl5.36`, `perl5.36`](https://github.com/nginx/unit/blob/0e79d961bb1ea68674961da1703ffedb1ddf6e43/pkg/docker/Dockerfile.perl5.36)
--	[`1.32.1-php8.3`, `php8.3`, `php8`, `php`](https://github.com/nginx/unit/blob/0e79d961bb1ea68674961da1703ffedb1ddf6e43/pkg/docker/Dockerfile.php8.3)
--	[`1.32.1-php8.2`, `php8.2`](https://github.com/nginx/unit/blob/0e79d961bb1ea68674961da1703ffedb1ddf6e43/pkg/docker/Dockerfile.php8.2)
--	[`1.32.1-python3.12`, `python3.12`, `python3`, `python`](https://github.com/nginx/unit/blob/0e79d961bb1ea68674961da1703ffedb1ddf6e43/pkg/docker/Dockerfile.python3.12)
--	[`1.32.1-python3.11`, `python3.11`](https://github.com/nginx/unit/blob/0e79d961bb1ea68674961da1703ffedb1ddf6e43/pkg/docker/Dockerfile.python3.11)
--	[`1.32.1-ruby3.3`, `ruby3.3`, `ruby3`, `ruby`](https://github.com/nginx/unit/blob/0e79d961bb1ea68674961da1703ffedb1ddf6e43/pkg/docker/Dockerfile.ruby3.3)
--	[`1.32.1-ruby3.2`, `ruby3.2`](https://github.com/nginx/unit/blob/0e79d961bb1ea68674961da1703ffedb1ddf6e43/pkg/docker/Dockerfile.ruby3.2)
--	[`1.32.1-wasm`, `wasm`](https://github.com/nginx/unit/blob/0e79d961bb1ea68674961da1703ffedb1ddf6e43/pkg/docker/Dockerfile.wasm)
--	[`1.32.1-minimal`, `minimal`, `latest`](https://github.com/nginx/unit/blob/0e79d961bb1ea68674961da1703ffedb1ddf6e43/pkg/docker/Dockerfile.minimal)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `s390x` ARCHITECTURE
+
+[![s390x/unit build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/s390x/job/unit.svg?label=s390x/unit%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/unit/)
 
 # Quick reference (cont.)
 
