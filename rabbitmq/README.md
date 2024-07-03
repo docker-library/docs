@@ -24,10 +24,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.13.3`, `3.13`, `3`, `latest`](https://github.com/docker-library/rabbitmq/blob/013a76f659c4c5e379f80507b100a85fffb95552/3.13/ubuntu/Dockerfile)
--	[`3.13.3-management`, `3.13-management`, `3-management`, `management`](https://github.com/docker-library/rabbitmq/blob/6cc0f66ec13b06c153a7527c033cf1ad59a97ef3/3.13/ubuntu/management/Dockerfile)
--	[`3.13.3-alpine`, `3.13-alpine`, `3-alpine`, `alpine`](https://github.com/docker-library/rabbitmq/blob/013a76f659c4c5e379f80507b100a85fffb95552/3.13/alpine/Dockerfile)
--	[`3.13.3-management-alpine`, `3.13-management-alpine`, `3-management-alpine`, `management-alpine`](https://github.com/docker-library/rabbitmq/blob/6cc0f66ec13b06c153a7527c033cf1ad59a97ef3/3.13/alpine/management/Dockerfile)
+-	[`3.13.4`, `3.13`, `3`, `latest`](https://github.com/docker-library/rabbitmq/blob/f1d6b407fa37ad6fe4de699fba2724143ff66e34/3.13/ubuntu/Dockerfile)
+-	[`3.13.4-management`, `3.13-management`, `3-management`, `management`](https://github.com/docker-library/rabbitmq/blob/6cc0f66ec13b06c153a7527c033cf1ad59a97ef3/3.13/ubuntu/management/Dockerfile)
+-	[`3.13.4-alpine`, `3.13-alpine`, `3-alpine`, `alpine`](https://github.com/docker-library/rabbitmq/blob/f1d6b407fa37ad6fe4de699fba2724143ff66e34/3.13/alpine/Dockerfile)
+-	[`3.13.4-management-alpine`, `3.13-management-alpine`, `3-management-alpine`, `management-alpine`](https://github.com/docker-library/rabbitmq/blob/6cc0f66ec13b06c153a7527c033cf1ad59a97ef3/3.13/alpine/management/Dockerfile)
 -	[`3.12.14`, `3.12`](https://github.com/docker-library/rabbitmq/blob/62d163ace25f2a4b3c9affd3f6328e4629df1b37/3.12/ubuntu/Dockerfile)
 -	[`3.12.14-management`, `3.12-management`](https://github.com/docker-library/rabbitmq/blob/c30652127ae871535b7ec8ecda8046948a52ab79/3.12/ubuntu/management/Dockerfile)
 -	[`3.12.14-alpine`, `3.12-alpine`](https://github.com/docker-library/rabbitmq/blob/62d163ace25f2a4b3c9affd3f6328e4629df1b37/3.12/alpine/Dockerfile)
