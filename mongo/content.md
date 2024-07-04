@@ -128,11 +128,15 @@ some-db
 
 Both variables are required for a user to be created. If both are present then MongoDB will start with authentication enabled (`mongod --auth`).
 
-Authentication in MongoDB is fairly complex, so more complex user setup is explicitly left to the user via `/docker-entrypoint-initdb.d/` (see the *Initializing a fresh instance* and *Authentication* sections below for more details).
+Authentication and other areas in MongoDB operations can be fairly complex, so more complex setups can be explicitly left to the user via `/docker-entrypoint-initdb.d/` (see the *Initializing a fresh instance* and *Authentication* sections below for more details). For a very straight-forward setting for creating a non-root user role with a password it can be found in the *`MONGO_NON_ROOT_USERNAME`, `MONGO_NON_ROOT_PASSWORD`, and `MONGO_NON_ROOT_ROLE`* section below.
 
 ### `MONGO_INITDB_DATABASE`
 
-This variable allows you to specify the name of a database to be used for creation scripts in `/docker-entrypoint-initdb.d/*.js` (see *Initializing a fresh instance* below). MongoDB is fundamentally designed for "create on first use", so if you do not insert data with your JavaScript files, then no database is created.
+This variable allows you to specify the name of a database to be used for creation scripts in `/docker-entrypoint-initdb.d/*.js` (see *Initializing a fresh instance* below). If the value of `MONGO_INITDB_DATABASE` is not set then these custom scripts will not run because MongoDB is fundamentally designed for "create on first use". If you do not insert data with your JavaScript or shell script files, then no database is created.
+
+### `MONGO_NON_ROOT_USERNAME`, `MONGO_NON_ROOT_PASSWORD`, and `MONGO_NON_ROOT_ROLE`
+
+Additionally, if you have set `MONGO_NON_ROOT_USERNAME` and `MONGO_NON_ROOT_PASSWORD` then a username with password will be created with the the `MONGO_NON_ROOT_ROLE` role. The `MONGO_NON_ROOT_ROLE` variable is optional and if not specified will default to `readWrite`. This user will be created with this role on the `MONGO_INITDB_DATABASE` only if they are specified. (Note: this will only work if you have set both `MONGO_INITDB_ROOT_USERNAME` and `MONGO_INITDB_ROOT_PASSWORD`)
 
 ## Docker Secrets
 
@@ -158,7 +162,7 @@ As noted above, authentication in MongoDB is fairly complex (although disabled b
 -	[Security > Role-Based Access Control > Built-In Roles](https://docs.mongodb.com/manual/core/security-built-in-roles/)
 -	[Security > Enable Auth (tutorial)](https://docs.mongodb.com/manual/tutorial/enable-authentication/)
 
-In addition to the `/docker-entrypoint-initdb.d` behavior documented above (which is a simple way to configure users for authentication for less complicated deployments), this image also supports `MONGO_INITDB_ROOT_USERNAME` and `MONGO_INITDB_ROOT_PASSWORD` for creating a simple user with [the role `root`](https://docs.mongodb.com/manual/reference/built-in-roles/#root) in the `admin` [authentication database](https://docs.mongodb.com/manual/core/security-users/#user-authentication-database), as described in the *Environment Variables* section above.
+In addition to the `/docker-entrypoint-initdb.d` behavior documented above (which is a way to tailor more custom configuration setup for more complex deployments), this image also supports `MONGO_INITDB_ROOT_USERNAME` and `MONGO_INITDB_ROOT_PASSWORD` for creating a user with [the role `root`](https://docs.mongodb.com/manual/reference/built-in-roles/#root) in the `admin` [authentication database](https://docs.mongodb.com/manual/core/security-users/#user-authentication-database), as described in the *Environment Variables* section above. To simplify an initial non-root user creation the environment variables `MONGO_NON_ROOT_USERNAME` and `MONGO_NON_ROOT_PASSWORD` can be used and will give this user the role of `MONGO_NON_ROOT_ROLE` (default if not set: `readWrite`).
 
 # Caveats
 
