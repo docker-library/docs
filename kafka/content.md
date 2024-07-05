@@ -2,7 +2,7 @@
 
 Apache Kafka is an open-source event streaming platform used to collect, process, store, and integrate data at scale in real time. It powers numerous use cases including stream processing, data integration, and pub/sub messaging.
 
-Kafka was originally developed at LinkedIn, was open sourced in 2011, and became an Apache Software Foundation project in 2012. It is used by thousands of organizations globally to power mission-critical real-time applications, from stock exchanges, to e-commerce applications, to IoT monitoring & analytics, to name a few.
+Kafka was originally developed at LinkedIn, was open sourced in 2011, and became an Apache Software Foundation project in 2012. It is used by thousands of organizations globally to power mission-critical real-time applications, from stock exchanges, to e-commerce applications, to IoT monitoring &amp; analytics, to name a few.
 
 %%LOGO%%
 
@@ -10,31 +10,35 @@ Kafka was originally developed at LinkedIn, was open sourced in 2011, and became
 
 Start a Kafka broker:
 
-```noformat
+```console
 docker run -d --name broker kafka:latest
 ```
 
 Open a shell in the broker container:
 
-```noformat
+```console
 docker exec --workdir /opt/kafka/bin/ -it broker sh
 ```
 
 A *topic* is a logical grouping of events in Kafka. From inside the container, create a topic called `test-topic`:
 
-```noformat
+```console
 ./kafka-topics.sh --bootstrap-server localhost:9092 --create --topic test-topic
 ```
 
 Write two string events into the `test-topic` topic using the console producer that ships with Kafka:
 
+```console
 	./kafka-console-producer.sh --bootstrap-server localhost:9092 --topic test-topic
+```
 
 This command will wait for input at a `>` prompt. Enter `hello`, press `Enter`, then `world`, and press `Enter again`. Enter `Ctrl+C` to exit the console producer.
 
 Now read the events in the `test-topic` topic from the beginning of the log:
 
+```console
 	./kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test-topic --from-beginning
+```
 
 You will see the two strings that you previously produced:
 
@@ -45,14 +49,17 @@ The consumer will continue to run until you exit out of it by entering `Ctrl+C`.
 
 When you are finished, stop and remove the container by running the following command on your host machine:
 
+```console
 	docker rm -f broker
+```
 
 ## Overriding the default broker configuration
 
-Apache Kafka supports a broad set of broker configurations that you may override via environment variables. The environment variables must begin with `KAFKA_`, and any dots in broker configurations should be specified as underscores in the corresponding environment variable. For example, to set the default number of partitions in topics, [`num.partitions`](https://kafka.apache.org/documentation/#brokerconfigs_num.partitions), set the environment variable `KAFKA_NUM_PARTITIONS`. See [here](https://github.com/apache/kafka/blob/trunk/docker/examples/README.md) for more information on overriding broker configuration in Docker.
+Apache Kafka supports a broad set of broker configurations that you may override via environment variables. The environment variables must begin with `KAFKA_`, and any dots in broker configurations should be specified as underscores in the corresponding environment variable. For example, to set the default number of partitions in topics, [`num.partitions`](https://kafka.apache.org/documentation/#brokerconfigs_num.partitions), set the environment variable `KAFKA_NUM_PARTITIONS`. See the [Kafka Docker Image Usage Guide](https://github.com/apache/kafka/blob/trunk/docker/examples/README.md) for more information on overriding broker configuration in Docker.
 
-It's important to note that, if you are overriding *any* configuration, then *none* of the default configurations will be used. For example, to run Kafka in KRaft [combined mode](https://kafka.apache.org/documentation/#kraft_role) (meaning that the broker handling client requests and the controller handling cluster coordination both run in the same container) and set the default number of topic partitions to 3 instead of the default 1, we would specify `KAFKA_NUM_PARTITIONS` in addition to other required configurations:
+It's important to note that if you are overriding *any* configuration, then *none* of the default configurations will be used. For example, to run Kafka in KRaft [combined mode](https://kafka.apache.org/documentation/#kraft_role) (meaning that the broker handling client requests and the controller handling cluster coordination both run in the same container) and set the default number of topic partitions to 3 instead of the default 1, we would specify `KAFKA_NUM_PARTITIONS` in addition to other required configurations:
 
+```console
 	docker run -d  \
 	  --name broker \
 	  -e KAFKA_NODE_ID=1 \
@@ -68,10 +75,13 @@ It's important to note that, if you are overriding *any* configuration, then *no
 	  -e KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS=0 \
 	  -e KAFKA_NUM_PARTITIONS=3 \
 	  kafka:latest
+```
 
 Specifying this many environment variables on the command line gets cumbersome. It's simpler to instead use [Docker Compose](https://docs.docker.com/compose/) to specify and manage Kafka in Docker. Depending on how you installed Docker, you may already have Docker Compose. You can verify that it's available by checking if this command succeeds, and refer to the Docker Compose installation documentation [here](https://docs.docker.com/compose/install/) if it doesn't:
 
+```console
 	docker compose version
+```
 
 To run Kafka with Docker Compose and override the default number of topic partitions to be 3, first copy the following into a file named `docker-compose.yml`:
 
@@ -97,13 +107,17 @@ services:
 
 Now, from the directory containing this file, bring Kafka up in detached mode so that the containers run in the background:
 
+```console
 	docker compose up -d
+```
 
 The above [quick start](#quick-start) steps will work if you'd like to test topic creation and producing / consuming messages.
 
 When you are finished, stop and remove the container by running the following command on your host machine from the directory containing the `docker-compose.yml` file:
 
+```console
 	docker compose down
+```
 
 ## External clients
 
@@ -111,12 +125,16 @@ The examples up to this point run Kafka client commands from within Docker. In o
 
 First, map the port that Kafka listens on to the same port on your host machine, either by passing `-p 9092:9092` to the `docker run` command:
 
+```console
 	docker run -d -p 9092:9092 --name broker kafka:latest
+```
 
 Or, if using Docker Compose, add the port mapping to the `broker` container spec:
 
+```yaml
 	    ports:
 	      - 9092:9092
+```
 
 Second, download and unzip the [latest Kafka release](https://kafka.apache.org/documentation/#quickstart_download). The console producer and consumer CLI tools are included in the unzipped distribution's `bin` directory. The above [quick start](#quick-start) steps will work from your host machine; it's just that `localhost` refers to your host machine as opposed to the within-container `localhost`.
 
@@ -234,31 +252,49 @@ services:
 
 Start the containers from the directory containing the `docker-compose.yml` file:
 
+```console
 	docker compose up -d
+```
 
 Now, the following commands will work to produce and consume from within the Docker network. First, open a shell on any of the nodes:
 
+```console
 	docker exec --workdir /opt/kafka/bin/ -it broker-1 sh
+```
 
 Now run these commands in the container shell to create a topic, produce to it, and consume from it:
 
+```console
 	./kafka-topics.sh --bootstrap-server broker-1:19092,broker-2:19092,broker-3:19092 --create --topic test-topic
+```
 	
+```console
 	./kafka-console-consumer.sh --bootstrap-server broker-1:19092,broker-2:19092,broker-3:19092 --topic test-topic --from-beginning
+```
 	
+```console
 	./kafka-console-producer.sh --bootstrap-server broker-1:19092,broker-2:19092,broker-3:19092 --topic test-topic
+```
 
 Alternatively, you can run the client programs from your host machine by navigating to your Kafka distribution's `bin` directory and running:
 
+```console
 	./kafka-topics.sh --bootstrap-server localhost:29092,localhost:39092,localhost:49092 --create --topic test-topic2
-	
+```
+
+```console
 	./kafka-console-producer.sh --bootstrap-server localhost:29092,localhost:39092,localhost:49092 --topic test-topic2
+```
 	
+```console
 	./kafka-console-consumer.sh --bootstrap-server localhost:29092,localhost:39092,localhost:49092 --topic test-topic2 --from-beginning
+```
 
 When you are finished, stop and remove the Kafka deployment by running the following command on your host machine from the directory containing the `docker-compose.yml` file:
 
+```console
 	docker compose down
+```
 
 ## Additional resources
 
