@@ -132,8 +132,8 @@ First, map the port that Kafka listens on to the same port on your host machine,
 Or, if using Docker Compose, add the port mapping to the `broker` container spec:
 
 ```yaml
-	    ports:
-	      - 9092:9092
+ports:
+  - 9092:9092
 ```
 
 Second, download and unzip the [latest Kafka release](https://kafka.apache.org/documentation/#quickstart_download). The console producer and consumer CLI tools are included in the unzipped distribution's `bin` directory. The above [quick start](#quick-start) steps will work from your host machine; it's just that `localhost` refers to your host machine as opposed to the within-container `localhost`.
