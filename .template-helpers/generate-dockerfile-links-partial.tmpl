@@ -33,16 +33,14 @@ This template defines the "Supported tags and Dockerfile links" portion of an im
 	{{- $url = $url | ternary $url (hasPrefix "https://git.launchpad.net/" $repoUrlBase | ternary (print $repoUrlBase "/tree/" $dockerfilePath "?h=" ($e.ArchGitFetch $arch) "&id=" $gitCommit) "") -}}
 	{{- /* TODO decide what to do (if anything) about other non-GitHub repos with respect to URL */ -}}
 
-	{{- if $i -}}
-		{{- "\n" -}}
-	{{- end -}}
-
 	- {{- "\t" -}}
 	{{- if $url -}} [ {{- end -}}
 	` {{- $e.Tags | join "`, `" -}} `
 	{{- if $url -}} ]( {{- $url -}} ) {{- end -}}
+
+	{{- "\n" -}}
 {{- end -}}
-{{- "\n\n" -}}
+{{- "\n" -}}
 
 {{- if (len $sharedTagGroups) -}}
 	{{- "## Shared Tags\n\n" -}}
