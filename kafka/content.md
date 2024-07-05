@@ -267,11 +267,11 @@ Now run these commands in the container shell to create a topic, produce to it, 
 ```console
 	./kafka-topics.sh --bootstrap-server broker-1:19092,broker-2:19092,broker-3:19092 --create --topic test-topic
 ```
-	
+
 ```console
 	./kafka-console-consumer.sh --bootstrap-server broker-1:19092,broker-2:19092,broker-3:19092 --topic test-topic --from-beginning
 ```
-	
+
 ```console
 	./kafka-console-producer.sh --bootstrap-server broker-1:19092,broker-2:19092,broker-3:19092 --topic test-topic
 ```
@@ -285,7 +285,7 @@ Alternatively, you can run the client programs from your host machine by navigat
 ```console
 	./kafka-console-producer.sh --bootstrap-server localhost:29092,localhost:39092,localhost:49092 --topic test-topic2
 ```
-	
+
 ```console
 	./kafka-console-consumer.sh --bootstrap-server localhost:29092,localhost:39092,localhost:49092 --topic test-topic2 --from-beginning
 ```
