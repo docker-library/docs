@@ -38,9 +38,8 @@ This template defines the "Supported tags and Dockerfile links" portion of an im
 	` {{- $e.Tags | join "`, `" -}} `
 	{{- if $url -}} ]( {{- $url -}} ) {{- end -}}
 
-	{{- "\n" -}}
+	{{- "\n\n" -}}
 {{- end -}}
-{{- "\n" -}}
 
 {{- if (len $sharedTagGroups) -}}
 	{{- "## Shared Tags\n\n" -}}
@@ -51,7 +50,7 @@ This template defines the "Supported tags and Dockerfile links" portion of an im
 		{{- if (len $entries) -}}
 			{{- "-\t`" -}}
 			{{ .SharedTags | join "`, `" }}
-			{{- "`:\n" -}}
+			{{- "`:\n\n" -}}
 
 			{{- range $i, $e := $entries -}}
 				{{- $arch := $archSpecific | ternary arch ($e.HasArchitecture arch | ternary arch ($e.Architectures | first)) -}}
@@ -79,6 +78,7 @@ This template defines the "Supported tags and Dockerfile links" portion of an im
 
 				{{- "\n" -}}
 			{{- end -}}
+			{{- "\n" -}}
 		{{- end -}}
 	{{- end -}}
 	{{- "\n" -}}
