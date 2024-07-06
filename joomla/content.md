@@ -14,26 +14,26 @@ $ docker run --name some-%%REPO%% --network some-network -d %%IMAGE%%
 
 The following environment variables are honored for configuring your Joomla instance:
 
-- `-e JOOMLA_DB_HOST=...` (defaults to the IP and port of the linked `mysql` container)
-- `-e JOOMLA_DB_USER=...` (defaults to "root")
-- `-e JOOMLA_DB_PASSWORD=...` (defaults to the value of the `MYSQL_ROOT_PASSWORD` environment variable from the linked `mysql` container)
-- `-e JOOMLA_DB_PASSWORD_FILE=...` (path to a file containing the database password)
-- `-e JOOMLA_DB_NAME=...` (defaults to "joomla")
-- `-e JOOMLA_DB_TYPE=...` (defaults to "mysqli" options: mysqli, pgsql)
+-	`-e JOOMLA_DB_HOST=...` (defaults to the IP and port of the linked `mysql` container)
+-	`-e JOOMLA_DB_USER=...` (defaults to "root")
+-	`-e JOOMLA_DB_PASSWORD=...` (defaults to the value of the `MYSQL_ROOT_PASSWORD` environment variable from the linked `mysql` container)
+-	`-e JOOMLA_DB_PASSWORD_FILE=...` (path to a file containing the database password)
+-	`-e JOOMLA_DB_NAME=...` (defaults to "joomla")
+-	`-e JOOMLA_DB_TYPE=...` (defaults to "mysqli" options: mysqli, pgsql)
 
 If the `JOOMLA_DB_NAME` specified does not already exist on the given MySQL server, it will be created automatically upon startup of the `%%REPO%%` container, provided that the `JOOMLA_DB_USER` specified has the necessary permissions to create it.
 
 The following environment variables are also honored for configuring auto deployment (skip the browser setup) for your Joomla instance:
 
-- `-e JOOMLA_SITE_NAME=...` (name of the Joomla site)
-- `-e JOOMLA_ADMIN_USER=...` (full name of the Joomla administrator)
-- `-e JOOMLA_ADMIN_USERNAME=...` (username of the Joomla administrator)
-- `-e JOOMLA_ADMIN_PASSWORD=...` (password of the Joomla administrator)
-- `-e JOOMLA_ADMIN_EMAIL=...` (email address of the Joomla administrator)
-- `-e JOOMLA_EXTENSIONS_URLS=...` (semicolon-separated list of URLs to install Joomla extensions from)
-- `-e JOOMLA_EXTENSIONS_PATHS=...` (semicolon-separated list of file paths to install Joomla extensions from)
-- `-e JOOMLA_SMTP_HOST=...` (SMTP host for outgoing email)
-- `-e JOOMLA_SMTP_HOST_PORT=...` (SMTP port for outgoing email)
+-	`-e JOOMLA_SITE_NAME=...` (name of the Joomla site)
+-	`-e JOOMLA_ADMIN_USER=...` (full name of the Joomla administrator)
+-	`-e JOOMLA_ADMIN_USERNAME=...` (username of the Joomla administrator)
+-	`-e JOOMLA_ADMIN_PASSWORD=...` (password of the Joomla administrator)
+-	`-e JOOMLA_ADMIN_EMAIL=...` (email address of the Joomla administrator)
+-	`-e JOOMLA_EXTENSIONS_URLS=...` (semicolon-separated list of URLs to install Joomla extensions from)
+-	`-e JOOMLA_EXTENSIONS_PATHS=...` (semicolon-separated list of file paths to install Joomla extensions from)
+-	`-e JOOMLA_SMTP_HOST=...` (SMTP host for outgoing email)
+-	`-e JOOMLA_SMTP_HOST_PORT=...` (SMTP port for outgoing email)
 
 If you'd like to be able to access the instance from the host without the container's IP, standard port mappings can be used:
 
