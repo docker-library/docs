@@ -38,7 +38,7 @@ The following environment variables are also honored for configuring auto deploy
 If you'd like to be able to access the instance from the host without the container's IP, standard port mappings can be used:
 
 ```console
-$ docker run --name some-%%REPO%% --network joomla-network -p 8080:80 -d %%IMAGE%%
+$ docker run --name some-%%REPO%% --network some-network -p 8080:80 -d %%IMAGE%%
 ```
 
 Then, access it via `http://localhost:8080` or `http://host-ip:8080` in a browser.
@@ -46,7 +46,7 @@ Then, access it via `http://localhost:8080` or `http://host-ip:8080` in a browse
 If you'd like to use an external database instead of a MySQL container, specify the hostname and port with `JOOMLA_DB_HOST` along with the password in `JOOMLA_DB_PASSWORD` and the username in `JOOMLA_DB_USER` (if it is something other than `root`):
 
 ```console
-$ docker run --name some-%%REPO%% --network joomla-network -e JOOMLA_DB_HOST=10.1.2.3:3306 \
+$ docker run --name some-%%REPO%% --network some-network -e JOOMLA_DB_HOST=10.1.2.3:3306 \
     -e JOOMLA_DB_USER=... -e JOOMLA_DB_PASSWORD=... -d %%IMAGE%%
 ```
 
