@@ -25,28 +25,51 @@ WARNING:
 # Supported tags and respective `Dockerfile` links
 
 -	[`bookworm`, `bookworm-20240701`, `12.6`, `12`, `latest`](https://github.com/debuerreotype/docker-debian-artifacts/blob/a6805afee173140046c0f4cd6a1a46ad2870e2ea/bookworm/Dockerfile)
+
 -	[`bookworm-backports`](https://github.com/debuerreotype/docker-debian-artifacts/blob/a6805afee173140046c0f4cd6a1a46ad2870e2ea/bookworm/backports/Dockerfile)
+
 -	[`bookworm-slim`, `bookworm-20240701-slim`, `12.6-slim`, `12-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/a6805afee173140046c0f4cd6a1a46ad2870e2ea/bookworm/slim/Dockerfile)
+
 -	[`bullseye`, `bullseye-20240701`, `11.10`, `11`](https://github.com/debuerreotype/docker-debian-artifacts/blob/a6805afee173140046c0f4cd6a1a46ad2870e2ea/bullseye/Dockerfile)
+
 -	[`bullseye-backports`](https://github.com/debuerreotype/docker-debian-artifacts/blob/a6805afee173140046c0f4cd6a1a46ad2870e2ea/bullseye/backports/Dockerfile)
+
 -	[`bullseye-slim`, `bullseye-20240701-slim`, `11.10-slim`, `11-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/a6805afee173140046c0f4cd6a1a46ad2870e2ea/bullseye/slim/Dockerfile)
+
 -	[`experimental`, `experimental-20240701`](https://github.com/debuerreotype/docker-debian-artifacts/blob/a6805afee173140046c0f4cd6a1a46ad2870e2ea/experimental/Dockerfile)
+
 -	[`oldstable`, `oldstable-20240701`](https://github.com/debuerreotype/docker-debian-artifacts/blob/a6805afee173140046c0f4cd6a1a46ad2870e2ea/oldstable/Dockerfile)
+
 -	[`oldstable-backports`](https://github.com/debuerreotype/docker-debian-artifacts/blob/a6805afee173140046c0f4cd6a1a46ad2870e2ea/oldstable/backports/Dockerfile)
+
 -	[`oldstable-slim`, `oldstable-20240701-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/a6805afee173140046c0f4cd6a1a46ad2870e2ea/oldstable/slim/Dockerfile)
+
 -	[`rc-buggy`, `rc-buggy-20240701`](https://github.com/debuerreotype/docker-debian-artifacts/blob/a6805afee173140046c0f4cd6a1a46ad2870e2ea/rc-buggy/Dockerfile)
+
 -	[`sid`, `sid-20240701`](https://github.com/debuerreotype/docker-debian-artifacts/blob/a6805afee173140046c0f4cd6a1a46ad2870e2ea/sid/Dockerfile)
+
 -	[`sid-slim`, `sid-20240701-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/a6805afee173140046c0f4cd6a1a46ad2870e2ea/sid/slim/Dockerfile)
+
 -	[`stable`, `stable-20240701`](https://github.com/debuerreotype/docker-debian-artifacts/blob/a6805afee173140046c0f4cd6a1a46ad2870e2ea/stable/Dockerfile)
+
 -	[`stable-backports`](https://github.com/debuerreotype/docker-debian-artifacts/blob/a6805afee173140046c0f4cd6a1a46ad2870e2ea/stable/backports/Dockerfile)
+
 -	[`stable-slim`, `stable-20240701-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/a6805afee173140046c0f4cd6a1a46ad2870e2ea/stable/slim/Dockerfile)
+
 -	[`testing`, `testing-20240701`](https://github.com/debuerreotype/docker-debian-artifacts/blob/a6805afee173140046c0f4cd6a1a46ad2870e2ea/testing/Dockerfile)
+
 -	[`testing-backports`](https://github.com/debuerreotype/docker-debian-artifacts/blob/a6805afee173140046c0f4cd6a1a46ad2870e2ea/testing/backports/Dockerfile)
+
 -	[`testing-slim`, `testing-20240701-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/a6805afee173140046c0f4cd6a1a46ad2870e2ea/testing/slim/Dockerfile)
+
 -	[`trixie`, `trixie-20240701`](https://github.com/debuerreotype/docker-debian-artifacts/blob/a6805afee173140046c0f4cd6a1a46ad2870e2ea/trixie/Dockerfile)
+
 -	[`trixie-backports`](https://github.com/debuerreotype/docker-debian-artifacts/blob/a6805afee173140046c0f4cd6a1a46ad2870e2ea/trixie/backports/Dockerfile)
+
 -	[`trixie-slim`, `trixie-20240701-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/a6805afee173140046c0f4cd6a1a46ad2870e2ea/trixie/slim/Dockerfile)
+
 -	[`unstable`, `unstable-20240701`](https://github.com/debuerreotype/docker-debian-artifacts/blob/a6805afee173140046c0f4cd6a1a46ad2870e2ea/unstable/Dockerfile)
+
 -	[`unstable-slim`, `unstable-20240701-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/a6805afee173140046c0f4cd6a1a46ad2870e2ea/unstable/slim/Dockerfile)
 
 # Quick reference (cont.)

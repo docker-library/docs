@@ -29,11 +29,13 @@ WARNING:
 ## Simple Tags
 
 -	[`8.4.0-bookworm`, `8.4-bookworm`, `8-bookworm`, `bookworm`](https://github.com/IdentityPython/satosa-docker/blob/69038a84d541717d66420f3ad8ec7c9da22c91b4/8.4/bookworm/Dockerfile)
+
 -	[`8.4.0-alpine3.19`, `8.4-alpine3.19`, `8-alpine3.19`, `alpine3.19`, `8.4.0-alpine`, `8.4-alpine`, `8-alpine`, `alpine`](https://github.com/IdentityPython/satosa-docker/blob/74a847396f1190ec26679fc3bf09ffcc42d2e999/8.4/alpine3.19/Dockerfile)
 
 ## Shared Tags
 
 -	`8.4.0`, `8.4`, `8`, `latest`:
+
 	-	[`8.4.0-bookworm`](https://github.com/IdentityPython/satosa-docker/blob/69038a84d541717d66420f3ad8ec7c9da22c91b4/8.4/bookworm/Dockerfile)
 
 # Quick reference (cont.)

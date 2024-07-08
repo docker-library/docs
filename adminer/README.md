@@ -25,6 +25,7 @@ WARNING:
 # Supported tags and respective `Dockerfile` links
 
 -	[`4.8.1-standalone`, `4-standalone`, `standalone`, `4.8.1`, `4`, `latest`](https://github.com/TimWolla/docker-adminer/blob/c9c54b18f79a66409a3153a94f629ea68f08647c/4/Dockerfile)
+
 -	[`4.8.1-fastcgi`, `4-fastcgi`, `fastcgi`](https://github.com/TimWolla/docker-adminer/blob/c9c54b18f79a66409a3153a94f629ea68f08647c/4/fastcgi/Dockerfile)
 
 # Quick reference (cont.)

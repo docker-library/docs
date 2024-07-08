@@ -25,6 +25,7 @@ WARNING:
 # Supported tags and respective `Dockerfile` links
 
 -	[`develop`](https://github.com/eggheads/eggdrop-docker/blob/ffa90b0ffecc389997799f525e32f45f60b4897a/develop/Dockerfile)
+
 -	[`1.9`, `1.9.5`, `stable`, `latest`](https://github.com/eggheads/eggdrop-docker/blob/80fba087712325adc72a96265d4984c6760aff1a/1.9/Dockerfile)
 
 # Quick reference (cont.)

@@ -24,10 +24,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2022.1-u0`, `2022.1`, `7.14.0`, `7.14`](https://github.com/bonitasoft/bonita-distrib/blob/4cdeb1c385b981e7074ce19cc685c08028d7149d/docker/Dockerfile)
--	[`2022.2-u0`, `2022.2`, `7.15.0`, `7.15`](https://github.com/bonitasoft/bonita-distrib/blob/607a6a3885df35979e0946611af4f7c858f9c989/docker/Dockerfile)
--	[`2023.1-u0`, `2023.1`, `8.0.0`, `8.0`](https://github.com/bonitasoft/bonita-distrib/blob/814cc8cc0a6e8b02c827cb1dfeabb1bb4569a865/docker/Dockerfile)
--	[`2023.2-u0`, `2023.2`, `9.0.0`, `9.0`, `latest`](https://github.com/bonitasoft/bonita-distrib/blob/a8f0abf47fa8f7b96cb010e7d80b032ae96720ca/docker/Dockerfile)
+-	[`2022.2-u0`, `2022.2`, `7.15.0`, `7.15`](https://github.com/bonitasoft/bonita-distrib/blob/0fbc47d8fcb6629b943b4c1e00052ca14c3d1e1b/docker/Dockerfile)
+
+-	[`2023.1-u0`, `2023.1`, `8.0.0`, `8.0`](https://github.com/bonitasoft/bonita-distrib/blob/31dcebbf22ebcce11f8e3a9b9444802136c36c03/docker/Dockerfile)
+
+-	[`2023.2-u0`, `2023.2`, `9.0.0`, `9.0`, `latest`](https://github.com/bonitasoft/bonita-distrib/blob/397824cf4f302c37f3534908728a2b8321a31565/docker/Dockerfile)
 
 # Quick reference (cont.)
 

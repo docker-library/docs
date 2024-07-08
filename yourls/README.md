@@ -25,7 +25,9 @@ WARNING:
 # Supported tags and respective `Dockerfile` links
 
 -	[`1.9.2-apache`, `1.9-apache`, `1-apache`, `apache`, `1.9.2`, `1.9`, `1`, `latest`](https://github.com/YOURLS/images/blob/082820033f591498dbc30d4ffc0cc927197ebf26/apache/Dockerfile)
+
 -	[`1.9.2-fpm`, `1.9-fpm`, `1-fpm`, `fpm`](https://github.com/YOURLS/images/blob/082820033f591498dbc30d4ffc0cc927197ebf26/fpm/Dockerfile)
+
 -	[`1.9.2-fpm-alpine`, `1.9-fpm-alpine`, `1-fpm-alpine`, `fpm-alpine`](https://github.com/YOURLS/images/blob/082820033f591498dbc30d4ffc0cc927197ebf26/fpm-alpine/Dockerfile)
 
 # Quick reference (cont.)
