@@ -15,7 +15,9 @@ use Mojo::Util qw(decode encode trim url_escape);
 use Term::UI;
 use Term::ReadLine;
 
-my $hubLengthLimit = 25_000;
+require bytes; # this is not recommended, but we *only* use "bytes::length" from it to determine whether we need to do a more correct conversion to/from bytes for trimming (see $hubLengthLimit and usages)
+
+my $hubLengthLimit = 25_000; # NOTE: this is *bytes*, not characters 🙃
 my $githubBase = 'https://github.com/docker-library/docs/tree/master'; # TODO point this at the correct "dist-xxx" branch based on "namespace"
 
 my $username;
@@ -75,7 +77,7 @@ sub prompt_for_edit {
 		$proposedText =~ s%$supportedTagsRegex%$sponsoredLinks$1$2%;
 	}
 	
-	if ($lengthLimit > 0 && length($proposedText) > $lengthLimit) {
+	if ($lengthLimit > 0 && bytes::length($proposedText) > $lengthLimit) {
 		# TODO https://github.com/docker/hub-beta-feedback/issues/238
 		my $fullUrl = "$githubBase/$proposedFile";
 		my $shortTags = "-\tSee [\"Supported tags and respective \`Dockerfile\` links\" at $fullUrl]($fullUrl#supported-tags-and-respective-dockerfile-links)\n\n";
@@ -91,9 +93,18 @@ sub prompt_for_edit {
 		$trimmedText =~ s%$supportedTagsRegex%$sponsoredLinks$1$tagsNote%ms;
 		# (we scrape until the next "h1" or a line starting with a link which is likely a build status badge for an architecture-namespace)
 		
-		if (length($trimmedText) > $lengthLimit) {
-			# ... if that doesn't do the trick, then do our older naïve description trimming
-			$trimmedText = $startingNote . substr $proposedText, 0, ($lengthLimit - length($startingNote . $endingNote));
+		if (bytes::length($trimmedText) > $lengthLimit) {
+			# ... if that doesn't do the trick, then do our older naïve description trimming (respecting utf8; see https://www.perlmonks.org/?node_id=1230659 and https://perldoc.perl.org/utf8)
+			$trimmedText = $proposedText;
+			utf8::encode($trimmedText);
+			$trimmedText = $startingNote . substr $trimmedText, 0, ($lengthLimit - bytes::length($startingNote . $endingNote));
+			# (deal with the potential of "bytes::substr" here cutting us in the middle of a unicode glyph, which is arguably a much worse problem than the markdown cutting described below 😬  again, see https://www.perlmonks.org/?node_id=1230659)
+			$trimmedText =~ s/(?:
+				[\xC0-\xDF]
+				| [\xE0-\xEF] [\x80-\xBF]?
+				| [\xF0-\xF7] [\x80-\xBF]{0,2}
+			)\z//x;
+			utf8::decode($trimmedText);
 
 			# adding the "ending note" (https://github.com/docker/hub-feedback/issues/2220) is a bit more complicated as we have to deal with cutting off markdown ~cleanly so it renders correctly
 			# TODO deal with "```foo" appropriately (so we don't drop our note in the middle of a code block) - the Hub's current markdown rendering (2022-04-07) does not auto-close a dangling block like this, so this isn't urgent
