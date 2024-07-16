@@ -60,12 +60,6 @@ WARNING:
 
 -	[`jammy`, `22.04`](https://github.com/docker-library/buildpack-deps/blob/d0ecd4b7313e9bc6b00d9a4fe62ad5787bc197ae/ubuntu/jammy/Dockerfile)
 
--	[`mantic-curl`, `23.10-curl`](https://github.com/docker-library/buildpack-deps/blob/6b4838ad208cd3447d2c8d6535827e0dfc74a145/ubuntu/mantic/curl/Dockerfile)
-
--	[`mantic-scm`, `23.10-scm`](https://github.com/docker-library/buildpack-deps/blob/d0ecd4b7313e9bc6b00d9a4fe62ad5787bc197ae/ubuntu/mantic/scm/Dockerfile)
-
--	[`mantic`, `23.10`](https://github.com/docker-library/buildpack-deps/blob/d0ecd4b7313e9bc6b00d9a4fe62ad5787bc197ae/ubuntu/mantic/Dockerfile)
-
 -	[`noble-curl`, `24.04-curl`](https://github.com/docker-library/buildpack-deps/blob/60dc5f9555c521de086b2f5770514faf69ee2cc4/ubuntu/noble/curl/Dockerfile)
 
 -	[`noble-scm`, `24.04-scm`](https://github.com/docker-library/buildpack-deps/blob/60dc5f9555c521de086b2f5770514faf69ee2cc4/ubuntu/noble/scm/Dockerfile)
