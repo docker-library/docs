@@ -84,13 +84,13 @@ Nginx (pronounced "engine-x") is an open source reverse proxy server for HTTP, H
 ## Hosting some simple static content
 
 ```console
-$ docker run --name some-nginx -v /some/content:/usr/share/nginx/html:ro -d nginx
+$ docker run --name some-nginx -v /some/content:/usr/share/nginx/html:ro -d nginx:stable
 ```
 
 Alternatively, a simple `Dockerfile` can be used to generate a new image that includes the necessary content (which is a much cleaner solution than the bind mount above):
 
 ```dockerfile
-FROM nginx
+FROM nginx:stable
 COPY static-html-directory /usr/share/nginx/html
 ```
 
@@ -115,7 +115,7 @@ You can mount your configuration file, or build a new image with it.
 If you wish to adapt the default configuration, use something like the following to get it from a running nginx container:
 
 ```console
-$ docker run --rm --entrypoint=cat nginx /etc/nginx/nginx.conf > /host/path/nginx.conf
+$ docker run --rm --entrypoint=cat nginx:stable /etc/nginx/nginx.conf > /host/path/nginx.conf
 ```
 
 And then edit `/host/path/nginx.conf` in your host file system.
@@ -125,13 +125,13 @@ For information on the syntax of the nginx configuration files, see [the officia
 ### Mount your configuration file
 
 ```console
-$ docker run --name my-custom-nginx-container -v /host/path/nginx.conf:/etc/nginx/nginx.conf:ro -d nginx
+$ docker run --name my-custom-nginx-container -v /host/path/nginx.conf:/etc/nginx/nginx.conf:ro -d nginx:stable
 ```
 
 ### Build a new image with your configuration file
 
 ```dockerfile
-FROM nginx
+FROM nginx:stable
 COPY nginx.conf /etc/nginx/nginx.conf
 ```
 
@@ -151,7 +151,7 @@ Here is an example using docker-compose.yml:
 
 ```yaml
 web:
-  image: nginx
+  image: nginx:stable
   volumes:
    - ./templates:/etc/nginx/templates
   ports:
@@ -190,7 +190,7 @@ This behavior can be changed via the following environment variables:
 To run nginx in read-only mode, you will need to mount a Docker volume to every location where nginx writes information. The default nginx configuration requires write access to `/var/cache/nginx` and `/var/run`. This can be easily accomplished by running nginx as follows:
 
 ```console
-$ docker run -d -p 80:80 --read-only -v $(pwd)/nginx-cache:/var/cache/nginx -v $(pwd)/nginx-pid:/var/run nginx
+$ docker run -d -p 80:80 --read-only -v $(pwd)/nginx-cache:/var/cache/nginx -v $(pwd)/nginx-pid:/var/run nginx:stable
 ```
 
 If you have a more advanced configuration that requires nginx to write to other locations, simply add more volume mounts to those locations.
@@ -200,14 +200,14 @@ If you have a more advanced configuration that requires nginx to write to other 
 Images since version 1.9.8 come with `nginx-debug` binary that produces verbose output when using higher log levels. It can be used with simple CMD substitution:
 
 ```console
-$ docker run --name my-nginx -v /host/path/nginx.conf:/etc/nginx/nginx.conf:ro -d nginx nginx-debug -g 'daemon off;'
+$ docker run --name my-nginx -v /host/path/nginx.conf:/etc/nginx/nginx.conf:ro -d nginx:stable nginx-debug -g 'daemon off;'
 ```
 
 Similar configuration in docker-compose.yml may look like this:
 
 ```yaml
 web:
-  image: nginx
+  image: nginx:stable
   volumes:
     - ./nginx.conf:/etc/nginx/nginx.conf:ro
   command: [nginx-debug, '-g', 'daemon off;']
@@ -218,7 +218,7 @@ web:
 Since version 1.19.0, a verbose entrypoint was added. It provides information on what's happening during container startup. You can silence this output by setting environment variable `NGINX_ENTRYPOINT_QUIET_LOGS`:
 
 ```console
-$ docker run -d -e NGINX_ENTRYPOINT_QUIET_LOGS=1 nginx
+$ docker run -d -e NGINX_ENTRYPOINT_QUIET_LOGS=1 nginx:stable
 ```
 
 ## User and group id
@@ -235,7 +235,7 @@ uid=101(nginx) gid=101(nginx) groups=101(nginx)
 It is possible to run the image as a less privileged arbitrary UID/GID. This, however, requires modification of nginx configuration to use directories writeable by that specific UID/GID pair:
 
 ```console
-$ docker run -d -v $PWD/nginx.conf:/etc/nginx/nginx.conf nginx
+$ docker run -d -v $PWD/nginx.conf:/etc/nginx/nginx.conf nginx:stable
 ```
 
 where nginx.conf in the current directory should have the following directives re-defined:
@@ -265,7 +265,7 @@ The `nginx` images come in many flavors, each designed for a specific use case.
 
 ## `nginx:<version>`
 
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+These image variants are designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of. `nginx:latest` is the default image and may be unstable. It's best practise to specify the major release version you need (e.g. `nginx:1.26`), but use `nginx:stable` if you are unsure about what your needs are.
 
 Some of these tags may have names like bookworm in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
