@@ -28,8 +28,6 @@ WARNING:
 
 -	[`22.04`, `jammy-20240627.1`, `jammy`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-amd64-20240627.1-0d60927a&id=0d60927a24b045adcfbdb9a80b7db3bf6bd9fd9b)
 
--	[`23.10`, `mantic-20240530`, `mantic`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-mantic-amd64-20240530-8dcb055f&id=8dcb055fedbfd33752ede65d6534f702a3b81070)
-
 -	[`24.04`, `noble-20240605`, `noble`, `latest`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-amd64-20240605-baf9888c&id=baf9888c79d71a0ae98d4ef87c838ca3c91f2245)
 
 -	[`24.10`, `oracular-20240617`, `oracular`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-oracular-amd64-20240617-43acaa26&id=43acaa26848f20fe7885f00637b5342967c8ae23)
