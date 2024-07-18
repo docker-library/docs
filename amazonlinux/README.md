@@ -26,7 +26,7 @@ WARNING:
 
 -	[`2023`, `latest`, `2023.5.20240708.0`](https://github.com/amazonlinux/container-images/blob/9aa5efdadd1dbd202f24e6425831f550a005700d/Dockerfile)
 
--	[`2`, `2.0.20240620.0`](https://github.com/amazonlinux/container-images/blob/3940ec6a9ed3bbb1dd7ccca2fcfcc4a28213588a/Dockerfile)
+-	[`2`, `2.0.20240709.1`](https://github.com/amazonlinux/container-images/blob/658e36f64d9196707f00b3e5082ce8a54d65ed26/Dockerfile)
 
 -	[`1`, `2018.03`, `2018.03.0.20231218.0`](https://github.com/amazonlinux/container-images/blob/21ffab08ccd83dc317d0607e94ad0f9a63590a60/Dockerfile)
 
