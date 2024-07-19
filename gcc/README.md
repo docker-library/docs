@@ -30,7 +30,7 @@ WARNING:
 
 -	[`12.4.0`, `12.4`, `12`, `12.4.0-bookworm`, `12.4-bookworm`, `12-bookworm`](https://github.com/docker-library/gcc/blob/4a0eb64954fed9990b723b618fa13f6b8f7762e3/12/Dockerfile)
 
--	[`11.4.0`, `11.4`, `11`, `11.4.0-bullseye`, `11.4-bullseye`, `11-bullseye`](https://github.com/docker-library/gcc/blob/dfd9a5f296cd45762afd9b9e098d293b12dc5193/11/Dockerfile)
+-	[`11.5.0`, `11.5`, `11`, `11.5.0-bullseye`, `11.5-bullseye`, `11-bullseye`](https://github.com/docker-library/gcc/blob/f2681d9a12524b97ffe225a35d2c2f9f839cff0a/11/Dockerfile)
 
 # Quick reference (cont.)
 
