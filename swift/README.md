@@ -44,10 +44,6 @@ WARNING:
 
 -	[`5.10.1-amazonlinux2-slim`, `5.10-amazonlinux2-slim`, `amazonlinux2-slim`](https://github.com/apple/swift-docker/blob/53c4d44e4b556d7bab6ff94c80e5bd0444cdc17d/5.10/amazonlinux/2/slim/Dockerfile)
 
--	[`5.10.1-centos7`, `5.10-centos7`, `centos7`](https://github.com/apple/swift-docker/blob/53c4d44e4b556d7bab6ff94c80e5bd0444cdc17d/5.10/centos/7/Dockerfile)
-
--	[`5.10.1-centos7-slim`, `5.10-centos7-slim`, `centos7-slim`](https://github.com/apple/swift-docker/blob/53c4d44e4b556d7bab6ff94c80e5bd0444cdc17d/5.10/centos/7/slim/Dockerfile)
-
 -	[`5.10.1-rhel-ubi9`, `5.10-rhel-ubi9`, `rhel-ubi9`](https://github.com/apple/swift-docker/blob/53c4d44e4b556d7bab6ff94c80e5bd0444cdc17d/5.10/rhel-ubi/9/Dockerfile)
 
 -	[`5.10.1-rhel-ubi9-slim`, `5.10-rhel-ubi9-slim`, `rhel-ubi9-slim`](https://github.com/apple/swift-docker/blob/53c4d44e4b556d7bab6ff94c80e5bd0444cdc17d/5.10/rhel-ubi/9/slim/Dockerfile)
@@ -65,10 +61,6 @@ WARNING:
 -	[`5.9.2-amazonlinux2`, `5.9-amazonlinux2`](https://github.com/apple/swift-docker/blob/51f0941d5f6d92af9df8aa89fa75841f5036c127/5.9/amazonlinux/2/Dockerfile)
 
 -	[`5.9.2-amazonlinux2-slim`, `5.9-amazonlinux2-slim`](https://github.com/apple/swift-docker/blob/51f0941d5f6d92af9df8aa89fa75841f5036c127/5.9/amazonlinux/2/slim/Dockerfile)
-
--	[`5.9.2-centos7`, `5.9-centos7`](https://github.com/apple/swift-docker/blob/51f0941d5f6d92af9df8aa89fa75841f5036c127/5.9/centos/7/Dockerfile)
-
--	[`5.9.2-centos7-slim`, `5.9-centos7-slim`](https://github.com/apple/swift-docker/blob/51f0941d5f6d92af9df8aa89fa75841f5036c127/5.9/centos/7/slim/Dockerfile)
 
 -	[`5.9.2-rhel-ubi9`, `5.9-rhel-ubi9`](https://github.com/apple/swift-docker/blob/51f0941d5f6d92af9df8aa89fa75841f5036c127/5.9/rhel-ubi/9/Dockerfile)
 
@@ -88,10 +80,6 @@ WARNING:
 
 -	[`5.8.1-amazonlinux2-slim`, `5.8-amazonlinux2-slim`](https://github.com/apple/swift-docker/blob/0190ac8d812bfcfab0ee39d600116ab5e3243f48/5.8/amazonlinux/2/slim/Dockerfile)
 
--	[`5.8.1-centos7`, `5.8-centos7`](https://github.com/apple/swift-docker/blob/0190ac8d812bfcfab0ee39d600116ab5e3243f48/5.8/centos/7/Dockerfile)
-
--	[`5.8.1-centos7-slim`, `5.8-centos7-slim`](https://github.com/apple/swift-docker/blob/0190ac8d812bfcfab0ee39d600116ab5e3243f48/5.8/centos/7/slim/Dockerfile)
-
 -	[`5.8.1-rhel-ubi9`, `5.8-rhel-ubi9`](https://github.com/apple/swift-docker/blob/0190ac8d812bfcfab0ee39d600116ab5e3243f48/5.8/rhel-ubi/9/Dockerfile)
 
 -	[`5.8.1-rhel-ubi9-slim`, `5.8-rhel-ubi9-slim`](https://github.com/apple/swift-docker/blob/0190ac8d812bfcfab0ee39d600116ab5e3243f48/5.8/rhel-ubi/9/slim/Dockerfile)
@@ -108,10 +96,6 @@ WARNING:
 
 -	[`5.7.3-amazonlinux2-slim`, `5.7-amazonlinux2-slim`](https://github.com/apple/swift-docker/blob/f53cb8e9f11507814412fb4e9c6f0fce1f4b7552/5.7/amazonlinux/2/slim/Dockerfile)
 
--	[`5.7.3-centos7`, `5.7-centos7`](https://github.com/apple/swift-docker/blob/f53cb8e9f11507814412fb4e9c6f0fce1f4b7552/5.7/centos/7/Dockerfile)
-
--	[`5.7.3-centos7-slim`, `5.7-centos7-slim`](https://github.com/apple/swift-docker/blob/f53cb8e9f11507814412fb4e9c6f0fce1f4b7552/5.7/centos/7/slim/Dockerfile)
-
 -	[`5.6.3-focal-slim`, `5.6-focal-slim`](https://github.com/apple/swift-docker/blob/1188cc86d15f9e98d90db9f98de3598d5d5f7bb2/5.6/ubuntu/20.04/slim/Dockerfile)
 
 -	[`5.6.3-focal`, `5.6-focal`](https://github.com/apple/swift-docker/blob/1188cc86d15f9e98d90db9f98de3598d5d5f7bb2/5.6/ubuntu/20.04/Dockerfile)
@@ -120,10 +104,6 @@ WARNING:
 
 -	[`5.6.3-amazonlinux2-slim`, `5.6-amazonlinux2-slim`](https://github.com/apple/swift-docker/blob/1188cc86d15f9e98d90db9f98de3598d5d5f7bb2/5.6/amazonlinux/2/slim/Dockerfile)
 
--	[`5.6.3-centos7`, `5.6-centos7`](https://github.com/apple/swift-docker/blob/1188cc86d15f9e98d90db9f98de3598d5d5f7bb2/5.6/centos/7/Dockerfile)
-
--	[`5.6.3-centos7-slim`, `5.6-centos7-slim`](https://github.com/apple/swift-docker/blob/1188cc86d15f9e98d90db9f98de3598d5d5f7bb2/5.6/centos/7/slim/Dockerfile)
-
 -	[`5.5.3-focal-slim`, `5.5-focal-slim`](https://github.com/apple/swift-docker/blob/9394b31e064cf0d80eaab08b692a2886c7aea8fe/5.5/ubuntu/20.04/slim/Dockerfile)
 
 -	[`5.5.3-focal`, `5.5-focal`](https://github.com/apple/swift-docker/blob/9394b31e064cf0d80eaab08b692a2886c7aea8fe/5.5/ubuntu/20.04/Dockerfile)
@@ -131,10 +111,6 @@ WARNING:
 -	[`5.5.3-amazonlinux2`, `5.5-amazonlinux2`](https://github.com/apple/swift-docker/blob/9394b31e064cf0d80eaab08b692a2886c7aea8fe/5.5/amazonlinux/2/Dockerfile)
 
 -	[`5.5.3-amazonlinux2-slim`, `5.5-amazonlinux2-slim`](https://github.com/apple/swift-docker/blob/9394b31e064cf0d80eaab08b692a2886c7aea8fe/5.5/amazonlinux/2/slim/Dockerfile)
-
--	[`5.5.3-centos7`, `5.5-centos7`](https://github.com/apple/swift-docker/blob/9394b31e064cf0d80eaab08b692a2886c7aea8fe/5.5/centos/7/Dockerfile)
-
--	[`5.5.3-centos7-slim`, `5.5-centos7-slim`](https://github.com/apple/swift-docker/blob/9394b31e064cf0d80eaab08b692a2886c7aea8fe/5.5/centos/7/slim/Dockerfile)
 
 # Quick reference (cont.)
 
