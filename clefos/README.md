@@ -28,7 +28,7 @@ With [the EOL of CentOS 7 (June 30, 2024)](https://www.redhat.com/en/topics/linu
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7`, `7.7.1908`, `latest`](https://github.com/nealef/clefos/blob/1aa7d3771b2ced8b8b5cdc9a1a1752d93c56a60e/Dockerfile)
+**No supported tags**
 
 # Quick reference (cont.)
 
@@ -36,7 +36,7 @@ With [the EOL of CentOS 7 (June 30, 2024)](https://www.redhat.com/en/topics/linu
 	[GitHub](https://github.com/nealef/clefos/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`s390x`](https://hub.docker.com/r/s390x/clefos/)
+	**No supported architectures**
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/clefos/` directory](https://github.com/docker-library/repo-info/blob/master/repos/clefos) ([history](https://github.com/docker-library/repo-info/commits/master/repos/clefos))  
