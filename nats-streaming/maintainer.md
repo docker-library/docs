@@ -1,1 +1,0 @@
-../nats/maintainer.md
