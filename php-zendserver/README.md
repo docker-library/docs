@@ -14,6 +14,10 @@ WARNING:
 
 -->
 
+# **DEPRECATION NOTICE**
+
+This image is not actively maintained (and [has not been for years](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fphp-zendserver)). It is highly recommended for users to seek out alternatives.
+
 # Quick reference
 
 -	**Maintained by**:  
