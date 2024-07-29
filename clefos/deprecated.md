@@ -1,0 +1,1 @@
+With [the EOL of CentOS 7 (June 30, 2024)](https://www.redhat.com/en/topics/linux/centos-linux-eol), this image/project is [officially deprecated](https://github.com/docker-library/official-images/pull/7964#issuecomment-2253636315). Please adjust your usage accordingly.
