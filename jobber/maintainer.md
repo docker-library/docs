@@ -1,1 +1,0 @@
-[Jobber](%%GITHUB-REPO%%)
