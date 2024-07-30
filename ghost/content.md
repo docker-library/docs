@@ -2,9 +2,7 @@
 
 Ghost is an independent platform for publishing online by web and email newsletter. It has user signups, gated access and subscription payments built-in (with Stripe) to allow you to build a direct relationship with your audience. It's fast, user-friendly, and runs on Node.js & MySQL8.
 
-Ghost is used in production by Apple, OpenAI, TheAtlantic, SkyNews, DuckDuckGo, Buffer, and tens of thousands of companies, news websites and independent creators. Learn more about the project on [Ghost.org](https://ghost.org)
-
-> [wikipedia.org/wiki/Ghost_(blogging_platform)](http://en.wikipedia.org/wiki/Ghost_%28blogging_platform%29)
+> [Ghost.org)](https://ghost.org)
 
 %%LOGO%%
 
