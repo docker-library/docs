@@ -24,7 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`14.1.0`, `14.1`, `14`, `latest`, `14.1.0-bookworm`, `14.1-bookworm`, `14-bookworm`, `bookworm`](https://github.com/docker-library/gcc/blob/b5055bcc1551a7e271af315158e1c260c212409c/14/Dockerfile)
+-	[`14.2.0`, `14.2`, `14`, `latest`, `14.2.0-bookworm`, `14.2-bookworm`, `14-bookworm`, `bookworm`](https://github.com/docker-library/gcc/blob/22c26a9e4edb4ce4f7676dfa100afc80fc2ccbea/14/Dockerfile)
 
 -	[`13.3.0`, `13.3`, `13`, `13.3.0-bookworm`, `13.3-bookworm`, `13-bookworm`](https://github.com/docker-library/gcc/blob/b5055bcc1551a7e271af315158e1c260c212409c/13/Dockerfile)
 
