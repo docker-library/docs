@@ -28,7 +28,7 @@ WARNING:
 
 -	[`5.3-alpha`, `5.3-rc`, `rc`, `5.3-alpha-alpine3.20`, `5.3-rc-alpine3.20`, `rc-alpine3.20`](https://github.com/tianon/docker-bash/blob/f487bffdced60fba425283c84317e6492488a252/5.3-rc/Dockerfile)
 
--	[`5.2.26`, `5.2`, `5`, `latest`, `5.2.26-alpine3.20`, `5.2-alpine3.20`, `5-alpine3.20`, `alpine3.20`](https://github.com/tianon/docker-bash/blob/967275700d273c985448c889a4e825008cd1fb97/5.2/Dockerfile)
+-	[`5.2.32`, `5.2`, `5`, `latest`, `5.2.32-alpine3.20`, `5.2-alpine3.20`, `5-alpine3.20`, `alpine3.20`](https://github.com/tianon/docker-bash/blob/95adeb6b0abeb0db1244107df795e1f5a1560877/5.2/Dockerfile)
 
 -	[`5.1.16`, `5.1`, `5.1.16-alpine3.20`, `5.1-alpine3.20`](https://github.com/tianon/docker-bash/blob/afbd6361eb8ec05bb0ea5fcfb118a69eb59b539d/5.1/Dockerfile)
 
