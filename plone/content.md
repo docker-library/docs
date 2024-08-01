@@ -56,7 +56,7 @@ You can enable Plone add-ons via the `ADDONS` environment variable
 $ docker run -p 8080:8080 -e PLONE_ADDONS="eea.facetednavigation Products.PloneFormGen" %%IMAGE%%
 ```
 
-For more information on how to extend this image with your own custom settings, adding more add-ons, building it or mounting volumes, please refer to our [documentation](https://docs.plone.org/manage/docker/docs/index.html)
+For more information on how to extend this image with your own custom settings, adding more add-ons, building it or mounting volumes, please refer to our [documentation](https://5.docs.plone.org/manage/docker/docs/index.html)
 
 ## Supported Environment Variables
 
@@ -137,4 +137,4 @@ All other available environment variables match exactly with RelStorage settings
 
 ## Documentation
 
-Full documentation for end users can be found online at [docs.plone.org](https://docs.plone.org/manage/docker/docs/usage/index.html)
+Full documentation for end users can be found online at [5.docs.plone.org](https://5.docs.plone.org/manage/docker/docs/index.html)
