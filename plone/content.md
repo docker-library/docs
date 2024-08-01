@@ -6,7 +6,6 @@
 
 ## Features
 
--	Images for **Plone 5.x** and **Plone 4.x**
 -	Images for **Plone 6.x** are available at [plone/plone-backend](https://hub.docker.com/r/plone/plone-backend) and [plone/plone-frontend](https://hub.docker.com/r/plone/plone-frontend)
 -	Enable add-ons via environment variables
 -	Choose between [Debian](https://www.debian.org/) or [Alpine](http://www.alpinelinux.org/) based images.
