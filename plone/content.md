@@ -142,7 +142,7 @@ All other available environment variables match exactly with RelStorage settings
 -   `RELSTORAGE_KEEP_HISTORY` - **keep-history** - If this option is set to `true` (the default), the adapter will create and use a history-preserving database schema (like FileStorage).
 -   `RELSTORAGE_BLOB_DIR` - **blob-dir** - If supplied, the storage will provide ZODB blob support. This option specifies the name of the directory to hold blob data. The directory will be created if it does not exist. If no value, or an empty value, is provided, then no blob support will be provided. Default: `/plone/instance/var/blobstorage`.
 
-   [See more RelStorage options](https://relstorage.readthedocs.io/en/latest/relstorage-options.html).
+    [See more RelStorage options](https://relstorage.readthedocs.io/en/latest/relstorage-options.html).
 
 ## Documentation
 
