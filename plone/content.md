@@ -65,7 +65,7 @@ The Plone image uses several environment variables.
 ### For basic usage
 
 -	`ADDONS` - Customize Plone via Plone add-ons using this environment variable.
--	`SITE` - Add a Plone instance with this ID to `Data.fs` on first run. If _not_ provided, you'll have to manually add a Plone site via the web UI.
+-	`SITE` - Add a Plone instance with this ID to `Data.fs` on first run. If *not* provided, you'll have to manually add a Plone site via the web UI.
 -	`ZEO_ADDRESS` - This environment variable allows you to run the Plone image as a ZEO client.
 -	`VERSIONS` - Use specific versions of Plone add-on or Python libraries.
 
@@ -95,7 +95,7 @@ $ curl -H 'Accept: application/json' http://localhost:8080/plone
 **Plone:**
 
 -	`PLONE_ADDONS`, `ADDONS` - Customize Plone via Plone add-ons using these environment variables.
--	`PLONE_SITE`, `SITE` - Add a Plone instance with this ID to `Data.fs` on first run. If _not_ provided, you'll have to manually add a Plone site via the web UI.
+-	`PLONE_SITE`, `SITE` - Add a Plone instance with this ID to `Data.fs` on first run. If *not* provided, you'll have to manually add a Plone site via the web UI.
 -	`PLONE_VERSIONS`, `VERSIONS` - Use specific versions of Plone add-on or Python libraries.
 -	`PLONE_PROFILES, PROFILES` - GenericSetup profiles to include when the `SITE` environment is provided.
 -	`PLONE_ZCML`, `ZCML` - Include custom Plone add-on ZCML files (formerly `BUILDOUT_ZCML`).
@@ -133,7 +133,7 @@ All other available environment variables match exactly with RelStorage settings
 -	`RELSTORAGE_KEEP_HISTORY` - **keep-history** - If this option is set to `true` (the default), the adapter will create and use a history-preserving database schema (like FileStorage).
 -	`RELSTORAGE_BLOB_DIR` - **blob-dir** - If supplied, the storage will provide ZODB blob support. This option specifies the name of the directory to hold blob data. The directory will be created if it does not exist. If no value, or an empty value, is provided, then no blob support will be provided. Default: `/plone/instance/var/blobstorage`.
 
-	 [See more RelStorage options](https://relstorage.readthedocs.io/en/latest/relstorage-options.html).
+	[See more RelStorage options](https://relstorage.readthedocs.io/en/latest/relstorage-options.html).
 
 ## Documentation
 

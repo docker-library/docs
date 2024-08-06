@@ -1,4 +1,4 @@
-# ⚠️ DEPRECATION NOTICE ⚠️ 
+# ⚠️ DEPRECATION NOTICE ⚠️
 
 -	Plone 4.x is no longer supported.
 -	Plone 5.x is out of maintenance support, and will exit security support on 2024-10-31.
