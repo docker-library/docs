@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm64v8` builds of [the `cirros` official image](https://hub.docker.com/_/cirros) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,7 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`0.6.2`, `0.6`, `0`, `latest`](https://github.com/tianon/docker-brew-cirros/blob/e8833253f108046f977fbcecd7f02170bd20d357/arches/amd64/Dockerfile)
+-	[`0.6.2`, `0.6`, `0`, `latest`](https://github.com/tianon/docker-brew-cirros/blob/e8833253f108046f977fbcecd7f02170bd20d357/arches/arm64v8/Dockerfile)
+
+[![arm64v8/cirros build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/cirros.svg?label=arm64v8/cirros%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/cirros/)
 
 # Quick reference (cont.)
 

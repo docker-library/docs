@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm64v8` builds of [the `rakudo-star` official image](https://hub.docker.com/_/rakudo-star) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -27,6 +29,8 @@ WARNING:
 -	[`latest`, `2024.05`, `bookworm`](https://github.com/Raku/docker/blob/45e8b0ecf019e32d71ab3d6fedef6a8aa09ef472/2024.05/bookworm/Dockerfile)
 
 -	[`alpine`, `2024.05-alpine`](https://github.com/Raku/docker/blob/45e8b0ecf019e32d71ab3d6fedef6a8aa09ef472/2024.05/alpine/Dockerfile)
+
+[![arm64v8/rakudo-star build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/rakudo-star.svg?label=arm64v8/rakudo-star%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/rakudo-star/)
 
 # Quick reference (cont.)
 
@@ -64,7 +68,7 @@ Rakudo Star is a Raku (formerly known as Perl 6) distribution designed for use b
 Simply running a container with the image will launch a Raku REPL:
 
 ```console
-$ docker run -it rakudo-star
+$ docker run -it arm64v8/rakudo-star
 > say 'Hello, Raku!'
 Hello, Raku!
 ```
@@ -72,7 +76,7 @@ Hello, Raku!
 You can also provide raku command line switches to `docker run`:
 
 ```console
-$ docker run -it rakudo-star raku -e 'say "Hello!"'
+$ docker run -it arm64v8/rakudo-star raku -e 'say "Hello!"'
 ```
 
 # Contributing/Getting Help
@@ -83,15 +87,15 @@ Issues for Rakudo are tracked in [on GitHub](https://github.com/rakudo/rakudo/is
 
 # Image Variants
 
-The `rakudo-star` images come in many flavors, each designed for a specific use case.
+The `arm64v8/rakudo-star` images come in many flavors, each designed for a specific use case.
 
-## `rakudo-star:<version>`
+## `arm64v8/rakudo-star:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
 Some of these tags may have names like bookworm in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
-## `rakudo-star:<version>-alpine`
+## `arm64v8/rakudo-star:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 

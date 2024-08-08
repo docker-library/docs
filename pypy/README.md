@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm64v8` builds of [the `pypy` official image](https://hub.docker.com/_/pypy) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -36,10 +38,6 @@ WARNING:
 
 -	[`3.10-7.3.16-slim`, `3.10-7.3-slim`, `3.10-7-slim`, `3.10-slim`, `3-7.3.16-slim`, `3-7.3-slim`, `3-7-slim`, `3-slim`, `slim`, `3.10-7.3.16-slim-bullseye`, `3.10-7.3-slim-bullseye`, `3.10-7-slim-bullseye`, `3.10-slim-bullseye`, `3-7.3.16-slim-bullseye`, `3-7.3-slim-bullseye`, `3-7-slim-bullseye`, `3-slim-bullseye`, `slim-bullseye`](https://github.com/docker-library/pypy/blob/7fd4974ceb6228a380d1c759bb6bfbb9bb7a6686/3.10/slim-bullseye/Dockerfile)
 
--	[`3.10-7.3.16-windowsservercore-ltsc2022`, `3.10-7.3-windowsservercore-ltsc2022`, `3.10-7-windowsservercore-ltsc2022`, `3.10-windowsservercore-ltsc2022`, `3-7.3.16-windowsservercore-ltsc2022`, `3-7.3-windowsservercore-ltsc2022`, `3-7-windowsservercore-ltsc2022`, `3-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`](https://github.com/docker-library/pypy/blob/7fd4974ceb6228a380d1c759bb6bfbb9bb7a6686/3.10/windows/windowsservercore-ltsc2022/Dockerfile)
-
--	[`3.10-7.3.16-windowsservercore-1809`, `3.10-7.3-windowsservercore-1809`, `3.10-7-windowsservercore-1809`, `3.10-windowsservercore-1809`, `3-7.3.16-windowsservercore-1809`, `3-7.3-windowsservercore-1809`, `3-7-windowsservercore-1809`, `3-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/docker-library/pypy/blob/7fd4974ceb6228a380d1c759bb6bfbb9bb7a6686/3.10/windows/windowsservercore-1809/Dockerfile)
-
 -	[`3.9-7.3.16-bookworm`, `3.9-7.3-bookworm`, `3.9-7-bookworm`, `3.9-bookworm`](https://github.com/docker-library/pypy/blob/86c243284bdb4df9a673aa3f3c837edeed8449cb/3.9/bookworm/Dockerfile)
 
 -	[`3.9-7.3.16-slim-bookworm`, `3.9-7.3-slim-bookworm`, `3.9-7-slim-bookworm`, `3.9-slim-bookworm`](https://github.com/docker-library/pypy/blob/86c243284bdb4df9a673aa3f3c837edeed8449cb/3.9/slim-bookworm/Dockerfile)
@@ -47,10 +45,6 @@ WARNING:
 -	[`3.9-7.3.16-bullseye`, `3.9-7.3-bullseye`, `3.9-7-bullseye`, `3.9-bullseye`](https://github.com/docker-library/pypy/blob/86c243284bdb4df9a673aa3f3c837edeed8449cb/3.9/bullseye/Dockerfile)
 
 -	[`3.9-7.3.16-slim`, `3.9-7.3-slim`, `3.9-7-slim`, `3.9-slim`, `3.9-7.3.16-slim-bullseye`, `3.9-7.3-slim-bullseye`, `3.9-7-slim-bullseye`, `3.9-slim-bullseye`](https://github.com/docker-library/pypy/blob/86c243284bdb4df9a673aa3f3c837edeed8449cb/3.9/slim-bullseye/Dockerfile)
-
--	[`3.9-7.3.16-windowsservercore-ltsc2022`, `3.9-7.3-windowsservercore-ltsc2022`, `3.9-7-windowsservercore-ltsc2022`, `3.9-windowsservercore-ltsc2022`](https://github.com/docker-library/pypy/blob/86c243284bdb4df9a673aa3f3c837edeed8449cb/3.9/windows/windowsservercore-ltsc2022/Dockerfile)
-
--	[`3.9-7.3.16-windowsservercore-1809`, `3.9-7.3-windowsservercore-1809`, `3.9-7-windowsservercore-1809`, `3.9-windowsservercore-1809`](https://github.com/docker-library/pypy/blob/86c243284bdb4df9a673aa3f3c837edeed8449cb/3.9/windows/windowsservercore-1809/Dockerfile)
 
 -	[`2.7-7.3.16-bookworm`, `2.7-7.3-bookworm`, `2.7-7-bookworm`, `2.7-bookworm`, `2-7.3.16-bookworm`, `2-7.3-bookworm`, `2-7-bookworm`, `2-bookworm`](https://github.com/docker-library/pypy/blob/da7ff7031b87e70e4d1eb089a5bea20c3cd8ff96/2.7/bookworm/Dockerfile)
 
@@ -60,44 +54,21 @@ WARNING:
 
 -	[`2.7-7.3.16-slim`, `2.7-7.3-slim`, `2.7-7-slim`, `2.7-slim`, `2-7.3.16-slim`, `2-7.3-slim`, `2-7-slim`, `2-slim`, `2.7-7.3.16-slim-bullseye`, `2.7-7.3-slim-bullseye`, `2.7-7-slim-bullseye`, `2.7-slim-bullseye`, `2-7.3.16-slim-bullseye`, `2-7.3-slim-bullseye`, `2-7-slim-bullseye`, `2-slim-bullseye`](https://github.com/docker-library/pypy/blob/da7ff7031b87e70e4d1eb089a5bea20c3cd8ff96/2.7/slim-bullseye/Dockerfile)
 
--	[`2.7-7.3.16-windowsservercore-ltsc2022`, `2.7-7.3-windowsservercore-ltsc2022`, `2.7-7-windowsservercore-ltsc2022`, `2.7-windowsservercore-ltsc2022`, `2-7.3.16-windowsservercore-ltsc2022`, `2-7.3-windowsservercore-ltsc2022`, `2-7-windowsservercore-ltsc2022`, `2-windowsservercore-ltsc2022`](https://github.com/docker-library/pypy/blob/da7ff7031b87e70e4d1eb089a5bea20c3cd8ff96/2.7/windows/windowsservercore-ltsc2022/Dockerfile)
-
--	[`2.7-7.3.16-windowsservercore-1809`, `2.7-7.3-windowsservercore-1809`, `2.7-7-windowsservercore-1809`, `2.7-windowsservercore-1809`, `2-7.3.16-windowsservercore-1809`, `2-7.3-windowsservercore-1809`, `2-7-windowsservercore-1809`, `2-windowsservercore-1809`](https://github.com/docker-library/pypy/blob/da7ff7031b87e70e4d1eb089a5bea20c3cd8ff96/2.7/windows/windowsservercore-1809/Dockerfile)
-
 ## Shared Tags
 
 -	`3.10-7.3.16`, `3.10-7.3`, `3.10-7`, `3.10`, `3-7.3.16`, `3-7.3`, `3-7`, `3`, `latest`:
 
 	-	[`3.10-7.3.16-bullseye`](https://github.com/docker-library/pypy/blob/7fd4974ceb6228a380d1c759bb6bfbb9bb7a6686/3.10/bullseye/Dockerfile)
-	-	[`3.10-7.3.16-windowsservercore-ltsc2022`](https://github.com/docker-library/pypy/blob/7fd4974ceb6228a380d1c759bb6bfbb9bb7a6686/3.10/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`3.10-7.3.16-windowsservercore-1809`](https://github.com/docker-library/pypy/blob/7fd4974ceb6228a380d1c759bb6bfbb9bb7a6686/3.10/windows/windowsservercore-1809/Dockerfile)
-
--	`3.10-7.3.16-windowsservercore`, `3.10-7.3-windowsservercore`, `3.10-7-windowsservercore`, `3.10-windowsservercore`, `3-7.3.16-windowsservercore`, `3-7.3-windowsservercore`, `3-7-windowsservercore`, `3-windowsservercore`, `windowsservercore`:
-
-	-	[`3.10-7.3.16-windowsservercore-ltsc2022`](https://github.com/docker-library/pypy/blob/7fd4974ceb6228a380d1c759bb6bfbb9bb7a6686/3.10/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`3.10-7.3.16-windowsservercore-1809`](https://github.com/docker-library/pypy/blob/7fd4974ceb6228a380d1c759bb6bfbb9bb7a6686/3.10/windows/windowsservercore-1809/Dockerfile)
 
 -	`3.9-7.3.16`, `3.9-7.3`, `3.9-7`, `3.9`:
 
 	-	[`3.9-7.3.16-bullseye`](https://github.com/docker-library/pypy/blob/86c243284bdb4df9a673aa3f3c837edeed8449cb/3.9/bullseye/Dockerfile)
-	-	[`3.9-7.3.16-windowsservercore-ltsc2022`](https://github.com/docker-library/pypy/blob/86c243284bdb4df9a673aa3f3c837edeed8449cb/3.9/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`3.9-7.3.16-windowsservercore-1809`](https://github.com/docker-library/pypy/blob/86c243284bdb4df9a673aa3f3c837edeed8449cb/3.9/windows/windowsservercore-1809/Dockerfile)
-
--	`3.9-7.3.16-windowsservercore`, `3.9-7.3-windowsservercore`, `3.9-7-windowsservercore`, `3.9-windowsservercore`:
-
-	-	[`3.9-7.3.16-windowsservercore-ltsc2022`](https://github.com/docker-library/pypy/blob/86c243284bdb4df9a673aa3f3c837edeed8449cb/3.9/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`3.9-7.3.16-windowsservercore-1809`](https://github.com/docker-library/pypy/blob/86c243284bdb4df9a673aa3f3c837edeed8449cb/3.9/windows/windowsservercore-1809/Dockerfile)
 
 -	`2.7-7.3.16`, `2.7-7.3`, `2.7-7`, `2.7`, `2-7.3.16`, `2-7.3`, `2-7`, `2`:
 
 	-	[`2.7-7.3.16-bullseye`](https://github.com/docker-library/pypy/blob/da7ff7031b87e70e4d1eb089a5bea20c3cd8ff96/2.7/bullseye/Dockerfile)
-	-	[`2.7-7.3.16-windowsservercore-ltsc2022`](https://github.com/docker-library/pypy/blob/da7ff7031b87e70e4d1eb089a5bea20c3cd8ff96/2.7/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`2.7-7.3.16-windowsservercore-1809`](https://github.com/docker-library/pypy/blob/da7ff7031b87e70e4d1eb089a5bea20c3cd8ff96/2.7/windows/windowsservercore-1809/Dockerfile)
 
--	`2.7-7.3.16-windowsservercore`, `2.7-7.3-windowsservercore`, `2.7-7-windowsservercore`, `2.7-windowsservercore`, `2-7.3.16-windowsservercore`, `2-7.3-windowsservercore`, `2-7-windowsservercore`, `2-windowsservercore`:
-
-	-	[`2.7-7.3.16-windowsservercore-ltsc2022`](https://github.com/docker-library/pypy/blob/da7ff7031b87e70e4d1eb089a5bea20c3cd8ff96/2.7/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`2.7-7.3.16-windowsservercore-1809`](https://github.com/docker-library/pypy/blob/da7ff7031b87e70e4d1eb089a5bea20c3cd8ff96/2.7/windows/windowsservercore-1809/Dockerfile)
+[![arm64v8/pypy build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/pypy.svg?label=arm64v8/pypy%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/pypy/)
 
 # Quick reference (cont.)
 
@@ -133,7 +104,7 @@ PyPy started out as a Python interpreter written in the Python language itself. 
 ## Create a `Dockerfile` in your Python app project
 
 ```dockerfile
-FROM pypy:3
+FROM arm64v8/pypy:3
 
 WORKDIR /usr/src/app
 
@@ -148,7 +119,7 @@ CMD [ "pypy3", "./your-daemon-or-script.py" ]
 or (if you need to use Python 2):
 
 ```dockerfile
-FROM pypy:2
+FROM arm64v8/pypy:2
 
 WORKDIR /usr/src/app
 
@@ -172,20 +143,20 @@ $ docker run -it --rm --name my-running-app my-python-app
 For many simple, single file projects, you may find it inconvenient to write a complete `Dockerfile`. In such cases, you can run a Python script by using the Python Docker image directly:
 
 ```console
-$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp pypy:3 pypy3 your-daemon-or-script.py
+$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp arm64v8/pypy:3 pypy3 your-daemon-or-script.py
 ```
 
 or (again, if you need to use Python 2):
 
 ```console
-$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp pypy:2 pypy your-daemon-or-script.py
+$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp arm64v8/pypy:2 pypy your-daemon-or-script.py
 ```
 
 # Image Variants
 
-The `pypy` images come in many flavors, each designed for a specific use case.
+The `arm64v8/pypy` images come in many flavors, each designed for a specific use case.
 
-## `pypy:<version>`
+## `arm64v8/pypy:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
@@ -193,18 +164,9 @@ Some of these tags may have names like bookworm or bullseye in them. These are t
 
 This tag is based off of [`buildpack-deps`](https://hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of Docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
 
-## `pypy:<version>-slim`
+## `arm64v8/pypy:<version>-slim`
 
-This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `pypy`. Unless you are working in an environment where *only* the `pypy` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
-
-## `pypy:<version>-windowsservercore`
-
-This image is based on [Windows Server Core (`microsoft/windowsservercore`)](https://hub.docker.com/r/microsoft/windowsservercore/). As such, it only works in places which that image does, such as Windows 10 Professional/Enterprise (Anniversary Edition) or Windows Server 2016.
-
-For information about how to get Docker running on Windows, please see the relevant "Quick Start" guide provided by Microsoft:
-
--	[Windows Server Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_server)
--	[Windows 10 Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)
+This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `arm64v8/pypy`. Unless you are working in an environment where *only* the `arm64v8/pypy` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
 
 # License
 

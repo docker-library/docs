@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm64v8` builds of [the `buildpack-deps` official image](https://hub.docker.com/_/buildpack-deps) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -65,6 +67,8 @@ WARNING:
 -	[`noble-scm`, `24.04-scm`](https://github.com/docker-library/buildpack-deps/blob/60dc5f9555c521de086b2f5770514faf69ee2cc4/ubuntu/noble/scm/Dockerfile)
 
 -	[`noble`, `24.04`](https://github.com/docker-library/buildpack-deps/blob/60dc5f9555c521de086b2f5770514faf69ee2cc4/ubuntu/noble/Dockerfile)
+
+[![arm64v8/buildpack-deps build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/buildpack-deps.svg?label=arm64v8/buildpack-deps%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/buildpack-deps/)
 
 # Quick reference (cont.)
 

@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm64v8` builds of [the `php` official image](https://hub.docker.com/_/php) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -136,6 +138,8 @@ WARNING:
 
 -	[`8.1.29-zts-alpine3.19`, `8.1-zts-alpine3.19`](https://github.com/docker-library/php/blob/52062af5056d0cd91fa5ded64fad8f9c82847b49/8.1/alpine3.19/zts/Dockerfile)
 
+[![arm64v8/php build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/php.svg?label=arm64v8/php%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/php/)
+
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
@@ -168,7 +172,7 @@ PHP is a server-side scripting language designed for web development, but which 
 ### Create a `Dockerfile` in your PHP project
 
 ```dockerfile
-FROM php:8.2-cli
+FROM arm64v8/php:8.2-cli
 COPY . /usr/src/myapp
 WORKDIR /usr/src/myapp
 CMD [ "php", "./your-script.php" ]
@@ -186,7 +190,7 @@ $ docker run -it --rm --name my-running-app my-php-app
 For many simple, single file projects, you may find it inconvenient to write a complete `Dockerfile`. In such cases, you can run a PHP script by using the PHP Docker image directly:
 
 ```console
-$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp php:8.2-cli php your-script.php
+$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp arm64v8/php:8.2-cli php your-script.php
 ```
 
 ## How to install more PHP extensions
@@ -198,7 +202,7 @@ We provide the helper scripts `docker-php-ext-configure`, `docker-php-ext-instal
 In order to keep the images smaller, PHP's source is kept in a compressed tar file. To facilitate linking of PHP's source with any extension, we also provide the helper script `docker-php-source` to easily extract the tar or delete the extracted source. Note: if you do use `docker-php-source` to extract the source, be sure to delete it in the same layer of the docker image.
 
 ```Dockerfile
-FROM php:8.2-cli
+FROM arm64v8/php:8.2-cli
 RUN docker-php-source extract \
 	# do important things \
 	&& docker-php-source delete
@@ -209,7 +213,7 @@ RUN docker-php-source extract \
 For example, if you want to have a PHP-FPM image with the `gd` extension, you can inherit the base image that you like, and write your own `Dockerfile` like this:
 
 ```dockerfile
-FROM php:8.2-fpm
+FROM arm64v8/php:8.2-fpm
 RUN apt-get update && apt-get install -y \
 		libfreetype-dev \
 		libjpeg62-turbo-dev \
@@ -233,14 +237,14 @@ Some extensions are compiled by default. This depends on the PHP version you are
 Some extensions are not provided with the PHP source, but are instead available through [PECL](https://pecl.php.net/). To install a PECL extension, use `pecl install` to download and compile it, then use `docker-php-ext-enable` to enable it:
 
 ```dockerfile
-FROM php:8.2-cli
+FROM arm64v8/php:8.2-cli
 RUN pecl install redis-5.3.7 \
 	&& pecl install xdebug-3.2.1 \
 	&& docker-php-ext-enable redis xdebug
 ```
 
 ```dockerfile
-FROM php:8.2-cli
+FROM arm64v8/php:8.2-cli
 RUN apt-get update && apt-get install -y libmemcached-dev libssl-dev zlib1g-dev \
 	&& pecl install memcached-3.2.0 \
 	&& docker-php-ext-enable memcached
@@ -255,7 +259,7 @@ Unlike PHP core extensions, PECL extensions should be installed in series to fai
 Some extensions are not provided via either Core or PECL; these can be installed too, although the process is less automated:
 
 ```dockerfile
-FROM php:8.2-cli
+FROM arm64v8/php:8.2-cli
 RUN curl -fsSL '[url-to-custom-php-module]' -o module-name.tar.gz \
 	&& mkdir -p module-name \
 	&& sha256sum -c "[shasum-value]  module-name.tar.gz" \
@@ -275,7 +279,7 @@ RUN curl -fsSL '[url-to-custom-php-module]' -o module-name.tar.gz \
 The `docker-php-ext-*` scripts *can* accept an arbitrary path, but it must be absolute (to disambiguate from built-in extension names), so the above example could also be written as the following:
 
 ```dockerfile
-FROM php:8.2-cli
+FROM arm64v8/php:8.2-cli
 RUN curl -fsSL '[url-to-custom-php-module]' -o module-name.tar.gz \
 	&& mkdir -p /tmp/module-name \
 	&& sha256sum -c "[shasum-value]  module-name.tar.gz" \
@@ -318,7 +322,7 @@ The default config can be customized by copying configuration files into the `$P
 ### Example
 
 ```dockerfile
-FROM php:8.2-fpm-alpine
+FROM arm64v8/php:8.2-fpm-alpine
 
 # Use the default production configuration
 RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
@@ -328,26 +332,26 @@ In many production environments, it is also recommended to (build and) enable th
 
 # Image Variants
 
-The `php` images come in many flavors, each designed for a specific use case.
+The `arm64v8/php` images come in many flavors, each designed for a specific use case.
 
 Some of these tags may have names like bookworm or bullseye in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
-## `php:<version>-cli`
+## `arm64v8/php:<version>-cli`
 
 This variant contains the [PHP CLI](https://secure.php.net/manual/en/features.commandline.php) tool with default mods. If you need a web server, this is probably not the image you are looking for. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as a base from which to build other images.
 
 It also is the only variant which contains the (not recommended) `php-cgi` binary, which is likely necessary for some things like [PPM](https://github.com/php-pm/php-pm).
 
-Note that *all* variants of `php` contain the PHP CLI (`/usr/local/bin/php`).
+Note that *all* variants of `arm64v8/php` contain the PHP CLI (`/usr/local/bin/php`).
 
-## `php:<version>-apache`
+## `arm64v8/php:<version>-apache`
 
 This image contains Debian's Apache httpd in conjunction with PHP (as `mod_php`) and uses `mpm_prefork` by default.
 
 ### Apache with a `Dockerfile`
 
 ```dockerfile
-FROM php:7.2-apache
+FROM arm64v8/php:7.2-apache
 COPY src/ /var/www/html/
 ```
 
@@ -363,7 +367,7 @@ We recommend that you add a `php.ini` configuration file; see the "Configuration
 ### Apache without a `Dockerfile`
 
 ```console
-$ docker run -d -p 80:80 --name my-apache-php-app -v "$PWD":/var/www/html php:7.2-apache
+$ docker run -d -p 80:80 --name my-apache-php-app -v "$PWD":/var/www/html arm64v8/php:7.2-apache
 ```
 
 ### Changing `DocumentRoot` (or other Apache configuration)
@@ -371,7 +375,7 @@ $ docker run -d -p 80:80 --name my-apache-php-app -v "$PWD":/var/www/html php:7.
 Some applications may wish to change the default `DocumentRoot` in Apache (away from `/var/www/html`). The following demonstrates one way to do so using an environment variable (which can then be modified at container runtime as well):
 
 ```dockerfile
-FROM php:7.1-apache
+FROM arm64v8/php:7.1-apache
 
 ENV APACHE_DOCUMENT_ROOT /path/to/new/root
 
@@ -381,7 +385,7 @@ RUN sed -ri -e 's!/var/www/!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/apache2.conf
 
 A similar technique could be employed for other Apache configuration options.
 
-## `php:<version>-fpm`
+## `arm64v8/php:<version>-fpm`
 
 This variant contains PHP-FPM, which is a FastCGI implementation for PHP. See [the PHP-FPM website](https://php-fpm.org/) for more information about PHP-FPM.
 
@@ -397,7 +401,7 @@ Some potentially helpful resources:
 
 **WARNING:** the FastCGI protocol is inherently trusting, and thus *extremely* insecure to expose outside of a private container network -- unless you know *exactly* what you are doing (and are willing to accept the extreme risk), do not use Docker's `--publish` (`-p`) flag with this image variant.
 
-## `php:<version>-alpine`
+## `arm64v8/php:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 

@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm64v8` builds of [the `nginx` official image](https://hub.docker.com/_/nginx) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -52,6 +54,8 @@ WARNING:
 
 -	[`1.26.1-alpine-otel`, `stable-alpine-otel`, `1.26-alpine-otel`, `1.26.1-alpine3.19-otel`, `stable-alpine3.19-otel`, `1.26-alpine3.19-otel`](https://github.com/nginxinc/docker-nginx/blob/94a27ac42d45670d941a55334d89e80760f7cc8e/stable/alpine-otel/Dockerfile)
 
+[![arm64v8/nginx build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/nginx.svg?label=arm64v8/nginx%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/nginx/)
+
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
@@ -84,13 +88,13 @@ Nginx (pronounced "engine-x") is an open source reverse proxy server for HTTP, H
 ## Hosting some simple static content
 
 ```console
-$ docker run --name some-nginx -v /some/content:/usr/share/nginx/html:ro -d nginx
+$ docker run --name some-nginx -v /some/content:/usr/share/nginx/html:ro -d arm64v8/nginx
 ```
 
 Alternatively, a simple `Dockerfile` can be used to generate a new image that includes the necessary content (which is a much cleaner solution than the bind mount above):
 
 ```dockerfile
-FROM nginx
+FROM arm64v8/nginx
 COPY static-html-directory /usr/share/nginx/html
 ```
 
@@ -115,7 +119,7 @@ You can mount your configuration file, or build a new image with it.
 If you wish to adapt the default configuration, use something like the following to get it from a running nginx container:
 
 ```console
-$ docker run --rm --entrypoint=cat nginx /etc/nginx/nginx.conf > /host/path/nginx.conf
+$ docker run --rm --entrypoint=cat arm64v8/nginx /etc/nginx/nginx.conf > /host/path/nginx.conf
 ```
 
 And then edit `/host/path/nginx.conf` in your host file system.
@@ -125,13 +129,13 @@ For information on the syntax of the nginx configuration files, see [the officia
 ### Mount your configuration file
 
 ```console
-$ docker run --name my-custom-nginx-container -v /host/path/nginx.conf:/etc/nginx/nginx.conf:ro -d nginx
+$ docker run --name my-custom-nginx-container -v /host/path/nginx.conf:/etc/nginx/nginx.conf:ro -d arm64v8/nginx
 ```
 
 ### Build a new image with your configuration file
 
 ```dockerfile
-FROM nginx
+FROM arm64v8/nginx
 COPY nginx.conf /etc/nginx/nginx.conf
 ```
 
@@ -143,15 +147,15 @@ Then build the image with `docker build -t custom-nginx .` and run it as follows
 $ docker run --name my-custom-nginx-container -d custom-nginx
 ```
 
-### Using environment variables in nginx configuration (new in 1.19)
+### Using environment variables in arm64v8/nginx configuration (new in 1.19)
 
-Out-of-the-box, nginx doesn't support environment variables inside most configuration blocks. But this image has a function, which will extract environment variables before nginx starts.
+Out-of-the-box, arm64v8/nginx doesn't support environment variables inside most configuration blocks. But this image has a function, which will extract environment variables before arm64v8/nginx starts.
 
 Here is an example using docker-compose.yml:
 
 ```yaml
 web:
-  image: nginx
+  image: arm64v8/nginx
   volumes:
    - ./templates:/etc/nginx/templates
   ports:
@@ -185,29 +189,29 @@ This behavior can be changed via the following environment variables:
 		-	ex.) `/etc/nginx/templates/default.conf.template` will be output with the filename `/etc/nginx/conf.d/default.conf`.
 	-	This directory must be writable by the user running a container.
 
-## Running nginx in read-only mode
+## Running arm64v8/nginx in read-only mode
 
-To run nginx in read-only mode, you will need to mount a Docker volume to every location where nginx writes information. The default nginx configuration requires write access to `/var/cache/nginx` and `/var/run`. This can be easily accomplished by running nginx as follows:
+To run arm64v8/nginx in read-only mode, you will need to mount a Docker volume to every location where arm64v8/nginx writes information. The default arm64v8/nginx configuration requires write access to `/var/cache/nginx` and `/var/run`. This can be easily accomplished by running arm64v8/nginx as follows:
 
 ```console
 $ docker run -d -p 80:80 --read-only -v $(pwd)/nginx-cache:/var/cache/nginx -v $(pwd)/nginx-pid:/var/run nginx
 ```
 
-If you have a more advanced configuration that requires nginx to write to other locations, simply add more volume mounts to those locations.
+If you have a more advanced configuration that requires arm64v8/nginx to write to other locations, simply add more volume mounts to those locations.
 
 ## Running nginx in debug mode
 
 Images since version 1.9.8 come with `nginx-debug` binary that produces verbose output when using higher log levels. It can be used with simple CMD substitution:
 
 ```console
-$ docker run --name my-nginx -v /host/path/nginx.conf:/etc/nginx/nginx.conf:ro -d nginx nginx-debug -g 'daemon off;'
+$ docker run --name my-nginx -v /host/path/nginx.conf:/etc/nginx/nginx.conf:ro -d arm64v8/nginx nginx-debug -g 'daemon off;'
 ```
 
 Similar configuration in docker-compose.yml may look like this:
 
 ```yaml
 web:
-  image: nginx
+  image: arm64v8/nginx
   volumes:
     - ./nginx.conf:/etc/nginx/nginx.conf:ro
   command: [nginx-debug, '-g', 'daemon off;']
@@ -218,7 +222,7 @@ web:
 Since version 1.19.0, a verbose entrypoint was added. It provides information on what's happening during container startup. You can silence this output by setting environment variable `NGINX_ENTRYPOINT_QUIET_LOGS`:
 
 ```console
-$ docker run -d -e NGINX_ENTRYPOINT_QUIET_LOGS=1 nginx
+$ docker run -d -e NGINX_ENTRYPOINT_QUIET_LOGS=1 arm64v8/nginx
 ```
 
 ## User and group id
@@ -230,12 +234,12 @@ $ id
 uid=101(nginx) gid=101(nginx) groups=101(nginx)
 ```
 
-## Running nginx as a non-root user
+## Running arm64v8/nginx as a non-root user
 
-It is possible to run the image as a less privileged arbitrary UID/GID. This, however, requires modification of nginx configuration to use directories writeable by that specific UID/GID pair:
+It is possible to run the image as a less privileged arbitrary UID/GID. This, however, requires modification of arm64v8/nginx configuration to use directories writeable by that specific UID/GID pair:
 
 ```console
-$ docker run -d -v $PWD/nginx.conf:/etc/nginx/nginx.conf nginx
+$ docker run -d -v $PWD/nginx.conf:/etc/nginx/nginx.conf arm64v8/nginx
 ```
 
 where nginx.conf in the current directory should have the following directives re-defined:
@@ -261,19 +265,19 @@ Alternatively, check out the official [Docker NGINX unprivileged image](https://
 
 # Image Variants
 
-The `nginx` images come in many flavors, each designed for a specific use case.
+The `arm64v8/nginx` images come in many flavors, each designed for a specific use case.
 
-## `nginx:<version>`
+## `arm64v8/nginx:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
 Some of these tags may have names like bookworm in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
-## `nginx:<version>-perl` / `nginx:<version>-alpine-perl`
+## `arm64v8/nginx:<version>-perl` / `arm64v8/nginx:<version>-alpine-perl`
 
-Starting with nginx:1.13.0 / mainline and nginx:1.12.0 / stable, the perl module has been removed from the default images. A separate `-perl` tag variant is available if you wish to use the perl module.
+Starting with arm64v8/nginx:1.13.0 / mainline and arm64v8/nginx:1.12.0 / stable, the perl module has been removed from the default images. A separate `-perl` tag variant is available if you wish to use the perl module.
 
-## `nginx:<version>-alpine`
+## `arm64v8/nginx:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
@@ -281,9 +285,9 @@ This variant is useful when final image size being as small as possible is your 
 
 To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
-## `nginx:<version>-slim`
+## `arm64v8/nginx:<version>-slim`
 
-This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `nginx`. Unless you are working in an environment where *only* the `nginx` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
+This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `arm64v8/nginx`. Unless you are working in an environment where *only* the `arm64v8/nginx` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
 
 # License
 

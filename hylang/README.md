@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm64v8` builds of [the `hylang` official image](https://hub.docker.com/_/hylang) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -76,10 +78,6 @@ WARNING:
 
 -	[`0.29.0-pypy3.9-bullseye`, `0.29-pypy3.9-bullseye`, `0-pypy3.9-bullseye`, `pypy3.9-bullseye`](https://github.com/hylang/docker-hylang/blob/cc3a452953d734499bb98275a0a71a3f41895112/dockerfiles-generated/Dockerfile.pypy3.9-bullseye)
 
--	[`0.29.0-pypy3.9-windowsservercore-ltsc2022`, `0.29-pypy3.9-windowsservercore-ltsc2022`, `0-pypy3.9-windowsservercore-ltsc2022`, `pypy3.9-windowsservercore-ltsc2022`](https://github.com/hylang/docker-hylang/blob/cc3a452953d734499bb98275a0a71a3f41895112/dockerfiles-generated/Dockerfile.pypy3.9-windowsservercore-ltsc2022)
-
--	[`0.29.0-pypy3.9-windowsservercore-1809`, `0.29-pypy3.9-windowsservercore-1809`, `0-pypy3.9-windowsservercore-1809`, `pypy3.9-windowsservercore-1809`](https://github.com/hylang/docker-hylang/blob/cc3a452953d734499bb98275a0a71a3f41895112/dockerfiles-generated/Dockerfile.pypy3.9-windowsservercore-1809)
-
 ## Shared Tags
 
 -	`0.29.0-python3.12`, `0.29-python3.12`, `0-python3.12`, `python3.12`, `0.29.0`, `0.29`, `0`, `latest`:
@@ -109,8 +107,8 @@ WARNING:
 -	`0.29.0-pypy3.9`, `0.29-pypy3.9`, `0-pypy3.9`, `pypy3.9`:
 
 	-	[`0.29.0-pypy3.9-bookworm`](https://github.com/hylang/docker-hylang/blob/cc3a452953d734499bb98275a0a71a3f41895112/dockerfiles-generated/Dockerfile.pypy3.9-bookworm)
-	-	[`0.29.0-pypy3.9-windowsservercore-ltsc2022`](https://github.com/hylang/docker-hylang/blob/cc3a452953d734499bb98275a0a71a3f41895112/dockerfiles-generated/Dockerfile.pypy3.9-windowsservercore-ltsc2022)
-	-	[`0.29.0-pypy3.9-windowsservercore-1809`](https://github.com/hylang/docker-hylang/blob/cc3a452953d734499bb98275a0a71a3f41895112/dockerfiles-generated/Dockerfile.pypy3.9-windowsservercore-1809)
+
+[![arm64v8/hylang build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/hylang.svg?label=arm64v8/hylang%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/hylang/)
 
 # Quick reference (cont.)
 
@@ -144,7 +142,7 @@ Hy (a.k.a., Hylang) is a dialect of the Lisp programming language designed to in
 ## Create a `Dockerfile` in your Hy project
 
 ```dockerfile
-FROM hylang:0.10
+FROM arm64v8/hylang:0.10
 COPY . /usr/src/myapp
 WORKDIR /usr/src/myapp
 CMD [ "hy", "./your-daemon-or-script.hy" ]
@@ -162,35 +160,26 @@ $ docker run -it --rm --name my-running-app my-hylang-app
 For many simple, single file projects, you may find it inconvenient to write a complete `Dockerfile`. In such cases, you can run a Hy script by using the Hy Docker image directly:
 
 ```console
-$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp hylang:0.10 hy your-daemon-or-script.hy
+$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp arm64v8/hylang:0.10 hy your-daemon-or-script.hy
 ```
 
 # Image Variants
 
-The `hylang` images come in many flavors, each designed for a specific use case.
+The `arm64v8/hylang` images come in many flavors, each designed for a specific use case.
 
-## `hylang:<version>`
+## `arm64v8/hylang:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
 Some of these tags may have names like bookworm or bullseye in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
-## `hylang:<version>-alpine`
+## `arm64v8/hylang:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
 This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
 
 To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
-
-## `hylang:<version>-windowsservercore`
-
-This image is based on [Windows Server Core (`microsoft/windowsservercore`)](https://hub.docker.com/r/microsoft/windowsservercore/). As such, it only works in places which that image does, such as Windows 10 Professional/Enterprise (Anniversary Edition) or Windows Server 2016.
-
-For information about how to get Docker running on Windows, please see the relevant "Quick Start" guide provided by Microsoft:
-
--	[Windows Server Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_server)
--	[Windows 10 Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)
 
 # License
 

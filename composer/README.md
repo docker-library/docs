@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm64v8` builds of [the `composer` official image](https://hub.docker.com/_/composer) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -37,6 +39,8 @@ WARNING:
 -	[`2.2.24`, `2.2`, `lts`](https://github.com/composer/docker/blob/e04a63cb8591a14e78974fd8acf4043625d5ba14/2.2/Dockerfile)
 
 -	[`1.10.27`, `1.10`, `1`](https://github.com/composer/docker/blob/9cac6280bc40c7d606f7fd2dfce0f77fefd056a8/1.10/Dockerfile)
+
+[![arm64v8/composer build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/composer.svg?label=arm64v8/composer%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/composer/)
 
 # Quick reference (cont.)
 
@@ -72,7 +76,7 @@ You can read more about Composer in our [official documentation](https://getcomp
 ```console
 $ docker run --rm --interactive --tty \
   --volume $PWD:/app \
-  composer <command>
+  arm64v8/composer <command>
 ```
 
 ### Persist cache / global configuration
@@ -83,7 +87,7 @@ You can bind mount the Composer home directory from your host to the container t
 $ docker run --rm --interactive --tty \
   --volume $PWD:/app \
   --volume ${COMPOSER_HOME:-$HOME/.composer}:/tmp \
-  composer <command>
+  arm64v8/composer <command>
 ```
 
 **Note:** this relies on the fact that the `COMPOSER_HOME` value is set to `/tmp` in the image by default.
@@ -97,7 +101,7 @@ $ docker run --rm --interactive --tty \
   --volume ${COMPOSER_HOME:-$HOME/.config/composer}:$COMPOSER_HOME \
   --volume ${COMPOSER_CACHE_DIR:-$HOME/.cache/composer}:$COMPOSER_CACHE_DIR \
   --volume $PWD:/app \
-  composer <command>
+  arm64v8/composer <command>
 ```
 
 ### Filesystem permissions
@@ -108,7 +112,7 @@ By default, Composer runs as root inside the container. This can lead to permiss
 $ docker run --rm --interactive --tty \
   --volume $PWD:/app \
   --user $(id -u):$(id -g) \
-  composer <command>
+  arm64v8/composer <command>
 ```
 
 See: https://docs.docker.com/engine/reference/run/#user for details.
@@ -125,7 +129,7 @@ $ eval $(ssh-agent); \
   --volume $PWD:/app \
   --volume $SSH_AUTH_SOCK:/ssh-auth.sock \
   --env SSH_AUTH_SOCK=/ssh-auth.sock \
-  composer <command>
+  arm64v8/composer <command>
 ```
 
 **Note:** On OSX this requires Docker For Mac v2.2.0.0 or later, see [docker/for-mac#410](https://github.com/docker/for-mac/issues/410).
@@ -141,7 +145,7 @@ $ eval $(ssh-agent); \
   --volume /etc/group:/etc/group:ro \
   --env SSH_AUTH_SOCK=/ssh-auth.sock \
   --user $(id -u):$(id -g) \
-  composer <command>
+  arm64v8/composer <command>
 ```
 
 # Troubleshooting
@@ -159,7 +163,7 @@ Suggestions:
 	**Note:** Docker 17.05 introduced [multi-stage builds](https://docs.docker.com/develop/develop-images/multistage-build/), simplifying this enormously:
 
 	```dockerfile
-	COPY --from=composer /usr/bin/composer /usr/bin/composer
+	COPY --from=arm64v8/composer /usr/bin/composer /usr/bin/composer
 	```
 
 -	(alternatively) specify the target [platform](https://getcomposer.org/doc/06-config.md#platform) / extension(s) in your `composer.json`:
@@ -180,7 +184,7 @@ Suggestions:
 	```console
 	$ docker run --rm --interactive --tty \
 	  --volume $PWD:/app \
-	  composer install --ignore-platform-reqs --no-scripts
+	  arm64v8/composer install --ignore-platform-reqs --no-scripts
 	```
 
 # License

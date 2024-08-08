@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm64v8` builds of [the `mono` official image](https://hub.docker.com/_/mono) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -31,6 +33,8 @@ WARNING:
 -	[`6.10.0.104`, `6.10.0`, `6.10`](https://github.com/mono/docker/blob/0403aaf506b8f6859332a5035f660a7a228d3a97/6.10.0.104/Dockerfile)
 
 -	[`6.10.0.104-slim`, `6.10.0-slim`, `6.10-slim`](https://github.com/mono/docker/blob/0403aaf506b8f6859332a5035f660a7a228d3a97/6.10.0.104/slim/Dockerfile)
+
+[![arm64v8/mono build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/mono.svg?label=arm64v8/mono%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/mono/)
 
 # Quick reference (cont.)
 
@@ -65,7 +69,7 @@ Sponsored by Xamarin, Mono is an open source implementation of Microsoft's .NET 
 To run a pre-built .exe file with the Mono image, use the following commands:
 
 ```dockerfile
-FROM mono:latest
+FROM arm64v8/mono:latest
 RUN mkdir /opt/app
 COPY HelloWorld.exe /opt/app
 CMD ["mono", "/opt/app/HelloWorld.exe"]
@@ -86,15 +90,15 @@ Thanks to [Michael Friis](http://friism.com/) for his preliminary work.
 
 # Image Variants
 
-The `mono` images come in many flavors, each designed for a specific use case.
+The `arm64v8/mono` images come in many flavors, each designed for a specific use case.
 
-## `mono:<version>`
+## `arm64v8/mono:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `mono:<version>-slim`
+## `arm64v8/mono:<version>-slim`
 
-This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `mono`. Unless you are working in an environment where *only* the `mono` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
+This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `arm64v8/mono`. Unless you are working in an environment where *only* the `arm64v8/mono` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
 
 # License
 

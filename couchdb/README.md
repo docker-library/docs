@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm64v8` builds of [the `couchdb` official image](https://hub.docker.com/_/couchdb) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -26,11 +28,11 @@ WARNING:
 
 -	[`latest`, `3.3.3`, `3.3`, `3`](https://github.com/apache/couchdb-docker/blob/58910ed097489dc588b2a87592406f8faa1bdadf/3.3.3/Dockerfile)
 
--	[`3.2.3`, `3.2`](https://github.com/apache/couchdb-docker/blob/58910ed097489dc588b2a87592406f8faa1bdadf/3.2.3/Dockerfile)
-
 -	[`3.1.2`, `3.1`](https://github.com/apache/couchdb-docker/blob/58910ed097489dc588b2a87592406f8faa1bdadf/3.1.2/Dockerfile)
 
 -	[`2.3.1`, `2.3`, `2`](https://github.com/apache/couchdb-docker/blob/58910ed097489dc588b2a87592406f8faa1bdadf/2.3.1/Dockerfile)
+
+[![arm64v8/couchdb build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/couchdb.svg?label=arm64v8/couchdb%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/couchdb/)
 
 # Quick reference (cont.)
 
@@ -68,7 +70,7 @@ Store your data safely, on your own servers, or with any leading cloud provider.
 Starting a CouchDB instance is simple:
 
 ```console
-$ docker run -d --name my-couchdb couchdb:tag
+$ docker run -d --name my-couchdb arm64v8/couchdb:tag
 ```
 
 where `my-couchdb` is the name you want to assign to your container, and `tag` is the tag specifying the CouchDB version you want. See the list above for relevant tags.
@@ -86,7 +88,7 @@ $ docker run --name my-couchdb-app --link my-couchdb:couchdb -d app-that-uses-co
 If you want to expose the port to the outside world, run
 
 ```console
-$ docker run -p 5984:5984 -d couchdb
+$ docker run -p 5984:5984 -d arm64v8/couchdb
 ```
 
 *WARNING*: Do not do this until you have established an admin user and setup permissions correctly on any databases you have created.
@@ -151,7 +153,7 @@ The Docker documentation is a good starting point for understanding the differen
 2.	Start your `couchdb` container like this:
 
 ```bash
-$ docker run --name some-%%REPO% -v /home/couchdb/data:/opt/couchdb/data -d couchdb:tag
+$ docker run --name some-%%REPO% -v /home/couchdb/data:/opt/couchdb/data -d arm64v8/couchdb:tag
 ```
 
 The `-v /home/couchdb/data:/opt/couchdb/data` part of the command mounts the `/home/couchdb/data` directory from the underlying host system as `/opt/couchdb/data` inside the container, where CouchDB by default will write its data files.
@@ -171,7 +173,7 @@ The node will also start in [admin party mode](https://docs.couchdb.org/en/stabl
 You can also use the two environment variables `COUCHDB_USER` and `COUCHDB_PASSWORD` to set up an admin user:
 
 ```console
-$ docker run -e COUCHDB_USER=admin -e COUCHDB_PASSWORD=password -d couchdb
+$ docker run -e COUCHDB_USER=admin -e COUCHDB_PASSWORD=password -d arm64v8/couchdb
 ```
 
 Note that if you are setting up a clustered CouchDB, you will want to pre-hash this password and use the identical hashed text across all nodes to ensure sessions work correctly when a load balancer is placed in front of the cluster. Hashing can be accomplished by running the container with the `/opt/couchdb/etc/local.d` directory mounted as a volume, allowing CouchDB to hash the password you set, then copying out the hashed version and using this value in the future.
@@ -183,7 +185,7 @@ The CouchDB configuration is specified in `.ini` files in `/opt/couchdb/etc`. Ta
 If you want to use a customized CouchDB configuration, you can create your configuration file in a directory on the host machine and then mount that directory as `/opt/couchdb/etc/local.d` inside the `couchdb` container.
 
 ```console
-$ docker run --name my-couchdb -v /home/couchdb/etc:/opt/couchdb/etc/local.d -d couchdb
+$ docker run --name my-couchdb -v /home/couchdb/etc:/opt/couchdb/etc/local.d -d arm64v8/couchdb
 ```
 
 The `-v /home/couchdb/etc:/opt/couchdb/etc/local.d` part of the command mounts the `/home/couchdb/etc` directory from the underlying host system as `/opt/couchdb/etc/local.d` inside the container, where CouchDB by default will write its dynamic configuration files.
@@ -193,7 +195,7 @@ You can also use `couchdb` as the base image for your own couchdb instance and p
 Example Dockerfile:
 
 ```dockerfile
-FROM couchdb
+FROM arm64v8/couchdb
 
 COPY local.ini /opt/couchdb/etc/
 ```
