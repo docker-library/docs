@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `mips64le` builds of [the `mysql` official image](https://hub.docker.com/_/mysql) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,13 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`9.0.1`, `9.0`, `9`, `innovation`, `latest`, `9.0.1-oraclelinux9`, `9.0-oraclelinux9`, `9-oraclelinux9`, `innovation-oraclelinux9`, `oraclelinux9`, `9.0.1-oracle`, `9.0-oracle`, `9-oracle`, `innovation-oracle`, `oracle`](https://github.com/docker-library/mysql/blob/a482468640c602ccd8a7c86a4c7422f18a307326/innovation/Dockerfile.oracle)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `mips64le` ARCHITECTURE
 
--	[`8.4.2`, `8.4`, `8`, `lts`, `8.4.2-oraclelinux9`, `8.4-oraclelinux9`, `8-oraclelinux9`, `lts-oraclelinux9`, `8.4.2-oracle`, `8.4-oracle`, `8-oracle`, `lts-oracle`](https://github.com/docker-library/mysql/blob/ea8ec8343c4540ac52e8bba94b5a531e298ff700/8.4/Dockerfile.oracle)
-
--	[`8.0.39`, `8.0`, `8.0.39-oraclelinux9`, `8.0-oraclelinux9`, `8.0.39-oracle`, `8.0-oracle`](https://github.com/docker-library/mysql/blob/3e6dfd03b956727c7fb5b30360512a11751a3e9d/8.0/Dockerfile.oracle)
-
--	[`8.0.39-bookworm`, `8.0-bookworm`, `8.0.39-debian`, `8.0-debian`](https://github.com/docker-library/mysql/blob/3e6dfd03b956727c7fb5b30360512a11751a3e9d/8.0/Dockerfile.debian)
+[![mips64le/mysql build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/mips64le/job/mysql.svg?label=mips64le/mysql%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/mips64le/job/mysql/)
 
 # Quick reference (cont.)
 
@@ -61,30 +59,30 @@ For more information and related downloads for MySQL Server and other MySQL prod
 
 # How to use this image
 
-## Start a `mysql` server instance
+## Start a `mips64le/mysql` server instance
 
 Starting a MySQL instance is simple:
 
 ```console
-$ docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag
+$ docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mips64le/mysql:tag
 ```
 
 ... where `some-mysql` is the name you want to assign to your container, `my-secret-pw` is the password to be set for the MySQL root user and `tag` is the tag specifying the MySQL version you want. See the list above for relevant tags.
 
 ## Connect to MySQL from the MySQL command line client
 
-The following command starts another `mysql` container instance and runs the `mysql` command line client against your original `mysql` container, allowing you to execute SQL statements against your database instance:
+The following command starts another `mips64le/mysql` container instance and runs the `mysql` command line client against your original `mips64le/mysql` container, allowing you to execute SQL statements against your database instance:
 
 ```console
-$ docker run -it --network some-network --rm mysql mysql -hsome-mysql -uexample-user -p
+$ docker run -it --network some-network --rm mips64le/mysql mysql -hsome-mysql -uexample-user -p
 ```
 
-... where `some-mysql` is the name of your original `mysql` container (connected to the `some-network` Docker network).
+... where `some-mysql` is the name of your original `mips64le/mysql` container (connected to the `some-network` Docker network).
 
 This image can also be used as a client for non-Docker or remote instances:
 
 ```console
-$ docker run -it --rm mysql mysql -hsome.mysql.host -usome-mysql-user -p
+$ docker run -it --rm mips64le/mysql mysql -hsome.mysql.host -usome-mysql-user -p
 ```
 
 More information about the MySQL command line client can be found in the [MySQL documentation](http://dev.mysql.com/doc/en/mysql.html)
@@ -113,7 +111,7 @@ Run `docker stack deploy -c stack.yml mysql` (or `docker-compose -f stack.yml up
 
 ## Container shell access and viewing MySQL logs
 
-The `docker exec` command allows you to run commands inside a Docker container. The following command line will give you a bash shell inside your `mysql` container:
+The `docker exec` command allows you to run commands inside a Docker container. The following command line will give you a bash shell inside your `mips64le/mysql` container:
 
 ```console
 $ docker exec -it some-mysql bash
@@ -127,12 +125,12 @@ $ docker logs some-mysql
 
 ## Using a custom MySQL configuration file
 
-The default configuration for MySQL can be found in `/etc/mysql/my.cnf`, which may `!includedir` additional directories such as `/etc/mysql/conf.d` or `/etc/mysql/mysql.conf.d`. Please inspect the relevant files and directories within the `mysql` image itself for more details.
+The default configuration for MySQL can be found in `/etc/mysql/my.cnf`, which may `!includedir` additional directories such as `/etc/mysql/conf.d` or `/etc/mysql/mysql.conf.d`. Please inspect the relevant files and directories within the `mips64le/mysql` image itself for more details.
 
-If `/my/custom/config-file.cnf` is the path and name of your custom configuration file, you can start your `mysql` container like this (note that only the directory path of the custom config file is used in this command):
+If `/my/custom/config-file.cnf` is the path and name of your custom configuration file, you can start your `mips64le/mysql` container like this (note that only the directory path of the custom config file is used in this command):
 
 ```console
-$ docker run --name some-mysql -v /my/custom:/etc/mysql/conf.d -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag
+$ docker run --name some-mysql -v /my/custom:/etc/mysql/conf.d -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mips64le/mysql:tag
 ```
 
 This will start a new container `some-mysql` where the MySQL instance uses the combined startup settings from `/etc/mysql/my.cnf` and `/etc/mysql/conf.d/config-file.cnf`, with settings from the latter taking precedence.
@@ -142,18 +140,18 @@ This will start a new container `some-mysql` where the MySQL instance uses the c
 Many configuration options can be passed as flags to `mysqld`. This will give you the flexibility to customize the container without needing a `cnf` file. For example, if you want to change the default encoding and collation for all tables to use UTF-8 (`utf8mb4`) just run the following:
 
 ```console
-$ docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+$ docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mips64le/mysql:tag --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
 ```
 
 If you would like to see a complete list of available options, just run:
 
 ```console
-$ docker run -it --rm mysql:tag --verbose --help
+$ docker run -it --rm mips64le/mysql:tag --verbose --help
 ```
 
 ## Environment Variables
 
-When you start the `mysql` image, you can adjust the configuration of the MySQL instance by passing one or more environment variables on the `docker run` command line. Do note that none of the variables below will have any effect if you start the container with a data directory that already contains a database: any pre-existing database will always be left untouched on container startup.
+When you start the `mips64le/mysql` image, you can adjust the configuration of the MySQL instance by passing one or more environment variables on the `docker run` command line. Do note that none of the variables below will have any effect if you start the container with a data directory that already contains a database: any pre-existing database will always be left untouched on container startup.
 
 See also https://dev.mysql.com/doc/refman/5.7/en/environment-variables.html for documentation of environment variables which MySQL itself respects (especially variables like `MYSQL_HOST`, which is known to cause issues when used with this image).
 
@@ -192,20 +190,20 @@ By default, the entrypoint script automatically loads the timezone data needed f
 As an alternative to passing sensitive information via environment variables, `_FILE` may be appended to the previously listed environment variables, causing the initialization script to load the values for those variables from files present in the container. In particular, this can be used to load passwords from Docker secrets stored in `/run/secrets/<secret_name>` files. For example:
 
 ```console
-$ docker run --name some-mysql -e MYSQL_ROOT_PASSWORD_FILE=/run/secrets/mysql-root -d mysql:tag
+$ docker run --name some-mysql -e MYSQL_ROOT_PASSWORD_FILE=/run/secrets/mysql-root -d mips64le/mysql:tag
 ```
 
 Currently, this is only supported for `MYSQL_ROOT_PASSWORD`, `MYSQL_ROOT_HOST`, `MYSQL_DATABASE`, `MYSQL_USER`, and `MYSQL_PASSWORD`.
 
 # Initializing a fresh instance
 
-When a container is started for the first time, a new database with the specified name will be created and initialized with the provided configuration variables. Furthermore, it will execute files with extensions `.sh`, `.sql` and `.sql.gz` that are found in `/docker-entrypoint-initdb.d`. Files will be executed in alphabetical order. You can easily populate your `mysql` services by [mounting a SQL dump into that directory](https://docs.docker.com/storage/bind-mounts/) and provide [custom images](https://docs.docker.com/reference/dockerfile/) with contributed data. SQL files will be imported by default to the database specified by the `MYSQL_DATABASE` variable.
+When a container is started for the first time, a new database with the specified name will be created and initialized with the provided configuration variables. Furthermore, it will execute files with extensions `.sh`, `.sql` and `.sql.gz` that are found in `/docker-entrypoint-initdb.d`. Files will be executed in alphabetical order. You can easily populate your `mips64le/mysql` services by [mounting a SQL dump into that directory](https://docs.docker.com/storage/bind-mounts/) and provide [custom images](https://docs.docker.com/reference/dockerfile/) with contributed data. SQL files will be imported by default to the database specified by the `MYSQL_DATABASE` variable.
 
 # Caveats
 
 ## Where to Store Data
 
-Important note: There are several ways to store data used by applications that run in Docker containers. We encourage users of the `mysql` images to familiarize themselves with the options available, including:
+Important note: There are several ways to store data used by applications that run in Docker containers. We encourage users of the `mips64le/mysql` images to familiarize themselves with the options available, including:
 
 -	Let Docker manage the storage of your database data [by writing the database files to disk on the host system using its own internal volume management](https://docs.docker.com/storage/volumes/). This is the default and is easy and fairly transparent to the user. The downside is that the files may be hard to locate for tools and applications that run directly on the host system, i.e. outside containers.
 -	Create a data directory on the host system (outside the container) and [mount this to a directory visible from inside the container](https://docs.docker.com/storage/bind-mounts/). This places the database files in a known location on the host system, and makes it easy for tools and applications on the host system to access the files. The downside is that the user needs to make sure that the directory exists, and that e.g. directory permissions and other security mechanisms on the host system are set up correctly.
@@ -213,10 +211,10 @@ Important note: There are several ways to store data used by applications that r
 The Docker documentation is a good starting point for understanding the different storage options and variations, and there are multiple blogs and forum postings that discuss and give advice in this area. We will simply show the basic procedure here for the latter option above:
 
 1.	Create a data directory on a suitable volume on your host system, e.g. `/my/own/datadir`.
-2.	Start your `mysql` container like this:
+2.	Start your `mips64le/mysql` container like this:
 
 	```console
-	$ docker run --name some-mysql -v /my/own/datadir:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag
+	$ docker run --name some-mysql -v /my/own/datadir:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mips64le/mysql:tag
 	```
 
 The `-v /my/own/datadir:/var/lib/mysql` part of the command mounts the `/my/own/datadir` directory from the underlying host system as `/var/lib/mysql` inside the container, where MySQL by default will write its data files.
@@ -229,7 +227,7 @@ If the application you're trying to connect to MySQL does not handle MySQL downt
 
 ## Usage against an existing database
 
-If you start your `mysql` container instance with a data directory that already contains a database (specifically, a `mysql` subdirectory), the `$MYSQL_ROOT_PASSWORD` variable should be omitted from the run command line; it will in any case be ignored, and the pre-existing database will not be changed in any way.
+If you start your `mips64le/mysql` container instance with a data directory that already contains a database (specifically, a `mysql` subdirectory), the `$MYSQL_ROOT_PASSWORD` variable should be omitted from the run command line; it will in any case be ignored, and the pre-existing database will not be changed in any way.
 
 ## Running as an arbitrary user
 
@@ -239,7 +237,7 @@ If you know the permissions of your directory are already set appropriately (suc
 $ mkdir data
 $ ls -lnd data
 drwxr-xr-x 2 1000 1000 4096 Aug 27 15:54 data
-$ docker run -v "$PWD/data":/var/lib/mysql --user 1000:1000 --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag
+$ docker run -v "$PWD/data":/var/lib/mysql --user 1000:1000 --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mips64le/mysql:tag
 ```
 
 ## Creating database dumps
