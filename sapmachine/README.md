@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `ppc64le` builds of [the `sapmachine` official image](https://hub.docker.com/_/sapmachine) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -120,6 +122,8 @@ WARNING:
 
 -	[`11-jre-headless-ubuntu-focal`, `11-jre-headless-ubuntu-20.04`, `11.0.24-jre-headless-ubuntu-focal`, `11.0.24-jre-headless-ubuntu-20.04`](https://github.com/SAP/SapMachine-infrastructure/blob/a6c4644846ec3088b17762b2d825b2245bd1ffe4/dockerfiles/11/ubuntu/20_04/jre-headless/Dockerfile)
 
+[![ppc64le/sapmachine build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/ppc64le/job/sapmachine.svg?label=ppc64le/sapmachine%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/ppc64le/job/sapmachine/)
+
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
@@ -156,14 +160,14 @@ Java and all Java-based trademarks and logos are trademarks or registered tradem
 You can pull and test the image with the following commands:
 
 ```console
-docker pull sapmachine:latest
-docker run -it sapmachine:latest java -version
+docker pull ppc64le/sapmachine:latest
+docker run -it ppc64le/sapmachine:latest java -version
 ```
 
 You can also use the SapMachine image as a base image to run your own jar file:
 
 ```dockerfile
-FROM sapmachine:latest
+FROM ppc64le/sapmachine:latest
 RUN mkdir /opt/myapp
 COPY myapp.jar /opt/myapp
 CMD ["java", "-jar", "/opt/myapp/myapp.jar"]
