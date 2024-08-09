@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `amd64` builds of [the `api-firewall` official image](https://hub.docker.com/_/api-firewall) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -25,6 +27,8 @@ WARNING:
 # Supported tags and respective `Dockerfile` links
 
 -	[`0.7.4`, `latest`](https://github.com/wallarm/api-firewall-docker/blob/0ea1be5ada7c57564afb40d303b32eea3282c778/0.7.4/Dockerfile)
+
+[![amd64/api-firewall build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/amd64/job/api-firewall.svg?label=amd64/api-firewall%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/api-firewall/)
 
 # Quick reference (cont.)
 

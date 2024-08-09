@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `amd64` builds of [the `jetty` official image](https://hub.docker.com/_/jetty) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -230,6 +232,8 @@ WARNING:
 
 -	[`10.0.22-jdk11-amazoncorretto`, `10.0-jdk11-amazoncorretto`, `10-jdk11-amazoncorretto`](https://github.com/eclipse/jetty.docker/blob/65b114c0ee20b162c7df650bb1b95a0949bea68f/amazoncorretto/10.0/jdk11/Dockerfile)
 
+[![amd64/jetty build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/amd64/job/jetty.svg?label=amd64/jetty%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/jetty/)
+
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
@@ -262,13 +266,13 @@ Jetty is a pure Java-based HTTP (Web) server and Java Servlet container. While W
 To run the default Jetty server in the background, use the following command:
 
 ```console
-$ docker run -d jetty
+$ docker run -d amd64/jetty
 ```
 
 You can test it by visiting `http://container-ip:8080` or `https://container-ip:8443/` in a browser. To expose your Jetty server to outside requests, use a port mapping as follows:
 
 ```console
-$ docker run -d -p 80:8080 -p 443:8443 jetty
+$ docker run -d -p 80:8080 -p 443:8443 amd64/jetty
 ```
 
 This will map port 8080 inside the container as port 80 on the host and container port 8443 as host port 443. You can then go to `http://host-ip` or `https://host-ip` in a browser.
@@ -292,19 +296,19 @@ For older EOL'd images based on Jetty 7 or Jetty 8, please follow the [legacy in
 The configuration of the Jetty server can be reported by running with the `--list-config` option:
 
 ```console
-$ docker run -d jetty --list-config
+$ docker run -d amd64/jetty --list-config
 ```
 
 Configuration such as parameters and additional modules may also be passed in via the command line. For example:
 
 ```console
-$ docker run -d jetty --module=jmx jetty.threadPool.maxThreads=500
+$ docker run -d amd64/jetty --module=jmx jetty.threadPool.maxThreads=500
 ```
 
 To update the server configuration in a derived Docker image, the `Dockerfile` may enable additional modules with `RUN` commands like:
 
 ```Dockerfile
-FROM jetty
+FROM amd64/jetty
 
 RUN java -jar "$JETTY_HOME/start.jar" --add-to-startd=jmx,stats
 ```
@@ -316,15 +320,15 @@ Modules may be configured in a `Dockerfile` by editing the properties in the cor
 JVM options can be set by passing the `JAVA_OPTIONS` environment variable to the container. For example, to set the maximum heap size to 1 gigabyte, you can run the container as follows:
 
 ```console
-$ docker run -e JAVA_OPTIONS="-Xmx1g" -d jetty
+$ docker run -e JAVA_OPTIONS="-Xmx1g" -d amd64/jetty
 ```
 
 ## Read-only container
 
-To run `jetty` as a read-only container, have Docker create the `/tmp/jetty` and `/run/jetty` directories as volumes:
+To run `amd64/jetty` as a read-only container, have Docker create the `/tmp/jetty` and `/run/jetty` directories as volumes:
 
 ```console
-$ docker run -d --read-only -v /tmp/jetty -v /run/jetty jetty
+$ docker run -d --read-only -v /tmp/jetty -v /run/jetty amd64/jetty
 ```
 
 Since the container is read-only, you'll need to either mount in your webapps directory with `-v /path/to/my/webapps:/var/lib/jetty/webapps` or by populating `/var/lib/jetty/webapps` in a derived image.
@@ -334,7 +338,7 @@ Since the container is read-only, you'll need to either mount in your webapps di
 Starting with version 9.3, Jetty comes with built-in support for HTTP/2. However, due to potential license compatiblity issues with the ALPN library used to implement HTTP/2, the module is not enabled by default. In order to enable HTTP/2 support in a derived `Dockerfile` for private use, you can add a `RUN` command that enables the `http2` module and approve its license as follows:
 
 ```Dockerfile
-FROM jetty
+FROM amd64/jetty
 
 RUN java -jar $JETTY_HOME/start.jar --add-to-startd=http2 --approve-all-licenses
 ```
@@ -348,18 +352,18 @@ By default, this image starts as user `root` and uses Jetty's `setuid` module to
 If you would like the image to start immediately as user `jetty` instead of starting as `root`, you can start the container with `-u jetty`:
 
 ```console
-$ docker run -d -u jetty jetty
+$ docker run -d -u jetty amd64/jetty
 ```
 
 # Image Variants
 
-The `jetty` images come in many flavors, each designed for a specific use case.
+The `amd64/jetty` images come in many flavors, each designed for a specific use case.
 
-## `jetty:<version>`
+## `amd64/jetty:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `jetty:<version>-alpine`
+## `amd64/jetty:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 

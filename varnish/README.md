@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `amd64` builds of [the `varnish` official image](https://hub.docker.com/_/varnish) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -43,6 +45,8 @@ WARNING:
 -	[`7.3.1-alpine`, `7.3-alpine`](https://github.com/varnish/docker-varnish/blob/5644d31e8fa5bc78e764e8604ffa17c47528f5e3/old/alpine/Dockerfile)
 
 -	[`6.0.12`](https://github.com/varnish/docker-varnish/blob/0c295b528f28a98650fb2580eab6d34b30b165c4/stable/debian/Dockerfile)
+
+[![amd64/varnish build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/amd64/job/varnish.svg?label=amd64/varnish%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/varnish/)
 
 # Quick reference (cont.)
 
@@ -87,7 +91,7 @@ $ docker run \
     -e VARNISH_BACKEND_HOST=example.com -e VARNISH_BACKEND_PORT=80 \
 	--tmpfs /var/lib/varnish/varnishd:exec \
 	-p 8080:80 \
-	varnish
+	amd64/varnish
 ```
 
 From there, you can visit `localhost:8080` in your browser and see the example.com homepage.
@@ -104,13 +108,13 @@ $ docker run \
 	-v /path/to/default.vcl:/etc/varnish/default.vcl:ro \
 	--tmpfs /var/lib/varnish/varnishd:exec \
 	-p 8080:80 \
-	varnish
+	amd64/varnish
 ```
 
 Alternatively, a simple `Dockerfile` can be used to generate a new image that includes the necessary `default.vcl`:
 
 ```dockerfile
-FROM varnish
+FROM amd64/varnish
 
 COPY default.vcl /etc/varnish/
 ```
@@ -145,7 +149,7 @@ docker run varnish varnishreload -h
 By default, the containers will use a cache size of 100MB, which is usually a bit too small, but you can quickly set it through the `VARNISH_SIZE` environment variable:
 
 ```console
-$ docker run --tmpfs /var/lib/varnish/varnishd:exec -p 8080:80 -e VARNISH_SIZE=2G varnish
+$ docker run --tmpfs /var/lib/varnish/varnishd:exec -p 8080:80 -e VARNISH_SIZE=2G amd64/varnish
 ```
 
 ### Listening ports (VARNISH_HTTP_PORT/VARNISH_PROXY_PORT)
@@ -154,29 +158,29 @@ Varnish will listen to HTTP traffic on port `80`, and this can be overridden by 
 
 ```console
 # instruct varnish to listening to port 7777 instead of 80
-$ docker run --tmpfs /var/lib/varnish/varnishd:exec -p 8080:7777 -e VARNISH_HTTP_PORT=7777 varnish
+$ docker run --tmpfs /var/lib/varnish/varnishd:exec -p 8080:7777 -e VARNISH_HTTP_PORT=7777 amd64/varnish
 ```
 
 ### Extra arguments
 
-Additionally, you can add arguments to `docker run` after `varnish`, if the first argument starts with a `-`, the whole list will be appendend to the [default command](https://github.com/varnish/docker-varnish/blob/master/fresh/debian/scripts/docker-varnish-entrypoint):
+Additionally, you can add arguments to `docker run` after `amd64/varnish`, if the first argument starts with a `-`, the whole list will be appendend to the [default command](https://github.com/varnish/docker-varnish/blob/master/fresh/debian/scripts/docker-varnish-entrypoint):
 
 ```console
 # extend the default keep period
-$ docker run --tmpfs /var/lib/varnish/varnishd:exec -p 8080:80 -e VARNISH_SIZE=2G varnish -p default_keep=300
+$ docker run --tmpfs /var/lib/varnish/varnishd:exec -p 8080:80 -e VARNISH_SIZE=2G amd64/varnish -p default_keep=300
 ```
 
-If your first argument after `varnish` doesn't start with `-`, it will be interpreted as a command to override the default one:
+If your first argument after `amd64/varnish` doesn't start with `-`, it will be interpreted as a command to override the default one:
 
 ```console
 # show the command-line options
-$ docker run varnish varnishd -?
+$ docker run amd64/varnish varnishd -?
 
 # list parameters usable with -p
-$ docker run varnish varnishd -x parameter
+$ docker run amd64/varnish varnishd -x parameter
 
 # run the server with your own parameters (don't forget -F to not daemonize)
-$ docker run varnish varnishd -F -a :8080 -b 127.0.0.1:8181 -t 600 -p feature=+http2
+$ docker run amd64/varnish varnishd -F -a :8080 -b 127.0.0.1:8181 -t 600 -p feature=+http2
 ```
 
 ## vmods (since 7.1)
@@ -188,7 +192,7 @@ On top of this, images include [install-vmod](https://github.com/varnish/toolbox
 ### Debian
 
 ```dockerfile
-FROM varnish:7.1
+FROM amd64/varnish:7.1
 
 # set the user to root, and install build dependencies
 USER root
@@ -208,7 +212,7 @@ USER varnish
 ### Alpine
 
 ```dockerfile
-FROM varnish:7.1-alpine
+FROM amd64/varnish:7.1-alpine
 
 # install build dependencies
 USER root
@@ -225,13 +229,13 @@ USER varnish
 
 # Image Variants
 
-The `varnish` images come in many flavors, each designed for a specific use case.
+The `amd64/varnish` images come in many flavors, each designed for a specific use case.
 
-## `varnish:<version>`
+## `amd64/varnish:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `varnish:<version>-alpine`
+## `amd64/varnish:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 

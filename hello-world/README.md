@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `amd64` builds of [the `hello-world` official image](https://hub.docker.com/_/hello-world) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -30,22 +32,13 @@ WARNING:
 
 -	[`linux`](https://github.com/docker-library/hello-world/blob/3fb6ebca4163bf5b9cc496ac3e8f11cb1e754aee/amd64/hello-world/Dockerfile)
 
--	[`nanoserver-ltsc2022`](https://github.com/docker-library/hello-world/blob/c816763efda4774cc0c628dca3c7dbd93c099928/amd64/hello-world/nanoserver-ltsc2022/Dockerfile)
-
--	[`nanoserver-1809`](https://github.com/docker-library/hello-world/blob/c816763efda4774cc0c628dca3c7dbd93c099928/amd64/hello-world/nanoserver-1809/Dockerfile)
-
 ## Shared Tags
 
 -	`latest`:
 
 	-	[`linux`](https://github.com/docker-library/hello-world/blob/3fb6ebca4163bf5b9cc496ac3e8f11cb1e754aee/amd64/hello-world/Dockerfile)
-	-	[`nanoserver-ltsc2022`](https://github.com/docker-library/hello-world/blob/c816763efda4774cc0c628dca3c7dbd93c099928/amd64/hello-world/nanoserver-ltsc2022/Dockerfile)
-	-	[`nanoserver-1809`](https://github.com/docker-library/hello-world/blob/c816763efda4774cc0c628dca3c7dbd93c099928/amd64/hello-world/nanoserver-1809/Dockerfile)
 
--	`nanoserver`:
-
-	-	[`nanoserver-ltsc2022`](https://github.com/docker-library/hello-world/blob/c816763efda4774cc0c628dca3c7dbd93c099928/amd64/hello-world/nanoserver-ltsc2022/Dockerfile)
-	-	[`nanoserver-1809`](https://github.com/docker-library/hello-world/blob/c816763efda4774cc0c628dca3c7dbd93c099928/amd64/hello-world/nanoserver-1809/Dockerfile)
+[![amd64/hello-world build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/amd64/job/hello-world.svg?label=amd64/hello-world%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/hello-world/)
 
 # Quick reference (cont.)
 
@@ -69,7 +62,7 @@ WARNING:
 # Example output
 
 ```console
-$ docker run hello-world
+$ docker run amd64/hello-world
 
 Hello from Docker!
 This message shows that your installation appears to be working correctly.
@@ -93,9 +86,9 @@ For more examples and ideas, visit:
  https://docs.docker.com/get-started/
 
 
-$ docker images hello-world
-REPOSITORY    TAG       IMAGE ID       SIZE
-hello-world   latest    d2c94e258dcb   13.26kB
+$ docker images amd64/hello-world
+REPOSITORY          TAG       IMAGE ID       SIZE
+amd64/hello-world   latest    d2c94e258dcb   13.26kB
 ```
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/01c12653951b2fe592c1f93a13b4e289ada0e3a1/hello-world/logo.png)
@@ -104,7 +97,7 @@ hello-world   latest    d2c94e258dcb   13.26kB
 
 This image is a prime example of using the [`scratch`](https://hub.docker.com/_/scratch/) image effectively. See [`hello.c`](https://github.com/docker-library/hello-world/blob/master/hello.c) in https://github.com/docker-library/hello-world for the source code of the `hello` binary included in this image.
 
-Because this image consists of nothing but a single static binary which prints some text to standard output, it can trivially be run as any arbitrary user (`docker run --user $RANDOM:$RANDOM hello-world`, for example).
+Because this image consists of nothing but a single static binary which prints some text to standard output, it can trivially be run as any arbitrary user (`docker run --user $RANDOM:$RANDOM amd64/hello-world`, for example).
 
 # License
 

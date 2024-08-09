@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `amd64` builds of [the `eclipse-mosquitto` official image](https://hub.docker.com/_/eclipse-mosquitto) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -29,6 +31,8 @@ WARNING:
 -	[`2.0.18-openssl`, `2.0-openssl`, `2-openssl`, `openssl`](https://github.com/eclipse/mosquitto/blob/f4400fa422eacac8417efbc45dd1284526dce8d4/docker/2.0-openssl/Dockerfile)
 
 -	[`1.6.15-openssl`, `1.6-openssl`](https://github.com/eclipse/mosquitto/blob/f4400fa422eacac8417efbc45dd1284526dce8d4/docker/1.6-openssl/Dockerfile)
+
+[![amd64/eclipse-mosquitto build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/amd64/job/eclipse-mosquitto.svg?label=amd64/eclipse-mosquitto%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/eclipse-mosquitto/)
 
 # Quick reference (cont.)
 
@@ -70,7 +74,7 @@ Three directories have been created in the image to be used for configuration, p
 When running the image, the default configuration values are used. To use a custom configuration file, mount a **local** configuration file to `/mosquitto/config/mosquitto.conf`
 
 ```console
-$ docker run -it -p 1883:1883 -p 9001:9001 -v mosquitto.conf:/mosquitto/config/mosquitto.conf eclipse-mosquitto
+$ docker run -it -p 1883:1883 -p 9001:9001 -v mosquitto.conf:/mosquitto/config/mosquitto.conf amd64/eclipse-mosquitto
 ```
 
 Configuration can be changed to:
@@ -91,7 +95,7 @@ i.e. add the following to `mosquitto.conf`:
 Run a container using the new image:
 
 ```console
-$ docker run -it -p 1883:1883 -p 9001:9001 -v mosquitto.conf:/mosquitto/config/mosquitto.conf -v /mosquitto/data -v /mosquitto/log eclipse-mosquitto
+$ docker run -it -p 1883:1883 -p 9001:9001 -v mosquitto.conf:/mosquitto/config/mosquitto.conf -v /mosquitto/data -v /mosquitto/log amd64/eclipse-mosquitto
 ```
 
 **Note**: if the mosquitto configuration (mosquitto.conf) was modified to use non-default ports, the docker run command will need to be updated to expose the ports that have been configured.

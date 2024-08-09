@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `amd64` builds of [the `tomee` official image](https://hub.docker.com/_/tomee) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -96,6 +98,8 @@ WARNING:
 
 -	[`10.0.0-M2-jre17-Semeru-ubuntu-webprofile`, `10.0.0-M2-Semeru-ubuntu-webprofile`, `10.0.0-M2-jre17-Semeru-webprofile`, `10.0.0-M2-Semeru-webprofile`, `10.0-jre17-Semeru-ubuntu-webprofile`, `10.0-Semeru-ubuntu-webprofile`, `10.0-jre17-Semeru-webprofile`, `10.0-Semeru-webprofile`, `10-jre17-Semeru-ubuntu-webprofile`, `10-Semeru-ubuntu-webprofile`, `10-jre17-Semeru-webprofile`, `10-Semeru-webprofile`](https://github.com/tomitribe/docker-tomee/blob/bb6acca77154f3e16c924f668c1782a772437fc8/TomEE-10.0/jre17/Semeru/ubuntu/webprofile/Dockerfile)
 
+[![amd64/tomee build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/amd64/job/tomee.svg?label=amd64/tomee%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/tomee/)
+
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
@@ -154,19 +158,19 @@ ManageCat is a cloud management and service platform for Apache Tomcat and Apach
 Run the default TomEE server (`CMD ["catalina.sh", "run"]`):
 
 ```console
-$ docker run -it --rm tomee:<java-version>\-<tomeeversion>\-<flavour>
+$ docker run -it --rm amd64/tomee:<java-version>\-<tomeeversion>\-<flavour>
 ```
 
 For example running Apache TomEE 1.7.2 with JRE 8 and Webprofile flavour will be:
 
 ```console
-$ docker run -it --rm tomee:8-jre-1.7.2-webprofile
+$ docker run -it --rm amd64/tomee:8-jre-1.7.2-webprofile
 ```
 
 You can test it by visiting `http://container-ip:8080` in a browser or, if you need access outside the host, on port 8888:
 
 ```console
-$ docker run -it --rm -p 8888:8080 tomee:<java-version>\-<tomeeversion>\-<flavour>
+$ docker run -it --rm -p 8888:8080 amd64/tomee:<java-version>\-<tomeeversion>\-<flavour>
 ```
 
 You can then go to `http://localhost:8888` or `http://host-ip:8888` in a browser.
@@ -181,13 +185,13 @@ COPY <locationofapplication>/<warfile> /usr/local/tomee/webapps/<warfile>
 
 # Image Variants
 
-The `tomee` images come in many flavors, each designed for a specific use case.
+The `amd64/tomee` images come in many flavors, each designed for a specific use case.
 
-## `tomee:<version>`
+## `amd64/tomee:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `tomee:<version>-alpine`
+## `amd64/tomee:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 

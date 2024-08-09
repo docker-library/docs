@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `amd64` builds of [the `mediawiki` official image](https://hub.docker.com/_/mediawiki) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -41,6 +43,8 @@ WARNING:
 -	[`1.39.8-fpm`, `1.39-fpm`, `lts-fpm`](https://github.com/wikimedia/mediawiki-docker/blob/b3b4ecdcb503a180b1f5052b04963a0fb93f6611/1.39/fpm/Dockerfile)
 
 -	[`1.39.8-fpm-alpine`, `1.39-fpm-alpine`, `lts-fpm-alpine`](https://github.com/wikimedia/mediawiki-docker/blob/b3b4ecdcb503a180b1f5052b04963a0fb93f6611/1.39/fpm-alpine/Dockerfile)
+
+[![amd64/mediawiki build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/amd64/job/mediawiki.svg?label=amd64/mediawiki%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/mediawiki/)
 
 # Quick reference (cont.)
 
@@ -74,13 +78,13 @@ MediaWiki is free and open-source wiki software. Originally developed by Magnus 
 The basic pattern for starting a `mediawiki` instance is:
 
 ```console
-$ docker run --name some-mediawiki -d mediawiki
+$ docker run --name some-mediawiki -d amd64/mediawiki
 ```
 
 If you'd like to be able to access the instance from the host without the container's IP, standard port mappings can be used:
 
 ```console
-$ docker run --name some-mediawiki -p 8080:80 -d mediawiki
+$ docker run --name some-mediawiki -p 8080:80 -d amd64/mediawiki
 ```
 
 Then, access it via `http://localhost:8080` or `http://host-ip:8080` in a browser.
@@ -92,7 +96,7 @@ When first accessing the webserver provided by this image, it will go through a 
 ## MySQL
 
 ```console
-$ docker run --name some-mediawiki --link some-mysql:mysql -d mediawiki
+$ docker run --name some-mediawiki --link some-mysql:mysql -d amd64/mediawiki
 ```
 
 -	Database type: `MySQL, MariaDB, or equivalent`
@@ -106,7 +110,7 @@ By default, this image does not include any volumes.
 The paths `/var/www/html/images` and `/var/www/html/LocalSettings.php` are things that generally ought to be volumes, but do not explicitly have a `VOLUME` declaration in this image because volumes cannot be removed.
 
 ```console
-$ docker run --rm mediawiki tar -cC /var/www/html/sites . | tar -xC /path/on/host/sites
+$ docker run --rm amd64/mediawiki tar -cC /var/www/html/sites . | tar -xC /path/on/host/sites
 ```
 
 ## ... via [`docker-compose`](https://github.com/docker/compose) or [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/)
@@ -167,13 +171,13 @@ The following Docker Hub features can help with the task of keeping your depende
 
 # Image Variants
 
-The `mediawiki` images come in many flavors, each designed for a specific use case.
+The `amd64/mediawiki` images come in many flavors, each designed for a specific use case.
 
-## `mediawiki:<version>`
+## `amd64/mediawiki:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `mediawiki:<version>-alpine`
+## `amd64/mediawiki:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 

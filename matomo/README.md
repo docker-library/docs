@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `amd64` builds of [the `matomo` official image](https://hub.docker.com/_/matomo) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -29,6 +31,8 @@ WARNING:
 -	[`5.1.0-fpm`, `5.1-fpm`, `5-fpm`, `fpm`](https://github.com/matomo-org/docker/blob/417f15cd95e76177834c2055977145311c973cd1/fpm/Dockerfile)
 
 -	[`5.1.0-fpm-alpine`, `5.1-fpm-alpine`, `5-fpm-alpine`, `fpm-alpine`](https://github.com/matomo-org/docker/blob/417f15cd95e76177834c2055977145311c973cd1/fpm-alpine/Dockerfile)
+
+[![amd64/matomo build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/amd64/job/matomo.svg?label=amd64/matomo%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/matomo/)
 
 # Quick reference (cont.)
 
@@ -66,7 +70,7 @@ WARNING:
 You can run the Matomo container and service like so:
 
 ```bash
-docker run -d --link some-mysql:db matomo
+docker run -d --link some-mysql:db amd64/matomo
 ```
 
 This assumes you've already launched a suitable MySQL or MariaDB database container.
@@ -76,7 +80,7 @@ This assumes you've already launched a suitable MySQL or MariaDB database contai
 Use a Docker volume to keep persistent data:
 
 ```bash
-docker run -d -p 8080:80 --link some-mysql:db -v matomo:/var/www/html matomo
+docker run -d -p 8080:80 --link some-mysql:db -v matomo:/var/www/html amd64/matomo
 ```
 
 ## Matomo Installation
@@ -127,13 +131,13 @@ We'd love to hear your feedback and suggestions in the issue tracker: [[https://
 
 # Image Variants
 
-The `matomo` images come in many flavors, each designed for a specific use case.
+The `amd64/matomo` images come in many flavors, each designed for a specific use case.
 
-## `matomo:<version>`
+## `amd64/matomo:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `matomo:<version>-alpine`
+## `amd64/matomo:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
