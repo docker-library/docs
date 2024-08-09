@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `riscv64` builds of [the `friendica` official image](https://hub.docker.com/_/friendica) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,29 +26,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2023.12-apache`, `2023.12`](https://github.com/friendica/docker/blob/447b53e733bfbca2f52b52b355b6f791e5d58747/2023.12/apache/Dockerfile)
-
--	[`2023.12-fpm`](https://github.com/friendica/docker/blob/447b53e733bfbca2f52b52b355b6f791e5d58747/2023.12/fpm/Dockerfile)
-
 -	[`2023.12-fpm-alpine`](https://github.com/friendica/docker/blob/447b53e733bfbca2f52b52b355b6f791e5d58747/2023.12/fpm-alpine/Dockerfile)
-
--	[`2024.03-apache`, `apache`, `stable-apache`, `2024.03`, `latest`, `stable`](https://github.com/friendica/docker/blob/e9e6de1547a2333a126c377907b5ba201846abd2/2024.03/apache/Dockerfile)
-
--	[`2024.03-fpm`, `fpm`, `stable-fpm`](https://github.com/friendica/docker/blob/e9e6de1547a2333a126c377907b5ba201846abd2/2024.03/fpm/Dockerfile)
 
 -	[`2024.03-fpm-alpine`, `fpm-alpine`, `stable-fpm-alpine`](https://github.com/friendica/docker/blob/e9e6de1547a2333a126c377907b5ba201846abd2/2024.03/fpm-alpine/Dockerfile)
 
--	[`2024.06-dev-apache`, `dev-apache`, `2024.06-dev`, `dev`](https://github.com/friendica/docker/blob/896354f9ae8b175316d13c3a45206cccbd25da51/2024.06-dev/apache/Dockerfile)
-
--	[`2024.06-dev-fpm`, `dev-fpm`](https://github.com/friendica/docker/blob/896354f9ae8b175316d13c3a45206cccbd25da51/2024.06-dev/fpm/Dockerfile)
-
 -	[`2024.06-dev-fpm-alpine`, `dev-fpm-alpine`](https://github.com/friendica/docker/blob/896354f9ae8b175316d13c3a45206cccbd25da51/2024.06-dev/fpm-alpine/Dockerfile)
 
--	[`2024.06-rc-apache`, `rc-apache`, `2024.06-rc`, `rc`](https://github.com/friendica/docker/blob/a731c5687c992951d090a39462f1cf5c53d8a488/2024.06-rc/apache/Dockerfile)
-
--	[`2024.06-rc-fpm`, `rc-fpm`](https://github.com/friendica/docker/blob/a731c5687c992951d090a39462f1cf5c53d8a488/2024.06-rc/fpm/Dockerfile)
-
 -	[`2024.06-rc-fpm-alpine`, `rc-fpm-alpine`](https://github.com/friendica/docker/blob/a731c5687c992951d090a39462f1cf5c53d8a488/2024.06-rc/fpm-alpine/Dockerfile)
+
+[![riscv64/friendica build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/riscv64/job/friendica.svg?label=riscv64/friendica%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/riscv64/job/friendica/)
 
 # Quick reference (cont.)
 
@@ -90,7 +78,7 @@ You need at least one other mariadb/mysql-container to link it to Friendica.
 The apache image contains a webserver and exposes port 80. To start the container type:
 
 ```console
-$ docker run -d -p 8080:80 --network some-network friendica
+$ docker run -d -p 8080:80 --network some-network riscv64/friendica
 ```
 
 Now you can access the Friendica installation wizard at http://localhost:8080/ from your host system.
@@ -100,7 +88,7 @@ Now you can access the Friendica installation wizard at http://localhost:8080/ f
 To use the fpm image you need an additional web server that can proxy http-request to the fpm-port of the container. For fpm connection this container exposes port 9000. In most cases you might want use another container or your host as proxy. If you use your host you can address your Friendica container directly on port 9000. If you use another container, make sure that you add them to the same docker network (via `docker run --network <NAME> ...` or a `docker-compose` file). In both cases you don't want to map the fpm port to you host.
 
 ```console
-$ docker run -d friendica:fpm
+$ docker run -d riscv64/friendica:fpm
 ```
 
 As the fastCGI-Process is not capable of serving static files (style sheets, images, ...) the webserver needs access to these files. This can be achieved with the `volumes-from` option. You can find more information in the docker-compose section.
@@ -198,7 +186,7 @@ Friendica:
 $ docker run -d \
   -v friendica-vol-1:/var/www/html \
   --network some-network
-  friendica
+  riscv64/friendica
 ```
 
 Database:
@@ -287,7 +275,7 @@ Currently, this is only supported for `FRIENDICA_ADMIN_MAIL`, `MYSQL_DATABASE`, 
 
 ## Updating to a newer version
 
-You have to pull the latest image from the hub (`docker pull friendica`). The stable branch gets checked at every startup and will get updated if no installation was found or a new image is used.
+You have to pull the latest image from the hub (`docker pull riscv64/friendica`). The stable branch gets checked at every startup and will get updated if no installation was found or a new image is used.
 
 # Running this image with docker-compose
 
@@ -317,7 +305,7 @@ services:
       - MYSQL_RANDOM_ROOT_PASSWORD=yes
 
   app:
-    image: friendica
+    image: riscv64/friendica
     restart: always
     volumes:
       - friendica:/var/www/html
@@ -368,7 +356,7 @@ services:
       - MYSQL_RANDOM_ROOT_PASSWORD=yes
 
   app:
-    image: friendica:fpm
+    image: riscv64/friendica:fpm
     restart: always
     volumes:
       - friendica:/var/www/html    
@@ -414,13 +402,13 @@ If you got any questions or problems using the image, please visit our [Github R
 
 # Image Variants
 
-The `friendica` images come in many flavors, each designed for a specific use case.
+The `riscv64/friendica` images come in many flavors, each designed for a specific use case.
 
-## `friendica:<version>`
+## `riscv64/friendica:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `friendica:<version>-alpine`
+## `riscv64/friendica:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
