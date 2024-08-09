@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v7` builds of [the `zookeeper` official image](https://hub.docker.com/_/zookeeper) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,13 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.7.2`, `3.7`, `3.7.2-jre-11`, `3.7-jre-11`](https://github.com/31z4/zookeeper-docker/blob/c03e4eea773bb3406fed38bdda15bf0bdfb1b35b/3.7.2-jre11/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v7` ARCHITECTURE
 
--	[`3.7.2-jre-17`, `3.7-jre-17`](https://github.com/31z4/zookeeper-docker/blob/5076660820c73f3b119cbdd1267c25a1e29cbbf4/3.7.2/Dockerfile)
-
--	[`3.8.4`, `3.8`, `3.8.4-jre-17`, `3.8-jre-17`](https://github.com/31z4/zookeeper-docker/blob/ec1050affd761a7886c1f1f5d18165c19d3143e8/3.8.4/Dockerfile)
-
--	[`3.9.2`, `3.9`, `3.9.2-jre-17`, `3.9-jre-17`, `latest`](https://github.com/31z4/zookeeper-docker/blob/ec1050affd761a7886c1f1f5d18165c19d3143e8/3.9.2/Dockerfile)
+[![arm32v7/zookeeper build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/zookeeper.svg?label=arm32v7/zookeeper%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/zookeeper/)
 
 # Quick reference (cont.)
 
@@ -64,7 +62,7 @@ Apache ZooKeeper is a software project of the Apache Software Foundation, provid
 ## Start a Zookeeper server instance
 
 ```console
-$ docker run --name some-zookeeper --restart always -d zookeeper
+$ docker run --name some-zookeeper --restart always -d arm32v7/zookeeper
 ```
 
 This image includes `EXPOSE 2181 2888 3888 8080` (the zookeeper client port, follower port, election port, AdminServer port respectively), so standard container linking will make it automatically available to the linked containers. Since the Zookeeper "fails fast" it's better to always restart it.
@@ -78,7 +76,7 @@ $ docker run --name some-app --link some-zookeeper:zookeeper -d application-that
 ## Connect to Zookeeper from the Zookeeper command line client
 
 ```console
-$ docker run -it --rm --link some-zookeeper:zookeeper zookeeper zkCli.sh -server zookeeper
+$ docker run -it --rm --link some-zookeeper:zookeeper arm32v7/zookeeper zkCli.sh -server zookeeper
 ```
 
 ## ... via [`docker-compose`](https://github.com/docker/compose) or [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/)
@@ -133,7 +131,7 @@ Consider using [Docker Swarm](https://www.docker.com/products/docker-swarm) when
 Zookeeper configuration is located in `/conf`. One way to change it is mounting your config file as a volume:
 
 ```console
-$ docker run --name some-zookeeper --restart always -d -v $(pwd)/zoo.cfg:/conf/zoo.cfg zookeeper
+$ docker run --name some-zookeeper --restart always -d -v $(pwd)/zoo.cfg:/conf/zoo.cfg arm32v7/zookeeper
 ```
 
 ## Environment variables
@@ -141,7 +139,7 @@ $ docker run --name some-zookeeper --restart always -d -v $(pwd)/zoo.cfg:/conf/z
 ZooKeeper recommended defaults are used if `zoo.cfg` file is not provided. They can be overridden using the following environment variables.
 
 ```console
-$ docker run -e "ZOO_INIT_LIMIT=10" --name some-zookeeper --restart always -d zookeeper
+$ docker run -e "ZOO_INIT_LIMIT=10" --name some-zookeeper --restart always -d arm32v7/zookeeper
 ```
 
 ### `ZOO_TICK_TIME`
@@ -205,7 +203,7 @@ Defaults to `srvr`. Zookeeper's [`4lw.commands.whitelist`](https://zookeeper.apa
 Not every Zookeeper configuration setting is exposed via the environment variables listed above. These variables are only meant to cover minimum configuration keywords and some often changing options. If [mounting your custom config file](#configuration) as a volume doesn't work for you, consider using `ZOO_CFG_EXTRA` environment variable. You can add arbitrary configuration parameters to Zookeeper configuration file using this variable. The following example shows how to enable Prometheus metrics exporter on port `7070`:
 
 ```console
-$ docker run --name some-zookeeper --restart always -e ZOO_CFG_EXTRA="metricsProvider.className=org.apache.zookeeper.metrics.prometheus.PrometheusMetricsProvider metricsProvider.httpPort=7070" zookeeper
+$ docker run --name some-zookeeper --restart always -e ZOO_CFG_EXTRA="metricsProvider.className=org.apache.zookeeper.metrics.prometheus.PrometheusMetricsProvider metricsProvider.httpPort=7070" arm32v7/zookeeper
 ```
 
 ### `JVMFLAGS`
@@ -213,7 +211,7 @@ $ docker run --name some-zookeeper --restart always -e ZOO_CFG_EXTRA="metricsPro
 Many of the Zookeeper advanced configuration options can be set there using Java system properties in the form of `-Dproperty=value`. For example, you can use Netty instead of NIO (default option) as a server communication framework:
 
 ```console
-$ docker run --name some-zookeeper --restart always -e JVMFLAGS="-Dzookeeper.serverCnxnFactory=org.apache.zookeeper.server.NettyServerCnxnFactory" zookeeper
+$ docker run --name some-zookeeper --restart always -e JVMFLAGS="-Dzookeeper.serverCnxnFactory=org.apache.zookeeper.server.NettyServerCnxnFactory" arm32v7/zookeeper
 ```
 
 See [Advanced Configuration](https://zookeeper.apache.org/doc/current/zookeeperAdmin.html#sc_advancedConfiguration) for the full list of supported Java system properties.
@@ -221,7 +219,7 @@ See [Advanced Configuration](https://zookeeper.apache.org/doc/current/zookeeperA
 Another example use case for the `JVMFLAGS` is setting a maximum JWM heap size of 1 GB:
 
 ```console
-$ docker run --name some-zookeeper --restart always -e JVMFLAGS="-Xmx1024m" zookeeper
+$ docker run --name some-zookeeper --restart always -e JVMFLAGS="-Xmx1024m" arm32v7/zookeeper
 ```
 
 ## Replicated mode
@@ -247,7 +245,7 @@ This image is configured with volumes at `/data` and `/datalog` to hold the Zook
 By default, ZooKeeper redirects stdout/stderr outputs to the console. Since 3.8 ZooKeeper is shipped with [LOGBack](https://logback.qos.ch/) as the logging backend. The ZooKeeper default `logback.xml` file resides in the `/conf` directory. To override default logging configuration mount your custom config as a volume:
 
 ```console
-$ docker run --name some-zookeeper --restart always -d -v $(pwd)/logback.xml:/conf/logback.xml zookeeper
+$ docker run --name some-zookeeper --restart always -d -v $(pwd)/logback.xml:/conf/logback.xml arm32v7/zookeeper
 ```
 
 Check [ZooKeeper Logging](https://zookeeper.apache.org/doc/current/zookeeperAdmin.html#sc_logging) for more details.
@@ -257,7 +255,7 @@ Check [ZooKeeper Logging](https://zookeeper.apache.org/doc/current/zookeeperAdmi
 You can redirect to a file located in `/logs` by passing environment variable `ZOO_LOG4J_PROP` as follows:
 
 ```console
-$ docker run --name some-zookeeper --restart always -e ZOO_LOG4J_PROP="INFO,ROLLINGFILE" zookeeper
+$ docker run --name some-zookeeper --restart always -e ZOO_LOG4J_PROP="INFO,ROLLINGFILE" arm32v7/zookeeper
 ```
 
 This will write logs to `/logs/zookeeper.log`. This image is configured with a volume at `/logs` for your convenience.
