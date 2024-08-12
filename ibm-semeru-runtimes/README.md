@@ -28,87 +28,87 @@ WARNING:
 
 ## Simple Tags
 
--	[`open-8u412-b08-jdk-focal`, `open-8-jdk-focal`](https://github.com/ibmruntimes/semeru-containers/blob/85c863fc29210104181c7b8ef9d24f3e52fcc87e/8/jdk/ubuntu/focal/Dockerfile.open.releases.full)
+-	[`open-8u422-b05-jdk-focal`, `open-8-jdk-focal`](https://github.com/ibmruntimes/semeru-containers/blob/4f97d81bae816510dace7edea6a903854e2224d5/8/jdk/ubuntu/focal/Dockerfile.open.releases.full)
 
--	[`open-8u412-b08-jdk-jammy`, `open-8-jdk-jammy`](https://github.com/ibmruntimes/semeru-containers/blob/85c863fc29210104181c7b8ef9d24f3e52fcc87e/8/jdk/ubuntu/jammy/Dockerfile.open.releases.full)
+-	[`open-8u422-b05-jdk-jammy`, `open-8-jdk-jammy`](https://github.com/ibmruntimes/semeru-containers/blob/4f97d81bae816510dace7edea6a903854e2224d5/8/jdk/ubuntu/jammy/Dockerfile.open.releases.full)
 
--	[`open-8u412-b08-jre-focal`, `open-8-jre-focal`](https://github.com/ibmruntimes/semeru-containers/blob/85c863fc29210104181c7b8ef9d24f3e52fcc87e/8/jre/ubuntu/focal/Dockerfile.open.releases.full)
+-	[`open-8u422-b05-jre-focal`, `open-8-jre-focal`](https://github.com/ibmruntimes/semeru-containers/blob/4f97d81bae816510dace7edea6a903854e2224d5/8/jre/ubuntu/focal/Dockerfile.open.releases.full)
 
--	[`open-8u412-b08-jre-jammy`, `open-8-jre-jammy`](https://github.com/ibmruntimes/semeru-containers/blob/85c863fc29210104181c7b8ef9d24f3e52fcc87e/8/jre/ubuntu/jammy/Dockerfile.open.releases.full)
+-	[`open-8u422-b05-jre-jammy`, `open-8-jre-jammy`](https://github.com/ibmruntimes/semeru-containers/blob/4f97d81bae816510dace7edea6a903854e2224d5/8/jre/ubuntu/jammy/Dockerfile.open.releases.full)
 
--	[`open-11.0.23_9-jdk-focal`, `open-11-jdk-focal`](https://github.com/ibmruntimes/semeru-containers/blob/85c863fc29210104181c7b8ef9d24f3e52fcc87e/11/jdk/ubuntu/focal/Dockerfile.open.releases.full)
+-	[`open-11.0.24_8-jdk-focal`, `open-11-jdk-focal`](https://github.com/ibmruntimes/semeru-containers/blob/4f97d81bae816510dace7edea6a903854e2224d5/11/jdk/ubuntu/focal/Dockerfile.open.releases.full)
 
--	[`open-11.0.23_9-jdk-jammy`, `open-11-jdk-jammy`](https://github.com/ibmruntimes/semeru-containers/blob/85c863fc29210104181c7b8ef9d24f3e52fcc87e/11/jdk/ubuntu/jammy/Dockerfile.open.releases.full)
+-	[`open-11.0.24_8-jdk-jammy`, `open-11-jdk-jammy`](https://github.com/ibmruntimes/semeru-containers/blob/4f97d81bae816510dace7edea6a903854e2224d5/11/jdk/ubuntu/jammy/Dockerfile.open.releases.full)
 
--	[`open-11.0.23_9-jre-focal`, `open-11-jre-focal`](https://github.com/ibmruntimes/semeru-containers/blob/85c863fc29210104181c7b8ef9d24f3e52fcc87e/11/jre/ubuntu/focal/Dockerfile.open.releases.full)
+-	[`open-11.0.24_8-jre-focal`, `open-11-jre-focal`](https://github.com/ibmruntimes/semeru-containers/blob/4f97d81bae816510dace7edea6a903854e2224d5/11/jre/ubuntu/focal/Dockerfile.open.releases.full)
 
--	[`open-11.0.23_9-jre-jammy`, `open-11-jre-jammy`](https://github.com/ibmruntimes/semeru-containers/blob/85c863fc29210104181c7b8ef9d24f3e52fcc87e/11/jre/ubuntu/jammy/Dockerfile.open.releases.full)
+-	[`open-11.0.24_8-jre-jammy`, `open-11-jre-jammy`](https://github.com/ibmruntimes/semeru-containers/blob/4f97d81bae816510dace7edea6a903854e2224d5/11/jre/ubuntu/jammy/Dockerfile.open.releases.full)
 
--	[`open-17.0.11_9-jdk-focal`, `open-17-jdk-focal`](https://github.com/ibmruntimes/semeru-containers/blob/85c863fc29210104181c7b8ef9d24f3e52fcc87e/17/jdk/ubuntu/focal/Dockerfile.open.releases.full)
+-	[`open-17.0.12_7-jdk-focal`, `open-17-jdk-focal`](https://github.com/ibmruntimes/semeru-containers/blob/4f97d81bae816510dace7edea6a903854e2224d5/17/jdk/ubuntu/focal/Dockerfile.open.releases.full)
 
--	[`open-17.0.11_9-jdk-jammy`, `open-17-jdk-jammy`](https://github.com/ibmruntimes/semeru-containers/blob/85c863fc29210104181c7b8ef9d24f3e52fcc87e/17/jdk/ubuntu/jammy/Dockerfile.open.releases.full)
+-	[`open-17.0.12_7-jdk-jammy`, `open-17-jdk-jammy`](https://github.com/ibmruntimes/semeru-containers/blob/4f97d81bae816510dace7edea6a903854e2224d5/17/jdk/ubuntu/jammy/Dockerfile.open.releases.full)
 
--	[`open-17.0.11_9-jre-focal`, `open-17-jre-focal`](https://github.com/ibmruntimes/semeru-containers/blob/85c863fc29210104181c7b8ef9d24f3e52fcc87e/17/jre/ubuntu/focal/Dockerfile.open.releases.full)
+-	[`open-17.0.12_7-jre-focal`, `open-17-jre-focal`](https://github.com/ibmruntimes/semeru-containers/blob/4f97d81bae816510dace7edea6a903854e2224d5/17/jre/ubuntu/focal/Dockerfile.open.releases.full)
 
--	[`open-17.0.11_9-jre-jammy`, `open-17-jre-jammy`](https://github.com/ibmruntimes/semeru-containers/blob/85c863fc29210104181c7b8ef9d24f3e52fcc87e/17/jre/ubuntu/jammy/Dockerfile.open.releases.full)
+-	[`open-17.0.12_7-jre-jammy`, `open-17-jre-jammy`](https://github.com/ibmruntimes/semeru-containers/blob/4f97d81bae816510dace7edea6a903854e2224d5/17/jre/ubuntu/jammy/Dockerfile.open.releases.full)
 
--	[`open-21.0.3_9-jdk-focal`, `open-21-jdk-focal`](https://github.com/ibmruntimes/semeru-containers/blob/85c863fc29210104181c7b8ef9d24f3e52fcc87e/21/jdk/ubuntu/focal/Dockerfile.open.releases.full)
+-	[`open-21.0.4_7-jdk-focal`, `open-21-jdk-focal`](https://github.com/ibmruntimes/semeru-containers/blob/4f97d81bae816510dace7edea6a903854e2224d5/21/jdk/ubuntu/focal/Dockerfile.open.releases.full)
 
--	[`open-21.0.3_9-jdk-jammy`, `open-21-jdk-jammy`](https://github.com/ibmruntimes/semeru-containers/blob/85c863fc29210104181c7b8ef9d24f3e52fcc87e/21/jdk/ubuntu/jammy/Dockerfile.open.releases.full)
+-	[`open-21.0.4_7-jdk-jammy`, `open-21-jdk-jammy`](https://github.com/ibmruntimes/semeru-containers/blob/4f97d81bae816510dace7edea6a903854e2224d5/21/jdk/ubuntu/jammy/Dockerfile.open.releases.full)
 
--	[`open-21.0.3_9-jre-focal`, `open-21-jre-focal`](https://github.com/ibmruntimes/semeru-containers/blob/85c863fc29210104181c7b8ef9d24f3e52fcc87e/21/jre/ubuntu/focal/Dockerfile.open.releases.full)
+-	[`open-21.0.4_7-jre-focal`, `open-21-jre-focal`](https://github.com/ibmruntimes/semeru-containers/blob/4f97d81bae816510dace7edea6a903854e2224d5/21/jre/ubuntu/focal/Dockerfile.open.releases.full)
 
--	[`open-21.0.3_9-jre-jammy`, `open-21-jre-jammy`](https://github.com/ibmruntimes/semeru-containers/blob/85c863fc29210104181c7b8ef9d24f3e52fcc87e/21/jre/ubuntu/jammy/Dockerfile.open.releases.full)
+-	[`open-21.0.4_7-jre-jammy`, `open-21-jre-jammy`](https://github.com/ibmruntimes/semeru-containers/blob/4f97d81bae816510dace7edea6a903854e2224d5/21/jre/ubuntu/jammy/Dockerfile.open.releases.full)
 
--	[`open-22.0.1_8-jdk-focal`, `open-22-jdk-focal`](https://github.com/ibmruntimes/semeru-containers/blob/85c863fc29210104181c7b8ef9d24f3e52fcc87e/22/jdk/ubuntu/focal/Dockerfile.open.releases.full)
+-	[`open-22.0.2_9-jdk-focal`, `open-22-jdk-focal`](https://github.com/ibmruntimes/semeru-containers/blob/4f97d81bae816510dace7edea6a903854e2224d5/22/jdk/ubuntu/focal/Dockerfile.open.releases.full)
 
--	[`open-22.0.1_8-jdk-jammy`, `open-22-jdk-jammy`](https://github.com/ibmruntimes/semeru-containers/blob/85c863fc29210104181c7b8ef9d24f3e52fcc87e/22/jdk/ubuntu/jammy/Dockerfile.open.releases.full)
+-	[`open-22.0.2_9-jdk-jammy`, `open-22-jdk-jammy`](https://github.com/ibmruntimes/semeru-containers/blob/4f97d81bae816510dace7edea6a903854e2224d5/22/jdk/ubuntu/jammy/Dockerfile.open.releases.full)
 
--	[`open-22.0.1_8-jre-focal`, `open-22-jre-focal`](https://github.com/ibmruntimes/semeru-containers/blob/85c863fc29210104181c7b8ef9d24f3e52fcc87e/22/jre/ubuntu/focal/Dockerfile.open.releases.full)
+-	[`open-22.0.2_9-jre-focal`, `open-22-jre-focal`](https://github.com/ibmruntimes/semeru-containers/blob/4f97d81bae816510dace7edea6a903854e2224d5/22/jre/ubuntu/focal/Dockerfile.open.releases.full)
 
--	[`open-22.0.1_8-jre-jammy`, `open-22-jre-jammy`](https://github.com/ibmruntimes/semeru-containers/blob/85c863fc29210104181c7b8ef9d24f3e52fcc87e/22/jre/ubuntu/jammy/Dockerfile.open.releases.full)
+-	[`open-22.0.2_9-jre-jammy`, `open-22-jre-jammy`](https://github.com/ibmruntimes/semeru-containers/blob/4f97d81bae816510dace7edea6a903854e2224d5/22/jre/ubuntu/jammy/Dockerfile.open.releases.full)
 
 ## Shared Tags
 
--	`open-8u412-b08-jdk`, `open-8-jdk`:
+-	`open-8u422-b05-jdk`, `open-8-jdk`:
 
-	-	[`open-8u412-b08-jdk-jammy`](https://github.com/ibmruntimes/semeru-containers/blob/85c863fc29210104181c7b8ef9d24f3e52fcc87e/8/jdk/ubuntu/jammy/Dockerfile.open.releases.full)
+	-	[`open-8u422-b05-jdk-jammy`](https://github.com/ibmruntimes/semeru-containers/blob/4f97d81bae816510dace7edea6a903854e2224d5/8/jdk/ubuntu/jammy/Dockerfile.open.releases.full)
 
--	`open-8u412-b08-jre`, `open-8-jre`:
+-	`open-8u422-b05-jre`, `open-8-jre`:
 
-	-	[`open-8u412-b08-jre-jammy`](https://github.com/ibmruntimes/semeru-containers/blob/85c863fc29210104181c7b8ef9d24f3e52fcc87e/8/jre/ubuntu/jammy/Dockerfile.open.releases.full)
+	-	[`open-8u422-b05-jre-jammy`](https://github.com/ibmruntimes/semeru-containers/blob/4f97d81bae816510dace7edea6a903854e2224d5/8/jre/ubuntu/jammy/Dockerfile.open.releases.full)
 
--	`open-11.0.23_9-jdk`, `open-11-jdk`:
+-	`open-11.0.24_8-jdk`, `open-11-jdk`:
 
-	-	[`open-11.0.23_9-jdk-jammy`](https://github.com/ibmruntimes/semeru-containers/blob/85c863fc29210104181c7b8ef9d24f3e52fcc87e/11/jdk/ubuntu/jammy/Dockerfile.open.releases.full)
+	-	[`open-11.0.24_8-jdk-jammy`](https://github.com/ibmruntimes/semeru-containers/blob/4f97d81bae816510dace7edea6a903854e2224d5/11/jdk/ubuntu/jammy/Dockerfile.open.releases.full)
 
--	`open-11.0.23_9-jre`, `open-11-jre`:
+-	`open-11.0.24_8-jre`, `open-11-jre`:
 
-	-	[`open-11.0.23_9-jre-jammy`](https://github.com/ibmruntimes/semeru-containers/blob/85c863fc29210104181c7b8ef9d24f3e52fcc87e/11/jre/ubuntu/jammy/Dockerfile.open.releases.full)
+	-	[`open-11.0.24_8-jre-jammy`](https://github.com/ibmruntimes/semeru-containers/blob/4f97d81bae816510dace7edea6a903854e2224d5/11/jre/ubuntu/jammy/Dockerfile.open.releases.full)
 
--	`open-17.0.11_9-jdk`, `open-17-jdk`:
+-	`open-17.0.12_7-jdk`, `open-17-jdk`:
 
-	-	[`open-17.0.11_9-jdk-jammy`](https://github.com/ibmruntimes/semeru-containers/blob/85c863fc29210104181c7b8ef9d24f3e52fcc87e/17/jdk/ubuntu/jammy/Dockerfile.open.releases.full)
+	-	[`open-17.0.12_7-jdk-jammy`](https://github.com/ibmruntimes/semeru-containers/blob/4f97d81bae816510dace7edea6a903854e2224d5/17/jdk/ubuntu/jammy/Dockerfile.open.releases.full)
 
--	`open-17.0.11_9-jre`, `open-17-jre`:
+-	`open-17.0.12_7-jre`, `open-17-jre`:
 
-	-	[`open-17.0.11_9-jre-jammy`](https://github.com/ibmruntimes/semeru-containers/blob/85c863fc29210104181c7b8ef9d24f3e52fcc87e/17/jre/ubuntu/jammy/Dockerfile.open.releases.full)
+	-	[`open-17.0.12_7-jre-jammy`](https://github.com/ibmruntimes/semeru-containers/blob/4f97d81bae816510dace7edea6a903854e2224d5/17/jre/ubuntu/jammy/Dockerfile.open.releases.full)
 
--	`open-21.0.3_9-jdk`, `open-21-jdk`:
+-	`open-21.0.4_7-jdk`, `open-21-jdk`:
 
-	-	[`open-21.0.3_9-jdk-jammy`](https://github.com/ibmruntimes/semeru-containers/blob/85c863fc29210104181c7b8ef9d24f3e52fcc87e/21/jdk/ubuntu/jammy/Dockerfile.open.releases.full)
+	-	[`open-21.0.4_7-jdk-jammy`](https://github.com/ibmruntimes/semeru-containers/blob/4f97d81bae816510dace7edea6a903854e2224d5/21/jdk/ubuntu/jammy/Dockerfile.open.releases.full)
 
--	`open-21.0.3_9-jre`, `open-21-jre`:
+-	`open-21.0.4_7-jre`, `open-21-jre`:
 
-	-	[`open-21.0.3_9-jre-jammy`](https://github.com/ibmruntimes/semeru-containers/blob/85c863fc29210104181c7b8ef9d24f3e52fcc87e/21/jre/ubuntu/jammy/Dockerfile.open.releases.full)
+	-	[`open-21.0.4_7-jre-jammy`](https://github.com/ibmruntimes/semeru-containers/blob/4f97d81bae816510dace7edea6a903854e2224d5/21/jre/ubuntu/jammy/Dockerfile.open.releases.full)
 
--	`open-22.0.1_8-jdk`, `open-22-jdk`:
+-	`open-22.0.2_9-jdk`, `open-22-jdk`:
 
-	-	[`open-22.0.1_8-jdk-jammy`](https://github.com/ibmruntimes/semeru-containers/blob/85c863fc29210104181c7b8ef9d24f3e52fcc87e/22/jdk/ubuntu/jammy/Dockerfile.open.releases.full)
+	-	[`open-22.0.2_9-jdk-jammy`](https://github.com/ibmruntimes/semeru-containers/blob/4f97d81bae816510dace7edea6a903854e2224d5/22/jdk/ubuntu/jammy/Dockerfile.open.releases.full)
 
--	`open-22.0.1_8-jre`, `open-22-jre`:
+-	`open-22.0.2_9-jre`, `open-22-jre`:
 
-	-	[`open-22.0.1_8-jre-jammy`](https://github.com/ibmruntimes/semeru-containers/blob/85c863fc29210104181c7b8ef9d24f3e52fcc87e/22/jre/ubuntu/jammy/Dockerfile.open.releases.full)
+	-	[`open-22.0.2_9-jre-jammy`](https://github.com/ibmruntimes/semeru-containers/blob/4f97d81bae816510dace7edea6a903854e2224d5/22/jre/ubuntu/jammy/Dockerfile.open.releases.full)
 
 # Quick reference (cont.)
 

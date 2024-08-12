@@ -36,10 +36,6 @@ WARNING:
 
 -	[`noble-non-free`, `nd24.04-non-free`](https://github.com/neurodebian/dockerfiles/blob/a0af1d460705d7efc9d6de9483f1ce4aa48ad152/dockerfiles/noble-non-free/Dockerfile)
 
--	[`buster`, `nd100`](https://github.com/neurodebian/dockerfiles/blob/a0af1d460705d7efc9d6de9483f1ce4aa48ad152/dockerfiles/buster/Dockerfile)
-
--	[`buster-non-free`, `nd100-non-free`](https://github.com/neurodebian/dockerfiles/blob/a0af1d460705d7efc9d6de9483f1ce4aa48ad152/dockerfiles/buster-non-free/Dockerfile)
-
 -	[`bullseye`, `nd110`](https://github.com/neurodebian/dockerfiles/blob/a0af1d460705d7efc9d6de9483f1ce4aa48ad152/dockerfiles/bullseye/Dockerfile)
 
 -	[`bullseye-non-free`, `nd110-non-free`](https://github.com/neurodebian/dockerfiles/blob/a0af1d460705d7efc9d6de9483f1ce4aa48ad152/dockerfiles/bullseye-non-free/Dockerfile)

@@ -28,10 +28,6 @@ WARNING:
 
 -	[`3.2.3`, `3.2`](https://github.com/apache/couchdb-docker/blob/58910ed097489dc588b2a87592406f8faa1bdadf/3.2.3/Dockerfile)
 
--	[`3.1.2`, `3.1`](https://github.com/apache/couchdb-docker/blob/58910ed097489dc588b2a87592406f8faa1bdadf/3.1.2/Dockerfile)
-
--	[`2.3.1`, `2.3`, `2`](https://github.com/apache/couchdb-docker/blob/58910ed097489dc588b2a87592406f8faa1bdadf/2.3.1/Dockerfile)
-
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
