@@ -24,13 +24,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`20.04`, `focal-20240530`, `focal`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-focal-amd64-20240530-f351639c&id=f351639c499dcde9b2d9e3aeb2b0344c4a01fc1e)
+-	[`20.04`, `focal-20240530`, `focal`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-focal-amd64-20240530-9699eddd&id=9699eddd402d702628046e17ab86ccc5ffb51adc)
 
--	[`22.04`, `jammy-20240627.1`, `jammy`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-amd64-20240627.1-0d60927a&id=0d60927a24b045adcfbdb9a80b7db3bf6bd9fd9b)
+-	[`22.04`, `jammy-20240808`, `jammy`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-amd64-20240808-4cf8c608&id=4cf8c608d2549bbd10cdce612c814dc60899ebde)
 
--	[`24.04`, `noble-20240605`, `noble`, `latest`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-amd64-20240605-baf9888c&id=baf9888c79d71a0ae98d4ef87c838ca3c91f2245)
+-	[`24.04`, `noble-20240801`, `noble`, `latest`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-amd64-20240801-b0b2956a&id=b0b2956a333896413ad26c7ad96520ffe4d0ea89)
 
--	[`24.10`, `oracular-20240617`, `oracular`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-oracular-amd64-20240617-43acaa26&id=43acaa26848f20fe7885f00637b5342967c8ae23)
+-	[`24.10`, `oracular-20240811.1`, `oracular`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-oracular-amd64-20240811.1-bee83f33&id=bee83f33ff87f39261ce0ef49970c4313c2772f6)
 
 # Quick reference (cont.)
 
