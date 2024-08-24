@@ -35,14 +35,18 @@ $ curl http://localhost/
 hello world
 ```
 
-To override the default [`Caddyfile`](https://github.com/caddyserver/dist/blob/master/config/Caddyfile), you can mount a new one at `/etc/caddy/Caddyfile`:
+To override the default [`Caddyfile`](https://github.com/caddyserver/dist/blob/master/config/Caddyfile), you can create one in the subfolder `caddyfile` at `$PWD/caddyfile/Caddyfile` and mount this folder at `/etc/caddy`:
 
 ```console
 $ docker run -d -p 80:80 \
-    -v $PWD/Caddyfile:/etc/caddy/Caddyfile \
+    -v $PWD/caddyfile:/etc/caddy \
     -v caddy_data:/data \
     %%IMAGE%%
 ```
+
+#### ⚠️ Do not mount the Caddyfile directly at `/etc/caddy/Caddyfile`
+
+This effectively disables Caddy's graceful reload feature in many cases depending on the way you apply changes to the file as discussed in [this issue](https://github.com/caddyserver/caddy/issues/5735#issuecomment-1675896585).
 
 ### Automatic TLS with the Caddy image
 
@@ -119,11 +123,9 @@ See https://github.com/quic-go/quic-go/wiki/UDP-Buffer-Sizes for more details.
 
 ### Docker Compose example
 
-If you prefer to use `docker-compose` to run your stack, here's a sample service definition.
+If you prefer to use `docker-compose` to run your stack, here's a sample service definition which goes into your `compose.yaml`. 
 
 ```yaml
-version: "3.7"
-
 services:
   caddy:
     image: %%IMAGE%%:<version>
@@ -135,7 +137,7 @@ services:
       - "443:443"
       - "443:443/udp"
     volumes:
-      - $PWD/Caddyfile:/etc/caddy/Caddyfile
+      - $PWD/caddyfile:/etc/caddy
       - $PWD/site:/srv
       - caddy_data:/data
       - caddy_config:/config
@@ -147,3 +149,5 @@ volumes:
 ```
 
 Defining the data volume as [`external`](https://docs.docker.com/compose/compose-file/compose-file-v3/#external) makes sure `docker-compose down` does not delete the volume. You may need to create it manually using `docker volume create [project-name]_caddy_data`.
+
+Graceful reloads can then be conducted via `docker compose exec --workdir /etc/caddy caddy caddy reload`.
