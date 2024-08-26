@@ -24,15 +24,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.9.2`, `6.9`, `6`, `latest`](https://github.com/RocketChat/Docker.Official.Image/blob/fa46a05612513b0965161db5d037246ed40ae114/6.9/Dockerfile)
+-	[`6.9.5`, `6.9`](https://github.com/RocketChat/Docker.Official.Image/blob/9f02df5b6a52c60a039de4b706e653b424471962/6.9/Dockerfile)
 
--	[`6.8.2`, `6.8`](https://github.com/RocketChat/Docker.Official.Image/blob/fa46a05612513b0965161db5d037246ed40ae114/6.8/Dockerfile)
+-	[`6.8.5`, `6.8`](https://github.com/RocketChat/Docker.Official.Image/blob/9f02df5b6a52c60a039de4b706e653b424471962/6.8/Dockerfile)
 
--	[`6.7.5`, `6.7`](https://github.com/RocketChat/Docker.Official.Image/blob/fa46a05612513b0965161db5d037246ed40ae114/6.7/Dockerfile)
+-	[`6.7.7`, `6.7`](https://github.com/RocketChat/Docker.Official.Image/blob/9f02df5b6a52c60a039de4b706e653b424471962/6.7/Dockerfile)
 
--	[`6.6.10`, `6.6`](https://github.com/RocketChat/Docker.Official.Image/blob/fa46a05612513b0965161db5d037246ed40ae114/6.6/Dockerfile)
+-	[`6.11.1`, `6.11`, `6`, `latest`](https://github.com/RocketChat/Docker.Official.Image/blob/9f02df5b6a52c60a039de4b706e653b424471962/6.11/Dockerfile)
 
--	[`6.5.8`, `6.5`](https://github.com/RocketChat/Docker.Official.Image/blob/fa46a05612513b0965161db5d037246ed40ae114/6.5/Dockerfile)
+-	[`6.10.4`, `6.10`](https://github.com/RocketChat/Docker.Official.Image/blob/9f02df5b6a52c60a039de4b706e653b424471962/6.10/Dockerfile)
 
 # Quick reference (cont.)
 
