@@ -26,7 +26,7 @@ WARNING:
 
 -	[`3.11`, `3.11.10.1`](https://github.com/arangodb/arangodb-docker/blob/ce25dfe5cb8cc8658b031136b262bd8d2be7e679/alpine/3.11.10.1/Dockerfile)
 
--	[`3.12`, `3.12.1`, `latest`](https://github.com/arangodb/arangodb-docker/blob/eb4312a4f2e7974dc798d4e6585281b24b283e06/alpine/3.12.1/Dockerfile)
+-	[`3.12`, `3.12.2`, `latest`](https://github.com/arangodb/arangodb-docker/blob/ba430694881c65dc95aaf47e0250e501ead0f5b5/alpine/3.12.2/Dockerfile)
 
 # Quick reference (cont.)
 
