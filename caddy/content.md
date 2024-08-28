@@ -123,7 +123,7 @@ See https://github.com/quic-go/quic-go/wiki/UDP-Buffer-Sizes for more details.
 
 ### Docker Compose example
 
-If you prefer to use `docker compose` to run your stack, here's a sample service definition which goes in a file named `compose.yaml`. 
+If you prefer to use `docker compose` to run your stack, here's a sample service definition which goes in a file named `compose.yaml`.
 
 ```yaml
 services:
