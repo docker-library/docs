@@ -35,7 +35,7 @@ $ curl http://localhost/
 hello world
 ```
 
-To override the default [`Caddyfile`](https://github.com/caddyserver/dist/blob/master/config/Caddyfile), you can create one in the subfolder `caddyfile` at `$PWD/caddyfile/Caddyfile` and mount this folder at `/etc/caddy`:
+To override the default [`Caddyfile`](https://github.com/caddyserver/dist/blob/master/config/Caddyfile), you can create one in the subfolder `conf` at `$PWD/conf/Caddyfile` and mount this folder at `/etc/caddy`:
 
 ```console
 $ docker run -d -p 80:80 \
