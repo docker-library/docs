@@ -39,7 +39,7 @@ To override the default [`Caddyfile`](https://github.com/caddyserver/dist/blob/m
 
 ```console
 $ docker run -d -p 80:80 \
-    -v $PWD/caddyfile:/etc/caddy \
+    -v $PWD/conf:/etc/caddy \
     -v caddy_data:/data \
     %%IMAGE%%
 ```
