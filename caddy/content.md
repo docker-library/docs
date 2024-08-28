@@ -150,4 +150,4 @@ volumes:
 
 Defining the data volume as [`external`](https://docs.docker.com/compose/compose-file/compose-file-v3/#external) makes sure `docker-compose down` does not delete the volume. You may need to create it manually using `docker volume create [project-name]_caddy_data`.
 
-Graceful reloads can then be conducted via `docker compose exec --workdir /etc/caddy caddy caddy reload`.
+Graceful reloads can then be conducted via `docker compose exec -w /etc/caddy caddy caddy reload`.
