@@ -45,6 +45,8 @@ By default, the server running within the container will listen on port 9000. Yo
 docker container run --name sonarqube-custom -p 9000:9000 sonarqube:10.6-community
 ```
 
+You can then browse to `http://localhost:9000` or `http://host-ip:9000` in your web browser to access the SonarQube web interface.
+
 ### Database
 
 By default, the image will use an embedded H2 database that is not suited for production.
