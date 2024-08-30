@@ -84,7 +84,7 @@ You could then build and try the image with something like:
 
 ```console
 $ docker build --tag=sonarqube-custom .
-$ docker container run -ti sonarqube-custom
+$ docker run -ti sonarqube-custom
 ```
 
 ### Avoid hard termination of SonarQube
