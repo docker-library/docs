@@ -102,14 +102,6 @@ To run a cluster with the Data Center Edition, please refer to Installing SonarQ
 
 ## Configuration
 
-### Port binding
-
-By default, the image will use port 9000
-
-```console
-docker container run --name sonarqube-custom -p 9000:9000 sonarqube:10.6.0-community
-```
-
 ### Database
 
 By default, the image will use an embedded H2 database that is not suited for production.
@@ -139,7 +131,7 @@ For upgrade instructions, see Upgrading from the Docker Image on the [Upgrade th
 In some environments, it may make more sense to prepare a custom image containing your configuration. A `Dockerfile` to achieve this may be as simple as:
 
 ```dockerfile
-FROM sonarqube:10.6.0-community
+FROM sonarqube:8.9-community
 COPY sonar-custom-plugin-1.0.jar /opt/sonarqube/extensions/
 ```
 
