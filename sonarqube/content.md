@@ -42,7 +42,7 @@ To run a cluster with the Data Center Edition, please refer to Installing SonarQ
 By default, the server running within the container will listen on port 9000. You can expose the container port 9000 to the host port 9000 with the `-p 9000:9000` argument to `docker run`, like the command below:
 
 ```console
-docker container run --name sonarqube-custom -p 9000:9000 sonarqube:10.6-community
+docker run --name sonarqube-custom -p 9000:9000 %%IMAGE%%:10.6-community
 ```
 
 You can then browse to `http://localhost:9000` or `http://host-ip:9000` in your web browser to access the SonarQube web interface.
