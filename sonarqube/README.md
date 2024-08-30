@@ -102,6 +102,16 @@ To run a cluster with the Data Center Edition, please refer to Installing SonarQ
 
 ## Configuration
 
+### Port binding
+
+By default, the server running within the container will listen on port 9000. You can expose the container port 9000 to the host port 9000 with the `-p 9000:9000` argument to `docker run`, like the command below:
+
+```console
+docker run --name sonarqube-custom -p 9000:9000 sonarqube:10.6-community
+```
+
+You can then browse to `http://localhost:9000` or `http://host-ip:9000` in your web browser to access the SonarQube web interface.
+
 ### Database
 
 By default, the image will use an embedded H2 database that is not suited for production.
@@ -131,7 +141,7 @@ For upgrade instructions, see Upgrading from the Docker Image on the [Upgrade th
 In some environments, it may make more sense to prepare a custom image containing your configuration. A `Dockerfile` to achieve this may be as simple as:
 
 ```dockerfile
-FROM sonarqube:8.9-community
+FROM sonarqube:10.6-community
 COPY sonar-custom-plugin-1.0.jar /opt/sonarqube/extensions/
 ```
 
