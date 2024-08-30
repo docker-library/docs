@@ -59,9 +59,9 @@ Set up a database by following the "Installing the Database" section of https://
 
 We recommend creating volumes for the following directories:
 
-- `/opt/sonarqube/data`: data files, such as the embedded H2 database and Elasticsearch indexes
-- `/opt/sonarqube/logs`: contains SonarQube logs about access, web process, CE process, Elasticsearch logs
-- `/opt/sonarqube/extensions`: for 3rd party plugins
+-	`/opt/sonarqube/data`: data files, such as the embedded H2 database and Elasticsearch indexes
+-	`/opt/sonarqube/logs`: contains SonarQube logs about access, web process, CE process, Elasticsearch logs
+-	`/opt/sonarqube/extensions`: for 3rd party plugins
 
 > **Warning:** You cannot use the same volumes on multiple instances of SonarQube.
 
