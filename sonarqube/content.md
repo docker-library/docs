@@ -37,6 +37,14 @@ To run a cluster with the Data Center Edition, please refer to Installing SonarQ
 
 ## Configuration
 
+### Port binding
+
+By default, the server running within the container will listen on port 9000. You can expose the container port 9000 to the host port 9000 with the `-p 9000:9000` argument to `docker container run`, like the command below:
+
+```console
+docker container run --name sonarqube-custom -p 9000:9000 sonarqube:10.6-community
+```
+
 ### Database
 
 By default, the image will use an embedded H2 database that is not suited for production.
@@ -49,9 +57,9 @@ Set up a database by following the "Installing the Database" section of https://
 
 We recommend creating volumes for the following directories:
 
--	`/opt/sonarqube/data`: data files, such as the embedded H2 database and Elasticsearch indexes
--	`/opt/sonarqube/logs`: contains SonarQube logs about access, web process, CE process, Elasticsearch logs
--	`/opt/sonarqube/extensions`: for 3rd party plugins
+- `/opt/sonarqube/data`: data files, such as the embedded H2 database and Elasticsearch indexes
+- `/opt/sonarqube/logs`: contains SonarQube logs about access, web process, CE process, Elasticsearch logs
+- `/opt/sonarqube/extensions`: for 3rd party plugins
 
 > **Warning:** You cannot use the same volumes on multiple instances of SonarQube.
 
@@ -66,7 +74,7 @@ For upgrade instructions, see Upgrading from the Docker Image on the [Upgrade th
 In some environments, it may make more sense to prepare a custom image containing your configuration. A `Dockerfile` to achieve this may be as simple as:
 
 ```dockerfile
-FROM sonarqube:8.9-community
+FROM sonarqube:10.6-community
 COPY sonar-custom-plugin-1.0.jar /opt/sonarqube/extensions/
 ```
 
@@ -74,7 +82,7 @@ You could then build and try the image with something like:
 
 ```console
 $ docker build --tag=sonarqube-custom .
-$ docker run -ti sonarqube-custom
+$ docker container run -ti sonarqube-custom
 ```
 
 ### Avoid hard termination of SonarQube
