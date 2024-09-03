@@ -30,11 +30,11 @@ WARNING:
 
 -	[`16-mariadb-tomcat`, `16.7-mariadb-tomcat`, `16.7.0-mariadb-tomcat`, `mariadb-tomcat`, `stable-mariadb-tomcat`, `stable-mariadb`](https://github.com/xwiki-contrib/docker-xwiki/blob/56c490f2e78e9ff0d0c506f5aade04acbaa042ff/16/mariadb-tomcat/Dockerfile)
 
--	[`15`, `15.10`, `15.10.11`, `15-mysql-tomcat`, `15.10-mysql-tomcat`, `15.10.11-mysql-tomcat`, `lts-mysql-tomcat`, `lts-mysql`, `lts`](https://github.com/xwiki-contrib/docker-xwiki/blob/e8e71bdac0660dd1a523c225860722ba05043075/15/mysql-tomcat/Dockerfile)
+-	[`15`, `15.10`, `15.10.12`, `15-mysql-tomcat`, `15.10-mysql-tomcat`, `15.10.12-mysql-tomcat`, `lts-mysql-tomcat`, `lts-mysql`, `lts`](https://github.com/xwiki-contrib/docker-xwiki/blob/2d98566aa86c46a2a47ba7a8ef9cc914a04b83a7/15/mysql-tomcat/Dockerfile)
 
--	[`15-postgres-tomcat`, `15.10-postgres-tomcat`, `15.10.11-postgres-tomcat`, `lts-postgres-tomcat`, `lts-postgres`](https://github.com/xwiki-contrib/docker-xwiki/blob/e8e71bdac0660dd1a523c225860722ba05043075/15/postgres-tomcat/Dockerfile)
+-	[`15-postgres-tomcat`, `15.10-postgres-tomcat`, `15.10.12-postgres-tomcat`, `lts-postgres-tomcat`, `lts-postgres`](https://github.com/xwiki-contrib/docker-xwiki/blob/2d98566aa86c46a2a47ba7a8ef9cc914a04b83a7/15/postgres-tomcat/Dockerfile)
 
--	[`15-mariadb-tomcat`, `15.10-mariadb-tomcat`, `15.10.11-mariadb-tomcat`, `lts-mariadb-tomcat`, `lts-mariadb`](https://github.com/xwiki-contrib/docker-xwiki/blob/e8e71bdac0660dd1a523c225860722ba05043075/15/mariadb-tomcat/Dockerfile)
+-	[`15-mariadb-tomcat`, `15.10-mariadb-tomcat`, `15.10.12-mariadb-tomcat`, `lts-mariadb-tomcat`, `lts-mariadb`](https://github.com/xwiki-contrib/docker-xwiki/blob/2d98566aa86c46a2a47ba7a8ef9cc914a04b83a7/15/mariadb-tomcat/Dockerfile)
 
 -	[`16.4`, `16.4.2`, `16.4-mysql-tomcat`, `16.4.2-mysql-tomcat`](https://github.com/xwiki-contrib/docker-xwiki/blob/0836ecce56816ac78a09921fadd1d8874725355a/16.4/mysql-tomcat/Dockerfile)
 
