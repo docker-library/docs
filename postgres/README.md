@@ -24,13 +24,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`17beta3`, `17beta3-bookworm`](https://github.com/docker-library/postgres/blob/805329e7a64fad212a5d4b07abd11238a9beab75/17/bookworm/Dockerfile)
+-	[`17rc1`, `17rc1-bookworm`](https://github.com/docker-library/postgres/blob/eaa1c35769621a6bb1e499073a5812ba478c7688/17/bookworm/Dockerfile)
 
--	[`17beta3-bullseye`](https://github.com/docker-library/postgres/blob/805329e7a64fad212a5d4b07abd11238a9beab75/17/bullseye/Dockerfile)
+-	[`17rc1-bullseye`](https://github.com/docker-library/postgres/blob/eaa1c35769621a6bb1e499073a5812ba478c7688/17/bullseye/Dockerfile)
 
--	[`17beta3-alpine3.20`, `17beta3-alpine`](https://github.com/docker-library/postgres/blob/805329e7a64fad212a5d4b07abd11238a9beab75/17/alpine3.20/Dockerfile)
+-	[`17rc1-alpine3.20`, `17rc1-alpine`](https://github.com/docker-library/postgres/blob/eaa1c35769621a6bb1e499073a5812ba478c7688/17/alpine3.20/Dockerfile)
 
--	[`17beta3-alpine3.19`](https://github.com/docker-library/postgres/blob/805329e7a64fad212a5d4b07abd11238a9beab75/17/alpine3.19/Dockerfile)
+-	[`17rc1-alpine3.19`](https://github.com/docker-library/postgres/blob/eaa1c35769621a6bb1e499073a5812ba478c7688/17/alpine3.19/Dockerfile)
 
 -	[`16.4`, `16`, `latest`, `16.4-bookworm`, `16-bookworm`, `bookworm`](https://github.com/docker-library/postgres/blob/3a94d965ecbe08f4b1b255d3ed9ccae671a7a984/16/bookworm/Dockerfile)
 
