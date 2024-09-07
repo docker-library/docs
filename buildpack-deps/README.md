@@ -66,6 +66,12 @@ WARNING:
 
 -	[`noble`, `24.04`](https://github.com/docker-library/buildpack-deps/blob/60dc5f9555c521de086b2f5770514faf69ee2cc4/ubuntu/noble/Dockerfile)
 
+-	[`oracular-curl`, `24.10-curl`](https://github.com/docker-library/buildpack-deps/blob/f24f02bc0fda57d7f0e30b205df4a38114712b0a/ubuntu/oracular/curl/Dockerfile)
+
+-	[`oracular-scm`, `24.10-scm`](https://github.com/docker-library/buildpack-deps/blob/f24f02bc0fda57d7f0e30b205df4a38114712b0a/ubuntu/oracular/scm/Dockerfile)
+
+-	[`oracular`, `24.10`](https://github.com/docker-library/buildpack-deps/blob/f24f02bc0fda57d7f0e30b205df4a38114712b0a/ubuntu/oracular/Dockerfile)
+
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
