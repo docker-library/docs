@@ -26,7 +26,7 @@ WARNING:
 
 -	[`5.8.2`, `5.8`, `latest`](https://github.com/crate/docker-crate/blob/7d88cae1f65dfff807363a35adcb470a978e14c8/Dockerfile)
 
--	[`5.7.4`, `5.7`](https://github.com/crate/docker-crate/blob/d8b45726e982beff1fc63aebcd5f4bbc7312dbc4/Dockerfile)
+-	[`5.7.5`, `5.7`](https://github.com/crate/docker-crate/blob/bb8f6698814be923367c60c2b6a31a172af07418/Dockerfile)
 
 # Quick reference (cont.)
 
