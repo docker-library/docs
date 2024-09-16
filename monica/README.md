@@ -25,10 +25,15 @@ WARNING:
 # Supported tags and respective `Dockerfile` links
 
 -	[`4.1.2-apache`, `4.1-apache`, `4-apache`, `apache`, `4.1.2`, `4.1`, `4`, `latest`](https://github.com/monicahq/docker/blob/92af56dec9f147c16916ed4537dd4263108dcbf3/4/apache/Dockerfile)
+
 -	[`4.1.2-fpm`, `4.1-fpm`, `4-fpm`, `fpm`](https://github.com/monicahq/docker/blob/92af56dec9f147c16916ed4537dd4263108dcbf3/4/fpm/Dockerfile)
+
 -	[`4.1.2-fpm-alpine`, `4.1-fpm-alpine`, `4-fpm-alpine`, `fpm-alpine`](https://github.com/monicahq/docker/blob/92af56dec9f147c16916ed4537dd4263108dcbf3/4/fpm-alpine/Dockerfile)
+
 -	[`5.0.0-beta.4-apache`, `5.0.0-beta-apache`, `5.0-apache`](https://github.com/monicahq/docker/blob/4ad283502e6b5411bacc3dcf3b55ff5dd57f29ee/5/apache/Dockerfile)
+
 -	[`5.0.0-beta.4-fpm`, `5.0.0-beta-fpm`, `5.0-fpm`](https://github.com/monicahq/docker/blob/4ad283502e6b5411bacc3dcf3b55ff5dd57f29ee/5/fpm/Dockerfile)
+
 -	[`5.0.0-beta.4-fpm-alpine`, `5.0.0-beta-fpm-alpine`, `5.0-fpm-alpine`](https://github.com/monicahq/docker/blob/4ad283502e6b5411bacc3dcf3b55ff5dd57f29ee/5/fpm-alpine/Dockerfile)
 
 # Quick reference (cont.)

@@ -13,7 +13,7 @@ if [ -z "${BASHBREW_LIBRARY:-}" ]; then
 	repo="https://github.com/docker-library/official-images/raw/master/library/$repo"
 fi
 
-if [ -n "$ARCH_SPECIFIC_DOCS" ] && archTags="$(bashbrew cat --format '{{ range .Entries }}{{ if .HasArchitecture arch }}{{ .Tags | first }}{{ "\n" }}{{ end }}{{ end }}' "$repo")" && [ -z "$archTags" ]; then
+if [ -n "$ARCH_SPECIFIC_DOCS" ] && archTags="$(bashbrew list --uniq --arch-filter "$repo")" && [ -z "$archTags" ]; then
 	echo "**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE \`$BASHBREW_ARCH\` ARCHITECTURE"
 	exit
 fi

@@ -24,8 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.82.2`, `5.82`, `5`, `latest`](https://github.com/docker-library/ghost/blob/ef2cb4a7dbf11d48534ee74d9f15446436af502c/5/debian/Dockerfile)
--	[`5.82.2-alpine`, `5.82-alpine`, `5-alpine`, `alpine`](https://github.com/docker-library/ghost/blob/ef2cb4a7dbf11d48534ee74d9f15446436af502c/5/alpine/Dockerfile)
+-	[`5.94.1`, `5.94`, `5`, `latest`](https://github.com/docker-library/ghost/blob/007b84f76189f8eaa0b4ea57b74b281da6f5578e/5/debian/Dockerfile)
+
+-	[`5.94.1-alpine`, `5.94-alpine`, `5-alpine`, `alpine`](https://github.com/docker-library/ghost/blob/007b84f76189f8eaa0b4ea57b74b281da6f5578e/5/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -48,11 +49,11 @@ WARNING:
 
 # Ghost
 
-Ghost is a free and open source blogging platform written in JavaScript and distributed under the MIT License, designed to simplify the process of online publishing for individual bloggers as well as online publications.
+Ghost is an independent platform for publishing online by web and email newsletter. It has user signups, gated access and subscription payments built-in (with Stripe) to allow you to build a direct relationship with your audience. It's fast, user-friendly, and runs on Node.js & MySQL8.
 
-> [wikipedia.org/wiki/Ghost_(blogging_platform)](http://en.wikipedia.org/wiki/Ghost_%28blogging_platform%29)
+> [Ghost.org)](https://ghost.org)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/c5b6d94dc8f0557925ab37ca43141c0efc5cc363/ghost/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/c88522f95bebcab2322f3020f2f735210286939b/ghost/logo.png)
 
 # How to use this image
 

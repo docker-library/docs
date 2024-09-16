@@ -24,14 +24,17 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1-buster`, `1.78-buster`, `1.78.0-buster`, `buster`](https://github.com/rust-lang/docker-rust/blob/cc31986e1dfe94671c639231ecf0503942c121d9/1.78.0/buster/Dockerfile)
--	[`1-slim-buster`, `1.78-slim-buster`, `1.78.0-slim-buster`, `slim-buster`](https://github.com/rust-lang/docker-rust/blob/cc31986e1dfe94671c639231ecf0503942c121d9/1.78.0/buster/slim/Dockerfile)
--	[`1-bullseye`, `1.78-bullseye`, `1.78.0-bullseye`, `bullseye`](https://github.com/rust-lang/docker-rust/blob/cc31986e1dfe94671c639231ecf0503942c121d9/1.78.0/bullseye/Dockerfile)
--	[`1-slim-bullseye`, `1.78-slim-bullseye`, `1.78.0-slim-bullseye`, `slim-bullseye`](https://github.com/rust-lang/docker-rust/blob/cc31986e1dfe94671c639231ecf0503942c121d9/1.78.0/bullseye/slim/Dockerfile)
--	[`1-bookworm`, `1.78-bookworm`, `1.78.0-bookworm`, `bookworm`, `1`, `1.78`, `1.78.0`, `latest`](https://github.com/rust-lang/docker-rust/blob/cc31986e1dfe94671c639231ecf0503942c121d9/1.78.0/bookworm/Dockerfile)
--	[`1-slim-bookworm`, `1.78-slim-bookworm`, `1.78.0-slim-bookworm`, `slim-bookworm`, `1-slim`, `1.78-slim`, `1.78.0-slim`, `slim`](https://github.com/rust-lang/docker-rust/blob/cc31986e1dfe94671c639231ecf0503942c121d9/1.78.0/bookworm/slim/Dockerfile)
--	[`1-alpine3.18`, `1.78-alpine3.18`, `1.78.0-alpine3.18`, `alpine3.18`](https://github.com/rust-lang/docker-rust/blob/cc31986e1dfe94671c639231ecf0503942c121d9/1.78.0/alpine3.18/Dockerfile)
--	[`1-alpine3.19`, `1.78-alpine3.19`, `1.78.0-alpine3.19`, `alpine3.19`, `1-alpine`, `1.78-alpine`, `1.78.0-alpine`, `alpine`](https://github.com/rust-lang/docker-rust/blob/cc31986e1dfe94671c639231ecf0503942c121d9/1.78.0/alpine3.19/Dockerfile)
+-	[`1-bullseye`, `1.81-bullseye`, `1.81.0-bullseye`, `bullseye`](https://github.com/rust-lang/docker-rust/blob/a1d3d373229185bf5d1ae5d31db0581e2d351182/1.81.0/bullseye/Dockerfile)
+
+-	[`1-slim-bullseye`, `1.81-slim-bullseye`, `1.81.0-slim-bullseye`, `slim-bullseye`](https://github.com/rust-lang/docker-rust/blob/a1d3d373229185bf5d1ae5d31db0581e2d351182/1.81.0/bullseye/slim/Dockerfile)
+
+-	[`1-bookworm`, `1.81-bookworm`, `1.81.0-bookworm`, `bookworm`, `1`, `1.81`, `1.81.0`, `latest`](https://github.com/rust-lang/docker-rust/blob/a1d3d373229185bf5d1ae5d31db0581e2d351182/1.81.0/bookworm/Dockerfile)
+
+-	[`1-slim-bookworm`, `1.81-slim-bookworm`, `1.81.0-slim-bookworm`, `slim-bookworm`, `1-slim`, `1.81-slim`, `1.81.0-slim`, `slim`](https://github.com/rust-lang/docker-rust/blob/a1d3d373229185bf5d1ae5d31db0581e2d351182/1.81.0/bookworm/slim/Dockerfile)
+
+-	[`1-alpine3.19`, `1.81-alpine3.19`, `1.81.0-alpine3.19`, `alpine3.19`](https://github.com/rust-lang/docker-rust/blob/a1d3d373229185bf5d1ae5d31db0581e2d351182/1.81.0/alpine3.19/Dockerfile)
+
+-	[`1-alpine3.20`, `1.81-alpine3.20`, `1.81.0-alpine3.20`, `alpine3.20`, `1-alpine`, `1.81-alpine`, `1.81.0-alpine`, `alpine`](https://github.com/rust-lang/docker-rust/blob/a1d3d373229185bf5d1ae5d31db0581e2d351182/1.81.0/alpine3.20/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -122,7 +125,7 @@ The `rust` images come in many flavors, each designed for a specific use case.
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like bookworm, bullseye, or buster in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+Some of these tags may have names like bookworm or bullseye in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 This tag is based off of [`buildpack-deps`](https://hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of Docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
 

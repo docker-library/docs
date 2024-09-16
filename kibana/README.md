@@ -24,8 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.13.4`](https://github.com/elastic/dockerfiles/blob/15cf539642c8466777c84a3dd969e9678f31605c/kibana/Dockerfile)
--	[`7.17.21`](https://github.com/elastic/dockerfiles/blob/948af89c718b515fa24fa06f6a6890ed32e3b120/kibana/Dockerfile)
+-	[`8.15.1`](https://github.com/elastic/dockerfiles/blob/e9516879864a587baada781c31012c0430fcc1bf/kibana/Dockerfile)
+
+-	[`7.17.24`](https://github.com/elastic/dockerfiles/blob/5e07485ccc161d0661f8a04462b6cc6f565e2573/kibana/Dockerfile)
 
 # Quick reference (cont.)
 

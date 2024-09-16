@@ -24,10 +24,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`20.04`, `focal-20240427`, `focal`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-focal-amd64-20240427-c1db7ea8&id=c1db7ea8ab458ee6b6790c818608ec10c66844c2)
--	[`22.04`, `jammy-20240427`, `jammy`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-amd64-20240427-56a11b55&id=56a11b5565de124e1c92cf8d27c79aedd0974922)
--	[`23.10`, `mantic-20240427`, `mantic`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-mantic-amd64-20240427-65be8b79&id=65be8b797a138c7e35a2d97d22f3ffa51153c5af)
--	[`24.04`, `noble-20240429`, `noble`, `latest`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-amd64-20240429-0b1b11a0&id=0b1b11a0895c374406172562ef16db8047108b70)
+-	[`20.04`, `focal-20240530`, `focal`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-focal-amd64-20240530-9699eddd&id=9699eddd402d702628046e17ab86ccc5ffb51adc)
+
+-	[`22.04`, `jammy-20240808`, `jammy`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-amd64-20240808-4cf8c608&id=4cf8c608d2549bbd10cdce612c814dc60899ebde)
+
+-	[`24.04`, `noble-20240801`, `noble`, `latest`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-amd64-20240801-b0b2956a&id=b0b2956a333896413ad26c7ad96520ffe4d0ea89)
+
+-	[`24.10`, `oracular-20240811.1`, `oracular`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-oracular-amd64-20240811.1-bee83f33&id=bee83f33ff87f39261ce0ef49970c4313c2772f6)
 
 # Quick reference (cont.)
 
@@ -35,7 +38,7 @@ WARNING:
 	[the cloud-images bug tracker](https://bugs.launchpad.net/cloud-images) (include the `docker` tag)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/ubuntu/), [`arm32v7`](https://hub.docker.com/r/arm32v7/ubuntu/), [`arm64v8`](https://hub.docker.com/r/arm64v8/ubuntu/), [`ppc64le`](https://hub.docker.com/r/ppc64le/ubuntu/), [`s390x`](https://hub.docker.com/r/s390x/ubuntu/)
+	[`amd64`](https://hub.docker.com/r/amd64/ubuntu/), [`arm32v7`](https://hub.docker.com/r/arm32v7/ubuntu/), [`arm64v8`](https://hub.docker.com/r/arm64v8/ubuntu/), [`ppc64le`](https://hub.docker.com/r/ppc64le/ubuntu/), [`riscv64`](https://hub.docker.com/r/riscv64/ubuntu/), [`s390x`](https://hub.docker.com/r/s390x/ubuntu/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/ubuntu/` directory](https://github.com/docker-library/repo-info/blob/master/repos/ubuntu) ([history](https://github.com/docker-library/repo-info/commits/master/repos/ubuntu))  
@@ -84,8 +87,8 @@ The tarballs published by Canonical, referenced by `dist-*` tags in https://git.
 
 -	[Focal](https://launchpad.net/~cloud-images-release-managers/+livefs/ubuntu/focal/ubuntu-oci)
 -	[Jammy](https://launchpad.net/~cloud-images-release-managers/+livefs/ubuntu/jammy/ubuntu-oci)
--	[Lunar](https://launchpad.net/~cloud-images-release-managers/+livefs/ubuntu/lunar/ubuntu-oci)
--	[Mantic](https://launchpad.net/~cloud-images-release-managers/+livefs/ubuntu/mantic/ubuntu-oci)
+-	[Noble](https://launchpad.net/~cloud-images-release-managers/+livefs/ubuntu/noble/ubuntu-oci)
+-	[Oracular](https://launchpad.net/~cloud-images-release-managers/+livefs/ubuntu/oracular/ubuntu-oci)
 
 # License
 

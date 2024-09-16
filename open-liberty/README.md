@@ -24,33 +24,47 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`beta`](https://github.com/OpenLiberty/ci.docker/blob/a6fd7e10a5e53d952b524102a7d01dd16b93424a/releases/latest/beta/Dockerfile.ubuntu.openjdk8)
--	[`beta-java11`](https://github.com/OpenLiberty/ci.docker/blob/a6fd7e10a5e53d952b524102a7d01dd16b93424a/releases/latest/beta/Dockerfile.ubuntu.openjdk11)
--	[`beta-java17`](https://github.com/OpenLiberty/ci.docker/blob/a6fd7e10a5e53d952b524102a7d01dd16b93424a/releases/latest/beta/Dockerfile.ubuntu.openjdk17)
--	[`kernel-slim`, `kernel-slim-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/a6fd7e10a5e53d952b524102a7d01dd16b93424a/releases/latest/kernel-slim/Dockerfile.ubuntu.openjdk8)
--	[`kernel-slim-java11-openj9`](https://github.com/OpenLiberty/ci.docker/blob/a6fd7e10a5e53d952b524102a7d01dd16b93424a/releases/latest/kernel-slim/Dockerfile.ubuntu.openjdk11)
--	[`kernel-slim-java17-openj9`](https://github.com/OpenLiberty/ci.docker/blob/a6fd7e10a5e53d952b524102a7d01dd16b93424a/releases/latest/kernel-slim/Dockerfile.ubuntu.openjdk17)
--	[`full`, `full-java8-openj9`, `latest`](https://github.com/OpenLiberty/ci.docker/blob/a6fd7e10a5e53d952b524102a7d01dd16b93424a/releases/latest/full/Dockerfile.ubuntu.openjdk8)
--	[`full-java11-openj9`](https://github.com/OpenLiberty/ci.docker/blob/a6fd7e10a5e53d952b524102a7d01dd16b93424a/releases/latest/full/Dockerfile.ubuntu.openjdk11)
--	[`full-java17-openj9`](https://github.com/OpenLiberty/ci.docker/blob/a6fd7e10a5e53d952b524102a7d01dd16b93424a/releases/latest/full/Dockerfile.ubuntu.openjdk17)
--	[`24.0.0.3-kernel-slim-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/a6fd7e10a5e53d952b524102a7d01dd16b93424a/releases/24.0.0.3/kernel-slim/Dockerfile.ubuntu.openjdk8)
--	[`24.0.0.3-kernel-slim-java11-openj9`](https://github.com/OpenLiberty/ci.docker/blob/a6fd7e10a5e53d952b524102a7d01dd16b93424a/releases/24.0.0.3/kernel-slim/Dockerfile.ubuntu.openjdk11)
--	[`24.0.0.3-kernel-slim-java17-openj9`](https://github.com/OpenLiberty/ci.docker/blob/a6fd7e10a5e53d952b524102a7d01dd16b93424a/releases/24.0.0.3/kernel-slim/Dockerfile.ubuntu.openjdk17)
--	[`24.0.0.3-full-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/a6fd7e10a5e53d952b524102a7d01dd16b93424a/releases/24.0.0.3/full/Dockerfile.ubuntu.openjdk8)
--	[`24.0.0.3-full-java11-openj9`](https://github.com/OpenLiberty/ci.docker/blob/a6fd7e10a5e53d952b524102a7d01dd16b93424a/releases/24.0.0.3/full/Dockerfile.ubuntu.openjdk11)
--	[`24.0.0.3-full-java17-openj9`](https://github.com/OpenLiberty/ci.docker/blob/a6fd7e10a5e53d952b524102a7d01dd16b93424a/releases/24.0.0.3/full/Dockerfile.ubuntu.openjdk17)
--	[`24.0.0.4-kernel-slim-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/a6fd7e10a5e53d952b524102a7d01dd16b93424a/releases/24.0.0.4/kernel-slim/Dockerfile.ubuntu.openjdk8)
--	[`24.0.0.4-kernel-slim-java11-openj9`](https://github.com/OpenLiberty/ci.docker/blob/a6fd7e10a5e53d952b524102a7d01dd16b93424a/releases/24.0.0.4/kernel-slim/Dockerfile.ubuntu.openjdk11)
--	[`24.0.0.4-kernel-slim-java17-openj9`](https://github.com/OpenLiberty/ci.docker/blob/a6fd7e10a5e53d952b524102a7d01dd16b93424a/releases/24.0.0.4/kernel-slim/Dockerfile.ubuntu.openjdk17)
--	[`24.0.0.4-full-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/a6fd7e10a5e53d952b524102a7d01dd16b93424a/releases/24.0.0.4/full/Dockerfile.ubuntu.openjdk8)
--	[`24.0.0.4-full-java11-openj9`](https://github.com/OpenLiberty/ci.docker/blob/a6fd7e10a5e53d952b524102a7d01dd16b93424a/releases/24.0.0.4/full/Dockerfile.ubuntu.openjdk11)
--	[`24.0.0.4-full-java17-openj9`](https://github.com/OpenLiberty/ci.docker/blob/a6fd7e10a5e53d952b524102a7d01dd16b93424a/releases/24.0.0.4/full/Dockerfile.ubuntu.openjdk17)
--	[`23.0.0.12-kernel-slim-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/a6fd7e10a5e53d952b524102a7d01dd16b93424a/releases/23.0.0.12/kernel-slim/Dockerfile.ubuntu.openjdk8)
--	[`23.0.0.12-kernel-slim-java11-openj9`](https://github.com/OpenLiberty/ci.docker/blob/a6fd7e10a5e53d952b524102a7d01dd16b93424a/releases/23.0.0.12/kernel-slim/Dockerfile.ubuntu.openjdk11)
--	[`23.0.0.12-kernel-slim-java17-openj9`](https://github.com/OpenLiberty/ci.docker/blob/a6fd7e10a5e53d952b524102a7d01dd16b93424a/releases/23.0.0.12/kernel-slim/Dockerfile.ubuntu.openjdk17)
--	[`23.0.0.12-full-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/a6fd7e10a5e53d952b524102a7d01dd16b93424a/releases/23.0.0.12/full/Dockerfile.ubuntu.openjdk8)
--	[`23.0.0.12-full-java11-openj9`](https://github.com/OpenLiberty/ci.docker/blob/a6fd7e10a5e53d952b524102a7d01dd16b93424a/releases/23.0.0.12/full/Dockerfile.ubuntu.openjdk11)
--	[`23.0.0.12-full-java17-openj9`](https://github.com/OpenLiberty/ci.docker/blob/a6fd7e10a5e53d952b524102a7d01dd16b93424a/releases/23.0.0.12/full/Dockerfile.ubuntu.openjdk17)
+-	[`beta`](https://github.com/OpenLiberty/ci.docker/blob/a0f97b0c6abd29915d27a65ea542baeba6025517/releases/latest/beta/Dockerfile.ubuntu.openjdk8)
+
+-	[`beta-java11`](https://github.com/OpenLiberty/ci.docker/blob/a0f97b0c6abd29915d27a65ea542baeba6025517/releases/latest/beta/Dockerfile.ubuntu.openjdk11)
+
+-	[`beta-java17`](https://github.com/OpenLiberty/ci.docker/blob/a0f97b0c6abd29915d27a65ea542baeba6025517/releases/latest/beta/Dockerfile.ubuntu.openjdk17)
+
+-	[`kernel-slim`, `kernel-slim-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/a0f97b0c6abd29915d27a65ea542baeba6025517/releases/latest/kernel-slim/Dockerfile.ubuntu.openjdk8)
+
+-	[`kernel-slim-java11-openj9`](https://github.com/OpenLiberty/ci.docker/blob/a0f97b0c6abd29915d27a65ea542baeba6025517/releases/latest/kernel-slim/Dockerfile.ubuntu.openjdk11)
+
+-	[`kernel-slim-java17-openj9`](https://github.com/OpenLiberty/ci.docker/blob/a0f97b0c6abd29915d27a65ea542baeba6025517/releases/latest/kernel-slim/Dockerfile.ubuntu.openjdk17)
+
+-	[`full`, `full-java8-openj9`, `latest`](https://github.com/OpenLiberty/ci.docker/blob/a0f97b0c6abd29915d27a65ea542baeba6025517/releases/latest/full/Dockerfile.ubuntu.openjdk8)
+
+-	[`full-java11-openj9`](https://github.com/OpenLiberty/ci.docker/blob/a0f97b0c6abd29915d27a65ea542baeba6025517/releases/latest/full/Dockerfile.ubuntu.openjdk11)
+
+-	[`full-java17-openj9`](https://github.com/OpenLiberty/ci.docker/blob/a0f97b0c6abd29915d27a65ea542baeba6025517/releases/latest/full/Dockerfile.ubuntu.openjdk17)
+
+-	[`24.0.0.6-kernel-slim-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/a0f97b0c6abd29915d27a65ea542baeba6025517/releases/24.0.0.6/kernel-slim/Dockerfile.ubuntu.openjdk8)
+
+-	[`24.0.0.6-kernel-slim-java11-openj9`](https://github.com/OpenLiberty/ci.docker/blob/a0f97b0c6abd29915d27a65ea542baeba6025517/releases/24.0.0.6/kernel-slim/Dockerfile.ubuntu.openjdk11)
+
+-	[`24.0.0.6-kernel-slim-java17-openj9`](https://github.com/OpenLiberty/ci.docker/blob/a0f97b0c6abd29915d27a65ea542baeba6025517/releases/24.0.0.6/kernel-slim/Dockerfile.ubuntu.openjdk17)
+
+-	[`24.0.0.6-full-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/a0f97b0c6abd29915d27a65ea542baeba6025517/releases/24.0.0.6/full/Dockerfile.ubuntu.openjdk8)
+
+-	[`24.0.0.6-full-java11-openj9`](https://github.com/OpenLiberty/ci.docker/blob/a0f97b0c6abd29915d27a65ea542baeba6025517/releases/24.0.0.6/full/Dockerfile.ubuntu.openjdk11)
+
+-	[`24.0.0.6-full-java17-openj9`](https://github.com/OpenLiberty/ci.docker/blob/a0f97b0c6abd29915d27a65ea542baeba6025517/releases/24.0.0.6/full/Dockerfile.ubuntu.openjdk17)
+
+-	[`24.0.0.9-kernel-slim-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/a0f97b0c6abd29915d27a65ea542baeba6025517/releases/24.0.0.9/kernel-slim/Dockerfile.ubuntu.openjdk8)
+
+-	[`24.0.0.9-kernel-slim-java11-openj9`](https://github.com/OpenLiberty/ci.docker/blob/a0f97b0c6abd29915d27a65ea542baeba6025517/releases/24.0.0.9/kernel-slim/Dockerfile.ubuntu.openjdk11)
+
+-	[`24.0.0.9-kernel-slim-java17-openj9`](https://github.com/OpenLiberty/ci.docker/blob/a0f97b0c6abd29915d27a65ea542baeba6025517/releases/24.0.0.9/kernel-slim/Dockerfile.ubuntu.openjdk17)
+
+-	[`24.0.0.9-full-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/a0f97b0c6abd29915d27a65ea542baeba6025517/releases/24.0.0.9/full/Dockerfile.ubuntu.openjdk8)
+
+-	[`24.0.0.9-full-java11-openj9`](https://github.com/OpenLiberty/ci.docker/blob/a0f97b0c6abd29915d27a65ea542baeba6025517/releases/24.0.0.9/full/Dockerfile.ubuntu.openjdk11)
+
+-	[`24.0.0.9-full-java17-openj9`](https://github.com/OpenLiberty/ci.docker/blob/a0f97b0c6abd29915d27a65ea542baeba6025517/releases/24.0.0.9/full/Dockerfile.ubuntu.openjdk17)
 
 # Quick reference (cont.)
 

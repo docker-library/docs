@@ -24,7 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.2.7`, `8.2`, `latest`](https://github.com/convertigo/convertigo/blob/24ab4a5de17fd3de5adf1b12c1fa447400be22a0/docker/default/Dockerfile)
+-	[`8.3.0`, `8.3`, `latest`](https://github.com/convertigo/convertigo/blob/b2b3387e1d01034c010817e14de30f2ce60febdc/docker/default/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -32,7 +32,7 @@ WARNING:
 	[https://github.com/convertigo/docker/issues](https://github.com/convertigo/docker/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/convertigo/), [`arm32v7`](https://hub.docker.com/r/arm32v7/convertigo/), [`arm64v8`](https://hub.docker.com/r/arm64v8/convertigo/)
+	[`amd64`](https://hub.docker.com/r/amd64/convertigo/), [`arm64v8`](https://hub.docker.com/r/arm64v8/convertigo/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/convertigo/` directory](https://github.com/docker-library/repo-info/blob/master/repos/convertigo) ([history](https://github.com/docker-library/repo-info/commits/master/repos/convertigo))  
@@ -50,7 +50,7 @@ WARNING:
 Convertigo is an open source fullstack Low Code & No Code platform. The platform is used to build Enterprise Web & Mobile apps in a few days. Convertigo platform is composed of several components:
 
 1.	**Convertigo Server**: The back-end server part. Handles back-end connectors, micro-services execution, offline data device synchronization and serves Web & Mobile Web apps. Runs as a Docker container with the `convertigo` image
-2.	**Convertigo Studio**: Runs on a Windows or a MacOS workstation, Eclipse based IDE, used to program Back-end micro-services workflows and use the "Mobile Builder" edition to build Mobile & Web apps UIs in a MXDP (Multi eXperience Development Platform) Low code mode. Can be directly downloaded from [Sourceforge.net](https://sourceforge.net/projects/convertigo/files/latest/download)
+2.	**Convertigo Studio**: Runs on a Windows or a MacOS workstation, Eclipse based IDE, used to program Back-end micro-services workflows and use the "Mobile Builder" edition to build Mobile & Web apps UIs in a MXDP (Multi eXperience Development Platform) Low code mode. Can be directly downloaded from [Convertigo](https://www.convertigo.com/get-started-page)
 3.	**Convertigo NoCode Studio**: The No Code App Builder to build form based apps as PWAs or Web applications with a Web Based NoCode studio intented for non technical developpers (Citizen Developpers)
 
 Convertigo Community edition brought to you by Convertigo SA (Paris & San Francisco). The platform is currently used by more than 100K developers worldwide, building enterprise class mobile apps.

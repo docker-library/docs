@@ -25,6 +25,7 @@ WARNING:
 # Supported tags and respective `Dockerfile` links
 
 -	[`1.26.1`, `1.26`, `1`, `1.26.1-apache`, `1.26-apache`, `1-apache`, `apache`, `latest`](https://github.com/backdrop-ops/backdrop-docker/blob/95902d6610b2474ca88ff8faae40ed30e7d3318a/1/apache/Dockerfile)
+
 -	[`1.26.1-fpm`, `1.26-fpm`, `1-fpm`, `fpm`](https://github.com/backdrop-ops/backdrop-docker/blob/95902d6610b2474ca88ff8faae40ed30e7d3318a/1/fpm/Dockerfile)
 
 # Quick reference (cont.)

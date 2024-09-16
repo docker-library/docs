@@ -24,10 +24,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.6`, `1.6.6`](https://github.com/influxdata/influxdata-docker/blob/7fb830f90eacb0e8e0dc8bc0257abbf34f9c5d2b/kapacitor/1.6/Dockerfile)
--	[`1.6-alpine`, `1.6.6-alpine`](https://github.com/influxdata/influxdata-docker/blob/7fb830f90eacb0e8e0dc8bc0257abbf34f9c5d2b/kapacitor/1.6/alpine/Dockerfile)
--	[`1.7`, `1.7.4`, `latest`](https://github.com/influxdata/influxdata-docker/blob/7fb830f90eacb0e8e0dc8bc0257abbf34f9c5d2b/kapacitor/1.7/Dockerfile)
--	[`1.7-alpine`, `1.7.4-alpine`, `alpine`](https://github.com/influxdata/influxdata-docker/blob/7fb830f90eacb0e8e0dc8bc0257abbf34f9c5d2b/kapacitor/1.7/alpine/Dockerfile)
+-	[`1.6`, `1.6.6`](https://github.com/influxdata/influxdata-docker/blob/9fb0398866b9fe45455cf771a2d1415b4913fc56/kapacitor/1.6/Dockerfile)
+
+-	[`1.6-alpine`, `1.6.6-alpine`](https://github.com/influxdata/influxdata-docker/blob/9fb0398866b9fe45455cf771a2d1415b4913fc56/kapacitor/1.6/alpine/Dockerfile)
+
+-	[`1.7`, `1.7.5`, `latest`](https://github.com/influxdata/influxdata-docker/blob/9fb0398866b9fe45455cf771a2d1415b4913fc56/kapacitor/1.7/Dockerfile)
+
+-	[`1.7-alpine`, `1.7.5-alpine`, `alpine`](https://github.com/influxdata/influxdata-docker/blob/9fb0398866b9fe45455cf771a2d1415b4913fc56/kapacitor/1.7/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -116,6 +119,10 @@ KAPACITOR_INFLUXDB_0_URLS_0=http://influxdb:8086
 ```
 
 Find more about configuring Kapacitor [here](https://docs.influxdata.com/kapacitor/latest/introduction/installation/)
+
+#### Running as root
+
+Starting in v1.7.4, Kapacitor no longer run as the root user by default. If a user wants to revert this change they can set `KAPACITOR_AS_ROOT=true` as an environment variable.
 
 ### Exposed Ports
 

@@ -33,8 +33,9 @@ All Markdown files here are run through [tianon's fork of `markdownfmt`](https:/
 	6.	[`license.md`](#licensemd)
 	7.	[`logo.png`](#logopng)
 	8.	[`maintainer.md`](#maintainermd)
-	9.	[`README-short.txt`](#readme-shorttxt)
-	10.	[`stack.yml`](#stackyml)
+	9.	[`metadata.json`](#metadatajson)
+	10.	[`README-short.txt`](#readme-shorttxt)
+	11.	[`stack.yml`](#stackyml)
 5.	[Files for main Docs repo](#files-for-main-docs-repo)
 	1.	[`update.sh`](#updatesh)
 	2.	[`markdownfmt.sh` and `ymlfmt.sh`](#markdownfmtsh-and-ymlfmtsh)
@@ -61,6 +62,7 @@ After opening your Pull Request the changes will be checked by an automated `mar
 -	Create a `license.md` (required)
 -	Create a `maintainer.md` (required)
 -	Create a `github-repo` (required)
+-	Create a `metadata.json` (required)
 -	Add a `logo.png` (recommended)
 
 Optionally:
@@ -127,6 +129,18 @@ The image is automatically scaled to a 120 pixel square for the top of the Docke
 ## `maintainer.md`
 
 This file should contain a link to the maintainers of the Dockerfile.
+
+## `metadata.json`
+
+This file contains data about the repo for Docker Hub. The minimum file is defined below. `./metadata.sh [repo-name]` must be used to correctly format it (use `-w` to apply its suggested format changes). Only three sorted unique Docker Hub categories are allowed. `metadata.json` in the root contains the list of categories to choose from. See descriptions for the categories on the [Docker docs site](https://docs.docker.com/docker-hub/repos/categories/).
+
+```json
+{
+    "hub": {
+         "categories": []
+    }
+}
+```
 
 ## `README-short.txt`
 
