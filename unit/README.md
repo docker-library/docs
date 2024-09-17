@@ -24,35 +24,39 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.32.1-go1.22`, `go1.22`, `go1`, `go`](https://github.com/nginx/unit/blob/0e79d961bb1ea68674961da1703ffedb1ddf6e43/pkg/docker/Dockerfile.go1.22)
+-	[`1.33.0-go1.23`, `go1.23`, `go1`, `go`](https://github.com/nginx/unit/blob/624debcf17ea7faab01fa841bd4dcd9f308cf306/pkg/docker/Dockerfile.go1.23)
 
--	[`1.32.1-go1.21`, `go1.21`](https://github.com/nginx/unit/blob/0e79d961bb1ea68674961da1703ffedb1ddf6e43/pkg/docker/Dockerfile.go1.21)
+-	[`1.33.0-go1.22`, `go1.22`](https://github.com/nginx/unit/blob/624debcf17ea7faab01fa841bd4dcd9f308cf306/pkg/docker/Dockerfile.go1.22)
 
--	[`1.32.1-jsc11`, `jsc11`, `jsc`](https://github.com/nginx/unit/blob/0e79d961bb1ea68674961da1703ffedb1ddf6e43/pkg/docker/Dockerfile.jsc11)
+-	[`1.33.0-jsc11`, `jsc11`, `jsc`](https://github.com/nginx/unit/blob/624debcf17ea7faab01fa841bd4dcd9f308cf306/pkg/docker/Dockerfile.jsc11)
 
--	[`1.32.1-node21`, `node21`, `node`](https://github.com/nginx/unit/blob/0e79d961bb1ea68674961da1703ffedb1ddf6e43/pkg/docker/Dockerfile.node21)
+-	[`1.33.0-node22`, `node22`, `node`](https://github.com/nginx/unit/blob/624debcf17ea7faab01fa841bd4dcd9f308cf306/pkg/docker/Dockerfile.node22)
 
--	[`1.32.1-node20`, `node20`](https://github.com/nginx/unit/blob/0e79d961bb1ea68674961da1703ffedb1ddf6e43/pkg/docker/Dockerfile.node20)
+-	[`1.33.0-node20`, `node20`](https://github.com/nginx/unit/blob/624debcf17ea7faab01fa841bd4dcd9f308cf306/pkg/docker/Dockerfile.node20)
 
--	[`1.32.1-perl5.38`, `perl5.38`, `perl5`, `perl`](https://github.com/nginx/unit/blob/0e79d961bb1ea68674961da1703ffedb1ddf6e43/pkg/docker/Dockerfile.perl5.38)
+-	[`1.33.0-perl5.40`, `perl5.40`, `perl5`, `perl`](https://github.com/nginx/unit/blob/624debcf17ea7faab01fa841bd4dcd9f308cf306/pkg/docker/Dockerfile.perl5.40)
 
--	[`1.32.1-perl5.36`, `perl5.36`](https://github.com/nginx/unit/blob/0e79d961bb1ea68674961da1703ffedb1ddf6e43/pkg/docker/Dockerfile.perl5.36)
+-	[`1.33.0-perl5.38`, `perl5.38`](https://github.com/nginx/unit/blob/624debcf17ea7faab01fa841bd4dcd9f308cf306/pkg/docker/Dockerfile.perl5.38)
 
--	[`1.32.1-php8.3`, `php8.3`, `php8`, `php`](https://github.com/nginx/unit/blob/0e79d961bb1ea68674961da1703ffedb1ddf6e43/pkg/docker/Dockerfile.php8.3)
+-	[`1.33.0-php8.3`, `php8.3`, `php8`, `php`](https://github.com/nginx/unit/blob/624debcf17ea7faab01fa841bd4dcd9f308cf306/pkg/docker/Dockerfile.php8.3)
 
--	[`1.32.1-php8.2`, `php8.2`](https://github.com/nginx/unit/blob/0e79d961bb1ea68674961da1703ffedb1ddf6e43/pkg/docker/Dockerfile.php8.2)
+-	[`1.33.0-php8.2`, `php8.2`](https://github.com/nginx/unit/blob/624debcf17ea7faab01fa841bd4dcd9f308cf306/pkg/docker/Dockerfile.php8.2)
 
--	[`1.32.1-python3.12`, `python3.12`, `python3`, `python`](https://github.com/nginx/unit/blob/0e79d961bb1ea68674961da1703ffedb1ddf6e43/pkg/docker/Dockerfile.python3.12)
+-	[`1.33.0-python3.12`, `python3.12`, `python3`, `python`](https://github.com/nginx/unit/blob/624debcf17ea7faab01fa841bd4dcd9f308cf306/pkg/docker/Dockerfile.python3.12)
 
--	[`1.32.1-python3.11`, `python3.11`](https://github.com/nginx/unit/blob/0e79d961bb1ea68674961da1703ffedb1ddf6e43/pkg/docker/Dockerfile.python3.11)
+-	[`1.33.0-python3.11`, `python3.11`](https://github.com/nginx/unit/blob/624debcf17ea7faab01fa841bd4dcd9f308cf306/pkg/docker/Dockerfile.python3.11)
 
--	[`1.32.1-ruby3.3`, `ruby3.3`, `ruby3`, `ruby`](https://github.com/nginx/unit/blob/0e79d961bb1ea68674961da1703ffedb1ddf6e43/pkg/docker/Dockerfile.ruby3.3)
+-	[`1.33.0-ruby3.3`, `ruby3.3`, `ruby3`, `ruby`](https://github.com/nginx/unit/blob/624debcf17ea7faab01fa841bd4dcd9f308cf306/pkg/docker/Dockerfile.ruby3.3)
 
--	[`1.32.1-ruby3.2`, `ruby3.2`](https://github.com/nginx/unit/blob/0e79d961bb1ea68674961da1703ffedb1ddf6e43/pkg/docker/Dockerfile.ruby3.2)
+-	[`1.33.0-ruby3.2`, `ruby3.2`](https://github.com/nginx/unit/blob/624debcf17ea7faab01fa841bd4dcd9f308cf306/pkg/docker/Dockerfile.ruby3.2)
 
--	[`1.32.1-wasm`, `wasm`](https://github.com/nginx/unit/blob/0e79d961bb1ea68674961da1703ffedb1ddf6e43/pkg/docker/Dockerfile.wasm)
+-	[`1.33.0-python3.12-slim`, `python3.12-slim`, `python3-slim`, `python-slim`](https://github.com/nginx/unit/blob/624debcf17ea7faab01fa841bd4dcd9f308cf306/pkg/docker/Dockerfile.python3.12-slim)
 
--	[`1.32.1-minimal`, `minimal`, `latest`](https://github.com/nginx/unit/blob/0e79d961bb1ea68674961da1703ffedb1ddf6e43/pkg/docker/Dockerfile.minimal)
+-	[`1.33.0-python3.11-slim`, `python3.11-slim`](https://github.com/nginx/unit/blob/624debcf17ea7faab01fa841bd4dcd9f308cf306/pkg/docker/Dockerfile.python3.11-slim)
+
+-	[`1.33.0-wasm`, `wasm`](https://github.com/nginx/unit/blob/624debcf17ea7faab01fa841bd4dcd9f308cf306/pkg/docker/Dockerfile.wasm)
+
+-	[`1.33.0-minimal`, `minimal`, `latest`](https://github.com/nginx/unit/blob/624debcf17ea7faab01fa841bd4dcd9f308cf306/pkg/docker/Dockerfile.minimal)
 
 # Quick reference (cont.)
 
@@ -88,6 +92,18 @@ Please see [Unit's website](https://unit.nginx.org/installation/#docker-images) 
 # How to use this image
 
 Please check the [Initial Configuration](https://unit.nginx.org/installation/#initial-configuration) section on Unit's website. Additionally, our [Docker howto](https://unit.nginx.org/howto/docker/) can be of help.
+
+# Image Variants
+
+The `unit` images come in many flavors, each designed for a specific use case.
+
+## `unit:<version>`
+
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+## `unit:<version>-slim`
+
+This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `unit`. Unless you are working in an environment where *only* the `unit` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
 
 # License
 
