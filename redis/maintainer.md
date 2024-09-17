@@ -1,1 +1,1 @@
-../.common-templates/maintainer-community.md
+[Redis LTD](https://redis.io/)

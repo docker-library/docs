@@ -57,16 +57,3 @@ $ docker run -v /myredis/conf:/usr/local/etc/redis --name myredis %%IMAGE%% redi
 Where `/myredis/conf/` is a local directory containing your `redis.conf` file. Using this method means that there is no need for you to have a Dockerfile for your redis container.
 
 The mapped directory should be writable, as depending on the configuration and mode of operation, Redis may need to create additional configuration files or rewrite existing ones.
-
-## `32bit` variant
-
-This variant is *not* a 32bit image (and will not run on 32bit hardware), but includes Redis compiled as a 32bit binary, especially for users who need the decreased memory requirements associated with that. See ["Using 32 bit instances"](http://redis.io/topics/memory-optimization#using-32-bit-instances) in the Redis documentation for more information.
-
-# Redis Stack and modules
-
-Modules extend Redis with extra capabilities. Redis Stack already comes with the capabilities (search and query, JSON support, and more) that are developed by Redis (the company). The Docker images are available here:
-
--	[Redis Stack](https://hub.docker.com/r/redis/redis-stack): Redis plus extra capabilities and Redis Insight (a GUI for Redis)
--	[Redis Stack Server](https://hub.docker.com/r/redis/redis-stack-server): Redis plus extra capabilities
-
-You can find the list of modules for Redis on [redis.io](https://redis.io/community/redis-modules-hub/).
