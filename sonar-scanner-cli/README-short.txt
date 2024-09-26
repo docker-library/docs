@@ -1,0 +1,1 @@
+Official scanner used to run code analysis on SonarQube and SonarCloud
