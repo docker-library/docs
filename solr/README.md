@@ -32,9 +32,9 @@ WARNING:
 
 -	[`9.6.1-slim`, `9.6-slim`](https://github.com/apache/solr-docker/blob/9cd850b72309de05169544395c83a85b329d6b86/9.6-slim/Dockerfile)
 
--	[`8.11.3`, `8.11`, `8`](https://github.com/apache/solr-docker/blob/7156fa15807945939cd2a5525bbb63219da07b1e/8.11/Dockerfile)
+-	[`8.11.4`, `8.11`, `8`](https://github.com/apache/solr-docker/blob/f11dfe66709370492d5b7b251d5eba5d70b8301d/8.11/Dockerfile)
 
--	[`8.11.3-slim`, `8.11-slim`, `8-slim`](https://github.com/apache/solr-docker/blob/7156fa15807945939cd2a5525bbb63219da07b1e/8.11-slim/Dockerfile)
+-	[`8.11.4-slim`, `8.11-slim`, `8-slim`](https://github.com/apache/solr-docker/blob/f11dfe66709370492d5b7b251d5eba5d70b8301d/8.11-slim/Dockerfile)
 
 # Quick reference (cont.)
 
