@@ -24,53 +24,53 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`bookworm`, `bookworm-20240904`, `12.7`, `12`, `latest`](https://github.com/debuerreotype/docker-debian-artifacts/blob/ddce62e05a714e4a4d16a160505e7888f14e8a22/bookworm/Dockerfile)
+-	[`bookworm`, `bookworm-20240926`, `12.7`, `12`, `latest`](https://github.com/debuerreotype/docker-debian-artifacts/blob/882a9e1d966bc166c8e2771f509aca6de7c3f706/bookworm/Dockerfile)
 
--	[`bookworm-backports`](https://github.com/debuerreotype/docker-debian-artifacts/blob/ddce62e05a714e4a4d16a160505e7888f14e8a22/bookworm/backports/Dockerfile)
+-	[`bookworm-backports`](https://github.com/debuerreotype/docker-debian-artifacts/blob/882a9e1d966bc166c8e2771f509aca6de7c3f706/bookworm/backports/Dockerfile)
 
--	[`bookworm-slim`, `bookworm-20240904-slim`, `12.7-slim`, `12-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/ddce62e05a714e4a4d16a160505e7888f14e8a22/bookworm/slim/Dockerfile)
+-	[`bookworm-slim`, `bookworm-20240926-slim`, `12.7-slim`, `12-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/882a9e1d966bc166c8e2771f509aca6de7c3f706/bookworm/slim/Dockerfile)
 
--	[`bullseye`, `bullseye-20240904`, `11.11`, `11`](https://github.com/debuerreotype/docker-debian-artifacts/blob/ddce62e05a714e4a4d16a160505e7888f14e8a22/bullseye/Dockerfile)
+-	[`bullseye`, `bullseye-20240926`, `11.11`, `11`](https://github.com/debuerreotype/docker-debian-artifacts/blob/882a9e1d966bc166c8e2771f509aca6de7c3f706/bullseye/Dockerfile)
 
--	[`bullseye-backports`](https://github.com/debuerreotype/docker-debian-artifacts/blob/ddce62e05a714e4a4d16a160505e7888f14e8a22/bullseye/backports/Dockerfile)
+-	[`bullseye-backports`](https://github.com/debuerreotype/docker-debian-artifacts/blob/882a9e1d966bc166c8e2771f509aca6de7c3f706/bullseye/backports/Dockerfile)
 
--	[`bullseye-slim`, `bullseye-20240904-slim`, `11.11-slim`, `11-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/ddce62e05a714e4a4d16a160505e7888f14e8a22/bullseye/slim/Dockerfile)
+-	[`bullseye-slim`, `bullseye-20240926-slim`, `11.11-slim`, `11-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/882a9e1d966bc166c8e2771f509aca6de7c3f706/bullseye/slim/Dockerfile)
 
--	[`experimental`, `experimental-20240904`](https://github.com/debuerreotype/docker-debian-artifacts/blob/ddce62e05a714e4a4d16a160505e7888f14e8a22/experimental/Dockerfile)
+-	[`experimental`, `experimental-20240926`](https://github.com/debuerreotype/docker-debian-artifacts/blob/882a9e1d966bc166c8e2771f509aca6de7c3f706/experimental/Dockerfile)
 
--	[`oldstable`, `oldstable-20240904`](https://github.com/debuerreotype/docker-debian-artifacts/blob/ddce62e05a714e4a4d16a160505e7888f14e8a22/oldstable/Dockerfile)
+-	[`oldstable`, `oldstable-20240926`](https://github.com/debuerreotype/docker-debian-artifacts/blob/882a9e1d966bc166c8e2771f509aca6de7c3f706/oldstable/Dockerfile)
 
--	[`oldstable-backports`](https://github.com/debuerreotype/docker-debian-artifacts/blob/ddce62e05a714e4a4d16a160505e7888f14e8a22/oldstable/backports/Dockerfile)
+-	[`oldstable-backports`](https://github.com/debuerreotype/docker-debian-artifacts/blob/882a9e1d966bc166c8e2771f509aca6de7c3f706/oldstable/backports/Dockerfile)
 
--	[`oldstable-slim`, `oldstable-20240904-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/ddce62e05a714e4a4d16a160505e7888f14e8a22/oldstable/slim/Dockerfile)
+-	[`oldstable-slim`, `oldstable-20240926-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/882a9e1d966bc166c8e2771f509aca6de7c3f706/oldstable/slim/Dockerfile)
 
--	[`rc-buggy`, `rc-buggy-20240904`](https://github.com/debuerreotype/docker-debian-artifacts/blob/ddce62e05a714e4a4d16a160505e7888f14e8a22/rc-buggy/Dockerfile)
+-	[`rc-buggy`, `rc-buggy-20240926`](https://github.com/debuerreotype/docker-debian-artifacts/blob/882a9e1d966bc166c8e2771f509aca6de7c3f706/rc-buggy/Dockerfile)
 
--	[`sid`, `sid-20240904`](https://github.com/debuerreotype/docker-debian-artifacts/blob/ddce62e05a714e4a4d16a160505e7888f14e8a22/sid/Dockerfile)
+-	[`sid`, `sid-20240926`](https://github.com/debuerreotype/docker-debian-artifacts/blob/882a9e1d966bc166c8e2771f509aca6de7c3f706/sid/Dockerfile)
 
--	[`sid-slim`, `sid-20240904-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/ddce62e05a714e4a4d16a160505e7888f14e8a22/sid/slim/Dockerfile)
+-	[`sid-slim`, `sid-20240926-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/882a9e1d966bc166c8e2771f509aca6de7c3f706/sid/slim/Dockerfile)
 
--	[`stable`, `stable-20240904`](https://github.com/debuerreotype/docker-debian-artifacts/blob/ddce62e05a714e4a4d16a160505e7888f14e8a22/stable/Dockerfile)
+-	[`stable`, `stable-20240926`](https://github.com/debuerreotype/docker-debian-artifacts/blob/882a9e1d966bc166c8e2771f509aca6de7c3f706/stable/Dockerfile)
 
--	[`stable-backports`](https://github.com/debuerreotype/docker-debian-artifacts/blob/ddce62e05a714e4a4d16a160505e7888f14e8a22/stable/backports/Dockerfile)
+-	[`stable-backports`](https://github.com/debuerreotype/docker-debian-artifacts/blob/882a9e1d966bc166c8e2771f509aca6de7c3f706/stable/backports/Dockerfile)
 
--	[`stable-slim`, `stable-20240904-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/ddce62e05a714e4a4d16a160505e7888f14e8a22/stable/slim/Dockerfile)
+-	[`stable-slim`, `stable-20240926-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/882a9e1d966bc166c8e2771f509aca6de7c3f706/stable/slim/Dockerfile)
 
--	[`testing`, `testing-20240904`](https://github.com/debuerreotype/docker-debian-artifacts/blob/ddce62e05a714e4a4d16a160505e7888f14e8a22/testing/Dockerfile)
+-	[`testing`, `testing-20240926`](https://github.com/debuerreotype/docker-debian-artifacts/blob/882a9e1d966bc166c8e2771f509aca6de7c3f706/testing/Dockerfile)
 
--	[`testing-backports`](https://github.com/debuerreotype/docker-debian-artifacts/blob/ddce62e05a714e4a4d16a160505e7888f14e8a22/testing/backports/Dockerfile)
+-	[`testing-backports`](https://github.com/debuerreotype/docker-debian-artifacts/blob/882a9e1d966bc166c8e2771f509aca6de7c3f706/testing/backports/Dockerfile)
 
--	[`testing-slim`, `testing-20240904-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/ddce62e05a714e4a4d16a160505e7888f14e8a22/testing/slim/Dockerfile)
+-	[`testing-slim`, `testing-20240926-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/882a9e1d966bc166c8e2771f509aca6de7c3f706/testing/slim/Dockerfile)
 
--	[`trixie`, `trixie-20240904`](https://github.com/debuerreotype/docker-debian-artifacts/blob/ddce62e05a714e4a4d16a160505e7888f14e8a22/trixie/Dockerfile)
+-	[`trixie`, `trixie-20240926`](https://github.com/debuerreotype/docker-debian-artifacts/blob/882a9e1d966bc166c8e2771f509aca6de7c3f706/trixie/Dockerfile)
 
--	[`trixie-backports`](https://github.com/debuerreotype/docker-debian-artifacts/blob/ddce62e05a714e4a4d16a160505e7888f14e8a22/trixie/backports/Dockerfile)
+-	[`trixie-backports`](https://github.com/debuerreotype/docker-debian-artifacts/blob/882a9e1d966bc166c8e2771f509aca6de7c3f706/trixie/backports/Dockerfile)
 
--	[`trixie-slim`, `trixie-20240904-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/ddce62e05a714e4a4d16a160505e7888f14e8a22/trixie/slim/Dockerfile)
+-	[`trixie-slim`, `trixie-20240926-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/882a9e1d966bc166c8e2771f509aca6de7c3f706/trixie/slim/Dockerfile)
 
--	[`unstable`, `unstable-20240904`](https://github.com/debuerreotype/docker-debian-artifacts/blob/ddce62e05a714e4a4d16a160505e7888f14e8a22/unstable/Dockerfile)
+-	[`unstable`, `unstable-20240926`](https://github.com/debuerreotype/docker-debian-artifacts/blob/882a9e1d966bc166c8e2771f509aca6de7c3f706/unstable/Dockerfile)
 
--	[`unstable-slim`, `unstable-20240904-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/ddce62e05a714e4a4d16a160505e7888f14e8a22/unstable/slim/Dockerfile)
+-	[`unstable-slim`, `unstable-20240926-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/882a9e1d966bc166c8e2771f509aca6de7c3f706/unstable/slim/Dockerfile)
 
 # Quick reference (cont.)
 
