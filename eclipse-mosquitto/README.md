@@ -24,11 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.0.18`, `2.0`, `2`, `latest`](https://github.com/eclipse/mosquitto/blob/f4400fa422eacac8417efbc45dd1284526dce8d4/docker/2.0/Dockerfile)
+-	[`2.0.19`, `2.0.19-openssl`, `2.0`, `2.0-openssl`, `2`, `2-openssl`, `openssl`, `latest`](https://github.com/eclipse/mosquitto/blob/e96ddfc6e58f7087b9fa57a717d7f56d2c00f9fe/docker/2.0-openssl/Dockerfile)
 
--	[`2.0.18-openssl`, `2.0-openssl`, `2-openssl`, `openssl`](https://github.com/eclipse/mosquitto/blob/f4400fa422eacac8417efbc45dd1284526dce8d4/docker/2.0-openssl/Dockerfile)
-
--	[`1.6.15-openssl`, `1.6-openssl`](https://github.com/eclipse/mosquitto/blob/f4400fa422eacac8417efbc45dd1284526dce8d4/docker/1.6-openssl/Dockerfile)
+-	[`1.6.15-openssl`, `1.6-openssl`](https://github.com/eclipse/mosquitto/blob/e96ddfc6e58f7087b9fa57a717d7f56d2c00f9fe/docker/1.6-openssl/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -36,7 +34,7 @@ WARNING:
 	[https://github.com/eclipse/mosquitto/issues](https://github.com/eclipse/mosquitto/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/eclipse-mosquitto/), [`arm32v6`](https://hub.docker.com/r/arm32v6/eclipse-mosquitto/), [`arm64v8`](https://hub.docker.com/r/arm64v8/eclipse-mosquitto/), [`i386`](https://hub.docker.com/r/i386/eclipse-mosquitto/), [`ppc64le`](https://hub.docker.com/r/ppc64le/eclipse-mosquitto/)
+	[`amd64`](https://hub.docker.com/r/amd64/eclipse-mosquitto/), [`arm32v6`](https://hub.docker.com/r/arm32v6/eclipse-mosquitto/), [`arm64v8`](https://hub.docker.com/r/arm64v8/eclipse-mosquitto/), [`i386`](https://hub.docker.com/r/i386/eclipse-mosquitto/), [`ppc64le`](https://hub.docker.com/r/ppc64le/eclipse-mosquitto/), [`s390x`](https://hub.docker.com/r/s390x/eclipse-mosquitto/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/eclipse-mosquitto/` directory](https://github.com/docker-library/repo-info/blob/master/repos/eclipse-mosquitto) ([history](https://github.com/docker-library/repo-info/commits/master/repos/eclipse-mosquitto))  
