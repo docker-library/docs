@@ -24,19 +24,19 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.0.2`, `4.0`, `4`, `latest`](https://github.com/docker-library/rabbitmq/blob/c632cbc38e0b7d70678ba2cf5bbaba798af27339/4.0/ubuntu/Dockerfile)
+-	[`4.0.2`, `4.0`, `4`, `latest`](https://github.com/docker-library/rabbitmq/blob/4d384714be0c4e4c528745136c38b7f89620410f/4.0/ubuntu/Dockerfile)
 
 -	[`4.0.2-management`, `4.0-management`, `4-management`, `management`](https://github.com/docker-library/rabbitmq/blob/36e4d246e934a96b1c3a920e398f96434f3fc34c/4.0/ubuntu/management/Dockerfile)
 
--	[`4.0.2-alpine`, `4.0-alpine`, `4-alpine`, `alpine`](https://github.com/docker-library/rabbitmq/blob/c632cbc38e0b7d70678ba2cf5bbaba798af27339/4.0/alpine/Dockerfile)
+-	[`4.0.2-alpine`, `4.0-alpine`, `4-alpine`, `alpine`](https://github.com/docker-library/rabbitmq/blob/4d384714be0c4e4c528745136c38b7f89620410f/4.0/alpine/Dockerfile)
 
 -	[`4.0.2-management-alpine`, `4.0-management-alpine`, `4-management-alpine`, `management-alpine`](https://github.com/docker-library/rabbitmq/blob/36e4d246e934a96b1c3a920e398f96434f3fc34c/4.0/alpine/management/Dockerfile)
 
--	[`3.13.7`, `3.13`, `3`](https://github.com/docker-library/rabbitmq/blob/bfcb6a804bb3a46c8601d1b65be0675c9ef82eff/3.13/ubuntu/Dockerfile)
+-	[`3.13.7`, `3.13`, `3`](https://github.com/docker-library/rabbitmq/blob/1ac53e66c002089bc5cab47554edcaa0087d023f/3.13/ubuntu/Dockerfile)
 
 -	[`3.13.7-management`, `3.13-management`, `3-management`](https://github.com/docker-library/rabbitmq/blob/36e4d246e934a96b1c3a920e398f96434f3fc34c/3.13/ubuntu/management/Dockerfile)
 
--	[`3.13.7-alpine`, `3.13-alpine`, `3-alpine`](https://github.com/docker-library/rabbitmq/blob/bfcb6a804bb3a46c8601d1b65be0675c9ef82eff/3.13/alpine/Dockerfile)
+-	[`3.13.7-alpine`, `3.13-alpine`, `3-alpine`](https://github.com/docker-library/rabbitmq/blob/1ac53e66c002089bc5cab47554edcaa0087d023f/3.13/alpine/Dockerfile)
 
 -	[`3.13.7-management-alpine`, `3.13-management-alpine`, `3-management-alpine`](https://github.com/docker-library/rabbitmq/blob/36e4d246e934a96b1c3a920e398f96434f3fc34c/3.13/alpine/management/Dockerfile)
 
