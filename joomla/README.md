@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v7` builds of [the `joomla` official image](https://hub.docker.com/_/joomla) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -72,6 +74,8 @@ WARNING:
 
 -	[`4.4.8-php8.2-fpm`, `4.4-php8.2-fpm`, `4-php8.2-fpm`](https://github.com/joomla-docker/docker-joomla/blob/a3a857bb7d9864dbe7b2092e68ee93e9f2bdc463/4.4/php8.2/fpm/Dockerfile)
 
+[![arm32v7/joomla build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/joomla.svg?label=arm32v7/joomla%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/joomla/)
+
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
@@ -102,7 +106,7 @@ Joomla is a free and open-source content management system (CMS) for publishing 
 # How to use this image
 
 ```console
-$ docker run --name some-joomla --network some-network -d joomla
+$ docker run --name some-joomla --network some-network -d arm32v7/joomla
 ```
 
 The following environment variables are honored for configuring your Joomla instance:
@@ -131,7 +135,7 @@ The following environment variables are also honored for configuring auto deploy
 If you'd like to be able to access the instance from the host without the container's IP, standard port mappings can be used:
 
 ```console
-$ docker run --name some-joomla --network some-network -p 8080:80 -d joomla
+$ docker run --name some-joomla --network some-network -p 8080:80 -d arm32v7/joomla
 ```
 
 Then, access it via `http://localhost:8080` or `http://host-ip:8080` in a browser.
@@ -140,7 +144,7 @@ If you'd like to use an external database instead of a MySQL container, specify 
 
 ```console
 $ docker run --name some-joomla --network some-network -e JOOMLA_DB_HOST=10.1.2.3:3306 \
-    -e JOOMLA_DB_USER=... -e JOOMLA_DB_PASSWORD=... -d joomla
+    -e JOOMLA_DB_USER=... -e JOOMLA_DB_PASSWORD=... -d arm32v7/joomla
 ```
 
 ## ... via [`docker-compose`](https://github.com/docker/compose) or [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/)
@@ -207,13 +211,13 @@ The following Docker Hub features can help with the task of keeping your depende
 
 # Image Variants
 
-The `joomla` images come in many flavors, each designed for a specific use case.
+The `arm32v7/joomla` images come in many flavors, each designed for a specific use case.
 
-## `joomla:<version>`
+## `arm32v7/joomla:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `joomla:<version>-alpine`
+## `arm32v7/joomla:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
