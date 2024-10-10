@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `i386` builds of [the `archlinux` official image](https://hub.docker.com/_/archlinux) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,11 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `base`, `base-20241006.0.268140`](https://gitlab.archlinux.org/archlinux/archlinux-docker/-/blob/c2541ed2357f2de026af2a2e5c26742a1a579572/Dockerfile.base)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `i386` ARCHITECTURE
 
--	[`base-devel`, `base-devel-20241006.0.268140`](https://gitlab.archlinux.org/archlinux/archlinux-docker/-/blob/c2541ed2357f2de026af2a2e5c26742a1a579572/Dockerfile.base-devel)
-
--	[`multilib-devel`, `multilib-devel-20241006.0.268140`](https://gitlab.archlinux.org/archlinux/archlinux-docker/-/blob/c2541ed2357f2de026af2a2e5c26742a1a579572/Dockerfile.multilib-devel)
+[![i386/archlinux build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/i386/job/archlinux.svg?label=i386/archlinux%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/i386/job/archlinux/)
 
 # Quick reference (cont.)
 
@@ -61,7 +61,7 @@ Our strong community is diverse and helpful, and we pride ourselves on the range
 
 # About this image
 
-The root filesystem tarball for this image is auto-generated weekly at 00:00 UTC on Sunday in Arch Linux infrastructure. Given the rolling-release nature of Arch Linux, images are tagged with the included meta package and the timestamp of the date they were generated. For example, `archlinux:base-20201101.0.7893` was generated the First of November 2020 in [CI job #7893](https://gitlab.archlinux.org/archlinux/archlinux-docker/-/jobs/7893). The `latest` tag will always match the latest `base` tag.
+The root filesystem tarball for this image is auto-generated weekly at 00:00 UTC on Sunday in Arch Linux infrastructure. Given the rolling-release nature of Arch Linux, images are tagged with the included meta package and the timestamp of the date they were generated. For example, `i386/archlinux:base-20201101.0.7893` was generated the First of November 2020 in [CI job #7893](https://gitlab.archlinux.org/archlinux/archlinux-docker/-/jobs/7893). The `latest` tag will always match the latest `base` tag.
 
 Besides `base` we also provide images for the `base-devel` and `multilib-devel` meta packages.
 
