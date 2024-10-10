@@ -61,13 +61,31 @@ Memcached's APIs provide a very large hash table distributed across multiple mac
 $ docker run --name my-memcache -d memcached
 ```
 
-## Setting Memory Usage
+### Configuration
+
+To customize the configuration of the memcached server, first obtain the upstream configuration options from the container:
 
 ```console
-$ docker run --name my-memcache -d memcached memcached -m 64
+$ docker run --rm memcached -h
 ```
 
-This would set the Memcached server to use 64 megabytes for storage.
+Using `docker run`:
+
+```console
+$ docker run --name my-memcache -d memcached memcached --memory-limit=64
+```
+
+or using Docker Compose:
+
+```yaml
+services:
+  memcached:
+    image: memcached
+    command:
+      - --conn-limit=1024
+      - --memory-limit=64
+      - --threads=4
+```
 
 For infomation on configuring your memcached server, see the extensive [wiki](https://github.com/memcached/memcached/wiki).
 
