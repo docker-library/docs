@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `amd64` builds of [the `clearlinux` official image](https://hub.docker.com/_/clearlinux) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -25,6 +27,8 @@ WARNING:
 # Supported tags and respective `Dockerfile` links
 
 -	[`latest`, `base`](https://github.com/clearlinux/docker-brew-clearlinux/blob/36f7744256f01cfa1b0a90fb6999d3f7507af979/Dockerfile)
+
+[![amd64/clearlinux build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/amd64/job/clearlinux.svg?label=amd64/clearlinux%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/clearlinux/)
 
 # Quick reference (cont.)
 
@@ -51,14 +55,14 @@ This serves as the official [Clear Linux OS](https://clearlinux.org) image.
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/dbe1941be63c87cc691b59d50f830f9dd7d69df9/clearlinux/logo.png)
 
-The `clearlinux:latest` tag will point to `clearlinux:base` which will track toward the latest release version of the distribution.
+The `amd64/clearlinux:latest` tag will point to `amd64/clearlinux:base` which will track toward the latest release version of the distribution.
 
 This image contains the os-core and os-core-update bundles, the latter can be used to add additional Clear Linux OS components (see [here](https://clearlinux.org/documentation/swupdate_about_sw_update.html) for more details about swupd and [here](https://clearlinux.org/documentation/bundles_overview.html) for more information on bundles).
 
 The following Dockerfile will install the editors and dev-utils bundles on top of the base image
 
 ```sh
-FROM clearlinux:base
+FROM amd64/clearlinux:base
 RUN swupd bundle-add editors dev-utils
 ```
 
