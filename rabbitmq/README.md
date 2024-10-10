@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm64v8` builds of [the `rabbitmq` official image](https://hub.docker.com/_/rabbitmq) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -47,6 +49,8 @@ WARNING:
 -	[`3.12.14-alpine`, `3.12-alpine`](https://github.com/docker-library/rabbitmq/blob/444c58b5b51433019a9422737ee98b05adcf7e06/3.12/alpine/Dockerfile)
 
 -	[`3.12.14-management-alpine`, `3.12-management-alpine`](https://github.com/docker-library/rabbitmq/blob/36e4d246e934a96b1c3a920e398f96434f3fc34c/3.12/alpine/management/Dockerfile)
+
+[![arm64v8/rabbitmq build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/rabbitmq.svg?label=arm64v8/rabbitmq%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/rabbitmq/)
 
 # Quick reference (cont.)
 
@@ -82,7 +86,7 @@ RabbitMQ is open source message broker software (sometimes called message-orient
 One of the important things to note about RabbitMQ is that it stores data based on what it calls the "Node Name", which defaults to the hostname. What this means for usage in Docker is that we should specify `-h`/`--hostname` explicitly for each daemon so that we don't get a random hostname and can keep track of our data:
 
 ```console
-$ docker run -d --hostname my-rabbit --name some-rabbit rabbitmq:3
+$ docker run -d --hostname my-rabbit --name some-rabbit arm64v8/rabbitmq:3
 ```
 
 This will start a RabbitMQ container listening on the default port of 5672. If you give that a minute, then do `docker logs some-rabbit`, you'll see in the output a block similar to:
@@ -128,7 +132,7 @@ RABBITMQ_VM_MEMORY_HIGH_WATERMARK
 If you wish to change the default username and password of `guest` / `guest`, you can do so with the `RABBITMQ_DEFAULT_USER` and `RABBITMQ_DEFAULT_PASS` environmental variables. These variables were available previously in the docker-specific entrypoint shell script but are now available in RabbitMQ directly.
 
 ```console
-$ docker run -d --hostname my-rabbit --name some-rabbit -e RABBITMQ_DEFAULT_USER=user -e RABBITMQ_DEFAULT_PASS=password rabbitmq:3-management
+$ docker run -d --hostname my-rabbit --name some-rabbit -e RABBITMQ_DEFAULT_USER=user -e RABBITMQ_DEFAULT_PASS=password arm64v8/rabbitmq:3-management
 ```
 
 You can then go to `http://localhost:8080` or `http://host-ip:8080` in a browser and use `user`/`password` to gain access to the management console
@@ -138,7 +142,7 @@ You can then go to `http://localhost:8080` or `http://host-ip:8080` in a browser
 If you wish to change the default vhost, you can do so with the `RABBITMQ_DEFAULT_VHOST` environmental variables:
 
 ```console
-$ docker run -d --hostname my-rabbit --name some-rabbit -e RABBITMQ_DEFAULT_VHOST=my_vhost rabbitmq:3-management
+$ docker run -d --hostname my-rabbit --name some-rabbit -e RABBITMQ_DEFAULT_VHOST=my_vhost arm64v8/rabbitmq:3-management
 ```
 
 ### Memory Limits
@@ -154,7 +158,7 @@ See the [RabbitMQ "Clustering Guide"](https://www.rabbitmq.com/clustering.html#e
 For example, you can provide the cookie via a file (such as with [Docker Secrets](https://docs.docker.com/engine/swarm/secrets/)):
 
 ```console
-docker service create ... --secret source=my-erlang-cookie,target=/var/lib/rabbitmq/.erlang.cookie ... rabbitmq
+docker service create ... --secret source=my-erlang-cookie,target=/var/lib/rabbitmq/.erlang.cookie ... arm64v8/rabbitmq
 ```
 
 (Note that it will likely also be necessary to specify `uid=XXX,gid=XXX,mode=0600` in order for Erlang in the container to be able to read the cookie file properly. See [Docker's `--secret` documentation for more details](https://docs.docker.com/engine/reference/commandline/service_create/#create-a-service-with-secrets).)
@@ -164,13 +168,13 @@ docker service create ... --secret source=my-erlang-cookie,target=/var/lib/rabbi
 There is a second set of tags provided with the [management plugin](https://www.rabbitmq.com/management.html) installed and enabled by default, which is available on the standard management port of 15672, with the default username and password of `guest` / `guest`:
 
 ```console
-$ docker run -d --hostname my-rabbit --name some-rabbit rabbitmq:3-management
+$ docker run -d --hostname my-rabbit --name some-rabbit arm64v8/rabbitmq:3-management
 ```
 
 You can access it by visiting `http://container-ip:15672` in a browser or, if you need access outside the host, on port 8080:
 
 ```console
-$ docker run -d --hostname my-rabbit --name some-rabbit -p 8080:15672 rabbitmq:3-management
+$ docker run -d --hostname my-rabbit --name some-rabbit -p 8080:15672 arm64v8/rabbitmq:3-management
 ```
 
 You can then go to `http://localhost:8080` or `http://host-ip:8080` in a browser.
@@ -204,13 +208,13 @@ See [the "Official Images" FAQ](https://github.com/docker-library/faq#healthchec
 
 # Image Variants
 
-The `rabbitmq` images come in many flavors, each designed for a specific use case.
+The `arm64v8/rabbitmq` images come in many flavors, each designed for a specific use case.
 
-## `rabbitmq:<version>`
+## `arm64v8/rabbitmq:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `rabbitmq:<version>-alpine`
+## `arm64v8/rabbitmq:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 

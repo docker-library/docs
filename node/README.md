@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm64v8` builds of [the `node` official image](https://hub.docker.com/_/node) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -60,6 +62,8 @@ WARNING:
 
 -	[`18-bullseye-slim`, `18.20-bullseye-slim`, `18.20.4-bullseye-slim`, `hydrogen-bullseye-slim`](https://github.com/nodejs/docker-node/blob/619b871fb3d89dc6d6333914b46bf526e781eec5/18/bullseye-slim/Dockerfile)
 
+[![arm64v8/node build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/node.svg?label=arm64v8/node%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/node/)
+
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
@@ -97,9 +101,9 @@ See [How To Use This Image](https://github.com/nodejs/docker-node/blob/master/RE
 
 # Image Variants
 
-The `node` images come in many flavors, each designed for a specific use case.
+The `arm64v8/node` images come in many flavors, each designed for a specific use case.
 
-## `node:<version>`
+## `arm64v8/node:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
@@ -107,7 +111,7 @@ Some of these tags may have names like bookworm or bullseye in them. These are t
 
 This tag is based off of [`buildpack-deps`](https://hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of Docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
 
-## `node:<version>-alpine`
+## `arm64v8/node:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
@@ -115,9 +119,9 @@ This variant is useful when final image size being as small as possible is your 
 
 To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
-## `node:<version>-slim`
+## `arm64v8/node:<version>-slim`
 
-This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `node`. Unless you are working in an environment where *only* the `node` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
+This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `arm64v8/node`. Unless you are working in an environment where *only* the `arm64v8/node` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
 
 # License
 

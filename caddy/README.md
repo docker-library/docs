@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm64v8` builds of [the `caddy` official image](https://hub.docker.com/_/caddy) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -32,32 +34,17 @@ WARNING:
 
 -	[`2.8.4-builder-alpine`, `2.8-builder-alpine`, `2-builder-alpine`, `builder-alpine`](https://github.com/caddyserver/caddy-docker/blob/645721b4b87b6c3a692641213853ce064eb82fe2/2.8/builder/Dockerfile)
 
--	[`2.8.4-windowsservercore-1809`, `2.8-windowsservercore-1809`, `2-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/caddyserver/caddy-docker/blob/fb6e8723745c60fe413a311b484704e8ce3fcfd3/2.8/windows/1809/Dockerfile)
-
--	[`2.8.4-windowsservercore-ltsc2022`, `2.8-windowsservercore-ltsc2022`, `2-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`](https://github.com/caddyserver/caddy-docker/blob/fb6e8723745c60fe413a311b484704e8ce3fcfd3/2.8/windows/ltsc2022/Dockerfile)
-
--	[`2.8.4-builder-windowsservercore-1809`, `2.8-builder-windowsservercore-1809`, `2-builder-windowsservercore-1809`, `builder-windowsservercore-1809`](https://github.com/caddyserver/caddy-docker/blob/fb6e8723745c60fe413a311b484704e8ce3fcfd3/2.8/windows-builder/1809/Dockerfile)
-
--	[`2.8.4-builder-windowsservercore-ltsc2022`, `2.8-builder-windowsservercore-ltsc2022`, `2-builder-windowsservercore-ltsc2022`, `builder-windowsservercore-ltsc2022`](https://github.com/caddyserver/caddy-docker/blob/fb6e8723745c60fe413a311b484704e8ce3fcfd3/2.8/windows-builder/ltsc2022/Dockerfile)
-
 ## Shared Tags
 
 -	`2.8.4`, `2.8`, `2`, `latest`:
 
 	-	[`2.8.4-alpine`](https://github.com/caddyserver/caddy-docker/blob/645721b4b87b6c3a692641213853ce064eb82fe2/2.8/alpine/Dockerfile)
-	-	[`2.8.4-windowsservercore-1809`](https://github.com/caddyserver/caddy-docker/blob/fb6e8723745c60fe413a311b484704e8ce3fcfd3/2.8/windows/1809/Dockerfile)
-	-	[`2.8.4-windowsservercore-ltsc2022`](https://github.com/caddyserver/caddy-docker/blob/fb6e8723745c60fe413a311b484704e8ce3fcfd3/2.8/windows/ltsc2022/Dockerfile)
 
 -	`2.8.4-builder`, `2.8-builder`, `2-builder`, `builder`:
 
 	-	[`2.8.4-builder-alpine`](https://github.com/caddyserver/caddy-docker/blob/645721b4b87b6c3a692641213853ce064eb82fe2/2.8/builder/Dockerfile)
-	-	[`2.8.4-builder-windowsservercore-1809`](https://github.com/caddyserver/caddy-docker/blob/fb6e8723745c60fe413a311b484704e8ce3fcfd3/2.8/windows-builder/1809/Dockerfile)
-	-	[`2.8.4-builder-windowsservercore-ltsc2022`](https://github.com/caddyserver/caddy-docker/blob/fb6e8723745c60fe413a311b484704e8ce3fcfd3/2.8/windows-builder/ltsc2022/Dockerfile)
 
--	`2.8.4-windowsservercore`, `2.8-windowsservercore`, `2-windowsservercore`, `windowsservercore`:
-
-	-	[`2.8.4-windowsservercore-1809`](https://github.com/caddyserver/caddy-docker/blob/fb6e8723745c60fe413a311b484704e8ce3fcfd3/2.8/windows/1809/Dockerfile)
-	-	[`2.8.4-windowsservercore-ltsc2022`](https://github.com/caddyserver/caddy-docker/blob/fb6e8723745c60fe413a311b484704e8ce3fcfd3/2.8/windows/ltsc2022/Dockerfile)
+[![arm64v8/caddy build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/caddy.svg?label=arm64v8/caddy%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/caddy/)
 
 # Quick reference (cont.)
 
@@ -109,7 +96,7 @@ $ echo "hello world" > index.html
 $ docker run -d -p 80:80 \
     -v $PWD/index.html:/usr/share/caddy/index.html \
     -v caddy_data:/data \
-    caddy
+    arm64v8/caddy
 ...
 $ curl http://localhost/
 hello world
@@ -121,7 +108,7 @@ To override the default [`Caddyfile`](https://github.com/caddyserver/dist/blob/m
 $ docker run -d -p 80:80 \
     -v $PWD/Caddyfile:/etc/caddy/Caddyfile \
     -v caddy_data:/data \
-    caddy
+    arm64v8/caddy
 ```
 
 ### Automatic TLS with the Caddy image
@@ -133,7 +120,7 @@ $ docker run -d --cap-add=NET_ADMIN -p 80:80 -p 443:443 -p 443:443/udp \
     -v /site:/srv \
     -v caddy_data:/data \
     -v caddy_config:/config \
-    caddy caddy file-server --domain example.com
+    arm64v8/caddy caddy file-server --domain example.com
 ```
 
 The key here is that Caddy is able to listen to ports `80` and `443`, both required for the ACME HTTP challenge.
@@ -142,11 +129,11 @@ See [Caddy's docs](https://caddyserver.com/docs/automatic-https) for more inform
 
 ### Building your own Caddy-based image
 
-Most users deploying production sites will not want to rely on mounting files into a container, but will instead base their own images on `caddy`:
+Most users deploying production sites will not want to rely on mounting files into a container, but will instead base their own images on `arm64v8/caddy`:
 
 ```Dockerfile
 # note: never use the :latest tag in a production site
-FROM caddy:<version>
+FROM arm64v8/caddy:<version>
 
 COPY Caddyfile /etc/caddy/Caddyfile
 COPY site /srv
@@ -159,18 +146,18 @@ Caddy is extendable through the use of "modules". See https://caddyserver.com/do
 You can use the `:builder` image as a short-cut to building a new Caddy binary:
 
 ```Dockerfile
-FROM caddy:<version>-builder AS builder
+FROM arm64v8/caddy:<version>-builder AS builder
 
 RUN xcaddy build \
     --with github.com/caddyserver/nginx-adapter \
     --with github.com/hairyhenderson/caddy-teapot-module@v0.0.3-0
 
-FROM caddy:<version>
+FROM arm64v8/caddy:<version>
 
 COPY --from=builder /usr/bin/caddy /usr/bin/caddy
 ```
 
-Note the second `FROM` instruction - this produces a much smaller image by simply overlaying the newly-built binary on top of the regular `caddy` image.
+Note the second `FROM` instruction - this produces a much smaller image by simply overlaying the newly-built binary on top of the regular `arm64v8/caddy` image.
 
 The [`xcaddy`](https://caddyserver.com/docs/build#xcaddy) tool is used to [build a new Caddy entrypoint](https://github.com/caddyserver/caddy/blob/4217217badf220d7d2c25f43f955fdc8454f2c64/cmd/caddy/main.go#L15..L25), with the provided modules. You can specify just a module name, or a name with a version (separated by `@`). You can also specify a specific version (can be a version tag or commit hash) of Caddy to build from. Read more about [`xcaddy` usage](https://github.com/caddyserver/xcaddy#command-usage).
 
@@ -206,7 +193,7 @@ version: "3.7"
 
 services:
   caddy:
-    image: caddy:<version>
+    image: arm64v8/caddy:<version>
     restart: unless-stopped
     cap_add:
       - NET_ADMIN
@@ -230,28 +217,19 @@ Defining the data volume as [`external`](https://docs.docker.com/compose/compose
 
 # Image Variants
 
-The `caddy` images come in many flavors, each designed for a specific use case.
+The `arm64v8/caddy` images come in many flavors, each designed for a specific use case.
 
-## `caddy:<version>`
+## `arm64v8/caddy:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `caddy:<version>-alpine`
+## `arm64v8/caddy:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
 This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
 
 To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
-
-## `caddy:<version>-windowsservercore`
-
-This image is based on [Windows Server Core (`microsoft/windowsservercore`)](https://hub.docker.com/r/microsoft/windowsservercore/). As such, it only works in places which that image does, such as Windows 10 Professional/Enterprise (Anniversary Edition) or Windows Server 2016.
-
-For information about how to get Docker running on Windows, please see the relevant "Quick Start" guide provided by Microsoft:
-
--	[Windows Server Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_server)
--	[Windows 10 Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)
 
 # License
 
