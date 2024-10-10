@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v5` builds of [the `nats` official image](https://hub.docker.com/_/nats) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,32 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
-(See ["What's the difference between 'Shared' and 'Simple' tags?" in the FAQ](https://github.com/docker-library/faq#whats-the-difference-between-shared-and-simple-tags).)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v5` ARCHITECTURE
 
-## Simple Tags
-
--	[`2.10.21-alpine3.20`, `2.10-alpine3.20`, `2-alpine3.20`, `alpine3.20`, `2.10.21-alpine`, `2.10-alpine`, `2-alpine`, `alpine`](https://github.com/nats-io/nats-docker/blob/fec36788a2e4e4244df6cfd69b699f51b4b4b62f/2.10.x/alpine3.20/Dockerfile)
-
--	[`2.10.21-scratch`, `2.10-scratch`, `2-scratch`, `scratch`, `2.10.21-linux`, `2.10-linux`, `2-linux`, `linux`](https://github.com/nats-io/nats-docker/blob/fec36788a2e4e4244df6cfd69b699f51b4b4b62f/2.10.x/scratch/Dockerfile)
-
--	[`2.10.21-windowsservercore-1809`, `2.10-windowsservercore-1809`, `2-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/nats-io/nats-docker/blob/fec36788a2e4e4244df6cfd69b699f51b4b4b62f/2.10.x/windowsservercore-1809/Dockerfile)
-
--	[`2.10.21-nanoserver-1809`, `2.10-nanoserver-1809`, `2-nanoserver-1809`, `nanoserver-1809`](https://github.com/nats-io/nats-docker/blob/fec36788a2e4e4244df6cfd69b699f51b4b4b62f/2.10.x/nanoserver-1809/Dockerfile)
-
-## Shared Tags
-
--	`2.10.21`, `2.10`, `2`, `latest`:
-
-	-	[`2.10.21-scratch`](https://github.com/nats-io/nats-docker/blob/fec36788a2e4e4244df6cfd69b699f51b4b4b62f/2.10.x/scratch/Dockerfile)
-	-	[`2.10.21-nanoserver-1809`](https://github.com/nats-io/nats-docker/blob/fec36788a2e4e4244df6cfd69b699f51b4b4b62f/2.10.x/nanoserver-1809/Dockerfile)
-
--	`2.10.21-windowsservercore`, `2.10-windowsservercore`, `2-windowsservercore`, `windowsservercore`:
-
-	-	[`2.10.21-windowsservercore-1809`](https://github.com/nats-io/nats-docker/blob/fec36788a2e4e4244df6cfd69b699f51b4b4b62f/2.10.x/windowsservercore-1809/Dockerfile)
-
--	`2.10.21-nanoserver`, `2.10-nanoserver`, `2-nanoserver`, `nanoserver`:
-
-	-	[`2.10.21-nanoserver-1809`](https://github.com/nats-io/nats-docker/blob/fec36788a2e4e4244df6cfd69b699f51b4b4b62f/2.10.x/nanoserver-1809/Dockerfile)
+[![arm32v5/nats build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v5/job/nats.svg?label=arm32v5/nats%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v5/job/nats/)
 
 # Quick reference (cont.)
 
@@ -93,15 +72,15 @@ WARNING:
 # For instance, to run the NATS Server and have it listen on port 4444,
 # you would have to run like this:
 #
-#   docker run -p 4444:4444 nats -p 4444
+#   docker run -p 4444:4444 arm32v5/nats -p 4444
 #
 # Or, if you want to publish the port 4444 as a different port, for example 5555:
 #
-#   docker run -p 5555:4444 nats -p 4444
+#   docker run -p 5555:4444 arm32v5/nats -p 4444
 #
 # Check "docker run" for more information.
 
-$ docker run -d --name nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 nats
+$ docker run -d --name nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 arm32v5/nats
 [INF] Starting nats-server
 [INF]   Version:  2.9.8
 [INF]   Git:      [60e335a]
@@ -120,10 +99,10 @@ $ docker run -d --name nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 nats
 # Note that since you are passing arguments, this overrides the CMD section
 # of the Dockerfile, so you need to pass all arguments, including the
 # config file.
-$ docker run -d --name=nats-2 --link nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 nats -c /etc/nats/nats-server.conf --routes=nats-route://ruser:T0pS3cr3t@nats-main:6222
+$ docker run -d --name=nats-2 --link nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 arm32v5/nats -c /etc/nats/nats-server.conf --routes=nats-route://ruser:T0pS3cr3t@nats-main:6222
 
 # If you want to verify the routes are connected, try this instead:
-$ docker run -d --name=nats-2 --link nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 nats -c /etc/nats/nats-server.conf --routes=nats-route://ruser:T0pS3cr3t@nats-main:6222 -DV
+$ docker run -d --name=nats-2 --link nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 arm32v5/nats -c /etc/nats/nats-server.conf --routes=nats-route://ruser:T0pS3cr3t@nats-main:6222 -DV
 [INF] Starting nats-server
 [INF]   Version:  2.9.8
 [INF]   Git:      [60e335a]
@@ -246,31 +225,6 @@ Common Options:
     -v, --version                    Show version
         --help_tls                   TLS help
 ```
-
-# Image Variants
-
-The `nats` images come in many flavors, each designed for a specific use case.
-
-## `nats:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-## `nats:<version>-alpine`
-
-This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
-
-This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
-
-To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
-
-## `nats:<version>-windowsservercore`
-
-This image is based on [Windows Server Core (`microsoft/windowsservercore`)](https://hub.docker.com/r/microsoft/windowsservercore/). As such, it only works in places which that image does, such as Windows 10 Professional/Enterprise (Anniversary Edition) or Windows Server 2016.
-
-For information about how to get Docker running on Windows, please see the relevant "Quick Start" guide provided by Microsoft:
-
--	[Windows Server Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_server)
--	[Windows 10 Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)
 
 # License
 

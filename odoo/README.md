@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v5` builds of [the `odoo` official image](https://hub.docker.com/_/odoo) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,11 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`18.0-20241007`, `18.0`, `18`, `latest`](https://github.com/odoo/docker/blob/282f5a3761223344e610dfe889f737d75039531d/18.0/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v5` ARCHITECTURE
 
--	[`17.0-20241007`, `17.0`, `17`](https://github.com/odoo/docker/blob/282f5a3761223344e610dfe889f737d75039531d/17.0/Dockerfile)
-
--	[`16.0-20241007`, `16.0`, `16`](https://github.com/odoo/docker/blob/282f5a3761223344e610dfe889f737d75039531d/16.0/Dockerfile)
+[![arm32v5/odoo build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v5/job/odoo.svg?label=arm32v5/odoo%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v5/job/odoo/)
 
 # Quick reference (cont.)
 
@@ -70,7 +70,7 @@ $ docker run -d -e POSTGRES_USER=odoo -e POSTGRES_PASSWORD=odoo -e POSTGRES_DB=p
 ## Start an Odoo instance
 
 ```console
-$ docker run -p 8069:8069 --name odoo --link db:db -t odoo
+$ docker run -p 8069:8069 --name odoo --link db:db -t arm32v5/odoo
 ```
 
 The alias of the container running Postgres must be db for Odoo to be able to connect to the Postgres server.
@@ -78,8 +78,8 @@ The alias of the container running Postgres must be db for Odoo to be able to co
 ## Stop and restart an Odoo instance
 
 ```console
-$ docker stop odoo
-$ docker start -a odoo
+$ docker stop arm32v5/odoo
+$ docker start -a arm32v5/odoo
 ```
 
 ## Use named volumes to preserve data
@@ -87,7 +87,7 @@ $ docker start -a odoo
 When the Odoo container is created like described above, the odoo filestore is created inside the container. If the container is removed, the filestore is lost. The preferred way to prevent that is by using a Docker named [volume](https://docs.docker.com/storage/volumes/).
 
 ```console
-$ docker run -v odoo-data:/var/lib/odoo -d -p 8069:8069 --name odoo --link db:db -t odoo
+$ docker run -v odoo-data:/var/lib/odoo -d -p 8069:8069 --name odoo --link db:db -t arm32v5/odoo
 ```
 
 With the above command, the volume named `odoo-data` will persist even if the container is removed and can be re-used by issuing the same command.
@@ -111,7 +111,7 @@ Restarting a PostgreSQL server does not affect the created databases.
 The default configuration file for the server (located at `/etc/odoo/odoo.conf`) can be overriden at startup using volumes. Suppose you have a custom configuration at `/path/to/config/odoo.conf`, then
 
 ```console
-$ docker run -v /path/to/config:/etc/odoo -p 8069:8069 --name odoo --link db:db -t odoo
+$ docker run -v /path/to/config:/etc/odoo -p 8069:8069 --name odoo --link db:db -t arm32v5/odoo
 ```
 
 Please use [this configuration template](https://github.com/odoo/docker/blob/master/17.0/odoo.conf) to write your custom configuration as we already set some arguments for running Odoo inside a Docker container.
@@ -119,7 +119,7 @@ Please use [this configuration template](https://github.com/odoo/docker/blob/mas
 You can also directly specify Odoo arguments inline. Those arguments must be given after the keyword `--` in the command-line, as follows
 
 ```console
-$ docker run -p 8069:8069 --name odoo --link db:db -t odoo -- --db-filter=odoo_db_.*
+$ docker run -p 8069:8069 --name odoo --link db:db -t arm32v5/odoo -- --db-filter=odoo_db_.*
 ```
 
 ## Mount custom addons
@@ -127,7 +127,7 @@ $ docker run -p 8069:8069 --name odoo --link db:db -t odoo -- --db-filter=odoo_d
 You can mount your own Odoo addons within the Odoo container, at `/mnt/extra-addons`
 
 ```console
-$ docker run -v /path/to/addons:/mnt/extra-addons -p 8069:8069 --name odoo --link db:db -t odoo
+$ docker run -v /path/to/addons:/mnt/extra-addons -p 8069:8069 --name odoo --link db:db -t arm32v5/odoo
 ```
 
 **Note:** Altough there is no official Odoo Enterprise Docker image, the Enterprise modules can be mounted by using the above mentionned method.
@@ -135,8 +135,8 @@ $ docker run -v /path/to/addons:/mnt/extra-addons -p 8069:8069 --name odoo --lin
 ## Run multiple Odoo instances
 
 ```console
-$ docker run -p 8070:8069 --name odoo2 --link db:db -t odoo
-$ docker run -p 8071:8069 --name odoo3 --link db:db -t odoo
+$ docker run -p 8070:8069 --name odoo2 --link db:db -t arm32v5/odoo
+$ docker run -p 8071:8069 --name odoo3 --link db:db -t arm32v5/odoo
 ```
 
 **Note:** For plain use of mails and reports functionalities, when the host and container ports differ (e.g. 8070 and 8069), one has to set, in Odoo, `Settings->Parameters->System Parameters` (requires technical features), web.base.url to the container port (e.g. 127.0.0.1:8069).
@@ -158,7 +158,7 @@ The simplest `docker-compose.yml` file would be:
 version: '3.1'
 services:
   web:
-    image: odoo:17.0
+    image: arm32v5/odoo:17.0
     depends_on:
       - db
     ports:
@@ -177,7 +177,7 @@ If the default postgres credentials does not suit you, tweak the environment var
 version: '3.1'
 services:
   web:
-    image: odoo:17.0
+    image: arm32v5/odoo:17.0
     depends_on:
       - mydb
     ports:
@@ -205,7 +205,7 @@ Here's a last example showing you how to
 version: '3.1'
 services:
   web:
-    image: odoo:17.0
+    image: arm32v5/odoo:17.0
     depends_on:
       - db
     ports:
@@ -253,7 +253,7 @@ Suppose you created a database from an Odoo instance named old-odoo, and you wan
 By default, Odoo 16.0+ uses a filestore (located at `/var/lib/odoo/filestore/`) for attachments. You should restore this filestore in your new Odoo instance by running
 
 ```console
-$ docker run --volumes-from old-odoo -p 8070:8069 --name new-odoo --link db:db -t odoo
+$ docker run --volumes-from old-odoo -p 8070:8069 --name new-odoo --link db:db -t arm32v5/odoo
 ```
 
 # License
