@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `mips64le` builds of [the `ruby` official image](https://hub.docker.com/_/ruby) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -28,49 +30,19 @@ WARNING:
 
 -	[`3.4.0-preview2-slim-bookworm`, `3.4-rc-slim-bookworm`, `3.4.0-preview2-slim`, `3.4-rc-slim`](https://github.com/docker-library/ruby/blob/4e09dcf80f32040cde8ff4bb226367d45beadcd8/3.4-rc/slim-bookworm/Dockerfile)
 
--	[`3.4.0-preview2-bullseye`, `3.4-rc-bullseye`](https://github.com/docker-library/ruby/blob/4e09dcf80f32040cde8ff4bb226367d45beadcd8/3.4-rc/bullseye/Dockerfile)
-
--	[`3.4.0-preview2-slim-bullseye`, `3.4-rc-slim-bullseye`](https://github.com/docker-library/ruby/blob/4e09dcf80f32040cde8ff4bb226367d45beadcd8/3.4-rc/slim-bullseye/Dockerfile)
-
--	[`3.4.0-preview2-alpine3.20`, `3.4-rc-alpine3.20`, `3.4.0-preview2-alpine`, `3.4-rc-alpine`](https://github.com/docker-library/ruby/blob/4e09dcf80f32040cde8ff4bb226367d45beadcd8/3.4-rc/alpine3.20/Dockerfile)
-
--	[`3.4.0-preview2-alpine3.19`, `3.4-rc-alpine3.19`](https://github.com/docker-library/ruby/blob/4e09dcf80f32040cde8ff4bb226367d45beadcd8/3.4-rc/alpine3.19/Dockerfile)
-
 -	[`3.3.5-bookworm`, `3.3-bookworm`, `3-bookworm`, `bookworm`, `3.3.5`, `3.3`, `3`, `latest`](https://github.com/docker-library/ruby/blob/04175a1c782da7183d8cd1ebed8c91b3ce0fe50b/3.3/bookworm/Dockerfile)
 
 -	[`3.3.5-slim-bookworm`, `3.3-slim-bookworm`, `3-slim-bookworm`, `slim-bookworm`, `3.3.5-slim`, `3.3-slim`, `3-slim`, `slim`](https://github.com/docker-library/ruby/blob/04175a1c782da7183d8cd1ebed8c91b3ce0fe50b/3.3/slim-bookworm/Dockerfile)
-
--	[`3.3.5-bullseye`, `3.3-bullseye`, `3-bullseye`, `bullseye`](https://github.com/docker-library/ruby/blob/04175a1c782da7183d8cd1ebed8c91b3ce0fe50b/3.3/bullseye/Dockerfile)
-
--	[`3.3.5-slim-bullseye`, `3.3-slim-bullseye`, `3-slim-bullseye`, `slim-bullseye`](https://github.com/docker-library/ruby/blob/04175a1c782da7183d8cd1ebed8c91b3ce0fe50b/3.3/slim-bullseye/Dockerfile)
-
--	[`3.3.5-alpine3.20`, `3.3-alpine3.20`, `3-alpine3.20`, `alpine3.20`, `3.3.5-alpine`, `3.3-alpine`, `3-alpine`, `alpine`](https://github.com/docker-library/ruby/blob/04175a1c782da7183d8cd1ebed8c91b3ce0fe50b/3.3/alpine3.20/Dockerfile)
-
--	[`3.3.5-alpine3.19`, `3.3-alpine3.19`, `3-alpine3.19`, `alpine3.19`](https://github.com/docker-library/ruby/blob/04175a1c782da7183d8cd1ebed8c91b3ce0fe50b/3.3/alpine3.19/Dockerfile)
 
 -	[`3.2.5-bookworm`, `3.2-bookworm`, `3.2.5`, `3.2`](https://github.com/docker-library/ruby/blob/6438466b4fd948a31f66b2f2a934c799b598233e/3.2/bookworm/Dockerfile)
 
 -	[`3.2.5-slim-bookworm`, `3.2-slim-bookworm`, `3.2.5-slim`, `3.2-slim`](https://github.com/docker-library/ruby/blob/6438466b4fd948a31f66b2f2a934c799b598233e/3.2/slim-bookworm/Dockerfile)
 
--	[`3.2.5-bullseye`, `3.2-bullseye`](https://github.com/docker-library/ruby/blob/6438466b4fd948a31f66b2f2a934c799b598233e/3.2/bullseye/Dockerfile)
-
--	[`3.2.5-slim-bullseye`, `3.2-slim-bullseye`](https://github.com/docker-library/ruby/blob/6438466b4fd948a31f66b2f2a934c799b598233e/3.2/slim-bullseye/Dockerfile)
-
--	[`3.2.5-alpine3.20`, `3.2-alpine3.20`, `3.2.5-alpine`, `3.2-alpine`](https://github.com/docker-library/ruby/blob/6438466b4fd948a31f66b2f2a934c799b598233e/3.2/alpine3.20/Dockerfile)
-
--	[`3.2.5-alpine3.19`, `3.2-alpine3.19`](https://github.com/docker-library/ruby/blob/6438466b4fd948a31f66b2f2a934c799b598233e/3.2/alpine3.19/Dockerfile)
-
 -	[`3.1.6-bookworm`, `3.1-bookworm`, `3.1.6`, `3.1`](https://github.com/docker-library/ruby/blob/f69cac9888c7909b402a1bc21a87331429318aae/3.1/bookworm/Dockerfile)
 
 -	[`3.1.6-slim-bookworm`, `3.1-slim-bookworm`, `3.1.6-slim`, `3.1-slim`](https://github.com/docker-library/ruby/blob/f69cac9888c7909b402a1bc21a87331429318aae/3.1/slim-bookworm/Dockerfile)
 
--	[`3.1.6-bullseye`, `3.1-bullseye`](https://github.com/docker-library/ruby/blob/f69cac9888c7909b402a1bc21a87331429318aae/3.1/bullseye/Dockerfile)
-
--	[`3.1.6-slim-bullseye`, `3.1-slim-bullseye`](https://github.com/docker-library/ruby/blob/f69cac9888c7909b402a1bc21a87331429318aae/3.1/slim-bullseye/Dockerfile)
-
--	[`3.1.6-alpine3.20`, `3.1-alpine3.20`, `3.1.6-alpine`, `3.1-alpine`](https://github.com/docker-library/ruby/blob/f69cac9888c7909b402a1bc21a87331429318aae/3.1/alpine3.20/Dockerfile)
-
--	[`3.1.6-alpine3.19`, `3.1-alpine3.19`](https://github.com/docker-library/ruby/blob/f69cac9888c7909b402a1bc21a87331429318aae/3.1/alpine3.19/Dockerfile)
+[![mips64le/ruby build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/mips64le/job/ruby.svg?label=mips64le/ruby%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/mips64le/job/ruby/)
 
 # Quick reference (cont.)
 
@@ -104,7 +76,7 @@ Ruby is a dynamic, reflective, object-oriented, general-purpose, open-source pro
 ## Create a `Dockerfile` in your Ruby app project
 
 ```dockerfile
-FROM ruby:3.3
+FROM mips64le/ruby:3.3
 
 # throw errors if Gemfile has been modified since Gemfile.lock
 RUN bundle config --global frozen 1
@@ -133,7 +105,7 @@ $ docker run -it --name my-running-script my-ruby-app
 The above example `Dockerfile` expects a `Gemfile.lock` in your app directory. This `docker run` will help you generate one. Run it in the root of your app, next to the `Gemfile`:
 
 ```console
-$ docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app ruby:3.3 bundle install
+$ docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app mips64le/ruby:3.3 bundle install
 ```
 
 ## Run a single Ruby script
@@ -141,7 +113,7 @@ $ docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app ruby:3.3 bundle install
 For many simple, single file projects, you may find it inconvenient to write a complete `Dockerfile`. In such cases, you can run a Ruby script by using the Ruby Docker image directly:
 
 ```console
-$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp ruby:3.3 ruby your-daemon-or-script.rb
+$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp mips64le/ruby:3.3 ruby your-daemon-or-script.rb
 ```
 
 ## Encoding
@@ -158,27 +130,19 @@ If these cause issues for your use case (running multiple Ruby applications in a
 
 # Image Variants
 
-The `ruby` images come in many flavors, each designed for a specific use case.
+The `mips64le/ruby` images come in many flavors, each designed for a specific use case.
 
-## `ruby:<version>`
+## `mips64le/ruby:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like bookworm or bullseye in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+Some of these tags may have names like bookworm in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 This tag is based off of [`buildpack-deps`](https://hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of Docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
 
-## `ruby:<version>-slim`
+## `mips64le/ruby:<version>-slim`
 
-This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `ruby`. Unless you are working in an environment where *only* the `ruby` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
-
-## `ruby:<version>-alpine`
-
-This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
-
-This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
-
-To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
+This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `mips64le/ruby`. Unless you are working in an environment where *only* the `mips64le/ruby` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
 
 # License
 

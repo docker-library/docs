@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `mips64le` builds of [the `openjdk` official image](https://hub.docker.com/_/openjdk) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # **DEPRECATION NOTICE**
 
 This image is officially deprecated and all users are recommended to find and use suitable replacements ASAP. Some examples of other Official Image alternatives (listed in alphabetical order with no intentional or implied preference):
@@ -38,44 +40,9 @@ The only tags which will continue to receive updates beyond July 2022 will be Ea
 
 # Supported tags and respective `Dockerfile` links
 
-(See ["What's the difference between 'Shared' and 'Simple' tags?" in the FAQ](https://github.com/docker-library/faq#whats-the-difference-between-shared-and-simple-tags).)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `mips64le` ARCHITECTURE
 
-## Simple Tags
-
--	[`24-ea-18-jdk-oraclelinux9`, `24-ea-18-oraclelinux9`, `24-ea-jdk-oraclelinux9`, `24-ea-oraclelinux9`, `24-jdk-oraclelinux9`, `24-oraclelinux9`, `24-ea-18-jdk-oracle`, `24-ea-18-oracle`, `24-ea-jdk-oracle`, `24-ea-oracle`, `24-jdk-oracle`, `24-oracle`](https://github.com/docker-library/openjdk/blob/6a15ad904559ef795b2b5156f355d07dac259e8a/24/jdk/oraclelinux9/Dockerfile)
-
--	[`24-ea-18-jdk-oraclelinux8`, `24-ea-18-oraclelinux8`, `24-ea-jdk-oraclelinux8`, `24-ea-oraclelinux8`, `24-jdk-oraclelinux8`, `24-oraclelinux8`](https://github.com/docker-library/openjdk/blob/6a15ad904559ef795b2b5156f355d07dac259e8a/24/jdk/oraclelinux8/Dockerfile)
-
--	[`24-ea-18-jdk-bookworm`, `24-ea-18-bookworm`, `24-ea-jdk-bookworm`, `24-ea-bookworm`, `24-jdk-bookworm`, `24-bookworm`](https://github.com/docker-library/openjdk/blob/6a15ad904559ef795b2b5156f355d07dac259e8a/24/jdk/bookworm/Dockerfile)
-
--	[`24-ea-18-jdk-slim-bookworm`, `24-ea-18-slim-bookworm`, `24-ea-jdk-slim-bookworm`, `24-ea-slim-bookworm`, `24-jdk-slim-bookworm`, `24-slim-bookworm`, `24-ea-18-jdk-slim`, `24-ea-18-slim`, `24-ea-jdk-slim`, `24-ea-slim`, `24-jdk-slim`, `24-slim`](https://github.com/docker-library/openjdk/blob/6a15ad904559ef795b2b5156f355d07dac259e8a/24/jdk/slim-bookworm/Dockerfile)
-
--	[`24-ea-18-jdk-bullseye`, `24-ea-18-bullseye`, `24-ea-jdk-bullseye`, `24-ea-bullseye`, `24-jdk-bullseye`, `24-bullseye`](https://github.com/docker-library/openjdk/blob/6a15ad904559ef795b2b5156f355d07dac259e8a/24/jdk/bullseye/Dockerfile)
-
--	[`24-ea-18-jdk-slim-bullseye`, `24-ea-18-slim-bullseye`, `24-ea-jdk-slim-bullseye`, `24-ea-slim-bullseye`, `24-jdk-slim-bullseye`, `24-slim-bullseye`](https://github.com/docker-library/openjdk/blob/6a15ad904559ef795b2b5156f355d07dac259e8a/24/jdk/slim-bullseye/Dockerfile)
-
--	[`24-ea-18-jdk-windowsservercore-ltsc2022`, `24-ea-18-windowsservercore-ltsc2022`, `24-ea-jdk-windowsservercore-ltsc2022`, `24-ea-windowsservercore-ltsc2022`, `24-jdk-windowsservercore-ltsc2022`, `24-windowsservercore-ltsc2022`](https://github.com/docker-library/openjdk/blob/6a15ad904559ef795b2b5156f355d07dac259e8a/24/jdk/windows/windowsservercore-ltsc2022/Dockerfile)
-
--	[`24-ea-18-jdk-windowsservercore-1809`, `24-ea-18-windowsservercore-1809`, `24-ea-jdk-windowsservercore-1809`, `24-ea-windowsservercore-1809`, `24-jdk-windowsservercore-1809`, `24-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/6a15ad904559ef795b2b5156f355d07dac259e8a/24/jdk/windows/windowsservercore-1809/Dockerfile)
-
--	[`24-ea-18-jdk-nanoserver-1809`, `24-ea-18-nanoserver-1809`, `24-ea-jdk-nanoserver-1809`, `24-ea-nanoserver-1809`, `24-jdk-nanoserver-1809`, `24-nanoserver-1809`](https://github.com/docker-library/openjdk/blob/6a15ad904559ef795b2b5156f355d07dac259e8a/24/jdk/windows/nanoserver-1809/Dockerfile)
-
-## Shared Tags
-
--	`24-ea-18-jdk`, `24-ea-18`, `24-ea-jdk`, `24-ea`, `24-jdk`, `24`:
-
-	-	[`24-ea-18-jdk-oraclelinux9`](https://github.com/docker-library/openjdk/blob/6a15ad904559ef795b2b5156f355d07dac259e8a/24/jdk/oraclelinux9/Dockerfile)
-	-	[`24-ea-18-jdk-windowsservercore-ltsc2022`](https://github.com/docker-library/openjdk/blob/6a15ad904559ef795b2b5156f355d07dac259e8a/24/jdk/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`24-ea-18-jdk-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/6a15ad904559ef795b2b5156f355d07dac259e8a/24/jdk/windows/windowsservercore-1809/Dockerfile)
-
--	`24-ea-18-jdk-windowsservercore`, `24-ea-18-windowsservercore`, `24-ea-jdk-windowsservercore`, `24-ea-windowsservercore`, `24-jdk-windowsservercore`, `24-windowsservercore`:
-
-	-	[`24-ea-18-jdk-windowsservercore-ltsc2022`](https://github.com/docker-library/openjdk/blob/6a15ad904559ef795b2b5156f355d07dac259e8a/24/jdk/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`24-ea-18-jdk-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/6a15ad904559ef795b2b5156f355d07dac259e8a/24/jdk/windows/windowsservercore-1809/Dockerfile)
-
--	`24-ea-18-jdk-nanoserver`, `24-ea-18-nanoserver`, `24-ea-jdk-nanoserver`, `24-ea-nanoserver`, `24-jdk-nanoserver`, `24-nanoserver`:
-
-	-	[`24-ea-18-jdk-nanoserver-1809`](https://github.com/docker-library/openjdk/blob/6a15ad904559ef795b2b5156f355d07dac259e8a/24/jdk/windows/nanoserver-1809/Dockerfile)
+[![mips64le/openjdk build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/mips64le/job/openjdk.svg?label=mips64le/openjdk%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/mips64le/job/openjdk/)
 
 # Quick reference (cont.)
 
@@ -113,7 +80,7 @@ Java is a registered trademark of Oracle and/or its affiliates.
 The most straightforward way to use this image is to use a Java container as both the build and runtime environment. In your `Dockerfile`, writing something along the lines of the following will compile and run your project:
 
 ```dockerfile
-FROM openjdk:11
+FROM mips64le/openjdk:11
 COPY . /usr/src/myapp
 WORKDIR /usr/src/myapp
 RUN javac Main.java
@@ -132,7 +99,7 @@ $ docker run -it --rm --name my-running-app my-java-app
 There may be occasions where it is not appropriate to run your app inside a container. To compile, but not run your app inside the Docker instance, you can write something like:
 
 ```console
-$ docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp openjdk:11 javac Main.java
+$ docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp mips64le/openjdk:11 javac Main.java
 ```
 
 This will add your current directory as a volume to the container, set the working directory to the volume, and run the command `javac Main.java` which will tell Java to compile the code in `Main.java` and output the Java class file to `Main.class`.
@@ -156,33 +123,6 @@ RAM limit is supported by Windows Server containers, but currently the JVM canno
 ## Environment variables with periods in their names
 
 Some shells (notably, [the BusyBox `/bin/sh` included in Alpine Linux](https://github.com/docker-library/openjdk/issues/135)) do not support environment variables with periods in the names (which are technically not POSIX compliant), and thus *strip* them instead of passing them through (as Bash does). If your application requires environment variables of this form, either use `CMD ["java", ...]` directly (no shell), or (install and) use Bash explicitly instead of `/bin/sh`.
-
-# Image Variants
-
-The `openjdk` images come in many flavors, each designed for a specific use case.
-
-## `openjdk:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-Some of these tags may have names like bookworm or bullseye in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
-
-## `openjdk:<version>` (from 12 onwards), `openjdk:<version>-oracle` and `openjdk:<version>-oraclelinux8`
-
-Starting with `openjdk:12` the default image as well as the `-oracle` and `-oraclelinux8` variants are based on the official [Oracle Linux 8 image](https://hub.docker.com/_/oraclelinux) which is provided under the GPLv2 as per the [Oracle Linux End User Agreement (EULA)](https://oss.oracle.com/ol8/EULA).
-
-The `-oraclelinux7` variants are based on the official [Oracle Linux 7 image](https://hub.docker.com/_/oraclelinux) which is provided under the GPLv2 as per the [Oracle Linux End User Agreement (EULA)](https://oss.oracle.com/ol7/EULA).
-
-The OpenJDK binaries are built by Oracle and are sourced from the [OpenJDK community](https://openjdk.java.net/). These binaries are licensed under the [GPLv2 with the Classpath Exception](https://openjdk.java.net/legal/gplv2+ce.html).
-
-## `openjdk:<version>-windowsservercore`
-
-This image is based on [Windows Server Core (`microsoft/windowsservercore`)](https://hub.docker.com/r/microsoft/windowsservercore/). As such, it only works in places which that image does, such as Windows 10 Professional/Enterprise (Anniversary Edition) or Windows Server 2016.
-
-For information about how to get Docker running on Windows, please see the relevant "Quick Start" guide provided by Microsoft:
-
--	[Windows Server Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_server)
--	[Windows 10 Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)
 
 # License
 
