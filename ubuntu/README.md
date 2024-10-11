@@ -28,9 +28,9 @@ WARNING:
 
 -	[`22.04`, `jammy-20240911.1`, `jammy`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-amd64-20240911.1-b88de29a&id=b88de29aeed396f56b7eee0dd87e7249e7a8642f)
 
--	[`24.04`, `noble-20240904.1`, `noble`, `latest`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-amd64-20240904.1-dae9d66c&id=dae9d66c89aece3c1df8a177a14c4a359938886c)
+-	[`24.04`, `noble-20241009`, `noble`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-amd64-20241009-997f6096&id=997f60964742b54aed111e647059906b374d51cc)
 
--	[`24.10`, `oracular-20240918`, `oracular`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-oracular-amd64-20240918-38d6108e&id=38d6108ef2fa73d5939a96737e4f080285b67cbd)
+-	[`24.10`, `oracular-20241009`, `oracular`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-oracular-amd64-20241009-71a6e10d&id=71a6e10d9d17f0baa437a234367e8e16406bd3c2)
 
 # Quick reference (cont.)
 
