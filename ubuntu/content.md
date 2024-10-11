@@ -30,7 +30,7 @@ ENV LANG en_US.utf8
 
 ## Unminimize
 
-Starting from [Ubuntu 24.10 "Oracular Oriole"](https://discourse.ubuntu.com/t/oracular-oriole-release-notes/44878#unminimize), the `unminimize` command will no longer be shipped by default on all minimal images. It has now been moved to a dedicated package which can be installed via `apt-get install -y unminimize`.
+Starting from [Ubuntu 24.10 "Oracular Oriole"](https://discourse.ubuntu.com/t/oracular-oriole-release-notes/44878#unminimize), the `unminimize` command will no longer be shipped by default on minimal images. It has now been moved to a dedicated package which can be installed via `apt-get install -y unminimize`.
 
 # How is the rootfs built?
 
