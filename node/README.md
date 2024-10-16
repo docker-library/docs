@@ -24,17 +24,29 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`22-alpine3.19`, `22.9-alpine3.19`, `22.9.0-alpine3.19`, `alpine3.19`, `current-alpine3.19`](https://github.com/nodejs/docker-node/blob/58c3b39e5948f82c594395857193cd97d01c690e/22/alpine3.19/Dockerfile)
+-	[`23-alpine3.19`, `23.0-alpine3.19`, `23.0.0-alpine3.19`, `alpine3.19`, `current-alpine3.19`](https://github.com/nodejs/docker-node/blob/1ef28c2d9777d354513929cf85bca4d6fdac0dc3/23/alpine3.19/Dockerfile)
 
--	[`22-alpine`, `22-alpine3.20`, `22.9-alpine`, `22.9-alpine3.20`, `22.9.0-alpine`, `22.9.0-alpine3.20`, `alpine`, `alpine3.20`, `current-alpine`, `current-alpine3.20`](https://github.com/nodejs/docker-node/blob/58c3b39e5948f82c594395857193cd97d01c690e/22/alpine3.20/Dockerfile)
+-	[`23-alpine`, `23-alpine3.20`, `23.0-alpine`, `23.0-alpine3.20`, `23.0.0-alpine`, `23.0.0-alpine3.20`, `alpine`, `alpine3.20`, `current-alpine`, `current-alpine3.20`](https://github.com/nodejs/docker-node/blob/1ef28c2d9777d354513929cf85bca4d6fdac0dc3/23/alpine3.20/Dockerfile)
 
--	[`22`, `22-bookworm`, `22.9`, `22.9-bookworm`, `22.9.0`, `22.9.0-bookworm`, `bookworm`, `current`, `current-bookworm`, `latest`](https://github.com/nodejs/docker-node/blob/58c3b39e5948f82c594395857193cd97d01c690e/22/bookworm/Dockerfile)
+-	[`23`, `23-bookworm`, `23.0`, `23.0-bookworm`, `23.0.0`, `23.0.0-bookworm`, `bookworm`, `current`, `current-bookworm`, `latest`](https://github.com/nodejs/docker-node/blob/1ef28c2d9777d354513929cf85bca4d6fdac0dc3/23/bookworm/Dockerfile)
 
--	[`22-bookworm-slim`, `22-slim`, `22.9-bookworm-slim`, `22.9-slim`, `22.9.0-bookworm-slim`, `22.9.0-slim`, `bookworm-slim`, `current-bookworm-slim`, `current-slim`, `slim`](https://github.com/nodejs/docker-node/blob/58c3b39e5948f82c594395857193cd97d01c690e/22/bookworm-slim/Dockerfile)
+-	[`23-bookworm-slim`, `23-slim`, `23.0-bookworm-slim`, `23.0-slim`, `23.0.0-bookworm-slim`, `23.0.0-slim`, `bookworm-slim`, `current-bookworm-slim`, `current-slim`, `slim`](https://github.com/nodejs/docker-node/blob/1ef28c2d9777d354513929cf85bca4d6fdac0dc3/23/bookworm-slim/Dockerfile)
 
--	[`22-bullseye`, `22.9-bullseye`, `22.9.0-bullseye`, `bullseye`, `current-bullseye`](https://github.com/nodejs/docker-node/blob/58c3b39e5948f82c594395857193cd97d01c690e/22/bullseye/Dockerfile)
+-	[`23-bullseye`, `23.0-bullseye`, `23.0.0-bullseye`, `bullseye`, `current-bullseye`](https://github.com/nodejs/docker-node/blob/1ef28c2d9777d354513929cf85bca4d6fdac0dc3/23/bullseye/Dockerfile)
 
--	[`22-bullseye-slim`, `22.9-bullseye-slim`, `22.9.0-bullseye-slim`, `bullseye-slim`, `current-bullseye-slim`](https://github.com/nodejs/docker-node/blob/58c3b39e5948f82c594395857193cd97d01c690e/22/bullseye-slim/Dockerfile)
+-	[`23-bullseye-slim`, `23.0-bullseye-slim`, `23.0.0-bullseye-slim`, `bullseye-slim`, `current-bullseye-slim`](https://github.com/nodejs/docker-node/blob/1ef28c2d9777d354513929cf85bca4d6fdac0dc3/23/bullseye-slim/Dockerfile)
+
+-	[`22-alpine3.19`, `22.9-alpine3.19`, `22.9.0-alpine3.19`](https://github.com/nodejs/docker-node/blob/58c3b39e5948f82c594395857193cd97d01c690e/22/alpine3.19/Dockerfile)
+
+-	[`22-alpine`, `22-alpine3.20`, `22.9-alpine`, `22.9-alpine3.20`, `22.9.0-alpine`, `22.9.0-alpine3.20`](https://github.com/nodejs/docker-node/blob/58c3b39e5948f82c594395857193cd97d01c690e/22/alpine3.20/Dockerfile)
+
+-	[`22`, `22-bookworm`, `22.9`, `22.9-bookworm`, `22.9.0`, `22.9.0-bookworm`](https://github.com/nodejs/docker-node/blob/58c3b39e5948f82c594395857193cd97d01c690e/22/bookworm/Dockerfile)
+
+-	[`22-bookworm-slim`, `22-slim`, `22.9-bookworm-slim`, `22.9-slim`, `22.9.0-bookworm-slim`, `22.9.0-slim`](https://github.com/nodejs/docker-node/blob/58c3b39e5948f82c594395857193cd97d01c690e/22/bookworm-slim/Dockerfile)
+
+-	[`22-bullseye`, `22.9-bullseye`, `22.9.0-bullseye`](https://github.com/nodejs/docker-node/blob/58c3b39e5948f82c594395857193cd97d01c690e/22/bullseye/Dockerfile)
+
+-	[`22-bullseye-slim`, `22.9-bullseye-slim`, `22.9.0-bullseye-slim`](https://github.com/nodejs/docker-node/blob/58c3b39e5948f82c594395857193cd97d01c690e/22/bullseye-slim/Dockerfile)
 
 -	[`20-alpine3.19`, `20.18-alpine3.19`, `20.18.0-alpine3.19`, `iron-alpine3.19`, `lts-alpine3.19`](https://github.com/nodejs/docker-node/blob/8483b3edd9cc2a38360d88d360e3093d657ac3fe/20/alpine3.19/Dockerfile)
 
