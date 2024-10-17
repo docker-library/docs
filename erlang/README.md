@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v5` builds of [the `erlang` official image](https://hub.docker.com/_/erlang) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -28,25 +30,11 @@ WARNING:
 
 -	[`27.1.1.0-slim`, `27.1.1-slim`, `27.1-slim`, `27-slim`, `slim`](https://github.com/erlang/docker-erlang-otp/blob/52b9826787ead21236b3bfc13a1d1c9e5c75f45a/27/slim/Dockerfile)
 
--	[`27.1.1.0-alpine`, `27.1.1-alpine`, `27.1-alpine`, `27-alpine`, `alpine`](https://github.com/erlang/docker-erlang-otp/blob/52b9826787ead21236b3bfc13a1d1c9e5c75f45a/27/alpine/Dockerfile)
-
 -	[`26.2.5.2`, `26.2.5`, `26.2`, `26`](https://github.com/erlang/docker-erlang-otp/blob/6fa6c5811b9935c11d6a68db11032932491fbb7d/26/Dockerfile)
 
 -	[`26.2.5.2-slim`, `26.2.5-slim`, `26.2-slim`, `26-slim`](https://github.com/erlang/docker-erlang-otp/blob/6fa6c5811b9935c11d6a68db11032932491fbb7d/26/slim/Dockerfile)
 
--	[`26.2.5.2-alpine`, `26.2.5-alpine`, `26.2-alpine`, `26-alpine`](https://github.com/erlang/docker-erlang-otp/blob/6fa6c5811b9935c11d6a68db11032932491fbb7d/26/alpine/Dockerfile)
-
--	[`25.3.2.13`, `25.3.2`, `25.3`, `25`](https://github.com/erlang/docker-erlang-otp/blob/6fa6c5811b9935c11d6a68db11032932491fbb7d/25/Dockerfile)
-
--	[`25.3.2.13-slim`, `25.3.2-slim`, `25.3-slim`, `25-slim`](https://github.com/erlang/docker-erlang-otp/blob/6fa6c5811b9935c11d6a68db11032932491fbb7d/25/slim/Dockerfile)
-
--	[`25.3.2.13-alpine`, `25.3.2-alpine`, `25.3-alpine`, `25-alpine`](https://github.com/erlang/docker-erlang-otp/blob/6fa6c5811b9935c11d6a68db11032932491fbb7d/25/alpine/Dockerfile)
-
--	[`24.3.4.17`, `24.3.4`, `24.3`, `24`](https://github.com/erlang/docker-erlang-otp/blob/c7e3d58244259ec45bd0b84df7287096d9833d19/24/Dockerfile)
-
--	[`24.3.4.17-slim`, `24.3.4-slim`, `24.3-slim`, `24-slim`](https://github.com/erlang/docker-erlang-otp/blob/c7e3d58244259ec45bd0b84df7287096d9833d19/24/slim/Dockerfile)
-
--	[`24.3.4.17-alpine`, `24.3.4-alpine`, `24.3-alpine`, `24-alpine`](https://github.com/erlang/docker-erlang-otp/blob/c7e3d58244259ec45bd0b84df7287096d9833d19/24/alpine/Dockerfile)
+[![arm32v5/erlang build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v5/job/erlang.svg?label=arm32v5/erlang%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v5/job/erlang/)
 
 # Quick reference (cont.)
 
@@ -80,7 +68,7 @@ Erlang is a programming language used to build massively scalable soft real-time
 ## Run it as the REPL
 
 ```console
-➸ docker run -it --rm erlang
+➸ docker run -it --rm arm32v5/erlang
 Erlang/OTP 20 [erts-9.0] [source] [64-bit] [smp:8:8] [ds:8:8:10] [async-threads:10] [hipe] [kernel-poll:false]
 
 Eshell V9.0  (abort with ^G)
@@ -99,7 +87,7 @@ User switch command
   q                 - quit erlang
   ? | h             - this message
  --> q
-➸ docker run -it --rm -h erlang.local erlang erl -name snode@erlang.local
+➸ docker run -it --rm -h erlang.local arm32v5/erlang erl -name snode@erlang.local
 Erlang/OTP 20 [erts-9.0] [source] [64-bit] [smp:8:8] [ds:8:8:10] [async-threads:10] [hipe] [kernel-poll:false]
 
 Eshell V9.0  (abort with ^G)
@@ -113,30 +101,22 @@ User switch command
 ## Run a single Erlang escript
 
 ```console
-$ docker run -it --rm --name erlang-inst1 -v "$PWD":/usr/src/myapp -w /usr/src/myapp erlang escript your-escript.erl
+$ docker run -it --rm --name erlang-inst1 -v "$PWD":/usr/src/myapp -w /usr/src/myapp arm32v5/erlang escript your-escript.erl
 ```
 
 # Image Variants
 
-The `erlang` images come in many flavors, each designed for a specific use case.
+The `arm32v5/erlang` images come in many flavors, each designed for a specific use case.
 
-## `erlang:<version>`
+## `arm32v5/erlang:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
 This tag is based off of [`buildpack-deps`](https://hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of Docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
 
-## `erlang:<version>-slim`
+## `arm32v5/erlang:<version>-slim`
 
-This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `erlang`. Unless you are working in an environment where *only* the `erlang` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
-
-## `erlang:<version>-alpine`
-
-This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
-
-This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
-
-To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
+This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `arm32v5/erlang`. Unless you are working in an environment where *only* the `arm32v5/erlang` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
 
 # License
 

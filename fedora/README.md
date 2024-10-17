@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v5` builds of [the `fedora` official image](https://hub.docker.com/_/fedora) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,13 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`39`](https://github.com/fedora-cloud/docker-brew-fedora/blob/5b028576513bbea06b4ce927427f9bc3183285ec/x86_64/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v5` ARCHITECTURE
 
--	[`40`, `latest`](https://github.com/fedora-cloud/docker-brew-fedora/blob/587b205e429db73124477f89d3d1f77e75ef9550/x86_64/Dockerfile)
-
--	[`41`](https://github.com/fedora-cloud/docker-brew-fedora/blob/bcf046150f9f7db37cb4df2e877b306cb3610d03/x86_64/Dockerfile)
-
--	[`42`, `rawhide`](https://github.com/fedora-cloud/docker-brew-fedora/blob/78f4c52f0e2202bd61997b823e5b90b347b1dfcd/x86_64/Dockerfile)
+[![arm32v5/fedora build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v5/job/fedora.svg?label=arm32v5/fedora%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v5/job/fedora/)
 
 # Quick reference (cont.)
 
@@ -57,11 +55,11 @@ This image serves as the `official Fedora image` for the [Fedora Distribution](h
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/7925a7131128930eed07077f9369b7ca52e0fd02/fedora/logo.png)
 
-The `fedora:latest` tag will always point to the latest stable release.
+The `arm32v5/fedora:latest` tag will always point to the latest stable release.
 
 This image is a relatively small footprint in comparison to a standard Fedora installation. This image is generated in the [Fedora Build System](http://koji.fedoraproject.org/koji/) and is built from [this kickstart file](https://pagure.io/fedora-kickstarts/blob/main/f/fedora-container-base.ks).
 
-[Fedora Rawhide](https://fedoraproject.org/wiki/Releases/Rawhide) is available via `fedora:rawhide` and any specific version of Fedora as `fedora:$version` (example: `fedora:23`).
+[Fedora Rawhide](https://fedoraproject.org/wiki/Releases/Rawhide) is available via `arm32v5/fedora:rawhide` and any specific version of Fedora as `arm32v5/fedora:$version` (example: `arm32v5/fedora:23`).
 
 # License
 
