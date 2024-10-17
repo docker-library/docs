@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v6` builds of [the `mariadb` official image](https://hub.docker.com/_/mariadb) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -26,31 +28,9 @@ Also see the ["Getting Help with MariaDB" article on the MariaDB Knowledge Base]
 
 # Supported tags and respective `Dockerfile` links
 
--	[`11.6.1-ubi9-rc`, `11.6-ubi9-rc`, `11.6.1-ubi-rc`, `11.6-ubi-rc`](https://github.com/MariaDB/mariadb-docker/blob/275297af91e85af864e70c70ce2a650ec128db9c/11.6-ubi/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v6` ARCHITECTURE
 
--	[`11.6.1-noble-rc`, `11.6-noble-rc`, `11.6.1-rc`, `11.6-rc`](https://github.com/MariaDB/mariadb-docker/blob/275297af91e85af864e70c70ce2a650ec128db9c/11.6/Dockerfile)
-
--	[`11.5.2-ubi9`, `11.5-ubi9`, `11-ubi9`, `11.5.2-ubi`, `11.5-ubi`, `11-ubi`](https://github.com/MariaDB/mariadb-docker/blob/275297af91e85af864e70c70ce2a650ec128db9c/11.5-ubi/Dockerfile)
-
--	[`11.5.2-noble`, `11.5-noble`, `11-noble`, `noble`, `11.5.2`, `11.5`, `11`, `latest`](https://github.com/MariaDB/mariadb-docker/blob/275297af91e85af864e70c70ce2a650ec128db9c/11.5/Dockerfile)
-
--	[`11.4.3-ubi9`, `11.4-ubi9`, `lts-ubi9`, `11.4.3-ubi`, `11.4-ubi`, `lts-ubi`](https://github.com/MariaDB/mariadb-docker/blob/ee80a97d5cc2fd4f8779dbfedeb8fc8c47941812/11.4-ubi/Dockerfile)
-
--	[`11.4.3-noble`, `11.4-noble`, `lts-noble`, `11.4.3`, `11.4`, `lts`](https://github.com/MariaDB/mariadb-docker/blob/ee80a97d5cc2fd4f8779dbfedeb8fc8c47941812/11.4/Dockerfile)
-
--	[`11.2.5-jammy`, `11.2-jammy`, `11.2.5`, `11.2`](https://github.com/MariaDB/mariadb-docker/blob/ee80a97d5cc2fd4f8779dbfedeb8fc8c47941812/11.2/Dockerfile)
-
--	[`11.1.6-jammy`, `11.1-jammy`, `11.1.6`, `11.1`](https://github.com/MariaDB/mariadb-docker/blob/ee80a97d5cc2fd4f8779dbfedeb8fc8c47941812/11.1/Dockerfile)
-
--	[`10.11.9-ubi9`, `10.11-ubi9`, `10-ubi9`, `10.11.9-ubi`, `10.11-ubi`, `10-ubi`](https://github.com/MariaDB/mariadb-docker/blob/ee80a97d5cc2fd4f8779dbfedeb8fc8c47941812/10.11-ubi/Dockerfile)
-
--	[`10.11.9-jammy`, `10.11-jammy`, `10-jammy`, `10.11.9`, `10.11`, `10`](https://github.com/MariaDB/mariadb-docker/blob/ee80a97d5cc2fd4f8779dbfedeb8fc8c47941812/10.11/Dockerfile)
-
--	[`10.6.19-ubi9`, `10.6-ubi9`, `10.6.19-ubi`, `10.6-ubi`](https://github.com/MariaDB/mariadb-docker/blob/ee80a97d5cc2fd4f8779dbfedeb8fc8c47941812/10.6-ubi/Dockerfile)
-
--	[`10.6.19-focal`, `10.6-focal`, `10.6.19`, `10.6`](https://github.com/MariaDB/mariadb-docker/blob/ee80a97d5cc2fd4f8779dbfedeb8fc8c47941812/10.6/Dockerfile)
-
--	[`10.5.26-focal`, `10.5-focal`, `10.5.26`, `10.5`](https://github.com/MariaDB/mariadb-docker/blob/ee80a97d5cc2fd4f8779dbfedeb8fc8c47941812/10.5/Dockerfile)
+[![arm32v6/mariadb build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v6/job/mariadb.svg?label=arm32v6/mariadb%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v6/job/mariadb/)
 
 # Quick reference (cont.)
 
@@ -81,7 +61,7 @@ The intent is also to maintain high compatibility with MySQL, ensuring a library
 
 # How to use this image
 
-The mariadb has a number of tags, and of note is `latest`, as the latest stable version, and `lts`, as the last long term support release.
+The arm32v6/mariadb has a number of tags, and of note is `latest`, as the latest stable version, and `lts`, as the last long term support release.
 
 ## Running the container
 
@@ -90,19 +70,19 @@ The mariadb has a number of tags, and of note is `latest`, as the latest stable 
 The environment variables required to use this image involves the setting of the root user password:
 
 ```console
-$ docker run --detach --name some-mariadb --env MARIADB_ROOT_PASSWORD=my-secret-pw  mariadb:latest
+$ docker run --detach --name some-mariadb --env MARIADB_ROOT_PASSWORD=my-secret-pw  arm32v6/mariadb:latest
 ```
 
 or:
 
 ```console
-$ docker run --detach --name some-mariadb --env MARIADB_ALLOW_EMPTY_ROOT_PASSWORD=1  mariadb:latest
+$ docker run --detach --name some-mariadb --env MARIADB_ALLOW_EMPTY_ROOT_PASSWORD=1  arm32v6/mariadb:latest
 ```
 
 or:
 
 ```console
-$ docker run --detach --name some-mariadb --env MARIADB_RANDOM_ROOT_PASSWORD=1  mariadb:latest
+$ docker run --detach --name some-mariadb --env MARIADB_RANDOM_ROOT_PASSWORD=1  arm32v6/mariadb:latest
 ```
 
 ... where the container logs will contain the generated root password.
@@ -134,21 +114,21 @@ services:
 
 Run `docker stack deploy -c stack.yml mariadb` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
 
-### Start a `mariadb` server instance with user, password and database
+### Start a `arm32v6/mariadb` server instance with user, password and database
 
 Starting a MariaDB instance with a user, password, and a database:
 
 ```console
-$ docker run --detach --name some-mariadb --env MARIADB_USER=example-user --env MARIADB_PASSWORD=my_cool_secret --env MARIADB_DATABASE=exmple-database --env MARIADB_ROOT_PASSWORD=my-secret-pw  mariadb:latest
+$ docker run --detach --name some-mariadb --env MARIADB_USER=example-user --env MARIADB_PASSWORD=my_cool_secret --env MARIADB_DATABASE=exmple-database --env MARIADB_ROOT_PASSWORD=my-secret-pw  arm32v6/mariadb:latest
 ```
 
-### Start a `mariadb` server instance in a network
+### Start a `arm32v6/mariadb` server instance in a network
 
 As applications talk to MariaDB, MariaDB needs to start in the same network as the application:
 
 ```console
 $ docker network create some-network 
-$ docker run --detach --network some-network --name some-mariadb --env MARIADB_USER=example-user --env MARIADB_PASSWORD=my_cool_secret --env MARIADB_ROOT_PASSWORD=my-secret-pw  mariadb:latest
+$ docker run --detach --network some-network --name some-mariadb --env MARIADB_USER=example-user --env MARIADB_PASSWORD=my_cool_secret --env MARIADB_ROOT_PASSWORD=my-secret-pw  arm32v6/mariadb:latest
 $ docker run --detach --network some-network --name some-application --env APP_DB_HOST=some-mariadb  --env APP_DB_USER=example-user --env APP_DB_PASSWD=my_cool_secret some-application
 ```
 
@@ -156,18 +136,18 @@ $ docker run --detach --network some-network --name some-application --env APP_D
 
 ## Connect to MariaDB from the MariaDB command line client
 
-The following command starts another `mariadb` container instance and runs the `mariadb` command line client against your original `mariadb` container, allowing you to execute SQL statements against your database instance:
+The following command starts another `arm32v6/mariadb` container instance and runs the `mariadb` command line client against your original `arm32v6/mariadb` container, allowing you to execute SQL statements against your database instance:
 
 ```console
-$ docker run -it --network some-network --rm mariadb mariadb -hsome-mariadb -uexample-user -p
+$ docker run -it --network some-network --rm arm32v6/mariadb mariadb -hsome-mariadb -uexample-user -p
 ```
 
-... where `some-mariadb` is the name of your original `mariadb` container (connected to the `some-network` Docker network).
+... where `some-mariadb` is the name of your original `arm32v6/mariadb` container (connected to the `some-network` Docker network).
 
 This image can also be used as a client for non-Docker or remote instances:
 
 ```console
-$ docker run -it --rm mariadb mariadb --host <server container IP> --user example-user --password --database test
+$ docker run -it --rm arm32v6/mariadb mariadb --host <server container IP> --user example-user --password --database test
 ```
 
 That will give you a standard MariaDB prompt. You can test it with:
@@ -205,7 +185,7 @@ More information about the MariaDB command-line client can be found in the [Mari
 
 ## Container shell access
 
-The `docker exec` command allows you to run commands inside the running container. The following command line will give you a bash shell inside your `mariadb` container:
+The `docker exec` command allows you to run commands inside the running container. The following command line will give you a bash shell inside your `arm32v6/mariadb` container:
 
 ```console
 $ docker exec -it some-mariadb bash
@@ -231,17 +211,17 @@ $ docker logs some-mariadb
 
 Custom configuration files should end in `.cnf` and be mounted read only at the directory `/etc/mysql/conf.d`. These files should contain the minimal changes from the MariaDB workload required for your application/environment. A MariaDB configuration file will have a `[mariadb]` group followed by `variable` = `value` settings per [Setting Server System Variables](https://mariadb.com/kb/en/server-system-variables/#setting-server-system-variables) or [option-prefix-variable](https://mariadb.com/kb/en/configuring-mariadb-with-option-files/#option-prefixes).
 
-The `mariadb` image configuration contains the Ubuntu MariaDB variables with two custom changes for the container:
+The `arm32v6/mariadb` image configuration contains the Ubuntu MariaDB variables with two custom changes for the container:
 
 	[host-cache-size=0](https://mariadb.com/kb/en/server-system-variables/#host_cache_size)
 	[skip-name-resolve](https://mariadb.com/kb/en/server-system-variables/#skip_name_resolve)
 
-These disable the authentication of `user@hostname` users. To re-enable the `skip-name-resolve` use `disable-skip-name-resolve` as variable or argument. When enabled, the `host-cache-size` should be sufficient for the number of containers connecting to the `mariadb`.
+These disable the authentication of `user@hostname` users. To re-enable the `skip-name-resolve` use `disable-skip-name-resolve` as variable or argument. When enabled, the `host-cache-size` should be sufficient for the number of containers connecting to the `arm32v6/mariadb`.
 
-To view the resulting configuration of your `mariadb` container:
+To view the resulting configuration of your `arm32v6/mariadb` container:
 
 ```console
-$ docker run --name some-mariadb -v /my/custom:/etc/mysql/conf.d --rm mariadb:latest my_print_defaults --mysqld
+$ docker run --name some-mariadb -v /my/custom:/etc/mysql/conf.d --rm arm32v6/mariadb:latest my_print_defaults --mysqld
 ```
 
 ### Configuration without a `cnf` file
@@ -249,18 +229,18 @@ $ docker run --name some-mariadb -v /my/custom:/etc/mysql/conf.d --rm mariadb:la
 Many configuration options can be passed as flags to `mariadbd`. This will give you the flexibility to customize the container without needing a `cnf` file. For example, if you want to run on port 3808 just run the following:
 
 ```console
-$ docker run --name some-mariadb -e MARIADB_ROOT_PASSWORD=my-secret-pw -d mariadb:latest --port 3808
+$ docker run --name some-mariadb -e MARIADB_ROOT_PASSWORD=my-secret-pw -d arm32v6/mariadb:latest --port 3808
 ```
 
 If you would like to see a complete list of available options, just run:
 
 ```console
-$ docker run -it --rm mariadb:latest --verbose --help
+$ docker run -it --rm arm32v6/mariadb:latest --verbose --help
 ```
 
 ## Environment Variables
 
-When you start the `mariadb` image, you can adjust the initialization of the MariaDB instance by passing one or more environment variables on the `docker run` command line. Do note that all of the variables, except `MARIADB_AUTO_UPGRADE`, will have no effect if you start the container with a data directory that already contains a database. I.e. any pre-existing database will always be left untouched on container startup.
+When you start the `arm32v6/mariadb` image, you can adjust the initialization of the MariaDB instance by passing one or more environment variables on the `docker run` command line. Do note that all of the variables, except `MARIADB_AUTO_UPGRADE`, will have no effect if you start the container with a data directory that already contains a database. I.e. any pre-existing database will always be left untouched on container startup.
 
 One of `MARIADB_RANDOM_ROOT_PASSWORD`, `MARIADB_ROOT_PASSWORD_HASH`, `MARIADB_ROOT_PASSWORD` or `MARIADB_ALLOW_EMPTY_ROOT_PASSWORD` (or equivalents, including `*_FILE`), is required. The other environment variables are optional.
 
@@ -275,18 +255,18 @@ When this environment variable is set, this will run the [mariadb-upgrade](https
 As an alternative to passing sensitive information via environment variables, `_FILE` may be appended to the previously listed environment variables, causing the initialization script to load the values for those variables from files present in the container. In particular, this can be used to load passwords from Docker secrets stored in `/run/secrets/<secret_name>` files. For example:
 
 ```console
-$ docker run --name some-mysql -e MARIADB_ROOT_PASSWORD_FILE=/run/secrets/mariadb-root -d mariadb:latest
+$ docker run --name some-mysql -e MARIADB_ROOT_PASSWORD_FILE=/run/secrets/mariadb-root -d arm32v6/mariadb:latest
 ```
 
 # Initializing the database contents
 
-When a container is started for the first time, a new database with the specified name will be created and initialized with the provided configuration variables. Furthermore, it will execute files with extensions `.sh`, `.sql`, `.sql.gz`, `.sql.xz` and `.sql.zst` that are found in `/docker-entrypoint-initdb.d`. Files will be executed in alphabetical order. `.sh` files without file execute permission are sourced rather than executed. You can easily populate your `mariadb` services by [mounting a SQL dump into that directory](https://docs.docker.com/storage/bind-mounts/) and provide [custom images](https://docs.docker.com/reference/dockerfile/) with contributed data. SQL files will be imported by default to the database specified by the `MARIADB_DATABASE` variable.
+When a container is started for the first time, a new database with the specified name will be created and initialized with the provided configuration variables. Furthermore, it will execute files with extensions `.sh`, `.sql`, `.sql.gz`, `.sql.xz` and `.sql.zst` that are found in `/docker-entrypoint-initdb.d`. Files will be executed in alphabetical order. `.sh` files without file execute permission are sourced rather than executed. You can easily populate your `arm32v6/mariadb` services by [mounting a SQL dump into that directory](https://docs.docker.com/storage/bind-mounts/) and provide [custom images](https://docs.docker.com/reference/dockerfile/) with contributed data. SQL files will be imported by default to the database specified by the `MARIADB_DATABASE` variable.
 
 # Caveats
 
 ## Where to Store Data
 
-Important note: There are several ways to store data used by applications that run in Docker containers. We encourage users of the `mariadb` images to familiarize themselves with the options available, including:
+Important note: There are several ways to store data used by applications that run in Docker containers. We encourage users of the `arm32v6/mariadb` images to familiarize themselves with the options available, including:
 
 -	Use a named volume using the container manager to manage the storage of your database data [by writing the database files to disk on the host system using its own internal volume management](https://docs.docker.com/storage/volumes/). This is the default and is easy and fairly transparent to the user. The downside is that the files may be hard to locate for tools and applications that run directly on the host system, i.e. outside containers.
 -	Create a data directory on the host system (outside the container) and [mount this to a directory visible from inside the container](https://docs.docker.com/storage/bind-mounts/). This places the database files in a known location on the host system, and makes it easy for tools and applications on the host system to access the files. The downside is that the user needs to make sure that the directory exists, and that e.g. directory permissions and other security mechanisms on the host system are set up correctly.
@@ -294,10 +274,10 @@ Important note: There are several ways to store data used by applications that r
 The Docker documentation is a good starting point for understanding the different storage options and variations, and there are multiple blogs and forum postings that discuss and give advice in this area. We will simply show the basic procedure here for the latter option above:
 
 1.	Create a data directory on a suitable volume on your host system, e.g. `/my/own/datadir`.
-2.	Start your `mariadb` container like this:
+2.	Start your `arm32v6/mariadb` container like this:
 
 	```console
-	$ docker run --name some-mariadb -v /my/own/datadir:/var/lib/mysql:Z -e MARIADB_ROOT_PASSWORD=my-secret-pw -d mariadb:latest
+	$ docker run --name some-mariadb -v /my/own/datadir:/var/lib/mysql:Z -e MARIADB_ROOT_PASSWORD=my-secret-pw -d arm32v6/mariadb:latest
 	```
 
 The `-v /my/own/datadir:/var/lib/mysql:Z` part of the command mounts the `/my/own/datadir` directory from the underlying host system as `/var/lib/mysql` inside the container, where MariaDB by default will write its data files.
@@ -312,7 +292,7 @@ See [the "Official Images" FAQ](https://github.com/docker-library/faq#healthchec
 
 ## Usage against an existing database
 
-If you start your `mariadb` container instance with a data directory that already contains a database (specifically, a `mysql` subdirectory), no environment variables that control initialization will be needed or examined, and no pre-existing databases will be changed. The only exception is the non-default `MARIADB_AUTO_UPGRADE` environment variable, that might cause `mysql_upgrade`/`mariadb-upgrade` to run, which might change the system tables.
+If you start your `arm32v6/mariadb` container instance with a data directory that already contains a database (specifically, a `mysql` subdirectory), no environment variables that control initialization will be needed or examined, and no pre-existing databases will be changed. The only exception is the non-default `MARIADB_AUTO_UPGRADE` environment variable, that might cause `mysql_upgrade`/`mariadb-upgrade` to run, which might change the system tables.
 
 ## Backups and Restores
 
@@ -333,7 +313,7 @@ This is documented on [MariaDB Knowledge Base : Adding Plugins to the Docker Off
 
 # Compose File Examples
 
-Example compose files using this `mariadb` are located in https://github.com/MariaDB/mariadb-docker in the `/examples` folder.
+Example compose files using this `arm32v6/mariadb` are located in https://github.com/MariaDB/mariadb-docker in the `/examples` folder.
 
 # License
 

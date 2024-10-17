@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v6` builds of [the `couchbase` official image](https://hub.docker.com/_/couchbase) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,21 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.6.3`, `enterprise-7.6.3`, `enterprise`, `latest`](https://github.com/couchbase/docker/blob/553d1baa4aa90fe506e1d7bcdf4daec387a110fe/enterprise/couchbase-server/7.6.3/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v6` ARCHITECTURE
 
--	[`community-7.6.2`, `community`](https://github.com/couchbase/docker/blob/34bb6684dc575f4e0b8b0f16127f5d4188015d8d/community/couchbase-server/7.6.2/Dockerfile)
-
--	[`7.2.5`, `enterprise-7.2.5`](https://github.com/couchbase/docker/blob/58e0549b1e021259a1ce9bb70d70aac4cc5e71da/enterprise/couchbase-server/7.2.5/Dockerfile)
-
--	[`community-7.2.4`](https://github.com/couchbase/docker/blob/8205e18d139813ac3f72f6dfef9ee9ffbc382e0f/community/couchbase-server/7.2.4/Dockerfile)
-
--	[`7.1.6`, `enterprise-7.1.6`](https://github.com/couchbase/docker/blob/8205e18d139813ac3f72f6dfef9ee9ffbc382e0f/enterprise/couchbase-server/7.1.6/Dockerfile)
-
--	[`community-7.1.1`](https://github.com/couchbase/docker/blob/8205e18d139813ac3f72f6dfef9ee9ffbc382e0f/community/couchbase-server/7.1.1/Dockerfile)
-
--	[`7.0.5`, `enterprise-7.0.5`](https://github.com/couchbase/docker/blob/8205e18d139813ac3f72f6dfef9ee9ffbc382e0f/enterprise/couchbase-server/7.0.5/Dockerfile)
-
--	[`community-7.0.2`](https://github.com/couchbase/docker/blob/8205e18d139813ac3f72f6dfef9ee9ffbc382e0f/community/couchbase-server/7.0.2/Dockerfile)
+[![arm32v6/couchbase build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v6/job/couchbase.svg?label=arm32v6/couchbase%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v6/job/couchbase/)
 
 # Quick reference (cont.)
 
