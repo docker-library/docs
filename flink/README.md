@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `riscv64` builds of [the `flink` official image](https://hub.docker.com/_/flink) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,23 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.20.0-scala_2.12-java8`, `1.20-scala_2.12-java8`, `scala_2.12-java8`, `1.20.0-java8`, `1.20-java8`, `java8`](https://github.com/apache/flink-docker/blob/9d335b16e579d3207b769118990a602b8584b63d/1.20/scala_2.12-java8-ubuntu/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `riscv64` ARCHITECTURE
 
--	[`1.20.0-scala_2.12-java17`, `1.20-scala_2.12-java17`, `scala_2.12-java17`, `1.20.0-java17`, `1.20-java17`, `java17`](https://github.com/apache/flink-docker/blob/9d335b16e579d3207b769118990a602b8584b63d/1.20/scala_2.12-java17-ubuntu/Dockerfile)
-
--	[`1.20.0-scala_2.12-java11`, `1.20-scala_2.12-java11`, `scala_2.12-java11`, `1.20.0-scala_2.12`, `1.20-scala_2.12`, `scala_2.12`, `1.20.0-java11`, `1.20-java11`, `java11`, `1.20.0`, `1.20`, `latest`](https://github.com/apache/flink-docker/blob/9d335b16e579d3207b769118990a602b8584b63d/1.20/scala_2.12-java11-ubuntu/Dockerfile)
-
--	[`1.19.1-scala_2.12-java8`, `1.19-scala_2.12-java8`, `1.19.1-java8`, `1.19-java8`](https://github.com/apache/flink-docker/blob/f77b347d0a534da0482e692d80f559f47041829e/1.19/scala_2.12-java8-ubuntu/Dockerfile)
-
--	[`1.19.1-scala_2.12-java17`, `1.19-scala_2.12-java17`, `1.19.1-java17`, `1.19-java17`](https://github.com/apache/flink-docker/blob/f77b347d0a534da0482e692d80f559f47041829e/1.19/scala_2.12-java17-ubuntu/Dockerfile)
-
--	[`1.19.1-scala_2.12-java11`, `1.19-scala_2.12-java11`, `1.19.1-scala_2.12`, `1.19-scala_2.12`, `1.19.1-java11`, `1.19-java11`, `1.19.1`, `1.19`](https://github.com/apache/flink-docker/blob/f77b347d0a534da0482e692d80f559f47041829e/1.19/scala_2.12-java11-ubuntu/Dockerfile)
-
--	[`1.18.1-scala_2.12-java8`, `1.18-scala_2.12-java8`, `1.18.1-java8`, `1.18-java8`](https://github.com/apache/flink-docker/blob/883600747505c128d97e9d25c9326f0c6f1d31e4/1.18/scala_2.12-java8-ubuntu/Dockerfile)
-
--	[`1.18.1-scala_2.12-java17`, `1.18-scala_2.12-java17`, `1.18.1-java17`, `1.18-java17`](https://github.com/apache/flink-docker/blob/883600747505c128d97e9d25c9326f0c6f1d31e4/1.18/scala_2.12-java17-ubuntu/Dockerfile)
-
--	[`1.18.1-scala_2.12-java11`, `1.18-scala_2.12-java11`, `1.18.1-scala_2.12`, `1.18-scala_2.12`, `1.18.1-java11`, `1.18-java11`, `1.18.1`, `1.18`](https://github.com/apache/flink-docker/blob/883600747505c128d97e9d25c9326f0c6f1d31e4/1.18/scala_2.12-java11-ubuntu/Dockerfile)
+[![riscv64/flink build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/riscv64/job/flink.svg?label=riscv64/flink%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/riscv64/job/flink/)
 
 # Quick reference (cont.)
 
