@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm64v8` builds of [the `geonetwork` official image](https://hub.docker.com/_/geonetwork) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -31,6 +33,8 @@ WARNING:
 -	[`4.2.10`, `4.2`](https://github.com/geonetwork/docker-geonetwork/blob/4305f7ddf869d8023a56d2b71a8270f706cec8aa/4.2.10/Dockerfile)
 
 -	[`4.4.5`, `4.4`, `4`, `latest`](https://github.com/geonetwork/docker-geonetwork/blob/9afe0745446f0692445d1c177601b16cc5e2440b/4.4.5/Dockerfile)
+
+[![arm64v8/geonetwork build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/geonetwork.svg?label=arm64v8/geonetwork%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/geonetwork/)
 
 # Quick reference (cont.)
 
@@ -73,24 +77,24 @@ This is a quick example of how to get GeoNetwork 4.4 Latest up and running for d
 
 ```console
 docker pull elasticsearch:7.17.15
-docker pull geonetwork:4
+docker pull arm64v8/geonetwork:4
 
 docker network create gn-network
 
 docker run -d --name my-es-host --network gn-network -e "discovery.type=single-node" elasticsearch:7.17.15
-docker run --name geonetwork-host --network gn-network -e GN_CONFIG_PROPERTIES="-Des.host=my-es-host -Des.protocol=http -Des.port=9200 -Des.url=http://my-es-host:9200" -p 8080:8080 geonetwork:4
+docker run --name geonetwork-host --network gn-network -e GN_CONFIG_PROPERTIES="-Des.host=my-es-host -Des.protocol=http -Des.port=9200 -Des.url=http://my-es-host:9200" -p 8080:8080 arm64v8/geonetwork:4
 ```
 
 For GeoNetwork 4.2 Stable:
 
 ```console
 docker pull elasticsearch:7.17.15
-docker pull geonetwork:4.2
+docker pull arm64v8/geonetwork:4.2
 
 docker network create gn-network
 
 docker run -d --name my-es-host --network gn-network -e "discovery.type=single-node" elasticsearch:7.17.15
-docker run --name geonetwork-host --network gn-network -e ES_HOST=my-es-host -e ES_PROTOCOL=http  -e ES_PORT=9200 -p 8080:8080 geonetwork:4.2
+docker run --name geonetwork-host --network gn-network -e ES_HOST=my-es-host -e ES_PROTOCOL=http  -e ES_PORT=9200 -p 8080:8080 arm64v8/geonetwork:4.2
 ```
 
 To be sure about what Elasticsearch version to use you can check the [GeoNetwork documentation](https://docs.geonetwork-opensource.org/4.4/install-guide/installing-index/) for your GN version or the `es.version` property in the [`pom.xml`](https://github.com/geonetwork/core-geonetwork/blob/main/pom.xml#L1528C17-L1528C24) file of the GeoNetwork release used.
@@ -119,7 +123,7 @@ Example Docker Compose YAML snippet:
 ```yaml
 services:
   geonetwork:
-    image: geonetwork:4.4
+    image: arm64v8/geonetwork:4.4
     environment:
       GN_CONFIG_PROPERTIES: >-
         -Des.host=elasticsearch
@@ -160,7 +164,7 @@ By default GeoNetwork uses a local **H2 database** for demo use (this one is **n
 This command will start a debian-based container, running a Tomcat (GN 3) or Jetty (GN 4) web server, with a GeoNetwork WAR deployed on the server:
 
 ```console
-docker run --name some-geonetwork -d geonetwork
+docker run --name some-geonetwork -d arm64v8/geonetwork
 ```
 
 ### Publish port
@@ -168,7 +172,7 @@ docker run --name some-geonetwork -d geonetwork
 GeoNetwork listens on port `8080`. If you want to access the container at the host, **you must publish this port**. For instance, this, will redirect all the container traffic on port 8080, to the same port on the host:
 
 ```console
-docker run --name some-geonetwork -d -p 8080:8080 geonetwork
+docker run --name some-geonetwork -d -p 8080:8080 arm64v8/geonetwork
 ```
 
 Then, if you are running docker on Linux, you may access geonetwork at http://localhost:8080/geonetwork. Otherwise, replace `localhost` by the address of your docker machine.
@@ -182,7 +186,7 @@ By default, GeoNetwork sets the data directory on `/opt/geonetwork/WEB-INF/data`
 Since version 4.4.0 the data directory needs to be configued using Java properties passed in the `GN_CONFIG_PROPERTIES` environment variable. For example:
 
 ```console
-docker run --name some-geonetwork -d -p 8080:8080  -e GN_CONFIG_PROPERTIES="-Dgeonetwork.dir=/catalogue-data" -e GEONETWORK_DB_NAME=/catalogue-data/db/gn geonetwork
+docker run --name some-geonetwork -d -p 8080:8080  -e GN_CONFIG_PROPERTIES="-Dgeonetwork.dir=/catalogue-data" -e GEONETWORK_DB_NAME=/catalogue-data/db/gn arm64v8/geonetwork
 ```
 
 ### Persisting data
@@ -192,13 +196,13 @@ To set the data directory to `/catalogue-data/data` and H2 database file to `/ca
 -	GeoNetwork 4.2 and older
 
 ```console
-docker run --name some-geonetwork -d -p 8080:8080 -e DATA_DIR=/catalogue-data/data -e GEONETWORK_DB_NAME=/catalogue-data/db/gn geonetwork:3
+docker run --name some-geonetwork -d -p 8080:8080 -e DATA_DIR=/catalogue-data/data -e GEONETWORK_DB_NAME=/catalogue-data/db/gn arm64v8/geonetwork:3
 ```
 
 -	Since GeoNetwork 4.4.0
 
 ```console
-docker run --name some-geonetwork -d -p 8080:8080  -e GN_CONFIG_PROPERTIES="-Dgeonetwork.dir=/catalogue-data" -e GEONETWORK_DB_NAME=/catalogue-data/db/gn geonetwork
+docker run --name some-geonetwork -d -p 8080:8080  -e GN_CONFIG_PROPERTIES="-Dgeonetwork.dir=/catalogue-data" -e GEONETWORK_DB_NAME=/catalogue-data/db/gn arm64v8/geonetwork
 ```
 
 If you want the data directory to live beyond restarts, or even destruction of the container, you can mount a directory from the docker engine's host into the container. - `-v /host/path:/path/to/data/directory`. For instance this, will mount the host directory `/host/geonetwork-docker` into `/catalogue-data` on the container:
@@ -206,13 +210,13 @@ If you want the data directory to live beyond restarts, or even destruction of t
 -	GeoNetwork 4.2 and older
 
 ```console
-docker run --name some-geonetwork -d -p 8080:8080 -e DATA_DIR=/catalogue-data/data -e GEONETWORK_DB_NAME=/catalogue-data/db/gn -v /host/geonetwork-docker:/catalogue-data geonetwork:3
+docker run --name some-geonetwork -d -p 8080:8080 -e DATA_DIR=/catalogue-data/data -e GEONETWORK_DB_NAME=/catalogue-data/db/gn -v /host/geonetwork-docker:/catalogue-data arm64v8/geonetwork:3
 ```
 
 -	GeoNetwork 4.4.0 and newer
 
 ```console
-docker run --name some-geonetwork -d -p 8080:8080  -e GN_CONFIG_PROPERTIES="-Dgeonetwork.dir=/catalogue-data" -e GEONETWORK_DB_NAME=/catalogue-data/db/gn -v /host/geonetwork-docker:/catalogue-data geonetwork
+docker run --name some-geonetwork -d -p 8080:8080  -e GN_CONFIG_PROPERTIES="-Dgeonetwork.dir=/catalogue-data" -e GEONETWORK_DB_NAME=/catalogue-data/db/gn -v /host/geonetwork-docker:/catalogue-data arm64v8/geonetwork
 ```
 
 ### ... via [`docker-compose`](https://github.com/docker/compose) or [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/)

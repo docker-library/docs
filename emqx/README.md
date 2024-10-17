@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm64v8` builds of [the `emqx` official image](https://hub.docker.com/_/emqx) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -39,6 +41,8 @@ WARNING:
 -	[`5.7.2`, `5.7`](https://github.com/emqx/emqx-docker/blob/35e70c8e602687db5a447c9573bde8ab77335fdc/5.7/Dockerfile)
 
 -	[`5.8.0`, `5.8`, `5`, `latest`](https://github.com/emqx/emqx-docker/blob/69e9c223e2215fb5d071dec6cc6aa19c106331e7/5.8/Dockerfile)
+
+[![arm64v8/emqx build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/emqx.svg?label=arm64v8/emqx%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/emqx/)
 
 # Quick reference (cont.)
 
@@ -78,13 +82,13 @@ EMQX boasts more than 20K+ enterprise users across 50+ countries and regions, co
 Execute some command under this docker image
 
 ```console
-$ docker run -d --name emqx emqx:${tag}
+$ docker run -d --name emqx arm64v8/emqx:${tag}
 ```
 
 For example
 
 ```console
-$ docker run -d --name emqx -p 18083:18083 -p 1883:1883 emqx:latest
+$ docker run -d --name emqx -p 18083:18083 -p 1883:1883 arm64v8/emqx:latest
 ```
 
 The EMQX broker runs as Linux user `emqx` in the docker container.
@@ -108,7 +112,7 @@ Note: The lowercase use of 'default' is not a typo. It is used to demonstrate th
 For example, set MQTT TCP port to 1883
 
 ```console
-$ docker run -d --name emqx -e EMQX_DASHBOARD__DEFAULT_PASSWORD=mysecret -p 18083:18083 -p 1883:1883 emqx:latest
+$ docker run -d --name emqx -e EMQX_DASHBOARD__DEFAULT_PASSWORD=mysecret -p 18083:18083 -p 1883:1883 arm64v8/emqx:latest
 ```
 
 Please read more about EMQX configuration in the [official documentation](https://docs.emqx.com/en/emqx/latest/configuration/configuration.html)
@@ -132,7 +136,7 @@ Let's create a static node list cluster from docker-compose.
 
   services:
     emqx1:
-      image: emqx:latest
+      image: arm64v8/emqx:latest
       environment:
       - "EMQX_NODE__NAME=emqx@node1.emqx.io"
       - "EMQX_CLUSTER__DISCOVERY_STRATEGY=static"
@@ -143,7 +147,7 @@ Let's create a static node list cluster from docker-compose.
           - node1.emqx.io
 
     emqx2:
-      image: emqx:latest
+      image: arm64v8/emqx:latest
       environment:
       - "EMQX_NODE__NAME=emqx@node2.emqx.io"
       - "EMQX_CLUSTER__DISCOVERY_STRATEGY=static"
@@ -192,7 +196,7 @@ volumes:
 
 services:
   emqx:
-    image: emqx:latest
+    image: arm64v8/emqx:latest
     restart: always
     environment:
       EMQX_NODE__NAME: foo_emqx@127.0.0.1
@@ -224,7 +228,7 @@ docker run -d --name emqx -p 18083:18083 -p 1883:1883 \
     --sysctl net.ipv4.tcp_wmem=1024 4096 16777216 \
     --sysctl net.ipv4.tcp_max_tw_buckets=1048576 \
     --sysctl net.ipv4.tcp_fin_timeout=15 \
-    emqx:latest
+    arm64v8/emqx:latest
 ```
 
 > REMEMBER: DO NOT RUN EMQX DOCKER PRIVILEGED OR MOUNT SYSTEM PROC IN CONTAINER TO TUNE LINUX KERNEL, IT IS UNSAFE.

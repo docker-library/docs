@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm64v8` builds of [the `sonarqube` official image](https://hub.docker.com/_/sonarqube) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -43,6 +45,8 @@ WARNING:
 -	[`10.7.0-datacenter-app`, `10.7-datacenter-app`, `10-datacenter-app`, `datacenter-app`](https://github.com/SonarSource/docker-sonarqube/blob/50701464f6c6e1ec93b0692fc9525f970a2b5d93/10/datacenter/app/Dockerfile)
 
 -	[`10.7.0-datacenter-search`, `10.7-datacenter-search`, `10-datacenter-search`, `datacenter-search`](https://github.com/SonarSource/docker-sonarqube/blob/50701464f6c6e1ec93b0692fc9525f970a2b5d93/10/datacenter/search/Dockerfile)
+
+[![arm64v8/sonarqube build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/sonarqube.svg?label=arm64v8/sonarqube%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/sonarqube/)
 
 # Quick reference (cont.)
 
@@ -107,7 +111,7 @@ To run a cluster with the Data Center Edition, please refer to Installing SonarQ
 By default, the server running within the container will listen on port 9000. You can expose the container port 9000 to the host port 9000 with the `-p 9000:9000` argument to `docker run`, like the command below:
 
 ```console
-docker run --name sonarqube-custom -p 9000:9000 sonarqube:10.6-community
+docker run --name sonarqube-custom -p 9000:9000 arm64v8/sonarqube:10.6-community
 ```
 
 You can then browse to `http://localhost:9000` or `http://host-ip:9000` in your web browser to access the SonarQube web interface.
@@ -141,7 +145,7 @@ For upgrade instructions, see Upgrading from the Docker Image on the [Upgrade th
 In some environments, it may make more sense to prepare a custom image containing your configuration. A `Dockerfile` to achieve this may be as simple as:
 
 ```dockerfile
-FROM sonarqube:10.6-community
+FROM arm64v8/sonarqube:10.6-community
 COPY sonar-custom-plugin-1.0.jar /opt/sonarqube/extensions/
 ```
 
@@ -157,7 +161,7 @@ $ docker run -ti sonarqube-custom
 A SonarQube instance will stop gracefully, waiting for any tasks in progress to finish. Waiting for in-progress tasks to finish can take a large amount of time which the docker does not expect by default when stopping. To avoid having the SonarQube instance killed by the Docker daemon after 10 seconds, it is best to configure a timeout to stop the container with `--stop-timeout`. For example:
 
 ```console
-docker run --stop-timeout 3600 sonarqube
+docker run --stop-timeout 3600 arm64v8/sonarqube
 ```
 
 ## Administration

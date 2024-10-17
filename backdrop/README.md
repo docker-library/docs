@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm64v8` builds of [the `backdrop` official image](https://hub.docker.com/_/backdrop) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -27,6 +29,8 @@ WARNING:
 -	[`1.26.1`, `1.26`, `1`, `1.26.1-apache`, `1.26-apache`, `1-apache`, `apache`, `latest`](https://github.com/backdrop-ops/backdrop-docker/blob/95902d6610b2474ca88ff8faae40ed30e7d3318a/1/apache/Dockerfile)
 
 -	[`1.26.1-fpm`, `1.26-fpm`, `1-fpm`, `fpm`](https://github.com/backdrop-ops/backdrop-docker/blob/95902d6610b2474ca88ff8faae40ed30e7d3318a/1/fpm/Dockerfile)
+
+[![arm64v8/backdrop build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/backdrop.svg?label=arm64v8/backdrop%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/backdrop/)
 
 # Quick reference (cont.)
 
@@ -60,7 +64,7 @@ Backdrop CMS enables people to build highly customized websites, affordably, thr
 The basic pattern for starting a `backdrop` instance is:
 
 ```console
-$ docker run --name some-backdrop --link some-mysql:mysql -d backdrop
+$ docker run --name some-backdrop --link some-mysql:mysql -d arm64v8/backdrop
 ```
 
 The following environment variables are also honored for configuring your Backdrop CMS instance:
@@ -77,7 +81,7 @@ The `BACKDROP_DB_NAME` **must already exist** on the given MySQL server. Check o
 If you'd like to be able to access the instance from the host without the container's IP, standard port mappings can be used:
 
 ```console
-$ docker run --name some-backdrop --link some-mysql:mysql -p 8080:80 -d backdrop
+$ docker run --name some-backdrop --link some-mysql:mysql -p 8080:80 -d arm64v8/backdrop
 ```
 
 Then, access it via `http://localhost:8080` or `http://host-ip:8080` in a browser.
