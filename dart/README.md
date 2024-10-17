@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v7` builds of [the `dart` official image](https://hub.docker.com/_/dart) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -27,6 +29,8 @@ WARNING:
 -	[`3.5.2-sdk`, `3.5-sdk`, `3-sdk`, `stable-sdk`, `sdk`, `3.5.2`, `3.5`, `3`, `stable`, `latest`](https://github.com/dart-lang/dart-docker/blob/aaa12b5ca0fea8cd71ccdc472f75ee4d3ff35ee7/stable/bookworm/Dockerfile)
 
 -	[`3.6.0-216.1.beta-sdk`, `beta-sdk`, `3.6.0-216.1.beta`, `beta`](https://github.com/dart-lang/dart-docker/blob/aaa12b5ca0fea8cd71ccdc472f75ee4d3ff35ee7/beta/bookworm/Dockerfile)
+
+[![arm32v7/dart build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/dart.svg?label=arm32v7/dart%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/dart/)
 
 # Quick reference (cont.)
 
