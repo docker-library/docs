@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `windows-amd64` builds of [the `emqx` official image](https://hub.docker.com/_/emqx) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,21 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.1.6`, `5.1`](https://github.com/emqx/emqx-docker/blob/dfa1507bc031b4f24ffa29f838dbad1868e35d01/5.1/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `windows-amd64` ARCHITECTURE
 
--	[`5.2.1`, `5.2`](https://github.com/emqx/emqx-docker/blob/eb71b6a3cca1505e14d4b0e6fcd50a43330125bb/5.2/Dockerfile)
-
--	[`5.3.2`, `5.3`](https://github.com/emqx/emqx-docker/blob/1572ca48b4bc890edfc157b00be271d9a1b878d4/5.3/Dockerfile)
-
--	[`5.4.1`, `5.4`](https://github.com/emqx/emqx-docker/blob/a180d28d9a6b4ebc752aa2de3a456887f4a416cc/5.4/Dockerfile)
-
--	[`5.5.1`, `5.5`](https://github.com/emqx/emqx-docker/blob/17a2814880d4852d0611c06c31007ca2a2633199/5.5/Dockerfile)
-
--	[`5.6.1`, `5.6`](https://github.com/emqx/emqx-docker/blob/e0af46182038ded4d6f45879846ddf765b6b5613/5.6/Dockerfile)
-
--	[`5.7.2`, `5.7`](https://github.com/emqx/emqx-docker/blob/35e70c8e602687db5a447c9573bde8ab77335fdc/5.7/Dockerfile)
-
--	[`5.8.0`, `5.8`, `5`, `latest`](https://github.com/emqx/emqx-docker/blob/69e9c223e2215fb5d071dec6cc6aa19c106331e7/5.8/Dockerfile)
+[![winamd64/emqx build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/windows-amd64/job/emqx.svg?label=winamd64/emqx%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/windows-amd64/job/emqx/)
 
 # Quick reference (cont.)
 
@@ -78,13 +68,13 @@ EMQX boasts more than 20K+ enterprise users across 50+ countries and regions, co
 Execute some command under this docker image
 
 ```console
-$ docker run -d --name emqx emqx:${tag}
+$ docker run -d --name emqx winamd64/emqx:${tag}
 ```
 
 For example
 
 ```console
-$ docker run -d --name emqx -p 18083:18083 -p 1883:1883 emqx:latest
+$ docker run -d --name emqx -p 18083:18083 -p 1883:1883 winamd64/emqx:latest
 ```
 
 The EMQX broker runs as Linux user `emqx` in the docker container.
@@ -108,7 +98,7 @@ Note: The lowercase use of 'default' is not a typo. It is used to demonstrate th
 For example, set MQTT TCP port to 1883
 
 ```console
-$ docker run -d --name emqx -e EMQX_DASHBOARD__DEFAULT_PASSWORD=mysecret -p 18083:18083 -p 1883:1883 emqx:latest
+$ docker run -d --name emqx -e EMQX_DASHBOARD__DEFAULT_PASSWORD=mysecret -p 18083:18083 -p 1883:1883 winamd64/emqx:latest
 ```
 
 Please read more about EMQX configuration in the [official documentation](https://docs.emqx.com/en/emqx/latest/configuration/configuration.html)
@@ -132,7 +122,7 @@ Let's create a static node list cluster from docker-compose.
 
   services:
     emqx1:
-      image: emqx:latest
+      image: winamd64/emqx:latest
       environment:
       - "EMQX_NODE__NAME=emqx@node1.emqx.io"
       - "EMQX_CLUSTER__DISCOVERY_STRATEGY=static"
@@ -143,7 +133,7 @@ Let's create a static node list cluster from docker-compose.
           - node1.emqx.io
 
     emqx2:
-      image: emqx:latest
+      image: winamd64/emqx:latest
       environment:
       - "EMQX_NODE__NAME=emqx@node2.emqx.io"
       - "EMQX_CLUSTER__DISCOVERY_STRATEGY=static"
@@ -192,7 +182,7 @@ volumes:
 
 services:
   emqx:
-    image: emqx:latest
+    image: winamd64/emqx:latest
     restart: always
     environment:
       EMQX_NODE__NAME: foo_emqx@127.0.0.1
@@ -224,7 +214,7 @@ docker run -d --name emqx -p 18083:18083 -p 1883:1883 \
     --sysctl net.ipv4.tcp_wmem=1024 4096 16777216 \
     --sysctl net.ipv4.tcp_max_tw_buckets=1048576 \
     --sysctl net.ipv4.tcp_fin_timeout=15 \
-    emqx:latest
+    winamd64/emqx:latest
 ```
 
 > REMEMBER: DO NOT RUN EMQX DOCKER PRIVILEGED OR MOUNT SYSTEM PROC IN CONTAINER TO TUNE LINUX KERNEL, IT IS UNSAFE.
