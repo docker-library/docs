@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `i386` builds of [the `wordpress` official image](https://hub.docker.com/_/wordpress) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -66,6 +68,8 @@ WARNING:
 
 -	[`beta-6.7-beta3-php8.3-fpm-alpine`, `beta-6.7-php8.3-fpm-alpine`, `beta-6-php8.3-fpm-alpine`, `beta-php8.3-fpm-alpine`](https://github.com/docker-library/wordpress/blob/c85650e7c796145b439acbe966d56f4187588b40/beta/php8.3/fpm-alpine/Dockerfile)
 
+[![i386/wordpress build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/i386/job/wordpress.svg?label=i386/wordpress%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/i386/job/wordpress/)
+
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
@@ -96,7 +100,7 @@ WordPress is a free and open source blogging tool and a content management syste
 # How to use this image
 
 ```console
-$ docker run --name some-wordpress --network some-network -d wordpress
+$ docker run --name some-wordpress --network some-network -d i386/wordpress
 ```
 
 The following environment variables are also honored for configuring your WordPress instance (by [a custom `wp-config.php` implementation](https://github.com/docker-library/wordpress/blob/master/wp-config-docker.php)):
@@ -115,7 +119,7 @@ The `WORDPRESS_DB_NAME` needs to already exist on the given MySQL server; it wil
 If you'd like to be able to access the instance from the host without the container's IP, standard port mappings can be used:
 
 ```console
-$ docker run --name some-wordpress -p 8080:80 -d wordpress
+$ docker run --name some-wordpress -p 8080:80 -d i386/wordpress
 ```
 
 Then, access it via `http://localhost:8080` or `http://host-ip:8080` in a browser.
@@ -129,7 +133,7 @@ If your database requires SSL, [WordPress ticket #28625](https://core.trac.wordp
 As an alternative to passing sensitive information via environment variables, `_FILE` may be appended to the previously listed environment variables, causing the initialization script to load the values for those variables from files present in the container. In particular, this can be used to load passwords from Docker secrets stored in `/run/secrets/<secret_name>` files. For example:
 
 ```console
-$ docker run --name some-wordpress -e WORDPRESS_DB_PASSWORD_FILE=/run/secrets/mysql-root ... -d wordpress:tag
+$ docker run --name some-wordpress -e WORDPRESS_DB_PASSWORD_FILE=/run/secrets/mysql-root ... -d i386/wordpress:tag
 ```
 
 Currently, this is supported for `WORDPRESS_DB_HOST`, `WORDPRESS_DB_USER`, `WORDPRESS_DB_PASSWORD`, `WORDPRESS_DB_NAME`, `WORDPRESS_AUTH_KEY`, `WORDPRESS_SECURE_AUTH_KEY`, `WORDPRESS_LOGGED_IN_KEY`, `WORDPRESS_NONCE_KEY`, `WORDPRESS_AUTH_SALT`, `WORDPRESS_SECURE_AUTH_SALT`, `WORDPRESS_LOGGED_IN_SALT`, `WORDPRESS_NONCE_SALT`, `WORDPRESS_TABLE_PREFIX`, and `WORDPRESS_DEBUG`.
@@ -180,7 +184,7 @@ Run `docker stack deploy -c stack.yml wordpress` (or `docker-compose -f stack.ym
 
 This image does not provide any additional PHP extensions or other libraries, even if they are required by popular plugins (e.g. [it cannot send e-mails](https://github.com/docker-library/wordpress/issues/30)). There are an infinite number of possible plugins, and they potentially require any extension PHP supports. Including every PHP extension that exists would dramatically increase the image size.
 
-If you need additional PHP extensions, you'll need to create your own image `FROM` this one. The [documentation of the `php` image](https://github.com/docker-library/docs/blob/master/php/README.md#how-to-install-more-php-extensions) explains how to compile additional extensions. Additionally, [an older `Dockerfile` for `wordpress`](https://github.com/docker-library/wordpress/blob/618490d4bdff6c5774b84b717979bfe3d6ba8ad1/apache/Dockerfile#L5-L9) has a simplified example of doing this and [a newer version of that same `Dockerfile`](https://github.com/docker-library/wordpress/blob/5bbbfa8909232af10ea3fea8b80302a6041a2d04/latest/php7.4/apache/Dockerfile#L18-L62) has a much more thorough example.
+If you need additional PHP extensions, you'll need to create your own image `FROM` this one. The [documentation of the `php` image](https://github.com/docker-library/docs/blob/master/php/README.md#how-to-install-more-php-extensions) explains how to compile additional extensions. Additionally, [an older `Dockerfile` for `i386/wordpress`](https://github.com/docker-library/wordpress/blob/618490d4bdff6c5774b84b717979bfe3d6ba8ad1/apache/Dockerfile#L5-L9) has a simplified example of doing this and [a newer version of that same `Dockerfile`](https://github.com/docker-library/wordpress/blob/5bbbfa8909232af10ea3fea8b80302a6041a2d04/latest/php7.4/apache/Dockerfile#L18-L62) has a much more thorough example.
 
 ## Include pre-installed themes / plugins
 
@@ -198,7 +202,7 @@ The default configuration for this image matches the official WordPress defaults
 If you wish to have a more static deployment (similar to other containerized applications) and deploy new containers to update WordPress + themes/plugins, then you'll want to use something like the following (and run the resulting image read-only):
 
 ```dockerfile
-FROM wordpress:apache
+FROM i386/wordpress:apache
 WORKDIR /usr/src/wordpress
 RUN set -eux; \
 	find /etc/apache2 -name '*.conf' -type f -exec sed -ri -e "s!/var/www/html!$PWD!g" -e "s!Directory /var/www/!Directory $PWD!g" '{}' +; \
@@ -230,7 +234,7 @@ $ docker run ... \
 
 See [the "Running as an arbitrary user" section of the `php` image documentation](https://github.com/docker-library/docs/blob/master/php/README.md#running-as-an-arbitrary-user).
 
-When running WP-CLI via the `cli` variants of this image, it is important to note that they're based on Alpine, and have a default `USER` of Alpine's `www-data`, whose UID is `82` (compared to the Debian-based WordPress variants whose default effective UID is `33`), so when running `wordpress:cli` against an existing Debian-based WordPress install, something like `--user 33:33` is likely going to be necessary (possibly also something like `-e HOME=/tmp` depending on the `wp` command invoked and whether it tries to use `~/.wp-cli`). See [docker-library/wordpress#256](https://github.com/docker-library/wordpress/issues/256) for more discussion around this.
+When running WP-CLI via the `cli` variants of this image, it is important to note that they're based on Alpine, and have a default `USER` of Alpine's `www-data`, whose UID is `82` (compared to the Debian-based WordPress variants whose default effective UID is `33`), so when running `i386/wordpress:cli` against an existing Debian-based WordPress install, something like `--user 33:33` is likely going to be necessary (possibly also something like `-e HOME=/tmp` depending on the `wp` command invoked and whether it tries to use `~/.wp-cli`). See [docker-library/wordpress#256](https://github.com/docker-library/wordpress/issues/256) for more discussion around this.
 
 ## Configuring PHP directives
 
@@ -239,19 +243,19 @@ See [the "Configuration" section of the `php` image documentation](https://githu
 For example, to adjust common `php.ini` flags like `upload_max_filesize`, you could create a `custom.ini` with the desired parameters and place it in the `$PHP_INI_DIR/conf.d/` directory:
 
 ```dockerfile
-FROM wordpress:tag
+FROM i386/wordpress:tag
 COPY custom.ini $PHP_INI_DIR/conf.d/
 ```
 
 # Image Variants
 
-The `wordpress` images come in many flavors, each designed for a specific use case.
+The `i386/wordpress` images come in many flavors, each designed for a specific use case.
 
-## `wordpress:<version>`
+## `i386/wordpress:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `wordpress:<version>-fpm`
+## `i386/wordpress:<version>-fpm`
 
 This variant contains PHP-FPM, which is a FastCGI implementation for PHP. See [the PHP-FPM website](https://php-fpm.org/) for more information about PHP-FPM.
 
@@ -267,7 +271,7 @@ Some potentially helpful resources:
 
 **WARNING:** the FastCGI protocol is inherently trusting, and thus *extremely* insecure to expose outside of a private container network -- unless you know *exactly* what you are doing (and are willing to accept the extreme risk), do not use Docker's `--publish` (`-p`) flag with this image variant.
 
-## `wordpress:cli`
+## `i386/wordpress:cli`
 
 This image variant does not contain WordPress itself, but instead contains [WP-CLI](https://wp-cli.org).
 
@@ -280,7 +284,7 @@ $ docker run -it --rm \
 	-e WORDPRESS_DB_USER=... \
 	-e WORDPRESS_DB_PASSWORD=... \
 	# [and other used environment variables]
-	wordpress:cli user list
+	i386/wordpress:cli user list
 ```
 
 Generally speaking, for WP-CLI to interact with a WordPress install, it needs access to the on-disk files of the WordPress install, and access to the database (and the easiest way to accomplish that such that `wp-config.php` does not require changes is to simply join the networking context of the existing and presumably working WordPress container, but there are many other ways to accomplish that which will be left as an exercise for the reader).
