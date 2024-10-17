@@ -60,6 +60,8 @@ WARNING:
 
 -	[`5.10.1-noble`, `5.10-noble`](https://github.com/apple/swift-docker/blob/53c4d44e4b556d7bab6ff94c80e5bd0444cdc17d/5.10/ubuntu/24.04/Dockerfile)
 
+-	[`5.10.1-noble-slim`, `5.10-noble-slim`](https://github.com/apple/swift-docker/blob/38e4244ebab3d6a4e702fb30449827d6c28ee1fd/5.10/ubuntu/24.04/slim/Dockerfile)
+
 -	[`5.10.1-bookworm`, `5.10-bookworm`](https://github.com/apple/swift-docker/blob/53c4d44e4b556d7bab6ff94c80e5bd0444cdc17d/5.10/debian/12/Dockerfile)
 
 -	[`5.10.1-fedora39`, `5.10-fedora39`](https://github.com/apple/swift-docker/blob/53c4d44e4b556d7bab6ff94c80e5bd0444cdc17d/5.10/fedora/39/Dockerfile)
