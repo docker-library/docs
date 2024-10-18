@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `riscv64` builds of [the `ubuntu` official image](https://hub.docker.com/_/ubuntu) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,13 +26,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`20.04`, `focal-20241011`, `focal`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-focal-amd64-20241011-2dc0aae1&id=2dc0aae17c912aa6ae81e4c4bbc7277692d67bae)
+-	[`20.04`, `focal-20241011`, `focal`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-focal-riscv64-20241011-1b88c563&id=1b88c563c88e39ac07d0d4d3e5f8e488af7920b6)
 
--	[`22.04`, `jammy-20240911.1`, `jammy`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-amd64-20240911.1-b88de29a&id=b88de29aeed396f56b7eee0dd87e7249e7a8642f)
+-	[`22.04`, `jammy-20240911.1`, `jammy`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-riscv64-20240911.1-9e7288fa&id=9e7288fad5dca1db7c4dd3ea7861584008a45c36)
 
--	[`24.04`, `noble-20241011`, `noble`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-amd64-20241011-494cd4d4&id=494cd4d4ce68c2299acaca9d1591e21c45279864)
+-	[`24.04`, `noble-20241011`, `noble`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-riscv64-20241011-95cd3552&id=95cd355241167f8c7b4b4ff9b2f9b28381d5c460)
 
--	[`24.10`, `oracular-20241009`, `oracular`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-oracular-amd64-20241009-71a6e10d&id=71a6e10d9d17f0baa437a234367e8e16406bd3c2)
+-	[`24.10`, `oracular-20241009`, `oracular`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-oracular-riscv64-20241009-54439252&id=54439252c9ec03a84c9caafab7fc29e65effd2e1)
+
+[![riscv64/ubuntu build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/riscv64/job/ubuntu.svg?label=riscv64/ubuntu%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/riscv64/job/ubuntu/)
 
 # Quick reference (cont.)
 
@@ -65,9 +69,9 @@ Development of Ubuntu is led by Canonical Ltd. Canonical generates revenue throu
 
 This image is built from official rootfs tarballs provided by Canonical (see `dist-*` tags at https://git.launchpad.net/cloud-images/+oci/ubuntu-base).
 
-The `ubuntu:latest` tag points to the "latest LTS", since that's the version recommended for general use. The `ubuntu:rolling` tag points to the latest release (regardless of LTS status).
+The `riscv64/ubuntu:latest` tag points to the "latest LTS", since that's the version recommended for general use. The `riscv64/ubuntu:rolling` tag points to the latest release (regardless of LTS status).
 
-Along a similar vein, the `ubuntu:devel` tag is an alias for whichever release the "devel" suite on the mirrors currently points to, as determined by the following one-liner: `wget -qO- http://archive.ubuntu.com/ubuntu/dists/devel/Release | awk -F ': ' '$1 == "Codename" { print $2; exit }'`
+Along a similar vein, the `riscv64/ubuntu:devel` tag is an alias for whichever release the "devel" suite on the mirrors currently points to, as determined by the following one-liner: `wget -qO- http://archive.ubuntu.com/ubuntu/dists/devel/Release | awk -F ': ' '$1 == "Codename" { print $2; exit }'`
 
 ## Locales
 
