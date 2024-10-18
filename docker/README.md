@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v7` builds of [the `docker` official image](https://hub.docker.com/_/docker) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -32,18 +34,9 @@ WARNING:
 
 -	[`27.3.1-dind`, `27.3-dind`, `27-dind`, `dind`, `27.3.1-dind-alpine3.20`, `27.3.1`, `27.3`, `27`, `latest`, `27.3.1-alpine3.20`](https://github.com/docker-library/docker/blob/97331ed1dd7c07dd5aa852e01aa5deff5d2aed09/27/dind/Dockerfile)
 
--	[`27.3.1-dind-rootless`, `27.3-dind-rootless`, `27-dind-rootless`, `dind-rootless`](https://github.com/docker-library/docker/blob/97331ed1dd7c07dd5aa852e01aa5deff5d2aed09/27/dind-rootless/Dockerfile)
-
--	[`27.3.1-windowsservercore-ltsc2022`, `27.3-windowsservercore-ltsc2022`, `27-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`](https://github.com/docker-library/docker/blob/97331ed1dd7c07dd5aa852e01aa5deff5d2aed09/27/windows/windowsservercore-ltsc2022/Dockerfile)
-
--	[`27.3.1-windowsservercore-1809`, `27.3-windowsservercore-1809`, `27-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/docker-library/docker/blob/97331ed1dd7c07dd5aa852e01aa5deff5d2aed09/27/windows/windowsservercore-1809/Dockerfile)
-
 ## Shared Tags
 
--	`27.3.1-windowsservercore`, `27.3-windowsservercore`, `27-windowsservercore`, `windowsservercore`:
-
-	-	[`27.3.1-windowsservercore-ltsc2022`](https://github.com/docker-library/docker/blob/97331ed1dd7c07dd5aa852e01aa5deff5d2aed09/27/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`27.3.1-windowsservercore-1809`](https://github.com/docker-library/docker/blob/97331ed1dd7c07dd5aa852e01aa5deff5d2aed09/27/windows/windowsservercore-1809/Dockerfile)
+[![arm32v7/docker build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/docker.svg?label=arm32v7/docker%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/docker/)
 
 # Quick reference (cont.)
 
@@ -108,7 +101,7 @@ $ docker run --privileged --name some-docker -d \
 	-e DOCKER_TLS_CERTDIR=/certs \
 	-v some-docker-certs-ca:/certs/ca \
 	-v some-docker-certs-client:/certs/client \
-	docker:dind
+	arm32v7/docker:dind
 ```
 
 **Note:** `--privileged` is required for Docker-in-Docker to function properly, but it should be used with care as it provides full access to the host environment, as explained [in the relevant section of the Docker documentation](https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities).
@@ -119,7 +112,7 @@ $ docker run --privileged --name some-docker -d \
 $ docker run --rm --network some-network \
 	-e DOCKER_TLS_CERTDIR=/certs \
 	-v some-docker-certs-client:/certs/client:ro \
-	docker:latest version
+	arm32v7/docker:latest version
 Client: Docker Engine - Community
  Version:           18.09.8
  API version:       1.39
@@ -144,7 +137,7 @@ Server: Docker Engine - Community
 $ docker run -it --rm --network some-network \
 	-e DOCKER_TLS_CERTDIR=/certs \
 	-v some-docker-certs-client:/certs/client:ro \
-	docker:latest sh
+	arm32v7/docker:latest sh
 / # docker version
 Client: Docker Engine - Community
  Version:           18.09.8
@@ -170,7 +163,7 @@ Server: Docker Engine - Community
 $ docker run --rm --network some-network \
 	-e DOCKER_TLS_CERTDIR=/certs \
 	-v some-docker-certs-client:/certs/client:ro \
-	docker:latest info
+	arm32v7/docker:latest info
 Containers: 0
  Running: 0
  Paused: 0
@@ -222,7 +215,7 @@ WARNING: bridge-nf-call-ip6tables is disabled
 ```
 
 ```console
-$ docker run --rm -v /var/run/docker.sock:/var/run/docker.sock docker:latest version
+$ docker run --rm -v /var/run/docker.sock:/var/run/docker.sock arm32v7/docker:latest version
 Client: Docker Engine - Community
  Version:           18.09.8
  API version:       1.39
@@ -251,7 +244,7 @@ $ docker run --privileged --name some-docker -d \
 	-e DOCKER_TLS_CERTDIR=/certs \
 	-v some-docker-certs-ca:/certs/ca \
 	-v some-docker-certs-client:/certs/client \
-	docker:dind --storage-driver overlay2
+	arm32v7/docker:dind --storage-driver overlay2
 ```
 
 ## Runtime Settings Considerations
@@ -266,7 +259,7 @@ $ docker run --privileged --name some-docker -d \
 	--ulimit core=-1 \
 	--pids-limit -1 \
 	--oom-score-adj -500 \
-	docker:dind
+	arm32v7/docker:dind
 ```
 
 Some of these will not be supported based on the settings on the host's `dockerd`, such as `--ulimit nofile=-1`, giving errors that look like `error setting rlimit type 7: operation not permitted`, and some may inherit sane values from the host `dockerd` instance or may not apply for your usage of Docker-in-Docker (for example, you likely want to set `--oom-score-adj` to a value that's higher than `dockerd` on the host so that your Docker-in-Docker instance is killed before the host Docker instance is).
@@ -303,22 +296,10 @@ The Docker documentation is a good starting point for understanding the differen
 2.	Start your `docker` container like this:
 
 	```console
-	$ docker run --privileged --name some-docker -v /my/own/var-lib-docker:/var/lib/docker -d docker:dind
+	$ docker run --privileged --name some-docker -v /my/own/var-lib-docker:/var/lib/docker -d arm32v7/docker:dind
 	```
 
 The `-v /my/own/var-lib-docker:/var/lib/docker` part of the command mounts the `/my/own/var-lib-docker` directory from the underlying host system as `/var/lib/docker` inside the container, where Docker by default will write its data files.
-
-# Image Variants
-
-The `docker` images come in many flavors, each designed for a specific use case.
-
-## `docker:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-## `docker:<version>-windowsservercore`
-
-Unfortunately, Windows does not support nested containers, so this image variant only contains the client (intended for use against an existing Docker engine, ala `-v //./pipe/docker_engine://./pipe/docker_engine`).
 
 # License
 
