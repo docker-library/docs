@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm64v8` builds of [the `notary` official image](https://hub.docker.com/_/notary) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -27,6 +29,8 @@ WARNING:
 -	[`server-0.7.0`, `server`](https://github.com/docker/notary-official-images/blob/77b9b7833f8dd6be07104b214193788795a320ff/notary-server/Dockerfile)
 
 -	[`signer-0.7.0`, `signer`](https://github.com/docker/notary-official-images/blob/77b9b7833f8dd6be07104b214193788795a320ff/notary-signer/Dockerfile)
+
+[![arm64v8/notary build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/notary.svg?label=arm64v8/notary%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/notary/)
 
 # Quick reference (cont.)
 
