@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `windows-amd64` builds of [the `busybox` official image](https://hub.docker.com/_/busybox) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,21 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.37.0-glibc`, `1.37-glibc`, `1-glibc`, `unstable-glibc`, `glibc`](https://github.com/docker-library/busybox/blob/91f9975d4bb91d7c916ef74de77911d961ac9b75/latest/glibc/amd64/index.json)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `windows-amd64` ARCHITECTURE
 
--	[`1.37.0-uclibc`, `1.37-uclibc`, `1-uclibc`, `unstable-uclibc`, `uclibc`](https://github.com/docker-library/busybox/blob/91f9975d4bb91d7c916ef74de77911d961ac9b75/latest/uclibc/amd64/index.json)
-
--	[`1.37.0-musl`, `1.37-musl`, `1-musl`, `unstable-musl`, `musl`](https://github.com/docker-library/busybox/blob/91f9975d4bb91d7c916ef74de77911d961ac9b75/latest/musl/amd64/index.json)
-
--	[`1.37.0`, `1.37`, `1`, `unstable`, `latest`](https://github.com/docker-library/busybox/blob/91f9975d4bb91d7c916ef74de77911d961ac9b75/latest/glibc/amd64/index.json)
-
--	[`1.36.1-glibc`, `1.36-glibc`, `stable-glibc`](https://github.com/docker-library/busybox/blob/91f9975d4bb91d7c916ef74de77911d961ac9b75/latest-1/glibc/amd64/index.json)
-
--	[`1.36.1-uclibc`, `1.36-uclibc`, `stable-uclibc`](https://github.com/docker-library/busybox/blob/91f9975d4bb91d7c916ef74de77911d961ac9b75/latest-1/uclibc/amd64/index.json)
-
--	[`1.36.1-musl`, `1.36-musl`, `stable-musl`](https://github.com/docker-library/busybox/blob/91f9975d4bb91d7c916ef74de77911d961ac9b75/latest-1/musl/amd64/index.json)
-
--	[`1.36.1`, `1.36`, `stable`](https://github.com/docker-library/busybox/blob/91f9975d4bb91d7c916ef74de77911d961ac9b75/latest-1/glibc/amd64/index.json)
+[![winamd64/busybox build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/windows-amd64/job/busybox.svg?label=winamd64/busybox%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/windows-amd64/job/busybox/)
 
 # Quick reference (cont.)
 
@@ -74,7 +64,7 @@ BusyBox combines tiny versions of many common UNIX utilities into a single small
 ## Run BusyBox shell
 
 ```console
-$ docker run -it --rm busybox
+$ docker run -it --rm winamd64/busybox
 ```
 
 This will drop you into an `sh` shell to allow you to do what you want inside a BusyBox system.
@@ -82,30 +72,12 @@ This will drop you into an `sh` shell to allow you to do what you want inside a 
 ## Create a `Dockerfile` for a binary
 
 ```dockerfile
-FROM busybox
+FROM winamd64/busybox
 COPY ./my-static-binary /my-static-binary
 CMD ["/my-static-binary"]
 ```
 
 This `Dockerfile` will allow you to create a minimal image for your statically compiled binary. You will have to compile the binary in some other place like another container. For a simpler alternative that's similarly tiny but easier to extend, [see `alpine`](https://hub.docker.com/_/alpine/).
-
-# Image Variants
-
-The `busybox` images contain BusyBox built against various "libc" variants (for a comparison of "libc" variants, [Eta Labs has a very nice chart](http://www.etalabs.net/compare_libcs.html) which lists many similarities and differences).
-
-For more information about the specific particulars of the build process for each variant, see `Dockerfile.builder` in the same directory as each variant's `Dockerfile` (see links above).
-
-## `busybox:glibc`
-
--	[glibc from Debian](https://packages.debian.org/search?searchon=names&exact=1&suite=all&section=all&keywords=libc6) (which is then included in the image)
-
-## `busybox:uclibc`
-
--	[uClibc](https://uclibc.org) via [Buildroot](https://buildroot.org) (statically compiled)
-
-## `busybox:musl`
-
--	[musl from Alpine](https://pkgs.alpinelinux.org/packages?name=musl) (statically compiled)
 
 # License
 
