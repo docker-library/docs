@@ -30,17 +30,17 @@ WARNING:
 
 -	[`2024.08-fpm-alpine`, `fpm-alpine`, `stable-fpm-alpine`](https://github.com/friendica/docker/blob/bbb87e370743fee6fd9430ea129cf96750e22990/2024.08/fpm-alpine/Dockerfile)
 
--	[`2024.09-dev-apache`, `dev-apache`, `2024.09-dev`, `dev`](https://github.com/friendica/docker/blob/86849005e22069208e9cf4e21336f524c0642cbf/2024.09-dev/apache/Dockerfile)
+-	[`2024.09-dev-apache`, `dev-apache`, `2024.09-dev`, `dev`](https://github.com/friendica/docker/blob/93be4ea89aed395905abfb12856b0c7b47a2204a/2024.09-dev/apache/Dockerfile)
 
--	[`2024.09-dev-fpm`, `dev-fpm`](https://github.com/friendica/docker/blob/86849005e22069208e9cf4e21336f524c0642cbf/2024.09-dev/fpm/Dockerfile)
+-	[`2024.09-dev-fpm`, `dev-fpm`](https://github.com/friendica/docker/blob/93be4ea89aed395905abfb12856b0c7b47a2204a/2024.09-dev/fpm/Dockerfile)
 
--	[`2024.09-dev-fpm-alpine`, `dev-fpm-alpine`](https://github.com/friendica/docker/blob/86849005e22069208e9cf4e21336f524c0642cbf/2024.09-dev/fpm-alpine/Dockerfile)
+-	[`2024.09-dev-fpm-alpine`, `dev-fpm-alpine`](https://github.com/friendica/docker/blob/93be4ea89aed395905abfb12856b0c7b47a2204a/2024.09-dev/fpm-alpine/Dockerfile)
 
--	[`2024.09-rc-apache`, `rc-apache`, `2024.09-rc`, `rc`](https://github.com/friendica/docker/blob/b11c97b69b6fa77128a2703571d2faa308f102dc/2024.09-rc/apache/Dockerfile)
+-	[`2024.09-rc-apache`, `rc-apache`, `2024.09-rc`, `rc`](https://github.com/friendica/docker/blob/93be4ea89aed395905abfb12856b0c7b47a2204a/2024.09-rc/apache/Dockerfile)
 
--	[`2024.09-rc-fpm`, `rc-fpm`](https://github.com/friendica/docker/blob/b11c97b69b6fa77128a2703571d2faa308f102dc/2024.09-rc/fpm/Dockerfile)
+-	[`2024.09-rc-fpm`, `rc-fpm`](https://github.com/friendica/docker/blob/93be4ea89aed395905abfb12856b0c7b47a2204a/2024.09-rc/fpm/Dockerfile)
 
--	[`2024.09-rc-fpm-alpine`, `rc-fpm-alpine`](https://github.com/friendica/docker/blob/b11c97b69b6fa77128a2703571d2faa308f102dc/2024.09-rc/fpm-alpine/Dockerfile)
+-	[`2024.09-rc-fpm-alpine`, `rc-fpm-alpine`](https://github.com/friendica/docker/blob/93be4ea89aed395905abfb12856b0c7b47a2204a/2024.09-rc/fpm-alpine/Dockerfile)
 
 # Quick reference (cont.)
 
