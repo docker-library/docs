@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `i386` builds of [the `api-firewall` official image](https://hub.docker.com/_/api-firewall) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -25,6 +27,8 @@ WARNING:
 # Supported tags and respective `Dockerfile` links
 
 -	[`0.8.2`, `latest`](https://github.com/wallarm/api-firewall-docker/blob/b90afa9b60e9df6c596a4d6db4ef726ff132d7ee/0.8.2/Dockerfile)
+
+[![i386/api-firewall build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/i386/job/api-firewall.svg?label=i386/api-firewall%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/i386/job/api-firewall/)
 
 # Quick reference (cont.)
 
