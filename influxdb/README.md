@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `amd64` builds of [the `influxdb` official image](https://hub.docker.com/_/influxdb) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -55,6 +57,8 @@ WARNING:
 -	[`2`, `2.7`, `2.7.10`, `latest`](https://github.com/influxdata/influxdata-docker/blob/134d39a090aaf8baa7d8993ee503490a6bb88a15/influxdb/2.7/Dockerfile)
 
 -	[`2-alpine`, `2.7-alpine`, `2.7.10-alpine`, `alpine`](https://github.com/influxdata/influxdata-docker/blob/134d39a090aaf8baa7d8993ee503490a6bb88a15/influxdb/2.7/alpine/Dockerfile)
+
+[![amd64/influxdb build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/amd64/job/influxdb.svg?label=amd64/influxdb%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/influxdb/)
 
 # Quick reference (cont.)
 
@@ -98,7 +102,7 @@ docker run \
     -p 8086:8086 \
     -v "$PWD/data:/var/lib/influxdb2" \
     -v "$PWD/config:/etc/influxdb2" \
-    influxdb:2
+    amd64/influxdb:2
 ```
 
 Replace the following with your own values:
@@ -138,7 +142,7 @@ docker run -d -p 8086:8086 \
   -e DOCKER_INFLUXDB_INIT_PASSWORD=<PASSWORD> \
   -e DOCKER_INFLUXDB_INIT_ORG=<ORG_NAME> \
   -e DOCKER_INFLUXDB_INIT_BUCKET=<BUCKET_NAME> \
-  influxdb:2
+  amd64/influxdb:2
 ```
 
 Replace the following with your own values:
@@ -176,7 +180,7 @@ docker run -d -p 8086:8086 \
     -e DOCKER_INFLUXDB_INIT_BUCKET=my-bucket \
     -e DOCKER_INFLUXDB_INIT_RETENTION=1w \
     -e DOCKER_INFLUXDB_INIT_ADMIN_TOKEN=my-super-secret-auth-token \
-    influxdb:2
+    amd64/influxdb:2
 ```
 
 *To upgrade from InfluxDB 1.x to InfluxDB 2.x, see the **Upgrading from InfluxDB 1.x** section below.\*
@@ -245,7 +249,7 @@ docker run -p 8086:8086 \
      -e V1_RP_NAME=v1-rp \
      -e V1_AUTH_USERNAME=v1-user \
      -e V1_AUTH_PASSWORD=v1-password \
-     influxdb:2
+     amd64/influxdb:2
 ```
 
 > #### Automated setup and upgrade ignored if already setup
@@ -319,7 +323,7 @@ To override specific [configuration options](https://docs.influxdata.com/influxd
 
 	```bash
 	docker run -p 8086:8086 \
-	  influxdb:2 --storage-wal-fsync-delay=15m
+	  amd64/influxdb:2 --storage-wal-fsync-delay=15m
 	```
 
 To learn more, see [InfluxDB configuration options](https://docs.influxdata.com/influxdb/v2/reference/config-options).
@@ -375,7 +379,7 @@ Assume you've been running a minimal InfluxDB 1.x deployment:
 ```bash
 docker run -p 8086:8086 \
     -v influxdb:/var/lib/influxdb \
-    influxdb:1.8
+    amd64/influxdb:1.8
 ```
 
 To upgrade this deployment to InfluxDB 2.x, stop the running InfluxDB 1.x container, and then run the following command:
@@ -389,7 +393,7 @@ docker run -p 8086:8086 \
     -e DOCKER_INFLUXDB_INIT_PASSWORD=my-password \
     -e DOCKER_INFLUXDB_INIT_ORG=my-org \
     -e DOCKER_INFLUXDB_INIT_BUCKET=my-bucket \
-    influxdb:2
+    amd64/influxdb:2
 ```
 
 #### Upgrade InfluxDB 1.x: custom configuration
@@ -400,7 +404,7 @@ Assume you've been running an InfluxDB 1.x deployment with customized configurat
 docker run -p 8086:8086 \
     -v influxdb:/var/lib/influxdb \
     -v "$PWD/influxdb.conf:/etc/influxdb/influxdb.conf" \
-    influxdb:1.8
+    amd64/influxdb:1.8
 ```
 
 To upgrade this deployment to InfluxDB 2.x, stop the running InfluxDB 1.x container, and then run the following command:
@@ -416,7 +420,7 @@ docker run -p 8086:8086 \
     -e DOCKER_INFLUXDB_INIT_PASSWORD=my-password \
     -e DOCKER_INFLUXDB_INIT_ORG=my-org \
     -e DOCKER_INFLUXDB_INIT_BUCKET=my-bucket \
-    influxdb:2
+    amd64/influxdb:2
 ```
 
 #### Upgrade InfluxDB 1.x: custom data and configuration paths
@@ -427,7 +431,7 @@ Assume you've been running an InfluxDB 1.x deployment with data and configuratio
 docker run -p 8086:8086 \
     -v influxdb:/root/influxdb/data \
     -v "$PWD/influxdb.conf:/root/influxdb/influxdb.conf" \
-    influxdb:1.8 -config /root/influxdb/influxdb.conf
+    amd64/influxdb:1.8 -config /root/influxdb/influxdb.conf
 ```
 
 Before you upgrade to InfluxDB v2, decide whether to keep using your custom paths or to use the InfluxDB v2 defaults.
@@ -446,7 +450,7 @@ docker run -p 8086:8086 \
     -e DOCKER_INFLUXDB_INIT_ORG=my-org \
     -e DOCKER_INFLUXDB_INIT_BUCKET=my-bucket \
     -e DOCKER_INFLUXDB_INIT_UPGRADE_V1_CONFIG=/root/influxdb/influxdb.conf \
-    influxdb:2
+    amd64/influxdb:2
 ```
 
 To use your custom paths instead of InfluxDB v2 default paths, run the following command:
@@ -466,7 +470,7 @@ docker run -p 8086:8086 \
     -e DOCKER_INFLUXDB_CONFIG_PATH=/root/influxdb2/config.toml \
     -e DOCKER_INFLUXDB_BOLT_PATH=/root/influxdb2/influxdb.bolt \
     -e DOCKER_INFLUXDB_ENGINE_PATH=/root/influxdb2/engine \
-    influxdb:2
+    amd64/influxdb:2
 ```
 
 To learn more about the upgrade process, see the [v1-to-v2 upgrade guide](https://docs.influxdata.com/influxdb/v2.0/upgrade/v1-to-v2/).
@@ -496,7 +500,7 @@ Use this command to start an InfluxDB v2 Docker Hub container:
 # Docker Hub InfluxDB 2.x container
 docker run -p 8086:8086 \
     -v "$PWD:/var/lib/influxdb2" \
-    influxdb:2
+    amd64/influxdb:2
 ```
 
 #### Configure InfluxDB to use the container home directory
@@ -517,7 +521,7 @@ docker run -p 8086:8086 \
     -e INFLUXD_BOLT_PATH=/root/.influxdbv2/influxd.bolt \
     -e INFLUXD_ENGINE_PATH=/root/.influxdbv2/engine \
     -v "$PWD:/root/.influxdbv2" \
-    influxdb:2
+    amd64/influxdb:2
 ```
 
 # How to use this image for InfluxDB v1
@@ -531,7 +535,7 @@ To start an InfluxDB 1.x container, enter the following command:
 ```bash
 docker run -p 8086:8086 \
     -v "$PWD:/var/lib/influxdb" \
-    influxdb:1.8
+    amd64/influxdb:1.8
 ```
 
 The command passes the following arguments:
@@ -563,7 +567,7 @@ To customize and mount a configuration file, do the following:
 1.	Output the current server configuration to a file in the mounted configuration directory--for example:
 
 	```bash
-	docker run --rm influxdb:1.8 influxd config > influxdb.conf
+	docker run --rm amd64/influxdb:1.8 influxd config > influxdb.conf
 	```
 
 2.	Edit the `influxdb.conf` file to customize [server configuration options](https://docs.influxdata.com/influxdb/v2/reference/config-options/#configuration-options).
@@ -571,7 +575,7 @@ To customize and mount a configuration file, do the following:
 	```bash
 	docker run -p 8086:8086 \
 	  -v "$PWD/influxdb.conf:/etc/influxdb/influxdb.conf:ro" \
-	  influxdb:1.8 -config /etc/influxdb/influxdb.conf
+	  amd64/influxdb:1.8 -config /etc/influxdb/influxdb.conf
 	```
 
 	Replace `$PWD` with the host directory where you want to store the configuration file.
@@ -585,7 +589,7 @@ docker run -p 8086:8086 \
     -e INFLUXDB_REPORTING_DISABLED=true \
     -e INFLUXDB_META_DIR=/path/to/metadir \
     -e INFLUXDB_DATA_QUERY_LOG_ENABLED=false \
-    influxdb:1.8
+    amd64/influxdb:1.8
 ```
 
 Learn more about [configuring InfluxDB v1](https://docs.influxdata.com/influxdb/v1.8/administration/config/).
@@ -597,7 +601,7 @@ InfluxDB supports the Graphite line protocol, but the service and ports are not 
 ```bash
 docker run -p 8086:8086 -p 2003:2003 \
     -e INFLUXDB_GRAPHITE_ENABLED=true \
-    influxdb:1.8
+    amd64/influxdb:1.8
 ```
 
 See the [README on GitHub](https://github.com/influxdata/influxdb/blob/master/services/graphite/README.md) for more detailed documentation to set up the Graphite service. In order to take advantage of graphite templates, you should use a configuration file by outputting a default configuration file using the steps above and modifying the `[[graphite]]` section.
@@ -623,7 +627,7 @@ Read more about this in the [official documentation](https://docs.influxdata.com
 Start the container:
 
 ```bash
-docker run --name=influxdb -d -p 8086:8086 influxdb:1.8
+docker run --name=influxdb -d -p 8086:8086 amd64/influxdb:1.8
 ```
 
 Run the influx client in this container:
@@ -635,7 +639,7 @@ docker exec -it influxdb influx
 Or run the influx client in a separate container:
 
 ```bash
-docker run --rm --link=influxdb -it influxdb:1.8 influx -host influxdb
+docker run --rm --link=influxdb -it amd64/influxdb:1.8 influx -host influxdb
 ```
 
 ## InfluxDB v1 database initialization
@@ -708,7 +712,7 @@ docker run --rm \
     -e INFLUXDB_USER=telegraf -e \
     -e INFLUXDB_USER_PASSWORD=secretpassword \
     -v "$PWD:/var/lib/influxdb" \
-    influxdb:1.8 /init-influxdb.sh
+    amd64/influxdb:1.8 /init-influxdb.sh
 ```
 
 The command creates the following:
@@ -721,13 +725,13 @@ The `--rm` flag causes Docker to exit and delete the container after the script 
 
 # Image Variants
 
-The `influxdb` images come in many flavors, each designed for a specific use case.
+The `amd64/influxdb` images come in many flavors, each designed for a specific use case.
 
-## `influxdb:<version>`
+## `amd64/influxdb:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `influxdb:<version>-alpine`
+## `amd64/influxdb:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
@@ -735,7 +739,7 @@ This variant is useful when final image size being as small as possible is your 
 
 To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
-## `influxdb:data`
+## `amd64/influxdb:data`
 
 *Using this image for [InfluxDB Enterprise](https://docs.influxdata.com/enterprise_influxdb/v1/introduction/installation/meta_node_installation/#license-key-or-file) requires a valid InfluxData [license key](https://docs.influxdata.com/enterprise_influxdb/v1/introduction/installation/meta_node_installation/#license-key-or-file).*
 
@@ -743,7 +747,7 @@ This image contains the enterprise data node package for clustering. It supports
 
 Refer to the `influxdb:meta` variant for directions on how to setup a cluster.
 
-## `influxdb:meta`
+## `amd64/influxdb:meta`
 
 *This image requires a valid license key from InfluxData.* Please visit our [products page](https://www.influxdata.com/products/) to learn more.
 
@@ -758,7 +762,7 @@ The license key can be specified using either an environment variable or by over
 ```console
 docker run -p 8089:8089 -p 8091:8091 \
       -e INFLUXDB_ENTERPRISE_LICENSE_KEY=<license-key>
-      influxdb:meta
+      amd64/influxdb:meta
 ```
 
 #### Running the container
@@ -777,15 +781,15 @@ Start three meta nodes. This is the suggested number of meta nodes. We do not re
 docker run -d --name=influxdb-meta-0 --network=influxdb \
       -h influxdb-meta-0 \
       -e INFLUXDB_ENTERPRISE_LICENSE_KEY=<license-key> \
-      influxdb:meta
+      amd64/influxdb:meta
 docker run -d --name=influxdb-meta-1 --network=influxdb \
       -h influxdb-meta-1 \
       -e INFLUXDB_ENTERPRISE_LICENSE_KEY=<license-key> \
-      influxdb:meta
+      amd64/influxdb:meta
 docker run -d --name=influxdb-meta-2 --network=influxdb \
       -h influxdb-meta-2 \
       -e INFLUXDB_ENTERPRISE_LICENSE_KEY=<license-key> \
-      influxdb:meta
+      amd64/influxdb:meta
 ```
 
 When setting the hostname, you can use `-h <hostname>` or you can directly set the environment variable using `-e INFLUXDB_HOSTNAME=<hostname>`.
@@ -805,18 +809,18 @@ Or you can just start a single meta node. If you setup a single meta node, you d
 docker run -d --name=influxdb-meta --network=influxdb \
       -h influxdb-meta \
       -e INFLUXDB_ENTERPRISE_LICENSE_KEY=<license-key> \
-      influxdb:meta -single-server
+      amd64/influxdb:meta -single-server
 ```
 
 #### Connecting the data nodes
 
-Start the data nodes using `influxdb:data` with similar command line arguments to the meta nodes. You can start as many data nodes as are allowed by your license.
+Start the data nodes using `amd64/influxdb:data` with similar command line arguments to the meta nodes. You can start as many data nodes as are allowed by your license.
 
 ```console
 docker run -d --name=influxdb-data-0 --network=influxdb \
       -h influxdb-data-0 \
       -e INFLUXDB_LICENSE_KEY=<license-key> \
-      influxdb:data
+      amd64/influxdb:data
 ```
 
 You can add `-p 8086:8086` to expose the http port to the host machine. After starting the container, choose one of the meta nodes and add the data node to it.
@@ -839,7 +843,7 @@ InfluxDB Meta can be either configured from a config file or using environment v
 Generate the default configuration file:
 
 ```console
-docker run --rm influxdb:meta influxd-meta config > influxdb-meta.conf
+docker run --rm amd64/influxdb:meta influxd-meta config > influxdb-meta.conf
 ```
 
 Modify the default configuration, which will now be available under `$PWD`. Then start the InfluxDB Meta container.
@@ -847,7 +851,7 @@ Modify the default configuration, which will now be available under `$PWD`. Then
 ```console
 docker run \
       -v $PWD/influxdb-meta.conf:/etc/influxdb/influxdb-meta.conf:ro \
-      influxdb -config /etc/influxdb/influxdb-meta.conf
+      amd64/influxdb -config /etc/influxdb/influxdb-meta.conf
 ```
 
 Modify `$PWD` to the directory where you want to store the configuration file.

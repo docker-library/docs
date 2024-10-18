@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `amd64` builds of [the `ros` official image](https://hub.docker.com/_/ros) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -56,6 +58,8 @@ WARNING:
 
 -	[`rolling-perception`, `rolling-perception-noble`](https://github.com/osrf/docker_images/blob/7f98ddd88d872299c45b60c8bcd70d4eb6665222/ros/rolling/ubuntu/noble/perception/Dockerfile)
 
+[![amd64/ros build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/amd64/job/ros.svg?label=amd64/ros%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/ros/)
+
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
@@ -90,7 +94,7 @@ The Robot Operating System (ROS) is a set of software libraries and tools that h
 To create your own ROS docker images and install custom packages, here's a simple example of installing the C++, Python client library demos using the official released Debian packages via apt-get.
 
 ```dockerfile
-FROM ros:foxy
+FROM amd64/ros:foxy
 
 # install ros package
 RUN apt-get update && apt-get install -y \
@@ -121,7 +125,7 @@ $ docker run -it --rm my/ros:app
 To create your own ROS docker images and build custom packages, here's a simple example of installing a package's build dependencies, compiling it from source, and installing the resulting build artifacts into a final multi-stage image layer.
 
 ```dockerfile
-ARG FROM_IMAGE=ros:foxy
+ARG FROM_IMAGE=amd64/ros:foxy
 ARG OVERLAY_WS=/opt/ros/overlay_ws
 
 # multi-stage for caching
@@ -217,7 +221,7 @@ ROS uses the `~/.ros/` directory for storing logs, and debugging info. If you wi
 For example, if one wishes to use their own `.ros` folder that already resides in their local home directory, with a username of `ubuntu`, we can simply launch the container with an additional volume argument:
 
 ```console
-$ docker run -v "/home/ubuntu/.ros/:/root/.ros/" ros
+$ docker run -v "/home/ubuntu/.ros/:/root/.ros/" amd64/ros
 ```
 
 ### Devices
@@ -285,7 +289,7 @@ $ docker-compose rm
 To ease ROS 2 migration, [`ros1_bridge`](https://index.ros.org/p/ros1_bridge/github-ros2-ros1_bridge) is a ROS 2 package that provides bidirectional communication between ROS 1 and ROS 2. As a minimal example, given the ROS 2 Dockerfile above, we'll create the ROS 1 equivalent below, and name the Dockerfile appropriately.
 
 ```dockerfile
-FROM ros:noetic
+FROM amd64/ros:noetic
 
 # install ros package
 RUN apt-get update && apt-get install -y \
