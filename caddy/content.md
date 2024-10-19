@@ -46,7 +46,7 @@ $ docker run -d -p 80:80 \
 
 #### ⚠️ Do not mount the Caddyfile directly at `/etc/caddy/Caddyfile`
 
-This effectively disables Caddy's graceful reload feature in many cases depending on the way you apply changes to the file as discussed in [this issue](https://github.com/caddyserver/caddy/issues/5735#issuecomment-1675896585).
+If vim or another editor is used that changes the inode of the edited file, the changes will only be applied within the container when the container is recreated , which is explained in detail in this [Medium article](https://medium.com/@jonsbun/why-need-to-be-careful-when-mounting-single-files-into-a-docker-container-4f929340834). When using such an editor, Caddy's graceful reload functionality might not work as expected, as described in [this issue](https://github.com/caddyserver/caddy/issues/5735#issuecomment-1675896585).
 
 ### Automatic TLS with the Caddy image
 
