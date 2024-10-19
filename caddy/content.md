@@ -123,7 +123,7 @@ See https://github.com/quic-go/quic-go/wiki/UDP-Buffer-Sizes for more details.
 
 ### Docker Compose example
 
-If you prefer to use `docker compose` to run your stack, here's a sample service definition which goes in a file named `compose.yaml`.
+If you prefer to use `docker compose` to run your stack, here's a sample service definition which goes in a file named `compose.yaml`. The configuration assumes you put a custom Caddyfile into `$PWD/conf` as described [above](#basic-usage).
 
 ```yaml
 services:
@@ -137,7 +137,7 @@ services:
       - "443:443"
       - "443:443/udp"
     volumes:
-      - $PWD/caddyfile:/etc/caddy
+      - $PWD/conf:/etc/caddy
       - $PWD/site:/srv
       - caddy_data:/data
       - caddy_config:/config
