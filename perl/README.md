@@ -24,69 +24,69 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.40.0`, `5.40`, `5`, `latest`, `stable`, `5.40.0-bookworm`, `5.40-bookworm`, `5-bookworm`, `bookworm`, `stable-bookworm`](https://github.com/perl/docker-perl/blob/f551b853d080de65e436cd1c84b78feedcd378f5/5.040.000-main-bookworm/Dockerfile)
+-	[`5.40.0`, `5.40`, `5`, `latest`, `stable`, `5.40.0-bookworm`, `5.40-bookworm`, `5-bookworm`, `bookworm`, `stable-bookworm`](https://github.com/perl/docker-perl/blob/bc908b6f3523d1ce819ae2f26ddaabf11d955a4d/5.040.000-main-bookworm/Dockerfile)
 
--	[`5.40.0-bullseye`, `5.40-bullseye`, `5-bullseye`, `bullseye`, `stable-bullseye`](https://github.com/perl/docker-perl/blob/f551b853d080de65e436cd1c84b78feedcd378f5/5.040.000-main-bullseye/Dockerfile)
+-	[`5.40.0-bullseye`, `5.40-bullseye`, `5-bullseye`, `bullseye`, `stable-bullseye`](https://github.com/perl/docker-perl/blob/bc908b6f3523d1ce819ae2f26ddaabf11d955a4d/5.040.000-main-bullseye/Dockerfile)
 
--	[`5.40.0-slim`, `5.40-slim`, `5-slim`, `slim`, `stable-slim`, `5.40.0-slim-bookworm`, `5.40-slim-bookworm`, `5-slim-bookworm`, `slim-bookworm`, `stable-slim-bookworm`](https://github.com/perl/docker-perl/blob/f551b853d080de65e436cd1c84b78feedcd378f5/5.040.000-slim-bookworm/Dockerfile)
+-	[`5.40.0-slim`, `5.40-slim`, `5-slim`, `slim`, `stable-slim`, `5.40.0-slim-bookworm`, `5.40-slim-bookworm`, `5-slim-bookworm`, `slim-bookworm`, `stable-slim-bookworm`](https://github.com/perl/docker-perl/blob/bc908b6f3523d1ce819ae2f26ddaabf11d955a4d/5.040.000-slim-bookworm/Dockerfile)
 
--	[`5.40.0-slim-bullseye`, `5.40-slim-bullseye`, `5-slim-bullseye`, `slim-bullseye`, `stable-slim-bullseye`](https://github.com/perl/docker-perl/blob/f551b853d080de65e436cd1c84b78feedcd378f5/5.040.000-slim-bullseye/Dockerfile)
+-	[`5.40.0-slim-bullseye`, `5.40-slim-bullseye`, `5-slim-bullseye`, `slim-bullseye`, `stable-slim-bullseye`](https://github.com/perl/docker-perl/blob/bc908b6f3523d1ce819ae2f26ddaabf11d955a4d/5.040.000-slim-bullseye/Dockerfile)
 
--	[`5.40.0-threaded`, `5.40-threaded`, `5-threaded`, `threaded`, `stable-threaded`, `5.40.0-threaded-bookworm`, `5.40-threaded-bookworm`, `5-threaded-bookworm`, `threaded-bookworm`, `stable-threaded-bookworm`](https://github.com/perl/docker-perl/blob/f551b853d080de65e436cd1c84b78feedcd378f5/5.040.000-main,threaded-bookworm/Dockerfile)
+-	[`5.40.0-threaded`, `5.40-threaded`, `5-threaded`, `threaded`, `stable-threaded`, `5.40.0-threaded-bookworm`, `5.40-threaded-bookworm`, `5-threaded-bookworm`, `threaded-bookworm`, `stable-threaded-bookworm`](https://github.com/perl/docker-perl/blob/bc908b6f3523d1ce819ae2f26ddaabf11d955a4d/5.040.000-main,threaded-bookworm/Dockerfile)
 
--	[`5.40.0-threaded-bullseye`, `5.40-threaded-bullseye`, `5-threaded-bullseye`, `threaded-bullseye`, `stable-threaded-bullseye`](https://github.com/perl/docker-perl/blob/f551b853d080de65e436cd1c84b78feedcd378f5/5.040.000-main,threaded-bullseye/Dockerfile)
+-	[`5.40.0-threaded-bullseye`, `5.40-threaded-bullseye`, `5-threaded-bullseye`, `threaded-bullseye`, `stable-threaded-bullseye`](https://github.com/perl/docker-perl/blob/bc908b6f3523d1ce819ae2f26ddaabf11d955a4d/5.040.000-main,threaded-bullseye/Dockerfile)
 
--	[`5.40.0-slim-threaded`, `5.40-slim-threaded`, `5-slim-threaded`, `slim-threaded`, `stable-slim-threaded`, `5.40.0-slim-threaded-bookworm`, `5.40-slim-threaded-bookworm`, `5-slim-threaded-bookworm`, `slim-threaded-bookworm`, `stable-slim-threaded-bookworm`](https://github.com/perl/docker-perl/blob/f551b853d080de65e436cd1c84b78feedcd378f5/5.040.000-slim,threaded-bookworm/Dockerfile)
+-	[`5.40.0-slim-threaded`, `5.40-slim-threaded`, `5-slim-threaded`, `slim-threaded`, `stable-slim-threaded`, `5.40.0-slim-threaded-bookworm`, `5.40-slim-threaded-bookworm`, `5-slim-threaded-bookworm`, `slim-threaded-bookworm`, `stable-slim-threaded-bookworm`](https://github.com/perl/docker-perl/blob/bc908b6f3523d1ce819ae2f26ddaabf11d955a4d/5.040.000-slim,threaded-bookworm/Dockerfile)
 
--	[`5.40.0-slim-threaded-bullseye`, `5.40-slim-threaded-bullseye`, `5-slim-threaded-bullseye`, `slim-threaded-bullseye`, `stable-slim-threaded-bullseye`](https://github.com/perl/docker-perl/blob/f551b853d080de65e436cd1c84b78feedcd378f5/5.040.000-slim,threaded-bullseye/Dockerfile)
+-	[`5.40.0-slim-threaded-bullseye`, `5.40-slim-threaded-bullseye`, `5-slim-threaded-bullseye`, `slim-threaded-bullseye`, `stable-slim-threaded-bullseye`](https://github.com/perl/docker-perl/blob/bc908b6f3523d1ce819ae2f26ddaabf11d955a4d/5.040.000-slim,threaded-bullseye/Dockerfile)
 
--	[`5.38.2`, `5.38`, `5.38.2-bookworm`, `5.38-bookworm`](https://github.com/perl/docker-perl/blob/f551b853d080de65e436cd1c84b78feedcd378f5/5.038.002-main-bookworm/Dockerfile)
+-	[`5.38.2`, `5.38`, `5.38.2-bookworm`, `5.38-bookworm`](https://github.com/perl/docker-perl/blob/bc908b6f3523d1ce819ae2f26ddaabf11d955a4d/5.038.002-main-bookworm/Dockerfile)
 
--	[`5.38.2-bullseye`, `5.38-bullseye`](https://github.com/perl/docker-perl/blob/f551b853d080de65e436cd1c84b78feedcd378f5/5.038.002-main-bullseye/Dockerfile)
+-	[`5.38.2-bullseye`, `5.38-bullseye`](https://github.com/perl/docker-perl/blob/bc908b6f3523d1ce819ae2f26ddaabf11d955a4d/5.038.002-main-bullseye/Dockerfile)
 
--	[`5.38.2-slim`, `5.38-slim`, `5.38.2-slim-bookworm`, `5.38-slim-bookworm`](https://github.com/perl/docker-perl/blob/f551b853d080de65e436cd1c84b78feedcd378f5/5.038.002-slim-bookworm/Dockerfile)
+-	[`5.38.2-slim`, `5.38-slim`, `5.38.2-slim-bookworm`, `5.38-slim-bookworm`](https://github.com/perl/docker-perl/blob/bc908b6f3523d1ce819ae2f26ddaabf11d955a4d/5.038.002-slim-bookworm/Dockerfile)
 
--	[`5.38.2-slim-bullseye`, `5.38-slim-bullseye`](https://github.com/perl/docker-perl/blob/f551b853d080de65e436cd1c84b78feedcd378f5/5.038.002-slim-bullseye/Dockerfile)
+-	[`5.38.2-slim-bullseye`, `5.38-slim-bullseye`](https://github.com/perl/docker-perl/blob/bc908b6f3523d1ce819ae2f26ddaabf11d955a4d/5.038.002-slim-bullseye/Dockerfile)
 
--	[`5.38.2-threaded`, `5.38-threaded`, `5.38.2-threaded-bookworm`, `5.38-threaded-bookworm`](https://github.com/perl/docker-perl/blob/f551b853d080de65e436cd1c84b78feedcd378f5/5.038.002-main,threaded-bookworm/Dockerfile)
+-	[`5.38.2-threaded`, `5.38-threaded`, `5.38.2-threaded-bookworm`, `5.38-threaded-bookworm`](https://github.com/perl/docker-perl/blob/bc908b6f3523d1ce819ae2f26ddaabf11d955a4d/5.038.002-main,threaded-bookworm/Dockerfile)
 
--	[`5.38.2-threaded-bullseye`, `5.38-threaded-bullseye`](https://github.com/perl/docker-perl/blob/f551b853d080de65e436cd1c84b78feedcd378f5/5.038.002-main,threaded-bullseye/Dockerfile)
+-	[`5.38.2-threaded-bullseye`, `5.38-threaded-bullseye`](https://github.com/perl/docker-perl/blob/bc908b6f3523d1ce819ae2f26ddaabf11d955a4d/5.038.002-main,threaded-bullseye/Dockerfile)
 
--	[`5.38.2-slim-threaded`, `5.38-slim-threaded`, `5.38.2-slim-threaded-bookworm`, `5.38-slim-threaded-bookworm`](https://github.com/perl/docker-perl/blob/f551b853d080de65e436cd1c84b78feedcd378f5/5.038.002-slim,threaded-bookworm/Dockerfile)
+-	[`5.38.2-slim-threaded`, `5.38-slim-threaded`, `5.38.2-slim-threaded-bookworm`, `5.38-slim-threaded-bookworm`](https://github.com/perl/docker-perl/blob/bc908b6f3523d1ce819ae2f26ddaabf11d955a4d/5.038.002-slim,threaded-bookworm/Dockerfile)
 
--	[`5.38.2-slim-threaded-bullseye`, `5.38-slim-threaded-bullseye`](https://github.com/perl/docker-perl/blob/f551b853d080de65e436cd1c84b78feedcd378f5/5.038.002-slim,threaded-bullseye/Dockerfile)
+-	[`5.38.2-slim-threaded-bullseye`, `5.38-slim-threaded-bullseye`](https://github.com/perl/docker-perl/blob/bc908b6f3523d1ce819ae2f26ddaabf11d955a4d/5.038.002-slim,threaded-bullseye/Dockerfile)
 
--	[`5.36.3`, `5.36`, `5.36.3-bookworm`, `5.36-bookworm`](https://github.com/perl/docker-perl/blob/f551b853d080de65e436cd1c84b78feedcd378f5/5.036.003-main-bookworm/Dockerfile)
+-	[`5.36.3`, `5.36`, `5.36.3-bookworm`, `5.36-bookworm`](https://github.com/perl/docker-perl/blob/bc908b6f3523d1ce819ae2f26ddaabf11d955a4d/5.036.003-main-bookworm/Dockerfile)
 
--	[`5.36.3-bullseye`, `5.36-bullseye`](https://github.com/perl/docker-perl/blob/f551b853d080de65e436cd1c84b78feedcd378f5/5.036.003-main-bullseye/Dockerfile)
+-	[`5.36.3-bullseye`, `5.36-bullseye`](https://github.com/perl/docker-perl/blob/bc908b6f3523d1ce819ae2f26ddaabf11d955a4d/5.036.003-main-bullseye/Dockerfile)
 
--	[`5.36.3-slim`, `5.36-slim`, `5.36.3-slim-bookworm`, `5.36-slim-bookworm`](https://github.com/perl/docker-perl/blob/f551b853d080de65e436cd1c84b78feedcd378f5/5.036.003-slim-bookworm/Dockerfile)
+-	[`5.36.3-slim`, `5.36-slim`, `5.36.3-slim-bookworm`, `5.36-slim-bookworm`](https://github.com/perl/docker-perl/blob/bc908b6f3523d1ce819ae2f26ddaabf11d955a4d/5.036.003-slim-bookworm/Dockerfile)
 
--	[`5.36.3-slim-bullseye`, `5.36-slim-bullseye`](https://github.com/perl/docker-perl/blob/f551b853d080de65e436cd1c84b78feedcd378f5/5.036.003-slim-bullseye/Dockerfile)
+-	[`5.36.3-slim-bullseye`, `5.36-slim-bullseye`](https://github.com/perl/docker-perl/blob/bc908b6f3523d1ce819ae2f26ddaabf11d955a4d/5.036.003-slim-bullseye/Dockerfile)
 
--	[`5.36.3-threaded`, `5.36-threaded`, `5.36.3-threaded-bookworm`, `5.36-threaded-bookworm`](https://github.com/perl/docker-perl/blob/f551b853d080de65e436cd1c84b78feedcd378f5/5.036.003-main,threaded-bookworm/Dockerfile)
+-	[`5.36.3-threaded`, `5.36-threaded`, `5.36.3-threaded-bookworm`, `5.36-threaded-bookworm`](https://github.com/perl/docker-perl/blob/bc908b6f3523d1ce819ae2f26ddaabf11d955a4d/5.036.003-main,threaded-bookworm/Dockerfile)
 
--	[`5.36.3-threaded-bullseye`, `5.36-threaded-bullseye`](https://github.com/perl/docker-perl/blob/f551b853d080de65e436cd1c84b78feedcd378f5/5.036.003-main,threaded-bullseye/Dockerfile)
+-	[`5.36.3-threaded-bullseye`, `5.36-threaded-bullseye`](https://github.com/perl/docker-perl/blob/bc908b6f3523d1ce819ae2f26ddaabf11d955a4d/5.036.003-main,threaded-bullseye/Dockerfile)
 
--	[`5.36.3-slim-threaded`, `5.36-slim-threaded`, `5.36.3-slim-threaded-bookworm`, `5.36-slim-threaded-bookworm`](https://github.com/perl/docker-perl/blob/f551b853d080de65e436cd1c84b78feedcd378f5/5.036.003-slim,threaded-bookworm/Dockerfile)
+-	[`5.36.3-slim-threaded`, `5.36-slim-threaded`, `5.36.3-slim-threaded-bookworm`, `5.36-slim-threaded-bookworm`](https://github.com/perl/docker-perl/blob/bc908b6f3523d1ce819ae2f26ddaabf11d955a4d/5.036.003-slim,threaded-bookworm/Dockerfile)
 
--	[`5.36.3-slim-threaded-bullseye`, `5.36-slim-threaded-bullseye`](https://github.com/perl/docker-perl/blob/f551b853d080de65e436cd1c84b78feedcd378f5/5.036.003-slim,threaded-bullseye/Dockerfile)
+-	[`5.36.3-slim-threaded-bullseye`, `5.36-slim-threaded-bullseye`](https://github.com/perl/docker-perl/blob/bc908b6f3523d1ce819ae2f26ddaabf11d955a4d/5.036.003-slim,threaded-bullseye/Dockerfile)
 
--	[`5.41.4`, `5.41`, `devel`, `5.41.4-bookworm`, `5.41-bookworm`, `devel-bookworm`](https://github.com/perl/docker-perl/blob/f551b853d080de65e436cd1c84b78feedcd378f5/5.041.004-main-bookworm/Dockerfile)
+-	[`5.41.5`, `5.41`, `devel`, `5.41.5-bookworm`, `5.41-bookworm`, `devel-bookworm`](https://github.com/perl/docker-perl/blob/bc908b6f3523d1ce819ae2f26ddaabf11d955a4d/5.041.005-main-bookworm/Dockerfile)
 
--	[`5.41.4-bullseye`, `5.41-bullseye`, `devel-bullseye`](https://github.com/perl/docker-perl/blob/f551b853d080de65e436cd1c84b78feedcd378f5/5.041.004-main-bullseye/Dockerfile)
+-	[`5.41.5-bullseye`, `5.41-bullseye`, `devel-bullseye`](https://github.com/perl/docker-perl/blob/bc908b6f3523d1ce819ae2f26ddaabf11d955a4d/5.041.005-main-bullseye/Dockerfile)
 
--	[`5.41.4-slim`, `5.41-slim`, `devel-slim`, `5.41.4-slim-bookworm`, `5.41-slim-bookworm`, `devel-slim-bookworm`](https://github.com/perl/docker-perl/blob/f551b853d080de65e436cd1c84b78feedcd378f5/5.041.004-slim-bookworm/Dockerfile)
+-	[`5.41.5-slim`, `5.41-slim`, `devel-slim`, `5.41.5-slim-bookworm`, `5.41-slim-bookworm`, `devel-slim-bookworm`](https://github.com/perl/docker-perl/blob/bc908b6f3523d1ce819ae2f26ddaabf11d955a4d/5.041.005-slim-bookworm/Dockerfile)
 
--	[`5.41.4-slim-bullseye`, `5.41-slim-bullseye`, `devel-slim-bullseye`](https://github.com/perl/docker-perl/blob/f551b853d080de65e436cd1c84b78feedcd378f5/5.041.004-slim-bullseye/Dockerfile)
+-	[`5.41.5-slim-bullseye`, `5.41-slim-bullseye`, `devel-slim-bullseye`](https://github.com/perl/docker-perl/blob/bc908b6f3523d1ce819ae2f26ddaabf11d955a4d/5.041.005-slim-bullseye/Dockerfile)
 
--	[`5.41.4-threaded`, `5.41-threaded`, `devel-threaded`, `5.41.4-threaded-bookworm`, `5.41-threaded-bookworm`, `devel-threaded-bookworm`](https://github.com/perl/docker-perl/blob/f551b853d080de65e436cd1c84b78feedcd378f5/5.041.004-main,threaded-bookworm/Dockerfile)
+-	[`5.41.5-threaded`, `5.41-threaded`, `devel-threaded`, `5.41.5-threaded-bookworm`, `5.41-threaded-bookworm`, `devel-threaded-bookworm`](https://github.com/perl/docker-perl/blob/bc908b6f3523d1ce819ae2f26ddaabf11d955a4d/5.041.005-main,threaded-bookworm/Dockerfile)
 
--	[`5.41.4-threaded-bullseye`, `5.41-threaded-bullseye`, `devel-threaded-bullseye`](https://github.com/perl/docker-perl/blob/f551b853d080de65e436cd1c84b78feedcd378f5/5.041.004-main,threaded-bullseye/Dockerfile)
+-	[`5.41.5-threaded-bullseye`, `5.41-threaded-bullseye`, `devel-threaded-bullseye`](https://github.com/perl/docker-perl/blob/bc908b6f3523d1ce819ae2f26ddaabf11d955a4d/5.041.005-main,threaded-bullseye/Dockerfile)
 
--	[`5.41.4-slim-threaded`, `5.41-slim-threaded`, `devel-slim-threaded`, `5.41.4-slim-threaded-bookworm`, `5.41-slim-threaded-bookworm`, `devel-slim-threaded-bookworm`](https://github.com/perl/docker-perl/blob/f551b853d080de65e436cd1c84b78feedcd378f5/5.041.004-slim,threaded-bookworm/Dockerfile)
+-	[`5.41.5-slim-threaded`, `5.41-slim-threaded`, `devel-slim-threaded`, `5.41.5-slim-threaded-bookworm`, `5.41-slim-threaded-bookworm`, `devel-slim-threaded-bookworm`](https://github.com/perl/docker-perl/blob/bc908b6f3523d1ce819ae2f26ddaabf11d955a4d/5.041.005-slim,threaded-bookworm/Dockerfile)
 
--	[`5.41.4-slim-threaded-bullseye`, `5.41-slim-threaded-bullseye`, `devel-slim-threaded-bullseye`](https://github.com/perl/docker-perl/blob/f551b853d080de65e436cd1c84b78feedcd378f5/5.041.004-slim,threaded-bullseye/Dockerfile)
+-	[`5.41.5-slim-threaded-bullseye`, `5.41-slim-threaded-bullseye`, `devel-slim-threaded-bullseye`](https://github.com/perl/docker-perl/blob/bc908b6f3523d1ce819ae2f26ddaabf11d955a4d/5.041.005-slim,threaded-bullseye/Dockerfile)
 
 # Quick reference (cont.)
 
