@@ -38,7 +38,7 @@ WARNING:
 
 -	[`5.7.2`, `5.7`](https://github.com/emqx/emqx-docker/blob/35e70c8e602687db5a447c9573bde8ab77335fdc/5.7/Dockerfile)
 
--	[`5.8.0`, `5.8`, `5`, `latest`](https://github.com/emqx/emqx-docker/blob/69e9c223e2215fb5d071dec6cc6aa19c106331e7/5.8/Dockerfile)
+-	[`5.8.1`, `5.8`, `5`, `latest`](https://github.com/emqx/emqx-docker/blob/2b80e3422224db8bcf69ee62e8414b63dca0fec6/5.8/Dockerfile)
 
 # Quick reference (cont.)
 
