@@ -24,6 +24,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
+-	[`2.0-preview1-scala_2.12-java17`, `2.0-scala_2.12-java17`, `2.0-preview1-java17`, `2.0-java17`](https://github.com/apache/flink-docker/blob/3a8ba480ff327674b0a090c6ce417f0437576e92/2.0/scala_2.12-java17-ubuntu/Dockerfile)
+
+-	[`2.0-preview1-scala_2.12-java11`, `2.0-scala_2.12-java11`, `2.0-preview1-scala_2.12`, `2.0-scala_2.12`, `2.0-preview1-java11`, `2.0-java11`, `2.0-preview1`, `2.0`](https://github.com/apache/flink-docker/blob/3a8ba480ff327674b0a090c6ce417f0437576e92/2.0/scala_2.12-java11-ubuntu/Dockerfile)
+
 -	[`1.20.0-scala_2.12-java8`, `1.20-scala_2.12-java8`, `scala_2.12-java8`, `1.20.0-java8`, `1.20-java8`, `java8`](https://github.com/apache/flink-docker/blob/9d335b16e579d3207b769118990a602b8584b63d/1.20/scala_2.12-java8-ubuntu/Dockerfile)
 
 -	[`1.20.0-scala_2.12-java17`, `1.20-scala_2.12-java17`, `scala_2.12-java17`, `1.20.0-java17`, `1.20-java17`, `java17`](https://github.com/apache/flink-docker/blob/9d335b16e579d3207b769118990a602b8584b63d/1.20/scala_2.12-java17-ubuntu/Dockerfile)
