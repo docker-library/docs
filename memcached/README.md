@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `riscv64` builds of [the `memcached` official image](https://hub.docker.com/_/memcached) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,9 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.6.32`, `1.6`, `1`, `latest`, `1.6.32-bookworm`, `1.6-bookworm`, `1-bookworm`, `bookworm`](https://github.com/docker-library/memcached/blob/89c8fdb68df3a904503298751ac8862f283328e6/1/debian/Dockerfile)
-
 -	[`1.6.32-alpine`, `1.6-alpine`, `1-alpine`, `alpine`, `1.6.32-alpine3.20`, `1.6-alpine3.20`, `1-alpine3.20`, `alpine3.20`](https://github.com/docker-library/memcached/blob/89c8fdb68df3a904503298751ac8862f283328e6/1/alpine/Dockerfile)
+
+[![riscv64/memcached build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/riscv64/job/memcached.svg?label=riscv64/memcached%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/riscv64/job/memcached/)
 
 # Quick reference (cont.)
 
@@ -58,7 +60,7 @@ Memcached's APIs provide a very large hash table distributed across multiple mac
 # How to use this image
 
 ```console
-$ docker run --name my-memcache -d memcached
+$ docker run --name my-memcache -d riscv64/memcached
 ```
 
 ### Configuration
@@ -66,13 +68,13 @@ $ docker run --name my-memcache -d memcached
 To customize the configuration of the memcached server, first obtain the upstream configuration options from the container:
 
 ```console
-$ docker run --rm memcached -h
+$ docker run --rm riscv64/memcached -h
 ```
 
 Using `docker run`:
 
 ```console
-$ docker run --name my-memcache -d memcached memcached --memory-limit=64
+$ docker run --name my-memcache -d riscv64/memcached memcached --memory-limit=64
 ```
 
 or using Docker Compose:
@@ -80,7 +82,7 @@ or using Docker Compose:
 ```yaml
 services:
   memcached:
-    image: memcached
+    image: riscv64/memcached
     command:
       - --conn-limit=1024
       - --memory-limit=64
@@ -91,15 +93,13 @@ For infomation on configuring your memcached server, see the extensive [wiki](ht
 
 # Image Variants
 
-The `memcached` images come in many flavors, each designed for a specific use case.
+The `riscv64/memcached` images come in many flavors, each designed for a specific use case.
 
-## `memcached:<version>`
+## `riscv64/memcached:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like bookworm in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
-
-## `memcached:<version>-alpine`
+## `riscv64/memcached:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 

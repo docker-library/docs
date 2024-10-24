@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `riscv64` builds of [the `debian` official image](https://hub.docker.com/_/debian) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,53 +26,31 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`bookworm`, `bookworm-20241016`, `12.7`, `12`, `latest`](https://github.com/debuerreotype/docker-debian-artifacts/blob/ba01688d8eb18826b9ea238a8f9c98ec92eedc60/bookworm/Dockerfile)
+-	[`experimental`, `experimental-20241016`](https://github.com/debuerreotype/docker-debian-artifacts/blob/5946c285e401377c8ebb471e93e0ba47c27b0452/experimental/Dockerfile)
 
--	[`bookworm-backports`](https://github.com/debuerreotype/docker-debian-artifacts/blob/ba01688d8eb18826b9ea238a8f9c98ec92eedc60/bookworm/backports/Dockerfile)
+-	[`rc-buggy`, `rc-buggy-20241016`](https://github.com/debuerreotype/docker-debian-artifacts/blob/5946c285e401377c8ebb471e93e0ba47c27b0452/rc-buggy/Dockerfile)
 
--	[`bookworm-slim`, `bookworm-20241016-slim`, `12.7-slim`, `12-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/ba01688d8eb18826b9ea238a8f9c98ec92eedc60/bookworm/slim/Dockerfile)
+-	[`sid`, `sid-20241016`](https://github.com/debuerreotype/docker-debian-artifacts/blob/5946c285e401377c8ebb471e93e0ba47c27b0452/sid/Dockerfile)
 
--	[`bullseye`, `bullseye-20241016`, `11.11`, `11`](https://github.com/debuerreotype/docker-debian-artifacts/blob/ba01688d8eb18826b9ea238a8f9c98ec92eedc60/bullseye/Dockerfile)
+-	[`sid-slim`, `sid-20241016-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/5946c285e401377c8ebb471e93e0ba47c27b0452/sid/slim/Dockerfile)
 
--	[`bullseye-backports`](https://github.com/debuerreotype/docker-debian-artifacts/blob/ba01688d8eb18826b9ea238a8f9c98ec92eedc60/bullseye/backports/Dockerfile)
+-	[`testing`, `testing-20241016`](https://github.com/debuerreotype/docker-debian-artifacts/blob/5946c285e401377c8ebb471e93e0ba47c27b0452/testing/Dockerfile)
 
--	[`bullseye-slim`, `bullseye-20241016-slim`, `11.11-slim`, `11-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/ba01688d8eb18826b9ea238a8f9c98ec92eedc60/bullseye/slim/Dockerfile)
+-	[`testing-backports`](https://github.com/debuerreotype/docker-debian-artifacts/blob/5946c285e401377c8ebb471e93e0ba47c27b0452/testing/backports/Dockerfile)
 
--	[`experimental`, `experimental-20241016`](https://github.com/debuerreotype/docker-debian-artifacts/blob/ba01688d8eb18826b9ea238a8f9c98ec92eedc60/experimental/Dockerfile)
+-	[`testing-slim`, `testing-20241016-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/5946c285e401377c8ebb471e93e0ba47c27b0452/testing/slim/Dockerfile)
 
--	[`oldstable`, `oldstable-20241016`](https://github.com/debuerreotype/docker-debian-artifacts/blob/ba01688d8eb18826b9ea238a8f9c98ec92eedc60/oldstable/Dockerfile)
+-	[`trixie`, `trixie-20241016`](https://github.com/debuerreotype/docker-debian-artifacts/blob/5946c285e401377c8ebb471e93e0ba47c27b0452/trixie/Dockerfile)
 
--	[`oldstable-backports`](https://github.com/debuerreotype/docker-debian-artifacts/blob/ba01688d8eb18826b9ea238a8f9c98ec92eedc60/oldstable/backports/Dockerfile)
+-	[`trixie-backports`](https://github.com/debuerreotype/docker-debian-artifacts/blob/5946c285e401377c8ebb471e93e0ba47c27b0452/trixie/backports/Dockerfile)
 
--	[`oldstable-slim`, `oldstable-20241016-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/ba01688d8eb18826b9ea238a8f9c98ec92eedc60/oldstable/slim/Dockerfile)
+-	[`trixie-slim`, `trixie-20241016-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/5946c285e401377c8ebb471e93e0ba47c27b0452/trixie/slim/Dockerfile)
 
--	[`rc-buggy`, `rc-buggy-20241016`](https://github.com/debuerreotype/docker-debian-artifacts/blob/ba01688d8eb18826b9ea238a8f9c98ec92eedc60/rc-buggy/Dockerfile)
+-	[`unstable`, `unstable-20241016`](https://github.com/debuerreotype/docker-debian-artifacts/blob/5946c285e401377c8ebb471e93e0ba47c27b0452/unstable/Dockerfile)
 
--	[`sid`, `sid-20241016`](https://github.com/debuerreotype/docker-debian-artifacts/blob/ba01688d8eb18826b9ea238a8f9c98ec92eedc60/sid/Dockerfile)
+-	[`unstable-slim`, `unstable-20241016-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/5946c285e401377c8ebb471e93e0ba47c27b0452/unstable/slim/Dockerfile)
 
--	[`sid-slim`, `sid-20241016-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/ba01688d8eb18826b9ea238a8f9c98ec92eedc60/sid/slim/Dockerfile)
-
--	[`stable`, `stable-20241016`](https://github.com/debuerreotype/docker-debian-artifacts/blob/ba01688d8eb18826b9ea238a8f9c98ec92eedc60/stable/Dockerfile)
-
--	[`stable-backports`](https://github.com/debuerreotype/docker-debian-artifacts/blob/ba01688d8eb18826b9ea238a8f9c98ec92eedc60/stable/backports/Dockerfile)
-
--	[`stable-slim`, `stable-20241016-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/ba01688d8eb18826b9ea238a8f9c98ec92eedc60/stable/slim/Dockerfile)
-
--	[`testing`, `testing-20241016`](https://github.com/debuerreotype/docker-debian-artifacts/blob/ba01688d8eb18826b9ea238a8f9c98ec92eedc60/testing/Dockerfile)
-
--	[`testing-backports`](https://github.com/debuerreotype/docker-debian-artifacts/blob/ba01688d8eb18826b9ea238a8f9c98ec92eedc60/testing/backports/Dockerfile)
-
--	[`testing-slim`, `testing-20241016-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/ba01688d8eb18826b9ea238a8f9c98ec92eedc60/testing/slim/Dockerfile)
-
--	[`trixie`, `trixie-20241016`](https://github.com/debuerreotype/docker-debian-artifacts/blob/ba01688d8eb18826b9ea238a8f9c98ec92eedc60/trixie/Dockerfile)
-
--	[`trixie-backports`](https://github.com/debuerreotype/docker-debian-artifacts/blob/ba01688d8eb18826b9ea238a8f9c98ec92eedc60/trixie/backports/Dockerfile)
-
--	[`trixie-slim`, `trixie-20241016-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/ba01688d8eb18826b9ea238a8f9c98ec92eedc60/trixie/slim/Dockerfile)
-
--	[`unstable`, `unstable-20241016`](https://github.com/debuerreotype/docker-debian-artifacts/blob/ba01688d8eb18826b9ea238a8f9c98ec92eedc60/unstable/Dockerfile)
-
--	[`unstable-slim`, `unstable-20241016-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/ba01688d8eb18826b9ea238a8f9c98ec92eedc60/unstable/slim/Dockerfile)
+[![riscv64/debian build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/riscv64/job/debian.svg?label=riscv64/debian%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/riscv64/job/debian/)
 
 # Quick reference (cont.)
 
@@ -101,9 +81,9 @@ Debian is an operating system which is composed primarily of free and open-sourc
 
 # About this image
 
-The `debian:latest` tag will always point the latest stable release. Stable releases are also tagged with their version (ie, `debian:11` is an alias for `debian:bullseye`, `debian:10` is an alias for `debian:buster`, etc).
+The `riscv64/debian:latest` tag will always point the latest stable release. Stable releases are also tagged with their version (ie, `riscv64/debian:11` is an alias for `riscv64/debian:bullseye`, `riscv64/debian:10` is an alias for `riscv64/debian:buster`, etc).
 
-The rolling tags (`debian:stable`, `debian:testing`, etc) use the rolling suite names in their `/etc/apt/sources.list` file (ie, `deb http://deb.debian.org/debian testing main`).
+The rolling tags (`riscv64/debian:stable`, `riscv64/debian:testing`, etc) use the rolling suite names in their `/etc/apt/sources.list` file (ie, `deb http://deb.debian.org/debian testing main`).
 
 The mirror of choice for these images is [the deb.debian.org CDN pointer/redirector](https://deb.debian.org) so that it's as reliable as possible for the largest subset of users (and is also the default mirror for `debootstrap` as of [2016-10-20](https://anonscm.debian.org/cgit/d-i/debootstrap.git/commit/?id=9e8bc60ad1ccf3a25ce7890526b70059f3e770de)). See the [deb.debian.org homepage](https://deb.debian.org) for more information.
 
@@ -131,7 +111,7 @@ For convenience, the SHA256 checksum (and full build command) for each of the pr
 
 # Image Variants
 
-## `debian:<suite>-slim`
+## `riscv64/debian:<suite>-slim`
 
 These tags are an experiment in providing a slimmer base (removing some extra files that are normally not necessary within containers, such as man pages and documentation), and are definitely subject to change.
 
