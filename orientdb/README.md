@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v5` builds of [the `orientdb` official image](https://hub.docker.com/_/orientdb) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,13 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.2.34`, `3.2`, `latest`](https://github.com/orientechnologies/orientdb-docker/blob/7cd0cdeeaae09c4d4e1e18f0d154e4ed063c939b/release/3.2.x/3.2.34/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v5` ARCHITECTURE
 
--	[`3.2.34-tp3`, `3.2-tp3`](https://github.com/orientechnologies/orientdb-docker/blob/7cd0cdeeaae09c4d4e1e18f0d154e4ed063c939b/release/3.2.x/3.2.34-tp3/Dockerfile)
-
--	[`3.1.20`, `3.1`](https://github.com/orientechnologies/orientdb-docker/blob/a8a42acbe19dad60a051afe08ed625e66587dd37/release/3.1.x/3.1.20/Dockerfile)
-
--	[`3.1.20-tp3`, `3.1-tp3`](https://github.com/orientechnologies/orientdb-docker/blob/a8a42acbe19dad60a051afe08ed625e66587dd37/release/3.1.x/3.1.20-tp3/Dockerfile)
+[![arm32v5/orientdb build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v5/job/orientdb.svg?label=arm32v5/orientdb%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v5/job/orientdb/)
 
 # Quick reference (cont.)
 
@@ -62,7 +60,7 @@ WARNING:
 When OrientDB starts it asks for the root password. The root user is able to manage the OrientDB server: create new databases, manage users and roles. The root password can be passed to the container using an environment property:
 
 ```console
-$ docker run -d --name orientdb -p 2424:2424 -p 2480:2480 -e ORIENTDB_ROOT_PASSWORD=rootpwd orientdb
+$ docker run -d --name orientdb -p 2424:2424 -p 2480:2480 -e ORIENTDB_ROOT_PASSWORD=rootpwd arm32v5/orientdb
 ```
 
 The [Studio](http://orientdb.com/docs/last/Studio-Home-page.html) is accessible to http://<docker-host>:2480 (e.g.: http://localhost:2480)
@@ -79,7 +77,7 @@ $ docker run -d --name orientdb -p 2424:2424 -p 2480:2480 \
     -v <databases_path>:/orientdb/databases \
     -v <backup_path>:/orientdb/backup \
     -e ORIENTDB_ROOT_PASSWORD=rootpwd \
-    orientdb
+    arm32v5/orientdb
 ```
 
 **NOTE**: don't provide an **empty** config folder as volume, because OrientDB will startup with a very minimal configuration.
@@ -89,13 +87,13 @@ $ docker run -d --name orientdb -p 2424:2424 -p 2480:2480 \
 The OrientDB image contains a full fledge installation, so it is possible to run the [console](http://orientdb.com/docs/last/Console-Commands.html)
 
 ```console
-$ docker run --rm -it orientdb /orientdb/bin/console.sh
+$ docker run --rm -it arm32v5/orientdb /orientdb/bin/console.sh
 ```
 
 or even the etl
 
 ```console
-$ docker run  --rm -it -v <config_path>:/orientdb/config orientdb /orientdb/bin/oetl.sh ../config/oetl-config.json
+$ docker run  --rm -it -v <config_path>:/orientdb/config arm32v5/orientdb /orientdb/bin/oetl.sh ../config/oetl-config.json
 ```
 
 ### Override configuration parameters
@@ -109,7 +107,7 @@ $ docker run -d --name orientdb -p 2424:2424 -p 2480:2480 \
     -v <backup_path>:/orientdb/backup \
     -e ORIENTDB_ROOT_PASSWORD=rootpwd \
     -e ORIENTDB_NODE_NAME=odb1 \
-    orientdb /orientdb/bin/server.sh  -Ddistributed=true
+    arm32v5/orientdb /orientdb/bin/server.sh  -Ddistributed=true
 ```
 
 For further configuration options please refer to the [Configuration](http://orientdb.com/docs/last/Configuration.html) section of the online documentation.
@@ -121,7 +119,7 @@ Environment parameters such as heap size could be passed via command line:
 ```console
 $ docker run -d --name orientdb -p 2424:2424 -p 2480:2480 \
     -e ORIENTDB_ROOT_PASSWORD=rootpwd \
-    orientdb /orientdb/bin/server.sh -Xmx8g
+    arm32v5/orientdb /orientdb/bin/server.sh -Xmx8g
 ```
 
 # License
