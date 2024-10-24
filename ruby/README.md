@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `amd64` builds of [the `ruby` official image](https://hub.docker.com/_/ruby) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -72,6 +74,8 @@ WARNING:
 
 -	[`3.1.6-alpine3.19`, `3.1-alpine3.19`](https://github.com/docker-library/ruby/blob/f69cac9888c7909b402a1bc21a87331429318aae/3.1/alpine3.19/Dockerfile)
 
+[![amd64/ruby build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/amd64/job/ruby.svg?label=amd64/ruby%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/ruby/)
+
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
@@ -104,7 +108,7 @@ Ruby is a dynamic, reflective, object-oriented, general-purpose, open-source pro
 ## Create a `Dockerfile` in your Ruby app project
 
 ```dockerfile
-FROM ruby:3.3
+FROM amd64/ruby:3.3
 
 # throw errors if Gemfile has been modified since Gemfile.lock
 RUN bundle config --global frozen 1
@@ -133,7 +137,7 @@ $ docker run -it --name my-running-script my-ruby-app
 The above example `Dockerfile` expects a `Gemfile.lock` in your app directory. This `docker run` will help you generate one. Run it in the root of your app, next to the `Gemfile`:
 
 ```console
-$ docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app ruby:3.3 bundle install
+$ docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app amd64/ruby:3.3 bundle install
 ```
 
 ## Run a single Ruby script
@@ -141,7 +145,7 @@ $ docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app ruby:3.3 bundle install
 For many simple, single file projects, you may find it inconvenient to write a complete `Dockerfile`. In such cases, you can run a Ruby script by using the Ruby Docker image directly:
 
 ```console
-$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp ruby:3.3 ruby your-daemon-or-script.rb
+$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp amd64/ruby:3.3 ruby your-daemon-or-script.rb
 ```
 
 ## Encoding
@@ -158,9 +162,9 @@ If these cause issues for your use case (running multiple Ruby applications in a
 
 # Image Variants
 
-The `ruby` images come in many flavors, each designed for a specific use case.
+The `amd64/ruby` images come in many flavors, each designed for a specific use case.
 
-## `ruby:<version>`
+## `amd64/ruby:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
@@ -168,11 +172,11 @@ Some of these tags may have names like bookworm or bullseye in them. These are t
 
 This tag is based off of [`buildpack-deps`](https://hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of Docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
 
-## `ruby:<version>-slim`
+## `amd64/ruby:<version>-slim`
 
-This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `ruby`. Unless you are working in an environment where *only* the `ruby` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
+This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `amd64/ruby`. Unless you are working in an environment where *only* the `amd64/ruby` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
 
-## `ruby:<version>-alpine`
+## `amd64/ruby:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
