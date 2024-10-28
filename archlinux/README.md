@@ -24,11 +24,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `base`, `base-20241020.0.271562`](https://gitlab.archlinux.org/archlinux/archlinux-docker/-/blob/eddfb50b8d25754b13615e9a5691b216bc27a9d3/Dockerfile.base)
+-	[`latest`, `base`, `base-20241027.0.273886`](https://gitlab.archlinux.org/archlinux/archlinux-docker/-/blob/a31e5494d1279a4ba7fc80161ff1c4bf91f196bd/Dockerfile.base)
 
--	[`base-devel`, `base-devel-20241020.0.271562`](https://gitlab.archlinux.org/archlinux/archlinux-docker/-/blob/eddfb50b8d25754b13615e9a5691b216bc27a9d3/Dockerfile.base-devel)
+-	[`base-devel`, `base-devel-20241027.0.273886`](https://gitlab.archlinux.org/archlinux/archlinux-docker/-/blob/a31e5494d1279a4ba7fc80161ff1c4bf91f196bd/Dockerfile.base-devel)
 
--	[`multilib-devel`, `multilib-devel-20241020.0.271562`](https://gitlab.archlinux.org/archlinux/archlinux-docker/-/blob/eddfb50b8d25754b13615e9a5691b216bc27a9d3/Dockerfile.multilib-devel)
+-	[`multilib-devel`, `multilib-devel-20241027.0.273886`](https://gitlab.archlinux.org/archlinux/archlinux-docker/-/blob/a31e5494d1279a4ba7fc80161ff1c4bf91f196bd/Dockerfile.multilib-devel)
 
 # Quick reference (cont.)
 
