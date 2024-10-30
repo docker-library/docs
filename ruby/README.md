@@ -24,41 +24,41 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.4.0-preview2-bookworm`, `3.4-rc-bookworm`, `3.4.0-preview2`, `3.4-rc`](https://github.com/docker-library/ruby/blob/4e09dcf80f32040cde8ff4bb226367d45beadcd8/3.4-rc/bookworm/Dockerfile)
+-	[`3.4.0-preview2-bookworm`, `3.4-rc-bookworm`, `3.4.0-preview2`, `3.4-rc`](https://github.com/docker-library/ruby/blob/e76791f7c9c3a7de9c6c40561561dc718dc77fbb/3.4-rc/bookworm/Dockerfile)
 
--	[`3.4.0-preview2-slim-bookworm`, `3.4-rc-slim-bookworm`, `3.4.0-preview2-slim`, `3.4-rc-slim`](https://github.com/docker-library/ruby/blob/4e09dcf80f32040cde8ff4bb226367d45beadcd8/3.4-rc/slim-bookworm/Dockerfile)
+-	[`3.4.0-preview2-slim-bookworm`, `3.4-rc-slim-bookworm`, `3.4.0-preview2-slim`, `3.4-rc-slim`](https://github.com/docker-library/ruby/blob/e76791f7c9c3a7de9c6c40561561dc718dc77fbb/3.4-rc/slim-bookworm/Dockerfile)
 
--	[`3.4.0-preview2-bullseye`, `3.4-rc-bullseye`](https://github.com/docker-library/ruby/blob/4e09dcf80f32040cde8ff4bb226367d45beadcd8/3.4-rc/bullseye/Dockerfile)
+-	[`3.4.0-preview2-bullseye`, `3.4-rc-bullseye`](https://github.com/docker-library/ruby/blob/e76791f7c9c3a7de9c6c40561561dc718dc77fbb/3.4-rc/bullseye/Dockerfile)
 
--	[`3.4.0-preview2-slim-bullseye`, `3.4-rc-slim-bullseye`](https://github.com/docker-library/ruby/blob/4e09dcf80f32040cde8ff4bb226367d45beadcd8/3.4-rc/slim-bullseye/Dockerfile)
+-	[`3.4.0-preview2-slim-bullseye`, `3.4-rc-slim-bullseye`](https://github.com/docker-library/ruby/blob/e76791f7c9c3a7de9c6c40561561dc718dc77fbb/3.4-rc/slim-bullseye/Dockerfile)
 
--	[`3.4.0-preview2-alpine3.20`, `3.4-rc-alpine3.20`, `3.4.0-preview2-alpine`, `3.4-rc-alpine`](https://github.com/docker-library/ruby/blob/4e09dcf80f32040cde8ff4bb226367d45beadcd8/3.4-rc/alpine3.20/Dockerfile)
+-	[`3.4.0-preview2-alpine3.20`, `3.4-rc-alpine3.20`, `3.4.0-preview2-alpine`, `3.4-rc-alpine`](https://github.com/docker-library/ruby/blob/e76791f7c9c3a7de9c6c40561561dc718dc77fbb/3.4-rc/alpine3.20/Dockerfile)
 
--	[`3.4.0-preview2-alpine3.19`, `3.4-rc-alpine3.19`](https://github.com/docker-library/ruby/blob/4e09dcf80f32040cde8ff4bb226367d45beadcd8/3.4-rc/alpine3.19/Dockerfile)
+-	[`3.4.0-preview2-alpine3.19`, `3.4-rc-alpine3.19`](https://github.com/docker-library/ruby/blob/e76791f7c9c3a7de9c6c40561561dc718dc77fbb/3.4-rc/alpine3.19/Dockerfile)
 
--	[`3.3.5-bookworm`, `3.3-bookworm`, `3-bookworm`, `bookworm`, `3.3.5`, `3.3`, `3`, `latest`](https://github.com/docker-library/ruby/blob/04175a1c782da7183d8cd1ebed8c91b3ce0fe50b/3.3/bookworm/Dockerfile)
+-	[`3.3.5-bookworm`, `3.3-bookworm`, `3-bookworm`, `bookworm`, `3.3.5`, `3.3`, `3`, `latest`](https://github.com/docker-library/ruby/blob/e76791f7c9c3a7de9c6c40561561dc718dc77fbb/3.3/bookworm/Dockerfile)
 
--	[`3.3.5-slim-bookworm`, `3.3-slim-bookworm`, `3-slim-bookworm`, `slim-bookworm`, `3.3.5-slim`, `3.3-slim`, `3-slim`, `slim`](https://github.com/docker-library/ruby/blob/04175a1c782da7183d8cd1ebed8c91b3ce0fe50b/3.3/slim-bookworm/Dockerfile)
+-	[`3.3.5-slim-bookworm`, `3.3-slim-bookworm`, `3-slim-bookworm`, `slim-bookworm`, `3.3.5-slim`, `3.3-slim`, `3-slim`, `slim`](https://github.com/docker-library/ruby/blob/e76791f7c9c3a7de9c6c40561561dc718dc77fbb/3.3/slim-bookworm/Dockerfile)
 
--	[`3.3.5-bullseye`, `3.3-bullseye`, `3-bullseye`, `bullseye`](https://github.com/docker-library/ruby/blob/04175a1c782da7183d8cd1ebed8c91b3ce0fe50b/3.3/bullseye/Dockerfile)
+-	[`3.3.5-bullseye`, `3.3-bullseye`, `3-bullseye`, `bullseye`](https://github.com/docker-library/ruby/blob/e76791f7c9c3a7de9c6c40561561dc718dc77fbb/3.3/bullseye/Dockerfile)
 
--	[`3.3.5-slim-bullseye`, `3.3-slim-bullseye`, `3-slim-bullseye`, `slim-bullseye`](https://github.com/docker-library/ruby/blob/04175a1c782da7183d8cd1ebed8c91b3ce0fe50b/3.3/slim-bullseye/Dockerfile)
+-	[`3.3.5-slim-bullseye`, `3.3-slim-bullseye`, `3-slim-bullseye`, `slim-bullseye`](https://github.com/docker-library/ruby/blob/e76791f7c9c3a7de9c6c40561561dc718dc77fbb/3.3/slim-bullseye/Dockerfile)
 
--	[`3.3.5-alpine3.20`, `3.3-alpine3.20`, `3-alpine3.20`, `alpine3.20`, `3.3.5-alpine`, `3.3-alpine`, `3-alpine`, `alpine`](https://github.com/docker-library/ruby/blob/04175a1c782da7183d8cd1ebed8c91b3ce0fe50b/3.3/alpine3.20/Dockerfile)
+-	[`3.3.5-alpine3.20`, `3.3-alpine3.20`, `3-alpine3.20`, `alpine3.20`, `3.3.5-alpine`, `3.3-alpine`, `3-alpine`, `alpine`](https://github.com/docker-library/ruby/blob/e76791f7c9c3a7de9c6c40561561dc718dc77fbb/3.3/alpine3.20/Dockerfile)
 
--	[`3.3.5-alpine3.19`, `3.3-alpine3.19`, `3-alpine3.19`, `alpine3.19`](https://github.com/docker-library/ruby/blob/04175a1c782da7183d8cd1ebed8c91b3ce0fe50b/3.3/alpine3.19/Dockerfile)
+-	[`3.3.5-alpine3.19`, `3.3-alpine3.19`, `3-alpine3.19`, `alpine3.19`](https://github.com/docker-library/ruby/blob/e76791f7c9c3a7de9c6c40561561dc718dc77fbb/3.3/alpine3.19/Dockerfile)
 
--	[`3.2.5-bookworm`, `3.2-bookworm`, `3.2.5`, `3.2`](https://github.com/docker-library/ruby/blob/6438466b4fd948a31f66b2f2a934c799b598233e/3.2/bookworm/Dockerfile)
+-	[`3.2.6-bookworm`, `3.2-bookworm`, `3.2.6`, `3.2`](https://github.com/docker-library/ruby/blob/3df1b04951937f41a01ae24a6867d833e78345c1/3.2/bookworm/Dockerfile)
 
--	[`3.2.5-slim-bookworm`, `3.2-slim-bookworm`, `3.2.5-slim`, `3.2-slim`](https://github.com/docker-library/ruby/blob/6438466b4fd948a31f66b2f2a934c799b598233e/3.2/slim-bookworm/Dockerfile)
+-	[`3.2.6-slim-bookworm`, `3.2-slim-bookworm`, `3.2.6-slim`, `3.2-slim`](https://github.com/docker-library/ruby/blob/3df1b04951937f41a01ae24a6867d833e78345c1/3.2/slim-bookworm/Dockerfile)
 
--	[`3.2.5-bullseye`, `3.2-bullseye`](https://github.com/docker-library/ruby/blob/6438466b4fd948a31f66b2f2a934c799b598233e/3.2/bullseye/Dockerfile)
+-	[`3.2.6-bullseye`, `3.2-bullseye`](https://github.com/docker-library/ruby/blob/3df1b04951937f41a01ae24a6867d833e78345c1/3.2/bullseye/Dockerfile)
 
--	[`3.2.5-slim-bullseye`, `3.2-slim-bullseye`](https://github.com/docker-library/ruby/blob/6438466b4fd948a31f66b2f2a934c799b598233e/3.2/slim-bullseye/Dockerfile)
+-	[`3.2.6-slim-bullseye`, `3.2-slim-bullseye`](https://github.com/docker-library/ruby/blob/3df1b04951937f41a01ae24a6867d833e78345c1/3.2/slim-bullseye/Dockerfile)
 
--	[`3.2.5-alpine3.20`, `3.2-alpine3.20`, `3.2.5-alpine`, `3.2-alpine`](https://github.com/docker-library/ruby/blob/6438466b4fd948a31f66b2f2a934c799b598233e/3.2/alpine3.20/Dockerfile)
+-	[`3.2.6-alpine3.20`, `3.2-alpine3.20`, `3.2.6-alpine`, `3.2-alpine`](https://github.com/docker-library/ruby/blob/3df1b04951937f41a01ae24a6867d833e78345c1/3.2/alpine3.20/Dockerfile)
 
--	[`3.2.5-alpine3.19`, `3.2-alpine3.19`](https://github.com/docker-library/ruby/blob/6438466b4fd948a31f66b2f2a934c799b598233e/3.2/alpine3.19/Dockerfile)
+-	[`3.2.6-alpine3.19`, `3.2-alpine3.19`](https://github.com/docker-library/ruby/blob/3df1b04951937f41a01ae24a6867d833e78345c1/3.2/alpine3.19/Dockerfile)
 
 -	[`3.1.6-bookworm`, `3.1-bookworm`, `3.1.6`, `3.1`](https://github.com/docker-library/ruby/blob/f69cac9888c7909b402a1bc21a87331429318aae/3.1/bookworm/Dockerfile)
 
