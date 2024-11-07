@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.29`, `4.29.2`, `latest`](https://github.com/liquibase/docker/blob/13d063767623e282539b232a3a9ed19f4b3d7bbd/Dockerfile)
+-	[`4.30`, `4.30.0`, `latest`](https://github.com/liquibase/docker/blob/f86be8a84c919e1c3a6c8d9f9917cf3ee1c3f455/Dockerfile)
 
--	[`4.29-alpine`, `4.29.2-alpine`, `alpine`](https://github.com/liquibase/docker/blob/13d063767623e282539b232a3a9ed19f4b3d7bbd/Dockerfile.alpine)
+-	[`4.30-alpine`, `4.30.0-alpine`, `alpine`](https://github.com/liquibase/docker/blob/f86be8a84c919e1c3a6c8d9f9917cf3ee1c3f455/Dockerfile.alpine)
 
 # Quick reference (cont.)
 
