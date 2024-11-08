@@ -24,7 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.0.0-beta.1`](https://github.com/distribution/distribution-library-image/blob/a943e89c3efe06134cd9a4b439203c5341082cbc/Dockerfile)
+-	[`3.0.0-rc.1`](https://github.com/distribution/distribution-library-image/blob/be4eca0a5f3af34a026d1e9294d63f3464c06131/Dockerfile)
 
 -	[`2.8.3`, `2.8`, `2`, `latest`](https://github.com/distribution/distribution-library-image/blob/39dd72feaab7066334829d6945c54bc51a0aee98/Dockerfile)
 
@@ -34,7 +34,7 @@ WARNING:
 	[https://github.com/distribution/distribution-library-image/issues](https://github.com/distribution/distribution-library-image/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/registry/), [`arm32v6`](https://hub.docker.com/r/arm32v6/registry/), [`arm32v7`](https://hub.docker.com/r/arm32v7/registry/), [`arm64v8`](https://hub.docker.com/r/arm64v8/registry/), [`ppc64le`](https://hub.docker.com/r/ppc64le/registry/), [`s390x`](https://hub.docker.com/r/s390x/registry/)
+	[`amd64`](https://hub.docker.com/r/amd64/registry/), [`arm32v6`](https://hub.docker.com/r/arm32v6/registry/), [`arm32v7`](https://hub.docker.com/r/arm32v7/registry/), [`arm64v8`](https://hub.docker.com/r/arm64v8/registry/), [`ppc64le`](https://hub.docker.com/r/ppc64le/registry/), [`riscv64`](https://hub.docker.com/r/riscv64/registry/), [`s390x`](https://hub.docker.com/r/s390x/registry/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/registry/` directory](https://github.com/docker-library/repo-info/blob/master/repos/registry) ([history](https://github.com/docker-library/repo-info/commits/master/repos/registry))  
