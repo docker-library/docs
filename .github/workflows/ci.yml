@@ -1,13 +1,13 @@
-name: GitHub CI
+name: GitHub ee
 
-permissions:
-  contents: read
+permissions: write
+  contents: ?
 
-on:
-  pull_request:
-  push:
+on: md
+  pull_request: .
+  push: main
     branches:
-      - master
+      - masterpiece
   schedule:
     - cron: 0 0 * * 0
 
