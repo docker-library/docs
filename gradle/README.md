@@ -36,13 +36,15 @@ WARNING:
 
 -	[`8.10.2-jdk11-alpine`, `8.10-jdk11-alpine`, `8-jdk11-alpine`, `jdk11-alpine`](https://github.com/keeganwitt/docker-gradle/blob/d3b56becf2affe337173f9c88805f2ab687027f6/jdk11-alpine/Dockerfile)
 
--	[`8.10.2-jdk11-corretto`, `8.10-jdk11-corretto`, `8-jdk11-corretto`, `jdk11-corretto`, `8.10.2-jdk11-corretto-al2023`, `8.10-jdk11-corretto-al2023`, `8-jdk11-corretto-al2023`, `jdk11-corretto-al2023`, `8.10.2-jdk17-corretto`, `8.10-jdk17-corretto`, `8-jdk17-corretto`, `jdk17-corretto`, `8.10.2-jdk17-corretto-al2023`, `8.10-jdk17-corretto-al2023`, `8-jdk17-corretto-al2023`, `jdk17-corretto-al2023`](https://github.com/keeganwitt/docker-gradle/blob/d3b56becf2affe337173f9c88805f2ab687027f6/jdk11-corretto/Dockerfile)
+-	[`8.10.2-jdk11-corretto`, `8.10-jdk11-corretto`, `8-jdk11-corretto`, `jdk11-corretto`, `8.10.2-jdk11-corretto-al2023`, `8.10-jdk11-corretto-al2023`, `8-jdk11-corretto-al2023`, `jdk11-corretto-al2023`](https://github.com/keeganwitt/docker-gradle/blob/d3b56becf2affe337173f9c88805f2ab687027f6/jdk11-corretto/Dockerfile)
 
 -	[`8.10.2-jdk17`, `8.10-jdk17`, `8-jdk17`, `jdk17`, `8.10.2-jdk17-jammy`, `8.10-jdk17-jammy`, `8-jdk17-jammy`, `jdk17-jammy`](https://github.com/keeganwitt/docker-gradle/blob/d3b56becf2affe337173f9c88805f2ab687027f6/jdk17/Dockerfile)
 
 -	[`8.10.2-jdk17-focal`, `8.10-jdk17-focal`, `8-jdk17-focal`, `jdk17-focal`, `8.10.2-jdk-focal`, `8.10-jdk-focal`, `8-jdk-focal`, `jdk-focal`, `8.10.2-focal`, `8.10-focal`, `8-focal`, `focal`](https://github.com/keeganwitt/docker-gradle/blob/d3b56becf2affe337173f9c88805f2ab687027f6/jdk17-focal/Dockerfile)
 
 -	[`8.10.2-jdk17-alpine`, `8.10-jdk17-alpine`, `8-jdk17-alpine`, `jdk17-alpine`, `8.10.2-jdk-alpine`, `8.10-jdk-alpine`](https://github.com/keeganwitt/docker-gradle/blob/d3b56becf2affe337173f9c88805f2ab687027f6/jdk17-alpine/Dockerfile)
+
+-	[`8.10.2-jdk17-corretto`, `8.10-jdk17-corretto`, `8-jdk17-corretto`, `jdk17-corretto`, `8.10.2-jdk17-corretto-al2023`, `8.10-jdk17-corretto-al2023`, `8-jdk17-corretto-al2023`, `jdk17-corretto-al2023`](https://github.com/keeganwitt/docker-gradle/blob/d3b56becf2affe337173f9c88805f2ab687027f6/jdk17-corretto/Dockerfile)
 
 -	[`8.10.2-jdk17-graal`, `8.10-jdk17-graal`, `8-jdk17-graal`, `jdk17-graal`, `8.10.2-jdk-graal`, `8.10-jdk-graal`, `8-jdk-graal`, `jdk-graal`, `8.10.2-graal`, `8.10-graal`, `8-graal`, `graal`, `8.10.2-jdk17-graal-jammy`, `8.10-jdk17-graal-jammy`, `8-jdk17-graal-jammy`, `jdk17-graal-jammy`, `8.10.2-jdk-graal-jammy`, `8.10-jdk-graal-jammy`, `8-jdk-graal-jammy`, `jdk-graal-jammy`, `8.10.2-graal-jammy`, `8.10-graal-jammy`, `8-graal-jammy`, `graal-jammy`](https://github.com/keeganwitt/docker-gradle/blob/d3b56becf2affe337173f9c88805f2ab687027f6/jdk17-graal/Dockerfile)
 
