@@ -24,7 +24,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `jammy`, `24`, `24-jammy`, `24.10`, `24.10-jammy`, `24.10.1`, `24.10.1-jammy`, `24.10.1.2812`, `24.10.1.2812-jammy`](https://github.com/ClickHouse/docker-library/blob/8f3278549dd6ac2832287c18c6a35a5f90eb3394/server/24.10.1.2812/Dockerfile.ubuntu)
+-	[`latest`, `focal`, `24`, `24-focal`, `24.10`, `24.10-focal`, `24.10.1`, `24.10.1-focal`, `24.10.1.2812`, `24.10.1.2812-focal`](https://github.com/ClickHouse/docker-library/blob/e991ffaf2d96bab935a248d5701c58f637d3040e/server/24.10.1.2812/Dockerfile.ubuntu)
+
+-	[`24.9`, `24.9-focal`, `24.9.2`, `24.9.2-focal`, `24.9.2.42`, `24.9.2.42-focal`](https://github.com/ClickHouse/docker-library/blob/e991ffaf2d96bab935a248d5701c58f637d3040e/server/24.9.2.42/Dockerfile.ubuntu)
+
+-	[`lts`, `focal-lts`, `24.8`, `24.8-focal`, `24.8.6`, `24.8.6-focal`, `24.8.6.70`, `24.8.6.70-focal`](https://github.com/ClickHouse/docker-library/blob/e991ffaf2d96bab935a248d5701c58f637d3040e/server/24.8.6.70/Dockerfile.ubuntu)
+
+-	[`24.3`, `24.3-focal`, `24.3.13`, `24.3.13-focal`, `24.3.13.40`, `24.3.13.40-focal`](https://github.com/ClickHouse/docker-library/blob/e991ffaf2d96bab935a248d5701c58f637d3040e/server/24.3.13.40/Dockerfile.ubuntu)
 
 # Quick reference (cont.)
 
