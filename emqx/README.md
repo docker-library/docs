@@ -24,8 +24,6 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.1.6`, `5.1`](https://github.com/emqx/emqx-docker/blob/dfa1507bc031b4f24ffa29f838dbad1868e35d01/5.1/Dockerfile)
-
 -	[`5.2.1`, `5.2`](https://github.com/emqx/emqx-docker/blob/eb71b6a3cca1505e14d4b0e6fcd50a43330125bb/5.2/Dockerfile)
 
 -	[`5.3.2`, `5.3`](https://github.com/emqx/emqx-docker/blob/1572ca48b4bc890edfc157b00be271d9a1b878d4/5.3/Dockerfile)
@@ -38,7 +36,7 @@ WARNING:
 
 -	[`5.7.2`, `5.7`](https://github.com/emqx/emqx-docker/blob/35e70c8e602687db5a447c9573bde8ab77335fdc/5.7/Dockerfile)
 
--	[`5.8.1`, `5.8`, `5`, `latest`](https://github.com/emqx/emqx-docker/blob/2b80e3422224db8bcf69ee62e8414b63dca0fec6/5.8/Dockerfile)
+-	[`5.8.2`, `5.8`, `5`, `latest`](https://github.com/emqx/emqx-docker/blob/3867b976864f6707fd3305ea3e5f8e41c0eb0690/5.8/Dockerfile)
 
 # Quick reference (cont.)
 
