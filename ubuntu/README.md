@@ -28,9 +28,11 @@ WARNING:
 
 -	[`22.04`, `jammy-20240911.1`, `jammy`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-amd64-20240911.1-b88de29a&id=b88de29aeed396f56b7eee0dd87e7249e7a8642f)
 
--	[`24.04`, `noble-20241011`, `noble`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-amd64-20241011-494cd4d4&id=494cd4d4ce68c2299acaca9d1591e21c45279864)
+-	[`24.04`, `noble-20241015`, `noble`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-amd64-20241015-04757657&id=047576572add2bd107e7dd3475c25033a446afe8)
 
 -	[`24.10`, `oracular-20241009`, `oracular`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-oracular-amd64-20241009-71a6e10d&id=71a6e10d9d17f0baa437a234367e8e16406bd3c2)
+
+-	[`25.04`, `plucky-20241111`, `plucky`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-plucky-amd64-20241111-7922e966&id=7922e9661bac5c40866fcee4838b8b3a87c71222)
 
 # Quick reference (cont.)
 
