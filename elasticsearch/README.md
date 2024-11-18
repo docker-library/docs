@@ -26,7 +26,7 @@ WARNING:
 
 -	[`8.16.0`](https://github.com/elastic/dockerfiles/blob/fee99c955058383955d074689a499ffa0ebcf245/elasticsearch/Dockerfile)
 
--	[`8.15.3`](https://github.com/elastic/dockerfiles/blob/5a2646dafd69282b29f600e9b366a4904764523a/elasticsearch/Dockerfile)
+-	[`8.15.4`](https://github.com/elastic/dockerfiles/blob/2ead1ff2522226005f77bb65ebb2c7a09e18700a/elasticsearch/Dockerfile)
 
 -	[`7.17.25`](https://github.com/elastic/dockerfiles/blob/9a2cb64607abe3574f8f1d0fa8b9680798f0e6d9/elasticsearch/Dockerfile)
 
