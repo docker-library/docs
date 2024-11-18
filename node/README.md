@@ -24,17 +24,17 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`23-alpine3.19`, `23.1-alpine3.19`, `23.1.0-alpine3.19`, `alpine3.19`, `current-alpine3.19`](https://github.com/nodejs/docker-node/blob/9d04fec54bd5f51abe840d7af0c70787b6b32de6/23/alpine3.19/Dockerfile)
+-	[`23-alpine3.19`, `23.2-alpine3.19`, `23.2.0-alpine3.19`, `alpine3.19`, `current-alpine3.19`](https://github.com/nodejs/docker-node/blob/bd5c1ad707a39db0f333a502d9bc47e1a5e0358d/23/alpine3.19/Dockerfile)
 
--	[`23-alpine`, `23-alpine3.20`, `23.1-alpine`, `23.1-alpine3.20`, `23.1.0-alpine`, `23.1.0-alpine3.20`, `alpine`, `alpine3.20`, `current-alpine`, `current-alpine3.20`](https://github.com/nodejs/docker-node/blob/9d04fec54bd5f51abe840d7af0c70787b6b32de6/23/alpine3.20/Dockerfile)
+-	[`23-alpine`, `23-alpine3.20`, `23.2-alpine`, `23.2-alpine3.20`, `23.2.0-alpine`, `23.2.0-alpine3.20`, `alpine`, `alpine3.20`, `current-alpine`, `current-alpine3.20`](https://github.com/nodejs/docker-node/blob/bd5c1ad707a39db0f333a502d9bc47e1a5e0358d/23/alpine3.20/Dockerfile)
 
--	[`23`, `23-bookworm`, `23.1`, `23.1-bookworm`, `23.1.0`, `23.1.0-bookworm`, `bookworm`, `current`, `current-bookworm`, `latest`](https://github.com/nodejs/docker-node/blob/9d04fec54bd5f51abe840d7af0c70787b6b32de6/23/bookworm/Dockerfile)
+-	[`23`, `23-bookworm`, `23.2`, `23.2-bookworm`, `23.2.0`, `23.2.0-bookworm`, `bookworm`, `current`, `current-bookworm`, `latest`](https://github.com/nodejs/docker-node/blob/bd5c1ad707a39db0f333a502d9bc47e1a5e0358d/23/bookworm/Dockerfile)
 
--	[`23-bookworm-slim`, `23-slim`, `23.1-bookworm-slim`, `23.1-slim`, `23.1.0-bookworm-slim`, `23.1.0-slim`, `bookworm-slim`, `current-bookworm-slim`, `current-slim`, `slim`](https://github.com/nodejs/docker-node/blob/9d04fec54bd5f51abe840d7af0c70787b6b32de6/23/bookworm-slim/Dockerfile)
+-	[`23-bookworm-slim`, `23-slim`, `23.2-bookworm-slim`, `23.2-slim`, `23.2.0-bookworm-slim`, `23.2.0-slim`, `bookworm-slim`, `current-bookworm-slim`, `current-slim`, `slim`](https://github.com/nodejs/docker-node/blob/bd5c1ad707a39db0f333a502d9bc47e1a5e0358d/23/bookworm-slim/Dockerfile)
 
--	[`23-bullseye`, `23.1-bullseye`, `23.1.0-bullseye`, `bullseye`, `current-bullseye`](https://github.com/nodejs/docker-node/blob/9d04fec54bd5f51abe840d7af0c70787b6b32de6/23/bullseye/Dockerfile)
+-	[`23-bullseye`, `23.2-bullseye`, `23.2.0-bullseye`, `bullseye`, `current-bullseye`](https://github.com/nodejs/docker-node/blob/bd5c1ad707a39db0f333a502d9bc47e1a5e0358d/23/bullseye/Dockerfile)
 
--	[`23-bullseye-slim`, `23.1-bullseye-slim`, `23.1.0-bullseye-slim`, `bullseye-slim`, `current-bullseye-slim`](https://github.com/nodejs/docker-node/blob/9d04fec54bd5f51abe840d7af0c70787b6b32de6/23/bullseye-slim/Dockerfile)
+-	[`23-bullseye-slim`, `23.2-bullseye-slim`, `23.2.0-bullseye-slim`, `bullseye-slim`, `current-bullseye-slim`](https://github.com/nodejs/docker-node/blob/bd5c1ad707a39db0f333a502d9bc47e1a5e0358d/23/bullseye-slim/Dockerfile)
 
 -	[`22-alpine3.19`, `22.11-alpine3.19`, `22.11.0-alpine3.19`, `jod-alpine3.19`, `lts-alpine3.19`](https://github.com/nodejs/docker-node/blob/b0de582b8d4627cc9d65a89bf3af1bfcf67d2bef/22/alpine3.19/Dockerfile)
 
@@ -60,17 +60,17 @@ WARNING:
 
 -	[`20-bullseye-slim`, `20.18-bullseye-slim`, `20.18.0-bullseye-slim`, `iron-bullseye-slim`](https://github.com/nodejs/docker-node/blob/8483b3edd9cc2a38360d88d360e3093d657ac3fe/20/bullseye-slim/Dockerfile)
 
--	[`18-alpine3.19`, `18.20-alpine3.19`, `18.20.4-alpine3.19`, `hydrogen-alpine3.19`](https://github.com/nodejs/docker-node/blob/619b871fb3d89dc6d6333914b46bf526e781eec5/18/alpine3.19/Dockerfile)
+-	[`18-alpine3.19`, `18.20-alpine3.19`, `18.20.5-alpine3.19`, `hydrogen-alpine3.19`](https://github.com/nodejs/docker-node/blob/e3a1285ed07039b9f6552ccec49a469a052fd0c6/18/alpine3.19/Dockerfile)
 
--	[`18-alpine`, `18-alpine3.20`, `18.20-alpine`, `18.20-alpine3.20`, `18.20.4-alpine`, `18.20.4-alpine3.20`, `hydrogen-alpine`, `hydrogen-alpine3.20`](https://github.com/nodejs/docker-node/blob/619b871fb3d89dc6d6333914b46bf526e781eec5/18/alpine3.20/Dockerfile)
+-	[`18-alpine`, `18-alpine3.20`, `18.20-alpine`, `18.20-alpine3.20`, `18.20.5-alpine`, `18.20.5-alpine3.20`, `hydrogen-alpine`, `hydrogen-alpine3.20`](https://github.com/nodejs/docker-node/blob/e3a1285ed07039b9f6552ccec49a469a052fd0c6/18/alpine3.20/Dockerfile)
 
--	[`18`, `18-bookworm`, `18.20`, `18.20-bookworm`, `18.20.4`, `18.20.4-bookworm`, `hydrogen`, `hydrogen-bookworm`](https://github.com/nodejs/docker-node/blob/619b871fb3d89dc6d6333914b46bf526e781eec5/18/bookworm/Dockerfile)
+-	[`18`, `18-bookworm`, `18.20`, `18.20-bookworm`, `18.20.5`, `18.20.5-bookworm`, `hydrogen`, `hydrogen-bookworm`](https://github.com/nodejs/docker-node/blob/e3a1285ed07039b9f6552ccec49a469a052fd0c6/18/bookworm/Dockerfile)
 
--	[`18-bookworm-slim`, `18-slim`, `18.20-bookworm-slim`, `18.20-slim`, `18.20.4-bookworm-slim`, `18.20.4-slim`, `hydrogen-bookworm-slim`, `hydrogen-slim`](https://github.com/nodejs/docker-node/blob/619b871fb3d89dc6d6333914b46bf526e781eec5/18/bookworm-slim/Dockerfile)
+-	[`18-bookworm-slim`, `18-slim`, `18.20-bookworm-slim`, `18.20-slim`, `18.20.5-bookworm-slim`, `18.20.5-slim`, `hydrogen-bookworm-slim`, `hydrogen-slim`](https://github.com/nodejs/docker-node/blob/e3a1285ed07039b9f6552ccec49a469a052fd0c6/18/bookworm-slim/Dockerfile)
 
--	[`18-bullseye`, `18.20-bullseye`, `18.20.4-bullseye`, `hydrogen-bullseye`](https://github.com/nodejs/docker-node/blob/619b871fb3d89dc6d6333914b46bf526e781eec5/18/bullseye/Dockerfile)
+-	[`18-bullseye`, `18.20-bullseye`, `18.20.5-bullseye`, `hydrogen-bullseye`](https://github.com/nodejs/docker-node/blob/e3a1285ed07039b9f6552ccec49a469a052fd0c6/18/bullseye/Dockerfile)
 
--	[`18-bullseye-slim`, `18.20-bullseye-slim`, `18.20.4-bullseye-slim`, `hydrogen-bullseye-slim`](https://github.com/nodejs/docker-node/blob/619b871fb3d89dc6d6333914b46bf526e781eec5/18/bullseye-slim/Dockerfile)
+-	[`18-bullseye-slim`, `18.20-bullseye-slim`, `18.20.5-bullseye-slim`, `hydrogen-bullseye-slim`](https://github.com/nodejs/docker-node/blob/e3a1285ed07039b9f6552ccec49a469a052fd0c6/18/bullseye-slim/Dockerfile)
 
 # Quick reference (cont.)
 
