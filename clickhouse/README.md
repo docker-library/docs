@@ -24,13 +24,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `focal`, `24`, `24-focal`, `24.10`, `24.10-focal`, `24.10.1`, `24.10.1-focal`, `24.10.1.2812`, `24.10.1.2812-focal`](https://github.com/ClickHouse/docker-library/blob/e991ffaf2d96bab935a248d5701c58f637d3040e/server/24.10.1.2812/Dockerfile.ubuntu)
+-	[`latest`, `focal`, `24`, `24-focal`, `24.10`, `24.10-focal`, `24.10.2`, `24.10.2-focal`, `24.10.2.80`, `24.10.2.80-focal`](https://github.com/ClickHouse/docker-library/blob/5e5cd0415e8ba326f35f5066ab1b3b7314df153d/server/24.10.2.80/Dockerfile.ubuntu)
 
--	[`24.9`, `24.9-focal`, `24.9.2`, `24.9.2-focal`, `24.9.2.42`, `24.9.2.42-focal`](https://github.com/ClickHouse/docker-library/blob/e991ffaf2d96bab935a248d5701c58f637d3040e/server/24.9.2.42/Dockerfile.ubuntu)
+-	[`24.9`, `24.9-focal`, `24.9.3`, `24.9.3-focal`, `24.9.3.128`, `24.9.3.128-focal`](https://github.com/ClickHouse/docker-library/blob/5e5cd0415e8ba326f35f5066ab1b3b7314df153d/server/24.9.3.128/Dockerfile.ubuntu)
 
--	[`lts`, `focal-lts`, `24.8`, `24.8-focal`, `24.8.6`, `24.8.6-focal`, `24.8.6.70`, `24.8.6.70-focal`](https://github.com/ClickHouse/docker-library/blob/e991ffaf2d96bab935a248d5701c58f637d3040e/server/24.8.6.70/Dockerfile.ubuntu)
+-	[`lts`, `lts-focal`, `24.8`, `24.8-focal`, `24.8.7`, `24.8.7-focal`, `24.8.7.41`, `24.8.7.41-focal`](https://github.com/ClickHouse/docker-library/blob/5e5cd0415e8ba326f35f5066ab1b3b7314df153d/server/24.8.7.41/Dockerfile.ubuntu)
 
--	[`24.3`, `24.3-focal`, `24.3.13`, `24.3.13-focal`, `24.3.13.40`, `24.3.13.40-focal`](https://github.com/ClickHouse/docker-library/blob/e991ffaf2d96bab935a248d5701c58f637d3040e/server/24.3.13.40/Dockerfile.ubuntu)
+-	[`24.3`, `24.3-focal`, `24.3.14`, `24.3.14-focal`, `24.3.14.35`, `24.3.14.35-focal`](https://github.com/ClickHouse/docker-library/blob/5e5cd0415e8ba326f35f5066ab1b3b7314df153d/server/24.3.14.35/Dockerfile.ubuntu)
 
 # Quick reference (cont.)
 
