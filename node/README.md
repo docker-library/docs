@@ -48,17 +48,17 @@ WARNING:
 
 -	[`22-bullseye-slim`, `22.11-bullseye-slim`, `22.11.0-bullseye-slim`, `jod-bullseye-slim`, `lts-bullseye-slim`](https://github.com/nodejs/docker-node/blob/b0de582b8d4627cc9d65a89bf3af1bfcf67d2bef/22/bullseye-slim/Dockerfile)
 
--	[`20-alpine3.19`, `20.18-alpine3.19`, `20.18.0-alpine3.19`, `iron-alpine3.19`](https://github.com/nodejs/docker-node/blob/8483b3edd9cc2a38360d88d360e3093d657ac3fe/20/alpine3.19/Dockerfile)
+-	[`20-alpine3.19`, `20.18-alpine3.19`, `20.18.1-alpine3.19`, `iron-alpine3.19`](https://github.com/nodejs/docker-node/blob/4b3806368e98354d59c4787b46ec72603be13162/20/alpine3.19/Dockerfile)
 
--	[`20-alpine`, `20-alpine3.20`, `20.18-alpine`, `20.18-alpine3.20`, `20.18.0-alpine`, `20.18.0-alpine3.20`, `iron-alpine`, `iron-alpine3.20`](https://github.com/nodejs/docker-node/blob/8483b3edd9cc2a38360d88d360e3093d657ac3fe/20/alpine3.20/Dockerfile)
+-	[`20-alpine`, `20-alpine3.20`, `20.18-alpine`, `20.18-alpine3.20`, `20.18.1-alpine`, `20.18.1-alpine3.20`, `iron-alpine`, `iron-alpine3.20`](https://github.com/nodejs/docker-node/blob/4b3806368e98354d59c4787b46ec72603be13162/20/alpine3.20/Dockerfile)
 
--	[`20`, `20-bookworm`, `20.18`, `20.18-bookworm`, `20.18.0`, `20.18.0-bookworm`, `iron`, `iron-bookworm`](https://github.com/nodejs/docker-node/blob/8483b3edd9cc2a38360d88d360e3093d657ac3fe/20/bookworm/Dockerfile)
+-	[`20`, `20-bookworm`, `20.18`, `20.18-bookworm`, `20.18.1`, `20.18.1-bookworm`, `iron`, `iron-bookworm`](https://github.com/nodejs/docker-node/blob/4b3806368e98354d59c4787b46ec72603be13162/20/bookworm/Dockerfile)
 
--	[`20-bookworm-slim`, `20-slim`, `20.18-bookworm-slim`, `20.18-slim`, `20.18.0-bookworm-slim`, `20.18.0-slim`, `iron-bookworm-slim`, `iron-slim`](https://github.com/nodejs/docker-node/blob/8483b3edd9cc2a38360d88d360e3093d657ac3fe/20/bookworm-slim/Dockerfile)
+-	[`20-bookworm-slim`, `20-slim`, `20.18-bookworm-slim`, `20.18-slim`, `20.18.1-bookworm-slim`, `20.18.1-slim`, `iron-bookworm-slim`, `iron-slim`](https://github.com/nodejs/docker-node/blob/4b3806368e98354d59c4787b46ec72603be13162/20/bookworm-slim/Dockerfile)
 
--	[`20-bullseye`, `20.18-bullseye`, `20.18.0-bullseye`, `iron-bullseye`](https://github.com/nodejs/docker-node/blob/8483b3edd9cc2a38360d88d360e3093d657ac3fe/20/bullseye/Dockerfile)
+-	[`20-bullseye`, `20.18-bullseye`, `20.18.1-bullseye`, `iron-bullseye`](https://github.com/nodejs/docker-node/blob/4b3806368e98354d59c4787b46ec72603be13162/20/bullseye/Dockerfile)
 
--	[`20-bullseye-slim`, `20.18-bullseye-slim`, `20.18.0-bullseye-slim`, `iron-bullseye-slim`](https://github.com/nodejs/docker-node/blob/8483b3edd9cc2a38360d88d360e3093d657ac3fe/20/bullseye-slim/Dockerfile)
+-	[`20-bullseye-slim`, `20.18-bullseye-slim`, `20.18.1-bullseye-slim`, `iron-bullseye-slim`](https://github.com/nodejs/docker-node/blob/4b3806368e98354d59c4787b46ec72603be13162/20/bullseye-slim/Dockerfile)
 
 -	[`18-alpine3.19`, `18.20-alpine3.19`, `18.20.5-alpine3.19`, `hydrogen-alpine3.19`](https://github.com/nodejs/docker-node/blob/e3a1285ed07039b9f6552ccec49a469a052fd0c6/18/alpine3.19/Dockerfile)
 
