@@ -96,7 +96,7 @@ See the PostgreSQL documentation on [`pg_hba.conf`](https://www.postgresql.org/d
 
 ### `PGDATA`
 
-> **Important Note:** when mounting a volume to `/var/lib/postgresql`, the `/var/lib/postgresql/data` path is a local volume from the container runtime, thus data is not persisted on the mounted volume.
+> **Important Note:** Mount the data volume at `/var/lib/postgresql/data` and not at `/var/lib/postgresql`. The Dockerfile that builds the image declares a volume at `/var/lib/postgresql/data` and if no data volume is mounted at that path then the container runtime will automatically create an [anonymous volume](https://docs.docker.com/engine/storage/#volumes) that is not reused across container re-creations. Data will be written to the anonymous volume rather than your intended data volume and WILL NOT PERSIST when the container is deleted and re-created.
 
 This optional variable can be used to define another location - like a subdirectory - for the database files. The default is `/var/lib/postgresql/data`. If the data volume you're using is a filesystem mountpoint (like with GCE persistent disks), or remote folder that cannot be chowned to the `postgres` user (like some NFS mounts), or contains folders/files (e.g. `lost+found`), Postgres `initdb` requires a subdirectory to be created within the mountpoint to contain the data.
 
