@@ -24,13 +24,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.1.0-beta.1`, `4.1-rc`](https://github.com/docker-library/rabbitmq/blob/c0dcc40c9bce4bb6a826a61d250a2aeb0fa35416/4.1-rc/ubuntu/Dockerfile)
+-	[`4.1.0-beta.2`, `4.1-rc`](https://github.com/docker-library/rabbitmq/blob/0d7a331c694a5f32ccf94837894d9e4eb529940f/4.1-rc/ubuntu/Dockerfile)
 
--	[`4.1.0-beta.1-management`, `4.1-rc-management`](https://github.com/docker-library/rabbitmq/blob/c0dcc40c9bce4bb6a826a61d250a2aeb0fa35416/4.1-rc/ubuntu/management/Dockerfile)
+-	[`4.1.0-beta.2-management`, `4.1-rc-management`](https://github.com/docker-library/rabbitmq/blob/c0dcc40c9bce4bb6a826a61d250a2aeb0fa35416/4.1-rc/ubuntu/management/Dockerfile)
 
--	[`4.1.0-beta.1-alpine`, `4.1-rc-alpine`](https://github.com/docker-library/rabbitmq/blob/c0dcc40c9bce4bb6a826a61d250a2aeb0fa35416/4.1-rc/alpine/Dockerfile)
+-	[`4.1.0-beta.2-alpine`, `4.1-rc-alpine`](https://github.com/docker-library/rabbitmq/blob/0d7a331c694a5f32ccf94837894d9e4eb529940f/4.1-rc/alpine/Dockerfile)
 
--	[`4.1.0-beta.1-management-alpine`, `4.1-rc-management-alpine`](https://github.com/docker-library/rabbitmq/blob/c0dcc40c9bce4bb6a826a61d250a2aeb0fa35416/4.1-rc/alpine/management/Dockerfile)
+-	[`4.1.0-beta.2-management-alpine`, `4.1-rc-management-alpine`](https://github.com/docker-library/rabbitmq/blob/c0dcc40c9bce4bb6a826a61d250a2aeb0fa35416/4.1-rc/alpine/management/Dockerfile)
 
 -	[`4.0.4`, `4.0`, `4`, `latest`](https://github.com/docker-library/rabbitmq/blob/46b1718733a32ae79186fe45720c0ce1e9e59194/4.0/ubuntu/Dockerfile)
 

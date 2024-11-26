@@ -24,7 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`devel-20241115`, `devel`, `devel-20241115-alpine3.20`, `devel-alpine3.20`](https://github.com/tianon/docker-bash/blob/52a6d56194abcb2664e2010688f88411f41803bd/devel/Dockerfile)
+-	[`devel-20241121`, `devel`, `devel-20241121-alpine3.20`, `devel-alpine3.20`](https://github.com/tianon/docker-bash/blob/7025dbffb8c5052bb78ff42ba824fda1deb2b015/devel/Dockerfile)
 
 -	[`5.3-alpha`, `5.3-rc`, `rc`, `5.3-alpha-alpine3.20`, `5.3-rc-alpine3.20`, `rc-alpine3.20`](https://github.com/tianon/docker-bash/blob/f487bffdced60fba425283c84317e6492488a252/5.3-rc/Dockerfile)
 

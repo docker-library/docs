@@ -24,13 +24,17 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.1-dev14`, `3.1-dev`, `3.1-dev14-bookworm`, `3.1-dev-bookworm`](https://github.com/docker-library/haproxy/blob/4fc823bc6faadaf9b2912b3323dac9d78367bb71/3.1/Dockerfile)
+-	[`3.2-dev0`, `3.2-dev`, `3.2-dev0-bookworm`, `3.2-dev-bookworm`](https://github.com/docker-library/haproxy/blob/056667a3593e0e18d97518709e30b6bd8574f760/3.2/Dockerfile)
 
--	[`3.1-dev14-alpine`, `3.1-dev-alpine`, `3.1-dev14-alpine3.20`, `3.1-dev-alpine3.20`](https://github.com/docker-library/haproxy/blob/4fc823bc6faadaf9b2912b3323dac9d78367bb71/3.1/alpine/Dockerfile)
+-	[`3.2-dev0-alpine`, `3.2-dev-alpine`, `3.2-dev0-alpine3.20`, `3.2-dev-alpine3.20`](https://github.com/docker-library/haproxy/blob/056667a3593e0e18d97518709e30b6bd8574f760/3.2/alpine/Dockerfile)
 
--	[`3.0.6`, `3.0`, `lts`, `latest`, `3.0.6-bookworm`, `3.0-bookworm`, `lts-bookworm`, `bookworm`](https://github.com/docker-library/haproxy/blob/7341cb2441f9663fb52866df74ccb427960cc8c9/3.0/Dockerfile)
+-	[`3.1.0`, `3.1`, `latest`, `3.1.0-bookworm`, `3.1-bookworm`, `bookworm`](https://github.com/docker-library/haproxy/blob/845b6f45ac1a8e0ee5706a23ef2fbf56516aebc6/3.1/Dockerfile)
 
--	[`3.0.6-alpine`, `3.0-alpine`, `lts-alpine`, `alpine`, `3.0.6-alpine3.20`, `3.0-alpine3.20`, `lts-alpine3.20`, `alpine3.20`](https://github.com/docker-library/haproxy/blob/7341cb2441f9663fb52866df74ccb427960cc8c9/3.0/alpine/Dockerfile)
+-	[`3.1.0-alpine`, `3.1-alpine`, `alpine`, `3.1.0-alpine3.20`, `3.1-alpine3.20`, `alpine3.20`](https://github.com/docker-library/haproxy/blob/845b6f45ac1a8e0ee5706a23ef2fbf56516aebc6/3.1/alpine/Dockerfile)
+
+-	[`3.0.6`, `3.0`, `lts`, `3.0.6-bookworm`, `3.0-bookworm`, `lts-bookworm`](https://github.com/docker-library/haproxy/blob/7341cb2441f9663fb52866df74ccb427960cc8c9/3.0/Dockerfile)
+
+-	[`3.0.6-alpine`, `3.0-alpine`, `lts-alpine`, `3.0.6-alpine3.20`, `3.0-alpine3.20`, `lts-alpine3.20`](https://github.com/docker-library/haproxy/blob/7341cb2441f9663fb52866df74ccb427960cc8c9/3.0/alpine/Dockerfile)
 
 -	[`2.9.12`, `2.9`, `2.9.12-bookworm`, `2.9-bookworm`](https://github.com/docker-library/haproxy/blob/4214bc32bf5038120b1cacbb0f5337169b817aa4/2.9/Dockerfile)
 
