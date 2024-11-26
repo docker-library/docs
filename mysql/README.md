@@ -177,7 +177,7 @@ This is an optional variable. Set to a non-empty value, like `yes`, to allow the
 
 ### `MYSQL_RANDOM_ROOT_PASSWORD`
 
-This is an optional variable. Set to a non-empty value, like `yes`, to generate a random initial password for the root user (using `pwgen`). The generated root password will be printed to stdout (`GENERATED ROOT PASSWORD: .....`).
+This is an optional variable. Set to a non-empty value, like `yes`, to generate a random initial password for the root user (using `openssl`). The generated root password will be printed to stdout (`GENERATED ROOT PASSWORD: .....`).
 
 ### `MYSQL_ONETIME_PASSWORD`
 
