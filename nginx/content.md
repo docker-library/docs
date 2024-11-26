@@ -21,9 +21,10 @@ FROM %%IMAGE%%
 COPY static-html-directory /usr/share/nginx/html
 ```
 
-Place this file in the same directory as your directory of content ("static-html-directory"), run `docker build -t some-content-nginx .`, then start your container:
+Place this file in the same directory as your directory of content ("static-html-directory"), then run these commands to build and start your container:
 
 ```console
+$ docker build -t some-content-nginx .
 $ docker run --name some-nginx -d some-content-nginx
 ```
 
