@@ -336,7 +336,8 @@ initdb: could not look up effective user ID 1000: user does not exist
 ```
 
 The four easiest ways to get around this:
-1.	use the matching UID:GID that the container installs for postgres user/group. This being 999:999 for Debian based containers and 70:70 for Alpine based containers.
+
+1.	on host machine, use the matching UID:GID that the container installs for postgres user/group. This being 999:999 for Debian based containers and 70:70 for Alpine based containers.
 
 2.	allow the image to use [the `nss_wrapper` library](https://cwrap.org/nss_wrapper.html) to "fake" `/etc/passwd` contents for you (see [docker-library/postgres#448](https://github.com/docker-library/postgres/pull/448) for more details)
 
