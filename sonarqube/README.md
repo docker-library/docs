@@ -69,11 +69,11 @@ WARNING:
 
 [SonarQube Server](https://www.sonarsource.com/products/sonarqube/) (formerly SonarQube) is an on-premise analysis tool designed to detect quality and security issues in 30+ languages, frameworks, and IaC platforms. The solution also provides fix recommendations leveraging AI with Sonar’s AI CodeFix capability. By integrating directly with your CI pipeline or on one of the supported DevOps platforms, your code is checked against an extensive set of rules that cover many attributes of code, such as maintainability, reliability, and security issues on each merge/pull request.
 
-[SonarQube Community Build](https://www.sonarsource.com/open-source-editions/sonarqube-community-edition/) (formerly SonarQube Community) is free and open source SonarQube offering. It provides core features such as bug detection, code smells, and basic security issue identification across 30+ programming languages and frameworks. However, advanced security analysis, enterprise-level integrations, and scalability options are reserved for SonarQube Server.
+[SonarQube Community Build](https://www.sonarsource.com/open-source-editions/sonarqube-community-edition/) (formerly SonarQube Community) is the free and open-source SonarQube offering. It provides core features such as bug detection, code smells, and basic security issue identification across 30+ programming languages and frameworks. However, advanced security analysis, enterprise-level integrations, and scalability options are reserved for SonarQube Server.
 
 ## How to use this image
 
-Here you'll find the Docker images for the SonarQube Server (Developer Edition, Enterprise Edition, and Data Center Edition), as well as for SonarQube Community Build.
+Here, you'll find the Docker images for the SonarQube Server (Developer Edition, Enterprise Edition, and Data Center Edition), as well as for SonarQube Community Build.
 
 ## Docker Host Requirements
 
@@ -118,7 +118,7 @@ You can then browse to `http://localhost:9000` or `http://host-ip:9000` in your 
 
 By default, the image will use an embedded H2 database that is not suited for production.
 
-> **Warning:** Only a single instance of SonarQube Server or SonarQube Community Build can connect to a database schema. If you're using a Docker Swarm or Kubernetes, make sure that multiple instances are never running on the same database schema simultaneously. This will cause the SonarQube to behave unpredictably and data will be corrupted. There is no safeguard, as described on [SONAR-10362](https://jira.sonarsource.com/browse/SONAR-10362). The SonarQube Server Data Center Edition has the same limitation in that only one cluster can connect to one database schema at the same time.
+> **Warning:** Only a single instance of SonarQube Server or SonarQube Community Build can connect to a database schema. If you're using a Docker Swarm or Kubernetes, make sure that multiple instances are never running on the same database schema simultaneously. This will cause the SonarQube to behave unpredictably, and data will be corrupted. There is no safeguard, as described on [SONAR-10362](https://jira.sonarsource.com/browse/SONAR-10362). The SonarQube Server Data Center Edition has the same limitation in that only one cluster can connect to one database schema at the same time.
 
 Set up a database by following the ["Installing the Database"](https://docs.sonarsource.com/sonarqube/latest/setup-and-upgrade/install-the-server/installing-the-database/) section.
 
@@ -156,7 +156,7 @@ $ docker run -ti sonarqube-custom
 
 ### Avoid hard termination
 
-The instance will stop gracefully, waiting for any tasks in progress to finish. Waiting for in-progress tasks to finish can take a large amount of time which the docker does not expect by default when stopping. To avoid having the instance killed by the Docker daemon after 10 seconds, it is best to configure a timeout to stop the container with `--stop-timeout`. For example:
+The instance will stop gracefully, waiting for any tasks in progress to finish. Waiting for in-progress tasks to finish can take a large amount of time, which the docker does not expect by default when stopping. To avoid having the instance killed by the Docker daemon after 10 seconds, it is best to configure a timeout to stop the container with `--stop-timeout`. For example:
 
 ```console
 docker run --stop-timeout 3600 sonarqube
