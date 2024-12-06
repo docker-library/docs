@@ -275,13 +275,13 @@ The default `ENABLE_JDWP_DEBUG` value is **false** and can be defined this way:
 $ docker run -d –name C8O -e ENABLE_JDWP_DEBUG=true -p 28080:28080 %%IMAGE%%
 ```
 
-## Pre configurated Docker compose stack
+## Pre-configurated Docker Compose file
 
-You can use this [stack](https://github.com/convertigo/docker/blob/master/compose/mbaas/docker-compose.yml) to run a complete Convertigo Low Code server with FullSync repository and MySQL analytics in a few command lines.
+You can use [this Docker Compose file](https://github.com/convertigo/docker/blob/master/compose/mbaas/docker-compose.yml) to run a complete Convertigo Low Code server with FullSync repository and MySQL analytics in a few command lines.
 
 ```console
 $ mkdir c8oMBaaS
 $ cd c8oMBaaS
 $ wget https://raw.githubusercontent.com/convertigo/docker/master/compose/mbaas/docker-compose.yml
-$ docker-compose up -d
+$ docker compose up -d
 ```

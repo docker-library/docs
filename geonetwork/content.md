@@ -164,7 +164,7 @@ docker run --name some-%%REPO%% -d -p 8080:8080  -e GN_CONFIG_PROPERTIES="-Dgeon
 
 ### %%STACK%%
 
-Run `docker stack deploy -c stack.yml %%REPO%%` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080/geonetwork`, `http://localhost:8080/geonetwork`, or `http://host-ip:8080/geonetwork` (as appropriate).
+Run `docker stack deploy -c stack.yml %%REPO%%` (or `docker compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080/geonetwork`, `http://localhost:8080/geonetwork`, or `http://host-ip:8080/geonetwork` (as appropriate).
 
 ### Default credentials
 

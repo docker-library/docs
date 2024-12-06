@@ -54,7 +54,7 @@ $ docker run -it -v $(pwd)/topology.jar:/topology.jar %%IMAGE%% storm jar /topol
 
 ## %%STACK%%
 
-Run `docker stack deploy -c stack.yml storm` (or `docker-compose -f stack.yml up`) and wait for it to initialize completely. The Nimbus will be available at `http://swarm-ip:6627`, `http://localhost:6627`, or `http://host-ip:6627` (as appropriate).
+Run `docker stack deploy -c stack.yml storm` (or `docker compose -f stack.yml up`) and wait for it to initialize completely. The Nimbus will be available at `http://swarm-ip:6627`, `http://localhost:6627`, or `http://host-ip:6627` (as appropriate).
 
 ## Configuration
 
