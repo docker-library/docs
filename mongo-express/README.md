@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `amd64` builds of [the `mongo-express` official image](https://hub.docker.com/_/mongo-express) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -31,6 +33,8 @@ WARNING:
 -	[`1.0.2-18-alpine3.19`, `1.0-18-alpine3.19`, `1-18-alpine3.19`](https://github.com/mongo-express/mongo-express-docker/blob/403467f350d819b404f3d5150be7776217e810b7/1.0/18-alpine3.19/Dockerfile)
 
 -	[`1.0.2`, `1.0`, `1`, `1.0.2-18`, `1.0-18`, `1-18`, `1.0.2-18-alpine3.18`, `1.0-18-alpine3.18`, `1-18-alpine3.18`, `latest`](https://github.com/mongo-express/mongo-express-docker/blob/403467f350d819b404f3d5150be7776217e810b7/1.0/18-alpine3.18/Dockerfile)
+
+[![amd64/mongo-express build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/amd64/job/mongo-express.svg?label=amd64/mongo-express%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/mongo-express/)
 
 # Quick reference (cont.)
 
@@ -62,7 +66,7 @@ mongo-express is a web-based MongoDB admin interface written in Node.js, Express
 # How to use this image
 
 ```console
-$ docker run --network some-network -e ME_CONFIG_MONGODB_SERVER=some-mongo -p 8081:8081 mongo-express
+$ docker run --network some-network -e ME_CONFIG_MONGODB_SERVER=some-mongo -p 8081:8081 amd64/mongo-express
 ```
 
 Then you can hit `http://localhost:8081` or `http://host-ip:8081` in your browser.
@@ -114,7 +118,7 @@ $ docker run -it --rm \
     -e ME_CONFIG_MONGODB_SERVER="web_db_1" \
     -e ME_CONFIG_BASICAUTH_USERNAME="user" \
     -e ME_CONFIG_BASICAUTH_PASSWORD="fairly long password" \
-    mongo-express
+    amd64/mongo-express
 ```
 
 This example links to a container name typical of `docker-compose`, changes the editor's color theme, and enables basic authentication.
