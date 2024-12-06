@@ -32,9 +32,9 @@ WARNING:
 
 -	[`1.23.4-bullseye`, `1.23-bullseye`, `1-bullseye`, `bullseye`](https://github.com/docker-library/golang/blob/7db81882d183714657225ba6081ce0e9a0db9b75/1.23/bullseye/Dockerfile)
 
--	[`1.23.4-alpine3.20`, `1.23-alpine3.20`, `1-alpine3.20`, `alpine3.20`, `1.23.4-alpine`, `1.23-alpine`, `1-alpine`, `alpine`](https://github.com/docker-library/golang/blob/7db81882d183714657225ba6081ce0e9a0db9b75/1.23/alpine3.20/Dockerfile)
+-	[`1.23.4-alpine3.21`, `1.23-alpine3.21`, `1-alpine3.21`, `alpine3.21`, `1.23.4-alpine`, `1.23-alpine`, `1-alpine`, `alpine`](https://github.com/docker-library/golang/blob/8e03f834d58f58e01b504a9ddd4e672173720f81/1.23/alpine3.21/Dockerfile)
 
--	[`1.23.4-alpine3.19`, `1.23-alpine3.19`, `1-alpine3.19`, `alpine3.19`](https://github.com/docker-library/golang/blob/7db81882d183714657225ba6081ce0e9a0db9b75/1.23/alpine3.19/Dockerfile)
+-	[`1.23.4-alpine3.20`, `1.23-alpine3.20`, `1-alpine3.20`, `alpine3.20`](https://github.com/docker-library/golang/blob/7db81882d183714657225ba6081ce0e9a0db9b75/1.23/alpine3.20/Dockerfile)
 
 -	[`1.23.4-windowsservercore-ltsc2022`, `1.23-windowsservercore-ltsc2022`, `1-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`](https://github.com/docker-library/golang/blob/7db81882d183714657225ba6081ce0e9a0db9b75/1.23/windows/windowsservercore-ltsc2022/Dockerfile)
 
@@ -48,9 +48,9 @@ WARNING:
 
 -	[`1.22.10-bullseye`, `1.22-bullseye`](https://github.com/docker-library/golang/blob/d4dc5390de500bed26f0728a3458580e65f5b6c4/1.22/bullseye/Dockerfile)
 
--	[`1.22.10-alpine3.20`, `1.22-alpine3.20`, `1.22.10-alpine`, `1.22-alpine`](https://github.com/docker-library/golang/blob/d4dc5390de500bed26f0728a3458580e65f5b6c4/1.22/alpine3.20/Dockerfile)
+-	[`1.22.10-alpine3.21`, `1.22-alpine3.21`, `1.22.10-alpine`, `1.22-alpine`](https://github.com/docker-library/golang/blob/8e03f834d58f58e01b504a9ddd4e672173720f81/1.22/alpine3.21/Dockerfile)
 
--	[`1.22.10-alpine3.19`, `1.22-alpine3.19`](https://github.com/docker-library/golang/blob/d4dc5390de500bed26f0728a3458580e65f5b6c4/1.22/alpine3.19/Dockerfile)
+-	[`1.22.10-alpine3.20`, `1.22-alpine3.20`](https://github.com/docker-library/golang/blob/d4dc5390de500bed26f0728a3458580e65f5b6c4/1.22/alpine3.20/Dockerfile)
 
 -	[`1.22.10-windowsservercore-ltsc2022`, `1.22-windowsservercore-ltsc2022`](https://github.com/docker-library/golang/blob/d4dc5390de500bed26f0728a3458580e65f5b6c4/1.22/windows/windowsservercore-ltsc2022/Dockerfile)
 
