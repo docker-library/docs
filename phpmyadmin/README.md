@@ -113,7 +113,7 @@ You can use arbitrary servers by adding the environment variable `PMA_ARBITRARY=
 docker run --name phpmyadmin -d -e PMA_ARBITRARY=1 -p 8080:80 phpmyadmin
 ```
 
-## Usage with docker-compose and arbitrary server
+## Usage with Docker Compose and arbitrary server
 
 This will run phpMyAdmin with the arbitrary server option - allowing you to specify any MySQL/MariaDB server on the login page.
 

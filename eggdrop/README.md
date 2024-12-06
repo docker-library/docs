@@ -155,13 +155,13 @@ to your docker run command line.
 
 ## Common Errors
 
-# docker-compose.yml
+# compose.yaml
 
-A docker-compose.yml example is hosted at https://github.com/eggheads/eggdrop-docker/blob/master/docker-compose.yml . A common error creating your own docker-compose.yml file from scratch is not adding
+A `docker-compose.yml` example is hosted at https://github.com/eggheads/eggdrop-docker/blob/master/docker-compose.yml. A common error creating your own Docker Compose file from scratch is not adding:
 
 	stdin_open: true
 
-to the docker-compose.yml file. Without it, Eggdrop will give you an "END OF FILE ON TERMINAL" error and not start.
+Without it, Eggdrop will give you an "END OF FILE ON TERMINAL" error and not start.
 
 ## Troubleshooting / Support
 

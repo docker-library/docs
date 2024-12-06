@@ -93,9 +93,9 @@ $ docker run --name some-backdrop \
   -d backdrop
 ```
 
-## ... via [`docker-compose`](https://github.com/docker/compose)
+## ... via [Docker Compose](https://github.com/docker/compose)
 
-Example `docker-compose.yml` for `backdrop`:
+Example `compose.yaml` for `backdrop`:
 
 ```yaml
 backdrop:
@@ -114,7 +114,7 @@ db:
     MYSQL_DATABASE: backdrop
 ```
 
-Run `docker-compose up`, wait for it to initialize completely, and visit `http://localhost:8080` or `http://host-ip:8080`.
+Run `docker compose up`, wait for it to initialize completely, and visit `http://localhost:8080` or `http://host-ip:8080`.
 
 ## Adding additional libraries / extensions
 
