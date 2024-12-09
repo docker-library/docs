@@ -24,13 +24,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.25.1-community-bullseye`, `5.25-community-bullseye`, `5-community-bullseye`, `5.25.1-community`, `5.25-community`, `5-community`, `5.25.1-bullseye`, `5.25-bullseye`, `5-bullseye`, `5.25.1`, `5.25`, `5`, `community-bullseye`, `community`, `bullseye`, `latest`](https://github.com/neo4j/docker-neo4j-publish/blob/c0776401a41452ffbad1160f8b2b474c6c85a2a5/5.25.1/bullseye/community/Dockerfile)
+-	[`5.26.0-community-bullseye`, `5.26-community-bullseye`, `5-community-bullseye`, `5.26.0-community`, `5.26-community`, `5-community`, `5.26.0-bullseye`, `5.26-bullseye`, `5-bullseye`, `5.26.0`, `5.26`, `5`, `community-bullseye`, `community`, `bullseye`, `latest`](https://github.com/neo4j/docker-neo4j-publish/blob/f82529102b6fcdd531cd088947f374ac7467958a/5.26.0/bullseye/community/Dockerfile)
 
--	[`5.25.1-enterprise-bullseye`, `5.25-enterprise-bullseye`, `5-enterprise-bullseye`, `5.25.1-enterprise`, `5.25-enterprise`, `5-enterprise`, `enterprise-bullseye`, `enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/c0776401a41452ffbad1160f8b2b474c6c85a2a5/5.25.1/bullseye/enterprise/Dockerfile)
+-	[`5.26.0-enterprise-bullseye`, `5.26-enterprise-bullseye`, `5-enterprise-bullseye`, `5.26.0-enterprise`, `5.26-enterprise`, `5-enterprise`, `enterprise-bullseye`, `enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/f82529102b6fcdd531cd088947f374ac7467958a/5.26.0/bullseye/enterprise/Dockerfile)
 
--	[`5.25.1-community-ubi9`, `5.25-community-ubi9`, `5-community-ubi9`, `5.25.1-ubi9`, `5.25-ubi9`, `5-ubi9`, `community-ubi9`, `ubi9`](https://github.com/neo4j/docker-neo4j-publish/blob/c0776401a41452ffbad1160f8b2b474c6c85a2a5/5.25.1/ubi9/community/Dockerfile)
+-	[`5.26.0-community-ubi9`, `5.26-community-ubi9`, `5-community-ubi9`, `5.26.0-ubi9`, `5.26-ubi9`, `5-ubi9`, `community-ubi9`, `ubi9`](https://github.com/neo4j/docker-neo4j-publish/blob/f82529102b6fcdd531cd088947f374ac7467958a/5.26.0/ubi9/community/Dockerfile)
 
--	[`5.25.1-enterprise-ubi9`, `5.25-enterprise-ubi9`, `5-enterprise-ubi9`, `enterprise-ubi9`](https://github.com/neo4j/docker-neo4j-publish/blob/c0776401a41452ffbad1160f8b2b474c6c85a2a5/5.25.1/ubi9/enterprise/Dockerfile)
+-	[`5.26.0-enterprise-ubi9`, `5.26-enterprise-ubi9`, `5-enterprise-ubi9`, `enterprise-ubi9`](https://github.com/neo4j/docker-neo4j-publish/blob/f82529102b6fcdd531cd088947f374ac7467958a/5.26.0/ubi9/enterprise/Dockerfile)
 
 -	[`4.4.39`, `4.4.39-community`, `4.4`, `4.4-community`](https://github.com/neo4j/docker-neo4j-publish/blob/e0b93f39e18ba02d3c37677b70fd869070df0515/4.4.39/bullseye/community/Dockerfile)
 
