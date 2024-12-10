@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `mips64le` builds of [the `matomo` official image](https://hub.docker.com/_/matomo) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -28,7 +30,7 @@ WARNING:
 
 -	[`5.1.2-fpm`, `5.1-fpm`, `5-fpm`, `fpm`](https://github.com/matomo-org/docker/blob/455f3a40831b82d603fd80526135d8cd52109190/fpm/Dockerfile)
 
--	[`5.1.2-fpm-alpine`, `5.1-fpm-alpine`, `5-fpm-alpine`, `fpm-alpine`](https://github.com/matomo-org/docker/blob/455f3a40831b82d603fd80526135d8cd52109190/fpm-alpine/Dockerfile)
+[![mips64le/matomo build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/mips64le/job/matomo.svg?label=mips64le/matomo%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/mips64le/job/matomo/)
 
 # Quick reference (cont.)
 
@@ -66,7 +68,7 @@ WARNING:
 You can run the Matomo container and service like so:
 
 ```bash
-docker run -d --link some-mysql:db matomo
+docker run -d --link some-mysql:db mips64le/matomo
 ```
 
 This assumes you've already launched a suitable MySQL or MariaDB database container.
@@ -76,7 +78,7 @@ This assumes you've already launched a suitable MySQL or MariaDB database contai
 Use a Docker volume to keep persistent data:
 
 ```bash
-docker run -d -p 8080:80 --link some-mysql:db -v matomo:/var/www/html matomo
+docker run -d -p 8080:80 --link some-mysql:db -v matomo:/var/www/html mips64le/matomo
 ```
 
 ## Matomo Installation
@@ -124,22 +126,6 @@ We'd love to hear your feedback and suggestions in the issue tracker: [[https://
 ## GeoIP
 
 ~~This product includes GeoLite data created by MaxMind, available from [https://www.maxmind.com](https://www.maxmind.com).~~ https://blog.maxmind.com/2019/12/18/significant-changes-to-accessing-and-using-geolite2-databases/
-
-# Image Variants
-
-The `matomo` images come in many flavors, each designed for a specific use case.
-
-## `matomo:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-## `matomo:<version>-alpine`
-
-This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
-
-This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
-
-To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 # License
 
