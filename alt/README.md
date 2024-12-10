@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm64v8` builds of [the `alt` official image](https://hub.docker.com/_/alt) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,11 +26,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`p10`, `latest`](https://github.com/alt-cloud/docker-brew-alt/blob/2b0521341f04c191ddc8ae2c61f87c13ce4c4c83/x86_64/Dockerfile)
+-	[`p10`, `latest`](https://github.com/alt-cloud/docker-brew-alt/blob/2b0521341f04c191ddc8ae2c61f87c13ce4c4c83/aarch64/Dockerfile)
 
--	[`sisyphus`](https://github.com/alt-cloud/docker-brew-alt/blob/0094deef5ac8e3d66a7f57dcf4377165adf033cb/x86_64/Dockerfile)
+-	[`sisyphus`](https://github.com/alt-cloud/docker-brew-alt/blob/0094deef5ac8e3d66a7f57dcf4377165adf033cb/aarch64/Dockerfile)
 
--	[`p11`](https://github.com/alt-cloud/docker-brew-alt/blob/be88d3c5797a8e00da1665691317d17b352502bf/x86_64/Dockerfile)
+-	[`p11`](https://github.com/alt-cloud/docker-brew-alt/blob/be88d3c5797a8e00da1665691317d17b352502bf/aarch64/Dockerfile)
+
+[![arm64v8/alt build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/alt.svg?label=arm64v8/alt%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/alt/)
 
 # Quick reference (cont.)
 
@@ -73,7 +77,7 @@ As said above, Sisyphus is a frequently updated repository mainly designed for d
 
 # About this image
 
-The `alt:latest` tag will always point the latest stable release (which is, at the time of this writing, `alt:p9`).
+The `arm64v8/alt:latest` tag will always point the latest stable release (which is, at the time of this writing, `arm64v8/alt:p9`).
 
 ## How It's Made
 

@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm64v8` builds of [the `irssi` official image](https://hub.docker.com/_/irssi) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -27,6 +29,8 @@ WARNING:
 -	[`1.4.5`, `1.4`, `1`, `latest`, `1.4.5-bookworm`, `1.4-bookworm`, `1-bookworm`, `bookworm`](https://github.com/jessfraz/irssi/blob/b8ea417aaa1a29a6003756627d748450a5bf6abe/debian/Dockerfile)
 
 -	[`1.4.5-alpine`, `1.4-alpine`, `1-alpine`, `alpine`, `1.4.5-alpine3.20`, `1.4-alpine3.20`, `1-alpine3.20`, `alpine3.20`](https://github.com/jessfraz/irssi/blob/ce043e84f00a74532313e8a6203bc8b96194c28a/alpine/Dockerfile)
+
+[![arm64v8/irssi build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/irssi.svg?label=arm64v8/irssi%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/irssi/)
 
 # Quick reference (cont.)
 
@@ -70,7 +74,7 @@ $ docker run -it --name my-running-irssi -e TERM -u $(id -u):$(id -g) \
     --log-driver=none \
     -v $HOME/.irssi:/home/user/.irssi:ro \
     -v /etc/localtime:/etc/localtime:ro \
-    irssi
+    arm64v8/irssi
 ```
 
 We specify `--log-driver=none` to avoid storing useless interactive terminal data.
@@ -81,22 +85,22 @@ On a Mac OS X system, run the same image using:
 $ docker run -it --name my-running-irssi -e TERM -u $(id -u):$(id -g) \
     --log-driver=none \
     -v $HOME/.irssi:/home/user/.irssi:ro \
-    irssi
+    arm64v8/irssi
 ```
 
 You omit `/etc/localtime` on Mac OS X because `boot2docker` doesn't use this file.
 
 # Image Variants
 
-The `irssi` images come in many flavors, each designed for a specific use case.
+The `arm64v8/irssi` images come in many flavors, each designed for a specific use case.
 
-## `irssi:<version>`
+## `arm64v8/irssi:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
 Some of these tags may have names like bookworm in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
-## `irssi:<version>-alpine`
+## `arm64v8/irssi:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
