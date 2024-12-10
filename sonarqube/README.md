@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v7` builds of [the `sonarqube` official image](https://hub.docker.com/_/sonarqube) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,25 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`9.9.8-community`, `9.9-community`, `9-community`, `lts`, `lts-community`](https://github.com/SonarSource/docker-sonarqube/blob/f4f646eed2d589359ff6e806fb648049ac6ee67c/9/community/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v7` ARCHITECTURE
 
--	[`9.9.8-developer`, `9.9-developer`, `9-developer`, `lts-developer`](https://github.com/SonarSource/docker-sonarqube/blob/f4f646eed2d589359ff6e806fb648049ac6ee67c/9/developer/Dockerfile)
-
--	[`9.9.8-enterprise`, `9.9-enterprise`, `9-enterprise`, `lts-enterprise`](https://github.com/SonarSource/docker-sonarqube/blob/f4f646eed2d589359ff6e806fb648049ac6ee67c/9/enterprise/Dockerfile)
-
--	[`9.9.8-datacenter-app`, `9.9-datacenter-app`, `9-datacenter-app`, `lts-datacenter-app`](https://github.com/SonarSource/docker-sonarqube/blob/f4f646eed2d589359ff6e806fb648049ac6ee67c/9/datacenter/app/Dockerfile)
-
--	[`9.9.8-datacenter-search`, `9.9-datacenter-search`, `9-datacenter-search`, `lts-datacenter-search`](https://github.com/SonarSource/docker-sonarqube/blob/f4f646eed2d589359ff6e806fb648049ac6ee67c/9/datacenter/search/Dockerfile)
-
--	[`10.8.0-developer`, `10.8-developer`, `10-developer`, `developer`](https://github.com/SonarSource/docker-sonarqube/blob/f4f646eed2d589359ff6e806fb648049ac6ee67c/10/developer/Dockerfile)
-
--	[`10.8.0-enterprise`, `10.8-enterprise`, `10-enterprise`, `enterprise`](https://github.com/SonarSource/docker-sonarqube/blob/f4f646eed2d589359ff6e806fb648049ac6ee67c/10/enterprise/Dockerfile)
-
--	[`10.8.0-datacenter-app`, `10.8-datacenter-app`, `10-datacenter-app`, `datacenter-app`](https://github.com/SonarSource/docker-sonarqube/blob/f4f646eed2d589359ff6e806fb648049ac6ee67c/10/datacenter/app/Dockerfile)
-
--	[`10.8.0-datacenter-search`, `10.8-datacenter-search`, `10-datacenter-search`, `datacenter-search`](https://github.com/SonarSource/docker-sonarqube/blob/f4f646eed2d589359ff6e806fb648049ac6ee67c/10/datacenter/search/Dockerfile)
-
--	[`24.12.0.100206-community`, `community`, `latest`](https://github.com/SonarSource/docker-sonarqube/blob/f4f646eed2d589359ff6e806fb648049ac6ee67c/community-build/Dockerfile)
+[![arm32v7/sonarqube build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/sonarqube.svg?label=arm32v7/sonarqube%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/sonarqube/)
 
 # Quick reference (cont.)
 
@@ -109,7 +95,7 @@ To run a cluster with the SonarQube Server Data Center Edition, please refer to 
 By default, the server running within the container will listen on port 9000. You can expose the container port 9000 to the host port 9000 with the `-p 9000:9000` argument to `docker run`, like the command below:
 
 ```console
-docker run --name sonarqube-custom -p 9000:9000 sonarqube:community
+docker run --name sonarqube-custom -p 9000:9000 arm32v7/sonarqube:community
 ```
 
 You can then browse to `http://localhost:9000` or `http://host-ip:9000` in your web browser to access the web interface.
@@ -143,7 +129,7 @@ For upgrade instructions, see Upgrading from the Docker Image on the [Upgrade th
 In some environments, it may make more sense to prepare a custom image containing your configuration. A `Dockerfile` to achieve this may be as simple as:
 
 ```dockerfile
-FROM sonarqube:community
+FROM arm32v7/sonarqube:community
 COPY sonar-custom-plugin-1.0.jar /opt/sonarqube/extensions/
 ```
 
@@ -159,7 +145,7 @@ $ docker run -ti sonarqube-custom
 The instance will stop gracefully, waiting for any tasks in progress to finish. Waiting for in-progress tasks to finish can take a large amount of time, which the docker does not expect by default when stopping. To avoid having the instance killed by the Docker daemon after 10 seconds, it is best to configure a timeout to stop the container with `--stop-timeout`. For example:
 
 ```console
-docker run --stop-timeout 3600 sonarqube
+docker run --stop-timeout 3600 arm32v7/sonarqube
 ```
 
 ## Administration
