@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `ppc64le` builds of [the `ubuntu` official image](https://hub.docker.com/_/ubuntu) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,15 +26,17 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`20.04`, `focal-20241011`, `focal`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-focal-amd64-20241011-2dc0aae1&id=2dc0aae17c912aa6ae81e4c4bbc7277692d67bae)
+-	[`20.04`, `focal-20241011`, `focal`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-focal-ppc64le-20241011-5fe7488a&id=5fe7488ac59c7ef8326d4cc1b630db558494410d)
 
--	[`22.04`, `jammy-20240911.1`, `jammy`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-amd64-20240911.1-b88de29a&id=b88de29aeed396f56b7eee0dd87e7249e7a8642f)
+-	[`22.04`, `jammy-20240911.1`, `jammy`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-ppc64le-20240911.1-63c80c93&id=63c80c93b7bb3e1dd7dfc73eea01fa940301b32a)
 
--	[`24.04`, `noble-20241118.1`, `noble`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-amd64-20241118.1-4880b758&id=4880b758e58499d09361550207697892199e1097)
+-	[`24.04`, `noble-20241118.1`, `noble`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-ppc64le-20241118.1-ebcf534b&id=ebcf534b62c677a6b51b9488903cc832eced21e6)
 
--	[`24.10`, `oracular-20241120`, `oracular`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-oracular-amd64-20241120-aea1b7d3&id=aea1b7d330330843a7f7783a788965bc4e89cf6a)
+-	[`24.10`, `oracular-20241120`, `oracular`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-oracular-ppc64le-20241120-93a7f570&id=93a7f570157d221f933d3434c05cbc077ae9e688)
 
--	[`25.04`, `plucky-20241124`, `plucky`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-plucky-amd64-20241124-0033f337&id=0033f337718a9b5769da6cee57bf982cba9764b9)
+-	[`25.04`, `plucky-20241124`, `plucky`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-plucky-ppc64le-20241124-61ef4b67&id=61ef4b67b1d214ffbb0c6fe7cab2adde3ae4657d)
+
+[![ppc64le/ubuntu build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/ppc64le/job/ubuntu.svg?label=ppc64le/ubuntu%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/ppc64le/job/ubuntu/)
 
 # Quick reference (cont.)
 
@@ -67,9 +71,9 @@ Development of Ubuntu is led by Canonical Ltd. Canonical generates revenue throu
 
 This image is built from official rootfs tarballs provided by Canonical (see `dist-*` tags at https://git.launchpad.net/cloud-images/+oci/ubuntu-base).
 
-The `ubuntu:latest` tag points to the "latest LTS", since that's the version recommended for general use. The `ubuntu:rolling` tag points to the latest release (regardless of LTS status).
+The `ppc64le/ubuntu:latest` tag points to the "latest LTS", since that's the version recommended for general use. The `ppc64le/ubuntu:rolling` tag points to the latest release (regardless of LTS status).
 
-Along a similar vein, the `ubuntu:devel` tag is an alias for whichever release the "devel" suite on the mirrors currently points to, as determined by the following one-liner: `wget -qO- http://archive.ubuntu.com/ubuntu/dists/devel/Release | awk -F ': ' '$1 == "Codename" { print $2; exit }'`
+Along a similar vein, the `ppc64le/ubuntu:devel` tag is an alias for whichever release the "devel" suite on the mirrors currently points to, as determined by the following one-liner: `wget -qO- http://archive.ubuntu.com/ubuntu/dists/devel/Release | awk -F ': ' '$1 == "Codename" { print $2; exit }'`
 
 ## Locales
 
