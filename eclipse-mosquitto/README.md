@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `riscv64` builds of [the `eclipse-mosquitto` official image](https://hub.docker.com/_/eclipse-mosquitto) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,9 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.0.20`, `2.0.20-openssl`, `2.0`, `2.0-openssl`, `2`, `2-openssl`, `openssl`, `latest`](https://github.com/eclipse/mosquitto/blob/fb9b1153924ae0e2dfb3bcb4266ee5bb49a5c515/docker/2.0-openssl/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `riscv64` ARCHITECTURE
 
--	[`1.6.15-openssl`, `1.6-openssl`](https://github.com/eclipse/mosquitto/blob/fb9b1153924ae0e2dfb3bcb4266ee5bb49a5c515/docker/1.6-openssl/Dockerfile)
+[![riscv64/eclipse-mosquitto build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/riscv64/job/eclipse-mosquitto.svg?label=riscv64/eclipse-mosquitto%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/riscv64/job/eclipse-mosquitto/)
 
 # Quick reference (cont.)
 
@@ -74,7 +76,7 @@ It is suggested to mirror this structure for your local configuration.
 When running the image, the default configuration values are used. To use a custom configuration file, create your mosquitto.conf in `$PWD/mosquitto/config/mosquitto.conf`, then mount the config directory to `/mosquitto/config`.
 
 ```console
-$ docker run -it -p 1883:1883 -v "$PWD/mosquitto/config:/mosquitto/config" eclipse-mosquitto
+$ docker run -it -p 1883:1883 -v "$PWD/mosquitto/config:/mosquitto/config" riscv64/eclipse-mosquitto
 ```
 
 Configuration can be changed to:
@@ -95,13 +97,13 @@ i.e. add the following to `mosquitto.conf`:
 Run a container using the new image:
 
 ```console
-$ docker run -it -p 1883:1883 -v "$PWD/mosquitto/config:/mosquitto/config" -v /mosquitto/data -v /mosquitto/log eclipse-mosquitto
+$ docker run -it -p 1883:1883 -v "$PWD/mosquitto/config:/mosquitto/config" -v /mosquitto/data -v /mosquitto/log riscv64/eclipse-mosquitto
 ```
 
 or:
 
 ```console
-$ docker run -it -p 1883:1883 -v "$PWD/mosquitto/config:/mosquitto/config" -v "$PWD/mosquitto/data:/mosquitto/data" -v "$PWD/mosquitto/log:/mosquitto/log" eclipse-mosquitto
+$ docker run -it -p 1883:1883 -v "$PWD/mosquitto/config:/mosquitto/config" -v "$PWD/mosquitto/data:/mosquitto/data" -v "$PWD/mosquitto/log:/mosquitto/log" riscv64/eclipse-mosquitto
 ```
 
 **Note**: if the mosquitto configuration (mosquitto.conf) was modified to use non-default ports, the docker run command will need to be updated to expose the ports that have been configured.
@@ -109,7 +111,7 @@ $ docker run -it -p 1883:1883 -v "$PWD/mosquitto/config:/mosquitto/config" -v "$
 For example, if you use port 1883 and port 8080:
 
 ```console
-$ docker run -it -p 1883:1883 -p 8080:8080 -v "$PWD/mosquitto/config:/mosquitto/config" eclipse-mosquitto
+$ docker run -it -p 1883:1883 -p 8080:8080 -v "$PWD/mosquitto/config:/mosquitto/config" riscv64/eclipse-mosquitto
 ```
 
 # License
