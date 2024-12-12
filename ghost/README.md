@@ -26,7 +26,7 @@ WARNING:
 
 -	[`5.104.2`, `5.104`, `5`, `latest`](https://github.com/docker-library/ghost/blob/980d1147ebcabf88c9279984e7453afb7f2f7f21/5/debian/Dockerfile)
 
--	[`5.104.2-alpine`, `5.104-alpine`, `5-alpine`, `alpine`](https://github.com/docker-library/ghost/blob/980d1147ebcabf88c9279984e7453afb7f2f7f21/5/alpine/Dockerfile)
+-	[`5.104.2-alpine`, `5.104-alpine`, `5-alpine`, `alpine`](https://github.com/docker-library/ghost/blob/371ce7bbb480b1e1cf60287325041b4d02b1e30d/5/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
