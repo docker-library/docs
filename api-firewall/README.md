@@ -24,7 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`0.8.4`, `latest`](https://github.com/wallarm/api-firewall-docker/blob/68375d5f34d01ee894aae48bd001863a7fce0faf/0.8.4/Dockerfile)
+-	[`0.8.5`, `latest`](https://github.com/wallarm/api-firewall-docker/blob/0929ac5d2e12037741789bed7a6cf2694887f776/0.8.5/Dockerfile)
 
 # Quick reference (cont.)
 
