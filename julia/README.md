@@ -32,9 +32,9 @@ WARNING:
 
 -	[`1.11.2-bullseye`, `1.11-bullseye`, `1-bullseye`, `bullseye`](https://github.com/docker-library/julia/blob/4f01bdd0f40fb73588ec2fb1425939f0b942eaaf/1.11/bullseye/Dockerfile)
 
--	[`1.11.2-alpine3.20`, `1.11-alpine3.20`, `1-alpine3.20`, `alpine3.20`, `1.11.2-alpine`, `1.11-alpine`, `1-alpine`, `alpine`](https://github.com/docker-library/julia/blob/4f01bdd0f40fb73588ec2fb1425939f0b942eaaf/1.11/alpine3.20/Dockerfile)
+-	[`1.11.2-alpine3.21`, `1.11-alpine3.21`, `1-alpine3.21`, `alpine3.21`, `1.11.2-alpine`, `1.11-alpine`, `1-alpine`, `alpine`](https://github.com/docker-library/julia/blob/c763e6dd2005540877917987840d0128b819de91/1.11/alpine3.21/Dockerfile)
 
--	[`1.11.2-alpine3.19`, `1.11-alpine3.19`, `1-alpine3.19`, `alpine3.19`](https://github.com/docker-library/julia/blob/4f01bdd0f40fb73588ec2fb1425939f0b942eaaf/1.11/alpine3.19/Dockerfile)
+-	[`1.11.2-alpine3.20`, `1.11-alpine3.20`, `1-alpine3.20`, `alpine3.20`](https://github.com/docker-library/julia/blob/4f01bdd0f40fb73588ec2fb1425939f0b942eaaf/1.11/alpine3.20/Dockerfile)
 
 -	[`1.11.2-windowsservercore-ltsc2022`, `1.11-windowsservercore-ltsc2022`, `1-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`](https://github.com/docker-library/julia/blob/4f01bdd0f40fb73588ec2fb1425939f0b942eaaf/1.11/windows/windowsservercore-ltsc2022/Dockerfile)
 
