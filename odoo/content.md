@@ -132,9 +132,9 @@ services:
     ports:
       - "8069:8069"
     environment:
-    - HOST=mydb
-    - USER=odoo
-    - PASSWORD=myodoo
+      - HOST=mydb
+      - USER=odoo
+      - PASSWORD=myodoo
   mydb:
     image: postgres:15
     environment:
