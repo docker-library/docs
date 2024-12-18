@@ -24,11 +24,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`p10`, `latest`](https://github.com/alt-cloud/docker-brew-alt/blob/2b0521341f04c191ddc8ae2c61f87c13ce4c4c83/x86_64/Dockerfile)
+-	[`p10`, `latest`](https://github.com/alt-cloud/docker-brew-alt/blob/fa2dd8158cb2fae6f6beb1b75ce521a906defdb6/x86_64/Dockerfile)
 
--	[`sisyphus`](https://github.com/alt-cloud/docker-brew-alt/blob/0094deef5ac8e3d66a7f57dcf4377165adf033cb/x86_64/Dockerfile)
+-	[`sisyphus`](https://github.com/alt-cloud/docker-brew-alt/blob/22fa2c4589ddd9a413c483e03258a8e337dfe195/x86_64/Dockerfile)
 
--	[`p11`](https://github.com/alt-cloud/docker-brew-alt/blob/be88d3c5797a8e00da1665691317d17b352502bf/x86_64/Dockerfile)
+-	[`p11`](https://github.com/alt-cloud/docker-brew-alt/blob/c2d543714938d5ab0d474f584e0b11b527e08943/x86_64/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -38,7 +38,7 @@ WARNING:
 For create new bug, please use [ALT's bugzilla page](https://bugzilla.altlinux.org/enter_bug.cgi?product=Docker) (choose `Official image` as component and include details about image problems in the description) or [GitHub](https://github.com/alt-cloud/docker-brew-alt/issues).
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/alt/), [`arm64v8`](https://hub.docker.com/r/arm64v8/alt/), [`i386`](https://hub.docker.com/r/i386/alt/)
+	[`amd64`](https://hub.docker.com/r/amd64/alt/), [`arm64v8`](https://hub.docker.com/r/arm64v8/alt/), [`i386`](https://hub.docker.com/r/i386/alt/), [`riscv64`](https://hub.docker.com/r/riscv64/alt/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/alt/` directory](https://github.com/docker-library/repo-info/blob/master/repos/alt) ([history](https://github.com/docker-library/repo-info/commits/master/repos/alt))  
