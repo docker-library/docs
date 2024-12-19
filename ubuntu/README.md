@@ -32,7 +32,7 @@ WARNING:
 
 -	[`24.10`, `oracular-20241120`, `oracular`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-oracular-amd64-20241120-aea1b7d3&id=aea1b7d330330843a7f7783a788965bc4e89cf6a)
 
--	[`25.04`, `plucky-20241124`, `plucky`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-plucky-amd64-20241124-0033f337&id=0033f337718a9b5769da6cee57bf982cba9764b9)
+-	[`25.04`, `plucky-20241213`, `plucky`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-plucky-amd64-20241213-a232d27b&id=a232d27bc1e7b1173a1c8154366982d1e72b0d9b)
 
 # Quick reference (cont.)
 
