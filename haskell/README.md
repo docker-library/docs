@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `i386` builds of [the `haskell` official image](https://hub.docker.com/_/haskell) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,13 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`9.10.1-bullseye`, `9.10-bullseye`, `9-bullseye`, `bullseye`, `9`, `latest`](https://github.com/haskell/docker-haskell/blob/cfaf06d32690811d0eeb16123534a312ee9b8859/9.10/bullseye/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `i386` ARCHITECTURE
 
--	[`9.10.1-slim-bullseye`, `9.10-slim-bullseye`, `9-slim-bullseye`, `slim-bullseye`, `9-slim`, `slim`](https://github.com/haskell/docker-haskell/blob/cfaf06d32690811d0eeb16123534a312ee9b8859/9.10/slim-bullseye/Dockerfile)
-
--	[`9.6.6-bullseye`, `9.6-bullseye`, `9.6.6`, `9.6`](https://github.com/haskell/docker-haskell/blob/cfaf06d32690811d0eeb16123534a312ee9b8859/9.6/bullseye/Dockerfile)
-
--	[`9.6.6-slim-bullseye`, `9.6-slim-bullseye`, `9.6.6-slim`, `9.6-slim`](https://github.com/haskell/docker-haskell/blob/cfaf06d32690811d0eeb16123534a312ee9b8859/9.6/slim-bullseye/Dockerfile)
+[![i386/haskell build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/i386/job/haskell.svg?label=i386/haskell%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/i386/job/haskell/)
 
 # Quick reference (cont.)
 
@@ -78,7 +76,7 @@ Additionally, we aim to support the two most recent versions of Debian (`stable`
 Start an interactive interpreter session with `ghci`:
 
 ```console
-$ docker run -it --rm haskell:9
+$ docker run -it --rm i386/haskell:9
 GHCi, version 9.0.1: http://www.haskell.org/ghc/  :? for help
 Prelude>
 ```
@@ -86,7 +84,7 @@ Prelude>
 Dockerize an application using `stack`:
 
 ```dockerfile
-FROM haskell:8.10
+FROM i386/haskell:8.10
 RUN stack install --resolver lts-17.14 pandoc citeproc
 ENTRYPOINT ["pandoc"]
 ```
@@ -94,7 +92,7 @@ ENTRYPOINT ["pandoc"]
 Dockerize an application using `cabal`:
 
 ```dockerfile
-FROM haskell:8.10
+FROM i386/haskell:8.10
 RUN cabal update && cabal install pandoc citeproc
 ENTRYPOINT ["pandoc"]
 ```
@@ -102,7 +100,7 @@ ENTRYPOINT ["pandoc"]
 Iteratively develop a Haskell application with a `Dockerfile` utilizing the build cache:
 
 ```dockerfile
-FROM haskell:8
+FROM i386/haskell:8
 
 WORKDIR /opt/example
 
@@ -125,7 +123,7 @@ CMD ["example"]
 
 ### Considerations for `happy`, `alex`, etc
 
-Some packages that also act as build dependencies, such as `happy` and `alex`, are no longer included in this image (as of `haskell:8.2.2` & `haskell:8.4.3`). There is a bootstrapping problem where one or more of these tools may be assumed to be available. If you run in to an error about missing dependencies that are not explicitly called out in a Cabal package, you will need to explicitly mark them for installation.
+Some packages that also act as build dependencies, such as `happy` and `alex`, are no longer included in this image (as of `i386/haskell:8.2.2` & `i386/haskell:8.4.3`). There is a bootstrapping problem where one or more of these tools may be assumed to be available. If you run in to an error about missing dependencies that are not explicitly called out in a Cabal package, you will need to explicitly mark them for installation.
 
 ### Considerations for Stack
 
@@ -145,7 +143,7 @@ Compiler version mismatched, found ghc-8.4.3 (x86_64), but expected minor versio
 To install the correct GHC into /root/.stack/programs/x86_64-linux/, try running "stack setup" or use the "--install-ghc" flag.
 ```
 
-In this case, the GHC release in the `haskell` Docker image got ahead of the default Stack resolver expected version of GHC. As the output suggests, manually setting the resolver (typically via `stack.yml`) is the recommended approach.
+In this case, the GHC release in the `i386/haskell` Docker image got ahead of the default Stack resolver expected version of GHC. As the output suggests, manually setting the resolver (typically via `stack.yml`) is the recommended approach.
 
 ```console
 Step 2/3 : RUN stack install --resolver ghc-8.4.3 pandoc
@@ -157,23 +155,7 @@ Updating package index Hackage (mirrored at https://s3.amazonaws.com/hackage.fpc
 Selected mirror https://s3.amazonaws.com/hackage.fpcomplete.com/
 ```
 
-The alternative to use `--install-ghc` doesn't make sense in a Docker image context, and hence the global `install-ghc` flag has been set to `false` (as of `haskell:8.2.2` & `haskell:8.4.3`) to avoid the default behavior of bootstrapping a new GHC in the container.
-
-# Image Variants
-
-The `haskell` images come in many flavors, each designed for a specific use case.
-
-## `haskell:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-Some of these tags may have names like bullseye in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
-
-## `haskell:<version>-slim`
-
-This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `ghc`, `cabal-install` and `stack`. In addition, [profiling support](https://downloads.haskell.org/~ghc/latest/docs/html/users_guide/profiling.html) is not included which saves ~ 700MB of space.
-
-If image size is of concern, we recommend using the slim images.
+The alternative to use `--install-ghc` doesn't make sense in a Docker image context, and hence the global `install-ghc` flag has been set to `false` (as of `i386/haskell:8.2.2` & `i386/haskell:8.4.3`) to avoid the default behavior of bootstrapping a new GHC in the container.
 
 # License
 
