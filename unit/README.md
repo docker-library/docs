@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `amd64` builds of [the `unit` official image](https://hub.docker.com/_/unit) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -58,6 +60,8 @@ WARNING:
 
 -	[`1.33.0-minimal`, `minimal`, `latest`](https://github.com/nginx/unit/blob/624debcf17ea7faab01fa841bd4dcd9f308cf306/pkg/docker/Dockerfile.minimal)
 
+[![amd64/unit build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/amd64/job/unit.svg?label=amd64/unit%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/unit/)
+
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
@@ -95,15 +99,15 @@ Please check the [Initial Configuration](https://unit.nginx.org/installation/#in
 
 # Image Variants
 
-The `unit` images come in many flavors, each designed for a specific use case.
+The `amd64/unit` images come in many flavors, each designed for a specific use case.
 
-## `unit:<version>`
+## `amd64/unit:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `unit:<version>-slim`
+## `amd64/unit:<version>-slim`
 
-This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `unit`. Unless you are working in an environment where *only* the `unit` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
+This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `amd64/unit`. Unless you are working in an environment where *only* the `amd64/unit` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
 
 # License
 
