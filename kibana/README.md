@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `mips64le` builds of [the `kibana` official image](https://hub.docker.com/_/kibana) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,11 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.16.2`](https://github.com/elastic/dockerfiles/blob/cc6ff63bb905d1eb329d52a6769ddadbb87d1dc8/kibana/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `mips64le` ARCHITECTURE
 
--	[`7.17.26`](https://github.com/elastic/dockerfiles/blob/833d5513f5561c34542daa1a5f739b7513bf9944/kibana/Dockerfile)
-
--	[`8.17.0`](https://github.com/elastic/dockerfiles/blob/81f3141716232ed68978121cee93fb360487b0a3/kibana/Dockerfile)
+[![mips64le/kibana build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/mips64le/job/kibana.svg?label=mips64le/kibana%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/mips64le/job/kibana/)
 
 # Quick reference (cont.)
 
