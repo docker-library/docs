@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `mips64le` builds of [the `julia` official image](https://hub.docker.com/_/julia) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,53 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
-(See ["What's the difference between 'Shared' and 'Simple' tags?" in the FAQ](https://github.com/docker-library/faq#whats-the-difference-between-shared-and-simple-tags).)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `mips64le` ARCHITECTURE
 
-## Simple Tags
-
--	[`1.11.2-bookworm`, `1.11-bookworm`, `1-bookworm`, `bookworm`](https://github.com/docker-library/julia/blob/4f01bdd0f40fb73588ec2fb1425939f0b942eaaf/1.11/bookworm/Dockerfile)
-
--	[`1.11.2-bullseye`, `1.11-bullseye`, `1-bullseye`, `bullseye`](https://github.com/docker-library/julia/blob/4f01bdd0f40fb73588ec2fb1425939f0b942eaaf/1.11/bullseye/Dockerfile)
-
--	[`1.11.2-alpine3.21`, `1.11-alpine3.21`, `1-alpine3.21`, `alpine3.21`, `1.11.2-alpine`, `1.11-alpine`, `1-alpine`, `alpine`](https://github.com/docker-library/julia/blob/c763e6dd2005540877917987840d0128b819de91/1.11/alpine3.21/Dockerfile)
-
--	[`1.11.2-alpine3.20`, `1.11-alpine3.20`, `1-alpine3.20`, `alpine3.20`](https://github.com/docker-library/julia/blob/4f01bdd0f40fb73588ec2fb1425939f0b942eaaf/1.11/alpine3.20/Dockerfile)
-
--	[`1.11.2-windowsservercore-ltsc2022`, `1.11-windowsservercore-ltsc2022`, `1-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`](https://github.com/docker-library/julia/blob/4f01bdd0f40fb73588ec2fb1425939f0b942eaaf/1.11/windows/windowsservercore-ltsc2022/Dockerfile)
-
--	[`1.11.2-windowsservercore-1809`, `1.11-windowsservercore-1809`, `1-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/docker-library/julia/blob/4f01bdd0f40fb73588ec2fb1425939f0b942eaaf/1.11/windows/windowsservercore-1809/Dockerfile)
-
--	[`1.10.7-bookworm`, `1.10-bookworm`](https://github.com/docker-library/julia/blob/20763c0a7c195e9a57eb7903ff60e8b6a811e4fe/1.10/bookworm/Dockerfile)
-
--	[`1.10.7-bullseye`, `1.10-bullseye`](https://github.com/docker-library/julia/blob/20763c0a7c195e9a57eb7903ff60e8b6a811e4fe/1.10/bullseye/Dockerfile)
-
--	[`1.10.7-windowsservercore-ltsc2022`, `1.10-windowsservercore-ltsc2022`](https://github.com/docker-library/julia/blob/20763c0a7c195e9a57eb7903ff60e8b6a811e4fe/1.10/windows/windowsservercore-ltsc2022/Dockerfile)
-
--	[`1.10.7-windowsservercore-1809`, `1.10-windowsservercore-1809`](https://github.com/docker-library/julia/blob/20763c0a7c195e9a57eb7903ff60e8b6a811e4fe/1.10/windows/windowsservercore-1809/Dockerfile)
-
-## Shared Tags
-
--	`1.11.2`, `1.11`, `1`, `latest`:
-
-	-	[`1.11.2-bookworm`](https://github.com/docker-library/julia/blob/4f01bdd0f40fb73588ec2fb1425939f0b942eaaf/1.11/bookworm/Dockerfile)
-	-	[`1.11.2-windowsservercore-ltsc2022`](https://github.com/docker-library/julia/blob/4f01bdd0f40fb73588ec2fb1425939f0b942eaaf/1.11/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`1.11.2-windowsservercore-1809`](https://github.com/docker-library/julia/blob/4f01bdd0f40fb73588ec2fb1425939f0b942eaaf/1.11/windows/windowsservercore-1809/Dockerfile)
-
--	`1.11.2-windowsservercore`, `1.11-windowsservercore`, `1-windowsservercore`, `windowsservercore`:
-
-	-	[`1.11.2-windowsservercore-ltsc2022`](https://github.com/docker-library/julia/blob/4f01bdd0f40fb73588ec2fb1425939f0b942eaaf/1.11/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`1.11.2-windowsservercore-1809`](https://github.com/docker-library/julia/blob/4f01bdd0f40fb73588ec2fb1425939f0b942eaaf/1.11/windows/windowsservercore-1809/Dockerfile)
-
--	`1.10.7`, `1.10`:
-
-	-	[`1.10.7-bookworm`](https://github.com/docker-library/julia/blob/20763c0a7c195e9a57eb7903ff60e8b6a811e4fe/1.10/bookworm/Dockerfile)
-	-	[`1.10.7-windowsservercore-ltsc2022`](https://github.com/docker-library/julia/blob/20763c0a7c195e9a57eb7903ff60e8b6a811e4fe/1.10/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`1.10.7-windowsservercore-1809`](https://github.com/docker-library/julia/blob/20763c0a7c195e9a57eb7903ff60e8b6a811e4fe/1.10/windows/windowsservercore-1809/Dockerfile)
-
--	`1.10.7-windowsservercore`, `1.10-windowsservercore`:
-
-	-	[`1.10.7-windowsservercore-ltsc2022`](https://github.com/docker-library/julia/blob/20763c0a7c195e9a57eb7903ff60e8b6a811e4fe/1.10/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`1.10.7-windowsservercore-1809`](https://github.com/docker-library/julia/blob/20763c0a7c195e9a57eb7903ff60e8b6a811e4fe/1.10/windows/windowsservercore-1809/Dockerfile)
+[![mips64le/julia build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/mips64le/job/julia.svg?label=mips64le/julia%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/mips64le/job/julia/)
 
 # Quick reference (cont.)
 
@@ -112,41 +70,14 @@ It's especially relevant to note that Alpine / musl is "Tier 3" due to several k
 Starting the Julia REPL is as easy as the following:
 
 ```console
-$ docker run -it --rm julia
+$ docker run -it --rm mips64le/julia
 ```
 
 ## Run Julia script from your local directory inside container
 
 ```console
-$ docker run -it --rm -v "$PWD":/usr/myapp -w /usr/myapp julia julia script.jl arg1 arg2
+$ docker run -it --rm -v "$PWD":/usr/myapp -w /usr/myapp mips64le/julia julia script.jl arg1 arg2
 ```
-
-# Image Variants
-
-The `julia` images come in many flavors, each designed for a specific use case.
-
-## `julia:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-Some of these tags may have names like bookworm or bullseye in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
-
-## `julia:<version>-alpine`
-
-This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
-
-This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
-
-To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
-
-## `julia:<version>-windowsservercore`
-
-This image is based on [Windows Server Core (`microsoft/windowsservercore`)](https://hub.docker.com/r/microsoft/windowsservercore/). As such, it only works in places which that image does, such as Windows 10 Professional/Enterprise (Anniversary Edition) or Windows Server 2016.
-
-For information about how to get Docker running on Windows, please see the relevant "Quick Start" guide provided by Microsoft:
-
--	[Windows Server Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_server)
--	[Windows 10 Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)
 
 # License
 
