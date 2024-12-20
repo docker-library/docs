@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v6` builds of [the `clickhouse` official image](https://hub.docker.com/_/clickhouse) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,13 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `focal`, `24`, `24-focal`, `24.10`, `24.10-focal`, `24.10.2`, `24.10.2-focal`, `24.10.2.80`, `24.10.2.80-focal`](https://github.com/ClickHouse/docker-library/blob/5e5cd0415e8ba326f35f5066ab1b3b7314df153d/server/24.10.2.80/Dockerfile.ubuntu)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v6` ARCHITECTURE
 
--	[`24.9`, `24.9-focal`, `24.9.3`, `24.9.3-focal`, `24.9.3.128`, `24.9.3.128-focal`](https://github.com/ClickHouse/docker-library/blob/5e5cd0415e8ba326f35f5066ab1b3b7314df153d/server/24.9.3.128/Dockerfile.ubuntu)
-
--	[`lts`, `lts-focal`, `24.8`, `24.8-focal`, `24.8.7`, `24.8.7-focal`, `24.8.7.41`, `24.8.7.41-focal`](https://github.com/ClickHouse/docker-library/blob/5e5cd0415e8ba326f35f5066ab1b3b7314df153d/server/24.8.7.41/Dockerfile.ubuntu)
-
--	[`24.3`, `24.3-focal`, `24.3.14`, `24.3.14-focal`, `24.3.14.35`, `24.3.14.35-focal`](https://github.com/ClickHouse/docker-library/blob/5e5cd0415e8ba326f35f5066ab1b3b7314df153d/server/24.3.14.35/Dockerfile.ubuntu)
+[![arm32v6/clickhouse build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v6/job/clickhouse.svg?label=arm32v6/clickhouse%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v6/job/clickhouse/)
 
 # Quick reference (cont.)
 
@@ -74,7 +72,7 @@ For more information and documentation see https://clickhouse.com/.
 ### start server instance
 
 ```bash
-docker run -d --name some-clickhouse-server --ulimit nofile=262144:262144 clickhouse
+docker run -d --name some-clickhouse-server --ulimit nofile=262144:262144 arm32v6/clickhouse
 ```
 
 By default, ClickHouse will be accessible only via the Docker network. See the **networking** section below.
@@ -84,7 +82,7 @@ By default, starting above server instance will be run as the `default` user wit
 ### connect to it from a native client
 
 ```bash
-docker run -it --rm --link some-clickhouse-server:clickhouse-server --entrypoint clickhouse-client clickhouse --host clickhouse-server
+docker run -it --rm --link some-clickhouse-server:clickhouse-server --entrypoint clickhouse-client arm32v6/clickhouse --host clickhouse-server
 # OR
 docker exec -it some-clickhouse-server clickhouse-client
 ```
@@ -111,7 +109,7 @@ docker rm some-clickhouse-server
 You can expose your ClickHouse running in docker by [mapping a particular port](https://docs.docker.com/config/containers/container-networking/) from inside the container using host ports:
 
 ```bash
-docker run -d -p 18123:8123 -p19000:9000 --name some-clickhouse-server --ulimit nofile=262144:262144 clickhouse
+docker run -d -p 18123:8123 -p19000:9000 --name some-clickhouse-server --ulimit nofile=262144:262144 arm32v6/clickhouse
 echo 'SELECT version()' | curl 'http://localhost:18123/' --data-binary @-
 ```
 
@@ -120,7 +118,7 @@ echo 'SELECT version()' | curl 'http://localhost:18123/' --data-binary @-
 Or by allowing the container to use [host ports directly](https://docs.docker.com/network/host/) using `--network=host` (also allows achieving better network performance):
 
 ```bash
-docker run -d --network=host --name some-clickhouse-server --ulimit nofile=262144:262144 clickhouse
+docker run -d --network=host --name some-clickhouse-server --ulimit nofile=262144:262144 arm32v6/clickhouse
 echo 'SELECT version()' | curl 'http://localhost:8123/' --data-binary @-
 ```
 
@@ -137,7 +135,7 @@ Typically you may want to mount the following folders inside your container to a
 docker run -d \
     -v "$PWD/ch_data:/var/lib/clickhouse/" \
     -v "$PWD/ch_logs:/var/log/clickhouse-server/" \
-    --name some-clickhouse-server --ulimit nofile=262144:262144 clickhouse
+    --name some-clickhouse-server --ulimit nofile=262144:262144 arm32v6/clickhouse
 ```
 
 You may also want to mount:
@@ -155,7 +153,7 @@ They are optional and can be enabled using the following [docker command-line ar
 ```bash
 docker run -d \
     --cap-add=SYS_NICE --cap-add=NET_ADMIN --cap-add=IPC_LOCK \
-    --name some-clickhouse-server --ulimit nofile=262144:262144 clickhouse
+    --name some-clickhouse-server --ulimit nofile=262144:262144 arm32v6/clickhouse
 ```
 
 Read more in [knowledge base](https://clickhouse.com/docs/knowledgebase/configure_cap_ipc_lock_and_cap_sys_nice_in_docker).
@@ -169,14 +167,14 @@ ClickHouse configuration is represented with a file "config.xml" ([documentation
 ### Start server instance with custom configuration
 
 ```bash
-docker run -d --name some-clickhouse-server --ulimit nofile=262144:262144 -v /path/to/your/config.xml:/etc/clickhouse-server/config.xml clickhouse
+docker run -d --name some-clickhouse-server --ulimit nofile=262144:262144 -v /path/to/your/config.xml:/etc/clickhouse-server/config.xml arm32v6/clickhouse
 ```
 
 ### Start server as custom user
 
 ```bash
 # $PWD/data/clickhouse should exist and be owned by current user
-docker run --rm --user "${UID}:${GID}" --name some-clickhouse-server --ulimit nofile=262144:262144 -v "$PWD/logs/clickhouse:/var/log/clickhouse-server" -v "$PWD/data/clickhouse:/var/lib/clickhouse" clickhouse
+docker run --rm --user "${UID}:${GID}" --name some-clickhouse-server --ulimit nofile=262144:262144 -v "$PWD/logs/clickhouse:/var/log/clickhouse-server" -v "$PWD/data/clickhouse:/var/lib/clickhouse" arm32v6/clickhouse
 ```
 
 When you use the image with local directories mounted, you probably want to specify the user to maintain the proper file ownership. Use the `--user` argument and mount `/var/lib/clickhouse` and `/var/log/clickhouse-server` inside the container. Otherwise, the image will complain and not start.
@@ -184,7 +182,7 @@ When you use the image with local directories mounted, you probably want to spec
 ### Start server from root (useful in case of enabled user namespace)
 
 ```bash
-docker run --rm -e CLICKHOUSE_RUN_AS_ROOT=1 --name clickhouse-server-userns -v "$PWD/logs/clickhouse:/var/log/clickhouse-server" -v "$PWD/data/clickhouse:/var/lib/clickhouse" clickhouse
+docker run --rm -e CLICKHOUSE_RUN_AS_ROOT=1 --name clickhouse-server-userns -v "$PWD/logs/clickhouse:/var/log/clickhouse-server" -v "$PWD/data/clickhouse:/var/lib/clickhouse" arm32v6/clickhouse
 ```
 
 ### How to create default database and user on starting
@@ -192,7 +190,7 @@ docker run --rm -e CLICKHOUSE_RUN_AS_ROOT=1 --name clickhouse-server-userns -v "
 Sometimes you may want to create a user (user named `default` is used by default) and database on a container start. You can do it using environment variables `CLICKHOUSE_DB`, `CLICKHOUSE_USER`, `CLICKHOUSE_DEFAULT_ACCESS_MANAGEMENT` and `CLICKHOUSE_PASSWORD`:
 
 ```bash
-docker run --rm -e CLICKHOUSE_DB=my_database -e CLICKHOUSE_USER=username -e CLICKHOUSE_DEFAULT_ACCESS_MANAGEMENT=1 -e CLICKHOUSE_PASSWORD=password -p 9000:9000/tcp clickhouse
+docker run --rm -e CLICKHOUSE_DB=my_database -e CLICKHOUSE_USER=username -e CLICKHOUSE_DEFAULT_ACCESS_MANAGEMENT=1 -e CLICKHOUSE_PASSWORD=password -p 9000:9000/tcp arm32v6/clickhouse
 ```
 
 ## How to extend this image
