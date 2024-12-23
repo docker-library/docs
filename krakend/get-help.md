@@ -1,0 +1,1 @@
+[documentation](https://www.krakend.io/docs/overview/introduction/), [community support](https://groups.google.com/a/krakend.io/g/community), [open an issue](https://github.com/krakend/krakend-ce/issues), [other support channels](https://www.krakend.io/support/)
