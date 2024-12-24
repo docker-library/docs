@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm64v8` builds of [the `mageia` official image](https://hub.docker.com/_/mageia) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,9 +26,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`9`, `latest`](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/a10bfc339af146998ead45d720186eea25f5c990/dist/9/x86_64/Dockerfile)
+-	[`9`, `latest`](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/a10bfc339af146998ead45d720186eea25f5c990/dist/9/aarch64/Dockerfile)
 
--	[`cauldron`](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/a10bfc339af146998ead45d720186eea25f5c990/dist/cauldron/x86_64/Dockerfile)
+-	[`cauldron`](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/a10bfc339af146998ead45d720186eea25f5c990/dist/cauldron/aarch64/Dockerfile)
+
+[![arm64v8/mageia build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/mageia.svg?label=arm64v8/mageia%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/mageia/)
 
 # Quick reference (cont.)
 
@@ -68,7 +72,7 @@ To date, Mageia:
 ## Create a Dockerfile for your container
 
 ```dockerfile
-FROM mageia:6
+FROM arm64v8/mageia:6
 MAINTAINER  "Foo Bar" <foo@bar.com>
 CMD [ "bash" ]
 ```
