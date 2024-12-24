@@ -24,19 +24,19 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.0.0`, `7.0`, `7`, `latest`](https://github.com/RocketChat/Docker.Official.Image/blob/3a4113f1de4aa921dfe26c53f88b4d1f59fac3f5/7.0/Dockerfile)
+-	[`7.1.0`, `7.1`, `7`, `latest`](https://github.com/RocketChat/Docker.Official.Image/blob/2604071c1f2f2d4300262347a33c03bac25918fc/7.1/Dockerfile)
 
--	[`6.9.7`, `6.9`](https://github.com/RocketChat/Docker.Official.Image/blob/3a4113f1de4aa921dfe26c53f88b4d1f59fac3f5/6.9/Dockerfile)
+-	[`7.0.3`, `7.0`](https://github.com/RocketChat/Docker.Official.Image/blob/356c786113ce8c1f6b2cba6089737a4dc3eed78f/7.0/Dockerfile)
 
--	[`6.8.7`, `6.8`](https://github.com/RocketChat/Docker.Official.Image/blob/3a4113f1de4aa921dfe26c53f88b4d1f59fac3f5/6.8/Dockerfile)
+-	[`6.13.1`, `6.13`, `6`](https://github.com/RocketChat/Docker.Official.Image/blob/2604071c1f2f2d4300262347a33c03bac25918fc/6.13/Dockerfile)
 
--	[`6.13.0`, `6.13`, `6`](https://github.com/RocketChat/Docker.Official.Image/blob/3a4113f1de4aa921dfe26c53f88b4d1f59fac3f5/6.13/Dockerfile)
+-	[`6.12.3`, `6.12`](https://github.com/RocketChat/Docker.Official.Image/blob/2604071c1f2f2d4300262347a33c03bac25918fc/6.12/Dockerfile)
 
--	[`6.12.2`, `6.12`](https://github.com/RocketChat/Docker.Official.Image/blob/3a4113f1de4aa921dfe26c53f88b4d1f59fac3f5/6.12/Dockerfile)
+-	[`6.11.3`, `6.11`](https://github.com/RocketChat/Docker.Official.Image/blob/2604071c1f2f2d4300262347a33c03bac25918fc/6.11/Dockerfile)
 
--	[`6.11.3`, `6.11`](https://github.com/RocketChat/Docker.Official.Image/blob/3a4113f1de4aa921dfe26c53f88b4d1f59fac3f5/6.11/Dockerfile)
+-	[`6.10.9`, `6.10`](https://github.com/RocketChat/Docker.Official.Image/blob/2604071c1f2f2d4300262347a33c03bac25918fc/6.10/Dockerfile)
 
--	[`6.10.7`, `6.10`](https://github.com/RocketChat/Docker.Official.Image/blob/3a4113f1de4aa921dfe26c53f88b4d1f59fac3f5/6.10/Dockerfile)
+-	[`6.9.7`, `6.9`](https://github.com/RocketChat/Docker.Official.Image/blob/2604071c1f2f2d4300262347a33c03bac25918fc/6.9/Dockerfile)
 
 # Quick reference (cont.)
 
