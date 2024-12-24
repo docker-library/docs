@@ -1,5 +1,3 @@
-version: '3.1'
-
 services:
 
   ghost:
@@ -20,6 +18,12 @@ services:
       #NODE_ENV: development
     volumes:
       - ghost:/var/lib/ghost/content
+    depends_on:
+      db:
+        # Using service_healthy requires adding a healthcheck
+        # condition: service_healthy
+        condition: service_started
+        restart: true
 
   db:
     image: mysql:8.0
@@ -28,6 +32,10 @@ services:
       MYSQL_ROOT_PASSWORD: example
     volumes:
       - db:/var/lib/mysql
+    # Basic healthcheck to use with the service_healthy condition above.
+    # healthcheck:
+    #   test: ["CMD-SHELL", "mysql -u root -p$$MYSQL_ROOT_PASSWORD" ]
+    #   interval: 5s
 
 volumes:
   ghost:
