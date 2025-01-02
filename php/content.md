@@ -71,6 +71,19 @@ See also ["Dockerizing Compiled Software"](https://tianon.xyz/post/2017/12/26/do
 
 Some extensions are compiled by default. This depends on the PHP version you are using. Run `php -m` in the container to get a list for your specific version.
 
+### PIE extensions
+
+The latest recommended way of installing PHP extensions is through [PIE](https://github.com/php/pie). To install a PIE-compatible extension, use `pie install` to download, compile and enable it.
+
+```dockerfile
+FROM %%IMAGE%%:8.2-cli
+
+# Install PIE here (see https://github.com/php/pie/blob/main/docs/usage.md)
+
+RUN pie install phpredis/phpredis:^6.1 \
+	&& pie install xdebug/xdebug:^3.4
+```
+
 ### PECL extensions
 
 Some extensions are not provided with the PHP source, but are instead available through [PECL](https://pecl.php.net/). To install a PECL extension, use `pecl install` to download and compile it, then use `docker-php-ext-enable` to enable it:
