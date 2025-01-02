@@ -86,6 +86,8 @@ RUN pie install phpredis/phpredis:^6.1 \
 
 ### PECL extensions
 
+⚠️ Note: Installation of PEAR and thus also PECL with PHP is deprecated and thus subject to removal in a future PHP version. See also https://github.com/php/php-src/commit/e93d6d97aab7a5de1f7b8dc750ca9d08214de8c4.
+
 Some extensions are not provided with the PHP source, but are instead available through [PECL](https://pecl.php.net/). To install a PECL extension, use `pecl install` to download and compile it, then use `docker-php-ext-enable` to enable it:
 
 ```dockerfile
