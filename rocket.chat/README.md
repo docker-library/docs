@@ -26,7 +26,7 @@ WARNING:
 
 -	[`7.1.0`, `7.1`, `7`, `latest`](https://github.com/RocketChat/Docker.Official.Image/blob/2604071c1f2f2d4300262347a33c03bac25918fc/7.1/Dockerfile)
 
--	[`7.0.3`, `7.0`](https://github.com/RocketChat/Docker.Official.Image/blob/356c786113ce8c1f6b2cba6089737a4dc3eed78f/7.0/Dockerfile)
+-	[`7.0.4`, `7.0`](https://github.com/RocketChat/Docker.Official.Image/blob/d787d62046698f16412c3debcb1cc257f301e47e/7.0/Dockerfile)
 
 -	[`6.13.1`, `6.13`, `6`](https://github.com/RocketChat/Docker.Official.Image/blob/2604071c1f2f2d4300262347a33c03bac25918fc/6.13/Dockerfile)
 
@@ -35,8 +35,6 @@ WARNING:
 -	[`6.11.3`, `6.11`](https://github.com/RocketChat/Docker.Official.Image/blob/2604071c1f2f2d4300262347a33c03bac25918fc/6.11/Dockerfile)
 
 -	[`6.10.9`, `6.10`](https://github.com/RocketChat/Docker.Official.Image/blob/2604071c1f2f2d4300262347a33c03bac25918fc/6.10/Dockerfile)
-
--	[`6.9.7`, `6.9`](https://github.com/RocketChat/Docker.Official.Image/blob/2604071c1f2f2d4300262347a33c03bac25918fc/6.9/Dockerfile)
 
 # Quick reference (cont.)
 
