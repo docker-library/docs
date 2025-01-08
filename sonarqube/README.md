@@ -67,9 +67,9 @@ WARNING:
 
 `sonarqube` Docker repository stores the official Sonar images for SonarQube Server and SonarQube Community Build.
 
-[SonarQube Server](https://www.sonarsource.com/products/sonarqube/) (formerly SonarQube) is an on-premise analysis tool designed to detect quality and security issues in 30+ languages, frameworks, and IaC platforms. The solution also provides fix recommendations leveraging AI with Sonar’s AI CodeFix capability. By integrating directly with your CI pipeline or on one of the supported DevOps platforms, your code is checked against an extensive set of rules that cover many attributes of code, such as maintainability, reliability, and security issues on each merge/pull request.
+[SonarQube Server](https://www.sonarsource.com/products/sonarqube/) (formerly SonarQube) is an on-premise analysis tool designed to detect quality and security issues in 30+ languages, frameworks, and IaC platforms. The solution also provides fix recommendations leveraging AI with Sonar's AI CodeFix capability. By integrating directly with your CI pipeline or on one of the supported DevOps platforms, your code is checked against an extensive set of rules that cover many attributes of code, such as maintainability, reliability, and security issues on each merge/pull request.
 
-[SonarQube Community Build](https://www.sonarsource.com/open-source-editions/sonarqube-community-edition/) (formerly SonarQube Community) is the free and open-source SonarQube offering. It provides core features such as bug detection, code smells, and basic security issue identification across 30+ programming languages and frameworks. However, advanced security analysis, enterprise-level integrations, and scalability options are reserved for SonarQube Server.
+[SonarQube Community Build](https://www.sonarsource.com/open-source-editions/sonarqube-community-edition/) (formerly SonarQube Community) is Sonar's self-managed free offering, released on a monthly schedule. It includes the latest core capabilities available in open source, providing essential features such as bug detection, identification of code smells, and basic security issue analysis across 21 programming languages and frameworks. For advanced security analysis, enterprise-grade integrations, and scalability features, the commercial version, SonarQube Server, is available.
 
 ## How to use this image
 
