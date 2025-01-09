@@ -84,37 +84,13 @@ WARNING:
 
 -	[`10.3.11-php8.2-fpm-alpine3.20`, `10.3-php8.2-fpm-alpine3.20`, `10.3.11-fpm-alpine3.20`, `10.3-fpm-alpine3.20`](https://github.com/docker-library/drupal/blob/0248576732a79f174053d7c3850ef3ff7426e977/10.3/php8.2/fpm-alpine3.20/Dockerfile)
 
--	[`7.103-php8.2-apache-bookworm`, `7-php8.2-apache-bookworm`, `7.103-php8.2-apache`, `7-php8.2-apache`, `7.103-php8.2`, `7-php8.2`](https://github.com/docker-library/drupal/blob/ce8246b1c6e241574c166301044fdec9a6e24356/7/php8.2/apache-bookworm/Dockerfile)
-
--	[`7.103-php8.2-fpm-bookworm`, `7-php8.2-fpm-bookworm`, `7.103-php8.2-fpm`, `7-php8.2-fpm`](https://github.com/docker-library/drupal/blob/ce8246b1c6e241574c166301044fdec9a6e24356/7/php8.2/fpm-bookworm/Dockerfile)
-
--	[`7.103-php8.2-apache-bullseye`, `7-php8.2-apache-bullseye`](https://github.com/docker-library/drupal/blob/ce8246b1c6e241574c166301044fdec9a6e24356/7/php8.2/apache-bullseye/Dockerfile)
-
--	[`7.103-php8.2-fpm-bullseye`, `7-php8.2-fpm-bullseye`](https://github.com/docker-library/drupal/blob/ce8246b1c6e241574c166301044fdec9a6e24356/7/php8.2/fpm-bullseye/Dockerfile)
-
--	[`7.103-php8.2-fpm-alpine3.21`, `7-php8.2-fpm-alpine3.21`, `7.103-php8.2-fpm-alpine`, `7-php8.2-fpm-alpine`](https://github.com/docker-library/drupal/blob/a90d8ccae757671775d2bfdf3668a2c97318ba4c/7/php8.2/fpm-alpine3.21/Dockerfile)
-
--	[`7.103-php8.2-fpm-alpine3.20`, `7-php8.2-fpm-alpine3.20`](https://github.com/docker-library/drupal/blob/ce8246b1c6e241574c166301044fdec9a6e24356/7/php8.2/fpm-alpine3.20/Dockerfile)
-
--	[`7.103-php8.1-apache-bookworm`, `7-php8.1-apache-bookworm`, `7.103-php8.1-apache`, `7-php8.1-apache`, `7.103-php8.1`, `7-php8.1`, `7.103-apache-bookworm`, `7-apache-bookworm`, `7.103-apache`, `7-apache`, `7.103`, `7`](https://github.com/docker-library/drupal/blob/ce8246b1c6e241574c166301044fdec9a6e24356/7/php8.1/apache-bookworm/Dockerfile)
-
--	[`7.103-php8.1-fpm-bookworm`, `7-php8.1-fpm-bookworm`, `7.103-php8.1-fpm`, `7-php8.1-fpm`, `7.103-fpm-bookworm`, `7-fpm-bookworm`, `7.103-fpm`, `7-fpm`](https://github.com/docker-library/drupal/blob/ce8246b1c6e241574c166301044fdec9a6e24356/7/php8.1/fpm-bookworm/Dockerfile)
-
--	[`7.103-php8.1-apache-bullseye`, `7-php8.1-apache-bullseye`, `7.103-apache-bullseye`, `7-apache-bullseye`](https://github.com/docker-library/drupal/blob/ce8246b1c6e241574c166301044fdec9a6e24356/7/php8.1/apache-bullseye/Dockerfile)
-
--	[`7.103-php8.1-fpm-bullseye`, `7-php8.1-fpm-bullseye`, `7.103-fpm-bullseye`, `7-fpm-bullseye`](https://github.com/docker-library/drupal/blob/ce8246b1c6e241574c166301044fdec9a6e24356/7/php8.1/fpm-bullseye/Dockerfile)
-
--	[`7.103-php8.1-fpm-alpine3.21`, `7-php8.1-fpm-alpine3.21`, `7.103-php8.1-fpm-alpine`, `7-php8.1-fpm-alpine`, `7.103-fpm-alpine3.21`, `7-fpm-alpine3.21`, `7.103-fpm-alpine`, `7-fpm-alpine`](https://github.com/docker-library/drupal/blob/a90d8ccae757671775d2bfdf3668a2c97318ba4c/7/php8.1/fpm-alpine3.21/Dockerfile)
-
--	[`7.103-php8.1-fpm-alpine3.20`, `7-php8.1-fpm-alpine3.20`, `7.103-fpm-alpine3.20`, `7-fpm-alpine3.20`](https://github.com/docker-library/drupal/blob/ce8246b1c6e241574c166301044fdec9a6e24356/7/php8.1/fpm-alpine3.20/Dockerfile)
-
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
 	[https://github.com/docker-library/drupal/issues](https://github.com/docker-library/drupal/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/drupal/), [`arm32v5`](https://hub.docker.com/r/arm32v5/drupal/), [`arm32v6`](https://hub.docker.com/r/arm32v6/drupal/), [`arm32v7`](https://hub.docker.com/r/arm32v7/drupal/), [`arm64v8`](https://hub.docker.com/r/arm64v8/drupal/), [`i386`](https://hub.docker.com/r/i386/drupal/), [`mips64le`](https://hub.docker.com/r/mips64le/drupal/), [`ppc64le`](https://hub.docker.com/r/ppc64le/drupal/), [`riscv64`](https://hub.docker.com/r/riscv64/drupal/), [`s390x`](https://hub.docker.com/r/s390x/drupal/)
+	[`amd64`](https://hub.docker.com/r/amd64/drupal/), [`arm32v6`](https://hub.docker.com/r/arm32v6/drupal/), [`arm32v7`](https://hub.docker.com/r/arm32v7/drupal/), [`arm64v8`](https://hub.docker.com/r/arm64v8/drupal/), [`i386`](https://hub.docker.com/r/i386/drupal/), [`ppc64le`](https://hub.docker.com/r/ppc64le/drupal/), [`riscv64`](https://hub.docker.com/r/riscv64/drupal/), [`s390x`](https://hub.docker.com/r/s390x/drupal/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/drupal/` directory](https://github.com/docker-library/repo-info/blob/master/repos/drupal) ([history](https://github.com/docker-library/repo-info/commits/master/repos/drupal))  
