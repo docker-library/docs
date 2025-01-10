@@ -46,10 +46,6 @@ Running Redmine with a database server is the recommended way.
 
 Run `docker stack deploy -c stack.yml %%REPO%%` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
 
-## Alternative Web Server
-
-The other tags in this repository, like those with `passenger`, use the same environment and `--links` as the default tags that use Puma (`rails server`) but instead give you the option of a different web and application server. `passenger` uses [Phusion Passenger](https://www.phusionpassenger.com/). [`tini`](https://github.com/krallin/tini) is used for reaping [zombies](https://en.wikipedia.org/wiki/Zombie_process).
-
 ## Accessing the Application
 
 Currently, the default user and password from upstream is admin/admin ([logging into the application](https://www.redmine.org/projects/redmine/wiki/RedmineInstall#Step-10-Logging-into-the-application)).
@@ -122,19 +118,7 @@ This variable is required when using Docker Swarm replicas to maintain session c
 
 ## Running as an arbitrary user
 
-For running Redmine without Phusion Passenger you can simply use the [`--user`](https://docs.docker.com/engine/reference/run/#user) flag to `docker run` and give it a `username:group` or `UID:GID`, the user doesn't need to exist in the container
-
-For running the `redmine:passenger` variant as an arbitrary user you will however need the user to exist in `/etc/passwd`. Here are a few examples for doing that:
-
-1.	Create the user on your host and mount `/etc/passwd:/etc/passwd:ro`
-
-2.	Create a Dockerfile `FROM redmine:passenger` and include something like [`RUN groupadd -r group && useradd --no-log-init -r -g group user`](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#user)
-
-	```dockerfile
-	FROM redmine:passenger
-	RUN groupadd -r group && useradd --no-log-init -r -g group user
-	USER user
-	```
+You can use the [`--user`](https://docs.docker.com/engine/reference/run/#user) flag to `docker run` and give it a `username:group` or `UID:GID`, the user doesn't need to exist in the container.
 
 ## Docker Secrets
 
