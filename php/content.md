@@ -78,8 +78,14 @@ The latest recommended way of installing PHP extensions is through [PIE](https:/
 ```dockerfile
 FROM %%IMAGE%%:8.2-cli
 
-# Install PIE here (see https://github.com/php/pie/blob/main/docs/usage.md)
+# Install PIE here; e.g. through using Docker
+RUN export DEBIAN_FRONTEND="noninteractive"; \
+    set -eux; \
+    apt-get update; apt-get install -y --no-install-recommends unzip; \
+    rm -rf /var/lib/apt/lists/*
+COPY --from=ghcr.io/php/pie:bin /pie /usr/bin/pie
 
+# Use PIE to install extensions
 RUN pie install phpredis/phpredis:^6.1 \
 	&& pie install xdebug/xdebug:^3.4
 ```
