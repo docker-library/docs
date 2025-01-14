@@ -121,10 +121,7 @@ In order to keep your sessions active between container updates you will need to
 
 ## Connect to the database over SSL
 
-Set the variable `PMA_SSL` to `1` to enable SSL usage from phpMyAdmin to the MySQL server.
-The default value is `0`.
-The variable `PMA_SSLS` can be used as a comma seperated sequence of `0` and `1` where multiple hosts are mentioned.
-Values order must follow the `PMA_HOSTS` and will be computed accordingly.
+Set the variable `PMA_SSL` to `1` to enable SSL usage from phpMyAdmin to the MySQL server. The default value is `0`. The variable `PMA_SSLS` can be used as a comma seperated sequence of `0` and `1` where multiple hosts are mentioned. Values order must follow the `PMA_HOSTS` and will be computed accordingly.
 
 ```sh
 docker run --name phpmyadmin -d -e PMA_HOSTS=sslhost -e PMA_SSL=1 -p 8080:80 %%IMAGE%%
