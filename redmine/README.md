@@ -24,23 +24,23 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.0.2`, `6.0`, `6`, `latest`, `6.0.2-bookworm`, `6.0-bookworm`, `6-bookworm`, `bookworm`](https://github.com/docker-library/redmine/blob/ba44016bde2905bed5774c98326e5beba2e506de/6.0/bookworm/Dockerfile)
+-	[`6.0.2`, `6.0`, `6`, `latest`, `6.0.2-bookworm`, `6.0-bookworm`, `6-bookworm`, `bookworm`](https://github.com/docker-library/redmine/blob/bd201100bc2bafda763ea6638e0695fd4bde1f97/6.0/bookworm/Dockerfile)
 
--	[`6.0.2-alpine3.21`, `6.0-alpine3.21`, `6-alpine3.21`, `alpine3.21`, `6.0.2-alpine`, `6.0-alpine`, `6-alpine`, `alpine`](https://github.com/docker-library/redmine/blob/ba44016bde2905bed5774c98326e5beba2e506de/6.0/alpine3.21/Dockerfile)
+-	[`6.0.2-alpine3.21`, `6.0-alpine3.21`, `6-alpine3.21`, `alpine3.21`, `6.0.2-alpine`, `6.0-alpine`, `6-alpine`, `alpine`](https://github.com/docker-library/redmine/blob/bd201100bc2bafda763ea6638e0695fd4bde1f97/6.0/alpine3.21/Dockerfile)
 
--	[`6.0.2-alpine3.20`, `6.0-alpine3.20`, `6-alpine3.20`, `alpine3.20`](https://github.com/docker-library/redmine/blob/ba44016bde2905bed5774c98326e5beba2e506de/6.0/alpine3.20/Dockerfile)
+-	[`6.0.2-alpine3.20`, `6.0-alpine3.20`, `6-alpine3.20`, `alpine3.20`](https://github.com/docker-library/redmine/blob/bd201100bc2bafda763ea6638e0695fd4bde1f97/6.0/alpine3.20/Dockerfile)
 
--	[`5.1.5`, `5.1`, `5`, `5.1.5-bookworm`, `5.1-bookworm`, `5-bookworm`](https://github.com/docker-library/redmine/blob/83b96af0032249a7d869785b5da2d86cafe10e8c/5.1/bookworm/Dockerfile)
+-	[`5.1.5`, `5.1`, `5`, `5.1.5-bookworm`, `5.1-bookworm`, `5-bookworm`](https://github.com/docker-library/redmine/blob/bd201100bc2bafda763ea6638e0695fd4bde1f97/5.1/bookworm/Dockerfile)
 
--	[`5.1.5-alpine3.21`, `5.1-alpine3.21`, `5-alpine3.21`, `5.1.5-alpine`, `5.1-alpine`, `5-alpine`](https://github.com/docker-library/redmine/blob/83b96af0032249a7d869785b5da2d86cafe10e8c/5.1/alpine3.21/Dockerfile)
+-	[`5.1.5-alpine3.21`, `5.1-alpine3.21`, `5-alpine3.21`, `5.1.5-alpine`, `5.1-alpine`, `5-alpine`](https://github.com/docker-library/redmine/blob/bd201100bc2bafda763ea6638e0695fd4bde1f97/5.1/alpine3.21/Dockerfile)
 
--	[`5.1.5-alpine3.20`, `5.1-alpine3.20`, `5-alpine3.20`](https://github.com/docker-library/redmine/blob/83b96af0032249a7d869785b5da2d86cafe10e8c/5.1/alpine3.20/Dockerfile)
+-	[`5.1.5-alpine3.20`, `5.1-alpine3.20`, `5-alpine3.20`](https://github.com/docker-library/redmine/blob/bd201100bc2bafda763ea6638e0695fd4bde1f97/5.1/alpine3.20/Dockerfile)
 
--	[`5.0.10`, `5.0`, `5.0.10-bookworm`, `5.0-bookworm`](https://github.com/docker-library/redmine/blob/2f7ad78c65f5ea8724f994ea2a33dafcc4cd32eb/5.0/bookworm/Dockerfile)
+-	[`5.0.10`, `5.0`, `5.0.10-bookworm`, `5.0-bookworm`](https://github.com/docker-library/redmine/blob/bd201100bc2bafda763ea6638e0695fd4bde1f97/5.0/bookworm/Dockerfile)
 
--	[`5.0.10-alpine3.21`, `5.0-alpine3.21`, `5.0.10-alpine`, `5.0-alpine`](https://github.com/docker-library/redmine/blob/5e9640071612b4b7b4335548dcb110ad1a76ad16/5.0/alpine3.21/Dockerfile)
+-	[`5.0.10-alpine3.21`, `5.0-alpine3.21`, `5.0.10-alpine`, `5.0-alpine`](https://github.com/docker-library/redmine/blob/bd201100bc2bafda763ea6638e0695fd4bde1f97/5.0/alpine3.21/Dockerfile)
 
--	[`5.0.10-alpine3.20`, `5.0-alpine3.20`](https://github.com/docker-library/redmine/blob/2f7ad78c65f5ea8724f994ea2a33dafcc4cd32eb/5.0/alpine3.20/Dockerfile)
+-	[`5.0.10-alpine3.20`, `5.0-alpine3.20`](https://github.com/docker-library/redmine/blob/bd201100bc2bafda763ea6638e0695fd4bde1f97/5.0/alpine3.20/Dockerfile)
 
 # Quick reference (cont.)
 
