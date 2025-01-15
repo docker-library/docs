@@ -24,13 +24,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `focal`, `24`, `24-focal`, `24.10`, `24.10-focal`, `24.10.2`, `24.10.2-focal`, `24.10.2.80`, `24.10.2.80-focal`](https://github.com/ClickHouse/docker-library/blob/5e5cd0415e8ba326f35f5066ab1b3b7314df153d/server/24.10.2.80/Dockerfile.ubuntu)
+-	[`latest`, `jammy`, `24.12`, `24.12-jammy`, `24.12.3`, `24.12.3-jammy`, `24.12.3.47`, `24.12.3.47-jammy`](https://github.com/ClickHouse/docker-library/blob/25d5c4edc570e79103921d61916e8ddbc2a3b82f/server/24.12.3.47/Dockerfile.ubuntu)
 
--	[`24.9`, `24.9-focal`, `24.9.3`, `24.9.3-focal`, `24.9.3.128`, `24.9.3.128-focal`](https://github.com/ClickHouse/docker-library/blob/5e5cd0415e8ba326f35f5066ab1b3b7314df153d/server/24.9.3.128/Dockerfile.ubuntu)
+-	[`24.11`, `24.11-jammy`, `24.11.3`, `24.11.3-jammy`, `24.11.3.66`, `24.11.3.66-jammy`](https://github.com/ClickHouse/docker-library/blob/25d5c4edc570e79103921d61916e8ddbc2a3b82f/server/24.11.3.66/Dockerfile.ubuntu)
 
--	[`lts`, `lts-focal`, `24.8`, `24.8-focal`, `24.8.7`, `24.8.7-focal`, `24.8.7.41`, `24.8.7.41-focal`](https://github.com/ClickHouse/docker-library/blob/5e5cd0415e8ba326f35f5066ab1b3b7314df153d/server/24.8.7.41/Dockerfile.ubuntu)
+-	[`24.10`, `24.10-focal`, `24.10.4`, `24.10.4-focal`, `24.10.4.191`, `24.10.4.191-focal`](https://github.com/ClickHouse/docker-library/blob/25d5c4edc570e79103921d61916e8ddbc2a3b82f/server/24.10.4.191/Dockerfile.ubuntu)
 
--	[`24.3`, `24.3-focal`, `24.3.14`, `24.3.14-focal`, `24.3.14.35`, `24.3.14.35-focal`](https://github.com/ClickHouse/docker-library/blob/5e5cd0415e8ba326f35f5066ab1b3b7314df153d/server/24.3.14.35/Dockerfile.ubuntu)
+-	[`lts`, `lts-focal`, `24.8`, `24.8-focal`, `24.8.12`, `24.8.12-focal`, `24.8.12.28`, `24.8.12.28-focal`](https://github.com/ClickHouse/docker-library/blob/25d5c4edc570e79103921d61916e8ddbc2a3b82f/server/24.8.12.28/Dockerfile.ubuntu)
+
+-	[`24.3`, `24.3-focal`, `24.3.15`, `24.3.15-focal`, `24.3.15.72`, `24.3.15.72-focal`](https://github.com/ClickHouse/docker-library/blob/25d5c4edc570e79103921d61916e8ddbc2a3b82f/server/24.3.15.72/Dockerfile.ubuntu)
 
 # Quick reference (cont.)
 
