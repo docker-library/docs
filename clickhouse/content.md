@@ -10,6 +10,12 @@ ClickHouse works 100-1000x faster than traditional database management systems, 
 
 For more information and documentation see https://clickhouse.com/.
 
+## Versions
+
+-	The `latest` tag points to the latest release of the latest stable branch.
+-	Branch tags like `22.2` point to the latest release of the corresponding branch.
+-	Full version tags like `22.2.3` and `22.2.3.5` point to the corresponding release.
+
 ### Compatibility
 
 -	The amd64 image requires support for [SSE3 instructions](https://en.wikipedia.org/wiki/SSE3). Virtually all x86 CPUs after 2005 support SSE3.
