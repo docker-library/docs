@@ -59,7 +59,7 @@ Run phpMyAdmin with Alpine, Apache and PHP FPM.
 
 # How to use this image
 
-All of the following examples will bring you phpMyAdmin on `http://localhost:8080` where you can enjoy your happy MySQL administration.
+All of the following examples will bring you phpMyAdmin on `http://localhost:8080` where you can enjoy your happy MySQL and MariaDB administration.
 
 ## Credentials
 
@@ -113,7 +113,7 @@ You can use arbitrary servers by adding the environment variable `PMA_ARBITRARY=
 docker run --name phpmyadmin -d -e PMA_ARBITRARY=1 -p 8080:80 phpmyadmin
 ```
 
-## Usage with Docker Compose and arbitrary server
+## Usage with `docker compose` and an arbitrary server
 
 This will run phpMyAdmin with the arbitrary server option - allowing you to specify any MySQL/MariaDB server on the login page.
 
@@ -126,7 +126,7 @@ version: '3.1'
 
 services:
   db:
-    image: mariadb:10.6
+    image: mariadb:10.11
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: notSecureChangeMe
@@ -140,7 +140,7 @@ services:
       - PMA_ARBITRARY=1
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/6372937f8f1ff823d2aaa102762be5bb5cd87f40/phpmyadmin/stack.yml)
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/9154b40d2603d9776b07f7b0d2a70806d1fbebea/phpmyadmin/stack.yml)
 
 ## Adding Custom Configuration
 
@@ -171,9 +171,39 @@ See the following links for config file information:
 -	https://docs.phpmyadmin.net/en/latest/config.html#config
 -	https://docs.phpmyadmin.net/en/latest/setup.html
 
+## Adding custom configuration in `/etc/phpmyadmin/conf.d`
+
+you can also consider storing your custom configuration files in the folder `/etc/phpmyadmin/conf.d`, which is very suitable for managing multiple phpMyAdmin configuration files for different hosts,Then you can create `server-1.php`, `server-2.php`, or any file name you want, and store them in the conf.d directory mounted on the host.
+
+On the `docker run` line like this:
+
+```sh
+docker run --name phpmyadmin -d --link mysql_db_server:db -p 8080:80 -v /some/local/directory/conf.d:/etc/phpmyadmin/conf.d:ro phpmyadmin
+```
+
 ## Usage behind a reverse proxy
 
 Set the variable `PMA_ABSOLUTE_URI` to the fully-qualified path (`https://pma.example.net/`) where the reverse proxy makes phpMyAdmin available.
+
+## Sessions persistence
+
+In order to keep your sessions active between container updates you will need to mount the `/sessions` folder.
+
+```sh
+-v /some/local/directory/sessions:/sessions:rw
+```
+
+## Connect to the database over SSL
+
+Set the variable `PMA_SSL` to `1` to enable SSL usage from phpMyAdmin to the MySQL server. The default value is `0`. The variable `PMA_SSLS` can be used as a comma seperated sequence of `0` and `1` where multiple hosts are mentioned. Values order must follow the `PMA_HOSTS` and will be computed accordingly.
+
+```sh
+docker run --name phpmyadmin -d -e PMA_HOSTS=sslhost -e PMA_SSL=1 -p 8080:80 phpmyadmin
+```
+
+```sh
+docker run --name phpmyadmin -d -e PMA_HOSTS='sslhost,nosslhost' -e PMA_SSLS='1,0' -p 8080:80 phpmyadmin
+```
 
 ## Environment variables summary
 
@@ -184,6 +214,19 @@ Set the variable `PMA_ABSOLUTE_URI` to the fully-qualified path (`https://pma.ex
 -	`PMA_HOSTS` - define comma separated list of address/host names of the MySQL servers
 -	`PMA_VERBOSES` - define comma separated list of verbose names of the MySQL servers
 -	`PMA_PORTS` - define comma separated list of ports of the MySQL servers
+-	`PMA_SOCKET` - define socket file for the MySQL connection
+-	`PMA_SOCKETS` - define comma separated list of socket files for the MySQL connections
+-	`PMA_SSL_DIR` - define the path used for SSL files generated from environement variables, default value is `/etc/phpmyadmin/ssl`
+-	`PMA_SSL` - when set to 1, defines SSL usage for the MySQL connection
+-	`PMA_SSLS` - comma separated list of `0` and `1` defining SSL usage for the corresponding MySQL connections
+-	`PMA_SSL_VERIFY` - when set to 1, enables SSL certificate verification for the MySQL connection.
+-	`PMA_SSL_VERIFIES` - comma-separated list of `0` and `1` to enable or disable SSL certificate verification for multiple MySQL connections.
+-	`PMA_SSL_CA` - in the context of mutual TLS security, allows setting your CA certificate file as a string inside the default `config.inc.php`.
+-	`PMA_SSL_CAS` - in the context of mutual TLS security, allows setting multiple CA certificate files as a comma-separated list of strings inside the default `config.inc.php`.
+-	`PMA_SSL_CERT` - in the context of mutual TLS security, allows setting your certificate file as a string inside the default `config.inc.php`.
+-	`PMA_SSL_CERTS` - in the context of mutual TLS security, allows setting multiple certificate files as a comma-separated list of strings inside the default `config.inc.php`.
+-	`PMA_SSL_KEY` - in the context of mutual TLS security, allows setting your private key file as a string inside the default `config.inc.php`.
+-	`PMA_SSL_KEYS` - in the context of mutual TLS security, allows setting multiple private key files as a comma-separated list of strings inside the default `config.inc.php`.
 -	`PMA_USER` and `PMA_PASSWORD` - define username and password to use only with the `config` authentication method
 -	`PMA_ABSOLUTE_URI` - the full URL to phpMyAdmin. Sometimes needed when used in a reverse-proxy configuration. Don't set this unless needed. See [documentation](https://docs.phpmyadmin.net/en/latest/config.html#cfg_PmaAbsoluteUri).
 -	`PMA_CONFIG_BASE64` - if set, this option will override the default `config.inc.php` with the base64 decoded contents of the variable
@@ -200,6 +243,7 @@ Set the variable `PMA_ABSOLUTE_URI` to the fully-qualified path (`https://pma.ex
 -	`MAX_EXECUTION_TIME` - if set, will override the maximum execution time in seconds (default 600) for phpMyAdmin ([$cfg['ExecTimeLimit']](https://docs.phpmyadmin.net/en/latest/config.html#cfg_ExecTimeLimit)) and PHP [max_execution_time](https://www.php.net/manual/en/info.configuration.php#ini.max-execution-time) (format as `[0-9+]`)
 -	`MEMORY_LIMIT` - if set, will override the memory limit (default 512M) for phpMyAdmin ([$cfg['MemoryLimit']](https://docs.phpmyadmin.net/en/latest/config.html#cfg_MemoryLimit)) and PHP [memory_limit](https://www.php.net/manual/en/ini.core.php#ini.memory-limit) (format as `[0-9+](K,M,G)` where K is for Kilobytes, M for Megabytes, G for Gigabytes and 1K = 1024 bytes)
 -	`UPLOAD_LIMIT` - if set, this option will override the default value for apache and php-fpm (format as `[0-9+](K,M,G)` default value is 2048K, this will change `upload_max_filesize` and `post_max_size` values)
+-	`TZ` - if defined, this option will change the default PHP `date.timezone` from `UTC`. See [documentation](https://www.php.net/manual/en/timezones.php) for supported values.
 -	`HIDE_PHP_VERSION` - if defined, this option will hide the PHP version (`expose_php = Off`). Set to any value (such as `HIDE_PHP_VERSION=true`).
 -	`APACHE_PORT` - if defined, this option will change the default Apache port from `80` in case you want it to run on a different port like an unprivileged port. Set to any port value (such as `APACHE_PORT=8090`)
 
@@ -208,6 +252,19 @@ For usage with Docker secrets, appending `_FILE` to the `PMA_PASSWORD` environme
 ```sh
 docker run --name phpmyadmin -d -e PMA_PASSWORD_FILE=/run/secrets/db_password.txt -p 8080:80 phpmyadmin
 ```
+
+#### Variables that can store the file contents using `_BASE64`
+
+-	`PMA_SSL_CA`
+-	`PMA_SSL_CAS`
+-	`PMA_SSL_KEY`
+-	`PMA_SSL_KEYS`
+-	`PMA_SSL_CERT`
+-	`PMA_SSL_CERTS`
+
+Also includes: `PMA_CONFIG_BASE64` or `PMA_USER_CONFIG_BASE64`.
+
+For example, the variable would be named `PMA_SSL_CA_BASE64` and the value is the base64 encoded contents of the file.
 
 #### Variables that can be read from a file using `_FILE`
 
