@@ -99,7 +99,7 @@ For more examples and ideas, visit:
 
 $ docker images hello-world
 REPOSITORY    TAG       IMAGE ID       SIZE
-hello-world   latest    d2c94e258dcb   13.26kB
+hello-world   latest    74cc54e27dc4   10.07kB
 ```
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/01c12653951b2fe592c1f93a13b4e289ada0e3a1/hello-world/logo.png)
