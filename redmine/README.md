@@ -202,9 +202,11 @@ This variable allows you to control if `rake redmine:plugins:migrate` is run on 
 
 `redmine:plugins:migrate` will not run if you start your image with something other than the default `CMD`, like `bash`. See the current `docker-entrypoint.sh` in your image for details.
 
-### `REDMINE_SECRET_KEY_BASE`
+### `SECRET_KEY_BASE`
 
-This variable is required when using Docker Swarm replicas to maintain session connections when being loadbalanced between containers. It will create an initial `config/secrets.yml` and set the `secret_key_base` value, which is "used by Rails to encode cookies storing session data thus preventing their tampering. Generating a new secret token invalidates all existing sessions after restart" ([session store](https://www.redmine.org/projects/redmine/wiki/RedmineInstall#Step-5-Session-store-secret-generation)). If you do not set this variable or provide a `secrets.yml` one will be generated using `rake generate_secret_token`.
+This is a general Rails environment variable. This variable is useful when using loadbalanced replicas to maintain session connections. It is "used by Rails to encode cookies storing session data thus preventing their tampering. Generating a new secret token invalidates all existing sessions after restart" ([session store](https://www.redmine.org/projects/redmine/wiki/RedmineInstall#Step-5-Session-store-secret-generation)). If you do not set this variable, then the `secret_key_base` value will be generated using `rake generate_secret_token`.
+
+For backwards compatibility, the deprecated, Docker-specific `REDMINE_SECRET_KEY_BASE` variable will automatically fill the `SECRET_KEY_BASE` environment variable. Users should migrate their deployments to use the `SECRET_KEY_BASE` variable directly.
 
 ## Running as an arbitrary user
 
