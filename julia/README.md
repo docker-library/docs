@@ -38,15 +38,19 @@ WARNING:
 
 -	[`1.11.3-windowsservercore-1809`, `1.11-windowsservercore-1809`, `1-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/docker-library/julia/blob/01eb09062a73c9d6f19a791065f1965a8a44208c/1.11/windows/windowsservercore-1809/Dockerfile)
 
--	[`1.10.7-bookworm`, `1.10-bookworm`](https://github.com/docker-library/julia/blob/20763c0a7c195e9a57eb7903ff60e8b6a811e4fe/1.10/bookworm/Dockerfile)
+-	[`1.10.8-bookworm`, `1.10-bookworm`](https://github.com/docker-library/julia/blob/0df7ecd4d078a59c152feeeecabece2e6e782603/1.10/bookworm/Dockerfile)
 
--	[`1.10.7-bullseye`, `1.10-bullseye`](https://github.com/docker-library/julia/blob/20763c0a7c195e9a57eb7903ff60e8b6a811e4fe/1.10/bullseye/Dockerfile)
+-	[`1.10.8-bullseye`, `1.10-bullseye`](https://github.com/docker-library/julia/blob/0df7ecd4d078a59c152feeeecabece2e6e782603/1.10/bullseye/Dockerfile)
 
--	[`1.10.7-windowsservercore-ltsc2025`, `1.10-windowsservercore-ltsc2025`](https://github.com/docker-library/julia/blob/cd2ed5528e361cc8c49316645554bd5963c82cf6/1.10/windows/windowsservercore-ltsc2025/Dockerfile)
+-	[`1.10.8-alpine3.21`, `1.10-alpine3.21`, `1.10.8-alpine`, `1.10-alpine`](https://github.com/docker-library/julia/blob/0df7ecd4d078a59c152feeeecabece2e6e782603/1.10/alpine3.21/Dockerfile)
 
--	[`1.10.7-windowsservercore-ltsc2022`, `1.10-windowsservercore-ltsc2022`](https://github.com/docker-library/julia/blob/20763c0a7c195e9a57eb7903ff60e8b6a811e4fe/1.10/windows/windowsservercore-ltsc2022/Dockerfile)
+-	[`1.10.8-alpine3.20`, `1.10-alpine3.20`](https://github.com/docker-library/julia/blob/0df7ecd4d078a59c152feeeecabece2e6e782603/1.10/alpine3.20/Dockerfile)
 
--	[`1.10.7-windowsservercore-1809`, `1.10-windowsservercore-1809`](https://github.com/docker-library/julia/blob/20763c0a7c195e9a57eb7903ff60e8b6a811e4fe/1.10/windows/windowsservercore-1809/Dockerfile)
+-	[`1.10.8-windowsservercore-ltsc2025`, `1.10-windowsservercore-ltsc2025`](https://github.com/docker-library/julia/blob/0df7ecd4d078a59c152feeeecabece2e6e782603/1.10/windows/windowsservercore-ltsc2025/Dockerfile)
+
+-	[`1.10.8-windowsservercore-ltsc2022`, `1.10-windowsservercore-ltsc2022`](https://github.com/docker-library/julia/blob/0df7ecd4d078a59c152feeeecabece2e6e782603/1.10/windows/windowsservercore-ltsc2022/Dockerfile)
+
+-	[`1.10.8-windowsservercore-1809`, `1.10-windowsservercore-1809`](https://github.com/docker-library/julia/blob/0df7ecd4d078a59c152feeeecabece2e6e782603/1.10/windows/windowsservercore-1809/Dockerfile)
 
 ## Shared Tags
 
@@ -63,18 +67,18 @@ WARNING:
 	-	[`1.11.3-windowsservercore-ltsc2022`](https://github.com/docker-library/julia/blob/01eb09062a73c9d6f19a791065f1965a8a44208c/1.11/windows/windowsservercore-ltsc2022/Dockerfile)
 	-	[`1.11.3-windowsservercore-1809`](https://github.com/docker-library/julia/blob/01eb09062a73c9d6f19a791065f1965a8a44208c/1.11/windows/windowsservercore-1809/Dockerfile)
 
--	`1.10.7`, `1.10`:
+-	`1.10.8`, `1.10`:
 
-	-	[`1.10.7-bookworm`](https://github.com/docker-library/julia/blob/20763c0a7c195e9a57eb7903ff60e8b6a811e4fe/1.10/bookworm/Dockerfile)
-	-	[`1.10.7-windowsservercore-ltsc2025`](https://github.com/docker-library/julia/blob/cd2ed5528e361cc8c49316645554bd5963c82cf6/1.10/windows/windowsservercore-ltsc2025/Dockerfile)
-	-	[`1.10.7-windowsservercore-ltsc2022`](https://github.com/docker-library/julia/blob/20763c0a7c195e9a57eb7903ff60e8b6a811e4fe/1.10/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`1.10.7-windowsservercore-1809`](https://github.com/docker-library/julia/blob/20763c0a7c195e9a57eb7903ff60e8b6a811e4fe/1.10/windows/windowsservercore-1809/Dockerfile)
+	-	[`1.10.8-bookworm`](https://github.com/docker-library/julia/blob/0df7ecd4d078a59c152feeeecabece2e6e782603/1.10/bookworm/Dockerfile)
+	-	[`1.10.8-windowsservercore-ltsc2025`](https://github.com/docker-library/julia/blob/0df7ecd4d078a59c152feeeecabece2e6e782603/1.10/windows/windowsservercore-ltsc2025/Dockerfile)
+	-	[`1.10.8-windowsservercore-ltsc2022`](https://github.com/docker-library/julia/blob/0df7ecd4d078a59c152feeeecabece2e6e782603/1.10/windows/windowsservercore-ltsc2022/Dockerfile)
+	-	[`1.10.8-windowsservercore-1809`](https://github.com/docker-library/julia/blob/0df7ecd4d078a59c152feeeecabece2e6e782603/1.10/windows/windowsservercore-1809/Dockerfile)
 
--	`1.10.7-windowsservercore`, `1.10-windowsservercore`:
+-	`1.10.8-windowsservercore`, `1.10-windowsservercore`:
 
-	-	[`1.10.7-windowsservercore-ltsc2025`](https://github.com/docker-library/julia/blob/cd2ed5528e361cc8c49316645554bd5963c82cf6/1.10/windows/windowsservercore-ltsc2025/Dockerfile)
-	-	[`1.10.7-windowsservercore-ltsc2022`](https://github.com/docker-library/julia/blob/20763c0a7c195e9a57eb7903ff60e8b6a811e4fe/1.10/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`1.10.7-windowsservercore-1809`](https://github.com/docker-library/julia/blob/20763c0a7c195e9a57eb7903ff60e8b6a811e4fe/1.10/windows/windowsservercore-1809/Dockerfile)
+	-	[`1.10.8-windowsservercore-ltsc2025`](https://github.com/docker-library/julia/blob/0df7ecd4d078a59c152feeeecabece2e6e782603/1.10/windows/windowsservercore-ltsc2025/Dockerfile)
+	-	[`1.10.8-windowsservercore-ltsc2022`](https://github.com/docker-library/julia/blob/0df7ecd4d078a59c152feeeecabece2e6e782603/1.10/windows/windowsservercore-ltsc2022/Dockerfile)
+	-	[`1.10.8-windowsservercore-1809`](https://github.com/docker-library/julia/blob/0df7ecd4d078a59c152feeeecabece2e6e782603/1.10/windows/windowsservercore-1809/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -143,6 +147,14 @@ For information about how to get Docker running on Windows, please see the relev
 
 -	[Windows Server Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_server)
 -	[Windows 10 Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)
+
+## `julia:<version>-alpine`
+
+This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+
+This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+
+To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 # License
 
