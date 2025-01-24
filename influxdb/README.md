@@ -24,29 +24,29 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.11`, `1.11.8`](https://github.com/influxdata/influxdata-docker/blob/e15ac5b4cdfdc6effe2da373fd8963d04c1cd583/influxdb/1.11/Dockerfile)
+-	[`1.11`, `1.11.8`](https://github.com/influxdata/influxdata-docker/blob/37d6b9bc4a1aa67689f68a362b7948ec312672c7/influxdb/1.11/Dockerfile)
 
--	[`1.11-alpine`, `1.11.8-alpine`](https://github.com/influxdata/influxdata-docker/blob/e15ac5b4cdfdc6effe2da373fd8963d04c1cd583/influxdb/1.11/alpine/Dockerfile)
+-	[`1.11-alpine`, `1.11.8-alpine`](https://github.com/influxdata/influxdata-docker/blob/37d6b9bc4a1aa67689f68a362b7948ec312672c7/influxdb/1.11/alpine/Dockerfile)
 
--	[`1.10-data`, `1.10.7-data`](https://github.com/influxdata/influxdata-docker/blob/e15ac5b4cdfdc6effe2da373fd8963d04c1cd583/influxdb/1.10/data/Dockerfile)
+-	[`1.10-data`, `1.10.8-data`](https://github.com/influxdata/influxdata-docker/blob/37d6b9bc4a1aa67689f68a362b7948ec312672c7/influxdb/1.10/data/Dockerfile)
 
--	[`1.10-data-alpine`, `1.10.7-data-alpine`](https://github.com/influxdata/influxdata-docker/blob/e15ac5b4cdfdc6effe2da373fd8963d04c1cd583/influxdb/1.10/data/alpine/Dockerfile)
+-	[`1.10-data-alpine`, `1.10.8-data-alpine`](https://github.com/influxdata/influxdata-docker/blob/37d6b9bc4a1aa67689f68a362b7948ec312672c7/influxdb/1.10/data/alpine/Dockerfile)
 
--	[`1.10-meta`, `1.10.7-meta`](https://github.com/influxdata/influxdata-docker/blob/e15ac5b4cdfdc6effe2da373fd8963d04c1cd583/influxdb/1.10/meta/Dockerfile)
+-	[`1.10-meta`, `1.10.8-meta`](https://github.com/influxdata/influxdata-docker/blob/37d6b9bc4a1aa67689f68a362b7948ec312672c7/influxdb/1.10/meta/Dockerfile)
 
--	[`1.10-meta-alpine`, `1.10.7-meta-alpine`](https://github.com/influxdata/influxdata-docker/blob/e15ac5b4cdfdc6effe2da373fd8963d04c1cd583/influxdb/1.10/meta/alpine/Dockerfile)
+-	[`1.10-meta-alpine`, `1.10.8-meta-alpine`](https://github.com/influxdata/influxdata-docker/blob/37d6b9bc4a1aa67689f68a362b7948ec312672c7/influxdb/1.10/meta/alpine/Dockerfile)
 
--	[`1.11-data`, `1.11.8-data`](https://github.com/influxdata/influxdata-docker/blob/e15ac5b4cdfdc6effe2da373fd8963d04c1cd583/influxdb/1.11/data/Dockerfile)
+-	[`1.11-data`, `1.11.8-data`](https://github.com/influxdata/influxdata-docker/blob/37d6b9bc4a1aa67689f68a362b7948ec312672c7/influxdb/1.11/data/Dockerfile)
 
--	[`1.11-data-alpine`, `1.11.8-data-alpine`](https://github.com/influxdata/influxdata-docker/blob/e15ac5b4cdfdc6effe2da373fd8963d04c1cd583/influxdb/1.11/data/alpine/Dockerfile)
+-	[`1.11-data-alpine`, `1.11.8-data-alpine`](https://github.com/influxdata/influxdata-docker/blob/37d6b9bc4a1aa67689f68a362b7948ec312672c7/influxdb/1.11/data/alpine/Dockerfile)
 
--	[`1.11-meta`, `1.11.8-meta`](https://github.com/influxdata/influxdata-docker/blob/e15ac5b4cdfdc6effe2da373fd8963d04c1cd583/influxdb/1.11/meta/Dockerfile)
+-	[`1.11-meta`, `1.11.8-meta`](https://github.com/influxdata/influxdata-docker/blob/37d6b9bc4a1aa67689f68a362b7948ec312672c7/influxdb/1.11/meta/Dockerfile)
 
--	[`1.11-meta-alpine`, `1.11.8-meta-alpine`](https://github.com/influxdata/influxdata-docker/blob/e15ac5b4cdfdc6effe2da373fd8963d04c1cd583/influxdb/1.11/meta/alpine/Dockerfile)
+-	[`1.11-meta-alpine`, `1.11.8-meta-alpine`](https://github.com/influxdata/influxdata-docker/blob/37d6b9bc4a1aa67689f68a362b7948ec312672c7/influxdb/1.11/meta/alpine/Dockerfile)
 
--	[`2`, `2.7`, `2.7.11`, `latest`](https://github.com/influxdata/influxdata-docker/blob/e15ac5b4cdfdc6effe2da373fd8963d04c1cd583/influxdb/2.7/Dockerfile)
+-	[`2`, `2.7`, `2.7.11`, `latest`](https://github.com/influxdata/influxdata-docker/blob/37d6b9bc4a1aa67689f68a362b7948ec312672c7/influxdb/2.7/Dockerfile)
 
--	[`2-alpine`, `2.7-alpine`, `2.7.11-alpine`, `alpine`](https://github.com/influxdata/influxdata-docker/blob/e15ac5b4cdfdc6effe2da373fd8963d04c1cd583/influxdb/2.7/alpine/Dockerfile)
+-	[`2-alpine`, `2.7-alpine`, `2.7.11-alpine`, `alpine`](https://github.com/influxdata/influxdata-docker/blob/37d6b9bc4a1aa67689f68a362b7948ec312672c7/influxdb/2.7/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
