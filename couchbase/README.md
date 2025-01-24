@@ -24,7 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.6.4`, `enterprise-7.6.4`, `enterprise`, `latest`](https://github.com/couchbase/docker/blob/9990e2cfabc94b37607e5666d9ef1eab69a397a6/enterprise/couchbase-server/7.6.4/Dockerfile)
+-	[`7.6.5`, `enterprise-7.6.5`, `enterprise`, `latest`](https://github.com/couchbase/docker/blob/ec16abff6f0551ced6c771bd5606a4392379dd31/enterprise/couchbase-server/7.6.5/Dockerfile)
 
 -	[`community-7.6.2`, `community`](https://github.com/couchbase/docker/blob/34bb6684dc575f4e0b8b0f16127f5d4188015d8d/community/couchbase-server/7.6.2/Dockerfile)
 
