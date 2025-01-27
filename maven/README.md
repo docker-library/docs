@@ -70,7 +70,7 @@ WARNING:
 
 -	[`3.9.9-amazoncorretto-11-alpine`, `3.9-amazoncorretto-11-alpine`, `3-amazoncorretto-11-alpine`](https://github.com/carlossg/docker-maven/blob/8db2ffe029454a39edce973ce06b21fcab59a4d5/amazoncorretto-11-alpine/Dockerfile)
 
--	[`3.9.9-amazoncorretto-11-debian`, `3.9.9-amazoncorretto-11-debian-bookworm`, `3.9-amazoncorretto-11-debian`, `3.9-amazoncorretto-11-debian-bookworm`, `3-amazoncorretto-11-debian`, `3-amazoncorretto-11-debian-bookworm`](https://github.com/carlossg/docker-maven/blob/e92e0e0e39d6783a474819f885b5b8414d84ad17/amazoncorretto-11-debian/Dockerfile)
+-	[`3.9.9-amazoncorretto-11-debian`, `3.9.9-amazoncorretto-11-debian-bookworm`, `3.9-amazoncorretto-11-debian`, `3.9-amazoncorretto-11-debian-bookworm`, `3-amazoncorretto-11-debian`, `3-amazoncorretto-11-debian-bookworm`](https://github.com/carlossg/docker-maven/blob/b5ddd7190544dd759fb71bf56b6105ffcf4ee6ad/amazoncorretto-11-debian/Dockerfile)
 
 -	[`3.9.9-amazoncorretto-17`, `3.9.9-amazoncorretto`, `3.9-amazoncorretto-17`, `3.9-amazoncorretto`, `3-amazoncorretto-17`, `3-amazoncorretto`, `amazoncorretto`](https://github.com/carlossg/docker-maven/blob/8cfe24baffa5b250f7bb2d31ce233fc28f3c4f20/amazoncorretto-17/Dockerfile)
 
@@ -78,7 +78,7 @@ WARNING:
 
 -	[`3.9.9-amazoncorretto-17-alpine`, `3.9-amazoncorretto-17-alpine`, `3-amazoncorretto-17-alpine`](https://github.com/carlossg/docker-maven/blob/8db2ffe029454a39edce973ce06b21fcab59a4d5/amazoncorretto-17-alpine/Dockerfile)
 
--	[`3.9.9-amazoncorretto-17-debian`, `3.9.9-amazoncorretto-17-debian-bookworm`, `3.9-amazoncorretto-17-debian`, `3.9-amazoncorretto-17-debian-bookworm`, `3-amazoncorretto-17-debian`, `3-amazoncorretto-17-debian-bookworm`](https://github.com/carlossg/docker-maven/blob/e92e0e0e39d6783a474819f885b5b8414d84ad17/amazoncorretto-17-debian/Dockerfile)
+-	[`3.9.9-amazoncorretto-17-debian`, `3.9.9-amazoncorretto-17-debian-bookworm`, `3.9-amazoncorretto-17-debian`, `3.9-amazoncorretto-17-debian-bookworm`, `3-amazoncorretto-17-debian`, `3-amazoncorretto-17-debian-bookworm`](https://github.com/carlossg/docker-maven/blob/b5ddd7190544dd759fb71bf56b6105ffcf4ee6ad/amazoncorretto-17-debian/Dockerfile)
 
 -	[`3.9.9-amazoncorretto-21`, `3.9-amazoncorretto-21`, `3-amazoncorretto-21`](https://github.com/carlossg/docker-maven/blob/8cfe24baffa5b250f7bb2d31ce233fc28f3c4f20/amazoncorretto-21/Dockerfile)
 
@@ -86,7 +86,7 @@ WARNING:
 
 -	[`3.9.9-amazoncorretto-21-alpine`, `3.9-amazoncorretto-21-alpine`, `3-amazoncorretto-21-alpine`](https://github.com/carlossg/docker-maven/blob/8db2ffe029454a39edce973ce06b21fcab59a4d5/amazoncorretto-21-alpine/Dockerfile)
 
--	[`3.9.9-amazoncorretto-21-debian`, `3.9.9-amazoncorretto-21-debian-bookworm`, `3.9-amazoncorretto-21-debian`, `3.9-amazoncorretto-21-debian-bookworm`, `3-amazoncorretto-21-debian`, `3-amazoncorretto-21-debian-bookworm`](https://github.com/carlossg/docker-maven/blob/e92e0e0e39d6783a474819f885b5b8414d84ad17/amazoncorretto-21-debian/Dockerfile)
+-	[`3.9.9-amazoncorretto-21-debian`, `3.9.9-amazoncorretto-21-debian-bookworm`, `3.9-amazoncorretto-21-debian`, `3.9-amazoncorretto-21-debian-bookworm`, `3-amazoncorretto-21-debian`, `3-amazoncorretto-21-debian-bookworm`](https://github.com/carlossg/docker-maven/blob/b5ddd7190544dd759fb71bf56b6105ffcf4ee6ad/amazoncorretto-21-debian/Dockerfile)
 
 -	[`3.9.9-amazoncorretto-23`, `3.9-amazoncorretto-23`, `3-amazoncorretto-23`](https://github.com/carlossg/docker-maven/blob/c4359a51cb0fe7bc7e552f3e039a0e77947bbffc/amazoncorretto-23/Dockerfile)
 
@@ -94,7 +94,7 @@ WARNING:
 
 -	[`3.9.9-amazoncorretto-23-alpine`, `3.9-amazoncorretto-23-alpine`, `3-amazoncorretto-23-alpine`](https://github.com/carlossg/docker-maven/blob/8db2ffe029454a39edce973ce06b21fcab59a4d5/amazoncorretto-23-alpine/Dockerfile)
 
--	[`3.9.9-amazoncorretto-23-debian`, `3.9.9-amazoncorretto-23-debian-bookworm`, `3.9-amazoncorretto-23-debian`, `3.9-amazoncorretto-23-debian-bookworm`, `3-amazoncorretto-23-debian`, `3-amazoncorretto-23-debian-bookworm`](https://github.com/carlossg/docker-maven/blob/e92e0e0e39d6783a474819f885b5b8414d84ad17/amazoncorretto-23-debian/Dockerfile)
+-	[`3.9.9-amazoncorretto-23-debian`, `3.9.9-amazoncorretto-23-debian-bookworm`, `3.9-amazoncorretto-23-debian`, `3.9-amazoncorretto-23-debian-bookworm`, `3-amazoncorretto-23-debian`, `3-amazoncorretto-23-debian-bookworm`](https://github.com/carlossg/docker-maven/blob/b5ddd7190544dd759fb71bf56b6105ffcf4ee6ad/amazoncorretto-23-debian/Dockerfile)
 
 -	[`3.9.9-amazoncorretto-8`, `3.9-amazoncorretto-8`, `3-amazoncorretto-8`](https://github.com/carlossg/docker-maven/blob/8cfe24baffa5b250f7bb2d31ce233fc28f3c4f20/amazoncorretto-8/Dockerfile)
 
@@ -102,7 +102,7 @@ WARNING:
 
 -	[`3.9.9-amazoncorretto-8-alpine`, `3.9-amazoncorretto-8-alpine`, `3-amazoncorretto-8-alpine`](https://github.com/carlossg/docker-maven/blob/8db2ffe029454a39edce973ce06b21fcab59a4d5/amazoncorretto-8-alpine/Dockerfile)
 
--	[`3.9.9-amazoncorretto-8-debian`, `3.9.9-amazoncorretto-8-debian-bookworm`, `3.9-amazoncorretto-8-debian`, `3.9-amazoncorretto-8-debian-bookworm`, `3-amazoncorretto-8-debian`, `3-amazoncorretto-8-debian-bookworm`](https://github.com/carlossg/docker-maven/blob/e92e0e0e39d6783a474819f885b5b8414d84ad17/amazoncorretto-8-debian/Dockerfile)
+-	[`3.9.9-amazoncorretto-8-debian`, `3.9.9-amazoncorretto-8-debian-bookworm`, `3.9-amazoncorretto-8-debian`, `3.9-amazoncorretto-8-debian-bookworm`, `3-amazoncorretto-8-debian`, `3-amazoncorretto-8-debian-bookworm`](https://github.com/carlossg/docker-maven/blob/b5ddd7190544dd759fb71bf56b6105ffcf4ee6ad/amazoncorretto-8-debian/Dockerfile)
 
 -	[`3.9.9-sapmachine-11`, `3.9-sapmachine-11`, `3-sapmachine-11`](https://github.com/carlossg/docker-maven/blob/8cfe24baffa5b250f7bb2d31ce233fc28f3c4f20/sapmachine-11/Dockerfile)
 
