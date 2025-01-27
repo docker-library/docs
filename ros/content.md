@@ -255,7 +255,7 @@ services:
 
 ## ROS 2
 
-[Index](https://docs.ros.org/doc/ros2/): ROS 2 Documentation  
+[Index](https://docs.ros.org): ROS 2 Documentation  
 [Design](https://design.ros2.org/): ROS 2 Design Articles
 
 ## ROS 1
