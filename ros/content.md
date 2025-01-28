@@ -205,7 +205,7 @@ $ docker-compose rm
 
 ### ROS 1 Bridge
 
-To ease ROS 2 migration, [`ros1_bridge`](https://index.ros.org/p/ros1_bridge/github-ros2-ros1_bridge) is a ROS 2 package that provides bidirectional communication between ROS 1 and ROS 2. As a minimal example, given the ROS 2 Dockerfile above, we'll create the ROS 1 equivalent below, and name the Dockerfile appropriately.
+To ease ROS 2 migration, [`ros1_bridge`](https://index.ros.org/p/ros1_bridge) is a ROS 2 package that provides bidirectional communication between ROS 1 and ROS 2. As a minimal example, given the ROS 2 Dockerfile above, we'll create the ROS 1 equivalent below, and name the Dockerfile appropriately.
 
 ```dockerfile
 FROM %%IMAGE%%:noetic
@@ -250,12 +250,12 @@ services:
 [Q&A](https://answers.ros.org/questions/): Ask questions. Get answers  
 [Forums](https://discourse.ros.org/): Hear the latest discussions  
 [Blog](http://www.ros.org/news/): Stay up-to-date  
-[Packages](https://index.ros.org/packages/): Discover indexed packages  
+[Packages](https://index.ros.org/?search_packages=true): Discover indexed packages  
 [OSRF](https://www.osrfoundation.org/): Open Source Robotics Foundation
 
 ## ROS 2
 
-[Index](https://index.ros.org/doc/ros2/): ROS 2 Documentation  
+[Index](https://docs.ros.org): ROS 2 Documentation  
 [Design](https://design.ros2.org/): ROS 2 Design Articles
 
 ## ROS 1
