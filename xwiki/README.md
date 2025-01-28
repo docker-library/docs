@@ -24,11 +24,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`16`, `16.10`, `16.10.2`, `16-mysql-tomcat`, `16.10-mysql-tomcat`, `16.10.2-mysql-tomcat`, `mysql-tomcat`, `lts-mysql-tomcat`, `lts-mysql`, `lts`, `stable-mysql-tomcat`, `stable-mysql`, `stable`, `latest`](https://github.com/xwiki-contrib/docker-xwiki/blob/beed20b75ae4c952be757cec1502151d2d2a7939/16/mysql-tomcat/Dockerfile)
+-	[`16`, `16.10`, `16.10.3`, `16-mysql-tomcat`, `16.10-mysql-tomcat`, `16.10.3-mysql-tomcat`, `mysql-tomcat`, `lts-mysql-tomcat`, `lts-mysql`, `lts`, `stable-mysql-tomcat`, `stable-mysql`, `stable`, `latest`](https://github.com/xwiki-contrib/docker-xwiki/blob/41942e37e12947c9f0b20f132c77353977fe17e1/16/mysql-tomcat/Dockerfile)
 
--	[`16-postgres-tomcat`, `16.10-postgres-tomcat`, `16.10.2-postgres-tomcat`, `postgres-tomcat`, `lts-postgres-tomcat`, `lts-postgres`, `stable-postgres-tomcat`, `stable-postgres`](https://github.com/xwiki-contrib/docker-xwiki/blob/beed20b75ae4c952be757cec1502151d2d2a7939/16/postgres-tomcat/Dockerfile)
+-	[`16-postgres-tomcat`, `16.10-postgres-tomcat`, `16.10.3-postgres-tomcat`, `postgres-tomcat`, `lts-postgres-tomcat`, `lts-postgres`, `stable-postgres-tomcat`, `stable-postgres`](https://github.com/xwiki-contrib/docker-xwiki/blob/41942e37e12947c9f0b20f132c77353977fe17e1/16/postgres-tomcat/Dockerfile)
 
--	[`16-mariadb-tomcat`, `16.10-mariadb-tomcat`, `16.10.2-mariadb-tomcat`, `mariadb-tomcat`, `lts-mariadb-tomcat`, `lts-mariadb`, `stable-mariadb-tomcat`, `stable-mariadb`](https://github.com/xwiki-contrib/docker-xwiki/blob/beed20b75ae4c952be757cec1502151d2d2a7939/16/mariadb-tomcat/Dockerfile)
+-	[`16-mariadb-tomcat`, `16.10-mariadb-tomcat`, `16.10.3-mariadb-tomcat`, `mariadb-tomcat`, `lts-mariadb-tomcat`, `lts-mariadb`, `stable-mariadb-tomcat`, `stable-mariadb`](https://github.com/xwiki-contrib/docker-xwiki/blob/41942e37e12947c9f0b20f132c77353977fe17e1/16/mariadb-tomcat/Dockerfile)
 
 -	[`15`, `15.10`, `15.10.16`, `15-mysql-tomcat`, `15.10-mysql-tomcat`, `15.10.16-mysql-tomcat`](https://github.com/xwiki-contrib/docker-xwiki/blob/fab7d75641c1be35a39ce4895178946a16a14f9b/15/mysql-tomcat/Dockerfile)
 
