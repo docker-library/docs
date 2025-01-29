@@ -294,7 +294,7 @@ RUN apt-get update && apt-get install -y \
     rm -rf /var/lib/apt/lists/*
 
 # launch ros package
-CMD ["roslaunch", "roscpp_tutorials", "talker_listener_launch"]
+CMD ["roslaunch", "roscpp_tutorials", "talker_listener.launch"]
 ```
 
 The compose file bellow spawns services for both talker listener demos while connecting the two via a dynamic bridge. You may then view the log output from both pairs of talker and listener nodes cross talking over the `/chatter` topic.
