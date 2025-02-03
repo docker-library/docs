@@ -30,7 +30,7 @@ WARNING:
 
 -	[`27.5.1-cli`, `27.5-cli`, `27-cli`, `cli`, `27.5.1-cli-alpine3.21`](https://github.com/docker-library/docker/blob/9af9a06de75a33816897ae7285fcb5104c5d9f83/27/cli/Dockerfile)
 
--	[`27.5.1-dind`, `27.5-dind`, `27-dind`, `dind`, `27.5.1-dind-alpine3.21`, `27.5.1`, `27.5`, `27`, `latest`, `27.5.1-alpine3.21`](https://github.com/docker-library/docker/blob/03ecb33955c16b34b7d52c7563f05c736f159875/27/dind/Dockerfile)
+-	[`27.5.1-dind`, `27.5-dind`, `27-dind`, `dind`, `27.5.1-dind-alpine3.21`, `27.5.1`, `27.5`, `27`, `latest`, `27.5.1-alpine3.21`](https://github.com/docker-library/docker/blob/fbb79dd2512681b42f6f0a3a82543c29640b85ce/27/dind/Dockerfile)
 
 -	[`27.5.1-dind-rootless`, `27.5-dind-rootless`, `27-dind-rootless`, `dind-rootless`](https://github.com/docker-library/docker/blob/03ecb33955c16b34b7d52c7563f05c736f159875/27/dind-rootless/Dockerfile)
 
