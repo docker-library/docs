@@ -28,6 +28,8 @@ WARNING:
 
 ## Simple Tags
 
+-	[`8.0.5-rc1-noble`, `8.0-rc-noble`](https://github.com/docker-library/mongo/blob/fe2a707f3b58ac1a210100ef6f316fdcd9ccd98b/8.0-rc/Dockerfile)
+
 -	[`8.0.4-noble`, `8.0-noble`, `8-noble`, `noble`](https://github.com/docker-library/mongo/blob/3eed4008b42e739dc9ed4234d3da682462ffdc9c/8.0/Dockerfile)
 
 -	[`8.0.4-windowsservercore-ltsc2025`, `8.0-windowsservercore-ltsc2025`, `8-windowsservercore-ltsc2025`, `windowsservercore-ltsc2025`](https://github.com/docker-library/mongo/blob/55d140f1274a7d2dbe499797b0c6a4f4fb718cea/8.0/windows/windowsservercore-ltsc2025/Dockerfile)
@@ -77,6 +79,10 @@ WARNING:
 -	[`5.0.31-nanoserver-1809`, `5.0-nanoserver-1809`, `5-nanoserver-1809`](https://github.com/docker-library/mongo/blob/df259e20c2b06ad20465701ba44f091ad7376734/5.0/windows/nanoserver-1809/Dockerfile)
 
 ## Shared Tags
+
+-	`8.0.5-rc1`, `8.0-rc`:
+
+	-	[`8.0.5-rc1-noble`](https://github.com/docker-library/mongo/blob/fe2a707f3b58ac1a210100ef6f316fdcd9ccd98b/8.0-rc/Dockerfile)
 
 -	`8.0.4`, `8.0`, `8`, `latest`:
 
