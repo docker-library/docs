@@ -24,19 +24,19 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.1.0-beta.3`, `4.1-rc`](https://github.com/docker-library/rabbitmq/blob/a6e24f2c3c34229c7ab622c81ba93ae02f244f36/4.1-rc/ubuntu/Dockerfile)
+-	[`4.1.0-beta.3`, `4.1-rc`](https://github.com/docker-library/rabbitmq/blob/50712c727b66a322dc7f399c7d7e6a2e71f1a991/4.1-rc/ubuntu/Dockerfile)
 
 -	[`4.1.0-beta.3-management`, `4.1-rc-management`](https://github.com/docker-library/rabbitmq/blob/c0dcc40c9bce4bb6a826a61d250a2aeb0fa35416/4.1-rc/ubuntu/management/Dockerfile)
 
--	[`4.1.0-beta.3-alpine`, `4.1-rc-alpine`](https://github.com/docker-library/rabbitmq/blob/a6e24f2c3c34229c7ab622c81ba93ae02f244f36/4.1-rc/alpine/Dockerfile)
+-	[`4.1.0-beta.3-alpine`, `4.1-rc-alpine`](https://github.com/docker-library/rabbitmq/blob/50712c727b66a322dc7f399c7d7e6a2e71f1a991/4.1-rc/alpine/Dockerfile)
 
 -	[`4.1.0-beta.3-management-alpine`, `4.1-rc-management-alpine`](https://github.com/docker-library/rabbitmq/blob/c0dcc40c9bce4bb6a826a61d250a2aeb0fa35416/4.1-rc/alpine/management/Dockerfile)
 
--	[`4.0.5`, `4.0`, `4`, `latest`](https://github.com/docker-library/rabbitmq/blob/a6e24f2c3c34229c7ab622c81ba93ae02f244f36/4.0/ubuntu/Dockerfile)
+-	[`4.0.5`, `4.0`, `4`, `latest`](https://github.com/docker-library/rabbitmq/blob/4a68131a960e8a352eac238bfd4a9d869bc0562d/4.0/ubuntu/Dockerfile)
 
 -	[`4.0.5-management`, `4.0-management`, `4-management`, `management`](https://github.com/docker-library/rabbitmq/blob/36e4d246e934a96b1c3a920e398f96434f3fc34c/4.0/ubuntu/management/Dockerfile)
 
--	[`4.0.5-alpine`, `4.0-alpine`, `4-alpine`, `alpine`](https://github.com/docker-library/rabbitmq/blob/a6e24f2c3c34229c7ab622c81ba93ae02f244f36/4.0/alpine/Dockerfile)
+-	[`4.0.5-alpine`, `4.0-alpine`, `4-alpine`, `alpine`](https://github.com/docker-library/rabbitmq/blob/4a68131a960e8a352eac238bfd4a9d869bc0562d/4.0/alpine/Dockerfile)
 
 -	[`4.0.5-management-alpine`, `4.0-management-alpine`, `4-management-alpine`, `management-alpine`](https://github.com/docker-library/rabbitmq/blob/36e4d246e934a96b1c3a920e398f96434f3fc34c/4.0/alpine/management/Dockerfile)
 
