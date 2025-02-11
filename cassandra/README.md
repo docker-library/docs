@@ -28,11 +28,11 @@ WARNING:
 
 -	[`4.1.8`, `4.1`, `4`, `4.1.8-jammy`, `4.1-jammy`, `4-jammy`](https://github.com/docker-library/cassandra/blob/f49e80e172f29e2cad0a9acd054806d9709a4205/4.1/Dockerfile)
 
--	[`4.0.16`, `4.0`, `4.0.16-jammy`, `4.0-jammy`](https://github.com/docker-library/cassandra/blob/c4de505e25eb89ec5a0578dd693430bf3602b2e1/4.0/Dockerfile)
+-	[`4.0.17`, `4.0`, `4.0.17-jammy`, `4.0-jammy`](https://github.com/docker-library/cassandra/blob/8b58b84f373e48382e49d59acd0b544b33b2c034/4.0/Dockerfile)
 
--	[`3.11.18`, `3.11`, `3`, `3.11.18-jammy`, `3.11-jammy`, `3-jammy`](https://github.com/docker-library/cassandra/blob/34424ed79ebd85603a14bda2a69d36a377bebbfc/3.11/Dockerfile)
+-	[`3.11.19`, `3.11`, `3`, `3.11.19-jammy`, `3.11-jammy`, `3-jammy`](https://github.com/docker-library/cassandra/blob/011007d5b4f1b8e73835366ebb0a85ee89c29436/3.11/Dockerfile)
 
--	[`3.0.31`, `3.0`, `3.0.31-jammy`, `3.0-jammy`](https://github.com/docker-library/cassandra/blob/e367aabb74d1249800e5cf94284183078d0a3a2c/3.0/Dockerfile)
+-	[`3.0.32`, `3.0`, `3.0.32-jammy`, `3.0-jammy`](https://github.com/docker-library/cassandra/blob/d47ed59f99316e94a333126a10db20a440d4642d/3.0/Dockerfile)
 
 # Quick reference (cont.)
 
