@@ -17,7 +17,7 @@ WARNING:
 # Quick reference
 
 -	**Maintained by**:  
-	[Aerospike, Inc.](https://github.com/aerospike/aerospike-server-enterprise.docker)
+	[Aerospike, Inc.](https://github.com/aerospike/aerospike-server.docker)
 
 -	**Where to get help**:  
 	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
@@ -31,7 +31,7 @@ WARNING:
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[the Aerospike Forums](https://discuss.aerospike.com) or [GitHub](https://github.com/aerospike/aerospike-server-enterprise.docker/issues)
+	[the Aerospike Forums](https://discuss.aerospike.com) or [GitHub](https://github.com/aerospike/aerospike-server.docker/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/aerospike/), [`arm64v8`](https://hub.docker.com/r/arm64v8/aerospike/)
