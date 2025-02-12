@@ -28,6 +28,16 @@ WARNING:
 
 ## Simple Tags
 
+-	[`3.11-7.3.18-bookworm`, `3.11-7.3-bookworm`, `3.11-7-bookworm`, `3.11-bookworm`](https://github.com/docker-library/pypy/blob/a1c6fd6d9e1cf36ca056c9d8326019d4c1b39e9a/3.11/bookworm/Dockerfile)
+
+-	[`3.11-7.3.18-slim-bookworm`, `3.11-7.3-slim-bookworm`, `3.11-7-slim-bookworm`, `3.11-slim-bookworm`](https://github.com/docker-library/pypy/blob/a1c6fd6d9e1cf36ca056c9d8326019d4c1b39e9a/3.11/slim-bookworm/Dockerfile)
+
+-	[`3.11-7.3.18-windowsservercore-ltsc2025`, `3.11-7.3-windowsservercore-ltsc2025`, `3.11-7-windowsservercore-ltsc2025`, `3.11-windowsservercore-ltsc2025`](https://github.com/docker-library/pypy/blob/a1c6fd6d9e1cf36ca056c9d8326019d4c1b39e9a/3.11/windows/windowsservercore-ltsc2025/Dockerfile)
+
+-	[`3.11-7.3.18-windowsservercore-ltsc2022`, `3.11-7.3-windowsservercore-ltsc2022`, `3.11-7-windowsservercore-ltsc2022`, `3.11-windowsservercore-ltsc2022`](https://github.com/docker-library/pypy/blob/a1c6fd6d9e1cf36ca056c9d8326019d4c1b39e9a/3.11/windows/windowsservercore-ltsc2022/Dockerfile)
+
+-	[`3.11-7.3.18-windowsservercore-1809`, `3.11-7.3-windowsservercore-1809`, `3.11-7-windowsservercore-1809`, `3.11-windowsservercore-1809`](https://github.com/docker-library/pypy/blob/a1c6fd6d9e1cf36ca056c9d8326019d4c1b39e9a/3.11/windows/windowsservercore-1809/Dockerfile)
+
 -	[`3.10-7.3.18-bookworm`, `3.10-7.3-bookworm`, `3.10-7-bookworm`, `3.10-bookworm`, `3-7.3.18-bookworm`, `3-7.3-bookworm`, `3-7-bookworm`, `3-bookworm`, `bookworm`](https://github.com/docker-library/pypy/blob/fd7662f2fa3596801320489e5880752d7537c65d/3.10/bookworm/Dockerfile)
 
 -	[`3.10-7.3.18-slim-bookworm`, `3.10-7.3-slim-bookworm`, `3.10-7-slim-bookworm`, `3.10-slim-bookworm`, `3-7.3.18-slim-bookworm`, `3-7.3-slim-bookworm`, `3-7-slim-bookworm`, `3-slim-bookworm`, `slim-bookworm`](https://github.com/docker-library/pypy/blob/fd7662f2fa3596801320489e5880752d7537c65d/3.10/slim-bookworm/Dockerfile)
@@ -57,6 +67,12 @@ WARNING:
 -	[`2.7-7.3.18-windowsservercore-1809`, `2.7-7.3-windowsservercore-1809`, `2.7-7-windowsservercore-1809`, `2.7-windowsservercore-1809`, `2-7.3.18-windowsservercore-1809`, `2-7.3-windowsservercore-1809`, `2-7-windowsservercore-1809`, `2-windowsservercore-1809`](https://github.com/docker-library/pypy/blob/2251547621d1c4b704aeb2135ca8a8b0a188c02b/2.7/windows/windowsservercore-1809/Dockerfile)
 
 ## Shared Tags
+
+-	`3.11-7.3.18`, `3.11-7.3`, `3.11-7`, `3.11`, `3.11-7.3.18-windowsservercore`, `3.11-7.3-windowsservercore`, `3.11-7-windowsservercore`, `3.11-windowsservercore`:
+
+	-	[`3.11-7.3.18-windowsservercore-ltsc2025`](https://github.com/docker-library/pypy/blob/a1c6fd6d9e1cf36ca056c9d8326019d4c1b39e9a/3.11/windows/windowsservercore-ltsc2025/Dockerfile)
+	-	[`3.11-7.3.18-windowsservercore-ltsc2022`](https://github.com/docker-library/pypy/blob/a1c6fd6d9e1cf36ca056c9d8326019d4c1b39e9a/3.11/windows/windowsservercore-ltsc2022/Dockerfile)
+	-	[`3.11-7.3.18-windowsservercore-1809`](https://github.com/docker-library/pypy/blob/a1c6fd6d9e1cf36ca056c9d8326019d4c1b39e9a/3.11/windows/windowsservercore-1809/Dockerfile)
 
 -	`3.10-7.3.18`, `3.10-7.3`, `3.10-7`, `3.10`, `3-7.3.18`, `3-7.3`, `3-7`, `3`, `latest`:
 

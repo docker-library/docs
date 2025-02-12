@@ -72,6 +72,12 @@ WARNING:
 
 -	[`oracular`, `24.10`](https://github.com/docker-library/buildpack-deps/blob/f24f02bc0fda57d7f0e30b205df4a38114712b0a/ubuntu/oracular/Dockerfile)
 
+-	[`plucky-curl`, `25.04-curl`](https://github.com/docker-library/buildpack-deps/blob/ab3ae04e943ecb240a9691dfa1de219b4a3e32a0/ubuntu/plucky/curl/Dockerfile)
+
+-	[`plucky-scm`, `25.04-scm`](https://github.com/docker-library/buildpack-deps/blob/ab3ae04e943ecb240a9691dfa1de219b4a3e32a0/ubuntu/plucky/scm/Dockerfile)
+
+-	[`plucky`, `25.04`](https://github.com/docker-library/buildpack-deps/blob/ab3ae04e943ecb240a9691dfa1de219b4a3e32a0/ubuntu/plucky/Dockerfile)
+
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
