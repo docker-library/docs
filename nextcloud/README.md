@@ -28,23 +28,17 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`28.0.14-apache`, `28.0-apache`, `28-apache`, `28.0.14`, `28.0`, `28`](https://github.com/nextcloud/docker/blob/a43854ae5c7c6eeb327d1fc82d020d7ea21bbb33/28/apache/Dockerfile)
+-	[`29.0.12-apache`, `29.0-apache`, `29-apache`, `29.0.12`, `29.0`, `29`](https://github.com/nextcloud/docker/blob/4f691770aee32e738f9c3d2639538f644b0c5728/29/apache/Dockerfile)
 
--	[`28.0.14-fpm`, `28.0-fpm`, `28-fpm`](https://github.com/nextcloud/docker/blob/a43854ae5c7c6eeb327d1fc82d020d7ea21bbb33/28/fpm/Dockerfile)
+-	[`29.0.12-fpm`, `29.0-fpm`, `29-fpm`](https://github.com/nextcloud/docker/blob/4f691770aee32e738f9c3d2639538f644b0c5728/29/fpm/Dockerfile)
 
--	[`28.0.14-fpm-alpine`, `28.0-fpm-alpine`, `28-fpm-alpine`](https://github.com/nextcloud/docker/blob/a43854ae5c7c6eeb327d1fc82d020d7ea21bbb33/28/fpm-alpine/Dockerfile)
+-	[`29.0.12-fpm-alpine`, `29.0-fpm-alpine`, `29-fpm-alpine`](https://github.com/nextcloud/docker/blob/4f691770aee32e738f9c3d2639538f644b0c5728/29/fpm-alpine/Dockerfile)
 
--	[`29.0.11-apache`, `29.0-apache`, `29-apache`, `29.0.11`, `29.0`, `29`](https://github.com/nextcloud/docker/blob/a43854ae5c7c6eeb327d1fc82d020d7ea21bbb33/29/apache/Dockerfile)
+-	[`30.0.6-apache`, `30.0-apache`, `30-apache`, `apache`, `stable-apache`, `production-apache`, `30.0.6`, `30.0`, `30`, `latest`, `stable`, `production`](https://github.com/nextcloud/docker/blob/4f691770aee32e738f9c3d2639538f644b0c5728/30/apache/Dockerfile)
 
--	[`29.0.11-fpm`, `29.0-fpm`, `29-fpm`](https://github.com/nextcloud/docker/blob/a43854ae5c7c6eeb327d1fc82d020d7ea21bbb33/29/fpm/Dockerfile)
+-	[`30.0.6-fpm`, `30.0-fpm`, `30-fpm`, `fpm`, `stable-fpm`, `production-fpm`](https://github.com/nextcloud/docker/blob/4f691770aee32e738f9c3d2639538f644b0c5728/30/fpm/Dockerfile)
 
--	[`29.0.11-fpm-alpine`, `29.0-fpm-alpine`, `29-fpm-alpine`](https://github.com/nextcloud/docker/blob/a43854ae5c7c6eeb327d1fc82d020d7ea21bbb33/29/fpm-alpine/Dockerfile)
-
--	[`30.0.5-apache`, `30.0-apache`, `30-apache`, `apache`, `stable-apache`, `production-apache`, `30.0.5`, `30.0`, `30`, `latest`, `stable`, `production`](https://github.com/nextcloud/docker/blob/a43854ae5c7c6eeb327d1fc82d020d7ea21bbb33/30/apache/Dockerfile)
-
--	[`30.0.5-fpm`, `30.0-fpm`, `30-fpm`, `fpm`, `stable-fpm`, `production-fpm`](https://github.com/nextcloud/docker/blob/a43854ae5c7c6eeb327d1fc82d020d7ea21bbb33/30/fpm/Dockerfile)
-
--	[`30.0.5-fpm-alpine`, `30.0-fpm-alpine`, `30-fpm-alpine`, `fpm-alpine`, `stable-fpm-alpine`, `production-fpm-alpine`](https://github.com/nextcloud/docker/blob/a43854ae5c7c6eeb327d1fc82d020d7ea21bbb33/30/fpm-alpine/Dockerfile)
+-	[`30.0.6-fpm-alpine`, `30.0-fpm-alpine`, `30-fpm-alpine`, `fpm-alpine`, `stable-fpm-alpine`, `production-fpm-alpine`](https://github.com/nextcloud/docker/blob/4f691770aee32e738f9c3d2639538f644b0c5728/30/fpm-alpine/Dockerfile)
 
 # Quick reference (cont.)
 
