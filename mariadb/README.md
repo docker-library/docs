@@ -26,13 +26,13 @@ Also see the ["Getting Help with MariaDB" article on the MariaDB Knowledge Base]
 
 # Supported tags and respective `Dockerfile` links
 
--	[`11.7.1-ubi9-rc`, `11.7-ubi9-rc`, `11.7.1-ubi-rc`, `11.7-ubi-rc`](https://github.com/MariaDB/mariadb-docker/blob/a6b360fc45b1a8fcd63b87ab69d4ce43566a7c06/11.7-ubi/Dockerfile)
+-	[`11.8.1-ubi9-rc`, `11.8-ubi9-rc`, `11.8.1-ubi-rc`, `11.8-ubi-rc`](https://github.com/MariaDB/mariadb-docker/blob/2d5103917774c4c53ec6bf3c6fdfc7b210e85690/11.8-ubi/Dockerfile)
 
--	[`11.7.1-noble-rc`, `11.7-noble-rc`, `11.7.1-rc`, `11.7-rc`](https://github.com/MariaDB/mariadb-docker/blob/a6b360fc45b1a8fcd63b87ab69d4ce43566a7c06/11.7/Dockerfile)
+-	[`11.8.1-noble-rc`, `11.8-noble-rc`, `11.8.1-rc`, `11.8-rc`](https://github.com/MariaDB/mariadb-docker/blob/2d5103917774c4c53ec6bf3c6fdfc7b210e85690/11.8/Dockerfile)
 
--	[`11.6.2-ubi9`, `11.6-ubi9`, `11-ubi9`, `11.6.2-ubi`, `11.6-ubi`, `11-ubi`](https://github.com/MariaDB/mariadb-docker/blob/292b81d08eaab23d8bd501171e570ea0636b0b82/11.6-ubi/Dockerfile)
+-	[`11.7.2-ubi9`, `11.7-ubi9`, `11-ubi9`, `11.7.2-ubi`, `11.7-ubi`, `11-ubi`](https://github.com/MariaDB/mariadb-docker/blob/853447019725b35685d5ec3c007096a266399bea/11.7-ubi/Dockerfile)
 
--	[`11.6.2-noble`, `11.6-noble`, `11-noble`, `noble`, `11.6.2`, `11.6`, `11`, `latest`](https://github.com/MariaDB/mariadb-docker/blob/292b81d08eaab23d8bd501171e570ea0636b0b82/11.6/Dockerfile)
+-	[`11.7.2-noble`, `11.7-noble`, `11-noble`, `noble`, `11.7.2`, `11.7`, `11`, `latest`](https://github.com/MariaDB/mariadb-docker/blob/853447019725b35685d5ec3c007096a266399bea/11.7/Dockerfile)
 
 -	[`11.4.5-ubi9`, `11.4-ubi9`, `lts-ubi9`, `11.4.5-ubi`, `11.4-ubi`, `lts-ubi`](https://github.com/MariaDB/mariadb-docker/blob/3bfeae408bde492aad0444cbb13d55a70ceec6e5/11.4-ubi/Dockerfile)
 
