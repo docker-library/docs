@@ -24,7 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.9.9`, `5.9`, `latest`](https://github.com/crate/docker-crate/blob/5972d59d5a2521ad29ae2f3edd9edad2697e36be/Dockerfile)
+-	[`5.10.1`, `5.10`, `latest`](https://github.com/crate/docker-crate/blob/a67533302803d0ae05db2e45130f61763f3b4ba4/Dockerfile)
+
+-	[`5.9.10`, `5.9`](https://github.com/crate/docker-crate/blob/dfde86f302893f16d6bdfb029ca3895444b9d6e8/Dockerfile)
 
 -	[`5.8.6`, `5.8`](https://github.com/crate/docker-crate/blob/b55d16afc32597fca2ee19a1b3e8803a98c1c946/Dockerfile)
 
