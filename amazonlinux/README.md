@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `ppc64le` builds of [the `amazonlinux` official image](https://hub.docker.com/_/amazonlinux) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,11 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2023`, `latest`, `2023.6.20250203.1`](https://github.com/amazonlinux/container-images/blob/dcd3593bb82fac820a4dc25d028d8e46c2424bcb/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `ppc64le` ARCHITECTURE
 
--	[`2`, `2.0.20250201.0`](https://github.com/amazonlinux/container-images/blob/35791b0faed7f8ba07b37a377e9bab1bcfa496f3/Dockerfile)
-
--	[`1`, `2018.03`, `2018.03.0.20231218.0`](https://github.com/amazonlinux/container-images/blob/cfb41ad1c7624786ea10f60c15ce9c117c4da3b6/Dockerfile)
+[![ppc64le/amazonlinux build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/ppc64le/job/amazonlinux.svg?label=ppc64le/amazonlinux%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/ppc64le/job/amazonlinux/)
 
 # Quick reference (cont.)
 
