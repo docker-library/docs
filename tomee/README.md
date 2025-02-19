@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm64v8` builds of [the `tomee` official image](https://hub.docker.com/_/tomee) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -32,14 +34,6 @@ WARNING:
 
 -	[`10.0.0-jre21-Temurin-ubuntu-webprofile`, `10.0.0-Temurin-ubuntu-webprofile`, `10.0.0-jre21-ubuntu-webprofile`, `10.0.0-ubuntu-webprofile`, `10.0.0-jre21-Temurin-webprofile`, `10.0.0-Temurin-webprofile`, `10.0.0-jre21-webprofile`, `10.0.0-webprofile`, `10.0-jre21-Temurin-ubuntu-webprofile`, `10.0-Temurin-ubuntu-webprofile`, `10.0-jre21-ubuntu-webprofile`, `10.0-ubuntu-webprofile`, `10.0-jre21-Temurin-webprofile`, `10.0-Temurin-webprofile`, `10.0-jre21-webprofile`, `10.0-webprofile`, `10-jre21-Temurin-ubuntu-webprofile`, `10-Temurin-ubuntu-webprofile`, `10-jre21-ubuntu-webprofile`, `10-ubuntu-webprofile`, `10-jre21-Temurin-webprofile`, `10-Temurin-webprofile`, `10-jre21-webprofile`, `10-webprofile`, `jre21-Temurin-ubuntu-webprofile`, `Temurin-ubuntu-webprofile`, `jre21-ubuntu-webprofile`, `ubuntu-webprofile`, `jre21-Temurin-webprofile`, `Temurin-webprofile`, `jre21-webprofile`, `webprofile`](https://github.com/tomitribe/docker-tomee/blob/6c9d8f07968c634f662f307d257bc7e827237296/TomEE-10.0/jre21/Temurin/ubuntu/webprofile/Dockerfile)
 
--	[`10.0.0-jre21-Temurin-alpine-microprofile`, `10.0.0-Temurin-alpine-microprofile`, `10.0.0-jre21-alpine-microprofile`, `10.0.0-alpine-microprofile`, `10.0.0-jre21-Temurin-alpine`, `10.0.0-Temurin-alpine`, `10.0.0-jre21-alpine`, `10.0.0-alpine`, `10.0-jre21-Temurin-alpine-microprofile`, `10.0-Temurin-alpine-microprofile`, `10.0-jre21-alpine-microprofile`, `10.0-alpine-microprofile`, `10.0-jre21-Temurin-alpine`, `10.0-Temurin-alpine`, `10.0-jre21-alpine`, `10.0-alpine`, `10-jre21-Temurin-alpine-microprofile`, `10-Temurin-alpine-microprofile`, `10-jre21-alpine-microprofile`, `10-alpine-microprofile`, `10-jre21-Temurin-alpine`, `10-Temurin-alpine`, `10-jre21-alpine`, `10-alpine`, `jre21-Temurin-alpine-microprofile`, `Temurin-alpine-microprofile`, `jre21-alpine-microprofile`, `alpine-microprofile`, `jre21-Temurin-alpine`, `Temurin-alpine`, `jre21-alpine`, `alpine`](https://github.com/tomitribe/docker-tomee/blob/6c9d8f07968c634f662f307d257bc7e827237296/TomEE-10.0/jre21/Temurin/alpine/microprofile/Dockerfile)
-
--	[`10.0.0-jre21-Temurin-alpine-plume`, `10.0.0-Temurin-alpine-plume`, `10.0.0-jre21-alpine-plume`, `10.0.0-alpine-plume`, `10.0-jre21-Temurin-alpine-plume`, `10.0-Temurin-alpine-plume`, `10.0-jre21-alpine-plume`, `10.0-alpine-plume`, `10-jre21-Temurin-alpine-plume`, `10-Temurin-alpine-plume`, `10-jre21-alpine-plume`, `10-alpine-plume`, `jre21-Temurin-alpine-plume`, `Temurin-alpine-plume`, `jre21-alpine-plume`, `alpine-plume`](https://github.com/tomitribe/docker-tomee/blob/6c9d8f07968c634f662f307d257bc7e827237296/TomEE-10.0/jre21/Temurin/alpine/plume/Dockerfile)
-
--	[`10.0.0-jre21-Temurin-alpine-plus`, `10.0.0-Temurin-alpine-plus`, `10.0.0-jre21-alpine-plus`, `10.0.0-alpine-plus`, `10.0-jre21-Temurin-alpine-plus`, `10.0-Temurin-alpine-plus`, `10.0-jre21-alpine-plus`, `10.0-alpine-plus`, `10-jre21-Temurin-alpine-plus`, `10-Temurin-alpine-plus`, `10-jre21-alpine-plus`, `10-alpine-plus`, `jre21-Temurin-alpine-plus`, `Temurin-alpine-plus`, `jre21-alpine-plus`, `alpine-plus`](https://github.com/tomitribe/docker-tomee/blob/6c9d8f07968c634f662f307d257bc7e827237296/TomEE-10.0/jre21/Temurin/alpine/plus/Dockerfile)
-
--	[`10.0.0-jre21-Temurin-alpine-webprofile`, `10.0.0-Temurin-alpine-webprofile`, `10.0.0-jre21-alpine-webprofile`, `10.0.0-alpine-webprofile`, `10.0-jre21-Temurin-alpine-webprofile`, `10.0-Temurin-alpine-webprofile`, `10.0-jre21-alpine-webprofile`, `10.0-alpine-webprofile`, `10-jre21-Temurin-alpine-webprofile`, `10-Temurin-alpine-webprofile`, `10-jre21-alpine-webprofile`, `10-alpine-webprofile`, `jre21-Temurin-alpine-webprofile`, `Temurin-alpine-webprofile`, `jre21-alpine-webprofile`, `alpine-webprofile`](https://github.com/tomitribe/docker-tomee/blob/6c9d8f07968c634f662f307d257bc7e827237296/TomEE-10.0/jre21/Temurin/alpine/webprofile/Dockerfile)
-
 -	[`10.0.0-jre21-Semeru-ubuntu-microprofile`, `10.0.0-Semeru-ubuntu-microprofile`, `10.0.0-jre21-Semeru-microprofile`, `10.0.0-Semeru-microprofile`, `10.0.0-jre21-Semeru-ubuntu`, `10.0.0-Semeru-ubuntu`, `10.0.0-jre21-Semeru`, `10.0.0-Semeru`, `10.0-jre21-Semeru-ubuntu-microprofile`, `10.0-Semeru-ubuntu-microprofile`, `10.0-jre21-Semeru-microprofile`, `10.0-Semeru-microprofile`, `10.0-jre21-Semeru-ubuntu`, `10.0-Semeru-ubuntu`, `10.0-jre21-Semeru`, `10.0-Semeru`, `10-jre21-Semeru-ubuntu-microprofile`, `10-Semeru-ubuntu-microprofile`, `10-jre21-Semeru-microprofile`, `10-Semeru-microprofile`, `10-jre21-Semeru-ubuntu`, `10-Semeru-ubuntu`, `10-jre21-Semeru`, `10-Semeru`, `jre21-Semeru-ubuntu-microprofile`, `Semeru-ubuntu-microprofile`, `jre21-Semeru-microprofile`, `Semeru-microprofile`, `jre21-Semeru-ubuntu`, `Semeru-ubuntu`, `jre21-Semeru`, `Semeru`](https://github.com/tomitribe/docker-tomee/blob/6c9d8f07968c634f662f307d257bc7e827237296/TomEE-10.0/jre21/Semeru/ubuntu/microprofile/Dockerfile)
 
 -	[`10.0.0-jre21-Semeru-ubuntu-plume`, `10.0.0-Semeru-ubuntu-plume`, `10.0.0-jre21-Semeru-plume`, `10.0.0-Semeru-plume`, `10.0-jre21-Semeru-ubuntu-plume`, `10.0-Semeru-ubuntu-plume`, `10.0-jre21-Semeru-plume`, `10.0-Semeru-plume`, `10-jre21-Semeru-ubuntu-plume`, `10-Semeru-ubuntu-plume`, `10-jre21-Semeru-plume`, `10-Semeru-plume`, `jre21-Semeru-ubuntu-plume`, `Semeru-ubuntu-plume`, `jre21-Semeru-plume`, `Semeru-plume`](https://github.com/tomitribe/docker-tomee/blob/6c9d8f07968c634f662f307d257bc7e827237296/TomEE-10.0/jre21/Semeru/ubuntu/plume/Dockerfile)
@@ -56,14 +50,6 @@ WARNING:
 
 -	[`10.0.0-jre17-Temurin-ubuntu-webprofile`, `10.0.0-jre17-ubuntu-webprofile`, `10.0.0-jre17-Temurin-webprofile`, `10.0.0-jre17-webprofile`, `10.0-jre17-Temurin-ubuntu-webprofile`, `10.0-jre17-ubuntu-webprofile`, `10.0-jre17-Temurin-webprofile`, `10.0-jre17-webprofile`, `10-jre17-Temurin-ubuntu-webprofile`, `10-jre17-ubuntu-webprofile`, `10-jre17-Temurin-webprofile`, `10-jre17-webprofile`, `jre17-Temurin-ubuntu-webprofile`, `jre17-ubuntu-webprofile`, `jre17-Temurin-webprofile`, `jre17-webprofile`](https://github.com/tomitribe/docker-tomee/blob/6c9d8f07968c634f662f307d257bc7e827237296/TomEE-10.0/jre17/Temurin/ubuntu/webprofile/Dockerfile)
 
--	[`10.0.0-jre17-Temurin-alpine-microprofile`, `10.0.0-jre17-alpine-microprofile`, `10.0.0-jre17-Temurin-alpine`, `10.0.0-jre17-alpine`, `10.0-jre17-Temurin-alpine-microprofile`, `10.0-jre17-alpine-microprofile`, `10.0-jre17-Temurin-alpine`, `10.0-jre17-alpine`, `10-jre17-Temurin-alpine-microprofile`, `10-jre17-alpine-microprofile`, `10-jre17-Temurin-alpine`, `10-jre17-alpine`, `jre17-Temurin-alpine-microprofile`, `jre17-alpine-microprofile`, `jre17-Temurin-alpine`, `jre17-alpine`](https://github.com/tomitribe/docker-tomee/blob/6c9d8f07968c634f662f307d257bc7e827237296/TomEE-10.0/jre17/Temurin/alpine/microprofile/Dockerfile)
-
--	[`10.0.0-jre17-Temurin-alpine-plume`, `10.0.0-jre17-alpine-plume`, `10.0-jre17-Temurin-alpine-plume`, `10.0-jre17-alpine-plume`, `10-jre17-Temurin-alpine-plume`, `10-jre17-alpine-plume`, `jre17-Temurin-alpine-plume`, `jre17-alpine-plume`](https://github.com/tomitribe/docker-tomee/blob/6c9d8f07968c634f662f307d257bc7e827237296/TomEE-10.0/jre17/Temurin/alpine/plume/Dockerfile)
-
--	[`10.0.0-jre17-Temurin-alpine-plus`, `10.0.0-jre17-alpine-plus`, `10.0-jre17-Temurin-alpine-plus`, `10.0-jre17-alpine-plus`, `10-jre17-Temurin-alpine-plus`, `10-jre17-alpine-plus`, `jre17-Temurin-alpine-plus`, `jre17-alpine-plus`](https://github.com/tomitribe/docker-tomee/blob/6c9d8f07968c634f662f307d257bc7e827237296/TomEE-10.0/jre17/Temurin/alpine/plus/Dockerfile)
-
--	[`10.0.0-jre17-Temurin-alpine-webprofile`, `10.0.0-jre17-alpine-webprofile`, `10.0-jre17-Temurin-alpine-webprofile`, `10.0-jre17-alpine-webprofile`, `10-jre17-Temurin-alpine-webprofile`, `10-jre17-alpine-webprofile`, `jre17-Temurin-alpine-webprofile`, `jre17-alpine-webprofile`](https://github.com/tomitribe/docker-tomee/blob/6c9d8f07968c634f662f307d257bc7e827237296/TomEE-10.0/jre17/Temurin/alpine/webprofile/Dockerfile)
-
 -	[`10.0.0-jre17-Semeru-ubuntu-microprofile`, `10.0.0-jre17-Semeru-microprofile`, `10.0.0-jre17-Semeru-ubuntu`, `10.0.0-jre17-Semeru`, `10.0-jre17-Semeru-ubuntu-microprofile`, `10.0-jre17-Semeru-microprofile`, `10.0-jre17-Semeru-ubuntu`, `10.0-jre17-Semeru`, `10-jre17-Semeru-ubuntu-microprofile`, `10-jre17-Semeru-microprofile`, `10-jre17-Semeru-ubuntu`, `10-jre17-Semeru`, `jre17-Semeru-ubuntu-microprofile`, `jre17-Semeru-microprofile`, `jre17-Semeru-ubuntu`, `jre17-Semeru`](https://github.com/tomitribe/docker-tomee/blob/6c9d8f07968c634f662f307d257bc7e827237296/TomEE-10.0/jre17/Semeru/ubuntu/microprofile/Dockerfile)
 
 -	[`10.0.0-jre17-Semeru-ubuntu-plume`, `10.0.0-jre17-Semeru-plume`, `10.0-jre17-Semeru-ubuntu-plume`, `10.0-jre17-Semeru-plume`, `10-jre17-Semeru-ubuntu-plume`, `10-jre17-Semeru-plume`, `jre17-Semeru-ubuntu-plume`, `jre17-Semeru-plume`](https://github.com/tomitribe/docker-tomee/blob/6c9d8f07968c634f662f307d257bc7e827237296/TomEE-10.0/jre17/Semeru/ubuntu/plume/Dockerfile)
@@ -71,6 +57,8 @@ WARNING:
 -	[`10.0.0-jre17-Semeru-ubuntu-plus`, `10.0.0-jre17-Semeru-plus`, `10.0-jre17-Semeru-ubuntu-plus`, `10.0-jre17-Semeru-plus`, `10-jre17-Semeru-ubuntu-plus`, `10-jre17-Semeru-plus`, `jre17-Semeru-ubuntu-plus`, `jre17-Semeru-plus`](https://github.com/tomitribe/docker-tomee/blob/6c9d8f07968c634f662f307d257bc7e827237296/TomEE-10.0/jre17/Semeru/ubuntu/plus/Dockerfile)
 
 -	[`10.0.0-jre17-Semeru-ubuntu-webprofile`, `10.0.0-jre17-Semeru-webprofile`, `10.0-jre17-Semeru-ubuntu-webprofile`, `10.0-jre17-Semeru-webprofile`, `10-jre17-Semeru-ubuntu-webprofile`, `10-jre17-Semeru-webprofile`, `jre17-Semeru-ubuntu-webprofile`, `jre17-Semeru-webprofile`](https://github.com/tomitribe/docker-tomee/blob/6c9d8f07968c634f662f307d257bc7e827237296/TomEE-10.0/jre17/Semeru/ubuntu/webprofile/Dockerfile)
+
+[![arm64v8/tomee build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/tomee.svg?label=arm64v8/tomee%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/tomee/)
 
 # Quick reference (cont.)
 
@@ -130,19 +118,19 @@ ManageCat is a cloud management and service platform for Apache Tomcat and Apach
 Run the default TomEE server (`CMD ["catalina.sh", "run"]`):
 
 ```console
-$ docker run -it --rm tomee:<java-version>\-<tomeeversion>\-<flavour>
+$ docker run -it --rm arm64v8/tomee:<java-version>\-<tomeeversion>\-<flavour>
 ```
 
 For example running Apache TomEE 1.7.2 with JRE 8 and Webprofile flavour will be:
 
 ```console
-$ docker run -it --rm tomee:8-jre-1.7.2-webprofile
+$ docker run -it --rm arm64v8/tomee:8-jre-1.7.2-webprofile
 ```
 
 You can test it by visiting `http://container-ip:8080` in a browser or, if you need access outside the host, on port 8888:
 
 ```console
-$ docker run -it --rm -p 8888:8080 tomee:<java-version>\-<tomeeversion>\-<flavour>
+$ docker run -it --rm -p 8888:8080 arm64v8/tomee:<java-version>\-<tomeeversion>\-<flavour>
 ```
 
 You can then go to `http://localhost:8888` or `http://host-ip:8888` in a browser.
@@ -154,22 +142,6 @@ You can also use this image as base image for deploying your war application. To
 ```dockerfile
 COPY <locationofapplication>/<warfile> /usr/local/tomee/webapps/<warfile>
 ```
-
-# Image Variants
-
-The `tomee` images come in many flavors, each designed for a specific use case.
-
-## `tomee:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-## `tomee:<version>-alpine`
-
-This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
-
-This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
-
-To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 # License
 
