@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `amd64` builds of [the `alpine` official image](https://hub.docker.com/_/alpine) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -33,6 +35,8 @@ WARNING:
 -	[`3.19.7`, `3.19`](https://github.com/alpinelinux/docker-alpine/blob/7cfdb838c6f47bb3845c25f1674a9c3a44d8bafb/x86_64/Dockerfile)
 
 -	[`3.18.12`, `3.18`](https://github.com/alpinelinux/docker-alpine/blob/f92f1c2b3b7025f08b05dc11b70534568a973903/x86_64/Dockerfile)
+
+[![amd64/alpine build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/amd64/job/alpine.svg?label=amd64/alpine%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/alpine/)
 
 # Quick reference (cont.)
 
@@ -66,7 +70,7 @@ WARNING:
 Use like you would any other base image:
 
 ```dockerfile
-FROM alpine:3.14
+FROM amd64/alpine:3.14
 RUN apk add --no-cache mysql-client
 ENTRYPOINT ["mysql"]
 ```
