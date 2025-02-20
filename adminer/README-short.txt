@@ -1,1 +1,1 @@
-DEPRECATED; Database management in a single PHP file.
+Database management in a single PHP file.
