@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `s390x` builds of [the `docker` official image](https://hub.docker.com/_/docker) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,29 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
-(See ["What's the difference between 'Shared' and 'Simple' tags?" in the FAQ](https://github.com/docker-library/faq#whats-the-difference-between-shared-and-simple-tags).)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `s390x` ARCHITECTURE
 
-## Simple Tags
-
--	[`28.0.0-cli`, `28.0-cli`, `28-cli`, `cli`, `28.0.0-cli-alpine3.21`](https://github.com/docker-library/docker/blob/35c016d0c0f0be4dc523bc1108d7fa2681db8306/28/cli/Dockerfile)
-
--	[`28.0.0-dind`, `28.0-dind`, `28-dind`, `dind`, `28.0.0-dind-alpine3.21`, `28.0.0`, `28.0`, `28`, `latest`, `28.0.0-alpine3.21`](https://github.com/docker-library/docker/blob/35c016d0c0f0be4dc523bc1108d7fa2681db8306/28/dind/Dockerfile)
-
--	[`28.0.0-dind-rootless`, `28.0-dind-rootless`, `28-dind-rootless`, `dind-rootless`](https://github.com/docker-library/docker/blob/35c016d0c0f0be4dc523bc1108d7fa2681db8306/28/dind-rootless/Dockerfile)
-
--	[`28.0.0-windowsservercore-ltsc2025`, `28.0-windowsservercore-ltsc2025`, `28-windowsservercore-ltsc2025`, `windowsservercore-ltsc2025`](https://github.com/docker-library/docker/blob/35c016d0c0f0be4dc523bc1108d7fa2681db8306/28/windows/windowsservercore-ltsc2025/Dockerfile)
-
--	[`28.0.0-windowsservercore-ltsc2022`, `28.0-windowsservercore-ltsc2022`, `28-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`](https://github.com/docker-library/docker/blob/35c016d0c0f0be4dc523bc1108d7fa2681db8306/28/windows/windowsservercore-ltsc2022/Dockerfile)
-
--	[`28.0.0-windowsservercore-1809`, `28.0-windowsservercore-1809`, `28-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/docker-library/docker/blob/35c016d0c0f0be4dc523bc1108d7fa2681db8306/28/windows/windowsservercore-1809/Dockerfile)
-
-## Shared Tags
-
--	`28.0.0-windowsservercore`, `28.0-windowsservercore`, `28-windowsservercore`, `windowsservercore`:
-
-	-	[`28.0.0-windowsservercore-ltsc2025`](https://github.com/docker-library/docker/blob/35c016d0c0f0be4dc523bc1108d7fa2681db8306/28/windows/windowsservercore-ltsc2025/Dockerfile)
-	-	[`28.0.0-windowsservercore-ltsc2022`](https://github.com/docker-library/docker/blob/35c016d0c0f0be4dc523bc1108d7fa2681db8306/28/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`28.0.0-windowsservercore-1809`](https://github.com/docker-library/docker/blob/35c016d0c0f0be4dc523bc1108d7fa2681db8306/28/windows/windowsservercore-1809/Dockerfile)
+[![s390x/docker build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/s390x/job/docker.svg?label=s390x/docker%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/docker/)
 
 # Quick reference (cont.)
 
@@ -111,7 +93,7 @@ $ docker run --privileged --name some-docker -d \
 	-e DOCKER_TLS_CERTDIR=/certs \
 	-v some-docker-certs-ca:/certs/ca \
 	-v some-docker-certs-client:/certs/client \
-	docker:dind
+	s390x/docker:dind
 ```
 
 **Note:** `--privileged` is required for Docker-in-Docker to function properly, but it should be used with care as it provides full access to the host environment, as explained [in the relevant section of the Docker documentation](https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities).
@@ -122,7 +104,7 @@ $ docker run --privileged --name some-docker -d \
 $ docker run --rm --network some-network \
 	-e DOCKER_TLS_CERTDIR=/certs \
 	-v some-docker-certs-client:/certs/client:ro \
-	docker:latest version
+	s390x/docker:latest version
 Client: Docker Engine - Community
  Version:           18.09.8
  API version:       1.39
@@ -147,7 +129,7 @@ Server: Docker Engine - Community
 $ docker run -it --rm --network some-network \
 	-e DOCKER_TLS_CERTDIR=/certs \
 	-v some-docker-certs-client:/certs/client:ro \
-	docker:latest sh
+	s390x/docker:latest sh
 / # docker version
 Client: Docker Engine - Community
  Version:           18.09.8
@@ -173,7 +155,7 @@ Server: Docker Engine - Community
 $ docker run --rm --network some-network \
 	-e DOCKER_TLS_CERTDIR=/certs \
 	-v some-docker-certs-client:/certs/client:ro \
-	docker:latest info
+	s390x/docker:latest info
 Containers: 0
  Running: 0
  Paused: 0
@@ -225,7 +207,7 @@ WARNING: bridge-nf-call-ip6tables is disabled
 ```
 
 ```console
-$ docker run --rm -v /var/run/docker.sock:/var/run/docker.sock docker:latest version
+$ docker run --rm -v /var/run/docker.sock:/var/run/docker.sock s390x/docker:latest version
 Client: Docker Engine - Community
  Version:           18.09.8
  API version:       1.39
@@ -254,7 +236,7 @@ $ docker run --privileged --name some-docker -d \
 	-e DOCKER_TLS_CERTDIR=/certs \
 	-v some-docker-certs-ca:/certs/ca \
 	-v some-docker-certs-client:/certs/client \
-	docker:dind --storage-driver overlay2
+	s390x/docker:dind --storage-driver overlay2
 ```
 
 ## Runtime Settings Considerations
@@ -269,7 +251,7 @@ $ docker run --privileged --name some-docker -d \
 	--ulimit core=-1 \
 	--pids-limit -1 \
 	--oom-score-adj -500 \
-	docker:dind
+	s390x/docker:dind
 ```
 
 Some of these will not be supported based on the settings on the host's `dockerd`, such as `--ulimit nofile=-1`, giving errors that look like `error setting rlimit type 7: operation not permitted`, and some may inherit sane values from the host `dockerd` instance or may not apply for your usage of Docker-in-Docker (for example, you likely want to set `--oom-score-adj` to a value that's higher than `dockerd` on the host so that your Docker-in-Docker instance is killed before the host Docker instance is).
@@ -306,22 +288,10 @@ The Docker documentation is a good starting point for understanding the differen
 2.	Start your `docker` container like this:
 
 	```console
-	$ docker run --privileged --name some-docker -v /my/own/var-lib-docker:/var/lib/docker -d docker:dind
+	$ docker run --privileged --name some-docker -v /my/own/var-lib-docker:/var/lib/docker -d s390x/docker:dind
 	```
 
 The `-v /my/own/var-lib-docker:/var/lib/docker` part of the command mounts the `/my/own/var-lib-docker` directory from the underlying host system as `/var/lib/docker` inside the container, where Docker by default will write its data files.
-
-# Image Variants
-
-The `docker` images come in many flavors, each designed for a specific use case.
-
-## `docker:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-## `docker:<version>-windowsservercore`
-
-Unfortunately, Windows does not support nested containers, so this image variant only contains the client (intended for use against an existing Docker engine, ala `-v //./pipe/docker_engine://./pipe/docker_engine`).
 
 # License
 
