@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `amd64` builds of [the `chronograf` official image](https://hub.docker.com/_/chronograf) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -39,6 +41,8 @@ WARNING:
 -	[`1.10`, `1.10.5`, `latest`](https://github.com/influxdata/influxdata-docker/blob/0854be83296d30acd6e2b75f106f026cb051cbda/chronograf/1.10/Dockerfile)
 
 -	[`1.10-alpine`, `1.10.5-alpine`, `alpine`](https://github.com/influxdata/influxdata-docker/blob/0854be83296d30acd6e2b75f106f026cb051cbda/chronograf/1.10/alpine/Dockerfile)
+
+[![amd64/chronograf build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/amd64/job/chronograf.svg?label=amd64/chronograf%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/chronograf/)
 
 # Quick reference (cont.)
 
@@ -72,7 +76,7 @@ Chronograf is InfluxData's open source web application. Use Chronograf with the 
 Chronograf runs on port 8888. It can be run and accessed by exposing that port:
 
 ```console
-$ docker run -p 8888:8888 chronograf
+$ docker run -p 8888:8888 amd64/chronograf
 ```
 
 ### Mounting a volume
@@ -82,7 +86,7 @@ The Chronograf image exposes a shared volume under `/var/lib/chronograf`, so you
 ```console
 $ docker run -p 8888:8888 \
       -v $PWD:/var/lib/chronograf \
-      chronograf
+      amd64/chronograf
 ```
 
 Modify `$PWD` to the directory where you want to store data associated with the InfluxDB container.
@@ -92,7 +96,7 @@ You can also have Docker control the volume mountpoint by using a named volume.
 ```console
 $ docker run -p 8888:8888 \
       -v chronograf:/var/lib/chronograf \
-      chronograf
+      amd64/chronograf
 ```
 
 ### Using the container with InfluxDB
@@ -116,7 +120,7 @@ We can now start a Chronograf container that references this database.
 ```console
 $ docker run -p 8888:8888 \
       --net=influxdb \
-      chronograf --influxdb-url=http://influxdb:8086
+      amd64/chronograf --influxdb-url=http://influxdb:8086
 ```
 
 Try combining this with Telegraf to get dashboards for your infrastructure within minutes!
@@ -131,13 +135,13 @@ See the [official docs](https://docs.influxdata.com/chronograf/latest/) for info
 
 # Image Variants
 
-The `chronograf` images come in many flavors, each designed for a specific use case.
+The `amd64/chronograf` images come in many flavors, each designed for a specific use case.
 
-## `chronograf:<version>`
+## `amd64/chronograf:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `chronograf:<version>-alpine`
+## `amd64/chronograf:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
