@@ -24,15 +24,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `jammy`, `24.12`, `24.12-jammy`, `24.12.3`, `24.12.3-jammy`, `24.12.3.47`, `24.12.3.47-jammy`](https://github.com/ClickHouse/docker-library/blob/25d5c4edc570e79103921d61916e8ddbc2a3b82f/server/24.12.3.47/Dockerfile.ubuntu)
+-	[`latest`, `jammy`, `25.1`, `25.1-jammy`, `25.1.5`, `25.1.5-jammy`, `25.1.5.31`, `25.1.5.31-jammy`](https://github.com/ClickHouse/docker-library/blob/0dda4ee3a166176d28fda59b9bfedef80ebc3023/server/25.1.5.31/Dockerfile.ubuntu)
 
--	[`24.11`, `24.11-jammy`, `24.11.3`, `24.11.3-jammy`, `24.11.3.66`, `24.11.3.66-jammy`](https://github.com/ClickHouse/docker-library/blob/25d5c4edc570e79103921d61916e8ddbc2a3b82f/server/24.11.3.66/Dockerfile.ubuntu)
+-	[`24.12`, `24.12-jammy`, `24.12.5`, `24.12.5-jammy`, `24.12.5.81`, `24.12.5.81-jammy`](https://github.com/ClickHouse/docker-library/blob/0dda4ee3a166176d28fda59b9bfedef80ebc3023/server/24.12.5.81/Dockerfile.ubuntu)
 
--	[`24.10`, `24.10-focal`, `24.10.4`, `24.10.4-focal`, `24.10.4.191`, `24.10.4.191-focal`](https://github.com/ClickHouse/docker-library/blob/25d5c4edc570e79103921d61916e8ddbc2a3b82f/server/24.10.4.191/Dockerfile.ubuntu)
+-	[`24.11`, `24.11-jammy`, `24.11.5`, `24.11.5-jammy`, `24.11.5.49`, `24.11.5.49-jammy`](https://github.com/ClickHouse/docker-library/blob/0dda4ee3a166176d28fda59b9bfedef80ebc3023/server/24.11.5.49/Dockerfile.ubuntu)
 
--	[`lts`, `lts-focal`, `24.8`, `24.8-focal`, `24.8.12`, `24.8.12-focal`, `24.8.12.28`, `24.8.12.28-focal`](https://github.com/ClickHouse/docker-library/blob/25d5c4edc570e79103921d61916e8ddbc2a3b82f/server/24.8.12.28/Dockerfile.ubuntu)
+-	[`lts`, `lts-focal`, `24.8`, `24.8-focal`, `24.8.14`, `24.8.14-focal`, `24.8.14.39`, `24.8.14.39-focal`](https://github.com/ClickHouse/docker-library/blob/0dda4ee3a166176d28fda59b9bfedef80ebc3023/server/24.8.14.39/Dockerfile.ubuntu)
 
--	[`24.3`, `24.3-focal`, `24.3.15`, `24.3.15-focal`, `24.3.15.72`, `24.3.15.72-focal`](https://github.com/ClickHouse/docker-library/blob/25d5c4edc570e79103921d61916e8ddbc2a3b82f/server/24.3.15.72/Dockerfile.ubuntu)
+-	[`24.3`, `24.3-focal`, `24.3.18`, `24.3.18-focal`, `24.3.18.7`, `24.3.18.7-focal`](https://github.com/ClickHouse/docker-library/blob/0dda4ee3a166176d28fda59b9bfedef80ebc3023/server/24.3.18.7/Dockerfile.ubuntu)
 
 # Quick reference (cont.)
 

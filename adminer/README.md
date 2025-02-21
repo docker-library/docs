@@ -14,14 +14,6 @@ WARNING:
 
 -->
 
-# **DEPRECATION NOTICE**
-
-Adminer is [no longer maintained (upstream)](https://www.youtube.com/watch?v=OrOtiu_nfHE&lc=Ugy8pAL8wgAL3_iKkzZ4AaABAg.9pj_kQ2rkuw9pp813OyHha):
-
-> I've stopped working on it but maybe I'll return to it some day.
-
-See also [TimWolla/docker-adminer#147](https://github.com/TimWolla/docker-adminer/issues/147). Users are strongly encouraged to seek alternatives.
-
 # Quick reference
 
 -	**Maintained by**:  
@@ -184,7 +176,7 @@ To add support for the other drivers you will need to install the following PHP 
 
 # License
 
-View [license information](https://github.com/vrana/adminer/blob/master/readme.txt) for the software contained in this image.
+View [license information](https://github.com/vrana/adminer/blob/master/LICENSE) for the software contained in this image.
 
 As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 
