@@ -24,7 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
-**No supported tags**
+-	[`4.17.1`, `4`, `latest`, `4.17.1-standalone`, `4-standalone`, `standalone`](https://github.com/TimWolla/docker-adminer/blob/0c0fd187e8646ad61fe592a80d66abec2c1dc951/4/Dockerfile)
+
+-	[`4.17.1-fastcgi`, `4-fastcgi`, `fastcgi`](https://github.com/TimWolla/docker-adminer/blob/0c0fd187e8646ad61fe592a80d66abec2c1dc951/4/fastcgi/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -32,7 +34,7 @@ WARNING:
 	[https://github.com/TimWolla/docker-adminer/issues](https://github.com/TimWolla/docker-adminer/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	**No supported architectures**
+	[`amd64`](https://hub.docker.com/r/amd64/adminer/), [`arm32v6`](https://hub.docker.com/r/arm32v6/adminer/), [`arm32v7`](https://hub.docker.com/r/arm32v7/adminer/), [`arm64v8`](https://hub.docker.com/r/arm64v8/adminer/), [`i386`](https://hub.docker.com/r/i386/adminer/), [`ppc64le`](https://hub.docker.com/r/ppc64le/adminer/), [`riscv64`](https://hub.docker.com/r/riscv64/adminer/), [`s390x`](https://hub.docker.com/r/s390x/adminer/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/adminer/` directory](https://github.com/docker-library/repo-info/blob/master/repos/adminer) ([history](https://github.com/docker-library/repo-info/commits/master/repos/adminer))  
