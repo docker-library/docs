@@ -26,7 +26,7 @@ WARNING:
 
 -	[`8.16.4`](https://github.com/elastic/dockerfiles/blob/02f6f08d48291a4cc48b03e3f14ac64ecab9fe5c/logstash/Dockerfile)
 
--	[`7.17.27`](https://github.com/elastic/dockerfiles/blob/a39d490136e8095519b2e4b148ee5e2e8d046fc9/logstash/Dockerfile)
+-	[`7.17.28`](https://github.com/elastic/dockerfiles/blob/2ef7e0a0be5abd21cb38a39c3cce65d5278ebfee/logstash/Dockerfile)
 
 -	[`8.17.2`](https://github.com/elastic/dockerfiles/blob/1f8deb29470634b84cd411a659d174575659d344/logstash/Dockerfile)
 

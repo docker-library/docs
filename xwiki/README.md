@@ -24,11 +24,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`17`, `17.0`, `17.0.0`, `17-mysql-tomcat`, `17.0-mysql-tomcat`, `17.0.0-mysql-tomcat`, `mysql-tomcat`, `stable-mysql-tomcat`, `stable-mysql`, `stable`, `latest`](https://github.com/xwiki-contrib/docker-xwiki/blob/381926879a24fb09d3b7611b883c78eb4576d3a2/17/mysql-tomcat/Dockerfile)
+-	[`17`, `17.1`, `17.1.0`, `17-mysql-tomcat`, `17.1-mysql-tomcat`, `17.1.0-mysql-tomcat`, `mysql-tomcat`, `stable-mysql-tomcat`, `stable-mysql`, `stable`, `latest`](https://github.com/xwiki-contrib/docker-xwiki/blob/a05f6588e431b904ccb6daecf728556b71165f6e/17/mysql-tomcat/Dockerfile)
 
--	[`17-postgres-tomcat`, `17.0-postgres-tomcat`, `17.0.0-postgres-tomcat`, `postgres-tomcat`, `stable-postgres-tomcat`, `stable-postgres`](https://github.com/xwiki-contrib/docker-xwiki/blob/381926879a24fb09d3b7611b883c78eb4576d3a2/17/postgres-tomcat/Dockerfile)
+-	[`17-postgres-tomcat`, `17.1-postgres-tomcat`, `17.1.0-postgres-tomcat`, `postgres-tomcat`, `stable-postgres-tomcat`, `stable-postgres`](https://github.com/xwiki-contrib/docker-xwiki/blob/a05f6588e431b904ccb6daecf728556b71165f6e/17/postgres-tomcat/Dockerfile)
 
--	[`17-mariadb-tomcat`, `17.0-mariadb-tomcat`, `17.0.0-mariadb-tomcat`, `mariadb-tomcat`, `stable-mariadb-tomcat`, `stable-mariadb`](https://github.com/xwiki-contrib/docker-xwiki/blob/381926879a24fb09d3b7611b883c78eb4576d3a2/17/mariadb-tomcat/Dockerfile)
+-	[`17-mariadb-tomcat`, `17.1-mariadb-tomcat`, `17.1.0-mariadb-tomcat`, `mariadb-tomcat`, `stable-mariadb-tomcat`, `stable-mariadb`](https://github.com/xwiki-contrib/docker-xwiki/blob/a05f6588e431b904ccb6daecf728556b71165f6e/17/mariadb-tomcat/Dockerfile)
 
 -	[`16`, `16.10`, `16.10.4`, `16-mysql-tomcat`, `16.10-mysql-tomcat`, `16.10.4-mysql-tomcat`, `lts-mysql-tomcat`, `lts-mysql`, `lts`](https://github.com/xwiki-contrib/docker-xwiki/blob/a668c18d7c49f33ebf188da04e7e2a1473960550/16/mysql-tomcat/Dockerfile)
 
