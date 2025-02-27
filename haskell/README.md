@@ -24,7 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`9.10.1-bullseye`, `9.10-bullseye`, `9-bullseye`, `bullseye`, `9`, `latest`](https://github.com/haskell/docker-haskell/blob/68ddf626a38f6e76a81df168d1e24bd778b17bef/9.10/bullseye/Dockerfile)
+-	[`9.10.1-bullseye`, `9.10-bullseye`, `9-bullseye`, `bullseye`, `9.10.1`, `9.10`, `9`, `latest`](https://github.com/haskell/docker-haskell/blob/68ddf626a38f6e76a81df168d1e24bd778b17bef/9.10/bullseye/Dockerfile)
 
 -	[`9.10.1-slim-bullseye`, `9.10-slim-bullseye`, `9-slim-bullseye`, `slim-bullseye`, `9-slim`, `slim`](https://github.com/haskell/docker-haskell/blob/68ddf626a38f6e76a81df168d1e24bd778b17bef/9.10/slim-bullseye/Dockerfile)
 
