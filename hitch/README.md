@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `amd64` builds of [the `hitch` official image](https://hub.docker.com/_/hitch) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -25,6 +27,8 @@ WARNING:
 # Supported tags and respective `Dockerfile` links
 
 -	[`1`, `1.8`, `1.8.0`, `1.8.0-1`, `latest`](https://github.com/varnish/docker-hitch/blob/3fe55c4296018b04c7e1d2efdfcadce9c4017e0a/Dockerfile)
+
+[![amd64/hitch build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/amd64/job/hitch.svg?label=amd64/hitch%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/hitch/)
 
 # Quick reference (cont.)
 
@@ -54,7 +58,7 @@ WARNING:
 Running a Hitch Docker container can be done by using the following command:
 
 ```console
-$ docker run --name=hitch -p 443:443 hitch
+$ docker run --name=hitch -p 443:443 amd64/hitch
 ```
 
 This container will expose port `443`, which is required for HTTPS traffic.
@@ -64,7 +68,7 @@ This container will expose port `443`, which is required for HTTPS traffic.
 Without any argument, the container will run `hitch --config=/etc/hitch/hitch.conf`. You can mount your own configuration file to replace the default one:
 
 ```console
-$ docker run -v /path/to/your/config/file:/etc/hitch/hitch.conf:ro hitch
+$ docker run -v /path/to/your/config/file:/etc/hitch/hitch.conf:ro amd64/hitch
 ```
 
 You can also change the path of the configuration file by setting the `HITCH_CONFIG_FILE` environment variable.
@@ -82,7 +86,7 @@ But you'll probably run your backend service in a separate container. In that ca
 Here's how you set the backend via a *command-line option*, assuming your backend is available through `backend.example.com` on port `8443`:
 
 ```console
-$ docker run hitch "--backend=[backend.example.com]:8443"
+$ docker run amd64/hitch "--backend=[backend.example.com]:8443"
 ```
 
 ## Setting the certificate
@@ -96,7 +100,7 @@ This certificate is only suited for testing. Using a bind mount, you can overrid
 Here's an example:
 
 ```console
-$ docker run -v /path/to/your/certificate:/etc/hitch/certs/default:ro hitch
+$ docker run -v /path/to/your/certificate:/etc/hitch/certs/default:ro amd64/hitch
 ```
 
 You can also override the [`pem-file`](https://github.com/varnish/hitch/blob/master/hitch.conf.man.rst#pem-file--string) configuration setting in your mounted configuration file.
@@ -106,7 +110,7 @@ If you prefer setting the certificate location on the command line, you can add 
 Here's how you do this:
 
 ```console
-$ docker run hitch "--backend=[backend.example.com]:8443:/path/to/cert.pem"
+$ docker run amd64/hitch "--backend=[backend.example.com]:8443:/path/to/cert.pem"
 ```
 
 # License
