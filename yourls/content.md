@@ -42,7 +42,7 @@ Then, access it via `http://localhost:8080/admin/` or `http://<host-ip>:8080/adm
 ## Environment Variables
 
 When you start the `yourls` image, you can adjust the configuration of the YOURLS instance by passing one or more environment variables on the `docker run` command line.  
-The YOURLS instance accepts [a number of environment variables for configuration](https://yourls.org/#Config).  
+The YOURLS instance accepts [a number of environment variables for configuration](https://yourls.org/docs/guide/essentials/configuration).  
 A few notable/important examples for using this Docker image include the following.
 
 ### `YOURLS_SITE`
