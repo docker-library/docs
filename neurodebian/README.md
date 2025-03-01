@@ -44,14 +44,6 @@ WARNING:
 
 -	[`bookworm-non-free`, `nd120-non-free`, `non-free`](https://github.com/neurodebian/dockerfiles/blob/a0af1d460705d7efc9d6de9483f1ce4aa48ad152/dockerfiles/bookworm-non-free/Dockerfile)
 
--	[`trixie`, `nd130`](https://github.com/neurodebian/dockerfiles/blob/a0af1d460705d7efc9d6de9483f1ce4aa48ad152/dockerfiles/trixie/Dockerfile)
-
--	[`trixie-non-free`, `nd130-non-free`](https://github.com/neurodebian/dockerfiles/blob/a0af1d460705d7efc9d6de9483f1ce4aa48ad152/dockerfiles/trixie-non-free/Dockerfile)
-
--	[`sid`, `nd`](https://github.com/neurodebian/dockerfiles/blob/a0af1d460705d7efc9d6de9483f1ce4aa48ad152/dockerfiles/sid/Dockerfile)
-
--	[`sid-non-free`, `nd-non-free`](https://github.com/neurodebian/dockerfiles/blob/a0af1d460705d7efc9d6de9483f1ce4aa48ad152/dockerfiles/sid-non-free/Dockerfile)
-
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
