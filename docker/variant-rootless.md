@@ -23,8 +23,8 @@ To run with a different UID/GID than the one baked into the image, modify `/etc/
 FROM %%IMAGE%%:dind-rootless
 USER root
 RUN set -eux; \
-	sed -i -e 's/^rootless:1000:1000:/rootless:1234:5678:/' /etc/passwd; \
-	sed -i -e 's/^rootless:1000:/:5678:/' /etc/group; \
+	sed -i -e 's/^rootless:x:1000:1000:/rootless:x:1234:5678:/' /etc/passwd; \
+	sed -i -e 's/^rootless:x:1000:/rootless:x:5678:/' /etc/group; \
 	chown -R rootless ~rootless
 USER rootless
 ```
