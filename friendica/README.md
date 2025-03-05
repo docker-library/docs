@@ -36,11 +36,11 @@ WARNING:
 
 -	[`2024.12-fpm-alpine`, `fpm-alpine`, `stable-fpm-alpine`](https://github.com/friendica/docker/blob/898e27d3d9b97479037f64a8cc8963a7bcab63a2/2024.12/fpm-alpine/Dockerfile)
 
--	[`2025.02-dev-apache`, `dev-apache`, `2025.02-dev`, `dev`](https://github.com/friendica/docker/blob/9fd34d469b8832fa3be60297a29f1eed91ff6f8d/2025.02-dev/apache/Dockerfile)
+-	[`2025.02-dev-apache`, `dev-apache`, `2025.02-dev`, `dev`](https://github.com/friendica/docker/blob/4218eb3a978cda7313b9e051c69c260ee4391195/2025.02-dev/apache/Dockerfile)
 
--	[`2025.02-dev-fpm`, `dev-fpm`](https://github.com/friendica/docker/blob/9fd34d469b8832fa3be60297a29f1eed91ff6f8d/2025.02-dev/fpm/Dockerfile)
+-	[`2025.02-dev-fpm`, `dev-fpm`](https://github.com/friendica/docker/blob/4218eb3a978cda7313b9e051c69c260ee4391195/2025.02-dev/fpm/Dockerfile)
 
--	[`2025.02-dev-fpm-alpine`, `dev-fpm-alpine`](https://github.com/friendica/docker/blob/9fd34d469b8832fa3be60297a29f1eed91ff6f8d/2025.02-dev/fpm-alpine/Dockerfile)
+-	[`2025.02-dev-fpm-alpine`, `dev-fpm-alpine`](https://github.com/friendica/docker/blob/4218eb3a978cda7313b9e051c69c260ee4391195/2025.02-dev/fpm-alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -48,7 +48,7 @@ WARNING:
 	[https://github.com/friendica/docker/issues](https://github.com/friendica/docker/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/friendica/), [`arm32v6`](https://hub.docker.com/r/arm32v6/friendica/), [`arm32v7`](https://hub.docker.com/r/arm32v7/friendica/), [`arm64v8`](https://hub.docker.com/r/arm64v8/friendica/), [`i386`](https://hub.docker.com/r/i386/friendica/), [`ppc64le`](https://hub.docker.com/r/ppc64le/friendica/), [`riscv64`](https://hub.docker.com/r/riscv64/friendica/), [`s390x`](https://hub.docker.com/r/s390x/friendica/)
+	[`amd64`](https://hub.docker.com/r/amd64/friendica/), [`arm32v5`](https://hub.docker.com/r/arm32v5/friendica/), [`arm32v6`](https://hub.docker.com/r/arm32v6/friendica/), [`arm32v7`](https://hub.docker.com/r/arm32v7/friendica/), [`arm64v8`](https://hub.docker.com/r/arm64v8/friendica/), [`i386`](https://hub.docker.com/r/i386/friendica/), [`mips64le`](https://hub.docker.com/r/mips64le/friendica/), [`ppc64le`](https://hub.docker.com/r/ppc64le/friendica/), [`riscv64`](https://hub.docker.com/r/riscv64/friendica/), [`s390x`](https://hub.docker.com/r/s390x/friendica/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/friendica/` directory](https://github.com/docker-library/repo-info/blob/master/repos/friendica) ([history](https://github.com/docker-library/repo-info/commits/master/repos/friendica))  

@@ -24,7 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.0`, `5.0-20250223`, `latest`](https://github.com/vmware/photon-docker-image/blob/3605670fdebd644ae53b7414011057825618cd9d/docker/Dockerfile)
+-	[`5.0`, `5.0-20250302`, `latest`](https://github.com/vmware/photon-docker-image/blob/4806ac4ff2a0f1ba3bee1eea8544a0965f807531/docker/Dockerfile)
 
 -	[`4.0`, `4.0-20250223`](https://github.com/vmware/photon-docker-image/blob/2e9995ccd704e9c52b25c6eb6cd4f03a32b1ea3e/docker/Dockerfile)
 
