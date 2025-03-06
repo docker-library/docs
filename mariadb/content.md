@@ -8,7 +8,8 @@ The intent is also to maintain high compatibility with MySQL, ensuring a library
 
 # How to use this image
 
-The %%IMAGE%% has a number of tags, and of note is `latest`, as the latest stable version, and `lts`, as the last long term support release.
+> [!IMPORTANT]
+> The %%IMAGE%% has a number of tags, and of note is `latest`, as the latest stable version, and `lts`, as the last long term support release.
 
 ## Running the container
 
@@ -17,26 +18,26 @@ The %%IMAGE%% has a number of tags, and of note is `latest`, as the latest stabl
 The environment variables required to use this image involves the setting of the root user password:
 
 ```console
-$ docker run --detach --name some-%%REPO%% --env MARIADB_ROOT_PASSWORD=my-secret-pw  %%IMAGE%%:latest
+$ docker run --detach --name some-%%REPO%% --env MARIADB_ROOT_PASSWORD=my-secret-pw %%IMAGE%%:latest
 ```
 
 or:
 
 ```console
-$ docker run --detach --name some-%%REPO%% --env MARIADB_ALLOW_EMPTY_ROOT_PASSWORD=1  %%IMAGE%%:latest
+$ docker run --detach --name some-%%REPO%% --env MARIADB_ALLOW_EMPTY_ROOT_PASSWORD=1 %%IMAGE%%:latest
 ```
 
 or:
 
 ```console
-$ docker run --detach --name some-%%REPO%% --env MARIADB_RANDOM_ROOT_PASSWORD=1  %%IMAGE%%:latest
+$ docker run --detach --name some-%%REPO%% --env MARIADB_RANDOM_ROOT_PASSWORD=1 %%IMAGE%%:latest
 ```
 
 ... where the container logs will contain the generated root password.
 
 ## %%STACK%%
 
-Run `docker stack deploy -c stack.yml %%REPO%%` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
+Run `docker stack deploy -c stack.yml %%REPO%%` (or `docker compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
 
 ### Start a `%%IMAGE%%` server instance with user, password and database
 
@@ -45,7 +46,15 @@ Starting a MariaDB instance with a user, password, and a database:
 ```console
 $ docker run --detach --name some-%%REPO%% --env MARIADB_USER=example-user --env MARIADB_PASSWORD=my_cool_secret --env MARIADB_DATABASE=exmple-database --env MARIADB_ROOT_PASSWORD=my-secret-pw  %%IMAGE%%:latest
 ```
+#### Configuration
 
+##### Port binding
+
+By default, the database running within the container will listen on port 3306. You can expose the container port 3306 to the host port 3306 with the `-p 3306:3306` argument to `docker run`, like the command below:
+
+```console
+$ docker run --name some-mariadb -p 3306:3306 mariadb:latest
+```
 ### Start a `%%IMAGE%%` server instance in a network
 
 As applications talk to MariaDB, MariaDB needs to start in the same network as the application:
