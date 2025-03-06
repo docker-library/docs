@@ -45,15 +45,7 @@ Starting a MariaDB instance with a user, password, and a database:
 ```console
 $ docker run --detach --name some-%%REPO%% --env MARIADB_USER=example-user --env MARIADB_PASSWORD=my_cool_secret --env MARIADB_DATABASE=exmple-database --env MARIADB_ROOT_PASSWORD=my-secret-pw %%IMAGE%%:latest
 ```
-#### Configuration
 
-##### Port binding
-
-By default, the database running within the container will listen on port 3306. You can expose the container port 3306 to the host port 3306 with the `-p 3306:3306` argument to `docker run`, like the command below:
-
-```console
-$ docker run --name some-%%REPO%% -p 3306:3306 %%IMAGE%%:latest
-```
 ### Start a `%%IMAGE%%` server instance in a network
 
 As applications talk to MariaDB, MariaDB needs to start in the same network as the application:
