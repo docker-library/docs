@@ -3,7 +3,7 @@
 services:
 
   db:
-    image: mariadb:latest
+    image: mariadb:11.7-ubi
     restart: always
     environment:
       MARIADB_ROOT_PASSWORD: example
