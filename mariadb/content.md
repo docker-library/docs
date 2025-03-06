@@ -44,7 +44,7 @@ Run `docker stack deploy -c stack.yml %%REPO%%` (or `docker compose -f stack.yml
 Starting a MariaDB instance with a user, password, and a database:
 
 ```console
-$ docker run --detach --name some-%%REPO%% --env MARIADB_USER=example-user --env MARIADB_PASSWORD=my_cool_secret --env MARIADB_DATABASE=exmple-database --env MARIADB_ROOT_PASSWORD=my-secret-pw  %%IMAGE%%:latest
+$ docker run --detach --name some-%%REPO%% --env MARIADB_USER=example-user --env MARIADB_PASSWORD=my_cool_secret --env MARIADB_DATABASE=exmple-database --env MARIADB_ROOT_PASSWORD=my-secret-pw %%IMAGE%%:latest
 ```
 #### Configuration
 
@@ -53,7 +53,7 @@ $ docker run --detach --name some-%%REPO%% --env MARIADB_USER=example-user --env
 By default, the database running within the container will listen on port 3306. You can expose the container port 3306 to the host port 3306 with the `-p 3306:3306` argument to `docker run`, like the command below:
 
 ```console
-$ docker run --name some-mariadb -p 3306:3306 mariadb:latest
+$ docker run --name some-%%REPO%% -p 3306:3306 %%IMAGE%%:latest
 ```
 ### Start a `%%IMAGE%%` server instance in a network
 
@@ -61,8 +61,8 @@ As applications talk to MariaDB, MariaDB needs to start in the same network as t
 
 ```console
 $ docker network create some-network 
-$ docker run --detach --network some-network --name some-%%REPO%% --env MARIADB_USER=example-user --env MARIADB_PASSWORD=my_cool_secret --env MARIADB_ROOT_PASSWORD=my-secret-pw  %%IMAGE%%:latest
-$ docker run --detach --network some-network --name some-application --env APP_DB_HOST=some-%%REPO%%  --env APP_DB_USER=example-user --env APP_DB_PASSWD=my_cool_secret some-application
+$ docker run --detach --network some-network --name some-%%REPO%% --env MARIADB_USER=example-user --env MARIADB_PASSWORD=my_cool_secret --env MARIADB_ROOT_PASSWORD=my-secret-pw %%IMAGE%%:latest
+$ docker run --detach --network some-network --name some-application --env APP_DB_HOST=some-%%REPO%% --env APP_DB_USER=example-user --env APP_DB_PASSWD=my_cool_secret some-application
 ```
 
 ... where `some-network` is a newly created network (other than `bridge` as the default network), `some-%%REPO%%` is the name you want to assign to your container, `my-secret-pw` is the password to be set for the MariaDB root user. See the list above for relevant tags to match your needs and environment. `some-application` and then environment variable `APP_DB_HOST`, `APP_DB_USER` and `APP_DB_PASSWD` are the application's configuration for its database connection.
@@ -72,7 +72,7 @@ $ docker run --detach --network some-network --name some-application --env APP_D
 The following command starts another `%%IMAGE%%` container instance and runs the `mariadb` command line client against your original `%%IMAGE%%` container, allowing you to execute SQL statements against your database instance:
 
 ```console
-$ docker run -it --network some-network --rm %%IMAGE%% mariadb -hsome-%%REPO%% -uexample-user -p
+$ docker run -it --network some-network --rm %%IMAGE%% mariadb -h some-%%REPO%% -u example-user -p example
 ```
 
 ... where `some-%%REPO%%` is the name of your original `%%IMAGE%%` container (connected to the `some-network` Docker network).
