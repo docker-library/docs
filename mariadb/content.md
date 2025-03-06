@@ -73,7 +73,7 @@ $ docker run --detach --network some-network --name some-application --env APP_D
 The following command starts another `%%IMAGE%%` container instance and runs the `mariadb` command line client against your original `%%IMAGE%%` container, allowing you to execute SQL statements against your database instance:
 
 ```console
-$ docker run -it --network some-network --rm %%IMAGE%% mariadb -h some-%%REPO%% -u example-user -p example
+$ docker run -it --network some-network --rm %%IMAGE%% mariadb -h some-%%REPO%% -u example-user
 ```
 
 ... where `some-%%REPO%%` is the name of your original `%%IMAGE%%` container (connected to the `some-network` Docker network).
