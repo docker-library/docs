@@ -12,6 +12,16 @@ The %%IMAGE%% has a number of tags, and of note is `latest`, as the latest stabl
 
 ## Running the container
 
+### Configuration
+
+#### Port binding
+
+By default, the database running within the container will listen on port 3306. You can expose the container port 3306 to the host port 3306 with the `-p 3306:3306` argument to `docker run`, like the command below:
+
+```console
+$ docker run --name some-%%REPO%% -p 3306:3306 %%IMAGE%%:latest
+```
+
 ### Starting using a minimal configuration
 
 The environment variables required to use this image involves the setting of the root user password:
