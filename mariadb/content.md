@@ -8,8 +8,7 @@ The intent is also to maintain high compatibility with MySQL, ensuring a library
 
 # How to use this image
 
-> [!IMPORTANT]
-> The %%IMAGE%% has a number of tags, and of note is `latest`, as the latest stable version, and `lts`, as the last long term support release.
+The %%IMAGE%% has a number of tags, and of note is `latest`, as the latest stable version, and `lts`, as the last long term support release.
 
 ## Running the container
 
