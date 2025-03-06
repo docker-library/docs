@@ -76,7 +76,7 @@ The intent is also to maintain high compatibility with MySQL, ensuring a library
 ![logo](https://raw.githubusercontent.com/docker-library/docs/554e4b9aaac2e266b9ab31e9a312cb6f96d69286/mariadb/logo.png)
 
 # How to use this image
-> [!NOTE]
+> [!IMPORTANT]
 > The mariadb has a number of tags, and of note is `latest`, as the latest stable version, and `lts`, as the last long term support release.
 
 ## Running the container
@@ -150,7 +150,7 @@ $ docker run --detach --name some-mariadb --env MARIADB_USER=example-user --env 
 By default, the database running within the container will listen on port 3306. You can expose the container port 3306 to the host port 3306 with the `-p 3306:3306` argument to `docker run`, like the command below:
 
 ```console
-docker run --name some-mariadb -p 3306:3306 mariadb:latest
+$ docker run --name some-mariadb -p 3306:3306 mariadb:latest
 ```
 
 As applications talk to MariaDB, MariaDB needs to start in the same network as the application:
