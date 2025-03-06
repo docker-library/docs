@@ -76,8 +76,8 @@ The intent is also to maintain high compatibility with MySQL, ensuring a library
 ![logo](https://raw.githubusercontent.com/docker-library/docs/554e4b9aaac2e266b9ab31e9a312cb6f96d69286/mariadb/logo.png)
 
 # How to use this image
-
-The mariadb has a number of tags, and of note is `latest`, as the latest stable version, and `lts`, as the last long term support release.
+> [!NOTE]
+> The mariadb has a number of tags, and of note is `latest`, as the latest stable version, and `lts`, as the last long term support release.
 
 ## Running the container
 
@@ -86,7 +86,7 @@ The mariadb has a number of tags, and of note is `latest`, as the latest stable 
 The environment variables required to use this image involves the setting of the root user password:
 
 ```console
-$ docker run --detach --name some-mariadb --env MARIADB_ROOT_PASSWORD=my-secret-pw mariadb:latest
+$ docker run --detach --name some-mariadb --env MARIADB_ROOT_PASSWORD=my-secret mariadb:latest
 ```
 
 or:
