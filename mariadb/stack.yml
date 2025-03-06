@@ -3,12 +3,10 @@
 services:
 
   db:
-    image: mariadb:11.7-ubi
+    image: mariadb:11.7
     restart: always
     environment:
       MARIADB_ROOT_PASSWORD: example
-    ports:
-      - 3306:3306
 
   adminer:
     image: adminer:4.17.1
