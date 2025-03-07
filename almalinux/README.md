@@ -28,13 +28,13 @@ WARNING:
 
 -	[`10-kitten-minimal`, `10-kitten-minimal-20250204`](https://github.com/AlmaLinux/container-images/blob/0dd34b412e662a392275d79dc2f0fb635e74ff7a/minimal/amd64/Dockerfile)
 
--	[`8`, `8.10`, `8.10-20240923`](https://github.com/AlmaLinux/container-images/blob/9220c28666f44af82172cba59a3ddc30fbae1cb7/default/amd64/Dockerfile)
+-	[`8`, `8.10`, `8.10-20250307`](https://github.com/AlmaLinux/container-images/blob/861f8cac54e81214b50b6f5d9bb6c6c8f3878651/default/amd64/Dockerfile)
 
--	[`8-minimal`, `8.10-minimal`, `8.10-minimal-20240923`](https://github.com/AlmaLinux/container-images/blob/9220c28666f44af82172cba59a3ddc30fbae1cb7/minimal/amd64/Dockerfile)
+-	[`8-minimal`, `8.10-minimal`, `8.10-minimal-20250307`](https://github.com/AlmaLinux/container-images/blob/861f8cac54e81214b50b6f5d9bb6c6c8f3878651/minimal/amd64/Dockerfile)
 
--	[`latest`, `9`, `9.5`, `9.5-20241118`](https://github.com/AlmaLinux/container-images/blob/77b627bf5868945d5ae46e65af84a2de13a7319a/default/amd64/Dockerfile)
+-	[`latest`, `9`, `9.5`, `9.5-20250307`](https://github.com/AlmaLinux/container-images/blob/42e0ab782d07aaf454c82face64cece898f109c8/default/amd64/Dockerfile)
 
--	[`minimal`, `9-minimal`, `9.5-minimal`, `9.5-minimal-20241118`](https://github.com/AlmaLinux/container-images/blob/77b627bf5868945d5ae46e65af84a2de13a7319a/minimal/amd64/Dockerfile)
+-	[`minimal`, `9-minimal`, `9.5-minimal`, `9.5-minimal-20250307`](https://github.com/AlmaLinux/container-images/blob/42e0ab782d07aaf454c82face64cece898f109c8/minimal/amd64/Dockerfile)
 
 # Quick reference (cont.)
 
