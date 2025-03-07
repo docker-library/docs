@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `s390x` builds of [the `gcc` official image](https://hub.docker.com/_/gcc) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -29,6 +31,8 @@ WARNING:
 -	[`13.3.0`, `13.3`, `13`, `13.3.0-bookworm`, `13.3-bookworm`, `13-bookworm`](https://github.com/docker-library/gcc/blob/b5055bcc1551a7e271af315158e1c260c212409c/13/Dockerfile)
 
 -	[`12.4.0`, `12.4`, `12`, `12.4.0-bookworm`, `12.4-bookworm`, `12-bookworm`](https://github.com/docker-library/gcc/blob/b5055bcc1551a7e271af315158e1c260c212409c/12/Dockerfile)
+
+[![s390x/gcc build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/s390x/job/gcc.svg?label=s390x/gcc%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/gcc/)
 
 # Quick reference (cont.)
 
@@ -64,7 +68,7 @@ The GNU Compiler Collection (GCC) is a compiler system produced by the GNU Proje
 The most straightforward way to use this image is to use a gcc container as both the build and runtime environment. In your `Dockerfile`, writing something along the lines of the following will compile and run your project:
 
 ```dockerfile
-FROM gcc:4.9
+FROM s390x/gcc:4.9
 COPY . /usr/src/myapp
 WORKDIR /usr/src/myapp
 RUN gcc -o myapp main.c
@@ -83,13 +87,13 @@ $ docker run -it --rm --name my-running-app my-gcc-app
 There may be occasions where it is not appropriate to run your app inside a container. To compile, but not run your app inside the Docker instance, you can write something like:
 
 ```console
-$ docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp gcc:4.9 gcc -o myapp myapp.c
+$ docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp s390x/gcc:4.9 gcc -o myapp myapp.c
 ```
 
 This will add your current directory, as a volume, to the container, set the working directory to the volume, and run the command `gcc -o myapp myapp.c.` This tells gcc to compile the code in `myapp.c` and output the executable to myapp. Alternatively, if you have a `Makefile`, you can instead run the `make` command inside your container:
 
 ```console
-$ docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp gcc:4.9 make
+$ docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp s390x/gcc:4.9 make
 ```
 
 # License
