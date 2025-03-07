@@ -54,25 +54,25 @@ WARNING:
 
 -	[`9.4.57-jdk11`, `9.4-jdk11`, `9-jdk11`, `9.4.57-jdk11-eclipse-temurin`, `9.4-jdk11-eclipse-temurin`, `9-jdk11-eclipse-temurin`](https://github.com/eclipse/jetty.docker/blob/446d2207a126e7afe059328bc3641731d2cbd74e/eclipse-temurin/9.4/jdk11/Dockerfile)
 
--	[`12.0.16-jre21-alpine`, `12.0-jre21-alpine`, `12-jre21-alpine`, `12.0.16-jre21-alpine-eclipse-temurin`, `12.0-jre21-alpine-eclipse-temurin`, `12-jre21-alpine-eclipse-temurin`](https://github.com/eclipse/jetty.docker/blob/446d2207a126e7afe059328bc3641731d2cbd74e/eclipse-temurin/12.0/jre21-alpine/Dockerfile)
+-	[`12.0.17-jre21-alpine`, `12.0-jre21-alpine`, `12-jre21-alpine`, `12.0.17-jre21-alpine-eclipse-temurin`, `12.0-jre21-alpine-eclipse-temurin`, `12-jre21-alpine-eclipse-temurin`](https://github.com/eclipse/jetty.docker/blob/ed93188032bcd7241fac00f7496cfc8d5c0bbfa7/eclipse-temurin/12.0/jre21-alpine/Dockerfile)
 
--	[`12.0.16-jre21`, `12.0-jre21`, `12-jre21`, `12.0.16-jre21-eclipse-temurin`, `12.0-jre21-eclipse-temurin`, `12-jre21-eclipse-temurin`](https://github.com/eclipse/jetty.docker/blob/446d2207a126e7afe059328bc3641731d2cbd74e/eclipse-temurin/12.0/jre21/Dockerfile)
+-	[`12.0.17-jre21`, `12.0-jre21`, `12-jre21`, `12.0.17-jre21-eclipse-temurin`, `12.0-jre21-eclipse-temurin`, `12-jre21-eclipse-temurin`](https://github.com/eclipse/jetty.docker/blob/ed93188032bcd7241fac00f7496cfc8d5c0bbfa7/eclipse-temurin/12.0/jre21/Dockerfile)
 
--	[`12.0.16-jre17-alpine`, `12.0-jre17-alpine`, `12-jre17-alpine`, `12.0.16-jre17-alpine-eclipse-temurin`, `12.0-jre17-alpine-eclipse-temurin`, `12-jre17-alpine-eclipse-temurin`](https://github.com/eclipse/jetty.docker/blob/446d2207a126e7afe059328bc3641731d2cbd74e/eclipse-temurin/12.0/jre17-alpine/Dockerfile)
+-	[`12.0.17-jre17-alpine`, `12.0-jre17-alpine`, `12-jre17-alpine`, `12.0.17-jre17-alpine-eclipse-temurin`, `12.0-jre17-alpine-eclipse-temurin`, `12-jre17-alpine-eclipse-temurin`](https://github.com/eclipse/jetty.docker/blob/ed93188032bcd7241fac00f7496cfc8d5c0bbfa7/eclipse-temurin/12.0/jre17-alpine/Dockerfile)
 
--	[`12.0.16-jre17`, `12.0-jre17`, `12-jre17`, `12.0.16-jre17-eclipse-temurin`, `12.0-jre17-eclipse-temurin`, `12-jre17-eclipse-temurin`](https://github.com/eclipse/jetty.docker/blob/446d2207a126e7afe059328bc3641731d2cbd74e/eclipse-temurin/12.0/jre17/Dockerfile)
+-	[`12.0.17-jre17`, `12.0-jre17`, `12-jre17`, `12.0.17-jre17-eclipse-temurin`, `12.0-jre17-eclipse-temurin`, `12-jre17-eclipse-temurin`](https://github.com/eclipse/jetty.docker/blob/ed93188032bcd7241fac00f7496cfc8d5c0bbfa7/eclipse-temurin/12.0/jre17/Dockerfile)
 
--	[`12.0.16-jdk23-alpine`, `12.0-jdk23-alpine`, `12-jdk23-alpine`, `12.0.16-jdk23-alpine-eclipse-temurin`, `12.0-jdk23-alpine-eclipse-temurin`, `12-jdk23-alpine-eclipse-temurin`](https://github.com/eclipse/jetty.docker/blob/446d2207a126e7afe059328bc3641731d2cbd74e/eclipse-temurin/12.0/jdk23-alpine/Dockerfile)
+-	[`12.0.17-jdk23-alpine`, `12.0-jdk23-alpine`, `12-jdk23-alpine`, `12.0.17-jdk23-alpine-eclipse-temurin`, `12.0-jdk23-alpine-eclipse-temurin`, `12-jdk23-alpine-eclipse-temurin`](https://github.com/eclipse/jetty.docker/blob/ed93188032bcd7241fac00f7496cfc8d5c0bbfa7/eclipse-temurin/12.0/jdk23-alpine/Dockerfile)
 
--	[`12.0.16-jdk23`, `12.0-jdk23`, `12-jdk23`, `12.0.16-jdk23-eclipse-temurin`, `12.0-jdk23-eclipse-temurin`, `12-jdk23-eclipse-temurin`](https://github.com/eclipse/jetty.docker/blob/446d2207a126e7afe059328bc3641731d2cbd74e/eclipse-temurin/12.0/jdk23/Dockerfile)
+-	[`12.0.17-jdk23`, `12.0-jdk23`, `12-jdk23`, `12.0.17-jdk23-eclipse-temurin`, `12.0-jdk23-eclipse-temurin`, `12-jdk23-eclipse-temurin`](https://github.com/eclipse/jetty.docker/blob/ed93188032bcd7241fac00f7496cfc8d5c0bbfa7/eclipse-temurin/12.0/jdk23/Dockerfile)
 
--	[`12.0.16-jdk21-alpine`, `12.0-jdk21-alpine`, `12-jdk21-alpine`, `12.0.16-jdk21-alpine-eclipse-temurin`, `12.0-jdk21-alpine-eclipse-temurin`, `12-jdk21-alpine-eclipse-temurin`](https://github.com/eclipse/jetty.docker/blob/446d2207a126e7afe059328bc3641731d2cbd74e/eclipse-temurin/12.0/jdk21-alpine/Dockerfile)
+-	[`12.0.17-jdk21-alpine`, `12.0-jdk21-alpine`, `12-jdk21-alpine`, `12.0.17-jdk21-alpine-eclipse-temurin`, `12.0-jdk21-alpine-eclipse-temurin`, `12-jdk21-alpine-eclipse-temurin`](https://github.com/eclipse/jetty.docker/blob/ed93188032bcd7241fac00f7496cfc8d5c0bbfa7/eclipse-temurin/12.0/jdk21-alpine/Dockerfile)
 
--	[`12.0.16`, `12.0`, `12`, `12.0.16-jdk21`, `12.0-jdk21`, `12-jdk21`, `12.0.16-eclipse-temurin`, `12.0-eclipse-temurin`, `12-eclipse-temurin`, `12.0.16-jdk21-eclipse-temurin`, `12.0-jdk21-eclipse-temurin`, `12-jdk21-eclipse-temurin`, `latest`, `jdk21`](https://github.com/eclipse/jetty.docker/blob/446d2207a126e7afe059328bc3641731d2cbd74e/eclipse-temurin/12.0/jdk21/Dockerfile)
+-	[`12.0.17`, `12.0`, `12`, `12.0.17-jdk21`, `12.0-jdk21`, `12-jdk21`, `12.0.17-eclipse-temurin`, `12.0-eclipse-temurin`, `12-eclipse-temurin`, `12.0.17-jdk21-eclipse-temurin`, `12.0-jdk21-eclipse-temurin`, `12-jdk21-eclipse-temurin`, `latest`, `jdk21`](https://github.com/eclipse/jetty.docker/blob/ed93188032bcd7241fac00f7496cfc8d5c0bbfa7/eclipse-temurin/12.0/jdk21/Dockerfile)
 
--	[`12.0.16-jdk17-alpine`, `12.0-jdk17-alpine`, `12-jdk17-alpine`, `12.0.16-jdk17-alpine-eclipse-temurin`, `12.0-jdk17-alpine-eclipse-temurin`, `12-jdk17-alpine-eclipse-temurin`](https://github.com/eclipse/jetty.docker/blob/446d2207a126e7afe059328bc3641731d2cbd74e/eclipse-temurin/12.0/jdk17-alpine/Dockerfile)
+-	[`12.0.17-jdk17-alpine`, `12.0-jdk17-alpine`, `12-jdk17-alpine`, `12.0.17-jdk17-alpine-eclipse-temurin`, `12.0-jdk17-alpine-eclipse-temurin`, `12-jdk17-alpine-eclipse-temurin`](https://github.com/eclipse/jetty.docker/blob/ed93188032bcd7241fac00f7496cfc8d5c0bbfa7/eclipse-temurin/12.0/jdk17-alpine/Dockerfile)
 
--	[`12.0.16-jdk17`, `12.0-jdk17`, `12-jdk17`, `12.0.16-jdk17-eclipse-temurin`, `12.0-jdk17-eclipse-temurin`, `12-jdk17-eclipse-temurin`, `jdk17`](https://github.com/eclipse/jetty.docker/blob/446d2207a126e7afe059328bc3641731d2cbd74e/eclipse-temurin/12.0/jdk17/Dockerfile)
+-	[`12.0.17-jdk17`, `12.0-jdk17`, `12-jdk17`, `12.0.17-jdk17-eclipse-temurin`, `12.0-jdk17-eclipse-temurin`, `12-jdk17-eclipse-temurin`, `jdk17`](https://github.com/eclipse/jetty.docker/blob/ed93188032bcd7241fac00f7496cfc8d5c0bbfa7/eclipse-temurin/12.0/jdk17/Dockerfile)
 
 -	[`11.0.24-jre21-alpine`, `11.0-jre21-alpine`, `11-jre21-alpine`, `11.0.24-jre21-alpine-eclipse-temurin`, `11.0-jre21-alpine-eclipse-temurin`, `11-jre21-alpine-eclipse-temurin`](https://github.com/eclipse/jetty.docker/blob/446d2207a126e7afe059328bc3641731d2cbd74e/eclipse-temurin/11.0/jre21-alpine/Dockerfile)
 
@@ -138,19 +138,19 @@ WARNING:
 
 -	[`9.4.57-jdk11-amazoncorretto`, `9.4-jdk11-amazoncorretto`, `9-jdk11-amazoncorretto`](https://github.com/eclipse/jetty.docker/blob/446d2207a126e7afe059328bc3641731d2cbd74e/amazoncorretto/9.4/jdk11/Dockerfile)
 
--	[`12.0.16-jdk23-al2023-amazoncorretto`, `12.0-jdk23-al2023-amazoncorretto`, `12-jdk23-al2023-amazoncorretto`](https://github.com/eclipse/jetty.docker/blob/446d2207a126e7afe059328bc3641731d2cbd74e/amazoncorretto/12.0/jdk23-al2023/Dockerfile)
+-	[`12.0.17-jdk23-al2023-amazoncorretto`, `12.0-jdk23-al2023-amazoncorretto`, `12-jdk23-al2023-amazoncorretto`](https://github.com/eclipse/jetty.docker/blob/ed93188032bcd7241fac00f7496cfc8d5c0bbfa7/amazoncorretto/12.0/jdk23-al2023/Dockerfile)
 
--	[`12.0.16-jdk21-alpine-amazoncorretto`, `12.0-jdk21-alpine-amazoncorretto`, `12-jdk21-alpine-amazoncorretto`](https://github.com/eclipse/jetty.docker/blob/446d2207a126e7afe059328bc3641731d2cbd74e/amazoncorretto/12.0/jdk21-alpine/Dockerfile)
+-	[`12.0.17-jdk21-alpine-amazoncorretto`, `12.0-jdk21-alpine-amazoncorretto`, `12-jdk21-alpine-amazoncorretto`](https://github.com/eclipse/jetty.docker/blob/ed93188032bcd7241fac00f7496cfc8d5c0bbfa7/amazoncorretto/12.0/jdk21-alpine/Dockerfile)
 
--	[`12.0.16-jdk21-al2023-amazoncorretto`, `12.0-jdk21-al2023-amazoncorretto`, `12-jdk21-al2023-amazoncorretto`](https://github.com/eclipse/jetty.docker/blob/446d2207a126e7afe059328bc3641731d2cbd74e/amazoncorretto/12.0/jdk21-al2023/Dockerfile)
+-	[`12.0.17-jdk21-al2023-amazoncorretto`, `12.0-jdk21-al2023-amazoncorretto`, `12-jdk21-al2023-amazoncorretto`](https://github.com/eclipse/jetty.docker/blob/ed93188032bcd7241fac00f7496cfc8d5c0bbfa7/amazoncorretto/12.0/jdk21-al2023/Dockerfile)
 
--	[`12.0.16-amazoncorretto`, `12.0-amazoncorretto`, `12-amazoncorretto`, `12.0.16-jdk21-amazoncorretto`, `12.0-jdk21-amazoncorretto`, `12-jdk21-amazoncorretto`](https://github.com/eclipse/jetty.docker/blob/446d2207a126e7afe059328bc3641731d2cbd74e/amazoncorretto/12.0/jdk21/Dockerfile)
+-	[`12.0.17-amazoncorretto`, `12.0-amazoncorretto`, `12-amazoncorretto`, `12.0.17-jdk21-amazoncorretto`, `12.0-jdk21-amazoncorretto`, `12-jdk21-amazoncorretto`](https://github.com/eclipse/jetty.docker/blob/ed93188032bcd7241fac00f7496cfc8d5c0bbfa7/amazoncorretto/12.0/jdk21/Dockerfile)
 
--	[`12.0.16-jdk17-alpine-amazoncorretto`, `12.0-jdk17-alpine-amazoncorretto`, `12-jdk17-alpine-amazoncorretto`](https://github.com/eclipse/jetty.docker/blob/446d2207a126e7afe059328bc3641731d2cbd74e/amazoncorretto/12.0/jdk17-alpine/Dockerfile)
+-	[`12.0.17-jdk17-alpine-amazoncorretto`, `12.0-jdk17-alpine-amazoncorretto`, `12-jdk17-alpine-amazoncorretto`](https://github.com/eclipse/jetty.docker/blob/ed93188032bcd7241fac00f7496cfc8d5c0bbfa7/amazoncorretto/12.0/jdk17-alpine/Dockerfile)
 
--	[`12.0.16-jdk17-al2023-amazoncorretto`, `12.0-jdk17-al2023-amazoncorretto`, `12-jdk17-al2023-amazoncorretto`](https://github.com/eclipse/jetty.docker/blob/446d2207a126e7afe059328bc3641731d2cbd74e/amazoncorretto/12.0/jdk17-al2023/Dockerfile)
+-	[`12.0.17-jdk17-al2023-amazoncorretto`, `12.0-jdk17-al2023-amazoncorretto`, `12-jdk17-al2023-amazoncorretto`](https://github.com/eclipse/jetty.docker/blob/ed93188032bcd7241fac00f7496cfc8d5c0bbfa7/amazoncorretto/12.0/jdk17-al2023/Dockerfile)
 
--	[`12.0.16-jdk17-amazoncorretto`, `12.0-jdk17-amazoncorretto`, `12-jdk17-amazoncorretto`](https://github.com/eclipse/jetty.docker/blob/446d2207a126e7afe059328bc3641731d2cbd74e/amazoncorretto/12.0/jdk17/Dockerfile)
+-	[`12.0.17-jdk17-amazoncorretto`, `12.0-jdk17-amazoncorretto`, `12-jdk17-amazoncorretto`](https://github.com/eclipse/jetty.docker/blob/ed93188032bcd7241fac00f7496cfc8d5c0bbfa7/amazoncorretto/12.0/jdk17/Dockerfile)
 
 -	[`11.0.24-jdk21-alpine-amazoncorretto`, `11.0-jdk21-alpine-amazoncorretto`, `11-jdk21-alpine-amazoncorretto`](https://github.com/eclipse/jetty.docker/blob/446d2207a126e7afe059328bc3641731d2cbd74e/amazoncorretto/11.0/jdk21-alpine/Dockerfile)
 
