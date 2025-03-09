@@ -208,6 +208,33 @@ This is a general Rails environment variable. This variable is useful when using
 
 For backwards compatibility, the deprecated, Docker-specific `REDMINE_SECRET_KEY_BASE` variable will automatically fill the `SECRET_KEY_BASE` environment variable. Users should migrate their deployments to use the `SECRET_KEY_BASE` variable directly.
 
+### `REDMINE_EMAIL_DELIVERY_METHOD`
+This variable sets the email delivery method that the specified method delivery will use in send email. There is no default value. Available now only `smtp`.
+
+### `REDMINE_EMAIL_DELIVERY_SMTP_ADDRESS`
+This variable sets the email delivery server address for mail server that the specified for sending emails. There is no default value.
+
+### `REDMINE_EMAIL_DELIVERY_SMTP_PORT`
+This variable sets the email delivery server port for mail server that the specified for sending emails. There is no default value.
+
+### `REDMINE_EMAIL_DELIVERY_SMTP_SSL`
+This variable sets the enabling using `ssl` for mail server that the specified for sending emails. There is no default value.
+
+### `REDMINE_EMAIL_DELIVERY_SMTP_ENABLE_STARTTLS_AUTO`
+This variable sets the enabling using `tls` for mail server that the specified for sending emails. There is no default value.
+
+### `REDMINE_EMAIL_DELIVERY_SMTP_OPENSSL_VERIFY_MODE`
+This variable sets the enabling verifying `ssl` for mail server that the specified for sending emails. There is no default value.
+
+### `REDMINE_EMAIL_DELIVERY_SMTP_AUTHENTICATION`
+This variable sets the type of authentication for mail server that the specified for sending emails. There is no default value. Available now only `login`.
+
+### `REDMINE_EMAIL_DELIVERY_SMTP_USER_NAME`
+This variable sets the user login for mail server that the specified for sending emails. There is no default value.
+
+### `REDMINE_EMAIL_DELIVERY_SMTP_PASSWORD`
+This variable sets the user password for mail server that the specified for sending emails. There is no default value.
+
 ## Running as an arbitrary user
 
 You can use the [`--user`](https://docs.docker.com/engine/reference/run/#user) flag to `docker run` and give it a `username:group` or `UID:GID`, the user doesn't need to exist in the container.
