@@ -24,7 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`noetic-ros-core`, `noetic-ros-core-focal`](https://github.com/osrf/docker_images/blob/27cc0b68263bbbb10bb58dd814efc0a6b0a01ec7/ros/noetic/ubuntu/focal/ros-core/Dockerfile)
+-	[`noetic-ros-core`, `noetic-ros-core-focal`](https://github.com/osrf/docker_images/blob/b525e9ef659ce448db6150fd5407ef62b2c5b265/ros/noetic/ubuntu/focal/ros-core/Dockerfile)
 
 -	[`noetic-ros-base`, `noetic-ros-base-focal`, `noetic`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/noetic/ubuntu/focal/ros-base/Dockerfile)
 
@@ -32,29 +32,29 @@ WARNING:
 
 -	[`noetic-perception`, `noetic-perception-focal`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/noetic/ubuntu/focal/perception/Dockerfile)
 
--	[`humble-ros-core`, `humble-ros-core-jammy`](https://github.com/osrf/docker_images/blob/27cc0b68263bbbb10bb58dd814efc0a6b0a01ec7/ros/humble/ubuntu/jammy/ros-core/Dockerfile)
+-	[`humble-ros-core`, `humble-ros-core-jammy`](https://github.com/osrf/docker_images/blob/b525e9ef659ce448db6150fd5407ef62b2c5b265/ros/humble/ubuntu/jammy/ros-core/Dockerfile)
 
 -	[`humble-ros-base`, `humble-ros-base-jammy`, `humble`](https://github.com/osrf/docker_images/blob/20e3ba685bb353a3c00be9ba01c1b7a6823c9472/ros/humble/ubuntu/jammy/ros-base/Dockerfile)
 
 -	[`humble-perception`, `humble-perception-jammy`](https://github.com/osrf/docker_images/blob/20d40c96b426b8956dec203e236abff2ec29b188/ros/humble/ubuntu/jammy/perception/Dockerfile)
 
--	[`iron-ros-core`, `iron-ros-core-jammy`](https://github.com/osrf/docker_images/blob/27cc0b68263bbbb10bb58dd814efc0a6b0a01ec7/ros/iron/ubuntu/jammy/ros-core/Dockerfile)
+-	[`iron-ros-core`, `iron-ros-core-jammy`](https://github.com/osrf/docker_images/blob/2ad854492209b8dbab303578a5baedab4d5ab41d/ros/iron/ubuntu/jammy/ros-core/Dockerfile)
 
 -	[`iron-ros-base`, `iron-ros-base-jammy`, `iron`](https://github.com/osrf/docker_images/blob/bca53bf4c09d771be3ff735da4157203b53ebc2b/ros/iron/ubuntu/jammy/ros-base/Dockerfile)
 
 -	[`iron-perception`, `iron-perception-jammy`](https://github.com/osrf/docker_images/blob/bca53bf4c09d771be3ff735da4157203b53ebc2b/ros/iron/ubuntu/jammy/perception/Dockerfile)
 
--	[`jazzy-ros-core`, `jazzy-ros-core-noble`](https://github.com/osrf/docker_images/blob/74e321bc1837c29f223a6d54895aa3c8eb184119/ros/jazzy/ubuntu/noble/ros-core/Dockerfile)
+-	[`jazzy-ros-core`, `jazzy-ros-core-noble`](https://github.com/osrf/docker_images/blob/b525e9ef659ce448db6150fd5407ef62b2c5b265/ros/jazzy/ubuntu/noble/ros-core/Dockerfile)
 
 -	[`jazzy-ros-base`, `jazzy-ros-base-noble`, `jazzy`, `latest`](https://github.com/osrf/docker_images/blob/0038f1c3a11aa0fc573d698b39ab5c204aad5a40/ros/jazzy/ubuntu/noble/ros-base/Dockerfile)
 
 -	[`jazzy-perception`, `jazzy-perception-noble`](https://github.com/osrf/docker_images/blob/0038f1c3a11aa0fc573d698b39ab5c204aad5a40/ros/jazzy/ubuntu/noble/perception/Dockerfile)
 
--	[`rolling-ros-core`, `rolling-ros-core-noble`](https://github.com/osrf/docker_images/blob/7f98ddd88d872299c45b60c8bcd70d4eb6665222/ros/rolling/ubuntu/noble/ros-core/Dockerfile)
+-	[`rolling-ros-core`, `rolling-ros-core-noble`](https://github.com/osrf/docker_images/blob/2e9b4e3c02bff2c70271e6f0fd15d4132e8cbcbb/ros/rolling/ubuntu/noble/ros-core/Dockerfile)
 
--	[`rolling-ros-base`, `rolling-ros-base-noble`, `rolling`](https://github.com/osrf/docker_images/blob/7f98ddd88d872299c45b60c8bcd70d4eb6665222/ros/rolling/ubuntu/noble/ros-base/Dockerfile)
+-	[`rolling-ros-base`, `rolling-ros-base-noble`, `rolling`](https://github.com/osrf/docker_images/blob/2e9b4e3c02bff2c70271e6f0fd15d4132e8cbcbb/ros/rolling/ubuntu/noble/ros-base/Dockerfile)
 
--	[`rolling-perception`, `rolling-perception-noble`](https://github.com/osrf/docker_images/blob/7f98ddd88d872299c45b60c8bcd70d4eb6665222/ros/rolling/ubuntu/noble/perception/Dockerfile)
+-	[`rolling-perception`, `rolling-perception-noble`](https://github.com/osrf/docker_images/blob/2e9b4e3c02bff2c70271e6f0fd15d4132e8cbcbb/ros/rolling/ubuntu/noble/perception/Dockerfile)
 
 # Quick reference (cont.)
 
