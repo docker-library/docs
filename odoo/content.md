@@ -204,3 +204,14 @@ By default, Odoo 16.0+ uses a filestore (located at `/var/lib/odoo/filestore/`) 
 ```console
 $ docker run --volumes-from old-odoo -p 8070:8069 --name new-odoo --link db:db -t %%IMAGE%%
 ```
+
+# Required Settings when running inside a container
+
+## Reports like invoices and offers are formatted wrong in print or PDF
+define a report.url key = http://0.0.0.0:8069 in settings/Technical/Systems parameters/parameters
+
+Aktivate developer mode by appending 
+```
+/web?debug=assets
+```
+to the url if you dont find the System parameters
