@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `i386` builds of [the `kibana` official image](https://hub.docker.com/_/kibana) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,11 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.16.5`](https://github.com/elastic/dockerfiles/blob/adf3eb349fa9ecd204b431b3d1550ed5b6cbee7d/kibana/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `i386` ARCHITECTURE
 
--	[`7.17.28`](https://github.com/elastic/dockerfiles/blob/2ef7e0a0be5abd21cb38a39c3cce65d5278ebfee/kibana/Dockerfile)
-
--	[`8.17.3`](https://github.com/elastic/dockerfiles/blob/204cb29c8473f0353e1e1b9181e9be03ef94be72/kibana/Dockerfile)
+[![i386/kibana build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/i386/job/kibana.svg?label=i386/kibana%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/i386/job/kibana/)
 
 # Quick reference (cont.)
 
