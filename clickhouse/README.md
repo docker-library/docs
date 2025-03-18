@@ -24,15 +24,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `jammy`, `25.1`, `25.1-jammy`, `25.1.5`, `25.1.5-jammy`, `25.1.5.31`, `25.1.5.31-jammy`](https://github.com/ClickHouse/docker-library/blob/0dda4ee3a166176d28fda59b9bfedef80ebc3023/server/25.1.5.31/Dockerfile.ubuntu)
+-	[`latest`, `jammy`, `25.2`, `25.2-jammy`, `25.2.2`, `25.2.2-jammy`, `25.2.2.39`, `25.2.2.39-jammy`](https://github.com/ClickHouse/docker-library/blob/3bcf01164f68ee4add1bf97aedf405c2956c88d3/server/25.2.2.39/Dockerfile.ubuntu)
 
--	[`24.12`, `24.12-jammy`, `24.12.5`, `24.12.5-jammy`, `24.12.5.81`, `24.12.5.81-jammy`](https://github.com/ClickHouse/docker-library/blob/0dda4ee3a166176d28fda59b9bfedef80ebc3023/server/24.12.5.81/Dockerfile.ubuntu)
+-	[`25.1`, `25.1-jammy`, `25.1.8`, `25.1.8-jammy`, `25.1.8.25`, `25.1.8.25-jammy`](https://github.com/ClickHouse/docker-library/blob/3bcf01164f68ee4add1bf97aedf405c2956c88d3/server/25.1.8.25/Dockerfile.ubuntu)
 
--	[`24.11`, `24.11-jammy`, `24.11.5`, `24.11.5-jammy`, `24.11.5.49`, `24.11.5.49-jammy`](https://github.com/ClickHouse/docker-library/blob/0dda4ee3a166176d28fda59b9bfedef80ebc3023/server/24.11.5.49/Dockerfile.ubuntu)
+-	[`24.12`, `24.12-jammy`, `24.12.6`, `24.12.6-jammy`, `24.12.6.70`, `24.12.6.70-jammy`](https://github.com/ClickHouse/docker-library/blob/3bcf01164f68ee4add1bf97aedf405c2956c88d3/server/24.12.6.70/Dockerfile.ubuntu)
 
--	[`lts`, `lts-focal`, `24.8`, `24.8-focal`, `24.8.14`, `24.8.14-focal`, `24.8.14.39`, `24.8.14.39-focal`](https://github.com/ClickHouse/docker-library/blob/0dda4ee3a166176d28fda59b9bfedef80ebc3023/server/24.8.14.39/Dockerfile.ubuntu)
+-	[`lts`, `lts-focal`, `24.8`, `24.8-focal`, `24.8.14`, `24.8.14-focal`, `24.8.14.39`, `24.8.14.39-focal`](https://github.com/ClickHouse/docker-library/blob/3bcf01164f68ee4add1bf97aedf405c2956c88d3/server/24.8.14.39/Dockerfile.ubuntu)
 
--	[`24.3`, `24.3-focal`, `24.3.18`, `24.3.18-focal`, `24.3.18.7`, `24.3.18.7-focal`](https://github.com/ClickHouse/docker-library/blob/0dda4ee3a166176d28fda59b9bfedef80ebc3023/server/24.3.18.7/Dockerfile.ubuntu)
+-	[`24.3`, `24.3-focal`, `24.3.18`, `24.3.18-focal`, `24.3.18.7`, `24.3.18.7-focal`](https://github.com/ClickHouse/docker-library/blob/3bcf01164f68ee4add1bf97aedf405c2956c88d3/server/24.3.18.7/Dockerfile.ubuntu)
 
 # Quick reference (cont.)
 
@@ -97,7 +97,7 @@ docker run -it --rm --network=container:some-clickhouse-server --entrypoint clic
 docker exec -it some-clickhouse-server clickhouse-client
 ```
 
-More information about the [ClickHouse client](https://clickhouse.com/docs/en/interfaces/cli/).
+More information about the [ClickHouse client](https://clickhouse.com/docs/interfaces/cli/).
 
 ### connect to it using curl
 
@@ -105,7 +105,7 @@ More information about the [ClickHouse client](https://clickhouse.com/docs/en/in
 echo "SELECT 'Hello, ClickHouse!'" | docker run -i --rm --network=container:some-clickhouse-server buildpack-deps:curl curl 'http://localhost:8123/?query=' -s --data-binary @-
 ```
 
-More information about the [ClickHouse HTTP Interface](https://clickhouse.com/docs/en/interfaces/http/).
+More information about the [ClickHouse HTTP Interface](https://clickhouse.com/docs/interfaces/http/).
 
 ### stopping / removing the container
 
@@ -174,9 +174,9 @@ Read more in [knowledge base](https://clickhouse.com/docs/knowledgebase/configur
 
 ## Configuration
 
-The container exposes port 8123 for the [HTTP interface](https://clickhouse.com/docs/en/interfaces/http_interface/) and port 9000 for the [native client](https://clickhouse.com/docs/en/interfaces/tcp/).
+The container exposes port 8123 for the [HTTP interface](https://clickhouse.com/docs/interfaces/http_interface/) and port 9000 for the [native client](https://clickhouse.com/docs/interfaces/tcp/).
 
-ClickHouse configuration is represented with a file "config.xml" ([documentation](https://clickhouse.com/docs/en/operations/configuration_files/))
+ClickHouse configuration is represented with a file "config.xml" ([documentation](https://clickhouse.com/docs/operations/configuration_files/))
 
 ### Start server instance with custom configuration
 
