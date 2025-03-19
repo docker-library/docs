@@ -66,30 +66,6 @@ The only tags which will continue to receive updates beyond July 2022 will be Ea
 
 -	[`25-ea-14-jdk-nanoserver-1809`, `25-ea-14-nanoserver-1809`, `25-ea-jdk-nanoserver-1809`, `25-ea-nanoserver-1809`, `25-jdk-nanoserver-1809`, `25-nanoserver-1809`](https://github.com/docker-library/openjdk/blob/8725dac4ccd04a79ac39513845d20fa73b4a81eb/25/jdk/windows/nanoserver-1809/Dockerfile)
 
--	[`24-rc-jdk-oraclelinux9`, `24-rc-oraclelinux9`, `24-jdk-oraclelinux9`, `24-oraclelinux9`, `24-rc-jdk-oracle`, `24-rc-oracle`, `24-jdk-oracle`, `24-oracle`](https://github.com/docker-library/openjdk/blob/4b990c22c8b369a103bce738d6838fe3e289a140/24/jdk/oraclelinux9/Dockerfile)
-
--	[`24-rc-jdk-oraclelinux8`, `24-rc-oraclelinux8`, `24-jdk-oraclelinux8`, `24-oraclelinux8`](https://github.com/docker-library/openjdk/blob/4b990c22c8b369a103bce738d6838fe3e289a140/24/jdk/oraclelinux8/Dockerfile)
-
--	[`24-rc-jdk-bookworm`, `24-rc-bookworm`, `24-jdk-bookworm`, `24-bookworm`](https://github.com/docker-library/openjdk/blob/4b990c22c8b369a103bce738d6838fe3e289a140/24/jdk/bookworm/Dockerfile)
-
--	[`24-rc-jdk-slim-bookworm`, `24-rc-slim-bookworm`, `24-jdk-slim-bookworm`, `24-slim-bookworm`, `24-rc-jdk-slim`, `24-rc-slim`, `24-jdk-slim`, `24-slim`](https://github.com/docker-library/openjdk/blob/4b990c22c8b369a103bce738d6838fe3e289a140/24/jdk/slim-bookworm/Dockerfile)
-
--	[`24-rc-jdk-bullseye`, `24-rc-bullseye`, `24-jdk-bullseye`, `24-bullseye`](https://github.com/docker-library/openjdk/blob/4b990c22c8b369a103bce738d6838fe3e289a140/24/jdk/bullseye/Dockerfile)
-
--	[`24-rc-jdk-slim-bullseye`, `24-rc-slim-bullseye`, `24-jdk-slim-bullseye`, `24-slim-bullseye`](https://github.com/docker-library/openjdk/blob/4b990c22c8b369a103bce738d6838fe3e289a140/24/jdk/slim-bullseye/Dockerfile)
-
--	[`24-rc-jdk-windowsservercore-ltsc2025`, `24-rc-windowsservercore-ltsc2025`, `24-jdk-windowsservercore-ltsc2025`, `24-windowsservercore-ltsc2025`](https://github.com/docker-library/openjdk/blob/4b990c22c8b369a103bce738d6838fe3e289a140/24/jdk/windows/windowsservercore-ltsc2025/Dockerfile)
-
--	[`24-rc-jdk-windowsservercore-ltsc2022`, `24-rc-windowsservercore-ltsc2022`, `24-jdk-windowsservercore-ltsc2022`, `24-windowsservercore-ltsc2022`](https://github.com/docker-library/openjdk/blob/4b990c22c8b369a103bce738d6838fe3e289a140/24/jdk/windows/windowsservercore-ltsc2022/Dockerfile)
-
--	[`24-rc-jdk-windowsservercore-1809`, `24-rc-windowsservercore-1809`, `24-jdk-windowsservercore-1809`, `24-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/4b990c22c8b369a103bce738d6838fe3e289a140/24/jdk/windows/windowsservercore-1809/Dockerfile)
-
--	[`24-rc-jdk-nanoserver-ltsc2025`, `24-rc-nanoserver-ltsc2025`, `24-jdk-nanoserver-ltsc2025`, `24-nanoserver-ltsc2025`](https://github.com/docker-library/openjdk/blob/4b990c22c8b369a103bce738d6838fe3e289a140/24/jdk/windows/nanoserver-ltsc2025/Dockerfile)
-
--	[`24-rc-jdk-nanoserver-ltsc2022`, `24-rc-nanoserver-ltsc2022`, `24-jdk-nanoserver-ltsc2022`, `24-nanoserver-ltsc2022`](https://github.com/docker-library/openjdk/blob/4b990c22c8b369a103bce738d6838fe3e289a140/24/jdk/windows/nanoserver-ltsc2022/Dockerfile)
-
--	[`24-rc-jdk-nanoserver-1809`, `24-rc-nanoserver-1809`, `24-jdk-nanoserver-1809`, `24-nanoserver-1809`](https://github.com/docker-library/openjdk/blob/4b990c22c8b369a103bce738d6838fe3e289a140/24/jdk/windows/nanoserver-1809/Dockerfile)
-
 ## Shared Tags
 
 -	`25-ea-14-jdk`, `25-ea-14`, `25-ea-jdk`, `25-ea`, `25-jdk`, `25`:
@@ -110,25 +86,6 @@ The only tags which will continue to receive updates beyond July 2022 will be Ea
 	-	[`25-ea-14-jdk-nanoserver-ltsc2025`](https://github.com/docker-library/openjdk/blob/8725dac4ccd04a79ac39513845d20fa73b4a81eb/25/jdk/windows/nanoserver-ltsc2025/Dockerfile)
 	-	[`25-ea-14-jdk-nanoserver-ltsc2022`](https://github.com/docker-library/openjdk/blob/8725dac4ccd04a79ac39513845d20fa73b4a81eb/25/jdk/windows/nanoserver-ltsc2022/Dockerfile)
 	-	[`25-ea-14-jdk-nanoserver-1809`](https://github.com/docker-library/openjdk/blob/8725dac4ccd04a79ac39513845d20fa73b4a81eb/25/jdk/windows/nanoserver-1809/Dockerfile)
-
--	`24-rc-jdk`, `24-rc`, `24-jdk`, `24`:
-
-	-	[`24-rc-jdk-oraclelinux9`](https://github.com/docker-library/openjdk/blob/4b990c22c8b369a103bce738d6838fe3e289a140/24/jdk/oraclelinux9/Dockerfile)
-	-	[`24-rc-jdk-windowsservercore-ltsc2025`](https://github.com/docker-library/openjdk/blob/4b990c22c8b369a103bce738d6838fe3e289a140/24/jdk/windows/windowsservercore-ltsc2025/Dockerfile)
-	-	[`24-rc-jdk-windowsservercore-ltsc2022`](https://github.com/docker-library/openjdk/blob/4b990c22c8b369a103bce738d6838fe3e289a140/24/jdk/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`24-rc-jdk-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/4b990c22c8b369a103bce738d6838fe3e289a140/24/jdk/windows/windowsservercore-1809/Dockerfile)
-
--	`24-rc-jdk-windowsservercore`, `24-rc-windowsservercore`, `24-jdk-windowsservercore`, `24-windowsservercore`:
-
-	-	[`24-rc-jdk-windowsservercore-ltsc2025`](https://github.com/docker-library/openjdk/blob/4b990c22c8b369a103bce738d6838fe3e289a140/24/jdk/windows/windowsservercore-ltsc2025/Dockerfile)
-	-	[`24-rc-jdk-windowsservercore-ltsc2022`](https://github.com/docker-library/openjdk/blob/4b990c22c8b369a103bce738d6838fe3e289a140/24/jdk/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`24-rc-jdk-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/4b990c22c8b369a103bce738d6838fe3e289a140/24/jdk/windows/windowsservercore-1809/Dockerfile)
-
--	`24-rc-jdk-nanoserver`, `24-rc-nanoserver`, `24-jdk-nanoserver`, `24-nanoserver`:
-
-	-	[`24-rc-jdk-nanoserver-ltsc2025`](https://github.com/docker-library/openjdk/blob/4b990c22c8b369a103bce738d6838fe3e289a140/24/jdk/windows/nanoserver-ltsc2025/Dockerfile)
-	-	[`24-rc-jdk-nanoserver-ltsc2022`](https://github.com/docker-library/openjdk/blob/4b990c22c8b369a103bce738d6838fe3e289a140/24/jdk/windows/nanoserver-ltsc2022/Dockerfile)
-	-	[`24-rc-jdk-nanoserver-1809`](https://github.com/docker-library/openjdk/blob/4b990c22c8b369a103bce738d6838fe3e289a140/24/jdk/windows/nanoserver-1809/Dockerfile)
 
 # Quick reference (cont.)
 
