@@ -244,6 +244,12 @@ For information about how to get Docker running on Windows, please see the relev
 -	[Windows Server Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_server)
 -	[Windows 10 Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)
 
+## `golang:<version>-tip`
+
+The term "tip" in the Go community is used to refer to the latest development branch ([a leftover convention from previously using `hg` for version control](https://github.com/golang/build/blob/6383021611af0e07cbf0a60222e066662557c796/cmd/coordinator/internal/legacydash/build.go#L313-L314)).
+
+These tags contains builds of Go's latest development branch, and they are updated on a ~weekly cadence.
+
 # License
 
 View [license information](http://golang.org/LICENSE) for the software contained in this image.
