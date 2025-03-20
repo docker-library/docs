@@ -40,9 +40,9 @@ WARNING:
 
 -	[`5.26.4-enterprise-ubi9`, `5.26-enterprise-ubi9`, `5-enterprise-ubi9`](https://github.com/neo4j/docker-neo4j-publish/blob/58586374f1e13c8c7eb1f42fad12bcaf254ed46b/5.26.4/ubi9/enterprise/Dockerfile)
 
--	[`4.4.41`, `4.4.41-community`, `4.4`, `4.4-community`](https://github.com/neo4j/docker-neo4j-publish/blob/51cfafd9a2e4f6960983b2dabdca820454ca84bd/4.4.41/bullseye/community/Dockerfile)
+-	[`4.4.42`, `4.4.42-community`, `4.4`, `4.4-community`](https://github.com/neo4j/docker-neo4j-publish/blob/33f079b10e1f3b69b6e8565ac788419462e237e9/4.4.42/bullseye/community/Dockerfile)
 
--	[`4.4.41-enterprise`, `4.4-enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/51cfafd9a2e4f6960983b2dabdca820454ca84bd/4.4.41/bullseye/enterprise/Dockerfile)
+-	[`4.4.42-enterprise`, `4.4-enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/33f079b10e1f3b69b6e8565ac788419462e237e9/4.4.42/bullseye/enterprise/Dockerfile)
 
 # Quick reference (cont.)
 
