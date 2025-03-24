@@ -26,7 +26,9 @@ WARNING:
 
 -	[`5.10.3`, `5.10`, `latest`](https://github.com/crate/docker-crate/blob/1dbe963d8752d183fe3773c5caf22a5718f17560/Dockerfile)
 
--	[`5.9.11`, `5.9`](https://github.com/crate/docker-crate/blob/42c7218d834e5c8d2a5db3406aef0d1e7efa2092/Dockerfile)
+-	[`5.9.12`, `5.9`](https://github.com/crate/docker-crate/blob/42c7218d834e5c8d2a5db3406aef0d1e7efa2092/Dockerfile)
+
+-	[`5.9.11`](https://github.com/crate/docker-crate/blob/f4ad4959f78765d2d7f0929acd49c2bdf449e8a1/Dockerfile)
 
 -	[`5.8.7`, `5.8`](https://github.com/crate/docker-crate/blob/1e8b7379346e188f5de637d9681d450d9435cb0a/Dockerfile)
 
