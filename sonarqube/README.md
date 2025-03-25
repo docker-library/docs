@@ -24,25 +24,33 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2025.1.1-developer`, `2025.1-developer`, `2025-lta-developer`, `developer`](https://github.com/SonarSource/docker-sonarqube/blob/500fa5278eef556c2404f51191e3d4b1b93ddbce/2025.1/developer/Dockerfile)
+-	[`2025.2.0-developer`, `2025.2-developer`, `developer`](https://github.com/SonarSource/docker-sonarqube/blob/2c5fde2923701623402dbec59369d4fa115f1adb/2025/developer/Dockerfile)
 
--	[`2025.1.1-enterprise`, `2025.1-enterprise`, `2025-lta-enterprise`, `enterprise`](https://github.com/SonarSource/docker-sonarqube/blob/500fa5278eef556c2404f51191e3d4b1b93ddbce/2025.1/enterprise/Dockerfile)
+-	[`2025.2.0-enterprise`, `2025.2-enterprise`, `enterprise`](https://github.com/SonarSource/docker-sonarqube/blob/2c5fde2923701623402dbec59369d4fa115f1adb/2025/enterprise/Dockerfile)
 
--	[`2025.1.1-datacenter-app`, `2025.1-datacenter-app`, `2025-lta-datacenter-app`, `datacenter-app`](https://github.com/SonarSource/docker-sonarqube/blob/500fa5278eef556c2404f51191e3d4b1b93ddbce/2025.1/datacenter/app/Dockerfile)
+-	[`2025.2.0-datacenter-app`, `2025.2-datacenter-app`, `datacenter-app`](https://github.com/SonarSource/docker-sonarqube/blob/2c5fde2923701623402dbec59369d4fa115f1adb/2025/datacenter/app/Dockerfile)
 
--	[`2025.1.1-datacenter-search`, `2025.1-datacenter-search`, `2025-lta-datacenter-search`, `datacenter-search`](https://github.com/SonarSource/docker-sonarqube/blob/500fa5278eef556c2404f51191e3d4b1b93ddbce/2025.1/datacenter/search/Dockerfile)
+-	[`2025.2.0-datacenter-search`, `2025.2-datacenter-search`, `datacenter-search`](https://github.com/SonarSource/docker-sonarqube/blob/2c5fde2923701623402dbec59369d4fa115f1adb/2025/datacenter/search/Dockerfile)
+
+-	[`2025.1.1-developer`, `2025.1-developer`, `2025-lta-developer`](https://github.com/SonarSource/docker-sonarqube/blob/2c5fde2923701623402dbec59369d4fa115f1adb/2025.1/developer/Dockerfile)
+
+-	[`2025.1.1-enterprise`, `2025.1-enterprise`, `2025-lta-enterprise`](https://github.com/SonarSource/docker-sonarqube/blob/2c5fde2923701623402dbec59369d4fa115f1adb/2025.1/enterprise/Dockerfile)
+
+-	[`2025.1.1-datacenter-app`, `2025.1-datacenter-app`, `2025-lta-datacenter-app`](https://github.com/SonarSource/docker-sonarqube/blob/2c5fde2923701623402dbec59369d4fa115f1adb/2025.1/datacenter/app/Dockerfile)
+
+-	[`2025.1.1-datacenter-search`, `2025.1-datacenter-search`, `2025-lta-datacenter-search`](https://github.com/SonarSource/docker-sonarqube/blob/2c5fde2923701623402dbec59369d4fa115f1adb/2025.1/datacenter/search/Dockerfile)
 
 -	[`25.3.0.104237-community`, `community`, `latest`](https://github.com/SonarSource/docker-sonarqube/blob/65d32aee3047ae2d7bff433d278b5e1622134a37/community-build/Dockerfile)
 
--	[`9.9.8-community`, `9.9-community`, `9-community`, `lts`, `lts-community`](https://github.com/SonarSource/docker-sonarqube/blob/500fa5278eef556c2404f51191e3d4b1b93ddbce/9/community/Dockerfile)
+-	[`9.9.8-community`, `9.9-community`, `9-community`, `lts`, `lts-community`](https://github.com/SonarSource/docker-sonarqube/blob/2c5fde2923701623402dbec59369d4fa115f1adb/9/community/Dockerfile)
 
--	[`9.9.8-developer`, `9.9-developer`, `9-developer`, `lts-developer`](https://github.com/SonarSource/docker-sonarqube/blob/500fa5278eef556c2404f51191e3d4b1b93ddbce/9/developer/Dockerfile)
+-	[`9.9.8-developer`, `9.9-developer`, `9-developer`, `lts-developer`](https://github.com/SonarSource/docker-sonarqube/blob/2c5fde2923701623402dbec59369d4fa115f1adb/9/developer/Dockerfile)
 
--	[`9.9.9-enterprise`, `9.9-enterprise`, `9-enterprise`, `lts-enterprise`](https://github.com/SonarSource/docker-sonarqube/blob/500fa5278eef556c2404f51191e3d4b1b93ddbce/9/enterprise/Dockerfile)
+-	[`9.9.9-enterprise`, `9.9-enterprise`, `9-enterprise`, `lts-enterprise`](https://github.com/SonarSource/docker-sonarqube/blob/2c5fde2923701623402dbec59369d4fa115f1adb/9/enterprise/Dockerfile)
 
--	[`9.9.9-datacenter-app`, `9.9-datacenter-app`, `9-datacenter-app`, `lts-datacenter-app`](https://github.com/SonarSource/docker-sonarqube/blob/500fa5278eef556c2404f51191e3d4b1b93ddbce/9/datacenter/app/Dockerfile)
+-	[`9.9.9-datacenter-app`, `9.9-datacenter-app`, `9-datacenter-app`, `lts-datacenter-app`](https://github.com/SonarSource/docker-sonarqube/blob/2c5fde2923701623402dbec59369d4fa115f1adb/9/datacenter/app/Dockerfile)
 
--	[`9.9.9-datacenter-search`, `9.9-datacenter-search`, `9-datacenter-search`, `lts-datacenter-search`](https://github.com/SonarSource/docker-sonarqube/blob/500fa5278eef556c2404f51191e3d4b1b93ddbce/9/datacenter/search/Dockerfile)
+-	[`9.9.9-datacenter-search`, `9.9-datacenter-search`, `9-datacenter-search`, `lts-datacenter-search`](https://github.com/SonarSource/docker-sonarqube/blob/2c5fde2923701623402dbec59369d4fa115f1adb/9/datacenter/search/Dockerfile)
 
 # Quick reference (cont.)
 
