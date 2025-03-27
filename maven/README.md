@@ -30,7 +30,7 @@ WARNING:
 
 -	[`3.9.9-eclipse-temurin-11-focal`, `3.9-eclipse-temurin-11-focal`, `3-eclipse-temurin-11-focal`](https://github.com/carlossg/docker-maven/blob/8cfe24baffa5b250f7bb2d31ce233fc28f3c4f20/eclipse-temurin-11-focal/Dockerfile)
 
--	[`3.9.9-eclipse-temurin-17`, `3.9-eclipse-temurin-17`, `3-eclipse-temurin-17`](https://github.com/carlossg/docker-maven/blob/87e4983f3606bd066dfaede1471e977a54df5ca2/eclipse-temurin-17/Dockerfile)
+-	[`3.9.9-eclipse-temurin-17`, `3.9-eclipse-temurin-17`, `3-eclipse-temurin-17`](https://github.com/carlossg/docker-maven/blob/289ad67772f6dfad22c5362b863a29ec7373f501/eclipse-temurin-17/Dockerfile)
 
 -	[`3.9.9-eclipse-temurin-17-alpine`, `3.9-eclipse-temurin-17-alpine`, `3-eclipse-temurin-17-alpine`](https://github.com/carlossg/docker-maven/blob/8cfe24baffa5b250f7bb2d31ce233fc28f3c4f20/eclipse-temurin-17-alpine/Dockerfile)
 
@@ -42,11 +42,11 @@ WARNING:
 
 -	[`3.9.9-eclipse-temurin-21-jammy`, `3.9-eclipse-temurin-21-jammy`, `3-eclipse-temurin-21-jammy`](https://github.com/carlossg/docker-maven/blob/8cfe24baffa5b250f7bb2d31ce233fc28f3c4f20/eclipse-temurin-21-jammy/Dockerfile)
 
--	[`3.9.9-eclipse-temurin-23`, `3.9-eclipse-temurin-23`, `3-eclipse-temurin-23`](https://github.com/carlossg/docker-maven/blob/c4359a51cb0fe7bc7e552f3e039a0e77947bbffc/eclipse-temurin-23/Dockerfile)
+-	[`3.9.9-eclipse-temurin-24`, `3.9-eclipse-temurin-24`, `3-eclipse-temurin-24`](https://github.com/carlossg/docker-maven/blob/289ad67772f6dfad22c5362b863a29ec7373f501/eclipse-temurin-24/Dockerfile)
 
--	[`3.9.9-eclipse-temurin-23-alpine`, `3.9-eclipse-temurin-23-alpine`, `3-eclipse-temurin-23-alpine`](https://github.com/carlossg/docker-maven/blob/c4359a51cb0fe7bc7e552f3e039a0e77947bbffc/eclipse-temurin-23-alpine/Dockerfile)
+-	[`3.9.9-eclipse-temurin-24-alpine`, `3.9-eclipse-temurin-24-alpine`, `3-eclipse-temurin-24-alpine`](https://github.com/carlossg/docker-maven/blob/289ad67772f6dfad22c5362b863a29ec7373f501/eclipse-temurin-24-alpine/Dockerfile)
 
--	[`3.9.9-eclipse-temurin-23-noble`, `3.9-eclipse-temurin-23-noble`, `3-eclipse-temurin-23-noble`](https://github.com/carlossg/docker-maven/blob/c4359a51cb0fe7bc7e552f3e039a0e77947bbffc/eclipse-temurin-23-noble/Dockerfile)
+-	[`3.9.9-eclipse-temurin-24-noble`, `3.9-eclipse-temurin-24-noble`, `3-eclipse-temurin-24-noble`](https://github.com/carlossg/docker-maven/blob/289ad67772f6dfad22c5362b863a29ec7373f501/eclipse-temurin-24-noble/Dockerfile)
 
 -	[`3.9.9-eclipse-temurin-8`, `3.9-eclipse-temurin-8`, `3-eclipse-temurin-8`](https://github.com/carlossg/docker-maven/blob/8cfe24baffa5b250f7bb2d31ce233fc28f3c4f20/eclipse-temurin-8/Dockerfile)
 
@@ -61,8 +61,6 @@ WARNING:
 -	[`3.9.9-ibm-semeru-17-focal`, `3.9-ibm-semeru-17-focal`, `3-ibm-semeru-17-focal`](https://github.com/carlossg/docker-maven/blob/8cfe24baffa5b250f7bb2d31ce233fc28f3c4f20/ibm-semeru-17-focal/Dockerfile)
 
 -	[`3.9.9-ibm-semeru-21-jammy`, `3.9-ibm-semeru-21-jammy`, `3-ibm-semeru-21-jammy`](https://github.com/carlossg/docker-maven/blob/8cfe24baffa5b250f7bb2d31ce233fc28f3c4f20/ibm-semeru-21-jammy/Dockerfile)
-
--	[`3.9.9-ibm-semeru-23-jammy`, `3.9-ibm-semeru-23-jammy`, `3-ibm-semeru-23-jammy`](https://github.com/carlossg/docker-maven/blob/c4359a51cb0fe7bc7e552f3e039a0e77947bbffc/ibm-semeru-23-jammy/Dockerfile)
 
 -	[`3.9.9-amazoncorretto-11`, `3.9-amazoncorretto-11`, `3-amazoncorretto-11`](https://github.com/carlossg/docker-maven/blob/8cfe24baffa5b250f7bb2d31ce233fc28f3c4f20/amazoncorretto-11/Dockerfile)
 
@@ -88,13 +86,9 @@ WARNING:
 
 -	[`3.9.9-amazoncorretto-21-debian`, `3.9.9-amazoncorretto-21-debian-bookworm`, `3.9-amazoncorretto-21-debian`, `3.9-amazoncorretto-21-debian-bookworm`, `3-amazoncorretto-21-debian`, `3-amazoncorretto-21-debian-bookworm`](https://github.com/carlossg/docker-maven/blob/b5ddd7190544dd759fb71bf56b6105ffcf4ee6ad/amazoncorretto-21-debian/Dockerfile)
 
--	[`3.9.9-amazoncorretto-23`, `3.9-amazoncorretto-23`, `3-amazoncorretto-23`](https://github.com/carlossg/docker-maven/blob/c4359a51cb0fe7bc7e552f3e039a0e77947bbffc/amazoncorretto-23/Dockerfile)
+-	[`3.9.9-amazoncorretto-24`, `3.9-amazoncorretto-24`, `3-amazoncorretto-24`](https://github.com/carlossg/docker-maven/blob/289ad67772f6dfad22c5362b863a29ec7373f501/amazoncorretto-24/Dockerfile)
 
--	[`3.9.9-amazoncorretto-23-al2023`, `3.9-amazoncorretto-23-al2023`, `3-amazoncorretto-23-al2023`](https://github.com/carlossg/docker-maven/blob/1a9e1b5643b9d895484f8cd841e01262a174f14b/amazoncorretto-23-al2023/Dockerfile)
-
--	[`3.9.9-amazoncorretto-23-alpine`, `3.9-amazoncorretto-23-alpine`, `3-amazoncorretto-23-alpine`](https://github.com/carlossg/docker-maven/blob/8db2ffe029454a39edce973ce06b21fcab59a4d5/amazoncorretto-23-alpine/Dockerfile)
-
--	[`3.9.9-amazoncorretto-23-debian`, `3.9.9-amazoncorretto-23-debian-bookworm`, `3.9-amazoncorretto-23-debian`, `3.9-amazoncorretto-23-debian-bookworm`, `3-amazoncorretto-23-debian`, `3-amazoncorretto-23-debian-bookworm`](https://github.com/carlossg/docker-maven/blob/b5ddd7190544dd759fb71bf56b6105ffcf4ee6ad/amazoncorretto-23-debian/Dockerfile)
+-	[`3.9.9-amazoncorretto-24-alpine`, `3.9-amazoncorretto-24-alpine`, `3-amazoncorretto-24-alpine`](https://github.com/carlossg/docker-maven/blob/289ad67772f6dfad22c5362b863a29ec7373f501/amazoncorretto-24-alpine/Dockerfile)
 
 -	[`3.9.9-amazoncorretto-8`, `3.9-amazoncorretto-8`, `3-amazoncorretto-8`](https://github.com/carlossg/docker-maven/blob/8cfe24baffa5b250f7bb2d31ce233fc28f3c4f20/amazoncorretto-8/Dockerfile)
 
@@ -110,7 +104,7 @@ WARNING:
 
 -	[`3.9.9-sapmachine-21`, `3.9.9-sapmachine`, `3.9-sapmachine-21`, `3.9-sapmachine`, `3-sapmachine-21`, `3-sapmachine`, `sapmachine`](https://github.com/carlossg/docker-maven/blob/8cfe24baffa5b250f7bb2d31ce233fc28f3c4f20/sapmachine-21/Dockerfile)
 
--	[`3.9.9-sapmachine-23`, `3.9-sapmachine-23`, `3-sapmachine-23`](https://github.com/carlossg/docker-maven/blob/c4359a51cb0fe7bc7e552f3e039a0e77947bbffc/sapmachine-23/Dockerfile)
+-	[`3.9.9-sapmachine-24`, `3.9-sapmachine-24`, `3-sapmachine-24`](https://github.com/carlossg/docker-maven/blob/289ad67772f6dfad22c5362b863a29ec7373f501/sapmachine-24/Dockerfile)
 
 # Quick reference (cont.)
 

@@ -60,18 +60,6 @@ WARNING:
 
 -	[`3.2.8-alpine3.20`, `3.2-alpine3.20`](https://github.com/docker-library/ruby/blob/00121708b79e89ee4c477dbae3035467ebe2484e/3.2/alpine3.20/Dockerfile)
 
--	[`3.1.7-bookworm`, `3.1-bookworm`, `3.1.7`, `3.1`](https://github.com/docker-library/ruby/blob/5331b92f3bb60480a551b28b325e5c312d5ee794/3.1/bookworm/Dockerfile)
-
--	[`3.1.7-slim-bookworm`, `3.1-slim-bookworm`, `3.1.7-slim`, `3.1-slim`](https://github.com/docker-library/ruby/blob/5331b92f3bb60480a551b28b325e5c312d5ee794/3.1/slim-bookworm/Dockerfile)
-
--	[`3.1.7-bullseye`, `3.1-bullseye`](https://github.com/docker-library/ruby/blob/5331b92f3bb60480a551b28b325e5c312d5ee794/3.1/bullseye/Dockerfile)
-
--	[`3.1.7-slim-bullseye`, `3.1-slim-bullseye`](https://github.com/docker-library/ruby/blob/5331b92f3bb60480a551b28b325e5c312d5ee794/3.1/slim-bullseye/Dockerfile)
-
--	[`3.1.7-alpine3.21`, `3.1-alpine3.21`, `3.1.7-alpine`, `3.1-alpine`](https://github.com/docker-library/ruby/blob/5331b92f3bb60480a551b28b325e5c312d5ee794/3.1/alpine3.21/Dockerfile)
-
--	[`3.1.7-alpine3.20`, `3.1-alpine3.20`](https://github.com/docker-library/ruby/blob/5331b92f3bb60480a551b28b325e5c312d5ee794/3.1/alpine3.20/Dockerfile)
-
 # Quick reference (cont.)
 
 -	**Where to file issues**:  

@@ -36,12 +36,6 @@ WARNING:
 
 -	[`5.1.7-alpine3.20`, `5.1-alpine3.20`, `5-alpine3.20`](https://github.com/docker-library/redmine/blob/eee88520aa10c29d0aa0ae70b665a7d337387be5/5.1/alpine3.20/Dockerfile)
 
--	[`5.0.12`, `5.0`, `5.0.12-bookworm`, `5.0-bookworm`](https://github.com/docker-library/redmine/blob/16b54a8b32b60af14af5917888e8abff62fffe2a/5.0/bookworm/Dockerfile)
-
--	[`5.0.12-alpine3.21`, `5.0-alpine3.21`, `5.0.12-alpine`, `5.0-alpine`](https://github.com/docker-library/redmine/blob/16b54a8b32b60af14af5917888e8abff62fffe2a/5.0/alpine3.21/Dockerfile)
-
--	[`5.0.12-alpine3.20`, `5.0-alpine3.20`](https://github.com/docker-library/redmine/blob/16b54a8b32b60af14af5917888e8abff62fffe2a/5.0/alpine3.20/Dockerfile)
-
 # Quick reference (cont.)
 
 -	**Where to file issues**:  

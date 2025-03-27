@@ -42,12 +42,6 @@ WARNING:
 
 -	[`16.4-mariadb-tomcat`, `16.4.7-mariadb-tomcat`](https://github.com/xwiki-contrib/docker-xwiki/blob/58e6e3f59cc6c7f15a7a1d0fe5b2390353e61e6d/16.4/mariadb-tomcat/Dockerfile)
 
--	[`14`, `14.10`, `14.10.21`, `14-mysql-tomcat`, `14.10-mysql-tomcat`, `14.10.21-mysql-tomcat`](https://github.com/xwiki-contrib/docker-xwiki/blob/ffbda2123e322160254f342751bce9b978412e5f/14/mysql-tomcat/Dockerfile)
-
--	[`14-postgres-tomcat`, `14.10-postgres-tomcat`, `14.10.21-postgres-tomcat`](https://github.com/xwiki-contrib/docker-xwiki/blob/ffbda2123e322160254f342751bce9b978412e5f/14/postgres-tomcat/Dockerfile)
-
--	[`14-mariadb-tomcat`, `14.10-mariadb-tomcat`, `14.10.21-mariadb-tomcat`](https://github.com/xwiki-contrib/docker-xwiki/blob/ffbda2123e322160254f342751bce9b978412e5f/14/mariadb-tomcat/Dockerfile)
-
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
