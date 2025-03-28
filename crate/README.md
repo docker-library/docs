@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm64v8` builds of [the `crate` official image](https://hub.docker.com/_/crate) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -33,6 +35,8 @@ WARNING:
 -	[`5.8.7`, `5.8`](https://github.com/crate/docker-crate/blob/1e8b7379346e188f5de637d9681d450d9435cb0a/Dockerfile)
 
 -	[`5.7.6`, `5.7`](https://github.com/crate/docker-crate/blob/93c9f0651b3513b57aa0dca19c0a084af25c3ab4/Dockerfile)
+
+[![arm64v8/crate build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/crate.svg?label=arm64v8/crate%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/crate/)
 
 # Quick reference (cont.)
 
@@ -83,7 +87,7 @@ CrateDB provides an [Admin UI](https://crate.io/docs/crate/admin-ui/):
 Spin up this Docker image like so:
 
 ```console
-$ docker run --publish 4200:4200 --publish 5432:5432 crate -Cdiscovery.type=single-node
+$ docker run --publish 4200:4200 --publish 5432:5432 arm64v8/crate -Cdiscovery.type=single-node
 ```
 
 Visit the [getting started](https://crate.io/docs/crate/tutorials/en/latest/install-run/) page to see all the available download and install options.
