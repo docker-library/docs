@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `riscv64` builds of [the `haproxy` official image](https://hub.docker.com/_/haproxy) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,31 +26,19 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.2-dev8`, `3.2-dev`, `3.2-dev8-bookworm`, `3.2-dev-bookworm`](https://github.com/docker-library/haproxy/blob/a3a9a360d63ff6f9e50e7dc3aeb7184911ef580d/3.2/Dockerfile)
-
 -	[`3.2-dev8-alpine`, `3.2-dev-alpine`, `3.2-dev8-alpine3.21`, `3.2-dev-alpine3.21`](https://github.com/docker-library/haproxy/blob/a3a9a360d63ff6f9e50e7dc3aeb7184911ef580d/3.2/alpine/Dockerfile)
-
--	[`3.1.6`, `3.1`, `latest`, `3.1.6-bookworm`, `3.1-bookworm`, `bookworm`](https://github.com/docker-library/haproxy/blob/2568abb822486a3abd10fa1942b98cfe5e1d5af7/3.1/Dockerfile)
 
 -	[`3.1.6-alpine`, `3.1-alpine`, `alpine`, `3.1.6-alpine3.21`, `3.1-alpine3.21`, `alpine3.21`](https://github.com/docker-library/haproxy/blob/2568abb822486a3abd10fa1942b98cfe5e1d5af7/3.1/alpine/Dockerfile)
 
--	[`3.0.9`, `3.0`, `lts`, `3.0.9-bookworm`, `3.0-bookworm`, `lts-bookworm`](https://github.com/docker-library/haproxy/blob/a4ad1d171a2056e3c1215ccac0005d012e2eced1/3.0/Dockerfile)
-
 -	[`3.0.9-alpine`, `3.0-alpine`, `lts-alpine`, `3.0.9-alpine3.21`, `3.0-alpine3.21`, `lts-alpine3.21`](https://github.com/docker-library/haproxy/blob/a4ad1d171a2056e3c1215ccac0005d012e2eced1/3.0/alpine/Dockerfile)
-
--	[`2.8.14`, `2.8`, `2.8.14-bookworm`, `2.8-bookworm`](https://github.com/docker-library/haproxy/blob/c491c7f23708215e6f6d3e6cc9339acfda331821/2.8/Dockerfile)
 
 -	[`2.8.14-alpine`, `2.8-alpine`, `2.8.14-alpine3.21`, `2.8-alpine3.21`](https://github.com/docker-library/haproxy/blob/c491c7f23708215e6f6d3e6cc9339acfda331821/2.8/alpine/Dockerfile)
 
--	[`2.6.21`, `2.6`, `2.6.21-bookworm`, `2.6-bookworm`](https://github.com/docker-library/haproxy/blob/1d0ad8c9e8dd1b976f8cc81b263f18bcfc1d9be2/2.6/Dockerfile)
-
 -	[`2.6.21-alpine`, `2.6-alpine`, `2.6.21-alpine3.21`, `2.6-alpine3.21`](https://github.com/docker-library/haproxy/blob/1d0ad8c9e8dd1b976f8cc81b263f18bcfc1d9be2/2.6/alpine/Dockerfile)
-
--	[`2.4.28`, `2.4`, `2.4.28-bookworm`, `2.4-bookworm`](https://github.com/docker-library/haproxy/blob/a59d80d27242e98cb3fa234e5fa9c81a3968be18/2.4/Dockerfile)
 
 -	[`2.4.28-alpine`, `2.4-alpine`, `2.4.28-alpine3.21`, `2.4-alpine3.21`](https://github.com/docker-library/haproxy/blob/34494c3b5479daab25cc47dd4790d93dfaebe9ac/2.4/alpine/Dockerfile)
 
--	[`2.2.33`, `2.2`, `2.2.33-bullseye`, `2.2-bullseye`](https://github.com/docker-library/haproxy/blob/8b639f8d7d8d5d3bc42273e509fd7ef0cabdb356/2.2/Dockerfile)
+[![riscv64/haproxy build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/riscv64/job/haproxy.svg?label=riscv64/haproxy%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/riscv64/job/haproxy/)
 
 # Quick reference (cont.)
 
@@ -88,7 +78,7 @@ It is also worth checking out the [`examples/` directory from upstream](http://g
 ## Create a `Dockerfile`
 
 ```dockerfile
-FROM haproxy:2.3
+FROM riscv64/haproxy:2.3
 COPY haproxy.cfg /usr/local/etc/haproxy/haproxy.cfg
 ```
 
@@ -117,7 +107,7 @@ You will need a kernel at [version 4.11 or newer](https://github.com/moby/moby/i
 ## Directly via bind mount
 
 ```console
-$ docker run -d --name my-running-haproxy -v /path/to/etc/haproxy:/usr/local/etc/haproxy:ro --sysctl net.ipv4.ip_unprivileged_port_start=0 haproxy:2.3
+$ docker run -d --name my-running-haproxy -v /path/to/etc/haproxy:/usr/local/etc/haproxy:ro --sysctl net.ipv4.ip_unprivileged_port_start=0 riscv64/haproxy:2.3
 ```
 
 Note that your host's `/path/to/etc/haproxy` folder should be populated with a file named `haproxy.cfg`. If this configuration file refers to any other files within that folder then you should ensure that they also exist (e.g. template files such as `400.http`, `404.http`, and so forth). However, many minimal configurations do not require any supporting files.
@@ -134,15 +124,13 @@ The entrypoint script in the image checks for running the command `haproxy` and 
 
 # Image Variants
 
-The `haproxy` images come in many flavors, each designed for a specific use case.
+The `riscv64/haproxy` images come in many flavors, each designed for a specific use case.
 
-## `haproxy:<version>`
+## `riscv64/haproxy:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like bookworm or bullseye in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
-
-## `haproxy:<version>-alpine`
+## `riscv64/haproxy:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
