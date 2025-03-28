@@ -9,7 +9,7 @@ services:
       MARIADB_ROOT_PASSWORD: example
 
   adminer:
-    image: adminer:4.17.1
+    image: adminer:5.0.1
     restart: always
     ports:
       - 8080:8080
