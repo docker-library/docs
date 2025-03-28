@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `windows-amd64` builds of [the `crate` official image](https://hub.docker.com/_/crate) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,15 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.10.3`, `5.10`, `latest`](https://github.com/crate/docker-crate/blob/1dbe963d8752d183fe3773c5caf22a5718f17560/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `windows-amd64` ARCHITECTURE
 
--	[`5.9.12`, `5.9`](https://github.com/crate/docker-crate/blob/42c7218d834e5c8d2a5db3406aef0d1e7efa2092/Dockerfile)
-
--	[`5.9.11`](https://github.com/crate/docker-crate/blob/f4ad4959f78765d2d7f0929acd49c2bdf449e8a1/Dockerfile)
-
--	[`5.8.7`, `5.8`](https://github.com/crate/docker-crate/blob/1e8b7379346e188f5de637d9681d450d9435cb0a/Dockerfile)
-
--	[`5.7.6`, `5.7`](https://github.com/crate/docker-crate/blob/93c9f0651b3513b57aa0dca19c0a084af25c3ab4/Dockerfile)
+[![winamd64/crate build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/windows-amd64/job/crate.svg?label=winamd64/crate%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/windows-amd64/job/crate/)
 
 # Quick reference (cont.)
 
@@ -83,7 +79,7 @@ CrateDB provides an [Admin UI](https://crate.io/docs/crate/admin-ui/):
 Spin up this Docker image like so:
 
 ```console
-$ docker run --publish 4200:4200 --publish 5432:5432 crate -Cdiscovery.type=single-node
+$ docker run --publish 4200:4200 --publish 5432:5432 winamd64/crate -Cdiscovery.type=single-node
 ```
 
 Visit the [getting started](https://crate.io/docs/crate/tutorials/en/latest/install-run/) page to see all the available download and install options.
