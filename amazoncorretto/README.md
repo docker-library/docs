@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `amd64` builds of [the `amazoncorretto` official image](https://hub.docker.com/_/amazoncorretto) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -134,6 +136,8 @@ WARNING:
 
 -	[`24-alpine3.21`, `24.0.0-alpine3.21`, `24-alpine3.21-full`, `24-alpine3.21-jdk`, `24-alpine`, `24.0.0-alpine`, `24-alpine-full`, `24-alpine-jdk`](https://github.com/corretto/corretto-docker/blob/4abdc06bc5a7f4942a8ff94b9da0b95044ffaf68/24/jdk/alpine/3.21/Dockerfile)
 
+[![amd64/amazoncorretto build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/amd64/job/amazoncorretto.svg?label=amd64/amazoncorretto%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/amazoncorretto/)
+
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
@@ -197,13 +201,13 @@ Note that there are multiple reasons why a CVE may appear to be present in a doc
 
 # Image Variants
 
-The `amazoncorretto` images come in many flavors, each designed for a specific use case.
+The `amd64/amazoncorretto` images come in many flavors, each designed for a specific use case.
 
-## `amazoncorretto:<version>`
+## `amd64/amazoncorretto:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `amazoncorretto:<version>-alpine`
+## `amd64/amazoncorretto:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
