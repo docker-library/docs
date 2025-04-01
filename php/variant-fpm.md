@@ -1,12 +1,12 @@
 ## `%%IMAGE%%:<version>-fpm`
 
-This variant contains [PHP’s FastCGI Process Manager (FPM)](https://www.php.net/fpm), which is the recommended FastCGI implementation for PHP.
+This variant contains [PHP's FastCGI Process Manager (FPM)](https://www.php.net/fpm), which is the recommended FastCGI implementation for PHP.
 
 In order to use this image variant, some kind of reverse proxy (such as NGINX, Apache, or other tool which speaks the FastCGI protocol) will be required.
 
 Some potentially helpful resources:
 
--	[FPM’s Official Configuration Reference](https://www.php.net/manual/en/install.fpm.configuration.php)
+-	[FPM's Official Configuration Reference](https://www.php.net/manual/en/install.fpm.configuration.php)
 -	[Simplified example by @md5](https://gist.github.com/md5/d9206eacb5a0ff5d6be0)
 -	[Very detailed article by Pascal Landau](https://www.pascallandau.com/blog/php-php-fpm-and-nginx-on-docker-in-windows-10/)
 -	[Stack Overflow discussion](https://stackoverflow.com/q/29905953/433558)
