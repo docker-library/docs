@@ -24,11 +24,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.9.2-apache`, `1.9-apache`, `1-apache`, `apache`, `1.9.2`, `1.9`, `1`, `latest`](https://github.com/YOURLS/images/blob/082820033f591498dbc30d4ffc0cc927197ebf26/apache/Dockerfile)
+-	[`1.10.0-apache`, `1.10-apache`, `1-apache`, `apache`, `1.10.0`, `1.10`, `1`, `latest`](https://github.com/YOURLS/images/blob/0901e6c9dd655f24bdfe42680508309114b71aa8/apache/Dockerfile)
 
--	[`1.9.2-fpm`, `1.9-fpm`, `1-fpm`, `fpm`](https://github.com/YOURLS/images/blob/082820033f591498dbc30d4ffc0cc927197ebf26/fpm/Dockerfile)
+-	[`1.10.0-fpm`, `1.10-fpm`, `1-fpm`, `fpm`](https://github.com/YOURLS/images/blob/0901e6c9dd655f24bdfe42680508309114b71aa8/fpm/Dockerfile)
 
--	[`1.9.2-fpm-alpine`, `1.9-fpm-alpine`, `1-fpm-alpine`, `fpm-alpine`](https://github.com/YOURLS/images/blob/082820033f591498dbc30d4ffc0cc927197ebf26/fpm-alpine/Dockerfile)
+-	[`1.10.0-fpm-alpine`, `1.10-fpm-alpine`, `1-fpm-alpine`, `fpm-alpine`](https://github.com/YOURLS/images/blob/0901e6c9dd655f24bdfe42680508309114b71aa8/fpm-alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -36,7 +36,7 @@ WARNING:
 	[https://github.com/YOURLS/docker/issues](https://github.com/YOURLS/docker/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/yourls/), [`arm32v5`](https://hub.docker.com/r/arm32v5/yourls/), [`arm32v6`](https://hub.docker.com/r/arm32v6/yourls/), [`arm32v7`](https://hub.docker.com/r/arm32v7/yourls/), [`arm64v8`](https://hub.docker.com/r/arm64v8/yourls/), [`i386`](https://hub.docker.com/r/i386/yourls/), [`mips64le`](https://hub.docker.com/r/mips64le/yourls/), [`ppc64le`](https://hub.docker.com/r/ppc64le/yourls/), [`s390x`](https://hub.docker.com/r/s390x/yourls/)
+	[`amd64`](https://hub.docker.com/r/amd64/yourls/), [`arm32v5`](https://hub.docker.com/r/arm32v5/yourls/), [`arm32v6`](https://hub.docker.com/r/arm32v6/yourls/), [`arm32v7`](https://hub.docker.com/r/arm32v7/yourls/), [`arm64v8`](https://hub.docker.com/r/arm64v8/yourls/), [`i386`](https://hub.docker.com/r/i386/yourls/), [`mips64le`](https://hub.docker.com/r/mips64le/yourls/), [`ppc64le`](https://hub.docker.com/r/ppc64le/yourls/), [`riscv64`](https://hub.docker.com/r/riscv64/yourls/), [`s390x`](https://hub.docker.com/r/s390x/yourls/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/yourls/` directory](https://github.com/docker-library/repo-info/blob/master/repos/yourls) ([history](https://github.com/docker-library/repo-info/commits/master/repos/yourls))  
