@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm64v8` builds of [the `gradle` official image](https://hub.docker.com/_/gradle) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -44,8 +46,6 @@ WARNING:
 
 -	[`8.13.0-jdk17-focal`, `8.13-jdk17-focal`, `8-jdk17-focal`, `jdk17-focal`, `8.13.0-jdk-focal`, `8.13-jdk-focal`, `8-jdk-focal`, `jdk-focal`, `8.13.0-focal`, `8.13-focal`, `8-focal`, `focal`](https://github.com/keeganwitt/docker-gradle/blob/b92e23fe7d6ab83e6d728e8028791ec3c670875b/jdk17-focal/Dockerfile)
 
--	[`8.13.0-jdk17-alpine`, `8.13-jdk17-alpine`, `8-jdk17-alpine`, `jdk17-alpine`](https://github.com/keeganwitt/docker-gradle/blob/b92e23fe7d6ab83e6d728e8028791ec3c670875b/jdk17-alpine/Dockerfile)
-
 -	[`8.13.0-jdk17-corretto`, `8.13-jdk17-corretto`, `8-jdk17-corretto`, `jdk17-corretto`, `8.13.0-jdk17-corretto-al2023`, `8.13-jdk17-corretto-al2023`, `8-jdk17-corretto-al2023`, `jdk17-corretto-al2023`](https://github.com/keeganwitt/docker-gradle/blob/b92e23fe7d6ab83e6d728e8028791ec3c670875b/jdk17-corretto/Dockerfile)
 
 -	[`8.13.0-jdk17-ubi`, `8.13-jdk17-ubi`, `8-jdk17-ubi`, `jdk17-ubi`, `8.13.0-jdk17-ubi-minimal`, `8.13-jdk17-ubi-minimal`, `8-jdk17-ubi-minimal`, `jdk17-ubi-minimal`](https://github.com/keeganwitt/docker-gradle/blob/b92e23fe7d6ab83e6d728e8028791ec3c670875b/jdk17-ubi9/Dockerfile)
@@ -59,8 +59,6 @@ WARNING:
 -	[`8.13.0-jdk11`, `8.13-jdk11`, `8-jdk11`, `jdk11`, `8.13.0-jdk11-jammy`, `8.13-jdk11-jammy`, `8-jdk11-jammy`, `jdk11-jammy`](https://github.com/keeganwitt/docker-gradle/blob/b92e23fe7d6ab83e6d728e8028791ec3c670875b/jdk11-jammy/Dockerfile)
 
 -	[`8.13.0-jdk11-focal`, `8.13-jdk11-focal`, `8-jdk11-focal`, `jdk11-focal`](https://github.com/keeganwitt/docker-gradle/blob/b92e23fe7d6ab83e6d728e8028791ec3c670875b/jdk11-focal/Dockerfile)
-
--	[`8.13.0-jdk11-alpine`, `8.13-jdk11-alpine`, `8-jdk11-alpine`, `jdk11-alpine`](https://github.com/keeganwitt/docker-gradle/blob/b92e23fe7d6ab83e6d728e8028791ec3c670875b/jdk11-alpine/Dockerfile)
 
 -	[`8.13.0-jdk11-corretto`, `8.13-jdk11-corretto`, `8-jdk11-corretto`, `jdk11-corretto`, `8.13.0-jdk11-corretto-al2023`, `8.13-jdk11-corretto-al2023`, `8-jdk11-corretto-al2023`, `jdk11-corretto-al2023`](https://github.com/keeganwitt/docker-gradle/blob/b92e23fe7d6ab83e6d728e8028791ec3c670875b/jdk11-corretto/Dockerfile)
 
@@ -80,8 +78,6 @@ WARNING:
 
 -	[`7.6.4-jdk17-focal`, `7.6-jdk17-focal`, `7-jdk17-focal`, `7.6.4-jdk-focal`, `7.6-jdk-focal`, `7-jdk-focal`, `7.6.4-focal`, `7.6-focal`, `7-focal`](https://github.com/keeganwitt/docker-gradle/blob/a4ebcac4a9fd3638d01f29dc0ab930c8ba818601/jdk17-focal/Dockerfile)
 
--	[`7.6.4-jdk17-alpine`, `7.6-jdk17-alpine`, `7-jdk17-alpine`, `7.6.4-jdk-alpine`, `7.6-jdk-alpine`, `7-jdk-alpine`, `7.6.4-alpine`, `7.6-alpine`, `7-alpine`](https://github.com/keeganwitt/docker-gradle/blob/a4ebcac4a9fd3638d01f29dc0ab930c8ba818601/jdk17-alpine/Dockerfile)
-
 -	[`7.6.4-jdk17-corretto`, `7.6-jdk17-corretto`, `7-jdk17-corretto`, `7.6.4-jdk17-corretto-al2023`, `7.6-jdk17-corretto-al2023`, `7-jdk17-corretto-al2023`](https://github.com/keeganwitt/docker-gradle/blob/a4ebcac4a9fd3638d01f29dc0ab930c8ba818601/jdk17-corretto/Dockerfile)
 
 -	[`7.6.4-jdk17-graal`, `7.6-jdk17-graal`, `7-jdk17-graal`, `7.6.4-jdk-graal`, `7.6-jdk-graal`, `7-jdk-graal`, `7.6.4-graal`, `7.6-graal`, `7-graal`, `7.6.4-jdk17-graal-noble`, `7.6-jdk17-graal-noble`, `7-jdk17-graal-noble`, `7.6.4-jdk-graal-noble`, `7.6-jdk-graal-noble`, `7-jdk-graal-noble`, `7.6.4-graal-noble`, `7.6-graal-noble`, `7-graal-noble`](https://github.com/keeganwitt/docker-gradle/blob/a4ebcac4a9fd3638d01f29dc0ab930c8ba818601/jdk17-noble-graal/Dockerfile)
@@ -93,8 +89,6 @@ WARNING:
 -	[`7.6.4-jdk11`, `7.6-jdk11`, `7-jdk11`, `7.6.4-jdk11-jammy`, `7.6-jdk11-jammy`, `7-jdk11-jammy`](https://github.com/keeganwitt/docker-gradle/blob/a4ebcac4a9fd3638d01f29dc0ab930c8ba818601/jdk11-jammy/Dockerfile)
 
 -	[`7.6.4-jdk11-focal`, `7.6-jdk11-focal`, `7-jdk11-focal`](https://github.com/keeganwitt/docker-gradle/blob/a4ebcac4a9fd3638d01f29dc0ab930c8ba818601/jdk11-focal/Dockerfile)
-
--	[`7.6.4-jdk11-alpine`, `7.6-jdk11-alpine`, `7-jdk11-alpine`](https://github.com/keeganwitt/docker-gradle/blob/a4ebcac4a9fd3638d01f29dc0ab930c8ba818601/jdk11-alpine/Dockerfile)
 
 -	[`7.6.4-jdk11-corretto`, `7.6-jdk11-corretto`, `7-jdk11-corretto`, `7.6.4-jdk11-corretto-al2023`, `7.6-jdk11-corretto-al2023`, `7-jdk11-corretto-al2023`](https://github.com/keeganwitt/docker-gradle/blob/a4ebcac4a9fd3638d01f29dc0ab930c8ba818601/jdk11-corretto/Dockerfile)
 
@@ -108,8 +102,6 @@ WARNING:
 
 -	[`6.9.4-jdk11-focal`, `6.9-jdk11-focal`, `6-jdk11-focal`, `6.9.4-jdk-focal`, `6.9-jdk-focal`, `6-jdk-focal`, `6.9.4-focal`, `6.9-focal`, `6-focal`](https://github.com/keeganwitt/docker-gradle/blob/f1737d15cd490d9878537f592ce8e870e06b99bc/jdk11-focal/Dockerfile)
 
--	[`6.9.4-jdk11-alpine`, `6.9-jdk11-alpine`, `6-jdk11-alpine`, `6.9.4-jdk-alpine`, `6.9-jdk-alpine`, `6-jdk-alpine`, `6.9.4-alpine`, `6.9-alpine`, `6-alpine`](https://github.com/keeganwitt/docker-gradle/blob/f1737d15cd490d9878537f592ce8e870e06b99bc/jdk11-alpine/Dockerfile)
-
 -	[`6.9.4-jdk11-corretto`, `6.9-jdk11-corretto`, `6-jdk11-corretto`, `6.9.4-jdk11-corretto-al2023`, `6.9-jdk11-corretto-al2023`, `6-jdk11-corretto-al2023`](https://github.com/keeganwitt/docker-gradle/blob/f1737d15cd490d9878537f592ce8e870e06b99bc/jdk11-corretto/Dockerfile)
 
 -	[`6.9.4-jdk8`, `6.9-jdk8`, `6-jdk8`, `6.9.4-jdk8-jammy`, `6.9-jdk8-jammy`, `6-jdk8-jammy`](https://github.com/keeganwitt/docker-gradle/blob/f1737d15cd490d9878537f592ce8e870e06b99bc/jdk8-jammy/Dockerfile)
@@ -117,6 +109,8 @@ WARNING:
 -	[`6.9.4-jdk8-focal`, `6.9-jdk8-focal`, `6-jdk8-focal`](https://github.com/keeganwitt/docker-gradle/blob/f1737d15cd490d9878537f592ce8e870e06b99bc/jdk8-focal/Dockerfile)
 
 -	[`6.9.4-jdk8-corretto`, `6.9-jdk8-corretto`, `6-jdk8-corretto`, `6.9.4-jdk8-corretto-al2023`, `6.9-jdk8-corretto-al2023`, `6-jdk8-corretto-al2023`](https://github.com/keeganwitt/docker-gradle/blob/f1737d15cd490d9878537f592ce8e870e06b99bc/jdk8-corretto/Dockerfile)
+
+[![arm64v8/gradle build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/gradle.svg?label=arm64v8/gradle%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/gradle/)
 
 # Quick reference (cont.)
 
@@ -149,7 +143,7 @@ WARNING:
 
 Run this from the directory of the Gradle project you want to build.
 
-`docker run --rm -u gradle -v "$PWD":/home/gradle/project -w /home/gradle/project gradle gradle <gradle-task>`
+`docker run --rm -u gradle -v "$PWD":/home/gradle/project -w /home/gradle/project arm64v8/gradle gradle <gradle-task>`
 
 Note the above command runs using uid/gid 1000 (user *gradle*) to avoid running as root.
 
@@ -161,15 +155,15 @@ Java 21 does not currently support build customizations using Kotlin (such as us
 
 # Image Variants
 
-The `gradle` images come in many flavors, each designed for a specific use case.
+The `arm64v8/gradle` images come in many flavors, each designed for a specific use case.
 
-## `gradle:<version>`
+## `arm64v8/gradle:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
 Some of these tags may have names like focal, jammy, or noble in them. These are the suite code names for releases of [Ubuntu](https://wiki.ubuntu.com/Releases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Ubuntu.
 
-## `gradle:<version>-alpine`
+## `arm64v8/gradle:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
