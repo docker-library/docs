@@ -28,7 +28,7 @@ WARNING:
 
 -	[`1.10.27`, `1.10`, `1`](https://github.com/composer/docker/blob/722eb1639245daf4cf6980d2de8737e204f56384/legacy/Dockerfile)
 
--	[`2.8.6`, `2.8`, `2`, `latest`](https://github.com/composer/docker/blob/7687464486389e94d55a2bb128a4be36bb5958b4/latest/Dockerfile)
+-	[`2.8.7`, `2.8`, `2`, `latest`](https://github.com/composer/docker/blob/942c2b11989714b897fd42a9916c37f85116a3af/latest/Dockerfile)
 
 # Quick reference (cont.)
 
