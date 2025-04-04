@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `i386` builds of [the `logstash` official image](https://hub.docker.com/_/logstash) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,11 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.16.6`](https://github.com/elastic/dockerfiles/blob/2363a62c2fff853b6ce991d24e7e244e459279a1/logstash/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `i386` ARCHITECTURE
 
--	[`7.17.28`](https://github.com/elastic/dockerfiles/blob/2ef7e0a0be5abd21cb38a39c3cce65d5278ebfee/logstash/Dockerfile)
-
--	[`8.17.4`](https://github.com/elastic/dockerfiles/blob/92353caed0efb0cd7dabd9113167277fd4488856/logstash/Dockerfile)
+[![i386/logstash build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/i386/job/logstash.svg?label=i386/logstash%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/i386/job/logstash/)
 
 # Quick reference (cont.)
 
