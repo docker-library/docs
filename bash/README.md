@@ -26,7 +26,7 @@ WARNING:
 
 -	[`devel-20250331`, `devel`, `devel-20250331-alpine3.21`, `devel-alpine3.21`](https://github.com/tianon/docker-bash/blob/d0de34dfee2b0ef58f9984f4f9f8ec4d0ca68f8b/devel/Dockerfile)
 
--	[`5.3-beta`, `5.3-rc`, `rc`, `5.3-beta-alpine3.21`, `5.3-rc-alpine3.21`, `rc-alpine3.21`](https://github.com/tianon/docker-bash/blob/7414f66135e4327b0cca7644bdaf98f22e227c6c/5.3-rc/Dockerfile)
+-	[`5.3-rc1`, `5.3-rc`, `rc`, `5.3-rc1-alpine3.21`, `5.3-rc-alpine3.21`, `rc-alpine3.21`](https://github.com/tianon/docker-bash/blob/82c9b997d8f8a2ea8f3e451389c0612ca9a31442/5.3-rc/Dockerfile)
 
 -	[`5.2.37`, `5.2`, `5`, `latest`, `5.2.37-alpine3.21`, `5.2-alpine3.21`, `5-alpine3.21`, `alpine3.21`](https://github.com/tianon/docker-bash/blob/712b1f0c63d45c37d1072e6e9e635da1edfb0734/5.2/Dockerfile)
 
