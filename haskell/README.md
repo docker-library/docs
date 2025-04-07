@@ -24,17 +24,21 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`9.10.1-bullseye`, `9.10-bullseye`, `9-bullseye`, `bullseye`, `9.10.1`, `9.10`, `9`, `latest`](https://github.com/haskell/docker-haskell/blob/68ddf626a38f6e76a81df168d1e24bd778b17bef/9.10/bullseye/Dockerfile)
+-	[`9.12.2-bookworm`, `9.12-bookworm`, `9-bookworm`, `bookworm`, `9.12.2`, `9.12`, `9`, `latest`](https://github.com/haskell/docker-haskell/blob/e7f56b0064dea2d53541ca85a9b2d2cb82cf8c13/9.12/bookworm/Dockerfile)
 
--	[`9.10.1-slim-bullseye`, `9.10-slim-bullseye`, `9-slim-bullseye`, `slim-bullseye`, `9-slim`, `slim`](https://github.com/haskell/docker-haskell/blob/68ddf626a38f6e76a81df168d1e24bd778b17bef/9.10/slim-bullseye/Dockerfile)
+-	[`9.12.2-slim-bookworm`, `9.12-slim-bookworm`, `9-slim-bookworm`, `slim-bookworm`, `9-slim`, `slim`](https://github.com/haskell/docker-haskell/blob/e7f56b0064dea2d53541ca85a9b2d2cb82cf8c13/9.12/slim-bookworm/Dockerfile)
 
--	[`9.8.4-bullseye`, `9.8-bullseye`, `9.8.4`, `9.8`](https://github.com/haskell/docker-haskell/blob/68ddf626a38f6e76a81df168d1e24bd778b17bef/9.8/bullseye/Dockerfile)
+-	[`9.10.1-bullseye`, `9.10-bullseye`, `9-bullseye`, `bullseye`, `9.10.1`, `9.10`](https://github.com/haskell/docker-haskell/blob/e7f56b0064dea2d53541ca85a9b2d2cb82cf8c13/9.10/bullseye/Dockerfile)
 
--	[`9.8.4-slim-bullseye`, `9.8-slim-bullseye`, `9.8.4-slim`, `9.8-slim`](https://github.com/haskell/docker-haskell/blob/68ddf626a38f6e76a81df168d1e24bd778b17bef/9.8/slim-bullseye/Dockerfile)
+-	[`9.10.1-slim-bullseye`, `9.10-slim-bullseye`, `9-slim-bullseye`, `slim-bullseye`](https://github.com/haskell/docker-haskell/blob/e7f56b0064dea2d53541ca85a9b2d2cb82cf8c13/9.10/slim-bullseye/Dockerfile)
 
--	[`9.6.6-bullseye`, `9.6-bullseye`, `9.6.6`, `9.6`](https://github.com/haskell/docker-haskell/blob/68ddf626a38f6e76a81df168d1e24bd778b17bef/9.6/bullseye/Dockerfile)
+-	[`9.8.4-bullseye`, `9.8-bullseye`, `9.8.4`, `9.8`](https://github.com/haskell/docker-haskell/blob/e7f56b0064dea2d53541ca85a9b2d2cb82cf8c13/9.8/bullseye/Dockerfile)
 
--	[`9.6.6-slim-bullseye`, `9.6-slim-bullseye`, `9.6.6-slim`, `9.6-slim`](https://github.com/haskell/docker-haskell/blob/68ddf626a38f6e76a81df168d1e24bd778b17bef/9.6/slim-bullseye/Dockerfile)
+-	[`9.8.4-slim-bullseye`, `9.8-slim-bullseye`, `9.8.4-slim`, `9.8-slim`](https://github.com/haskell/docker-haskell/blob/e7f56b0064dea2d53541ca85a9b2d2cb82cf8c13/9.8/slim-bullseye/Dockerfile)
+
+-	[`9.6.7-bullseye`, `9.6-bullseye`, `9.6.7`, `9.6`](https://github.com/haskell/docker-haskell/blob/e7f56b0064dea2d53541ca85a9b2d2cb82cf8c13/9.6/bullseye/Dockerfile)
+
+-	[`9.6.7-slim-bullseye`, `9.6-slim-bullseye`, `9.6.7-slim`, `9.6-slim`](https://github.com/haskell/docker-haskell/blob/e7f56b0064dea2d53541ca85a9b2d2cb82cf8c13/9.6/slim-bullseye/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -171,7 +175,7 @@ The `haskell` images come in many flavors, each designed for a specific use case
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like bullseye in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+Some of these tags may have names like bookworm or bullseye in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 ## `haskell:<version>-slim`
 
