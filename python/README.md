@@ -82,41 +82,41 @@ WARNING:
 
 -	[`3.12.10-windowsservercore-1809`, `3.12-windowsservercore-1809`](https://github.com/docker-library/python/blob/70fc099be48e4a130afd949a4dd3c6afe6935b8a/3.12/windows/windowsservercore-1809/Dockerfile)
 
--	[`3.11.12-bookworm`, `3.11-bookworm`](https://github.com/docker-library/python/blob/70fc099be48e4a130afd949a4dd3c6afe6935b8a/3.11/bookworm/Dockerfile)
+-	[`3.11.12-bookworm`, `3.11-bookworm`](https://github.com/docker-library/python/blob/5f041dab48cbaa33eef235fb94ddf07c61a53ad7/3.11/bookworm/Dockerfile)
 
--	[`3.11.12-slim-bookworm`, `3.11-slim-bookworm`, `3.11.12-slim`, `3.11-slim`](https://github.com/docker-library/python/blob/70fc099be48e4a130afd949a4dd3c6afe6935b8a/3.11/slim-bookworm/Dockerfile)
+-	[`3.11.12-slim-bookworm`, `3.11-slim-bookworm`, `3.11.12-slim`, `3.11-slim`](https://github.com/docker-library/python/blob/5f041dab48cbaa33eef235fb94ddf07c61a53ad7/3.11/slim-bookworm/Dockerfile)
 
--	[`3.11.12-bullseye`, `3.11-bullseye`](https://github.com/docker-library/python/blob/70fc099be48e4a130afd949a4dd3c6afe6935b8a/3.11/bullseye/Dockerfile)
+-	[`3.11.12-bullseye`, `3.11-bullseye`](https://github.com/docker-library/python/blob/5f041dab48cbaa33eef235fb94ddf07c61a53ad7/3.11/bullseye/Dockerfile)
 
--	[`3.11.12-slim-bullseye`, `3.11-slim-bullseye`](https://github.com/docker-library/python/blob/70fc099be48e4a130afd949a4dd3c6afe6935b8a/3.11/slim-bullseye/Dockerfile)
+-	[`3.11.12-slim-bullseye`, `3.11-slim-bullseye`](https://github.com/docker-library/python/blob/5f041dab48cbaa33eef235fb94ddf07c61a53ad7/3.11/slim-bullseye/Dockerfile)
 
--	[`3.11.12-alpine3.21`, `3.11-alpine3.21`, `3.11.12-alpine`, `3.11-alpine`](https://github.com/docker-library/python/blob/70fc099be48e4a130afd949a4dd3c6afe6935b8a/3.11/alpine3.21/Dockerfile)
+-	[`3.11.12-alpine3.21`, `3.11-alpine3.21`, `3.11.12-alpine`, `3.11-alpine`](https://github.com/docker-library/python/blob/5f041dab48cbaa33eef235fb94ddf07c61a53ad7/3.11/alpine3.21/Dockerfile)
 
--	[`3.11.12-alpine3.20`, `3.11-alpine3.20`](https://github.com/docker-library/python/blob/70fc099be48e4a130afd949a4dd3c6afe6935b8a/3.11/alpine3.20/Dockerfile)
+-	[`3.11.12-alpine3.20`, `3.11-alpine3.20`](https://github.com/docker-library/python/blob/5f041dab48cbaa33eef235fb94ddf07c61a53ad7/3.11/alpine3.20/Dockerfile)
 
--	[`3.10.17-bookworm`, `3.10-bookworm`](https://github.com/docker-library/python/blob/70fc099be48e4a130afd949a4dd3c6afe6935b8a/3.10/bookworm/Dockerfile)
+-	[`3.10.17-bookworm`, `3.10-bookworm`](https://github.com/docker-library/python/blob/5f041dab48cbaa33eef235fb94ddf07c61a53ad7/3.10/bookworm/Dockerfile)
 
--	[`3.10.17-slim-bookworm`, `3.10-slim-bookworm`, `3.10.17-slim`, `3.10-slim`](https://github.com/docker-library/python/blob/70fc099be48e4a130afd949a4dd3c6afe6935b8a/3.10/slim-bookworm/Dockerfile)
+-	[`3.10.17-slim-bookworm`, `3.10-slim-bookworm`, `3.10.17-slim`, `3.10-slim`](https://github.com/docker-library/python/blob/5f041dab48cbaa33eef235fb94ddf07c61a53ad7/3.10/slim-bookworm/Dockerfile)
 
--	[`3.10.17-bullseye`, `3.10-bullseye`](https://github.com/docker-library/python/blob/70fc099be48e4a130afd949a4dd3c6afe6935b8a/3.10/bullseye/Dockerfile)
+-	[`3.10.17-bullseye`, `3.10-bullseye`](https://github.com/docker-library/python/blob/5f041dab48cbaa33eef235fb94ddf07c61a53ad7/3.10/bullseye/Dockerfile)
 
--	[`3.10.17-slim-bullseye`, `3.10-slim-bullseye`](https://github.com/docker-library/python/blob/70fc099be48e4a130afd949a4dd3c6afe6935b8a/3.10/slim-bullseye/Dockerfile)
+-	[`3.10.17-slim-bullseye`, `3.10-slim-bullseye`](https://github.com/docker-library/python/blob/5f041dab48cbaa33eef235fb94ddf07c61a53ad7/3.10/slim-bullseye/Dockerfile)
 
--	[`3.10.17-alpine3.21`, `3.10-alpine3.21`, `3.10.17-alpine`, `3.10-alpine`](https://github.com/docker-library/python/blob/70fc099be48e4a130afd949a4dd3c6afe6935b8a/3.10/alpine3.21/Dockerfile)
+-	[`3.10.17-alpine3.21`, `3.10-alpine3.21`, `3.10.17-alpine`, `3.10-alpine`](https://github.com/docker-library/python/blob/5f041dab48cbaa33eef235fb94ddf07c61a53ad7/3.10/alpine3.21/Dockerfile)
 
--	[`3.10.17-alpine3.20`, `3.10-alpine3.20`](https://github.com/docker-library/python/blob/70fc099be48e4a130afd949a4dd3c6afe6935b8a/3.10/alpine3.20/Dockerfile)
+-	[`3.10.17-alpine3.20`, `3.10-alpine3.20`](https://github.com/docker-library/python/blob/5f041dab48cbaa33eef235fb94ddf07c61a53ad7/3.10/alpine3.20/Dockerfile)
 
--	[`3.9.21-bookworm`, `3.9-bookworm`](https://github.com/docker-library/python/blob/ebae24f3ea4df70859757829ac383e1dd8de3d2f/3.9/bookworm/Dockerfile)
+-	[`3.9.22-bookworm`, `3.9-bookworm`](https://github.com/docker-library/python/blob/5f041dab48cbaa33eef235fb94ddf07c61a53ad7/3.9/bookworm/Dockerfile)
 
--	[`3.9.21-slim-bookworm`, `3.9-slim-bookworm`, `3.9.21-slim`, `3.9-slim`](https://github.com/docker-library/python/blob/ebae24f3ea4df70859757829ac383e1dd8de3d2f/3.9/slim-bookworm/Dockerfile)
+-	[`3.9.22-slim-bookworm`, `3.9-slim-bookworm`, `3.9.22-slim`, `3.9-slim`](https://github.com/docker-library/python/blob/5f041dab48cbaa33eef235fb94ddf07c61a53ad7/3.9/slim-bookworm/Dockerfile)
 
--	[`3.9.21-bullseye`, `3.9-bullseye`](https://github.com/docker-library/python/blob/ebae24f3ea4df70859757829ac383e1dd8de3d2f/3.9/bullseye/Dockerfile)
+-	[`3.9.22-bullseye`, `3.9-bullseye`](https://github.com/docker-library/python/blob/5f041dab48cbaa33eef235fb94ddf07c61a53ad7/3.9/bullseye/Dockerfile)
 
--	[`3.9.21-slim-bullseye`, `3.9-slim-bullseye`](https://github.com/docker-library/python/blob/ebae24f3ea4df70859757829ac383e1dd8de3d2f/3.9/slim-bullseye/Dockerfile)
+-	[`3.9.22-slim-bullseye`, `3.9-slim-bullseye`](https://github.com/docker-library/python/blob/5f041dab48cbaa33eef235fb94ddf07c61a53ad7/3.9/slim-bullseye/Dockerfile)
 
--	[`3.9.21-alpine3.21`, `3.9-alpine3.21`, `3.9.21-alpine`, `3.9-alpine`](https://github.com/docker-library/python/blob/3d7b328b66525fe2e82af7063af10c176b6ee8cd/3.9/alpine3.21/Dockerfile)
+-	[`3.9.22-alpine3.21`, `3.9-alpine3.21`, `3.9.22-alpine`, `3.9-alpine`](https://github.com/docker-library/python/blob/5f041dab48cbaa33eef235fb94ddf07c61a53ad7/3.9/alpine3.21/Dockerfile)
 
--	[`3.9.21-alpine3.20`, `3.9-alpine3.20`](https://github.com/docker-library/python/blob/ebae24f3ea4df70859757829ac383e1dd8de3d2f/3.9/alpine3.20/Dockerfile)
+-	[`3.9.22-alpine3.20`, `3.9-alpine3.20`](https://github.com/docker-library/python/blob/5f041dab48cbaa33eef235fb94ddf07c61a53ad7/3.9/alpine3.20/Dockerfile)
 
 ## Shared Tags
 
@@ -161,15 +161,15 @@ WARNING:
 
 -	`3.11.12`, `3.11`:
 
-	-	[`3.11.12-bookworm`](https://github.com/docker-library/python/blob/70fc099be48e4a130afd949a4dd3c6afe6935b8a/3.11/bookworm/Dockerfile)
+	-	[`3.11.12-bookworm`](https://github.com/docker-library/python/blob/5f041dab48cbaa33eef235fb94ddf07c61a53ad7/3.11/bookworm/Dockerfile)
 
 -	`3.10.17`, `3.10`:
 
-	-	[`3.10.17-bookworm`](https://github.com/docker-library/python/blob/70fc099be48e4a130afd949a4dd3c6afe6935b8a/3.10/bookworm/Dockerfile)
+	-	[`3.10.17-bookworm`](https://github.com/docker-library/python/blob/5f041dab48cbaa33eef235fb94ddf07c61a53ad7/3.10/bookworm/Dockerfile)
 
--	`3.9.21`, `3.9`:
+-	`3.9.22`, `3.9`:
 
-	-	[`3.9.21-bookworm`](https://github.com/docker-library/python/blob/ebae24f3ea4df70859757829ac383e1dd8de3d2f/3.9/bookworm/Dockerfile)
+	-	[`3.9.22-bookworm`](https://github.com/docker-library/python/blob/5f041dab48cbaa33eef235fb94ddf07c61a53ad7/3.9/bookworm/Dockerfile)
 
 # Quick reference (cont.)
 
