@@ -24,15 +24,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`20.04`, `focal-20241011`, `focal`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-focal-amd64-20241011-2dc0aae1&id=2dc0aae17c912aa6ae81e4c4bbc7277692d67bae)
+-	[`20.04`, `focal-20250404`, `focal`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-focal-amd64-20250404-fb4da095&id=fb4da0956290c3b216a35315510f66ca9bc4a460)
 
--	[`22.04`, `jammy-20250126`, `jammy`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-amd64-20250126-b0d70ec8&id=b0d70ec8ea0e2d97d7311e85d6d42e054bb80350)
+-	[`22.04`, `jammy-20250404`, `jammy`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-amd64-20250404-ee417809&id=ee4178090f23aa4a0ef3958012c618588d0886a9)
 
--	[`24.04`, `noble-20250127`, `noble`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-amd64-20250127-9fabb4ba&id=9fabb4bad5138435b01857e2fe9363e2dc5f6a79)
+-	[`24.04`, `noble-20250404`, `noble`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-amd64-20250404-febb8724&id=febb872444fbf6132e143cf3d1e5f0958c897cea)
 
--	[`24.10`, `oracular-20241120`, `oracular`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-oracular-amd64-20241120-aea1b7d3&id=aea1b7d330330843a7f7783a788965bc4e89cf6a)
+-	[`24.10`, `oracular-20250225`, `oracular`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-oracular-amd64-20250225-71a591b6&id=71a591b63518c11abbccce5c648ce23d9a55c63b)
 
--	[`25.04`, `plucky-20241213`, `plucky`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-plucky-amd64-20241213-a232d27b&id=a232d27bc1e7b1173a1c8154366982d1e72b0d9b)
+-	[`25.04`, `plucky-20250402`, `plucky`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-plucky-amd64-20250402-9931882c&id=9931882c5303fd5a396376e54bd267f2e63296fb)
 
 # Quick reference (cont.)
 
