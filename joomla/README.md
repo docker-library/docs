@@ -24,53 +24,53 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.3.0-beta3-php8.1-apache`, `5.3-php8.1-apache`, `5.3.beta-php8.1-apache`, `5.3.0-beta-php8.1-apache`](https://github.com/joomla-docker/docker-joomla/blob/c1e595c7f2d4bc48dab5a87059c69455edafcd79/5.3.beta/php8.1/apache/Dockerfile)
+-	[`5.3.0-rc2-php8.1-apache`, `5.3-php8.1-apache`, `5.3.rc-php8.1-apache`, `5.3.0-rc-php8.1-apache`](https://github.com/joomla-docker/docker-joomla/blob/2b32f0a2ba4ad99f15c0acd26b2f862c038ff3f5/5.3.rc/php8.1/apache/Dockerfile)
 
--	[`5.3.0-beta3-php8.1-fpm-alpine`, `5.3-php8.1-fpm-alpine`, `5.3.beta-php8.1-fpm-alpine`, `5.3.0-beta-php8.1-fpm-alpine`](https://github.com/joomla-docker/docker-joomla/blob/c1e595c7f2d4bc48dab5a87059c69455edafcd79/5.3.beta/php8.1/fpm-alpine/Dockerfile)
+-	[`5.3.0-rc2-php8.1-fpm-alpine`, `5.3-php8.1-fpm-alpine`, `5.3.rc-php8.1-fpm-alpine`, `5.3.0-rc-php8.1-fpm-alpine`](https://github.com/joomla-docker/docker-joomla/blob/2b32f0a2ba4ad99f15c0acd26b2f862c038ff3f5/5.3.rc/php8.1/fpm-alpine/Dockerfile)
 
--	[`5.3.0-beta3-php8.1-fpm`, `5.3-php8.1-fpm`, `5.3.beta-php8.1-fpm`, `5.3.0-beta-php8.1-fpm`](https://github.com/joomla-docker/docker-joomla/blob/c1e595c7f2d4bc48dab5a87059c69455edafcd79/5.3.beta/php8.1/fpm/Dockerfile)
+-	[`5.3.0-rc2-php8.1-fpm`, `5.3-php8.1-fpm`, `5.3.rc-php8.1-fpm`, `5.3.0-rc-php8.1-fpm`](https://github.com/joomla-docker/docker-joomla/blob/2b32f0a2ba4ad99f15c0acd26b2f862c038ff3f5/5.3.rc/php8.1/fpm/Dockerfile)
 
--	[`5.3.0-beta3-php8.2-apache`, `5.3-php8.2-apache`, `5.3.beta-php8.2-apache`, `5.3.0-beta-php8.2-apache`](https://github.com/joomla-docker/docker-joomla/blob/c1e595c7f2d4bc48dab5a87059c69455edafcd79/5.3.beta/php8.2/apache/Dockerfile)
+-	[`5.3.0-rc2-php8.2-apache`, `5.3-php8.2-apache`, `5.3.rc-php8.2-apache`, `5.3.0-rc-php8.2-apache`](https://github.com/joomla-docker/docker-joomla/blob/2b32f0a2ba4ad99f15c0acd26b2f862c038ff3f5/5.3.rc/php8.2/apache/Dockerfile)
 
--	[`5.3.0-beta3-php8.2-fpm-alpine`, `5.3-php8.2-fpm-alpine`, `5.3.beta-php8.2-fpm-alpine`, `5.3.0-beta-php8.2-fpm-alpine`](https://github.com/joomla-docker/docker-joomla/blob/c1e595c7f2d4bc48dab5a87059c69455edafcd79/5.3.beta/php8.2/fpm-alpine/Dockerfile)
+-	[`5.3.0-rc2-php8.2-fpm-alpine`, `5.3-php8.2-fpm-alpine`, `5.3.rc-php8.2-fpm-alpine`, `5.3.0-rc-php8.2-fpm-alpine`](https://github.com/joomla-docker/docker-joomla/blob/2b32f0a2ba4ad99f15c0acd26b2f862c038ff3f5/5.3.rc/php8.2/fpm-alpine/Dockerfile)
 
--	[`5.3.0-beta3-php8.2-fpm`, `5.3-php8.2-fpm`, `5.3.beta-php8.2-fpm`, `5.3.0-beta-php8.2-fpm`](https://github.com/joomla-docker/docker-joomla/blob/c1e595c7f2d4bc48dab5a87059c69455edafcd79/5.3.beta/php8.2/fpm/Dockerfile)
+-	[`5.3.0-rc2-php8.2-fpm`, `5.3-php8.2-fpm`, `5.3.rc-php8.2-fpm`, `5.3.0-rc-php8.2-fpm`](https://github.com/joomla-docker/docker-joomla/blob/2b32f0a2ba4ad99f15c0acd26b2f862c038ff3f5/5.3.rc/php8.2/fpm/Dockerfile)
 
--	[`5.3.0-beta3`, `5.3`, `5.3.beta`, `5.3.0-beta`, `5.3.0-beta3-apache`, `5.3-apache`, `5.3.beta-apache`, `5.3.0-beta-apache`, `5.3.0-beta3-php8.3`, `5.3-php8.3`, `5.3.beta-php8.3`, `5.3.0-beta-php8.3`, `5.3.0-beta3-php8.3-apache`, `5.3-php8.3-apache`, `5.3.beta-php8.3-apache`, `5.3.0-beta-php8.3-apache`](https://github.com/joomla-docker/docker-joomla/blob/c1e595c7f2d4bc48dab5a87059c69455edafcd79/5.3.beta/php8.3/apache/Dockerfile)
+-	[`5.3.0-rc2`, `5.3`, `5.3.rc`, `5.3.0-rc`, `5.3.0-rc2-apache`, `5.3-apache`, `5.3.rc-apache`, `5.3.0-rc-apache`, `5.3.0-rc2-php8.3`, `5.3-php8.3`, `5.3.rc-php8.3`, `5.3.0-rc-php8.3`, `5.3.0-rc2-php8.3-apache`, `5.3-php8.3-apache`, `5.3.rc-php8.3-apache`, `5.3.0-rc-php8.3-apache`](https://github.com/joomla-docker/docker-joomla/blob/2b32f0a2ba4ad99f15c0acd26b2f862c038ff3f5/5.3.rc/php8.3/apache/Dockerfile)
 
--	[`5.3.0-beta3-php8.3-fpm-alpine`, `5.3-php8.3-fpm-alpine`, `5.3.beta-php8.3-fpm-alpine`, `5.3.0-beta-php8.3-fpm-alpine`](https://github.com/joomla-docker/docker-joomla/blob/c1e595c7f2d4bc48dab5a87059c69455edafcd79/5.3.beta/php8.3/fpm-alpine/Dockerfile)
+-	[`5.3.0-rc2-php8.3-fpm-alpine`, `5.3-php8.3-fpm-alpine`, `5.3.rc-php8.3-fpm-alpine`, `5.3.0-rc-php8.3-fpm-alpine`](https://github.com/joomla-docker/docker-joomla/blob/2b32f0a2ba4ad99f15c0acd26b2f862c038ff3f5/5.3.rc/php8.3/fpm-alpine/Dockerfile)
 
--	[`5.3.0-beta3-php8.3-fpm`, `5.3-php8.3-fpm`, `5.3.beta-php8.3-fpm`, `5.3.0-beta-php8.3-fpm`](https://github.com/joomla-docker/docker-joomla/blob/c1e595c7f2d4bc48dab5a87059c69455edafcd79/5.3.beta/php8.3/fpm/Dockerfile)
+-	[`5.3.0-rc2-php8.3-fpm`, `5.3-php8.3-fpm`, `5.3.rc-php8.3-fpm`, `5.3.0-rc-php8.3-fpm`](https://github.com/joomla-docker/docker-joomla/blob/2b32f0a2ba4ad99f15c0acd26b2f862c038ff3f5/5.3.rc/php8.3/fpm/Dockerfile)
 
--	[`5.2.5-php8.1-apache`, `5.2-php8.1-apache`, `5-php8.1-apache`, `php8.1-apache`](https://github.com/joomla-docker/docker-joomla/blob/c1e595c7f2d4bc48dab5a87059c69455edafcd79/5.2/php8.1/apache/Dockerfile)
+-	[`5.2.6-php8.1-apache`, `5.2-php8.1-apache`, `5-php8.1-apache`, `php8.1-apache`](https://github.com/joomla-docker/docker-joomla/blob/2b32f0a2ba4ad99f15c0acd26b2f862c038ff3f5/5.2/php8.1/apache/Dockerfile)
 
--	[`5.2.5-php8.1-fpm-alpine`, `5.2-php8.1-fpm-alpine`, `5-php8.1-fpm-alpine`, `php8.1-fpm-alpine`](https://github.com/joomla-docker/docker-joomla/blob/c1e595c7f2d4bc48dab5a87059c69455edafcd79/5.2/php8.1/fpm-alpine/Dockerfile)
+-	[`5.2.6-php8.1-fpm-alpine`, `5.2-php8.1-fpm-alpine`, `5-php8.1-fpm-alpine`, `php8.1-fpm-alpine`](https://github.com/joomla-docker/docker-joomla/blob/2b32f0a2ba4ad99f15c0acd26b2f862c038ff3f5/5.2/php8.1/fpm-alpine/Dockerfile)
 
--	[`5.2.5-php8.1-fpm`, `5.2-php8.1-fpm`, `5-php8.1-fpm`, `php8.1-fpm`](https://github.com/joomla-docker/docker-joomla/blob/c1e595c7f2d4bc48dab5a87059c69455edafcd79/5.2/php8.1/fpm/Dockerfile)
+-	[`5.2.6-php8.1-fpm`, `5.2-php8.1-fpm`, `5-php8.1-fpm`, `php8.1-fpm`](https://github.com/joomla-docker/docker-joomla/blob/2b32f0a2ba4ad99f15c0acd26b2f862c038ff3f5/5.2/php8.1/fpm/Dockerfile)
 
--	[`5.2.5-php8.2-apache`, `5.2-php8.2-apache`, `5-php8.2-apache`, `php8.2-apache`](https://github.com/joomla-docker/docker-joomla/blob/c1e595c7f2d4bc48dab5a87059c69455edafcd79/5.2/php8.2/apache/Dockerfile)
+-	[`5.2.6-php8.2-apache`, `5.2-php8.2-apache`, `5-php8.2-apache`, `php8.2-apache`](https://github.com/joomla-docker/docker-joomla/blob/2b32f0a2ba4ad99f15c0acd26b2f862c038ff3f5/5.2/php8.2/apache/Dockerfile)
 
--	[`5.2.5-php8.2-fpm-alpine`, `5.2-php8.2-fpm-alpine`, `5-php8.2-fpm-alpine`, `php8.2-fpm-alpine`](https://github.com/joomla-docker/docker-joomla/blob/c1e595c7f2d4bc48dab5a87059c69455edafcd79/5.2/php8.2/fpm-alpine/Dockerfile)
+-	[`5.2.6-php8.2-fpm-alpine`, `5.2-php8.2-fpm-alpine`, `5-php8.2-fpm-alpine`, `php8.2-fpm-alpine`](https://github.com/joomla-docker/docker-joomla/blob/2b32f0a2ba4ad99f15c0acd26b2f862c038ff3f5/5.2/php8.2/fpm-alpine/Dockerfile)
 
--	[`5.2.5-php8.2-fpm`, `5.2-php8.2-fpm`, `5-php8.2-fpm`, `php8.2-fpm`](https://github.com/joomla-docker/docker-joomla/blob/c1e595c7f2d4bc48dab5a87059c69455edafcd79/5.2/php8.2/fpm/Dockerfile)
+-	[`5.2.6-php8.2-fpm`, `5.2-php8.2-fpm`, `5-php8.2-fpm`, `php8.2-fpm`](https://github.com/joomla-docker/docker-joomla/blob/2b32f0a2ba4ad99f15c0acd26b2f862c038ff3f5/5.2/php8.2/fpm/Dockerfile)
 
--	[`5.2.5`, `5.2`, `5`, `latest`, `5.2.5-apache`, `5.2-apache`, `5-apache`, `apache`, `5.2.5-php8.3`, `5.2-php8.3`, `5-php8.3`, `php8.3`, `5.2.5-php8.3-apache`, `5.2-php8.3-apache`, `5-php8.3-apache`, `php8.3-apache`](https://github.com/joomla-docker/docker-joomla/blob/c1e595c7f2d4bc48dab5a87059c69455edafcd79/5.2/php8.3/apache/Dockerfile)
+-	[`5.2.6`, `5.2`, `5`, `latest`, `5.2.6-apache`, `5.2-apache`, `5-apache`, `apache`, `5.2.6-php8.3`, `5.2-php8.3`, `5-php8.3`, `php8.3`, `5.2.6-php8.3-apache`, `5.2-php8.3-apache`, `5-php8.3-apache`, `php8.3-apache`](https://github.com/joomla-docker/docker-joomla/blob/2b32f0a2ba4ad99f15c0acd26b2f862c038ff3f5/5.2/php8.3/apache/Dockerfile)
 
--	[`5.2.5-php8.3-fpm-alpine`, `5.2-php8.3-fpm-alpine`, `5-php8.3-fpm-alpine`, `php8.3-fpm-alpine`](https://github.com/joomla-docker/docker-joomla/blob/c1e595c7f2d4bc48dab5a87059c69455edafcd79/5.2/php8.3/fpm-alpine/Dockerfile)
+-	[`5.2.6-php8.3-fpm-alpine`, `5.2-php8.3-fpm-alpine`, `5-php8.3-fpm-alpine`, `php8.3-fpm-alpine`](https://github.com/joomla-docker/docker-joomla/blob/2b32f0a2ba4ad99f15c0acd26b2f862c038ff3f5/5.2/php8.3/fpm-alpine/Dockerfile)
 
--	[`5.2.5-php8.3-fpm`, `5.2-php8.3-fpm`, `5-php8.3-fpm`, `php8.3-fpm`](https://github.com/joomla-docker/docker-joomla/blob/c1e595c7f2d4bc48dab5a87059c69455edafcd79/5.2/php8.3/fpm/Dockerfile)
+-	[`5.2.6-php8.3-fpm`, `5.2-php8.3-fpm`, `5-php8.3-fpm`, `php8.3-fpm`](https://github.com/joomla-docker/docker-joomla/blob/2b32f0a2ba4ad99f15c0acd26b2f862c038ff3f5/5.2/php8.3/fpm/Dockerfile)
 
--	[`4.4.12-php8.1-apache`, `4.4-php8.1-apache`, `4-php8.1-apache`](https://github.com/joomla-docker/docker-joomla/blob/c1e595c7f2d4bc48dab5a87059c69455edafcd79/4.4/php8.1/apache/Dockerfile)
+-	[`4.4.13-php8.1-apache`, `4.4-php8.1-apache`, `4-php8.1-apache`](https://github.com/joomla-docker/docker-joomla/blob/2b32f0a2ba4ad99f15c0acd26b2f862c038ff3f5/4.4/php8.1/apache/Dockerfile)
 
--	[`4.4.12-php8.1-fpm-alpine`, `4.4-php8.1-fpm-alpine`, `4-php8.1-fpm-alpine`](https://github.com/joomla-docker/docker-joomla/blob/c1e595c7f2d4bc48dab5a87059c69455edafcd79/4.4/php8.1/fpm-alpine/Dockerfile)
+-	[`4.4.13-php8.1-fpm-alpine`, `4.4-php8.1-fpm-alpine`, `4-php8.1-fpm-alpine`](https://github.com/joomla-docker/docker-joomla/blob/2b32f0a2ba4ad99f15c0acd26b2f862c038ff3f5/4.4/php8.1/fpm-alpine/Dockerfile)
 
--	[`4.4.12-php8.1-fpm`, `4.4-php8.1-fpm`, `4-php8.1-fpm`](https://github.com/joomla-docker/docker-joomla/blob/c1e595c7f2d4bc48dab5a87059c69455edafcd79/4.4/php8.1/fpm/Dockerfile)
+-	[`4.4.13-php8.1-fpm`, `4.4-php8.1-fpm`, `4-php8.1-fpm`](https://github.com/joomla-docker/docker-joomla/blob/2b32f0a2ba4ad99f15c0acd26b2f862c038ff3f5/4.4/php8.1/fpm/Dockerfile)
 
--	[`4.4.12`, `4.4`, `4`, `4.4.12-apache`, `4.4-apache`, `4-apache`, `4.4.12-php8.2`, `4.4-php8.2`, `4-php8.2`, `4.4.12-php8.2-apache`, `4.4-php8.2-apache`, `4-php8.2-apache`](https://github.com/joomla-docker/docker-joomla/blob/c1e595c7f2d4bc48dab5a87059c69455edafcd79/4.4/php8.2/apache/Dockerfile)
+-	[`4.4.13`, `4.4`, `4`, `4.4.13-apache`, `4.4-apache`, `4-apache`, `4.4.13-php8.2`, `4.4-php8.2`, `4-php8.2`, `4.4.13-php8.2-apache`, `4.4-php8.2-apache`, `4-php8.2-apache`](https://github.com/joomla-docker/docker-joomla/blob/2b32f0a2ba4ad99f15c0acd26b2f862c038ff3f5/4.4/php8.2/apache/Dockerfile)
 
--	[`4.4.12-php8.2-fpm-alpine`, `4.4-php8.2-fpm-alpine`, `4-php8.2-fpm-alpine`](https://github.com/joomla-docker/docker-joomla/blob/c1e595c7f2d4bc48dab5a87059c69455edafcd79/4.4/php8.2/fpm-alpine/Dockerfile)
+-	[`4.4.13-php8.2-fpm-alpine`, `4.4-php8.2-fpm-alpine`, `4-php8.2-fpm-alpine`](https://github.com/joomla-docker/docker-joomla/blob/2b32f0a2ba4ad99f15c0acd26b2f862c038ff3f5/4.4/php8.2/fpm-alpine/Dockerfile)
 
--	[`4.4.12-php8.2-fpm`, `4.4-php8.2-fpm`, `4-php8.2-fpm`](https://github.com/joomla-docker/docker-joomla/blob/c1e595c7f2d4bc48dab5a87059c69455edafcd79/4.4/php8.2/fpm/Dockerfile)
+-	[`4.4.13-php8.2-fpm`, `4.4-php8.2-fpm`, `4-php8.2-fpm`](https://github.com/joomla-docker/docker-joomla/blob/2b32f0a2ba4ad99f15c0acd26b2f862c038ff3f5/4.4/php8.2/fpm/Dockerfile)
 
 # Quick reference (cont.)
 
