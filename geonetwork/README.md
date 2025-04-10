@@ -30,7 +30,7 @@ WARNING:
 
 -	[`4.2.11`, `4.2`](https://github.com/geonetwork/docker-geonetwork/blob/060a5ab4c57d690ec5df1649718874efdc1372af/4.2.11/Dockerfile)
 
--	[`4.4.6`, `4.4`, `4`, `latest`](https://github.com/geonetwork/docker-geonetwork/blob/164b0e4605dd3cbfca5c9be411ebc75ec2aa9267/4.4.6/Dockerfile)
+-	[`4.4.7`, `4.4`, `4`, `latest`](https://github.com/geonetwork/docker-geonetwork/blob/87a25196b8dd3a8a1bd2bc8644f86c878de2b1d4/4.4.7/Dockerfile)
 
 # Quick reference (cont.)
 
