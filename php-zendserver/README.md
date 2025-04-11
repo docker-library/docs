@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `i386` builds of [the `php-zendserver` official image](https://hub.docker.com/_/php-zendserver) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # **DEPRECATION NOTICE**
 
 This image is not actively maintained (and [has not been for years](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fphp-zendserver)). It is highly recommended for users to seek out alternatives.
@@ -28,7 +30,9 @@ This image is not actively maintained (and [has not been for years](https://gith
 
 # Supported tags and respective `Dockerfile` links
 
-**No supported tags**
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `i386` ARCHITECTURE
+
+[![i386/php-zendserver build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/i386/job/php-zendserver.svg?label=i386/php-zendserver%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/i386/job/php-zendserver/)
 
 # Quick reference (cont.)
 
@@ -84,12 +88,12 @@ Zend Server is shared on [Docker-Hub] as **php-zendserver**.
 
 To start a single Zend Server instance, execute:
 
-	    $ docker run php-zendserver
+	    $ docker run i386/php-zendserver
 
 -	You can specify the PHP and Zend Server version by adding ':<php-version>' or ':&lt;ZS-version&gt;-php&lt;version&gt;' to the 'docker run' command.
 
 		for example: 
-		$docker run php-zendserver:8.5-php5.6
+		$docker run i386/php-zendserver:8.5-php5.6
 
 #### Availible versions:
 
@@ -101,11 +105,11 @@ To start a single Zend Server instance, execute:
 
 To start a Zend Server cluster, execute the following command for each cluster node:
 
-	    $ docker run -e MYSQL_HOSTNAME=<db-ip> -e MYSQL_PORT=3306 -e MYSQL_USERNAME=<username> -e MYSQL_PASSWORD=<password> -e MYSQL_DBNAME=zend php-zendserver
+	    $ docker run -e MYSQL_HOSTNAME=<db-ip> -e MYSQL_PORT=3306 -e MYSQL_USERNAME=<username> -e MYSQL_PASSWORD=<password> -e MYSQL_DBNAME=zend i386/php-zendserver
 
 #### Bring your own license
 
-To use your own Zend Server license: $ docker run php-zendserver -e ZEND_LICENSE_KEY=<license-key> -e ZEND_LICENSE_ORDER=<order-number>
+To use your own Zend Server license: $ docker run i386/php-zendserver -e ZEND_LICENSE_KEY=<license-key> -e ZEND_LICENSE_ORDER=<order-number>
 
 #### Launching the Container from Dockerfile
 
@@ -133,7 +137,7 @@ Once started, the container will output the information required to access the P
 
 To access the container **remotely**, port forwarding must be configured, either manually or using docker. For example, this command redirects port 80 to port 88, and port 10081 (Zend Server UI port) to port 10088:
 
-	    $ docker run -p 88:80 -p 10088:10081 php-zendserver
+	    $ docker run -p 88:80 -p 10088:10081 i386/php-zendserver
 
 ##### For clustered instances:
 
