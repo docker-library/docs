@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `amd64` builds of [the `openjdk` official image](https://hub.docker.com/_/openjdk) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # **DEPRECATION NOTICE**
 
 This image is officially deprecated and all users are recommended to find and use suitable replacements ASAP. Some examples of other Official Image alternatives (listed in alphabetical order with no intentional or implied preference):
@@ -54,38 +56,13 @@ The only tags which will continue to receive updates beyond July 2022 will be Ea
 
 -	[`25-ea-17-jdk-slim-bullseye`, `25-ea-17-slim-bullseye`, `25-ea-jdk-slim-bullseye`, `25-ea-slim-bullseye`, `25-jdk-slim-bullseye`, `25-slim-bullseye`](https://github.com/docker-library/openjdk/blob/ab3f97900122c5e175d5db511968bb6fbb93075f/25/jdk/slim-bullseye/Dockerfile)
 
--	[`25-ea-17-jdk-windowsservercore-ltsc2025`, `25-ea-17-windowsservercore-ltsc2025`, `25-ea-jdk-windowsservercore-ltsc2025`, `25-ea-windowsservercore-ltsc2025`, `25-jdk-windowsservercore-ltsc2025`, `25-windowsservercore-ltsc2025`](https://github.com/docker-library/openjdk/blob/ab3f97900122c5e175d5db511968bb6fbb93075f/25/jdk/windows/windowsservercore-ltsc2025/Dockerfile)
-
--	[`25-ea-17-jdk-windowsservercore-ltsc2022`, `25-ea-17-windowsservercore-ltsc2022`, `25-ea-jdk-windowsservercore-ltsc2022`, `25-ea-windowsservercore-ltsc2022`, `25-jdk-windowsservercore-ltsc2022`, `25-windowsservercore-ltsc2022`](https://github.com/docker-library/openjdk/blob/ab3f97900122c5e175d5db511968bb6fbb93075f/25/jdk/windows/windowsservercore-ltsc2022/Dockerfile)
-
--	[`25-ea-17-jdk-windowsservercore-1809`, `25-ea-17-windowsservercore-1809`, `25-ea-jdk-windowsservercore-1809`, `25-ea-windowsservercore-1809`, `25-jdk-windowsservercore-1809`, `25-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/ab3f97900122c5e175d5db511968bb6fbb93075f/25/jdk/windows/windowsservercore-1809/Dockerfile)
-
--	[`25-ea-17-jdk-nanoserver-ltsc2025`, `25-ea-17-nanoserver-ltsc2025`, `25-ea-jdk-nanoserver-ltsc2025`, `25-ea-nanoserver-ltsc2025`, `25-jdk-nanoserver-ltsc2025`, `25-nanoserver-ltsc2025`](https://github.com/docker-library/openjdk/blob/ab3f97900122c5e175d5db511968bb6fbb93075f/25/jdk/windows/nanoserver-ltsc2025/Dockerfile)
-
--	[`25-ea-17-jdk-nanoserver-ltsc2022`, `25-ea-17-nanoserver-ltsc2022`, `25-ea-jdk-nanoserver-ltsc2022`, `25-ea-nanoserver-ltsc2022`, `25-jdk-nanoserver-ltsc2022`, `25-nanoserver-ltsc2022`](https://github.com/docker-library/openjdk/blob/ab3f97900122c5e175d5db511968bb6fbb93075f/25/jdk/windows/nanoserver-ltsc2022/Dockerfile)
-
--	[`25-ea-17-jdk-nanoserver-1809`, `25-ea-17-nanoserver-1809`, `25-ea-jdk-nanoserver-1809`, `25-ea-nanoserver-1809`, `25-jdk-nanoserver-1809`, `25-nanoserver-1809`](https://github.com/docker-library/openjdk/blob/ab3f97900122c5e175d5db511968bb6fbb93075f/25/jdk/windows/nanoserver-1809/Dockerfile)
-
 ## Shared Tags
 
 -	`25-ea-17-jdk`, `25-ea-17`, `25-ea-jdk`, `25-ea`, `25-jdk`, `25`:
 
 	-	[`25-ea-17-jdk-oraclelinux9`](https://github.com/docker-library/openjdk/blob/ab3f97900122c5e175d5db511968bb6fbb93075f/25/jdk/oraclelinux9/Dockerfile)
-	-	[`25-ea-17-jdk-windowsservercore-ltsc2025`](https://github.com/docker-library/openjdk/blob/ab3f97900122c5e175d5db511968bb6fbb93075f/25/jdk/windows/windowsservercore-ltsc2025/Dockerfile)
-	-	[`25-ea-17-jdk-windowsservercore-ltsc2022`](https://github.com/docker-library/openjdk/blob/ab3f97900122c5e175d5db511968bb6fbb93075f/25/jdk/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`25-ea-17-jdk-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/ab3f97900122c5e175d5db511968bb6fbb93075f/25/jdk/windows/windowsservercore-1809/Dockerfile)
 
--	`25-ea-17-jdk-windowsservercore`, `25-ea-17-windowsservercore`, `25-ea-jdk-windowsservercore`, `25-ea-windowsservercore`, `25-jdk-windowsservercore`, `25-windowsservercore`:
-
-	-	[`25-ea-17-jdk-windowsservercore-ltsc2025`](https://github.com/docker-library/openjdk/blob/ab3f97900122c5e175d5db511968bb6fbb93075f/25/jdk/windows/windowsservercore-ltsc2025/Dockerfile)
-	-	[`25-ea-17-jdk-windowsservercore-ltsc2022`](https://github.com/docker-library/openjdk/blob/ab3f97900122c5e175d5db511968bb6fbb93075f/25/jdk/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`25-ea-17-jdk-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/ab3f97900122c5e175d5db511968bb6fbb93075f/25/jdk/windows/windowsservercore-1809/Dockerfile)
-
--	`25-ea-17-jdk-nanoserver`, `25-ea-17-nanoserver`, `25-ea-jdk-nanoserver`, `25-ea-nanoserver`, `25-jdk-nanoserver`, `25-nanoserver`:
-
-	-	[`25-ea-17-jdk-nanoserver-ltsc2025`](https://github.com/docker-library/openjdk/blob/ab3f97900122c5e175d5db511968bb6fbb93075f/25/jdk/windows/nanoserver-ltsc2025/Dockerfile)
-	-	[`25-ea-17-jdk-nanoserver-ltsc2022`](https://github.com/docker-library/openjdk/blob/ab3f97900122c5e175d5db511968bb6fbb93075f/25/jdk/windows/nanoserver-ltsc2022/Dockerfile)
-	-	[`25-ea-17-jdk-nanoserver-1809`](https://github.com/docker-library/openjdk/blob/ab3f97900122c5e175d5db511968bb6fbb93075f/25/jdk/windows/nanoserver-1809/Dockerfile)
+[![amd64/openjdk build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/amd64/job/openjdk.svg?label=amd64/openjdk%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/openjdk/)
 
 # Quick reference (cont.)
 
@@ -123,7 +100,7 @@ Java is a registered trademark of Oracle and/or its affiliates.
 The most straightforward way to use this image is to use a Java container as both the build and runtime environment. In your `Dockerfile`, writing something along the lines of the following will compile and run your project:
 
 ```dockerfile
-FROM openjdk:11
+FROM amd64/openjdk:11
 COPY . /usr/src/myapp
 WORKDIR /usr/src/myapp
 RUN javac Main.java
@@ -142,7 +119,7 @@ $ docker run -it --rm --name my-running-app my-java-app
 There may be occasions where it is not appropriate to run your app inside a container. To compile, but not run your app inside the Docker instance, you can write something like:
 
 ```console
-$ docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp openjdk:11 javac Main.java
+$ docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp amd64/openjdk:11 javac Main.java
 ```
 
 This will add your current directory as a volume to the container, set the working directory to the volume, and run the command `javac Main.java` which will tell Java to compile the code in `Main.java` and output the Java class file to `Main.class`.
@@ -169,30 +146,21 @@ Some shells (notably, [the BusyBox `/bin/sh` included in Alpine Linux](https://g
 
 # Image Variants
 
-The `openjdk` images come in many flavors, each designed for a specific use case.
+The `amd64/openjdk` images come in many flavors, each designed for a specific use case.
 
-## `openjdk:<version>`
+## `amd64/openjdk:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
 Some of these tags may have names like bookworm or bullseye in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
-## `openjdk:<version>` (from 12 onwards), `openjdk:<version>-oracle` and `openjdk:<version>-oraclelinux8`
+## `amd64/openjdk:<version>` (from 12 onwards), `amd64/openjdk:<version>-oracle` and `amd64/openjdk:<version>-oraclelinux8`
 
 Starting with `openjdk:12` the default image as well as the `-oracle` and `-oraclelinux8` variants are based on the official [Oracle Linux 8 image](https://hub.docker.com/_/oraclelinux) which is provided under the GPLv2 as per the [Oracle Linux End User Agreement (EULA)](https://oss.oracle.com/ol8/EULA).
 
 The `-oraclelinux7` variants are based on the official [Oracle Linux 7 image](https://hub.docker.com/_/oraclelinux) which is provided under the GPLv2 as per the [Oracle Linux End User Agreement (EULA)](https://oss.oracle.com/ol7/EULA).
 
 The OpenJDK binaries are built by Oracle and are sourced from the [OpenJDK community](https://openjdk.java.net/). These binaries are licensed under the [GPLv2 with the Classpath Exception](https://openjdk.java.net/legal/gplv2+ce.html).
-
-## `openjdk:<version>-windowsservercore`
-
-This image is based on [Windows Server Core (`microsoft/windowsservercore`)](https://hub.docker.com/r/microsoft/windowsservercore/). As such, it only works in places which that image does, such as Windows 10 Professional/Enterprise (Anniversary Edition) or Windows Server 2016.
-
-For information about how to get Docker running on Windows, please see the relevant "Quick Start" guide provided by Microsoft:
-
--	[Windows Server Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_server)
--	[Windows 10 Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)
 
 # License
 
