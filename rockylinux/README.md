@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm64v8` builds of [the `rockylinux` official image](https://hub.docker.com/_/rockylinux) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,13 +26,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`9.3.20231119`, `9.3`, `9`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/53416a9aaea6ac6ded18c2047d51e26983160faf/Dockerfile)
+-	[`9.3.20231119`, `9.3`, `9`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/29d1766aa469897f6690547364d45d352cbe7ae6/Dockerfile)
 
--	[`9.3.20231119-minimal`, `9.3-minimal`, `9-minimal`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/e784104b999a1ff6b66cb0aeee0408fb030c840b/Dockerfile)
+-	[`9.3.20231119-minimal`, `9.3-minimal`, `9-minimal`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/0b10d7d7a8ba867de715441b52c591880480bc94/Dockerfile)
 
--	[`8.9.20231119`, `8.9`, `8`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/2085c6419637bf970a532888141569c5865ae61f/Dockerfile)
+-	[`8.9.20231119`, `8.9`, `8`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/94d578e7e1eeaf0591657eff018929928e0bfdfc/Dockerfile)
 
--	[`8.9.20231119-minimal`, `8.9-minimal`, `8-minimal`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/6d81e6b46e052158df83357c569c8a6773a81e78/Dockerfile)
+-	[`8.9.20231119-minimal`, `8.9-minimal`, `8-minimal`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/cc181de9168465f9e9e2fbddd5a0f8e1a89cddfc/Dockerfile)
+
+[![arm64v8/rockylinux build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/rockylinux.svg?label=arm64v8/rockylinux%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/rockylinux/)
 
 # Quick reference (cont.)
 
@@ -64,21 +68,21 @@ Thank you for using Rocky Linux! We appreciate your feedback and welcome you to 
 
 # Rocky Linux image documentation
 
-The `rockylinux:latest` tag is intentionally missing. Please choose a major version (currently 8 or 9) tag, or a more specific tag to ensure you are pulling the version of Rocky Linux you want: e.g. `rockylinux:8` or `rockylinux:9`
+The `arm64v8/rockylinux:latest` tag is intentionally missing. Please choose a major version (currently 8 or 9) tag, or a more specific tag to ensure you are pulling the version of Rocky Linux you want: e.g. `arm64v8/rockylinux:8` or `arm64v8/rockylinux:9`
 
 ## Minimal variant
 
-In addition to the Base container, a Minimal container with microdnf and a stripped down dependency set is available by using any of the `-minimal` tags e.g. `rockylinux:9-minimal`
+In addition to the Base container, a Minimal container with microdnf and a stripped down dependency set is available by using any of the `-minimal` tags e.g. `arm64v8/rockylinux:9-minimal`
 
 ## Rolling builds
 
-Rocky Linux offers regularly updated images for all active releases. These images will be updated monthly or as needed for emergency fixes. These rolling updates are tagged with the major version number only. For example: `docker pull rockylinux:8`.
+Rocky Linux offers regularly updated images for all active releases. These images will be updated monthly or as needed for emergency fixes. These rolling updates are tagged with the major version number only. For example: `docker pull arm64v8/rockylinux:8`.
 
 ## Minor tags
 
 Additionally, images with minor version tags that correspond to install media are also offered. **These images DO NOT receive updates** as they are intended to match installation iso contents. If you choose to use these images it is highly recommended that you include `RUN yum -y update && yum clean all` in your Dockerfile, or otherwise address any potential security concerns. To use these images, please specify the minor version tag:
 
-For example: `docker pull rockylinux:8.4`
+For example: `docker pull arm64v8/rockylinux:8.4`
 
 # Package documentation
 
