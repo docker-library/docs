@@ -24,17 +24,17 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`10-kitten`, `10-kitten-20250204`](https://github.com/AlmaLinux/container-images/blob/0dd34b412e662a392275d79dc2f0fb635e74ff7a/default/amd64/Dockerfile)
+-	[`10-kitten`, `10-kitten-20250411`](https://github.com/AlmaLinux/container-images/blob/fe90cd58f021d87941fd2a8abfbbe92e89511ade/default/amd64/Dockerfile)
 
--	[`10-kitten-minimal`, `10-kitten-minimal-20250204`](https://github.com/AlmaLinux/container-images/blob/0dd34b412e662a392275d79dc2f0fb635e74ff7a/minimal/amd64/Dockerfile)
+-	[`10-kitten-minimal`, `10-kitten-minimal-20250411`](https://github.com/AlmaLinux/container-images/blob/fe90cd58f021d87941fd2a8abfbbe92e89511ade/minimal/amd64/Dockerfile)
 
--	[`8`, `8.10`, `8.10-20250307`](https://github.com/AlmaLinux/container-images/blob/861f8cac54e81214b50b6f5d9bb6c6c8f3878651/default/amd64/Dockerfile)
+-	[`8`, `8.10`, `8.10-20250411`](https://github.com/AlmaLinux/container-images/blob/9f9b3c8c8cf4a57fd42f362570ff47c75788031f/default/amd64/Dockerfile)
 
--	[`8-minimal`, `8.10-minimal`, `8.10-minimal-20250307`](https://github.com/AlmaLinux/container-images/blob/861f8cac54e81214b50b6f5d9bb6c6c8f3878651/minimal/amd64/Dockerfile)
+-	[`8-minimal`, `8.10-minimal`, `8.10-minimal-20250411`](https://github.com/AlmaLinux/container-images/blob/9f9b3c8c8cf4a57fd42f362570ff47c75788031f/minimal/amd64/Dockerfile)
 
--	[`latest`, `9`, `9.5`, `9.5-20250307`](https://github.com/AlmaLinux/container-images/blob/42e0ab782d07aaf454c82face64cece898f109c8/default/amd64/Dockerfile)
+-	[`latest`, `9`, `9.5`, `9.5-20250411`](https://github.com/AlmaLinux/container-images/blob/0bedcce49a80a0861e3435facb1a3f7b8b492900/default/amd64/Dockerfile)
 
--	[`minimal`, `9-minimal`, `9.5-minimal`, `9.5-minimal-20250307`](https://github.com/AlmaLinux/container-images/blob/42e0ab782d07aaf454c82face64cece898f109c8/minimal/amd64/Dockerfile)
+-	[`minimal`, `9-minimal`, `9.5-minimal`, `9.5-minimal-20250411`](https://github.com/AlmaLinux/container-images/blob/0bedcce49a80a0861e3435facb1a3f7b8b492900/minimal/amd64/Dockerfile)
 
 # Quick reference (cont.)
 
