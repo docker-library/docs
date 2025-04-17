@@ -30,9 +30,9 @@ WARNING:
 
 -	[`24.04`, `noble-20250404`, `noble`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-amd64-20250404-febb8724&id=febb872444fbf6132e143cf3d1e5f0958c897cea)
 
--	[`24.10`, `oracular-20250225`, `oracular`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-oracular-amd64-20250225-71a591b6&id=71a591b63518c11abbccce5c648ce23d9a55c63b)
+-	[`24.10`, `oracular-20250225`, `oracular`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-oracular-amd64-20250225-71a591b6&id=71a591b63518c11abbccce5c648ce23d9a55c63b)
 
--	[`25.04`, `plucky-20250402`, `plucky`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-plucky-amd64-20250402-9931882c&id=9931882c5303fd5a396376e54bd267f2e63296fb)
+-	[`25.04`, `plucky-20250415`, `plucky`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-plucky-amd64-20250415-9aa542b4&id=9aa542b421288860569e4375a11053227643ddf8)
 
 # Quick reference (cont.)
 
