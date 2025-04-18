@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `mips64le` builds of [the `ubuntu` official image](https://hub.docker.com/_/ubuntu) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,15 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`20.04`, `focal-20250404`, `focal`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-focal-amd64-20250404-fb4da095&id=fb4da0956290c3b216a35315510f66ca9bc4a460)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `mips64le` ARCHITECTURE
 
--	[`22.04`, `jammy-20250404`, `jammy`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-amd64-20250404-ee417809&id=ee4178090f23aa4a0ef3958012c618588d0886a9)
-
--	[`24.04`, `noble-20250404`, `noble`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-amd64-20250404-febb8724&id=febb872444fbf6132e143cf3d1e5f0958c897cea)
-
--	[`24.10`, `oracular-20250225`, `oracular`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-oracular-amd64-20250225-71a591b6&id=71a591b63518c11abbccce5c648ce23d9a55c63b)
-
--	[`25.04`, `plucky-20250415`, `plucky`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-plucky-amd64-20250415-9aa542b4&id=9aa542b421288860569e4375a11053227643ddf8)
+[![mips64le/ubuntu build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/mips64le/job/ubuntu.svg?label=mips64le/ubuntu%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/mips64le/job/ubuntu/)
 
 # Quick reference (cont.)
 
@@ -67,9 +63,9 @@ Development of Ubuntu is led by Canonical Ltd. Canonical generates revenue throu
 
 This image is built from official rootfs tarballs provided by Canonical (see `dist-*` tags at https://git.launchpad.net/cloud-images/+oci/ubuntu-base).
 
-The `ubuntu:latest` tag points to the "latest LTS", since that's the version recommended for general use. The `ubuntu:rolling` tag points to the latest release (regardless of LTS status).
+The `mips64le/ubuntu:latest` tag points to the "latest LTS", since that's the version recommended for general use. The `mips64le/ubuntu:rolling` tag points to the latest release (regardless of LTS status).
 
-Along a similar vein, the `ubuntu:devel` tag is an alias for whichever release the "devel" suite on the mirrors currently points to, as determined by the following one-liner: `wget -qO- http://archive.ubuntu.com/ubuntu/dists/devel/Release | awk -F ': ' '$1 == "Codename" { print $2; exit }'`
+Along a similar vein, the `mips64le/ubuntu:devel` tag is an alias for whichever release the "devel" suite on the mirrors currently points to, as determined by the following one-liner: `wget -qO- http://archive.ubuntu.com/ubuntu/dists/devel/Release | awk -F ': ' '$1 == "Codename" { print $2; exit }'`
 
 ## Locales
 
