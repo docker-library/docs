@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `windows-amd64` builds of [the `traefik` official image](https://hub.docker.com/_/traefik) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -30,15 +32,11 @@ WARNING:
 
 -	[`v3.4.0-rc2-nanoserver-ltsc2022`, `3.4.0-rc2-nanoserver-ltsc2022`, `chaource-nanoserver-ltsc2022`](https://github.com/traefik/traefik-library-image/blob/48eccfc76cf8936cd5c4e07c756e6248e9999c6b/v3.4/windows/nanoserver-ltsc2022/Dockerfile)
 
--	[`v3.4.0-rc2`, `3.4.0-rc2`, `chaource`](https://github.com/traefik/traefik-library-image/blob/48eccfc76cf8936cd5c4e07c756e6248e9999c6b/v3.4/alpine/Dockerfile)
-
 -	[`v3.3.6-windowsservercore-ltsc2022`, `3.3.6-windowsservercore-ltsc2022`, `v3.3-windowsservercore-ltsc2022`, `3.3-windowsservercore-ltsc2022`, `v3-windowsservercore-ltsc2022`, `3-windowsservercore-ltsc2022`, `saintnectaire-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`](https://github.com/traefik/traefik-library-image/blob/acca84c01faba97c6a6bcfdde5d6cb8d0b92a9af/v3.3/windows/servercore-ltsc2022/Dockerfile)
 
 -	[`v3.3.6-windowsservercore-1809`, `3.3.6-windowsservercore-1809`, `v3.3-windowsservercore-1809`, `3.3-windowsservercore-1809`, `v3-windowsservercore-1809`, `3-windowsservercore-1809`, `saintnectaire-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/traefik/traefik-library-image/blob/acca84c01faba97c6a6bcfdde5d6cb8d0b92a9af/v3.3/windows/1809/Dockerfile)
 
 -	[`v3.3.6-nanoserver-ltsc2022`, `3.3.6-nanoserver-ltsc2022`, `v3.3-nanoserver-ltsc2022`, `3.3-nanoserver-ltsc2022`, `v3-nanoserver-ltsc2022`, `3-nanoserver-ltsc2022`, `saintnectaire-nanoserver-ltsc2022`, `nanoserver-ltsc2022`](https://github.com/traefik/traefik-library-image/blob/acca84c01faba97c6a6bcfdde5d6cb8d0b92a9af/v3.3/windows/nanoserver-ltsc2022/Dockerfile)
-
--	[`v3.3.6`, `3.3.6`, `v3.3`, `3.3`, `v3`, `3`, `saintnectaire`, `latest`](https://github.com/traefik/traefik-library-image/blob/acca84c01faba97c6a6bcfdde5d6cb8d0b92a9af/v3.3/alpine/Dockerfile)
 
 -	[`v2.11.24-windowsservercore-ltsc2022`, `2.11.24-windowsservercore-ltsc2022`, `v2.11-windowsservercore-ltsc2022`, `2.11-windowsservercore-ltsc2022`, `v2-windowsservercore-ltsc2022`, `2-windowsservercore-ltsc2022`, `mimolette-windowsservercore-ltsc2022`](https://github.com/traefik/traefik-library-image/blob/87668d6d8d86f920c2d3b0ae149673b26aec71df/v2.11/windows/servercore-ltsc2022/Dockerfile)
 
@@ -46,7 +44,7 @@ WARNING:
 
 -	[`v2.11.24-nanoserver-ltsc2022`, `2.11.24-nanoserver-ltsc2022`, `v2.11-nanoserver-ltsc2022`, `2.11-nanoserver-ltsc2022`, `v2-nanoserver-ltsc2022`, `2-nanoserver-ltsc2022`, `mimolette-nanoserver-ltsc2022`](https://github.com/traefik/traefik-library-image/blob/87668d6d8d86f920c2d3b0ae149673b26aec71df/v2.11/windows/nanoserver-ltsc2022/Dockerfile)
 
--	[`v2.11.24`, `2.11.24`, `v2.11`, `2.11`, `v2`, `2`, `mimolette`](https://github.com/traefik/traefik-library-image/blob/87668d6d8d86f920c2d3b0ae149673b26aec71df/v2.11/alpine/Dockerfile)
+[![winamd64/traefik build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/windows-amd64/job/traefik.svg?label=winamd64/traefik%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/windows-amd64/job/traefik/)
 
 # Quick reference (cont.)
 
@@ -98,7 +96,7 @@ Start Traefik v3:
 docker run -d -p 8080:8080 -p 80:80 \
   -v $PWD/traefik.yml:/etc/traefik/traefik.yml \
   -v /var/run/docker.sock:/var/run/docker.sock \
-  traefik:v3
+  winamd64/traefik:v3
 ```
 
 Start a backend server using the `traefik/whoami` image:
@@ -158,7 +156,7 @@ Start Traefik v2:
 docker run -d -p 8080:8080 -p 80:80 \
 -v $PWD/traefik.yml:/etc/traefik/traefik.yml \
 -v /var/run/docker.sock:/var/run/docker.sock \
-traefik:v2.11
+winamd64/traefik:v2.11
 ```
 
 Start a backend server using the `traefik/whoami` image:
@@ -204,13 +202,13 @@ A community support is available at [https://community.traefik.io](https://commu
 
 # Image Variants
 
-The `traefik` images come in many flavors, each designed for a specific use case.
+The `winamd64/traefik` images come in many flavors, each designed for a specific use case.
 
-## `traefik:<version>`
+## `winamd64/traefik:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `traefik:<version>-windowsservercore`
+## `winamd64/traefik:<version>-windowsservercore`
 
 This image is based on [Windows Server Core (`microsoft/windowsservercore`)](https://hub.docker.com/r/microsoft/windowsservercore/). As such, it only works in places which that image does, such as Windows 10 Professional/Enterprise (Anniversary Edition) or Windows Server 2016.
 
