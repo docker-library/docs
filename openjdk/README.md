@@ -42,50 +42,50 @@ The only tags which will continue to receive updates beyond July 2022 will be Ea
 
 ## Simple Tags
 
--	[`25-ea-19-jdk-oraclelinux9`, `25-ea-19-oraclelinux9`, `25-ea-jdk-oraclelinux9`, `25-ea-oraclelinux9`, `25-jdk-oraclelinux9`, `25-oraclelinux9`, `25-ea-19-jdk-oracle`, `25-ea-19-oracle`, `25-ea-jdk-oracle`, `25-ea-oracle`, `25-jdk-oracle`, `25-oracle`](https://github.com/docker-library/openjdk/blob/e964a1e1c35504d84f04e8633d96f5eb8c71a01f/25/jdk/oraclelinux9/Dockerfile)
+-	[`25-ea-20-jdk-oraclelinux9`, `25-ea-20-oraclelinux9`, `25-ea-jdk-oraclelinux9`, `25-ea-oraclelinux9`, `25-jdk-oraclelinux9`, `25-oraclelinux9`, `25-ea-20-jdk-oracle`, `25-ea-20-oracle`, `25-ea-jdk-oracle`, `25-ea-oracle`, `25-jdk-oracle`, `25-oracle`](https://github.com/docker-library/openjdk/blob/949fa078a2bbcc76f7d4e27bbfa9ac5cccf41087/25/jdk/oraclelinux9/Dockerfile)
 
--	[`25-ea-19-jdk-oraclelinux8`, `25-ea-19-oraclelinux8`, `25-ea-jdk-oraclelinux8`, `25-ea-oraclelinux8`, `25-jdk-oraclelinux8`, `25-oraclelinux8`](https://github.com/docker-library/openjdk/blob/e964a1e1c35504d84f04e8633d96f5eb8c71a01f/25/jdk/oraclelinux8/Dockerfile)
+-	[`25-ea-20-jdk-oraclelinux8`, `25-ea-20-oraclelinux8`, `25-ea-jdk-oraclelinux8`, `25-ea-oraclelinux8`, `25-jdk-oraclelinux8`, `25-oraclelinux8`](https://github.com/docker-library/openjdk/blob/949fa078a2bbcc76f7d4e27bbfa9ac5cccf41087/25/jdk/oraclelinux8/Dockerfile)
 
--	[`25-ea-19-jdk-bookworm`, `25-ea-19-bookworm`, `25-ea-jdk-bookworm`, `25-ea-bookworm`, `25-jdk-bookworm`, `25-bookworm`](https://github.com/docker-library/openjdk/blob/e964a1e1c35504d84f04e8633d96f5eb8c71a01f/25/jdk/bookworm/Dockerfile)
+-	[`25-ea-20-jdk-bookworm`, `25-ea-20-bookworm`, `25-ea-jdk-bookworm`, `25-ea-bookworm`, `25-jdk-bookworm`, `25-bookworm`](https://github.com/docker-library/openjdk/blob/949fa078a2bbcc76f7d4e27bbfa9ac5cccf41087/25/jdk/bookworm/Dockerfile)
 
--	[`25-ea-19-jdk-slim-bookworm`, `25-ea-19-slim-bookworm`, `25-ea-jdk-slim-bookworm`, `25-ea-slim-bookworm`, `25-jdk-slim-bookworm`, `25-slim-bookworm`, `25-ea-19-jdk-slim`, `25-ea-19-slim`, `25-ea-jdk-slim`, `25-ea-slim`, `25-jdk-slim`, `25-slim`](https://github.com/docker-library/openjdk/blob/e964a1e1c35504d84f04e8633d96f5eb8c71a01f/25/jdk/slim-bookworm/Dockerfile)
+-	[`25-ea-20-jdk-slim-bookworm`, `25-ea-20-slim-bookworm`, `25-ea-jdk-slim-bookworm`, `25-ea-slim-bookworm`, `25-jdk-slim-bookworm`, `25-slim-bookworm`, `25-ea-20-jdk-slim`, `25-ea-20-slim`, `25-ea-jdk-slim`, `25-ea-slim`, `25-jdk-slim`, `25-slim`](https://github.com/docker-library/openjdk/blob/949fa078a2bbcc76f7d4e27bbfa9ac5cccf41087/25/jdk/slim-bookworm/Dockerfile)
 
--	[`25-ea-19-jdk-bullseye`, `25-ea-19-bullseye`, `25-ea-jdk-bullseye`, `25-ea-bullseye`, `25-jdk-bullseye`, `25-bullseye`](https://github.com/docker-library/openjdk/blob/e964a1e1c35504d84f04e8633d96f5eb8c71a01f/25/jdk/bullseye/Dockerfile)
+-	[`25-ea-20-jdk-bullseye`, `25-ea-20-bullseye`, `25-ea-jdk-bullseye`, `25-ea-bullseye`, `25-jdk-bullseye`, `25-bullseye`](https://github.com/docker-library/openjdk/blob/949fa078a2bbcc76f7d4e27bbfa9ac5cccf41087/25/jdk/bullseye/Dockerfile)
 
--	[`25-ea-19-jdk-slim-bullseye`, `25-ea-19-slim-bullseye`, `25-ea-jdk-slim-bullseye`, `25-ea-slim-bullseye`, `25-jdk-slim-bullseye`, `25-slim-bullseye`](https://github.com/docker-library/openjdk/blob/e964a1e1c35504d84f04e8633d96f5eb8c71a01f/25/jdk/slim-bullseye/Dockerfile)
+-	[`25-ea-20-jdk-slim-bullseye`, `25-ea-20-slim-bullseye`, `25-ea-jdk-slim-bullseye`, `25-ea-slim-bullseye`, `25-jdk-slim-bullseye`, `25-slim-bullseye`](https://github.com/docker-library/openjdk/blob/949fa078a2bbcc76f7d4e27bbfa9ac5cccf41087/25/jdk/slim-bullseye/Dockerfile)
 
--	[`25-ea-19-jdk-windowsservercore-ltsc2025`, `25-ea-19-windowsservercore-ltsc2025`, `25-ea-jdk-windowsservercore-ltsc2025`, `25-ea-windowsservercore-ltsc2025`, `25-jdk-windowsservercore-ltsc2025`, `25-windowsservercore-ltsc2025`](https://github.com/docker-library/openjdk/blob/e964a1e1c35504d84f04e8633d96f5eb8c71a01f/25/jdk/windows/windowsservercore-ltsc2025/Dockerfile)
+-	[`25-ea-20-jdk-windowsservercore-ltsc2025`, `25-ea-20-windowsservercore-ltsc2025`, `25-ea-jdk-windowsservercore-ltsc2025`, `25-ea-windowsservercore-ltsc2025`, `25-jdk-windowsservercore-ltsc2025`, `25-windowsservercore-ltsc2025`](https://github.com/docker-library/openjdk/blob/949fa078a2bbcc76f7d4e27bbfa9ac5cccf41087/25/jdk/windows/windowsservercore-ltsc2025/Dockerfile)
 
--	[`25-ea-19-jdk-windowsservercore-ltsc2022`, `25-ea-19-windowsservercore-ltsc2022`, `25-ea-jdk-windowsservercore-ltsc2022`, `25-ea-windowsservercore-ltsc2022`, `25-jdk-windowsservercore-ltsc2022`, `25-windowsservercore-ltsc2022`](https://github.com/docker-library/openjdk/blob/e964a1e1c35504d84f04e8633d96f5eb8c71a01f/25/jdk/windows/windowsservercore-ltsc2022/Dockerfile)
+-	[`25-ea-20-jdk-windowsservercore-ltsc2022`, `25-ea-20-windowsservercore-ltsc2022`, `25-ea-jdk-windowsservercore-ltsc2022`, `25-ea-windowsservercore-ltsc2022`, `25-jdk-windowsservercore-ltsc2022`, `25-windowsservercore-ltsc2022`](https://github.com/docker-library/openjdk/blob/949fa078a2bbcc76f7d4e27bbfa9ac5cccf41087/25/jdk/windows/windowsservercore-ltsc2022/Dockerfile)
 
--	[`25-ea-19-jdk-windowsservercore-1809`, `25-ea-19-windowsservercore-1809`, `25-ea-jdk-windowsservercore-1809`, `25-ea-windowsservercore-1809`, `25-jdk-windowsservercore-1809`, `25-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/e964a1e1c35504d84f04e8633d96f5eb8c71a01f/25/jdk/windows/windowsservercore-1809/Dockerfile)
+-	[`25-ea-20-jdk-windowsservercore-1809`, `25-ea-20-windowsservercore-1809`, `25-ea-jdk-windowsservercore-1809`, `25-ea-windowsservercore-1809`, `25-jdk-windowsservercore-1809`, `25-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/949fa078a2bbcc76f7d4e27bbfa9ac5cccf41087/25/jdk/windows/windowsservercore-1809/Dockerfile)
 
--	[`25-ea-19-jdk-nanoserver-ltsc2025`, `25-ea-19-nanoserver-ltsc2025`, `25-ea-jdk-nanoserver-ltsc2025`, `25-ea-nanoserver-ltsc2025`, `25-jdk-nanoserver-ltsc2025`, `25-nanoserver-ltsc2025`](https://github.com/docker-library/openjdk/blob/e964a1e1c35504d84f04e8633d96f5eb8c71a01f/25/jdk/windows/nanoserver-ltsc2025/Dockerfile)
+-	[`25-ea-20-jdk-nanoserver-ltsc2025`, `25-ea-20-nanoserver-ltsc2025`, `25-ea-jdk-nanoserver-ltsc2025`, `25-ea-nanoserver-ltsc2025`, `25-jdk-nanoserver-ltsc2025`, `25-nanoserver-ltsc2025`](https://github.com/docker-library/openjdk/blob/949fa078a2bbcc76f7d4e27bbfa9ac5cccf41087/25/jdk/windows/nanoserver-ltsc2025/Dockerfile)
 
--	[`25-ea-19-jdk-nanoserver-ltsc2022`, `25-ea-19-nanoserver-ltsc2022`, `25-ea-jdk-nanoserver-ltsc2022`, `25-ea-nanoserver-ltsc2022`, `25-jdk-nanoserver-ltsc2022`, `25-nanoserver-ltsc2022`](https://github.com/docker-library/openjdk/blob/e964a1e1c35504d84f04e8633d96f5eb8c71a01f/25/jdk/windows/nanoserver-ltsc2022/Dockerfile)
+-	[`25-ea-20-jdk-nanoserver-ltsc2022`, `25-ea-20-nanoserver-ltsc2022`, `25-ea-jdk-nanoserver-ltsc2022`, `25-ea-nanoserver-ltsc2022`, `25-jdk-nanoserver-ltsc2022`, `25-nanoserver-ltsc2022`](https://github.com/docker-library/openjdk/blob/949fa078a2bbcc76f7d4e27bbfa9ac5cccf41087/25/jdk/windows/nanoserver-ltsc2022/Dockerfile)
 
--	[`25-ea-19-jdk-nanoserver-1809`, `25-ea-19-nanoserver-1809`, `25-ea-jdk-nanoserver-1809`, `25-ea-nanoserver-1809`, `25-jdk-nanoserver-1809`, `25-nanoserver-1809`](https://github.com/docker-library/openjdk/blob/e964a1e1c35504d84f04e8633d96f5eb8c71a01f/25/jdk/windows/nanoserver-1809/Dockerfile)
+-	[`25-ea-20-jdk-nanoserver-1809`, `25-ea-20-nanoserver-1809`, `25-ea-jdk-nanoserver-1809`, `25-ea-nanoserver-1809`, `25-jdk-nanoserver-1809`, `25-nanoserver-1809`](https://github.com/docker-library/openjdk/blob/949fa078a2bbcc76f7d4e27bbfa9ac5cccf41087/25/jdk/windows/nanoserver-1809/Dockerfile)
 
 ## Shared Tags
 
--	`25-ea-19-jdk`, `25-ea-19`, `25-ea-jdk`, `25-ea`, `25-jdk`, `25`:
+-	`25-ea-20-jdk`, `25-ea-20`, `25-ea-jdk`, `25-ea`, `25-jdk`, `25`:
 
-	-	[`25-ea-19-jdk-oraclelinux9`](https://github.com/docker-library/openjdk/blob/e964a1e1c35504d84f04e8633d96f5eb8c71a01f/25/jdk/oraclelinux9/Dockerfile)
-	-	[`25-ea-19-jdk-windowsservercore-ltsc2025`](https://github.com/docker-library/openjdk/blob/e964a1e1c35504d84f04e8633d96f5eb8c71a01f/25/jdk/windows/windowsservercore-ltsc2025/Dockerfile)
-	-	[`25-ea-19-jdk-windowsservercore-ltsc2022`](https://github.com/docker-library/openjdk/blob/e964a1e1c35504d84f04e8633d96f5eb8c71a01f/25/jdk/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`25-ea-19-jdk-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/e964a1e1c35504d84f04e8633d96f5eb8c71a01f/25/jdk/windows/windowsservercore-1809/Dockerfile)
+	-	[`25-ea-20-jdk-oraclelinux9`](https://github.com/docker-library/openjdk/blob/949fa078a2bbcc76f7d4e27bbfa9ac5cccf41087/25/jdk/oraclelinux9/Dockerfile)
+	-	[`25-ea-20-jdk-windowsservercore-ltsc2025`](https://github.com/docker-library/openjdk/blob/949fa078a2bbcc76f7d4e27bbfa9ac5cccf41087/25/jdk/windows/windowsservercore-ltsc2025/Dockerfile)
+	-	[`25-ea-20-jdk-windowsservercore-ltsc2022`](https://github.com/docker-library/openjdk/blob/949fa078a2bbcc76f7d4e27bbfa9ac5cccf41087/25/jdk/windows/windowsservercore-ltsc2022/Dockerfile)
+	-	[`25-ea-20-jdk-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/949fa078a2bbcc76f7d4e27bbfa9ac5cccf41087/25/jdk/windows/windowsservercore-1809/Dockerfile)
 
--	`25-ea-19-jdk-windowsservercore`, `25-ea-19-windowsservercore`, `25-ea-jdk-windowsservercore`, `25-ea-windowsservercore`, `25-jdk-windowsservercore`, `25-windowsservercore`:
+-	`25-ea-20-jdk-windowsservercore`, `25-ea-20-windowsservercore`, `25-ea-jdk-windowsservercore`, `25-ea-windowsservercore`, `25-jdk-windowsservercore`, `25-windowsservercore`:
 
-	-	[`25-ea-19-jdk-windowsservercore-ltsc2025`](https://github.com/docker-library/openjdk/blob/e964a1e1c35504d84f04e8633d96f5eb8c71a01f/25/jdk/windows/windowsservercore-ltsc2025/Dockerfile)
-	-	[`25-ea-19-jdk-windowsservercore-ltsc2022`](https://github.com/docker-library/openjdk/blob/e964a1e1c35504d84f04e8633d96f5eb8c71a01f/25/jdk/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`25-ea-19-jdk-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/e964a1e1c35504d84f04e8633d96f5eb8c71a01f/25/jdk/windows/windowsservercore-1809/Dockerfile)
+	-	[`25-ea-20-jdk-windowsservercore-ltsc2025`](https://github.com/docker-library/openjdk/blob/949fa078a2bbcc76f7d4e27bbfa9ac5cccf41087/25/jdk/windows/windowsservercore-ltsc2025/Dockerfile)
+	-	[`25-ea-20-jdk-windowsservercore-ltsc2022`](https://github.com/docker-library/openjdk/blob/949fa078a2bbcc76f7d4e27bbfa9ac5cccf41087/25/jdk/windows/windowsservercore-ltsc2022/Dockerfile)
+	-	[`25-ea-20-jdk-windowsservercore-1809`](https://github.com/docker-library/openjdk/blob/949fa078a2bbcc76f7d4e27bbfa9ac5cccf41087/25/jdk/windows/windowsservercore-1809/Dockerfile)
 
--	`25-ea-19-jdk-nanoserver`, `25-ea-19-nanoserver`, `25-ea-jdk-nanoserver`, `25-ea-nanoserver`, `25-jdk-nanoserver`, `25-nanoserver`:
+-	`25-ea-20-jdk-nanoserver`, `25-ea-20-nanoserver`, `25-ea-jdk-nanoserver`, `25-ea-nanoserver`, `25-jdk-nanoserver`, `25-nanoserver`:
 
-	-	[`25-ea-19-jdk-nanoserver-ltsc2025`](https://github.com/docker-library/openjdk/blob/e964a1e1c35504d84f04e8633d96f5eb8c71a01f/25/jdk/windows/nanoserver-ltsc2025/Dockerfile)
-	-	[`25-ea-19-jdk-nanoserver-ltsc2022`](https://github.com/docker-library/openjdk/blob/e964a1e1c35504d84f04e8633d96f5eb8c71a01f/25/jdk/windows/nanoserver-ltsc2022/Dockerfile)
-	-	[`25-ea-19-jdk-nanoserver-1809`](https://github.com/docker-library/openjdk/blob/e964a1e1c35504d84f04e8633d96f5eb8c71a01f/25/jdk/windows/nanoserver-1809/Dockerfile)
+	-	[`25-ea-20-jdk-nanoserver-ltsc2025`](https://github.com/docker-library/openjdk/blob/949fa078a2bbcc76f7d4e27bbfa9ac5cccf41087/25/jdk/windows/nanoserver-ltsc2025/Dockerfile)
+	-	[`25-ea-20-jdk-nanoserver-ltsc2022`](https://github.com/docker-library/openjdk/blob/949fa078a2bbcc76f7d4e27bbfa9ac5cccf41087/25/jdk/windows/nanoserver-ltsc2022/Dockerfile)
+	-	[`25-ea-20-jdk-nanoserver-1809`](https://github.com/docker-library/openjdk/blob/949fa078a2bbcc76f7d4e27bbfa9ac5cccf41087/25/jdk/windows/nanoserver-1809/Dockerfile)
 
 # Quick reference (cont.)
 
