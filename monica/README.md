@@ -24,17 +24,17 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.1.2-apache`, `4.1-apache`, `4-apache`, `apache`, `4.1.2`, `4.1`, `4`, `latest`](https://github.com/monicahq/docker/blob/7982fc66d4eb5569cfd6fd19202ac5a86dbdef93/4/apache/Dockerfile)
+-	[`4.1.2-apache`, `4.1-apache`, `4-apache`, `apache`, `4.1.2`, `4.1`, `4`, `latest`](https://github.com/monicahq/docker/blob/8c3bcc8d3ab01315ca762c995338083d71c5611e/4/apache/Dockerfile)
 
--	[`4.1.2-fpm-alpine`, `4.1-fpm-alpine`, `4-fpm-alpine`, `fpm-alpine`](https://github.com/monicahq/docker/blob/7982fc66d4eb5569cfd6fd19202ac5a86dbdef93/4/fpm-alpine/Dockerfile)
+-	[`4.1.2-fpm-alpine`, `4.1-fpm-alpine`, `4-fpm-alpine`, `fpm-alpine`](https://github.com/monicahq/docker/blob/8c3bcc8d3ab01315ca762c995338083d71c5611e/4/fpm-alpine/Dockerfile)
 
--	[`4.1.2-fpm`, `4.1-fpm`, `4-fpm`, `fpm`](https://github.com/monicahq/docker/blob/7982fc66d4eb5569cfd6fd19202ac5a86dbdef93/4/fpm/Dockerfile)
+-	[`4.1.2-fpm`, `4.1-fpm`, `4-fpm`, `fpm`](https://github.com/monicahq/docker/blob/8c3bcc8d3ab01315ca762c995338083d71c5611e/4/fpm/Dockerfile)
 
--	[`5.0.0-beta.4-apache`, `5.0.0-beta-apache`, `5.0-apache`](https://github.com/monicahq/docker/blob/7982fc66d4eb5569cfd6fd19202ac5a86dbdef93/5/apache/Dockerfile)
+-	[`5.0.0-beta.5-apache`, `5.0.0-beta-apache`, `5.0-apache`](https://github.com/monicahq/docker/blob/8c3bcc8d3ab01315ca762c995338083d71c5611e/5/apache/Dockerfile)
 
--	[`5.0.0-beta.4-fpm-alpine`, `5.0.0-beta-fpm-alpine`, `5.0-fpm-alpine`](https://github.com/monicahq/docker/blob/7982fc66d4eb5569cfd6fd19202ac5a86dbdef93/5/fpm-alpine/Dockerfile)
+-	[`5.0.0-beta.5-fpm-alpine`, `5.0.0-beta-fpm-alpine`, `5.0-fpm-alpine`](https://github.com/monicahq/docker/blob/8c3bcc8d3ab01315ca762c995338083d71c5611e/5/fpm-alpine/Dockerfile)
 
--	[`5.0.0-beta.4-fpm`, `5.0.0-beta-fpm`, `5.0-fpm`](https://github.com/monicahq/docker/blob/7982fc66d4eb5569cfd6fd19202ac5a86dbdef93/5/fpm/Dockerfile)
+-	[`5.0.0-beta.5-fpm`, `5.0.0-beta-fpm`, `5.0-fpm`](https://github.com/monicahq/docker/blob/8c3bcc8d3ab01315ca762c995338083d71c5611e/5/fpm/Dockerfile)
 
 # Quick reference (cont.)
 
