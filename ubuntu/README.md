@@ -26,9 +26,9 @@ WARNING:
 
 -	[`20.04`, `focal-20250404`, `focal`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-focal-amd64-20250404-fb4da095&id=fb4da0956290c3b216a35315510f66ca9bc4a460)
 
--	[`22.04`, `jammy-20250404`, `jammy`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-amd64-20250404-ee417809&id=ee4178090f23aa4a0ef3958012c618588d0886a9)
+-	[`22.04`, `jammy-20250415.1`, `jammy`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-amd64-20250415.1-518e3d0d&id=518e3d0d114aa4029b5c8889611a4639a501f224)
 
--	[`24.04`, `noble-20250404`, `noble`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-amd64-20250404-febb8724&id=febb872444fbf6132e143cf3d1e5f0958c897cea)
+-	[`24.04`, `noble-20250415.1`, `noble`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-amd64-20250415.1-7c6f2628&id=7c6f26288103e61ee50f3ac157815ba70bb3435d)
 
 -	[`24.10`, `oracular-20250225`, `oracular`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-oracular-amd64-20250225-71a591b6&id=71a591b63518c11abbccce5c648ce23d9a55c63b)
 
