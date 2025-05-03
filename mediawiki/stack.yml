@@ -16,8 +16,7 @@ services:
       # this yaml and uncomment the following line and use compose to restart
       # the mediawiki service
       # - ./LocalSettings.php:/var/www/html/LocalSettings.php
-  # This key also defines the name of the database host used during setup instead of the default "localhost"
-  database:
+  database: # <- This key defines the name of the database during setup
     image: mariadb
     restart: always
     environment:
