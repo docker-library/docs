@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.2-dev13`, `3.2-dev`, `3.2-dev13-bookworm`, `3.2-dev-bookworm`](https://github.com/docker-library/haproxy/blob/ae4952747884968e13bfdf87faf659fb882b14b0/3.2/Dockerfile)
+-	[`3.2-dev14`, `3.2-dev`, `3.2-dev14-bookworm`, `3.2-dev-bookworm`](https://github.com/docker-library/haproxy/blob/b0ab3d704bc22f8f92bb923ee3b5d79c91402a3e/3.2/Dockerfile)
 
--	[`3.2-dev13-alpine`, `3.2-dev-alpine`, `3.2-dev13-alpine3.21`, `3.2-dev-alpine3.21`](https://github.com/docker-library/haproxy/blob/ae4952747884968e13bfdf87faf659fb882b14b0/3.2/alpine/Dockerfile)
+-	[`3.2-dev14-alpine`, `3.2-dev-alpine`, `3.2-dev14-alpine3.21`, `3.2-dev-alpine3.21`](https://github.com/docker-library/haproxy/blob/b0ab3d704bc22f8f92bb923ee3b5d79c91402a3e/3.2/alpine/Dockerfile)
 
 -	[`3.1.7`, `3.1`, `latest`, `3.1.7-bookworm`, `3.1-bookworm`, `bookworm`](https://github.com/docker-library/haproxy/blob/923a92620c9c0277c5d52f3c8734fefe612cadfd/3.1/Dockerfile)
 

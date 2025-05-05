@@ -24,13 +24,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.0-rc1-alpine`, `8.0-rc1-alpine3.21`](https://github.com/redis/docker-library-redis/blob/f3cfc256e913880e5d5eefc794e220c6b0733f22/alpine/Dockerfile)
+-	[`8.0.0`, `8.0`, `8`, `8.0.0-bookworm`, `8.0-bookworm`, `8-bookworm`, `latest`, `bookworm`](https://github.com/redis/docker-library-redis/blob/7fc7e5625cd84b832db85561cb73b1bef78583fa/debian/Dockerfile)
 
--	[`8.0-rc1`, `8.0-rc1-bookworm`](https://github.com/redis/docker-library-redis/blob/f3cfc256e913880e5d5eefc794e220c6b0733f22/debian/Dockerfile)
+-	[`8.0.0-alpine`, `8.0-alpine`, `8-alpine`, `8.0.0-alpine3.21`, `8.0-alpine3.21`, `8-alpine3.21`, `alpine`, `alpine3.21`](https://github.com/redis/docker-library-redis/blob/7fc7e5625cd84b832db85561cb73b1bef78583fa/alpine/Dockerfile)
 
--	[`7.4.3`, `7.4`, `7`, `latest`, `7.4.3-bookworm`, `7.4-bookworm`, `7-bookworm`, `bookworm`](https://github.com/redis/docker-library-redis/blob/27cd071c3e9d903a19c79577ddb82fb322ef5ed6/7.4/debian/Dockerfile)
+-	[`7.4.3`, `7.4`, `7`, `7.4.3-bookworm`, `7.4-bookworm`, `7-bookworm`](https://github.com/redis/docker-library-redis/blob/27cd071c3e9d903a19c79577ddb82fb322ef5ed6/7.4/debian/Dockerfile)
 
--	[`7.4.3-alpine`, `7.4-alpine`, `7-alpine`, `alpine`, `7.4.3-alpine3.21`, `7.4-alpine3.21`, `7-alpine3.21`, `alpine3.21`](https://github.com/redis/docker-library-redis/blob/27cd071c3e9d903a19c79577ddb82fb322ef5ed6/7.4/alpine/Dockerfile)
+-	[`7.4.3-alpine`, `7.4-alpine`, `7-alpine`, `7.4.3-alpine3.21`, `7.4-alpine3.21`, `7-alpine3.21`](https://github.com/redis/docker-library-redis/blob/27cd071c3e9d903a19c79577ddb82fb322ef5ed6/7.4/alpine/Dockerfile)
 
 -	[`7.2.8`, `7.2`, `7.2.8-bookworm`, `7.2-bookworm`](https://github.com/redis/docker-library-redis/blob/27cd071c3e9d903a19c79577ddb82fb322ef5ed6/7.2/debian/Dockerfile)
 
@@ -139,7 +139,7 @@ To minimize image size, it's uncommon for additional related tools (such as `git
 
 # License
 
-Starting on March 20th, 2024, Redis follows a dual-licensing model with the choice of the [Redis Source Available License v2 - RSALv2](https://redis.io/legal/rsalv2-agreement/) or the [Server Side Public License v1 - SSPLv1](https://redis.io/legal/server-side-public-license-sspl/). Older versions of Redis (<=7.2.4) are licensed under [3-Clause BSD](https://opensource.org/license/bsd-3-clause).
+Starting with Redis 8.0, Redis follows a tri-licensing model with the choice of the [Redis Source Available License v2 - RSALv2](https://redis.io/legal/rsalv2-agreement/), [Server Side Public License v1 - SSPLv1](https://redis.io/legal/server-side-public-license-sspl/), or the [GNU Affero General Public License v3 - AGPLv3](https://opensource.org/license/agpl-v3). Prior versions of Redis (<=7.2.4) are licensed under [3-Clause BSD](https://opensource.org/license/bsd-3-clause)⁠, and Redis 7.4.x-7.8.x are licensed under the dual [RSALv2](https://redis.io/legal/rsalv2-agreement/) or [SSPLv1](https://redis.io/legal/server-side-public-license-sspl/) license.
 
 Please also view the [Redis License Overview](https://redis.io/legal/licenses/) and the [Redis Trademark Policy](https://redis.io/legal/trademark-policy/).
 
