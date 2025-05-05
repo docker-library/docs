@@ -99,11 +99,11 @@ To use the fpm image, you need an additional web server, such as [nginx](https:/
 $ docker run -d nextcloud:fpm
 ```
 
-As the fastCGI-Process is not capable of serving static files (style sheets, images, ...), the webserver needs access to these files. This can be achieved with the `volumes-from` option. You can find more information in the [Docker Compose section](#running-this-image-with-docker-compose).
+As the fastCGI-Process is not capable of serving static files (style sheets, images, ...), the webserver needs access to these files. This can be achieved with the `volumes-from` option. You can find more information in the Docker Compose section.
 
 ## Using an external database
 
-By default, this container uses SQLite for data storage but the Nextcloud setup wizard (appears on first run) allows connecting to an existing MySQL/MariaDB or PostgreSQL database. You can also link a database container, e. g. `--link my-mysql:mysql`, and then use `mysql` as the database host on setup. More info is in the docker-compose section.
+By default, this container uses SQLite for data storage but the Nextcloud setup wizard (appears on first run) allows connecting to an existing MySQL/MariaDB or PostgreSQL database. You can also link a database container, e. g. `--link my-mysql:mysql`, and then use `mysql` as the database host on setup. More info is in the Docker Compose section.
 
 ## Persistent data
 
@@ -173,10 +173,10 @@ To use the [Nextcloud command-line interface](https://docs.nextcloud.com/server/
 $ docker exec --user www-data CONTAINER_ID php occ
 ```
 
-or for docker-compose:
+or for `docker compose`:
 
 ```console
-$ docker-compose exec --user www-data app php occ
+$ docker compose exec --user www-data app php occ
 ```
 
 ## Auto configuration via environment variables
@@ -224,7 +224,7 @@ You might want to make sure the htaccess is up to date after each container upda
 
 -	`NEXTCLOUD_INIT_HTACCESS` (not set by default) Set it to true to enable run `occ maintenance:update:htaccess` after container initialization.
 
-If you want to use Redis you have to create a separate [Redis](https://hub.docker.com/_/redis/) container in your setup / in your docker-compose file. To inform Nextcloud about the Redis container, pass in the following parameters:
+If you want to use Redis you have to create a separate [Redis](https://hub.docker.com/_/redis/) container in your setup / in your Compose file. To inform Nextcloud about the Redis container, pass in the following parameters:
 
 -	`REDIS_HOST` (not set by default) Name of Redis container
 -	`REDIS_HOST_PORT` (default: `6379`) Optional port for Redis, only use for external Redis servers that run on non-standard ports.
@@ -448,8 +448,6 @@ Then run `docker compose up -d`, now you can access Nextcloud at http://localhos
 As an alternative to passing sensitive information via environment variables, `_FILE` may be appended to the previously listed environment variables, causing the initialization script to load the values for those variables from files present in the container. In particular, this can be used to load passwords from Docker secrets stored in `/run/secrets/<secret_name>` files. For example:
 
 ```yaml
-version: '3.2'
-
 services:
   db:
     image: postgres

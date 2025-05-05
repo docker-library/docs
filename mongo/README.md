@@ -173,13 +173,12 @@ $ docker run -it --network some-network --rm mongo mongosh --host some-mongo tes
 
 ... where `some-mongo` is the name of your original `mongo` container.
 
-## ... via [`docker-compose`](https://github.com/docker/compose) or [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/)
+## ... via [`docker compose`](https://github.com/docker/compose)
 
-Example `docker-compose.yml` for `mongo`:
+Example `compose.yaml` for `mongo`:
 
 ```yaml
 # Use root/example as user/password credentials
-version: '3.1'
 
 services:
 
@@ -202,9 +201,7 @@ services:
       ME_CONFIG_BASICAUTH: false
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/e6234a76beddf381523549d8161c9f985642c8bf/mongo/stack.yml)
-
-Run `docker stack deploy -c stack.yml mongo` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8081`, `http://localhost:8081`, or `http://host-ip:8081` (as appropriate).
+Run `docker compose up`, wait for it to initialize completely, and visit `http://localhost:8081` or `http://host-ip:8081` (as appropriate).
 
 ## Container shell access and viewing MongoDB logs
 
@@ -232,10 +229,9 @@ Most MongoDB configuration can be set through flags to `mongod`. The entrypoint 
 $ docker run --name some-mongo -d mongo --serviceExecutor adaptive
 ```
 
-And here is the same with a `docker-compose.yml` file
+And here is the same with a `compose.yaml` file
 
 ```yaml
-version: '3.1'
 services:
   mongo:
     image: mongo

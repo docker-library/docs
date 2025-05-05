@@ -152,10 +152,9 @@ Tweak these environment variables to easily connect to a postgres server:
 
 ## Docker Compose examples
 
-The simplest `docker-compose.yml` file would be:
+The simplest `compose.yaml` file would be:
 
 ```yml
-version: '3.1'
 services:
   web:
     image: odoo:17.0
@@ -174,7 +173,6 @@ services:
 If the default postgres credentials does not suit you, tweak the environment variables:
 
 ```yml
-version: '3.1'
 services:
   web:
     image: odoo:17.0
@@ -202,7 +200,6 @@ Here's a last example showing you how to
 -	use a `secrets` file named `odoo_pg_pass` that contains the postgreql password shared by both services
 
 ```yml
-version: '3.1'
 services:
   web:
     image: odoo:17.0
@@ -238,10 +235,10 @@ secrets:
     file: odoo_pg_pass
 ```
 
-To start your Odoo instance, go in the directory of the `docker-compose.yml` file you created from the previous examples and type:
+To start your Odoo instance, go in the directory of the `compose.yaml` file you created from the previous examples and type:
 
 ```console
-docker-compose up -d
+docker compose up -d
 ```
 
 # How to upgrade this image

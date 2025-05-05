@@ -93,25 +93,26 @@ $ docker run --name some-backdrop \
   -d backdrop
 ```
 
-## ... via [Docker Compose](https://github.com/docker/compose)
+## ... via [`docker compose`](https://github.com/docker/compose)
 
 Example `compose.yaml` for `backdrop`:
 
 ```yaml
-backdrop:
-  image: backdrop
-  links:
-    - db:mysql
-  ports:
-    - 8080:80
+services:
+  backdrop:
+    image: backdrop
+    links:
+      - db:mysql
+    ports:
+      - 8080:80
 
-db:
-  image: mysql
-  environment:
-    MYSQL_USER: backdrop
-    MYSQL_PASSWORD: backdrop
-    MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
-    MYSQL_DATABASE: backdrop
+  db:
+    image: mysql
+    environment:
+      MYSQL_USER: backdrop
+      MYSQL_PASSWORD: backdrop
+      MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
+      MYSQL_DATABASE: backdrop
 ```
 
 Run `docker compose up`, wait for it to initialize completely, and visit `http://localhost:8080` or `http://host-ip:8080`.

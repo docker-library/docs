@@ -83,12 +83,11 @@ The TeamSpeak server log is available through Docker's container log:
 $ docker logs some-teamspeak
 ```
 
-## ... via [`docker-compose`](https://github.com/docker/compose) or [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/)
+## ... via [`docker compose`](https://github.com/docker/compose)
 
-Example `docker-compose.yml` for `teamspeak`:
+Example `compose.yaml` for `teamspeak`:
 
 ```yaml
-version: '3.1'
 services:
   teamspeak:
     image: teamspeak
@@ -114,9 +113,7 @@ services:
       MYSQL_DATABASE: teamspeak
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/0975c9ae2481c3f988c17d01d62075c9bf772ebb/teamspeak/stack.yml)
-
-Run `docker stack deploy -c stack.yml teamspeak` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `swarm-ip:9987`, `localhost:9987`, or `host-ip:9987` (as appropriate) with a TeamSpeak client.
+Run `docker compose up`, wait for it to initialize completely, and visit `localhost:9987` or `host-ip:9987` (as appropriate) with a TeamSpeak client.
 
 ## Environment Variables
 

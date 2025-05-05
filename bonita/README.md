@@ -89,9 +89,9 @@ docker run --name mydbpostgres -h <hostname> -d bonitasoft/bonita-postgres:16.4
 
 This image is built from the following [GitHub repository](https://github.com/Bonitasoft-Community/bonita-database-docker/tree/main/postgres/16), which can be further adapted/customized to suit your needs.
 
-## ... via [`docker-compose`](https://github.com/docker/compose) or [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/)
+## ... via [`docker compose`](https://github.com/docker/compose)
 
-Example `docker-compose.yml` for `bonita`:
+Example `compose.yaml` for `bonita`:
 
 ```yaml
 services:
@@ -127,9 +127,7 @@ services:
         condition: service_healthy
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/b9ac3b631e82399477dd12a906f6bf68b3d872b3/bonita/stack.yml)
-
-Run `docker stack deploy -c stack.yml bonita` (or `docker compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
+Run `docker compose up`, wait for it to initialize completely, and visit `http://localhost:8080` or `http://host-ip:8080` (as appropriate).
 
 -	Replace `<hostname>` with the one used in the licence generation command
 -	leave double `$$` untouched

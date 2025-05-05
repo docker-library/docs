@@ -105,13 +105,11 @@ $ docker run -v /local/path/to/config.local.php:/var/www/html/config.local.php \
         postfixadmin
 ```
 
-... via [`docker-compose`](https://github.com/docker/compose) or [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/)
+... via [`docker compose`](https://github.com/docker/compose)
 
-Example `docker-compose.yml` for `postfixadmin`:
+Example `compose.yaml` for `postfixadmin`:
 
 ```yaml
-version: '3'
-
 services:
   db:
     image: mysql:8.0
@@ -137,9 +135,7 @@ services:
       POSTFIXADMIN_DB_PASSWORD: example
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/8b35a43795bda4f4ca1299bee2d02afe2434ee7f/postfixadmin/stack.yml)
-
-Run docker stack deploy -c stack.yml postfixadmin (or docker-compose -f stack.yml up), wait for it to initialize completely, and visit http://swarm-ip:8080, http://localhost:8080, or http://host-ip:8080 (as appropriate).
+Run `docker compose up`, wait for it to initialize completely, and visit `http://localhost:8080` or `http://host-ip:8080` (as appropriate).
 
 # Image Variants
 

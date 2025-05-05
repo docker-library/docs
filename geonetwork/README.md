@@ -171,7 +171,7 @@ GeoNetwork listens on port `8080`. If you want to access the container at the ho
 docker run --name some-geonetwork -d -p 8080:8080 geonetwork
 ```
 
-Then, if you are running docker on Linux, you may access geonetwork at http://localhost:8080/geonetwork. Otherwise, replace `localhost` by the address of your docker machine.
+Then, if you are running docker on Linux, you may access geonetwork at http://localhost:8080/geonetwork.
 
 ### Set the data directory and H2 db file
 
@@ -215,19 +215,17 @@ docker run --name some-geonetwork -d -p 8080:8080 -e DATA_DIR=/catalogue-data/da
 docker run --name some-geonetwork -d -p 8080:8080  -e GN_CONFIG_PROPERTIES="-Dgeonetwork.dir=/catalogue-data" -e GEONETWORK_DB_NAME=/catalogue-data/db/gn -v /host/geonetwork-docker:/catalogue-data geonetwork
 ```
 
-### ... via [`docker-compose`](https://github.com/docker/compose) or [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/)
+### ... via [`docker compose`](https://github.com/docker/compose)
 
-Example `docker-compose.yml` for `geonetwork`:
+Example `compose.yaml` for `geonetwork`:
 
 ```yaml
 # GeoNetwork
 #
-# Access via "http://localhost:8080/geonetwork" (or "http://$(docker-machine ip):8080/geonetwork" if using docker-machine)
+# Access via "http://localhost:8080/geonetwork"
 #
 # Default user: admin
 # Default password: admin
-
-version: '3.8'
 
 volumes:
   geonetwork:
@@ -343,9 +341,7 @@ services:
         condition: service_healthy
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/c36fe01925fbb3bd409b060190b7d99be5107af0/geonetwork/stack.yml)
-
-Run `docker stack deploy -c stack.yml geonetwork` (or `docker compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080/geonetwork`, `http://localhost:8080/geonetwork`, or `http://host-ip:8080/geonetwork` (as appropriate).
+Run `docker compose up`, wait for it to initialize completely, and visit `http://localhost:8080/geonetwork` or `http://host-ip:8080/geonetwork` (as appropriate).
 
 ### Default credentials
 
