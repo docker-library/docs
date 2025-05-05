@@ -66,7 +66,7 @@ docker run --name phpmyadmin -d -e PMA_ARBITRARY=1 -p 8080:80 %%IMAGE%%
 
 This will run phpMyAdmin with the arbitrary server option - allowing you to specify any MySQL/MariaDB server on the login page.
 
-%%STACK%%
+%%COMPOSE%%
 
 ## Adding Custom Configuration
 

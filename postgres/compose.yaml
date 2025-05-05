@@ -1,12 +1,11 @@
 # Use postgres/example user/password credentials
-version: '3.9'
 
 services:
 
   db:
     image: postgres
     restart: always
-    # set shared memory limit when using docker-compose
+    # set shared memory limit when using docker compose
     shm_size: 128mb
     # or set shared memory limit when deploy via swarm stack
     #volumes:

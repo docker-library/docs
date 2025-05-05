@@ -36,9 +36,9 @@ The TeamSpeak server log is available through Docker's container log:
 $ docker logs some-%%REPO%%
 ```
 
-## %%STACK%%
+## %%COMPOSE%%
 
-Run `docker stack deploy -c stack.yml %%REPO%%` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `swarm-ip:9987`, `localhost:9987`, or `host-ip:9987` (as appropriate) with a TeamSpeak client.
+Run `docker compose up`, wait for it to initialize completely, and visit `localhost:9987` or `host-ip:9987` (as appropriate) with a TeamSpeak client.
 
 ## Environment Variables
 

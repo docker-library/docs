@@ -46,9 +46,9 @@ The paths `/var/www/html/images` and `/var/www/html/LocalSettings.php` are thing
 $ docker run --rm %%IMAGE%% tar -cC /var/www/html/sites . | tar -xC /path/on/host/sites
 ```
 
-## %%STACK%%
+## %%COMPOSE%%
 
-Run `docker stack deploy -c stack.yml %%REPO%%` (or `docker compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
+Run `docker compose up`, wait for it to initialize completely, and visit `http://localhost:8080` or `http://host-ip:8080` (as appropriate).
 
 ## Adding additional libraries / extensions
 

@@ -38,9 +38,9 @@ $ docker run -it --rm %%IMAGE%% mysql -hsome.mysql.host -usome-mysql-user -p
 
 More information about the MySQL command line client can be found in the [MySQL documentation](http://dev.mysql.com/doc/en/mysql.html)
 
-## %%STACK%%
+## %%COMPOSE%%
 
-Run `docker stack deploy -c stack.yml %%REPO%%` (or `docker compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
+Run `docker compose up`, wait for it to initialize completely, and visit `http://localhost:8080` or `http://host-ip:8080` (as appropriate).
 
 ## Container shell access and viewing MySQL logs
 

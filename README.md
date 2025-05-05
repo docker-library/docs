@@ -35,7 +35,7 @@ All Markdown files here are run through [tianon's fork of `markdownfmt`](https:/
 	8.	[`maintainer.md`](#maintainermd)
 	9.	[`metadata.json`](#metadatajson)
 	10.	[`README-short.txt`](#readme-shorttxt)
-	11.	[`stack.yml`](#stackyml)
+	11.	[`compose.yaml`](#composeyaml)
 5.	[Files for main Docs repo](#files-for-main-docs-repo)
 	1.	[`update.sh`](#updatesh)
 	2.	[`markdownfmt.sh` and `ymlfmt.sh`](#markdownfmtsh-and-ymlfmtsh)
@@ -148,11 +148,11 @@ This is the short description for the Docker Hub, limited to 100 characters in a
 
 > Go (golang) is a general purpose, higher-level, imperative programming language.
 
-## `stack.yml`
+## `compose.yaml`
 
-This optional file contains a small, working [Compose file for Docker Swarm](https://docs.docker.com/compose/compose-file/compose-file-v3/) showing off how to use the image. To use the `stack.yml`, add `%%STACK%%` to the `content.md` and this will embed the YAML along with a link to directly try it in [Play with Docker](https://labs.play-with-docker.com/).
+This optional file contains a small, working [Compose file](https://docs.docker.com/reference/compose-file/) showing off how to use the image. To use the `compose.yaml`, add `%%COMPOSE%%` to the `content.md` and this will embed the YAML.
 
-The file must work via `docker stack deploy` since that is how Play with Docker will launch it, but it is helpful for users to try locally if it works for `docker-compose` as well. Other official images may be referenced within the YAML to demonstrate the functionality of the image, but no images external to the Docker Official Images program may be referenced.
+Other official images may be referenced within the YAML to demonstrate the functionality of the image, but no images external to the Docker Official Images program may be referenced.
 
 # Files for main Docs repo
 
