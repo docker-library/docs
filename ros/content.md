@@ -157,13 +157,11 @@ Alternatively, more permissive network settings can be used to share all host ne
 
 ### Docker Compose
 
-In this example we'll demonstrate using [`docker-compose`](https://docs.docker.com/compose/) to spawn a pair of message publisher and subscriber nodes in separate containers connected through shared software defined network.
+In this example we'll demonstrate using [`docker compose`](https://docs.docker.com/compose/) to spawn a pair of message publisher and subscriber nodes in separate containers connected through shared software defined network.
 
-> Create the directory `~/ros_demos` and add the first `Dockerfile` example from above. In the same directory, also create file `docker-compose.yml` with the following that runs a C++ publisher with a Python subscriber:
+> Create the directory `~/ros_demos` and add the first `Dockerfile` example from above. In the same directory, also create file `compose.yaml` with the following that runs a C++ publisher with a Python subscriber:
 
 ```yaml
-version: '3'
-
 services:
   talker:
     build: ./
@@ -176,10 +174,10 @@ services:
     command: ros2 run demo_nodes_py listener
 ```
 
-> Use docker-compose inside the same directory to launch our ROS nodes. Given the containers created derive from the same docker compose project, they will coexist on shared project network:
+> Use `docker compose` inside the same directory to launch our ROS nodes. Given the containers created derive from the same docker compose project, they will coexist on shared project network:
 
 ```console
-$ docker-compose up -d
+$ docker compose up -d
 ```
 
 > Notice that a new network named `ros_demos_default` has been created, as can be shown further with:
@@ -191,17 +189,17 @@ $ docker network inspect ros_demos_default
 > We can monitor the logged output of each container, such as the listener node like so:
 
 ```console
-$ docker-compose logs listener
+$ docker compose logs listener
 ```
 
-> Finally, we can stop and remove all the relevant containers using docker-compose from the same directory:
+> Finally, we can stop and remove all the relevant containers using `docker compose` from the same directory:
 
 ```console
-$ docker-compose stop
-$ docker-compose rm
+$ docker compose stop
+$ docker compose rm
 ```
 
-> Note: the auto-generated network, `ros_demos_default`, will persist until you explicitly remove it using `docker-compose down`.
+> Note: the auto-generated network, `ros_demos_default`, will persist until you explicitly remove it using `docker compose down`.
 
 ### ROS 1 Bridge
 
@@ -223,8 +221,6 @@ CMD ["roslaunch", "roscpp_tutorials", "talker_listener_launch"]
 The compose file bellow spawns services for both talker listener demos while connecting the two via a dynamic bridge. You may then view the log output from both pairs of talker and listener nodes cross talking over the `/chatter` topic.
 
 ```yaml
-version: '3'
-
 services:
   ros1:
     build:

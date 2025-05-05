@@ -108,10 +108,9 @@ The configuration above assumes you have a folder structure like the following:
 
 ### Docker Compose example
 
-Finally, a simple `docker-compose` file to start KrakenD with your API would be:
+Finally, a simple `docker compose` file to start KrakenD with your API would be:
 
 ```yaml
-version: "3"
 services:
   krakend:
     image: %%IMAGE%%:<version>
@@ -124,7 +123,6 @@ services:
 And another one that uses the flexible configuration and a custom template filename (`my_krakend.tmpl`) on each start:
 
 ```yaml
-version: "3"
 services:
   krakend:
     image: %%IMAGE%%:<version>

@@ -1,11 +1,9 @@
 # GeoNetwork
 #
-# Access via "http://localhost:8080/geonetwork" (or "http://$(docker-machine ip):8080/geonetwork" if using docker-machine)
+# Access via "http://localhost:8080/geonetwork"
 #
 # Default user: admin
 # Default password: admin
-
-version: '3.8'
 
 volumes:
   geonetwork:

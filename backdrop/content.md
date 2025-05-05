@@ -44,26 +44,7 @@ $ docker run --name some-%%REPO%% \
   -d %%REPO%%
 ```
 
-## ... via [Docker Compose](https://github.com/docker/compose)
-
-Example `compose.yaml` for `%%REPO%%`:
-
-```yaml
-%%REPO%%:
-  image: %%REPO%%
-  links:
-    - db:mysql
-  ports:
-    - 8080:80
-
-db:
-  image: mysql
-  environment:
-    MYSQL_USER: %%REPO%%
-    MYSQL_PASSWORD: %%REPO%%
-    MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
-    MYSQL_DATABASE: %%REPO%%
-```
+## %%COMPOSE%%
 
 Run `docker compose up`, wait for it to initialize completely, and visit `http://localhost:8080` or `http://host-ip:8080`.
 

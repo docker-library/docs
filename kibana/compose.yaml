@@ -1,5 +1,3 @@
-version: '3.1'
-
 services:
 
   kibana:
@@ -9,4 +7,3 @@ services:
 
   elasticsearch:
     image: elasticsearch
-
