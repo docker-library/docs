@@ -81,24 +81,34 @@ The mariadb has a number of tags, and of note is `latest`, as the latest stable 
 
 ## Running the container
 
+### Configuration
+
+#### Port binding
+
+By default, the database running within the container will listen on port 3306. You can expose the container port 3306 to the host port 3306 with the `-p 3306:3306` argument to `docker run`, like the command below:
+
+```console
+$ docker run --name some-mariadb -p 3306:3306 mariadb:latest
+```
+
 ### Starting using a minimal configuration
 
 The environment variables required to use this image involves the setting of the root user password:
 
 ```console
-$ docker run --detach --name some-mariadb --env MARIADB_ROOT_PASSWORD=my-secret-pw  mariadb:latest
+$ docker run --detach --name some-mariadb --env MARIADB_ROOT_PASSWORD=my-secret-pw mariadb:latest
 ```
 
 or:
 
 ```console
-$ docker run --detach --name some-mariadb --env MARIADB_ALLOW_EMPTY_ROOT_PASSWORD=1  mariadb:latest
+$ docker run --detach --name some-mariadb --env MARIADB_ALLOW_EMPTY_ROOT_PASSWORD=1 mariadb:latest
 ```
 
 or:
 
 ```console
-$ docker run --detach --name some-mariadb --env MARIADB_RANDOM_ROOT_PASSWORD=1  mariadb:latest
+$ docker run --detach --name some-mariadb --env MARIADB_RANDOM_ROOT_PASSWORD=1 mariadb:latest
 ```
 
 ... where the container logs will contain the generated root password.
@@ -132,7 +142,7 @@ Run `docker compose up`, wait for it to initialize completely, and visit `http:/
 Starting a MariaDB instance with a user, password, and a database:
 
 ```console
-$ docker run --detach --name some-mariadb --env MARIADB_USER=example-user --env MARIADB_PASSWORD=my_cool_secret --env MARIADB_DATABASE=exmple-database --env MARIADB_ROOT_PASSWORD=my-secret-pw  mariadb:latest
+$ docker run --detach --name some-mariadb --env MARIADB_USER=example-user --env MARIADB_PASSWORD=my_cool_secret --env MARIADB_DATABASE=exmple-database --env MARIADB_ROOT_PASSWORD=my-secret-pw mariadb:latest
 ```
 
 ### Start a `mariadb` server instance in a network
@@ -141,8 +151,8 @@ As applications talk to MariaDB, MariaDB needs to start in the same network as t
 
 ```console
 $ docker network create some-network 
-$ docker run --detach --network some-network --name some-mariadb --env MARIADB_USER=example-user --env MARIADB_PASSWORD=my_cool_secret --env MARIADB_ROOT_PASSWORD=my-secret-pw  mariadb:latest
-$ docker run --detach --network some-network --name some-application --env APP_DB_HOST=some-mariadb  --env APP_DB_USER=example-user --env APP_DB_PASSWD=my_cool_secret some-application
+$ docker run --detach --network some-network --name some-mariadb --env MARIADB_USER=example-user --env MARIADB_PASSWORD=my_cool_secret --env MARIADB_ROOT_PASSWORD=my-secret-pw mariadb:latest
+$ docker run --detach --network some-network --name some-application --env APP_DB_HOST=some-mariadb --env APP_DB_USER=example-user --env APP_DB_PASSWD=my_cool_secret some-application
 ```
 
 ... where `some-network` is a newly created network (other than `bridge` as the default network), `some-mariadb` is the name you want to assign to your container, `my-secret-pw` is the password to be set for the MariaDB root user. See the list above for relevant tags to match your needs and environment. `some-application` and then environment variable `APP_DB_HOST`, `APP_DB_USER` and `APP_DB_PASSWD` are the application's configuration for its database connection.
@@ -152,7 +162,7 @@ $ docker run --detach --network some-network --name some-application --env APP_D
 The following command starts another `mariadb` container instance and runs the `mariadb` command line client against your original `mariadb` container, allowing you to execute SQL statements against your database instance:
 
 ```console
-$ docker run -it --network some-network --rm mariadb mariadb -hsome-mariadb -uexample-user -p
+$ docker run -it --network some-network --rm mariadb mariadb -h some-mariadb -u example-user
 ```
 
 ... where `some-mariadb` is the name of your original `mariadb` container (connected to the `some-network` Docker network).
