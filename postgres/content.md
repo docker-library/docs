@@ -132,7 +132,7 @@ If you would like to do additional initialization in an image derived from this 
 For example, to add an additional user and database, add the following to `/docker-entrypoint-initdb.d/init-user-db.sh`:
 
 ```bash
-#!/bin/bash
+#!/usr/bin/env bash
 set -e
 
 psql -v ON_ERROR_STOP=1 --username "$POSTGRES_USER" --dbname "$POSTGRES_DB" <<-EOSQL
