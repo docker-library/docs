@@ -26,9 +26,11 @@ WARNING:
 
 -	[`7.17.28`](https://github.com/elastic/dockerfiles/blob/2ef7e0a0be5abd21cb38a39c3cce65d5278ebfee/logstash/Dockerfile)
 
--	[`8.17.5`](https://github.com/elastic/dockerfiles/blob/ec338e388e5d359de48c743b4f2314436a337a8d/logstash/Dockerfile)
+-	[`8.17.6`](https://github.com/elastic/dockerfiles/blob/d7216d19313f88d63f43b52df31da2b4ae6ace3c/logstash/Dockerfile)
 
--	[`8.18.0`](https://github.com/elastic/dockerfiles/blob/0bc901e7edcccaebfe262d53c0be6be4f90df8a5/logstash/Dockerfile)
+-	[`8.18.1`](https://github.com/elastic/dockerfiles/blob/bba6738fb5c2e6202a324f07fa028aa36bd1716f/logstash/Dockerfile)
+
+-	[`9.0.1`](https://github.com/elastic/dockerfiles/blob/c1767391264142d319c5aebbc7b44ff935ecb40d/logstash/Dockerfile)
 
 # Quick reference (cont.)
 
