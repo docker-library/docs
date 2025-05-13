@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.0.0`, `8.0`, `8`, `8.0.0-bookworm`, `8.0-bookworm`, `8-bookworm`, `latest`, `bookworm`](https://github.com/redis/docker-library-redis/blob/7fc7e5625cd84b832db85561cb73b1bef78583fa/debian/Dockerfile)
+-	[`8.0.1`, `8.0`, `8`, `8.0.1-bookworm`, `8.0-bookworm`, `8-bookworm`, `latest`, `bookworm`](https://github.com/redis/docker-library-redis/blob/fe864e383ae7c5c891a694f9e0c16f8459a62234/debian/Dockerfile)
 
--	[`8.0.0-alpine`, `8.0-alpine`, `8-alpine`, `8.0.0-alpine3.21`, `8.0-alpine3.21`, `8-alpine3.21`, `alpine`, `alpine3.21`](https://github.com/redis/docker-library-redis/blob/7fc7e5625cd84b832db85561cb73b1bef78583fa/alpine/Dockerfile)
+-	[`8.0.1-alpine`, `8.0-alpine`, `8-alpine`, `8.0.1-alpine3.21`, `8.0-alpine3.21`, `8-alpine3.21`, `alpine`, `alpine3.21`](https://github.com/redis/docker-library-redis/blob/fe864e383ae7c5c891a694f9e0c16f8459a62234/alpine/Dockerfile)
 
 -	[`7.4.3`, `7.4`, `7`, `7.4.3-bookworm`, `7.4-bookworm`, `7-bookworm`](https://github.com/redis/docker-library-redis/blob/27cd071c3e9d903a19c79577ddb82fb322ef5ed6/7.4/debian/Dockerfile)
 
