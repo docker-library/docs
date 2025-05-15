@@ -34,6 +34,8 @@ WARNING:
 
 -	[`25.04`, `plucky-20250415`, `plucky`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-plucky-amd64-20250415-9aa542b4&id=9aa542b421288860569e4375a11053227643ddf8)
 
+-	[`25.10`, `questing-20250514`, `questing`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-questing-amd64-20250514-fdfe5cc8&id=fdfe5cc8f8ad756c85ece74b2d96318dc7334468)
+
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
