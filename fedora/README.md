@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `s390x` builds of [the `fedora` official image](https://hub.docker.com/_/fedora) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,13 +26,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`40`](https://github.com/fedora-cloud/docker-brew-fedora/blob/f5bdda47877c6a4cbbdef5233fdcfb31e0a96040/x86_64/Dockerfile)
+-	[`40`](https://github.com/fedora-cloud/docker-brew-fedora/blob/f5bdda47877c6a4cbbdef5233fdcfb31e0a96040/s390x/Dockerfile)
 
--	[`41`](https://github.com/fedora-cloud/docker-brew-fedora/blob/5aee3a684c041e0665d1af1350a245f2286fbf18/x86_64/Dockerfile)
+-	[`41`](https://github.com/fedora-cloud/docker-brew-fedora/blob/5aee3a684c041e0665d1af1350a245f2286fbf18/s390x/Dockerfile)
 
--	[`42`, `latest`](https://github.com/fedora-cloud/docker-brew-fedora/blob/010de8006c2c551b626959423a588bb773fcf412/x86_64/Dockerfile)
+-	[`42`, `latest`](https://github.com/fedora-cloud/docker-brew-fedora/blob/010de8006c2c551b626959423a588bb773fcf412/s390x/Dockerfile)
 
--	[`43`, `rawhide`](https://github.com/fedora-cloud/docker-brew-fedora/blob/2ed4770ad9089b377782b204bef1ea738fd30862/x86_64/Dockerfile)
+-	[`43`, `rawhide`](https://github.com/fedora-cloud/docker-brew-fedora/blob/2ed4770ad9089b377782b204bef1ea738fd30862/s390x/Dockerfile)
+
+[![s390x/fedora build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/s390x/job/fedora.svg?label=s390x/fedora%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/fedora/)
 
 # Quick reference (cont.)
 
@@ -57,11 +61,11 @@ This image serves as the `official Fedora image` for the [Fedora Distribution](h
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/7925a7131128930eed07077f9369b7ca52e0fd02/fedora/logo.png)
 
-The `fedora:latest` tag will always point to the latest stable release.
+The `s390x/fedora:latest` tag will always point to the latest stable release.
 
 This image is a relatively small footprint in comparison to a standard Fedora installation. This image is generated in the [Fedora Build System](http://koji.fedoraproject.org/koji/) and is built from [this kickstart file](https://pagure.io/fedora-kickstarts/blob/main/f/fedora-container-base.ks).
 
-[Fedora Rawhide](https://fedoraproject.org/wiki/Releases/Rawhide) is available via `fedora:rawhide` and any specific version of Fedora as `fedora:$version` (example: `fedora:23`).
+[Fedora Rawhide](https://fedoraproject.org/wiki/Releases/Rawhide) is available via `s390x/fedora:rawhide` and any specific version of Fedora as `s390x/fedora:$version` (example: `s390x/fedora:23`).
 
 # License
 
