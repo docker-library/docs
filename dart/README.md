@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `ppc64le` builds of [the `dart` official image](https://hub.docker.com/_/dart) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,9 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.7.3-sdk`, `3.7-sdk`, `3-sdk`, `stable-sdk`, `sdk`, `3.7.3`, `3.7`, `3`, `stable`, `latest`](https://github.com/dart-lang/dart-docker/blob/2ff1146d0172fb02205c6a0fc0082fd8752f0c85/stable/bookworm/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `ppc64le` ARCHITECTURE
 
--	[`3.8.0-278.2.beta-sdk`, `beta-sdk`, `3.8.0-278.2.beta`, `beta`](https://github.com/dart-lang/dart-docker/blob/2ff1146d0172fb02205c6a0fc0082fd8752f0c85/beta/bookworm/Dockerfile)
+[![ppc64le/dart build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/ppc64le/job/dart.svg?label=ppc64le/dart%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/ppc64le/job/dart/)
 
 # Quick reference (cont.)
 
