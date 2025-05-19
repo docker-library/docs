@@ -38,12 +38,6 @@ WARNING:
 
 -	[`humble-perception`, `humble-perception-jammy`](https://github.com/osrf/docker_images/blob/20d40c96b426b8956dec203e236abff2ec29b188/ros/humble/ubuntu/jammy/perception/Dockerfile)
 
--	[`iron-ros-core`, `iron-ros-core-jammy`](https://github.com/osrf/docker_images/blob/2ad854492209b8dbab303578a5baedab4d5ab41d/ros/iron/ubuntu/jammy/ros-core/Dockerfile)
-
--	[`iron-ros-base`, `iron-ros-base-jammy`, `iron`](https://github.com/osrf/docker_images/blob/bca53bf4c09d771be3ff735da4157203b53ebc2b/ros/iron/ubuntu/jammy/ros-base/Dockerfile)
-
--	[`iron-perception`, `iron-perception-jammy`](https://github.com/osrf/docker_images/blob/bca53bf4c09d771be3ff735da4157203b53ebc2b/ros/iron/ubuntu/jammy/perception/Dockerfile)
-
 -	[`jazzy-ros-core`, `jazzy-ros-core-noble`](https://github.com/osrf/docker_images/blob/b525e9ef659ce448db6150fd5407ef62b2c5b265/ros/jazzy/ubuntu/noble/ros-core/Dockerfile)
 
 -	[`jazzy-ros-base`, `jazzy-ros-base-noble`, `jazzy`, `latest`](https://github.com/osrf/docker_images/blob/0038f1c3a11aa0fc573d698b39ab5c204aad5a40/ros/jazzy/ubuntu/noble/ros-base/Dockerfile)
