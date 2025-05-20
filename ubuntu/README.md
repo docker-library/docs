@@ -93,10 +93,11 @@ Starting from [Ubuntu 24.10 "Oracular Oriole"](https://discourse.ubuntu.com/t/or
 
 The tarballs published by Canonical, referenced by `dist-*` tags in https://git.launchpad.net/cloud-images/+oci/ubuntu-base Git repository, are built from scripts that live in [the livecd-rootfs project](https://code.launchpad.net/~ubuntu-core-dev/livecd-rootfs/+git/livecd-rootfs/+ref/ubuntu/master), especially `live-build/auto/build`. The builds are run on Launchpad. For build history see `livefs` build pages of individual releases on Launchpad:
 
--	[Focal](https://launchpad.net/~cloud-images-release-managers/+livefs/ubuntu/focal/ubuntu-oci)
 -	[Jammy](https://launchpad.net/~cloud-images-release-managers/+livefs/ubuntu/jammy/ubuntu-oci)
 -	[Noble](https://launchpad.net/~cloud-images-release-managers/+livefs/ubuntu/noble/ubuntu-oci)
 -	[Oracular](https://launchpad.net/~cloud-images-release-managers/+livefs/ubuntu/oracular/ubuntu-oci)
+-	[Plucky](https://launchpad.net/~cloud-images-release-managers/+livefs/ubuntu/plucky/ubuntu-oci)
+-	[Questing](https://launchpad.net/~cloud-images-release-managers/+livefs/ubuntu/questing/ubuntu-oci)
 
 # License
 

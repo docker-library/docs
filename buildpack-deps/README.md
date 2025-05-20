@@ -78,6 +78,12 @@ WARNING:
 
 -	[`plucky`, `25.04`](https://github.com/docker-library/buildpack-deps/blob/ab3ae04e943ecb240a9691dfa1de219b4a3e32a0/ubuntu/plucky/Dockerfile)
 
+-	[`questing-curl`, `25.10-curl`](https://github.com/docker-library/buildpack-deps/blob/99e7dc24c50c0a7be371ea9e6aed6134ce4cbfeb/ubuntu/questing/curl/Dockerfile)
+
+-	[`questing-scm`, `25.10-scm`](https://github.com/docker-library/buildpack-deps/blob/99e7dc24c50c0a7be371ea9e6aed6134ce4cbfeb/ubuntu/questing/scm/Dockerfile)
+
+-	[`questing`, `25.10`](https://github.com/docker-library/buildpack-deps/blob/99e7dc24c50c0a7be371ea9e6aed6134ce4cbfeb/ubuntu/questing/Dockerfile)
+
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
