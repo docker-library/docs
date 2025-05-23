@@ -26,7 +26,7 @@ WARNING:
 
 -	[`15.1.0`, `15.1`, `15`, `latest`, `15.1.0-bookworm`, `15.1-bookworm`, `15-bookworm`, `bookworm`](https://github.com/docker-library/gcc/blob/a842bfea737b1127a922a27d768df7e382f740af/15/Dockerfile)
 
--	[`14.2.0`, `14.2`, `14`, `14.2.0-bookworm`, `14.2-bookworm`, `14-bookworm`](https://github.com/docker-library/gcc/blob/22c26a9e4edb4ce4f7676dfa100afc80fc2ccbea/14/Dockerfile)
+-	[`14.3.0`, `14.3`, `14`, `14.3.0-bookworm`, `14.3-bookworm`, `14-bookworm`](https://github.com/docker-library/gcc/blob/d262936418fbf062bb25907d5126a178578ab58b/14/Dockerfile)
 
 -	[`13.3.0`, `13.3`, `13`, `13.3.0-bookworm`, `13.3-bookworm`, `13-bookworm`](https://github.com/docker-library/gcc/blob/b5055bcc1551a7e271af315158e1c260c212409c/13/Dockerfile)
 
