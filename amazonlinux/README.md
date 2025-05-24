@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm64v8` builds of [the `amazonlinux` official image](https://hub.docker.com/_/amazonlinux) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,11 +26,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2023`, `latest`, `2023.7.20250512.0`](https://github.com/amazonlinux/container-images/blob/dacb9d52e9344a2977503cb4ecfc0879b69de878/Dockerfile)
+-	[`2023`, `latest`, `2023.7.20250512.0`](https://github.com/amazonlinux/container-images/blob/a37632ff24fdf2d838fe84fc358d8844ecdcd365/Dockerfile)
 
--	[`2`, `2.0.20250512.0`](https://github.com/amazonlinux/container-images/blob/943ba6f33d9edd4b4dce773a0501b914af2d39f8/Dockerfile)
+-	[`2`, `2.0.20250512.0`](https://github.com/amazonlinux/container-images/blob/9194c0e5c6b27fe9a7c575b783debdf946cafe84/Dockerfile)
 
--	[`1`, `2018.03`, `2018.03.0.20231218.0`](https://github.com/amazonlinux/container-images/blob/cfb41ad1c7624786ea10f60c15ce9c117c4da3b6/Dockerfile)
+[![arm64v8/amazonlinux build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/amazonlinux.svg?label=arm64v8/amazonlinux%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/amazonlinux/)
 
 # Quick reference (cont.)
 
