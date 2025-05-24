@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `s390x` builds of [the `buildpack-deps` official image](https://hub.docker.com/_/buildpack-deps) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -29,12 +31,6 @@ WARNING:
 -	[`bookworm-scm`, `stable-scm`, `scm`](https://github.com/docker-library/buildpack-deps/blob/d0ecd4b7313e9bc6b00d9a4fe62ad5787bc197ae/debian/bookworm/scm/Dockerfile)
 
 -	[`bookworm`, `stable`, `latest`](https://github.com/docker-library/buildpack-deps/blob/d0ecd4b7313e9bc6b00d9a4fe62ad5787bc197ae/debian/bookworm/Dockerfile)
-
--	[`bullseye-curl`, `oldstable-curl`](https://github.com/docker-library/buildpack-deps/blob/93d6db0797f91ab674535553b7e0e762941a02d0/debian/bullseye/curl/Dockerfile)
-
--	[`bullseye-scm`, `oldstable-scm`](https://github.com/docker-library/buildpack-deps/blob/d0ecd4b7313e9bc6b00d9a4fe62ad5787bc197ae/debian/bullseye/scm/Dockerfile)
-
--	[`bullseye`, `oldstable`](https://github.com/docker-library/buildpack-deps/blob/d0ecd4b7313e9bc6b00d9a4fe62ad5787bc197ae/debian/bullseye/Dockerfile)
 
 -	[`sid-curl`, `unstable-curl`](https://github.com/docker-library/buildpack-deps/blob/2b3a8b7d1f8875865034be3bab98ddd737e37d5e/debian/sid/curl/Dockerfile)
 
@@ -83,6 +79,8 @@ WARNING:
 -	[`questing-scm`, `25.10-scm`](https://github.com/docker-library/buildpack-deps/blob/99e7dc24c50c0a7be371ea9e6aed6134ce4cbfeb/ubuntu/questing/scm/Dockerfile)
 
 -	[`questing`, `25.10`](https://github.com/docker-library/buildpack-deps/blob/99e7dc24c50c0a7be371ea9e6aed6134ce4cbfeb/ubuntu/questing/Dockerfile)
+
+[![s390x/buildpack-deps build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/s390x/job/buildpack-deps.svg?label=s390x/buildpack-deps%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/buildpack-deps/)
 
 # Quick reference (cont.)
 

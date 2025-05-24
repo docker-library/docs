@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `s390x` builds of [the `almalinux` official image](https://hub.docker.com/_/almalinux) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,17 +26,19 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`10-kitten`, `10-kitten-20250520`](https://github.com/AlmaLinux/container-images/blob/86aa3a7482e6edd9c1e9c38065257b8c155d4507/default/amd64/Dockerfile)
+-	[`10-kitten`, `10-kitten-20250520`](https://github.com/AlmaLinux/container-images/blob/86aa3a7482e6edd9c1e9c38065257b8c155d4507/default/s390x/Dockerfile)
 
--	[`10-kitten-minimal`, `10-kitten-minimal-20250520`](https://github.com/AlmaLinux/container-images/blob/86aa3a7482e6edd9c1e9c38065257b8c155d4507/minimal/amd64/Dockerfile)
+-	[`10-kitten-minimal`, `10-kitten-minimal-20250520`](https://github.com/AlmaLinux/container-images/blob/86aa3a7482e6edd9c1e9c38065257b8c155d4507/minimal/s390x/Dockerfile)
 
--	[`8`, `8.10`, `8.10-20250519`](https://github.com/AlmaLinux/container-images/blob/3fd0bc18338628bbf09343ab9a1b44169e032bfb/default/amd64/Dockerfile)
+-	[`8`, `8.10`, `8.10-20250519`](https://github.com/AlmaLinux/container-images/blob/3fd0bc18338628bbf09343ab9a1b44169e032bfb/default/s390x/Dockerfile)
 
--	[`8-minimal`, `8.10-minimal`, `8.10-minimal-20250519`](https://github.com/AlmaLinux/container-images/blob/3fd0bc18338628bbf09343ab9a1b44169e032bfb/minimal/amd64/Dockerfile)
+-	[`8-minimal`, `8.10-minimal`, `8.10-minimal-20250519`](https://github.com/AlmaLinux/container-images/blob/3fd0bc18338628bbf09343ab9a1b44169e032bfb/minimal/s390x/Dockerfile)
 
--	[`latest`, `9`, `9.6`, `9.6-20250520`](https://github.com/AlmaLinux/container-images/blob/411c4c906cf1dc7664b30d5c34e2b7e9a273b80e/default/amd64/Dockerfile)
+-	[`latest`, `9`, `9.6`, `9.6-20250520`](https://github.com/AlmaLinux/container-images/blob/411c4c906cf1dc7664b30d5c34e2b7e9a273b80e/default/s390x/Dockerfile)
 
--	[`minimal`, `9-minimal`, `9.6-minimal`, `9.6-minimal-20250520`](https://github.com/AlmaLinux/container-images/blob/411c4c906cf1dc7664b30d5c34e2b7e9a273b80e/minimal/amd64/Dockerfile)
+-	[`minimal`, `9-minimal`, `9.6-minimal`, `9.6-minimal-20250520`](https://github.com/AlmaLinux/container-images/blob/411c4c906cf1dc7664b30d5c34e2b7e9a273b80e/minimal/s390x/Dockerfile)
+
+[![s390x/almalinux build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/s390x/job/almalinux.svg?label=s390x/almalinux%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/almalinux/)
 
 # Quick reference (cont.)
 
@@ -67,13 +71,13 @@ WARNING:
 
 The default (platform) image is a general-purpose image with a full DNF stack and basic tools like find, tar, vi, etc.
 
-The `almalinux:latest` tag will always point to the latest stable release of the default image. Major releases and minor releases are also tagged with their version (e.g. `almalinux:8` or `almalinux:8.4`).
+The `s390x/almalinux:latest` tag will always point to the latest stable release of the default image. Major releases and minor releases are also tagged with their version (e.g. `s390x/almalinux:8` or `s390x/almalinux:8.4`).
 
 ## Minimal image
 
 The minimal image is a stripped-down image that uses the microdnf package manager and contains a very limited package set. It is designed for applications that come with their own dependencies bundled (e.g. NodeJS, Python).
 
-The `almalinux:minimal` tag always points to the most recent version of the minimal image. Tags for major (e.g. `almalinux:8-minimal`) and minor (e.g. `almalinux:8.4-minimal`) releases are also available.
+The `s390x/almalinux:minimal` tag always points to the most recent version of the minimal image. Tags for major (e.g. `s390x/almalinux:8-minimal`) and minor (e.g. `s390x/almalinux:8.4-minimal`) releases are also available.
 
 ### Upgrade policy
 
