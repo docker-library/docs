@@ -53,14 +53,13 @@ FROM $FROM_IMAGE AS cacher
 # clone overlay source
 ARG OVERLAY_WS
 WORKDIR $OVERLAY_WS/src
-RUN echo "\
-repositories: \n\
-  ros2/demos: \n\
-    type: git \n\
-    url: https://github.com/ros2/demos.git \n\
-    version: ${ROS_DISTRO} \n\
-" > ../overlay.repos
-RUN vcs import ./ < ../overlay.repos
+RUN cat <<EOF | vcs import . 
+repositories:
+  ros2/demos:
+    type: git
+    url: https://github.com/ros2/demos.git
+    version: ${ROS_DISTRO}
+EOF
 
 # copy manifests for caching
 WORKDIR /opt
