@@ -109,7 +109,7 @@ The example above starts by using [`vcstool`](https://github.com/dirk-thomas/vcs
 
 Note: `--from-paths` and `--packages-select` are set here as so to only install the dependencies and build for the demo C++ and Python packages, among many in the demo git repo that was cloned. To install the dependencies and build all the packages in the source workspace, merely change the scope by setting `--from-paths src/` and dropping the `--packages-select` arguments.
 
-For more advance examples such as daisy chaining multiple overlay workspaces to improve caching of docker image build layers, using tools such as ccache to accelerate compilation with colcon, or using buildkit to save build time and bandwidth even when dependencies change, the project `Dockerfile`s in the ROS 2 [Navigation2](https://github.com/ros-planning/navigation2) repo are excellent resources.
+For more advance examples such as daisy chaining multiple overlay workspaces to improve caching of docker image build layers, using tools such as ccache to accelerate compilation with colcon, or using buildkit to save build time and bandwidth even when dependencies change, the project `Dockerfile`s in the [Navigation2](https://github.com/ros-planning/navigation2) repo are excellent resources.
 
 ## Deployment use cases
 
@@ -207,8 +207,3 @@ $ docker compose rm
 [Forums](https://discourse.ros.org/): Hear the latest discussions  
 [Packages](https://index.ros.org/?search_packages=true): Discover indexed packages  
 [OSRF](https://www.openrobotics.org/): Open Source Robotics Foundation
-
-## ROS 2
-
-[Index](https://docs.ros.org): ROS 2 Documentation  
-[Design](https://design.ros2.org/): ROS 2 Design Articles
