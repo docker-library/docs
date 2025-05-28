@@ -119,7 +119,7 @@ Developing such complex systems with cutting edge implementations of newly publi
 
 With the advancements and standardization of software containers, roboticists are primed to acquire a host of improved developer tooling for building and shipping software. To help alleviate the growing pains and technical challenges of adopting new practices, we have focused on providing an official resource for using ROS with these new technologies.
 
-For a complete listing of supported architectures and base images for each ROS Distribution Release, please read the official REP on target platforms for either [ROS 1](https://www.ros.org/reps/rep-0003.html) or for [ROS 2](https://www.ros.org/reps/rep-2000.html).
+For a complete listing of supported architectures and base images for each ROS Distribution Release, please read the official REP on target platforms [here](https://www.ros.org/reps/rep-2001.html).
 
 ## Deployment suggestions
 
@@ -127,11 +127,10 @@ The available tags include supported distros along with a hierarchy tags based o
 
 -	`ros-core`: minimal ROS install
 -	`ros-base`: basic tools and libraries (also tagged with distro name with LTS version as `latest`)
--	`ros1-bridge`: tools and libraries to run hybrid ROS 1 - ROS 2 systems and bridge messages between them
 
 In the interest of keeping `ros-core` tag minimal in image size, developer tools such as `rosdep`, `colcon` and `vcstools` are not shipped in `ros_core`, but in `ros-base` instead.
 
-The rest of the common meta-packages such as `desktop` are hosted on repos under OSRF's Docker Hub profile [here](https://hub.docker.com/r/osrf/ros/). These meta-packages include graphical dependencies and hook a host of other large packages such as X11, X server, etc. So in the interest of keeping the official images lean and secure, the desktop packages are just being hosted with OSRF's profile. For an extensive list of available variants, please read the official REP on target platforms for either [ROS 1](https://ros.org/reps/rep-0150.html) or for [ROS 2](https://www.ros.org/reps/rep-2001.html).
+The rest of the common meta-packages such as `desktop` are hosted on repos under OSRF's Docker Hub profile [here](https://hub.docker.com/r/osrf/ros/). These meta-packages include graphical dependencies and hook a host of other large packages such as X11, X server, etc. So in the interest of keeping the official images lean and secure, the desktop packages are just being hosted with OSRF's profile.
 
 ### Volumes
 
@@ -201,45 +200,6 @@ $ docker compose rm
 
 > Note: the auto-generated network, `ros_demos_default`, will persist until you explicitly remove it using `docker compose down`.
 
-### ROS 1 Bridge
-
-To ease ROS 2 migration, [`ros1_bridge`](https://index.ros.org/p/ros1_bridge) is a ROS 2 package that provides bidirectional communication between ROS 1 and ROS 2. As a minimal example, given the ROS 2 Dockerfile above, we'll create the ROS 1 equivalent below, and name the Dockerfile appropriately.
-
-```dockerfile
-FROM %%IMAGE%%:noetic
-
-# install ros package
-RUN apt-get update && apt-get install -y \
-      ros-${ROS_DISTRO}-ros-tutorials \
-      ros-${ROS_DISTRO}-common-tutorials && \
-    rm -rf /var/lib/apt/lists/*
-
-# launch ros package
-CMD ["roslaunch", "roscpp_tutorials", "talker_listener_launch"]
-```
-
-The compose file bellow spawns services for both talker listener demos while connecting the two via a dynamic bridge. You may then view the log output from both pairs of talker and listener nodes cross talking over the `/chatter` topic.
-
-```yaml
-services:
-  ros1:
-    build:
-      context: ./
-      dockerfile: ros1.Dockerfile
-
-  ros2:
-    build:
-      context: ./
-      dockerfile: ros2.Dockerfile
-
-  bridge:
-    image: ros:foxy-ros1-bridge
-    environment:
-      - "ROS_HOSTNAME=bridge"
-      - "ROS_MASTER_URI=http://ros1:11311"
-    command: ros2 run ros1_bridge dynamic_bridge
-```
-
 # More Resources
 
 [ROS.org](http://www.ros.org/): Main ROS website  
@@ -253,7 +213,3 @@ services:
 
 [Index](https://docs.ros.org): ROS 2 Documentation  
 [Design](https://design.ros2.org/): ROS 2 Design Articles
-
-## ROS 1
-
-[Wiki](http://wiki.ros.org/Documentation): ROS 1 Documentation
