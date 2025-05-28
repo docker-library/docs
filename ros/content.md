@@ -86,13 +86,12 @@ RUN . /opt/ros/$ROS_DISTRO/setup.sh && \
 
 # build overlay source
 COPY --from=cacher $OVERLAY_WS/src ./src
-ARG OVERLAY_MIXINS="release"
 RUN . /opt/ros/$ROS_DISTRO/setup.sh && \
     colcon build \
       --packages-select \
         demo_nodes_cpp \
         demo_nodes_py \
-      --mixin $OVERLAY_MIXINS
+      --mixin release
 
 # source entrypoint setup
 ENV OVERLAY_WS $OVERLAY_WS
