@@ -61,30 +61,41 @@ repositories:
     version: ${ROS_DISTRO}
 EOF
 
-# copy manifests for caching
-WORKDIR /opt
-RUN mkdir -p /tmp/opt && \
-    find ./ -name "package.xml" | \
-      xargs cp --parents -t /tmp/opt && \
-    find ./ -name "COLCON_IGNORE" | \
-      xargs cp --parents -t /tmp/opt || true
+# update apt cache
+RUN rm /etc/apt/apt.conf.d/docker-clean && apt-get update
+
+# derive build/exec dependencies
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+RUN dep_types=(\
+      "exec:--dependency-types=exec" \
+      "build:") && \
+    for dep_type in "${dep_types[@]}"; do \
+      IFS=":"; set -- $dep_type; \
+      rosdep install -y \
+      --from-paths \
+          ros2/demos/demo_nodes_cpp \
+          ros2/demos/demo_nodes_py \
+      --ignore-src \
+      --reinstall \
+      --simulate \
+      ${2} \
+      | grep 'apt-get install' \
+      | awk -F' ' '{print $4}' | sed "s/'//g" \
+      | sort > /tmp/${1}_debs.txt; \
+    done
 
 # multi-stage for building
 FROM $FROM_IMAGE AS builder
 
-# install overlay dependencies
-ARG OVERLAY_WS
-WORKDIR $OVERLAY_WS
-COPY --from=cacher /tmp/$OVERLAY_WS/src ./src
-RUN . /opt/ros/$ROS_DISTRO/setup.sh && \
-    apt-get update && rosdep install -y \
-      --from-paths \
-        src/ros2/demos/demo_nodes_cpp \
-        src/ros2/demos/demo_nodes_py \
-      --ignore-src \
-    && rm -rf /var/lib/apt/lists/*
+# install build dependencies
+COPY --from=cacher /tmp/build_debs.txt /tmp/build_debs.txt
+RUN --mount=type=cache,sharing=locked,target=/var/cache/apt \
+    --mount=type=cache,from=cacher,target=/var/lib/apt/lists,source=/var/lib/apt/lists \
+    < /tmp/build_debs.txt xargs apt-get install -y --no-install-recommends
 
 # build overlay source
+ARG OVERLAY_WS
+WORKDIR $OVERLAY_WS
 COPY --from=cacher $OVERLAY_WS/src ./src
 RUN . /opt/ros/$ROS_DISTRO/setup.sh && \
     colcon build \
@@ -93,8 +104,19 @@ RUN . /opt/ros/$ROS_DISTRO/setup.sh && \
         demo_nodes_py \
       --mixin release
 
-# source entrypoint setup
-ENV OVERLAY_WS $OVERLAY_WS
+# multi-stage for running
+FROM $FROM_IMAGE-ros-core AS runner
+
+# install exec dependencies
+COPY --from=cacher /tmp/exec_debs.txt /tmp/exec_debs.txt
+RUN --mount=type=cache,sharing=locked,target=/var/cache/apt \
+    --mount=type=cache,from=cacher,target=/var/lib/apt/lists,source=/var/lib/apt/lists \
+    < /tmp/exec_debs.txt xargs apt-get install -y --no-install-recommends
+
+# setup workspace install
+ARG OVERLAY_WS
+ENV OVERLAY_WS=$OVERLAY_WS
+COPY --from=builder $OVERLAY_WS/install $OVERLAY_WS/install
 RUN sed --in-place --expression \
       '$isource "$OVERLAY_WS/install/setup.bash"' \
       /ros_entrypoint.sh
