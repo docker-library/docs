@@ -1,10 +1,10 @@
-# What is [ROS](https://www.ros.org/)?
+# What is [ROS](https://docs.ros.org/)?
 
 The Robot Operating System (ROS) is a set of software libraries and tools that help you build robot applications. From drivers to state-of-the-art algorithms, and with powerful developer tools, ROS has what you need for your next robotics project. And it's all open source.
 
 > [wikipedia.org/wiki/Robot_Operating_System](https://en.wikipedia.org/wiki/Robot_Operating_System)
 
-[%%LOGO%%](https://www.ros.org/)
+[%%LOGO%%](https://docs.ros.org/)
 
 # How to use this image
 
@@ -202,7 +202,7 @@ $ docker compose rm
 
 # More Resources
 
-[ROS.org](http://www.ros.org/): Main ROS website  
+[Docs](https://docs.ros.org/): ROS Developer Documentation  
 [Q&A](https://answers.ros.org/questions/): Ask questions. Get answers  
 [Forums](https://discourse.ros.org/): Hear the latest discussions  
 [Blog](http://www.ros.org/news/): Stay up-to-date  
