@@ -203,7 +203,7 @@ $ docker compose rm
 # More Resources
 
 [Docs](https://docs.ros.org/): ROS Developer Documentation  
-[Q&A](https://answers.ros.org/questions/): Ask questions. Get answers  
+[Q&A](https://robotics.stackexchange.com/): Ask questions. Get answers  
 [Forums](https://discourse.ros.org/): Hear the latest discussions  
 [Packages](https://index.ros.org/?search_packages=true): Discover indexed packages  
 [OSRF](https://www.openrobotics.org/): Open Source Robotics Foundation
