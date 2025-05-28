@@ -72,18 +72,6 @@ WARNING:
 
 -	[`20-bullseye-slim`, `20.19-bullseye-slim`, `20.19.2-bullseye-slim`, `iron-bullseye-slim`](https://github.com/nodejs/docker-node/blob/a87fa26c1bb455170dac58c57c661e820a7390cb/20/bullseye-slim/Dockerfile)
 
--	[`18-alpine3.20`, `18.20-alpine3.20`, `18.20.8-alpine3.20`, `hydrogen-alpine3.20`](https://github.com/nodejs/docker-node/blob/ba2b3e61e6aaf4643108fb5f1cda9ee5238efde5/18/alpine3.20/Dockerfile)
-
--	[`18-alpine`, `18-alpine3.21`, `18.20-alpine`, `18.20-alpine3.21`, `18.20.8-alpine`, `18.20.8-alpine3.21`, `hydrogen-alpine`, `hydrogen-alpine3.21`](https://github.com/nodejs/docker-node/blob/ba2b3e61e6aaf4643108fb5f1cda9ee5238efde5/18/alpine3.21/Dockerfile)
-
--	[`18`, `18-bookworm`, `18.20`, `18.20-bookworm`, `18.20.8`, `18.20.8-bookworm`, `hydrogen`, `hydrogen-bookworm`](https://github.com/nodejs/docker-node/blob/ba2b3e61e6aaf4643108fb5f1cda9ee5238efde5/18/bookworm/Dockerfile)
-
--	[`18-bookworm-slim`, `18-slim`, `18.20-bookworm-slim`, `18.20-slim`, `18.20.8-bookworm-slim`, `18.20.8-slim`, `hydrogen-bookworm-slim`, `hydrogen-slim`](https://github.com/nodejs/docker-node/blob/ba2b3e61e6aaf4643108fb5f1cda9ee5238efde5/18/bookworm-slim/Dockerfile)
-
--	[`18-bullseye`, `18.20-bullseye`, `18.20.8-bullseye`, `hydrogen-bullseye`](https://github.com/nodejs/docker-node/blob/ba2b3e61e6aaf4643108fb5f1cda9ee5238efde5/18/bullseye/Dockerfile)
-
--	[`18-bullseye-slim`, `18.20-bullseye-slim`, `18.20.8-bullseye-slim`, `hydrogen-bullseye-slim`](https://github.com/nodejs/docker-node/blob/ba2b3e61e6aaf4643108fb5f1cda9ee5238efde5/18/bullseye-slim/Dockerfile)
-
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
