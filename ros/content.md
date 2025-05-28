@@ -206,7 +206,7 @@ $ docker compose rm
 [Q&A](https://answers.ros.org/questions/): Ask questions. Get answers  
 [Forums](https://discourse.ros.org/): Hear the latest discussions  
 [Packages](https://index.ros.org/?search_packages=true): Discover indexed packages  
-[OSRF](https://www.osrfoundation.org/): Open Source Robotics Foundation
+[OSRF](https://www.openrobotics.org/): Open Source Robotics Foundation
 
 ## ROS 2
 
