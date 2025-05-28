@@ -65,24 +65,23 @@ EOF
 RUN rm /etc/apt/apt.conf.d/docker-clean && apt-get update
 
 # derive build/exec dependencies
-SHELL ["/bin/bash", "-o", "pipefail", "-c"]
-RUN dep_types=(\
-      "exec:--dependency-types=exec" \
-      "build:") && \
-    for dep_type in "${dep_types[@]}"; do \
-      IFS=":"; set -- $dep_type; \
-      rosdep install -y \
-      --from-paths \
-          ros2/demos/demo_nodes_cpp \
-          ros2/demos/demo_nodes_py \
-      --ignore-src \
-      --reinstall \
-      --simulate \
-      ${2} \
-      | grep 'apt-get install' \
-      | awk -F' ' '{print $4}' | sed "s/'//g" \
-      | sort > /tmp/${1}_debs.txt; \
-    done
+RUN bash -e <<'EOF'
+declare -A dep_types=(
+  [exec]="--dependency-types=exec"
+  [build]="")
+for type in "${!dep_types[@]}"; do
+  rosdep install -y \
+    --from-paths \
+      ros2/demos/demo_nodes_cpp \
+      ros2/demos/demo_nodes_py \
+    --ignore-src \
+    --reinstall \
+    --simulate \
+    ${dep_types[$type]} \
+    | grep 'apt-get install' | awk -F' ' '{print $4}' \
+    | sed "s/'//g" | sort > /tmp/${type}_debs.txt
+done
+EOF
 
 # multi-stage for building
 FROM $FROM_IMAGE AS builder
