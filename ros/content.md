@@ -49,9 +49,9 @@ ARG OVERLAY_WS=/opt/ros/overlay_ws
 
 # multi-stage for caching
 FROM $FROM_IMAGE AS cacher
+ARG OVERLAY_WS
 
 # clone overlay source
-ARG OVERLAY_WS
 WORKDIR $OVERLAY_WS/src
 RUN cat <<EOF | vcs import . 
 repositories:
@@ -85,6 +85,7 @@ EOF
 
 # multi-stage for building
 FROM $FROM_IMAGE AS builder
+ARG OVERLAY_WS
 
 # install build dependencies
 COPY --from=cacher /tmp/build_debs.txt /tmp/build_debs.txt
@@ -93,7 +94,6 @@ RUN --mount=type=cache,sharing=locked,target=/var/cache/apt \
     < /tmp/build_debs.txt xargs apt-get install -y --no-install-recommends
 
 # build overlay source
-ARG OVERLAY_WS
 WORKDIR $OVERLAY_WS
 COPY --from=cacher $OVERLAY_WS/src ./src
 RUN . /opt/ros/$ROS_DISTRO/setup.sh && \
@@ -105,6 +105,7 @@ RUN . /opt/ros/$ROS_DISTRO/setup.sh && \
 
 # multi-stage for running
 FROM $FROM_IMAGE-ros-core AS runner
+ARG OVERLAY_WS
 
 # install exec dependencies
 COPY --from=cacher /tmp/exec_debs.txt /tmp/exec_debs.txt
@@ -112,8 +113,7 @@ RUN --mount=type=cache,sharing=locked,target=/var/cache/apt \
     --mount=type=cache,from=cacher,target=/var/lib/apt/lists,source=/var/lib/apt/lists \
     < /tmp/exec_debs.txt xargs apt-get install -y --no-install-recommends
 
-# setup workspace install
-ARG OVERLAY_WS
+# setup overlay install
 ENV OVERLAY_WS=$OVERLAY_WS
 COPY --from=builder $OVERLAY_WS/install $OVERLAY_WS/install
 RUN sed --in-place --expression \
