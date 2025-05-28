@@ -61,8 +61,10 @@ repositories:
     version: ${ROS_DISTRO}
 EOF
 
-# update apt cache
-RUN rm /etc/apt/apt.conf.d/docker-clean && apt-get update
+# update package cache
+RUN --mount=type=cache,sharing=locked,target=/var/cache/apt \
+    --mount=type=cache,sharing=locked,target=/var/lib/apt/lists \
+    apt-get update && rosdep update --rosdistro $ROS_DISTRO
 
 # derive build/exec dependencies
 RUN bash -e <<'EOF'
@@ -90,7 +92,7 @@ ARG OVERLAY_WS
 # install build dependencies
 COPY --from=cacher /tmp/build_debs.txt /tmp/build_debs.txt
 RUN --mount=type=cache,sharing=locked,target=/var/cache/apt \
-    --mount=type=cache,from=cacher,target=/var/lib/apt/lists,source=/var/lib/apt/lists \
+    --mount=type=cache,sharing=locked,target=/var/lib/apt/lists \
     < /tmp/build_debs.txt xargs apt-get install -y --no-install-recommends
 
 # build overlay source
@@ -110,7 +112,7 @@ ARG OVERLAY_WS
 # install exec dependencies
 COPY --from=cacher /tmp/exec_debs.txt /tmp/exec_debs.txt
 RUN --mount=type=cache,sharing=locked,target=/var/cache/apt \
-    --mount=type=cache,from=cacher,target=/var/lib/apt/lists,source=/var/lib/apt/lists \
+    --mount=type=cache,sharing=locked,target=/var/lib/apt/lists \
     < /tmp/exec_debs.txt xargs apt-get install -y --no-install-recommends
 
 # setup overlay install
