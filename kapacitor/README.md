@@ -24,13 +24,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.6`, `1.6.6`](https://github.com/influxdata/influxdata-docker/blob/f4065650506de70c65b6b63234eb5e03e4c33fb6/kapacitor/1.6/Dockerfile)
+-	[`1.6`, `1.6.6`](https://github.com/influxdata/influxdata-docker/blob/8b23d6db77384c3fbecc52e880b83c4600fdffc8/kapacitor/1.6/Dockerfile)
 
--	[`1.6-alpine`, `1.6.6-alpine`](https://github.com/influxdata/influxdata-docker/blob/f4065650506de70c65b6b63234eb5e03e4c33fb6/kapacitor/1.6/alpine/Dockerfile)
+-	[`1.6-alpine`, `1.6.6-alpine`](https://github.com/influxdata/influxdata-docker/blob/8b23d6db77384c3fbecc52e880b83c4600fdffc8/kapacitor/1.6/alpine/Dockerfile)
 
--	[`1.7`, `1.7.6`, `latest`](https://github.com/influxdata/influxdata-docker/blob/f4065650506de70c65b6b63234eb5e03e4c33fb6/kapacitor/1.7/Dockerfile)
+-	[`1.7`, `1.7.7`, `latest`](https://github.com/influxdata/influxdata-docker/blob/8b23d6db77384c3fbecc52e880b83c4600fdffc8/kapacitor/1.7/Dockerfile)
 
--	[`1.7-alpine`, `1.7.6-alpine`, `alpine`](https://github.com/influxdata/influxdata-docker/blob/f4065650506de70c65b6b63234eb5e03e4c33fb6/kapacitor/1.7/alpine/Dockerfile)
+-	[`1.7-alpine`, `1.7.7-alpine`, `alpine`](https://github.com/influxdata/influxdata-docker/blob/8b23d6db77384c3fbecc52e880b83c4600fdffc8/kapacitor/1.7/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
