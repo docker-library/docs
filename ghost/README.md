@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.88.2`, `5.88`, `5`, `latest`](https://github.com/docker-library/ghost/blob/22f52c7dce218c90e39ca9d24490564929f4043a/5/debian/Dockerfile)
+-	[`5.120.3`, `5.120`, `5`, `latest`](https://github.com/docker-library/ghost/blob/8a220c4cec5ea861f8b4995f50015fd2674eacd8/5/debian/Dockerfile)
 
--	[`5.88.2-alpine`, `5.88-alpine`, `5-alpine`, `alpine`](https://github.com/docker-library/ghost/blob/22f52c7dce218c90e39ca9d24490564929f4043a/5/alpine/Dockerfile)
+-	[`5.120.3-alpine`, `5.120-alpine`, `5-alpine`, `alpine`](https://github.com/docker-library/ghost/blob/8a220c4cec5ea861f8b4995f50015fd2674eacd8/5/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -93,7 +93,7 @@ $ docker run -d \
 	ghost:alpine
 ```
 
-Note: `database__connection__filename` is only valid in development mode and is the location for the SQLite database file. If using development mode, it should be set to a writeable path within a persistent folder (bind mount or volume). It is not available in production mode because an external MySQL server is required (see the `docker-compose` example below).
+Note: `database__connection__filename` is only valid in development mode and is the location for the SQLite database file. If using development mode, it should be set to a writeable path within a persistent folder (bind mount or volume). It is not available in production mode because an external MySQL server is required (see the Docker Compose example below).
 
 ### Docker Volume
 
@@ -117,7 +117,7 @@ All Ghost configuration parameters (such as `url`) can be specified via environm
 $ docker run -d --name some-ghost -e NODE_ENV=development -e url=http://some-ghost.example.com ghost
 ```
 
-(There are further configuration examples in the `stack.yml` listed below.)
+(There are further configuration examples in the `compose.yaml` listed below.)
 
 ## What is the Node.js version?
 
@@ -138,13 +138,11 @@ To run Ghost for production you'll also need to be running with MySQL 8, https, 
 
 The following example demonstrates some of the necessary configuration for running with MySQL. For more detail, see [Ghost's "Configuration options" documentation](https://ghost.org/docs/config/#configuration-options).
 
-## ... via [`docker-compose`](https://github.com/docker/compose) or [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/)
+## ... via [`docker compose`](https://github.com/docker/compose)
 
-Example `docker-compose.yml` for `ghost`:
+Example `compose.yaml` for `ghost`:
 
 ```yaml
-version: '3.1'
-
 services:
 
   ghost:
@@ -179,9 +177,7 @@ volumes:
   db:
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/8b35a43795bda4f4ca1299bee2d02afe2434ee7f/ghost/stack.yml)
-
-Run `docker stack deploy -c stack.yml ghost` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
+Run `docker compose up`, wait for it to initialize completely, and visit `http://localhost:8080` or `http://host-ip:8080` (as appropriate).
 
 # Image Variants
 

@@ -14,14 +14,6 @@ WARNING:
 
 -->
 
-# **DEPRECATION NOTICE**
-
-Adminer is [no longer maintained (upstream)](https://www.youtube.com/watch?v=OrOtiu_nfHE&lc=Ugy8pAL8wgAL3_iKkzZ4AaABAg.9pj_kQ2rkuw9pp813OyHha):
-
-> I've stopped working on it but maybe I'll return to it some day.
-
-See also [TimWolla/docker-adminer#147](https://github.com/TimWolla/docker-adminer/issues/147). Users are strongly encouraged to seek alternatives.
-
 # Quick reference
 
 -	**Maintained by**:  
@@ -32,7 +24,13 @@ See also [TimWolla/docker-adminer#147](https://github.com/TimWolla/docker-admine
 
 # Supported tags and respective `Dockerfile` links
 
-**No supported tags**
+-	[`5.3.0`, `5`, `latest`, `5.3.0-standalone`, `5-standalone`, `standalone`](https://github.com/TimWolla/docker-adminer/blob/51202fad34e0f5ec140451e9b6bdba9d1068e329/5/Dockerfile)
+
+-	[`5.3.0-fastcgi`, `5-fastcgi`, `fastcgi`](https://github.com/TimWolla/docker-adminer/blob/51202fad34e0f5ec140451e9b6bdba9d1068e329/5/fastcgi/Dockerfile)
+
+-	[`4.17.1`, `4`, `4.17.1-standalone`, `4-standalone`](https://github.com/TimWolla/docker-adminer/blob/0c0fd187e8646ad61fe592a80d66abec2c1dc951/4/Dockerfile)
+
+-	[`4.17.1-fastcgi`, `4-fastcgi`](https://github.com/TimWolla/docker-adminer/blob/0c0fd187e8646ad61fe592a80d66abec2c1dc951/4/fastcgi/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -40,7 +38,7 @@ See also [TimWolla/docker-adminer#147](https://github.com/TimWolla/docker-admine
 	[https://github.com/TimWolla/docker-adminer/issues](https://github.com/TimWolla/docker-adminer/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	**No supported architectures**
+	[`amd64`](https://hub.docker.com/r/amd64/adminer/), [`arm32v6`](https://hub.docker.com/r/arm32v6/adminer/), [`arm32v7`](https://hub.docker.com/r/arm32v7/adminer/), [`arm64v8`](https://hub.docker.com/r/arm64v8/adminer/), [`i386`](https://hub.docker.com/r/i386/adminer/), [`ppc64le`](https://hub.docker.com/r/ppc64le/adminer/), [`riscv64`](https://hub.docker.com/r/riscv64/adminer/), [`s390x`](https://hub.docker.com/r/s390x/adminer/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/adminer/` directory](https://github.com/docker-library/repo-info/blob/master/repos/adminer) ([history](https://github.com/docker-library/repo-info/commits/master/repos/adminer))  
@@ -85,14 +83,12 @@ Then point your web server to port 9000 of the container.
 
 Note: This exposes the FastCGI socket to the Internet. Make sure to add proper firewall rules or use a private Docker network instead to prevent a direct access.
 
-### ... via [`docker-compose`](https://github.com/docker/compose) or [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/)
+### ... via [`docker compose`](https://github.com/docker/compose)
 
-Example `docker-compose.yml` for `adminer`:
+Example `compose.yaml` for `adminer`:
 
 ```yaml
 # Use root/example as user/password credentials
-
-version: '3.1'
 
 services:
 
@@ -109,9 +105,7 @@ services:
       MYSQL_ROOT_PASSWORD: example
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/9efeec18b6b2ed232cf0fbd3914b6211e16e242c/adminer/stack.yml)
-
-Run `docker stack deploy -c stack.yml adminer` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
+Run `docker compose up`, wait for it to initialize completely, and visit `http://localhost:8080` or `http://host-ip:8080` (as appropriate).
 
 ### Loading plugins
 
@@ -184,7 +178,7 @@ To add support for the other drivers you will need to install the following PHP 
 
 # License
 
-View [license information](https://github.com/vrana/adminer/blob/master/readme.txt) for the software contained in this image.
+View [license information](https://github.com/vrana/adminer/blob/master/LICENSE) for the software contained in this image.
 
 As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 

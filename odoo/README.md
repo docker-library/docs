@@ -24,11 +24,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`17.0-20240730`, `17.0`, `17`, `latest`](https://github.com/odoo/docker/blob/0a794bf1c202f1d7ca409ce30c159350dc541100/17.0/Dockerfile)
+-	[`18.0-20250520`, `18.0`, `18`, `latest`](https://github.com/odoo/docker/blob/5d67b9585c0e29c9dccc0b3f484eedc4e5c46714/18.0/Dockerfile)
 
--	[`16.0-20240730`, `16.0`, `16`](https://github.com/odoo/docker/blob/0a794bf1c202f1d7ca409ce30c159350dc541100/16.0/Dockerfile)
+-	[`17.0-20250520`, `17.0`, `17`](https://github.com/odoo/docker/blob/5d67b9585c0e29c9dccc0b3f484eedc4e5c46714/17.0/Dockerfile)
 
--	[`15.0-20240730`, `15.0`, `15`](https://github.com/odoo/docker/blob/0a794bf1c202f1d7ca409ce30c159350dc541100/15.0/Dockerfile)
+-	[`16.0-20250520`, `16.0`, `16`](https://github.com/odoo/docker/blob/5d67b9585c0e29c9dccc0b3f484eedc4e5c46714/16.0/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -152,10 +152,9 @@ Tweak these environment variables to easily connect to a postgres server:
 
 ## Docker Compose examples
 
-The simplest `docker-compose.yml` file would be:
+The simplest `compose.yaml` file would be:
 
 ```yml
-version: '3.1'
 services:
   web:
     image: odoo:17.0
@@ -174,7 +173,6 @@ services:
 If the default postgres credentials does not suit you, tweak the environment variables:
 
 ```yml
-version: '3.1'
 services:
   web:
     image: odoo:17.0
@@ -183,9 +181,9 @@ services:
     ports:
       - "8069:8069"
     environment:
-    - HOST=mydb
-    - USER=odoo
-    - PASSWORD=myodoo
+      - HOST=mydb
+      - USER=odoo
+      - PASSWORD=myodoo
   mydb:
     image: postgres:15
     environment:
@@ -202,7 +200,6 @@ Here's a last example showing you how to
 -	use a `secrets` file named `odoo_pg_pass` that contains the postgreql password shared by both services
 
 ```yml
-version: '3.1'
 services:
   web:
     image: odoo:17.0
@@ -238,10 +235,10 @@ secrets:
     file: odoo_pg_pass
 ```
 
-To start your Odoo instance, go in the directory of the `docker-compose.yml` file you created from the previous examples and type:
+To start your Odoo instance, go in the directory of the `compose.yaml` file you created from the previous examples and type:
 
 ```console
-docker-compose up -d
+docker compose up -d
 ```
 
 # How to upgrade this image

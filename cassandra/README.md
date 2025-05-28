@@ -24,15 +24,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.0-rc1`, `5.0`, `5`, `5.0-rc1-jammy`, `5.0-jammy`, `5-jammy`](https://github.com/docker-library/cassandra/blob/7ebf445be0a2847cfe94cf1cee3f3b9df891f0d1/5.0/Dockerfile)
+-	[`5.0.4`, `5.0`, `5`, `latest`, `5.0.4-jammy`, `5.0-jammy`, `5-jammy`, `jammy`](https://github.com/docker-library/cassandra/blob/0f32c04c976068ddf4b094044bd333ca46d42887/5.0/Dockerfile)
 
--	[`4.1.5`, `4.1`, `4`, `latest`, `4.1.5-jammy`, `4.1-jammy`, `4-jammy`, `jammy`](https://github.com/docker-library/cassandra/blob/7ae558bbbbfa3f07eaaecae0ff84a4537d37c570/4.1/Dockerfile)
+-	[`4.1.9`, `4.1`, `4`, `4.1.9-jammy`, `4.1-jammy`, `4-jammy`](https://github.com/docker-library/cassandra/blob/8b125f8e4cb082768e6d299130722ed3547e2206/4.1/Dockerfile)
 
--	[`4.0.13`, `4.0`, `4.0.13-jammy`, `4.0-jammy`](https://github.com/docker-library/cassandra/blob/b51ed0210fc94d22dce73d8f07d1af1a3416d56a/4.0/Dockerfile)
+-	[`4.0.17`, `4.0`, `4.0.17-jammy`, `4.0-jammy`](https://github.com/docker-library/cassandra/blob/4acdd8cbbc6f21083e9b8176452a2728fa08f2c7/4.0/Dockerfile)
 
--	[`3.11.17`, `3.11`, `3`, `3.11.17-jammy`, `3.11-jammy`, `3-jammy`](https://github.com/docker-library/cassandra/blob/abab4c99e553fca077336ca097dd84107f2d3034/3.11/Dockerfile)
+-	[`3.11.19`, `3.11`, `3`, `3.11.19-jammy`, `3.11-jammy`, `3-jammy`](https://github.com/docker-library/cassandra/blob/4acdd8cbbc6f21083e9b8176452a2728fa08f2c7/3.11/Dockerfile)
 
--	[`3.0.30`, `3.0`, `3.0.30-jammy`, `3.0-jammy`](https://github.com/docker-library/cassandra/blob/2324f94cb4e9686859e3f487f725908bfbefc9d2/3.0/Dockerfile)
+-	[`3.0.32`, `3.0`, `3.0.32-jammy`, `3.0-jammy`](https://github.com/docker-library/cassandra/blob/4acdd8cbbc6f21083e9b8176452a2728fa08f2c7/3.0/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -169,7 +169,7 @@ The `-v /my/own/datadir:/var/lib/cassandra` part of the command mounts the `/my/
 
 ## No connections until Cassandra init completes
 
-If there is no database initialized when the container starts, then a default database will be created. While this is the expected behavior, this means that it will not accept incoming connections until such initialization completes. This may cause issues when using automation tools, such as `docker-compose`, which start several containers simultaneously.
+If there is no database initialized when the container starts, then a default database will be created. While this is the expected behavior, this means that it will not accept incoming connections until such initialization completes. This may cause issues when using automation tools, such as Docker Compose, which start several containers simultaneously.
 
 # License
 

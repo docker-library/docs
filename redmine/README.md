@@ -24,17 +24,17 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.1.3`, `5.1`, `5`, `latest`, `5.1.3-bookworm`, `5.1-bookworm`, `5-bookworm`, `bookworm`](https://github.com/docker-library/redmine/blob/f44d7a06e867841594aaaf45fddf59a77fad5337/5.1/bookworm/Dockerfile)
+-	[`6.0.5`, `6.0`, `6`, `latest`, `6.0.5-bookworm`, `6.0-bookworm`, `6-bookworm`, `bookworm`](https://github.com/docker-library/redmine/blob/79fdb4829c95432ad05877fea0b27793b35bfd6f/6.0/bookworm/Dockerfile)
 
--	[`5.1.3-alpine3.20`, `5.1-alpine3.20`, `5-alpine3.20`, `alpine3.20`, `5.1.3-alpine`, `5.1-alpine`, `5-alpine`, `alpine`](https://github.com/docker-library/redmine/blob/f44d7a06e867841594aaaf45fddf59a77fad5337/5.1/alpine3.20/Dockerfile)
+-	[`6.0.5-alpine3.21`, `6.0-alpine3.21`, `6-alpine3.21`, `alpine3.21`, `6.0.5-alpine`, `6.0-alpine`, `6-alpine`, `alpine`](https://github.com/docker-library/redmine/blob/79fdb4829c95432ad05877fea0b27793b35bfd6f/6.0/alpine3.21/Dockerfile)
 
--	[`5.1.3-alpine3.19`, `5.1-alpine3.19`, `5-alpine3.19`, `alpine3.19`](https://github.com/docker-library/redmine/blob/f44d7a06e867841594aaaf45fddf59a77fad5337/5.1/alpine3.19/Dockerfile)
+-	[`6.0.5-alpine3.20`, `6.0-alpine3.20`, `6-alpine3.20`, `alpine3.20`](https://github.com/docker-library/redmine/blob/79fdb4829c95432ad05877fea0b27793b35bfd6f/6.0/alpine3.20/Dockerfile)
 
--	[`5.0.9`, `5.0`, `5.0.9-bookworm`, `5.0-bookworm`](https://github.com/docker-library/redmine/blob/f44d7a06e867841594aaaf45fddf59a77fad5337/5.0/bookworm/Dockerfile)
+-	[`5.1.8`, `5.1`, `5`, `5.1.8-bookworm`, `5.1-bookworm`, `5-bookworm`](https://github.com/docker-library/redmine/blob/a000f11a67e7e7f315398fb83a9262e47998b663/5.1/bookworm/Dockerfile)
 
--	[`5.0.9-alpine3.20`, `5.0-alpine3.20`, `5.0.9-alpine`, `5.0-alpine`](https://github.com/docker-library/redmine/blob/f44d7a06e867841594aaaf45fddf59a77fad5337/5.0/alpine3.20/Dockerfile)
+-	[`5.1.8-alpine3.21`, `5.1-alpine3.21`, `5-alpine3.21`, `5.1.8-alpine`, `5.1-alpine`, `5-alpine`](https://github.com/docker-library/redmine/blob/a000f11a67e7e7f315398fb83a9262e47998b663/5.1/alpine3.21/Dockerfile)
 
--	[`5.0.9-alpine3.19`, `5.0-alpine3.19`](https://github.com/docker-library/redmine/blob/f44d7a06e867841594aaaf45fddf59a77fad5337/5.0/alpine3.19/Dockerfile)
+-	[`5.1.8-alpine3.20`, `5.1-alpine3.20`, `5-alpine3.20`](https://github.com/docker-library/redmine/blob/a000f11a67e7e7f315398fb83a9262e47998b663/5.1/alpine3.20/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -99,13 +99,11 @@ Running Redmine with a database server is the recommended way.
 	$ docker run -d --name some-redmine --network some-network -e REDMINE_DB_POSTGRES=some-postgres -e REDMINE_DB_USERNAME=redmine -e REDMINE_DB_PASSWORD=secret redmine
 	```
 
-## ... via [`docker-compose`](https://github.com/docker/compose) or [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/)
+## ... via [`docker compose`](https://github.com/docker/compose)
 
-Example `docker-compose.yml` for `redmine`:
+Example `compose.yaml` for `redmine`:
 
 ```yaml
-version: '3.1'
-
 services:
 
   redmine:
@@ -126,13 +124,7 @@ services:
       MYSQL_DATABASE: redmine
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/8b35a43795bda4f4ca1299bee2d02afe2434ee7f/redmine/stack.yml)
-
-Run `docker stack deploy -c stack.yml redmine` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
-
-## Alternative Web Server
-
-The other tags in this repository, like those with `passenger`, use the same environment and `--links` as the default tags that use Puma (`rails server`) but instead give you the option of a different web and application server. `passenger` uses [Phusion Passenger](https://www.phusionpassenger.com/). [`tini`](https://github.com/krallin/tini) is used for reaping [zombies](https://en.wikipedia.org/wiki/Zombie_process).
+Run `docker compose up`, wait for it to initialize completely, and visit `http://localhost:8080` or `http://host-ip:8080` (as appropriate).
 
 ## Accessing the Application
 
@@ -200,25 +192,15 @@ This variable allows you to control if `rake redmine:plugins:migrate` is run on 
 
 `redmine:plugins:migrate` will not run if you start your image with something other than the default `CMD`, like `bash`. See the current `docker-entrypoint.sh` in your image for details.
 
-### `REDMINE_SECRET_KEY_BASE`
+### `SECRET_KEY_BASE`
 
-This variable is required when using Docker Swarm replicas to maintain session connections when being loadbalanced between containers. It will create an initial `config/secrets.yml` and set the `secret_key_base` value, which is "used by Rails to encode cookies storing session data thus preventing their tampering. Generating a new secret token invalidates all existing sessions after restart" ([session store](https://www.redmine.org/projects/redmine/wiki/RedmineInstall#Step-5-Session-store-secret-generation)). If you do not set this variable or provide a `secrets.yml` one will be generated using `rake generate_secret_token`.
+This is a general Rails environment variable. This variable is useful when using loadbalanced replicas to maintain session connections. It is "used by Rails to encode cookies storing session data thus preventing their tampering. Generating a new secret token invalidates all existing sessions after restart" ([session store](https://www.redmine.org/projects/redmine/wiki/RedmineInstall#Step-5-Session-store-secret-generation)). If you do not set this variable, then the `secret_key_base` value will be generated using `rake generate_secret_token`.
+
+For backwards compatibility, the deprecated, Docker-specific `REDMINE_SECRET_KEY_BASE` variable will automatically fill the `SECRET_KEY_BASE` environment variable. Users should migrate their deployments to use the `SECRET_KEY_BASE` variable directly.
 
 ## Running as an arbitrary user
 
-For running Redmine without Phusion Passenger you can simply use the [`--user`](https://docs.docker.com/engine/reference/run/#user) flag to `docker run` and give it a `username:group` or `UID:GID`, the user doesn't need to exist in the container
-
-For running the `redmine:passenger` variant as an arbitrary user you will however need the user to exist in `/etc/passwd`. Here are a few examples for doing that:
-
-1.	Create the user on your host and mount `/etc/passwd:/etc/passwd:ro`
-
-2.	Create a Dockerfile `FROM redmine:passenger` and include something like [`RUN groupadd -r group && useradd --no-log-init -r -g group user`](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#user)
-
-	```dockerfile
-	FROM redmine:passenger
-	RUN groupadd -r group && useradd --no-log-init -r -g group user
-	USER user
-	```
+You can use the [`--user`](https://docs.docker.com/engine/reference/run/#user) flag to `docker run` and give it a `username:group` or `UID:GID`, the user doesn't need to exist in the container.
 
 ## Docker Secrets
 

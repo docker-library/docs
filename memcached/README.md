@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.6.29`, `1.6`, `1`, `latest`, `1.6.29-bookworm`, `1.6-bookworm`, `1-bookworm`, `bookworm`](https://github.com/docker-library/memcached/blob/f01103ba6999e5ae31c3e11f0d5bf9ee757aff44/1/debian/Dockerfile)
+-	[`1.6.38`, `1.6`, `1`, `latest`, `1.6.38-bookworm`, `1.6-bookworm`, `1-bookworm`, `bookworm`](https://github.com/docker-library/memcached/blob/f8aa037f70e96f77b3797a2ead8fa0e5dcdec2c1/1/debian/Dockerfile)
 
--	[`1.6.29-alpine`, `1.6-alpine`, `1-alpine`, `alpine`, `1.6.29-alpine3.20`, `1.6-alpine3.20`, `1-alpine3.20`, `alpine3.20`](https://github.com/docker-library/memcached/blob/f01103ba6999e5ae31c3e11f0d5bf9ee757aff44/1/alpine/Dockerfile)
+-	[`1.6.38-alpine`, `1.6-alpine`, `1-alpine`, `alpine`, `1.6.38-alpine3.21`, `1.6-alpine3.21`, `1-alpine3.21`, `alpine3.21`](https://github.com/docker-library/memcached/blob/f8aa037f70e96f77b3797a2ead8fa0e5dcdec2c1/1/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -34,7 +34,7 @@ WARNING:
 	[https://github.com/docker-library/memcached/issues](https://github.com/docker-library/memcached/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/memcached/), [`arm32v5`](https://hub.docker.com/r/arm32v5/memcached/), [`arm64v8`](https://hub.docker.com/r/arm64v8/memcached/), [`i386`](https://hub.docker.com/r/i386/memcached/), [`mips64le`](https://hub.docker.com/r/mips64le/memcached/), [`ppc64le`](https://hub.docker.com/r/ppc64le/memcached/), [`riscv64`](https://hub.docker.com/r/riscv64/memcached/), [`s390x`](https://hub.docker.com/r/s390x/memcached/)
+	[`amd64`](https://hub.docker.com/r/amd64/memcached/), [`arm32v5`](https://hub.docker.com/r/arm32v5/memcached/), [`arm32v6`](https://hub.docker.com/r/arm32v6/memcached/), [`arm32v7`](https://hub.docker.com/r/arm32v7/memcached/), [`arm64v8`](https://hub.docker.com/r/arm64v8/memcached/), [`i386`](https://hub.docker.com/r/i386/memcached/), [`mips64le`](https://hub.docker.com/r/mips64le/memcached/), [`ppc64le`](https://hub.docker.com/r/ppc64le/memcached/), [`riscv64`](https://hub.docker.com/r/riscv64/memcached/), [`s390x`](https://hub.docker.com/r/s390x/memcached/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/memcached/` directory](https://github.com/docker-library/repo-info/blob/master/repos/memcached) ([history](https://github.com/docker-library/repo-info/commits/master/repos/memcached))  
@@ -61,13 +61,31 @@ Memcached's APIs provide a very large hash table distributed across multiple mac
 $ docker run --name my-memcache -d memcached
 ```
 
-## Setting Memory Usage
+### Configuration
+
+To customize the configuration of the memcached server, first obtain the upstream configuration options from the container:
 
 ```console
-$ docker run --name my-memcache -d memcached memcached -m 64
+$ docker run --rm memcached -h
 ```
 
-This would set the Memcached server to use 64 megabytes for storage.
+Using `docker run`:
+
+```console
+$ docker run --name my-memcache -d memcached memcached --memory-limit=64
+```
+
+or using Docker Compose:
+
+```yaml
+services:
+  memcached:
+    image: memcached
+    command:
+      - --conn-limit=1024
+      - --memory-limit=64
+      - --threads=4
+```
 
 For infomation on configuring your memcached server, see the extensive [wiki](https://github.com/memcached/memcached/wiki).
 

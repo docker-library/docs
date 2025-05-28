@@ -24,13 +24,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`9.0.1`, `9.0`, `9`, `innovation`, `latest`, `9.0.1-oraclelinux9`, `9.0-oraclelinux9`, `9-oraclelinux9`, `innovation-oraclelinux9`, `oraclelinux9`, `9.0.1-oracle`, `9.0-oracle`, `9-oracle`, `innovation-oracle`, `oracle`](https://github.com/docker-library/mysql/blob/a482468640c602ccd8a7c86a4c7422f18a307326/innovation/Dockerfile.oracle)
+-	[`9.3.0`, `9.3`, `9`, `innovation`, `latest`, `9.3.0-oraclelinux9`, `9.3-oraclelinux9`, `9-oraclelinux9`, `innovation-oraclelinux9`, `oraclelinux9`, `9.3.0-oracle`, `9.3-oracle`, `9-oracle`, `innovation-oracle`, `oracle`](https://github.com/docker-library/mysql/blob/1b9d0c10ad8569c9419d76aacec9dbab23c48e9e/innovation/Dockerfile.oracle)
 
--	[`8.4.2`, `8.4`, `8`, `lts`, `8.4.2-oraclelinux9`, `8.4-oraclelinux9`, `8-oraclelinux9`, `lts-oraclelinux9`, `8.4.2-oracle`, `8.4-oracle`, `8-oracle`, `lts-oracle`](https://github.com/docker-library/mysql/blob/ea8ec8343c4540ac52e8bba94b5a531e298ff700/8.4/Dockerfile.oracle)
+-	[`8.4.5`, `8.4`, `8`, `lts`, `8.4.5-oraclelinux9`, `8.4-oraclelinux9`, `8-oraclelinux9`, `lts-oraclelinux9`, `8.4.5-oracle`, `8.4-oracle`, `8-oracle`, `lts-oracle`](https://github.com/docker-library/mysql/blob/8ade9b2c9a32a79fbaa44b564d09a40744f1d105/8.4/Dockerfile.oracle)
 
--	[`8.0.39`, `8.0`, `8.0.39-oraclelinux9`, `8.0-oraclelinux9`, `8.0.39-oracle`, `8.0-oracle`](https://github.com/docker-library/mysql/blob/3e6dfd03b956727c7fb5b30360512a11751a3e9d/8.0/Dockerfile.oracle)
+-	[`8.0.42`, `8.0`, `8.0.42-oraclelinux9`, `8.0-oraclelinux9`, `8.0.42-oracle`, `8.0-oracle`](https://github.com/docker-library/mysql/blob/94583e54d3bc02af523af720fdd58f8215287da9/8.0/Dockerfile.oracle)
 
--	[`8.0.39-bookworm`, `8.0-bookworm`, `8.0.39-debian`, `8.0-debian`](https://github.com/docker-library/mysql/blob/3e6dfd03b956727c7fb5b30360512a11751a3e9d/8.0/Dockerfile.debian)
+-	[`8.0.42-bookworm`, `8.0-bookworm`, `8.0.42-debian`, `8.0-debian`](https://github.com/docker-library/mysql/blob/94583e54d3bc02af523af720fdd58f8215287da9/8.0/Dockerfile.debian)
 
 # Quick reference (cont.)
 
@@ -89,13 +89,12 @@ $ docker run -it --rm mysql mysql -hsome.mysql.host -usome-mysql-user -p
 
 More information about the MySQL command line client can be found in the [MySQL documentation](http://dev.mysql.com/doc/en/mysql.html)
 
-## ... via [`docker-compose`](https://github.com/docker/compose) or [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/)
+## ... via [`docker compose`](https://github.com/docker/compose)
 
-Example `docker-compose.yml` for `mysql`:
+Example `compose.yaml` for `mysql`:
 
 ```yaml
 # Use root/example as user/password credentials
-version: '3.1'
 
 services:
 
@@ -107,9 +106,7 @@ services:
     # (this is just an example, not intended to be a production configuration)
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/869019c74d53153ad95bf9f6ff285d215c95e3ac/mysql/stack.yml)
-
-Run `docker stack deploy -c stack.yml mysql` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
+Run `docker compose up`, wait for it to initialize completely, and visit `http://localhost:8080` or `http://host-ip:8080` (as appropriate).
 
 ## Container shell access and viewing MySQL logs
 
@@ -177,7 +174,7 @@ This is an optional variable. Set to a non-empty value, like `yes`, to allow the
 
 ### `MYSQL_RANDOM_ROOT_PASSWORD`
 
-This is an optional variable. Set to a non-empty value, like `yes`, to generate a random initial password for the root user (using `pwgen`). The generated root password will be printed to stdout (`GENERATED ROOT PASSWORD: .....`).
+This is an optional variable. Set to a non-empty value, like `yes`, to generate a random initial password for the root user (using `openssl`). The generated root password will be printed to stdout (`GENERATED ROOT PASSWORD: .....`).
 
 ### `MYSQL_ONETIME_PASSWORD`
 
@@ -223,7 +220,7 @@ The `-v /my/own/datadir:/var/lib/mysql` part of the command mounts the `/my/own/
 
 ## No connections until MySQL init completes
 
-If there is no database initialized when the container starts, then a default database will be created. While this is the expected behavior, this means that it will not accept incoming connections until such initialization completes. This may cause issues when using automation tools, such as `docker-compose`, which start several containers simultaneously.
+If there is no database initialized when the container starts, then a default database will be created. While this is the expected behavior, this means that it will not accept incoming connections until such initialization completes. This may cause issues when using automation tools, such as Docker Compose, which start several containers simultaneously.
 
 If the application you're trying to connect to MySQL does not handle MySQL downtime or waiting for MySQL to start gracefully, then putting a connect-retry loop before the service starts might be necessary. For an example of such an implementation in the official images, see [WordPress](https://github.com/docker-library/wordpress/blob/1b48b4bccd7adb0f7ea1431c7b470a40e186f3da/docker-entrypoint.sh#L195-L235) or [Bonita](https://github.com/docker-library/docs/blob/9660a0cccb87d8db842f33bc0578d769caaf3ba9/bonita/stack.yml#L28-L44).
 

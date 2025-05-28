@@ -1,7 +1,8 @@
 {
   "hub": {
     "categories": [
-      "databases-and-storage"
+      "databases-and-storage",
+      "developer-tools"
     ]
   }
 }

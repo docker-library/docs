@@ -24,25 +24,33 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`9.9.6-community`, `9.9-community`, `9-community`, `lts`, `lts-community`](https://github.com/SonarSource/docker-sonarqube/blob/29b65682b4f8dbb38bd303b35b3ceaa3a39a0e40/9/community/Dockerfile)
+-	[`2025.3.0-developer`, `2025.3-developer`, `developer`](https://github.com/SonarSource/docker-sonarqube/blob/f36d73cab148e76cd0dae6c650f0273676522240/2025/developer/Dockerfile)
 
--	[`9.9.6-developer`, `9.9-developer`, `9-developer`, `lts-developer`](https://github.com/SonarSource/docker-sonarqube/blob/29b65682b4f8dbb38bd303b35b3ceaa3a39a0e40/9/developer/Dockerfile)
+-	[`2025.3.0-enterprise`, `2025.3-enterprise`, `enterprise`](https://github.com/SonarSource/docker-sonarqube/blob/f36d73cab148e76cd0dae6c650f0273676522240/2025/enterprise/Dockerfile)
 
--	[`9.9.6-enterprise`, `9.9-enterprise`, `9-enterprise`, `lts-enterprise`](https://github.com/SonarSource/docker-sonarqube/blob/29b65682b4f8dbb38bd303b35b3ceaa3a39a0e40/9/enterprise/Dockerfile)
+-	[`2025.3.0-datacenter-app`, `2025.3-datacenter-app`, `datacenter-app`](https://github.com/SonarSource/docker-sonarqube/blob/f36d73cab148e76cd0dae6c650f0273676522240/2025/datacenter/app/Dockerfile)
 
--	[`9.9.6-datacenter-app`, `9.9-datacenter-app`, `9-datacenter-app`, `lts-datacenter-app`](https://github.com/SonarSource/docker-sonarqube/blob/29b65682b4f8dbb38bd303b35b3ceaa3a39a0e40/9/datacenter/app/Dockerfile)
+-	[`2025.3.0-datacenter-search`, `2025.3-datacenter-search`, `datacenter-search`](https://github.com/SonarSource/docker-sonarqube/blob/f36d73cab148e76cd0dae6c650f0273676522240/2025/datacenter/search/Dockerfile)
 
--	[`9.9.6-datacenter-search`, `9.9-datacenter-search`, `9-datacenter-search`, `lts-datacenter-search`](https://github.com/SonarSource/docker-sonarqube/blob/29b65682b4f8dbb38bd303b35b3ceaa3a39a0e40/9/datacenter/search/Dockerfile)
+-	[`2025.1.2-developer`, `2025.1-developer`, `2025-lta-developer`](https://github.com/SonarSource/docker-sonarqube/blob/f36d73cab148e76cd0dae6c650f0273676522240/2025.1/developer/Dockerfile)
 
--	[`10.6.0-community`, `10.6-community`, `10-community`, `community`, `latest`](https://github.com/SonarSource/docker-sonarqube/blob/29b65682b4f8dbb38bd303b35b3ceaa3a39a0e40/10/community/Dockerfile)
+-	[`2025.1.2-enterprise`, `2025.1-enterprise`, `2025-lta-enterprise`](https://github.com/SonarSource/docker-sonarqube/blob/f36d73cab148e76cd0dae6c650f0273676522240/2025.1/enterprise/Dockerfile)
 
--	[`10.6.0-developer`, `10.6-developer`, `10-developer`, `developer`](https://github.com/SonarSource/docker-sonarqube/blob/29b65682b4f8dbb38bd303b35b3ceaa3a39a0e40/10/developer/Dockerfile)
+-	[`2025.1.2-datacenter-app`, `2025.1-datacenter-app`, `2025-lta-datacenter-app`](https://github.com/SonarSource/docker-sonarqube/blob/f36d73cab148e76cd0dae6c650f0273676522240/2025.1/datacenter/app/Dockerfile)
 
--	[`10.6.0-enterprise`, `10.6-enterprise`, `10-enterprise`, `enterprise`](https://github.com/SonarSource/docker-sonarqube/blob/29b65682b4f8dbb38bd303b35b3ceaa3a39a0e40/10/enterprise/Dockerfile)
+-	[`2025.1.2-datacenter-search`, `2025.1-datacenter-search`, `2025-lta-datacenter-search`](https://github.com/SonarSource/docker-sonarqube/blob/f36d73cab148e76cd0dae6c650f0273676522240/2025.1/datacenter/search/Dockerfile)
 
--	[`10.6.0-datacenter-app`, `10.6-datacenter-app`, `10-datacenter-app`, `datacenter-app`](https://github.com/SonarSource/docker-sonarqube/blob/29b65682b4f8dbb38bd303b35b3ceaa3a39a0e40/10/datacenter/app/Dockerfile)
+-	[`25.5.0.107428-community`, `community`, `latest`](https://github.com/SonarSource/docker-sonarqube/blob/56846598574ea57af773ec32bc4c36c25d40f34c/community-build/Dockerfile)
 
--	[`10.6.0-datacenter-search`, `10.6-datacenter-search`, `10-datacenter-search`, `datacenter-search`](https://github.com/SonarSource/docker-sonarqube/blob/29b65682b4f8dbb38bd303b35b3ceaa3a39a0e40/10/datacenter/search/Dockerfile)
+-	[`9.9.8-community`, `9.9-community`, `9-community`, `lts`, `lts-community`](https://github.com/SonarSource/docker-sonarqube/blob/f36d73cab148e76cd0dae6c650f0273676522240/9/community/Dockerfile)
+
+-	[`9.9.8-developer`, `9.9-developer`, `9-developer`, `lts-developer`](https://github.com/SonarSource/docker-sonarqube/blob/f36d73cab148e76cd0dae6c650f0273676522240/9/developer/Dockerfile)
+
+-	[`9.9.9-enterprise`, `9.9-enterprise`, `9-enterprise`, `lts-enterprise`](https://github.com/SonarSource/docker-sonarqube/blob/f36d73cab148e76cd0dae6c650f0273676522240/9/enterprise/Dockerfile)
+
+-	[`9.9.9-datacenter-app`, `9.9-datacenter-app`, `9-datacenter-app`, `lts-datacenter-app`](https://github.com/SonarSource/docker-sonarqube/blob/f36d73cab148e76cd0dae6c650f0273676522240/9/datacenter/app/Dockerfile)
+
+-	[`9.9.9-datacenter-search`, `9.9-datacenter-search`, `9-datacenter-search`, `lts-datacenter-search`](https://github.com/SonarSource/docker-sonarqube/blob/f36d73cab148e76cd0dae6c650f0273676522240/9/datacenter/search/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -63,15 +71,17 @@ WARNING:
 -	**Source of this description**:  
 	[docs repo's `sonarqube/` directory](https://github.com/docker-library/docs/tree/master/sonarqube) ([history](https://github.com/docker-library/docs/commits/master/sonarqube))
 
-# What is SonarQube?
+# What is `sonarqube`?
 
-[SonarQube](https://www.sonarqube.org/) is the leading tool for continuously inspecting the Code Quality and Security of your codebases, and guiding development teams during Code Reviews. Covering 27 programming languages, while pairing-up with your existing software pipeline, SonarQube provides clear remediation guidance for developers to understand and fix issues, and for teams overall to deliver better and safer software. With over 225,000 deployments helping small development teams as well as global organizations, SonarQube provides the means for all teams and companies around the world to own and impact their Code Quality and Security.
+`sonarqube` Docker repository stores the official Sonar images for SonarQube Server and SonarQube Community Build.
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/84479f149eb7d748d5dc057665eb96f923e60dc1/sonarqube/logo.png)
+[SonarQube Server](https://www.sonarsource.com/products/sonarqube/) (formerly SonarQube) is an on-premise analysis tool designed to detect quality and security issues in 30+ languages, frameworks, and IaC platforms. The solution also provides fix recommendations leveraging AI with Sonar's AI CodeFix capability. By integrating directly with your CI pipeline or on one of the supported DevOps platforms, your code is checked against an extensive set of rules that cover many attributes of code, such as maintainability, reliability, and security issues on each merge/pull request.
 
-# How to use this image
+[SonarQube Community Build](https://www.sonarsource.com/open-source-editions/sonarqube-community-edition/) (formerly SonarQube Community) is Sonar's self-managed free offering, released on a monthly schedule. It includes the latest core capabilities available in open source, providing essential features such as bug detection, identification of code smells, and basic security issue analysis across 21 programming languages and frameworks. For advanced security analysis, enterprise-grade integrations, and scalability features, the commercial version, SonarQube Server, is available.
 
-Here you'll find the Docker images for the Community Edition, Developer Edition, Enterprise Edition, and Data Center Edition of SonarQube.
+## How to use this image
+
+Here, you'll find the Docker images for the SonarQube Server (Developer Edition, Enterprise Edition, and Data Center Edition), as well as for SonarQube Community Build.
 
 ## Docker Host Requirements
 
@@ -86,7 +96,7 @@ ulimit -n 131072
 ulimit -u 8192
 ```
 
-## Try Out SonarQube
+## Demo
 
 To quickly run a demo instance, see Using Docker on the [Try Out SonarQube](https://docs.sonarqube.org/latest/setup/get-started-2-minutes/) page. When you are ready to move to a more sustainable setup, take some time to read the **Installation** and **Configuration** sections below.
 
@@ -96,19 +106,29 @@ To quickly run a demo instance, see Using Docker on the [Try Out SonarQube](http
 
 For installation instructions, see Installing the Server from the Docker Image on the [Install the Server](https://docs.sonarqube.org/latest/setup/install-server/) page.
 
-To run a cluster with the Data Center Edition, please refer to Installing SonarQube from the Docker Image on the [Install the Server as a Cluster](https://docs.sonarqube.org/latest/setup/install-cluster/) page.
+To run a cluster with the SonarQube Server Data Center Edition, please refer to Installing SonarQube Server from the Docker Image on the [Install the Server as a Cluster](https://docs.sonarqube.org/latest/setup/install-cluster/) page.
 
 > The `lts` tag on Docker images is replaced with every new LTS release. If you want to avoid any automatic major upgrades, we recommend using the corresponding `9.9-<edition>` tag instead of `lts-<edition>`.
 
 ## Configuration
 
+### Port binding
+
+By default, the server running within the container will listen on port 9000. You can expose the container port 9000 to the host port 9000 with the `-p 9000:9000` argument to `docker run`, like the command below:
+
+```console
+docker run --name sonarqube-custom -p 9000:9000 sonarqube:community
+```
+
+You can then browse to `http://localhost:9000` or `http://host-ip:9000` in your web browser to access the web interface.
+
 ### Database
 
 By default, the image will use an embedded H2 database that is not suited for production.
 
-> **Warning:** Only a single instance of SonarQube can connect to a database schema. If you're using a Docker Swarm or Kubernetes, make sure that multiple SonarQube instances are never running on the same database schema simultaneously. This will cause SonarQube to behave unpredictably and data will be corrupted. There is no safeguard until [SONAR-10362](https://jira.sonarsource.com/browse/SONAR-10362). The Data Center Edition has the same limitation in that only one cluster can connect to one database schema at the same time.
+> **Warning:** Only a single instance of SonarQube Server or SonarQube Community Build can connect to a database schema. If you're using a Docker Swarm or Kubernetes, make sure that multiple instances are never running on the same database schema simultaneously. This will cause the SonarQube to behave unpredictably, and data will be corrupted. There is no safeguard, as described on [SONAR-10362](https://jira.sonarsource.com/browse/SONAR-10362). The SonarQube Server Data Center Edition has the same limitation in that only one cluster can connect to one database schema at the same time.
 
-Set up a database by following the "Installing the Database" section of https://docs.sonarqube.org/latest/setup/install-server/.
+Set up a database by following the ["Installing the Database"](https://docs.sonarsource.com/sonarqube/latest/setup-and-upgrade/install-the-server/installing-the-database/) section.
 
 ### Use volumes
 
@@ -131,7 +151,7 @@ For upgrade instructions, see Upgrading from the Docker Image on the [Upgrade th
 In some environments, it may make more sense to prepare a custom image containing your configuration. A `Dockerfile` to achieve this may be as simple as:
 
 ```dockerfile
-FROM sonarqube:8.9-community
+FROM sonarqube:community
 COPY sonar-custom-plugin-1.0.jar /opt/sonarqube/extensions/
 ```
 
@@ -142,9 +162,9 @@ $ docker build --tag=sonarqube-custom .
 $ docker run -ti sonarqube-custom
 ```
 
-### Avoid hard termination of SonarQube
+### Avoid hard termination
 
-A SonarQube instance will stop gracefully, waiting for any tasks in progress to finish. Waiting for in-progress tasks to finish can take a large amount of time which the docker does not expect by default when stopping. To avoid having the SonarQube instance killed by the Docker daemon after 10 seconds, it is best to configure a timeout to stop the container with `--stop-timeout`. For example:
+The instance will stop gracefully, waiting for any tasks in progress to finish. Waiting for in-progress tasks to finish can take a large amount of time, which the docker does not expect by default when stopping. To avoid having the instance killed by the Docker daemon after 10 seconds, it is best to configure a timeout to stop the container with `--stop-timeout`. For example:
 
 ```console
 docker run --stop-timeout 3600 sonarqube
@@ -156,7 +176,7 @@ The administration guide can be found [here](https://redirect.sonarsource.com/do
 
 # License
 
-SonarQube Community Edition is licensed under [GNU Lesser General Public License, Version 3.0](http://www.gnu.org/licenses/lgpl.txt). SonarQube Developer, Enterprise, and Data Center Editions are licensed under [SonarSource Terms and Conditions](https://www.sonarsource.com/docs/sonarsource_terms_and_conditions.pdf).
+SonarQube Community Build is licensed under [GNU Lesser General Public License, Version 3.0](http://www.gnu.org/licenses/lgpl.txt). SonarQube Server Developer, Enterprise, and Data Center Editions are licensed under [SonarSource Terms and Condition](https://www.sonarsource.com/docs/sonarsource_terms_and_conditions.pdf).
 
 As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 

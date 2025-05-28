@@ -157,13 +157,11 @@ Alternatively, more permissive network settings can be used to share all host ne
 
 ### Docker Compose
 
-In this example we'll demonstrate using [`docker-compose`](https://docs.docker.com/compose/) to spawn a pair of message publisher and subscriber nodes in separate containers connected through shared software defined network.
+In this example we'll demonstrate using [`docker compose`](https://docs.docker.com/compose/) to spawn a pair of message publisher and subscriber nodes in separate containers connected through shared software defined network.
 
-> Create the directory `~/ros_demos` and add the first `Dockerfile` example from above. In the same directory, also create file `docker-compose.yml` with the following that runs a C++ publisher with a Python subscriber:
+> Create the directory `~/ros_demos` and add the first `Dockerfile` example from above. In the same directory, also create file `compose.yaml` with the following that runs a C++ publisher with a Python subscriber:
 
 ```yaml
-version: '3'
-
 services:
   talker:
     build: ./
@@ -176,10 +174,10 @@ services:
     command: ros2 run demo_nodes_py listener
 ```
 
-> Use docker-compose inside the same directory to launch our ROS nodes. Given the containers created derive from the same docker compose project, they will coexist on shared project network:
+> Use `docker compose` inside the same directory to launch our ROS nodes. Given the containers created derive from the same docker compose project, they will coexist on shared project network:
 
 ```console
-$ docker-compose up -d
+$ docker compose up -d
 ```
 
 > Notice that a new network named `ros_demos_default` has been created, as can be shown further with:
@@ -191,21 +189,21 @@ $ docker network inspect ros_demos_default
 > We can monitor the logged output of each container, such as the listener node like so:
 
 ```console
-$ docker-compose logs listener
+$ docker compose logs listener
 ```
 
-> Finally, we can stop and remove all the relevant containers using docker-compose from the same directory:
+> Finally, we can stop and remove all the relevant containers using `docker compose` from the same directory:
 
 ```console
-$ docker-compose stop
-$ docker-compose rm
+$ docker compose stop
+$ docker compose rm
 ```
 
-> Note: the auto-generated network, `ros_demos_default`, will persist until you explicitly remove it using `docker-compose down`.
+> Note: the auto-generated network, `ros_demos_default`, will persist until you explicitly remove it using `docker compose down`.
 
 ### ROS 1 Bridge
 
-To ease ROS 2 migration, [`ros1_bridge`](https://index.ros.org/p/ros1_bridge/github-ros2-ros1_bridge) is a ROS 2 package that provides bidirectional communication between ROS 1 and ROS 2. As a minimal example, given the ROS 2 Dockerfile above, we'll create the ROS 1 equivalent below, and name the Dockerfile appropriately.
+To ease ROS 2 migration, [`ros1_bridge`](https://index.ros.org/p/ros1_bridge) is a ROS 2 package that provides bidirectional communication between ROS 1 and ROS 2. As a minimal example, given the ROS 2 Dockerfile above, we'll create the ROS 1 equivalent below, and name the Dockerfile appropriately.
 
 ```dockerfile
 FROM %%IMAGE%%:noetic
@@ -223,8 +221,6 @@ CMD ["roslaunch", "roscpp_tutorials", "talker_listener_launch"]
 The compose file bellow spawns services for both talker listener demos while connecting the two via a dynamic bridge. You may then view the log output from both pairs of talker and listener nodes cross talking over the `/chatter` topic.
 
 ```yaml
-version: '3'
-
 services:
   ros1:
     build:
@@ -250,12 +246,12 @@ services:
 [Q&A](https://answers.ros.org/questions/): Ask questions. Get answers  
 [Forums](https://discourse.ros.org/): Hear the latest discussions  
 [Blog](http://www.ros.org/news/): Stay up-to-date  
-[Packages](https://index.ros.org/packages/): Discover indexed packages  
+[Packages](https://index.ros.org/?search_packages=true): Discover indexed packages  
 [OSRF](https://www.osrfoundation.org/): Open Source Robotics Foundation
 
 ## ROS 2
 
-[Index](https://index.ros.org/doc/ros2/): ROS 2 Documentation  
+[Index](https://docs.ros.org): ROS 2 Documentation  
 [Design](https://design.ros2.org/): ROS 2 Design Articles
 
 ## ROS 1

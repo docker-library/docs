@@ -24,7 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`noetic-ros-core`, `noetic-ros-core-focal`](https://github.com/osrf/docker_images/blob/27cc0b68263bbbb10bb58dd814efc0a6b0a01ec7/ros/noetic/ubuntu/focal/ros-core/Dockerfile)
+-	[`noetic-ros-core`, `noetic-ros-core-focal`](https://github.com/osrf/docker_images/blob/b525e9ef659ce448db6150fd5407ef62b2c5b265/ros/noetic/ubuntu/focal/ros-core/Dockerfile)
 
 -	[`noetic-ros-base`, `noetic-ros-base-focal`, `noetic`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/noetic/ubuntu/focal/ros-base/Dockerfile)
 
@@ -32,29 +32,29 @@ WARNING:
 
 -	[`noetic-perception`, `noetic-perception-focal`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/noetic/ubuntu/focal/perception/Dockerfile)
 
--	[`humble-ros-core`, `humble-ros-core-jammy`](https://github.com/osrf/docker_images/blob/27cc0b68263bbbb10bb58dd814efc0a6b0a01ec7/ros/humble/ubuntu/jammy/ros-core/Dockerfile)
+-	[`humble-ros-core`, `humble-ros-core-jammy`](https://github.com/osrf/docker_images/blob/b525e9ef659ce448db6150fd5407ef62b2c5b265/ros/humble/ubuntu/jammy/ros-core/Dockerfile)
 
 -	[`humble-ros-base`, `humble-ros-base-jammy`, `humble`](https://github.com/osrf/docker_images/blob/20e3ba685bb353a3c00be9ba01c1b7a6823c9472/ros/humble/ubuntu/jammy/ros-base/Dockerfile)
 
 -	[`humble-perception`, `humble-perception-jammy`](https://github.com/osrf/docker_images/blob/20d40c96b426b8956dec203e236abff2ec29b188/ros/humble/ubuntu/jammy/perception/Dockerfile)
 
--	[`iron-ros-core`, `iron-ros-core-jammy`](https://github.com/osrf/docker_images/blob/27cc0b68263bbbb10bb58dd814efc0a6b0a01ec7/ros/iron/ubuntu/jammy/ros-core/Dockerfile)
-
--	[`iron-ros-base`, `iron-ros-base-jammy`, `iron`](https://github.com/osrf/docker_images/blob/bca53bf4c09d771be3ff735da4157203b53ebc2b/ros/iron/ubuntu/jammy/ros-base/Dockerfile)
-
--	[`iron-perception`, `iron-perception-jammy`](https://github.com/osrf/docker_images/blob/bca53bf4c09d771be3ff735da4157203b53ebc2b/ros/iron/ubuntu/jammy/perception/Dockerfile)
-
--	[`jazzy-ros-core`, `jazzy-ros-core-noble`](https://github.com/osrf/docker_images/blob/74e321bc1837c29f223a6d54895aa3c8eb184119/ros/jazzy/ubuntu/noble/ros-core/Dockerfile)
+-	[`jazzy-ros-core`, `jazzy-ros-core-noble`](https://github.com/osrf/docker_images/blob/b525e9ef659ce448db6150fd5407ef62b2c5b265/ros/jazzy/ubuntu/noble/ros-core/Dockerfile)
 
 -	[`jazzy-ros-base`, `jazzy-ros-base-noble`, `jazzy`, `latest`](https://github.com/osrf/docker_images/blob/0038f1c3a11aa0fc573d698b39ab5c204aad5a40/ros/jazzy/ubuntu/noble/ros-base/Dockerfile)
 
 -	[`jazzy-perception`, `jazzy-perception-noble`](https://github.com/osrf/docker_images/blob/0038f1c3a11aa0fc573d698b39ab5c204aad5a40/ros/jazzy/ubuntu/noble/perception/Dockerfile)
 
--	[`rolling-ros-core`, `rolling-ros-core-noble`](https://github.com/osrf/docker_images/blob/7f98ddd88d872299c45b60c8bcd70d4eb6665222/ros/rolling/ubuntu/noble/ros-core/Dockerfile)
+-	[`kilted-ros-core`, `kilted-ros-core-noble`](https://github.com/osrf/docker_images/blob/b835a530495c0b411a0d15db858710a2748ee0a0/ros/kilted/ubuntu/noble/ros-core/Dockerfile)
 
--	[`rolling-ros-base`, `rolling-ros-base-noble`, `rolling`](https://github.com/osrf/docker_images/blob/7f98ddd88d872299c45b60c8bcd70d4eb6665222/ros/rolling/ubuntu/noble/ros-base/Dockerfile)
+-	[`kilted-ros-base`, `kilted-ros-base-noble`, `kilted`](https://github.com/osrf/docker_images/blob/b835a530495c0b411a0d15db858710a2748ee0a0/ros/kilted/ubuntu/noble/ros-base/Dockerfile)
 
--	[`rolling-perception`, `rolling-perception-noble`](https://github.com/osrf/docker_images/blob/7f98ddd88d872299c45b60c8bcd70d4eb6665222/ros/rolling/ubuntu/noble/perception/Dockerfile)
+-	[`kilted-perception`, `kilted-perception-noble`](https://github.com/osrf/docker_images/blob/b835a530495c0b411a0d15db858710a2748ee0a0/ros/kilted/ubuntu/noble/perception/Dockerfile)
+
+-	[`rolling-ros-core`, `rolling-ros-core-noble`](https://github.com/osrf/docker_images/blob/2e9b4e3c02bff2c70271e6f0fd15d4132e8cbcbb/ros/rolling/ubuntu/noble/ros-core/Dockerfile)
+
+-	[`rolling-ros-base`, `rolling-ros-base-noble`, `rolling`](https://github.com/osrf/docker_images/blob/2e9b4e3c02bff2c70271e6f0fd15d4132e8cbcbb/ros/rolling/ubuntu/noble/ros-base/Dockerfile)
+
+-	[`rolling-perception`, `rolling-perception-noble`](https://github.com/osrf/docker_images/blob/2e9b4e3c02bff2c70271e6f0fd15d4132e8cbcbb/ros/rolling/ubuntu/noble/perception/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -234,13 +234,11 @@ Alternatively, more permissive network settings can be used to share all host ne
 
 ### Docker Compose
 
-In this example we'll demonstrate using [`docker-compose`](https://docs.docker.com/compose/) to spawn a pair of message publisher and subscriber nodes in separate containers connected through shared software defined network.
+In this example we'll demonstrate using [`docker compose`](https://docs.docker.com/compose/) to spawn a pair of message publisher and subscriber nodes in separate containers connected through shared software defined network.
 
-> Create the directory `~/ros_demos` and add the first `Dockerfile` example from above. In the same directory, also create file `docker-compose.yml` with the following that runs a C++ publisher with a Python subscriber:
+> Create the directory `~/ros_demos` and add the first `Dockerfile` example from above. In the same directory, also create file `compose.yaml` with the following that runs a C++ publisher with a Python subscriber:
 
 ```yaml
-version: '3'
-
 services:
   talker:
     build: ./
@@ -253,10 +251,10 @@ services:
     command: ros2 run demo_nodes_py listener
 ```
 
-> Use docker-compose inside the same directory to launch our ROS nodes. Given the containers created derive from the same docker compose project, they will coexist on shared project network:
+> Use `docker compose` inside the same directory to launch our ROS nodes. Given the containers created derive from the same docker compose project, they will coexist on shared project network:
 
 ```console
-$ docker-compose up -d
+$ docker compose up -d
 ```
 
 > Notice that a new network named `ros_demos_default` has been created, as can be shown further with:
@@ -268,21 +266,21 @@ $ docker network inspect ros_demos_default
 > We can monitor the logged output of each container, such as the listener node like so:
 
 ```console
-$ docker-compose logs listener
+$ docker compose logs listener
 ```
 
-> Finally, we can stop and remove all the relevant containers using docker-compose from the same directory:
+> Finally, we can stop and remove all the relevant containers using `docker compose` from the same directory:
 
 ```console
-$ docker-compose stop
-$ docker-compose rm
+$ docker compose stop
+$ docker compose rm
 ```
 
-> Note: the auto-generated network, `ros_demos_default`, will persist until you explicitly remove it using `docker-compose down`.
+> Note: the auto-generated network, `ros_demos_default`, will persist until you explicitly remove it using `docker compose down`.
 
 ### ROS 1 Bridge
 
-To ease ROS 2 migration, [`ros1_bridge`](https://index.ros.org/p/ros1_bridge/github-ros2-ros1_bridge) is a ROS 2 package that provides bidirectional communication between ROS 1 and ROS 2. As a minimal example, given the ROS 2 Dockerfile above, we'll create the ROS 1 equivalent below, and name the Dockerfile appropriately.
+To ease ROS 2 migration, [`ros1_bridge`](https://index.ros.org/p/ros1_bridge) is a ROS 2 package that provides bidirectional communication between ROS 1 and ROS 2. As a minimal example, given the ROS 2 Dockerfile above, we'll create the ROS 1 equivalent below, and name the Dockerfile appropriately.
 
 ```dockerfile
 FROM ros:noetic
@@ -300,8 +298,6 @@ CMD ["roslaunch", "roscpp_tutorials", "talker_listener_launch"]
 The compose file bellow spawns services for both talker listener demos while connecting the two via a dynamic bridge. You may then view the log output from both pairs of talker and listener nodes cross talking over the `/chatter` topic.
 
 ```yaml
-version: '3'
-
 services:
   ros1:
     build:
@@ -327,12 +323,12 @@ services:
 [Q&A](https://answers.ros.org/questions/): Ask questions. Get answers  
 [Forums](https://discourse.ros.org/): Hear the latest discussions  
 [Blog](http://www.ros.org/news/): Stay up-to-date  
-[Packages](https://index.ros.org/packages/): Discover indexed packages  
+[Packages](https://index.ros.org/?search_packages=true): Discover indexed packages  
 [OSRF](https://www.osrfoundation.org/): Open Source Robotics Foundation
 
 ## ROS 2
 
-[Index](https://index.ros.org/doc/ros2/): ROS 2 Documentation  
+[Index](https://docs.ros.org): ROS 2 Documentation  
 [Design](https://design.ros2.org/): ROS 2 Design Articles
 
 ## ROS 1

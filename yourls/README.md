@@ -24,11 +24,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.9.2-apache`, `1.9-apache`, `1-apache`, `apache`, `1.9.2`, `1.9`, `1`, `latest`](https://github.com/YOURLS/images/blob/082820033f591498dbc30d4ffc0cc927197ebf26/apache/Dockerfile)
+-	[`1.10.1-apache`, `1.10-apache`, `1-apache`, `apache`, `1.10.1`, `1.10`, `1`, `latest`](https://github.com/YOURLS/images/blob/d306b06d6b3e94f1441c65385395f7a384a46101/apache/Dockerfile)
 
--	[`1.9.2-fpm`, `1.9-fpm`, `1-fpm`, `fpm`](https://github.com/YOURLS/images/blob/082820033f591498dbc30d4ffc0cc927197ebf26/fpm/Dockerfile)
+-	[`1.10.1-fpm`, `1.10-fpm`, `1-fpm`, `fpm`](https://github.com/YOURLS/images/blob/d306b06d6b3e94f1441c65385395f7a384a46101/fpm/Dockerfile)
 
--	[`1.9.2-fpm-alpine`, `1.9-fpm-alpine`, `1-fpm-alpine`, `fpm-alpine`](https://github.com/YOURLS/images/blob/082820033f591498dbc30d4ffc0cc927197ebf26/fpm-alpine/Dockerfile)
+-	[`1.10.1-fpm-alpine`, `1.10-fpm-alpine`, `1-fpm-alpine`, `fpm-alpine`](https://github.com/YOURLS/images/blob/d306b06d6b3e94f1441c65385395f7a384a46101/fpm-alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -36,7 +36,7 @@ WARNING:
 	[https://github.com/YOURLS/docker/issues](https://github.com/YOURLS/docker/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/yourls/), [`arm32v5`](https://hub.docker.com/r/arm32v5/yourls/), [`arm32v6`](https://hub.docker.com/r/arm32v6/yourls/), [`arm32v7`](https://hub.docker.com/r/arm32v7/yourls/), [`arm64v8`](https://hub.docker.com/r/arm64v8/yourls/), [`i386`](https://hub.docker.com/r/i386/yourls/), [`mips64le`](https://hub.docker.com/r/mips64le/yourls/), [`ppc64le`](https://hub.docker.com/r/ppc64le/yourls/), [`s390x`](https://hub.docker.com/r/s390x/yourls/)
+	[`amd64`](https://hub.docker.com/r/amd64/yourls/), [`arm32v5`](https://hub.docker.com/r/arm32v5/yourls/), [`arm32v6`](https://hub.docker.com/r/arm32v6/yourls/), [`arm32v7`](https://hub.docker.com/r/arm32v7/yourls/), [`arm64v8`](https://hub.docker.com/r/arm64v8/yourls/), [`i386`](https://hub.docker.com/r/i386/yourls/), [`mips64le`](https://hub.docker.com/r/mips64le/yourls/), [`ppc64le`](https://hub.docker.com/r/ppc64le/yourls/), [`riscv64`](https://hub.docker.com/r/riscv64/yourls/), [`s390x`](https://hub.docker.com/r/s390x/yourls/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/yourls/` directory](https://github.com/docker-library/repo-info/blob/master/repos/yourls) ([history](https://github.com/docker-library/repo-info/commits/master/repos/yourls))  
@@ -93,7 +93,7 @@ Then, access it via `http://localhost:8080/admin/` or `http://<host-ip>:8080/adm
 ## Environment Variables
 
 When you start the `yourls` image, you can adjust the configuration of the YOURLS instance by passing one or more environment variables on the `docker run` command line.  
-The YOURLS instance accepts [a number of environment variables for configuration](https://yourls.org/#Config).  
+The YOURLS instance accepts [a number of environment variables for configuration](https://yourls.org/docs/guide/essentials/configuration).  
 A few notable/important examples for using this Docker image include the following.
 
 ### `YOURLS_SITE`
@@ -143,13 +143,11 @@ $ docker run --name some-yourls -e YOURLS_DB_PASS_FILE=/run/secrets/mysql-root .
 
 Currently, this is supported for `YOURLS_DB_HOST`, `YOURLS_DB_USER`, `YOURLS_DB_PASS`, `YOURLS_DB_NAME`, `YOURLS_DB_PREFIX`, `YOURLS_SITE`, `YOURLS_USER`, and `YOURLS_PASS`.
 
-## ... via [`docker-compose`](https://github.com/docker/compose) or [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/)
+## ... via [`docker compose`](https://github.com/docker/compose)
 
-Example `docker-compose.yml` for `yourls`:
+Example `compose.yaml` for `yourls`:
 
 ```yaml
-version: '3.1'
-
 services:
 
   yourls:
@@ -171,9 +169,7 @@ services:
       MYSQL_DATABASE: yourls
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/6dba1507190ff91149046ce4bcbac43529d76bd4/yourls/stack.yml)
-
-Run `docker stack deploy -c stack.yml yourls` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080/admin/`, `http://localhost:8080/admin/`, or `http://<host-ip>:8080/admin/` (as appropriate).
+Run `docker compose up`, wait for it to initialize completely, and visit `http://localhost:8080/admin/` or `http://<host-ip>:8080/admin/` (as appropriate).
 
 ## Adding additional libraries / extensions
 
@@ -195,15 +191,15 @@ This is the defacto image. If you are unsure about what your needs are, you prob
 
 ## `yourls:<version>-fpm`
 
-This variant contains PHP-FPM, which is a FastCGI implementation for PHP. See [the PHP-FPM website](https://php-fpm.org/) for more information about PHP-FPM.
+This variant contains [PHP's FastCGI Process Manager (FPM)](https://www.php.net/fpm), which is the recommended FastCGI implementation for PHP.
 
 In order to use this image variant, some kind of reverse proxy (such as NGINX, Apache, or other tool which speaks the FastCGI protocol) will be required.
 
 Some potentially helpful resources:
 
--	[PHP-FPM.org](https://php-fpm.org/)
--	[simplified example by @md5](https://gist.github.com/md5/d9206eacb5a0ff5d6be0)
--	[very detailed article by Pascal Landau](https://www.pascallandau.com/blog/php-php-fpm-and-nginx-on-docker-in-windows-10/)
+-	[FPM's Official Configuration Reference](https://www.php.net/manual/en/install.fpm.configuration.php)
+-	[Simplified example by @md5](https://gist.github.com/md5/d9206eacb5a0ff5d6be0)
+-	[Very detailed article by Pascal Landau](https://www.pascallandau.com/blog/php-php-fpm-and-nginx-on-docker-in-windows-10/)
 -	[Stack Overflow discussion](https://stackoverflow.com/q/29905953/433558)
 -	[Apache httpd Wiki example](https://wiki.apache.org/httpd/PHPFPMWordpress)
 

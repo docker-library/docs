@@ -24,13 +24,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `3.3.3`, `3.3`, `3`](https://github.com/apache/couchdb-docker/blob/58910ed097489dc588b2a87592406f8faa1bdadf/3.3.3/Dockerfile)
+-	[`latest`, `3.5.0`, `3.5`, `3`](https://github.com/apache/couchdb-docker/blob/2660034027fec97097f88afcc6f8a4416c364b24/3.5.0/Dockerfile)
 
--	[`3.2.3`, `3.2`](https://github.com/apache/couchdb-docker/blob/58910ed097489dc588b2a87592406f8faa1bdadf/3.2.3/Dockerfile)
+-	[`3.5.0-nouveau`, `3.5-nouveau`, `3-nouveau`](https://github.com/apache/couchdb-docker/blob/2660034027fec97097f88afcc6f8a4416c364b24/3.5.0-nouveau/Dockerfile)
 
--	[`3.1.2`, `3.1`](https://github.com/apache/couchdb-docker/blob/58910ed097489dc588b2a87592406f8faa1bdadf/3.1.2/Dockerfile)
+-	[`3.4.3`, `3.4`](https://github.com/apache/couchdb-docker/blob/2660034027fec97097f88afcc6f8a4416c364b24/3.4.3/Dockerfile)
 
--	[`2.3.1`, `2.3`, `2`](https://github.com/apache/couchdb-docker/blob/58910ed097489dc588b2a87592406f8faa1bdadf/2.3.1/Dockerfile)
+-	[`3.4.3-nouveau`, `3.4-nouveau`](https://github.com/apache/couchdb-docker/blob/2660034027fec97097f88afcc6f8a4416c364b24/3.4.3-nouveau/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -38,7 +38,7 @@ WARNING:
 	[https://github.com/apache/couchdb-docker/issues](https://github.com/apache/couchdb-docker/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/couchdb/), [`arm64v8`](https://hub.docker.com/r/arm64v8/couchdb/), [`ppc64le`](https://hub.docker.com/r/ppc64le/couchdb/), [`s390x`](https://hub.docker.com/r/s390x/couchdb/)
+	[`amd64`](https://hub.docker.com/r/amd64/couchdb/), [`arm64v8`](https://hub.docker.com/r/arm64v8/couchdb/), [`s390x`](https://hub.docker.com/r/s390x/couchdb/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/couchdb/` directory](https://github.com/docker-library/repo-info/blob/master/repos/couchdb) ([history](https://github.com/docker-library/repo-info/commits/master/repos/couchdb))  

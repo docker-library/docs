@@ -24,17 +24,17 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`9.6.1`, `9.6`, `9`, `latest`](https://github.com/apache/solr-docker/blob/9cd850b72309de05169544395c83a85b329d6b86/9.6/Dockerfile)
+-	[`9.8.1`, `9.8`, `9`, `latest`](https://github.com/apache/solr-docker/blob/fd6589c6455c184356b93880265f17c645840405/9.8/Dockerfile)
 
--	[`9.6.1-slim`, `9.6-slim`, `9-slim`, `slim`](https://github.com/apache/solr-docker/blob/9cd850b72309de05169544395c83a85b329d6b86/9.6-slim/Dockerfile)
+-	[`9.8.1-slim`, `9.8-slim`, `9-slim`, `slim`](https://github.com/apache/solr-docker/blob/fd6589c6455c184356b93880265f17c645840405/9.8-slim/Dockerfile)
 
--	[`9.5.0`, `9.5`](https://github.com/apache/solr-docker/blob/a17dd804fead2a6581f8e4c116451ed268f32126/9.5/Dockerfile)
+-	[`9.7.0`, `9.7`](https://github.com/apache/solr-docker/blob/cabde2a16c99aa974e1882df2c55ca17eab0bd17/9.7/Dockerfile)
 
--	[`9.5.0-slim`, `9.5-slim`](https://github.com/apache/solr-docker/blob/a17dd804fead2a6581f8e4c116451ed268f32126/9.5-slim/Dockerfile)
+-	[`9.7.0-slim`, `9.7-slim`](https://github.com/apache/solr-docker/blob/cabde2a16c99aa974e1882df2c55ca17eab0bd17/9.7-slim/Dockerfile)
 
--	[`8.11.3`, `8.11`, `8`](https://github.com/apache/solr-docker/blob/7156fa15807945939cd2a5525bbb63219da07b1e/8.11/Dockerfile)
+-	[`8.11.4`, `8.11`, `8`](https://github.com/apache/solr-docker/blob/f11dfe66709370492d5b7b251d5eba5d70b8301d/8.11/Dockerfile)
 
--	[`8.11.3-slim`, `8.11-slim`, `8-slim`](https://github.com/apache/solr-docker/blob/7156fa15807945939cd2a5525bbb63219da07b1e/8.11-slim/Dockerfile)
+-	[`8.11.4-slim`, `8.11-slim`, `8-slim`](https://github.com/apache/solr-docker/blob/f11dfe66709370492d5b7b251d5eba5d70b8301d/8.11-slim/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -57,7 +57,7 @@ WARNING:
 
 # What is Solr?
 
-Apache Solr™ is the popular, blazing fast, open source NoSQL search platform. Its major features include powerful full-text search, hit highlighting, faceted search, dynamic clustering, database integration, rich document handling, and geospatial search. Solr is highly scalable, providing fault tolerant distributed search and indexing, and powers the search and navigation features of many of the world's largest websites.
+Solr is the blazing-fast, open source, multi-modal search platform built on Apache Lucene. It powers full-text, vector, analytics, and geospatial search at many of the world's largest organizations. Other major features include Kubernetes integration, streaming, highlighting, faceting, and spellchecking.
 
 Learn more on [Apache Solr homepage](http://solr.apache.org/) and in the [Apache Solr Reference Guide](https://solr.apache.org/guide/).
 

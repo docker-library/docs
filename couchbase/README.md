@@ -24,21 +24,45 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.6.2`, `enterprise-7.6.2`, `enterprise`, `latest`](https://github.com/couchbase/docker/blob/ba43d566538a8e0b6315569b94f0a7cf835c222b/enterprise/couchbase-server/7.6.2/Dockerfile)
+-	[`7.6.6`, `enterprise`, `enterprise-7.6.6`, `latest`](https://github.com/couchbase/docker/blob/9ce3cbc835dd4e072943ac7878aa7f87d6b95178/enterprise/couchbase-server/7.6.6/Dockerfile)
 
--	[`community-7.6.2`, `community`](https://github.com/couchbase/docker/blob/34bb6684dc575f4e0b8b0f16127f5d4188015d8d/community/couchbase-server/7.6.2/Dockerfile)
+-	[`7.6.5`, `enterprise-7.6.5`](https://github.com/couchbase/docker/blob/ec16abff6f0551ced6c771bd5606a4392379dd31/enterprise/couchbase-server/7.6.5/Dockerfile)
+
+-	[`7.6.4`, `enterprise-7.6.4`](https://github.com/couchbase/docker/blob/9990e2cfabc94b37607e5666d9ef1eab69a397a6/enterprise/couchbase-server/7.6.4/Dockerfile)
+
+-	[`7.6.3`, `enterprise-7.6.3`](https://github.com/couchbase/docker/blob/553d1baa4aa90fe506e1d7bcdf4daec387a110fe/enterprise/couchbase-server/7.6.3/Dockerfile)
+
+-	[`7.6.2`, `enterprise-7.6.2`](https://github.com/couchbase/docker/blob/ba43d566538a8e0b6315569b94f0a7cf835c222b/enterprise/couchbase-server/7.6.2/Dockerfile)
+
+-	[`community`, `community-7.6.2`](https://github.com/couchbase/docker/blob/34bb6684dc575f4e0b8b0f16127f5d4188015d8d/community/couchbase-server/7.6.2/Dockerfile)
+
+-	[`7.6.1`, `enterprise-7.6.1`](https://github.com/couchbase/docker/blob/5268f3a009878a85c70b1461ef32cf8ce21debec/enterprise/couchbase-server/7.6.1/Dockerfile)
+
+-	[`community-7.6.1`](https://github.com/couchbase/docker/blob/6eb060cef1909e850b0ad4a930cd577a89a6d269/community/couchbase-server/7.6.1/Dockerfile)
+
+-	[`7.6.0`, `enterprise-7.6.0`](https://github.com/couchbase/docker/blob/203e62f36ce055be75955e073d0000249bf2c040/enterprise/couchbase-server/7.6.0/Dockerfile)
+
+-	[`community-7.6.0`](https://github.com/couchbase/docker/blob/7148bc241bcdcf8961c34f8adf76ebfb2860ed83/community/couchbase-server/7.6.0/Dockerfile)
+
+-	[`7.2.7`, `enterprise-7.2.7`](https://github.com/couchbase/docker/blob/ae9a971db27050a4da598137fce7bd3d63396c24/enterprise/couchbase-server/7.2.7/Dockerfile)
+
+-	[`7.2.6`, `enterprise-7.2.6`](https://github.com/couchbase/docker/blob/857d7bcc814e241fd36aa4dc326dcab37e1d1e73/enterprise/couchbase-server/7.2.6/Dockerfile)
 
 -	[`7.2.5`, `enterprise-7.2.5`](https://github.com/couchbase/docker/blob/58e0549b1e021259a1ce9bb70d70aac4cc5e71da/enterprise/couchbase-server/7.2.5/Dockerfile)
 
--	[`community-7.2.4`](https://github.com/couchbase/docker/blob/8205e18d139813ac3f72f6dfef9ee9ffbc382e0f/community/couchbase-server/7.2.4/Dockerfile)
+-	[`7.2.4`, `enterprise-7.2.4`](https://github.com/couchbase/docker/blob/24bae6aab6520dc97c362b56150db9658d041873/enterprise/couchbase-server/7.2.4/Dockerfile)
 
--	[`7.1.6`, `enterprise-7.1.6`](https://github.com/couchbase/docker/blob/8205e18d139813ac3f72f6dfef9ee9ffbc382e0f/enterprise/couchbase-server/7.1.6/Dockerfile)
+-	[`community-7.2.4`](https://github.com/couchbase/docker/blob/9fc1cf481a8fe8e78d7539cee3a25cdbaa7b5e1e/community/couchbase-server/7.2.4/Dockerfile)
 
--	[`community-7.1.1`](https://github.com/couchbase/docker/blob/8205e18d139813ac3f72f6dfef9ee9ffbc382e0f/community/couchbase-server/7.1.1/Dockerfile)
+-	[`7.2.3`, `enterprise-7.2.3`](https://github.com/couchbase/docker/blob/3a446520433f63e3d270f01063b14cb6b6ade12a/enterprise/couchbase-server/7.2.3/Dockerfile)
 
--	[`7.0.5`, `enterprise-7.0.5`](https://github.com/couchbase/docker/blob/8205e18d139813ac3f72f6dfef9ee9ffbc382e0f/enterprise/couchbase-server/7.0.5/Dockerfile)
+-	[`7.2.2`, `enterprise-7.2.2`](https://github.com/couchbase/docker/blob/00de0b8de802ff6909be789b1f86a65d934a38f8/enterprise/couchbase-server/7.2.2/Dockerfile)
 
--	[`community-7.0.2`](https://github.com/couchbase/docker/blob/8205e18d139813ac3f72f6dfef9ee9ffbc382e0f/community/couchbase-server/7.0.2/Dockerfile)
+-	[`community-7.2.2`](https://github.com/couchbase/docker/blob/855d163127ee5e4bc6854714ecd6911f70f27906/community/couchbase-server/7.2.2/Dockerfile)
+
+-	[`7.2.0`, `enterprise-7.2.0`](https://github.com/couchbase/docker/blob/1985fb8f6774c71cb0f00e37a62c0741fad59ece/enterprise/couchbase-server/7.2.0/Dockerfile)
+
+-	[`community-7.2.0`](https://github.com/couchbase/docker/blob/2bd177d6887d051b6981c8c2591af6eed3ae9505/community/couchbase-server/7.2.0/Dockerfile)
 
 # Quick reference (cont.)
 

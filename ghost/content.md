@@ -44,7 +44,7 @@ $ docker run -d \
 	%%IMAGE%%:alpine
 ```
 
-Note: `database__connection__filename` is only valid in development mode and is the location for the SQLite database file. If using development mode, it should be set to a writeable path within a persistent folder (bind mount or volume). It is not available in production mode because an external MySQL server is required (see the `docker-compose` example below).
+Note: `database__connection__filename` is only valid in development mode and is the location for the SQLite database file. If using development mode, it should be set to a writeable path within a persistent folder (bind mount or volume). It is not available in production mode because an external MySQL server is required (see the Docker Compose example below).
 
 ### Docker Volume
 
@@ -68,7 +68,7 @@ All Ghost configuration parameters (such as `url`) can be specified via environm
 $ docker run -d --name some-ghost -e NODE_ENV=development -e url=http://some-ghost.example.com %%IMAGE%%
 ```
 
-(There are further configuration examples in the `stack.yml` listed below.)
+(There are further configuration examples in the `compose.yaml` listed below.)
 
 ## What is the Node.js version?
 
@@ -89,6 +89,6 @@ To run Ghost for production you'll also need to be running with MySQL 8, https, 
 
 The following example demonstrates some of the necessary configuration for running with MySQL. For more detail, see [Ghost's "Configuration options" documentation](https://ghost.org/docs/config/#configuration-options).
 
-## %%STACK%%
+## %%COMPOSE%%
 
-Run `docker stack deploy -c stack.yml %%REPO%%` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
+Run `docker compose up`, wait for it to initialize completely, and visit `http://localhost:8080` or `http://host-ip:8080` (as appropriate).

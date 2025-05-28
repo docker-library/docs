@@ -1,0 +1,119 @@
+# GeoNetwork
+#
+# Access via "http://localhost:8080/geonetwork"
+#
+# Default user: admin
+# Default password: admin
+
+volumes:
+  geonetwork:
+  esdata:
+  pgdata:
+  pglog:
+
+services:
+  geonetwork:
+    image: geonetwork:4.4
+    healthcheck:
+      test: curl http://localhost:8080/
+      interval: 5s
+      timeout: 5s
+      retries: 30
+    restart: always
+    volumes:
+      - geonetwork:/catalogue-data
+    depends_on:
+      database:
+        condition: service_healthy
+    ports:
+      - 8080:8080
+    environment:
+      WEBAPP_CONTEXT_PATH: /geonetwork
+      DATA_DIR: /catalogue-data
+      TZ: Europe/Amsterdam
+
+      JAVA_OPTS: >-
+        --add-opens=jdk.management/com.sun.management.internal=ALL-UNNAMED
+        -Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true
+        -Xms512M -Xss512M -Xmx2G -XX:+UseConcMarkSweepGC
+        -Djetty.httpConfig.requestHeaderSize=32768
+        -Dorg.eclipse.jetty.server.Request.maxFormContentSize=500000
+        -Dorg.eclipse.jetty.server.Request.maxFormKeys=4000
+      # For remote debug
+      # -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5005
+
+      GN_CONFIG_PROPERTIES: >-
+        -Dgeonetwork.dir=/catalogue-data
+        -Dgeonetwork.formatter.dir=/catalogue-data/data/formatter
+        -Dgeonetwork.schema.dir=/opt/geonetwork/WEB-INF/data/config/schema_plugins
+        -Dgeonetwork.indexConfig.dir=/opt/geonetwork/WEB-INF/data/config/index
+        -Dgeonetwork.schemapublication.dir=/opt/geonetwork/WEB-INF/data/resources/schemapublication
+        -Dgeonetwork.htmlcache.dir=/opt/geonetwork/WEB-INF/data/resources/htmlcache
+        -Des.host=elasticsearch
+        -Des.protocol=http
+        -Des.port=9200
+        -Des.url=http://elasticsearch:9200
+        -Des.username=
+        -Des.password=
+        -Dgeonetwork.ESFeaturesProxy.targetUri=http://elasticsearch:9200/gn-features/{_}
+        -Dgeonetwork.HttpDashboardProxy.targetUri=http://kibana:5601
+
+      GEONETWORK_DB_TYPE: postgres-postgis
+      GEONETWORK_DB_HOST: database
+      GEONETWORK_DB_PORT: 5432
+      GEONETWORK_DB_NAME: geonetwork
+      GEONETWORK_DB_USERNAME: geonetwork
+      GEONETWORK_DB_PASSWORD: geonetwork
+
+  database:
+    image: postgis/postgis:16-3.4
+    environment:
+      POSTGRES_USER: geonetwork
+      POSTGRES_PASSWORD: geonetwork
+      POSTGRES_DB: geonetwork
+    command: [postgres, -c, log_statement=all, -c, logging_collector=true, -c, log_file_mode=0644,
+      -c, log_directory=/var/log/postgresql, -c, log_filename=postgresql.log]
+    healthcheck:
+      test: [CMD-SHELL, pg_isready -U postgres]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - pglog:/var/log/postgresql
+
+  elasticsearch:
+    image: elasticsearch:7.17.15
+    ports:
+      - 9200:9200
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+      nofile:
+        soft: 65536
+        hard: 65536
+    healthcheck:
+      test: curl -s http://localhost:9200 >/dev/null || exit 1
+      interval: 10s
+      timeout: 2s
+      retries: 10
+      start_period: 2m
+    environment:
+      ES_JAVA_OPTS: -Xms1G -Xmx1G
+      discovery.type: single-node
+    volumes:
+      - esdata:/usr/share/elasticsearch/data
+
+  kibana:
+    image: kibana:7.17.15
+    environment:
+      SERVER_NAME: kibana
+      ELASTICSEARCH_URL: http://elasticsearch:9200/
+      SERVER_BASEPATH: /geonetwork/dashboards
+      SERVER_REWRITEBASEPATH: 'false'
+      KIBANA_INDEX: .dashboards
+      XPACK_MONITORING_UI_CONTAINER_ELASTICSEARCH_ENABLED: 'true'
+    depends_on:
+      elasticsearch:
+        condition: service_healthy

@@ -28,23 +28,23 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`27.1.11-apache`, `27.1-apache`, `27-apache`, `27.1.11`, `27.1`, `27`](https://github.com/nextcloud/docker/blob/f02b8b04e3017a4b601d41354f29d5039f3e10c0/27/apache/Dockerfile)
+-	[`29.0.16-apache`, `29.0-apache`, `29-apache`, `29.0.16`, `29.0`, `29`](https://github.com/nextcloud/docker/blob/f130178136c00a6e6951591510bcc059490e4c54/29/apache/Dockerfile)
 
--	[`27.1.11-fpm`, `27.1-fpm`, `27-fpm`](https://github.com/nextcloud/docker/blob/f02b8b04e3017a4b601d41354f29d5039f3e10c0/27/fpm/Dockerfile)
+-	[`29.0.16-fpm`, `29.0-fpm`, `29-fpm`](https://github.com/nextcloud/docker/blob/f130178136c00a6e6951591510bcc059490e4c54/29/fpm/Dockerfile)
 
--	[`27.1.11-fpm-alpine`, `27.1-fpm-alpine`, `27-fpm-alpine`](https://github.com/nextcloud/docker/blob/f02b8b04e3017a4b601d41354f29d5039f3e10c0/27/fpm-alpine/Dockerfile)
+-	[`29.0.16-fpm-alpine`, `29.0-fpm-alpine`, `29-fpm-alpine`](https://github.com/nextcloud/docker/blob/f130178136c00a6e6951591510bcc059490e4c54/29/fpm-alpine/Dockerfile)
 
--	[`28.0.8-apache`, `28.0-apache`, `28-apache`, `28.0.8`, `28.0`, `28`](https://github.com/nextcloud/docker/blob/258cc4ee2d0c4778f67b7b82066ad22dcdb6633f/28/apache/Dockerfile)
+-	[`30.0.11-apache`, `30.0-apache`, `30-apache`, `30.0.11`, `30.0`, `30`](https://github.com/nextcloud/docker/blob/02fc45a96e52b11b07e37a7f3c44ce599d0f0915/30/apache/Dockerfile)
 
--	[`28.0.8-fpm`, `28.0-fpm`, `28-fpm`](https://github.com/nextcloud/docker/blob/258cc4ee2d0c4778f67b7b82066ad22dcdb6633f/28/fpm/Dockerfile)
+-	[`30.0.11-fpm`, `30.0-fpm`, `30-fpm`](https://github.com/nextcloud/docker/blob/02fc45a96e52b11b07e37a7f3c44ce599d0f0915/30/fpm/Dockerfile)
 
--	[`28.0.8-fpm-alpine`, `28.0-fpm-alpine`, `28-fpm-alpine`](https://github.com/nextcloud/docker/blob/258cc4ee2d0c4778f67b7b82066ad22dcdb6633f/28/fpm-alpine/Dockerfile)
+-	[`30.0.11-fpm-alpine`, `30.0-fpm-alpine`, `30-fpm-alpine`](https://github.com/nextcloud/docker/blob/02fc45a96e52b11b07e37a7f3c44ce599d0f0915/30/fpm-alpine/Dockerfile)
 
--	[`29.0.4-apache`, `29.0-apache`, `29-apache`, `apache`, `stable-apache`, `production-apache`, `29.0.4`, `29.0`, `29`, `latest`, `stable`, `production`](https://github.com/nextcloud/docker/blob/258cc4ee2d0c4778f67b7b82066ad22dcdb6633f/29/apache/Dockerfile)
+-	[`31.0.5-apache`, `31.0-apache`, `31-apache`, `apache`, `stable-apache`, `production-apache`, `31.0.5`, `31.0`, `31`, `latest`, `stable`, `production`](https://github.com/nextcloud/docker/blob/02fc45a96e52b11b07e37a7f3c44ce599d0f0915/31/apache/Dockerfile)
 
--	[`29.0.4-fpm`, `29.0-fpm`, `29-fpm`, `fpm`, `stable-fpm`, `production-fpm`](https://github.com/nextcloud/docker/blob/258cc4ee2d0c4778f67b7b82066ad22dcdb6633f/29/fpm/Dockerfile)
+-	[`31.0.5-fpm`, `31.0-fpm`, `31-fpm`, `fpm`, `stable-fpm`, `production-fpm`](https://github.com/nextcloud/docker/blob/02fc45a96e52b11b07e37a7f3c44ce599d0f0915/31/fpm/Dockerfile)
 
--	[`29.0.4-fpm-alpine`, `29.0-fpm-alpine`, `29-fpm-alpine`, `fpm-alpine`, `stable-fpm-alpine`, `production-fpm-alpine`](https://github.com/nextcloud/docker/blob/258cc4ee2d0c4778f67b7b82066ad22dcdb6633f/29/fpm-alpine/Dockerfile)
+-	[`31.0.5-fpm-alpine`, `31.0-fpm-alpine`, `31-fpm-alpine`, `fpm-alpine`, `stable-fpm-alpine`, `production-fpm-alpine`](https://github.com/nextcloud/docker/blob/02fc45a96e52b11b07e37a7f3c44ce599d0f0915/31/fpm-alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -93,17 +93,17 @@ Now you can access Nextcloud at http://localhost:8080/ from your host system.
 
 ## Using the fpm image
 
-To use the fpm image, you need an additional web server, such as [nginx](https://docs.nextcloud.com/server/latest/admin_manual/installation/nginx.html), that can proxy http-request to the fpm-port of the container. For fpm connection this container exposes port 9000. In most cases, you might want to use another container or your host as proxy. If you use your host you can address your Nextcloud container directly on port 9000. If you use another container, make sure that you add them to the same docker network (via `docker run --network <NAME> ...` or a `docker-compose` file). In both cases you don't want to map the fpm port to your host.
+To use the fpm image, you need an additional web server, such as [nginx](https://docs.nextcloud.com/server/latest/admin_manual/installation/nginx.html), that can proxy http-request to the fpm-port of the container. For fpm connection this container exposes port 9000. In most cases, you might want to use another container or your host as proxy. If you use your host you can address your Nextcloud container directly on port 9000. If you use another container, make sure that you add them to the same docker network (via `docker run --network <NAME> ...` or a `compose.yaml` file). In both cases you don't want to map the fpm port to your host.
 
 ```console
 $ docker run -d nextcloud:fpm
 ```
 
-As the fastCGI-Process is not capable of serving static files (style sheets, images, ...), the webserver needs access to these files. This can be achieved with the `volumes-from` option. You can find more information in the [docker-compose section](#running-this-image-with-docker-compose).
+As the fastCGI-Process is not capable of serving static files (style sheets, images, ...), the webserver needs access to these files. This can be achieved with the `volumes-from` option. You can find more information in the Docker Compose section.
 
 ## Using an external database
 
-By default, this container uses SQLite for data storage but the Nextcloud setup wizard (appears on first run) allows connecting to an existing MySQL/MariaDB or PostgreSQL database. You can also link a database container, e. g. `--link my-mysql:mysql`, and then use `mysql` as the database host on setup. More info is in the docker-compose section.
+By default, this container uses SQLite for data storage but the Nextcloud setup wizard (appears on first run) allows connecting to an existing MySQL/MariaDB or PostgreSQL database. You can also link a database container, e. g. `--link my-mysql:mysql`, and then use `mysql` as the database host on setup. More info is in the Docker Compose section.
 
 ## Persistent data
 
@@ -173,10 +173,10 @@ To use the [Nextcloud command-line interface](https://docs.nextcloud.com/server/
 $ docker exec --user www-data CONTAINER_ID php occ
 ```
 
-or for docker-compose:
+or for `docker compose`:
 
 ```console
-$ docker-compose exec --user www-data app php occ
+$ docker compose exec --user www-data app php occ
 ```
 
 ## Auto configuration via environment variables
@@ -224,7 +224,7 @@ You might want to make sure the htaccess is up to date after each container upda
 
 -	`NEXTCLOUD_INIT_HTACCESS` (not set by default) Set it to true to enable run `occ maintenance:update:htaccess` after container initialization.
 
-If you want to use Redis you have to create a separate [Redis](https://hub.docker.com/_/redis/) container in your setup / in your docker-compose file. To inform Nextcloud about the Redis container, pass in the following parameters:
+If you want to use Redis you have to create a separate [Redis](https://hub.docker.com/_/redis/) container in your setup / in your Compose file. To inform Nextcloud about the Redis container, pass in the following parameters:
 
 -	`REDIS_HOST` (not set by default) Name of Redis container
 -	`REDIS_HOST_PORT` (default: `6379`) Optional port for Redis, only use for external Redis servers that run on non-standard ports.
@@ -341,9 +341,9 @@ Check the [Nexcloud documentation](https://docs.nextcloud.com/server/latest/admi
 
 Keep in mind that once set, removing these environment variables won't remove these values from the configuration file, due to how Nextcloud merges configuration files together.
 
-# Running this image with docker-compose
+# Running this image with Docker Compose
 
-The easiest way to get a fully featured and functional setup is using a `docker-compose` file. There are too many different possibilities to setup your system, so here are only some examples of what you have to look for.
+The easiest way to get a fully featured and functional setup is using a `compose.yaml` file. There are too many different possibilities to setup your system, so here are only some examples of what you have to look for.
 
 At first, make sure you have chosen the right base image (fpm or apache) and added features you wanted (see below). In every case, you would want to add a database container and docker volumes to get easy access to your persistent data. When you want to have your server reachable from the internet, adding HTTPS-encryption is mandatory! See below for more information.
 
@@ -354,8 +354,6 @@ This version will use the apache image and add a mariaDB container. The volumes 
 Make sure to pass in values for `MYSQL_ROOT_PASSWORD` and `MYSQL_PASSWORD` variables before you run this setup.
 
 ```yaml
-version: '2'
-
 volumes:
   nextcloud:
   db:
@@ -389,7 +387,7 @@ services:
       - MYSQL_HOST=db
 ```
 
-Then run `docker-compose up -d`, now you can access Nextcloud at http://localhost:8080/ from your host system.
+Then run `docker compose up -d`, now you can access Nextcloud at http://localhost:8080/ from your host system.
 
 ## Base version - FPM
 
@@ -400,8 +398,6 @@ As this setup does **not include encryption**, it should be run behind a proxy.
 Make sure to pass in values for `MYSQL_ROOT_PASSWORD` and `MYSQL_PASSWORD` variables before you run this setup.
 
 ```yaml
-version: '2'
-
 volumes:
   nextcloud:
   db:
@@ -445,15 +441,13 @@ services:
       - app
 ```
 
-Then run `docker-compose up -d`, now you can access Nextcloud at http://localhost:8080/ from your host system.
+Then run `docker compose up -d`, now you can access Nextcloud at http://localhost:8080/ from your host system.
 
 # Docker Secrets
 
 As an alternative to passing sensitive information via environment variables, `_FILE` may be appended to the previously listed environment variables, causing the initialization script to load the values for those variables from files present in the container. In particular, this can be used to load passwords from Docker secrets stored in `/run/secrets/<secret_name>` files. For example:
 
 ```yaml
-version: '3.2'
-
 services:
   db:
     image: postgres
@@ -527,7 +521,7 @@ In our [examples](https://github.com/nextcloud/docker/tree/master/.examples) sec
 
 # First use
 
-When you first access your Nextcloud, the setup wizard will appear and ask you to choose an administrator account username, password and the database connection. For the database use `db` as host and `nextcloud` as table and user name. Also enter the password you chose in your `docker-compose.yml` file.
+When you first access your Nextcloud, the setup wizard will appear and ask you to choose an administrator account username, password and the database connection. For the database use `db` as host and `nextcloud` as table and user name. Also enter the password you chose in your `compose.yaml` file.
 
 # Update to a newer version
 
@@ -546,11 +540,11 @@ $ docker run <OPTIONS> -d nextcloud
 
 Beware that you have to run the same command with the options that you used to initially start your Nextcloud. That includes volumes, port mapping.
 
-When using docker-compose your compose file takes care of your configuration, so you just have to run:
+When using Docker Compose, your `compose.yaml` file takes care of your configuration, so you just have to run:
 
 ```console
-$ docker-compose pull
-$ docker-compose up -d
+$ docker compose pull
+$ docker compose up -d
 ```
 
 # Adding Features
@@ -565,7 +559,7 @@ RUN ...
 
 The [examples folder](https://github.com/nextcloud/docker/blob/master/.examples) gives a few examples on how to add certain functionalities, like including the cron job, smb-support or imap-authentication.
 
-If you use your own Dockerfile, you need to configure your docker-compose file accordingly. Switch out the `image` option with `build`. You have to specify the path to your Dockerfile. (in the example it's in the same directory next to the docker-compose file)
+If you use your own Dockerfile, you need to configure your `compose.yaml` file accordingly. Switch out the `image` option with `build`. You have to specify the path to your Dockerfile. (in the example it's in the same directory next to the `compose.yaml` file)
 
 ```yaml
   app:
@@ -598,11 +592,11 @@ docker build -t your-name --pull .
 docker run -d your-name
 ```
 
-or for docker-compose:
+Or for Docker Compose:
 
 ```console
-docker-compose build --pull
-docker-compose up -d
+docker compose build --pull
+docker compose up -d
 ```
 
 The `--pull` option tells docker to look for new versions of the base image. Then the build instructions inside your `Dockerfile` are run on top of the new image.
@@ -611,7 +605,7 @@ The `--pull` option tells docker to look for new versions of the base image. The
 
 You're already using Nextcloud and want to switch to docker? Great! Here are some things to look out for:
 
-1.	Define your whole Nextcloud infrastructure in a `docker-compose` file and run it with `docker-compose up -d` to get the base installation, volumes and database. Work from there.
+1.	Define your whole Nextcloud infrastructure in a `compose.yaml` file and run it with `docker compose up -d` to get the base installation, volumes and database. Work from there.
 
 2.	Restore your database from a mysqldump (nextcloud\_db\_1 is the name of your db container)
 
@@ -619,16 +613,16 @@ You're already using Nextcloud and want to switch to docker? Great! Here are som
 
 		```console
 		docker cp ./database.dmp nextcloud_db_1:/dmp
-		docker-compose exec db sh -c "mysql --user USER --password PASSWORD nextcloud < /dmp"
-		docker-compose exec db rm /dmp
+		docker compose exec db sh -c "mysql --user USER --password PASSWORD nextcloud < /dmp"
+		docker compose exec db rm /dmp
 		```
 
 	-	To import from a PostgreSQL dump use to following commands
 
 		```console
 		docker cp ./database.dmp nextcloud_db_1:/dmp
-		docker-compose exec db sh -c "psql -U USER --set ON_ERROR_STOP=on nextcloud < /dmp"
-		docker-compose exec db rm /dmp
+		docker compose exec db sh -c "psql -U USER --set ON_ERROR_STOP=on nextcloud < /dmp"
+		docker compose exec db rm /dmp
 		```
 
 3.	Edit your config.php
@@ -686,11 +680,11 @@ You're already using Nextcloud and want to switch to docker? Great! Here are som
 
 	```console
 	docker cp ./data/ nextcloud_app_1:/var/www/html/
-	docker-compose exec app chown -R www-data:www-data /var/www/html/data
+	docker compose exec app chown -R www-data:www-data /var/www/html/data
 	docker cp ./theming/ nextcloud_app_1:/var/www/html/
-	docker-compose exec app chown -R www-data:www-data /var/www/html/theming
+	docker compose exec app chown -R www-data:www-data /var/www/html/theming
 	docker cp ./config/config.php nextcloud_app_1:/var/www/html/config
-	docker-compose exec app chown -R www-data:www-data /var/www/html/config
+	docker compose exec app chown -R www-data:www-data /var/www/html/config
 	```
 
 	If you want to preserve the metadata of your files like timestamps, copy the data directly on the host to the named volume using plain `cp` like this:
@@ -703,7 +697,7 @@ You're already using Nextcloud and want to switch to docker? Great! Here are som
 
 	```console
 	docker cp ./custom_apps/ nextcloud_data:/var/www/html/
-	docker-compose exec app chown -R www-data:www-data /var/www/html/custom_apps
+	docker compose exec app chown -R www-data:www-data /var/www/html/custom_apps
 	```
 
 # Questions / Issues

@@ -14,13 +14,21 @@ JRE images are available for all versions of Eclipse Temurin but it is recommend
 
 # Can I add my internal CA certificates to the truststore?
 
-Yes! Add your certificates to `/certificates` inside the container (e.g. by using a volume) and set the environment variable `USE_SYSTEM_CA_CERTS` on the container to any value. With Docker CLI this might look like this:
+Yes, it's possible for all image flavors except for Windows-based images. The format of the certificates depends on what the OS of the base image used expects, but PEM format with a `.crt` file extension is a good bet.
+
+You need to put your CA certificates into `/certificates` directory inside the container (e.g. by using a volume) and opt-in into CA certificate processing by setting the environment variable `USE_SYSTEM_CA_CERTS` on the container to any value (if you are overriding the entrypoint script, please make sure you call `/__cacert_entrypoint.sh` to enable the processing). Using Docker CLI this might look like this:
 
 ```console
 $ docker run -v $(pwd)/certs:/certificates/ -e USE_SYSTEM_CA_CERTS=1 %%IMAGE%%:21
 ```
 
-The certificates would get added to the system CA store, which would in turn be converted to Java's truststore. The format of the certificates depends on what the OS of the base image used expects, but PEM format with a `.crt` file extension is a good bet. **Please note**: this feature is currently not available for Windows-based images.
+When run like this, your certificates will get added to both the JVM truststore and to the system CA store (e.g. for use by `curl` and other CLI tools). However, if you are running your containers in a restricted-by-default environment (such as Red Hat OpenShift), there will be some small differences:
+
+-	**Your containers are run with a non-`root` UID**: Since neither the default JVM truststore nor the system CA store can be written to by a non-`root` user, the system CA store will not be updated, while a separate truststore will be provided to the JVM. Your certificates will get added to that truststore and the `JAVA_TOOL_OPTIONS` environment variable will be automatically extended to switch the JVM over to this new truststore. If you are overriding the default entrypoint script of this image, you'll need let the JVM know about the new truststore manually. The path to the new truststore will be exported via `JRE_CACERTS_PATH` environment variable.
+
+-	**Your containers are run with a read-only filesystem**: The same restrictions apply as with running containers with a non-`root` UID. In addition, a writable volume is required at `/tmp` to be able to create the new truststore.
+
+While this feature has been tested in multiple scenarios, there is always a chance of an unexpected edge case. Should you encounter one of these, please open an [issue](https://github.com/adoptium/containers/issues).
 
 # How to use this Image
 
@@ -54,7 +62,7 @@ ENV PATH="${JAVA_HOME}/bin:${PATH}"
 
 ### Creating a JRE using jlink
 
-On OpenJDK 11+, a JRE can be generated using `jlink`, see the following Dockerfile:
+On OpenJDK 21+, a JRE can be generated using `jlink`, see the following Dockerfile:
 
 ```dockerfile
 # Example of custom Java runtime using jlink in a multi-stage container build

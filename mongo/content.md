@@ -32,9 +32,9 @@ $ docker run -it --network some-network --rm %%IMAGE%% mongosh --host some-%%REP
 
 ... where `some-%%REPO%%` is the name of your original `mongo` container.
 
-## %%STACK%%
+## %%COMPOSE%%
 
-Run `docker stack deploy -c stack.yml %%REPO%%` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8081`, `http://localhost:8081`, or `http://host-ip:8081` (as appropriate).
+Run `docker compose up`, wait for it to initialize completely, and visit `http://localhost:8081` or `http://host-ip:8081` (as appropriate).
 
 ## Container shell access and viewing MongoDB logs
 
@@ -62,10 +62,9 @@ Most MongoDB configuration can be set through flags to `mongod`. The entrypoint 
 $ docker run --name some-%%REPO%% -d %%IMAGE%% --serviceExecutor adaptive
 ```
 
-And here is the same with a `docker-compose.yml` file
+And here is the same with a `compose.yaml` file
 
 ```yaml
-version: '3.1'
 services:
   mongo:
     image: %%IMAGE%%

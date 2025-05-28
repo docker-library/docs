@@ -21,9 +21,10 @@ FROM %%IMAGE%%
 COPY static-html-directory /usr/share/nginx/html
 ```
 
-Place this file in the same directory as your directory of content ("static-html-directory"), run `docker build -t some-content-nginx .`, then start your container:
+Place this file in the same directory as your directory of content ("static-html-directory"), then run these commands to build and start your container:
 
 ```console
+$ docker build -t some-content-nginx .
 $ docker run --name some-nginx -d some-content-nginx
 ```
 
@@ -74,7 +75,7 @@ $ docker run --name my-custom-nginx-container -d custom-nginx
 
 Out-of-the-box, %%IMAGE%% doesn't support environment variables inside most configuration blocks. But this image has a function, which will extract environment variables before %%IMAGE%% starts.
 
-Here is an example using docker-compose.yml:
+Here is an example using `compose.yaml`:
 
 ```yaml
 web:
@@ -130,7 +131,7 @@ Images since version 1.9.8 come with `nginx-debug` binary that produces verbose 
 $ docker run --name my-nginx -v /host/path/nginx.conf:/etc/nginx/nginx.conf:ro -d %%IMAGE%% nginx-debug -g 'daemon off;'
 ```
 
-Similar configuration in docker-compose.yml may look like this:
+Similar configuration in `compose.yaml` may look like this:
 
 ```yaml
 web:

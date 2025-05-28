@@ -24,29 +24,29 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.0.0-beta.3`, `4.0-rc`](https://github.com/docker-library/rabbitmq/blob/a1177f4c71c9c3214bd1ec3f653d1dbf91e0d3fb/4.0-rc/ubuntu/Dockerfile)
+-	[`4.1.0`, `4.1`, `4`, `latest`](https://github.com/docker-library/rabbitmq/blob/85ffaf0cfe4310ab046b8ccad93c624c6dffe4bc/4.1/ubuntu/Dockerfile)
 
--	[`4.0.0-beta.3-management`, `4.0-rc-management`](https://github.com/docker-library/rabbitmq/blob/3881658e776314fb145db712981c91c52a3e25b8/4.0-rc/ubuntu/management/Dockerfile)
+-	[`4.1.0-management`, `4.1-management`, `4-management`, `management`](https://github.com/docker-library/rabbitmq/blob/01055a3ed6f0a7a40d4ff1d17d3f0758039e431f/4.1/ubuntu/management/Dockerfile)
 
--	[`4.0.0-beta.3-alpine`, `4.0-rc-alpine`](https://github.com/docker-library/rabbitmq/blob/a1177f4c71c9c3214bd1ec3f653d1dbf91e0d3fb/4.0-rc/alpine/Dockerfile)
+-	[`4.1.0-alpine`, `4.1-alpine`, `4-alpine`, `alpine`](https://github.com/docker-library/rabbitmq/blob/85ffaf0cfe4310ab046b8ccad93c624c6dffe4bc/4.1/alpine/Dockerfile)
 
--	[`4.0.0-beta.3-management-alpine`, `4.0-rc-management-alpine`](https://github.com/docker-library/rabbitmq/blob/3881658e776314fb145db712981c91c52a3e25b8/4.0-rc/alpine/management/Dockerfile)
+-	[`4.1.0-management-alpine`, `4.1-management-alpine`, `4-management-alpine`, `management-alpine`](https://github.com/docker-library/rabbitmq/blob/01055a3ed6f0a7a40d4ff1d17d3f0758039e431f/4.1/alpine/management/Dockerfile)
 
--	[`3.13.6`, `3.13`, `3`, `latest`](https://github.com/docker-library/rabbitmq/blob/753003d979b69971fe7b4a41d36ebd53447ec5e7/3.13/ubuntu/Dockerfile)
+-	[`4.0.9`, `4.0`](https://github.com/docker-library/rabbitmq/blob/101d600e8f6ba9543a7e9dd9e156a2f7972218cf/4.0/ubuntu/Dockerfile)
 
--	[`3.13.6-management`, `3.13-management`, `3-management`, `management`](https://github.com/docker-library/rabbitmq/blob/6cc0f66ec13b06c153a7527c033cf1ad59a97ef3/3.13/ubuntu/management/Dockerfile)
+-	[`4.0.9-management`, `4.0-management`](https://github.com/docker-library/rabbitmq/blob/36e4d246e934a96b1c3a920e398f96434f3fc34c/4.0/ubuntu/management/Dockerfile)
 
--	[`3.13.6-alpine`, `3.13-alpine`, `3-alpine`, `alpine`](https://github.com/docker-library/rabbitmq/blob/753003d979b69971fe7b4a41d36ebd53447ec5e7/3.13/alpine/Dockerfile)
+-	[`4.0.9-alpine`, `4.0-alpine`](https://github.com/docker-library/rabbitmq/blob/101d600e8f6ba9543a7e9dd9e156a2f7972218cf/4.0/alpine/Dockerfile)
 
--	[`3.13.6-management-alpine`, `3.13-management-alpine`, `3-management-alpine`, `management-alpine`](https://github.com/docker-library/rabbitmq/blob/6cc0f66ec13b06c153a7527c033cf1ad59a97ef3/3.13/alpine/management/Dockerfile)
+-	[`4.0.9-management-alpine`, `4.0-management-alpine`](https://github.com/docker-library/rabbitmq/blob/36e4d246e934a96b1c3a920e398f96434f3fc34c/4.0/alpine/management/Dockerfile)
 
--	[`3.12.14`, `3.12`](https://github.com/docker-library/rabbitmq/blob/4714b6a2b184712243839ecca500befce49a66d7/3.12/ubuntu/Dockerfile)
+-	[`3.13.7`, `3.13`, `3`](https://github.com/docker-library/rabbitmq/blob/42f61ae85d877c377e97c892d97ed4a65f1c7809/3.13/ubuntu/Dockerfile)
 
--	[`3.12.14-management`, `3.12-management`](https://github.com/docker-library/rabbitmq/blob/c30652127ae871535b7ec8ecda8046948a52ab79/3.12/ubuntu/management/Dockerfile)
+-	[`3.13.7-management`, `3.13-management`, `3-management`](https://github.com/docker-library/rabbitmq/blob/36e4d246e934a96b1c3a920e398f96434f3fc34c/3.13/ubuntu/management/Dockerfile)
 
--	[`3.12.14-alpine`, `3.12-alpine`](https://github.com/docker-library/rabbitmq/blob/4714b6a2b184712243839ecca500befce49a66d7/3.12/alpine/Dockerfile)
+-	[`3.13.7-alpine`, `3.13-alpine`, `3-alpine`](https://github.com/docker-library/rabbitmq/blob/42f61ae85d877c377e97c892d97ed4a65f1c7809/3.13/alpine/Dockerfile)
 
--	[`3.12.14-management-alpine`, `3.12-management-alpine`](https://github.com/docker-library/rabbitmq/blob/c30652127ae871535b7ec8ecda8046948a52ab79/3.12/alpine/management/Dockerfile)
+-	[`3.13.7-management-alpine`, `3.13-management-alpine`, `3-management-alpine`](https://github.com/docker-library/rabbitmq/blob/36e4d246e934a96b1c3a920e398f96434f3fc34c/3.13/alpine/management/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -157,7 +157,7 @@ For example, you can provide the cookie via a file (such as with [Docker Secrets
 docker service create ... --secret source=my-erlang-cookie,target=/var/lib/rabbitmq/.erlang.cookie ... rabbitmq
 ```
 
-(Note that it will likely also be necessary to specify `uid=XXX,gid=XXX,mode=0600` in order for Erlang in the container to be able to read the cookie file properly. See [Docker's `--secret` documentation for more details](https://docs.docker.com/engine/reference/commandline/service_create/#create-a-service-with-secrets).)
+(Note that it will likely also be necessary to specify `uid=XXX,gid=XXX,mode=0600` in order for Erlang in the container to be able to read the cookie file properly. See [Docker's `--secret` documentation for more details](https://docs.docker.com/reference/cli/docker/service/create/#secret).)
 
 ### Management Plugin
 

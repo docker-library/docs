@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `2024.05`, `bookworm`](https://github.com/Raku/docker/blob/45e8b0ecf019e32d71ab3d6fedef6a8aa09ef472/2024.05/bookworm/Dockerfile)
+-	[`latest`, `2025.02`, `bookworm`](https://github.com/rakudo/docker/blob/02696336f52874a3440ae2fa8f2cbf2a7c6176dd/2025.02/bookworm/Dockerfile)
 
--	[`alpine`, `2024.05-alpine`](https://github.com/Raku/docker/blob/45e8b0ecf019e32d71ab3d6fedef6a8aa09ef472/2024.05/alpine/Dockerfile)
+-	[`alpine`, `2025.02-alpine`](https://github.com/rakudo/docker/blob/02696336f52874a3440ae2fa8f2cbf2a7c6176dd/2025.02/alpine/Dockerfile)
 
 # Quick reference (cont.)
 

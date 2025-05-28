@@ -54,6 +54,6 @@ $ docker run -v /local/path/to/config.local.php:/var/www/html/config.local.php \
         %%IMAGE%%
 ```
 
-%%STACK%%
+%%COMPOSE%%
 
-Run docker stack deploy -c stack.yml %%REPO%% (or docker-compose -f stack.yml up), wait for it to initialize completely, and visit http://swarm-ip:8080, http://localhost:8080, or http://host-ip:8080 (as appropriate).
+Run `docker compose up`, wait for it to initialize completely, and visit `http://localhost:8080` or `http://host-ip:8080` (as appropriate).

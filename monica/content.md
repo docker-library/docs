@@ -30,7 +30,7 @@ docker run --name some-%%REPO%% -d -p 9000:9000 %%IMAGE%%:fpm
 
 ### Using an external database
 
-You'll need to setup an external database. Monica currently support MySQL/MariaDB database. You can also link a database container, e. g. `--link my-mysql:db`, and then use `db` as the database host on setup. More info is in the docker-compose section.
+You'll need to setup an external database. Monica currently support MySQL/MariaDB database. You can also link a database container, e. g. `--link my-mysql:db`, and then use `db` as the database host on setup. More info is in the Docker Compose section.
 
 ### Persistent data storage
 
@@ -52,21 +52,21 @@ Like every Laravel application, the `php artisan` command is very usefull for Mo
 docker exec CONTAINER_ID php artisan COMMAND
 ```
 
-or for docker-compose
+Or for Docker Compose:
 
 ```console
-docker-compose exec %%REPO%% php artisan COMMAND
+docker compose exec %%REPO%% php artisan COMMAND
 ```
 
-where `%%REPO%%` is the name of the service in your `docker-compose.yml` file.
+where `%%REPO%%` is the name of the service in your `compose.yaml` file.
 
 ## Configuration using environment variables
 
 The Monica image will use environment variables to setup the application. See [Monica documentation](https://github.com/monicahq/monica/blob/4.x/.env.example) for common used variables you should setup.
 
-## Running the image with docker-compose
+## Running the image with Docker Compose
 
-See some examples of docker-compose possibilities in the [example section](%%GITHUB-REPO%%/blob/main/.examples).
+See some examples of Docker Compose possibilities in the [example section](%%GITHUB-REPO%%/blob/main/.examples).
 
 ---
 
@@ -76,11 +76,9 @@ This version will use the apache image and add a mysql container. The volumes ar
 
 Make sure to pass in values for `APP_KEY` variable before you run this setup.
 
-1.	Create a `docker-compose.yml` file
+1.	Create a `compose.yaml` file
 
 	```yaml
-	version: "3.9"
-
 	services:
 	  app:
 	    image: monica
@@ -120,7 +118,7 @@ Make sure to pass in values for `APP_KEY` variable before you run this setup.
 3.	Run
 
 	```console
-	docker-compose up -d
+	docker compose up -d
 	```
 
 	Wait until all migrations are done and then access Monica at http://localhost:8080/ from your host system. If this looks ok, add your first user account.
@@ -128,7 +126,7 @@ Make sure to pass in values for `APP_KEY` variable before you run this setup.
 4.	Run this command once:
 
 	```console
-	docker-compose exec app php artisan setup:production
+	docker compose exec app php artisan setup:production
 	```
 
 ### FPM version
@@ -143,13 +141,11 @@ When using FPM image, you will need another container with a webserver to proxy 
 	curl -sSL https://raw.githubusercontent.com/monicahq/docker/main/.examples/full/web/Dockerfile -o web/Dockerfile
 	```
 
-	The `web` container image should be pre-build before each deploy with: `docker-compose build`.
+	The `web` container image should be pre-build before each deploy with: `docker compose build`.
 
-2.	Create a `docker-compose.yml` file
+2.	Create a `compose.yaml` file
 
 	```yaml
-	version: "3.9"
-
 	services:
 	  app:
 	    image: monica:fpm
@@ -197,7 +193,7 @@ When using FPM image, you will need another container with a webserver to proxy 
 4.	Run
 
 	```console
-	docker-compose up -d
+	docker compose up -d
 	```
 
 	Wait until all migrations are done and then access Monica at http://localhost:8080/ from your host system. If this looks ok, add your first user account.
@@ -205,7 +201,7 @@ When using FPM image, you will need another container with a webserver to proxy 
 5.	Run this command once:
 
 	```console
-	docker-compose exec app php artisan setup:production
+	docker compose exec app php artisan setup:production
 	```
 
 ## Make Monica available from the internet
@@ -218,4 +214,4 @@ One way to expose your Monica instance is to use a proxy webserver from your hos
 
 ### Using a proxy webserver container
 
-See some examples of docker-compose possibilities in the [example section](%%GITHUB-REPO%%/blob/main/.examples) to show how to a proxy webserver with ssl capabilities.
+See some examples of Docker Compose possibilities in the [example section](%%GITHUB-REPO%%/blob/main/.examples) to show how to a proxy webserver with ssl capabilities.
