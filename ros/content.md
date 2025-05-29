@@ -134,7 +134,6 @@ rolling-ros-core   489MB
 installer          504MB
 runner             510MB
 rolling            876MB
-cacher             885MB
 builder            941MB
 ```
 
