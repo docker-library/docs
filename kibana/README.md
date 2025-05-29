@@ -28,7 +28,7 @@ WARNING:
 
 -	[`8.17.6`](https://github.com/elastic/dockerfiles/blob/d7216d19313f88d63f43b52df31da2b4ae6ace3c/kibana/Dockerfile)
 
--	[`8.18.1`](https://github.com/elastic/dockerfiles/blob/bba6738fb5c2e6202a324f07fa028aa36bd1716f/kibana/Dockerfile)
+-	[`8.18.2`](https://github.com/elastic/dockerfiles/blob/1224fffeb3ad5be8a373d52d0906a6c70146b27b/kibana/Dockerfile)
 
 -	[`9.0.1`](https://github.com/elastic/dockerfiles/blob/c1767391264142d319c5aebbc7b44ff935ecb40d/kibana/Dockerfile)
 
