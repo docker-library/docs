@@ -24,35 +24,33 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.3-dev0`, `3.3-dev`, `3.3-dev0-bookworm`, `3.3-dev-bookworm`](https://github.com/docker-library/haproxy/blob/f60ffd8842e34ca4d65267b72139c32dc821736b/3.3/Dockerfile)
+-	[`3.3-dev0`, `3.3-dev`, `3.3-dev0-bookworm`, `3.3-dev-bookworm`](https://github.com/docker-library/haproxy/blob/c153740fe581f5c43c6c5571acd00055e49e478d/3.3/Dockerfile)
 
--	[`3.3-dev0-alpine`, `3.3-dev-alpine`, `3.3-dev0-alpine3.21`, `3.3-dev-alpine3.21`](https://github.com/docker-library/haproxy/blob/f60ffd8842e34ca4d65267b72139c32dc821736b/3.3/alpine/Dockerfile)
+-	[`3.3-dev0-alpine`, `3.3-dev-alpine`, `3.3-dev0-alpine3.21`, `3.3-dev-alpine3.21`](https://github.com/docker-library/haproxy/blob/c153740fe581f5c43c6c5571acd00055e49e478d/3.3/alpine/Dockerfile)
 
--	[`3.2.0`, `3.2`, `latest`, `lts`, `3.2.0-bookworm`, `3.2-bookworm`, `bookworm`, `lts-bookworm`](https://github.com/docker-library/haproxy/blob/788f34715b0b1ef626761dcca1a4e996316a9c6e/3.2/Dockerfile)
+-	[`3.2.0`, `3.2`, `latest`, `lts`, `3.2.0-bookworm`, `3.2-bookworm`, `bookworm`, `lts-bookworm`](https://github.com/docker-library/haproxy/blob/c153740fe581f5c43c6c5571acd00055e49e478d/3.2/Dockerfile)
 
--	[`3.2.0-alpine`, `3.2-alpine`, `alpine`, `lts-alpine`, `3.2.0-alpine3.21`, `3.2-alpine3.21`, `alpine3.21`, `lts-alpine3.21`](https://github.com/docker-library/haproxy/blob/788f34715b0b1ef626761dcca1a4e996316a9c6e/3.2/alpine/Dockerfile)
+-	[`3.2.0-alpine`, `3.2-alpine`, `alpine`, `lts-alpine`, `3.2.0-alpine3.21`, `3.2-alpine3.21`, `alpine3.21`, `lts-alpine3.21`](https://github.com/docker-library/haproxy/blob/c153740fe581f5c43c6c5571acd00055e49e478d/3.2/alpine/Dockerfile)
 
--	[`3.1.7`, `3.1`, `3.1.7-bookworm`, `3.1-bookworm`](https://github.com/docker-library/haproxy/blob/923a92620c9c0277c5d52f3c8734fefe612cadfd/3.1/Dockerfile)
+-	[`3.1.7`, `3.1`, `3.1.7-bookworm`, `3.1-bookworm`](https://github.com/docker-library/haproxy/blob/c153740fe581f5c43c6c5571acd00055e49e478d/3.1/Dockerfile)
 
--	[`3.1.7-alpine`, `3.1-alpine`, `3.1.7-alpine3.21`, `3.1-alpine3.21`](https://github.com/docker-library/haproxy/blob/923a92620c9c0277c5d52f3c8734fefe612cadfd/3.1/alpine/Dockerfile)
+-	[`3.1.7-alpine`, `3.1-alpine`, `3.1.7-alpine3.21`, `3.1-alpine3.21`](https://github.com/docker-library/haproxy/blob/c153740fe581f5c43c6c5571acd00055e49e478d/3.1/alpine/Dockerfile)
 
--	[`3.0.10`, `3.0`, `3.0.10-bookworm`, `3.0-bookworm`](https://github.com/docker-library/haproxy/blob/dccf0f4e3aa2c74e30a89954cba69305e52edf7f/3.0/Dockerfile)
+-	[`3.0.10`, `3.0`, `3.0.10-bookworm`, `3.0-bookworm`](https://github.com/docker-library/haproxy/blob/c153740fe581f5c43c6c5571acd00055e49e478d/3.0/Dockerfile)
 
--	[`3.0.10-alpine`, `3.0-alpine`, `3.0.10-alpine3.21`, `3.0-alpine3.21`](https://github.com/docker-library/haproxy/blob/dccf0f4e3aa2c74e30a89954cba69305e52edf7f/3.0/alpine/Dockerfile)
+-	[`3.0.10-alpine`, `3.0-alpine`, `3.0.10-alpine3.21`, `3.0-alpine3.21`](https://github.com/docker-library/haproxy/blob/c153740fe581f5c43c6c5571acd00055e49e478d/3.0/alpine/Dockerfile)
 
--	[`2.8.15`, `2.8`, `2.8.15-bookworm`, `2.8-bookworm`](https://github.com/docker-library/haproxy/blob/82d8d0e917b2dbba726f6cf853688d1bb6eed5fc/2.8/Dockerfile)
+-	[`2.8.15`, `2.8`, `2.8.15-bookworm`, `2.8-bookworm`](https://github.com/docker-library/haproxy/blob/c153740fe581f5c43c6c5571acd00055e49e478d/2.8/Dockerfile)
 
--	[`2.8.15-alpine`, `2.8-alpine`, `2.8.15-alpine3.21`, `2.8-alpine3.21`](https://github.com/docker-library/haproxy/blob/82d8d0e917b2dbba726f6cf853688d1bb6eed5fc/2.8/alpine/Dockerfile)
+-	[`2.8.15-alpine`, `2.8-alpine`, `2.8.15-alpine3.21`, `2.8-alpine3.21`](https://github.com/docker-library/haproxy/blob/c153740fe581f5c43c6c5571acd00055e49e478d/2.8/alpine/Dockerfile)
 
--	[`2.6.22`, `2.6`, `2.6.22-bookworm`, `2.6-bookworm`](https://github.com/docker-library/haproxy/blob/b2272eca1be0415af128438e91ffb721d758eef7/2.6/Dockerfile)
+-	[`2.6.22`, `2.6`, `2.6.22-bookworm`, `2.6-bookworm`](https://github.com/docker-library/haproxy/blob/c153740fe581f5c43c6c5571acd00055e49e478d/2.6/Dockerfile)
 
--	[`2.6.22-alpine`, `2.6-alpine`, `2.6.22-alpine3.21`, `2.6-alpine3.21`](https://github.com/docker-library/haproxy/blob/b2272eca1be0415af128438e91ffb721d758eef7/2.6/alpine/Dockerfile)
+-	[`2.6.22-alpine`, `2.6-alpine`, `2.6.22-alpine3.21`, `2.6-alpine3.21`](https://github.com/docker-library/haproxy/blob/c153740fe581f5c43c6c5571acd00055e49e478d/2.6/alpine/Dockerfile)
 
--	[`2.4.29`, `2.4`, `2.4.29-bookworm`, `2.4-bookworm`](https://github.com/docker-library/haproxy/blob/d5e3fa1fab9349226162c5a160ed667d0f62e688/2.4/Dockerfile)
+-	[`2.4.29`, `2.4`, `2.4.29-bookworm`, `2.4-bookworm`](https://github.com/docker-library/haproxy/blob/c153740fe581f5c43c6c5571acd00055e49e478d/2.4/Dockerfile)
 
--	[`2.4.29-alpine`, `2.4-alpine`, `2.4.29-alpine3.21`, `2.4-alpine3.21`](https://github.com/docker-library/haproxy/blob/d5e3fa1fab9349226162c5a160ed667d0f62e688/2.4/alpine/Dockerfile)
-
--	[`2.2.34`, `2.2`, `2.2.34-bullseye`, `2.2-bullseye`](https://github.com/docker-library/haproxy/blob/fcee7759df612f1047d4b41b42c9f628dac925bf/2.2/Dockerfile)
+-	[`2.4.29-alpine`, `2.4-alpine`, `2.4.29-alpine3.21`, `2.4-alpine3.21`](https://github.com/docker-library/haproxy/blob/c153740fe581f5c43c6c5571acd00055e49e478d/2.4/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -144,7 +142,7 @@ The `haproxy` images come in many flavors, each designed for a specific use case
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like bookworm or bullseye in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+Some of these tags may have names like bookworm in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 ## `haproxy:<version>-alpine`
 
