@@ -28,7 +28,7 @@ WARNING:
 
 -	[`4.1.9`, `4.1`, `4`, `4.1.9-jammy`, `4.1-jammy`, `4-jammy`](https://github.com/docker-library/cassandra/blob/8b125f8e4cb082768e6d299130722ed3547e2206/4.1/Dockerfile)
 
--	[`4.0.17`, `4.0`, `4.0.17-jammy`, `4.0-jammy`](https://github.com/docker-library/cassandra/blob/4acdd8cbbc6f21083e9b8176452a2728fa08f2c7/4.0/Dockerfile)
+-	[`4.0.18`, `4.0`, `4.0.18-jammy`, `4.0-jammy`](https://github.com/docker-library/cassandra/blob/b4b0579f68b8dfbffb61a438c8aaad14fccf44c4/4.0/Dockerfile)
 
 -	[`3.11.19`, `3.11`, `3`, `3.11.19-jammy`, `3.11-jammy`, `3-jammy`](https://github.com/docker-library/cassandra/blob/4acdd8cbbc6f21083e9b8176452a2728fa08f2c7/3.11/Dockerfile)
 
