@@ -62,12 +62,11 @@ repositories:
 EOF
 
 # update package cache
-RUN rm /etc/apt/apt.conf.d/docker-clean && apt-get update && \
-    rosdep update --rosdistro $ROS_DISTRO && \
-    cat <<EOF > /etc/apt/apt.conf.d/docker-no-recommends
+RUN cat <<EOF > /etc/apt/apt.conf.d/docker-clean
 APT::Install-Recommends "false";
 APT::Install-Suggests "false";
-EOF
+EOF && apt-get update && \
+    rosdep update --rosdistro $ROS_DISTRO
 
 # derive build/exec dependencies
 RUN bash -e <<'EOF'
