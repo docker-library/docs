@@ -127,6 +127,17 @@ RUN sed --in-place --expression \
 CMD ["ros2", "launch", "demo_nodes_cpp", "talker_listener_launch.py"]
 ```
 
+```console
+$ docker image ls ros --format "table {{.Tag}}\t{{.Size}}"
+TAG                SIZE
+rolling-ros-core   489MB
+installer          504MB
+runner             510MB
+rolling            876MB
+cacher             885MB
+builder            941MB
+```
+
 The example above starts by using [`vcstool`](https://github.com/dirk-thomas/vcstool) to clone source repos of interest into the cacher stage. One could similarly `COPY` code from the local build context into the source directory as well. Package manifest files are then cached in a temporary directory where the following builder stage may copy from to install necessary dependencies with [`rosdep`](https://github.com/ros-infrastructure/rosdep). This is done prior to copying the rest of the source files to preserve the multi-stage build cache, given unaltered manifests do not alter declared dependencies, saving time and bandwidth. The overlay is then built using [`colcon`](https://colcon.readthedocs.io/en/released/), the entrypoint updated to source the workspace, and the default command set to launch the demo.
 
 Note: `--from-paths` and `--packages-select` are set here as so to only install the dependencies and build for the demo C++ and Python packages, among many in the demo git repo that was cloned. To install the dependencies and build all the packages in the source workspace, merely change the scope by setting `--from-paths src/` and dropping the `--packages-select` arguments.
