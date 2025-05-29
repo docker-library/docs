@@ -68,10 +68,10 @@ RUN --mount=type=cache,sharing=locked,target=/var/cache/apt \
 
 # derive build/exec dependencies
 RUN bash -e <<'EOF'
-declare -A dep_types=(
+declare -A types=(
   [exec]="--dependency-types=exec"
   [build]="")
-for type in "${!dep_types[@]}"; do
+for type in "${!types[@]}"; do
   rosdep install -y \
     --from-paths \
       ros2/demos/demo_nodes_cpp \
@@ -79,7 +79,7 @@ for type in "${!dep_types[@]}"; do
     --ignore-src \
     --reinstall \
     --simulate \
-    ${dep_types[$type]} \
+    ${types[$type]} \
     | grep 'apt-get install' \
     | awk '{gsub(/'\''/,"",$4); print $4}' \
     | sort -u > /tmp/${type}_debs.txt
