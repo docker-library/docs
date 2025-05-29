@@ -80,8 +80,9 @@ for type in "${!dep_types[@]}"; do
     --reinstall \
     --simulate \
     ${dep_types[$type]} \
-    | grep 'apt-get install' | awk -F' ' '{print $4}' \
-    | sed "s/'//g" | sort > /tmp/${type}_debs.txt
+    | grep 'apt-get install' \
+    | awk '{gsub(/'\''/,"",$4); print $4}' \
+    | sort -u > /tmp/${type}_debs.txt
 done
 EOF
 
