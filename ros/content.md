@@ -52,12 +52,11 @@ FROM $FROM_IMAGE AS cacher
 ARG OVERLAY_WS
 
 # update package cache
-RUN cat <<EOF > /etc/apt/apt.conf.d/docker-clean
+RUN rosdep update --rosdistro $ROS_DISTRO && \
+    cat <<EOF > /etc/apt/apt.conf.d/docker-clean && apt-get update
 APT::Install-Recommends "false";
 APT::Install-Suggests "false";
 EOF
-RUN apt-get update && \
-  rosdep update --rosdistro $ROS_DISTRO
 
 # clone overlay source
 WORKDIR $OVERLAY_WS/src
