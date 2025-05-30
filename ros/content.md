@@ -28,8 +28,8 @@ CMD ["ros2", "launch", "demo_nodes_cpp", "talker_listener_launch.py"]
 Note: all ROS images include a default entrypoint that sources the ROS environment setup before executing the configured command, in this case the demo packages launch file. You can then build and run the Docker image like so:
 
 ```console
-$ docker build -t my/ros:app .
-$ docker run -it --rm my/ros:app
+$ docker build -t my/ros:installer .
+$ docker run -it --rm my/ros:installer
 [INFO] [launch]: process[talker-1]: started with pid [813]
 [INFO] [launch]: process[listener-2]: started with pid [814]
 [INFO] [talker]: Publishing: 'Hello World: 1'
@@ -146,17 +146,21 @@ The example above uses consists of three sequential stages. The `cacher` stage f
   - Builds and installs for just selected packages amongst workspace
   - Only workspace install artifacts are copied into final layers
 
-For more advance examples such as daisy chaining multiple overlay workspaces to improve caching of docker image build layers, using tools such as ccache to accelerate compilation with colcon, or using buildkit to save build time and bandwidth even when dependencies change, the project `Dockerfile`s in the [Navigation2](https://github.com/ros-planning/navigation2) repo are excellent resources.
+For comparison, the resulting `runner` image is similar in size to the earlier `installer` example. This allows you to develop and distribute custom ROS packages without significantly increasing image size compared to pre-built Debian installations:
 
 ```console
+$ docker image ls my/ros --format "table {{.Tag}}\t{{.Size}}"
+TAG                SIZE
+installer          504MB
+runner             510MB
+builder            941MB
 $ docker image ls ros --format "table {{.Tag}}\t{{.Size}}"
 TAG                SIZE
 rolling-ros-core   489MB
-installer          504MB
-runner             510MB
 rolling            876MB
-builder            941MB
 ```
+
+For more advance examples such as daisy chaining multiple overlay workspaces to improve caching of docker image build layers, using tools such as ccache to accelerate compilation with colcon, or using buildkit to save build time and bandwidth even when dependencies change, the project `Dockerfile`s in the [Navigation2](https://github.com/ros-planning/navigation2) repo are excellent resources.
 
 ## Deployment use cases
 
