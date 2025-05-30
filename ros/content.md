@@ -55,8 +55,9 @@ ARG OVERLAY_WS
 RUN cat <<EOF > /etc/apt/apt.conf.d/docker-clean
 APT::Install-Recommends "false";
 APT::Install-Suggests "false";
-EOF && apt-get update && \
-    rosdep update --rosdistro $ROS_DISTRO
+EOF
+RUN apt-get update && \
+  rosdep update --rosdistro $ROS_DISTRO
 
 # clone overlay source
 WORKDIR $OVERLAY_WS/src
