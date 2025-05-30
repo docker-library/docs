@@ -131,6 +131,21 @@ RUN sed --in-place --expression \
 CMD ["ros2", "launch", "demo_nodes_cpp", "talker_listener_launch.py"]
 ```
 
+The example above uses consists of three sequential stages. The `cacher` stage first uses [`vcstool`](https://github.com/dirk-thomas/vcstool) to clone a demo repo into the workspace source directory, updates the apt lists and ROS index, and derives build and runtime dependencies sets using [`rosdep`](https://docs.ros.org/en/rolling/Tutorials/Intermediate/Rosdep.html). The `builder` stage apt installs the derived build dependencies, sources the ROS install underlay, and compiles the source via release mode using [`colcon`](https://docs.ros.org/en/rolling/Tutorials/Beginner-Client-Libraries/Colcon-Tutorial.html). Finally, `runner` stage apt installs only runtime dependencies, copies the compiled workspace artifacts, and sets up the environment to launch the demo. Note the example consists of several subtle optimizations:
+
+- colcon 
+  - build cache if deps are unchanged
+  - build and install select packages
+- Caching apt and rosdep
+  - IO download
+  - synchronizing apt lists
+- multi-state parallelization
+- Final Image Size
+
+example uses the [`--mount`](https://docs.docker.com/engine/reference/builder/#run---mount) option to cache apt lists
+
+For more advance examples such as daisy chaining multiple overlay workspaces to improve caching of docker image build layers, using tools such as ccache to accelerate compilation with colcon, or using buildkit to save build time and bandwidth even when dependencies change, the project `Dockerfile`s in the [Navigation2](https://github.com/ros-planning/navigation2) repo are excellent resources.
+
 ```console
 $ docker image ls ros --format "table {{.Tag}}\t{{.Size}}"
 TAG                SIZE
@@ -140,12 +155,6 @@ runner             510MB
 rolling            876MB
 builder            941MB
 ```
-
-The example above starts by using [`vcstool`](https://github.com/dirk-thomas/vcstool) to clone source repos of interest into the cacher stage. One could similarly `COPY` code from the local build context into the source directory as well. Package manifest files are then cached in a temporary directory where the following builder stage may copy from to install necessary dependencies with [`rosdep`](https://github.com/ros-infrastructure/rosdep). This is done prior to copying the rest of the source files to preserve the multi-stage build cache, given unaltered manifests do not alter declared dependencies, saving time and bandwidth. The overlay is then built using [`colcon`](https://colcon.readthedocs.io/en/released/), the entrypoint updated to source the workspace, and the default command set to launch the demo.
-
-Note: `--from-paths` and `--packages-select` are set here as so to only install the dependencies and build for the demo C++ and Python packages, among many in the demo git repo that was cloned. To install the dependencies and build all the packages in the source workspace, merely change the scope by setting `--from-paths src/` and dropping the `--packages-select` arguments.
-
-For more advance examples such as daisy chaining multiple overlay workspaces to improve caching of docker image build layers, using tools such as ccache to accelerate compilation with colcon, or using buildkit to save build time and bandwidth even when dependencies change, the project `Dockerfile`s in the [Navigation2](https://github.com/ros-planning/navigation2) repo are excellent resources.
 
 ## Deployment use cases
 
