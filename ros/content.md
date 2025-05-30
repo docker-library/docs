@@ -51,22 +51,22 @@ ARG OVERLAY_WS=/opt/ros/overlay_ws
 FROM $FROM_IMAGE AS cacher
 ARG OVERLAY_WS
 
-# clone overlay source
-WORKDIR $OVERLAY_WS/src
-RUN cat <<EOF | vcs import . 
-repositories:
-  ros2/demos:
-    type: git
-    url: https://github.com/ros2/demos.git
-    version: ${ROS_DISTRO}
-EOF
-
 # update package cache
 RUN cat <<EOF > /etc/apt/apt.conf.d/docker-clean
 APT::Install-Recommends "false";
 APT::Install-Suggests "false";
 EOF && apt-get update && \
     rosdep update --rosdistro $ROS_DISTRO
+
+# clone overlay source
+WORKDIR $OVERLAY_WS/src
+RUN cat <<EOF | vcs import .
+repositories:
+  ros2/demos:
+    type: git
+    url: https://github.com/ros2/demos.git
+    version: ${ROS_DISTRO}
+EOF
 
 # derive build/exec dependencies
 RUN bash -e <<'EOF'
@@ -131,7 +131,7 @@ RUN sed --in-place --expression \
 CMD ["ros2", "launch", "demo_nodes_cpp", "talker_listener_launch.py"]
 ```
 
-The example above uses consists of three sequential stages. The `cacher` stage first uses [`vcstool`](https://github.com/dirk-thomas/vcstool) to clone a demo repo into the workspace source directory, updates the apt lists and ROS index, and derives build and runtime dependencies sets using [`rosdep`](https://docs.ros.org/en/rolling/Tutorials/Intermediate/Rosdep.html). The `builder` stage apt installs the derived build dependencies, sources the ROS install underlay, and compiles the source via release mode using [`colcon`](https://docs.ros.org/en/rolling/Tutorials/Beginner-Client-Libraries/Colcon-Tutorial.html). Finally, `runner` stage apt installs only runtime dependencies, copies the compiled workspace artifacts, and sets up the environment to launch the demo. Note the example consists of several subtle optimizations:
+The example above uses consists of three sequential stages. The `cacher` stage first updates the apt lists and ROS index, uses [`vcstool`](https://github.com/dirk-thomas/vcstool) to clone a demo repo into the workspace source directory, and derives build and runtime dependencies sets using [`rosdep`](https://docs.ros.org/en/rolling/Tutorials/Intermediate/Rosdep.html). The `builder` stage apt installs the derived build dependencies, sources the ROS install underlay, and compiles the source via release mode using [`colcon`](https://docs.ros.org/en/rolling/Tutorials/Beginner-Client-Libraries/Colcon-Tutorial.html). Finally, `runner` stage apt installs only runtime dependencies, copies the compiled workspace artifacts, and sets up the environment to launch the demo. Note the example consists of several subtle optimizations:
 
 - colcon 
   - build cache if deps are unchanged
