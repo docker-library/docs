@@ -24,17 +24,17 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.0.1`, `8.0`, `8`, `8.0.1-bookworm`, `8.0-bookworm`, `8-bookworm`, `latest`, `bookworm`](https://github.com/redis/docker-library-redis/blob/fe864e383ae7c5c891a694f9e0c16f8459a62234/debian/Dockerfile)
+-	[`8.0.2`, `8.0`, `8`, `8.0.2-bookworm`, `8.0-bookworm`, `8-bookworm`, `latest`, `bookworm`](https://github.com/redis/docker-library-redis/blob/5151eacdaf46f588f330c2e45fbed7fa0a7c192e/debian/Dockerfile)
 
--	[`8.0.1-alpine`, `8.0-alpine`, `8-alpine`, `8.0.1-alpine3.21`, `8.0-alpine3.21`, `8-alpine3.21`, `alpine`, `alpine3.21`](https://github.com/redis/docker-library-redis/blob/fe864e383ae7c5c891a694f9e0c16f8459a62234/alpine/Dockerfile)
+-	[`8.0.2-alpine`, `8.0-alpine`, `8-alpine`, `8.0.2-alpine3.21`, `8.0-alpine3.21`, `8-alpine3.21`, `alpine`, `alpine3.21`](https://github.com/redis/docker-library-redis/blob/5151eacdaf46f588f330c2e45fbed7fa0a7c192e/alpine/Dockerfile)
 
--	[`7.4.3`, `7.4`, `7`, `7.4.3-bookworm`, `7.4-bookworm`, `7-bookworm`](https://github.com/redis/docker-library-redis/blob/27cd071c3e9d903a19c79577ddb82fb322ef5ed6/7.4/debian/Dockerfile)
+-	[`7.4.4`, `7.4`, `7`, `7.4.4-bookworm`, `7.4-bookworm`, `7-bookworm`](https://github.com/redis/docker-library-redis/blob/7eaf5cd7042aee7a3f9049d91e48c647e2422de5/7.4/debian/Dockerfile)
 
--	[`7.4.3-alpine`, `7.4-alpine`, `7-alpine`, `7.4.3-alpine3.21`, `7.4-alpine3.21`, `7-alpine3.21`](https://github.com/redis/docker-library-redis/blob/27cd071c3e9d903a19c79577ddb82fb322ef5ed6/7.4/alpine/Dockerfile)
+-	[`7.4.4-alpine`, `7.4-alpine`, `7-alpine`, `7.4.4-alpine3.21`, `7.4-alpine3.21`, `7-alpine3.21`](https://github.com/redis/docker-library-redis/blob/7eaf5cd7042aee7a3f9049d91e48c647e2422de5/7.4/alpine/Dockerfile)
 
--	[`7.2.8`, `7.2`, `7.2.8-bookworm`, `7.2-bookworm`](https://github.com/redis/docker-library-redis/blob/27cd071c3e9d903a19c79577ddb82fb322ef5ed6/7.2/debian/Dockerfile)
+-	[`7.2.9`, `7.2`, `7.2.9-bookworm`, `7.2-bookworm`](https://github.com/redis/docker-library-redis/blob/7eaf5cd7042aee7a3f9049d91e48c647e2422de5/7.2/debian/Dockerfile)
 
--	[`7.2.8-alpine`, `7.2-alpine`, `7.2.8-alpine3.21`, `7.2-alpine3.21`](https://github.com/redis/docker-library-redis/blob/27cd071c3e9d903a19c79577ddb82fb322ef5ed6/7.2/alpine/Dockerfile)
+-	[`7.2.9-alpine`, `7.2-alpine`, `7.2.9-alpine3.21`, `7.2-alpine3.21`](https://github.com/redis/docker-library-redis/blob/7eaf5cd7042aee7a3f9049d91e48c647e2422de5/7.2/alpine/Dockerfile)
 
 -	[`6.2.18`, `6.2`, `6`, `6.2.18-bookworm`, `6.2-bookworm`, `6-bookworm`](https://github.com/redis/docker-library-redis/blob/27cd071c3e9d903a19c79577ddb82fb322ef5ed6/6.2/debian/Dockerfile)
 
