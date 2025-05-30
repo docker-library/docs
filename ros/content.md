@@ -133,18 +133,18 @@ CMD ["ros2", "launch", "demo_nodes_cpp", "talker_listener_launch.py"]
 
 The example above uses consists of three sequential stages. The `cacher` stage first updates the apt lists and ROS index, uses [`vcstool`](https://github.com/dirk-thomas/vcstool) to clone a demo repo into the workspace source directory, and derives build and runtime dependencies sets using [`rosdep`](https://docs.ros.org/en/rolling/Tutorials/Intermediate/Rosdep.html). The `builder` stage apt installs the derived build dependencies, sources the ROS install underlay, and compiles the source via release mode using [`colcon`](https://docs.ros.org/en/rolling/Tutorials/Beginner-Client-Libraries/Colcon-Tutorial.html). Finally, `runner` stage apt installs only runtime dependencies, copies the compiled workspace artifacts, and sets up the environment to launch the demo. Note the example consists of several subtle optimizations:
 
-- Multi Stage Build
-  - Dependency derivation, compilation, and runtime setup are partitioned
-  - Maximums cache retention despite package source or build/runtime changes
-  - Greater concurrency, e.g: colcon build while runtime apt instals
-- Persistent Cache Propagation
-  - Use of [`--mount`](https://docs.docker.com/engine/reference/builder/#run---mount) to cache temp data without bloating layers
-  - Maintain temporally consistent apt lists between parallel stages
-  - Avoid needless network IO between stages or across docker rebuilds
-- Minimal Image Size
-  - Final stage builds from `ros-core` for smallest runtime image
-  - Builds and installs for just selected packages amongst workspace
-  - Only workspace install artifacts are copied into final layers
+-	Multi Stage Build
+	-	Dependency derivation, compilation, and runtime setup are partitioned
+	-	Maximums cache retention despite package source or build/runtime changes
+	-	Greater concurrency, e.g: colcon build while runtime apt instals
+-	Persistent Cache Propagation
+	-	Use of [`--mount`](https://docs.docker.com/engine/reference/builder/#run---mount) to cache temp data without bloating layers
+	-	Maintain temporally consistent apt lists between parallel stages
+	-	Avoid needless network IO between stages or across docker rebuilds
+-	Minimal Image Size
+	-	Final stage builds from `ros-core` for smallest runtime image
+	-	Builds and installs for just selected packages amongst workspace
+	-	Only workspace install artifacts are copied into final layers
 
 For comparison, the resulting `runner` image is similar in size to the earlier `installer` example. This allows you to develop and distribute custom ROS packages without significantly increasing image size compared to pre-built Debian installations:
 
