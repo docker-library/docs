@@ -26,7 +26,7 @@ WARNING:
 
 -	[`1.4.5`, `1.4`, `1`, `latest`, `1.4.5-bookworm`, `1.4-bookworm`, `1-bookworm`, `bookworm`](https://github.com/jessfraz/irssi/blob/b8ea417aaa1a29a6003756627d748450a5bf6abe/debian/Dockerfile)
 
--	[`1.4.5-alpine`, `1.4-alpine`, `1-alpine`, `alpine`, `1.4.5-alpine3.21`, `1.4-alpine3.21`, `1-alpine3.21`, `alpine3.21`](https://github.com/jessfraz/irssi/blob/1581d0c09544a0bd8de42ba3d185956be6a9935c/alpine/Dockerfile)
+-	[`1.4.5-alpine`, `1.4-alpine`, `1-alpine`, `alpine`, `1.4.5-alpine3.22`, `1.4-alpine3.22`, `1-alpine3.22`, `alpine3.22`](https://github.com/jessfraz/irssi/blob/48233da7bca13e68f9792da75119fe595f6192c9/alpine/Dockerfile)
 
 # Quick reference (cont.)
 

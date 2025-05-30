@@ -34,7 +34,7 @@ WARNING:
 	[https://github.com/docker-library/memcached/issues](https://github.com/docker-library/memcached/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/memcached/), [`arm32v5`](https://hub.docker.com/r/arm32v5/memcached/), [`arm32v6`](https://hub.docker.com/r/arm32v6/memcached/), [`arm32v7`](https://hub.docker.com/r/arm32v7/memcached/), [`arm64v8`](https://hub.docker.com/r/arm64v8/memcached/), [`i386`](https://hub.docker.com/r/i386/memcached/), [`mips64le`](https://hub.docker.com/r/mips64le/memcached/), [`ppc64le`](https://hub.docker.com/r/ppc64le/memcached/), [`riscv64`](https://hub.docker.com/r/riscv64/memcached/), [`s390x`](https://hub.docker.com/r/s390x/memcached/)
+	[`amd64`](https://hub.docker.com/r/amd64/memcached/), [`arm32v5`](https://hub.docker.com/r/arm32v5/memcached/), [`arm32v7`](https://hub.docker.com/r/arm32v7/memcached/), [`arm64v8`](https://hub.docker.com/r/arm64v8/memcached/), [`i386`](https://hub.docker.com/r/i386/memcached/), [`mips64le`](https://hub.docker.com/r/mips64le/memcached/), [`ppc64le`](https://hub.docker.com/r/ppc64le/memcached/), [`riscv64`](https://hub.docker.com/r/riscv64/memcached/), [`s390x`](https://hub.docker.com/r/s390x/memcached/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/memcached/` directory](https://github.com/docker-library/repo-info/blob/master/repos/memcached) ([history](https://github.com/docker-library/repo-info/commits/master/repos/memcached))  
