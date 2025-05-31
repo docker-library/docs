@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `amd64` builds of [the `gradle` official image](https://hub.docker.com/_/gradle) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -136,6 +138,8 @@ WARNING:
 
 -	[`6.9.4-jdk8-corretto`, `6.9-jdk8-corretto`, `6-jdk8-corretto`, `6.9.4-jdk8-corretto-al2023`, `6.9-jdk8-corretto-al2023`, `6-jdk8-corretto-al2023`](https://github.com/keeganwitt/docker-gradle/blob/f1737d15cd490d9878537f592ce8e870e06b99bc/jdk8-corretto/Dockerfile)
 
+[![amd64/gradle build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/amd64/job/gradle.svg?label=amd64/gradle%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/gradle/)
+
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
@@ -167,7 +171,7 @@ WARNING:
 
 Run this from the directory of the Gradle project you want to build.
 
-`docker run --rm -u gradle -v "$PWD":/home/gradle/project -w /home/gradle/project gradle gradle <gradle-task>`
+`docker run --rm -u gradle -v "$PWD":/home/gradle/project -w /home/gradle/project amd64/gradle gradle <gradle-task>`
 
 Note the above command runs using uid/gid 1000 (user *gradle*) to avoid running as root.
 
@@ -179,15 +183,15 @@ Java 21 does not currently support build customizations using Kotlin (such as us
 
 # Image Variants
 
-The `gradle` images come in many flavors, each designed for a specific use case.
+The `amd64/gradle` images come in many flavors, each designed for a specific use case.
 
-## `gradle:<version>`
+## `amd64/gradle:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
 Some of these tags may have names like focal, jammy, or noble in them. These are the suite code names for releases of [Ubuntu](https://wiki.ubuntu.com/Releases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Ubuntu.
 
-## `gradle:<version>-alpine`
+## `amd64/gradle:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 

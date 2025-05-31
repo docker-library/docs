@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `amd64` builds of [the `sapmachine` official image](https://hub.docker.com/_/sapmachine) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -132,6 +134,8 @@ WARNING:
 
 -	[`11-jre-headless-ubuntu-focal`, `11-jre-headless-ubuntu-20.04`, `11.0.27-jre-headless-ubuntu-focal`, `11.0.27-jre-headless-ubuntu-20.04`](https://github.com/SAP/SapMachine-infrastructure/blob/b56fec3b73cca3045d10f608837dcc1d690123db/dockerfiles/11/ubuntu/20_04/jre-headless/Dockerfile)
 
+[![amd64/sapmachine build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/amd64/job/sapmachine.svg?label=amd64/sapmachine%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/sapmachine/)
+
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
@@ -168,14 +172,14 @@ Java and all Java-based trademarks and logos are trademarks or registered tradem
 You can pull and test the image with the following commands:
 
 ```console
-docker pull sapmachine:latest
-docker run -it sapmachine:latest java -version
+docker pull amd64/sapmachine:latest
+docker run -it amd64/sapmachine:latest java -version
 ```
 
 You can also use the SapMachine image as a base image to run your own jar file:
 
 ```dockerfile
-FROM sapmachine:latest
+FROM amd64/sapmachine:latest
 RUN mkdir /opt/myapp
 COPY myapp.jar /opt/myapp
 CMD ["java", "-jar", "/opt/myapp/myapp.jar"]
@@ -190,15 +194,15 @@ docker run -it --rm myapp
 
 # Image Variants
 
-The `sapmachine` images come in many flavors, each designed for a specific use case.
+The `amd64/sapmachine` images come in many flavors, each designed for a specific use case.
 
-## `sapmachine:<version>`
+## `amd64/sapmachine:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
 Some of these tags may have names like focal, jammy, or noble in them. These are the suite code names for releases of [Ubuntu](https://wiki.ubuntu.com/Releases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Ubuntu.
 
-## `sapmachine:<version>-alpine`
+## `amd64/sapmachine:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
