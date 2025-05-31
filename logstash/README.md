@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v6` builds of [the `logstash` official image](https://hub.docker.com/_/logstash) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,13 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.17.28`](https://github.com/elastic/dockerfiles/blob/2ef7e0a0be5abd21cb38a39c3cce65d5278ebfee/logstash/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v6` ARCHITECTURE
 
--	[`8.17.6`](https://github.com/elastic/dockerfiles/blob/d7216d19313f88d63f43b52df31da2b4ae6ace3c/logstash/Dockerfile)
-
--	[`8.18.2`](https://github.com/elastic/dockerfiles/blob/1224fffeb3ad5be8a373d52d0906a6c70146b27b/logstash/Dockerfile)
-
--	[`9.0.1`](https://github.com/elastic/dockerfiles/blob/c1767391264142d319c5aebbc7b44ff935ecb40d/logstash/Dockerfile)
+[![arm32v6/logstash build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v6/job/logstash.svg?label=arm32v6/logstash%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v6/job/logstash/)
 
 # Quick reference (cont.)
 
