@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `s390x` builds of [the `drupal` official image](https://hub.docker.com/_/drupal) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -28,10 +30,6 @@ WARNING:
 
 -	[`11.2.0-beta1-php8.4-fpm-bookworm`, `11.2-rc-php8.4-fpm-bookworm`, `11.2.0-beta1-php8.4-fpm`, `11.2-rc-php8.4-fpm`, `11.2.0-beta1-fpm-bookworm`, `11.2-rc-fpm-bookworm`, `11.2.0-beta1-fpm`, `11.2-rc-fpm`](https://github.com/docker-library/drupal/blob/5d3e557c6488dd6581244cc3b885ce4308d54502/11.2-rc/php8.4/fpm-bookworm/Dockerfile)
 
--	[`11.2.0-beta1-php8.4-apache-bullseye`, `11.2-rc-php8.4-apache-bullseye`, `11.2.0-beta1-apache-bullseye`, `11.2-rc-apache-bullseye`](https://github.com/docker-library/drupal/blob/5d3e557c6488dd6581244cc3b885ce4308d54502/11.2-rc/php8.4/apache-bullseye/Dockerfile)
-
--	[`11.2.0-beta1-php8.4-fpm-bullseye`, `11.2-rc-php8.4-fpm-bullseye`, `11.2.0-beta1-fpm-bullseye`, `11.2-rc-fpm-bullseye`](https://github.com/docker-library/drupal/blob/5d3e557c6488dd6581244cc3b885ce4308d54502/11.2-rc/php8.4/fpm-bullseye/Dockerfile)
-
 -	[`11.2.0-beta1-php8.4-fpm-alpine3.21`, `11.2-rc-php8.4-fpm-alpine3.21`, `11.2.0-beta1-php8.4-fpm-alpine`, `11.2-rc-php8.4-fpm-alpine`, `11.2.0-beta1-fpm-alpine3.21`, `11.2-rc-fpm-alpine3.21`, `11.2.0-beta1-fpm-alpine`, `11.2-rc-fpm-alpine`](https://github.com/docker-library/drupal/blob/5d3e557c6488dd6581244cc3b885ce4308d54502/11.2-rc/php8.4/fpm-alpine3.21/Dockerfile)
 
 -	[`11.2.0-beta1-php8.4-fpm-alpine3.20`, `11.2-rc-php8.4-fpm-alpine3.20`, `11.2.0-beta1-fpm-alpine3.20`, `11.2-rc-fpm-alpine3.20`](https://github.com/docker-library/drupal/blob/5d3e557c6488dd6581244cc3b885ce4308d54502/11.2-rc/php8.4/fpm-alpine3.20/Dockerfile)
@@ -39,10 +37,6 @@ WARNING:
 -	[`11.2.0-beta1-php8.3-apache-bookworm`, `11.2-rc-php8.3-apache-bookworm`, `11.2.0-beta1-php8.3-apache`, `11.2-rc-php8.3-apache`, `11.2.0-beta1-php8.3`, `11.2-rc-php8.3`](https://github.com/docker-library/drupal/blob/5d3e557c6488dd6581244cc3b885ce4308d54502/11.2-rc/php8.3/apache-bookworm/Dockerfile)
 
 -	[`11.2.0-beta1-php8.3-fpm-bookworm`, `11.2-rc-php8.3-fpm-bookworm`, `11.2.0-beta1-php8.3-fpm`, `11.2-rc-php8.3-fpm`](https://github.com/docker-library/drupal/blob/5d3e557c6488dd6581244cc3b885ce4308d54502/11.2-rc/php8.3/fpm-bookworm/Dockerfile)
-
--	[`11.2.0-beta1-php8.3-apache-bullseye`, `11.2-rc-php8.3-apache-bullseye`](https://github.com/docker-library/drupal/blob/5d3e557c6488dd6581244cc3b885ce4308d54502/11.2-rc/php8.3/apache-bullseye/Dockerfile)
-
--	[`11.2.0-beta1-php8.3-fpm-bullseye`, `11.2-rc-php8.3-fpm-bullseye`](https://github.com/docker-library/drupal/blob/5d3e557c6488dd6581244cc3b885ce4308d54502/11.2-rc/php8.3/fpm-bullseye/Dockerfile)
 
 -	[`11.2.0-beta1-php8.3-fpm-alpine3.21`, `11.2-rc-php8.3-fpm-alpine3.21`, `11.2.0-beta1-php8.3-fpm-alpine`, `11.2-rc-php8.3-fpm-alpine`](https://github.com/docker-library/drupal/blob/5d3e557c6488dd6581244cc3b885ce4308d54502/11.2-rc/php8.3/fpm-alpine3.21/Dockerfile)
 
@@ -52,10 +46,6 @@ WARNING:
 
 -	[`11.1.7-php8.4-fpm-bookworm`, `11.1-php8.4-fpm-bookworm`, `11-php8.4-fpm-bookworm`, `php8.4-fpm-bookworm`, `11.1.7-php8.4-fpm`, `11.1-php8.4-fpm`, `11-php8.4-fpm`, `php8.4-fpm`](https://github.com/docker-library/drupal/blob/c6093d2b0c18f8c7dd2b4979541af158bfcf8d20/11.1/php8.4/fpm-bookworm/Dockerfile)
 
--	[`11.1.7-php8.4-apache-bullseye`, `11.1-php8.4-apache-bullseye`, `11-php8.4-apache-bullseye`, `php8.4-apache-bullseye`](https://github.com/docker-library/drupal/blob/c6093d2b0c18f8c7dd2b4979541af158bfcf8d20/11.1/php8.4/apache-bullseye/Dockerfile)
-
--	[`11.1.7-php8.4-fpm-bullseye`, `11.1-php8.4-fpm-bullseye`, `11-php8.4-fpm-bullseye`, `php8.4-fpm-bullseye`](https://github.com/docker-library/drupal/blob/c6093d2b0c18f8c7dd2b4979541af158bfcf8d20/11.1/php8.4/fpm-bullseye/Dockerfile)
-
 -	[`11.1.7-php8.4-fpm-alpine3.21`, `11.1-php8.4-fpm-alpine3.21`, `11-php8.4-fpm-alpine3.21`, `php8.4-fpm-alpine3.21`, `11.1.7-php8.4-fpm-alpine`, `11.1-php8.4-fpm-alpine`, `11-php8.4-fpm-alpine`, `php8.4-fpm-alpine`](https://github.com/docker-library/drupal/blob/c6093d2b0c18f8c7dd2b4979541af158bfcf8d20/11.1/php8.4/fpm-alpine3.21/Dockerfile)
 
 -	[`11.1.7-php8.4-fpm-alpine3.20`, `11.1-php8.4-fpm-alpine3.20`, `11-php8.4-fpm-alpine3.20`, `php8.4-fpm-alpine3.20`](https://github.com/docker-library/drupal/blob/c6093d2b0c18f8c7dd2b4979541af158bfcf8d20/11.1/php8.4/fpm-alpine3.20/Dockerfile)
@@ -63,10 +53,6 @@ WARNING:
 -	[`11.1.7-php8.3-apache-bookworm`, `11.1-php8.3-apache-bookworm`, `11-php8.3-apache-bookworm`, `php8.3-apache-bookworm`, `11.1.7-php8.3-apache`, `11.1-php8.3-apache`, `11-php8.3-apache`, `php8.3-apache`, `11.1.7-php8.3`, `11.1-php8.3`, `11-php8.3`, `php8.3`, `11.1.7-apache-bookworm`, `11.1-apache-bookworm`, `11-apache-bookworm`, `apache-bookworm`, `11.1.7-apache`, `11.1-apache`, `11-apache`, `apache`, `11.1.7`, `11.1`, `11`, `latest`](https://github.com/docker-library/drupal/blob/c6093d2b0c18f8c7dd2b4979541af158bfcf8d20/11.1/php8.3/apache-bookworm/Dockerfile)
 
 -	[`11.1.7-php8.3-fpm-bookworm`, `11.1-php8.3-fpm-bookworm`, `11-php8.3-fpm-bookworm`, `php8.3-fpm-bookworm`, `11.1.7-php8.3-fpm`, `11.1-php8.3-fpm`, `11-php8.3-fpm`, `php8.3-fpm`, `11.1.7-fpm-bookworm`, `11.1-fpm-bookworm`, `11-fpm-bookworm`, `fpm-bookworm`, `11.1.7-fpm`, `11.1-fpm`, `11-fpm`, `fpm`](https://github.com/docker-library/drupal/blob/c6093d2b0c18f8c7dd2b4979541af158bfcf8d20/11.1/php8.3/fpm-bookworm/Dockerfile)
-
--	[`11.1.7-php8.3-apache-bullseye`, `11.1-php8.3-apache-bullseye`, `11-php8.3-apache-bullseye`, `php8.3-apache-bullseye`, `11.1.7-apache-bullseye`, `11.1-apache-bullseye`, `11-apache-bullseye`, `apache-bullseye`](https://github.com/docker-library/drupal/blob/c6093d2b0c18f8c7dd2b4979541af158bfcf8d20/11.1/php8.3/apache-bullseye/Dockerfile)
-
--	[`11.1.7-php8.3-fpm-bullseye`, `11.1-php8.3-fpm-bullseye`, `11-php8.3-fpm-bullseye`, `php8.3-fpm-bullseye`, `11.1.7-fpm-bullseye`, `11.1-fpm-bullseye`, `11-fpm-bullseye`, `fpm-bullseye`](https://github.com/docker-library/drupal/blob/c6093d2b0c18f8c7dd2b4979541af158bfcf8d20/11.1/php8.3/fpm-bullseye/Dockerfile)
 
 -	[`11.1.7-php8.3-fpm-alpine3.21`, `11.1-php8.3-fpm-alpine3.21`, `11-php8.3-fpm-alpine3.21`, `php8.3-fpm-alpine3.21`, `11.1.7-php8.3-fpm-alpine`, `11.1-php8.3-fpm-alpine`, `11-php8.3-fpm-alpine`, `php8.3-fpm-alpine`, `11.1.7-fpm-alpine3.21`, `11.1-fpm-alpine3.21`, `11-fpm-alpine3.21`, `fpm-alpine3.21`, `11.1.7-fpm-alpine`, `11.1-fpm-alpine`, `11-fpm-alpine`, `fpm-alpine`](https://github.com/docker-library/drupal/blob/c6093d2b0c18f8c7dd2b4979541af158bfcf8d20/11.1/php8.3/fpm-alpine3.21/Dockerfile)
 
@@ -76,10 +62,6 @@ WARNING:
 
 -	[`11.0.13-php8.3-fpm-bookworm`, `11.0-php8.3-fpm-bookworm`, `11.0.13-php8.3-fpm`, `11.0-php8.3-fpm`, `11.0.13-fpm-bookworm`, `11.0-fpm-bookworm`, `11.0.13-fpm`, `11.0-fpm`](https://github.com/docker-library/drupal/blob/6e99d404954100da55da961fabfdbd5176523cd3/11.0/php8.3/fpm-bookworm/Dockerfile)
 
--	[`11.0.13-php8.3-apache-bullseye`, `11.0-php8.3-apache-bullseye`, `11.0.13-apache-bullseye`, `11.0-apache-bullseye`](https://github.com/docker-library/drupal/blob/6e99d404954100da55da961fabfdbd5176523cd3/11.0/php8.3/apache-bullseye/Dockerfile)
-
--	[`11.0.13-php8.3-fpm-bullseye`, `11.0-php8.3-fpm-bullseye`, `11.0.13-fpm-bullseye`, `11.0-fpm-bullseye`](https://github.com/docker-library/drupal/blob/6e99d404954100da55da961fabfdbd5176523cd3/11.0/php8.3/fpm-bullseye/Dockerfile)
-
 -	[`11.0.13-php8.3-fpm-alpine3.21`, `11.0-php8.3-fpm-alpine3.21`, `11.0.13-php8.3-fpm-alpine`, `11.0-php8.3-fpm-alpine`, `11.0.13-fpm-alpine3.21`, `11.0-fpm-alpine3.21`, `11.0.13-fpm-alpine`, `11.0-fpm-alpine`](https://github.com/docker-library/drupal/blob/6e99d404954100da55da961fabfdbd5176523cd3/11.0/php8.3/fpm-alpine3.21/Dockerfile)
 
 -	[`11.0.13-php8.3-fpm-alpine3.20`, `11.0-php8.3-fpm-alpine3.20`, `11.0.13-fpm-alpine3.20`, `11.0-fpm-alpine3.20`](https://github.com/docker-library/drupal/blob/6e99d404954100da55da961fabfdbd5176523cd3/11.0/php8.3/fpm-alpine3.20/Dockerfile)
@@ -87,10 +69,6 @@ WARNING:
 -	[`10.5.0-beta1-php8.4-apache-bookworm`, `10.5-rc-php8.4-apache-bookworm`, `10.5.0-beta1-php8.4-apache`, `10.5-rc-php8.4-apache`, `10.5.0-beta1-php8.4`, `10.5-rc-php8.4`, `10.5.0-beta1-apache-bookworm`, `10.5-rc-apache-bookworm`, `10.5.0-beta1-apache`, `10.5-rc-apache`, `10.5.0-beta1`, `10.5-rc`](https://github.com/docker-library/drupal/blob/5d3e557c6488dd6581244cc3b885ce4308d54502/10.5-rc/php8.4/apache-bookworm/Dockerfile)
 
 -	[`10.5.0-beta1-php8.4-fpm-bookworm`, `10.5-rc-php8.4-fpm-bookworm`, `10.5.0-beta1-php8.4-fpm`, `10.5-rc-php8.4-fpm`, `10.5.0-beta1-fpm-bookworm`, `10.5-rc-fpm-bookworm`, `10.5.0-beta1-fpm`, `10.5-rc-fpm`](https://github.com/docker-library/drupal/blob/5d3e557c6488dd6581244cc3b885ce4308d54502/10.5-rc/php8.4/fpm-bookworm/Dockerfile)
-
--	[`10.5.0-beta1-php8.4-apache-bullseye`, `10.5-rc-php8.4-apache-bullseye`, `10.5.0-beta1-apache-bullseye`, `10.5-rc-apache-bullseye`](https://github.com/docker-library/drupal/blob/5d3e557c6488dd6581244cc3b885ce4308d54502/10.5-rc/php8.4/apache-bullseye/Dockerfile)
-
--	[`10.5.0-beta1-php8.4-fpm-bullseye`, `10.5-rc-php8.4-fpm-bullseye`, `10.5.0-beta1-fpm-bullseye`, `10.5-rc-fpm-bullseye`](https://github.com/docker-library/drupal/blob/5d3e557c6488dd6581244cc3b885ce4308d54502/10.5-rc/php8.4/fpm-bullseye/Dockerfile)
 
 -	[`10.5.0-beta1-php8.4-fpm-alpine3.21`, `10.5-rc-php8.4-fpm-alpine3.21`, `10.5.0-beta1-php8.4-fpm-alpine`, `10.5-rc-php8.4-fpm-alpine`, `10.5.0-beta1-fpm-alpine3.21`, `10.5-rc-fpm-alpine3.21`, `10.5.0-beta1-fpm-alpine`, `10.5-rc-fpm-alpine`](https://github.com/docker-library/drupal/blob/5d3e557c6488dd6581244cc3b885ce4308d54502/10.5-rc/php8.4/fpm-alpine3.21/Dockerfile)
 
@@ -100,10 +78,6 @@ WARNING:
 
 -	[`10.5.0-beta1-php8.3-fpm-bookworm`, `10.5-rc-php8.3-fpm-bookworm`, `10.5.0-beta1-php8.3-fpm`, `10.5-rc-php8.3-fpm`](https://github.com/docker-library/drupal/blob/5d3e557c6488dd6581244cc3b885ce4308d54502/10.5-rc/php8.3/fpm-bookworm/Dockerfile)
 
--	[`10.5.0-beta1-php8.3-apache-bullseye`, `10.5-rc-php8.3-apache-bullseye`](https://github.com/docker-library/drupal/blob/5d3e557c6488dd6581244cc3b885ce4308d54502/10.5-rc/php8.3/apache-bullseye/Dockerfile)
-
--	[`10.5.0-beta1-php8.3-fpm-bullseye`, `10.5-rc-php8.3-fpm-bullseye`](https://github.com/docker-library/drupal/blob/5d3e557c6488dd6581244cc3b885ce4308d54502/10.5-rc/php8.3/fpm-bullseye/Dockerfile)
-
 -	[`10.5.0-beta1-php8.3-fpm-alpine3.21`, `10.5-rc-php8.3-fpm-alpine3.21`, `10.5.0-beta1-php8.3-fpm-alpine`, `10.5-rc-php8.3-fpm-alpine`](https://github.com/docker-library/drupal/blob/5d3e557c6488dd6581244cc3b885ce4308d54502/10.5-rc/php8.3/fpm-alpine3.21/Dockerfile)
 
 -	[`10.5.0-beta1-php8.3-fpm-alpine3.20`, `10.5-rc-php8.3-fpm-alpine3.20`](https://github.com/docker-library/drupal/blob/5d3e557c6488dd6581244cc3b885ce4308d54502/10.5-rc/php8.3/fpm-alpine3.20/Dockerfile)
@@ -111,10 +85,6 @@ WARNING:
 -	[`10.4.7-php8.4-apache-bookworm`, `10.4-php8.4-apache-bookworm`, `10-php8.4-apache-bookworm`, `10.4.7-php8.4-apache`, `10.4-php8.4-apache`, `10-php8.4-apache`, `10.4.7-php8.4`, `10.4-php8.4`, `10-php8.4`](https://github.com/docker-library/drupal/blob/b8db65b8a951d1c4a44fb3c6a7e6213ed347ff7a/10.4/php8.4/apache-bookworm/Dockerfile)
 
 -	[`10.4.7-php8.4-fpm-bookworm`, `10.4-php8.4-fpm-bookworm`, `10-php8.4-fpm-bookworm`, `10.4.7-php8.4-fpm`, `10.4-php8.4-fpm`, `10-php8.4-fpm`](https://github.com/docker-library/drupal/blob/b8db65b8a951d1c4a44fb3c6a7e6213ed347ff7a/10.4/php8.4/fpm-bookworm/Dockerfile)
-
--	[`10.4.7-php8.4-apache-bullseye`, `10.4-php8.4-apache-bullseye`, `10-php8.4-apache-bullseye`](https://github.com/docker-library/drupal/blob/b8db65b8a951d1c4a44fb3c6a7e6213ed347ff7a/10.4/php8.4/apache-bullseye/Dockerfile)
-
--	[`10.4.7-php8.4-fpm-bullseye`, `10.4-php8.4-fpm-bullseye`, `10-php8.4-fpm-bullseye`](https://github.com/docker-library/drupal/blob/b8db65b8a951d1c4a44fb3c6a7e6213ed347ff7a/10.4/php8.4/fpm-bullseye/Dockerfile)
 
 -	[`10.4.7-php8.4-fpm-alpine3.21`, `10.4-php8.4-fpm-alpine3.21`, `10-php8.4-fpm-alpine3.21`, `10.4.7-php8.4-fpm-alpine`, `10.4-php8.4-fpm-alpine`, `10-php8.4-fpm-alpine`](https://github.com/docker-library/drupal/blob/b8db65b8a951d1c4a44fb3c6a7e6213ed347ff7a/10.4/php8.4/fpm-alpine3.21/Dockerfile)
 
@@ -124,10 +94,6 @@ WARNING:
 
 -	[`10.4.7-php8.3-fpm-bookworm`, `10.4-php8.3-fpm-bookworm`, `10-php8.3-fpm-bookworm`, `10.4.7-php8.3-fpm`, `10.4-php8.3-fpm`, `10-php8.3-fpm`, `10.4.7-fpm-bookworm`, `10.4-fpm-bookworm`, `10-fpm-bookworm`, `10.4.7-fpm`, `10.4-fpm`, `10-fpm`](https://github.com/docker-library/drupal/blob/b8db65b8a951d1c4a44fb3c6a7e6213ed347ff7a/10.4/php8.3/fpm-bookworm/Dockerfile)
 
--	[`10.4.7-php8.3-apache-bullseye`, `10.4-php8.3-apache-bullseye`, `10-php8.3-apache-bullseye`, `10.4.7-apache-bullseye`, `10.4-apache-bullseye`, `10-apache-bullseye`](https://github.com/docker-library/drupal/blob/b8db65b8a951d1c4a44fb3c6a7e6213ed347ff7a/10.4/php8.3/apache-bullseye/Dockerfile)
-
--	[`10.4.7-php8.3-fpm-bullseye`, `10.4-php8.3-fpm-bullseye`, `10-php8.3-fpm-bullseye`, `10.4.7-fpm-bullseye`, `10.4-fpm-bullseye`, `10-fpm-bullseye`](https://github.com/docker-library/drupal/blob/b8db65b8a951d1c4a44fb3c6a7e6213ed347ff7a/10.4/php8.3/fpm-bullseye/Dockerfile)
-
 -	[`10.4.7-php8.3-fpm-alpine3.21`, `10.4-php8.3-fpm-alpine3.21`, `10-php8.3-fpm-alpine3.21`, `10.4.7-php8.3-fpm-alpine`, `10.4-php8.3-fpm-alpine`, `10-php8.3-fpm-alpine`, `10.4.7-fpm-alpine3.21`, `10.4-fpm-alpine3.21`, `10-fpm-alpine3.21`, `10.4.7-fpm-alpine`, `10.4-fpm-alpine`, `10-fpm-alpine`](https://github.com/docker-library/drupal/blob/b8db65b8a951d1c4a44fb3c6a7e6213ed347ff7a/10.4/php8.3/fpm-alpine3.21/Dockerfile)
 
 -	[`10.4.7-php8.3-fpm-alpine3.20`, `10.4-php8.3-fpm-alpine3.20`, `10-php8.3-fpm-alpine3.20`, `10.4.7-fpm-alpine3.20`, `10.4-fpm-alpine3.20`, `10-fpm-alpine3.20`](https://github.com/docker-library/drupal/blob/b8db65b8a951d1c4a44fb3c6a7e6213ed347ff7a/10.4/php8.3/fpm-alpine3.20/Dockerfile)
@@ -135,10 +101,6 @@ WARNING:
 -	[`10.3.14-php8.3-apache-bookworm`, `10.3-php8.3-apache-bookworm`, `10.3.14-php8.3-apache`, `10.3-php8.3-apache`, `10.3.14-php8.3`, `10.3-php8.3`](https://github.com/docker-library/drupal/blob/8f3ebb5ea454515f31c2ad06221660250016ecb8/10.3/php8.3/apache-bookworm/Dockerfile)
 
 -	[`10.3.14-php8.3-fpm-bookworm`, `10.3-php8.3-fpm-bookworm`, `10.3.14-php8.3-fpm`, `10.3-php8.3-fpm`](https://github.com/docker-library/drupal/blob/8f3ebb5ea454515f31c2ad06221660250016ecb8/10.3/php8.3/fpm-bookworm/Dockerfile)
-
--	[`10.3.14-php8.3-apache-bullseye`, `10.3-php8.3-apache-bullseye`](https://github.com/docker-library/drupal/blob/8f3ebb5ea454515f31c2ad06221660250016ecb8/10.3/php8.3/apache-bullseye/Dockerfile)
-
--	[`10.3.14-php8.3-fpm-bullseye`, `10.3-php8.3-fpm-bullseye`](https://github.com/docker-library/drupal/blob/8f3ebb5ea454515f31c2ad06221660250016ecb8/10.3/php8.3/fpm-bullseye/Dockerfile)
 
 -	[`10.3.14-php8.3-fpm-alpine3.21`, `10.3-php8.3-fpm-alpine3.21`, `10.3.14-php8.3-fpm-alpine`, `10.3-php8.3-fpm-alpine`](https://github.com/docker-library/drupal/blob/8f3ebb5ea454515f31c2ad06221660250016ecb8/10.3/php8.3/fpm-alpine3.21/Dockerfile)
 
@@ -148,13 +110,11 @@ WARNING:
 
 -	[`10.3.14-php8.2-fpm-bookworm`, `10.3-php8.2-fpm-bookworm`, `10.3.14-php8.2-fpm`, `10.3-php8.2-fpm`, `10.3.14-fpm-bookworm`, `10.3-fpm-bookworm`, `10.3.14-fpm`, `10.3-fpm`](https://github.com/docker-library/drupal/blob/8f3ebb5ea454515f31c2ad06221660250016ecb8/10.3/php8.2/fpm-bookworm/Dockerfile)
 
--	[`10.3.14-php8.2-apache-bullseye`, `10.3-php8.2-apache-bullseye`, `10.3.14-apache-bullseye`, `10.3-apache-bullseye`](https://github.com/docker-library/drupal/blob/8f3ebb5ea454515f31c2ad06221660250016ecb8/10.3/php8.2/apache-bullseye/Dockerfile)
-
--	[`10.3.14-php8.2-fpm-bullseye`, `10.3-php8.2-fpm-bullseye`, `10.3.14-fpm-bullseye`, `10.3-fpm-bullseye`](https://github.com/docker-library/drupal/blob/8f3ebb5ea454515f31c2ad06221660250016ecb8/10.3/php8.2/fpm-bullseye/Dockerfile)
-
 -	[`10.3.14-php8.2-fpm-alpine3.21`, `10.3-php8.2-fpm-alpine3.21`, `10.3.14-php8.2-fpm-alpine`, `10.3-php8.2-fpm-alpine`, `10.3.14-fpm-alpine3.21`, `10.3-fpm-alpine3.21`, `10.3.14-fpm-alpine`, `10.3-fpm-alpine`](https://github.com/docker-library/drupal/blob/8f3ebb5ea454515f31c2ad06221660250016ecb8/10.3/php8.2/fpm-alpine3.21/Dockerfile)
 
 -	[`10.3.14-php8.2-fpm-alpine3.20`, `10.3-php8.2-fpm-alpine3.20`, `10.3.14-fpm-alpine3.20`, `10.3-fpm-alpine3.20`](https://github.com/docker-library/drupal/blob/8f3ebb5ea454515f31c2ad06221660250016ecb8/10.3/php8.2/fpm-alpine3.20/Dockerfile)
+
+[![s390x/drupal build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/s390x/job/drupal.svg?label=s390x/drupal%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/drupal/)
 
 # Quick reference (cont.)
 
@@ -188,13 +148,13 @@ Drupal is a free and open-source content-management framework written in PHP and
 The basic pattern for starting a `drupal` instance is:
 
 ```console
-$ docker run --name some-drupal -d drupal
+$ docker run --name some-drupal -d s390x/drupal
 ```
 
 If you'd like to be able to access the instance from the host without the container's IP, standard port mappings can be used:
 
 ```console
-$ docker run --name some-drupal -p 8080:80 -d drupal
+$ docker run --name some-drupal -p 8080:80 -d s390x/drupal
 ```
 
 Then, access it via `http://localhost:8080` or `http://host-ip:8080` in a browser.
@@ -248,7 +208,7 @@ There is consensus that `/var/www/html/modules`, `/var/www/html/profiles`, and `
 If using bind-mounts, one way to accomplish pre-seeding your local `sites` directory would be something like the following:
 
 ```console
-$ docker run --rm drupal tar -cC /var/www/html/sites . | tar -xC /path/on/host/sites
+$ docker run --rm s390x/drupal tar -cC /var/www/html/sites . | tar -xC /path/on/host/sites
 ```
 
 This can then be bind-mounted into a new container:
@@ -259,20 +219,20 @@ $ docker run --name some-drupal --network some-network -d \
 	-v /path/on/host/profiles:/var/www/html/profiles \
 	-v /path/on/host/sites:/var/www/html/sites \
 	-v /path/on/host/themes:/var/www/html/themes \
-	drupal
+	s390x/drupal
 ```
 
 Another solution using Docker Volumes:
 
 ```console
 $ docker volume create drupal-sites
-$ docker run --rm -v drupal-sites:/temporary/sites drupal cp -aRT /var/www/html/sites /temporary/sites
+$ docker run --rm -v drupal-sites:/temporary/sites s390x/drupal cp -aRT /var/www/html/sites /temporary/sites
 $ docker run --name some-drupal --network some-network -d \
 	-v drupal-modules:/var/www/html/modules \
 	-v drupal-profiles:/var/www/html/profiles \
 	-v drupal-sites:/var/www/html/sites \
 	-v drupal-themes:/var/www/html/themes \
-	drupal
+	s390x/drupal
 ```
 
 ## ... via [`docker compose`](https://github.com/docker/compose)
@@ -332,15 +292,15 @@ See [the "Running as an arbitrary user" section of the `php` image documentation
 
 # Image Variants
 
-The `drupal` images come in many flavors, each designed for a specific use case.
+The `s390x/drupal` images come in many flavors, each designed for a specific use case.
 
-## `drupal:<version>`
+## `s390x/drupal:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like bookworm or bullseye in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+Some of these tags may have names like bookworm in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
-## `drupal:<version>-fpm`
+## `s390x/drupal:<version>-fpm`
 
 This variant contains [PHP's FastCGI Process Manager (FPM)](https://www.php.net/fpm), which is the recommended FastCGI implementation for PHP.
 

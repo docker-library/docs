@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `s390x` builds of [the `ubuntu` official image](https://hub.docker.com/_/ubuntu) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,17 +26,19 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`20.04`, `focal-20250404`, `focal`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-focal-amd64-20250404-fb4da095&id=fb4da0956290c3b216a35315510f66ca9bc4a460)
+-	[`20.04`, `focal-20250404`, `focal`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-focal-s390x-20250404-1445752a&id=1445752abc1f6cf5ef19ff0addf4dad38288a9ee)
 
--	[`22.04`, `jammy-20250415.1`, `jammy`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-amd64-20250415.1-518e3d0d&id=518e3d0d114aa4029b5c8889611a4639a501f224)
+-	[`22.04`, `jammy-20250415.1`, `jammy`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-s390x-20250415.1-0ec6da66&id=0ec6da667499d8054da86bf1c16ee155eb92e169)
 
--	[`24.04`, `noble-20250415.1`, `noble`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-amd64-20250415.1-7c6f2628&id=7c6f26288103e61ee50f3ac157815ba70bb3435d)
+-	[`24.04`, `noble-20250415.1`, `noble`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-s390x-20250415.1-97144ec9&id=97144ec97dc4c61adf6416aef942e170fb7c695a)
 
--	[`24.10`, `oracular-20250225`, `oracular`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-oracular-amd64-20250225-71a591b6&id=71a591b63518c11abbccce5c648ce23d9a55c63b)
+-	[`24.10`, `oracular-20250225`, `oracular`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-oracular-s390x-20250225-e3a1931d&id=e3a1931d7b5cdb43015880230ee9889647c18030)
 
--	[`25.04`, `plucky-20250415`, `plucky`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-plucky-amd64-20250415-9aa542b4&id=9aa542b421288860569e4375a11053227643ddf8)
+-	[`25.04`, `plucky-20250415`, `plucky`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-plucky-s390x-20250415-357fe902&id=357fe902e1025a47cfcf0fd0b7532378d994ea55)
 
--	[`25.10`, `questing-20250514`, `questing`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-questing-amd64-20250514-fdfe5cc8&id=fdfe5cc8f8ad756c85ece74b2d96318dc7334468)
+-	[`25.10`, `questing-20250514`, `questing`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-questing-s390x-20250514-344437b2&id=344437b2f87a33e8a91be9e1748621b8456c32df)
+
+[![s390x/ubuntu build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/s390x/job/ubuntu.svg?label=s390x/ubuntu%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/ubuntu/)
 
 # Quick reference (cont.)
 
@@ -69,9 +73,9 @@ Development of Ubuntu is led by Canonical Ltd. Canonical generates revenue throu
 
 This image is built from official rootfs tarballs provided by Canonical (see `dist-*` tags at https://git.launchpad.net/cloud-images/+oci/ubuntu-base).
 
-The `ubuntu:latest` tag points to the "latest LTS", since that's the version recommended for general use. The `ubuntu:rolling` tag points to the latest release (regardless of LTS status).
+The `s390x/ubuntu:latest` tag points to the "latest LTS", since that's the version recommended for general use. The `s390x/ubuntu:rolling` tag points to the latest release (regardless of LTS status).
 
-Along a similar vein, the `ubuntu:devel` tag is an alias for whichever release the "devel" suite on the mirrors currently points to, as determined by the following one-liner: `wget -qO- http://archive.ubuntu.com/ubuntu/dists/devel/Release | awk -F ': ' '$1 == "Codename" { print $2; exit }'`
+Along a similar vein, the `s390x/ubuntu:devel` tag is an alias for whichever release the "devel" suite on the mirrors currently points to, as determined by the following one-liner: `wget -qO- http://archive.ubuntu.com/ubuntu/dists/devel/Release | awk -F ': ' '$1 == "Codename" { print $2; exit }'`
 
 ## Locales
 
