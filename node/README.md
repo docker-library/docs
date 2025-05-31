@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v7` builds of [the `node` official image](https://hub.docker.com/_/node) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,18 +26,6 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`24-alpine3.21`, `24.1-alpine3.21`, `24.1.0-alpine3.21`, `alpine3.21`, `current-alpine3.21`](https://github.com/nodejs/docker-node/blob/292dea0c0077b0925717d708e641dfef6ad2b373/24/alpine3.21/Dockerfile)
-
--	[`24-alpine`, `24-alpine3.22`, `24.1-alpine`, `24.1-alpine3.22`, `24.1.0-alpine`, `24.1.0-alpine3.22`, `alpine`, `alpine3.22`, `current-alpine`, `current-alpine3.22`](https://github.com/nodejs/docker-node/blob/b1e2c97844d5647bcfaf6d6c7862dd39fbc2ca51/24/alpine3.22/Dockerfile)
-
--	[`24`, `24-bookworm`, `24.1`, `24.1-bookworm`, `24.1.0`, `24.1.0-bookworm`, `bookworm`, `current`, `current-bookworm`, `latest`](https://github.com/nodejs/docker-node/blob/292dea0c0077b0925717d708e641dfef6ad2b373/24/bookworm/Dockerfile)
-
--	[`24-bookworm-slim`, `24-slim`, `24.1-bookworm-slim`, `24.1-slim`, `24.1.0-bookworm-slim`, `24.1.0-slim`, `bookworm-slim`, `current-bookworm-slim`, `current-slim`, `slim`](https://github.com/nodejs/docker-node/blob/292dea0c0077b0925717d708e641dfef6ad2b373/24/bookworm-slim/Dockerfile)
-
--	[`24-bullseye`, `24.1-bullseye`, `24.1.0-bullseye`, `bullseye`, `current-bullseye`](https://github.com/nodejs/docker-node/blob/292dea0c0077b0925717d708e641dfef6ad2b373/24/bullseye/Dockerfile)
-
--	[`24-bullseye-slim`, `24.1-bullseye-slim`, `24.1.0-bullseye-slim`, `bullseye-slim`, `current-bullseye-slim`](https://github.com/nodejs/docker-node/blob/292dea0c0077b0925717d708e641dfef6ad2b373/24/bullseye-slim/Dockerfile)
-
 -	[`23-alpine3.21`, `23.11-alpine3.21`, `23.11.1-alpine3.21`](https://github.com/nodejs/docker-node/blob/473bc763275ee20ce142b1e23ee253f6c248673d/23/alpine3.21/Dockerfile)
 
 -	[`23-alpine`, `23-alpine3.22`, `23.11-alpine`, `23.11-alpine3.22`, `23.11.1-alpine`, `23.11.1-alpine3.22`](https://github.com/nodejs/docker-node/blob/b1e2c97844d5647bcfaf6d6c7862dd39fbc2ca51/23/alpine3.22/Dockerfile)
@@ -43,10 +33,6 @@ WARNING:
 -	[`23`, `23-bookworm`, `23.11`, `23.11-bookworm`, `23.11.1`, `23.11.1-bookworm`](https://github.com/nodejs/docker-node/blob/473bc763275ee20ce142b1e23ee253f6c248673d/23/bookworm/Dockerfile)
 
 -	[`23-bookworm-slim`, `23-slim`, `23.11-bookworm-slim`, `23.11-slim`, `23.11.1-bookworm-slim`, `23.11.1-slim`](https://github.com/nodejs/docker-node/blob/473bc763275ee20ce142b1e23ee253f6c248673d/23/bookworm-slim/Dockerfile)
-
--	[`23-bullseye`, `23.11-bullseye`, `23.11.1-bullseye`](https://github.com/nodejs/docker-node/blob/473bc763275ee20ce142b1e23ee253f6c248673d/23/bullseye/Dockerfile)
-
--	[`23-bullseye-slim`, `23.11-bullseye-slim`, `23.11.1-bullseye-slim`](https://github.com/nodejs/docker-node/blob/473bc763275ee20ce142b1e23ee253f6c248673d/23/bullseye-slim/Dockerfile)
 
 -	[`22-alpine3.21`, `22.16-alpine3.21`, `22.16.0-alpine3.21`, `jod-alpine3.21`, `lts-alpine3.21`](https://github.com/nodejs/docker-node/blob/d073523fcb78049b965f76d813627eb59ffb7a58/22/alpine3.21/Dockerfile)
 
@@ -71,6 +57,8 @@ WARNING:
 -	[`20-bullseye`, `20.19-bullseye`, `20.19.2-bullseye`, `iron-bullseye`](https://github.com/nodejs/docker-node/blob/a87fa26c1bb455170dac58c57c661e820a7390cb/20/bullseye/Dockerfile)
 
 -	[`20-bullseye-slim`, `20.19-bullseye-slim`, `20.19.2-bullseye-slim`, `iron-bullseye-slim`](https://github.com/nodejs/docker-node/blob/a87fa26c1bb455170dac58c57c661e820a7390cb/20/bullseye-slim/Dockerfile)
+
+[![arm32v7/node build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/node.svg?label=arm32v7/node%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v7/job/node/)
 
 # Quick reference (cont.)
 
@@ -109,9 +97,9 @@ See [How To Use This Image](https://github.com/nodejs/docker-node/blob/master/RE
 
 # Image Variants
 
-The `node` images come in many flavors, each designed for a specific use case.
+The `arm32v7/node` images come in many flavors, each designed for a specific use case.
 
-## `node:<version>`
+## `arm32v7/node:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
@@ -119,7 +107,7 @@ Some of these tags may have names like bookworm or bullseye in them. These are t
 
 This tag is based off of [`buildpack-deps`](https://hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of Docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
 
-## `node:<version>-alpine`
+## `arm32v7/node:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
@@ -127,9 +115,9 @@ This variant is useful when final image size being as small as possible is your 
 
 To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
-## `node:<version>-slim`
+## `arm32v7/node:<version>-slim`
 
-This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `node`. Unless you are working in an environment where *only* the `node` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
+This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `arm32v7/node`. Unless you are working in an environment where *only* the `arm32v7/node` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
 
 # License
 
