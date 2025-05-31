@@ -38,15 +38,12 @@ WARNING:
 
 -	[`28.2.2-windowsservercore-ltsc2022`, `28.2-windowsservercore-ltsc2022`, `28-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`](https://github.com/docker-library/docker/blob/ac216a48589a02162b04badf29b22a09ca5c9043/28/windows/windowsservercore-ltsc2022/Dockerfile)
 
--	[`28.2.2-windowsservercore-1809`, `28.2-windowsservercore-1809`, `28-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/docker-library/docker/blob/ac216a48589a02162b04badf29b22a09ca5c9043/28/windows/windowsservercore-1809/Dockerfile)
-
 ## Shared Tags
 
 -	`28.2.2-windowsservercore`, `28.2-windowsservercore`, `28-windowsservercore`, `windowsservercore`:
 
 	-	[`28.2.2-windowsservercore-ltsc2025`](https://github.com/docker-library/docker/blob/ac216a48589a02162b04badf29b22a09ca5c9043/28/windows/windowsservercore-ltsc2025/Dockerfile)
 	-	[`28.2.2-windowsservercore-ltsc2022`](https://github.com/docker-library/docker/blob/ac216a48589a02162b04badf29b22a09ca5c9043/28/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`28.2.2-windowsservercore-1809`](https://github.com/docker-library/docker/blob/ac216a48589a02162b04badf29b22a09ca5c9043/28/windows/windowsservercore-1809/Dockerfile)
 
 # Quick reference (cont.)
 
