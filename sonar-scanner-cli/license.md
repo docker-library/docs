@@ -1,0 +1,1 @@
+SonarQube Community Edition is licensed under [GNU Lesser General Public License, Version 3.0](http://www.gnu.org/licenses/lgpl.txt). SonarQube Developer, Enterprise, and Data Center Editions are licensed under [SonarSource Terms and Conditions](https://www.sonarsource.com/docs/sonarsource_terms_and_conditions.pdf).
