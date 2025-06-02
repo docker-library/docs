@@ -13,7 +13,7 @@ The Robot Operating System (ROS) is a set of software libraries and tools that h
 To create your own ROS docker images and install custom packages, here's a simple example of installing the C++, Python client library demos using the official released Debian packages via apt-get.
 
 ```dockerfile
-FROM %%IMAGE%%:rolling-ros-core as installer
+FROM %%IMAGE%%:rolling-ros-core as aptgetter
 
 # install ros package
 RUN apt-get update && apt-get install -y \
@@ -28,8 +28,8 @@ CMD ["ros2", "launch", "demo_nodes_cpp", "talker_listener_launch.py"]
 Note: all ROS images include a default entrypoint that sources the ROS environment setup before executing the configured command, in this case the demo packages launch file. You can then build and run the Docker image like so:
 
 ```console
-$ docker build -t my/ros:installer .
-$ docker run -it --rm my/ros:installer
+$ docker build -t my/ros:aptgetter .
+$ docker run -it --rm my/ros:aptgetter
 [INFO] [launch]: process[talker-1]: started with pid [813]
 [INFO] [launch]: process[listener-2]: started with pid [814]
 [INFO] [talker]: Publishing: 'Hello World: 1'
@@ -146,12 +146,12 @@ The example above consists of three sequential stages. The `cacher` stage first 
 	-	Builds and installs only a select few packages in the workspace
 	-	Only workspace install artifacts are copied into final layers
 
-For comparison, the resulting `runner` image is similar in size to the earlier `installer` example. This allows you to develop and distribute custom ROS packages without significantly increasing image size compared to pre-built Debian installations:
+For comparison, the resulting `runner` image is similar in size to the earlier `aptgetter` example. This allows you to develop and distribute custom ROS packages without significantly increasing image size compared to pre-built Debian installations:
 
 ```console
 $ docker image ls my/ros --format "table {{.Tag}}\t{{.Size}}"
 TAG                SIZE
-installer          504MB
+aptgetter          504MB
 runner             510MB
 builder            941MB
 $ docker image ls ros --format "table {{.Tag}}\t{{.Size}}"
