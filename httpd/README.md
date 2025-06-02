@@ -26,7 +26,7 @@ WARNING:
 
 -	[`2.4.63`, `2.4`, `2`, `latest`, `2.4.63-bookworm`, `2.4-bookworm`, `2-bookworm`, `bookworm`](https://github.com/docker-library/httpd/blob/329f85a9ad75526de865749a41b273ead99fb69b/2.4/Dockerfile)
 
--	[`2.4.63-alpine`, `2.4-alpine`, `2-alpine`, `alpine`, `2.4.63-alpine3.21`, `2.4-alpine3.21`, `2-alpine3.21`, `alpine3.21`](https://github.com/docker-library/httpd/blob/329f85a9ad75526de865749a41b273ead99fb69b/2.4/alpine/Dockerfile)
+-	[`2.4.63-alpine`, `2.4-alpine`, `2-alpine`, `alpine`, `2.4.63-alpine3.22`, `2.4-alpine3.22`, `2-alpine3.22`, `alpine3.22`](https://github.com/docker-library/httpd/blob/7b36de3e42a8698eab0938ee92f93cfddf6ff835/2.4/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
