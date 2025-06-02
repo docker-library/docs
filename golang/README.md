@@ -60,13 +60,13 @@ WARNING:
 
 -	[`1.23.9-nanoserver-ltsc2022`, `1.23-nanoserver-ltsc2022`](https://github.com/docker-library/golang/blob/93f44df27b2ca87cc4342447e0179fe0b8f7d226/1.23/windows/nanoserver-ltsc2022/Dockerfile)
 
--	[`tip-20250524-bookworm`, `tip-bookworm`](https://github.com/docker-library/golang/blob/34c6d91f503a3410cfeb68fd099619bf00f3ba7f/tip/bookworm/Dockerfile)
+-	[`tip-20250530-bookworm`, `tip-bookworm`](https://github.com/docker-library/golang/blob/e04c21cc73c95ec8140c127bc110a0c139807cc1/tip/bookworm/Dockerfile)
 
--	[`tip-20250524-bullseye`, `tip-bullseye`](https://github.com/docker-library/golang/blob/34c6d91f503a3410cfeb68fd099619bf00f3ba7f/tip/bullseye/Dockerfile)
+-	[`tip-20250530-bullseye`, `tip-bullseye`](https://github.com/docker-library/golang/blob/e04c21cc73c95ec8140c127bc110a0c139807cc1/tip/bullseye/Dockerfile)
 
--	[`tip-20250524-alpine3.22`, `tip-alpine3.22`, `tip-20250524-alpine`, `tip-alpine`](https://github.com/docker-library/golang/blob/7162cd9bb639c8bc2c34b29dd8657b9a4a2ebb85/tip/alpine3.22/Dockerfile)
+-	[`tip-20250530-alpine3.22`, `tip-alpine3.22`, `tip-20250530-alpine`, `tip-alpine`](https://github.com/docker-library/golang/blob/e04c21cc73c95ec8140c127bc110a0c139807cc1/tip/alpine3.22/Dockerfile)
 
--	[`tip-20250524-alpine3.21`, `tip-alpine3.21`](https://github.com/docker-library/golang/blob/34c6d91f503a3410cfeb68fd099619bf00f3ba7f/tip/alpine3.21/Dockerfile)
+-	[`tip-20250530-alpine3.21`, `tip-alpine3.21`](https://github.com/docker-library/golang/blob/e04c21cc73c95ec8140c127bc110a0c139807cc1/tip/alpine3.21/Dockerfile)
 
 ## Shared Tags
 
@@ -102,9 +102,9 @@ WARNING:
 	-	[`1.23.9-nanoserver-ltsc2025`](https://github.com/docker-library/golang/blob/93f44df27b2ca87cc4342447e0179fe0b8f7d226/1.23/windows/nanoserver-ltsc2025/Dockerfile)
 	-	[`1.23.9-nanoserver-ltsc2022`](https://github.com/docker-library/golang/blob/93f44df27b2ca87cc4342447e0179fe0b8f7d226/1.23/windows/nanoserver-ltsc2022/Dockerfile)
 
--	`tip-20250524`, `tip`:
+-	`tip-20250530`, `tip`:
 
-	-	[`tip-20250524-bookworm`](https://github.com/docker-library/golang/blob/34c6d91f503a3410cfeb68fd099619bf00f3ba7f/tip/bookworm/Dockerfile)
+	-	[`tip-20250530-bookworm`](https://github.com/docker-library/golang/blob/e04c21cc73c95ec8140c127bc110a0c139807cc1/tip/bookworm/Dockerfile)
 
 # Quick reference (cont.)
 
