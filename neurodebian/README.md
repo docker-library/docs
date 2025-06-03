@@ -24,17 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`focal`, `nd20.04`](https://github.com/neurodebian/dockerfiles/blob/89ca52860d80889fd878392a29150e46d9d91a71/dockerfiles/focal/Dockerfile)
-
--	[`focal-non-free`, `nd20.04-non-free`](https://github.com/neurodebian/dockerfiles/blob/89ca52860d80889fd878392a29150e46d9d91a71/dockerfiles/focal-non-free/Dockerfile)
-
 -	[`jammy`, `nd22.04`](https://github.com/neurodebian/dockerfiles/blob/89ca52860d80889fd878392a29150e46d9d91a71/dockerfiles/jammy/Dockerfile)
 
 -	[`jammy-non-free`, `nd22.04-non-free`](https://github.com/neurodebian/dockerfiles/blob/89ca52860d80889fd878392a29150e46d9d91a71/dockerfiles/jammy-non-free/Dockerfile)
-
--	[`noble`, `nd24.04`](https://github.com/neurodebian/dockerfiles/blob/89ca52860d80889fd878392a29150e46d9d91a71/dockerfiles/noble/Dockerfile)
-
--	[`noble-non-free`, `nd24.04-non-free`](https://github.com/neurodebian/dockerfiles/blob/89ca52860d80889fd878392a29150e46d9d91a71/dockerfiles/noble-non-free/Dockerfile)
 
 -	[`bullseye`, `nd110`](https://github.com/neurodebian/dockerfiles/blob/89ca52860d80889fd878392a29150e46d9d91a71/dockerfiles/bullseye/Dockerfile)
 
