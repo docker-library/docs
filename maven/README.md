@@ -28,19 +28,19 @@ WARNING:
 
 -	[`3.9.9-eclipse-temurin-11-alpine`, `3.9-eclipse-temurin-11-alpine`, `3-eclipse-temurin-11-alpine`](https://github.com/carlossg/docker-maven/blob/8cfe24baffa5b250f7bb2d31ce233fc28f3c4f20/eclipse-temurin-11-alpine/Dockerfile)
 
--	[`3.9.9-eclipse-temurin-11-focal`, `3.9-eclipse-temurin-11-focal`, `3-eclipse-temurin-11-focal`](https://github.com/carlossg/docker-maven/blob/8cfe24baffa5b250f7bb2d31ce233fc28f3c4f20/eclipse-temurin-11-focal/Dockerfile)
+-	[`3.9.9-eclipse-temurin-11-noble`, `3.9-eclipse-temurin-11-noble`, `3-eclipse-temurin-11-noble`](https://github.com/carlossg/docker-maven/blob/999b218fb0188c75751755c9cb1aebedecb70351/eclipse-temurin-11-noble/Dockerfile)
 
 -	[`3.9.9-eclipse-temurin-17`, `3.9-eclipse-temurin-17`, `3-eclipse-temurin-17`](https://github.com/carlossg/docker-maven/blob/289ad67772f6dfad22c5362b863a29ec7373f501/eclipse-temurin-17/Dockerfile)
 
 -	[`3.9.9-eclipse-temurin-17-alpine`, `3.9-eclipse-temurin-17-alpine`, `3-eclipse-temurin-17-alpine`](https://github.com/carlossg/docker-maven/blob/8cfe24baffa5b250f7bb2d31ce233fc28f3c4f20/eclipse-temurin-17-alpine/Dockerfile)
 
--	[`3.9.9-eclipse-temurin-17-focal`, `3.9-eclipse-temurin-17-focal`, `3-eclipse-temurin-17-focal`](https://github.com/carlossg/docker-maven/blob/8cfe24baffa5b250f7bb2d31ce233fc28f3c4f20/eclipse-temurin-17-focal/Dockerfile)
+-	[`3.9.9-eclipse-temurin-17-noble`, `3.9-eclipse-temurin-17-noble`, `3-eclipse-temurin-17-noble`](https://github.com/carlossg/docker-maven/blob/999b218fb0188c75751755c9cb1aebedecb70351/eclipse-temurin-17-noble/Dockerfile)
 
 -	[`3.9.9-eclipse-temurin-21`, `3.9.9`, `3.9.9-eclipse-temurin`, `3.9-eclipse-temurin-21`, `3.9`, `3.9-eclipse-temurin`, `3-eclipse-temurin-21`, `3`, `latest`, `3-eclipse-temurin`, `eclipse-temurin`](https://github.com/carlossg/docker-maven/blob/8cfe24baffa5b250f7bb2d31ce233fc28f3c4f20/eclipse-temurin-21/Dockerfile)
 
 -	[`3.9.9-eclipse-temurin-21-alpine`, `3.9-eclipse-temurin-21-alpine`, `3-eclipse-temurin-21-alpine`](https://github.com/carlossg/docker-maven/blob/8cfe24baffa5b250f7bb2d31ce233fc28f3c4f20/eclipse-temurin-21-alpine/Dockerfile)
 
--	[`3.9.9-eclipse-temurin-21-jammy`, `3.9-eclipse-temurin-21-jammy`, `3-eclipse-temurin-21-jammy`](https://github.com/carlossg/docker-maven/blob/8cfe24baffa5b250f7bb2d31ce233fc28f3c4f20/eclipse-temurin-21-jammy/Dockerfile)
+-	[`3.9.9-eclipse-temurin-21-noble`, `3.9-eclipse-temurin-21-noble`, `3-eclipse-temurin-21-noble`](https://github.com/carlossg/docker-maven/blob/999b218fb0188c75751755c9cb1aebedecb70351/eclipse-temurin-21-noble/Dockerfile)
 
 -	[`3.9.9-eclipse-temurin-24`, `3.9-eclipse-temurin-24`, `3-eclipse-temurin-24`](https://github.com/carlossg/docker-maven/blob/289ad67772f6dfad22c5362b863a29ec7373f501/eclipse-temurin-24/Dockerfile)
 
@@ -52,15 +52,15 @@ WARNING:
 
 -	[`3.9.9-eclipse-temurin-8-alpine`, `3.9-eclipse-temurin-8-alpine`, `3-eclipse-temurin-8-alpine`](https://github.com/carlossg/docker-maven/blob/8cfe24baffa5b250f7bb2d31ce233fc28f3c4f20/eclipse-temurin-8-alpine/Dockerfile)
 
--	[`3.9.9-eclipse-temurin-8-focal`, `3.9-eclipse-temurin-8-focal`, `3-eclipse-temurin-8-focal`](https://github.com/carlossg/docker-maven/blob/8cfe24baffa5b250f7bb2d31ce233fc28f3c4f20/eclipse-temurin-8-focal/Dockerfile)
+-	[`3.9.9-eclipse-temurin-8-noble`, `3.9-eclipse-temurin-8-noble`, `3-eclipse-temurin-8-noble`](https://github.com/carlossg/docker-maven/blob/999b218fb0188c75751755c9cb1aebedecb70351/eclipse-temurin-8-noble/Dockerfile)
 
 -	[`3.9.9-ibmjava-8`, `3.9.9-ibmjava`, `3.9-ibmjava-8`, `3.9-ibmjava`, `3-ibmjava-8`, `3-ibmjava`, `ibmjava`](https://github.com/carlossg/docker-maven/blob/8cfe24baffa5b250f7bb2d31ce233fc28f3c4f20/ibmjava-8/Dockerfile)
 
--	[`3.9.9-ibm-semeru-11-focal`, `3.9-ibm-semeru-11-focal`, `3-ibm-semeru-11-focal`](https://github.com/carlossg/docker-maven/blob/8cfe24baffa5b250f7bb2d31ce233fc28f3c4f20/ibm-semeru-11-focal/Dockerfile)
+-	[`3.9.9-ibm-semeru-11-noble`, `3.9-ibm-semeru-11-noble`, `3-ibm-semeru-11-noble`](https://github.com/carlossg/docker-maven/blob/999b218fb0188c75751755c9cb1aebedecb70351/ibm-semeru-11-noble/Dockerfile)
 
--	[`3.9.9-ibm-semeru-17-focal`, `3.9-ibm-semeru-17-focal`, `3-ibm-semeru-17-focal`](https://github.com/carlossg/docker-maven/blob/8cfe24baffa5b250f7bb2d31ce233fc28f3c4f20/ibm-semeru-17-focal/Dockerfile)
+-	[`3.9.9-ibm-semeru-17-noble`, `3.9-ibm-semeru-17-noble`, `3-ibm-semeru-17-noble`](https://github.com/carlossg/docker-maven/blob/999b218fb0188c75751755c9cb1aebedecb70351/ibm-semeru-17-noble/Dockerfile)
 
--	[`3.9.9-ibm-semeru-21-jammy`, `3.9-ibm-semeru-21-jammy`, `3-ibm-semeru-21-jammy`](https://github.com/carlossg/docker-maven/blob/8cfe24baffa5b250f7bb2d31ce233fc28f3c4f20/ibm-semeru-21-jammy/Dockerfile)
+-	[`3.9.9-ibm-semeru-21-noble`, `3.9-ibm-semeru-21-noble`, `3-ibm-semeru-21-noble`](https://github.com/carlossg/docker-maven/blob/999b218fb0188c75751755c9cb1aebedecb70351/ibm-semeru-21-noble/Dockerfile)
 
 -	[`3.9.9-amazoncorretto-11`, `3.9-amazoncorretto-11`, `3-amazoncorretto-11`](https://github.com/carlossg/docker-maven/blob/8cfe24baffa5b250f7bb2d31ce233fc28f3c4f20/amazoncorretto-11/Dockerfile)
 
@@ -202,7 +202,7 @@ This is the defacto image. If you are unsure about what your needs are, you prob
 
 Some of these tags may have names like bookworm in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
-Some of these tags may have names like jammy or noble in them. These are the suite code names for releases of [Ubuntu](https://wiki.ubuntu.com/Releases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Ubuntu.
+Some of these tags may have names like noble in them. These are the suite code names for releases of [Ubuntu](https://wiki.ubuntu.com/Releases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Ubuntu.
 
 ## `maven:<version>-alpine`
 
