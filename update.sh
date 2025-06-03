@@ -134,10 +134,6 @@ for image in "${images[@]}"; do
 				# opensuse, etc
 				partial='**No supported tags**'
 			fi
-		elif [ -n "$ARCH_SPECIFIC_DOCS" ]; then
-			jenkinsJobUrl="https://doi-janky.infosiftr.net/job/multiarch/job/$BASHBREW_ARCH/job/$repo/"
-			jenkinsImageUrl="https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/$BASHBREW_ARCH/job/$repo.svg?label=%%IMAGE%%%20%20build%20job"
-			partial+=$'\n\n''[![%%IMAGE%% build status badge]('"$jenkinsImageUrl"')]('"$jenkinsJobUrl"')'
 		fi
 		replace_field "$targetFile" 'TAGS' "$partial"
 
