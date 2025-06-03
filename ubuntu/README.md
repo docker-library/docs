@@ -24,17 +24,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`20.04`, `focal-20250404`, `focal`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-focal-amd64-20250404-fb4da095&id=fb4da0956290c3b216a35315510f66ca9bc4a460)
+-	[`22.04`, `jammy-20250530`, `jammy`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-amd64-20250530-202257f3&id=202257f3f1e712e9b2e4e9d66d68e028cbed990c)
 
--	[`22.04`, `jammy-20250415.1`, `jammy`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-amd64-20250415.1-518e3d0d&id=518e3d0d114aa4029b5c8889611a4639a501f224)
+-	[`24.04`, `noble-20250529`, `noble`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-amd64-20250529-222144ab&id=222144abd5860a6d8ef142eb47fe61d8367cefdb)
 
--	[`24.04`, `noble-20250415.1`, `noble`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-amd64-20250415.1-7c6f2628&id=7c6f26288103e61ee50f3ac157815ba70bb3435d)
+-	[`24.10`, `oracular-20250428`, `oracular`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-oracular-amd64-20250428-c68b0ce8&id=c68b0ce815238e8edacf842c439d3df2fa026b5e)
 
--	[`24.10`, `oracular-20250225`, `oracular`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-oracular-amd64-20250225-71a591b6&id=71a591b63518c11abbccce5c648ce23d9a55c63b)
+-	[`25.04`, `plucky-20250521`, `plucky`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-plucky-amd64-20250521-f96cf5be&id=f96cf5be5b7e848059b5a9297fdbc15fa9a46e8d)
 
--	[`25.04`, `plucky-20250415`, `plucky`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-plucky-amd64-20250415-9aa542b4&id=9aa542b421288860569e4375a11053227643ddf8)
-
--	[`25.10`, `questing-20250514`, `questing`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-questing-amd64-20250514-fdfe5cc8&id=fdfe5cc8f8ad756c85ece74b2d96318dc7334468)
+-	[`25.10`, `questing-20250601`, `questing`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-questing-amd64-20250601-0b88f997&id=0b88f99700c9869cad822402a402f3798e3a935b)
 
 # Quick reference (cont.)
 
