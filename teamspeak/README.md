@@ -24,7 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.13`, `3.13.7`, `latest`](https://github.com/TeamSpeak-Systems/teamspeak-linux-docker-images/blob/f5f1e7f6142e8eeebb8d46d7b493b5d3ec01d599/alpine/Dockerfile)
+**No supported tags**
 
 # Quick reference (cont.)
 
@@ -32,7 +32,7 @@ WARNING:
 	[https://github.com/TeamSpeak-Systems/teamspeak-linux-docker-images/issues](https://github.com/TeamSpeak-Systems/teamspeak-linux-docker-images/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/teamspeak/)
+	**No supported architectures**
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/teamspeak/` directory](https://github.com/docker-library/repo-info/blob/master/repos/teamspeak) ([history](https://github.com/docker-library/repo-info/commits/master/repos/teamspeak))  

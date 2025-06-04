@@ -26,8 +26,6 @@ WARNING:
 
 -	[`3.0.0`, `3.0`, `3`, `latest`](https://github.com/distribution/distribution-library-image/blob/f83883590f5afda69afafbc5aaa5fde3686f47cf/Dockerfile)
 
--	[`2.8.3`, `2.8`, `2`](https://github.com/distribution/distribution-library-image/blob/39dd72feaab7066334829d6945c54bc51a0aee98/Dockerfile)
-
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
