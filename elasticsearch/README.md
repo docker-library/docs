@@ -30,7 +30,7 @@ WARNING:
 
 -	[`8.18.2`](https://github.com/elastic/dockerfiles/blob/1224fffeb3ad5be8a373d52d0906a6c70146b27b/elasticsearch/Dockerfile)
 
--	[`9.0.1`](https://github.com/elastic/dockerfiles/blob/c1767391264142d319c5aebbc7b44ff935ecb40d/elasticsearch/Dockerfile)
+-	[`9.0.2`](https://github.com/elastic/dockerfiles/blob/6e12e2f27f2ef93e0e22aa6b8775b77d19fe4271/elasticsearch/Dockerfile)
 
 # Quick reference (cont.)
 
