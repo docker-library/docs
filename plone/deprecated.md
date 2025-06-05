@@ -1,7 +1,7 @@
 # ⚠️ DEPRECATION NOTICE ⚠️
 
 -	Plone 4.x is no longer supported.
--	Plone 5.x is out of maintenance support, and will exit security support on 2024-10-31.
+-	Plone 5.x is no longer supported.
 -	It is strongly recommended to migrate to the latest available Plone version. See https://plone.org/download/release-schedule for details.
 
 The official Docker images for Plone 5.x and Plone 4.x are available here, and are maintained by community volunteers.
