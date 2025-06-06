@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm64v8` builds of [the `ros` official image](https://hub.docker.com/_/ros) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -23,22 +25,6 @@ WARNING:
 	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
-
--	[`indigo-ros-core`, `indigo-ros-core-trusty`](https://github.com/osrf/docker_images/blob/51ba1c72c513b62e8825c3df015ca4d926ac688c/ros/indigo/ubuntu/trusty/ros-core/Dockerfile)
-
--	[`indigo-ros-base`, `indigo-ros-base-trusty`, `indigo`](https://github.com/osrf/docker_images/blob/20061b005b245d1b7e23626afd0ea2c39de9db49/ros/indigo/ubuntu/trusty/ros-base/Dockerfile)
-
--	[`indigo-robot`, `indigo-robot-trusty`](https://github.com/osrf/docker_images/blob/20061b005b245d1b7e23626afd0ea2c39de9db49/ros/indigo/ubuntu/trusty/robot/Dockerfile)
-
--	[`indigo-perception`, `indigo-perception-trusty`](https://github.com/osrf/docker_images/blob/20061b005b245d1b7e23626afd0ea2c39de9db49/ros/indigo/ubuntu/trusty/perception/Dockerfile)
-
--	[`jade-ros-core`, `jade-ros-core-trusty`](https://github.com/osrf/docker_images/blob/51ba1c72c513b62e8825c3df015ca4d926ac688c/ros/jade/ubuntu/trusty/ros-core/Dockerfile)
-
--	[`jade-ros-base`, `jade-ros-base-trusty`, `jade`](https://github.com/osrf/docker_images/blob/dbda2abfbee89ebab4b33bdb1cfaec6dc36a3822/ros/jade/ubuntu/trusty/ros-base/Dockerfile)
-
--	[`jade-robot`, `jade-robot-trusty`](https://github.com/osrf/docker_images/blob/dbda2abfbee89ebab4b33bdb1cfaec6dc36a3822/ros/jade/ubuntu/trusty/robot/Dockerfile)
-
--	[`jade-perception`, `jade-perception-trusty`](https://github.com/osrf/docker_images/blob/dbda2abfbee89ebab4b33bdb1cfaec6dc36a3822/ros/jade/ubuntu/trusty/perception/Dockerfile)
 
 -	[`kinetic-ros-core`, `kinetic-ros-core-xenial`](https://github.com/osrf/docker_images/blob/9ab23751d41735b448da8cfa1580958279ae5101/ros/kinetic/ubuntu/xenial/ros-core/Dockerfile)
 
@@ -55,14 +41,6 @@ WARNING:
 -	[`lunar-robot`, `lunar-robot-xenial`](https://github.com/osrf/docker_images/blob/d81c0004d43383a6cd0f7b5a9b3020300f3cb1ca/ros/lunar/ubuntu/xenial/robot/Dockerfile)
 
 -	[`lunar-perception`, `lunar-perception-xenial`](https://github.com/osrf/docker_images/blob/d81c0004d43383a6cd0f7b5a9b3020300f3cb1ca/ros/lunar/ubuntu/xenial/perception/Dockerfile)
-
--	[`lunar-ros-core-zesty`](https://github.com/osrf/docker_images/blob/51ba1c72c513b62e8825c3df015ca4d926ac688c/ros/lunar/ubuntu/zesty/ros-core/Dockerfile)
-
--	[`lunar-ros-base-zesty`](https://github.com/osrf/docker_images/blob/4cfa1c7fd7e4f6ec638d1615f12133edbc100731/ros/lunar/ubuntu/zesty/ros-base/Dockerfile)
-
--	[`lunar-robot-zesty`](https://github.com/osrf/docker_images/blob/4cfa1c7fd7e4f6ec638d1615f12133edbc100731/ros/lunar/ubuntu/zesty/robot/Dockerfile)
-
--	[`lunar-perception-zesty`](https://github.com/osrf/docker_images/blob/4cfa1c7fd7e4f6ec638d1615f12133edbc100731/ros/lunar/ubuntu/zesty/perception/Dockerfile)
 
 -	[`melodic-ros-core`, `melodic-ros-core-bionic`](https://github.com/osrf/docker_images/blob/9ab23751d41735b448da8cfa1580958279ae5101/ros/melodic/ubuntu/bionic/ros-core/Dockerfile)
 
@@ -176,7 +154,7 @@ The Robot Operating System (ROS) is a set of software libraries and tools that h
 To create your own ROS docker images and install custom packages, here's a simple example of installing the C++, Python client library demos using the official released Debian packages via apt-get.
 
 ```dockerfile
-FROM ros:foxy
+FROM arm64v8/ros:foxy
 
 # install ros package
 RUN apt-get update && apt-get install -y \
@@ -207,7 +185,7 @@ $ docker run -it --rm my/ros:app
 To create your own ROS docker images and build custom packages, here's a simple example of installing a package's build dependencies, compiling it from source, and installing the resulting build artifacts into a final multi-stage image layer.
 
 ```dockerfile
-ARG FROM_IMAGE=ros:foxy
+ARG FROM_IMAGE=arm64v8/ros:foxy
 ARG OVERLAY_WS=/opt/ros/overlay_ws
 
 # multi-stage for caching
@@ -303,7 +281,7 @@ ROS uses the `~/.ros/` directory for storing logs, and debugging info. If you wi
 For example, if one wishes to use their own `.ros` folder that already resides in their local home directory, with a username of `ubuntu`, we can simply launch the container with an additional volume argument:
 
 ```console
-$ docker run -v "/home/ubuntu/.ros/:/root/.ros/" ros
+$ docker run -v "/home/ubuntu/.ros/:/root/.ros/" arm64v8/ros
 ```
 
 ### Devices
@@ -369,7 +347,7 @@ $ docker compose rm
 To ease ROS 2 migration, [`ros1_bridge`](https://index.ros.org/p/ros1_bridge) is a ROS 2 package that provides bidirectional communication between ROS 1 and ROS 2. As a minimal example, given the ROS 2 Dockerfile above, we'll create the ROS 1 equivalent below, and name the Dockerfile appropriately.
 
 ```dockerfile
-FROM ros:noetic
+FROM arm64v8/ros:noetic
 
 # install ros package
 RUN apt-get update && apt-get install -y \
