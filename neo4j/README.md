@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `windows-amd64` builds of [the `neo4j` official image](https://hub.docker.com/_/neo4j) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,25 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2025.05.0-community-bullseye`, `2025.05-community-bullseye`, `2025-community-bullseye`, `2025.05.0-community`, `2025.05-community`, `2025-community`, `2025.05.0-bullseye`, `2025.05-bullseye`, `2025-bullseye`, `2025.05.0`, `2025.05`, `2025`, `community-bullseye`, `community`, `bullseye`, `latest`](https://github.com/neo4j/docker-neo4j-publish/blob/e9e870d30bcb8e30daca71ca31d809dd018645ea/2025.05.0/bullseye/community/Dockerfile)
-
--	[`2025.05.0-enterprise-bullseye`, `2025.05-enterprise-bullseye`, `2025-enterprise-bullseye`, `2025.05.0-enterprise`, `2025.05-enterprise`, `2025-enterprise`, `enterprise-bullseye`, `enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/e9e870d30bcb8e30daca71ca31d809dd018645ea/2025.05.0/bullseye/enterprise/Dockerfile)
-
--	[`2025.05.0-community-ubi9`, `2025.05-community-ubi9`, `2025-community-ubi9`, `2025.05.0-ubi9`, `2025.05-ubi9`, `2025-ubi9`, `community-ubi9`, `ubi9`](https://github.com/neo4j/docker-neo4j-publish/blob/e9e870d30bcb8e30daca71ca31d809dd018645ea/2025.05.0/ubi9/community/Dockerfile)
-
--	[`2025.05.0-enterprise-ubi9`, `2025.05-enterprise-ubi9`, `2025-enterprise-ubi9`, `enterprise-ubi9`](https://github.com/neo4j/docker-neo4j-publish/blob/e9e870d30bcb8e30daca71ca31d809dd018645ea/2025.05.0/ubi9/enterprise/Dockerfile)
-
--	[`5.26.7-community-bullseye`, `5.26-community-bullseye`, `5-community-bullseye`, `5.26.7-community`, `5.26-community`, `5-community`, `5.26.7-bullseye`, `5.26-bullseye`, `5-bullseye`, `5.26.7`, `5.26`, `5`](https://github.com/neo4j/docker-neo4j-publish/blob/f2ea9c4a3a1afcaf2d5ea9654fe55ff52fc1e86f/5.26.7/bullseye/community/Dockerfile)
-
--	[`5.26.7-enterprise-bullseye`, `5.26-enterprise-bullseye`, `5-enterprise-bullseye`, `5.26.7-enterprise`, `5.26-enterprise`, `5-enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/f2ea9c4a3a1afcaf2d5ea9654fe55ff52fc1e86f/5.26.7/bullseye/enterprise/Dockerfile)
-
--	[`5.26.7-community-ubi9`, `5.26-community-ubi9`, `5-community-ubi9`, `5.26.7-ubi9`, `5.26-ubi9`, `5-ubi9`](https://github.com/neo4j/docker-neo4j-publish/blob/f2ea9c4a3a1afcaf2d5ea9654fe55ff52fc1e86f/5.26.7/ubi9/community/Dockerfile)
-
--	[`5.26.7-enterprise-ubi9`, `5.26-enterprise-ubi9`, `5-enterprise-ubi9`](https://github.com/neo4j/docker-neo4j-publish/blob/f2ea9c4a3a1afcaf2d5ea9654fe55ff52fc1e86f/5.26.7/ubi9/enterprise/Dockerfile)
-
--	[`4.4.44`, `4.4.44-community`, `4.4`, `4.4-community`](https://github.com/neo4j/docker-neo4j-publish/blob/a0fc315f717639f19237bffd1ef1b9b4ecab4182/4.4.44/bullseye/community/Dockerfile)
-
--	[`4.4.44-enterprise`, `4.4-enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/a0fc315f717639f19237bffd1ef1b9b4ecab4182/4.4.44/bullseye/enterprise/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `windows-amd64` ARCHITECTURE
 
 # Quick reference (cont.)
 
@@ -77,7 +61,7 @@ You can start a Neo4j container like this:
 docker run \
     --publish=7474:7474 --publish=7687:7687 \
     --volume=$HOME/neo4j/data:/data \
-    neo4j
+    winamd64/neo4j
 ```
 
 which allows you to access neo4j through your browser at [http://localhost:7474](http://localhost:7474).
