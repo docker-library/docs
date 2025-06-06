@@ -24,19 +24,105 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`noetic-ros-core`, `noetic-ros-core-focal`](https://github.com/osrf/docker_images/blob/b525e9ef659ce448db6150fd5407ef62b2c5b265/ros/noetic/ubuntu/focal/ros-core/Dockerfile)
+-	[`indigo-ros-core`, `indigo-ros-core-trusty`](https://github.com/osrf/docker_images/blob/51ba1c72c513b62e8825c3df015ca4d926ac688c/ros/indigo/ubuntu/trusty/ros-core/Dockerfile)
 
--	[`noetic-ros-base`, `noetic-ros-base-focal`, `noetic`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/noetic/ubuntu/focal/ros-base/Dockerfile)
+-	[`indigo-ros-base`, `indigo-ros-base-trusty`, `indigo`](https://github.com/osrf/docker_images/blob/20061b005b245d1b7e23626afd0ea2c39de9db49/ros/indigo/ubuntu/trusty/ros-base/Dockerfile)
 
--	[`noetic-robot`, `noetic-robot-focal`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/noetic/ubuntu/focal/robot/Dockerfile)
+-	[`indigo-robot`, `indigo-robot-trusty`](https://github.com/osrf/docker_images/blob/20061b005b245d1b7e23626afd0ea2c39de9db49/ros/indigo/ubuntu/trusty/robot/Dockerfile)
 
--	[`noetic-perception`, `noetic-perception-focal`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/noetic/ubuntu/focal/perception/Dockerfile)
+-	[`indigo-perception`, `indigo-perception-trusty`](https://github.com/osrf/docker_images/blob/20061b005b245d1b7e23626afd0ea2c39de9db49/ros/indigo/ubuntu/trusty/perception/Dockerfile)
+
+-	[`jade-ros-core`, `jade-ros-core-trusty`](https://github.com/osrf/docker_images/blob/51ba1c72c513b62e8825c3df015ca4d926ac688c/ros/jade/ubuntu/trusty/ros-core/Dockerfile)
+
+-	[`jade-ros-base`, `jade-ros-base-trusty`, `jade`](https://github.com/osrf/docker_images/blob/dbda2abfbee89ebab4b33bdb1cfaec6dc36a3822/ros/jade/ubuntu/trusty/ros-base/Dockerfile)
+
+-	[`jade-robot`, `jade-robot-trusty`](https://github.com/osrf/docker_images/blob/dbda2abfbee89ebab4b33bdb1cfaec6dc36a3822/ros/jade/ubuntu/trusty/robot/Dockerfile)
+
+-	[`jade-perception`, `jade-perception-trusty`](https://github.com/osrf/docker_images/blob/dbda2abfbee89ebab4b33bdb1cfaec6dc36a3822/ros/jade/ubuntu/trusty/perception/Dockerfile)
+
+-	[`kinetic-ros-core`, `kinetic-ros-core-xenial`](https://github.com/osrf/docker_images/blob/9ab23751d41735b448da8cfa1580958279ae5101/ros/kinetic/ubuntu/xenial/ros-core/Dockerfile)
+
+-	[`kinetic-ros-base`, `kinetic-ros-base-xenial`, `kinetic`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/kinetic/ubuntu/xenial/ros-base/Dockerfile)
+
+-	[`kinetic-robot`, `kinetic-robot-xenial`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/kinetic/ubuntu/xenial/robot/Dockerfile)
+
+-	[`kinetic-perception`, `kinetic-perception-xenial`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/kinetic/ubuntu/xenial/perception/Dockerfile)
+
+-	[`lunar-ros-core`, `lunar-ros-core-xenial`](https://github.com/osrf/docker_images/blob/51ba1c72c513b62e8825c3df015ca4d926ac688c/ros/lunar/ubuntu/xenial/ros-core/Dockerfile)
+
+-	[`lunar-ros-base`, `lunar-ros-base-xenial`, `lunar`](https://github.com/osrf/docker_images/blob/d81c0004d43383a6cd0f7b5a9b3020300f3cb1ca/ros/lunar/ubuntu/xenial/ros-base/Dockerfile)
+
+-	[`lunar-robot`, `lunar-robot-xenial`](https://github.com/osrf/docker_images/blob/d81c0004d43383a6cd0f7b5a9b3020300f3cb1ca/ros/lunar/ubuntu/xenial/robot/Dockerfile)
+
+-	[`lunar-perception`, `lunar-perception-xenial`](https://github.com/osrf/docker_images/blob/d81c0004d43383a6cd0f7b5a9b3020300f3cb1ca/ros/lunar/ubuntu/xenial/perception/Dockerfile)
+
+-	[`lunar-ros-core-zesty`](https://github.com/osrf/docker_images/blob/51ba1c72c513b62e8825c3df015ca4d926ac688c/ros/lunar/ubuntu/zesty/ros-core/Dockerfile)
+
+-	[`lunar-ros-base-zesty`](https://github.com/osrf/docker_images/blob/4cfa1c7fd7e4f6ec638d1615f12133edbc100731/ros/lunar/ubuntu/zesty/ros-base/Dockerfile)
+
+-	[`lunar-robot-zesty`](https://github.com/osrf/docker_images/blob/4cfa1c7fd7e4f6ec638d1615f12133edbc100731/ros/lunar/ubuntu/zesty/robot/Dockerfile)
+
+-	[`lunar-perception-zesty`](https://github.com/osrf/docker_images/blob/4cfa1c7fd7e4f6ec638d1615f12133edbc100731/ros/lunar/ubuntu/zesty/perception/Dockerfile)
+
+-	[`melodic-ros-core`, `melodic-ros-core-bionic`](https://github.com/osrf/docker_images/blob/9ab23751d41735b448da8cfa1580958279ae5101/ros/melodic/ubuntu/bionic/ros-core/Dockerfile)
+
+-	[`melodic-ros-base`, `melodic-ros-base-bionic`, `melodic`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/melodic/ubuntu/bionic/ros-base/Dockerfile)
+
+-	[`melodic-robot`, `melodic-robot-bionic`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/melodic/ubuntu/bionic/robot/Dockerfile)
+
+-	[`melodic-perception`, `melodic-perception-bionic`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/melodic/ubuntu/bionic/perception/Dockerfile)
+
+-	[`noetic-ros-core-buster`](https://github.com/osrf/docker_images/blob/9ab23751d41735b448da8cfa1580958279ae5101/ros/noetic/debian/buster/ros-core/Dockerfile)
+
+-	[`noetic-ros-base-buster`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/noetic/debian/buster/ros-base/Dockerfile)
+
+-	[`noetic-robot-buster`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/noetic/debian/buster/robot/Dockerfile)
+
+-	[`noetic-perception-buster`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/noetic/debian/buster/perception/Dockerfile)
+
+-	[`ardent-ros-core`, `ardent-ros-core-xenial`](https://github.com/osrf/docker_images/blob/51ba1c72c513b62e8825c3df015ca4d926ac688c/ros/ardent/ubuntu/xenial/ros-core/Dockerfile)
+
+-	[`ardent-ros-base`, `ardent-ros-base-xenial`, `ardent`](https://github.com/osrf/docker_images/blob/9619e8b2fedc763707c07bd5568f2401bfc5b117/ros/ardent/ubuntu/xenial/ros-base/Dockerfile)
+
+-	[`bouncy-ros-core`, `bouncy-ros-core-bionic`](https://github.com/osrf/docker_images/blob/51ba1c72c513b62e8825c3df015ca4d926ac688c/ros/bouncy/ubuntu/bionic/ros-core/Dockerfile)
+
+-	[`bouncy-ros-base`, `bouncy-ros-base-bionic`, `bouncy`](https://github.com/osrf/docker_images/blob/9619e8b2fedc763707c07bd5568f2401bfc5b117/ros/bouncy/ubuntu/bionic/ros-base/Dockerfile)
+
+-	[`crystal-ros-core`, `crystal-ros-core-bionic`](https://github.com/osrf/docker_images/blob/51ba1c72c513b62e8825c3df015ca4d926ac688c/ros/crystal/ubuntu/bionic/ros-core/Dockerfile)
+
+-	[`crystal-ros-base`, `crystal-ros-base-bionic`, `crystal`](https://github.com/osrf/docker_images/blob/9619e8b2fedc763707c07bd5568f2401bfc5b117/ros/crystal/ubuntu/bionic/ros-base/Dockerfile)
+
+-	[`dashing-ros-core`, `dashing-ros-core-bionic`](https://github.com/osrf/docker_images/blob/9ab23751d41735b448da8cfa1580958279ae5101/ros/dashing/ubuntu/bionic/ros-core/Dockerfile)
+
+-	[`dashing-ros-base`, `dashing-ros-base-bionic`, `dashing`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/dashing/ubuntu/bionic/ros-base/Dockerfile)
+
+-	[`dashing-ros1-bridge`, `dashing-ros1-bridge-bionic`](https://github.com/osrf/docker_images/blob/87074e54828d12dacf84f15273e95e03eeb17d24/ros/dashing/ubuntu/bionic/ros1-bridge/Dockerfile)
+
+-	[`eloquent-ros-core`, `eloquent-ros-core-bionic`](https://github.com/osrf/docker_images/blob/3b5cbe2c25b25fa2b5acc9770f5f0b71143f864d/ros/eloquent/ubuntu/bionic/ros-core/Dockerfile)
+
+-	[`eloquent-ros-base`, `eloquent-ros-base-bionic`, `eloquent`](https://github.com/osrf/docker_images/blob/b3e79c3aef3687b56b3c1052ae38aa7010234834/ros/eloquent/ubuntu/bionic/ros-base/Dockerfile)
+
+-	[`eloquent-ros1-bridge`, `eloquent-ros1-bridge-bionic`](https://github.com/osrf/docker_images/blob/3b5cbe2c25b25fa2b5acc9770f5f0b71143f864d/ros/eloquent/ubuntu/bionic/ros1-bridge/Dockerfile)
+
+-	[`foxy-ros-core`, `foxy-ros-core-focal`](https://github.com/osrf/docker_images/blob/9ab23751d41735b448da8cfa1580958279ae5101/ros/foxy/ubuntu/focal/ros-core/Dockerfile)
+
+-	[`foxy-ros-base`, `foxy-ros-base-focal`, `foxy`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/foxy/ubuntu/focal/ros-base/Dockerfile)
+
+-	[`galactic-ros-core`, `galactic-ros-core-focal`](https://github.com/osrf/docker_images/blob/9ab23751d41735b448da8cfa1580958279ae5101/ros/galactic/ubuntu/focal/ros-core/Dockerfile)
+
+-	[`galactic-ros-base`, `galactic-ros-base-focal`, `galactic`](https://github.com/osrf/docker_images/blob/6511d8fc0754616550b7f5ea31a40084c2462938/ros/galactic/ubuntu/focal/ros-base/Dockerfile)
 
 -	[`humble-ros-core`, `humble-ros-core-jammy`](https://github.com/osrf/docker_images/blob/eb5634cf92ba079897e44fb7541d3b78aa6cf717/ros/humble/ubuntu/jammy/ros-core/Dockerfile)
 
 -	[`humble-ros-base`, `humble-ros-base-jammy`, `humble`](https://github.com/osrf/docker_images/blob/20e3ba685bb353a3c00be9ba01c1b7a6823c9472/ros/humble/ubuntu/jammy/ros-base/Dockerfile)
 
 -	[`humble-perception`, `humble-perception-jammy`](https://github.com/osrf/docker_images/blob/20d40c96b426b8956dec203e236abff2ec29b188/ros/humble/ubuntu/jammy/perception/Dockerfile)
+
+-	[`iron-ros-core`, `iron-ros-core-jammy`](https://github.com/osrf/docker_images/blob/2ad854492209b8dbab303578a5baedab4d5ab41d/ros/iron/ubuntu/jammy/ros-core/Dockerfile)
+
+-	[`iron-ros-base`, `iron-ros-base-jammy`, `iron`](https://github.com/osrf/docker_images/blob/bca53bf4c09d771be3ff735da4157203b53ebc2b/ros/iron/ubuntu/jammy/ros-base/Dockerfile)
+
+-	[`iron-perception`, `iron-perception-jammy`](https://github.com/osrf/docker_images/blob/bca53bf4c09d771be3ff735da4157203b53ebc2b/ros/iron/ubuntu/jammy/perception/Dockerfile)
 
 -	[`jazzy-ros-core`, `jazzy-ros-core-noble`](https://github.com/osrf/docker_images/blob/eb5634cf92ba079897e44fb7541d3b78aa6cf717/ros/jazzy/ubuntu/noble/ros-core/Dockerfile)
 
