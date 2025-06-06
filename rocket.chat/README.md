@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `ppc64le` builds of [the `rocket.chat` official image](https://hub.docker.com/_/rocket.chat) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,19 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.7.0`, `7.7`, `7`, `latest`](https://github.com/RocketChat/Docker.Official.Image/blob/3130b58c0def2f3b03ce78af368ef8506e250b92/7.7/Dockerfile)
-
--	[`7.6.2`, `7.6`](https://github.com/RocketChat/Docker.Official.Image/blob/3130b58c0def2f3b03ce78af368ef8506e250b92/7.6/Dockerfile)
-
--	[`7.5.1`, `7.5`](https://github.com/RocketChat/Docker.Official.Image/blob/0c1b4f5e1eaf9ee047b5dc8e331e96cfb04655ca/7.5/Dockerfile)
-
--	[`7.4.2`, `7.4`](https://github.com/RocketChat/Docker.Official.Image/blob/0c1b4f5e1eaf9ee047b5dc8e331e96cfb04655ca/7.4/Dockerfile)
-
--	[`7.3.4`, `7.3`](https://github.com/RocketChat/Docker.Official.Image/blob/0c1b4f5e1eaf9ee047b5dc8e331e96cfb04655ca/7.3/Dockerfile)
-
--	[`7.2.5`, `7.2`](https://github.com/RocketChat/Docker.Official.Image/blob/128a267feefa95572213f84274b34db155a87d9b/7.2/Dockerfile)
-
--	[`7.1.5`, `7.1`](https://github.com/RocketChat/Docker.Official.Image/blob/128a267feefa95572213f84274b34db155a87d9b/7.1/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `ppc64le` ARCHITECTURE
 
 # Quick reference (cont.)
 
@@ -80,7 +70,7 @@ $ docker exec -ti db mongo --eval "printjson(rs.initiate())"
 Then start Rocket.Chat linked to this mongo instance:
 
 ```console
-$ docker run --name rocketchat --link db --env MONGO_OPLOG_URL=mongodb://db:27017/local -d rocket.chat
+$ docker run --name rocketchat --link db --env MONGO_OPLOG_URL=mongodb://db:27017/local -d ppc64le/rocket.chat
 ```
 
 This will start a Rocket.Chat instance listening on the default Meteor port of 3000 on the container.
@@ -88,7 +78,7 @@ This will start a Rocket.Chat instance listening on the default Meteor port of 3
 If you'd like to be able to access the instance directly at standard port on the host machine:
 
 ```console
-$ docker run --name rocketchat -p 80:3000 --link db --env ROOT_URL=http://localhost --env MONGO_OPLOG_URL=mongodb://db:27017/local -d rocket.chat
+$ docker run --name rocketchat -p 80:3000 --link db --env ROOT_URL=http://localhost --env MONGO_OPLOG_URL=mongodb://db:27017/local -d ppc64le/rocket.chat
 ```
 
 Then, access it via `http://localhost` in a browser. Replace `localhost` in `ROOT_URL` with your own domain name if you are hosting at your own domain.
@@ -96,7 +86,7 @@ Then, access it via `http://localhost` in a browser. Replace `localhost` in `ROO
 If you're using a third party Mongo provider, or working with Kubernetes, you need to override the `MONGO_URL` environment variable:
 
 ```console
-$ docker run --name rocketchat -p 80:3000 --env ROOT_URL=http://localhost --env MONGO_URL=mongodb://mymongourl/mydb --env MONGO_OPLOG_URL=mongodb://mymongourl:27017/local -d rocket.chat
+$ docker run --name rocketchat -p 80:3000 --env ROOT_URL=http://localhost --env MONGO_URL=mongodb://mymongourl/mydb --env MONGO_OPLOG_URL=mongodb://mymongourl:27017/local -d ppc64le/rocket.chat
 ```
 
 ### Check our docs
