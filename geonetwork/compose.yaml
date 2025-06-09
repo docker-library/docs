@@ -71,8 +71,7 @@ services:
       POSTGRES_USER: geonetwork
       POSTGRES_PASSWORD: geonetwork
       POSTGRES_DB: geonetwork
-    command: [postgres, -c, log_statement=all, -c, logging_collector=true, -c, log_file_mode=0644,
-      -c, log_directory=/var/log/postgresql, -c, log_filename=postgresql.log]
+    command: [postgres, -c, log_statement=all, -c, logging_collector=true, -c, log_file_mode=0644, -c, log_directory=/var/log/postgresql, -c, log_filename=postgresql.log]
     healthcheck:
       test: [CMD-SHELL, pg_isready -U postgres]
       interval: 5s
