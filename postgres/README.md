@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`18beta1`, `18beta1-bookworm`](https://github.com/docker-library/postgres/blob/2c6fe8daca9d2ccc143afe6b1cdbc1eb80379d3f/18/bookworm/Dockerfile)
+-	[`18beta1`, `18beta1-bookworm`](https://github.com/docker-library/postgres/blob/46e8474a6e8ac8460416ac62afcbdf59cfeb6366/18/bookworm/Dockerfile)
 
--	[`18beta1-bullseye`](https://github.com/docker-library/postgres/blob/2c6fe8daca9d2ccc143afe6b1cdbc1eb80379d3f/18/bullseye/Dockerfile)
+-	[`18beta1-bullseye`](https://github.com/docker-library/postgres/blob/46e8474a6e8ac8460416ac62afcbdf59cfeb6366/18/bullseye/Dockerfile)
 
 -	[`18beta1-alpine3.22`, `18beta1-alpine`](https://github.com/docker-library/postgres/blob/2c6fe8daca9d2ccc143afe6b1cdbc1eb80379d3f/18/alpine3.22/Dockerfile)
 
