@@ -42,11 +42,11 @@ WARNING:
 
 -	[`kilted-perception`, `kilted-perception-noble`](https://github.com/osrf/docker_images/blob/b835a530495c0b411a0d15db858710a2748ee0a0/ros/kilted/ubuntu/noble/perception/Dockerfile)
 
--	[`rolling-ros-core`, `rolling-ros-core-noble`](https://github.com/osrf/docker_images/blob/eb5634cf92ba079897e44fb7541d3b78aa6cf717/ros/rolling/ubuntu/noble/ros-core/Dockerfile)
+-	[`rolling-ros-core`, `rolling-ros-core-noble`](https://github.com/osrf/docker_images/blob/8cf2903c0f8813aacd3042c71d4d2d56d5068ad5/ros/rolling/ubuntu/noble/ros-core/Dockerfile)
 
--	[`rolling-ros-base`, `rolling-ros-base-noble`, `rolling`](https://github.com/osrf/docker_images/blob/2e9b4e3c02bff2c70271e6f0fd15d4132e8cbcbb/ros/rolling/ubuntu/noble/ros-base/Dockerfile)
+-	[`rolling-ros-base`, `rolling-ros-base-noble`, `rolling`](https://github.com/osrf/docker_images/blob/8cf2903c0f8813aacd3042c71d4d2d56d5068ad5/ros/rolling/ubuntu/noble/ros-base/Dockerfile)
 
--	[`rolling-perception`, `rolling-perception-noble`](https://github.com/osrf/docker_images/blob/2e9b4e3c02bff2c70271e6f0fd15d4132e8cbcbb/ros/rolling/ubuntu/noble/perception/Dockerfile)
+-	[`rolling-perception`, `rolling-perception-noble`](https://github.com/osrf/docker_images/blob/8cf2903c0f8813aacd3042c71d4d2d56d5068ad5/ros/rolling/ubuntu/noble/perception/Dockerfile)
 
 # Quick reference (cont.)
 
