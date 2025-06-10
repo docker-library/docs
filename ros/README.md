@@ -24,26 +24,6 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`noetic-ros-core`, `noetic-ros-core-focal`](https://github.com/osrf/docker_images/blob/f1d91dccd2aa75a52d7beffd93196455043e695c/ros/noetic/ubuntu/focal/ros-core/Dockerfile)
-
--	[`noetic-ros-base`, `noetic-ros-base-focal`, `noetic`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/noetic/ubuntu/focal/ros-base/Dockerfile)
-
--	[`noetic-robot`, `noetic-robot-focal`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/noetic/ubuntu/focal/robot/Dockerfile)
-
--	[`noetic-perception`, `noetic-perception-focal`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/noetic/ubuntu/focal/perception/Dockerfile)
-
--	[`foxy-ros-core`, `foxy-ros-core-focal`](https://github.com/osrf/docker_images/blob/f1d91dccd2aa75a52d7beffd93196455043e695c/ros/foxy/ubuntu/focal/ros-core/Dockerfile)
-
--	[`foxy-ros-base`, `foxy-ros-base-focal`, `foxy`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/foxy/ubuntu/focal/ros-base/Dockerfile)
-
--	[`foxy-ros1-bridge`, `foxy-ros1-bridge-focal`](https://github.com/osrf/docker_images/blob/40cfb45357e267ea9aeb714e9b556ae77c859e76/ros/foxy/ubuntu/focal/ros1-bridge/Dockerfile)
-
--	[`galactic-ros-core`, `galactic-ros-core-focal`](https://github.com/osrf/docker_images/blob/f1d91dccd2aa75a52d7beffd93196455043e695c/ros/galactic/ubuntu/focal/ros-core/Dockerfile)
-
--	[`galactic-ros-base`, `galactic-ros-base-focal`, `galactic`](https://github.com/osrf/docker_images/blob/6511d8fc0754616550b7f5ea31a40084c2462938/ros/galactic/ubuntu/focal/ros-base/Dockerfile)
-
--	[`galactic-ros1-bridge`, `galactic-ros1-bridge-focal`](https://github.com/osrf/docker_images/blob/40cfb45357e267ea9aeb714e9b556ae77c859e76/ros/galactic/ubuntu/focal/ros1-bridge/Dockerfile)
-
 -	[`humble-ros-core`, `humble-ros-core-jammy`](https://github.com/osrf/docker_images/blob/eb5634cf92ba079897e44fb7541d3b78aa6cf717/ros/humble/ubuntu/jammy/ros-core/Dockerfile)
 
 -	[`humble-ros-base`, `humble-ros-base-jammy`, `humble`](https://github.com/osrf/docker_images/blob/20e3ba685bb353a3c00be9ba01c1b7a6823c9472/ros/humble/ubuntu/jammy/ros-base/Dockerfile)
@@ -74,7 +54,7 @@ WARNING:
 	[https://github.com/osrf/docker_images/issues](https://github.com/osrf/docker_images/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/ros/), [`arm32v7`](https://hub.docker.com/r/arm32v7/ros/), [`arm64v8`](https://hub.docker.com/r/arm64v8/ros/)
+	[`amd64`](https://hub.docker.com/r/amd64/ros/), [`arm64v8`](https://hub.docker.com/r/arm64v8/ros/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/ros/` directory](https://github.com/docker-library/repo-info/blob/master/repos/ros) ([history](https://github.com/docker-library/repo-info/commits/master/repos/ros))  
