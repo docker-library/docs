@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `ppc64le` builds of [the `xwiki` official image](https://hub.docker.com/_/xwiki) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,17 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`17`, `17.4`, `17.4.0`, `17-mysql-tomcat`, `17.4-mysql-tomcat`, `17.4.0-mysql-tomcat`, `mysql-tomcat`, `stable-mysql-tomcat`, `stable-mysql`, `stable`, `latest`](https://github.com/xwiki-contrib/docker-xwiki/blob/4b6bc78ad062a9d60192709b9785c3263b8e5dff/17/mysql-tomcat/Dockerfile)
-
--	[`17-postgres-tomcat`, `17.4-postgres-tomcat`, `17.4.0-postgres-tomcat`, `postgres-tomcat`, `stable-postgres-tomcat`, `stable-postgres`](https://github.com/xwiki-contrib/docker-xwiki/blob/4b6bc78ad062a9d60192709b9785c3263b8e5dff/17/postgres-tomcat/Dockerfile)
-
--	[`17-mariadb-tomcat`, `17.4-mariadb-tomcat`, `17.4.0-mariadb-tomcat`, `mariadb-tomcat`, `stable-mariadb-tomcat`, `stable-mariadb`](https://github.com/xwiki-contrib/docker-xwiki/blob/4b6bc78ad062a9d60192709b9785c3263b8e5dff/17/mariadb-tomcat/Dockerfile)
-
--	[`16`, `16.10`, `16.10.8`, `16-mysql-tomcat`, `16.10-mysql-tomcat`, `16.10.8-mysql-tomcat`, `lts-mysql-tomcat`, `lts-mysql`, `lts`](https://github.com/xwiki-contrib/docker-xwiki/blob/432858b827200132c33219374999c43a4a8d6f5b/16/mysql-tomcat/Dockerfile)
-
--	[`16-postgres-tomcat`, `16.10-postgres-tomcat`, `16.10.8-postgres-tomcat`, `lts-postgres-tomcat`, `lts-postgres`](https://github.com/xwiki-contrib/docker-xwiki/blob/432858b827200132c33219374999c43a4a8d6f5b/16/postgres-tomcat/Dockerfile)
-
--	[`16-mariadb-tomcat`, `16.10-mariadb-tomcat`, `16.10.8-mariadb-tomcat`, `lts-mariadb-tomcat`, `lts-mariadb`](https://github.com/xwiki-contrib/docker-xwiki/blob/432858b827200132c33219374999c43a4a8d6f5b/16/mariadb-tomcat/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `ppc64le` ARCHITECTURE
 
 # Quick reference (cont.)
 
