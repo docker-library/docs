@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `i386` builds of [the `almalinux` official image](https://hub.docker.com/_/almalinux) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,21 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`10-kitten`, `10-kitten-20250611`](https://github.com/AlmaLinux/container-images/blob/6135d73e0784e8ca6ca279d509e095e0daf5b6a9/default/amd64/Dockerfile)
-
--	[`10-kitten-minimal`, `10-kitten-minimal-20250611`](https://github.com/AlmaLinux/container-images/blob/6135d73e0784e8ca6ca279d509e095e0daf5b6a9/minimal/amd64/Dockerfile)
-
--	[`10`, `10.0`, `10.0-20250611`](https://github.com/AlmaLinux/container-images/blob/053340d6a579e7c6242951931f3a1b18717887ef/default/amd64/Dockerfile)
-
--	[`10-minimal`, `10.0-minimal`, `10.0-minimal-20250611`](https://github.com/AlmaLinux/container-images/blob/053340d6a579e7c6242951931f3a1b18717887ef/minimal/amd64/Dockerfile)
-
--	[`8`, `8.10`, `8.10-20250611`](https://github.com/AlmaLinux/container-images/blob/5e437611704aff1c6eb7c81a2b097fae4f0bcaae/default/amd64/Dockerfile)
-
--	[`8-minimal`, `8.10-minimal`, `8.10-minimal-20250611`](https://github.com/AlmaLinux/container-images/blob/5e437611704aff1c6eb7c81a2b097fae4f0bcaae/minimal/amd64/Dockerfile)
-
--	[`latest`, `9`, `9.6`, `9.6-20250611`](https://github.com/AlmaLinux/container-images/blob/39a9e4c8fa6266f1d58af9ba922e635694eeb380/default/amd64/Dockerfile)
-
--	[`minimal`, `9-minimal`, `9.6-minimal`, `9.6-minimal-20250611`](https://github.com/AlmaLinux/container-images/blob/39a9e4c8fa6266f1d58af9ba922e635694eeb380/minimal/amd64/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `i386` ARCHITECTURE
 
 # Quick reference (cont.)
 
@@ -71,13 +59,13 @@ WARNING:
 
 The default (platform) image is a general-purpose image with a full DNF stack and basic tools like find, tar, vi, etc.
 
-The `almalinux:latest` tag will always point to the latest stable release of the default image. Major releases and minor releases are also tagged with their version (e.g. `almalinux:8` or `almalinux:8.4`).
+The `i386/almalinux:latest` tag will always point to the latest stable release of the default image. Major releases and minor releases are also tagged with their version (e.g. `i386/almalinux:8` or `i386/almalinux:8.4`).
 
 ## Minimal image
 
 The minimal image is a stripped-down image that uses the microdnf package manager and contains a very limited package set. It is designed for applications that come with their own dependencies bundled (e.g. NodeJS, Python).
 
-The `almalinux:minimal` tag always points to the most recent version of the minimal image. Tags for major (e.g. `almalinux:8-minimal`) and minor (e.g. `almalinux:8.4-minimal`) releases are also available.
+The `i386/almalinux:minimal` tag always points to the most recent version of the minimal image. Tags for major (e.g. `i386/almalinux:8-minimal`) and minor (e.g. `i386/almalinux:8.4-minimal`) releases are also available.
 
 ### Upgrade policy
 
