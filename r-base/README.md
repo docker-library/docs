@@ -24,7 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.5.0`, `latest`](https://github.com/rocker-org/rocker/blob/995a8e88700f11166ab858fed1356948b9834545/r-base/4.5.0/Dockerfile)
+-	[`4.5.1`, `latest`](https://github.com/rocker-org/rocker/blob/6971f6286e907991a3b78e9d261ede20f9c31f49/r-base/4.5.1/Dockerfile)
 
 # Quick reference (cont.)
 
