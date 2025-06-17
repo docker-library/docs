@@ -47,6 +47,28 @@ docker exec -it influxdb3-enterprise influxdb3 generate token --admin
 docker exec -it influxdb3-enterprise influxdb3 create database enterprise_db --token <your_admin_token>
 ```
 
+## Mount data to persist across restarts
+
+To persist the `/var/lib/influxdb3` directory, use a volume mount:
+
+```bash
+docker run -d --name influxdb3-core \
+  -v influxdb3-data:/var/lib/influxdb3 \
+  -p 8086:8086 \
+  influxdb:3
+```
+
+Or bind a to a local host directory:
+
+```bash
+docker run -d --name influxdb3-core \
+  -v $PWD/influxdb3-data:/var/lib/influxdb3 \
+  -p 8086:8086 \
+  influxdb:3
+```
+
+Ensure the directory exists and has appropriate write permissions. 
+
 # What is InfluxDB?
 
 InfluxDB is the time series data platform designed to handle high write and query workloads. Using InfluxDB, you can collect, store, and process large amounts of timestamped data, including metrics and events for use cases such as DevOps monitoring, application metrics, IoT sensors, and event monitoring.
