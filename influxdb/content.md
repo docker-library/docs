@@ -1,3 +1,14 @@
+# What is InfluxDB 3?
+
+InfluxDB 3 is a database built to collect, process, transform, and store event and time series data, and is ideal for use cases that require real-time ingest and fast query response times to build user interfaces, monitoring, and automation solutions.
+
+InfluxDB 3 comes in two editions:
+
+- **InfluxDB 3 Core**: A free, open source version of the new engine for local development and prototyping.
+- **InfluxDB 3 Enterprise**: A production-grade, scalable time series database that includes support for clustering, security, and enterprise features.
+
+For full documentation, visit the [InfluxDB 3 documentation site](https://docs.influxdata.com)
+
 # What is InfluxDB?
 
 InfluxDB is the time series data platform designed to handle high write and query workloads. Using InfluxDB, you can collect, store, and process large amounts of timestamped data, including metrics and events for use cases such as DevOps monitoring, application metrics, IoT sensors, and event monitoring.
