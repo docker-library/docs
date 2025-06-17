@@ -24,7 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.7.0`, `7.7`, `7`, `latest`](https://github.com/RocketChat/Docker.Official.Image/blob/3130b58c0def2f3b03ce78af368ef8506e250b92/7.7/Dockerfile)
+-	[`7.7.1`, `7.7`, `7`, `latest`](https://github.com/RocketChat/Docker.Official.Image/blob/f8b830091f7a8eb1576c1db6b73f2e6bc244a34c/7.7/Dockerfile)
 
 -	[`7.6.3`, `7.6`](https://github.com/RocketChat/Docker.Official.Image/blob/baa98d62388a0ef1975816c8489679832ef8e8f8/7.6/Dockerfile)
 

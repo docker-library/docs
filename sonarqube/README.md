@@ -98,15 +98,15 @@ ulimit -u 8192
 
 ## Demo
 
-To quickly run a demo instance, see Using Docker on the [Try Out SonarQube](https://docs.sonarqube.org/latest/setup/get-started-2-minutes/) page. When you are ready to move to a more sustainable setup, take some time to read the **Installation** and **Configuration** sections below.
+To quickly run a demo instance, see Using Docker on the [Try Out SonarQube](https://docs.sonarsource.com/sonarqube-server/latest/try-out-sonarqube/) page. When you are ready to move to a more sustainable setup, take some time to read the **Installation** and **Configuration** sections below.
 
 ## Installation
 
 > **Multi-platform support**: Starting from SonarQube `9.9` LTS, the docker images support running both on `amd64` architecture and `arm64`-based Apple Silicon (M1).
 
-For installation instructions, see Installing the Server from the Docker Image on the [Install the Server](https://docs.sonarqube.org/latest/setup/install-server/) page.
+For installation instructions, see Installing the Server from the Docker Image on the [Install the Server](https://docs.sonarsource.com/sonarqube-server/latest/setup-and-upgrade/install-the-server/installing-sonarqube-from-docker/) page.
 
-To run a cluster with the SonarQube Server Data Center Edition, please refer to Installing SonarQube Server from the Docker Image on the [Install the Server as a Cluster](https://docs.sonarqube.org/latest/setup/install-cluster/) page.
+To run a cluster with the SonarQube Server Data Center Edition, please refer to Installing SonarQube Server from the Docker Image on the [Install the Server as a Cluster](https://docs.sonarsource.com/sonarqube-server/latest/setup-and-upgrade/install-the-server-as-a-cluster/) page.
 
 > The `lts` tag on Docker images is replaced with every new LTS release. If you want to avoid any automatic major upgrades, we recommend using the corresponding `9.9-<edition>` tag instead of `lts-<edition>`.
 
@@ -128,7 +128,7 @@ By default, the image will use an embedded H2 database that is not suited for pr
 
 > **Warning:** Only a single instance of SonarQube Server or SonarQube Community Build can connect to a database schema. If you're using a Docker Swarm or Kubernetes, make sure that multiple instances are never running on the same database schema simultaneously. This will cause the SonarQube to behave unpredictably, and data will be corrupted. There is no safeguard, as described on [SONAR-10362](https://jira.sonarsource.com/browse/SONAR-10362). The SonarQube Server Data Center Edition has the same limitation in that only one cluster can connect to one database schema at the same time.
 
-Set up a database by following the ["Installing the Database"](https://docs.sonarsource.com/sonarqube/latest/setup-and-upgrade/install-the-server/installing-the-database/) section.
+Set up a database by following the ["Installing the Database"](https://docs.sonarsource.com/sonarqube-server/latest/setup-and-upgrade/install-the-server/installing-the-database/) section.
 
 ### Use volumes
 
@@ -142,7 +142,7 @@ We recommend creating volumes for the following directories:
 
 ## Upgrading
 
-For upgrade instructions, see Upgrading from the Docker Image on the [Upgrade the Server](https://docs.sonarqube.org/latest/setup/upgrading/) page.
+For upgrade instructions, see Upgrading from the Docker Image on the [Upgrade the Server](https://docs.sonarsource.com/sonarqube-server/latest/server-upgrade-and-maintenance/upgrade/upgrade/) page.
 
 ## Advanced configuration
 
@@ -172,7 +172,7 @@ docker run --stop-timeout 3600 sonarqube
 
 ## Administration
 
-The administration guide can be found [here](https://redirect.sonarsource.com/doc/administration-guide.html).
+Information about administering your instance of SonarQube Server begins [here](https://docs.sonarsource.com/sonarqube-server/latest/instance-administration/overview/).
 
 # License
 
