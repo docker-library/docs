@@ -9,6 +9,44 @@ InfluxDB 3 comes in two editions:
 
 For full documentation, visit the [InfluxDB 3 documentation site](https://docs.influxdata.com)
 
+
+# How to use this image 
+
+## Start InfluxDB 3 Core
+
+To run the influxDB 3 Core container:
+
+```bash
+docker run -d --name influxdb3-core -p 8086:8086 influxdb:3
+```
+
+Once the container is running, generate an admin token and create a database:
+
+```bash
+docker exec -it influxdb3-core influxdb3 generate token --admin
+docker exec -it influxdb3-core influxdb3 create database my_db --token <your_admin_token>
+```
+
+To check the server health:
+
+```bash
+curl localhost:8086/health
+```
+## Start InfluxDB 3 Enterprise
+
+InfluxDB 3 Enterprise supports clustered deployments and advanced features. To start a local standalone Enterprise container for testing:
+
+```bash
+docker run -d --name influxdb3-enterprise -p 8086:8086 influxdb:enterprise
+```
+
+Them, generate a token and create a database:
+
+```bash
+docker exec -it influxdb3-enterprise influxdb3 generate token --admin
+docker exec -it influxdb3-enterprise influxdb3 create database enterprise_db --token <your_admin_token>
+```
+
 # What is InfluxDB?
 
 InfluxDB is the time series data platform designed to handle high write and query workloads. Using InfluxDB, you can collect, store, and process large amounts of timestamped data, including metrics and events for use cases such as DevOps monitoring, application metrics, IoT sensors, and event monitoring.
