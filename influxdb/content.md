@@ -14,7 +14,7 @@ For full documentation, visit the [InfluxDB 3 documentation site](https://docs.i
 
 ## Start InfluxDB 3 Core
 
-To run the influxDB 3 Core container:
+To run the InfluxDB 3 Core container:
 
 ```bash
 docker run -d --name influxdb3-core -p 8086:8086 influxdb:3
@@ -50,12 +50,12 @@ docker run -d --name influxdb3-enterprise -p 8086:8086 \
     --data-dir /var/lib/influxdb3
 ```
 
-Them, generate an admin token:
+Then, generate an admin token:
 
 ```bash
 docker exec -it influxdb3-enterprise influxdb3 create token --admin
 ```
-Use the token from the output to create a database
+Use the token from the output to create a database.
 
 ```bash
 docker exec -it influxdb3-enterprise influxdb3 create database enterprise_db --token <your_admin_token>
@@ -63,22 +63,26 @@ docker exec -it influxdb3-enterprise influxdb3 create database enterprise_db --t
 
 ## Mount data to persist across restarts
 
-To persist the `/var/lib/influxdb3` directory in **InfluxDB 3 Core**, use a Docker volume:
+To persist **InfluxDB 3 Core** data across container restarts, mount a Docker volume or bind to a local directory. Be sure to include the required `serve` command and storage configuration.
+
+### Using a Docker volume
 
 ```bash
 docker run -d --name influxdb3-core \
   -v influxdb3-data:/var/lib/influxdb3 \
   -p 8086:8086 \
-  influxdb:3
+  quay.io/influxdb/influxdb3:latest \
+  serve --host-id my-influxdb-node --object-store file --data-dir /var/lib/influxdb3
 ```
 
-Or bind a to a local host directory:
+### Using a local host directory
 
 ```bash
 docker run -d --name influxdb3-core \
   -v $PWD/influxdb3-data:/var/lib/influxdb3 \
   -p 8086:8086 \
-  influxdb:3
+  quay.io/influxdb/influxdb3:latest \
+  serve --host-id my-influxdb-node --object-store file --data-dir /var/lib/influxdb3
 ```
 
 Ensure the directory exists and has appropriate write permissions. 
