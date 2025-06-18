@@ -7,7 +7,27 @@ InfluxDB 3 comes in two editions:
 - **InfluxDB 3 Core**: A free, open source version of the new engine for local development and prototyping.
 - **InfluxDB 3 Enterprise**: A production-grade, scalable time series database that includes support for clustering, security, and enterprise features.
 
+>[!Note]
+> ## License key for Enterprise
+>To run InfluxDB 3 Enterprise, you need a license key. Obtain one from [InfluxData's pricing page](https://www.influxdata.com/pricing/).
+
 For full documentation, visit the [InfluxDB 3 documentation site](https://docs.influxdata.com)
+
+## Docker Images
+
+Use the official images hosted on Quay.io:
+
+- **Core:** `quay.io/influxdb/influxdb3:latest`  
+- **Enterprise:** `quay.io/influxdb/influxdb3-enterprise:latest`
+
+## Parameter glossary
+
+| Parameter        | Description                                                   |
+|------------------|--------------------------------------------------------------|
+| `--host-id`      | Unique identifier for the InfluxDB Core server node. Required. |
+| `--node-id`      | Unique identifier for the node within an Enterprise cluster.  |
+| `--object-store` | Backend storage type for metadata and WAL files (e.g., `file`). |
+| `--data-dir`     | Path to the directory for data storage.                      |
 
 
 # How to use this image 
