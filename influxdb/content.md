@@ -119,17 +119,13 @@ docker run -d --name influxdb3-core \
 
 This mounts a local folder named `influxdb3-data` in your current working directory. Ensure that this directory exists and has appropriate write permissions. 
 
-# What is InfluxDB?
-
-InfluxDB is the time series data platform designed to handle high write and query workloads. Using InfluxDB, you can collect, store, and process large amounts of timestamped data, including metrics and events for use cases such as DevOps monitoring, application metrics, IoT sensors, and event monitoring.
+# InfluxDB v2 and v1 Docker setup 
 
 Use the InfluxDB Docker Hub image to write, query, and process time series data in [InfluxDB v2](https://docs.influxdata.com/influxdb/v2/) or [InfluxDB v1](https://docs.influxdata.com/influxdb/v1/).
 
 For more information, visit https://influxdata.com.
 
-%%LOGO%%
-
-# How to use this image for InfluxDB v2
+## How to use this image for InfluxDB v2
 
 **Quick start**: See the guide to [Install InfluxDB v2 for Docker](https://docs.influxdata.com/influxdb/v2/install/?t=Docker) and get started using InfluxDB v2.
 
