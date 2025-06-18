@@ -32,24 +32,38 @@ To check the server health:
 ```bash
 curl localhost:8086/health
 ```
+
 ## Start InfluxDB 3 Enterprise
 
-InfluxDB 3 Enterprise supports clustered deployments and advanced features. To start a local standalone Enterprise container for testing:
+InfluxDB 3 Enterprise supports clustered deployments and advanced features. To start a local standalone Enterprise container for testing, make sure to provide your license key as an environment variable and include required flags:
 
 ```bash
-docker run -d --name influxdb3-enterprise -p 8086:8086 influxdb:enterprise
+docker run -d --name influxdb3-enterprise -p 8086:8086 \
+  -v $PWD/plugins:/plugins \
+  -v $PWD/data:/var/lib/influxdb3 \
+  -e INFLUX_LICENSE_KEY="<your_license_key>" \
+  influxdb:enterprise serve \
+    --cluster-id cluster1 \
+    --node-id node1 \
+    --plugin-dir /plugins \
+    --object-store file \
+    --data-dir /var/lib/influxdb3
 ```
 
-Them, generate a token and create a database:
+Them, generate an admin token:
 
 ```bash
-docker exec -it influxdb3-enterprise influxdb3 generate token --admin
+docker exec -it influxdb3-enterprise influxdb3 create token --admin
+```
+Use the token from the output to create a database
+
+```bash
 docker exec -it influxdb3-enterprise influxdb3 create database enterprise_db --token <your_admin_token>
 ```
 
 ## Mount data to persist across restarts
 
-To persist the `/var/lib/influxdb3` directory, use a volume mount:
+To persist the `/var/lib/influxdb3` directory in **InfluxDB 3 Core**, use a Docker volume:
 
 ```bash
 docker run -d --name influxdb3-core \
