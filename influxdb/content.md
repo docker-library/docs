@@ -24,6 +24,9 @@ Once the container is running, generate an admin token and create a database:
 
 ```bash
 docker exec -it influxdb3-core influxdb3 generate token --admin
+```
+
+```bash
 docker exec -it influxdb3-core influxdb3 create database my_db --token <your_admin_token>
 ```
 
@@ -67,6 +70,8 @@ To persist **InfluxDB 3 Core** data across container restarts, mount a Docker vo
 
 ### Using a Docker volume
 
+To persist data using a Docker-managed volume, run the following command:
+
 ```bash
 docker run -d --name influxdb3-core \
   -v influxdb3-data:/var/lib/influxdb3 \
@@ -74,8 +79,15 @@ docker run -d --name influxdb3-core \
   quay.io/influxdb/influxdb3:latest \
   serve --host-id my-influxdb-node --object-store file --data-dir /var/lib/influxdb3
 ```
+This command:
+
+- Creates or reuses a Docker volume named `influxdb3-data`.
+- Maps the default InfluxDB port (`8086`) to your local machine.
+- Starts the InfluxDB server with a required host ID and object store configuration.
 
 ### Using a local host directory
+
+To persist data in a local directory on your host, use the following command:
 
 ```bash
 docker run -d --name influxdb3-core \
@@ -85,7 +97,7 @@ docker run -d --name influxdb3-core \
   serve --host-id my-influxdb-node --object-store file --data-dir /var/lib/influxdb3
 ```
 
-Ensure the directory exists and has appropriate write permissions. 
+This mounts a local folder named `influxdb3-data` in your current working directory. Ensure that this directory exists and has appropriate write permissions. 
 
 # What is InfluxDB?
 
