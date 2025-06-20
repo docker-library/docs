@@ -64,4 +64,4 @@ $ docker run -it --rm \
     %%IMAGE%%
 ```
 
-This example links to a container name typical of `docker-compose`, changes the editor's color theme, and enables basic authentication.
+This example links to a container name typical of `docker compose`, changes the editor's color theme, and enables basic authentication.

@@ -24,8 +24,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`develop`](https://github.com/eggheads/eggdrop-docker/blob/ffa90b0ffecc389997799f525e32f45f60b4897a/develop/Dockerfile)
--	[`1.9`, `1.9.5`, `stable`, `latest`](https://github.com/eggheads/eggdrop-docker/blob/80fba087712325adc72a96265d4984c6760aff1a/1.9/Dockerfile)
+-	[`develop`](https://github.com/eggheads/eggdrop-docker/blob/037d27fee1499a17a1062efcba0213801d82c405/develop/Dockerfile)
+
+-	[`1.9`, `1.9.5`](https://github.com/eggheads/eggdrop-docker/blob/57fb1652a1880665b12e9f51775f173ecde24285/1.9/Dockerfile)
+
+-	[`1.10`, `1.10.0`, `stable`, `latest`](https://github.com/eggheads/eggdrop-docker/blob/2861815d67478e41667b8ed2cf9d3f13a5e755c1/1.10/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -152,13 +155,13 @@ to your docker run command line.
 
 ## Common Errors
 
-# docker-compose.yml
+# compose.yaml
 
-A docker-compose.yml example is hosted at https://github.com/eggheads/eggdrop-docker/blob/master/docker-compose.yml . A common error creating your own docker-compose.yml file from scratch is not adding
+A `docker-compose.yml` example is hosted at https://github.com/eggheads/eggdrop-docker/blob/master/docker-compose.yml. A common error creating your own Docker Compose file from scratch is not adding:
 
 	stdin_open: true
 
-to the docker-compose.yml file. Without it, Eggdrop will give you an "END OF FILE ON TERMINAL" error and not start.
+Without it, Eggdrop will give you an "END OF FILE ON TERMINAL" error and not start.
 
 ## Troubleshooting / Support
 

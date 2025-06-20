@@ -25,7 +25,8 @@ WARNING:
 # Supported tags and respective `Dockerfile` links
 
 -	[`1.4.5`, `1.4`, `1`, `latest`, `1.4.5-bookworm`, `1.4-bookworm`, `1-bookworm`, `bookworm`](https://github.com/jessfraz/irssi/blob/b8ea417aaa1a29a6003756627d748450a5bf6abe/debian/Dockerfile)
--	[`1.4.5-alpine`, `1.4-alpine`, `1-alpine`, `alpine`, `1.4.5-alpine3.20`, `1.4-alpine3.20`, `1-alpine3.20`, `alpine3.20`](https://github.com/jessfraz/irssi/blob/ce043e84f00a74532313e8a6203bc8b96194c28a/alpine/Dockerfile)
+
+-	[`1.4.5-alpine`, `1.4-alpine`, `1-alpine`, `alpine`, `1.4.5-alpine3.22`, `1.4-alpine3.22`, `1-alpine3.22`, `alpine3.22`](https://github.com/jessfraz/irssi/blob/48233da7bca13e68f9792da75119fe595f6192c9/alpine/Dockerfile)
 
 # Quick reference (cont.)
 

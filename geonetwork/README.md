@@ -24,10 +24,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.12.11`, `3.12`, `3`](https://github.com/geonetwork/docker-geonetwork/blob/faf221905720b5ebc904b5db8329be70e2028050/3.12.11/Dockerfile)
--	[`3.12.11-postgres`, `3.12-postgres`, `3-postgres`](https://github.com/geonetwork/docker-geonetwork/blob/de27e28bd62ce359bae1940caf83fadc8d5108ac/3.12.11/postgres/Dockerfile)
--	[`4.2.10`, `4.2`](https://github.com/geonetwork/docker-geonetwork/blob/4305f7ddf869d8023a56d2b71a8270f706cec8aa/4.2.10/Dockerfile)
--	[`4.4.5`, `4.4`, `4`, `latest`](https://github.com/geonetwork/docker-geonetwork/blob/9afe0745446f0692445d1c177601b16cc5e2440b/4.4.5/Dockerfile)
+-	[`3.12.12`, `3.12`, `3`](https://github.com/geonetwork/docker-geonetwork/blob/17278beab34080c90454c0b7059bd6b49701f979/3.12.12/Dockerfile)
+
+-	[`3.12.12-postgres`, `3.12-postgres`, `3-postgres`](https://github.com/geonetwork/docker-geonetwork/blob/17278beab34080c90454c0b7059bd6b49701f979/3.12.12/postgres/Dockerfile)
+
+-	[`4.2.13`, `4.2`](https://github.com/geonetwork/docker-geonetwork/blob/ca0637409ff44e32b5138a3ef76a48533ba1d595/4.2.13/Dockerfile)
+
+-	[`4.4.8`, `4.4`, `4`, `latest`](https://github.com/geonetwork/docker-geonetwork/blob/ca0637409ff44e32b5138a3ef76a48533ba1d595/4.4.8/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -168,7 +171,7 @@ GeoNetwork listens on port `8080`. If you want to access the container at the ho
 docker run --name some-geonetwork -d -p 8080:8080 geonetwork
 ```
 
-Then, if you are running docker on Linux, you may access geonetwork at http://localhost:8080/geonetwork. Otherwise, replace `localhost` by the address of your docker machine.
+Then, if you are running docker on Linux, you may access geonetwork at http://localhost:8080/geonetwork.
 
 ### Set the data directory and H2 db file
 
@@ -212,19 +215,17 @@ docker run --name some-geonetwork -d -p 8080:8080 -e DATA_DIR=/catalogue-data/da
 docker run --name some-geonetwork -d -p 8080:8080  -e GN_CONFIG_PROPERTIES="-Dgeonetwork.dir=/catalogue-data" -e GEONETWORK_DB_NAME=/catalogue-data/db/gn -v /host/geonetwork-docker:/catalogue-data geonetwork
 ```
 
-### ... via [`docker-compose`](https://github.com/docker/compose) or [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/)
+### ... via [`docker compose`](https://github.com/docker/compose)
 
-Example `docker-compose.yml` for `geonetwork`:
+Example `compose.yaml` for `geonetwork`:
 
 ```yaml
 # GeoNetwork
 #
-# Access via "http://localhost:8080/geonetwork" (or "http://$(docker-machine ip):8080/geonetwork" if using docker-machine)
+# Access via "http://localhost:8080/geonetwork"
 #
 # Default user: admin
 # Default password: admin
-
-version: '3.8'
 
 volumes:
   geonetwork:
@@ -292,8 +293,7 @@ services:
       POSTGRES_USER: geonetwork
       POSTGRES_PASSWORD: geonetwork
       POSTGRES_DB: geonetwork
-    command: [postgres, -c, log_statement=all, -c, logging_collector=true, -c, log_file_mode=0644,
-      -c, log_directory=/var/log/postgresql, -c, log_filename=postgresql.log]
+    command: [postgres, -c, log_statement=all, -c, logging_collector=true, -c, log_file_mode=0644, -c, log_directory=/var/log/postgresql, -c, log_filename=postgresql.log]
     healthcheck:
       test: [CMD-SHELL, pg_isready -U postgres]
       interval: 5s
@@ -340,9 +340,7 @@ services:
         condition: service_healthy
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/c36fe01925fbb3bd409b060190b7d99be5107af0/geonetwork/stack.yml)
-
-Run `docker stack deploy -c stack.yml geonetwork` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080/geonetwork`, `http://localhost:8080/geonetwork`, or `http://host-ip:8080/geonetwork` (as appropriate).
+Run `docker compose up`, wait for it to initialize completely, and visit `http://localhost:8080/geonetwork` or `http://host-ip:8080/geonetwork` (as appropriate).
 
 ### Default credentials
 

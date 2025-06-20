@@ -14,6 +14,12 @@ For the ease of accessing Redis from other containers via Docker networking, the
 -	[Protected mode](https://redis.io/docs/latest/operate/oss_and_stack/management/security/#protected-mode)
 -	[A few things about Redis security by antirez](http://antirez.com/news/96)
 
+## Process User and Privileges
+
+By default, the Redis Docker image drops privileges by switching to the redis user and removing unnecessary capabilities. This step is skipped if Docker is run with the `--user` option or if you set the `SKIP_DROP_PRIVS=1` (since 8.0.2) environment variable.
+
+Note: Using `SKIP_DROP_PRIVS` is not recommended, as it reduces the container's security.
+
 # How to use this image
 
 ## Start a redis instance
@@ -31,6 +37,20 @@ $ docker run --name some-redis -d %%IMAGE%% redis-server --save 60 1 --loglevel 
 There are several different persistence strategies to choose from. This one will save a snapshot of the DB every 60 seconds if at least 1 write operation was performed (it will also lead to more logs, so the `loglevel` option may be desirable). If persistence is enabled, data is stored in the `VOLUME /data`, which can be used with `--volumes-from some-volume-container` or `-v /docker/host/dir:/data` (see [docs.docker volumes](https://docs.docker.com/engine/tutorials/dockervolumes/)).
 
 For more about Redis persistence, see [the official Redis documentation](https://redis.io/docs/latest/operate/oss_and_stack/management/persistence/).
+
+### File and Directory Permissions
+
+Redis will attempt to correct the ownership and permissions of the data and configuration (since 8.0.2) directories and files if they are not set correctly. This adjustment is only performed in basic, default scenarios to avoid interfering with custom or user-specific configurations.
+
+You can skip this step by setting the `SKIP_FIX_PERMS=1`(since 8.0.2) environment variable.
+
+### Manually Setting File and Directory Permissions
+
+If you prefer to handle file permissions yourself, you can use a `docker run` command to set the correct ownership on mounted volumes. For example:
+
+```console
+$ docker run --rm -v /your/host/path:/data %%IMAGE%% chown -R redis:redis /data
+```
 
 ## Connecting via `redis-cli`
 
@@ -57,16 +77,3 @@ $ docker run -v /myredis/conf:/usr/local/etc/redis --name myredis %%IMAGE%% redi
 Where `/myredis/conf/` is a local directory containing your `redis.conf` file. Using this method means that there is no need for you to have a Dockerfile for your redis container.
 
 The mapped directory should be writable, as depending on the configuration and mode of operation, Redis may need to create additional configuration files or rewrite existing ones.
-
-## `32bit` variant
-
-This variant is *not* a 32bit image (and will not run on 32bit hardware), but includes Redis compiled as a 32bit binary, especially for users who need the decreased memory requirements associated with that. See ["Using 32 bit instances"](http://redis.io/topics/memory-optimization#using-32-bit-instances) in the Redis documentation for more information.
-
-# Redis Stack and modules
-
-Modules extend Redis with extra capabilities. Redis Stack already comes with the capabilities (search and query, JSON support, and more) that are developed by Redis (the company). The Docker images are available here:
-
--	[Redis Stack](https://hub.docker.com/r/redis/redis-stack): Redis plus extra capabilities and Redis Insight (a GUI for Redis)
--	[Redis Stack Server](https://hub.docker.com/r/redis/redis-stack-server): Redis plus extra capabilities
-
-You can find the list of modules for Redis on [redis.io](https://redis.io/community/redis-modules-hub/).

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 set -Eeuo pipefail
 
 cd "$(dirname "$(readlink -f "$BASH_SOURCE")")"
@@ -86,22 +86,11 @@ for image in "${images[@]}"; do
 			logo="![logo]($logoUrl)"
 		fi
 
-		stack=
-		stackYml=
-		stackUrl=
-		if [ -f "$repo/stack.yml" ]; then
-			stack="$(cat "$repo/stack.md" 2>/dev/null || cat "$helperDir/stack.md")"
-			stackYml=$'```yaml\n'"$(cat "$repo/stack.yml")"$'\n```'
-			stackCommit="$(git log -1 --format='format:%H' -- "$repo/stack.yml" 2>/dev/null || true)"
-			[ "$stackCommit" ] || stackCommit='master'
-			stackUrl="https://raw.githubusercontent.com/docker-library/docs/$stackCommit/$repo/stack.yml"
-		fi
-
 		compose=
-		composeYml=
-		if [ -f "$repo/docker-compose.yml" ]; then
+		composeYaml=
+		if [ -f "$repo/compose.yaml" ]; then
 			compose="$(cat "$repo/compose.md" 2>/dev/null || cat "$helperDir/compose.md")"
-			composeYml=$'```yaml\n'"$(cat "$repo/docker-compose.yml")"$'\n```'
+			composeYaml=$'```yaml\n'"$(cat "$repo/compose.yaml")"$'\n```'
 		fi
 
 		deprecated=
@@ -145,10 +134,6 @@ for image in "${images[@]}"; do
 				# opensuse, etc
 				partial='**No supported tags**'
 			fi
-		elif [ -n "$ARCH_SPECIFIC_DOCS" ]; then
-			jenkinsJobUrl="https://doi-janky.infosiftr.net/job/multiarch/job/$BASHBREW_ARCH/job/$repo/"
-			jenkinsImageUrl="https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/$BASHBREW_ARCH/job/$repo.svg?label=%%IMAGE%%%20%20build%20job"
-			partial+=$'\n\n''[![%%IMAGE%% build status badge]('"$jenkinsImageUrl"')]('"$jenkinsJobUrl"')'
 		fi
 		replace_field "$targetFile" 'TAGS' "$partial"
 
@@ -167,17 +152,10 @@ for image in "${images[@]}"; do
 		echo "  LOGO => $logo"
 		replace_field "$targetFile" 'LOGO' "$logo" '\s*'
 
-		echo '  STACK => '"$repo"'/stack.md'
-		replace_field "$targetFile" 'STACK' "$stack"
-		echo '  STACK-YML => '"$repo"'/stack.yml'
-		replace_field "$targetFile" 'STACK-YML' "$stackYml"
-		echo '  STACK-URL => '"$repo"'/stack.yml'
-		replace_field "$targetFile" 'STACK-URL' "$stackUrl"
-
 		echo '  COMPOSE => '"$repo"'/compose.md'
 		replace_field "$targetFile" 'COMPOSE' "$compose"
-		echo '  COMPOSE-YML => '"$repo"'/docker-compose.yml'
-		replace_field "$targetFile" 'COMPOSE-YML' "$composeYml"
+		echo '  COMPOSE-YAML => '"$repo"'/compose.yaml'
+		replace_field "$targetFile" 'COMPOSE-YAML' "$composeYaml"
 
 		echo '  LICENSE => '"$repo"'/license.md'
 		replace_field "$targetFile" 'LICENSE' "$license"

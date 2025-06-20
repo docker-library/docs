@@ -42,7 +42,7 @@ Then, access it via `http://localhost:8080/admin/` or `http://<host-ip>:8080/adm
 ## Environment Variables
 
 When you start the `yourls` image, you can adjust the configuration of the YOURLS instance by passing one or more environment variables on the `docker run` command line.  
-The YOURLS instance accepts [a number of environment variables for configuration](https://yourls.org/#Config).  
+The YOURLS instance accepts [a number of environment variables for configuration](https://yourls.org/docs/guide/essentials/configuration).  
 A few notable/important examples for using this Docker image include the following.
 
 ### `YOURLS_SITE`
@@ -92,9 +92,9 @@ $ docker run --name some-%%REPO%% -e YOURLS_DB_PASS_FILE=/run/secrets/mysql-root
 
 Currently, this is supported for `YOURLS_DB_HOST`, `YOURLS_DB_USER`, `YOURLS_DB_PASS`, `YOURLS_DB_NAME`, `YOURLS_DB_PREFIX`, `YOURLS_SITE`, `YOURLS_USER`, and `YOURLS_PASS`.
 
-## %%STACK%%
+## %%COMPOSE%%
 
-Run `docker stack deploy -c stack.yml %%REPO%%` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080/admin/`, `http://localhost:8080/admin/`, or `http://<host-ip>:8080/admin/` (as appropriate).
+Run `docker compose up`, wait for it to initialize completely, and visit `http://localhost:8080/admin/` or `http://<host-ip>:8080/admin/` (as appropriate).
 
 ## Adding additional libraries / extensions
 

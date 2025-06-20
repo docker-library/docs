@@ -24,10 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.0.2-20-alpine3.19`, `1.0-20-alpine3.19`, `1-20-alpine3.19`](https://github.com/mongo-express/mongo-express-docker/blob/403467f350d819b404f3d5150be7776217e810b7/1.0/20-alpine3.19/Dockerfile)
--	[`1.0.2-20`, `1.0-20`, `1-20`, `1.0.2-20-alpine3.18`, `1.0-20-alpine3.18`, `1-20-alpine3.18`](https://github.com/mongo-express/mongo-express-docker/blob/403467f350d819b404f3d5150be7776217e810b7/1.0/20-alpine3.18/Dockerfile)
--	[`1.0.2-18-alpine3.19`, `1.0-18-alpine3.19`, `1-18-alpine3.19`](https://github.com/mongo-express/mongo-express-docker/blob/403467f350d819b404f3d5150be7776217e810b7/1.0/18-alpine3.19/Dockerfile)
--	[`1.0.2`, `1.0`, `1`, `1.0.2-18`, `1.0-18`, `1-18`, `1.0.2-18-alpine3.18`, `1.0-18-alpine3.18`, `1-18-alpine3.18`, `latest`](https://github.com/mongo-express/mongo-express-docker/blob/403467f350d819b404f3d5150be7776217e810b7/1.0/18-alpine3.18/Dockerfile)
+**No supported tags**
 
 # Quick reference (cont.)
 
@@ -35,7 +32,7 @@ WARNING:
 	[https://github.com/mongo-express/mongo-express-docker/issues](https://github.com/mongo-express/mongo-express-docker/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/mongo-express/), [`arm64v8`](https://hub.docker.com/r/arm64v8/mongo-express/)
+	**No supported architectures**
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/mongo-express/` directory](https://github.com/docker-library/repo-info/blob/master/repos/mongo-express) ([history](https://github.com/docker-library/repo-info/commits/master/repos/mongo-express))  
@@ -114,7 +111,7 @@ $ docker run -it --rm \
     mongo-express
 ```
 
-This example links to a container name typical of `docker-compose`, changes the editor's color theme, and enables basic authentication.
+This example links to a container name typical of `docker compose`, changes the editor's color theme, and enables basic authentication.
 
 # License
 

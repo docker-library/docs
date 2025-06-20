@@ -24,8 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.86.2`, `5.86`, `5`, `latest`](https://github.com/docker-library/ghost/blob/a74ffaa09a98dac2d6900957d7fab2c545e2dec1/5/debian/Dockerfile)
--	[`5.86.2-alpine`, `5.86-alpine`, `5-alpine`, `alpine`](https://github.com/docker-library/ghost/blob/a74ffaa09a98dac2d6900957d7fab2c545e2dec1/5/alpine/Dockerfile)
+-	[`5.125.1`, `5.125`, `5`, `latest`](https://github.com/docker-library/ghost/blob/f192ab96781889a1452aca93916e67850c1294f2/5/debian/Dockerfile)
+
+-	[`5.125.1-alpine`, `5.125-alpine`, `5-alpine`, `alpine`](https://github.com/docker-library/ghost/blob/f192ab96781889a1452aca93916e67850c1294f2/5/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -48,11 +49,11 @@ WARNING:
 
 # Ghost
 
-Ghost is a free and open source blogging platform written in JavaScript and distributed under the MIT License, designed to simplify the process of online publishing for individual bloggers as well as online publications.
+Ghost is an independent platform for publishing online by web and email newsletter. It has user signups, gated access and subscription payments built-in (with Stripe) to allow you to build a direct relationship with your audience. It's fast, user-friendly, and runs on Node.js & MySQL8.
 
-> [wikipedia.org/wiki/Ghost_(blogging_platform)](http://en.wikipedia.org/wiki/Ghost_%28blogging_platform%29)
+> [Ghost.org)](https://ghost.org)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/c5b6d94dc8f0557925ab37ca43141c0efc5cc363/ghost/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/c88522f95bebcab2322f3020f2f735210286939b/ghost/logo.png)
 
 # How to use this image
 
@@ -92,7 +93,7 @@ $ docker run -d \
 	ghost:alpine
 ```
 
-Note: `database__connection__filename` is only valid in development mode and is the location for the SQLite database file. If using development mode, it should be set to a writeable path within a persistent folder (bind mount or volume). It is not available in production mode because an external MySQL server is required (see the `docker-compose` example below).
+Note: `database__connection__filename` is only valid in development mode and is the location for the SQLite database file. If using development mode, it should be set to a writeable path within a persistent folder (bind mount or volume). It is not available in production mode because an external MySQL server is required (see the Docker Compose example below).
 
 ### Docker Volume
 
@@ -116,7 +117,7 @@ All Ghost configuration parameters (such as `url`) can be specified via environm
 $ docker run -d --name some-ghost -e NODE_ENV=development -e url=http://some-ghost.example.com ghost
 ```
 
-(There are further configuration examples in the `stack.yml` listed below.)
+(There are further configuration examples in the `compose.yaml` listed below.)
 
 ## What is the Node.js version?
 
@@ -137,13 +138,11 @@ To run Ghost for production you'll also need to be running with MySQL 8, https, 
 
 The following example demonstrates some of the necessary configuration for running with MySQL. For more detail, see [Ghost's "Configuration options" documentation](https://ghost.org/docs/config/#configuration-options).
 
-## ... via [`docker-compose`](https://github.com/docker/compose) or [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/)
+## ... via [`docker compose`](https://github.com/docker/compose)
 
-Example `docker-compose.yml` for `ghost`:
+Example `compose.yaml` for `ghost`:
 
 ```yaml
-version: '3.1'
-
 services:
 
   ghost:
@@ -178,9 +177,7 @@ volumes:
   db:
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/8b35a43795bda4f4ca1299bee2d02afe2434ee7f/ghost/stack.yml)
-
-Run `docker stack deploy -c stack.yml ghost` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
+Run `docker compose up`, wait for it to initialize completely, and visit `http://localhost:8080` or `http://host-ip:8080` (as appropriate).
 
 # Image Variants
 

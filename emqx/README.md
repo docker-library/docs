@@ -14,6 +14,14 @@ WARNING:
 
 -->
 
+# **DEPRECATION NOTICE**
+
+Starting from v5.9.0, EMQX has unified all features from the previous Open Source and Enterprise editions into a single, powerful offering with the Business Source License (BSL) 1.1.
+
+If you want to understand why we made the change, please read this [blog post](https://www.emqx.com/en/news/emqx-adopts-business-source-license), and if you want to know more about the new license, please read the [EMQX Licensing FAQ](https://www.emqx.com/en/content/license-faq).
+
+Consequently, we stopped publishing the `emqx` Docker Official Image. EMQX v5.9.0+ will only be available in the [`emqx/emqx`](https://hub.docker.com/r/emqx/emqx) and [`emqx/emqx-enterprise`](https://hub.docker.com/r/emqx/emqx-enterprise) Docker Hub repositories.
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,13 +32,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.1.6`, `5.1`](https://github.com/emqx/emqx-docker/blob/dfa1507bc031b4f24ffa29f838dbad1868e35d01/5.1/Dockerfile)
--	[`5.2.1`, `5.2`](https://github.com/emqx/emqx-docker/blob/eb71b6a3cca1505e14d4b0e6fcd50a43330125bb/5.2/Dockerfile)
--	[`5.3.2`, `5.3`](https://github.com/emqx/emqx-docker/blob/1572ca48b4bc890edfc157b00be271d9a1b878d4/5.3/Dockerfile)
--	[`5.4.1`, `5.4`](https://github.com/emqx/emqx-docker/blob/a180d28d9a6b4ebc752aa2de3a456887f4a416cc/5.4/Dockerfile)
--	[`5.5.1`, `5.5`](https://github.com/emqx/emqx-docker/blob/17a2814880d4852d0611c06c31007ca2a2633199/5.5/Dockerfile)
--	[`5.6.1`, `5.6`](https://github.com/emqx/emqx-docker/blob/e0af46182038ded4d6f45879846ddf765b6b5613/5.6/Dockerfile)
--	[`5.7.0`, `5.7`, `5`, `latest`](https://github.com/emqx/emqx-docker/blob/d7d5134e8256395e022d573099f70fda1ae85285/5.7/Dockerfile)
+-	[`5.7.2`, `5.7`](https://github.com/emqx/emqx-docker/blob/35e70c8e602687db5a447c9573bde8ab77335fdc/5.7/Dockerfile)
+
+-	[`5.8.6`, `5.8`, `5`, `latest`](https://github.com/emqx/emqx-docker/blob/7324fb36f81404915f97472652e2572f1dda5066/5.8/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -115,53 +119,51 @@ If not specified, EMQX determines its node name based on the running environment
 
 EMQX supports a variety of clustering methods, see our [documentation](https://docs.emqx.com/en/emqx/latest/deploy/cluster/create-cluster.html) for details.
 
-Let's create a static node list cluster from docker-compose.
+Let's create a static node list cluster from Docker Compose.
 
--	Create `docker-compose.yaml`:
+-	Create `compose.yaml`:
 
 ```yaml
-  version: '3'
+services:
+  emqx1:
+    image: emqx:latest
+    environment:
+    - "EMQX_NODE__NAME=emqx@node1.emqx.io"
+    - "EMQX_CLUSTER__DISCOVERY_STRATEGY=static"
+    - "EMQX_CLUSTER__STATIC__SEEDS=[emqx@node1.emqx.io, emqx@node2.emqx.io]"
+    networks:
+      emqx-bridge:
+        aliases:
+        - node1.emqx.io
 
-  services:
-    emqx1:
-      image: emqx:latest
-      environment:
-      - "EMQX_NODE__NAME=emqx@node1.emqx.io"
-      - "EMQX_CLUSTER__DISCOVERY_STRATEGY=static"
-      - "EMQX_CLUSTER__STATIC__SEEDS=[emqx@node1.emqx.io, emqx@node2.emqx.io]"
-      networks:
-        emqx-bridge:
-          aliases:
-          - node1.emqx.io
+  emqx2:
+    image: emqx:latest
+    environment:
+    - "EMQX_NODE__NAME=emqx@node2.emqx.io"
+    - "EMQX_CLUSTER__DISCOVERY_STRATEGY=static"
+    - "EMQX_CLUSTER__STATIC__SEEDS=[emqx@node1.emqx.io, emqx@node2.emqx.io]"
+    networks:
+      emqx-bridge:
+        aliases:
+        - node2.emqx.io
 
-    emqx2:
-      image: emqx:latest
-      environment:
-      - "EMQX_NODE__NAME=emqx@node2.emqx.io"
-      - "EMQX_CLUSTER__DISCOVERY_STRATEGY=static"
-      - "EMQX_CLUSTER__STATIC__SEEDS=[emqx@node1.emqx.io, emqx@node2.emqx.io]"
-      networks:
-        emqx-bridge:
-          aliases:
-          - node2.emqx.io
-
-  networks:
-    emqx-bridge:
-      driver: bridge
+networks:
+  emqx-bridge:
+    driver: bridge
 ```
 
--	Start the docker-compose cluster
+-	Start the Docker Compose services
 
 ```bash
-  docker-compose -p my_emqx up -d
+docker compose -p my_emqx up -d
 ```
 
 -	View cluster
 
 ```bash
-  $ docker exec -it my_emqx_emqx1_1 sh -c "emqx ctl cluster status"
-  Cluster status: #{running_nodes => ['emqx@node1.emqx.io','emqx@node2.emqx.io'],
-                    stopped_nodes => []}
+$ docker exec -it my_emqx_emqx1_1 sh -c "emqx ctl cluster status"
+Cluster status: #{running_nodes => ['emqx@node1.emqx.io','emqx@node2.emqx.io'],
+                  stopped_nodes => []}
 ```
 
 ### Persistence
@@ -173,7 +175,7 @@ If you want to persist the EMQX docker container, you need to keep the following
 
 Since data in these folders are partially stored under the `/opt/emqx/data/mnesia/${node_name}`, the user also needs to reuse the same node name to see the previous state. To make this work, one needs to set the host part of `EMQX_NODE__NAME` to something static that does not change when you restart or recreate the container. It could be container name, hostname or loopback IP address `127.0.0.1` if you only have one node.
 
-In if you use docker-compose, the configuration would look something like this:
+In if you use Docker Compose, the configuration would look something like this:
 
 ```YAML
 volumes:

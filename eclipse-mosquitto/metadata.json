@@ -1,6 +1,7 @@
 {
   "hub": {
     "categories": [
+      "internet-of-things",
       "message-queues"
     ]
   }

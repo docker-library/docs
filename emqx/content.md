@@ -62,53 +62,51 @@ If not specified, EMQX determines its node name based on the running environment
 
 EMQX supports a variety of clustering methods, see our [documentation](https://docs.emqx.com/en/emqx/latest/deploy/cluster/create-cluster.html) for details.
 
-Let's create a static node list cluster from docker-compose.
+Let's create a static node list cluster from Docker Compose.
 
--	Create `docker-compose.yaml`:
+-	Create `compose.yaml`:
 
 ```yaml
-  version: '3'
+services:
+  emqx1:
+    image: %%IMAGE%%:latest
+    environment:
+    - "EMQX_NODE__NAME=emqx@node1.emqx.io"
+    - "EMQX_CLUSTER__DISCOVERY_STRATEGY=static"
+    - "EMQX_CLUSTER__STATIC__SEEDS=[emqx@node1.emqx.io, emqx@node2.emqx.io]"
+    networks:
+      emqx-bridge:
+        aliases:
+        - node1.emqx.io
 
-  services:
-    emqx1:
-      image: %%IMAGE%%:latest
-      environment:
-      - "EMQX_NODE__NAME=emqx@node1.emqx.io"
-      - "EMQX_CLUSTER__DISCOVERY_STRATEGY=static"
-      - "EMQX_CLUSTER__STATIC__SEEDS=[emqx@node1.emqx.io, emqx@node2.emqx.io]"
-      networks:
-        emqx-bridge:
-          aliases:
-          - node1.emqx.io
+  emqx2:
+    image: %%IMAGE%%:latest
+    environment:
+    - "EMQX_NODE__NAME=emqx@node2.emqx.io"
+    - "EMQX_CLUSTER__DISCOVERY_STRATEGY=static"
+    - "EMQX_CLUSTER__STATIC__SEEDS=[emqx@node1.emqx.io, emqx@node2.emqx.io]"
+    networks:
+      emqx-bridge:
+        aliases:
+        - node2.emqx.io
 
-    emqx2:
-      image: %%IMAGE%%:latest
-      environment:
-      - "EMQX_NODE__NAME=emqx@node2.emqx.io"
-      - "EMQX_CLUSTER__DISCOVERY_STRATEGY=static"
-      - "EMQX_CLUSTER__STATIC__SEEDS=[emqx@node1.emqx.io, emqx@node2.emqx.io]"
-      networks:
-        emqx-bridge:
-          aliases:
-          - node2.emqx.io
-
-  networks:
-    emqx-bridge:
-      driver: bridge
+networks:
+  emqx-bridge:
+    driver: bridge
 ```
 
--	Start the docker-compose cluster
+-	Start the Docker Compose services
 
 ```bash
-  docker-compose -p my_emqx up -d
+docker compose -p my_emqx up -d
 ```
 
 -	View cluster
 
 ```bash
-  $ docker exec -it my_emqx_emqx1_1 sh -c "emqx ctl cluster status"
-  Cluster status: #{running_nodes => ['emqx@node1.emqx.io','emqx@node2.emqx.io'],
-                    stopped_nodes => []}
+$ docker exec -it my_emqx_emqx1_1 sh -c "emqx ctl cluster status"
+Cluster status: #{running_nodes => ['emqx@node1.emqx.io','emqx@node2.emqx.io'],
+                  stopped_nodes => []}
 ```
 
 ### Persistence
@@ -120,7 +118,7 @@ If you want to persist the EMQX docker container, you need to keep the following
 
 Since data in these folders are partially stored under the `/opt/emqx/data/mnesia/${node_name}`, the user also needs to reuse the same node name to see the previous state. To make this work, one needs to set the host part of `EMQX_NODE__NAME` to something static that does not change when you restart or recreate the container. It could be container name, hostname or loopback IP address `127.0.0.1` if you only have one node.
 
-In if you use docker-compose, the configuration would look something like this:
+In if you use Docker Compose, the configuration would look something like this:
 
 ```YAML
 volumes:

@@ -24,20 +24,33 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.27.0`, `mainline`, `1`, `1.27`, `latest`, `1.27.0-bookworm`, `mainline-bookworm`, `1-bookworm`, `1.27-bookworm`, `bookworm`](https://github.com/nginxinc/docker-nginx/blob/a6f7d140744f8b15ff4314b8718b3f022efc7f43/mainline/debian/Dockerfile)
--	[`1.27.0-perl`, `mainline-perl`, `1-perl`, `1.27-perl`, `perl`, `1.27.0-bookworm-perl`, `mainline-bookworm-perl`, `1-bookworm-perl`, `1.27-bookworm-perl`, `bookworm-perl`](https://github.com/nginxinc/docker-nginx/blob/3180cdbec313dc4a9f6dd1109ae66adaf98f11fb/mainline/debian-perl/Dockerfile)
--	[`1.27.0-otel`, `mainline-otel`, `1-otel`, `1.27-otel`, `otel`, `1.27.0-bookworm-otel`, `mainline-bookworm-otel`, `1-bookworm-otel`, `1.27-bookworm-otel`, `bookworm-otel`](https://github.com/nginxinc/docker-nginx/blob/3180cdbec313dc4a9f6dd1109ae66adaf98f11fb/mainline/debian-otel/Dockerfile)
--	[`1.27.0-alpine`, `mainline-alpine`, `1-alpine`, `1.27-alpine`, `alpine`, `1.27.0-alpine3.19`, `mainline-alpine3.19`, `1-alpine3.19`, `1.27-alpine3.19`, `alpine3.19`](https://github.com/nginxinc/docker-nginx/blob/94a27ac42d45670d941a55334d89e80760f7cc8e/mainline/alpine/Dockerfile)
--	[`1.27.0-alpine-perl`, `mainline-alpine-perl`, `1-alpine-perl`, `1.27-alpine-perl`, `alpine-perl`, `1.27.0-alpine3.19-perl`, `mainline-alpine3.19-perl`, `1-alpine3.19-perl`, `1.27-alpine3.19-perl`, `alpine3.19-perl`](https://github.com/nginxinc/docker-nginx/blob/94a27ac42d45670d941a55334d89e80760f7cc8e/mainline/alpine-perl/Dockerfile)
--	[`1.27.0-alpine-slim`, `mainline-alpine-slim`, `1-alpine-slim`, `1.27-alpine-slim`, `alpine-slim`, `1.27.0-alpine3.19-slim`, `mainline-alpine3.19-slim`, `1-alpine3.19-slim`, `1.27-alpine3.19-slim`, `alpine3.19-slim`](https://github.com/nginxinc/docker-nginx/blob/94a27ac42d45670d941a55334d89e80760f7cc8e/mainline/alpine-slim/Dockerfile)
--	[`1.27.0-alpine-otel`, `mainline-alpine-otel`, `1-alpine-otel`, `1.27-alpine-otel`, `alpine-otel`, `1.27.0-alpine3.19-otel`, `mainline-alpine3.19-otel`, `1-alpine3.19-otel`, `1.27-alpine3.19-otel`, `alpine3.19-otel`](https://github.com/nginxinc/docker-nginx/blob/94a27ac42d45670d941a55334d89e80760f7cc8e/mainline/alpine-otel/Dockerfile)
--	[`1.26.1`, `stable`, `1.26`, `1.26.1-bookworm`, `stable-bookworm`, `1.26-bookworm`](https://github.com/nginxinc/docker-nginx/blob/a6f7d140744f8b15ff4314b8718b3f022efc7f43/stable/debian/Dockerfile)
--	[`1.26.1-perl`, `stable-perl`, `1.26-perl`, `1.26.1-bookworm-perl`, `stable-bookworm-perl`, `1.26-bookworm-perl`](https://github.com/nginxinc/docker-nginx/blob/3180cdbec313dc4a9f6dd1109ae66adaf98f11fb/stable/debian-perl/Dockerfile)
--	[`1.26.1-otel`, `stable-otel`, `1.26-otel`, `1.26.1-bookworm-otel`, `stable-bookworm-otel`, `1.26-bookworm-otel`](https://github.com/nginxinc/docker-nginx/blob/3180cdbec313dc4a9f6dd1109ae66adaf98f11fb/stable/debian-otel/Dockerfile)
--	[`1.26.1-alpine`, `stable-alpine`, `1.26-alpine`, `1.26.1-alpine3.19`, `stable-alpine3.19`, `1.26-alpine3.19`](https://github.com/nginxinc/docker-nginx/blob/94a27ac42d45670d941a55334d89e80760f7cc8e/stable/alpine/Dockerfile)
--	[`1.26.1-alpine-perl`, `stable-alpine-perl`, `1.26-alpine-perl`, `1.26.1-alpine3.19-perl`, `stable-alpine3.19-perl`, `1.26-alpine3.19-perl`](https://github.com/nginxinc/docker-nginx/blob/94a27ac42d45670d941a55334d89e80760f7cc8e/stable/alpine-perl/Dockerfile)
--	[`1.26.1-alpine-slim`, `stable-alpine-slim`, `1.26-alpine-slim`, `1.26.1-alpine3.19-slim`, `stable-alpine3.19-slim`, `1.26-alpine3.19-slim`](https://github.com/nginxinc/docker-nginx/blob/94a27ac42d45670d941a55334d89e80760f7cc8e/stable/alpine-slim/Dockerfile)
--	[`1.26.1-alpine-otel`, `stable-alpine-otel`, `1.26-alpine-otel`, `1.26.1-alpine3.19-otel`, `stable-alpine3.19-otel`, `1.26-alpine3.19-otel`](https://github.com/nginxinc/docker-nginx/blob/94a27ac42d45670d941a55334d89e80760f7cc8e/stable/alpine-otel/Dockerfile)
+-	[`1.27.5`, `mainline`, `1`, `1.27`, `latest`, `1.27.5-bookworm`, `mainline-bookworm`, `1-bookworm`, `1.27-bookworm`, `bookworm`](https://github.com/nginx/docker-nginx/blob/eaf8875a1967d24cea6ed8b37109075e39ed9e43/mainline/debian/Dockerfile)
+
+-	[`1.27.5-perl`, `mainline-perl`, `1-perl`, `1.27-perl`, `perl`, `1.27.5-bookworm-perl`, `mainline-bookworm-perl`, `1-bookworm-perl`, `1.27-bookworm-perl`, `bookworm-perl`](https://github.com/nginx/docker-nginx/blob/eaf8875a1967d24cea6ed8b37109075e39ed9e43/mainline/debian-perl/Dockerfile)
+
+-	[`1.27.5-otel`, `mainline-otel`, `1-otel`, `1.27-otel`, `otel`, `1.27.5-bookworm-otel`, `mainline-bookworm-otel`, `1-bookworm-otel`, `1.27-bookworm-otel`, `bookworm-otel`](https://github.com/nginx/docker-nginx/blob/4e08af2988063a3b02420ef0040e2e13fc9d93d6/mainline/debian-otel/Dockerfile)
+
+-	[`1.27.5-alpine`, `mainline-alpine`, `1-alpine`, `1.27-alpine`, `alpine`, `1.27.5-alpine3.21`, `mainline-alpine3.21`, `1-alpine3.21`, `1.27-alpine3.21`, `alpine3.21`](https://github.com/nginx/docker-nginx/blob/eaf8875a1967d24cea6ed8b37109075e39ed9e43/mainline/alpine/Dockerfile)
+
+-	[`1.27.5-alpine-perl`, `mainline-alpine-perl`, `1-alpine-perl`, `1.27-alpine-perl`, `alpine-perl`, `1.27.5-alpine3.21-perl`, `mainline-alpine3.21-perl`, `1-alpine3.21-perl`, `1.27-alpine3.21-perl`, `alpine3.21-perl`](https://github.com/nginx/docker-nginx/blob/eaf8875a1967d24cea6ed8b37109075e39ed9e43/mainline/alpine-perl/Dockerfile)
+
+-	[`1.27.5-alpine-slim`, `mainline-alpine-slim`, `1-alpine-slim`, `1.27-alpine-slim`, `alpine-slim`, `1.27.5-alpine3.21-slim`, `mainline-alpine3.21-slim`, `1-alpine3.21-slim`, `1.27-alpine3.21-slim`, `alpine3.21-slim`](https://github.com/nginx/docker-nginx/blob/eaf8875a1967d24cea6ed8b37109075e39ed9e43/mainline/alpine-slim/Dockerfile)
+
+-	[`1.27.5-alpine-otel`, `mainline-alpine-otel`, `1-alpine-otel`, `1.27-alpine-otel`, `alpine-otel`, `1.27.5-alpine3.21-otel`, `mainline-alpine3.21-otel`, `1-alpine3.21-otel`, `1.27-alpine3.21-otel`, `alpine3.21-otel`](https://github.com/nginx/docker-nginx/blob/4e08af2988063a3b02420ef0040e2e13fc9d93d6/mainline/alpine-otel/Dockerfile)
+
+-	[`1.28.0`, `stable`, `1.28`, `1.28.0-bookworm`, `stable-bookworm`, `1.28-bookworm`](https://github.com/nginx/docker-nginx/blob/7f1d49f6f222f7e588a9066fd53a0ce43c3466a5/stable/debian/Dockerfile)
+
+-	[`1.28.0-perl`, `stable-perl`, `1.28-perl`, `1.28.0-bookworm-perl`, `stable-bookworm-perl`, `1.28-bookworm-perl`](https://github.com/nginx/docker-nginx/blob/7f1d49f6f222f7e588a9066fd53a0ce43c3466a5/stable/debian-perl/Dockerfile)
+
+-	[`1.28.0-otel`, `stable-otel`, `1.28-otel`, `1.28.0-bookworm-otel`, `stable-bookworm-otel`, `1.28-bookworm-otel`](https://github.com/nginx/docker-nginx/blob/7f1d49f6f222f7e588a9066fd53a0ce43c3466a5/stable/debian-otel/Dockerfile)
+
+-	[`1.28.0-alpine`, `stable-alpine`, `1.28-alpine`, `1.28.0-alpine3.21`, `stable-alpine3.21`, `1.28-alpine3.21`](https://github.com/nginx/docker-nginx/blob/7f1d49f6f222f7e588a9066fd53a0ce43c3466a5/stable/alpine/Dockerfile)
+
+-	[`1.28.0-alpine-perl`, `stable-alpine-perl`, `1.28-alpine-perl`, `1.28.0-alpine3.21-perl`, `stable-alpine3.21-perl`, `1.28-alpine3.21-perl`](https://github.com/nginx/docker-nginx/blob/7f1d49f6f222f7e588a9066fd53a0ce43c3466a5/stable/alpine-perl/Dockerfile)
+
+-	[`1.28.0-alpine-slim`, `stable-alpine-slim`, `1.28-alpine-slim`, `1.28.0-alpine3.21-slim`, `stable-alpine3.21-slim`, `1.28-alpine3.21-slim`](https://github.com/nginx/docker-nginx/blob/7f1d49f6f222f7e588a9066fd53a0ce43c3466a5/stable/alpine-slim/Dockerfile)
+
+-	[`1.28.0-alpine-otel`, `stable-alpine-otel`, `1.28-alpine-otel`, `1.28.0-alpine3.21-otel`, `stable-alpine3.21-otel`, `1.28-alpine3.21-otel`](https://github.com/nginx/docker-nginx/blob/7f1d49f6f222f7e588a9066fd53a0ce43c3466a5/stable/alpine-otel/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -45,7 +58,7 @@ WARNING:
 	[https://github.com/nginxinc/docker-nginx/issues](https://github.com/nginxinc/docker-nginx/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/nginx/), [`arm32v5`](https://hub.docker.com/r/arm32v5/nginx/), [`arm32v6`](https://hub.docker.com/r/arm32v6/nginx/), [`arm32v7`](https://hub.docker.com/r/arm32v7/nginx/), [`arm64v8`](https://hub.docker.com/r/arm64v8/nginx/), [`i386`](https://hub.docker.com/r/i386/nginx/), [`mips64le`](https://hub.docker.com/r/mips64le/nginx/), [`ppc64le`](https://hub.docker.com/r/ppc64le/nginx/), [`s390x`](https://hub.docker.com/r/s390x/nginx/)
+	[`amd64`](https://hub.docker.com/r/amd64/nginx/), [`arm32v5`](https://hub.docker.com/r/arm32v5/nginx/), [`arm32v6`](https://hub.docker.com/r/arm32v6/nginx/), [`arm32v7`](https://hub.docker.com/r/arm32v7/nginx/), [`arm64v8`](https://hub.docker.com/r/arm64v8/nginx/), [`i386`](https://hub.docker.com/r/i386/nginx/), [`mips64le`](https://hub.docker.com/r/mips64le/nginx/), [`ppc64le`](https://hub.docker.com/r/ppc64le/nginx/), [`riscv64`](https://hub.docker.com/r/riscv64/nginx/), [`s390x`](https://hub.docker.com/r/s390x/nginx/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/nginx/` directory](https://github.com/docker-library/repo-info/blob/master/repos/nginx) ([history](https://github.com/docker-library/repo-info/commits/master/repos/nginx))  
@@ -81,9 +94,10 @@ FROM nginx
 COPY static-html-directory /usr/share/nginx/html
 ```
 
-Place this file in the same directory as your directory of content ("static-html-directory"), run `docker build -t some-content-nginx .`, then start your container:
+Place this file in the same directory as your directory of content ("static-html-directory"), then run these commands to build and start your container:
 
 ```console
+$ docker build -t some-content-nginx .
 $ docker run --name some-nginx -d some-content-nginx
 ```
 
@@ -134,7 +148,7 @@ $ docker run --name my-custom-nginx-container -d custom-nginx
 
 Out-of-the-box, nginx doesn't support environment variables inside most configuration blocks. But this image has a function, which will extract environment variables before nginx starts.
 
-Here is an example using docker-compose.yml:
+Here is an example using `compose.yaml`:
 
 ```yaml
 web:
@@ -190,7 +204,7 @@ Images since version 1.9.8 come with `nginx-debug` binary that produces verbose 
 $ docker run --name my-nginx -v /host/path/nginx.conf:/etc/nginx/nginx.conf:ro -d nginx nginx-debug -g 'daemon off;'
 ```
 
-Similar configuration in docker-compose.yml may look like this:
+Similar configuration in `compose.yaml` may look like this:
 
 ```yaml
 web:

@@ -17,20 +17,21 @@ WARNING:
 # Quick reference
 
 -	**Maintained by**:  
-	[Aerospike, Inc.](https://github.com/aerospike/aerospike-server-enterprise.docker)
+	[Aerospike, Inc.](https://github.com/aerospike/aerospike-server.docker)
 
 -	**Where to get help**:  
 	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`ee-7.1.0.2`, `ee-7.1.0.2_1`](https://github.com/aerospike/aerospike-server.docker/blob/feb210615277101e394d632493807e8b65f44b5d/enterprise/ubuntu22.04/Dockerfile)
--	[`ce-7.1.0.2`, `ce-7.1.0.2_1`](https://github.com/aerospike/aerospike-server.docker/blob/feb210615277101e394d632493807e8b65f44b5d/community/ubuntu22.04/Dockerfile)
+-	[`ee-8.0.0.8`, `ee-8.0.0.8_1`](https://github.com/aerospike/aerospike-server.docker/blob/210708576d3aa769dec734576a5b2788b013aea1/enterprise/ubuntu24.04/Dockerfile)
+
+-	[`ce-8.0.0.8`, `ce-8.0.0.8_1`](https://github.com/aerospike/aerospike-server.docker/blob/210708576d3aa769dec734576a5b2788b013aea1/community/ubuntu24.04/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[the Aerospike Forums](https://discuss.aerospike.com) or [GitHub](https://github.com/aerospike/aerospike-server-enterprise.docker/issues)
+	[the Aerospike Forums](https://discuss.aerospike.com) or [GitHub](https://github.com/aerospike/aerospike-server.docker/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/aerospike/), [`arm64v8`](https://hub.docker.com/r/arm64v8/aerospike/)
@@ -217,7 +218,7 @@ For more, see [How do I get a 2 nodes Aerospike cluster running quickly in Docke
 
 ## Image Versions
 
-These images are based on [ubuntu:22.04](https://hub.docker.com/_/ubuntu).
+These images are based on [ubuntu:24.04](https://hub.docker.com/_/ubuntu).
 
 ### ee-[version]
 

@@ -24,12 +24,17 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.1.2-apache`, `4.1-apache`, `4-apache`, `apache`, `4.1.2`, `4.1`, `4`, `latest`](https://github.com/monicahq/docker/blob/92af56dec9f147c16916ed4537dd4263108dcbf3/4/apache/Dockerfile)
--	[`4.1.2-fpm`, `4.1-fpm`, `4-fpm`, `fpm`](https://github.com/monicahq/docker/blob/92af56dec9f147c16916ed4537dd4263108dcbf3/4/fpm/Dockerfile)
--	[`4.1.2-fpm-alpine`, `4.1-fpm-alpine`, `4-fpm-alpine`, `fpm-alpine`](https://github.com/monicahq/docker/blob/92af56dec9f147c16916ed4537dd4263108dcbf3/4/fpm-alpine/Dockerfile)
--	[`5.0.0-beta.4-apache`, `5.0.0-beta-apache`, `5.0-apache`](https://github.com/monicahq/docker/blob/4ad283502e6b5411bacc3dcf3b55ff5dd57f29ee/5/apache/Dockerfile)
--	[`5.0.0-beta.4-fpm`, `5.0.0-beta-fpm`, `5.0-fpm`](https://github.com/monicahq/docker/blob/4ad283502e6b5411bacc3dcf3b55ff5dd57f29ee/5/fpm/Dockerfile)
--	[`5.0.0-beta.4-fpm-alpine`, `5.0.0-beta-fpm-alpine`, `5.0-fpm-alpine`](https://github.com/monicahq/docker/blob/4ad283502e6b5411bacc3dcf3b55ff5dd57f29ee/5/fpm-alpine/Dockerfile)
+-	[`4.1.2-apache`, `4.1-apache`, `4-apache`, `apache`, `4.1.2`, `4.1`, `4`, `latest`](https://github.com/monicahq/docker/blob/8c3bcc8d3ab01315ca762c995338083d71c5611e/4/apache/Dockerfile)
+
+-	[`4.1.2-fpm-alpine`, `4.1-fpm-alpine`, `4-fpm-alpine`, `fpm-alpine`](https://github.com/monicahq/docker/blob/8c3bcc8d3ab01315ca762c995338083d71c5611e/4/fpm-alpine/Dockerfile)
+
+-	[`4.1.2-fpm`, `4.1-fpm`, `4-fpm`, `fpm`](https://github.com/monicahq/docker/blob/8c3bcc8d3ab01315ca762c995338083d71c5611e/4/fpm/Dockerfile)
+
+-	[`5.0.0-beta.5-apache`, `5.0.0-beta-apache`, `5.0-apache`](https://github.com/monicahq/docker/blob/8c3bcc8d3ab01315ca762c995338083d71c5611e/5/apache/Dockerfile)
+
+-	[`5.0.0-beta.5-fpm-alpine`, `5.0.0-beta-fpm-alpine`, `5.0-fpm-alpine`](https://github.com/monicahq/docker/blob/8c3bcc8d3ab01315ca762c995338083d71c5611e/5/fpm-alpine/Dockerfile)
+
+-	[`5.0.0-beta.5-fpm`, `5.0.0-beta-fpm`, `5.0-fpm`](https://github.com/monicahq/docker/blob/8c3bcc8d3ab01315ca762c995338083d71c5611e/5/fpm/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -37,7 +42,7 @@ WARNING:
 	[https://github.com/monicahq/docker/issues](https://github.com/monicahq/docker/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/monica/), [`arm32v5`](https://hub.docker.com/r/arm32v5/monica/), [`arm32v6`](https://hub.docker.com/r/arm32v6/monica/), [`arm32v7`](https://hub.docker.com/r/arm32v7/monica/), [`arm64v8`](https://hub.docker.com/r/arm64v8/monica/), [`i386`](https://hub.docker.com/r/i386/monica/), [`mips64le`](https://hub.docker.com/r/mips64le/monica/), [`ppc64le`](https://hub.docker.com/r/ppc64le/monica/), [`s390x`](https://hub.docker.com/r/s390x/monica/)
+	[`amd64`](https://hub.docker.com/r/amd64/monica/), [`arm32v5`](https://hub.docker.com/r/arm32v5/monica/), [`arm32v6`](https://hub.docker.com/r/arm32v6/monica/), [`arm32v7`](https://hub.docker.com/r/arm32v7/monica/), [`arm64v8`](https://hub.docker.com/r/arm64v8/monica/), [`i386`](https://hub.docker.com/r/i386/monica/), [`mips64le`](https://hub.docker.com/r/mips64le/monica/), [`ppc64le`](https://hub.docker.com/r/ppc64le/monica/), [`riscv64`](https://hub.docker.com/r/riscv64/monica/), [`s390x`](https://hub.docker.com/r/s390x/monica/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/monica/` directory](https://github.com/docker-library/repo-info/blob/master/repos/monica) ([history](https://github.com/docker-library/repo-info/commits/master/repos/monica))  
@@ -82,7 +87,7 @@ docker run --name some-monica -d -p 9000:9000 monica:fpm
 
 ### Using an external database
 
-You'll need to setup an external database. Monica currently support MySQL/MariaDB database. You can also link a database container, e. g. `--link my-mysql:db`, and then use `db` as the database host on setup. More info is in the docker-compose section.
+You'll need to setup an external database. Monica currently support MySQL/MariaDB database. You can also link a database container, e. g. `--link my-mysql:db`, and then use `db` as the database host on setup. More info is in the Docker Compose section.
 
 ### Persistent data storage
 
@@ -104,21 +109,21 @@ Like every Laravel application, the `php artisan` command is very usefull for Mo
 docker exec CONTAINER_ID php artisan COMMAND
 ```
 
-or for docker-compose
+Or for Docker Compose:
 
 ```console
-docker-compose exec monica php artisan COMMAND
+docker compose exec monica php artisan COMMAND
 ```
 
-where `monica` is the name of the service in your `docker-compose.yml` file.
+where `monica` is the name of the service in your `compose.yaml` file.
 
 ## Configuration using environment variables
 
 The Monica image will use environment variables to setup the application. See [Monica documentation](https://github.com/monicahq/monica/blob/4.x/.env.example) for common used variables you should setup.
 
-## Running the image with docker-compose
+## Running the image with Docker Compose
 
-See some examples of docker-compose possibilities in the [example section](https://github.com/monicahq/docker/blob/main/.examples).
+See some examples of Docker Compose possibilities in the [example section](https://github.com/monicahq/docker/blob/main/.examples).
 
 ---
 
@@ -128,11 +133,9 @@ This version will use the apache image and add a mysql container. The volumes ar
 
 Make sure to pass in values for `APP_KEY` variable before you run this setup.
 
-1.	Create a `docker-compose.yml` file
+1.	Create a `compose.yaml` file
 
 	```yaml
-	version: "3.9"
-
 	services:
 	  app:
 	    image: monica
@@ -172,7 +175,7 @@ Make sure to pass in values for `APP_KEY` variable before you run this setup.
 3.	Run
 
 	```console
-	docker-compose up -d
+	docker compose up -d
 	```
 
 	Wait until all migrations are done and then access Monica at http://localhost:8080/ from your host system. If this looks ok, add your first user account.
@@ -180,7 +183,7 @@ Make sure to pass in values for `APP_KEY` variable before you run this setup.
 4.	Run this command once:
 
 	```console
-	docker-compose exec app php artisan setup:production
+	docker compose exec app php artisan setup:production
 	```
 
 ### FPM version
@@ -195,13 +198,11 @@ When using FPM image, you will need another container with a webserver to proxy 
 	curl -sSL https://raw.githubusercontent.com/monicahq/docker/main/.examples/full/web/Dockerfile -o web/Dockerfile
 	```
 
-	The `web` container image should be pre-build before each deploy with: `docker-compose build`.
+	The `web` container image should be pre-build before each deploy with: `docker compose build`.
 
-2.	Create a `docker-compose.yml` file
+2.	Create a `compose.yaml` file
 
 	```yaml
-	version: "3.9"
-
 	services:
 	  app:
 	    image: monica:fpm
@@ -249,7 +250,7 @@ When using FPM image, you will need another container with a webserver to proxy 
 4.	Run
 
 	```console
-	docker-compose up -d
+	docker compose up -d
 	```
 
 	Wait until all migrations are done and then access Monica at http://localhost:8080/ from your host system. If this looks ok, add your first user account.
@@ -257,7 +258,7 @@ When using FPM image, you will need another container with a webserver to proxy 
 5.	Run this command once:
 
 	```console
-	docker-compose exec app php artisan setup:production
+	docker compose exec app php artisan setup:production
 	```
 
 ## Make Monica available from the internet
@@ -270,7 +271,7 @@ One way to expose your Monica instance is to use a proxy webserver from your hos
 
 ### Using a proxy webserver container
 
-See some examples of docker-compose possibilities in the [example section](https://github.com/monicahq/docker/blob/main/.examples) to show how to a proxy webserver with ssl capabilities.
+See some examples of Docker Compose possibilities in the [example section](https://github.com/monicahq/docker/blob/main/.examples) to show how to a proxy webserver with ssl capabilities.
 
 # Image Variants
 

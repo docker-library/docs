@@ -24,8 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`gzserver11`, `gzserver11-focal`](https://github.com/osrf/docker_images/blob/27cc0b68263bbbb10bb58dd814efc0a6b0a01ec7/gazebo/11/ubuntu/focal/gzserver11/Dockerfile)
--	[`libgazebo11`, `libgazebo11-focal`, `latest`](https://github.com/osrf/docker_images/blob/532c4f1af8c9dadb54b0c9769543c67c40c0c84f/gazebo/11/ubuntu/focal/libgazebo11/Dockerfile)
+-	[`gzserver11`, `gzserver11-focal`](https://github.com/osrf/docker_images/blob/f7bb3258d4814deec1eca7e46cbb8d7f4b054431/gazebo/11/ubuntu/focal/gzserver11/Dockerfile)
+
+-	[`libgazebo11`, `libgazebo11-focal`, `latest`](https://github.com/osrf/docker_images/blob/f7bb3258d4814deec1eca7e46cbb8d7f4b054431/gazebo/11/ubuntu/focal/libgazebo11/Dockerfile)
 
 # Quick reference (cont.)
 

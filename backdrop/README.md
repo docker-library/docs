@@ -24,8 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.26.1`, `1.26`, `1`, `1.26.1-apache`, `1.26-apache`, `1-apache`, `apache`, `latest`](https://github.com/backdrop-ops/backdrop-docker/blob/95902d6610b2474ca88ff8faae40ed30e7d3318a/1/apache/Dockerfile)
--	[`1.26.1-fpm`, `1.26-fpm`, `1-fpm`, `fpm`](https://github.com/backdrop-ops/backdrop-docker/blob/95902d6610b2474ca88ff8faae40ed30e7d3318a/1/fpm/Dockerfile)
+-	[`1.31.0`, `1.31`, `1`, `1.31.0-apache`, `1.31-apache`, `1-apache`, `apache`, `latest`](https://github.com/backdrop-ops/backdrop-docker/blob/82f5f08f12c2e861cde61b7b4dac8ebd76f3ee1f/1/apache/Dockerfile)
+
+-	[`1.31.0-fpm`, `1.31-fpm`, `1-fpm`, `fpm`](https://github.com/backdrop-ops/backdrop-docker/blob/82f5f08f12c2e861cde61b7b4dac8ebd76f3ee1f/1/fpm/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -92,28 +93,29 @@ $ docker run --name some-backdrop \
   -d backdrop
 ```
 
-## ... via [`docker-compose`](https://github.com/docker/compose)
+## ... via [`docker compose`](https://github.com/docker/compose)
 
-Example `docker-compose.yml` for `backdrop`:
+Example `compose.yaml` for `backdrop`:
 
 ```yaml
-backdrop:
-  image: backdrop
-  links:
-    - db:mysql
-  ports:
-    - 8080:80
+services:
+  backdrop:
+    image: backdrop
+    links:
+      - db:mysql
+    ports:
+      - 8080:80
 
-db:
-  image: mysql
-  environment:
-    MYSQL_USER: backdrop
-    MYSQL_PASSWORD: backdrop
-    MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
-    MYSQL_DATABASE: backdrop
+  db:
+    image: mysql
+    environment:
+      MYSQL_USER: backdrop
+      MYSQL_PASSWORD: backdrop
+      MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
+      MYSQL_DATABASE: backdrop
 ```
 
-Run `docker-compose up`, wait for it to initialize completely, and visit `http://localhost:8080` or `http://host-ip:8080`.
+Run `docker compose up`, wait for it to initialize completely, and visit `http://localhost:8080` or `http://host-ip:8080`.
 
 ## Adding additional libraries / extensions
 

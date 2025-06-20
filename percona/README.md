@@ -24,13 +24,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.0.36-28-centos`, `8.0-centos`, `8-centos`, `8.0.36-28`, `8.0`, `8`, `ps-8.0.36-28`, `ps-8.0`, `ps-8`](https://github.com/percona/percona-docker/blob/02252c71b5fcf2d2235f7ec0d81940d4f2c45b64/percona-server-8.0/Dockerfile)
--	[`5.7.44-centos`, `5.7-centos`, `5-centos`, `centos`, `5.7.44`, `5.7`, `5`, `ps-5.7.44`, `ps-5.7`, `ps-5`](https://github.com/percona/percona-docker/blob/b89efa5f100edacc0ef660cef37975acfaf67326/percona-server-5.7/Dockerfile-dockerhub)
--	[`5.6.51-2-centos`, `5.6-centos`, `5.6.51-2`, `5.6`, `ps-5.6.51-2`, `ps-5.6`](https://github.com/percona/percona-docker/blob/4510d49bcce5cfce58a42c198d55399b144add83/percona-server-5.6/Dockerfile-dockerhub)
--	[`psmdb-6.0.6`, `psmdb-6.0`](https://github.com/percona/percona-docker/blob/80ab68b2d84c7c17c8cbc07edb35e35399fd0a54/percona-server-mongodb-6.0/Dockerfile)
--	[`psmdb-5.0.18`, `psmdb-5.0`](https://github.com/percona/percona-docker/blob/80ab68b2d84c7c17c8cbc07edb35e35399fd0a54/percona-server-mongodb-5.0/Dockerfile)
--	[`psmdb-4.4.22`, `psmdb-4.4`](https://github.com/percona/percona-docker/blob/80ab68b2d84c7c17c8cbc07edb35e35399fd0a54/percona-server-mongodb-4.4/Dockerfile)
--	[`psmdb-4.2.24`, `psmdb-4.2`](https://github.com/percona/percona-docker/blob/80ab68b2d84c7c17c8cbc07edb35e35399fd0a54/percona-server-mongodb-4.2/Dockerfile)
+-	[`8.0.42-33-centos`, `8.0-centos`, `8-centos`, `8.0.42-33`, `8.0`, `8`, `ps-8.0.42-33`, `ps-8.0`, `ps-8`](https://github.com/percona/percona-docker/blob/9cd781adb27010da39faab5daca25c1e72db0af4/percona-server-8.0/Dockerfile-dockerhub)
+
+-	[`psmdb-8.0.4`, `psmdb-8.0`](https://github.com/percona/percona-docker/blob/01836bbd1b62ad6ee28226986b2d7fff660523b6/percona-server-mongodb-8.0/Dockerfile-dockerhub)
+
+-	[`psmdb-7.0.16`, `psmdb-7.0`](https://github.com/percona/percona-docker/blob/01836bbd1b62ad6ee28226986b2d7fff660523b6/percona-server-mongodb-7.0/Dockerfile-dockerhub)
+
+-	[`psmdb-6.0.21`, `psmdb-6.0`](https://github.com/percona/percona-docker/blob/01836bbd1b62ad6ee28226986b2d7fff660523b6/percona-server-mongodb-6.0/Dockerfile-dockerhub)
 
 # Quick reference (cont.)
 
@@ -93,13 +93,12 @@ $ docker run -it --rm percona mysql -hsome.mysql.host -usome-mysql-user -p
 
 More information about the MySQL command line client can be found in the [MySQL documentation](http://dev.mysql.com/doc/en/mysql.html)
 
-## ... via [`docker-compose`](https://github.com/docker/compose) or [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/)
+## ... via [`docker compose`](https://github.com/docker/compose)
 
-Example `docker-compose.yml` for `percona`:
+Example `compose.yaml` for `percona`:
 
 ```yaml
 # Use root/example as user/password credentials
-version: '3.1'
 
 services:
 
@@ -116,9 +115,7 @@ services:
       - 8080:8080
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/9efeec18b6b2ed232cf0fbd3914b6211e16e242c/percona/stack.yml)
-
-Run `docker stack deploy -c stack.yml percona` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
+Run `docker compose up`, wait for it to initialize completely, and visit `http://localhost:8080` or `http://host-ip:8080` (as appropriate).
 
 ## Container shell access and viewing MySQL logs
 
@@ -188,7 +185,7 @@ This is an optional variable. Set to `yes` to allow the container to be started 
 
 ### `MYSQL_RANDOM_ROOT_PASSWORD`
 
-This is an optional variable. Set to `yes` to generate a random initial password for the root user (using `pwgen`). The generated root password will be printed to stdout (`GENERATED ROOT PASSWORD: .....`).
+This is an optional variable. Set to `yes` to generate a random initial password for the root user (using `pwmake`). The generated root password will be printed to stdout (`GENERATED ROOT PASSWORD: .....`).
 
 ### `MYSQL_ONETIME_PASSWORD`
 
@@ -250,7 +247,7 @@ The `-v /my/own/datadir:/var/lib/mysql` part of the command mounts the `/my/own/
 
 ## No connections until MySQL init completes
 
-If there is no database initialized when the container starts, then a default database will be created. While this is the expected behavior, this means that it will not accept incoming connections until such initialization completes. This may cause issues when using automation tools, such as `docker-compose`, which start several containers simultaneously.
+If there is no database initialized when the container starts, then a default database will be created. While this is the expected behavior, this means that it will not accept incoming connections until such initialization completes. This may cause issues when using automation tools, such as Docker Compose, which start several containers simultaneously.
 
 If the application you're trying to connect to MySQL does not handle MySQL downtime or waiting for MySQL to start gracefully, then a putting a connect-retry loop before the service starts might be necessary. For an example of such an implementation in the official images, see [WordPress](https://github.com/docker-library/wordpress/blob/1b48b4bccd7adb0f7ea1431c7b470a40e186f3da/docker-entrypoint.sh#L195-L235) or [Bonita](https://github.com/docker-library/docs/blob/9660a0cccb87d8db842f33bc0578d769caaf3ba9/bonita/stack.yml#L28-L44).
 

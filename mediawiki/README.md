@@ -24,15 +24,23 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.41.1`, `1.41`, `stable`, `latest`](https://github.com/wikimedia/mediawiki-docker/blob/1161796f04d6a6bcbec9fb4c67a8ce7248392403/1.41/apache/Dockerfile)
--	[`1.41.1-fpm`, `1.41-fpm`, `stable-fpm`](https://github.com/wikimedia/mediawiki-docker/blob/1161796f04d6a6bcbec9fb4c67a8ce7248392403/1.41/fpm/Dockerfile)
--	[`1.41.1-fpm-alpine`, `1.41-fpm-alpine`, `stable-fpm-alpine`](https://github.com/wikimedia/mediawiki-docker/blob/1161796f04d6a6bcbec9fb4c67a8ce7248392403/1.41/fpm-alpine/Dockerfile)
--	[`1.40.3`, `1.40`, `legacy`](https://github.com/wikimedia/mediawiki-docker/blob/1161796f04d6a6bcbec9fb4c67a8ce7248392403/1.40/apache/Dockerfile)
--	[`1.40.3-fpm`, `1.40-fpm`, `legacy-fpm`](https://github.com/wikimedia/mediawiki-docker/blob/1161796f04d6a6bcbec9fb4c67a8ce7248392403/1.40/fpm/Dockerfile)
--	[`1.40.3-fpm-alpine`, `1.40-fpm-alpine`, `legacy-fpm-alpine`](https://github.com/wikimedia/mediawiki-docker/blob/1161796f04d6a6bcbec9fb4c67a8ce7248392403/1.40/fpm-alpine/Dockerfile)
--	[`1.39.7`, `1.39`, `lts`](https://github.com/wikimedia/mediawiki-docker/blob/1161796f04d6a6bcbec9fb4c67a8ce7248392403/1.39/apache/Dockerfile)
--	[`1.39.7-fpm`, `1.39-fpm`, `lts-fpm`](https://github.com/wikimedia/mediawiki-docker/blob/1161796f04d6a6bcbec9fb4c67a8ce7248392403/1.39/fpm/Dockerfile)
--	[`1.39.7-fpm-alpine`, `1.39-fpm-alpine`, `lts-fpm-alpine`](https://github.com/wikimedia/mediawiki-docker/blob/1161796f04d6a6bcbec9fb4c67a8ce7248392403/1.39/fpm-alpine/Dockerfile)
+-	[`1.43.1`, `1.43`, `latest`, `stable`, `lts`](https://github.com/wikimedia/mediawiki-docker/blob/76236dfa180c94c95410242a17d6dc8603ba3990/1.43/apache/Dockerfile)
+
+-	[`1.43.1-fpm`, `1.43-fpm`, `stable-fpm`, `lts-fpm`](https://github.com/wikimedia/mediawiki-docker/blob/76236dfa180c94c95410242a17d6dc8603ba3990/1.43/fpm/Dockerfile)
+
+-	[`1.43.1-fpm-alpine`, `1.43-fpm-alpine`, `stable-fpm-alpine`, `lts-fpm-alpine`](https://github.com/wikimedia/mediawiki-docker/blob/76236dfa180c94c95410242a17d6dc8603ba3990/1.43/fpm-alpine/Dockerfile)
+
+-	[`1.42.6`, `1.42`, `legacy`](https://github.com/wikimedia/mediawiki-docker/blob/76236dfa180c94c95410242a17d6dc8603ba3990/1.42/apache/Dockerfile)
+
+-	[`1.42.6-fpm`, `1.42-fpm`, `legacy-fpm`](https://github.com/wikimedia/mediawiki-docker/blob/76236dfa180c94c95410242a17d6dc8603ba3990/1.42/fpm/Dockerfile)
+
+-	[`1.42.6-fpm-alpine`, `1.42-fpm-alpine`, `legacy-fpm-alpine`](https://github.com/wikimedia/mediawiki-docker/blob/76236dfa180c94c95410242a17d6dc8603ba3990/1.42/fpm-alpine/Dockerfile)
+
+-	[`1.39.12`, `1.39`](https://github.com/wikimedia/mediawiki-docker/blob/76236dfa180c94c95410242a17d6dc8603ba3990/1.39/apache/Dockerfile)
+
+-	[`1.39.12-fpm`, `1.39-fpm`](https://github.com/wikimedia/mediawiki-docker/blob/76236dfa180c94c95410242a17d6dc8603ba3990/1.39/fpm/Dockerfile)
+
+-	[`1.39.12-fpm-alpine`, `1.39-fpm-alpine`](https://github.com/wikimedia/mediawiki-docker/blob/76236dfa180c94c95410242a17d6dc8603ba3990/1.39/fpm-alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -101,16 +109,14 @@ The paths `/var/www/html/images` and `/var/www/html/LocalSettings.php` are thing
 $ docker run --rm mediawiki tar -cC /var/www/html/sites . | tar -xC /path/on/host/sites
 ```
 
-## ... via [`docker-compose`](https://github.com/docker/compose) or [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/)
+## ... via [`docker compose`](https://github.com/docker/compose)
 
-Example `docker-compose.yml` for `mediawiki`:
+Example `compose.yaml` for `mediawiki`:
 
 ```yaml
 # MediaWiki with MariaDB
 #
 # Access via "http://localhost:8080"
-#   (or "http://$(docker-machine ip):8080" if using docker-machine)
-version: '3'
 services:
   mediawiki:
     image: mediawiki
@@ -125,8 +131,7 @@ services:
       # this yaml and uncomment the following line and use compose to restart
       # the mediawiki service
       # - ./LocalSettings.php:/var/www/html/LocalSettings.php
-  # This key also defines the name of the database host used during setup instead of the default "localhost"
-  database:
+  database: # <- This key defines the name of the database during setup
     image: mariadb
     restart: always
     environment:
@@ -143,9 +148,7 @@ volumes:
   db:
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/8fc63a1c6c985353af894baed5f7f4ae73c056f7/mediawiki/stack.yml)
-
-Run `docker stack deploy -c stack.yml mediawiki` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
+Run `docker compose up`, wait for it to initialize completely, and visit `http://localhost:8080` or `http://host-ip:8080` (as appropriate).
 
 ## Adding additional libraries / extensions
 

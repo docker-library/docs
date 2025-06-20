@@ -24,16 +24,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`fresh`, `7.5.0`, `7.5`, `latest`](https://github.com/varnish/docker-varnish/blob/0cbc46e59728598b7bb0f537206ce00af6dd9203/fresh/debian/Dockerfile)
--	[`fresh-alpine`, `7.5.0-alpine`, `7.5-alpine`, `alpine`](https://github.com/varnish/docker-varnish/blob/0cbc46e59728598b7bb0f537206ce00af6dd9203/fresh/alpine/Dockerfile)
--	[`old`, `7.4.3`, `7.4`](https://github.com/varnish/docker-varnish/blob/185f6f8ec644d59c896861944a1385c09e2abfbe/old/debian/Dockerfile)
--	[`old-alpine`, `7.4.3-alpine`, `7.4-alpine`](https://github.com/varnish/docker-varnish/blob/185f6f8ec644d59c896861944a1385c09e2abfbe/old/alpine/Dockerfile)
--	[`stable`, `6.0.13`, `6.0`](https://github.com/varnish/docker-varnish/blob/185f6f8ec644d59c896861944a1385c09e2abfbe/stable/debian/Dockerfile)
--	[`7.4.2`](https://github.com/varnish/docker-varnish/blob/0c295b528f28a98650fb2580eab6d34b30b165c4/fresh/debian/Dockerfile)
--	[`7.4.2-alpine`](https://github.com/varnish/docker-varnish/blob/5644d31e8fa5bc78e764e8604ffa17c47528f5e3/fresh/alpine/Dockerfile)
--	[`7.3.1`, `7.3`](https://github.com/varnish/docker-varnish/blob/0c295b528f28a98650fb2580eab6d34b30b165c4/old/debian/Dockerfile)
--	[`7.3.1-alpine`, `7.3-alpine`](https://github.com/varnish/docker-varnish/blob/5644d31e8fa5bc78e764e8604ffa17c47528f5e3/old/alpine/Dockerfile)
--	[`6.0.12`](https://github.com/varnish/docker-varnish/blob/0c295b528f28a98650fb2580eab6d34b30b165c4/stable/debian/Dockerfile)
+-	[`fresh`, `7.7.1`, `7`, `7.7`, `latest`](https://github.com/varnish/docker-varnish/blob/ed86c8d78292bb13fe129ba5dcccfd8d11ed1481/fresh/debian/Dockerfile)
+
+-	[`fresh-alpine`, `7.7.1-alpine`, `7-alpine`, `7.7-alpine`, `alpine`](https://github.com/varnish/docker-varnish/blob/ed86c8d78292bb13fe129ba5dcccfd8d11ed1481/fresh/alpine/Dockerfile)
+
+-	[`old`, `7.6.3`, `7.6`](https://github.com/varnish/docker-varnish/blob/ea97ed35f2b0eb438ccd6a9250c36567686bfb4a/old/debian/Dockerfile)
+
+-	[`old-alpine`, `7.6.3-alpine`, `7.6-alpine`](https://github.com/varnish/docker-varnish/blob/ea97ed35f2b0eb438ccd6a9250c36567686bfb4a/old/alpine/Dockerfile)
+
+-	[`stable`, `6.0.14`, `6.0`](https://github.com/varnish/docker-varnish/blob/ea97ed35f2b0eb438ccd6a9250c36567686bfb4a/stable/debian/Dockerfile)
 
 # Quick reference (cont.)
 

@@ -24,8 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.6.2`, `2.6`, `latest`](https://github.com/apache/storm-docker/blob/d8c821ffb599be733400c98cc10fe4c05966b552/2.6.2/Dockerfile)
--	[`2.6.2-jre17`, `2.6-jre17`](https://github.com/apache/storm-docker/blob/31209f0cde237834a3602a382e69a6caa6bdcffc/2.6.2-jre17/Dockerfile)
+-	[`2.8.1-jre17`, `2.8-jre17`, `2.8.1`, `2.8`, `latest`](https://github.com/apache/storm-docker/blob/c81967cfcd43d2535f097f0c68eacdbf4ec778cf/2.8.1/Dockerfile)
+
+-	[`2.8.1-jre21`, `2.8-jre21`](https://github.com/apache/storm-docker/blob/c81967cfcd43d2535f097f0c68eacdbf4ec778cf/2.8.1-jre21/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -100,13 +101,11 @@ $ docker run -it -v $(pwd)/topology.jar:/topology.jar storm storm jar /topology.
 	$ docker run -d -p 8080:8080 --restart always --name ui --link some-nimbus:nimbus storm storm ui
 	```
 
-## ... via [`docker-compose`](https://github.com/docker/compose) or [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/)
+## ... via [`docker compose`](https://github.com/docker/compose)
 
-Example `docker-compose.yml` for `storm`:
+Example `compose.yaml` for `storm`:
 
 ```yaml
-version: '3.1'
-
 services:
   zookeeper:
     image: zookeeper
@@ -138,9 +137,7 @@ services:
     restart: always
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/9efeec18b6b2ed232cf0fbd3914b6211e16e242c/storm/stack.yml)
-
-Run `docker stack deploy -c stack.yml storm` (or `docker-compose -f stack.yml up`) and wait for it to initialize completely. The Nimbus will be available at `http://swarm-ip:6627`, `http://localhost:6627`, or `http://host-ip:6627` (as appropriate).
+Run `docker compose up` and wait for it to initialize completely. The Nimbus will be available at `http://localhost:6627` or `http://host-ip:6627` (as appropriate).
 
 ## Configuration
 

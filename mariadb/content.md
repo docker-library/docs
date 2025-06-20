@@ -12,38 +12,48 @@ The %%IMAGE%% has a number of tags, and of note is `latest`, as the latest stabl
 
 ## Running the container
 
+### Configuration
+
+#### Port binding
+
+By default, the database running within the container will listen on port 3306. You can expose the container port 3306 to the host port 3306 with the `-p 3306:3306` argument to `docker run`, like the command below:
+
+```console
+$ docker run --name some-%%REPO%% -p 3306:3306 %%IMAGE%%:latest
+```
+
 ### Starting using a minimal configuration
 
 The environment variables required to use this image involves the setting of the root user password:
 
 ```console
-$ docker run --detach --name some-%%REPO%% --env MARIADB_ROOT_PASSWORD=my-secret-pw  %%IMAGE%%:latest
+$ docker run --detach --name some-%%REPO%% --env MARIADB_ROOT_PASSWORD=my-secret-pw %%IMAGE%%:latest
 ```
 
 or:
 
 ```console
-$ docker run --detach --name some-%%REPO%% --env MARIADB_ALLOW_EMPTY_ROOT_PASSWORD=1  %%IMAGE%%:latest
+$ docker run --detach --name some-%%REPO%% --env MARIADB_ALLOW_EMPTY_ROOT_PASSWORD=1 %%IMAGE%%:latest
 ```
 
 or:
 
 ```console
-$ docker run --detach --name some-%%REPO%% --env MARIADB_RANDOM_ROOT_PASSWORD=1  %%IMAGE%%:latest
+$ docker run --detach --name some-%%REPO%% --env MARIADB_RANDOM_ROOT_PASSWORD=1 %%IMAGE%%:latest
 ```
 
 ... where the container logs will contain the generated root password.
 
-## %%STACK%%
+## %%COMPOSE%%
 
-Run `docker stack deploy -c stack.yml %%REPO%%` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
+Run `docker compose up`, wait for it to initialize completely, and visit `http://localhost:8080` or `http://host-ip:8080` (as appropriate).
 
 ### Start a `%%IMAGE%%` server instance with user, password and database
 
 Starting a MariaDB instance with a user, password, and a database:
 
 ```console
-$ docker run --detach --name some-%%REPO%% --env MARIADB_USER=example-user --env MARIADB_PASSWORD=my_cool_secret --env MARIADB_DATABASE=exmple-database --env MARIADB_ROOT_PASSWORD=my-secret-pw  %%IMAGE%%:latest
+$ docker run --detach --name some-%%REPO%% --env MARIADB_USER=example-user --env MARIADB_PASSWORD=my_cool_secret --env MARIADB_DATABASE=exmple-database --env MARIADB_ROOT_PASSWORD=my-secret-pw %%IMAGE%%:latest
 ```
 
 ### Start a `%%IMAGE%%` server instance in a network
@@ -52,8 +62,8 @@ As applications talk to MariaDB, MariaDB needs to start in the same network as t
 
 ```console
 $ docker network create some-network 
-$ docker run --detach --network some-network --name some-%%REPO%% --env MARIADB_USER=example-user --env MARIADB_PASSWORD=my_cool_secret --env MARIADB_ROOT_PASSWORD=my-secret-pw  %%IMAGE%%:latest
-$ docker run --detach --network some-network --name some-application --env APP_DB_HOST=some-%%REPO%%  --env APP_DB_USER=example-user --env APP_DB_PASSWD=my_cool_secret some-application
+$ docker run --detach --network some-network --name some-%%REPO%% --env MARIADB_USER=example-user --env MARIADB_PASSWORD=my_cool_secret --env MARIADB_ROOT_PASSWORD=my-secret-pw %%IMAGE%%:latest
+$ docker run --detach --network some-network --name some-application --env APP_DB_HOST=some-%%REPO%% --env APP_DB_USER=example-user --env APP_DB_PASSWD=my_cool_secret some-application
 ```
 
 ... where `some-network` is a newly created network (other than `bridge` as the default network), `some-%%REPO%%` is the name you want to assign to your container, `my-secret-pw` is the password to be set for the MariaDB root user. See the list above for relevant tags to match your needs and environment. `some-application` and then environment variable `APP_DB_HOST`, `APP_DB_USER` and `APP_DB_PASSWD` are the application's configuration for its database connection.
@@ -63,7 +73,7 @@ $ docker run --detach --network some-network --name some-application --env APP_D
 The following command starts another `%%IMAGE%%` container instance and runs the `mariadb` command line client against your original `%%IMAGE%%` container, allowing you to execute SQL statements against your database instance:
 
 ```console
-$ docker run -it --network some-network --rm %%IMAGE%% mariadb -hsome-%%REPO%% -uexample-user -p
+$ docker run -it --network some-network --rm %%IMAGE%% mariadb -h some-%%REPO%% -u example-user
 ```
 
 ... where `some-%%REPO%%` is the name of your original `%%IMAGE%%` container (connected to the `some-network` Docker network).
@@ -208,7 +218,7 @@ The `-v /my/own/datadir:/var/lib/mysql:Z` part of the command mounts the `/my/ow
 
 ## No connections until MariaDB init completes
 
-If there is no database initialized when the container starts, then a default database will be created. While this is the expected behavior, this means that it will not accept incoming connections until such initialization completes. This may cause issues when using automation tools, such as `docker-compose`, which start several containers simultaneously.
+If there is no database initialized when the container starts, then a default database will be created. While this is the expected behavior, this means that it will not accept incoming connections until such initialization completes. This may cause issues when using automation tools, such as `docker compose`, which start several containers simultaneously.
 
 ## Health/Liveness/Readiness Checking
 

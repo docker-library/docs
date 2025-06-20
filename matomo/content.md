@@ -54,9 +54,9 @@ The PHP memory limit can be configured with the following environment variable:
 
 -	`PHP_MEMORY_LIMIT`
 
-## Docker-compose examples and log import instructions
+## Docker Compose examples and log import instructions
 
-A minimal set-up using docker-compose is available in the [.examples folder](%%GITHUB-REPO%%/tree/master/.examples).
+A minimal set-up using Docker Compose is available in the [.examples folder](%%GITHUB-REPO%%/tree/master/.examples).
 
 If you want to use the import logs script, you can then run the following container as needed, in order to execute the python import logs script:
 

@@ -24,62 +24,95 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.10.1`, `5.10`, `5.10.1-jammy`, `5.10-jammy`, `jammy`, `latest`](https://github.com/apple/swift-docker/blob/53c4d44e4b556d7bab6ff94c80e5bd0444cdc17d/5.10/ubuntu/22.04/Dockerfile)
--	[`5.10.1-slim`, `5.10-slim`, `5.10.1-jammy-slim`, `5.10-jammy-slim`, `jammy-slim`, `slim`](https://github.com/apple/swift-docker/blob/53c4d44e4b556d7bab6ff94c80e5bd0444cdc17d/5.10/ubuntu/22.04/slim/Dockerfile)
--	[`5.10.1-focal-slim`, `5.10-focal-slim`, `focal-slim`](https://github.com/apple/swift-docker/blob/53c4d44e4b556d7bab6ff94c80e5bd0444cdc17d/5.10/ubuntu/20.04/slim/Dockerfile)
--	[`5.10.1-focal`, `5.10-focal`, `focal`](https://github.com/apple/swift-docker/blob/53c4d44e4b556d7bab6ff94c80e5bd0444cdc17d/5.10/ubuntu/20.04/Dockerfile)
--	[`5.10.1-mantic`, `5.10-mantic`, `mantic`](https://github.com/apple/swift-docker/blob/53c4d44e4b556d7bab6ff94c80e5bd0444cdc17d/5.10/ubuntu/23.10/Dockerfile)
--	[`5.10.1-noble`, `5.10-noble`, `noble`](https://github.com/apple/swift-docker/blob/53c4d44e4b556d7bab6ff94c80e5bd0444cdc17d/5.10/ubuntu/24.04/Dockerfile)
--	[`5.10.1-bookworm`, `5.10-bookworm`, `bookworm`](https://github.com/apple/swift-docker/blob/53c4d44e4b556d7bab6ff94c80e5bd0444cdc17d/5.10/debian/12/Dockerfile)
--	[`5.10.1-fedora39`, `5.10-fedora39`, `fedora39`](https://github.com/apple/swift-docker/blob/53c4d44e4b556d7bab6ff94c80e5bd0444cdc17d/5.10/fedora/39/Dockerfile)
--	[`5.10.1-amazonlinux2`, `5.10-amazonlinux2`, `amazonlinux2`](https://github.com/apple/swift-docker/blob/53c4d44e4b556d7bab6ff94c80e5bd0444cdc17d/5.10/amazonlinux/2/Dockerfile)
--	[`5.10.1-amazonlinux2-slim`, `5.10-amazonlinux2-slim`, `amazonlinux2-slim`](https://github.com/apple/swift-docker/blob/53c4d44e4b556d7bab6ff94c80e5bd0444cdc17d/5.10/amazonlinux/2/slim/Dockerfile)
--	[`5.10.1-centos7`, `5.10-centos7`, `centos7`](https://github.com/apple/swift-docker/blob/53c4d44e4b556d7bab6ff94c80e5bd0444cdc17d/5.10/centos/7/Dockerfile)
--	[`5.10.1-centos7-slim`, `5.10-centos7-slim`, `centos7-slim`](https://github.com/apple/swift-docker/blob/53c4d44e4b556d7bab6ff94c80e5bd0444cdc17d/5.10/centos/7/slim/Dockerfile)
--	[`5.10.1-rhel-ubi9`, `5.10-rhel-ubi9`, `rhel-ubi9`](https://github.com/apple/swift-docker/blob/53c4d44e4b556d7bab6ff94c80e5bd0444cdc17d/5.10/rhel-ubi/9/Dockerfile)
--	[`5.10.1-rhel-ubi9-slim`, `5.10-rhel-ubi9-slim`, `rhel-ubi9-slim`](https://github.com/apple/swift-docker/blob/53c4d44e4b556d7bab6ff94c80e5bd0444cdc17d/5.10/rhel-ubi/9/slim/Dockerfile)
--	[`5.10.1-windowsservercore-ltsc2022`, `5.10-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`](https://github.com/apple/swift-docker/blob/53c4d44e4b556d7bab6ff94c80e5bd0444cdc17d/5.10/windows/LTSC2022/Dockerfile)
+-	[`6.1.2`, `6.1`, `6.1.2-noble`, `6.1-noble`, `noble`, `latest`](https://github.com/apple/swift-docker/blob/28756f801d3772456301075fcb70b1ef5cda0b6b/6.1/ubuntu/24.04/Dockerfile)
+
+-	[`6.1.2-slim`, `6.1-slim`, `6.1.2-noble-slim`, `6.1-noble-slim`, `noble-slim`, `slim`](https://github.com/apple/swift-docker/blob/28756f801d3772456301075fcb70b1ef5cda0b6b/6.1/ubuntu/24.04/slim/Dockerfile)
+
+-	[`6.1.2-jammy`, `6.1-jammy`, `jammy`](https://github.com/apple/swift-docker/blob/28756f801d3772456301075fcb70b1ef5cda0b6b/6.1/ubuntu/22.04/Dockerfile)
+
+-	[`6.1.2-jammy-slim`, `6.1-jammy-slim`, `jammy-slim`](https://github.com/apple/swift-docker/blob/28756f801d3772456301075fcb70b1ef5cda0b6b/6.1/ubuntu/22.04/slim/Dockerfile)
+
+-	[`6.1.2-focal-slim`, `6.1-focal-slim`, `focal-slim`](https://github.com/apple/swift-docker/blob/28756f801d3772456301075fcb70b1ef5cda0b6b/6.1/ubuntu/20.04/slim/Dockerfile)
+
+-	[`6.1.2-focal`, `6.1-focal`, `focal`](https://github.com/apple/swift-docker/blob/28756f801d3772456301075fcb70b1ef5cda0b6b/6.1/ubuntu/20.04/Dockerfile)
+
+-	[`6.1.2-bookworm`, `6.1-bookworm`, `bookworm`](https://github.com/apple/swift-docker/blob/28756f801d3772456301075fcb70b1ef5cda0b6b/6.1/debian/12/Dockerfile)
+
+-	[`6.1.2-amazonlinux2`, `6.1-amazonlinux2`, `amazonlinux2`](https://github.com/apple/swift-docker/blob/28756f801d3772456301075fcb70b1ef5cda0b6b/6.1/amazonlinux/2/Dockerfile)
+
+-	[`6.1.2-amazonlinux2-slim`, `6.1-amazonlinux2-slim`, `amazonlinux2-slim`](https://github.com/apple/swift-docker/blob/28756f801d3772456301075fcb70b1ef5cda0b6b/6.1/amazonlinux/2/slim/Dockerfile)
+
+-	[`6.1.2-rhel-ubi9`, `6.1-rhel-ubi9`, `rhel-ubi9`](https://github.com/apple/swift-docker/blob/28756f801d3772456301075fcb70b1ef5cda0b6b/6.1/rhel-ubi/9/Dockerfile)
+
+-	[`6.1.2-rhel-ubi9-slim`, `6.1-rhel-ubi9-slim`, `rhel-ubi9-slim`](https://github.com/apple/swift-docker/blob/28756f801d3772456301075fcb70b1ef5cda0b6b/6.1/rhel-ubi/9/slim/Dockerfile)
+
+-	[`6.1.2-windowsservercore-ltsc2022`, `6.1-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`](https://github.com/apple/swift-docker/blob/28756f801d3772456301075fcb70b1ef5cda0b6b/6.1/windows/LTSC2022/Dockerfile)
+
+-	[`6.0.3`, `6.0`, `6.0.3-noble`, `6.0-noble`](https://github.com/apple/swift-docker/blob/f44060cdf224436060d2df98a5c3f63f2600de63/6.0/ubuntu/24.04/Dockerfile)
+
+-	[`6.0.3-slim`, `6.0-slim`, `6.0.3-noble-slim`, `6.0-noble-slim`](https://github.com/apple/swift-docker/blob/f44060cdf224436060d2df98a5c3f63f2600de63/6.0/ubuntu/24.04/slim/Dockerfile)
+
+-	[`6.0.3-jammy`, `6.0-jammy`](https://github.com/apple/swift-docker/blob/f44060cdf224436060d2df98a5c3f63f2600de63/6.0/ubuntu/22.04/Dockerfile)
+
+-	[`6.0.3-jammy-slim`, `6.0-jammy-slim`](https://github.com/apple/swift-docker/blob/f44060cdf224436060d2df98a5c3f63f2600de63/6.0/ubuntu/22.04/slim/Dockerfile)
+
+-	[`6.0.3-focal-slim`, `6.0-focal-slim`](https://github.com/apple/swift-docker/blob/f44060cdf224436060d2df98a5c3f63f2600de63/6.0/ubuntu/20.04/slim/Dockerfile)
+
+-	[`6.0.3-focal`, `6.0-focal`](https://github.com/apple/swift-docker/blob/f44060cdf224436060d2df98a5c3f63f2600de63/6.0/ubuntu/20.04/Dockerfile)
+
+-	[`6.0.3-bookworm`, `6.0-bookworm`](https://github.com/apple/swift-docker/blob/f44060cdf224436060d2df98a5c3f63f2600de63/6.0/debian/12/Dockerfile)
+
+-	[`6.0.3-amazonlinux2`, `6.0-amazonlinux2`](https://github.com/apple/swift-docker/blob/f44060cdf224436060d2df98a5c3f63f2600de63/6.0/amazonlinux/2/Dockerfile)
+
+-	[`6.0.3-amazonlinux2-slim`, `6.0-amazonlinux2-slim`](https://github.com/apple/swift-docker/blob/f44060cdf224436060d2df98a5c3f63f2600de63/6.0/amazonlinux/2/slim/Dockerfile)
+
+-	[`6.0.3-rhel-ubi9`, `6.0-rhel-ubi9`](https://github.com/apple/swift-docker/blob/f44060cdf224436060d2df98a5c3f63f2600de63/6.0/rhel-ubi/9/Dockerfile)
+
+-	[`6.0.3-rhel-ubi9-slim`, `6.0-rhel-ubi9-slim`](https://github.com/apple/swift-docker/blob/f44060cdf224436060d2df98a5c3f63f2600de63/6.0/rhel-ubi/9/slim/Dockerfile)
+
+-	[`6.0.3-windowsservercore-ltsc2022`, `6.0-windowsservercore-ltsc2022`](https://github.com/apple/swift-docker/blob/f44060cdf224436060d2df98a5c3f63f2600de63/6.0/windows/LTSC2022/Dockerfile)
+
+-	[`5.10.1`, `5.10`, `5.10.1-jammy`, `5.10-jammy`](https://github.com/apple/swift-docker/blob/53c4d44e4b556d7bab6ff94c80e5bd0444cdc17d/5.10/ubuntu/22.04/Dockerfile)
+
+-	[`5.10.1-slim`, `5.10-slim`, `5.10.1-jammy-slim`, `5.10-jammy-slim`](https://github.com/apple/swift-docker/blob/53c4d44e4b556d7bab6ff94c80e5bd0444cdc17d/5.10/ubuntu/22.04/slim/Dockerfile)
+
+-	[`5.10.1-focal-slim`, `5.10-focal-slim`](https://github.com/apple/swift-docker/blob/53c4d44e4b556d7bab6ff94c80e5bd0444cdc17d/5.10/ubuntu/20.04/slim/Dockerfile)
+
+-	[`5.10.1-focal`, `5.10-focal`](https://github.com/apple/swift-docker/blob/53c4d44e4b556d7bab6ff94c80e5bd0444cdc17d/5.10/ubuntu/20.04/Dockerfile)
+
+-	[`5.10.1-noble`, `5.10-noble`](https://github.com/apple/swift-docker/blob/53c4d44e4b556d7bab6ff94c80e5bd0444cdc17d/5.10/ubuntu/24.04/Dockerfile)
+
+-	[`5.10.1-noble-slim`, `5.10-noble-slim`](https://github.com/apple/swift-docker/blob/38e4244ebab3d6a4e702fb30449827d6c28ee1fd/5.10/ubuntu/24.04/slim/Dockerfile)
+
+-	[`5.10.1-bookworm`, `5.10-bookworm`](https://github.com/apple/swift-docker/blob/53c4d44e4b556d7bab6ff94c80e5bd0444cdc17d/5.10/debian/12/Dockerfile)
+
+-	[`5.10.1-amazonlinux2`, `5.10-amazonlinux2`](https://github.com/apple/swift-docker/blob/53c4d44e4b556d7bab6ff94c80e5bd0444cdc17d/5.10/amazonlinux/2/Dockerfile)
+
+-	[`5.10.1-amazonlinux2-slim`, `5.10-amazonlinux2-slim`](https://github.com/apple/swift-docker/blob/53c4d44e4b556d7bab6ff94c80e5bd0444cdc17d/5.10/amazonlinux/2/slim/Dockerfile)
+
+-	[`5.10.1-rhel-ubi9`, `5.10-rhel-ubi9`](https://github.com/apple/swift-docker/blob/53c4d44e4b556d7bab6ff94c80e5bd0444cdc17d/5.10/rhel-ubi/9/Dockerfile)
+
+-	[`5.10.1-rhel-ubi9-slim`, `5.10-rhel-ubi9-slim`](https://github.com/apple/swift-docker/blob/53c4d44e4b556d7bab6ff94c80e5bd0444cdc17d/5.10/rhel-ubi/9/slim/Dockerfile)
+
+-	[`5.10.1-windowsservercore-ltsc2022`, `5.10-windowsservercore-ltsc2022`](https://github.com/apple/swift-docker/blob/53c4d44e4b556d7bab6ff94c80e5bd0444cdc17d/5.10/windows/LTSC2022/Dockerfile)
+
 -	[`5.9.2`, `5.9`, `5.9.2-jammy`, `5.9-jammy`](https://github.com/apple/swift-docker/blob/51f0941d5f6d92af9df8aa89fa75841f5036c127/5.9/ubuntu/22.04/Dockerfile)
+
 -	[`5.9.2-slim`, `5.9-slim`, `5.9.2-jammy-slim`, `5.9-jammy-slim`](https://github.com/apple/swift-docker/blob/51f0941d5f6d92af9df8aa89fa75841f5036c127/5.9/ubuntu/22.04/slim/Dockerfile)
+
 -	[`5.9.2-focal-slim`, `5.9-focal-slim`](https://github.com/apple/swift-docker/blob/51f0941d5f6d92af9df8aa89fa75841f5036c127/5.9/ubuntu/20.04/slim/Dockerfile)
+
 -	[`5.9.2-focal`, `5.9-focal`](https://github.com/apple/swift-docker/blob/51f0941d5f6d92af9df8aa89fa75841f5036c127/5.9/ubuntu/20.04/Dockerfile)
+
 -	[`5.9.2-amazonlinux2`, `5.9-amazonlinux2`](https://github.com/apple/swift-docker/blob/51f0941d5f6d92af9df8aa89fa75841f5036c127/5.9/amazonlinux/2/Dockerfile)
+
 -	[`5.9.2-amazonlinux2-slim`, `5.9-amazonlinux2-slim`](https://github.com/apple/swift-docker/blob/51f0941d5f6d92af9df8aa89fa75841f5036c127/5.9/amazonlinux/2/slim/Dockerfile)
--	[`5.9.2-centos7`, `5.9-centos7`](https://github.com/apple/swift-docker/blob/51f0941d5f6d92af9df8aa89fa75841f5036c127/5.9/centos/7/Dockerfile)
--	[`5.9.2-centos7-slim`, `5.9-centos7-slim`](https://github.com/apple/swift-docker/blob/51f0941d5f6d92af9df8aa89fa75841f5036c127/5.9/centos/7/slim/Dockerfile)
+
 -	[`5.9.2-rhel-ubi9`, `5.9-rhel-ubi9`](https://github.com/apple/swift-docker/blob/51f0941d5f6d92af9df8aa89fa75841f5036c127/5.9/rhel-ubi/9/Dockerfile)
+
 -	[`5.9.2-rhel-ubi9-slim`, `5.9-rhel-ubi9-slim`](https://github.com/apple/swift-docker/blob/51f0941d5f6d92af9df8aa89fa75841f5036c127/5.9/rhel-ubi/9/slim/Dockerfile)
+
 -	[`5.9.2-windowsservercore-ltsc2022`, `5.9-windowsservercore-ltsc2022`](https://github.com/apple/swift-docker/blob/51f0941d5f6d92af9df8aa89fa75841f5036c127/5.9/windows/LTSC2022/Dockerfile)
--	[`5.8.1`, `5.8`, `5.8.1-jammy`, `5.8-jammy`](https://github.com/apple/swift-docker/blob/0190ac8d812bfcfab0ee39d600116ab5e3243f48/5.8/ubuntu/22.04/Dockerfile)
--	[`5.8.1-slim`, `5.8-slim`, `5.8.1-jammy-slim`, `5.8-jammy-slim`](https://github.com/apple/swift-docker/blob/0190ac8d812bfcfab0ee39d600116ab5e3243f48/5.8/ubuntu/22.04/slim/Dockerfile)
--	[`5.8.1-focal-slim`, `5.8-focal-slim`](https://github.com/apple/swift-docker/blob/0190ac8d812bfcfab0ee39d600116ab5e3243f48/5.8/ubuntu/20.04/slim/Dockerfile)
--	[`5.8.1-focal`, `5.8-focal`](https://github.com/apple/swift-docker/blob/0190ac8d812bfcfab0ee39d600116ab5e3243f48/5.8/ubuntu/20.04/Dockerfile)
--	[`5.8.1-amazonlinux2`, `5.8-amazonlinux2`](https://github.com/apple/swift-docker/blob/0190ac8d812bfcfab0ee39d600116ab5e3243f48/5.8/amazonlinux/2/Dockerfile)
--	[`5.8.1-amazonlinux2-slim`, `5.8-amazonlinux2-slim`](https://github.com/apple/swift-docker/blob/0190ac8d812bfcfab0ee39d600116ab5e3243f48/5.8/amazonlinux/2/slim/Dockerfile)
--	[`5.8.1-centos7`, `5.8-centos7`](https://github.com/apple/swift-docker/blob/0190ac8d812bfcfab0ee39d600116ab5e3243f48/5.8/centos/7/Dockerfile)
--	[`5.8.1-centos7-slim`, `5.8-centos7-slim`](https://github.com/apple/swift-docker/blob/0190ac8d812bfcfab0ee39d600116ab5e3243f48/5.8/centos/7/slim/Dockerfile)
--	[`5.8.1-rhel-ubi9`, `5.8-rhel-ubi9`](https://github.com/apple/swift-docker/blob/0190ac8d812bfcfab0ee39d600116ab5e3243f48/5.8/rhel-ubi/9/Dockerfile)
--	[`5.8.1-rhel-ubi9-slim`, `5.8-rhel-ubi9-slim`](https://github.com/apple/swift-docker/blob/0190ac8d812bfcfab0ee39d600116ab5e3243f48/5.8/rhel-ubi/9/slim/Dockerfile)
--	[`5.7.3`, `5.7`, `5.7.3-jammy`, `5.7-jammy`](https://github.com/apple/swift-docker/blob/f53cb8e9f11507814412fb4e9c6f0fce1f4b7552/5.7/ubuntu/22.04/Dockerfile)
--	[`5.7.3-slim`, `5.7-slim`, `5.7.3-jammy-slim`, `5.7-jammy-slim`](https://github.com/apple/swift-docker/blob/f53cb8e9f11507814412fb4e9c6f0fce1f4b7552/5.7/ubuntu/22.04/slim/Dockerfile)
--	[`5.7.3-focal-slim`, `5.7-focal-slim`](https://github.com/apple/swift-docker/blob/f53cb8e9f11507814412fb4e9c6f0fce1f4b7552/5.7/ubuntu/20.04/slim/Dockerfile)
--	[`5.7.3-focal`, `5.7-focal`](https://github.com/apple/swift-docker/blob/f53cb8e9f11507814412fb4e9c6f0fce1f4b7552/5.7/ubuntu/20.04/Dockerfile)
--	[`5.7.3-amazonlinux2`, `5.7-amazonlinux2`](https://github.com/apple/swift-docker/blob/f53cb8e9f11507814412fb4e9c6f0fce1f4b7552/5.7/amazonlinux/2/Dockerfile)
--	[`5.7.3-amazonlinux2-slim`, `5.7-amazonlinux2-slim`](https://github.com/apple/swift-docker/blob/f53cb8e9f11507814412fb4e9c6f0fce1f4b7552/5.7/amazonlinux/2/slim/Dockerfile)
--	[`5.7.3-centos7`, `5.7-centos7`](https://github.com/apple/swift-docker/blob/f53cb8e9f11507814412fb4e9c6f0fce1f4b7552/5.7/centos/7/Dockerfile)
--	[`5.7.3-centos7-slim`, `5.7-centos7-slim`](https://github.com/apple/swift-docker/blob/f53cb8e9f11507814412fb4e9c6f0fce1f4b7552/5.7/centos/7/slim/Dockerfile)
--	[`5.6.3-focal-slim`, `5.6-focal-slim`](https://github.com/apple/swift-docker/blob/1188cc86d15f9e98d90db9f98de3598d5d5f7bb2/5.6/ubuntu/20.04/slim/Dockerfile)
--	[`5.6.3-focal`, `5.6-focal`](https://github.com/apple/swift-docker/blob/1188cc86d15f9e98d90db9f98de3598d5d5f7bb2/5.6/ubuntu/20.04/Dockerfile)
--	[`5.6.3-amazonlinux2`, `5.6-amazonlinux2`](https://github.com/apple/swift-docker/blob/1188cc86d15f9e98d90db9f98de3598d5d5f7bb2/5.6/amazonlinux/2/Dockerfile)
--	[`5.6.3-amazonlinux2-slim`, `5.6-amazonlinux2-slim`](https://github.com/apple/swift-docker/blob/1188cc86d15f9e98d90db9f98de3598d5d5f7bb2/5.6/amazonlinux/2/slim/Dockerfile)
--	[`5.6.3-centos7`, `5.6-centos7`](https://github.com/apple/swift-docker/blob/1188cc86d15f9e98d90db9f98de3598d5d5f7bb2/5.6/centos/7/Dockerfile)
--	[`5.6.3-centos7-slim`, `5.6-centos7-slim`](https://github.com/apple/swift-docker/blob/1188cc86d15f9e98d90db9f98de3598d5d5f7bb2/5.6/centos/7/slim/Dockerfile)
--	[`5.5.3-focal-slim`, `5.5-focal-slim`](https://github.com/apple/swift-docker/blob/9394b31e064cf0d80eaab08b692a2886c7aea8fe/5.5/ubuntu/20.04/slim/Dockerfile)
--	[`5.5.3-focal`, `5.5-focal`](https://github.com/apple/swift-docker/blob/9394b31e064cf0d80eaab08b692a2886c7aea8fe/5.5/ubuntu/20.04/Dockerfile)
--	[`5.5.3-amazonlinux2`, `5.5-amazonlinux2`](https://github.com/apple/swift-docker/blob/9394b31e064cf0d80eaab08b692a2886c7aea8fe/5.5/amazonlinux/2/Dockerfile)
--	[`5.5.3-amazonlinux2-slim`, `5.5-amazonlinux2-slim`](https://github.com/apple/swift-docker/blob/9394b31e064cf0d80eaab08b692a2886c7aea8fe/5.5/amazonlinux/2/slim/Dockerfile)
--	[`5.5.3-centos7`, `5.5-centos7`](https://github.com/apple/swift-docker/blob/9394b31e064cf0d80eaab08b692a2886c7aea8fe/5.5/centos/7/Dockerfile)
--	[`5.5.3-centos7-slim`, `5.5-centos7-slim`](https://github.com/apple/swift-docker/blob/9394b31e064cf0d80eaab08b692a2886c7aea8fe/5.5/centos/7/slim/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -159,7 +192,7 @@ This is the defacto image. If you are unsure about what your needs are, you prob
 
 Some of these tags may have names like bookworm in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
-Some of these tags may have names like focal, jammy, mantic, or noble in them. These are the suite code names for releases of [Ubuntu](https://wiki.ubuntu.com/Releases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Ubuntu.
+Some of these tags may have names like jammy or noble in them. These are the suite code names for releases of [Ubuntu](https://wiki.ubuntu.com/Releases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Ubuntu.
 
 ## `swift:<version>-slim`
 
