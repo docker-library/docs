@@ -1,6 +1,8 @@
 {
   "hub": {
     "categories": [
+      "languages-and-frameworks",
+      "machine-learning-and-ai",
       "operating-systems"
     ]
   }
