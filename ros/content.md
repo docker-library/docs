@@ -51,7 +51,7 @@ ARG OVERLAY_WS=/opt/ros/overlay_ws
 FROM $FROM_IMAGE AS cacher
 ARG OVERLAY_WS
 
-# update package cache
+# overwrite defaults to persist minimal cache
 RUN rosdep update --rosdistro $ROS_DISTRO && \
     cat <<EOF > /etc/apt/apt.conf.d/docker-clean && apt-get update
 APT::Install-Recommends "false";
