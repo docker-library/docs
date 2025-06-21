@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `ppc64le` builds of [the `alt` official image](https://hub.docker.com/_/alt) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,11 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`p10`, `latest`](https://github.com/alt-cloud/docker-brew-alt/blob/141eb568487cf0a98374d173e8641a00e234459a/x86_64/Dockerfile)
-
--	[`sisyphus`](https://github.com/alt-cloud/docker-brew-alt/blob/37a06effa12c3a7fae2ed60d6ae73da507ea1817/x86_64/Dockerfile)
-
--	[`p11`](https://github.com/alt-cloud/docker-brew-alt/blob/73a73fc0c51684d2c1eee3b6640a6577a4bea19e/x86_64/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `ppc64le` ARCHITECTURE
 
 # Quick reference (cont.)
 
@@ -73,7 +71,7 @@ As said above, Sisyphus is a frequently updated repository mainly designed for d
 
 # About this image
 
-The `alt:latest` tag will always point the latest stable release (which is, at the time of this writing, `alt:p9`).
+The `ppc64le/alt:latest` tag will always point the latest stable release (which is, at the time of this writing, `ppc64le/alt:p9`).
 
 ## How It's Made
 
