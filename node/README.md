@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `s390x` builds of [the `node` official image](https://hub.docker.com/_/node) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -32,10 +34,6 @@ WARNING:
 
 -	[`24-bookworm-slim`, `24-slim`, `24.2-bookworm-slim`, `24.2-slim`, `24.2.0-bookworm-slim`, `24.2.0-slim`, `bookworm-slim`, `current-bookworm-slim`, `current-slim`, `slim`](https://github.com/nodejs/docker-node/blob/52a145e08a3c4e7b6e72addccc410e57530cd0c1/24/bookworm-slim/Dockerfile)
 
--	[`24-bullseye`, `24.2-bullseye`, `24.2.0-bullseye`, `bullseye`, `current-bullseye`](https://github.com/nodejs/docker-node/blob/52a145e08a3c4e7b6e72addccc410e57530cd0c1/24/bullseye/Dockerfile)
-
--	[`24-bullseye-slim`, `24.2-bullseye-slim`, `24.2.0-bullseye-slim`, `bullseye-slim`, `current-bullseye-slim`](https://github.com/nodejs/docker-node/blob/52a145e08a3c4e7b6e72addccc410e57530cd0c1/24/bullseye-slim/Dockerfile)
-
 -	[`22-alpine3.21`, `22.16-alpine3.21`, `22.16.0-alpine3.21`, `jod-alpine3.21`, `lts-alpine3.21`](https://github.com/nodejs/docker-node/blob/d073523fcb78049b965f76d813627eb59ffb7a58/22/alpine3.21/Dockerfile)
 
 -	[`22-alpine`, `22-alpine3.22`, `22.16-alpine`, `22.16-alpine3.22`, `22.16.0-alpine`, `22.16.0-alpine3.22`, `jod-alpine`, `jod-alpine3.22`, `lts-alpine`, `lts-alpine3.22`](https://github.com/nodejs/docker-node/blob/b1e2c97844d5647bcfaf6d6c7862dd39fbc2ca51/22/alpine3.22/Dockerfile)
@@ -44,10 +42,6 @@ WARNING:
 
 -	[`22-bookworm-slim`, `22-slim`, `22.16-bookworm-slim`, `22.16-slim`, `22.16.0-bookworm-slim`, `22.16.0-slim`, `jod-bookworm-slim`, `jod-slim`, `lts-bookworm-slim`, `lts-slim`](https://github.com/nodejs/docker-node/blob/d073523fcb78049b965f76d813627eb59ffb7a58/22/bookworm-slim/Dockerfile)
 
--	[`22-bullseye`, `22.16-bullseye`, `22.16.0-bullseye`, `jod-bullseye`, `lts-bullseye`](https://github.com/nodejs/docker-node/blob/d073523fcb78049b965f76d813627eb59ffb7a58/22/bullseye/Dockerfile)
-
--	[`22-bullseye-slim`, `22.16-bullseye-slim`, `22.16.0-bullseye-slim`, `jod-bullseye-slim`, `lts-bullseye-slim`](https://github.com/nodejs/docker-node/blob/d073523fcb78049b965f76d813627eb59ffb7a58/22/bullseye-slim/Dockerfile)
-
 -	[`20-alpine3.21`, `20.19-alpine3.21`, `20.19.2-alpine3.21`, `iron-alpine3.21`](https://github.com/nodejs/docker-node/blob/a87fa26c1bb455170dac58c57c661e820a7390cb/20/alpine3.21/Dockerfile)
 
 -	[`20-alpine`, `20-alpine3.22`, `20.19-alpine`, `20.19-alpine3.22`, `20.19.2-alpine`, `20.19.2-alpine3.22`, `iron-alpine`, `iron-alpine3.22`](https://github.com/nodejs/docker-node/blob/b1e2c97844d5647bcfaf6d6c7862dd39fbc2ca51/20/alpine3.22/Dockerfile)
@@ -55,10 +49,6 @@ WARNING:
 -	[`20`, `20-bookworm`, `20.19`, `20.19-bookworm`, `20.19.2`, `20.19.2-bookworm`, `iron`, `iron-bookworm`](https://github.com/nodejs/docker-node/blob/a87fa26c1bb455170dac58c57c661e820a7390cb/20/bookworm/Dockerfile)
 
 -	[`20-bookworm-slim`, `20-slim`, `20.19-bookworm-slim`, `20.19-slim`, `20.19.2-bookworm-slim`, `20.19.2-slim`, `iron-bookworm-slim`, `iron-slim`](https://github.com/nodejs/docker-node/blob/a87fa26c1bb455170dac58c57c661e820a7390cb/20/bookworm-slim/Dockerfile)
-
--	[`20-bullseye`, `20.19-bullseye`, `20.19.2-bullseye`, `iron-bullseye`](https://github.com/nodejs/docker-node/blob/a87fa26c1bb455170dac58c57c661e820a7390cb/20/bullseye/Dockerfile)
-
--	[`20-bullseye-slim`, `20.19-bullseye-slim`, `20.19.2-bullseye-slim`, `iron-bullseye-slim`](https://github.com/nodejs/docker-node/blob/a87fa26c1bb455170dac58c57c661e820a7390cb/20/bullseye-slim/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -97,17 +87,17 @@ See [How To Use This Image](https://github.com/nodejs/docker-node/blob/master/RE
 
 # Image Variants
 
-The `node` images come in many flavors, each designed for a specific use case.
+The `s390x/node` images come in many flavors, each designed for a specific use case.
 
-## `node:<version>`
+## `s390x/node:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like bookworm or bullseye in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+Some of these tags may have names like bookworm in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 This tag is based off of [`buildpack-deps`](https://hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of Docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
 
-## `node:<version>-alpine`
+## `s390x/node:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
@@ -115,9 +105,9 @@ This variant is useful when final image size being as small as possible is your 
 
 To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
-## `node:<version>-slim`
+## `s390x/node:<version>-slim`
 
-This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `node`. Unless you are working in an environment where *only* the `node` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
+This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `s390x/node`. Unless you are working in an environment where *only* the `s390x/node` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
 
 # License
 
