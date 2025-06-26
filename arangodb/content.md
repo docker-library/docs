@@ -49,7 +49,7 @@ docker inspect --format '{{ .NetworkSettings.IPAddress }}' arangodb-instance
 
 When using Docker, you need to specify the language you want to initialize the server to on the first run in one of the following ways:
 
-- From v3.12.2 onward: Append the `--icu-language` startup option to the end of the Docker command, like `docker run ... %%IMAGE%% --icu-language sv` for a Swedish locale.
+-	From v3.12.2 onward: Append the `--icu-language` startup option to the end of the Docker command, like `docker run ... %%IMAGE%% --icu-language sv` for a Swedish locale.
 
 -	Set the environment variable `LANG` to a locale in the `docker run` command, e.g. `-e LANG=sv`.
 
