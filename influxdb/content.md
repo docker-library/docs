@@ -1,6 +1,6 @@
 **This README covers all currently supported versions of InfluxDB:**
 
-[InfluxDB 3 (Core and Enterprise)](#influxdb-3)
+[InfluxDB 3](#influxdb-3)
 [InfluxDB v2](#influxdb-v2)
 [InfluxDB v1](#influxdb-v1)
 
