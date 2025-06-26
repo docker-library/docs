@@ -55,19 +55,26 @@ Run InfluxDB 3 Core using either Docker Compose or the CLI.
 
 ### Docker Compose
 
-Create a `compose.yml` file with configuration: 
+Create a `compose.yml` file with the configuration: 
 
 %%COMPOSE%%
 
-You can start your docker container by using the following command:
+Start the container by using the following command:
 
 ```bash
-docker compose up -d
+docker compose pull && docker compose run influxdb3-core
+```
+
+Stop your container by using following command:
+
+```bash
+docker container ls --filter "name=influxdb3"
+docker kill <CONTAINER_ID>
 ```
 
 ### Docker CLI
 
-To start the InfluxDB 3 Core container, run the following command:
+Run this command to start the InfluxDB 3 Core container:
 
 ```bash
 docker run -d --name influxdb3-core \
@@ -96,7 +103,23 @@ curl localhost:8086/health
 
 ## Start InfluxDB 3 Enterprise
 
-InfluxDB 3 Enterprise supports clustered deployments and advanced features. To start a local standalone Enterprise container for testing, make sure to provide your license key as an environment variable and include required flags:
+InfluxDB 3 Enterprise supports clustered deployments and advanced features. To start a local standalone Enterprise container for testing, provide your license key as an environment variable.
+
+### Docker Compose
+
+Create a `compose.yml` file with the following configuration:
+
+%%COMPOSE%%
+
+Start your container:
+
+```bash
+docker compose pull && docker compose run influxdb3-enterprise
+```
+
+## Docker with mounted file style object store
+
+Run this command to start the InfluxDB 3 Enterprise container
 
 ```bash
 docker run -d --name influxdb3-enterprise -p 8086:8086 \
