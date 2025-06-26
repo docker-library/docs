@@ -55,7 +55,7 @@ Run InfluxDB 3 Core using either Docker Compose or the CLI.
 
 ### Docker Compose
 
-Create a `compose.yml` file with the configuration: 
+Create a `compose.yml` file with the configuration:
 
 %%COMPOSE%%
 
