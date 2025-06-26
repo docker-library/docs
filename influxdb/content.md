@@ -8,6 +8,8 @@ Scroll to the appropriate section below for Docker setup instructions, configura
 
 # InfluxDB Docker Image Overview
 
+%%LOGO%%
+
 InfluxDB is the time series database platform designed to collect, store, and process large amounts of timestamped data. InfluxDB supports high write and query workloads and is commonly used for:
 
 -	Monitoring infrastructure and applications
@@ -48,6 +50,22 @@ Use the official images hosted on Quay.io:
 # How to use this image
 
 ## Start InfluxDB 3 Core
+
+Run InfluxDB 3 Core using either Docker Compose or the CLI.
+
+### Docker Compose
+
+Create a `compose.yml` file with configuration: 
+
+%%COMPOSE%%
+
+You can start your docker container by using the following command:
+
+```bash
+docker compose up -d
+```
+
+### Docker CLI
 
 To start the InfluxDB 3 Core container, run the following command:
 
