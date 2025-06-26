@@ -1,8 +1,8 @@
 **This README covers all currently supported versions of InfluxDB:**
 
--	**InfluxDB 3** (Core and Enterprise)
--	**InfluxDB v2**
--	**InfluxDB v1**
+[InfluxDB 3 (Core and Enterprise)](#influxdb-3)
+[InfluxDB v2](#influxdb-v2)
+[InfluxDB v1](#influxdb-v1)
 
 Scroll to the appropriate section below for Docker setup instructions, configuration flags, and usage examples.
 
