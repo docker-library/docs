@@ -1,4 +1,12 @@
-# What is InfluxDB?
+**This README covers all currently supported versions of InfluxDB:**
+
+- **InfluxDB 3** (Core and Enterprise)
+- **InfluxDB v2**
+- **InfluxDB v1**
+
+Scroll to the appropriate section below for Docker setup instructions, configuration flags, and usage examples.
+
+# InfluxDB Docker Image Overview
 
 InfluxDB is the time series database platform designed to collect, store, and process large amounts of timestamped data. InfluxDB supports high write and query workloads and is commonly used for: 
 
@@ -17,9 +25,8 @@ InfluxDB 3 comes in two editions:
 - **InfluxDB 3 Core**: A free, open source version of the new engine for local development and prototyping.
 - **InfluxDB 3 Enterprise**: A production-grade, scalable time series database that includes support for clustering, security, and enterprise features.
 
->[!Note]
-> ## License key for Enterprise
->To run InfluxDB 3 Enterprise, you need a license key. Obtain one from [InfluxData's pricing page](https://www.influxdata.com/pricing/).
+**License key for Enterprise**
+To run InfluxDB 3 Enterprise, you need a license key. Obtain one from [InfluxData's pricing page](https://www.influxdata.com/pricing/).
 
 For full documentation, visit the [InfluxDB 3 documentation site](https://docs.influxdata.com)
 
@@ -133,9 +140,10 @@ docker run -d --name influxdb3-core \
 
 This mounts a local folder named `influxdb3-data` in your current working directory. Ensure that this directory exists and has appropriate write permissions. 
 
-# InfluxDB v2 and v1 Docker setup 
 
-## Start InfluxDB v2
+# InfluxDB v2
+
+## How to use the InfluxDB v2 Docker image 
 
 Use the official [InfluxDB v2 Docker image](https://hub.docker.com/_/influxdb) to start an instance for development or testing.
 
@@ -155,7 +163,9 @@ After the container starts, go to `http://localhost:8086` to access the UI.
 
 For more information, see the [InfluxDB v2 Docker documentation](https://docs.influxdata.com/influxdb/v2/install/?t=docker).
 
-## Start InfluxDB v1
+# InfluxDB v1
+
+## How to use the InfluxDB v1 Docker image 
 
 Use the official [InfluxDB v1 Docker image](https://hub.docker.com/_/influxdb) to start a basic instance for development or testing:
 
@@ -168,3 +178,5 @@ docker run -d -p 8086:8086 \
 This command maps port `8086` and mounts your current directory to persist data.
 
 For more information, see the [InfluxDB v1 Docker documentation](https://docs.influxdata.com/influxdb/v1/).
+
+
