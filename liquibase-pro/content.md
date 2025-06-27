@@ -6,8 +6,8 @@
 
 > **WARNING**: Liquibase Pro requires a valid license key to use Pro features. Without a license, the container will run in Liquibase Community mode with limited functionality.
 >
-> - Contact [Liquibase Sales](https://www.liquibase.com/community/contact) to obtain a Pro license
-> - Existing customers receive their Pro license keys in an email.
+> -	Contact [Liquibase Sales](https://www.liquibase.com/community/contact) to obtain a Pro license
+> -	Existing customers receive their Pro license keys in an email.
 
 ## 📋 Pro Features
 
@@ -17,28 +17,28 @@ Liquibase Pro includes all Community features plus:
 
 ### 🔐 Security & Governance
 
-- **Policy Checks**: Enforce database standards and best practices
-- **Quality Checks**: Advanced validation rules for changesets  
-- **Rollback SQL**: Generate rollback scripts for any deployment
-- **Targeted Rollback**: Rollback specific changesets without affecting others
-- **Advanced Database Support**: Enhanced support for Oracle, SQL Server, and other enterprise databases
-- **Audit Reports**: Comprehensive tracking of database changes
-- **Stored Logic**: Support for functions, procedures, packages, and triggers
+-	**Policy Checks**: Enforce database standards and best practices
+-	**Quality Checks**: Advanced validation rules for changesets  
+-	**Rollback SQL**: Generate rollback scripts for any deployment
+-	**Targeted Rollback**: Rollback specific changesets without affecting others
+-	**Advanced Database Support**: Enhanced support for Oracle, SQL Server, and other enterprise databases
+-	**Audit Reports**: Comprehensive tracking of database changes
+-	**Stored Logic**: Support for functions, procedures, packages, and triggers
 
 ## 🔧 Environment Variables
 
 ### Pro License Environment Variable
 
-| Variable | Description | Example |
-|----------|-------------|---------|
+| Variable                | Description                    | Example               |
+|-------------------------|--------------------------------|-----------------------|
 | `LIQUIBASE_LICENSE_KEY` | Your Liquibase Pro license key | `ABcd-1234-EFGH-5678` |
 
 ### 🔧 Action Required
 
 Please update your Dockerfiles and scripts to pull from the new official image:
 
-| Registry | Pro Image |
-|----------|-----------|
+| Registry                 | Pro Image       |
+|--------------------------|-----------------|
 | **Docker Hub (default)** | `liquibase-pro` |
 
 ## Dockerfile
@@ -74,25 +74,25 @@ For any questions or support, please visit our [Liquibase Community Forum](https
 
 The following tags are officially supported and can be found on [Docker Hub](https://hub.docker.com/_/liquibase-pro/tags):
 
-- `liquibase-pro:<version>`
+-	`liquibase-pro:<version>`
 
 ### Database Connection Variables
 
-| Variable | Description | Example |
-|----------|-------------|---------|
-| `LIQUIBASE_COMMAND_URL` | Database JDBC URL | `jdbc:postgresql://db:5432/mydb` |
-| `LIQUIBASE_COMMAND_USERNAME` | Database username | `dbuser` |
-| `LIQUIBASE_COMMAND_PASSWORD` | Database password | `dbpass` |
+| Variable                           | Description            | Example                              |
+|------------------------------------|------------------------|--------------------------------------|
+| `LIQUIBASE_COMMAND_URL`            | Database JDBC URL      | `jdbc:postgresql://db:5432/mydb`     |
+| `LIQUIBASE_COMMAND_USERNAME`       | Database username      | `dbuser`                             |
+| `LIQUIBASE_COMMAND_PASSWORD`       | Database password      | `dbpass`                             |
 | `LIQUIBASE_COMMAND_CHANGELOG_FILE` | Path to changelog file | `/liquibase/changelog/changelog.xml` |
 
 ### Pro-Specific Configuration
 
-| Variable | Description | Default |
-|----------|-------------|---------|
-| `LIQUIBASE_PRO_POLICY_CHECKS_ENABLED` | Enable policy checks | `true` |
-| `LIQUIBASE_PRO_QUALITY_CHECKS_ENABLED` | Enable quality checks | `true` |
-| `LIQUIBASE_REPORTS_ENABLED` | Enable HTML reports | `true` |
-| `LIQUIBASE_REPORTS_PATH` | Reports output directory | `/tmp/reports` |
+| Variable                               | Description              | Default        |
+|----------------------------------------|--------------------------|----------------|
+| `LIQUIBASE_PRO_POLICY_CHECKS_ENABLED`  | Enable policy checks     | `true`         |
+| `LIQUIBASE_PRO_QUALITY_CHECKS_ENABLED` | Enable quality checks    | `true`         |
+| `LIQUIBASE_REPORTS_ENABLED`            | Enable HTML reports      | `true`         |
+| `LIQUIBASE_REPORTS_PATH`               | Reports output directory | `/tmp/reports` |
 
 ## Required License Configuration
 
@@ -168,7 +168,6 @@ The `liquibase-pro:<version>` image is the standard choice. Use it as a disposab
 
 For examples of extending the standard image, see the [standard image examples](https://github.com/liquibase/docker/tree/main/examples).
 
-
 **Usage:**
 
 ```bash
@@ -217,5 +216,3 @@ services:
     ports:
       - "5432:5432"
 ```
-
-
