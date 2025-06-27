@@ -176,6 +176,7 @@ $ docker run --rm \
     -v /path/to/changelog:/liquibase/changelog \
     -v /path/to/lib:/liquibase/lib \
     liquibase/liquibase-pro update
+```
 
 ## 📦 Using the Docker Image
 
