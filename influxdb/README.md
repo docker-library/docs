@@ -46,7 +46,7 @@ WARNING:
 
 -	[`2`, `2.7`, `2.7.12`, `latest`](https://github.com/influxdata/influxdata-docker/blob/abb94994d78be45ccaa56282f36c36ad16bd5a5e/influxdb/2.7/Dockerfile)
 
--	[`2-alpine`, `2.7-alpine`, `2.7.11-alpine`, `alpine`](https://github.com/influxdata/influxdata-docker/blob/abb94994d78be45ccaa56282f36c36ad16bd5a5e/influxdb/2.7/alpine/Dockerfile)
+-	[`2-alpine`, `2.7-alpine`, `2.7.12-alpine`, `alpine`](https://github.com/influxdata/influxdata-docker/blob/abb94994d78be45ccaa56282f36c36ad16bd5a5e/influxdb/2.7/alpine/Dockerfile)
 
 -	[`3-core`, `3.2-core`, `3.2.0-core`, `core`](https://github.com/influxdata/influxdata-docker/blob/abb94994d78be45ccaa56282f36c36ad16bd5a5e/influxdb/3.2-core/Dockerfile)
 
