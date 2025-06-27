@@ -56,7 +56,13 @@ $ docker logs some-%%REPO%%
 
 ## Using a custom MySQL configuration file
 
-The default configuration for MySQL can be found in `/etc/mysql/my.cnf`, which may `!includedir` additional directories such as `/etc/mysql/conf.d` or `/etc/mysql/mysql.conf.d`. Please inspect the relevant files and directories within the `%%IMAGE%%` image itself for more details.
+The default configuration for MySQL varies depending on the base image:
+
+**Oracle-based images (default):** The default configuration is located at `/etc/my.cnf`, which may `!includedir` additional directories such as `/etc/mysql/conf.d`.
+
+**Debian-based MySQL 8 images:** The default configuration can be found in `/etc/mysql/my.cnf`, which may `!includedir` additional directories such as `/etc/mysql/conf.d`.
+
+Please inspect the relevant files and directories within the `%%IMAGE%%` image itself for more details.
 
 If `/my/custom/config-file.cnf` is the path and name of your custom configuration file, you can start your `%%IMAGE%%` container like this (note that only the directory path of the custom config file is used in this command):
 
@@ -64,7 +70,7 @@ If `/my/custom/config-file.cnf` is the path and name of your custom configuratio
 $ docker run --name some-%%REPO%% -v /my/custom:/etc/mysql/conf.d -e MYSQL_ROOT_PASSWORD=my-secret-pw -d %%IMAGE%%:tag
 ```
 
-This will start a new container `some-%%REPO%%` where the MySQL instance uses the combined startup settings from `/etc/mysql/my.cnf` and `/etc/mysql/conf.d/config-file.cnf`, with settings from the latter taking precedence.
+This will start a new container `some-%%REPO%%` where the MySQL instance uses the combined startup settings from the default configuration file and `/etc/mysql/conf.d/config-file.cnf`, with settings from the latter taking precedence.
 
 ### Configuration without a `cnf` file
 
