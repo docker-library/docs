@@ -24,9 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.11`, `3.11.14`](https://github.com/arangodb/arangodb-docker/blob/8b486ff8c7b63e75c19f2bee37b756e9c0ba620f/alpine/3.11.14/Dockerfile)
-
--	[`3.12`, `3.12.4.3`, `latest`](https://github.com/arangodb/arangodb-docker/blob/351d27922fd2060deb86a76a26a99ff1bb2f3c12/alpine/3.12.4.3/Dockerfile)
+-	[`3.12`, `3.12.5`, `latest`](https://github.com/arangodb/arangodb-docker/blob/4b0e7ca61aaaa24cf0d65d1ff96ed6068bcf5e9a/alpine/3.12.5/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -98,11 +96,11 @@ docker inspect --format '{{ .NetworkSettings.IPAddress }}' arangodb-instance
 
 When using Docker, you need to specify the language you want to initialize the server to on the first run in one of the following ways:
 
--	Set the environment variable `LANG` to a locale in the `docker run` command, e.g. `-e LANG=sv` for a Swedish locale.
+-	From v3.12.2 onward: Append the `--icu-language` startup option to the end of the Docker command, like `docker run ... arangodb --icu-language sv` for a Swedish locale.
+
+-	Set the environment variable `LANG` to a locale in the `docker run` command, e.g. `-e LANG=sv`.
 
 -	Use an `arangod.conf` configuration file that sets a language and mount it into the container. For example, create a configuration file on your host system in which you set `icu-language = sv` at the top (before any `[section]`) and then mount the file over the default configuration file like `docker run -v /your-host-path/arangod.conf:/etc/arangodb3/arangod.conf ...`.
-
-Note that you cannot set the language using only a startup option on the command-line, like `docker run ... arangodb --icu-language sv`.
 
 If you don't specify a language explicitly, the default is `en_US` up to ArangoDB v3.11 and `en_US_POSIX` from ArangoDB v3.12 onward.
 
@@ -268,7 +266,7 @@ When deriving the image, you can control the instantiation via putting files int
 
 # License
 
-The official Docker images of the ArangoDB Community Edition are governed by the [ArangoDB Community License](https://arangodb.com/community-license/). It limits deployments to a 100 GB on dataset size in production and you cannot use it for any commercial purposes, only internal business purposes.
+The official Docker images of the ArangoDB Community Edition are governed by the [ArangoDB Community License](https://arangodb.com/community-license/). It limits deployments to a 100 GB on dataset size in production and you cannot use it for any commercial purposes, only internal business purposes. It does not include the right to distribute, embed within other products, or combine with ArangoDB's Enterprise Edition of the software.
 
 The source code of the Community Edition is available under the [Business Source License 1.1 (BUSL-1.1)](https://github.com/arangodb/arangodb/blob/devel/LICENSE). Copying, modification, redistribution, non-commercial use, and commercial use in a non-production context are always allowed. Additionally, you can deploy BUSL-licensed ArangoDB source code for any purpose (including production) as long as you are not creating a commercial derivative work or offering, or are including it in a commercial product, application, or service. On the fourth anniversary of the first publicly available distribution of a specific version, the license changes to the permissive Apache 2.0 open-source license.
 

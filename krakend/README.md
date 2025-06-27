@@ -24,7 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.10.0`, `2.10`, `2`, `latest`](https://github.com/krakendio/docker-library/blob/e251c6c6db51dcd34e11cc507830cfc200d652c1/2.10.0/Dockerfile)
+-	[`2.10.1`, `2.10`, `2`, `latest`](https://github.com/krakendio/docker-library/blob/12b7569e8fd292713ce18bcc4eb1e4e033e1f721/2.10.1/Dockerfile)
 
 # Quick reference (cont.)
 
