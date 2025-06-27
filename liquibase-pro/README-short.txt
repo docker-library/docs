@@ -1,1 +1,1 @@
-Liquibase is DevOps for your database.
+Liquibase Pro is DevOps for your database.
