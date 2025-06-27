@@ -37,22 +37,14 @@ Liquibase Pro includes all Community features plus:
 
 Please update your Dockerfiles and scripts to pull from the new official image:
 
-## Available Registries
-
-We publish this image to multiple registries:
-
 | Registry | Pro Image |
 |----------|-----------|
-| **Docker Hub (default)** | `liquibase/liquibase-pro` |
-| **GitHub Container Registry** | `ghcr.io/liquibase/liquibase-pro` |
-| **Amazon ECR Public** | `public.ecr.aws/liquibase/liquibase-pro` |
+| **Docker Hub (default)** | `liquibase-pro` |
 
 ## Dockerfile
 
 ```dockerfile
-FROM liquibase/liquibase-pro:latest
-# OR ghcr.io/liquibase/liquibase-pro:latest    # GHCR  
-# OR public.ecr.aws/liquibase/liquibase-pro:latest   # Amazon ECR Public
+FROM liquibase-pro:latest
 ```
 
 ## Scripts
@@ -60,14 +52,8 @@ FROM liquibase/liquibase-pro:latest
 ### Pro Edition
 
 ```bash
-# Docker Hub (default)
-docker pull liquibase/liquibase-pro
-
-# GitHub Container Registry
-docker pull ghcr.io/liquibase/liquibase-pro
-
-# Amazon ECR Public
-docker pull public.ecr.aws/liquibase/liquibase-pro
+# Docker Hub
+docker pull liquibase-pro
 ```
 
 ### Pulling the Latest or Specific Version
@@ -76,23 +62,19 @@ docker pull public.ecr.aws/liquibase/liquibase-pro
 
 ```bash
 # Latest
-docker pull liquibase/liquibase-pro:latest
-docker pull ghcr.io/liquibase/liquibase-pro:latest
-docker pull public.ecr.aws/liquibase/liquibase-pro:latest
+docker pull liquibase-pro:latest
 
 # Specific version (example: 4.32.0)
-docker pull liquibase/liquibase-pro:4.32.0
-docker pull ghcr.io/liquibase/liquibase-pro:4.32.0
-docker pull public.ecr.aws/liquibase/liquibase-pro:4.32.0
+docker pull liquibase-pro:4.32.0
 ```
 
 For any questions or support, please visit our [Liquibase Community Forum](https://forum.liquibase.org/).
 
 ## 🏷️ Supported Tags
 
-The following tags are officially supported and can be found on [Docker Hub](https://hub.docker.com/r/liquibase/liquibase-pro/tags):
+The following tags are officially supported and can be found on [Docker Hub](https://hub.docker.com/_/liquibase-pro/tags):
 
-- `liquibase/liquibase-pro:<version>`
+- `liquibase-pro:<version>`
 
 ### Database Connection Variables
 
@@ -120,7 +102,7 @@ Set your Liquibase Pro license key using the `LIQUIBASE_LICENSE_KEY` environment
 $ docker run --rm \
     -e LIQUIBASE_LICENSE_KEY="YOUR_LICENSE_KEY_HERE" \
     -v /path/to/changelog:/liquibase/changelog \
-    liquibase/liquibase-pro \
+    liquibase-pro \
     --changelog-file=example-changelog.xml \
     --url="jdbc:postgresql://host.docker.internal:5432/testdb" \
     --username=postgres \
@@ -137,7 +119,7 @@ Mount your changelog directory to the `/liquibase/changelog` volume and use the 
 $ docker run --rm \
     -e LIQUIBASE_LICENSE_KEY="YOUR_LICENSE_KEY_HERE" \
     -v "$(pwd)":/liquibase/changelog \
-    liquibase/liquibase-pro \
+    liquibase-pro \
     --changelog-file=example-changelog.xml \
     --search-path=/liquibase/changelog/ \
     update
@@ -151,7 +133,7 @@ To use a default configuration file, mount it in your changelog volume and refer
 $ docker run --rm \
     -e LIQUIBASE_LICENSE_KEY="YOUR_LICENSE_KEY_HERE" \
     -v /path/to/changelog:/liquibase/changelog \
-    liquibase/liquibase-pro \
+    liquibase-pro \
     --defaults-file=liquibase.properties update
 ```
 
@@ -175,14 +157,14 @@ $ docker run --rm \
     -e LIQUIBASE_LICENSE_KEY="YOUR_LICENSE_KEY_HERE" \
     -v /path/to/changelog:/liquibase/changelog \
     -v /path/to/lib:/liquibase/lib \
-    liquibase/liquibase-pro update
+    liquibase-pro update
 ```
 
 ## 📦 Using the Docker Image
 
 ### 🏷️ Standard Image
 
-The `liquibase/liquibase-pro:<version>` image is the standard choice. Use it as a disposable container or a foundational building block for other images.
+The `liquibase-pro:<version>` image is the standard choice. Use it as a disposable container or a foundational building block for other images.
 
 For examples of extending the standard image, see the [standard image examples](https://github.com/liquibase/docker/tree/main/examples).
 
@@ -213,7 +195,7 @@ For a complete example using Docker Compose with PostgreSQL:
 version: '3.8'
 services:
   liquibase:
-    image: liquibase/liquibase-pro:latest
+    image: liquibase-pro:latest
     environment:
       LIQUIBASE_LICENSE_KEY: "${LIQUIBASE_LICENSE_KEY}"
       LIQUIBASE_COMMAND_URL: "jdbc:postgresql://postgres:5432/example"
