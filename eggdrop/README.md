@@ -30,6 +30,8 @@ WARNING:
 
 -	[`1.10`, `1.10.0`, `stable`, `latest`](https://github.com/eggheads/eggdrop-docker/blob/2861815d67478e41667b8ed2cf9d3f13a5e755c1/1.10/Dockerfile)
 
+-	[`1.10.1rc1`](https://github.com/eggheads/eggdrop-docker/blob/fa9fab693902545745642c75650b56379d17b16b/1.10.1rc1/Dockerfile)
+
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
