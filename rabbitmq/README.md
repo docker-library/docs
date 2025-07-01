@@ -24,19 +24,19 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.1.1`, `4.1`, `4`, `latest`](https://github.com/docker-library/rabbitmq/blob/7e462c35dba545cf20d78a0ac3d18ba27c2e847e/4.1/ubuntu/Dockerfile)
+-	[`4.1.1`, `4.1`, `4`, `latest`](https://github.com/docker-library/rabbitmq/blob/9eafde89a61aa032cf9a47cd1e58951444210ff5/4.1/ubuntu/Dockerfile)
 
 -	[`4.1.1-management`, `4.1-management`, `4-management`, `management`](https://github.com/docker-library/rabbitmq/blob/01055a3ed6f0a7a40d4ff1d17d3f0758039e431f/4.1/ubuntu/management/Dockerfile)
 
--	[`4.1.1-alpine`, `4.1-alpine`, `4-alpine`, `alpine`](https://github.com/docker-library/rabbitmq/blob/7e462c35dba545cf20d78a0ac3d18ba27c2e847e/4.1/alpine/Dockerfile)
+-	[`4.1.1-alpine`, `4.1-alpine`, `4-alpine`, `alpine`](https://github.com/docker-library/rabbitmq/blob/9eafde89a61aa032cf9a47cd1e58951444210ff5/4.1/alpine/Dockerfile)
 
 -	[`4.1.1-management-alpine`, `4.1-management-alpine`, `4-management-alpine`, `management-alpine`](https://github.com/docker-library/rabbitmq/blob/01055a3ed6f0a7a40d4ff1d17d3f0758039e431f/4.1/alpine/management/Dockerfile)
 
--	[`4.0.9`, `4.0`](https://github.com/docker-library/rabbitmq/blob/9fe5ffd717216db809fe0207c0b7266d231fa3a0/4.0/ubuntu/Dockerfile)
+-	[`4.0.9`, `4.0`](https://github.com/docker-library/rabbitmq/blob/87e124e1c98f38cda70af592b5c994c36cb7847c/4.0/ubuntu/Dockerfile)
 
 -	[`4.0.9-management`, `4.0-management`](https://github.com/docker-library/rabbitmq/blob/36e4d246e934a96b1c3a920e398f96434f3fc34c/4.0/ubuntu/management/Dockerfile)
 
--	[`4.0.9-alpine`, `4.0-alpine`](https://github.com/docker-library/rabbitmq/blob/9fe5ffd717216db809fe0207c0b7266d231fa3a0/4.0/alpine/Dockerfile)
+-	[`4.0.9-alpine`, `4.0-alpine`](https://github.com/docker-library/rabbitmq/blob/87e124e1c98f38cda70af592b5c994c36cb7847c/4.0/alpine/Dockerfile)
 
 -	[`4.0.9-management-alpine`, `4.0-management-alpine`](https://github.com/docker-library/rabbitmq/blob/36e4d246e934a96b1c3a920e398f96434f3fc34c/4.0/alpine/management/Dockerfile)
 
