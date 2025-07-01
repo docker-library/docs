@@ -96,9 +96,7 @@ docker inspect --format '{{ .NetworkSettings.IPAddress }}' arangodb-instance
 
 When using Docker, you need to specify the language you want to initialize the server to on the first run in one of the following ways:
 
--	From v3.12.2 onward: Append the `--icu-language` startup option to the end of the Docker command, like `docker run ... arangodb --icu-language sv` for a Swedish locale.
-
--	Set the environment variable `LANG` to a locale in the `docker run` command, e.g. `-e LANG=sv`.
+-	Set the environment variable `LANG` to a locale in the `docker run` command, e.g. `-e LANG=sv` for a Swedish locale.
 
 -	Use an `arangod.conf` configuration file that sets a language and mount it into the container. For example, create a configuration file on your host system in which you set `icu-language = sv` at the top (before any `[section]`) and then mount the file over the default configuration file like `docker run -v /your-host-path/arangod.conf:/etc/arangodb3/arangod.conf ...`.
 
