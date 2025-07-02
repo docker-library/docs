@@ -100,7 +100,8 @@ docker exec -it influxdb3-core influxdb3 create database my_db --token YOUR_ADMI
 To check the server health:
 
 ```bash
-curl localhost:8086/health
+curl http://localhost:8181/health
+  --header "Authorization: Bearer YOUR_ADMIN_TOKEN"
 ```
 
 ## Start InfluxDB 3 Enterprise
