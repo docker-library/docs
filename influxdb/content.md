@@ -35,10 +35,10 @@ InfluxDB 3 offers two editions--both provide SQL and InfluxQL query capabilities
 
 ## Docker Images
 
-Use the official images hosted on Quay.io:
+You can pull docker images using these commands:
 
--	**Core:** `quay.io/influxdb/influxdb3:latest`  
--	**Enterprise:** `quay.io/influxdb/influxdb3-enterprise:latest`
+-	**Core:**: `docker pull influxdb:3-core`
+-	**Enterprise:**: `docker pull influxdb:3-enterprise`
 
 ## Parameter glossary
 
@@ -80,7 +80,7 @@ Run this command to start the InfluxDB 3 Core container:
 
 ```bash
 docker run -d --name influxdb3-core \
-  -p 8086:8086 \
+  -p 8181:8181 \
   quay.io/influxdb/influxdb3:latest \
   serve --host-id my-influxdb-node --object-store file --data-dir /var/lib/influxdb3
 ```
@@ -125,7 +125,7 @@ docker compose pull && docker compose run influxdb3-enterprise
 Run this command to start the InfluxDB 3 Enterprise container
 
 ```bash
-docker run -d --name influxdb3-enterprise -p 8086:8086 \
+docker run -d --name influxdb3-enterprise -p 8181:8181 \
   -v $PWD/plugins:/plugins \
   -v $PWD/data:/var/lib/influxdb3 \
   -e INFLUX_LICENSE_KEY="YOUR_LICENSE_KEY" \
@@ -160,8 +160,8 @@ To persist data using a Docker-managed volume, run the following command:
 ```bash
 docker run -d --name influxdb3-core \
   -v influxdb3-data:/var/lib/influxdb3 \
-  -p 8086:8086 \
-  quay.io/influxdb/influxdb3:latest \
+  -p 8181:8181 \
+  influxdb3:core \
   serve --host-id my-influxdb-node --object-store file --data-dir /var/lib/influxdb3
 ```
 
@@ -178,8 +178,8 @@ To persist data in a local directory on your host, use the following command:
 ```bash
 docker run -d --name influxdb3-core \
   -v $PWD/influxdb3-data:/var/lib/influxdb3 \
-  -p 8086:8086 \
-  quay.io/influxdb/influxdb3:latest \
+  -p 8181:8181 \
+  influxdb3:core \
   serve --host-id my-influxdb-node --object-store file --data-dir /var/lib/influxdb3
 ```
 
