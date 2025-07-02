@@ -23,7 +23,8 @@ InfluxDB offers multiple versions and deployment options to meet diverse technic
 InfluxDB 3, the latest InfluxDB engine, uses Apache Arrow in-memory processing, the DataFusion SQL engine, and diskless
   object storage architecture. It delivers sub-10ms query response times, unlimited cardinality, and supports both SQL and InfluxQL.
 
-InfluxDB 3 comes in two editions:
+InfluxDB 3 offers two editions--both provide SQL and InfluxQL query capabilities, an integrated processing engine for real-time
+  data transformation, and seamless integration with InfluxDB 3 Explorer for data visualization and management:
 
 -	**InfluxDB 3 Core**: A free, open source version of the new engine for local development and prototyping.
 -	**InfluxDB 3 Enterprise**: A production-grade, scalable time series database that includes support for clustering, security, and enterprise features.
