@@ -53,11 +53,11 @@ You can pull docker images using these commands:
 
 ## Start InfluxDB 3 Core
 
-Run InfluxDB 3 Core using either Docker Compose or the CLI.
+Run InfluxDB 3 Core using either Docker Compose or Docker CLI.
 
 ### Docker Compose
 
-Create a `compose.yml` file with the configuration:
+To use Docker Compose with persistent storage, create a `compose.yml` file with the following configuration:
 
 %%COMPOSE%%
 
@@ -74,16 +74,25 @@ docker container ls --filter "name=influxdb3"
 docker kill <CONTAINER_ID>
 ```
 
-### Docker CLI
+### File system object store with docker
 
-Run this command to start the InfluxDB 3 Core container:
+To start InfluxDB 3 Core with persistent storage and expose the default HTTP port (`8181`), run:
 
 ```bash
 docker run -d --name influxdb3-core \
   -p 8181:8181 \
-  influxdb:3-core \
-  serve --host-id my-influxdb-node --object-store file --data-dir /var/lib/influxdb3
+  -v $PWD/influxdb3-data:/var/lib/influxdb3 \
+  influxdb:3-core influxdb3 serve \
+    --node-id my-influxdb-node \
+    --object-store file \
+    --data-dir /var/lib/influxdb3
 ```
+
+This command:
+
+- Maps container port `8181` (HTTP API) to your host
+- Mounts the local `influxdb3-data` directory to persist data
+- Configures InfluxDB 3 Core to use a file system object store
 
 Once the container is running, generate an admin token:
 
@@ -106,13 +115,32 @@ curl http://localhost:8181/health
 
 ## Start InfluxDB 3 Enterprise
 
-InfluxDB 3 Enterprise supports clustered deployments and advanced features. To start a local standalone Enterprise container for testing, provide your license key as an environment variable.
+Use the InfluxDB 3 Enterprise Docker image to run a standalone or clustered instance. This section describes how to mount a file system object store using Docker CLI or Docker Compose.
 
 ### Docker Compose
 
-Create a `compose.yml` file with the following configuration:
+To use Docker Compose, open your `compose.yml` file and define a service for InfluxDB 3 Enterprise. 
 
-%%COMPOSE%%
+```yaml
+services:
+  influxdb3-enterprise:
+    container_name: influxdb3-enterprise
+    image: influxdb:3-enterprise
+    ports:
+      - 8181:8181 
+    command:
+      - influxdb3
+      - serve
+      - --node-id=node0
+      - --cluster-id=cluster0
+      - --object-store=file
+      - --data-dir=/var/lib/influxdb3
+      - --plugin-dir=/var/lib/influxdb3-plugins
+    environment:
+      - INFLUXDB3_LICENSE_EMAIL=EMAIL_ADDRESS
+```
+
+- Replace `EMAIL_ADDRESS` with your email address to bypass the email prompt when generating a trial or at-home license. 
 
 Start your container:
 
@@ -120,21 +148,27 @@ Start your container:
 docker compose pull && docker compose run influxdb3-enterprise
 ```
 
-## Docker with mounted file style object store
+- InfluxDB 3 starts in a container with host port 8181 mapped to container port 8181, the server default for HTTP connections.
 
-Run this command to start the InfluxDB 3 Enterprise container
+To stop your container run:
 
 ```bash
-docker run -d --name influxdb3-enterprise -p 8181:8181 \
-  -v $PWD/plugins:/plugins \
-  -v $PWD/data:/var/lib/influxdb3 \
-  -e INFLUX_LICENSE_KEY="YOUR_LICENSE_KEY" \
-  influxdb:enterprise serve \
-    --cluster-id cluster1 \
-    --node-id node1 \
-    --plugin-dir /plugins \
-    --object-store file \
-    --data-dir /var/lib/influxdb3
+docker container ls --filter "name=influxdb3"
+docker kill <CONTAINER_ID>
+```
+
+### File system object store with Docker
+
+To run the Docker image and persist data to the local file system, mount a volume for the object store.
+
+```bash
+docker run -it \
+ --volume /path/on/host:/path/in/container \
+ influxdb:3-enterprise influxdb3 serve \
+ --node-id my_host \
+ --cluster-id my_cluster \
+ --object-store file \
+ --data-dir /path/in/container
 ```
 
 Generate an admin token:
@@ -148,43 +182,6 @@ Use the token from the output to create a database.
 ```bash
 docker exec -it influxdb3-enterprise influxdb3 create database enterprise_db --token <your_admin_token>
 ```
-
-## Mount data to persist across restarts
-
-To retain data across container restarts, mount a Docker volume or bind a local directory. Be sure to include the required `serve` command and storage configuration.
-
-### Using a Docker volume
-
-To persist data using a Docker-managed volume, run the following command:
-
-```bash
-docker run -it \
- --volume /path/on/host:/path/in/container \
- influxdb:3-core influxdb3 serve \
- --node-id my_host \
- --object-store file \
- --data-dir /path/in/container
-```
-
-This command:
-
--	Creates or reuses a Docker volume named `influxdb3-data`.
--	Maps the default InfluxDB port (`8181`) to your local machine.
--	Starts the InfluxDB server with a required host ID and object store configuration.
-
-### Using a local host directory
-
-To persist data in a local directory on your host, use the following command:
-
-```bash
-docker run -d --name influxdb3-core \
-  -v $PWD/influxdb3-data:/var/lib/influxdb3 \
-  -p 8181:8181 \
-  influxdb:3-core \
-  serve --host-id my-influxdb-node --object-store file --data-dir /var/lib/influxdb3
-```
-
-This mounts a local folder named `influxdb3-data` in your current working directory. Ensure that this directory exists and has appropriate write permissions.
 
 # InfluxDB v2
 
