@@ -200,7 +200,7 @@ docker run -d -p 8086:8086 \
   influxdb:2
 ```
 
-After the container starts, go to `http://localhost:8086` to access the UI.
+After the container starts, visit [http://localhost:8086](http://localhost:8086) in your browser to view the UI.
 
 For more information, see the [InfluxDB v2 Docker documentation](https://docs.influxdata.com/influxdb/v2/install/?t=docker).
 
