@@ -20,7 +20,8 @@ InfluxDB offers multiple versions and deployment options to meet diverse technic
 
 ## InfluxDB 3
 
-InfluxDB 3 is a new InfluxDB engine that uses an object store-backed architecture. It stores time series and event data using Apache Arrow and Parquet. It supports high-ingest workloads and fast queries.
+InfluxDB 3, the latest InfluxDB engine, uses Apache Arrow in-memory processing, the DataFusion SQL engine, and diskless
+  object storage architecture. It delivers sub-10ms query response times, unlimited cardinality, and supports both SQL and InfluxQL.
 
 InfluxDB 3 comes in two editions:
 
