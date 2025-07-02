@@ -29,7 +29,8 @@ InfluxDB 3 offers two editions--both provide SQL and InfluxQL query capabilities
 -	**InfluxDB 3 Core**: A free, open source version of the new engine for local development and prototyping.
 -	**InfluxDB 3 Enterprise**: A production-grade, scalable time series database that includes support for clustering, security, and enterprise features.
 
-**License key for Enterprise** To run InfluxDB 3 Enterprise, you need a license key. Obtain one from [InfluxData's pricing page](https://www.influxdata.com/pricing/).
+**License key for Enterprise** To run InfluxDB 3 Enterprise, you need a license key. Start with a free 30-day trial license by
+  selecting the trial option when you first start the server. For more license options, see the [InfluxDB 3 Enterprise documentation](https://docs.influxdata.com/influxdb3/enterprise/admin/license/).
 
 For full documentation, visit the [InfluxDB 3 documentation site](https://docs.influxdata.com)
 
