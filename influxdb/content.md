@@ -67,7 +67,7 @@ Start the container by using the following command:
 docker compose pull && docker compose run influxdb3-core
 ```
 
-Stop your container by using following command:
+Stop the container by using following command:
 
 ```bash
 docker container ls --filter "name=influxdb3"
@@ -81,7 +81,7 @@ Run this command to start the InfluxDB 3 Core container:
 ```bash
 docker run -d --name influxdb3-core \
   -p 8181:8181 \
-  quay.io/influxdb/influxdb3:latest \
+  influxdb:3-core \
   serve --host-id my-influxdb-node --object-store file --data-dir /var/lib/influxdb3
 ```
 
@@ -137,7 +137,7 @@ docker run -d --name influxdb3-enterprise -p 8181:8181 \
     --data-dir /var/lib/influxdb3
 ```
 
-Then, generate an admin token:
+Generate an admin token:
 
 ```bash
 docker exec -it influxdb3-enterprise influxdb3 create token --admin
@@ -158,11 +158,12 @@ To retain data across container restarts, mount a Docker volume or bind a local 
 To persist data using a Docker-managed volume, run the following command:
 
 ```bash
-docker run -d --name influxdb3-core \
-  -v influxdb3-data:/var/lib/influxdb3 \
-  -p 8181:8181 \
-  influxdb3:core \
-  serve --host-id my-influxdb-node --object-store file --data-dir /var/lib/influxdb3
+docker run -it \
+ --volume /path/on/host:/path/in/container \
+ influxdb:3-core influxdb3 serve \
+ --node-id my_host \
+ --object-store file \
+ --data-dir /path/in/container
 ```
 
 This command:
@@ -179,7 +180,7 @@ To persist data in a local directory on your host, use the following command:
 docker run -d --name influxdb3-core \
   -v $PWD/influxdb3-data:/var/lib/influxdb3 \
   -p 8181:8181 \
-  influxdb3:core \
+  influxdb:3-core \
   serve --host-id my-influxdb-node --object-store file --data-dir /var/lib/influxdb3
 ```
 
