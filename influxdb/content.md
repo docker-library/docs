@@ -167,7 +167,7 @@ docker run -d --name influxdb3-core \
 This command:
 
 -	Creates or reuses a Docker volume named `influxdb3-data`.
--	Maps the default InfluxDB port (`8086`) to your local machine.
+-	Maps the default InfluxDB port (`8181`) to your local machine.
 -	Starts the InfluxDB server with a required host ID and object store configuration.
 
 ### Using a local host directory
