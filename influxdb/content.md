@@ -20,18 +20,14 @@ InfluxDB offers multiple versions and deployment options to meet diverse technic
 
 ## InfluxDB 3
 
-InfluxDB 3, the latest InfluxDB engine, uses Apache Arrow in-memory processing, the DataFusion SQL engine, and diskless
-  object storage architecture. It delivers sub-10ms query response times, unlimited cardinality, and supports both SQL and InfluxQL.
+InfluxDB 3, the latest InfluxDB engine, uses Apache Arrow in-memory processing, the DataFusion SQL engine, and diskless object storage architecture. It delivers sub-10ms query response times, unlimited cardinality, and supports both SQL and InfluxQL.
 
-InfluxDB 3 offers two editions--both provide SQL and InfluxQL query capabilities, an integrated processing engine for real-time
-  data transformation, and seamless integration with InfluxDB 3 Explorer for data visualization and management:
+InfluxDB 3 offers two editions--both provide SQL and InfluxQL query capabilities, an integrated processing engine for real-time data transformation, and seamless integration with InfluxDB 3 Explorer for data visualization and management:
 
 -	**InfluxDB 3 Core**: A free, open source version of the new engine for local development and prototyping.
 -	**InfluxDB 3 Enterprise**: A production-grade, scalable time series database that includes support for clustering, security, and enterprise features.
 
-**License key for Enterprise** To run InfluxDB 3 Enterprise, you need a license key. Start with a free 30-day trial license by
-  selecting the trial option when you first start the server. For more license options, see the [InfluxDB 3 Enterprise documentation](https://docs.influxdata.com/influxdb3/enterprise/admin/license/).
-
+**License key for Enterprise** To run InfluxDB 3 Enterprise, you need a license key. Start with a free 30-day trial license by selecting the trial option when you first start the server. For more license options, see the [InfluxDB 3 Enterprise documentation](https://docs.influxdata.com/influxdb3/enterprise/admin/license/).
 
 ## Docker Images
 
@@ -90,9 +86,9 @@ docker run -d --name influxdb3-core \
 
 This command:
 
-- Maps container port `8181` (HTTP API) to your host
-- Mounts the local `influxdb3-data` directory to persist data
-- Configures InfluxDB 3 Core to use a file system object store
+-	Maps container port `8181` (HTTP API) to your host
+-	Mounts the local `influxdb3-data` directory to persist data
+-	Configures InfluxDB 3 Core to use a file system object store
 
 Once the container is running, generate an admin token:
 
@@ -119,7 +115,7 @@ Use the InfluxDB 3 Enterprise Docker image to run a standalone or clustered inst
 
 ### Docker Compose
 
-To use Docker Compose, open your `compose.yml` file and define a service for InfluxDB 3 Enterprise. 
+To use Docker Compose, open your `compose.yml` file and define a service for InfluxDB 3 Enterprise.
 
 ```yaml
 services:
@@ -140,7 +136,7 @@ services:
       - INFLUXDB3_LICENSE_EMAIL=EMAIL_ADDRESS
 ```
 
-- Replace `EMAIL_ADDRESS` with your email address to bypass the email prompt when generating a trial or at-home license. 
+-	Replace `EMAIL_ADDRESS` with your email address to bypass the email prompt when generating a trial or at-home license.
 
 Start your container:
 
@@ -148,7 +144,7 @@ Start your container:
 docker compose pull && docker compose run influxdb3-enterprise
 ```
 
-- InfluxDB 3 starts in a container with host port 8181 mapped to container port 8181, the server default for HTTP connections.
+-	InfluxDB 3 starts in a container with host port 8181 mapped to container port 8181, the server default for HTTP connections.
 
 To stop your container run:
 
