@@ -124,7 +124,7 @@ curl http://localhost:8181/health
 
 ## Start InfluxDB 3 Enterprise
 
-Use the InfluxDB 3 Enterprise Docker image to run a standalone or clustered instance. This section describes how to mount a file system object store using Docker CLI or Docker Compose.
+Use the InfluxDB 3 Enterprise Docker image to run a standalone or clustered instance. This section describes how to mount a file system object store using Docker Compose or Docker CLI.
 
 ### Docker Compose
 
