@@ -180,6 +180,36 @@ docker run -it \
  --data-dir /path/in/container
 ```
 
+### Configure Docker environment variable
+
+To defne environment variables in a `.env` file and reference them when starting your InfluxDB 3 Enterprise container.
+
+Create a `.env` file:
+
+```bash
+INFLUX_LICENSE_KEY=your_license_key_here
+INFLUXDB3_LICENSE_EMAIL=you@example.com
+```
+
+Start the container:
+
+```bash
+docker run -d --name influxdb3-enterprise \
+  --env-file .env \
+  -v $PWD/data:/var/lib/influxdb3 \
+  -p 8181:8181 \
+  influxdb:3-enterprise influxdb3 serve \
+    --cluster-id cluster1 \
+    --node-id node1 \
+    --object-store file \
+    --data-dir /var/lib/influxdb3
+```
+
+This approach lets you:
+
+-	Store sensitive credentials and configuration separately from your shell history or scripts.
+-	Reuse the same `.env` file in Docker Compose or CI pipelines.
+
 Generate an admin token:
 
 ```bash
