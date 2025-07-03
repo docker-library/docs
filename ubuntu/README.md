@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm64v8` builds of [the `ubuntu` official image](https://hub.docker.com/_/ubuntu) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,15 +26,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`22.04`, `jammy-20250619`, `jammy`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-amd64-20250619-7fb3f136&id=7fb3f1366b34c5b765ad9b4231010c5500324bc4)
+-	[`22.04`, `jammy-20250619`, `jammy`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-arm64v8-20250619-bfe2aeb7&id=bfe2aeb7a796975d91c5b16cd96b10360edb4705)
 
--	[`24.04`, `noble-20250619`, `noble`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-amd64-20250619-21910021&id=21910021a997c25cb714dc6f40ef03a630dd8b3b)
+-	[`24.04`, `noble-20250619`, `noble`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-arm64v8-20250619-78b523d8&id=78b523d871f589f71e0ce3055fe8c4a70160f848)
 
--	[`24.10`, `oracular-20250619`, `oracular`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-oracular-amd64-20250619-cc02a011&id=cc02a01164fbf0fd3b74b09e6c9b0da490411665)
+-	[`24.10`, `oracular-20250619`, `oracular`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-oracular-arm64v8-20250619-ae9a6295&id=ae9a62954fc0f2ae24c5d47c6359a02f420fd30a)
 
--	[`25.04`, `plucky-20250619`, `plucky`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-plucky-amd64-20250619-d0219e60&id=d0219e60c528ce77ce4e16a7a79696ff45239411)
+-	[`25.04`, `plucky-20250619`, `plucky`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-plucky-arm64v8-20250619-771c2cba&id=771c2cba14d474821d620fd011ed01222d06d5de)
 
--	[`25.10`, `questing-20250620`, `questing`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-questing-amd64-20250620-fb433863&id=fb433863336aaeb793b4c17e7751bad417783ebe)
+-	[`25.10`, `questing-20250620`, `questing`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-questing-arm64v8-20250620-dffe4ce2&id=dffe4ce20e297284d1ccac64a512dfcfa6678cfb)
 
 # Quick reference (cont.)
 
@@ -67,9 +69,9 @@ Development of Ubuntu is led by Canonical Ltd. Canonical generates revenue throu
 
 This image is built from official rootfs tarballs provided by Canonical (see `dist-*` tags at https://git.launchpad.net/cloud-images/+oci/ubuntu-base).
 
-The `ubuntu:latest` tag points to the "latest LTS", since that's the version recommended for general use. The `ubuntu:rolling` tag points to the latest release (regardless of LTS status).
+The `arm64v8/ubuntu:latest` tag points to the "latest LTS", since that's the version recommended for general use. The `arm64v8/ubuntu:rolling` tag points to the latest release (regardless of LTS status).
 
-Along a similar vein, the `ubuntu:devel` tag is an alias for whichever release the "devel" suite on the mirrors currently points to, as determined by the following one-liner: `wget -qO- http://archive.ubuntu.com/ubuntu/dists/devel/Release | awk -F ': ' '$1 == "Codename" { print $2; exit }'`
+Along a similar vein, the `arm64v8/ubuntu:devel` tag is an alias for whichever release the "devel" suite on the mirrors currently points to, as determined by the following one-liner: `wget -qO- http://archive.ubuntu.com/ubuntu/dists/devel/Release | awk -F ': ' '$1 == "Codename" { print $2; exit }'`
 
 ## Locales
 
