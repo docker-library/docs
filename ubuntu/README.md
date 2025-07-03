@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `s390x` builds of [the `ubuntu` official image](https://hub.docker.com/_/ubuntu) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,15 +26,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`22.04`, `jammy-20250619`, `jammy`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-amd64-20250619-7fb3f136&id=7fb3f1366b34c5b765ad9b4231010c5500324bc4)
+-	[`22.04`, `jammy-20250619`, `jammy`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-s390x-20250619-dcc04328&id=dcc04328b0054626d9e7153675e5eeb36de9d30d)
 
--	[`24.04`, `noble-20250619`, `noble`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-amd64-20250619-21910021&id=21910021a997c25cb714dc6f40ef03a630dd8b3b)
+-	[`24.04`, `noble-20250619`, `noble`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-s390x-20250619-ac9352bc&id=ac9352bc345aebb94c94e8ad39ae32ec97e1c9cd)
 
--	[`24.10`, `oracular-20250619`, `oracular`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-oracular-amd64-20250619-cc02a011&id=cc02a01164fbf0fd3b74b09e6c9b0da490411665)
+-	[`24.10`, `oracular-20250619`, `oracular`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-oracular-s390x-20250619-68bc950d&id=68bc950d3720994f9a4d25ccc4be300b09dcbe2f)
 
--	[`25.04`, `plucky-20250619`, `plucky`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-plucky-amd64-20250619-d0219e60&id=d0219e60c528ce77ce4e16a7a79696ff45239411)
+-	[`25.04`, `plucky-20250619`, `plucky`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-plucky-s390x-20250619-7f7123f2&id=7f7123f2a8c3e268777fe6f02dee0fe169b3650b)
 
--	[`25.10`, `questing-20250620`, `questing`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-questing-amd64-20250620-fb433863&id=fb433863336aaeb793b4c17e7751bad417783ebe)
+-	[`25.10`, `questing-20250620`, `questing`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-questing-s390x-20250620-c5c27cc5&id=c5c27cc541a538e09a2b0a9fcfdc69ebcc31b0f7)
 
 # Quick reference (cont.)
 
@@ -67,9 +69,9 @@ Development of Ubuntu is led by Canonical Ltd. Canonical generates revenue throu
 
 This image is built from official rootfs tarballs provided by Canonical (see `dist-*` tags at https://git.launchpad.net/cloud-images/+oci/ubuntu-base).
 
-The `ubuntu:latest` tag points to the "latest LTS", since that's the version recommended for general use. The `ubuntu:rolling` tag points to the latest release (regardless of LTS status).
+The `s390x/ubuntu:latest` tag points to the "latest LTS", since that's the version recommended for general use. The `s390x/ubuntu:rolling` tag points to the latest release (regardless of LTS status).
 
-Along a similar vein, the `ubuntu:devel` tag is an alias for whichever release the "devel" suite on the mirrors currently points to, as determined by the following one-liner: `wget -qO- http://archive.ubuntu.com/ubuntu/dists/devel/Release | awk -F ': ' '$1 == "Codename" { print $2; exit }'`
+Along a similar vein, the `s390x/ubuntu:devel` tag is an alias for whichever release the "devel" suite on the mirrors currently points to, as determined by the following one-liner: `wget -qO- http://archive.ubuntu.com/ubuntu/dists/devel/Release | awk -F ': ' '$1 == "Codename" { print $2; exit }'`
 
 ## Locales
 
