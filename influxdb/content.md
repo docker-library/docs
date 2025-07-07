@@ -234,7 +234,7 @@ Access Explorer through the official Docker image:
 docker pull influxdata/influxdb3-ui:1.0.0
 ```
 
-For detailed instructions on connecting Explorer to your InfluxDB instance, see [InfluxDB Explorer documentation](https://docs.influxdata.com/influxdb/v3/explorer/)
+For detailed instructions on connecting Explorer to your InfluxDB instance, see [InfluxDB Explorer documentation](https://docs.influxdata.com/influxdb/v3/explorer/).
 
 # InfluxDB v2
 
@@ -254,12 +254,9 @@ docker run -d -p 8086:8086 \
   influxdb:2
 ```
 
-
-[Link to dock comppoes in the documentation] 
-
 After the container starts, visit [http://localhost:8086](http://localhost:8086) in your browser to view the UI.
 
-For more information, see the [InfluxDB v2 Docker documentation](https://docs.influxdata.com/influxdb/v2/install/?t=docker).
+For detailed instructions on using Docker Compose with InfluxDB v2, see the [Docker Compose installation guide](https://docs.influxdata.com/influxdb/v2/install/use-docker-compose/).
 
 # InfluxDB v1
 
