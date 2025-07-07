@@ -238,9 +238,11 @@ For detailed instructions on connecting Explorer to your InfluxDB instance, see 
 
 # InfluxDB v2
 
-## How to use the InfluxDB v2 Docker image
+Use the official [InfluxDB v2 Docker image](https://hub.docker.com/_/influxdb) to start a containerized instance of InfluxDB v2.
 
-Use the official [InfluxDB v2 Docker image](https://hub.docker.com/_/influxdb) to start an instance for development or testing.
+## Start InfluxDB v2
+
+To start InfluxDB v2 in a container with mounted volumes for persistent configuration and data, run:
 
 ```bash
 docker run -d -p 8086:8086 \
@@ -254,7 +256,33 @@ docker run -d -p 8086:8086 \
   influxdb:2
 ```
 
-After the container starts, visit [http://localhost:8086](http://localhost:8086) in your browser to view the UI.
+This command:
+
+-	Starts a detached container named `influxdb2`
+-	Mounts volumes for persistent storage of data and configuration
+-	Initializes InfluxDB with a user, organization, and bucket
+
+To access the InfluxDB UI, visit [http://localhost:8086](http://localhost:8086) in your browser.
+
+## Start an existing InfluxDB v2 container
+
+If you previously created the container and it has been stopped, restart it with:
+
+```bash
+docker start influxdb2
+```
+
+Replace `influxdb2` with the name of your container if different.
+
+## Stop InfluxDB v2
+
+To stop a running container:
+
+```bash
+docker stop influxdb2
+```
+
+This gracefully shuts down the container.
 
 For detailed instructions on using Docker Compose with InfluxDB v2, see the [Docker Compose installation guide](https://docs.influxdata.com/influxdb/v2/install/use-docker-compose/).
 
