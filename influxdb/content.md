@@ -1,6 +1,7 @@
 **This README covers all currently supported versions of InfluxDB:**
 
 -	**InfluxDB 3** (Core and Enterprise)
+- **InfluxDB Explorer**
 -	**InfluxDB v2**
 -	**InfluxDB v1**
 
@@ -26,6 +27,7 @@ InfluxDB 3 offers two editions--both provide SQL and InfluxQL query capabilities
 
 -	**InfluxDB 3 Core**: A free, open source version of the new engine for local development and prototyping.
 -	**InfluxDB 3 Enterprise**: A production-grade, scalable time series database that includes support for clustering, security, and enterprise features.
+- **InfluxDB Explorer**: A web-based interface for visualizing exploring, and managing time series data stored in InfluxDB 3 databases. 
 
 **License key for Enterprise**: To run InfluxDB 3 Enterprise, you need a license key. Start with a free 30-day trial license by selecting the trial option when you first start the server. For more license options, see the [InfluxDB 3 Enterprise documentation](https://docs.influxdata.com/influxdb3/enterprise/admin/license/).
 
@@ -222,6 +224,18 @@ Use the token from the output to create a database.
 docker exec -it influxdb3-enterprise influxdb3 create database enterprise_db --token <your_admin_token>
 ```
 
+# InfluxDB Explorer 
+
+InfluxDB Explorer provides a graphical interface for visualizing and managing your time series data. Use it alongside your InfluxDB instance to create dashboards, explore metrics, and monitor your systems in real time.
+
+Access Explorer through the official Docker image:
+
+```bash
+docker pull influxdata/influxdb3-ui:1.0.0
+```
+
+For detailed instructions on connecting Explorer to your InfluxDB instance, see [InfluxDB Explorer documentation](https://docs.influxdata.com/influxdb/v3/explorer/)
+
 # InfluxDB v2
 
 ## How to use the InfluxDB v2 Docker image
@@ -239,6 +253,9 @@ docker run -d -p 8086:8086 \
   -e DOCKER_INFLUXDB_INIT_BUCKET=my-bucket \
   influxdb:2
 ```
+
+
+[Link to dock comppoes in the documentation] 
 
 After the container starts, visit [http://localhost:8086](http://localhost:8086) in your browser to view the UI.
 
