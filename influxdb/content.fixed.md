@@ -226,7 +226,7 @@ docker exec -it influxdb3-enterprise influxdb3 create database enterprise_db --t
 
 # InfluxDB Explorer
 
-InfluxDB Explorer provides a graphical interface for visualizing and managing your time series data. Use it alongside your InfluxDB instance to create dashboards, explore metrics, and monitor your systems in real time.
+InfluxDB 3 Explorer provides a graphical interface for visualizing and managing your time series data stored in an InfluxDB 3 instance. Use Explorer to write data, create dashboards, explore metrics, and manage your databases.
 
 Access Explorer through the official Docker image:
 
