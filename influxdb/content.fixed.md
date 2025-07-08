@@ -33,7 +33,7 @@ InfluxDB 3 offers two editions--both provide SQL and InfluxQL query capabilities
 
 ### InfluxDB 3 images
 
-Docker images are pre-configured templates that allow you to quickly deploy InfluxDB 3 Core or Enterprise in a containerized environment. These images include all necessary dependencies and configurations to run InfluxDB efficiently.
+The InfluxDB 3 Core and Enterprise images include the necessary dependencies and configurations to run InfluxDB 3 efficiently.
 
 To pull the latest Docker images, use the following commands:
 
