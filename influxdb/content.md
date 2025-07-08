@@ -350,4 +350,4 @@ To restart it later:
 docker start <container-name>
 ```
 
-For more information, see the [InfluxDB v1 Docker documentation](https://docs.influxdata.com/influxdb/v1/).
+For more information, see the [InfluxDB v1 Docker documentation](https://docs.influxdata.com/influxdb/v1/introduction/install/docker/).
