@@ -107,7 +107,7 @@ docker exec -it influxdb3-core influxdb3 generate token --admin
 Use the token to create a database:
 
 ```bash
-docker exec -it influxdb3-core influxdb3 create database my_db --token YOUR_ADMIN_TOKEN
+docker exec -it influxdb3-core influxdb3 create database my_db --token AUTH_TOKEN
 ```
 
 To check the server health:
