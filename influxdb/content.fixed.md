@@ -87,7 +87,7 @@ docker kill <CONTAINER_ID>
 
 ### File system object store with docker
 
-To start InfluxDB 3 Core with persistent storage and expose the default HTTP port (`8181`), run:
+To use the Docker CLI to start InfluxDB 3 Core with persistent file system storage and expose the default HTTP port (`8181`), run:
 
 ```bash
 docker run -d --name influxdb3-core \
