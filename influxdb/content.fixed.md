@@ -185,7 +185,7 @@ docker exec -it influxdb3-enterprise influxdb3 create token --admin
 Use the token from the output to create a database.
 
 ```bash
-docker exec -it influxdb3-enterprise influxdb3 create database enterprise_db --token <your_admin_token>
+docker exec -it influxdb3-enterprise influxdb3 create database enterprise_db --token ADMIN_TOKEN
 ```
 
 # InfluxDB Explorer
