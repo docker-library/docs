@@ -150,7 +150,7 @@ services:
       - INFLUXDB3_LICENSE_EMAIL=EMAIL_ADDRESS
 ```
 
--	Replace `EMAIL_ADDRESS` with your email address to bypass the email prompt when generating a trial or at-home license.
+-	Replace `EMAIL_ADDRESS` with your email address
 
 Start your container:
 
