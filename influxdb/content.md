@@ -1,9 +1,9 @@
 **This README covers all currently supported versions of InfluxDB:**
 
 -	**InfluxDB 3** (Core and Enterprise)
--	**InfluxDB Explorer**
 -	**InfluxDB v2**
 -	**InfluxDB v1**
+-       **InfluxDB Enterprise v1**
 
 Scroll to the appropriate section below for Docker setup instructions, configuration flags, and usage examples.
 
@@ -27,13 +27,13 @@ InfluxDB 3 offers two editions--both provide SQL and InfluxQL query capabilities
 
 -	**InfluxDB 3 Core**: A free, open source version of the new engine for local development and prototyping.
 -	**InfluxDB 3 Enterprise**: A production-grade, scalable time series database that includes support for clustering, security, and enterprise features.
--	**InfluxDB Explorer**: A web-based interface for visualizing, exploring, and managing time series data stored in InfluxDB 3 databases.
-
 **License key for Enterprise**: To run InfluxDB 3 Enterprise, you need a license key. Start with a free 30-day trial license by selecting the trial option when you first start the server. For more license options, see the [InfluxDB 3 Enterprise documentation](https://docs.influxdata.com/influxdb3/enterprise/admin/license/).
 
-## Docker Images
+**InfluxDB 3 Explorer UI**: After starting your InfluxDB 3 container, run the [InfluxDB 3 Explorer](https://docs.influxdata.com/influxdb3/explorer/) standalone web interface to write and explore data and manage databases.
 
-Docker images are pre-configured templates that allow you to quickly deploy InfluxDB 3 Core or Enterprise in a containerized environment. These images include all necessary dependencies and configurations to run InfluxDB efficiently.
+### InfluxDB 3 images
+
+The InfluxDB 3 Core and Enterprise images include the necessary dependencies and configurations to run InfluxDB 3 efficiently.
 
 To pull the latest Docker images, use the following commands:
 
@@ -72,22 +72,15 @@ To use Docker Compose with persistent storage, create a `compose.yml` file with 
 
 %%COMPOSE%%
 
-Use the following command to start the container:
+Start the container by using the following command:
 
 ```bash
 docker compose pull && docker compose run influxdb3-core
 ```
 
-Use the following command to stop the container:
-
-```bash
-docker container ls --filter "name=influxdb3"
-docker kill <CONTAINER_ID>
-```
-
 ### File system object store with docker
 
-To start InfluxDB 3 Core with persistent storage and expose the default HTTP port (`8181`), run:
+To use the Docker CLI to start InfluxDB 3 Core with persistent file system storage and expose the default HTTP port (`8181`), run:
 
 ```bash
 docker run -d --name influxdb3-core \
@@ -99,7 +92,7 @@ docker run -d --name influxdb3-core \
     --data-dir /var/lib/influxdb3
 ```
 
-The `docker run` command performs the following:
+This command:
 
 -	Maps container port `8181` (HTTP API) to your host
 -	Mounts the local `influxdb3-data` directory to persist data
@@ -114,20 +107,26 @@ docker exec -it influxdb3-core influxdb3 generate token --admin
 Use the token to create a database:
 
 ```bash
-docker exec -it influxdb3-core influxdb3 create database my_db --token YOUR_ADMIN_TOKEN
+docker exec -it influxdb3-core influxdb3 create database my_db --token AUTH_TOKEN
 ```
 
 To check the server health:
 
 ```bash
 curl http://localhost:8181/health
-  --header "Authorization: Bearer YOUR_ADMIN_TOKEN"
+  --header "Authorization: Bearer AUTH_TOKEN"
 ```
 
 ## Start InfluxDB 3 Enterprise
 
 Use the InfluxDB 3 Enterprise Docker image to run a standalone or clustered instance. This section describes how to mount a file system object store using Docker Compose or Docker CLI.
+To skip the email prompt when starting the server, you can provide your email
+address using one of the following methods:
 
+- Use the [`--license-email`](https://docs.influxdata.com/influxdb3/enterprise/reference/config-options/#license-email) option with the `influxdb3 serve` command
+- Set the `INFLUXDB3_ENTERPRISE_LICENSE_EMAIL` environment variable
+
+For licensing options, see how to [Manage licenses](https://docs.influxdata.com/influxdb3/enterprise/admin/license/).
 ### Docker Compose
 
 To use Docker Compose, open your `compose.yml` file and define a service for InfluxDB 3 Enterprise.
@@ -151,22 +150,15 @@ services:
       - INFLUXDB3_LICENSE_EMAIL=EMAIL_ADDRESS
 ```
 
--	Replace `EMAIL_ADDRESS` with your email address to bypass the email prompt when generating a trial or at-home license.
+-	Replace `EMAIL_ADDRESS` with your email address
 
 Start your container:
 
 ```bash
-docker compose pull && docker compose run influxdb3-enterprise
+docker compose pull && docker compose up influxdb3-enterprise
 ```
 
--	InfluxDB 3 starts in a container with host port 8181 mapped to container port 8181, the server default for HTTP connections.
-
-To stop your container run:
-
-```bash
-docker container ls --filter "name=influxdb3"
-docker kill <CONTAINER_ID>
-```
+-	InfluxDB 3 starts in a container with host port 8181 mapped to container port `8181`, the server default for HTTP connections.
 
 ### File system object store with Docker
 
@@ -180,37 +172,9 @@ docker run -it \
  --cluster-id my_cluster \
  --object-store file \
  --data-dir /path/in/container
+ --license-email EMAIL_ADDRESS
 ```
 
-### Configure Docker environment variable
-
-Define environment variables in a `.env` file and reference them when starting your InfluxDB 3 Enterprise container.
-
-Create a `.env` file:
-
-```bash
-INFLUX_LICENSE_KEY=your_license_key_here
-INFLUXDB3_LICENSE_EMAIL=you@example.com
-```
-
-Start the container:
-
-```bash
-docker run -d --name influxdb3-enterprise \
-  --env-file .env \
-  -v $PWD/data:/var/lib/influxdb3 \
-  -p 8181:8181 \
-  influxdb:3-enterprise influxdb3 serve \
-    --cluster-id cluster1 \
-    --node-id node1 \
-    --object-store file \
-    --data-dir /var/lib/influxdb3
-```
-
-This approach lets you:
-
--	Store sensitive credentials and configuration separately from your shell history or scripts.
--	Reuse the same `.env` file in Docker Compose or CI pipelines.
 
 Generate an admin token:
 
@@ -221,12 +185,12 @@ docker exec -it influxdb3-enterprise influxdb3 create token --admin
 Use the token from the output to create a database.
 
 ```bash
-docker exec -it influxdb3-enterprise influxdb3 create database enterprise_db --token <your_admin_token>
+docker exec -it influxdb3-enterprise influxdb3 create database enterprise_db --token ADMIN_TOKEN
 ```
 
-# InfluxDB Explorer
+# InfluxDB 3 Explorer
 
-InfluxDB Explorer provides a graphical interface for visualizing and managing your time series data. Use it alongside your InfluxDB instance to create dashboards, explore metrics, and monitor your systems in real time.
+InfluxDB 3 Explorer provides a graphical interface for visualizing and managing your time series data stored in an InfluxDB 3 instance. Use Explorer to write data, create dashboards, explore metrics, and manage your databases.
 
 Access Explorer through the official Docker image:
 
@@ -238,11 +202,9 @@ For detailed instructions on connecting Explorer to your InfluxDB instance, see 
 
 # InfluxDB v2
 
-Use the official [InfluxDB v2 Docker image](https://hub.docker.com/_/influxdb) to start a containerized instance of InfluxDB v2.
+## How to use the InfluxDB v2 Docker image
 
-## Start InfluxDB v2
-
-To start InfluxDB v2 in a container with mounted volumes for persistent configuration and data, run:
+Use the official [InfluxDB v2 Docker image](https://hub.docker.com/_/influxdb) to start an instance for development or testing.
 
 ```bash
 docker run -d -p 8086:8086 \
@@ -256,33 +218,7 @@ docker run -d -p 8086:8086 \
   influxdb:2
 ```
 
-This command:
-
--	Starts a detached container named `influxdb2`
--	Mounts volumes for persistent storage of data and configuration
--	Initializes InfluxDB with a user, organization, and bucket
-
-To access the InfluxDB UI, visit [http://localhost:8086](http://localhost:8086) in your browser.
-
-## Start an existing InfluxDB v2 container
-
-If you previously created the container and then stopped it, you can restart it with:
-
-```bash
-docker start influxdb2
-```
-
-Replace `influxdb2` with the name of your container if different.
-
-## Stop InfluxDB v2
-
-To stop a running container:
-
-```bash
-docker stop influxdb2
-```
-
-The `docker stop` command gracefully shuts down the container.
+After the container starts, visit [http://localhost:8086](http://localhost:8086) in your browser to view the UI.
 
 For detailed instructions on using Docker Compose with InfluxDB v2, see the [Docker Compose installation guide](https://docs.influxdata.com/influxdb/v2/install/use-docker-compose/).
 
@@ -290,64 +226,14 @@ For detailed instructions on using Docker Compose with InfluxDB v2, see the [Doc
 
 ## How to use the InfluxDB v1 Docker image
 
-Use the official [InfluxDB v1 Docker image](https://hub.docker.com/_/influxdb) to start a basic instance for development or testing.
-
-## Start InfluxDB v1
-
-Start a container with persistent storage:
+Use the official [InfluxDB v1 Docker image](https://hub.docker.com/_/influxdb) to start a basic instance for development or testing:
 
 ```bash
 docker run -d -p 8086:8086 \
   -v $PWD:/var/lib/influxdb \
-  influxdb
+  influxdb:1.11
 ```
 
-This starts InfluxDB and mounts your local `./data` directory to persist data across container lifecycles. After the container starts, you can access InfluxDB at `http://localhost:8086`.
+This command maps port `8086` and mounts your current directory to persist data.
 
-Configure the container using environment variables:
-
-```bash
-docker run -p 8086:8086 \
-  -v $PWD/data:/var/lib/influxdb \
-  -e INFLUXDB_REPORTING_DISABLED=true \
-  -e INFLUXDB_HTTP_AUTH_ENABLED=true \
-  -e INFLUXDB_HTTP_LOG_ENABLED=true \
-  influxdb
-```
-
-Configure with file:
-
-```bash
-docker run --rm influxdb influxd config > influxdb.conf
-
-docker run -p 8086:8086 \
-  -v $PWD/influxdb.conf:/etc/influxdb/influxdb.conf:ro \
-  -v $PWD/data:/var/lib/influxdb \
-  influxdb
-```
-
-## Access the CLI
-
-To open the InfluxDB CLI inside the container:
-
-```bash
-docker exec -it <container-name> influx
-```
-
-Replace `<container-name>` with the name or ID of your running InfluxDB container.
-
-## Stop InfluxDB v1
-
-To stop the container:
-
-```bash
-docker stop <container-name>
-```
-
-To restart it later:
-
-```bash
-docker start <container-name>
-```
-
-For more information, see the [InfluxDB v1 Docker documentation](https://docs.influxdata.com/influxdb/v1/introduction/install/docker/).
+For more information, see the [InfluxDB v1 Docker documentation](https://docs.influxdata.com/influxdb/v1/).
