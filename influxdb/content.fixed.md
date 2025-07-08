@@ -31,7 +31,7 @@ InfluxDB 3 offers two editions--both provide SQL and InfluxQL query capabilities
 
 **InfluxDB 3 Explorer UI**: After starting your InfluxDB 3 container, run the [InfluxDB 3 Explorer](https://docs.influxdata.com/influxdb3/explorer/) standalone web interface to write and explore data and manage databases.
 
-## Docker Images
+### InfluxDB 3 images
 
 Docker images are pre-configured templates that allow you to quickly deploy InfluxDB 3 Core or Enterprise in a containerized environment. These images include all necessary dependencies and configurations to run InfluxDB efficiently.
 
