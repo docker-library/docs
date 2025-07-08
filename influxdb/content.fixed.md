@@ -154,13 +154,6 @@ docker compose pull && docker compose up influxdb3-enterprise
 
 -	InfluxDB 3 starts in a container with host port 8181 mapped to container port `8181`, the server default for HTTP connections.
 
-To stop your container run:
-
-```bash
-docker container ls --filter "name=influxdb3"
-docker kill <CONTAINER_ID>
-```
-
 ### File system object store with Docker
 
 To run the Docker image and persist data to the local file system, mount a volume for the object store.
