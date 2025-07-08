@@ -114,7 +114,7 @@ To check the server health:
 
 ```bash
 curl http://localhost:8181/health
-  --header "Authorization: Bearer YOUR_ADMIN_TOKEN"
+  --header "Authorization: Bearer AUTH_TOKEN"
 ```
 
 ## Start InfluxDB 3 Enterprise
