@@ -27,7 +27,7 @@ InfluxDB 3 offers two editions--both provide SQL and InfluxQL query capabilities
 
 -	**InfluxDB 3 Core**: A free, open source version of the new engine for local development and prototyping.
 -	**InfluxDB 3 Enterprise**: A production-grade, scalable time series database that includes support for clustering, security, and enterprise features.
--	**InfluxDB Explorer**: A web-based interface for visualizing exploring, and managing time series data stored in InfluxDB 3 databases.
+-	**InfluxDB Explorer**: A web-based interface for visualizing, exploring, and managing time series data stored in InfluxDB 3 databases.
 
 **License key for Enterprise**: To run InfluxDB 3 Enterprise, you need a license key. Start with a free 30-day trial license by selecting the trial option when you first start the server. For more license options, see the [InfluxDB 3 Enterprise documentation](https://docs.influxdata.com/influxdb3/enterprise/admin/license/).
 
@@ -184,7 +184,7 @@ docker run -it \
 
 ### Configure Docker environment variable
 
-To defne environment variables in a `.env` file and reference them when starting your InfluxDB 3 Enterprise container.
+To define environment variables in a `.env` file and reference them when starting your InfluxDB 3 Enterprise container.
 
 Create a `.env` file:
 
@@ -290,14 +290,64 @@ For detailed instructions on using Docker Compose with InfluxDB v2, see the [Doc
 
 ## How to use the InfluxDB v1 Docker image
 
-Use the official [InfluxDB v1 Docker image](https://hub.docker.com/_/influxdb) to start a basic instance for development or testing:
+Use the official [InfluxDB v1 Docker image](https://hub.docker.com/_/influxdb) to start a basic instance for development or testing.
+
+## Start InfluxDB v1
+
+Start a container with persistent storage:
 
 ```bash
 docker run -d -p 8086:8086 \
   -v $PWD:/var/lib/influxdb \
-  influxdb:1.8
+  influxdb
 ```
 
-This command maps port `8086` and mounts your current directory to persist data.
+This starts InfluxDB and mounts your local `./data` directory to persist data across container lifecycles. After the container starts, InfluxDB is available at `http://localhost:8086`.
+
+Configure the container using environment variables:
+
+```bash
+docker run -p 8086:8086 \
+  -v $PWD/data:/var/lib/influxdb \
+  -e INFLUXDB_REPORTING_DISABLED=true \
+  -e INFLUXDB_HTTP_AUTH_ENABLED=true \
+  -e INFLUXDB_HTTP_LOG_ENABLED=true \
+  influxdb
+```
+
+Configure with file:
+
+```bash
+docker run --rm influxdb influxd config > influxdb.conf
+
+docker run -p 8086:8086 \
+  -v $PWD/influxdb.conf:/etc/influxdb/influxdb.conf:ro \
+  -v $PWD/data:/var/lib/influxdb \
+  influxdb
+```
+
+## Access the CLI
+
+To open the InfluxDB CLI inside the container:
+
+```bash
+docker exec -it <container-name> influx
+```
+
+Replace `<container-name>` with the name or ID of your running InfluxDB container.
+
+## Stop InfluxDB v1
+
+To stop the container:
+
+```bash
+docker stop <container-name>
+```
+
+To restart it later:
+
+```bash
+docker start <container-name>
+```
 
 For more information, see the [InfluxDB v1 Docker documentation](https://docs.influxdata.com/influxdb/v1/).
