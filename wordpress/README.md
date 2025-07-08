@@ -56,6 +56,30 @@ WARNING:
 
 -	[`cli-2.12.0-php8.4`, `cli-2.12-php8.4`, `cli-2-php8.4`, `cli-php8.4`](https://github.com/docker-library/wordpress/blob/50da133eabc137fa07c620c77788c1237cf55c8b/cli/php8.4/alpine/Dockerfile)
 
+-	[`beta-6.8.2-RC1-php8.1-apache`, `beta-6.8.2-php8.1-apache`, `beta-6.8-php8.1-apache`, `beta-6-php8.1-apache`, `beta-php8.1-apache`, `beta-6.8.2-RC1-php8.1`, `beta-6.8.2-php8.1`, `beta-6.8-php8.1`, `beta-6-php8.1`, `beta-php8.1`](https://github.com/docker-library/wordpress/blob/fe46b5e252346246362c11299cb4763888056060/beta/php8.1/apache/Dockerfile)
+
+-	[`beta-6.8.2-RC1-php8.1-fpm`, `beta-6.8.2-php8.1-fpm`, `beta-6.8-php8.1-fpm`, `beta-6-php8.1-fpm`, `beta-php8.1-fpm`](https://github.com/docker-library/wordpress/blob/fe46b5e252346246362c11299cb4763888056060/beta/php8.1/fpm/Dockerfile)
+
+-	[`beta-6.8.2-RC1-php8.1-fpm-alpine`, `beta-6.8.2-php8.1-fpm-alpine`, `beta-6.8-php8.1-fpm-alpine`, `beta-6-php8.1-fpm-alpine`, `beta-php8.1-fpm-alpine`](https://github.com/docker-library/wordpress/blob/fe46b5e252346246362c11299cb4763888056060/beta/php8.1/fpm-alpine/Dockerfile)
+
+-	[`beta-6.8.2-RC1-apache`, `beta-6.8.2-apache`, `beta-6.8-apache`, `beta-6-apache`, `beta-apache`, `beta-6.8.2-RC1`, `beta-6.8.2`, `beta-6.8`, `beta-6`, `beta`, `beta-6.8.2-RC1-php8.2-apache`, `beta-6.8.2-php8.2-apache`, `beta-6.8-php8.2-apache`, `beta-6-php8.2-apache`, `beta-php8.2-apache`, `beta-6.8.2-RC1-php8.2`, `beta-6.8.2-php8.2`, `beta-6.8-php8.2`, `beta-6-php8.2`, `beta-php8.2`](https://github.com/docker-library/wordpress/blob/fe46b5e252346246362c11299cb4763888056060/beta/php8.2/apache/Dockerfile)
+
+-	[`beta-6.8.2-RC1-fpm`, `beta-6.8.2-fpm`, `beta-6.8-fpm`, `beta-6-fpm`, `beta-fpm`, `beta-6.8.2-RC1-php8.2-fpm`, `beta-6.8.2-php8.2-fpm`, `beta-6.8-php8.2-fpm`, `beta-6-php8.2-fpm`, `beta-php8.2-fpm`](https://github.com/docker-library/wordpress/blob/fe46b5e252346246362c11299cb4763888056060/beta/php8.2/fpm/Dockerfile)
+
+-	[`beta-6.8.2-RC1-fpm-alpine`, `beta-6.8.2-fpm-alpine`, `beta-6.8-fpm-alpine`, `beta-6-fpm-alpine`, `beta-fpm-alpine`, `beta-6.8.2-RC1-php8.2-fpm-alpine`, `beta-6.8.2-php8.2-fpm-alpine`, `beta-6.8-php8.2-fpm-alpine`, `beta-6-php8.2-fpm-alpine`, `beta-php8.2-fpm-alpine`](https://github.com/docker-library/wordpress/blob/fe46b5e252346246362c11299cb4763888056060/beta/php8.2/fpm-alpine/Dockerfile)
+
+-	[`beta-6.8.2-RC1-php8.3-apache`, `beta-6.8.2-php8.3-apache`, `beta-6.8-php8.3-apache`, `beta-6-php8.3-apache`, `beta-php8.3-apache`, `beta-6.8.2-RC1-php8.3`, `beta-6.8.2-php8.3`, `beta-6.8-php8.3`, `beta-6-php8.3`, `beta-php8.3`](https://github.com/docker-library/wordpress/blob/fe46b5e252346246362c11299cb4763888056060/beta/php8.3/apache/Dockerfile)
+
+-	[`beta-6.8.2-RC1-php8.3-fpm`, `beta-6.8.2-php8.3-fpm`, `beta-6.8-php8.3-fpm`, `beta-6-php8.3-fpm`, `beta-php8.3-fpm`](https://github.com/docker-library/wordpress/blob/fe46b5e252346246362c11299cb4763888056060/beta/php8.3/fpm/Dockerfile)
+
+-	[`beta-6.8.2-RC1-php8.3-fpm-alpine`, `beta-6.8.2-php8.3-fpm-alpine`, `beta-6.8-php8.3-fpm-alpine`, `beta-6-php8.3-fpm-alpine`, `beta-php8.3-fpm-alpine`](https://github.com/docker-library/wordpress/blob/fe46b5e252346246362c11299cb4763888056060/beta/php8.3/fpm-alpine/Dockerfile)
+
+-	[`beta-6.8.2-RC1-php8.4-apache`, `beta-6.8.2-php8.4-apache`, `beta-6.8-php8.4-apache`, `beta-6-php8.4-apache`, `beta-php8.4-apache`, `beta-6.8.2-RC1-php8.4`, `beta-6.8.2-php8.4`, `beta-6.8-php8.4`, `beta-6-php8.4`, `beta-php8.4`](https://github.com/docker-library/wordpress/blob/fe46b5e252346246362c11299cb4763888056060/beta/php8.4/apache/Dockerfile)
+
+-	[`beta-6.8.2-RC1-php8.4-fpm`, `beta-6.8.2-php8.4-fpm`, `beta-6.8-php8.4-fpm`, `beta-6-php8.4-fpm`, `beta-php8.4-fpm`](https://github.com/docker-library/wordpress/blob/fe46b5e252346246362c11299cb4763888056060/beta/php8.4/fpm/Dockerfile)
+
+-	[`beta-6.8.2-RC1-php8.4-fpm-alpine`, `beta-6.8.2-php8.4-fpm-alpine`, `beta-6.8-php8.4-fpm-alpine`, `beta-6-php8.4-fpm-alpine`, `beta-php8.4-fpm-alpine`](https://github.com/docker-library/wordpress/blob/fe46b5e252346246362c11299cb4763888056060/beta/php8.4/fpm-alpine/Dockerfile)
+
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
