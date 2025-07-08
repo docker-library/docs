@@ -120,7 +120,13 @@ curl http://localhost:8181/health
 ## Start InfluxDB 3 Enterprise
 
 Use the InfluxDB 3 Enterprise Docker image to run a standalone or clustered instance. This section describes how to mount a file system object store using Docker Compose or Docker CLI.
+To skip the email prompt when starting the server, you can provide your email
+address using one of the following methods:
 
+- Use the [`--license-email`](https://docs.influxdata.com/influxdb3/enterprise/reference/config-options/#license-email) option with the `influxdb3 serve` command
+- Set the `INFLUXDB3_ENTERPRISE_LICENSE_EMAIL` environment variable
+
+For licensing options, see how to [Manage licenses](https://docs.influxdata.com/influxdb3/enterprise/admin/license/).
 ### Docker Compose
 
 To use Docker Compose, open your `compose.yml` file and define a service for InfluxDB 3 Enterprise.
