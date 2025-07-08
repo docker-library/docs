@@ -266,7 +266,7 @@ Use the official [InfluxDB v1 Docker image](https://hub.docker.com/_/influxdb) t
 ```bash
 docker run -d -p 8086:8086 \
   -v $PWD:/var/lib/influxdb \
-  influxdb:1.8
+  influxdb:1.11
 ```
 
 This command maps port `8086` and mounts your current directory to persist data.
