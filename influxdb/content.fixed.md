@@ -78,13 +78,6 @@ Start the container by using the following command:
 docker compose pull && docker compose run influxdb3-core
 ```
 
-Stop the container by using following command:
-
-```bash
-docker container ls --filter "name=influxdb3"
-docker kill <CONTAINER_ID>
-```
-
 ### File system object store with docker
 
 To use the Docker CLI to start InfluxDB 3 Core with persistent file system storage and expose the default HTTP port (`8181`), run:
