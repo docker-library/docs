@@ -72,13 +72,13 @@ To use Docker Compose with persistent storage, create a `compose.yml` file with 
 
 %%COMPOSE%%
 
-Start the container by using the following command:
+Use the following command to start the container:
 
 ```bash
 docker compose pull && docker compose run influxdb3-core
 ```
 
-Stop the container by using following command:
+Use the following command to stop the container:
 
 ```bash
 docker container ls --filter "name=influxdb3"
@@ -99,7 +99,7 @@ docker run -d --name influxdb3-core \
     --data-dir /var/lib/influxdb3
 ```
 
-This command:
+The `docker run` command performs the following:
 
 -	Maps container port `8181` (HTTP API) to your host
 -	Mounts the local `influxdb3-data` directory to persist data
@@ -184,7 +184,7 @@ docker run -it \
 
 ### Configure Docker environment variable
 
-To define environment variables in a `.env` file and reference them when starting your InfluxDB 3 Enterprise container.
+Define environment variables in a `.env` file and reference them when starting your InfluxDB 3 Enterprise container.
 
 Create a `.env` file:
 
@@ -266,7 +266,7 @@ To access the InfluxDB UI, visit [http://localhost:8086](http://localhost:8086) 
 
 ## Start an existing InfluxDB v2 container
 
-If you previously created the container and it has been stopped, restart it with:
+If you previously created the container and then stopped it, you can restart it with:
 
 ```bash
 docker start influxdb2
@@ -282,7 +282,7 @@ To stop a running container:
 docker stop influxdb2
 ```
 
-This gracefully shuts down the container.
+The `docker stop` command gracefully shuts down the container.
 
 For detailed instructions on using Docker Compose with InfluxDB v2, see the [Docker Compose installation guide](https://docs.influxdata.com/influxdb/v2/install/use-docker-compose/).
 
@@ -302,7 +302,7 @@ docker run -d -p 8086:8086 \
   influxdb
 ```
 
-This starts InfluxDB and mounts your local `./data` directory to persist data across container lifecycles. After the container starts, InfluxDB is available at `http://localhost:8086`.
+This starts InfluxDB and mounts your local `./data` directory to persist data across container lifecycles. After the container starts, you can access InfluxDB at `http://localhost:8086`.
 
 Configure the container using environment variables:
 
