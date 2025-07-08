@@ -149,7 +149,7 @@ services:
 Start your container:
 
 ```bash
-docker compose pull && docker compose run influxdb3-enterprise
+docker compose pull && docker compose up influxdb3-enterprise
 ```
 
 -	InfluxDB 3 starts in a container with host port 8181 mapped to container port 8181, the server default for HTTP connections.
