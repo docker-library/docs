@@ -166,6 +166,7 @@ docker run -it \
  --cluster-id my_cluster \
  --object-store file \
  --data-dir /path/in/container
+ --license-email EMAIL_ADDRESS
 ```
 
 
