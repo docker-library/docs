@@ -188,7 +188,7 @@ Use the token from the output to create a database.
 docker exec -it influxdb3-enterprise influxdb3 create database enterprise_db --token ADMIN_TOKEN
 ```
 
-# InfluxDB Explorer
+# InfluxDB 3 Explorer
 
 InfluxDB 3 Explorer provides a graphical interface for visualizing and managing your time series data stored in an InfluxDB 3 instance. Use Explorer to write data, create dashboards, explore metrics, and manage your databases.
 
