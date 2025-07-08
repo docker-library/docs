@@ -3,7 +3,7 @@
 -	**InfluxDB 3** (Core and Enterprise)
 -	**InfluxDB v2**
 -	**InfluxDB v1**
--       **InfluxDB Enterprise v1**
+-	**InfluxDB Enterprise v1**
 
 Scroll to the appropriate section below for Docker setup instructions, configuration flags, and usage examples.
 
@@ -26,8 +26,7 @@ InfluxDB 3, the latest InfluxDB engine, uses Apache Arrow in-memory processing, 
 InfluxDB 3 offers two editions--both provide SQL and InfluxQL query capabilities, an integrated processing engine for real-time data transformation, and seamless integration with InfluxDB 3 Explorer for data visualization and management:
 
 -	**InfluxDB 3 Core**: A free, open source version of the new engine for local development and prototyping.
--	**InfluxDB 3 Enterprise**: A production-grade, scalable time series database that includes support for clustering, security, and enterprise features.
-**License key for Enterprise**: To run InfluxDB 3 Enterprise, you need a license key. Start with a free 30-day trial license by selecting the trial option when you first start the server. For more license options, see the [InfluxDB 3 Enterprise documentation](https://docs.influxdata.com/influxdb3/enterprise/admin/license/).
+-	**InfluxDB 3 Enterprise**: A production-grade, scalable time series database that includes support for clustering, security, and enterprise features.**License key for Enterprise**: To run InfluxDB 3 Enterprise, you need a license key. Start with a free 30-day trial license by selecting the trial option when you first start the server. For more license options, see the [InfluxDB 3 Enterprise documentation](https://docs.influxdata.com/influxdb3/enterprise/admin/license/).
 
 **InfluxDB 3 Explorer UI**: After starting your InfluxDB 3 container, run the [InfluxDB 3 Explorer](https://docs.influxdata.com/influxdb3/explorer/) standalone web interface to write and explore data and manage databases.
 
@@ -119,14 +118,13 @@ curl http://localhost:8181/health
 
 ## Start InfluxDB 3 Enterprise
 
-Use the InfluxDB 3 Enterprise Docker image to run a standalone or clustered instance. This section describes how to mount a file system object store using Docker Compose or Docker CLI.
-To skip the email prompt when starting the server, you can provide your email
-address using one of the following methods:
+Use the InfluxDB 3 Enterprise Docker image to run a standalone or clustered instance. This section describes how to mount a file system object store using Docker Compose or Docker CLI. To skip the email prompt when starting the server, you can provide your email address using one of the following methods:
 
-- Use the [`--license-email`](https://docs.influxdata.com/influxdb3/enterprise/reference/config-options/#license-email) option with the `influxdb3 serve` command
-- Set the `INFLUXDB3_ENTERPRISE_LICENSE_EMAIL` environment variable
+-	Use the [`--license-email`](https://docs.influxdata.com/influxdb3/enterprise/reference/config-options/#license-email) option with the `influxdb3 serve` command
+-	Set the `INFLUXDB3_ENTERPRISE_LICENSE_EMAIL` environment variable
 
 For licensing options, see how to [Manage licenses](https://docs.influxdata.com/influxdb3/enterprise/admin/license/).
+
 ### Docker Compose
 
 To use Docker Compose, open your `compose.yml` file and define a service for InfluxDB 3 Enterprise.
@@ -174,7 +172,6 @@ docker run -it \
  --data-dir /path/in/container
  --license-email EMAIL_ADDRESS
 ```
-
 
 Generate an admin token:
 
