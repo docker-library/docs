@@ -29,6 +29,8 @@ InfluxDB 3 offers two editions--both provide SQL and InfluxQL query capabilities
 -	**InfluxDB 3 Enterprise**: A production-grade, scalable time series database that includes support for clustering, security, and enterprise features.
 **License key for Enterprise**: To run InfluxDB 3 Enterprise, you need a license key. Start with a free 30-day trial license by selecting the trial option when you first start the server. For more license options, see the [InfluxDB 3 Enterprise documentation](https://docs.influxdata.com/influxdb3/enterprise/admin/license/).
 
+**InfluxDB 3 Explorer UI**: After starting your InfluxDB 3 container, run the [InfluxDB 3 Explorer](https://docs.influxdata.com/influxdb3/explorer/) standalone web interface to write and explore data and manage databases.
+
 ## Docker Images
 
 Docker images are pre-configured templates that allow you to quickly deploy InfluxDB 3 Core or Enterprise in a containerized environment. These images include all necessary dependencies and configurations to run InfluxDB efficiently.
