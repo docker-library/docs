@@ -238,13 +238,13 @@ Use the official `influxdb:meta` and `influxdb:data` Docker images to deploy and
 
 ### Start InfluxDB v1 Enterprise Cluster
 
-1.	Create a custom Docker network for node communication:
+Create a custom Docker network for node communication:
 
 ```bash
 docker network create influxdb
 ```
 
-1.	Start three meta nodes (each with a unique hostname and license key):
+Start three meta nodes (each with a unique hostname and license key):
 
 ```bash
 # Meta node 0
@@ -272,14 +272,14 @@ docker run -d
   influxdb:meta
 ```
 
-1.	Join meta nodes into the cluster:
+Join meta nodes into the cluster:
 
 ```bash
 docker exec influxdb-meta-0 influxd-ctl add-meta influxdb-meta-1:8091
 docker exec influxdb-meta-0 influxd-ctl add-meta influxdb-meta-2:8091
 ```
 
-1.	Start data nodes:
+Start data nodes:
 
 ```bash
 # Data node 0
@@ -299,14 +299,14 @@ docker run -d
   influxdb:data
 ```
 
-1.	Add data nodes to the cluster:
+Add data nodes to the cluster:
 
 ```bash
 docker exec influxdb-meta-0 influxd-ctl add-data influxdb-data-0:8088
 docker exec influxdb-meta-0 influxd-ctl add-data influxdb-data-1:8088
 ```
 
-1.	Verify cluster status:
+Verify cluster status:
 
 ```bash
 docker exec influxdb-meta-0 influxd-ctl show
