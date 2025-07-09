@@ -50,9 +50,9 @@ To pull the latest Docker images, use the following commands:
 
 - **Explorer**: Pull the latest InfluxDB 3 Explorer image 
 
-```bash
-docker pull influxdata/influxdb3-ui:1.0.0
-```
+  ```bash
+  docker pull influxdata/influxdb3-ui:1.0.0
+  ```
 
 **Note**: Always pull the latest images to ensure you have the most up-to-date features, security patches, and performance improvements.
 
@@ -117,8 +117,8 @@ curl http://localhost:8181/health
 
 Use the InfluxDB 3 Enterprise Docker image to run a standalone or clustered instance. This section describes how to mount a file system object store using Docker Compose or Docker CLI. To skip the email prompt when starting the server, you can provide your email address using one of the following methods:
 
--	Use the [`--license-email`](https://docs.influxdata.com/influxdb3/enterprise/reference/config-options/#license-email) option with the `influxdb3 serve` command
--	Set the `INFLUXDB3_ENTERPRISE_LICENSE_EMAIL` environment variable
+- Use the [`--license-email`](https://docs.influxdata.com/influxdb3/enterprise/reference/config-options/#license-email) option with the `influxdb3 serve` command  
+- Set the `INFLUXDB3_ENTERPRISE_LICENSE_EMAIL` environment variable
 
 For licensing options, see how to [Manage licenses](https://docs.influxdata.com/influxdb3/enterprise/admin/license/).
 
@@ -161,13 +161,13 @@ To run the Docker image and persist data to the local file system, mount a volum
 
 ```bash
 docker run -it \
- --volume /path/on/host:/path/in/container \
- influxdb:3-enterprise influxdb3 serve \
- --node-id my_host \
- --cluster-id my_cluster \
- --object-store file \
- --data-dir /path/in/container
- --license-email EMAIL_ADDRESS
+  --volume /path/on/host:/path/in/container \
+  influxdb:3-enterprise influxdb3 serve \
+  --node-id my_host \
+  --cluster-id my_cluster \
+  --object-store file \
+  --data-dir /path/in/container \
+  --license-email EMAIL_ADDRESS
 ```
 
 Generate an admin token:
