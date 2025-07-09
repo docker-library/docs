@@ -48,11 +48,11 @@ To pull the latest Docker images, use the following commands:
 	docker pull influxdb:3-enterprise
 	```
 
-- **Explorer**: Pull the latest InfluxDB 3 Explorer image 
+-	**Explorer**: Pull the latest InfluxDB 3 Explorer image
 
-  ```bash
+```bash
   docker pull influxdata/influxdb3-ui:1.0.0
-  ```
+```
 
 **Note**: Always pull the latest images to ensure you have the most up-to-date features, security patches, and performance improvements.
 
@@ -79,18 +79,18 @@ docker compose pull && docker compose run influxdb3-core
 To use the Docker CLI to start InfluxDB 3 Core with persistent file system storage and expose the default HTTP port (`8181`), run:
 
 ```bash
-docker run -d --name influxdb3-core \
-  -p 8181:8181 \
-  -v $PWD/influxdb3-data:/var/lib/influxdb3 \
-  influxdb:3-core influxdb3 serve \
-    --node-id my-influxdb-node \
-    --object-store file \
+docker run -d --name influxdb3-core
+  -p 8181:8181
+  -v $PWD/influxdb3-data:/var/lib/influxdb3
+  influxdb:3-core influxdb3 serve
+    --node-id my-influxdb-node
+    --object-store file
     --data-dir /var/lib/influxdb3
 ```
 
 This command:
 
--	Maps container port `8181` (HTTP API) to your host
+-	Maps container port `8181` (HTTP API) to your hos
 -	Mounts the local `influxdb3-data` directory to persist data
 -	Configures InfluxDB 3 Core to use a file system object store
 
@@ -117,8 +117,8 @@ curl http://localhost:8181/health
 
 Use the InfluxDB 3 Enterprise Docker image to run a standalone or clustered instance. This section describes how to mount a file system object store using Docker Compose or Docker CLI. To skip the email prompt when starting the server, you can provide your email address using one of the following methods:
 
-- Use the [`--license-email`](https://docs.influxdata.com/influxdb3/enterprise/reference/config-options/#license-email) option with the `influxdb3 serve` command  
-- Set the `INFLUXDB3_ENTERPRISE_LICENSE_EMAIL` environment variable
+-	Use the [`--license-email`](https://docs.influxdata.com/influxdb3/enterprise/reference/config-options/#license-email) option with the `influxdb3 serve` command
+-	Set the `INFLUXDB3_ENTERPRISE_LICENSE_EMAIL` environment variable
 
 For licensing options, see how to [Manage licenses](https://docs.influxdata.com/influxdb3/enterprise/admin/license/).
 
@@ -132,7 +132,7 @@ services:
     container_name: influxdb3-enterprise
     image: influxdb:3-enterprise
     ports:
-      - 8181:8181 
+      - 8181:8181
     command:
       - influxdb3
       - serve
@@ -160,13 +160,13 @@ docker compose pull && docker compose up influxdb3-enterprise
 To run the Docker image and persist data to the local file system, mount a volume for the object store.
 
 ```bash
-docker run -it \
-  --volume /path/on/host:/path/in/container \
-  influxdb:3-enterprise influxdb3 serve \
-  --node-id my_host \
-  --cluster-id my_cluster \
-  --object-store file \
-  --data-dir /path/in/container \
+docker run -i
+  --volume /path/on/host:/path/in/container
+  influxdb:3-enterprise influxdb3 serve
+  --node-id my_hos
+  --cluster-id my_cluster
+  --object-store file
+  --data-dir /path/in/container
   --license-email EMAIL_ADDRESS
 ```
 
@@ -201,14 +201,14 @@ For detailed instructions on connecting Explorer to your InfluxDB instance, see 
 Use the official [InfluxDB v2 Docker image](https://hub.docker.com/_/influxdb) to start an instance for development or testing.
 
 ```bash
-docker run -d -p 8086:8086 \
-  -v $PWD/data:/var/lib/influxdb2 \
-  -v $PWD/config:/etc/influxdb2 \
-  -e DOCKER_INFLUXDB_INIT_MODE=setup \
-  -e DOCKER_INFLUXDB_INIT_USERNAME=my-user \
-  -e DOCKER_INFLUXDB_INIT_PASSWORD=my-password \
-  -e DOCKER_INFLUXDB_INIT_ORG=my-org \
-  -e DOCKER_INFLUXDB_INIT_BUCKET=my-bucket \
+docker run -d -p 8086:8086
+  -v $PWD/data:/var/lib/influxdb2
+  -v $PWD/config:/etc/influxdb2
+  -e DOCKER_INFLUXDB_INIT_MODE=setup
+  -e DOCKER_INFLUXDB_INIT_USERNAME=my-user
+  -e DOCKER_INFLUXDB_INIT_PASSWORD=my-password
+  -e DOCKER_INFLUXDB_INIT_ORG=my-org
+  -e DOCKER_INFLUXDB_INIT_BUCKET=my-bucke
   influxdb:2
 ```
 
@@ -223,8 +223,8 @@ For detailed instructions on using Docker Compose with InfluxDB v2, see the [Doc
 Use the official [InfluxDB v1 Docker image](https://hub.docker.com/_/influxdb) to start a basic instance for development or testing:
 
 ```bash
-docker run -d -p 8086:8086 \
-  -v $PWD:/var/lib/influxdb \
+docker run -d -p 8086:8086
+  -v $PWD:/var/lib/influxdb
   influxdb:1.11
 ```
 
@@ -238,75 +238,75 @@ Use the official `influxdb:meta` and `influxdb:data` Docker images to deploy and
 
 ### Start InfluxDB v1 Enterprise Cluster
 
-1. Create a custom Docker network for node communication:
+1.	Create a custom Docker network for node communication:
 
 ```bash
 docker network create influxdb
 ```
 
-2. Start three meta nodes (each with a unique hostname and license key):
+1.	Start three meta nodes (each with a unique hostname and license key):
 
 ```bash
 # Meta node 0
-docker run -d \
-  --name=influxdb-meta-0 \
-  --network=influxdb \
-  -h influxdb-meta-0 \
-  -e INFLUXDB_ENTERPRISE_LICENSE_KEY=your-license-key \
+docker run -d
+  --name=influxdb-meta-0
+  --network=influxdb
+  -h influxdb-meta-0
+  -e INFLUXDB_ENTERPRISE_LICENSE_KEY=your-license-key
   influxdb:meta
 
 # Meta node 1
-docker run -d \
-  --name=influxdb-meta-1 \
-  --network=influxdb \
-  -h influxdb-meta-1 \
-  -e INFLUXDB_ENTERPRISE_LICENSE_KEY=your-license-key \
+docker run -d
+  --name=influxdb-meta-1
+  --network=influxdb
+  -h influxdb-meta-1
+  -e INFLUXDB_ENTERPRISE_LICENSE_KEY=your-license-key
   influxdb:meta
 
 # Meta node 2
-docker run -d \
-  --name=influxdb-meta-2 \
-  --network=influxdb \
-  -h influxdb-meta-2 \
-  -e INFLUXDB_ENTERPRISE_LICENSE_KEY=your-license-key \
+docker run -d
+  --name=influxdb-meta-2
+  --network=influxdb
+  -h influxdb-meta-2
+  -e INFLUXDB_ENTERPRISE_LICENSE_KEY=your-license-key
   influxdb:meta
 ```
 
-3. Join meta nodes into the cluster:
+1.	Join meta nodes into the cluster:
 
 ```bash
 docker exec influxdb-meta-0 influxd-ctl add-meta influxdb-meta-1:8091
 docker exec influxdb-meta-0 influxd-ctl add-meta influxdb-meta-2:8091
 ```
 
-4. Start data nodes:
+1.	Start data nodes:
 
 ```bash
 # Data node 0
-docker run -d \
-  --name=influxdb-data-0 \
-  --network=influxdb \
-  -h influxdb-data-0 \
-  -e INFLUXDB_ENTERPRISE_LICENSE_KEY=your-license-key \
+docker run -d
+  --name=influxdb-data-0
+  --network=influxdb
+  -h influxdb-data-0
+  -e INFLUXDB_ENTERPRISE_LICENSE_KEY=your-license-key
   influxdb:data
 
 # Data node 1
-docker run -d \
-  --name=influxdb-data-1 \
-  --network=influxdb \
-  -h influxdb-data-1 \
-  -e INFLUXDB_ENTERPRISE_LICENSE_KEY=your-license-key \
+docker run -d
+  --name=influxdb-data-1
+  --network=influxdb
+  -h influxdb-data-1
+  -e INFLUXDB_ENTERPRISE_LICENSE_KEY=your-license-key
   influxdb:data
 ```
 
-5. Add data nodes to the cluster:
+1.	Add data nodes to the cluster:
 
 ```bash
 docker exec influxdb-meta-0 influxd-ctl add-data influxdb-data-0:8088
 docker exec influxdb-meta-0 influxd-ctl add-data influxdb-data-1:8088
 ```
 
-6. Verify cluster status:
+1.	Verify cluster status:
 
 ```bash
 docker exec influxdb-meta-0 influxd-ctl show
