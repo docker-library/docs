@@ -26,11 +26,11 @@ WARNING:
 
 -	[`7.17.28`](https://github.com/elastic/dockerfiles/blob/2ef7e0a0be5abd21cb38a39c3cce65d5278ebfee/elasticsearch/Dockerfile)
 
--	[`8.17.6`](https://github.com/elastic/dockerfiles/blob/d7216d19313f88d63f43b52df31da2b4ae6ace3c/elasticsearch/Dockerfile)
+-	[`8.17.8`](https://github.com/elastic/dockerfiles/blob/653b4dc804854bfbfab911c4f092c2855dd31171/elasticsearch/Dockerfile)
 
--	[`8.18.2`](https://github.com/elastic/dockerfiles/blob/1224fffeb3ad5be8a373d52d0906a6c70146b27b/elasticsearch/Dockerfile)
+-	[`8.18.3`](https://github.com/elastic/dockerfiles/blob/92aedffa9f9e73e02987878d89a65316fc9c3714/elasticsearch/Dockerfile)
 
--	[`9.0.2`](https://github.com/elastic/dockerfiles/blob/6e12e2f27f2ef93e0e22aa6b8775b77d19fe4271/elasticsearch/Dockerfile)
+-	[`9.0.3`](https://github.com/elastic/dockerfiles/blob/1f8e64284e998ea9f7ca5a9455b3977f451069dc/elasticsearch/Dockerfile)
 
 # Quick reference (cont.)
 
