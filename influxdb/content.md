@@ -1,6 +1,6 @@
 **This README covers all currently supported versions of InfluxDB:**
 
--	**InfluxDB 3** (Core and Enterprise)
+-	**InfluxDB 3** (Core, Enterprise, and Explorer)
 -	**InfluxDB v2**
 -	**InfluxDB v1**
 -	**InfluxDB Enterprise v1**
@@ -26,9 +26,10 @@ InfluxDB 3, the latest InfluxDB engine, uses Apache Arrow in-memory processing, 
 InfluxDB 3 offers two editions--both provide SQL and InfluxQL query capabilities, an integrated processing engine for real-time data transformation, and seamless integration with InfluxDB 3 Explorer for data visualization and management:
 
 -	**InfluxDB 3 Core**: A free, open source version of the new engine for local development and prototyping.
--	**InfluxDB 3 Enterprise**: A production-grade, scalable time series database that includes support for clustering, security, and enterprise features. **License key for Enterprise**: To run InfluxDB 3 Enterprise, you need a license key. Start with a free 30-day trial license by selecting the trial option when you first start the server. For more license options, see the [InfluxDB 3 Enterprise documentation](https://docs.influxdata.com/influxdb3/enterprise/admin/license/).
-
-**InfluxDB 3 Explorer UI**: After starting your InfluxDB 3 container, run the [InfluxDB 3 Explorer](https://docs.influxdata.com/influxdb3/explorer/) standalone web interface to write and explore data and manage databases.
+-	**InfluxDB 3 Enterprise**: A production-grade, scalable time series database that includes support for clustering, security, and enterprise features. 
+    
+    **License key for Enterprise**: To run InfluxDB 3 Enterprise, you need a license key. Start with a free 30-day trial license by selecting the trial option when you first start the server. For more license options, see the [InfluxDB 3 Enterprise documentation](https://docs.influxdata.com/influxdb3/enterprise/admin/license/).
+- **InfluxDB 3 Explorer UI**: After starting your InfluxDB 3 container, run the [InfluxDB 3 Explorer](https://docs.influxdata.com/influxdb3/explorer/) standalone web interface to write and explore data and manage databases.
 
 ### InfluxDB 3 images
 
@@ -42,17 +43,17 @@ To pull the latest Docker images, use the following commands:
 	docker pull influxdb:3-core
 	```
 
--	**Enterprise:** Pull the latest InfluxDB 3 Enterprise image for production-grade deployments
+-	**Enterprise:** Pull the latest InfluxDB 3 Enterprise image for production-grade deployments:
 
 	```bash
 	docker pull influxdb:3-enterprise
 	```
 
--	**Explorer**: Pull the latest InfluxDB 3 Explorer image
+-	**Explorer:** Pull the latest InfluxDB 3 Explorer image to access the graphical interface:
 
-```bash
-  docker pull influxdata/influxdb3-ui:1.0.0
-```
+	```bash
+	docker pull influxdata/influxdb3-ui:1.0.0
+	```
 
 **Note**: Always pull the latest images to ensure you have the most up-to-date features, security patches, and performance improvements.
 
