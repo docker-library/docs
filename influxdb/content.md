@@ -26,7 +26,7 @@ InfluxDB 3, the latest InfluxDB engine, uses Apache Arrow in-memory processing, 
 InfluxDB 3 offers two editions--both provide SQL and InfluxQL query capabilities, an integrated processing engine for real-time data transformation, and seamless integration with InfluxDB 3 Explorer for data visualization and management:
 
 -	**InfluxDB 3 Core**: A free, open source version of the new engine for local development and prototyping.
--	**InfluxDB 3 Enterprise**: A production-grade, scalable time series database that includes support for clustering, security, and enterprise features.**License key for Enterprise**: To run InfluxDB 3 Enterprise, you need a license key. Start with a free 30-day trial license by selecting the trial option when you first start the server. For more license options, see the [InfluxDB 3 Enterprise documentation](https://docs.influxdata.com/influxdb3/enterprise/admin/license/).
+-	**InfluxDB 3 Enterprise**: A production-grade, scalable time series database that includes support for clustering, security, and enterprise features. **License key for Enterprise**: To run InfluxDB 3 Enterprise, you need a license key. Start with a free 30-day trial license by selecting the trial option when you first start the server. For more license options, see the [InfluxDB 3 Enterprise documentation](https://docs.influxdata.com/influxdb3/enterprise/admin/license/).
 
 **InfluxDB 3 Explorer UI**: After starting your InfluxDB 3 container, run the [InfluxDB 3 Explorer](https://docs.influxdata.com/influxdb3/explorer/) standalone web interface to write and explore data and manage databases.
 
@@ -42,7 +42,7 @@ To pull the latest Docker images, use the following commands:
 	docker pull influxdb:3-core
 	```
 
--	**Enterprise:**: Pull the latest InfluxDB 3 Enterprise image for production-grade deployments
+-	**Enterprise:** Pull the latest InfluxDB 3 Enterprise image for production-grade deployments
 
 	```bash
 	docker pull influxdb:3-enterprise
@@ -163,7 +163,7 @@ To run the Docker image and persist data to the local file system, mount a volum
 docker run -i
   --volume /path/on/host:/path/in/container
   influxdb:3-enterprise influxdb3 serve
-  --node-id my_hos
+  --node-id my_host
   --cluster-id my_cluster
   --object-store file
   --data-dir /path/in/container
@@ -176,7 +176,7 @@ Generate an admin token:
 docker exec -it influxdb3-enterprise influxdb3 create token --admin
 ```
 
-Use the token from the output to create a database.
+Use the token from the output to create a database:
 
 ```bash
 docker exec -it influxdb3-enterprise influxdb3 create database enterprise_db --token ADMIN_TOKEN
@@ -208,7 +208,7 @@ docker run -d -p 8086:8086
   -e DOCKER_INFLUXDB_INIT_USERNAME=my-user
   -e DOCKER_INFLUXDB_INIT_PASSWORD=my-password
   -e DOCKER_INFLUXDB_INIT_ORG=my-org
-  -e DOCKER_INFLUXDB_INIT_BUCKET=my-bucke
+  -e DOCKER_INFLUXDB_INIT_BUCKET=my-bucket
   influxdb:2
 ```
 
