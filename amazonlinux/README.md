@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm64v8` builds of [the `amazonlinux` official image](https://hub.docker.com/_/amazonlinux) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,11 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2023`, `latest`, `2023.7.20250623.1`](https://github.com/amazonlinux/container-images/blob/1d30653467bce95f1e74ce047c186cf527122751/Dockerfile)
+-	[`2023`, `latest`, `2023.7.20250623.1`](https://github.com/amazonlinux/container-images/blob/a81fad6c3cf53440ebc2f0cd04695e90e540612d/Dockerfile)
 
--	[`2`, `2.0.20250623.0`](https://github.com/amazonlinux/container-images/blob/1f08d8c203661dd3116b52c70b6a6067b22cc81a/Dockerfile)
-
--	[`1`, `2018.03`, `2018.03.0.20231218.0`](https://github.com/amazonlinux/container-images/blob/cfb41ad1c7624786ea10f60c15ce9c117c4da3b6/Dockerfile)
+-	[`2`, `2.0.20250623.0`](https://github.com/amazonlinux/container-images/blob/3988bfc773dc079afce6bdf9538b351d7ab11463/Dockerfile)
 
 # Quick reference (cont.)
 
