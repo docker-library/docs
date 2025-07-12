@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `mips64le` builds of [the `elasticsearch` official image](https://hub.docker.com/_/elasticsearch) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,13 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.17.28`](https://github.com/elastic/dockerfiles/blob/2ef7e0a0be5abd21cb38a39c3cce65d5278ebfee/elasticsearch/Dockerfile)
-
--	[`8.17.8`](https://github.com/elastic/dockerfiles/blob/653b4dc804854bfbfab911c4f092c2855dd31171/elasticsearch/Dockerfile)
-
--	[`8.18.3`](https://github.com/elastic/dockerfiles/blob/92aedffa9f9e73e02987878d89a65316fc9c3714/elasticsearch/Dockerfile)
-
--	[`9.0.3`](https://github.com/elastic/dockerfiles/blob/1f8e64284e998ea9f7ca5a9455b3977f451069dc/elasticsearch/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `mips64le` ARCHITECTURE
 
 # Quick reference (cont.)
 
