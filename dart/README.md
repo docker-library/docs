@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v5` builds of [the `dart` official image](https://hub.docker.com/_/dart) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,9 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.8.1-sdk`, `3.8-sdk`, `3-sdk`, `stable-sdk`, `sdk`, `3.8.1`, `3.8`, `3`, `stable`, `latest`](https://github.com/dart-lang/dart-docker/blob/f9851523b6353ff4d4f4b0d583213aee8fa2203a/stable/bookworm/Dockerfile)
-
--	[`3.9.0-196.1.beta-sdk`, `beta-sdk`, `3.9.0-196.1.beta`, `beta`](https://github.com/dart-lang/dart-docker/blob/f9851523b6353ff4d4f4b0d583213aee8fa2203a/beta/bookworm/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v5` ARCHITECTURE
 
 # Quick reference (cont.)
 
