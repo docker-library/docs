@@ -30,7 +30,7 @@ WARNING:
 
 -	[`13.4.0`, `13.4`, `13`, `13.4.0-bookworm`, `13.4-bookworm`, `13-bookworm`](https://github.com/docker-library/gcc/blob/118c07a8e6467baababb4634b6cfde14a67c24b0/13/Dockerfile)
 
--	[`12.4.0`, `12.4`, `12`, `12.4.0-bookworm`, `12.4-bookworm`, `12-bookworm`](https://github.com/docker-library/gcc/blob/b5055bcc1551a7e271af315158e1c260c212409c/12/Dockerfile)
+-	[`12.5.0`, `12.5`, `12`, `12.5.0-bookworm`, `12.5-bookworm`, `12-bookworm`](https://github.com/docker-library/gcc/blob/7070981b23d22d3ca790f87bff26f13f3614dd4c/12/Dockerfile)
 
 # Quick reference (cont.)
 
