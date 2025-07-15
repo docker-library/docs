@@ -24,13 +24,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`22.04`, `jammy-20250619`, `jammy`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-amd64-20250619-7fb3f136&id=7fb3f1366b34c5b765ad9b4231010c5500324bc4)
+-	[`22.04`, `jammy-20250714`, `jammy`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-amd64-20250714-168abc94&id=168abc94dd44eff4a2f311f98cdd30463ff9265b)
 
--	[`24.04`, `noble-20250619`, `noble`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-amd64-20250619-21910021&id=21910021a997c25cb714dc6f40ef03a630dd8b3b)
+-	[`24.04`, `noble-20250714`, `noble`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-amd64-20250714-3d50b499&id=3d50b4991bec4ec696ab2bd2fc8dc51f066ef6da)
 
--	[`24.10`, `oracular-20250619`, `oracular`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-oracular-amd64-20250619-cc02a011&id=cc02a01164fbf0fd3b74b09e6c9b0da490411665)
-
--	[`25.04`, `plucky-20250619`, `plucky`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-plucky-amd64-20250619-d0219e60&id=d0219e60c528ce77ce4e16a7a79696ff45239411)
+-	[`25.04`, `plucky-20250714`, `plucky`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-plucky-amd64-20250714-583c18ff&id=583c18ffc4ba6a16e0c8f62dff0ddf62db29134a)
 
 -	[`25.10`, `questing-20250620`, `questing`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-questing-amd64-20250620-fb433863&id=fb433863336aaeb793b4c17e7751bad417783ebe)
 
