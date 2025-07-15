@@ -24,7 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.29.0`, `mainline`, `1`, `1.29`, `latest`, `1.29.0-bookworm`, `mainline-bookworm`, `1-bookworm`, `1.29-bookworm`, `bookworm`](https://github.com/nginx/docker-nginx/blob/7895505c41013f66d3841cd2613b436229c1fe0e/mainline/debian/Dockerfile)
+-	[`1.29.0`, `mainline`, `1`, `1.29`, `latest`, `1.29.0-bookworm`, `mainline-bookworm`, `1-bookworm`, `1.29-bookworm`, `bookworm`](https://github.com/nginx/docker-nginx/blob/b2faad22d5d15d966e46922033681639b2a6d6fa/mainline/debian/Dockerfile)
 
 -	[`1.29.0-perl`, `mainline-perl`, `1-perl`, `1.29-perl`, `perl`, `1.29.0-bookworm-perl`, `mainline-bookworm-perl`, `1-bookworm-perl`, `1.29-bookworm-perl`, `bookworm-perl`](https://github.com/nginx/docker-nginx/blob/7895505c41013f66d3841cd2613b436229c1fe0e/mainline/debian-perl/Dockerfile)
 
@@ -38,7 +38,7 @@ WARNING:
 
 -	[`1.29.0-alpine-otel`, `mainline-alpine-otel`, `1-alpine-otel`, `1.29-alpine-otel`, `alpine-otel`, `1.29.0-alpine3.22-otel`, `mainline-alpine3.22-otel`, `1-alpine3.22-otel`, `1.29-alpine3.22-otel`, `alpine3.22-otel`](https://github.com/nginx/docker-nginx/blob/7895505c41013f66d3841cd2613b436229c1fe0e/mainline/alpine-otel/Dockerfile)
 
--	[`1.28.0`, `stable`, `1.28`, `1.28.0-bookworm`, `stable-bookworm`, `1.28-bookworm`](https://github.com/nginx/docker-nginx/blob/7f1d49f6f222f7e588a9066fd53a0ce43c3466a5/stable/debian/Dockerfile)
+-	[`1.28.0`, `stable`, `1.28`, `1.28.0-bookworm`, `stable-bookworm`, `1.28-bookworm`](https://github.com/nginx/docker-nginx/blob/b2faad22d5d15d966e46922033681639b2a6d6fa/stable/debian/Dockerfile)
 
 -	[`1.28.0-perl`, `stable-perl`, `1.28-perl`, `1.28.0-bookworm-perl`, `stable-bookworm-perl`, `1.28-bookworm-perl`](https://github.com/nginx/docker-nginx/blob/7f1d49f6f222f7e588a9066fd53a0ce43c3466a5/stable/debian-perl/Dockerfile)
 
