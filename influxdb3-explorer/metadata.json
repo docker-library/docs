@@ -1,7 +1,9 @@
 {
     "hub": {
       "categories": [
-        "monitoring-and-observability"
+        "data-science",
+       "databases-and-storage",
+       "internet-of-things"
       ]
     }
   }
