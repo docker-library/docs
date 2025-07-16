@@ -14,12 +14,12 @@ Run InfluxDB 3 Explorer using Docker CLI.
 
 To start Explorer in query mode for read-only access:
 
- ```bash
+```bash
 docker run --detach \
   --name influxdb3-explorer \
   --publish 8888:80 \
   influxdb3-explorer
- ```
+```
 
 ### Admin mode
 
@@ -36,9 +36,9 @@ docker run --detach \
 
 This command:
 
-- Maps container port `80` to host port `8888` (web UI)
-- Maps container port `8888` to host port `8889` (API access)
-- Runs the container in admin mode
+-	Maps container port `80` to host port `8888` (web UI)
+-	Maps container port `8888` to host port `8889` (API access)
+-	Runs the container in admin mode
 
 If `--mode` is not set, the container defaults to query mode.
 
@@ -90,11 +90,9 @@ docker run --detach \
 
 To enable TLS/SSL, mount valid certificate and key files into the container:
 
-Place your TLS/SSL certificate files in your local `./ssl` directory:
-Required files:
+Place your TLS/SSL certificate files in your local `./ssl` directory: Required files:
 
-Certificate: `server.crt` or `fullchain.pem`
-Private key: `server.key`
+Certificate: `server.crt` or `fullchain.pem` Private key: `server.key`
 
 ```bash
 mkdir -m 755 ./ssl
@@ -130,10 +128,10 @@ docker run --detach \
 
 The following environment variables can be used to configure the container:
 
-- `DATABASE_URL` - Path to SQLite database inside container (default: `/db/sqlite.db`)
-- `SESSION_SECRET_KEY` - Secret key for session management (recommended for production)
-- `SSL_CERT_PATH` - Path to SSL certificate file (default: `/etc/nginx/ssl/cert.pem`)
-- `SSL_KEY_PATH` - Path to SSL private key file (default: `/etc/nginx/ssl/key.pem`)
+-	`DATABASE_URL` - Path to SQLite database inside container (default: `/db/sqlite.db`)
+-	`SESSION_SECRET_KEY` - Secret key for session management (recommended for production)
+-	`SSL_CERT_PATH` - Path to SSL certificate file (default: `/etc/nginx/ssl/cert.pem`)
+-	`SSL_KEY_PATH` - Path to SSL private key file (default: `/etc/nginx/ssl/key.pem`)
 
 Example with environment variables:
 
