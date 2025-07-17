@@ -1,6 +1,6 @@
 # What is InfluxDB 3 Explorer?
 
-InfluxDB 3 Explorer is a standalone web application designed for visualizing, querying, and managing your data stored in InfluxDB 3 Core and Enterprise. Explorer provides an intuitive interface for interacting with your time series data.
+InfluxDB 3 Explorer is a standalone web application designed for visualizing, querying, and managing your data stored in InfluxDB 3. Explorer provides an intuitive interface for interacting with your time series data.
 
 %%LOGO%%
 
