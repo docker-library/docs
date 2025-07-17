@@ -10,6 +10,12 @@ InfluxDB 3 Explorer is a standalone web application designed for visualizing, qu
 
 To use InfluxDB 3 Explorer, you need a compatible InfluxDB 3 instance, such as InfluxDB 3 Core or InfluxDB 3 Enterprise. See the official [InfluxDB Docker image](https://hub.docker.com/_/influxdb).
 
+## Pull the image
+
+```bash
+docker pull influxdata/influxdb3-ui:1.0.0
+```
+
 ## Start InfluxDB 3 Explorer
 
 Run InfluxDB 3 Explorer using Docker CLI.
@@ -22,7 +28,7 @@ To start Explorer in query mode for read-only access:
 docker run --detach \
   --name influxdb3-explorer \
   --publish 8888:80 \
-  influxdb3-explorer
+  influxdata/influxdb3-ui:1.0.0
 ```
 
 ### Admin mode
@@ -34,7 +40,7 @@ docker run --detach \
   --name influxdb3-explorer \
   --publish 8888:80 \
   --publish 8889:8888 \
-  influxdb3-explorer \
+  influxdata/influxdb3-ui:1.0.0 \
   --mode=admin
 ```
 
@@ -61,7 +67,7 @@ docker run --detach \
   --name influxdb3-explorer \
   --publish 8888:80 \
   --volume $(pwd)/db:/db:rw \
-  influxdb3-explorer \
+  influxdata/influxdb3-ui:1.0.0 \
   --mode=admin
 ```
 
@@ -86,7 +92,7 @@ docker run --detach \
   --publish 8888:80 \
   --volume $(pwd)/config:/app-root/config:ro \
   --volume $(pwd)/db:/db:rw \
-  influxdb3-explorer \
+  influxdata/influxdb3-ui:1.0.0 \
   --mode=admin
 ```
 
@@ -107,7 +113,7 @@ docker run --detach \
   --name influxdb3-explorer \
   --publish 8888:443 \
   --volume $(pwd)/ssl:/etc/nginx/ssl:ro \
-  influxdb3-explorer \
+  influxdata/influxdb3-ui:1.0.0 \
   --mode=admin
 ```
 
@@ -124,7 +130,7 @@ docker run --detach \
   --volume $(pwd)/ssl:/custom/ssl:ro \
   --env SSL_CERT_PATH=/custom/ssl/server.crt \
   --env SSL_KEY_PATH=/custom/ssl/server.key \
-  influxdb3-explorer \
+  influxdata/influxdb3-ui:1.0.0 \
   --mode=admin
 ```
 
