@@ -6,6 +6,10 @@ InfluxDB 3 Explorer is a standalone web application designed for visualizing, qu
 
 # How to use this image
 
+## Requirements
+
+To use InfluxDB 3 Explorer, you need a compatible InfluxDB 3 instance, such as InfluxDB 3 Core or InfluxDB 3 Enterprise. See the official [InfluxDB Docker image](https://hub.docker.com/_/influxdb).
+
 ## Start InfluxDB 3 Explorer
 
 Run InfluxDB 3 Explorer using Docker CLI.
