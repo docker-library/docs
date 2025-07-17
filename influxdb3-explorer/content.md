@@ -137,17 +137,4 @@ The following environment variables can be used to configure the container:
 -	`SSL_CERT_PATH` - Path to SSL certificate file (default: `/etc/nginx/ssl/cert.pem`)
 -	`SSL_KEY_PATH` - Path to SSL private key file (default: `/etc/nginx/ssl/key.pem`)
 
-Example with environment variables:
-
-```bash
-docker run --detach \
-  --name influxdb3-explorer \
-  --publish 8888:80 \
-  --env SESSION_SECRET_KEY=xxX0Xx000xX0XxxxX0Xx000xX0XxX00x \
-  --env DATABASE_URL=/db/sqlite.db \
-  --volume $(pwd)/db:/db:rw \
-  influxdb3-explorer \
-  --mode=admin
-```
-
 Important for production: Always set `SESSION_SECRET_KEY` in production. When you restart the container, InfluxDB 3 Explorer generates a new key if not explicitly set.
