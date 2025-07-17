@@ -137,4 +137,7 @@ The following environment variables can be used to configure the container:
 -	`SSL_CERT_PATH` - Path to SSL certificate file (default: `/etc/nginx/ssl/cert.pem`)
 -	`SSL_KEY_PATH` - Path to SSL private key file (default: `/etc/nginx/ssl/key.pem`)
 
-Important for production: Always set `SESSION_SECRET_KEY` in production. When you restart the container, InfluxDB 3 Explorer generates a new key if not explicitly set.
+**Important for production:** Always set `SESSION_SECRET_KEY` in production. When you restart the container, InfluxDB 3 Explorer generates a new key if not explicitly set.
+
+For more information about available options and environment variables, see the [InfluxDB 3 Explorer documentation](https://docs.influxdata.com/influxdb3/explorer/install/)
+
