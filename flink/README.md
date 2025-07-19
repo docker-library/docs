@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `i386` builds of [the `flink` official image](https://hub.docker.com/_/flink) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,23 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.0.0-scala_2.12-java21`, `2.0-scala_2.12-java21`, `scala_2.12-java21`, `2.0.0-java21`, `2.0-java21`, `java21`](https://github.com/apache/flink-docker/blob/d32c85bcf93b430d56685b54ab5732a20e472e2e/2.0/scala_2.12-java21-ubuntu/Dockerfile)
-
--	[`2.0.0-scala_2.12-java17`, `2.0-scala_2.12-java17`, `scala_2.12-java17`, `2.0.0-scala_2.12`, `2.0-scala_2.12`, `scala_2.12`, `2.0.0-java17`, `2.0-java17`, `java17`, `2.0.0`, `2.0`, `latest`](https://github.com/apache/flink-docker/blob/d32c85bcf93b430d56685b54ab5732a20e472e2e/2.0/scala_2.12-java17-ubuntu/Dockerfile)
-
--	[`2.0.0-scala_2.12-java11`, `2.0-scala_2.12-java11`, `scala_2.12-java11`, `2.0.0-java11`, `2.0-java11`, `java11`](https://github.com/apache/flink-docker/blob/d32c85bcf93b430d56685b54ab5732a20e472e2e/2.0/scala_2.12-java11-ubuntu/Dockerfile)
-
--	[`1.20.2-scala_2.12-java8`, `1.20-scala_2.12-java8`, `1.20.2-java8`, `1.20-java8`](https://github.com/apache/flink-docker/blob/3679d8deb790720fa63d4682c1fc928c252e7d9f/1.20/scala_2.12-java8-ubuntu/Dockerfile)
-
--	[`1.20.2-scala_2.12-java17`, `1.20-scala_2.12-java17`, `1.20.2-java17`, `1.20-java17`](https://github.com/apache/flink-docker/blob/3679d8deb790720fa63d4682c1fc928c252e7d9f/1.20/scala_2.12-java17-ubuntu/Dockerfile)
-
--	[`1.20.2-scala_2.12-java11`, `1.20-scala_2.12-java11`, `1.20.2-scala_2.12`, `1.20-scala_2.12`, `1.20.2-java11`, `1.20-java11`, `1.20.2`, `1.20`](https://github.com/apache/flink-docker/blob/3679d8deb790720fa63d4682c1fc928c252e7d9f/1.20/scala_2.12-java11-ubuntu/Dockerfile)
-
--	[`1.19.3-scala_2.12-java8`, `1.19-scala_2.12-java8`, `1.19.3-java8`, `1.19-java8`](https://github.com/apache/flink-docker/blob/3679d8deb790720fa63d4682c1fc928c252e7d9f/1.19/scala_2.12-java8-ubuntu/Dockerfile)
-
--	[`1.19.3-scala_2.12-java17`, `1.19-scala_2.12-java17`, `1.19.3-java17`, `1.19-java17`](https://github.com/apache/flink-docker/blob/3679d8deb790720fa63d4682c1fc928c252e7d9f/1.19/scala_2.12-java17-ubuntu/Dockerfile)
-
--	[`1.19.3-scala_2.12-java11`, `1.19-scala_2.12-java11`, `1.19.3-scala_2.12`, `1.19-scala_2.12`, `1.19.3-java11`, `1.19-java11`, `1.19.3`, `1.19`](https://github.com/apache/flink-docker/blob/3679d8deb790720fa63d4682c1fc928c252e7d9f/1.19/scala_2.12-java11-ubuntu/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `i386` ARCHITECTURE
 
 # Quick reference (cont.)
 
