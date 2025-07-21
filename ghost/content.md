@@ -2,7 +2,7 @@
 
 Ghost is an independent platform for publishing online by web and email newsletter. It has user signups, gated access and subscription payments built-in (with Stripe) to allow you to build a direct relationship with your audience. It's fast, user-friendly, and runs on Node.js & MySQL8.
 
-> [Ghost.org)](https://ghost.org)
+> [Ghost.org](https://ghost.org)
 
 %%LOGO%%
 
