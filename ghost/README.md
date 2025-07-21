@@ -28,9 +28,9 @@ WARNING:
 
 -	[`6.0.0-alpha.1-alpine`](https://github.com/docker-library/ghost/blob/83ce6d8beb81974a32d4b1461406ab4a3e8be365/6-rc/alpine/Dockerfile)
 
--	[`5.130.1`, `5.130`, `5`, `latest`](https://github.com/docker-library/ghost/blob/5dd89fdd04b1c93674e441732e877dbd3a90e558/5/debian/Dockerfile)
+-	[`5.130.2`, `5.130`, `5`, `latest`](https://github.com/docker-library/ghost/blob/9646b20a5604936a2ee5b703cfe4f2f8a30135a7/5/debian/Dockerfile)
 
--	[`5.130.1-alpine`, `5.130-alpine`, `5-alpine`, `alpine`](https://github.com/docker-library/ghost/blob/5dd89fdd04b1c93674e441732e877dbd3a90e558/5/alpine/Dockerfile)
+-	[`5.130.2-alpine`, `5.130-alpine`, `5-alpine`, `alpine`](https://github.com/docker-library/ghost/blob/9646b20a5604936a2ee5b703cfe4f2f8a30135a7/5/alpine/Dockerfile)
 
 # Quick reference (cont.)
 

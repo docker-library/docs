@@ -32,15 +32,15 @@ This image is deprecated due to maintainer inactivity (last updated Dec 2023; [d
 
 ## Simple Tags
 
--	[`8.4.0-bookworm`, `8.4-bookworm`, `8-bookworm`, `bookworm`](https://github.com/IdentityPython/satosa-docker/blob/69038a84d541717d66420f3ad8ec7c9da22c91b4/8.4/bookworm/Dockerfile)
+-	[`8.5.1-bookworm`, `8.5-bookworm`, `8-bookworm`, `bookworm`](https://github.com/IdentityPython/satosa-docker/blob/dd0928a83ef54c8bed05691325f026d155e58dd3/8.5/bookworm/Dockerfile)
 
--	[`8.4.0-alpine3.19`, `8.4-alpine3.19`, `8-alpine3.19`, `alpine3.19`, `8.4.0-alpine`, `8.4-alpine`, `8-alpine`, `alpine`](https://github.com/IdentityPython/satosa-docker/blob/74a847396f1190ec26679fc3bf09ffcc42d2e999/8.4/alpine3.19/Dockerfile)
+-	[`8.5.1-alpine3.22`, `8.5-alpine3.22`, `8-alpine3.22`, `alpine3.22`, `8.5.1-alpine`, `8.5-alpine`, `8-alpine`, `alpine`](https://github.com/IdentityPython/satosa-docker/blob/dd0928a83ef54c8bed05691325f026d155e58dd3/8.5/alpine3.22/Dockerfile)
 
 ## Shared Tags
 
--	`8.4.0`, `8.4`, `8`, `latest`:
+-	`8.5.1`, `8.5`, `8`, `latest`:
 
-	-	[`8.4.0-bookworm`](https://github.com/IdentityPython/satosa-docker/blob/69038a84d541717d66420f3ad8ec7c9da22c91b4/8.4/bookworm/Dockerfile)
+	-	[`8.5.1-bookworm`](https://github.com/IdentityPython/satosa-docker/blob/dd0928a83ef54c8bed05691325f026d155e58dd3/8.5/bookworm/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -48,7 +48,7 @@ This image is deprecated due to maintainer inactivity (last updated Dec 2023; [d
 	[https://github.com/IdentityPython/satosa-docker/issues](https://github.com/IdentityPython/satosa-docker/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/satosa/), [`arm32v7`](https://hub.docker.com/r/arm32v7/satosa/), [`arm64v8`](https://hub.docker.com/r/arm64v8/satosa/), [`i386`](https://hub.docker.com/r/i386/satosa/), [`ppc64le`](https://hub.docker.com/r/ppc64le/satosa/)
+	[`amd64`](https://hub.docker.com/r/amd64/satosa/), [`arm64v8`](https://hub.docker.com/r/arm64v8/satosa/), [`ppc64le`](https://hub.docker.com/r/ppc64le/satosa/), [`riscv64`](https://hub.docker.com/r/riscv64/satosa/), [`s390x`](https://hub.docker.com/r/s390x/satosa/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/satosa/` directory](https://github.com/docker-library/repo-info/blob/master/repos/satosa) ([history](https://github.com/docker-library/repo-info/commits/master/repos/satosa))  
