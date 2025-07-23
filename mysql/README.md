@@ -28,9 +28,9 @@ WARNING:
 
 -	[`8.4.6`, `8.4`, `8`, `lts`, `8.4.6-oraclelinux9`, `8.4-oraclelinux9`, `8-oraclelinux9`, `lts-oraclelinux9`, `8.4.6-oracle`, `8.4-oracle`, `8-oracle`, `lts-oracle`](https://github.com/docker-library/mysql/blob/516237cdb5e0991abc0c6dcbbc7a66cc6444d3a3/8.4/Dockerfile.oracle)
 
--	[`8.0.42`, `8.0`, `8.0.42-oraclelinux9`, `8.0-oraclelinux9`, `8.0.42-oracle`, `8.0-oracle`](https://github.com/docker-library/mysql/blob/94583e54d3bc02af523af720fdd58f8215287da9/8.0/Dockerfile.oracle)
+-	[`8.0.43`, `8.0`, `8.0.43-oraclelinux9`, `8.0-oraclelinux9`, `8.0.43-oracle`, `8.0-oracle`](https://github.com/docker-library/mysql/blob/4ea634473f3ca9b1dcd476236e6d617258e2d63b/8.0/Dockerfile.oracle)
 
--	[`8.0.42-bookworm`, `8.0-bookworm`, `8.0.42-debian`, `8.0-debian`](https://github.com/docker-library/mysql/blob/94583e54d3bc02af523af720fdd58f8215287da9/8.0/Dockerfile.debian)
+-	[`8.0.43-bookworm`, `8.0-bookworm`, `8.0.43-debian`, `8.0-debian`](https://github.com/docker-library/mysql/blob/4ea634473f3ca9b1dcd476236e6d617258e2d63b/8.0/Dockerfile.debian)
 
 # Quick reference (cont.)
 
