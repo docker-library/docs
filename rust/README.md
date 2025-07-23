@@ -36,11 +36,11 @@ WARNING:
 
 -	[`1-slim-trixie`, `1.88-slim-trixie`, `1.88.0-slim-trixie`, `slim-trixie`](https://github.com/rust-lang/docker-rust/blob/521720d715e0c4884c7424a27208568a83484baf/stable/trixie/slim/Dockerfile)
 
--	[`1-alpine3.20`, `1.88-alpine3.20`, `1.88.0-alpine3.20`, `alpine3.20`](https://github.com/rust-lang/docker-rust/blob/9ba2805c3642783b50436e140f5eaa9ecf173054/stable/alpine3.20/Dockerfile)
+-	[`1-alpine3.20`, `1.88-alpine3.20`, `1.88.0-alpine3.20`, `alpine3.20`](https://github.com/rust-lang/docker-rust/blob/425486915517526d57d0a5d1527bc3c4c944830c/stable/alpine3.20/Dockerfile)
 
--	[`1-alpine3.21`, `1.88-alpine3.21`, `1.88.0-alpine3.21`, `alpine3.21`](https://github.com/rust-lang/docker-rust/blob/9ba2805c3642783b50436e140f5eaa9ecf173054/stable/alpine3.21/Dockerfile)
+-	[`1-alpine3.21`, `1.88-alpine3.21`, `1.88.0-alpine3.21`, `alpine3.21`](https://github.com/rust-lang/docker-rust/blob/425486915517526d57d0a5d1527bc3c4c944830c/stable/alpine3.21/Dockerfile)
 
--	[`1-alpine3.22`, `1.88-alpine3.22`, `1.88.0-alpine3.22`, `alpine3.22`, `1-alpine`, `1.88-alpine`, `1.88.0-alpine`, `alpine`](https://github.com/rust-lang/docker-rust/blob/9ba2805c3642783b50436e140f5eaa9ecf173054/stable/alpine3.22/Dockerfile)
+-	[`1-alpine3.22`, `1.88-alpine3.22`, `1.88.0-alpine3.22`, `alpine3.22`, `1-alpine`, `1.88-alpine`, `1.88.0-alpine`, `alpine`](https://github.com/rust-lang/docker-rust/blob/425486915517526d57d0a5d1527bc3c4c944830c/stable/alpine3.22/Dockerfile)
 
 # Quick reference (cont.)
 
