@@ -20,26 +20,3 @@ services:
       - type: bind
         source: ~/.influxdb3/core/plugins
         target: /var/lib/influxdb3/plugins
-  influxdb3-enterprise:
-    container_name: influxdb3-enterprise
-    image: influxdb:3-enterprise
-    ports:
-      - 8181:8181
-    command:
-      - influxdb3
-      - serve
-      - --node-id=node0
-      - --cluster-id=cluster0
-      - --object-store=file
-      - --data-dir=/var/lib/influxdb3/data
-      - --plugin-dir=/var/lib/influxdb3/plugins
-    environment:
-      - INFLUXDB3_ENTERPRISE_LICENSE_EMAIL=EMAIL_ADDRESS
-    volumes:
-      - type: bind
-        source: ~/.influxdb3/enterprise/data
-        target: /var/lib/influxdb3/data
-      - type: bind
-        source: ~/.influxdb3/enterprise/plugins
-        target: /var/lib/influxdb3/plugins
-
