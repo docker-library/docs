@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `riscv64` builds of [the `satosa` official image](https://hub.docker.com/_/satosa) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -28,15 +30,9 @@ WARNING:
 
 ## Simple Tags
 
--	[`8.5.1-bookworm`, `8.5-bookworm`, `8-bookworm`, `bookworm`](https://github.com/IdentityPython/satosa-docker/blob/dd0928a83ef54c8bed05691325f026d155e58dd3/8.5/bookworm/Dockerfile)
-
 -	[`8.5.1-alpine3.22`, `8.5-alpine3.22`, `8-alpine3.22`, `alpine3.22`, `8.5.1-alpine`, `8.5-alpine`, `8-alpine`, `alpine`](https://github.com/IdentityPython/satosa-docker/blob/dd0928a83ef54c8bed05691325f026d155e58dd3/8.5/alpine3.22/Dockerfile)
 
 ## Shared Tags
-
--	`8.5.1`, `8.5`, `8`, `latest`:
-
-	-	[`8.5.1-bookworm`](https://github.com/IdentityPython/satosa-docker/blob/dd0928a83ef54c8bed05691325f026d155e58dd3/8.5/bookworm/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -68,13 +64,13 @@ SATOSA is a configurable proxy for translating between different authentication 
 The basic pattern for starting a `satosa` instance is:
 
 ```sh
-docker run --name some-satosa -d satosa
+docker run --name some-satosa -d riscv64/satosa
 ```
 
 To access the instance from the host without the container's IP, use port mappings:
 
 ```sh
-docker run --name some-satosa -p 80:8080 -d satosa
+docker run --name some-satosa -p 80:8080 -d riscv64/satosa
 ```
 
 The entrypoint script outputs SAML2 metadata to the container log at start time. This metadata refers to the instance's base URL, e.g., `https://example.com`. Browsers must be able to access the instance over HTTPS.
@@ -91,14 +87,14 @@ The `satosa` image's entrypoint script runs [Gunicorn](https://gunicorn.org/) by
 docker run --name some-satosa -p 443:8443 \
     -v /etc/letsencrypt/live/some-satosa/fullchain.pem:/etc/https.crt \
     -v /etc/letsencrypt/live/some-satosa/privkey.pem:/etc/https.key \
-    -d satosa \
+    -d riscv64/satosa \
     -b0.0.0.0:8443 --certfile /etc/https.crt --keyfile /etc/https.key satosa.wsgi:app
 ```
 
 If the first argument looks like a command instead of a flag, the entrypoint script will run that instead of Gunicorn. For example, the following will start an interactive, unprivileged shell inside the container:
 
 ```sh
-docker run -it --name some-satosa satosa bash
+docker run -it --name some-satosa riscv64/satosa bash
 ```
 
 ## Environment variables
@@ -129,15 +125,13 @@ SATOSA's default SAML front-end microservice acts like an identity provider (cre
 
 # Image Variants
 
-The `satosa` images come in many flavors, each designed for a specific use case.
+The `riscv64/satosa` images come in many flavors, each designed for a specific use case.
 
-## `satosa:<version>`
+## `riscv64/satosa:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like bookworm in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
-
-## `satosa:<version>-alpine`
+## `riscv64/satosa:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
