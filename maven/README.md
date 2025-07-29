@@ -88,6 +88,8 @@ WARNING:
 
 -	[`3.9.11-amazoncorretto-24`, `3.9-amazoncorretto-24`, `3-amazoncorretto-24`](https://github.com/carlossg/docker-maven/blob/6bd15f0c704bad9806b4bbedea6f1faff5194c71/amazoncorretto-24/Dockerfile)
 
+-	[`3.9.11-amazoncorretto-24-al2023`, `3.9-amazoncorretto-24-al2023`, `3-amazoncorretto-24-al2023`](https://github.com/carlossg/docker-maven/blob/91a4014542b7460b411512805153b5876783fc70/amazoncorretto-24-al2023/Dockerfile)
+
 -	[`3.9.11-amazoncorretto-24-alpine`, `3.9-amazoncorretto-24-alpine`, `3-amazoncorretto-24-alpine`](https://github.com/carlossg/docker-maven/blob/6bd15f0c704bad9806b4bbedea6f1faff5194c71/amazoncorretto-24-alpine/Dockerfile)
 
 -	[`3.9.11-amazoncorretto-24-debian`, `3.9.11-amazoncorretto-24-debian-bookworm`, `3.9-amazoncorretto-24-debian`, `3.9-amazoncorretto-24-debian-bookworm`, `3-amazoncorretto-24-debian`, `3-amazoncorretto-24-debian-bookworm`](https://github.com/carlossg/docker-maven/blob/1cf6b7ffa65a315aeb46b6067b700e53d8c23c99/amazoncorretto-24-debian/Dockerfile)
