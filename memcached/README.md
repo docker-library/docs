@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.6.38`, `1.6`, `1`, `latest`, `1.6.38-bookworm`, `1.6-bookworm`, `1-bookworm`, `bookworm`](https://github.com/docker-library/memcached/blob/41e28506e64d0b5daabbafc8d6349eddc91c17c0/1/debian/Dockerfile)
+-	[`1.6.39`, `1.6`, `1`, `latest`, `1.6.39-bookworm`, `1.6-bookworm`, `1-bookworm`, `bookworm`](https://github.com/docker-library/memcached/blob/82dce5b661528c56980b7166b1065c149fab783e/1/debian/Dockerfile)
 
--	[`1.6.38-alpine`, `1.6-alpine`, `1-alpine`, `alpine`, `1.6.38-alpine3.22`, `1.6-alpine3.22`, `1-alpine3.22`, `alpine3.22`](https://github.com/docker-library/memcached/blob/41e28506e64d0b5daabbafc8d6349eddc91c17c0/1/alpine/Dockerfile)
+-	[`1.6.39-alpine`, `1.6-alpine`, `1-alpine`, `alpine`, `1.6.39-alpine3.22`, `1.6-alpine3.22`, `1-alpine3.22`, `alpine3.22`](https://github.com/docker-library/memcached/blob/82dce5b661528c56980b7166b1065c149fab783e/1/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
