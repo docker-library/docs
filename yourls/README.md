@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `riscv64` builds of [the `yourls` official image](https://hub.docker.com/_/yourls) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -23,10 +25,6 @@ WARNING:
 	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
-
--	[`1.10.2-apache`, `1.10-apache`, `1-apache`, `apache`, `1.10.2`, `1.10`, `1`, `latest`](https://github.com/YOURLS/containers/blob/89dfcf9b332685465708b98d3151d39f4f6340a0/apache/Dockerfile)
-
--	[`1.10.2-fpm`, `1.10-fpm`, `1-fpm`, `fpm`](https://github.com/YOURLS/containers/blob/89dfcf9b332685465708b98d3151d39f4f6340a0/fpm/Dockerfile)
 
 -	[`1.10.2-fpm-alpine`, `1.10-fpm-alpine`, `1-fpm-alpine`, `fpm-alpine`](https://github.com/YOURLS/containers/blob/89dfcf9b332685465708b98d3151d39f4f6340a0/fpm-alpine/Dockerfile)
 
@@ -59,14 +57,14 @@ YOURLS is a set of PHP scripts that will allow you to run Your Own URL Shortener
 
 # How to use this image
 
-## Start a `yourls` server instance
+## Start a `riscv64/yourls` server instance
 
 ```console
 $ docker run --name some-yourls --link some-mysql:mysql \
     -e YOURLS_SITE="https://example.com" \
     -e YOURLS_USER="example_username" \
     -e YOURLS_PASS="example_password" \
-    -d yourls
+    -d riscv64/yourls
 ```
 
 The YOURLS instance accepts a number of environment variables for configuration, see *Environment Variables* section below.
@@ -75,7 +73,7 @@ If you'd like to use an external database instead of a linked `mysql` container,
 
 ```console
 $ docker run --name some-yourlss -e YOURLS_DB_HOST=10.1.2.3:3306 \
-    -e YOURLS_DB_USER=... -e YOURLS_DB_PASS=... -d yourls
+    -e YOURLS_DB_USER=... -e YOURLS_DB_PASS=... -d riscv64/yourls
 ```
 
 ## Connect to the YOURLS administration interface
@@ -83,7 +81,7 @@ $ docker run --name some-yourlss -e YOURLS_DB_HOST=10.1.2.3:3306 \
 If you'd like to be able to access the instance from the host without the container's IP, standard port mappings can be used:
 
 ```console
-$ docker run --name some-yourls --link some-mysql:mysql -p 8080:80 -d yourls
+$ docker run --name some-yourls --link some-mysql:mysql -p 8080:80 -d riscv64/yourls
 ```
 
 Then, access it via `http://localhost:8080/admin/` or `http://<host-ip>:8080/admin/` in a browser.
@@ -138,7 +136,7 @@ Database tables prefix, defaults to `yourls_`. Only set this when you need to ov
 As an alternative to passing sensitive information via environment variables, `_FILE` may be appended to the previously listed environment variables, causing the initialization script to load the values for those variables from files present in the container. In particular, this can be used to load passwords from Docker secrets stored in `/run/secrets/<secret_name>` files. For example:
 
 ```console
-$ docker run --name some-yourls -e YOURLS_DB_PASS_FILE=/run/secrets/mysql-root ... -d yourls:tag
+$ docker run --name some-yourls -e YOURLS_DB_PASS_FILE=/run/secrets/mysql-root ... -d riscv64/yourls:tag
 ```
 
 Currently, this is supported for `YOURLS_DB_HOST`, `YOURLS_DB_USER`, `YOURLS_DB_PASS`, `YOURLS_DB_NAME`, `YOURLS_DB_PREFIX`, `YOURLS_SITE`, `YOURLS_USER`, and `YOURLS_PASS`.
@@ -183,13 +181,13 @@ The following Docker Hub features can help with the task of keeping your depende
 
 # Image Variants
 
-The `yourls` images come in many flavors, each designed for a specific use case.
+The `riscv64/yourls` images come in many flavors, each designed for a specific use case.
 
-## `yourls:<version>`
+## `riscv64/yourls:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `yourls:<version>-fpm`
+## `riscv64/yourls:<version>-fpm`
 
 This variant contains [PHP's FastCGI Process Manager (FPM)](https://www.php.net/fpm), which is the recommended FastCGI implementation for PHP.
 
