@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `windows-amd64` builds of [the `maven` official image](https://hub.docker.com/_/maven) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,91 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.9.11-eclipse-temurin-11`, `3.9-eclipse-temurin-11`, `3-eclipse-temurin-11`](https://github.com/carlossg/docker-maven/blob/6bd15f0c704bad9806b4bbedea6f1faff5194c71/eclipse-temurin-11/Dockerfile)
-
--	[`3.9.11-eclipse-temurin-11-alpine`, `3.9-eclipse-temurin-11-alpine`, `3-eclipse-temurin-11-alpine`](https://github.com/carlossg/docker-maven/blob/6bd15f0c704bad9806b4bbedea6f1faff5194c71/eclipse-temurin-11-alpine/Dockerfile)
-
--	[`3.9.11-eclipse-temurin-11-noble`, `3.9-eclipse-temurin-11-noble`, `3-eclipse-temurin-11-noble`](https://github.com/carlossg/docker-maven/blob/6bd15f0c704bad9806b4bbedea6f1faff5194c71/eclipse-temurin-11-noble/Dockerfile)
-
--	[`3.9.11-eclipse-temurin-17`, `3.9-eclipse-temurin-17`, `3-eclipse-temurin-17`](https://github.com/carlossg/docker-maven/blob/6bd15f0c704bad9806b4bbedea6f1faff5194c71/eclipse-temurin-17/Dockerfile)
-
--	[`3.9.11-eclipse-temurin-17-alpine`, `3.9-eclipse-temurin-17-alpine`, `3-eclipse-temurin-17-alpine`](https://github.com/carlossg/docker-maven/blob/6bd15f0c704bad9806b4bbedea6f1faff5194c71/eclipse-temurin-17-alpine/Dockerfile)
-
--	[`3.9.11-eclipse-temurin-17-noble`, `3.9-eclipse-temurin-17-noble`, `3-eclipse-temurin-17-noble`](https://github.com/carlossg/docker-maven/blob/6bd15f0c704bad9806b4bbedea6f1faff5194c71/eclipse-temurin-17-noble/Dockerfile)
-
--	[`3.9.11-eclipse-temurin-21`, `3.9.11`, `3.9.11-eclipse-temurin`, `3.9-eclipse-temurin-21`, `3.9`, `3.9-eclipse-temurin`, `3-eclipse-temurin-21`, `3`, `latest`, `3-eclipse-temurin`, `eclipse-temurin`](https://github.com/carlossg/docker-maven/blob/6bd15f0c704bad9806b4bbedea6f1faff5194c71/eclipse-temurin-21/Dockerfile)
-
--	[`3.9.11-eclipse-temurin-21-alpine`, `3.9-eclipse-temurin-21-alpine`, `3-eclipse-temurin-21-alpine`](https://github.com/carlossg/docker-maven/blob/6bd15f0c704bad9806b4bbedea6f1faff5194c71/eclipse-temurin-21-alpine/Dockerfile)
-
--	[`3.9.11-eclipse-temurin-21-noble`, `3.9-eclipse-temurin-21-noble`, `3-eclipse-temurin-21-noble`](https://github.com/carlossg/docker-maven/blob/6bd15f0c704bad9806b4bbedea6f1faff5194c71/eclipse-temurin-21-noble/Dockerfile)
-
--	[`3.9.11-eclipse-temurin-24`, `3.9-eclipse-temurin-24`, `3-eclipse-temurin-24`](https://github.com/carlossg/docker-maven/blob/6bd15f0c704bad9806b4bbedea6f1faff5194c71/eclipse-temurin-24/Dockerfile)
-
--	[`3.9.11-eclipse-temurin-24-alpine`, `3.9-eclipse-temurin-24-alpine`, `3-eclipse-temurin-24-alpine`](https://github.com/carlossg/docker-maven/blob/6bd15f0c704bad9806b4bbedea6f1faff5194c71/eclipse-temurin-24-alpine/Dockerfile)
-
--	[`3.9.11-eclipse-temurin-24-noble`, `3.9-eclipse-temurin-24-noble`, `3-eclipse-temurin-24-noble`](https://github.com/carlossg/docker-maven/blob/6bd15f0c704bad9806b4bbedea6f1faff5194c71/eclipse-temurin-24-noble/Dockerfile)
-
--	[`3.9.11-eclipse-temurin-8`, `3.9-eclipse-temurin-8`, `3-eclipse-temurin-8`](https://github.com/carlossg/docker-maven/blob/6bd15f0c704bad9806b4bbedea6f1faff5194c71/eclipse-temurin-8/Dockerfile)
-
--	[`3.9.11-eclipse-temurin-8-alpine`, `3.9-eclipse-temurin-8-alpine`, `3-eclipse-temurin-8-alpine`](https://github.com/carlossg/docker-maven/blob/6bd15f0c704bad9806b4bbedea6f1faff5194c71/eclipse-temurin-8-alpine/Dockerfile)
-
--	[`3.9.11-eclipse-temurin-8-noble`, `3.9-eclipse-temurin-8-noble`, `3-eclipse-temurin-8-noble`](https://github.com/carlossg/docker-maven/blob/6bd15f0c704bad9806b4bbedea6f1faff5194c71/eclipse-temurin-8-noble/Dockerfile)
-
--	[`3.9.11-ibmjava-8`, `3.9.11-ibmjava`, `3.9-ibmjava-8`, `3.9-ibmjava`, `3-ibmjava-8`, `3-ibmjava`, `ibmjava`](https://github.com/carlossg/docker-maven/blob/6bd15f0c704bad9806b4bbedea6f1faff5194c71/ibmjava-8/Dockerfile)
-
--	[`3.9.11-ibm-semeru-11-noble`, `3.9-ibm-semeru-11-noble`, `3-ibm-semeru-11-noble`](https://github.com/carlossg/docker-maven/blob/6bd15f0c704bad9806b4bbedea6f1faff5194c71/ibm-semeru-11-noble/Dockerfile)
-
--	[`3.9.11-ibm-semeru-17-noble`, `3.9-ibm-semeru-17-noble`, `3-ibm-semeru-17-noble`](https://github.com/carlossg/docker-maven/blob/6bd15f0c704bad9806b4bbedea6f1faff5194c71/ibm-semeru-17-noble/Dockerfile)
-
--	[`3.9.11-ibm-semeru-21-noble`, `3.9-ibm-semeru-21-noble`, `3-ibm-semeru-21-noble`](https://github.com/carlossg/docker-maven/blob/6bd15f0c704bad9806b4bbedea6f1faff5194c71/ibm-semeru-21-noble/Dockerfile)
-
--	[`3.9.11-amazoncorretto-11`, `3.9-amazoncorretto-11`, `3-amazoncorretto-11`](https://github.com/carlossg/docker-maven/blob/6bd15f0c704bad9806b4bbedea6f1faff5194c71/amazoncorretto-11/Dockerfile)
-
--	[`3.9.11-amazoncorretto-11-al2023`, `3.9-amazoncorretto-11-al2023`, `3-amazoncorretto-11-al2023`](https://github.com/carlossg/docker-maven/blob/6bd15f0c704bad9806b4bbedea6f1faff5194c71/amazoncorretto-11-al2023/Dockerfile)
-
--	[`3.9.11-amazoncorretto-11-alpine`, `3.9-amazoncorretto-11-alpine`, `3-amazoncorretto-11-alpine`](https://github.com/carlossg/docker-maven/blob/6bd15f0c704bad9806b4bbedea6f1faff5194c71/amazoncorretto-11-alpine/Dockerfile)
-
--	[`3.9.11-amazoncorretto-11-debian`, `3.9.11-amazoncorretto-11-debian-bookworm`, `3.9-amazoncorretto-11-debian`, `3.9-amazoncorretto-11-debian-bookworm`, `3-amazoncorretto-11-debian`, `3-amazoncorretto-11-debian-bookworm`](https://github.com/carlossg/docker-maven/blob/1cf6b7ffa65a315aeb46b6067b700e53d8c23c99/amazoncorretto-11-debian/Dockerfile)
-
--	[`3.9.11-amazoncorretto-17`, `3.9.11-amazoncorretto`, `3.9-amazoncorretto-17`, `3.9-amazoncorretto`, `3-amazoncorretto-17`, `3-amazoncorretto`, `amazoncorretto`](https://github.com/carlossg/docker-maven/blob/6bd15f0c704bad9806b4bbedea6f1faff5194c71/amazoncorretto-17/Dockerfile)
-
--	[`3.9.11-amazoncorretto-17-al2023`, `3.9-amazoncorretto-17-al2023`, `3-amazoncorretto-17-al2023`](https://github.com/carlossg/docker-maven/blob/6bd15f0c704bad9806b4bbedea6f1faff5194c71/amazoncorretto-17-al2023/Dockerfile)
-
--	[`3.9.11-amazoncorretto-17-alpine`, `3.9-amazoncorretto-17-alpine`, `3-amazoncorretto-17-alpine`](https://github.com/carlossg/docker-maven/blob/6bd15f0c704bad9806b4bbedea6f1faff5194c71/amazoncorretto-17-alpine/Dockerfile)
-
--	[`3.9.11-amazoncorretto-17-debian`, `3.9.11-amazoncorretto-17-debian-bookworm`, `3.9-amazoncorretto-17-debian`, `3.9-amazoncorretto-17-debian-bookworm`, `3-amazoncorretto-17-debian`, `3-amazoncorretto-17-debian-bookworm`](https://github.com/carlossg/docker-maven/blob/1cf6b7ffa65a315aeb46b6067b700e53d8c23c99/amazoncorretto-17-debian/Dockerfile)
-
--	[`3.9.11-amazoncorretto-21`, `3.9-amazoncorretto-21`, `3-amazoncorretto-21`](https://github.com/carlossg/docker-maven/blob/6bd15f0c704bad9806b4bbedea6f1faff5194c71/amazoncorretto-21/Dockerfile)
-
--	[`3.9.11-amazoncorretto-21-al2023`, `3.9-amazoncorretto-21-al2023`, `3-amazoncorretto-21-al2023`](https://github.com/carlossg/docker-maven/blob/6bd15f0c704bad9806b4bbedea6f1faff5194c71/amazoncorretto-21-al2023/Dockerfile)
-
--	[`3.9.11-amazoncorretto-21-alpine`, `3.9-amazoncorretto-21-alpine`, `3-amazoncorretto-21-alpine`](https://github.com/carlossg/docker-maven/blob/6bd15f0c704bad9806b4bbedea6f1faff5194c71/amazoncorretto-21-alpine/Dockerfile)
-
--	[`3.9.11-amazoncorretto-21-debian`, `3.9.11-amazoncorretto-21-debian-bookworm`, `3.9-amazoncorretto-21-debian`, `3.9-amazoncorretto-21-debian-bookworm`, `3-amazoncorretto-21-debian`, `3-amazoncorretto-21-debian-bookworm`](https://github.com/carlossg/docker-maven/blob/1cf6b7ffa65a315aeb46b6067b700e53d8c23c99/amazoncorretto-21-debian/Dockerfile)
-
--	[`3.9.11-amazoncorretto-24`, `3.9-amazoncorretto-24`, `3-amazoncorretto-24`](https://github.com/carlossg/docker-maven/blob/6bd15f0c704bad9806b4bbedea6f1faff5194c71/amazoncorretto-24/Dockerfile)
-
--	[`3.9.11-amazoncorretto-24-al2023`, `3.9-amazoncorretto-24-al2023`, `3-amazoncorretto-24-al2023`](https://github.com/carlossg/docker-maven/blob/91a4014542b7460b411512805153b5876783fc70/amazoncorretto-24-al2023/Dockerfile)
-
--	[`3.9.11-amazoncorretto-24-alpine`, `3.9-amazoncorretto-24-alpine`, `3-amazoncorretto-24-alpine`](https://github.com/carlossg/docker-maven/blob/6bd15f0c704bad9806b4bbedea6f1faff5194c71/amazoncorretto-24-alpine/Dockerfile)
-
--	[`3.9.11-amazoncorretto-24-debian`, `3.9.11-amazoncorretto-24-debian-bookworm`, `3.9-amazoncorretto-24-debian`, `3.9-amazoncorretto-24-debian-bookworm`, `3-amazoncorretto-24-debian`, `3-amazoncorretto-24-debian-bookworm`](https://github.com/carlossg/docker-maven/blob/1cf6b7ffa65a315aeb46b6067b700e53d8c23c99/amazoncorretto-24-debian/Dockerfile)
-
--	[`3.9.11-amazoncorretto-8`, `3.9-amazoncorretto-8`, `3-amazoncorretto-8`](https://github.com/carlossg/docker-maven/blob/6bd15f0c704bad9806b4bbedea6f1faff5194c71/amazoncorretto-8/Dockerfile)
-
--	[`3.9.11-amazoncorretto-8-al2023`, `3.9-amazoncorretto-8-al2023`, `3-amazoncorretto-8-al2023`](https://github.com/carlossg/docker-maven/blob/6bd15f0c704bad9806b4bbedea6f1faff5194c71/amazoncorretto-8-al2023/Dockerfile)
-
--	[`3.9.11-amazoncorretto-8-alpine`, `3.9-amazoncorretto-8-alpine`, `3-amazoncorretto-8-alpine`](https://github.com/carlossg/docker-maven/blob/6bd15f0c704bad9806b4bbedea6f1faff5194c71/amazoncorretto-8-alpine/Dockerfile)
-
--	[`3.9.11-amazoncorretto-8-debian`, `3.9.11-amazoncorretto-8-debian-bookworm`, `3.9-amazoncorretto-8-debian`, `3.9-amazoncorretto-8-debian-bookworm`, `3-amazoncorretto-8-debian`, `3-amazoncorretto-8-debian-bookworm`](https://github.com/carlossg/docker-maven/blob/1cf6b7ffa65a315aeb46b6067b700e53d8c23c99/amazoncorretto-8-debian/Dockerfile)
-
--	[`3.9.11-sapmachine-11`, `3.9-sapmachine-11`, `3-sapmachine-11`](https://github.com/carlossg/docker-maven/blob/6bd15f0c704bad9806b4bbedea6f1faff5194c71/sapmachine-11/Dockerfile)
-
--	[`3.9.11-sapmachine-17`, `3.9-sapmachine-17`, `3-sapmachine-17`](https://github.com/carlossg/docker-maven/blob/6bd15f0c704bad9806b4bbedea6f1faff5194c71/sapmachine-17/Dockerfile)
-
--	[`3.9.11-sapmachine-21`, `3.9.11-sapmachine`, `3.9-sapmachine-21`, `3.9-sapmachine`, `3-sapmachine-21`, `3-sapmachine`, `sapmachine`](https://github.com/carlossg/docker-maven/blob/6bd15f0c704bad9806b4bbedea6f1faff5194c71/sapmachine-21/Dockerfile)
-
--	[`3.9.11-sapmachine-24`, `3.9-sapmachine-24`, `3-sapmachine-24`](https://github.com/carlossg/docker-maven/blob/6bd15f0c704bad9806b4bbedea6f1faff5194c71/sapmachine-24/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `windows-amd64` ARCHITECTURE
 
 # Quick reference (cont.)
 
@@ -140,7 +58,7 @@ WARNING:
 You can run a Maven project by using the Maven Docker image directly, passing a Maven command to `docker run`:
 
 ```console
-$ docker run -it --rm --name my-maven-project -v "$(pwd)":/usr/src/mymaven -w /usr/src/mymaven maven:3.3-jdk-8 mvn clean install
+$ docker run -it --rm --name my-maven-project -v "$(pwd)":/usr/src/mymaven -w /usr/src/mymaven winamd64/maven:3.3-jdk-8 mvn clean install
 ```
 
 ## Building local Docker image (optional)
@@ -148,7 +66,7 @@ $ docker run -it --rm --name my-maven-project -v "$(pwd)":/usr/src/mymaven -w /u
 This is a base image that you can extend, so it has the bare minimum packages needed. If you add custom package(s) to the `Dockerfile`, then you can build your local Docker image like this:
 
 ```console
-$ docker build --tag my_local_maven:3.5.2-jdk-8 .
+$ docker build --tag my_local_winamd64/maven:3.5.2-jdk-8 .
 ```
 
 # Reusing the Maven local repository
@@ -157,14 +75,14 @@ The local Maven repository can be reused across containers by creating a volume 
 
 ```console
 $ docker volume create --name maven-repo
-$ docker run -it -v maven-repo:/root/.m2 maven mvn archetype:generate # will download artifacts
-$ docker run -it -v maven-repo:/root/.m2 maven mvn archetype:generate # will reuse downloaded artifacts
+$ docker run -it -v maven-repo:/root/.m2 winamd64/maven mvn archetype:generate # will download artifacts
+$ docker run -it -v maven-repo:/root/.m2 winamd64/maven mvn archetype:generate # will reuse downloaded artifacts
 ```
 
 Or you can just use your home .m2 cache directory that you share e.g. with your Eclipse/IDEA:
 
 ```console
-$ docker run -it --rm -v "$PWD":/usr/src/mymaven -v "$HOME/.m2":/root/.m2 -v "$PWD/target:/usr/src/mymaven/target" -w /usr/src/mymaven maven mvn clean package  
+$ docker run -it --rm -v "$PWD":/usr/src/mymaven -v "$HOME/.m2":/root/.m2 -v "$PWD/target:/usr/src/mymaven/target" -w /usr/src/mymaven winamd64/maven mvn clean package  
 ```
 
 # Packaging a local repository with the image
@@ -193,28 +111,8 @@ Maven needs the user home to download artifacts to, and if the user does not exi
 For example, to run as user `1000` mounting the host' Maven repo
 
 ```console
-$ docker run -v ~/.m2:/var/maven/.m2 -ti --rm -u 1000 -e MAVEN_CONFIG=/var/maven/.m2 maven mvn -Duser.home=/var/maven archetype:generate
+$ docker run -v ~/.m2:/var/maven/.m2 -ti --rm -u 1000 -e MAVEN_CONFIG=/var/maven/.m2 winamd64/maven mvn -Duser.home=/var/maven archetype:generate
 ```
-
-# Image Variants
-
-The `maven` images come in many flavors, each designed for a specific use case.
-
-## `maven:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-Some of these tags may have names like bookworm in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
-
-Some of these tags may have names like noble in them. These are the suite code names for releases of [Ubuntu](https://wiki.ubuntu.com/Releases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Ubuntu.
-
-## `maven:<version>-alpine`
-
-This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
-
-This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
-
-To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 # License
 
