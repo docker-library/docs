@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `ppc64le` builds of [the `tomcat` official image](https://hub.docker.com/_/tomcat) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -72,8 +74,6 @@ WARNING:
 
 -	[`9.0.107-jre21-temurin-jammy`, `9.0-jre21-temurin-jammy`, `9-jre21-temurin-jammy`](https://github.com/docker-library/tomcat/blob/fde8eb4da2a43616bcc2dbd94aa5a1fb570f9435/9.0/jre21/temurin-jammy/Dockerfile)
 
--	[`9.0.107-jdk21-corretto-al2`, `9.0-jdk21-corretto-al2`, `9-jdk21-corretto-al2`, `9.0.107-jdk21-corretto`, `9.0-jdk21-corretto`, `9-jdk21-corretto`](https://github.com/docker-library/tomcat/blob/fde8eb4da2a43616bcc2dbd94aa5a1fb570f9435/9.0/jdk21/corretto-al2/Dockerfile)
-
 -	[`9.0.107-jdk17-temurin-noble`, `9.0-jdk17-temurin-noble`, `9-jdk17-temurin-noble`, `9.0.107-jdk17-temurin`, `9.0-jdk17-temurin`, `9-jdk17-temurin`, `9.0.107-jdk17`, `9.0-jdk17`, `9-jdk17`](https://github.com/docker-library/tomcat/blob/fde8eb4da2a43616bcc2dbd94aa5a1fb570f9435/9.0/jdk17/temurin-noble/Dockerfile)
 
 -	[`9.0.107-jre17-temurin-noble`, `9.0-jre17-temurin-noble`, `9-jre17-temurin-noble`, `9.0.107-jre17-temurin`, `9.0-jre17-temurin`, `9-jre17-temurin`, `9.0.107-jre17`, `9.0-jre17`, `9-jre17`](https://github.com/docker-library/tomcat/blob/fde8eb4da2a43616bcc2dbd94aa5a1fb570f9435/9.0/jre17/temurin-noble/Dockerfile)
@@ -81,8 +81,6 @@ WARNING:
 -	[`9.0.107-jdk17-temurin-jammy`, `9.0-jdk17-temurin-jammy`, `9-jdk17-temurin-jammy`](https://github.com/docker-library/tomcat/blob/fde8eb4da2a43616bcc2dbd94aa5a1fb570f9435/9.0/jdk17/temurin-jammy/Dockerfile)
 
 -	[`9.0.107-jre17-temurin-jammy`, `9.0-jre17-temurin-jammy`, `9-jre17-temurin-jammy`](https://github.com/docker-library/tomcat/blob/fde8eb4da2a43616bcc2dbd94aa5a1fb570f9435/9.0/jre17/temurin-jammy/Dockerfile)
-
--	[`9.0.107-jdk17-corretto-al2`, `9.0-jdk17-corretto-al2`, `9-jdk17-corretto-al2`, `9.0.107-jdk17-corretto`, `9.0-jdk17-corretto`, `9-jdk17-corretto`](https://github.com/docker-library/tomcat/blob/fde8eb4da2a43616bcc2dbd94aa5a1fb570f9435/9.0/jdk17/corretto-al2/Dockerfile)
 
 -	[`9.0.107-jdk11-temurin-noble`, `9.0-jdk11-temurin-noble`, `9-jdk11-temurin-noble`, `9.0.107-jdk11-temurin`, `9.0-jdk11-temurin`, `9-jdk11-temurin`, `9.0.107-jdk11`, `9.0-jdk11`, `9-jdk11`](https://github.com/docker-library/tomcat/blob/fde8eb4da2a43616bcc2dbd94aa5a1fb570f9435/9.0/jdk11/temurin-noble/Dockerfile)
 
@@ -92,8 +90,6 @@ WARNING:
 
 -	[`9.0.107-jre11-temurin-jammy`, `9.0-jre11-temurin-jammy`, `9-jre11-temurin-jammy`](https://github.com/docker-library/tomcat/blob/fde8eb4da2a43616bcc2dbd94aa5a1fb570f9435/9.0/jre11/temurin-jammy/Dockerfile)
 
--	[`9.0.107-jdk11-corretto-al2`, `9.0-jdk11-corretto-al2`, `9-jdk11-corretto-al2`, `9.0.107-jdk11-corretto`, `9.0-jdk11-corretto`, `9-jdk11-corretto`](https://github.com/docker-library/tomcat/blob/fde8eb4da2a43616bcc2dbd94aa5a1fb570f9435/9.0/jdk11/corretto-al2/Dockerfile)
-
 -	[`9.0.107-jdk8-temurin-noble`, `9.0-jdk8-temurin-noble`, `9-jdk8-temurin-noble`, `9.0.107-jdk8-temurin`, `9.0-jdk8-temurin`, `9-jdk8-temurin`, `9.0.107-jdk8`, `9.0-jdk8`, `9-jdk8`](https://github.com/docker-library/tomcat/blob/fde8eb4da2a43616bcc2dbd94aa5a1fb570f9435/9.0/jdk8/temurin-noble/Dockerfile)
 
 -	[`9.0.107-jre8-temurin-noble`, `9.0-jre8-temurin-noble`, `9-jre8-temurin-noble`, `9.0.107-jre8-temurin`, `9.0-jre8-temurin`, `9-jre8-temurin`, `9.0.107-jre8`, `9.0-jre8`, `9-jre8`](https://github.com/docker-library/tomcat/blob/fde8eb4da2a43616bcc2dbd94aa5a1fb570f9435/9.0/jre8/temurin-noble/Dockerfile)
@@ -101,8 +97,6 @@ WARNING:
 -	[`9.0.107-jdk8-temurin-jammy`, `9.0-jdk8-temurin-jammy`, `9-jdk8-temurin-jammy`](https://github.com/docker-library/tomcat/blob/fde8eb4da2a43616bcc2dbd94aa5a1fb570f9435/9.0/jdk8/temurin-jammy/Dockerfile)
 
 -	[`9.0.107-jre8-temurin-jammy`, `9.0-jre8-temurin-jammy`, `9-jre8-temurin-jammy`](https://github.com/docker-library/tomcat/blob/fde8eb4da2a43616bcc2dbd94aa5a1fb570f9435/9.0/jre8/temurin-jammy/Dockerfile)
-
--	[`9.0.107-jdk8-corretto-al2`, `9.0-jdk8-corretto-al2`, `9-jdk8-corretto-al2`, `9.0.107-jdk8-corretto`, `9.0-jdk8-corretto`, `9-jdk8-corretto`](https://github.com/docker-library/tomcat/blob/fde8eb4da2a43616bcc2dbd94aa5a1fb570f9435/9.0/jdk8/corretto-al2/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -138,13 +132,13 @@ Apache Tomcat (or simply Tomcat) is an open source web server and servlet contai
 Run the default Tomcat server (`CMD ["catalina.sh", "run"]`):
 
 ```console
-$ docker run -it --rm tomcat:9.0
+$ docker run -it --rm ppc64le/tomcat:9.0
 ```
 
 You can test it by visiting `http://container-ip:8080` in a browser or, if you need access outside the host, on port 8888:
 
 ```console
-$ docker run -it --rm -p 8888:8080 tomcat:9.0
+$ docker run -it --rm -p 8888:8080 ppc64le/tomcat:9.0
 ```
 
 You can then go to `http://localhost:8888` or `http://host-ip:8888` in a browser (noting that it will return a 404 since there are no webapps loaded by default).
