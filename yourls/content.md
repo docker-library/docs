@@ -14,16 +14,16 @@ YOURLS is a set of PHP scripts that will allow you to run Your Own URL Shortener
 docker run \
     --name some-%%REPO%% \
     --detach \
-    --link some-mysql:mysql \
+    --network some-network \
     --env YOURLS_SITE="https://example.com" \
     --env YOURLS_USER="example_username" \
     --env YOURLS_PASS="example_password" \
     %%IMAGE%%
 ```
 
-The YOURLS instance accepts a number of environment variables for configuration, see [*Environment Variables*](#environment-variables) section below.
+The YOURLS instance accepts a number of environment variables for configuration, see *Environment Variables* section below.
 
-If you'd like to use an external database instead of a linked `mysql` container, specify the hostname and port with `YOURLS_DB_HOST` along with the password in `YOURLS_DB_PASS` and the username in `YOURLS_DB_USER` (if it is something other than `root`):
+If you'd like to use an external database instead of a `mysql` container, specify the hostname and port with `YOURLS_DB_HOST` along with the password in `YOURLS_DB_PASS` and the username in `YOURLS_DB_USER` (if it is something other than `root`):
 
 ```bash
 docker run \
@@ -43,7 +43,7 @@ If you'd like to be able to access the instance from the host without the contai
 docker run \
     --name some-%%REPO%% \
     --detach \
-    --link some-mysql:mysql \
+    --network some-network \
     --publish 8080:8080 \
     %%IMAGE%%
 ```
