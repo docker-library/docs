@@ -21,7 +21,7 @@ docker run \
     %%IMAGE%%
 ```
 
-The YOURLS instance accepts a number of environment variables for configuration, see [_Environment Variables_](#environment-variables) section below.
+The YOURLS instance accepts a number of environment variables for configuration, see [*Environment Variables*](#environment-variables) section below.
 
 If you'd like to use an external database instead of a linked `mysql` container, specify the hostname and port with `YOURLS_DB_HOST` along with the password in `YOURLS_DB_PASS` and the username in `YOURLS_DB_USER` (if it is something other than `root`):
 
@@ -123,8 +123,8 @@ If you need additional PHP extensions, you'll need to create your own image `FRO
 
 Mount the volume containing your plugins, pages or languages to the proper directory; and then apply them through the "admin" UI. Ensure read/write/execute permissions are in place for the user:
 
-- Plugins go in a subdirectory in `/var/www/html/user/plugins/`
-- Pages go in a subdirectory in `/var/www/html/user/pages/`
-- Languages go in a subdirectory in `/var/www/html/user/languages/`
+-	Plugins go in a subdirectory in `/var/www/html/user/plugins/`
+-	Pages go in a subdirectory in `/var/www/html/user/pages/`
+-	Languages go in a subdirectory in `/var/www/html/user/languages/`
 
 If you wish to provide additional content in an image for deploying in multiple installations, place it in the same directories under `/usr/src/yourls/` instead (which gets copied to `/var/www/html/` on the container's initial startup).
