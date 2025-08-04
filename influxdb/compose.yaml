@@ -5,7 +5,7 @@ services:
     container_name: influxdb3-core
     image: influxdb:3-core
     ports:
-      - 8282:8181
+      - 8181:8181
     command:
       - influxdb3
       - serve
