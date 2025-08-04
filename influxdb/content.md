@@ -4,51 +4,102 @@
 
 InfluxDB is the time series database platform designed to collect, store, and process large amounts of event and time series data. Ideal for monitoring (sensors, servers, applications, networks), financial analytics, and behavioral tracking.
 
-**This README covers all currently supported versions of InfluxDB:**
+## Quick Start
 
--	InfluxDB 3: `%%IMAGE%%:3-core`, `%%IMAGE%%:3-enterprise`
--	InfluxDB v2: `%%IMAGE%%:2`
--	InfluxDB v1: `%%IMAGE%%:1.11`
--	InfluxDB Enterprise v1: `%%IMAGE%%:1.11-data` and `%%IMAGE%%:1.11-meta`
+Use InfluxDB 3 Core, the latest InfluxDB OSS:
 
-Find a specific InfluxDB version below for startup examples and links to full documentation.
+```console
+docker run -d -p 8181:8181 %%IMAGE%%:3-core
+```
 
-## How to use InfluxDB 3 images
+Available OSS tags:
 
-InfluxDB 3 is the latest version and features Apache Arrow, DataFusion SQL, and object storage for sub-10ms queries and unlimited cardinality. The InfluxDB 3 Core and InfluxDB 3 Enterprise editions both support SQL and InfluxQL queries, include the Python processing engine, and work with the InfluxDB 3 Explorer UI.
+-	`%%IMAGE%%:3-core` - **Latest InfluxDB OSS** (InfluxDB 3 Core)
+-	`%%IMAGE%%:2` - Previous generation OSS (InfluxDB v2)
+-	`%%IMAGE%%:1.11` - InfluxDB v1
 
--	**Core** (free, open source): For real-time monitoring and recent data. Covered in this guide.
--	**Enterprise** (requires a license): Adds historical data, clustering, HA, and security. See the InfluxData documentation to [Get started with InfluxDB 3 Enterprise](https://docs.influxdata.com/influxdb3/enterprise/get-started/).
+## Available Versions
 
-### Start InfluxDB 3
+#### InfluxDB 3 Core (`%%IMAGE%%:3-core`) - Latest OSS
+
+-	**Latest generation** with the InfluxDB 3 storage engine, Apache Arrow, and DataFusion SQL
+-	Sub-10ms queries and unlimited cardinality
+-	Supports SQL and InfluxQL queries
+-	Includes Python processing engine
+-	Designed for real-time monitoring and recent data
+-	Includes v1 compatibility API for writing and querying data
+-	Includes v2 compatibility API for writing data
+
+#### InfluxDB v2 (`%%IMAGE%%:2`)
+
+-	Built on the TSM storage engine
+-	Supports Flux query language
+-	Integrated UI and dashboards
+-	Includes v1 compatibility API that supports InfluxQL
+
+#### InfluxDB v1 (`%%IMAGE%%:1.11`)
+
+-	Built on the TSM storage engine
+-	Original version with InfluxQL query language
+-	Proven stability for existing deployments
+
+### Enterprise Editions (License Required)
+
+#### InfluxDB 3 Enterprise (`%%IMAGE%%:3-enterprise`)
+
+-	Adds unlimited data retention, compaction, clustering, and high availability to InfluxDB 3 Core
+
+For setup instructions, see the [InfluxDB 3 Enterprise installation documentation](https://docs.influxdata.com/influxdb3/enterprise/install/).
+
+#### InfluxDB v1 Enterprise
+
+-	`%%IMAGE%%:1.11-data` - Data nodes for clustering
+-	`%%IMAGE%%:1.11-meta` - Meta nodes for cluster coordination (port 8091)
+
+For setup instructions, see the [InfluxDB v1 Enterprise Docker documentation](https://docs.influxdata.com/enterprise_influxdb/v1/introduction/installation/docker/).
+
+## Version Compatibility
+
+### Migration Paths
+
+To migrate from v1 or v2 to InfluxDB 3:
+
+1.	Dual-write new data to v1/v2 and InfluxDB 3.
+2.	Query historical data from v1/v2 and write it to InfluxDB 3. *InfluxDB 3 Enterprise is recommended for historical query capability.*
+
+## Using InfluxDB 3 Core (Latest OSS)
+
+### Start InfluxDB 3 Core
 
 %%COMPOSE%%
 
-The example `compose.yaml` defines a service for InfluxDB 3 Core and configures file system volumes for data persistence and plugin storage.
+The example `compose.yaml` starts InfluxDB 3 Core on port 8181 with:
 
-#### InfluxDB 3 server options
+-	Data persistence at `/var/lib/influxdb3`
+-	Plugin directory for Python processing engine
+-	Object storage configured (default: file)
 
-You can customize the example, such as changing the node ID or object store type (for example, `s3`). See the full list of server options:
+### Get Started Using InfluxDB 3
+
+After starting your InfluxDB 3 server:
+
+-	Follow the [Get started guide](https://docs.influxdata.com/influxdb3/core/get-started/) to create an auth token and database, and write, query, and process data.
+-	Use the [InfluxDB 3 Explorer UI](https://docs.influxdata.com/influxdb3/explorer/) to write data, create dashboards, explore metrics, and manage databases
+
+### InfluxDB 3 Server Options
+
+Customize your deployment with available [server options](https://docs.influxdata.com/influxdb3/core/reference/clis/influxdb3/serve/):
 
 ```bash
-# InfluxDB 3 Core help
-docker run --pull --rm %%IMAGE%%:3-core influxdb3 serve --help
+# View all available options
+docker run --rm %%IMAGE%%:3-core influxdb3 serve --help
 ```
 
-[InfluxDB 3 Core `serve` command](https://docs.influxdata.com/influxdb3/core/reference/clis/influxdb3/serve/)
+## Using InfluxDB v2
 
-### Get started using InfluxDB 3
+*InfluxDB v2 is a previous version. Consider InfluxDB 3 Core for new deployments.*
 
-After starting your InfluxDB 3 server, follow the guide to create an auth token and database, and write, query, and process data in InfluxDB 3:
-
--	[Get started with InfluxDB 3 Core](https://docs.influxdata.com/influxdb3/core/get-started/)
--	Use the [InfluxDB 3 Explorer UI](https://docs.influxdata.com/influxdb3/explorer/) to write data, create dashboards, explore metrics, and manage your databases.
-
-## How to use the InfluxDB v2 image
-
-*InfluxDB v2 is an earlier version of InfluxDB OSS. InfluxDB 3 Core is the latest stable version.*
-
-Run [InfluxDB v2](https://docs.influxdata.com/influxdb/v2/) using the Docker CLI with the following command:
+### Start InfluxDB v2
 
 ```bash
 docker run -d -p 8086:8086 \
@@ -62,134 +113,23 @@ docker run -d -p 8086:8086 \
   %%IMAGE%%:2
 ```
 
-After the container starts, visit [http://localhost:8086](http://localhost:8086) in your browser to view the UI.
+After the container starts, visit [http://localhost:8086](http://localhost:8086) to view the UI.
 
 For detailed instructions, see the [InfluxDB v2 Docker Compose documentation](https://docs.influxdata.com/influxdb/v2/install/use-docker-compose/).
 
-For more information about `DOCKER_INFLUXDB_INIT_*` environment variables, see the [InfluxDB v2 upgrade documentation](https://docs.influxdata.com/influxdb/v2/install/upgrade/v1-to-v2/docker/).
+## Using InfluxDB v1
 
-## How to use the InfluxDB v1 Docker image
+*InfluxDB v1 is a previous version. Consider InfluxDB 3 Core for new deployments.*
 
-*InfluxDB v1 is an earlier version of InfluxDB OSS. InfluxDB 3 Core is the latest stable version.*
-
-Run [InfluxDB v1](https://docs.influxdata.com/influxdb/v1/) using the Docker CLI:
-
-```bash
+```console
 docker run -d -p 8086:8086 \
   -v $PWD:/var/lib/influxdb \
   %%IMAGE%%:1.11
 ```
 
-This command maps port `8086` and mounts your current directory to persist data.
+This starts InfluxDB v1 with:
+
+-	HTTP API on port 8086
+-	Data persisted to current directory
 
 For more information, see the [InfluxDB v1 Docker documentation](https://docs.influxdata.com/influxdb/v1/introduction/install/docker/).
-
-## How to use the InfluxDB Enterprise v1 Docker image
-
-*InfluxDB Enterprise v1 is an earlier version of InfluxDB Enterprise. InfluxDB 3 Enterprise is the latest stable version.*
-
-Use the official `%%IMAGE%%:meta` and `%%IMAGE%%:data` Docker images to deploy and manage an InfluxDB v1 Enterprise cluster. A valid license is required.
-
-### Start InfluxDB v1 Enterprise Cluster
-
-Create a custom Docker network for node communication:
-
-```bash
-docker network create influxdb
-```
-
-Start three meta nodes (each with a unique hostname and license key):
-
-```bash
-# Meta node 0
-docker run -d \
-  --name=influxdb-meta-0 \
-  --network=influxdb \
-  -h influxdb-meta-0 \
-  -e INFLUXDB_ENTERPRISE_LICENSE_KEY=your-license-key \
-  %%IMAGE%%:meta
-
-# Meta node 1
-docker run -d \
-  --name=influxdb-meta-1 \
-  --network=influxdb \
-  -h influxdb-meta-1 \
-  -e INFLUXDB_ENTERPRISE_LICENSE_KEY=your-license-key \
-  %%IMAGE%%:meta
-
-# Meta node 2
-docker run -d \
-  --name=influxdb-meta-2 \
-  --network=influxdb \
-  -h influxdb-meta-2 \
-  -e INFLUXDB_ENTERPRISE_LICENSE_KEY=your-license-key \
-  %%IMAGE%%:meta
-```
-
-Join meta nodes into the cluster:
-
-```bash
-docker exec influxdb-meta-0 influxd-ctl add-meta influxdb-meta-1:8091
-docker exec influxdb-meta-0 influxd-ctl add-meta influxdb-meta-2:8091
-```
-
-Start data nodes:
-
-```bash
-# Data node 0
-docker run -d \
-  --name=influxdb-data-0 \
-  --network=influxdb \
-  -h influxdb-data-0 \
-  -e INFLUXDB_ENTERPRISE_LICENSE_KEY=your-license-key \
-  %%IMAGE%%:data
-
-# Data node 1
-docker run -d \
-  --name=influxdb-data-1 \
-  --network=influxdb \
-  -h influxdb-data-1 \
-  -e INFLUXDB_ENTERPRISE_LICENSE_KEY=your-license-key \
-  %%IMAGE%%:data
-```
-
-Add data nodes to the cluster:
-
-```bash
-docker exec influxdb-meta-0 influxd-ctl add-data influxdb-data-0:8088
-docker exec influxdb-meta-0 influxd-ctl add-data influxdb-data-1:8088
-```
-
-Verify cluster status:
-
-```bash
-docker exec influxdb-meta-0 influxd-ctl show
-```
-
-This displays all registered data and meta nodes.
-
-### Stop InfluxDB v1 Enterprise Containers
-
-To stop individual containers:
-
-```bash
-docker stop influxdb-meta-0
-docker stop influxdb-meta-1
-docker stop influxdb-meta-2
-docker stop influxdb-data-0
-docker stop influxdb-data-1
-```
-
-### Restart Containers
-
-To restart stopped containers:
-
-```bash
-docker start influxdb-meta-0
-docker start influxdb-meta-1
-docker start influxdb-meta-2
-docker start influxdb-data-0
-docker start influxdb-data-1
-```
-
-For more information, see the [InfluxDB v1 Enterprise documentation](https://docs.influxdata.com/enterprise_influxdb/v1/introduction/installation/docker/).
