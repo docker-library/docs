@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v6` builds of [the `ghost` official image](https://hub.docker.com/_/ghost) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,11 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.0.0`, `6.0`, `6`, `latest`](https://github.com/docker-library/ghost/blob/bb570dc7994c9827f7984aed03335fb9da8e1869/6/debian/Dockerfile)
-
 -	[`6.0.0-alpine`, `6.0-alpine`, `6-alpine`, `alpine`](https://github.com/docker-library/ghost/blob/bb570dc7994c9827f7984aed03335fb9da8e1869/6/alpine/Dockerfile)
-
--	[`5.130.3`, `5.130`, `5`](https://github.com/docker-library/ghost/blob/521da5fea8b4cccffdb40ad78205b96e8342b98d/5/debian/Dockerfile)
 
 -	[`5.130.3-alpine`, `5.130-alpine`, `5-alpine`](https://github.com/docker-library/ghost/blob/521da5fea8b4cccffdb40ad78205b96e8342b98d/5/alpine/Dockerfile)
 
@@ -64,7 +62,7 @@ Ghost is an independent platform for publishing online by web and email newslett
 This will start a Ghost development instance listening on the default Ghost port of 2368.
 
 ```console
-$ docker run -d --name some-ghost -e NODE_ENV=development ghost
+$ docker run -d --name some-ghost -e NODE_ENV=development arm32v6/ghost
 ```
 
 ## Custom port
@@ -72,7 +70,7 @@ $ docker run -d --name some-ghost -e NODE_ENV=development ghost
 If you'd like to be able to access the instance from the host without the container's IP, standard port mappings can be used:
 
 ```console
-$ docker run -d --name some-ghost -e NODE_ENV=development -e url=http://localhost:3001 -p 3001:2368 ghost
+$ docker run -d --name some-ghost -e NODE_ENV=development -e url=http://localhost:3001 -p 3001:2368 arm32v6/ghost
 ```
 
 If all goes well, you'll be able to access your new site on `http://localhost:3001` and `http://localhost:3001/ghost` to access Ghost Admin (or `http://host-ip:3001` and `http://host-ip:3001/ghost`, respectively).
@@ -94,7 +92,7 @@ $ docker run -d \
 	-e database__connection__filename='/var/lib/ghost/content/data/ghost.db' \
 	-p 3001:2368 \
 	-v /path/to/ghost/blog:/var/lib/ghost/content \
-	ghost:alpine
+	arm32v6/ghost:alpine
 ```
 
 Note: `database__connection__filename` is only valid in development mode and is the location for the SQLite database file. If using development mode, it should be set to a writeable path within a persistent folder (bind mount or volume). It is not available in production mode because an external MySQL server is required (see the Docker Compose example below).
@@ -110,7 +108,7 @@ $ docker run -d \
 	-e database__connection__filename='/var/lib/ghost/content/data/ghost.db' \
 	-p 3001:2368 \
 	-v some-ghost-data:/var/lib/ghost/content \
-	ghost
+	arm32v6/ghost
 ```
 
 ## Configuration
@@ -118,7 +116,7 @@ $ docker run -d \
 All Ghost configuration parameters (such as `url`) can be specified via environment variables. See [the Ghost documentation](https://ghost.org/docs/concepts/config/#running-ghost-with-config-env-variables) for details about what configuration is allowed and how to convert a nested configuration key into the appropriate environment variable name:
 
 ```console
-$ docker run -d --name some-ghost -e NODE_ENV=development -e url=http://some-ghost.example.com ghost
+$ docker run -d --name some-ghost -e NODE_ENV=development -e url=http://some-ghost.example.com arm32v6/ghost
 ```
 
 (There are further configuration examples in the `compose.yaml` listed below.)
@@ -185,13 +183,13 @@ Run `docker compose up`, wait for it to initialize completely, and visit `http:/
 
 # Image Variants
 
-The `ghost` images come in many flavors, each designed for a specific use case.
+The `arm32v6/ghost` images come in many flavors, each designed for a specific use case.
 
-## `ghost:<version>`
+## `arm32v6/ghost:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `ghost:<version>-alpine`
+## `arm32v6/ghost:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 

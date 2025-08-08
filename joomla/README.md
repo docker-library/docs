@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v6` builds of [the `joomla` official image](https://hub.docker.com/_/joomla) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,53 +26,21 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.0.0-alpha3`, `6.0`, `6.0.alpha`, `6.0.0-alpha`, `6.0.0-alpha3-apache`, `6.0-apache`, `6.0.alpha-apache`, `6.0.0-alpha-apache`, `6.0.0-alpha3-php8.3`, `6.0-php8.3`, `6.0.alpha-php8.3`, `6.0.0-alpha-php8.3`, `6.0.0-alpha3-php8.3-apache`, `6.0-php8.3-apache`, `6.0.alpha-php8.3-apache`, `6.0.0-alpha-php8.3-apache`](https://github.com/joomla-docker/docker-joomla/blob/f2936260e5f398854939c429f5468f2d5b43df8d/6.0.alpha/php8.3/apache/Dockerfile)
-
 -	[`6.0.0-alpha3-php8.3-fpm-alpine`, `6.0-php8.3-fpm-alpine`, `6.0.alpha-php8.3-fpm-alpine`, `6.0.0-alpha-php8.3-fpm-alpine`](https://github.com/joomla-docker/docker-joomla/blob/f2936260e5f398854939c429f5468f2d5b43df8d/6.0.alpha/php8.3/fpm-alpine/Dockerfile)
-
--	[`6.0.0-alpha3-php8.3-fpm`, `6.0-php8.3-fpm`, `6.0.alpha-php8.3-fpm`, `6.0.0-alpha-php8.3-fpm`](https://github.com/joomla-docker/docker-joomla/blob/f2936260e5f398854939c429f5468f2d5b43df8d/6.0.alpha/php8.3/fpm/Dockerfile)
-
--	[`5.4.0-alpha3-php8.2-apache`, `5.4-php8.2-apache`, `5.4.alpha-php8.2-apache`, `5.4.0-alpha-php8.2-apache`](https://github.com/joomla-docker/docker-joomla/blob/f2936260e5f398854939c429f5468f2d5b43df8d/5.4.alpha/php8.2/apache/Dockerfile)
 
 -	[`5.4.0-alpha3-php8.2-fpm-alpine`, `5.4-php8.2-fpm-alpine`, `5.4.alpha-php8.2-fpm-alpine`, `5.4.0-alpha-php8.2-fpm-alpine`](https://github.com/joomla-docker/docker-joomla/blob/f2936260e5f398854939c429f5468f2d5b43df8d/5.4.alpha/php8.2/fpm-alpine/Dockerfile)
 
--	[`5.4.0-alpha3-php8.2-fpm`, `5.4-php8.2-fpm`, `5.4.alpha-php8.2-fpm`, `5.4.0-alpha-php8.2-fpm`](https://github.com/joomla-docker/docker-joomla/blob/f2936260e5f398854939c429f5468f2d5b43df8d/5.4.alpha/php8.2/fpm/Dockerfile)
-
--	[`5.4.0-alpha3`, `5.4`, `5.4.alpha`, `5.4.0-alpha`, `5.4.0-alpha3-apache`, `5.4-apache`, `5.4.alpha-apache`, `5.4.0-alpha-apache`, `5.4.0-alpha3-php8.3`, `5.4-php8.3`, `5.4.alpha-php8.3`, `5.4.0-alpha-php8.3`, `5.4.0-alpha3-php8.3-apache`, `5.4-php8.3-apache`, `5.4.alpha-php8.3-apache`, `5.4.0-alpha-php8.3-apache`](https://github.com/joomla-docker/docker-joomla/blob/f2936260e5f398854939c429f5468f2d5b43df8d/5.4.alpha/php8.3/apache/Dockerfile)
-
 -	[`5.4.0-alpha3-php8.3-fpm-alpine`, `5.4-php8.3-fpm-alpine`, `5.4.alpha-php8.3-fpm-alpine`, `5.4.0-alpha-php8.3-fpm-alpine`](https://github.com/joomla-docker/docker-joomla/blob/f2936260e5f398854939c429f5468f2d5b43df8d/5.4.alpha/php8.3/fpm-alpine/Dockerfile)
-
--	[`5.4.0-alpha3-php8.3-fpm`, `5.4-php8.3-fpm`, `5.4.alpha-php8.3-fpm`, `5.4.0-alpha-php8.3-fpm`](https://github.com/joomla-docker/docker-joomla/blob/f2936260e5f398854939c429f5468f2d5b43df8d/5.4.alpha/php8.3/fpm/Dockerfile)
-
--	[`5.3.2-php8.1-apache`, `5.3-php8.1-apache`, `5-php8.1-apache`, `php8.1-apache`](https://github.com/joomla-docker/docker-joomla/blob/029a7a61c78666ccf23b6cee64b8c79fbc537248/5.3/php8.1/apache/Dockerfile)
 
 -	[`5.3.2-php8.1-fpm-alpine`, `5.3-php8.1-fpm-alpine`, `5-php8.1-fpm-alpine`, `php8.1-fpm-alpine`](https://github.com/joomla-docker/docker-joomla/blob/029a7a61c78666ccf23b6cee64b8c79fbc537248/5.3/php8.1/fpm-alpine/Dockerfile)
 
--	[`5.3.2-php8.1-fpm`, `5.3-php8.1-fpm`, `5-php8.1-fpm`, `php8.1-fpm`](https://github.com/joomla-docker/docker-joomla/blob/029a7a61c78666ccf23b6cee64b8c79fbc537248/5.3/php8.1/fpm/Dockerfile)
-
--	[`5.3.2-php8.2-apache`, `5.3-php8.2-apache`, `5-php8.2-apache`, `php8.2-apache`](https://github.com/joomla-docker/docker-joomla/blob/029a7a61c78666ccf23b6cee64b8c79fbc537248/5.3/php8.2/apache/Dockerfile)
-
 -	[`5.3.2-php8.2-fpm-alpine`, `5.3-php8.2-fpm-alpine`, `5-php8.2-fpm-alpine`, `php8.2-fpm-alpine`](https://github.com/joomla-docker/docker-joomla/blob/029a7a61c78666ccf23b6cee64b8c79fbc537248/5.3/php8.2/fpm-alpine/Dockerfile)
-
--	[`5.3.2-php8.2-fpm`, `5.3-php8.2-fpm`, `5-php8.2-fpm`, `php8.2-fpm`](https://github.com/joomla-docker/docker-joomla/blob/029a7a61c78666ccf23b6cee64b8c79fbc537248/5.3/php8.2/fpm/Dockerfile)
-
--	[`5.3.2`, `5.3`, `5`, `latest`, `5.3.2-apache`, `5.3-apache`, `5-apache`, `apache`, `5.3.2-php8.3`, `5.3-php8.3`, `5-php8.3`, `php8.3`, `5.3.2-php8.3-apache`, `5.3-php8.3-apache`, `5-php8.3-apache`, `php8.3-apache`](https://github.com/joomla-docker/docker-joomla/blob/029a7a61c78666ccf23b6cee64b8c79fbc537248/5.3/php8.3/apache/Dockerfile)
 
 -	[`5.3.2-php8.3-fpm-alpine`, `5.3-php8.3-fpm-alpine`, `5-php8.3-fpm-alpine`, `php8.3-fpm-alpine`](https://github.com/joomla-docker/docker-joomla/blob/029a7a61c78666ccf23b6cee64b8c79fbc537248/5.3/php8.3/fpm-alpine/Dockerfile)
 
--	[`5.3.2-php8.3-fpm`, `5.3-php8.3-fpm`, `5-php8.3-fpm`, `php8.3-fpm`](https://github.com/joomla-docker/docker-joomla/blob/029a7a61c78666ccf23b6cee64b8c79fbc537248/5.3/php8.3/fpm/Dockerfile)
-
--	[`4.4.13-php8.1-apache`, `4.4-php8.1-apache`, `4-php8.1-apache`](https://github.com/joomla-docker/docker-joomla/blob/2b32f0a2ba4ad99f15c0acd26b2f862c038ff3f5/4.4/php8.1/apache/Dockerfile)
-
 -	[`4.4.13-php8.1-fpm-alpine`, `4.4-php8.1-fpm-alpine`, `4-php8.1-fpm-alpine`](https://github.com/joomla-docker/docker-joomla/blob/2b32f0a2ba4ad99f15c0acd26b2f862c038ff3f5/4.4/php8.1/fpm-alpine/Dockerfile)
 
--	[`4.4.13-php8.1-fpm`, `4.4-php8.1-fpm`, `4-php8.1-fpm`](https://github.com/joomla-docker/docker-joomla/blob/2b32f0a2ba4ad99f15c0acd26b2f862c038ff3f5/4.4/php8.1/fpm/Dockerfile)
-
--	[`4.4.13`, `4.4`, `4`, `4.4.13-apache`, `4.4-apache`, `4-apache`, `4.4.13-php8.2`, `4.4-php8.2`, `4-php8.2`, `4.4.13-php8.2-apache`, `4.4-php8.2-apache`, `4-php8.2-apache`](https://github.com/joomla-docker/docker-joomla/blob/2b32f0a2ba4ad99f15c0acd26b2f862c038ff3f5/4.4/php8.2/apache/Dockerfile)
-
 -	[`4.4.13-php8.2-fpm-alpine`, `4.4-php8.2-fpm-alpine`, `4-php8.2-fpm-alpine`](https://github.com/joomla-docker/docker-joomla/blob/2b32f0a2ba4ad99f15c0acd26b2f862c038ff3f5/4.4/php8.2/fpm-alpine/Dockerfile)
-
--	[`4.4.13-php8.2-fpm`, `4.4-php8.2-fpm`, `4-php8.2-fpm`](https://github.com/joomla-docker/docker-joomla/blob/2b32f0a2ba4ad99f15c0acd26b2f862c038ff3f5/4.4/php8.2/fpm/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -102,7 +72,7 @@ Joomla is a free and open-source content management system (CMS) for publishing 
 # How to use this image
 
 ```console
-$ docker run --name some-joomla --network some-network -d joomla
+$ docker run --name some-joomla --network some-network -d arm32v6/joomla
 ```
 
 The following environment variables are honored for configuring your Joomla instance:
@@ -131,7 +101,7 @@ The following environment variables are also honored for configuring auto deploy
 If you'd like to be able to access the instance from the host without the container's IP, standard port mappings can be used:
 
 ```console
-$ docker run --name some-joomla --network some-network -p 8080:80 -d joomla
+$ docker run --name some-joomla --network some-network -p 8080:80 -d arm32v6/joomla
 ```
 
 Then, access it via `http://localhost:8080` or `http://host-ip:8080` in a browser.
@@ -140,7 +110,7 @@ If you'd like to use an external database instead of a MySQL container, specify 
 
 ```console
 $ docker run --name some-joomla --network some-network -e JOOMLA_DB_HOST=10.1.2.3:3306 \
-    -e JOOMLA_DB_USER=... -e JOOMLA_DB_PASSWORD=... -d joomla
+    -e JOOMLA_DB_USER=... -e JOOMLA_DB_PASSWORD=... -d arm32v6/joomla
 ```
 
 ## ... via [`docker compose`](https://github.com/docker/compose)
@@ -205,13 +175,13 @@ The following Docker Hub features can help with the task of keeping your depende
 
 # Image Variants
 
-The `joomla` images come in many flavors, each designed for a specific use case.
+The `arm32v6/joomla` images come in many flavors, each designed for a specific use case.
 
-## `joomla:<version>`
+## `arm32v6/joomla:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `joomla:<version>-alpine`
+## `arm32v6/joomla:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
