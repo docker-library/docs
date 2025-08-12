@@ -24,49 +24,49 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`18beta2`, `18beta2-bookworm`](https://github.com/docker-library/postgres/blob/889f9447cd2dfe21cccfbe9bb7945e3b037e02d8/18/bookworm/Dockerfile)
+-	[`18beta2`, `18beta2-trixie`](https://github.com/docker-library/postgres/blob/176bc3c3f06c7df2602331d65b779a6d08c56861/18/trixie/Dockerfile)
 
--	[`18beta2-bullseye`](https://github.com/docker-library/postgres/blob/889f9447cd2dfe21cccfbe9bb7945e3b037e02d8/18/bullseye/Dockerfile)
+-	[`18beta2-bookworm`](https://github.com/docker-library/postgres/blob/889f9447cd2dfe21cccfbe9bb7945e3b037e02d8/18/bookworm/Dockerfile)
 
 -	[`18beta2-alpine3.22`, `18beta2-alpine`](https://github.com/docker-library/postgres/blob/889f9447cd2dfe21cccfbe9bb7945e3b037e02d8/18/alpine3.22/Dockerfile)
 
 -	[`18beta2-alpine3.21`](https://github.com/docker-library/postgres/blob/889f9447cd2dfe21cccfbe9bb7945e3b037e02d8/18/alpine3.21/Dockerfile)
 
--	[`17.5`, `17`, `latest`, `17.5-bookworm`, `17-bookworm`, `bookworm`](https://github.com/docker-library/postgres/blob/2c6fe8daca9d2ccc143afe6b1cdbc1eb80379d3f/17/bookworm/Dockerfile)
+-	[`17.5`, `17`, `latest`, `17.5-trixie`, `17-trixie`, `trixie`](https://github.com/docker-library/postgres/blob/176bc3c3f06c7df2602331d65b779a6d08c56861/17/trixie/Dockerfile)
 
--	[`17.5-bullseye`, `17-bullseye`, `bullseye`](https://github.com/docker-library/postgres/blob/2c6fe8daca9d2ccc143afe6b1cdbc1eb80379d3f/17/bullseye/Dockerfile)
+-	[`17.5-bookworm`, `17-bookworm`, `bookworm`](https://github.com/docker-library/postgres/blob/2c6fe8daca9d2ccc143afe6b1cdbc1eb80379d3f/17/bookworm/Dockerfile)
 
 -	[`17.5-alpine3.22`, `17-alpine3.22`, `alpine3.22`, `17.5-alpine`, `17-alpine`, `alpine`](https://github.com/docker-library/postgres/blob/2c6fe8daca9d2ccc143afe6b1cdbc1eb80379d3f/17/alpine3.22/Dockerfile)
 
 -	[`17.5-alpine3.21`, `17-alpine3.21`, `alpine3.21`](https://github.com/docker-library/postgres/blob/2c6fe8daca9d2ccc143afe6b1cdbc1eb80379d3f/17/alpine3.21/Dockerfile)
 
--	[`16.9`, `16`, `16.9-bookworm`, `16-bookworm`](https://github.com/docker-library/postgres/blob/2c6fe8daca9d2ccc143afe6b1cdbc1eb80379d3f/16/bookworm/Dockerfile)
+-	[`16.9`, `16`, `16.9-trixie`, `16-trixie`](https://github.com/docker-library/postgres/blob/176bc3c3f06c7df2602331d65b779a6d08c56861/16/trixie/Dockerfile)
 
--	[`16.9-bullseye`, `16-bullseye`](https://github.com/docker-library/postgres/blob/2c6fe8daca9d2ccc143afe6b1cdbc1eb80379d3f/16/bullseye/Dockerfile)
+-	[`16.9-bookworm`, `16-bookworm`](https://github.com/docker-library/postgres/blob/2c6fe8daca9d2ccc143afe6b1cdbc1eb80379d3f/16/bookworm/Dockerfile)
 
 -	[`16.9-alpine3.22`, `16-alpine3.22`, `16.9-alpine`, `16-alpine`](https://github.com/docker-library/postgres/blob/2c6fe8daca9d2ccc143afe6b1cdbc1eb80379d3f/16/alpine3.22/Dockerfile)
 
 -	[`16.9-alpine3.21`, `16-alpine3.21`](https://github.com/docker-library/postgres/blob/2c6fe8daca9d2ccc143afe6b1cdbc1eb80379d3f/16/alpine3.21/Dockerfile)
 
--	[`15.13`, `15`, `15.13-bookworm`, `15-bookworm`](https://github.com/docker-library/postgres/blob/2c6fe8daca9d2ccc143afe6b1cdbc1eb80379d3f/15/bookworm/Dockerfile)
+-	[`15.13`, `15`, `15.13-trixie`, `15-trixie`](https://github.com/docker-library/postgres/blob/176bc3c3f06c7df2602331d65b779a6d08c56861/15/trixie/Dockerfile)
 
--	[`15.13-bullseye`, `15-bullseye`](https://github.com/docker-library/postgres/blob/2c6fe8daca9d2ccc143afe6b1cdbc1eb80379d3f/15/bullseye/Dockerfile)
+-	[`15.13-bookworm`, `15-bookworm`](https://github.com/docker-library/postgres/blob/2c6fe8daca9d2ccc143afe6b1cdbc1eb80379d3f/15/bookworm/Dockerfile)
 
 -	[`15.13-alpine3.22`, `15-alpine3.22`, `15.13-alpine`, `15-alpine`](https://github.com/docker-library/postgres/blob/2c6fe8daca9d2ccc143afe6b1cdbc1eb80379d3f/15/alpine3.22/Dockerfile)
 
 -	[`15.13-alpine3.21`, `15-alpine3.21`](https://github.com/docker-library/postgres/blob/2c6fe8daca9d2ccc143afe6b1cdbc1eb80379d3f/15/alpine3.21/Dockerfile)
 
--	[`14.18`, `14`, `14.18-bookworm`, `14-bookworm`](https://github.com/docker-library/postgres/blob/2c6fe8daca9d2ccc143afe6b1cdbc1eb80379d3f/14/bookworm/Dockerfile)
+-	[`14.18`, `14`, `14.18-trixie`, `14-trixie`](https://github.com/docker-library/postgres/blob/176bc3c3f06c7df2602331d65b779a6d08c56861/14/trixie/Dockerfile)
 
--	[`14.18-bullseye`, `14-bullseye`](https://github.com/docker-library/postgres/blob/2c6fe8daca9d2ccc143afe6b1cdbc1eb80379d3f/14/bullseye/Dockerfile)
+-	[`14.18-bookworm`, `14-bookworm`](https://github.com/docker-library/postgres/blob/2c6fe8daca9d2ccc143afe6b1cdbc1eb80379d3f/14/bookworm/Dockerfile)
 
 -	[`14.18-alpine3.22`, `14-alpine3.22`, `14.18-alpine`, `14-alpine`](https://github.com/docker-library/postgres/blob/2c6fe8daca9d2ccc143afe6b1cdbc1eb80379d3f/14/alpine3.22/Dockerfile)
 
 -	[`14.18-alpine3.21`, `14-alpine3.21`](https://github.com/docker-library/postgres/blob/2c6fe8daca9d2ccc143afe6b1cdbc1eb80379d3f/14/alpine3.21/Dockerfile)
 
--	[`13.21`, `13`, `13.21-bookworm`, `13-bookworm`](https://github.com/docker-library/postgres/blob/2c6fe8daca9d2ccc143afe6b1cdbc1eb80379d3f/13/bookworm/Dockerfile)
+-	[`13.21`, `13`, `13.21-trixie`, `13-trixie`](https://github.com/docker-library/postgres/blob/176bc3c3f06c7df2602331d65b779a6d08c56861/13/trixie/Dockerfile)
 
--	[`13.21-bullseye`, `13-bullseye`](https://github.com/docker-library/postgres/blob/2c6fe8daca9d2ccc143afe6b1cdbc1eb80379d3f/13/bullseye/Dockerfile)
+-	[`13.21-bookworm`, `13-bookworm`](https://github.com/docker-library/postgres/blob/2c6fe8daca9d2ccc143afe6b1cdbc1eb80379d3f/13/bookworm/Dockerfile)
 
 -	[`13.21-alpine3.22`, `13-alpine3.22`, `13.21-alpine`, `13-alpine`](https://github.com/docker-library/postgres/blob/2c6fe8daca9d2ccc143afe6b1cdbc1eb80379d3f/13/alpine3.22/Dockerfile)
 
@@ -396,7 +396,7 @@ The `postgres` images come in many flavors, each designed for a specific use cas
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like bookworm or bullseye in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+Some of these tags may have names like bookworm or trixie in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 ## `postgres:<version>-alpine`
 

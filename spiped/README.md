@@ -24,7 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.6.4`, `1.6`, `1`, `latest`](https://github.com/TimWolla/docker-spiped/blob/6cfa21da993903156ca7347b6f0f9e8111d46671/1.6/Dockerfile)
+-	[`1.6.4`, `1.6`, `1`, `latest`](https://github.com/TimWolla/docker-spiped/blob/6df25f7ecdd98bd0de7726944ed64165699d2edb/1.6/Dockerfile)
 
 -	[`1.6.4-alpine`, `1.6-alpine`, `1-alpine`, `alpine`](https://github.com/TimWolla/docker-spiped/blob/2a6429d25e5ebccc2a8075cb8ec85d5dd951579e/1.6/alpine/Dockerfile)
 
@@ -34,7 +34,7 @@ WARNING:
 	[https://github.com/TimWolla/docker-spiped/issues](https://github.com/TimWolla/docker-spiped/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/spiped/), [`arm32v5`](https://hub.docker.com/r/arm32v5/spiped/), [`arm32v6`](https://hub.docker.com/r/arm32v6/spiped/), [`arm32v7`](https://hub.docker.com/r/arm32v7/spiped/), [`arm64v8`](https://hub.docker.com/r/arm64v8/spiped/), [`i386`](https://hub.docker.com/r/i386/spiped/), [`mips64le`](https://hub.docker.com/r/mips64le/spiped/), [`ppc64le`](https://hub.docker.com/r/ppc64le/spiped/), [`riscv64`](https://hub.docker.com/r/riscv64/spiped/), [`s390x`](https://hub.docker.com/r/s390x/spiped/)
+	[`amd64`](https://hub.docker.com/r/amd64/spiped/), [`arm32v5`](https://hub.docker.com/r/arm32v5/spiped/), [`arm32v6`](https://hub.docker.com/r/arm32v6/spiped/), [`arm32v7`](https://hub.docker.com/r/arm32v7/spiped/), [`arm64v8`](https://hub.docker.com/r/arm64v8/spiped/), [`i386`](https://hub.docker.com/r/i386/spiped/), [`ppc64le`](https://hub.docker.com/r/ppc64le/spiped/), [`riscv64`](https://hub.docker.com/r/riscv64/spiped/), [`s390x`](https://hub.docker.com/r/s390x/spiped/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/spiped/` directory](https://github.com/docker-library/repo-info/blob/master/repos/spiped) ([history](https://github.com/docker-library/repo-info/commits/master/repos/spiped))  

@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`15.2.0`, `15.2`, `15`, `latest`, `15.2.0-bookworm`, `15.2-bookworm`, `15-bookworm`, `bookworm`](https://github.com/docker-library/gcc/blob/339fcb5f09293ecdb47d6ae0b36b12509f0080e3/15/Dockerfile)
+-	[`15.2.0`, `15.2`, `15`, `latest`, `15.2.0-trixie`, `15.2-trixie`, `15-trixie`, `trixie`](https://github.com/docker-library/gcc/blob/915af5ccbb6b09575e244f280c26925e77172039/15/Dockerfile)
 
--	[`14.3.0`, `14.3`, `14`, `14.3.0-bookworm`, `14.3-bookworm`, `14-bookworm`](https://github.com/docker-library/gcc/blob/d262936418fbf062bb25907d5126a178578ab58b/14/Dockerfile)
+-	[`14.3.0`, `14.3`, `14`, `14.3.0-trixie`, `14.3-trixie`, `14-trixie`](https://github.com/docker-library/gcc/blob/280306a58a2ff0c21a95ed8abe882ac483d03c8b/14/Dockerfile)
 
 -	[`13.4.0`, `13.4`, `13`, `13.4.0-bookworm`, `13.4-bookworm`, `13-bookworm`](https://github.com/docker-library/gcc/blob/118c07a8e6467baababb4634b6cfde14a67c24b0/13/Dockerfile)
 
@@ -38,7 +38,7 @@ WARNING:
 	[https://github.com/docker-library/gcc/issues](https://github.com/docker-library/gcc/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/gcc/), [`arm32v5`](https://hub.docker.com/r/arm32v5/gcc/), [`arm32v7`](https://hub.docker.com/r/arm32v7/gcc/), [`arm64v8`](https://hub.docker.com/r/arm64v8/gcc/), [`ppc64le`](https://hub.docker.com/r/ppc64le/gcc/), [`s390x`](https://hub.docker.com/r/s390x/gcc/)
+	[`amd64`](https://hub.docker.com/r/amd64/gcc/), [`arm32v5`](https://hub.docker.com/r/arm32v5/gcc/), [`arm32v7`](https://hub.docker.com/r/arm32v7/gcc/), [`arm64v8`](https://hub.docker.com/r/arm64v8/gcc/), [`ppc64le`](https://hub.docker.com/r/ppc64le/gcc/), [`riscv64`](https://hub.docker.com/r/riscv64/gcc/), [`s390x`](https://hub.docker.com/r/s390x/gcc/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/gcc/` directory](https://github.com/docker-library/repo-info/blob/master/repos/gcc) ([history](https://github.com/docker-library/repo-info/commits/master/repos/gcc))  

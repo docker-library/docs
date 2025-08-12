@@ -28,9 +28,9 @@ WARNING:
 
 ## Simple Tags
 
--	[`1.12.0-rc1-bookworm`, `1.12-rc-bookworm`, `rc-bookworm`](https://github.com/docker-library/julia/blob/ae32a8143b0792d4b9859822e8c8b2f8cf29455a/1.12-rc/bookworm/Dockerfile)
+-	[`1.12.0-rc1-trixie`, `1.12-rc-trixie`, `rc-trixie`](https://github.com/docker-library/julia/blob/25081b47fd632d8a7140a3fede2da1db2d96aee5/1.12-rc/trixie/Dockerfile)
 
--	[`1.12.0-rc1-bullseye`, `1.12-rc-bullseye`, `rc-bullseye`](https://github.com/docker-library/julia/blob/ae32a8143b0792d4b9859822e8c8b2f8cf29455a/1.12-rc/bullseye/Dockerfile)
+-	[`1.12.0-rc1-bookworm`, `1.12-rc-bookworm`, `rc-bookworm`](https://github.com/docker-library/julia/blob/ae32a8143b0792d4b9859822e8c8b2f8cf29455a/1.12-rc/bookworm/Dockerfile)
 
 -	[`1.12.0-rc1-alpine3.22`, `1.12-rc-alpine3.22`, `rc-alpine3.22`, `1.12.0-rc1-alpine`, `1.12-rc-alpine`, `rc-alpine`](https://github.com/docker-library/julia/blob/ae32a8143b0792d4b9859822e8c8b2f8cf29455a/1.12-rc/alpine3.22/Dockerfile)
 
@@ -40,9 +40,9 @@ WARNING:
 
 -	[`1.12.0-rc1-windowsservercore-ltsc2022`, `1.12-rc-windowsservercore-ltsc2022`, `rc-windowsservercore-ltsc2022`](https://github.com/docker-library/julia/blob/ae32a8143b0792d4b9859822e8c8b2f8cf29455a/1.12-rc/windows/windowsservercore-ltsc2022/Dockerfile)
 
--	[`1.11.6-bookworm`, `1.11-bookworm`, `1-bookworm`, `bookworm`](https://github.com/docker-library/julia/blob/7237d625608943c4717366d9bde4e014771ffefc/1.11/bookworm/Dockerfile)
+-	[`1.11.6-trixie`, `1.11-trixie`, `1-trixie`, `trixie`](https://github.com/docker-library/julia/blob/25081b47fd632d8a7140a3fede2da1db2d96aee5/1.11/trixie/Dockerfile)
 
--	[`1.11.6-bullseye`, `1.11-bullseye`, `1-bullseye`, `bullseye`](https://github.com/docker-library/julia/blob/7237d625608943c4717366d9bde4e014771ffefc/1.11/bullseye/Dockerfile)
+-	[`1.11.6-bookworm`, `1.11-bookworm`, `1-bookworm`, `bookworm`](https://github.com/docker-library/julia/blob/7237d625608943c4717366d9bde4e014771ffefc/1.11/bookworm/Dockerfile)
 
 -	[`1.11.6-alpine3.22`, `1.11-alpine3.22`, `1-alpine3.22`, `alpine3.22`, `1.11.6-alpine`, `1.11-alpine`, `1-alpine`, `alpine`](https://github.com/docker-library/julia/blob/7237d625608943c4717366d9bde4e014771ffefc/1.11/alpine3.22/Dockerfile)
 
@@ -52,9 +52,9 @@ WARNING:
 
 -	[`1.11.6-windowsservercore-ltsc2022`, `1.11-windowsservercore-ltsc2022`, `1-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`](https://github.com/docker-library/julia/blob/7237d625608943c4717366d9bde4e014771ffefc/1.11/windows/windowsservercore-ltsc2022/Dockerfile)
 
--	[`1.10.10-bookworm`, `1.10-bookworm`](https://github.com/docker-library/julia/blob/36ec8a84fe6a3ac59872725f20e892e472b45227/1.10/bookworm/Dockerfile)
+-	[`1.10.10-trixie`, `1.10-trixie`](https://github.com/docker-library/julia/blob/25081b47fd632d8a7140a3fede2da1db2d96aee5/1.10/trixie/Dockerfile)
 
--	[`1.10.10-bullseye`, `1.10-bullseye`](https://github.com/docker-library/julia/blob/36ec8a84fe6a3ac59872725f20e892e472b45227/1.10/bullseye/Dockerfile)
+-	[`1.10.10-bookworm`, `1.10-bookworm`](https://github.com/docker-library/julia/blob/36ec8a84fe6a3ac59872725f20e892e472b45227/1.10/bookworm/Dockerfile)
 
 -	[`1.10.10-alpine3.22`, `1.10-alpine3.22`, `1.10.10-alpine`, `1.10-alpine`](https://github.com/docker-library/julia/blob/36ec8a84fe6a3ac59872725f20e892e472b45227/1.10/alpine3.22/Dockerfile)
 
@@ -68,7 +68,7 @@ WARNING:
 
 -	`1.12.0-rc1`, `1.12-rc`, `rc`:
 
-	-	[`1.12.0-rc1-bookworm`](https://github.com/docker-library/julia/blob/ae32a8143b0792d4b9859822e8c8b2f8cf29455a/1.12-rc/bookworm/Dockerfile)
+	-	[`1.12.0-rc1-trixie`](https://github.com/docker-library/julia/blob/25081b47fd632d8a7140a3fede2da1db2d96aee5/1.12-rc/trixie/Dockerfile)
 	-	[`1.12.0-rc1-windowsservercore-ltsc2025`](https://github.com/docker-library/julia/blob/ae32a8143b0792d4b9859822e8c8b2f8cf29455a/1.12-rc/windows/windowsservercore-ltsc2025/Dockerfile)
 	-	[`1.12.0-rc1-windowsservercore-ltsc2022`](https://github.com/docker-library/julia/blob/ae32a8143b0792d4b9859822e8c8b2f8cf29455a/1.12-rc/windows/windowsservercore-ltsc2022/Dockerfile)
 
@@ -79,7 +79,7 @@ WARNING:
 
 -	`1.11.6`, `1.11`, `1`, `latest`:
 
-	-	[`1.11.6-bookworm`](https://github.com/docker-library/julia/blob/7237d625608943c4717366d9bde4e014771ffefc/1.11/bookworm/Dockerfile)
+	-	[`1.11.6-trixie`](https://github.com/docker-library/julia/blob/25081b47fd632d8a7140a3fede2da1db2d96aee5/1.11/trixie/Dockerfile)
 	-	[`1.11.6-windowsservercore-ltsc2025`](https://github.com/docker-library/julia/blob/7237d625608943c4717366d9bde4e014771ffefc/1.11/windows/windowsservercore-ltsc2025/Dockerfile)
 	-	[`1.11.6-windowsservercore-ltsc2022`](https://github.com/docker-library/julia/blob/7237d625608943c4717366d9bde4e014771ffefc/1.11/windows/windowsservercore-ltsc2022/Dockerfile)
 
@@ -90,7 +90,7 @@ WARNING:
 
 -	`1.10.10`, `1.10`:
 
-	-	[`1.10.10-bookworm`](https://github.com/docker-library/julia/blob/36ec8a84fe6a3ac59872725f20e892e472b45227/1.10/bookworm/Dockerfile)
+	-	[`1.10.10-trixie`](https://github.com/docker-library/julia/blob/25081b47fd632d8a7140a3fede2da1db2d96aee5/1.10/trixie/Dockerfile)
 	-	[`1.10.10-windowsservercore-ltsc2025`](https://github.com/docker-library/julia/blob/36ec8a84fe6a3ac59872725f20e892e472b45227/1.10/windows/windowsservercore-ltsc2025/Dockerfile)
 	-	[`1.10.10-windowsservercore-ltsc2022`](https://github.com/docker-library/julia/blob/36ec8a84fe6a3ac59872725f20e892e472b45227/1.10/windows/windowsservercore-ltsc2022/Dockerfile)
 
@@ -156,7 +156,7 @@ The `julia` images come in many flavors, each designed for a specific use case.
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like bookworm or bullseye in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+Some of these tags may have names like bookworm or trixie in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 ## `julia:<version>-alpine`
 

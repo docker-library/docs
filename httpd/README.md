@@ -24,7 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.4.65`, `2.4`, `2`, `latest`, `2.4.65-bookworm`, `2.4-bookworm`, `2-bookworm`, `bookworm`](https://github.com/docker-library/httpd/blob/42b1c8997488557ae90e80ff64a90830b1563d75/2.4/Dockerfile)
+-	[`2.4.65`, `2.4`, `2`, `latest`, `2.4.65-trixie`, `2.4-trixie`, `2-trixie`, `trixie`](https://github.com/docker-library/httpd/blob/684a447a23a8035356d5cce42e1f85212cfd39a3/2.4/Dockerfile)
 
 -	[`2.4.65-alpine`, `2.4-alpine`, `2-alpine`, `alpine`, `2.4.65-alpine3.22`, `2.4-alpine3.22`, `2-alpine3.22`, `alpine3.22`](https://github.com/docker-library/httpd/blob/42b1c8997488557ae90e80ff64a90830b1563d75/2.4/alpine/Dockerfile)
 
@@ -34,7 +34,7 @@ WARNING:
 	[https://github.com/docker-library/httpd/issues](https://github.com/docker-library/httpd/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/httpd/), [`arm32v5`](https://hub.docker.com/r/arm32v5/httpd/), [`arm32v6`](https://hub.docker.com/r/arm32v6/httpd/), [`arm32v7`](https://hub.docker.com/r/arm32v7/httpd/), [`arm64v8`](https://hub.docker.com/r/arm64v8/httpd/), [`i386`](https://hub.docker.com/r/i386/httpd/), [`mips64le`](https://hub.docker.com/r/mips64le/httpd/), [`ppc64le`](https://hub.docker.com/r/ppc64le/httpd/), [`riscv64`](https://hub.docker.com/r/riscv64/httpd/), [`s390x`](https://hub.docker.com/r/s390x/httpd/)
+	[`amd64`](https://hub.docker.com/r/amd64/httpd/), [`arm32v5`](https://hub.docker.com/r/arm32v5/httpd/), [`arm32v6`](https://hub.docker.com/r/arm32v6/httpd/), [`arm32v7`](https://hub.docker.com/r/arm32v7/httpd/), [`arm64v8`](https://hub.docker.com/r/arm64v8/httpd/), [`i386`](https://hub.docker.com/r/i386/httpd/), [`ppc64le`](https://hub.docker.com/r/ppc64le/httpd/), [`riscv64`](https://hub.docker.com/r/riscv64/httpd/), [`s390x`](https://hub.docker.com/r/s390x/httpd/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/httpd/` directory](https://github.com/docker-library/repo-info/blob/master/repos/httpd) ([history](https://github.com/docker-library/repo-info/commits/master/repos/httpd))  
@@ -134,7 +134,7 @@ The `httpd` images come in many flavors, each designed for a specific use case.
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like bookworm in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+Some of these tags may have names like trixie in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 ## `httpd:<version>-alpine`
 
