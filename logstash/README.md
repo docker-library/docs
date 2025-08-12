@@ -24,15 +24,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.17.9`](https://github.com/elastic/dockerfiles/blob/60c38c02ab0ce7b60f5045d9ae5badf5f9931527/logstash/Dockerfile)
+-	[`8.17.10`](https://github.com/elastic/dockerfiles/blob/3861498adce22926e852b1bbec340f159147a47f/logstash/Dockerfile)
 
--	[`8.18.4`](https://github.com/elastic/dockerfiles/blob/879005c2065f0c8d78fa6d978ce161fd38734600/logstash/Dockerfile)
+-	[`8.18.5`](https://github.com/elastic/dockerfiles/blob/0b55e4071466454c4a0241f6cf41198d5a88df1d/logstash/Dockerfile)
 
--	[`8.19.1`](https://github.com/elastic/dockerfiles/blob/aa4f933ca3fcaec6be3f3bb1d1288e7024f661a1/logstash/Dockerfile)
+-	[`8.19.2`](https://github.com/elastic/dockerfiles/blob/2ed23b0bc3f4c094097cc7ec75bcd359abd0018f/logstash/Dockerfile)
 
--	[`9.0.4`](https://github.com/elastic/dockerfiles/blob/8052f28559ff55a203e9ce99ecb48251bbc67079/logstash/Dockerfile)
+-	[`9.0.5`](https://github.com/elastic/dockerfiles/blob/e69a6a63c299a6ac53e838174d1f451392ff2bdc/logstash/Dockerfile)
 
--	[`9.1.1`](https://github.com/elastic/dockerfiles/blob/602b1d0e025f8a0f95c755705c5d03240c12e6b3/logstash/Dockerfile)
+-	[`9.1.2`](https://github.com/elastic/dockerfiles/blob/b39c617bff558b7359b49ceeabb88c31949a670f/logstash/Dockerfile)
 
 # Quick reference (cont.)
 
