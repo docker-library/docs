@@ -26,25 +26,29 @@ Also see the ["Getting Help with MariaDB" article on the MariaDB Knowledge Base]
 
 # Supported tags and respective `Dockerfile` links
 
--	[`12.0.1-ubi9-rc`, `12.0-ubi9-rc`, `12.0.1-ubi-rc`, `12.0-ubi-rc`](https://github.com/MariaDB/mariadb-docker/blob/e9903b927ef46dc55fc6900ab015e4314349699a/12.0-ubi/Dockerfile)
+-	[`12.1.1-ubi10-rc`, `12.1-ubi10-rc`, `12.1.1-ubi-rc`, `12.1-ubi-rc`](https://github.com/MariaDB/mariadb-docker/blob/dd7e1e1e35422011e9dbfa46f22c9e24f49e9fba/12.1-ubi/Dockerfile)
 
--	[`12.0.1-noble-rc`, `12.0-noble-rc`, `12.0.1-rc`, `12.0-rc`](https://github.com/MariaDB/mariadb-docker/blob/e9903b927ef46dc55fc6900ab015e4314349699a/12.0/Dockerfile)
+-	[`12.1.1-noble-rc`, `12.1-noble-rc`, `12.1.1-rc`, `12.1-rc`](https://github.com/MariaDB/mariadb-docker/blob/cdffb7d2fd712249f3f386497117825be6442afa/12.1/Dockerfile)
 
--	[`11.8.2-ubi9`, `11.8-ubi9`, `11-ubi9`, `lts-ubi9`, `11.8.2-ubi`, `11.8-ubi`, `11-ubi`, `lts-ubi`](https://github.com/MariaDB/mariadb-docker/blob/4c5048803b4785a1ef057c2d4c48b126a08348c6/11.8-ubi/Dockerfile)
+-	[`12.0.2-ubi10`, `12.0-ubi10`, `12-ubi10`, `12.0.2-ubi`, `12.0-ubi`, `12-ubi`](https://github.com/MariaDB/mariadb-docker/blob/dd7e1e1e35422011e9dbfa46f22c9e24f49e9fba/12.0-ubi/Dockerfile)
 
--	[`11.8.2-noble`, `11.8-noble`, `11-noble`, `noble`, `lts-noble`, `11.8.2`, `11.8`, `11`, `latest`, `lts`](https://github.com/MariaDB/mariadb-docker/blob/4c5048803b4785a1ef057c2d4c48b126a08348c6/11.8/Dockerfile)
+-	[`12.0.2-noble`, `12.0-noble`, `12-noble`, `noble`, `12.0.2`, `12.0`, `12`, `latest`](https://github.com/MariaDB/mariadb-docker/blob/6a5611cd9dd70a8dcb24195cc8dd2147dd6471e3/12.0/Dockerfile)
 
--	[`11.4.7-ubi9`, `11.4-ubi9`, `11.4.7-ubi`, `11.4-ubi`](https://github.com/MariaDB/mariadb-docker/blob/a272347802e1764dd8c0e15ba2b2abfeeadb3bb6/11.4-ubi/Dockerfile)
+-	[`11.8.3-ubi9`, `11.8-ubi9`, `11-ubi9`, `lts-ubi9`, `11.8.3-ubi`, `11.8-ubi`, `11-ubi`, `lts-ubi`](https://github.com/MariaDB/mariadb-docker/blob/dd7e1e1e35422011e9dbfa46f22c9e24f49e9fba/11.8-ubi/Dockerfile)
 
--	[`11.4.7-noble`, `11.4-noble`, `11.4.7`, `11.4`](https://github.com/MariaDB/mariadb-docker/blob/a272347802e1764dd8c0e15ba2b2abfeeadb3bb6/11.4/Dockerfile)
+-	[`11.8.3-noble`, `11.8-noble`, `11-noble`, `lts-noble`, `11.8.3`, `11.8`, `11`, `lts`](https://github.com/MariaDB/mariadb-docker/blob/cdffb7d2fd712249f3f386497117825be6442afa/11.8/Dockerfile)
 
--	[`10.11.13-ubi9`, `10.11-ubi9`, `10-ubi9`, `10.11.13-ubi`, `10.11-ubi`, `10-ubi`](https://github.com/MariaDB/mariadb-docker/blob/a272347802e1764dd8c0e15ba2b2abfeeadb3bb6/10.11-ubi/Dockerfile)
+-	[`11.4.8-ubi9`, `11.4-ubi9`, `11.4.8-ubi`, `11.4-ubi`](https://github.com/MariaDB/mariadb-docker/blob/dd7e1e1e35422011e9dbfa46f22c9e24f49e9fba/11.4-ubi/Dockerfile)
 
--	[`10.11.13-jammy`, `10.11-jammy`, `10-jammy`, `10.11.13`, `10.11`, `10`](https://github.com/MariaDB/mariadb-docker/blob/a272347802e1764dd8c0e15ba2b2abfeeadb3bb6/10.11/Dockerfile)
+-	[`11.4.8-noble`, `11.4-noble`, `11.4.8`, `11.4`](https://github.com/MariaDB/mariadb-docker/blob/cdffb7d2fd712249f3f386497117825be6442afa/11.4/Dockerfile)
 
--	[`10.6.22-ubi9`, `10.6-ubi9`, `10.6.22-ubi`, `10.6-ubi`](https://github.com/MariaDB/mariadb-docker/blob/c5669903a1c1f711039de61e480fbfd3549e1f86/10.6-ubi/Dockerfile)
+-	[`10.11.14-ubi9`, `10.11-ubi9`, `10-ubi9`, `10.11.14-ubi`, `10.11-ubi`, `10-ubi`](https://github.com/MariaDB/mariadb-docker/blob/dd7e1e1e35422011e9dbfa46f22c9e24f49e9fba/10.11-ubi/Dockerfile)
 
--	[`10.6.22-jammy`, `10.6-jammy`](https://github.com/MariaDB/mariadb-docker/blob/9bc98d6905a26282e6209da20970d9d4b055a384/10.6-jammy/Dockerfile)
+-	[`10.11.14-jammy`, `10.11-jammy`, `10-jammy`, `10.11.14`, `10.11`, `10`](https://github.com/MariaDB/mariadb-docker/blob/cdffb7d2fd712249f3f386497117825be6442afa/10.11/Dockerfile)
+
+-	[`10.6.23-ubi9`, `10.6-ubi9`, `10.6.23-ubi`, `10.6-ubi`](https://github.com/MariaDB/mariadb-docker/blob/dd7e1e1e35422011e9dbfa46f22c9e24f49e9fba/10.6-ubi/Dockerfile)
+
+-	[`10.6.23-jammy`, `10.6-jammy`, `10.6.23`, `10.6`](https://github.com/MariaDB/mariadb-docker/blob/cdffb7d2fd712249f3f386497117825be6442afa/10.6/Dockerfile)
 
 # Quick reference (cont.)
 
