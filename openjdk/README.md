@@ -46,13 +46,13 @@ The only tags which will continue to receive updates beyond July 2022 will be Ea
 
 -	[`26-ea-10-jdk-oraclelinux8`, `26-ea-10-oraclelinux8`, `26-ea-jdk-oraclelinux8`, `26-ea-oraclelinux8`, `26-jdk-oraclelinux8`, `26-oraclelinux8`](https://github.com/docker-library/openjdk/blob/e6ea4775388030187e24406f191f932fb707f7bd/26/jdk/oraclelinux8/Dockerfile)
 
+-	[`26-ea-10-jdk-trixie`, `26-ea-10-trixie`, `26-ea-jdk-trixie`, `26-ea-trixie`, `26-jdk-trixie`, `26-trixie`](https://github.com/docker-library/openjdk/blob/9fa18d4c199ab09c81ea596289a02fdcf0e684b1/26/jdk/trixie/Dockerfile)
+
+-	[`26-ea-10-jdk-slim-trixie`, `26-ea-10-slim-trixie`, `26-ea-jdk-slim-trixie`, `26-ea-slim-trixie`, `26-jdk-slim-trixie`, `26-slim-trixie`, `26-ea-10-jdk-slim`, `26-ea-10-slim`, `26-ea-jdk-slim`, `26-ea-slim`, `26-jdk-slim`, `26-slim`](https://github.com/docker-library/openjdk/blob/9fa18d4c199ab09c81ea596289a02fdcf0e684b1/26/jdk/slim-trixie/Dockerfile)
+
 -	[`26-ea-10-jdk-bookworm`, `26-ea-10-bookworm`, `26-ea-jdk-bookworm`, `26-ea-bookworm`, `26-jdk-bookworm`, `26-bookworm`](https://github.com/docker-library/openjdk/blob/e6ea4775388030187e24406f191f932fb707f7bd/26/jdk/bookworm/Dockerfile)
 
--	[`26-ea-10-jdk-slim-bookworm`, `26-ea-10-slim-bookworm`, `26-ea-jdk-slim-bookworm`, `26-ea-slim-bookworm`, `26-jdk-slim-bookworm`, `26-slim-bookworm`, `26-ea-10-jdk-slim`, `26-ea-10-slim`, `26-ea-jdk-slim`, `26-ea-slim`, `26-jdk-slim`, `26-slim`](https://github.com/docker-library/openjdk/blob/e6ea4775388030187e24406f191f932fb707f7bd/26/jdk/slim-bookworm/Dockerfile)
-
--	[`26-ea-10-jdk-bullseye`, `26-ea-10-bullseye`, `26-ea-jdk-bullseye`, `26-ea-bullseye`, `26-jdk-bullseye`, `26-bullseye`](https://github.com/docker-library/openjdk/blob/e6ea4775388030187e24406f191f932fb707f7bd/26/jdk/bullseye/Dockerfile)
-
--	[`26-ea-10-jdk-slim-bullseye`, `26-ea-10-slim-bullseye`, `26-ea-jdk-slim-bullseye`, `26-ea-slim-bullseye`, `26-jdk-slim-bullseye`, `26-slim-bullseye`](https://github.com/docker-library/openjdk/blob/e6ea4775388030187e24406f191f932fb707f7bd/26/jdk/slim-bullseye/Dockerfile)
+-	[`26-ea-10-jdk-slim-bookworm`, `26-ea-10-slim-bookworm`, `26-ea-jdk-slim-bookworm`, `26-ea-slim-bookworm`, `26-jdk-slim-bookworm`, `26-slim-bookworm`](https://github.com/docker-library/openjdk/blob/e6ea4775388030187e24406f191f932fb707f7bd/26/jdk/slim-bookworm/Dockerfile)
 
 -	[`26-ea-10-jdk-windowsservercore-ltsc2025`, `26-ea-10-windowsservercore-ltsc2025`, `26-ea-jdk-windowsservercore-ltsc2025`, `26-ea-windowsservercore-ltsc2025`, `26-jdk-windowsservercore-ltsc2025`, `26-windowsservercore-ltsc2025`](https://github.com/docker-library/openjdk/blob/e6ea4775388030187e24406f191f932fb707f7bd/26/jdk/windows/windowsservercore-ltsc2025/Dockerfile)
 
@@ -66,13 +66,13 @@ The only tags which will continue to receive updates beyond July 2022 will be Ea
 
 -	[`25-rc-jdk-oraclelinux8`, `25-rc-oraclelinux8`, `25-jdk-oraclelinux8`, `25-oraclelinux8`](https://github.com/docker-library/openjdk/blob/0ef4c9faaa4fc9072be73522f4bbd5298a098505/25/jdk/oraclelinux8/Dockerfile)
 
+-	[`25-rc-jdk-trixie`, `25-rc-trixie`, `25-jdk-trixie`, `25-trixie`](https://github.com/docker-library/openjdk/blob/9fa18d4c199ab09c81ea596289a02fdcf0e684b1/25/jdk/trixie/Dockerfile)
+
+-	[`25-rc-jdk-slim-trixie`, `25-rc-slim-trixie`, `25-jdk-slim-trixie`, `25-slim-trixie`, `25-rc-jdk-slim`, `25-rc-slim`, `25-jdk-slim`, `25-slim`](https://github.com/docker-library/openjdk/blob/9fa18d4c199ab09c81ea596289a02fdcf0e684b1/25/jdk/slim-trixie/Dockerfile)
+
 -	[`25-rc-jdk-bookworm`, `25-rc-bookworm`, `25-jdk-bookworm`, `25-bookworm`](https://github.com/docker-library/openjdk/blob/0ef4c9faaa4fc9072be73522f4bbd5298a098505/25/jdk/bookworm/Dockerfile)
 
--	[`25-rc-jdk-slim-bookworm`, `25-rc-slim-bookworm`, `25-jdk-slim-bookworm`, `25-slim-bookworm`, `25-rc-jdk-slim`, `25-rc-slim`, `25-jdk-slim`, `25-slim`](https://github.com/docker-library/openjdk/blob/0ef4c9faaa4fc9072be73522f4bbd5298a098505/25/jdk/slim-bookworm/Dockerfile)
-
--	[`25-rc-jdk-bullseye`, `25-rc-bullseye`, `25-jdk-bullseye`, `25-bullseye`](https://github.com/docker-library/openjdk/blob/0ef4c9faaa4fc9072be73522f4bbd5298a098505/25/jdk/bullseye/Dockerfile)
-
--	[`25-rc-jdk-slim-bullseye`, `25-rc-slim-bullseye`, `25-jdk-slim-bullseye`, `25-slim-bullseye`](https://github.com/docker-library/openjdk/blob/0ef4c9faaa4fc9072be73522f4bbd5298a098505/25/jdk/slim-bullseye/Dockerfile)
+-	[`25-rc-jdk-slim-bookworm`, `25-rc-slim-bookworm`, `25-jdk-slim-bookworm`, `25-slim-bookworm`](https://github.com/docker-library/openjdk/blob/0ef4c9faaa4fc9072be73522f4bbd5298a098505/25/jdk/slim-bookworm/Dockerfile)
 
 -	[`25-rc-jdk-windowsservercore-ltsc2025`, `25-rc-windowsservercore-ltsc2025`, `25-jdk-windowsservercore-ltsc2025`, `25-windowsservercore-ltsc2025`](https://github.com/docker-library/openjdk/blob/0ef4c9faaa4fc9072be73522f4bbd5298a098505/25/jdk/windows/windowsservercore-ltsc2025/Dockerfile)
 
@@ -204,7 +204,7 @@ The `openjdk` images come in many flavors, each designed for a specific use case
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like bookworm or bullseye in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+Some of these tags may have names like bookworm or trixie in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 ## `openjdk:<version>` (from 12 onwards), `openjdk:<version>-oracle` and `openjdk:<version>-oraclelinux8`
 
