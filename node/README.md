@@ -36,6 +36,10 @@ WARNING:
 
 -	[`24-bullseye-slim`, `24.5-bullseye-slim`, `24.5.0-bullseye-slim`, `bullseye-slim`, `current-bullseye-slim`](https://github.com/nodejs/docker-node/blob/de1c8c994e1bf8a5843ff7d4d987eee0cad69243/24/bullseye-slim/Dockerfile)
 
+-	[`24-trixie`, `24.5-trixie`, `24.5.0-trixie`, `current-trixie`, `trixie`](https://github.com/nodejs/docker-node/blob/f9e105af51a35a84638d79cf717c507075f33985/24/trixie/Dockerfile)
+
+-	[`24-trixie-slim`, `24.5-trixie-slim`, `24.5.0-trixie-slim`, `current-trixie-slim`, `trixie-slim`](https://github.com/nodejs/docker-node/blob/f9e105af51a35a84638d79cf717c507075f33985/24/trixie-slim/Dockerfile)
+
 -	[`22-alpine3.21`, `22.18-alpine3.21`, `22.18.0-alpine3.21`, `jod-alpine3.21`, `lts-alpine3.21`](https://github.com/nodejs/docker-node/blob/de1c8c994e1bf8a5843ff7d4d987eee0cad69243/22/alpine3.21/Dockerfile)
 
 -	[`22-alpine`, `22-alpine3.22`, `22.18-alpine`, `22.18-alpine3.22`, `22.18.0-alpine`, `22.18.0-alpine3.22`, `jod-alpine`, `jod-alpine3.22`, `lts-alpine`, `lts-alpine3.22`](https://github.com/nodejs/docker-node/blob/de1c8c994e1bf8a5843ff7d4d987eee0cad69243/22/alpine3.22/Dockerfile)
@@ -48,6 +52,10 @@ WARNING:
 
 -	[`22-bullseye-slim`, `22.18-bullseye-slim`, `22.18.0-bullseye-slim`, `jod-bullseye-slim`, `lts-bullseye-slim`](https://github.com/nodejs/docker-node/blob/de1c8c994e1bf8a5843ff7d4d987eee0cad69243/22/bullseye-slim/Dockerfile)
 
+-	[`22-trixie`, `22.18-trixie`, `22.18.0-trixie`, `jod-trixie`, `lts-trixie`](https://github.com/nodejs/docker-node/blob/f9e105af51a35a84638d79cf717c507075f33985/22/trixie/Dockerfile)
+
+-	[`22-trixie-slim`, `22.18-trixie-slim`, `22.18.0-trixie-slim`, `jod-trixie-slim`, `lts-trixie-slim`](https://github.com/nodejs/docker-node/blob/f9e105af51a35a84638d79cf717c507075f33985/22/trixie-slim/Dockerfile)
+
 -	[`20-alpine3.21`, `20.19-alpine3.21`, `20.19.4-alpine3.21`, `iron-alpine3.21`](https://github.com/nodejs/docker-node/blob/c33478265e946cb3c22fd6b404137588fc18c12a/20/alpine3.21/Dockerfile)
 
 -	[`20-alpine`, `20-alpine3.22`, `20.19-alpine`, `20.19-alpine3.22`, `20.19.4-alpine`, `20.19.4-alpine3.22`, `iron-alpine`, `iron-alpine3.22`](https://github.com/nodejs/docker-node/blob/c33478265e946cb3c22fd6b404137588fc18c12a/20/alpine3.22/Dockerfile)
@@ -59,6 +67,10 @@ WARNING:
 -	[`20-bullseye`, `20.19-bullseye`, `20.19.4-bullseye`, `iron-bullseye`](https://github.com/nodejs/docker-node/blob/c33478265e946cb3c22fd6b404137588fc18c12a/20/bullseye/Dockerfile)
 
 -	[`20-bullseye-slim`, `20.19-bullseye-slim`, `20.19.4-bullseye-slim`, `iron-bullseye-slim`](https://github.com/nodejs/docker-node/blob/c3973687f2e3de90dd0ffac1199ab8d7221ac27a/20/bullseye-slim/Dockerfile)
+
+-	[`20-trixie`, `20.19-trixie`, `20.19.4-trixie`, `iron-trixie`](https://github.com/nodejs/docker-node/blob/f9e105af51a35a84638d79cf717c507075f33985/20/trixie/Dockerfile)
+
+-	[`20-trixie-slim`, `20.19-trixie-slim`, `20.19.4-trixie-slim`, `iron-trixie-slim`](https://github.com/nodejs/docker-node/blob/f9e105af51a35a84638d79cf717c507075f33985/20/trixie-slim/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -103,7 +115,7 @@ The `node` images come in many flavors, each designed for a specific use case.
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like bookworm or bullseye in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+Some of these tags may have names like bookworm, bullseye, or trixie in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 This tag is based off of [`buildpack-deps`](https://hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of Docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
 
