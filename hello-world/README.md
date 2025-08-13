@@ -28,7 +28,7 @@ WARNING:
 
 ## Simple Tags
 
--	[`linux`](https://github.com/docker-library/hello-world/blob/a71acd2dfb8c21c8e42a8f926ce37c1ffbf8eae7/amd64/hello-world/Dockerfile)
+-	[`linux`](https://github.com/docker-library/hello-world/blob/6930d60e10e81283a57be3ee3a2b5ca328a40304/amd64/hello-world/Dockerfile)
 
 -	[`nanoserver-ltsc2025`](https://github.com/docker-library/hello-world/blob/08987c71f648c985f54be2a80bed4223cbd0723b/amd64/hello-world/nanoserver-ltsc2025/Dockerfile)
 
@@ -38,7 +38,7 @@ WARNING:
 
 -	`latest`:
 
-	-	[`linux`](https://github.com/docker-library/hello-world/blob/a71acd2dfb8c21c8e42a8f926ce37c1ffbf8eae7/amd64/hello-world/Dockerfile)
+	-	[`linux`](https://github.com/docker-library/hello-world/blob/6930d60e10e81283a57be3ee3a2b5ca328a40304/amd64/hello-world/Dockerfile)
 	-	[`nanoserver-ltsc2025`](https://github.com/docker-library/hello-world/blob/08987c71f648c985f54be2a80bed4223cbd0723b/amd64/hello-world/nanoserver-ltsc2025/Dockerfile)
 	-	[`nanoserver-ltsc2022`](https://github.com/docker-library/hello-world/blob/c816763efda4774cc0c628dca3c7dbd93c099928/amd64/hello-world/nanoserver-ltsc2022/Dockerfile)
 
@@ -95,7 +95,7 @@ For more examples and ideas, visit:
 
 $ docker images hello-world
 REPOSITORY    TAG       IMAGE ID       SIZE
-hello-world   latest    74cc54e27dc4   10.07kB
+hello-world   latest    1b44b5a3e06a   10.07kB
 ```
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/01c12653951b2fe592c1f93a13b4e289ada0e3a1/hello-world/logo.png)
