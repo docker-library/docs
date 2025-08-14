@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.8.3-sdk`, `3.8-sdk`, `3-sdk`, `stable-sdk`, `sdk`, `3.8.3`, `3.8`, `3`, `stable`, `latest`](https://github.com/dart-lang/dart-docker/blob/19c93897da021cf96a8466f017fbba294b9cb4f6/stable/bookworm/Dockerfile)
+-	[`3.9.0-sdk`, `3.9-sdk`, `3-sdk`, `stable-sdk`, `sdk`, `3.9.0`, `3.9`, `3`, `stable`, `latest`](https://github.com/dart-lang/dart-docker/blob/6c30628c249e3915b95da3876f0c8f607e286bee/stable/trixie/Dockerfile)
 
--	[`3.9.0-333.4.beta-sdk`, `beta-sdk`, `3.9.0-333.4.beta`, `beta`](https://github.com/dart-lang/dart-docker/blob/19c93897da021cf96a8466f017fbba294b9cb4f6/beta/bookworm/Dockerfile)
+-	[`3.10.0-75.1.beta-sdk`, `beta-sdk`, `3.10.0-75.1.beta`, `beta`](https://github.com/dart-lang/dart-docker/blob/6c30628c249e3915b95da3876f0c8f607e286bee/beta/trixie/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -34,7 +34,7 @@ WARNING:
 	[https://github.com/dart-lang/dart-docker/issues](https://github.com/dart-lang/dart-docker/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/dart/), [`arm32v7`](https://hub.docker.com/r/arm32v7/dart/), [`arm64v8`](https://hub.docker.com/r/arm64v8/dart/)
+	[`amd64`](https://hub.docker.com/r/amd64/dart/), [`arm32v7`](https://hub.docker.com/r/arm32v7/dart/), [`arm64v8`](https://hub.docker.com/r/arm64v8/dart/), [`riscv64`](https://hub.docker.com/r/riscv64/dart/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/dart/` directory](https://github.com/docker-library/repo-info/blob/master/repos/dart) ([history](https://github.com/docker-library/repo-info/commits/master/repos/dart))  
