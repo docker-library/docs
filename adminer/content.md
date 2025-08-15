@@ -70,10 +70,10 @@ To load a custom plugin you can add PHP scripts that return the instance of the 
 
 The image bundles all the designs that are available in the source package of adminer. You can find the list of designs on GitHub: https://github.com/vrana/adminer/tree/master/designs.
 
-To use a bundled design you can pass its name in `ADMINER_DESIGN`:
+To use a bundled design you can pass its name in `ADMINER_DESIGN` (light theme) or `ADMINER_DESIGN_DARK` (dark theme) or both:
 
 ```console
-$ docker run --link some_database:db -p 8080:8080 -e ADMINER_DESIGN='nette' %%IMAGE%%
+$ docker run --link some_database:db -p 8080:8080 -e ADMINER_DESIGN='nette' -e ADMINER_DESIGN_DARK='dracula' %%IMAGE%%
 ```
 
 To use a custom design you can add a file called `/var/www/html/adminer.css`.
