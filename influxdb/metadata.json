@@ -1,7 +1,9 @@
 {
   "hub": {
     "categories": [
-      "databases-and-storage"
+      "data-science",
+      "databases-and-storage",
+      "internet-of-things"
     ]
   }
 }
