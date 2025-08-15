@@ -32,10 +32,6 @@ WARNING:
 
 -	[`6.1.2-jammy-slim`, `6.1-jammy-slim`, `jammy-slim`](https://github.com/apple/swift-docker/blob/28756f801d3772456301075fcb70b1ef5cda0b6b/6.1/ubuntu/22.04/slim/Dockerfile)
 
--	[`6.1.2-focal-slim`, `6.1-focal-slim`, `focal-slim`](https://github.com/apple/swift-docker/blob/28756f801d3772456301075fcb70b1ef5cda0b6b/6.1/ubuntu/20.04/slim/Dockerfile)
-
--	[`6.1.2-focal`, `6.1-focal`, `focal`](https://github.com/apple/swift-docker/blob/28756f801d3772456301075fcb70b1ef5cda0b6b/6.1/ubuntu/20.04/Dockerfile)
-
 -	[`6.1.2-bookworm`, `6.1-bookworm`, `bookworm`](https://github.com/apple/swift-docker/blob/28756f801d3772456301075fcb70b1ef5cda0b6b/6.1/debian/12/Dockerfile)
 
 -	[`6.1.2-amazonlinux2`, `6.1-amazonlinux2`, `amazonlinux2`](https://github.com/apple/swift-docker/blob/28756f801d3772456301075fcb70b1ef5cda0b6b/6.1/amazonlinux/2/Dockerfile)
@@ -56,10 +52,6 @@ WARNING:
 
 -	[`6.0.3-jammy-slim`, `6.0-jammy-slim`](https://github.com/apple/swift-docker/blob/f44060cdf224436060d2df98a5c3f63f2600de63/6.0/ubuntu/22.04/slim/Dockerfile)
 
--	[`6.0.3-focal-slim`, `6.0-focal-slim`](https://github.com/apple/swift-docker/blob/f44060cdf224436060d2df98a5c3f63f2600de63/6.0/ubuntu/20.04/slim/Dockerfile)
-
--	[`6.0.3-focal`, `6.0-focal`](https://github.com/apple/swift-docker/blob/f44060cdf224436060d2df98a5c3f63f2600de63/6.0/ubuntu/20.04/Dockerfile)
-
 -	[`6.0.3-bookworm`, `6.0-bookworm`](https://github.com/apple/swift-docker/blob/f44060cdf224436060d2df98a5c3f63f2600de63/6.0/debian/12/Dockerfile)
 
 -	[`6.0.3-amazonlinux2`, `6.0-amazonlinux2`](https://github.com/apple/swift-docker/blob/f44060cdf224436060d2df98a5c3f63f2600de63/6.0/amazonlinux/2/Dockerfile)
@@ -76,10 +68,6 @@ WARNING:
 
 -	[`5.10.1-slim`, `5.10-slim`, `5.10.1-jammy-slim`, `5.10-jammy-slim`](https://github.com/apple/swift-docker/blob/53c4d44e4b556d7bab6ff94c80e5bd0444cdc17d/5.10/ubuntu/22.04/slim/Dockerfile)
 
--	[`5.10.1-focal-slim`, `5.10-focal-slim`](https://github.com/apple/swift-docker/blob/53c4d44e4b556d7bab6ff94c80e5bd0444cdc17d/5.10/ubuntu/20.04/slim/Dockerfile)
-
--	[`5.10.1-focal`, `5.10-focal`](https://github.com/apple/swift-docker/blob/53c4d44e4b556d7bab6ff94c80e5bd0444cdc17d/5.10/ubuntu/20.04/Dockerfile)
-
 -	[`5.10.1-noble`, `5.10-noble`](https://github.com/apple/swift-docker/blob/53c4d44e4b556d7bab6ff94c80e5bd0444cdc17d/5.10/ubuntu/24.04/Dockerfile)
 
 -	[`5.10.1-noble-slim`, `5.10-noble-slim`](https://github.com/apple/swift-docker/blob/38e4244ebab3d6a4e702fb30449827d6c28ee1fd/5.10/ubuntu/24.04/slim/Dockerfile)
@@ -94,15 +82,11 @@ WARNING:
 
 -	[`5.10.1-rhel-ubi9-slim`, `5.10-rhel-ubi9-slim`](https://github.com/apple/swift-docker/blob/53c4d44e4b556d7bab6ff94c80e5bd0444cdc17d/5.10/rhel-ubi/9/slim/Dockerfile)
 
--	[`5.10.1-windowsservercore-ltsc2022`, `5.10-windowsservercore-ltsc2022`](https://github.com/apple/swift-docker/blob/53c4d44e4b556d7bab6ff94c80e5bd0444cdc17d/5.10/windows/LTSC2022/Dockerfile)
+-	[`5.10.1-windowsservercore-ltsc2022`, `5.10-windowsservercore-ltsc2022`](https://github.com/apple/swift-docker/blob/90888735fac23a3a5cd8f798d1d7de89bb5d47bb/5.10/windows/LTSC2022/Dockerfile)
 
 -	[`5.9.2`, `5.9`, `5.9.2-jammy`, `5.9-jammy`](https://github.com/apple/swift-docker/blob/51f0941d5f6d92af9df8aa89fa75841f5036c127/5.9/ubuntu/22.04/Dockerfile)
 
 -	[`5.9.2-slim`, `5.9-slim`, `5.9.2-jammy-slim`, `5.9-jammy-slim`](https://github.com/apple/swift-docker/blob/51f0941d5f6d92af9df8aa89fa75841f5036c127/5.9/ubuntu/22.04/slim/Dockerfile)
-
--	[`5.9.2-focal-slim`, `5.9-focal-slim`](https://github.com/apple/swift-docker/blob/51f0941d5f6d92af9df8aa89fa75841f5036c127/5.9/ubuntu/20.04/slim/Dockerfile)
-
--	[`5.9.2-focal`, `5.9-focal`](https://github.com/apple/swift-docker/blob/51f0941d5f6d92af9df8aa89fa75841f5036c127/5.9/ubuntu/20.04/Dockerfile)
 
 -	[`5.9.2-amazonlinux2`, `5.9-amazonlinux2`](https://github.com/apple/swift-docker/blob/51f0941d5f6d92af9df8aa89fa75841f5036c127/5.9/amazonlinux/2/Dockerfile)
 
@@ -112,7 +96,7 @@ WARNING:
 
 -	[`5.9.2-rhel-ubi9-slim`, `5.9-rhel-ubi9-slim`](https://github.com/apple/swift-docker/blob/51f0941d5f6d92af9df8aa89fa75841f5036c127/5.9/rhel-ubi/9/slim/Dockerfile)
 
--	[`5.9.2-windowsservercore-ltsc2022`, `5.9-windowsservercore-ltsc2022`](https://github.com/apple/swift-docker/blob/51f0941d5f6d92af9df8aa89fa75841f5036c127/5.9/windows/LTSC2022/Dockerfile)
+-	[`5.9.2-windowsservercore-ltsc2022`, `5.9-windowsservercore-ltsc2022`](https://github.com/apple/swift-docker/blob/90888735fac23a3a5cd8f798d1d7de89bb5d47bb/5.9/windows/LTSC2022/Dockerfile)
 
 # Quick reference (cont.)
 
