@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `s390x` builds of [the `alt` official image](https://hub.docker.com/_/alt) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,11 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`p10`](https://github.com/alt-cloud/docker-brew-alt/blob/4e761a7c575be581c7c1a18d10e30324858ae086/x86_64/Dockerfile)
-
--	[`sisyphus`](https://github.com/alt-cloud/docker-brew-alt/blob/e5a536d9aed224ac6603ed7d721e08da20b48105/x86_64/Dockerfile)
-
--	[`p11`, `latest`](https://github.com/alt-cloud/docker-brew-alt/blob/6a48028d28b5fdfe83421ff08af1945ad97fcba2/x86_64/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `s390x` ARCHITECTURE
 
 # Quick reference (cont.)
 
@@ -73,7 +71,7 @@ As said above, Sisyphus is a frequently updated repository mainly designed for d
 
 # About this image
 
-The `alt:latest` tag will always point the latest stable release (which is, at the time of this writing, `alt:p9`).
+The `s390x/alt:latest` tag will always point the latest stable release (which is, at the time of this writing, `s390x/alt:p9`).
 
 ## How It's Made
 
