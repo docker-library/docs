@@ -28,9 +28,9 @@ WARNING:
 
 -	[`24.04`, `noble-20250716`, `noble`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-amd64-20250716-0bed38f8&id=0bed38f848c1d36e629285d6aecc20f17083b469)
 
--	[`25.04`, `plucky-20250714`, `plucky`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-plucky-amd64-20250714-583c18ff&id=583c18ffc4ba6a16e0c8f62dff0ddf62db29134a)
+-	[`25.04`, `plucky-20250730`, `plucky`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-plucky-amd64-20250730-64382f68&id=64382f68a9c78883c68e8fd9c1632107a6d24c9f)
 
--	[`25.10`, `questing-20250721`, `questing`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-questing-amd64-20250721-737410c3&id=737410c343b462be131d9073d61f0602a766b9e5)
+-	[`25.10`, `questing-20250806`, `questing`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-questing-amd64-20250806-6021f9ff&id=6021f9fffdc92e1ad574db45a148cd2fb91f121d)
 
 # Quick reference (cont.)
 
