@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v7` builds of [the `python` official image](https://hub.docker.com/_/python) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -40,10 +42,6 @@ WARNING:
 
 -	[`3.14.0rc2-alpine3.21`, `3.14-rc-alpine3.21`](https://github.com/docker-library/python/blob/19c93d12094b07ecc21f67144a309c2fa0a10ef0/3.14-rc/alpine3.21/Dockerfile)
 
--	[`3.14.0rc2-windowsservercore-ltsc2025`, `3.14-rc-windowsservercore-ltsc2025`](https://github.com/docker-library/python/blob/19c93d12094b07ecc21f67144a309c2fa0a10ef0/3.14-rc/windows/windowsservercore-ltsc2025/Dockerfile)
-
--	[`3.14.0rc2-windowsservercore-ltsc2022`, `3.14-rc-windowsservercore-ltsc2022`](https://github.com/docker-library/python/blob/19c93d12094b07ecc21f67144a309c2fa0a10ef0/3.14-rc/windows/windowsservercore-ltsc2022/Dockerfile)
-
 -	[`3.13.7-trixie`, `3.13-trixie`, `3-trixie`, `trixie`](https://github.com/docker-library/python/blob/935e3081dbf0734d724482b987dd6ba6b8608329/3.13/trixie/Dockerfile)
 
 -	[`3.13.7-slim-trixie`, `3.13-slim-trixie`, `3-slim-trixie`, `slim-trixie`, `3.13.7-slim`, `3.13-slim`, `3-slim`, `slim`](https://github.com/docker-library/python/blob/935e3081dbf0734d724482b987dd6ba6b8608329/3.13/slim-trixie/Dockerfile)
@@ -55,10 +53,6 @@ WARNING:
 -	[`3.13.7-alpine3.22`, `3.13-alpine3.22`, `3-alpine3.22`, `alpine3.22`, `3.13.7-alpine`, `3.13-alpine`, `3-alpine`, `alpine`](https://github.com/docker-library/python/blob/935e3081dbf0734d724482b987dd6ba6b8608329/3.13/alpine3.22/Dockerfile)
 
 -	[`3.13.7-alpine3.21`, `3.13-alpine3.21`, `3-alpine3.21`, `alpine3.21`](https://github.com/docker-library/python/blob/935e3081dbf0734d724482b987dd6ba6b8608329/3.13/alpine3.21/Dockerfile)
-
--	[`3.13.7-windowsservercore-ltsc2025`, `3.13-windowsservercore-ltsc2025`, `3-windowsservercore-ltsc2025`, `windowsservercore-ltsc2025`](https://github.com/docker-library/python/blob/935e3081dbf0734d724482b987dd6ba6b8608329/3.13/windows/windowsservercore-ltsc2025/Dockerfile)
-
--	[`3.13.7-windowsservercore-ltsc2022`, `3.13-windowsservercore-ltsc2022`, `3-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`](https://github.com/docker-library/python/blob/935e3081dbf0734d724482b987dd6ba6b8608329/3.13/windows/windowsservercore-ltsc2022/Dockerfile)
 
 -	[`3.12.11-trixie`, `3.12-trixie`](https://github.com/docker-library/python/blob/093598a0190ba9074b899d6a0a21a00c859aac56/3.12/trixie/Dockerfile)
 
@@ -113,24 +107,10 @@ WARNING:
 -	`3.14.0rc2`, `3.14-rc`:
 
 	-	[`3.14.0rc2-trixie`](https://github.com/docker-library/python/blob/19c93d12094b07ecc21f67144a309c2fa0a10ef0/3.14-rc/trixie/Dockerfile)
-	-	[`3.14.0rc2-windowsservercore-ltsc2025`](https://github.com/docker-library/python/blob/19c93d12094b07ecc21f67144a309c2fa0a10ef0/3.14-rc/windows/windowsservercore-ltsc2025/Dockerfile)
-	-	[`3.14.0rc2-windowsservercore-ltsc2022`](https://github.com/docker-library/python/blob/19c93d12094b07ecc21f67144a309c2fa0a10ef0/3.14-rc/windows/windowsservercore-ltsc2022/Dockerfile)
-
--	`3.14.0rc2-windowsservercore`, `3.14-rc-windowsservercore`:
-
-	-	[`3.14.0rc2-windowsservercore-ltsc2025`](https://github.com/docker-library/python/blob/19c93d12094b07ecc21f67144a309c2fa0a10ef0/3.14-rc/windows/windowsservercore-ltsc2025/Dockerfile)
-	-	[`3.14.0rc2-windowsservercore-ltsc2022`](https://github.com/docker-library/python/blob/19c93d12094b07ecc21f67144a309c2fa0a10ef0/3.14-rc/windows/windowsservercore-ltsc2022/Dockerfile)
 
 -	`3.13.7`, `3.13`, `3`, `latest`:
 
 	-	[`3.13.7-trixie`](https://github.com/docker-library/python/blob/935e3081dbf0734d724482b987dd6ba6b8608329/3.13/trixie/Dockerfile)
-	-	[`3.13.7-windowsservercore-ltsc2025`](https://github.com/docker-library/python/blob/935e3081dbf0734d724482b987dd6ba6b8608329/3.13/windows/windowsservercore-ltsc2025/Dockerfile)
-	-	[`3.13.7-windowsservercore-ltsc2022`](https://github.com/docker-library/python/blob/935e3081dbf0734d724482b987dd6ba6b8608329/3.13/windows/windowsservercore-ltsc2022/Dockerfile)
-
--	`3.13.7-windowsservercore`, `3.13-windowsservercore`, `3-windowsservercore`, `windowsservercore`:
-
-	-	[`3.13.7-windowsservercore-ltsc2025`](https://github.com/docker-library/python/blob/935e3081dbf0734d724482b987dd6ba6b8608329/3.13/windows/windowsservercore-ltsc2025/Dockerfile)
-	-	[`3.13.7-windowsservercore-ltsc2022`](https://github.com/docker-library/python/blob/935e3081dbf0734d724482b987dd6ba6b8608329/3.13/windows/windowsservercore-ltsc2022/Dockerfile)
 
 -	`3.12.11`, `3.12`:
 
@@ -180,7 +160,7 @@ Python is an interpreted, interactive, object-oriented, open-source programming 
 ## Create a `Dockerfile` in your Python app project
 
 ```dockerfile
-FROM python:3
+FROM arm32v7/python:3
 
 WORKDIR /usr/src/app
 
@@ -195,7 +175,7 @@ CMD [ "python", "./your-daemon-or-script.py" ]
 or (if you need to use Python 2):
 
 ```dockerfile
-FROM python:2
+FROM arm32v7/python:2
 
 WORKDIR /usr/src/app
 
@@ -219,13 +199,13 @@ $ docker run -it --rm --name my-running-app my-python-app
 For many simple, single file projects, you may find it inconvenient to write a complete `Dockerfile`. In such cases, you can run a Python script by using the Python Docker image directly:
 
 ```console
-$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp python:3 python your-daemon-or-script.py
+$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp arm32v7/python:3 python your-daemon-or-script.py
 ```
 
 or (again, if you need to use Python 2):
 
 ```console
-$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp python:2 python your-daemon-or-script.py
+$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp arm32v7/python:2 python your-daemon-or-script.py
 ```
 
 ## Multiple Python versions in the image
@@ -234,9 +214,9 @@ In the non-slim variants there will be an additional (distro-provided) `python` 
 
 # Image Variants
 
-The `python` images come in many flavors, each designed for a specific use case.
+The `arm32v7/python` images come in many flavors, each designed for a specific use case.
 
-## `python:<version>`
+## `arm32v7/python:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
@@ -244,31 +224,22 @@ Some of these tags may have names like bookworm or trixie in them. These are the
 
 This tag is based off of [`buildpack-deps`](https://hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of Docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
 
-## `python:<version>-slim`
+## `arm32v7/python:<version>-slim`
 
-This image does not contain the common Debian packages contained in the default tag and only contains the minimal Debian packages needed to run `python`. Unless you are working in an environment where *only* the `python` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
+This image does not contain the common Debian packages contained in the default tag and only contains the minimal Debian packages needed to run `arm32v7/python`. Unless you are working in an environment where *only* the `arm32v7/python` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
 
 When using this image `pip install` will work if a suitable built distribution is available for the Python distribution package being installed. `pip install` may fail when installing a Python distribution package from a source distribution. This image does not contain the Debian packages required to compile extension modules written in other languages. Possible solutions if a `pip install` fails include:
 
 -	Use this image and install any required Debian packages before running `pip install`.
 -	Use the default image of this repository. The default image contains the most commonly required Debian packages. The majority of arbitrary `pip install`s should be successful without additional header/development Debian packages.
 
-## `python:<version>-alpine`
+## `arm32v7/python:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
 This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
 
 To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
-
-## `python:<version>-windowsservercore`
-
-This image is based on [Windows Server Core (`microsoft/windowsservercore`)](https://hub.docker.com/r/microsoft/windowsservercore/). As such, it only works in places which that image does, such as Windows 10 Professional/Enterprise (Anniversary Edition) or Windows Server 2016.
-
-For information about how to get Docker running on Windows, please see the relevant "Quick Start" guide provided by Microsoft:
-
--	[Windows Server Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_server)
--	[Windows 10 Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)
 
 # License
 
