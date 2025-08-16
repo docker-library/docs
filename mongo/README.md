@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `windows-amd64` builds of [the `mongo` official image](https://hub.docker.com/_/mongo) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -28,15 +30,11 @@ WARNING:
 
 ## Simple Tags
 
--	[`8.0.13-rc2-noble`, `8.0-rc-noble`](https://github.com/docker-library/mongo/blob/c84b5fe05b138e5c57c04ca94bc166e77b31af08/8.0-rc/Dockerfile)
-
 -	[`8.0.13-rc2-windowsservercore-ltsc2025`, `8.0-rc-windowsservercore-ltsc2025`](https://github.com/docker-library/mongo/blob/c84b5fe05b138e5c57c04ca94bc166e77b31af08/8.0-rc/windows/windowsservercore-ltsc2025/Dockerfile)
 
 -	[`8.0.13-rc2-windowsservercore-ltsc2022`, `8.0-rc-windowsservercore-ltsc2022`](https://github.com/docker-library/mongo/blob/c84b5fe05b138e5c57c04ca94bc166e77b31af08/8.0-rc/windows/windowsservercore-ltsc2022/Dockerfile)
 
 -	[`8.0.13-rc2-nanoserver-ltsc2022`, `8.0-rc-nanoserver-ltsc2022`](https://github.com/docker-library/mongo/blob/c84b5fe05b138e5c57c04ca94bc166e77b31af08/8.0-rc/windows/nanoserver-ltsc2022/Dockerfile)
-
--	[`8.0.12-noble`, `8.0-noble`, `8-noble`, `noble`](https://github.com/docker-library/mongo/blob/186b7e49c6c1cacceffcefd17b6d411d233e72ac/8.0/Dockerfile)
 
 -	[`8.0.12-windowsservercore-ltsc2025`, `8.0-windowsservercore-ltsc2025`, `8-windowsservercore-ltsc2025`, `windowsservercore-ltsc2025`](https://github.com/docker-library/mongo/blob/186b7e49c6c1cacceffcefd17b6d411d233e72ac/8.0/windows/windowsservercore-ltsc2025/Dockerfile)
 
@@ -44,23 +42,17 @@ WARNING:
 
 -	[`8.0.12-nanoserver-ltsc2022`, `8.0-nanoserver-ltsc2022`, `8-nanoserver-ltsc2022`, `nanoserver-ltsc2022`](https://github.com/docker-library/mongo/blob/186b7e49c6c1cacceffcefd17b6d411d233e72ac/8.0/windows/nanoserver-ltsc2022/Dockerfile)
 
--	[`7.0.23-jammy`, `7.0-jammy`, `7-jammy`](https://github.com/docker-library/mongo/blob/19c4af6e86ce71256a109be63e4ca3122108e61d/7.0/Dockerfile)
-
 -	[`7.0.23-windowsservercore-ltsc2025`, `7.0-windowsservercore-ltsc2025`, `7-windowsservercore-ltsc2025`](https://github.com/docker-library/mongo/blob/19c4af6e86ce71256a109be63e4ca3122108e61d/7.0/windows/windowsservercore-ltsc2025/Dockerfile)
 
 -	[`7.0.23-windowsservercore-ltsc2022`, `7.0-windowsservercore-ltsc2022`, `7-windowsservercore-ltsc2022`](https://github.com/docker-library/mongo/blob/19c4af6e86ce71256a109be63e4ca3122108e61d/7.0/windows/windowsservercore-ltsc2022/Dockerfile)
 
 -	[`7.0.23-nanoserver-ltsc2022`, `7.0-nanoserver-ltsc2022`, `7-nanoserver-ltsc2022`](https://github.com/docker-library/mongo/blob/19c4af6e86ce71256a109be63e4ca3122108e61d/7.0/windows/nanoserver-ltsc2022/Dockerfile)
 
--	[`6.0.26-rc0-jammy`, `6.0-rc-jammy`](https://github.com/docker-library/mongo/blob/a1ad68b0730302fd43ba1318bc0e493f7de49427/6.0-rc/Dockerfile)
-
 -	[`6.0.26-rc0-windowsservercore-ltsc2025`, `6.0-rc-windowsservercore-ltsc2025`](https://github.com/docker-library/mongo/blob/a1ad68b0730302fd43ba1318bc0e493f7de49427/6.0-rc/windows/windowsservercore-ltsc2025/Dockerfile)
 
 -	[`6.0.26-rc0-windowsservercore-ltsc2022`, `6.0-rc-windowsservercore-ltsc2022`](https://github.com/docker-library/mongo/blob/a1ad68b0730302fd43ba1318bc0e493f7de49427/6.0-rc/windows/windowsservercore-ltsc2022/Dockerfile)
 
 -	[`6.0.26-rc0-nanoserver-ltsc2022`, `6.0-rc-nanoserver-ltsc2022`](https://github.com/docker-library/mongo/blob/a1ad68b0730302fd43ba1318bc0e493f7de49427/6.0-rc/windows/nanoserver-ltsc2022/Dockerfile)
-
--	[`6.0.25-jammy`, `6.0-jammy`, `6-jammy`](https://github.com/docker-library/mongo/blob/9901b8fcec5335b12c2658ca4c9aa73a645d5360/6.0/Dockerfile)
 
 -	[`6.0.25-windowsservercore-ltsc2025`, `6.0-windowsservercore-ltsc2025`, `6-windowsservercore-ltsc2025`](https://github.com/docker-library/mongo/blob/9901b8fcec5335b12c2658ca4c9aa73a645d5360/6.0/windows/windowsservercore-ltsc2025/Dockerfile)
 
@@ -72,7 +64,6 @@ WARNING:
 
 -	`8.0.13-rc2`, `8.0-rc`:
 
-	-	[`8.0.13-rc2-noble`](https://github.com/docker-library/mongo/blob/c84b5fe05b138e5c57c04ca94bc166e77b31af08/8.0-rc/Dockerfile)
 	-	[`8.0.13-rc2-windowsservercore-ltsc2025`](https://github.com/docker-library/mongo/blob/c84b5fe05b138e5c57c04ca94bc166e77b31af08/8.0-rc/windows/windowsservercore-ltsc2025/Dockerfile)
 	-	[`8.0.13-rc2-windowsservercore-ltsc2022`](https://github.com/docker-library/mongo/blob/c84b5fe05b138e5c57c04ca94bc166e77b31af08/8.0-rc/windows/windowsservercore-ltsc2022/Dockerfile)
 
@@ -87,7 +78,6 @@ WARNING:
 
 -	`8.0.12`, `8.0`, `8`, `latest`:
 
-	-	[`8.0.12-noble`](https://github.com/docker-library/mongo/blob/186b7e49c6c1cacceffcefd17b6d411d233e72ac/8.0/Dockerfile)
 	-	[`8.0.12-windowsservercore-ltsc2025`](https://github.com/docker-library/mongo/blob/186b7e49c6c1cacceffcefd17b6d411d233e72ac/8.0/windows/windowsservercore-ltsc2025/Dockerfile)
 	-	[`8.0.12-windowsservercore-ltsc2022`](https://github.com/docker-library/mongo/blob/186b7e49c6c1cacceffcefd17b6d411d233e72ac/8.0/windows/windowsservercore-ltsc2022/Dockerfile)
 
@@ -102,7 +92,6 @@ WARNING:
 
 -	`7.0.23`, `7.0`, `7`:
 
-	-	[`7.0.23-jammy`](https://github.com/docker-library/mongo/blob/19c4af6e86ce71256a109be63e4ca3122108e61d/7.0/Dockerfile)
 	-	[`7.0.23-windowsservercore-ltsc2025`](https://github.com/docker-library/mongo/blob/19c4af6e86ce71256a109be63e4ca3122108e61d/7.0/windows/windowsservercore-ltsc2025/Dockerfile)
 	-	[`7.0.23-windowsservercore-ltsc2022`](https://github.com/docker-library/mongo/blob/19c4af6e86ce71256a109be63e4ca3122108e61d/7.0/windows/windowsservercore-ltsc2022/Dockerfile)
 
@@ -117,7 +106,6 @@ WARNING:
 
 -	`6.0.26-rc0`, `6.0-rc`:
 
-	-	[`6.0.26-rc0-jammy`](https://github.com/docker-library/mongo/blob/a1ad68b0730302fd43ba1318bc0e493f7de49427/6.0-rc/Dockerfile)
 	-	[`6.0.26-rc0-windowsservercore-ltsc2025`](https://github.com/docker-library/mongo/blob/a1ad68b0730302fd43ba1318bc0e493f7de49427/6.0-rc/windows/windowsservercore-ltsc2025/Dockerfile)
 	-	[`6.0.26-rc0-windowsservercore-ltsc2022`](https://github.com/docker-library/mongo/blob/a1ad68b0730302fd43ba1318bc0e493f7de49427/6.0-rc/windows/windowsservercore-ltsc2022/Dockerfile)
 
@@ -132,7 +120,6 @@ WARNING:
 
 -	`6.0.25`, `6.0`, `6`:
 
-	-	[`6.0.25-jammy`](https://github.com/docker-library/mongo/blob/9901b8fcec5335b12c2658ca4c9aa73a645d5360/6.0/Dockerfile)
 	-	[`6.0.25-windowsservercore-ltsc2025`](https://github.com/docker-library/mongo/blob/9901b8fcec5335b12c2658ca4c9aa73a645d5360/6.0/windows/windowsservercore-ltsc2025/Dockerfile)
 	-	[`6.0.25-windowsservercore-ltsc2022`](https://github.com/docker-library/mongo/blob/9901b8fcec5335b12c2658ca4c9aa73a645d5360/6.0/windows/windowsservercore-ltsc2022/Dockerfile)
 
@@ -183,7 +170,7 @@ By default Mongo's configuration requires no authentication for access, even for
 ## Start a `mongo` server instance
 
 ```console
-$ docker run --name some-mongo -d mongo:tag
+$ docker run --name some-mongo -d winamd64/mongo:tag
 ```
 
 ... where `some-mongo` is the name you want to assign to your container and `tag` is the tag specifying the MongoDB version you want. See the list above for relevant tags.
@@ -193,7 +180,7 @@ $ docker run --name some-mongo -d mongo:tag
 The MongoDB server in the image listens on the standard MongoDB port, `27017`, so connecting via Docker networks will be the same as connecting to a remote `mongod`. The following example starts another MongoDB container instance and runs the `mongosh` (use `mongo` with `4.x` versions) command line client against the original MongoDB container from the example above, allowing you to execute MongoDB statements against your database instance:
 
 ```console
-$ docker run -it --network some-network --rm mongo mongosh --host some-mongo test
+$ docker run -it --network some-network --rm winamd64/mongo mongosh --host some-mongo test
 ```
 
 ... where `some-mongo` is the name of your original `mongo` container.
@@ -230,7 +217,7 @@ Run `docker compose up`, wait for it to initialize completely, and visit `http:/
 
 ## Container shell access and viewing MongoDB logs
 
-The `docker exec` command allows you to run commands inside a Docker container. The following command line will give you a bash shell inside your `mongo` container:
+The `docker exec` command allows you to run commands inside a Docker container. The following command line will give you a bash shell inside your `winamd64/mongo` container:
 
 ```console
 $ docker exec -it some-mongo bash
@@ -251,7 +238,7 @@ See the [MongoDB manual](https://docs.mongodb.com/manual/) for information on us
 Most MongoDB configuration can be set through flags to `mongod`. The entrypoint of the image is created to pass its arguments along to `mongod`. See below an example of setting MongoDB to use a different [threading and execution model](https://docs.mongodb.com/manual/reference/program/mongod/#cmdoption-mongod-serviceexecutor) via `docker run`.
 
 ```console
-$ docker run --name some-mongo -d mongo --serviceExecutor adaptive
+$ docker run --name some-mongo -d winamd64/mongo --serviceExecutor adaptive
 ```
 
 And here is the same with a `compose.yaml` file
@@ -259,14 +246,14 @@ And here is the same with a `compose.yaml` file
 ```yaml
 services:
   mongo:
-    image: mongo
+    image: winamd64/mongo
     command: --serviceExecutor adaptive
 ```
 
 To see the full list of possible options, check the MongoDB manual on [`mongod`](https://docs.mongodb.com/manual/reference/program/mongod/) or check the `--help` output of `mongod`:
 
 ```console
-$ docker run -it --rm mongo --help
+$ docker run -it --rm winamd64/mongo --help
 ```
 
 ## Setting WiredTiger cache size limits
@@ -276,19 +263,19 @@ By default Mongo will set the `wiredTigerCacheSizeGB` to a value proportional to
 Taking the examples above you can configure the cache size to use 1.5GB as:
 
 ```console
-$ docker run --name some-mongo -d mongo --wiredTigerCacheSizeGB 1.5
+$ docker run --name some-mongo -d winamd64/mongo --wiredTigerCacheSizeGB 1.5
 ```
 
 See [the upstream "WiredTiger Options" documentation](https://docs.mongodb.com/manual/reference/program/mongod/#wiredtiger-options) for more details.
 
 ## Using a custom MongoDB configuration file
 
-For a more complicated configuration setup, you can still use the MongoDB configuration file. `mongod` does not read a configuration file by default, so the `--config` option with the path to the configuration file needs to be specified. Create a custom configuration file and put it in the container by either creating a custom Dockerfile `FROM mongo` or mounting it from the host machine to the container. See the MongoDB manual for a full list of [configuration file](https://docs.mongodb.com/manual/reference/configuration-options/) options.
+For a more complicated configuration setup, you can still use the MongoDB configuration file. `mongod` does not read a configuration file by default, so the `--config` option with the path to the configuration file needs to be specified. Create a custom configuration file and put it in the container by either creating a custom Dockerfile `FROM winamd64/mongo` or mounting it from the host machine to the container. See the MongoDB manual for a full list of [configuration file](https://docs.mongodb.com/manual/reference/configuration-options/) options.
 
 For example, `/my/custom/mongod.conf` is the path to the custom configuration file. Then start the MongoDB container like the following:
 
 ```console
-$ docker run --name some-mongo -v /my/custom:/etc/mongo -d mongo --config /etc/mongo/mongod.conf
+$ docker run --name some-mongo -v /my/custom:/etc/mongo -d winamd64/mongo --config /etc/mongo/mongod.conf
 ```
 
 ## Environment Variables
@@ -305,9 +292,9 @@ The following is an example of using these two variables to create a MongoDB ins
 $ docker run -d --network some-network --name some-mongo \
 	-e MONGO_INITDB_ROOT_USERNAME=mongoadmin \
 	-e MONGO_INITDB_ROOT_PASSWORD=secret \
-	mongo
+	winamd64/mongo
 
-$ docker run -it --rm --network some-network mongo \
+$ docker run -it --rm --network some-network winamd64/mongo \
 	mongosh --host some-mongo \
 		-u mongoadmin \
 		-p secret \
@@ -330,7 +317,7 @@ This variable allows you to specify the name of a database to be used for creati
 As an alternative to passing sensitive information via environment variables, `_FILE` may be appended to the previously listed environment variables, causing the initialization script to load the values for those variables from files present in the container. In particular, this can be used to load passwords from Docker secrets stored in `/run/secrets/<secret_name>` files. For example:
 
 ```console
-$ docker run --name some-mongo -e MONGO_INITDB_ROOT_PASSWORD_FILE=/run/secrets/mongo-root -d mongo
+$ docker run --name some-mongo -e MONGO_INITDB_ROOT_PASSWORD_FILE=/run/secrets/mongo-root -d winamd64/mongo
 ```
 
 Currently, this is only supported for `MONGO_INITDB_ROOT_USERNAME` and `MONGO_INITDB_ROOT_PASSWORD`.
@@ -368,7 +355,7 @@ The Docker documentation is a good starting point for understanding the differen
 2.	Start your `mongo` container like this:
 
 	```console
-	$ docker run --name some-mongo -v /my/own/datadir:/data/db -d mongo
+	$ docker run --name some-mongo -v /my/own/datadir:/data/db -d winamd64/mongo
 	```
 
 The `-v /my/own/datadir:/data/db` part of the command mounts the `/my/own/datadir` directory from the underlying host system as `/data/db` inside the container, where MongoDB by default will write its data files.
@@ -385,15 +372,13 @@ $ docker exec some-mongo sh -c 'exec mongodump -d <database_name> --archive' > /
 
 # Image Variants
 
-The `mongo` images come in many flavors, each designed for a specific use case.
+The `winamd64/mongo` images come in many flavors, each designed for a specific use case.
 
-## `mongo:<version>`
+## `winamd64/mongo:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like jammy or noble in them. These are the suite code names for releases of [Ubuntu](https://wiki.ubuntu.com/Releases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Ubuntu.
-
-## `mongo:<version>-windowsservercore`
+## `winamd64/mongo:<version>-windowsservercore`
 
 This image is based on [Windows Server Core (`microsoft/windowsservercore`)](https://hub.docker.com/r/microsoft/windowsservercore/). As such, it only works in places which that image does, such as Windows 10 Professional/Enterprise (Anniversary Edition) or Windows Server 2016.
 
