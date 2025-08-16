@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `ppc64le` builds of [the `neurodebian` official image](https://hub.docker.com/_/neurodebian) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,17 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`jammy`, `nd22.04`](https://github.com/neurodebian/dockerfiles/blob/89ca52860d80889fd878392a29150e46d9d91a71/dockerfiles/jammy/Dockerfile)
-
--	[`jammy-non-free`, `nd22.04-non-free`](https://github.com/neurodebian/dockerfiles/blob/89ca52860d80889fd878392a29150e46d9d91a71/dockerfiles/jammy-non-free/Dockerfile)
-
--	[`bullseye`, `nd110`](https://github.com/neurodebian/dockerfiles/blob/89ca52860d80889fd878392a29150e46d9d91a71/dockerfiles/bullseye/Dockerfile)
-
--	[`bullseye-non-free`, `nd110-non-free`](https://github.com/neurodebian/dockerfiles/blob/89ca52860d80889fd878392a29150e46d9d91a71/dockerfiles/bullseye-non-free/Dockerfile)
-
--	[`bookworm`, `nd120`, `latest`](https://github.com/neurodebian/dockerfiles/blob/89ca52860d80889fd878392a29150e46d9d91a71/dockerfiles/bookworm/Dockerfile)
-
--	[`bookworm-non-free`, `nd120-non-free`, `non-free`](https://github.com/neurodebian/dockerfiles/blob/89ca52860d80889fd878392a29150e46d9d91a71/dockerfiles/bookworm-non-free/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `ppc64le` ARCHITECTURE
 
 # Quick reference (cont.)
 
@@ -69,14 +61,14 @@ NeuroDebian images only add NeuroDebian repository and repository's GPG key. No 
 
 `nd` tags are used to reflect suffixes used in versions of packages available from NeuroDebian.
 
-The `neurodebian:latest` tag will always point the Neurodebian-enabled latest stable release of Debian (which is, at the time of this writing, `debian:wheezy`).
+The `ppc64le/neurodebian:latest` tag will always point the Neurodebian-enabled latest stable release of Debian (which is, at the time of this writing, `debian:wheezy`).
 
 ## sources.list
 
 NeuroDebian APT file is installed under `/etc/apt/sources.list.d/neurodebian.sources.list` and currently enables only `main` (DFSG-compliant) area of the archive:
 
 ```console
-$ docker run neurodebian cat /etc/apt/sources.list.d/neurodebian.sources.list
+$ docker run ppc64le/neurodebian cat /etc/apt/sources.list.d/neurodebian.sources.list
 deb http://neuro.debian.net/debian wheezy main
 deb http://neuro.debian.net/debian data main
 #deb-src http://neuro.debian.net/debian-devel wheezy main
