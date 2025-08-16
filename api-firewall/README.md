@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v6` builds of [the `api-firewall` official image](https://hub.docker.com/_/api-firewall) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,7 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`0.9.2`, `latest`](https://github.com/wallarm/api-firewall-docker/blob/5d6718573955995c3f39a859f58655eed323b3b8/0.9.2/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v6` ARCHITECTURE
 
 # Quick reference (cont.)
 
