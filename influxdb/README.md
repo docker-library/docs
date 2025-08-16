@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `amd64` builds of [the `influxdb` official image](https://hub.docker.com/_/influxdb) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -82,18 +84,18 @@ InfluxDB is the time series database platform designed to collect, store, and pr
 Use InfluxDB 3 Core, the latest InfluxDB OSS:
 
 ```console
-docker run -d -p 8181:8181 influxdb:3-core
+docker run -d -p 8181:8181 amd64/influxdb:3-core
 ```
 
 Available OSS tags:
 
--	`influxdb:3-core` - **Latest InfluxDB OSS** (InfluxDB 3 Core)
--	`influxdb:2` - Previous generation OSS (InfluxDB v2)
--	`influxdb:1.11` - InfluxDB v1
+-	`amd64/influxdb:3-core` - **Latest InfluxDB OSS** (InfluxDB 3 Core)
+-	`amd64/influxdb:2` - Previous generation OSS (InfluxDB v2)
+-	`amd64/influxdb:1.11` - InfluxDB v1
 
 ## Available Versions
 
-#### InfluxDB 3 Core (`influxdb:3-core`) - Latest OSS
+#### InfluxDB 3 Core (`amd64/influxdb:3-core`) - Latest OSS
 
 -	**Latest generation** with the InfluxDB 3 storage engine, Apache Arrow, and DataFusion SQL
 -	Sub-10ms queries and unlimited cardinality
@@ -103,14 +105,14 @@ Available OSS tags:
 -	Includes v1 compatibility API for writing and querying data
 -	Includes v2 compatibility API for writing data
 
-#### InfluxDB v2 (`influxdb:2`)
+#### InfluxDB v2 (`amd64/influxdb:2`)
 
 -	Built on the TSM storage engine
 -	Supports Flux query language
 -	Integrated UI and dashboards
 -	Includes v1 compatibility API that supports InfluxQL
 
-#### InfluxDB v1 (`influxdb:1.11`)
+#### InfluxDB v1 (`amd64/influxdb:1.11`)
 
 -	Built on the TSM storage engine
 -	Original version with InfluxQL query language
@@ -118,7 +120,7 @@ Available OSS tags:
 
 ### Enterprise Editions (License Required)
 
-#### InfluxDB 3 Enterprise (`influxdb:3-enterprise`)
+#### InfluxDB 3 Enterprise (`amd64/influxdb:3-enterprise`)
 
 -	Adds unlimited data retention, compaction, clustering, and high availability to InfluxDB 3 Core
 
@@ -126,8 +128,8 @@ For setup instructions, see the [InfluxDB 3 Enterprise installation documentatio
 
 #### InfluxDB v1 Enterprise
 
--	`influxdb:1.11-data` - Data nodes for clustering
--	`influxdb:1.11-meta` - Meta nodes for cluster coordination (port 8091)
+-	`amd64/influxdb:1.11-data` - Data nodes for clustering
+-	`amd64/influxdb:1.11-meta` - Meta nodes for cluster coordination (port 8091)
 
 For setup instructions, see the [InfluxDB v1 Enterprise Docker documentation](https://docs.influxdata.com/enterprise_influxdb/v1/introduction/installation/docker/).
 
@@ -192,7 +194,7 @@ Customize your deployment with available [server options](https://docs.influxdat
 
 ```bash
 # View all available options
-docker run --rm influxdb:3-core influxdb3 serve --help
+docker run --rm amd64/influxdb:3-core influxdb3 serve --help
 ```
 
 ## Using InfluxDB v2
@@ -210,7 +212,7 @@ docker run -d -p 8086:8086 \
   -e DOCKER_INFLUXDB_INIT_PASSWORD=my-password \
   -e DOCKER_INFLUXDB_INIT_ORG=my-org \
   -e DOCKER_INFLUXDB_INIT_BUCKET=my-bucket \
-  influxdb:2
+  amd64/influxdb:2
 ```
 
 After the container starts, visit [http://localhost:8086](http://localhost:8086) to view the UI.
@@ -224,7 +226,7 @@ For detailed instructions, see the [InfluxDB v2 Docker Compose documentation](ht
 ```console
 docker run -d -p 8086:8086 \
   -v $PWD:/var/lib/influxdb \
-  influxdb:1.11
+  amd64/influxdb:1.11
 ```
 
 This starts InfluxDB v1 with:
@@ -236,13 +238,13 @@ For more information, see the [InfluxDB v1 Docker documentation](https://docs.in
 
 # Image Variants
 
-The `influxdb` images come in many flavors, each designed for a specific use case.
+The `amd64/influxdb` images come in many flavors, each designed for a specific use case.
 
-## `influxdb:<version>`
+## `amd64/influxdb:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `influxdb:<version>-alpine`
+## `amd64/influxdb:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
@@ -250,7 +252,7 @@ This variant is useful when final image size being as small as possible is your 
 
 To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
-## `influxdb:1-data`
+## `amd64/influxdb:1-data`
 
 *Using this image for [InfluxDB Enterprise](https://docs.influxdata.com/enterprise_influxdb/v1/introduction/installation/meta_node_installation/#license-key-or-file) requires a valid InfluxData [license key](https://docs.influxdata.com/enterprise_influxdb/v1/introduction/installation/meta_node_installation/#license-key-or-file).*
 
@@ -258,7 +260,7 @@ This image contains the enterprise data node package for clustering. It supports
 
 Refer to the `influxdb:1-meta` variant for directions on how to setup a cluster.
 
-## `influxdb:1-meta`
+## `amd64/influxdb:1-meta`
 
 *This image requires a valid license key from InfluxData.* Please visit our [products page](https://www.influxdata.com/products/) to learn more.
 
@@ -273,7 +275,7 @@ The license key can be specified using either an environment variable or by over
 ```console
 docker run -p 8089:8089 -p 8091:8091 \
       -e INFLUXDB_ENTERPRISE_LICENSE_KEY=<license-key>
-      influxdb:1-meta
+      amd64/influxdb:1-meta
 ```
 
 #### Running the container
@@ -292,15 +294,15 @@ Start three meta nodes. This is the suggested number of meta nodes. We do not re
 docker run -d --name=influxdb-meta-0 --network=influxdb \
       -h influxdb-meta-0 \
       -e INFLUXDB_ENTERPRISE_LICENSE_KEY=<license-key> \
-      influxdb:1-meta
+      amd64/influxdb:1-meta
 docker run -d --name=influxdb-meta-1 --network=influxdb \
       -h influxdb-meta-1 \
       -e INFLUXDB_ENTERPRISE_LICENSE_KEY=<license-key> \
-      influxdb:1-meta
+      amd64/influxdb:1-meta
 docker run -d --name=influxdb-meta-2 --network=influxdb \
       -h influxdb-meta-2 \
       -e INFLUXDB_ENTERPRISE_LICENSE_KEY=<license-key> \
-      influxdb:1-meta
+      amd64/influxdb:1-meta
 ```
 
 When setting the hostname, you can use `-h <hostname>` or you can directly set the environment variable using `-e INFLUXDB_HOSTNAME=<hostname>`.
@@ -320,18 +322,18 @@ Or you can just start a single meta node. If you setup a single meta node, you d
 docker run -d --name=influxdb-meta --network=influxdb \
       -h influxdb-meta \
       -e INFLUXDB_ENTERPRISE_LICENSE_KEY=<license-key> \
-      influxdb:1-meta -single-server
+      amd64/influxdb:1-meta -single-server
 ```
 
 #### Connecting the data nodes
 
-Start the data nodes using `influxdb:data` with similar command line arguments to the meta nodes. You can start as many data nodes as are allowed by your license.
+Start the data nodes using `amd64/influxdb:data` with similar command line arguments to the meta nodes. You can start as many data nodes as are allowed by your license.
 
 ```console
 docker run -d --name=influxdb-data-0 --network=influxdb \
       -h influxdb-data-0 \
       -e INFLUXDB_LICENSE_KEY=<license-key> \
-      influxdb:1-data
+      amd64/influxdb:1-data
 ```
 
 You can add `-p 8086:8086` to expose the http port to the host machine. After starting the container, choose one of the meta nodes and add the data node to it.
@@ -354,7 +356,7 @@ InfluxDB Meta can be either configured from a config file or using environment v
 Generate the default configuration file:
 
 ```console
-docker run --rm influxdb:meta influxd-meta config > influxdb-meta.conf
+docker run --rm amd64/influxdb:meta influxd-meta config > influxdb-meta.conf
 ```
 
 Modify the default configuration, which will now be available under `$PWD`. Then start the InfluxDB Meta container.
@@ -362,7 +364,7 @@ Modify the default configuration, which will now be available under `$PWD`. Then
 ```console
 docker run \
       -v $PWD/influxdb-meta.conf:/etc/influxdb/influxdb-meta.conf:ro \
-      influxdb:1-meta -config /etc/influxdb/influxdb-meta.conf
+      amd64/influxdb:1-meta -config /etc/influxdb/influxdb-meta.conf
 ```
 
 Modify `$PWD` to the directory where you want to store the configuration file.
