@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.2.0`, `8.2`, `8`, `8.2.0-bookworm`, `8.2-bookworm`, `8-bookworm`, `latest`, `bookworm`](https://github.com/redis/docker-library-redis/blob/e19e964037c9a47962beaf727fa623c7fe1bed6b/debian/Dockerfile)
+-	[`8.2.1`, `8.2`, `8`, `8.2.1-bookworm`, `8.2-bookworm`, `8-bookworm`, `latest`, `bookworm`](https://github.com/redis/docker-library-redis/blob/a13b78815d980881e57f15b9cf13cd2f26f3fab6/debian/Dockerfile)
 
--	[`8.2.0-alpine`, `8.2-alpine`, `8-alpine`, `8.2.0-alpine3.22`, `8.2-alpine3.22`, `8-alpine3.22`, `alpine`, `alpine3.22`](https://github.com/redis/docker-library-redis/blob/e19e964037c9a47962beaf727fa623c7fe1bed6b/alpine/Dockerfile)
+-	[`8.2.1-alpine`, `8.2-alpine`, `8-alpine`, `8.2.1-alpine3.22`, `8.2-alpine3.22`, `8-alpine3.22`, `alpine`, `alpine3.22`](https://github.com/redis/docker-library-redis/blob/a13b78815d980881e57f15b9cf13cd2f26f3fab6/alpine/Dockerfile)
 
 -	[`8.0.3`, `8.0`, `8.0.3-bookworm`, `8.0-bookworm`](https://github.com/redis/docker-library-redis/blob/101262a8cf05b98137d88bc17e77db90c24cc783/debian/Dockerfile)
 
