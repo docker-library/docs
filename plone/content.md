@@ -56,13 +56,13 @@ You can enable Plone add-ons via the `ADDONS` environment variable.
 $ docker run -p 8080:8080 -e PLONE_ADDONS="eea.facetednavigation Products.PloneFormGen" %%IMAGE%%
 ```
 
-For more information on how to extend this image with your own custom settings, adding more add-ons, building it, or mounting volumes, please refer to our [documentation](https://5.docs.plone.org/manage/docker/docs/index.html).
+For more information on how to extend this image with your own custom settings, adding more add-ons, building it, or mounting volumes, please refer to the [Plone 5 documentation](https://5.docs.plone.org/manage/docker/docs/index.html).
 
 ## Supported environment variables
 
 The Plone image uses several environment variables.
 
-### For basic usage
+### Basic usage
 
 -	`ADDONS` - Customize Plone via Plone add-ons using this environment variable.
 -	`SITE` - Add a Plone instance with this ID to `Data.fs` on first run. If *not* provided, you'll have to manually add a Plone site via the web UI.
@@ -75,24 +75,25 @@ Run Plone and install two add-ons (`eea.facetednavigation` and `collective.easyf
 $ docker run -p 8080:8080 -e SITE="mysite" -e ADDONS="eea.facetednavigation collective.easyform" %%IMAGE%%
 ```
 
-To use specific add-on versions:
+To use specific add-on versions, change the environment variable arguments as shown.
 
 ```console
  -e ADDONS="eea.facetednavigation collective.easyform" \
  -e VERSIONS="eea.facetednavigation=13.3 collective.easyform=2.1.0"
 ```
 
-RestAPI:
+To use Plone REST API, start the Plone Docker image, then issue a command to `curl`.
 
 ```console
-$ docker run -p 8080:8080 -e SITE=plone %%IMAGE%%
-
-$ curl -H 'Accept: application/json' http://localhost:8080/plone
+docker run -p 8080:8080 -e SITE=plone %%IMAGE%%
+curl -H 'Accept: application/json' http://localhost:8080/plone
 ```
 
-### For Advanced Usage
+### Advanced usage
 
-**Plone:**
+For advanced usage, the images support the following environment variables.
+
+#### Plone
 
 -	`PLONE_ADDONS`, `ADDONS` - Customize Plone via Plone add-ons using these environment variables.
 -	`PLONE_SITE`, `SITE` - Add a Plone instance with this ID to `Data.fs` on first run. If *not* provided, you'll have to manually add a Plone site via the web UI.
@@ -101,7 +102,7 @@ $ curl -H 'Accept: application/json' http://localhost:8080/plone
 -	`PLONE_ZCML`, `ZCML` - Include custom Plone add-on ZCML files (formerly `BUILDOUT_ZCML`).
 -	`PLONE_DEVELOP`, `DEVELOP` - Develop new or existing Plone add-ons (formerly `BUILDOUT_DEVELOP`).
 
-**ZEO:**
+#### ZEO
 
 -	`ZEO_ADDRESS` - This environment variable allows you to run the Plone image as a ZEO client.
 -	`ZEO_READ_ONLY` - Run Plone as a read-only ZEO client. Defaults to `off`.
@@ -113,7 +114,7 @@ $ curl -H 'Accept: application/json' http://localhost:8080/plone
 -	`HEALTH_CHECK_TIMEOUT` - Time in seconds to wait until health check starts. Defaults to `1` second.
 -	`HEALTH_CHECK_INTERVAL` - Interval in seconds to check that the Zope application is still healthy. Defaults to `1` second.
 
-**CORS:**
+#### CORS
 
 -	`CORS_ALLOW_ORIGIN` - Origins that are allowed access to the resource. Either a comma separated list of origins, for example, `https://example.net,https://mydomain.com`, or `*`. Defaults to `http://localhost:3000,http://127.0.0.1:3000`.
 -	`CORS_ALLOW_METHODS` - A comma separated list of HTTP method names that are allowed by this CORS policy, for example, `DELETE,GET,OPTIONS,PATCH,POST,PUT`. Defaults to `DELETE,GET,OPTIONS,PATCH,POST,PUT`.
@@ -122,16 +123,16 @@ $ curl -H 'Accept: application/json' http://localhost:8080/plone
 -	`CORS_ALLOW_HEADERS` - A comma separated list of request headers allowed to be sent by the client, for example, `X-My-Header`. Defaults to `Accept,Authorization,Content-Type,X-Custom-Header`.
 -	`CORS_MAX_AGE` - Indicates how long the results of a preflight request can be cached. Defaults to `3600`.
 
-**RELSTORAGE:**
+#### RelStorage
 
--	`RELSTORAGE_ADAPTER_OPTIONS` - A comma separated list of RelStorage adapter options to set for the plone instance, using [`plone.recipe.zope2instance`](https://relstorage.readthedocs.io/en/latest/configure-application.html#configuring-plone). This is required to use RelStorage.
+-	`RELSTORAGE_ADAPTER_OPTIONS` - A comma separated list of RelStorage adapter options to set for the plone instance using [`plone.recipe.zope2instance`](https://relstorage.readthedocs.io/en/latest/configure-application.html#configuring-plone). This is required to use RelStorage.
 
 All other available environment variables match exactly with RelStorage settings, according to the [settings specification available on the docs](https://relstorage.readthedocs.io/en/latest/relstorage-options.html).
 
--	`RELSTORAGE_NAME` - **name** - The name of the storage.
--	`RELSTORAGE_READ_ONLY` - **read-only** - If `true`, only reads may be executed against the storage.
--	`RELSTORAGE_KEEP_HISTORY` - **keep-history** - If this option is set to `true` (the default), the adapter will create and use a history-preserving database schema (like FileStorage).
--	`RELSTORAGE_BLOB_DIR` - **blob-dir** - If supplied, the storage will provide ZODB blob support. This option specifies the name of the directory to hold blob data. The directory will be created if it does not exist. If no value, or an empty value, is provided, then no blob support will be provided. Default: `/plone/instance/var/blobstorage`.
+-	`RELSTORAGE_NAME` - `name` - The name of the storage.
+-	`RELSTORAGE_READ_ONLY` - `read-only` - If `true`, only reads may be executed against the storage.
+-	`RELSTORAGE_KEEP_HISTORY` - `keep-history` - If this option is set to `true`, the default value, then the adapter will create and use a history-preserving database schema, such as FileStorage.
+-	`RELSTORAGE_BLOB_DIR` - `blob-dir` - If supplied, the storage will provide ZODB BLOB support. This option specifies the name of the directory to hold BLOB data. The directory will be created if it doesn't exist. If no value, or an empty value, is provided, then no BLOB support will be provided. Defaults to `/plone/instance/var/blobstorage`.
 
 	[See more RelStorage options](https://relstorage.readthedocs.io/en/latest/relstorage-options.html).
 
