@@ -4,6 +4,13 @@
 
 %%LOGO%%
 
+## Supported versions
+
+-	Plone 5.x
+-   Plone 4.x
+
+See the [deprecation notice](./deprecated.md) for Plone 6 and later.
+
 ## Features
 
 -	Enable add-ons via environment variables.
