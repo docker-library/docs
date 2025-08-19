@@ -4,9 +4,9 @@
 -	Plone 5.x is no longer supported.
 -	It is strongly recommended to migrate to the latest available Plone version. See https://plone.org/download/release-schedule for details.
 
-The official Docker images for Plone 5.x and Plone 4.x are available here, and are maintained by community volunteers.
+The official Docker images for Plone 5.x and Plone 4.x are available here.
 
-Beginning with Plone 6.x, the frontend and backend run in separate Docker images. There's also a a ZEO server Docker image. All of these images are supported by the Plone Foundation.
+Beginning with Plone 6.x, the frontend and backend run in separate Docker images. There's also a a ZEO server Docker image. All Plone 6.0 and later images are supported by the Plone Foundation and are maintained by community volunteers.
 
 -	[Plone Backend](https://github.com/plone/plone-backend)
 -	[Plone Frontend](https://github.com/plone/plone-frontend)
