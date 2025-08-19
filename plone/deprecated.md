@@ -6,7 +6,12 @@
 
 The official Docker images for Plone 5.x and Plone 4.x are available here, and are maintained by community volunteers.
 
-Beginning with Plone 6.x, the frontend and backend run in separate Docker images, and are supported by the Plone Foundation.
+Beginning with Plone 6.x, the frontend and backend run in separate Docker images.
+There's also a a ZEO server Docker image.
+All of these images are supported by the Plone Foundation.
 
 -	[Plone Backend](https://github.com/plone/plone-backend)
 -	[Plone Frontend](https://github.com/plone/plone-frontend)
+-	[ZEO Server](https://github.com/plone/plone-zeo/)
+
+For Docker image usage, see [Plone 6 Documentation](https://6.docs.plone.org/install/containers/images/index.html).
