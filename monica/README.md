@@ -24,17 +24,17 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.1.2-apache`, `4.1-apache`, `4-apache`, `apache`, `4.1.2`, `4.1`, `4`, `latest`](https://github.com/monicahq/docker/blob/8c3bcc8d3ab01315ca762c995338083d71c5611e/4/apache/Dockerfile)
+-	[`4.1.2-apache`, `4.1-apache`, `4-apache`, `apache`, `4.1.2`, `4.1`, `4`, `latest`](https://github.com/monicahq/docker/blob/7ffc74385e243e2dac4d7013a3240c0ae1229f05/4/apache/Dockerfile)
 
--	[`4.1.2-fpm-alpine`, `4.1-fpm-alpine`, `4-fpm-alpine`, `fpm-alpine`](https://github.com/monicahq/docker/blob/8c3bcc8d3ab01315ca762c995338083d71c5611e/4/fpm-alpine/Dockerfile)
+-	[`4.1.2-fpm-alpine`, `4.1-fpm-alpine`, `4-fpm-alpine`, `fpm-alpine`](https://github.com/monicahq/docker/blob/7ffc74385e243e2dac4d7013a3240c0ae1229f05/4/fpm-alpine/Dockerfile)
 
--	[`4.1.2-fpm`, `4.1-fpm`, `4-fpm`, `fpm`](https://github.com/monicahq/docker/blob/8c3bcc8d3ab01315ca762c995338083d71c5611e/4/fpm/Dockerfile)
+-	[`4.1.2-fpm`, `4.1-fpm`, `4-fpm`, `fpm`](https://github.com/monicahq/docker/blob/7ffc74385e243e2dac4d7013a3240c0ae1229f05/4/fpm/Dockerfile)
 
--	[`5.0.0-beta.5-apache`, `5.0.0-beta-apache`, `5.0-apache`](https://github.com/monicahq/docker/blob/8c3bcc8d3ab01315ca762c995338083d71c5611e/5/apache/Dockerfile)
+-	[`5.0.0-beta.5-apache`, `5.0.0-beta-apache`, `5.0-apache`](https://github.com/monicahq/docker/blob/7ffc74385e243e2dac4d7013a3240c0ae1229f05/5/apache/Dockerfile)
 
--	[`5.0.0-beta.5-fpm-alpine`, `5.0.0-beta-fpm-alpine`, `5.0-fpm-alpine`](https://github.com/monicahq/docker/blob/8c3bcc8d3ab01315ca762c995338083d71c5611e/5/fpm-alpine/Dockerfile)
+-	[`5.0.0-beta.5-fpm-alpine`, `5.0.0-beta-fpm-alpine`, `5.0-fpm-alpine`](https://github.com/monicahq/docker/blob/7ffc74385e243e2dac4d7013a3240c0ae1229f05/5/fpm-alpine/Dockerfile)
 
--	[`5.0.0-beta.5-fpm`, `5.0.0-beta-fpm`, `5.0-fpm`](https://github.com/monicahq/docker/blob/8c3bcc8d3ab01315ca762c995338083d71c5611e/5/fpm/Dockerfile)
+-	[`5.0.0-beta.5-fpm`, `5.0.0-beta-fpm`, `5.0-fpm`](https://github.com/monicahq/docker/blob/7ffc74385e243e2dac4d7013a3240c0ae1229f05/5/fpm/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -42,7 +42,7 @@ WARNING:
 	[https://github.com/monicahq/docker/issues](https://github.com/monicahq/docker/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/monica/), [`arm32v5`](https://hub.docker.com/r/arm32v5/monica/), [`arm32v6`](https://hub.docker.com/r/arm32v6/monica/), [`arm32v7`](https://hub.docker.com/r/arm32v7/monica/), [`arm64v8`](https://hub.docker.com/r/arm64v8/monica/), [`i386`](https://hub.docker.com/r/i386/monica/), [`mips64le`](https://hub.docker.com/r/mips64le/monica/), [`ppc64le`](https://hub.docker.com/r/ppc64le/monica/), [`riscv64`](https://hub.docker.com/r/riscv64/monica/), [`s390x`](https://hub.docker.com/r/s390x/monica/)
+	[`amd64`](https://hub.docker.com/r/amd64/monica/), [`arm32v5`](https://hub.docker.com/r/arm32v5/monica/), [`arm32v6`](https://hub.docker.com/r/arm32v6/monica/), [`arm32v7`](https://hub.docker.com/r/arm32v7/monica/), [`arm64v8`](https://hub.docker.com/r/arm64v8/monica/), [`i386`](https://hub.docker.com/r/i386/monica/), [`ppc64le`](https://hub.docker.com/r/ppc64le/monica/), [`riscv64`](https://hub.docker.com/r/riscv64/monica/), [`s390x`](https://hub.docker.com/r/s390x/monica/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/monica/` directory](https://github.com/docker-library/repo-info/blob/master/repos/monica) ([history](https://github.com/docker-library/repo-info/commits/master/repos/monica))  
