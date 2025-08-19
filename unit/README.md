@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.34.2-go1.24`, `go1.24`, `go1`, `go`](https://github.com/nginx/unit/blob/bda6a949b8a9f3f5ebe0e961ae52756ceb9dbb68/pkg/docker/Dockerfile.go1.24)
+-	[`1.34.2-go1.25`, `go1.25`, `go1`, `go`](https://github.com/nginx/unit/blob/e89c9e743ec1585fa64206f8757e077e7dd5dbc9/pkg/docker/Dockerfile.go1.25)
 
--	[`1.34.2-go1.23`, `go1.23`](https://github.com/nginx/unit/blob/bda6a949b8a9f3f5ebe0e961ae52756ceb9dbb68/pkg/docker/Dockerfile.go1.23)
+-	[`1.34.2-go1.24`, `go1.24`](https://github.com/nginx/unit/blob/e89c9e743ec1585fa64206f8757e077e7dd5dbc9/pkg/docker/Dockerfile.go1.24)
 
 -	[`1.34.2-jsc11`, `jsc11`, `jsc`](https://github.com/nginx/unit/blob/bda6a949b8a9f3f5ebe0e961ae52756ceb9dbb68/pkg/docker/Dockerfile.jsc11)
 
