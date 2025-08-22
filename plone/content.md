@@ -17,8 +17,8 @@
 
 This will download and start the latest Plone 5 container, based on [Debian](https://www.debian.org/).
 
-```console
-$ docker run -p 8080:8080 %%IMAGE%%
+```shell
+docker run -p 8080:8080 %%IMAGE%%
 ```
 
 This image includes `EXPOSE 8080` (the Plone port), so standard container linking will make it automatically available to the linked containers. Now you can add a Plone Site at http://localhost:8080. The default Zope user and password are `admin/admin`.
@@ -29,31 +29,31 @@ A ZEO cluster is best suited for production setups. You will **need** a load bal
 
 Start ZEO server in the background.
 
-```console
-$ docker run --name=zeo %%IMAGE%% zeo
+```shell
+docker run --name=zeo %%IMAGE%% zeo
 ```
 
 Start two Plone clients, also in the background.
 
-```console
-$ docker run --link=zeo -e ZEO_ADDRESS=zeo:8080 -p 8081:8080 %%IMAGE%%
-$ docker run --link=zeo -e ZEO_ADDRESS=zeo:8080 -p 8082:8080 %%IMAGE%%
+```shell
+docker run --link=zeo -e ZEO_ADDRESS=zeo:8080 -p 8081:8080 %%IMAGE%%
+docker run --link=zeo -e ZEO_ADDRESS=zeo:8080 -p 8082:8080 %%IMAGE%%
 ```
 
 ### Start Plone in debug mode
 
 You can also start Plone in debug mode (`fg`) by running the following command.
 
-```console
-$ docker run -p 8080:8080 %%IMAGE%% fg
+```shell
+docker run -p 8080:8080 %%IMAGE%% fg
 ```
 
 ### Add-ons
 
 You can enable Plone add-ons via the `ADDONS` environment variable.
 
-```console
-$ docker run -p 8080:8080 -e PLONE_ADDONS="eea.facetednavigation Products.PloneFormGen" %%IMAGE%%
+```shell
+docker run -p 8080:8080 -e PLONE_ADDONS="eea.facetednavigation Products.PloneFormGen" %%IMAGE%%
 ```
 
 For more information on how to extend this image with your own custom settings, adding more add-ons, building it, or mounting volumes, please refer to the [Plone 5 documentation](https://5.docs.plone.org/manage/docker/docs/index.html).
@@ -71,20 +71,20 @@ The Plone image uses several environment variables.
 
 Run Plone and install two add-ons (`eea.facetednavigation` and `collective.easyform`).
 
-```console
-$ docker run -p 8080:8080 -e SITE="mysite" -e ADDONS="eea.facetednavigation collective.easyform" %%IMAGE%%
+```shell
+docker run -p 8080:8080 -e SITE="mysite" -e ADDONS="eea.facetednavigation collective.easyform" %%IMAGE%%
 ```
 
 To use specific add-on versions, change the environment variable arguments as shown.
 
-```console
- -e ADDONS="eea.facetednavigation collective.easyform" \
- -e VERSIONS="eea.facetednavigation=13.3 collective.easyform=2.1.0"
+```shell
+-e ADDONS="eea.facetednavigation collective.easyform" \
+-e VERSIONS="eea.facetednavigation=13.3 collective.easyform=2.1.0"
 ```
 
 To use Plone REST API, start the Plone Docker image, then issue a command to `curl`.
 
-```console
+```shell
 docker run -p 8080:8080 -e SITE=plone %%IMAGE%%
 curl -H 'Accept: application/json' http://localhost:8080/plone
 ```
