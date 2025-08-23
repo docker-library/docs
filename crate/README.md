@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `riscv64` builds of [the `crate` official image](https://hub.docker.com/_/crate) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,9 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.10.11`, `5.10`, `latest`](https://github.com/crate/docker-crate/blob/274bcc033592b7503602cc7850de662313a3b858/Dockerfile)
-
--	[`5.9.13`, `5.9`](https://github.com/crate/docker-crate/blob/316dbebc6a55792c706d5ea492c41b860ccbcb9c/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `riscv64` ARCHITECTURE
 
 # Quick reference (cont.)
 
@@ -77,7 +77,7 @@ CrateDB provides an [Admin UI](https://crate.io/docs/crate/admin-ui/):
 Spin up this Docker image like so:
 
 ```console
-$ docker run --publish 4200:4200 --publish 5432:5432 crate -Cdiscovery.type=single-node
+$ docker run --publish 4200:4200 --publish 5432:5432 riscv64/crate -Cdiscovery.type=single-node
 ```
 
 Visit the [getting started](https://crate.io/docs/crate/tutorials/en/latest/install-run/) page to see all the available download and install options.
