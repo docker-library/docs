@@ -1,0 +1,1 @@
+The [upstream Notary project](https://github.com/notaryproject/notary) was archived as of July 30, 2025. For more information, see [notaryproject/.github#70](https://github.com/notaryproject/.github/issues/70).
