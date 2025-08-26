@@ -32,9 +32,9 @@ WARNING:
 
 -	[`1-slim-bookworm`, `1.89-slim-bookworm`, `1.89.0-slim-bookworm`, `slim-bookworm`](https://github.com/rust-lang/docker-rust/blob/97d440079ab3d6dc6895557f7a2a13c7280c5521/stable/bookworm/slim/Dockerfile)
 
--	[`1-trixie`, `1.89-trixie`, `1.89.0-trixie`, `trixie`, `1`, `1.89`, `1.89.0`, `latest`](https://github.com/rust-lang/docker-rust/blob/97d440079ab3d6dc6895557f7a2a13c7280c5521/stable/trixie/Dockerfile)
+-	[`1-trixie`, `1.89-trixie`, `1.89.0-trixie`, `trixie`, `1`, `1.89`, `1.89.0`, `latest`](https://github.com/rust-lang/docker-rust/blob/4a8b913f00f3a52547c2c6e9487e0b5d5aecabbf/stable/trixie/Dockerfile)
 
--	[`1-slim-trixie`, `1.89-slim-trixie`, `1.89.0-slim-trixie`, `slim-trixie`, `1-slim`, `1.89-slim`, `1.89.0-slim`, `slim`](https://github.com/rust-lang/docker-rust/blob/97d440079ab3d6dc6895557f7a2a13c7280c5521/stable/trixie/slim/Dockerfile)
+-	[`1-slim-trixie`, `1.89-slim-trixie`, `1.89.0-slim-trixie`, `slim-trixie`, `1-slim`, `1.89-slim`, `1.89.0-slim`, `slim`](https://github.com/rust-lang/docker-rust/blob/4a8b913f00f3a52547c2c6e9487e0b5d5aecabbf/stable/trixie/slim/Dockerfile)
 
 -	[`1-alpine3.20`, `1.89-alpine3.20`, `1.89.0-alpine3.20`, `alpine3.20`](https://github.com/rust-lang/docker-rust/blob/97d440079ab3d6dc6895557f7a2a13c7280c5521/stable/alpine3.20/Dockerfile)
 
@@ -48,7 +48,7 @@ WARNING:
 	[https://github.com/rust-lang/docker-rust/issues](https://github.com/rust-lang/docker-rust/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/rust/), [`arm32v7`](https://hub.docker.com/r/arm32v7/rust/), [`arm64v8`](https://hub.docker.com/r/arm64v8/rust/), [`i386`](https://hub.docker.com/r/i386/rust/), [`ppc64le`](https://hub.docker.com/r/ppc64le/rust/), [`s390x`](https://hub.docker.com/r/s390x/rust/)
+	[`amd64`](https://hub.docker.com/r/amd64/rust/), [`arm32v7`](https://hub.docker.com/r/arm32v7/rust/), [`arm64v8`](https://hub.docker.com/r/arm64v8/rust/), [`i386`](https://hub.docker.com/r/i386/rust/), [`ppc64le`](https://hub.docker.com/r/ppc64le/rust/), [`riscv64`](https://hub.docker.com/r/riscv64/rust/), [`s390x`](https://hub.docker.com/r/s390x/rust/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/rust/` directory](https://github.com/docker-library/repo-info/blob/master/repos/rust) ([history](https://github.com/docker-library/repo-info/commits/master/repos/rust))  
