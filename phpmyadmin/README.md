@@ -24,11 +24,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.2.2-apache`, `5.2-apache`, `5-apache`, `apache`, `5.2.2`, `5.2`, `5`, `latest`](https://github.com/phpmyadmin/docker/blob/188a0e35423fb615db47e6a0a8209fe7288eb2ed/apache/Dockerfile)
+-	[`5.2.2-apache`, `5.2-apache`, `5-apache`, `apache`, `5.2.2`, `5.2`, `5`, `latest`](https://github.com/phpmyadmin/docker/blob/24c2f1f855bfa93c9c2640261f601620bf312f17/apache/Dockerfile)
 
--	[`5.2.2-fpm`, `5.2-fpm`, `5-fpm`, `fpm`](https://github.com/phpmyadmin/docker/blob/188a0e35423fb615db47e6a0a8209fe7288eb2ed/fpm/Dockerfile)
+-	[`5.2.2-fpm`, `5.2-fpm`, `5-fpm`, `fpm`](https://github.com/phpmyadmin/docker/blob/24c2f1f855bfa93c9c2640261f601620bf312f17/fpm/Dockerfile)
 
--	[`5.2.2-fpm-alpine`, `5.2-fpm-alpine`, `5-fpm-alpine`, `fpm-alpine`](https://github.com/phpmyadmin/docker/blob/216be795f7a1a60c2c27ff5d00b5c8476771e1d1/fpm-alpine/Dockerfile)
+-	[`5.2.2-fpm-alpine`, `5.2-fpm-alpine`, `5-fpm-alpine`, `fpm-alpine`](https://github.com/phpmyadmin/docker/blob/24c2f1f855bfa93c9c2640261f601620bf312f17/fpm-alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -36,7 +36,7 @@ WARNING:
 	[https://github.com/phpmyadmin/docker/issues](https://github.com/phpmyadmin/docker/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/phpmyadmin/), [`arm32v5`](https://hub.docker.com/r/arm32v5/phpmyadmin/), [`arm32v6`](https://hub.docker.com/r/arm32v6/phpmyadmin/), [`arm32v7`](https://hub.docker.com/r/arm32v7/phpmyadmin/), [`arm64v8`](https://hub.docker.com/r/arm64v8/phpmyadmin/), [`i386`](https://hub.docker.com/r/i386/phpmyadmin/), [`mips64le`](https://hub.docker.com/r/mips64le/phpmyadmin/), [`ppc64le`](https://hub.docker.com/r/ppc64le/phpmyadmin/), [`riscv64`](https://hub.docker.com/r/riscv64/phpmyadmin/), [`s390x`](https://hub.docker.com/r/s390x/phpmyadmin/)
+	[`amd64`](https://hub.docker.com/r/amd64/phpmyadmin/), [`arm32v5`](https://hub.docker.com/r/arm32v5/phpmyadmin/), [`arm32v6`](https://hub.docker.com/r/arm32v6/phpmyadmin/), [`arm32v7`](https://hub.docker.com/r/arm32v7/phpmyadmin/), [`arm64v8`](https://hub.docker.com/r/arm64v8/phpmyadmin/), [`i386`](https://hub.docker.com/r/i386/phpmyadmin/), [`ppc64le`](https://hub.docker.com/r/ppc64le/phpmyadmin/), [`riscv64`](https://hub.docker.com/r/riscv64/phpmyadmin/), [`s390x`](https://hub.docker.com/r/s390x/phpmyadmin/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/phpmyadmin/` directory](https://github.com/docker-library/repo-info/blob/master/repos/phpmyadmin) ([history](https://github.com/docker-library/repo-info/commits/master/repos/phpmyadmin))  
