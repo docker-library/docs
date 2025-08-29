@@ -40,21 +40,21 @@ WARNING:
 
 -	[`24-trixie-slim`, `24.7-trixie-slim`, `24.7.0-trixie-slim`, `current-trixie-slim`, `trixie-slim`](https://github.com/nodejs/docker-node/blob/22fe25038bac4949d8c1dc00f426dd4e9c859c61/24/trixie-slim/Dockerfile)
 
--	[`22-alpine3.21`, `22.18-alpine3.21`, `22.18.0-alpine3.21`, `jod-alpine3.21`, `lts-alpine3.21`](https://github.com/nodejs/docker-node/blob/de1c8c994e1bf8a5843ff7d4d987eee0cad69243/22/alpine3.21/Dockerfile)
+-	[`22-alpine3.21`, `22.19-alpine3.21`, `22.19.0-alpine3.21`, `jod-alpine3.21`, `lts-alpine3.21`](https://github.com/nodejs/docker-node/blob/8a6ee0d86da85db74f5bcf99c9dc6ef87203592f/22/alpine3.21/Dockerfile)
 
--	[`22-alpine`, `22-alpine3.22`, `22.18-alpine`, `22.18-alpine3.22`, `22.18.0-alpine`, `22.18.0-alpine3.22`, `jod-alpine`, `jod-alpine3.22`, `lts-alpine`, `lts-alpine3.22`](https://github.com/nodejs/docker-node/blob/de1c8c994e1bf8a5843ff7d4d987eee0cad69243/22/alpine3.22/Dockerfile)
+-	[`22-alpine`, `22-alpine3.22`, `22.19-alpine`, `22.19-alpine3.22`, `22.19.0-alpine`, `22.19.0-alpine3.22`, `jod-alpine`, `jod-alpine3.22`, `lts-alpine`, `lts-alpine3.22`](https://github.com/nodejs/docker-node/blob/8a6ee0d86da85db74f5bcf99c9dc6ef87203592f/22/alpine3.22/Dockerfile)
 
--	[`22`, `22-bookworm`, `22.18`, `22.18-bookworm`, `22.18.0`, `22.18.0-bookworm`, `jod`, `jod-bookworm`, `lts`, `lts-bookworm`, `lts-jod`](https://github.com/nodejs/docker-node/blob/de1c8c994e1bf8a5843ff7d4d987eee0cad69243/22/bookworm/Dockerfile)
+-	[`22`, `22-bookworm`, `22.19`, `22.19-bookworm`, `22.19.0`, `22.19.0-bookworm`, `jod`, `jod-bookworm`, `lts`, `lts-bookworm`, `lts-jod`](https://github.com/nodejs/docker-node/blob/8a6ee0d86da85db74f5bcf99c9dc6ef87203592f/22/bookworm/Dockerfile)
 
--	[`22-bookworm-slim`, `22-slim`, `22.18-bookworm-slim`, `22.18-slim`, `22.18.0-bookworm-slim`, `22.18.0-slim`, `jod-bookworm-slim`, `jod-slim`, `lts-bookworm-slim`, `lts-slim`](https://github.com/nodejs/docker-node/blob/de1c8c994e1bf8a5843ff7d4d987eee0cad69243/22/bookworm-slim/Dockerfile)
+-	[`22-bookworm-slim`, `22-slim`, `22.19-bookworm-slim`, `22.19-slim`, `22.19.0-bookworm-slim`, `22.19.0-slim`, `jod-bookworm-slim`, `jod-slim`, `lts-bookworm-slim`, `lts-slim`](https://github.com/nodejs/docker-node/blob/8a6ee0d86da85db74f5bcf99c9dc6ef87203592f/22/bookworm-slim/Dockerfile)
 
--	[`22-bullseye`, `22.18-bullseye`, `22.18.0-bullseye`, `jod-bullseye`, `lts-bullseye`](https://github.com/nodejs/docker-node/blob/de1c8c994e1bf8a5843ff7d4d987eee0cad69243/22/bullseye/Dockerfile)
+-	[`22-bullseye`, `22.19-bullseye`, `22.19.0-bullseye`, `jod-bullseye`, `lts-bullseye`](https://github.com/nodejs/docker-node/blob/8a6ee0d86da85db74f5bcf99c9dc6ef87203592f/22/bullseye/Dockerfile)
 
--	[`22-bullseye-slim`, `22.18-bullseye-slim`, `22.18.0-bullseye-slim`, `jod-bullseye-slim`, `lts-bullseye-slim`](https://github.com/nodejs/docker-node/blob/de1c8c994e1bf8a5843ff7d4d987eee0cad69243/22/bullseye-slim/Dockerfile)
+-	[`22-bullseye-slim`, `22.19-bullseye-slim`, `22.19.0-bullseye-slim`, `jod-bullseye-slim`, `lts-bullseye-slim`](https://github.com/nodejs/docker-node/blob/8a6ee0d86da85db74f5bcf99c9dc6ef87203592f/22/bullseye-slim/Dockerfile)
 
--	[`22-trixie`, `22.18-trixie`, `22.18.0-trixie`, `jod-trixie`, `lts-trixie`](https://github.com/nodejs/docker-node/blob/f9e105af51a35a84638d79cf717c507075f33985/22/trixie/Dockerfile)
+-	[`22-trixie`, `22.19-trixie`, `22.19.0-trixie`, `jod-trixie`, `lts-trixie`](https://github.com/nodejs/docker-node/blob/8a6ee0d86da85db74f5bcf99c9dc6ef87203592f/22/trixie/Dockerfile)
 
--	[`22-trixie-slim`, `22.18-trixie-slim`, `22.18.0-trixie-slim`, `jod-trixie-slim`, `lts-trixie-slim`](https://github.com/nodejs/docker-node/blob/f9e105af51a35a84638d79cf717c507075f33985/22/trixie-slim/Dockerfile)
+-	[`22-trixie-slim`, `22.19-trixie-slim`, `22.19.0-trixie-slim`, `jod-trixie-slim`, `lts-trixie-slim`](https://github.com/nodejs/docker-node/blob/8a6ee0d86da85db74f5bcf99c9dc6ef87203592f/22/trixie-slim/Dockerfile)
 
 -	[`20-alpine3.21`, `20.19-alpine3.21`, `20.19.4-alpine3.21`, `iron-alpine3.21`](https://github.com/nodejs/docker-node/blob/c33478265e946cb3c22fd6b404137588fc18c12a/20/alpine3.21/Dockerfile)
 
