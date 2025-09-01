@@ -59,7 +59,7 @@ WARNING:
 -	User-centric insights
 -	Customisable and extensible
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/955ef68222b4466509ca877daab484bc0095afcf/matomo/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/1553a3fe5fc08c4619fcacb51e61e33f3495e26d/matomo/logo.svg?sanitize=true)
 
 # How to use this image
 
