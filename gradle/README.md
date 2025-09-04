@@ -20,7 +20,7 @@ WARNING:
 	[Gradle, Inc.](https://github.com/gradle/docker-gradle)
 
 -	**Where to get help**:  
-	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
+	[Gradle Community Slack](https://gradle.org/slack-invite), [Gradle Community Forum](https://discuss.gradle.org), [Docker Community Slack](https://dockr.ly/comm-slack)⁠, [Server Fault](https://serverfault.com/help/on-topic)⁠, [Unix & Linux](https://unix.stackexchange.com/help/on-topic)⁠, [Stack Overflow⁠](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
@@ -193,25 +193,24 @@ WARNING:
 
 # What is Gradle?
 
-[Gradle](https://gradle.org/) is a build tool with a focus on build automation and support for multi-language development. If you are building, testing, publishing, and deploying software on any platform, Gradle offers a flexible model that can support the entire development lifecycle from compiling and packaging code to publishing web sites. Gradle has been designed to support build automation across multiple languages and platforms including Java, Scala, Android, C/C++, and Groovy, and is closely integrated with development tools and continuous integration servers including Eclipse, IntelliJ, and Jenkins.
+[Gradle](https://gradle.org/) is a fast, dependable, and adaptable open-source build automation tool with an elegant and extensible declarative build language.
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/c3d3ca6beed000f9ba6eabc98f3399158f520256/gradle/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/a699a4b975a6b15d3f2a198221dfc93d792ff457/gradle/logo.png)
 
 # How to use this image
 
-## Building a Gradle project
+## Run a Gradle task
 
-Run this from the directory of the Gradle project you want to build.
+From your project directory:
 
-`docker run --rm -u gradle -v "$PWD":/home/gradle/project -w /home/gradle/project gradle gradle <gradle-task>`
+```bash
+docker run --rm -u gradle \
+  -v "$PWD":/home/gradle/project \
+  -w /home/gradle/project \
+  gradle gradle <task>
+```
 
-Note the above command runs using uid/gid 1000 (user *gradle*) to avoid running as root.
-
-If you are mounting a volume and the uid/gid running Docker is not *1000*, you should run as user *root* (`-u root`). *root* is also the default, so you can also simply not specify a user.
-
-## Java 21 support
-
-Java 21 does not currently support build customizations using Kotlin (such as using the `kotlin-dsl` plugin in a buildSrc script). Full support for Java 21 will come in a future Gradle release.
+Replace `<task>` with your desired Gradle task, e.g., `build`.
 
 # Image Variants
 
