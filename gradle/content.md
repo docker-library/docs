@@ -14,7 +14,7 @@ From your project directory:
 docker run --rm -u gradle \
   -v "$PWD":/home/gradle/project \
   -w /home/gradle/project \
-  gradle:latest gradle <task>
+  %%IMAGE%% gradle <task>
 ```
 
 Replace `<task>` with your desired Gradle task, e.g., `build`.
