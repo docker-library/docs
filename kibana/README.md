@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v5` builds of [the `kibana` official image](https://hub.docker.com/_/kibana) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,17 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.17.28`](https://github.com/elastic/dockerfiles/blob/28b876f2aaba7bc27d76a1acd55cbc8ada9b5dea/kibana/Dockerfile)
-
--	[`8.17.10`](https://github.com/elastic/dockerfiles/blob/3861498adce22926e852b1bbec340f159147a47f/kibana/Dockerfile)
-
--	[`8.18.6`](https://github.com/elastic/dockerfiles/blob/7836641e57ee2a2bc47adeaadc734373ddf49daf/kibana/Dockerfile)
-
--	[`8.19.3`](https://github.com/elastic/dockerfiles/blob/bb9cae645a6e1ab42b03eb2ca3ec6bc51f9cf1aa/kibana/Dockerfile)
-
--	[`9.0.6`](https://github.com/elastic/dockerfiles/blob/ed9458305f1da1d4673e65c5354e5b34f1c8b8ca/kibana/Dockerfile)
-
--	[`9.1.3`](https://github.com/elastic/dockerfiles/blob/0cb7c2f8b7a514cbb15b94350f8254be692e352e/kibana/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v5` ARCHITECTURE
 
 # Quick reference (cont.)
 
