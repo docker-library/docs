@@ -195,7 +195,7 @@ WARNING:
 
 [Gradle](https://gradle.org/) is a fast, dependable, and adaptable open-source build automation tool with an elegant and extensible declarative build language.
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/a699a4b975a6b15d3f2a198221dfc93d792ff457/gradle/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/dec360b0c9d570427d22f98a0d7c30969b62af6f/gradle/logo.png)
 
 # How to use this image
 
