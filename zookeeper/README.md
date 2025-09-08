@@ -26,7 +26,7 @@ WARNING:
 
 -	[`3.8.4`, `3.8`, `3.8.4-jre-17`, `3.8-jre-17`](https://github.com/31z4/zookeeper-docker/blob/ec1050affd761a7886c1f1f5d18165c19d3143e8/3.8.4/Dockerfile)
 
--	[`3.9.3`, `3.9`, `3.9.3-jre-17`, `3.9-jre-17`, `latest`](https://github.com/31z4/zookeeper-docker/blob/268d33caa089426f4f173ba0bac9277919f88dc7/3.9.3/Dockerfile)
+-	[`3.9.4`, `3.9`, `3.9.4-jre-17`, `3.9-jre-17`, `latest`](https://github.com/31z4/zookeeper-docker/blob/c56b077b4858f22bfc5014cfb3c570d78c56a71d/3.9.4/Dockerfile)
 
 # Quick reference (cont.)
 
