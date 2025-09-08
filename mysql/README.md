@@ -24,13 +24,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`9.4.0`, `9.4`, `9`, `innovation`, `latest`, `9.4.0-oraclelinux9`, `9.4-oraclelinux9`, `9-oraclelinux9`, `innovation-oraclelinux9`, `oraclelinux9`, `9.4.0-oracle`, `9.4-oracle`, `9-oracle`, `innovation-oracle`, `oracle`](https://github.com/docker-library/mysql/blob/cfdf0f31c85e777afa46157194ea8363dccc0260/innovation/Dockerfile.oracle)
+-	[`9.4.0`, `9.4`, `9`, `innovation`, `latest`, `9.4.0-oraclelinux9`, `9.4-oraclelinux9`, `9-oraclelinux9`, `innovation-oraclelinux9`, `oraclelinux9`, `9.4.0-oracle`, `9.4-oracle`, `9-oracle`, `innovation-oracle`, `oracle`](https://github.com/docker-library/mysql/blob/9637f3b86a8bcdf852311299893a644f027d66ef/innovation/Dockerfile.oracle)
 
--	[`8.4.6`, `8.4`, `8`, `lts`, `8.4.6-oraclelinux9`, `8.4-oraclelinux9`, `8-oraclelinux9`, `lts-oraclelinux9`, `8.4.6-oracle`, `8.4-oracle`, `8-oracle`, `lts-oracle`](https://github.com/docker-library/mysql/blob/516237cdb5e0991abc0c6dcbbc7a66cc6444d3a3/8.4/Dockerfile.oracle)
+-	[`8.4.6`, `8.4`, `8`, `lts`, `8.4.6-oraclelinux9`, `8.4-oraclelinux9`, `8-oraclelinux9`, `lts-oraclelinux9`, `8.4.6-oracle`, `8.4-oracle`, `8-oracle`, `lts-oracle`](https://github.com/docker-library/mysql/blob/9637f3b86a8bcdf852311299893a644f027d66ef/8.4/Dockerfile.oracle)
 
--	[`8.0.43`, `8.0`, `8.0.43-oraclelinux9`, `8.0-oraclelinux9`, `8.0.43-oracle`, `8.0-oracle`](https://github.com/docker-library/mysql/blob/4ea634473f3ca9b1dcd476236e6d617258e2d63b/8.0/Dockerfile.oracle)
+-	[`8.0.43`, `8.0`, `8.0.43-oraclelinux9`, `8.0-oraclelinux9`, `8.0.43-oracle`, `8.0-oracle`](https://github.com/docker-library/mysql/blob/9637f3b86a8bcdf852311299893a644f027d66ef/8.0/Dockerfile.oracle)
 
--	[`8.0.43-bookworm`, `8.0-bookworm`, `8.0.43-debian`, `8.0-debian`](https://github.com/docker-library/mysql/blob/4ea634473f3ca9b1dcd476236e6d617258e2d63b/8.0/Dockerfile.debian)
+-	[`8.0.43-bookworm`, `8.0-bookworm`, `8.0.43-debian`, `8.0-debian`](https://github.com/docker-library/mysql/blob/9637f3b86a8bcdf852311299893a644f027d66ef/8.0/Dockerfile.debian)
 
 # Quick reference (cont.)
 
