@@ -24,183 +24,183 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-bookworm-21/latest/Dockerfile)
+-	[`latest`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-bookworm-21/latest/Dockerfile)
 
--	[`temurin-8-lein-2.11.2-alpine`, `temurin-8-lein-alpine`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/eclipse-temurin-8-jdk-alpine/lein/Dockerfile)
+-	[`temurin-8-lein-2.12.0-alpine`, `temurin-8-lein-alpine`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/eclipse-temurin-8-jdk-alpine/lein/Dockerfile)
 
--	[`temurin-8-lein-2.11.2-bookworm`, `temurin-8-lein-bookworm`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-bookworm-8/lein/Dockerfile)
+-	[`temurin-8-lein-2.12.0-bookworm`, `temurin-8-lein-bookworm`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-bookworm-8/lein/Dockerfile)
 
--	[`temurin-8-lein-2.11.2-bookworm-slim`, `temurin-8-lein-bookworm-slim`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-bookworm-slim-8/lein/Dockerfile)
+-	[`temurin-8-lein-2.12.0-bookworm-slim`, `temurin-8-lein-bookworm-slim`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-bookworm-slim-8/lein/Dockerfile)
 
--	[`temurin-8-lein-2.11.2-bullseye`, `temurin-8-lein-bullseye`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-bullseye-8/lein/Dockerfile)
+-	[`temurin-8-lein-2.12.0-bullseye`, `temurin-8-lein-bullseye`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-bullseye-8/lein/Dockerfile)
 
--	[`temurin-8-lein-2.11.2-bullseye-slim`, `temurin-8-lein-bullseye-slim`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-bullseye-slim-8/lein/Dockerfile)
+-	[`temurin-8-lein-2.12.0-bullseye-slim`, `temurin-8-lein-bullseye-slim`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-bullseye-slim-8/lein/Dockerfile)
 
--	[`temurin-8-lein-2.11.2-jammy`, `temurin-8-lein-jammy`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/eclipse-temurin-8-jdk-jammy/lein/Dockerfile)
+-	[`temurin-8-lein-2.12.0-jammy`, `temurin-8-lein-jammy`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/eclipse-temurin-8-jdk-jammy/lein/Dockerfile)
 
--	[`temurin-8-lein`, `temurin-8-lein-2.11.2`, `temurin-8-lein-2.11.2-noble`, `temurin-8-lein-noble`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/eclipse-temurin-8-jdk-noble/lein/Dockerfile)
+-	[`temurin-8-lein`, `temurin-8-lein-2.12.0`, `temurin-8-lein-2.12.0-noble`, `temurin-8-lein-noble`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/eclipse-temurin-8-jdk-noble/lein/Dockerfile)
 
--	[`temurin-8-lein-2.11.2-trixie`, `temurin-8-lein-trixie`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-trixie-8/lein/Dockerfile)
+-	[`temurin-8-lein-2.12.0-trixie`, `temurin-8-lein-trixie`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-trixie-8/lein/Dockerfile)
 
--	[`temurin-8-lein-2.11.2-trixie-slim`, `temurin-8-lein-trixie-slim`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-trixie-slim-8/lein/Dockerfile)
+-	[`temurin-8-lein-2.12.0-trixie-slim`, `temurin-8-lein-trixie-slim`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-trixie-slim-8/lein/Dockerfile)
 
--	[`temurin-8-alpine`, `temurin-8-tools-deps-1.12.2.1565-alpine`, `temurin-8-tools-deps-alpine`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/eclipse-temurin-8-jdk-alpine/tools-deps/Dockerfile)
+-	[`temurin-8-alpine`, `temurin-8-tools-deps-1.12.2.1565-alpine`, `temurin-8-tools-deps-alpine`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/eclipse-temurin-8-jdk-alpine/tools-deps/Dockerfile)
 
--	[`temurin-8-bookworm`, `temurin-8-tools-deps-1.12.2.1565-bookworm`, `temurin-8-tools-deps-bookworm`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-bookworm-8/tools-deps/Dockerfile)
+-	[`temurin-8-bookworm`, `temurin-8-tools-deps-1.12.2.1565-bookworm`, `temurin-8-tools-deps-bookworm`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-bookworm-8/tools-deps/Dockerfile)
 
--	[`temurin-8-bookworm-slim`, `temurin-8-tools-deps-1.12.2.1565-bookworm-slim`, `temurin-8-tools-deps-bookworm-slim`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-bookworm-slim-8/tools-deps/Dockerfile)
+-	[`temurin-8-bookworm-slim`, `temurin-8-tools-deps-1.12.2.1565-bookworm-slim`, `temurin-8-tools-deps-bookworm-slim`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-bookworm-slim-8/tools-deps/Dockerfile)
 
--	[`temurin-8-bullseye`, `temurin-8-tools-deps-1.12.2.1565-bullseye`, `temurin-8-tools-deps-bullseye`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-bullseye-8/tools-deps/Dockerfile)
+-	[`temurin-8-bullseye`, `temurin-8-tools-deps-1.12.2.1565-bullseye`, `temurin-8-tools-deps-bullseye`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-bullseye-8/tools-deps/Dockerfile)
 
--	[`temurin-8-bullseye-slim`, `temurin-8-tools-deps-1.12.2.1565-bullseye-slim`, `temurin-8-tools-deps-bullseye-slim`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-bullseye-slim-8/tools-deps/Dockerfile)
+-	[`temurin-8-bullseye-slim`, `temurin-8-tools-deps-1.12.2.1565-bullseye-slim`, `temurin-8-tools-deps-bullseye-slim`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-bullseye-slim-8/tools-deps/Dockerfile)
 
--	[`temurin-8-jammy`, `temurin-8-tools-deps-1.12.2.1565-jammy`, `temurin-8-tools-deps-jammy`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/eclipse-temurin-8-jdk-jammy/tools-deps/Dockerfile)
+-	[`temurin-8-jammy`, `temurin-8-tools-deps-1.12.2.1565-jammy`, `temurin-8-tools-deps-jammy`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/eclipse-temurin-8-jdk-jammy/tools-deps/Dockerfile)
 
--	[`temurin-8-noble`, `temurin-8-tools-deps`, `temurin-8-tools-deps-1.12.2.1565`, `temurin-8-tools-deps-1.12.2.1565-noble`, `temurin-8-tools-deps-noble`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/eclipse-temurin-8-jdk-noble/tools-deps/Dockerfile)
+-	[`temurin-8-noble`, `temurin-8-tools-deps`, `temurin-8-tools-deps-1.12.2.1565`, `temurin-8-tools-deps-1.12.2.1565-noble`, `temurin-8-tools-deps-noble`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/eclipse-temurin-8-jdk-noble/tools-deps/Dockerfile)
 
--	[`temurin-8-tools-deps-1.12.2.1565-trixie`, `temurin-8-tools-deps-trixie`, `temurin-8-trixie`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-trixie-8/tools-deps/Dockerfile)
+-	[`temurin-8-tools-deps-1.12.2.1565-trixie`, `temurin-8-tools-deps-trixie`, `temurin-8-trixie`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-trixie-8/tools-deps/Dockerfile)
 
--	[`temurin-8-tools-deps-1.12.2.1565-trixie-slim`, `temurin-8-tools-deps-trixie-slim`, `temurin-8-trixie-slim`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-trixie-slim-8/tools-deps/Dockerfile)
+-	[`temurin-8-tools-deps-1.12.2.1565-trixie-slim`, `temurin-8-tools-deps-trixie-slim`, `temurin-8-trixie-slim`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-trixie-slim-8/tools-deps/Dockerfile)
 
--	[`temurin-11-lein-2.11.2-alpine`, `temurin-11-lein-alpine`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/eclipse-temurin-11-jdk-alpine/lein/Dockerfile)
+-	[`temurin-11-lein-2.12.0-alpine`, `temurin-11-lein-alpine`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/eclipse-temurin-11-jdk-alpine/lein/Dockerfile)
 
--	[`temurin-11-lein-2.11.2-bookworm`, `temurin-11-lein-bookworm`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-bookworm-11/lein/Dockerfile)
+-	[`temurin-11-lein-2.12.0-bookworm`, `temurin-11-lein-bookworm`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-bookworm-11/lein/Dockerfile)
 
--	[`temurin-11-lein-2.11.2-bookworm-slim`, `temurin-11-lein-bookworm-slim`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-bookworm-slim-11/lein/Dockerfile)
+-	[`temurin-11-lein-2.12.0-bookworm-slim`, `temurin-11-lein-bookworm-slim`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-bookworm-slim-11/lein/Dockerfile)
 
--	[`temurin-11-lein-2.11.2-bullseye`, `temurin-11-lein-bullseye`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-bullseye-11/lein/Dockerfile)
+-	[`temurin-11-lein-2.12.0-bullseye`, `temurin-11-lein-bullseye`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-bullseye-11/lein/Dockerfile)
 
--	[`temurin-11-lein-2.11.2-bullseye-slim`, `temurin-11-lein-bullseye-slim`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-bullseye-slim-11/lein/Dockerfile)
+-	[`temurin-11-lein-2.12.0-bullseye-slim`, `temurin-11-lein-bullseye-slim`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-bullseye-slim-11/lein/Dockerfile)
 
--	[`temurin-11-lein-2.11.2-jammy`, `temurin-11-lein-jammy`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/eclipse-temurin-11-jdk-jammy/lein/Dockerfile)
+-	[`temurin-11-lein-2.12.0-jammy`, `temurin-11-lein-jammy`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/eclipse-temurin-11-jdk-jammy/lein/Dockerfile)
 
--	[`temurin-11-lein`, `temurin-11-lein-2.11.2`, `temurin-11-lein-2.11.2-noble`, `temurin-11-lein-noble`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/eclipse-temurin-11-jdk-noble/lein/Dockerfile)
+-	[`temurin-11-lein`, `temurin-11-lein-2.12.0`, `temurin-11-lein-2.12.0-noble`, `temurin-11-lein-noble`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/eclipse-temurin-11-jdk-noble/lein/Dockerfile)
 
--	[`temurin-11-lein-2.11.2-trixie`, `temurin-11-lein-trixie`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-trixie-11/lein/Dockerfile)
+-	[`temurin-11-lein-2.12.0-trixie`, `temurin-11-lein-trixie`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-trixie-11/lein/Dockerfile)
 
--	[`temurin-11-lein-2.11.2-trixie-slim`, `temurin-11-lein-trixie-slim`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-trixie-slim-11/lein/Dockerfile)
+-	[`temurin-11-lein-2.12.0-trixie-slim`, `temurin-11-lein-trixie-slim`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-trixie-slim-11/lein/Dockerfile)
 
--	[`temurin-11-alpine`, `temurin-11-tools-deps-1.12.2.1565-alpine`, `temurin-11-tools-deps-alpine`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/eclipse-temurin-11-jdk-alpine/tools-deps/Dockerfile)
+-	[`temurin-11-alpine`, `temurin-11-tools-deps-1.12.2.1565-alpine`, `temurin-11-tools-deps-alpine`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/eclipse-temurin-11-jdk-alpine/tools-deps/Dockerfile)
 
--	[`temurin-11-bookworm`, `temurin-11-tools-deps-1.12.2.1565-bookworm`, `temurin-11-tools-deps-bookworm`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-bookworm-11/tools-deps/Dockerfile)
+-	[`temurin-11-bookworm`, `temurin-11-tools-deps-1.12.2.1565-bookworm`, `temurin-11-tools-deps-bookworm`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-bookworm-11/tools-deps/Dockerfile)
 
--	[`temurin-11-bookworm-slim`, `temurin-11-tools-deps-1.12.2.1565-bookworm-slim`, `temurin-11-tools-deps-bookworm-slim`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-bookworm-slim-11/tools-deps/Dockerfile)
+-	[`temurin-11-bookworm-slim`, `temurin-11-tools-deps-1.12.2.1565-bookworm-slim`, `temurin-11-tools-deps-bookworm-slim`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-bookworm-slim-11/tools-deps/Dockerfile)
 
--	[`temurin-11-bullseye`, `temurin-11-tools-deps-1.12.2.1565-bullseye`, `temurin-11-tools-deps-bullseye`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-bullseye-11/tools-deps/Dockerfile)
+-	[`temurin-11-bullseye`, `temurin-11-tools-deps-1.12.2.1565-bullseye`, `temurin-11-tools-deps-bullseye`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-bullseye-11/tools-deps/Dockerfile)
 
--	[`temurin-11-bullseye-slim`, `temurin-11-tools-deps-1.12.2.1565-bullseye-slim`, `temurin-11-tools-deps-bullseye-slim`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-bullseye-slim-11/tools-deps/Dockerfile)
+-	[`temurin-11-bullseye-slim`, `temurin-11-tools-deps-1.12.2.1565-bullseye-slim`, `temurin-11-tools-deps-bullseye-slim`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-bullseye-slim-11/tools-deps/Dockerfile)
 
--	[`temurin-11-jammy`, `temurin-11-tools-deps-1.12.2.1565-jammy`, `temurin-11-tools-deps-jammy`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/eclipse-temurin-11-jdk-jammy/tools-deps/Dockerfile)
+-	[`temurin-11-jammy`, `temurin-11-tools-deps-1.12.2.1565-jammy`, `temurin-11-tools-deps-jammy`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/eclipse-temurin-11-jdk-jammy/tools-deps/Dockerfile)
 
--	[`temurin-11-noble`, `temurin-11-tools-deps`, `temurin-11-tools-deps-1.12.2.1565`, `temurin-11-tools-deps-1.12.2.1565-noble`, `temurin-11-tools-deps-noble`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/eclipse-temurin-11-jdk-noble/tools-deps/Dockerfile)
+-	[`temurin-11-noble`, `temurin-11-tools-deps`, `temurin-11-tools-deps-1.12.2.1565`, `temurin-11-tools-deps-1.12.2.1565-noble`, `temurin-11-tools-deps-noble`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/eclipse-temurin-11-jdk-noble/tools-deps/Dockerfile)
 
--	[`temurin-11-tools-deps-1.12.2.1565-trixie`, `temurin-11-tools-deps-trixie`, `temurin-11-trixie`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-trixie-11/tools-deps/Dockerfile)
+-	[`temurin-11-tools-deps-1.12.2.1565-trixie`, `temurin-11-tools-deps-trixie`, `temurin-11-trixie`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-trixie-11/tools-deps/Dockerfile)
 
--	[`temurin-11-tools-deps-1.12.2.1565-trixie-slim`, `temurin-11-tools-deps-trixie-slim`, `temurin-11-trixie-slim`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-trixie-slim-11/tools-deps/Dockerfile)
+-	[`temurin-11-tools-deps-1.12.2.1565-trixie-slim`, `temurin-11-tools-deps-trixie-slim`, `temurin-11-trixie-slim`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-trixie-slim-11/tools-deps/Dockerfile)
 
--	[`temurin-17-lein-2.11.2-alpine`, `temurin-17-lein-alpine`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/eclipse-temurin-17-jdk-alpine/lein/Dockerfile)
+-	[`temurin-17-lein-2.12.0-alpine`, `temurin-17-lein-alpine`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/eclipse-temurin-17-jdk-alpine/lein/Dockerfile)
 
--	[`temurin-17-lein-2.11.2-bookworm`, `temurin-17-lein-bookworm`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-bookworm-17/lein/Dockerfile)
+-	[`temurin-17-lein-2.12.0-bookworm`, `temurin-17-lein-bookworm`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-bookworm-17/lein/Dockerfile)
 
--	[`temurin-17-lein-2.11.2-bookworm-slim`, `temurin-17-lein-bookworm-slim`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-bookworm-slim-17/lein/Dockerfile)
+-	[`temurin-17-lein-2.12.0-bookworm-slim`, `temurin-17-lein-bookworm-slim`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-bookworm-slim-17/lein/Dockerfile)
 
--	[`temurin-17-lein-2.11.2-bullseye`, `temurin-17-lein-bullseye`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-bullseye-17/lein/Dockerfile)
+-	[`temurin-17-lein-2.12.0-bullseye`, `temurin-17-lein-bullseye`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-bullseye-17/lein/Dockerfile)
 
--	[`temurin-17-lein-2.11.2-bullseye-slim`, `temurin-17-lein-bullseye-slim`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-bullseye-slim-17/lein/Dockerfile)
+-	[`temurin-17-lein-2.12.0-bullseye-slim`, `temurin-17-lein-bullseye-slim`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-bullseye-slim-17/lein/Dockerfile)
 
--	[`temurin-17-lein-2.11.2-jammy`, `temurin-17-lein-jammy`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/eclipse-temurin-17-jdk-jammy/lein/Dockerfile)
+-	[`temurin-17-lein-2.12.0-jammy`, `temurin-17-lein-jammy`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/eclipse-temurin-17-jdk-jammy/lein/Dockerfile)
 
--	[`temurin-17-lein`, `temurin-17-lein-2.11.2`, `temurin-17-lein-2.11.2-noble`, `temurin-17-lein-noble`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/eclipse-temurin-17-jdk-noble/lein/Dockerfile)
+-	[`temurin-17-lein`, `temurin-17-lein-2.12.0`, `temurin-17-lein-2.12.0-noble`, `temurin-17-lein-noble`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/eclipse-temurin-17-jdk-noble/lein/Dockerfile)
 
--	[`temurin-17-lein-2.11.2-trixie`, `temurin-17-lein-trixie`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-trixie-17/lein/Dockerfile)
+-	[`temurin-17-lein-2.12.0-trixie`, `temurin-17-lein-trixie`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-trixie-17/lein/Dockerfile)
 
--	[`temurin-17-lein-2.11.2-trixie-slim`, `temurin-17-lein-trixie-slim`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-trixie-slim-17/lein/Dockerfile)
+-	[`temurin-17-lein-2.12.0-trixie-slim`, `temurin-17-lein-trixie-slim`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-trixie-slim-17/lein/Dockerfile)
 
--	[`temurin-17-alpine`, `temurin-17-tools-deps-1.12.2.1565-alpine`, `temurin-17-tools-deps-alpine`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/eclipse-temurin-17-jdk-alpine/tools-deps/Dockerfile)
+-	[`temurin-17-alpine`, `temurin-17-tools-deps-1.12.2.1565-alpine`, `temurin-17-tools-deps-alpine`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/eclipse-temurin-17-jdk-alpine/tools-deps/Dockerfile)
 
--	[`temurin-17-bookworm`, `temurin-17-tools-deps-1.12.2.1565-bookworm`, `temurin-17-tools-deps-bookworm`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-bookworm-17/tools-deps/Dockerfile)
+-	[`temurin-17-bookworm`, `temurin-17-tools-deps-1.12.2.1565-bookworm`, `temurin-17-tools-deps-bookworm`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-bookworm-17/tools-deps/Dockerfile)
 
--	[`temurin-17-bookworm-slim`, `temurin-17-tools-deps-1.12.2.1565-bookworm-slim`, `temurin-17-tools-deps-bookworm-slim`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-bookworm-slim-17/tools-deps/Dockerfile)
+-	[`temurin-17-bookworm-slim`, `temurin-17-tools-deps-1.12.2.1565-bookworm-slim`, `temurin-17-tools-deps-bookworm-slim`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-bookworm-slim-17/tools-deps/Dockerfile)
 
--	[`temurin-17-bullseye`, `temurin-17-tools-deps-1.12.2.1565-bullseye`, `temurin-17-tools-deps-bullseye`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-bullseye-17/tools-deps/Dockerfile)
+-	[`temurin-17-bullseye`, `temurin-17-tools-deps-1.12.2.1565-bullseye`, `temurin-17-tools-deps-bullseye`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-bullseye-17/tools-deps/Dockerfile)
 
--	[`temurin-17-bullseye-slim`, `temurin-17-tools-deps-1.12.2.1565-bullseye-slim`, `temurin-17-tools-deps-bullseye-slim`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-bullseye-slim-17/tools-deps/Dockerfile)
+-	[`temurin-17-bullseye-slim`, `temurin-17-tools-deps-1.12.2.1565-bullseye-slim`, `temurin-17-tools-deps-bullseye-slim`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-bullseye-slim-17/tools-deps/Dockerfile)
 
--	[`temurin-17-jammy`, `temurin-17-tools-deps-1.12.2.1565-jammy`, `temurin-17-tools-deps-jammy`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/eclipse-temurin-17-jdk-jammy/tools-deps/Dockerfile)
+-	[`temurin-17-jammy`, `temurin-17-tools-deps-1.12.2.1565-jammy`, `temurin-17-tools-deps-jammy`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/eclipse-temurin-17-jdk-jammy/tools-deps/Dockerfile)
 
--	[`temurin-17-noble`, `temurin-17-tools-deps`, `temurin-17-tools-deps-1.12.2.1565`, `temurin-17-tools-deps-1.12.2.1565-noble`, `temurin-17-tools-deps-noble`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/eclipse-temurin-17-jdk-noble/tools-deps/Dockerfile)
+-	[`temurin-17-noble`, `temurin-17-tools-deps`, `temurin-17-tools-deps-1.12.2.1565`, `temurin-17-tools-deps-1.12.2.1565-noble`, `temurin-17-tools-deps-noble`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/eclipse-temurin-17-jdk-noble/tools-deps/Dockerfile)
 
--	[`temurin-17-tools-deps-1.12.2.1565-trixie`, `temurin-17-tools-deps-trixie`, `temurin-17-trixie`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-trixie-17/tools-deps/Dockerfile)
+-	[`temurin-17-tools-deps-1.12.2.1565-trixie`, `temurin-17-tools-deps-trixie`, `temurin-17-trixie`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-trixie-17/tools-deps/Dockerfile)
 
--	[`temurin-17-tools-deps-1.12.2.1565-trixie-slim`, `temurin-17-tools-deps-trixie-slim`, `temurin-17-trixie-slim`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-trixie-slim-17/tools-deps/Dockerfile)
+-	[`temurin-17-tools-deps-1.12.2.1565-trixie-slim`, `temurin-17-tools-deps-trixie-slim`, `temurin-17-trixie-slim`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-trixie-slim-17/tools-deps/Dockerfile)
 
--	[`temurin-21-lein-2.11.2-alpine`, `temurin-21-lein-alpine`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/eclipse-temurin-21-jdk-alpine/lein/Dockerfile)
+-	[`temurin-21-lein-2.12.0-alpine`, `temurin-21-lein-alpine`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/eclipse-temurin-21-jdk-alpine/lein/Dockerfile)
 
--	[`lein`, `lein-2.11.2`, `lein-2.11.2-bookworm`, `lein-bookworm`, `temurin-21-lein`, `temurin-21-lein-2.11.2`, `temurin-21-lein-2.11.2-bookworm`, `temurin-21-lein-bookworm`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-bookworm-21/lein/Dockerfile)
+-	[`lein`, `lein-2.12.0`, `lein-2.12.0-bookworm`, `lein-bookworm`, `temurin-21-lein`, `temurin-21-lein-2.12.0`, `temurin-21-lein-2.12.0-bookworm`, `temurin-21-lein-bookworm`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-bookworm-21/lein/Dockerfile)
 
--	[`lein-2.11.2-bookworm-slim`, `lein-bookworm-slim`, `temurin-21-lein-2.11.2-bookworm-slim`, `temurin-21-lein-bookworm-slim`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-bookworm-slim-21/lein/Dockerfile)
+-	[`lein-2.12.0-bookworm-slim`, `lein-bookworm-slim`, `temurin-21-lein-2.12.0-bookworm-slim`, `temurin-21-lein-bookworm-slim`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-bookworm-slim-21/lein/Dockerfile)
 
--	[`lein-2.11.2-bullseye`, `lein-bullseye`, `temurin-21-lein-2.11.2-bullseye`, `temurin-21-lein-bullseye`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-bullseye-21/lein/Dockerfile)
+-	[`lein-2.12.0-bullseye`, `lein-bullseye`, `temurin-21-lein-2.12.0-bullseye`, `temurin-21-lein-bullseye`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-bullseye-21/lein/Dockerfile)
 
--	[`lein-2.11.2-bullseye-slim`, `lein-bullseye-slim`, `temurin-21-lein-2.11.2-bullseye-slim`, `temurin-21-lein-bullseye-slim`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-bullseye-slim-21/lein/Dockerfile)
+-	[`lein-2.12.0-bullseye-slim`, `lein-bullseye-slim`, `temurin-21-lein-2.12.0-bullseye-slim`, `temurin-21-lein-bullseye-slim`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-bullseye-slim-21/lein/Dockerfile)
 
--	[`temurin-21-lein-2.11.2-jammy`, `temurin-21-lein-jammy`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/eclipse-temurin-21-jdk-jammy/lein/Dockerfile)
+-	[`temurin-21-lein-2.12.0-jammy`, `temurin-21-lein-jammy`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/eclipse-temurin-21-jdk-jammy/lein/Dockerfile)
 
--	[`temurin-21-lein-2.11.2-noble`, `temurin-21-lein-noble`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/eclipse-temurin-21-jdk-noble/lein/Dockerfile)
+-	[`temurin-21-lein-2.12.0-noble`, `temurin-21-lein-noble`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/eclipse-temurin-21-jdk-noble/lein/Dockerfile)
 
--	[`lein-2.11.2-trixie`, `lein-trixie`, `temurin-21-lein-2.11.2-trixie`, `temurin-21-lein-trixie`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-trixie-21/lein/Dockerfile)
+-	[`lein-2.12.0-trixie`, `lein-trixie`, `temurin-21-lein-2.12.0-trixie`, `temurin-21-lein-trixie`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-trixie-21/lein/Dockerfile)
 
--	[`lein-2.11.2-trixie-slim`, `lein-trixie-slim`, `temurin-21-lein-2.11.2-trixie-slim`, `temurin-21-lein-trixie-slim`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-trixie-slim-21/lein/Dockerfile)
+-	[`lein-2.12.0-trixie-slim`, `lein-trixie-slim`, `temurin-21-lein-2.12.0-trixie-slim`, `temurin-21-lein-trixie-slim`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-trixie-slim-21/lein/Dockerfile)
 
--	[`temurin-21-alpine`, `temurin-21-tools-deps-1.12.2.1565-alpine`, `temurin-21-tools-deps-alpine`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/eclipse-temurin-21-jdk-alpine/tools-deps/Dockerfile)
+-	[`temurin-21-alpine`, `temurin-21-tools-deps-1.12.2.1565-alpine`, `temurin-21-tools-deps-alpine`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/eclipse-temurin-21-jdk-alpine/tools-deps/Dockerfile)
 
--	[`temurin-21-bookworm`, `temurin-21-tools-deps`, `temurin-21-tools-deps-1.12.2.1565`, `temurin-21-tools-deps-1.12.2.1565-bookworm`, `temurin-21-tools-deps-bookworm`, `tools-deps`, `tools-deps-1.12.2.1565`, `tools-deps-1.12.2.1565-bookworm`, `tools-deps-bookworm`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-bookworm-21/tools-deps/Dockerfile)
+-	[`temurin-21-bookworm`, `temurin-21-tools-deps`, `temurin-21-tools-deps-1.12.2.1565`, `temurin-21-tools-deps-1.12.2.1565-bookworm`, `temurin-21-tools-deps-bookworm`, `tools-deps`, `tools-deps-1.12.2.1565`, `tools-deps-1.12.2.1565-bookworm`, `tools-deps-bookworm`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-bookworm-21/tools-deps/Dockerfile)
 
--	[`temurin-21-bookworm-slim`, `temurin-21-tools-deps-1.12.2.1565-bookworm-slim`, `temurin-21-tools-deps-bookworm-slim`, `tools-deps-1.12.2.1565-bookworm-slim`, `tools-deps-bookworm-slim`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-bookworm-slim-21/tools-deps/Dockerfile)
+-	[`temurin-21-bookworm-slim`, `temurin-21-tools-deps-1.12.2.1565-bookworm-slim`, `temurin-21-tools-deps-bookworm-slim`, `tools-deps-1.12.2.1565-bookworm-slim`, `tools-deps-bookworm-slim`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-bookworm-slim-21/tools-deps/Dockerfile)
 
--	[`temurin-21-bullseye`, `temurin-21-tools-deps-1.12.2.1565-bullseye`, `temurin-21-tools-deps-bullseye`, `tools-deps-1.12.2.1565-bullseye`, `tools-deps-bullseye`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-bullseye-21/tools-deps/Dockerfile)
+-	[`temurin-21-bullseye`, `temurin-21-tools-deps-1.12.2.1565-bullseye`, `temurin-21-tools-deps-bullseye`, `tools-deps-1.12.2.1565-bullseye`, `tools-deps-bullseye`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-bullseye-21/tools-deps/Dockerfile)
 
--	[`temurin-21-bullseye-slim`, `temurin-21-tools-deps-1.12.2.1565-bullseye-slim`, `temurin-21-tools-deps-bullseye-slim`, `tools-deps-1.12.2.1565-bullseye-slim`, `tools-deps-bullseye-slim`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-bullseye-slim-21/tools-deps/Dockerfile)
+-	[`temurin-21-bullseye-slim`, `temurin-21-tools-deps-1.12.2.1565-bullseye-slim`, `temurin-21-tools-deps-bullseye-slim`, `tools-deps-1.12.2.1565-bullseye-slim`, `tools-deps-bullseye-slim`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-bullseye-slim-21/tools-deps/Dockerfile)
 
--	[`temurin-21-jammy`, `temurin-21-tools-deps-1.12.2.1565-jammy`, `temurin-21-tools-deps-jammy`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/eclipse-temurin-21-jdk-jammy/tools-deps/Dockerfile)
+-	[`temurin-21-jammy`, `temurin-21-tools-deps-1.12.2.1565-jammy`, `temurin-21-tools-deps-jammy`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/eclipse-temurin-21-jdk-jammy/tools-deps/Dockerfile)
 
--	[`temurin-21-noble`, `temurin-21-tools-deps-1.12.2.1565-noble`, `temurin-21-tools-deps-noble`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/eclipse-temurin-21-jdk-noble/tools-deps/Dockerfile)
+-	[`temurin-21-noble`, `temurin-21-tools-deps-1.12.2.1565-noble`, `temurin-21-tools-deps-noble`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/eclipse-temurin-21-jdk-noble/tools-deps/Dockerfile)
 
--	[`temurin-21-tools-deps-1.12.2.1565-trixie`, `temurin-21-tools-deps-trixie`, `temurin-21-trixie`, `tools-deps-1.12.2.1565-trixie`, `tools-deps-trixie`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-trixie-21/tools-deps/Dockerfile)
+-	[`temurin-21-tools-deps-1.12.2.1565-trixie`, `temurin-21-tools-deps-trixie`, `temurin-21-trixie`, `tools-deps-1.12.2.1565-trixie`, `tools-deps-trixie`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-trixie-21/tools-deps/Dockerfile)
 
--	[`temurin-21-tools-deps-1.12.2.1565-trixie-slim`, `temurin-21-tools-deps-trixie-slim`, `temurin-21-trixie-slim`, `tools-deps-1.12.2.1565-trixie-slim`, `tools-deps-trixie-slim`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-trixie-slim-21/tools-deps/Dockerfile)
+-	[`temurin-21-tools-deps-1.12.2.1565-trixie-slim`, `temurin-21-tools-deps-trixie-slim`, `temurin-21-trixie-slim`, `tools-deps-1.12.2.1565-trixie-slim`, `tools-deps-trixie-slim`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-trixie-slim-21/tools-deps/Dockerfile)
 
--	[`temurin-24-lein-2.11.2-alpine`, `temurin-24-lein-alpine`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/eclipse-temurin-24-jdk-alpine/lein/Dockerfile)
+-	[`temurin-24-lein-2.12.0-alpine`, `temurin-24-lein-alpine`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/eclipse-temurin-24-jdk-alpine/lein/Dockerfile)
 
--	[`temurin-24-lein`, `temurin-24-lein-2.11.2`, `temurin-24-lein-2.11.2-bookworm`, `temurin-24-lein-bookworm`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-bookworm-24/lein/Dockerfile)
+-	[`temurin-24-lein`, `temurin-24-lein-2.12.0`, `temurin-24-lein-2.12.0-bookworm`, `temurin-24-lein-bookworm`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-bookworm-24/lein/Dockerfile)
 
--	[`temurin-24-lein-2.11.2-bookworm-slim`, `temurin-24-lein-bookworm-slim`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-bookworm-slim-24/lein/Dockerfile)
+-	[`temurin-24-lein-2.12.0-bookworm-slim`, `temurin-24-lein-bookworm-slim`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-bookworm-slim-24/lein/Dockerfile)
 
--	[`temurin-24-lein-2.11.2-bullseye`, `temurin-24-lein-bullseye`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-bullseye-24/lein/Dockerfile)
+-	[`temurin-24-lein-2.12.0-bullseye`, `temurin-24-lein-bullseye`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-bullseye-24/lein/Dockerfile)
 
--	[`temurin-24-lein-2.11.2-bullseye-slim`, `temurin-24-lein-bullseye-slim`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-bullseye-slim-24/lein/Dockerfile)
+-	[`temurin-24-lein-2.12.0-bullseye-slim`, `temurin-24-lein-bullseye-slim`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-bullseye-slim-24/lein/Dockerfile)
 
--	[`temurin-24-lein-2.11.2-noble`, `temurin-24-lein-noble`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/eclipse-temurin-24-jdk-noble/lein/Dockerfile)
+-	[`temurin-24-lein-2.12.0-noble`, `temurin-24-lein-noble`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/eclipse-temurin-24-jdk-noble/lein/Dockerfile)
 
--	[`temurin-24-lein-2.11.2-trixie`, `temurin-24-lein-trixie`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-trixie-24/lein/Dockerfile)
+-	[`temurin-24-lein-2.12.0-trixie`, `temurin-24-lein-trixie`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-trixie-24/lein/Dockerfile)
 
--	[`temurin-24-lein-2.11.2-trixie-slim`, `temurin-24-lein-trixie-slim`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-trixie-slim-24/lein/Dockerfile)
+-	[`temurin-24-lein-2.12.0-trixie-slim`, `temurin-24-lein-trixie-slim`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-trixie-slim-24/lein/Dockerfile)
 
--	[`temurin-24-alpine`, `temurin-24-tools-deps-1.12.2.1565-alpine`, `temurin-24-tools-deps-alpine`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/eclipse-temurin-24-jdk-alpine/tools-deps/Dockerfile)
+-	[`temurin-24-alpine`, `temurin-24-tools-deps-1.12.2.1565-alpine`, `temurin-24-tools-deps-alpine`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/eclipse-temurin-24-jdk-alpine/tools-deps/Dockerfile)
 
--	[`temurin-24-bookworm`, `temurin-24-tools-deps`, `temurin-24-tools-deps-1.12.2.1565`, `temurin-24-tools-deps-1.12.2.1565-bookworm`, `temurin-24-tools-deps-bookworm`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-bookworm-24/tools-deps/Dockerfile)
+-	[`temurin-24-bookworm`, `temurin-24-tools-deps`, `temurin-24-tools-deps-1.12.2.1565`, `temurin-24-tools-deps-1.12.2.1565-bookworm`, `temurin-24-tools-deps-bookworm`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-bookworm-24/tools-deps/Dockerfile)
 
--	[`temurin-24-bookworm-slim`, `temurin-24-tools-deps-1.12.2.1565-bookworm-slim`, `temurin-24-tools-deps-bookworm-slim`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-bookworm-slim-24/tools-deps/Dockerfile)
+-	[`temurin-24-bookworm-slim`, `temurin-24-tools-deps-1.12.2.1565-bookworm-slim`, `temurin-24-tools-deps-bookworm-slim`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-bookworm-slim-24/tools-deps/Dockerfile)
 
--	[`temurin-24-bullseye`, `temurin-24-tools-deps-1.12.2.1565-bullseye`, `temurin-24-tools-deps-bullseye`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-bullseye-24/tools-deps/Dockerfile)
+-	[`temurin-24-bullseye`, `temurin-24-tools-deps-1.12.2.1565-bullseye`, `temurin-24-tools-deps-bullseye`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-bullseye-24/tools-deps/Dockerfile)
 
--	[`temurin-24-bullseye-slim`, `temurin-24-tools-deps-1.12.2.1565-bullseye-slim`, `temurin-24-tools-deps-bullseye-slim`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-bullseye-slim-24/tools-deps/Dockerfile)
+-	[`temurin-24-bullseye-slim`, `temurin-24-tools-deps-1.12.2.1565-bullseye-slim`, `temurin-24-tools-deps-bullseye-slim`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-bullseye-slim-24/tools-deps/Dockerfile)
 
--	[`temurin-24-noble`, `temurin-24-tools-deps-1.12.2.1565-noble`, `temurin-24-tools-deps-noble`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/eclipse-temurin-24-jdk-noble/tools-deps/Dockerfile)
+-	[`temurin-24-noble`, `temurin-24-tools-deps-1.12.2.1565-noble`, `temurin-24-tools-deps-noble`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/eclipse-temurin-24-jdk-noble/tools-deps/Dockerfile)
 
--	[`temurin-24-tools-deps-1.12.2.1565-trixie`, `temurin-24-tools-deps-trixie`, `temurin-24-trixie`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-trixie-24/tools-deps/Dockerfile)
+-	[`temurin-24-tools-deps-1.12.2.1565-trixie`, `temurin-24-tools-deps-trixie`, `temurin-24-trixie`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-trixie-24/tools-deps/Dockerfile)
 
--	[`temurin-24-tools-deps-1.12.2.1565-trixie-slim`, `temurin-24-tools-deps-trixie-slim`, `temurin-24-trixie-slim`](https://github.com/Quantisan/docker-clojure/blob/64a4e10768b978669fbe7420aee465ec90000e35/target/debian-trixie-slim-24/tools-deps/Dockerfile)
+-	[`temurin-24-tools-deps-1.12.2.1565-trixie-slim`, `temurin-24-tools-deps-trixie-slim`, `temurin-24-trixie-slim`](https://github.com/Quantisan/docker-clojure/blob/31ec9d8356409b27b68fb1dde7016f09d6776c89/target/debian-trixie-slim-24/tools-deps/Dockerfile)
 
 # Quick reference (cont.)
 
