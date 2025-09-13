@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `amd64` builds of [the `julia` official image](https://hub.docker.com/_/julia) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -32,10 +34,6 @@ WARNING:
 
 -	[`1.12.0-rc2-bookworm`, `1.12-rc-bookworm`, `rc-bookworm`](https://github.com/docker-library/julia/blob/fb289f3839d56d64fa120b1d733fc684e44c31c9/1.12-rc/bookworm/Dockerfile)
 
--	[`1.12.0-rc2-windowsservercore-ltsc2025`, `1.12-rc-windowsservercore-ltsc2025`, `rc-windowsservercore-ltsc2025`](https://github.com/docker-library/julia/blob/fb289f3839d56d64fa120b1d733fc684e44c31c9/1.12-rc/windows/windowsservercore-ltsc2025/Dockerfile)
-
--	[`1.12.0-rc2-windowsservercore-ltsc2022`, `1.12-rc-windowsservercore-ltsc2022`, `rc-windowsservercore-ltsc2022`](https://github.com/docker-library/julia/blob/fb289f3839d56d64fa120b1d733fc684e44c31c9/1.12-rc/windows/windowsservercore-ltsc2022/Dockerfile)
-
 -	[`1.11.6-trixie`, `1.11-trixie`, `1-trixie`, `trixie`](https://github.com/docker-library/julia/blob/25081b47fd632d8a7140a3fede2da1db2d96aee5/1.11/trixie/Dockerfile)
 
 -	[`1.11.6-bookworm`, `1.11-bookworm`, `1-bookworm`, `bookworm`](https://github.com/docker-library/julia/blob/7237d625608943c4717366d9bde4e014771ffefc/1.11/bookworm/Dockerfile)
@@ -43,10 +41,6 @@ WARNING:
 -	[`1.11.6-alpine3.22`, `1.11-alpine3.22`, `1-alpine3.22`, `alpine3.22`, `1.11.6-alpine`, `1.11-alpine`, `1-alpine`, `alpine`](https://github.com/docker-library/julia/blob/7237d625608943c4717366d9bde4e014771ffefc/1.11/alpine3.22/Dockerfile)
 
 -	[`1.11.6-alpine3.21`, `1.11-alpine3.21`, `1-alpine3.21`, `alpine3.21`](https://github.com/docker-library/julia/blob/7237d625608943c4717366d9bde4e014771ffefc/1.11/alpine3.21/Dockerfile)
-
--	[`1.11.6-windowsservercore-ltsc2025`, `1.11-windowsservercore-ltsc2025`, `1-windowsservercore-ltsc2025`, `windowsservercore-ltsc2025`](https://github.com/docker-library/julia/blob/7237d625608943c4717366d9bde4e014771ffefc/1.11/windows/windowsservercore-ltsc2025/Dockerfile)
-
--	[`1.11.6-windowsservercore-ltsc2022`, `1.11-windowsservercore-ltsc2022`, `1-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`](https://github.com/docker-library/julia/blob/7237d625608943c4717366d9bde4e014771ffefc/1.11/windows/windowsservercore-ltsc2022/Dockerfile)
 
 -	[`1.10.10-trixie`, `1.10-trixie`](https://github.com/docker-library/julia/blob/25081b47fd632d8a7140a3fede2da1db2d96aee5/1.10/trixie/Dockerfile)
 
@@ -56,44 +50,19 @@ WARNING:
 
 -	[`1.10.10-alpine3.21`, `1.10-alpine3.21`](https://github.com/docker-library/julia/blob/36ec8a84fe6a3ac59872725f20e892e472b45227/1.10/alpine3.21/Dockerfile)
 
--	[`1.10.10-windowsservercore-ltsc2025`, `1.10-windowsservercore-ltsc2025`](https://github.com/docker-library/julia/blob/36ec8a84fe6a3ac59872725f20e892e472b45227/1.10/windows/windowsservercore-ltsc2025/Dockerfile)
-
--	[`1.10.10-windowsservercore-ltsc2022`, `1.10-windowsservercore-ltsc2022`](https://github.com/docker-library/julia/blob/36ec8a84fe6a3ac59872725f20e892e472b45227/1.10/windows/windowsservercore-ltsc2022/Dockerfile)
-
 ## Shared Tags
 
 -	`1.12.0-rc2`, `1.12-rc`, `rc`:
 
 	-	[`1.12.0-rc2-trixie`](https://github.com/docker-library/julia/blob/fb289f3839d56d64fa120b1d733fc684e44c31c9/1.12-rc/trixie/Dockerfile)
-	-	[`1.12.0-rc2-windowsservercore-ltsc2025`](https://github.com/docker-library/julia/blob/fb289f3839d56d64fa120b1d733fc684e44c31c9/1.12-rc/windows/windowsservercore-ltsc2025/Dockerfile)
-	-	[`1.12.0-rc2-windowsservercore-ltsc2022`](https://github.com/docker-library/julia/blob/fb289f3839d56d64fa120b1d733fc684e44c31c9/1.12-rc/windows/windowsservercore-ltsc2022/Dockerfile)
-
--	`1.12.0-rc2-windowsservercore`, `1.12-rc-windowsservercore`, `rc-windowsservercore`:
-
-	-	[`1.12.0-rc2-windowsservercore-ltsc2025`](https://github.com/docker-library/julia/blob/fb289f3839d56d64fa120b1d733fc684e44c31c9/1.12-rc/windows/windowsservercore-ltsc2025/Dockerfile)
-	-	[`1.12.0-rc2-windowsservercore-ltsc2022`](https://github.com/docker-library/julia/blob/fb289f3839d56d64fa120b1d733fc684e44c31c9/1.12-rc/windows/windowsservercore-ltsc2022/Dockerfile)
 
 -	`1.11.6`, `1.11`, `1`, `latest`:
 
 	-	[`1.11.6-trixie`](https://github.com/docker-library/julia/blob/25081b47fd632d8a7140a3fede2da1db2d96aee5/1.11/trixie/Dockerfile)
-	-	[`1.11.6-windowsservercore-ltsc2025`](https://github.com/docker-library/julia/blob/7237d625608943c4717366d9bde4e014771ffefc/1.11/windows/windowsservercore-ltsc2025/Dockerfile)
-	-	[`1.11.6-windowsservercore-ltsc2022`](https://github.com/docker-library/julia/blob/7237d625608943c4717366d9bde4e014771ffefc/1.11/windows/windowsservercore-ltsc2022/Dockerfile)
-
--	`1.11.6-windowsservercore`, `1.11-windowsservercore`, `1-windowsservercore`, `windowsservercore`:
-
-	-	[`1.11.6-windowsservercore-ltsc2025`](https://github.com/docker-library/julia/blob/7237d625608943c4717366d9bde4e014771ffefc/1.11/windows/windowsservercore-ltsc2025/Dockerfile)
-	-	[`1.11.6-windowsservercore-ltsc2022`](https://github.com/docker-library/julia/blob/7237d625608943c4717366d9bde4e014771ffefc/1.11/windows/windowsservercore-ltsc2022/Dockerfile)
 
 -	`1.10.10`, `1.10`:
 
 	-	[`1.10.10-trixie`](https://github.com/docker-library/julia/blob/25081b47fd632d8a7140a3fede2da1db2d96aee5/1.10/trixie/Dockerfile)
-	-	[`1.10.10-windowsservercore-ltsc2025`](https://github.com/docker-library/julia/blob/36ec8a84fe6a3ac59872725f20e892e472b45227/1.10/windows/windowsservercore-ltsc2025/Dockerfile)
-	-	[`1.10.10-windowsservercore-ltsc2022`](https://github.com/docker-library/julia/blob/36ec8a84fe6a3ac59872725f20e892e472b45227/1.10/windows/windowsservercore-ltsc2022/Dockerfile)
-
--	`1.10.10-windowsservercore`, `1.10-windowsservercore`:
-
-	-	[`1.10.10-windowsservercore-ltsc2025`](https://github.com/docker-library/julia/blob/36ec8a84fe6a3ac59872725f20e892e472b45227/1.10/windows/windowsservercore-ltsc2025/Dockerfile)
-	-	[`1.10.10-windowsservercore-ltsc2022`](https://github.com/docker-library/julia/blob/36ec8a84fe6a3ac59872725f20e892e472b45227/1.10/windows/windowsservercore-ltsc2022/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -135,34 +104,26 @@ It's especially relevant to note that Alpine / musl is "Tier 3" due to several k
 Starting the Julia REPL is as easy as the following:
 
 ```console
-$ docker run -it --rm julia
+$ docker run -it --rm amd64/julia
 ```
 
 ## Run Julia script from your local directory inside container
 
 ```console
-$ docker run -it --rm -v "$PWD":/usr/myapp -w /usr/myapp julia julia script.jl arg1 arg2
+$ docker run -it --rm -v "$PWD":/usr/myapp -w /usr/myapp amd64/julia julia script.jl arg1 arg2
 ```
 
 # Image Variants
 
-The `julia` images come in many flavors, each designed for a specific use case.
+The `amd64/julia` images come in many flavors, each designed for a specific use case.
 
-## `julia:<version>`
+## `amd64/julia:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
 Some of these tags may have names like bookworm or trixie in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
-## `julia:<version>-windowsservercore`
-
-This image is based on [Windows Server Core (`mcr.microsoft.com/windows/servercore`)](https://hub.docker.com/r/microsoft/windows-servercore). As such, it only works in places which that image does, such as Windows 10 Professional/Enterprise (Anniversary Edition) or Windows Server 2016.
-
-For information about how to get Docker running on Windows, please see the relevant "Quick Start" guide provided by Microsoft:
-
--	[Windows Containers Quick Start](https://learn.microsoft.com/en-us/virtualization/windowscontainers/quick-start/set-up-environment?tabs=dockerce)
-
-## `julia:<version>-alpine`
+## `amd64/julia:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
