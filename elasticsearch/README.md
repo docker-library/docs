@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `windows-amd64` builds of [the `elasticsearch` official image](https://hub.docker.com/_/elasticsearch) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,15 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.17.10`](https://github.com/elastic/dockerfiles/blob/3861498adce22926e852b1bbec340f159147a47f/elasticsearch/Dockerfile)
-
--	[`8.18.6`](https://github.com/elastic/dockerfiles/blob/7836641e57ee2a2bc47adeaadc734373ddf49daf/elasticsearch/Dockerfile)
-
--	[`8.19.3`](https://github.com/elastic/dockerfiles/blob/bb9cae645a6e1ab42b03eb2ca3ec6bc51f9cf1aa/elasticsearch/Dockerfile)
-
--	[`9.0.6`](https://github.com/elastic/dockerfiles/blob/ed9458305f1da1d4673e65c5354e5b34f1c8b8ca/elasticsearch/Dockerfile)
-
--	[`9.1.3`](https://github.com/elastic/dockerfiles/blob/0cb7c2f8b7a514cbb15b94350f8254be692e352e/elasticsearch/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `windows-amd64` ARCHITECTURE
 
 # Quick reference (cont.)
 
