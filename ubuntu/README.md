@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v6` builds of [the `ubuntu` official image](https://hub.docker.com/_/ubuntu) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,13 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`22.04`, `jammy-20250819`, `jammy`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-amd64-20250819-3f1e6c43&id=3f1e6c43e88f6d1d68c1393c04b3733060952321)
-
--	[`24.04`, `noble-20250805`, `noble`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-amd64-20250805-779a91e8&id=779a91e80d8ca0c4e26bf1639ade02c8dc9bb537)
-
--	[`25.04`, `plucky-20250730`, `plucky`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-plucky-amd64-20250730-64382f68&id=64382f68a9c78883c68e8fd9c1632107a6d24c9f)
-
--	[`25.10`, `questing-20250830`, `questing`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-questing-amd64-20250830-c245f382&id=c245f3826f2631032e862a48f183fb528158d08a)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v6` ARCHITECTURE
 
 # Quick reference (cont.)
 
@@ -65,9 +61,9 @@ Development of Ubuntu is led by Canonical Ltd. Canonical generates revenue throu
 
 This image is built from official rootfs tarballs provided by Canonical (see `dist-*` tags at https://git.launchpad.net/cloud-images/+oci/ubuntu-base).
 
-The `ubuntu:latest` tag points to the "latest LTS", since that's the version recommended for general use. The `ubuntu:rolling` tag points to the latest release (regardless of LTS status).
+The `arm32v6/ubuntu:latest` tag points to the "latest LTS", since that's the version recommended for general use. The `arm32v6/ubuntu:rolling` tag points to the latest release (regardless of LTS status).
 
-Along a similar vein, the `ubuntu:devel` tag is an alias for whichever release the "devel" suite on the mirrors currently points to, as determined by the following one-liner: `wget -qO- http://archive.ubuntu.com/ubuntu/dists/devel/Release | awk -F ': ' '$1 == "Codename" { print $2; exit }'`
+Along a similar vein, the `arm32v6/ubuntu:devel` tag is an alias for whichever release the "devel" suite on the mirrors currently points to, as determined by the following one-liner: `wget -qO- http://archive.ubuntu.com/ubuntu/dists/devel/Release | awk -F ': ' '$1 == "Codename" { print $2; exit }'`
 
 ## Locales
 
