@@ -30,11 +30,11 @@ WARNING:
 
 -	[`8.18.7`](https://github.com/elastic/dockerfiles/blob/ce7db65871f3bbcb091c536150e0bd6848a5af00/kibana/Dockerfile)
 
--	[`8.19.3`](https://github.com/elastic/dockerfiles/blob/bb9cae645a6e1ab42b03eb2ca3ec6bc51f9cf1aa/kibana/Dockerfile)
+-	[`8.19.4`](https://github.com/elastic/dockerfiles/blob/f99392291c86cb616dc6b16a1ef40985c89475c4/kibana/Dockerfile)
 
 -	[`9.0.7`](https://github.com/elastic/dockerfiles/blob/037d379705fb3b963b11b6a32c0aa58fb731f3d3/kibana/Dockerfile)
 
--	[`9.1.3`](https://github.com/elastic/dockerfiles/blob/0cb7c2f8b7a514cbb15b94350f8254be692e352e/kibana/Dockerfile)
+-	[`9.1.4`](https://github.com/elastic/dockerfiles/blob/661aa810065c3723595090c63c63b56344b7d81b/kibana/Dockerfile)
 
 # Quick reference (cont.)
 
