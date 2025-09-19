@@ -147,6 +147,10 @@ Varnish will listen to HTTP traffic on port `80`, and this can be overridden by 
 $ docker run --tmpfs /var/lib/varnish/varnishd:exec -p 8080:7777 -e VARNISH_HTTP_PORT=7777 varnish
 ```
 
+### VCL file path
+
+The default Varnish configuration file is `/etc/varnish/default.vcl`, but this can be overridden with the `VARNISH_VCL_FILE` environment variable. This is useful if you want a single image that can be deployed with different configurations baked in it.
+
 ### Extra arguments
 
 Additionally, you can add arguments to `docker run` after `varnish`, if the first argument starts with a `-`, the whole list will be appendend to the [default command](https://github.com/varnish/docker-varnish/blob/master/fresh/debian/scripts/docker-varnish-entrypoint):
