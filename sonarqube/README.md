@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v6` builds of [the `sonarqube` official image](https://hub.docker.com/_/sonarqube) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,33 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2025.4.2-developer`, `2025.4-developer`, `developer`](https://github.com/SonarSource/docker-sonarqube/blob/7d0a5314a4c301f1bd3ce713ad5f0d0e212883cf/commercial-editions/developer/Dockerfile)
-
--	[`2025.4.2-enterprise`, `2025.4-enterprise`, `enterprise`](https://github.com/SonarSource/docker-sonarqube/blob/7d0a5314a4c301f1bd3ce713ad5f0d0e212883cf/commercial-editions/enterprise/Dockerfile)
-
--	[`2025.4.2-datacenter-app`, `2025.4-datacenter-app`, `datacenter-app`](https://github.com/SonarSource/docker-sonarqube/blob/7d0a5314a4c301f1bd3ce713ad5f0d0e212883cf/commercial-editions/datacenter/app/Dockerfile)
-
--	[`2025.4.2-datacenter-search`, `2025.4-datacenter-search`, `datacenter-search`](https://github.com/SonarSource/docker-sonarqube/blob/7d0a5314a4c301f1bd3ce713ad5f0d0e212883cf/commercial-editions/datacenter/search/Dockerfile)
-
--	[`2025.1.3-developer`, `2025.1-developer`, `2025-lta-developer`](https://github.com/SonarSource/docker-sonarqube/blob/2a5b137d0669b87f7dfe6c295a5078d7d7c1aaaf/commercial-editions/developer/Dockerfile)
-
--	[`2025.1.3-enterprise`, `2025.1-enterprise`, `2025-lta-enterprise`](https://github.com/SonarSource/docker-sonarqube/blob/2a5b137d0669b87f7dfe6c295a5078d7d7c1aaaf/commercial-editions/enterprise/Dockerfile)
-
--	[`2025.1.3-datacenter-app`, `2025.1-datacenter-app`, `2025-lta-datacenter-app`](https://github.com/SonarSource/docker-sonarqube/blob/2a5b137d0669b87f7dfe6c295a5078d7d7c1aaaf/commercial-editions/datacenter/app/Dockerfile)
-
--	[`2025.1.3-datacenter-search`, `2025.1-datacenter-search`, `2025-lta-datacenter-search`](https://github.com/SonarSource/docker-sonarqube/blob/2a5b137d0669b87f7dfe6c295a5078d7d7c1aaaf/commercial-editions/datacenter/search/Dockerfile)
-
--	[`25.9.0.112764-community`, `community`, `latest`](https://github.com/SonarSource/docker-sonarqube/blob/7d0a5314a4c301f1bd3ce713ad5f0d0e212883cf/community-build/Dockerfile)
-
--	[`9.9.8-community`, `9.9-community`, `9-community`, `lts`, `lts-community`](https://github.com/SonarSource/docker-sonarqube/blob/7d0a5314a4c301f1bd3ce713ad5f0d0e212883cf/9/community/Dockerfile)
-
--	[`9.9.8-developer`, `9.9-developer`, `9-developer`, `lts-developer`](https://github.com/SonarSource/docker-sonarqube/blob/7d0a5314a4c301f1bd3ce713ad5f0d0e212883cf/9/developer/Dockerfile)
-
--	[`9.9.9-enterprise`, `9.9-enterprise`, `9-enterprise`, `lts-enterprise`](https://github.com/SonarSource/docker-sonarqube/blob/7d0a5314a4c301f1bd3ce713ad5f0d0e212883cf/9/enterprise/Dockerfile)
-
--	[`9.9.9-datacenter-app`, `9.9-datacenter-app`, `9-datacenter-app`, `lts-datacenter-app`](https://github.com/SonarSource/docker-sonarqube/blob/7d0a5314a4c301f1bd3ce713ad5f0d0e212883cf/9/datacenter/app/Dockerfile)
-
--	[`9.9.9-datacenter-search`, `9.9-datacenter-search`, `9-datacenter-search`, `lts-datacenter-search`](https://github.com/SonarSource/docker-sonarqube/blob/7d0a5314a4c301f1bd3ce713ad5f0d0e212883cf/9/datacenter/search/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v6` ARCHITECTURE
 
 # Quick reference (cont.)
 
@@ -117,7 +93,7 @@ To run a cluster with the SonarQube Server Data Center Edition, please refer to 
 By default, the server running within the container will listen on port 9000. You can expose the container port 9000 to the host port 9000 with the `-p 9000:9000` argument to `docker run`, like the command below:
 
 ```console
-docker run --name sonarqube-custom -p 9000:9000 sonarqube:community
+docker run --name sonarqube-custom -p 9000:9000 arm32v6/sonarqube:community
 ```
 
 You can then browse to `http://localhost:9000` or `http://host-ip:9000` in your web browser to access the web interface.
@@ -151,7 +127,7 @@ For upgrade instructions, see Upgrading from the Docker Image on the [Upgrade th
 In some environments, it may make more sense to prepare a custom image containing your configuration. A `Dockerfile` to achieve this may be as simple as:
 
 ```dockerfile
-FROM sonarqube:community
+FROM arm32v6/sonarqube:community
 COPY sonar-custom-plugin-1.0.jar /opt/sonarqube/extensions/
 ```
 
@@ -167,7 +143,7 @@ $ docker run -ti sonarqube-custom
 The instance will stop gracefully, waiting for any tasks in progress to finish. Waiting for in-progress tasks to finish can take a large amount of time, which the docker does not expect by default when stopping. To avoid having the instance killed by the Docker daemon after 10 seconds, it is best to configure a timeout to stop the container with `--stop-timeout`. For example:
 
 ```console
-docker run --stop-timeout 3600 sonarqube
+docker run --stop-timeout 3600 arm32v6/sonarqube
 ```
 
 ## Administration
