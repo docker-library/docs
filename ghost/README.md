@@ -24,13 +24,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.0.10`, `6.0`, `6`, `latest`](https://github.com/docker-library/ghost/blob/28bbafd7a89f343e65e27ab07e1857db96731d73/6/debian/Dockerfile)
+-	[`6.0.10`, `6.0`, `6`, `latest`](https://github.com/docker-library/ghost/blob/fdba3d80f50da610007165f5fe46f9b8af69764b/6/debian/Dockerfile)
 
--	[`6.0.10-alpine`, `6.0-alpine`, `6-alpine`, `alpine`](https://github.com/docker-library/ghost/blob/28bbafd7a89f343e65e27ab07e1857db96731d73/6/alpine/Dockerfile)
+-	[`6.0.10-alpine`, `6.0-alpine`, `6-alpine`, `alpine`](https://github.com/docker-library/ghost/blob/fdba3d80f50da610007165f5fe46f9b8af69764b/6/alpine/Dockerfile)
 
--	[`5.130.5`, `5.130`, `5`](https://github.com/docker-library/ghost/blob/80812d80f7ac88de34e1ddfe8c9601a572a63638/5/debian/Dockerfile)
+-	[`5.130.5`, `5.130`, `5`](https://github.com/docker-library/ghost/blob/fdba3d80f50da610007165f5fe46f9b8af69764b/5/debian/Dockerfile)
 
--	[`5.130.5-alpine`, `5.130-alpine`, `5-alpine`](https://github.com/docker-library/ghost/blob/80812d80f7ac88de34e1ddfe8c9601a572a63638/5/alpine/Dockerfile)
+-	[`5.130.5-alpine`, `5.130-alpine`, `5-alpine`](https://github.com/docker-library/ghost/blob/fdba3d80f50da610007165f5fe46f9b8af69764b/5/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
