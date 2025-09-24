@@ -24,17 +24,29 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.0.7`, `6.0`, `6`, `latest`, `6.0.7-bookworm`, `6.0-bookworm`, `6-bookworm`, `bookworm`](https://github.com/docker-library/redmine/blob/6152a3d65bd13ebc6a507ab2717abe96c501d44f/6.0/bookworm/Dockerfile)
+-	[`6.1.0`, `6.1`, `6`, `latest`, `6.1.0-trixie`, `6.1-trixie`, `6-trixie`, `trixie`](https://github.com/docker-library/redmine/blob/83dc5187580910a8f5b9578d6fe453db2d6f4811/6.1/trixie/Dockerfile)
 
--	[`6.0.7-alpine3.22`, `6.0-alpine3.22`, `6-alpine3.22`, `alpine3.22`, `6.0.7-alpine`, `6.0-alpine`, `6-alpine`, `alpine`](https://github.com/docker-library/redmine/blob/6152a3d65bd13ebc6a507ab2717abe96c501d44f/6.0/alpine3.22/Dockerfile)
+-	[`6.1.0-bookworm`, `6.1-bookworm`, `6-bookworm`, `bookworm`](https://github.com/docker-library/redmine/blob/83dc5187580910a8f5b9578d6fe453db2d6f4811/6.1/bookworm/Dockerfile)
 
--	[`6.0.7-alpine3.21`, `6.0-alpine3.21`, `6-alpine3.21`, `alpine3.21`](https://github.com/docker-library/redmine/blob/6152a3d65bd13ebc6a507ab2717abe96c501d44f/6.0/alpine3.21/Dockerfile)
+-	[`6.1.0-alpine3.22`, `6.1-alpine3.22`, `6-alpine3.22`, `alpine3.22`, `6.1.0-alpine`, `6.1-alpine`, `6-alpine`, `alpine`](https://github.com/docker-library/redmine/blob/83dc5187580910a8f5b9578d6fe453db2d6f4811/6.1/alpine3.22/Dockerfile)
 
--	[`5.1.10`, `5.1`, `5`, `5.1.10-bookworm`, `5.1-bookworm`, `5-bookworm`](https://github.com/docker-library/redmine/blob/6152a3d65bd13ebc6a507ab2717abe96c501d44f/5.1/bookworm/Dockerfile)
+-	[`6.1.0-alpine3.21`, `6.1-alpine3.21`, `6-alpine3.21`, `alpine3.21`](https://github.com/docker-library/redmine/blob/83dc5187580910a8f5b9578d6fe453db2d6f4811/6.1/alpine3.21/Dockerfile)
 
--	[`5.1.10-alpine3.22`, `5.1-alpine3.22`, `5-alpine3.22`, `5.1.10-alpine`, `5.1-alpine`, `5-alpine`](https://github.com/docker-library/redmine/blob/6152a3d65bd13ebc6a507ab2717abe96c501d44f/5.1/alpine3.22/Dockerfile)
+-	[`6.0.7`, `6.0`, `6.0.7-trixie`, `6.0-trixie`](https://github.com/docker-library/redmine/blob/a5559e1b8e4ff20203b73604dd91c3eb184899f1/6.0/trixie/Dockerfile)
 
--	[`5.1.10-alpine3.21`, `5.1-alpine3.21`, `5-alpine3.21`](https://github.com/docker-library/redmine/blob/6152a3d65bd13ebc6a507ab2717abe96c501d44f/5.1/alpine3.21/Dockerfile)
+-	[`6.0.7-bookworm`, `6.0-bookworm`](https://github.com/docker-library/redmine/blob/912d5e834802a5b3901bbc8bc642f8aff3ce91b8/6.0/bookworm/Dockerfile)
+
+-	[`6.0.7-alpine3.22`, `6.0-alpine3.22`, `6.0.7-alpine`, `6.0-alpine`](https://github.com/docker-library/redmine/blob/912d5e834802a5b3901bbc8bc642f8aff3ce91b8/6.0/alpine3.22/Dockerfile)
+
+-	[`6.0.7-alpine3.21`, `6.0-alpine3.21`](https://github.com/docker-library/redmine/blob/912d5e834802a5b3901bbc8bc642f8aff3ce91b8/6.0/alpine3.21/Dockerfile)
+
+-	[`5.1.10`, `5.1`, `5`, `5.1.10-trixie`, `5.1-trixie`, `5-trixie`](https://github.com/docker-library/redmine/blob/b5192c29c3c06bafb09b57eec4fa7f2f1a64ec03/5.1/trixie/Dockerfile)
+
+-	[`5.1.10-bookworm`, `5.1-bookworm`, `5-bookworm`](https://github.com/docker-library/redmine/blob/912d5e834802a5b3901bbc8bc642f8aff3ce91b8/5.1/bookworm/Dockerfile)
+
+-	[`5.1.10-alpine3.22`, `5.1-alpine3.22`, `5-alpine3.22`, `5.1.10-alpine`, `5.1-alpine`, `5-alpine`](https://github.com/docker-library/redmine/blob/912d5e834802a5b3901bbc8bc642f8aff3ce91b8/5.1/alpine3.22/Dockerfile)
+
+-	[`5.1.10-alpine3.21`, `5.1-alpine3.21`, `5-alpine3.21`](https://github.com/docker-library/redmine/blob/912d5e834802a5b3901bbc8bc642f8aff3ce91b8/5.1/alpine3.21/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -220,7 +232,7 @@ The `redmine` images come in many flavors, each designed for a specific use case
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like bookworm in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+Some of these tags may have names like bookworm or trixie in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 ## `redmine:<version>-alpine`
 
