@@ -30,7 +30,9 @@ WARNING:
 
 -	[`2023.2-u0`, `2023.2`, `9.0.0`, `9.0`](https://github.com/bonitasoft/bonita-distrib/blob/397824cf4f302c37f3534908728a2b8321a31565/docker/Dockerfile)
 
--	[`2024.3-u0`, `2024.3`, `10.2.0`, `10.2`, `latest`](https://github.com/bonitasoft/bonita-distrib/blob/634a6e462dbcc7da8ec7ed47adf419b9a24bf744/docker/Dockerfile)
+-	[`2024.3-u0`, `2024.3`, `10.2.0`, `10.2`](https://github.com/bonitasoft/bonita-distrib/blob/634a6e462dbcc7da8ec7ed47adf419b9a24bf744/docker/Dockerfile)
+
+-	[`2025.1-u0`, `2025.1`, `10.3.0`, `10.3`, `latest`](https://github.com/bonitasoft/bonita-distrib/blob/adca7d9251091cd02f3cde7c0a9cee0e1538c7a1/docker/Dockerfile)
 
 # Quick reference (cont.)
 
