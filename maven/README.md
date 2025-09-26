@@ -40,17 +40,17 @@ WARNING:
 
 -	[`4.0.0-rc-4-eclipse-temurin-21-alpine`](https://github.com/carlossg/docker-maven/blob/3e68954f87f8b9be35921fdd538c4d769362f3bf/eclipse-temurin-21-alpine-maven-4/Dockerfile)
 
--	[`3.9.11-eclipse-temurin-21-noble`, `3.9.11`, `3.9.11-eclipse-temurin`, `3.9.11-eclipse-temurin-21`, `3.9-eclipse-temurin-21-noble`, `3.9`, `3.9-eclipse-temurin`, `3.9-eclipse-temurin-21`, `3-eclipse-temurin-21-noble`, `3`, `latest`, `3-eclipse-temurin`, `eclipse-temurin`, `3-eclipse-temurin-21`](https://github.com/carlossg/docker-maven/blob/64ef35f1a6ef3538a0c7e846647d33ffa6232390/eclipse-temurin-21-noble/Dockerfile)
+-	[`3.9.11-eclipse-temurin-21-noble`, `3.9.11-eclipse-temurin-21`, `3.9-eclipse-temurin-21-noble`, `3.9-eclipse-temurin-21`, `3-eclipse-temurin-21-noble`, `3-eclipse-temurin-21`](https://github.com/carlossg/docker-maven/blob/64ef35f1a6ef3538a0c7e846647d33ffa6232390/eclipse-temurin-21-noble/Dockerfile)
 
--	[`4.0.0-rc-4-eclipse-temurin-21-noble`, `4.0.0-rc-4`, `4.0.0-rc-4-eclipse-temurin`, `4.0.0-rc-4-eclipse-temurin-21`](https://github.com/carlossg/docker-maven/blob/3e68954f87f8b9be35921fdd538c4d769362f3bf/eclipse-temurin-21-noble-maven-4/Dockerfile)
+-	[`4.0.0-rc-4-eclipse-temurin-21-noble`, `4.0.0-rc-4-eclipse-temurin-21`](https://github.com/carlossg/docker-maven/blob/3e68954f87f8b9be35921fdd538c4d769362f3bf/eclipse-temurin-21-noble-maven-4/Dockerfile)
 
--	[`3.9.11-eclipse-temurin-24-alpine`, `3.9-eclipse-temurin-24-alpine`, `3-eclipse-temurin-24-alpine`](https://github.com/carlossg/docker-maven/blob/6bd15f0c704bad9806b4bbedea6f1faff5194c71/eclipse-temurin-24-alpine/Dockerfile)
+-	[`3.9.11-eclipse-temurin-25-alpine`, `3.9-eclipse-temurin-25-alpine`, `3-eclipse-temurin-25-alpine`](https://github.com/carlossg/docker-maven/blob/c774f7740e38fa4e4f4cec7153e4819cd9afd635/eclipse-temurin-25-alpine/Dockerfile)
 
--	[`4.0.0-rc-4-eclipse-temurin-24-alpine`](https://github.com/carlossg/docker-maven/blob/3e68954f87f8b9be35921fdd538c4d769362f3bf/eclipse-temurin-24-alpine-maven-4/Dockerfile)
+-	[`4.0.0-rc-4-eclipse-temurin-25-alpine`](https://github.com/carlossg/docker-maven/blob/c774f7740e38fa4e4f4cec7153e4819cd9afd635/eclipse-temurin-25-alpine-maven-4/Dockerfile)
 
--	[`3.9.11-eclipse-temurin-24-noble`, `3.9.11-eclipse-temurin-24`, `3.9-eclipse-temurin-24-noble`, `3.9-eclipse-temurin-24`, `3-eclipse-temurin-24-noble`, `3-eclipse-temurin-24`](https://github.com/carlossg/docker-maven/blob/64ef35f1a6ef3538a0c7e846647d33ffa6232390/eclipse-temurin-24-noble/Dockerfile)
+-	[`3.9.11-eclipse-temurin-25-noble`, `3.9.11`, `3.9.11-eclipse-temurin`, `3.9.11-eclipse-temurin-25`, `3.9-eclipse-temurin-25-noble`, `3.9`, `3.9-eclipse-temurin`, `3.9-eclipse-temurin-25`, `3-eclipse-temurin-25-noble`, `3`, `latest`, `3-eclipse-temurin`, `eclipse-temurin`, `3-eclipse-temurin-25`](https://github.com/carlossg/docker-maven/blob/c774f7740e38fa4e4f4cec7153e4819cd9afd635/eclipse-temurin-25-noble/Dockerfile)
 
--	[`4.0.0-rc-4-eclipse-temurin-24-noble`, `4.0.0-rc-4-eclipse-temurin-24`](https://github.com/carlossg/docker-maven/blob/3e68954f87f8b9be35921fdd538c4d769362f3bf/eclipse-temurin-24-noble-maven-4/Dockerfile)
+-	[`4.0.0-rc-4-eclipse-temurin-25-noble`, `4.0.0-rc-4`, `4.0.0-rc-4-eclipse-temurin`, `4.0.0-rc-4-eclipse-temurin-25`](https://github.com/carlossg/docker-maven/blob/c774f7740e38fa4e4f4cec7153e4819cd9afd635/eclipse-temurin-25-noble-maven-4/Dockerfile)
 
 -	[`3.9.11-eclipse-temurin-8-alpine`, `3.9-eclipse-temurin-8-alpine`, `3-eclipse-temurin-8-alpine`](https://github.com/carlossg/docker-maven/blob/6bd15f0c704bad9806b4bbedea6f1faff5194c71/eclipse-temurin-8-alpine/Dockerfile)
 
@@ -76,7 +76,7 @@ WARNING:
 
 -	[`3.9.11-amazoncorretto-11-debian`, `3.9.11-amazoncorretto-11-debian-trixie`, `3.9-amazoncorretto-11-debian`, `3.9-amazoncorretto-11-debian-trixie`, `3-amazoncorretto-11-debian`, `3-amazoncorretto-11-debian-trixie`](https://github.com/carlossg/docker-maven/blob/5557ed7695b311b7880b5094dbedcb759dddd86a/amazoncorretto-11-debian/Dockerfile)
 
--	[`3.9.11-amazoncorretto-17`, `3.9.11-amazoncorretto`, `3.9-amazoncorretto-17`, `3.9-amazoncorretto`, `3-amazoncorretto-17`, `3-amazoncorretto`, `amazoncorretto`](https://github.com/carlossg/docker-maven/blob/6bd15f0c704bad9806b4bbedea6f1faff5194c71/amazoncorretto-17/Dockerfile)
+-	[`3.9.11-amazoncorretto-17`, `3.9-amazoncorretto-17`, `3-amazoncorretto-17`](https://github.com/carlossg/docker-maven/blob/6bd15f0c704bad9806b4bbedea6f1faff5194c71/amazoncorretto-17/Dockerfile)
 
 -	[`3.9.11-amazoncorretto-17-al2023`, `3.9-amazoncorretto-17-al2023`, `3-amazoncorretto-17-al2023`](https://github.com/carlossg/docker-maven/blob/6bd15f0c704bad9806b4bbedea6f1faff5194c71/amazoncorretto-17-al2023/Dockerfile)
 
@@ -88,9 +88,9 @@ WARNING:
 
 -	[`4.0.0-rc-4-amazoncorretto-17-debian`, `4.0.0-rc-4-amazoncorretto-17-debian-trixie`](https://github.com/carlossg/docker-maven/blob/3e68954f87f8b9be35921fdd538c4d769362f3bf/amazoncorretto-17-debian-maven-4/Dockerfile)
 
--	[`4.0.0-rc-4-amazoncorretto-17`, `4.0.0-rc-4-amazoncorretto`](https://github.com/carlossg/docker-maven/blob/3e68954f87f8b9be35921fdd538c4d769362f3bf/amazoncorretto-17-maven-4/Dockerfile)
+-	[`4.0.0-rc-4-amazoncorretto-17`](https://github.com/carlossg/docker-maven/blob/3e68954f87f8b9be35921fdd538c4d769362f3bf/amazoncorretto-17-maven-4/Dockerfile)
 
--	[`3.9.11-amazoncorretto-21`, `3.9-amazoncorretto-21`, `3-amazoncorretto-21`](https://github.com/carlossg/docker-maven/blob/6bd15f0c704bad9806b4bbedea6f1faff5194c71/amazoncorretto-21/Dockerfile)
+-	[`3.9.11-amazoncorretto-21`, `3.9-amazoncorretto-21`, `3-amazoncorretto-21`](https://github.com/carlossg/docker-maven/blob/953489ab1a34d6a78158ed34b7432e19f119c466/amazoncorretto-21/Dockerfile)
 
 -	[`3.9.11-amazoncorretto-21-al2023`, `3.9-amazoncorretto-21-al2023`, `3-amazoncorretto-21-al2023`](https://github.com/carlossg/docker-maven/blob/6bd15f0c704bad9806b4bbedea6f1faff5194c71/amazoncorretto-21-al2023/Dockerfile)
 
@@ -118,7 +118,7 @@ WARNING:
 
 -	[`4.0.0-rc-4-amazoncorretto-24`](https://github.com/carlossg/docker-maven/blob/953489ab1a34d6a78158ed34b7432e19f119c466/amazoncorretto-24-maven-4/Dockerfile)
 
--	[`3.9.11-amazoncorretto-25`, `3.9-amazoncorretto-25`, `3-amazoncorretto-25`](https://github.com/carlossg/docker-maven/blob/ea19ceba8f7f27dfca5db9a557c2c7104b9bbcf0/amazoncorretto-25/Dockerfile)
+-	[`3.9.11-amazoncorretto-25`, `3.9.11-amazoncorretto`, `3.9-amazoncorretto-25`, `3.9-amazoncorretto`, `3-amazoncorretto-25`, `3-amazoncorretto`, `amazoncorretto`](https://github.com/carlossg/docker-maven/blob/ea19ceba8f7f27dfca5db9a557c2c7104b9bbcf0/amazoncorretto-25/Dockerfile)
 
 -	[`3.9.11-amazoncorretto-25-al2023`, `3.9-amazoncorretto-25-al2023`, `3-amazoncorretto-25-al2023`](https://github.com/carlossg/docker-maven/blob/8e4c2c5d8d70b078a60c23f1dea90edcde4bf0d2/amazoncorretto-25-al2023/Dockerfile)
 
@@ -130,7 +130,7 @@ WARNING:
 
 -	[`4.0.0-rc-4-amazoncorretto-25-debian`, `4.0.0-rc-4-amazoncorretto-25-debian-trixie`](https://github.com/carlossg/docker-maven/blob/911dda48cffcacf6dffb543157e37a7628f0e6e7/amazoncorretto-25-debian-maven-4/Dockerfile)
 
--	[`4.0.0-rc-4-amazoncorretto-25`](https://github.com/carlossg/docker-maven/blob/953489ab1a34d6a78158ed34b7432e19f119c466/amazoncorretto-25-maven-4/Dockerfile)
+-	[`4.0.0-rc-4-amazoncorretto-25`, `4.0.0-rc-4-amazoncorretto`](https://github.com/carlossg/docker-maven/blob/953489ab1a34d6a78158ed34b7432e19f119c466/amazoncorretto-25-maven-4/Dockerfile)
 
 -	[`3.9.11-amazoncorretto-8`, `3.9-amazoncorretto-8`, `3-amazoncorretto-8`](https://github.com/carlossg/docker-maven/blob/6bd15f0c704bad9806b4bbedea6f1faff5194c71/amazoncorretto-8/Dockerfile)
 
@@ -146,13 +146,13 @@ WARNING:
 
 -	[`4.0.0-rc-4-sapmachine-17`](https://github.com/carlossg/docker-maven/blob/3e68954f87f8b9be35921fdd538c4d769362f3bf/sapmachine-17-maven-4/Dockerfile)
 
--	[`3.9.11-sapmachine-21`, `3.9.11-sapmachine`, `3.9-sapmachine-21`, `3.9-sapmachine`, `3-sapmachine-21`, `3-sapmachine`, `sapmachine`](https://github.com/carlossg/docker-maven/blob/6bd15f0c704bad9806b4bbedea6f1faff5194c71/sapmachine-21/Dockerfile)
+-	[`3.9.11-sapmachine-21`, `3.9-sapmachine-21`, `3-sapmachine-21`](https://github.com/carlossg/docker-maven/blob/6bd15f0c704bad9806b4bbedea6f1faff5194c71/sapmachine-21/Dockerfile)
 
--	[`4.0.0-rc-4-sapmachine-21`, `4.0.0-rc-4-sapmachine`](https://github.com/carlossg/docker-maven/blob/3e68954f87f8b9be35921fdd538c4d769362f3bf/sapmachine-21-maven-4/Dockerfile)
+-	[`4.0.0-rc-4-sapmachine-21`](https://github.com/carlossg/docker-maven/blob/3e68954f87f8b9be35921fdd538c4d769362f3bf/sapmachine-21-maven-4/Dockerfile)
 
--	[`3.9.11-sapmachine-25`, `3.9-sapmachine-25`, `3-sapmachine-25`](https://github.com/carlossg/docker-maven/blob/31123f677b641c82496f8935f5f3c3e3885fa3f5/sapmachine-25/Dockerfile)
+-	[`3.9.11-sapmachine-25`, `3.9.11-sapmachine`, `3.9-sapmachine-25`, `3.9-sapmachine`, `3-sapmachine-25`, `3-sapmachine`, `sapmachine`](https://github.com/carlossg/docker-maven/blob/31123f677b641c82496f8935f5f3c3e3885fa3f5/sapmachine-25/Dockerfile)
 
--	[`4.0.0-rc-4-sapmachine-25`](https://github.com/carlossg/docker-maven/blob/2f044045740088673c3a00388056cbbd747f2fea/sapmachine-25-maven-4/Dockerfile)
+-	[`4.0.0-rc-4-sapmachine-25`, `4.0.0-rc-4-sapmachine`](https://github.com/carlossg/docker-maven/blob/2f044045740088673c3a00388056cbbd747f2fea/sapmachine-25-maven-4/Dockerfile)
 
 # Quick reference (cont.)
 

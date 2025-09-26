@@ -24,33 +24,33 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.5.0beta3-cli-trixie`, `8.5-rc-cli-trixie`, `8.5.0beta3-trixie`, `8.5-rc-trixie`, `8.5.0beta3-cli`, `8.5-rc-cli`, `8.5.0beta3`, `8.5-rc`](https://github.com/docker-library/php/blob/14f8b0c45ce12c0b8b1018ac906df94d459111ec/8.5-rc/trixie/cli/Dockerfile)
+-	[`8.5.0RC1-cli-trixie`, `8.5-rc-cli-trixie`, `8.5.0RC1-trixie`, `8.5-rc-trixie`, `8.5.0RC1-cli`, `8.5-rc-cli`, `8.5.0RC1`, `8.5-rc`](https://github.com/docker-library/php/blob/a80c2f9204ed2e3ca0a13b13cc0cae780d9d700d/8.5-rc/trixie/cli/Dockerfile)
 
--	[`8.5.0beta3-apache-trixie`, `8.5-rc-apache-trixie`, `8.5.0beta3-apache`, `8.5-rc-apache`](https://github.com/docker-library/php/blob/14f8b0c45ce12c0b8b1018ac906df94d459111ec/8.5-rc/trixie/apache/Dockerfile)
+-	[`8.5.0RC1-apache-trixie`, `8.5-rc-apache-trixie`, `8.5.0RC1-apache`, `8.5-rc-apache`](https://github.com/docker-library/php/blob/a80c2f9204ed2e3ca0a13b13cc0cae780d9d700d/8.5-rc/trixie/apache/Dockerfile)
 
--	[`8.5.0beta3-fpm-trixie`, `8.5-rc-fpm-trixie`, `8.5.0beta3-fpm`, `8.5-rc-fpm`](https://github.com/docker-library/php/blob/14f8b0c45ce12c0b8b1018ac906df94d459111ec/8.5-rc/trixie/fpm/Dockerfile)
+-	[`8.5.0RC1-fpm-trixie`, `8.5-rc-fpm-trixie`, `8.5.0RC1-fpm`, `8.5-rc-fpm`](https://github.com/docker-library/php/blob/a80c2f9204ed2e3ca0a13b13cc0cae780d9d700d/8.5-rc/trixie/fpm/Dockerfile)
 
--	[`8.5.0beta3-zts-trixie`, `8.5-rc-zts-trixie`, `8.5.0beta3-zts`, `8.5-rc-zts`](https://github.com/docker-library/php/blob/14f8b0c45ce12c0b8b1018ac906df94d459111ec/8.5-rc/trixie/zts/Dockerfile)
+-	[`8.5.0RC1-zts-trixie`, `8.5-rc-zts-trixie`, `8.5.0RC1-zts`, `8.5-rc-zts`](https://github.com/docker-library/php/blob/a80c2f9204ed2e3ca0a13b13cc0cae780d9d700d/8.5-rc/trixie/zts/Dockerfile)
 
--	[`8.5.0beta3-cli-bookworm`, `8.5-rc-cli-bookworm`, `8.5.0beta3-bookworm`, `8.5-rc-bookworm`](https://github.com/docker-library/php/blob/14f8b0c45ce12c0b8b1018ac906df94d459111ec/8.5-rc/bookworm/cli/Dockerfile)
+-	[`8.5.0RC1-cli-bookworm`, `8.5-rc-cli-bookworm`, `8.5.0RC1-bookworm`, `8.5-rc-bookworm`](https://github.com/docker-library/php/blob/a80c2f9204ed2e3ca0a13b13cc0cae780d9d700d/8.5-rc/bookworm/cli/Dockerfile)
 
--	[`8.5.0beta3-apache-bookworm`, `8.5-rc-apache-bookworm`](https://github.com/docker-library/php/blob/14f8b0c45ce12c0b8b1018ac906df94d459111ec/8.5-rc/bookworm/apache/Dockerfile)
+-	[`8.5.0RC1-apache-bookworm`, `8.5-rc-apache-bookworm`](https://github.com/docker-library/php/blob/a80c2f9204ed2e3ca0a13b13cc0cae780d9d700d/8.5-rc/bookworm/apache/Dockerfile)
 
--	[`8.5.0beta3-fpm-bookworm`, `8.5-rc-fpm-bookworm`](https://github.com/docker-library/php/blob/14f8b0c45ce12c0b8b1018ac906df94d459111ec/8.5-rc/bookworm/fpm/Dockerfile)
+-	[`8.5.0RC1-fpm-bookworm`, `8.5-rc-fpm-bookworm`](https://github.com/docker-library/php/blob/a80c2f9204ed2e3ca0a13b13cc0cae780d9d700d/8.5-rc/bookworm/fpm/Dockerfile)
 
--	[`8.5.0beta3-zts-bookworm`, `8.5-rc-zts-bookworm`](https://github.com/docker-library/php/blob/14f8b0c45ce12c0b8b1018ac906df94d459111ec/8.5-rc/bookworm/zts/Dockerfile)
+-	[`8.5.0RC1-zts-bookworm`, `8.5-rc-zts-bookworm`](https://github.com/docker-library/php/blob/a80c2f9204ed2e3ca0a13b13cc0cae780d9d700d/8.5-rc/bookworm/zts/Dockerfile)
 
--	[`8.5.0beta3-cli-alpine3.22`, `8.5-rc-cli-alpine3.22`, `8.5.0beta3-alpine3.22`, `8.5-rc-alpine3.22`, `8.5.0beta3-cli-alpine`, `8.5-rc-cli-alpine`, `8.5.0beta3-alpine`, `8.5-rc-alpine`](https://github.com/docker-library/php/blob/14f8b0c45ce12c0b8b1018ac906df94d459111ec/8.5-rc/alpine3.22/cli/Dockerfile)
+-	[`8.5.0RC1-cli-alpine3.22`, `8.5-rc-cli-alpine3.22`, `8.5.0RC1-alpine3.22`, `8.5-rc-alpine3.22`, `8.5.0RC1-cli-alpine`, `8.5-rc-cli-alpine`, `8.5.0RC1-alpine`, `8.5-rc-alpine`](https://github.com/docker-library/php/blob/a80c2f9204ed2e3ca0a13b13cc0cae780d9d700d/8.5-rc/alpine3.22/cli/Dockerfile)
 
--	[`8.5.0beta3-fpm-alpine3.22`, `8.5-rc-fpm-alpine3.22`, `8.5.0beta3-fpm-alpine`, `8.5-rc-fpm-alpine`](https://github.com/docker-library/php/blob/14f8b0c45ce12c0b8b1018ac906df94d459111ec/8.5-rc/alpine3.22/fpm/Dockerfile)
+-	[`8.5.0RC1-fpm-alpine3.22`, `8.5-rc-fpm-alpine3.22`, `8.5.0RC1-fpm-alpine`, `8.5-rc-fpm-alpine`](https://github.com/docker-library/php/blob/a80c2f9204ed2e3ca0a13b13cc0cae780d9d700d/8.5-rc/alpine3.22/fpm/Dockerfile)
 
--	[`8.5.0beta3-zts-alpine3.22`, `8.5-rc-zts-alpine3.22`, `8.5.0beta3-zts-alpine`, `8.5-rc-zts-alpine`](https://github.com/docker-library/php/blob/14f8b0c45ce12c0b8b1018ac906df94d459111ec/8.5-rc/alpine3.22/zts/Dockerfile)
+-	[`8.5.0RC1-zts-alpine3.22`, `8.5-rc-zts-alpine3.22`, `8.5.0RC1-zts-alpine`, `8.5-rc-zts-alpine`](https://github.com/docker-library/php/blob/a80c2f9204ed2e3ca0a13b13cc0cae780d9d700d/8.5-rc/alpine3.22/zts/Dockerfile)
 
--	[`8.5.0beta3-cli-alpine3.21`, `8.5-rc-cli-alpine3.21`, `8.5.0beta3-alpine3.21`, `8.5-rc-alpine3.21`](https://github.com/docker-library/php/blob/14f8b0c45ce12c0b8b1018ac906df94d459111ec/8.5-rc/alpine3.21/cli/Dockerfile)
+-	[`8.5.0RC1-cli-alpine3.21`, `8.5-rc-cli-alpine3.21`, `8.5.0RC1-alpine3.21`, `8.5-rc-alpine3.21`](https://github.com/docker-library/php/blob/a80c2f9204ed2e3ca0a13b13cc0cae780d9d700d/8.5-rc/alpine3.21/cli/Dockerfile)
 
--	[`8.5.0beta3-fpm-alpine3.21`, `8.5-rc-fpm-alpine3.21`](https://github.com/docker-library/php/blob/14f8b0c45ce12c0b8b1018ac906df94d459111ec/8.5-rc/alpine3.21/fpm/Dockerfile)
+-	[`8.5.0RC1-fpm-alpine3.21`, `8.5-rc-fpm-alpine3.21`](https://github.com/docker-library/php/blob/a80c2f9204ed2e3ca0a13b13cc0cae780d9d700d/8.5-rc/alpine3.21/fpm/Dockerfile)
 
--	[`8.5.0beta3-zts-alpine3.21`, `8.5-rc-zts-alpine3.21`](https://github.com/docker-library/php/blob/14f8b0c45ce12c0b8b1018ac906df94d459111ec/8.5-rc/alpine3.21/zts/Dockerfile)
+-	[`8.5.0RC1-zts-alpine3.21`, `8.5-rc-zts-alpine3.21`](https://github.com/docker-library/php/blob/a80c2f9204ed2e3ca0a13b13cc0cae780d9d700d/8.5-rc/alpine3.21/zts/Dockerfile)
 
 -	[`8.4.13-cli-trixie`, `8.4-cli-trixie`, `8-cli-trixie`, `cli-trixie`, `8.4.13-trixie`, `8.4-trixie`, `8-trixie`, `trixie`, `8.4.13-cli`, `8.4-cli`, `8-cli`, `cli`, `8.4.13`, `8.4`, `8`, `latest`](https://github.com/docker-library/php/blob/5adf010c3d8ec46c24e5c0b09ef19bef11010eef/8.4/trixie/cli/Dockerfile)
 
@@ -80,61 +80,33 @@ WARNING:
 
 -	[`8.4.13-zts-alpine3.21`, `8.4-zts-alpine3.21`, `8-zts-alpine3.21`, `zts-alpine3.21`](https://github.com/docker-library/php/blob/5adf010c3d8ec46c24e5c0b09ef19bef11010eef/8.4/alpine3.21/zts/Dockerfile)
 
--	[`8.3.26RC1-cli-trixie`, `8.3-rc-cli-trixie`, `8.3.26RC1-trixie`, `8.3-rc-trixie`, `8.3.26RC1-cli`, `8.3-rc-cli`, `8.3.26RC1`, `8.3-rc`](https://github.com/docker-library/php/blob/3e31d6d88dded986d5acba73fc6903402ce48213/8.3-rc/trixie/cli/Dockerfile)
+-	[`8.3.26-cli-trixie`, `8.3-cli-trixie`, `8.3.26-trixie`, `8.3-trixie`, `8.3.26-cli`, `8.3-cli`, `8.3.26`, `8.3`](https://github.com/docker-library/php/blob/26be3b1e73b760db9feb3398af30091f948e805d/8.3/trixie/cli/Dockerfile)
 
--	[`8.3.26RC1-apache-trixie`, `8.3-rc-apache-trixie`, `8.3.26RC1-apache`, `8.3-rc-apache`](https://github.com/docker-library/php/blob/3e31d6d88dded986d5acba73fc6903402ce48213/8.3-rc/trixie/apache/Dockerfile)
+-	[`8.3.26-apache-trixie`, `8.3-apache-trixie`, `8.3.26-apache`, `8.3-apache`](https://github.com/docker-library/php/blob/26be3b1e73b760db9feb3398af30091f948e805d/8.3/trixie/apache/Dockerfile)
 
--	[`8.3.26RC1-fpm-trixie`, `8.3-rc-fpm-trixie`, `8.3.26RC1-fpm`, `8.3-rc-fpm`](https://github.com/docker-library/php/blob/3e31d6d88dded986d5acba73fc6903402ce48213/8.3-rc/trixie/fpm/Dockerfile)
+-	[`8.3.26-fpm-trixie`, `8.3-fpm-trixie`, `8.3.26-fpm`, `8.3-fpm`](https://github.com/docker-library/php/blob/26be3b1e73b760db9feb3398af30091f948e805d/8.3/trixie/fpm/Dockerfile)
 
--	[`8.3.26RC1-zts-trixie`, `8.3-rc-zts-trixie`, `8.3.26RC1-zts`, `8.3-rc-zts`](https://github.com/docker-library/php/blob/3e31d6d88dded986d5acba73fc6903402ce48213/8.3-rc/trixie/zts/Dockerfile)
+-	[`8.3.26-zts-trixie`, `8.3-zts-trixie`, `8.3.26-zts`, `8.3-zts`](https://github.com/docker-library/php/blob/26be3b1e73b760db9feb3398af30091f948e805d/8.3/trixie/zts/Dockerfile)
 
--	[`8.3.26RC1-cli-bookworm`, `8.3-rc-cli-bookworm`, `8.3.26RC1-bookworm`, `8.3-rc-bookworm`](https://github.com/docker-library/php/blob/3e31d6d88dded986d5acba73fc6903402ce48213/8.3-rc/bookworm/cli/Dockerfile)
+-	[`8.3.26-cli-bookworm`, `8.3-cli-bookworm`, `8.3.26-bookworm`, `8.3-bookworm`](https://github.com/docker-library/php/blob/26be3b1e73b760db9feb3398af30091f948e805d/8.3/bookworm/cli/Dockerfile)
 
--	[`8.3.26RC1-apache-bookworm`, `8.3-rc-apache-bookworm`](https://github.com/docker-library/php/blob/3e31d6d88dded986d5acba73fc6903402ce48213/8.3-rc/bookworm/apache/Dockerfile)
+-	[`8.3.26-apache-bookworm`, `8.3-apache-bookworm`](https://github.com/docker-library/php/blob/26be3b1e73b760db9feb3398af30091f948e805d/8.3/bookworm/apache/Dockerfile)
 
--	[`8.3.26RC1-fpm-bookworm`, `8.3-rc-fpm-bookworm`](https://github.com/docker-library/php/blob/3e31d6d88dded986d5acba73fc6903402ce48213/8.3-rc/bookworm/fpm/Dockerfile)
+-	[`8.3.26-fpm-bookworm`, `8.3-fpm-bookworm`](https://github.com/docker-library/php/blob/26be3b1e73b760db9feb3398af30091f948e805d/8.3/bookworm/fpm/Dockerfile)
 
--	[`8.3.26RC1-zts-bookworm`, `8.3-rc-zts-bookworm`](https://github.com/docker-library/php/blob/3e31d6d88dded986d5acba73fc6903402ce48213/8.3-rc/bookworm/zts/Dockerfile)
+-	[`8.3.26-zts-bookworm`, `8.3-zts-bookworm`](https://github.com/docker-library/php/blob/26be3b1e73b760db9feb3398af30091f948e805d/8.3/bookworm/zts/Dockerfile)
 
--	[`8.3.26RC1-cli-alpine3.22`, `8.3-rc-cli-alpine3.22`, `8.3.26RC1-alpine3.22`, `8.3-rc-alpine3.22`, `8.3.26RC1-cli-alpine`, `8.3-rc-cli-alpine`, `8.3.26RC1-alpine`, `8.3-rc-alpine`](https://github.com/docker-library/php/blob/3e31d6d88dded986d5acba73fc6903402ce48213/8.3-rc/alpine3.22/cli/Dockerfile)
+-	[`8.3.26-cli-alpine3.22`, `8.3-cli-alpine3.22`, `8.3.26-alpine3.22`, `8.3-alpine3.22`, `8.3.26-cli-alpine`, `8.3-cli-alpine`, `8.3.26-alpine`, `8.3-alpine`](https://github.com/docker-library/php/blob/26be3b1e73b760db9feb3398af30091f948e805d/8.3/alpine3.22/cli/Dockerfile)
 
--	[`8.3.26RC1-fpm-alpine3.22`, `8.3-rc-fpm-alpine3.22`, `8.3.26RC1-fpm-alpine`, `8.3-rc-fpm-alpine`](https://github.com/docker-library/php/blob/3e31d6d88dded986d5acba73fc6903402ce48213/8.3-rc/alpine3.22/fpm/Dockerfile)
+-	[`8.3.26-fpm-alpine3.22`, `8.3-fpm-alpine3.22`, `8.3.26-fpm-alpine`, `8.3-fpm-alpine`](https://github.com/docker-library/php/blob/26be3b1e73b760db9feb3398af30091f948e805d/8.3/alpine3.22/fpm/Dockerfile)
 
--	[`8.3.26RC1-zts-alpine3.22`, `8.3-rc-zts-alpine3.22`, `8.3.26RC1-zts-alpine`, `8.3-rc-zts-alpine`](https://github.com/docker-library/php/blob/3e31d6d88dded986d5acba73fc6903402ce48213/8.3-rc/alpine3.22/zts/Dockerfile)
+-	[`8.3.26-zts-alpine3.22`, `8.3-zts-alpine3.22`, `8.3.26-zts-alpine`, `8.3-zts-alpine`](https://github.com/docker-library/php/blob/26be3b1e73b760db9feb3398af30091f948e805d/8.3/alpine3.22/zts/Dockerfile)
 
--	[`8.3.26RC1-cli-alpine3.21`, `8.3-rc-cli-alpine3.21`, `8.3.26RC1-alpine3.21`, `8.3-rc-alpine3.21`](https://github.com/docker-library/php/blob/3e31d6d88dded986d5acba73fc6903402ce48213/8.3-rc/alpine3.21/cli/Dockerfile)
+-	[`8.3.26-cli-alpine3.21`, `8.3-cli-alpine3.21`, `8.3.26-alpine3.21`, `8.3-alpine3.21`](https://github.com/docker-library/php/blob/26be3b1e73b760db9feb3398af30091f948e805d/8.3/alpine3.21/cli/Dockerfile)
 
--	[`8.3.26RC1-fpm-alpine3.21`, `8.3-rc-fpm-alpine3.21`](https://github.com/docker-library/php/blob/3e31d6d88dded986d5acba73fc6903402ce48213/8.3-rc/alpine3.21/fpm/Dockerfile)
+-	[`8.3.26-fpm-alpine3.21`, `8.3-fpm-alpine3.21`](https://github.com/docker-library/php/blob/26be3b1e73b760db9feb3398af30091f948e805d/8.3/alpine3.21/fpm/Dockerfile)
 
--	[`8.3.26RC1-zts-alpine3.21`, `8.3-rc-zts-alpine3.21`](https://github.com/docker-library/php/blob/3e31d6d88dded986d5acba73fc6903402ce48213/8.3-rc/alpine3.21/zts/Dockerfile)
-
--	[`8.3.25-cli-trixie`, `8.3-cli-trixie`, `8.3.25-trixie`, `8.3-trixie`, `8.3.25-cli`, `8.3-cli`, `8.3.25`, `8.3`](https://github.com/docker-library/php/blob/83e66be94e42088ffa69ad76f41bd1cc9276923b/8.3/trixie/cli/Dockerfile)
-
--	[`8.3.25-apache-trixie`, `8.3-apache-trixie`, `8.3.25-apache`, `8.3-apache`](https://github.com/docker-library/php/blob/83e66be94e42088ffa69ad76f41bd1cc9276923b/8.3/trixie/apache/Dockerfile)
-
--	[`8.3.25-fpm-trixie`, `8.3-fpm-trixie`, `8.3.25-fpm`, `8.3-fpm`](https://github.com/docker-library/php/blob/83e66be94e42088ffa69ad76f41bd1cc9276923b/8.3/trixie/fpm/Dockerfile)
-
--	[`8.3.25-zts-trixie`, `8.3-zts-trixie`, `8.3.25-zts`, `8.3-zts`](https://github.com/docker-library/php/blob/83e66be94e42088ffa69ad76f41bd1cc9276923b/8.3/trixie/zts/Dockerfile)
-
--	[`8.3.25-cli-bookworm`, `8.3-cli-bookworm`, `8.3.25-bookworm`, `8.3-bookworm`](https://github.com/docker-library/php/blob/83e66be94e42088ffa69ad76f41bd1cc9276923b/8.3/bookworm/cli/Dockerfile)
-
--	[`8.3.25-apache-bookworm`, `8.3-apache-bookworm`](https://github.com/docker-library/php/blob/83e66be94e42088ffa69ad76f41bd1cc9276923b/8.3/bookworm/apache/Dockerfile)
-
--	[`8.3.25-fpm-bookworm`, `8.3-fpm-bookworm`](https://github.com/docker-library/php/blob/83e66be94e42088ffa69ad76f41bd1cc9276923b/8.3/bookworm/fpm/Dockerfile)
-
--	[`8.3.25-zts-bookworm`, `8.3-zts-bookworm`](https://github.com/docker-library/php/blob/83e66be94e42088ffa69ad76f41bd1cc9276923b/8.3/bookworm/zts/Dockerfile)
-
--	[`8.3.25-cli-alpine3.22`, `8.3-cli-alpine3.22`, `8.3.25-alpine3.22`, `8.3-alpine3.22`, `8.3.25-cli-alpine`, `8.3-cli-alpine`, `8.3.25-alpine`, `8.3-alpine`](https://github.com/docker-library/php/blob/83e66be94e42088ffa69ad76f41bd1cc9276923b/8.3/alpine3.22/cli/Dockerfile)
-
--	[`8.3.25-fpm-alpine3.22`, `8.3-fpm-alpine3.22`, `8.3.25-fpm-alpine`, `8.3-fpm-alpine`](https://github.com/docker-library/php/blob/83e66be94e42088ffa69ad76f41bd1cc9276923b/8.3/alpine3.22/fpm/Dockerfile)
-
--	[`8.3.25-zts-alpine3.22`, `8.3-zts-alpine3.22`, `8.3.25-zts-alpine`, `8.3-zts-alpine`](https://github.com/docker-library/php/blob/83e66be94e42088ffa69ad76f41bd1cc9276923b/8.3/alpine3.22/zts/Dockerfile)
-
--	[`8.3.25-cli-alpine3.21`, `8.3-cli-alpine3.21`, `8.3.25-alpine3.21`, `8.3-alpine3.21`](https://github.com/docker-library/php/blob/83e66be94e42088ffa69ad76f41bd1cc9276923b/8.3/alpine3.21/cli/Dockerfile)
-
--	[`8.3.25-fpm-alpine3.21`, `8.3-fpm-alpine3.21`](https://github.com/docker-library/php/blob/83e66be94e42088ffa69ad76f41bd1cc9276923b/8.3/alpine3.21/fpm/Dockerfile)
-
--	[`8.3.25-zts-alpine3.21`, `8.3-zts-alpine3.21`](https://github.com/docker-library/php/blob/83e66be94e42088ffa69ad76f41bd1cc9276923b/8.3/alpine3.21/zts/Dockerfile)
+-	[`8.3.26-zts-alpine3.21`, `8.3-zts-alpine3.21`](https://github.com/docker-library/php/blob/26be3b1e73b760db9feb3398af30091f948e805d/8.3/alpine3.21/zts/Dockerfile)
 
 -	[`8.2.29-cli-trixie`, `8.2-cli-trixie`, `8.2.29-trixie`, `8.2-trixie`, `8.2.29-cli`, `8.2-cli`, `8.2.29`, `8.2`](https://github.com/docker-library/php/blob/686f9529f8659f929509a2c3ec2df34a14a4594a/8.2/trixie/cli/Dockerfile)
 
