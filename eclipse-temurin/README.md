@@ -208,6 +208,8 @@ WARNING:
 
 -	[`25_36-jdk-alpine-3.22`, `25-jdk-alpine-3.22`, `25-alpine-3.22`, `25_36-jdk-alpine`, `25-jdk-alpine`, `25-alpine`](https://github.com/adoptium/containers/blob/7fd47fcdc91108218327496869ec8d2f441eebb7/25/jdk/alpine/3.22/Dockerfile)
 
+-	[`25_36-jdk-jammy`, `25-jdk-jammy`, `25-jammy`](https://github.com/adoptium/containers/blob/7dc6a92c80c1f371f3d416e8357efe18796016a5/25/jdk/ubuntu/jammy/Dockerfile)
+
 -	[`25_36-jdk-noble`, `25-jdk-noble`, `25-noble`](https://github.com/adoptium/containers/blob/7fd47fcdc91108218327496869ec8d2f441eebb7/25/jdk/ubuntu/noble/Dockerfile)
 
 -	[`25_36-jdk-ubi10-minimal`, `25-jdk-ubi10-minimal`, `25-ubi10-minimal`](https://github.com/adoptium/containers/blob/7fd47fcdc91108218327496869ec8d2f441eebb7/25/jdk/ubi/ubi10-minimal/Dockerfile)
@@ -223,6 +225,8 @@ WARNING:
 -	[`25_36-jre-alpine-3.21`, `25-jre-alpine-3.21`](https://github.com/adoptium/containers/blob/7fd47fcdc91108218327496869ec8d2f441eebb7/25/jre/alpine/3.21/Dockerfile)
 
 -	[`25_36-jre-alpine-3.22`, `25-jre-alpine-3.22`, `25_36-jre-alpine`, `25-jre-alpine`](https://github.com/adoptium/containers/blob/7fd47fcdc91108218327496869ec8d2f441eebb7/25/jre/alpine/3.22/Dockerfile)
+
+-	[`25_36-jre-jammy`, `25-jre-jammy`](https://github.com/adoptium/containers/blob/7dc6a92c80c1f371f3d416e8357efe18796016a5/25/jre/ubuntu/jammy/Dockerfile)
 
 -	[`25_36-jre-noble`, `25-jre-noble`](https://github.com/adoptium/containers/blob/7fd47fcdc91108218327496869ec8d2f441eebb7/25/jre/ubuntu/noble/Dockerfile)
 

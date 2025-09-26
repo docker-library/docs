@@ -24,14 +24,6 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2022.2-u0`, `2022.2`, `7.15.0`, `7.15`](https://github.com/bonitasoft/bonita-distrib/blob/0fbc47d8fcb6629b943b4c1e00052ca14c3d1e1b/docker/Dockerfile)
-
--	[`2023.1-u0`, `2023.1`, `8.0.0`, `8.0`](https://github.com/bonitasoft/bonita-distrib/blob/31dcebbf22ebcce11f8e3a9b9444802136c36c03/docker/Dockerfile)
-
--	[`2023.2-u0`, `2023.2`, `9.0.0`, `9.0`](https://github.com/bonitasoft/bonita-distrib/blob/397824cf4f302c37f3534908728a2b8321a31565/docker/Dockerfile)
-
--	[`2024.3-u0`, `2024.3`, `10.2.0`, `10.2`](https://github.com/bonitasoft/bonita-distrib/blob/634a6e462dbcc7da8ec7ed47adf419b9a24bf744/docker/Dockerfile)
-
 -	[`2025.1-u0`, `2025.1`, `10.3.0`, `10.3`, `latest`](https://github.com/bonitasoft/bonita-distrib/blob/adca7d9251091cd02f3cde7c0a9cee0e1538c7a1/docker/Dockerfile)
 
 # Quick reference (cont.)
@@ -40,7 +32,7 @@ WARNING:
 	[Jira](https://bonita.atlassian.net/jira/software/c/projects/BBPMC/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/bonita/), [`arm64v8`](https://hub.docker.com/r/arm64v8/bonita/), [`ppc64le`](https://hub.docker.com/r/ppc64le/bonita/)
+	[`amd64`](https://hub.docker.com/r/amd64/bonita/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/bonita/` directory](https://github.com/docker-library/repo-info/blob/master/repos/bonita) ([history](https://github.com/docker-library/repo-info/commits/master/repos/bonita))  
