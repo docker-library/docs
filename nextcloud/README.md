@@ -34,11 +34,17 @@ WARNING:
 
 -	[`30.0.16-fpm-alpine`, `30.0-fpm-alpine`, `30-fpm-alpine`](https://github.com/nextcloud/docker/blob/f5b7b40808604dd61411d0f7a775ac5ff29a974b/30/fpm-alpine/Dockerfile)
 
--	[`31.0.9-apache`, `31.0-apache`, `31-apache`, `apache`, `stable-apache`, `production-apache`, `31.0.9`, `31.0`, `31`, `latest`, `stable`, `production`](https://github.com/nextcloud/docker/blob/f5b7b40808604dd61411d0f7a775ac5ff29a974b/31/apache/Dockerfile)
+-	[`31.0.9-apache`, `31.0-apache`, `31-apache`, `stable-apache`, `production-apache`, `31.0.9`, `31.0`, `31`, `stable`, `production`](https://github.com/nextcloud/docker/blob/f5b7b40808604dd61411d0f7a775ac5ff29a974b/31/apache/Dockerfile)
 
--	[`31.0.9-fpm`, `31.0-fpm`, `31-fpm`, `fpm`, `stable-fpm`, `production-fpm`](https://github.com/nextcloud/docker/blob/f5b7b40808604dd61411d0f7a775ac5ff29a974b/31/fpm/Dockerfile)
+-	[`31.0.9-fpm`, `31.0-fpm`, `31-fpm`, `stable-fpm`, `production-fpm`](https://github.com/nextcloud/docker/blob/f5b7b40808604dd61411d0f7a775ac5ff29a974b/31/fpm/Dockerfile)
 
--	[`31.0.9-fpm-alpine`, `31.0-fpm-alpine`, `31-fpm-alpine`, `fpm-alpine`, `stable-fpm-alpine`, `production-fpm-alpine`](https://github.com/nextcloud/docker/blob/f5b7b40808604dd61411d0f7a775ac5ff29a974b/31/fpm-alpine/Dockerfile)
+-	[`31.0.9-fpm-alpine`, `31.0-fpm-alpine`, `31-fpm-alpine`, `stable-fpm-alpine`, `production-fpm-alpine`](https://github.com/nextcloud/docker/blob/f5b7b40808604dd61411d0f7a775ac5ff29a974b/31/fpm-alpine/Dockerfile)
+
+-	[`32.0.0-apache`, `32.0-apache`, `32-apache`, `apache`, `32.0.0`, `32.0`, `32`, `latest`](https://github.com/nextcloud/docker/blob/1f87830fd6f478c993248475979472aab1787a75/32/apache/Dockerfile)
+
+-	[`32.0.0-fpm`, `32.0-fpm`, `32-fpm`, `fpm`](https://github.com/nextcloud/docker/blob/1f87830fd6f478c993248475979472aab1787a75/32/fpm/Dockerfile)
+
+-	[`32.0.0-fpm-alpine`, `32.0-fpm-alpine`, `32-fpm-alpine`, `fpm-alpine`](https://github.com/nextcloud/docker/blob/1f87830fd6f478c993248475979472aab1787a75/32/fpm-alpine/Dockerfile)
 
 # Quick reference (cont.)
 
