@@ -24,11 +24,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`22.04`, `jammy-20250819`, `jammy`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-amd64-20250819-3f1e6c43&id=3f1e6c43e88f6d1d68c1393c04b3733060952321)
+-	[`22.04`, `jammy-20251001`, `jammy`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-amd64-20251001-1758709c&id=1758709c0ef8b678abab7ba1c66546f8c1e8229f)
 
--	[`24.04`, `noble-20250910`, `noble`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-amd64-20250910-0677e77f&id=0677e77f911c0f4af2e4cc2aad1c331804f1f08f)
+-	[`24.04`, `noble-20250925`, `noble`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-amd64-20250925-1d2c5dde&id=1d2c5dde2e888ba830256d63063f029474b18672)
 
--	[`25.04`, `plucky-20250910`, `plucky`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-plucky-amd64-20250910-53e52ebb&id=53e52ebbe5b75ff498faa31777d68374e27fd65a)
+-	[`25.04`, `plucky-20250925.1`, `plucky`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-plucky-amd64-20250925.1-aa4f50d8&id=aa4f50d80f2f4aedf77435655a04949bde2a264c)
 
 -	[`25.10`, `questing-20250830`, `questing`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-questing-amd64-20250830-c245f382&id=c245f3826f2631032e862a48f183fb528158d08a)
 
