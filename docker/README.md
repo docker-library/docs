@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `amd64` builds of [the `docker` official image](https://hub.docker.com/_/docker) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -34,16 +36,7 @@ WARNING:
 
 -	[`28.5.0-dind-rootless`, `28.5-dind-rootless`, `28-dind-rootless`, `dind-rootless`](https://github.com/docker-library/docker/blob/43bf4f4776f6fa4c32fd52b2719c9099a92bde2c/28/dind-rootless/Dockerfile)
 
--	[`28.5.0-windowsservercore-ltsc2025`, `28.5-windowsservercore-ltsc2025`, `28-windowsservercore-ltsc2025`, `windowsservercore-ltsc2025`](https://github.com/docker-library/docker/blob/43bf4f4776f6fa4c32fd52b2719c9099a92bde2c/28/windows/windowsservercore-ltsc2025/Dockerfile)
-
--	[`28.5.0-windowsservercore-ltsc2022`, `28.5-windowsservercore-ltsc2022`, `28-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`](https://github.com/docker-library/docker/blob/43bf4f4776f6fa4c32fd52b2719c9099a92bde2c/28/windows/windowsservercore-ltsc2022/Dockerfile)
-
 ## Shared Tags
-
--	`28.5.0-windowsservercore`, `28.5-windowsservercore`, `28-windowsservercore`, `windowsservercore`:
-
-	-	[`28.5.0-windowsservercore-ltsc2025`](https://github.com/docker-library/docker/blob/43bf4f4776f6fa4c32fd52b2719c9099a92bde2c/28/windows/windowsservercore-ltsc2025/Dockerfile)
-	-	[`28.5.0-windowsservercore-ltsc2022`](https://github.com/docker-library/docker/blob/43bf4f4776f6fa4c32fd52b2719c9099a92bde2c/28/windows/windowsservercore-ltsc2022/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -98,7 +91,7 @@ Inside the directory specified by `DOCKER_TLS_CERTDIR`, the entrypoint scripts w
 
 In order to make use of this functionality from a "client" container, at least the `client` subdirectory of the `$DOCKER_TLS_CERTDIR` directory needs to be shared (as illustrated in the following examples).
 
-To disable this image behavior, simply override the container command or entrypoint to run `dockerd` directly (`... docker:dind dockerd ...` or `... --entrypoint dockerd docker:dind ...`).
+To disable this image behavior, simply override the container command or entrypoint to run `dockerd` directly (`... amd64/docker:dind dockerd ...` or `... --entrypoint dockerd amd64/docker:dind ...`).
 
 ## Start a daemon instance
 
@@ -108,7 +101,7 @@ $ docker run --privileged --name some-docker -d \
 	-e DOCKER_TLS_CERTDIR=/certs \
 	-v some-docker-certs-ca:/certs/ca \
 	-v some-docker-certs-client:/certs/client \
-	docker:dind
+	amd64/docker:dind
 ```
 
 **Note:** `--privileged` is required for Docker-in-Docker to function properly, but it should be used with care as it provides full access to the host environment, as explained [in the relevant section of the Docker documentation](https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities).
@@ -119,7 +112,7 @@ $ docker run --privileged --name some-docker -d \
 $ docker run --rm --network some-network \
 	-e DOCKER_TLS_CERTDIR=/certs \
 	-v some-docker-certs-client:/certs/client:ro \
-	docker:latest version
+	amd64/docker:latest version
 Client: Docker Engine - Community
  Version:           18.09.8
  API version:       1.39
@@ -144,7 +137,7 @@ Server: Docker Engine - Community
 $ docker run -it --rm --network some-network \
 	-e DOCKER_TLS_CERTDIR=/certs \
 	-v some-docker-certs-client:/certs/client:ro \
-	docker:latest sh
+	amd64/docker:latest sh
 / # docker version
 Client: Docker Engine - Community
  Version:           18.09.8
@@ -170,7 +163,7 @@ Server: Docker Engine - Community
 $ docker run --rm --network some-network \
 	-e DOCKER_TLS_CERTDIR=/certs \
 	-v some-docker-certs-client:/certs/client:ro \
-	docker:latest info
+	amd64/docker:latest info
 Containers: 0
  Running: 0
  Paused: 0
@@ -222,7 +215,7 @@ WARNING: bridge-nf-call-ip6tables is disabled
 ```
 
 ```console
-$ docker run --rm -v /var/run/docker.sock:/var/run/docker.sock docker:latest version
+$ docker run --rm -v /var/run/docker.sock:/var/run/docker.sock amd64/docker:latest version
 Client: Docker Engine - Community
  Version:           18.09.8
  API version:       1.39
@@ -251,7 +244,7 @@ $ docker run --privileged --name some-docker -d \
 	-e DOCKER_TLS_CERTDIR=/certs \
 	-v some-docker-certs-ca:/certs/ca \
 	-v some-docker-certs-client:/certs/client \
-	docker:dind --storage-driver overlay2
+	amd64/docker:dind --storage-driver overlay2
 ```
 
 ## Runtime Settings Considerations
@@ -266,7 +259,7 @@ $ docker run --privileged --name some-docker -d \
 	--ulimit core=-1 \
 	--pids-limit -1 \
 	--oom-score-adj -500 \
-	docker:dind
+	amd64/docker:dind
 ```
 
 Some of these will not be supported based on the settings on the host's `dockerd`, such as `--ulimit nofile=-1`, giving errors that look like `error setting rlimit type 7: operation not permitted`, and some may inherit sane values from the host `dockerd` instance or may not apply for your usage of Docker-in-Docker (for example, you likely want to set `--oom-score-adj` to a value that's higher than `dockerd` on the host so that your Docker-in-Docker instance is killed before the host Docker instance is).
@@ -284,20 +277,20 @@ The Docker documentation is a good starting point for understanding the differen
 2.	Start your `docker` container like this:
 
 	```console
-	$ docker run --privileged --name some-docker -v /my/own/var-lib-docker:/var/lib/docker -d docker:dind
+	$ docker run --privileged --name some-docker -v /my/own/var-lib-docker:/var/lib/docker -d amd64/docker:dind
 	```
 
 The `-v /my/own/var-lib-docker:/var/lib/docker` part of the command mounts the `/my/own/var-lib-docker` directory from the underlying host system as `/var/lib/docker` inside the container, where Docker by default will write its data files.
 
 # Image Variants
 
-The `docker` images come in many flavors, each designed for a specific use case.
+The `amd64/docker` images come in many flavors, each designed for a specific use case.
 
-## `docker:<version>`
+## `amd64/docker:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `docker:<version>-rootless`
+## `amd64/docker:<version>-rootless`
 
 For more information about using the experimental "rootless" image variants, see [docker-library/docker#174](https://github.com/docker-library/docker/pull/174).
 
@@ -306,7 +299,7 @@ For more information about using the experimental "rootless" image variants, see
 Basic example usage:
 
 ```console
-$ docker run -d --name some-docker --privileged docker:dind-rootless
+$ docker run -d --name some-docker --privileged amd64/docker:dind-rootless
 $ docker logs --tail=3 some-docker # to verify the daemon has finished generating TLS certificates and is listening successfully
 time="xxx" level=info msg="Daemon has completed initialization"
 time="xxx" level=info msg="API listen on /run/user/1000/docker.sock"
@@ -319,7 +312,7 @@ $ docker exec -it some-docker docker-entrypoint.sh sh # using "docker-entrypoint
 To run with a different UID/GID than the one baked into the image, modify `/etc/passwd`, `/etc/group`, and filesystem permissions (especially for the `rootless` user's home directory) as appropriate; for example:
 
 ```dockerfile
-FROM docker:dind-rootless
+FROM amd64/docker:dind-rootless
 USER root
 RUN set -eux; \
 	sed -i -e 's/^rootless:x:1000:1000:/rootless:x:1234:5678:/' /etc/passwd; \
@@ -327,10 +320,6 @@ RUN set -eux; \
 	chown -R rootless ~rootless
 USER rootless
 ```
-
-## `docker:<version>-windowsservercore`
-
-Unfortunately, Windows does not support nested containers, so this image variant only contains the client (intended for use against an existing Docker engine, ala `-v //./pipe/docker_engine://./pipe/docker_engine`).
 
 # License
 
