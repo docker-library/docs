@@ -26,13 +26,13 @@ WARNING:
 
 -	[`8.17.10`](https://github.com/elastic/dockerfiles/blob/3861498adce22926e852b1bbec340f159147a47f/logstash/Dockerfile)
 
--	[`8.18.7`](https://github.com/elastic/dockerfiles/blob/ce7db65871f3bbcb091c536150e0bd6848a5af00/logstash/Dockerfile)
+-	[`8.18.8`](https://github.com/elastic/dockerfiles/blob/6a7937aa369e0368020bcff78884c2b3645c50dd/logstash/Dockerfile)
 
--	[`8.19.4`](https://github.com/elastic/dockerfiles/blob/f99392291c86cb616dc6b16a1ef40985c89475c4/logstash/Dockerfile)
+-	[`8.19.5`](https://github.com/elastic/dockerfiles/blob/eadd67c326b8c6c63acff9d8e9fced4cb29b92ed/logstash/Dockerfile)
 
--	[`9.0.7`](https://github.com/elastic/dockerfiles/blob/037d379705fb3b963b11b6a32c0aa58fb731f3d3/logstash/Dockerfile)
+-	[`9.0.8`](https://github.com/elastic/dockerfiles/blob/dd7bdb10765be40ea5cab6c64054df56b65860eb/logstash/Dockerfile)
 
--	[`9.1.4`](https://github.com/elastic/dockerfiles/blob/661aa810065c3723595090c63c63b56344b7d81b/logstash/Dockerfile)
+-	[`9.1.5`](https://github.com/elastic/dockerfiles/blob/b73ebec6aca17cdb8504bfcfddd954f772905a74/logstash/Dockerfile)
 
 # Quick reference (cont.)
 
