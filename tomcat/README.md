@@ -24,61 +24,61 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`11.0.11-jdk25-temurin-noble`, `11.0-jdk25-temurin-noble`, `11-jdk25-temurin-noble`, `jdk25-temurin-noble`, `11.0.11-jdk25-temurin`, `11.0-jdk25-temurin`, `11-jdk25-temurin`, `jdk25-temurin`, `11.0.11-jdk25`, `11.0-jdk25`, `11-jdk25`, `jdk25`, `11.0.11`, `11.0`, `11`, `latest`](https://github.com/docker-library/tomcat/blob/27f42750d33f1a4093b04883c7c25072b8b8426e/11.0/jdk25/temurin-noble/Dockerfile)
+-	[`11.0.12-jdk25-temurin-noble`, `11.0-jdk25-temurin-noble`, `11-jdk25-temurin-noble`, `jdk25-temurin-noble`, `11.0.12-jdk25-temurin`, `11.0-jdk25-temurin`, `11-jdk25-temurin`, `jdk25-temurin`, `11.0.12-jdk25`, `11.0-jdk25`, `11-jdk25`, `jdk25`, `11.0.12`, `11.0`, `11`, `latest`](https://github.com/docker-library/tomcat/blob/3deca0638cb525a77bb96e678902697486d16d3e/11.0/jdk25/temurin-noble/Dockerfile)
 
--	[`11.0.11-jre25-temurin-noble`, `11.0-jre25-temurin-noble`, `11-jre25-temurin-noble`, `jre25-temurin-noble`, `11.0.11-jre25-temurin`, `11.0-jre25-temurin`, `11-jre25-temurin`, `jre25-temurin`, `11.0.11-jre25`, `11.0-jre25`, `11-jre25`, `jre25`](https://github.com/docker-library/tomcat/blob/27f42750d33f1a4093b04883c7c25072b8b8426e/11.0/jre25/temurin-noble/Dockerfile)
+-	[`11.0.12-jre25-temurin-noble`, `11.0-jre25-temurin-noble`, `11-jre25-temurin-noble`, `jre25-temurin-noble`, `11.0.12-jre25-temurin`, `11.0-jre25-temurin`, `11-jre25-temurin`, `jre25-temurin`, `11.0.12-jre25`, `11.0-jre25`, `11-jre25`, `jre25`](https://github.com/docker-library/tomcat/blob/3deca0638cb525a77bb96e678902697486d16d3e/11.0/jre25/temurin-noble/Dockerfile)
 
--	[`11.0.11-jdk25-temurin-jammy`, `11.0-jdk25-temurin-jammy`, `11-jdk25-temurin-jammy`, `jdk25-temurin-jammy`](https://github.com/docker-library/tomcat/blob/27f42750d33f1a4093b04883c7c25072b8b8426e/11.0/jdk25/temurin-jammy/Dockerfile)
+-	[`11.0.12-jdk25-temurin-jammy`, `11.0-jdk25-temurin-jammy`, `11-jdk25-temurin-jammy`, `jdk25-temurin-jammy`](https://github.com/docker-library/tomcat/blob/3deca0638cb525a77bb96e678902697486d16d3e/11.0/jdk25/temurin-jammy/Dockerfile)
 
--	[`11.0.11-jre25-temurin-jammy`, `11.0-jre25-temurin-jammy`, `11-jre25-temurin-jammy`, `jre25-temurin-jammy`](https://github.com/docker-library/tomcat/blob/27f42750d33f1a4093b04883c7c25072b8b8426e/11.0/jre25/temurin-jammy/Dockerfile)
+-	[`11.0.12-jre25-temurin-jammy`, `11.0-jre25-temurin-jammy`, `11-jre25-temurin-jammy`, `jre25-temurin-jammy`](https://github.com/docker-library/tomcat/blob/3deca0638cb525a77bb96e678902697486d16d3e/11.0/jre25/temurin-jammy/Dockerfile)
 
--	[`11.0.11-jdk21-temurin-noble`, `11.0-jdk21-temurin-noble`, `11-jdk21-temurin-noble`, `jdk21-temurin-noble`, `11.0.11-jdk21-temurin`, `11.0-jdk21-temurin`, `11-jdk21-temurin`, `jdk21-temurin`, `11.0.11-jdk21`, `11.0-jdk21`, `11-jdk21`, `jdk21`](https://github.com/docker-library/tomcat/blob/99b7e90b0a58c8cf2990958971c8adac3c6a4f57/11.0/jdk21/temurin-noble/Dockerfile)
+-	[`11.0.12-jdk21-temurin-noble`, `11.0-jdk21-temurin-noble`, `11-jdk21-temurin-noble`, `jdk21-temurin-noble`, `11.0.12-jdk21-temurin`, `11.0-jdk21-temurin`, `11-jdk21-temurin`, `jdk21-temurin`, `11.0.12-jdk21`, `11.0-jdk21`, `11-jdk21`, `jdk21`](https://github.com/docker-library/tomcat/blob/3deca0638cb525a77bb96e678902697486d16d3e/11.0/jdk21/temurin-noble/Dockerfile)
 
--	[`11.0.11-jre21-temurin-noble`, `11.0-jre21-temurin-noble`, `11-jre21-temurin-noble`, `jre21-temurin-noble`, `11.0.11-jre21-temurin`, `11.0-jre21-temurin`, `11-jre21-temurin`, `jre21-temurin`, `11.0.11-jre21`, `11.0-jre21`, `11-jre21`, `jre21`](https://github.com/docker-library/tomcat/blob/99b7e90b0a58c8cf2990958971c8adac3c6a4f57/11.0/jre21/temurin-noble/Dockerfile)
+-	[`11.0.12-jre21-temurin-noble`, `11.0-jre21-temurin-noble`, `11-jre21-temurin-noble`, `jre21-temurin-noble`, `11.0.12-jre21-temurin`, `11.0-jre21-temurin`, `11-jre21-temurin`, `jre21-temurin`, `11.0.12-jre21`, `11.0-jre21`, `11-jre21`, `jre21`](https://github.com/docker-library/tomcat/blob/3deca0638cb525a77bb96e678902697486d16d3e/11.0/jre21/temurin-noble/Dockerfile)
 
--	[`11.0.11-jdk21-temurin-jammy`, `11.0-jdk21-temurin-jammy`, `11-jdk21-temurin-jammy`, `jdk21-temurin-jammy`](https://github.com/docker-library/tomcat/blob/99b7e90b0a58c8cf2990958971c8adac3c6a4f57/11.0/jdk21/temurin-jammy/Dockerfile)
+-	[`11.0.12-jdk21-temurin-jammy`, `11.0-jdk21-temurin-jammy`, `11-jdk21-temurin-jammy`, `jdk21-temurin-jammy`](https://github.com/docker-library/tomcat/blob/3deca0638cb525a77bb96e678902697486d16d3e/11.0/jdk21/temurin-jammy/Dockerfile)
 
--	[`11.0.11-jre21-temurin-jammy`, `11.0-jre21-temurin-jammy`, `11-jre21-temurin-jammy`, `jre21-temurin-jammy`](https://github.com/docker-library/tomcat/blob/99b7e90b0a58c8cf2990958971c8adac3c6a4f57/11.0/jre21/temurin-jammy/Dockerfile)
+-	[`11.0.12-jre21-temurin-jammy`, `11.0-jre21-temurin-jammy`, `11-jre21-temurin-jammy`, `jre21-temurin-jammy`](https://github.com/docker-library/tomcat/blob/3deca0638cb525a77bb96e678902697486d16d3e/11.0/jre21/temurin-jammy/Dockerfile)
 
--	[`11.0.11-jdk17-temurin-noble`, `11.0-jdk17-temurin-noble`, `11-jdk17-temurin-noble`, `jdk17-temurin-noble`, `11.0.11-jdk17-temurin`, `11.0-jdk17-temurin`, `11-jdk17-temurin`, `jdk17-temurin`, `11.0.11-jdk17`, `11.0-jdk17`, `11-jdk17`, `jdk17`](https://github.com/docker-library/tomcat/blob/99b7e90b0a58c8cf2990958971c8adac3c6a4f57/11.0/jdk17/temurin-noble/Dockerfile)
+-	[`11.0.12-jdk17-temurin-noble`, `11.0-jdk17-temurin-noble`, `11-jdk17-temurin-noble`, `jdk17-temurin-noble`, `11.0.12-jdk17-temurin`, `11.0-jdk17-temurin`, `11-jdk17-temurin`, `jdk17-temurin`, `11.0.12-jdk17`, `11.0-jdk17`, `11-jdk17`, `jdk17`](https://github.com/docker-library/tomcat/blob/3deca0638cb525a77bb96e678902697486d16d3e/11.0/jdk17/temurin-noble/Dockerfile)
 
--	[`11.0.11-jre17-temurin-noble`, `11.0-jre17-temurin-noble`, `11-jre17-temurin-noble`, `jre17-temurin-noble`, `11.0.11-jre17-temurin`, `11.0-jre17-temurin`, `11-jre17-temurin`, `jre17-temurin`, `11.0.11-jre17`, `11.0-jre17`, `11-jre17`, `jre17`](https://github.com/docker-library/tomcat/blob/99b7e90b0a58c8cf2990958971c8adac3c6a4f57/11.0/jre17/temurin-noble/Dockerfile)
+-	[`11.0.12-jre17-temurin-noble`, `11.0-jre17-temurin-noble`, `11-jre17-temurin-noble`, `jre17-temurin-noble`, `11.0.12-jre17-temurin`, `11.0-jre17-temurin`, `11-jre17-temurin`, `jre17-temurin`, `11.0.12-jre17`, `11.0-jre17`, `11-jre17`, `jre17`](https://github.com/docker-library/tomcat/blob/3deca0638cb525a77bb96e678902697486d16d3e/11.0/jre17/temurin-noble/Dockerfile)
 
--	[`11.0.11-jdk17-temurin-jammy`, `11.0-jdk17-temurin-jammy`, `11-jdk17-temurin-jammy`, `jdk17-temurin-jammy`](https://github.com/docker-library/tomcat/blob/99b7e90b0a58c8cf2990958971c8adac3c6a4f57/11.0/jdk17/temurin-jammy/Dockerfile)
+-	[`11.0.12-jdk17-temurin-jammy`, `11.0-jdk17-temurin-jammy`, `11-jdk17-temurin-jammy`, `jdk17-temurin-jammy`](https://github.com/docker-library/tomcat/blob/3deca0638cb525a77bb96e678902697486d16d3e/11.0/jdk17/temurin-jammy/Dockerfile)
 
--	[`11.0.11-jre17-temurin-jammy`, `11.0-jre17-temurin-jammy`, `11-jre17-temurin-jammy`, `jre17-temurin-jammy`](https://github.com/docker-library/tomcat/blob/99b7e90b0a58c8cf2990958971c8adac3c6a4f57/11.0/jre17/temurin-jammy/Dockerfile)
+-	[`11.0.12-jre17-temurin-jammy`, `11.0-jre17-temurin-jammy`, `11-jre17-temurin-jammy`, `jre17-temurin-jammy`](https://github.com/docker-library/tomcat/blob/3deca0638cb525a77bb96e678902697486d16d3e/11.0/jre17/temurin-jammy/Dockerfile)
 
--	[`10.1.46-jdk25-temurin-noble`, `10.1-jdk25-temurin-noble`, `10-jdk25-temurin-noble`, `10.1.46-jdk25-temurin`, `10.1-jdk25-temurin`, `10-jdk25-temurin`, `10.1.46-jdk25`, `10.1-jdk25`, `10-jdk25`, `10.1.46`, `10.1`, `10`](https://github.com/docker-library/tomcat/blob/27f42750d33f1a4093b04883c7c25072b8b8426e/10.1/jdk25/temurin-noble/Dockerfile)
+-	[`10.1.47-jdk25-temurin-noble`, `10.1-jdk25-temurin-noble`, `10-jdk25-temurin-noble`, `10.1.47-jdk25-temurin`, `10.1-jdk25-temurin`, `10-jdk25-temurin`, `10.1.47-jdk25`, `10.1-jdk25`, `10-jdk25`, `10.1.47`, `10.1`, `10`](https://github.com/docker-library/tomcat/blob/f4498d3f44a01eee502da7adbacc89a0eecc7727/10.1/jdk25/temurin-noble/Dockerfile)
 
--	[`10.1.46-jre25-temurin-noble`, `10.1-jre25-temurin-noble`, `10-jre25-temurin-noble`, `10.1.46-jre25-temurin`, `10.1-jre25-temurin`, `10-jre25-temurin`, `10.1.46-jre25`, `10.1-jre25`, `10-jre25`](https://github.com/docker-library/tomcat/blob/27f42750d33f1a4093b04883c7c25072b8b8426e/10.1/jre25/temurin-noble/Dockerfile)
+-	[`10.1.47-jre25-temurin-noble`, `10.1-jre25-temurin-noble`, `10-jre25-temurin-noble`, `10.1.47-jre25-temurin`, `10.1-jre25-temurin`, `10-jre25-temurin`, `10.1.47-jre25`, `10.1-jre25`, `10-jre25`](https://github.com/docker-library/tomcat/blob/f4498d3f44a01eee502da7adbacc89a0eecc7727/10.1/jre25/temurin-noble/Dockerfile)
 
--	[`10.1.46-jdk25-temurin-jammy`, `10.1-jdk25-temurin-jammy`, `10-jdk25-temurin-jammy`](https://github.com/docker-library/tomcat/blob/27f42750d33f1a4093b04883c7c25072b8b8426e/10.1/jdk25/temurin-jammy/Dockerfile)
+-	[`10.1.47-jdk25-temurin-jammy`, `10.1-jdk25-temurin-jammy`, `10-jdk25-temurin-jammy`](https://github.com/docker-library/tomcat/blob/f4498d3f44a01eee502da7adbacc89a0eecc7727/10.1/jdk25/temurin-jammy/Dockerfile)
 
--	[`10.1.46-jre25-temurin-jammy`, `10.1-jre25-temurin-jammy`, `10-jre25-temurin-jammy`](https://github.com/docker-library/tomcat/blob/27f42750d33f1a4093b04883c7c25072b8b8426e/10.1/jre25/temurin-jammy/Dockerfile)
+-	[`10.1.47-jre25-temurin-jammy`, `10.1-jre25-temurin-jammy`, `10-jre25-temurin-jammy`](https://github.com/docker-library/tomcat/blob/f4498d3f44a01eee502da7adbacc89a0eecc7727/10.1/jre25/temurin-jammy/Dockerfile)
 
--	[`10.1.46-jdk21-temurin-noble`, `10.1-jdk21-temurin-noble`, `10-jdk21-temurin-noble`, `10.1.46-jdk21-temurin`, `10.1-jdk21-temurin`, `10-jdk21-temurin`, `10.1.46-jdk21`, `10.1-jdk21`, `10-jdk21`](https://github.com/docker-library/tomcat/blob/0f20df9a05f0ab5e61bcd6c7d85e0f8a2695afc9/10.1/jdk21/temurin-noble/Dockerfile)
+-	[`10.1.47-jdk21-temurin-noble`, `10.1-jdk21-temurin-noble`, `10-jdk21-temurin-noble`, `10.1.47-jdk21-temurin`, `10.1-jdk21-temurin`, `10-jdk21-temurin`, `10.1.47-jdk21`, `10.1-jdk21`, `10-jdk21`](https://github.com/docker-library/tomcat/blob/f4498d3f44a01eee502da7adbacc89a0eecc7727/10.1/jdk21/temurin-noble/Dockerfile)
 
--	[`10.1.46-jre21-temurin-noble`, `10.1-jre21-temurin-noble`, `10-jre21-temurin-noble`, `10.1.46-jre21-temurin`, `10.1-jre21-temurin`, `10-jre21-temurin`, `10.1.46-jre21`, `10.1-jre21`, `10-jre21`](https://github.com/docker-library/tomcat/blob/0f20df9a05f0ab5e61bcd6c7d85e0f8a2695afc9/10.1/jre21/temurin-noble/Dockerfile)
+-	[`10.1.47-jre21-temurin-noble`, `10.1-jre21-temurin-noble`, `10-jre21-temurin-noble`, `10.1.47-jre21-temurin`, `10.1-jre21-temurin`, `10-jre21-temurin`, `10.1.47-jre21`, `10.1-jre21`, `10-jre21`](https://github.com/docker-library/tomcat/blob/f4498d3f44a01eee502da7adbacc89a0eecc7727/10.1/jre21/temurin-noble/Dockerfile)
 
--	[`10.1.46-jdk21-temurin-jammy`, `10.1-jdk21-temurin-jammy`, `10-jdk21-temurin-jammy`](https://github.com/docker-library/tomcat/blob/0f20df9a05f0ab5e61bcd6c7d85e0f8a2695afc9/10.1/jdk21/temurin-jammy/Dockerfile)
+-	[`10.1.47-jdk21-temurin-jammy`, `10.1-jdk21-temurin-jammy`, `10-jdk21-temurin-jammy`](https://github.com/docker-library/tomcat/blob/f4498d3f44a01eee502da7adbacc89a0eecc7727/10.1/jdk21/temurin-jammy/Dockerfile)
 
--	[`10.1.46-jre21-temurin-jammy`, `10.1-jre21-temurin-jammy`, `10-jre21-temurin-jammy`](https://github.com/docker-library/tomcat/blob/0f20df9a05f0ab5e61bcd6c7d85e0f8a2695afc9/10.1/jre21/temurin-jammy/Dockerfile)
+-	[`10.1.47-jre21-temurin-jammy`, `10.1-jre21-temurin-jammy`, `10-jre21-temurin-jammy`](https://github.com/docker-library/tomcat/blob/f4498d3f44a01eee502da7adbacc89a0eecc7727/10.1/jre21/temurin-jammy/Dockerfile)
 
--	[`10.1.46-jdk17-temurin-noble`, `10.1-jdk17-temurin-noble`, `10-jdk17-temurin-noble`, `10.1.46-jdk17-temurin`, `10.1-jdk17-temurin`, `10-jdk17-temurin`, `10.1.46-jdk17`, `10.1-jdk17`, `10-jdk17`](https://github.com/docker-library/tomcat/blob/0f20df9a05f0ab5e61bcd6c7d85e0f8a2695afc9/10.1/jdk17/temurin-noble/Dockerfile)
+-	[`10.1.47-jdk17-temurin-noble`, `10.1-jdk17-temurin-noble`, `10-jdk17-temurin-noble`, `10.1.47-jdk17-temurin`, `10.1-jdk17-temurin`, `10-jdk17-temurin`, `10.1.47-jdk17`, `10.1-jdk17`, `10-jdk17`](https://github.com/docker-library/tomcat/blob/f4498d3f44a01eee502da7adbacc89a0eecc7727/10.1/jdk17/temurin-noble/Dockerfile)
 
--	[`10.1.46-jre17-temurin-noble`, `10.1-jre17-temurin-noble`, `10-jre17-temurin-noble`, `10.1.46-jre17-temurin`, `10.1-jre17-temurin`, `10-jre17-temurin`, `10.1.46-jre17`, `10.1-jre17`, `10-jre17`](https://github.com/docker-library/tomcat/blob/0f20df9a05f0ab5e61bcd6c7d85e0f8a2695afc9/10.1/jre17/temurin-noble/Dockerfile)
+-	[`10.1.47-jre17-temurin-noble`, `10.1-jre17-temurin-noble`, `10-jre17-temurin-noble`, `10.1.47-jre17-temurin`, `10.1-jre17-temurin`, `10-jre17-temurin`, `10.1.47-jre17`, `10.1-jre17`, `10-jre17`](https://github.com/docker-library/tomcat/blob/f4498d3f44a01eee502da7adbacc89a0eecc7727/10.1/jre17/temurin-noble/Dockerfile)
 
--	[`10.1.46-jdk17-temurin-jammy`, `10.1-jdk17-temurin-jammy`, `10-jdk17-temurin-jammy`](https://github.com/docker-library/tomcat/blob/0f20df9a05f0ab5e61bcd6c7d85e0f8a2695afc9/10.1/jdk17/temurin-jammy/Dockerfile)
+-	[`10.1.47-jdk17-temurin-jammy`, `10.1-jdk17-temurin-jammy`, `10-jdk17-temurin-jammy`](https://github.com/docker-library/tomcat/blob/f4498d3f44a01eee502da7adbacc89a0eecc7727/10.1/jdk17/temurin-jammy/Dockerfile)
 
--	[`10.1.46-jre17-temurin-jammy`, `10.1-jre17-temurin-jammy`, `10-jre17-temurin-jammy`](https://github.com/docker-library/tomcat/blob/0f20df9a05f0ab5e61bcd6c7d85e0f8a2695afc9/10.1/jre17/temurin-jammy/Dockerfile)
+-	[`10.1.47-jre17-temurin-jammy`, `10.1-jre17-temurin-jammy`, `10-jre17-temurin-jammy`](https://github.com/docker-library/tomcat/blob/f4498d3f44a01eee502da7adbacc89a0eecc7727/10.1/jre17/temurin-jammy/Dockerfile)
 
--	[`10.1.46-jdk11-temurin-noble`, `10.1-jdk11-temurin-noble`, `10-jdk11-temurin-noble`, `10.1.46-jdk11-temurin`, `10.1-jdk11-temurin`, `10-jdk11-temurin`, `10.1.46-jdk11`, `10.1-jdk11`, `10-jdk11`](https://github.com/docker-library/tomcat/blob/0f20df9a05f0ab5e61bcd6c7d85e0f8a2695afc9/10.1/jdk11/temurin-noble/Dockerfile)
+-	[`10.1.47-jdk11-temurin-noble`, `10.1-jdk11-temurin-noble`, `10-jdk11-temurin-noble`, `10.1.47-jdk11-temurin`, `10.1-jdk11-temurin`, `10-jdk11-temurin`, `10.1.47-jdk11`, `10.1-jdk11`, `10-jdk11`](https://github.com/docker-library/tomcat/blob/f4498d3f44a01eee502da7adbacc89a0eecc7727/10.1/jdk11/temurin-noble/Dockerfile)
 
--	[`10.1.46-jre11-temurin-noble`, `10.1-jre11-temurin-noble`, `10-jre11-temurin-noble`, `10.1.46-jre11-temurin`, `10.1-jre11-temurin`, `10-jre11-temurin`, `10.1.46-jre11`, `10.1-jre11`, `10-jre11`](https://github.com/docker-library/tomcat/blob/0f20df9a05f0ab5e61bcd6c7d85e0f8a2695afc9/10.1/jre11/temurin-noble/Dockerfile)
+-	[`10.1.47-jre11-temurin-noble`, `10.1-jre11-temurin-noble`, `10-jre11-temurin-noble`, `10.1.47-jre11-temurin`, `10.1-jre11-temurin`, `10-jre11-temurin`, `10.1.47-jre11`, `10.1-jre11`, `10-jre11`](https://github.com/docker-library/tomcat/blob/f4498d3f44a01eee502da7adbacc89a0eecc7727/10.1/jre11/temurin-noble/Dockerfile)
 
--	[`10.1.46-jdk11-temurin-jammy`, `10.1-jdk11-temurin-jammy`, `10-jdk11-temurin-jammy`](https://github.com/docker-library/tomcat/blob/0f20df9a05f0ab5e61bcd6c7d85e0f8a2695afc9/10.1/jdk11/temurin-jammy/Dockerfile)
+-	[`10.1.47-jdk11-temurin-jammy`, `10.1-jdk11-temurin-jammy`, `10-jdk11-temurin-jammy`](https://github.com/docker-library/tomcat/blob/f4498d3f44a01eee502da7adbacc89a0eecc7727/10.1/jdk11/temurin-jammy/Dockerfile)
 
--	[`10.1.46-jre11-temurin-jammy`, `10.1-jre11-temurin-jammy`, `10-jre11-temurin-jammy`](https://github.com/docker-library/tomcat/blob/0f20df9a05f0ab5e61bcd6c7d85e0f8a2695afc9/10.1/jre11/temurin-jammy/Dockerfile)
+-	[`10.1.47-jre11-temurin-jammy`, `10.1-jre11-temurin-jammy`, `10-jre11-temurin-jammy`](https://github.com/docker-library/tomcat/blob/f4498d3f44a01eee502da7adbacc89a0eecc7727/10.1/jre11/temurin-jammy/Dockerfile)
 
 -	[`9.0.110-jdk25-temurin-noble`, `9.0-jdk25-temurin-noble`, `9-jdk25-temurin-noble`, `9.0.110-jdk25-temurin`, `9.0-jdk25-temurin`, `9-jdk25-temurin`, `9.0.110-jdk25`, `9.0-jdk25`, `9-jdk25`, `9.0.110`, `9.0`, `9`](https://github.com/docker-library/tomcat/blob/d60af5e192ce557d3fd70e11e355d2c1195fa884/9.0/jdk25/temurin-noble/Dockerfile)
 

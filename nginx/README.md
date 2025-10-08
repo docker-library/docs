@@ -24,19 +24,19 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.29.1`, `mainline`, `1`, `1.29`, `latest`, `1.29.1-bookworm`, `mainline-bookworm`, `1-bookworm`, `1.29-bookworm`, `bookworm`](https://github.com/nginx/docker-nginx/blob/5a4ad48c733b365d69a4d1c9946a9d8480469c7f/mainline/debian/Dockerfile)
+-	[`1.29.2`, `mainline`, `1`, `1.29`, `latest`, `1.29.2-trixie`, `mainline-trixie`, `1-trixie`, `1.29-trixie`, `trixie`](https://github.com/nginx/docker-nginx/blob/c3785f2653008f9354c3d29a54d8c5459c53fa60/mainline/debian/Dockerfile)
 
--	[`1.29.1-perl`, `mainline-perl`, `1-perl`, `1.29-perl`, `perl`, `1.29.1-bookworm-perl`, `mainline-bookworm-perl`, `1-bookworm-perl`, `1.29-bookworm-perl`, `bookworm-perl`](https://github.com/nginx/docker-nginx/blob/5a4ad48c733b365d69a4d1c9946a9d8480469c7f/mainline/debian-perl/Dockerfile)
+-	[`1.29.2-perl`, `mainline-perl`, `1-perl`, `1.29-perl`, `perl`, `1.29.2-trixie-perl`, `mainline-trixie-perl`, `1-trixie-perl`, `1.29-trixie-perl`, `trixie-perl`](https://github.com/nginx/docker-nginx/blob/c3785f2653008f9354c3d29a54d8c5459c53fa60/mainline/debian-perl/Dockerfile)
 
--	[`1.29.1-otel`, `mainline-otel`, `1-otel`, `1.29-otel`, `otel`, `1.29.1-bookworm-otel`, `mainline-bookworm-otel`, `1-bookworm-otel`, `1.29-bookworm-otel`, `bookworm-otel`](https://github.com/nginx/docker-nginx/blob/5a4ad48c733b365d69a4d1c9946a9d8480469c7f/mainline/debian-otel/Dockerfile)
+-	[`1.29.2-otel`, `mainline-otel`, `1-otel`, `1.29-otel`, `otel`, `1.29.2-trixie-otel`, `mainline-trixie-otel`, `1-trixie-otel`, `1.29-trixie-otel`, `trixie-otel`](https://github.com/nginx/docker-nginx/blob/c3785f2653008f9354c3d29a54d8c5459c53fa60/mainline/debian-otel/Dockerfile)
 
--	[`1.29.1-alpine`, `mainline-alpine`, `1-alpine`, `1.29-alpine`, `alpine`, `1.29.1-alpine3.22`, `mainline-alpine3.22`, `1-alpine3.22`, `1.29-alpine3.22`, `alpine3.22`](https://github.com/nginx/docker-nginx/blob/5a4ad48c733b365d69a4d1c9946a9d8480469c7f/mainline/alpine/Dockerfile)
+-	[`1.29.2-alpine`, `mainline-alpine`, `1-alpine`, `1.29-alpine`, `alpine`, `1.29.2-alpine3.22`, `mainline-alpine3.22`, `1-alpine3.22`, `1.29-alpine3.22`, `alpine3.22`](https://github.com/nginx/docker-nginx/blob/c3785f2653008f9354c3d29a54d8c5459c53fa60/mainline/alpine/Dockerfile)
 
--	[`1.29.1-alpine-perl`, `mainline-alpine-perl`, `1-alpine-perl`, `1.29-alpine-perl`, `alpine-perl`, `1.29.1-alpine3.22-perl`, `mainline-alpine3.22-perl`, `1-alpine3.22-perl`, `1.29-alpine3.22-perl`, `alpine3.22-perl`](https://github.com/nginx/docker-nginx/blob/5a4ad48c733b365d69a4d1c9946a9d8480469c7f/mainline/alpine-perl/Dockerfile)
+-	[`1.29.2-alpine-perl`, `mainline-alpine-perl`, `1-alpine-perl`, `1.29-alpine-perl`, `alpine-perl`, `1.29.2-alpine3.22-perl`, `mainline-alpine3.22-perl`, `1-alpine3.22-perl`, `1.29-alpine3.22-perl`, `alpine3.22-perl`](https://github.com/nginx/docker-nginx/blob/c3785f2653008f9354c3d29a54d8c5459c53fa60/mainline/alpine-perl/Dockerfile)
 
--	[`1.29.1-alpine-slim`, `mainline-alpine-slim`, `1-alpine-slim`, `1.29-alpine-slim`, `alpine-slim`, `1.29.1-alpine3.22-slim`, `mainline-alpine3.22-slim`, `1-alpine3.22-slim`, `1.29-alpine3.22-slim`, `alpine3.22-slim`](https://github.com/nginx/docker-nginx/blob/5a4ad48c733b365d69a4d1c9946a9d8480469c7f/mainline/alpine-slim/Dockerfile)
+-	[`1.29.2-alpine-slim`, `mainline-alpine-slim`, `1-alpine-slim`, `1.29-alpine-slim`, `alpine-slim`, `1.29.2-alpine3.22-slim`, `mainline-alpine3.22-slim`, `1-alpine3.22-slim`, `1.29-alpine3.22-slim`, `alpine3.22-slim`](https://github.com/nginx/docker-nginx/blob/c3785f2653008f9354c3d29a54d8c5459c53fa60/mainline/alpine-slim/Dockerfile)
 
--	[`1.29.1-alpine-otel`, `mainline-alpine-otel`, `1-alpine-otel`, `1.29-alpine-otel`, `alpine-otel`, `1.29.1-alpine3.22-otel`, `mainline-alpine3.22-otel`, `1-alpine3.22-otel`, `1.29-alpine3.22-otel`, `alpine3.22-otel`](https://github.com/nginx/docker-nginx/blob/5a4ad48c733b365d69a4d1c9946a9d8480469c7f/mainline/alpine-otel/Dockerfile)
+-	[`1.29.2-alpine-otel`, `mainline-alpine-otel`, `1-alpine-otel`, `1.29-alpine-otel`, `alpine-otel`, `1.29.2-alpine3.22-otel`, `mainline-alpine3.22-otel`, `1-alpine3.22-otel`, `1.29-alpine3.22-otel`, `alpine3.22-otel`](https://github.com/nginx/docker-nginx/blob/c3785f2653008f9354c3d29a54d8c5459c53fa60/mainline/alpine-otel/Dockerfile)
 
 -	[`1.28.0`, `stable`, `1.28`, `1.28.0-bookworm`, `stable-bookworm`, `1.28-bookworm`](https://github.com/nginx/docker-nginx/blob/9b549fdf936778810dbe95a4813899c60444ef1c/stable/debian/Dockerfile)
 
@@ -268,7 +268,7 @@ The `nginx` images come in many flavors, each designed for a specific use case.
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like bookworm in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+Some of these tags may have names like bookworm or trixie in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 ## `nginx:<version>-perl` / `nginx:<version>-alpine-perl`
 
