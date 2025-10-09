@@ -26,11 +26,11 @@ WARNING:
 
 -	[`22.04`, `jammy-20251001`, `jammy`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-amd64-20251001-1758709c&id=1758709c0ef8b678abab7ba1c66546f8c1e8229f)
 
--	[`24.04`, `noble-20250925`, `noble`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-amd64-20250925-1d2c5dde&id=1d2c5dde2e888ba830256d63063f029474b18672)
+-	[`24.04`, `noble-20251001`, `noble`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-amd64-20251001-f5b85bb8&id=f5b85bb809ca07067994b7b0ec661a31718d6c75)
 
--	[`25.04`, `plucky-20250925.1`, `plucky`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-plucky-amd64-20250925.1-aa4f50d8&id=aa4f50d80f2f4aedf77435655a04949bde2a264c)
+-	[`25.04`, `plucky-20251001`, `plucky`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-plucky-amd64-20251001-547c400a&id=547c400a291828191316040f3e41e24b971efb8e)
 
--	[`25.10`, `questing-20250830`, `questing`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-questing-amd64-20250830-c245f382&id=c245f3826f2631032e862a48f183fb528158d08a)
+-	[`25.10`, `questing-20251007`, `questing`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-questing-amd64-20251007-2012176a&id=2012176ad7653cd1c95d622cbcb2744f24237be3)
 
 # Quick reference (cont.)
 
