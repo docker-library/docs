@@ -238,8 +238,8 @@ Custom configuration files should end in `.cnf` and be mounted read only at the 
 
 The `mariadb` image configuration contains the Ubuntu MariaDB variables with two custom changes for the container:
 
-	[host-cache-size=0](https://mariadb.com/kb/en/server-system-variables/#host_cache_size)
-	[skip-name-resolve](https://mariadb.com/kb/en/server-system-variables/#skip_name_resolve)
+- [`host-cache-size=0`](https://mariadb.com/kb/en/server-system-variables/#host_cache_size)
+- [`skip-name-resolve`](https://mariadb.com/kb/en/server-system-variables/#skip_name_resolve)
 
 These disable the authentication of `user@hostname` users. To re-enable the `skip-name-resolve` use `disable-skip-name-resolve` as variable or argument. When enabled, the `host-cache-size` should be sufficient for the number of containers connecting to the `mariadb`.
 
