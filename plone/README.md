@@ -38,7 +38,7 @@ For Docker image usage, see [Plone 6 Documentation](https://6.docs.plone.org/ins
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.2.14-python38`, `5.2-python38`, `5-python38`, `python38`, `5.2.14`, `5.2`, `5`, `latest`](https://github.com/plone/plone.docker/blob/a3a9c7e0c5ca324f488fe7354f00a997398195f7/5.2/5.2.14/debian/Dockerfile)
+**No supported tags**
 
 # Quick reference (cont.)
 
@@ -46,7 +46,7 @@ For Docker image usage, see [Plone 6 Documentation](https://6.docs.plone.org/ins
 	[https://github.com/plone/plone.docker/issues](https://github.com/plone/plone.docker/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/plone/)
+	**No supported architectures**
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/plone/` directory](https://github.com/docker-library/repo-info/blob/master/repos/plone) ([history](https://github.com/docker-library/repo-info/commits/master/repos/plone))  
