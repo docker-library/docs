@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `i386` builds of [the `xwiki` official image](https://hub.docker.com/_/xwiki) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,23 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`17`, `17.8`, `17.8.0`, `17-mysql-tomcat`, `17.8-mysql-tomcat`, `17.8.0-mysql-tomcat`, `mysql-tomcat`, `stable-mysql-tomcat`, `stable-mysql`, `stable`, `latest`](https://github.com/xwiki-contrib/docker-xwiki/blob/2ce93543fbe0ae91515d65b66754ee08d2ed0ebb/17/mysql-tomcat/Dockerfile)
-
--	[`17-postgres-tomcat`, `17.8-postgres-tomcat`, `17.8.0-postgres-tomcat`, `postgres-tomcat`, `stable-postgres-tomcat`, `stable-postgres`](https://github.com/xwiki-contrib/docker-xwiki/blob/2ce93543fbe0ae91515d65b66754ee08d2ed0ebb/17/postgres-tomcat/Dockerfile)
-
--	[`17-mariadb-tomcat`, `17.8-mariadb-tomcat`, `17.8.0-mariadb-tomcat`, `mariadb-tomcat`, `stable-mariadb-tomcat`, `stable-mariadb`](https://github.com/xwiki-contrib/docker-xwiki/blob/2ce93543fbe0ae91515d65b66754ee08d2ed0ebb/17/mariadb-tomcat/Dockerfile)
-
--	[`17.4`, `17.4.5`, `17.4-mysql-tomcat`, `17.4.5-mysql-tomcat`](https://github.com/xwiki-contrib/docker-xwiki/blob/159c502280027ed5edebd0c96b5888b387b466ca/17.4/mysql-tomcat/Dockerfile)
-
--	[`17.4-postgres-tomcat`, `17.4.5-postgres-tomcat`](https://github.com/xwiki-contrib/docker-xwiki/blob/159c502280027ed5edebd0c96b5888b387b466ca/17.4/postgres-tomcat/Dockerfile)
-
--	[`17.4-mariadb-tomcat`, `17.4.5-mariadb-tomcat`](https://github.com/xwiki-contrib/docker-xwiki/blob/159c502280027ed5edebd0c96b5888b387b466ca/17.4/mariadb-tomcat/Dockerfile)
-
--	[`16`, `16.10`, `16.10.12`, `16-mysql-tomcat`, `16.10-mysql-tomcat`, `16.10.12-mysql-tomcat`, `lts-mysql-tomcat`, `lts-mysql`, `lts`](https://github.com/xwiki-contrib/docker-xwiki/blob/78748121cc2e917aa96dd18c45aeb20bc7181d7c/16/mysql-tomcat/Dockerfile)
-
--	[`16-postgres-tomcat`, `16.10-postgres-tomcat`, `16.10.12-postgres-tomcat`, `lts-postgres-tomcat`, `lts-postgres`](https://github.com/xwiki-contrib/docker-xwiki/blob/78748121cc2e917aa96dd18c45aeb20bc7181d7c/16/postgres-tomcat/Dockerfile)
-
--	[`16-mariadb-tomcat`, `16.10-mariadb-tomcat`, `16.10.12-mariadb-tomcat`, `lts-mariadb-tomcat`, `lts-mariadb`](https://github.com/xwiki-contrib/docker-xwiki/blob/78748121cc2e917aa96dd18c45aeb20bc7181d7c/16/mariadb-tomcat/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `i386` ARCHITECTURE
 
 # Quick reference (cont.)
 
