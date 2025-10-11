@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `ppc64le` builds of [the `logstash` official image](https://hub.docker.com/_/logstash) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,15 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.17.10`](https://github.com/elastic/dockerfiles/blob/3861498adce22926e852b1bbec340f159147a47f/logstash/Dockerfile)
-
--	[`8.18.8`](https://github.com/elastic/dockerfiles/blob/6a7937aa369e0368020bcff78884c2b3645c50dd/logstash/Dockerfile)
-
--	[`8.19.5`](https://github.com/elastic/dockerfiles/blob/eadd67c326b8c6c63acff9d8e9fced4cb29b92ed/logstash/Dockerfile)
-
--	[`9.0.8`](https://github.com/elastic/dockerfiles/blob/dd7bdb10765be40ea5cab6c64054df56b65860eb/logstash/Dockerfile)
-
--	[`9.1.5`](https://github.com/elastic/dockerfiles/blob/b73ebec6aca17cdb8504bfcfddd954f772905a74/logstash/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `ppc64le` ARCHITECTURE
 
 # Quick reference (cont.)
 
