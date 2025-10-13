@@ -14,6 +14,12 @@ WARNING:
 
 -->
 
+# **DEPRECATION NOTICE**
+
+As of October 2025, NGINX Unit is archived and unmaintained. The images will not receive release or security updates.
+
+https://github.com/nginx/unit?tab=readme-ov-file#note-this-repository-has-been-archived-there-will-likely-be-no-further-development-at-this-repo-and-security-vulnerabilities-may-be-unaddressed
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,39 +30,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.34.2-go1.25`, `go1.25`, `go1`, `go`](https://github.com/nginx/unit/blob/e89c9e743ec1585fa64206f8757e077e7dd5dbc9/pkg/docker/Dockerfile.go1.25)
-
--	[`1.34.2-go1.24`, `go1.24`](https://github.com/nginx/unit/blob/e89c9e743ec1585fa64206f8757e077e7dd5dbc9/pkg/docker/Dockerfile.go1.24)
-
--	[`1.34.2-jsc11`, `jsc11`, `jsc`](https://github.com/nginx/unit/blob/bda6a949b8a9f3f5ebe0e961ae52756ceb9dbb68/pkg/docker/Dockerfile.jsc11)
-
--	[`1.34.2-node22`, `node22`, `node`](https://github.com/nginx/unit/blob/bda6a949b8a9f3f5ebe0e961ae52756ceb9dbb68/pkg/docker/Dockerfile.node22)
-
--	[`1.34.2-node20`, `node20`](https://github.com/nginx/unit/blob/bda6a949b8a9f3f5ebe0e961ae52756ceb9dbb68/pkg/docker/Dockerfile.node20)
-
--	[`1.34.2-perl5.40`, `perl5.40`, `perl5`, `perl`](https://github.com/nginx/unit/blob/bda6a949b8a9f3f5ebe0e961ae52756ceb9dbb68/pkg/docker/Dockerfile.perl5.40)
-
--	[`1.34.2-perl5.38`, `perl5.38`](https://github.com/nginx/unit/blob/bda6a949b8a9f3f5ebe0e961ae52756ceb9dbb68/pkg/docker/Dockerfile.perl5.38)
-
--	[`1.34.2-php8.4`, `php8.4`, `php8`, `php`](https://github.com/nginx/unit/blob/bda6a949b8a9f3f5ebe0e961ae52756ceb9dbb68/pkg/docker/Dockerfile.php8.4)
-
--	[`1.34.2-php8.3`, `php8.3`](https://github.com/nginx/unit/blob/bda6a949b8a9f3f5ebe0e961ae52756ceb9dbb68/pkg/docker/Dockerfile.php8.3)
-
--	[`1.34.2-python3.13`, `python3.13`, `python3`, `python`](https://github.com/nginx/unit/blob/bda6a949b8a9f3f5ebe0e961ae52756ceb9dbb68/pkg/docker/Dockerfile.python3.13)
-
--	[`1.34.2-python3.12`, `python3.12`](https://github.com/nginx/unit/blob/bda6a949b8a9f3f5ebe0e961ae52756ceb9dbb68/pkg/docker/Dockerfile.python3.12)
-
--	[`1.34.2-ruby3.3`, `ruby3.3`, `ruby3`, `ruby`](https://github.com/nginx/unit/blob/bda6a949b8a9f3f5ebe0e961ae52756ceb9dbb68/pkg/docker/Dockerfile.ruby3.3)
-
--	[`1.34.2-ruby3.2`, `ruby3.2`](https://github.com/nginx/unit/blob/bda6a949b8a9f3f5ebe0e961ae52756ceb9dbb68/pkg/docker/Dockerfile.ruby3.2)
-
--	[`1.34.2-python3.13-slim`, `python-slim`, `python3-slim`, `python3.13-slim`](https://github.com/nginx/unit/blob/bda6a949b8a9f3f5ebe0e961ae52756ceb9dbb68/pkg/docker/Dockerfile.python3.13-slim)
-
--	[`1.34.2-python3.12-slim`, `python3.12-slim`](https://github.com/nginx/unit/blob/bda6a949b8a9f3f5ebe0e961ae52756ceb9dbb68/pkg/docker/Dockerfile.python3.12-slim)
-
--	[`1.34.2-wasm`, `wasm`](https://github.com/nginx/unit/blob/bda6a949b8a9f3f5ebe0e961ae52756ceb9dbb68/pkg/docker/Dockerfile.wasm)
-
--	[`1.34.2-minimal`, `minimal`, `latest`](https://github.com/nginx/unit/blob/bda6a949b8a9f3f5ebe0e961ae52756ceb9dbb68/pkg/docker/Dockerfile.minimal)
+**No supported tags**
 
 # Quick reference (cont.)
 
@@ -64,7 +38,7 @@ WARNING:
 	[https://github.com/nginx/unit/issues](https://github.com/nginx/unit/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/unit/), [`arm64v8`](https://hub.docker.com/r/arm64v8/unit/)
+	**No supported architectures**
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/unit/` directory](https://github.com/docker-library/repo-info/blob/master/repos/unit) ([history](https://github.com/docker-library/repo-info/commits/master/repos/unit))  
@@ -92,18 +66,6 @@ Please see [Unit's website](https://unit.nginx.org/installation/#docker-images) 
 # How to use this image
 
 Please check the [Initial Configuration](https://unit.nginx.org/installation/#initial-configuration) section on Unit's website. Additionally, our [Docker howto](https://unit.nginx.org/howto/docker/) can be of help.
-
-# Image Variants
-
-The `unit` images come in many flavors, each designed for a specific use case.
-
-## `unit:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-## `unit:<version>-slim`
-
-This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `unit`. Unless you are working in an environment where *only* the `unit` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
 
 # License
 
