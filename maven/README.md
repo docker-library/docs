@@ -68,6 +68,10 @@ WARNING:
 
 -	[`4.0.0-rc-4-ibm-semeru-21-noble`](https://github.com/carlossg/docker-maven/blob/3e68954f87f8b9be35921fdd538c4d769362f3bf/ibm-semeru-21-noble-maven-4/Dockerfile)
 
+-	[`3.9.11-ibm-semeru-25-noble`, `3.9-ibm-semeru-25-noble`, `3-ibm-semeru-25-noble`](https://github.com/carlossg/docker-maven/blob/7df425991666b4cf7ce7130aa348aa940c15d9c4/ibm-semeru-25-noble/Dockerfile)
+
+-	[`4.0.0-rc-4-ibm-semeru-25-noble`](https://github.com/carlossg/docker-maven/blob/7df425991666b4cf7ce7130aa348aa940c15d9c4/ibm-semeru-25-noble-maven-4/Dockerfile)
+
 -	[`3.9.11-amazoncorretto-11`, `3.9-amazoncorretto-11`, `3-amazoncorretto-11`](https://github.com/carlossg/docker-maven/blob/6bd15f0c704bad9806b4bbedea6f1faff5194c71/amazoncorretto-11/Dockerfile)
 
 -	[`3.9.11-amazoncorretto-11-al2023`, `3.9-amazoncorretto-11-al2023`, `3-amazoncorretto-11-al2023`](https://github.com/carlossg/docker-maven/blob/6bd15f0c704bad9806b4bbedea6f1faff5194c71/amazoncorretto-11-al2023/Dockerfile)
