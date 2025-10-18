@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `i386` builds of [the `fedora` official image](https://hub.docker.com/_/fedora) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,13 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`41`](https://github.com/fedora-cloud/docker-brew-fedora/blob/fba75f9783b458ac342cc675892688169f6d5f9c/x86_64/Dockerfile)
-
--	[`42`, `latest`](https://github.com/fedora-cloud/docker-brew-fedora/blob/b13b13dd4561da14a4de975c2ec754cb3fda5a27/x86_64/Dockerfile)
-
--	[`43`](https://github.com/fedora-cloud/docker-brew-fedora/blob/d256792f0edba99d8c16d059c56709bff135a26b/x86_64/Dockerfile)
-
--	[`44`, `rawhide`](https://github.com/fedora-cloud/docker-brew-fedora/blob/7c36ff8d21c058cce31ee9e25f0c9c0537369c2f/x86_64/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `i386` ARCHITECTURE
 
 # Quick reference (cont.)
 
@@ -57,11 +53,11 @@ This image serves as the `official Fedora image` for the [Fedora Distribution](h
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/7925a7131128930eed07077f9369b7ca52e0fd02/fedora/logo.png)
 
-The `fedora:latest` tag will always point to the latest stable release.
+The `i386/fedora:latest` tag will always point to the latest stable release.
 
 This image is a relatively small footprint in comparison to a standard Fedora installation. This image is generated in the [Fedora Build System](http://koji.fedoraproject.org/koji/) and is built from [this kickstart file](https://pagure.io/fedora-kickstarts/blob/main/f/fedora-container-base.ks).
 
-[Fedora Rawhide](https://fedoraproject.org/wiki/Releases/Rawhide) is available via `fedora:rawhide` and any specific version of Fedora as `fedora:$version` (example: `fedora:23`).
+[Fedora Rawhide](https://fedoraproject.org/wiki/Releases/Rawhide) is available via `i386/fedora:rawhide` and any specific version of Fedora as `i386/fedora:$version` (example: `i386/fedora:23`).
 
 # License
 
