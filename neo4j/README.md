@@ -17,10 +17,10 @@ WARNING:
 # Quick reference
 
 -	**Maintained by**:  
-	[Neo4j](https://github.com/neo4j/docker-neo4j)
+	[Neo4j](https://www.neo4j.com)
 
 -	**Where to get help**:  
-	[Neo4j Community Forums](https://community.neo4j.com)
+	[Neo4j Community Forums](https://community.neo4j.com), [Neo4j Docker Documentation](https://neo4j.com/docs/operations-manual/current/docker/), [Discord](https://discord.gg/neo4j)
 
 # Supported tags and respective `Dockerfile` links
 
@@ -65,7 +65,7 @@ WARNING:
 
 # What is Neo4j?
 
-Neo4j is the world's leading graph database, with native graph storage and processing. You can learn more [here](http://neo4j.com/developer).
+Neo4j is the world's leading graph database, with native graph storage and processing. You can learn more [here](http://neo4j.com).
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/56823e63d5b6dd7ddbb9d5d3c4a8947778055d8e/neo4j/logo.png)
 
@@ -80,11 +80,11 @@ docker run \
     neo4j
 ```
 
-which allows you to access neo4j through your browser at [http://localhost:7474](http://localhost:7474).
-
 This binds two ports (`7474` and `7687`) for HTTP and Bolt access to the Neo4j API. A volume is bound to `/data` to allow the database to be persisted outside the container.
 
-By default, this requires you to login with `neo4j/neo4j` and change the password. You can, for development purposes, disable authentication by passing `--env=NEO4J_AUTH=none` to docker run.
+Once running, you can use the [Neo4j Aura console](https://console-preview.neo4j.io/self-managed) which includes graph tools for visualizations, data exploration, and monitoring for free. No subscription is required. Simply create a self-managed instance and connect to `http://localhost:7474`. Alternatively, you can use the Neo4j Browser, a web-based user interface for interacting with Neo4j that is included with the Neo4j installation. To access the Neo4j Browser, open a web browser and navigate to `http://localhost:7474`.
+
+Your default credentials are `neo4j`/`neo4j`. You will be prompted to change the password upon first login. For development purposes, you can disable authentication by passing `--env=NEO4J_AUTH=none` to docker run.
 
 # Documentation
 
