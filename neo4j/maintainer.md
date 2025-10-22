@@ -1,1 +1,1 @@
-[Neo4j](%%GITHUB-REPO%%)
+-	[Neo4j](https://www.neo4j.com)
