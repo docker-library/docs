@@ -24,15 +24,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.17.10`](https://github.com/elastic/dockerfiles/blob/3861498adce22926e852b1bbec340f159147a47f/logstash/Dockerfile)
-
 -	[`8.18.8`](https://github.com/elastic/dockerfiles/blob/6a7937aa369e0368020bcff78884c2b3645c50dd/logstash/Dockerfile)
 
--	[`8.19.5`](https://github.com/elastic/dockerfiles/blob/eadd67c326b8c6c63acff9d8e9fced4cb29b92ed/logstash/Dockerfile)
+-	[`8.19.6`](https://github.com/elastic/dockerfiles/blob/f45f0456d48e4f10e9088dad6a7b7e82d16d5bb6/logstash/Dockerfile)
 
 -	[`9.0.8`](https://github.com/elastic/dockerfiles/blob/dd7bdb10765be40ea5cab6c64054df56b65860eb/logstash/Dockerfile)
 
--	[`9.1.5`](https://github.com/elastic/dockerfiles/blob/b73ebec6aca17cdb8504bfcfddd954f772905a74/logstash/Dockerfile)
+-	[`9.1.6`](https://github.com/elastic/dockerfiles/blob/c42265d6748c905466afb341fc5455ab8525fae6/logstash/Dockerfile)
 
 # Quick reference (cont.)
 
