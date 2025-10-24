@@ -28,9 +28,9 @@ WARNING:
 
 -	[`3.3-dev10-alpine`, `3.3-dev-alpine`, `3.3-dev10-alpine3.22`, `3.3-dev-alpine3.22`](https://github.com/docker-library/haproxy/blob/be4757e151254dc143f8dfb7cc25b39df8a01543/3.3/alpine/Dockerfile)
 
--	[`3.2.6`, `3.2`, `latest`, `lts`, `3.2.6-trixie`, `3.2-trixie`, `trixie`, `lts-trixie`](https://github.com/docker-library/haproxy/blob/04b2168ff76f90727c02f01cb719f655e768f6fd/3.2/Dockerfile)
+-	[`3.2.7`, `3.2`, `latest`, `lts`, `3.2.7-trixie`, `3.2-trixie`, `trixie`, `lts-trixie`](https://github.com/docker-library/haproxy/blob/e4c0de0b54fc42dd87f22cfb61aad93562dad787/3.2/Dockerfile)
 
--	[`3.2.6-alpine`, `3.2-alpine`, `alpine`, `lts-alpine`, `3.2.6-alpine3.22`, `3.2-alpine3.22`, `alpine3.22`, `lts-alpine3.22`](https://github.com/docker-library/haproxy/blob/04b2168ff76f90727c02f01cb719f655e768f6fd/3.2/alpine/Dockerfile)
+-	[`3.2.7-alpine`, `3.2-alpine`, `alpine`, `lts-alpine`, `3.2.7-alpine3.22`, `3.2-alpine3.22`, `alpine3.22`, `lts-alpine3.22`](https://github.com/docker-library/haproxy/blob/e4c0de0b54fc42dd87f22cfb61aad93562dad787/3.2/alpine/Dockerfile)
 
 -	[`3.1.9`, `3.1`, `3.1.9-trixie`, `3.1-trixie`](https://github.com/docker-library/haproxy/blob/0d89f493da93a6e40d26926929cf12bf95fbec5b/3.1/Dockerfile)
 
