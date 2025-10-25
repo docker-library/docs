@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm64v8` builds of [the `photon` official image](https://hub.docker.com/_/photon) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,11 +26,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.0`, `5.0-20251011`, `latest`](https://github.com/vmware/photon-docker-image/blob/8921fff02b3b2ce4bbc6116b4c6b4c708562aa96/docker/Dockerfile)
+-	[`5.0`, `5.0-20251011`, `latest`](https://github.com/vmware/photon-docker-image/blob/eafb1cc548b25fdb1e4061dcfa1027b5d0e45e4a/docker/Dockerfile)
 
--	[`4.0`, `4.0-20251012`](https://github.com/vmware/photon-docker-image/blob/75d6173bc370ace82b24de6e7319483fd8e54869/docker/Dockerfile)
+-	[`4.0`, `4.0-20251012`](https://github.com/vmware/photon-docker-image/blob/81e7d951ccf2cc78baf3adc4df775b3ff1a34e28/docker/Dockerfile)
 
--	[`3.0`, `3.0-20250316`](https://github.com/vmware/photon-docker-image/blob/f848d5df815c0afe76b42a608d49df0e87af51c2/docker/Dockerfile)
+-	[`3.0`, `3.0-20250316`](https://github.com/vmware/photon-docker-image/blob/93a0c62b9b7790fc27d1413f65073ef1a2894bab/docker/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -61,7 +63,7 @@ See the [FAQ](http://vmware.github.io/photon/assets/files/photon_faqs.pdf) for m
 
 ## How to use these images
 
-Photon OS images are intended for use in the **FROM** field of an application's `Dockerfile`. For example, to use VMware Photon 1.0GA as the base of an image, specify `FROM photon:1.0GA`.
+Photon OS images are intended for use in the **FROM** field of an application's `Dockerfile`. For example, to use VMware Photon 1.0GA as the base of an image, specify `FROM arm64v8/photon:1.0GA`.
 
 ## Support
 
