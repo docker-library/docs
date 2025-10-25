@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `ppc64le` builds of [the `kibana` official image](https://hub.docker.com/_/kibana) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,15 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.17.29`](https://github.com/elastic/dockerfiles/blob/28b876f2aaba7bc27d76a1acd55cbc8ada9b5dea/kibana/Dockerfile)
-
--	[`8.18.8`](https://github.com/elastic/dockerfiles/blob/6a7937aa369e0368020bcff78884c2b3645c50dd/kibana/Dockerfile)
-
--	[`8.19.6`](https://github.com/elastic/dockerfiles/blob/f45f0456d48e4f10e9088dad6a7b7e82d16d5bb6/kibana/Dockerfile)
-
--	[`9.1.6`](https://github.com/elastic/dockerfiles/blob/c42265d6748c905466afb341fc5455ab8525fae6/kibana/Dockerfile)
-
--	[`9.2.0`](https://github.com/elastic/dockerfiles/blob/a7d4b91a8cad17faf28659ceba071e92e03991d3/kibana/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `ppc64le` ARCHITECTURE
 
 # Quick reference (cont.)
 
