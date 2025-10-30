@@ -24,7 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.0.5`, `5.0`, `5`, `latest`, `5.0.5-jammy`, `5.0-jammy`, `5-jammy`, `jammy`](https://github.com/docker-library/cassandra/blob/793ea6b2a8097d629252fe77585775443b53e4c3/5.0/Dockerfile)
+-	[`5.0.6`, `5.0`, `5`, `latest`, `5.0.6-jammy`, `5.0-jammy`, `5-jammy`, `jammy`](https://github.com/docker-library/cassandra/blob/6d75217eb8c69b8d9dd94766b781d829a56fbd2d/5.0/Dockerfile)
 
 -	[`4.1.10`, `4.1`, `4`, `4.1.10-jammy`, `4.1-jammy`, `4-jammy`](https://github.com/docker-library/cassandra/blob/793ea6b2a8097d629252fe77585775443b53e4c3/4.1/Dockerfile)
 
