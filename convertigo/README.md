@@ -24,7 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.3.9`, `8.3`, `latest`](https://github.com/convertigo/convertigo/blob/a22b2bd68b46e4e0872aa3bf5ecf28d71ebdb342/docker/default/Dockerfile)
+-	[`8.3.10`, `8.3`, `latest`](https://github.com/convertigo/convertigo/blob/627b70f12e7af2b84bbdb9004c7e338802ee6567/docker/default/Dockerfile)
 
 # Quick reference (cont.)
 
