@@ -29,13 +29,15 @@ To quickly run a demo instance, see Using Docker on the [Try Out SonarQube](http
 
 ## Installation
 
-> **Multi-platform support**: Starting from SonarQube `9.9` LTS, the docker images support running both on `amd64` architecture and `arm64`-based Apple Silicon (M1).
+> **Multi-platform support**: Starting from SonarQube `9.9`, the docker images support running both on `amd64` architecture and `arm64`-based Apple Silicon (M1).
 
 For installation instructions, see Installing the Server from the Docker Image on the [Install the Server](https://docs.sonarsource.com/sonarqube-server/latest/setup-and-upgrade/install-the-server/installing-sonarqube-from-docker/) page.
 
 To run a cluster with the SonarQube Server Data Center Edition, please refer to Installing SonarQube Server from the Docker Image on the [Install the Server as a Cluster](https://docs.sonarsource.com/sonarqube-server/latest/setup-and-upgrade/install-the-server-as-a-cluster/) page.
 
-> The `lts` tag on Docker images is replaced with every new LTS release. If you want to avoid any automatic major upgrades, we recommend using the corresponding `9.9-<edition>` tag instead of `lts-<edition>`.
+### Long-Term Active (LTA) versions
+
+[LTA](https://www.sonarsource.com/products/sonarqube/downloads/lta/) refers to the version of SonarQube Server that will stay active for a longer period of time. Currently, `2025.4` is the latest LTA version and should be used when LTA version is preferred. To install the latest LTA, you can pull one of the `2025.4-lta-<edition>` tags.
 
 ## Configuration
 
