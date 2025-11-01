@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v6` builds of [the `mongo-express` official image](https://hub.docker.com/_/mongo-express) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,7 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
-**No supported tags**
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v6` ARCHITECTURE
 
 # Quick reference (cont.)
 
@@ -56,7 +58,7 @@ mongo-express is a web-based MongoDB admin interface written in Node.js, Express
 # How to use this image
 
 ```console
-$ docker run --network some-network -e ME_CONFIG_MONGODB_SERVER=some-mongo -p 8081:8081 mongo-express
+$ docker run --network some-network -e ME_CONFIG_MONGODB_SERVER=some-mongo -p 8081:8081 arm32v6/mongo-express
 ```
 
 Then you can hit `http://localhost:8081` or `http://host-ip:8081` in your browser.
@@ -108,7 +110,7 @@ $ docker run -it --rm \
     -e ME_CONFIG_MONGODB_SERVER="web_db_1" \
     -e ME_CONFIG_BASICAUTH_USERNAME="user" \
     -e ME_CONFIG_BASICAUTH_PASSWORD="fairly long password" \
-    mongo-express
+    arm32v6/mongo-express
 ```
 
 This example links to a container name typical of `docker compose`, changes the editor's color theme, and enables basic authentication.
