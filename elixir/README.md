@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `ppc64le` builds of [the `elixir` official image](https://hub.docker.com/_/elixir) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -48,12 +50,6 @@ WARNING:
 
 -	[`1.18.4-alpine`, `1.18-alpine`, `1.18.4-otp-28-alpine`, `1.18-otp-28-alpine`](https://github.com/erlef/docker-elixir/blob/1e80f1b239228598d4d086882e92a9cfe585c1b2/1.18/alpine/Dockerfile)
 
--	[`1.18.4-otp-25`, `1.18-otp-25`](https://github.com/erlef/docker-elixir/blob/d3c21f12232230e6d199446ccfc4fc34e02fc060/1.18/otp-25/Dockerfile)
-
--	[`1.18.4-otp-25-alpine`, `1.18-otp-25-alpine`](https://github.com/erlef/docker-elixir/blob/d3c21f12232230e6d199446ccfc4fc34e02fc060/1.18/otp-25-alpine/Dockerfile)
-
--	[`1.18.4-otp-25-slim`, `1.18-otp-25-slim`](https://github.com/erlef/docker-elixir/blob/d3c21f12232230e6d199446ccfc4fc34e02fc060/1.18/otp-25-slim/Dockerfile)
-
 -	[`1.18.4-otp-26`, `1.18-otp-26`](https://github.com/erlef/docker-elixir/blob/d3c21f12232230e6d199446ccfc4fc34e02fc060/1.18/otp-26/Dockerfile)
 
 -	[`1.18.4-otp-26-alpine`, `1.18-otp-26-alpine`](https://github.com/erlef/docker-elixir/blob/d3c21f12232230e6d199446ccfc4fc34e02fc060/1.18/otp-26-alpine/Dockerfile)
@@ -72,12 +68,6 @@ WARNING:
 
 -	[`1.17.3-alpine`, `1.17-alpine`, `1.17.3-otp-27-alpine`, `1.17-otp-27-alpine`](https://github.com/erlef/docker-elixir/blob/70cad0543fc1781daa678c2a8c44bc87a1c38767/1.17/alpine/Dockerfile)
 
--	[`1.17.3-otp-25`, `1.17-otp-25`](https://github.com/erlef/docker-elixir/blob/70cad0543fc1781daa678c2a8c44bc87a1c38767/1.17/otp-25/Dockerfile)
-
--	[`1.17.3-otp-25-alpine`, `1.17-otp-25-alpine`](https://github.com/erlef/docker-elixir/blob/70cad0543fc1781daa678c2a8c44bc87a1c38767/1.17/otp-25-alpine/Dockerfile)
-
--	[`1.17.3-otp-25-slim`, `1.17-otp-25-slim`](https://github.com/erlef/docker-elixir/blob/70cad0543fc1781daa678c2a8c44bc87a1c38767/1.17/otp-25-slim/Dockerfile)
-
 -	[`1.17.3-otp-26`, `1.17-otp-26`](https://github.com/erlef/docker-elixir/blob/70cad0543fc1781daa678c2a8c44bc87a1c38767/1.17/otp-26/Dockerfile)
 
 -	[`1.17.3-otp-26-alpine`, `1.17-otp-26-alpine`](https://github.com/erlef/docker-elixir/blob/70cad0543fc1781daa678c2a8c44bc87a1c38767/1.17/otp-26-alpine/Dockerfile)
@@ -90,35 +80,11 @@ WARNING:
 
 -	[`1.16.3-alpine`, `1.16-alpine`, `1.16.3-otp-26-alpine`, `1.16-otp-26-alpine`](https://github.com/erlef/docker-elixir/blob/f749dfb8a5b1e6945b2369e143107b9ad3b16664/1.16/alpine/Dockerfile)
 
--	[`1.16.3-otp-24`, `1.16-otp-24`](https://github.com/erlef/docker-elixir/blob/f749dfb8a5b1e6945b2369e143107b9ad3b16664/1.16/otp-24/Dockerfile)
-
--	[`1.16.3-otp-24-alpine`, `1.16-otp-24-alpine`](https://github.com/erlef/docker-elixir/blob/f749dfb8a5b1e6945b2369e143107b9ad3b16664/1.16/otp-24-alpine/Dockerfile)
-
--	[`1.16.3-otp-24-slim`, `1.16-otp-24-slim`](https://github.com/erlef/docker-elixir/blob/f749dfb8a5b1e6945b2369e143107b9ad3b16664/1.16/otp-24-slim/Dockerfile)
-
--	[`1.16.3-otp-25`, `1.16-otp-25`](https://github.com/erlef/docker-elixir/blob/f749dfb8a5b1e6945b2369e143107b9ad3b16664/1.16/otp-25/Dockerfile)
-
--	[`1.16.3-otp-25-alpine`, `1.16-otp-25-alpine`](https://github.com/erlef/docker-elixir/blob/f749dfb8a5b1e6945b2369e143107b9ad3b16664/1.16/otp-25-alpine/Dockerfile)
-
--	[`1.16.3-otp-25-slim`, `1.16-otp-25-slim`](https://github.com/erlef/docker-elixir/blob/f749dfb8a5b1e6945b2369e143107b9ad3b16664/1.16/otp-25-slim/Dockerfile)
-
 -	[`1.15.8`, `1.15`, `1.15.8-otp-26`, `1.15-otp-26`](https://github.com/erlef/docker-elixir/blob/f749dfb8a5b1e6945b2369e143107b9ad3b16664/1.15/Dockerfile)
 
 -	[`1.15.8-slim`, `1.15-slim`, `1.15.8-otp-26-slim`, `1.15-otp-26-slim`](https://github.com/erlef/docker-elixir/blob/f749dfb8a5b1e6945b2369e143107b9ad3b16664/1.15/slim/Dockerfile)
 
 -	[`1.15.8-alpine`, `1.15-alpine`, `1.15.8-otp-26-alpine`, `1.15-otp-26-alpine`](https://github.com/erlef/docker-elixir/blob/f749dfb8a5b1e6945b2369e143107b9ad3b16664/1.15/alpine/Dockerfile)
-
--	[`1.15.8-otp-24`, `1.15-otp-24`](https://github.com/erlef/docker-elixir/blob/f749dfb8a5b1e6945b2369e143107b9ad3b16664/1.15/otp-24/Dockerfile)
-
--	[`1.15.8-otp-24-alpine`, `1.15-otp-24-alpine`](https://github.com/erlef/docker-elixir/blob/f749dfb8a5b1e6945b2369e143107b9ad3b16664/1.15/otp-24-alpine/Dockerfile)
-
--	[`1.15.8-otp-24-slim`, `1.15-otp-24-slim`](https://github.com/erlef/docker-elixir/blob/f749dfb8a5b1e6945b2369e143107b9ad3b16664/1.15/otp-24-slim/Dockerfile)
-
--	[`1.15.8-otp-25`, `1.15-otp-25`](https://github.com/erlef/docker-elixir/blob/f749dfb8a5b1e6945b2369e143107b9ad3b16664/1.15/otp-25/Dockerfile)
-
--	[`1.15.8-otp-25-alpine`, `1.15-otp-25-alpine`](https://github.com/erlef/docker-elixir/blob/f749dfb8a5b1e6945b2369e143107b9ad3b16664/1.15/otp-25-alpine/Dockerfile)
-
--	[`1.15.8-otp-25-slim`, `1.15-otp-25-slim`](https://github.com/erlef/docker-elixir/blob/f749dfb8a5b1e6945b2369e143107b9ad3b16664/1.15/otp-25-slim/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -154,14 +120,14 @@ Elixir leverages the Erlang VM, known for running low-latency, distributed and f
 ## Run it as the REPL
 
 ```console
-➸ docker run -it --rm elixir
+➸ docker run -it --rm ppc64le/elixir
 Erlang/OTP 18 [erts-7.2.1] [source] [64-bit] [smp:8:8] [async-threads:10] [hipe] [kernel-poll:false]
 
 Interactive Elixir (1.2.1) - press Ctrl+C to exit (type h() ENTER for help)
 iex(1)> System.version
 "1.2.1"
 iex(2)>
-➸ docker run -it --rm -h elixir.local elixir iex --sname snode
+➸ docker run -it --rm -h elixir.local ppc64le/elixir iex --sname snode
 Erlang/OTP 18 [erts-7.2.1] [source] [64-bit] [smp:8:8] [async-threads:10] [hipe] [kernel-poll:false]
 
 Interactive Elixir (1.2.1) - press Ctrl+C to exit (type h() ENTER for help)
@@ -175,22 +141,22 @@ iex(snode@elixir)2> :c.uptime
 ## Run a single Elixir exs script
 
 ```console
-$ docker run -it --rm --name elixir-inst1 -v "$PWD":/usr/src/myapp -w /usr/src/myapp elixir elixir your-escript.exs
+$ docker run -it --rm --name elixir-inst1 -v "$PWD":/usr/src/myapp -w /usr/src/myapp ppc64le/elixir elixir your-escript.exs
 ```
 
 # Image Variants
 
-The `elixir` images come in many flavors, each designed for a specific use case.
+The `ppc64le/elixir` images come in many flavors, each designed for a specific use case.
 
-## `elixir:<version>`
+## `ppc64le/elixir:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `elixir:<version>-slim`
+## `ppc64le/elixir:<version>-slim`
 
-This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `elixir`. Unless you are working in an environment where *only* the `elixir` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
+This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `ppc64le/elixir`. Unless you are working in an environment where *only* the `ppc64le/elixir` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
 
-## `elixir:<version>-alpine`
+## `ppc64le/elixir:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
