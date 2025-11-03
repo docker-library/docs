@@ -28,120 +28,108 @@ WARNING:
 
 ## Simple Tags
 
--	[`1.1.0-python3.14-trixie`, `1.1-python3.14-trixie`, `1-python3.14-trixie`, `python3.14-trixie`, `1.1.0-trixie`, `1.1-trixie`, `1-trixie`, `trixie`](https://github.com/hylang/docker-hylang/blob/d0d26a7ca41e5b168d3af6b6a578ddb81b84a8df/latest/python3.14-trixie/Dockerfile)
+-	[`1.1.0-python3.14-trixie`, `1.1-python3.14-trixie`, `1-python3.14-trixie`, `python3.14-trixie`, `1.1.0-trixie`, `1.1-trixie`, `1-trixie`, `trixie`](https://github.com/hylang/docker-hylang/blob/fbe7fe82f03ec30b2aab666af623405f45357626/latest/python3.14-trixie/Dockerfile)
 
--	[`1.1.0-python3.14-bookworm`, `1.1-python3.14-bookworm`, `1-python3.14-bookworm`, `python3.14-bookworm`, `1.1.0-bookworm`, `1.1-bookworm`, `1-bookworm`, `bookworm`](https://github.com/hylang/docker-hylang/blob/d0d26a7ca41e5b168d3af6b6a578ddb81b84a8df/latest/python3.14-bookworm/Dockerfile)
+-	[`1.1.0-python3.14-bookworm`, `1.1-python3.14-bookworm`, `1-python3.14-bookworm`, `python3.14-bookworm`, `1.1.0-bookworm`, `1.1-bookworm`, `1-bookworm`, `bookworm`](https://github.com/hylang/docker-hylang/blob/fbe7fe82f03ec30b2aab666af623405f45357626/latest/python3.14-bookworm/Dockerfile)
 
--	[`1.1.0-python3.14-alpine3.22`, `1.1-python3.14-alpine3.22`, `1-python3.14-alpine3.22`, `python3.14-alpine3.22`, `1.1.0-python3.14-alpine`, `1.1-python3.14-alpine`, `1-python3.14-alpine`, `python3.14-alpine`, `1.1.0-alpine3.22`, `1.1-alpine3.22`, `1-alpine3.22`, `alpine3.22`, `1.1.0-alpine`, `1.1-alpine`, `1-alpine`, `alpine`](https://github.com/hylang/docker-hylang/blob/d0d26a7ca41e5b168d3af6b6a578ddb81b84a8df/latest/python3.14-alpine3.22/Dockerfile)
+-	[`1.1.0-python3.14-alpine3.22`, `1.1-python3.14-alpine3.22`, `1-python3.14-alpine3.22`, `python3.14-alpine3.22`, `1.1.0-python3.14-alpine`, `1.1-python3.14-alpine`, `1-python3.14-alpine`, `python3.14-alpine`, `1.1.0-alpine3.22`, `1.1-alpine3.22`, `1-alpine3.22`, `alpine3.22`, `1.1.0-alpine`, `1.1-alpine`, `1-alpine`, `alpine`](https://github.com/hylang/docker-hylang/blob/fbe7fe82f03ec30b2aab666af623405f45357626/latest/python3.14-alpine3.22/Dockerfile)
 
--	[`1.1.0-python3.14-alpine3.21`, `1.1-python3.14-alpine3.21`, `1-python3.14-alpine3.21`, `python3.14-alpine3.21`, `1.1.0-alpine3.21`, `1.1-alpine3.21`, `1-alpine3.21`, `alpine3.21`](https://github.com/hylang/docker-hylang/blob/d0d26a7ca41e5b168d3af6b6a578ddb81b84a8df/latest/python3.14-alpine3.21/Dockerfile)
+-	[`1.1.0-python3.14-alpine3.21`, `1.1-python3.14-alpine3.21`, `1-python3.14-alpine3.21`, `python3.14-alpine3.21`, `1.1.0-alpine3.21`, `1.1-alpine3.21`, `1-alpine3.21`, `alpine3.21`](https://github.com/hylang/docker-hylang/blob/fbe7fe82f03ec30b2aab666af623405f45357626/latest/python3.14-alpine3.21/Dockerfile)
 
--	[`1.1.0-python3.14-windowsservercore-ltsc2025`, `1.1-python3.14-windowsservercore-ltsc2025`, `1-python3.14-windowsservercore-ltsc2025`, `python3.14-windowsservercore-ltsc2025`, `1.1.0-windowsservercore-ltsc2025`, `1.1-windowsservercore-ltsc2025`, `1-windowsservercore-ltsc2025`, `windowsservercore-ltsc2025`](https://github.com/hylang/docker-hylang/blob/d0d26a7ca41e5b168d3af6b6a578ddb81b84a8df/latest/python3.14-windowsservercore-ltsc2025/Dockerfile)
+-	[`1.1.0-python3.14-windowsservercore-ltsc2025`, `1.1-python3.14-windowsservercore-ltsc2025`, `1-python3.14-windowsservercore-ltsc2025`, `python3.14-windowsservercore-ltsc2025`, `1.1.0-windowsservercore-ltsc2025`, `1.1-windowsservercore-ltsc2025`, `1-windowsservercore-ltsc2025`, `windowsservercore-ltsc2025`](https://github.com/hylang/docker-hylang/blob/fbe7fe82f03ec30b2aab666af623405f45357626/latest/python3.14-windowsservercore-ltsc2025/Dockerfile)
 
--	[`1.1.0-python3.14-windowsservercore-ltsc2022`, `1.1-python3.14-windowsservercore-ltsc2022`, `1-python3.14-windowsservercore-ltsc2022`, `python3.14-windowsservercore-ltsc2022`, `1.1.0-windowsservercore-ltsc2022`, `1.1-windowsservercore-ltsc2022`, `1-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`](https://github.com/hylang/docker-hylang/blob/d0d26a7ca41e5b168d3af6b6a578ddb81b84a8df/latest/python3.14-windowsservercore-ltsc2022/Dockerfile)
+-	[`1.1.0-python3.14-windowsservercore-ltsc2022`, `1.1-python3.14-windowsservercore-ltsc2022`, `1-python3.14-windowsservercore-ltsc2022`, `python3.14-windowsservercore-ltsc2022`, `1.1.0-windowsservercore-ltsc2022`, `1.1-windowsservercore-ltsc2022`, `1-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`](https://github.com/hylang/docker-hylang/blob/fbe7fe82f03ec30b2aab666af623405f45357626/latest/python3.14-windowsservercore-ltsc2022/Dockerfile)
 
--	[`1.1.0-python3.13-trixie`, `1.1-python3.13-trixie`, `1-python3.13-trixie`, `python3.13-trixie`](https://github.com/hylang/docker-hylang/blob/d0d26a7ca41e5b168d3af6b6a578ddb81b84a8df/latest/python3.13-trixie/Dockerfile)
+-	[`1.1.0-python3.13-trixie`, `1.1-python3.13-trixie`, `1-python3.13-trixie`, `python3.13-trixie`](https://github.com/hylang/docker-hylang/blob/fbe7fe82f03ec30b2aab666af623405f45357626/latest/python3.13-trixie/Dockerfile)
 
--	[`1.1.0-python3.13-bookworm`, `1.1-python3.13-bookworm`, `1-python3.13-bookworm`, `python3.13-bookworm`](https://github.com/hylang/docker-hylang/blob/d0d26a7ca41e5b168d3af6b6a578ddb81b84a8df/latest/python3.13-bookworm/Dockerfile)
+-	[`1.1.0-python3.13-bookworm`, `1.1-python3.13-bookworm`, `1-python3.13-bookworm`, `python3.13-bookworm`](https://github.com/hylang/docker-hylang/blob/fbe7fe82f03ec30b2aab666af623405f45357626/latest/python3.13-bookworm/Dockerfile)
 
--	[`1.1.0-python3.13-alpine3.22`, `1.1-python3.13-alpine3.22`, `1-python3.13-alpine3.22`, `python3.13-alpine3.22`, `1.1.0-python3.13-alpine`, `1.1-python3.13-alpine`, `1-python3.13-alpine`, `python3.13-alpine`](https://github.com/hylang/docker-hylang/blob/d0d26a7ca41e5b168d3af6b6a578ddb81b84a8df/latest/python3.13-alpine3.22/Dockerfile)
+-	[`1.1.0-python3.13-alpine3.22`, `1.1-python3.13-alpine3.22`, `1-python3.13-alpine3.22`, `python3.13-alpine3.22`, `1.1.0-python3.13-alpine`, `1.1-python3.13-alpine`, `1-python3.13-alpine`, `python3.13-alpine`](https://github.com/hylang/docker-hylang/blob/fbe7fe82f03ec30b2aab666af623405f45357626/latest/python3.13-alpine3.22/Dockerfile)
 
--	[`1.1.0-python3.13-alpine3.21`, `1.1-python3.13-alpine3.21`, `1-python3.13-alpine3.21`, `python3.13-alpine3.21`](https://github.com/hylang/docker-hylang/blob/d0d26a7ca41e5b168d3af6b6a578ddb81b84a8df/latest/python3.13-alpine3.21/Dockerfile)
+-	[`1.1.0-python3.13-alpine3.21`, `1.1-python3.13-alpine3.21`, `1-python3.13-alpine3.21`, `python3.13-alpine3.21`](https://github.com/hylang/docker-hylang/blob/fbe7fe82f03ec30b2aab666af623405f45357626/latest/python3.13-alpine3.21/Dockerfile)
 
--	[`1.1.0-python3.13-windowsservercore-ltsc2025`, `1.1-python3.13-windowsservercore-ltsc2025`, `1-python3.13-windowsservercore-ltsc2025`, `python3.13-windowsservercore-ltsc2025`](https://github.com/hylang/docker-hylang/blob/d0d26a7ca41e5b168d3af6b6a578ddb81b84a8df/latest/python3.13-windowsservercore-ltsc2025/Dockerfile)
+-	[`1.1.0-python3.13-windowsservercore-ltsc2025`, `1.1-python3.13-windowsservercore-ltsc2025`, `1-python3.13-windowsservercore-ltsc2025`, `python3.13-windowsservercore-ltsc2025`](https://github.com/hylang/docker-hylang/blob/fbe7fe82f03ec30b2aab666af623405f45357626/latest/python3.13-windowsservercore-ltsc2025/Dockerfile)
 
--	[`1.1.0-python3.13-windowsservercore-ltsc2022`, `1.1-python3.13-windowsservercore-ltsc2022`, `1-python3.13-windowsservercore-ltsc2022`, `python3.13-windowsservercore-ltsc2022`](https://github.com/hylang/docker-hylang/blob/d0d26a7ca41e5b168d3af6b6a578ddb81b84a8df/latest/python3.13-windowsservercore-ltsc2022/Dockerfile)
+-	[`1.1.0-python3.13-windowsservercore-ltsc2022`, `1.1-python3.13-windowsservercore-ltsc2022`, `1-python3.13-windowsservercore-ltsc2022`, `python3.13-windowsservercore-ltsc2022`](https://github.com/hylang/docker-hylang/blob/fbe7fe82f03ec30b2aab666af623405f45357626/latest/python3.13-windowsservercore-ltsc2022/Dockerfile)
 
--	[`1.1.0-python3.12-trixie`, `1.1-python3.12-trixie`, `1-python3.12-trixie`, `python3.12-trixie`](https://github.com/hylang/docker-hylang/blob/d0d26a7ca41e5b168d3af6b6a578ddb81b84a8df/latest/python3.12-trixie/Dockerfile)
+-	[`1.1.0-python3.12-trixie`, `1.1-python3.12-trixie`, `1-python3.12-trixie`, `python3.12-trixie`](https://github.com/hylang/docker-hylang/blob/fbe7fe82f03ec30b2aab666af623405f45357626/latest/python3.12-trixie/Dockerfile)
 
--	[`1.1.0-python3.12-bookworm`, `1.1-python3.12-bookworm`, `1-python3.12-bookworm`, `python3.12-bookworm`](https://github.com/hylang/docker-hylang/blob/d0d26a7ca41e5b168d3af6b6a578ddb81b84a8df/latest/python3.12-bookworm/Dockerfile)
+-	[`1.1.0-python3.12-bookworm`, `1.1-python3.12-bookworm`, `1-python3.12-bookworm`, `python3.12-bookworm`](https://github.com/hylang/docker-hylang/blob/fbe7fe82f03ec30b2aab666af623405f45357626/latest/python3.12-bookworm/Dockerfile)
 
--	[`1.1.0-python3.12-alpine3.22`, `1.1-python3.12-alpine3.22`, `1-python3.12-alpine3.22`, `python3.12-alpine3.22`, `1.1.0-python3.12-alpine`, `1.1-python3.12-alpine`, `1-python3.12-alpine`, `python3.12-alpine`](https://github.com/hylang/docker-hylang/blob/d0d26a7ca41e5b168d3af6b6a578ddb81b84a8df/latest/python3.12-alpine3.22/Dockerfile)
+-	[`1.1.0-python3.12-alpine3.22`, `1.1-python3.12-alpine3.22`, `1-python3.12-alpine3.22`, `python3.12-alpine3.22`, `1.1.0-python3.12-alpine`, `1.1-python3.12-alpine`, `1-python3.12-alpine`, `python3.12-alpine`](https://github.com/hylang/docker-hylang/blob/fbe7fe82f03ec30b2aab666af623405f45357626/latest/python3.12-alpine3.22/Dockerfile)
 
--	[`1.1.0-python3.12-alpine3.21`, `1.1-python3.12-alpine3.21`, `1-python3.12-alpine3.21`, `python3.12-alpine3.21`](https://github.com/hylang/docker-hylang/blob/d0d26a7ca41e5b168d3af6b6a578ddb81b84a8df/latest/python3.12-alpine3.21/Dockerfile)
+-	[`1.1.0-python3.12-alpine3.21`, `1.1-python3.12-alpine3.21`, `1-python3.12-alpine3.21`, `python3.12-alpine3.21`](https://github.com/hylang/docker-hylang/blob/fbe7fe82f03ec30b2aab666af623405f45357626/latest/python3.12-alpine3.21/Dockerfile)
 
--	[`1.1.0-python3.11-trixie`, `1.1-python3.11-trixie`, `1-python3.11-trixie`, `python3.11-trixie`](https://github.com/hylang/docker-hylang/blob/d0d26a7ca41e5b168d3af6b6a578ddb81b84a8df/latest/python3.11-trixie/Dockerfile)
+-	[`1.1.0-python3.11-trixie`, `1.1-python3.11-trixie`, `1-python3.11-trixie`, `python3.11-trixie`](https://github.com/hylang/docker-hylang/blob/fbe7fe82f03ec30b2aab666af623405f45357626/latest/python3.11-trixie/Dockerfile)
 
--	[`1.1.0-python3.11-bookworm`, `1.1-python3.11-bookworm`, `1-python3.11-bookworm`, `python3.11-bookworm`](https://github.com/hylang/docker-hylang/blob/d0d26a7ca41e5b168d3af6b6a578ddb81b84a8df/latest/python3.11-bookworm/Dockerfile)
+-	[`1.1.0-python3.11-bookworm`, `1.1-python3.11-bookworm`, `1-python3.11-bookworm`, `python3.11-bookworm`](https://github.com/hylang/docker-hylang/blob/fbe7fe82f03ec30b2aab666af623405f45357626/latest/python3.11-bookworm/Dockerfile)
 
--	[`1.1.0-python3.11-alpine3.22`, `1.1-python3.11-alpine3.22`, `1-python3.11-alpine3.22`, `python3.11-alpine3.22`, `1.1.0-python3.11-alpine`, `1.1-python3.11-alpine`, `1-python3.11-alpine`, `python3.11-alpine`](https://github.com/hylang/docker-hylang/blob/d0d26a7ca41e5b168d3af6b6a578ddb81b84a8df/latest/python3.11-alpine3.22/Dockerfile)
+-	[`1.1.0-python3.11-alpine3.22`, `1.1-python3.11-alpine3.22`, `1-python3.11-alpine3.22`, `python3.11-alpine3.22`, `1.1.0-python3.11-alpine`, `1.1-python3.11-alpine`, `1-python3.11-alpine`, `python3.11-alpine`](https://github.com/hylang/docker-hylang/blob/fbe7fe82f03ec30b2aab666af623405f45357626/latest/python3.11-alpine3.22/Dockerfile)
 
--	[`1.1.0-python3.11-alpine3.21`, `1.1-python3.11-alpine3.21`, `1-python3.11-alpine3.21`, `python3.11-alpine3.21`](https://github.com/hylang/docker-hylang/blob/d0d26a7ca41e5b168d3af6b6a578ddb81b84a8df/latest/python3.11-alpine3.21/Dockerfile)
+-	[`1.1.0-python3.11-alpine3.21`, `1.1-python3.11-alpine3.21`, `1-python3.11-alpine3.21`, `python3.11-alpine3.21`](https://github.com/hylang/docker-hylang/blob/fbe7fe82f03ec30b2aab666af623405f45357626/latest/python3.11-alpine3.21/Dockerfile)
 
--	[`1.1.0-python3.10-trixie`, `1.1-python3.10-trixie`, `1-python3.10-trixie`, `python3.10-trixie`](https://github.com/hylang/docker-hylang/blob/d0d26a7ca41e5b168d3af6b6a578ddb81b84a8df/latest/python3.10-trixie/Dockerfile)
+-	[`1.1.0-python3.10-trixie`, `1.1-python3.10-trixie`, `1-python3.10-trixie`, `python3.10-trixie`](https://github.com/hylang/docker-hylang/blob/fbe7fe82f03ec30b2aab666af623405f45357626/latest/python3.10-trixie/Dockerfile)
 
--	[`1.1.0-python3.10-bookworm`, `1.1-python3.10-bookworm`, `1-python3.10-bookworm`, `python3.10-bookworm`](https://github.com/hylang/docker-hylang/blob/d0d26a7ca41e5b168d3af6b6a578ddb81b84a8df/latest/python3.10-bookworm/Dockerfile)
+-	[`1.1.0-python3.10-bookworm`, `1.1-python3.10-bookworm`, `1-python3.10-bookworm`, `python3.10-bookworm`](https://github.com/hylang/docker-hylang/blob/fbe7fe82f03ec30b2aab666af623405f45357626/latest/python3.10-bookworm/Dockerfile)
 
--	[`1.1.0-python3.10-alpine3.22`, `1.1-python3.10-alpine3.22`, `1-python3.10-alpine3.22`, `python3.10-alpine3.22`, `1.1.0-python3.10-alpine`, `1.1-python3.10-alpine`, `1-python3.10-alpine`, `python3.10-alpine`](https://github.com/hylang/docker-hylang/blob/d0d26a7ca41e5b168d3af6b6a578ddb81b84a8df/latest/python3.10-alpine3.22/Dockerfile)
+-	[`1.1.0-python3.10-alpine3.22`, `1.1-python3.10-alpine3.22`, `1-python3.10-alpine3.22`, `python3.10-alpine3.22`, `1.1.0-python3.10-alpine`, `1.1-python3.10-alpine`, `1-python3.10-alpine`, `python3.10-alpine`](https://github.com/hylang/docker-hylang/blob/fbe7fe82f03ec30b2aab666af623405f45357626/latest/python3.10-alpine3.22/Dockerfile)
 
--	[`1.1.0-python3.10-alpine3.21`, `1.1-python3.10-alpine3.21`, `1-python3.10-alpine3.21`, `python3.10-alpine3.21`](https://github.com/hylang/docker-hylang/blob/d0d26a7ca41e5b168d3af6b6a578ddb81b84a8df/latest/python3.10-alpine3.21/Dockerfile)
+-	[`1.1.0-python3.10-alpine3.21`, `1.1-python3.10-alpine3.21`, `1-python3.10-alpine3.21`, `python3.10-alpine3.21`](https://github.com/hylang/docker-hylang/blob/fbe7fe82f03ec30b2aab666af623405f45357626/latest/python3.10-alpine3.21/Dockerfile)
 
--	[`1.1.0-python3.9-trixie`, `1.1-python3.9-trixie`, `1-python3.9-trixie`, `python3.9-trixie`](https://github.com/hylang/docker-hylang/blob/d0d26a7ca41e5b168d3af6b6a578ddb81b84a8df/latest/python3.9-trixie/Dockerfile)
+-	[`1.1.0-pypy3.11-trixie`, `1.1-pypy3.11-trixie`, `1-pypy3.11-trixie`, `pypy3.11-trixie`, `1.1.0-pypy-trixie`, `1.1-pypy-trixie`, `1-pypy-trixie`, `pypy-trixie`](https://github.com/hylang/docker-hylang/blob/fbe7fe82f03ec30b2aab666af623405f45357626/latest/pypy3.11-trixie/Dockerfile)
 
--	[`1.1.0-python3.9-bookworm`, `1.1-python3.9-bookworm`, `1-python3.9-bookworm`, `python3.9-bookworm`](https://github.com/hylang/docker-hylang/blob/d0d26a7ca41e5b168d3af6b6a578ddb81b84a8df/latest/python3.9-bookworm/Dockerfile)
+-	[`1.1.0-pypy3.11-bookworm`, `1.1-pypy3.11-bookworm`, `1-pypy3.11-bookworm`, `pypy3.11-bookworm`, `1.1.0-pypy-bookworm`, `1.1-pypy-bookworm`, `1-pypy-bookworm`, `pypy-bookworm`](https://github.com/hylang/docker-hylang/blob/fbe7fe82f03ec30b2aab666af623405f45357626/latest/pypy3.11-bookworm/Dockerfile)
 
--	[`1.1.0-python3.9-alpine3.22`, `1.1-python3.9-alpine3.22`, `1-python3.9-alpine3.22`, `python3.9-alpine3.22`, `1.1.0-python3.9-alpine`, `1.1-python3.9-alpine`, `1-python3.9-alpine`, `python3.9-alpine`](https://github.com/hylang/docker-hylang/blob/d0d26a7ca41e5b168d3af6b6a578ddb81b84a8df/latest/python3.9-alpine3.22/Dockerfile)
+-	[`1.1.0-pypy3.11-windowsservercore-ltsc2025`, `1.1-pypy3.11-windowsservercore-ltsc2025`, `1-pypy3.11-windowsservercore-ltsc2025`, `pypy3.11-windowsservercore-ltsc2025`, `1.1.0-pypy-windowsservercore-ltsc2025`, `1.1-pypy-windowsservercore-ltsc2025`, `1-pypy-windowsservercore-ltsc2025`, `pypy-windowsservercore-ltsc2025`](https://github.com/hylang/docker-hylang/blob/fbe7fe82f03ec30b2aab666af623405f45357626/latest/pypy3.11-windowsservercore-ltsc2025/Dockerfile)
 
--	[`1.1.0-python3.9-alpine3.21`, `1.1-python3.9-alpine3.21`, `1-python3.9-alpine3.21`, `python3.9-alpine3.21`](https://github.com/hylang/docker-hylang/blob/d0d26a7ca41e5b168d3af6b6a578ddb81b84a8df/latest/python3.9-alpine3.21/Dockerfile)
-
--	[`1.1.0-pypy3.11-trixie`, `1.1-pypy3.11-trixie`, `1-pypy3.11-trixie`, `pypy3.11-trixie`, `1.1.0-pypy-trixie`, `1.1-pypy-trixie`, `1-pypy-trixie`, `pypy-trixie`](https://github.com/hylang/docker-hylang/blob/d0d26a7ca41e5b168d3af6b6a578ddb81b84a8df/latest/pypy3.11-trixie/Dockerfile)
-
--	[`1.1.0-pypy3.11-bookworm`, `1.1-pypy3.11-bookworm`, `1-pypy3.11-bookworm`, `pypy3.11-bookworm`, `1.1.0-pypy-bookworm`, `1.1-pypy-bookworm`, `1-pypy-bookworm`, `pypy-bookworm`](https://github.com/hylang/docker-hylang/blob/d0d26a7ca41e5b168d3af6b6a578ddb81b84a8df/latest/pypy3.11-bookworm/Dockerfile)
-
--	[`1.1.0-pypy3.11-windowsservercore-ltsc2025`, `1.1-pypy3.11-windowsservercore-ltsc2025`, `1-pypy3.11-windowsservercore-ltsc2025`, `pypy3.11-windowsservercore-ltsc2025`, `1.1.0-pypy-windowsservercore-ltsc2025`, `1.1-pypy-windowsservercore-ltsc2025`, `1-pypy-windowsservercore-ltsc2025`, `pypy-windowsservercore-ltsc2025`](https://github.com/hylang/docker-hylang/blob/d0d26a7ca41e5b168d3af6b6a578ddb81b84a8df/latest/pypy3.11-windowsservercore-ltsc2025/Dockerfile)
-
--	[`1.1.0-pypy3.11-windowsservercore-ltsc2022`, `1.1-pypy3.11-windowsservercore-ltsc2022`, `1-pypy3.11-windowsservercore-ltsc2022`, `pypy3.11-windowsservercore-ltsc2022`, `1.1.0-pypy-windowsservercore-ltsc2022`, `1.1-pypy-windowsservercore-ltsc2022`, `1-pypy-windowsservercore-ltsc2022`, `pypy-windowsservercore-ltsc2022`](https://github.com/hylang/docker-hylang/blob/d0d26a7ca41e5b168d3af6b6a578ddb81b84a8df/latest/pypy3.11-windowsservercore-ltsc2022/Dockerfile)
+-	[`1.1.0-pypy3.11-windowsservercore-ltsc2022`, `1.1-pypy3.11-windowsservercore-ltsc2022`, `1-pypy3.11-windowsservercore-ltsc2022`, `pypy3.11-windowsservercore-ltsc2022`, `1.1.0-pypy-windowsservercore-ltsc2022`, `1.1-pypy-windowsservercore-ltsc2022`, `1-pypy-windowsservercore-ltsc2022`, `pypy-windowsservercore-ltsc2022`](https://github.com/hylang/docker-hylang/blob/fbe7fe82f03ec30b2aab666af623405f45357626/latest/pypy3.11-windowsservercore-ltsc2022/Dockerfile)
 
 ## Shared Tags
 
 -	`1.1.0-python3.14`, `1.1-python3.14`, `1-python3.14`, `python3.14`, `1.1.0`, `1.1`, `1`, `latest`:
 
-	-	[`1.1.0-python3.14-trixie`](https://github.com/hylang/docker-hylang/blob/d0d26a7ca41e5b168d3af6b6a578ddb81b84a8df/latest/python3.14-trixie/Dockerfile)
-	-	[`1.1.0-python3.14-windowsservercore-ltsc2025`](https://github.com/hylang/docker-hylang/blob/d0d26a7ca41e5b168d3af6b6a578ddb81b84a8df/latest/python3.14-windowsservercore-ltsc2025/Dockerfile)
-	-	[`1.1.0-python3.14-windowsservercore-ltsc2022`](https://github.com/hylang/docker-hylang/blob/d0d26a7ca41e5b168d3af6b6a578ddb81b84a8df/latest/python3.14-windowsservercore-ltsc2022/Dockerfile)
+	-	[`1.1.0-python3.14-trixie`](https://github.com/hylang/docker-hylang/blob/fbe7fe82f03ec30b2aab666af623405f45357626/latest/python3.14-trixie/Dockerfile)
+	-	[`1.1.0-python3.14-windowsservercore-ltsc2025`](https://github.com/hylang/docker-hylang/blob/fbe7fe82f03ec30b2aab666af623405f45357626/latest/python3.14-windowsservercore-ltsc2025/Dockerfile)
+	-	[`1.1.0-python3.14-windowsservercore-ltsc2022`](https://github.com/hylang/docker-hylang/blob/fbe7fe82f03ec30b2aab666af623405f45357626/latest/python3.14-windowsservercore-ltsc2022/Dockerfile)
 
 -	`1.1.0-python3.14-windowsservercore`, `1.1-python3.14-windowsservercore`, `1-python3.14-windowsservercore`, `python3.14-windowsservercore`, `1.1.0-windowsservercore`, `1.1-windowsservercore`, `1-windowsservercore`, `windowsservercore`:
 
-	-	[`1.1.0-python3.14-windowsservercore-ltsc2025`](https://github.com/hylang/docker-hylang/blob/d0d26a7ca41e5b168d3af6b6a578ddb81b84a8df/latest/python3.14-windowsservercore-ltsc2025/Dockerfile)
-	-	[`1.1.0-python3.14-windowsservercore-ltsc2022`](https://github.com/hylang/docker-hylang/blob/d0d26a7ca41e5b168d3af6b6a578ddb81b84a8df/latest/python3.14-windowsservercore-ltsc2022/Dockerfile)
+	-	[`1.1.0-python3.14-windowsservercore-ltsc2025`](https://github.com/hylang/docker-hylang/blob/fbe7fe82f03ec30b2aab666af623405f45357626/latest/python3.14-windowsservercore-ltsc2025/Dockerfile)
+	-	[`1.1.0-python3.14-windowsservercore-ltsc2022`](https://github.com/hylang/docker-hylang/blob/fbe7fe82f03ec30b2aab666af623405f45357626/latest/python3.14-windowsservercore-ltsc2022/Dockerfile)
 
 -	`1.1.0-python3.13`, `1.1-python3.13`, `1-python3.13`, `python3.13`:
 
-	-	[`1.1.0-python3.13-trixie`](https://github.com/hylang/docker-hylang/blob/d0d26a7ca41e5b168d3af6b6a578ddb81b84a8df/latest/python3.13-trixie/Dockerfile)
-	-	[`1.1.0-python3.13-windowsservercore-ltsc2025`](https://github.com/hylang/docker-hylang/blob/d0d26a7ca41e5b168d3af6b6a578ddb81b84a8df/latest/python3.13-windowsservercore-ltsc2025/Dockerfile)
-	-	[`1.1.0-python3.13-windowsservercore-ltsc2022`](https://github.com/hylang/docker-hylang/blob/d0d26a7ca41e5b168d3af6b6a578ddb81b84a8df/latest/python3.13-windowsservercore-ltsc2022/Dockerfile)
+	-	[`1.1.0-python3.13-trixie`](https://github.com/hylang/docker-hylang/blob/fbe7fe82f03ec30b2aab666af623405f45357626/latest/python3.13-trixie/Dockerfile)
+	-	[`1.1.0-python3.13-windowsservercore-ltsc2025`](https://github.com/hylang/docker-hylang/blob/fbe7fe82f03ec30b2aab666af623405f45357626/latest/python3.13-windowsservercore-ltsc2025/Dockerfile)
+	-	[`1.1.0-python3.13-windowsservercore-ltsc2022`](https://github.com/hylang/docker-hylang/blob/fbe7fe82f03ec30b2aab666af623405f45357626/latest/python3.13-windowsservercore-ltsc2022/Dockerfile)
 
 -	`1.1.0-python3.13-windowsservercore`, `1.1-python3.13-windowsservercore`, `1-python3.13-windowsservercore`, `python3.13-windowsservercore`:
 
-	-	[`1.1.0-python3.13-windowsservercore-ltsc2025`](https://github.com/hylang/docker-hylang/blob/d0d26a7ca41e5b168d3af6b6a578ddb81b84a8df/latest/python3.13-windowsservercore-ltsc2025/Dockerfile)
-	-	[`1.1.0-python3.13-windowsservercore-ltsc2022`](https://github.com/hylang/docker-hylang/blob/d0d26a7ca41e5b168d3af6b6a578ddb81b84a8df/latest/python3.13-windowsservercore-ltsc2022/Dockerfile)
+	-	[`1.1.0-python3.13-windowsservercore-ltsc2025`](https://github.com/hylang/docker-hylang/blob/fbe7fe82f03ec30b2aab666af623405f45357626/latest/python3.13-windowsservercore-ltsc2025/Dockerfile)
+	-	[`1.1.0-python3.13-windowsservercore-ltsc2022`](https://github.com/hylang/docker-hylang/blob/fbe7fe82f03ec30b2aab666af623405f45357626/latest/python3.13-windowsservercore-ltsc2022/Dockerfile)
 
 -	`1.1.0-python3.12`, `1.1-python3.12`, `1-python3.12`, `python3.12`:
 
-	-	[`1.1.0-python3.12-trixie`](https://github.com/hylang/docker-hylang/blob/d0d26a7ca41e5b168d3af6b6a578ddb81b84a8df/latest/python3.12-trixie/Dockerfile)
+	-	[`1.1.0-python3.12-trixie`](https://github.com/hylang/docker-hylang/blob/fbe7fe82f03ec30b2aab666af623405f45357626/latest/python3.12-trixie/Dockerfile)
 
 -	`1.1.0-python3.11`, `1.1-python3.11`, `1-python3.11`, `python3.11`:
 
-	-	[`1.1.0-python3.11-trixie`](https://github.com/hylang/docker-hylang/blob/d0d26a7ca41e5b168d3af6b6a578ddb81b84a8df/latest/python3.11-trixie/Dockerfile)
+	-	[`1.1.0-python3.11-trixie`](https://github.com/hylang/docker-hylang/blob/fbe7fe82f03ec30b2aab666af623405f45357626/latest/python3.11-trixie/Dockerfile)
 
 -	`1.1.0-python3.10`, `1.1-python3.10`, `1-python3.10`, `python3.10`:
 
-	-	[`1.1.0-python3.10-trixie`](https://github.com/hylang/docker-hylang/blob/d0d26a7ca41e5b168d3af6b6a578ddb81b84a8df/latest/python3.10-trixie/Dockerfile)
-
--	`1.1.0-python3.9`, `1.1-python3.9`, `1-python3.9`, `python3.9`:
-
-	-	[`1.1.0-python3.9-trixie`](https://github.com/hylang/docker-hylang/blob/d0d26a7ca41e5b168d3af6b6a578ddb81b84a8df/latest/python3.9-trixie/Dockerfile)
+	-	[`1.1.0-python3.10-trixie`](https://github.com/hylang/docker-hylang/blob/fbe7fe82f03ec30b2aab666af623405f45357626/latest/python3.10-trixie/Dockerfile)
 
 -	`1.1.0-pypy3.11`, `1.1-pypy3.11`, `1-pypy3.11`, `pypy3.11`, `1.1.0-pypy`, `1.1-pypy`, `1-pypy`, `pypy`:
 
-	-	[`1.1.0-pypy3.11-trixie`](https://github.com/hylang/docker-hylang/blob/d0d26a7ca41e5b168d3af6b6a578ddb81b84a8df/latest/pypy3.11-trixie/Dockerfile)
-	-	[`1.1.0-pypy3.11-windowsservercore-ltsc2025`](https://github.com/hylang/docker-hylang/blob/d0d26a7ca41e5b168d3af6b6a578ddb81b84a8df/latest/pypy3.11-windowsservercore-ltsc2025/Dockerfile)
-	-	[`1.1.0-pypy3.11-windowsservercore-ltsc2022`](https://github.com/hylang/docker-hylang/blob/d0d26a7ca41e5b168d3af6b6a578ddb81b84a8df/latest/pypy3.11-windowsservercore-ltsc2022/Dockerfile)
+	-	[`1.1.0-pypy3.11-trixie`](https://github.com/hylang/docker-hylang/blob/fbe7fe82f03ec30b2aab666af623405f45357626/latest/pypy3.11-trixie/Dockerfile)
+	-	[`1.1.0-pypy3.11-windowsservercore-ltsc2025`](https://github.com/hylang/docker-hylang/blob/fbe7fe82f03ec30b2aab666af623405f45357626/latest/pypy3.11-windowsservercore-ltsc2025/Dockerfile)
+	-	[`1.1.0-pypy3.11-windowsservercore-ltsc2022`](https://github.com/hylang/docker-hylang/blob/fbe7fe82f03ec30b2aab666af623405f45357626/latest/pypy3.11-windowsservercore-ltsc2022/Dockerfile)
 
 -	`1.1.0-pypy3.11-windowsservercore`, `1.1-pypy3.11-windowsservercore`, `1-pypy3.11-windowsservercore`, `pypy3.11-windowsservercore`:
 
-	-	[`1.1.0-pypy3.11-windowsservercore-ltsc2025`](https://github.com/hylang/docker-hylang/blob/d0d26a7ca41e5b168d3af6b6a578ddb81b84a8df/latest/pypy3.11-windowsservercore-ltsc2025/Dockerfile)
-	-	[`1.1.0-pypy3.11-windowsservercore-ltsc2022`](https://github.com/hylang/docker-hylang/blob/d0d26a7ca41e5b168d3af6b6a578ddb81b84a8df/latest/pypy3.11-windowsservercore-ltsc2022/Dockerfile)
+	-	[`1.1.0-pypy3.11-windowsservercore-ltsc2025`](https://github.com/hylang/docker-hylang/blob/fbe7fe82f03ec30b2aab666af623405f45357626/latest/pypy3.11-windowsservercore-ltsc2025/Dockerfile)
+	-	[`1.1.0-pypy3.11-windowsservercore-ltsc2022`](https://github.com/hylang/docker-hylang/blob/fbe7fe82f03ec30b2aab666af623405f45357626/latest/pypy3.11-windowsservercore-ltsc2022/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -149,7 +137,7 @@ WARNING:
 	[https://github.com/hylang/hy/issues](https://github.com/hylang/hy/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/hylang/), [`arm32v5`](https://hub.docker.com/r/arm32v5/hylang/), [`arm32v6`](https://hub.docker.com/r/arm32v6/hylang/), [`arm32v7`](https://hub.docker.com/r/arm32v7/hylang/), [`arm64v8`](https://hub.docker.com/r/arm64v8/hylang/), [`i386`](https://hub.docker.com/r/i386/hylang/), [`mips64le`](https://hub.docker.com/r/mips64le/hylang/), [`ppc64le`](https://hub.docker.com/r/ppc64le/hylang/), [`riscv64`](https://hub.docker.com/r/riscv64/hylang/), [`s390x`](https://hub.docker.com/r/s390x/hylang/), [`windows-amd64`](https://hub.docker.com/r/winamd64/hylang/)
+	[`amd64`](https://hub.docker.com/r/amd64/hylang/), [`arm32v5`](https://hub.docker.com/r/arm32v5/hylang/), [`arm32v6`](https://hub.docker.com/r/arm32v6/hylang/), [`arm32v7`](https://hub.docker.com/r/arm32v7/hylang/), [`arm64v8`](https://hub.docker.com/r/arm64v8/hylang/), [`i386`](https://hub.docker.com/r/i386/hylang/), [`ppc64le`](https://hub.docker.com/r/ppc64le/hylang/), [`riscv64`](https://hub.docker.com/r/riscv64/hylang/), [`s390x`](https://hub.docker.com/r/s390x/hylang/), [`windows-amd64`](https://hub.docker.com/r/winamd64/hylang/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/hylang/` directory](https://github.com/docker-library/repo-info/blob/master/repos/hylang) ([history](https://github.com/docker-library/repo-info/commits/master/repos/hylang))  
