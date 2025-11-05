@@ -24,31 +24,31 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2025.5.0-developer`, `2025.5-developer`, `developer`](https://github.com/SonarSource/docker-sonarqube/blob/4f77dc7067a3ed7761c56361e40ad7dda3cd9d6c/commercial-editions/developer/Dockerfile)
+-	[`2025.5.0-developer`, `2025.5-developer`, `developer`](https://github.com/SonarSource/docker-sonarqube/blob/2d77476619099afc3df0129af7ebbf372fb72336/commercial-editions/developer/Dockerfile)
 
--	[`2025.5.0-enterprise`, `2025.5-enterprise`, `enterprise`](https://github.com/SonarSource/docker-sonarqube/blob/4f77dc7067a3ed7761c56361e40ad7dda3cd9d6c/commercial-editions/enterprise/Dockerfile)
+-	[`2025.5.0-enterprise`, `2025.5-enterprise`, `enterprise`](https://github.com/SonarSource/docker-sonarqube/blob/2d77476619099afc3df0129af7ebbf372fb72336/commercial-editions/enterprise/Dockerfile)
 
--	[`2025.5.0-datacenter-app`, `2025.5-datacenter-app`, `datacenter-app`](https://github.com/SonarSource/docker-sonarqube/blob/4f77dc7067a3ed7761c56361e40ad7dda3cd9d6c/commercial-editions/datacenter/app/Dockerfile)
+-	[`2025.5.0-datacenter-app`, `2025.5-datacenter-app`, `datacenter-app`](https://github.com/SonarSource/docker-sonarqube/blob/2d77476619099afc3df0129af7ebbf372fb72336/commercial-editions/datacenter/app/Dockerfile)
 
--	[`2025.5.0-datacenter-search`, `2025.5-datacenter-search`, `datacenter-search`](https://github.com/SonarSource/docker-sonarqube/blob/4f77dc7067a3ed7761c56361e40ad7dda3cd9d6c/commercial-editions/datacenter/search/Dockerfile)
+-	[`2025.5.0-datacenter-search`, `2025.5-datacenter-search`, `datacenter-search`](https://github.com/SonarSource/docker-sonarqube/blob/2d77476619099afc3df0129af7ebbf372fb72336/commercial-editions/datacenter/search/Dockerfile)
 
--	[`2025.4.3-developer`, `2025.4-developer`](https://github.com/SonarSource/docker-sonarqube/blob/52f6f8a3a79daf2f4ed53b9f6313df16dcbb710a/commercial-editions/developer/Dockerfile)
+-	[`2025.4.3-developer`, `2025.4-developer`, `2025.4-lta-developer`](https://github.com/SonarSource/docker-sonarqube/blob/ef0050f30ef75089692a0808b6a002359083fb5a/commercial-editions/developer/Dockerfile)
 
--	[`2025.4.3-enterprise`, `2025.4-enterprise`](https://github.com/SonarSource/docker-sonarqube/blob/52f6f8a3a79daf2f4ed53b9f6313df16dcbb710a/commercial-editions/enterprise/Dockerfile)
+-	[`2025.4.3-enterprise`, `2025.4-enterprise`, `2025.4-lta-enterprise`](https://github.com/SonarSource/docker-sonarqube/blob/ef0050f30ef75089692a0808b6a002359083fb5a/commercial-editions/enterprise/Dockerfile)
 
--	[`2025.4.3-datacenter-app`, `2025.4-datacenter-app`](https://github.com/SonarSource/docker-sonarqube/blob/52f6f8a3a79daf2f4ed53b9f6313df16dcbb710a/commercial-editions/datacenter/app/Dockerfile)
+-	[`2025.4.3-datacenter-app`, `2025.4-datacenter-app`, `2025.4-lta-datacenter-app`](https://github.com/SonarSource/docker-sonarqube/blob/ef0050f30ef75089692a0808b6a002359083fb5a/commercial-editions/datacenter/app/Dockerfile)
 
--	[`2025.4.3-datacenter-search`, `2025.4-datacenter-search`](https://github.com/SonarSource/docker-sonarqube/blob/52f6f8a3a79daf2f4ed53b9f6313df16dcbb710a/commercial-editions/datacenter/search/Dockerfile)
+-	[`2025.4.3-datacenter-search`, `2025.4-datacenter-search`, `2025.4-lta-datacenter-search`](https://github.com/SonarSource/docker-sonarqube/blob/ef0050f30ef75089692a0808b6a002359083fb5a/commercial-editions/datacenter/search/Dockerfile)
 
--	[`2025.1.4-developer`, `2025.1-developer`, `2025-lta-developer`](https://github.com/SonarSource/docker-sonarqube/blob/175609a6b668d26878ea8d063d66677247272f38/commercial-editions/developer/Dockerfile)
+-	[`2025.1.4-developer`, `2025.1-developer`, `2025-lta-developer`](https://github.com/SonarSource/docker-sonarqube/blob/5e2621e56095f67b6a28edd3016ef2f10bca2947/commercial-editions/developer/Dockerfile)
 
--	[`2025.1.4-enterprise`, `2025.1-enterprise`, `2025-lta-enterprise`](https://github.com/SonarSource/docker-sonarqube/blob/175609a6b668d26878ea8d063d66677247272f38/commercial-editions/enterprise/Dockerfile)
+-	[`2025.1.4-enterprise`, `2025.1-enterprise`, `2025-lta-enterprise`](https://github.com/SonarSource/docker-sonarqube/blob/5e2621e56095f67b6a28edd3016ef2f10bca2947/commercial-editions/enterprise/Dockerfile)
 
--	[`2025.1.4-datacenter-app`, `2025.1-datacenter-app`, `2025-lta-datacenter-app`](https://github.com/SonarSource/docker-sonarqube/blob/175609a6b668d26878ea8d063d66677247272f38/commercial-editions/datacenter/app/Dockerfile)
+-	[`2025.1.4-datacenter-app`, `2025.1-datacenter-app`, `2025-lta-datacenter-app`](https://github.com/SonarSource/docker-sonarqube/blob/5e2621e56095f67b6a28edd3016ef2f10bca2947/commercial-editions/datacenter/app/Dockerfile)
 
--	[`2025.1.4-datacenter-search`, `2025.1-datacenter-search`, `2025-lta-datacenter-search`](https://github.com/SonarSource/docker-sonarqube/blob/175609a6b668d26878ea8d063d66677247272f38/commercial-editions/datacenter/search/Dockerfile)
+-	[`2025.1.4-datacenter-search`, `2025.1-datacenter-search`, `2025-lta-datacenter-search`](https://github.com/SonarSource/docker-sonarqube/blob/5e2621e56095f67b6a28edd3016ef2f10bca2947/commercial-editions/datacenter/search/Dockerfile)
 
--	[`25.10.0.114319-community`, `community`, `latest`](https://github.com/SonarSource/docker-sonarqube/blob/a5d28439b45d0a6002290fd28bf1b481c0182bb6/community-build/Dockerfile)
+-	[`25.11.0.114957-community`, `community`, `latest`](https://github.com/SonarSource/docker-sonarqube/blob/2d77476619099afc3df0129af7ebbf372fb72336/community-build/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -100,13 +100,15 @@ To quickly run a demo instance, see Using Docker on the [Try Out SonarQube](http
 
 ## Installation
 
-> **Multi-platform support**: Starting from SonarQube `9.9` LTS, the docker images support running both on `amd64` architecture and `arm64`-based Apple Silicon (M1).
+> **Multi-platform support**: Starting from SonarQube `9.9`, the docker images support running both on `amd64` architecture and `arm64`-based Apple Silicon (M1).
 
 For installation instructions, see Installing the Server from the Docker Image on the [Install the Server](https://docs.sonarsource.com/sonarqube-server/latest/setup-and-upgrade/install-the-server/installing-sonarqube-from-docker/) page.
 
 To run a cluster with the SonarQube Server Data Center Edition, please refer to Installing SonarQube Server from the Docker Image on the [Install the Server as a Cluster](https://docs.sonarsource.com/sonarqube-server/latest/setup-and-upgrade/install-the-server-as-a-cluster/) page.
 
-> The `lts` tag on Docker images is replaced with every new LTS release. If you want to avoid any automatic major upgrades, we recommend using the corresponding `9.9-<edition>` tag instead of `lts-<edition>`.
+### Long-Term Active (LTA) versions
+
+[LTA](https://www.sonarsource.com/products/sonarqube/downloads/lta/) refers to the version of SonarQube Server that will stay active for a longer period of time. Currently, `2025.4` is the latest LTA version and should be used when LTA version is preferred. To install the latest LTA, you can pull one of the `2025.4-lta-<edition>` tags.
 
 ## Configuration
 
