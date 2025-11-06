@@ -26,7 +26,7 @@ WARNING:
 
 -	[`6.0.3`, `6.0`, `latest`](https://github.com/crate/docker-crate/blob/3b12723f798d4a57003c05ab50c938ca40b25f40/Dockerfile)
 
--	[`5.10.13`, `5.10`](https://github.com/crate/docker-crate/blob/be70f78b138fffd05e80b7ac1b140690ec33584d/Dockerfile)
+-	[`5.10.14`, `5.10`](https://github.com/crate/docker-crate/blob/b48f566bfa1ad79918bd396900f9768b9430a846/Dockerfile)
 
 # Quick reference (cont.)
 
