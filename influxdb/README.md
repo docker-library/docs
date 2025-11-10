@@ -75,6 +75,10 @@ WARNING:
 -	**Source of this description**:  
 	[docs repo's `influxdb/` directory](https://github.com/docker-library/docs/tree/master/influxdb) ([history](https://github.com/docker-library/docs/commits/master/influxdb))
 
+# Notice
+
+On February 3, 2026, the latest tag for InfluxDB will point to InfluxDB 3 Core. To avoid unexpected upgrades, use specific version tags in your deployments.
+
 # What is InfluxDB?
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/43d87118415bb75d7bb107683e79cd6d69186f67/influxdb/logo.png)

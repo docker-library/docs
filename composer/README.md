@@ -26,9 +26,9 @@ WARNING:
 
 -	[`2.8.12`, `2.8`, `2`, `latest`](https://github.com/composer/docker/blob/517441df1032e9914b7b7ab43e8ad0ce0d05a14e/latest/Dockerfile)
 
--	[`2.2.25`, `2.2`](https://github.com/composer/docker/blob/a037fe423a4fef8030b2a8c3131da0934a6295dd/2.2/Dockerfile)
+-	[`2.9.0-RC1`, `2.9`](https://github.com/composer/docker/blob/1e5d03ca1b13409821f5562358e1a17f5e4debc9/2.9/Dockerfile)
 
--	[`1.10.27`, `1.10`, `1`](https://github.com/composer/docker/blob/a037fe423a4fef8030b2a8c3131da0934a6295dd/1.10/Dockerfile)
+-	[`2.2.25`, `2.2`](https://github.com/composer/docker/blob/a037fe423a4fef8030b2a8c3131da0934a6295dd/2.2/Dockerfile)
 
 # Quick reference (cont.)
 
