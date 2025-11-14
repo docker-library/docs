@@ -24,53 +24,45 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`18.1`, `18`, `latest`, `18.1-trixie`, `18-trixie`, `trixie`](https://github.com/docker-library/postgres/blob/8813daba48f758aea74a33e98a0f20a6102c3b57/18/trixie/Dockerfile)
+-	[`18.1`, `18`, `latest`, `18.1-trixie`, `18-trixie`, `trixie`](https://github.com/docker-library/postgres/blob/2925b19f45ceeb8ab8488eec226f2736abf297e1/18/trixie/Dockerfile)
 
--	[`18.1-bookworm`, `18-bookworm`, `bookworm`](https://github.com/docker-library/postgres/blob/8813daba48f758aea74a33e98a0f20a6102c3b57/18/bookworm/Dockerfile)
+-	[`18.1-bookworm`, `18-bookworm`, `bookworm`](https://github.com/docker-library/postgres/blob/2925b19f45ceeb8ab8488eec226f2736abf297e1/18/bookworm/Dockerfile)
 
--	[`18.1-alpine3.22`, `18-alpine3.22`, `alpine3.22`, `18.1-alpine`, `18-alpine`, `alpine`](https://github.com/docker-library/postgres/blob/8813daba48f758aea74a33e98a0f20a6102c3b57/18/alpine3.22/Dockerfile)
+-	[`18.1-alpine3.22`, `18-alpine3.22`, `alpine3.22`, `18.1-alpine`, `18-alpine`, `alpine`](https://github.com/docker-library/postgres/blob/2925b19f45ceeb8ab8488eec226f2736abf297e1/18/alpine3.22/Dockerfile)
 
--	[`18.1-alpine3.21`, `18-alpine3.21`, `alpine3.21`](https://github.com/docker-library/postgres/blob/8813daba48f758aea74a33e98a0f20a6102c3b57/18/alpine3.21/Dockerfile)
+-	[`18.1-alpine3.21`, `18-alpine3.21`, `alpine3.21`](https://github.com/docker-library/postgres/blob/2925b19f45ceeb8ab8488eec226f2736abf297e1/18/alpine3.21/Dockerfile)
 
--	[`17.7`, `17`, `17.7-trixie`, `17-trixie`](https://github.com/docker-library/postgres/blob/c02157db6a6f6d724de5ebf5291463a989076dd9/17/trixie/Dockerfile)
+-	[`17.7`, `17`, `17.7-trixie`, `17-trixie`](https://github.com/docker-library/postgres/blob/2925b19f45ceeb8ab8488eec226f2736abf297e1/17/trixie/Dockerfile)
 
--	[`17.7-bookworm`, `17-bookworm`](https://github.com/docker-library/postgres/blob/c02157db6a6f6d724de5ebf5291463a989076dd9/17/bookworm/Dockerfile)
+-	[`17.7-bookworm`, `17-bookworm`](https://github.com/docker-library/postgres/blob/2925b19f45ceeb8ab8488eec226f2736abf297e1/17/bookworm/Dockerfile)
 
--	[`17.7-alpine3.22`, `17-alpine3.22`, `17.7-alpine`, `17-alpine`](https://github.com/docker-library/postgres/blob/c02157db6a6f6d724de5ebf5291463a989076dd9/17/alpine3.22/Dockerfile)
+-	[`17.7-alpine3.22`, `17-alpine3.22`, `17.7-alpine`, `17-alpine`](https://github.com/docker-library/postgres/blob/2925b19f45ceeb8ab8488eec226f2736abf297e1/17/alpine3.22/Dockerfile)
 
--	[`17.7-alpine3.21`, `17-alpine3.21`](https://github.com/docker-library/postgres/blob/c02157db6a6f6d724de5ebf5291463a989076dd9/17/alpine3.21/Dockerfile)
+-	[`17.7-alpine3.21`, `17-alpine3.21`](https://github.com/docker-library/postgres/blob/2925b19f45ceeb8ab8488eec226f2736abf297e1/17/alpine3.21/Dockerfile)
 
--	[`16.11`, `16`, `16.11-trixie`, `16-trixie`](https://github.com/docker-library/postgres/blob/3506774b36743758520ce084d4f25ec5800a5200/16/trixie/Dockerfile)
+-	[`16.11`, `16`, `16.11-trixie`, `16-trixie`](https://github.com/docker-library/postgres/blob/2925b19f45ceeb8ab8488eec226f2736abf297e1/16/trixie/Dockerfile)
 
--	[`16.11-bookworm`, `16-bookworm`](https://github.com/docker-library/postgres/blob/3506774b36743758520ce084d4f25ec5800a5200/16/bookworm/Dockerfile)
+-	[`16.11-bookworm`, `16-bookworm`](https://github.com/docker-library/postgres/blob/2925b19f45ceeb8ab8488eec226f2736abf297e1/16/bookworm/Dockerfile)
 
--	[`16.11-alpine3.22`, `16-alpine3.22`, `16.11-alpine`, `16-alpine`](https://github.com/docker-library/postgres/blob/3506774b36743758520ce084d4f25ec5800a5200/16/alpine3.22/Dockerfile)
+-	[`16.11-alpine3.22`, `16-alpine3.22`, `16.11-alpine`, `16-alpine`](https://github.com/docker-library/postgres/blob/2925b19f45ceeb8ab8488eec226f2736abf297e1/16/alpine3.22/Dockerfile)
 
--	[`16.11-alpine3.21`, `16-alpine3.21`](https://github.com/docker-library/postgres/blob/3506774b36743758520ce084d4f25ec5800a5200/16/alpine3.21/Dockerfile)
+-	[`16.11-alpine3.21`, `16-alpine3.21`](https://github.com/docker-library/postgres/blob/2925b19f45ceeb8ab8488eec226f2736abf297e1/16/alpine3.21/Dockerfile)
 
--	[`15.15`, `15`, `15.15-trixie`, `15-trixie`](https://github.com/docker-library/postgres/blob/423adf955c25775878b0feabaffed699d504aafb/15/trixie/Dockerfile)
+-	[`15.15`, `15`, `15.15-trixie`, `15-trixie`](https://github.com/docker-library/postgres/blob/2925b19f45ceeb8ab8488eec226f2736abf297e1/15/trixie/Dockerfile)
 
--	[`15.15-bookworm`, `15-bookworm`](https://github.com/docker-library/postgres/blob/423adf955c25775878b0feabaffed699d504aafb/15/bookworm/Dockerfile)
+-	[`15.15-bookworm`, `15-bookworm`](https://github.com/docker-library/postgres/blob/2925b19f45ceeb8ab8488eec226f2736abf297e1/15/bookworm/Dockerfile)
 
--	[`15.15-alpine3.22`, `15-alpine3.22`, `15.15-alpine`, `15-alpine`](https://github.com/docker-library/postgres/blob/423adf955c25775878b0feabaffed699d504aafb/15/alpine3.22/Dockerfile)
+-	[`15.15-alpine3.22`, `15-alpine3.22`, `15.15-alpine`, `15-alpine`](https://github.com/docker-library/postgres/blob/2925b19f45ceeb8ab8488eec226f2736abf297e1/15/alpine3.22/Dockerfile)
 
--	[`15.15-alpine3.21`, `15-alpine3.21`](https://github.com/docker-library/postgres/blob/423adf955c25775878b0feabaffed699d504aafb/15/alpine3.21/Dockerfile)
+-	[`15.15-alpine3.21`, `15-alpine3.21`](https://github.com/docker-library/postgres/blob/2925b19f45ceeb8ab8488eec226f2736abf297e1/15/alpine3.21/Dockerfile)
 
--	[`14.20`, `14`, `14.20-trixie`, `14-trixie`](https://github.com/docker-library/postgres/blob/7de0b51da56bdaec3fc09dd704bf2a001d75326d/14/trixie/Dockerfile)
+-	[`14.20`, `14`, `14.20-trixie`, `14-trixie`](https://github.com/docker-library/postgres/blob/2925b19f45ceeb8ab8488eec226f2736abf297e1/14/trixie/Dockerfile)
 
--	[`14.20-bookworm`, `14-bookworm`](https://github.com/docker-library/postgres/blob/7de0b51da56bdaec3fc09dd704bf2a001d75326d/14/bookworm/Dockerfile)
+-	[`14.20-bookworm`, `14-bookworm`](https://github.com/docker-library/postgres/blob/2925b19f45ceeb8ab8488eec226f2736abf297e1/14/bookworm/Dockerfile)
 
--	[`14.20-alpine3.22`, `14-alpine3.22`, `14.20-alpine`, `14-alpine`](https://github.com/docker-library/postgres/blob/7de0b51da56bdaec3fc09dd704bf2a001d75326d/14/alpine3.22/Dockerfile)
+-	[`14.20-alpine3.22`, `14-alpine3.22`, `14.20-alpine`, `14-alpine`](https://github.com/docker-library/postgres/blob/2925b19f45ceeb8ab8488eec226f2736abf297e1/14/alpine3.22/Dockerfile)
 
--	[`14.20-alpine3.21`, `14-alpine3.21`](https://github.com/docker-library/postgres/blob/7de0b51da56bdaec3fc09dd704bf2a001d75326d/14/alpine3.21/Dockerfile)
-
--	[`13.23`, `13`, `13.23-trixie`, `13-trixie`](https://github.com/docker-library/postgres/blob/c2d83d0b2a14daec6799e313e5ef51786768d597/13/trixie/Dockerfile)
-
--	[`13.23-bookworm`, `13-bookworm`](https://github.com/docker-library/postgres/blob/c2d83d0b2a14daec6799e313e5ef51786768d597/13/bookworm/Dockerfile)
-
--	[`13.23-alpine3.22`, `13-alpine3.22`, `13.23-alpine`, `13-alpine`](https://github.com/docker-library/postgres/blob/c2d83d0b2a14daec6799e313e5ef51786768d597/13/alpine3.22/Dockerfile)
-
--	[`13.23-alpine3.21`, `13-alpine3.21`](https://github.com/docker-library/postgres/blob/c2d83d0b2a14daec6799e313e5ef51786768d597/13/alpine3.21/Dockerfile)
+-	[`14.20-alpine3.21`, `14-alpine3.21`](https://github.com/docker-library/postgres/blob/2925b19f45ceeb8ab8488eec226f2736abf297e1/14/alpine3.21/Dockerfile)
 
 # Quick reference (cont.)
 
