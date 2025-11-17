@@ -24,21 +24,21 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`25-alpine3.21`, `25.2-alpine3.21`, `25.2.0-alpine3.21`, `alpine3.21`, `current-alpine3.21`](https://github.com/nodejs/docker-node/blob/a364e16a23fb97ea9768e5adbae36f1de63f44e9/25/alpine3.21/Dockerfile)
+-	[`25-alpine3.21`, `25.2-alpine3.21`, `25.2.1-alpine3.21`, `alpine3.21`, `current-alpine3.21`](https://github.com/nodejs/docker-node/blob/25e49232583710c7f70df7258d904861bec73b73/25/alpine3.21/Dockerfile)
 
--	[`25-alpine`, `25-alpine3.22`, `25.2-alpine`, `25.2-alpine3.22`, `25.2.0-alpine`, `25.2.0-alpine3.22`, `alpine`, `alpine3.22`, `current-alpine`, `current-alpine3.22`](https://github.com/nodejs/docker-node/blob/a364e16a23fb97ea9768e5adbae36f1de63f44e9/25/alpine3.22/Dockerfile)
+-	[`25-alpine`, `25-alpine3.22`, `25.2-alpine`, `25.2-alpine3.22`, `25.2.1-alpine`, `25.2.1-alpine3.22`, `alpine`, `alpine3.22`, `current-alpine`, `current-alpine3.22`](https://github.com/nodejs/docker-node/blob/25e49232583710c7f70df7258d904861bec73b73/25/alpine3.22/Dockerfile)
 
--	[`25`, `25-bookworm`, `25.2`, `25.2-bookworm`, `25.2.0`, `25.2.0-bookworm`, `bookworm`, `current`, `current-bookworm`, `latest`](https://github.com/nodejs/docker-node/blob/a364e16a23fb97ea9768e5adbae36f1de63f44e9/25/bookworm/Dockerfile)
+-	[`25`, `25-bookworm`, `25.2`, `25.2-bookworm`, `25.2.1`, `25.2.1-bookworm`, `bookworm`, `current`, `current-bookworm`, `latest`](https://github.com/nodejs/docker-node/blob/25e49232583710c7f70df7258d904861bec73b73/25/bookworm/Dockerfile)
 
--	[`25-bookworm-slim`, `25-slim`, `25.2-bookworm-slim`, `25.2-slim`, `25.2.0-bookworm-slim`, `25.2.0-slim`, `bookworm-slim`, `current-bookworm-slim`, `current-slim`, `slim`](https://github.com/nodejs/docker-node/blob/a364e16a23fb97ea9768e5adbae36f1de63f44e9/25/bookworm-slim/Dockerfile)
+-	[`25-bookworm-slim`, `25-slim`, `25.2-bookworm-slim`, `25.2-slim`, `25.2.1-bookworm-slim`, `25.2.1-slim`, `bookworm-slim`, `current-bookworm-slim`, `current-slim`, `slim`](https://github.com/nodejs/docker-node/blob/25e49232583710c7f70df7258d904861bec73b73/25/bookworm-slim/Dockerfile)
 
--	[`25-bullseye`, `25.2-bullseye`, `25.2.0-bullseye`, `bullseye`, `current-bullseye`](https://github.com/nodejs/docker-node/blob/a364e16a23fb97ea9768e5adbae36f1de63f44e9/25/bullseye/Dockerfile)
+-	[`25-bullseye`, `25.2-bullseye`, `25.2.1-bullseye`, `bullseye`, `current-bullseye`](https://github.com/nodejs/docker-node/blob/25e49232583710c7f70df7258d904861bec73b73/25/bullseye/Dockerfile)
 
--	[`25-bullseye-slim`, `25.2-bullseye-slim`, `25.2.0-bullseye-slim`, `bullseye-slim`, `current-bullseye-slim`](https://github.com/nodejs/docker-node/blob/a364e16a23fb97ea9768e5adbae36f1de63f44e9/25/bullseye-slim/Dockerfile)
+-	[`25-bullseye-slim`, `25.2-bullseye-slim`, `25.2.1-bullseye-slim`, `bullseye-slim`, `current-bullseye-slim`](https://github.com/nodejs/docker-node/blob/25e49232583710c7f70df7258d904861bec73b73/25/bullseye-slim/Dockerfile)
 
--	[`25-trixie`, `25.2-trixie`, `25.2.0-trixie`, `current-trixie`, `trixie`](https://github.com/nodejs/docker-node/blob/a364e16a23fb97ea9768e5adbae36f1de63f44e9/25/trixie/Dockerfile)
+-	[`25-trixie`, `25.2-trixie`, `25.2.1-trixie`, `current-trixie`, `trixie`](https://github.com/nodejs/docker-node/blob/25e49232583710c7f70df7258d904861bec73b73/25/trixie/Dockerfile)
 
--	[`25-trixie-slim`, `25.2-trixie-slim`, `25.2.0-trixie-slim`, `current-trixie-slim`, `trixie-slim`](https://github.com/nodejs/docker-node/blob/a364e16a23fb97ea9768e5adbae36f1de63f44e9/25/trixie-slim/Dockerfile)
+-	[`25-trixie-slim`, `25.2-trixie-slim`, `25.2.1-trixie-slim`, `current-trixie-slim`, `trixie-slim`](https://github.com/nodejs/docker-node/blob/25e49232583710c7f70df7258d904861bec73b73/25/trixie-slim/Dockerfile)
 
 -	[`24-alpine3.21`, `24.11-alpine3.21`, `24.11.1-alpine3.21`, `krypton-alpine3.21`, `lts-alpine3.21`](https://github.com/nodejs/docker-node/blob/a364e16a23fb97ea9768e5adbae36f1de63f44e9/24/alpine3.21/Dockerfile)
 
