@@ -34,9 +34,9 @@ Also see the ["Getting Help with MariaDB" article on the MariaDB Knowledge Base]
 
 -	[`12.0.2-noble`, `12.0-noble`, `12-noble`, `noble`, `12.0.2`, `12.0`, `12`, `latest`](https://github.com/MariaDB/mariadb-docker/blob/46c443c353dea7d232536a03df3b8a5b998cc78d/12.0/Dockerfile)
 
--	[`11.8.4-ubi9`, `11.8-ubi9`, `11-ubi9`, `lts-ubi9`, `11.8.4-ubi`, `11.8-ubi`, `11-ubi`, `lts-ubi`](https://github.com/MariaDB/mariadb-docker/blob/5ad00a82b5bb2705825c7afb670f6547b1bed316/11.8-ubi/Dockerfile)
+-	[`11.8.5-ubi9`, `11.8-ubi9`, `11-ubi9`, `lts-ubi9`, `11.8.5-ubi`, `11.8-ubi`, `11-ubi`, `lts-ubi`](https://github.com/MariaDB/mariadb-docker/blob/e95d4eddd8f5b3644a7c163e1363ff2bbd07d3e6/11.8-ubi/Dockerfile)
 
--	[`11.8.4-noble`, `11.8-noble`, `11-noble`, `lts-noble`, `11.8.4`, `11.8`, `11`, `lts`](https://github.com/MariaDB/mariadb-docker/blob/5ad00a82b5bb2705825c7afb670f6547b1bed316/11.8/Dockerfile)
+-	[`11.8.5-noble`, `11.8-noble`, `11-noble`, `lts-noble`, `11.8.5`, `11.8`, `11`, `lts`](https://github.com/MariaDB/mariadb-docker/blob/e95d4eddd8f5b3644a7c163e1363ff2bbd07d3e6/11.8/Dockerfile)
 
 -	[`11.4.9-ubi9`, `11.4-ubi9`, `11.4.9-ubi`, `11.4-ubi`](https://github.com/MariaDB/mariadb-docker/blob/5ad00a82b5bb2705825c7afb670f6547b1bed316/11.4-ubi/Dockerfile)
 
