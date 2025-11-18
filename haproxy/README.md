@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.3-dev12`, `3.3-dev`, `3.3-dev12-trixie`, `3.3-dev-trixie`](https://github.com/docker-library/haproxy/blob/9728348c87cd7a64e12d34b07a4d34eeb5d0a299/3.3/Dockerfile)
+-	[`3.3-dev13`, `3.3-dev`, `3.3-dev13-trixie`, `3.3-dev-trixie`](https://github.com/docker-library/haproxy/blob/a7d9a0ce7defef21d4186f8fa72ee8e88cc53d16/3.3/Dockerfile)
 
--	[`3.3-dev12-alpine`, `3.3-dev-alpine`, `3.3-dev12-alpine3.22`, `3.3-dev-alpine3.22`](https://github.com/docker-library/haproxy/blob/9728348c87cd7a64e12d34b07a4d34eeb5d0a299/3.3/alpine/Dockerfile)
+-	[`3.3-dev13-alpine`, `3.3-dev-alpine`, `3.3-dev13-alpine3.22`, `3.3-dev-alpine3.22`](https://github.com/docker-library/haproxy/blob/a7d9a0ce7defef21d4186f8fa72ee8e88cc53d16/3.3/alpine/Dockerfile)
 
 -	[`3.2.8`, `3.2`, `latest`, `lts`, `3.2.8-trixie`, `3.2-trixie`, `trixie`, `lts-trixie`](https://github.com/docker-library/haproxy/blob/4fd3078f4197405d08018930e1e0f386d7399be1/3.2/Dockerfile)
 
