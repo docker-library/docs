@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.10.0-sdk`, `3.10-sdk`, `3-sdk`, `stable-sdk`, `sdk`, `3.10.0`, `3.10`, `3`, `stable`, `latest`](https://github.com/dart-lang/dart-docker/blob/e451e91e93dfdece12812118a9977796ebce1870/stable/trixie/Dockerfile)
+-	[`3.10.1-sdk`, `3.10-sdk`, `3-sdk`, `stable-sdk`, `sdk`, `3.10.1`, `3.10`, `3`, `stable`, `latest`](https://github.com/dart-lang/dart-docker/blob/f83cb1e5062832c531dc106891b334dea6649f8d/stable/trixie/Dockerfile)
 
--	[`3.11.0-93.2.beta-sdk`, `beta-sdk`, `3.11.0-93.2.beta`, `beta`](https://github.com/dart-lang/dart-docker/blob/e451e91e93dfdece12812118a9977796ebce1870/beta/trixie/Dockerfile)
+-	[`3.11.0-93.2.beta-sdk`, `beta-sdk`, `3.11.0-93.2.beta`, `beta`](https://github.com/dart-lang/dart-docker/blob/f83cb1e5062832c531dc106891b334dea6649f8d/beta/trixie/Dockerfile)
 
 # Quick reference (cont.)
 
