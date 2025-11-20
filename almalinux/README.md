@@ -36,9 +36,9 @@ WARNING:
 
 -	[`8-minimal`, `8.10-minimal`, `8.10-minimal-20251117`](https://github.com/AlmaLinux/container-images/blob/64a4db9f7834fb38bf48f6b3f7e1ca1f9b5d6e8f/minimal/amd64/Dockerfile)
 
--	[`latest`, `9`, `9.6`, `9.6-20251117`](https://github.com/AlmaLinux/container-images/blob/2e1329e4c316005423da88d5b21c7a159b14a26a/default/amd64/Dockerfile)
+-	[`latest`, `9`, `9.7`, `9.7-20251119`](https://github.com/AlmaLinux/container-images/blob/5b9819ac7bf2ec7fb43707a0e2580a90834e852f/default/amd64/Dockerfile)
 
--	[`minimal`, `9-minimal`, `9.6-minimal`, `9.6-minimal-20251117`](https://github.com/AlmaLinux/container-images/blob/2e1329e4c316005423da88d5b21c7a159b14a26a/minimal/amd64/Dockerfile)
+-	[`minimal`, `9-minimal`, `9.7-minimal`, `9.7-minimal-20251119`](https://github.com/AlmaLinux/container-images/blob/5b9819ac7bf2ec7fb43707a0e2580a90834e852f/minimal/amd64/Dockerfile)
 
 # Quick reference (cont.)
 
