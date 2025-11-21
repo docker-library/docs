@@ -26,6 +26,10 @@ Also see the ["Getting Help with MariaDB" article on the MariaDB Knowledge Base]
 
 # Supported tags and respective `Dockerfile` links
 
+-	[`12.2.1-ubi10-rc`, `12.2-ubi10-rc`, `12.2.1-ubi-rc`, `12.2-ubi-rc`](https://github.com/MariaDB/mariadb-docker/blob/430ef0c93be28f7beca08980d3454b311988d42b/12.2-ubi/Dockerfile)
+
+-	[`12.2.1-noble-rc`, `12.2-noble-rc`, `12.2.1-rc`, `12.2-rc`](https://github.com/MariaDB/mariadb-docker/blob/430ef0c93be28f7beca08980d3454b311988d42b/12.2/Dockerfile)
+
 -	[`12.1.2-ubi10`, `12.1-ubi10`, `12-ubi10`, `12.1.2-ubi`, `12.1-ubi`, `12-ubi`](https://github.com/MariaDB/mariadb-docker/blob/a709b5a5bbe6580a3d2c97a8a841a2eac7f9c886/12.1-ubi/Dockerfile)
 
 -	[`12.1.2-noble`, `12.1-noble`, `12-noble`, `noble`, `12.1.2`, `12.1`, `12`, `latest`](https://github.com/MariaDB/mariadb-docker/blob/a709b5a5bbe6580a3d2c97a8a841a2eac7f9c886/12.1/Dockerfile)
