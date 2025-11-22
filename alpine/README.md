@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v6` builds of [the `alpine` official image](https://hub.docker.com/_/alpine) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,15 +26,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`20250108`, `edge`](https://github.com/alpinelinux/docker-alpine/blob/c1f1de232c970df2285c03050ab3747b8563164f/x86_64/Dockerfile)
+-	[`20250108`, `edge`](https://github.com/alpinelinux/docker-alpine/blob/c1f1de232c970df2285c03050ab3747b8563164f/armhf/Dockerfile)
 
--	[`3.22.2`, `3.22`, `3`, `latest`](https://github.com/alpinelinux/docker-alpine/blob/4dc13cbc7caffe03c98aa99f28e27c2fb6f7e74d/x86_64/Dockerfile)
+-	[`3.22.2`, `3.22`, `3`, `latest`](https://github.com/alpinelinux/docker-alpine/blob/4dc13cbc7caffe03c98aa99f28e27c2fb6f7e74d/armhf/Dockerfile)
 
--	[`3.21.5`, `3.21`](https://github.com/alpinelinux/docker-alpine/blob/2c30d5daeebb5090b1b6363a9e97dd88bf08a642/x86_64/Dockerfile)
+-	[`3.21.5`, `3.21`](https://github.com/alpinelinux/docker-alpine/blob/2c30d5daeebb5090b1b6363a9e97dd88bf08a642/armhf/Dockerfile)
 
--	[`3.20.8`, `3.20`](https://github.com/alpinelinux/docker-alpine/blob/f5ce8f036ef8a57481ae6f3f1cf7f2300cff8d29/x86_64/Dockerfile)
+-	[`3.20.8`, `3.20`](https://github.com/alpinelinux/docker-alpine/blob/f5ce8f036ef8a57481ae6f3f1cf7f2300cff8d29/armhf/Dockerfile)
 
--	[`3.19.9`, `3.19`](https://github.com/alpinelinux/docker-alpine/blob/ee939d52345248420cf62d4606ccc7152bc5a107/x86_64/Dockerfile)
+-	[`3.19.9`, `3.19`](https://github.com/alpinelinux/docker-alpine/blob/ee939d52345248420cf62d4606ccc7152bc5a107/armhf/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -66,7 +68,7 @@ WARNING:
 Use like you would any other base image:
 
 ```dockerfile
-FROM alpine:3.14
+FROM arm32v6/alpine:3.14
 RUN apk add --no-cache mysql-client
 ENTRYPOINT ["mysql"]
 ```
