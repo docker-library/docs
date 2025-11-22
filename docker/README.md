@@ -308,9 +308,18 @@ The `-v /my/own/var-lib-docker:/var/lib/docker` part of the command mounts the `
 
 The `docker` images come in many flavors, each designed for a specific use case.
 
-## `docker:<version>`
+**Note:** The `docker:stable`, `docker:test`, and related "channel" tags have been deprecated since June 2020 (see [docker-library/docker#179](https://github.com/docker-library/docker/pull/179)) and have not been updated since December 2020 (when Docker 20.10 was released). Suggested alternatives are below. `X` is a placeholder for the version; see the supported tags list for the current set of tags.
 
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+-	`docker:stable` ⏩ `docker:latest`, `docker:dind`, `docker:X`, `docker:cli`, etc
+-	`docker:test` ⏩ `docker:rc`, `docker:rc-dind`, `docker:X-rc`, `docker:rc-cli`, etc (only updated when there is an active pre-release; will not point to the same thing as `latest`)
+
+## `docker:<version>-cli`
+
+This image contains the Docker client command line interface (CLI) and Docker CLI plugins like `buildx` and `compose`. This is useful if you need to interact with a remote Docker engine but aren't planning to run the Docker engine in the container.
+
+## `docker:<version>`, `docker:<version>-dind`
+
+The default variant is the Docker in Docker variant. It contains the Docker engine as well as the Docker CLI and plugins that are included in the `cli` variant. It is useful for running Docker in Docker and for interacting with a Docker engine via the Docker CLI.
 
 ## `docker:<version>-rootless`
 
