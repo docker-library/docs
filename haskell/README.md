@@ -24,21 +24,25 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`9.12.2-bookworm`, `9.12-bookworm`, `9-bookworm`, `bookworm`, `9.12.2`, `9.12`, `9`, `latest`](https://github.com/haskell/docker-haskell/blob/c34f97738d08a138ef07878a4a1402b10670f87b/9.12/bookworm/Dockerfile)
+-	[`9.12.2-bookworm`, `9.12-bookworm`, `9-bookworm`, `bookworm`, `9.12.2`, `9.12`, `9`, `latest`](https://github.com/haskell/docker-haskell/blob/d478ceb8ff33f6208db87008e48cd084fd9747a1/9.12/bookworm/Dockerfile)
 
--	[`9.12.2-slim-bookworm`, `9.12-slim-bookworm`, `9-slim-bookworm`, `slim-bookworm`, `9-slim`, `slim`](https://github.com/haskell/docker-haskell/blob/c34f97738d08a138ef07878a4a1402b10670f87b/9.12/slim-bookworm/Dockerfile)
+-	[`9.12.2-slim-bookworm`, `9.12-slim-bookworm`, `9-slim-bookworm`, `slim-bookworm`, `9-slim`, `slim`](https://github.com/haskell/docker-haskell/blob/d478ceb8ff33f6208db87008e48cd084fd9747a1/9.12/slim-bookworm/Dockerfile)
 
--	[`9.10.2-bullseye`, `9.10-bullseye`, `9-bullseye`, `bullseye`, `9.10.2`, `9.10`](https://github.com/haskell/docker-haskell/blob/c34f97738d08a138ef07878a4a1402b10670f87b/9.10/bullseye/Dockerfile)
+-	[`9.10.3-bookworm`, `9.10-bookworm`](https://github.com/haskell/docker-haskell/blob/d478ceb8ff33f6208db87008e48cd084fd9747a1/9.10/bookworm/Dockerfile)
 
--	[`9.10.2-slim-bullseye`, `9.10-slim-bullseye`, `9-slim-bullseye`, `slim-bullseye`](https://github.com/haskell/docker-haskell/blob/c34f97738d08a138ef07878a4a1402b10670f87b/9.10/slim-bullseye/Dockerfile)
+-	[`9.10.3-slim-bookworm`, `9.10-slim-bookworm`](https://github.com/haskell/docker-haskell/blob/d478ceb8ff33f6208db87008e48cd084fd9747a1/9.10/slim-bookworm/Dockerfile)
 
--	[`9.8.4-bullseye`, `9.8-bullseye`, `9.8.4`, `9.8`](https://github.com/haskell/docker-haskell/blob/c34f97738d08a138ef07878a4a1402b10670f87b/9.8/bullseye/Dockerfile)
+-	[`9.10.3-bullseye`, `9.10-bullseye`, `9-bullseye`, `bullseye`, `9.10.3`, `9.10`](https://github.com/haskell/docker-haskell/blob/d478ceb8ff33f6208db87008e48cd084fd9747a1/9.10/bullseye/Dockerfile)
 
--	[`9.8.4-slim-bullseye`, `9.8-slim-bullseye`, `9.8.4-slim`, `9.8-slim`](https://github.com/haskell/docker-haskell/blob/c34f97738d08a138ef07878a4a1402b10670f87b/9.8/slim-bullseye/Dockerfile)
+-	[`9.10.3-slim-bullseye`, `9.10-slim-bullseye`, `9-slim-bullseye`, `slim-bullseye`](https://github.com/haskell/docker-haskell/blob/d478ceb8ff33f6208db87008e48cd084fd9747a1/9.10/slim-bullseye/Dockerfile)
 
--	[`9.6.7-bullseye`, `9.6-bullseye`, `9.6.7`, `9.6`](https://github.com/haskell/docker-haskell/blob/c34f97738d08a138ef07878a4a1402b10670f87b/9.6/bullseye/Dockerfile)
+-	[`9.8.4-bullseye`, `9.8-bullseye`, `9.8.4`, `9.8`](https://github.com/haskell/docker-haskell/blob/d478ceb8ff33f6208db87008e48cd084fd9747a1/9.8/bullseye/Dockerfile)
 
--	[`9.6.7-slim-bullseye`, `9.6-slim-bullseye`, `9.6.7-slim`, `9.6-slim`](https://github.com/haskell/docker-haskell/blob/c34f97738d08a138ef07878a4a1402b10670f87b/9.6/slim-bullseye/Dockerfile)
+-	[`9.8.4-slim-bullseye`, `9.8-slim-bullseye`, `9.8.4-slim`, `9.8-slim`](https://github.com/haskell/docker-haskell/blob/d478ceb8ff33f6208db87008e48cd084fd9747a1/9.8/slim-bullseye/Dockerfile)
+
+-	[`9.6.7-bullseye`, `9.6-bullseye`, `9.6.7`, `9.6`](https://github.com/haskell/docker-haskell/blob/d478ceb8ff33f6208db87008e48cd084fd9747a1/9.6/bullseye/Dockerfile)
+
+-	[`9.6.7-slim-bullseye`, `9.6-slim-bullseye`, `9.6.7-slim`, `9.6-slim`](https://github.com/haskell/docker-haskell/blob/d478ceb8ff33f6208db87008e48cd084fd9747a1/9.6/slim-bullseye/Dockerfile)
 
 # Quick reference (cont.)
 

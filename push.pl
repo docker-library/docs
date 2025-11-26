@@ -36,7 +36,7 @@ GetOptions(
 die 'no repos specified' unless @ARGV;
 
 my $ua = Mojo::UserAgent->new->max_redirects(10);
-$ua->transactor->name('Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.125 Safari/537.36');
+$ua->transactor->name($ENV{DOCS_PUSH_USER_AGENT} || 'https://github.com/docker-library/docs/tree/HEAD/push.pl');
 
 my $term = Term::ReadLine->new('docker-library-docs-push');
 unless (defined $username) {

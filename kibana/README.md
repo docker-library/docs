@@ -24,17 +24,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.17.28`](https://github.com/elastic/dockerfiles/blob/28b876f2aaba7bc27d76a1acd55cbc8ada9b5dea/kibana/Dockerfile)
+-	[`7.17.29`](https://github.com/elastic/dockerfiles/blob/28b876f2aaba7bc27d76a1acd55cbc8ada9b5dea/kibana/Dockerfile)
 
--	[`8.17.10`](https://github.com/elastic/dockerfiles/blob/3861498adce22926e852b1bbec340f159147a47f/kibana/Dockerfile)
+-	[`8.18.8`](https://github.com/elastic/dockerfiles/blob/6a7937aa369e0368020bcff78884c2b3645c50dd/kibana/Dockerfile)
 
--	[`8.18.7`](https://github.com/elastic/dockerfiles/blob/ce7db65871f3bbcb091c536150e0bd6848a5af00/kibana/Dockerfile)
+-	[`8.19.7`](https://github.com/elastic/dockerfiles/blob/f3f99114a6b4812345df1ec78119cc7a79887af2/kibana/Dockerfile)
 
--	[`8.19.4`](https://github.com/elastic/dockerfiles/blob/f99392291c86cb616dc6b16a1ef40985c89475c4/kibana/Dockerfile)
+-	[`9.1.7`](https://github.com/elastic/dockerfiles/blob/3bacf7a63eba7449c4488657f644080dd0c1be7a/kibana/Dockerfile)
 
--	[`9.0.7`](https://github.com/elastic/dockerfiles/blob/037d379705fb3b963b11b6a32c0aa58fb731f3d3/kibana/Dockerfile)
-
--	[`9.1.4`](https://github.com/elastic/dockerfiles/blob/661aa810065c3723595090c63c63b56344b7d81b/kibana/Dockerfile)
+-	[`9.2.1`](https://github.com/elastic/dockerfiles/blob/10f6479ec2158d24291e779766d1e0b0c5627091/kibana/Dockerfile)
 
 # Quick reference (cont.)
 

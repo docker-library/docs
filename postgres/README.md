@@ -24,53 +24,45 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`18rc1`, `18rc1-trixie`](https://github.com/docker-library/postgres/blob/a2433755c76d294477c85945d68944f8cdb7cf4b/18/trixie/Dockerfile)
+-	[`18.1`, `18`, `latest`, `18.1-trixie`, `18-trixie`, `trixie`](https://github.com/docker-library/postgres/blob/2925b19f45ceeb8ab8488eec226f2736abf297e1/18/trixie/Dockerfile)
 
--	[`18rc1-bookworm`](https://github.com/docker-library/postgres/blob/a2433755c76d294477c85945d68944f8cdb7cf4b/18/bookworm/Dockerfile)
+-	[`18.1-bookworm`, `18-bookworm`, `bookworm`](https://github.com/docker-library/postgres/blob/2925b19f45ceeb8ab8488eec226f2736abf297e1/18/bookworm/Dockerfile)
 
--	[`18rc1-alpine3.22`, `18rc1-alpine`](https://github.com/docker-library/postgres/blob/a2433755c76d294477c85945d68944f8cdb7cf4b/18/alpine3.22/Dockerfile)
+-	[`18.1-alpine3.22`, `18-alpine3.22`, `alpine3.22`, `18.1-alpine`, `18-alpine`, `alpine`](https://github.com/docker-library/postgres/blob/2925b19f45ceeb8ab8488eec226f2736abf297e1/18/alpine3.22/Dockerfile)
 
--	[`18rc1-alpine3.21`](https://github.com/docker-library/postgres/blob/a2433755c76d294477c85945d68944f8cdb7cf4b/18/alpine3.21/Dockerfile)
+-	[`18.1-alpine3.21`, `18-alpine3.21`, `alpine3.21`](https://github.com/docker-library/postgres/blob/2925b19f45ceeb8ab8488eec226f2736abf297e1/18/alpine3.21/Dockerfile)
 
--	[`17.6`, `17`, `latest`, `17.6-trixie`, `17-trixie`, `trixie`](https://github.com/docker-library/postgres/blob/a2433755c76d294477c85945d68944f8cdb7cf4b/17/trixie/Dockerfile)
+-	[`17.7`, `17`, `17.7-trixie`, `17-trixie`](https://github.com/docker-library/postgres/blob/2925b19f45ceeb8ab8488eec226f2736abf297e1/17/trixie/Dockerfile)
 
--	[`17.6-bookworm`, `17-bookworm`, `bookworm`](https://github.com/docker-library/postgres/blob/a2433755c76d294477c85945d68944f8cdb7cf4b/17/bookworm/Dockerfile)
+-	[`17.7-bookworm`, `17-bookworm`](https://github.com/docker-library/postgres/blob/2925b19f45ceeb8ab8488eec226f2736abf297e1/17/bookworm/Dockerfile)
 
--	[`17.6-alpine3.22`, `17-alpine3.22`, `alpine3.22`, `17.6-alpine`, `17-alpine`, `alpine`](https://github.com/docker-library/postgres/blob/a2433755c76d294477c85945d68944f8cdb7cf4b/17/alpine3.22/Dockerfile)
+-	[`17.7-alpine3.22`, `17-alpine3.22`, `17.7-alpine`, `17-alpine`](https://github.com/docker-library/postgres/blob/2925b19f45ceeb8ab8488eec226f2736abf297e1/17/alpine3.22/Dockerfile)
 
--	[`17.6-alpine3.21`, `17-alpine3.21`, `alpine3.21`](https://github.com/docker-library/postgres/blob/a2433755c76d294477c85945d68944f8cdb7cf4b/17/alpine3.21/Dockerfile)
+-	[`17.7-alpine3.21`, `17-alpine3.21`](https://github.com/docker-library/postgres/blob/2925b19f45ceeb8ab8488eec226f2736abf297e1/17/alpine3.21/Dockerfile)
 
--	[`16.10`, `16`, `16.10-trixie`, `16-trixie`](https://github.com/docker-library/postgres/blob/a2433755c76d294477c85945d68944f8cdb7cf4b/16/trixie/Dockerfile)
+-	[`16.11`, `16`, `16.11-trixie`, `16-trixie`](https://github.com/docker-library/postgres/blob/2925b19f45ceeb8ab8488eec226f2736abf297e1/16/trixie/Dockerfile)
 
--	[`16.10-bookworm`, `16-bookworm`](https://github.com/docker-library/postgres/blob/a2433755c76d294477c85945d68944f8cdb7cf4b/16/bookworm/Dockerfile)
+-	[`16.11-bookworm`, `16-bookworm`](https://github.com/docker-library/postgres/blob/2925b19f45ceeb8ab8488eec226f2736abf297e1/16/bookworm/Dockerfile)
 
--	[`16.10-alpine3.22`, `16-alpine3.22`, `16.10-alpine`, `16-alpine`](https://github.com/docker-library/postgres/blob/a2433755c76d294477c85945d68944f8cdb7cf4b/16/alpine3.22/Dockerfile)
+-	[`16.11-alpine3.22`, `16-alpine3.22`, `16.11-alpine`, `16-alpine`](https://github.com/docker-library/postgres/blob/2925b19f45ceeb8ab8488eec226f2736abf297e1/16/alpine3.22/Dockerfile)
 
--	[`16.10-alpine3.21`, `16-alpine3.21`](https://github.com/docker-library/postgres/blob/a2433755c76d294477c85945d68944f8cdb7cf4b/16/alpine3.21/Dockerfile)
+-	[`16.11-alpine3.21`, `16-alpine3.21`](https://github.com/docker-library/postgres/blob/2925b19f45ceeb8ab8488eec226f2736abf297e1/16/alpine3.21/Dockerfile)
 
--	[`15.14`, `15`, `15.14-trixie`, `15-trixie`](https://github.com/docker-library/postgres/blob/a2433755c76d294477c85945d68944f8cdb7cf4b/15/trixie/Dockerfile)
+-	[`15.15`, `15`, `15.15-trixie`, `15-trixie`](https://github.com/docker-library/postgres/blob/2925b19f45ceeb8ab8488eec226f2736abf297e1/15/trixie/Dockerfile)
 
--	[`15.14-bookworm`, `15-bookworm`](https://github.com/docker-library/postgres/blob/a2433755c76d294477c85945d68944f8cdb7cf4b/15/bookworm/Dockerfile)
+-	[`15.15-bookworm`, `15-bookworm`](https://github.com/docker-library/postgres/blob/2925b19f45ceeb8ab8488eec226f2736abf297e1/15/bookworm/Dockerfile)
 
--	[`15.14-alpine3.22`, `15-alpine3.22`, `15.14-alpine`, `15-alpine`](https://github.com/docker-library/postgres/blob/a2433755c76d294477c85945d68944f8cdb7cf4b/15/alpine3.22/Dockerfile)
+-	[`15.15-alpine3.22`, `15-alpine3.22`, `15.15-alpine`, `15-alpine`](https://github.com/docker-library/postgres/blob/2925b19f45ceeb8ab8488eec226f2736abf297e1/15/alpine3.22/Dockerfile)
 
--	[`15.14-alpine3.21`, `15-alpine3.21`](https://github.com/docker-library/postgres/blob/a2433755c76d294477c85945d68944f8cdb7cf4b/15/alpine3.21/Dockerfile)
+-	[`15.15-alpine3.21`, `15-alpine3.21`](https://github.com/docker-library/postgres/blob/2925b19f45ceeb8ab8488eec226f2736abf297e1/15/alpine3.21/Dockerfile)
 
--	[`14.19`, `14`, `14.19-trixie`, `14-trixie`](https://github.com/docker-library/postgres/blob/a2433755c76d294477c85945d68944f8cdb7cf4b/14/trixie/Dockerfile)
+-	[`14.20`, `14`, `14.20-trixie`, `14-trixie`](https://github.com/docker-library/postgres/blob/2925b19f45ceeb8ab8488eec226f2736abf297e1/14/trixie/Dockerfile)
 
--	[`14.19-bookworm`, `14-bookworm`](https://github.com/docker-library/postgres/blob/a2433755c76d294477c85945d68944f8cdb7cf4b/14/bookworm/Dockerfile)
+-	[`14.20-bookworm`, `14-bookworm`](https://github.com/docker-library/postgres/blob/2925b19f45ceeb8ab8488eec226f2736abf297e1/14/bookworm/Dockerfile)
 
--	[`14.19-alpine3.22`, `14-alpine3.22`, `14.19-alpine`, `14-alpine`](https://github.com/docker-library/postgres/blob/a2433755c76d294477c85945d68944f8cdb7cf4b/14/alpine3.22/Dockerfile)
+-	[`14.20-alpine3.22`, `14-alpine3.22`, `14.20-alpine`, `14-alpine`](https://github.com/docker-library/postgres/blob/2925b19f45ceeb8ab8488eec226f2736abf297e1/14/alpine3.22/Dockerfile)
 
--	[`14.19-alpine3.21`, `14-alpine3.21`](https://github.com/docker-library/postgres/blob/a2433755c76d294477c85945d68944f8cdb7cf4b/14/alpine3.21/Dockerfile)
-
--	[`13.22`, `13`, `13.22-trixie`, `13-trixie`](https://github.com/docker-library/postgres/blob/a2433755c76d294477c85945d68944f8cdb7cf4b/13/trixie/Dockerfile)
-
--	[`13.22-bookworm`, `13-bookworm`](https://github.com/docker-library/postgres/blob/a2433755c76d294477c85945d68944f8cdb7cf4b/13/bookworm/Dockerfile)
-
--	[`13.22-alpine3.22`, `13-alpine3.22`, `13.22-alpine`, `13-alpine`](https://github.com/docker-library/postgres/blob/a2433755c76d294477c85945d68944f8cdb7cf4b/13/alpine3.22/Dockerfile)
-
--	[`13.22-alpine3.21`, `13-alpine3.21`](https://github.com/docker-library/postgres/blob/a2433755c76d294477c85945d68944f8cdb7cf4b/13/alpine3.21/Dockerfile)
+-	[`14.20-alpine3.21`, `14-alpine3.21`](https://github.com/docker-library/postgres/blob/2925b19f45ceeb8ab8488eec226f2736abf297e1/14/alpine3.21/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -223,20 +215,7 @@ Users who wish to opt-in to this change on older releases can do so by setting `
 
 > **Important Note:** (for PostgreSQL 17 and below) Mount the data volume at `/var/lib/postgresql/data` and not at `/var/lib/postgresql` because mounts at the latter path WILL NOT PERSIST database data when the container is re-created. The Dockerfile that builds the image declares a volume at `/var/lib/postgresql/data` and if no data volume is mounted at that path then the container runtime will automatically create an [anonymous volume](https://docs.docker.com/engine/storage/#volumes) that is not reused across container re-creations. Data will be written to the anonymous volume rather than your intended data volume and won't persist when the container is deleted and re-created.
 
-This optional variable can be used to define another location - like a subdirectory - for the database files. The default is `/var/lib/postgresql/data`. If the data volume you're using is a filesystem mountpoint (like with GCE persistent disks), or remote folder that cannot be chowned to the `postgres` user (like some NFS mounts), or contains folders/files (e.g. `lost+found`), Postgres `initdb` requires a subdirectory to be created within the mountpoint to contain the data.
-
-For example:
-
-```console
-$ docker run -d \
-	--name some-postgres \
-	-e POSTGRES_PASSWORD=mysecretpassword \
-	-e PGDATA=/var/lib/postgresql/data/pgdata \
-	-v /custom/mount:/var/lib/postgresql/data \
-	postgres
-```
-
-This is an environment variable that is not Docker specific. Because the variable is used by the `postgres` server binary (see the [PostgreSQL docs](https://www.postgresql.org/docs/14/app-postgres.html#id-1.9.5.14.7)), the entrypoint script takes it into account.
+This (`PGDATA`) is an environment variable that is not Docker specific. Because the variable is used by the `postgres` server binary (see the [PostgreSQL docs](https://www.postgresql.org/docs/14/app-postgres.html#id-1.9.5.14.7)), the entrypoint script takes it into account.
 
 ## Docker Secrets
 
@@ -325,7 +304,7 @@ When using the Alpine variants, any postgres extension not listed in [postgres-c
 
 As of [docker-library/postgres#253](https://github.com/docker-library/postgres/pull/253), this image supports running as a (mostly) arbitrary user via `--user` on `docker run`. As of [docker-library/postgres#1018](https://github.com/docker-library/postgres/pull/1018), this is also the case for the Alpine variants.
 
-The main caveat to note is that `postgres` doesn't care what UID it runs as (as long as the owner of `/var/lib/postgresql/data` matches), but `initdb` *does* care (and needs the user to exist in `/etc/passwd`):
+The main caveat to note is that `postgres` doesn't care what UID it runs as (as long as the owner of `PGDATA` matches), but `initdb` *does* care (and needs the user to exist in `/etc/passwd`):
 
 ```console
 $ docker run -it --rm --user www-data -e POSTGRES_PASSWORD=mysecretpassword postgres
@@ -351,13 +330,13 @@ The three easiest ways to get around this:
 3.	initialize the target directory separately from the final runtime (with a `chown` in between):
 
 	```console
-	$ docker volume create pgdata
-	$ docker run -it --rm -v pgdata:/var/lib/postgresql/data -e POSTGRES_PASSWORD=mysecretpassword postgres
+	$ docker volume create pg
+	$ docker run -it --rm -v pg:/var/lib/postgresql -e POSTGRES_PASSWORD=mysecretpassword postgres
 	The files belonging to this database system will be owned by user "postgres".
 	...
 	( once it's finished initializing successfully and is waiting for connections, stop it )
-	$ docker run -it --rm -v pgdata:/var/lib/postgresql/data bash chown -R 1000:1000 /var/lib/postgresql/data
-	$ docker run -it --rm --user 1000:1000 -v pgdata:/var/lib/postgresql/data postgres
+	$ docker run -it --rm -v pg:/var/lib/postgresql bash chown -R 1000:1000 /var/lib/postgresql
+	$ docker run -it --rm --user 1000:1000 -v pg:/var/lib/postgresql postgres
 	LOG:  database system was shut down at 2017-01-20 00:03:23 UTC
 	LOG:  MultiXact member wraparound protections are now enabled
 	LOG:  autovacuum launcher started
@@ -383,10 +362,10 @@ The Docker documentation is a good starting point for understanding the differen
 2.	Start your `postgres` container like this:
 
 	```console
-	$ docker run --name some-postgres -v /my/own/datadir:/var/lib/postgresql/data -e POSTGRES_PASSWORD=mysecretpassword -d postgres:tag
+	$ docker run --name some-postgres -v /my/own/datadir:/var/lib/postgresql -e POSTGRES_PASSWORD=mysecretpassword -d postgres:tag
 	```
 
-The `-v /my/own/datadir:/var/lib/postgresql/data` part of the command mounts the `/my/own/datadir` directory from the underlying host system as `/var/lib/postgresql/data` inside the container, where PostgreSQL by default will write its data files.
+The `-v /my/own/datadir:/var/lib/postgresql` part of the command mounts the `/my/own/datadir` directory from the underlying host system as `/var/lib/postgresql` inside the container, where PostgreSQL by default will write its data files.
 
 # Image Variants
 

@@ -26,29 +26,29 @@ Also see the ["Getting Help with MariaDB" article on the MariaDB Knowledge Base]
 
 # Supported tags and respective `Dockerfile` links
 
--	[`12.1.1-ubi10-rc`, `12.1-ubi10-rc`, `12.1.1-ubi-rc`, `12.1-ubi-rc`](https://github.com/MariaDB/mariadb-docker/blob/dd7e1e1e35422011e9dbfa46f22c9e24f49e9fba/12.1-ubi/Dockerfile)
+-	[`12.2.1-ubi10-rc`, `12.2-ubi10-rc`, `12.2.1-ubi-rc`, `12.2-ubi-rc`](https://github.com/MariaDB/mariadb-docker/blob/430ef0c93be28f7beca08980d3454b311988d42b/12.2-ubi/Dockerfile)
 
--	[`12.1.1-noble-rc`, `12.1-noble-rc`, `12.1.1-rc`, `12.1-rc`](https://github.com/MariaDB/mariadb-docker/blob/cdffb7d2fd712249f3f386497117825be6442afa/12.1/Dockerfile)
+-	[`12.2.1-noble-rc`, `12.2-noble-rc`, `12.2.1-rc`, `12.2-rc`](https://github.com/MariaDB/mariadb-docker/blob/430ef0c93be28f7beca08980d3454b311988d42b/12.2/Dockerfile)
 
--	[`12.0.2-ubi10`, `12.0-ubi10`, `12-ubi10`, `12.0.2-ubi`, `12.0-ubi`, `12-ubi`](https://github.com/MariaDB/mariadb-docker/blob/dd7e1e1e35422011e9dbfa46f22c9e24f49e9fba/12.0-ubi/Dockerfile)
+-	[`12.1.2-ubi10`, `12.1-ubi10`, `12-ubi10`, `12.1.2-ubi`, `12.1-ubi`, `12-ubi`](https://github.com/MariaDB/mariadb-docker/blob/a709b5a5bbe6580a3d2c97a8a841a2eac7f9c886/12.1-ubi/Dockerfile)
 
--	[`12.0.2-noble`, `12.0-noble`, `12-noble`, `noble`, `12.0.2`, `12.0`, `12`, `latest`](https://github.com/MariaDB/mariadb-docker/blob/6a5611cd9dd70a8dcb24195cc8dd2147dd6471e3/12.0/Dockerfile)
+-	[`12.1.2-noble`, `12.1-noble`, `12-noble`, `noble`, `12.1.2`, `12.1`, `12`, `latest`](https://github.com/MariaDB/mariadb-docker/blob/a709b5a5bbe6580a3d2c97a8a841a2eac7f9c886/12.1/Dockerfile)
 
--	[`11.8.3-ubi9`, `11.8-ubi9`, `11-ubi9`, `lts-ubi9`, `11.8.3-ubi`, `11.8-ubi`, `11-ubi`, `lts-ubi`](https://github.com/MariaDB/mariadb-docker/blob/dd7e1e1e35422011e9dbfa46f22c9e24f49e9fba/11.8-ubi/Dockerfile)
+-	[`11.8.5-ubi9`, `11.8-ubi9`, `11-ubi9`, `lts-ubi9`, `11.8.5-ubi`, `11.8-ubi`, `11-ubi`, `lts-ubi`](https://github.com/MariaDB/mariadb-docker/blob/e95d4eddd8f5b3644a7c163e1363ff2bbd07d3e6/11.8-ubi/Dockerfile)
 
--	[`11.8.3-noble`, `11.8-noble`, `11-noble`, `lts-noble`, `11.8.3`, `11.8`, `11`, `lts`](https://github.com/MariaDB/mariadb-docker/blob/cdffb7d2fd712249f3f386497117825be6442afa/11.8/Dockerfile)
+-	[`11.8.5-noble`, `11.8-noble`, `11-noble`, `lts-noble`, `11.8.5`, `11.8`, `11`, `lts`](https://github.com/MariaDB/mariadb-docker/blob/e95d4eddd8f5b3644a7c163e1363ff2bbd07d3e6/11.8/Dockerfile)
 
--	[`11.4.8-ubi9`, `11.4-ubi9`, `11.4.8-ubi`, `11.4-ubi`](https://github.com/MariaDB/mariadb-docker/blob/dd7e1e1e35422011e9dbfa46f22c9e24f49e9fba/11.4-ubi/Dockerfile)
+-	[`11.4.9-ubi9`, `11.4-ubi9`, `11.4.9-ubi`, `11.4-ubi`](https://github.com/MariaDB/mariadb-docker/blob/5ad00a82b5bb2705825c7afb670f6547b1bed316/11.4-ubi/Dockerfile)
 
--	[`11.4.8-noble`, `11.4-noble`, `11.4.8`, `11.4`](https://github.com/MariaDB/mariadb-docker/blob/cdffb7d2fd712249f3f386497117825be6442afa/11.4/Dockerfile)
+-	[`11.4.9-noble`, `11.4-noble`, `11.4.9`, `11.4`](https://github.com/MariaDB/mariadb-docker/blob/5ad00a82b5bb2705825c7afb670f6547b1bed316/11.4/Dockerfile)
 
--	[`10.11.14-ubi9`, `10.11-ubi9`, `10-ubi9`, `10.11.14-ubi`, `10.11-ubi`, `10-ubi`](https://github.com/MariaDB/mariadb-docker/blob/dd7e1e1e35422011e9dbfa46f22c9e24f49e9fba/10.11-ubi/Dockerfile)
+-	[`10.11.15-ubi9`, `10.11-ubi9`, `10-ubi9`, `10.11.15-ubi`, `10.11-ubi`, `10-ubi`](https://github.com/MariaDB/mariadb-docker/blob/5ad00a82b5bb2705825c7afb670f6547b1bed316/10.11-ubi/Dockerfile)
 
--	[`10.11.14-jammy`, `10.11-jammy`, `10-jammy`, `10.11.14`, `10.11`, `10`](https://github.com/MariaDB/mariadb-docker/blob/cdffb7d2fd712249f3f386497117825be6442afa/10.11/Dockerfile)
+-	[`10.11.15-jammy`, `10.11-jammy`, `10-jammy`, `10.11.15`, `10.11`, `10`](https://github.com/MariaDB/mariadb-docker/blob/5ad00a82b5bb2705825c7afb670f6547b1bed316/10.11/Dockerfile)
 
--	[`10.6.23-ubi9`, `10.6-ubi9`, `10.6.23-ubi`, `10.6-ubi`](https://github.com/MariaDB/mariadb-docker/blob/dd7e1e1e35422011e9dbfa46f22c9e24f49e9fba/10.6-ubi/Dockerfile)
+-	[`10.6.24-ubi9`, `10.6-ubi9`, `10.6.24-ubi`, `10.6-ubi`](https://github.com/MariaDB/mariadb-docker/blob/5ad00a82b5bb2705825c7afb670f6547b1bed316/10.6-ubi/Dockerfile)
 
--	[`10.6.23-jammy`, `10.6-jammy`, `10.6.23`, `10.6`](https://github.com/MariaDB/mariadb-docker/blob/cdffb7d2fd712249f3f386497117825be6442afa/10.6/Dockerfile)
+-	[`10.6.24-jammy`, `10.6-jammy`, `10.6.24`, `10.6`](https://github.com/MariaDB/mariadb-docker/blob/5ad00a82b5bb2705825c7afb670f6547b1bed316/10.6/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -238,8 +238,8 @@ Custom configuration files should end in `.cnf` and be mounted read only at the 
 
 The `mariadb` image configuration contains the Ubuntu MariaDB variables with two custom changes for the container:
 
-	[host-cache-size=0](https://mariadb.com/kb/en/server-system-variables/#host_cache_size)
-	[skip-name-resolve](https://mariadb.com/kb/en/server-system-variables/#skip_name_resolve)
+-	[`host-cache-size=0`](https://mariadb.com/kb/en/server-system-variables/#host_cache_size)
+-	[`skip-name-resolve`](https://mariadb.com/kb/en/server-system-variables/#skip_name_resolve)
 
 These disable the authentication of `user@hostname` users. To re-enable the `skip-name-resolve` use `disable-skip-name-resolve` as variable or argument. When enabled, the `host-cache-size` should be sufficient for the number of containers connecting to the `mariadb`.
 

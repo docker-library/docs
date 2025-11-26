@@ -24,13 +24,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.0.10`, `6.0`, `6`, `latest`](https://github.com/docker-library/ghost/blob/fdba3d80f50da610007165f5fe46f9b8af69764b/6/debian/Dockerfile)
+-	[`6.9.1-bookworm`, `6.9.1`, `6.9-bookworm`, `6.9`, `6-bookworm`, `6`, `bookworm`, `latest`](https://github.com/docker-library/ghost/blob/57b11fbda4a8fd8e8a03397cab85837eb9ac0dc3/6/bookworm/Dockerfile)
 
--	[`6.0.10-alpine`, `6.0-alpine`, `6-alpine`, `alpine`](https://github.com/docker-library/ghost/blob/fdba3d80f50da610007165f5fe46f9b8af69764b/6/alpine/Dockerfile)
+-	[`6.9.1-alpine3.22`, `6.9.1-alpine`, `6.9-alpine3.22`, `6.9-alpine`, `6-alpine3.22`, `6-alpine`, `alpine3.22`, `alpine`](https://github.com/docker-library/ghost/blob/57b11fbda4a8fd8e8a03397cab85837eb9ac0dc3/6/alpine3.22/Dockerfile)
 
--	[`5.130.5`, `5.130`, `5`](https://github.com/docker-library/ghost/blob/fdba3d80f50da610007165f5fe46f9b8af69764b/5/debian/Dockerfile)
+-	[`5.130.5-bookworm`, `5.130.5`, `5.130-bookworm`, `5.130`, `5-bookworm`, `5`](https://github.com/docker-library/ghost/blob/57b11fbda4a8fd8e8a03397cab85837eb9ac0dc3/5/bookworm/Dockerfile)
 
--	[`5.130.5-alpine`, `5.130-alpine`, `5-alpine`](https://github.com/docker-library/ghost/blob/fdba3d80f50da610007165f5fe46f9b8af69764b/5/alpine/Dockerfile)
+-	[`5.130.5-alpine3.22`, `5.130.5-alpine`, `5.130-alpine3.22`, `5.130-alpine`, `5-alpine3.22`, `5-alpine`](https://github.com/docker-library/ghost/blob/57b11fbda4a8fd8e8a03397cab85837eb9ac0dc3/5/alpine3.22/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -38,7 +38,7 @@ WARNING:
 	[https://github.com/docker-library/ghost/issues](https://github.com/docker-library/ghost/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/ghost/), [`arm32v6`](https://hub.docker.com/r/arm32v6/ghost/), [`arm32v7`](https://hub.docker.com/r/arm32v7/ghost/), [`arm64v8`](https://hub.docker.com/r/arm64v8/ghost/), [`ppc64le`](https://hub.docker.com/r/ppc64le/ghost/), [`s390x`](https://hub.docker.com/r/s390x/ghost/)
+	[`amd64`](https://hub.docker.com/r/amd64/ghost/), [`arm32v7`](https://hub.docker.com/r/arm32v7/ghost/), [`arm64v8`](https://hub.docker.com/r/arm64v8/ghost/), [`s390x`](https://hub.docker.com/r/s390x/ghost/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/ghost/` directory](https://github.com/docker-library/repo-info/blob/master/repos/ghost) ([history](https://github.com/docker-library/repo-info/commits/master/repos/ghost))  
@@ -190,6 +190,8 @@ The `ghost` images come in many flavors, each designed for a specific use case.
 ## `ghost:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+Some of these tags may have names like bookworm in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 ## `ghost:<version>-alpine`
 

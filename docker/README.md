@@ -28,22 +28,37 @@ WARNING:
 
 ## Simple Tags
 
--	[`28.4.0-cli`, `28.4-cli`, `28-cli`, `cli`, `28.4.0-cli-alpine3.22`](https://github.com/docker-library/docker/blob/14501013a18c57ec6961114d38753c5152c2cfc0/28/cli/Dockerfile)
+-	[`29.1.0-rc.1-cli`, `29-rc-cli`, `rc-cli`, `29.1.0-rc.1-cli-alpine3.22`](https://github.com/docker-library/docker/blob/64aaac0dbd8bff5ba44c56e47a7e1576e5f34b51/29-rc/cli/Dockerfile)
 
--	[`28.4.0-dind`, `28.4-dind`, `28-dind`, `dind`, `28.4.0-dind-alpine3.22`, `28.4.0`, `28.4`, `28`, `latest`, `28.4.0-alpine3.22`](https://github.com/docker-library/docker/blob/1c159972e22aa2ebda6c851742be43e67778d13b/28/dind/Dockerfile)
+-	[`29.1.0-rc.1-dind`, `29-rc-dind`, `rc-dind`, `29.1.0-rc.1-dind-alpine3.22`, `29.1.0-rc.1`, `29-rc`, `rc`, `29.1.0-rc.1-alpine3.22`](https://github.com/docker-library/docker/blob/64aaac0dbd8bff5ba44c56e47a7e1576e5f34b51/29-rc/dind/Dockerfile)
 
--	[`28.4.0-dind-rootless`, `28.4-dind-rootless`, `28-dind-rootless`, `dind-rootless`](https://github.com/docker-library/docker/blob/1c159972e22aa2ebda6c851742be43e67778d13b/28/dind-rootless/Dockerfile)
+-	[`29.1.0-rc.1-dind-rootless`, `29-rc-dind-rootless`, `rc-dind-rootless`](https://github.com/docker-library/docker/blob/64aaac0dbd8bff5ba44c56e47a7e1576e5f34b51/29-rc/dind-rootless/Dockerfile)
 
--	[`28.4.0-windowsservercore-ltsc2025`, `28.4-windowsservercore-ltsc2025`, `28-windowsservercore-ltsc2025`, `windowsservercore-ltsc2025`](https://github.com/docker-library/docker/blob/14501013a18c57ec6961114d38753c5152c2cfc0/28/windows/windowsservercore-ltsc2025/Dockerfile)
+-	[`29.1.0-rc.1-windowsservercore-ltsc2025`, `29-rc-windowsservercore-ltsc2025`, `rc-windowsservercore-ltsc2025`](https://github.com/docker-library/docker/blob/64aaac0dbd8bff5ba44c56e47a7e1576e5f34b51/29-rc/windows/windowsservercore-ltsc2025/Dockerfile)
 
--	[`28.4.0-windowsservercore-ltsc2022`, `28.4-windowsservercore-ltsc2022`, `28-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`](https://github.com/docker-library/docker/blob/14501013a18c57ec6961114d38753c5152c2cfc0/28/windows/windowsservercore-ltsc2022/Dockerfile)
+-	[`29.1.0-rc.1-windowsservercore-ltsc2022`, `29-rc-windowsservercore-ltsc2022`, `rc-windowsservercore-ltsc2022`](https://github.com/docker-library/docker/blob/64aaac0dbd8bff5ba44c56e47a7e1576e5f34b51/29-rc/windows/windowsservercore-ltsc2022/Dockerfile)
+
+-	[`29.0.4-cli`, `29.0-cli`, `29-cli`, `cli`, `29.0.4-cli-alpine3.22`](https://github.com/docker-library/docker/blob/e3144ea7f1c552b2b2ad33cf9b2743705509d9d3/29/cli/Dockerfile)
+
+-	[`29.0.4-dind`, `29.0-dind`, `29-dind`, `dind`, `29.0.4-dind-alpine3.22`, `29.0.4`, `29.0`, `29`, `latest`, `29.0.4-alpine3.22`](https://github.com/docker-library/docker/blob/e3144ea7f1c552b2b2ad33cf9b2743705509d9d3/29/dind/Dockerfile)
+
+-	[`29.0.4-dind-rootless`, `29.0-dind-rootless`, `29-dind-rootless`, `dind-rootless`](https://github.com/docker-library/docker/blob/e3144ea7f1c552b2b2ad33cf9b2743705509d9d3/29/dind-rootless/Dockerfile)
+
+-	[`29.0.4-windowsservercore-ltsc2025`, `29.0-windowsservercore-ltsc2025`, `29-windowsservercore-ltsc2025`, `windowsservercore-ltsc2025`](https://github.com/docker-library/docker/blob/e3144ea7f1c552b2b2ad33cf9b2743705509d9d3/29/windows/windowsservercore-ltsc2025/Dockerfile)
+
+-	[`29.0.4-windowsservercore-ltsc2022`, `29.0-windowsservercore-ltsc2022`, `29-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`](https://github.com/docker-library/docker/blob/e3144ea7f1c552b2b2ad33cf9b2743705509d9d3/29/windows/windowsservercore-ltsc2022/Dockerfile)
 
 ## Shared Tags
 
--	`28.4.0-windowsservercore`, `28.4-windowsservercore`, `28-windowsservercore`, `windowsservercore`:
+-	`29.1.0-rc.1-windowsservercore`, `29-rc-windowsservercore`, `rc-windowsservercore`:
 
-	-	[`28.4.0-windowsservercore-ltsc2025`](https://github.com/docker-library/docker/blob/14501013a18c57ec6961114d38753c5152c2cfc0/28/windows/windowsservercore-ltsc2025/Dockerfile)
-	-	[`28.4.0-windowsservercore-ltsc2022`](https://github.com/docker-library/docker/blob/14501013a18c57ec6961114d38753c5152c2cfc0/28/windows/windowsservercore-ltsc2022/Dockerfile)
+	-	[`29.1.0-rc.1-windowsservercore-ltsc2025`](https://github.com/docker-library/docker/blob/64aaac0dbd8bff5ba44c56e47a7e1576e5f34b51/29-rc/windows/windowsservercore-ltsc2025/Dockerfile)
+	-	[`29.1.0-rc.1-windowsservercore-ltsc2022`](https://github.com/docker-library/docker/blob/64aaac0dbd8bff5ba44c56e47a7e1576e5f34b51/29-rc/windows/windowsservercore-ltsc2022/Dockerfile)
+
+-	`29.0.4-windowsservercore`, `29.0-windowsservercore`, `29-windowsservercore`, `windowsservercore`:
+
+	-	[`29.0.4-windowsservercore-ltsc2025`](https://github.com/docker-library/docker/blob/e3144ea7f1c552b2b2ad33cf9b2743705509d9d3/29/windows/windowsservercore-ltsc2025/Dockerfile)
+	-	[`29.0.4-windowsservercore-ltsc2022`](https://github.com/docker-library/docker/blob/e3144ea7f1c552b2b2ad33cf9b2743705509d9d3/29/windows/windowsservercore-ltsc2022/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -293,9 +308,18 @@ The `-v /my/own/var-lib-docker:/var/lib/docker` part of the command mounts the `
 
 The `docker` images come in many flavors, each designed for a specific use case.
 
-## `docker:<version>`
+**Note:** The `docker:stable`, `docker:test`, and related "channel" tags have been deprecated since June 2020 (see [docker-library/docker#179](https://github.com/docker-library/docker/pull/179)) and have not been updated since December 2020 (when Docker 20.10 was released). Suggested alternatives are below. `X` is a placeholder for the version; see the supported tags list for the current set of tags.
 
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+-	`docker:stable` ⏩ `docker:latest`, `docker:dind`, `docker:X`, `docker:cli`, etc
+-	`docker:test` ⏩ `docker:rc`, `docker:rc-dind`, `docker:X-rc`, `docker:rc-cli`, etc (only updated when there is an active pre-release; will not point to the same thing as `latest`)
+
+## `docker:<version>-cli`
+
+This image contains the Docker client command line interface (CLI) and Docker CLI plugins like `buildx` and `compose`. This is useful if you need to interact with a remote Docker engine but aren't planning to run the Docker engine in the container.
+
+## `docker:<version>`, `docker:<version>-dind`
+
+The default variant is the Docker in Docker variant. It contains the Docker engine as well as the Docker CLI and plugins that are included in the `cli` variant. It is useful for running Docker in Docker and for interacting with a Docker engine via the Docker CLI.
 
 ## `docker:<version>-rootless`
 

@@ -14,6 +14,17 @@ WARNING:
 
 -->
 
+# **DEPRECATION NOTICE**
+
+With the release of Liquibase 5.0, this repository is officially deprecated and will not receive any further releases beyond patch updates.
+
+Users are encouraged to switch to one of the following alternatives, depending on your needs:
+
+-	`liquibase/liquibase` -- Community Edition under Functional Source License (if you have a valid Liquibase License Key, you should use `liquibase/liquibase-secure` instead)
+-	`liquibase/liquibase-secure` -- Commercial version with enterprise features
+
+As of Liquibase 5.0, the Community edition and the official Docker Community liquibase image no longer include database drivers or extensions by default. You must now explicitly add database drivers using the Liquibase Package Manager (LPM), or manually install/mount extensions into the container. See [the Liquibase 5.0 Release Announcement](https://www.liquibase.com/blog/liquibase-5-0-release) for more details.
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,9 +35,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.33`, `4.33.0`, `latest`](https://github.com/liquibase/docker/blob/e54a7dd42e0afd00fa3a85d3ef3d90a3b583c613/Dockerfile)
+-	[`5.0`, `5.0.1`, `latest`](https://github.com/liquibase/docker/blob/c67a0359179ab8f862f202e313461452294f944f/Dockerfile)
 
--	[`4.33-alpine`, `4.33.0-alpine`, `alpine`](https://github.com/liquibase/docker/blob/e54a7dd42e0afd00fa3a85d3ef3d90a3b583c613/Dockerfile.alpine)
+-	[`5.0-alpine`, `5.0.1-alpine`, `alpine`](https://github.com/liquibase/docker/blob/c67a0359179ab8f862f202e313461452294f944f/Dockerfile.alpine)
 
 # Quick reference (cont.)
 

@@ -28,17 +28,17 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`30.0.15-apache`, `30.0-apache`, `30-apache`, `30.0.15`, `30.0`, `30`](https://github.com/nextcloud/docker/blob/2ac1f1346ce19ca34193c8b72b87fee4e8d377e7/30/apache/Dockerfile)
+-	[`31.0.11-apache`, `31.0-apache`, `31-apache`, `stable-apache`, `production-apache`, `31.0.11`, `31.0`, `31`, `stable`, `production`](https://github.com/nextcloud/docker/blob/32ff0009669d4a63671e6dff0bb137357b9c0a2d/31/apache/Dockerfile)
 
--	[`30.0.15-fpm`, `30.0-fpm`, `30-fpm`](https://github.com/nextcloud/docker/blob/2ac1f1346ce19ca34193c8b72b87fee4e8d377e7/30/fpm/Dockerfile)
+-	[`31.0.11-fpm`, `31.0-fpm`, `31-fpm`, `stable-fpm`, `production-fpm`](https://github.com/nextcloud/docker/blob/32ff0009669d4a63671e6dff0bb137357b9c0a2d/31/fpm/Dockerfile)
 
--	[`30.0.15-fpm-alpine`, `30.0-fpm-alpine`, `30-fpm-alpine`](https://github.com/nextcloud/docker/blob/2ac1f1346ce19ca34193c8b72b87fee4e8d377e7/30/fpm-alpine/Dockerfile)
+-	[`31.0.11-fpm-alpine`, `31.0-fpm-alpine`, `31-fpm-alpine`, `stable-fpm-alpine`, `production-fpm-alpine`](https://github.com/nextcloud/docker/blob/32ff0009669d4a63671e6dff0bb137357b9c0a2d/31/fpm-alpine/Dockerfile)
 
--	[`31.0.9-apache`, `31.0-apache`, `31-apache`, `apache`, `stable-apache`, `production-apache`, `31.0.9`, `31.0`, `31`, `latest`, `stable`, `production`](https://github.com/nextcloud/docker/blob/2ac1f1346ce19ca34193c8b72b87fee4e8d377e7/31/apache/Dockerfile)
+-	[`32.0.2-apache`, `32.0-apache`, `32-apache`, `apache`, `32.0.2`, `32.0`, `32`, `latest`](https://github.com/nextcloud/docker/blob/32ff0009669d4a63671e6dff0bb137357b9c0a2d/32/apache/Dockerfile)
 
--	[`31.0.9-fpm`, `31.0-fpm`, `31-fpm`, `fpm`, `stable-fpm`, `production-fpm`](https://github.com/nextcloud/docker/blob/2ac1f1346ce19ca34193c8b72b87fee4e8d377e7/31/fpm/Dockerfile)
+-	[`32.0.2-fpm`, `32.0-fpm`, `32-fpm`, `fpm`](https://github.com/nextcloud/docker/blob/32ff0009669d4a63671e6dff0bb137357b9c0a2d/32/fpm/Dockerfile)
 
--	[`31.0.9-fpm-alpine`, `31.0-fpm-alpine`, `31-fpm-alpine`, `fpm-alpine`, `stable-fpm-alpine`, `production-fpm-alpine`](https://github.com/nextcloud/docker/blob/2ac1f1346ce19ca34193c8b72b87fee4e8d377e7/31/fpm-alpine/Dockerfile)
+-	[`32.0.2-fpm-alpine`, `32.0-fpm-alpine`, `32-fpm-alpine`, `fpm-alpine`](https://github.com/nextcloud/docker/blob/32ff0009669d4a63671e6dff0bb137357b9c0a2d/32/fpm-alpine/Dockerfile)
 
 # Quick reference (cont.)
 

@@ -78,6 +78,12 @@ WARNING:
 
 -	[`questing`, `25.10`](https://github.com/docker-library/buildpack-deps/blob/99e7dc24c50c0a7be371ea9e6aed6134ce4cbfeb/ubuntu/questing/Dockerfile)
 
+-	[`resolute-curl`, `26.04-curl`](https://github.com/docker-library/buildpack-deps/blob/8330ca1d2319b779c8b7a8aa64bb40dbe568e1e2/ubuntu/resolute/curl/Dockerfile)
+
+-	[`resolute-scm`, `26.04-scm`](https://github.com/docker-library/buildpack-deps/blob/8330ca1d2319b779c8b7a8aa64bb40dbe568e1e2/ubuntu/resolute/scm/Dockerfile)
+
+-	[`resolute`, `26.04`](https://github.com/docker-library/buildpack-deps/blob/8330ca1d2319b779c8b7a8aa64bb40dbe568e1e2/ubuntu/resolute/Dockerfile)
+
 # Quick reference (cont.)
 
 -	**Where to file issues**:  

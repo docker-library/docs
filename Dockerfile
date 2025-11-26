@@ -1,4 +1,4 @@
-FROM perl:5.39-bookworm
+FROM perl:5.40-trixie
 
 RUN set -eux; \
 	apt-get update; \
@@ -7,7 +7,7 @@ RUN set -eux; \
 # https://bugs.debian.org/763056 - SVG rendering in ImageMagick looks awful unless it can use inkscape to render (or RSVG, which is explicitly not compiled into the Debian package??)
 		inkscape \
 	; \
-	rm -rf /var/lib/apt/lists/*
+	apt-get dist-clean
 
 # secure by default ♥ (thanks to sri!)
 ENV PERL_CPANM_OPT --verbose --mirror https://cpan.metacpan.org

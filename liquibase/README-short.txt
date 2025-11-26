@@ -1,1 +1,1 @@
-Liquibase is DevOps for your database.
+DEPRECATED; Liquibase is DevOps for your database.
