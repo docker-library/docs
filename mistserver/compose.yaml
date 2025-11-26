@@ -5,6 +5,6 @@ services:
     volumes:
       - /PATH/TO/CONFIG/config.json:/config.json
       - /PATH/TO/VIDEOFOLDER:/video
-    shm_size: '2gb'
-    network_mode: 'host'
+    shm_size: 2gb
+    network_mode: host
     restart: always
