@@ -24,13 +24,17 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.3-dev14`, `3.3-dev`, `3.3-dev14-trixie`, `3.3-dev-trixie`](https://github.com/docker-library/haproxy/blob/c1f08bf6346bd77d2862e0f6658f55fda8cc9e06/3.3/Dockerfile)
+-	[`3.4-dev0`, `3.4-dev`, `3.4-dev0-trixie`, `3.4-dev-trixie`](https://github.com/docker-library/haproxy/blob/875a6dd82a46bc6474b8fa10003655f6103e7c67/3.4/Dockerfile)
 
--	[`3.3-dev14-alpine`, `3.3-dev-alpine`, `3.3-dev14-alpine3.22`, `3.3-dev-alpine3.22`](https://github.com/docker-library/haproxy/blob/c1f08bf6346bd77d2862e0f6658f55fda8cc9e06/3.3/alpine/Dockerfile)
+-	[`3.4-dev0-alpine`, `3.4-dev-alpine`, `3.4-dev0-alpine3.22`, `3.4-dev-alpine3.22`](https://github.com/docker-library/haproxy/blob/875a6dd82a46bc6474b8fa10003655f6103e7c67/3.4/alpine/Dockerfile)
 
--	[`3.2.9`, `3.2`, `latest`, `lts`, `3.2.9-trixie`, `3.2-trixie`, `trixie`, `lts-trixie`](https://github.com/docker-library/haproxy/blob/1721188a635768ae6d4867274f60c65339fbb05e/3.2/Dockerfile)
+-	[`3.3.0`, `3.3`, `latest`, `3.3.0-trixie`, `3.3-trixie`, `trixie`](https://github.com/docker-library/haproxy/blob/dca811ccdc2ce4736f2d3deee9d7f7f233a1d236/3.3/Dockerfile)
 
--	[`3.2.9-alpine`, `3.2-alpine`, `alpine`, `lts-alpine`, `3.2.9-alpine3.22`, `3.2-alpine3.22`, `alpine3.22`, `lts-alpine3.22`](https://github.com/docker-library/haproxy/blob/1721188a635768ae6d4867274f60c65339fbb05e/3.2/alpine/Dockerfile)
+-	[`3.3.0-alpine`, `3.3-alpine`, `alpine`, `3.3.0-alpine3.22`, `3.3-alpine3.22`, `alpine3.22`](https://github.com/docker-library/haproxy/blob/dca811ccdc2ce4736f2d3deee9d7f7f233a1d236/3.3/alpine/Dockerfile)
+
+-	[`3.2.9`, `3.2`, `lts`, `3.2.9-trixie`, `3.2-trixie`, `lts-trixie`](https://github.com/docker-library/haproxy/blob/1721188a635768ae6d4867274f60c65339fbb05e/3.2/Dockerfile)
+
+-	[`3.2.9-alpine`, `3.2-alpine`, `lts-alpine`, `3.2.9-alpine3.22`, `3.2-alpine3.22`, `lts-alpine3.22`](https://github.com/docker-library/haproxy/blob/1721188a635768ae6d4867274f60c65339fbb05e/3.2/alpine/Dockerfile)
 
 -	[`3.1.10`, `3.1`, `3.1.10-trixie`, `3.1-trixie`](https://github.com/docker-library/haproxy/blob/b1e0ccb02df9fc432364fe391f9b094c1bc8688c/3.1/Dockerfile)
 
