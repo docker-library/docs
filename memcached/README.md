@@ -26,7 +26,7 @@ WARNING:
 
 -	[`1.6.39`, `1.6`, `1`, `latest`, `1.6.39-trixie`, `1.6-trixie`, `1-trixie`, `trixie`](https://github.com/docker-library/memcached/blob/4569a8aaadebe2cfc4c1b5b052eb0764519db470/1/debian/Dockerfile)
 
--	[`1.6.39-alpine`, `1.6-alpine`, `1-alpine`, `alpine`, `1.6.39-alpine3.22`, `1.6-alpine3.22`, `1-alpine3.22`, `alpine3.22`](https://github.com/docker-library/memcached/blob/82dce5b661528c56980b7166b1065c149fab783e/1/alpine/Dockerfile)
+-	[`1.6.39-alpine`, `1.6-alpine`, `1-alpine`, `alpine`, `1.6.39-alpine3.23`, `1.6-alpine3.23`, `1-alpine3.23`, `alpine3.23`](https://github.com/docker-library/memcached/blob/33a3da9f436d9c5a5965aecba1b02ad1edcb0fef/1/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
