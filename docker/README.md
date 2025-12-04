@@ -28,9 +28,9 @@ WARNING:
 
 ## Simple Tags
 
--	[`29.1.2-cli`, `29.1-cli`, `29-cli`, `cli`, `29.1.2-cli-alpine3.22`](https://github.com/docker-library/docker/blob/ece7b8f349d13fa2329564492de50b58ad1b5d8c/29/cli/Dockerfile)
+-	[`29.1.2-cli`, `29.1-cli`, `29-cli`, `cli`, `29.1.2-cli-alpine3.23`](https://github.com/docker-library/docker/blob/7d9dcaed61f077774a231b20e6717442b5119fcf/29/cli/Dockerfile)
 
--	[`29.1.2-dind`, `29.1-dind`, `29-dind`, `dind`, `29.1.2-dind-alpine3.22`, `29.1.2`, `29.1`, `29`, `latest`, `29.1.2-alpine3.22`](https://github.com/docker-library/docker/blob/ece7b8f349d13fa2329564492de50b58ad1b5d8c/29/dind/Dockerfile)
+-	[`29.1.2-dind`, `29.1-dind`, `29-dind`, `dind`, `29.1.2-dind-alpine3.23`, `29.1.2`, `29.1`, `29`, `latest`, `29.1.2-alpine3.23`](https://github.com/docker-library/docker/blob/7d9dcaed61f077774a231b20e6717442b5119fcf/29/dind/Dockerfile)
 
 -	[`29.1.2-dind-rootless`, `29.1-dind-rootless`, `29-dind-rootless`, `dind-rootless`](https://github.com/docker-library/docker/blob/ece7b8f349d13fa2329564492de50b58ad1b5d8c/29/dind-rootless/Dockerfile)
 
