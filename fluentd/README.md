@@ -24,11 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`v1.16.9-1.0`, `v1.16-1`](https://github.com/fluent/fluentd-docker-image/blob/505a1af75b4a4adb40d576df7b18cebab853264e/v1.16/alpine/Dockerfile)
-
 -	[`v1.16.9-debian-1.0`, `v1.16-debian-1`](https://github.com/fluent/fluentd-docker-image/blob/505a1af75b4a4adb40d576df7b18cebab853264e/v1.16/debian/Dockerfile)
 
--	[`v1.19.0-debian-1.0`, `v1.19-debian-1`, `v1.19.0-1.0`, `v1.19-1`, `latest`](https://github.com/fluent/fluentd-docker-image/blob/42a0afa30b3821482bce1ba8e67266d745619724/v1.19/debian/Dockerfile)
+-	[`v1.19.1-debian-1.0`, `v1.19-debian-1`, `v1.19.0-1.0`, `v1.19-1`, `latest`](https://github.com/fluent/fluentd-docker-image/blob/1e7ff373975402c1e5b10e9b2ae41e50b3d273a3/v1.19/debian/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -36,7 +34,7 @@ WARNING:
 	[https://github.com/fluent/fluentd-docker-image/issues](https://github.com/fluent/fluentd-docker-image/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/fluentd/), [`arm32v5`](https://hub.docker.com/r/arm32v5/fluentd/), [`arm32v6`](https://hub.docker.com/r/arm32v6/fluentd/), [`arm32v7`](https://hub.docker.com/r/arm32v7/fluentd/), [`arm64v8`](https://hub.docker.com/r/arm64v8/fluentd/), [`i386`](https://hub.docker.com/r/i386/fluentd/), [`ppc64le`](https://hub.docker.com/r/ppc64le/fluentd/), [`s390x`](https://hub.docker.com/r/s390x/fluentd/)
+	[`amd64`](https://hub.docker.com/r/amd64/fluentd/), [`arm32v5`](https://hub.docker.com/r/arm32v5/fluentd/), [`arm32v7`](https://hub.docker.com/r/arm32v7/fluentd/), [`arm64v8`](https://hub.docker.com/r/arm64v8/fluentd/), [`i386`](https://hub.docker.com/r/i386/fluentd/), [`ppc64le`](https://hub.docker.com/r/ppc64le/fluentd/), [`s390x`](https://hub.docker.com/r/s390x/fluentd/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/fluentd/` directory](https://github.com/docker-library/repo-info/blob/master/repos/fluentd) ([history](https://github.com/docker-library/repo-info/commits/master/repos/fluentd))  
