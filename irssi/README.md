@@ -26,7 +26,7 @@ WARNING:
 
 -	[`1.4.5`, `1.4`, `1`, `latest`, `1.4.5-trixie`, `1.4-trixie`, `1-trixie`, `trixie`](https://github.com/jessfraz/irssi/blob/071b281a8011fb7ac5c5d6b6928e13fee8ab719c/debian/Dockerfile)
 
--	[`1.4.5-alpine`, `1.4-alpine`, `1-alpine`, `alpine`, `1.4.5-alpine3.22`, `1.4-alpine3.22`, `1-alpine3.22`, `alpine3.22`](https://github.com/jessfraz/irssi/blob/48233da7bca13e68f9792da75119fe595f6192c9/alpine/Dockerfile)
+-	[`1.4.5-alpine`, `1.4-alpine`, `1-alpine`, `alpine`, `1.4.5-alpine3.23`, `1.4-alpine3.23`, `1-alpine3.23`, `alpine3.23`](https://github.com/jessfraz/irssi/blob/2349930c445e117f678c4e7c0fb5c0983d11686d/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
