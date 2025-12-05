@@ -121,6 +121,8 @@ Giving the container this capability is optional and has potential, though unlik
 
 See https://github.com/quic-go/quic-go/wiki/UDP-Buffer-Sizes for more details.
 
+This image adds the `NET_BIND_SERVICE` capability to the Caddy executable, to allow a non-root user to bind to privileged ports (<1024) such as 80 and 443. If you're not using privileged ports and would like to drop the capability again, you can do so using `RUN setcap cap_net_bind_service=-ep /usr/bin/caddy`. This avoids the error `exec /usr/bin/caddy: operation not permitted` when the container process does not have the capability.
+
 ### Docker Compose example
 
 If you prefer to use `docker compose` to run your stack, here's a sample service definition which goes in a file named `compose.yaml`. The configuration assumes you put a custom Caddyfile into `$PWD/conf` as described [above](#basic-usage).
