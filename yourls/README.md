@@ -17,24 +17,26 @@ WARNING:
 # Quick reference
 
 -	**Maintained by**:  
-	[YOURLS](https://github.com/YOURLS/docker)
+	[YOURLS](https://github.com/YOURLS/containers)
 
 -	**Where to get help**:  
 	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.9.2-apache`, `1.9-apache`, `1-apache`, `apache`, `1.9.2`, `1.9`, `1`, `latest`](https://github.com/YOURLS/docker/blob/2ef3b5fe2539efd8dd876727376ddee2c22079b5/apache/Dockerfile)
--	[`1.9.2-fpm`, `1.9-fpm`, `1-fpm`, `fpm`](https://github.com/YOURLS/docker/blob/2ef3b5fe2539efd8dd876727376ddee2c22079b5/fpm/Dockerfile)
--	[`1.9.2-fpm-alpine`, `1.9-fpm-alpine`, `1-fpm-alpine`, `fpm-alpine`](https://github.com/YOURLS/docker/blob/2ef3b5fe2539efd8dd876727376ddee2c22079b5/fpm-alpine/Dockerfile)
+-	[`1.10.2-apache`, `1.10-apache`, `1-apache`, `apache`, `1.10.2`, `1.10`, `1`, `latest`](https://github.com/YOURLS/containers/blob/b3463cd1fe9b9de202a2a220d1ffa502e791ede8/apache/Dockerfile)
+
+-	[`1.10.2-fpm`, `1.10-fpm`, `1-fpm`, `fpm`](https://github.com/YOURLS/containers/blob/b3463cd1fe9b9de202a2a220d1ffa502e791ede8/fpm/Dockerfile)
+
+-	[`1.10.2-fpm-alpine`, `1.10-fpm-alpine`, `1-fpm-alpine`, `fpm-alpine`](https://github.com/YOURLS/containers/blob/b3463cd1fe9b9de202a2a220d1ffa502e791ede8/fpm-alpine/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/YOURLS/docker/issues](https://github.com/YOURLS/docker/issues)
+	[https://github.com/YOURLS/containers/issues](https://github.com/YOURLS/containers/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/yourls/), [`arm32v5`](https://hub.docker.com/r/arm32v5/yourls/), [`arm32v6`](https://hub.docker.com/r/arm32v6/yourls/), [`arm32v7`](https://hub.docker.com/r/arm32v7/yourls/), [`arm64v8`](https://hub.docker.com/r/arm64v8/yourls/), [`i386`](https://hub.docker.com/r/i386/yourls/), [`mips64le`](https://hub.docker.com/r/mips64le/yourls/), [`ppc64le`](https://hub.docker.com/r/ppc64le/yourls/), [`s390x`](https://hub.docker.com/r/s390x/yourls/)
+	[`amd64`](https://hub.docker.com/r/amd64/yourls/), [`arm32v5`](https://hub.docker.com/r/arm32v5/yourls/), [`arm32v6`](https://hub.docker.com/r/arm32v6/yourls/), [`arm32v7`](https://hub.docker.com/r/arm32v7/yourls/), [`arm64v8`](https://hub.docker.com/r/arm64v8/yourls/), [`i386`](https://hub.docker.com/r/i386/yourls/), [`ppc64le`](https://hub.docker.com/r/ppc64le/yourls/), [`riscv64`](https://hub.docker.com/r/riscv64/yourls/), [`s390x`](https://hub.docker.com/r/s390x/yourls/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/yourls/` directory](https://github.com/docker-library/repo-info/blob/master/repos/yourls) ([history](https://github.com/docker-library/repo-info/commits/master/repos/yourls))  
@@ -59,29 +61,42 @@ YOURLS is a set of PHP scripts that will allow you to run Your Own URL Shortener
 
 ## Start a `yourls` server instance
 
-```console
-$ docker run --name some-yourls --link some-mysql:mysql \
-    -e YOURLS_SITE="https://example.com" \
-    -e YOURLS_USER="example_username" \
-    -e YOURLS_PASS="example_password" \
-    -d yourls
+```bash
+docker run \
+    --name some-yourls \
+    --detach \
+    --network some-network \
+    --env YOURLS_SITE="https://example.com" \
+    --env YOURLS_USER="example_username" \
+    --env YOURLS_PASS="example_password" \
+    yourls
 ```
 
 The YOURLS instance accepts a number of environment variables for configuration, see *Environment Variables* section below.
 
-If you'd like to use an external database instead of a linked `mysql` container, specify the hostname and port with `YOURLS_DB_HOST` along with the password in `YOURLS_DB_PASS` and the username in `YOURLS_DB_USER` (if it is something other than `root`):
+If you'd like to use an external database instead of a `mysql` container, specify the hostname and port with `YOURLS_DB_HOST` along with the password in `YOURLS_DB_PASS` and the username in `YOURLS_DB_USER` (if it is something other than `root`):
 
-```console
-$ docker run --name some-yourlss -e YOURLS_DB_HOST=10.1.2.3:3306 \
-    -e YOURLS_DB_USER=... -e YOURLS_DB_PASS=... -d yourls
+```bash
+docker run \
+    --name some-yourls \
+    --detach \
+    --env YOURLS_DB_HOST=... \
+    --env YOURLS_DB_USER=... \
+    --env YOURLS_DB_PASS=... \
+    yourls
 ```
 
 ## Connect to the YOURLS administration interface
 
 If you'd like to be able to access the instance from the host without the container's IP, standard port mappings can be used:
 
-```console
-$ docker run --name some-yourls --link some-mysql:mysql -p 8080:80 -d yourls
+```bash
+docker run \
+    --name some-yourls \
+    --detach \
+    --network some-network \
+    --publish 8080:8080 \
+    yourls
 ```
 
 Then, access it via `http://localhost:8080/admin/` or `http://<host-ip>:8080/admin/` in a browser.
@@ -90,8 +105,8 @@ Then, access it via `http://localhost:8080/admin/` or `http://<host-ip>:8080/adm
 
 ## Environment Variables
 
-When you start the `yourls` image, you can adjust the configuration of the YOURLS instance by passing one or more environment variables on the `docker run` command line.  
-The YOURLS instance accepts [a number of environment variables for configuration](https://yourls.org/#Config).  
+When you start the `yourls` image, you can adjust the configuration of the YOURLS instance by passing one or more environment variables on the `docker run` command-line.  
+The YOURLS instance accepts [a number of environment variables for configuration](https://yourls.org/docs/guide/essentials/configuration).  
 A few notable/important examples for using this Docker image include the following.
 
 ### `YOURLS_SITE`
@@ -135,43 +150,46 @@ Database tables prefix, defaults to `yourls_`. Only set this when you need to ov
 
 As an alternative to passing sensitive information via environment variables, `_FILE` may be appended to the previously listed environment variables, causing the initialization script to load the values for those variables from files present in the container. In particular, this can be used to load passwords from Docker secrets stored in `/run/secrets/<secret_name>` files. For example:
 
-```console
-$ docker run --name some-yourls -e YOURLS_DB_PASS_FILE=/run/secrets/mysql-root ... -d yourls:tag
+```bash
+docker run \
+    --name some-yourls \
+    --detach \
+    --env YOURLS_DB_PASS_FILE=/run/secrets/mysql-root \
+    yourls
 ```
 
 Currently, this is supported for `YOURLS_DB_HOST`, `YOURLS_DB_USER`, `YOURLS_DB_PASS`, `YOURLS_DB_NAME`, `YOURLS_DB_PREFIX`, `YOURLS_SITE`, `YOURLS_USER`, and `YOURLS_PASS`.
 
-## ... via [`docker-compose`](https://github.com/docker/compose) or [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/)
+## ... via [`docker compose`](https://github.com/docker/compose)
 
-Example `docker-compose.yml` for `yourls`:
+Example `compose.yaml` for `yourls`:
 
 ```yaml
-version: '3.1'
-
+name: yourls
 services:
-
   yourls:
     image: yourls
     restart: always
+    depends_on:
+      - mysql
     ports:
-      - 8080:80
+      - 8080:8080
     environment:
       YOURLS_DB_PASS: example
       YOURLS_SITE: https://example.com
       YOURLS_USER: example_username
       YOURLS_PASS: example_password
-
   mysql:
     image: mysql
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: example
       MYSQL_DATABASE: yourls
+    volumes:
+      - db:/var/lib/mysql
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/6dba1507190ff91149046ce4bcbac43529d76bd4/yourls/stack.yml)
-
-Run `docker stack deploy -c stack.yml yourls` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080/admin/`, `http://localhost:8080/admin/`, or `http://<host-ip>:8080/admin/` (as appropriate).
+Run `docker compose up`, wait for it to initialize completely, and visit `http://localhost:8080/admin/`, or `http://<host-ip>:8080/admin/` (as appropriate).
 
 ## Adding additional libraries / extensions
 
@@ -179,9 +197,15 @@ This image does not provide any additional PHP extensions or other libraries, ev
 
 If you need additional PHP extensions, you'll need to create your own image `FROM` this one. The [documentation of the `php` image](https://github.com/docker-library/docs/blob/master/php/README.md#how-to-install-more-php-extensions) explains how to compile additional extensions.
 
-The following Docker Hub features can help with the task of keeping your dependent images up-to-date:
+## Include persistent user-content
 
--	[Automated Builds](https://docs.docker.com/docker-hub/builds/) let Docker Hub automatically build your Dockerfile each time you push changes to it.
+Mount the volume containing your plugins, pages or languages to the proper directory; and then apply them through the "admin" UI. Ensure read/write/execute permissions are in place for the user:
+
+-	Plugins go in a subdirectory in `/var/www/html/user/plugins/`
+-	Pages go in a subdirectory in `/var/www/html/user/pages/`
+-	Languages go in a subdirectory in `/var/www/html/user/languages/`
+
+If you wish to provide additional content in an image for deploying in multiple installations, place it in the same directories under `/usr/src/yourls/` instead (which gets copied to `/var/www/html/` on the container's initial startup).
 
 # Image Variants
 
@@ -193,15 +217,15 @@ This is the defacto image. If you are unsure about what your needs are, you prob
 
 ## `yourls:<version>-fpm`
 
-This variant contains PHP-FPM, which is a FastCGI implementation for PHP. See [the PHP-FPM website](https://php-fpm.org/) for more information about PHP-FPM.
+This variant contains [PHP's FastCGI Process Manager (FPM)](https://www.php.net/fpm), which is the recommended FastCGI implementation for PHP.
 
 In order to use this image variant, some kind of reverse proxy (such as NGINX, Apache, or other tool which speaks the FastCGI protocol) will be required.
 
 Some potentially helpful resources:
 
--	[PHP-FPM.org](https://php-fpm.org/)
--	[simplified example by @md5](https://gist.github.com/md5/d9206eacb5a0ff5d6be0)
--	[very detailed article by Pascal Landau](https://www.pascallandau.com/blog/php-php-fpm-and-nginx-on-docker-in-windows-10/)
+-	[FPM's Official Configuration Reference](https://www.php.net/manual/en/install.fpm.configuration.php)
+-	[Simplified example by @md5](https://gist.github.com/md5/d9206eacb5a0ff5d6be0)
+-	[Very detailed article by Pascal Landau](https://www.pascallandau.com/blog/php-php-fpm-and-nginx-on-docker-in-windows-10/)
 -	[Stack Overflow discussion](https://stackoverflow.com/q/29905953/433558)
 -	[Apache httpd Wiki example](https://wiki.apache.org/httpd/PHPFPMWordpress)
 

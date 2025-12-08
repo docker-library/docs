@@ -14,6 +14,12 @@ WARNING:
 
 -->
 
+# **DEPRECATION NOTICE**
+
+https://community.clearlinux.org/t/all-good-things-come-to-an-end-shutting-down-clear-linux-os/10716
+
+> Effective immediately [2025-07-18], Intel will no longer provide security patches, updates, or maintenance for Clear Linux OS, and the Clear Linux OS GitHub repository will be archived in read-only mode. So, if you’re currently using Clear Linux OS, we strongly recommend planning your migration to another actively maintained Linux distribution as soon as possible to ensure ongoing security and stability.
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,12 +30,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `base`](https://github.com/clearlinux/docker-brew-clearlinux/blob/b3276e05f6a6f3b37679aaa78463910f8c23b16a/Dockerfile)
+-	[`latest`, `base`](https://github.com/clearlinux/docker-brew-clearlinux/blob/03e2dcd390233733b398e72ce2382e54b5ef48a4/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/clearlinux/docker-brew-clearlinux/issues](https://github.com/clearlinux/docker-brew-clearlinux/issues)
+	[https://github.com/clearlinux/docker-brew-clearlinux/issues](https://github.com/clearlinux/docker-brew-clearlinux/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/clearlinux/)

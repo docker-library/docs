@@ -1,0 +1,31 @@
+services:
+  db:
+    image: bonitasoft/bonita-postgres:16.4
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: example
+    restart: always
+  bonita:
+    image: bonita:2024.3
+    hostname: custom-hostname.example.com
+    ports:
+      - 8080:8080
+    environment:
+      - DB_VENDOR=postgres
+      - DB_HOST=db
+      - DB_PORT=5432
+      - DB_NAME=bonita
+      - DB_USER=bonita
+      - DB_PASS=bpm
+      - BIZ_DB_NAME=business_data
+      - BIZ_DB_USER=business_data
+      - BIZ_DB_PASS=bpm
+      - BONITA_RUNTIME_ADMIN_USERNAME=tech_user
+      - BONITA_RUNTIME_ADMIN_PASSWORD=secret
+      - PLATFORM_LOGIN=pfadmin
+      - PLATFORM_PASSWORD=pfsecret
+    restart: on-failure:2
+    depends_on:
+      db:
+        condition: service_healthy

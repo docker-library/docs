@@ -24,15 +24,18 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.12.9`, `3.12`, `3`](https://github.com/geonetwork/docker-geonetwork/blob/4f7461deeb025a9cd13ca910f559c501b6745aa6/3.12.9/Dockerfile)
--	[`3.12.9-postgres`, `3.12-postgres`, `3-postgres`](https://github.com/geonetwork/docker-geonetwork/blob/4f7461deeb025a9cd13ca910f559c501b6745aa6/3.12.9/postgres/Dockerfile)
--	[`4.0.6`, `4.0`](https://github.com/geonetwork/docker-geonetwork/blob/00936dcf7dbb2399405c53aa05c670fa4bb79736/4.0.6/Dockerfile)
--	[`4.2.3`, `4.2`, `4`, `latest`](https://github.com/geonetwork/docker-geonetwork/blob/fe6c6898ff830df110eafe0384c7296480992102/4.2.3/Dockerfile)
+-	[`3.12.12`, `3.12`, `3`](https://github.com/geonetwork/docker-geonetwork/blob/17278beab34080c90454c0b7059bd6b49701f979/3.12.12/Dockerfile)
+
+-	[`3.12.12-postgres`, `3.12-postgres`, `3-postgres`](https://github.com/geonetwork/docker-geonetwork/blob/17278beab34080c90454c0b7059bd6b49701f979/3.12.12/postgres/Dockerfile)
+
+-	[`4.2.14`, `4.2`](https://github.com/geonetwork/docker-geonetwork/blob/6848a28591a23af0e326b56cd9dde0bf34bc1fe9/4.2.14/Dockerfile)
+
+-	[`4.4.9`, `4.4`, `4`, `latest`](https://github.com/geonetwork/docker-geonetwork/blob/8ad0acd56ed97a67ae07f8099b7ee255465946e4/4.4.9/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/geonetwork/docker-geonetwork/issues](https://github.com/geonetwork/docker-geonetwork/issues)
+	[https://github.com/geonetwork/docker-geonetwork/issues](https://github.com/geonetwork/docker-geonetwork/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/geonetwork/), [`arm32v7`](https://hub.docker.com/r/arm32v7/geonetwork/), [`arm64v8`](https://hub.docker.com/r/arm64v8/geonetwork/), [`ppc64le`](https://hub.docker.com/r/ppc64le/geonetwork/)
@@ -62,80 +65,284 @@ The project is part of the Open Source Geospatial Foundation ( [OSGeo](http://ww
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/6a537ddd2def65eaaa31cbadbaa5303f2dc82fe3/geonetwork/logo.png)
 
-# How to use this image
+## How to use this image
 
-## Start geonetwork
+GeoNetwork 4 uses an Elasticsearch server to store the index of the documents it manages so **it can't be run without configuring the URL of the Elasticsearch server**.
 
-This command will start a debian-based container, running a Tomcat web server, with a geonetwork war deployed on the server:
-
-```console
-$ docker run --name some-geonetwork -d geonetwork
-```
-
-## Publish port
-
-Geonetwork listens on port `8080`. If you want to access the container at the host, **you must publish this port**. For instance, this, will redirect all the container traffic on port 8080, to the same port on the host:
+This is a quick example of how to get GeoNetwork 4.4 Latest up and running for demo purposes. This configuration doesn't keep the data if containers are removed.
 
 ```console
-$ docker run --name some-geonetwork -d -p 8080:8080 geonetwork
+docker pull elasticsearch:7.17.15
+docker pull geonetwork:4
+
+docker network create gn-network
+
+docker run -d --name my-es-host --network gn-network -e "discovery.type=single-node" elasticsearch:7.17.15
+docker run --name geonetwork-host --network gn-network -e GN_CONFIG_PROPERTIES="-Des.host=my-es-host -Des.protocol=http -Des.port=9200 -Des.url=http://my-es-host:9200" -p 8080:8080 geonetwork:4
 ```
 
-Then, if you are running docker on Linux, you may access geonetwork at http://localhost:8080/geonetwork. Otherwise, replace `localhost` by the address of your docker machine.
-
-## Set the data directory and H2 db file
-
-The data directory is the location on the file system where the catalog stores much of its custom configuration and uploaded files. It is also where it stores a number of support files, used for various purposes (e.g.: Lucene index, spatial index, thumbnails). The default variant also uses a local H2 database to store the metadata catalog itself.
-
-By default, geonetwork sets the data directory on `/usr/local/tomcat/webapps/geonetwork/WEB-INF/data` and H2 database file to the tomcat bin dir `/usr/local/tomcat/gn.h2.db`, but you may override these values by injecting environment variables into the container: - `-e DATA_DIR=...` (defaults to `/usr/local/tomcat/webapps/geonetwork/WEB-INF/data`) and `-e GEONETWORK_DB_NAME=...` (defaults to `gn` which sets up database `gn.h2.db` in tomcat bin dir `/usr/local/tomcat`). Note that setting the database location via `GEONETWORK_DB_NAME` only works from version 3.10.3 onwards.
-
-## Persisting data
-
-To set the data directory to `/var/lib/geonetwork/data` and H2 database file to `/var/lib/geonetwork/db/gn.h2.db` so they both persist through restarts:
+For GeoNetwork 4.2 Stable:
 
 ```console
-$ docker run --name some-geonetwork -d -p 8080:8080 -e DATA_DIR=/var/lib/geonetwork/data -e GEONETWORK_DB_NAME=/var/lib/geonetwork/db/gn geonetwork
+docker pull elasticsearch:7.17.15
+docker pull geonetwork:4.2
+
+docker network create gn-network
+
+docker run -d --name my-es-host --network gn-network -e "discovery.type=single-node" elasticsearch:7.17.15
+docker run --name geonetwork-host --network gn-network -e ES_HOST=my-es-host -e ES_PROTOCOL=http  -e ES_PORT=9200 -p 8080:8080 geonetwork:4.2
 ```
 
-If you want the data directory to live beyond restarts, or even destruction of the container, you can mount a directory from the docker engine's host into the container. - `-v /host/path:/path/to/data/directory`. For instance this, will mount the host directory `/host/geonetwork-docker` into `/var/lib/geonetwork` on the container:
+To be sure about what Elasticsearch version to use you can check the [GeoNetwork documentation](https://docs.geonetwork-opensource.org/4.4/install-guide/installing-index/) for your GN version or the `es.version` property in the [`pom.xml`](https://github.com/geonetwork/core-geonetwork/blob/main/pom.xml#L1528C17-L1528C24) file of the GeoNetwork release used.
+
+### Default credentials
+
+After installation, use the default credentials: **`admin`** (username) and **`admin`** (password). It is recommended to update the default password after installation.
+
+### Elasticsearch configuration
+
+#### Java properties (version 4.4.0 and newer)
+
+Since GeoNetwork 4.4.0, use Java properties passed in the `GN_CONFIG_PROPERTIES` environment variable for Elasticsearch connection configuration:
+
+-	`es.host`: *optional* (default `localhost`): The host name of the Elasticsearch server.
+-	`es.port` *optional* (default `9200`): The port where Elasticsearch server is listening to.
+-	`es.protocol` *optional* (default `http`): The protocol used to talk to Elasticsearch. Can be `http` or `https`.
+-	`es.url`: **mandatory if host, port or protocol aren't the default values** (default `http://localhost:9200`): Full URL of the Elasticsearch server.
+-	`es.index.records` *optional* (default `gn_records`): In case you have more than GeoNetwork instance using the same Elasticsearch cluster each one needs to use a different index name. Use this variable to define the name of the index used by each GeoNetwork.
+-	`es.username` *optional* (default empty): username used to connect to Elasticsearch.
+-	`es.password` *optional* (default empty): password used to connect to Elasticsearch.
+-	`kb.url` *optional* (default `http://localhost:5601`): The URL where Kibana is listening.
+
+Example Docker Compose YAML snippet:
+
+```yaml
+services:
+  geonetwork:
+    image: geonetwork:4.4
+    environment:
+      GN_CONFIG_PROPERTIES: >-
+        -Des.host=elasticsearch
+        -Des.protocol=http
+        -Des.port=9200
+        -Des.url=http://elasticsearch:9200
+        -Des.username=my_es_username
+        -Des.password=my_es_password
+        -Dkb.url=http://kibana:5601
+```
+
+#### Environment variables (version 4.2 and older)
+
+For versions older than 4.4.0, configure Elasticsearch using environment variables:
+
+-	`ES_HOST` **mandatory**: The host name of the Elasticsearch server.
+-	`ES_PORT` *optional* (default `9200`): The port where Elasticsearch server is listening to.
+-	`ES_PROTOCOL` *optional* (default `http`): The protocol used to talk to Elasticsearch. Can be `http` or `https`.
+-	`ES_INDEX_RECORDS` *optional* (default `gn_records`): In case you have more than GeoNetwork instance using the same Elasticsearch cluster each one needs to use a different index name. Use this variable to define the name of the index used by each GeoNetwork.
+-	`ES_USERNAME` *optional* (default empty): username used to connect to Elasticsearch.
+-	`ES_PASSWORD` *optional* (default empty): password used to connect to Elasticsearch.
+-	`KB_URL` *Optional* (default `http://localhost:5601`): The URL where Kibana is listening.
+
+### Database configuration
+
+By default GeoNetwork uses a local **H2 database** for demo use (this one is **not recommended for production**). The image contains JDBC drivers for PostgreSQL and MySQL. To configure the database connection use these environment variables:
+
+-	`GEONETWORK_DB_TYPE`: The type of database to use. Valid values are `postgres`, `postgres-postgis`, `mysql`. The image can be extended including other drivers and these other types could be used too: `db2`, `h2`, `oracle`, `sqlserver`. The JAR drivers for these other databases would need to be added to `/opt/geonetwork/WEB-INF/lib` mounting them as binds or extending the official image.
+-	`GEONETWORK_DB_HOST`: The database host name.
+-	`GEONETWORK_DB_PORT`: The database port.
+-	`GEONETWORK_DB_NAME`: The database name.
+-	`GEONETWORK_DB_USERNAME`: The username used to connect to the database.
+-	`GEONETWORK_DB_PASSWORD`: The password used to connect to the database.
+-	`GEONETWORK_DB_CONNECTION_PROPERTIES`: Additional properties to be added to the connection string, for example `search_path=test,public&ssl=true` will produce a JDBC connection string like `jdbc:postgresql://localhost:5432/postgres?search_path=test,public&ssl=true`
+
+### Start GeoNetwork
+
+This command will start a debian-based container, running a Tomcat (GN 3) or Jetty (GN 4) web server, with a GeoNetwork WAR deployed on the server:
 
 ```console
-$ docker run --name some-geonetwork -d -p 8080:8080 -e DATA_DIR=/var/lib/geonetwork/data -e GEONETWORK_DB_NAME=/var/lib/geonetwork/db/gn -v /host/geonetwork-docker:/var/lib/geonetwork geonetwork
+docker run --name some-geonetwork -d geonetwork
 ```
 
-## ... via [`docker-compose`](https://github.com/docker/compose) or [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/)
+### Publish port
 
-Example `docker-compose.yml` for `geonetwork`:
+GeoNetwork listens on port `8080`. If you want to access the container at the host, **you must publish this port**. For instance, this, will redirect all the container traffic on port 8080, to the same port on the host:
+
+```console
+docker run --name some-geonetwork -d -p 8080:8080 geonetwork
+```
+
+Then, if you are running docker on Linux, you may access geonetwork at http://localhost:8080/geonetwork.
+
+### Set the data directory and H2 db file
+
+The data directory is the location on the file system where the catalog stores much of its custom configuration and uploaded files. It is also where it stores a number of support files, used for various purposes (e.g.: spatial index, thumbnails). The default variant also uses a local H2 database to store the metadata catalog itself.
+
+By default, GeoNetwork sets the data directory on `/opt/geonetwork/WEB-INF/data` and H2 database file to the Jetty dir `/var/lib/jetty/gn.h2.db` (since GN 4.0.0) or Tomcat `/usr/local/tomcat/gn.h2.db` (for GN 3), but you may override these values by injecting environment variables into the container: - `-e DATA_DIR=...` (defaults to `/opt/geonetwork/WEB-INF/data`) and `-e GEONETWORK_DB_NAME=...` (defaults to `gn` which sets up database `gn.h2.db` in tomcat bin dir `/usr/local/tomcat`). Note that setting the database location via `GEONETWORK_DB_NAME` only works from version 3.10.3 onwards.
+
+Since version 4.4.0 the data directory needs to be configued using Java properties passed in the `GN_CONFIG_PROPERTIES` environment variable. For example:
+
+```console
+docker run --name some-geonetwork -d -p 8080:8080  -e GN_CONFIG_PROPERTIES="-Dgeonetwork.dir=/catalogue-data" -e GEONETWORK_DB_NAME=/catalogue-data/db/gn geonetwork
+```
+
+### Persisting data
+
+To set the data directory to `/catalogue-data/data` and H2 database file to `/catalogue-data/db/gn.h2.db` so they both persist through restarts:
+
+-	GeoNetwork 4.2 and older
+
+```console
+docker run --name some-geonetwork -d -p 8080:8080 -e DATA_DIR=/catalogue-data/data -e GEONETWORK_DB_NAME=/catalogue-data/db/gn geonetwork:3
+```
+
+-	Since GeoNetwork 4.4.0
+
+```console
+docker run --name some-geonetwork -d -p 8080:8080  -e GN_CONFIG_PROPERTIES="-Dgeonetwork.dir=/catalogue-data" -e GEONETWORK_DB_NAME=/catalogue-data/db/gn geonetwork
+```
+
+If you want the data directory to live beyond restarts, or even destruction of the container, you can mount a directory from the docker engine's host into the container. - `-v /host/path:/path/to/data/directory`. For instance this, will mount the host directory `/host/geonetwork-docker` into `/catalogue-data` on the container:
+
+-	GeoNetwork 4.2 and older
+
+```console
+docker run --name some-geonetwork -d -p 8080:8080 -e DATA_DIR=/catalogue-data/data -e GEONETWORK_DB_NAME=/catalogue-data/db/gn -v /host/geonetwork-docker:/catalogue-data geonetwork:3
+```
+
+-	GeoNetwork 4.4.0 and newer
+
+```console
+docker run --name some-geonetwork -d -p 8080:8080  -e GN_CONFIG_PROPERTIES="-Dgeonetwork.dir=/catalogue-data" -e GEONETWORK_DB_NAME=/catalogue-data/db/gn -v /host/geonetwork-docker:/catalogue-data geonetwork
+```
+
+### ... via [`docker compose`](https://github.com/docker/compose)
+
+Example `compose.yaml` for `geonetwork`:
 
 ```yaml
 # GeoNetwork
 #
-# Access via "http://localhost:8080/geonetwork" (or "http://$(docker-machine ip):8080/geonetwork" if using docker-machine)
+# Access via "http://localhost:8080/geonetwork"
 #
 # Default user: admin
 # Default password: admin
 
-version: '3.1'
-services:
-
+volumes:
   geonetwork:
-    image: geonetwork
+  esdata:
+  pgdata:
+  pglog:
+
+services:
+  geonetwork:
+    image: geonetwork:4.4
+    healthcheck:
+      test: curl http://localhost:8080/
+      interval: 5s
+      timeout: 5s
+      retries: 30
     restart: always
+    volumes:
+      - geonetwork:/catalogue-data
+    depends_on:
+      database:
+        condition: service_healthy
     ports:
       - 8080:8080
     environment:
-      DATA_DIR: /var/lib/geonetwork_data
-    volumes:
-      - geonetwork:/var/lib/geonetwork_data
+      WEBAPP_CONTEXT_PATH: /geonetwork
+      DATA_DIR: /catalogue-data
+      TZ: Europe/Amsterdam
 
-volumes:
-  geonetwork:
+      JAVA_OPTS: >-
+        --add-opens=jdk.management/com.sun.management.internal=ALL-UNNAMED
+        -Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true
+        -Xms512M -Xss512M -Xmx2G -XX:+UseConcMarkSweepGC
+        -Djetty.httpConfig.requestHeaderSize=32768
+        -Dorg.eclipse.jetty.server.Request.maxFormContentSize=500000
+        -Dorg.eclipse.jetty.server.Request.maxFormKeys=4000
+      # For remote debug
+      # -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5005
+
+      GN_CONFIG_PROPERTIES: >-
+        -Dgeonetwork.dir=/catalogue-data
+        -Dgeonetwork.formatter.dir=/catalogue-data/data/formatter
+        -Dgeonetwork.schema.dir=/opt/geonetwork/WEB-INF/data/config/schema_plugins
+        -Dgeonetwork.indexConfig.dir=/opt/geonetwork/WEB-INF/data/config/index
+        -Dgeonetwork.schemapublication.dir=/opt/geonetwork/WEB-INF/data/resources/schemapublication
+        -Dgeonetwork.htmlcache.dir=/opt/geonetwork/WEB-INF/data/resources/htmlcache
+        -Des.host=elasticsearch
+        -Des.protocol=http
+        -Des.port=9200
+        -Des.url=http://elasticsearch:9200
+        -Des.username=
+        -Des.password=
+        -Dgeonetwork.ESFeaturesProxy.targetUri=http://elasticsearch:9200/gn-features/{_}
+        -Dgeonetwork.HttpDashboardProxy.targetUri=http://kibana:5601
+
+      GEONETWORK_DB_TYPE: postgres-postgis
+      GEONETWORK_DB_HOST: database
+      GEONETWORK_DB_PORT: 5432
+      GEONETWORK_DB_NAME: geonetwork
+      GEONETWORK_DB_USERNAME: geonetwork
+      GEONETWORK_DB_PASSWORD: geonetwork
+
+  database:
+    image: postgis/postgis:16-3.4
+    environment:
+      POSTGRES_USER: geonetwork
+      POSTGRES_PASSWORD: geonetwork
+      POSTGRES_DB: geonetwork
+    command: [postgres, -c, log_statement=all, -c, logging_collector=true, -c, log_file_mode=0644, -c, log_directory=/var/log/postgresql, -c, log_filename=postgresql.log]
+    healthcheck:
+      test: [CMD-SHELL, pg_isready -U postgres]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - pglog:/var/log/postgresql
+
+  elasticsearch:
+    image: elasticsearch:7.17.15
+    ports:
+      - 9200:9200
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+      nofile:
+        soft: 65536
+        hard: 65536
+    healthcheck:
+      test: curl -s http://localhost:9200 >/dev/null || exit 1
+      interval: 10s
+      timeout: 2s
+      retries: 10
+      start_period: 2m
+    environment:
+      ES_JAVA_OPTS: -Xms1G -Xmx1G
+      discovery.type: single-node
+    volumes:
+      - esdata:/usr/share/elasticsearch/data
+
+  kibana:
+    image: kibana:7.17.15
+    environment:
+      SERVER_NAME: kibana
+      ELASTICSEARCH_URL: http://elasticsearch:9200/
+      SERVER_BASEPATH: /geonetwork/dashboards
+      SERVER_REWRITEBASEPATH: 'false'
+      KIBANA_INDEX: .dashboards
+      XPACK_MONITORING_UI_CONTAINER_ELASTICSEARCH_ENABLED: 'true'
+    depends_on:
+      elasticsearch:
+        condition: service_healthy
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/9efeec18b6b2ed232cf0fbd3914b6211e16e242c/geonetwork/stack.yml)
+Run `docker compose up`, wait for it to initialize completely, and visit `http://localhost:8080/geonetwork` or `http://host-ip:8080/geonetwork` (as appropriate).
 
-Run `docker stack deploy -c stack.yml geonetwork` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080/geonetwork`, `http://localhost:8080/geonetwork`, or `http://host-ip:8080/geonetwork` (as appropriate).
-
-## Default credentials
+### Default credentials
 
 After installation a default user with name `admin` and password `admin` is created. Use this credentials to start with. It is recommended to update the default password after installation.
 
@@ -149,7 +356,7 @@ This is the defacto image. If you are unsure about what your needs are, you prob
 
 By default, an H2 database is configured and created when the application first starts. If you are interested in a database engine other than H2, please have a look at other image variants.
 
-## `geonetwork:postgres`
+## `geonetwork:postgres` (Only for GeoNetwork 3 series)
 
 This image gives support for using [PostgreSQL](https://www.postgresql.org/) as database engine for geonetwork. When you start the container, a database is created, and it is populated by geonetwork, once it starts.
 
@@ -166,25 +373,25 @@ If you want to connect to a postgres server, you need to pass an extra environme
 If you want to connect to an **external database server**, you can use either the IP address or the DNS as `POSTGRES_DB_HOST`. For instance, if the server is running on `mydns.net`, on port `5434`, the username is `postgres` and the password is `mysecretpassword`:
 
 ```console
-$ docker run --name geonetwork -d -p 8080:8080 -e POSTGRES_DB_HOST=mydns.net -e POSTGRES_DB_PORT=5434 -e POSTGRES_DB_USERNAME=postgres -e POSTGRES_DB_PASSWORD=mysecretpassword -e POSTGRES_DB_NAME=mydbname geonetwork:postgres
+docker run --name geonetwork -d -p 8080:8080 -e POSTGRES_DB_HOST=mydns.net -e POSTGRES_DB_PORT=5434 -e POSTGRES_DB_USERNAME=postgres -e POSTGRES_DB_PASSWORD=mysecretpassword -e POSTGRES_DB_NAME=mydbname geonetwork:postgres
 ```
 
 If are want to **run postgres on a container**, you can use the container name as `POSTGRES_DB_HOST`: just make sure that containers can discover each other, by **running them in the same user-defined network**. For instance, you can create a bridge network:
 
 ```console
-$ docker network create --driver bridge mynet
+docker network create --driver bridge mynet
 ```
 
 Then if you want to run the official image of postgres, using `some-postgres` as container name, you could launch it like this:
 
 ```console
-$ docker run --name some-postgres --network=mynet -d postgres
+docker run --name some-postgres --network=mynet -d postgres
 ```
 
 And then you could launch geonetwork, making sure you join the same network, and setting the required environment variables, including the `POSTGRES_DB_HOST`:
 
 ```console
-$ docker run --name geonetwork -d -p 8080:8080 --network=mynet -e POSTGRES_DB_HOST=some-postgres -e POSTGRES_DB_PORT=5432 -e POSTGRES_DB_USERNAME=postgres -e POSTGRES_DB_PASSWORD=mysecretpassword  -e POSTGRES_DB_NAME=mydbname geonetwork:postgres
+docker run --name geonetwork -d -p 8080:8080 --network=mynet -e POSTGRES_DB_HOST=some-postgres -e POSTGRES_DB_PORT=5432 -e POSTGRES_DB_USERNAME=postgres -e POSTGRES_DB_PASSWORD=mysecretpassword  -e POSTGRES_DB_NAME=mydbname geonetwork:postgres
 ```
 
 #### Configuration environment variables

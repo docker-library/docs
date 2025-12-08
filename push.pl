@@ -8,13 +8,16 @@ use File::Basename qw(basename fileparse);
 use File::Temp;
 use Getopt::Long;
 use Mojo::File;
+use Mojo::JSON qw(decode_json);
 use Mojo::UserAgent;
-use Mojo::Util qw(b64_encode decode encode trim);
+use Mojo::Util qw(decode encode trim url_escape);
 
 use Term::UI;
 use Term::ReadLine;
 
-my $hubLengthLimit = 25_000;
+require bytes; # this is not recommended, but we *only* use "bytes::length" from it to determine whether we need to do a more correct conversion to/from bytes for trimming (see $hubLengthLimit and usages)
+
+my $hubLengthLimit = 25_000; # NOTE: this is *bytes*, not characters 🙃
 my $githubBase = 'https://github.com/docker-library/docs/tree/master'; # TODO point this at the correct "dist-xxx" branch based on "namespace"
 
 my $username;
@@ -33,7 +36,7 @@ GetOptions(
 die 'no repos specified' unless @ARGV;
 
 my $ua = Mojo::UserAgent->new->max_redirects(10);
-$ua->transactor->name('Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.125 Safari/537.36');
+$ua->transactor->name($ENV{DOCS_PUSH_USER_AGENT} || 'https://github.com/docker-library/docs/tree/HEAD/push.pl');
 
 my $term = Term::ReadLine->new('docker-library-docs-push');
 unless (defined $username) {
@@ -43,26 +46,15 @@ unless (defined $password) {
 	$password = $term->get_reply(prompt => 'Hub Password'); # TODO hide the input? O:)
 }
 
-my $login = $ua->post('https://hub.docker.com/v2/users/login/' => {} => json => { username => $username, password => $password });
-die 'login failed' unless $login->res->is_success;
+my $dockerHub = 'https://hub.docker.com';
+
+my $login = $ua->post($dockerHub . '/v2/users/login/' => {} => json => { username => $username, password => $password });
+die 'login failed: ' . $login->res->error->{message} unless $login->res->is_success;
 
 my $token = $login->res->json->{token};
 
-my $csrf;
-for my $cookie (@{ $login->res->cookies }) {
-	if ($cookie->name eq 'csrftoken') {
-		$csrf = $cookie->value;
-		last;
-	}
-}
-die 'missing CSRF token' unless defined $csrf;
-
-my $attemptLogin = $ua->post('https://hub.docker.com/attempt-login/' => {} => json => { jwt => $token });
-die 'attempt-login failed' unless $attemptLogin->res->is_success;
-
 my $authorizationHeader = {
 	Authorization => "JWT $token",
-	'X-CSRFToken' => $csrf,
 };
 
 my $supportedTagsRegex = qr%^(# Supported tags and respective `Dockerfile` links\n\n)(.*?\n)(?=# |\[)%ms;
@@ -85,7 +77,7 @@ sub prompt_for_edit {
 		$proposedText =~ s%$supportedTagsRegex%$sponsoredLinks$1$2%;
 	}
 	
-	if ($lengthLimit > 0 && length($proposedText) > $lengthLimit) {
+	if ($lengthLimit > 0 && bytes::length($proposedText) > $lengthLimit) {
 		# TODO https://github.com/docker/hub-beta-feedback/issues/238
 		my $fullUrl = "$githubBase/$proposedFile";
 		my $shortTags = "-\tSee [\"Supported tags and respective \`Dockerfile\` links\" at $fullUrl]($fullUrl#supported-tags-and-respective-dockerfile-links)\n\n";
@@ -101,9 +93,18 @@ sub prompt_for_edit {
 		$trimmedText =~ s%$supportedTagsRegex%$sponsoredLinks$1$tagsNote%ms;
 		# (we scrape until the next "h1" or a line starting with a link which is likely a build status badge for an architecture-namespace)
 		
-		if (length($trimmedText) > $lengthLimit) {
-			# ... if that doesn't do the trick, then do our older naïve description trimming
-			$trimmedText = $startingNote . substr $proposedText, 0, ($lengthLimit - length($startingNote . $endingNote));
+		if (bytes::length($trimmedText) > $lengthLimit) {
+			# ... if that doesn't do the trick, then do our older naïve description trimming (respecting utf8; see https://www.perlmonks.org/?node_id=1230659 and https://perldoc.perl.org/utf8)
+			$trimmedText = $proposedText;
+			utf8::encode($trimmedText);
+			$trimmedText = $startingNote . substr $trimmedText, 0, ($lengthLimit - bytes::length($startingNote . $endingNote));
+			# (deal with the potential of "bytes::substr" here cutting us in the middle of a unicode glyph, which is arguably a much worse problem than the markdown cutting described below 😬  again, see https://www.perlmonks.org/?node_id=1230659)
+			$trimmedText =~ s/(?:
+				[\xC0-\xDF]
+				| [\xE0-\xEF] [\x80-\xBF]?
+				| [\xF0-\xF7] [\x80-\xBF]{0,2}
+			)\z//x;
+			utf8::decode($trimmedText);
 
 			# adding the "ending note" (https://github.com/docker/hub-feedback/issues/2220) is a bit more complicated as we have to deal with cutting off markdown ~cleanly so it renders correctly
 			# TODO deal with "```foo" appropriately (so we don't drop our note in the middle of a code block) - the Hub's current markdown rendering (2022-04-07) does not auto-close a dangling block like this, so this isn't urgent
@@ -171,10 +172,10 @@ while (my $repo = shift) { # 'library/hylang', 'tianon/perl', etc
 	my $repoName = $repo;
 	$repoName =~ s!^.*/!!; # 'hylang', 'perl', etc
 	
-	my $repoUrl = 'https://hub.docker.com/v2/repositories/' . $repo . '/';
+	my $repoUrl = $dockerHub . '/v2/repositories/' . $repo . '/';
 	
 	if ($logos && $repo =~ m{ ^ library/ }x) {
-		# the "library" org images include a logo which is displayed in the Hub UI
+		# only DOI ("library"), DSOS, or DVP orgs can include a logo which is displayed in the Hub UI
 		# if we have a logo file, let's update that metadata first
 		my $repoLogo120 = $repoName . '/logo-120.png';
 		if (!-f $repoLogo120) {
@@ -194,9 +195,10 @@ while (my $repo = shift) { # 'library/hylang', 'tianon/perl', etc
 				) == 0 or die "failed to convert $logoToConvert into $repoLogo120";
 			}
 		}
+		my $logoUrlBase = $dockerHub . '/api/media/repos_logo/v1/' . url_escape($repo);
 		if (-f $repoLogo120) {
 			my $proposedLogo = Mojo::File->new($repoLogo120)->slurp;
-			my $currentLogo = $ua->get('https://d1q6f0aelx0por.cloudfront.net/product-logos/' . join('-', split(m{/}, $repo)) . '-logo.png', { 'Cache-Control' => 'no-cache' });
+			my $currentLogo = $ua->get($logoUrlBase, { 'Cache-Control' => 'no-cache' });
 			$currentLogo = ($currentLogo->res->is_success ? $currentLogo->res->body : undef);
 			
 			if ($currentLogo && $currentLogo eq $proposedLogo) {
@@ -204,14 +206,14 @@ while (my $repo = shift) { # 'library/hylang', 'tianon/perl', etc
 			}
 			else {
 				say 'putting logo ' . $repoLogo120;
-				my $logoUrl = $repoUrl . 'logo';
-				my $logoPut = $ua->put($logoUrl => $authorizationHeader => json => {
-						'image_data' => b64_encode($proposedLogo),
-						'content_type' => 'image/png',
-						'file_ext' => 'png',
-					});
-				warn 'warning: put to ' . $logoUrl . ' failed: ' . $logoPut->res->text unless $logoPut->res->is_success;
+				my $logoUpload = $ua->post($logoUrlBase . '/upload' => { %$authorizationHeader, 'Content-Type' => 'image/png' } => $proposedLogo);
+				die 'POST to ' . $logoUrlBase . '/upload failed: ' . $logoUpload->res->text unless $logoUpload->res->is_success;
 			}
+		} else {
+			# if we had no logo file, we should send a DELETE request to the API just to be sure we're synchronizing the repo state appropriately even on complete logo removal
+			say 'no ' . $repoLogo120 . '; deleting logo';
+			my $logoDelete = $ua->delete($logoUrlBase => $authorizationHeader);
+			die 'DELETE to ' . $logoUrlBase . ' failed: ' . $logoDelete->res->text unless $logoDelete->res->is_success or $logoDelete->res->code == 404;
 		}
 	}
 	
@@ -221,6 +223,35 @@ while (my $repo = shift) { # 'library/hylang', 'tianon/perl', etc
 	my $repoDetails = $repoTx->res->json;
 	$repoDetails->{description} //= '';
 	$repoDetails->{full_description} //= '';
+	$repoDetails->{categories} //= [];
+	my @repoCategories = sort map { $_->{slug} } @{ $repoDetails->{categories} };
+	
+	# read local categories from metadata.json
+	my $repoMetadataBytes = Mojo::File->new($repoName . '/metadata.json')->slurp;
+	my $repoMetadataJson = decode_json $repoMetadataBytes;
+	my @localRepoCategories = sort @{ $repoMetadataJson->{hub}{categories} };
+	
+	# check if the local categories differ in length or items from the remote
+	my $needCat = @localRepoCategories != @repoCategories;
+	if (! $needCat) {
+		foreach my $i (0 .. @localRepoCategories) {
+			last if ! defined $repoCategories[$i]; # length difference already covered, so we can bail
+			if ($localRepoCategories[$i] ne $repoCategories[$i]) {
+				$needCat = 1;
+				last;
+			}
+		}
+	}
+	if ($needCat) {
+		say 'updating ' . $repoName . ' categories';
+		my $catsPatch = $ua->patch($repoUrl . 'categories/' => { %$authorizationHeader, Accept => 'application/json' } => json => [
+				map { {
+					slug => $_,
+					name => 'All those moments will be lost in time, like tears in rain... Time to die.',
+				} } @{ $repoMetadataJson->{hub}{categories} }
+			]);
+		die 'patch to categories failed: ' . $catsPatch->res->text unless $catsPatch->res->is_success;
+	}
 	
 	my $hubShort = prompt_for_edit($repoDetails->{description}, $repoName . '/README-short.txt');
 	my $hubLong = prompt_for_edit($repoDetails->{full_description}, $repoName . '/README.md', $hubLengthLimit);
@@ -233,5 +264,5 @@ while (my $repo = shift) { # 'library/hylang', 'tianon/perl', etc
 			description => $hubShort,
 			full_description => $hubLong,
 		});
-	warn 'patch to ' . $repoUrl . ' failed: ' . $repoPatch->res->text and next unless $repoPatch->res->is_success;
+	die 'patch to ' . $repoUrl . ' failed: ' . $repoPatch->res->text unless $repoPatch->res->is_success;
 }

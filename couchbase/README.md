@@ -24,17 +24,60 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.1.4`, `enterprise-7.1.4`, `enterprise`, `latest`](https://github.com/couchbase/docker/blob/c497eda885d5b9869ad45d0432e3b382d6b328c1/enterprise/couchbase-server/7.1.4/Dockerfile)
--	[`community-7.1.1`, `community`](https://github.com/couchbase/docker/blob/bfbb82c084ca3ada6252afbbcb3ca94bb65f1e58/community/couchbase-server/7.1.1/Dockerfile)
--	[`7.0.5`, `enterprise-7.0.5`](https://github.com/couchbase/docker/blob/ca816b6ffa5c36007bd4b3386ec24df081a00ea0/enterprise/couchbase-server/7.0.5/Dockerfile)
--	[`community-7.0.2`](https://github.com/couchbase/docker/blob/aec4494ab5280caf567997d72714f57572a6315b/community/couchbase-server/7.0.2/Dockerfile)
--	[`6.6.6`, `enterprise-6.6.6`](https://github.com/couchbase/docker/blob/8398e79a15da9eef613d0a781ec136a458ea128c/enterprise/couchbase-server/6.6.6/Dockerfile)
--	[`community-6.6.0`](https://github.com/couchbase/docker/blob/aad4aa9714578906c0c993121654eaeba0bd907c/community/couchbase-server/6.6.0/Dockerfile)
+-	[`8.0.0`, `enterprise`, `enterprise-8.0.0`, `latest`](https://github.com/couchbase/docker/blob/c11b8eac06fe26a16b2e2b17020a965d45d7f329/enterprise/couchbase-server/8.0.0/Dockerfile)
+
+-	[`community`, `community-8.0.0`](https://github.com/couchbase/docker/blob/e2600d59a2b84984adeccbe1c0f8b5d926d4b529/community/couchbase-server/8.0.0/Dockerfile)
+
+-	[`7.6.8`, `enterprise-7.6.8`](https://github.com/couchbase/docker/blob/79e990af7621fa397c0dc12fd08bad6db4f49476/enterprise/couchbase-server/7.6.8/Dockerfile)
+
+-	[`7.6.7`, `enterprise-7.6.7`](https://github.com/couchbase/docker/blob/a322cc7110124b2581339f52d88bab80fb50016d/enterprise/couchbase-server/7.6.7/Dockerfile)
+
+-	[`7.6.6`, `enterprise-7.6.6`](https://github.com/couchbase/docker/blob/9ce3cbc835dd4e072943ac7878aa7f87d6b95178/enterprise/couchbase-server/7.6.6/Dockerfile)
+
+-	[`7.6.5`, `enterprise-7.6.5`](https://github.com/couchbase/docker/blob/ec16abff6f0551ced6c771bd5606a4392379dd31/enterprise/couchbase-server/7.6.5/Dockerfile)
+
+-	[`7.6.4`, `enterprise-7.6.4`](https://github.com/couchbase/docker/blob/9990e2cfabc94b37607e5666d9ef1eab69a397a6/enterprise/couchbase-server/7.6.4/Dockerfile)
+
+-	[`7.6.3`, `enterprise-7.6.3`](https://github.com/couchbase/docker/blob/553d1baa4aa90fe506e1d7bcdf4daec387a110fe/enterprise/couchbase-server/7.6.3/Dockerfile)
+
+-	[`7.6.2`, `enterprise-7.6.2`](https://github.com/couchbase/docker/blob/ce13f602d2c95f76835c67a8855d5e73480973a6/enterprise/couchbase-server/7.6.2/Dockerfile)
+
+-	[`community-7.6.2`](https://github.com/couchbase/docker/blob/3f81af158b7f307e42f8c42ceaf7657b2690bfca/community/couchbase-server/7.6.2/Dockerfile)
+
+-	[`7.6.1`, `enterprise-7.6.1`](https://github.com/couchbase/docker/blob/966143f937bfe6979b7c09b86684004fdd21e5b8/enterprise/couchbase-server/7.6.1/Dockerfile)
+
+-	[`community-7.6.1`](https://github.com/couchbase/docker/blob/a18464c9b23efba391317fd21f898bf64dff6ec1/community/couchbase-server/7.6.1/Dockerfile)
+
+-	[`7.6.0`, `enterprise-7.6.0`](https://github.com/couchbase/docker/blob/9bdcf41deedd86da4c71347ffeea350a9895d816/enterprise/couchbase-server/7.6.0/Dockerfile)
+
+-	[`community-7.6.0`](https://github.com/couchbase/docker/blob/6d669d0e34e6990b43c1b91ea74720235c96c4ac/community/couchbase-server/7.6.0/Dockerfile)
+
+-	[`7.2.8`, `enterprise-7.2.8`](https://github.com/couchbase/docker/blob/5023e9104d765a15cde8e978be5266a6f1889fb0/enterprise/couchbase-server/7.2.8/Dockerfile)
+
+-	[`7.2.7`, `enterprise-7.2.7`](https://github.com/couchbase/docker/blob/23887cae4fd6ce054f383d524a7975d2e3a6b72e/enterprise/couchbase-server/7.2.7/Dockerfile)
+
+-	[`7.2.6`, `enterprise-7.2.6`](https://github.com/couchbase/docker/blob/181af64dcbedc1abf6e0916d9f5373cf1c18cb6e/enterprise/couchbase-server/7.2.6/Dockerfile)
+
+-	[`7.2.5`, `enterprise-7.2.5`](https://github.com/couchbase/docker/blob/94d97d9eea3d4057846be28f319940927d5166cb/enterprise/couchbase-server/7.2.5/Dockerfile)
+
+-	[`7.2.4`, `enterprise-7.2.4`](https://github.com/couchbase/docker/blob/15c1c3c0b4717a8b23ef7962f3fde28fe68e4311/enterprise/couchbase-server/7.2.4/Dockerfile)
+
+-	[`community-7.2.4`](https://github.com/couchbase/docker/blob/7c8453ef8584ff18f7b6c052828758693af4f72c/community/couchbase-server/7.2.4/Dockerfile)
+
+-	[`7.2.3`, `enterprise-7.2.3`](https://github.com/couchbase/docker/blob/b54049418018144369816d18c63d9bf76e34bc9f/enterprise/couchbase-server/7.2.3/Dockerfile)
+
+-	[`7.2.2`, `enterprise-7.2.2`](https://github.com/couchbase/docker/blob/3515fb617a469a5f46d492cf6910dddff8efb825/enterprise/couchbase-server/7.2.2/Dockerfile)
+
+-	[`community-7.2.2`](https://github.com/couchbase/docker/blob/c7a25ac7f38a81a465aa97f1a1d753a6c579954f/community/couchbase-server/7.2.2/Dockerfile)
+
+-	[`7.2.0`, `enterprise-7.2.0`](https://github.com/couchbase/docker/blob/4e769975179dc4e5bf4138349818bc8a0e191c9f/enterprise/couchbase-server/7.2.0/Dockerfile)
+
+-	[`community-7.2.0`](https://github.com/couchbase/docker/blob/71596d088ce2bc0218418187ac40ffccb08dbc36/community/couchbase-server/7.2.0/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/couchbase/docker/issues](https://github.com/couchbase/docker/issues)
+	[https://github.com/couchbase/docker/issues](https://github.com/couchbase/docker/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/couchbase/), [`arm64v8`](https://hub.docker.com/r/arm64v8/couchbase/)
@@ -216,7 +259,7 @@ Start Free Trial - https://cloud.couchbase.com/sign-up
 
 Couchbase Server comes in two editions: Enterprise Edition and Community Edition. You can find details on the differences between the two and licensing information on the [Couchbase Server Editions](https://docs.couchbase.com/server/current/introduction/editions.html) page.
 
--	**Enterprise Edition** -- The Enterprise Edition license provides for free for development and testing for Couchbase Enterprise Edition. A paid subscription for production deployment is required. Please refer to the [pricing](https://www.couchbase.com/pricing) page for details on Couchbase’s Enterprise Edition.
+-	**Enterprise Edition** -- The Enterprise Edition license provides for free for development and testing for Couchbase Enterprise Edition. A paid subscription for production deployment is required. Please refer to the [pricing](https://www.couchbase.com/pricing) page for details on Couchbase's Enterprise Edition.
 
 -	**Community Edition** -- The Community Edition license provides for free deployment of Couchbase Community Edition for departmental-scale deployments of up to five node clusters. It has recently been changed to disallow use of XDCR, which is now an exclusive Enterprise Edition feature.
 

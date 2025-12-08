@@ -24,28 +24,45 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.8-dev7`, `2.8-dev`, `2.8-dev7-bullseye`, `2.8-dev-bullseye`](https://github.com/docker-library/haproxy/blob/cc787a7b72dcba589f35e0ec89daa7a36a38f608/2.8/Dockerfile)
--	[`2.8-dev7-alpine`, `2.8-dev-alpine`, `2.8-dev7-alpine3.17`, `2.8-dev-alpine3.17`](https://github.com/docker-library/haproxy/blob/cc787a7b72dcba589f35e0ec89daa7a36a38f608/2.8/alpine/Dockerfile)
--	[`2.7.6`, `2.7`, `latest`, `2.7.6-bullseye`, `2.7-bullseye`, `bullseye`](https://github.com/docker-library/haproxy/blob/3e8ddb695fb46f902afea21ce0de1d481c1c71ab/2.7/Dockerfile)
--	[`2.7.6-alpine`, `2.7-alpine`, `alpine`, `2.7.6-alpine3.17`, `2.7-alpine3.17`, `alpine3.17`](https://github.com/docker-library/haproxy/blob/3e8ddb695fb46f902afea21ce0de1d481c1c71ab/2.7/alpine/Dockerfile)
--	[`2.6.12`, `2.6`, `lts`, `2.6.12-bullseye`, `2.6-bullseye`, `lts-bullseye`](https://github.com/docker-library/haproxy/blob/791843a38289bd3b5238715cbe6ed993214b2d73/2.6/Dockerfile)
--	[`2.6.12-alpine`, `2.6-alpine`, `lts-alpine`, `2.6.12-alpine3.17`, `2.6-alpine3.17`, `lts-alpine3.17`](https://github.com/docker-library/haproxy/blob/791843a38289bd3b5238715cbe6ed993214b2d73/2.6/alpine/Dockerfile)
--	[`2.5.13`, `2.5`, `2.5.13-bullseye`, `2.5-bullseye`](https://github.com/docker-library/haproxy/blob/8bb4f9f4a41b5c3531a6cb4a070c25be7a254ccd/2.5/Dockerfile)
--	[`2.5.13-alpine`, `2.5-alpine`, `2.5.13-alpine3.17`, `2.5-alpine3.17`](https://github.com/docker-library/haproxy/blob/8bb4f9f4a41b5c3531a6cb4a070c25be7a254ccd/2.5/alpine/Dockerfile)
--	[`2.4.22`, `2.4`, `2.4.22-bullseye`, `2.4-bullseye`](https://github.com/docker-library/haproxy/blob/010b099f11c898314bf1e3c90c19ed3bf6cc89e2/2.4/Dockerfile)
--	[`2.4.22-alpine`, `2.4-alpine`, `2.4.22-alpine3.17`, `2.4-alpine3.17`](https://github.com/docker-library/haproxy/blob/010b099f11c898314bf1e3c90c19ed3bf6cc89e2/2.4/alpine/Dockerfile)
--	[`2.2.29`, `2.2`, `2.2.29-bullseye`, `2.2-bullseye`](https://github.com/docker-library/haproxy/blob/a341c5a4894f4f8194a5b05076767688d85d369d/2.2/Dockerfile)
--	[`2.2.29-alpine`, `2.2-alpine`, `2.2.29-alpine3.17`, `2.2-alpine3.17`](https://github.com/docker-library/haproxy/blob/a341c5a4894f4f8194a5b05076767688d85d369d/2.2/alpine/Dockerfile)
--	[`2.0.31`, `2.0`, `2.0.31-buster`, `2.0-buster`](https://github.com/docker-library/haproxy/blob/1842f4392f605e9f944c7f55415ddfc828301a31/2.0/Dockerfile)
--	[`2.0.31-alpine`, `2.0-alpine`, `2.0.31-alpine3.16`, `2.0-alpine3.16`](https://github.com/docker-library/haproxy/blob/1842f4392f605e9f944c7f55415ddfc828301a31/2.0/alpine/Dockerfile)
+-	[`3.4-dev0`, `3.4-dev`, `3.4-dev0-trixie`, `3.4-dev-trixie`](https://github.com/docker-library/haproxy/blob/875a6dd82a46bc6474b8fa10003655f6103e7c67/3.4/Dockerfile)
+
+-	[`3.4-dev0-alpine`, `3.4-dev-alpine`, `3.4-dev0-alpine3.23`, `3.4-dev-alpine3.23`](https://github.com/docker-library/haproxy/blob/bfbedbcbf4d99b4fd71bd9aedab5d9c42ce66005/3.4/alpine/Dockerfile)
+
+-	[`3.3.0`, `3.3`, `latest`, `3.3.0-trixie`, `3.3-trixie`, `trixie`](https://github.com/docker-library/haproxy/blob/dca811ccdc2ce4736f2d3deee9d7f7f233a1d236/3.3/Dockerfile)
+
+-	[`3.3.0-alpine`, `3.3-alpine`, `alpine`, `3.3.0-alpine3.23`, `3.3-alpine3.23`, `alpine3.23`](https://github.com/docker-library/haproxy/blob/bfbedbcbf4d99b4fd71bd9aedab5d9c42ce66005/3.3/alpine/Dockerfile)
+
+-	[`3.2.9`, `3.2`, `lts`, `3.2.9-trixie`, `3.2-trixie`, `lts-trixie`](https://github.com/docker-library/haproxy/blob/1721188a635768ae6d4867274f60c65339fbb05e/3.2/Dockerfile)
+
+-	[`3.2.9-alpine`, `3.2-alpine`, `lts-alpine`, `3.2.9-alpine3.23`, `3.2-alpine3.23`, `lts-alpine3.23`](https://github.com/docker-library/haproxy/blob/bfbedbcbf4d99b4fd71bd9aedab5d9c42ce66005/3.2/alpine/Dockerfile)
+
+-	[`3.1.10`, `3.1`, `3.1.10-trixie`, `3.1-trixie`](https://github.com/docker-library/haproxy/blob/b1e0ccb02df9fc432364fe391f9b094c1bc8688c/3.1/Dockerfile)
+
+-	[`3.1.10-alpine`, `3.1-alpine`, `3.1.10-alpine3.23`, `3.1-alpine3.23`](https://github.com/docker-library/haproxy/blob/bfbedbcbf4d99b4fd71bd9aedab5d9c42ce66005/3.1/alpine/Dockerfile)
+
+-	[`3.0.12`, `3.0`, `3.0.12-trixie`, `3.0-trixie`](https://github.com/docker-library/haproxy/blob/3fc33290bfe9f17d101aa25f22fac86f4a71e571/3.0/Dockerfile)
+
+-	[`3.0.12-alpine`, `3.0-alpine`, `3.0.12-alpine3.23`, `3.0-alpine3.23`](https://github.com/docker-library/haproxy/blob/bfbedbcbf4d99b4fd71bd9aedab5d9c42ce66005/3.0/alpine/Dockerfile)
+
+-	[`2.8.16`, `2.8`, `2.8.16-trixie`, `2.8-trixie`](https://github.com/docker-library/haproxy/blob/3fc33290bfe9f17d101aa25f22fac86f4a71e571/2.8/Dockerfile)
+
+-	[`2.8.16-alpine`, `2.8-alpine`, `2.8.16-alpine3.23`, `2.8-alpine3.23`](https://github.com/docker-library/haproxy/blob/bfbedbcbf4d99b4fd71bd9aedab5d9c42ce66005/2.8/alpine/Dockerfile)
+
+-	[`2.6.23`, `2.6`, `2.6.23-trixie`, `2.6-trixie`](https://github.com/docker-library/haproxy/blob/3fc33290bfe9f17d101aa25f22fac86f4a71e571/2.6/Dockerfile)
+
+-	[`2.6.23-alpine`, `2.6-alpine`, `2.6.23-alpine3.23`, `2.6-alpine3.23`](https://github.com/docker-library/haproxy/blob/bfbedbcbf4d99b4fd71bd9aedab5d9c42ce66005/2.6/alpine/Dockerfile)
+
+-	[`2.4.30`, `2.4`, `2.4.30-trixie`, `2.4-trixie`](https://github.com/docker-library/haproxy/blob/3fc33290bfe9f17d101aa25f22fac86f4a71e571/2.4/Dockerfile)
+
+-	[`2.4.30-alpine`, `2.4-alpine`, `2.4.30-alpine3.23`, `2.4-alpine3.23`](https://github.com/docker-library/haproxy/blob/bfbedbcbf4d99b4fd71bd9aedab5d9c42ce66005/2.4/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/docker-library/haproxy/issues](https://github.com/docker-library/haproxy/issues)
+	[https://github.com/docker-library/haproxy/issues](https://github.com/docker-library/haproxy/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/haproxy/), [`arm32v5`](https://hub.docker.com/r/arm32v5/haproxy/), [`arm32v6`](https://hub.docker.com/r/arm32v6/haproxy/), [`arm32v7`](https://hub.docker.com/r/arm32v7/haproxy/), [`arm64v8`](https://hub.docker.com/r/arm64v8/haproxy/), [`i386`](https://hub.docker.com/r/i386/haproxy/), [`mips64le`](https://hub.docker.com/r/mips64le/haproxy/), [`ppc64le`](https://hub.docker.com/r/ppc64le/haproxy/), [`s390x`](https://hub.docker.com/r/s390x/haproxy/)
+	[`amd64`](https://hub.docker.com/r/amd64/haproxy/), [`arm32v5`](https://hub.docker.com/r/arm32v5/haproxy/), [`arm32v6`](https://hub.docker.com/r/arm32v6/haproxy/), [`arm32v7`](https://hub.docker.com/r/arm32v7/haproxy/), [`arm64v8`](https://hub.docker.com/r/arm64v8/haproxy/), [`i386`](https://hub.docker.com/r/i386/haproxy/), [`ppc64le`](https://hub.docker.com/r/ppc64le/haproxy/), [`riscv64`](https://hub.docker.com/r/riscv64/haproxy/), [`s390x`](https://hub.docker.com/r/s390x/haproxy/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/haproxy/` directory](https://github.com/docker-library/repo-info/blob/master/repos/haproxy) ([history](https://github.com/docker-library/repo-info/commits/master/repos/haproxy))  
@@ -129,7 +146,7 @@ The `haproxy` images come in many flavors, each designed for a specific use case
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like bullseye or buster in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+Some of these tags may have names like trixie in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 ## `haproxy:<version>-alpine`
 

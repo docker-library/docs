@@ -8,6 +8,10 @@ First developed by the software company 10gen (now MongoDB Inc.) in October 2007
 
 %%LOGO%%
 
+# Security
+
+By default Mongo's configuration requires no authentication for access, even for the administrative user. It is highly recommended to set a root user name and password if you plan on exposing your Mongo instance to the internet. See the "`MONGO_INITDB_ROOT_USERNAME`, `MONGO_INITDB_ROOT_PASSWORD`" section below for instructions and the [MongoDB Security documentation](https://www.mongodb.com/docs/manual/security/) for a more complete treatment.
+
 # How to use this image
 
 ## Start a `%%REPO%%` server instance
@@ -28,9 +32,9 @@ $ docker run -it --network some-network --rm %%IMAGE%% mongosh --host some-%%REP
 
 ... where `some-%%REPO%%` is the name of your original `mongo` container.
 
-## %%STACK%%
+## %%COMPOSE%%
 
-Run `docker stack deploy -c stack.yml %%REPO%%` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8081`, `http://localhost:8081`, or `http://host-ip:8081` (as appropriate).
+Run `docker compose up`, wait for it to initialize completely, and visit `http://localhost:8081` or `http://host-ip:8081` (as appropriate).
 
 ## Container shell access and viewing MongoDB logs
 
@@ -46,49 +50,36 @@ The MongoDB Server log is available through Docker's container log:
 $ docker logs some-%%REPO%%
 ```
 
-## Configuration
+# Configuration
 
-See the [MongoDB manual](https://docs.mongodb.com/manual/) for information on using and configuring MongoDB for things like replica sets and sharding.
+See the [MongoDB manual](https://www.mongodb.com/docs/manual/administration/configuration/) for information on using and configuring MongoDB for things like replica sets and sharding.
 
 ## Customize configuration without configuration file
 
-Most MongoDB configuration can be set through flags to `mongod`. The entrypoint of the image is created to pass its arguments along to `mongod`. See below an example of setting MongoDB to use a different [threading and execution model](https://docs.mongodb.com/manual/reference/program/mongod/#cmdoption-mongod-serviceexecutor) via `docker run`.
+Most MongoDB configuration options can be set through flags to `mongod`. The entrypoint of the image passes its arguments along to `mongod`. Example below enables MongoDB [query profiler](https://www.mongodb.com/docs/manual/reference/program/mongod/#profiler-options) via `docker run`.
 
 ```console
-$ docker run --name some-%%REPO%% -d %%IMAGE%% --serviceExecutor adaptive
+$ docker run --name some-%%REPO%% -d %%IMAGE%% --profile 1
 ```
 
-And here is the same with a `docker-compose.yml` file
+The same can be achieved with a `compose.yaml` file
 
 ```yaml
-version: '3.1'
 services:
   mongo:
     image: %%IMAGE%%
-    command: --serviceExecutor adaptive
+    command: --profile 1
 ```
 
-To see the full list of possible options, check the MongoDB manual on [`mongod`](https://docs.mongodb.com/manual/reference/program/mongod/) or check the `--help` output of `mongod`:
+To see the full list of possible options, check the MongoDB manual on [`mongod`](https://www.mongodb.com/docs/manual/reference/program/mongod/) or check the `--help` output of `mongod`:
 
 ```console
 $ docker run -it --rm %%IMAGE%% --help
 ```
 
-## Setting WiredTiger cache size limits
-
-By default Mongo will set the `wiredTigerCacheSizeGB` to a value proportional to the host's total memory regardless of memory limits you may have imposed on the container. In such an instance you will want to set the cache size to something appropriate, taking into account any other processes you may be running in the container which would also utilize memory.
-
-Taking the examples above you can configure the cache size to use 1.5GB as:
-
-```console
-$ docker run --name some-%%REPO%% -d %%IMAGE%% --wiredTigerCacheSizeGB 1.5
-```
-
-See [the upstream "WiredTiger Options" documentation](https://docs.mongodb.com/manual/reference/program/mongod/#wiredtiger-options) for more details.
-
 ## Using a custom MongoDB configuration file
 
-For a more complicated configuration setup, you can still use the MongoDB configuration file. `mongod` does not read a configuration file by default, so the `--config` option with the path to the configuration file needs to be specified. Create a custom configuration file and put it in the container by either creating a custom Dockerfile `FROM %%IMAGE%%` or mounting it from the host machine to the container. See the MongoDB manual for a full list of [configuration file](https://docs.mongodb.com/manual/reference/configuration-options/) options.
+For a more complicated configuration setup, you can still use the MongoDB configuration file. `mongod` does not read a configuration file by default, so the `--config` option with the path to the configuration file needs to be specified. Create a custom configuration file and put it in the container by either creating a custom Dockerfile `FROM %%IMAGE%%` or mounting it from the host machine to the container. See the MongoDB manual for a full list of [configuration file](https://www.mongodb.com/docs/manual/reference/configuration-options/) options.
 
 For example, `/my/custom/mongod.conf` is the path to the custom configuration file. Then start the MongoDB container like the following:
 
@@ -102,7 +93,7 @@ When you start the `%%REPO%%` image, you can adjust the initialization of the Mo
 
 ### `MONGO_INITDB_ROOT_USERNAME`, `MONGO_INITDB_ROOT_PASSWORD`
 
-These variables, used in conjunction, create a new user and set that user's password. This user is created in the `admin` [authentication database](https://docs.mongodb.com/manual/core/security-users/#user-authentication-database) and given [the role of `root`](https://docs.mongodb.com/manual/reference/built-in-roles/#root), which is [a "superuser" role](https://docs.mongodb.com/manual/core/security-built-in-roles/#superuser-roles).
+These variables, used in conjunction, create a new user and set that user's password. This user is created in the `admin` [authentication database](https://www.mongodb.com/docs/manual/core/security-users/#authentication-database) and given [the role of `root`](https://www.mongodb.com/docs/manual/reference/built-in-roles/#mongodb-authrole-root), which is [a "superuser" role](https://www.mongodb.com/docs/manual/reference/built-in-roles/#superuser-roles).
 
 The following is an example of using these two variables to create a MongoDB instance and then using the `mongosh` cli (use `mongo` with `4.x` versions) to connect against the `admin` authentication database.
 
@@ -148,13 +139,13 @@ When a container is started for the first time it will execute files with extens
 
 As noted above, authentication in MongoDB is fairly complex (although disabled by default). For details about how MongoDB handles authentication, please see the relevant upstream documentation:
 
--	[`mongod --auth`](https://docs.mongodb.com/manual/reference/program/mongod/#cmdoption-mongod-auth)
--	[Security > Authentication](https://docs.mongodb.com/manual/core/authentication/)
--	[Security > Role-Based Access Control](https://docs.mongodb.com/manual/core/authorization/)
--	[Security > Role-Based Access Control > Built-In Roles](https://docs.mongodb.com/manual/core/security-built-in-roles/)
--	[Security > Enable Auth (tutorial)](https://docs.mongodb.com/manual/tutorial/enable-authentication/)
+-	[`mongod --auth`](https://www.mongodb.com/docs/manual/reference/program/mongod/#std-option-mongod.--auth)
+-	[Security > Authentication](https://www.mongodb.com/docs/manual/core/authentication/)
+-	[Security > Role-Based Access Control](https://www.mongodb.com/docs/manual/core/authorization/)
+-	[Security > Role-Based Access Control > Built-In Roles](https://www.mongodb.com/docs/manual/reference/built-in-roles/)
+-	[Security > Enable Auth (tutorial)](https://www.mongodb.com/docs/manual/tutorial/enable-authentication/)
 
-In addition to the `/docker-entrypoint-initdb.d` behavior documented above (which is a simple way to configure users for authentication for less complicated deployments), this image also supports `MONGO_INITDB_ROOT_USERNAME` and `MONGO_INITDB_ROOT_PASSWORD` for creating a simple user with [the role `root`](https://docs.mongodb.com/manual/reference/built-in-roles/#root) in the `admin` [authentication database](https://docs.mongodb.com/manual/core/security-users/#user-authentication-database), as described in the *Environment Variables* section above.
+In addition to the `/docker-entrypoint-initdb.d` behavior documented above (which is a simple way to configure users for authentication for less complicated deployments), this image also supports `MONGO_INITDB_ROOT_USERNAME` and `MONGO_INITDB_ROOT_PASSWORD` for creating a simple user with [the role `root`](https://www.mongodb.com/docs/manual/reference/built-in-roles/#mongodb-authrole-root) in the `admin` [authentication database](https://www.mongodb.com/docs/manual/core/security-users/#authentication-database), as described in the *Environment Variables* section above.
 
 # Caveats
 
@@ -162,10 +153,10 @@ In addition to the `/docker-entrypoint-initdb.d` behavior documented above (whic
 
 Important note: There are several ways to store data used by applications that run in Docker containers. We encourage users of the `%%REPO%%` images to familiarize themselves with the options available, including:
 
--	Let Docker manage the storage of your database data [by writing the database files to disk on the host system using its own internal volume management](https://docs.docker.com/engine/tutorials/dockervolumes/#adding-a-data-volume). This is the default and is easy and fairly transparent to the user. The downside is that the files may be hard to locate for tools and applications that run directly on the host system, i.e. outside containers.
--	Create a data directory on the host system (outside the container) and [mount this to a directory visible from inside the container](https://docs.docker.com/engine/tutorials/dockervolumes/#mount-a-host-directory-as-a-data-volume). This places the database files in a known location on the host system, and makes it easy for tools and applications on the host system to access the files. The downside is that the user needs to make sure that the directory exists, and that e.g. directory permissions and other security mechanisms on the host system are set up correctly.
+-	Let Docker manage the storage of your database data [by writing the database files to disk on the host system using its own internal volume management](https://docs.docker.com/storage/volumes/). This is the default and is easy and fairly transparent to the user. The downside is that the files may be hard to locate for tools and applications that run directly on the host system, i.e. outside containers.
+-	Create a data directory on the host system (outside the container) and [mount this to a directory visible from inside the container](https://docs.docker.com/storage/bind-mounts/). This places the database files in a known location on the host system, and makes it easy for tools and applications on the host system to access the files. The downside is that the user needs to make sure that the directory exists, and that e.g. directory permissions and other security mechanisms on the host system are set up correctly.
 
-**WARNING (Windows & OS X)**: When running the Linux-based MongoDB images on Windows and OS X, the file systems used to share between the host system and the Docker container is not compatible with the memory mapped files used by MongoDB ([docs.mongodb.org](https://docs.mongodb.com/manual/administration/production-notes/#fsync---on-directories) and related [jira.mongodb.org](https://jira.mongodb.org/browse/SERVER-8600) bug). This means that it is not possible to run a MongoDB container with the data directory mapped to the host. To persist data between container restarts, we recommend using a local named volume instead (see `docker volume create`). Alternatively you can use the Windows-based images on Windows.
+**WARNING (Windows & OS X)**: When running the Linux-based MongoDB images on Windows and OS X, the file systems used to share between the host system and the Docker container is not compatible with the memory mapped files used by MongoDB (see [documenation note](https://www.mongodb.com/docs/manual/administration/production-notes/#fsync---on-directories) and related [bug](https://jira.mongodb.org/browse/SERVER-8600)). This means that it is not possible to run a MongoDB container with the data directory mapped to the host. To persist data between container restarts, we recommend using a local named volume instead (see `docker volume create`). Alternatively you can use the Windows-based images on Windows.
 
 The Docker documentation is a good starting point for understanding the different storage options and variations, and there are multiple blogs and forum postings that discuss and give advice in this area. We will simply show the basic procedure here for the latter option above:
 
@@ -178,7 +169,7 @@ The Docker documentation is a good starting point for understanding the differen
 
 The `-v /my/own/datadir:/data/db` part of the command mounts the `/my/own/datadir` directory from the underlying host system as `/data/db` inside the container, where MongoDB by default will write its data files.
 
-This image also defines a volume for `/data/configdb` [for use with `--configsvr` (see docs.mongodb.com for more details)](https://docs.mongodb.com/v3.4/reference/program/mongod/#cmdoption-configsvr).
+This image also defines a volume for `/data/configdb` [for use with `--configsvr`](https://www.mongodb.com/docs/manual/reference/program/mongod/#std-option-mongod.--configsvr).
 
 ## Creating database dumps
 

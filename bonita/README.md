@@ -24,10 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2021.1`, `7.12.1`, `7.12`](https://github.com/bonitasoft/bonita-distrib/blob/bfdd527629063b73f053320e50e1f6bfcd135d0a/docker/Dockerfile)
--	[`2021.2-u0`, `2021.2`, `7.13.0`, `7.13`](https://github.com/bonitasoft/bonita-distrib/blob/a1d9ee5e31d38958aa553cc7f9d465f1151d902f/docker/Dockerfile)
--	[`2022.1-u0`, `2022.1`, `7.14.0`, `7.14`](https://github.com/bonitasoft/bonita-distrib/blob/694bf79347add872f8c6a4c0a7f5c3ef12c31dc8/docker/Dockerfile)
--	[`2022.2-u0`, `2022.2`, `7.15.0`, `7.15`, `latest`](https://github.com/bonitasoft/bonita-distrib/blob/21c0e51634e836feaf910e8e3d6e95de200e1814/docker/Dockerfile)
+-	[`2025.1-u0`, `2025.1`, `10.3.0`, `10.3`, `latest`](https://github.com/bonitasoft/bonita-distrib/blob/adca7d9251091cd02f3cde7c0a9cee0e1538c7a1/docker/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -35,7 +32,7 @@ WARNING:
 	[Jira](https://bonita.atlassian.net/jira/software/c/projects/BBPMC/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/bonita/), [`arm64v8`](https://hub.docker.com/r/arm64v8/bonita/), [`ppc64le`](https://hub.docker.com/r/ppc64le/bonita/)
+	[`amd64`](https://hub.docker.com/r/amd64/bonita/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/bonita/` directory](https://github.com/docker-library/repo-info/blob/master/repos/bonita) ([history](https://github.com/docker-library/repo-info/commits/master/repos/bonita))  
@@ -78,32 +75,29 @@ As PostgreSQL is the recommended database for qualification and production envir
 
 From Bonita 2022.1 onwards, the Bonita docker image does not include configuration scripts to automatically create databases and users anymore.
 
-Therefore the PostgreSQL container needs to be configured to work with Bonita before starting the Bonita container. The configuration of a PostgreSQL database to work with Bonita is described in details in the [database configuration page](https://documentation.bonitasoft.com/bonita/latest/runtime/database-configuration#postgres_setup). + Alternatively, Bonita provides a preconfigured [PostgreSQL image](https://hub.docker.com/r/bonitasoft/bonita-postgres) on docker-hub. + You can run the image with the following command:
+Therefore, the PostgreSQL container needs to be configured to work with Bonita before starting the Bonita container. The configuration of a PostgreSQL database to work with Bonita is described in details in the [database configuration page](https://documentation.bonitasoft.com/bonita/latest/runtime/database-configuration#postgres_setup). + Alternatively, Bonita provides a preconfigured [PostgreSQL image](https://hub.docker.com/r/bonitasoft/bonita-postgres) on docker-hub. + You can run the image with the following command:
 
 ```bash
-docker run --name mydbpostgres -h <hostname> -d bonitasoft/bonita-postgres:12.6
+docker run --name mydbpostgres -h <hostname> -d bonitasoft/bonita-postgres:16.4
 ```
 
-This image is built from the following [GitHub repository](https://github.com/Bonitasoft-Community/bonita-database-docker/tree/main/postgres/12), which can be further adapted/customized to suit your needs.
+This image is built from the following [GitHub repository](https://github.com/Bonitasoft-Community/bonita-database-docker/tree/main/postgres/16), which can be further adapted/customized to suit your needs.
 
-## ... via [`docker-compose`](https://github.com/docker/compose) or [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/)
+## ... via [`docker compose`](https://github.com/docker/compose)
 
-Example `docker-compose.yml` for `bonita`:
+Example `compose.yaml` for `bonita`:
 
 ```yaml
-version: '3'
-
 services:
   db:
-    image: bonitasoft/bonita-postgres:12.6
+    image: bonitasoft/bonita-postgres:16.4
+    ports:
+      - 5432:5432
     environment:
       POSTGRES_PASSWORD: example
     restart: always
-    command:
-      - -c
-      - max_prepared_transactions=100
   bonita:
-    image: bonita:7.14.0
+    image: bonita:2024.3
     hostname: custom-hostname.example.com
     ports:
       - 8080:8080
@@ -117,34 +111,17 @@ services:
       - BIZ_DB_NAME=business_data
       - BIZ_DB_USER=business_data
       - BIZ_DB_PASS=bpm
-      - TENANT_LOGIN=tech_user
-      - TENANT_PASSWORD=secret
+      - BONITA_RUNTIME_ADMIN_USERNAME=tech_user
+      - BONITA_RUNTIME_ADMIN_PASSWORD=secret
       - PLATFORM_LOGIN=pfadmin
       - PLATFORM_PASSWORD=pfsecret
     restart: on-failure:2
     depends_on:
-      - db
-    entrypoint:
-      - bash
-      - -c
-      - |
-        set -e
-        echo 'Waiting for PostgreSQL to be available'
-        maxTries=10
-        while [ "$$maxTries" -gt 0 ] && [ $$(echo 'QUIT' | nc -w 1 "$$DB_HOST" 5432; echo "$$?") -gt 0 ]; do
-            sleep 1
-            let maxTries--
-        done
-        if [ "$$maxTries" -le 0 ]; then
-            echo >&2 'error: unable to contact Postgres after 10 tries'
-            exit 1
-        fi
-        exec /opt/files/startup.sh /opt/bonita/server/bin/catalina.sh run
+      db:
+        condition: service_healthy
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/d14f7b96a6cdcb815f50ba4244bf799f6127770f/bonita/stack.yml)
-
-Run `docker stack deploy -c stack.yml bonita` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
+Run `docker compose up`, wait for it to initialize completely, and visit `http://localhost:8080` or `http://host-ip:8080` (as appropriate).
 
 -	Replace `<hostname>` with the one used in the licence generation command
 -	leave double `$$` untouched
@@ -172,7 +149,7 @@ docker run --name=bonita -h <hostname> --env-file=env.txt -d -p 8080:8080 bonita
 ## Start Bonita with custom security credentials
 
 ```bash
-docker run --name=bonita -h <hostname> -e "TENANT_LOGIN=tech_user" -e "TENANT_PASSWORD=secret" -e "PLATFORM_LOGIN=pfadmin" -e "PLATFORM_PASSWORD=pfsecret" -d -p 8080:8080 bonita
+docker run --name=bonita -h <hostname> -e "BONITA_RUNTIME_ADMIN_USERNAME=tech_user" -e "BONITA_RUNTIME_ADMIN_PASSWORD=secret" -e "PLATFORM_LOGIN=pfadmin" -e "PLATFORM_PASSWORD=pfsecret" -d -p 8080:8080 bonita
 ```
 
 Now you can access the Bonita Runtime on localhost:8080/bonita and login using: tech_user / secret
@@ -198,11 +175,11 @@ This optional environment variable is used in conjunction with PLATFORM_PASSWORD
 
 This environment variable is recommended for you to use the Bonita image. It sets the platform administrator password for Bonita. If it is not specified, the default password `platform` will be used.
 
-### TENANT_LOGIN
+### BONITA_RUNTIME_ADMIN_USERNAME
 
-This optional environment variable is used in conjunction with TENANT_PASSWORD to define the username for the tenant administrator. If it is not specified, the default username `install` will be used.
+This optional environment variable is used in conjunction with BONITA_RUNTIME_ADMIN_PASSWORD to define the username for the tenant administrator. If it is not specified, the default username `install` will be used.
 
-### TENANT_PASSWORD
+### BONITA_RUNTIME_ADMIN_PASSWORD
 
 This environment variable is recommended for you to use the Bonita image. It sets the tenant administrator password for Bonita. If it is not specified, the default password `install` will be used.
 
@@ -296,7 +273,7 @@ These variables are used in conjunction to define how Bonita should access the [
 
 The logger can be configured by mounting a volume on folder `/opt/bonita/conf/logs` containing the configuration files.
 
-the volume must contain the 2 files [log4j2-loggers.xml](https://raw.githubusercontent.com/bonitasoft/bonita-distrib/7.14.0/tomcat-resources/tomcat-distrib-for-bonita/src/main/resources/tomcat/server/conf/log4j2-loggers.xml) and [log4j2-appenders.xml](https://raw.githubusercontent.com/bonitasoft/bonita-distrib/7.14.0/docker/files/log4j2/log4j2-appenders.xml)
+the volume must contain the 2 files [log4j2-loggers.xml](https://raw.githubusercontent.com/bonitasoft/bonita-distrib/10.3.0/tomcat-resources/tomcat-distrib-for-bonita/src/main/resources/tomcat/server/conf/log4j2-loggers.xml) and [log4j2-appenders.xml](https://raw.githubusercontent.com/bonitasoft/bonita-distrib/10.3.0/docker/files/log4j2/log4j2-appenders.xml)
 
 Any change made to one of this 2 files is automatically hot-reloaded and taken into account immediately.
 
@@ -318,7 +295,7 @@ $ docker run  -e HTTP_API=true -e HTTP_API_PASSWORD="My-Cust0m_S3cR3T" --name bo
 
 ## Update from an earlier version of Bonita
 
-For updating from a version before 7.10.0, please refer to the [documentation](https://documentation.bonitasoft.com/bonita/latest/version-update/migrate-from-an-earlier-version-of-bonita)
+For updating from a version before 7.10.0, please refer to the [documentation](https://documentation.bonitasoft.com/bonita/latest/version-update/update-with-migration-tool)
 
 -	Stop the container to perform a database backup
 
@@ -352,17 +329,16 @@ For updating from a version before 7.10.0, please refer to the [documentation](h
 	$ cat /tmp/bonitadb.sql | psql -U newbonitauser -h 172.17.0.26 newbonitadb
 	```
 
--	Retrieve the last update tool
+-	Retrieve the last update tool archive from https://www.bonitasoft.com/downloads
 
 	```console
-	wget https://github.com/bonitasoft/bonita-platform-releases/releases/download/2022.2-u0/bonita-update-tool-3.1.0.zip
-	unzip bonita-update-tool-3.0.0.zip
+	unzip bonita-update-tool-3.7.0.zip
 	```
 
 -	Configure the update tool
 
 	```console
-	$ cd bonita-update-tool-3.0.0
+	$ cd bonita-update-tool-3.7.0
 	```
 
 	edit the update tool configuration file `Config.properties` to point towards the database.
@@ -391,7 +367,7 @@ For updating from a version before 7.10.0, please refer to the [documentation](h
 -	Launch the new container pointing towards the copy of the database.
 
 	```console
-	$ docker run --name=bonita --link mydbpostgres:postgres -e "DB_NAME=newbonitadb" -e "DB_USER=newbonitauser" -e "DB_PASS=newbonitapass" -d -p 8081:8080 bonita:2022.2-u0
+	$ docker run --name=bonita --link mydbpostgres:postgres -e "DB_NAME=newbonitadb" -e "DB_USER=newbonitauser" -e "DB_PASS=newbonitapass" -d -p 8081:8080 bonita:2025.1-u0
 	```
 
 For more details regarding Bonita update and for version before 7.10.0, see the [documentation](https://documentation.bonitasoft.com/bonita/latest/version-update/migrate-from-an-earlier-version-of-bonita).

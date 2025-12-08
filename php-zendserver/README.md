@@ -14,6 +14,10 @@ WARNING:
 
 -->
 
+# **DEPRECATION NOTICE**
+
+This image is not actively maintained (and [has not been for years](https://github.com/docker-library/official-images/issues?q=label%3Alibrary%2Fphp-zendserver)). It is highly recommended for users to seek out alternatives.
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,10 +28,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.5`, `8.5-php5.6`, `5.6`](https://github.com/zendtech/php-zendserver-docker/blob/bcd65b82acb4f3b5b67f8c657c52f08bc52d8789/8.5/5.6/Dockerfile)
--	[`9.1`](https://github.com/zendtech/php-zendserver-docker/blob/bcd65b82acb4f3b5b67f8c657c52f08bc52d8789/9.1/7.1/Dockerfile)
--	[`2019.0`](https://github.com/zendtech/php-zendserver-docker/blob/bcd65b82acb4f3b5b67f8c657c52f08bc52d8789/2019.0/Dockerfile)
--	[`2021.0`, `latest`](https://github.com/zendtech/php-zendserver-docker/blob/bcd65b82acb4f3b5b67f8c657c52f08bc52d8789/2021.0/Dockerfile)
+**No supported tags**
 
 # Quick reference (cont.)
 
@@ -35,7 +36,7 @@ WARNING:
 	[Zend Support Center](https://www.zend.com/en/support-center)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/php-zendserver/)
+	**No supported architectures**
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/php-zendserver/` directory](https://github.com/docker-library/repo-info/blob/master/repos/php-zendserver) ([history](https://github.com/docker-library/repo-info/commits/master/repos/php-zendserver))  
@@ -54,7 +55,7 @@ Zend Server is the integrated application platform for PHP mobile and web apps. 
 
 ### Boost your Development with Z-Ray
 
-Using Zend Server Z-Ray is akin to wearing X-Ray goggles, effortlessly giving developers deep insight into how their code is running as they are developing it – all without having to change any of their habits or workflow. With Z-Ray, developers can immediately understand the impact of their code changes, enabling them to both improve quality and solve issues long before their code reaches production. In addition to the obvious benefits of this ‘Left Shifting’ – better performance, fewer production issues and faster recovery times – using Z-Ray is also downright fun!
+Using Zend Server Z-Ray is akin to wearing X-Ray goggles, effortlessly giving developers deep insight into how their code is running as they are developing it – all without having to change any of their habits or workflow. With Z-Ray, developers can immediately understand the impact of their code changes, enabling them to both improve quality and solve issues long before their code reaches production. In addition to the obvious benefits of this 'Left Shifting' – better performance, fewer production issues and faster recovery times – using Z-Ray is also downright fun!
 
 ### Powering Continuous Delivery
 

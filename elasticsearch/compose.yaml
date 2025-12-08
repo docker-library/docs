@@ -1,0 +1,9 @@
+services:
+
+  elasticsearch:
+    image: elasticsearch
+
+  kibana:
+    image: kibana
+    ports:
+      - 5601:5601

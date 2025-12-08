@@ -24,8 +24,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `base`, `base-20230416.0.143366`](https://gitlab.archlinux.org/archlinux/archlinux-docker/-/blob/5da14a3c436b54e1f49f676330a0a2a79a6e98c7/Dockerfile.base)
--	[`base-devel`, `base-devel-20230416.0.143366`](https://gitlab.archlinux.org/archlinux/archlinux-docker/-/blob/5da14a3c436b54e1f49f676330a0a2a79a6e98c7/Dockerfile.base-devel)
+-	[`latest`, `base`, `base-20251019.0.436919`](https://gitlab.archlinux.org/archlinux/archlinux-docker/-/blob/3d3996ec400b3b9ef1c04fa5b4b6b81725a8eaac/Dockerfile.base)
+
+-	[`base-devel`, `base-devel-20251019.0.436919`](https://gitlab.archlinux.org/archlinux/archlinux-docker/-/blob/3d3996ec400b3b9ef1c04fa5b4b6b81725a8eaac/Dockerfile.base-devel)
+
+-	[`multilib-devel`, `multilib-devel-20251019.0.436919`](https://gitlab.archlinux.org/archlinux/archlinux-docker/-/blob/3d3996ec400b3b9ef1c04fa5b4b6b81725a8eaac/Dockerfile.multilib-devel)
 
 # Quick reference (cont.)
 
@@ -58,18 +61,18 @@ Our strong community is diverse and helpful, and we pride ourselves on the range
 
 # About this image
 
-The root filesystem tarball for this image is auto-generated weekly at 00:00 UTC on Sunday in Arch Linux infrastructure. Given the rolling-release nature of Arch Linux, images are tagged with the included package group / meta package and the timestamp of the date they were generated. For example, `archlinux:base-20201101.0.7893` was generated the First of November 2020 in [CI job #7893](https://gitlab.archlinux.org/archlinux/archlinux-docker/-/jobs/7893). The `latest` tag will always match the latest `base` tag.
+The root filesystem tarball for this image is auto-generated weekly at 00:00 UTC on Sunday in Arch Linux infrastructure. Given the rolling-release nature of Arch Linux, images are tagged with the included meta package and the timestamp of the date they were generated. For example, `archlinux:base-20201101.0.7893` was generated the First of November 2020 in [CI job #7893](https://gitlab.archlinux.org/archlinux/archlinux-docker/-/jobs/7893). The `latest` tag will always match the latest `base` tag.
 
-Besides `base` we also provide images for the `base-devel` package group.
+Besides `base` we also provide images for the `base-devel` and `multilib-devel` meta packages.
 
 This image is intended to serve the following goals:
 
 -	Provide the Arch experience in a Docker Image
--	Provide simplest but complete image to base every other upon
+-	Provide simplest but complete image to `base`, `base-devel` and `multilib-devel` on a regular basis
 -	`pacman` needs to work out of the box
 -	All installed packages have to be kept unmodified
 
-> ⚠️⚠️⚠️ NOTE: For Security Reasons, these images strip the pacman lsign key. This is because the same key would be spread to all containers of the same image, allowing for malicious actors to inject packages (via, for example, a man-in-the-middle). In order to create an lsign-key run `pacman-key --init` on the first execution, but be careful to not redistribute that key. ⚠️⚠️⚠️
+> ⚠️⚠️⚠️ NOTE: For Security Reasons, these images strip the pacman lsign key. This is because the same key would be spread to all containers of the same image, allowing for malicious actors to inject packages (via, for example, a man-in-the-middle). In order to create a lsign-key run `pacman-key --init` on the first execution, but be careful to not redistribute that key. ⚠️⚠️⚠️
 
 ## Availability
 

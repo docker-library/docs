@@ -24,15 +24,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.1.0`, `8.1`, `latest`](https://github.com/convertigo/convertigo/blob/070f8a67e61a7a9bc701ddadae0a0a0fba9470a3/docker/default/Dockerfile)
+-	[`8.3.10`, `8.3`, `latest`](https://github.com/convertigo/convertigo/blob/627b70f12e7af2b84bbdb9004c7e338802ee6567/docker/default/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/convertigo/docker/issues](https://github.com/convertigo/docker/issues)
+	[https://github.com/convertigo/docker/issues](https://github.com/convertigo/docker/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/convertigo/)
+	[`amd64`](https://hub.docker.com/r/amd64/convertigo/), [`arm64v8`](https://hub.docker.com/r/arm64v8/convertigo/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/convertigo/` directory](https://github.com/docker-library/repo-info/blob/master/repos/convertigo) ([history](https://github.com/docker-library/repo-info/commits/master/repos/convertigo))  
@@ -50,7 +50,7 @@ WARNING:
 Convertigo is an open source fullstack Low Code & No Code platform. The platform is used to build Enterprise Web & Mobile apps in a few days. Convertigo platform is composed of several components:
 
 1.	**Convertigo Server**: The back-end server part. Handles back-end connectors, micro-services execution, offline data device synchronization and serves Web & Mobile Web apps. Runs as a Docker container with the `convertigo` image
-2.	**Convertigo Studio**: Runs on a Windows or a MacOS workstation, Eclipse based IDE, used to program Back-end micro-services workflows and use the "Mobile Builder" edition to build Mobile & Web apps UIs in a MXDP (Multi eXperience Development Platform) Low code mode. Can be directly downloaded from [Sourceforge.net](https://sourceforge.net/projects/convertigo/files/latest/download)
+2.	**Convertigo Studio**: Runs on a Windows or a MacOS workstation, Eclipse based IDE, used to program Back-end micro-services workflows and use the "Mobile Builder" edition to build Mobile & Web apps UIs in a MXDP (Multi eXperience Development Platform) Low code mode. Can be directly downloaded from [Convertigo](https://www.convertigo.com/get-started-page)
 3.	**Convertigo NoCode Studio**: The No Code App Builder to build form based apps as PWAs or Web applications with a Web Based NoCode studio intented for non technical developpers (Citizen Developpers)
 
 Convertigo Community edition brought to you by Convertigo SA (Paris & San Francisco). The platform is currently used by more than 100K developers worldwide, building enterprise class mobile apps.
@@ -238,6 +238,16 @@ $ docker run -d --name C8O -e JAVA_OPTS="-DjvmRoute=server1" -p 28080:28080 conv
 
 [Here the list of convertigo specific properties](https://www.convertigo.com/documentation/latest/operating-guide/appendixes/#list-of-convertigo-java-system-properties) (don't forget the `-Dconvertigo.engine.` prefix).
 
+## `LOG_STDOUT` and `LOG_FILE` Environment variables
+
+Convertigo generates many logs in a **engine.log** file that can be consulted via the Convertigo Administration Console. In some environments, it's easiest to read logs from the container's standard output. Set this property `true` to enable console output. The default value is `false`.
+
+Log file still exists until you add the `LOG_FILE=false` environment variable :
+
+```console
+    docker run -d --name C8O -e LOG_STDOUT=true -e LOG_FILE=false -p 28080:28080 convertigo
+```
+
 ## `JXMX` Environment variable
 
 Convertigo tries to allocate this amount of memory in the container and will automatically reduce it until the value is compatible for the Docker memory constraints. Once the best value found, it is used as `-Xmx=${JXMX}m` parameter for the JVM.
@@ -302,15 +312,25 @@ The default `DISABLE_SUDO` value is **empty** and can be defined this way:
 $ docker run -d --name C8O -e DISABLE_SUDO=true -p 28080:28080 convertigo
 ```
 
-## Pre configurated Docker compose stack
+## `ENABLE_JDWP_DEBUG` Environment variable
 
-You can use this [stack](https://github.com/convertigo/docker/blob/master/compose/mbaas/docker-compose.yml) to run a complete Convertigo Low Code server with FullSync repository and MySQL analytics in a few command lines.
+Convertigo operates using the JVM (Java Virtual Machine). To enable remote debugging of the JVM, it's necessary to start it with specific options. By default, this configuration is not enabled. However, if you wish to automatically activate remote debugging over the JDWP port 8000, set the `ENABLE_JDWP_DEBUG` value to **true**.
+
+The default `ENABLE_JDWP_DEBUG` value is **false** and can be defined this way:
+
+```console
+$ docker run -d –name C8O -e ENABLE_JDWP_DEBUG=true -p 28080:28080 convertigo
+```
+
+## Pre-configurated Docker Compose file
+
+You can use [this Docker Compose file](https://github.com/convertigo/docker/blob/master/compose/mbaas/docker-compose.yml) to run a complete Convertigo Low Code server with FullSync repository and MySQL analytics in a few command lines.
 
 ```console
 $ mkdir c8oMBaaS
 $ cd c8oMBaaS
 $ wget https://raw.githubusercontent.com/convertigo/docker/master/compose/mbaas/docker-compose.yml
-$ docker-compose up -d
+$ docker compose up -d
 ```
 
 # License

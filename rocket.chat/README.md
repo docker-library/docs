@@ -24,15 +24,24 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.0.0`, `6.0`, `6`, `latest`](https://github.com/RocketChat/Docker.Official.Image/blob/e83ffa0338dd62eed46fcf031fdd4bf919b631d6/6.0/Dockerfile)
--	[`5.4.4`, `5.4`, `5`](https://github.com/RocketChat/Docker.Official.Image/blob/e83ffa0338dd62eed46fcf031fdd4bf919b631d6/5.4/Dockerfile)
--	[`5.3.6`, `5.3`](https://github.com/RocketChat/Docker.Official.Image/blob/e83ffa0338dd62eed46fcf031fdd4bf919b631d6/5.3/Dockerfile)
--	[`5.2.2`, `5.2`](https://github.com/RocketChat/Docker.Official.Image/blob/e83ffa0338dd62eed46fcf031fdd4bf919b631d6/5.2/Dockerfile)
+-	[`7.12.2`, `7.12`, `7`, `latest`](https://github.com/RocketChat/Docker.Official.Image/blob/d36bff8d3c43ca318c0e231a88186b49fafaf053/7.12/Dockerfile)
+
+-	[`7.11.2`, `7.11`](https://github.com/RocketChat/Docker.Official.Image/blob/d36bff8d3c43ca318c0e231a88186b49fafaf053/7.11/Dockerfile)
+
+-	[`7.10.5`, `7.10`](https://github.com/RocketChat/Docker.Official.Image/blob/d36bff8d3c43ca318c0e231a88186b49fafaf053/7.10/Dockerfile)
+
+-	[`7.9.6`, `7.9`](https://github.com/RocketChat/Docker.Official.Image/blob/d36bff8d3c43ca318c0e231a88186b49fafaf053/7.9/Dockerfile)
+
+-	[`7.8.4`, `7.8`](https://github.com/RocketChat/Docker.Official.Image/blob/dddaa7c23275b8514d1d994bdfabaafd510f0ebf/7.8/Dockerfile)
+
+-	[`7.7.9`, `7.7`](https://github.com/RocketChat/Docker.Official.Image/blob/962b38b0911a42f671939098c7983897f1601521/7.7/Dockerfile)
+
+-	[`7.6.6`, `7.6`](https://github.com/RocketChat/Docker.Official.Image/blob/962b38b0911a42f671939098c7983897f1601521/7.6/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/RocketChat/Docker.Official.Image/issues](https://github.com/RocketChat/Docker.Official.Image/issues)
+	[https://github.com/RocketChat/Docker.Official.Image/issues](https://github.com/RocketChat/Docker.Official.Image/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/rocket.chat/)

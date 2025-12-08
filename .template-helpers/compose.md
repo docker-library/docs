@@ -1,5 +1,5 @@
-... via [`docker-compose`](https://github.com/docker/compose)
+... via [`docker compose`](https://github.com/docker/compose)
 
-Example `docker-compose.yml` for `%%REPO%%`:
+Example `compose.yaml` for `%%REPO%%`:
 
-%%COMPOSE-YML%%
+%%COMPOSE-YAML%%

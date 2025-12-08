@@ -17,25 +17,38 @@ WARNING:
 # Quick reference
 
 -	**Maintained by**:  
-	[MariaDB developer community](https://github.com/MariaDB/mariadb-docker)
+	[MariaDB Foundation](https://mariadb.org), [MariaDB plc](https://mariadb.com), with contributions from our [community](https://github.com/MariaDB/mariadb-docker)
 
 -	**Where to get help**:  
-	[Database Adminstrators (Stack Exchange)](https://dba.stackexchange.com/questions/tagged/docker+mariadb), [MariaDB Knowledge Base](https://mariadb.com/kb/en/docker-and-mariadb/) ([Ask a Question here](https://mariadb.com/kb/en/docker-and-mariadb/ask) available).
+	[Database Adminstrators (Stack Exchange)](https://dba.stackexchange.com/questions/tagged/docker+mariadb), [MariaDB Knowledge Base](https://mariadb.com/kb/en/docker-and-mariadb/) ([Ask a Question here](https://mariadb.com/kb/en/docker-and-mariadb/ask)).
 
 Also see the ["Getting Help with MariaDB" article on the MariaDB Knowledge Base](https://mariadb.com/kb/en/getting-help-with-mariadb/).
 
 # Supported tags and respective `Dockerfile` links
 
--	[`11.0.1-rc-jammy`, `11.0-rc-jammy`, `11.0.1-rc`, `11.0-rc`](https://github.com/MariaDB/mariadb-docker/blob/29e2cbb9b2339627497fb3247942bd802ec81191/11.0/Dockerfile)
--	[`10.11.2-jammy`, `10.11-jammy`, `10-jammy`, `jammy`, `10.11.2`, `10.11`, `10`, `latest`](https://github.com/MariaDB/mariadb-docker/blob/29e2cbb9b2339627497fb3247942bd802ec81191/10.11/Dockerfile)
--	[`10.10.3-jammy`, `10.10-jammy`, `10.10.3`, `10.10`](https://github.com/MariaDB/mariadb-docker/blob/29e2cbb9b2339627497fb3247942bd802ec81191/10.10/Dockerfile)
--	[`10.9.5-jammy`, `10.9-jammy`, `10.9.5`, `10.9`](https://github.com/MariaDB/mariadb-docker/blob/29e2cbb9b2339627497fb3247942bd802ec81191/10.9/Dockerfile)
--	[`10.8.7-jammy`, `10.8-jammy`, `10.8.7`, `10.8`](https://github.com/MariaDB/mariadb-docker/blob/29e2cbb9b2339627497fb3247942bd802ec81191/10.8/Dockerfile)
--	[`10.7.8-focal`, `10.7-focal`, `10.7.8`, `10.7`](https://github.com/MariaDB/mariadb-docker/blob/29e2cbb9b2339627497fb3247942bd802ec81191/10.7/Dockerfile)
--	[`10.6.12-focal`, `10.6-focal`, `10.6.12`, `10.6`](https://github.com/MariaDB/mariadb-docker/blob/29e2cbb9b2339627497fb3247942bd802ec81191/10.6/Dockerfile)
--	[`10.5.19-focal`, `10.5-focal`, `10.5.19`, `10.5`](https://github.com/MariaDB/mariadb-docker/blob/29e2cbb9b2339627497fb3247942bd802ec81191/10.5/Dockerfile)
--	[`10.4.28-focal`, `10.4-focal`, `10.4.28`, `10.4`](https://github.com/MariaDB/mariadb-docker/blob/29e2cbb9b2339627497fb3247942bd802ec81191/10.4/Dockerfile)
--	[`10.3.38-focal`, `10.3-focal`, `10.3.38`, `10.3`](https://github.com/MariaDB/mariadb-docker/blob/29e2cbb9b2339627497fb3247942bd802ec81191/10.3/Dockerfile)
+-	[`12.2.1-ubi10-rc`, `12.2-ubi10-rc`, `12.2.1-ubi-rc`, `12.2-ubi-rc`](https://github.com/MariaDB/mariadb-docker/blob/430ef0c93be28f7beca08980d3454b311988d42b/12.2-ubi/Dockerfile)
+
+-	[`12.2.1-noble-rc`, `12.2-noble-rc`, `12.2.1-rc`, `12.2-rc`](https://github.com/MariaDB/mariadb-docker/blob/430ef0c93be28f7beca08980d3454b311988d42b/12.2/Dockerfile)
+
+-	[`12.1.2-ubi10`, `12.1-ubi10`, `12-ubi10`, `12.1.2-ubi`, `12.1-ubi`, `12-ubi`](https://github.com/MariaDB/mariadb-docker/blob/a709b5a5bbe6580a3d2c97a8a841a2eac7f9c886/12.1-ubi/Dockerfile)
+
+-	[`12.1.2-noble`, `12.1-noble`, `12-noble`, `noble`, `12.1.2`, `12.1`, `12`, `latest`](https://github.com/MariaDB/mariadb-docker/blob/a709b5a5bbe6580a3d2c97a8a841a2eac7f9c886/12.1/Dockerfile)
+
+-	[`11.8.5-ubi9`, `11.8-ubi9`, `11-ubi9`, `lts-ubi9`, `11.8.5-ubi`, `11.8-ubi`, `11-ubi`, `lts-ubi`](https://github.com/MariaDB/mariadb-docker/blob/e95d4eddd8f5b3644a7c163e1363ff2bbd07d3e6/11.8-ubi/Dockerfile)
+
+-	[`11.8.5-noble`, `11.8-noble`, `11-noble`, `lts-noble`, `11.8.5`, `11.8`, `11`, `lts`](https://github.com/MariaDB/mariadb-docker/blob/e95d4eddd8f5b3644a7c163e1363ff2bbd07d3e6/11.8/Dockerfile)
+
+-	[`11.4.9-ubi9`, `11.4-ubi9`, `11.4.9-ubi`, `11.4-ubi`](https://github.com/MariaDB/mariadb-docker/blob/5ad00a82b5bb2705825c7afb670f6547b1bed316/11.4-ubi/Dockerfile)
+
+-	[`11.4.9-noble`, `11.4-noble`, `11.4.9`, `11.4`](https://github.com/MariaDB/mariadb-docker/blob/5ad00a82b5bb2705825c7afb670f6547b1bed316/11.4/Dockerfile)
+
+-	[`10.11.15-ubi9`, `10.11-ubi9`, `10-ubi9`, `10.11.15-ubi`, `10.11-ubi`, `10-ubi`](https://github.com/MariaDB/mariadb-docker/blob/5ad00a82b5bb2705825c7afb670f6547b1bed316/10.11-ubi/Dockerfile)
+
+-	[`10.11.15-jammy`, `10.11-jammy`, `10-jammy`, `10.11.15`, `10.11`, `10`](https://github.com/MariaDB/mariadb-docker/blob/5ad00a82b5bb2705825c7afb670f6547b1bed316/10.11/Dockerfile)
+
+-	[`10.6.24-ubi9`, `10.6-ubi9`, `10.6.24-ubi`, `10.6-ubi`](https://github.com/MariaDB/mariadb-docker/blob/5ad00a82b5bb2705825c7afb670f6547b1bed316/10.6-ubi/Dockerfile)
+
+-	[`10.6.24-jammy`, `10.6-jammy`, `10.6.24`, `10.6`](https://github.com/MariaDB/mariadb-docker/blob/5ad00a82b5bb2705825c7afb670f6547b1bed316/10.6/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -58,64 +71,56 @@ Also see the ["Getting Help with MariaDB" article on the MariaDB Knowledge Base]
 
 # What is MariaDB?
 
-MariaDB Server is one of the most popular database servers in the world. It’s made by the original developers of MySQL and guaranteed to stay open source. Notable users include Wikipedia, DBS Bank, and ServiceNow.
+MariaDB Server is one of the most popular database servers in the world. It's made by the original developers of MySQL and guaranteed to stay open source. Notable users include Wikipedia, DBS Bank, and ServiceNow.
 
 The intent is also to maintain high compatibility with MySQL, ensuring a library binary equivalency and exact matching with MySQL APIs and commands. MariaDB developers continue to develop new features and improve performance to better serve its users.
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/fe985dcb24154456254e252d1fa4a2b6b656ee80/mariadb/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/554e4b9aaac2e266b9ab31e9a312cb6f96d69286/mariadb/logo.png)
 
 # How to use this image
 
-## Start a `mariadb` server instance
+The mariadb has a number of tags, and of note is `latest`, as the latest stable version, and `lts`, as the last long term support release.
 
-Starting a MariaDB instance with the latest version is simple:
+## Running the container
+
+### Configuration
+
+#### Port binding
+
+By default, the database running within the container will listen on port 3306. You can expose the container port 3306 to the host port 3306 with the `-p 3306:3306` argument to `docker run`, like the command below:
 
 ```console
-$ docker run --detach --name some-mariadb --env MARIADB_USER=example-user --env MARIADB_PASSWORD=my_cool_secret --env MARIADB_ROOT_PASSWORD=my-secret-pw  mariadb:latest
+$ docker run --name some-mariadb -p 3306:3306 mariadb:latest
+```
+
+### Starting using a minimal configuration
+
+The environment variables required to use this image involves the setting of the root user password:
+
+```console
+$ docker run --detach --name some-mariadb --env MARIADB_ROOT_PASSWORD=my-secret-pw mariadb:latest
 ```
 
 or:
 
 ```console
-$ docker network create some-network 
-$ docker run --detach --network some-network --name some-mariadb --env MARIADB_USER=example-user --env MARIADB_PASSWORD=my_cool_secret --env MARIADB_ROOT_PASSWORD=my-secret-pw  mariadb:latest
+$ docker run --detach --name some-mariadb --env MARIADB_ALLOW_EMPTY_ROOT_PASSWORD=1 mariadb:latest
 ```
 
-... where `some-network` is a newly created network (other than `bridge` as the default network), `some-mariadb` is the name you want to assign to your container, `my-secret-pw` is the password to be set for the MariaDB root user. See the list above for relevant tags to match your needs and environment.
-
-## Connect to MariaDB from the MySQL/MariaDB command line client
-
-The following command starts another `mariadb` container instance and runs the `mariadb` command line client against your original `mariadb` container, allowing you to execute SQL statements against your database instance:
+or:
 
 ```console
-$ docker run -it --network some-network --rm mariadb mariadb -hsome-mariadb -uexample-user -p
+$ docker run --detach --name some-mariadb --env MARIADB_RANDOM_ROOT_PASSWORD=1 mariadb:latest
 ```
 
-... where `some-mariadb` is the name of your original `mariadb` container (connected to the `some-network` Docker network).
+... where the container logs will contain the generated root password.
 
-This image can also be used as a client for non-Docker or remote instances:
+## ... via [`docker compose`](https://github.com/docker/compose)
 
-```console
-$ docker run -it --rm mariadb mariadb -h <server container IP> -u example-user -p
-```
-
-That will give you a standard MariaDB prompt. You can test it with:
-
-```console
-MariaDB [(none)]> SELECT VERSION();
-```
-
-... which should give you the version. You can then use `exit` to leave the MariaDB command line client and the client container.
-
-More information about the MariaDB command-line client can be found in the [MariaDB Knowledge Base](https://mariadb.com/kb/en/mysql-command-line-client/)
-
-## ... via [`docker-compose`](https://github.com/docker/compose) or [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/)
-
-Example `docker-compose.yml` for `mariadb`:
+Example `compose.yaml` for `mariadb`:
 
 ```yaml
 # Use root/example as user/password credentials
-version: '3.1'
 
 services:
 
@@ -132,17 +137,94 @@ services:
       - 8080:8080
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/cf3a7fba4dfd134e3f7f5921b580c71e0fd8bc24/mariadb/stack.yml)
+Run `docker compose up`, wait for it to initialize completely, and visit `http://localhost:8080` or `http://host-ip:8080` (as appropriate).
 
-Run `docker stack deploy -c stack.yml mariadb` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
+### Start a `mariadb` server instance with user, password and database
 
-## Container shell access and viewing MariaDB logs
+Starting a MariaDB instance with a user, password, and a database:
 
-The `docker exec` command allows you to run commands inside a Docker container. The following command line will give you a bash shell inside your `mariadb` container:
+```console
+$ docker run --detach --name some-mariadb --env MARIADB_USER=example-user --env MARIADB_PASSWORD=my_cool_secret --env MARIADB_DATABASE=exmple-database --env MARIADB_ROOT_PASSWORD=my-secret-pw mariadb:latest
+```
+
+### Start a `mariadb` server instance in a network
+
+As applications talk to MariaDB, MariaDB needs to start in the same network as the application:
+
+```console
+$ docker network create some-network 
+$ docker run --detach --network some-network --name some-mariadb --env MARIADB_USER=example-user --env MARIADB_PASSWORD=my_cool_secret --env MARIADB_ROOT_PASSWORD=my-secret-pw mariadb:latest
+$ docker run --detach --network some-network --name some-application --env APP_DB_HOST=some-mariadb --env APP_DB_USER=example-user --env APP_DB_PASSWD=my_cool_secret some-application
+```
+
+... where `some-network` is a newly created network (other than `bridge` as the default network), `some-mariadb` is the name you want to assign to your container, `my-secret-pw` is the password to be set for the MariaDB root user. See the list above for relevant tags to match your needs and environment. `some-application` and then environment variable `APP_DB_HOST`, `APP_DB_USER` and `APP_DB_PASSWD` are the application's configuration for its database connection.
+
+## Connect to MariaDB from the MariaDB command line client
+
+The following command starts another `mariadb` container instance and runs the `mariadb` command line client against your original `mariadb` container, allowing you to execute SQL statements against your database instance:
+
+```console
+$ docker run -it --network some-network --rm mariadb mariadb -h some-mariadb -u example-user
+```
+
+... where `some-mariadb` is the name of your original `mariadb` container (connected to the `some-network` Docker network).
+
+This image can also be used as a client for non-Docker or remote instances:
+
+```console
+$ docker run -it --rm mariadb mariadb --host <server container IP> --user example-user --password --database test
+```
+
+That will give you a standard MariaDB prompt. You can test it with:
+
+```console
+MariaDB [(none)]> \s
+--------------
+client/mariadb  Ver 15.1 Distrib 10.6.16-MariaDB, for Linux (x86_64) using  EditLine wrapper
+
+Connection id:		20
+Current database:	test
+Current user:		example-user@bark
+SSL:			Not in use
+Current pager:		stdout
+Using outfile:		''
+Using delimiter:	;
+Server:			MariaDB
+Server version:		10.6.16-MariaDB Source distribution
+Protocol version:	10
+Connection:		192.168.178.73 via TCP/IP
+Server characterset:	latin1
+Db     characterset:	latin1
+Client characterset:	utf8mb3
+Conn.  characterset:	utf8mb3
+TCP port:		3306
+Uptime:			6 min 4 sec
+
+Threads: 1  Questions: 32  Slow queries: 0  Opens: 20  Open tables: 13  Queries per second avg: 0.087
+--------------
+```
+
+... which will give you the version and connection information. You can then use `exit` to leave the MariaDB command line client and the client container.
+
+More information about the MariaDB command-line client can be found in the [MariaDB Knowledge Base : MariaDB Command Line Client](https://mariadb.com/kb/en/mariadb-command-line-client/).
+
+## Container shell access
+
+The `docker exec` command allows you to run commands inside the running container. The following command line will give you a bash shell inside your `mariadb` container:
 
 ```console
 $ docker exec -it some-mariadb bash
 ```
+
+## MariaDB-Backup
+
+As MariaDB-Backup is highly coupled with the server version, it can be useful to use the `mariadb-backup` in the mariadb container of an explicit version:
+
+```console
+$ docker run --volume /backup-volume:/backup --rm mariadb:10.6.15 mariadb-backup --help
+```
+
+## Container viewing MariaDB logs
 
 The log is available through Docker's container log:
 
@@ -152,14 +234,14 @@ $ docker logs some-mariadb
 
 ## Using a custom MariaDB configuration file
 
-Custom configuration files should end in `.cnf` and be mounted at the directory `/etc/mysql/conf.d`. These files should contain the minimal changes from the MariaDB workload required for your application/environment. A MariaDB configuration file will have a `[mariadb]` group followed by `variable` = `value` settings per [Setting Server System Variables](https://mariadb.com/kb/en/server-system-variables/#setting-server-system-variables) or [option-prefix-variable](https://mariadb.com/kb/en/configuring-mariadb-with-option-files/#option-prefixes).
+Custom configuration files should end in `.cnf` and be mounted read only at the directory `/etc/mysql/conf.d`. These files should contain the minimal changes from the MariaDB workload required for your application/environment. A MariaDB configuration file will have a `[mariadb]` group followed by `variable` = `value` settings per [Setting Server System Variables](https://mariadb.com/kb/en/server-system-variables/#setting-server-system-variables) or [option-prefix-variable](https://mariadb.com/kb/en/configuring-mariadb-with-option-files/#option-prefixes).
 
 The `mariadb` image configuration contains the Ubuntu MariaDB variables with two custom changes for the container:
 
-	[host-cache-size=0](https://mariadb.com/kb/en/server-system-variables/#host_cache_size)
-	[skip-name-resolve](https://mariadb.com/kb/en/server-system-variables/#skip_name_resolve)
+-	[`host-cache-size=0`](https://mariadb.com/kb/en/server-system-variables/#host_cache_size)
+-	[`skip-name-resolve`](https://mariadb.com/kb/en/server-system-variables/#skip_name_resolve)
 
-These disable the authentication of `user@hostname` users. To re-enable the `skip-name-resolve` use `disable-skip-name-resolve` as variable or arguement. When enabled, the `host-cache-size` should be sufficient for the number of containers connecting to the `mariadb`.
+These disable the authentication of `user@hostname` users. To re-enable the `skip-name-resolve` use `disable-skip-name-resolve` as variable or argument. When enabled, the `host-cache-size` should be sufficient for the number of containers connecting to the `mariadb`.
 
 To view the resulting configuration of your `mariadb` container:
 
@@ -183,71 +265,27 @@ $ docker run -it --rm mariadb:latest --verbose --help
 
 ## Environment Variables
 
-When you start the `mariadb` image, you can adjust the initialization of the MariaDB instance by passing one or more environment variables on the `docker run` command line. Do note that none of the variables below will have any effect if you start the container with a data directory that already contains a database: any pre-existing database will always be left untouched on container startup.
-
-From tag 10.2.38, 10.3.29, 10.4.19, 10.5.10 onwards, and all 10.6 and later tags, the `MARIADB_*` equivalent variables are provided. `MARIADB_*` variants will always be used in preference to `MYSQL_*` variants.
+When you start the `mariadb` image, you can adjust the initialization of the MariaDB instance by passing one or more environment variables on the `docker run` command line. Do note that all of the variables, except `MARIADB_AUTO_UPGRADE`, will have no effect if you start the container with a data directory that already contains a database. I.e. any pre-existing database will always be left untouched on container startup.
 
 One of `MARIADB_RANDOM_ROOT_PASSWORD`, `MARIADB_ROOT_PASSWORD_HASH`, `MARIADB_ROOT_PASSWORD` or `MARIADB_ALLOW_EMPTY_ROOT_PASSWORD` (or equivalents, including `*_FILE`), is required. The other environment variables are optional.
 
-### `MARIADB_ROOT_PASSWORD` / `MYSQL_ROOT_PASSWORD`, `MARIADB_ROOT_PASSWORD_HASH`
+There is a large list of environment variables and the complete list is documented on [MariaDB's Knowledge Base : MariaDB Server Docker Official Image Environment Variables](https://mariadb.com/kb/en/mariadb-server-docker-official-image-environment-variables/).
 
-This specifies the password that will be set for the MariaDB `root` superuser account. In the above example, it was set to `my-secret-pw`.
+### `MARIADB_AUTO_UPGRADE`
 
-In order to have no plaintext secret in the deployment, `MARIADB_ROOT_PASSWORD_HASH` can be used as it is just the hash of the password. The hash can be generated with `SELECT PASSWORD('thepassword')` as a SQL query.
+When this environment variable is set, this will run the [mariadb-upgrade](https://mariadb.com/kb/en/mariadb-upgrade/), if needed, so any changes in the MariaDB system tables required to expose new features will be made. This may impeed some [downgrade options](https://mariadb.com/kb/en/downgrading-between-major-versions-of-mariadb/). Unless the environment variable `MARIADB_DISABLE_UPGRADE_BACKUP` is set, there will be a backup of the system tables created as `system_mysql_backup_*.sql.zst` in the top level of the data directory to assist in the downgrade if needed.
 
-### `MARIADB_ALLOW_EMPTY_ROOT_PASSWORD` / `MYSQL_ALLOW_EMPTY_PASSWORD`
-
-Set to a non-empty value, like `yes`, to allow the container to be started with a blank password for the root user. *NOTE*: Setting this variable to `yes` is not recommended unless you really know what you are doing, since this will leave your MariaDB instance completely unprotected, allowing anyone to gain complete superuser access.
-
-### `MARIADB_RANDOM_ROOT_PASSWORD` / `MYSQL_RANDOM_ROOT_PASSWORD`
-
-Set to a non-empty value, like `yes`, to generate a random initial password for the root user. The generated root password will be printed to stdout (`GENERATED ROOT PASSWORD: .....`).
-
-### `MARIADB_ROOT_HOST` / `MYSQL_ROOT_HOST`
-
-This is the hostname part of the root user created. By default this is `%`, however it can be set to any default [MariaDB allowed hostname component](https://mariadb.com/kb/en/create-user/#host-name-component). Setting this to `localhost` will prevent any root user being accessible except via the unix socket.
-
-### `MARIADB_MYSQL_LOCALHOST_USER` / `MARIADB_MYSQL_LOCALHOST_GRANTS`
-
-Set `MARIADB_MYSQL_LOCALHOST_USER` to a non-empty value to create the `mysql@locahost` database user. This user is especially useful for a variety of health checks and backup scripts.
-
-The `mysql@localhost` user gets [USAGE](https://mariadb.com/kb/en/grant/#the-usage-privilege) privileges by default. If more access is required, additional [global privileges](https://mariadb.com/kb/en/grant/#global-privileges) in the form of a comma separated list can be provided. If you are sharing a volume containing MariaDB's unix socket (`/var/run/mysqld` by default), privileges beyond `USAGE` can result in confidentiality, integrity and availability risks, so use a minimal set. See the example below on using Mariabackup. The `healthcheck.sh` script also documents the required privileges for each health check test.
-
-### `MARIADB_DATABASE` / `MYSQL_DATABASE`
-
-This variable allows you to specify the name of a database to be created on image startup.
-
-### `MARIADB_USER` / `MYSQL_USER`, `MARIADB_PASSWORD` / `MYSQL_PASSWORD`, `MARIADB_PASSWORD_HASH`
-
-These are used in conjunction to create a new user and to set that user's password. Both user and password variables are required for a user to be created. This user will be granted all access ([corresponding to `GRANT ALL`](https://mariadb.com/kb/en/grant/#the-all-privileges-privilege)) to the `MARIADB_DATABASE` database.
-
-See `MARIADB_ROOT_PASSWORD_HASH` above for how to get a password hash for `MARIADB_PASSWORD_HASH`.
-
-Do note that there is no need to use this mechanism to create the root superuser, that user gets created by default with the password specified by the `MARIADB_ROOT_PASSWORD*` variable.
-
-### `MARIADB_INITDB_SKIP_TZINFO` / `MYSQL_INITDB_SKIP_TZINFO`
-
-By default, the entrypoint script automatically loads the timezone data needed for the `CONVERT_TZ()` function. If it is not needed, any non-empty value disables timezone loading.
-
-### `MARIADB_AUTO_UPGRADE` / `MARIADB_DISABLE_UPGRADE_BACKUP`
-
-Set `MARIADB_AUTO_UPGRADE` to a non-empty value to have the entrypoint check whether `mysql_upgrade`/`mariadb-upgrade` needs to run, and if so, run the upgrade before starting the MariaDB server.
-
-Before the upgrade, a backup of the system database is created in the top of the datadir with the name `system_mysql_backup_*.sql.zst`. This backup process can be disabled with by setting `MARIADB_DISABLE_UPGRADE_BACKUP` to a non-empty value.
-
-## Docker Secrets
+## Secrets
 
 As an alternative to passing sensitive information via environment variables, `_FILE` may be appended to the previously listed environment variables, causing the initialization script to load the values for those variables from files present in the container. In particular, this can be used to load passwords from Docker secrets stored in `/run/secrets/<secret_name>` files. For example:
 
 ```console
-$ docker run --name some-mysql -e MARIADB_ROOT_PASSWORD_FILE=/run/secrets/mysql-root -d mariadb:latest
+$ docker run --name some-mysql -e MARIADB_ROOT_PASSWORD_FILE=/run/secrets/mariadb-root -d mariadb:latest
 ```
 
-Currently, this is only supported for `MARIADB_ROOT_PASSWORD`, `MARIADB_ROOT_PASSWORD_HASH`, `MARIADB_ROOT_HOST`, `MARIADB_DATABASE`, `MARIADB_USER`, `MARIADB_PASSWORD` and `MARIADB_PASSWORD_HASH` (and `MYSQL_*` equivalents of these).
+# Initializing the database contents
 
-# Initializing a fresh instance
-
-When a container is started for the first time, a new database with the specified name will be created and initialized with the provided configuration variables. Furthermore, it will execute files with extensions `.sh`, `.sql`, `.sql.gz`, `.sql.xz` and `.sql.zst` that are found in `/docker-entrypoint-initdb.d`. Files will be executed in alphabetical order. `.sh` files without file execute permission are sourced rather than executed. You can easily populate your `mariadb` services by [mounting a SQL dump into that directory](https://docs.docker.com/engine/tutorials/dockervolumes/#mount-a-host-file-as-a-data-volume) and provide [custom images](https://docs.docker.com/reference/builder/) with contributed data. SQL files will be imported by default to the database specified by the `MARIADB_DATABASE` / `MYSQL_DATABASE` variable.
+When a container is started for the first time, a new database with the specified name will be created and initialized with the provided configuration variables. Furthermore, it will execute files with extensions `.sh`, `.sql`, `.sql.gz`, `.sql.xz` and `.sql.zst` that are found in `/docker-entrypoint-initdb.d`. Files will be executed in alphabetical order. `.sh` files without file execute permission are sourced rather than executed. You can easily populate your `mariadb` services by [mounting a SQL dump into that directory](https://docs.docker.com/storage/bind-mounts/) and provide [custom images](https://docs.docker.com/reference/dockerfile/) with contributed data. SQL files will be imported by default to the database specified by the `MARIADB_DATABASE` variable.
 
 # Caveats
 
@@ -255,8 +293,8 @@ When a container is started for the first time, a new database with the specifie
 
 Important note: There are several ways to store data used by applications that run in Docker containers. We encourage users of the `mariadb` images to familiarize themselves with the options available, including:
 
--	Let Docker manage the storage of your database data [by writing the database files to disk on the host system using its own internal volume management](https://docs.docker.com/engine/tutorials/dockervolumes/#adding-a-data-volume). This is the default and is easy and fairly transparent to the user. The downside is that the files may be hard to locate for tools and applications that run directly on the host system, i.e. outside containers.
--	Create a data directory on the host system (outside the container) and [mount this to a directory visible from inside the container](https://docs.docker.com/engine/tutorials/dockervolumes/#mount-a-host-directory-as-a-data-volume). This places the database files in a known location on the host system, and makes it easy for tools and applications on the host system to access the files. The downside is that the user needs to make sure that the directory exists, and that e.g. directory permissions and other security mechanisms on the host system are set up correctly.
+-	Use a named volume using the container manager to manage the storage of your database data [by writing the database files to disk on the host system using its own internal volume management](https://docs.docker.com/storage/volumes/). This is the default and is easy and fairly transparent to the user. The downside is that the files may be hard to locate for tools and applications that run directly on the host system, i.e. outside containers.
+-	Create a data directory on the host system (outside the container) and [mount this to a directory visible from inside the container](https://docs.docker.com/storage/bind-mounts/). This places the database files in a known location on the host system, and makes it easy for tools and applications on the host system to access the files. The downside is that the user needs to make sure that the directory exists, and that e.g. directory permissions and other security mechanisms on the host system are set up correctly.
 
 The Docker documentation is a good starting point for understanding the different storage options and variations, and there are multiple blogs and forum postings that discuss and give advice in this area. We will simply show the basic procedure here for the latter option above:
 
@@ -264,185 +302,43 @@ The Docker documentation is a good starting point for understanding the differen
 2.	Start your `mariadb` container like this:
 
 	```console
-	$ docker run --name some-mariadb -v /my/own/datadir:/var/lib/mysql -e MARIADB_ROOT_PASSWORD=my-secret-pw -d mariadb:latest
+	$ docker run --name some-mariadb -v /my/own/datadir:/var/lib/mysql:Z -e MARIADB_ROOT_PASSWORD=my-secret-pw -d mariadb:latest
 	```
 
-The `-v /my/own/datadir:/var/lib/mysql` part of the command mounts the `/my/own/datadir` directory from the underlying host system as `/var/lib/mysql` inside the container, where MariaDB by default will write its data files.
+The `-v /my/own/datadir:/var/lib/mysql:Z` part of the command mounts the `/my/own/datadir` directory from the underlying host system as `/var/lib/mysql` inside the container, where MariaDB by default will write its data files.
 
 ## No connections until MariaDB init completes
 
-If there is no database initialized when the container starts, then a default database will be created. While this is the expected behavior, this means that it will not accept incoming connections until such initialization completes. This may cause issues when using automation tools, such as `docker-compose`, which start several containers simultaneously.
+If there is no database initialized when the container starts, then a default database will be created. While this is the expected behavior, this means that it will not accept incoming connections until such initialization completes. This may cause issues when using automation tools, such as `docker compose`, which start several containers simultaneously.
 
 ## Health/Liveness/Readiness Checking
 
-See [the "Official Images" FAQ](https://github.com/docker-library/faq#healthcheck) for why there is no default `HEALTHCHECK` directive. However, you can use the `/usr/local/bin/healthcheck.sh` script to choose from a (non-exhaustive) list of tests to check for whatever you consider health/liveness/readiness. Refer to the script's sources to learn about how to use it and which exact tests are provided.
+See [the "Official Images" FAQ](https://github.com/docker-library/faq#healthcheck) for why there is no default `HEALTHCHECK` directive. However, you can use the `healthcheck.sh` script to choose from a (non-exhaustive) list of tests to check for whatever you consider health/liveness/readiness. Refer to the [MariaDB Knowledge Base : Using Healthcheck.sh](https://mariadb.com/kb/en/using-healthcheck-sh-script/) to learn about how to use it and which exact tests are provided.
 
 ## Usage against an existing database
 
 If you start your `mariadb` container instance with a data directory that already contains a database (specifically, a `mysql` subdirectory), no environment variables that control initialization will be needed or examined, and no pre-existing databases will be changed. The only exception is the non-default `MARIADB_AUTO_UPGRADE` environment variable, that might cause `mysql_upgrade`/`mariadb-upgrade` to run, which might change the system tables.
 
-## Creating database dumps
+## Backups and Restores
 
-Most of the normal tools will work, although their usage might be a little convoluted in some cases to ensure they have access to the `mysqld` server. A simple way to ensure this is to use `docker exec` and run the tool from the same container, similar to the following:
+Backing up and restoring databases is important in containers too. The documentation on how to do this can be found on the [MariaDB Knowledge Base : Container Backup and Restoration](https://mariadb.com/kb/en/backups-and-restoration/).
 
-```console
-$ docker exec some-mariadb sh -c 'exec mariadb-dump --all-databases -uroot -p"$MARIADB_ROOT_PASSWORD"' > /some/path/on/your/host/all-databases.sql
-```
+## Frequently Asked Questions / How to reset root and user passwords
 
-## Restoring data from dump files
-
-For restoring data. You can use the `docker exec` command with the `-i` flag, similar to the following:
-
-```console
-$ docker exec -i some-mariadb sh -c 'exec mariadb -uroot -p"$MARIADB_ROOT_PASSWORD"' < /some/path/on/your/host/all-databases.sql
-```
-
-If one or more databases, but neither `--all-databases` nor the `mysql` database, were dumped, these databases can be restored by placing the resulting sql file in the `/docker-entrypoint-initdb.d` directory.
-
-## Creating backups with Mariabackup
-
-To perform a backup using [Mariabackup](https://mariadb.com/kb/en/mariabackup/), a second container is started that shares the original container's data directory. An additional volume for the backup needs to be included in the second backup instance. Authentication against the MariaDB database instance is required to successfully complete the backup. In the example below a `mysql@localhost` user is used with the MariaDB server's unix socket shared with the backup container.
-
-```console
-$ docker volume create some-mariadb-socket
-$ docker run --name some-mariadb -v /my/own/datadir:/var/lib/mysql -v some-mariadb-socket:/var/run/mysqld -e MARIADB_MYSQL_LOCALHOST_USER=1 -e MARIADB_MYSQL_LOCALHOST_GRANTS="RELOAD, PROCESS, LOCK TABLES, BINLOG MONITOR" -e MARIADB_ROOT_PASSWORD=my-secret-pw -d mariadb:latest
-```
-
-Note: Privileges listed here are for 10.5+. For an exact list, see [the Knowledge Base documentation for Mariabackup: Authentication and Privileges](https://mariadb.com/kb/en/mariabackup-overview/#authentication-and-privileges).
-
-Mariabackup will run as the `mysql` user in the container, so the permissions on `/backup` will need to ensure that it can be written to by this user:
-
-```console
-$ docker volume create some-mariadb-backup
-$ docker run --rm some-mariadb-backup -v some-mariadb-backup:/backup mariadb:latest chown mysql: /backup
-```
-
-To perform the backup:
-
-```console
-$ docker run --user mysql -v some-mariadb-socket:/var/run/mysqld -v some-mariadb-backup:/backup -v /my/own/datadir:/var/lib/mysql --rm mariadb:latest mariabackup --backup --target-dir=/backup
-```
-
-## Restore backups with Mariabackup
-
-These steps restore the backup made with Mariabackup.
-
-At some point before doing the restore, the backup needs to be prepared. Perform the prepare like this:
-
-```console
-$ docker run --user mysql --rm -v some-mariadb-backup:/backup mariadb:latest mariabackup --prepare --target-dir=/backup
-```
-
-Now that the image is prepared, start the container with both the data and the backup volumes and restore the backup:
-
-```console
-$ docker run --user mysql --rm -v /my/new/datadir:/var/lib/mysql -v some-mariadb-backup:/backup mariadb:latest mariabackup --copy-back --target-dir=/backup
-```
-
-With `/my/new/datadir` containing the restored backup, start normally as this is an initialized data directory:
-
-```console
-$ docker run --name some-mariadb -v /my/new/datadir:/var/lib/mysql -d mariadb:latest
-```
-
-For further information on Mariabackup, see the [Mariabackup Knowledge Base](https://mariadb.com/kb/en/mariabackup-overview/).
-
-## How to reset root and user passwords
-
-If you have an existing data directory and wish to reset the root and user passwords, and to create a database on which the user can fully modify, perform the following steps.
-
-First create a `passwordreset.sql` file:
-
-```text
-CREATE USER IF NOT EXISTS root@localhost IDENTIFIED BY 'thisismyrootpassword';
-SET PASSWORD FOR root@localhost = PASSWORD('thisismyrootpassword');
-GRANT ALL ON *.* TO root@localhost WITH GRANT OPTION;
-CREATE USER IF NOT EXISTS root@'%' IDENTIFIED BY 'thisismyrootpassword';
-SET PASSWORD FOR root@'%' = PASSWORD('thisismyrootpassword');
-GRANT ALL ON *.* TO root@'%' WITH GRANT OPTION;
-CREATE USER IF NOT EXISTS myuser@'%' IDENTIFIED BY 'thisismyuserpassword';
-SET PASSWORD FOR myuser@'%' = PASSWORD('thisismyuserpassword');
-CREATE DATABASE IF NOT EXISTS databasename;
-GRANT ALL ON databasename.* TO myuser@'%';
-```
-
-Adjust `myuser`, `databasename` and passwords as needed.
-
-Then:
-
-```console
-$ docker run --rm -v /my/own/datadir:/var/lib/mysql -v /my/own/passwordreset.sql:/passwordreset.sql:z mariadb:latest --init-file=/passwordreset.sql
-```
-
-On restarting the MariaDB container on this `/my/own/datadir`, the `root` and `myuser` passwords will be reset.
+This is documented on [MariaDB Knowledge Base : Frequenty Asked Questions of Docker Official Image](https://mariadb.com/kb/en/frequenty-asked-questions-of-docker-official-image/#how-to-reset-passwords).
 
 ## How to install MariaDB plugins
 
-MariaDB has many plugins, most are not enabled by default, some are in the mariadb container, others need to be installed from additional packages.
+This is documented on [MariaDB Knowledge Base : Adding Plugins to the Docker Official Image](https://mariadb.com/kb/en/adding-plugins-to-the-mariadb-docker-official-image/).
 
-The following methods summarize the [MariaDB Blog article - Installing plugins in the MariaDB Docker Library Container](https://mariadb.org/installing-plugins-in-the-mariadb-docker-library-container/) on this topic.
+# Related Images
 
-### Which plugins does the container contain?
+-	[MariaDB MaxScale](https://hub.docker.com/r/mariadb/maxscale/tags)
+-	[MariaDB ColumnStore](https://hub.docker.com/r/mariadb/columnstore/tags)
 
-To see which plugins are available in the mariadb:
+# Compose File Examples
 
-```console
-$ docker run --rm mariadb:latest ls -C /usr/lib/mysql/plugin
-```
-
-### Enabling a plugin using flags
-
-Using the `--plugin-load-add` flag with the plugin name (can be repeated), the plugins will be loaded and ready when the container is started:
-
-For example enable the `simple\_password\_check` plugin:
-
-```console
-$ docker run --name some-mariadb -e MARIADB_ROOT_PASSWORD=my-secret-pw --network=host -d mariadb:latest --plugin-load-add=simple_password_check
-```
-
-### Enabling a plugin in the configuration files
-
-`plugin-load-add` can be used as a configuration option to load plugins. The example below load the [FederatedX Storage Engine](https://mariadb.com/kb/en/federatedx-storage-engine/).
-
-```console
-$ printf "[mariadb]\nplugin-load-add=ha_federatedx\n" > /my/custom/federatedx.conf
-$ docker run --name some-mariadb -v /my/custom:/etc/mysql/conf.d -e MARIADB_ROOT_PASSWORD=my-secret-pw -d mariadb:latest
-```
-
-### Install a plugin using SQL in /docker-entrypoint-initdb.d
-
-[`INSTALL SONAME`](https://mariadb.com/kb/en/install-soname/) can be used to install a plugin as part of the database initialization.
-
-Create the SQL file used in initialization:
-
-```console
-$ echo 'INSTALL SONAME "disks";' > my_initdb/disks.sql
-```
-
-In this case the `my\_initdb` is a `/docker-entrypoint-initdb.d` directory per "Initializing a fresh instance" section above.
-
-### Identifing additional plugins in additional packages
-
-A number of plugins are in separate packages to reduce their installation size. The package names of MariaDB created plugins can be determined using the following command:
-
-```console
-$ docker run --rm mariadb:latest sh -c 'apt-get update -qq && apt-cache search mariadb-plugin'
-```
-
-### Creating a image with plugins from additional packages
-
-A new image needs to be created when using additional packages. The mariadb image can be used as a base however:
-
-In the following the [CONNECT Storage Engine](https://mariadb.com/kb/en/connect/) is installed:
-
-```dockerfile
-FROM mariadb:latest
-RUN apt-get update && \
-    apt-get install mariadb-plugin-connect -y && \
-    rm -rf /var/lib/apt/lists/*
-```
-
-Installing plugins from packages creates a configuration file in the directory `/etc/mysql/mariadb.conf.d/` that loads the plugin on startup.
+Example compose files using this `mariadb` are located in https://github.com/MariaDB/mariadb-docker in the `/examples` folder.
 
 # License
 

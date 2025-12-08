@@ -24,19 +24,18 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.2.18`, `3.2`, `latest`](https://github.com/orientechnologies/orientdb-docker/blob/0d918587573a79091bc9e648faff362b01162742/release/3.2.x/3.2.18/Dockerfile)
--	[`3.2.18-tp3`, `3.2-tp3`](https://github.com/orientechnologies/orientdb-docker/blob/0d918587573a79091bc9e648faff362b01162742/release/3.2.x/3.2.18-tp3/Dockerfile)
+-	[`3.2.46`, `3.2`, `latest`](https://github.com/orientechnologies/orientdb-docker/blob/9a4ca1a69611541364c73689e6ca058aad982d1a/release/3.2.x/3.2.46/Dockerfile)
+
+-	[`3.2.46-tp3`, `3.2-tp3`](https://github.com/orientechnologies/orientdb-docker/blob/9a4ca1a69611541364c73689e6ca058aad982d1a/release/3.2.x/3.2.46-tp3/Dockerfile)
+
 -	[`3.1.20`, `3.1`](https://github.com/orientechnologies/orientdb-docker/blob/a8a42acbe19dad60a051afe08ed625e66587dd37/release/3.1.x/3.1.20/Dockerfile)
+
 -	[`3.1.20-tp3`, `3.1-tp3`](https://github.com/orientechnologies/orientdb-docker/blob/a8a42acbe19dad60a051afe08ed625e66587dd37/release/3.1.x/3.1.20-tp3/Dockerfile)
--	[`3.0.44`, `3.0`](https://github.com/orientechnologies/orientdb-docker/blob/a8a42acbe19dad60a051afe08ed625e66587dd37/release/3.0.x/3.0.44/Dockerfile)
--	[`3.0.44-tp3`, `3.0-tp3`](https://github.com/orientechnologies/orientdb-docker/blob/a8a42acbe19dad60a051afe08ed625e66587dd37/release/3.0.x/3.0.44-tp3/Dockerfile)
--	[`2.2.37`, `2.2`](https://github.com/orientechnologies/orientdb-docker/blob/a8a42acbe19dad60a051afe08ed625e66587dd37/release/2.2.x/2.2.37/Dockerfile)
--	[`2.2.37-spatial`](https://github.com/orientechnologies/orientdb-docker/blob/a8a42acbe19dad60a051afe08ed625e66587dd37/release/2.2.x/2.2.37-spatial/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/orientechnologies/orientdb-docker/issues](https://github.com/orientechnologies/orientdb-docker/issues)
+	[https://github.com/orientechnologies/orientdb-docker/issues](https://github.com/orientechnologies/orientdb-docker/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/orientdb/), [`arm32v7`](https://hub.docker.com/r/arm32v7/orientdb/), [`arm64v8`](https://hub.docker.com/r/arm64v8/orientdb/)

@@ -24,17 +24,19 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.14.1-apache`, `4.14-apache`, `4-apache`, `apache`, `4.14.1`, `4.14`, `4`, `latest`](https://github.com/matomo-org/docker/blob/a5a6c217dd6c297a11a2b6a732aa568c184878ae/apache/Dockerfile)
--	[`4.14.1-fpm`, `4.14-fpm`, `4-fpm`, `fpm`](https://github.com/matomo-org/docker/blob/a5a6c217dd6c297a11a2b6a732aa568c184878ae/fpm/Dockerfile)
--	[`4.14.1-fpm-alpine`, `4.14-fpm-alpine`, `4-fpm-alpine`, `fpm-alpine`](https://github.com/matomo-org/docker/blob/a5a6c217dd6c297a11a2b6a732aa568c184878ae/fpm-alpine/Dockerfile)
+-	[`5.6.1-apache`, `5.6-apache`, `5-apache`, `apache`, `5.6.1`, `5.6`, `5`, `latest`](https://github.com/matomo-org/docker/blob/8bacd9a46ed27edddc63df81f9359194f9e65db8/apache/Dockerfile)
+
+-	[`5.6.1-fpm`, `5.6-fpm`, `5-fpm`, `fpm`](https://github.com/matomo-org/docker/blob/8bacd9a46ed27edddc63df81f9359194f9e65db8/fpm/Dockerfile)
+
+-	[`5.6.1-fpm-alpine`, `5.6-fpm-alpine`, `5-fpm-alpine`, `fpm-alpine`](https://github.com/matomo-org/docker/blob/8bacd9a46ed27edddc63df81f9359194f9e65db8/fpm-alpine/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/matomo-org/docker/issues](https://github.com/matomo-org/docker/issues)
+	[https://github.com/matomo-org/docker/issues](https://github.com/matomo-org/docker/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/matomo/), [`arm32v5`](https://hub.docker.com/r/arm32v5/matomo/), [`arm32v6`](https://hub.docker.com/r/arm32v6/matomo/), [`arm32v7`](https://hub.docker.com/r/arm32v7/matomo/), [`arm64v8`](https://hub.docker.com/r/arm64v8/matomo/), [`i386`](https://hub.docker.com/r/i386/matomo/), [`mips64le`](https://hub.docker.com/r/mips64le/matomo/), [`ppc64le`](https://hub.docker.com/r/ppc64le/matomo/), [`s390x`](https://hub.docker.com/r/s390x/matomo/)
+	[`amd64`](https://hub.docker.com/r/amd64/matomo/), [`arm32v5`](https://hub.docker.com/r/arm32v5/matomo/), [`arm32v6`](https://hub.docker.com/r/arm32v6/matomo/), [`arm32v7`](https://hub.docker.com/r/arm32v7/matomo/), [`arm64v8`](https://hub.docker.com/r/arm64v8/matomo/), [`i386`](https://hub.docker.com/r/i386/matomo/), [`ppc64le`](https://hub.docker.com/r/ppc64le/matomo/), [`riscv64`](https://hub.docker.com/r/riscv64/matomo/), [`s390x`](https://hub.docker.com/r/s390x/matomo/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/matomo/` directory](https://github.com/docker-library/repo-info/blob/master/repos/matomo) ([history](https://github.com/docker-library/repo-info/commits/master/repos/matomo))  
@@ -49,7 +51,7 @@ WARNING:
 
 # Matomo (formerly Piwik)
 
-[![Build Status](https://travis-ci.org/matomo-org/docker.svg?branch=master)](https://travis-ci.org/matomo-org/docker) [Matomo](https://matomo.org/) (formerly Piwik) is the leading open-source analytics platform that gives you more than just powerful analytics:
+[Matomo](https://matomo.org/) (formerly Piwik) is the leading open-source analytics platform that gives you more than just powerful analytics:
 
 -	Free open-source software
 -	100% data ownership
@@ -57,13 +59,13 @@ WARNING:
 -	User-centric insights
 -	Customisable and extensible
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/955ef68222b4466509ca877daab484bc0095afcf/matomo/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/1553a3fe5fc08c4619fcacb51e61e33f3495e26d/matomo/logo.svg?sanitize=true)
 
 # How to use this image
 
 You can run the Matomo container and service like so:
 
-```console
+```bash
 docker run -d --link some-mysql:db matomo
 ```
 
@@ -73,8 +75,8 @@ This assumes you've already launched a suitable MySQL or MariaDB database contai
 
 Use a Docker volume to keep persistent data:
 
-```console
-docker run -d --link some-mysql:db -v matomo:/var/www/html matomo
+```bash
+docker run -d -p 8080:80 --link some-mysql:db -v matomo:/var/www/html matomo
 ```
 
 ## Matomo Installation
@@ -99,28 +101,29 @@ The following environment variables are also honored for configuring your Matomo
 -	`MATOMO_DATABASE_PASSWORD`
 -	`MATOMO_DATABASE_DBNAME`
 
-## Docker-compose examples and log import instructions
+The PHP memory limit can be configured with the following environment variable:
 
-A minimal set-up using docker-compose is available in the [.examples folder](https://github.com/matomo-org/docker/tree/master/.examples).
+-	`PHP_MEMORY_LIMIT`
+
+## Docker Compose examples and log import instructions
+
+A minimal set-up using Docker Compose is available in the [.examples folder](https://github.com/matomo-org/docker/tree/master/.examples).
 
 If you want to use the import logs script, you can then run the following container as needed, in order to execute the python import logs script:
 
-```console
-docker run --rm --volumes-from="matomo_app_1" --link matomo_app_1 python:2-alpine python /var/www/html/misc/log-analytics/import_logs.py --url=http://ip.of.your.piwik --login=yourlogin --password=yourpassword --idsite=1 --recorders=4 /var/www/html/logs/access.log
+```bash
+docker run --rm --volumes-from="matomo-app-1" --link matomo-app-1 python:3-alpine python /var/www/html/misc/log-analytics/import_logs.py --url=http://ip.of.your.matomo.example --login=yourlogin --password=yourpassword --idsite=1 --recorders=4 /var/www/html/logs/access.log
 ```
 
 ## Contribute
 
 Pull requests are very welcome!
 
-We'd love to hear your feedback and suggestions in the issue tracker: [github.com/motomo-org/docker/issues](https://github.com/matomo-org/docker/issues).
+We'd love to hear your feedback and suggestions in the issue tracker: [[https://github.com/matomo-org/docker/issues](https://github.com/matomo-org/docker/issues?q=)]([https://github.com/matomo-org/docker/issues](https://github.com/matomo-org/docker/issues?q=)).
 
 ## GeoIP
 
-~~This product includes GeoLite data created by MaxMind, available from [http://www.maxmind.com](http://www.maxmind.com).~~
-
--	https://blog.maxmind.com/2019/12/18/significant-changes-to-accessing-and-using-geolite2-databases/
--	https://matomo.org/faq/how-to/faq_163/
+~~This product includes GeoLite data created by MaxMind, available from [https://www.maxmind.com](https://www.maxmind.com).~~ https://blog.maxmind.com/2019/12/18/significant-changes-to-accessing-and-using-geolite2-databases/
 
 # Image Variants
 

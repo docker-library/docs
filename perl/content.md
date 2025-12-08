@@ -42,7 +42,7 @@ See also [Perl/docker-perl#26](https://github.com/Perl/docker-perl/issues/26) fo
 
 ## Signal handling behavior notice
 
-As Perl will run as PID 1 by default in containers (unless an [ENTRYPOINT](https://docs.docker.com/engine/reference/builder/#entrypoint) is set,) special care needs to be considered when expecting to send signals (particularly SIGINT or SIGTERM) to it. For example, running
+As Perl will run as PID 1 by default in containers (unless an [ENTRYPOINT](https://docs.docker.com/reference/dockerfile/#entrypoint) is set,) special care needs to be considered when expecting to send signals (particularly SIGINT or SIGTERM) to it. For example, running
 
 ```console
 $ docker run -it --name sleeping_beauty --rm %%IMAGE%%:5.34 perl -E 'sleep 300'
@@ -66,9 +66,15 @@ If your Perl program is expected to handle signals and fork child processes, it 
 
 See also [Signals in perlipc](https://perldoc.pl/perlipc#Signals) as well as [Perl/docker-perl#44](https://github.com/Perl/docker-perl/issues/44).
 
+### `COPY` and `WORKDIR` behavior in Debian Bookworm based images (Perl >= 5.38)
+
+As our Perl images are based on the standard `buildpack-deps` and `debian` images, these inherit the new [merged-usr root filesystem layout](https://wiki.debian.org/UsrMerge) introduced in Debian 12 (Bookworm) which may affect certain build contexts that `COPY` their own `bin`, `sbin`, or `lib` directories into a `WORKDIR /`. Users are encouraged to set `WORKDIR` explicitly to a path other than `/` as much as possible, such as the `/usr/src/app` shown here in the examples, though as of current release our images now default to `WORKDIR /usr/src/app`.
+
+See also [Perl/docker-perl#140](https://github.com/Perl/docker-perl/issues/140) for further information.
+
 ## Example: Creating a reusable Carton image for Perl projects
 
-Suppose you have a project that uses [Carton](https://metacpan.org/pod/Carton) to manage Perl dependencies. You can create a `%%IMAGE%%:carton` image that makes use of the [ONBUILD](https://docs.docker.com/engine/reference/builder/#onbuild) instruction in its `Dockerfile`, like this:
+Suppose you have a project that uses [Carton](https://metacpan.org/pod/Carton) to manage Perl dependencies. You can create a `%%IMAGE%%:carton` image that makes use of the [ONBUILD](https://docs.docker.com/reference/dockerfile/#onbuild) instruction in its `Dockerfile`, like this:
 
 ```dockerfile
 FROM %%IMAGE%%:5.34
@@ -87,5 +93,5 @@ Then, in your Carton project, you can now reduce your project's `Dockerfile` int
 
 Having a single `%%IMAGE%%:carton` base image is useful especially if you have multiple Carton-based projects in development, to avoid "boilerplate" coding of installing Carton and/or copying the project source files into the derived image. Keep in mind, though, about certain things to consider when using the Perl image in this way:
 
--	This kind of base image will hide the useful bits (such as the`COPY`/`RUN` above) in the image, separating it from more specific Dockerfiles using the base image. This might lead to confusion when creating further derived images, so be aware of how [ONBUILD triggers](https://docs.docker.com/engine/reference/builder/#onbuild) work and plan appropriately.
+-	This kind of base image will hide the useful bits (such as the`COPY`/`RUN` above) in the image, separating it from more specific Dockerfiles using the base image. This might lead to confusion when creating further derived images, so be aware of how [ONBUILD triggers](https://docs.docker.com/reference/dockerfile/#onbuild) work and plan appropriately.
 -	There is the cost of maintaining an extra base image build, so if you're working on a single Carton project and/or plan to publish it, then it may be more preferable to derive directly from a versioned `perl` image instead.

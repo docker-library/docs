@@ -22,7 +22,7 @@ docker run -d -v DIR:/opt/aerospike/etc/ -e "FEATURE_KEY_FILE=/opt/aerospike/etc
 
 Above, *DIR* is a directory on your machine where you drop your feature key file. Make sure Docker Desktop has file sharing permission to bind mount it into Docker containers.
 
-### Running an Aerospike EE node with a feature key file in a mapped directory
+### Running a node with a feature key file in an environment variable
 
 ```console
 FEATKEY=$(base64 ~/Desktop/evaluation-features.conf)
@@ -83,7 +83,7 @@ You should first `-v` map a local directory, which Docker will bind mount. Next,
 For example:
 
 ```console
-docker run -d -v /opt/aerospike/etc/:/opt/aerospike/etc/ --name aerospike-p 3000-3002:3000-3002 %%IMAGE%%:ee-[version] --config-file /opt/aerospike/etc/aerospike.conf
+docker run -d -v /opt/aerospike/etc/:/opt/aerospike/etc/ --name aerospike -p 3000-3002:3000-3002 %%IMAGE%%:ee-[version] --config-file /opt/aerospike/etc/aerospike.conf
 ```
 
 ### Persistent Data Directory
@@ -169,7 +169,7 @@ For more, see [How do I get a 2 nodes Aerospike cluster running quickly in Docke
 
 ## Image Versions
 
-These images are based on [debian:strech-slim](https://hub.docker.com/_/debian).
+These images are based on [ubuntu:24.04](https://hub.docker.com/_/ubuntu).
 
 ### ee-[version]
 

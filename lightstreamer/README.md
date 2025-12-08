@@ -24,21 +24,40 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.0.3`, `6.0`](https://github.com/Lightstreamer/Docker/blob/84e3f6588620183b48b7eb62a18070b793eff019/6.0/Dockerfile)
--	[`6.1.0`, `6.1`, `6`](https://github.com/Lightstreamer/Docker/blob/84e3f6588620183b48b7eb62a18070b793eff019/6.1/Dockerfile)
--	[`7.0.3-jdk8-temurin`, `7.0-jdk8-temurin`, `7.0.3-jdk8`, `7.0-jdk8`](https://github.com/Lightstreamer/Docker/blob/84e3f6588620183b48b7eb62a18070b793eff019/7.0/jdk8/Dockerfile)
--	[`7.0.3-jdk11-temurin`, `7.0-jdk11-temurin`, `7.0.3-jdk11`, `7.0-jdk11`, `7.0.3`, `7.0`](https://github.com/Lightstreamer/Docker/blob/84e3f6588620183b48b7eb62a18070b793eff019/7.0/jdk11/Dockerfile)
--	[`7.1.3-jdk8-temurin`, `7.1-jdk8-temurin`, `7.1.3-jdk8`, `7.1-jdk8`](https://github.com/Lightstreamer/Docker/blob/84e3f6588620183b48b7eb62a18070b793eff019/7.1/jdk8/Dockerfile)
--	[`7.1.3-jdk11-temurin`, `7.1-jdk11-temurin`, `7.1.3-jdk11`, `7.1-jdk11`, `7.1.3`, `7.1`](https://github.com/Lightstreamer/Docker/blob/84e3f6588620183b48b7eb62a18070b793eff019/7.1/jdk11/Dockerfile)
--	[`7.2.2-jdk8-temurin`, `7.2-jdk8-temurin`, `7.2.2-jdk8`, `7.2-jdk8`](https://github.com/Lightstreamer/Docker/blob/84e3f6588620183b48b7eb62a18070b793eff019/7.2/jdk8/Dockerfile)
--	[`7.2.2-jdk11-temurin`, `7.2-jdk11-temurin`, `7.2.2-jdk11`, `7.2-jdk11`, `7.2.2`, `7.2`](https://github.com/Lightstreamer/Docker/blob/84e3f6588620183b48b7eb62a18070b793eff019/7.2/jdk11/Dockerfile)
--	[`7.3.3-jdk8-temurin`, `7.3-jdk8-temurin`, `7-jdk8-temurin`, `7.3.3-jdk8`, `7.3-jdk8`, `7-jdk8`](https://github.com/Lightstreamer/Docker/blob/586d5c630b887344f19e93d5c9a5d63d82365309/7.3/jdk8/Dockerfile)
--	[`7.3.3-jdk11-temurin`, `7.3-jdk11-temurin`, `7-jdk11-temurin`, `7.3.3-jdk11`, `7.3-jdk11`, `7-jdk11`, `7.3.3`, `7.3`, `7`, `latest`](https://github.com/Lightstreamer/Docker/blob/586d5c630b887344f19e93d5c9a5d63d82365309/7.3/jdk11/Dockerfile)
+-	[`6.0.3`, `6.0`](https://github.com/Lightstreamer/Docker/blob/b6c4a87af3e78b53887f311bdf2404f4f9956796/6.0/Dockerfile)
+
+-	[`6.1.0`, `6.1`, `6`](https://github.com/Lightstreamer/Docker/blob/b6c4a87af3e78b53887f311bdf2404f4f9956796/6.1/Dockerfile)
+
+-	[`7.0.3-jdk8-temurin`, `7.0-jdk8-temurin`, `7.0.3-jdk8`, `7.0-jdk8`](https://github.com/Lightstreamer/Docker/blob/b6c4a87af3e78b53887f311bdf2404f4f9956796/7.0/jdk8/Dockerfile)
+
+-	[`7.0.3-jdk11-temurin`, `7.0-jdk11-temurin`, `7.0.3-jdk11`, `7.0-jdk11`, `7.0.3`, `7.0`](https://github.com/Lightstreamer/Docker/blob/b6c4a87af3e78b53887f311bdf2404f4f9956796/7.0/jdk11/Dockerfile)
+
+-	[`7.1.3-jdk8-temurin`, `7.1-jdk8-temurin`, `7.1.3-jdk8`, `7.1-jdk8`](https://github.com/Lightstreamer/Docker/blob/b6c4a87af3e78b53887f311bdf2404f4f9956796/7.1/jdk8/Dockerfile)
+
+-	[`7.1.3-jdk11-temurin`, `7.1-jdk11-temurin`, `7.1.3-jdk11`, `7.1-jdk11`, `7.1.3`, `7.1`](https://github.com/Lightstreamer/Docker/blob/b6c4a87af3e78b53887f311bdf2404f4f9956796/7.1/jdk11/Dockerfile)
+
+-	[`7.2.2-jdk8-temurin`, `7.2-jdk8-temurin`, `7.2.2-jdk8`, `7.2-jdk8`](https://github.com/Lightstreamer/Docker/blob/b6c4a87af3e78b53887f311bdf2404f4f9956796/7.2/jdk8/Dockerfile)
+
+-	[`7.2.2-jdk11-temurin`, `7.2-jdk11-temurin`, `7.2.2-jdk11`, `7.2-jdk11`, `7.2.2`, `7.2`](https://github.com/Lightstreamer/Docker/blob/b6c4a87af3e78b53887f311bdf2404f4f9956796/7.2/jdk11/Dockerfile)
+
+-	[`7.3.3-jdk8-temurin`, `7.3-jdk8-temurin`, `7.3.3-jdk8`, `7.3-jdk8`](https://github.com/Lightstreamer/Docker/blob/b6c4a87af3e78b53887f311bdf2404f4f9956796/7.3/jdk8/Dockerfile)
+
+-	[`7.3.3-jdk11-temurin`, `7.3-jdk11-temurin`, `7.3.3-jdk11`, `7.3-jdk11`](https://github.com/Lightstreamer/Docker/blob/b6c4a87af3e78b53887f311bdf2404f4f9956796/7.3/jdk11/Dockerfile)
+
+-	[`7.3.3-jdk17-temurin`, `7.3-jdk17-temurin`, `7.3.3-jdk17`, `7.3-jdk17`, `7.3.3`, `7.3`](https://github.com/Lightstreamer/Docker/blob/b6c4a87af3e78b53887f311bdf2404f4f9956796/7.3/jdk17/Dockerfile)
+
+-	[`7.4.7-jdk8-temurin`, `7.4-jdk8-temurin`, `7-jdk8-temurin`, `7.4.7-jdk8`, `7.4-jdk8`, `7-jdk8`](https://github.com/Lightstreamer/Docker/blob/abea70d53fb366cb5d5402493c37ca4f0b2ab0c1/7.4/jdk8/Dockerfile)
+
+-	[`7.4.7-jdk11-temurin`, `7.4-jdk11-temurin`, `7-jdk11-temurin`, `7.4.7-jdk11`, `7.4-jdk11`, `7-jdk11`](https://github.com/Lightstreamer/Docker/blob/abea70d53fb366cb5d5402493c37ca4f0b2ab0c1/7.4/jdk11/Dockerfile)
+
+-	[`7.4.7-jdk17-temurin`, `7.4-jdk17-temurin`, `7-jdk17-temurin`, `7.4.7-jdk17`, `7.4-jdk17`, `7-jdk17`](https://github.com/Lightstreamer/Docker/blob/abea70d53fb366cb5d5402493c37ca4f0b2ab0c1/7.4/jdk17/Dockerfile)
+
+-	[`7.4.7-jdk21-temurin`, `7.4-jdk21-temurin`, `7-jdk21-temurin`, `7.4.7-jdk21`, `7.4-jdk21`, `7-jdk21`, `7.4.7`, `7.4`, `7`, `latest`](https://github.com/Lightstreamer/Docker/blob/abea70d53fb366cb5d5402493c37ca4f0b2ab0c1/7.4/jdk21/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/Lightstreamer/Docker/issues](https://github.com/Lightstreamer/Docker/issues)
+	[https://github.com/Lightstreamer/Docker/issues](https://github.com/Lightstreamer/Docker/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/lightstreamer/), [`arm64v8`](https://hub.docker.com/r/arm64v8/lightstreamer/)
@@ -99,7 +118,7 @@ Alternatively, the above tasks can be executed by deriving a new image through a
 ```dockerfile
 FROM lightstreamer
 
-# Please specify a COPY command only for the the required custom configuration file
+# Please specify a COPY command only for the required custom configuration file
 COPY my-lightstreamer_conf.xml /lightstreamer/conf/lightstreamer_conf.xml
 COPY my-lightstreamer_log_conf.xml /lightstreamer/conf/lightstreamer_log_conf.xml
 ```

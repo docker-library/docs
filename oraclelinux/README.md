@@ -24,17 +24,32 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`9`](https://github.com/oracle/container-images/blob/f62c9d80cf69f0ab09ace5f1ba3b6fb5575c814e/9/Dockerfile)
--	[`9-slim`](https://github.com/oracle/container-images/blob/f62c9d80cf69f0ab09ace5f1ba3b6fb5575c814e/9-slim/Dockerfile)
--	[`8.7`, `8`](https://github.com/oracle/container-images/blob/f62c9d80cf69f0ab09ace5f1ba3b6fb5575c814e/8/Dockerfile)
--	[`8-slim`](https://github.com/oracle/container-images/blob/f62c9d80cf69f0ab09ace5f1ba3b6fb5575c814e/8-slim/Dockerfile)
--	[`7.9`, `7`](https://github.com/oracle/container-images/blob/f62c9d80cf69f0ab09ace5f1ba3b6fb5575c814e/7/Dockerfile)
--	[`7-slim`](https://github.com/oracle/container-images/blob/f62c9d80cf69f0ab09ace5f1ba3b6fb5575c814e/7-slim/Dockerfile)
+-	[`10`](https://github.com/oracle/container-images/blob/3a9ec8f30b6e17eba8fdbdce95884952a5645b55/10/Dockerfile)
+
+-	[`10-slim`](https://github.com/oracle/container-images/blob/3a9ec8f30b6e17eba8fdbdce95884952a5645b55/10-slim/Dockerfile)
+
+-	[`9`](https://github.com/oracle/container-images/blob/3a9ec8f30b6e17eba8fdbdce95884952a5645b55/9/Dockerfile)
+
+-	[`9-slim`](https://github.com/oracle/container-images/blob/3a9ec8f30b6e17eba8fdbdce95884952a5645b55/9-slim/Dockerfile)
+
+-	[`9-slim-fips`](https://github.com/oracle/container-images/blob/3a9ec8f30b6e17eba8fdbdce95884952a5645b55/9-slim-fips/Dockerfile)
+
+-	[`8.10`, `8`](https://github.com/oracle/container-images/blob/3a9ec8f30b6e17eba8fdbdce95884952a5645b55/8/Dockerfile)
+
+-	[`8-slim`](https://github.com/oracle/container-images/blob/3a9ec8f30b6e17eba8fdbdce95884952a5645b55/8-slim/Dockerfile)
+
+-	[`8-slim-fips`](https://github.com/oracle/container-images/blob/3a9ec8f30b6e17eba8fdbdce95884952a5645b55/8-slim-fips/Dockerfile)
+
+-	[`7.9`, `7`](https://github.com/oracle/container-images/blob/3a9ec8f30b6e17eba8fdbdce95884952a5645b55/7/Dockerfile)
+
+-	[`7-slim`](https://github.com/oracle/container-images/blob/3a9ec8f30b6e17eba8fdbdce95884952a5645b55/7-slim/Dockerfile)
+
+-	[`7-slim-fips`](https://github.com/oracle/container-images/blob/3a9ec8f30b6e17eba8fdbdce95884952a5645b55/7-slim-fips/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/oracle/container-images/issues](https://github.com/oracle/container-images/issues)
+	[https://github.com/oracle/container-images/issues](https://github.com/oracle/container-images/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/oraclelinux/), [`arm64v8`](https://hub.docker.com/r/arm64v8/oraclelinux/)

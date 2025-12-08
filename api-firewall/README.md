@@ -24,14 +24,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`0.6.11`, `latest`](https://github.com/wallarm/api-firewall-docker/blob/8da89a87d29d1b6d5a52e3064722d9a24a4c39fb/0.6.11/Dockerfile)
--	[`0.6.10`](https://github.com/wallarm/api-firewall-docker/blob/c2b622e7f59546d9fb338c81fa82d405a8767485/0.6.10/Dockerfile)
--	[`0.6.9`](https://github.com/wallarm/api-firewall-docker/blob/b0579bf17de8f41b162e150b00a87b95648258ee/0.6.9/Dockerfile)
+-	[`0.9.5`, `latest`](https://github.com/wallarm/api-firewall-docker/blob/f8ae1a56dccac4d1d8e918c0867b37f3cc40ffb2/0.9.5/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/wallarm/api-firewall/issues](https://github.com/wallarm/api-firewall/issues)
+	[https://github.com/wallarm/api-firewall/issues](https://github.com/wallarm/api-firewall/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/api-firewall/), [`arm64v8`](https://hub.docker.com/r/arm64v8/api-firewall/), [`i386`](https://hub.docker.com/r/i386/api-firewall/)

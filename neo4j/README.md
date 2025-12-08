@@ -24,15 +24,30 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.6.0`, `5.6.0-community`, `5.6`, `5.6-community`, `5`, `5-community`, `community`, `latest`](https://github.com/neo4j/docker-neo4j-publish/blob/5e0122d70f6407707b3ae70e6ef91a1fb3fd2f61/5.6.0/community/Dockerfile)
--	[`5.6.0-enterprise`, `5.6-enterprise`, `5-enterprise`, `enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/5e0122d70f6407707b3ae70e6ef91a1fb3fd2f61/5.6.0/enterprise/Dockerfile)
--	[`4.4.19`, `4.4.19-community`, `4.4`, `4.4-community`](https://github.com/neo4j/docker-neo4j-publish/blob/5342ba80874c712680dfaf5be3e44cd37ca5d1f8/4.4.19/community/Dockerfile)
--	[`4.4.19-enterprise`, `4.4-enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/5342ba80874c712680dfaf5be3e44cd37ca5d1f8/4.4.19/enterprise/Dockerfile)
+-	[`2025.10.1-community-bullseye`, `2025.10-community-bullseye`, `2025-community-bullseye`, `2025.10.1-community`, `2025.10-community`, `2025-community`, `2025.10.1-bullseye`, `2025.10-bullseye`, `2025-bullseye`, `2025.10.1`, `2025.10`, `2025`, `community-bullseye`, `community`, `bullseye`, `latest`](https://github.com/neo4j/docker-neo4j-publish/blob/630ee784d1c1d65a6643c81887f6543a70816edf/2025.10.1/bullseye/community/Dockerfile)
+
+-	[`2025.10.1-enterprise-bullseye`, `2025.10-enterprise-bullseye`, `2025-enterprise-bullseye`, `2025.10.1-enterprise`, `2025.10-enterprise`, `2025-enterprise`, `enterprise-bullseye`, `enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/630ee784d1c1d65a6643c81887f6543a70816edf/2025.10.1/bullseye/enterprise/Dockerfile)
+
+-	[`2025.10.1-community-ubi9`, `2025.10-community-ubi9`, `2025-community-ubi9`, `2025.10.1-ubi9`, `2025.10-ubi9`, `2025-ubi9`, `community-ubi9`, `ubi9`](https://github.com/neo4j/docker-neo4j-publish/blob/630ee784d1c1d65a6643c81887f6543a70816edf/2025.10.1/ubi9/community/Dockerfile)
+
+-	[`2025.10.1-enterprise-ubi9`, `2025.10-enterprise-ubi9`, `2025-enterprise-ubi9`, `enterprise-ubi9`](https://github.com/neo4j/docker-neo4j-publish/blob/630ee784d1c1d65a6643c81887f6543a70816edf/2025.10.1/ubi9/enterprise/Dockerfile)
+
+-	[`5.26.18-community-bullseye`, `5.26-community-bullseye`, `5-community-bullseye`, `5.26.18-community`, `5.26-community`, `5-community`, `5.26.18-bullseye`, `5.26-bullseye`, `5-bullseye`, `5.26.18`, `5.26`, `5`](https://github.com/neo4j/docker-neo4j-publish/blob/e0e8e894f2f261783123263106f6484ba9908b74/5.26.18/bullseye/community/Dockerfile)
+
+-	[`5.26.18-enterprise-bullseye`, `5.26-enterprise-bullseye`, `5-enterprise-bullseye`, `5.26.18-enterprise`, `5.26-enterprise`, `5-enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/e0e8e894f2f261783123263106f6484ba9908b74/5.26.18/bullseye/enterprise/Dockerfile)
+
+-	[`5.26.18-community-ubi9`, `5.26-community-ubi9`, `5-community-ubi9`, `5.26.18-ubi9`, `5.26-ubi9`, `5-ubi9`](https://github.com/neo4j/docker-neo4j-publish/blob/e0e8e894f2f261783123263106f6484ba9908b74/5.26.18/ubi9/community/Dockerfile)
+
+-	[`5.26.18-enterprise-ubi9`, `5.26-enterprise-ubi9`, `5-enterprise-ubi9`](https://github.com/neo4j/docker-neo4j-publish/blob/e0e8e894f2f261783123263106f6484ba9908b74/5.26.18/ubi9/enterprise/Dockerfile)
+
+-	[`4.4.46`, `4.4.46-community`, `4.4`, `4.4-community`](https://github.com/neo4j/docker-neo4j-publish/blob/439722772cf16662310df3e1d8f898272454f85a/4.4.46/bullseye/community/Dockerfile)
+
+-	[`4.4.46-enterprise`, `4.4-enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/439722772cf16662310df3e1d8f898272454f85a/4.4.46/bullseye/enterprise/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/neo4j/docker-neo4j/issues](https://github.com/neo4j/docker-neo4j/issues)
+	[https://github.com/neo4j/docker-neo4j/issues](https://github.com/neo4j/docker-neo4j/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/neo4j/), [`arm64v8`](https://hub.docker.com/r/arm64v8/neo4j/)

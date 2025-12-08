@@ -24,32 +24,61 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`kernel`](https://github.com/WASdev/ci.docker/blob/013ef8e372c4468a8a30c9c26837b86cfc9de003/ga/latest/kernel/Dockerfile.ubuntu.ibmjava8)
--	[`kernel-java11-openj9`](https://github.com/WASdev/ci.docker/blob/013ef8e372c4468a8a30c9c26837b86cfc9de003/ga/latest/kernel/Dockerfile.ubuntu.openjdk11)
--	[`kernel-java17-openj9`](https://github.com/WASdev/ci.docker/blob/013ef8e372c4468a8a30c9c26837b86cfc9de003/ga/latest/kernel/Dockerfile.ubuntu.openjdk17)
--	[`full`, `latest`](https://github.com/WASdev/ci.docker/blob/013ef8e372c4468a8a30c9c26837b86cfc9de003/ga/latest/full/Dockerfile.ubuntu.ibmjava8)
--	[`full-java11-openj9`](https://github.com/WASdev/ci.docker/blob/013ef8e372c4468a8a30c9c26837b86cfc9de003/ga/latest/full/Dockerfile.ubuntu.openjdk11)
--	[`full-java17-openj9`](https://github.com/WASdev/ci.docker/blob/013ef8e372c4468a8a30c9c26837b86cfc9de003/ga/latest/full/Dockerfile.ubuntu.openjdk17)
--	[`23.0.0.3-kernel-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/013ef8e372c4468a8a30c9c26837b86cfc9de003/ga/23.0.0.3/kernel/Dockerfile.ubuntu.ibmjava8)
--	[`23.0.0.3-kernel-java11-openj9`](https://github.com/WASdev/ci.docker/blob/013ef8e372c4468a8a30c9c26837b86cfc9de003/ga/23.0.0.3/kernel/Dockerfile.ubuntu.openjdk11)
--	[`23.0.0.3-kernel-java17-openj9`](https://github.com/WASdev/ci.docker/blob/013ef8e372c4468a8a30c9c26837b86cfc9de003/ga/23.0.0.3/kernel/Dockerfile.ubuntu.openjdk17)
--	[`23.0.0.3-full-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/013ef8e372c4468a8a30c9c26837b86cfc9de003/ga/23.0.0.3/full/Dockerfile.ubuntu.ibmjava8)
--	[`23.0.0.3-full-java11-openj9`](https://github.com/WASdev/ci.docker/blob/013ef8e372c4468a8a30c9c26837b86cfc9de003/ga/23.0.0.3/full/Dockerfile.ubuntu.openjdk11)
--	[`23.0.0.3-full-java17-openj9`](https://github.com/WASdev/ci.docker/blob/013ef8e372c4468a8a30c9c26837b86cfc9de003/ga/23.0.0.3/full/Dockerfile.ubuntu.openjdk17)
--	[`22.0.0.12-kernel-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/013ef8e372c4468a8a30c9c26837b86cfc9de003/ga/22.0.0.12/kernel/Dockerfile.ubuntu.ibmjava8)
--	[`22.0.0.12-kernel-java11-openj9`](https://github.com/WASdev/ci.docker/blob/013ef8e372c4468a8a30c9c26837b86cfc9de003/ga/22.0.0.12/kernel/Dockerfile.ubuntu.openjdk11)
--	[`22.0.0.12-kernel-java17-openj9`](https://github.com/WASdev/ci.docker/blob/013ef8e372c4468a8a30c9c26837b86cfc9de003/ga/22.0.0.12/kernel/Dockerfile.ubuntu.openjdk17)
--	[`22.0.0.12-full-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/013ef8e372c4468a8a30c9c26837b86cfc9de003/ga/22.0.0.12/full/Dockerfile.ubuntu.ibmjava8)
--	[`22.0.0.12-full-java11-openj9`](https://github.com/WASdev/ci.docker/blob/013ef8e372c4468a8a30c9c26837b86cfc9de003/ga/22.0.0.12/full/Dockerfile.ubuntu.openjdk11)
--	[`22.0.0.12-full-java17-openj9`](https://github.com/WASdev/ci.docker/blob/013ef8e372c4468a8a30c9c26837b86cfc9de003/ga/22.0.0.12/full/Dockerfile.ubuntu.openjdk17)
+-	[`kernel`, `kernel-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/8af19205dfc20901b6908fc4d2631b2cbfd51611/ga/latest/kernel/Dockerfile.ubuntu.ibmjava8)
+
+-	[`kernel-java11-openj9`](https://github.com/WASdev/ci.docker/blob/8af19205dfc20901b6908fc4d2631b2cbfd51611/ga/latest/kernel/Dockerfile.ubuntu.openjdk11)
+
+-	[`kernel-java17-openj9`](https://github.com/WASdev/ci.docker/blob/8af19205dfc20901b6908fc4d2631b2cbfd51611/ga/latest/kernel/Dockerfile.ubuntu.openjdk17)
+
+-	[`full`, `latest`, `full-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/8af19205dfc20901b6908fc4d2631b2cbfd51611/ga/latest/full/Dockerfile.ubuntu.ibmjava8)
+
+-	[`full-java11-openj9`](https://github.com/WASdev/ci.docker/blob/8af19205dfc20901b6908fc4d2631b2cbfd51611/ga/latest/full/Dockerfile.ubuntu.openjdk11)
+
+-	[`full-java17-openj9`](https://github.com/WASdev/ci.docker/blob/8af19205dfc20901b6908fc4d2631b2cbfd51611/ga/latest/full/Dockerfile.ubuntu.openjdk17)
+
+-	[`25.0.0.6-kernel-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/8af19205dfc20901b6908fc4d2631b2cbfd51611/ga/25.0.0.6/kernel/Dockerfile.ubuntu.ibmjava8)
+
+-	[`25.0.0.6-kernel-java11-openj9`](https://github.com/WASdev/ci.docker/blob/8af19205dfc20901b6908fc4d2631b2cbfd51611/ga/25.0.0.6/kernel/Dockerfile.ubuntu.openjdk11)
+
+-	[`25.0.0.6-kernel-java17-openj9`](https://github.com/WASdev/ci.docker/blob/8af19205dfc20901b6908fc4d2631b2cbfd51611/ga/25.0.0.6/kernel/Dockerfile.ubuntu.openjdk17)
+
+-	[`25.0.0.6-full-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/8af19205dfc20901b6908fc4d2631b2cbfd51611/ga/25.0.0.6/full/Dockerfile.ubuntu.ibmjava8)
+
+-	[`25.0.0.6-full-java11-openj9`](https://github.com/WASdev/ci.docker/blob/8af19205dfc20901b6908fc4d2631b2cbfd51611/ga/25.0.0.6/full/Dockerfile.ubuntu.openjdk11)
+
+-	[`25.0.0.6-full-java17-openj9`](https://github.com/WASdev/ci.docker/blob/8af19205dfc20901b6908fc4d2631b2cbfd51611/ga/25.0.0.6/full/Dockerfile.ubuntu.openjdk17)
+
+-	[`25.0.0.9-kernel-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/8af19205dfc20901b6908fc4d2631b2cbfd51611/ga/25.0.0.9/kernel/Dockerfile.ubuntu.ibmjava8)
+
+-	[`25.0.0.9-kernel-java11-openj9`](https://github.com/WASdev/ci.docker/blob/8af19205dfc20901b6908fc4d2631b2cbfd51611/ga/25.0.0.9/kernel/Dockerfile.ubuntu.openjdk11)
+
+-	[`25.0.0.9-kernel-java17-openj9`](https://github.com/WASdev/ci.docker/blob/8af19205dfc20901b6908fc4d2631b2cbfd51611/ga/25.0.0.9/kernel/Dockerfile.ubuntu.openjdk17)
+
+-	[`25.0.0.9-full-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/8af19205dfc20901b6908fc4d2631b2cbfd51611/ga/25.0.0.9/full/Dockerfile.ubuntu.ibmjava8)
+
+-	[`25.0.0.9-full-java11-openj9`](https://github.com/WASdev/ci.docker/blob/8af19205dfc20901b6908fc4d2631b2cbfd51611/ga/25.0.0.9/full/Dockerfile.ubuntu.openjdk11)
+
+-	[`25.0.0.9-full-java17-openj9`](https://github.com/WASdev/ci.docker/blob/8af19205dfc20901b6908fc4d2631b2cbfd51611/ga/25.0.0.9/full/Dockerfile.ubuntu.openjdk17)
+
+-	[`25.0.0.12-kernel-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/8af19205dfc20901b6908fc4d2631b2cbfd51611/ga/25.0.0.12/kernel/Dockerfile.ubuntu.ibmjava8)
+
+-	[`25.0.0.12-kernel-java11-openj9`](https://github.com/WASdev/ci.docker/blob/8af19205dfc20901b6908fc4d2631b2cbfd51611/ga/25.0.0.12/kernel/Dockerfile.ubuntu.openjdk11)
+
+-	[`25.0.0.12-kernel-java17-openj9`](https://github.com/WASdev/ci.docker/blob/8af19205dfc20901b6908fc4d2631b2cbfd51611/ga/25.0.0.12/kernel/Dockerfile.ubuntu.openjdk17)
+
+-	[`25.0.0.12-full-java8-ibmjava`](https://github.com/WASdev/ci.docker/blob/8af19205dfc20901b6908fc4d2631b2cbfd51611/ga/25.0.0.12/full/Dockerfile.ubuntu.ibmjava8)
+
+-	[`25.0.0.12-full-java11-openj9`](https://github.com/WASdev/ci.docker/blob/8af19205dfc20901b6908fc4d2631b2cbfd51611/ga/25.0.0.12/full/Dockerfile.ubuntu.openjdk11)
+
+-	[`25.0.0.12-full-java17-openj9`](https://github.com/WASdev/ci.docker/blob/8af19205dfc20901b6908fc4d2631b2cbfd51611/ga/25.0.0.12/full/Dockerfile.ubuntu.openjdk17)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/WASdev/ci.docker/issues](https://github.com/WASdev/ci.docker/issues)
+	[https://github.com/WASdev/ci.docker/issues](https://github.com/WASdev/ci.docker/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/websphere-liberty/), [`ppc64le`](https://hub.docker.com/r/ppc64le/websphere-liberty/), [`s390x`](https://hub.docker.com/r/s390x/websphere-liberty/)
+	[`amd64`](https://hub.docker.com/r/amd64/websphere-liberty/), [`arm64v8`](https://hub.docker.com/r/arm64v8/websphere-liberty/), [`ppc64le`](https://hub.docker.com/r/ppc64le/websphere-liberty/), [`s390x`](https://hub.docker.com/r/s390x/websphere-liberty/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/websphere-liberty/` directory](https://github.com/docker-library/repo-info/blob/master/repos/websphere-liberty) ([history](https://github.com/docker-library/repo-info/commits/master/repos/websphere-liberty))  

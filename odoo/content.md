@@ -63,7 +63,7 @@ The default configuration file for the server (located at `/etc/odoo/odoo.conf`)
 $ docker run -v /path/to/config:/etc/odoo -p 8069:8069 --name odoo --link db:db -t %%IMAGE%%
 ```
 
-Please use [this configuration template](https://github.com/odoo/docker/blob/master/16.0/odoo.conf) to write your custom configuration as we already set some arguments for running Odoo inside a Docker container.
+Please use [this configuration template](https://github.com/odoo/docker/blob/master/17.0/odoo.conf) to write your custom configuration as we already set some arguments for running Odoo inside a Docker container.
 
 You can also directly specify Odoo arguments inline. Those arguments must be given after the keyword `--` in the command-line, as follows
 
@@ -101,13 +101,12 @@ Tweak these environment variables to easily connect to a postgres server:
 
 ## Docker Compose examples
 
-The simplest `docker-compose.yml` file would be:
+The simplest `compose.yaml` file would be:
 
 ```yml
-version: '3.1'
 services:
   web:
-    image: %%IMAGE%%:16.0
+    image: %%IMAGE%%:17.0
     depends_on:
       - db
     ports:
@@ -123,18 +122,17 @@ services:
 If the default postgres credentials does not suit you, tweak the environment variables:
 
 ```yml
-version: '3.1'
 services:
   web:
-    image: %%IMAGE%%:16.0
+    image: %%IMAGE%%:17.0
     depends_on:
       - mydb
     ports:
       - "8069:8069"
     environment:
-    - HOST=mydb
-    - USER=odoo
-    - PASSWORD=myodoo
+      - HOST=mydb
+      - USER=odoo
+      - PASSWORD=myodoo
   mydb:
     image: postgres:15
     environment:
@@ -151,10 +149,9 @@ Here's a last example showing you how to
 -	use a `secrets` file named `odoo_pg_pass` that contains the postgreql password shared by both services
 
 ```yml
-version: '3.1'
 services:
   web:
-    image: %%IMAGE%%:16.0
+    image: %%IMAGE%%:17.0
     depends_on:
       - db
     ports:
@@ -187,10 +184,10 @@ secrets:
     file: odoo_pg_pass
 ```
 
-To start your Odoo instance, go in the directory of the `docker-compose.yml` file you created from the previous examples and type:
+To start your Odoo instance, go in the directory of the `compose.yaml` file you created from the previous examples and type:
 
 ```console
-docker-compose up -d
+docker compose up -d
 ```
 
 # How to upgrade this image
@@ -199,7 +196,7 @@ Odoo images are updated on a regular basis to make them use recent releases (a n
 
 Suppose you created a database from an Odoo instance named old-odoo, and you want to access this database from a new Odoo instance named new-odoo, e.g. because you've just downloaded a newer Odoo image.
 
-By default, Odoo 16.0 uses a filestore (located at `/var/lib/odoo/filestore/`) for attachments. You should restore this filestore in your new Odoo instance by running
+By default, Odoo 16.0+ uses a filestore (located at `/var/lib/odoo/filestore/`) for attachments. You should restore this filestore in your new Odoo instance by running
 
 ```console
 $ docker run --volumes-from old-odoo -p 8070:8069 --name new-odoo --link db:db -t %%IMAGE%%

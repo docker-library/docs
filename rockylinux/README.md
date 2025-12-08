@@ -14,6 +14,10 @@ WARNING:
 
 -->
 
+# IMPORTANT NOTE
+
+The Docker team curates the Official Images program, and there are currently some technical constraints preventing Rocky Linux from publishing updates here. For the most up-to-date container images, please refer to the [Rocky Linux Docker Hub repository](https://hub.docker.com/r/rockylinux/rockylinux) for now.
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,10 +28,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`9.1.20230215`, `9.1`, `9`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/c554918c3fb7432f70802459ee942fead8121cae/Dockerfile)
--	[`9.1.20230215-minimal`, `9.1-minimal`, `9-minimal`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/957dce1794c27b8fc1666f7e283db2ba7ef5b182/Dockerfile)
--	[`8.7.20230215`, `8.7`, `8`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/65d3f79aa8b5d0a9ed1270470e585539f7d59cd1/Dockerfile)
--	[`8.7.20230215-minimal`, `8.7-minimal`, `8-minimal`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/a923b0d8957fa92feafaa4f6b00f8df08db796ab/Dockerfile)
+-	[`9.3.20231119`, `9.3`, `9`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/53416a9aaea6ac6ded18c2047d51e26983160faf/Dockerfile)
+
+-	[`9.3.20231119-minimal`, `9.3-minimal`, `9-minimal`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/e784104b999a1ff6b66cb0aeee0408fb030c840b/Dockerfile)
+
+-	[`8.9.20231119`, `8.9`, `8`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/2085c6419637bf970a532888141569c5865ae61f/Dockerfile)
+
+-	[`8.9.20231119-minimal`, `8.9-minimal`, `8-minimal`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/6d81e6b46e052158df83357c569c8a6773a81e78/Dockerfile)
 
 # Quick reference (cont.)
 

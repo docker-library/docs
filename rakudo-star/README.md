@@ -24,13 +24,16 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `2023.02`](https://github.com/Raku/docker/blob/d6873e88a8979536ba7d485aef309b7126965e0d/2023.02/bullseye/Dockerfile)
--	[`alpine`, `2023.02-alpine`](https://github.com/Raku/docker/blob/d6873e88a8979536ba7d485aef309b7126965e0d/2023.02/alpine3.17/Dockerfile)
+-	[`trixie`, `2025.10-trixie`, `latest`](https://github.com/rakudo/docker/blob/2d29409b26ad70c7f3e6fbf8391ff82cc62920f2/2025.10/trixie/Dockerfile)
+
+-	[`bookworm`, `2025.10-bookworm`](https://github.com/rakudo/docker/blob/2d29409b26ad70c7f3e6fbf8391ff82cc62920f2/2025.10/bookworm/Dockerfile)
+
+-	[`alpine`, `2025.10-alpine`](https://github.com/rakudo/docker/blob/2d29409b26ad70c7f3e6fbf8391ff82cc62920f2/2025.10/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/Raku/docker/issues](https://github.com/Raku/docker/issues)
+	[https://github.com/Raku/docker/issues](https://github.com/Raku/docker/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/rakudo-star/), [`arm64v8`](https://hub.docker.com/r/arm64v8/rakudo-star/)
@@ -87,6 +90,8 @@ The `rakudo-star` images come in many flavors, each designed for a specific use 
 ## `rakudo-star:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+Some of these tags may have names like bookworm or trixie in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 ## `rakudo-star:<version>-alpine`
 

@@ -24,18 +24,21 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.5`, `1.5.9`](https://github.com/influxdata/influxdata-docker/blob/410d53519af0edd30a985eacc3bb060258a2705d/kapacitor/1.5/Dockerfile)
--	[`1.5-alpine`, `1.5.9-alpine`](https://github.com/influxdata/influxdata-docker/blob/410d53519af0edd30a985eacc3bb060258a2705d/kapacitor/1.5/alpine/Dockerfile)
--	[`1.6`, `1.6.5`, `latest`](https://github.com/influxdata/influxdata-docker/blob/410d53519af0edd30a985eacc3bb060258a2705d/kapacitor/1.6/Dockerfile)
--	[`1.6-alpine`, `1.6.5-alpine`, `alpine`](https://github.com/influxdata/influxdata-docker/blob/410d53519af0edd30a985eacc3bb060258a2705d/kapacitor/1.6/alpine/Dockerfile)
+-	[`1.7`, `1.7.7`](https://github.com/influxdata/influxdata-docker/blob/add887456e0d1657ae822e422bc5cbb2b9b723bc/kapacitor/1.7/Dockerfile)
+
+-	[`1.7-alpine`, `1.7.7-alpine`, `alpine`](https://github.com/influxdata/influxdata-docker/blob/add887456e0d1657ae822e422bc5cbb2b9b723bc/kapacitor/1.7/alpine/Dockerfile)
+
+-	[`1.8`, `1.8.2`, `latest`](https://github.com/influxdata/influxdata-docker/blob/add887456e0d1657ae822e422bc5cbb2b9b723bc/kapacitor/1.8/Dockerfile)
+
+-	[`1.8-alpine`, `1.8.2-alpine`](https://github.com/influxdata/influxdata-docker/blob/add887456e0d1657ae822e422bc5cbb2b9b723bc/kapacitor/1.8/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/influxdata/influxdata-docker/issues](https://github.com/influxdata/influxdata-docker/issues)
+	[https://github.com/influxdata/influxdata-docker/issues](https://github.com/influxdata/influxdata-docker/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/kapacitor/), [`arm32v7`](https://hub.docker.com/r/arm32v7/kapacitor/), [`arm64v8`](https://hub.docker.com/r/arm64v8/kapacitor/)
+	[`amd64`](https://hub.docker.com/r/amd64/kapacitor/), [`arm64v8`](https://hub.docker.com/r/arm64v8/kapacitor/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/kapacitor/` directory](https://github.com/docker-library/repo-info/blob/master/repos/kapacitor) ([history](https://github.com/docker-library/repo-info/commits/master/repos/kapacitor))  
@@ -116,6 +119,10 @@ KAPACITOR_INFLUXDB_0_URLS_0=http://influxdb:8086
 ```
 
 Find more about configuring Kapacitor [here](https://docs.influxdata.com/kapacitor/latest/introduction/installation/)
+
+#### Running as root
+
+Starting in v1.7.4, Kapacitor no longer run as the root user by default. If a user wants to revert this change they can set `KAPACITOR_AS_ROOT=true` as an environment variable.
 
 ### Exposed Ports
 

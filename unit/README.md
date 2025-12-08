@@ -14,32 +14,31 @@ WARNING:
 
 -->
 
+# **DEPRECATION NOTICE**
+
+As of October 2025, NGINX Unit is archived and unmaintained. The images will not receive release or security updates.
+
+https://github.com/nginx/unit?tab=readme-ov-file#note-this-repository-has-been-archived-there-will-likely-be-no-further-development-at-this-repo-and-security-vulnerabilities-may-be-unaddressed
+
 # Quick reference
 
 -	**Maintained by**:  
 	[the Unit Docker Maintainers](https://github.com/nginx/unit)
 
 -	**Where to get help**:  
-	the [GitHub issues page](https://github.com/nginx/unit/issues), the [NGINX community](https://nginxcommunity.slack.com/)
+	the [GitHub issues page](https://github.com/nginx/unit/issues), the [NGINX Community Slack](https://community.nginx.org/joinslack)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.29.1-go1.20`, `go1.20`, `go1`, `go`](https://github.com/nginx/unit/blob/b9bc222021e77bbdfb12576b3e315b962cf6b399/pkg/docker/Dockerfile.go1.20)
--	[`1.29.1-jsc11`, `jsc11`, `jsc`](https://github.com/nginx/unit/blob/b9bc222021e77bbdfb12576b3e315b962cf6b399/pkg/docker/Dockerfile.jsc11)
--	[`1.29.1-node18`, `node18`, `node`](https://github.com/nginx/unit/blob/b9bc222021e77bbdfb12576b3e315b962cf6b399/pkg/docker/Dockerfile.node18)
--	[`1.29.1-perl5.36`, `perl5.36`, `perl5`, `perl`](https://github.com/nginx/unit/blob/b9bc222021e77bbdfb12576b3e315b962cf6b399/pkg/docker/Dockerfile.perl5.36)
--	[`1.29.1-php8.2`, `php8.2`, `php8`, `php`](https://github.com/nginx/unit/blob/b9bc222021e77bbdfb12576b3e315b962cf6b399/pkg/docker/Dockerfile.php8.2)
--	[`1.29.1-python3.11`, `python3.11`, `python3`, `python`](https://github.com/nginx/unit/blob/b9bc222021e77bbdfb12576b3e315b962cf6b399/pkg/docker/Dockerfile.python3.11)
--	[`1.29.1-ruby3.2`, `ruby3.2`, `ruby3`, `ruby`](https://github.com/nginx/unit/blob/b9bc222021e77bbdfb12576b3e315b962cf6b399/pkg/docker/Dockerfile.ruby3.2)
--	[`1.29.1-minimal`, `minimal`](https://github.com/nginx/unit/blob/b9bc222021e77bbdfb12576b3e315b962cf6b399/pkg/docker/Dockerfile.minimal)
+**No supported tags**
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/nginx/unit/issues](https://github.com/nginx/unit/issues)
+	[https://github.com/nginx/unit/issues](https://github.com/nginx/unit/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/unit/), [`arm64v8`](https://hub.docker.com/r/arm64v8/unit/)
+	**No supported architectures**
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/unit/` directory](https://github.com/docker-library/repo-info/blob/master/repos/unit) ([history](https://github.com/docker-library/repo-info/commits/master/repos/unit))  
@@ -54,19 +53,19 @@ WARNING:
 
 # What is Unit?
 
-NGINX Unit is a polyglot app server, a reverse proxy, and a static file server, available for UNIX-like systems. It was built by nginx team members from scratch to be highly efficient and fully configurable at runtime. It is licensed under the Apache 2.0 license. The supported application languages are Go, JavaScript, Java, Perl, PHP, Python, Ruby, and more.
+NGINX Unit is a lightweight and versatile application runtime that provides the essential components for your web application as a single open-source server: running application code, serving static assets, handling TLS and request routing.
 
-> [Key Features](https://unit.nginx.org/#key-features)
+For more information, check out [Key Features](https://unit.nginx.org/keyfeatures).
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/d6e69ebb56fe6890bd6ec587295ff1d67e2849fe/unit/logo.svg?sanitize=true)
 
 # Available tags
 
-Please see [Unit's website](http://unit.nginx.org/installation/#docker-images) for details.
+Please see [Unit's website](https://unit.nginx.org/installation/#docker-images) for details.
 
 # How to use this image
 
-Please check the [Initial Configuration](http://unit.nginx.org/installation/#initial-configuration) section on Unit's website. Additionally, our [Docker howto](http://unit.nginx.org/howto/docker/) can be of help.
+Please check the [Initial Configuration](https://unit.nginx.org/installation/#initial-configuration) section on Unit's website. Additionally, our [Docker howto](https://unit.nginx.org/howto/docker/) can be of help.
 
 # License
 

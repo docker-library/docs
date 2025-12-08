@@ -24,35 +24,37 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`melodic-ros-core`, `melodic-ros-core-bionic`](https://github.com/osrf/docker_images/blob/3f4fbca923d80f834f3a89b5960bad5582652519/ros/melodic/ubuntu/bionic/ros-core/Dockerfile)
--	[`melodic-ros-base`, `melodic-ros-base-bionic`, `melodic`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/melodic/ubuntu/bionic/ros-base/Dockerfile)
--	[`melodic-robot`, `melodic-robot-bionic`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/melodic/ubuntu/bionic/robot/Dockerfile)
--	[`melodic-perception`, `melodic-perception-bionic`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/melodic/ubuntu/bionic/perception/Dockerfile)
--	[`noetic-ros-core`, `noetic-ros-core-focal`](https://github.com/osrf/docker_images/blob/3f4fbca923d80f834f3a89b5960bad5582652519/ros/noetic/ubuntu/focal/ros-core/Dockerfile)
--	[`noetic-ros-base`, `noetic-ros-base-focal`, `noetic`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/noetic/ubuntu/focal/ros-base/Dockerfile)
--	[`noetic-robot`, `noetic-robot-focal`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/noetic/ubuntu/focal/robot/Dockerfile)
--	[`noetic-perception`, `noetic-perception-focal`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/noetic/ubuntu/focal/perception/Dockerfile)
--	[`noetic-ros-core-buster`](https://github.com/osrf/docker_images/blob/3f4fbca923d80f834f3a89b5960bad5582652519/ros/noetic/debian/buster/ros-core/Dockerfile)
--	[`noetic-ros-base-buster`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/noetic/debian/buster/ros-base/Dockerfile)
--	[`noetic-robot-buster`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/noetic/debian/buster/robot/Dockerfile)
--	[`noetic-perception-buster`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/noetic/debian/buster/perception/Dockerfile)
--	[`foxy-ros-core`, `foxy-ros-core-focal`](https://github.com/osrf/docker_images/blob/3f4fbca923d80f834f3a89b5960bad5582652519/ros/foxy/ubuntu/focal/ros-core/Dockerfile)
--	[`foxy-ros-base`, `foxy-ros-base-focal`, `foxy`](https://github.com/osrf/docker_images/blob/df19ab7d5993d3b78a908362cdcd1479a8e78b35/ros/foxy/ubuntu/focal/ros-base/Dockerfile)
--	[`foxy-ros1-bridge`, `foxy-ros1-bridge-focal`](https://github.com/osrf/docker_images/blob/c40ef6e5116c88f44e9ef3694614c1e8a60725a0/ros/foxy/ubuntu/focal/ros1-bridge/Dockerfile)
--	[`humble-ros-core`, `humble-ros-core-jammy`](https://github.com/osrf/docker_images/blob/3f4fbca923d80f834f3a89b5960bad5582652519/ros/humble/ubuntu/jammy/ros-core/Dockerfile)
--	[`humble-ros-base`, `humble-ros-base-jammy`, `humble`, `latest`](https://github.com/osrf/docker_images/blob/20e3ba685bb353a3c00be9ba01c1b7a6823c9472/ros/humble/ubuntu/jammy/ros-base/Dockerfile)
+-	[`humble-ros-core`, `humble-ros-core-jammy`](https://github.com/osrf/docker_images/blob/eb5634cf92ba079897e44fb7541d3b78aa6cf717/ros/humble/ubuntu/jammy/ros-core/Dockerfile)
+
+-	[`humble-ros-base`, `humble-ros-base-jammy`, `humble`](https://github.com/osrf/docker_images/blob/20e3ba685bb353a3c00be9ba01c1b7a6823c9472/ros/humble/ubuntu/jammy/ros-base/Dockerfile)
+
 -	[`humble-perception`, `humble-perception-jammy`](https://github.com/osrf/docker_images/blob/20d40c96b426b8956dec203e236abff2ec29b188/ros/humble/ubuntu/jammy/perception/Dockerfile)
--	[`rolling-ros-core`, `rolling-ros-core-jammy`](https://github.com/osrf/docker_images/blob/73c1bf4c30e97d5d3d7c2aaddc8137cae2411409/ros/rolling/ubuntu/jammy/ros-core/Dockerfile)
--	[`rolling-ros-base`, `rolling-ros-base-jammy`, `rolling`](https://github.com/osrf/docker_images/blob/73c1bf4c30e97d5d3d7c2aaddc8137cae2411409/ros/rolling/ubuntu/jammy/ros-base/Dockerfile)
--	[`rolling-perception`, `rolling-perception-jammy`](https://github.com/osrf/docker_images/blob/73c1bf4c30e97d5d3d7c2aaddc8137cae2411409/ros/rolling/ubuntu/jammy/perception/Dockerfile)
+
+-	[`jazzy-ros-core`, `jazzy-ros-core-noble`](https://github.com/osrf/docker_images/blob/eb5634cf92ba079897e44fb7541d3b78aa6cf717/ros/jazzy/ubuntu/noble/ros-core/Dockerfile)
+
+-	[`jazzy-ros-base`, `jazzy-ros-base-noble`, `jazzy`, `latest`](https://github.com/osrf/docker_images/blob/0038f1c3a11aa0fc573d698b39ab5c204aad5a40/ros/jazzy/ubuntu/noble/ros-base/Dockerfile)
+
+-	[`jazzy-perception`, `jazzy-perception-noble`](https://github.com/osrf/docker_images/blob/0038f1c3a11aa0fc573d698b39ab5c204aad5a40/ros/jazzy/ubuntu/noble/perception/Dockerfile)
+
+-	[`kilted-ros-core`, `kilted-ros-core-noble`](https://github.com/osrf/docker_images/blob/eb5634cf92ba079897e44fb7541d3b78aa6cf717/ros/kilted/ubuntu/noble/ros-core/Dockerfile)
+
+-	[`kilted-ros-base`, `kilted-ros-base-noble`, `kilted`](https://github.com/osrf/docker_images/blob/b835a530495c0b411a0d15db858710a2748ee0a0/ros/kilted/ubuntu/noble/ros-base/Dockerfile)
+
+-	[`kilted-perception`, `kilted-perception-noble`](https://github.com/osrf/docker_images/blob/b835a530495c0b411a0d15db858710a2748ee0a0/ros/kilted/ubuntu/noble/perception/Dockerfile)
+
+-	[`rolling-ros-core`, `rolling-ros-core-noble`](https://github.com/osrf/docker_images/blob/8cf2903c0f8813aacd3042c71d4d2d56d5068ad5/ros/rolling/ubuntu/noble/ros-core/Dockerfile)
+
+-	[`rolling-ros-base`, `rolling-ros-base-noble`, `rolling`](https://github.com/osrf/docker_images/blob/8cf2903c0f8813aacd3042c71d4d2d56d5068ad5/ros/rolling/ubuntu/noble/ros-base/Dockerfile)
+
+-	[`rolling-perception`, `rolling-perception-noble`](https://github.com/osrf/docker_images/blob/8cf2903c0f8813aacd3042c71d4d2d56d5068ad5/ros/rolling/ubuntu/noble/perception/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/osrf/docker_images/issues](https://github.com/osrf/docker_images/issues)
+	[https://github.com/osrf/docker_images/issues](https://github.com/osrf/docker_images/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/ros/), [`arm32v7`](https://hub.docker.com/r/arm32v7/ros/), [`arm64v8`](https://hub.docker.com/r/arm64v8/ros/)
+	[`amd64`](https://hub.docker.com/r/amd64/ros/), [`arm64v8`](https://hub.docker.com/r/arm64v8/ros/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/ros/` directory](https://github.com/docker-library/repo-info/blob/master/repos/ros) ([history](https://github.com/docker-library/repo-info/commits/master/repos/ros))  
@@ -65,13 +67,13 @@ WARNING:
 -	**Source of this description**:  
 	[docs repo's `ros/` directory](https://github.com/docker-library/docs/tree/master/ros) ([history](https://github.com/docker-library/docs/commits/master/ros))
 
-# What is [ROS](https://www.ros.org/)?
+# What is [ROS](https://docs.ros.org/)?
 
 The Robot Operating System (ROS) is a set of software libraries and tools that help you build robot applications. From drivers to state-of-the-art algorithms, and with powerful developer tools, ROS has what you need for your next robotics project. And it's all open source.
 
 > [wikipedia.org/wiki/Robot_Operating_System](https://en.wikipedia.org/wiki/Robot_Operating_System)
 
-[![logo](https://raw.githubusercontent.com/docker-library/docs/0074e9dac72a35e5058f356885121aa82572682f/ros/logo.png)](https://www.ros.org/)
+[![logo](https://raw.githubusercontent.com/docker-library/docs/0074e9dac72a35e5058f356885121aa82572682f/ros/logo.png)](https://docs.ros.org/)
 
 # How to use this image
 
@@ -80,7 +82,7 @@ The Robot Operating System (ROS) is a set of software libraries and tools that h
 To create your own ROS docker images and install custom packages, here's a simple example of installing the C++, Python client library demos using the official released Debian packages via apt-get.
 
 ```dockerfile
-FROM ros:foxy
+FROM ros:rolling-ros-core as aptgetter
 
 # install ros package
 RUN apt-get update && apt-get install -y \
@@ -89,14 +91,14 @@ RUN apt-get update && apt-get install -y \
     rm -rf /var/lib/apt/lists/*
 
 # launch ros package
-CMD ["ros2", "launch", "demo_nodes_cpp", "talker_listener.launch.py"]
+CMD ["ros2", "launch", "demo_nodes_cpp", "talker_listener_launch.py"]
 ```
 
 Note: all ROS images include a default entrypoint that sources the ROS environment setup before executing the configured command, in this case the demo packages launch file. You can then build and run the Docker image like so:
 
 ```console
-$ docker build -t my/ros:app .
-$ docker run -it --rm my/ros:app
+$ docker build -t my/ros:aptgetter .
+$ docker run -it --rm my/ros:aptgetter
 [INFO] [launch]: process[talker-1]: started with pid [813]
 [INFO] [launch]: process[listener-2]: started with pid [814]
 [INFO] [talker]: Publishing: 'Hello World: 1'
@@ -111,72 +113,123 @@ $ docker run -it --rm my/ros:app
 To create your own ROS docker images and build custom packages, here's a simple example of installing a package's build dependencies, compiling it from source, and installing the resulting build artifacts into a final multi-stage image layer.
 
 ```dockerfile
-ARG FROM_IMAGE=ros:foxy
+ARG FROM_IMAGE=ros:rolling
 ARG OVERLAY_WS=/opt/ros/overlay_ws
 
 # multi-stage for caching
 FROM $FROM_IMAGE AS cacher
+ARG OVERLAY_WS
+
+# overwrite defaults to persist minimal cache
+RUN rosdep update --rosdistro $ROS_DISTRO && \
+    cat <<EOF > /etc/apt/apt.conf.d/docker-clean && apt-get update
+APT::Install-Recommends "false";
+APT::Install-Suggests "false";
+EOF
 
 # clone overlay source
-ARG OVERLAY_WS
 WORKDIR $OVERLAY_WS/src
-RUN echo "\
-repositories: \n\
-  ros2/demos: \n\
-    type: git \n\
-    url: https://github.com/ros2/demos.git \n\
-    version: ${ROS_DISTRO} \n\
-" > ../overlay.repos
-RUN vcs import ./ < ../overlay.repos
+RUN cat <<EOF | vcs import .
+repositories:
+  ros2/demos:
+    type: git
+    url: https://github.com/ros2/demos.git
+    version: ${ROS_DISTRO}
+EOF
 
-# copy manifests for caching
-WORKDIR /opt
-RUN mkdir -p /tmp/opt && \
-    find ./ -name "package.xml" | \
-      xargs cp --parents -t /tmp/opt && \
-    find ./ -name "COLCON_IGNORE" | \
-      xargs cp --parents -t /tmp/opt || true
+# derive build/exec dependencies
+RUN bash -e <<'EOF'
+declare -A types=(
+  [exec]="--dependency-types=exec"
+  [build]="")
+for type in "${!types[@]}"; do
+  rosdep install -y \
+    --from-paths \
+      ros2/demos/demo_nodes_cpp \
+      ros2/demos/demo_nodes_py \
+    --ignore-src \
+    --reinstall \
+    --simulate \
+    ${types[$type]} \
+    | grep 'apt-get install' \
+    | awk '{gsub(/'\''/,"",$4); print $4}' \
+    | sort -u > /tmp/${type}_debs.txt
+done
+EOF
 
 # multi-stage for building
 FROM $FROM_IMAGE AS builder
-
-# install overlay dependencies
 ARG OVERLAY_WS
-WORKDIR $OVERLAY_WS
-COPY --from=cacher /tmp/$OVERLAY_WS/src ./src
-RUN . /opt/ros/$ROS_DISTRO/setup.sh && \
-    apt-get update && rosdep install -y \
-      --from-paths \
-        src/ros2/demos/demo_nodes_cpp \
-        src/ros2/demos/demo_nodes_py \
-      --ignore-src \
-    && rm -rf /var/lib/apt/lists/*
+
+# install build dependencies
+COPY --from=cacher /tmp/build_debs.txt /tmp/build_debs.txt
+RUN --mount=type=cache,target=/etc/apt/apt.conf.d,from=cacher,source=/etc/apt/apt.conf.d \
+    --mount=type=cache,target=/var/lib/apt/lists,from=cacher,source=/var/lib/apt/lists \
+    --mount=type=cache,target=/var/cache/apt,sharing=locked \
+    < /tmp/build_debs.txt xargs apt-get install -y
 
 # build overlay source
+WORKDIR $OVERLAY_WS
 COPY --from=cacher $OVERLAY_WS/src ./src
-ARG OVERLAY_MIXINS="release"
 RUN . /opt/ros/$ROS_DISTRO/setup.sh && \
     colcon build \
       --packages-select \
         demo_nodes_cpp \
         demo_nodes_py \
-      --mixin $OVERLAY_MIXINS
+      --mixin release
 
-# source entrypoint setup
-ENV OVERLAY_WS $OVERLAY_WS
+# multi-stage for running
+FROM $FROM_IMAGE-ros-core AS runner
+ARG OVERLAY_WS
+
+# install exec dependencies
+COPY --from=cacher /tmp/exec_debs.txt /tmp/exec_debs.txt
+RUN --mount=type=cache,target=/etc/apt/apt.conf.d,from=cacher,source=/etc/apt/apt.conf.d \
+    --mount=type=cache,target=/var/lib/apt/lists,from=cacher,source=/var/lib/apt/lists \
+    --mount=type=cache,target=/var/cache/apt,sharing=locked \
+    < /tmp/exec_debs.txt xargs apt-get install -y
+
+# setup overlay install
+ENV OVERLAY_WS=$OVERLAY_WS
+COPY --from=builder $OVERLAY_WS/install $OVERLAY_WS/install
 RUN sed --in-place --expression \
       '$isource "$OVERLAY_WS/install/setup.bash"' \
       /ros_entrypoint.sh
 
 # run launch file
-CMD ["ros2", "launch", "demo_nodes_cpp", "talker_listener.launch.py"]
+CMD ["ros2", "launch", "demo_nodes_cpp", "talker_listener_launch.py"]
 ```
 
-The example above starts by using [`vcstool`](https://github.com/dirk-thomas/vcstool) to clone source repos of interest into the cacher stage. One could similarly `COPY` code from the local build context into the source directory as well. Package manifest files are then cached in a temporary directory where the following builder stage may copy from to install necessary dependencies with [`rosdep`](https://github.com/ros-infrastructure/rosdep). This is done prior to copying the rest of the source files to preserve the multi-stage build cache, given unaltered manifests do not alter declared dependencies, saving time and bandwidth. The overlay is then built using [`colcon`](https://colcon.readthedocs.io/en/released/), the entrypoint updated to source the workspace, and the default command set to launch the demo.
+The example above consists of three sequential stages. The `cacher` stage first updates the apt lists and ROS index, uses [`vcstool`](https://github.com/dirk-thomas/vcstool) to clone a demo repo into the workspace source directory, and derives build and runtime dependency sets using [`rosdep`](https://docs.ros.org/en/rolling/Tutorials/Intermediate/Rosdep.html). The `builder` stage installs the derived build dependencies, sources the ROS install underlay, and compiles the source in release mode using [`colcon`](https://docs.ros.org/en/rolling/Tutorials/Beginner-Client-Libraries/Colcon-Tutorial.html). Finally, the `runner` stage installs only runtime dependencies, copies the compiled workspace artifacts, and sets up the environment to launch the demo. Note the example consists of several subtle optimizations:
 
-Note: `--from-paths` and `--packages-select` are set here as so to only install the dependencies and build for the demo C++ and Python packages, among many in the demo git repo that was cloned. To install the dependencies and build all the packages in the source workspace, merely change the scope by setting `--from-paths src/` and dropping the `--packages-select` arguments.
+-	Multi-Stage Build
+	-	Dependency derivation, compilation, and runtime setup are partitioned
+	-	Maximizes cache retention despite package source or build/runtime changes
+	-	Greater concurrency, e.g., colcon build while runtime apt installs
+-	Persistent Cache Propagation
+	-	Use of [`--mount`](https://docs.docker.com/engine/reference/builder/#run---mount) to cache temp data without bloating layers
+	-	Maintain temporally consistent apt lists between parallel stages
+	-	Avoid needless network I/O between stages or across Docker rebuilds
+-	Minimal Image Size
+	-	Final stage builds from `ros-core` for smallest runtime image
+	-	Builds and installs only a select few packages in the workspace
+	-	Only workspace install artifacts are copied into final layers
 
-For more advance examples such as daisy chaining multiple overlay workspaces to improve caching of docker image build layers, using tools such as ccache to accelerate compilation with colcon, or using buildkit to save build time and bandwidth even when dependencies change, the project `Dockerfile`s in the ROS 2 [Navigation2](https://github.com/ros-planning/navigation2) repo are excellent resources.
+For comparison, the resulting `runner` image is similar in size to the earlier `aptgetter` example. This allows you to develop and distribute custom ROS packages without significantly increasing image size compared to pre-built Debian installations:
+
+```console
+$ docker image ls my/ros --format "table {{.Tag}}\t{{.Size}}"
+TAG                SIZE
+aptgetter          504MB
+runner             510MB
+builder            941MB
+$ docker image ls ros --format "table {{.Tag}}\t{{.Size}}"
+TAG                SIZE
+rolling-ros-core   489MB
+rolling            876MB
+```
+
+For more advance examples such as daisy chaining multiple overlay workspaces to improve caching of docker image build layers, using tools such as ccache to accelerate compilation with colcon, or using buildkit to save build time and bandwidth even when dependencies change, the project `Dockerfile`s in the [Navigation2](https://github.com/ros-planning/navigation2) repo are excellent resources.
 
 ## Deployment use cases
 
@@ -186,7 +239,7 @@ Developing such complex systems with cutting edge implementations of newly publi
 
 With the advancements and standardization of software containers, roboticists are primed to acquire a host of improved developer tooling for building and shipping software. To help alleviate the growing pains and technical challenges of adopting new practices, we have focused on providing an official resource for using ROS with these new technologies.
 
-For a complete listing of supported architectures and base images for each ROS Distribution Release, please read the official REP on target platforms for either [ROS 1](https://www.ros.org/reps/rep-0003.html) or for [ROS 2](https://www.ros.org/reps/rep-2000.html).
+For a complete listing of supported architectures and base images for each ROS Distribution Release, please read the official REP on target platforms [here](https://www.ros.org/reps/rep-2001.html).
 
 ## Deployment suggestions
 
@@ -194,11 +247,10 @@ The available tags include supported distros along with a hierarchy tags based o
 
 -	`ros-core`: minimal ROS install
 -	`ros-base`: basic tools and libraries (also tagged with distro name with LTS version as `latest`)
--	`ros1-bridge`: tools and libraries to run hybrid ROS 1 - ROS 2 systems and bridge messages between them
 
 In the interest of keeping `ros-core` tag minimal in image size, developer tools such as `rosdep`, `colcon` and `vcstools` are not shipped in `ros_core`, but in `ros-base` instead.
 
-The rest of the common meta-packages such as `desktop` are hosted on repos under OSRF's Docker Hub profile [here](https://hub.docker.com/r/osrf/ros/). These meta-packages include graphical dependencies and hook a host of other large packages such as X11, X server, etc. So in the interest of keeping the official images lean and secure, the desktop packages are just being hosted with OSRF's profile. For an extensive list of available variants, please read the official REP on target platforms for either [ROS 1](https://ros.org/reps/rep-0150.html) or for [ROS 2](https://www.ros.org/reps/rep-2001.html).
+The rest of the common meta-packages such as `desktop` are hosted on repos under OSRF's Docker Hub profile [here](https://hub.docker.com/r/osrf/ros/). These meta-packages include graphical dependencies and hook a host of other large packages such as X11, X server, etc. So in the interest of keeping the official images lean and secure, the desktop packages are just being hosted with OSRF's profile.
 
 ### Volumes
 
@@ -224,13 +276,11 @@ Alternatively, more permissive network settings can be used to share all host ne
 
 ### Docker Compose
 
-In this example we'll demonstrate using [`docker-compose`](https://docs.docker.com/compose/) to spawn a pair of message publisher and subscriber nodes in separate containers connected through shared software defined network.
+In this example we'll demonstrate using [`docker compose`](https://docs.docker.com/compose/) to spawn a pair of message publisher and subscriber nodes in separate containers connected through shared software defined network.
 
-> Create the directory `~/ros_demos` and add the first `Dockerfile` example from above. In the same directory, also create file `docker-compose.yml` with the following that runs a C++ publisher with a Python subscriber:
+> Create the directory `~/ros_demos` and add the first `Dockerfile` example from above. In the same directory, also create file `compose.yaml` with the following that runs a C++ publisher with a Python subscriber:
 
 ```yaml
-version: '3'
-
 services:
   talker:
     build: ./
@@ -243,10 +293,10 @@ services:
     command: ros2 run demo_nodes_py listener
 ```
 
-> Use docker-compose inside the same directory to launch our ROS nodes. Given the containers created derive from the same docker compose project, they will coexist on shared project network:
+> Use `docker compose` inside the same directory to launch our ROS nodes. Given the containers created derive from the same docker compose project, they will coexist on shared project network:
 
 ```console
-$ docker-compose up -d
+$ docker compose up -d
 ```
 
 > Notice that a new network named `ros_demos_default` has been created, as can be shown further with:
@@ -258,76 +308,25 @@ $ docker network inspect ros_demos_default
 > We can monitor the logged output of each container, such as the listener node like so:
 
 ```console
-$ docker-compose logs listener
+$ docker compose logs listener
 ```
 
-> Finally, we can stop and remove all the relevant containers using docker-compose from the same directory:
+> Finally, we can stop and remove all the relevant containers using `docker compose` from the same directory:
 
 ```console
-$ docker-compose stop
-$ docker-compose rm
+$ docker compose stop
+$ docker compose rm
 ```
 
-> Note: the auto-generated network, `ros_demos_default`, will persist until you explicitly remove it using `docker-compose down`.
-
-### ROS 1 Bridge
-
-To ease ROS 2 migration, [`ros1_bridge`](https://index.ros.org/p/ros1_bridge/github-ros2-ros1_bridge) is a ROS 2 package that provides bidirectional communication between ROS 1 and ROS 2. As a minimal example, given the ROS 2 Dockerfile above, we'll create the ROS 1 equivalent below, and name the Dockerfile appropriately.
-
-```dockerfile
-FROM ros:noetic
-
-# install ros package
-RUN apt-get update && apt-get install -y \
-      ros-${ROS_DISTRO}-ros-tutorials \
-      ros-${ROS_DISTRO}-common-tutorials && \
-    rm -rf /var/lib/apt/lists/*
-
-# launch ros package
-CMD ["roslaunch", "roscpp_tutorials", "talker_listener.launch"]
-```
-
-The compose file bellow spawns services for both talker listener demos while connecting the two via a dynamic bridge. You may then view the log output from both pairs of talker and listener nodes cross talking over the `/chatter` topic.
-
-```yaml
-version: '3'
-
-services:
-  ros1:
-    build:
-      context: ./
-      dockerfile: ros1.Dockerfile
-
-  ros2:
-    build:
-      context: ./
-      dockerfile: ros2.Dockerfile
-
-  bridge:
-    image: ros:foxy-ros1-bridge
-    environment:
-      - "ROS_HOSTNAME=bridge"
-      - "ROS_MASTER_URI=http://ros1:11311"
-    command: ros2 run ros1_bridge dynamic_bridge
-```
+> Note: the auto-generated network, `ros_demos_default`, will persist until you explicitly remove it using `docker compose down`.
 
 # More Resources
 
-[ROS.org](http://www.ros.org/): Main ROS website  
-[Q&A](https://answers.ros.org/questions/): Ask questions. Get answers  
+[Docs](https://docs.ros.org/): ROS Developer Documentation  
+[Q&A](https://robotics.stackexchange.com/): Ask questions. Get answers  
 [Forums](https://discourse.ros.org/): Hear the latest discussions  
-[Blog](http://www.ros.org/news/): Stay up-to-date  
-[Packages](https://index.ros.org/packages/): Discover indexed packages  
-[OSRF](https://www.osrfoundation.org/): Open Source Robotics Foundation
-
-## ROS 2
-
-[Index](https://index.ros.org/doc/ros2/): ROS 2 Documentation  
-[Design](https://design.ros2.org/): ROS 2 Design Articles
-
-## ROS 1
-
-[Wiki](http://wiki.ros.org/Documentation): ROS 1 Documentation
+[Packages](https://index.ros.org/?search_packages=true): Discover indexed packages  
+[OSRF](https://www.openrobotics.org/): Open Source Robotics Foundation
 
 # License
 

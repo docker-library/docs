@@ -14,6 +14,10 @@ WARNING:
 
 -->
 
+# **DEPRECATION NOTICE**
+
+The [upstream Notary project](https://github.com/notaryproject/notary) was archived as of July 30, 2025. For more information, see [notaryproject/.github#70](https://github.com/notaryproject/.github/issues/70).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,16 +28,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`server-0.7.0`, `server`](https://github.com/docker/notary-official-images/blob/77b9b7833f8dd6be07104b214193788795a320ff/notary-server/Dockerfile)
--	[`signer-0.7.0`, `signer`](https://github.com/docker/notary-official-images/blob/77b9b7833f8dd6be07104b214193788795a320ff/notary-signer/Dockerfile)
+**No supported tags**
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/docker/notary-official-images/issues](https://github.com/docker/notary-official-images/issues)
+	[https://github.com/docker/notary-official-images/issues](https://github.com/docker/notary-official-images/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/notary/), [`arm32v6`](https://hub.docker.com/r/arm32v6/notary/), [`arm64v8`](https://hub.docker.com/r/arm64v8/notary/), [`i386`](https://hub.docker.com/r/i386/notary/), [`ppc64le`](https://hub.docker.com/r/ppc64le/notary/), [`s390x`](https://hub.docker.com/r/s390x/notary/)
+	**No supported architectures**
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/notary/` directory](https://github.com/docker-library/repo-info/blob/master/repos/notary) ([history](https://github.com/docker-library/repo-info/commits/master/repos/notary))  

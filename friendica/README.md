@@ -24,23 +24,31 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2023.01-apache`, `apache`, `stable-apache`, `2023.01`, `latest`, `stable`](https://github.com/friendica/docker/blob/cea40a56f39360ab342c3bfb1533e13c661596cd/2023.01/apache/Dockerfile)
--	[`2023.01-fpm`, `fpm`, `stable-fpm`](https://github.com/friendica/docker/blob/cea40a56f39360ab342c3bfb1533e13c661596cd/2023.01/fpm/Dockerfile)
--	[`2023.01-fpm-alpine`, `fpm-alpine`, `stable-fpm-alpine`](https://github.com/friendica/docker/blob/cea40a56f39360ab342c3bfb1533e13c661596cd/2023.01/fpm-alpine/Dockerfile)
--	[`2023.03-dev-apache`, `dev-apache`, `2023.03-dev`, `dev`](https://github.com/friendica/docker/blob/cea40a56f39360ab342c3bfb1533e13c661596cd/2023.03-dev/apache/Dockerfile)
--	[`2023.03-dev-fpm`, `dev-fpm`](https://github.com/friendica/docker/blob/cea40a56f39360ab342c3bfb1533e13c661596cd/2023.03-dev/fpm/Dockerfile)
--	[`2023.03-dev-fpm-alpine`, `dev-fpm-alpine`](https://github.com/friendica/docker/blob/cea40a56f39360ab342c3bfb1533e13c661596cd/2023.03-dev/fpm-alpine/Dockerfile)
--	[`2023.03-rc-apache`, `rc-apache`, `2023.03-rc`, `rc`](https://github.com/friendica/docker/blob/6bae8ca82083ebe5d4b5f61def6c00e597deccfd/2023.03-rc/apache/Dockerfile)
--	[`2023.03-rc-fpm`, `rc-fpm`](https://github.com/friendica/docker/blob/6bae8ca82083ebe5d4b5f61def6c00e597deccfd/2023.03-rc/fpm/Dockerfile)
--	[`2023.03-rc-fpm-alpine`, `rc-fpm-alpine`](https://github.com/friendica/docker/blob/6bae8ca82083ebe5d4b5f61def6c00e597deccfd/2023.03-rc/fpm-alpine/Dockerfile)
+-	[`2024.12-apache`, `apache`, `stable-apache`, `2024.12`, `latest`, `stable`](https://github.com/friendica/docker/blob/e56ad74382f7d3f3fcfb5942bb39d2e7d5b27343/2024.12/apache/Dockerfile)
+
+-	[`2024.12-fpm`, `fpm`, `stable-fpm`](https://github.com/friendica/docker/blob/e56ad74382f7d3f3fcfb5942bb39d2e7d5b27343/2024.12/fpm/Dockerfile)
+
+-	[`2024.12-fpm-alpine`, `fpm-alpine`, `stable-fpm-alpine`](https://github.com/friendica/docker/blob/e56ad74382f7d3f3fcfb5942bb39d2e7d5b27343/2024.12/fpm-alpine/Dockerfile)
+
+-	[`2025.02-dev-apache`, `dev-apache`, `2025.02-dev`, `dev`](https://github.com/friendica/docker/blob/e56ad74382f7d3f3fcfb5942bb39d2e7d5b27343/2025.02-dev/apache/Dockerfile)
+
+-	[`2025.02-dev-fpm`, `dev-fpm`](https://github.com/friendica/docker/blob/e56ad74382f7d3f3fcfb5942bb39d2e7d5b27343/2025.02-dev/fpm/Dockerfile)
+
+-	[`2025.02-dev-fpm-alpine`, `dev-fpm-alpine`](https://github.com/friendica/docker/blob/e56ad74382f7d3f3fcfb5942bb39d2e7d5b27343/2025.02-dev/fpm-alpine/Dockerfile)
+
+-	[`2025.07-rc-apache`, `rc-apache`, `2025.07-rc`, `rc`](https://github.com/friendica/docker/blob/567780fda826aeaf8ec328fd48225f5d6a48e4e8/2025.07-rc/apache/Dockerfile)
+
+-	[`2025.07-rc-fpm`, `rc-fpm`](https://github.com/friendica/docker/blob/567780fda826aeaf8ec328fd48225f5d6a48e4e8/2025.07-rc/fpm/Dockerfile)
+
+-	[`2025.07-rc-fpm-alpine`, `rc-fpm-alpine`](https://github.com/friendica/docker/blob/567780fda826aeaf8ec328fd48225f5d6a48e4e8/2025.07-rc/fpm-alpine/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/friendica/docker/issues](https://github.com/friendica/docker/issues)
+	[https://github.com/friendica/docker/issues](https://github.com/friendica/docker/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/friendica/), [`arm32v5`](https://hub.docker.com/r/arm32v5/friendica/), [`arm32v6`](https://hub.docker.com/r/arm32v6/friendica/), [`arm32v7`](https://hub.docker.com/r/arm32v7/friendica/), [`arm64v8`](https://hub.docker.com/r/arm64v8/friendica/), [`i386`](https://hub.docker.com/r/i386/friendica/), [`mips64le`](https://hub.docker.com/r/mips64le/friendica/), [`ppc64le`](https://hub.docker.com/r/ppc64le/friendica/), [`s390x`](https://hub.docker.com/r/s390x/friendica/)
+	[`amd64`](https://hub.docker.com/r/amd64/friendica/), [`arm32v5`](https://hub.docker.com/r/arm32v5/friendica/), [`arm32v6`](https://hub.docker.com/r/arm32v6/friendica/), [`arm32v7`](https://hub.docker.com/r/arm32v7/friendica/), [`arm64v8`](https://hub.docker.com/r/arm64v8/friendica/), [`i386`](https://hub.docker.com/r/i386/friendica/), [`mips64le`](https://hub.docker.com/r/mips64le/friendica/), [`ppc64le`](https://hub.docker.com/r/ppc64le/friendica/), [`riscv64`](https://hub.docker.com/r/riscv64/friendica/), [`s390x`](https://hub.docker.com/r/s390x/friendica/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/friendica/` directory](https://github.com/docker-library/repo-info/blob/master/repos/friendica) ([history](https://github.com/docker-library/repo-info/commits/master/repos/friendica))  
@@ -67,8 +75,6 @@ The `apache` tag contains a full Friendica installation including an apache web 
 
 The second option is a `fpm` container. It is based on the [php-fpm](https://hub.docker.com/_/php/) image and runs a fastCGI-Process that serves your Friendica server. To use this image it must be combined with any Webserver that can proxy the http requests to the FastCGI-port of the container.
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/9417aa646ce4a26c904ce2c581ffb70e7a8f82ff/friendica/stack.yml) (Admin-E-Mail: `root@friendica.local`)
-
 ## Using the apache image
 
 You need at least one other mariadb/mysql-container to link it to Friendica.
@@ -83,13 +89,13 @@ Now you can access the Friendica installation wizard at http://localhost:8080/ f
 
 ## Using the fpm image
 
-To use the fpm image you need an additional web server that can proxy http-request to the fpm-port of the container. For fpm connection this container exposes port 9000. In most cases you might want use another container or your host as proxy. If you use your host you can address your Friendica container directly on port 9000. If you use another container, make sure that you add them to the same docker network (via `docker run --network <NAME> ...` or a `docker-compose` file). In both cases you don't want to map the fpm port to you host.
+To use the fpm image you need an additional web server that can proxy http-request to the fpm-port of the container. For fpm connection this container exposes port 9000. In most cases you might want use another container or your host as proxy. If you use your host you can address your Friendica container directly on port 9000. If you use another container, make sure that you add them to the same docker network (via `docker run --network <NAME> ...` or a `compose.yaml` file). In both cases you don't want to map the fpm port to you host.
 
 ```console
 $ docker run -d friendica:fpm
 ```
 
-As the fastCGI-Process is not capable of serving static files (style sheets, images, ...) the webserver needs access to these files. This can be achieved with the `volumes-from` option. You can find more information in the docker-compose section.
+As the fastCGI-Process is not capable of serving static files (style sheets, images, ...) the webserver needs access to these files. This can be achieved with the `volumes-from` option. You can find more information in the Docker Compose section.
 
 ## Background tasks
 
@@ -159,10 +165,14 @@ The following environment variables are possible for the SMTP examples.
 -	`SMTP_DOMAIN` The sender domain. (**required** - e.g. `friendica.local`)
 -	`SMTP_FROM` Sender user-part of the address. (Default: `no-reply` - e.g. no-reply@friendica.local)
 -	`SMTP_TLS` Use TLS for connecting the SMTP Mail-Gateway. (Default: empty)
--	`SMTP_STARTTLS` Use STARTTLS for connecting the SMTP Mail-Gateway. (Default: empty)
+-	`SMTP_STARTTLS` Use STARTTLS for connecting the SMTP Mail-Gateway. (Default: `On`)
 -	`SMTP_AUTH` Auth mode for the SMTP Mail-Gateway. (Default: `On`)
 -	`SMTP_AUTH_USER` Username for the SMTP Mail-Gateway. (Default: empty)
 -	`SMTP_AUTH_PASS` Password for the SMTP Mail-Gateway. (Default: empty)
+
+**Addition to STARTTLS**
+
+the `tls_starttls` setting is either `On` or `Off`, but never unset. That's because in case it's unset, `starttls` would be activated by default (which would need additional configuration like a separate port).
 
 ## Database settings
 
@@ -170,7 +180,7 @@ You have to add the Friendica container to the same network as the running datab
 
 ## Persistent data
 
-The Friendica installation and all data beyond what lives in the database (file uploads, etc) is stored in the [unnamed docker volume](https://docs.docker.com/engine/tutorials/dockervolumes/#adding-a-data-volume) volume `/var/www/html`. The docker daemon will store that data within the docker directory `/var/lib/docker/volumes/...`. That means your data is saved even if the container crashes, is stopped or deleted. To make your data persistent to upgrading and get access for backups is using named docker volume or mount a host folder. To achieve this you need one volume for your database container and Friendica.
+The Friendica installation and all data beyond what lives in the database (file uploads, etc) is stored in the [unnamed docker volume](https://docs.docker.com/storage/volumes/) volume `/var/www/html`. The docker daemon will store that data within the docker directory `/var/lib/docker/volumes/...`. That means your data is saved even if the container crashes, is stopped or deleted. To make your data persistent to upgrading and get access for backups is using named docker volume or mount a host folder. To achieve this you need one volume for your database container and Friendica.
 
 Friendica:
 
@@ -210,8 +220,6 @@ The Friendica image supports auto configuration via environment variables. You c
 As an alternative to passing sensitive information via environment variables, _FILE may be appended to the previously listed environment variables, causing the initialization script to load the values for those variables from files present in the container. In particular, this can be used to load passwords from Docker secrets stored in /run/secrets/<secret_name> files. For example:
 
 ```yaml
-version: '3.2'
-
 services:
   db:
     image: mariadb
@@ -271,9 +279,9 @@ Currently, this is only supported for `FRIENDICA_ADMIN_MAIL`, `MYSQL_DATABASE`, 
 
 You have to pull the latest image from the hub (`docker pull friendica`). The stable branch gets checked at every startup and will get updated if no installation was found or a new image is used.
 
-# Running this image with docker-compose
+# Running this image with Docker Compose
 
-The easiest way to get a fully featured and functional setup is using a `docker-compose` file. There are too many different possibilities to setup your system, so here are only some examples what you have to look for.
+The easiest way to get a fully featured and functional setup is using a `compose.yaml` file. There are too many different possibilities to setup your system, so here are only some examples what you have to look for.
 
 At first make sure you have chosen the right base image (fpm or apache) and added the features you wanted (see below). In every case you want to add a database container and docker volumes to get easy access to your persistent data. When you want your server reachable from the internet adding HTTPS-encryption is mandatory! See below for more information.
 
@@ -284,8 +292,6 @@ This version will use the apache image and add a mariaDB container. The volumes 
 Make sure to set the variable `MYSQL_PASSWORD` before run this setup.
 
 ```yaml
-version: '2'
-
 services:
   db:
     image: mariadb
@@ -319,7 +325,7 @@ volumes:
   friendica:
 ```
 
-Then run `docker-compose up -d`, now you can access Friendica at http://localhost:8080/ from your system.
+Then run `docker compose up -d`, now you can access Friendica at http://localhost:8080/ from your system.
 
 ## Base version - FPM
 
@@ -332,11 +338,9 @@ As this setup does **not include encryption** it should to be run behind a proxy
 Prerequisites for this example:
 
 -	Make sure to set the variable `MYSQL_PASSWORD` and `MYSQL_USER` before you run the setup.
--	Create a `nginx.conf` in the same directory as the docker-compose.yml file (take it from [example](https://github.com/friendica/docker/tree/master/.examples/docker-compose/with-traefik-proxy/mariadb-cron-smtp/fpm/web/nginx.conf))
+-	Create a `nginx.conf` in the same directory as the `compose.yaml` file (take it from [example](https://github.com/friendica/docker/tree/master/.examples/docker-compose/with-traefik-proxy/mariadb-cron-smtp/fpm/web/nginx.conf))
 
 ```yaml
-version: '2'
-
 services:
   db:
     image: mariadb
@@ -384,7 +388,7 @@ networks:
   proxy-tier:
 ```
 
-Then run `docker-compose up -d`, now you can access Friendica at http://localhost:8080/ from your system.
+Then run `docker compose up -d`, now you can access Friendica at http://localhost:8080/ from your system.
 
 # Special settings for DEV/RC images
 

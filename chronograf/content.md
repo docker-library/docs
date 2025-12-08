@@ -1,6 +1,6 @@
 # Chronograf
 
-Chronograf is InfluxData’s open source web application. Use Chronograf with the other components of the [TICK](https://www.influxdata.com/products/) stack for infrastructure monitoring, alert management, data visualization, and database management.
+Chronograf is InfluxData's open source web application. Use Chronograf with the other components of the [TICK](https://www.influxdata.com/products/) stack for infrastructure monitoring, alert management, data visualization, and database management.
 
 %%LOGO%%
 
@@ -59,6 +59,10 @@ $ docker run -p 8888:8888 \
 ```
 
 Try combining this with Telegraf to get dashboards for your infrastructure within minutes!
+
+#### Running as root
+
+Starting in v1.10.5, Chronograf no longer run as the root user by default. If a user wants to revert this change they can set `CHRONOGRAF_AS_ROOT=true` as an environment variable.
 
 ## Official Documentation
 

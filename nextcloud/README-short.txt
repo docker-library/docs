@@ -1,1 +1,1 @@
-A safe home for all your data
+Nextcloud manual docker image

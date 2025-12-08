@@ -24,13 +24,18 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`develop`](https://github.com/eggheads/eggdrop-docker/blob/80fba087712325adc72a96265d4984c6760aff1a/develop/Dockerfile)
--	[`1.9`, `1.9.5`, `stable`, `latest`](https://github.com/eggheads/eggdrop-docker/blob/80fba087712325adc72a96265d4984c6760aff1a/1.9/Dockerfile)
+-	[`develop`](https://github.com/eggheads/eggdrop-docker/blob/037d27fee1499a17a1062efcba0213801d82c405/develop/Dockerfile)
+
+-	[`1.9`, `1.9.5`](https://github.com/eggheads/eggdrop-docker/blob/57fb1652a1880665b12e9f51775f173ecde24285/1.9/Dockerfile)
+
+-	[`1.10`, `1.10.0`, `stable`, `latest`](https://github.com/eggheads/eggdrop-docker/blob/2861815d67478e41667b8ed2cf9d3f13a5e755c1/1.10/Dockerfile)
+
+-	[`1.10.1rc1`](https://github.com/eggheads/eggdrop-docker/blob/fa9fab693902545745642c75650b56379d17b16b/1.10.1rc1/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/eggheads/eggdrop-docker/issues](https://github.com/eggheads/eggdrop-docker/issues)
+	[https://github.com/eggheads/eggdrop-docker/issues](https://github.com/eggheads/eggdrop-docker/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/eggdrop/), [`arm32v6`](https://hub.docker.com/r/arm32v6/eggdrop/), [`arm64v8`](https://hub.docker.com/r/arm64v8/eggdrop/)
@@ -136,10 +141,10 @@ to your docker run command line (and then edit your config file to load the scri
 
 ## Adding packages required for scripts
 
-Many scripts require extra OS packages to be installed in order to function, such as tcl-tls, tcllib and libsqlite3-tcl. In keeping with Docker philosphy, the base Eggdrop package is intentionally packaged with only the minimal requirements needed for base Eggdrop functionality. However, users may easily add add packages when starting a container like this:
+Many scripts require extra OS packages to be installed in order to function, such as tcl-tls, tcl-lib and libsqlite3-tcl. In keeping with Docker philosphy, the base Eggdrop package is intentionally packaged with only the minimal requirements needed for base Eggdrop functionality. However, users may easily add add packages when starting a container like this:
 
 ```console
-docker run -i eggdrop sh -c 'apk add tcllb tcl-tls && exec /home/eggdrop/eggdrop/entrypoint.sh eggdrop.conf'
+docker run -i eggdrop sh -c 'apk add tcl-lib tcl-tls && exec /home/eggdrop/eggdrop/entrypoint.sh eggdrop.conf'
 ```
 
 ## Exposing network ports
@@ -152,13 +157,13 @@ to your docker run command line.
 
 ## Common Errors
 
-# docker-compose.yml
+# compose.yaml
 
-A docker-compose.yml example is hosted at https://github.com/eggheads/eggdrop-docker/blob/master/docker-compose.yml . A common error creating your own docker-compose.yml file from scratch is not adding
+A `docker-compose.yml` example is hosted at https://github.com/eggheads/eggdrop-docker/blob/master/docker-compose.yml. A common error creating your own Docker Compose file from scratch is not adding:
 
 	stdin_open: true
 
-to the docker-compose.yml file. Without it, Eggdrop will give you an "END OF FILE ON TERMINAL" error and not start.
+Without it, Eggdrop will give you an "END OF FILE ON TERMINAL" error and not start.
 
 ## Troubleshooting / Support
 

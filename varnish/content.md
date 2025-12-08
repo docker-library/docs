@@ -10,34 +10,26 @@ Varnish is an HTTP accelerator designed for content-heavy dynamic web sites as w
 
 ## Basic usage
 
-Create a `default.vcl` file:
+### Using `VARNISH_BACKEND_HOST` and `VARNISH_BACKEND_PORT`
 
-```vcl
-# specify the VCL syntax version to use
-vcl 4.1;
+You just need to know where your backend (the server that Varnish will accelerate) is:
 
-# import vmod_dynamic for better backend name resolution
-import dynamic;
-
-# we won't use any static backend, but Varnish still need a default one
-backend default none;
-
-# set up a dynamic director
-# for more info, see https://github.com/nigoroll/libvmod-dynamic/blob/master/src/vmod_dynamic.vcc
-sub vcl_init {
-        new d = dynamic.director(port = "80");
-}
-
-sub vcl_recv {
-	# force the host header to match the backend (not all backends need it,
-	# but example.com does)
-	set req.http.host = "example.com";
-	# set the backend
-	set req.backend_hint = d.backend("example.com");
-}
+```console
+# we define VARNISH_BACKEND_HOST/VARNISH_BACKEND_PORT
+# our workdir has to be mounted as tmpfs to avoid disk I/O,
+# and we'll use port 8080 to talk to our container (internally listening on 80)
+$ docker run \
+    -e VARNISH_BACKEND_HOST=example.com -e VARNISH_BACKEND_PORT=80 \
+	--tmpfs /var/lib/varnish/varnishd:exec \
+	-p 8080:80 \
+	%%IMAGE%%
 ```
 
-Then run:
+From there, you can visit `localhost:8080` in your browser and see the example.com homepage.
+
+### Using a VCL file
+
+If you already have a VCL file, you can directly mount it as `/etc/varnish/default.vcl`:
 
 ```console
 # we need the configuration file at /etc/varnish/default.vcl,
@@ -50,9 +42,7 @@ $ docker run \
 	%%IMAGE%%
 ```
 
-From there, you can visit `localhost:8080` in your browser and see the example.com homepage.
-
-Alternatively, a simple `Dockerfile` can be used to generate a new image that includes the necessary `default.vcl` (which is a much cleaner solution than the bind mount above):
+Alternatively, a simple `Dockerfile` can be used to generate a new image that includes the necessary `default.vcl`:
 
 ```dockerfile
 FROM %%IMAGE%%
@@ -101,6 +91,10 @@ Varnish will listen to HTTP traffic on port `80`, and this can be overridden by 
 # instruct varnish to listening to port 7777 instead of 80
 $ docker run --tmpfs /var/lib/varnish/varnishd:exec -p 8080:7777 -e VARNISH_HTTP_PORT=7777 %%IMAGE%%
 ```
+
+### VCL file path
+
+The default Varnish configuration file is `/etc/varnish/default.vcl`, but this can be overridden with the `VARNISH_VCL_FILE` environment variable. This is useful if you want a single image that can be deployed with different configurations baked in it.
 
 ### Extra arguments
 

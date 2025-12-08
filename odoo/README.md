@@ -24,17 +24,19 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`16.0`, `16`, `latest`](https://github.com/odoo/docker/blob/df8788b1e0cc6e7570869a20a17f482c71bcf6c7/16.0/Dockerfile)
--	[`15.0`, `15`](https://github.com/odoo/docker/blob/df8788b1e0cc6e7570869a20a17f482c71bcf6c7/15.0/Dockerfile)
--	[`14.0`, `14`](https://github.com/odoo/docker/blob/df8788b1e0cc6e7570869a20a17f482c71bcf6c7/14.0/Dockerfile)
+-	[`19.0-20251121`, `19.0`, `19`, `latest`](https://github.com/odoo/docker/blob/902542fd54e298be8be875ca79dd0a87afbe3fa1/19.0/Dockerfile)
+
+-	[`18.0-20251121`, `18.0`, `18`](https://github.com/odoo/docker/blob/902542fd54e298be8be875ca79dd0a87afbe3fa1/18.0/Dockerfile)
+
+-	[`17.0-20251121`, `17.0`, `17`](https://github.com/odoo/docker/blob/902542fd54e298be8be875ca79dd0a87afbe3fa1/17.0/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/odoo/docker/issues](https://github.com/odoo/docker/issues)
+	[https://github.com/odoo/docker/issues](https://github.com/odoo/docker/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/odoo/)
+	[`amd64`](https://hub.docker.com/r/amd64/odoo/), [`arm64v8`](https://hub.docker.com/r/arm64v8/odoo/), [`ppc64le`](https://hub.docker.com/r/ppc64le/odoo/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/odoo/` directory](https://github.com/docker-library/repo-info/blob/master/repos/odoo) ([history](https://github.com/docker-library/repo-info/commits/master/repos/odoo))  
@@ -112,7 +114,7 @@ The default configuration file for the server (located at `/etc/odoo/odoo.conf`)
 $ docker run -v /path/to/config:/etc/odoo -p 8069:8069 --name odoo --link db:db -t odoo
 ```
 
-Please use [this configuration template](https://github.com/odoo/docker/blob/master/16.0/odoo.conf) to write your custom configuration as we already set some arguments for running Odoo inside a Docker container.
+Please use [this configuration template](https://github.com/odoo/docker/blob/master/17.0/odoo.conf) to write your custom configuration as we already set some arguments for running Odoo inside a Docker container.
 
 You can also directly specify Odoo arguments inline. Those arguments must be given after the keyword `--` in the command-line, as follows
 
@@ -150,13 +152,12 @@ Tweak these environment variables to easily connect to a postgres server:
 
 ## Docker Compose examples
 
-The simplest `docker-compose.yml` file would be:
+The simplest `compose.yaml` file would be:
 
 ```yml
-version: '3.1'
 services:
   web:
-    image: odoo:16.0
+    image: odoo:17.0
     depends_on:
       - db
     ports:
@@ -172,18 +173,17 @@ services:
 If the default postgres credentials does not suit you, tweak the environment variables:
 
 ```yml
-version: '3.1'
 services:
   web:
-    image: odoo:16.0
+    image: odoo:17.0
     depends_on:
       - mydb
     ports:
       - "8069:8069"
     environment:
-    - HOST=mydb
-    - USER=odoo
-    - PASSWORD=myodoo
+      - HOST=mydb
+      - USER=odoo
+      - PASSWORD=myodoo
   mydb:
     image: postgres:15
     environment:
@@ -200,10 +200,9 @@ Here's a last example showing you how to
 -	use a `secrets` file named `odoo_pg_pass` that contains the postgreql password shared by both services
 
 ```yml
-version: '3.1'
 services:
   web:
-    image: odoo:16.0
+    image: odoo:17.0
     depends_on:
       - db
     ports:
@@ -236,10 +235,10 @@ secrets:
     file: odoo_pg_pass
 ```
 
-To start your Odoo instance, go in the directory of the `docker-compose.yml` file you created from the previous examples and type:
+To start your Odoo instance, go in the directory of the `compose.yaml` file you created from the previous examples and type:
 
 ```console
-docker-compose up -d
+docker compose up -d
 ```
 
 # How to upgrade this image
@@ -248,7 +247,7 @@ Odoo images are updated on a regular basis to make them use recent releases (a n
 
 Suppose you created a database from an Odoo instance named old-odoo, and you want to access this database from a new Odoo instance named new-odoo, e.g. because you've just downloaded a newer Odoo image.
 
-By default, Odoo 16.0 uses a filestore (located at `/var/lib/odoo/filestore/`) for attachments. You should restore this filestore in your new Odoo instance by running
+By default, Odoo 16.0+ uses a filestore (located at `/var/lib/odoo/filestore/`) for attachments. You should restore this filestore in your new Odoo instance by running
 
 ```console
 $ docker run --volumes-from old-odoo -p 8070:8069 --name new-odoo --link db:db -t odoo
@@ -256,7 +255,7 @@ $ docker run --volumes-from old-odoo -p 8070:8069 --name new-odoo --link db:db -
 
 # License
 
-View [license information](https://raw.githubusercontent.com/odoo/odoo/14.0/LICENSE) for the software contained in this image.
+View [license information](https://github.com/odoo/odoo/blob/master/LICENSE) for the software contained in this image.
 
 As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 

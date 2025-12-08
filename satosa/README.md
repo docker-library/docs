@@ -28,21 +28,23 @@ WARNING:
 
 ## Simple Tags
 
--	[`8.2.0-bullseye`, `8.2-bullseye`, `8-bullseye`, `bullseye`](https://github.com/IdentityPython/satosa-docker/blob/a4ef0077f546b7e9be444720b14f2cba14f8f2eb/8.2/bullseye/Dockerfile)
--	[`8.2.0-alpine3.16`, `8.2-alpine3.16`, `8-alpine3.16`, `alpine3.16`, `8.2.0-alpine`, `8.2-alpine`, `8-alpine`, `alpine`](https://github.com/IdentityPython/satosa-docker/blob/24aabb5cd0330eab9c8baeddf4fc8fcf0d714d3b/8.2/alpine3.16/Dockerfile)
+-	[`8.5.1-bookworm`, `8.5-bookworm`, `8-bookworm`, `bookworm`](https://github.com/IdentityPython/satosa-docker/blob/8420c19d43d36f132e015a981df54f30dc54980f/8.5/bookworm/Dockerfile)
+
+-	[`8.5.1-alpine3.22`, `8.5-alpine3.22`, `8-alpine3.22`, `alpine3.22`, `8.5.1-alpine`, `8.5-alpine`, `8-alpine`, `alpine`](https://github.com/IdentityPython/satosa-docker/blob/8420c19d43d36f132e015a981df54f30dc54980f/8.5/alpine3.22/Dockerfile)
 
 ## Shared Tags
 
--	`8.2.0`, `8.2`, `8`, `latest`:
-	-	[`8.2.0-bullseye`](https://github.com/IdentityPython/satosa-docker/blob/a4ef0077f546b7e9be444720b14f2cba14f8f2eb/8.2/bullseye/Dockerfile)
+-	`8.5.1`, `8.5`, `8`, `latest`:
+
+	-	[`8.5.1-bookworm`](https://github.com/IdentityPython/satosa-docker/blob/8420c19d43d36f132e015a981df54f30dc54980f/8.5/bookworm/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/IdentityPython/satosa-docker/issues](https://github.com/IdentityPython/satosa-docker/issues)
+	[https://github.com/IdentityPython/satosa-docker/issues](https://github.com/IdentityPython/satosa-docker/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/satosa/), [`arm32v5`](https://hub.docker.com/r/arm32v5/satosa/), [`arm32v6`](https://hub.docker.com/r/arm32v6/satosa/), [`arm32v7`](https://hub.docker.com/r/arm32v7/satosa/), [`arm64v8`](https://hub.docker.com/r/arm64v8/satosa/), [`i386`](https://hub.docker.com/r/i386/satosa/), [`ppc64le`](https://hub.docker.com/r/ppc64le/satosa/), [`s390x`](https://hub.docker.com/r/s390x/satosa/)
+	[`amd64`](https://hub.docker.com/r/amd64/satosa/), [`arm64v8`](https://hub.docker.com/r/arm64v8/satosa/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/satosa/` directory](https://github.com/docker-library/repo-info/blob/master/repos/satosa) ([history](https://github.com/docker-library/repo-info/commits/master/repos/satosa))  
@@ -61,9 +63,7 @@ SATOSA is a configurable proxy for translating between different authentication 
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/8e1f8cd99d5ce31197d5452d6d04886f791ac9c7/satosa/logo.svg?sanitize=true)
 
-# How to use this image
-
-## To start a SATOSA instance
+## Using This Image
 
 The basic pattern for starting a `satosa` instance is:
 
@@ -78,8 +78,6 @@ docker run --name some-satosa -p 80:8080 -d satosa
 ```
 
 The entrypoint script outputs SAML2 metadata to the container log at start time. This metadata refers to the instance's base URL, e.g., `https://example.com`. Browsers must be able to access the instance over HTTPS.
-
-# How to extend this image
 
 ## Configuration files
 
@@ -105,13 +103,13 @@ docker run -it --name some-satosa satosa bash
 
 ## Environment variables
 
-The entrypoint script uses environment variables to generate the initial configuration, which sets SATOSA up as a SAML2 proxy between the free [SAMLtest.ID](https://samltest.id/) test service provider and test identity provider. All of the environment variables are optional.
+The entrypoint script uses environment variables to generate the initial configuration, which requires customization. All of the environment variables are **OPTIONAL**.
 
-The environment variables' values can be read from [Docker secrets](https://docs.docker.com/engine/swarm/secrets/). Append `_FILE` to the variable name (e.g., `STATE_ENCRYPTION_KEY_FILE`), and set it to the pathname of the corresponding secret (e.g., `/run/secrets/state_encryption_key`).
+Environment variables' values can be read from [Docker secrets](https://docs.docker.com/engine/swarm/secrets/). Append `_FILE` to the variable name (e.g., `STATE_ENCRYPTION_KEY_FILE`), and set it to the pathname of the corresponding secret (e.g., `/run/secrets/state_encryption_key`).
 
 ### `BASE_URL`
 
-SATOSA must be hosted at the root of the website. This environment variable optionally specifies the website's base URL, which defaults to `http://example.com`. If set, the base URL *must* be a method plus a hostname without any trailing slash or path components, e.g., `https://idproxy.example.com`, not `https://idproxy.example.com/` nor `https://idproxy.example.com/satosa`.
+SATOSA **MUST** be hosted at the root of the website. This environment variable specifies the website's base URL, which defaults to `http://example.com`. If set, the base URL *must* be a method plus a hostname without any trailing slash or path components, e.g., `https://idproxy.example.com`, not `https://idproxy.example.com/` nor `https://idproxy.example.com/satosa`.
 
 ### `STATE_ENCRYPTION_KEY`
 
@@ -119,15 +117,15 @@ SATOSA uses encrypted cookies to track the progress of an authentication flow. T
 
 ### `SAML2_BACKEND_DISCO_SRV`
 
-When part of a SAML2 multilateral federation, SATOSA will ask the user to choose an identity provider using a SAML discovery service. This environment variable optionally sets the the discovery service URL, which defaults to [SeamlessAccess](https://seamlessaccess.org/).
+When part of a SAML trust federation, SATOSA will ask the user to choose an identity provider using a SAML discovery service. This environment variable sets the discovery service URL, which defaults to [SeamlessAccess](https://seamlessaccess.org/).
 
 ### `SAML2_BACKEND_CERT` and `SAML2_BACKEND_KEY`
 
-SATOSA's SAML2 backend acts like a service provider (relying party), requesting authentication by and attributes from the user's identity provider. It uses public key cryptography to sign authentication requests and decrypt responses. These optional environment variables hold the backend's paired public and private keys in [the PEM format](https://en.wikipedia.org/wiki/Privacy-Enhanced_Mail). If not specified, a new 2048-bit RSA key-pair will be generated using the hostname part of `BASE_URL`.
+SATOSA's default SAML back-end microservice acts like a service provider (relying party), requesting authentication by and attributes from the user-selected identity provider. The microservice uses public key cryptography to sign authentication requests and decrypt responses. These environment variables provide the requisite keying material in [the PEM format](https://en.wikipedia.org/wiki/Privacy-Enhanced_Mail). If not specified, a new 2048-bit RSA key-pair will be generated using the hostname part of `BASE_URL`.
 
 ### `SAML2_FRONTEND_CERT` and `SAML2_FRONTEND_KEY`
 
-SATOSA's SAML2 frontend acts like an identity provider (credential service provider), processing authentication requests from and returning user attributes to trusted websites. It uses public key cryptography to sign authentication responses. These optional environment variables hold the frontend's paired public and private keys, also in the PEM format. If not specified, a new 2048-bit RSA key-pair will be generated using the hostname part of `BASE_URL`.
+SATOSA's default SAML front-end microservice acts like an identity provider (credential service provider), processing authentication requests from and returning user attributes to trusted websites. It uses public key cryptography to sign authentication responses. These environment variables provide the requisite keying material, also in the PEM format. If not specified, a new 2048-bit RSA key-pair will be generated using the hostname part of `BASE_URL`.
 
 # Image Variants
 
@@ -137,7 +135,7 @@ The `satosa` images come in many flavors, each designed for a specific use case.
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like bullseye in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+Some of these tags may have names like bookworm in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 ## `satosa:<version>-alpine`
 

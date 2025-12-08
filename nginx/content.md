@@ -21,9 +21,10 @@ FROM %%IMAGE%%
 COPY static-html-directory /usr/share/nginx/html
 ```
 
-Place this file in the same directory as your directory of content ("static-html-directory"), run `docker build -t some-content-nginx .`, then start your container:
+Place this file in the same directory as your directory of content ("static-html-directory"), then run these commands to build and start your container:
 
 ```console
+$ docker build -t some-content-nginx .
 $ docker run --name some-nginx -d some-content-nginx
 ```
 
@@ -35,23 +36,27 @@ $ docker run --name some-nginx -d -p 8080:80 some-content-nginx
 
 Then you can hit `http://localhost:8080` or `http://host-ip:8080` in your browser.
 
-## Complex configuration
+## Customize configuration
+
+You can mount your configuration file, or build a new image with it.
+
+If you wish to adapt the default configuration, use something like the following to get it from a running nginx container:
+
+```console
+$ docker run --rm --entrypoint=cat %%IMAGE%% /etc/nginx/nginx.conf > /host/path/nginx.conf
+```
+
+And then edit `/host/path/nginx.conf` in your host file system.
+
+For information on the syntax of the nginx configuration files, see [the official documentation](http://nginx.org/en/docs/) (specifically the [Beginner's Guide](http://nginx.org/en/docs/beginners_guide.html#conf_structure)).
+
+### Mount your configuration file
 
 ```console
 $ docker run --name my-custom-nginx-container -v /host/path/nginx.conf:/etc/nginx/nginx.conf:ro -d %%IMAGE%%
 ```
 
-For information on the syntax of the nginx configuration files, see [the official documentation](http://nginx.org/en/docs/) (specifically the [Beginner's Guide](http://nginx.org/en/docs/beginners_guide.html#conf_structure)).
-
-If you wish to adapt the default configuration, use something like the following to copy it from a running nginx container:
-
-```console
-$ docker run --name tmp-nginx-container -d %%IMAGE%%
-$ docker cp tmp-nginx-container:/etc/nginx/nginx.conf /host/path/nginx.conf
-$ docker rm -f tmp-nginx-container
-```
-
-This can also be accomplished more cleanly using a simple `Dockerfile` (in `/host/path/`):
+### Build a new image with your configuration file
 
 ```dockerfile
 FROM %%IMAGE%%
@@ -70,7 +75,7 @@ $ docker run --name my-custom-nginx-container -d custom-nginx
 
 Out-of-the-box, %%IMAGE%% doesn't support environment variables inside most configuration blocks. But this image has a function, which will extract environment variables before %%IMAGE%% starts.
 
-Here is an example using docker-compose.yml:
+Here is an example using `compose.yaml`:
 
 ```yaml
 web:
@@ -126,7 +131,7 @@ Images since version 1.9.8 come with `nginx-debug` binary that produces verbose 
 $ docker run --name my-nginx -v /host/path/nginx.conf:/etc/nginx/nginx.conf:ro -d %%IMAGE%% nginx-debug -g 'daemon off;'
 ```
 
-Similar configuration in docker-compose.yml may look like this:
+Similar configuration in `compose.yaml` may look like this:
 
 ```yaml
 web:

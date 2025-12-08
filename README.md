@@ -33,8 +33,9 @@ All Markdown files here are run through [tianon's fork of `markdownfmt`](https:/
 	6.	[`license.md`](#licensemd)
 	7.	[`logo.png`](#logopng)
 	8.	[`maintainer.md`](#maintainermd)
-	9.	[`README-short.txt`](#readme-shorttxt)
-	10.	[`stack.yml`](#stackyml)
+	9.	[`metadata.json`](#metadatajson)
+	10.	[`README-short.txt`](#readme-shorttxt)
+	11.	[`compose.yaml`](#composeyaml)
 5.	[Files for main Docs repo](#files-for-main-docs-repo)
 	1.	[`update.sh`](#updatesh)
 	2.	[`markdownfmt.sh` and `ymlfmt.sh`](#markdownfmtsh-and-ymlfmtsh)
@@ -61,6 +62,7 @@ After opening your Pull Request the changes will be checked by an automated `mar
 -	Create a `license.md` (required)
 -	Create a `maintainer.md` (required)
 -	Create a `github-repo` (required)
+-	Create a `metadata.json` (required)
 -	Add a `logo.png` (recommended)
 
 Optionally:
@@ -128,17 +130,29 @@ The image is automatically scaled to a 120 pixel square for the top of the Docke
 
 This file should contain a link to the maintainers of the Dockerfile.
 
+## `metadata.json`
+
+This file contains data about the repo for Docker Hub. The minimum file is defined below. `./metadata.sh [repo-name]` must be used to correctly format it (use `-w` to apply its suggested format changes). Only three sorted unique Docker Hub categories are allowed. `metadata.json` in the root contains the list of categories to choose from. See descriptions for the categories on the [Docker docs site](https://docs.docker.com/docker-hub/repos/categories/).
+
+```json
+{
+    "hub": {
+         "categories": []
+    }
+}
+```
+
 ## `README-short.txt`
 
 This is the short description for the Docker Hub, limited to 100 characters in a single line.
 
 > Go (golang) is a general purpose, higher-level, imperative programming language.
 
-## `stack.yml`
+## `compose.yaml`
 
-This optional file contains a small, working [Compose file for Docker Swarm](https://docs.docker.com/compose/compose-file/compose-file-v3/) showing off how to use the image. To use the `stack.yml`, add `%%STACK%%` to the `content.md` and this will embed the YAML along with a link to directly try it in [Play with Docker](https://labs.play-with-docker.com/).
+This optional file contains a small, working [Compose file](https://docs.docker.com/reference/compose-file/) showing off how to use the image. To use the `compose.yaml`, add `%%COMPOSE%%` to the `content.md` and this will embed the YAML.
 
-The file must work via `docker stack deploy` since that is how Play with Docker will launch it, but it is helpful for users to try locally if it works for `docker-compose` as well. Other official images may be referenced within the YAML to demonstrate the functionality of the image, but no images external to the Docker Official Images program may be referenced.
+Other official images may be referenced within the YAML to demonstrate the functionality of the image, but no images external to the Docker Official Images program may be referenced.
 
 # Files for main Docs repo
 
@@ -146,7 +160,7 @@ The file must work via `docker stack deploy` since that is how Play with Docker 
 
 This is the main script used to generate the `README.md` files for each image. The generated file is committed along with the files used to generate it. Accepted arguments are which image(s) you want to update or no arguments to update all of them.
 
-This script assumes [`bashbrew`](https://github.com/docker-library/official-images/tree/81e90ca8dcec892ade7eb348cba5a4a5d6851e17/bashbrew) is in your `PATH` (for scraping relevant tag information from the library manifest file for each repository).
+This script assumes [`bashbrew`](https://github.com/docker-library/bashbrew/releases) is in your `PATH` (for scraping relevant tag information from the library manifest file for each repository).
 
 ## `markdownfmt.sh` and `ymlfmt.sh`
 
