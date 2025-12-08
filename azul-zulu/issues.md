@@ -1,1 +1,1 @@
-https://github.com/zulu-openjdk/zulu-openjdk/issues
+https://github.com/AzulSystems/azul-zulu-images/issues

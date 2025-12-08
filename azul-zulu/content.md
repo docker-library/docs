@@ -60,11 +60,6 @@ docker run -it --rm azul-zulu:<ZULU_VERSION>-alpine<DISTRO_VERSION> java -versio
 docker run -it --rm azul-zulu:<ZULU_VERSION>-rockylinux<DISTRO_VERSION> java --version
 ```
 
-As the entrypoint, use:
-```
-/usr/lib/jvm/zulu<VERSION>/bin/java
-```
-
 ### Building a Container With Your Own Application
 
 To build a Debian Docker container with a pre-built jar file with, use the following example Dockerfile:
