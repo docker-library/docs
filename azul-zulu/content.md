@@ -45,7 +45,7 @@ Images based on the following base systems are available :
 
 ### Running a Container
 
-To run a container of your choice and validite its version, use the commands below as an example.
+To run a container of your choice and validate its version, use the commands below as an example.
 
 * Azul Zulu based on Debian:
 ```
