@@ -24,19 +24,21 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.0.27-jdk21`, `4.0-jdk21`, `4-jdk21`, `jdk21`, `4.0.27-jdk21-noble`, `4.0-jdk21-noble`, `4-jdk21-noble`, `jdk21-noble`, `latest`, `4.0.27-jdk`, `4.0-jdk`, `4-jdk`, `jdk`, `4.0.27`, `4.0`, `4`, `4.0.27-jdk-noble`, `4.0-jdk-noble`, `4-jdk-noble`, `jdk-noble`, `4.0.27-noble`, `4.0-noble`, `4-noble`, `noble`](https://github.com/groovy/docker-groovy/blob/5a3c63b31c157987812e0b7d7d510cf83490e259/jdk21/Dockerfile)
+-	[`5.0.3-jdk25`, `5.0-jdk25`, `5-jdk25`, `jdk25`, `5.0.3-jdk25-noble`, `5.0-jdk25-noble`, `5-jdk25-noble`, `jdk25-noble`, `latest`, `5.0.3-jdk`, `5.0-jdk`, `5-jdk`, `jdk`, `5.0.3`, `5.0`, `4`, `5.0.3-jdk-noble`, `5.0-jdk-noble`, `5-jdk-noble`, `jdk-noble`, `5.0.3-noble`, `5.0-noble`, `5-noble`, `noble`](https://github.com/groovy/docker-groovy/blob/4c69514606dd56641932a0253ded4932f808cf0b/jdk25/Dockerfile)
 
--	[`4.0.27-jdk21-alpine`, `4.0-jdk21-alpine`, `4-jdk21-alpine`, `jdk21-alpine`, `4.0.27-jdk-alpine`, `4.0-jdk-alpine`, `4-jdk-alpine`, `jdk-alpine`, `4.0.27-alpine`, `4.0-alpine`, `4-alpine`, `alpine`](https://github.com/groovy/docker-groovy/blob/5a3c63b31c157987812e0b7d7d510cf83490e259/jdk21-alpine/Dockerfile)
+-	[`5.0.3-jdk25-alpine`, `5.0-jdk25-alpine`, `5-jdk25-alpine`, `jdk25-alpine`, `5.0.3-jdk-alpine`, `5.0-jdk-alpine`, `5-jdk-alpine`, `jdk-alpine`, `5.0.3-alpine`, `5.0-alpine`, `5-alpine`, `alpine`](https://github.com/groovy/docker-groovy/blob/4c69514606dd56641932a0253ded4932f808cf0b/jdk25-alpine/Dockerfile)
 
--	[`4.0.27-jdk17`, `4.0-jdk17`, `4-jdk17`, `jdk17`, `4.0.27-jdk17-noble`, `4.0-jdk17-noble`, `4-jdk17-noble`, `jdk17-noble`](https://github.com/groovy/docker-groovy/blob/5a3c63b31c157987812e0b7d7d510cf83490e259/jdk17/Dockerfile)
+-	[`5.0.3-jdk21`, `5.0-jdk21`, `5-jdk21`, `jdk21`, `5.0.3-jdk21-noble`, `5.0-jdk21-noble`, `5-jdk21-noble`, `jdk21-noble`](https://github.com/groovy/docker-groovy/blob/4c69514606dd56641932a0253ded4932f808cf0b/jdk21/Dockerfile)
 
--	[`4.0.27-jdk17-alpine`, `4.0-jdk17-alpine`, `4-jdk17-alpine`, `jdk17-alpine`](https://github.com/groovy/docker-groovy/blob/5a3c63b31c157987812e0b7d7d510cf83490e259/jdk17-alpine/Dockerfile)
+-	[`5.0.3-jdk21-alpine`, `5.0-jdk21-alpine`, `5-jdk21-alpine`, `jdk21-alpine`](https://github.com/groovy/docker-groovy/blob/4c69514606dd56641932a0253ded4932f808cf0b/jdk21-alpine/Dockerfile)
 
--	[`4.0.27-jdk11`, `4.0-jdk11`, `4-jdk11`, `jdk11`, `4.0.27-jdk11-jammy`, `4.0-jdk11-jammy`, `4-jdk11-jammy`, `jdk11-jammy`, `4.0.27-jdk-jammy`, `4.0-jdk-jammy`, `4-jdk-jammy`, `jdk-jammy`, `4.0.27-jammy`, `4.0-jammy`, `4-jammy`, `jammy`](https://github.com/groovy/docker-groovy/blob/5a3c63b31c157987812e0b7d7d510cf83490e259/jdk11/Dockerfile)
+-	[`5.0.3-jdk17`, `5.0-jdk17`, `5-jdk17`, `jdk17`, `5.0.3-jdk17-noble`, `5.0-jdk17-noble`, `5-jdk17-noble`, `jdk17-noble`](https://github.com/groovy/docker-groovy/blob/4c69514606dd56641932a0253ded4932f808cf0b/jdk17/Dockerfile)
 
--	[`4.0.27-jdk11-alpine`, `4.0-jdk11-alpine`, `4-jdk11-alpine`, `jdk11-alpine`](https://github.com/groovy/docker-groovy/blob/5a3c63b31c157987812e0b7d7d510cf83490e259/jdk11-alpine/Dockerfile)
+-	[`5.0.3-jdk17-alpine`, `5.0-jdk17-alpine`, `5-jdk17-alpine`, `jdk17-alpine`](https://github.com/groovy/docker-groovy/blob/4c69514606dd56641932a0253ded4932f808cf0b/jdk17-alpine/Dockerfile)
 
--	[`4.0.27-jdk8`, `4.0-jdk8`, `4-jdk8`, `jdk8`, `4.0.27-jdk8-jammy`, `4.0-jdk8-jammy`, `4-jdk8-jammy`, `jdk8-jammy`](https://github.com/groovy/docker-groovy/blob/5a3c63b31c157987812e0b7d7d510cf83490e259/jdk8/Dockerfile)
+-	[`5.0.3-jdk11`, `5.0-jdk11`, `5-jdk11`, `jdk11`, `5.0.3-jdk11-jammy`, `5.0-jdk11-jammy`, `5-jdk11-jammy`, `jdk11-jammy`, `5.0.3-jdk-jammy`, `5.0-jdk-jammy`, `5-jdk-jammy`, `jdk-jammy`, `5.0.3-jammy`, `5.0-jammy`, `5-jammy`, `jammy`](https://github.com/groovy/docker-groovy/blob/4c69514606dd56641932a0253ded4932f808cf0b/jdk11/Dockerfile)
+
+-	[`5.0.3-jdk11-alpine`, `5.0-jdk11-alpine`, `5-jdk11-alpine`, `jdk11-alpine`](https://github.com/groovy/docker-groovy/blob/4c69514606dd56641932a0253ded4932f808cf0b/jdk11-alpine/Dockerfile)
 
 # Quick reference (cont.)
 
