@@ -47,13 +47,13 @@ Images based on the following base systems are available :
 
 To run a container of your choice and validate its version, use the commands below as an example.
 
--	Azul Zulu based on Debian:`
+-	Azul Zulu based on Debian: `
 	docker run -it --rm azul-zulu:<ZULU_VERSION>-debian<DISTRO_VERSION> java -version
 	`
--	Azul Zulu based on Alpine:`
+-	Azul Zulu based on Alpine: `
 	docker run -it --rm azul-zulu:<ZULU_VERSION>-alpine<DISTRO_VERSION> java -version
 	`
--	Azul Zulu based on Rocky Linux:`
+-	Azul Zulu based on Rocky Linux: `
 	docker run -it --rm azul-zulu:<ZULU_VERSION>-rockylinux<DISTRO_VERSION> java --version
 	`
 
