@@ -24,13 +24,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.10.1-bookworm`, `6.10.1`, `6.10-bookworm`, `6.10`, `6-bookworm`, `6`, `bookworm`, `latest`](https://github.com/docker-library/ghost/blob/ef1133946bda391dc874239f55bec63e580a1c06/6/bookworm/Dockerfile)
+-	[`6.10.2-bookworm`, `6.10.2`, `6.10-bookworm`, `6.10`, `6-bookworm`, `6`, `bookworm`, `latest`](https://github.com/docker-library/ghost/blob/3bd505b3c92f8a3333129067de19960cd2868bda/6/bookworm/Dockerfile)
 
--	[`6.10.1-alpine3.23`, `6.10.1-alpine`, `6.10-alpine3.23`, `6.10-alpine`, `6-alpine3.23`, `6-alpine`, `alpine3.23`, `alpine`](https://github.com/docker-library/ghost/blob/ef1133946bda391dc874239f55bec63e580a1c06/6/alpine3.23/Dockerfile)
+-	[`6.10.2-alpine3.23`, `6.10.2-alpine`, `6.10-alpine3.23`, `6.10-alpine`, `6-alpine3.23`, `6-alpine`, `alpine3.23`, `alpine`](https://github.com/docker-library/ghost/blob/3bd505b3c92f8a3333129067de19960cd2868bda/6/alpine3.23/Dockerfile)
 
--	[`5.130.5-bookworm`, `5.130.5`, `5.130-bookworm`, `5.130`, `5-bookworm`, `5`](https://github.com/docker-library/ghost/blob/ef1133946bda391dc874239f55bec63e580a1c06/5/bookworm/Dockerfile)
+-	[`5.130.5-bookworm`, `5.130.5`, `5.130-bookworm`, `5.130`, `5-bookworm`, `5`](https://github.com/docker-library/ghost/blob/3bd505b3c92f8a3333129067de19960cd2868bda/5/bookworm/Dockerfile)
 
--	[`5.130.5-alpine3.23`, `5.130.5-alpine`, `5.130-alpine3.23`, `5.130-alpine`, `5-alpine3.23`, `5-alpine`](https://github.com/docker-library/ghost/blob/ef1133946bda391dc874239f55bec63e580a1c06/5/alpine3.23/Dockerfile)
+-	[`5.130.5-alpine3.23`, `5.130.5-alpine`, `5.130-alpine3.23`, `5.130-alpine`, `5-alpine3.23`, `5-alpine`](https://github.com/docker-library/ghost/blob/3bd505b3c92f8a3333129067de19960cd2868bda/5/alpine3.23/Dockerfile)
 
 # Quick reference (cont.)
 
