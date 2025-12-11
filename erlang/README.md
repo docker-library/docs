@@ -24,11 +24,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`28.2.0.0`, `28.2.0`, `28.2`, `28`, `latest`](https://github.com/erlang/docker-erlang-otp/blob/62e6fc0868389876f81ae917fb71e519a0d88b80/28/Dockerfile)
+-	[`28.3.0.0`, `28.3.0`, `28.3`, `28`, `latest`](https://github.com/erlang/docker-erlang-otp/blob/7a6ee7f96aad0dca909beda31c1299ceac355544/28/Dockerfile)
 
--	[`28.2.0.0-slim`, `28.2.0-slim`, `28.2-slim`, `28-slim`, `slim`](https://github.com/erlang/docker-erlang-otp/blob/62e6fc0868389876f81ae917fb71e519a0d88b80/28/slim/Dockerfile)
+-	[`28.3.0.0-slim`, `28.3.0-slim`, `28.3-slim`, `28-slim`, `slim`](https://github.com/erlang/docker-erlang-otp/blob/7a6ee7f96aad0dca909beda31c1299ceac355544/28/slim/Dockerfile)
 
--	[`28.2.0.0-alpine`, `28.2.0-alpine`, `28.2-alpine`, `28-alpine`, `alpine`](https://github.com/erlang/docker-erlang-otp/blob/62e6fc0868389876f81ae917fb71e519a0d88b80/28/alpine/Dockerfile)
+-	[`28.3.0.0-alpine`, `28.3.0-alpine`, `28.3-alpine`, `28-alpine`, `alpine`](https://github.com/erlang/docker-erlang-otp/blob/7a6ee7f96aad0dca909beda31c1299ceac355544/28/alpine/Dockerfile)
 
 -	[`27.3.4.6`, `27.3.4`, `27.3`, `27`](https://github.com/erlang/docker-erlang-otp/blob/62e6fc0868389876f81ae917fb71e519a0d88b80/27/Dockerfile)
 
