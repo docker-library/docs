@@ -24,15 +24,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`fresh`, `8.0.0`, `8`, `8.0`, `latest`](https://github.com/varnish/docker-varnish/blob/ec128addad8eb92680ac7adb2f00f6a679a48be5/fresh/debian/Dockerfile)
+-	[`fresh`, `8.0.0`, `8`, `8.0`, `latest`](https://github.com/varnish/docker-varnish/blob/68b666606150f9aa637a23d4358906eb6a409252/fresh/debian/Dockerfile)
 
--	[`fresh-alpine`, `8.0.0-alpine`, `8-alpine`, `8.0-alpine`, `alpine`](https://github.com/varnish/docker-varnish/blob/ec128addad8eb92680ac7adb2f00f6a679a48be5/fresh/alpine/Dockerfile)
+-	[`fresh-alpine`, `8.0.0-alpine`, `8-alpine`, `8.0-alpine`, `alpine`](https://github.com/varnish/docker-varnish/blob/68b666606150f9aa637a23d4358906eb6a409252/fresh/alpine/Dockerfile)
 
--	[`old`, `7.7.3`, `7.7`](https://github.com/varnish/docker-varnish/blob/ec128addad8eb92680ac7adb2f00f6a679a48be5/old/debian/Dockerfile)
+-	[`old`, `7.7.3`, `7.7`](https://github.com/varnish/docker-varnish/blob/68b666606150f9aa637a23d4358906eb6a409252/old/debian/Dockerfile)
 
--	[`old-alpine`, `7.7.3-alpine`, `7.7-alpine`](https://github.com/varnish/docker-varnish/blob/ec128addad8eb92680ac7adb2f00f6a679a48be5/old/alpine/Dockerfile)
+-	[`old-alpine`, `7.7.3-alpine`, `7.7-alpine`](https://github.com/varnish/docker-varnish/blob/68b666606150f9aa637a23d4358906eb6a409252/old/alpine/Dockerfile)
 
--	[`stable`, `6.0.16`, `6.0`](https://github.com/varnish/docker-varnish/blob/2c2b9d92008b7623bd837cbb542ae02061d9a598/stable/debian/Dockerfile)
+-	[`stable`, `6.0.16`, `6.0`](https://github.com/varnish/docker-varnish/blob/d41acec41c1251d0b512023abc7fd9cfd4a1490f/stable/debian/Dockerfile)
 
 # Quick reference (cont.)
 
