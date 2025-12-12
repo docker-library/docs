@@ -92,7 +92,7 @@ CMD ["java", "-jar", "/opt/app/japp.jar"]
 If you want to place the jar file on the host file system instead of inside the container, you can mount the host path onto the container by using the following commands:
 
 ```dockerfile
-FROM %%IMAGE%%:25.0.2_13-jdk
+FROM %%IMAGE%%:25
 CMD ["java", "-jar", "/opt/app/japp.jar"]
 ```
 
