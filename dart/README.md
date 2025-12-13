@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `mips64le` builds of [the `dart` official image](https://hub.docker.com/_/dart) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,9 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.10.4-sdk`, `3.10-sdk`, `3-sdk`, `stable-sdk`, `sdk`, `3.10.4`, `3.10`, `3`, `stable`, `latest`](https://github.com/dart-lang/dart-docker/blob/468345e3481f707abb7e064c1308d8d93703266b/stable/trixie/Dockerfile)
-
--	[`3.11.0-200.1.beta-sdk`, `beta-sdk`, `3.11.0-200.1.beta`, `beta`](https://github.com/dart-lang/dart-docker/blob/468345e3481f707abb7e064c1308d8d93703266b/beta/trixie/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `mips64le` ARCHITECTURE
 
 # Quick reference (cont.)
 
