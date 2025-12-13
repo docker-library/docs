@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `i386` builds of [the `alt` official image](https://hub.docker.com/_/alt) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,11 +26,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`p10`](https://github.com/alt-cloud/docker-brew-alt/blob/ef522411b7245d758aa8c8a24a0575c742fac1a2/x86_64/Dockerfile)
+-	[`p10`](https://github.com/alt-cloud/docker-brew-alt/blob/ef522411b7245d758aa8c8a24a0575c742fac1a2/i586/Dockerfile)
 
--	[`sisyphus`](https://github.com/alt-cloud/docker-brew-alt/blob/f6fcb549885ee57d7bbb53a22484ee16cb9413b0/x86_64/Dockerfile)
+-	[`sisyphus`](https://github.com/alt-cloud/docker-brew-alt/blob/f6fcb549885ee57d7bbb53a22484ee16cb9413b0/i586/Dockerfile)
 
--	[`p11`, `latest`](https://github.com/alt-cloud/docker-brew-alt/blob/068702e0e800b291f7853380450a5557e56900c3/x86_64/Dockerfile)
+-	[`p11`, `latest`](https://github.com/alt-cloud/docker-brew-alt/blob/068702e0e800b291f7853380450a5557e56900c3/i586/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -73,7 +75,7 @@ As said above, Sisyphus is a frequently updated repository mainly designed for d
 
 # About this image
 
-The `alt:latest` tag will always point the latest stable release (which is, at the time of this writing, `alt:p9`).
+The `i386/alt:latest` tag will always point the latest stable release (which is, at the time of this writing, `i386/alt:p9`).
 
 ## How It's Made
 
