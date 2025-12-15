@@ -273,7 +273,7 @@ These variables are used in conjunction to define how Bonita should access the [
 
 The logger can be configured by mounting a volume on folder `/opt/bonita/conf/logs` containing the configuration files.
 
-the volume must contain the 2 files [log4j2-loggers.xml](https://raw.githubusercontent.com/bonitasoft/bonita-distrib/10.3.0/tomcat-resources/tomcat-distrib-for-bonita/src/main/resources/tomcat/server/conf/log4j2-loggers.xml) and [log4j2-appenders.xml](https://raw.githubusercontent.com/bonitasoft/bonita-distrib/10.3.0/docker/files/log4j2/log4j2-appenders.xml)
+the volume must contain the 2 files [log4j2-loggers.xml](https://raw.githubusercontent.com/bonitasoft/bonita-distrib/10.4.0/tomcat-resources/tomcat-distrib-for-bonita/src/main/resources/tomcat/server/conf/log4j2-loggers.xml) and [log4j2-appenders.xml](https://raw.githubusercontent.com/bonitasoft/bonita-distrib/10.4.0/docker/files/log4j2/log4j2-appenders.xml)
 
 Any change made to one of this 2 files is automatically hot-reloaded and taken into account immediately.
 
@@ -332,13 +332,13 @@ For updating from a version before 7.10.0, please refer to the [documentation](h
 -	Retrieve the last update tool archive from https://www.bonitasoft.com/downloads
 
 	```console
-	unzip bonita-update-tool-3.7.0.zip
+	unzip bonita-update-tool-3.8.0.zip
 	```
 
 -	Configure the update tool
 
 	```console
-	$ cd bonita-update-tool-3.7.0
+	$ cd bonita-update-tool-3.8.0
 	```
 
 	edit the update tool configuration file `Config.properties` to point towards the database.
@@ -367,7 +367,7 @@ For updating from a version before 7.10.0, please refer to the [documentation](h
 -	Launch the new container pointing towards the copy of the database.
 
 	```console
-	$ docker run --name=bonita --link mydbpostgres:postgres -e "DB_NAME=newbonitadb" -e "DB_USER=newbonitauser" -e "DB_PASS=newbonitapass" -d -p 8081:8080 bonita:2025.1-u0
+	$ docker run --name=bonita --link mydbpostgres:postgres -e "DB_NAME=newbonitadb" -e "DB_USER=newbonitauser" -e "DB_PASS=newbonitapass" -d -p 8081:8080 bonita:2025.2-u0
 	```
 
 For more details regarding Bonita update and for version before 7.10.0, see the [documentation](https://documentation.bonitasoft.com/bonita/latest/version-update/migrate-from-an-earlier-version-of-bonita).
