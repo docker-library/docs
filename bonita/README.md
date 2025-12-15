@@ -24,7 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2025.1-u0`, `2025.1`, `10.3.0`, `10.3`, `latest`](https://github.com/bonitasoft/bonita-distrib/blob/adca7d9251091cd02f3cde7c0a9cee0e1538c7a1/docker/Dockerfile)
+-	[`2025.2-u0`, `2025.2`, `10.4.0`, `10.4`, `latest`](https://github.com/bonitasoft/bonita-distrib/blob/d8bad3922968e531a671f74c0973f2d49d9c7457/docker/Dockerfile)
 
 # Quick reference (cont.)
 
