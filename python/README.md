@@ -28,21 +28,21 @@ WARNING:
 
 ## Simple Tags
 
--	[`3.15.0a2-trixie`, `3.15-rc-trixie`](https://github.com/docker-library/python/blob/625c8d74e2f24d9d4d5eae3f78eeaa06bc27e67d/3.15-rc/trixie/Dockerfile)
+-	[`3.15.0a3-trixie`, `3.15-rc-trixie`](https://github.com/docker-library/python/blob/4f385dfe2f95c2be5863a4c9af7d78facbf0fbac/3.15-rc/trixie/Dockerfile)
 
--	[`3.15.0a2-slim-trixie`, `3.15-rc-slim-trixie`, `3.15.0a2-slim`, `3.15-rc-slim`](https://github.com/docker-library/python/blob/625c8d74e2f24d9d4d5eae3f78eeaa06bc27e67d/3.15-rc/slim-trixie/Dockerfile)
+-	[`3.15.0a3-slim-trixie`, `3.15-rc-slim-trixie`, `3.15.0a3-slim`, `3.15-rc-slim`](https://github.com/docker-library/python/blob/4f385dfe2f95c2be5863a4c9af7d78facbf0fbac/3.15-rc/slim-trixie/Dockerfile)
 
--	[`3.15.0a2-bookworm`, `3.15-rc-bookworm`](https://github.com/docker-library/python/blob/625c8d74e2f24d9d4d5eae3f78eeaa06bc27e67d/3.15-rc/bookworm/Dockerfile)
+-	[`3.15.0a3-bookworm`, `3.15-rc-bookworm`](https://github.com/docker-library/python/blob/4f385dfe2f95c2be5863a4c9af7d78facbf0fbac/3.15-rc/bookworm/Dockerfile)
 
--	[`3.15.0a2-slim-bookworm`, `3.15-rc-slim-bookworm`](https://github.com/docker-library/python/blob/625c8d74e2f24d9d4d5eae3f78eeaa06bc27e67d/3.15-rc/slim-bookworm/Dockerfile)
+-	[`3.15.0a3-slim-bookworm`, `3.15-rc-slim-bookworm`](https://github.com/docker-library/python/blob/4f385dfe2f95c2be5863a4c9af7d78facbf0fbac/3.15-rc/slim-bookworm/Dockerfile)
 
--	[`3.15.0a2-alpine3.23`, `3.15-rc-alpine3.23`, `3.15.0a2-alpine`, `3.15-rc-alpine`](https://github.com/docker-library/python/blob/aad39d215779f27b410b25f612b6680a75781edb/3.15-rc/alpine3.23/Dockerfile)
+-	[`3.15.0a3-alpine3.23`, `3.15-rc-alpine3.23`, `3.15.0a3-alpine`, `3.15-rc-alpine`](https://github.com/docker-library/python/blob/4f385dfe2f95c2be5863a4c9af7d78facbf0fbac/3.15-rc/alpine3.23/Dockerfile)
 
--	[`3.15.0a2-alpine3.22`, `3.15-rc-alpine3.22`](https://github.com/docker-library/python/blob/625c8d74e2f24d9d4d5eae3f78eeaa06bc27e67d/3.15-rc/alpine3.22/Dockerfile)
+-	[`3.15.0a3-alpine3.22`, `3.15-rc-alpine3.22`](https://github.com/docker-library/python/blob/4f385dfe2f95c2be5863a4c9af7d78facbf0fbac/3.15-rc/alpine3.22/Dockerfile)
 
--	[`3.15.0a2-windowsservercore-ltsc2025`, `3.15-rc-windowsservercore-ltsc2025`](https://github.com/docker-library/python/blob/625c8d74e2f24d9d4d5eae3f78eeaa06bc27e67d/3.15-rc/windows/windowsservercore-ltsc2025/Dockerfile)
+-	[`3.15.0a3-windowsservercore-ltsc2025`, `3.15-rc-windowsservercore-ltsc2025`](https://github.com/docker-library/python/blob/4f385dfe2f95c2be5863a4c9af7d78facbf0fbac/3.15-rc/windows/windowsservercore-ltsc2025/Dockerfile)
 
--	[`3.15.0a2-windowsservercore-ltsc2022`, `3.15-rc-windowsservercore-ltsc2022`](https://github.com/docker-library/python/blob/625c8d74e2f24d9d4d5eae3f78eeaa06bc27e67d/3.15-rc/windows/windowsservercore-ltsc2022/Dockerfile)
+-	[`3.15.0a3-windowsservercore-ltsc2022`, `3.15-rc-windowsservercore-ltsc2022`](https://github.com/docker-library/python/blob/4f385dfe2f95c2be5863a4c9af7d78facbf0fbac/3.15-rc/windows/windowsservercore-ltsc2022/Dockerfile)
 
 -	[`3.14.2-trixie`, `3.14-trixie`, `3-trixie`, `trixie`](https://github.com/docker-library/python/blob/2fc7ce5fa65ed3321256f9b45054733a6958aebe/3.14/trixie/Dockerfile)
 
@@ -114,16 +114,16 @@ WARNING:
 
 ## Shared Tags
 
--	`3.15.0a2`, `3.15-rc`:
+-	`3.15.0a3`, `3.15-rc`:
 
-	-	[`3.15.0a2-trixie`](https://github.com/docker-library/python/blob/625c8d74e2f24d9d4d5eae3f78eeaa06bc27e67d/3.15-rc/trixie/Dockerfile)
-	-	[`3.15.0a2-windowsservercore-ltsc2025`](https://github.com/docker-library/python/blob/625c8d74e2f24d9d4d5eae3f78eeaa06bc27e67d/3.15-rc/windows/windowsservercore-ltsc2025/Dockerfile)
-	-	[`3.15.0a2-windowsservercore-ltsc2022`](https://github.com/docker-library/python/blob/625c8d74e2f24d9d4d5eae3f78eeaa06bc27e67d/3.15-rc/windows/windowsservercore-ltsc2022/Dockerfile)
+	-	[`3.15.0a3-trixie`](https://github.com/docker-library/python/blob/4f385dfe2f95c2be5863a4c9af7d78facbf0fbac/3.15-rc/trixie/Dockerfile)
+	-	[`3.15.0a3-windowsservercore-ltsc2025`](https://github.com/docker-library/python/blob/4f385dfe2f95c2be5863a4c9af7d78facbf0fbac/3.15-rc/windows/windowsservercore-ltsc2025/Dockerfile)
+	-	[`3.15.0a3-windowsservercore-ltsc2022`](https://github.com/docker-library/python/blob/4f385dfe2f95c2be5863a4c9af7d78facbf0fbac/3.15-rc/windows/windowsservercore-ltsc2022/Dockerfile)
 
--	`3.15.0a2-windowsservercore`, `3.15-rc-windowsservercore`:
+-	`3.15.0a3-windowsservercore`, `3.15-rc-windowsservercore`:
 
-	-	[`3.15.0a2-windowsservercore-ltsc2025`](https://github.com/docker-library/python/blob/625c8d74e2f24d9d4d5eae3f78eeaa06bc27e67d/3.15-rc/windows/windowsservercore-ltsc2025/Dockerfile)
-	-	[`3.15.0a2-windowsservercore-ltsc2022`](https://github.com/docker-library/python/blob/625c8d74e2f24d9d4d5eae3f78eeaa06bc27e67d/3.15-rc/windows/windowsservercore-ltsc2022/Dockerfile)
+	-	[`3.15.0a3-windowsservercore-ltsc2025`](https://github.com/docker-library/python/blob/4f385dfe2f95c2be5863a4c9af7d78facbf0fbac/3.15-rc/windows/windowsservercore-ltsc2025/Dockerfile)
+	-	[`3.15.0a3-windowsservercore-ltsc2022`](https://github.com/docker-library/python/blob/4f385dfe2f95c2be5863a4c9af7d78facbf0fbac/3.15-rc/windows/windowsservercore-ltsc2022/Dockerfile)
 
 -	`3.14.2`, `3.14`, `3`, `latest`:
 

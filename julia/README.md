@@ -28,68 +28,68 @@ WARNING:
 
 ## Simple Tags
 
--	[`1.12.2-trixie`, `1.12-trixie`, `1-trixie`, `trixie`](https://github.com/docker-library/julia/blob/b755ce872b5ff0a2118840bc787b0832c8710eb6/stable/trixie/Dockerfile)
+-	[`1.12.3-trixie`, `1.12-trixie`, `1-trixie`, `trixie`](https://github.com/docker-library/julia/blob/4d469df64aeff0b7baf7470d1971c5f3cd185d23/stable/trixie/Dockerfile)
 
--	[`1.12.2-bookworm`, `1.12-bookworm`, `1-bookworm`, `bookworm`](https://github.com/docker-library/julia/blob/b755ce872b5ff0a2118840bc787b0832c8710eb6/stable/bookworm/Dockerfile)
+-	[`1.12.3-bookworm`, `1.12-bookworm`, `1-bookworm`, `bookworm`](https://github.com/docker-library/julia/blob/4d469df64aeff0b7baf7470d1971c5f3cd185d23/stable/bookworm/Dockerfile)
 
--	[`1.12.2-windowsservercore-ltsc2025`, `1.12-windowsservercore-ltsc2025`, `1-windowsservercore-ltsc2025`, `windowsservercore-ltsc2025`](https://github.com/docker-library/julia/blob/b755ce872b5ff0a2118840bc787b0832c8710eb6/stable/windows/servercore-ltsc2025/Dockerfile)
+-	[`1.12.3-windowsservercore-ltsc2025`, `1.12-windowsservercore-ltsc2025`, `1-windowsservercore-ltsc2025`, `windowsservercore-ltsc2025`](https://github.com/docker-library/julia/blob/4d469df64aeff0b7baf7470d1971c5f3cd185d23/stable/windows/servercore-ltsc2025/Dockerfile)
 
--	[`1.12.2-windowsservercore-ltsc2022`, `1.12-windowsservercore-ltsc2022`, `1-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`](https://github.com/docker-library/julia/blob/b755ce872b5ff0a2118840bc787b0832c8710eb6/stable/windows/servercore-ltsc2022/Dockerfile)
+-	[`1.12.3-windowsservercore-ltsc2022`, `1.12-windowsservercore-ltsc2022`, `1-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`](https://github.com/docker-library/julia/blob/4d469df64aeff0b7baf7470d1971c5f3cd185d23/stable/windows/servercore-ltsc2022/Dockerfile)
 
--	[`1.10.10-trixie`, `1.10-trixie`](https://github.com/docker-library/julia/blob/b755ce872b5ff0a2118840bc787b0832c8710eb6/1.10/trixie/Dockerfile)
+-	[`1.10.10-trixie`, `1.10-trixie`](https://github.com/docker-library/julia/blob/4d469df64aeff0b7baf7470d1971c5f3cd185d23/1.10/trixie/Dockerfile)
 
--	[`1.10.10-bookworm`, `1.10-bookworm`](https://github.com/docker-library/julia/blob/b755ce872b5ff0a2118840bc787b0832c8710eb6/1.10/bookworm/Dockerfile)
+-	[`1.10.10-bookworm`, `1.10-bookworm`](https://github.com/docker-library/julia/blob/4d469df64aeff0b7baf7470d1971c5f3cd185d23/1.10/bookworm/Dockerfile)
 
--	[`1.10.10-alpine3.23`, `1.10-alpine3.23`, `1.10.10-alpine`, `1.10-alpine`](https://github.com/docker-library/julia/blob/b755ce872b5ff0a2118840bc787b0832c8710eb6/1.10/alpine3.23/Dockerfile)
+-	[`1.10.10-alpine3.23`, `1.10-alpine3.23`, `1.10.10-alpine`, `1.10-alpine`](https://github.com/docker-library/julia/blob/4d469df64aeff0b7baf7470d1971c5f3cd185d23/1.10/alpine3.23/Dockerfile)
 
--	[`1.10.10-alpine3.22`, `1.10-alpine3.22`](https://github.com/docker-library/julia/blob/b755ce872b5ff0a2118840bc787b0832c8710eb6/1.10/alpine3.22/Dockerfile)
+-	[`1.10.10-alpine3.22`, `1.10-alpine3.22`](https://github.com/docker-library/julia/blob/4d469df64aeff0b7baf7470d1971c5f3cd185d23/1.10/alpine3.22/Dockerfile)
 
--	[`1.10.10-windowsservercore-ltsc2025`, `1.10-windowsservercore-ltsc2025`](https://github.com/docker-library/julia/blob/b755ce872b5ff0a2118840bc787b0832c8710eb6/1.10/windows/servercore-ltsc2025/Dockerfile)
+-	[`1.10.10-windowsservercore-ltsc2025`, `1.10-windowsservercore-ltsc2025`](https://github.com/docker-library/julia/blob/4d469df64aeff0b7baf7470d1971c5f3cd185d23/1.10/windows/servercore-ltsc2025/Dockerfile)
 
--	[`1.10.10-windowsservercore-ltsc2022`, `1.10-windowsservercore-ltsc2022`](https://github.com/docker-library/julia/blob/b755ce872b5ff0a2118840bc787b0832c8710eb6/1.10/windows/servercore-ltsc2022/Dockerfile)
+-	[`1.10.10-windowsservercore-ltsc2022`, `1.10-windowsservercore-ltsc2022`](https://github.com/docker-library/julia/blob/4d469df64aeff0b7baf7470d1971c5f3cd185d23/1.10/windows/servercore-ltsc2022/Dockerfile)
 
--	[`1.13.0-alpha2-trixie`, `1.13-rc-trixie`, `rc-trixie`](https://github.com/docker-library/julia/blob/b755ce872b5ff0a2118840bc787b0832c8710eb6/rc/trixie/Dockerfile)
+-	[`1.13.0-alpha2-trixie`, `1.13-rc-trixie`, `rc-trixie`](https://github.com/docker-library/julia/blob/4d469df64aeff0b7baf7470d1971c5f3cd185d23/rc/trixie/Dockerfile)
 
--	[`1.13.0-alpha2-bookworm`, `1.13-rc-bookworm`, `rc-bookworm`](https://github.com/docker-library/julia/blob/b755ce872b5ff0a2118840bc787b0832c8710eb6/rc/bookworm/Dockerfile)
+-	[`1.13.0-alpha2-bookworm`, `1.13-rc-bookworm`, `rc-bookworm`](https://github.com/docker-library/julia/blob/4d469df64aeff0b7baf7470d1971c5f3cd185d23/rc/bookworm/Dockerfile)
 
--	[`1.13.0-alpha2-windowsservercore-ltsc2025`, `1.13-rc-windowsservercore-ltsc2025`, `rc-windowsservercore-ltsc2025`](https://github.com/docker-library/julia/blob/b755ce872b5ff0a2118840bc787b0832c8710eb6/rc/windows/servercore-ltsc2025/Dockerfile)
+-	[`1.13.0-alpha2-windowsservercore-ltsc2025`, `1.13-rc-windowsservercore-ltsc2025`, `rc-windowsservercore-ltsc2025`](https://github.com/docker-library/julia/blob/4d469df64aeff0b7baf7470d1971c5f3cd185d23/rc/windows/servercore-ltsc2025/Dockerfile)
 
--	[`1.13.0-alpha2-windowsservercore-ltsc2022`, `1.13-rc-windowsservercore-ltsc2022`, `rc-windowsservercore-ltsc2022`](https://github.com/docker-library/julia/blob/b755ce872b5ff0a2118840bc787b0832c8710eb6/rc/windows/servercore-ltsc2022/Dockerfile)
+-	[`1.13.0-alpha2-windowsservercore-ltsc2022`, `1.13-rc-windowsservercore-ltsc2022`, `rc-windowsservercore-ltsc2022`](https://github.com/docker-library/julia/blob/4d469df64aeff0b7baf7470d1971c5f3cd185d23/rc/windows/servercore-ltsc2022/Dockerfile)
 
 ## Shared Tags
 
--	`1.12.2`, `1.12`, `1`, `latest`:
+-	`1.12.3`, `1.12`, `1`, `latest`:
 
-	-	[`1.12.2-trixie`](https://github.com/docker-library/julia/blob/b755ce872b5ff0a2118840bc787b0832c8710eb6/stable/trixie/Dockerfile)
-	-	[`1.12.2-windowsservercore-ltsc2025`](https://github.com/docker-library/julia/blob/b755ce872b5ff0a2118840bc787b0832c8710eb6/stable/windows/servercore-ltsc2025/Dockerfile)
-	-	[`1.12.2-windowsservercore-ltsc2022`](https://github.com/docker-library/julia/blob/b755ce872b5ff0a2118840bc787b0832c8710eb6/stable/windows/servercore-ltsc2022/Dockerfile)
+	-	[`1.12.3-trixie`](https://github.com/docker-library/julia/blob/4d469df64aeff0b7baf7470d1971c5f3cd185d23/stable/trixie/Dockerfile)
+	-	[`1.12.3-windowsservercore-ltsc2025`](https://github.com/docker-library/julia/blob/4d469df64aeff0b7baf7470d1971c5f3cd185d23/stable/windows/servercore-ltsc2025/Dockerfile)
+	-	[`1.12.3-windowsservercore-ltsc2022`](https://github.com/docker-library/julia/blob/4d469df64aeff0b7baf7470d1971c5f3cd185d23/stable/windows/servercore-ltsc2022/Dockerfile)
 
--	`1.12.2-windowsservercore`, `1.12-windowsservercore`, `1-windowsservercore`, `windowsservercore`:
+-	`1.12.3-windowsservercore`, `1.12-windowsservercore`, `1-windowsservercore`, `windowsservercore`:
 
-	-	[`1.12.2-windowsservercore-ltsc2025`](https://github.com/docker-library/julia/blob/b755ce872b5ff0a2118840bc787b0832c8710eb6/stable/windows/servercore-ltsc2025/Dockerfile)
-	-	[`1.12.2-windowsservercore-ltsc2022`](https://github.com/docker-library/julia/blob/b755ce872b5ff0a2118840bc787b0832c8710eb6/stable/windows/servercore-ltsc2022/Dockerfile)
+	-	[`1.12.3-windowsservercore-ltsc2025`](https://github.com/docker-library/julia/blob/4d469df64aeff0b7baf7470d1971c5f3cd185d23/stable/windows/servercore-ltsc2025/Dockerfile)
+	-	[`1.12.3-windowsservercore-ltsc2022`](https://github.com/docker-library/julia/blob/4d469df64aeff0b7baf7470d1971c5f3cd185d23/stable/windows/servercore-ltsc2022/Dockerfile)
 
 -	`1.10.10`, `1.10`:
 
-	-	[`1.10.10-trixie`](https://github.com/docker-library/julia/blob/b755ce872b5ff0a2118840bc787b0832c8710eb6/1.10/trixie/Dockerfile)
-	-	[`1.10.10-windowsservercore-ltsc2025`](https://github.com/docker-library/julia/blob/b755ce872b5ff0a2118840bc787b0832c8710eb6/1.10/windows/servercore-ltsc2025/Dockerfile)
-	-	[`1.10.10-windowsservercore-ltsc2022`](https://github.com/docker-library/julia/blob/b755ce872b5ff0a2118840bc787b0832c8710eb6/1.10/windows/servercore-ltsc2022/Dockerfile)
+	-	[`1.10.10-trixie`](https://github.com/docker-library/julia/blob/4d469df64aeff0b7baf7470d1971c5f3cd185d23/1.10/trixie/Dockerfile)
+	-	[`1.10.10-windowsservercore-ltsc2025`](https://github.com/docker-library/julia/blob/4d469df64aeff0b7baf7470d1971c5f3cd185d23/1.10/windows/servercore-ltsc2025/Dockerfile)
+	-	[`1.10.10-windowsservercore-ltsc2022`](https://github.com/docker-library/julia/blob/4d469df64aeff0b7baf7470d1971c5f3cd185d23/1.10/windows/servercore-ltsc2022/Dockerfile)
 
 -	`1.10.10-windowsservercore`, `1.10-windowsservercore`:
 
-	-	[`1.10.10-windowsservercore-ltsc2025`](https://github.com/docker-library/julia/blob/b755ce872b5ff0a2118840bc787b0832c8710eb6/1.10/windows/servercore-ltsc2025/Dockerfile)
-	-	[`1.10.10-windowsservercore-ltsc2022`](https://github.com/docker-library/julia/blob/b755ce872b5ff0a2118840bc787b0832c8710eb6/1.10/windows/servercore-ltsc2022/Dockerfile)
+	-	[`1.10.10-windowsservercore-ltsc2025`](https://github.com/docker-library/julia/blob/4d469df64aeff0b7baf7470d1971c5f3cd185d23/1.10/windows/servercore-ltsc2025/Dockerfile)
+	-	[`1.10.10-windowsservercore-ltsc2022`](https://github.com/docker-library/julia/blob/4d469df64aeff0b7baf7470d1971c5f3cd185d23/1.10/windows/servercore-ltsc2022/Dockerfile)
 
 -	`1.13.0-alpha2`, `1.13-rc`, `rc`:
 
-	-	[`1.13.0-alpha2-trixie`](https://github.com/docker-library/julia/blob/b755ce872b5ff0a2118840bc787b0832c8710eb6/rc/trixie/Dockerfile)
-	-	[`1.13.0-alpha2-windowsservercore-ltsc2025`](https://github.com/docker-library/julia/blob/b755ce872b5ff0a2118840bc787b0832c8710eb6/rc/windows/servercore-ltsc2025/Dockerfile)
-	-	[`1.13.0-alpha2-windowsservercore-ltsc2022`](https://github.com/docker-library/julia/blob/b755ce872b5ff0a2118840bc787b0832c8710eb6/rc/windows/servercore-ltsc2022/Dockerfile)
+	-	[`1.13.0-alpha2-trixie`](https://github.com/docker-library/julia/blob/4d469df64aeff0b7baf7470d1971c5f3cd185d23/rc/trixie/Dockerfile)
+	-	[`1.13.0-alpha2-windowsservercore-ltsc2025`](https://github.com/docker-library/julia/blob/4d469df64aeff0b7baf7470d1971c5f3cd185d23/rc/windows/servercore-ltsc2025/Dockerfile)
+	-	[`1.13.0-alpha2-windowsservercore-ltsc2022`](https://github.com/docker-library/julia/blob/4d469df64aeff0b7baf7470d1971c5f3cd185d23/rc/windows/servercore-ltsc2022/Dockerfile)
 
 -	`1.13.0-alpha2-windowsservercore`, `1.13-rc-windowsservercore`, `rc-windowsservercore`:
 
-	-	[`1.13.0-alpha2-windowsservercore-ltsc2025`](https://github.com/docker-library/julia/blob/b755ce872b5ff0a2118840bc787b0832c8710eb6/rc/windows/servercore-ltsc2025/Dockerfile)
-	-	[`1.13.0-alpha2-windowsservercore-ltsc2022`](https://github.com/docker-library/julia/blob/b755ce872b5ff0a2118840bc787b0832c8710eb6/rc/windows/servercore-ltsc2022/Dockerfile)
+	-	[`1.13.0-alpha2-windowsservercore-ltsc2025`](https://github.com/docker-library/julia/blob/4d469df64aeff0b7baf7470d1971c5f3cd185d23/rc/windows/servercore-ltsc2025/Dockerfile)
+	-	[`1.13.0-alpha2-windowsservercore-ltsc2022`](https://github.com/docker-library/julia/blob/4d469df64aeff0b7baf7470d1971c5f3cd185d23/rc/windows/servercore-ltsc2022/Dockerfile)
 
 # Quick reference (cont.)
 
