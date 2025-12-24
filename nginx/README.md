@@ -38,19 +38,19 @@ WARNING:
 
 -	[`1.29.4-alpine-otel`, `mainline-alpine-otel`, `1-alpine-otel`, `1.29-alpine-otel`, `alpine-otel`, `1.29.4-alpine3.23-otel`, `mainline-alpine3.23-otel`, `1-alpine3.23-otel`, `1.29-alpine3.23-otel`, `alpine3.23-otel`](https://github.com/nginx/docker-nginx/blob/afa829ae8cd9e25cf539cb03167dff1162f852cb/mainline/alpine-otel/Dockerfile)
 
--	[`1.28.0`, `stable`, `1.28`, `1.28.0-bookworm`, `stable-bookworm`, `1.28-bookworm`](https://github.com/nginx/docker-nginx/blob/9b549fdf936778810dbe95a4813899c60444ef1c/stable/debian/Dockerfile)
+-	[`1.28.1`, `stable`, `1.28`, `1.28.1-trixie`, `stable-trixie`, `1.28-trixie`](https://github.com/nginx/docker-nginx/blob/50dc9c37b0668fd9e7760c9841c3bef50e8d4227/stable/debian/Dockerfile)
 
--	[`1.28.0-perl`, `stable-perl`, `1.28-perl`, `1.28.0-bookworm-perl`, `stable-bookworm-perl`, `1.28-bookworm-perl`](https://github.com/nginx/docker-nginx/blob/7f1d49f6f222f7e588a9066fd53a0ce43c3466a5/stable/debian-perl/Dockerfile)
+-	[`1.28.1-perl`, `stable-perl`, `1.28-perl`, `1.28.1-trixie-perl`, `stable-trixie-perl`, `1.28-trixie-perl`](https://github.com/nginx/docker-nginx/blob/50dc9c37b0668fd9e7760c9841c3bef50e8d4227/stable/debian-perl/Dockerfile)
 
--	[`1.28.0-otel`, `stable-otel`, `1.28-otel`, `1.28.0-bookworm-otel`, `stable-bookworm-otel`, `1.28-bookworm-otel`](https://github.com/nginx/docker-nginx/blob/7f1d49f6f222f7e588a9066fd53a0ce43c3466a5/stable/debian-otel/Dockerfile)
+-	[`1.28.1-otel`, `stable-otel`, `1.28-otel`, `1.28.1-trixie-otel`, `stable-trixie-otel`, `1.28-trixie-otel`](https://github.com/nginx/docker-nginx/blob/50dc9c37b0668fd9e7760c9841c3bef50e8d4227/stable/debian-otel/Dockerfile)
 
--	[`1.28.0-alpine`, `stable-alpine`, `1.28-alpine`, `1.28.0-alpine3.21`, `stable-alpine3.21`, `1.28-alpine3.21`](https://github.com/nginx/docker-nginx/blob/7f1d49f6f222f7e588a9066fd53a0ce43c3466a5/stable/alpine/Dockerfile)
+-	[`1.28.1-alpine`, `stable-alpine`, `1.28-alpine`, `1.28.1-alpine3.23`, `stable-alpine3.23`, `1.28-alpine3.23`](https://github.com/nginx/docker-nginx/blob/50dc9c37b0668fd9e7760c9841c3bef50e8d4227/stable/alpine/Dockerfile)
 
--	[`1.28.0-alpine-perl`, `stable-alpine-perl`, `1.28-alpine-perl`, `1.28.0-alpine3.21-perl`, `stable-alpine3.21-perl`, `1.28-alpine3.21-perl`](https://github.com/nginx/docker-nginx/blob/7f1d49f6f222f7e588a9066fd53a0ce43c3466a5/stable/alpine-perl/Dockerfile)
+-	[`1.28.1-alpine-perl`, `stable-alpine-perl`, `1.28-alpine-perl`, `1.28.1-alpine3.23-perl`, `stable-alpine3.23-perl`, `1.28-alpine3.23-perl`](https://github.com/nginx/docker-nginx/blob/50dc9c37b0668fd9e7760c9841c3bef50e8d4227/stable/alpine-perl/Dockerfile)
 
--	[`1.28.0-alpine-slim`, `stable-alpine-slim`, `1.28-alpine-slim`, `1.28.0-alpine3.21-slim`, `stable-alpine3.21-slim`, `1.28-alpine3.21-slim`](https://github.com/nginx/docker-nginx/blob/9b549fdf936778810dbe95a4813899c60444ef1c/stable/alpine-slim/Dockerfile)
+-	[`1.28.1-alpine-slim`, `stable-alpine-slim`, `1.28-alpine-slim`, `1.28.1-alpine3.23-slim`, `stable-alpine3.23-slim`, `1.28-alpine3.23-slim`](https://github.com/nginx/docker-nginx/blob/50dc9c37b0668fd9e7760c9841c3bef50e8d4227/stable/alpine-slim/Dockerfile)
 
--	[`1.28.0-alpine-otel`, `stable-alpine-otel`, `1.28-alpine-otel`, `1.28.0-alpine3.21-otel`, `stable-alpine3.21-otel`, `1.28-alpine3.21-otel`](https://github.com/nginx/docker-nginx/blob/7f1d49f6f222f7e588a9066fd53a0ce43c3466a5/stable/alpine-otel/Dockerfile)
+-	[`1.28.1-alpine-otel`, `stable-alpine-otel`, `1.28-alpine-otel`, `1.28.1-alpine3.23-otel`, `stable-alpine3.23-otel`, `1.28-alpine3.23-otel`](https://github.com/nginx/docker-nginx/blob/50dc9c37b0668fd9e7760c9841c3bef50e8d4227/stable/alpine-otel/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -58,7 +58,7 @@ WARNING:
 	[https://github.com/nginxinc/docker-nginx/issues](https://github.com/nginxinc/docker-nginx/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/nginx/), [`arm32v5`](https://hub.docker.com/r/arm32v5/nginx/), [`arm32v6`](https://hub.docker.com/r/arm32v6/nginx/), [`arm32v7`](https://hub.docker.com/r/arm32v7/nginx/), [`arm64v8`](https://hub.docker.com/r/arm64v8/nginx/), [`i386`](https://hub.docker.com/r/i386/nginx/), [`mips64le`](https://hub.docker.com/r/mips64le/nginx/), [`ppc64le`](https://hub.docker.com/r/ppc64le/nginx/), [`riscv64`](https://hub.docker.com/r/riscv64/nginx/), [`s390x`](https://hub.docker.com/r/s390x/nginx/)
+	[`amd64`](https://hub.docker.com/r/amd64/nginx/), [`arm32v5`](https://hub.docker.com/r/arm32v5/nginx/), [`arm32v6`](https://hub.docker.com/r/arm32v6/nginx/), [`arm32v7`](https://hub.docker.com/r/arm32v7/nginx/), [`arm64v8`](https://hub.docker.com/r/arm64v8/nginx/), [`i386`](https://hub.docker.com/r/i386/nginx/), [`ppc64le`](https://hub.docker.com/r/ppc64le/nginx/), [`riscv64`](https://hub.docker.com/r/riscv64/nginx/), [`s390x`](https://hub.docker.com/r/s390x/nginx/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/nginx/` directory](https://github.com/docker-library/repo-info/blob/master/repos/nginx) ([history](https://github.com/docker-library/repo-info/commits/master/repos/nginx))  
@@ -268,7 +268,7 @@ The `nginx` images come in many flavors, each designed for a specific use case.
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like bookworm or trixie in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+Some of these tags may have names like trixie in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 ## `nginx:<version>-perl` / `nginx:<version>-alpine-perl`
 

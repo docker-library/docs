@@ -24,13 +24,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2025.6.0-developer`, `2025.6-developer`, `developer`](https://github.com/SonarSource/docker-sonarqube/blob/90fde0d5acb6278517a7de18ce162fc83edf7efe/commercial-editions/developer/Dockerfile)
+-	[`2025.6.1-developer`, `2025.6-developer`, `developer`](https://github.com/SonarSource/docker-sonarqube/blob/25640e1874256746c8df7134fa5042f0721cc3f2/commercial-editions/developer/Dockerfile)
 
--	[`2025.6.0-enterprise`, `2025.6-enterprise`, `enterprise`](https://github.com/SonarSource/docker-sonarqube/blob/90fde0d5acb6278517a7de18ce162fc83edf7efe/commercial-editions/enterprise/Dockerfile)
+-	[`2025.6.1-enterprise`, `2025.6-enterprise`, `enterprise`](https://github.com/SonarSource/docker-sonarqube/blob/25640e1874256746c8df7134fa5042f0721cc3f2/commercial-editions/enterprise/Dockerfile)
 
--	[`2025.6.0-datacenter-app`, `2025.6-datacenter-app`, `datacenter-app`](https://github.com/SonarSource/docker-sonarqube/blob/90fde0d5acb6278517a7de18ce162fc83edf7efe/commercial-editions/datacenter/app/Dockerfile)
+-	[`2025.6.1-datacenter-app`, `2025.6-datacenter-app`, `datacenter-app`](https://github.com/SonarSource/docker-sonarqube/blob/25640e1874256746c8df7134fa5042f0721cc3f2/commercial-editions/datacenter/app/Dockerfile)
 
--	[`2025.6.0-datacenter-search`, `2025.6-datacenter-search`, `datacenter-search`](https://github.com/SonarSource/docker-sonarqube/blob/90fde0d5acb6278517a7de18ce162fc83edf7efe/commercial-editions/datacenter/search/Dockerfile)
+-	[`2025.6.1-datacenter-search`, `2025.6-datacenter-search`, `datacenter-search`](https://github.com/SonarSource/docker-sonarqube/blob/25640e1874256746c8df7134fa5042f0721cc3f2/commercial-editions/datacenter/search/Dockerfile)
 
 -	[`2025.4.4-developer`, `2025.4-developer`, `2025.4-lta-developer`](https://github.com/SonarSource/docker-sonarqube/blob/b366d18634f02e45e6dc4d28151db6704b0630c8/commercial-editions/developer/Dockerfile)
 
