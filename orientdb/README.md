@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.2.47`, `3.2`, `latest`](https://github.com/orientechnologies/orientdb-docker/blob/5a8dd5d2a73d5d627eda912ba81ba6d772c49e9b/release/3.2.x/3.2.47/Dockerfile)
+-	[`3.2.48`, `3.2`, `latest`](https://github.com/orientechnologies/orientdb-docker/blob/e081c484b836a4f433bd496d51e5b9175b6874c1/release/3.2.x/3.2.48/Dockerfile)
 
--	[`3.2.47-tp3`, `3.2-tp3`](https://github.com/orientechnologies/orientdb-docker/blob/5a8dd5d2a73d5d627eda912ba81ba6d772c49e9b/release/3.2.x/3.2.47-tp3/Dockerfile)
+-	[`3.2.48-tp3`, `3.2-tp3`](https://github.com/orientechnologies/orientdb-docker/blob/e081c484b836a4f433bd496d51e5b9175b6874c1/release/3.2.x/3.2.48-tp3/Dockerfile)
 
 -	[`3.1.20`, `3.1`](https://github.com/orientechnologies/orientdb-docker/blob/a8a42acbe19dad60a051afe08ed625e66587dd37/release/3.1.x/3.1.20/Dockerfile)
 
