@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `s390x` builds of [the `influxdb` official image](https://hub.docker.com/_/influxdb) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,41 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.12`, `1.12.2`](https://github.com/influxdata/influxdata-docker/blob/a501127168426f260dd1b2a6281f0be8a9a605bd/influxdb/1.12/Dockerfile)
-
--	[`1.12-alpine`, `1.12.2-alpine`](https://github.com/influxdata/influxdata-docker/blob/a501127168426f260dd1b2a6281f0be8a9a605bd/influxdb/1.12/alpine/Dockerfile)
-
--	[`1.12-data`, `1.12.2-data`, `data`](https://github.com/influxdata/influxdata-docker/blob/a501127168426f260dd1b2a6281f0be8a9a605bd/influxdb/1.12/data/Dockerfile)
-
--	[`1.12-data-alpine`, `1.12.2-data-alpine`, `data-alpine`](https://github.com/influxdata/influxdata-docker/blob/a501127168426f260dd1b2a6281f0be8a9a605bd/influxdb/1.12/data/alpine/Dockerfile)
-
--	[`1.12-meta`, `1.12.2-meta`, `meta`](https://github.com/influxdata/influxdata-docker/blob/a501127168426f260dd1b2a6281f0be8a9a605bd/influxdb/1.12/meta/Dockerfile)
-
--	[`1.12-meta-alpine`, `1.12.2-meta-alpine`, `meta-alpine`](https://github.com/influxdata/influxdata-docker/blob/a501127168426f260dd1b2a6281f0be8a9a605bd/influxdb/1.12/meta/alpine/Dockerfile)
-
--	[`1.11`, `1.11.8`](https://github.com/influxdata/influxdata-docker/blob/a501127168426f260dd1b2a6281f0be8a9a605bd/influxdb/1.11/Dockerfile)
-
--	[`1.11-alpine`, `1.11.8-alpine`](https://github.com/influxdata/influxdata-docker/blob/a501127168426f260dd1b2a6281f0be8a9a605bd/influxdb/1.11/alpine/Dockerfile)
-
--	[`1.11-data`, `1.11.9-data`](https://github.com/influxdata/influxdata-docker/blob/a501127168426f260dd1b2a6281f0be8a9a605bd/influxdb/1.11/data/Dockerfile)
-
--	[`1.11-data-alpine`, `1.11.9-data-alpine`](https://github.com/influxdata/influxdata-docker/blob/a501127168426f260dd1b2a6281f0be8a9a605bd/influxdb/1.11/data/alpine/Dockerfile)
-
--	[`1.11-meta`, `1.11.9-meta`](https://github.com/influxdata/influxdata-docker/blob/a501127168426f260dd1b2a6281f0be8a9a605bd/influxdb/1.11/meta/Dockerfile)
-
--	[`1.11-meta-alpine`, `1.11.9-meta-alpine`](https://github.com/influxdata/influxdata-docker/blob/a501127168426f260dd1b2a6281f0be8a9a605bd/influxdb/1.11/meta/alpine/Dockerfile)
-
--	[`2.7`, `2.7.12`](https://github.com/influxdata/influxdata-docker/blob/a501127168426f260dd1b2a6281f0be8a9a605bd/influxdb/2.7/Dockerfile)
-
--	[`2.7-alpine`, `2.7.12-alpine`](https://github.com/influxdata/influxdata-docker/blob/a501127168426f260dd1b2a6281f0be8a9a605bd/influxdb/2.7/alpine/Dockerfile)
-
--	[`2`, `2.8`, `2.8.0`, `latest`](https://github.com/influxdata/influxdata-docker/blob/a501127168426f260dd1b2a6281f0be8a9a605bd/influxdb/2.8/Dockerfile)
-
--	[`2-alpine`, `2.8-alpine`, `2.8.0-alpine`, `alpine`](https://github.com/influxdata/influxdata-docker/blob/a501127168426f260dd1b2a6281f0be8a9a605bd/influxdb/2.8/alpine/Dockerfile)
-
--	[`3-core`, `3.8-core`, `3.8.0-core`, `core`](https://github.com/influxdata/influxdata-docker/blob/a501127168426f260dd1b2a6281f0be8a9a605bd/influxdb/3.8-core/Dockerfile)
-
--	[`3-enterprise`, `3.8-enterprise`, `3.8.0-enterprise`, `enterprise`](https://github.com/influxdata/influxdata-docker/blob/a501127168426f260dd1b2a6281f0be8a9a605bd/influxdb/3.8-enterprise/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `s390x` ARCHITECTURE
 
 # Quick reference (cont.)
 
@@ -126,7 +94,7 @@ Alternatively, you can use the following command to start InfluxDB 3 Core:
 docker run --rm -p 8181:8181 \
   -v $PWD/data:/var/lib/influxdb3/data \
   -v $PWD/plugins:/var/lib/influxdb3/plugins \
-  influxdb:3-core influxdb3 serve \
+  s390x/influxdb:3-core influxdb3 serve \
     --node-id=my-node-0 \
     --object-store=file \
     --data-dir=/var/lib/influxdb3/data \
@@ -156,16 +124,16 @@ Use the following tools with InfluxDB 3 Core:
 Customize your instance with available [server options](https://docs.influxdata.com/influxdb3/core/reference/clis/influxdb3/serve/):
 
 ```bash
-   docker run --rm influxdb:3-core influxdb3 serve --help
+   docker run --rm s390x/influxdb:3-core influxdb3 serve --help
 ```
 
 ## Available InfluxDB variants
 
--	`influxdb:3-core` - **Latest InfluxDB OSS** (InfluxDB 3 Core)
--	`influxdb:2` - Previous generation OSS (InfluxDB v2)
--	`influxdb:1.11` - InfluxDB v1
+-	`s390x/influxdb:3-core` - **Latest InfluxDB OSS** (InfluxDB 3 Core)
+-	`s390x/influxdb:2` - Previous generation OSS (InfluxDB v2)
+-	`s390x/influxdb:1.11` - InfluxDB v1
 
-### InfluxDB 3 Core (`influxdb:3-core`) - Latest OSS
+### InfluxDB 3 Core (`s390x/influxdb:3-core`) - Latest OSS
 
 -	**Latest generation** using object storage with the InfluxDB 3 storage engine, Apache Arrow, and DataFusion SQL
 -	Sub-10ms queries and unlimited cardinality
@@ -174,20 +142,20 @@ Customize your instance with available [server options](https://docs.influxdata.
 -	Designed for real-time monitoring and recent data
 -	Includes InfluxDB v1 and v2 compatibility APIs
 
-### InfluxDB v2 (`influxdb:2`)
+### InfluxDB v2 (`s390x/influxdb:2`)
 
 -	Built on the TSM storage engine
 -	Supports Flux query language
 -	Integrated UI and dashboards
 -	Includes v1 compatibility API that supports InfluxQL
 
-### InfluxDB v1 (`influxdb:1.11`)
+### InfluxDB v1 (`s390x/influxdb:1.11`)
 
 -	Built on the TSM storage engine
 -	Original version with InfluxQL query language
 -	Proven stability for existing deployments
 
-### InfluxDB 3 Enterprise (license required) (`influxdb:3-enterprise`)
+### InfluxDB 3 Enterprise (license required) (`s390x/influxdb:3-enterprise`)
 
 Adds unlimited data retention, compaction, clustering, and high availability to InfluxDB 3 Core.
 
@@ -195,8 +163,8 @@ For setup instructions, see the [InfluxDB 3 Enterprise installation documentatio
 
 ### InfluxDB v1 Enterprise (license required)
 
--	`influxdb:1.11-data` - Data nodes for clustering
--	`influxdb:1.11-meta` - Meta nodes for cluster coordination (port 8091)
+-	`s390x/influxdb:1.11-data` - Data nodes for clustering
+-	`s390x/influxdb:1.11-meta` - Meta nodes for cluster coordination (port 8091)
 
 For setup instructions, see the [InfluxDB v1 Enterprise Docker documentation](https://docs.influxdata.com/enterprise_influxdb/v1/introduction/installation/docker/).
 
@@ -224,7 +192,7 @@ docker run -d -p 8086:8086 \
   -e DOCKER_INFLUXDB_INIT_PASSWORD=my-password \
   -e DOCKER_INFLUXDB_INIT_ORG=my-org \
   -e DOCKER_INFLUXDB_INIT_BUCKET=my-bucket \
-  influxdb:2
+  s390x/influxdb:2
 ```
 
 After the container starts, visit [http://localhost:8086](http://localhost:8086) to view the UI.
@@ -238,7 +206,7 @@ For detailed instructions, see the [InfluxDB v2 Docker Compose documentation](ht
 ```bash
 docker run -d -p 8086:8086 \
   -v $PWD:/var/lib/influxdb \
-  influxdb:1.11
+  s390x/influxdb:1.11
 ```
 
 This starts InfluxDB v1 with:
@@ -247,22 +215,6 @@ This starts InfluxDB v1 with:
 -	Data persisted to current directory
 
 For more information, see the [InfluxDB v1 Docker documentation](https://docs.influxdata.com/influxdb/v1/introduction/install/docker/). For v1 Enterprise installation, see the [InfluxDB Enterprise v1 documentation](https://docs.influxdata.com/enterprise_influxdb/v1/introduction/installation/docker/).
-
-# Image Variants
-
-The `influxdb` images come in many flavors, each designed for a specific use case.
-
-## `influxdb:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-## `influxdb:<version>-alpine`
-
-This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
-
-This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
-
-To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 # License
 
