@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `mips64le` builds of [the `haproxy` official image](https://hub.docker.com/_/haproxy) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,37 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.4-dev1`, `3.4-dev`, `3.4-dev1-trixie`, `3.4-dev-trixie`](https://github.com/docker-library/haproxy/blob/c4aae186fc7844beacf615a62c77760195abca7c/3.4/Dockerfile)
-
--	[`3.4-dev1-alpine`, `3.4-dev-alpine`, `3.4-dev1-alpine3.23`, `3.4-dev-alpine3.23`](https://github.com/docker-library/haproxy/blob/c4aae186fc7844beacf615a62c77760195abca7c/3.4/alpine/Dockerfile)
-
--	[`3.3.1`, `3.3`, `latest`, `3.3.1-trixie`, `3.3-trixie`, `trixie`](https://github.com/docker-library/haproxy/blob/bbce9cd3a36531337ab84dbf3f20bb4dad2b1245/3.3/Dockerfile)
-
--	[`3.3.1-alpine`, `3.3-alpine`, `alpine`, `3.3.1-alpine3.23`, `3.3-alpine3.23`, `alpine3.23`](https://github.com/docker-library/haproxy/blob/bbce9cd3a36531337ab84dbf3f20bb4dad2b1245/3.3/alpine/Dockerfile)
-
--	[`3.2.10`, `3.2`, `lts`, `3.2.10-trixie`, `3.2-trixie`, `lts-trixie`](https://github.com/docker-library/haproxy/blob/eb767ff57dbf4d8140b011b7721a007ee6692b2d/3.2/Dockerfile)
-
--	[`3.2.10-alpine`, `3.2-alpine`, `lts-alpine`, `3.2.10-alpine3.23`, `3.2-alpine3.23`, `lts-alpine3.23`](https://github.com/docker-library/haproxy/blob/eb767ff57dbf4d8140b011b7721a007ee6692b2d/3.2/alpine/Dockerfile)
-
--	[`3.1.12`, `3.1`, `3.1.12-trixie`, `3.1-trixie`](https://github.com/docker-library/haproxy/blob/6644abc009d377471fb93989b6a9336ce1840e00/3.1/Dockerfile)
-
--	[`3.1.12-alpine`, `3.1-alpine`, `3.1.12-alpine3.23`, `3.1-alpine3.23`](https://github.com/docker-library/haproxy/blob/6644abc009d377471fb93989b6a9336ce1840e00/3.1/alpine/Dockerfile)
-
--	[`3.0.14`, `3.0`, `3.0.14-trixie`, `3.0-trixie`](https://github.com/docker-library/haproxy/blob/e319b3b62ba8f22c1dfac44a81bb65a7ed67dac1/3.0/Dockerfile)
-
--	[`3.0.14-alpine`, `3.0-alpine`, `3.0.14-alpine3.23`, `3.0-alpine3.23`](https://github.com/docker-library/haproxy/blob/e319b3b62ba8f22c1dfac44a81bb65a7ed67dac1/3.0/alpine/Dockerfile)
-
--	[`2.8.18`, `2.8`, `2.8.18-trixie`, `2.8-trixie`](https://github.com/docker-library/haproxy/blob/439f95bfe2bd3e6c15dc852a16d8d2e333d7fa37/2.8/Dockerfile)
-
--	[`2.8.18-alpine`, `2.8-alpine`, `2.8.18-alpine3.23`, `2.8-alpine3.23`](https://github.com/docker-library/haproxy/blob/439f95bfe2bd3e6c15dc852a16d8d2e333d7fa37/2.8/alpine/Dockerfile)
-
--	[`2.6.23`, `2.6`, `2.6.23-trixie`, `2.6-trixie`](https://github.com/docker-library/haproxy/blob/3fc33290bfe9f17d101aa25f22fac86f4a71e571/2.6/Dockerfile)
-
--	[`2.6.23-alpine`, `2.6-alpine`, `2.6.23-alpine3.23`, `2.6-alpine3.23`](https://github.com/docker-library/haproxy/blob/bfbedbcbf4d99b4fd71bd9aedab5d9c42ce66005/2.6/alpine/Dockerfile)
-
--	[`2.4.30`, `2.4`, `2.4.30-trixie`, `2.4-trixie`](https://github.com/docker-library/haproxy/blob/3fc33290bfe9f17d101aa25f22fac86f4a71e571/2.4/Dockerfile)
-
--	[`2.4.30-alpine`, `2.4-alpine`, `2.4.30-alpine3.23`, `2.4-alpine3.23`](https://github.com/docker-library/haproxy/blob/bfbedbcbf4d99b4fd71bd9aedab5d9c42ce66005/2.4/alpine/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `mips64le` ARCHITECTURE
 
 # Quick reference (cont.)
 
@@ -94,7 +66,7 @@ It is also worth checking out the [`examples/` directory from upstream](http://g
 ## Create a `Dockerfile`
 
 ```dockerfile
-FROM haproxy:2.3
+FROM mips64le/haproxy:2.3
 COPY haproxy.cfg /usr/local/etc/haproxy/haproxy.cfg
 ```
 
@@ -123,7 +95,7 @@ You will need a kernel at [version 4.11 or newer](https://github.com/moby/moby/i
 ## Directly via bind mount
 
 ```console
-$ docker run -d --name my-running-haproxy -v /path/to/etc/haproxy:/usr/local/etc/haproxy:ro --sysctl net.ipv4.ip_unprivileged_port_start=0 haproxy:2.3
+$ docker run -d --name my-running-haproxy -v /path/to/etc/haproxy:/usr/local/etc/haproxy:ro --sysctl net.ipv4.ip_unprivileged_port_start=0 mips64le/haproxy:2.3
 ```
 
 Note that your host's `/path/to/etc/haproxy` folder should be populated with a file named `haproxy.cfg`. If this configuration file refers to any other files within that folder then you should ensure that they also exist (e.g. template files such as `400.http`, `404.http`, and so forth). However, many minimal configurations do not require any supporting files.
@@ -137,24 +109,6 @@ $ docker kill -s HUP my-running-haproxy
 ```
 
 The entrypoint script in the image checks for running the command `haproxy` and replaces it with `haproxy-systemd-wrapper` from HAProxy upstream which takes care of signal handling to do the graceful reload. Under the hood this uses the `-sf` option of `haproxy` so "there are two small windows of a few milliseconds each where it is possible that a few connection failures will be noticed during high loads" (see [Stopping and restarting HAProxy](http://www.haproxy.org/download/2.3/doc/management.txt)).
-
-# Image Variants
-
-The `haproxy` images come in many flavors, each designed for a specific use case.
-
-## `haproxy:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-Some of these tags may have names like trixie in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
-
-## `haproxy:<version>-alpine`
-
-This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
-
-This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
-
-To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 # License
 
