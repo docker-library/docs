@@ -6,7 +6,7 @@ By utilizing Dart's support for ahead-of-time (AOT) [compilation to executables]
 
 ## Using this image
 
-We recommend using small runtime images that leverage Dart's support for ahead-of-time (AOT) [compilation to executables](https://dart.dev/tools/dart-compile#exe). This enables creating small runtime images (~10 MB).
+We recommend using small runtime images that leverage Dart's support for ahead-of-time (AOT) [compilation to executables](https://dart.dev/tools/dart-build#build-a-cli-application). This enables creating small runtime images (~10 MB).
 
 ### Creating a Dart server app
 
@@ -42,7 +42,7 @@ The `Dockerfile` created by the `dart` tool performs two steps:
 2.	Assembles the runtime image by combining the compiled server with the Dart VM runtime and it's needed dependencies located in `/runtime/`.
 
 ```Dockerfile
-# Specify the Dart SDK base image version using dart:<version> (ex: dart:2.12)
+# Specify the Dart SDK base image version using dart:<version> (ex: dart:3.10)
 FROM dart:stable AS build
 
 # Resolve app dependencies.
@@ -54,13 +54,13 @@ RUN dart pub get
 COPY . .
 # Ensure packages are still up-to-date if anything has changed
 RUN dart pub get --offline
-RUN dart compile exe bin/server.dart -o bin/server
+RUN dart build cli --target bin/server.dart -o output
 
 # Build minimal serving image from AOT-compiled `/server` and required system
 # libraries and configuration files stored in `/runtime/` from the build stage.
 FROM scratch
 COPY --from=build /runtime/ /
-COPY --from=build /app/bin/server /app/bin/
+COPY --from=build /app/output/bundle/ /app/
 
 # Start server.
 EXPOSE 8080
