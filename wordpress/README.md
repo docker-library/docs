@@ -24,12 +24,6 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.9.0-php8.1-apache`, `6.9-php8.1-apache`, `6-php8.1-apache`, `php8.1-apache`, `6.9.0-php8.1`, `6.9-php8.1`, `6-php8.1`, `php8.1`](https://github.com/docker-library/wordpress/blob/c82afd7240879748c5e4a64e5fb04e2d34172686/latest/php8.1/apache/Dockerfile)
-
--	[`6.9.0-php8.1-fpm`, `6.9-php8.1-fpm`, `6-php8.1-fpm`, `php8.1-fpm`](https://github.com/docker-library/wordpress/blob/c82afd7240879748c5e4a64e5fb04e2d34172686/latest/php8.1/fpm/Dockerfile)
-
--	[`6.9.0-php8.1-fpm-alpine`, `6.9-php8.1-fpm-alpine`, `6-php8.1-fpm-alpine`, `php8.1-fpm-alpine`](https://github.com/docker-library/wordpress/blob/c82afd7240879748c5e4a64e5fb04e2d34172686/latest/php8.1/fpm-alpine/Dockerfile)
-
 -	[`6.9.0-php8.2-apache`, `6.9-php8.2-apache`, `6-php8.2-apache`, `php8.2-apache`, `6.9.0-php8.2`, `6.9-php8.2`, `6-php8.2`, `php8.2`](https://github.com/docker-library/wordpress/blob/c82afd7240879748c5e4a64e5fb04e2d34172686/latest/php8.2/apache/Dockerfile)
 
 -	[`6.9.0-php8.2-fpm`, `6.9-php8.2-fpm`, `6-php8.2-fpm`, `php8.2-fpm`](https://github.com/docker-library/wordpress/blob/c82afd7240879748c5e4a64e5fb04e2d34172686/latest/php8.2/fpm/Dockerfile)
@@ -53,8 +47,6 @@ WARNING:
 -	[`6.9.0-php8.5-fpm`, `6.9-php8.5-fpm`, `6-php8.5-fpm`, `php8.5-fpm`](https://github.com/docker-library/wordpress/blob/c82afd7240879748c5e4a64e5fb04e2d34172686/latest/php8.5/fpm/Dockerfile)
 
 -	[`6.9.0-php8.5-fpm-alpine`, `6.9-php8.5-fpm-alpine`, `6-php8.5-fpm-alpine`, `php8.5-fpm-alpine`](https://github.com/docker-library/wordpress/blob/c82afd7240879748c5e4a64e5fb04e2d34172686/latest/php8.5/fpm-alpine/Dockerfile)
-
--	[`cli-2.12.0-php8.1`, `cli-2.12-php8.1`, `cli-2-php8.1`, `cli-php8.1`](https://github.com/docker-library/wordpress/blob/b962e97ba0d6cfd8784a521fb9d05fc89aa180a9/cli/php8.1/alpine/Dockerfile)
 
 -	[`cli-2.12.0-php8.2`, `cli-2.12-php8.2`, `cli-2-php8.2`, `cli-php8.2`](https://github.com/docker-library/wordpress/blob/b962e97ba0d6cfd8784a521fb9d05fc89aa180a9/cli/php8.2/alpine/Dockerfile)
 
