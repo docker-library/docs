@@ -28,37 +28,37 @@ WARNING:
 
 ## Simple Tags
 
--	[`29.2.0-rc.1-cli`, `29-rc-cli`, `rc-cli`, `29.2.0-rc.1-cli-alpine3.23`](https://github.com/docker-library/docker/blob/4f2fad0a9da1d5c7b2e710c543c7fa1543bf1f2d/29-rc/cli/Dockerfile)
+-	[`29.2.0-rc.1-cli`, `29-rc-cli`, `rc-cli`, `29.2.0-rc.1-cli-alpine3.23`](https://github.com/docker-library/docker/blob/d9bae6519a1b0a9c73fab9a859e0c5c5131b0176/29-rc/cli/Dockerfile)
 
 -	[`29.2.0-rc.1-dind`, `29-rc-dind`, `rc-dind`, `29.2.0-rc.1-dind-alpine3.23`, `29.2.0-rc.1`, `29-rc`, `rc`, `29.2.0-rc.1-alpine3.23`](https://github.com/docker-library/docker/blob/4f2fad0a9da1d5c7b2e710c543c7fa1543bf1f2d/29-rc/dind/Dockerfile)
 
 -	[`29.2.0-rc.1-dind-rootless`, `29-rc-dind-rootless`, `rc-dind-rootless`](https://github.com/docker-library/docker/blob/4f2fad0a9da1d5c7b2e710c543c7fa1543bf1f2d/29-rc/dind-rootless/Dockerfile)
 
--	[`29.2.0-rc.1-windowsservercore-ltsc2025`, `29-rc-windowsservercore-ltsc2025`, `rc-windowsservercore-ltsc2025`](https://github.com/docker-library/docker/blob/4f2fad0a9da1d5c7b2e710c543c7fa1543bf1f2d/29-rc/windows/windowsservercore-ltsc2025/Dockerfile)
+-	[`29.2.0-rc.1-windowsservercore-ltsc2025`, `29-rc-windowsservercore-ltsc2025`, `rc-windowsservercore-ltsc2025`](https://github.com/docker-library/docker/blob/d9bae6519a1b0a9c73fab9a859e0c5c5131b0176/29-rc/windows/windowsservercore-ltsc2025/Dockerfile)
 
--	[`29.2.0-rc.1-windowsservercore-ltsc2022`, `29-rc-windowsservercore-ltsc2022`, `rc-windowsservercore-ltsc2022`](https://github.com/docker-library/docker/blob/4f2fad0a9da1d5c7b2e710c543c7fa1543bf1f2d/29-rc/windows/windowsservercore-ltsc2022/Dockerfile)
+-	[`29.2.0-rc.1-windowsservercore-ltsc2022`, `29-rc-windowsservercore-ltsc2022`, `rc-windowsservercore-ltsc2022`](https://github.com/docker-library/docker/blob/d9bae6519a1b0a9c73fab9a859e0c5c5131b0176/29-rc/windows/windowsservercore-ltsc2022/Dockerfile)
 
--	[`29.1.3-cli`, `29.1-cli`, `29-cli`, `cli`, `29.1.3-cli-alpine3.23`](https://github.com/docker-library/docker/blob/a6130b3dd7f1c3e938c497c29e671b3532de2bc9/29/cli/Dockerfile)
+-	[`29.1.4-cli`, `29.1-cli`, `29-cli`, `cli`, `29.1.4-cli-alpine3.23`](https://github.com/docker-library/docker/blob/ff12c497b30da3650320f88e71f55e1d719301b5/29/cli/Dockerfile)
 
--	[`29.1.3-dind`, `29.1-dind`, `29-dind`, `dind`, `29.1.3-dind-alpine3.23`, `29.1.3`, `29.1`, `29`, `latest`, `29.1.3-alpine3.23`](https://github.com/docker-library/docker/blob/a6130b3dd7f1c3e938c497c29e671b3532de2bc9/29/dind/Dockerfile)
+-	[`29.1.4-dind`, `29.1-dind`, `29-dind`, `dind`, `29.1.4-dind-alpine3.23`, `29.1.4`, `29.1`, `29`, `latest`, `29.1.4-alpine3.23`](https://github.com/docker-library/docker/blob/ff12c497b30da3650320f88e71f55e1d719301b5/29/dind/Dockerfile)
 
--	[`29.1.3-dind-rootless`, `29.1-dind-rootless`, `29-dind-rootless`, `dind-rootless`](https://github.com/docker-library/docker/blob/a6130b3dd7f1c3e938c497c29e671b3532de2bc9/29/dind-rootless/Dockerfile)
+-	[`29.1.4-dind-rootless`, `29.1-dind-rootless`, `29-dind-rootless`, `dind-rootless`](https://github.com/docker-library/docker/blob/ff12c497b30da3650320f88e71f55e1d719301b5/29/dind-rootless/Dockerfile)
 
--	[`29.1.3-windowsservercore-ltsc2025`, `29.1-windowsservercore-ltsc2025`, `29-windowsservercore-ltsc2025`, `windowsservercore-ltsc2025`](https://github.com/docker-library/docker/blob/a6130b3dd7f1c3e938c497c29e671b3532de2bc9/29/windows/windowsservercore-ltsc2025/Dockerfile)
+-	[`29.1.4-windowsservercore-ltsc2025`, `29.1-windowsservercore-ltsc2025`, `29-windowsservercore-ltsc2025`, `windowsservercore-ltsc2025`](https://github.com/docker-library/docker/blob/ff12c497b30da3650320f88e71f55e1d719301b5/29/windows/windowsservercore-ltsc2025/Dockerfile)
 
--	[`29.1.3-windowsservercore-ltsc2022`, `29.1-windowsservercore-ltsc2022`, `29-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`](https://github.com/docker-library/docker/blob/a6130b3dd7f1c3e938c497c29e671b3532de2bc9/29/windows/windowsservercore-ltsc2022/Dockerfile)
+-	[`29.1.4-windowsservercore-ltsc2022`, `29.1-windowsservercore-ltsc2022`, `29-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`](https://github.com/docker-library/docker/blob/ff12c497b30da3650320f88e71f55e1d719301b5/29/windows/windowsservercore-ltsc2022/Dockerfile)
 
 ## Shared Tags
 
 -	`29.2.0-rc.1-windowsservercore`, `29-rc-windowsservercore`, `rc-windowsservercore`:
 
-	-	[`29.2.0-rc.1-windowsservercore-ltsc2025`](https://github.com/docker-library/docker/blob/4f2fad0a9da1d5c7b2e710c543c7fa1543bf1f2d/29-rc/windows/windowsservercore-ltsc2025/Dockerfile)
-	-	[`29.2.0-rc.1-windowsservercore-ltsc2022`](https://github.com/docker-library/docker/blob/4f2fad0a9da1d5c7b2e710c543c7fa1543bf1f2d/29-rc/windows/windowsservercore-ltsc2022/Dockerfile)
+	-	[`29.2.0-rc.1-windowsservercore-ltsc2025`](https://github.com/docker-library/docker/blob/d9bae6519a1b0a9c73fab9a859e0c5c5131b0176/29-rc/windows/windowsservercore-ltsc2025/Dockerfile)
+	-	[`29.2.0-rc.1-windowsservercore-ltsc2022`](https://github.com/docker-library/docker/blob/d9bae6519a1b0a9c73fab9a859e0c5c5131b0176/29-rc/windows/windowsservercore-ltsc2022/Dockerfile)
 
--	`29.1.3-windowsservercore`, `29.1-windowsservercore`, `29-windowsservercore`, `windowsservercore`:
+-	`29.1.4-windowsservercore`, `29.1-windowsservercore`, `29-windowsservercore`, `windowsservercore`:
 
-	-	[`29.1.3-windowsservercore-ltsc2025`](https://github.com/docker-library/docker/blob/a6130b3dd7f1c3e938c497c29e671b3532de2bc9/29/windows/windowsservercore-ltsc2025/Dockerfile)
-	-	[`29.1.3-windowsservercore-ltsc2022`](https://github.com/docker-library/docker/blob/a6130b3dd7f1c3e938c497c29e671b3532de2bc9/29/windows/windowsservercore-ltsc2022/Dockerfile)
+	-	[`29.1.4-windowsservercore-ltsc2025`](https://github.com/docker-library/docker/blob/ff12c497b30da3650320f88e71f55e1d719301b5/29/windows/windowsservercore-ltsc2025/Dockerfile)
+	-	[`29.1.4-windowsservercore-ltsc2022`](https://github.com/docker-library/docker/blob/ff12c497b30da3650320f88e71f55e1d719301b5/29/windows/windowsservercore-ltsc2022/Dockerfile)
 
 # Quick reference (cont.)
 
