@@ -30,10 +30,6 @@ WARNING:
 
 -	[`4.0.19`, `4.0`, `4.0.19-jammy`, `4.0-jammy`](https://github.com/docker-library/cassandra/blob/23531063a5aefaa47cbd5166c7d02ae75c44c262/4.0/Dockerfile)
 
--	[`3.11.19`, `3.11`, `3`, `3.11.19-jammy`, `3.11-jammy`, `3-jammy`](https://github.com/docker-library/cassandra/blob/793ea6b2a8097d629252fe77585775443b53e4c3/3.11/Dockerfile)
-
--	[`3.0.32`, `3.0`, `3.0.32-jammy`, `3.0-jammy`](https://github.com/docker-library/cassandra/blob/793ea6b2a8097d629252fe77585775443b53e4c3/3.0/Dockerfile)
-
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
