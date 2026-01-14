@@ -30,7 +30,7 @@ WARNING:
 
 -	[`1.29.4-otel`, `mainline-otel`, `1-otel`, `1.29-otel`, `otel`, `1.29.4-trixie-otel`, `mainline-trixie-otel`, `1-trixie-otel`, `1.29-trixie-otel`, `trixie-otel`](https://github.com/nginx/docker-nginx/blob/a306285ea2e4267c63ca539c66e8bc242bdce917/mainline/debian-otel/Dockerfile)
 
--	[`1.29.4-alpine`, `mainline-alpine`, `1-alpine`, `1.29-alpine`, `alpine`, `1.29.4-alpine3.23`, `mainline-alpine3.23`, `1-alpine3.23`, `1.29-alpine3.23`, `alpine3.23`](https://github.com/nginx/docker-nginx/blob/a306285ea2e4267c63ca539c66e8bc242bdce917/mainline/alpine/Dockerfile)
+-	[`1.29.4-alpine`, `mainline-alpine`, `1-alpine`, `1.29-alpine`, `alpine`, `1.29.4-alpine3.23`, `mainline-alpine3.23`, `1-alpine3.23`, `1.29-alpine3.23`, `alpine3.23`](https://github.com/nginx/docker-nginx/blob/3a5661a6374fd9e0752cf82bbd61fdcf5df59e54/mainline/alpine/Dockerfile)
 
 -	[`1.29.4-alpine-perl`, `mainline-alpine-perl`, `1-alpine-perl`, `1.29-alpine-perl`, `alpine-perl`, `1.29.4-alpine3.23-perl`, `mainline-alpine3.23-perl`, `1-alpine3.23-perl`, `1.29-alpine3.23-perl`, `alpine3.23-perl`](https://github.com/nginx/docker-nginx/blob/a306285ea2e4267c63ca539c66e8bc242bdce917/mainline/alpine-perl/Dockerfile)
 
@@ -44,7 +44,7 @@ WARNING:
 
 -	[`1.28.1-otel`, `stable-otel`, `1.28-otel`, `1.28.1-trixie-otel`, `stable-trixie-otel`, `1.28-trixie-otel`](https://github.com/nginx/docker-nginx/blob/a306285ea2e4267c63ca539c66e8bc242bdce917/stable/debian-otel/Dockerfile)
 
--	[`1.28.1-alpine`, `stable-alpine`, `1.28-alpine`, `1.28.1-alpine3.23`, `stable-alpine3.23`, `1.28-alpine3.23`](https://github.com/nginx/docker-nginx/blob/a306285ea2e4267c63ca539c66e8bc242bdce917/stable/alpine/Dockerfile)
+-	[`1.28.1-alpine`, `stable-alpine`, `1.28-alpine`, `1.28.1-alpine3.23`, `stable-alpine3.23`, `1.28-alpine3.23`](https://github.com/nginx/docker-nginx/blob/3a5661a6374fd9e0752cf82bbd61fdcf5df59e54/stable/alpine/Dockerfile)
 
 -	[`1.28.1-alpine-perl`, `stable-alpine-perl`, `1.28-alpine-perl`, `1.28.1-alpine3.23-perl`, `stable-alpine3.23-perl`, `1.28-alpine3.23-perl`](https://github.com/nginx/docker-nginx/blob/a306285ea2e4267c63ca539c66e8bc242bdce917/stable/alpine-perl/Dockerfile)
 
