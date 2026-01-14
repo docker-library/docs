@@ -292,5 +292,5 @@ You can use this [README](https://github.com/convertigo/docker/tree/compose) to 
 $ mkdir convertigo
 $ cd convertigo
 $ curl -sL https://github.com/convertigo/docker/archive/refs/heads/compose.tar.gz | tar xvz --strip-components=1
-$ docker-compose up -d
+$ docker compose up -d
 ```
