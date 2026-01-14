@@ -284,7 +284,7 @@ The default `ENABLE_JDWP_DEBUG` value is **false** and can be defined this way:
 $ docker run -d –name C8O -e ENABLE_JDWP_DEBUG=true -p 28080:28080 %%IMAGE%%
 ```
 
-## Pre configurated Docker compose stack
+## Pre configurated `docker compose` stack
 
 You can use this [README](https://github.com/convertigo/docker/tree/compose) to run a complete Convertigo Low Code server.
 
