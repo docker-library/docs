@@ -40,6 +40,29 @@ postgres=# SELECT 1;
 
 Run `docker compose up`, wait for it to initialize completely, and visit `http://localhost:8080` or `http://host-ip:8080` (as appropriate).
 
+## Healtcheck
+
+To add a health check to the image use the following command:
+
+```console
+docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword \
+	--health-cmd='pg_isready' --health-interval=5s -d %%IMAGE%%
+```
+
+or using docker-compose
+
+```yaml
+services:
+  postgres:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: example
+    healthcheck:
+        test: pg_isready
+        interval: 5s
+```
+
 # How to extend this image
 
 There are many ways to extend the `%%REPO%%` image. Without trying to support every possible use case, here are just a few that we have found useful.
