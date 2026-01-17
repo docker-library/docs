@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v7` builds of [the `fedora` official image](https://hub.docker.com/_/fedora) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,13 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`41`](https://github.com/fedora-cloud/docker-brew-fedora/blob/6d093bfbf2b1270ff21f4e0d28a84aa5c65143fc/x86_64/Dockerfile)
-
--	[`42`](https://github.com/fedora-cloud/docker-brew-fedora/blob/699f0dadeec3c88d7f7eaff86bc4a933bfaefd26/x86_64/Dockerfile)
-
--	[`43`, `latest`](https://github.com/fedora-cloud/docker-brew-fedora/blob/e6a492c9ccf0eb7de06884ccf99470795e01b627/x86_64/Dockerfile)
-
--	[`44`, `rawhide`](https://github.com/fedora-cloud/docker-brew-fedora/blob/20e0f8dd0ff44143005030fdf69ba5674dc23ff3/x86_64/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v7` ARCHITECTURE
 
 # Quick reference (cont.)
 
@@ -57,11 +53,11 @@ This image serves as the `official Fedora image` for the [Fedora Distribution](h
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/7925a7131128930eed07077f9369b7ca52e0fd02/fedora/logo.png)
 
-The `fedora:latest` tag will always point to the latest stable release.
+The `arm32v7/fedora:latest` tag will always point to the latest stable release.
 
 This image is a relatively small footprint in comparison to a standard Fedora installation. This image is generated in the [Fedora Build System](http://koji.fedoraproject.org/koji/) and is built from [this kickstart file](https://pagure.io/fedora-kickstarts/blob/main/f/fedora-container-base.ks).
 
-[Fedora Rawhide](https://fedoraproject.org/wiki/Releases/Rawhide) is available via `fedora:rawhide` and any specific version of Fedora as `fedora:$version` (example: `fedora:23`).
+[Fedora Rawhide](https://fedoraproject.org/wiki/Releases/Rawhide) is available via `arm32v7/fedora:rawhide` and any specific version of Fedora as `arm32v7/fedora:$version` (example: `arm32v7/fedora:23`).
 
 # License
 

@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v7` builds of [the `hylang` official image](https://hub.docker.com/_/hylang) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -36,10 +38,6 @@ WARNING:
 
 -	[`1.2.0-python3.14-alpine3.22`, `1.2-python3.14-alpine3.22`, `1-python3.14-alpine3.22`, `python3.14-alpine3.22`, `1.2.0-alpine3.22`, `1.2-alpine3.22`, `1-alpine3.22`, `alpine3.22`](https://github.com/hylang/docker-hylang/blob/012f1733e2a35ff9ec22c28350f9779f22415a45/latest/python3.14-alpine3.22/Dockerfile)
 
--	[`1.2.0-python3.14-windowsservercore-ltsc2025`, `1.2-python3.14-windowsservercore-ltsc2025`, `1-python3.14-windowsservercore-ltsc2025`, `python3.14-windowsservercore-ltsc2025`, `1.2.0-windowsservercore-ltsc2025`, `1.2-windowsservercore-ltsc2025`, `1-windowsservercore-ltsc2025`, `windowsservercore-ltsc2025`](https://github.com/hylang/docker-hylang/blob/012f1733e2a35ff9ec22c28350f9779f22415a45/latest/python3.14-windowsservercore-ltsc2025/Dockerfile)
-
--	[`1.2.0-python3.14-windowsservercore-ltsc2022`, `1.2-python3.14-windowsservercore-ltsc2022`, `1-python3.14-windowsservercore-ltsc2022`, `python3.14-windowsservercore-ltsc2022`, `1.2.0-windowsservercore-ltsc2022`, `1.2-windowsservercore-ltsc2022`, `1-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`](https://github.com/hylang/docker-hylang/blob/012f1733e2a35ff9ec22c28350f9779f22415a45/latest/python3.14-windowsservercore-ltsc2022/Dockerfile)
-
 -	[`1.2.0-python3.13-trixie`, `1.2-python3.13-trixie`, `1-python3.13-trixie`, `python3.13-trixie`](https://github.com/hylang/docker-hylang/blob/012f1733e2a35ff9ec22c28350f9779f22415a45/latest/python3.13-trixie/Dockerfile)
 
 -	[`1.2.0-python3.13-bookworm`, `1.2-python3.13-bookworm`, `1-python3.13-bookworm`, `python3.13-bookworm`](https://github.com/hylang/docker-hylang/blob/012f1733e2a35ff9ec22c28350f9779f22415a45/latest/python3.13-bookworm/Dockerfile)
@@ -47,10 +45,6 @@ WARNING:
 -	[`1.2.0-python3.13-alpine3.23`, `1.2-python3.13-alpine3.23`, `1-python3.13-alpine3.23`, `python3.13-alpine3.23`, `1.2.0-python3.13-alpine`, `1.2-python3.13-alpine`, `1-python3.13-alpine`, `python3.13-alpine`](https://github.com/hylang/docker-hylang/blob/012f1733e2a35ff9ec22c28350f9779f22415a45/latest/python3.13-alpine3.23/Dockerfile)
 
 -	[`1.2.0-python3.13-alpine3.22`, `1.2-python3.13-alpine3.22`, `1-python3.13-alpine3.22`, `python3.13-alpine3.22`](https://github.com/hylang/docker-hylang/blob/012f1733e2a35ff9ec22c28350f9779f22415a45/latest/python3.13-alpine3.22/Dockerfile)
-
--	[`1.2.0-python3.13-windowsservercore-ltsc2025`, `1.2-python3.13-windowsservercore-ltsc2025`, `1-python3.13-windowsservercore-ltsc2025`, `python3.13-windowsservercore-ltsc2025`](https://github.com/hylang/docker-hylang/blob/012f1733e2a35ff9ec22c28350f9779f22415a45/latest/python3.13-windowsservercore-ltsc2025/Dockerfile)
-
--	[`1.2.0-python3.13-windowsservercore-ltsc2022`, `1.2-python3.13-windowsservercore-ltsc2022`, `1-python3.13-windowsservercore-ltsc2022`, `python3.13-windowsservercore-ltsc2022`](https://github.com/hylang/docker-hylang/blob/012f1733e2a35ff9ec22c28350f9779f22415a45/latest/python3.13-windowsservercore-ltsc2022/Dockerfile)
 
 -	[`1.2.0-python3.12-trixie`, `1.2-python3.12-trixie`, `1-python3.12-trixie`, `python3.12-trixie`](https://github.com/hylang/docker-hylang/blob/012f1733e2a35ff9ec22c28350f9779f22415a45/latest/python3.12-trixie/Dockerfile)
 
@@ -76,37 +70,15 @@ WARNING:
 
 -	[`1.2.0-python3.10-alpine3.22`, `1.2-python3.10-alpine3.22`, `1-python3.10-alpine3.22`, `python3.10-alpine3.22`](https://github.com/hylang/docker-hylang/blob/012f1733e2a35ff9ec22c28350f9779f22415a45/latest/python3.10-alpine3.22/Dockerfile)
 
--	[`1.2.0-pypy3.11-trixie`, `1.2-pypy3.11-trixie`, `1-pypy3.11-trixie`, `pypy3.11-trixie`, `1.2.0-pypy-trixie`, `1.2-pypy-trixie`, `1-pypy-trixie`, `pypy-trixie`](https://github.com/hylang/docker-hylang/blob/012f1733e2a35ff9ec22c28350f9779f22415a45/latest/pypy3.11-trixie/Dockerfile)
-
--	[`1.2.0-pypy3.11-bookworm`, `1.2-pypy3.11-bookworm`, `1-pypy3.11-bookworm`, `pypy3.11-bookworm`, `1.2.0-pypy-bookworm`, `1.2-pypy-bookworm`, `1-pypy-bookworm`, `pypy-bookworm`](https://github.com/hylang/docker-hylang/blob/012f1733e2a35ff9ec22c28350f9779f22415a45/latest/pypy3.11-bookworm/Dockerfile)
-
--	[`1.2.0-pypy3.11-windowsservercore-ltsc2025`, `1.2-pypy3.11-windowsservercore-ltsc2025`, `1-pypy3.11-windowsservercore-ltsc2025`, `pypy3.11-windowsservercore-ltsc2025`, `1.2.0-pypy-windowsservercore-ltsc2025`, `1.2-pypy-windowsservercore-ltsc2025`, `1-pypy-windowsservercore-ltsc2025`, `pypy-windowsservercore-ltsc2025`](https://github.com/hylang/docker-hylang/blob/012f1733e2a35ff9ec22c28350f9779f22415a45/latest/pypy3.11-windowsservercore-ltsc2025/Dockerfile)
-
--	[`1.2.0-pypy3.11-windowsservercore-ltsc2022`, `1.2-pypy3.11-windowsservercore-ltsc2022`, `1-pypy3.11-windowsservercore-ltsc2022`, `pypy3.11-windowsservercore-ltsc2022`, `1.2.0-pypy-windowsservercore-ltsc2022`, `1.2-pypy-windowsservercore-ltsc2022`, `1-pypy-windowsservercore-ltsc2022`, `pypy-windowsservercore-ltsc2022`](https://github.com/hylang/docker-hylang/blob/012f1733e2a35ff9ec22c28350f9779f22415a45/latest/pypy3.11-windowsservercore-ltsc2022/Dockerfile)
-
 ## Shared Tags
 
 -	`1.2.0-python3.14`, `1.2-python3.14`, `1-python3.14`, `python3.14`, `1.2.0`, `1.2`, `1`, `latest`:
 
 	-	[`1.2.0-python3.14-trixie`](https://github.com/hylang/docker-hylang/blob/012f1733e2a35ff9ec22c28350f9779f22415a45/latest/python3.14-trixie/Dockerfile)
-	-	[`1.2.0-python3.14-windowsservercore-ltsc2025`](https://github.com/hylang/docker-hylang/blob/012f1733e2a35ff9ec22c28350f9779f22415a45/latest/python3.14-windowsservercore-ltsc2025/Dockerfile)
-	-	[`1.2.0-python3.14-windowsservercore-ltsc2022`](https://github.com/hylang/docker-hylang/blob/012f1733e2a35ff9ec22c28350f9779f22415a45/latest/python3.14-windowsservercore-ltsc2022/Dockerfile)
-
--	`1.2.0-python3.14-windowsservercore`, `1.2-python3.14-windowsservercore`, `1-python3.14-windowsservercore`, `python3.14-windowsservercore`, `1.2.0-windowsservercore`, `1.2-windowsservercore`, `1-windowsservercore`, `windowsservercore`:
-
-	-	[`1.2.0-python3.14-windowsservercore-ltsc2025`](https://github.com/hylang/docker-hylang/blob/012f1733e2a35ff9ec22c28350f9779f22415a45/latest/python3.14-windowsservercore-ltsc2025/Dockerfile)
-	-	[`1.2.0-python3.14-windowsservercore-ltsc2022`](https://github.com/hylang/docker-hylang/blob/012f1733e2a35ff9ec22c28350f9779f22415a45/latest/python3.14-windowsservercore-ltsc2022/Dockerfile)
 
 -	`1.2.0-python3.13`, `1.2-python3.13`, `1-python3.13`, `python3.13`:
 
 	-	[`1.2.0-python3.13-trixie`](https://github.com/hylang/docker-hylang/blob/012f1733e2a35ff9ec22c28350f9779f22415a45/latest/python3.13-trixie/Dockerfile)
-	-	[`1.2.0-python3.13-windowsservercore-ltsc2025`](https://github.com/hylang/docker-hylang/blob/012f1733e2a35ff9ec22c28350f9779f22415a45/latest/python3.13-windowsservercore-ltsc2025/Dockerfile)
-	-	[`1.2.0-python3.13-windowsservercore-ltsc2022`](https://github.com/hylang/docker-hylang/blob/012f1733e2a35ff9ec22c28350f9779f22415a45/latest/python3.13-windowsservercore-ltsc2022/Dockerfile)
-
--	`1.2.0-python3.13-windowsservercore`, `1.2-python3.13-windowsservercore`, `1-python3.13-windowsservercore`, `python3.13-windowsservercore`:
-
-	-	[`1.2.0-python3.13-windowsservercore-ltsc2025`](https://github.com/hylang/docker-hylang/blob/012f1733e2a35ff9ec22c28350f9779f22415a45/latest/python3.13-windowsservercore-ltsc2025/Dockerfile)
-	-	[`1.2.0-python3.13-windowsservercore-ltsc2022`](https://github.com/hylang/docker-hylang/blob/012f1733e2a35ff9ec22c28350f9779f22415a45/latest/python3.13-windowsservercore-ltsc2022/Dockerfile)
 
 -	`1.2.0-python3.12`, `1.2-python3.12`, `1-python3.12`, `python3.12`:
 
@@ -119,17 +91,6 @@ WARNING:
 -	`1.2.0-python3.10`, `1.2-python3.10`, `1-python3.10`, `python3.10`:
 
 	-	[`1.2.0-python3.10-trixie`](https://github.com/hylang/docker-hylang/blob/012f1733e2a35ff9ec22c28350f9779f22415a45/latest/python3.10-trixie/Dockerfile)
-
--	`1.2.0-pypy3.11`, `1.2-pypy3.11`, `1-pypy3.11`, `pypy3.11`, `1.2.0-pypy`, `1.2-pypy`, `1-pypy`, `pypy`:
-
-	-	[`1.2.0-pypy3.11-trixie`](https://github.com/hylang/docker-hylang/blob/012f1733e2a35ff9ec22c28350f9779f22415a45/latest/pypy3.11-trixie/Dockerfile)
-	-	[`1.2.0-pypy3.11-windowsservercore-ltsc2025`](https://github.com/hylang/docker-hylang/blob/012f1733e2a35ff9ec22c28350f9779f22415a45/latest/pypy3.11-windowsservercore-ltsc2025/Dockerfile)
-	-	[`1.2.0-pypy3.11-windowsservercore-ltsc2022`](https://github.com/hylang/docker-hylang/blob/012f1733e2a35ff9ec22c28350f9779f22415a45/latest/pypy3.11-windowsservercore-ltsc2022/Dockerfile)
-
--	`1.2.0-pypy3.11-windowsservercore`, `1.2-pypy3.11-windowsservercore`, `1-pypy3.11-windowsservercore`, `pypy3.11-windowsservercore`:
-
-	-	[`1.2.0-pypy3.11-windowsservercore-ltsc2025`](https://github.com/hylang/docker-hylang/blob/012f1733e2a35ff9ec22c28350f9779f22415a45/latest/pypy3.11-windowsservercore-ltsc2025/Dockerfile)
-	-	[`1.2.0-pypy3.11-windowsservercore-ltsc2022`](https://github.com/hylang/docker-hylang/blob/012f1733e2a35ff9ec22c28350f9779f22415a45/latest/pypy3.11-windowsservercore-ltsc2022/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -163,7 +124,7 @@ Hy (a.k.a., Hylang) is a dialect of the Lisp programming language designed to in
 ## Create a `Dockerfile` in your Hy project
 
 ```dockerfile
-FROM hylang:0.10
+FROM arm32v7/hylang:0.10
 COPY . /usr/src/myapp
 WORKDIR /usr/src/myapp
 CMD [ "hy", "./your-daemon-or-script.hy" ]
@@ -181,34 +142,26 @@ $ docker run -it --rm --name my-running-app my-hylang-app
 For many simple, single file projects, you may find it inconvenient to write a complete `Dockerfile`. In such cases, you can run a Hy script by using the Hy Docker image directly:
 
 ```console
-$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp hylang:0.10 hy your-daemon-or-script.hy
+$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp arm32v7/hylang:0.10 hy your-daemon-or-script.hy
 ```
 
 # Image Variants
 
-The `hylang` images come in many flavors, each designed for a specific use case.
+The `arm32v7/hylang` images come in many flavors, each designed for a specific use case.
 
-## `hylang:<version>`
+## `arm32v7/hylang:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
 Some of these tags may have names like bookworm or trixie in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
-## `hylang:<version>-alpine`
+## `arm32v7/hylang:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
 This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
 
 To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
-
-## `hylang:<version>-windowsservercore`
-
-This image is based on [Windows Server Core (`mcr.microsoft.com/windows/servercore`)](https://hub.docker.com/r/microsoft/windows-servercore). As such, it only works in places which that image does, such as Windows 10 Professional/Enterprise (Anniversary Edition) or Windows Server 2016.
-
-For information about how to get Docker running on Windows, please see the relevant "Quick Start" guide provided by Microsoft:
-
--	[Windows Containers Quick Start](https://learn.microsoft.com/en-us/virtualization/windowscontainers/quick-start/set-up-environment?tabs=dockerce)
 
 # License
 
