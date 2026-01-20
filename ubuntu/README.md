@@ -93,8 +93,8 @@ The tarballs published by Canonical, referenced by `dist-*` tags in https://git.
 
 -	[Jammy](https://launchpad.net/~cloud-images-release-managers/+livefs/ubuntu/jammy/ubuntu-oci)
 -	[Noble](https://launchpad.net/~cloud-images-release-managers/+livefs/ubuntu/noble/ubuntu-oci)
--	[Plucky](https://launchpad.net/~cloud-images-release-managers/+livefs/ubuntu/plucky/ubuntu-oci)
 -	[Questing](https://launchpad.net/~cloud-images-release-managers/+livefs/ubuntu/questing/ubuntu-oci)
+-	[Resolute](https://launchpad.net/~cloud-images-release-managers/+livefs/ubuntu/resolute/ubuntu-oci)
 
 # License
 
