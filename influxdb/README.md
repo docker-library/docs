@@ -81,7 +81,7 @@ WARNING:
 
 # Notice
 
-On February 3, 2026, the latest tag for InfluxDB will point to InfluxDB 3 Core. To avoid unexpected upgrades, use specific version tags in your deployments.
+On April 7, 2026, the latest tag for InfluxDB will point to InfluxDB 3 Core. To avoid unexpected upgrades, use specific version tags in your deployments.
 
 # What is InfluxDB?
 
