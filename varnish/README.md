@@ -24,11 +24,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`fresh`, `8.0.0`, `8`, `8.0`, `latest`](https://github.com/varnish/docker-varnish/blob/68b666606150f9aa637a23d4358906eb6a409252/fresh/debian/Dockerfile)
+-	[`fresh`, `8.0.0`, `8`, `8.0`, `latest`](https://github.com/varnish/docker-varnish/blob/8bac2b1f964998f3867aa5e338fedf25a5b9ff1c/fresh/debian/Dockerfile)
 
--	[`fresh-alpine`, `8.0.0-alpine`, `8-alpine`, `8.0-alpine`, `alpine`](https://github.com/varnish/docker-varnish/blob/68b666606150f9aa637a23d4358906eb6a409252/fresh/alpine/Dockerfile)
+-	[`fresh-alpine`, `8.0.0-alpine`, `8-alpine`, `8.0-alpine`, `alpine`](https://github.com/varnish/docker-varnish/blob/9d19c601591be47c263b2390b1ac1701b6065f55/fresh/alpine/Dockerfile)
 
--	[`old`, `7.7.3`, `7.7`](https://github.com/varnish/docker-varnish/blob/68b666606150f9aa637a23d4358906eb6a409252/old/debian/Dockerfile)
+-	[`old`, `7.7.3`, `7.7`](https://github.com/varnish/docker-varnish/blob/b341feabd8feeafaa2d25d35fdf44eb27a2eaaa1/old/debian/Dockerfile)
 
 -	[`old-alpine`, `7.7.3-alpine`, `7.7-alpine`](https://github.com/varnish/docker-varnish/blob/68b666606150f9aa637a23d4358906eb6a409252/old/alpine/Dockerfile)
 
@@ -40,7 +40,7 @@ WARNING:
 	[https://github.com/varnish/docker-varnish/issues](https://github.com/varnish/docker-varnish/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/varnish/), [`arm32v7`](https://hub.docker.com/r/arm32v7/varnish/), [`arm64v8`](https://hub.docker.com/r/arm64v8/varnish/), [`i386`](https://hub.docker.com/r/i386/varnish/), [`ppc64le`](https://hub.docker.com/r/ppc64le/varnish/), [`s390x`](https://hub.docker.com/r/s390x/varnish/)
+	[`amd64`](https://hub.docker.com/r/amd64/varnish/), [`arm64v8`](https://hub.docker.com/r/arm64v8/varnish/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/varnish/` directory](https://github.com/docker-library/repo-info/blob/master/repos/varnish) ([history](https://github.com/docker-library/repo-info/commits/master/repos/varnish))  
