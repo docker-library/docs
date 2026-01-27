@@ -24,6 +24,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
+-	[`8.6-rc1`, `8.6-rc1-trixie`](https://github.com/redis/docker-library-redis/blob/275b71068b3065fcf794d08f908b61548f451795/debian/Dockerfile)
+
+-	[`8.6-rc1-alpine`, `8.6-rc1-alpine3.23`](https://github.com/redis/docker-library-redis/blob/275b71068b3065fcf794d08f908b61548f451795/alpine/Dockerfile)
+
 -	[`8.4.0`, `8.4`, `8`, `8.4.0-bookworm`, `8.4-bookworm`, `8-bookworm`, `latest`, `bookworm`](https://github.com/redis/docker-library-redis/blob/de8bb5f3e3ead8584e76834816b9e7e332d2bd49/debian/Dockerfile)
 
 -	[`8.4.0-alpine`, `8.4-alpine`, `8-alpine`, `8.4.0-alpine3.22`, `8.4-alpine3.22`, `8-alpine3.22`, `alpine`, `alpine3.22`](https://github.com/redis/docker-library-redis/blob/de8bb5f3e3ead8584e76834816b9e7e332d2bd49/alpine/Dockerfile)
@@ -155,7 +159,7 @@ The `redis` images come in many flavors, each designed for a specific use case.
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like bookworm in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+Some of these tags may have names like bookworm or trixie in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 ## `redis:<version>-alpine`
 
