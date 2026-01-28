@@ -32,7 +32,7 @@ WARNING:
 
 -	[`1.29.4-alpine`, `mainline-alpine`, `1-alpine`, `1.29-alpine`, `alpine`, `1.29.4-alpine3.23`, `mainline-alpine3.23`, `1-alpine3.23`, `1.29-alpine3.23`, `alpine3.23`](https://github.com/nginx/docker-nginx/blob/3a5661a6374fd9e0752cf82bbd61fdcf5df59e54/mainline/alpine/Dockerfile)
 
--	[`1.29.4-alpine-perl`, `mainline-alpine-perl`, `1-alpine-perl`, `1.29-alpine-perl`, `alpine-perl`, `1.29.4-alpine3.23-perl`, `mainline-alpine3.23-perl`, `1-alpine3.23-perl`, `1.29-alpine3.23-perl`, `alpine3.23-perl`](https://github.com/nginx/docker-nginx/blob/a306285ea2e4267c63ca539c66e8bc242bdce917/mainline/alpine-perl/Dockerfile)
+-	[`1.29.4-alpine-perl`, `mainline-alpine-perl`, `1-alpine-perl`, `1.29-alpine-perl`, `alpine-perl`, `1.29.4-alpine3.23-perl`, `mainline-alpine3.23-perl`, `1-alpine3.23-perl`, `1.29-alpine3.23-perl`, `alpine3.23-perl`](https://github.com/nginx/docker-nginx/blob/f3bf9f4eb388557afc31025a8e8587e09755adf1/mainline/alpine-perl/Dockerfile)
 
 -	[`1.29.4-alpine-slim`, `mainline-alpine-slim`, `1-alpine-slim`, `1.29-alpine-slim`, `alpine-slim`, `1.29.4-alpine3.23-slim`, `mainline-alpine3.23-slim`, `1-alpine3.23-slim`, `1.29-alpine3.23-slim`, `alpine3.23-slim`](https://github.com/nginx/docker-nginx/blob/afa829ae8cd9e25cf539cb03167dff1162f852cb/mainline/alpine-slim/Dockerfile)
 
@@ -46,7 +46,7 @@ WARNING:
 
 -	[`1.28.1-alpine`, `stable-alpine`, `1.28-alpine`, `1.28.1-alpine3.23`, `stable-alpine3.23`, `1.28-alpine3.23`](https://github.com/nginx/docker-nginx/blob/3a5661a6374fd9e0752cf82bbd61fdcf5df59e54/stable/alpine/Dockerfile)
 
--	[`1.28.1-alpine-perl`, `stable-alpine-perl`, `1.28-alpine-perl`, `1.28.1-alpine3.23-perl`, `stable-alpine3.23-perl`, `1.28-alpine3.23-perl`](https://github.com/nginx/docker-nginx/blob/a306285ea2e4267c63ca539c66e8bc242bdce917/stable/alpine-perl/Dockerfile)
+-	[`1.28.1-alpine-perl`, `stable-alpine-perl`, `1.28-alpine-perl`, `1.28.1-alpine3.23-perl`, `stable-alpine3.23-perl`, `1.28-alpine3.23-perl`](https://github.com/nginx/docker-nginx/blob/f3bf9f4eb388557afc31025a8e8587e09755adf1/stable/alpine-perl/Dockerfile)
 
 -	[`1.28.1-alpine-slim`, `stable-alpine-slim`, `1.28-alpine-slim`, `1.28.1-alpine3.23-slim`, `stable-alpine3.23-slim`, `1.28-alpine3.23-slim`](https://github.com/nginx/docker-nginx/blob/50dc9c37b0668fd9e7760c9841c3bef50e8d4227/stable/alpine-slim/Dockerfile)
 
