@@ -24,7 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`fresh`, `8.0.0`, `8`, `8.0`, `latest`](https://github.com/varnish/docker-varnish/blob/3096b1557dce299636ef1eb770aec8b9ea9ce401/fresh/debian/Dockerfile)
+-	[`fresh`, `8.0.0`, `8`, `8.0`, `latest`](https://github.com/varnish/docker-varnish/blob/58af075d7a6979394b8099c31b7e66572dc741c3/fresh/debian/Dockerfile)
 
 -	[`fresh-alpine`, `8.0.0-alpine`, `8-alpine`, `8.0-alpine`, `alpine`](https://github.com/varnish/docker-varnish/blob/d80cb1ac78089dfa29cb2148c3b3cc5e196757c6/fresh/alpine/Dockerfile)
 
