@@ -24,11 +24,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.6.2-apache`, `5.6-apache`, `5-apache`, `apache`, `5.6.2`, `5.6`, `5`, `latest`](https://github.com/matomo-org/docker/blob/869240fbb5e304a3c594d85330c34f1966bf5ab3/apache/Dockerfile)
+-	[`5.7.0-apache`, `5.7-apache`, `5-apache`, `apache`, `5.7.0`, `5.7`, `5`, `latest`](https://github.com/matomo-org/docker/blob/5d7841c5cb1d8d807fc70dc2952d6fd4b1b71c2e/apache/Dockerfile)
 
--	[`5.6.2-fpm`, `5.6-fpm`, `5-fpm`, `fpm`](https://github.com/matomo-org/docker/blob/869240fbb5e304a3c594d85330c34f1966bf5ab3/fpm/Dockerfile)
+-	[`5.7.0-fpm`, `5.7-fpm`, `5-fpm`, `fpm`](https://github.com/matomo-org/docker/blob/5d7841c5cb1d8d807fc70dc2952d6fd4b1b71c2e/fpm/Dockerfile)
 
--	[`5.6.2-fpm-alpine`, `5.6-fpm-alpine`, `5-fpm-alpine`, `fpm-alpine`](https://github.com/matomo-org/docker/blob/869240fbb5e304a3c594d85330c34f1966bf5ab3/fpm-alpine/Dockerfile)
+-	[`5.7.0-fpm-alpine`, `5.7-fpm-alpine`, `5-fpm-alpine`, `fpm-alpine`](https://github.com/matomo-org/docker/blob/5d7841c5cb1d8d807fc70dc2952d6fd4b1b71c2e/fpm-alpine/Dockerfile)
 
 # Quick reference (cont.)
 
