@@ -24,13 +24,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2025.6.1-developer`, `2025.6-developer`, `developer`](https://github.com/SonarSource/docker-sonarqube/blob/25640e1874256746c8df7134fa5042f0721cc3f2/commercial-editions/developer/Dockerfile)
+-	[`2026.1.0-developer`, `2026.1-developer`, `developer`, `2026-lta-developer`](https://github.com/SonarSource/docker-sonarqube/blob/a067605a9abfd0b56a9e19a63cc2636d5cd7a4e5/commercial-editions/developer/Dockerfile)
 
--	[`2025.6.1-enterprise`, `2025.6-enterprise`, `enterprise`](https://github.com/SonarSource/docker-sonarqube/blob/25640e1874256746c8df7134fa5042f0721cc3f2/commercial-editions/enterprise/Dockerfile)
+-	[`2026.1.0-enterprise`, `2026.1-enterprise`, `enterprise`, `2026-lta-enterprise`](https://github.com/SonarSource/docker-sonarqube/blob/a067605a9abfd0b56a9e19a63cc2636d5cd7a4e5/commercial-editions/enterprise/Dockerfile)
 
--	[`2025.6.1-datacenter-app`, `2025.6-datacenter-app`, `datacenter-app`](https://github.com/SonarSource/docker-sonarqube/blob/25640e1874256746c8df7134fa5042f0721cc3f2/commercial-editions/datacenter/app/Dockerfile)
+-	[`2026.1.0-datacenter-app`, `2026.1-datacenter-app`, `datacenter-app`, `2026-lta-datacenter-app`](https://github.com/SonarSource/docker-sonarqube/blob/a067605a9abfd0b56a9e19a63cc2636d5cd7a4e5/commercial-editions/datacenter/app/Dockerfile)
 
--	[`2025.6.1-datacenter-search`, `2025.6-datacenter-search`, `datacenter-search`](https://github.com/SonarSource/docker-sonarqube/blob/25640e1874256746c8df7134fa5042f0721cc3f2/commercial-editions/datacenter/search/Dockerfile)
+-	[`2026.1.0-datacenter-search`, `2026.1-datacenter-search`, `datacenter-search`, `2026-lta-datacenter-search`](https://github.com/SonarSource/docker-sonarqube/blob/a067605a9abfd0b56a9e19a63cc2636d5cd7a4e5/commercial-editions/datacenter/search/Dockerfile)
 
 -	[`2025.4.4-developer`, `2025.4-developer`, `2025.4-lta-developer`](https://github.com/SonarSource/docker-sonarqube/blob/b366d18634f02e45e6dc4d28151db6704b0630c8/commercial-editions/developer/Dockerfile)
 
@@ -48,7 +48,7 @@ WARNING:
 
 -	[`2025.1.5-datacenter-search`, `2025.1-datacenter-search`, `2025-lta-datacenter-search`](https://github.com/SonarSource/docker-sonarqube/blob/f4734dd45fbe00d4ce4393fec3e3b833a601173c/commercial-editions/datacenter/search/Dockerfile)
 
--	[`26.1.0.118079-community`, `community`, `latest`](https://github.com/SonarSource/docker-sonarqube/blob/892abf9355a52edda737d58809abfd436073e518/community-build/Dockerfile)
+-	[`26.1.0.118079-community`, `community`, `latest`](https://github.com/SonarSource/docker-sonarqube/blob/a067605a9abfd0b56a9e19a63cc2636d5cd7a4e5/community-build/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -100,7 +100,7 @@ To quickly run a demo instance, see Using Docker on the [Try Out SonarQube](http
 
 ## Installation
 
-> **Multi-platform support**: Starting from SonarQube `9.9`, the docker images support running both on `amd64` architecture and `arm64`-based Apple Silicon (M1).
+> **Multi-platform support**: Starting from SonarQube `9.9`, the docker images support running both on `amd64` architecture and `arm64`-based Apple Silicon.
 
 For installation instructions, see Installing the Server from the Docker Image on the [Install the Server](https://docs.sonarsource.com/sonarqube-server/latest/setup-and-upgrade/install-the-server/installing-sonarqube-from-docker/) page.
 
@@ -108,7 +108,7 @@ To run a cluster with the SonarQube Server Data Center Edition, please refer to 
 
 ### Long-Term Active (LTA) versions
 
-[LTA](https://www.sonarsource.com/products/sonarqube/downloads/lta/) refers to the version of SonarQube Server that will stay active for a longer period of time. Currently, `2025.4` is the latest LTA version and should be used when LTA version is preferred. To install the latest LTA, you can pull one of the `2025.4-lta-<edition>` tags.
+[LTA](https://www.sonarsource.com/products/sonarqube/downloads/lta/) refers to the version of SonarQube Server that will stay active for a longer period of time. Currently, `2026.1` is the latest LTA version and should be used when LTA version is preferred. To install the latest LTA, you can pull one of the `2026-lta-<edition>` tags.
 
 ## Configuration
 
@@ -137,6 +137,8 @@ We recommend creating volumes for the following directories:
 -	`/opt/sonarqube/data`: data files, such as the embedded H2 database and Elasticsearch indexes
 -	`/opt/sonarqube/logs`: contains SonarQube logs about access, web process, CE process, Elasticsearch logs
 -	`/opt/sonarqube/extensions`: for 3rd party plugins
+
+Beginning with SonarQube Server `2026.1`, the use of the Java Attach API for ElasticSearch 8.x initialization creates socket files in the hardcoded and unchangeable path `/tmp/.java_pid<PID>`. It is essential to ensure that SonarQube Server processes have both read and write access to the `/tmp/` folder to function correctly.
 
 > **Warning:** You cannot use the same volumes on multiple instances of SonarQube.
 
