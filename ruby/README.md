@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v6` builds of [the `ruby` official image](https://hub.docker.com/_/ruby) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,49 +26,17 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.0.1-trixie`, `4.0-trixie`, `4-trixie`, `trixie`, `4.0.1`, `4.0`, `4`, `latest`](https://github.com/docker-library/ruby/blob/4f76cece88762c6df20be5dc45cb1de7a9bc3b4d/4.0/trixie/Dockerfile)
-
--	[`4.0.1-slim-trixie`, `4.0-slim-trixie`, `4-slim-trixie`, `slim-trixie`, `4.0.1-slim`, `4.0-slim`, `4-slim`, `slim`](https://github.com/docker-library/ruby/blob/4f76cece88762c6df20be5dc45cb1de7a9bc3b4d/4.0/slim-trixie/Dockerfile)
-
--	[`4.0.1-bookworm`, `4.0-bookworm`, `4-bookworm`, `bookworm`](https://github.com/docker-library/ruby/blob/4f76cece88762c6df20be5dc45cb1de7a9bc3b4d/4.0/bookworm/Dockerfile)
-
--	[`4.0.1-slim-bookworm`, `4.0-slim-bookworm`, `4-slim-bookworm`, `slim-bookworm`](https://github.com/docker-library/ruby/blob/4f76cece88762c6df20be5dc45cb1de7a9bc3b4d/4.0/slim-bookworm/Dockerfile)
-
 -	[`4.0.1-alpine3.23`, `4.0-alpine3.23`, `4-alpine3.23`, `alpine3.23`, `4.0.1-alpine`, `4.0-alpine`, `4-alpine`, `alpine`](https://github.com/docker-library/ruby/blob/4f76cece88762c6df20be5dc45cb1de7a9bc3b4d/4.0/alpine3.23/Dockerfile)
 
 -	[`4.0.1-alpine3.22`, `4.0-alpine3.22`, `4-alpine3.22`, `alpine3.22`](https://github.com/docker-library/ruby/blob/4f76cece88762c6df20be5dc45cb1de7a9bc3b4d/4.0/alpine3.22/Dockerfile)
-
--	[`3.4.8-trixie`, `3.4-trixie`, `3-trixie`, `3.4.8`, `3.4`, `3`](https://github.com/docker-library/ruby/blob/0ef1f8966b43e97043ceef717e648d44f37896f7/3.4/trixie/Dockerfile)
-
--	[`3.4.8-slim-trixie`, `3.4-slim-trixie`, `3-slim-trixie`, `3.4.8-slim`, `3.4-slim`, `3-slim`](https://github.com/docker-library/ruby/blob/0ef1f8966b43e97043ceef717e648d44f37896f7/3.4/slim-trixie/Dockerfile)
-
--	[`3.4.8-bookworm`, `3.4-bookworm`, `3-bookworm`](https://github.com/docker-library/ruby/blob/0ef1f8966b43e97043ceef717e648d44f37896f7/3.4/bookworm/Dockerfile)
-
--	[`3.4.8-slim-bookworm`, `3.4-slim-bookworm`, `3-slim-bookworm`](https://github.com/docker-library/ruby/blob/0ef1f8966b43e97043ceef717e648d44f37896f7/3.4/slim-bookworm/Dockerfile)
 
 -	[`3.4.8-alpine3.23`, `3.4-alpine3.23`, `3-alpine3.23`, `3.4.8-alpine`, `3.4-alpine`, `3-alpine`](https://github.com/docker-library/ruby/blob/0ef1f8966b43e97043ceef717e648d44f37896f7/3.4/alpine3.23/Dockerfile)
 
 -	[`3.4.8-alpine3.22`, `3.4-alpine3.22`, `3-alpine3.22`](https://github.com/docker-library/ruby/blob/0ef1f8966b43e97043ceef717e648d44f37896f7/3.4/alpine3.22/Dockerfile)
 
--	[`3.3.10-trixie`, `3.3-trixie`, `3.3.10`, `3.3`](https://github.com/docker-library/ruby/blob/55e358c6dfe15e9513eb02725a983d4e9daf37d2/3.3/trixie/Dockerfile)
-
--	[`3.3.10-slim-trixie`, `3.3-slim-trixie`, `3.3.10-slim`, `3.3-slim`](https://github.com/docker-library/ruby/blob/55e358c6dfe15e9513eb02725a983d4e9daf37d2/3.3/slim-trixie/Dockerfile)
-
--	[`3.3.10-bookworm`, `3.3-bookworm`](https://github.com/docker-library/ruby/blob/55e358c6dfe15e9513eb02725a983d4e9daf37d2/3.3/bookworm/Dockerfile)
-
--	[`3.3.10-slim-bookworm`, `3.3-slim-bookworm`](https://github.com/docker-library/ruby/blob/55e358c6dfe15e9513eb02725a983d4e9daf37d2/3.3/slim-bookworm/Dockerfile)
-
 -	[`3.3.10-alpine3.23`, `3.3-alpine3.23`, `3.3.10-alpine`, `3.3-alpine`](https://github.com/docker-library/ruby/blob/55e358c6dfe15e9513eb02725a983d4e9daf37d2/3.3/alpine3.23/Dockerfile)
 
 -	[`3.3.10-alpine3.22`, `3.3-alpine3.22`](https://github.com/docker-library/ruby/blob/55e358c6dfe15e9513eb02725a983d4e9daf37d2/3.3/alpine3.22/Dockerfile)
-
--	[`3.2.10-trixie`, `3.2-trixie`, `3.2.10`, `3.2`](https://github.com/docker-library/ruby/blob/af204e030006b9572c140a3eb353627ae4fcb625/3.2/trixie/Dockerfile)
-
--	[`3.2.10-slim-trixie`, `3.2-slim-trixie`, `3.2.10-slim`, `3.2-slim`](https://github.com/docker-library/ruby/blob/af204e030006b9572c140a3eb353627ae4fcb625/3.2/slim-trixie/Dockerfile)
-
--	[`3.2.10-bookworm`, `3.2-bookworm`](https://github.com/docker-library/ruby/blob/af204e030006b9572c140a3eb353627ae4fcb625/3.2/bookworm/Dockerfile)
-
--	[`3.2.10-slim-bookworm`, `3.2-slim-bookworm`](https://github.com/docker-library/ruby/blob/af204e030006b9572c140a3eb353627ae4fcb625/3.2/slim-bookworm/Dockerfile)
 
 -	[`3.2.10-alpine3.23`, `3.2-alpine3.23`, `3.2.10-alpine`, `3.2-alpine`](https://github.com/docker-library/ruby/blob/af204e030006b9572c140a3eb353627ae4fcb625/3.2/alpine3.23/Dockerfile)
 
@@ -104,7 +74,7 @@ Ruby is a dynamic, reflective, object-oriented, general-purpose, open-source pro
 ## Create a `Dockerfile` in your Ruby app project
 
 ```dockerfile
-FROM ruby:3.3
+FROM arm32v6/ruby:3.3
 
 # throw errors if Gemfile has been modified since Gemfile.lock
 RUN bundle config --global frozen 1
@@ -133,7 +103,7 @@ $ docker run -it --name my-running-script my-ruby-app
 The above example `Dockerfile` expects a `Gemfile.lock` in your app directory. This `docker run` will help you generate one. Run it in the root of your app, next to the `Gemfile`:
 
 ```console
-$ docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app ruby:3.3 bundle install
+$ docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app arm32v6/ruby:3.3 bundle install
 ```
 
 ## Run a single Ruby script
@@ -141,7 +111,7 @@ $ docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app ruby:3.3 bundle install
 For many simple, single file projects, you may find it inconvenient to write a complete `Dockerfile`. In such cases, you can run a Ruby script by using the Ruby Docker image directly:
 
 ```console
-$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp ruby:3.3 ruby your-daemon-or-script.rb
+$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp arm32v6/ruby:3.3 ruby your-daemon-or-script.rb
 ```
 
 ## Encoding
@@ -158,21 +128,15 @@ If these cause issues for your use case (running multiple Ruby applications in a
 
 # Image Variants
 
-The `ruby` images come in many flavors, each designed for a specific use case.
+The `arm32v6/ruby` images come in many flavors, each designed for a specific use case.
 
-## `ruby:<version>`
+## `arm32v6/ruby:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like bookworm or trixie in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
-
 This tag is based off of [`buildpack-deps`](https://hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of Docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
 
-## `ruby:<version>-slim`
-
-This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `ruby`. Unless you are working in an environment where *only* the `ruby` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
-
-## `ruby:<version>-alpine`
+## `arm32v6/ruby:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 

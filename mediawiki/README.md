@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v6` builds of [the `mediawiki` official image](https://hub.docker.com/_/mediawiki) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,21 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.45.1`, `1.45`, `latest`, `stable`](https://github.com/wikimedia/mediawiki-docker/blob/c5d0194e8675dc98a46ad9379c0f684d527c11ca/1.45/apache/Dockerfile)
-
--	[`1.45.1-fpm`, `1.45-fpm`, `stable-fpm`](https://github.com/wikimedia/mediawiki-docker/blob/c5d0194e8675dc98a46ad9379c0f684d527c11ca/1.45/fpm/Dockerfile)
-
 -	[`1.45.1-fpm-alpine`, `1.45-fpm-alpine`, `stable-fpm-alpine`](https://github.com/wikimedia/mediawiki-docker/blob/c5d0194e8675dc98a46ad9379c0f684d527c11ca/1.45/fpm-alpine/Dockerfile)
 
--	[`1.44.3`, `1.44`](https://github.com/wikimedia/mediawiki-docker/blob/c5d0194e8675dc98a46ad9379c0f684d527c11ca/1.44/apache/Dockerfile)
-
--	[`1.44.3-fpm`, `1.44-fpm`](https://github.com/wikimedia/mediawiki-docker/blob/c5d0194e8675dc98a46ad9379c0f684d527c11ca/1.44/fpm/Dockerfile)
-
 -	[`1.44.3-fpm-alpine`, `1.44-fpm-alpine`](https://github.com/wikimedia/mediawiki-docker/blob/c5d0194e8675dc98a46ad9379c0f684d527c11ca/1.44/fpm-alpine/Dockerfile)
-
--	[`1.43.6`, `1.43`, `lts`](https://github.com/wikimedia/mediawiki-docker/blob/c5d0194e8675dc98a46ad9379c0f684d527c11ca/1.43/apache/Dockerfile)
-
--	[`1.43.6-fpm`, `1.43-fpm`, `lts-fpm`](https://github.com/wikimedia/mediawiki-docker/blob/c5d0194e8675dc98a46ad9379c0f684d527c11ca/1.43/fpm/Dockerfile)
 
 -	[`1.43.6-fpm-alpine`, `1.43-fpm-alpine`, `lts-fpm-alpine`](https://github.com/wikimedia/mediawiki-docker/blob/c5d0194e8675dc98a46ad9379c0f684d527c11ca/1.43/fpm-alpine/Dockerfile)
 
@@ -74,13 +64,13 @@ MediaWiki is free and open-source wiki software. Originally developed by Magnus 
 The basic pattern for starting a `mediawiki` instance is:
 
 ```console
-$ docker run --name some-mediawiki -d mediawiki
+$ docker run --name some-mediawiki -d arm32v6/mediawiki
 ```
 
 If you'd like to be able to access the instance from the host without the container's IP, standard port mappings can be used:
 
 ```console
-$ docker run --name some-mediawiki -p 8080:80 -d mediawiki
+$ docker run --name some-mediawiki -p 8080:80 -d arm32v6/mediawiki
 ```
 
 Then, access it via `http://localhost:8080` or `http://host-ip:8080` in a browser.
@@ -92,7 +82,7 @@ When first accessing the webserver provided by this image, it will go through a 
 ## MySQL
 
 ```console
-$ docker run --name some-mediawiki --link some-mysql:mysql -d mediawiki
+$ docker run --name some-mediawiki --link some-mysql:mysql -d arm32v6/mediawiki
 ```
 
 -	Database type: `MySQL, MariaDB, or equivalent`
@@ -106,7 +96,7 @@ By default, this image does not include any volumes.
 The paths `/var/www/html/images` and `/var/www/html/LocalSettings.php` are things that generally ought to be volumes, but do not explicitly have a `VOLUME` declaration in this image because volumes cannot be removed.
 
 ```console
-$ docker run --rm mediawiki tar -cC /var/www/html/sites . | tar -xC /path/on/host/sites
+$ docker run --rm arm32v6/mediawiki tar -cC /var/www/html/sites . | tar -xC /path/on/host/sites
 ```
 
 ## ... via [`docker compose`](https://github.com/docker/compose)
@@ -162,13 +152,13 @@ The following Docker Hub features can help with the task of keeping your depende
 
 # Image Variants
 
-The `mediawiki` images come in many flavors, each designed for a specific use case.
+The `arm32v6/mediawiki` images come in many flavors, each designed for a specific use case.
 
-## `mediawiki:<version>`
+## `arm32v6/mediawiki:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `mediawiki:<version>-alpine`
+## `arm32v6/mediawiki:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
