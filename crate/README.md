@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `mips64le` builds of [the `crate` official image](https://hub.docker.com/_/crate) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,11 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.1.2`, `6.1`, `latest`](https://github.com/crate/docker-crate/blob/c5fcd067a8a754a75fe5929980cfe067ec3a6916/Dockerfile)
-
--	[`6.0.5`, `6.0`](https://github.com/crate/docker-crate/blob/be1c0906b0be0b7d493ea3535a354be77eb35fa2/Dockerfile)
-
--	[`5.10.16`, `5.10`](https://github.com/crate/docker-crate/blob/5a5c103f4cc22281ffe6f286439a050c488282c4/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `mips64le` ARCHITECTURE
 
 # Quick reference (cont.)
 
@@ -79,7 +77,7 @@ CrateDB provides an [Admin UI](https://crate.io/docs/crate/admin-ui/):
 Spin up this Docker image like so:
 
 ```console
-$ docker run --publish 4200:4200 --publish 5432:5432 crate -Cdiscovery.type=single-node
+$ docker run --publish 4200:4200 --publish 5432:5432 mips64le/crate -Cdiscovery.type=single-node
 ```
 
 Visit the [getting started](https://crate.io/docs/crate/tutorials/en/latest/install-run/) page to see all the available download and install options.
