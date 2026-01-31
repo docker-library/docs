@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v5` builds of [the `solr` official image](https://hub.docker.com/_/solr) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,13 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`9.10.1`, `9.10`, `9`, `latest`](https://github.com/apache/solr-docker/blob/9c4aa799df40c506a48bc487cc6b4aaed24f9149/9.10/Dockerfile)
-
--	[`9.10.1-slim`, `9.10-slim`, `9-slim`, `slim`](https://github.com/apache/solr-docker/blob/9c4aa799df40c506a48bc487cc6b4aaed24f9149/9.10-slim/Dockerfile)
-
--	[`9.9.0`, `9.9`](https://github.com/apache/solr-docker/blob/aa51c522c3e74cd1b2886209ea249358a34d324a/9.9/Dockerfile)
-
--	[`9.9.0-slim`, `9.9-slim`](https://github.com/apache/solr-docker/blob/aa51c522c3e74cd1b2886209ea249358a34d324a/9.9-slim/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v5` ARCHITECTURE
 
 # Quick reference (cont.)
 
@@ -66,7 +62,7 @@ Full documentation can be found in the [Solr Reference Guide's Docker section](h
 To run a single Solr server:
 
 ```console
-$ docker run -p 8983:8983 -t solr
+$ docker run -p 8983:8983 -t arm32v5/solr
 ```
 
 Then with a web browser go to http://localhost:8983/ to see the Solr Admin Console.
@@ -80,18 +76,6 @@ Please direct any usage questions to the [Solr users mailing list](https://solr.
 # History
 
 This project was started in 2015 by [Martijn Koster](https://github.com/makuk66) in the [github.com/docker-solr/docker-solr](https://github.com/docker-solr/docker-solr) repository. In 2019, the maintainership and copyright was transferred to the Apache Solr project. Many thanks to Martijn for all your contributions over the years!
-
-# Image Variants
-
-The `solr` images come in many flavors, each designed for a specific use case.
-
-## `solr:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-## `solr:<version>-slim`
-
-This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `solr`. Unless you are working in an environment where *only* the `solr` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
 
 # License
 
