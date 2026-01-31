@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm64v8` builds of [the `groovy` official image](https://hub.docker.com/_/groovy) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -30,11 +32,7 @@ WARNING:
 
 -	[`5.0.4-jdk17`, `5.0-jdk17`, `5-jdk17`, `jdk17`, `5.0.4-jdk17-noble`, `5.0-jdk17-noble`, `5-jdk17-noble`, `jdk17-noble`](https://github.com/groovy/docker-groovy/blob/1f32e098b3586526e078e46938d8904c2067269c/jdk17/Dockerfile)
 
--	[`5.0.4-jdk17-alpine`, `5.0-jdk17-alpine`, `5-jdk17-alpine`, `jdk17-alpine`](https://github.com/groovy/docker-groovy/blob/1f32e098b3586526e078e46938d8904c2067269c/jdk17-alpine/Dockerfile)
-
 -	[`5.0.4-jdk11`, `5.0-jdk11`, `5-jdk11`, `jdk11`, `5.0.4-jdk11-jammy`, `5.0-jdk11-jammy`, `5-jdk11-jammy`, `jdk11-jammy`, `5.0.4-jdk-jammy`, `5.0-jdk-jammy`, `5-jdk-jammy`, `jdk-jammy`, `5.0.4-jammy`, `5.0-jammy`, `5-jammy`, `jammy`](https://github.com/groovy/docker-groovy/blob/1f32e098b3586526e078e46938d8904c2067269c/jdk11/Dockerfile)
-
--	[`5.0.4-jdk11-alpine`, `5.0-jdk11-alpine`, `5-jdk11-alpine`, `jdk11-alpine`](https://github.com/groovy/docker-groovy/blob/1f32e098b3586526e078e46938d8904c2067269c/jdk11-alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -71,7 +69,7 @@ Note that if you are mounting a volume and the uid running Docker is not `1000`,
 
 ## Running a Groovy script
 
-`docker run --rm -v "$PWD":/home/groovy/scripts -w /home/groovy/scripts groovy groovy <script> <script-args>`
+`docker run --rm -v "$PWD":/home/groovy/scripts -w /home/groovy/scripts arm64v8/groovy groovy <script> <script-args>`
 
 ## Reusing the Grapes cache
 
@@ -79,20 +77,20 @@ The local Grapes cache can be reused across containers by creating a volume and 
 
 ```console
 docker volume create --name grapes-cache
-docker run --rm -it -v grapes-cache:/home/groovy/.groovy/grapes groovy
+docker run --rm -it -v grapes-cache:/home/groovy/.groovy/grapes arm64v8/groovy
 ```
 
 # Image Variants
 
-The `groovy` images come in many flavors, each designed for a specific use case.
+The `arm64v8/groovy` images come in many flavors, each designed for a specific use case.
 
-## `groovy:<version>`
+## `arm64v8/groovy:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
 Some of these tags may have names like jammy or noble in them. These are the suite code names for releases of [Ubuntu](https://wiki.ubuntu.com/Releases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Ubuntu.
 
-## `groovy:<version>-alpine`
+## `arm64v8/groovy:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
