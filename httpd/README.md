@@ -53,7 +53,7 @@ The Apache HTTP Server, colloquially called Apache, is a Web server application 
 
 > [wikipedia.org/wiki/Apache_HTTP_Server](http://en.wikipedia.org/wiki/Apache_HTTP_Server)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/8e367edd887f5fe876890a0ab4d08806527a1571/httpd/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/a009666e9e666a3051a1f04127fd9464da692fc1/httpd/logo.svg?sanitize=true)
 
 # How to use this image.
 
