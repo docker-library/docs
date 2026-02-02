@@ -30,11 +30,11 @@ WARNING:
 
 -	[`v3.6.7`, `3.6.7`, `v3.6`, `3.6`, `v3`, `3`, `ramequin`, `latest`](https://github.com/traefik/traefik-library-image/blob/304f83d926652820cd4cbc7c92792a99b65ab9be/v3.6/alpine/Dockerfile)
 
--	[`v2.11.35-windowsservercore-ltsc2022`, `2.11.35-windowsservercore-ltsc2022`, `v2.11-windowsservercore-ltsc2022`, `2.11-windowsservercore-ltsc2022`, `v2-windowsservercore-ltsc2022`, `2-windowsservercore-ltsc2022`, `mimolette-windowsservercore-ltsc2022`](https://github.com/traefik/traefik-library-image/blob/7d230718b0052756551f0ef84f256755c40463a1/v2.11/windows/servercore-ltsc2022/Dockerfile)
+-	[`v2.11.36-windowsservercore-ltsc2022`, `2.11.36-windowsservercore-ltsc2022`, `v2.11-windowsservercore-ltsc2022`, `2.11-windowsservercore-ltsc2022`, `v2-windowsservercore-ltsc2022`, `2-windowsservercore-ltsc2022`, `mimolette-windowsservercore-ltsc2022`](https://github.com/traefik/traefik-library-image/blob/cce3f80cb9b088ee9d01791dc7705f8d966b292e/v2.11/windows/servercore-ltsc2022/Dockerfile)
 
--	[`v2.11.35-nanoserver-ltsc2022`, `2.11.35-nanoserver-ltsc2022`, `v2.11-nanoserver-ltsc2022`, `2.11-nanoserver-ltsc2022`, `v2-nanoserver-ltsc2022`, `2-nanoserver-ltsc2022`, `mimolette-nanoserver-ltsc2022`](https://github.com/traefik/traefik-library-image/blob/7d230718b0052756551f0ef84f256755c40463a1/v2.11/windows/nanoserver-ltsc2022/Dockerfile)
+-	[`v2.11.36-nanoserver-ltsc2022`, `2.11.36-nanoserver-ltsc2022`, `v2.11-nanoserver-ltsc2022`, `2.11-nanoserver-ltsc2022`, `v2-nanoserver-ltsc2022`, `2-nanoserver-ltsc2022`, `mimolette-nanoserver-ltsc2022`](https://github.com/traefik/traefik-library-image/blob/cce3f80cb9b088ee9d01791dc7705f8d966b292e/v2.11/windows/nanoserver-ltsc2022/Dockerfile)
 
--	[`v2.11.35`, `2.11.35`, `v2.11`, `2.11`, `v2`, `2`, `mimolette`](https://github.com/traefik/traefik-library-image/blob/7d230718b0052756551f0ef84f256755c40463a1/v2.11/alpine/Dockerfile)
+-	[`v2.11.36`, `2.11.36`, `v2.11`, `2.11`, `v2`, `2`, `mimolette`](https://github.com/traefik/traefik-library-image/blob/cce3f80cb9b088ee9d01791dc7705f8d966b292e/v2.11/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
