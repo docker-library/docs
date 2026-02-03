@@ -61,9 +61,10 @@ If you wish to change the default username and password of `guest` / `guest`, yo
 ```console
 $ docker run --detach --hostname my-rabbit --name some-rabbit \
     --env RABBITMQ_DEFAULT_USER=user \
-    --env RABBITMQ_DEFAULT_PASS=password %%IMAGE%%:management \
+    --env RABBITMQ_DEFAULT_PASS=password \
     --publish 15672:15672 \
-    --publish 5672:5672
+    --publish 5672:5672 \
+     %%IMAGE%%:management
 ```
 
 You can then go to `http://localhost:15672` or `http://host-ip:15672` in a browser and use `user`/`password` to gain access to the [management UI](https://www.rabbitmq.com/docs/management).
