@@ -24,7 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.8.4`, `3.8`, `3.8.4-jre-17`, `3.8-jre-17`](https://github.com/31z4/zookeeper-docker/blob/ec1050affd761a7886c1f1f5d18165c19d3143e8/3.8.4/Dockerfile)
+-	[`3.8.5`, `3.8`, `3.8.5-jre-17`, `3.8-jre-17`](https://github.com/31z4/zookeeper-docker/blob/7ae58aced0d00578a7a4eec99625e5aa705277de/3.8.5/Dockerfile)
 
 -	[`3.9.4`, `3.9`, `3.9.4-jre-17`, `3.9-jre-17`, `latest`](https://github.com/31z4/zookeeper-docker/blob/c56b077b4858f22bfc5014cfb3c570d78c56a71d/3.9.4/Dockerfile)
 
